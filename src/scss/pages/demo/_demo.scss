@@ -139,7 +139,7 @@
         cursor: pointer;
 
         &:hover {
-          background-color: lighten($fade-grey, 5%);
+          background-color: $fade-grey-light-5;
 
           .lnil,
           .lnir,
@@ -246,12 +246,12 @@
 
         .is-string {
           code {
-            color: #41b883;
+            color: $accent;
           }
         }
         .is-function {
           code {
-            color: #039be5;
+            color: $info;
           }
         }
         .is-number,
@@ -443,7 +443,7 @@
       }
 
       .code-trigger {
-        border-color: lighten($dark-sidebar, 14%);
+        border-color: $dark-sidebar-light-14;
         &:hover {
           svg {
             color: $light-text;
@@ -451,8 +451,8 @@
         }
 
         &.is-active {
-          border-color: lighten($dark-sidebar, 16%);
-          background: lighten($dark-sidebar, 12%);
+          border-color: $dark-sidebar-light-16;
+          background: $dark-sidebar-light-12;
 
           svg {
             color: $primary;
@@ -463,7 +463,7 @@
 
     .demo-icon-list {
       li:hover {
-        background-color: lighten($dark-sidebar, 10%) !important;
+        background-color: $dark-sidebar-light-10 !important;
 
         .lnil,
         .lnir,

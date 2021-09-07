@@ -342,7 +342,7 @@
               width: 8px;
               min-width: 8px;
               border-radius: $radius-rounded;
-              background: lighten($light-text, 15%);
+              background: $light-text-light-15;
               margin: 0 16px 0 0;
             }
 
@@ -427,7 +427,7 @@
       .timeline-container {
         .timeline-item {
           &::before {
-            background: lighten($dark-sidebar, 20%);
+            background: $dark-sidebar-light-20;
           }
 
           .content-wrap {
@@ -435,7 +435,7 @@
 
             .content-box {
               .status {
-                background: lighten($dark-sidebar, 20%);
+                background: $dark-sidebar-light-20;
               }
 
               .box-text {
@@ -458,7 +458,7 @@
 
       .load-more-wrap {
         .button {
-          background: lighten($dark-sidebar, 2%) !important;
+          background: $dark-sidebar-light-2 !important;
         }
       }
     }

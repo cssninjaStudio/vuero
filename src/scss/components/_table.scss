@@ -287,7 +287,7 @@
 
         .dot {
           font-size: 8px;
-          color: lighten($light-text, 6%);
+          color: $light-text-light-6;
           margin: 0 6px;
 
           &.active {
@@ -306,15 +306,15 @@
 .is-dark {
   .flex-table {
     .flex-table-item {
-      background: lighten($dark-sidebar, 6%);
-      border-color: lighten($dark-sidebar, 12%);
+      background: $dark-sidebar-light-6;
+      border-color: $dark-sidebar-light-12;
 
       .flex-table-cell {
         &.is-user,
         &.is-media {
           .v-avatar {
             .badge {
-              border-color: lighten($dark-sidebar, 6%) !important;
+              border-color: $dark-sidebar-light-6 !important;
             }
           }
         }
@@ -337,12 +337,12 @@
         .avatar-stack {
           .v-avatar {
             .avatar {
-              border-color: lighten($dark-sidebar, 6%) !important;
+              border-color: $dark-sidebar-light-6 !important;
             }
 
             .is-more {
               .inner {
-                border-color: lighten($dark-sidebar, 6%) !important;
+                border-color: $dark-sidebar-light-6 !important;
               }
             }
           }
@@ -409,8 +409,8 @@
   .flex-pagination {
     .pagination-next,
     .pagination-previous {
-      background: lighten($dark-sidebar, 2%);
-      border-color: lighten($dark-sidebar, 4%);
+      background: $dark-sidebar-light-2;
+      border-color: $dark-sidebar-light-4;
       color: $dark-dark-text;
 
       svg {
@@ -421,8 +421,8 @@
     .pagination-list {
       li {
         .pagination-link {
-          background: lighten($dark-sidebar, 2%);
-          border-color: lighten($dark-sidebar, 4%);
+          background: $dark-sidebar-light-2;
+          border-color: $dark-sidebar-light-4;
           color: $dark-dark-text;
 
           &.is-current {
@@ -476,8 +476,8 @@
 
 .is-dark {
   .flex-table-wrapper {
-    background: lighten($dark-sidebar, 6%);
-    border-color: lighten($dark-sidebar, 12%);
+    background: $dark-sidebar-light-6;
+    border-color: $dark-sidebar-light-12;
   }
 }
 
@@ -493,7 +493,7 @@
   &.is-striped {
     tr:not(.is-selected) {
       &:nth-child(even) {
-        background: lighten($widget-grey, 1%) !important;
+        background: $widget-grey-light-1 !important;
       }
     }
   }
@@ -501,7 +501,7 @@
     tbody {
       tr:not(.is-selected) {
         &:hover {
-          background: lighten($widget-grey, 1%);
+          background: $widget-grey-light-1;
         }
       }
     }
@@ -557,14 +557,14 @@
 
 .is-dark {
   .table {
-    background: lighten($dark-sidebar, 6%);
-    border-color: lighten($dark-sidebar, 12%);
+    background: $dark-sidebar-light-6;
+    border-color: $dark-sidebar-light-12;
 
     &.is-hoverable {
       tbody {
         tr:not(.is-selected) {
           &:hover {
-            background: lighten($dark-sidebar, 9%);
+            background: $dark-sidebar-light-9;
           }
         }
       }
@@ -573,7 +573,7 @@
     &.is-striped {
       tr:not(.is-selected) {
         &:nth-child(even) {
-          background: lighten($dark-sidebar, 9%) !important;
+          background: $dark-sidebar-light-9 !important;
         }
       }
     }
@@ -581,7 +581,7 @@
     tbody {
       th,
       td {
-        border-color: lighten($dark-sidebar, 12%);
+        border-color: $dark-sidebar-light-12;
       }
 
       th {
@@ -597,7 +597,7 @@
 
     th,
     td {
-      border-color: lighten($dark-sidebar, 12%);
+      border-color: $dark-sidebar-light-12;
     }
 
     th {

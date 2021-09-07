@@ -473,7 +473,7 @@ Form Layouts
         .form-body {
           .form-section {
             &.is-grey {
-              background: lighten($dark-sidebar, 4%) !important;
+              background: $dark-sidebar-light-4 !important;
             }
 
             h3 {
@@ -481,10 +481,10 @@ Form Layouts
             }
 
             .left {
-              border-color: lighten($dark-sidebar, 12%) !important;
+              border-color: $dark-sidebar-light-12 !important;
 
               .operator {
-                background: lighten($dark-sidebar, 6%) !important;
+                background: $dark-sidebar-light-6 !important;
                 color: $dark-dark-text;
               }
 
@@ -500,8 +500,8 @@ Form Layouts
                   }
 
                   .radio-pill-inner {
-                    background: lighten($dark-sidebar, 2%);
-                    border-color: lighten($dark-sidebar, 12%);
+                    background: $dark-sidebar-light-2;
+                    border-color: $dark-sidebar-light-12;
                     color: $dark-dark-text;
                   }
                 }
@@ -539,8 +539,8 @@ Form Layouts
                   }
 
                   .radio-box-inner {
-                    background: lighten($dark-sidebar, 2%);
-                    border-color: lighten($dark-sidebar, 12%);
+                    background: $dark-sidebar-light-2;
+                    border-color: $dark-sidebar-light-12;
 
                     .fee {
                       color: $dark-dark-text;
@@ -558,14 +558,14 @@ Form Layouts
       .form-outer {
         .form-body {
           .form-section {
-            border-color: lighten($dark-sidebar, 12%);
+            border-color: $dark-sidebar-light-12;
 
             &.is-grey {
-              background: lighten($dark-sidebar, 4%);
+              background: $dark-sidebar-light-4;
             }
 
             .form-section-header {
-              border-color: lighten($dark-sidebar, 12%);
+              border-color: $dark-sidebar-light-12;
 
               .left {
                 h3 {
@@ -581,7 +581,7 @@ Form Layouts
 
               .color-codes {
                 .color-code {
-                  background: lighten($dark-sidebar, 6%);
+                  background: $dark-sidebar-light-6;
 
                   &.is-primary {
                     border-color: $accent;
@@ -607,11 +607,11 @@ Form Layouts
       @include vuero-card--dark();
 
       .form-header {
-        border-color: lighten($dark-sidebar, 12%);
+        border-color: $dark-sidebar-light-12;
 
         &.is-stuck {
           background: $dark-sidebar;
-          border-color: lighten($dark-sidebar, 6%);
+          border-color: $dark-sidebar-light-6;
         }
 
         .left {

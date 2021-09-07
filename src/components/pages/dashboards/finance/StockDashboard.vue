@@ -630,8 +630,8 @@
 .is-dark {
   .stock-dashboard {
     .graph {
-      background: lighten($dark-sidebar, 6%) !important;
-      border-color: lighten($dark-sidebar, 12%) !important;
+      background: $dark-sidebar-light-6 !important;
+      border-color: $dark-sidebar-light-12 !important;
     }
 
     .stock {
@@ -665,8 +665,8 @@
         .asset {
           .asset-logo {
             &::before {
-              background: lighten($dark-sidebar, 6%) !important;
-              border-color: lighten($dark-sidebar, 12%) !important;
+              background: $dark-sidebar-light-6 !important;
+              border-color: $dark-sidebar-light-12 !important;
             }
           }
         }

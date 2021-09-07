@@ -184,7 +184,7 @@ Marketing Layouts
 
       .hero-body {
         .hero-mockup {
-          border-color: lighten($landing-dark-1, 8%);
+          border-color: $landing-dark-15;
         }
 
         .buttons {
@@ -273,7 +273,7 @@ Marketing Layouts
 
     &.dark-image-l {
       box-shadow: $light-box-shadow;
-      border: 1px solid lighten($dark-sidebar, 12%);
+      border: 1px solid $dark-sidebar-light-12;
     }
   }
 }
@@ -441,8 +441,8 @@ Marketing Layouts
 .is-dark {
   .pricing-wrapper {
     .pricing-plan {
-      border-color: lighten($landing-dark-1, 12%);
-      background: lighten($landing-dark-1, 6%);
+      border-color: $landing-dark-16;
+      background: $landing-dark-14;
 
       &.is-featured {
         border-color: $accent;
@@ -462,12 +462,12 @@ Marketing Layouts
 
       .trial {
         color: $accent;
-        border-color: lighten($landing-dark-1, 12%);
-        background: lighten($landing-dark-1, 2%);
+        border-color: $landing-dark-16;
+        background: $landing-dark-12;
       }
 
       hr {
-        background: lighten($landing-dark-1, 12%);
+        background: $landing-dark-16;
       }
 
       li {
@@ -502,12 +502,12 @@ Marketing Layouts
 
 .is-dark {
   .card-icon-box {
-    border-color: lighten($landing-dark-1, 12%);
-    background: lighten($landing-dark-1, 4%);
+    border-color: $landing-dark-16;
+    background: $landing-dark-13;
 
     .v-icon {
       background: transparent;
-      border: 2px solid lighten($landing-dark-1, 12%);
+      border: 2px solid $landing-dark-16;
     }
 
     .title {
@@ -531,10 +531,10 @@ Marketing Layouts
   .has-bg-dots {
     background-image: radial-gradient(
         circle,
-        lighten($landing-dark-1, 4%) 10%,
+        $landing-dark-13 10%,
         transparent 15%
       ),
-      radial-gradient(circle, lighten($landing-dark-1, 4%) 10%, transparent 15%);
+      radial-gradient(circle, $landing-dark-13 10%, transparent 15%);
     background-size: 50px 50px;
     background-position: 0 0, 0 0;
   }
@@ -643,7 +643,7 @@ Marketing Layouts
     }
 
     .avatar {
-      border: 4px solid lighten($primary, 8%);
+      border: 4px solid $primary-light-8;
     }
   }
 
@@ -664,7 +664,7 @@ Marketing Layouts
       min-width: 190px;
       font-weight: 600;
       color: $primary !important;
-      background-color: #fff !important;
+      background-color: $white !important;
       border-color: $primary !important;
     }
   }
@@ -677,7 +677,7 @@ Marketing Layouts
 
     .v-avatar {
       .avatar {
-        border-color: lighten($accent, 8%);
+        border-color: $accent-light-8;
       }
     }
 

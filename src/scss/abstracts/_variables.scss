@@ -27,32 +27,79 @@ $primary-dark-8: darken($primary, 8%);
 $primary-dark-10: darken($primary, 10%);
 $primary-dark-14: darken($primary, 14%);
 $primary-dark-24: darken($primary, 24%);
+$primary-light-2: lighten($primary, 2%);
+$primary-light-3: lighten($primary, 3%);
+$primary-light-6: lighten($primary, 6%);
+$primary-light-8: lighten($primary, 8%);
+$primary-light-10: lighten($primary, 10%);
+$primary-light-12: lighten($primary, 12%);
+$primary-light-15: lighten($primary, 15%);
+$primary-light-18: lighten($primary, 18%);
+$primary-light-20: lighten($primary, 20%);
+$primary-light-24: lighten($primary, 24%);
+$primary-light-30: lighten($primary, 30%);
+$primary-light-40: lighten($primary, 40%);
+$primary-light-42: lighten($primary, 42%);
+$primary-light-45: lighten($primary, 45%);
+$primary-light-48: lighten($primary, 48%);
+$primary-light-50: lighten($primary, 50%);
+$primary-light-51: lighten($primary, 51%);
+
 $secondary: #346beb;
-$accent: #41b883;
+$secondary-light-42: lighten($secondary, 42%);
+
+$accent: $primary;
 $accent-dark-2: darken($accent, 2%);
 $accent-dark-4: darken($accent, 4%);
 $accent-dark-5: darken($accent, 5%);
 $accent-dark-8: darken($accent, 8%);
 $accent-dark-15: darken($accent, 15%);
+$accent-light-2: lighten($accent, 2%);
+$accent-light-8: lighten($accent, 8%);
+$accent-light-10: lighten($accent, 10%);
+$accent-light-12: lighten($accent, 12%);
+$accent-light-18: lighten($accent, 18%);
+$accent-light-20: lighten($accent, 20%);
+$accent-light-22: lighten($accent, 22%);
+$accent-light-25: lighten($accent, 25%);
+$accent-light-32: lighten($accent, 32%);
+$accent-light-36: lighten($accent, 36%);
 
 /* ==========================================================================
 2. Global colors
 ========================================================================== */
 
 $body-color: #f9f9f9;
-
+$active: #6dcff6;
+$sidebar: #344258;
 $white: #fff;
-$smoke-white: #fcfcfc;
+$dark: #283252;
+
+$light-white: $body-color;
+$title-grey: #a9abac;
+$background-grey: #f0f0f0;
+$section-grey: #fcfcfc;
+$medium-grey: #ddd;
+$light-grey: #eee;
+$lighter-grey: #e5e5e5;
+
+$smoke-white: $section-grey;
 $smoke-white-dark-2: darken($smoke-white, 2%);
 $smoke-white-dark-8: darken($smoke-white, 8%);
 $smoke-white-dark-10: darken($smoke-white, 10%);
 $smoke-white-dark-16: darken($smoke-white, 16%);
-$light-white: #f9f9f9;
+$smoke-white-light-2: lighten($smoke-white, 2%);
 
 $placeholder: #cecece;
 $placeholder-dark-8: darken($placeholder, 8%);
+$placeholder-light-10: lighten($placeholder, 10%);
+$placeholder-light-16: lighten($placeholder, 16%);
+
 $muted-grey: #999;
 $muted-grey-dark-25: darken($muted-grey, 25%);
+$muted-grey-light-14: lighten($muted-grey, 14%);
+$muted-grey-light-15: lighten($muted-grey, 15%);
+
 $fade-grey: #ededed;
 $fade-grey-dark-2: darken($fade-grey, 2%);
 $fade-grey-dark-3: darken($fade-grey, 3%);
@@ -60,6 +107,12 @@ $fade-grey-dark-4: darken($fade-grey, 4%);
 $fade-grey-dark-5: darken($fade-grey, 5%);
 $fade-grey-dark-6: darken($fade-grey, 6%);
 $fade-grey-dark-8: darken($fade-grey, 8%);
+$fade-grey-light-2: lighten($fade-grey, 2%);
+$fade-grey-light-3: lighten($fade-grey, 3%);
+$fade-grey-light-4: lighten($fade-grey, 4%);
+$fade-grey-light-5: lighten($fade-grey, 5%);
+$fade-grey-light-6: lighten($fade-grey, 6%);
+
 $accent-grey: #ccc;
 $accent-grey-dark-4: darken($accent-grey, 4%);
 $accent-grey-dark-5: darken($accent-grey, 5%);
@@ -70,11 +123,12 @@ $accent-grey-dark-20: darken($accent-grey, 20%);
 $accent-grey-dark-30: darken($accent-grey, 30%);
 $accent-grey-dark-35: darken($accent-grey, 35%);
 $accent-grey-dark-40: darken($accent-grey, 40%);
-$background-grey: #f0f0f0;
-$section-grey: #fcfcfc;
-$medium-grey: #ddd;
-$light-grey: #eee;
-$lighter-grey: #e5e5e5;
+$accent-grey-light-2: lighten($accent-grey, 2%);
+$accent-grey-light-3: lighten($accent-grey, 3%);
+$accent-grey-light-5: lighten($accent-grey, 5%);
+$accent-grey-light-6: lighten($accent-grey, 6%);
+$accent-grey-light-10: lighten($accent-grey, 10%);
+
 $widget-grey: #f5f6fa;
 $widget-grey-dark-1: darken($widget-grey, 1%);
 $widget-grey-dark-2: darken($widget-grey, 2%);
@@ -82,8 +136,16 @@ $widget-grey-dark-3: darken($widget-grey, 3%);
 $widget-grey-dark-4: darken($widget-grey, 4%);
 $widget-grey-dark-8: darken($widget-grey, 8%);
 $widget-grey-dark-12: darken($widget-grey, 12%);
+$widget-grey-light-1: lighten($widget-grey, 1%);
 
-$dark-text: #283252;
+$dark-dark-text: #aaaab3;
+$dark-dark-text-light-14: lighten($dark-dark-text, 14%);
+
+$dark-text: $dark;
+$dark-text-light-18: lighten($dark-text, 18%);
+$dark-text-light-25: lighten($dark-text, 25%);
+$dark-text-light-35: lighten($dark-text, 35%);
+
 $light-text: #a2a5b9;
 $light-text-dark-2: darken($light-text, 2%);
 $light-text-dark-4: darken($light-text, 4%);
@@ -94,29 +156,63 @@ $light-text-dark-10: darken($light-text, 10%);
 $light-text-dark-12: darken($light-text, 12%);
 $light-text-dark-20: darken($light-text, 20%);
 $light-text-dark-22: darken($light-text, 22%);
-$title-grey: #a9abac;
+$light-text-light-2: lighten($light-text, 2%);
+$light-text-light-5: lighten($light-text, 5%);
+$light-text-light-6: lighten($light-text, 6%);
+$light-text-light-12: lighten($light-text, 12%);
+$light-text-light-15: lighten($light-text, 15%);
 
 $danger: #e62965;
+$danger-light-20: lighten($danger, 20%);
+$danger-light-24: lighten($danger, 24%);
+$danger-light-36: lighten($danger, 36%);
+$danger-light-40: lighten($danger, 40%);
+
 $info: #039be5;
+$info-light-20: lighten($info, 20%);
+$info-light-24: lighten($info, 24%);
+$info-light-45: lighten($info, 45%);
+
 $success: #06d6a0;
+$success-light-20: lighten($success, 20%);
+$success-light-24: lighten($success, 24%);
+$success-light-40: lighten($success, 40%);
+$success-light-45: lighten($success, 45%);
+$success-light-48: lighten($success, 48%);
+
 $warning: #faae42;
+$warning-light-20: lighten($warning, 20%);
+$warning-light-24: lighten($warning, 24%);
+$warning-light-32: lighten($warning, 24%);
 
 $h-purple: #8269b2;
+$h-purple-light-36: lighten($h-purple, 36%);
+$h-purple-light-38: lighten($h-purple, 38%);
+
 $h-blue: #37c3ff;
+$h-blue-light-32: lighten($h-blue, 32%);
+$h-blue-light-34: lighten($h-blue, 34%);
+
 $h-red: #f92b60;
+$h-red-light-38: lighten($h-red, 38%);
+
 $h-orange: #ffa981;
+$h-orange-light-18: lighten($h-orange, 18%);
+$h-orange-light-20: lighten($h-orange, 20%);
+
 $h-yellow: #ffd66e;
 $h-yellow-dark-8: darken($h-yellow, 8%);
+$h-yellow-light-22: lighten($h-yellow, 22%);
+
 $h-green: #93e088;
 $h-green-dark-7: darken($h-green, 7%);
+$h-green-light-15: lighten($h-green, 15%);
+$h-green-light-22: lighten($h-green, 22%);
+$h-green-light-23: lighten($h-green, 23%);
+
 $h-pink: #ff9eb8;
 $h-light-blue: #77d2f3;
 
-$active: #6dcff6;
-
-$sidebar: #344258;
-
-$dark: $dark-text;
 $dark-sidebar: #232326;
 $dark-sidebar-dark-2: darken($dark-sidebar, 2%);
 $dark-sidebar-dark-3: darken($dark-sidebar, 3%);
@@ -124,13 +220,45 @@ $dark-sidebar-dark-4: darken($dark-sidebar, 4%);
 $dark-sidebar-dark-5: darken($dark-sidebar, 5%);
 $dark-sidebar-dark-6: darken($dark-sidebar, 6%);
 $dark-sidebar-dark-10: darken($dark-sidebar, 10%);
-$dark-dark-text: #aaaab3;
+$dark-sidebar-light-1: lighten($dark-sidebar, 1%);
+$dark-sidebar-light-2: lighten($dark-sidebar, 2%);
+$dark-sidebar-light-3: lighten($dark-sidebar, 3%);
+$dark-sidebar-light-4: lighten($dark-sidebar, 4%);
+$dark-sidebar-light-5: lighten($dark-sidebar, 5%);
+$dark-sidebar-light-6: lighten($dark-sidebar, 6%);
+$dark-sidebar-light-7: lighten($dark-sidebar, 7%);
+$dark-sidebar-light-8: lighten($dark-sidebar, 8%);
+$dark-sidebar-light-9: lighten($dark-sidebar, 9%);
+$dark-sidebar-light-10: lighten($dark-sidebar, 10%);
+$dark-sidebar-light-12: lighten($dark-sidebar, 12%);
+$dark-sidebar-light-14: lighten($dark-sidebar, 14%);
+$dark-sidebar-light-15: lighten($dark-sidebar, 15%);
+$dark-sidebar-light-16: lighten($dark-sidebar, 16%);
+$dark-sidebar-light-18: lighten($dark-sidebar, 18%);
+$dark-sidebar-light-20: lighten($dark-sidebar, 20%);
+$dark-sidebar-light-22: lighten($dark-sidebar, 22%);
+$dark-sidebar-light-25: lighten($dark-sidebar, 25%);
+$dark-sidebar-light-55: lighten($dark-sidebar, 55%);
+
 $landing-dark-1: #0c0e14;
-$landing-dark-2: #191c2b;
 $landing-dark-3: darken($landing-dark-1, 2%);
+$landing-dark-12: lighten($landing-dark-1, 2%);
+$landing-dark-13: lighten($landing-dark-1, 4%);
+$landing-dark-14: lighten($landing-dark-1, 6%);
+$landing-dark-15: lighten($landing-dark-1, 8%);
+$landing-dark-16: lighten($landing-dark-1, 12%);
+$landing-dark-17: lighten($landing-dark-1, 14%);
+$landing-dark-18: lighten($landing-dark-1, 18%);
+
+$landing-dark-2: #191c2b;
 $landing-dark-4: darken($landing-dark-2, 2%);
 $landing-dark-5: darken($landing-dark-2, 6%);
 $landing-dark-6: darken($landing-dark-2, 12%);
+$landing-dark-7: lighten($landing-dark-2, 2%);
+$landing-dark-8: lighten($landing-dark-2, 4%);
+$landing-dark-9: lighten($landing-dark-2, 6%);
+$landing-dark-10: lighten($landing-dark-2, 8%);
+$landing-dark-11: lighten($landing-dark-2, 18%);
 
 /* ==========================================================================
 3. Brands colors

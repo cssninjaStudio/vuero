@@ -405,7 +405,7 @@ watchEffect(() => {
             height: 24px;
             width: 24px;
             border-radius: $radius-rounded;
-            background: lighten($fade-grey, 3%);
+            background: $fade-grey-light-3;
             opacity: 0;
             pointer-events: none;
             cursor: pointer;
@@ -823,7 +823,7 @@ watchEffect(() => {
                 width: 32px;
                 min-width: 32px;
                 border-radius: $radius-rounded;
-                color: lighten($light-text, 12%);
+                color: $light-text-light-12;
                 border: none;
                 background: none;
                 cursor: pointer;
@@ -831,7 +831,7 @@ watchEffect(() => {
                 transition: all 0.3s;
 
                 &:hover:not(.is-active) {
-                  background: lighten($fade-grey, 3%);
+                  background: $fade-grey-light-3;
                   color: $light-text;
                 }
 
@@ -932,11 +932,11 @@ watchEffect(() => {
           .preview-box {
             display: flex;
             align-items: center;
-            background: #fff;
+            background: $white;
             width: 100%;
             border-radius: 12px;
             padding: 12px;
-            border: 1px solid #ededed;
+            border: 1px solid $fade-grey;
             margin-bottom: 16px;
 
             .preview {
@@ -1003,7 +1003,7 @@ watchEffect(() => {
                 width: 32px;
                 min-width: 32px;
                 border-radius: $radius-rounded;
-                color: lighten($light-text, 12%);
+                color: $light-text-light-12;
                 border: none;
                 background: none;
                 cursor: pointer;
@@ -1011,7 +1011,7 @@ watchEffect(() => {
                 transition: all 0.3s;
 
                 &:hover:not(.is-active) {
-                  background: lighten($fade-grey, 3%);
+                  background: $fade-grey-light-3;
                   color: $light-text;
                 }
 
@@ -1199,12 +1199,12 @@ watchEffect(() => {
             border-radius: 12px;
             font-family: $font;
             font-size: 0.9rem;
-            color: lighten($light-text, 12%);
+            color: $light-text-light-12;
             margin: 0 8px;
             transition: all 0.3s;
 
             &:hover:not(.is-active) {
-              //background: lighten($fade-grey, 3%);
+              //background: $fade-grey-light-3;
               color: $light-text;
             }
 
@@ -1274,7 +1274,7 @@ watchEffect(() => {
 
         &:hover {
           background: $white;
-          border-color: lighten($fade-grey, 3%);
+          border-color: $fade-grey-light-3;
           box-shadow: $light-box-shadow;
 
           .learn-more-link {
@@ -1350,11 +1350,11 @@ watchEffect(() => {
 .is-dark {
   .wizard-navigation {
     background: $dark-sidebar-dark-2;
-    border-color: lighten($dark-sidebar, 12%);
+    border-color: $dark-sidebar-light-12;
 
     .navbar-item {
       &.is-wizard-title {
-        border-color: lighten($dark-sidebar, 12%);
+        border-color: $dark-sidebar-light-12;
 
         .title-wrap {
           color: $dark-dark-text;
@@ -1363,8 +1363,8 @@ watchEffect(() => {
 
       &.is-dark-mode {
         .navbar-icon {
-          background: lighten($dark-sidebar, 6%);
-          border-color: lighten($dark-sidebar, 12%);
+          background: $dark-sidebar-light-6;
+          border-color: $dark-sidebar-light-12;
         }
       }
     }
@@ -1372,19 +1372,19 @@ watchEffect(() => {
     .wizard-dropdown,
     .user-dropdown {
       .dropdown-menu {
-        border-color: lighten($dark-sidebar, 12%);
+        border-color: $dark-sidebar-light-12;
       }
     }
   }
 
   .wizard-buttons {
-    background: lighten($dark-sidebar, 1%);
-    border-color: lighten($dark-sidebar, 10%);
+    background: $dark-sidebar-light-1;
+    border-color: $dark-sidebar-light-10;
 
     .button {
       &.is-light {
-        background: lighten($dark-sidebar, 4%);
-        border-color: lighten($dark-sidebar, 12%);
+        background: $dark-sidebar-light-4;
+        border-color: $dark-sidebar-light-12;
         color: $dark-dark-text;
 
         &:hover {
@@ -1399,14 +1399,14 @@ watchEffect(() => {
     .step-content {
       .project-preview-wrapper {
         .project-preview-loader {
-          background: lighten($dark-sidebar, 10%);
+          background: $dark-sidebar-light-10;
         }
 
         .project-preview-header {
           .v-avatar {
             .edit-icon {
-              border-color: lighten($dark-sidebar, 12%);
-              background: lighten($dark-sidebar, 6%);
+              border-color: $dark-sidebar-light-12;
+              background: $dark-sidebar-light-6;
             }
           }
         }
@@ -1420,8 +1420,8 @@ watchEffect(() => {
             }
 
             .edit-icon {
-              border-color: lighten($dark-sidebar, 12%);
-              background: lighten($dark-sidebar, 2%);
+              border-color: $dark-sidebar-light-12;
+              background: $dark-sidebar-light-2;
 
               i {
                 color: $light-text;
@@ -1448,14 +1448,14 @@ watchEffect(() => {
           }
 
           .tool-card-inner {
-            border-color: lighten($dark-sidebar, 12%);
-            background: lighten($dark-sidebar, 6%);
+            border-color: $dark-sidebar-light-12;
+            background: $dark-sidebar-light-6;
 
             .media-flex-center {
               .flex-end {
                 .checkmark {
-                  border-color: lighten($dark-sidebar, 12%);
-                  background: lighten($dark-sidebar, 2%);
+                  border-color: $dark-sidebar-light-12;
+                  background: $dark-sidebar-light-2;
                   color: $accent;
                 }
               }
@@ -1468,15 +1468,15 @@ watchEffect(() => {
         .project-team-body {
           .members-list {
             .invited-member {
-              border-color: lighten($dark-sidebar, 12%);
-              background: lighten($dark-sidebar, 6%);
+              border-color: $dark-sidebar-light-12;
+              background: $dark-sidebar-light-6;
 
               .actions {
                 .permissions {
                   .permission-levels {
                     .permission-level {
                       .permission-level-inner {
-                        background: lighten($dark-sidebar, 18%);
+                        background: $dark-sidebar-light-18;
 
                         &.is-active {
                           background: $accent;
@@ -1498,7 +1498,7 @@ watchEffect(() => {
               .uploader-action {
                 .inner-action {
                   &:hover {
-                    background: lighten($dark-sidebar, 14%);
+                    background: $dark-sidebar-light-14;
                   }
                 }
               }
@@ -1509,8 +1509,8 @@ watchEffect(() => {
         .uploader-container {
           .upload-wrapper {
             .upload-box {
-              border-color: lighten($dark-sidebar, 12%);
-              background: lighten($dark-sidebar, 2%);
+              border-color: $dark-sidebar-light-12;
+              background: $dark-sidebar-light-2;
 
               &:hover {
                 border-color: $accent;
@@ -1528,8 +1528,8 @@ watchEffect(() => {
         .template-list {
           .template-list-item {
             .preview-box {
-              border-color: lighten($dark-sidebar, 12%);
-              background: lighten($dark-sidebar, 6%);
+              border-color: $dark-sidebar-light-12;
+              background: $dark-sidebar-light-6;
 
               .list-item-meta {
                 .name {
@@ -1543,14 +1543,14 @@ watchEffect(() => {
                 }
 
                 .progress {
-                  background: lighten($dark-sidebar, 2%);
+                  background: $dark-sidebar-light-2;
                 }
               }
 
               .list-item-actions {
                 .list-item-action {
                   &:hover {
-                    background: lighten($dark-sidebar, 12%);
+                    background: $dark-sidebar-light-12;
                   }
                 }
               }
@@ -1571,8 +1571,8 @@ watchEffect(() => {
           border-color: transparent;
 
           &:hover {
-            background: lighten($dark-sidebar, 6%);
-            border-color: lighten($dark-sidebar, 12%);
+            background: $dark-sidebar-light-6;
+            border-color: $dark-sidebar-light-12;
           }
         }
       }
@@ -1582,7 +1582,7 @@ watchEffect(() => {
           .project-avatar-upload {
             .filepond-profile-wrap {
               .filepond--drop-label {
-                background: lighten($dark-sidebar, 2%);
+                background: $dark-sidebar-light-2;
               }
             }
           }
@@ -1590,38 +1590,38 @@ watchEffect(() => {
       }
 
       .project-customer {
-        background: lighten($dark-sidebar, 6%);
-        border-color: lighten($dark-sidebar, 12%);
+        background: $dark-sidebar-light-6;
+        border-color: $dark-sidebar-light-12;
 
         .media-flex-center {
           .v-avatar {
             .avatar {
-              border-color: lighten($dark-sidebar, 12%);
+              border-color: $dark-sidebar-light-12;
             }
           }
         }
       }
 
       .project-dates {
-        background: lighten($dark-sidebar, 6%);
-        border-color: lighten($dark-sidebar, 12%);
+        background: $dark-sidebar-light-6;
+        border-color: $dark-sidebar-light-12;
 
         .project-dates-inner {
           .separator {
-            border-color: lighten($dark-sidebar, 20%);
+            border-color: $dark-sidebar-light-20;
           }
         }
       }
 
       .project-budget {
-        background: lighten($dark-sidebar, 6%);
-        border-color: lighten($dark-sidebar, 12%);
+        background: $dark-sidebar-light-6;
+        border-color: $dark-sidebar-light-12;
 
         .project-budget-inner {
           .budget-item {
             .budget-item-inner {
-              background: lighten($dark-sidebar, 4%);
-              border-color: lighten($dark-sidebar, 12%);
+              background: $dark-sidebar-light-4;
+              border-color: $dark-sidebar-light-12;
 
               &.is-active {
                 border-color: $accent;

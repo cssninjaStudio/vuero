@@ -252,8 +252,8 @@
 
         .content-section-body {
           .map-box {
-            background: lighten($dark-sidebar, 3%);
-            border-color: lighten($dark-sidebar, 10%);
+            background: $dark-sidebar-light-3;
+            border-color: $dark-sidebar-light-10;
 
             &.is-active {
               border-color: $accent !important;
@@ -291,7 +291,7 @@
 
     .mapboxgl-popup-content {
       background: $dark-sidebar-dark-3;
-      border-color: lighten($dark-sidebar, 10%);
+      border-color: $dark-sidebar-light-10;
 
       .mapboxgl-popup-close-button {
         color: $dark-dark-text !important;
@@ -302,14 +302,14 @@
   .mapboxgl-marker {
     svg {
       circle {
-        fill: lighten($dark-sidebar, 3%) !important;
+        fill: $dark-sidebar-light-3 !important;
       }
     }
   }
 
   .mapboxgl-ctrl-geocoder {
     background: $dark-sidebar-dark-3;
-    border-color: lighten($dark-sidebar, 10%);
+    border-color: $dark-sidebar-light-10;
 
     input {
       color: $white;
@@ -319,7 +319,7 @@
     .suggestions-wrapper {
       .suggestions {
         background: $dark-sidebar-dark-3;
-        border-color: lighten($dark-sidebar, 10%);
+        border-color: $dark-sidebar-light-10;
       }
     }
 

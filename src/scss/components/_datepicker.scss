@@ -164,7 +164,7 @@
 
   .vc-container {
     background: $dark-sidebar !important;
-    border: 1px solid lighten($dark-sidebar, 8%) !important;
+    border: 1px solid $dark-sidebar-light-8 !important;
   }
 
   .vc-pane-container {
@@ -180,14 +180,14 @@
       color: $dark-dark-text;
 
       &:hover {
-        background: lighten($dark-sidebar, 4%) !important;
+        background: $dark-sidebar-light-4 !important;
       }
     }
 
     .vc-arrows-container {
       .vc-arrow {
         &:hover {
-          background: lighten($dark-sidebar, 4%) !important;
+          background: $dark-sidebar-light-4 !important;
         }
       }
     }
@@ -196,14 +196,14 @@
   .vc-popover-content-wrapper {
     .vc-nav-popover-container {
       background: $dark-sidebar-dark-4 !important;
-      border-color: lighten($dark-sidebar, 4%) !important;
+      border-color: $dark-sidebar-light-4 !important;
 
       .vc-nav-container {
         .vc-nav-header {
           .vc-nav-title,
           .vc-nav-arrow {
             &:hover {
-              background: lighten($dark-sidebar, 2%) !important;
+              background: $dark-sidebar-light-2 !important;
             }
           }
         }
@@ -213,7 +213,7 @@
             color: $white;
 
             &:not(.is-active):hover {
-              background: lighten($dark-sidebar, 2%) !important;
+              background: $dark-sidebar-light-2 !important;
             }
 
             &.is-active {
@@ -227,7 +227,7 @@
 
   .vc-time-picker {
     &.vc-bordered {
-      border-color: lighten($dark-sidebar, 12%) !important;
+      border-color: $dark-sidebar-light-12 !important;
     }
 
     .vc-date-time {

@@ -202,11 +202,11 @@
 .is-dark {
   .all-projects {
     .all-projects-header {
-      background: lighten($dark-sidebar, 6%);
-      border-color: lighten($dark-sidebar, 12%);
+      background: $dark-sidebar-light-6;
+      border-color: $dark-sidebar-light-12;
 
       .header-item {
-        border-color: lighten($dark-sidebar, 18%);
+        border-color: $dark-sidebar-light-18;
 
         span {
           color: $dark-dark-text;
@@ -220,8 +220,8 @@
 
     .projects-card-grid {
       .grid-item {
-        background: lighten($dark-sidebar, 6%);
-        border-color: lighten($dark-sidebar, 12%);
+        background: $dark-sidebar-light-6;
+        border-color: $dark-sidebar-light-12;
 
         .top-section {
           .head {
@@ -519,8 +519,8 @@
     .illustration-header {
       .header-stats {
         .stats-inner {
-          background: lighten($dark-sidebar, 6%);
-          border-color: lighten($dark-sidebar, 12%);
+          background: $dark-sidebar-light-6;
+          border-color: $dark-sidebar-light-12;
 
           .stat-item {
             span {
@@ -533,8 +533,8 @@
 
     .recent-projects {
       .project-box {
-        background: lighten($dark-sidebar, 6%);
-        border-color: lighten($dark-sidebar, 12%);
+        background: $dark-sidebar-light-6;
+        border-color: $dark-sidebar-light-12;
 
         h3 {
           color: $dark-dark-text;
@@ -549,8 +549,8 @@
         }
 
         .filter {
-          background: lighten($dark-sidebar, 1%) !important;
-          border-color: lighten($dark-sidebar, 4%) !important;
+          background: $dark-sidebar-light-1 !important;
+          border-color: $dark-sidebar-light-4 !important;
 
           > span {
             color: $dark-dark-text;
@@ -560,8 +560,8 @@
 
       .grid-body {
         .grid-item {
-          background: lighten($dark-sidebar, 6%);
-          border-color: lighten($dark-sidebar, 12%);
+          background: $dark-sidebar-light-6;
+          border-color: $dark-sidebar-light-12;
 
           .item-title {
             h3 {
@@ -571,7 +571,7 @@
 
           .v-avatar {
             img {
-              border-color: lighten($dark-sidebar, 6%);
+              border-color: $dark-sidebar-light-6;
             }
           }
         }

@@ -16,7 +16,7 @@
   padding-right: 20px;
 
   &.is-primary {
-    border-color: lighten($primary, 24%);
+    border-color: $primary-light-24;
 
     .delete {
       &::before,
@@ -27,7 +27,7 @@
   }
 
   &.is-info {
-    border-color: lighten($info, 24%);
+    border-color: $info-light-24;
 
     .delete {
       &::before,
@@ -38,7 +38,7 @@
   }
 
   &.is-success {
-    border-color: lighten($success, 24%);
+    border-color: $success-light-24;
 
     .delete {
       &::before,
@@ -49,7 +49,7 @@
   }
 
   &.is-warning {
-    border-color: lighten($warning, 24%);
+    border-color: $warning-light-24;
 
     .delete {
       &::before,
@@ -60,7 +60,7 @@
   }
 
   &.is-danger {
-    border-color: lighten($danger, 24%);
+    border-color: $danger-light-24;
 
     .delete {
       &::before,
@@ -101,7 +101,7 @@
   .message {
     &:not(.is-primary):not(.is-info):not(.is-success):not(.is-warning):not(.is-danger) {
       background-color: $dark-sidebar;
-      border-color: lighten($dark-sidebar, 3%);
+      border-color: $dark-sidebar-light-3;
 
       .message-body {
         color: $light-text;

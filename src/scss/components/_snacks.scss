@@ -20,7 +20,7 @@
 
 .snack {
   display: inline-block;
-  background: lighten($fade-grey, 2%);
+  background: $fade-grey-light-2;
   height: 38px;
   width: auto;
   border-radius: 500px;
@@ -310,13 +310,13 @@
 
 .is-dark {
   .snack {
-    background: lighten($dark-sidebar, 2%);
-    border-color: lighten($dark-sidebar, 4%);
+    background: $dark-sidebar-light-2;
+    border-color: $dark-sidebar-light-4;
 
     .snack-media {
       &.is-icon {
         &:not(.is-solid) {
-          background: lighten($dark-sidebar, 4%);
+          background: $dark-sidebar-light-4;
         }
 
         &.is-primary:not(.is-solid) {

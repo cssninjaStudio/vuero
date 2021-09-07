@@ -128,16 +128,16 @@ label[for] {
 .is-dark {
   .input,
   .textarea {
-    background-color: lighten($dark-sidebar, 2%);
-    border-color: lighten($dark-sidebar, 4%);
+    background-color: $dark-sidebar-light-2;
+    border-color: $dark-sidebar-light-4;
     color: $dark-dark-text;
 
     &:hover {
-      border-color: lighten($dark-sidebar, 12%);
+      border-color: $dark-sidebar-light-12;
     }
 
     &:focus {
-      border-color: lighten($dark-sidebar, 8%);
+      border-color: $dark-sidebar-light-8;
 
       + .form-icon svg {
         color: $accent !important;
@@ -276,7 +276,7 @@ label[for] {
 }
 
 .select:not(.is-multiple):not(.is-loading)::after {
-  border-color: lighten($muted-grey, 14%);
+  border-color: $muted-grey-light-14;
   border-width: 1.4px;
 }
 
@@ -609,7 +609,7 @@ select {
       }
 
       &:hover {
-        background: lighten($fade-grey, 4%);
+        background: $fade-grey-light-4;
       }
 
       .v-avatar {
@@ -658,12 +658,12 @@ select {
   .field {
     &.has-textarea-addon {
       .textarea {
-        border-color: lighten($dark-sidebar, 4%) !important;
+        border-color: $dark-sidebar-light-4 !important;
       }
 
       .is-textarea-addon {
-        background-color: lighten($dark-sidebar, 2%);
-        border-color: lighten($dark-sidebar, 4%);
+        background-color: $dark-sidebar-light-2;
+        border-color: $dark-sidebar-light-4;
       }
     }
   }
@@ -716,19 +716,19 @@ select {
     }
 
     select {
-      background-color: lighten($dark-sidebar, 10%);
-      border-color: lighten($dark-sidebar, 12%) !important;
+      background-color: $dark-sidebar-light-10;
+      border-color: $dark-sidebar-light-12 !important;
       color: $dark-dark-text;
     }
   }
 
   .search-results {
     background: $dark-sidebar-dark-2;
-    border-color: lighten($dark-sidebar, 4%) !important;
+    border-color: $dark-sidebar-light-4 !important;
 
     .search-result {
       &:hover {
-        background: lighten($dark-sidebar, 2%);
+        background: $dark-sidebar-light-2;
       }
 
       .meta {
@@ -1076,13 +1076,13 @@ select {
     .easy-autocomplete-container {
       > ul {
         background: $dark-sidebar;
-        border-color: lighten($dark-sidebar, 8%);
+        border-color: $dark-sidebar-light-8;
 
         li {
-          border-color: lighten($dark-sidebar, 8%);
+          border-color: $dark-sidebar-light-8;
 
           &.selected {
-            background-color: lighten($dark-sidebar, 3%);
+            background-color: $dark-sidebar-light-3;
           }
 
           .eac-item {
@@ -1319,14 +1319,14 @@ select {
       }
 
       &::after {
-        background: lighten($dark-sidebar, 22%) !important;
+        background: $dark-sidebar-light-22 !important;
       }
     }
 
     input {
       &:checked + i {
         &::after {
-          background: lighten($dark-sidebar, 55%) !important;
+          background: $dark-sidebar-light-55 !important;
         }
       }
     }
@@ -1343,7 +1343,7 @@ select {
 
   &.is-primary {
     .input:checked ~ .slider {
-      background: lighten($primary, 20%);
+      background: $primary-light-20;
 
       &::after {
         background: $primary;
@@ -1354,7 +1354,7 @@ select {
 
   &.is-success {
     .input:checked ~ .slider {
-      background: lighten($success, 20%);
+      background: $success-light-20;
 
       &::after {
         background: $success;
@@ -1365,7 +1365,7 @@ select {
 
   &.is-info {
     .input:checked ~ .slider {
-      background: lighten($info, 20%);
+      background: $info-light-20;
 
       &::after {
         background: $info;
@@ -1376,7 +1376,7 @@ select {
 
   &.is-warning {
     .input:checked ~ .slider {
-      background: lighten($warning, 20%);
+      background: $warning-light-20;
 
       &::after {
         background: $warning;
@@ -1387,7 +1387,7 @@ select {
 
   &.is-danger {
     .input:checked ~ .slider {
-      background: lighten($danger, 20%);
+      background: $danger-light-20;
 
       &::after {
         background: $danger;
@@ -1407,7 +1407,7 @@ select {
     transition: all 0.2s ease;
 
     &::after {
-      background: #eee;
+      background: $light-grey;
       position: absolute;
       left: -8px;
       top: (7px - 24px) / 2;
@@ -1472,7 +1472,7 @@ select {
   .thin-switch {
     &.is-primary {
       .input:checked ~ .slider {
-        background: lighten($accent, 20%);
+        background: $accent-light-20;
 
         &::after {
           background: $accent;
@@ -1521,14 +1521,14 @@ select {
       background: $dark-sidebar;
 
       &::after {
-        background: lighten($dark-sidebar, 22%);
+        background: $dark-sidebar-light-22;
       }
     }
 
     .input:checked ~ .slider {
       &::after {
-        background: lighten($dark-sidebar, 55%);
-        border: lighten($dark-sidebar, 55%);
+        background: $dark-sidebar-light-55;
+        border: $dark-sidebar-light-55;
       }
     }
   }
@@ -1561,7 +1561,7 @@ select {
     width: 100%;
     height: 5px;
     border-radius: 5px;
-    background: #ccc;
+    background: $accent-grey;
     outline: none;
 
     &:focus {
@@ -1612,7 +1612,7 @@ select {
   }
 
   ::-moz-range-track {
-    background: #ccc;
+    background: $accent-grey;
     border: 0;
   }
 
@@ -1649,15 +1649,15 @@ select {
   .file {
     &:not(.is-primary):not(.is-success):not(.is-info):not(.is-warning):not(.is-danger) {
       .file-cta {
-        background: lighten($dark-sidebar, 10%);
-        border-color: lighten($dark-sidebar, 12%);
+        background: $dark-sidebar-light-10;
+        border-color: $dark-sidebar-light-12;
         color: $dark-dark-text;
       }
     }
 
     .file-name {
-      background-color: lighten($dark-sidebar, 2%);
-      border-color: lighten($dark-sidebar, 4%);
+      background-color: $dark-sidebar-light-2;
+      border-color: $dark-sidebar-light-4;
     }
   }
 }
@@ -1763,11 +1763,11 @@ select {
     }
 
     .filepond--root {
-      border-color: lighten($dark-sidebar, 12%);
+      border-color: $dark-sidebar-light-12;
     }
 
     .filepond--drop-label {
-      background: lighten($dark-sidebar, 2%);
+      background: $dark-sidebar-light-2;
 
       label {
         color: $dark-dark-text;
@@ -1839,31 +1839,31 @@ select {
   .choices {
     &.is-focused {
       .choices__inner {
-        border-color: lighten($dark-sidebar, 8%);
+        border-color: $dark-sidebar-light-8;
       }
     }
 
     .choices__inner {
-      background-color: lighten($dark-sidebar, 2%);
-      border-color: lighten($dark-sidebar, 4%);
+      background-color: $dark-sidebar-light-2;
+      border-color: $dark-sidebar-light-4;
 
       input {
-        background-color: lighten($dark-sidebar, 2%);
+        background-color: $dark-sidebar-light-2;
         color: $dark-dark-text;
       }
 
       .choices__list {
         .choices__item {
-          background-color: lighten($dark-sidebar, 8%);
-          border-color: lighten($dark-sidebar, 8%);
+          background-color: $dark-sidebar-light-8;
+          border-color: $dark-sidebar-light-8;
           color: $dark-dark-text;
         }
       }
     }
 
     .choices__list--dropdown {
-      background-color: lighten($dark-sidebar, 2%);
-      border-color: lighten($dark-sidebar, 4%);
+      background-color: $dark-sidebar-light-2;
+      border-color: $dark-sidebar-light-4;
 
       .choices__item {
         &.is-highlighted {

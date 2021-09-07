@@ -41,8 +41,8 @@
     }
 
     &.is-grey {
-      background: lighten($fade-grey, 2%);
-      border-color: lighten($fade-grey, 2%);
+      background: $fade-grey-light-2;
+      border-color: $fade-grey-light-2;
       color: $muted-grey;
     }
 
@@ -62,8 +62,8 @@
 .is-dark {
   .button {
     &.v-action {
-      background: lighten($dark-sidebar, 10%);
-      border-color: lighten($dark-sidebar, 12%);
+      background: $dark-sidebar-light-10;
+      border-color: $dark-sidebar-light-12;
       color: $dark-dark-text;
 
       &:hover {
@@ -239,12 +239,12 @@
 .is-dark {
   .v-button {
     &:not(.is-primary):not(.is-success):not(.is-info):not(.is-warning):not(.is-danger):not(.is-light):not(.is-white) {
-      background: lighten($dark-sidebar, 10%);
-      border-color: lighten($dark-sidebar, 12%);
+      background: $dark-sidebar-light-10;
+      border-color: $dark-sidebar-light-12;
       color: $dark-dark-text;
 
       &:hover {
-        border-color: lighten($dark-sidebar, 18%);
+        border-color: $dark-sidebar-light-18;
       }
     }
 
@@ -273,20 +273,20 @@
       }
 
       &.is-light {
-        background: lighten($accent, 25%) !important;
+        background: $accent-light-25 !important;
         color: $accent-dark-15;
       }
     }
 
     &.is-white {
-      background: lighten($dark-sidebar, 6%) !important;
+      background: $dark-sidebar-light-6 !important;
       border-color: $muted-grey !important;
       color: $muted-grey !important;
     }
 
     &.is-dark-outlined {
-      background: lighten($dark-sidebar, 10%);
-      border-color: lighten($dark-sidebar, 12%);
+      background: $dark-sidebar-light-10;
+      border-color: $dark-sidebar-light-12;
       color: $dark-dark-text;
 
       &:hover {
@@ -298,12 +298,12 @@
 
   .button {
     &:not(.is-primary):not(.is-success):not(.is-info):not(.is-warning):not(.is-danger):not(.is-light):not(.is-white) {
-      background: lighten($dark-sidebar, 10%);
-      border-color: lighten($dark-sidebar, 12%);
+      background: $dark-sidebar-light-10;
+      border-color: $dark-sidebar-light-12;
       color: $dark-dark-text;
 
       &:hover {
-        border-color: lighten($dark-sidebar, 18%);
+        border-color: $dark-sidebar-light-18;
       }
     }
 
@@ -313,14 +313,14 @@
     }
 
     &.is-white {
-      background: lighten($dark-sidebar, 6%) !important;
+      background: $dark-sidebar-light-6 !important;
       border-color: $muted-grey !important;
       color: $muted-grey !important;
     }
 
     &.is-dark-outlined {
-      background: lighten($dark-sidebar, 10%);
-      border-color: lighten($dark-sidebar, 12%);
+      background: $dark-sidebar-light-10;
+      border-color: $dark-sidebar-light-12;
       color: $dark-dark-text;
 
       &:hover {

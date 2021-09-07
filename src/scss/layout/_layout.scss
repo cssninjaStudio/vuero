@@ -288,7 +288,7 @@ body {
             align-items: flex-start;
             justify-content: space-between;
             padding: 1rem;
-            border-bottom: 0.01rem solid #eee;
+            border-bottom: 0.01rem solid $light-grey;
             margin-bottom: 0;
 
             .heading-left {
@@ -496,7 +496,7 @@ body {
     width: 3.5em;
     height: 3.5em;
     border-radius: $radius-rounded;
-    background-color: lighten($primary, 3%);
+    background-color: $primary-light-3;
     box-shadow: $primary-box-shadow;
     color: $smoke-white;
     display: flex;
@@ -590,7 +590,7 @@ body {
     }
 
     .floating-btn {
-      background: lighten($dark-sidebar, 2%);
+      background: $dark-sidebar-light-2;
       box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.3) !important;
     }
   }

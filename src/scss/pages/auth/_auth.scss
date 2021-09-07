@@ -145,7 +145,7 @@
 .is-dark {
   .auth-wrapper-inner {
     .hero-banner {
-      background: lighten($dark-sidebar, 4%);
+      background: $dark-sidebar-light-4;
     }
 
     .hero {
@@ -283,7 +283,7 @@
 .is-dark {
   .auth-wrapper-inner {
     &.is-single {
-      background: lighten($dark-sidebar, 4%);
+      background: $dark-sidebar-light-4;
 
       .single-form-wrap {
         .inner-wrap {
@@ -299,7 +299,7 @@
 
           .form-card {
             background: $dark-sidebar-dark-4;
-            border-color: lighten($dark-sidebar, 1%);
+            border-color: $dark-sidebar-light-1;
           }
         }
       }

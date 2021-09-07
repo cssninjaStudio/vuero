@@ -106,10 +106,10 @@
 .is-dark {
   .has-loader {
     .v-loader-wrapper {
-      background: lighten($dark-sidebar, 6%);
+      background: $dark-sidebar-light-6;
 
       &.is-grey {
-        background: lighten($dark-sidebar, 10%);
+        background: $dark-sidebar-light-10;
       }
     }
   }

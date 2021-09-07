@@ -493,8 +493,8 @@ body {
           }
 
           .input-button {
-            background-color: lighten($dark-sidebar, 2%) !important;
-            border-color: lighten($dark-sidebar, 12%) !important;
+            background-color: $dark-sidebar-light-2 !important;
+            border-color: $dark-sidebar-light-12 !important;
             color: $dark-dark-text;
 
             &:hover {
@@ -505,11 +505,11 @@ body {
 
           .fieldset {
             background: $dark-sidebar-dark-2;
-            border-color: lighten($dark-sidebar, 12%);
+            border-color: $dark-sidebar-light-12;
           }
 
           .fieldset-separator {
-            border-color: lighten($dark-sidebar, 12%);
+            border-color: $dark-sidebar-light-12;
           }
 
           .flex-label h4 {
@@ -539,8 +539,8 @@ body {
               }
 
               .option-inner {
-                background-color: lighten($dark-sidebar, 2%) !important;
-                border-color: lighten($dark-sidebar, 12%) !important;
+                background-color: $dark-sidebar-light-2 !important;
+                border-color: $dark-sidebar-light-12 !important;
 
                 h4 {
                   color: $dark-dark-text;
@@ -550,8 +550,8 @@ body {
           }
 
           .validation-box {
-            background-color: lighten($dark-sidebar, 2%) !important;
-            border-color: lighten($dark-sidebar, 12%) !important;
+            background-color: $dark-sidebar-light-2 !important;
+            border-color: $dark-sidebar-light-12 !important;
 
             .box-content h3 {
               color: $dark-dark-text;
@@ -560,8 +560,8 @@ body {
 
           .form-section-output {
             .output {
-              background-color: lighten($dark-sidebar, 2%) !important;
-              border-color: lighten($dark-sidebar, 12%) !important;
+              background-color: $dark-sidebar-light-2 !important;
+              border-color: $dark-sidebar-light-12 !important;
               color: $dark-dark-text;
 
               > span {
@@ -571,7 +571,7 @@ body {
               .action {
                 button {
                   &:hover {
-                    background: lighten($dark-sidebar, 5%);
+                    background: $dark-sidebar-light-5;
                   }
 
                   svg {

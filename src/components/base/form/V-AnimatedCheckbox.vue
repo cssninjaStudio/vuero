@@ -360,7 +360,7 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
       }
 
       .shadow-circle {
-        border-color: lighten($dark-sidebar, 20%);
+        border-color: $dark-sidebar-light-20;
       }
     }
   }

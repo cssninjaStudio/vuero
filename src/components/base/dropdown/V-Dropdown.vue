@@ -119,7 +119,7 @@ defineExpose({
     &:hover,
     &.is-active {
       .is-trigger {
-        background: lighten($fade-grey, 2%);
+        background: $fade-grey-light-2;
 
         svg {
           color: $light-text-dark-4;
@@ -227,7 +227,7 @@ defineExpose({
 
       &:not(.is-button):hover,
       &:not(.is-button).is-active {
-        background: lighten($fade-grey, 3%);
+        background: $fade-grey-light-3;
         color: $dark-text;
       }
 
@@ -435,7 +435,7 @@ defineExpose({
 .is-dark {
   .toolbar-link {
     &:hover {
-      background: lighten($dark-sidebar, 2%) !important;
+      background: $dark-sidebar-light-2 !important;
     }
 
     svg {
@@ -449,7 +449,7 @@ defineExpose({
       &:hover,
       &.is-active {
         .is-trigger {
-          background: lighten($dark-sidebar, 2%) !important;
+          background: $dark-sidebar-light-2 !important;
 
           svg {
             color: $dark-dark-text;
@@ -460,10 +460,10 @@ defineExpose({
       .dropdown-menu {
         .dropdown-content {
           background: $dark-sidebar !important;
-          border-color: lighten($dark-sidebar, 8%) !important;
+          border-color: $dark-sidebar-light-8 !important;
 
           .heading {
-            border-color: lighten($dark-sidebar, 8%) !important;
+            border-color: $dark-sidebar-light-8 !important;
 
             &:hover,
             *:hover {
@@ -534,24 +534,24 @@ defineExpose({
     .dropdown-menu {
       .dropdown-content {
         background: $dark-sidebar;
-        border-color: lighten($dark-sidebar, 8%) !important;
+        border-color: $dark-sidebar-light-8 !important;
 
         .dropdown-item {
           font-family: $font;
           color: $light-text;
 
           &.is-active {
-            background: lighten($dark-sidebar, 2%) !important;
+            background: $dark-sidebar-light-2 !important;
             //color: $white !important;
           }
         }
 
         .dropdown-divider {
-          background: lighten($dark-sidebar, 5%);
+          background: $dark-sidebar-light-5;
         }
 
         a:hover {
-          background: lighten($dark-sidebar, 5%) !important;
+          background: $dark-sidebar-light-5 !important;
         }
       }
     }
@@ -560,11 +560,11 @@ defineExpose({
   .child-dropdown {
     .inner {
       background: $dark-sidebar !important;
-      border-color: lighten($dark-sidebar, 4%) !important;
+      border-color: $dark-sidebar-light-4 !important;
 
       &:hover {
         background: $dark-sidebar !important;
-        border-color: lighten($dark-sidebar, 4%) !important;
+        border-color: $dark-sidebar-light-4 !important;
       }
 
       ul {

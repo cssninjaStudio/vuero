@@ -49,7 +49,7 @@
   .projects-toolbar {
     .avatar-stack {
       .avatar {
-        border-color: lighten($dark-sidebar, 3%);
+        border-color: $dark-sidebar-light-3;
       }
     }
   }

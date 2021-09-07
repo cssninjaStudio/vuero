@@ -218,10 +218,10 @@
 
       &.is-active {
         border-left-color: $primary;
-        background: lighten($primary, 51%);
+        background: $primary-light-51;
 
         &:hover {
-          background: lighten($primary, 51%);
+          background: $primary-light-51;
         }
       }
 
@@ -374,7 +374,7 @@
 
       &.is-active {
         opacity: 1;
-        background: lighten($primary, 51%);
+        background: $primary-light-51;
         border-left-color: $primary;
 
         &.is-eth {
@@ -492,8 +492,8 @@
 
 .is-dark {
   .mobile-subsidebar {
-    background: lighten($dark-sidebar, 2%);
-    border-color: lighten($dark-sidebar, 4%);
+    background: $dark-sidebar-light-2;
+    border-color: $dark-sidebar-light-4;
 
     .submenu {
       li {
@@ -534,7 +534,7 @@
         .user-group {
           img,
           span {
-            border-color: lighten($dark-sidebar, 2%) !important;
+            border-color: $dark-sidebar-light-2 !important;
           }
         }
       }

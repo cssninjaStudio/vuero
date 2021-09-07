@@ -195,8 +195,8 @@
 .is-dark {
   .tag {
     &:not(.is-primary):not(.is-secondary):not(.is-success):not(.is-info):not(.is-warning):not(.is-danger):not(.is-orange):not(.is-green):not(.is-blue):not(.is-purple) {
-      background: lighten($dark-sidebar, 10%);
-      border-color: lighten($dark-sidebar, 10%);
+      background: $dark-sidebar-light-10;
+      border-color: $dark-sidebar-light-10;
       color: $dark-dark-text;
     }
 
@@ -209,7 +209,7 @@
       }
 
       &.is-light {
-        background: lighten($accent, 22%);
+        background: $accent-light-22;
         color: $accent;
       }
     }

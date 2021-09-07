@@ -502,8 +502,8 @@
 .is-dark {
   .icon-wrap,
   .icon-wrap.is-placeholder {
-    background: lighten($dark-sidebar, 2%) !important;
-    border-color: lighten($dark-sidebar, 12%) !important;
+    background: $dark-sidebar-light-2 !important;
+    border-color: $dark-sidebar-light-12 !important;
   }
 }
 </style>

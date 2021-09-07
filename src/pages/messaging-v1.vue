@@ -1178,12 +1178,13 @@ watchPostEffect(() => {
     text-align: center;
     color: #c0c0c0;
     height: 20px;
-    text-shadow: 7px 0 0 #e5e5e5, 6px 0 0 #e5e5e5, 5px 0 0 #e5e5e5,
-      4px 0 0 #e5e5e5, 3px 0 0 #e5e5e5, 2px 0 0 #e5e5e5, 1px 0 0 #e5e5e5,
-      1px 0 0 #e5e5e5, 0 0 0 #e5e5e5, -1px 0 0 #e5e5e5, -2px 0 0 #e5e5e5,
-      -3px 0 0 #e5e5e5, -4px 0 0 #e5e5e5, -5px 0 0 #e5e5e5, -6px 0 0 #e5e5e5,
-      -7px 0 0 #e5e5e5;
-    box-shadow: inset 20px 0 0 #e5e5e5, inset -20px 0 0 #e5e5e5,
+    text-shadow: 7px 0 0 $lighter-grey, 6px 0 0 $lighter-grey,
+      5px 0 0 $lighter-grey, 4px 0 0 $lighter-grey, 3px 0 0 $lighter-grey,
+      2px 0 0 $lighter-grey, 1px 0 0 $lighter-grey, 1px 0 0 $lighter-grey,
+      0 0 0 $lighter-grey, -1px 0 0 $lighter-grey, -2px 0 0 $lighter-grey,
+      -3px 0 0 $lighter-grey, -4px 0 0 $lighter-grey, -5px 0 0 $lighter-grey,
+      -6px 0 0 $lighter-grey, -7px 0 0 $lighter-grey;
+    box-shadow: inset 20px 0 0 $lighter-grey, inset -20px 0 0 $lighter-grey,
       inset 0 -2px 0 #d7d7d7;
     line-height: 38px;
     margin-top: 5px;
@@ -1623,7 +1624,7 @@ watchPostEffect(() => {
     display: block;
     width: 450px;
     border-radius: 5px;
-    box-shadow: 0 0 3px #eee;
+    box-shadow: 0 0 3px $light-grey;
     transition: all 0.4s cubic-bezier(0.565, -0.26, 0.255, 1.41);
     cursor: default;
     -webkit-touch-callout: none;
@@ -1886,13 +1887,13 @@ watchPostEffect(() => {
 
 .is-dark {
   .chat-side-fab {
-    background: lighten($dark-sidebar, 2%) !important;
-    border-color: lighten($dark-sidebar, 12%) !important;
+    background: $dark-sidebar-light-2 !important;
+    border-color: $dark-sidebar-light-12 !important;
   }
 
   .is-chat-placeholder {
-    background: lighten($dark-sidebar, 5%) !important;
-    border-color: lighten($dark-sidebar, 5%) !important;
+    background: $dark-sidebar-light-5 !important;
+    border-color: $dark-sidebar-light-5 !important;
 
     h3 {
       color: $accent-grey-dark-15 !important;
@@ -1901,15 +1902,15 @@ watchPostEffect(() => {
 
   .is-chat {
     border: none !important;
-    background: lighten($dark-sidebar, 3%) !important;
+    background: $dark-sidebar-light-3 !important;
 
     .chat-loader {
-      background: lighten($dark-sidebar, 2%);
+      background: $dark-sidebar-light-2;
     }
 
     .chat-header {
-      //background: lighten($dark-sidebar, 2%);
-      //border-color: lighten($dark-sidebar, 2%);
+      //background: $dark-sidebar-light-2;
+      //border-color: $dark-sidebar-light-2;
 
       .is-badge {
         border-color: $dark-sidebar !important;
@@ -1918,7 +1919,7 @@ watchPostEffect(() => {
       .recipient-meta {
         span {
           &:first-child {
-            color: lighten($accent-grey, 6%) !important;
+            color: $accent-grey-light-6 !important;
           }
         }
       }
@@ -1978,7 +1979,7 @@ watchPostEffect(() => {
               border-color: $dark-sidebar !important;
 
               &.selected {
-                background: lighten($dark-sidebar, 2%);
+                background: $dark-sidebar-light-2;
               }
 
               .entry-text {
@@ -1995,8 +1996,8 @@ watchPostEffect(() => {
     }
 
     .chat-side {
-      background: lighten($dark-sidebar, 4%);
-      border-color: lighten($dark-sidebar, 2%);
+      background: $dark-sidebar-light-4;
+      border-color: $dark-sidebar-light-2;
 
       .user-name {
         color: $accent-grey;
@@ -2004,7 +2005,7 @@ watchPostEffect(() => {
 
       .chat-side-content {
         .is-badge {
-          border-color: lighten($dark-sidebar, 4%);
+          border-color: $dark-sidebar-light-4;
         }
 
         .detail-photos {
@@ -2016,14 +2017,14 @@ watchPostEffect(() => {
     }
 
     .chat-body {
-      background: lighten($dark-sidebar, 7%);
+      background: $dark-sidebar-light-7;
 
       .divider span {
-        color: lighten($dark-sidebar, 22%) !important;
+        color: $dark-sidebar-light-22 !important;
 
         &::before,
         &::after {
-          border-color: lighten($dark-sidebar, 15%) !important;
+          border-color: $dark-sidebar-light-15 !important;
         }
       }
 
@@ -2044,7 +2045,7 @@ watchPostEffect(() => {
         &.self {
           .msg {
             .msg-inner {
-              background: lighten($dark-sidebar, 15%) !important;
+              background: $dark-sidebar-light-15 !important;
               color: $accent-grey-dark-10 !important;
             }
 
@@ -2064,7 +2065,7 @@ watchPostEffect(() => {
           border-radius: 10px;
 
           .link-body {
-            background: lighten($dark-sidebar, 5%);
+            background: $dark-sidebar-light-5;
             border-radius: 0 0 6px 6px;
 
             .link-title,
@@ -2075,11 +2076,11 @@ watchPostEffect(() => {
         }
 
         &.is-link {
-          background: lighten($dark-sidebar, 3%);
+          background: $dark-sidebar-light-3;
           border-radius: $radius-large;
 
           .icon-wrapper {
-            border-color: lighten($dark-sidebar, 5%);
+            border-color: $dark-sidebar-light-5;
             background: $accent;
           }
 
@@ -2126,7 +2127,7 @@ watchPostEffect(() => {
     }
 
     #chat-input {
-      background: lighten($dark-sidebar, 2%) !important;
+      background: $dark-sidebar-light-2 !important;
       color: $accent-grey-dark-10 !important;
 
       &::-webkit-input-placeholder {
@@ -2148,20 +2149,20 @@ watchPostEffect(() => {
   }
 
   .collapsed-messaging {
-    background: lighten($dark-sidebar, 5%);
-    border-color: lighten($dark-sidebar, 5%) !important;
+    background: $dark-sidebar-light-5;
+    border-color: $dark-sidebar-light-5 !important;
 
     .collapsed-conversations {
       li {
         &.is-active {
-          background: lighten($dark-sidebar, 2%);
+          background: $dark-sidebar-light-2;
           border-color: $accent !important;
         }
 
         .user-container {
           .is-badge,
           .is-count {
-            border-color: lighten($dark-sidebar, 5%) !important;
+            border-color: $dark-sidebar-light-5 !important;
           }
         }
       }

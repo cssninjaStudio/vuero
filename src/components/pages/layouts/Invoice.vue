@@ -406,7 +406,7 @@ import { popovers } from '/@src/data/users/userPopovers'
 .is-dark {
   .invoice-wrapper {
     .invoice-header {
-      border-color: lighten($dark-sidebar, 20%);
+      border-color: $dark-sidebar-light-20;
 
       .left {
         h3 {
@@ -420,7 +420,7 @@ import { popovers } from '/@src/data/users/userPopovers'
             border: 1px solid transparent;
 
             &:hover {
-              background: lighten($dark-sidebar, 2%);
+              background: $dark-sidebar-light-2;
               border-color: $accent;
               color: $accent;
             }
@@ -436,11 +436,11 @@ import { popovers } from '/@src/data/users/userPopovers'
     }
 
     .invoice-section {
-      border-color: lighten($dark-sidebar, 12%) !important;
+      border-color: $dark-sidebar-light-12 !important;
 
       &.is-flex {
         .v-avatar {
-          border-color: lighten($dark-sidebar, 12%) !important;
+          border-color: $dark-sidebar-light-12 !important;
         }
 
         .meta,

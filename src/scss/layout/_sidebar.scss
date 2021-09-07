@@ -16,7 +16,7 @@
   margin-left: 0;
   height: 100vh;
   width: 80px;
-  background-color: #f9f9f9;
+  background-color: $body-color;
   box-shadow: none;
   z-index: 35;
   transition: border-radius 0.3s ease-in, background-color 0.3s ease-in,
@@ -43,7 +43,7 @@
   }
 
   &.is-colored {
-    border-color: lighten($landing-dark-2, 2%);
+    border-color: $landing-dark-7;
     background: $landing-dark-2;
 
     .sidebar-inner {
@@ -459,7 +459,7 @@
             width: 100% !important;
 
             &:hover:not(.is-button) {
-              background: lighten($fade-grey, 3%);
+              background: $fade-grey-light-3;
             }
           }
 
@@ -502,7 +502,7 @@
 
     &.is-curved {
       &:not(.is-bordered) {
-        border-color: lighten($dark-sidebar, 16%) !important;
+        border-color: $dark-sidebar-light-16 !important;
       }
     }
 
@@ -541,7 +541,7 @@
         }
 
         svg {
-          color: lighten($accent-grey, 3%);
+          color: $accent-grey-light-3;
         }
 
         .status-indicator {
@@ -555,15 +555,15 @@
         background: $dark-sidebar;
 
         .dropdown-head {
-          background: lighten($dark-sidebar, 2%) !important;
+          background: $dark-sidebar-light-2 !important;
 
           &:hover {
-            background: lighten($dark-sidebar, 2%) !important;
+            background: $dark-sidebar-light-2 !important;
           }
 
           .meta {
             &:hover {
-              background: lighten($dark-sidebar, 2%) !important;
+              background: $dark-sidebar-light-2 !important;
             }
 
             span {
@@ -578,18 +578,18 @@
           color: $white;
 
           &:not(.is-button):hover {
-            background: lighten($dark-sidebar, 5%);
+            background: $dark-sidebar-light-5;
           }
 
           &.is-button {
             &:hover {
-              background: lighten($dark-sidebar, 2%) !important;
+              background: $dark-sidebar-light-2 !important;
             }
           }
         }
 
         .dropdown-divider {
-          background: lighten($dark-sidebar, 5%);
+          background: $dark-sidebar-light-5;
         }
       }
     }
@@ -634,7 +634,7 @@
               }
 
               .sidebar-svg {
-                color: lighten($smoke-white, 2%);
+                color: $smoke-white-light-2;
                 opacity: 0.5;
               }
             }
@@ -650,15 +650,15 @@
         .dropdown-menu {
           .dropdown-content {
             .dropdown-head {
-              background: lighten($dark-sidebar, 2%) !important;
+              background: $dark-sidebar-light-2 !important;
 
               &:hover {
-                background: lighten($dark-sidebar, 2%) !important;
+                background: $dark-sidebar-light-2 !important;
               }
 
               .meta {
                 &:hover {
-                  background: lighten($dark-sidebar, 2%) !important;
+                  background: $dark-sidebar-light-2 !important;
                 }
 
                 span {

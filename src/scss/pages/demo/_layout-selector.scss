@@ -99,7 +99,7 @@
     .layout-item {
       &.is-active {
         .indicator {
-          border-color: lighten($dark-sidebar, 6%) !important;
+          border-color: $dark-sidebar-light-6 !important;
         }
       }
 

@@ -493,7 +493,7 @@ import {
 
             .avatar {
               &.is-fake {
-                background: lighten($dark-sidebar, 2%);
+                background: $dark-sidebar-light-2;
               }
             }
           }

@@ -142,7 +142,7 @@
     .hub-header {
       .v-avatar {
         .badge {
-          border-color: lighten($dark-sidebar, 6%) !important;
+          border-color: $dark-sidebar-light-6 !important;
         }
       }
     }
@@ -150,8 +150,8 @@
     .hub-body {
       .body-inner {
         .hub-card {
-          background: lighten($dark-sidebar, 6%);
-          border-color: lighten($dark-sidebar, 12%);
+          background: $dark-sidebar-light-6;
+          border-color: $dark-sidebar-light-12;
 
           .hub-card-foot {
             border-color: $muted-grey-dark-25;

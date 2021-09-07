@@ -781,8 +781,8 @@ const date = ref({
     .booking-bar-wrapper {
       @include vuero-card--dark();
 
-      background: lighten($dark-sidebar, 4%);
-      border-color: lighten($dark-sidebar, 12%);
+      background: $dark-sidebar-light-4;
+      border-color: $dark-sidebar-light-12;
       box-shadow: $light-box-shadow;
     }
 

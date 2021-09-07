@@ -352,7 +352,7 @@ const democheck = ref(['value_2'])
       flex-grow: 2;
       max-width: 275px;
       margin-left: auto;
-      background: lighten($primary, 8%);
+      background: $primary-light-8;
       padding: 20px;
       border-radius: $radius-large;
       box-shadow: $primary-box-shadow;
@@ -421,7 +421,7 @@ const democheck = ref(['value_2'])
 
     .home-header {
       .cta {
-        background: lighten($accent, 2%);
+        background: $accent-light-2;
         box-shadow: $accent-box-shadow;
       }
     }

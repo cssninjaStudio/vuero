@@ -88,7 +88,7 @@ var {
 
 code {
   white-space: pre;
-  color: #41b883;
+  color: $accent;
   background: $white;
   font-family: $font-monospace;
 }
@@ -127,7 +127,7 @@ code {
   }
 
   code {
-    background: lighten($dark-sidebar, 6%);
+    background: $dark-sidebar-light-6;
     color: $accent;
   }
 

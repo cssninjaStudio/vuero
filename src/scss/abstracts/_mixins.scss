@@ -130,8 +130,8 @@
 }
 
 @mixin vuero-card--dark() {
-  background: lighten($dark-sidebar, 6%);
-  border-color: lighten($dark-sidebar, 12%);
+  background: $dark-sidebar-light-6;
+  border-color: $dark-sidebar-light-12;
 
   &.is-primary {
     background: $accent;
@@ -140,18 +140,18 @@
 
   .v-avatar {
     img {
-      border-color: lighten($dark-sidebar, 6%) !important;
+      border-color: $dark-sidebar-light-6 !important;
     }
   }
 
   .avatar-stack {
     .v-avatar {
-      border-color: lighten($dark-sidebar, 6%) !important;
+      border-color: $dark-sidebar-light-6 !important;
 
       .avatar {
         &.is-more {
           .inner {
-            border-color: lighten($dark-sidebar, 6%) !important;
+            border-color: $dark-sidebar-light-6 !important;
           }
         }
       }
@@ -228,8 +228,8 @@
 }
 
 @mixin vuero-v-card--dark() {
-  background: lighten($dark-sidebar, 6%);
-  border-color: lighten($dark-sidebar, 12%);
+  background: $dark-sidebar-light-6;
+  border-color: $dark-sidebar-light-12;
 
   .card-header {
     .card-header-title {
@@ -238,16 +238,16 @@
   }
 
   .card-footer {
-    border-color: lighten($dark-sidebar, 12%);
+    border-color: $dark-sidebar-light-12;
 
     a {
-      border-color: lighten($dark-sidebar, 12%);
+      border-color: $dark-sidebar-light-12;
     }
   }
 
   .v-avatar {
     .badge {
-      border-color: lighten($dark-sidebar, 6%);
+      border-color: $dark-sidebar-light-6;
     }
   }
 }

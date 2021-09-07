@@ -260,8 +260,8 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
         display: flex;
         justify-content: center;
         align-items: center;
-        background: lighten($primary, 8%);
-        border-color: lighten($primary, 8%);
+        background: $primary-light-8;
+        border-color: $primary-light-8;
         padding: 20px 40px;
         min-height: 320px;
         border-radius: $radius-large;
@@ -345,8 +345,8 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
         .quick-stats {
           .quick-stats-inner {
             .quick-stat {
-              background: lighten($dark-sidebar, 2%);
-              border: 1px solid lighten($dark-sidebar, 12%);
+              background: $dark-sidebar-light-2;
+              border: 1px solid $dark-sidebar-light-12;
 
               .media-flex-center {
                 .flex-meta {

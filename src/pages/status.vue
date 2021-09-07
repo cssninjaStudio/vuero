@@ -545,16 +545,16 @@ useHead({
 .is-dark {
   .status-page-wrapper {
     .status-block {
-      background: lighten($dark-sidebar, 6%);
-      border-color: lighten($dark-sidebar, 12%);
+      background: $dark-sidebar-light-6;
+      border-color: $dark-sidebar-light-12;
 
       .status-uptime {
-        border-color: lighten($dark-sidebar, 12%);
+        border-color: $dark-sidebar-light-12;
       }
 
       .status-list {
         hr {
-          background-color: lighten($dark-sidebar, 12%);
+          background-color: $dark-sidebar-light-12;
           height: 1px;
         }
 
@@ -562,8 +562,8 @@ useHead({
           .progress-wrap {
             .progress-wrap-inner {
               .amount {
-                background: lighten($dark-sidebar, 2%);
-                border-color: lighten($dark-sidebar, 12%);
+                background: $dark-sidebar-light-2;
+                border-color: $dark-sidebar-light-12;
 
                 span {
                   color: $dark-dark-text;
@@ -575,7 +575,7 @@ useHead({
       }
 
       .tweets-header {
-        border-color: lighten($dark-sidebar, 12%);
+        border-color: $dark-sidebar-light-12;
       }
 
       .status-tweets {

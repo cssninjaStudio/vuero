@@ -73,13 +73,13 @@
       height: 32px;
       width: 32px;
       border-radius: $radius-rounded;
-      color: lighten($light-text, 15%);
+      color: $light-text-light-15;
       font-size: 0.9rem;
       transition: all 0.3s;
 
       &:hover {
         color: $light-text;
-        background: lighten($fade-grey, 3%);
+        background: $fade-grey-light-3;
       }
     }
   }
@@ -93,7 +93,7 @@
   .user-list {
     .user-list-icons {
       a:hover {
-        background: lighten($dark-sidebar, 10%);
+        background: $dark-sidebar-light-10;
       }
     }
   }

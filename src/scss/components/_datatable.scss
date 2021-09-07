@@ -410,40 +410,40 @@
       .dataTable-dropdown {
         label {
           &::after {
-            background: lighten($dark-sidebar, 6%) !important;
+            background: $dark-sidebar-light-6 !important;
           }
         }
 
         select {
-          border-color: lighten($dark-sidebar, 12%);
-          background: lighten($dark-sidebar, 6%);
+          border-color: $dark-sidebar-light-12;
+          background: $dark-sidebar-light-6;
           color: $white;
         }
       }
 
       .dataTable-search {
         &::after {
-          background: lighten($dark-sidebar, 6%) !important;
+          background: $dark-sidebar-light-6 !important;
         }
 
         input {
-          border-color: lighten($dark-sidebar, 12%);
-          background: lighten($dark-sidebar, 6%);
+          border-color: $dark-sidebar-light-12;
+          background: $dark-sidebar-light-6;
           color: $white;
         }
       }
     }
 
     .dataTable-container {
-      border-color: lighten($dark-sidebar, 12%);
-      background: lighten($dark-sidebar, 6%);
+      border-color: $dark-sidebar-light-12;
+      background: $dark-sidebar-light-6;
 
       .dataTable-table {
-        border-color: lighten($dark-sidebar, 12%);
+        border-color: $dark-sidebar-light-12;
 
         th,
         td {
-          border-color: lighten($dark-sidebar, 12%);
+          border-color: $dark-sidebar-light-12;
           color: $dark-dark-text;
         }
 
@@ -460,7 +460,7 @@
         }
 
         .drinks-icon {
-          border-color: lighten($dark-sidebar, 12%);
+          border-color: $dark-sidebar-light-12;
         }
       }
     }

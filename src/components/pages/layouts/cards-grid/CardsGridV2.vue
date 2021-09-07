@@ -245,7 +245,7 @@ const optionsSingle = [
           transition: all 0.3s;
 
           &:hover {
-            background: lighten($fade-grey, 4%);
+            background: $fade-grey-light-4;
             color: $primary;
           }
         }
@@ -257,34 +257,34 @@ const optionsSingle = [
 .is-dark {
   .card-grid-v2 {
     .card-grid-item {
-      border-color: lighten($dark-sidebar, 12%);
+      border-color: $dark-sidebar-light-12;
 
       .card {
-        background: lighten($dark-sidebar, 6%);
-        border-color: lighten($dark-sidebar, 12%);
+        background: $dark-sidebar-light-6;
+        border-color: $dark-sidebar-light-12;
 
         .card-header {
-          border-color: lighten($dark-sidebar, 12%);
+          border-color: $dark-sidebar-light-12;
         }
 
         .card-content {
-          border-color: lighten($dark-sidebar, 12%);
+          border-color: $dark-sidebar-light-12;
 
           .avatar-stack {
             .avatar {
-              border-color: lighten($dark-sidebar, 6%);
+              border-color: $dark-sidebar-light-6;
             }
           }
         }
 
         .card-footer {
-          border-color: lighten($dark-sidebar, 12%);
+          border-color: $dark-sidebar-light-12;
 
           a {
-            border-color: lighten($dark-sidebar, 12%);
+            border-color: $dark-sidebar-light-12;
 
             &:hover {
-              background: lighten($dark-sidebar, 2%);
+              background: $dark-sidebar-light-2;
               color: $accent;
             }
           }

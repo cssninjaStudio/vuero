@@ -8,7 +8,7 @@ $calendar-legacy-date-hover-background-color: $white-ter !default;
 $calendar-legacy-today-background: transparent !default;
 $calendar-legacy-today-border-color: $primary !default;
 $calendar-legacy-today-color: $primary !default;
-$calendar-legacy-range-background-color: lighten($primary, 50%) !default;
+$calendar-legacy-range-background-color: $primary-light-50 !default;
 $calendar-legacy-body-padding: 0 1em 1em 1em !default;
 $calendar-legacy-header-padding: 1em 1em 0 1em !default;
 $calendar-legacy-header-nav-padding: 0.5em !default;

@@ -410,7 +410,7 @@ onUnmounted(() => {
       align-items: center;
       padding: 10px;
       border-radius: 16px;
-      background: lighten($accent, 32%);
+      background: $accent-light-32;
       font-family: $font;
 
       .header-image {
@@ -664,7 +664,7 @@ onUnmounted(() => {
                 &:nth-child(2) {
                   font-size: 0.7rem;
                   text-transform: uppercase;
-                  color: lighten($primary, 40%);
+                  color: $primary-light-40;
                 }
               }
             }
@@ -825,7 +825,7 @@ onUnmounted(() => {
   .food-delivery-dashboard {
     .left {
       .left-header {
-        background: lighten($dark-sidebar, 2%) !important;
+        background: $dark-sidebar-light-2 !important;
 
         .header-meta {
           h3 {
@@ -851,8 +851,8 @@ onUnmounted(() => {
           .food-pills {
             .food-pills-inner {
               .food-pill {
-                background: lighten($dark-sidebar, 2%) !important;
-                border-color: lighten($dark-sidebar, 12%) !important;
+                background: $dark-sidebar-light-2 !important;
+                border-color: $dark-sidebar-light-12 !important;
 
                 span {
                   color: $dark-dark-text;
@@ -863,13 +863,13 @@ onUnmounted(() => {
                   border-color: $primary !important;
 
                   span {
-                    color: #fff;
+                    color: $white;
                   }
                 }
 
                 .food-pill-icon {
-                  background: lighten($fade-grey, 3%);
-                  border-color: lighten($fade-grey, 3%);
+                  background: $fade-grey-light-3;
+                  border-color: $fade-grey-light-3;
                 }
               }
 
@@ -890,8 +890,8 @@ onUnmounted(() => {
 
               .slick-custom {
                 &:hover {
-                  border-color: lighten($dark-sidebar, 2%);
-                  background: lighten($dark-sidebar, 2%);
+                  border-color: $dark-sidebar-light-2;
+                  background: $dark-sidebar-light-2;
                   box-shadow: $light-box-shadow;
                 }
               }
@@ -912,7 +912,7 @@ onUnmounted(() => {
 
                   span {
                     &:nth-child(2) {
-                      color: lighten($accent, 18%);
+                      color: $accent-light-18;
                     }
                   }
                 }
@@ -920,8 +920,8 @@ onUnmounted(() => {
 
               .meta-container {
                 .meta-icon {
-                  background: lighten($fade-grey, 3%);
-                  border-color: lighten($fade-grey, 3%);
+                  background: $fade-grey-light-3;
+                  border-color: $fade-grey-light-3;
                 }
 
                 .meta-content {
@@ -945,7 +945,7 @@ onUnmounted(() => {
     .right {
       .cart-widget {
         .cart-items {
-          border-color: lighten($dark-sidebar, 12%) !important;
+          border-color: $dark-sidebar-light-12 !important;
         }
 
         .cart-button {

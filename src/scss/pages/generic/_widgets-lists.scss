@@ -124,7 +124,7 @@ List Widgets Styles
     &.tabbed-widget {
       .widget-head {
         .tabbed-controls {
-          background: lighten($dark-sidebar, 3%);
+          background: $dark-sidebar-light-3;
 
           .tabbed-naver {
             background: $accent;
@@ -190,8 +190,8 @@ List Widgets Styles
   .list-widget {
     &.list-widget-v1 {
       .go-icon {
-        background: lighten($dark-sidebar, 3%);
-        border: 1px solid lighten($dark-sidebar, 12%);
+        background: $dark-sidebar-light-3;
+        border: 1px solid $dark-sidebar-light-12;
       }
     }
   }
@@ -357,17 +357,17 @@ List Widgets Styles
       .icon-timeline {
         .timeline-item {
           &::after {
-            border-color: lighten($dark-sidebar, 12%) !important;
+            border-color: $dark-sidebar-light-12 !important;
           }
 
           .timeline-icon:not(.is-primary):not(.is-info):not(.is-success):not(.is-orange):not(.is-yellow) {
-            background: lighten($dark-sidebar, 3%) !important;
-            border-color: lighten($dark-sidebar, 12%) !important;
+            background: $dark-sidebar-light-3 !important;
+            border-color: $dark-sidebar-light-12 !important;
           }
 
           .timeline-icon {
             &::after {
-              border-color: lighten($dark-sidebar, 12%) !important;
+              border-color: $dark-sidebar-light-12 !important;
             }
 
             &.is-primary {

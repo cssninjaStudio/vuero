@@ -429,13 +429,13 @@ var {
 
 .is-dark {
   .ajs-dialog {
-    background: lighten($dark-sidebar, 6%) !important;
-    border-color: lighten($dark-sidebar, 2%) !important;
+    background: $dark-sidebar-light-6 !important;
+    border-color: $dark-sidebar-light-2 !important;
   }
 
   .ajs-header {
-    background: lighten($dark-sidebar, 6%) !important;
-    border-color: lighten($dark-sidebar, 6%) !important;
+    background: $dark-sidebar-light-6 !important;
+    border-color: $dark-sidebar-light-6 !important;
     color: $accent-grey !important;
   }
 
@@ -452,16 +452,16 @@ var {
   }
 
   .ajs-footer {
-    background: lighten($dark-sidebar, 6%) !important;
-    border-color: lighten($dark-sidebar, 6%) !important;
+    background: $dark-sidebar-light-6 !important;
+    border-color: $dark-sidebar-light-6 !important;
 
     .ajs-ok {
       background: $accent !important;
     }
 
     .ajs-cancel {
-      background: lighten($dark-sidebar, 2%) !important;
-      border-color: lighten($dark-sidebar, 2%) !important;
+      background: $dark-sidebar-light-2 !important;
+      border-color: $dark-sidebar-light-2 !important;
       color: $muted-grey !important;
     }
   }

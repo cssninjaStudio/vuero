@@ -83,7 +83,7 @@
       border-radius: $radius-rounded;
 
       &.is-primary {
-        background: lighten($primary, 42%);
+        background: $primary-light-42;
 
         span {
           color: $primary;
@@ -91,7 +91,7 @@
       }
 
       &.is-accent {
-        background: lighten($accent, 36%);
+        background: $accent-light-36;
 
         span {
           color: $accent;
@@ -99,7 +99,7 @@
       }
 
       &.is-success {
-        background: lighten($success, 45%);
+        background: $success-light-45;
 
         span {
           color: $success;
@@ -107,7 +107,7 @@
       }
 
       &.is-info {
-        background: lighten($info, 45%);
+        background: $info-light-45;
 
         span {
           color: $info;
@@ -115,7 +115,7 @@
       }
 
       &.is-warning {
-        background: lighten($warning, 32%);
+        background: $warning-light-32;
 
         span {
           color: $warning;
@@ -123,7 +123,7 @@
       }
 
       &.is-danger {
-        background: lighten($danger, 36%);
+        background: $danger-light-36;
 
         span {
           color: $danger;
@@ -131,7 +131,7 @@
       }
 
       &.is-h-purple {
-        background: lighten($h-purple, 36%);
+        background: $h-purple-light-36;
 
         span {
           color: $h-purple;
@@ -139,7 +139,7 @@
       }
 
       &.is-h-orange {
-        background: lighten($h-orange, 18%);
+        background: $h-orange-light-18;
 
         span {
           color: $h-orange;
@@ -147,7 +147,7 @@
       }
 
       &.is-h-blue {
-        background: lighten($h-blue, 32%);
+        background: $h-blue-light-32;
 
         span {
           color: $h-blue;
@@ -155,7 +155,7 @@
       }
 
       &.is-h-red {
-        background: lighten($h-red, 38%);
+        background: $h-red-light-38;
 
         span {
           color: $h-red;
@@ -163,7 +163,7 @@
       }
 
       &.is-h-green {
-        background: lighten($h-green, 22%);
+        background: $h-green-light-22;
 
         span {
           color: $h-green;
@@ -171,7 +171,7 @@
       }
 
       &.is-h-yellow {
-        background: lighten($h-yellow, 22%);
+        background: $h-yellow-light-22;
 
         span {
           color: $h-yellow-dark-8;
@@ -202,7 +202,7 @@
         justify-content: center;
         align-items: center;
         border-radius: $radius-rounded;
-        background: lighten($fade-grey, 2%);
+        background: $fade-grey-light-2;
         border: 1px solid $fade-grey;
 
         span {
@@ -566,7 +566,7 @@
 .is-dark {
   .v-avatar {
     .avatar {
-      border-color: lighten($dark-sidebar, 6%);
+      border-color: $dark-sidebar-light-6;
 
       &.is-fake {
         &.is-primary {
@@ -668,13 +668,13 @@
 
       &.is-more {
         .inner {
-          background: lighten($dark-sidebar, 10%);
+          background: $dark-sidebar-light-10;
           border-color: $dark-sidebar-dark-2;
         }
       }
 
       &.is-fake {
-        border-color: lighten($dark-sidebar, 6%);
+        border-color: $dark-sidebar-light-6;
       }
     }
   }

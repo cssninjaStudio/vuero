@@ -136,7 +136,7 @@
 
         .close-panel {
           &:hover {
-            background: lighten($dark-sidebar, 6%);
+            background: $dark-sidebar-light-6;
 
             svg {
               color: $accent;
@@ -270,7 +270,7 @@
               }
 
               .language-option-inner {
-                border-color: lighten($dark-sidebar, 12%);
+                border-color: $dark-sidebar-light-12;
                 background: $dark-sidebar;
 
                 .indicator {
@@ -549,8 +549,8 @@
         .project-card {
           @include vuero-card--dark();
 
-          background: lighten($dark-sidebar, 2%) !important;
-          border-color: lighten($dark-sidebar, 8%) !important;
+          background: $dark-sidebar-light-2 !important;
+          border-color: $dark-sidebar-light-8 !important;
         }
 
         .team-card,
@@ -564,8 +564,8 @@
           }
 
           .link {
-            background: lighten($dark-sidebar, 6%) !important;
-            border-color: lighten($dark-sidebar, 12%) !important;
+            background: $dark-sidebar-light-6 !important;
+            border-color: $dark-sidebar-light-12 !important;
 
             &:hover {
               border-color: $accent !important;
@@ -580,15 +580,15 @@
         .icon-timeline {
           .timeline-item {
             &::after {
-              border-color: lighten($dark-sidebar, 12%) !important;
+              border-color: $dark-sidebar-light-12 !important;
             }
 
             .timeline-icon {
-              background: lighten($dark-sidebar, 6%) !important;
-              border-color: lighten($dark-sidebar, 12%) !important;
+              background: $dark-sidebar-light-6 !important;
+              border-color: $dark-sidebar-light-12 !important;
 
               &::after {
-                border-color: lighten($dark-sidebar, 12%) !important;
+                border-color: $dark-sidebar-light-12 !important;
               }
             }
           }
@@ -848,7 +848,7 @@
       .right-panel {
         .right-panel-body {
           .task-group {
-            border-color: lighten($dark-sidebar, 12%) !important;
+            border-color: $dark-sidebar-light-12 !important;
 
             h3 {
               color: $accent;

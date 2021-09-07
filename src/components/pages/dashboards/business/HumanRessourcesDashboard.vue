@@ -370,7 +370,7 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
       width: 40%;
       padding-right: 30px;
       margin-right: 30px;
-      border-right: 1px solid lighten($primary, 10%);
+      border-right: 1px solid $primary-light-10;
 
       .block-text {
         margin-bottom: 16px;
@@ -646,11 +646,11 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
       box-shadow: none;
 
       .center {
-        border-color: lighten($dark-sidebar, 10%);
+        border-color: $dark-sidebar-light-10;
 
         .candidates {
           button {
-            background: lighten($dark-sidebar, 10%);
+            background: $dark-sidebar-light-10;
             border: 1px solid transparent;
             transition: all 0.3s;
 

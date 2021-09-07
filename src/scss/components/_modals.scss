@@ -219,8 +219,8 @@
     .modal-content {
       .modal-card {
         .modal-card-head {
-          background: lighten($dark-sidebar, 6%) !important;
-          border-color: lighten($dark-sidebar, 12%);
+          background: $dark-sidebar-light-6 !important;
+          border-color: $dark-sidebar-light-12;
 
           h3 {
             color: $dark-dark-text;
@@ -236,12 +236,12 @@
         }
 
         .modal-card-body {
-          background: lighten($dark-sidebar, 6%) !important;
+          background: $dark-sidebar-light-6 !important;
         }
 
         .modal-card-foot {
-          background: lighten($dark-sidebar, 6%) !important;
-          border-color: lighten($dark-sidebar, 12%);
+          background: $dark-sidebar-light-6 !important;
+          border-color: $dark-sidebar-light-12;
         }
       }
     }

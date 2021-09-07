@@ -216,7 +216,7 @@
         }
 
         .shadow-circle {
-          border-color: lighten($dark-sidebar, 20%);
+          border-color: $dark-sidebar-light-20;
         }
       }
     }
@@ -345,7 +345,7 @@
 
   &.is-solid {
     input + span {
-      background: lighten($fade-grey, 3%);
+      background: $fade-grey-light-3;
     }
 
     &.is-primary {
@@ -505,7 +505,7 @@
 
   &.is-solid {
     input + span {
-      background: lighten($fade-grey, 3%);
+      background: $fade-grey-light-3;
     }
 
     &.is-primary {
@@ -650,8 +650,8 @@
 .is-dark {
   %controller {
     input + span {
-      background-color: lighten($dark-sidebar, 2%);
-      border-color: lighten($dark-sidebar, 4%);
+      background-color: $dark-sidebar-light-2;
+      border-color: $dark-sidebar-light-4;
 
       &::after {
         color: $dark-dark-text;
@@ -659,7 +659,7 @@
     }
 
     input + span {
-      border-color: lighten($dark-sidebar, 16%);
+      border-color: $dark-sidebar-light-16;
     }
   }
 
@@ -706,8 +706,8 @@
     cursor: pointer;
 
     &:checked ~ .toggler {
-      background: lighten($placeholder, 10%);
-      border-color: lighten($placeholder, 10%);
+      background: $placeholder-light-10;
+      border-color: $placeholder-light-10;
 
       .active,
       .inactive {
@@ -787,16 +787,16 @@
   .h-toggle {
     input {
       &:checked ~ .toggler {
-        background: lighten($dark-sidebar, 2%);
+        background: $dark-sidebar-light-2;
       }
     }
 
     .toggler {
-      border-color: lighten($dark-sidebar, 25%) !important;
+      border-color: $dark-sidebar-light-25 !important;
 
       .active,
       .inactive {
-        background: lighten($dark-sidebar, 2%);
+        background: $dark-sidebar-light-2;
       }
     }
   }

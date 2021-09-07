@@ -155,10 +155,10 @@ Search UI Elements
           }
         }
         .group-header {
-          border-color: lighten($dark-sidebar, 20%);
+          border-color: $dark-sidebar-light-20;
 
           .icon-wrap {
-            background: lighten($dark-sidebar, 2%);
+            background: $dark-sidebar-light-2;
             border-color: $accent;
             color: $accent;
           }

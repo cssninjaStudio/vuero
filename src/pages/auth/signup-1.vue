@@ -713,7 +713,7 @@ onUnmounted(() => {
           transition: all 0.3s;
 
           &:focus {
-            background: lighten($fade-grey, 6%);
+            background: $fade-grey-light-6;
             border-color: $placeholder;
 
             ~ .auth-label,
@@ -1168,7 +1168,7 @@ onUnmounted(() => {
 
 .is-dark {
   .signup-wrapper {
-    background: lighten($dark-sidebar, 10%);
+    background: $dark-sidebar-light-10;
   }
 
   .signup-steps {
@@ -1188,10 +1188,10 @@ onUnmounted(() => {
       }
 
       .step-icon {
-        background: lighten($dark-sidebar, 7%);
+        background: $dark-sidebar-light-7;
 
         &.is-active {
-          background: lighten($dark-sidebar, 16%);
+          background: $dark-sidebar-light-16;
 
           .inner {
             background: $accent;
@@ -1209,8 +1209,8 @@ onUnmounted(() => {
         }
 
         .inner {
-          background: lighten($dark-sidebar, 9%);
-          border-color: lighten($dark-sidebar, 9%);
+          background: $dark-sidebar-light-9;
+          border-color: $dark-sidebar-light-9;
         }
 
         .step-label {
@@ -1231,7 +1231,7 @@ onUnmounted(() => {
         .input {
           &:focus {
             background: $dark-sidebar-dark-4;
-            border-color: lighten($dark-sidebar, 12%);
+            border-color: $dark-sidebar-light-12;
 
             ~ .auth-label,
             ~ .auth-icon i {
@@ -1260,8 +1260,8 @@ onUnmounted(() => {
           }
 
           .signup-box {
-            background-color: lighten($dark-sidebar, 2%);
-            border-color: lighten($dark-sidebar, 4%);
+            background-color: $dark-sidebar-light-2;
+            border-color: $dark-sidebar-light-4;
 
             .meta {
               span:first-child {
@@ -1290,12 +1290,12 @@ onUnmounted(() => {
     .picture-selector {
       .image-container {
         img {
-          border-color: lighten($dark-sidebar, 10%);
+          border-color: $dark-sidebar-light-10;
         }
 
         .upload-button {
-          background-color: lighten($dark-sidebar, 2%);
-          border-color: lighten($dark-sidebar, 10%);
+          background-color: $dark-sidebar-light-2;
+          border-color: $dark-sidebar-light-10;
 
           svg {
             color: $light-text;
@@ -1311,7 +1311,7 @@ onUnmounted(() => {
       span {
         &::before,
         &::after {
-          border-color: lighten($dark-sidebar, 18%);
+          border-color: $dark-sidebar-light-18;
         }
       }
     }
@@ -1327,8 +1327,8 @@ onUnmounted(() => {
     }
 
     .slick-custom {
-      background-color: lighten($dark-sidebar, 2%);
-      border-color: lighten($dark-sidebar, 10%);
+      background-color: $dark-sidebar-light-2;
+      border-color: $dark-sidebar-light-10;
 
       &::before,
       &::after {

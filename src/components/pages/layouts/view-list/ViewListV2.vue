@@ -427,8 +427,8 @@ const filteredData = computed(() => {
           .buttons {
             .button {
               &:first-child {
-                background: lighten($dark-sidebar, 2%);
-                border-color: lighten($dark-sidebar, 8%);
+                background: $dark-sidebar-light-2;
+                border-color: $dark-sidebar-light-8;
                 color: $dark-dark-text;
               }
             }

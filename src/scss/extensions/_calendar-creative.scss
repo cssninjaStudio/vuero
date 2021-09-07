@@ -386,7 +386,7 @@ $calendar-date-padding: 0.1rem 0 !default;
       }
       &::after {
         border-color: rgba(255, 255, 255, 0);
-        border-bottom-color: #fff;
+        border-bottom-color: $white;
         border-width: 0.75rem;
         margin-left: -0.75rem;
       }

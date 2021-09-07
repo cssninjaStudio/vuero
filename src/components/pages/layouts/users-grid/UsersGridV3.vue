@@ -305,12 +305,12 @@ const filteredData = computed(() => {
 
       .icon-tabs-wrapper {
         .icon-tabs {
-          background: lighten($dark-sidebar, 2%);
-          border-color: lighten($dark-sidebar, 10%);
+          background: $dark-sidebar-light-2;
+          border-color: $dark-sidebar-light-10;
 
           .icon-tabs-inner {
             .tab-item {
-              border-color: lighten($dark-sidebar, 10%);
+              border-color: $dark-sidebar-light-10;
 
               &.is-active {
                 color: $accent;

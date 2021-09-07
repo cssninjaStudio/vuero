@@ -211,7 +211,7 @@ const isIconify = computed(() => {
   }
 
   &.is-placeholder {
-    background-color: lighten($fade-grey, 2%) !important;
+    background-color: $fade-grey-light-2 !important;
     border-color: $fade-grey-dark-3 !important;
     color: $light-text;
 

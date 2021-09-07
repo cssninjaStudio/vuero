@@ -477,7 +477,7 @@ import { followersList } from '/@src/data/widgets/ui/followers'
             }
 
             &:nth-child(2) {
-              color: lighten($primary, 18%);
+              color: $primary-light-18;
               font-size: 0.85rem;
             }
           }
@@ -636,8 +636,8 @@ import { followersList } from '/@src/data/widgets/ui/followers'
   .is-dark {
     .lifestyle-dashboard-v3 {
       .health-tile {
-        background: lighten($dark-sidebar, 6%);
-        border-color: lighten($dark-sidebar, 12%);
+        background: $dark-sidebar-light-6;
+        border-color: $dark-sidebar-light-12;
       }
     }
   }

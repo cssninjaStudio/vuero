@@ -205,7 +205,7 @@ const setStep = (target: number) => {
   .navbar-item {
     &.is-wizard-title {
       margin-left: 15px;
-      border-left: 1px solid lighten($muted-grey, 15%);
+      border-left: 1px solid $muted-grey-light-15;
       padding-bottom: 6px;
       padding-top: 6px;
       font-family: $font;

@@ -469,7 +469,7 @@ const goto = (index: number) => {
                 padding: 0;
                 margin: 0 5px;
                 border-radius: $radius-rounded;
-                background: #ddd;
+                background: $medium-grey;
                 border: 0;
                 outline: none;
 
@@ -493,7 +493,7 @@ const goto = (index: number) => {
                       -225deg,
                       $primary-dark-8 0%,
                       $primary-dark-2 48%,
-                      lighten($primary, 12%) 100%
+                      $primary-light-12 100%
                     );
                     box-shadow: $primary-box-shadow;
 
@@ -632,7 +632,7 @@ const goto = (index: number) => {
                   height: 30px;
                   width: 30px;
                   border-radius: $radius-rounded;
-                  background: lighten($fade-grey, 2%);
+                  background: $fade-grey-light-2;
 
                   &.is-up {
                     transform: rotate(-45deg);
@@ -760,10 +760,10 @@ const goto = (index: number) => {
       @include vuero-card--dark();
 
       &.is-card-panel {
-        background: lighten($dark-sidebar, 6%);
+        background: $dark-sidebar-light-6;
 
         .inner-box {
-          border-color: lighten($dark-sidebar, 12%) !important;
+          border-color: $dark-sidebar-light-12 !important;
 
           .box-title {
             h3 {
@@ -774,7 +774,7 @@ const goto = (index: number) => {
           .cards-carousel {
             .tns-nav {
               [aria-controls] {
-                background: lighten($dark-sidebar, 12%);
+                background: $dark-sidebar-light-12;
               }
             }
 
@@ -786,7 +786,7 @@ const goto = (index: number) => {
                       -225deg,
                       $accent-dark-8 0%,
                       $accent-dark-2 48%,
-                      lighten($accent, 12%) 100%
+                      $accent-light-12 100%
                     );
                     box-shadow: $accent-box-shadow;
 
@@ -799,7 +799,7 @@ const goto = (index: number) => {
                 }
 
                 .ccard {
-                  background: lighten($dark-sidebar, 2%);
+                  background: $dark-sidebar-light-2;
 
                   .top {
                     .inactive.dark-image {
@@ -828,7 +828,7 @@ const goto = (index: number) => {
               .card-balance-stat {
                 .stat-block {
                   .stat-icon {
-                    background: lighten($dark-sidebar, 2%);
+                    background: $dark-sidebar-light-2;
                   }
 
                   .stat-text {
@@ -841,11 +841,11 @@ const goto = (index: number) => {
 
           .monthly-summary-wrap {
             .monthly-summary {
-              border-color: lighten($dark-sidebar, 12%);
-              background: lighten($dark-sidebar, 4%);
+              border-color: $dark-sidebar-light-12;
+              background: $dark-sidebar-light-4;
 
               .monthly-summary-item {
-                border-color: lighten($dark-sidebar, 12%);
+                border-color: $dark-sidebar-light-12;
               }
             }
           }

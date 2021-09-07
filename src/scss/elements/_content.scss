@@ -70,10 +70,10 @@
     }
 
     blockquote {
-      background: lighten($dark-sidebar, 10%);
+      background: $dark-sidebar-light-10;
 
       &:not(.is-primary):not(.is-success):not(.is-info):not(.is-warning):not(.is-danger) {
-        border-color: lighten($dark-sidebar, 2%);
+        border-color: $dark-sidebar-light-2;
       }
 
       &.is-primary {
@@ -84,25 +84,25 @@
     table {
       th {
         color: $dark-dark-text;
-        border-color: lighten($dark-sidebar, 14%);
+        border-color: $dark-sidebar-light-14;
       }
 
       td {
-        border-color: lighten($dark-sidebar, 14%);
+        border-color: $dark-sidebar-light-14;
       }
     }
   }
 
   .is-divider,
   .is-divider-vertical {
-    border-color: lighten($dark-sidebar, 14%);
+    border-color: $dark-sidebar-light-14;
 
     &::before {
-      border-color: lighten($dark-sidebar, 14%);
+      border-color: $dark-sidebar-light-14;
     }
 
     &::after {
-      background: lighten($dark-sidebar, 6%);
+      background: $dark-sidebar-light-6;
     }
   }
 }

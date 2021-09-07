@@ -155,7 +155,7 @@ a {
   }
 
   ul {
-    border-color: lighten($dark-sidebar, 22%);
+    border-color: $dark-sidebar-light-22;
   }
 
   a {

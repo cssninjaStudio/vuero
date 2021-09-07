@@ -136,11 +136,11 @@
   .ck-editor {
     .ck-editor__main {
       .ck-editor__editable {
-        border-color: lighten($dark-sidebar, 12%) !important;
+        border-color: $dark-sidebar-light-12 !important;
       }
       .ck-content {
-        background: lighten($dark-sidebar, 6%) !important;
-        border-color: lighten($dark-sidebar, 12%);
+        background: $dark-sidebar-light-6 !important;
+        border-color: $dark-sidebar-light-12;
       }
     }
 

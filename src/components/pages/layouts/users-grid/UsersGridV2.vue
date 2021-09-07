@@ -356,10 +356,10 @@ const optionsSingle = [
   }
   .user-grid-v2 {
     .grid-item-wrap {
-      border-color: lighten($dark-sidebar, 12%);
+      border-color: $dark-sidebar-light-12;
 
       .grid-item-head {
-        background: lighten($dark-sidebar, 4%);
+        background: $dark-sidebar-light-4;
       }
     }
   }

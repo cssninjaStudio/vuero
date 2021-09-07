@@ -543,7 +543,7 @@
     }
 
     .articles-feed {
-      background: lighten($dark-sidebar, 8%);
+      background: $dark-sidebar-light-8;
 
       .articles-feed-subheader {
         .selector {

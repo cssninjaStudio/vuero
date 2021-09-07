@@ -138,7 +138,7 @@
             }
 
             .separator {
-              border-color: lighten($dark-sidebar, 16%) !important;
+              border-color: $dark-sidebar-light-16 !important;
             }
           }
         }

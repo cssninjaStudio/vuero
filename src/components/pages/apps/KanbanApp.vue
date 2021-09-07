@@ -659,7 +659,7 @@ onMounted(() => {
     padding: 6px;
     background: #e3e4e5;
     border-radius: 8px;
-    border: 1px solid #ddd;
+    border: 1px solid $medium-grey;
 
     .column-title {
       display: flex;
@@ -833,7 +833,7 @@ onMounted(() => {
   background: $white;
   border-radius: $radius-large;
   margin-top: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid $medium-grey;
   transition: all 0.4s;
 
   &:hover {
@@ -1005,13 +1005,13 @@ onMounted(() => {
 
 .is-dark {
   .kanban-column {
-    background: lighten($dark-sidebar, 15%);
-    border-color: lighten($dark-sidebar, 15%);
+    background: $dark-sidebar-light-15;
+    border-color: $dark-sidebar-light-15;
 
     .collapsed-content {
       .expand-button {
-        background: lighten($dark-sidebar, 6%) !important;
-        border-color: lighten($dark-sidebar, 12%) !important;
+        background: $dark-sidebar-light-6 !important;
+        border-color: $dark-sidebar-light-12 !important;
 
         &:hover {
           svg {
@@ -1052,12 +1052,12 @@ onMounted(() => {
       }
 
       .dropdown-divider {
-        background: lighten($dark-sidebar, 5%);
+        background: $dark-sidebar-light-5;
       }
 
       a:hover,
       div:hover {
-        background: lighten($dark-sidebar, 5%) !important;
+        background: $dark-sidebar-light-5 !important;
       }
     }
 
@@ -1067,26 +1067,26 @@ onMounted(() => {
 
     .kanban-card,
     .gu-transit {
-      background: lighten($dark-sidebar, 6%) !important;
-      border-color: lighten($dark-sidebar, 6%) !important;
+      background: $dark-sidebar-light-6 !important;
+      border-color: $dark-sidebar-light-6 !important;
 
       &.is-new {
-        background: lighten($dark-sidebar, 6%);
-        border-color: lighten($dark-sidebar, 6%);
+        background: $dark-sidebar-light-6;
+        border-color: $dark-sidebar-light-6;
 
         .card-title {
-          color: lighten($accent-grey, 2%);
+          color: $accent-grey-light-2;
         }
 
         .card-footer,
         .card-footer-item {
-          border-color: lighten($dark-sidebar, 20%);
+          border-color: $dark-sidebar-light-20;
           color: $light-white;
         }
       }
 
       .card-title {
-        color: lighten($accent-grey, 2%);
+        color: $accent-grey-light-2;
       }
     }
   }

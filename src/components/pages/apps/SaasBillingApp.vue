@@ -728,7 +728,7 @@ const randomCard = () => {
 .is-dark {
   .saas-billing-wrapper {
     .plans-wrapper {
-      border-color: lighten($dark-sidebar, 20%);
+      border-color: $dark-sidebar-light-20;
 
       .left {
         .inner-wrap {
@@ -755,8 +755,8 @@ const randomCard = () => {
               }
 
               .checkmark {
-                background: lighten($dark-sidebar, 2%);
-                border-color: lighten($dark-sidebar, 12%);
+                background: $dark-sidebar-light-2;
+                border-color: $dark-sidebar-light-12;
               }
             }
           }
@@ -820,8 +820,8 @@ const randomCard = () => {
 
       .right {
         .payment-form {
-          background: lighten($dark-sidebar, 6%);
-          border-color: lighten($dark-sidebar, 12%);
+          background: $dark-sidebar-light-6;
+          border-color: $dark-sidebar-light-12;
 
           .form-header {
             h3 {

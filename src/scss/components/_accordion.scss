@@ -74,15 +74,15 @@
 
 .is-dark {
   .single-accordion {
-    background: lighten($dark-sidebar, 4%);
-    border-color: lighten($dark-sidebar, 12%);
+    background: $dark-sidebar-light-4;
+    border-color: $dark-sidebar-light-12;
 
     .accordion-header {
       color: $dark-dark-text;
-      border-color: lighten($dark-sidebar, 12%);
+      border-color: $dark-sidebar-light-12;
 
       &:hover {
-        background: lighten($dark-sidebar, 6%);
+        background: $dark-sidebar-light-6;
       }
 
       &::before {
@@ -98,7 +98,7 @@
 
     .accordion-content {
       background: $dark-sidebar;
-      border-color: lighten($dark-sidebar, 8%);
+      border-color: $dark-sidebar-light-8;
     }
   }
 }
@@ -209,8 +209,8 @@
     &[open] {
       .collapse-header {
         .collapse-icon {
-          background: lighten($dark-sidebar, 2%);
-          border-color: lighten($dark-sidebar, 4%) !important;
+          background: $dark-sidebar-light-2;
+          border-color: $dark-sidebar-light-4 !important;
         }
       }
     }
@@ -221,8 +221,8 @@
       }
 
       .collapse-icon {
-        background: lighten($dark-sidebar, 6%);
-        border-color: lighten($dark-sidebar, 6%);
+        background: $dark-sidebar-light-6;
+        border-color: $dark-sidebar-light-6;
       }
     }
   }

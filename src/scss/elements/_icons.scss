@@ -192,7 +192,7 @@
   }
 
   &.is-primary {
-    background: lighten($primary, 42%);
+    background: $primary-light-42;
 
     &.is-bordered {
       border-color: $primary;
@@ -208,7 +208,7 @@
   }
 
   &.is-secondary {
-    background: lighten($secondary, 42%);
+    background: $secondary-light-42;
 
     &.is-bordered {
       border-color: $secondary;
@@ -224,7 +224,7 @@
   }
 
   &.is-accent {
-    background: lighten($accent, 36%);
+    background: $accent-light-36;
 
     &.is-bordered {
       border-color: $accent;
@@ -240,7 +240,7 @@
   }
 
   &.is-success {
-    background: lighten($success, 45%);
+    background: $success-light-45;
 
     &.is-bordered {
       border-color: $success;
@@ -256,7 +256,7 @@
   }
 
   &.is-info {
-    background: lighten($info, 45%);
+    background: $info-light-45;
 
     &.is-bordered {
       border-color: $info;
@@ -272,7 +272,7 @@
   }
 
   &.is-warning {
-    background: lighten($warning, 32%);
+    background: $warning-light-32;
 
     &.is-bordered {
       border-color: $warning;
@@ -288,7 +288,7 @@
   }
 
   &.is-danger {
-    background: lighten($danger, 36%);
+    background: $danger-light-36;
 
     &.is-bordered {
       border-color: $danger;
@@ -304,7 +304,7 @@
   }
 
   &.is-purple {
-    background: lighten($h-purple, 36%);
+    background: $h-purple-light-36;
 
     &.is-bordered {
       border-color: $h-purple;
@@ -320,7 +320,7 @@
   }
 
   &.is-blue {
-    background: lighten($h-blue, 34%);
+    background: $h-blue-light-34;
 
     &.is-bordered {
       border-color: $h-blue;
@@ -336,7 +336,7 @@
   }
 
   &.is-yellow {
-    background: lighten($h-yellow, 22%);
+    background: $h-yellow-light-22;
 
     &.is-bordered {
       border-color: $h-yellow;
@@ -352,7 +352,7 @@
   }
 
   &.is-orange {
-    background: lighten($h-orange, 20%);
+    background: $h-orange-light-20;
 
     &.is-bordered {
       border-color: $h-orange;
@@ -368,7 +368,7 @@
   }
 
   &.is-green {
-    background: lighten($h-green, 23%);
+    background: $h-green-light-23;
 
     &.is-bordered {
       border-color: $h-green;
@@ -384,7 +384,7 @@
   }
 
   &.is-red {
-    background: lighten($h-red, 38%);
+    background: $h-red-light-38;
 
     &.is-bordered {
       border-color: $h-red;

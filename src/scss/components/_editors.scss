@@ -65,13 +65,13 @@
 .is-dark {
   .note-editor {
     .note-toolbar {
-      background: lighten($dark-sidebar, 2%);
-      border-color: lighten($dark-sidebar, 12%);
+      background: $dark-sidebar-light-2;
+      border-color: $dark-sidebar-light-12;
 
       .note-btn-group {
         .note-btn {
-          background: lighten($dark-sidebar, 4%);
-          border-color: lighten($dark-sidebar, 12%);
+          background: $dark-sidebar-light-4;
+          border-color: $dark-sidebar-light-12;
 
           i,
           .note-icon-caret {
@@ -81,13 +81,13 @@
 
         .note-dropdown-menu {
           background: $dark-sidebar-dark-2;
-          border-color: lighten($dark-sidebar, 8%);
+          border-color: $dark-sidebar-light-8;
 
           .note-dropdown-item {
             color: $light-text;
 
             &:hover {
-              background: lighten($dark-sidebar, 1%);
+              background: $dark-sidebar-light-1;
             }
           }
 
@@ -102,26 +102,26 @@
       .table {
         tbody {
           td {
-            border-color: lighten($dark-sidebar, 12%) !important;
+            border-color: $dark-sidebar-light-12 !important;
           }
         }
       }
     }
 
     .note-popover {
-      background: lighten($dark-sidebar, 2%);
-      border-color: lighten($dark-sidebar, 12%);
+      background: $dark-sidebar-light-2;
+      border-color: $dark-sidebar-light-12;
 
       &.bottom {
         .note-popover-arrow::after {
-          border-bottom-color: lighten($dark-sidebar, 2%);
+          border-bottom-color: $dark-sidebar-light-2;
         }
       }
 
       .note-btn-group {
         .note-btn {
-          background: lighten($dark-sidebar, 4%);
-          border-color: lighten($dark-sidebar, 12%);
+          background: $dark-sidebar-light-4;
+          border-color: $dark-sidebar-light-12;
 
           i,
           .note-icon-caret {
@@ -138,8 +138,8 @@
     border: none;
 
     .note-modal-header {
-      background: lighten($dark-sidebar, 2%);
-      border-color: lighten($dark-sidebar, 12%);
+      background: $dark-sidebar-light-2;
+      border-color: $dark-sidebar-light-12;
 
       h4 {
         color: $dark-dark-text;
@@ -155,12 +155,12 @@
     }
 
     .note-modal-body {
-      background: lighten($dark-sidebar, 4%);
+      background: $dark-sidebar-light-4;
 
       .form-group {
         input {
           background: $dark-sidebar-dark-2;
-          border-color: lighten($dark-sidebar, 8%);
+          border-color: $dark-sidebar-light-8;
           color: $light-text;
           height: 38px;
           border-radius: $radius;
@@ -169,8 +169,8 @@
     }
 
     .note-modal-footer {
-      background: lighten($dark-sidebar, 2%);
-      border-color: lighten($dark-sidebar, 12%);
+      background: $dark-sidebar-light-2;
+      border-color: $dark-sidebar-light-12;
 
       .btn-primary {
         background: $accent;
@@ -187,13 +187,13 @@
 .is-dark {
   .sun-editor {
     width: 100%;
-    border-color: lighten($dark-sidebar, 12%) !important;
+    border-color: $dark-sidebar-light-12 !important;
     background: $dark-sidebar-dark-2;
 
     .se-container {
       .se-toolbar {
         background: $dark-sidebar-dark-2;
-        border-color: lighten($dark-sidebar, 12%);
+        border-color: $dark-sidebar-light-12;
         outline: none;
 
         &.se-toolbar-balloon {
@@ -206,8 +206,8 @@
 
         .se-btn-tray {
           .se-btn-module {
-            background: lighten($dark-sidebar, 4%);
-            border-color: lighten($dark-sidebar, 12%);
+            background: $dark-sidebar-light-4;
+            border-color: $dark-sidebar-light-12;
 
             .se-menu-list {
               li {
@@ -215,8 +215,8 @@
                   color: $dark-dark-text;
 
                   &:hover {
-                    background: lighten($dark-sidebar, 2%);
-                    border-color: lighten($dark-sidebar, 12%);
+                    background: $dark-sidebar-light-2;
+                    border-color: $dark-sidebar-light-12;
                   }
                 }
               }
@@ -236,7 +236,7 @@
 
       .se-resizing-bar {
         background: $dark-sidebar-dark-2;
-        border-color: lighten($dark-sidebar, 12%);
+        border-color: $dark-sidebar-light-12;
       }
     }
   }

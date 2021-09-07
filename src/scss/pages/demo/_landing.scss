@@ -334,22 +334,22 @@
   .landing-page-wrapper {
     .navbar {
       &:not(.is-docked) {
-        background: lighten($landing-dark-1, 8%);
-        border-color: lighten($landing-dark-1, 14%);
+        background: $landing-dark-15;
+        border-color: $landing-dark-17;
       }
 
       &.is-docked {
         .navbar-brand {
           .brand-icon {
-            background: lighten($landing-dark-2, 8%) !important;
-            border-color: lighten($landing-dark-2, 18%) !important;
+            background: $landing-dark-10 !important;
+            border-color: $landing-dark-11 !important;
           }
         }
       }
 
       &.is-solid {
-        background: lighten($landing-dark-1, 8%) !important;
-        border-color: lighten($landing-dark-1, 14%) !important;
+        background: $landing-dark-15 !important;
+        border-color: $landing-dark-17 !important;
 
         .navbar-brand {
           .brand-icon {
@@ -360,8 +360,8 @@
 
         .navbar-menu {
           &.is-active {
-            background: lighten($landing-dark-1, 12%);
-            border-color: lighten($landing-dark-1, 14%);
+            background: $landing-dark-16;
+            border-color: $landing-dark-17;
           }
         }
       }
@@ -685,18 +685,18 @@
   .landing-page-wrapper {
     .stacks {
       .stack {
-        background: lighten($landing-dark-2, 8%);
-        border-color: lighten($landing-dark-2, 18%);
+        background: $landing-dark-10;
+        border-color: $landing-dark-11;
       }
     }
 
     .boxed-features {
       .flex-card {
         background: $landing-dark-4;
-        border-color: lighten($landing-dark-2, 2%);
+        border-color: $landing-dark-7;
 
         .flex-cell {
-          border-color: lighten($landing-dark-2, 4%);
+          border-color: $landing-dark-8;
 
           i {
             color: $accent;
@@ -759,7 +759,7 @@
   .landing-page-wrapper {
     .section {
       &.section-focus {
-        background: lighten($landing-dark-1, 2%);
+        background: $landing-dark-12;
       }
 
       .section-title {
@@ -846,7 +846,7 @@
 .is-dark {
   .landing-page-wrapper {
     .cta-block {
-      border-color: lighten($landing-dark-2, 4%);
+      border-color: $landing-dark-8;
 
       .head-text {
         h3 {
@@ -1011,7 +1011,7 @@
     opacity: 0;
     margin-bottom: 12px;
     padding-bottom: 12px;
-    border-bottom: 1px solid lighten($primary, 20%);
+    border-bottom: 1px solid $primary-light-20;
     transform: translateY(20px);
     transition: all 0.3s;
     transition-delay: 0.1s;
@@ -1150,14 +1150,14 @@
       }
 
       .vuero-demo-wrapper {
-        border-color: lighten($dark-sidebar, 12%);
+        border-color: $dark-sidebar-light-12;
 
         .circle-overlay {
           background: $accent;
         }
 
         .demo-title {
-          border-color: lighten($accent, 10%);
+          border-color: $accent-light-10;
         }
       }
     }
@@ -1197,7 +1197,7 @@
             }
 
             a {
-              border-color: lighten($landing-dark-1, 18%);
+              border-color: $landing-dark-18;
             }
           }
         }
@@ -1206,7 +1206,7 @@
 
     .component-box {
       background: $landing-dark-4;
-      border-color: lighten($landing-dark-2, 2%);
+      border-color: $landing-dark-7;
 
       &:hover {
         border-color: $accent;
@@ -1348,10 +1348,10 @@
 .is-dark {
   .landing-page-wrapper {
     .vuero-footer {
-      background: lighten($landing-dark-1, 8%);
+      background: $landing-dark-15;
 
       .footer-head {
-        border-color: lighten($landing-dark-1, 18%);
+        border-color: $landing-dark-18;
 
         .head-text {
           h3 {
@@ -1465,16 +1465,16 @@
 
   $bgColor--night: #3c4145;
   $borderColor--night: #1c1c1c;
-  $toggleBtn-bgColor--night: #fff;
+  $toggleBtn-bgColor--night: $white;
   $toggleBtn-borderColor--night: #e3e3c7;
 
-  $bgColor--day: lighten(#797bf2, 18%);
-  $borderColor--day: lighten(#797bf2, 14%);
+  $bgColor--day: #cdcdfa; // lighten(#797bf2, 18%);
+  $borderColor--day: #babbf8; //lighten(#797bf2, 14%);
   $toggleBtn-bgColor--day: #ffdf6d;
   $toggleBtn-borderColor--day: #e1c348;
 
   $cloud-borderColor: #d3d3d3;
-  $cloud-bgColor: #fff;
+  $cloud-bgColor: $white;
 
   .night-toggle--daynight,
   .night-toggle--like {
@@ -1534,9 +1534,9 @@
     @keyframes starry_star {
       50% {
         background-color: rgba(255, 255, 255, 0.1);
-        box-shadow: #fff 30px -3px 0 0, #fff 12px 10px 0 -1px,
-          rgba(255, 255, 255, 0.1) 38px 18px 0 1px, #fff 32px 34px 0 0,
-          rgba(255, 255, 255, 0.1) 20px 24px 0 -1.5px, #fff 5px 38px 0 1px;
+        box-shadow: $white 30px -3px 0 0, $white 12px 10px 0 -1px,
+          rgba(255, 255, 255, 0.1) 38px 18px 0 1px, $white 32px 34px 0 0,
+          rgba(255, 255, 255, 0.1) 20px 24px 0 -1.5px, $white 5px 38px 0 1px;
       }
     }
 
@@ -1575,10 +1575,10 @@
       width: 4px;
       height: 4px;
       border-radius: $radius-rounded;
-      background-color: #fff;
+      background-color: $white;
       box-shadow: rgba(255, 255, 255, 0.1) 30px -3px 0 0,
-        rgba(255, 255, 255, 0.1) 12px 10px 0 -1px, #fff 38px 18px 0 1px,
-        rgba(255, 255, 255, 0.1) 32px 34px 0 0, #fff 20px 24px 0 -1.5px,
+        rgba(255, 255, 255, 0.1) 12px 10px 0 -1px, $white 38px 18px 0 1px,
+        rgba(255, 255, 255, 0.1) 32px 34px 0 0, $white 20px 24px 0 -1.5px,
         rgba(255, 255, 255, 0.1) 5px 38px 0 1px;
       animation: starry_star 5s ease-in-out infinite;
 
@@ -1621,8 +1621,8 @@
         > .night-toggle--feature {
           opacity: 0;
           box-shadow: rgba(255, 255, 255, 0.1) 30px -3px 0 -4px,
-            rgba(255, 255, 255, 0.1) 12px 10px 0 -5px, #fff 38px 18px 0 -3px,
-            rgba(255, 255, 255, 0.1) 32px 34px 0 -4px, #fff 20px 24px 0 -5.5px,
+            rgba(255, 255, 255, 0.1) 12px 10px 0 -5px, $white 38px 18px 0 -3px,
+            rgba(255, 255, 255, 0.1) 32px 34px 0 -4px, $white 20px 24px 0 -5.5px,
             rgba(255, 255, 255, 0.1) 5px 38px 0 -3px;
           animation: none;
 

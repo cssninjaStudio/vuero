@@ -625,7 +625,7 @@ useHead({
                   border-radius: 100px;
 
                   &.is-active {
-                    background: lighten($fade-grey, 3%);
+                    background: $fade-grey-light-3;
 
                     span,
                     i {
@@ -767,7 +767,7 @@ useHead({
               cursor: pointer;
 
               &:hover {
-                background: lighten($fade-grey, 3%);
+                background: $fade-grey-light-3;
               }
 
               img {
@@ -876,7 +876,7 @@ useHead({
           cursor: pointer;
 
           &.is-selected {
-            background: lighten($fade-grey, 4%);
+            background: $fade-grey-light-4;
           }
 
           &.is-unread {
@@ -1176,7 +1176,7 @@ useHead({
 
             &::after {
               border-color: rgba(255, 255, 255, 0);
-              border-bottom-color: #fff;
+              border-bottom-color: $white;
               border-width: 16px;
               margin-left: -16px;
             }
@@ -1500,7 +1500,7 @@ Dark mode
 
         .header-area {
           background: $dark-sidebar;
-          border-color: lighten($dark-sidebar, 12%);
+          border-color: $dark-sidebar-light-12;
 
           .inbox-title {
             color: $dark-dark-text;
@@ -1508,11 +1508,11 @@ Dark mode
         }
 
         .sidebar-inner {
-          background: lighten($dark-sidebar, 4%);
-          border-color: lighten($dark-sidebar, 12%);
+          background: $dark-sidebar-light-4;
+          border-color: $dark-sidebar-light-12;
 
           .inner-menu {
-            border-color: lighten($dark-sidebar, 12%);
+            border-color: $dark-sidebar-light-12;
 
             .compose-button {
               background: $accent !important;
@@ -1527,7 +1527,7 @@ Dark mode
             .inbox-menu {
               ul li a {
                 &.is-active {
-                  background: lighten($dark-sidebar, 8%);
+                  background: $dark-sidebar-light-8;
 
                   span {
                     color: $smoke-white;
@@ -1546,7 +1546,7 @@ Dark mode
           }
 
           .scroll-menu {
-            border-color: lighten($dark-sidebar, 12%);
+            border-color: $dark-sidebar-light-12;
 
             .title-wrap {
               h3 {
@@ -1562,7 +1562,7 @@ Dark mode
             .contact-list {
               .contact-block {
                 &:hover {
-                  background: lighten($dark-sidebar, 8%);
+                  background: $dark-sidebar-light-8;
                 }
 
                 .contact-meta {
@@ -1579,22 +1579,22 @@ Dark mode
       }
 
       .inbox-messages {
-        border-color: lighten($dark-sidebar, 12%);
-        border-left: 1px solid lighten($dark-sidebar, 12%) !important;
+        border-color: $dark-sidebar-light-12;
+        border-left: 1px solid $dark-sidebar-light-12 !important;
 
         .header-area {
           background: $dark-sidebar;
-          border-color: lighten($dark-sidebar, 12%);
+          border-color: $dark-sidebar-light-12;
         }
 
         .messages-list {
-          background: lighten($dark-sidebar, 4%);
+          background: $dark-sidebar-light-4;
 
           .inbox-message {
-            border-color: lighten($dark-sidebar, 12%);
+            border-color: $dark-sidebar-light-12;
 
             &.is-selected {
-              background: lighten($dark-sidebar, 8%);
+              background: $dark-sidebar-light-8;
             }
 
             .message-meta {
@@ -1610,11 +1610,11 @@ Dark mode
       }
 
       .inbox-message-details {
-        border-color: lighten($dark-sidebar, 12%);
+        border-color: $dark-sidebar-light-12;
 
         .header-area {
           background: $dark-sidebar;
-          border-color: lighten($dark-sidebar, 12%);
+          border-color: $dark-sidebar-light-12;
 
           .message-meta {
             span {
@@ -1632,14 +1632,14 @@ Dark mode
         }
 
         .message-wrapper {
-          background: lighten($dark-sidebar, 14%);
+          background: $dark-sidebar-light-14;
 
           .message-inner {
-            background: lighten($dark-sidebar, 4%);
-            border-color: lighten($dark-sidebar, 12%);
+            background: $dark-sidebar-light-4;
+            border-color: $dark-sidebar-light-12;
 
             .message-head {
-              border-color: lighten($dark-sidebar, 12%);
+              border-color: $dark-sidebar-light-12;
 
               .info {
                 span {
@@ -1652,15 +1652,15 @@ Dark mode
 
             .attachments-list {
               .attachment {
-                background: lighten($dark-sidebar, 2%);
-                border-color: lighten($dark-sidebar, 12%);
+                background: $dark-sidebar-light-2;
+                border-color: $dark-sidebar-light-12;
 
                 span {
                   color: $dark-dark-text;
                 }
 
                 .download-icon {
-                  border-color: lighten($dark-sidebar, 8%);
+                  border-color: $dark-sidebar-light-8;
 
                   svg {
                     color: $smoke-white;
@@ -1672,12 +1672,12 @@ Dark mode
 
           .reply-box-wrap {
             .reply-bubble {
-              background-color: lighten($dark-sidebar, 2%);
-              border-color: lighten($dark-sidebar, 4%);
+              background-color: $dark-sidebar-light-2;
+              border-color: $dark-sidebar-light-4;
 
               &::before,
               &::after {
-                border-bottom-color: lighten($dark-sidebar, 2%) !important;
+                border-bottom-color: $dark-sidebar-light-2 !important;
               }
 
               .reply-as {
@@ -1705,8 +1705,8 @@ Dark mode
   }
   .inbox-action {
     &:hover {
-      background: lighten($dark-sidebar, 2%);
-      border-color: lighten($dark-sidebar, 12%);
+      background: $dark-sidebar-light-2;
+      border-color: $dark-sidebar-light-12;
 
       svg {
         color: $accent;
@@ -1716,8 +1716,8 @@ Dark mode
   .inbox-dropdown {
     &:hover {
       div > .button {
-        background: lighten($dark-sidebar, 2%) !important;
-        border-color: lighten($dark-sidebar, 12%) !important;
+        background: $dark-sidebar-light-2 !important;
+        border-color: $dark-sidebar-light-12 !important;
       }
     }
 

@@ -168,7 +168,7 @@ const emit = defineEmits(['toggle'])
 .is-dark {
   .mobile-main-sidebar {
     background: $dark-sidebar-dark-6;
-    border-color: lighten($dark-sidebar, 1%) !important;
+    border-color: $dark-sidebar-light-1 !important;
 
     .inner {
       .icon-side-menu {

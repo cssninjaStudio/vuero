@@ -791,7 +791,7 @@ $overlay-bg-dark: linear-gradient(
   .chat-app-wrapper {
     .chat-app-header {
       background: $dark-sidebar-dark-2;
-      border-color: lighten($dark-sidebar, 2%);
+      border-color: $dark-sidebar-light-2;
 
       .search-bar {
         .field {
@@ -806,7 +806,7 @@ $overlay-bg-dark: linear-gradient(
       .user-settings {
         .user-dropdown {
           .dropdown-menu {
-            border-color: lighten($dark-sidebar, 12%);
+            border-color: $dark-sidebar-light-12;
           }
         }
       }
@@ -922,8 +922,8 @@ $overlay-bg-dark: linear-gradient(
   .chat-app-wrapper {
     .wrapper {
       .conversation-area {
-        background: lighten($dark-sidebar, 4%);
-        border-color: lighten($dark-sidebar, 12%);
+        background: $dark-sidebar-light-4;
+        border-color: $dark-sidebar-light-12;
 
         .overlay {
           background: $overlay-bg-dark;
@@ -931,11 +931,11 @@ $overlay-bg-dark: linear-gradient(
 
         .conversation {
           &:hover {
-            background: lighten($dark-sidebar, 6%);
+            background: $dark-sidebar-light-6;
           }
 
           &.active {
-            background: lighten($dark-sidebar, 1%);
+            background: $dark-sidebar-light-1;
             border-color: $accent;
           }
 
@@ -1025,7 +1025,7 @@ $overlay-bg-dark: linear-gradient(
           > span {
             width: 32px;
             height: 32px;
-            background-color: lighten($primary, 48%);
+            background-color: $primary-light-48;
             color: $primary;
             border-radius: $radius-rounded;
             display: flex;
@@ -1309,11 +1309,11 @@ $overlay-bg-dark: linear-gradient(
   .chat-app-wrapper {
     .wrapper {
       .chat-area {
-        background: lighten($dark-sidebar, 10%);
-        border-color: lighten($dark-sidebar, 12%);
+        background: $dark-sidebar-light-10;
+        border-color: $dark-sidebar-light-12;
 
         .chat-area-header {
-          background: lighten($dark-sidebar, 10%);
+          background: $dark-sidebar-light-10;
 
           .trigger {
             svg {
@@ -1327,13 +1327,13 @@ $overlay-bg-dark: linear-gradient(
 
           .chat-area-group {
             img {
-              border-color: lighten($dark-sidebar, 10%);
+              border-color: $dark-sidebar-light-10;
             }
 
             > span {
-              border-color: lighten($dark-sidebar, 10%);
+              border-color: $dark-sidebar-light-10;
               color: $accent-dark-5;
-              background: lighten($accent, 20%);
+              background: $accent-light-20;
             }
           }
         }
@@ -1351,7 +1351,7 @@ $overlay-bg-dark: linear-gradient(
 
             .chat-msg-content {
               .chat-msg-text {
-                background: lighten($dark-sidebar, 6%);
+                background: $dark-sidebar-light-6;
                 color: $dark-dark-text;
               }
             }
@@ -1359,13 +1359,13 @@ $overlay-bg-dark: linear-gradient(
         }
 
         .chat-area-footer {
-          background: lighten($dark-sidebar, 10%);
-          border-color: lighten($dark-sidebar, 12%);
+          background: $dark-sidebar-light-10;
+          border-color: $dark-sidebar-light-12;
 
           .add-content .dropdown {
             &:hover {
               > div > .button {
-                background: lighten($dark-sidebar, 6%) !important;
+                background: $dark-sidebar-light-6 !important;
 
                 svg {
                   color: $accent;
@@ -1389,7 +1389,7 @@ $overlay-bg-dark: linear-gradient(
           .add-emoji {
             &:hover {
               .button {
-                background: lighten($dark-sidebar, 6%) !important;
+                background: $dark-sidebar-light-6 !important;
 
                 svg {
                   color: $accent;
@@ -1399,12 +1399,12 @@ $overlay-bg-dark: linear-gradient(
           }
 
           input {
-            background: lighten($dark-sidebar, 6%);
+            background: $dark-sidebar-light-6;
             color: $dark-dark-text;
 
             &:focus {
-              border-color: lighten($dark-sidebar, 12%);
-              background: lighten($dark-sidebar, 4%);
+              border-color: $dark-sidebar-light-12;
+              background: $dark-sidebar-light-4;
             }
           }
         }
@@ -1527,8 +1527,8 @@ $overlay-bg-dark: linear-gradient(
   .chat-app-wrapper {
     .wrapper {
       .detail-area {
-        background: lighten($dark-sidebar, 4%);
-        border-color: lighten($dark-sidebar, 12%);
+        background: $dark-sidebar-light-4;
+        border-color: $dark-sidebar-light-12;
 
         .chat-side-content {
           .user-name {

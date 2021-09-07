@@ -1509,17 +1509,17 @@ const activeTab = ref<TabId>('overview')
 
             &.is-primary {
               color: $primary;
-              background: lighten($primary, 45%);
+              background: $primary-light-45;
             }
 
             &.is-yellow {
               color: $h-yellow;
-              background: lighten($h-yellow, 22%);
+              background: $h-yellow-light-22;
             }
 
             &.is-danger {
               color: $danger;
-              background: lighten($danger, 40%);
+              background: $danger-light-40;
             }
           }
         }
@@ -1715,7 +1715,7 @@ const activeTab = ref<TabId>('overview')
               font-size: 1.5rem;
               padding: 18px;
               border-radius: 0.75rem;
-              color: lighten($dark-text, 18%);
+              color: $dark-text-light-18;
 
               &:hover {
                 background-color: $h-yellow;
@@ -1895,11 +1895,11 @@ const activeTab = ref<TabId>('overview')
             background: $widget-grey-dark-2;
 
             &.heat-1 {
-              background: lighten($primary, 48%);
+              background: $primary-light-48;
             }
 
             &.heat-2 {
-              background: lighten($primary, 30%);
+              background: $primary-light-30;
             }
 
             &.heat-3 {
@@ -1982,7 +1982,7 @@ const activeTab = ref<TabId>('overview')
 
 .is-dark {
   .lifestyle-dashboard-bg {
-    background: lighten($dark-sidebar, 6%);
+    background: $dark-sidebar-light-6;
   }
 
   .lifestyle-dashboard-v1 {
@@ -2033,7 +2033,7 @@ const activeTab = ref<TabId>('overview')
           }
 
           &.size-3 {
-            color: lighten($dark-text, 25%) !important;
+            color: $dark-text-light-25 !important;
           }
 
           &.size-4 {
@@ -2045,7 +2045,7 @@ const activeTab = ref<TabId>('overview')
       .heatmap-wrapper {
         .heatmap-title {
           .title-avatar {
-            border-color: lighten($dark-sidebar, 12%);
+            border-color: $dark-sidebar-light-12;
 
             img {
               border-color: $dark-sidebar-dark-2;
@@ -2063,14 +2063,14 @@ const activeTab = ref<TabId>('overview')
           .heatmap-row {
             .heatmap-row-content {
               .heatmap-row-item:not(.is-time) {
-                background: lighten($dark-sidebar, 10%);
+                background: $dark-sidebar-light-10;
 
                 &.heat-1 {
-                  background: lighten($dark-sidebar, 2%);
+                  background: $dark-sidebar-light-2;
                 }
 
                 &.heat-2 {
-                  background: lighten($accent, 10%);
+                  background: $accent-light-10;
                 }
 
                 &.heat-3 {

@@ -281,7 +281,7 @@ const filteredData = computed(() => {
 
       .list-view-item-inner {
         > img {
-          border-color: lighten($dark-sidebar, 12%);
+          border-color: $dark-sidebar-light-12;
         }
 
         .meta-left {
@@ -294,8 +294,8 @@ const filteredData = computed(() => {
           .buttons {
             .button {
               &:nth-child(2) {
-                background: lighten($dark-sidebar, 2%);
-                border-color: lighten($dark-sidebar, 8%);
+                background: $dark-sidebar-light-2;
+                border-color: $dark-sidebar-light-8;
                 color: $dark-dark-text;
                 transition: all 0.3s;
 

@@ -40,7 +40,7 @@
 
 .is-dark {
   .apexcharts-ycrosshairs {
-    stroke: lighten($dark-sidebar, 12%) !important;
+    stroke: $dark-sidebar-light-12 !important;
   }
 
   .apexcharts-title-text {
@@ -72,16 +72,16 @@
         }
 
         line {
-          color: lighten($dark-sidebar, 12%) !important;
-          stroke: lighten($dark-sidebar, 12%) !important;
+          color: $dark-sidebar-light-12 !important;
+          stroke: $dark-sidebar-light-12 !important;
         }
       }
 
       .apexcharts-grid {
         .apexcharts-gridlines-horizontal {
           .apexcharts-gridline {
-            color: lighten($dark-sidebar, 12%);
-            stroke: lighten($dark-sidebar, 12%);
+            color: $dark-sidebar-light-12;
+            stroke: $dark-sidebar-light-12;
           }
         }
       }
@@ -90,27 +90,27 @@
 
   .apexcharts-gridlines-vertical {
     .apexcharts-gridline {
-      color: lighten($dark-sidebar, 12%);
-      stroke: lighten($dark-sidebar, 12%);
+      color: $dark-sidebar-light-12;
+      stroke: $dark-sidebar-light-12;
     }
   }
 
   .apexcharts-series-markers,
   .apexcharts-series-bubble {
     .apexcharts-marker {
-      color: lighten($dark-sidebar, 2%);
-      stroke: lighten($dark-sidebar, 2%);
+      color: $dark-sidebar-light-2;
+      stroke: $dark-sidebar-light-2;
     }
   }
 
   .apexcharts-pie-area,
   .apexcharts-pie-slice-0 {
-    color: lighten($dark-sidebar, 12%);
-    stroke: lighten($dark-sidebar, 12%);
+    color: $dark-sidebar-light-12;
+    stroke: $dark-sidebar-light-12;
   }
 
   .apexcharts-radialbar-area {
-    //color: lighten($dark-sidebar, 2%);
+    //color: $dark-sidebar-light-2;
   }
 
   .apexcharts-datalabels-group {
@@ -131,16 +131,16 @@
   .apexcharts-yaxis,
   .apexcharts-xaxis-inversed {
     line {
-      color: lighten($dark-sidebar, 12%);
-      stroke: lighten($dark-sidebar, 12%);
+      color: $dark-sidebar-light-12;
+      stroke: $dark-sidebar-light-12;
     }
   }
 
   .apexcharts-radialbar-track,
   .apexcharts-track {
     .apexcharts-radialbar-area {
-      color: lighten($dark-sidebar, 2%);
-      stroke: lighten($dark-sidebar, 2%);
+      color: $dark-sidebar-light-2;
+      stroke: $dark-sidebar-light-2;
     }
   }
 
@@ -149,8 +149,8 @@
     > polygon,
     > line {
       fill: none !important;
-      color: lighten($dark-sidebar, 12%);
-      stroke: lighten($dark-sidebar, 12%);
+      color: $dark-sidebar-light-12;
+      stroke: $dark-sidebar-light-12;
     }
   }
 
@@ -168,7 +168,7 @@
   }
 
   .apexcharts-bar-area {
-    color: lighten($dark-sidebar, 12%);
+    color: $dark-sidebar-light-12;
   }
 
   .apexcharts-slices {
@@ -181,13 +181,13 @@
     box-shadow: 2px 2px 6px -4px $dark-sidebar !important;
 
     &.apexcharts-theme-light {
-      border: 1px solid lighten($dark-sidebar, 12%);
-      background: lighten($dark-sidebar, 2%);
+      border: 1px solid $dark-sidebar-light-12;
+      background: $dark-sidebar-light-2;
       color: $dark-dark-text !important;
 
       .apexcharts-tooltip-title {
-        background: lighten($dark-sidebar, 2%);
-        border-bottom: 1px solid lighten($dark-sidebar, 12%);
+        background: $dark-sidebar-light-2;
+        border-bottom: 1px solid $dark-sidebar-light-12;
         color: $dark-dark-text;
       }
 
@@ -210,24 +210,24 @@
   }
 
   .apexcharts-xaxistooltip {
-    border: 1px solid lighten($dark-sidebar, 12%);
-    background: lighten($dark-sidebar, 2%);
+    border: 1px solid $dark-sidebar-light-12;
+    background: $dark-sidebar-light-2;
     color: $dark-dark-text !important;
 
     &.apexcharts-xaxistooltip-bottom::after {
-      border-bottom-color: lighten($dark-sidebar, 2%);
+      border-bottom-color: $dark-sidebar-light-2;
     }
 
     &.apexcharts-xaxistooltip-bottom::before {
-      border-bottom-color: lighten($dark-sidebar, 12%);
+      border-bottom-color: $dark-sidebar-light-12;
     }
 
     &.apexcharts-xaxistooltip-top::after {
-      border-top-color: lighten($dark-sidebar, 2%);
+      border-top-color: $dark-sidebar-light-2;
     }
 
     &.apexcharts-xaxistooltip-top::before {
-      border-top-color: lighten($dark-sidebar, 12%);
+      border-top-color: $dark-sidebar-light-12;
     }
 
     * {
@@ -267,15 +267,15 @@
 
   .bb-axis line,
   .bb-axis .domain {
-    color: lighten($dark-sidebar, 20%) !important;
-    stroke: lighten($dark-sidebar, 20%) !important;
+    color: $dark-sidebar-light-20 !important;
+    stroke: $dark-sidebar-light-20 !important;
   }
 
   .bb-legend {
     .bb-legend-background rect {
       fill: $dark-sidebar-dark-2 !important;
-      color: lighten($dark-sidebar, 12%) !important;
-      stroke: lighten($dark-sidebar, 12%) !important;
+      color: $dark-sidebar-light-12 !important;
+      stroke: $dark-sidebar-light-12 !important;
     }
 
     .bb-legend-item {
@@ -286,8 +286,8 @@
   }
 
   .bb-chart-arc path {
-    color: lighten($dark-sidebar, 12%) !important;
-    stroke: lighten($dark-sidebar, 12%) !important;
+    color: $dark-sidebar-light-12 !important;
+    stroke: $dark-sidebar-light-12 !important;
   }
 
   .bb-chart-arc .bb-gauge-value {
@@ -295,7 +295,7 @@
   }
 
   .bb-chart-arcs .bb-chart-arcs-background {
-    color: lighten($dark-sidebar, 10%) !important;
+    color: $dark-sidebar-light-10 !important;
     fill: $dark-sidebar-dark-2 !important;
     stroke: $dark-sidebar-dark-2 !important;
   }
@@ -307,12 +307,12 @@
   }
 
   .bb-tooltip {
-    border: 1px solid lighten($dark-sidebar, 10%) !important;
+    border: 1px solid $dark-sidebar-light-10 !important;
 
-    //background-color: #fff;
+    //background-color: $white;
 
     th {
-      border-color: lighten($dark-sidebar, 10%) !important;
+      border-color: $dark-sidebar-light-10 !important;
       background-color: $dark-sidebar-dark-2 !important;
       color: #fffdfd !important;
       font-family: $font !important;
@@ -326,17 +326,17 @@
     }
 
     tr {
-      border-color: lighten($dark-sidebar, 10%) !important;
+      border-color: $dark-sidebar-light-10 !important;
     }
 
     td {
       background-color: $dark-sidebar-dark-2 !important;
-      border-color: lighten($dark-sidebar, 10%) !important;
+      border-color: $dark-sidebar-light-10 !important;
       color: $light-text !important;
 
       > span,
       > svg {
-        border-color: lighten($dark-sidebar, 10%) !important;
+        border-color: $dark-sidebar-light-10 !important;
         fill: $white !important;
         color: $white !important;
       }

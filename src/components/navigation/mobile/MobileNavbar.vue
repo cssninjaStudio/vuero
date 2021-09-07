@@ -499,7 +499,7 @@ const emit = defineEmits(['toggle'])
       &.is-active,
       &:hover {
         color: $primary;
-        background: lighten($placeholder, 16%);
+        background: $placeholder-light-16;
       }
     }
   }
@@ -514,11 +514,11 @@ const emit = defineEmits(['toggle'])
     background: $dark-sidebar;
 
     .navbar-menu.is-active {
-      background: lighten($dark-sidebar, 3%);
+      background: $dark-sidebar-light-3;
 
       .navbar-link {
         .is-heading {
-          color: lighten($accent-grey, 10%);
+          color: $accent-grey-light-10;
         }
 
         svg {
@@ -527,7 +527,7 @@ const emit = defineEmits(['toggle'])
       }
 
       .navbar-item.has-icon {
-        border-bottom-color: lighten($dark-sidebar, 10%) !important;
+        border-bottom-color: $dark-sidebar-light-10 !important;
       }
 
       .navbar-dropdown .navbar-item {
@@ -536,8 +536,8 @@ const emit = defineEmits(['toggle'])
 
       .is-search .control {
         input {
-          background: lighten($dark-sidebar, 10%) !important;
-          border-color: lighten($dark-sidebar, 10%) !important;
+          background: $dark-sidebar-light-10 !important;
+          border-color: $dark-sidebar-light-10 !important;
           color: $accent-grey;
 
           &:focus {
@@ -564,7 +564,7 @@ const emit = defineEmits(['toggle'])
       border-color: $dark-sidebar !important;
 
       .heading {
-        border-color: lighten($dark-sidebar, 12%) !important;
+        border-color: $dark-sidebar-light-12 !important;
 
         .heading-right {
           .notification-link {

@@ -1020,7 +1020,7 @@ const tab = ref(props.activeTab)
         }
 
         .project-features {
-          border-color: lighten($dark-sidebar, 12%);
+          border-color: $dark-sidebar-light-12;
 
           .project-feature {
             i {
@@ -1039,10 +1039,10 @@ const tab = ref(props.activeTab)
           }
 
           .file-box {
-            background: lighten($dark-sidebar, 3%);
+            background: $dark-sidebar-light-3;
 
             &:hover {
-              border-color: lighten($dark-sidebar, 10%);
+              border-color: $dark-sidebar-light-10;
             }
 
             .meta {
@@ -1068,7 +1068,7 @@ const tab = ref(props.activeTab)
         @include vuero-card--dark();
 
         .column {
-          border-color: lighten($dark-sidebar, 12%);
+          border-color: $dark-sidebar-light-12;
         }
       }
 
@@ -1079,8 +1079,8 @@ const tab = ref(props.activeTab)
           }
 
           .filter {
-            background: lighten($dark-sidebar, 1%) !important;
-            border-color: lighten($dark-sidebar, 4%) !important;
+            background: $dark-sidebar-light-1 !important;
+            border-color: $dark-sidebar-light-4 !important;
 
             > span {
               color: $dark-dark-text;

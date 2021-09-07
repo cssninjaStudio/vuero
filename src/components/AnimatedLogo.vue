@@ -66,7 +66,7 @@ router.afterEach(() => {
   fill: $primary;
 }
 .left {
-  fill: lighten($primary, 15%);
+  fill: $primary-light-15;
 }
 
 .is-roll {
@@ -89,7 +89,7 @@ router.afterEach(() => {
 
 .is-light {
   .right {
-    fill: #fff;
+    fill: $white;
     animation: none;
   }
   .bottom {
@@ -110,7 +110,7 @@ router.afterEach(() => {
     fill: #1ee8c0;
   }
   66% {
-    fill: lighten($h-green, 15%);
+    fill: $h-green-light-15;
   }
   100% {
     fill: $primary-dark-7;
@@ -122,7 +122,7 @@ router.afterEach(() => {
     fill: $primary;
   }
   33% {
-    fill: darken(#1ee8c0, 7%);
+    fill: #15cda9; //darken(#1ee8c0, 7%);
   }
   66% {
     fill: $h-green;
@@ -134,16 +134,16 @@ router.afterEach(() => {
 
 @keyframes is-roll-left {
   0% {
-    fill: lighten($primary, 15%);
+    fill: $primary-light-15;
   }
   33% {
-    fill: lighten(#1ee8c0, 15%);
+    fill: #63efd3; //lighten(#1ee8c0, 15%);
   }
   66% {
     fill: $h-green-dark-7;
   }
   100% {
-    fill: lighten($primary, 15%);
+    fill: $primary-light-15;
   }
 }
 </style>

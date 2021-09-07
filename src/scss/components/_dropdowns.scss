@@ -14,7 +14,7 @@
     &:hover,
     &.is-active {
       .is-trigger {
-        background: lighten($fade-grey, 2%);
+        background: $fade-grey-light-2;
 
         svg {
           color: $light-text-dark-4;
@@ -106,7 +106,7 @@
 
       &:not(.is-button):hover,
       &:not(.is-button).is-active {
-        background: lighten($fade-grey, 3%);
+        background: $fade-grey-light-3;
         color: $dark-text;
       }
 
@@ -221,7 +221,7 @@
       }
 
       &.is-active {
-        background: lighten($fade-grey, 3%);
+        background: $fade-grey-light-3;
         //color: $white;
       }
 
@@ -310,7 +310,7 @@
 .is-dark {
   .toolbar-link {
     &:hover {
-      background: lighten($dark-sidebar, 2%) !important;
+      background: $dark-sidebar-light-2 !important;
     }
 
     svg {
@@ -324,7 +324,7 @@
       &:hover,
       &.is-active {
         .is-trigger {
-          background: lighten($dark-sidebar, 2%) !important;
+          background: $dark-sidebar-light-2 !important;
 
           svg {
             color: $dark-dark-text;
@@ -335,10 +335,10 @@
       .dropdown-menu {
         .dropdown-content {
           background: $dark-sidebar !important;
-          border-color: lighten($dark-sidebar, 8%) !important;
+          border-color: $dark-sidebar-light-8 !important;
 
           .heading {
-            border-color: lighten($dark-sidebar, 8%) !important;
+            border-color: $dark-sidebar-light-8 !important;
 
             &:hover,
             *:hover {
@@ -426,23 +426,23 @@
     .dropdown-menu {
       .dropdown-content {
         background: $dark-sidebar;
-        border-color: lighten($dark-sidebar, 8%) !important;
+        border-color: $dark-sidebar-light-8 !important;
 
         .dropdown-item {
           color: $light-text;
 
           &.is-active {
-            background: lighten($dark-sidebar, 2%) !important;
+            background: $dark-sidebar-light-2 !important;
             //color: $white !important;
           }
         }
 
         .dropdown-divider {
-          background: lighten($dark-sidebar, 5%);
+          background: $dark-sidebar-light-5;
         }
 
         a:hover {
-          background: lighten($dark-sidebar, 5%) !important;
+          background: $dark-sidebar-light-5 !important;
         }
       }
     }
@@ -451,11 +451,11 @@
   .child-dropdown {
     .inner {
       background: $dark-sidebar !important;
-      border-color: lighten($dark-sidebar, 4%) !important;
+      border-color: $dark-sidebar-light-4 !important;
 
       &:hover {
         background: $dark-sidebar !important;
-        border-color: lighten($dark-sidebar, 4%) !important;
+        border-color: $dark-sidebar-light-4 !important;
       }
 
       ul {

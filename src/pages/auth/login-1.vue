@@ -263,7 +263,7 @@ useHead({
     left: 0;
     width: 66.6%;
     height: 100%;
-    background: lighten(#fafafa, 1%);
+    background: #fdfdfd;
     z-index: 0;
   }
 
@@ -360,7 +360,7 @@ useHead({
           transition: all 0.3s;
 
           &:focus {
-            background: lighten($fade-grey, 6%);
+            background: $fade-grey-light-6;
             border-color: $placeholder;
 
             ~ .auth-label,
@@ -668,11 +668,11 @@ Dark mode
     background: $dark-sidebar;
 
     .underlay {
-      background: lighten($dark-sidebar, 10%);
+      background: $dark-sidebar-light-10;
     }
 
     .is-image {
-      border-color: lighten($dark-sidebar, 10%);
+      border-color: $dark-sidebar-light-10;
     }
 
     .is-form {
@@ -691,7 +691,7 @@ Dark mode
           }
 
           .input {
-            background: lighten($dark-sidebar, 4%);
+            background: $dark-sidebar-light-4;
 
             &:focus {
               border-color: $accent;
@@ -735,10 +735,10 @@ Dark mode
     }
 
     .toggler {
-      border-color: lighten($dark-sidebar, 12%);
+      border-color: $dark-sidebar-light-12;
 
       > span {
-        background: lighten($dark-sidebar, 12%);
+        background: $dark-sidebar-light-12;
       }
     }
   }

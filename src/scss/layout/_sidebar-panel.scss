@@ -53,8 +53,8 @@
 
 .is-dark {
   .sidebar-panel {
-    background: lighten($dark-sidebar, 5%);
-    border-color: lighten($dark-sidebar, 5%) !important;
+    background: $dark-sidebar-light-5;
+    border-color: $dark-sidebar-light-5 !important;
 
     .panel-close {
       svg {
@@ -63,11 +63,11 @@
     }
 
     .subpanel-header {
-      background: lighten($dark-sidebar, 5%);
+      background: $dark-sidebar-light-5;
     }
 
     .inner {
-      background: lighten($dark-sidebar, 5%);
+      background: $dark-sidebar-light-5;
     }
   }
 }
@@ -109,7 +109,7 @@
               padding: 16px;
 
               &:hover {
-                background: lighten($fade-grey, 4%);
+                background: $fade-grey-light-4;
               }
 
               .meta {
@@ -432,10 +432,10 @@
           .dropdown-menu {
             .dropdown-content {
               .dropdown-block {
-                background: lighten($dark-sidebar, 2%);
+                background: $dark-sidebar-light-2;
 
                 &:hover {
-                  background: lighten($dark-sidebar, 5%) !important;
+                  background: $dark-sidebar-light-5 !important;
                 }
 
                 .meta {
@@ -473,7 +473,7 @@
 
               &:hover {
                 .collapse-wrap > a {
-                  color: lighten($dark-dark-text, 14%);
+                  color: $dark-dark-text-light-14;
                 }
               }
             }
@@ -731,10 +731,10 @@
 
         &.is-active {
           border-left-color: $primary;
-          background: lighten($primary, 51%);
+          background: $primary-light-51;
 
           &:hover {
-            background: lighten($primary, 51%);
+            background: $primary-light-51;
           }
         }
 
@@ -904,25 +904,25 @@
     &.is-messages {
       li {
         &.is-active {
-          background: lighten($dark-sidebar, 10%) !important;
+          background: $dark-sidebar-light-10 !important;
 
           &:hover {
-            background: lighten($dark-sidebar, 10%) !important;
+            background: $dark-sidebar-light-10 !important;
           }
 
           img,
           .more-indicator {
-            border-color: lighten($dark-sidebar, 10%) !important;
+            border-color: $dark-sidebar-light-10 !important;
           }
         }
 
         &:hover {
-          background: lighten($dark-sidebar, 6%) !important;
+          background: $dark-sidebar-light-6 !important;
         }
 
         img,
         .more-indicator {
-          border-color: lighten($dark-sidebar, 6%) !important;
+          border-color: $dark-sidebar-light-6 !important;
         }
 
         .more-indicator {
@@ -932,11 +932,11 @@
         .recipient-meta {
           span {
             &:first-child {
-              color: lighten($accent-grey, 6%) !important;
+              color: $accent-grey-light-6 !important;
             }
 
             &.is-unread {
-              color: lighten($accent-grey, 6%) !important;
+              color: $accent-grey-light-6 !important;
             }
           }
         }
@@ -960,7 +960,7 @@
   left: 80px;
   height: 100%;
   width: 80px;
-  background-color: #f9f9f9;
+  background-color: $body-color;
   box-shadow: none;
   z-index: 34;
   border-left: 1px solid $fade-grey;
@@ -1023,10 +1023,10 @@
 
         &.is-active {
           border-left-color: $primary;
-          background: lighten($primary, 51%);
+          background: $primary-light-51;
 
           &:hover {
-            background: lighten($primary, 51%);
+            background: $primary-light-51;
           }
         }
 

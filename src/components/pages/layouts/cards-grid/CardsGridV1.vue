@@ -290,16 +290,16 @@ const optionsSingle = [
 .is-dark {
   .card-grid-v1 {
     .card-grid-item {
-      background: lighten($dark-sidebar, 6%);
-      border-color: lighten($dark-sidebar, 12%);
+      background: $dark-sidebar-light-6;
+      border-color: $dark-sidebar-light-12;
 
       .card-grid-item-body {
-        border-color: lighten($dark-sidebar, 12%);
+        border-color: $dark-sidebar-light-12;
 
         .left {
           .v-avatar {
             .badge {
-              border-color: lighten($dark-sidebar, 6%);
+              border-color: $dark-sidebar-light-6;
             }
           }
         }
@@ -307,8 +307,8 @@ const optionsSingle = [
         .right {
           .social-links {
             .social-link {
-              background: lighten($dark-sidebar, 2%);
-              border-color: lighten($dark-sidebar, 12%);
+              background: $dark-sidebar-light-2;
+              border-color: $dark-sidebar-light-12;
               color: $dark-dark-text;
 
               &:hover {

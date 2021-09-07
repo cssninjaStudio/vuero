@@ -63,28 +63,28 @@
   .r-card-advanced,
   .s-card-advanced,
   .l-card-advanced {
-    background: lighten($dark-sidebar, 6%);
-    border-color: lighten($dark-sidebar, 12%);
+    background: $dark-sidebar-light-6;
+    border-color: $dark-sidebar-light-12;
 
     .card-head,
     .card-foot {
-      border-color: lighten($dark-sidebar, 12%);
+      border-color: $dark-sidebar-light-12;
     }
 
     .v-avatar {
       img {
-        border-color: lighten($dark-sidebar, 6%) !important;
+        border-color: $dark-sidebar-light-6 !important;
       }
     }
 
     .avatar-stack {
       .v-avatar {
-        border-color: lighten($dark-sidebar, 6%) !important;
+        border-color: $dark-sidebar-light-6 !important;
 
         .avatar {
           &.is-more {
             .inner {
-              border-color: lighten($dark-sidebar, 6%) !important;
+              border-color: $dark-sidebar-light-6 !important;
             }
           }
         }

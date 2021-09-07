@@ -120,7 +120,7 @@
               padding: 16px;
 
               &:hover {
-                background: lighten($fade-grey, 4%);
+                background: $fade-grey-light-4;
               }
 
               .meta {
@@ -362,7 +362,7 @@
   .navbar-navbar-clean {
     &:not(.is-colored) {
       background: $dark-sidebar-dark-2;
-      border-color: lighten($dark-sidebar, 1%);
+      border-color: $dark-sidebar-light-1;
 
       &.is-transparent {
         background: transparent;
@@ -372,7 +372,7 @@
         &.is-solid,
         &.is-scrolled {
           background: $dark-sidebar-dark-2;
-          border-color: lighten($dark-sidebar, 1%);
+          border-color: $dark-sidebar-light-1;
         }
 
         &:not(.is-scrolled) {
@@ -400,17 +400,17 @@
     .navbar-navbar-inner {
       .left {
         .separator {
-          border-color: lighten($dark-sidebar, 12%);
+          border-color: $dark-sidebar-light-12;
         }
 
         .project-dropdown {
           .dropdown-menu {
             .dropdown-content {
               .dropdown-block {
-                background: lighten($dark-sidebar, 2%) !important;
+                background: $dark-sidebar-light-2 !important;
 
                 &:hover {
-                  background: lighten($dark-sidebar, 5%) !important;
+                  background: $dark-sidebar-light-5 !important;
                 }
 
                 .meta {
@@ -444,15 +444,15 @@
           .dropdown-menu {
             .dropdown-content {
               .dropdown-head {
-                background: lighten($dark-sidebar, 2%) !important;
+                background: $dark-sidebar-light-2 !important;
 
                 &:hover {
-                  background: lighten($dark-sidebar, 2%) !important;
+                  background: $dark-sidebar-light-2 !important;
                 }
 
                 .meta {
                   &:hover {
-                    background: lighten($dark-sidebar, 2%) !important;
+                    background: $dark-sidebar-light-2 !important;
                   }
 
                   span {
@@ -478,8 +478,8 @@
             border-color: $dark-sidebar-dark-2 !important;
 
             &:hover {
-              background: lighten($dark-sidebar, 4%) !important;
-              border-color: lighten($dark-sidebar, 4%) !important;
+              background: $dark-sidebar-light-4 !important;
+              border-color: $dark-sidebar-light-4 !important;
               color: $white !important;
             }
           }
