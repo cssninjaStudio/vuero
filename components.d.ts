@@ -476,6 +476,8 @@ declare module 'vue' {
     VCardSocialSlotsDocumentation: typeof import('./documentation/card-social/v-card-social-slots-documentation.md')['default']
     VCheckbox: typeof import('./src/components/base/form/V-Checkbox.vue')['default']
     VCollapse: typeof import('./src/components/base/accordion/V-Collapse.vue')['default']
+    'VCollapse copy': typeof import('./src/components/base/accordion/V-Collapse copy.vue')['default']
+    VCollapseModel: typeof import('./src/components/base/accordion/V-CollapseModel.vue')['default']
     VControl: typeof import('./src/components/base/form/V-Control.vue')['default']
     VControlPropsDocumentation: typeof import('./documentation/control/v-control-props-documentation.md')['default']
     VControlSlotsDocumentation: typeof import('./documentation/control/v-control-slots-documentation.md')['default']
@@ -615,4 +617,4 @@ declare module 'vue' {
   }
 }
 
-export { }
+export {}

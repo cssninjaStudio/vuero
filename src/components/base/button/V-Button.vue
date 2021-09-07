@@ -1,9 +1,9 @@
 <script lang="ts">
 import type { PropType } from 'vue'
+import type { RouteLocationRaw } from 'vue-router'
+import { CssUnitRe } from '/@src/utils/regex'
 import { computed, defineComponent, h, resolveComponent } from 'vue'
-
-const CssUnitRe =
-  /(\d*\.?\d+)\s?(cm|mm|in|px|pt|pc|em|ex|ch|rem|vw|vh|vmin|vmax|%)/
+import { RouterLink } from 'vue-router'
 
 type ButtonSize = undefined | 'big' | 'huge'
 type ButtonColor =
@@ -14,12 +14,14 @@ type ButtonColor =
   | 'warning'
   | 'danger'
   | 'white'
+  | 'dark'
+  | 'light'
 type ButtonDark = undefined | '1' | '2' | '3' | '4' | '5' | '6'
 
 export default defineComponent({
   props: {
     to: {
-      type: [Object, String],
+      type: [Object, String] as PropType<RouteLocationRaw>,
       default: undefined,
     },
     href: {
@@ -61,10 +63,12 @@ export default defineComponent({
             'warning',
             'danger',
             'white',
+            'dark',
+            'light',
           ].indexOf(value) === -1
         ) {
           console.warn(
-            `V-Button: invalid "${value}" color. Should be primary, info, success, warning, danger, white or undefined`
+            `V-Button: invalid "${value}" color. Should be primary, info, success, warning, danger, dark, light, white or undefined`
           )
           return false
         }
@@ -149,7 +153,7 @@ export default defineComponent({
   },
   setup(props, { slots, attrs }) {
     const classes = computed(() => {
-      const defaultClasses = attrs?.class || []
+      const defaultClasses = (attrs?.class ?? []) as string[]
       return [
         ...defaultClasses,
         'button',
@@ -227,7 +231,7 @@ export default defineComponent({
       let link
       if (props.to) {
         return h(
-          resolveComponent('RouterLink'),
+          RouterLink,
           {
             ...attrs,
             'aria-hidden': !!props.placeload && true,

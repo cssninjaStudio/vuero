@@ -106,13 +106,12 @@ export default defineComponent({
   emits: ['input', ...eventNames],
   setup(props, { emit }) {
     const pond = ref<FilePond | null>(null)
-
     const inputElement = ref<HTMLInputElement | null>(null)
+    const pondOptions = Object.assign({}, { ...props }) as FilePondOptions
 
     onMounted(() => {
       if (inputElement.value && supported()) {
-        let options = Object.assign({}, { ...props }) as FilePondOptions
-        pond.value = create(inputElement.value, options)
+        pond.value = create(inputElement.value, pondOptions)
 
         for (const eventName of eventNames) {
           const event = eventName as FilePondEvent
@@ -144,13 +143,13 @@ export default defineComponent({
       const input = h('input', {
         type: 'file',
         ref: inputElement,
-        id: props.id,
-        name: props.name,
-        class: props.className,
-        required: props.required,
-        accept: props.acceptedFileTypes,
-        multiple: props.allowMultiple,
-        capture: props.captureMethod,
+        id: pondOptions.id,
+        name: pondOptions.name,
+        class: pondOptions.className,
+        required: pondOptions.required,
+        accept: pondOptions.acceptedFileTypes,
+        multiple: pondOptions.allowMultiple,
+        capture: pondOptions.captureMethod,
       })
 
       const wrapper = h('div', { class: 'filepond--wrapper' }, [input])

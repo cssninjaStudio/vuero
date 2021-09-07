@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { InputMask } from 'imask'
+import type { InputMask, AnyMaskedOptions } from 'imask'
 import type { PropType } from 'vue'
 import IMask from 'imask'
 import { ref, watch, onUnmounted } from 'vue'
@@ -13,7 +13,7 @@ const props = defineProps({
     required: true,
   },
   options: {
-    type: Object as PropType<InputMask<any>>,
+    type: Object as PropType<AnyMaskedOptions>,
     required: true,
   },
 })
@@ -30,7 +30,7 @@ watch([inputElement, () => props.options, () => props.modelValue], () => {
         return
       }
 
-      inputMask = IMask(inputElement.value, props.options)
+      inputMask = IMask(inputElement.value, props.options ?? {})
 
       if (props.modelValue) {
         inputMask.unmaskedValue = props.modelValue

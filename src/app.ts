@@ -69,6 +69,7 @@ export async function createApp({ enhanceApp }: VueroAppOptions) {
        *     <component :is="Component" />
        *   </transition>
        * </RouterView>
+       * <VReloadPrompt />
        */
       return () => {
         const defaultSlot = ({ Component: _Component }: any) => {
