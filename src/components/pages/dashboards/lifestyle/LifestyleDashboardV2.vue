@@ -546,7 +546,7 @@ import {
 
             i {
               font-size: 12px;
-              color: darken($widget-grey, 12%);
+              color: $widget-grey-dark-12;
 
               &.selected {
                 color: $h-yellow;

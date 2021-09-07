@@ -109,7 +109,7 @@
   }
 
   .circle-chart__background {
-    color: darken($dark-sidebar, 2%);
-    stroke: darken($dark-sidebar, 2%);
+    color: $dark-sidebar-dark-2;
+    stroke: $dark-sidebar-dark-2;
   }
 }

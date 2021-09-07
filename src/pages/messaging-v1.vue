@@ -738,7 +738,7 @@ watchPostEffect(() => {
   align-items: center;
   background: $white;
   border-radius: $radius-rounded;
-  border: 1px solid darken($fade-grey, 3%);
+  border: 1px solid $fade-grey-dark-3;
   box-shadow: $light-box-shadow;
   transform: translateX(60px) rotate(360deg);
   transition: all 0.3s;
@@ -1895,7 +1895,7 @@ watchPostEffect(() => {
     border-color: lighten($dark-sidebar, 5%) !important;
 
     h3 {
-      color: darken($accent-grey, 15%) !important;
+      color: $accent-grey-dark-15 !important;
     }
   }
 
@@ -1940,27 +1940,27 @@ watchPostEffect(() => {
         #users-autocpl {
           background: none;
           border-color: none;
-          color: darken($accent-grey, 4%);
+          color: $accent-grey-dark-4;
 
           &::-webkit-input-placeholder {
-            color: darken($accent-grey, 30%) !important;
+            color: $accent-grey-dark-30 !important;
           }
 
           &::-moz-placeholder {
-            color: darken($accent-grey, 30%) !important;
+            color: $accent-grey-dark-30 !important;
           }
 
           &:-ms-input-placeholder {
-            color: darken($accent-grey, 30%) !important;
+            color: $accent-grey-dark-30 !important;
           }
 
           &:-moz-placeholder {
-            color: darken($accent-grey, 30%) !important;
+            color: $accent-grey-dark-30 !important;
           }
         }
 
         svg {
-          color: darken($accent-grey, 30%) !important;
+          color: $accent-grey-dark-30 !important;
         }
 
         .icon span {
@@ -1982,10 +1982,10 @@ watchPostEffect(() => {
               }
 
               .entry-text {
-                color: darken($accent-grey, 10%);
+                color: $accent-grey-dark-10;
 
                 span {
-                  color: darken($accent-grey, 40%) !important;
+                  color: $accent-grey-dark-40 !important;
                 }
               }
             }
@@ -2045,14 +2045,14 @@ watchPostEffect(() => {
           .msg {
             .msg-inner {
               background: lighten($dark-sidebar, 15%) !important;
-              color: darken($accent-grey, 10%) !important;
+              color: $accent-grey-dark-10 !important;
             }
 
             time {
-              color: darken($accent-grey, 10%) !important;
+              color: $accent-grey-dark-10 !important;
 
               svg {
-                color: darken($accent-grey, 10%) !important;
+                color: $accent-grey-dark-10 !important;
               }
             }
           }
@@ -2127,22 +2127,22 @@ watchPostEffect(() => {
 
     #chat-input {
       background: lighten($dark-sidebar, 2%) !important;
-      color: darken($accent-grey, 10%) !important;
+      color: $accent-grey-dark-10 !important;
 
       &::-webkit-input-placeholder {
-        color: darken($accent-grey, 15%) !important;
+        color: $accent-grey-dark-15 !important;
       }
 
       &::-moz-placeholder {
-        color: darken($accent-grey, 15%) !important;
+        color: $accent-grey-dark-15 !important;
       }
 
       &:-ms-input-placeholder {
-        color: darken($accent-grey, 15%) !important;
+        color: $accent-grey-dark-15 !important;
       }
 
       &:-moz-placeholder {
-        color: darken($accent-grey, 15%) !important;
+        color: $accent-grey-dark-15 !important;
       }
     }
   }
@@ -2331,7 +2331,7 @@ watchPostEffect(() => {
   .collapsed-messaging {
     &.is-active {
       left: 60px !important;
-      border-left: 1px darken($fade-grey, 3%);
+      border-left: 1px $fade-grey-dark-3;
     }
   }
 }

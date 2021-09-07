@@ -531,7 +531,7 @@ const emit = defineEmits(['toggle'])
       }
 
       .navbar-dropdown .navbar-item {
-        color: darken($accent-grey, 5%) !important;
+        color: $accent-grey-dark-5 !important;
       }
 
       .is-search .control {

@@ -41,7 +41,7 @@
     .note-modal-footer {
       padding: 0 16px;
       height: 70px;
-      background: darken($widget-grey, 2%);
+      background: $widget-grey-dark-2;
       display: flex;
       align-items: center;
       justify-content: flex-end;
@@ -80,7 +80,7 @@
         }
 
         .note-dropdown-menu {
-          background: darken($dark-sidebar, 2%);
+          background: $dark-sidebar-dark-2;
           border-color: lighten($dark-sidebar, 8%);
 
           .note-dropdown-item {
@@ -159,7 +159,7 @@
 
       .form-group {
         input {
-          background: darken($dark-sidebar, 2%);
+          background: $dark-sidebar-dark-2;
           border-color: lighten($dark-sidebar, 8%);
           color: $light-text;
           height: 38px;
@@ -188,11 +188,11 @@
   .sun-editor {
     width: 100%;
     border-color: lighten($dark-sidebar, 12%) !important;
-    background: darken($dark-sidebar, 2%);
+    background: $dark-sidebar-dark-2;
 
     .se-container {
       .se-toolbar {
-        background: darken($dark-sidebar, 2%);
+        background: $dark-sidebar-dark-2;
         border-color: lighten($dark-sidebar, 12%);
         outline: none;
 
@@ -200,7 +200,7 @@
           box-shadow: $light-box-shadow !important;
 
           .se-arrow.se-arrow-down::after {
-            border-top-color: darken($dark-sidebar, 2%);
+            border-top-color: $dark-sidebar-dark-2;
           }
         }
 
@@ -226,16 +226,16 @@
       }
 
       .se-wrapper {
-        background: darken($dark-sidebar, 10%);
+        background: $dark-sidebar-dark-10;
 
         .se-wrapper-inner {
-          background: darken($dark-sidebar, 10%);
+          background: $dark-sidebar-dark-10;
           color: $dark-dark-text;
         }
       }
 
       .se-resizing-bar {
-        background: darken($dark-sidebar, 2%);
+        background: $dark-sidebar-dark-2;
         border-color: lighten($dark-sidebar, 12%);
       }
     }

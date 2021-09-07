@@ -338,9 +338,7 @@ const democheck = ref(['value_2'])
 
     .user-meta {
       padding: 0 3rem;
-      border-right: 1px solid darken($fade-grey, 3%);
-
-      h3 {
+      border-right: 1px solid $fade-grey-dark-3 h3 {
         max-width: 180px;
       }
     }

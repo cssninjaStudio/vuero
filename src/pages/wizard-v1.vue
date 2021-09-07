@@ -207,7 +207,7 @@ watchEffect(() => {
   margin: 0 auto;
   max-width: 306px;
   background: $white;
-  border: 1px solid darken($fade-grey, 3%);
+  border: 1px solid $fade-grey-dark-3;
   border-radius: 14px;
   transform: translateY(120px);
   transition: all 0.3s;
@@ -323,7 +323,7 @@ watchEffect(() => {
             width: 30px;
             border-radius: $radius-rounded;
             background: $white;
-            border: 1px solid darken($fade-grey, 3%);
+            border: 1px solid $fade-grey-dark-3;
             z-index: 1;
             transition: all 0.3s;
 
@@ -524,7 +524,7 @@ watchEffect(() => {
         .tool-card-inner {
           padding: 12px;
           background: $white;
-          border: 1px solid darken($fade-grey, 3%);
+          border: 1px solid $fade-grey-dark-3;
           border-radius: 10px;
 
           .media-flex-center {
@@ -535,7 +535,7 @@ watchEffect(() => {
                 align-items: center;
                 height: 28px;
                 width: 28px;
-                border: 1px solid darken($fade-grey, 3%);
+                border: 1px solid $fade-grey-dark-3;
                 border-radius: $radius-rounded;
                 box-shadow: $light-box-shadow;
                 opacity: 0;
@@ -611,7 +611,7 @@ watchEffect(() => {
             align-items: center;
             background: $white;
             padding: 12px;
-            border: 1px solid darken($fade-grey, 3%);
+            border: 1px solid $fade-grey-dark-3;
             border-radius: 12px;
             margin-bottom: 12px;
             text-align: left;
@@ -706,7 +706,7 @@ watchEffect(() => {
                 align-items: center;
                 height: 34px;
                 width: 34px;
-                border: 1px solid darken($fade-grey, 3%);
+                border: 1px solid $fade-grey-dark-3;
                 box-shadow: $light-box-shadow;
                 background: $white;
                 padding: 0;
@@ -870,7 +870,7 @@ watchEffect(() => {
             height: 120px;
             border-radius: 3px;
             padding: 8px;
-            border: 2px dashed darken($fade-grey, 4%);
+            border: 2px dashed $fade-grey-dark-4;
             cursor: pointer;
             transition: all 0.3s;
 
@@ -1101,7 +1101,7 @@ watchEffect(() => {
     .project-dates {
       background: $white;
       padding: 16px;
-      border: 1px solid darken($fade-grey, 3%);
+      border: 1px solid $fade-grey-dark-3;
       border-radius: 14px;
       max-width: 380px;
       margin: 20px auto;
@@ -1123,7 +1123,7 @@ watchEffect(() => {
         .separator {
           height: 25px;
           width: 2px;
-          border-right: 1px solid darken($fade-grey, 3%);
+          border-right: 1px solid $fade-grey-dark-3;
           margin: 0 12px;
         }
 
@@ -1165,7 +1165,7 @@ watchEffect(() => {
     .project-budget {
       background: $white;
       padding: 16px;
-      border: 1px solid darken($fade-grey, 3%);
+      border: 1px solid $fade-grey-dark-3;
       border-radius: 14px;
       max-width: 380px;
       margin: 20px auto;
@@ -1195,7 +1195,7 @@ watchEffect(() => {
             height: 32px;
             width: 65px;
             min-width: 50px;
-            border: 1px solid darken($fade-grey, 3%);
+            border: 1px solid $fade-grey-dark-3;
             border-radius: 12px;
             font-family: $font;
             font-size: 0.9rem;
@@ -1222,7 +1222,7 @@ watchEffect(() => {
     .project-customer {
       background: $white;
       padding: 16px;
-      border: 1px solid darken($fade-grey, 3%);
+      border: 1px solid $fade-grey-dark-3;
       border-radius: 14px;
       max-width: 380px;
       margin: 20px auto;
@@ -1253,7 +1253,7 @@ watchEffect(() => {
       .media-flex-center {
         .v-avatar {
           .avatar {
-            border: 1px solid darken($fade-grey, 3%);
+            border: 1px solid $fade-grey-dark-3;
           }
         }
       }
@@ -1349,7 +1349,7 @@ watchEffect(() => {
 
 .is-dark {
   .wizard-navigation {
-    background: darken($dark-sidebar, 2%);
+    background: $dark-sidebar-dark-2;
     border-color: lighten($dark-sidebar, 12%);
 
     .navbar-item {

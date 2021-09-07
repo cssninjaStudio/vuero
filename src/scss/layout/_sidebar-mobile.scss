@@ -518,7 +518,7 @@
     &.is-messaging {
       ul li {
         &.is-active {
-          background: darken($dark-sidebar, 4%);
+          background: $dark-sidebar-dark-4;
           border-left-color: $accent !important;
         }
 

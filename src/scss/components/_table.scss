@@ -93,7 +93,7 @@
     min-height: 60px;
     background: $white;
     border-radius: 8px;
-    border: 1px solid darken($fade-grey, 3%);
+    border: 1px solid $fade-grey-dark-3;
     padding: 8px;
     margin-bottom: 6px;
 
@@ -443,7 +443,7 @@
 
 .flex-table-wrapper {
   background: $white;
-  border: 1px solid darken($fade-grey, 3%);
+  border: 1px solid $fade-grey-dark-3;
   border-radius: 8px;
   padding: 20px;
 

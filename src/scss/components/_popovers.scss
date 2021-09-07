@@ -238,7 +238,7 @@
     }
 
     .title {
-      color: darken($accent-grey, 5%) !important;
+      color: $accent-grey-dark-5 !important;
     }
 
     .country img,
@@ -252,7 +252,7 @@
       }
 
       span {
-        color: darken($accent-grey, 10%) !important;
+        color: $accent-grey-dark-10 !important;
       }
     }
 
@@ -411,7 +411,7 @@
           background: lighten($h-yellow, 22%);
 
           span {
-            color: darken($h-yellow, 8%);
+            color: $h-yellow-dark-8;
           }
         }
 
@@ -590,7 +590,7 @@
       .skill-meta {
         .username,
         .skill-name {
-          color: darken($accent-grey, 5%);
+          color: $accent-grey-dark-5;
         }
       }
 

@@ -244,7 +244,7 @@ const optionsSingle = [
         color: $light-text;
 
         &:hover {
-          border-color: darken($fade-grey, 4%);
+          border-color: $fade-grey-dark-4;
           color: $primary;
           box-shadow: $light-box-shadow;
         }
@@ -253,7 +253,7 @@ const optionsSingle = [
   }
 
   .grid-item-wrap {
-    border: 1px solid darken($fade-grey, 3%);
+    border: 1px solid $fade-grey-dark-3;
     border-radius: $radius-large;
     transition: all 0.3s;
 
@@ -291,7 +291,7 @@ const optionsSingle = [
           width: 28px;
           min-width: 28px;
           border-radius: $radius-rounded;
-          border: 1px solid darken($fade-grey, 3%);
+          border: 1px solid $fade-grey-dark-3;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -332,7 +332,7 @@ const optionsSingle = [
           margin-bottom: 0;
 
           &:hover {
-            border-color: darken($fade-grey, 4%);
+            border-color: $fade-grey-dark-4;
             color: $primary;
             box-shadow: $light-box-shadow;
           }

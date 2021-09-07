@@ -111,7 +111,7 @@
         align-items: center;
         padding: 15px 20px;
         background: $white;
-        border-bottom-color: darken($fade-grey, 3%);
+        border-bottom-color: $fade-grey-dark-3;
 
         &.no-border {
           border-bottom-color: transparent;
@@ -180,7 +180,7 @@
       .modal-card-foot {
         background-color: $white;
         padding: 15px 20px;
-        border-top: 1px solid darken($fade-grey, 3%);
+        border-top: 1px solid $fade-grey-dark-3;
 
         &.no-border {
           border-top-color: transparent;

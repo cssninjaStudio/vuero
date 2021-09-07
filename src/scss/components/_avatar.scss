@@ -174,7 +174,7 @@
         background: lighten($h-yellow, 22%);
 
         span {
-          color: darken($h-yellow, 8%);
+          color: $h-yellow-dark-8;
         }
       }
 
@@ -669,7 +669,7 @@
       &.is-more {
         .inner {
           background: lighten($dark-sidebar, 10%);
-          border-color: darken($dark-sidebar, 2%);
+          border-color: $dark-sidebar-dark-2;
         }
       }
 

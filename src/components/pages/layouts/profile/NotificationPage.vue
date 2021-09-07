@@ -357,7 +357,7 @@
                 line-height: 1.2;
 
                 p {
-                  color: darken($light-text, 10%);
+                  color: $light-text-dark-10;
 
                   span {
                     font-family: $font-alt;

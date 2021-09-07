@@ -99,7 +99,7 @@ onMounted(() => {
 }
 
 ul {
-  border-left: 1px solid darken($fade-grey, 6%);
+  border-left: 1px solid $fade-grey-dark-6;
 
   li {
     padding: 0.25rem 0;

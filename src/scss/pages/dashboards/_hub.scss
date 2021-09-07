@@ -46,7 +46,7 @@
       .hub-card {
         background-color: $white;
         border-radius: $radius-large;
-        border: 1px solid darken($fade-grey, 3%);
+        border: 1px solid $fade-grey-dark-3;
         width: calc(50% - 20px);
         max-width: calc(50% - 20px);
         margin: 10px;
@@ -99,7 +99,7 @@
         }
 
         .hub-card-foot {
-          border-top: 1px dashed darken($fade-grey, 4%);
+          border-top: 1px dashed $fade-grey-dark-4;
           border-top-width: 1.6px;
           padding: 18px 24px;
 
@@ -154,7 +154,7 @@
           border-color: lighten($dark-sidebar, 12%);
 
           .hub-card-foot {
-            border-color: darken($muted-grey, 25%);
+            border-color: $muted-grey-dark-25;
 
             a {
               color: $accent;

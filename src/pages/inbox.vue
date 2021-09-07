@@ -542,7 +542,7 @@ useHead({
       height: 100%;
       width: 20%;
       background: $white;
-      border-right: 1px solid darken($fade-grey, 3%);
+      border-right: 1px solid $fade-grey-dark-3;
 
       .header-area {
         height: 80px;
@@ -550,7 +550,7 @@ useHead({
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-bottom: 1px solid darken($fade-grey, 3%);
+        border-bottom: 1px solid $fade-grey-dark-3;
         padding: 0 20px;
 
         .inbox-title {
@@ -810,7 +810,7 @@ useHead({
       height: 100%;
       width: 32%;
       background: $white;
-      border-right: 1px solid darken($fade-grey, 3%);
+      border-right: 1px solid $fade-grey-dark-3;
 
       .header-area {
         height: 80px;
@@ -818,7 +818,7 @@ useHead({
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-bottom: 1px solid darken($fade-grey, 3%);
+        border-bottom: 1px solid $fade-grey-dark-3;
         padding: 0 20px;
 
         .actions {
@@ -871,7 +871,7 @@ useHead({
         .inbox-message {
           display: flex;
           align-items: stretch;
-          border-bottom: 1px solid darken($fade-grey, 3%);
+          border-bottom: 1px solid $fade-grey-dark-3;
           padding: 20px;
           cursor: pointer;
 
@@ -966,7 +966,7 @@ useHead({
         width: 100%;
         display: flex;
         align-items: center;
-        border-bottom: 1px solid darken($fade-grey, 3%);
+        border-bottom: 1px solid $fade-grey-dark-3;
         padding: 0 20px;
         background: $white;
 
@@ -1157,7 +1157,7 @@ useHead({
           .reply-bubble {
             position: relative;
             padding: 20px;
-            border: 1px solid darken($fade-grey, 5%);
+            border: 1px solid $fade-grey-dark-5;
             border-radius: $radius-large;
             background: $white;
             width: 100%;
@@ -1271,7 +1271,7 @@ useHead({
   transition: all 0.3s;
 
   &:hover {
-    border-color: darken($fade-grey, 4%);
+    border-color: $fade-grey-dark-4;
     box-shadow: $light-box-shadow;
 
     svg {
@@ -1280,7 +1280,7 @@ useHead({
   }
 
   &.is-checked {
-    border-color: darken($fade-grey, 3%);
+    border-color: $fade-grey-dark-3;
     box-shadow: $light-box-shadow;
   }
 
@@ -1315,7 +1315,7 @@ useHead({
     border: 1px solid transparent;
 
     &:hover {
-      border-color: darken($fade-grey, 4%);
+      border-color: $fade-grey-dark-4;
       box-shadow: $light-box-shadow !important;
     }
 
@@ -1384,7 +1384,7 @@ useHead({
     width: 100%;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid darken($fade-grey, 3%);
+    border-bottom: 1px solid $fade-grey-dark-3;
     padding: 0 20px;
 
     .panel-title {
@@ -1468,7 +1468,7 @@ useHead({
             justify-content: center;
             align-items: center;
             background: $white;
-            border: 1px solid darken($fade-grey, 3%);
+            border: 1px solid $fade-grey-dark-3;
             border-radius: $radius-rounded;
             transition: all 0.3s;
 

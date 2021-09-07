@@ -195,7 +195,7 @@
 
   .vc-popover-content-wrapper {
     .vc-nav-popover-container {
-      background: darken($dark-sidebar, 4%) !important;
+      background: $dark-sidebar-dark-4 !important;
       border-color: lighten($dark-sidebar, 4%) !important;
 
       .vc-nav-container {
@@ -247,14 +247,14 @@
 
       .vc-select {
         select {
-          background: darken($dark-sidebar, 4%) !important;
-          border-color: darken($dark-sidebar, 4%) !important;
+          background: $dark-sidebar-dark-4 !important;
+          border-color: $dark-sidebar-dark-4 !important;
           color: $dark-dark-text !important;
         }
       }
 
       .vc-am-pm {
-        background: darken($dark-sidebar, 4%) !important;
+        background: $dark-sidebar-dark-4 !important;
 
         > button {
           color: $white !important;

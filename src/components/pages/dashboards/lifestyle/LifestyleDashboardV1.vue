@@ -1447,7 +1447,7 @@ const activeTab = ref<TabId>('overview')
             }
 
             > span {
-              color: darken($light-text, 5%);
+              color: $light-text-dark-5;
             }
           }
 
@@ -1486,7 +1486,7 @@ const activeTab = ref<TabId>('overview')
           max-width: 640px;
 
           p {
-            color: darken($light-text, 5%);
+            color: $light-text-dark-5;
           }
         }
 
@@ -1605,7 +1605,7 @@ const activeTab = ref<TabId>('overview')
       }
 
       h4 {
-        color: darken($light-text, 2%);
+        color: $light-text-dark-2;
       }
 
       h3 {
@@ -1771,7 +1771,7 @@ const activeTab = ref<TabId>('overview')
         justify-content: space-between;
 
         h4 {
-          color: darken($light-text, 2%);
+          color: $light-text-dark-2;
         }
       }
 
@@ -1843,7 +1843,7 @@ const activeTab = ref<TabId>('overview')
 
       .title-avatar {
         border-radius: $radius-rounded;
-        border: 1px solid darken($fade-grey, 3%);
+        border: 1px solid $fade-grey-dark-3;
         box-shadow: $light-box-shadow;
 
         img {
@@ -1892,7 +1892,7 @@ const activeTab = ref<TabId>('overview')
             align-items: center;
             min-height: 34px;
             border-radius: $radius-large;
-            background: darken($widget-grey, 2%);
+            background: $widget-grey-dark-2;
 
             &.heat-1 {
               background: lighten($primary, 48%);
@@ -2048,7 +2048,7 @@ const activeTab = ref<TabId>('overview')
             border-color: lighten($dark-sidebar, 12%);
 
             img {
-              border-color: darken($dark-sidebar, 2%);
+              border-color: $dark-sidebar-dark-2;
             }
           }
 

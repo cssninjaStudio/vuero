@@ -463,7 +463,7 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
 
       p {
         font-weight: 400;
-        color: darken($smoke-white, 2%);
+        color: $smoke-white-dark-2;
         margin-bottom: 16px;
         max-width: 320px;
       }

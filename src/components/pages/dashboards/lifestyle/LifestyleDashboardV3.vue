@@ -426,7 +426,7 @@ import { followersList } from '/@src/data/widgets/ui/followers'
     align-items: center;
     padding: 10px;
     border-radius: 16px;
-    background: darken($primary, 24%);
+    background: $primary-dark-24;
     font-family: $font;
     margin-bottom: 30px;
 
@@ -456,7 +456,7 @@ import { followersList } from '/@src/data/widgets/ui/followers'
 
       p {
         font-weight: 400;
-        color: darken($smoke-white, 16%);
+        color: $smoke-white-dark-16;
         margin-bottom: 16px;
       }
 
@@ -628,7 +628,7 @@ import { followersList } from '/@src/data/widgets/ui/followers'
     .health-tile {
       padding: 20px;
       background: $white;
-      border: 1px solid darken($fade-grey, 3%);
+      border: 1px solid $fade-grey-dark-3;
       border-radius: 10px;
     }
   }

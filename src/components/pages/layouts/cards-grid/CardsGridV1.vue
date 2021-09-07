@@ -161,7 +161,7 @@ const optionsSingle = [
     width: 100%;
     background-color: $white;
     border-radius: 6px;
-    border: 1px solid darken($fade-grey, 3%);
+    border: 1px solid $fade-grey-dark-3;
     transition: all 0.3s;
 
     .card-grid-item-body {
@@ -169,7 +169,7 @@ const optionsSingle = [
       align-items: center;
       justify-content: space-between;
       padding: 20px;
-      border-bottom: 1px solid darken($fade-grey, 3%);
+      border-bottom: 1px solid $fade-grey-dark-3;
 
       .left {
         display: flex;
@@ -212,7 +212,7 @@ const optionsSingle = [
             width: 32px;
             min-width: 32px;
             border-radius: 50%;
-            border: 1px solid darken($fade-grey, 3%);
+            border: 1px solid $fade-grey-dark-3;
             margin: 0 4px;
             color: $primary;
             box-shadow: $light-box-shadow;

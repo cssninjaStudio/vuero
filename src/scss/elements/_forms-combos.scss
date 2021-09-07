@@ -68,7 +68,7 @@
     width: 100%;
     border: 1px solid $accent-grey;
     border-radius: $radius;
-    color: darken($accent-grey, 20%);
+    color: $accent-grey-dark-20;
     background: $white;
     cursor: pointer;
     transition: all 0.3s;
@@ -100,7 +100,7 @@
     svg {
       height: 20px;
       width: 20px;
-      color: darken($placeholder, 8%) !important;
+      color: $placeholder-dark-8 !important;
       transition: all 0.3s;
     }
   }
@@ -387,7 +387,7 @@
       svg {
         height: 18px;
         width: 18px;
-        color: darken($placeholder, 8%) !important;
+        color: $placeholder-dark-8 !important;
         transform: rotate(0);
         transition: all 0.3s;
       }
@@ -770,7 +770,7 @@
           }
 
           img {
-            border-color: darken($dark-sidebar, 2%) !important;
+            border-color: $dark-sidebar-dark-2 !important;
           }
 
           .selected-item {
@@ -780,11 +780,11 @@
           .combo-text {
             span {
               &:first-child {
-                color: darken($accent-grey, 8%) !important;
+                color: $accent-grey-dark-8 !important;
               }
 
               &:nth-child(2) {
-                color: darken($accent-grey, 35%) !important;
+                color: $accent-grey-dark-35 !important;
               }
 
               &.is-pushed {
@@ -801,12 +801,12 @@
 
       .box-dropdown {
         .dropdown-inner {
-          background: darken($dark-sidebar, 4%) !important;
-          border-color: darken($dark-sidebar, 4%);
+          background: $dark-sidebar-dark-4 !important;
+          border-color: $dark-sidebar-dark-4;
 
           li {
             img {
-              border-color: darken($dark-sidebar, 2%) !important;
+              border-color: $dark-sidebar-dark-2 !important;
             }
 
             &:hover {
@@ -826,11 +826,11 @@
             .item-name {
               span {
                 &:first-child {
-                  color: darken($accent-grey, 8%) !important;
+                  color: $accent-grey-dark-8 !important;
                 }
 
                 &:nth-child(2) {
-                  color: darken($accent-grey, 35%) !important;
+                  color: $accent-grey-dark-35 !important;
                 }
               }
             }

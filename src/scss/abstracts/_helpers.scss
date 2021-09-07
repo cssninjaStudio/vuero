@@ -144,7 +144,7 @@
   box-shadow: $light-box-shadow;
 
   &.has-light-border {
-    border: 1px solid darken($fade-grey, 3%);
+    border: 1px solid $fade-grey-dark-3;
   }
 }
 

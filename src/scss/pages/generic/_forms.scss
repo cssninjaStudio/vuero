@@ -55,7 +55,7 @@ Form Layouts
 
           .left {
             position: relative;
-            border-right: 1px solid darken($fade-grey, 3%);
+            border-right: 1px solid $fade-grey-dark-3;
 
             .operator {
               position: absolute;
@@ -103,7 +103,7 @@ Form Layouts
                 width: 60px;
                 height: 40px;
                 background: $white;
-                border: 1px solid darken($fade-grey, 3%);
+                border: 1px solid $fade-grey-dark-3;
                 border-radius: 8px;
                 font-family: $font;
                 font-weight: 600;
@@ -193,7 +193,7 @@ Form Layouts
 
                 .radio-box-inner {
                   background: $white;
-                  border: 1px solid darken($fade-grey, 3%);
+                  border: 1px solid $fade-grey-dark-3;
                   text-align: center;
                   border-radius: $radius;
                   font-family: $font;
@@ -274,7 +274,7 @@ Form Layouts
 
         .form-section {
           padding: 40px;
-          border-bottom: 1px solid darken($fade-grey, 4%);
+          border-bottom: 1px solid $fade-grey-dark-4;
 
           &.is-grey {
             background: #fafafa;
@@ -284,7 +284,7 @@ Form Layouts
             display: flex;
             align-items: center;
             justify-content: space-between;
-            border-bottom: 1px solid darken($fade-grey, 4%);
+            border-bottom: 1px solid $fade-grey-dark-4;
             padding-bottom: 20px;
             margin-bottom: 30px;
 
@@ -427,13 +427,13 @@ Form Layouts
 
     .form-header {
       padding: 12px 20px;
-      border-bottom: 1px solid darken($fade-grey, 3%);
+      border-bottom: 1px solid $fade-grey-dark-3;
       transition: all 0.3s;
 
       &.is-stuck {
         background: $white;
         padding-right: 80px;
-        border-left: 1px solid darken($fade-grey, 3%);
+        border-left: 1px solid $fade-grey-dark-3;
       }
 
       .form-header-inner {
@@ -656,7 +656,7 @@ Form Layouts
 
             .left {
               border-right: none;
-              border-bottom: 1px solid darken($fade-grey, 3%);
+              border-bottom: 1px solid $fade-grey-dark-3;
               padding-bottom: 40px;
 
               .operator {

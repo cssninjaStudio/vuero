@@ -34,7 +34,7 @@
     &:not(.is-bordered) {
       border-top-right-radius: 20px;
       border-bottom-right-radius: 20px;
-      border-right: 1px solid darken($fade-grey, 4%) !important;
+      border-right: 1px solid $fade-grey-dark-4 !important;
 
       .sidebar-brand {
         border-top-right-radius: 20px;
@@ -612,8 +612,8 @@
 
   .main-sidebar {
     &.is-colored {
-      //background: darken($accent, 2%);
-      //border-color: darken($accent, 2%) !important;
+      //background: $accent-dark-2;
+      //border-color: $accent-dark-2 !important;
 
       .sidebar-inner {
         .naver {
@@ -644,7 +644,7 @@
 
       .profile-dropdown {
         .status-indicator {
-          border-color: darken($accent, 2%) !important;
+          border-color: $accent-dark-2 !important;
         }
 
         .dropdown-menu {

@@ -75,7 +75,7 @@
       .separator {
         height: 25px;
         width: 2px;
-        border-right: 1px solid darken($fade-grey, 6%);
+        border-right: 1px solid $fade-grey-dark-6;
         margin: 0 10px;
       }
 
@@ -90,7 +90,7 @@
           height: 28px;
           width: 28px;
           background: $white;
-          border: 1px solid darken($fade-grey, 6%);
+          border: 1px solid $fade-grey-dark-6;
           box-shadow: $light-box-shadow;
           border-radius: $radius-rounded;
           margin: 0 2px;
@@ -131,7 +131,7 @@
 
         &:not(:last-child) {
           margin-bottom: 20px;
-          border-bottom: 1px solid darken($fade-grey, 4%);
+          border-bottom: 1px solid $fade-grey-dark-4;
         }
 
         &.no-padding {
@@ -196,7 +196,7 @@
                 min-width: 50px;
                 height: 50px;
                 border-radius: $radius-rounded;
-                border: 1px solid darken($fade-grey, 4%);
+                border: 1px solid $fade-grey-dark-4;
               }
 
               .meta {
@@ -269,7 +269,7 @@
                   min-width: 32px;
                   height: 32px;
                   border-radius: $radius-rounded;
-                  border: 1px solid darken($fade-grey, 4%);
+                  border: 1px solid $fade-grey-dark-4;
                 }
               }
 
@@ -322,7 +322,7 @@
 
                 &.has-icon {
                   background: lighten($fade-grey, 2%);
-                  border: 1px solid darken($fade-grey, 3%);
+                  border: 1px solid $fade-grey-dark-3;
                   color: $light-text;
 
                   i {
@@ -336,7 +336,7 @@
                   min-width: 34px;
                   height: 34px;
                   border-radius: $radius-rounded;
-                  border: 1px solid darken($fade-grey, 4%);
+                  border: 1px solid $fade-grey-dark-4;
                 }
 
                 .count {
@@ -490,7 +490,7 @@
                   min-width: 32px;
                   height: 32px;
                   border-radius: $radius-rounded;
-                  border: 1px solid darken($fade-grey, 4%);
+                  border: 1px solid $fade-grey-dark-4;
                 }
               }
 
@@ -748,10 +748,7 @@
 
           &.router-link-exact-active {
             box-shadow: $light-box-shadow;
-            border-color: darken($fade-grey, 3%);
-
-            span,
-            i {
+            border-color: $fade-grey-dark-3 span, i {
               color: $primary;
             }
 
@@ -812,13 +809,13 @@
       }
 
       .form-head {
-        border-bottom: 1px solid darken($fade-grey, 3%);
+        border-bottom: 1px solid $fade-grey-dark-3;
         transition: all 0.3s;
 
         &.is-stuck {
           background: $white;
           padding-right: 80px;
-          border-left: 1px solid darken($fade-grey, 3%);
+          border-left: 1px solid $fade-grey-dark-3;
         }
 
         .left {
@@ -835,7 +832,7 @@
       }
 
       .form-foot {
-        border-top: 1px solid darken($fade-grey, 3%);
+        border-top: 1px solid $fade-grey-dark-3;
       }
 
       .form-body {
@@ -896,7 +893,7 @@
                 height: 50px;
                 border-radius: $radius-rounded;
                 background: lighten($fade-grey, 2%);
-                border: 1px solid darken($fade-grey, 3%);
+                border: 1px solid $fade-grey-dark-3;
                 color: $light-text;
 
                 &.has-img {
@@ -920,7 +917,7 @@
                 min-width: 50px;
                 height: 50px;
                 border-radius: $radius-rounded;
-                border: 1px solid darken($fade-grey, 4%);
+                border: 1px solid $fade-grey-dark-4;
               }
 
               .meta {
@@ -1081,7 +1078,7 @@
         padding: 16px;
         margin: 8px;
         border-radius: 8px;
-        border: 1px solid darken($fade-grey, 3%);
+        border: 1px solid $fade-grey-dark-3;
         transition: all 0.3s;
         cursor: pointer;
 
@@ -1226,7 +1223,7 @@
 
           .icon-wrap {
             i {
-              color: darken($light-text, 20%);
+              color: $light-text-dark-20;
 
               &.is-solid {
                 color: $accent;

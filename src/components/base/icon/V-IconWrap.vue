@@ -164,7 +164,7 @@ const isIconify = computed(() => {
   min-width: 32px;
   border-radius: $radius-rounded;
   background: $white;
-  border: 1px solid darken($fade-grey, 3%);
+  border: 1px solid $fade-grey-dark-3;
   box-shadow: $light-box-shadow;
   color: $primary;
   font-size: 1rem;
@@ -212,7 +212,7 @@ const isIconify = computed(() => {
 
   &.is-placeholder {
     background-color: lighten($fade-grey, 2%) !important;
-    border-color: darken($fade-grey, 3%) !important;
+    border-color: $fade-grey-dark-3 !important;
     color: $light-text;
 
     i {

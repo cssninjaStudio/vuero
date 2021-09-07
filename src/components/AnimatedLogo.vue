@@ -60,7 +60,7 @@ router.afterEach(() => {
 @import '../scss/layout/_sidebar.scss';
 
 .right {
-  fill: darken($primary, 7%);
+  fill: $primary-dark-7;
 }
 .bottom {
   fill: $primary;
@@ -104,7 +104,7 @@ router.afterEach(() => {
 
 @keyframes is-roll-right {
   0% {
-    fill: darken($primary, 7%);
+    fill: $primary-dark-7;
   }
   33% {
     fill: #1ee8c0;
@@ -113,7 +113,7 @@ router.afterEach(() => {
     fill: lighten($h-green, 15%);
   }
   100% {
-    fill: darken($primary, 7%);
+    fill: $primary-dark-7;
   }
 }
 
@@ -140,7 +140,7 @@ router.afterEach(() => {
     fill: lighten(#1ee8c0, 15%);
   }
   66% {
-    fill: darken($h-green, 7%);
+    fill: $h-green-dark-7;
   }
   100% {
     fill: lighten($primary, 15%);

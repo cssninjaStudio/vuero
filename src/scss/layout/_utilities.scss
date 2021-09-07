@@ -499,7 +499,7 @@ var {
   &.one-line {
     &::before,
     &::after {
-      background: darken($fade-grey, 5%);
+      background: $fade-grey-dark-5;
     }
   }
 }

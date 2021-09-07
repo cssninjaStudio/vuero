@@ -19,8 +19,21 @@
 ========================================================================== */
 
 $primary: #41b883;
+$primary-dark-2: darken($primary, 2%);
+$primary-dark-5: darken($primary, 5%);
+$primary-dark-6: darken($primary, 6%);
+$primary-dark-7: darken($primary, 7%);
+$primary-dark-8: darken($primary, 8%);
+$primary-dark-10: darken($primary, 10%);
+$primary-dark-14: darken($primary, 14%);
+$primary-dark-24: darken($primary, 24%);
 $secondary: #346beb;
 $accent: #41b883;
+$accent-dark-2: darken($accent, 2%);
+$accent-dark-4: darken($accent, 4%);
+$accent-dark-5: darken($accent, 5%);
+$accent-dark-8: darken($accent, 8%);
+$accent-dark-15: darken($accent, 15%);
 
 /* ==========================================================================
 2. Global colors
@@ -30,21 +43,57 @@ $body-color: #f9f9f9;
 
 $white: #fff;
 $smoke-white: #fcfcfc;
+$smoke-white-dark-2: darken($smoke-white, 2%);
+$smoke-white-dark-8: darken($smoke-white, 8%);
+$smoke-white-dark-10: darken($smoke-white, 10%);
+$smoke-white-dark-16: darken($smoke-white, 16%);
 $light-white: #f9f9f9;
 
 $placeholder: #cecece;
+$placeholder-dark-8: darken($placeholder, 8%);
 $muted-grey: #999;
+$muted-grey-dark-25: darken($muted-grey, 25%);
 $fade-grey: #ededed;
+$fade-grey-dark-2: darken($fade-grey, 2%);
+$fade-grey-dark-3: darken($fade-grey, 3%);
+$fade-grey-dark-4: darken($fade-grey, 4%);
+$fade-grey-dark-5: darken($fade-grey, 5%);
+$fade-grey-dark-6: darken($fade-grey, 6%);
+$fade-grey-dark-8: darken($fade-grey, 8%);
 $accent-grey: #ccc;
+$accent-grey-dark-4: darken($accent-grey, 4%);
+$accent-grey-dark-5: darken($accent-grey, 5%);
+$accent-grey-dark-8: darken($accent-grey, 8%);
+$accent-grey-dark-10: darken($accent-grey, 10%);
+$accent-grey-dark-15: darken($accent-grey, 15%);
+$accent-grey-dark-20: darken($accent-grey, 20%);
+$accent-grey-dark-30: darken($accent-grey, 30%);
+$accent-grey-dark-35: darken($accent-grey, 35%);
+$accent-grey-dark-40: darken($accent-grey, 40%);
 $background-grey: #f0f0f0;
 $section-grey: #fcfcfc;
 $medium-grey: #ddd;
 $light-grey: #eee;
 $lighter-grey: #e5e5e5;
 $widget-grey: #f5f6fa;
+$widget-grey-dark-1: darken($widget-grey, 1%);
+$widget-grey-dark-2: darken($widget-grey, 2%);
+$widget-grey-dark-3: darken($widget-grey, 3%);
+$widget-grey-dark-4: darken($widget-grey, 4%);
+$widget-grey-dark-8: darken($widget-grey, 8%);
+$widget-grey-dark-12: darken($widget-grey, 12%);
 
 $dark-text: #283252;
 $light-text: #a2a5b9;
+$light-text-dark-2: darken($light-text, 2%);
+$light-text-dark-4: darken($light-text, 4%);
+$light-text-dark-5: darken($light-text, 5%);
+$light-text-dark-6: darken($light-text, 6%);
+$light-text-dark-8: darken($light-text, 8%);
+$light-text-dark-10: darken($light-text, 10%);
+$light-text-dark-12: darken($light-text, 12%);
+$light-text-dark-20: darken($light-text, 20%);
+$light-text-dark-22: darken($light-text, 22%);
 $title-grey: #a9abac;
 
 $danger: #e62965;
@@ -57,7 +106,9 @@ $h-blue: #37c3ff;
 $h-red: #f92b60;
 $h-orange: #ffa981;
 $h-yellow: #ffd66e;
+$h-yellow-dark-8: darken($h-yellow, 8%);
 $h-green: #93e088;
+$h-green-dark-7: darken($h-green, 7%);
 $h-pink: #ff9eb8;
 $h-light-blue: #77d2f3;
 
@@ -67,9 +118,19 @@ $sidebar: #344258;
 
 $dark: $dark-text;
 $dark-sidebar: #232326;
+$dark-sidebar-dark-2: darken($dark-sidebar, 2%);
+$dark-sidebar-dark-3: darken($dark-sidebar, 3%);
+$dark-sidebar-dark-4: darken($dark-sidebar, 4%);
+$dark-sidebar-dark-5: darken($dark-sidebar, 5%);
+$dark-sidebar-dark-6: darken($dark-sidebar, 6%);
+$dark-sidebar-dark-10: darken($dark-sidebar, 10%);
 $dark-dark-text: #aaaab3;
 $landing-dark-1: #0c0e14;
 $landing-dark-2: #191c2b;
+$landing-dark-3: darken($landing-dark-1, 2%);
+$landing-dark-4: darken($landing-dark-2, 2%);
+$landing-dark-5: darken($landing-dark-2, 6%);
+$landing-dark-6: darken($landing-dark-2, 12%);
 
 /* ==========================================================================
 3. Brands colors

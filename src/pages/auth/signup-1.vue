@@ -691,7 +691,7 @@ onUnmounted(() => {
 
         &.is-agree {
           span {
-            color: darken($placeholder, 8%);
+            color: $placeholder-dark-8;
 
             a {
               color: $muted-grey;
@@ -944,7 +944,7 @@ onUnmounted(() => {
           align-items: center;
           padding: 12px;
           background: $white;
-          border: 1px solid darken($fade-grey, 3%);
+          border: 1px solid $fade-grey-dark-3;
           border-radius: $radius-large;
           transition: all 0.3s;
 
@@ -1035,7 +1035,7 @@ onUnmounted(() => {
         align-items: center;
         background: $white;
         border-radius: $radius-rounded;
-        border: 1px solid darken($fade-grey, 4%);
+        border: 1px solid $fade-grey-dark-4;
         z-index: 5;
         transition: all 0.3s;
         cursor: pointer;
@@ -1142,7 +1142,7 @@ onUnmounted(() => {
     }
 
     &:hover {
-      border-color: darken($fade-grey, 4%);
+      border-color: $fade-grey-dark-4;
       color: $white;
       box-shadow: $light-box-shadow;
     }
@@ -1230,7 +1230,7 @@ onUnmounted(() => {
 
         .input {
           &:focus {
-            background: darken($dark-sidebar, 4%);
+            background: $dark-sidebar-dark-4;
             border-color: lighten($dark-sidebar, 12%);
 
             ~ .auth-label,

@@ -250,13 +250,13 @@
 
 .bb-axis line,
 .bb-axis .domain {
-  color: darken($fade-grey, 4%);
-  stroke: darken($fade-grey, 4%);
+  color: $fade-grey-dark-4;
+  stroke: $fade-grey-dark-4;
 }
 
 .tick {
   text tspan {
-    fill: darken($light-text, 5%);
+    fill: $light-text-dark-5;
   }
 }
 
@@ -273,7 +273,7 @@
 
   .bb-legend {
     .bb-legend-background rect {
-      fill: darken($dark-sidebar, 2%) !important;
+      fill: $dark-sidebar-dark-2 !important;
       color: lighten($dark-sidebar, 12%) !important;
       stroke: lighten($dark-sidebar, 12%) !important;
     }
@@ -296,8 +296,8 @@
 
   .bb-chart-arcs .bb-chart-arcs-background {
     color: lighten($dark-sidebar, 10%) !important;
-    fill: darken($dark-sidebar, 2%) !important;
-    stroke: darken($dark-sidebar, 2%) !important;
+    fill: $dark-sidebar-dark-2 !important;
+    stroke: $dark-sidebar-dark-2 !important;
   }
 
   .bb-chart-arcs-title,
@@ -313,7 +313,7 @@
 
     th {
       border-color: lighten($dark-sidebar, 10%) !important;
-      background-color: darken($dark-sidebar, 2%) !important;
+      background-color: $dark-sidebar-dark-2 !important;
       color: #fffdfd !important;
       font-family: $font !important;
       font-weight: 400 !important;
@@ -330,7 +330,7 @@
     }
 
     td {
-      background-color: darken($dark-sidebar, 2%) !important;
+      background-color: $dark-sidebar-dark-2 !important;
       border-color: lighten($dark-sidebar, 10%) !important;
       color: $light-text !important;
 

@@ -176,7 +176,7 @@ Marketing Layouts
     &.is-left,
     &.is-right,
     &.is-centered {
-      background: darken($landing-dark-1, 2%);
+      background: $landing-dark-3;
 
       .hexagon {
         opacity: 0.3;

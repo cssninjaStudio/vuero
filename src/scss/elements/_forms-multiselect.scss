@@ -63,7 +63,7 @@
       font-size: 0.9rem;
       font-weight: 400;
       padding: 1px 0 1px 8px;
-      background: darken($widget-grey, 4%);
+      background: $widget-grey-dark-4;
       color: $dark-text;
 
       i {
@@ -109,7 +109,7 @@
       transition: background-color 0.3s;
 
       &.is-pointed {
-        background: darken($widget-grey, 1%);
+        background: $widget-grey-dark-1;
       }
 
       &.is-selected {
@@ -211,7 +211,7 @@
     }
 
     .multiselect-dropdown {
-      background-color: darken($dark-sidebar, 2%);
+      background-color: $dark-sidebar-dark-2;
       border-color: lighten($dark-sidebar, 10%);
 
       .multiselect-option {

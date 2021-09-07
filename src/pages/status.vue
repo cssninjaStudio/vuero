@@ -337,7 +337,7 @@ useHead({
   .status-block {
     background: $white;
     margin-bottom: 40px;
-    border: 1px solid darken($fade-grey, 3%);
+    border: 1px solid $fade-grey-dark-3;
     border-radius: $radius-large;
 
     .status-header {
@@ -367,8 +367,8 @@ useHead({
     }
 
     .status-uptime {
-      border-top: 1px solid darken($fade-grey, 3%);
-      border-bottom: 1px solid darken($fade-grey, 3%);
+      border-top: 1px solid $fade-grey-dark-3;
+      border-bottom: 1px solid $fade-grey-dark-3;
       padding: 16px 40px;
       font-family: $font;
 
@@ -405,7 +405,7 @@ useHead({
           min-width: 54px;
           border-radius: $radius-rounded;
           background: $white;
-          border: 1px solid darken($fade-grey, 3%);
+          border: 1px solid $fade-grey-dark-3;
           box-shadow: $light-box-shadow;
           color: $primary;
           margin-right: 12px;
@@ -453,7 +453,7 @@ useHead({
         height: 40px;
         width: 40px;
         border-radius: 12px;
-        border: 1px solid darken($fade-grey, 3%);
+        border: 1px solid $fade-grey-dark-3;
         box-shadow: $light-box-shadow;
 
         span {
@@ -470,7 +470,7 @@ useHead({
     display: flex;
     align-items: center;
     padding: 24px 40px;
-    border-bottom: 1px solid darken($fade-grey, 3%);
+    border-bottom: 1px solid $fade-grey-dark-3;
 
     .icon i {
       font-size: 1.6rem;
@@ -524,7 +524,7 @@ useHead({
 
     a {
       font-family: $font;
-      color: darken($light-text, 8%);
+      color: $light-text-dark-8;
       padding: 0 10px;
       transition: color 0.3s;
 

@@ -755,7 +755,7 @@ $overlay-bg-dark: linear-gradient(
 
         .dropdown-menu {
           top: 52px;
-          border: 1px solid darken($fade-grey, 3%);
+          border: 1px solid $fade-grey-dark-3;
           box-shadow: $light-box-shadow;
           border-radius: 8px;
           padding-top: 0;
@@ -790,7 +790,7 @@ $overlay-bg-dark: linear-gradient(
 .is-dark {
   .chat-app-wrapper {
     .chat-app-header {
-      background: darken($dark-sidebar, 2%);
+      background: $dark-sidebar-dark-2;
       border-color: lighten($dark-sidebar, 2%);
 
       .search-bar {
@@ -1180,7 +1180,7 @@ $overlay-bg-dark: linear-gradient(
 
           &:focus {
             background: $white;
-            border-color: darken($fade-grey, 3%);
+            border-color: $fade-grey-dark-3;
             box-shadow: $light-box-shadow;
           }
         }
@@ -1332,7 +1332,7 @@ $overlay-bg-dark: linear-gradient(
 
             > span {
               border-color: lighten($dark-sidebar, 10%);
-              color: darken($accent, 5%);
+              color: $accent-dark-5;
               background: lighten($accent, 20%);
             }
           }
@@ -1343,7 +1343,7 @@ $overlay-bg-dark: linear-gradient(
             &.owner {
               .chat-msg-content {
                 .chat-msg-text {
-                  background: darken($accent, 4%);
+                  background: $accent-dark-4;
                   color: $smoke-white;
                 }
               }

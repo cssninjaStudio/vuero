@@ -370,7 +370,7 @@ const randomCard = () => {
   .plans-wrapper {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid darken($fade-grey, 4%);
+    border-bottom: 1px solid $fade-grey-dark-4;
     padding-bottom: 20px;
     margin-bottom: 20px;
 
@@ -476,7 +476,7 @@ const randomCard = () => {
               min-width: 32px;
               border-radius: $radius-rounded;
               background: $white;
-              border: 1px solid darken($fade-grey, 3%);
+              border: 1px solid $fade-grey-dark-3;
               box-shadow: $light-box-shadow;
               color: $success;
 
@@ -659,7 +659,7 @@ const randomCard = () => {
         padding: 20px 30px;
         background: $white;
         border-radius: $radius;
-        border: 1px solid darken($fade-grey, 3%);
+        border: 1px solid $fade-grey-dark-3;
 
         .form-header {
           display: flex;

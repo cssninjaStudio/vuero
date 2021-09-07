@@ -221,7 +221,7 @@ Widget Styles
     .icon-toolbar {
       .toolbar-icon {
         .inner-icon {
-          color: darken($light-text, 12%);
+          color: $light-text-dark-12;
 
           &:hover:not(.is-active) {
             background: lighten($dark-sidebar, 3%);
@@ -627,7 +627,7 @@ Widget Styles
         border-color: $widget-grey;
 
         &:focus {
-          border-color: darken($fade-grey, 3%);
+          border-color: $fade-grey-dark-3;
           background: $white;
         }
       }
@@ -742,8 +742,8 @@ Widget Styles
         width: 42px;
         border: none;
         border-radius: 10px;
-        background: darken($widget-grey, 2%);
-        color: darken($light-text, 6%);
+        background: $widget-grey-dark-2;
+        color: $light-text-dark-6;
         transition: all 0.3s;
 
         svg {
@@ -758,7 +758,7 @@ Widget Styles
 
         &.is-placeholder {
           background: lighten($fade-grey, 2%);
-          border: 1px solid darken($fade-grey, 3%);
+          border: 1px solid $fade-grey-dark-3;
           color: $light-text;
 
           i {
@@ -929,7 +929,7 @@ Widget Styles
     .exerpt {
       padding: 10px;
       border-radius: 10px;
-      border: 1px solid darken($fade-grey, 3%);
+      border: 1px solid $fade-grey-dark-3;
       font-family: $font;
 
       h5 {
@@ -1355,7 +1355,7 @@ Widget Styles
       border-radius: $radius-rounded;
       color: lighten($light-text, 12%);
       margin: 0 6px;
-      border: 1px solid darken($fade-grey, 3%);
+      border: 1px solid $fade-grey-dark-3;
       box-shadow: $light-box-shadow;
       transition: all 0.3s;
 
@@ -1428,7 +1428,7 @@ Widget Styles
         border-color: $widget-grey;
 
         &:focus {
-          border-color: darken($fade-grey, 3%);
+          border-color: $fade-grey-dark-3;
           background: $white;
         }
       }
@@ -1537,7 +1537,7 @@ Widget Styles
 
   .widget-content {
     display: flex;
-    border-bottom: 1px solid darken($fade-grey, 3%);
+    border-bottom: 1px solid $fade-grey-dark-3;
     margin-bottom: 16px;
     padding-bottom: 16px;
 

@@ -11,8 +11,8 @@
   --ck-custom-border: hsl(300, 1%, 22%);
   --ck-custom-white: hsl(0, 0%, 100%);
   --ck-color-base-active: #{$primary};
-  --ck-color-base-active-focus: #{darken($primary, 10)};
-  --ck-color-base-focus: #{darken($primary, 10)};
+  --ck-color-base-active-focus: #{$primary-dark-10};
+  --ck-color-base-focus: #{$primary-dark-10};
   --ck-color-focus-border: #{$primary};
   --ck-focus-ring: 1px solid var(--ck-color-focus-border);
 

@@ -141,7 +141,7 @@
 
   &[open] {
     .collapse-icon {
-      border-color: darken($fade-grey, 3%) !important;
+      border-color: $fade-grey-dark-3 !important;
       box-shadow: $light-box-shadow;
     }
   }

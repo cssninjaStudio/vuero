@@ -438,7 +438,7 @@ onUnmounted(() => {
 
         p {
           font-weight: 400;
-          color: darken($primary, 14%);
+          color: $primary-dark-14;
           margin-bottom: 8px;
         }
 
@@ -492,7 +492,7 @@ onUnmounted(() => {
             max-width: 80px;
             height: 170px;
             background: $white;
-            border: 1px solid darken($fade-grey, 3%);
+            border: 1px solid $fade-grey-dark-3;
             border-radius: 500px;
             padding: 10px;
             margin: 0 10px;
@@ -519,7 +519,7 @@ onUnmounted(() => {
               width: 60px;
               height: 80px;
               background: $white;
-              border: 1px solid darken($fade-grey, 3%);
+              border: 1px solid $fade-grey-dark-3;
               border-radius: 500px;
 
               img {
@@ -599,7 +599,7 @@ onUnmounted(() => {
           }
 
           &:hover {
-            border-color: darken($fade-grey, 4%);
+            border-color: $fade-grey-dark-4;
             background: $white;
             box-shadow: $light-box-shadow;
           }
@@ -684,7 +684,7 @@ onUnmounted(() => {
               height: 46px;
               max-height: 46px;
               background: $white;
-              border: 1px solid darken($fade-grey, 3%);
+              border: 1px solid $fade-grey-dark-3;
               border-radius: 500px;
 
               img {
@@ -775,7 +775,7 @@ onUnmounted(() => {
 
         .cart-items {
           height: calc(100% - 160px);
-          border-bottom: 1px solid darken($fade-grey, 3%);
+          border-bottom: 1px solid $fade-grey-dark-3;
           padding-bottom: 40px;
           overflow-y: auto;
 

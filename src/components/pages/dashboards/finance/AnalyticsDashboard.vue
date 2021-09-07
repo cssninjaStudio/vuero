@@ -455,14 +455,13 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
         margin-top: auto;
         display: flex;
         padding-top: 20px;
-        border-top: 1px solid darken($fade-grey, 3%);
-
+        border-top: 1px solid $fade-grey-dark-3;
         .radial-stat {
           width: 50%;
           text-align: center;
 
           &:first-child {
-            border-right: 1px solid darken($fade-grey, 3%);
+            border-right: 1px solid $fade-grey-dark-3;
           }
 
           span {

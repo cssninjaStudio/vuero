@@ -24,7 +24,7 @@
   height: 38px;
   width: auto;
   border-radius: 500px;
-  border: 1px solid darken($fade-grey, 3%);
+  border: 1px solid $fade-grey-dark-3;
   transition: all 0.3s;
 
   &:hover {
@@ -97,7 +97,7 @@
       height: 38px;
       width: 38px;
       background: $white;
-      border: 1px solid darken($fade-grey, 3%);
+      border: 1px solid $fade-grey-dark-3;
       border-radius: $radius-rounded;
 
       &.is-solid {

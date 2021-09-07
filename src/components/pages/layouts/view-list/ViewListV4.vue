@@ -346,7 +346,7 @@ const filteredData = computed(() => {
 
               &:hover {
                 background: $white;
-                border: 1px solid darken($fade-grey, 3%);
+                border: 1px solid $fade-grey-dark-3;
                 box-shadow: $light-box-shadow;
                 color: $danger;
               }

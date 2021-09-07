@@ -33,7 +33,7 @@
       box-shadow: none;
 
       &:hover {
-        border-color: darken($fade-grey, 6%);
+        border-color: $fade-grey-dark-6;
         box-shadow: $light-box-shadow;
 
         .project-avatar {
@@ -95,13 +95,13 @@
     display: flex;
     padding: 20px;
     background: $white;
-    border: 1px solid darken($fade-grey, 3%);
+    border: 1px solid $fade-grey-dark-3;
     border-radius: $radius-large;
     margin-bottom: 1.5rem;
 
     .header-item {
       width: 25%;
-      border-right: 1px solid darken($fade-grey, 3%);
+      border-right: 1px solid $fade-grey-dark-3;
 
       &:last-child {
         border-right: none;
@@ -140,7 +140,7 @@
       min-height: 220px;
       padding: 20px;
       background: $white;
-      border: 1px solid darken($fade-grey, 3%);
+      border: 1px solid $fade-grey-dark-3;
       border-radius: $radius-large;
 
       .top-section {
@@ -175,7 +175,7 @@
           .heading {
             font-family: $font-alt;
             font-size: 0.75rem;
-            color: darken($light-text, 22%);
+            color: $light-text-dark-22;
           }
 
           > p {
@@ -234,7 +234,7 @@
         .bottom-section {
           .foot-block {
             .heading {
-              color: darken($light-text, 12%);
+              color: $light-text-dark-12;
             }
           }
         }
@@ -274,7 +274,7 @@
         align-items: center;
         padding: 20px;
         background: $white;
-        border: 1px solid darken($fade-grey, 3%);
+        border: 1px solid $fade-grey-dark-3;
         border-radius: $radius-large;
 
         .stat-item {
@@ -354,7 +354,7 @@
       align-items: center;
       padding: 20px;
       background: $white;
-      border: 1px solid darken($fade-grey, 3%);
+      border: 1px solid $fade-grey-dark-3;
       border-radius: 8px;
       transition: all 0.3s;
 
@@ -422,7 +422,7 @@
         justify-content: space-between;
         padding: 26px;
         background: $white;
-        border: 1px solid darken($fade-grey, 3%);
+        border: 1px solid $fade-grey-dark-3;
         border-radius: 8px;
         transition: all 0.3s;
 
@@ -592,7 +592,7 @@
       .header-item {
         width: 100%;
         border-right: none;
-        border-bottom: 1px solid darken($fade-grey, 3%);
+        border-bottom: 1px solid $fade-grey-dark-3;
         padding: 16px 0;
 
         &:last-child {

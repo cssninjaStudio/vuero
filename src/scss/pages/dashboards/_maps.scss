@@ -248,7 +248,7 @@
   .dashboard-map-wrapper {
     .dashboard-map-wrapper-inner {
       .content-section {
-        background: darken($dark-sidebar, 3%);
+        background: $dark-sidebar-dark-3;
 
         .content-section-body {
           .map-box {
@@ -267,30 +267,30 @@
   .mapboxgl-popup {
     &.mapboxgl-popup-anchor-bottom {
       .mapboxgl-popup-tip {
-        border-top-color: darken($dark-sidebar, 3%);
+        border-top-color: $dark-sidebar-dark-3;
       }
     }
 
     &.mapboxgl-popup-anchor-top {
       .mapboxgl-popup-tip {
-        border-bottom-color: darken($dark-sidebar, 3%);
+        border-bottom-color: $dark-sidebar-dark-3;
       }
     }
 
     &.mapboxgl-popup-anchor-left {
       .mapboxgl-popup-tip {
-        border-right-color: darken($dark-sidebar, 3%);
+        border-right-color: $dark-sidebar-dark-3;
       }
     }
 
     &.mapboxgl-popup-anchor-right {
       .mapboxgl-popup-tip {
-        border-left-color: darken($dark-sidebar, 3%);
+        border-left-color: $dark-sidebar-dark-3;
       }
     }
 
     .mapboxgl-popup-content {
-      background: darken($dark-sidebar, 3%);
+      background: $dark-sidebar-dark-3;
       border-color: lighten($dark-sidebar, 10%);
 
       .mapboxgl-popup-close-button {
@@ -308,24 +308,24 @@
   }
 
   .mapboxgl-ctrl-geocoder {
-    background: darken($dark-sidebar, 3%);
+    background: $dark-sidebar-dark-3;
     border-color: lighten($dark-sidebar, 10%);
 
     input {
       color: $white;
-      background: darken($dark-sidebar, 3%);
+      background: $dark-sidebar-dark-3;
     }
 
     .suggestions-wrapper {
       .suggestions {
-        background: darken($dark-sidebar, 3%);
+        background: $dark-sidebar-dark-3;
         border-color: lighten($dark-sidebar, 10%);
       }
     }
 
     .suggestions > .active > a,
     .suggestions > li > a:hover {
-      background: darken($dark-sidebar, 6%);
+      background: $dark-sidebar-dark-6;
     }
 
     .mapboxgl-ctrl-geocoder--suggestion-title {

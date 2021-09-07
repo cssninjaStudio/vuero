@@ -759,8 +759,8 @@ const tab = ref(props.activeTab)
       .project-features {
         display: flex;
         padding: 25px 0;
-        border-top: 1px solid darken($fade-grey, 3%);
-        border-bottom: 1px solid darken($fade-grey, 3%);
+        border-top: 1px solid $fade-grey-dark-3;
+        border-bottom: 1px solid $fade-grey-dark-3;
 
         .project-feature {
           margin-right: 20px;
@@ -811,7 +811,7 @@ const tab = ref(props.activeTab)
           transition: all 0.3s;
 
           &:hover {
-            border-color: darken($fade-grey, 3%);
+            border-color: $fade-grey-dark-3;
             box-shadow: $light-box-shadow;
           }
 
@@ -886,11 +886,11 @@ const tab = ref(props.activeTab)
         padding: 1.5rem;
 
         &:nth-child(odd) {
-          border-right: 1px solid darken($fade-grey, 3%);
+          border-right: 1px solid $fade-grey-dark-3;
         }
 
         &.has-border-bottom {
-          border-bottom: 1px solid darken($fade-grey, 3%);
+          border-bottom: 1px solid $fade-grey-dark-3;
         }
       }
     }

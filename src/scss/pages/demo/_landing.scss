@@ -114,7 +114,7 @@
               height: 64px;
               width: 64px;
               background: $white;
-              border-color: darken($fade-grey, 3%);
+              border-color: $fade-grey-dark-3;
             }
           }
 
@@ -519,7 +519,7 @@
     left: 0;
     width: 100%;
     height: 580px;
-    background: darken($widget-grey, 4%);
+    background: $widget-grey-dark-4;
     transform: translateY(-100%);
     transition: all 0.3s;
 
@@ -627,12 +627,12 @@
 
     .flex-cell {
       width: 25%;
-      border-right: 1px solid darken($fade-grey, 3%);
+      border-right: 1px solid $fade-grey-dark-3;
       text-align: center;
       padding: 24px 16px;
 
       &.is-bordered {
-        border-bottom: 1px solid darken($fade-grey, 3%);
+        border-bottom: 1px solid $fade-grey-dark-3;
       }
 
       &.no-border-edge {
@@ -692,7 +692,7 @@
 
     .boxed-features {
       .flex-card {
-        background: darken($landing-dark-2, 2%);
+        background: $landing-dark-4;
         border-color: lighten($landing-dark-2, 2%);
 
         .flex-cell {
@@ -719,7 +719,7 @@
   position: relative;
 
   &.section-focus {
-    background: darken($widget-grey, 1%);
+    background: $widget-grey-dark-1;
   }
 
   .section-title {
@@ -787,7 +787,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border-bottom: 1px solid darken($fade-grey, 4%);
+  border-bottom: 1px solid $fade-grey-dark-4;
   margin: 40px 0;
 
   &.no-border {
@@ -917,7 +917,7 @@
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  border: 1px solid darken($fade-grey, 5%);
+  border: 1px solid $fade-grey-dark-5;
   min-height: 205px;
 
   &:hover {
@@ -1089,7 +1089,7 @@
   display: block;
   text-align: center;
   background: $white;
-  border: 1px solid darken($fade-grey, 3%);
+  border: 1px solid $fade-grey-dark-3;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 0;
@@ -1205,7 +1205,7 @@
     }
 
     .component-box {
-      background: darken($landing-dark-2, 2%);
+      background: $landing-dark-4;
       border-color: lighten($landing-dark-2, 2%);
 
       &:hover {
@@ -1233,7 +1233,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid darken($fade-grey, 4%);
+    border-bottom: 1px solid $fade-grey-dark-4;
 
     .head-text {
       h3 {
@@ -1795,7 +1795,7 @@
         .flex-cell {
           width: 100%;
           border-right: none;
-          border-bottom: 1px solid darken($fade-grey, 3%);
+          border-bottom: 1px solid $fade-grey-dark-3;
 
           &:last-child {
             border-bottom: none;

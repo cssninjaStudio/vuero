@@ -67,7 +67,7 @@ label[for] {
   transition: all 0.3s;
 
   &:focus {
-    border-color: darken($fade-grey, 4%);
+    border-color: $fade-grey-dark-4;
     box-shadow: $light-box-shadow;
 
     &.is-primary-focus {
@@ -96,7 +96,7 @@ label[for] {
   transition: all 0.3s;
 
   &:focus {
-    border-color: darken($fade-grey, 4%);
+    border-color: $fade-grey-dark-4;
     box-shadow: $light-box-shadow;
 
     &.is-primary-focus {
@@ -145,19 +145,19 @@ label[for] {
     }
 
     &::-webkit-input-placeholder {
-      color: darken($accent-grey, 30%) !important;
+      color: $accent-grey-dark-30 !important;
     }
 
     &::-moz-placeholder {
-      color: darken($accent-grey, 30%) !important;
+      color: $accent-grey-dark-30 !important;
     }
 
     &:-ms-input-placeholder {
-      color: darken($accent-grey, 30%) !important;
+      color: $accent-grey-dark-30 !important;
     }
 
     &:-moz-placeholder {
-      color: darken($accent-grey, 30%) !important;
+      color: $accent-grey-dark-30 !important;
     }
 
     &.is-primary-focus {
@@ -309,7 +309,7 @@ select {
 
   &:focus {
     box-shadow: none !important;
-    border-color: darken($fade-grey, 6%) !important;
+    border-color: $fade-grey-dark-6 !important;
   }
 }
 
@@ -354,7 +354,7 @@ select {
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
       border-bottom: none;
-      border-color: darken($fade-grey, 2%) !important;
+      border-color: $fade-grey-dark-2 !important;
       box-shadow: $light-box-shadow;
     }
 
@@ -366,7 +366,7 @@ select {
       padding: 12px 8px;
       background: $white;
       border-radius: 0 0 4px 4px;
-      border: 1px solid darken($fade-grey, 2%);
+      border: 1px solid $fade-grey-dark-2;
       border-top: none;
       box-shadow: $light-box-shadow;
     }
@@ -554,7 +554,7 @@ select {
     overflow-y: auto;
     background: $white;
     opacity: 0;
-    border: 1px solid darken($fade-grey, 3%);
+    border: 1px solid $fade-grey-dark-3;
     border-radius: $radius;
     pointer-events: none;
     transform: translateY(5px);
@@ -691,7 +691,7 @@ select {
 
       .form-icon {
         svg {
-          color: darken($light-text, 5%);
+          color: $light-text-dark-5;
         }
 
         .fas,
@@ -700,7 +700,7 @@ select {
         .fab,
         .lnir,
         .lnil {
-          color: darken($light-text, 5%);
+          color: $light-text-dark-5;
         }
       }
     }
@@ -723,7 +723,7 @@ select {
   }
 
   .search-results {
-    background: darken($dark-sidebar, 2%);
+    background: $dark-sidebar-dark-2;
     border-color: lighten($dark-sidebar, 4%) !important;
 
     .search-result {
@@ -1635,7 +1635,7 @@ select {
 
     .file-cta {
       background: $white;
-      border: 1px solid darken($fade-grey, 3%);
+      border: 1px solid $fade-grey-dark-3;
       transition: all 0.3s;
     }
   }
@@ -1680,7 +1680,7 @@ select {
   }
 
   .filepond--root {
-    border: 2px dashed darken($fade-grey, 4%);
+    border: 2px dashed $fade-grey-dark-4;
     border-radius: $radius;
     min-height: 70px;
     cursor: pointer;
@@ -1724,7 +1724,7 @@ select {
     }
 
     .filepond--root {
-      border-color: dashed darken($fade-grey, 6%);
+      border-color: dashed $fade-grey-dark-6;
     }
   }
 
@@ -1736,7 +1736,7 @@ select {
   }
 
   .filepond--root {
-    border: 2px dashed darken($fade-grey, 4%);
+    border: 2px dashed $fade-grey-dark-4;
     cursor: pointer;
     transition: all 0.3s;
   }
@@ -1783,7 +1783,7 @@ select {
 .choices {
   &.is-focused {
     .choices__inner {
-      border-color: darken($fade-grey, 3%);
+      border-color: $fade-grey-dark-3;
       box-shadow: $light-box-shadow;
     }
   }
@@ -1795,8 +1795,8 @@ select {
     .choices__list {
       .choices__item {
         position: relative !important;
-        background-color: darken($fade-grey, 2%);
-        border-color: darken($fade-grey, 2%);
+        background-color: $fade-grey-dark-2;
+        border-color: $fade-grey-dark-2;
         color: $dark-text;
         font-family: $font;
         padding: 4px 10px 5px 10px;
@@ -1822,7 +1822,7 @@ select {
 
   .choices__list--dropdown {
     margin-top: 6px;
-    border-color: darken($fade-grey, 3%);
+    border-color: $fade-grey-dark-3;
     box-shadow: $light-box-shadow;
 
     .choices__item--choice {
@@ -1867,7 +1867,7 @@ select {
 
       .choices__item {
         &.is-highlighted {
-          background-color: darken($dark-sidebar, 2%);
+          background-color: $dark-sidebar-dark-2;
         }
       }
     }

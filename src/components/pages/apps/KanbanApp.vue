@@ -672,7 +672,7 @@ onMounted(() => {
         font-size: 0.85rem;
         font-weight: 500;
         text-transform: uppercase;
-        color: darken($light-text, 8%);
+        color: $light-text-dark-8;
       }
 
       .input {
@@ -705,7 +705,7 @@ onMounted(() => {
           svg {
             height: 18px;
             width: 18px;
-            color: darken($light-text, 8%);
+            color: $light-text-dark-8;
           }
         }
       }

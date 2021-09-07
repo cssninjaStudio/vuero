@@ -122,7 +122,7 @@ defineExpose({
         background: lighten($fade-grey, 2%);
 
         svg {
-          color: darken($light-text, 4%);
+          color: $light-text-dark-4;
         }
       }
     }
@@ -317,7 +317,7 @@ defineExpose({
 
       &:focus {
         outline: none;
-        border-color: darken($fade-grey, 4%);
+        border-color: $fade-grey-dark-4;
         box-shadow: $light-box-shadow;
       }
 

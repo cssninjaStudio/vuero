@@ -203,7 +203,7 @@ Stat Widgets Styles
         border-radius: $radius-rounded;
         background: $white;
         color: $primary;
-        border: 1px solid darken($fade-grey, 3%);
+        border: 1px solid $fade-grey-dark-3;
         box-shadow: $light-box-shadow;
 
         &.is-squared {
@@ -358,7 +358,7 @@ Stat Widgets Styles
 
             .rating {
               i {
-                color: darken($widget-grey, 8%);
+                color: $widget-grey-dark-8;
 
                 &.selected {
                   color: $h-yellow !important;

@@ -164,7 +164,7 @@
   display: inline-block;
   width: 100%;
   background-color: $white;
-  border: 1px solid darken($fade-grey, 3%);
+  border: 1px solid $fade-grey-dark-3;
   transition: all 0.3s;
 
   .card-head,
@@ -187,11 +187,11 @@
   }
 
   .card-head {
-    border-bottom: 1px solid darken($fade-grey, 3%);
+    border-bottom: 1px solid $fade-grey-dark-3;
   }
 
   .card-foot {
-    border-top: 1px solid darken($fade-grey, 3%);
+    border-top: 1px solid $fade-grey-dark-3;
   }
 
   .card-body {
@@ -202,7 +202,7 @@
 @mixin vuero-v-card() {
   box-shadow: none;
   border-radius: $radius;
-  border: 1px solid darken($fade-grey, 3%);
+  border: 1px solid $fade-grey-dark-3;
 
   .card-header {
     box-shadow: none;
@@ -261,7 +261,7 @@
   padding: 20px;
   background-color: $white;
   border-radius: 10px;
-  border: 1px solid darken($fade-grey, 3%);
+  border: 1px solid $fade-grey-dark-3;
   transition: all 0.3s;
 }
 @mixin vuero-s-card() {
@@ -273,7 +273,7 @@
   padding: 20px;
   background-color: $white;
   border-radius: $radius-large;
-  border: 1px solid darken($fade-grey, 3%);
+  border: 1px solid $fade-grey-dark-3;
   transition: all 0.3s;
 }
 @mixin vuero-l-card() {
@@ -285,6 +285,6 @@
   padding: 20px;
   background-color: $white;
   border-radius: 16px;
-  border: 1px solid darken($fade-grey, 3%);
+  border: 1px solid $fade-grey-dark-3;
   transition: all 0.3s;
 }

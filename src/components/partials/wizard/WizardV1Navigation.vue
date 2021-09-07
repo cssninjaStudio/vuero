@@ -242,7 +242,7 @@ const setStep = (target: number) => {
     }
 
     .dropdown-menu {
-      border: 1px solid darken($fade-grey, 3%);
+      border: 1px solid $fade-grey-dark-3;
       box-shadow: $light-box-shadow;
       border-radius: 8px;
       padding-top: 0;
@@ -267,7 +267,7 @@ const setStep = (target: number) => {
       align-items: center;
       justify-content: center;
       border-radius: $radius-rounded;
-      border: 1px solid darken($fade-grey, 3%);
+      border: 1px solid $fade-grey-dark-3;
       box-shadow: $light-box-shadow;
       background: $white;
       transition: all 0.3s;
@@ -317,7 +317,7 @@ const setStep = (target: number) => {
 
     .dropdown-menu {
       top: 52px;
-      border: 1px solid darken($fade-grey, 3%);
+      border: 1px solid $fade-grey-dark-3;
       box-shadow: $light-box-shadow;
       border-radius: 8px;
       padding-top: 0;

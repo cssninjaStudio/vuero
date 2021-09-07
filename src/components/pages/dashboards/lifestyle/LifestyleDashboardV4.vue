@@ -274,7 +274,7 @@
 
       p {
         font-weight: 400;
-        color: darken($smoke-white, 2%);
+        color: $smoke-white-dark-2;
         margin-bottom: 16px;
         max-width: 320px;
       }
@@ -401,7 +401,7 @@
         justify-content: space-between;
         margin-bottom: 16px;
         padding-bottom: 16px;
-        border-bottom: 1px solid darken($fade-grey, 3%);
+        border-bottom: 1px solid $fade-grey-dark-3;
 
         &:last-child {
           margin-bottom: 0;

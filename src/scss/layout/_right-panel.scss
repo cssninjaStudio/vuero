@@ -341,7 +341,7 @@
             height: 34px;
             width: 34px;
             background: $white;
-            border: 1px solid darken($fade-grey, 3%);
+            border: 1px solid $fade-grey-dark-3;
             border-radius: $radius-rounded;
             transition: all 0.3s;
 
@@ -408,7 +408,7 @@
               height: 34px;
               width: 34px;
               background: $white;
-              border: 1px solid darken($fade-grey, 3%);
+              border: 1px solid $fade-grey-dark-3;
               border-radius: $radius-rounded;
               transition: all 0.3s;
 
@@ -465,7 +465,7 @@
               left: 18px;
               width: 1px;
               height: calc(100% - 36px);
-              border-left: 1px solid darken($fade-grey, 3%);
+              border-left: 1px solid $fade-grey-dark-3;
             }
 
             .timeline-icon {
@@ -476,7 +476,7 @@
               justify-content: center;
               align-items: center;
               background: $white;
-              border: 1px solid darken($fade-grey, 3%);
+              border: 1px solid $fade-grey-dark-3;
               border-radius: $radius-rounded;
               color: $light-text;
               box-shadow: $light-box-shadow;
@@ -488,7 +488,7 @@
                 left: 40px;
                 width: 20px;
                 height: 1px;
-                border-top: 1px solid darken($fade-grey, 3%);
+                border-top: 1px solid $fade-grey-dark-3;
               }
 
               img {
@@ -617,9 +617,7 @@
         .task-group {
           margin-bottom: 20px;
           padding-bottom: 20px;
-          border-bottom: 1.6px dashed darken($fade-grey, 3%);
-
-          h3 {
+          border-bottom: 1.6px dashed $fade-grey-dark-3 h3 {
             text-transform: uppercase;
             font-family: $font-alt;
             font-size: 0.8rem;
@@ -753,7 +751,7 @@
               transition: all 0.3s;
 
               &:hover {
-                border-color: darken($fade-grey, 3%);
+                border-color: $fade-grey-dark-3;
                 box-shadow: $light-box-shadow;
               }
 
@@ -817,7 +815,7 @@
                   transition: all 0.3s;
 
                   &:hover {
-                    border-color: darken($fade-grey, 4%);
+                    border-color: $fade-grey-dark-4;
                     box-shadow: $light-box-shadow;
                     color: $primary;
                   }

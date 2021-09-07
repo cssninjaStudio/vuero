@@ -117,7 +117,7 @@
         border: none;
         background: none;
         border-radius: 0;
-        border-right: 1px solid darken($fade-grey, 3%);
+        border-right: 1px solid $fade-grey-dark-3;
 
         .price {
           text-align: center;
@@ -183,7 +183,7 @@
               min-width: 32px;
               border-radius: $radius-rounded;
               background: $white;
-              border: 1px solid darken($fade-grey, 3%);
+              border: 1px solid $fade-grey-dark-3;
               box-shadow: $light-box-shadow;
               color: $primary;
 
@@ -286,7 +286,7 @@
         .action-box {
           padding: 20px 20px 40px 20px;
           border-right: none;
-          border-bottom: 1px solid darken($fade-grey, 3%);
+          border-bottom: 1px solid $fade-grey-dark-3;
 
           .box-content {
             .buttons {

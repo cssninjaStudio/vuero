@@ -320,7 +320,7 @@ const filteredData = computed(() => {
               position: relative;
               top: -2px;
               font-size: 12px;
-              color: darken($fade-grey, 4%);
+              color: $fade-grey-dark-4;
 
               &.active {
                 color: #ffc43b;
@@ -405,7 +405,7 @@ const filteredData = computed(() => {
 
             .rating {
               i:not(.active) {
-                color: darken($dark-sidebar, 2%);
+                color: $dark-sidebar-dark-2;
               }
             }
           }

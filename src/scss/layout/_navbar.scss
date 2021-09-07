@@ -62,7 +62,7 @@
         .centered-links {
           .centered-link {
             &:hover {
-              background: darken($landing-dark-2, 6%);
+              background: $landing-dark-5;
 
               svg {
                 color: $smoke-white;
@@ -74,11 +74,11 @@
             }
 
             &.is-active {
-              background: darken($landing-dark-2, 12%);
+              background: $landing-dark-6;
               border-color: lighten($landing-dark-2, 6%);
 
               &:hover {
-                background: darken($landing-dark-2, 12%);
+                background: $landing-dark-6;
               }
 
               svg {
@@ -106,7 +106,7 @@
               &:hover {
                 .is-trigger {
                   .button {
-                    background: darken($landing-dark-2, 6%);
+                    background: $landing-dark-5;
                     color: $smoke-white;
                   }
                 }
@@ -115,7 +115,7 @@
               &.is-active {
                 .is-trigger {
                   .button {
-                    background: darken($landing-dark-2, 12%);
+                    background: $landing-dark-6;
                     border-color: lighten($landing-dark-2, 6%);
                   }
                 }
@@ -140,7 +140,7 @@
               color: $light-text;
 
               &:hover {
-                background: darken($landing-dark-2, 6%);
+                background: $landing-dark-5;
                 color: $smoke-white;
               }
             }
@@ -151,8 +151,8 @@
           .field {
             .control {
               .input {
-                background: darken($primary, 10%);
-                border-color: darken($primary, 6%);
+                background: $primary-dark-10;
+                border-color: $primary-dark-6;
                 color: $smoke-white;
 
                 &::placeholder {
@@ -176,8 +176,8 @@
         .toolbar {
           .toolbar-link {
             &:hover {
-              background: darken($landing-dark-2, 12%);
-              border-color: darken($landing-dark-2, 12%);
+              background: $landing-dark-6;
+              border-color: $landing-dark-6;
             }
 
             > svg {
@@ -188,16 +188,16 @@
           .dropdown {
             &:hover {
               .is-trigger {
-                background: darken($landing-dark-2, 12%);
-                border-color: darken($landing-dark-2, 12%);
+                background: $landing-dark-6;
+                border-color: $landing-dark-6;
               }
             }
 
             &.is-dots {
               &.is-active {
                 .is-trigger {
-                  background: darken($landing-dark-2, 12%);
-                  border-color: darken($landing-dark-2, 12%);
+                  background: $landing-dark-6;
+                  border-color: $landing-dark-6;
                 }
               }
             }
@@ -212,7 +212,7 @@
           background: $landing-dark-2;
 
           &:hover {
-            background: darken($landing-dark-2, 12%);
+            background: $landing-dark-6;
           }
 
           > svg {
@@ -260,7 +260,7 @@
       .separator {
         height: 38px;
         width: 2px;
-        border-right: 1px solid darken($fade-grey, 4%);
+        border-right: 1px solid $fade-grey-dark-4;
         margin: 0 20px 0 16px;
       }
 
@@ -349,7 +349,7 @@
 
           &.is-active {
             background: $white;
-            border-color: darken($fade-grey, 3%);
+            border-color: $fade-grey-dark-3;
             box-shadow: $light-box-shadow;
 
             &:hover {
@@ -361,7 +361,7 @@
             }
 
             span {
-              color: darken($primary, 8%);
+              color: $primary-dark-8;
             }
           }
 
@@ -440,7 +440,7 @@
               .is-trigger {
                 .button {
                   background: $white;
-                  border-color: darken($fade-grey, 3%);
+                  border-color: $fade-grey-dark-3;
                   box-shadow: $light-box-shadow !important;
                 }
               }
@@ -517,7 +517,7 @@
                         text-align: center;
                         padding: 16px 12px;
                         background: $white;
-                        border: 1px solid darken($fade-grey, 3%);
+                        border: 1px solid $fade-grey-dark-3;
                         border-radius: 10px;
                         cursor: pointer;
                         transition: all 0.3s;
@@ -583,7 +583,7 @@
                       color: $dark-text;
                       text-transform: uppercase;
                       padding: 20px;
-                      border-bottom: 1px solid darken($fade-grey, 3%);
+                      border-bottom: 1px solid $fade-grey-dark-3;
 
                       &.is-primary {
                         svg {
@@ -679,7 +679,7 @@
                       &.router-link-exact-active,
                       &.is-active {
                         background: $white;
-                        border: 1px solid darken($fade-grey, 3%);
+                        border: 1px solid $fade-grey-dark-3;
                         box-shadow: $light-box-shadow;
                       }
 
@@ -850,7 +850,7 @@
 
 .is-dark {
   .navbar-navbar:not(.is-colored) {
-    background: darken($dark-sidebar, 2%);
+    background: $dark-sidebar-dark-2;
     border-color: lighten($dark-sidebar, 1%);
 
     &.is-transparent {
@@ -860,7 +860,7 @@
 
       &.is-solid,
       &.is-scrolled {
-        background: darken($dark-sidebar, 2%);
+        background: $dark-sidebar-dark-2;
         border-color: lighten($dark-sidebar, 1%);
       }
     }
@@ -1046,7 +1046,7 @@
         }
 
         .icon-link {
-          background: darken($dark-sidebar, 2%);
+          background: $dark-sidebar-dark-2;
 
           &:hover {
             background: lighten($dark-sidebar, 2%);
@@ -1069,7 +1069,7 @@
           .centered-links {
             .centered-link {
               &:hover {
-                background: darken($accent, 5%);
+                background: $accent-dark-5;
 
                 svg {
                   color: $smoke-white;
@@ -1194,8 +1194,8 @@
           .toolbar {
             .toolbar-link {
               &:hover {
-                background: darken($landing-dark-2, 12%) !important;
-                border-color: darken($landing-dark-2, 12%) !important;
+                background: $landing-dark-6 !important;
+                border-color: $landing-dark-6 !important;
               }
 
               > svg {
@@ -1206,8 +1206,8 @@
             .dropdown {
               .is-trigger {
                 &:hover {
-                  background: darken($landing-dark-2, 12%) !important;
-                  border-color: darken($landing-dark-2, 12%) !important;
+                  background: $landing-dark-6 !important;
+                  border-color: $landing-dark-6 !important;
                 }
 
                 svg {
@@ -1222,8 +1222,8 @@
               .dropdown-content {
                 .dropdown-head {
                   &:hover {
-                    background: darken($landing-dark-2, 12%);
-                    border-color: darken($landing-dark-2, 12%);
+                    background: $landing-dark-6;
+                    border-color: $landing-dark-6;
                   }
 
                   .meta {
@@ -1256,26 +1256,26 @@
           &.is-active {
             a {
               border-color: lighten($dark-sidebar, 12%);
-              background: darken($dark-sidebar, 2%);
+              background: $dark-sidebar-dark-2;
               color: $accent;
               opacity: 1;
             }
 
             &:hover {
               a {
-                background: darken($dark-sidebar, 2%);
+                background: $dark-sidebar-dark-2;
               }
             }
           }
 
           .router-link-exact-active {
             border-color: lighten($dark-sidebar, 12%);
-            background: darken($dark-sidebar, 2%);
+            background: $dark-sidebar-dark-2;
             color: $accent;
             opacity: 1;
 
             &:hover {
-              background: darken($dark-sidebar, 2%);
+              background: $dark-sidebar-dark-2;
             }
           }
 
@@ -1359,7 +1359,7 @@
   pointer-events: none;
   z-index: 99;
   transform: translateY(10px);
-  border: 1px solid darken($fade-grey, 3%);
+  border: 1px solid $fade-grey-dark-3;
   box-shadow: $light-box-shadow;
   transition: all 0.3s;
   max-width: 800px;
@@ -1414,7 +1414,7 @@
               font-weight: 600;
               color: $primary;
               background: $white;
-              border-color: darken($fade-grey, 3%);
+              border-color: $fade-grey-dark-3;
               box-shadow: $light-box-shadow;
             }
 
@@ -1467,7 +1467,7 @@
 
           .column {
             &:not(:last-child) {
-              border-right: 1px solid darken($fade-grey, 3%);
+              border-right: 1px solid $fade-grey-dark-3;
             }
           }
 
@@ -1528,7 +1528,7 @@
                 border-radius: 0;
 
                 a {
-                  color: darken($primary, 14%);
+                  color: $primary-dark-14;
 
                   svg {
                     opacity: 1;
@@ -1538,7 +1538,7 @@
               }
 
               .router-link-exact-active {
-                color: darken($primary, 14%);
+                color: $primary-dark-14;
 
                 svg {
                   opacity: 1;

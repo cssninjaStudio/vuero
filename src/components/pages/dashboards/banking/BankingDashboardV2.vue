@@ -385,7 +385,7 @@ const goto = (index: number) => {
         .column {
           &:first-child {
             .inner-box {
-              border-right: 1px solid darken($fade-grey, 3%);
+              border-right: 1px solid $fade-grey-dark-3;
             }
           }
         }
@@ -491,8 +491,8 @@ const goto = (index: number) => {
                   .ccard {
                     background-image: linear-gradient(
                       -225deg,
-                      darken($primary, 8%) 0%,
-                      darken($primary, 2%) 48%,
+                      $primary-dark-8 0%,
+                      $primary-dark-2 48%,
                       lighten($primary, 12%) 100%
                     );
                     box-shadow: $primary-box-shadow;
@@ -672,7 +672,7 @@ const goto = (index: number) => {
         .monthly-summary-wrap {
           .monthly-summary {
             padding: 0 20px;
-            border: 1px solid darken($fade-grey, 5%);
+            border: 1px solid $fade-grey-dark-5;
             border-radius: $radius-large;
 
             .monthly-summary-item {
@@ -680,7 +680,7 @@ const goto = (index: number) => {
               font-family: $font;
 
               &:first-child {
-                border-bottom: 1px solid darken($fade-grey, 5%);
+                border-bottom: 1px solid $fade-grey-dark-5;
               }
 
               span {
@@ -784,8 +784,8 @@ const goto = (index: number) => {
                   .ccard {
                     background-image: linear-gradient(
                       -225deg,
-                      darken($accent, 8%) 0%,
-                      darken($accent, 2%) 48%,
+                      $accent-dark-8 0%,
+                      $accent-dark-2 48%,
                       lighten($accent, 12%) 100%
                     );
                     box-shadow: $accent-box-shadow;

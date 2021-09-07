@@ -62,7 +62,7 @@
         padding: 0.75rem;
         border-radius: 0.5rem;
         border: 1px solid $border;
-        background: darken($widget-grey, 3%);
+        background: $widget-grey-dark-3;
 
         .fieldset-separator {
           margin: 1.5rem 0;
@@ -110,7 +110,7 @@
         width: 100%;
         border: 2px dashed $border;
         border-radius: 0.65rem;
-        background: darken($widget-grey, 3%);
+        background: $widget-grey-dark-3;
         display: flex;
         align-items: center;
         padding-left: calc(0.75em - 1px);
@@ -317,7 +317,7 @@
               outline: none;
 
               &:hover {
-                background: darken($widget-grey, 1%);
+                background: $widget-grey-dark-1;
               }
 
               svg {
@@ -504,7 +504,7 @@ body {
           }
 
           .fieldset {
-            background: darken($dark-sidebar, 2%);
+            background: $dark-sidebar-dark-2;
             border-color: lighten($dark-sidebar, 12%);
           }
 
@@ -595,17 +595,17 @@ body {
           .steps-segment {
             &.is-active {
               ~ .steps-segment::after {
-                background: darken($dark-sidebar, 5%);
+                background: $dark-sidebar-dark-5;
               }
 
               ~ .steps-segment {
                 .steps-marker:not(.is-hollow) {
-                  background: darken($dark-sidebar, 5%);
+                  background: $dark-sidebar-dark-5;
                 }
               }
 
               &::after {
-                background: darken($dark-sidebar, 5%);
+                background: $dark-sidebar-dark-5;
               }
 
               .steps-content {

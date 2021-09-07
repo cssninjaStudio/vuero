@@ -171,7 +171,7 @@ const filteredData = computed(() => {
         width: 100%;
         max-width: 180px;
         margin: 0 auto;
-        border: 1px solid darken($fade-grey, 4%);
+        border: 1px solid $fade-grey-dark-4;
         border-radius: 8px;
         background: $white;
         box-shadow: $light-box-shadow;
@@ -202,8 +202,8 @@ const filteredData = computed(() => {
             }
 
             &:nth-child(2) {
-              border-left: 1px solid darken($fade-grey, 4%);
-              border-right: 1px solid darken($fade-grey, 4%);
+              border-left: 1px solid $fade-grey-dark-4;
+              border-right: 1px solid $fade-grey-dark-4;
 
               &.is-active ~ .icon-tabs-naver {
                 margin-left: 33% !important;
@@ -289,7 +289,7 @@ const filteredData = computed(() => {
         margin-bottom: 0;
 
         &:hover {
-          border-color: darken($fade-grey, 4%);
+          border-color: $fade-grey-dark-4;
           color: $primary;
           box-shadow: $light-box-shadow;
         }

@@ -163,13 +163,13 @@ const optionsSingle = [
 .card-grid-v2 {
   .card-grid-item {
     .card {
-      border: 1px solid darken($fade-grey, 4%);
+      border: 1px solid $fade-grey-dark-4;
       box-shadow: none;
       border-radius: $radius-large;
 
       .card-header {
         box-shadow: none;
-        border-bottom: 1px solid darken($fade-grey, 4%);
+        border-bottom: 1px solid $fade-grey-dark-4;
 
         .card-header-title {
           display: flex;
@@ -206,7 +206,7 @@ const optionsSingle = [
       }
 
       .card-content {
-        border-top: 1px solid darken($fade-grey, 4%);
+        border-top: 1px solid $fade-grey-dark-4;
         padding: 1rem;
 
         .card-content-flex {

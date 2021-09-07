@@ -445,7 +445,7 @@ import {
                     display: block;
                     font-size: 0.82rem;
                     font-weight: 500;
-                    color: darken($smoke-white, 8%);
+                    color: $smoke-white-dark-8;
                     transition: color 0.3s;
 
                     &.is-hoverable:hover {
@@ -456,7 +456,7 @@ import {
                   .separator {
                     padding: 0 10px;
                     font-size: 0.8rem;
-                    //color: darken($smoke-white, 10%);
+                    //color: $smoke-white-dark-10;
                     opacity: 0.6;
                     text-align: center;
                     color: $smoke-white;

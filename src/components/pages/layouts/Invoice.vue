@@ -232,7 +232,7 @@ import { popovers } from '/@src/data/users/userPopovers'
     justify-content: space-between;
     margin-bottom: 20px;
     padding-bottom: 10px;
-    border-bottom: 1px solid darken($fade-grey, 4%);
+    border-bottom: 1px solid $fade-grey-dark-4;
 
     .left {
       h3 {
@@ -261,7 +261,7 @@ import { popovers } from '/@src/data/users/userPopovers'
 
           &:hover {
             color: $dark-text;
-            background: darken($fade-grey, 4%);
+            background: $fade-grey-dark-4;
           }
 
           svg {
@@ -338,12 +338,12 @@ import { popovers } from '/@src/data/users/userPopovers'
         }
 
         &.is-bordered {
-          border-bottom: 1px solid darken($fade-grey, 3%);
+          border-bottom: 1px solid $fade-grey-dark-3;
         }
 
         .v-avatar {
           &.is-customer {
-            border: 1.6px solid darken($fade-grey, 3%);
+            border: 1.6px solid $fade-grey-dark-3;
             border-radius: $radius-rounded;
             box-shadow: $light-box-shadow;
           }

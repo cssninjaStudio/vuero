@@ -457,7 +457,7 @@ import {
           padding: 20px;
 
           &:not(:first-child) {
-            border-top: 1.6px dashed darken($fade-grey, 4%);
+            border-top: 1.6px dashed $fade-grey-dark-4;
           }
 
           .credit-card {

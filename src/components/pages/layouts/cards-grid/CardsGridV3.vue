@@ -201,7 +201,7 @@ const optionsSingle = [
 
       .avatar {
         object-fit: cover;
-        border: 1px solid darken($fade-grey, 4%);
+        border: 1px solid $fade-grey-dark-4;
         box-shadow: $light-box-shadow;
       }
 
@@ -245,7 +245,7 @@ const optionsSingle = [
         color: $light-text;
 
         &:hover {
-          border-color: darken($fade-grey, 4%);
+          border-color: $fade-grey-dark-4;
           color: $primary;
           box-shadow: $light-box-shadow;
         }

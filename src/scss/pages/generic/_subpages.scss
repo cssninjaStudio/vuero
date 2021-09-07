@@ -54,7 +54,7 @@ Subpages UI Elements
           .sender-message {
             text-align: left;
             padding: 20px;
-            border: 1px solid darken($fade-grey, 3%);
+            border: 1px solid $fade-grey-dark-3;
             max-width: 360px;
             margin: 0 auto;
             border-radius: $radius-large;
@@ -128,7 +128,7 @@ Subpages UI Elements
           border: none;
           background: none;
           border-radius: 0;
-          border-right: 1px solid darken($fade-grey, 3%);
+          border-right: 1px solid $fade-grey-dark-3;
         }
       }
 
@@ -163,7 +163,7 @@ Subpages UI Elements
                 min-width: 32px;
                 border-radius: $radius-rounded;
                 background: $white;
-                border: 1px solid darken($fade-grey, 3%);
+                border: 1px solid $fade-grey-dark-3;
                 box-shadow: $light-box-shadow;
                 color: $primary;
 
@@ -239,7 +239,7 @@ Subpages UI Elements
           .action-box {
             padding: 20px 20px 40px 20px;
             border-right: none;
-            border-bottom: 1px solid darken($fade-grey, 3%);
+            border-bottom: 1px solid $fade-grey-dark-3;
 
             .box-content {
               .buttons {
