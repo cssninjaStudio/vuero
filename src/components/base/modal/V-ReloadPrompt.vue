@@ -1,12 +1,52 @@
 <script setup lang="ts">
 import { useRegisterSW } from 'virtual:pwa-register/vue'
+import { useI18n } from 'vue-i18n'
 
+const props = defineProps<{
+  appName: string
+}>()
+
+const { t } = useI18n()
 const { offlineReady, needRefresh, updateServiceWorker } = useRegisterSW()
+
 const close = async () => {
   offlineReady.value = false
   needRefresh.value = false
 }
 </script>
+
+<i18n lang="yaml">
+de:
+  offline-ready: '{appName} ist bereit, offline zu arbeiten'
+  need-refresh: 'Eine neue Version von {appName} ist verfügbar, klicken Sie auf die Schaltfläche Neu laden, um sie zu aktualisieren.'
+  reload-button: 'Neu laden'
+  close-button: 'Schließen'
+en:
+  offline-ready: '{appName} is ready to work offline'
+  need-refresh: 'A new version of {appName} is available, click on reload button to update.'
+  reload-button: 'Reload'
+  close-button: 'Close'
+es-MX:
+  offline-ready: '{appName} está listo para trabajar sin conexión'
+  need-refresh: 'Una nueva versión de {appName} está disponible, haga clic en el botón Recarga para actualizar.'
+  reload-button: 'Recarga'
+  close-button: 'Cerrar'
+es:
+  offline-ready: '{appName} está listo para trabajar sin conexión'
+  need-refresh: 'Una nueva versión de {appName} está disponible, haga clic en el botón Recarga para actualizar.'
+  reload-button: 'Recarga'
+  close-button: 'Cerrar'
+fr:
+  offline-ready: '{appName} est prêt à être utilisé hors ligne'
+  need-refresh: 'Une nouvelle version de {appName} est disponible, cliquez sur le bouton Recharger pour la mettre à jour.'
+  reload-button: 'Recharger'
+  close-button: 'Fermer'
+zh-CN:
+  offline-ready: '{appName}已准备好脱机工作'
+  need-refresh: '新版本的{appName}已经可用，点击重新加载按钮来更新。'
+  reload-button: '重新加载'
+  close-button: '关闭'
+</i18n>
 
 <template>
   <transition name="from-bottom">
@@ -17,9 +57,11 @@ const close = async () => {
       radius="smooth"
     >
       <div class="pwa-message">
-        <span v-if="offlineReady"> App ready to work offline </span>
+        <span v-if="offlineReady">
+          {{ t('offline-ready', { appName: props.appName }) }}
+        </span>
         <span v-else>
-          New version available, click on reload button to update.
+          {{ t('need-refresh', { appName: props.appName }) }}
         </span>
       </div>
       <V-Buttons align="right">
@@ -29,9 +71,11 @@ const close = async () => {
           icon="ion:reload-outline"
           @click="updateServiceWorker()"
         >
-          Reload
+          {{ t('reload-button') }}
         </V-Button>
-        <V-Button icon="feather:x" @click="close">Close</V-Button>
+        <V-Button icon="feather:x" @click="close">{{
+          t('close-button')
+        }}</V-Button>
       </V-Buttons>
     </V-Card>
   </transition>

@@ -64,12 +64,14 @@ export async function createApp({ enhanceApp }: VueroAppOptions) {
        * a Transition for the inner component
        * Template equivalent would be:
        *
-       * <RouterView v-slot="{ Component }">
-       *   <transition name="fade-slow" mode="out-in">
-       *     <component :is="Component" />
-       *   </transition>
-       * </RouterView>
-       * <VReloadPrompt />
+       * <template>
+       *   <RouterView v-slot="{ Component }">
+       *     <transition name="fade-slow" mode="out-in">
+       *       <component :is="Component" />
+       *     </transition>
+       *   </RouterView>
+       *   <VReloadPrompt app-name="Vuero" />
+       * </template>
        */
       return () => {
         const defaultSlot = ({ Component: _Component }: any) => {
@@ -90,7 +92,7 @@ export async function createApp({ enhanceApp }: VueroAppOptions) {
           h(RouterView, null, {
             default: defaultSlot,
           }),
-          h(VReloadPrompt, {}),
+          h(VReloadPrompt, { appName: 'Vuero' }),
         ]
       }
     },
