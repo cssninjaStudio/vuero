@@ -13,11 +13,25 @@
 import { useHead } from '@vueuse/head'
 import { onMounted } from 'vue'
 import { useRoute } from 'vue-router'
+import { useI18n } from 'vue-i18n'
 
 const route = useRoute()
+const { t } = useI18n()
+
+onMounted(() => {
+  /**
+   * replacing path with a leading /404 allow us to detect this
+   * on nginx to return a real 404 status code
+   *
+   * @see /src/nginx/vuejs.conf
+   */
+  if (!route.path.startsWith('/404')) {
+    window.location.href = `/404${route.fullPath}`
+  }
+})
 
 useHead({
-  title: 'Page not found - Vuero',
+  title: `${t('page-title')} - Vuero`,
   meta: [
     {
       name: 'robots',
@@ -27,8 +41,41 @@ useHead({
 })
 </script>
 
+<i18n lang="yaml">
+de:
+  page-title: 'Seite nicht gefunden'
+  page-heading: 'Wir konnten diese Seite nicht finden'
+  page-body: 'Die Seite konnte nicht gefunden werden. Bitte versuchen Sie es erneut oder wenden Sie sich an einen Administrator, wenn das Problem weiterhin besteht.'
+  back-button: 'Bringen Sie mich zurück'
+en:
+  page-title: 'Page not found'
+  page-heading: "We couldn't find that page"
+  page-body: "Looks like we couldn't find that page. Please try again or contact an administrator if the problem persists."
+  back-button: 'Take me Back'
+es-MX:
+  page-title: 'Página no encontrada'
+  page-heading: 'No hemos podido encontrar esa página'
+  page-body: 'Parece que no hemos podido encontrar esa página. Por favor, inténtalo de nuevo o contacta con un administrador si el problema persiste.'
+  back-button: 'Llévame de vuelta'
+es:
+  page-title: 'Página no encontrada'
+  page-heading: 'No hemos podido encontrar esa página'
+  page-body: 'Parece que no hemos podido encontrar esa página. Por favor, inténtalo de nuevo o contacta con un administrador si el problema persiste.'
+  back-button: 'Llévame de vuelta'
+fr:
+  page-title: 'Page introuvable'
+  page-heading: "Cette page n'a pas été trouvée"
+  page-body: "Il semble que nous n'ayons pas trouvé cette page. Veuillez réessayer ou contacter un administrateur si le problème persiste."
+  back-button: 'Ramenez-moi en arrière'
+zh-CN:
+  page-title: '未找到页面'
+  page-heading: '我们找不到这个页面'
+  page-body: '看起来我们找不到这个页面。如果问题仍然存在，请再试一次或联系管理员。'
+  back-button: '带我回去'
+</i18n>
+
 <template>
-  <LandingLayout>
+  <MinimalLayout>
     <div class="error-container">
       <div class="error-wrapper">
         <div class="error-inner has-text-centered">
@@ -37,20 +84,19 @@ useHead({
             src="/@src/assets/illustrations/placeholders/error-1.svg"
             alt=""
           />
-          <h3>We couldn't find that page</h3>
+          <h3>{{ t('page-heading') }}</h3>
           <p>
-            Looks like we couldn't find that page. Please try again or contact
-            an administrator if the problem persists.
+            {{ t('page-body') }}
           </p>
           <div class="button-wrap">
             <V-Button color="primary" elevated :to="{ name: 'index' }">
-              Take me Back
+              {{ t('back-button') }}
             </V-Button>
           </div>
         </div>
       </div>
     </div>
-  </LandingLayout>
+  </MinimalLayout>
 </template>
 
 <style lang="scss">
