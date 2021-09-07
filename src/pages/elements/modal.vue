@@ -11,6 +11,7 @@ const toc = useMarkdownToc(markdownContainer)
 const leftActionsOpen = ref(false)
 const centeredActionsOpen = ref(false)
 const rightActionsOpen = ref(false)
+const customLabelActionsOpen = ref(false)
 
 const smallOpen = ref(false)
 const standardOpen = ref(false)
@@ -75,6 +76,9 @@ useHead({
             </V-Button>
             <V-Button bold @click="rightActionsOpen = true">
               Right Actions
+            </V-Button>
+            <V-Button bold @click="customLabelActionsOpen = true">
+              Custom label
             </V-Button>
           </div>
 
@@ -180,6 +184,21 @@ useHead({
       </template>
       <template #action>
         <V-Button color="primary" raised>Confirm</V-Button>
+      </template>
+    </V-Modal>
+
+    <V-Modal
+      title="Custom Label"
+      :open="customLabelActionsOpen"
+      actions="right"
+      cancel-label="Return"
+      @close="customLabelActionsOpen = false"
+    >
+      <template #content>
+        <V-PlaceholderSection
+          title="Go Premium"
+          subtitle="Unlock more features and business tools by going premium"
+        />
       </template>
     </V-Modal>
 

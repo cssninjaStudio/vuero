@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
+import { computed, PropType } from 'vue'
 import { ref, watchEffect, onUnmounted } from 'vue'
+import { useI18n } from 'vue-i18n'
 
 type ModalSize = undefined | 'small' | 'medium' | 'large' | 'big'
 type ModalAction = undefined | 'center' | 'right'
@@ -64,12 +65,14 @@ const props = defineProps({
   },
   cancelLabel: {
     type: String,
-    default: 'Cancel',
+    default: '',
   },
 })
 const emit = defineEmits(['close'])
 
+const { t } = useI18n()
 const wasOpen = ref(false)
+const cancelLabel = computed(() => props.cancelLabel || t('cancel-label'))
 
 const checkScroll = () => {
   if (props.noscroll && props.open) {
@@ -86,6 +89,21 @@ onUnmounted(() => {
   document.documentElement.classList.remove('no-scroll')
 })
 </script>
+
+<i18n lang="yaml">
+de:
+  cancel-label: 'Abbrechen'
+en:
+  cancel-label: 'Cancel'
+es-MX:
+  cancel-label: 'Cancelar'
+es:
+  cancel-label: 'Cancelar'
+fr:
+  cancel-label: 'Annuler'
+zh-CN:
+  cancel-label: '取消'
+</i18n>
 
 <template>
   <teleport to="body">
@@ -127,7 +145,7 @@ onUnmounted(() => {
                 :class="[rounded && 'is-rounded']"
                 @click="emit('close')"
               >
-                {{ props.cancelLabel }}
+                {{ cancelLabel }}
               </a>
             </slot>
             <slot name="action"></slot>

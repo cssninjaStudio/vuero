@@ -26,7 +26,8 @@
   "vetur.completion.autoImport": true,
   "vetur.useWorkspaceDependencies": true,
   "vetur.grammar.customBlocks": {
-    "meta": "yaml"
+    "meta": "yaml",
+    "i18n": "yaml"
   },
   "typescript.tsdk": "node_modules/typescript/lib"
 }
