@@ -2,8 +2,10 @@
 import type { PropType } from 'vue'
 import type { RouteLocationRaw } from 'vue-router'
 import { CssUnitRe } from '/@src/utils/regex'
-import { computed, defineComponent, h, resolveComponent } from 'vue'
+import { computed, defineComponent, h } from 'vue'
 import { RouterLink } from 'vue-router'
+
+import VPlaceload from '/@src/components/base/loader/V-Placeload.vue'
 
 type ButtonSize = undefined | 'big' | 'huge'
 type ButtonColor =
@@ -214,9 +216,11 @@ export default defineComponent({
         childrens.push(iconWrapper)
       }
       if (props.placeload) {
-        childrens.push(resolveComponent('V-Placeload'), {
-          width: props.placeload,
-        })
+        childrens.push(
+          h(VPlaceload, {
+            width: props.placeload,
+          })
+        )
       } else {
         childrens.push(h('span', slots.default?.()))
       }
