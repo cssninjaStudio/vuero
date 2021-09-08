@@ -17,6 +17,7 @@
       "vite/client",
       "vite-plugin-pwa/client",
       "vite-plugin-pages/client",
+      "vite-svg-loader",
       "@intlify/vite-plugin-vue-i18n/client"
     ],
     "paths": {

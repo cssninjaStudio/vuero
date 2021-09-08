@@ -38,6 +38,7 @@ Utility Pages
       }
 
       img,
+      svg,
       h3,
       p,
       .button-wrap {
@@ -45,7 +46,8 @@ Utility Pages
         z-index: 1;
       }
 
-      img {
+      img,
+      svg {
         display: block;
         max-width: 100%;
         margin: 0 auto;
@@ -106,7 +108,8 @@ Utility Pages
           font-size: 13rem;
         }
 
-        img {
+        img,
+        svg {
           max-width: 345px;
         }
       }

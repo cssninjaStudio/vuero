@@ -157,6 +157,7 @@
     "vite-plugin-purge-icons": "0.7.0",
     "vite-plugin-pwa": "0.11.2",
     "vite-plugin-radar": "0.2.0",
+    "vite-svg-loader": "^2.2.0",
     "yorkie": "2.0.0"
   }
 }

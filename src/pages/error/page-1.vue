@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
 
+// Here we load a svg as component, this svg use css variables to set the color
+import ErrorSvg from '/@src/assets/illustrations/placeholders/error-1.svg?component'
+
 useHead({
   title: 'Error Page 1 - Vuero',
 })
@@ -11,7 +14,8 @@ useHead({
     <div class="error-wrapper">
       <div class="error-inner has-text-centered">
         <div class="bg-number dark-inverted">404</div>
-        <img src="/@src/assets/illustrations/placeholders/error-1.svg" alt="" />
+        <ErrorSvg />
+
         <h3 class="dark-inverted">We couldn't find that page</h3>
         <p>
           Looks like we couldn't find that page. Please try again or contact an
