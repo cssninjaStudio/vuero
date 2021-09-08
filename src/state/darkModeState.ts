@@ -34,7 +34,7 @@ export const isDark = computed({
  * watchEffect callbacks will be executed each time used reactives value has changed
  */
 watchEffect(() => {
-  const body = document.body
+  const body = document.documentElement
 
   if (isDark.value) {
     body.classList.add(DARK_MODE_BODY_CLASS)
