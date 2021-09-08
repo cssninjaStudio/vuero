@@ -219,7 +219,7 @@ const onSave = async () => {
             <!--Experience Item-->
             <div class="setting-item">
               <V-IconWrap
-                picture="/images/icons/flags/united-states-of-america.svg"
+                picture="/images/icons/flags/united-states-of-america.svg?url"
               />
 
               <div class="meta">
@@ -233,7 +233,7 @@ const onSave = async () => {
 
             <!--Experience Item-->
             <div class="setting-item">
-              <V-IconWrap picture="/images/icons/flags/france.svg" />
+              <V-IconWrap picture="/images/icons/flags/france.svg?url" />
 
               <div class="meta">
                 <span class="dark-inverted">French</span>
@@ -246,7 +246,7 @@ const onSave = async () => {
 
             <!--Experience Item-->
             <div class="setting-item">
-              <V-IconWrap picture="/images/icons/flags/germany.svg" />
+              <V-IconWrap picture="/images/icons/flags/germany.svg?url" />
 
               <div class="meta">
                 <span class="dark-inverted">German</span>
@@ -259,7 +259,7 @@ const onSave = async () => {
 
             <!--Experience Item-->
             <div class="setting-item">
-              <V-IconWrap picture="/images/icons/flags/spain.svg" />
+              <V-IconWrap picture="/images/icons/flags/spain.svg?url" />
 
               <div class="meta">
                 <span class="dark-inverted">Spanish</span>
@@ -462,7 +462,7 @@ const onSave = async () => {
           <template v-else>
             <!--Skill Item-->
             <div class="setting-item">
-              <V-IconWrap picture="/images/icons/stacks/js.svg" />
+              <V-IconWrap picture="/images/icons/stacks/js.svg?url" />
 
               <div class="meta">
                 <span class="dark-inverted">Javascript</span>
@@ -475,7 +475,7 @@ const onSave = async () => {
 
             <!--Skill Item-->
             <div class="setting-item">
-              <V-IconWrap picture="/images/icons/stacks/html5.svg" />
+              <V-IconWrap picture="/images/icons/stacks/html5.svg?url" />
 
               <div class="meta">
                 <span class="dark-inverted">Html5</span>
@@ -488,7 +488,7 @@ const onSave = async () => {
 
             <!--Skill Item-->
             <div class="setting-item">
-              <V-IconWrap picture="/images/icons/stacks/css3.svg" />
+              <V-IconWrap picture="/images/icons/stacks/css3.svg?url" />
 
               <div class="meta">
                 <span class="dark-inverted">CSS3</span>
@@ -652,7 +652,7 @@ const onSave = async () => {
           <template v-else>
             <!--Skill Item-->
             <div class="setting-item">
-              <V-IconWrap picture="/images/icons/stacks/illustrator.svg" />
+              <V-IconWrap picture="/images/icons/stacks/illustrator.svg?url" />
 
               <div class="meta">
                 <span class="dark-inverted">Illustrator</span>
@@ -665,7 +665,7 @@ const onSave = async () => {
 
             <!--Skill Item-->
             <div class="setting-item">
-              <V-IconWrap picture="/demo/photos/tools/jira.svg" />
+              <V-IconWrap picture="/demo/photos/tools/jira.svg?url" />
 
               <div class="meta">
                 <span class="dark-inverted">Jira Software</span>
@@ -678,7 +678,7 @@ const onSave = async () => {
 
             <!--Skill Item-->
             <div class="setting-item">
-              <V-IconWrap picture="/demo/photos/tools/office.svg" />
+              <V-IconWrap picture="/demo/photos/tools/office.svg?url" />
 
               <div class="meta">
                 <span class="dark-inverted">MS Office</span>

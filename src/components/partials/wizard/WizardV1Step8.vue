@@ -24,12 +24,12 @@ const validateStep = async () => {
       <div class="placeholder-content">
         <img
           class="light-image"
-          src="/@src/assets/illustrations/wizard/finish.svg"
+          src="/@src/assets/illustrations/wizard/finish.svg?url"
           alt=""
         />
         <img
           class="dark-image"
-          src="/@src/assets/illustrations/wizard/finish-dark.svg"
+          src="/@src/assets/illustrations/wizard/finish-dark.svg?url"
           alt=""
         />
         <h3>Get ready for next steps.</h3>

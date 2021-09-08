@@ -8,7 +8,7 @@
             <div class="illustration-header-2">
               <div class="header-image">
                 <img
-                  src="/@src/assets/illustrations/dashboards/lifestyle/reading.svg"
+                  src="/@src/assets/illustrations/dashboards/lifestyle/reading.svg?url"
                   alt=""
                 />
               </div>

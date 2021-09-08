@@ -115,7 +115,10 @@ const participants = [
                 <div class="columns is-multiline">
                   <div class="column is-6">
                     <div class="file-box">
-                      <img src="/images/icons/files/zip-format.svg" alt="" />
+                      <img
+                        src="/images/icons/files/zip-format.svg?url"
+                        alt=""
+                      />
                       <div class="meta">
                         <span>Preliminary Sketches</span>
                         <span>
@@ -128,7 +131,7 @@ const participants = [
                   </div>
                   <div class="column is-6">
                     <div class="file-box">
-                      <img src="/images/icons/files/pdf.svg" alt="" />
+                      <img src="/images/icons/files/pdf.svg?url" alt="" />
                       <div class="meta">
                         <span>Project Scope</span>
                         <span>
@@ -142,7 +145,10 @@ const participants = [
                   </div>
                   <div class="column is-6">
                     <div class="file-box">
-                      <img src="/images/icons/files/presentation.svg" alt="" />
+                      <img
+                        src="/images/icons/files/presentation.svg?url"
+                        alt=""
+                      />
                       <div class="meta">
                         <span>Project Presentation</span>
                         <span>
@@ -156,7 +162,7 @@ const participants = [
                   </div>
                   <div class="column is-6">
                     <div class="file-box">
-                      <img src="/images/icons/files/sheet.svg" alt="" />
+                      <img src="/images/icons/files/sheet.svg?url" alt="" />
                       <div class="meta">
                         <span>Project Budget</span>
                         <span>
@@ -170,7 +176,7 @@ const participants = [
                   </div>
                   <div class="column is-6">
                     <div class="file-box">
-                      <img src="/images/icons/files/doc.svg" alt="" />
+                      <img src="/images/icons/files/doc.svg?url" alt="" />
                       <div class="meta">
                         <span>Project Notes</span>
                         <span>
@@ -184,7 +190,7 @@ const participants = [
                   </div>
                   <div class="column is-6">
                     <div class="file-box">
-                      <img src="/images/icons/files/video.svg" alt="" />
+                      <img src="/images/icons/files/video.svg?url" alt="" />
                       <div class="meta">
                         <span>POC Demo</span>
                         <span>
@@ -209,7 +215,7 @@ const participants = [
                 <template #icon>
                   <V-Avatar
                     size="small"
-                    picture="/images/icons/stacks/sketch.svg"
+                    picture="/images/icons/stacks/sketch.svg?url"
                   />
                 </template>
               </V-Block>
@@ -218,7 +224,7 @@ const participants = [
                 <template #icon>
                   <V-Avatar
                     size="small"
-                    picture="/images/icons/stacks/illustrator.svg"
+                    picture="/images/icons/stacks/illustrator.svg?url"
                   />
                 </template>
               </V-Block>
@@ -227,7 +233,7 @@ const participants = [
                 <template #icon>
                   <V-Avatar
                     size="small"
-                    picture="/images/icons/stacks/photoshop.svg"
+                    picture="/images/icons/stacks/photoshop.svg?url"
                   />
                 </template>
               </V-Block>
@@ -240,7 +246,7 @@ const participants = [
                 <template #icon>
                   <V-Avatar
                     size="small"
-                    picture="/images/icons/stacks/html5.svg"
+                    picture="/images/icons/stacks/html5.svg?url"
                   />
                 </template>
               </V-Block>
@@ -249,7 +255,7 @@ const participants = [
                 <template #icon>
                   <V-Avatar
                     size="small"
-                    picture="/images/icons/stacks/css3.svg"
+                    picture="/images/icons/stacks/css3.svg?url"
                   />
                 </template>
               </V-Block>
@@ -258,7 +264,7 @@ const participants = [
                 <template #icon>
                   <V-Avatar
                     size="small"
-                    picture="/images/icons/stacks/vuejs.svg"
+                    picture="/images/icons/stacks/vuejs.svg?url"
                   />
                 </template>
               </V-Block>
@@ -275,7 +281,7 @@ const participants = [
                 <template #icon>
                   <V-Avatar
                     size="small"
-                    picture="/@src/assets/illustrations/dashboards/flights/company1.svg"
+                    picture="/@src/assets/illustrations/dashboards/flights/company1.svg?url"
                   />
                 </template>
               </V-Block>

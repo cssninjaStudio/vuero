@@ -70,7 +70,7 @@ onUnmounted(() => {
       <div class="left-header">
         <div class="header-image">
           <img
-            src="/@src/assets/illustrations/dashboards/food/header.svg"
+            src="/@src/assets/illustrations/dashboards/food/header.svg?url"
             alt=""
           />
         </div>
@@ -257,12 +257,12 @@ onUnmounted(() => {
             <template #image>
               <img
                 class="light-image"
-                src="/@src/assets/illustrations/dashboards/food/cart-placeholder.svg"
+                src="/@src/assets/illustrations/dashboards/food/cart-placeholder.svg?url"
                 alt=""
               />
               <img
                 class="dark-image"
-                src="/@src/assets/illustrations/dashboards/food/cart-placeholder.svg"
+                src="/@src/assets/illustrations/dashboards/food/cart-placeholder.svg?url"
                 alt=""
               />
             </template>

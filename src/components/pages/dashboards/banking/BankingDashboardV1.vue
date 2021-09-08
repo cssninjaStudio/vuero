@@ -38,7 +38,7 @@ import {
                   <div class="card-number">
                     <span>** 4628</span>
                     <img
-                      src="/images/icons/dashboards/banking/visa-squared-white.svg"
+                      src="/images/icons/dashboards/banking/visa-squared-white.svg?url"
                       alt=""
                     />
                   </div>
@@ -76,7 +76,7 @@ import {
                 <h4 class="dark-inverted">Type</h4>
                 <span class="has-image">
                   <img
-                    src="/images/icons/dashboards/banking/visa-squared-color.svg"
+                    src="/images/icons/dashboards/banking/visa-squared-color.svg?url"
                     alt=""
                   />
                   Credit card
@@ -90,7 +90,7 @@ import {
                   <div class="card-number">
                     <span>** 2649</span>
                     <img
-                      src="/images/icons/dashboards/banking/visa-squared-white.svg"
+                      src="/images/icons/dashboards/banking/visa-squared-white.svg?url"
                       alt=""
                     />
                   </div>

@@ -80,17 +80,17 @@ const goto = (index: number) => {
                       <div class="top">
                         <img
                           class="active"
-                          src="/images/icons/dashboards/banking/visa-text-white.svg"
+                          src="/images/icons/dashboards/banking/visa-text-white.svg?url"
                           alt=""
                         />
                         <img
                           class="light-image inactive"
-                          src="/images/icons/dashboards/banking/visa-text-dark.svg"
+                          src="/images/icons/dashboards/banking/visa-text-dark.svg?url"
                           alt=""
                         />
                         <img
                           class="dark-image inactive"
-                          src="/images/icons/dashboards/banking/visa-text-white.svg"
+                          src="/images/icons/dashboards/banking/visa-text-white.svg?url"
                           alt=""
                         />
                       </div>
@@ -107,17 +107,17 @@ const goto = (index: number) => {
                       <div class="top">
                         <img
                           class="active"
-                          src="/images/icons/dashboards/banking/visa-text-white.svg"
+                          src="/images/icons/dashboards/banking/visa-text-white.svg?url"
                           alt=""
                         />
                         <img
                           class="light-image inactive"
-                          src="/images/icons/dashboards/banking/visa-text-dark.svg"
+                          src="/images/icons/dashboards/banking/visa-text-dark.svg?url"
                           alt=""
                         />
                         <img
                           class="dark-image inactive"
-                          src="/images/icons/dashboards/banking/visa-text-white.svg"
+                          src="/images/icons/dashboards/banking/visa-text-white.svg?url"
                           alt=""
                         />
                       </div>
@@ -134,17 +134,17 @@ const goto = (index: number) => {
                       <div class="top">
                         <img
                           class="active"
-                          src="/images/icons/dashboards/banking/visa-text-white.svg"
+                          src="/images/icons/dashboards/banking/visa-text-white.svg?url"
                           alt=""
                         />
                         <img
                           class="light-image inactive"
-                          src="/images/icons/dashboards/banking/visa-text-dark.svg"
+                          src="/images/icons/dashboards/banking/visa-text-dark.svg?url"
                           alt=""
                         />
                         <img
                           class="dark-image inactive"
-                          src="/images/icons/dashboards/banking/visa-text-white.svg"
+                          src="/images/icons/dashboards/banking/visa-text-white.svg?url"
                           alt=""
                         />
                       </div>
@@ -161,17 +161,17 @@ const goto = (index: number) => {
                       <div class="top">
                         <img
                           class="active"
-                          src="/images/icons/dashboards/banking/visa-text-white.svg"
+                          src="/images/icons/dashboards/banking/visa-text-white.svg?url"
                           alt=""
                         />
                         <img
                           class="light-image inactive"
-                          src="/images/icons/dashboards/banking/visa-text-dark.svg"
+                          src="/images/icons/dashboards/banking/visa-text-dark.svg?url"
                           alt=""
                         />
                         <img
                           class="dark-image inactive"
-                          src="/images/icons/dashboards/banking/visa-text-white.svg"
+                          src="/images/icons/dashboards/banking/visa-text-white.svg?url"
                           alt=""
                         />
                       </div>

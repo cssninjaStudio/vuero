@@ -122,12 +122,12 @@ const layoutComponent = (slug: string) => {
                       >
                         <img
                           class="light-image-block"
-                          src="/images/icons/layouts/layout-7.svg"
+                          src="/images/icons/layouts/layout-7.svg?url"
                           alt=""
                         />
                         <img
                           class="dark-image-block"
-                          src="/images/icons/layouts/layout-7-dark.svg"
+                          src="/images/icons/layouts/layout-7-dark.svg?url"
                           alt=""
                         />
                         <h3>Default theme</h3>
@@ -159,12 +159,12 @@ const layoutComponent = (slug: string) => {
                       >
                         <img
                           class="light-image-block"
-                          src="/images/icons/layouts/layout-8.svg"
+                          src="/images/icons/layouts/layout-8.svg?url"
                           alt=""
                         />
                         <img
                           class="dark-image-block"
-                          src="/images/icons/layouts/layout-8-dark.svg"
+                          src="/images/icons/layouts/layout-8-dark.svg?url"
                           alt=""
                         />
                         <h3>Fade theme</h3>
@@ -196,12 +196,12 @@ const layoutComponent = (slug: string) => {
                       >
                         <img
                           class="light-image-block"
-                          src="/images/icons/layouts/layout-9.svg"
+                          src="/images/icons/layouts/layout-9.svg?url"
                           alt=""
                         />
                         <img
                           class="dark-image-block"
-                          src="/images/icons/layouts/layout-9-dark.svg"
+                          src="/images/icons/layouts/layout-9-dark.svg?url"
                           alt=""
                         />
                         <h3>Colored theme</h3>
@@ -238,12 +238,12 @@ const layoutComponent = (slug: string) => {
                       >
                         <img
                           class="light-image-block"
-                          src="/images/icons/layouts/layout-7.svg"
+                          src="/images/icons/layouts/layout-7.svg?url"
                           alt=""
                         />
                         <img
                           class="dark-image-block"
-                          src="/images/icons/layouts/layout-7-dark.svg"
+                          src="/images/icons/layouts/layout-7-dark.svg?url"
                           alt=""
                         />
                         <h3>Default theme</h3>
@@ -275,12 +275,12 @@ const layoutComponent = (slug: string) => {
                       >
                         <img
                           class="light-image-block"
-                          src="/images/icons/layouts/layout-9.svg"
+                          src="/images/icons/layouts/layout-9.svg?url"
                           alt=""
                         />
                         <img
                           class="dark-image-block"
-                          src="/images/icons/layouts/layout-9-dark.svg"
+                          src="/images/icons/layouts/layout-9-dark.svg?url"
                           alt=""
                         />
                         <h3>Colored theme</h3>
@@ -317,12 +317,12 @@ const layoutComponent = (slug: string) => {
                       >
                         <img
                           class="light-image-block"
-                          src="/images/icons/layouts/layout-10.svg"
+                          src="/images/icons/layouts/layout-10.svg?url"
                           alt=""
                         />
                         <img
                           class="dark-image-block"
-                          src="/images/icons/layouts/layout-10-dark.svg"
+                          src="/images/icons/layouts/layout-10-dark.svg?url"
                           alt=""
                         />
                         <h3>Default theme</h3>
@@ -354,12 +354,12 @@ const layoutComponent = (slug: string) => {
                       >
                         <img
                           class="light-image-block"
-                          src="/images/icons/layouts/layout-11.svg"
+                          src="/images/icons/layouts/layout-11.svg?url"
                           alt=""
                         />
                         <img
                           class="dark-image-block"
-                          src="/images/icons/layouts/layout-11-dark.svg"
+                          src="/images/icons/layouts/layout-11-dark.svg?url"
                           alt=""
                         />
                         <h3>Center theme</h3>
@@ -391,12 +391,12 @@ const layoutComponent = (slug: string) => {
                       >
                         <img
                           class="light-image-block"
-                          src="/images/icons/layouts/layout-12.svg"
+                          src="/images/icons/layouts/layout-12.svg?url"
                           alt=""
                         />
                         <img
                           class="dark-image-block"
-                          src="/images/icons/layouts/layout-12-dark.svg"
+                          src="/images/icons/layouts/layout-12-dark.svg?url"
                           alt=""
                         />
                         <h3>Fade theme</h3>
@@ -433,12 +433,12 @@ const layoutComponent = (slug: string) => {
                       >
                         <img
                           class="light-image-block"
-                          src="/images/icons/layouts/layout-1.svg"
+                          src="/images/icons/layouts/layout-1.svg?url"
                           alt=""
                         />
                         <img
                           class="dark-image-block"
-                          src="/images/icons/layouts/layout-1-dark.svg"
+                          src="/images/icons/layouts/layout-1-dark.svg?url"
                           alt=""
                         />
                         <h3>Default Sidebar</h3>
@@ -470,12 +470,12 @@ const layoutComponent = (slug: string) => {
                       >
                         <img
                           class="light-image-block"
-                          src="/images/icons/layouts/layout-2.svg"
+                          src="/images/icons/layouts/layout-2.svg?url"
                           alt=""
                         />
                         <img
                           class="dark-image-block"
-                          src="/images/icons/layouts/layout-2-dark.svg"
+                          src="/images/icons/layouts/layout-2-dark.svg?url"
                           alt=""
                         />
                         <h3>Colored Sidebar</h3>
@@ -507,12 +507,12 @@ const layoutComponent = (slug: string) => {
                       >
                         <img
                           class="light-image-block"
-                          src="/images/icons/layouts/layout-3.svg"
+                          src="/images/icons/layouts/layout-3.svg?url"
                           alt=""
                         />
                         <img
                           class="dark-image-block"
-                          src="/images/icons/layouts/layout-3-dark.svg"
+                          src="/images/icons/layouts/layout-3-dark.svg?url"
                           alt=""
                         />
                         <h3>Curved Sidebar</h3>
@@ -544,12 +544,12 @@ const layoutComponent = (slug: string) => {
                       >
                         <img
                           class="light-image-block"
-                          src="/images/icons/layouts/layout-4.svg"
+                          src="/images/icons/layouts/layout-4.svg?url"
                           alt=""
                         />
                         <img
                           class="dark-image-block"
-                          src="/images/icons/layouts/layout-4-dark.svg"
+                          src="/images/icons/layouts/layout-4-dark.svg?url"
                           alt=""
                         />
                         <h3>Curved Colored</h3>
@@ -581,12 +581,12 @@ const layoutComponent = (slug: string) => {
                       >
                         <img
                           class="light-image-block"
-                          src="/images/icons/layouts/layout-5.svg"
+                          src="/images/icons/layouts/layout-5.svg?url"
                           alt=""
                         />
                         <img
                           class="dark-image-block"
-                          src="/images/icons/layouts/layout-5-dark.svg"
+                          src="/images/icons/layouts/layout-5-dark.svg?url"
                           alt=""
                         />
                         <h3>Sidebar Labels</h3>
@@ -618,12 +618,12 @@ const layoutComponent = (slug: string) => {
                       >
                         <img
                           class="light-image-block"
-                          src="/images/icons/layouts/layout-5.svg"
+                          src="/images/icons/layouts/layout-5.svg?url"
                           alt=""
                         />
                         <img
                           class="dark-image-block"
-                          src="/images/icons/layouts/layout-5-dark.svg"
+                          src="/images/icons/layouts/layout-5-dark.svg?url"
                           alt=""
                         />
                         <h3>Hover Labels</h3>
@@ -655,12 +655,12 @@ const layoutComponent = (slug: string) => {
                       >
                         <img
                           class="light-image-block"
-                          src="/images/icons/layouts/layout-6.svg"
+                          src="/images/icons/layouts/layout-6.svg?url"
                           alt=""
                         />
                         <img
                           class="dark-image-block"
-                          src="/images/icons/layouts/layout-6-dark.svg"
+                          src="/images/icons/layouts/layout-6-dark.svg?url"
                           alt=""
                         />
                         <h3>Floating Sidebar</h3>

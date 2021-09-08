@@ -94,7 +94,7 @@ import { popovers } from '/@src/data/users/userPopovers'
         <div class="dashboard-card is-side">
           <V-Block title="Bitcoin" subtitle="BTC" center m-responsive>
             <template #icon>
-              <V-Avatar picture="/images/icons/cryptocurrencies/btc.svg" />
+              <V-Avatar picture="/images/icons/cryptocurrencies/btc.svg?url" />
             </template>
             <template #action>
               <GraphDropdown />
@@ -189,7 +189,7 @@ import { popovers } from '/@src/data/users/userPopovers'
           <V-Block title="Monero" subtitle="XMR" center>
             <template #icon>
               <V-Avatar
-                picture="/images/icons/cryptocurrencies/xmr.svg"
+                picture="/images/icons/cryptocurrencies/xmr.svg?url"
                 size="small"
               />
             </template>
@@ -201,7 +201,7 @@ import { popovers } from '/@src/data/users/userPopovers'
           <V-Block title="Litecoin" subtitle="LTC" center>
             <template #icon>
               <V-Avatar
-                picture="/images/icons/cryptocurrencies/ltc.svg"
+                picture="/images/icons/cryptocurrencies/ltc.svg?url"
                 size="small"
               />
             </template>
@@ -213,7 +213,7 @@ import { popovers } from '/@src/data/users/userPopovers'
           <V-Block title="ChainLink" subtitle="LINK" center>
             <template #icon>
               <V-Avatar
-                picture="/images/icons/cryptocurrencies/link.svg"
+                picture="/images/icons/cryptocurrencies/link.svg?url"
                 size="small"
               />
             </template>
@@ -225,7 +225,7 @@ import { popovers } from '/@src/data/users/userPopovers'
           <V-Block title="Binance Coin" subtitle="BNB" center>
             <template #icon>
               <V-Avatar
-                picture="/images/icons/cryptocurrencies/bnb.svg"
+                picture="/images/icons/cryptocurrencies/bnb.svg?url"
                 size="small"
               />
             </template>

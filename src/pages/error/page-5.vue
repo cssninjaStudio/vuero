@@ -13,12 +13,12 @@ useHead({
         <div class="bg-number dark-inverted">500</div>
         <img
           class="light-image"
-          src="/@src/assets/illustrations/placeholders/error-5.svg"
+          src="/@src/assets/illustrations/placeholders/error-5.svg?url"
           alt=""
         />
         <img
           class="dark-image"
-          src="/@src/assets/illustrations/placeholders/error-5-dark.svg"
+          src="/@src/assets/illustrations/placeholders/error-5-dark.svg?url"
           alt=""
         />
         <h3 class="dark-inverted">Internal Server Error</h3>

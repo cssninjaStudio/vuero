@@ -53,12 +53,12 @@ watch([() => route.fullPath, dropdownElement], () => {
 
           <img
             class="placeholder-image light-image"
-            src="/@src/assets/illustrations/components/plugins.svg"
+            src="/@src/assets/illustrations/components/plugins.svg?url"
             alt=""
           />
           <img
             class="placeholder-image dark-image"
-            src="/@src/assets/illustrations/components/plugins-dark.svg"
+            src="/@src/assets/illustrations/components/plugins-dark.svg?url"
             alt=""
           />
         </div>

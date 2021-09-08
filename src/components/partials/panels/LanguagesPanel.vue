@@ -37,7 +37,7 @@ const { locale, t } = useI18n()
               />
               <div class="language-option-inner">
                 <img
-                  src="/images/icons/flags/united-states-of-america.svg"
+                  src="/images/icons/flags/united-states-of-america.svg?url"
                   alt=""
                 />
                 <div class="indicator">
@@ -60,7 +60,7 @@ const { locale, t } = useI18n()
                 value="fr"
               />
               <div class="language-option-inner">
-                <img src="/images/icons/flags/france.svg" alt="" />
+                <img src="/images/icons/flags/france.svg?url" alt="" />
                 <div class="indicator">
                   <i
                     aria-hidden="true"
@@ -81,7 +81,7 @@ const { locale, t } = useI18n()
                 value="es"
               />
               <div class="language-option-inner">
-                <img src="/images/icons/flags/spain.svg" alt="" />
+                <img src="/images/icons/flags/spain.svg?url" alt="" />
                 <div class="indicator">
                   <i
                     aria-hidden="true"
@@ -102,7 +102,7 @@ const { locale, t } = useI18n()
                 value="de"
               />
               <div class="language-option-inner">
-                <img src="/images/icons/flags/germany.svg" alt="" />
+                <img src="/images/icons/flags/germany.svg?url" alt="" />
                 <div class="indicator">
                   <i
                     aria-hidden="true"
@@ -123,7 +123,7 @@ const { locale, t } = useI18n()
                 value="es-MX"
               />
               <div class="language-option-inner">
-                <img src="/images/icons/flags/mexico.svg" alt="" />
+                <img src="/images/icons/flags/mexico.svg?url" alt="" />
                 <div class="indicator">
                   <i
                     aria-hidden="true"
@@ -144,7 +144,7 @@ const { locale, t } = useI18n()
                 value="zh-CN"
               />
               <div class="language-option-inner">
-                <img src="/images/icons/flags/china.svg" alt="" />
+                <img src="/images/icons/flags/china.svg?url" alt="" />
                 <div class="indicator">
                   <i
                     aria-hidden="true"
@@ -160,12 +160,12 @@ const { locale, t } = useI18n()
         <div class="img-wrap has-text-centered">
           <img
             class="light-image"
-            src="/@src/assets/illustrations/right-panel/languages.svg"
+            src="/@src/assets/illustrations/right-panel/languages.svg?url"
             alt=""
           />
           <img
             class="dark-image"
-            src="/@src/assets/illustrations/right-panel/languages-dark.svg"
+            src="/@src/assets/illustrations/right-panel/languages-dark.svg?url"
             alt=""
           />
         </div>

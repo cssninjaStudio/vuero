@@ -82,8 +82,8 @@ onMounted(async () => {
         <div class="dashboard-card is-company">
           <V-Avatar
             size="big"
-            picture="/demo/photos/brands/udemy.svg"
-            picture-dark="/demo/photos/brands/udemy-dark.svg"
+            picture="/demo/photos/brands/udemy.svg?url"
+            picture-dark="/demo/photos/brands/udemy-dark.svg?url"
           >
             <template #badge>
               <button class="button icon-button is-circle is-dark-outlined">

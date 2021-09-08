@@ -192,7 +192,7 @@ useHead({
                     >
                       <V-Avatar
                         picture="/demo/avatars/19.jpg"
-                        badge="/images/icons/flags/germany.svg"
+                        badge="/images/icons/flags/germany.svg?url"
                       />
                       <template #content>
                         <UserPopoverContent :user="popovers.user19" />
@@ -230,7 +230,7 @@ useHead({
                     >
                       <V-Avatar
                         picture="/demo/avatars/19.jpg"
-                        badge="/images/icons/flags/germany.svg"
+                        badge="/images/icons/flags/germany.svg?url"
                       />
                       <template #content>
                         <UserPopoverContent :user="popovers.user19" />
@@ -267,7 +267,7 @@ useHead({
                     >
                       <V-Avatar
                         picture="/demo/avatars/19.jpg"
-                        badge="/images/icons/flags/germany.svg"
+                        badge="/images/icons/flags/germany.svg?url"
                       />
                       <template #content>
                         <UserPopoverContent :user="popovers.user19" />

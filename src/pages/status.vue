@@ -262,8 +262,8 @@ useHead({
           <div class="updates">
             <div class="update">
               <V-Avatar
-                picture="/images/logos/logo/hanzo.svg"
-                badge="/images/icons/stacks/html5.svg"
+                picture="/images/logos/logo/hanzo.svg?url"
+                badge="/images/icons/stacks/html5.svg?url"
               />
 
               <div class="update-content">
@@ -277,8 +277,8 @@ useHead({
             </div>
             <div class="update">
               <V-Avatar
-                picture="/images/logos/logo/hanzo.svg"
-                badge="/images/icons/stacks/html5.svg"
+                picture="/images/logos/logo/hanzo.svg?url"
+                badge="/images/icons/stacks/html5.svg?url"
               />
 
               <div class="update-content">

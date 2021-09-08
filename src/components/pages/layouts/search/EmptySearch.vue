@@ -40,12 +40,12 @@ const activeTab = ref<TabId>('all')
         <div class="placeholder-content">
           <img
             class="light-image"
-            src="/@src/assets/illustrations/placeholders/search-7.svg"
+            src="/@src/assets/illustrations/placeholders/search-7.svg?url"
             alt=""
           />
           <img
             class="dark-image"
-            src="/@src/assets/illustrations/placeholders/search-7-dark.svg"
+            src="/@src/assets/illustrations/placeholders/search-7-dark.svg?url"
             alt=""
           />
           <h3>We couldn't find any matching results.</h3>

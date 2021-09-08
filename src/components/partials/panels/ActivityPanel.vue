@@ -53,7 +53,7 @@ const activeTab = ref<TabId>('team')
             <div class="team-card">
               <V-Avatar
                 picture="/demo/avatars/12.jpg"
-                badge="/images/icons/flags/united-states-of-america.svg"
+                badge="/images/icons/flags/united-states-of-america.svg?url"
               />
 
               <div class="meta">
@@ -80,7 +80,7 @@ const activeTab = ref<TabId>('team')
             <div class="team-card">
               <V-Avatar
                 picture="/demo/avatars/25.jpg"
-                badge="/images/icons/flags/united-states-of-america.svg"
+                badge="/images/icons/flags/united-states-of-america.svg?url"
               />
 
               <div class="meta">
@@ -107,7 +107,7 @@ const activeTab = ref<TabId>('team')
             <div class="team-card">
               <V-Avatar
                 picture="/demo/avatars/18.jpg"
-                badge="/images/icons/flags/united-states-of-america.svg"
+                badge="/images/icons/flags/united-states-of-america.svg?url"
               />
 
               <div class="meta">
@@ -134,7 +134,7 @@ const activeTab = ref<TabId>('team')
             <div class="team-card">
               <V-Avatar
                 picture="/demo/avatars/13.jpg"
-                badge="/images/icons/flags/united-states-of-america.svg"
+                badge="/images/icons/flags/united-states-of-america.svg?url"
               />
 
               <div class="meta">
@@ -168,7 +168,7 @@ const activeTab = ref<TabId>('team')
               <div class="project-inner">
                 <img
                   class="project-avatar"
-                  src="/images/icons/logos/slicer.svg"
+                  src="/images/icons/logos/slicer.svg?url"
                   alt=""
                   @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -211,7 +211,7 @@ const activeTab = ref<TabId>('team')
               <div class="project-inner">
                 <img
                   class="project-avatar"
-                  src="/images/icons/logos/metamovies.svg"
+                  src="/images/icons/logos/metamovies.svg?url"
                   alt=""
                   @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'
@@ -253,7 +253,7 @@ const activeTab = ref<TabId>('team')
               <div class="project-inner">
                 <img
                   class="project-avatar"
-                  src="/images/icons/logos/fastpizza.svg"
+                  src="/images/icons/logos/fastpizza.svg?url"
                   alt=""
                   @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'

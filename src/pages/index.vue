@@ -24,12 +24,12 @@ useHead({
           <div class="header-inner">
             <img
               class="cut-circle light-image-l"
-              src="/@src/assets/shapes/cut-circle.svg"
+              src="/@src/assets/shapes/cut-circle.svg?url"
               alt=""
             />
             <img
               class="cut-circle dark-image-l"
-              src="/@src/assets/shapes/cut-circle-dark.svg"
+              src="/@src/assets/shapes/cut-circle-dark.svg?url"
               alt=""
             />
           </div>
@@ -86,7 +86,7 @@ useHead({
           <div class="stacks">
             <tippy class="has-help-cursor" interactive placement="top">
               <div class="stack">
-                <img src="/images/icons/stacks/vuejs.svg" alt="" />
+                <img src="/images/icons/stacks/vuejs.svg?url" alt="" />
               </div>
               <template #content>
                 <StackPopoverContent
@@ -105,7 +105,7 @@ useHead({
 
             <tippy class="has-help-cursor" interactive placement="top">
               <div class="stack">
-                <img src="/images/icons/stacks/vite.svg" alt="" />
+                <img src="/images/icons/stacks/vite.svg?url" alt="" />
               </div>
               <template #content>
                 <StackPopoverContent
@@ -124,7 +124,7 @@ useHead({
 
             <tippy class="has-help-cursor" interactive placement="top">
               <div class="stack">
-                <img src="/images/icons/stacks/bulma.svg" alt="" />
+                <img src="/images/icons/stacks/bulma.svg?url" alt="" />
               </div>
               <template #content>
                 <StackPopoverContent
@@ -143,7 +143,7 @@ useHead({
 
             <tippy class="has-help-cursor" interactive placement="top">
               <div class="stack">
-                <img src="/images/icons/stacks/sass.svg" alt="" />
+                <img src="/images/icons/stacks/sass.svg?url" alt="" />
               </div>
               <template #content>
                 <StackPopoverContent
@@ -162,7 +162,7 @@ useHead({
 
             <tippy class="has-help-cursor" interactive placement="top">
               <div class="stack">
-                <img src="/images/icons/stacks/typescript.svg" alt="" />
+                <img src="/images/icons/stacks/typescript.svg?url" alt="" />
               </div>
               <template #content>
                 <StackPopoverContent
@@ -276,7 +276,7 @@ useHead({
           <div class="boxed-features is-flat pb-6">
             <div class="flex-card light-bordered hover-inset">
               <div class="flex-cell is-bordered">
-                <img src="/images/icons/stacks/vuejs-solo.svg" alt="" />
+                <img src="/images/icons/stacks/vuejs-solo.svg?url" alt="" />
                 <h3>Vue 3</h3>
                 <p>
                   Vue 3 and its powerful composition API makes your experience
@@ -284,7 +284,10 @@ useHead({
                 </p>
               </div>
               <div class="flex-cell">
-                <img src="/images/icons/stacks/typescript-square.svg" alt="" />
+                <img
+                  src="/images/icons/stacks/typescript-square.svg?url"
+                  alt=""
+                />
                 <h3>Typescript</h3>
                 <p>
                   Typescript makes things much more simpler but remains
@@ -292,7 +295,7 @@ useHead({
                 </p>
               </div>
               <div class="flex-cell is-bordered">
-                <img src="/images/icons/stacks/vite.svg" alt="" />
+                <img src="/images/icons/stacks/vite.svg?url" alt="" />
                 <h3>Vite JS</h3>
                 <p>
                   Vite 2 is blazing fast, does HOT reloading and parses all your
@@ -300,7 +303,7 @@ useHead({
                 </p>
               </div>
               <div class="flex-cell">
-                <img src="/images/icons/stacks/vscode.svg" alt="" />
+                <img src="/images/icons/stacks/vscode.svg?url" alt="" />
                 <h3>VS Code Integration</h3>
                 <p>
                   Vuero is fully integrated with VS Code to help you produce
@@ -308,7 +311,7 @@ useHead({
                 </p>
               </div>
               <div class="flex-cell is-bordered">
-                <img src="/images/icons/stacks/eslint.svg" alt="" />
+                <img src="/images/icons/stacks/eslint.svg?url" alt="" />
                 <h3>ES Lint</h3>
                 <p>
                   ES Lint watches your javascript code and makes sure it matches
@@ -316,7 +319,7 @@ useHead({
                 </p>
               </div>
               <div class="flex-cell is-bordered">
-                <img src="/images/icons/stacks/prettier.svg" alt="" />
+                <img src="/images/icons/stacks/prettier.svg?url" alt="" />
                 <h3>Prettier</h3>
                 <p>
                   Prettier tidies your code and makes it look much more cleaner
@@ -326,12 +329,12 @@ useHead({
               <div class="flex-cell">
                 <img
                   class="light-image-block-l"
-                  src="/images/icons/stacks/stylelint.svg"
+                  src="/images/icons/stacks/stylelint.svg?url"
                   alt=""
                 />
                 <img
                   class="dark-image-block-l"
-                  src="/images/icons/stacks/stylelint-reverse.svg"
+                  src="/images/icons/stacks/stylelint-reverse.svg?url"
                   alt=""
                 />
                 <h3>Stylelint</h3>
@@ -341,7 +344,7 @@ useHead({
                 </p>
               </div>
               <div class="flex-cell">
-                <img src="/images/icons/stacks/iconify.svg" alt="" />
+                <img src="/images/icons/stacks/iconify.svg?url" alt="" />
                 <h3>Iconify</h3>
                 <p>
                   Iconify displays icons inside your code editor so you always
@@ -349,7 +352,7 @@ useHead({
                 </p>
               </div>
               <div class="flex-cell">
-                <img src="/images/icons/stacks/cypress.svg" alt="" />
+                <img src="/images/icons/stacks/cypress.svg?url" alt="" />
                 <h3>Cypress</h3>
                 <p>
                   Cypress handles end to end testing to make sure everything
@@ -357,7 +360,7 @@ useHead({
                 </p>
               </div>
               <div class="flex-cell">
-                <img src="/images/icons/stacks/pnpm-yarn.svg" alt="" />
+                <img src="/images/icons/stacks/pnpm-yarn.svg?url" alt="" />
                 <h3>Pnpm + Yarn</h3>
                 <p>
                   Vuero works very well with Pnpm or Yarn for efficient
@@ -365,7 +368,7 @@ useHead({
                 </p>
               </div>
               <div class="flex-cell">
-                <img src="/images/icons/stacks/docker-whale.svg" alt="" />
+                <img src="/images/icons/stacks/docker-whale.svg?url" alt="" />
                 <h3>Docker</h3>
                 <p>
                   Vuero ships with a Docker file to make your test deployments
@@ -373,7 +376,7 @@ useHead({
                 </p>
               </div>
               <div class="flex-cell">
-                <img src="/images/icons/stacks/robot.svg" alt="" />
+                <img src="/images/icons/stacks/robot.svg?url" alt="" />
                 <h3>Robot Friendly</h3>
                 <p>
                   Fully featured with structured data. Help your site display in
@@ -381,7 +384,7 @@ useHead({
                 </p>
               </div>
               <div class="flex-cell">
-                <img src="/images/icons/misc/success.svg" alt="" />
+                <img src="/images/icons/misc/success.svg?url" alt="" />
                 <h3>Props Validation</h3>
                 <p>
                   Vuero base components ship with props validation to prevent
@@ -389,7 +392,7 @@ useHead({
                 </p>
               </div>
               <div class="flex-cell">
-                <img src="/images/icons/misc/error.svg" alt="" />
+                <img src="/images/icons/misc/error.svg?url" alt="" />
                 <h3>Error Handling</h3>
                 <p>
                   While developping Vuero, we focused on providing an up to
@@ -397,7 +400,7 @@ useHead({
                 </p>
               </div>
               <div class="flex-cell">
-                <img src="/images/icons/misc/folder.svg" alt="" />
+                <img src="/images/icons/misc/folder.svg?url" alt="" />
                 <h3>Project Structure</h3>
                 <p>
                   A clean and organized project structure lets you find any file
@@ -405,7 +408,7 @@ useHead({
                 </p>
               </div>
               <div class="flex-cell">
-                <img src="/images/icons/misc/documentation.svg" alt="" />
+                <img src="/images/icons/misc/documentation.svg?url" alt="" />
                 <h3>Component Guide</h3>
                 <p>
                   A full component / plugin documentation with a lot of code
@@ -479,12 +482,12 @@ useHead({
             >
               <img
                 class="light-image-l featured-image"
-                src="/@src/assets/illustrations/landing/feature-2.svg"
+                src="/@src/assets/illustrations/landing/feature-2.svg?url"
                 alt=""
               />
               <img
                 class="dark-image-l featured-image"
-                src="/@src/assets/illustrations/landing/feature-2-dark.svg"
+                src="/@src/assets/illustrations/landing/feature-2-dark.svg?url"
                 alt=""
               />
             </div>
@@ -503,12 +506,12 @@ useHead({
             <div class="column is-6 has-text-centered h-hidden-mobile">
               <img
                 class="light-image-l featured-image"
-                src="/@src/assets/illustrations/landing/feature-2.svg"
+                src="/@src/assets/illustrations/landing/feature-2.svg?url"
                 alt=""
               />
               <img
                 class="dark-image-l featured-image"
-                src="/@src/assets/illustrations/landing/feature-2-dark.svg"
+                src="/@src/assets/illustrations/landing/feature-2-dark.svg?url"
                 alt=""
               />
             </div>
@@ -518,12 +521,12 @@ useHead({
             <div class="column is-6 has-text-centered">
               <img
                 class="light-image-l featured-image"
-                src="/@src/assets/illustrations/landing/feature-3.svg"
+                src="/@src/assets/illustrations/landing/feature-3.svg?url"
                 alt=""
               />
               <img
                 class="dark-image-l featured-image"
-                src="/@src/assets/illustrations/landing/feature-3-dark.svg"
+                src="/@src/assets/illustrations/landing/feature-3-dark.svg?url"
                 alt=""
               />
             </div>
@@ -689,12 +692,12 @@ useHead({
               <div class="column is-5 is-offset-1 has-text-centered">
                 <img
                   class="light-image-l featured-image"
-                  src="/@src/assets/illustrations/landing/feature-4.svg"
+                  src="/@src/assets/illustrations/landing/feature-4.svg?url"
                   alt=""
                 />
                 <img
                   class="dark-image-l featured-image"
-                  src="/@src/assets/illustrations/landing/feature-4-dark.svg"
+                  src="/@src/assets/illustrations/landing/feature-4-dark.svg?url"
                   alt=""
                 />
               </div>
@@ -728,12 +731,12 @@ useHead({
               >
                 <img
                   class="light-image-l featured-image"
-                  src="/@src/assets/illustrations/landing/feature-5.svg"
+                  src="/@src/assets/illustrations/landing/feature-5.svg?url"
                   alt=""
                 />
                 <img
                   class="dark-image-l featured-image"
-                  src="/@src/assets/illustrations/landing/feature-5-dark.svg"
+                  src="/@src/assets/illustrations/landing/feature-5-dark.svg?url"
                   alt=""
                 />
               </div>
@@ -757,12 +760,12 @@ useHead({
               <div class="column is-5 has-text-centered h-hidden-mobile">
                 <img
                   class="light-image-l featured-image"
-                  src="/@src/assets/illustrations/landing/feature-5.svg"
+                  src="/@src/assets/illustrations/landing/feature-5.svg?url"
                   alt=""
                 />
                 <img
                   class="dark-image-l featured-image"
-                  src="/@src/assets/illustrations/landing/feature-5-dark.svg"
+                  src="/@src/assets/illustrations/landing/feature-5-dark.svg?url"
                   alt=""
                 />
               </div>
@@ -773,12 +776,12 @@ useHead({
               <div class="column is-5 is-offset-1 has-text-centered">
                 <img
                   class="light-image-l featured-image"
-                  src="/@src/assets/illustrations/landing/feature-6.svg"
+                  src="/@src/assets/illustrations/landing/feature-6.svg?url"
                   alt=""
                 />
                 <img
                   class="dark-image-l featured-image"
-                  src="/@src/assets/illustrations/landing/feature-6-dark.svg"
+                  src="/@src/assets/illustrations/landing/feature-6-dark.svg?url"
                   alt=""
                 />
               </div>
@@ -808,7 +811,7 @@ useHead({
                 href="https://themeforest.net/item/vuero-vuejs-3-admin-and-webapp-ui-kit/31053035"
                 class="custom-button"
               >
-                <img src="/images/icons/logos/envato.svg" alt="" />
+                <img src="/images/icons/logos/envato.svg?url" alt="" />
                 <span>Get It Now</span>
               </a>
             </div>

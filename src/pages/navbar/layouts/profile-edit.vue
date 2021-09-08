@@ -15,7 +15,7 @@ import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
                 <V-Avatar
                   size="large"
                   picture="/demo/avatars/8.jpg"
-                  badge="/images/icons/flags/united-states-of-america.svg"
+                  badge="/images/icons/flags/united-states-of-america.svg?url"
                 />
               </template>
             </V-Block>

@@ -154,7 +154,7 @@ import Widget8 from '/@src/assets/illustrations/widgets/8.svg'
 
       <!--Widget-->
       <CallWidget
-        picture="/@src/assets/illustrations/widgets/6.svg"
+        picture="/@src/assets/illustrations/widgets/6.svg?url"
         badge="/demo/avatars/7.jpg"
         username="Alice"
       />

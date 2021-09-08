@@ -237,12 +237,12 @@ watchPostEffect(() => {
                   <li v-if="messages.length === 0" class="no-messages">
                     <img
                       class="light-image"
-                      src="/@src/assets/illustrations/placeholders/search-4.svg"
+                      src="/@src/assets/illustrations/placeholders/search-4.svg?url"
                       alt=""
                     />
                     <img
                       class="dark-image"
-                      src="/@src/assets/illustrations/placeholders/search-4-dark.svg"
+                      src="/@src/assets/illustrations/placeholders/search-4-dark.svg?url"
                       alt=""
                     />
                     <div class="text">
@@ -396,7 +396,7 @@ watchPostEffect(() => {
                       <img
                         id="user-details-badge"
                         class="is-badge"
-                        src="/images/icons/flags/united-states-of-america.svg"
+                        src="/images/icons/flags/united-states-of-america.svg?url"
                         alt=""
                         @error.once="
                           $event.target.src =
@@ -679,7 +679,7 @@ watchPostEffect(() => {
             >
               <div class="caption">
                 <img
-                  src="/@src/assets/illustrations/placeholders/having-coffee.svg"
+                  src="/@src/assets/illustrations/placeholders/having-coffee.svg?url"
                   alt=""
                   @error.once="
                     $event.target.src = 'https://via.placeholder.com/150x150'

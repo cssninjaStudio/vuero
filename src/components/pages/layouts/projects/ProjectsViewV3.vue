@@ -9,12 +9,12 @@ const filterProjects = ref(0)
     <div class="illustration-header">
       <img
         class="light-image"
-        src="/@src/assets/illustrations/projects/header.svg"
+        src="/@src/assets/illustrations/projects/header.svg?url"
         alt=""
       />
       <img
         class="dark-image"
-        src="/@src/assets/illustrations/projects/header-dark.svg"
+        src="/@src/assets/illustrations/projects/header-dark.svg?url"
         alt=""
       />
       <div class="header-stats">

@@ -49,7 +49,7 @@ useHead({
               <template #icon>
                 <V-Avatar
                   picture="/demo/avatars/19.jpg"
-                  badge="/images/icons/flags/germany.svg"
+                  badge="/images/icons/flags/germany.svg?url"
                 />
               </template>
             </V-Block>
@@ -97,7 +97,7 @@ useHead({
               <template #icon>
                 <V-Avatar
                   picture="/demo/avatars/19.jpg"
-                  badge="/images/icons/flags/germany.svg"
+                  badge="/images/icons/flags/germany.svg?url"
                 />
               </template>
             </V-Block>
@@ -128,7 +128,7 @@ useHead({
               <template #icon>
                 <V-Avatar
                   picture="/demo/avatars/19.jpg"
-                  badge="/images/icons/flags/germany.svg"
+                  badge="/images/icons/flags/germany.svg?url"
                 />
               </template>
             </V-Block>

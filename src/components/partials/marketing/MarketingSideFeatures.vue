@@ -44,12 +44,12 @@
         >
           <img
             class="light-image-l featured-image"
-            src="/@src/assets/illustrations/landing/feature-2.svg"
+            src="/@src/assets/illustrations/landing/feature-2.svg?url"
             alt=""
           />
           <img
             class="dark-image-l featured-image"
-            src="/@src/assets/illustrations/landing/feature-2-dark.svg"
+            src="/@src/assets/illustrations/landing/feature-2-dark.svg?url"
             alt=""
           />
         </div>
@@ -66,12 +66,12 @@
         <div class="column is-6 has-text-centered h-hidden-mobile">
           <img
             class="light-image-l featured-image"
-            src="/@src/assets/illustrations/landing/feature-2.svg"
+            src="/@src/assets/illustrations/landing/feature-2.svg?url"
             alt=""
           />
           <img
             class="dark-image-l featured-image"
-            src="/@src/assets/illustrations/landing/feature-2-dark.svg"
+            src="/@src/assets/illustrations/landing/feature-2-dark.svg?url"
             alt=""
           />
         </div>
@@ -81,12 +81,12 @@
         <div class="column is-6 has-text-centered">
           <img
             class="light-image-l featured-image"
-            src="/@src/assets/illustrations/landing/feature-3.svg"
+            src="/@src/assets/illustrations/landing/feature-3.svg?url"
             alt=""
           />
           <img
             class="dark-image-l featured-image"
-            src="/@src/assets/illustrations/landing/feature-3-dark.svg"
+            src="/@src/assets/illustrations/landing/feature-3-dark.svg?url"
             alt=""
           />
         </div>

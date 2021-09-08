@@ -56,7 +56,7 @@ useHead({
             <V-Loader size="small" :active="isLoaderActive" grey>
               <V-CardAction
                 avatar="/demo/avatars/19.jpg"
-                badge="/images/icons/flags/germany.svg"
+                badge="/images/icons/flags/germany.svg?url"
                 title="Greta K."
                 subtitle="Sales Manager"
               >
@@ -72,7 +72,7 @@ useHead({
             <V-Loader card="regular" size="small" :active="isLoaderActive">
               <V-CardAction
                 avatar="/demo/avatars/19.jpg"
-                badge="/images/icons/flags/germany.svg"
+                badge="/images/icons/flags/germany.svg?url"
                 title="Greta K."
                 subtitle="Sales Manager"
               >
@@ -93,7 +93,7 @@ useHead({
             >
               <V-CardAction
                 avatar="/demo/avatars/19.jpg"
-                badge="/images/icons/flags/germany.svg"
+                badge="/images/icons/flags/germany.svg?url"
                 title="Greta K."
                 subtitle="Sales Manager"
               >
@@ -109,7 +109,7 @@ useHead({
             <V-Loader card="smooth" :active="isLoaderActive">
               <V-CardAction
                 avatar="/demo/avatars/19.jpg"
-                badge="/images/icons/flags/germany.svg"
+                badge="/images/icons/flags/germany.svg?url"
                 title="Greta K."
                 subtitle="Sales Manager"
                 radius="smooth"
@@ -126,7 +126,7 @@ useHead({
             <V-Loader card="rounded" size="large" :active="isLoaderActive">
               <V-CardAction
                 avatar="/demo/avatars/19.jpg"
-                badge="/images/icons/flags/germany.svg"
+                badge="/images/icons/flags/germany.svg?url"
                 title="Greta K."
                 subtitle="Sales Manager"
                 radius="rounded"
@@ -143,7 +143,7 @@ useHead({
             <V-Loader card="rounded" size="xl" :active="isLoaderActive">
               <V-CardAction
                 avatar="/demo/avatars/19.jpg"
-                badge="/images/icons/flags/germany.svg"
+                badge="/images/icons/flags/germany.svg?url"
                 title="Greta K."
                 subtitle="Sales Manager"
                 radius="rounded"

@@ -123,7 +123,7 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
 
           <div class="column is-6 h-hidden-mobile h-hidden-tablet-p">
             <img
-              src="/@src/assets/illustrations/dashboards/personal/interviews.svg"
+              src="/@src/assets/illustrations/dashboards/personal/interviews.svg?url"
               alt=""
             />
           </div>

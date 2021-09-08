@@ -13,12 +13,12 @@ useHead({
         <div class="bg-number dark-inverted">404</div>
         <img
           class="light-image"
-          src="/@src/assets/illustrations/placeholders/error-2.svg"
+          src="/@src/assets/illustrations/placeholders/error-2.svg?url"
           alt=""
         />
         <img
           class="dark-image"
-          src="/@src/assets/illustrations/placeholders/error-2-dark.svg"
+          src="/@src/assets/illustrations/placeholders/error-2-dark.svg?url"
           alt=""
         />
         <h3 class="dark-inverted">We couldn't find that page</h3>

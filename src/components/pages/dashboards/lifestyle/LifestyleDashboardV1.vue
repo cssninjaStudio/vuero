@@ -1351,12 +1351,12 @@ const activeTab = ref<TabId>('overview')
           <div class="placeholder-content">
             <img
               class="light-image"
-              src="/@src/assets/illustrations/placeholders/having-coffee.svg"
+              src="/@src/assets/illustrations/placeholders/having-coffee.svg?url"
               alt=""
             />
             <img
               class="dark-image"
-              src="/@src/assets/illustrations/placeholders/having-coffee-dark.svg"
+              src="/@src/assets/illustrations/placeholders/having-coffee-dark.svg?url"
               alt=""
             />
             <h3>No brands to show.</h3>

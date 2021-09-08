@@ -32,12 +32,12 @@ const confirm = async () => {
           <div class="box-content">
             <img
               class="light-image"
-              src="/@src/assets/illustrations/placeholders/launch.svg"
+              src="/@src/assets/illustrations/placeholders/launch.svg?url"
               alt=""
             />
             <img
               class="dark-image"
-              src="/@src/assets/illustrations/placeholders/launch-dark.svg"
+              src="/@src/assets/illustrations/placeholders/launch-dark.svg?url"
               alt=""
             />
             <h3 class="dark-inverted">Please confirm your account</h3>

@@ -15,12 +15,12 @@ const date = ref({
         <div class="booking-bar-wrapper">
           <img
             class="travel-illustration light-image"
-            src="/@src/assets/illustrations/dashboards/flights/travel.svg"
+            src="/@src/assets/illustrations/dashboards/flights/travel.svg?url"
             alt=""
           />
           <img
             class="travel-illustration dark-image"
-            src="/@src/assets/illustrations/dashboards/flights/travel-dark.svg"
+            src="/@src/assets/illustrations/dashboards/flights/travel-dark.svg?url"
             alt=""
           />
           <div class="booking-bar-info">
@@ -103,7 +103,7 @@ const date = ref({
           <!--Flight-->
           <a class="flight-card">
             <img
-              src="/@src/assets/illustrations/dashboards/flights/company1.svg"
+              src="/@src/assets/illustrations/dashboards/flights/company1.svg?url"
               alt=""
             />
             <div class="start">
@@ -129,7 +129,7 @@ const date = ref({
           <!--Flight-->
           <a class="flight-card">
             <img
-              src="/@src/assets/illustrations/dashboards/flights/company2.svg"
+              src="/@src/assets/illustrations/dashboards/flights/company2.svg?url"
               alt=""
             />
             <div class="start">
@@ -155,7 +155,7 @@ const date = ref({
           <!--Flight-->
           <a class="flight-card">
             <img
-              src="/@src/assets/illustrations/dashboards/flights/company1.svg"
+              src="/@src/assets/illustrations/dashboards/flights/company1.svg?url"
               alt=""
             />
             <div class="start">
@@ -181,7 +181,7 @@ const date = ref({
           <!--Flight-->
           <a class="flight-card">
             <img
-              src="/@src/assets/illustrations/dashboards/flights/company3.svg"
+              src="/@src/assets/illustrations/dashboards/flights/company3.svg?url"
               alt=""
             />
             <div class="start">
@@ -207,7 +207,7 @@ const date = ref({
           <!--Flight-->
           <a class="flight-card">
             <img
-              src="/@src/assets/illustrations/dashboards/flights/company1.svg"
+              src="/@src/assets/illustrations/dashboards/flights/company1.svg?url"
               alt=""
             />
             <div class="start">

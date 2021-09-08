@@ -97,7 +97,7 @@ import { activePanel } from '/@src/state/activePanelState'
           <h3>Files</h3>
           <div class="task-files">
             <div class="file-box">
-              <img src="/images/icons/files/zip-format.svg" alt="" />
+              <img src="/images/icons/files/zip-format.svg?url" alt="" />
               <div class="meta">
                 <span>Preliminary Sketches</span>
                 <span
@@ -108,7 +108,7 @@ import { activePanel } from '/@src/state/activePanelState'
               <FileCardDropdown />
             </div>
             <div class="file-box">
-              <img src="/images/icons/files/sheet.svg" alt="" />
+              <img src="/images/icons/files/sheet.svg?url" alt="" />
               <div class="meta">
                 <span>Project Budget</span>
                 <span
@@ -119,7 +119,7 @@ import { activePanel } from '/@src/state/activePanelState'
               <FileCardDropdown />
             </div>
             <div class="file-box">
-              <img src="/images/icons/files/video.svg" alt="" />
+              <img src="/images/icons/files/video.svg?url" alt="" />
               <div class="meta">
                 <span>POC Demo</span>
                 <span

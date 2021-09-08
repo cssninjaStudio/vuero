@@ -50,7 +50,7 @@ useHead({
           <div class="column is-4">
             <V-CardAction
               avatar="/demo/avatars/19.jpg"
-              badge="/images/icons/flags/germany.svg"
+              badge="/images/icons/flags/germany.svg?url"
               title="Greta K."
               subtitle="Sales Manager"
             >
@@ -62,7 +62,7 @@ useHead({
           <div class="column is-4">
             <V-CardAction
               avatar="/demo/avatars/18.jpg"
-              badge="/images/icons/flags/united-states-of-america.svg"
+              badge="/images/icons/flags/united-states-of-america.svg?url"
               title="George W."
               subtitle="Software Engineer"
             >
@@ -74,7 +74,7 @@ useHead({
           <div class="column is-4">
             <V-CardAction
               avatar="/demo/avatars/22.jpg"
-              badge="/images/icons/flags/france.svg"
+              badge="/images/icons/flags/france.svg?url"
               title="Sandrine C."
               subtitle="HR Manager"
               radius="rounded"
@@ -92,7 +92,7 @@ useHead({
           <div class="column is-4">
             <V-CardAction
               avatar="/demo/avatars/19.jpg"
-              badge="/images/icons/flags/germany.svg"
+              badge="/images/icons/flags/germany.svg?url"
               title="Greta K."
               subtitle="Sales Manager"
             >
@@ -109,7 +109,7 @@ useHead({
           <div class="column is-4">
             <V-CardAction
               avatar="/demo/avatars/18.jpg"
-              badge="/images/icons/flags/united-states-of-america.svg"
+              badge="/images/icons/flags/united-states-of-america.svg?url"
               title="George W."
               subtitle="Software Engineer"
             >
@@ -126,7 +126,7 @@ useHead({
           <div class="column is-4">
             <V-CardAction
               avatar="/demo/avatars/22.jpg"
-              badge="/images/icons/flags/france.svg"
+              badge="/images/icons/flags/france.svg?url"
               title="Sandrine C."
               subtitle="HR Manager"
               radius="rounded"

@@ -4,7 +4,7 @@
       <V-Avatar
         size="xl"
         picture="/demo/avatars/8.jpg"
-        badge="/images/icons/flags/united-states-of-america.svg"
+        badge="/images/icons/flags/united-states-of-america.svg?url"
       />
 
       <h3 class="title is-4 is-narrow">Erik Kovalsky</h3>

@@ -164,7 +164,7 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
                     <UserCardDropdown />
                     <V-Avatar
                       picture="/demo/avatars/13.jpg"
-                      badge="/images/icons/stacks/illustrator.svg"
+                      badge="/images/icons/stacks/illustrator.svg?url"
                       size="large"
                     />
                     <h3 class="dark-inverted">Tara Svenson</h3>
@@ -180,7 +180,7 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
                     <UserCardDropdown />
                     <V-Avatar
                       picture="/demo/avatars/37.jpg"
-                      badge="/images/icons/flags/france.svg"
+                      badge="/images/icons/flags/france.svg?url"
                       size="large"
                     />
                     <h3 class="dark-inverted">Helmut Fritz</h3>
@@ -196,7 +196,7 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
                     <UserCardDropdown />
                     <V-Avatar
                       picture="/demo/avatars/25.jpg"
-                      badge="/images/icons/stacks/js.svg"
+                      badge="/images/icons/stacks/js.svg?url"
                       size="large"
                     />
                     <h3 class="dark-inverted">Melany Wallace</h3>

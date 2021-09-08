@@ -16,7 +16,7 @@
         <a class="project-grid-item">
           <img
             class="project-avatar"
-            src="/images/icons/logos/slicer.svg"
+            src="/images/icons/logos/slicer.svg?url"
             alt=""
             @error.once="
               $event.target.src = 'https://via.placeholder.com/150x150'
@@ -34,7 +34,7 @@
         <a class="project-grid-item">
           <img
             class="project-avatar"
-            src="/images/icons/logos/metamovies.svg"
+            src="/images/icons/logos/metamovies.svg?url"
             alt=""
             @error.once="
               $event.target.src = 'https://via.placeholder.com/150x150'
@@ -52,7 +52,7 @@
         <a class="project-grid-item">
           <img
             class="project-avatar"
-            src="/@src/assets/illustrations/dashboards/flights/company1.svg"
+            src="/@src/assets/illustrations/dashboards/flights/company1.svg?url"
             alt=""
             @error.once="
               $event.target.src = 'https://via.placeholder.com/150x150'
@@ -70,7 +70,7 @@
         <a class="project-grid-item">
           <img
             class="project-avatar"
-            src="/images/icons/logos/fastpizza.svg"
+            src="/images/icons/logos/fastpizza.svg?url"
             alt=""
             @error.once="
               $event.target.src = 'https://via.placeholder.com/150x150'
@@ -88,7 +88,7 @@
         <a class="project-grid-item">
           <img
             class="project-avatar"
-            src="/images/icons/logos/drop.svg"
+            src="/images/icons/logos/drop.svg?url"
             alt=""
             @error.once="
               $event.target.src = 'https://via.placeholder.com/150x150'

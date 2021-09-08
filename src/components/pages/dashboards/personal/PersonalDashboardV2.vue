@@ -23,7 +23,7 @@ const democheck = ref(['value_2'])
         <div class="dashboard-header">
           <V-Avatar
             picture="/demo/avatars/8.jpg"
-            badge="/images/icons/flags/united-states-of-america.svg"
+            badge="/images/icons/flags/united-states-of-america.svg?url"
             size="xl"
           />
           <div class="user-meta is-dark-bordered-12">
@@ -63,7 +63,7 @@ const democheck = ref(['value_2'])
               <template #icon>
                 <V-Avatar
                   picture="/demo/photos/apps/1.jpg"
-                  badge="/images/icons/stacks/illustrator.svg"
+                  badge="/images/icons/stacks/illustrator.svg?url"
                   size="medium"
                   squared
                 />
@@ -83,7 +83,7 @@ const democheck = ref(['value_2'])
               <template #icon>
                 <V-Avatar
                   picture="/demo/photos/apps/2.png"
-                  badge="/images/icons/stacks/reactjs.svg"
+                  badge="/images/icons/stacks/reactjs.svg?url"
                   size="medium"
                   squared
                 />
@@ -103,7 +103,7 @@ const democheck = ref(['value_2'])
               <template #icon>
                 <V-Avatar
                   picture="/demo/photos/apps/3.png"
-                  badge="/images/icons/stacks/angular.svg"
+                  badge="/images/icons/stacks/angular.svg?url"
                   size="medium"
                   squared
                 />
@@ -123,7 +123,7 @@ const democheck = ref(['value_2'])
               <template #icon>
                 <V-Avatar
                   picture="/demo/photos/apps/4.png"
-                  badge="/images/icons/stacks/js.svg"
+                  badge="/images/icons/stacks/js.svg?url"
                   size="medium"
                   squared
                 />
@@ -298,12 +298,12 @@ const democheck = ref(['value_2'])
             <template #image>
               <img
                 class="light-image"
-                src="/@src/assets/illustrations/placeholders/chart-guy.svg"
+                src="/@src/assets/illustrations/placeholders/chart-guy.svg?url"
                 alt=""
               />
               <img
                 class="dark-image"
-                src="/@src/assets/illustrations/placeholders/chart-guy-dark.svg"
+                src="/@src/assets/illustrations/placeholders/chart-guy-dark.svg?url"
                 alt=""
               />
             </template>

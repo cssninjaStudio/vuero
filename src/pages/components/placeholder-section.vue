@@ -54,7 +54,7 @@ useHead({
                 <template #image>
                   <V-Avatar
                     picture="/demo/avatars/22.jpg"
-                    badge="/images/icons/flags/united-states-of-america.svg"
+                    badge="/images/icons/flags/united-states-of-america.svg?url"
                   />
                 </template>
               </V-PlaceholderSection>

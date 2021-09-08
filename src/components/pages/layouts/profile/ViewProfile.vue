@@ -4,7 +4,7 @@
       <V-Avatar
         size="xl"
         picture="/demo/avatars/8.jpg"
-        badge="/images/icons/flags/united-states-of-america.svg"
+        badge="/images/icons/flags/united-states-of-america.svg?url"
       />
 
       <h3 class="title is-4 is-narrow is-thin">Erik Kovalsky</h3>
@@ -66,7 +66,7 @@
                 <div class="experience-wrapper">
                   <div class="experience-item">
                     <img
-                      src="/demo/photos/brands/airbnb.svg"
+                      src="/demo/photos/brands/airbnb.svg?url"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -85,7 +85,7 @@
                   </div>
                   <div class="experience-item">
                     <img
-                      src="/demo/photos/brands/facebook.svg"
+                      src="/demo/photos/brands/facebook.svg?url"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -104,7 +104,7 @@
                   </div>
                   <div class="experience-item">
                     <img
-                      src="/demo/photos/brands/atlassian.svg"
+                      src="/demo/photos/brands/atlassian.svg?url"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -123,7 +123,7 @@
                   </div>
                   <div class="experience-item">
                     <img
-                      src="/demo/photos/brands/github.svg"
+                      src="/demo/photos/brands/github.svg?url"
                       alt=""
                       @error.once="
                         $event.target.src =
@@ -159,7 +159,7 @@
                 <div class="languages-wrapper">
                   <div class="languages-item">
                     <V-IconWrap
-                      picture="/images/icons/flags/united-states-of-america.svg"
+                      picture="/images/icons/flags/united-states-of-america.svg?url"
                     />
 
                     <div class="meta">
@@ -168,7 +168,7 @@
                     </div>
                   </div>
                   <div class="languages-item">
-                    <V-IconWrap picture="/images/icons/flags/france.svg" />
+                    <V-IconWrap picture="/images/icons/flags/france.svg?url" />
 
                     <div class="meta">
                       <span class="dark-inverted">French</span>
@@ -176,7 +176,7 @@
                     </div>
                   </div>
                   <div class="languages-item">
-                    <V-IconWrap picture="/images/icons/flags/germany.svg" />
+                    <V-IconWrap picture="/images/icons/flags/germany.svg?url" />
 
                     <div class="meta">
                       <span class="dark-inverted">German</span>
@@ -184,7 +184,7 @@
                     </div>
                   </div>
                   <div class="languages-item">
-                    <V-IconWrap picture="/images/icons/flags/spain.svg" />
+                    <V-IconWrap picture="/images/icons/flags/spain.svg?url" />
 
                     <div class="meta">
                       <span class="dark-inverted">Spanish</span>
@@ -209,7 +209,7 @@
                 <div class="skills-wrapper">
                   <!--Skill-->
                   <div class="skills-item">
-                    <V-IconWrap picture="/images/icons/stacks/js.svg" />
+                    <V-IconWrap picture="/images/icons/stacks/js.svg?url" />
 
                     <div class="skill-info">
                       <span class="dark-inverted">Javascript</span>
@@ -243,7 +243,7 @@
 
                   <!--Skill-->
                   <div class="skills-item">
-                    <V-IconWrap picture="/images/icons/stacks/html5.svg" />
+                    <V-IconWrap picture="/images/icons/stacks/html5.svg?url" />
 
                     <div class="skill-info">
                       <span class="dark-inverted">Html 5</span>
@@ -260,7 +260,7 @@
 
                   <!--Skill-->
                   <div class="skills-item">
-                    <V-IconWrap picture="/images/icons/stacks/css3.svg" />
+                    <V-IconWrap picture="/images/icons/stacks/css3.svg?url" />
 
                     <div class="skill-info">
                       <span class="dark-inverted">CSS 3</span>
@@ -298,7 +298,7 @@
                     <V-Avatar
                       size="large"
                       picture="/demo/avatars/5.jpg"
-                      badge="/images/icons/flags/united-states-of-america.svg"
+                      badge="/images/icons/flags/united-states-of-america.svg?url"
                     />
                     <h3 class="dark-inverted">Project Manager</h3>
                     <p>
@@ -317,7 +317,7 @@
                     <V-Avatar
                       size="large"
                       picture="/demo/avatars/18.jpg"
-                      badge="/images/icons/flags/united-states-of-america.svg"
+                      badge="/images/icons/flags/united-states-of-america.svg?url"
                     />
 
                     <h3 class="dark-inverted">UI/UX Designer</h3>
@@ -378,7 +378,7 @@
                   <!--Tool-->
                   <div class="tools-item">
                     <V-IconWrap
-                      picture="/images/icons/stacks/illustrator.svg"
+                      picture="/images/icons/stacks/illustrator.svg?url"
                     />
 
                     <div class="meta">
@@ -389,7 +389,7 @@
 
                   <!--Tool-->
                   <div class="tools-item">
-                    <V-IconWrap picture="/demo/photos/brands/jira.svg" />
+                    <V-IconWrap picture="/demo/photos/brands/jira.svg?url" />
 
                     <div class="meta">
                       <span class="dark-inverted">Jira Software</span>
@@ -399,7 +399,7 @@
 
                   <!--Tool-->
                   <div class="tools-item">
-                    <V-IconWrap picture="/demo/photos/brands/office.svg" />
+                    <V-IconWrap picture="/demo/photos/brands/office.svg?url" />
 
                     <div class="meta">
                       <span class="dark-inverted">MS Office</span>
@@ -424,7 +424,7 @@
                   <a href="#" class="people-item">
                     <V-Avatar
                       picture="/demo/avatars/25.jpg"
-                      badge="/images/icons/stacks/js.svg"
+                      badge="/images/icons/stacks/js.svg?url"
                     />
 
                     <div class="meta">
@@ -437,7 +437,7 @@
                   <a href="#" class="people-item">
                     <V-Avatar
                       picture="/demo/avatars/29.jpg"
-                      badge="/images/icons/stacks/python.svg"
+                      badge="/images/icons/stacks/python.svg?url"
                     />
 
                     <div class="meta">
@@ -450,7 +450,7 @@
                   <a href="#" class="people-item">
                     <V-Avatar
                       picture="/demo/avatars/38.jpg"
-                      badge="/images/icons/stacks/vuejs.svg"
+                      badge="/images/icons/stacks/vuejs.svg?url"
                     />
 
                     <div class="meta">
@@ -463,7 +463,7 @@
                   <a href="#" class="people-item">
                     <V-Avatar
                       picture="/demo/avatars/28.jpg"
-                      badge="/images/icons/stacks/angular.svg"
+                      badge="/images/icons/stacks/angular.svg?url"
                     />
 
                     <div class="meta">
@@ -476,7 +476,7 @@
                   <a href="#" class="people-item">
                     <V-Avatar
                       picture="/demo/avatars/19.jpg"
-                      badge="/images/icons/stacks/cplus.svg"
+                      badge="/images/icons/stacks/cplus.svg?url"
                     />
 
                     <div class="meta">

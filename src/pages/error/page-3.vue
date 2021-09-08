@@ -12,12 +12,12 @@ useHead({
       <div class="error-inner has-text-centered">
         <img
           class="light-image"
-          src="/@src/assets/illustrations/placeholders/error-3.svg"
+          src="/@src/assets/illustrations/placeholders/error-3.svg?url"
           alt=""
         />
         <img
           class="dark-image"
-          src="/@src/assets/illustrations/placeholders/error-3-dark.svg"
+          src="/@src/assets/illustrations/placeholders/error-3-dark.svg?url"
           alt=""
         />
         <h3 class="dark-inverted">We couldn't find that page</h3>

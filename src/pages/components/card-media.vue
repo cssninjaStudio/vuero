@@ -45,7 +45,7 @@ useHead({
         <V-CardMedia
           image="/demo/photos/apps/1.jpg"
           avatar="/demo/avatars/19.jpg"
-          badge="/images/icons/flags/germany.svg"
+          badge="/images/icons/flags/germany.svg?url"
           title="Greta K."
           subtitle="Sales Manager"
         >
@@ -63,7 +63,7 @@ useHead({
         <V-CardMedia
           image="/demo/photos/apps/2.png"
           avatar="/demo/avatars/23.jpg"
-          badge="/images/icons/flags/united-states-of-america.svg"
+          badge="/images/icons/flags/united-states-of-america.svg?url"
           title="Irina V."
           subtitle="Project Manager"
         >
@@ -81,7 +81,7 @@ useHead({
         <V-CardMedia
           image="/demo/photos/apps/3.png"
           avatar="/demo/avatars/12.jpg"
-          badge="/images/icons/flags/united-states-of-america.svg"
+          badge="/images/icons/flags/united-states-of-america.svg?url"
           title="Joshua S."
           subtitle="Backend Developer"
         >

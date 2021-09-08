@@ -6,12 +6,12 @@
           <div class="box-content">
             <img
               class="light-image is-larger"
-              src="/@src/assets/illustrations/placeholders/promotion.svg"
+              src="/@src/assets/illustrations/placeholders/promotion.svg?url"
               alt=""
             />
             <img
               class="dark-image is-larger"
-              src="/@src/assets/illustrations/placeholders/promotion-dark.svg"
+              src="/@src/assets/illustrations/placeholders/promotion-dark.svg?url"
               alt=""
             />
             <h3 class="dark-inverted">

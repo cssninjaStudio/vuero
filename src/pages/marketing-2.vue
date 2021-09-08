@@ -20,42 +20,42 @@ useHead({
         <!--Hexagon shapes-->
         <img
           class="hexagon hexagon-1 light-image-l"
-          src="/images/icons/hexagons/accent.svg"
+          src="/images/icons/hexagons/accent.svg?url"
           alt=""
         />
         <img
           class="hexagon hexagon-1 dark-image-l"
-          src="/images/icons/hexagons/accent-heavy.svg"
+          src="/images/icons/hexagons/accent-heavy.svg?url"
           alt=""
         />
         <img
           class="hexagon hexagon-2 light-image-l"
-          src="/images/icons/hexagons/accent.svg"
+          src="/images/icons/hexagons/accent.svg?url"
           alt=""
         />
         <img
           class="hexagon hexagon-2 dark-image-l"
-          src="/images/icons/hexagons/accent-heavy.svg"
+          src="/images/icons/hexagons/accent-heavy.svg?url"
           alt=""
         />
         <img
           class="hexagon hexagon-3 light-image-l"
-          src="/images/icons/hexagons/green.svg"
+          src="/images/icons/hexagons/green.svg?url"
           alt=""
         />
         <img
           class="hexagon hexagon-3 dark-image-l"
-          src="/images/icons/hexagons/green-heavy.svg"
+          src="/images/icons/hexagons/green-heavy.svg?url"
           alt=""
         />
         <img
           class="hexagon hexagon-4 light-image-l"
-          src="/images/icons/hexagons/purple.svg"
+          src="/images/icons/hexagons/purple.svg?url"
           alt=""
         />
         <img
           class="hexagon hexagon-4 dark-image-l"
-          src="/images/icons/hexagons/purple-heavy.svg"
+          src="/images/icons/hexagons/purple-heavy.svg?url"
           alt=""
         />
 
