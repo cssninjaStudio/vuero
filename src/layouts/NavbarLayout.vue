@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
 import { computed, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
@@ -7,8 +6,8 @@ import { popovers } from '/@src/data/users/userPopovers'
 import { pageTitle } from '/@src/state/navbarLayoutState'
 import { activePanel } from '/@src/state/activePanelState'
 
-type NavbarTheme = 'default' | 'colored' | 'fade'
-type SubnavId =
+export type NavbarTheme = 'default' | 'colored' | 'fade'
+export type SubnavId =
   | 'closed'
   | 'home'
   | 'layout'
@@ -16,16 +15,15 @@ type SubnavId =
   | 'components'
   | 'search'
 
-const props = defineProps({
-  theme: {
-    type: String as PropType<NavbarTheme>,
-    default: 'default',
-  },
-  nowrap: {
-    type: Boolean,
-    default: false,
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    theme?: NavbarTheme
+    nowrap?: boolean
+  }>(),
+  {
+    theme: 'default',
+  }
+)
 
 const route = useRoute()
 const filter = ref('')

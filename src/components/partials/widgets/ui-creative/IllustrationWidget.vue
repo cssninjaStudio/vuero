@@ -1,30 +1,21 @@
 <script setup lang="ts">
-const props = defineProps({
-  title: {
-    type: String,
-    default: 'Illustration Widget',
-  },
-  text: {
-    type: String,
-    default: 'Lorem ipsum sit dolor amet is a dummy text',
-  },
-  picture: {
-    type: String,
-    default: '',
-  },
-  badgeLeft: {
-    type: String,
-    default: undefined,
-  },
-  badgeRight: {
-    type: String,
-    default: undefined,
-  },
-  straight: {
-    type: Boolean,
-    default: false,
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    title?: string
+    text?: string
+    picture?: string
+    badgeLeft?: string
+    badgeRight?: string
+    straight?: boolean
+  }>(),
+  {
+    title: 'Illustration Widget',
+    text: 'Lorem ipsum sit dolor amet is a dummy text',
+    picture: undefined,
+    badgeLeft: undefined,
+    badgeRight: undefined,
+  }
+)
 </script>
 
 <template>

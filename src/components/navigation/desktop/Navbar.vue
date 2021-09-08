@@ -1,17 +1,17 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
 import { computed } from 'vue'
-
 import { useWindowScroll } from '@vueuse/core'
 
-type NavbarTheme = 'default' | 'colored' | 'fade'
+export type NavbarTheme = 'default' | 'colored' | 'fade'
 
-const props = defineProps({
-  theme: {
-    type: String as PropType<NavbarTheme>,
-    default: 'default',
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    theme?: NavbarTheme
+  }>(),
+  {
+    theme: 'default',
+  }
+)
 
 const { y } = useWindowScroll()
 

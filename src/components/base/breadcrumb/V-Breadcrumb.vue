@@ -1,9 +1,7 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
-
-type BreadcrumbSeparator = undefined | 'arrow' | 'bullet' | 'dot' | 'succeeds'
-type BreadcrumbAlign = undefined | 'center' | 'right'
-type BreadcrumbItem = {
+export type BreadcrumbSeparator = 'arrow' | 'bullet' | 'dot' | 'succeeds'
+export type BreadcrumbAlign = 'center' | 'right'
+export type BreadcrumbItem = {
   label: string
   hideLabel?: boolean
   icon?: string
@@ -11,48 +9,18 @@ type BreadcrumbItem = {
   to?: any
 }
 
-const props = defineProps({
-  items: {
-    type: Array as PropType<BreadcrumbItem[]>,
-    required: true,
-  },
-  separator: {
-    type: String as PropType<BreadcrumbSeparator>,
-    default: undefined,
-    validator: (value: BreadcrumbSeparator) => {
-      // The value must match one of these strings
-      if (
-        [undefined, 'arrow', 'bullet', 'dot', 'succeeds'].indexOf(value) === -1
-      ) {
-        console.warn(
-          `V-Breadcrumb: invalid "${value}" separator. Should be arrow, bullet, dot, succeeds or undefined`
-        )
-        return false
-      }
-
-      return true
-    },
-  },
-  align: {
-    type: String as PropType<BreadcrumbAlign>,
-    default: undefined,
-    validator: (value: BreadcrumbAlign) => {
-      // The value must match one of these strings
-      if ([undefined, 'center', 'right'].indexOf(value) === -1) {
-        console.warn(
-          `V-Breadcrumb: invalid "${value}" align. Should be center, right or undefined`
-        )
-        return false
-      }
-
-      return true
-    },
-  },
-  withIcons: {
-    type: Boolean,
-    default: false,
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    items: BreadcrumbItem[]
+    separator?: BreadcrumbSeparator
+    align?: BreadcrumbAlign
+    withIcons?: boolean
+  }>(),
+  {
+    separator: undefined,
+    align: undefined,
+  }
+)
 </script>
 
 <template>

@@ -1,11 +1,10 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
 import { ref } from 'vue'
 import { useRoute } from 'vue-router'
 
 import { activePanel } from '/@src/state/activePanelState'
 
-type SidebarTheme =
+export type SidebarTheme =
   | 'default'
   | 'color'
   | 'color-curved'
@@ -14,12 +13,14 @@ type SidebarTheme =
   | 'labels'
   | 'labels-hover'
 
-const props = defineProps({
-  theme: {
-    type: String as PropType<SidebarTheme>,
-    default: 'default',
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    theme?: SidebarTheme
+  }>(),
+  {
+    theme: 'default',
+  }
+)
 
 const route = useRoute()
 const isMobileSidebarOpen = ref(false)

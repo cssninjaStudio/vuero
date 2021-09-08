@@ -1,20 +1,20 @@
 <script setup lang="ts">
-const props = defineProps({
-  conversationId: {
-    type: Number,
-    default: 0,
-  },
-  mobileConversationListOpen: {
-    type: Boolean,
-    default: false,
-  },
-  conversations: {
-    type: Array,
-    default: () => [],
-  },
-})
+const emit = defineEmits<{
+  (e: 'toggleMobileConversation'): void
+  (e: 'update:conversationId', value: number): void
+}>()
 
-const emit = defineEmits(['update:conversationId', 'toggleMobileConversation'])
+const props = withDefaults(
+  defineProps<{
+    conversations?: any[]
+    conversationId?: number
+    mobileConversationListOpen?: boolean
+  }>(),
+  {
+    conversations: () => [],
+    conversationId: 0,
+  }
+)
 </script>
 
 <template>

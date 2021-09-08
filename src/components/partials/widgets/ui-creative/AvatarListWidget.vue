@@ -1,18 +1,9 @@
 <script setup lang="ts">
-const props = defineProps({
-  avatars: {
-    type: Array,
-    required: true,
-  },
-  squared: {
-    type: Boolean,
-    default: false,
-  },
-  straight: {
-    type: Boolean,
-    default: false,
-  },
-})
+const props = defineProps<{
+  avatars: any[]
+  squared?: boolean
+  straight?: boolean
+}>()
 </script>
 
 <template>

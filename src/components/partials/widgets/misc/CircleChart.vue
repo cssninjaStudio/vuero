@@ -1,14 +1,14 @@
 <script setup lang="ts">
-const props = defineProps({
-  value: {
-    type: Number,
-    default: 50,
-  },
-  size: {
-    type: Number,
-    default: 60,
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    value?: number
+    size?: number
+  }>(),
+  {
+    value: 50,
+    size: 60,
+  }
+)
 </script>
 
 <template>

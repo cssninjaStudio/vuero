@@ -1,23 +1,22 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
 import { ref, watchEffect } from 'vue'
 
-const props = defineProps({
-  conversationId: {
-    type: Number,
-    default: 0,
-  },
-  selectedConversationList: {
-    type: Array as PropType<number[]>,
-    default: () => [],
-  },
-})
+const emit = defineEmits<{
+  (e: 'update:conversationId', value: number): void
+  (e: 'update:selectedConversationList', value: number[]): void
+}>()
+const props = withDefaults(
+  defineProps<{
+    conversationId?: number
+    selectedConversationList?: number[]
+  }>(),
+  {
+    conversationId: 0,
+    selectedConversationList: () => [],
+  }
+)
 
 const unread = ref(true)
-const emit = defineEmits([
-  'update:conversationId',
-  'update:selectedConversationList',
-])
 const internalSelection = ref(props.selectedConversationList)
 
 watchEffect(() => {

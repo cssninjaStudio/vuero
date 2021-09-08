@@ -12,7 +12,7 @@ import sleep from '/@src/utils/sleep'
 import useNotyf from '/@src/composable/useNotyf'
 
 let slider: TinySliderInstance
-const sliderElement = ref<HTMLElement | null>(null)
+const sliderElement = ref<HTMLElement>()
 const router = useRouter()
 const notif = useNotyf()
 const step = ref(0)

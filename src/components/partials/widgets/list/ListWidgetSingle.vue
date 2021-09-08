@@ -1,15 +1,13 @@
 <script setup lang="ts">
-const props = defineProps({
-  title: {
-    type: String,
-    required: true,
-    default: 'List Widget',
-  },
-  straight: {
-    type: Boolean,
-    default: false,
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    title?: string
+    straight?: boolean
+  }>(),
+  {
+    title: 'List Widget',
+  }
+)
 </script>
 
 <template>

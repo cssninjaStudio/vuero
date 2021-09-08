@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
 import { computed, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
@@ -9,16 +8,15 @@ import { activePanel } from '/@src/state/activePanelState'
 
 type NavbarDropdownTheme = 'default' | 'colored' | 'fade'
 
-const props = defineProps({
-  theme: {
-    type: String as PropType<NavbarDropdownTheme>,
-    default: 'default',
-  },
-  nowrap: {
-    type: Boolean,
-    default: false,
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    theme?: NavbarDropdownTheme
+    nowrap?: boolean
+  }>(),
+  {
+    theme: 'default',
+  }
+)
 
 const route = useRoute()
 const displaySearch = ref(false)

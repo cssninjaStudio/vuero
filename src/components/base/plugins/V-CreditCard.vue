@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
 import { computed } from 'vue'
 
 export type CreditCardColor =
@@ -13,58 +12,22 @@ export type CreditCardColor =
   | 'lightblue'
   | 'cyan'
 
-const props = defineProps({
-  number: {
-    type: String,
-    default: '0123 4567 8910 1112',
-  },
-  name: {
-    type: String,
-    default: 'JOHN DOE',
-  },
-  expiry: {
-    type: String,
-    default: '01/23',
-  },
-  cvc: {
-    type: String,
-    default: '987',
-  },
-  color: {
-    type: String as PropType<CreditCardColor>,
-    default: 'grey',
-    validator: (value: CreditCardColor) => {
-      // The value must match one of these strings
-      if (
-        [
-          undefined,
-          'grey',
-          'green',
-          'lime',
-          'orange',
-          'purple',
-          'red',
-          'yellow',
-          'lightblue',
-          'cyan',
-        ].indexOf(value) === -1
-      ) {
-        console.warn(
-          `V-CreditCard: invalid "${value}" dark. Should be grey, green, lime, orange, purple, red, yellow, lightblue, cyan`
-        )
-        return false
-      }
-
-      return true
-    },
-  },
-  flipped: {
-    type: Boolean,
-    default: false,
-  },
-})
-
-const emit = defineEmits(['flip'])
+const emit = defineEmits<{
+  (e: 'flip'): void
+}>()
+const props = withDefaults(
+  defineProps<{
+    number: string
+    name: string
+    expiry: string
+    cvc: string | number
+    color?: CreditCardColor
+    flipped?: boolean
+  }>(),
+  {
+    color: 'grey',
+  }
+)
 
 const nameUppercase = computed(() => props.name.toUpperCase())
 </script>
@@ -72,7 +35,7 @@ const nameUppercase = computed(() => props.name.toUpperCase())
 <template>
   <div class="card-container">
     <div
-      :class="[flipped && 'flipped']"
+      :class="[props.flipped && 'flipped']"
       class="creditcard"
       @click="emit('flip')"
     >
@@ -97,7 +60,7 @@ const nameUppercase = computed(() => props.name.toUpperCase())
                   <path
                     id="Rectangle-1_1_"
                     class="lightcolor"
-                    :class="color"
+                    :class="props.color"
                     d="M40,0h670c22.1,0,40,17.9,40,40v391c0,22.1-17.9,40-40,40H40c-22.1,0-40-17.9-40-40V40
                         C0,17.9,17.9,0,40,0z"
                   />
@@ -105,7 +68,7 @@ const nameUppercase = computed(() => props.name.toUpperCase())
               </g>
               <path
                 class="darkcolor"
-                :class="`${color}dark`"
+                :class="`${props.color}dark`"
                 d="M750,431V193.2c-217.6-57.5-556.4-13.5-750,24.9V431c0,22.1,17.9,40,40,40h670C732.1,471,750,453.1,750,431z"
               />
             </g>
@@ -114,14 +77,14 @@ const nameUppercase = computed(() => props.name.toUpperCase())
               transform="matrix(1 0 0 1 60.106 295.0121)"
               class="st2 st3 st4"
             >
-              {{ number || '1234 1234 1234 1234' }}
+              {{ props.number || '1234 1234 1234 1234' }}
             </text>
             <text
               id="svgname"
               transform="matrix(1 0 0 1 54.1064 428.1723)"
               class="st2 st5 st6"
             >
-              {{ nameUppercase || 'JOHN DOE' }}
+              {{ props.nameUppercase || 'JOHN DOE' }}
             </text>
             <text
               transform="matrix(1 0 0 1 54.1074 389.8793)"
@@ -144,7 +107,7 @@ const nameUppercase = computed(() => props.name.toUpperCase())
                 transform="matrix(1 0 0 1 574.4219 433.8095)"
                 class="st2 st5 st9"
               >
-                {{ expiry || '01/30' }}
+                {{ props.expiry || '01/30' }}
               </text>
               <text
                 transform="matrix(1 0 0 1 479.3848 417.0097)"
@@ -251,7 +214,7 @@ const nameUppercase = computed(() => props.name.toUpperCase())
                 <path
                   id="Rectangle-1_2_"
                   class="darkcolor"
-                  :class="`${color}dark`"
+                  :class="`${props.color}dark`"
                   d="M40,0h670c22.1,0,40,17.9,40,40v391c0,22.1-17.9,40-40,40H40c-22.1,0-40-17.9-40-40V40
                     C0,17.9,17.9,0,40,0z"
                 />
@@ -288,7 +251,7 @@ const nameUppercase = computed(() => props.name.toUpperCase())
               transform="matrix(1 0 0 1 621.999 227.2734)"
               class="st6 st7"
             >
-              {{ cvc || '123' }}
+              {{ props.cvc || '123' }}
             </text>
             <g class="st8">
               <text
@@ -305,7 +268,7 @@ const nameUppercase = computed(() => props.name.toUpperCase())
               transform="matrix(1 0 0 1 59.5073 228.6099)"
               class="st12 st13"
             >
-              {{ name || 'John Doe' }}
+              {{ props.name || 'John Doe' }}
             </text>
           </g>
         </svg>

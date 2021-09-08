@@ -1,26 +1,11 @@
 <script setup lang="ts">
-const props = defineProps({
-  icon: {
-    type: String,
-    required: true,
-  },
-  value: {
-    type: String,
-    required: true,
-  },
-  straight: {
-    type: Boolean,
-    default: false,
-  },
-  squared: {
-    type: Boolean,
-    default: false,
-  },
-  colored: {
-    type: Boolean,
-    default: false,
-  },
-})
+const props = defineProps<{
+  icon: string
+  value: string
+  straight?: boolean
+  squared?: boolean
+  colored?: boolean
+}>()
 </script>
 
 <template>

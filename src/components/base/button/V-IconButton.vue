@@ -2,9 +2,8 @@
 import type { PropType } from 'vue'
 import { computed, defineComponent, h, resolveComponent } from 'vue'
 
-type IconButtonDark = undefined | '1' | '2' | '3' | '4' | '5' | '6'
-type IconButtonColor =
-  | undefined
+export type IconButtonDark = '1' | '2' | '3' | '4' | '5' | '6'
+export type IconButtonColor =
   | 'primary'
   | 'info'
   | 'success'

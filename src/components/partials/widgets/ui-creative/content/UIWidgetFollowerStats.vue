@@ -1,10 +1,12 @@
 <script setup lang="ts">
-const props = defineProps({
-  channels: {
-    type: Array,
-    required: true,
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    channels?: any[]
+  }>(),
+  {
+    channels: () => [],
+  }
+)
 </script>
 
 <template>

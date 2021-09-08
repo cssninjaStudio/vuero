@@ -1,10 +1,9 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
 import { computed } from 'vue'
 
-type IconWrapDark = undefined | '1' | '2' | '3' | '4' | '5' | '6'
-type IconWrapColor =
-  | undefined
+export type IconWrapDark = '1' | '2' | '3' | '4' | '5' | '6'
+export type IconWrapSize = 'small' | 'medium' | 'large'
+export type IconWrapColor =
   | 'white'
   | 'black'
   | 'light'
@@ -16,97 +15,27 @@ type IconWrapColor =
   | 'warning'
   | 'danger'
 
-const props = defineProps({
-  icon: {
-    type: String,
-    default: undefined,
-  },
-  picture: {
-    type: String,
-    default: undefined,
-  },
-  color: {
-    type: String as PropType<IconWrapColor>,
-    default: undefined,
-    validator: (value: IconWrapColor) => {
-      if (!value) return true
-      // The value must match one of these strings
-      if (
-        [
-          'white',
-          'black',
-          'light',
-          'dark',
-          'primary',
-          'secondary',
-          'link',
-          'info',
-          'success',
-          'warning',
-          'danger',
-        ].indexOf(value) === -1
-      ) {
-        console.warn(
-          `V-IconWrap: invalid "${value}" color. Should be white, black, light, ` +
-            `dark, primary, secondary, link, info, success, warning, danger or undefined`
-        )
-        return false
-      }
-
-      return true
-    },
-  },
-  size: {
-    type: String as PropType<IconWrapDark>,
-    default: undefined,
-    validator: (value: IconWrapDark) => {
-      // The value must match one of these strings
-      if ([undefined, 'small', 'medium', 'large'].indexOf(value) === -1) {
-        console.warn(
-          `V-IconWrap: invalid "${value}" size. Should be small, medium, large or undefined`
-        )
-        return false
-      }
-
-      return true
-    },
-  },
-  dark: {
-    type: String as PropType<IconWrapDark>,
-    default: '3',
-    validator: (value: IconWrapDark) => {
-      // The value must match one of these strings
-      if (['1', '2', '3', '4', '5', '6'].indexOf(value) === -1) {
-        console.warn(
-          `V-IconWrap: invalid "${value}" dark. Should be 1, 2, 3, 4, 5, 6 or undefined`
-        )
-        return false
-      }
-
-      return true
-    },
-  },
-  hasLargeIcon: {
-    type: Boolean,
-    default: false,
-  },
-  hasBackground: {
-    type: Boolean,
-    default: false,
-  },
-  placeholder: {
-    type: Boolean,
-    default: false,
-  },
-  darkPrimary: {
-    type: Boolean,
-    default: false,
-  },
-  darkCardBordered: {
-    type: Boolean,
-    default: false,
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    icon?: string
+    picture?: string
+    color?: IconWrapColor
+    size?: IconWrapSize
+    dark?: IconWrapDark
+    hasLargeIcon?: boolean
+    hasBackground?: boolean
+    placeholder?: boolean
+    darkPrimary?: boolean
+    darkCardBordered?: boolean
+  }>(),
+  {
+    icon: undefined,
+    picture: undefined,
+    color: undefined,
+    size: undefined,
+    dark: undefined,
+  }
+)
 
 const isIconify = computed(() => {
   return props.icon && props.icon.indexOf(':') !== -1

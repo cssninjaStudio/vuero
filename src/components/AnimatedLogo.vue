@@ -2,12 +2,9 @@
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 
-const props = defineProps({
-  light: {
-    type: Boolean,
-    default: false,
-  },
-})
+const props = defineProps<{
+  light?: boolean
+}>()
 
 const router = useRouter()
 const isLoading = ref(false)

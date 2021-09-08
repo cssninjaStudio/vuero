@@ -1,18 +1,9 @@
 <script setup lang="ts">
-const props = defineProps({
-  rows: {
-    type: Array,
-    required: true,
-  },
-  squared: {
-    type: Boolean,
-    default: false,
-  },
-  circled: {
-    type: Boolean,
-    default: false,
-  },
-})
+const props = defineProps<{
+  rows: any[]
+  squared?: boolean
+  circled?: boolean
+}>()
 </script>
 
 <template>

@@ -1,22 +1,18 @@
 <script setup lang="ts">
-const props = defineProps({
-  logo: {
-    type: String,
-    default: '',
-  },
-  name: {
-    type: String,
-    default: '',
-  },
-  openingCount: {
-    type: String,
-    default: '',
-  },
-  description: {
-    type: String,
-    default: '',
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    logo?: string
+    name?: string
+    description?: string
+    openingCount?: string
+  }>(),
+  {
+    logo: undefined,
+    name: undefined,
+    description: undefined,
+    openingCount: undefined,
+  }
+)
 </script>
 
 <template>

@@ -1,46 +1,30 @@
 <script setup lang="ts">
 import { CssUnitRe } from '/@src/utils/regex'
 
-const props = defineProps({
-  width: {
-    type: String,
-    default: '100%',
-    validator: (value: String) => {
-      if (value.match(CssUnitRe) === null) {
-        console.warn(
-          `V-PlaceloadText: invalid "${value}" placeload. Should be a valid css unit value.`
-        )
-      }
-
-      return true
-    },
-  },
-  lastLineWidth: {
-    type: String,
-    default: '100%',
-    validator: (value: String) => {
-      if (value.match(CssUnitRe) === null) {
-        console.warn(
-          `V-PlaceloadText: invalid "${value}" placeload. Should be a valid css unit value.`
-        )
-      }
-
-      return true
-    },
-  },
-  lines: {
-    type: Number,
-    default: 2,
-  },
-  centered: {
-    type: Boolean,
-    default: false,
-  },
-  disabled: {
-    type: Boolean,
-    default: false,
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    width?: string
+    lastLineWidth?: string
+    lines?: number
+    disabled?: boolean
+    centered?: boolean
+  }>(),
+  {
+    width: '100%',
+    lastLineWidth: '100%',
+    lines: 2,
+  }
+)
+if (props.width.match(CssUnitRe) === null) {
+  console.warn(
+    `V-PlaceloadText: invalid "${value}" width. Should be a valid css unit value.`
+  )
+}
+if (props.lastLineWidth.match(CssUnitRe) === null) {
+  console.warn(
+    `V-PlaceloadText: invalid "${value}" lastLineWidth. Should be a valid css unit value.`
+  )
+}
 </script>
 
 <template>

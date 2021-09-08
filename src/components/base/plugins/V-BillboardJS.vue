@@ -1,18 +1,16 @@
 <script setup lang="ts">
-import type { ChartOptions } from 'billboard.js'
-import type { PropType } from 'vue'
+import type { ChartOptions, Chart } from 'billboard.js'
 import { nextTick, ref, watchEffect } from 'vue'
 import bb from 'billboard.js'
 
-const props = defineProps({
-  options: {
-    type: Object as PropType<ChartOptions>,
-    required: true,
-  },
-})
+const emit = defineEmits<{
+  (e: 'ready', billboard: Chart): void
+}>()
+const props = defineProps<{
+  options: ChartOptions
+}>()
 
-const emit = defineEmits(['ready'])
-const element = ref<HTMLElement | null>(null)
+const element = ref<HTMLElement>()
 
 watchEffect(() => {
   if (element.value) {

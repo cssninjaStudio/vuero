@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
 import { ref, toRefs } from 'vue'
 
 type CollapseItem = {
@@ -18,7 +17,6 @@ const props = withDefaults(
   }>(),
   {
     modelValue: undefined,
-    withChevron: false,
   }
 )
 const { modelValue } = toRefs(props)

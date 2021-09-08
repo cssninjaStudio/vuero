@@ -1,10 +1,8 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
 import { computed } from 'vue'
 
-type CardRadius = 'regular' | 'smooth' | 'rounded'
-type CardColor =
-  | undefined
+export type CardRadius = 'regular' | 'smooth' | 'rounded'
+export type CardColor =
   | 'primary'
   | 'secondary'
   | 'info'
@@ -12,53 +10,18 @@ type CardColor =
   | 'warning'
   | 'danger'
 
-const props = defineProps({
-  radius: {
-    type: String as PropType<CardRadius>,
-    default: 'regular',
-    validator: (value: CardRadius) => {
-      // The value must match one of these strings
-      if (['regular', 'smooth', 'rounded'].indexOf(value) === -1) {
-        console.warn(
-          `V-Card: invalid "${value}" radius. Should be smooth, rounded or regular`
-        )
-        return false
-      }
-
-      return true
-    },
-  },
-  color: {
-    type: String as PropType<CardColor>,
-    default: undefined,
-    validator: (value: CardRadius) => {
-      // The value must match one of these strings
-      if (
-        [
-          undefined,
-          'primary',
-          'secondary',
-          'info',
-          'success',
-          'warning',
-          'danger',
-        ].indexOf(value) === -1
-      ) {
-        console.warn(
-          `V-Card: invalid "${value}" color. Should be primary, secondary, info, 
-          success, warning, danger or undefined`
-        )
-        return false
-      }
-
-      return true
-    },
-  },
-  elevated: {
-    type: Boolean,
-    default: false,
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    radius?: CardRadius
+    color?: CardColor
+    elevated?: boolean
+  }>(),
+  {
+    radius: undefined,
+    color: undefined,
+    elevated: false,
+  }
+)
 
 const cardRadius = computed(() => {
   if (props.radius === 'smooth') {

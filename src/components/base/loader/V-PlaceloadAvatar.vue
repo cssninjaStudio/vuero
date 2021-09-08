@@ -1,60 +1,19 @@
 <script setup lang="ts">
-import { CssUnitRe } from '/@src/utils/regex'
+export type PlaceloadAvatarSize = 'small' | 'medium' | 'large' | 'big' | 'xl'
+export type PlaceloadRoundedSize = 'full' | 'xs' | 'sm' | 'md' | 'lg' | 'xl'
 
-import type { PropType } from 'vue'
-
-type PlaceloadAvatarSize =
-  | undefined
-  | 'small'
-  | 'medium'
-  | 'large'
-  | 'big'
-  | 'xl'
-type PlaceloadRoundedSize = 'full' | 'xs' | 'sm' | 'md' | 'lg' | 'xl'
-
-const props = defineProps({
-  size: {
-    type: String as PropType<PlaceloadAvatarSize>,
-    default: undefined,
-    validator: (value: PlaceloadAvatarSize) => {
-      // The value must match one of these strings
-      if (
-        [undefined, 'small', 'medium', 'large', 'big', 'xl'].indexOf(value) ===
-        -1
-      ) {
-        console.warn(
-          `V-PlaceloadAvatar: invalid "${value}" size. Should be small, medium, large, big, xl or undefined`
-        )
-        return false
-      }
-
-      return true
-    },
-  },
-  rounded: {
-    type: String as PropType<PlaceloadRoundedSize>,
-    default: 'full',
-    validator: (value: PlaceloadRoundedSize) => {
-      // The value must match one of these strings
-      if (['full', 'xs', 'sm', 'md', 'lg', 'xl'].indexOf(value) === -1) {
-        console.warn(
-          `V-PlaceloadAvatar: invalid "${value}" rounded. Should be xs, sm, md, lg, xl or full`
-        )
-        return false
-      }
-
-      return true
-    },
-  },
-  centered: {
-    type: Boolean,
-    default: false,
-  },
-  disabled: {
-    type: Boolean,
-    default: false,
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    size?: PlaceloadAvatarSize
+    rounded?: PlaceloadRoundedSize
+    centered?: boolean
+    disabled?: boolean
+  }>(),
+  {
+    size: undefined,
+    rounded: 'full',
+  }
+)
 </script>
 
 <template>

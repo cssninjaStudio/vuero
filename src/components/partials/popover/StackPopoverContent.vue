@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
-
-type Stack = {
+export type Stack = {
   logo: string
   name: string
   description: string
@@ -10,12 +8,9 @@ type Stack = {
   github?: string
 }
 
-const props = defineProps({
-  stack: {
-    type: Object as PropType<Stack>,
-    default: undefined,
-  },
-})
+const props = defineProps<{
+  stack: Stack
+}>()
 </script>
 
 <template>

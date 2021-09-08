@@ -1,57 +1,31 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
 import { computed } from 'vue'
 
-type CheckboxColor =
-  | undefined
-  | 'primary'
-  | 'info'
-  | 'success'
-  | 'warning'
-  | 'danger'
+type CheckboxColor = 'primary' | 'info' | 'success' | 'warning' | 'danger'
 
-const props = defineProps({
-  value: {
-    type: [String, Number],
-    required: true,
-  },
-  label: {
-    type: String,
-    default: undefined,
-  },
-  modelValue: {
-    type: Array,
-    default: () => [],
-  },
-  color: {
-    type: String as PropType<CheckboxColor>,
-    default: undefined,
-    validator: (value: CheckboxColor) => {
-      // The value must match one of these strings
-      if (
-        [undefined, 'primary', 'info', 'success', 'warning', 'danger'].indexOf(
-          value
-        ) === -1
-      ) {
-        console.warn(
-          `V-Checkbox: invalid "${value}" color. Should be primary, info, success, warning, danger or undefined`
-        )
-        return false
-      }
+const emit = defineEmits<{
+  (e: 'update:modelValue', value: (string | number)[]): void
+}>()
+const props = withDefaults(
+  defineProps<{
+    value?: string | number
+    label?: string
+    color?: CheckboxColor
+    modelValue?: (string | number)[]
+    circle?: boolean
+    solid?: boolean
+  }>(),
+  {
+    value: undefined,
+    label: undefined,
+    color: undefined,
+    modelValue: () => [],
+    circle: false,
+    circle: false,
+    solid: false,
+  }
+)
 
-      return true
-    },
-  },
-  circle: {
-    type: Boolean,
-    default: false,
-  },
-  solid: {
-    type: Boolean,
-    default: false,
-  },
-})
-const emit = defineEmits(['update:modelValue'])
 const checked = computed(() => props.modelValue.includes(props.value))
 
 function change() {

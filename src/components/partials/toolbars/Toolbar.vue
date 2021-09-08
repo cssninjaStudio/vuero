@@ -6,7 +6,7 @@ import { useI18n } from 'vue-i18n'
 import { computed, ref } from 'vue'
 
 const { locale } = useI18n()
-const dropdownElement = ref<HTMLElement | null>(null)
+const dropdownElement = ref<HTMLElement>()
 const dropdown = useDropdown(dropdownElement)
 
 const localFlagSrc = computed(() => {

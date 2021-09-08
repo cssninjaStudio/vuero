@@ -1,14 +1,15 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
 import { computed, ref } from 'vue'
 import { users } from '/@src/data/layouts/user-grid-v3'
 
-const props = defineProps({
-  activeTab: {
-    type: String as PropType<'all' | 'team'>,
-    default: 'all',
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    activeTab?: 'all' | 'team'
+  }>(),
+  {
+    activeTab: 'all',
+  }
+)
 
 const filters = ref('')
 const tab = ref(props.activeTab)

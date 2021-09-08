@@ -1,74 +1,31 @@
 <script setup lang="ts">
-import { computed, PropType } from 'vue'
-import { ref, watchEffect, onUnmounted } from 'vue'
+import { computed, ref, watchEffect, onUnmounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 
-type ModalSize = undefined | 'small' | 'medium' | 'large' | 'big'
-type ModalAction = undefined | 'center' | 'right'
+export type ModalSize = 'small' | 'medium' | 'large' | 'big'
+export type ModalAction = 'center' | 'right'
 
-const props = defineProps({
-  title: {
-    type: String,
-    required: true,
-  },
-  size: {
-    type: String as PropType<ModalSize>,
-    default: undefined,
-    validator: (value: ModalAction) => {
-      // The value must match one of these strings
-      if (
-        [undefined, 'small', 'medium', 'large', 'big'].indexOf(value) === -1
-      ) {
-        console.warn(
-          `V-Modal: invalid "${value}" size. Should be small, medium, large, big or undefined`
-        )
-        return false
-      }
-
-      return true
-    },
-  },
-  actions: {
-    type: String as PropType<ModalAction>,
-    default: undefined,
-    validator: (value: ModalAction) => {
-      // The value must match one of these strings
-      if ([undefined, 'center', 'right'].indexOf(value) === -1) {
-        console.warn(
-          `V-Modal: invalid "${value}" actions. Should be center, right or undefined`
-        )
-        return false
-      }
-
-      return true
-    },
-  },
-  open: {
-    type: Boolean,
-    default: false,
-  },
-  rounded: {
-    type: Boolean,
-    default: false,
-  },
-  noscroll: {
-    type: Boolean,
-    default: false,
-  },
-  noclose: {
-    type: Boolean,
-    default: false,
-  },
-  tabs: {
-    type: Boolean,
-    default: false,
-  },
-  cancelLabel: {
-    type: String,
-    default: '',
-  },
-})
-const emit = defineEmits(['close'])
+const emit = defineEmits<{
+  (e: 'close'): void
+}>()
+const props = withDefaults(
+  defineProps<{
+    title: string
+    size?: ModalSize
+    actions?: ModalAction
+    open?: boolean
+    rounded?: boolean
+    noscroll?: boolean
+    noclose?: boolean
+    tabs?: boolean
+    cancelLabel?: string
+  }>(),
+  {
+    size: undefined,
+    actions: undefined,
+    cancelLabel: undefined,
+  }
+)
 
 const { t } = useI18n()
 const wasOpen = ref(false)

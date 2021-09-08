@@ -1,16 +1,16 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-const props = defineProps({
-  frontmatter: {
-    type: Object,
-    default: () => ({}),
-  },
-  componentData: {
-    type: Array,
-    default: () => [],
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    componentData?: any[]
+    frontmatter?: any
+  }>(),
+  {
+    componentData: () => [],
+    frontmatter: () => ({}),
+  }
+)
 
 const displayCode = ref(false)
 </script>

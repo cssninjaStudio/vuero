@@ -1,15 +1,16 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
 import { computed, ref } from 'vue'
 
 import { projects } from '/@src/data/layouts/flex-list-v2'
 
-const props = defineProps({
-  activeTab: {
-    type: String as PropType<'active' | 'active'>,
-    default: 'active',
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    activeTab?: 'active' | 'active'
+  }>(),
+  {
+    activeTab: 'active',
+  }
+)
 
 const filters = ref('')
 const tab = ref(props.activeTab)

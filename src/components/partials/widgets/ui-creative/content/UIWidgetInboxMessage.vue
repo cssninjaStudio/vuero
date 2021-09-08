@@ -1,22 +1,18 @@
 <script setup lang="ts">
-const props = defineProps({
-  title: {
-    type: String,
-    default: 'Design Project',
-  },
-  user: {
-    type: String,
-    default: 'Alice C.',
-  },
-  picture: {
-    type: String,
-    default: '/demo/avatars/7.jpg',
-  },
-  time: {
-    type: String,
-    default: '28 minutes ago',
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    title?: string
+    user?: string
+    picture?: string
+    time?: string
+  }>(),
+  {
+    title: 'Design Project',
+    user: 'Alice C.',
+    picture: '/demo/avatars/7.jpg',
+    time: '28 minutes ago',
+  }
+)
 </script>
 
 <template>

@@ -1,10 +1,7 @@
 <script setup lang="ts">
-const props = defineProps({
-  rows: {
-    type: Array,
-    required: true,
-  },
-})
+const props = defineProps<{
+  rows: any[]
+}>()
 </script>
 
 <template>

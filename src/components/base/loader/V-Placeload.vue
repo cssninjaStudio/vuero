@@ -1,42 +1,29 @@
 <script setup lang="ts">
 import { CssUnitRe } from '/@src/utils/regex'
 
-const props = defineProps({
-  width: {
-    type: String,
-    default: '100%',
-    validator: (value: String) => {
-      if (value.match(CssUnitRe) === null) {
-        console.warn(
-          `V-Placeload: invalid "${value}" width. Should be a valid css unit value.`
-        )
-      }
+const props = withDefaults(
+  defineProps<{
+    width?: string
+    height?: string
+    disabled?: boolean
+    centered?: boolean
+  }>(),
+  {
+    width: '100%',
+    height: '10px',
+  }
+)
 
-      return true
-    },
-  },
-  height: {
-    type: String,
-    default: '10px',
-    validator: (value: String) => {
-      if (value.match(CssUnitRe) === null) {
-        console.warn(
-          `V-Placeload: invalid "${value}" height. Should be a valid css unit value.`
-        )
-      }
-
-      return true
-    },
-  },
-  disabled: {
-    type: Boolean,
-    default: false,
-  },
-  centered: {
-    type: Boolean,
-    default: false,
-  },
-})
+if (props.width.match(CssUnitRe) === null) {
+  console.warn(
+    `V-Placeload: invalid "${value}" width. Should be a valid css unit value.`
+  )
+}
+if (props.height.match(CssUnitRe) === null) {
+  console.warn(
+    `V-Placeload: invalid "${value}" height. Should be a valid css unit value.`
+  )
+}
 </script>
 
 <template>

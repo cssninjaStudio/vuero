@@ -7,9 +7,8 @@ import { RouterLink } from 'vue-router'
 
 import VPlaceload from '/@src/components/base/loader/V-Placeload.vue'
 
-type ButtonSize = undefined | 'big' | 'huge'
-type ButtonColor =
-  | undefined
+export type ButtonSize = 'big' | 'huge'
+export type ButtonColor =
   | 'primary'
   | 'info'
   | 'success'
@@ -18,7 +17,7 @@ type ButtonColor =
   | 'white'
   | 'dark'
   | 'light'
-type ButtonDark = undefined | '1' | '2' | '3' | '4' | '5' | '6'
+export type ButtonDark = '1' | '2' | '3' | '4' | '5' | '6'
 
 export default defineComponent({
   props: {

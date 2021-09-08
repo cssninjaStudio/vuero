@@ -1,18 +1,16 @@
 <script setup lang="ts">
-const props = defineProps({
-  title: {
-    type: String,
-    default: 'A nice and short little movie',
-  },
-  picture: {
-    type: String,
-    default: 'https://via.placeholder.com/400x300',
-  },
-  views: {
-    type: String,
-    default: '',
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    title?: string
+    picture?: string
+    views?: string
+  }>(),
+  {
+    title: 'A nice and short little movie',
+    picture: 'https://via.placeholder.com/400x300',
+    views: '',
+  }
+)
 </script>
 
 <template>

@@ -1,30 +1,18 @@
 <script setup lang="ts">
-const props = defineProps({
-  title: {
-    type: String,
-    default: 'Widget Title',
-  },
-  actionLabel: {
-    type: String,
-    default: 'Add Item',
-  },
-  straight: {
-    type: Boolean,
-    default: false,
-  },
-  squared: {
-    type: Boolean,
-    default: false,
-  },
-  circled: {
-    type: Boolean,
-    default: false,
-  },
-  data: {
-    type: Array,
-    required: true,
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    data: any[]
+    title?: string
+    actionLabel?: string
+    straight?: boolean
+    squared?: boolean
+    circled?: boolean
+  }>(),
+  {
+    title: 'Widget Title',
+    actionLabel: 'Add Item',
+  }
+)
 </script>
 
 <template>

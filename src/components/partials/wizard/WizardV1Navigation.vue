@@ -4,10 +4,10 @@ import useDropdown from '/@src/composable/useDropdown'
 import { currentStep, stepTitle } from '/@src/state/wizardState'
 import { isDark } from '/@src/state/darkModeState'
 
-const dropdownElement1 = ref<HTMLElement | null>(null)
+const dropdownElement1 = ref<HTMLElement>()
 const dropdown1 = useDropdown(dropdownElement1)
 
-const dropdownElement2 = ref<HTMLElement | null>(null)
+const dropdownElement2 = ref<HTMLElement>()
 const dropdown2 = useDropdown(dropdownElement2)
 
 const setStep = (target: number) => {

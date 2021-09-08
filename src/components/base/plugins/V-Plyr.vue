@@ -3,35 +3,27 @@ import 'plyr/dist/plyr.css'
 </script>
 
 <script setup lang="ts">
-import type { PropType } from 'vue'
 import { onBeforeUnmount, onMounted, ref } from 'vue'
 import Plyr from 'plyr'
 
-const props = defineProps({
-  ratio: {
-    type: String,
-    default: '16by9',
-  },
-  source: {
-    type: String,
-    default: '',
-  },
-  poster: {
-    type: String,
-    default: '',
-  },
-  reversed: {
-    type: Boolean,
-    default: false,
-  },
-  options: {
-    type: Object as PropType<Plyr.Options>,
-    default: () => ({}),
-  },
-})
+export type MediaFormat = '4by3' | '16by9'
 
-const player = ref<Plyr | null>(null)
-const videoElement = ref<HTMLElement | null>(null)
+const props = withDefaults(
+  defineProps<{
+    source: string
+    poster: string
+    reversed?: boolean
+    ratio?: MediaFormat
+    options?: Plyr.Options
+  }>(),
+  {
+    ratio: '16by9',
+    options: () => ({}),
+  }
+)
+
+const player = ref<Plyr>()
+const videoElement = ref<HTMLElement>()
 
 onMounted(() => {
   if (videoElement.value) {

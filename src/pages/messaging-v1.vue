@@ -44,7 +44,7 @@ const conversations = [
   },
 ]
 
-const dropdownElement = ref<HTMLElement | null>(null)
+const dropdownElement = ref<HTMLElement>()
 const dropdown = useDropdown(dropdownElement)
 const addConversationOpen = ref(false)
 const isLoading = ref(true)

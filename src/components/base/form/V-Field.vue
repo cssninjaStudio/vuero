@@ -1,30 +1,17 @@
 <script setup lang="ts">
-const props = defineProps({
-  label: {
-    type: String,
-    default: undefined,
-  },
-  addons: {
-    type: Boolean,
-    default: false,
-  },
-  textaddon: {
-    type: Boolean,
-    default: false,
-  },
-  grouped: {
-    type: Boolean,
-    default: false,
-  },
-  multiline: {
-    type: Boolean,
-    default: false,
-  },
-  horizontal: {
-    type: Boolean,
-    default: false,
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    label?: string
+    addons?: boolean
+    textaddon?: boolean
+    grouped?: boolean
+    multiline?: boolean
+    horizontal?: boolean
+  }>(),
+  {
+    label: undefined,
+  }
+)
 </script>
 
 <template>

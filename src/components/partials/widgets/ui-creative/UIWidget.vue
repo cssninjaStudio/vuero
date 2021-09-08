@@ -1,10 +1,7 @@
 <script setup lang="ts">
-const props = defineProps({
-  straight: {
-    type: Boolean,
-    default: false,
-  },
-})
+const props = defineProps<{
+  straight?: boolean
+}>()
 </script>
 
 <template>

@@ -1,17 +1,27 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
 import { ref } from 'vue'
 
-const props = defineProps({
-  activeTab: {
-    type: String as PropType<'posts' | 'projects' | 'tasks'>,
-    default: 'posts',
-  },
-  user: {
-    type: Object,
-    default: () => ({}),
-  },
-})
+export type UserItem = {
+  avatar?: string
+  badge?: string
+  fullName?: string
+  position?: string
+  posts?: any
+  projects?: any
+  tasks?: any
+}
+
+const props = withDefaults(
+  defineProps<{
+    activeTab?: 'posts' | 'projects' | 'tasks'
+    user?: UserItem
+  }>(),
+  {
+    activeTab: 'posts',
+    user: () => ({}),
+  }
+)
+
 const tab = ref(props.activeTab)
 </script>
 

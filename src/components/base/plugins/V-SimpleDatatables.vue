@@ -13,19 +13,18 @@ import {
 } from 'vue'
 import { DataTable } from 'simple-datatables'
 
-const props = defineProps({
-  options: {
-    type: Object,
-    default: () => ({}),
-  },
-  autoupdate: {
-    type: Boolean,
-    default: false,
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    options?: any
+    autoupdate?: boolean
+  }>(),
+  {
+    options: () => ({}),
+  }
+)
 
-const tableElement = ref<HTMLElement | null>(null)
-const wrapperElement = ref<HTMLElement | null>(null)
+const tableElement = ref<HTMLElement>()
+const wrapperElement = ref<HTMLElement>()
 const datatable = ref<any>(null)
 const hasFocus = ref(false)
 const lastSort = reactive({

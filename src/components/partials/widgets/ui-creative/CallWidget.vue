@@ -1,22 +1,10 @@
 <script setup lang="ts">
-const props = defineProps({
-  picture: {
-    type: String,
-    required: true,
-  },
-  badge: {
-    type: String,
-    required: true,
-  },
-  username: {
-    type: String,
-    required: true,
-  },
-  straight: {
-    type: Boolean,
-    default: false,
-  },
-})
+const props = defineProps<{
+  picture: string
+  badge: string
+  username: string
+  straight?: boolean
+}>()
 </script>
 
 <template>

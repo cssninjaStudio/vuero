@@ -1,10 +1,7 @@
 <script setup lang="ts">
-const props = defineProps({
-  addons: {
-    type: Boolean,
-    default: false,
-  },
-})
+const props = defineProps<{
+  addons?: boolean
+}>()
 </script>
 
 <template>

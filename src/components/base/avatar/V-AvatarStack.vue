@@ -1,42 +1,22 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
-
-type AvatarStackSize = undefined | 'small' | 'medium' | 'large' | 'big' | 'xl'
-type AvatarItem = {
+export type AvatarStackSize = 'small' | 'medium' | 'large' | 'big' | 'xl'
+export type AvatarItem = {
   picture?: string
   initials?: string
   color?: string
 }
 
-const props = defineProps({
-  avatars: {
-    type: Array as PropType<AvatarItem[]>,
-    required: false,
-    default: () => [],
-  },
-  size: {
-    type: String as PropType<AvatarStackSize>,
-    default: undefined,
-    validator: (value: AvatarStackSize) => {
-      // The value must match one of these strings
-      if (
-        [undefined, 'small', 'medium', 'large', 'big', 'xl'].indexOf(value) ===
-        -1
-      ) {
-        console.warn(
-          `V-AvatarStack: invalid "${value}" size. Should be small, medium, large, big, xl or undefined`
-        )
-        return false
-      }
-
-      return true
-    },
-  },
-  limit: {
-    type: Number,
-    default: 5,
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    size?: AvatarStackSize
+    avatars?: AvatarItem[]
+  }>(),
+  {
+    limit: 5,
+    size: undefined,
+    avatars: () => [],
+  }
+)
 </script>
 
 <template>

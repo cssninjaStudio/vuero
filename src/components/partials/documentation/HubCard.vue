@@ -1,14 +1,14 @@
 <script setup lang="ts">
-const props = defineProps({
-  title: {
-    type: String,
-    default: 'Title',
-  },
-  content: {
-    type: String,
-    default: 'Get familiar with Vuero components. Code examples included.',
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    title?: string
+    content?: string
+  }>(),
+  {
+    title: 'Title',
+    content: 'Get familiar with Vuero components. Code examples included.',
+  }
+)
 </script>
 
 <template>

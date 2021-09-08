@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
-
 import {
   elements,
   components,
@@ -8,12 +6,14 @@ import {
   plugins,
 } from '/@src/data/landing/components'
 
-const props = defineProps({
-  activeTab: {
-    type: String as PropType<'elements' | 'components' | 'forms' | 'plugins'>,
-    default: 'elements',
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    activeTab?: 'elements' | 'components' | 'forms' | 'plugins'
+  }>(),
+  {
+    activeTab: 'elements',
+  }
+)
 </script>
 
 <template>

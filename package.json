@@ -158,6 +158,7 @@
     "vite-plugin-pwa": "0.11.2",
     "vite-plugin-radar": "0.2.0",
     "vite-svg-loader": "^2.2.0",
+    "vue-tsc": "^0.3.0",
     "yorkie": "2.0.0"
   }
 }

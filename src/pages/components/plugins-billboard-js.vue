@@ -8,7 +8,7 @@ import * as splineSimple from '/@src/data/dashboards/billboardjs-demo/splineSimp
 import { themeColors } from '/@src/utils/themeColors'
 import { pageTitle } from '/@src/state/sidebarLayoutState'
 
-const markdownContainer = ref<HTMLElement | null>(null)
+const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
 pageTitle.value = 'V-BillboardJS'

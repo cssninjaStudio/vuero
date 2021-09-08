@@ -1,10 +1,12 @@
 <script setup lang="ts">
-const props = defineProps({
-  notifications: {
-    type: Array,
-    required: true,
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    notifications?: any[]
+  }>(),
+  {
+    notifications: () => [],
+  }
+)
 </script>
 
 <template>

@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import ApexChart from 'vue3-apexcharts'
 import type { TinySliderInstance } from 'tiny-slider/src/tiny-slider'
-import { expensesOptions } from '/@src/data/dashboards/banking-v2/expensesAreaChart'
 import { tns } from 'tiny-slider/src/tiny-slider'
 import { ref, onMounted } from 'vue'
+import ApexChart from 'vue3-apexcharts'
 
+import { expensesOptions } from '/@src/data/dashboards/banking-v2/expensesAreaChart'
 import {
   valueSingle,
   optionsSingle,
@@ -12,7 +12,7 @@ import {
 
 let slider: TinySliderInstance
 
-const sliderElement = ref<HTMLElement | null>(null)
+const sliderElement = ref<HTMLElement>()
 onMounted(() => {
   if (sliderElement.value) {
     slider = tns({

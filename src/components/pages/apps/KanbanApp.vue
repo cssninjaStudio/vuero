@@ -8,11 +8,11 @@ import dragula from 'dragula'
 
 import { tasks } from '/@src/data/apps/kanban'
 
-const newContainer = ref<HTMLElement | null>(null)
-const progressContainer = ref<HTMLElement | null>(null)
-const readyContainer = ref<HTMLElement | null>(null)
-const reviewContainer = ref<HTMLElement | null>(null)
-const completedContainer = ref<HTMLElement | null>(null)
+const newContainer = ref<HTMLElement>()
+const progressContainer = ref<HTMLElement>()
+const readyContainer = ref<HTMLElement>()
+const reviewContainer = ref<HTMLElement>()
+const completedContainer = ref<HTMLElement>()
 
 const search = ref('')
 const isColumnNewCollapsed = ref(false)

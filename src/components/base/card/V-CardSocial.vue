@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
 import { computed } from 'vue'
 
-type SocialNetworkType =
+export type SocialNetworkType =
   | 'facebook'
   | 'twitter'
   | 'linkedin'
@@ -16,38 +15,31 @@ type SocialNetworkType =
   | 'amazon'
   | 'instagram'
 
-const props = defineProps({
-  title: {
-    type: String,
-    required: true,
-  },
-  network: {
-    type: String as PropType<SocialNetworkType>,
-    required: true,
-  },
-  avatar: {
-    type: String,
-    default: undefined,
-  },
-  username: {
-    type: String,
-    default: undefined,
-  },
-  shareLabel: {
-    type: String,
-    default: 'Share',
-  },
-  likeLabel: {
-    type: String,
-    default: 'Like',
-  },
-  hashtags: {
-    type: Array as PropType<string[]>,
-    default: () => [],
-  },
-})
+const emit = defineEmits<{
+  (e: 'iconClick'): void
+  (e: 'share'): void
+  (e: 'like'): void
+  (e: 'hashtagClick', tag: string): void
+}>()
+const props = withDefaults(
+  defineProps<{
+    title: string
+    network: SocialNetworkType
+    hashtags?: string[]
+    avatar?: string
+    username?: string
+    shareLabel?: string
+    likeLabel?: string
+  }>(),
+  {
+    hashtags: () => [],
+    avatar: undefined,
+    username: undefined,
+    shareLabel: 'Share',
+    likeLabel: 'Like',
+  }
+)
 
-const emit = defineEmits(['iconClick', 'hashtagClick', 'share', 'like'])
 const icon = computed(() => {
   switch (props.network) {
     case 'facebook':

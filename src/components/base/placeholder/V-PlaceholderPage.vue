@@ -1,20 +1,14 @@
 <script setup lang="ts">
-const props = defineProps({
-  title: {
-    type: String,
-    required: true,
-  },
-  subtitle: {
-    type: String,
-    default: undefined,
-  },
-  larger: {
-    type: Boolean,
-    default: false,
-  },
-})
-
-const emit = defineEmits(['click'])
+const props = withDefaults(
+  defineProps<{
+    title: string
+    subtitle?: string
+    larger?: boolean
+  }>(),
+  {
+    subtitle: undefined,
+  }
+)
 </script>
 
 <template>

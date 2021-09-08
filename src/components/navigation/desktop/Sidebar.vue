@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
 import { computed } from 'vue'
 
-type SidebarTheme =
+export type SidebarTheme =
   | 'default'
   | 'color'
   | 'color-curved'
@@ -11,16 +10,16 @@ type SidebarTheme =
   | 'labels'
   | 'labels-hover'
 
-const props = defineProps({
-  theme: {
-    type: String as PropType<SidebarTheme>,
-    default: 'default',
-  },
-  isOpen: {
-    type: Boolean,
-    default: false,
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    theme?: SidebarTheme
+    isOpen?: boolean
+  }>(),
+  {
+    theme: 'default',
+  }
+)
+
 const themeClasses = computed(() => {
   switch (props.theme) {
     case 'color':

@@ -1,16 +1,16 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-const props = defineProps({
-  tabs: {
-    type: Array,
-    required: true,
-  },
-  activeTab: {
-    type: Number,
-    default: 0,
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    activeTab?: number
+    tabs?: any[]
+  }>(),
+  {
+    activeTab: 0,
+    tabs: () => [],
+  }
+)
 const currentTab = ref(props.activeTab)
 </script>
 

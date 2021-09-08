@@ -3,24 +3,18 @@ import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 
-const props = defineProps({
-  itemPerPage: {
-    type: Number,
-    required: true,
-  },
-  totalItems: {
-    type: Number,
-    required: true,
-  },
-  currentPage: {
-    type: Number,
-    default: 1,
-  },
-  maxLinksDisplayed: {
-    type: Number,
-    default: 5,
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    itemPerPage: number
+    totalItems: number
+    currentPage?: number
+    maxLinksDisplayed?: number
+  }>(),
+  {
+    currentPage: 1,
+    maxLinksDisplayed: 1,
+  }
+)
 
 const { t } = useI18n()
 const route = useRoute()

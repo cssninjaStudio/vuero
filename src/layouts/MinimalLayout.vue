@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
+export type MinimalTheme = 'darker' | 'light'
 
-type MinimalTheme = 'darker' | 'light'
-
-const props = defineProps({
-  theme: {
-    type: String as PropType<MinimalTheme>,
-    default: 'darker',
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    theme?: MinimalTheme
+  }>(),
+  {
+    theme: 'darker',
+  }
+)
 </script>
 
 <template>

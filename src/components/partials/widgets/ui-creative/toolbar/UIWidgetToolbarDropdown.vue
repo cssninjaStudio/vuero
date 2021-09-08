@@ -1,11 +1,12 @@
 <script setup lang="ts">
-const props = defineProps({
-  title: {
-    type: String,
-    required: true,
-    default: 'UI Widget',
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    title?: string
+  }>(),
+  {
+    title: 'UI Widget',
+  }
+)
 </script>
 
 <template>

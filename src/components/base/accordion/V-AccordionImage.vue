@@ -1,19 +1,21 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
-
-type AccordionImageItem = {
+export type AccordionImageItem = {
   title: string
   content: string
   image: string
 }
 
-const props = defineProps({
-  items: {
-    type: Array as PropType<AccordionImageItem[]>,
-    required: true,
-  },
-})
-const emit = defineEmits(['select'])
+const emit = defineEmits<{
+  (e: 'select', key: string | number): void
+}>()
+const props = withDefaults(
+  defineProps<{
+    items: AccordionImageItem[]
+  }>(),
+  {
+    items: () => [],
+  }
+)
 </script>
 
 <template>

@@ -10,12 +10,9 @@ import { isDark } from '/@src/state/darkModeState'
 mapboxgl.accessToken =
   'pk.eyJ1IjoiY3NzbmluamEiLCJhIjoiY2toZW1nYm0zMDAxODJycXFzZ3g4cnZ6diJ9.9ebfrGREuwkauRr_afDTgA'
 
-const props = defineProps({
-  reversed: {
-    type: Boolean,
-    default: false,
-  },
-})
+const props = defineProps<{
+  reversed?: boolean
+}>()
 
 const mapElement = ref<HTMLElement>()
 const geocoderElement = ref<HTMLElement>()

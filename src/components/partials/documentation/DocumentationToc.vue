@@ -1,24 +1,25 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
 import { computed, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import VueScrollTo from 'vue-scrollto'
 
-type TocItem = {
+export type TocItem = {
   id: string
   title: string
   level: number
 }
 
+const props = withDefaults(
+  defineProps<{
+    toc?: TocItem[]
+  }>(),
+  {
+    toc: () => [],
+  }
+)
+
 const route = useRoute()
 const router = useRouter()
-
-const props = defineProps({
-  toc: {
-    type: Array as PropType<TocItem[]>,
-    default: () => [],
-  },
-})
 
 const isActiveAnchor = computed(() => {
   return (id: string) => {

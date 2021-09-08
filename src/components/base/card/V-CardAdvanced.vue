@@ -1,25 +1,14 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
+export type CardRadius = 'regular' | 'smooth' | 'rounded'
 
-type CardRadius = 'regular' | 'smooth' | 'rounded'
-
-const props = defineProps({
-  radius: {
-    type: String as PropType<CardRadius>,
-    default: 'regular',
-    validator: (value: CardRadius) => {
-      // The value must match one of these strings
-      if (['regular', 'smooth', 'rounded'].indexOf(value) === -1) {
-        console.warn(
-          `V-CardAdvanced: invalid "${value}" radius. Should be regular, smooth or rounded`
-        )
-        return false
-      }
-
-      return true
-    },
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    radius?: CardRadius
+  }>(),
+  {
+    radius: 'regular',
+  }
+)
 </script>
 
 <template>

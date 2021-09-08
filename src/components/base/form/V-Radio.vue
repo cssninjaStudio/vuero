@@ -1,61 +1,28 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
 import { computed } from 'vue'
 
-type RadioColor =
-  | undefined
-  | 'primary'
-  | 'info'
-  | 'success'
-  | 'warning'
-  | 'danger'
+export type RadioColor = 'primary' | 'info' | 'success' | 'warning' | 'danger'
 
-const props = defineProps({
-  value: {
-    type: [String, Number],
-    required: true,
-  },
-  name: {
-    type: String,
-    required: true,
-  },
-  label: {
-    type: String,
-    default: undefined,
-  },
-  modelValue: {
-    type: [String, Number],
-    default: undefined,
-  },
-  color: {
-    type: String as PropType<RadioColor>,
-    default: undefined,
-    validator: (value: RadioColor) => {
-      // The value must match one of these strings
-      if (
-        [undefined, 'primary', 'info', 'success', 'warning', 'danger'].indexOf(
-          value
-        ) === -1
-      ) {
-        console.warn(
-          `V-Radio: invalid "${value}" color. Should be primary, info, success, warning, danger or undefined`
-        )
-        return false
-      }
+const emit = defineEmits<{
+  (e: 'update:modelValue', value: string | number): void
+}>()
+const props = withDefaults(
+  defineProps<{
+    value: string | number
+    modelValue?: string | number
+    name: string
+    label?: string
+    color?: RadioColor
+    square?: boolean
+    solid?: boolean
+  }>(),
+  {
+    modelValue: undefined,
+    label: undefined,
+    color: undefined,
+  }
+)
 
-      return true
-    },
-  },
-  square: {
-    type: Boolean,
-    default: false,
-  },
-  solid: {
-    type: Boolean,
-    default: false,
-  },
-})
-const emit = defineEmits(['update:modelValue'])
 const checked = computed(() => props.value === props.modelValue)
 
 function change() {

@@ -1,24 +1,18 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-const props = defineProps({
-  buttons: {
-    type: Array,
-    required: true,
-  },
-  activeTab: {
-    type: Number,
-    default: 0,
-  },
-  rounded: {
-    type: Boolean,
-    default: false,
-  },
-  straight: {
-    type: Boolean,
-    default: false,
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    buttons?: any[]
+    activeTab?: number
+    rounded?: boolean
+    straight?: boolean
+  }>(),
+  {
+    buttons: () => [],
+    activeTab: 0,
+  }
+)
 const tab = ref(props.activeTab)
 </script>
 

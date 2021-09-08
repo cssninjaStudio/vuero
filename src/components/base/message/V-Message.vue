@@ -1,8 +1,5 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
-
-type MessageColor =
-  | undefined
+export type MessageColor =
   | 'primary'
   | 'success'
   | 'info'
@@ -10,39 +7,18 @@ type MessageColor =
   | 'danger'
   | 'white'
 
-const props = defineProps({
-  color: {
-    type: String as PropType<MessageColor>,
-    default: undefined,
-    validator: (value: MessageColor) => {
-      // The value must match one of these strings
-      if (
-        [
-          undefined,
-          'primary',
-          'success',
-          'info',
-          'warning',
-          'danger',
-          'white',
-        ].indexOf(value) === -1
-      ) {
-        console.warn(
-          `V-Message: invalid "${value}" color. Should be primary, success, info, warning, danger, white or undefined`
-        )
-        return false
-      }
-
-      return true
-    },
-  },
-  closable: {
-    type: Boolean,
-    default: false,
-  },
-})
-
-const emit = defineEmits(['close'])
+const emit = defineEmits<{
+  (e: 'close'): void
+}>()
+const props = withDefaults(
+  defineProps<{
+    color?: MessageColor
+    closable?: boolean
+  }>(),
+  {
+    color: undefined,
+  }
+)
 </script>
 
 <template>

@@ -3,52 +3,30 @@ let instances = 0
 </script>
 
 <script setup lang="ts">
-import type { PropType } from 'vue'
-
-type SwitchSegmentColor =
-  | undefined
+export type SwitchSegmentColor =
   | 'primary'
   | 'info'
   | 'success'
   | 'warning'
   | 'danger'
 
-const blockSwitchId = `segment-switch-${++instances}`
-const props = defineProps({
-  modelValue: {
-    type: Boolean,
-    default: false,
-  },
-  labelTrue: {
-    type: String,
-    default: undefined,
-  },
-  labelFalse: {
-    type: String,
-    default: undefined,
-  },
-  color: {
-    type: String as PropType<SwitchSegmentColor>,
-    default: undefined,
-    validator: (value: SwitchSegmentColor) => {
-      // The value must match one of these strings
-      if (
-        [undefined, 'primary', 'info', 'success', 'warning', 'danger'].indexOf(
-          value
-        ) === -1
-      ) {
-        console.warn(
-          `V-SwitchSegment: invalid "${value}" color. Should be primary, info, success, warning, danger or undefined`
-        )
-        return false
-      }
-
-      return true
-    },
-  },
-})
-
-const emit = defineEmits(['update:modelValue'])
+const emit = defineEmits<{
+  (e: 'update:modelValue', value: boolean): void
+}>()
+const props = withDefaults(
+  defineProps<{
+    modelValue?: boolean
+    labelTrue?: string
+    labelFalse?: string
+    color?: SwitchSegmentColor
+  }>(),
+  {
+    modelValue: false,
+    labelTrue: undefined,
+    labelFalse: undefined,
+    color: undefined,
+  }
+)
 </script>
 
 <template inherit-attrs="false">

@@ -1,14 +1,8 @@
 <script setup lang="ts">
-const props = defineProps({
-  products: {
-    type: Array,
-    required: true,
-  },
-  straight: {
-    type: Boolean,
-    default: false,
-  },
-})
+const props = defineProps<{
+  products: any[]
+  straight?: boolean
+}>()
 </script>
 
 <template>

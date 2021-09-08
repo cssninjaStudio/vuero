@@ -1,40 +1,21 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 
-const props = defineProps({
-  icon: {
-    type: String,
-    default: undefined,
-  },
-  isValid: {
-    type: Boolean,
-    default: false,
-  },
-  hasError: {
-    type: Boolean,
-    default: false,
-  },
-  loading: {
-    type: Boolean,
-    default: false,
-  },
-  expanded: {
-    type: Boolean,
-    default: false,
-  },
-  textaddon: {
-    type: Boolean,
-    default: false,
-  },
-  nogrow: {
-    type: Boolean,
-    default: false,
-  },
-  subcontrol: {
-    type: Boolean,
-    default: false,
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    icon?: string
+    isValid?: boolean
+    hasError?: boolean
+    loading?: boolean
+    expanded?: boolean
+    textaddon?: boolean
+    nogrow?: boolean
+    subcontrol?: boolean
+  }>(),
+  {
+    icon: undefined,
+  }
+)
 
 const isIconify = computed(() => {
   return props.icon && props.icon.indexOf(':') !== -1

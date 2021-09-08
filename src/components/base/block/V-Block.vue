@@ -1,38 +1,20 @@
 <script setup lang="ts">
-const props = defineProps({
-  title: {
-    type: String,
-    required: true,
-  },
-  subtitle: {
-    type: String,
-    default: undefined,
-  },
-  infratitle: {
-    type: String,
-    default: undefined,
-  },
-  center: {
-    type: Boolean,
-    default: false,
-  },
-  lighter: {
-    type: Boolean,
-    default: false,
-  },
-  narrow: {
-    type: Boolean,
-    default: false,
-  },
-  mResponsive: {
-    type: Boolean,
-    default: false,
-  },
-  tResponsive: {
-    type: Boolean,
-    default: false,
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    title: string
+    subtitle?: string
+    infratitle?: string
+    center?: boolean
+    lighter?: boolean
+    narrow?: boolean
+    mResponsive?: boolean
+    tResponsive?: boolean
+  }>(),
+  {
+    subtitle: undefined,
+    infratitle: undefined,
+  }
+)
 </script>
 
 <template>

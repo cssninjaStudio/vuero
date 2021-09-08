@@ -9,7 +9,7 @@ import useDropdown from '/@src/composable/useDropdown'
 const emit = defineEmits(['close'])
 
 const { locale } = useI18n()
-const dropdownElement = ref<HTMLElement | null>(null)
+const dropdownElement = ref<HTMLElement>()
 const dropdown = useDropdown(dropdownElement)
 
 const localFlagSrc = computed(() => {

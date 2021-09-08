@@ -1,63 +1,29 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
 import { computed, ref } from 'vue'
 
-type TabItem = {
+export type TabItem = {
   label: string
   value: string
   icon?: string
 }
-type TabsType = undefined | 'boxed' | 'toggle' | 'rounded'
-type TabsAlign = undefined | 'centered' | 'right'
+export type TabsType = 'boxed' | 'toggle' | 'rounded'
+export type TabsAlign = 'centered' | 'right'
 
-const props = defineProps({
-  tabs: {
-    type: Array as PropType<TabItem[]>,
-    required: true,
-  },
-  selected: {
-    type: String,
-    default: undefined,
-  },
-  type: {
-    type: String as PropType<TabsType>,
-    default: undefined,
-    validator: (value: TabsType) => {
-      // The value must match one of these strings
-      if ([undefined, 'boxed', 'toggle', 'rounded'].indexOf(value) === -1) {
-        console.warn(
-          `V-Tabs: invalid "${value}" type. Should be boxed, toggle, rounded or undefined`
-        )
-        return false
-      }
-
-      return true
-    },
-  },
-  align: {
-    type: String as PropType<TabsAlign>,
-    default: undefined,
-    validator: (value: TabsType) => {
-      // The value must match one of these strings
-      if ([undefined, 'centered', 'right'].indexOf(value) === -1) {
-        console.warn(
-          `V-Tabs: invalid "${value}" align. Should be centered, right or undefined`
-        )
-        return false
-      }
-
-      return true
-    },
-  },
-  slider: {
-    type: Boolean,
-    default: false,
-  },
-  slow: {
-    type: Boolean,
-    default: false,
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    tabs: TabItem[]
+    selected?: string
+    type?: TabsType
+    align?: TabsAlign
+    slider?: boolean
+    slow?: boolean
+  }>(),
+  {
+    selected: undefined,
+    type: undefined,
+    align: undefined,
+  }
+)
 
 const activeValue = ref(props.selected)
 const sliderClass = computed(() => {

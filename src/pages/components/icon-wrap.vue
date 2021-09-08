@@ -5,7 +5,7 @@ import { ref } from 'vue'
 import useMarkdownToc from '/@src/composable/useMarkdownToc'
 import { pageTitle } from '/@src/state/sidebarLayoutState'
 
-const markdownContainer = ref<HTMLElement | null>(null)
+const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
 pageTitle.value = 'V-IconWrap'

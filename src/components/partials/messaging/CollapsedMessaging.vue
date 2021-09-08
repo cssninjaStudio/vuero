@@ -1,18 +1,21 @@
 <script setup lang="ts">
 import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
 
-const props = defineProps({
-  conversations: {
-    type: Array,
-    default: () => [],
-  },
-  selectedConversationId: {
-    type: Number,
-    default: 0,
-  },
-})
+const emit = defineEmits<{
+  (e: 'addConversation'): void
+  (e: 'selectConversation', id: number): void
+}>()
 
-const emit = defineEmits(['addConversation', 'selectConversation'])
+const props = withDefaults(
+  defineProps<{
+    conversations?: any[]
+    selectedConversationId?: number
+  }>(),
+  {
+    conversations: () => [],
+    selectedConversationId: 0,
+  }
+)
 </script>
 
 <template>

@@ -1,18 +1,18 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
-
 import { useWindowScroll } from '@vueuse/core'
 
-type NavbarSearchTheme = 'default' | 'center' | 'fade'
+export type NavbarSearchTheme = 'default' | 'center' | 'fade'
 
-const props = defineProps({
-  theme: {
-    type: String as PropType<NavbarSearchTheme>,
-    default: 'default',
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    theme?: NavbarSearchTheme
+  }>(),
+  {
+    theme: 'default',
+  }
+)
 
 const route = useRoute()
 const { y } = useWindowScroll()

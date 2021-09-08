@@ -1,8 +1,17 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
 import { ref } from 'vue'
 import { activePanel } from '/@src/state/activePanelState'
 
+const props = withDefaults(
+  defineProps<{
+    activeTab?: 'project' | 'content' | 'brands'
+  }>(),
+  {
+    activeTab: 'project',
+  }
+)
+
+const tab = ref(props.activeTab)
 const filterTasks = ref(0)
 
 const participants = [
@@ -14,14 +23,6 @@ const participants = [
   { picture: '/demo/avatars/25.jpg' },
   { picture: '/demo/avatars/25.jpg' },
 ]
-
-const props = defineProps({
-  activeTab: {
-    type: String as PropType<'project' | 'content' | 'brands'>,
-    default: 'project',
-  },
-})
-const tab = ref(props.activeTab)
 </script>
 
 <template>

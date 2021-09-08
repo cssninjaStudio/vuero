@@ -1,26 +1,22 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
 import { ref } from 'vue'
 
-type CollapseItem = {
+export type CollapseItem = {
   title: string
   content: string
 }
 
-const props = defineProps({
-  items: {
-    type: Array as PropType<CollapseItem[]>,
-    required: true,
-  },
-  itemOpen: {
-    type: Number,
-    default: undefined,
-  },
-  withChevron: {
-    type: Boolean,
-    default: false,
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    items: CollapseItem[]
+    openItems?: number[]
+    withChevron?: boolean
+  }>(),
+  {
+    items: () => [],
+    openItems: undefined,
+  }
+)
 
 const internalItemOpen = ref<number | undefined>(props.itemOpen)
 const toggle = (key: number) => {

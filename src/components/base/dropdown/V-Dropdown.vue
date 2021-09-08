@@ -1,63 +1,32 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
 import { ref } from 'vue'
 import useDropdown from '/@src/composable/useDropdown'
 
-type DropdownColor =
-  | undefined
+export type DropdownColor =
   | 'primary'
   | 'info'
   | 'success'
   | 'warning'
   | 'danger'
 
-const props = defineProps({
-  title: {
-    type: String,
-    default: undefined,
-  },
-  color: {
-    type: String as PropType<DropdownColor>,
-    default: undefined,
-    validator: (value: DropdownColor) => {
-      // The value must match one of these strings
-      if (
-        [undefined, 'primary', 'info', 'success', 'warning', 'danger'].indexOf(
-          value
-        ) === -1
-      ) {
-        console.warn(
-          `V-Dropdown: invalid "${value}" color. Should be primary, info, success, warning, danger or undefined`
-        )
-        return false
-      }
+const props = withDefaults(
+  defineProps<{
+    title?: string
+    color?: DropdownColor
+    icon?: string
+    up?: boolean
+    right?: boolean
+    modern?: boolean
+    spaced?: boolean
+  }>(),
+  {
+    title: undefined,
+    color: undefined,
+    icon: undefined,
+  }
+)
 
-      return true
-    },
-  },
-  icon: {
-    type: String,
-    default: undefined,
-  },
-  up: {
-    type: Boolean,
-    default: false,
-  },
-  right: {
-    type: Boolean,
-    default: false,
-  },
-  modern: {
-    type: Boolean,
-    default: false,
-  },
-  spaced: {
-    type: Boolean,
-    default: false,
-  },
-})
-
-const dropdownElement = ref<HTMLElement | null>(null)
+const dropdownElement = ref<HTMLElement>()
 const dropdown = useDropdown(dropdownElement)
 
 defineExpose({
@@ -111,8 +80,6 @@ defineExpose({
 </template>
 
 <style lang="scss" scoped>
-@import '../../../scss/abstracts/_mixins.scss';
-
 .dropdown {
   &.is-dots {
     &:hover,

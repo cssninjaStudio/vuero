@@ -1,29 +1,15 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
+export type IconWrapsAlign = 'centered' | 'right'
 
-type IconWrapsAlign = undefined | 'centered' | 'right'
-
-const props = defineProps({
-  addons: {
-    type: Boolean,
-    default: false,
-  },
-  align: {
-    type: String as PropType<IconWrapsAlign>,
-    default: undefined,
-    validator: (value: IconWrapsAlign) => {
-      // The value must match one of these strings
-      if ([undefined, 'centered', 'right'].indexOf(value) === -1) {
-        console.warn(
-          `V-IconWraps: invalid "${value}" align. Should be centered, right or undefined`
-        )
-        return false
-      }
-
-      return true
-    },
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    align?: IconWrapsAlign
+    addons?: boolean
+  }>(),
+  {
+    align: undefined,
+  }
+)
 </script>
 
 <template>

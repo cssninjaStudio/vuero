@@ -10,28 +10,33 @@ import { ref, onMounted } from 'vue'
 import PhotoSwipe from 'photoswipe/dist/photoswipe'
 import PhotoSwipeUI_Default from 'photoswipe/dist/photoswipe-ui-default'
 
+export type PhotoswipeItem = {
+  src: string
+  msrc?: string
+  w?: number
+  w?: number
+  title?: number
+  el?: HTMLElement
+}
+
+const props = withDefaults(
+  defineProps<{
+    items?: PhotoswipeItem[]
+    options?: PhotoSwipe.Options
+    singleThumbnail?: boolean
+    thumbnailRadius?: string
+  }>(),
+  {
+    items: () => [],
+    options: () => ({}),
+    thumbnailRadius: undefined,
+  }
+)
+
 const galleryUID = ++instances
 const angle = ref(0)
-const pswpElement = ref<HTMLElement | null>(null)
-const galleryElement = ref<HTMLElement | null>(null)
-const props = defineProps({
-  items: {
-    default: () => [],
-    type: Array,
-  },
-  options: {
-    default: () => ({}),
-    type: Object,
-  },
-  singleThumbnail: {
-    type: Boolean,
-    default: false,
-  },
-  thumbnailRadius: {
-    type: String,
-    default: '',
-  },
-})
+const pswpElement = ref<HTMLElement>()
+const galleryElement = ref<HTMLElement>()
 
 const resolveImageSrc = async function (item: any) {
   return new Promise((resolve) => {

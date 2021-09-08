@@ -1,10 +1,12 @@
 <script setup lang="ts">
-const props = defineProps({
-  tags: {
-    type: Array,
-    required: true,
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    tags?: any[]
+  }>(),
+  {
+    tags: () => [],
+  }
+)
 </script>
 
 <template>

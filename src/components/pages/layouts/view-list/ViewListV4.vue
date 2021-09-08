@@ -1,15 +1,16 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
 import { computed, ref } from 'vue'
 
 import { recipes } from '/@src/data/layouts/view-list-v4'
 
-const props = defineProps({
-  activeTab: {
-    type: String as PropType<'all' | 'saved'>,
-    default: 'all',
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    activeTab?: 'all' | 'saved'
+  }>(),
+  {
+    activeTab: 'all',
+  }
+)
 
 const filters = ref('')
 const tab = ref(props.activeTab)

@@ -1,26 +1,22 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
 import { reactive } from 'vue'
 
-type AccordionItem = {
+export type AccordionItem = {
   title: string
   content: string
 }
 
-const props = defineProps({
-  items: {
-    type: Array as PropType<AccordionItem[]>,
-    required: true,
-  },
-  openItems: {
-    type: Array as PropType<number[]>,
-    default: () => [],
-  },
-  exclusive: {
-    type: Boolean,
-    default: false,
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    items: AccordionItem[]
+    openItems?: number[]
+    exclusive?: boolean
+  }>(),
+  {
+    items: () => [],
+    openItems: undefined,
+  }
+)
 
 const internalOpenItems = reactive(props.openItems)
 const toggle = (key: number) => {

@@ -3,52 +3,31 @@ let instances = 0
 </script>
 
 <script setup lang="ts">
-import type { PropType } from 'vue'
-
-type SwitchBlockColor =
-  | undefined
+export type SwitchBlockColor =
   | 'primary'
   | 'info'
   | 'success'
   | 'warning'
   | 'danger'
 
+const emit = defineEmits<{
+  (e: 'update:modelValue', value: boolean): void
+}>()
+const props = withDefaults(
+  defineProps<{
+    modelValue?: boolean
+    label?: string
+    color?: SwitchBlockColor
+    thin?: boolean
+  }>(),
+  {
+    modelValue: false,
+    label: undefined,
+    color: undefined,
+  }
+)
+
 const blockSwitchId = `block-switch-${++instances}`
-const props = defineProps({
-  modelValue: {
-    type: Boolean,
-    default: false,
-  },
-  label: {
-    type: String,
-    default: undefined,
-  },
-  color: {
-    type: String as PropType<SwitchBlockColor>,
-    default: undefined,
-    validator: (value: SwitchBlockColor) => {
-      // The value must match one of these strings
-      if (
-        [undefined, 'primary', 'info', 'success', 'warning', 'danger'].indexOf(
-          value
-        ) === -1
-      ) {
-        console.warn(
-          `V-SwitchBlock: invalid "${value}" color. Should be primary, info, success, warning, danger or undefined`
-        )
-        return false
-      }
-
-      return true
-    },
-  },
-  thin: {
-    type: Boolean,
-    default: false,
-  },
-})
-
-const emit = defineEmits(['update:modelValue'])
 </script>
 
 <template inherit-attrs="false">

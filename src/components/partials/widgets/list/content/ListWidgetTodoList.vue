@@ -1,24 +1,23 @@
 <script setup lang="ts">
 import { ref, watch } from 'vue'
 
-const props = defineProps({
-  todos: {
-    type: Array,
-    required: true,
-    default: () => [],
-  },
-  modelValue: {
-    type: Array,
-    default: () => [],
-  },
-  color: {
-    type: String,
-    default: undefined,
-  },
-})
+const emit = defineEmits<{
+  (e: 'update:modelValue', value: any[]): void
+}>()
+const props = withDefaults(
+  defineProps<{
+    todos?: any[]
+    modelValue?: any[]
+    color?: string
+  }>(),
+  {
+    todos: () => [],
+    modelValue: () => [],
+    color: () => undefined,
+  }
+)
 
 const completed = ref(props.modelValue)
-const emit = defineEmits(['update:modelValue'])
 
 watch(completed, () => {
   emit('update:modelValue', completed.value)

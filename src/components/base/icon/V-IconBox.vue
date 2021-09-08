@@ -1,9 +1,6 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
-
-type IconBoxSize = undefined | 'small' | 'medium' | 'large' | 'big' | 'xl'
-type IconBoxColor =
-  | undefined
+export type IconBoxSize = 'small' | 'medium' | 'large' | 'big' | 'xl'
+export type IconBoxColor =
   | 'primary'
   | 'info'
   | 'success'
@@ -16,65 +13,18 @@ type IconBoxColor =
   | 'red'
   | 'blue'
 
-const props = defineProps({
-  size: {
-    type: String as PropType<IconBoxSize>,
-    default: undefined,
-    validator: (value: IconBoxSize) => {
-      // The value must match one of these strings
-      if (
-        [undefined, 'small', 'medium', 'large', 'big', 'xl'].indexOf(value) ===
-        -1
-      ) {
-        console.warn(
-          `V-IconBox: invalid "${value}" size. Should be small, medium, large, big, xl or undefined`
-        )
-        return false
-      }
-
-      return true
-    },
-  },
-  color: {
-    type: String as PropType<IconBoxColor>,
-    default: undefined,
-    validator: (value: IconBoxColor) => {
-      if (!value) return true
-      // The value must match one of these strings
-      if (
-        [
-          'primary',
-          'info',
-          'success',
-          'warning',
-          'danger',
-          'purple',
-          'yellow',
-          'orange',
-          'green',
-          'red',
-          'blue',
-        ].indexOf(value) === -1
-      ) {
-        console.warn(
-          `V-IconBox: invalid "${value}" color. Should be primary, info, success, ` +
-            `warning, danger, purple, yellow, orange, green, red, blue or undefined`
-        )
-        return false
-      }
-
-      return true
-    },
-  },
-  rounded: {
-    type: Boolean,
-    default: false,
-  },
-  bordered: {
-    type: Boolean,
-    default: false,
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    size?: IconBoxSize
+    color?: IconBoxColor
+    rounded?: boolean
+    bordered?: boolean
+  }>(),
+  {
+    size: undefined,
+    color: undefined,
+  }
+)
 </script>
 
 <template>

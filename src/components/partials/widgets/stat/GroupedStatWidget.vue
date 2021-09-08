@@ -1,26 +1,18 @@
 <script setup lang="ts">
-const props = defineProps({
-  title: {
-    type: String,
-    default: 'Grouped stats widget',
-  },
-  values: {
-    type: Array,
-    required: true,
-  },
-  labels: {
-    type: Array,
-    required: true,
-  },
-  straight: {
-    type: Boolean,
-    default: false,
-  },
-  gauge: {
-    type: Boolean,
-    default: false,
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    title?: string
+    value?: any[]
+    labels?: any[]
+    straight?: boolean
+    gauge?: boolean
+  }>(),
+  {
+    title: 'Grouped stats widget',
+    value: () => [],
+    labels: () => [],
+  }
+)
 </script>
 
 <template>

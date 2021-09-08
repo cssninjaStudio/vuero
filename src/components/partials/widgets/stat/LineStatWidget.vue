@@ -1,30 +1,21 @@
 <script setup lang="ts">
-const props = defineProps({
-  title: {
-    type: String,
-    default: 'Line stats widget',
-  },
-  currentLabel: {
-    type: String,
-    default: 'Current Label',
-  },
-  currentValue: {
-    type: String,
-    default: '$75,648.43',
-  },
-  previousLabel: {
-    type: String,
-    default: 'Previous Label',
-  },
-  previousValue: {
-    type: String,
-    default: '$91,512.18',
-  },
-  straight: {
-    type: Boolean,
-    default: false,
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    title?: string
+    currentLabel?: string
+    currentValue?: string
+    previousLabel?: string
+    previousValue?: string
+    straight?: boolean
+  }>(),
+  {
+    title: 'Line stats widget',
+    currentLabel: 'Current Label',
+    currentValue: '$75,648.43',
+    previousLabel: 'Previous Label',
+    previousValue: '$91,512.18',
+  }
+)
 </script>
 
 <template>

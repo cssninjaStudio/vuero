@@ -3,11 +3,9 @@ let instances = 0
 </script>
 
 <script setup lang="ts">
-import type { PropType } from 'vue'
 import { computed, ref, watchEffect } from 'vue'
 
-type AnimatedCheckboxColor =
-  | undefined
+export type AnimatedCheckboxColor =
   | 'primary'
   | 'info'
   | 'success'
@@ -15,53 +13,26 @@ type AnimatedCheckboxColor =
   | 'danger'
   | 'purple'
 
-const props = defineProps({
-  value: {
-    type: [String, Number],
-    default: undefined,
-  },
-  modelValue: {
-    type: Array,
-    default: () => [],
-  },
-  color: {
-    type: String as PropType<AnimatedCheckboxColor>,
-    default: undefined,
-    validator: (value: AnimatedCheckboxColor) => {
-      // The value must match one of these strings
-      if (
-        [
-          undefined,
-          'primary',
-          'info',
-          'success',
-          'warning',
-          'danger',
-          'purple',
-        ].indexOf(value) === -1
-      ) {
-        console.warn(
-          `V-AnimatedCheckbox: invalid "${value}" color. Should be primary, info, success, warning, danger, purple or undefined`
-        )
-        return false
-      }
-
-      return true
-    },
-  },
-})
+const emit = defineEmits<{
+  (e: 'update:modelValue', value: (string | number)[]): void
+}>()
+const props = withDefaults(
+  defineProps<{
+    value?: string | number
+    color?: AnimatedCheckboxColor
+    modelValue?: (string | number)[]
+  }>(),
+  {
+    value: undefined,
+    color: undefined,
+    modelValue: () => [],
+  }
+)
 
 const animatedCheckboxId = `animated-checkbox-${++instances}`
-
-const emit = defineEmits(['update:modelValue'])
+const element = ref<HTMLElement>()
+const innerElement = ref<HTMLElement>()
 const checked = computed(() => props.modelValue.includes(props.value))
-
-const element = ref<HTMLElement | null>(null)
-const innerElement = ref<HTMLElement | null>(null)
-
-const handleClick = () => {
-  emit('update:modelValue', !props.modelValue)
-}
 
 const updateCheckbox = () => {
   if (element.value && innerElement.value) {
@@ -128,8 +99,6 @@ watchEffect(updateCheckbox)
 </template>
 
 <style lang="scss">
-@import '../../../scss/abstracts/_mixins.scss';
-
 $curve: cubic-bezier(0.65, 0, 0.45, 1);
 
 .animated-checkbox {

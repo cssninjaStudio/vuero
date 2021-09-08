@@ -1,10 +1,12 @@
 <script setup lang="ts">
-const props = defineProps({
-  days: {
-    type: Array,
-    required: true,
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    days?: any[]
+  }>(),
+  {
+    days: () => [],
+  }
+)
 </script>
 
 <template>

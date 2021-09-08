@@ -12,9 +12,9 @@ import { iconList } from '/@src/data/widgets/ui/menuList'
 const activeSection = ref('cart')
 
 let slider: TinySliderInstance
-const sliderElement = ref<HTMLElement | null>(null)
-const nextButtonElement = ref<HTMLElement | null>(null)
-const prevButtonElement = ref<HTMLElement | null>(null)
+const sliderElement = ref<HTMLElement>()
+const nextButtonElement = ref<HTMLElement>()
+const prevButtonElement = ref<HTMLElement>()
 
 const onIndexChanged = (info: any) => {
   // direct access to info object

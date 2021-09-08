@@ -1,53 +1,27 @@
 <script setup lang="ts">
-const props = defineProps({
-  picture: {
-    type: String,
-    required: true,
-    default: 'https://via.placeholder.com/150x150',
-  },
-  username: {
-    type: String,
-    required: true,
-    default: 'John D.',
-  },
-  email: {
-    type: String,
-    required: true,
-    default: 'john@gmail.com',
-  },
-  company: {
-    type: String,
-    required: true,
-    default: 'Acme Inc.',
-  },
-  position: {
-    type: String,
-    required: true,
-    default: 'Developer',
-  },
-  location: {
-    type: String,
-    required: true,
-    default: 'New York, NY',
-  },
-  phone: {
-    type: String,
-    required: true,
-    default: '+1 555 5554',
-  },
-  straight: {
-    type: Boolean,
-    default: false,
-  },
-  reversed: {
-    type: Boolean,
-    default: false,
-  },
-  squared: {
-    type: Boolean,
-    default: false,
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    picture?: string
+    username?: string
+    email?: string
+    company?: string
+    position?: string
+    location?: string
+    phone?: string
+    straight?: boolean
+    reversed?: boolean
+    squared?: boolean
+  }>(),
+  {
+    picture: 'https://via.placeholder.com/150x150',
+    username: 'John D.',
+    email: 'john@gmail.com',
+    company: 'Acme Inc.',
+    position: 'Developer',
+    location: 'New York, NY',
+    phone: '+1 555 5554',
+  }
+)
 </script>
 
 <template>

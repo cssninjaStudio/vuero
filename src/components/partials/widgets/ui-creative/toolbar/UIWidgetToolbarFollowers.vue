@@ -1,15 +1,14 @@
 <script setup lang="ts">
-const props = defineProps({
-  title: {
-    type: String,
-    required: true,
-    default: 'UI Widget',
-  },
-  avatars: {
-    type: Array,
-    required: true,
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    title?: string
+    avatars?: any[]
+  }>(),
+  {
+    title: 'UI Widget',
+    avatars: () => [],
+  }
+)
 </script>
 
 <template>

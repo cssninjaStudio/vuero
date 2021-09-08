@@ -1,76 +1,28 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
 import { computed } from 'vue'
 
-type SnackColor =
-  | undefined
-  | 'primary'
-  | 'success'
-  | 'info'
-  | 'warning'
-  | 'danger'
-type SnackSize = undefined | 'small'
+export type SnackColor = 'primary' | 'success' | 'info' | 'warning' | 'danger'
+export type SnackSize = 'small'
 
-const props = defineProps({
-  title: {
-    type: String,
-    required: true,
-  },
-  icon: {
-    type: String,
-    default: undefined,
-  },
-  image: {
-    type: String,
-    default: undefined,
-  },
-  placeholder: {
-    type: String,
-    default: 'https://via.placeholder.com/50x50',
-  },
-  color: {
-    type: String as PropType<SnackColor>,
-    default: undefined,
-    validator: (value: SnackColor) => {
-      // The value must match one of these strings
-      if (
-        [undefined, 'primary', 'success', 'info', 'warning', 'danger'].indexOf(
-          value
-        ) === -1
-      ) {
-        console.warn(
-          `V-Snack: invalid "${value}" color. Should be primary, success, info, warning, danger or undefined`
-        )
-        return false
-      }
-
-      return true
-    },
-  },
-  size: {
-    type: String as PropType<SnackSize>,
-    default: undefined,
-    validator: (value: SnackSize) => {
-      // The value must match one of these strings
-      if ([undefined, 'small'].indexOf(value) === -1) {
-        console.warn(
-          `V-Snack: invalid "${value}" size. Should be small or undefined`
-        )
-        return false
-      }
-
-      return true
-    },
-  },
-  solid: {
-    type: Boolean,
-    default: false,
-  },
-  white: {
-    type: Boolean,
-    default: false,
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    title: string
+    icon?: string
+    image?: string
+    placeholder?: string
+    color?: SnackColor
+    size?: SnackSize
+    solid?: boolean
+    white?: boolean
+  }>(),
+  {
+    icon: undefined,
+    image: undefined,
+    color: undefined,
+    size: undefined,
+    placeholder: 'https://via.placeholder.com/50x50',
+  }
+)
 
 const isIconify = computed(() => {
   return props.icon && props.icon.indexOf(':') !== -1

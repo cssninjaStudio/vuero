@@ -12,13 +12,13 @@ import { wizardData } from '/@src/state/wizardState'
 import sleep from '/@src/utils/sleep'
 
 const isUploading = ref(false)
-const previewTemplateElement = ref<HTMLElement | null>(null)
-const previewContainerElement = ref<HTMLElement | null>(null)
-const totalProgressElement = ref<HTMLElement | null>(null)
-const addUploadElement = ref<HTMLElement | null>(null)
-const startUploadElement = ref<HTMLElement | null>(null)
-const cancelUploadElement = ref<HTMLElement | null>(null)
-const dropzone = ref<typeof Dropzone | null>(null)
+const previewTemplateElement = ref<HTMLElement>()
+const previewContainerElement = ref<HTMLElement>()
+const totalProgressElement = ref<HTMLElement>()
+const addUploadElement = ref<HTMLElement>()
+const startUploadElement = ref<HTMLElement>()
+const cancelUploadElement = ref<HTMLElement>()
+const dropzone = ref<typeof Dropzone>()
 const previewTemplate = ref('')
 let isInit = false
 

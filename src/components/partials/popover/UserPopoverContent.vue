@@ -1,21 +1,18 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
-
-type User = {
-  avatar: string
-  badge: string
+export type User = {
+  avatar?: string
+  badge?: string
   username: string
   location: string
   position: string
   bio: string
+  color?: string
+  initials?: string
 }
 
-const props = defineProps({
-  user: {
-    type: Object as PropType<User>,
-    default: undefined,
-  },
-})
+const props = defineProps<{
+  user: User
+}>()
 </script>
 
 <template>

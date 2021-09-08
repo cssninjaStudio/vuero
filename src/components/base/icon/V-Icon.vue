@@ -1,12 +1,9 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 
-const props = defineProps({
-  icon: {
-    type: String,
-    required: true,
-  },
-})
+const props = defineProps<{
+  icon: string
+}>()
 
 const isIconify = computed(() => {
   return props.icon && props.icon.indexOf(':') !== -1

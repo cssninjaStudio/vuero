@@ -1,10 +1,7 @@
 <script setup lang="ts">
-const props = defineProps({
-  compact: {
-    type: Boolean,
-    default: false,
-  },
-})
+const props = defineProps<{
+  compact?: boolean
+}>()
 </script>
 
 <template>

@@ -1,24 +1,20 @@
 <script setup lang="ts">
 import type { InputMask, AnyMaskedOptions } from 'imask'
-import type { PropType } from 'vue'
 import IMask from 'imask'
 import { ref, watch, onUnmounted } from 'vue'
 
-const inputElement = ref<HTMLElement | null>(null)
+const inputElement = ref<HTMLElement>()
 let inputMask: InputMask<any> | undefined
 
-const props = defineProps({
-  modelValue: {
-    type: String,
-    required: true,
-  },
-  options: {
-    type: Object as PropType<AnyMaskedOptions>,
-    required: true,
-  },
-})
-
-const emit = defineEmits(['update:modelValue', 'accept', 'complete'])
+const emit = defineEmits<{
+  (e: 'update:modelValue', key: string): void
+  (e: 'accept', inputMask: InputMask<any>, inputEvent?: InputEvent): void
+  (e: 'complete', inputMask: InputMask<any>, inputEvent?: InputEvent): void
+}>()
+const props = defineProps<{
+  modelValue: string
+  options: AnyMaskedOptions
+}>()
 
 watch([inputElement, () => props.options, () => props.modelValue], () => {
   if (inputElement.value && props.options) {

@@ -11,7 +11,7 @@ import { optionsUsers } from '/@src/data/documentation/v-datatable/users-datatab
 import { pageTitle } from '/@src/state/sidebarLayoutState'
 
 let interval: NodeJS.Timeout
-const markdownContainer = ref<HTMLElement | null>(null)
+const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
 const randomUpdate = () => {

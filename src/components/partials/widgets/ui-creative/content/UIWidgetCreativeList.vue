@@ -1,14 +1,13 @@
 <script setup lang="ts">
-const props = defineProps({
-  list: {
-    type: Array,
-    required: true,
-  },
-  squared: {
-    type: Boolean,
-    default: false,
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    list?: any[]
+    squared?: boolean
+  }>(),
+  {
+    list: () => [],
+  }
+)
 </script>
 
 <template>

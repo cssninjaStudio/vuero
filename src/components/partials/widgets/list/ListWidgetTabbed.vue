@@ -1,27 +1,20 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-const props = defineProps({
-  title: {
-    type: String,
-    required: true,
-    default: 'List Widget',
-  },
-  labels: {
-    type: Array,
-    default: () => ['Recent', 'Popular'],
-  },
-  straight: {
-    type: Boolean,
-    default: false,
-  },
-  toggled: {
-    type: Boolean,
-    default: false,
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    title?: string
+    labels?: string[]
+    straight?: boolean
+    toggled?: boolean
+  }>(),
+  {
+    title: 'List Widget',
+    labels: () => ['Recent', 'Popular'],
+  }
+)
 
-let state = ref(props.toggled)
+const state = ref(props.toggled)
 
 const toggleTabs = () => {
   state.value = !state.value

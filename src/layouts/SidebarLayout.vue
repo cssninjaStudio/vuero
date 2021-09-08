@@ -1,12 +1,11 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
 import { ref, watchPostEffect, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
 import { activePanel } from '/@src/state/activePanelState'
 import { pageTitle } from '/@src/state/sidebarLayoutState'
 
-type SidebarTheme =
+export type SidebarTheme =
   | 'default'
   | 'color'
   | 'color-curved'
@@ -15,28 +14,19 @@ type SidebarTheme =
   | 'labels'
   | 'labels-hover'
 
-const props = defineProps({
-  theme: {
-    type: String as PropType<SidebarTheme>,
-    default: 'default',
-  },
-  defaultSidebar: {
-    type: String,
-    default: 'dashboard',
-  },
-  closeOnChange: {
-    type: Boolean,
-    default: false,
-  },
-  openOnMounted: {
-    type: Boolean,
-    default: false,
-  },
-  nowrap: {
-    type: Boolean,
-    default: false,
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    theme?: SidebarTheme
+    defaultSidebar?: string
+    closeOnChange?: boolean
+    openOnMounted?: boolean
+    nowrap?: boolean
+  }>(),
+  {
+    defaultSidebar: 'dashboard',
+    theme: 'default',
+  }
+)
 
 const route = useRoute()
 const isMobileSidebarOpen = ref(false)

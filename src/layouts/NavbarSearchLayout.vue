@@ -1,28 +1,27 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
 import { ref, computed, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { popovers } from '/@src/data/users/userPopovers'
 import { pageTitle } from '/@src/state/navbarLayoutState'
 import { activePanel } from '/@src/state/activePanelState'
 
-type NavbarSearchTheme = 'default' | 'center' | 'fade'
+export type NavbarSearchTheme = 'default' | 'center' | 'fade'
 
-const props = defineProps({
-  theme: {
-    type: String as PropType<NavbarSearchTheme>,
-    default: 'default',
-  },
-  nowrap: {
-    type: Boolean,
-    default: false,
-  },
-})
-const isMobileSidebarOpen = ref(false)
-const activeMobileSubsidebar = ref('dashboard')
+const props = withDefaults(
+  defineProps<{
+    theme?: NavbarSearchTheme
+    nowrap?: boolean
+  }>(),
+  {
+    theme: 'default',
+  }
+)
 
 const route = useRoute()
+const isMobileSidebarOpen = ref(false)
+const activeMobileSubsidebar = ref('dashboard')
 const filter = ref('')
+
 const filteredData = computed(() => {
   if (!filter.value) {
     return []

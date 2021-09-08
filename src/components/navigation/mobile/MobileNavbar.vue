@@ -1,11 +1,10 @@
 <script setup lang="ts">
-const props = defineProps({
-  isOpen: {
-    type: Boolean,
-    default: false,
-  },
-})
-const emit = defineEmits(['toggle'])
+const emit = defineEmits<{
+  (e: 'toggle'): void
+}>()
+const props = defineProps<{
+  isOpen?: boolean
+}>()
 </script>
 
 <template>

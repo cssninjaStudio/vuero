@@ -1,19 +1,16 @@
 <script setup lang="ts">
-const props = defineProps({
-  title: {
-    type: String,
-    default: 'Widget Title',
-  },
-  value: {
-    type: String,
-    default: '8,641.26',
-  },
-  text: {
-    type: String,
-    default:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bonum integritas corporis: misera debilitas. Ita ne hoc quidem modo paria.',
-  },
-})
+const props = withDefaults(
+  defineProps<{
+    title?: string
+    value?: string
+    text?: string
+  }>(),
+  {
+    title: 'Widget Title',
+    value: '8,641.26',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bonum integritas corporis: misera debilitas. Ita ne hoc quidem modo paria.',
+  }
+)
 </script>
 
 <template>
