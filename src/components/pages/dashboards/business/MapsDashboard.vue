@@ -7,8 +7,8 @@ import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css'
 import { themeColors } from '/@src/utils/themeColors'
 import { isDark } from '/@src/state/darkModeState'
 
-mapboxgl.accessToken =
-  'pk.eyJ1IjoiY3NzbmluamEiLCJhIjoiY2toZW1nYm0zMDAxODJycXFzZ3g4cnZ6diJ9.9ebfrGREuwkauRr_afDTgA'
+// You can set the VITE_MAPBOX_ACCESS_TOKEN inside .env file
+mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN
 
 const props = defineProps<{
   reversed?: boolean
