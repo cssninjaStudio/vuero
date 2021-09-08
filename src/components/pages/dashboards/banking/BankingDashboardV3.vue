@@ -240,7 +240,6 @@ import { popovers } from '/@src/data/users/userPopovers'
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
 
 .banking-dashboard-v3 {
@@ -248,12 +247,12 @@ import { popovers } from '/@src/data/users/userPopovers'
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: $font;
+    font-family: var(--font);
     margin-bottom: 20px;
 
     .left {
       > span {
-        color: $light-text;
+        color: var(--light-text);
       }
 
       .currency {
@@ -261,17 +260,17 @@ import { popovers } from '/@src/data/users/userPopovers'
           position: relative;
           font-size: 2rem;
           font-weight: 600;
-          color: $dark-text;
+          color: var(--dark-text);
 
           &.is-positive {
             &::after {
-              color: $h-green;
+              color: var(--green);
             }
           }
 
           &.is-negative {
             &::after {
-              color: $h-red;
+              color: var(--red);
             }
           }
 
@@ -302,18 +301,18 @@ import { popovers } from '/@src/data/users/userPopovers'
 
       span {
         display: block;
-        font-family: $font;
+        font-family: var(--font);
 
         &:first-child {
           font-size: 0.9rem;
-          color: $light-text;
+          color: var(--light-text);
           margin-bottom: 4px;
         }
 
         &:nth-child(2) {
           font-weight: 500;
           font-size: 1.2rem;
-          color: $dark-text;
+          color: var(--dark-text);
         }
       }
     }
@@ -352,11 +351,11 @@ import { popovers } from '/@src/data/users/userPopovers'
       margin-bottom: 30px;
 
       .subheading {
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         font-weight: 600;
         font-size: 0.8rem;
         text-transform: uppercase;
-        color: $dark-text;
+        color: var(--dark-text);
       }
 
       .action-link {

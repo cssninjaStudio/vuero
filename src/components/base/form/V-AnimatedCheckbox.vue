@@ -128,7 +128,6 @@ watchEffect(updateCheckbox)
 </template>
 
 <style lang="scss">
-@import '../../../scss/abstracts/_variables.scss';
 @import '../../../scss/abstracts/_mixins.scss';
 
 $curve: cubic-bezier(0.65, 0, 0.45, 1);
@@ -140,97 +139,97 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
 
   &.is-purple {
     .checkmark-circle {
-      color: $h-purple !important;
-      stroke: $h-purple !important;
+      color: var(--purple) !important;
+      stroke: var(--purple) !important;
     }
 
     .checkmark {
-      box-shadow: inset 0 0 0 $h-purple !important;
+      box-shadow: inset 0 0 0 var(--purple) !important;
     }
 
     .checkmark-check {
-      color: $h-purple !important;
-      stroke: $h-purple !important;
+      color: var(--purple) !important;
+      stroke: var(--purple) !important;
     }
   }
 
   &.is-primary {
     .checkmark-circle {
-      color: $primary !important;
-      stroke: $primary !important;
+      color: var(--primary) !important;
+      stroke: var(--primary) !important;
     }
 
     .checkmark {
-      box-shadow: inset 0 0 0 $primary !important;
+      box-shadow: inset 0 0 0 var(--primary) !important;
     }
 
     .checkmark-check {
-      color: $primary !important;
-      stroke: $primary !important;
+      color: var(--primary) !important;
+      stroke: var(--primary) !important;
     }
   }
 
   &.is-info {
     .checkmark-circle {
-      color: $info !important;
-      stroke: $info !important;
+      color: var(--info) !important;
+      stroke: var(--info) !important;
     }
 
     .checkmark {
-      box-shadow: inset 0 0 0 $info !important;
+      box-shadow: inset 0 0 0 var(--info) !important;
     }
 
     .checkmark-check {
-      color: $info !important;
-      stroke: $info !important;
+      color: var(--info) !important;
+      stroke: var(--info) !important;
     }
   }
 
   &.is-success {
     .checkmark-circle {
-      color: $success !important;
-      stroke: $success !important;
+      color: var(--success) !important;
+      stroke: var(--success) !important;
     }
 
     .checkmark {
-      box-shadow: inset 0 0 0 $success !important;
+      box-shadow: inset 0 0 0 var(--success) !important;
     }
 
     .checkmark-check {
-      color: $success !important;
-      stroke: $success !important;
+      color: var(--success) !important;
+      stroke: var(--success) !important;
     }
   }
 
   &.is-warning {
     .checkmark-circle {
-      color: $warning !important;
-      stroke: $warning !important;
+      color: var(--warning) !important;
+      stroke: var(--warning) !important;
     }
 
     .checkmark {
-      box-shadow: inset 0 0 0 $warning !important;
+      box-shadow: inset 0 0 0 var(--warning) !important;
     }
 
     .checkmark-check {
-      color: $warning !important;
-      stroke: $warning !important;
+      color: var(--warning) !important;
+      stroke: var(--warning) !important;
     }
   }
 
   &.is-danger {
     .checkmark-circle {
-      color: $h-red !important;
-      stroke: $h-red !important;
+      color: var(--red) !important;
+      stroke: var(--red) !important;
     }
 
     .checkmark {
-      box-shadow: inset 0 0 0 $h-red !important;
+      box-shadow: inset 0 0 0 var(--red) !important;
     }
 
     .checkmark-check {
-      color: $h-red !important;
-      stroke: $h-red !important;
+      color: var(--red) !important;
+      stroke: var(--red) !important;
     }
   }
 
@@ -256,8 +255,8 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
       left: 0;
       height: 32px;
       width: 32px;
-      border-radius: $radius-rounded;
-      border: 1px solid $placeholder;
+      border-radius: var(--radius-rounded);
+      border: 1px solid var(--placeholder);
       z-index: 0;
       opacity: 1;
       transition: all 0.2s;
@@ -275,22 +274,22 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
       stroke-width: 2;
       stroke-miterlimit: 10;
       fill: none;
-      color: $primary;
-      stroke: $primary;
+      color: var(--primary);
+      stroke: var(--primary);
     }
 
     //Checkmark
     .checkmark {
       width: 32px;
       height: 32px;
-      border-radius: $radius-rounded;
+      border-radius: var(--radius-rounded);
       display: block;
       stroke-width: 2;
-      color: $placeholder;
-      stroke: $placeholder;
+      color: var(--placeholder);
+      stroke: var(--placeholder);
       stroke-miterlimit: 10;
       margin: 0 auto;
-      box-shadow: inset 0 0 0 $primary;
+      box-shadow: inset 0 0 0 var(--primary);
     }
 
     //Check symbol
@@ -298,8 +297,8 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
       transform-origin: 50% 50%;
       stroke-dasharray: 48;
       stroke-dashoffset: 48;
-      color: $primary;
-      stroke: $primary;
+      color: var(--primary);
+      stroke: var(--primary);
     }
   }
 
@@ -356,11 +355,11 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
     .checkmark-wrap {
       .checkmark-circle,
       .checkmark-check {
-        color: $accent;
+        color: var(--primary);
       }
 
       .shadow-circle {
-        border-color: $dark-sidebar-light-20;
+        border-color: var(--dark-sidebar-light-20);
       }
     }
   }

@@ -33,9 +33,9 @@ router.afterEach(() => {
     viewBox="0 0 160 160"
     style="enable-background: new 0 0 160 160"
     xml:space="preserve"
-    :class="[isLoading && 'is-roll', props.light && 'is-light']"
+    :class="[props.light && 'is-light']"
   >
-    <g class="is-roll">
+    <g :class="[isLoading && 'is-roll']">
       <g>
         <path
           class="right"
@@ -56,40 +56,40 @@ router.afterEach(() => {
 </template>
 
 <style lang="scss" scoped>
-@import '../scss/abstracts/_variables.scss';
 @import '../scss/layout/_sidebar.scss';
 
 .right {
-  fill: $primary-dark-7;
+  fill: var(--primary-dark-7);
 }
 .bottom {
-  fill: $primary;
+  fill: var(--primary);
 }
 .left {
-  fill: $primary-light-15;
+  fill: var(--primary-light-15);
 }
 
-.is-roll {
+.is-roll,
+svg:hover {
   .right {
     animation: is-roll-right 8s ease infinite;
     animation-fill-mode: forwards;
-    animation-delay: 4s;
+    animation-delay: 0s;
   }
   .left {
     animation: is-roll-left 8s ease infinite;
     animation-fill-mode: forwards;
-    animation-delay: 4s;
+    animation-delay: 0s;
   }
   .bottom {
     animation: is-roll-bottom 8s ease infinite;
     animation-fill-mode: forwards;
-    animation-delay: 4s;
+    animation-delay: 0s;
   }
 }
 
 .is-light {
   .right {
-    fill: $white;
+    fill: var(--white);
     animation: none;
   }
   .bottom {
@@ -104,46 +104,46 @@ router.afterEach(() => {
 
 @keyframes is-roll-right {
   0% {
-    fill: $primary-dark-7;
+    fill: var(--primary-dark-7);
   }
   33% {
-    fill: #1ee8c0;
+    fill: var(--primary-light-8);
   }
   66% {
-    fill: $h-green-light-15;
+    fill: var(--primary-light-40);
   }
   100% {
-    fill: $primary-dark-7;
+    fill: var(--primary-dark-7);
   }
 }
 
 @keyframes is-roll-bottom {
   0% {
-    fill: $primary;
+    fill: var(--primary);
   }
   33% {
-    fill: #15cda9; //darken(#1ee8c0, 7%);
+    fill: var(--primary-light-24); //darken(#1ee8c0, 7%);
   }
   66% {
-    fill: $h-green;
+    fill: var(--primary-light-20);
   }
   100% {
-    fill: $primary;
+    fill: var(--primary);
   }
 }
 
 @keyframes is-roll-left {
   0% {
-    fill: $primary-light-15;
+    fill: var(--primary-light-15);
   }
   33% {
-    fill: #63efd3; //lighten(#1ee8c0, 15%);
+    fill: var(--primary-light-12); //lighten(#1ee8c0, 15%);
   }
   66% {
-    fill: $h-green-dark-7;
+    fill: var(--primary-light-15);
   }
   100% {
-    fill: $primary-light-15;
+    fill: var(--primary-light-15);
   }
 }
 </style>

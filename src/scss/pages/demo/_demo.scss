@@ -30,11 +30,11 @@
 
   .demo-title {
     h3 {
-      font-family: $font-alt;
+      font-family: var(--font-alt);
       font-size: 1.25rem;
       font-weight: 300;
       margin-bottom: 0.75rem;
-      color: $dark-text;
+      color: var(--dark-text);
       line-height: 1.125;
     }
 
@@ -43,7 +43,7 @@
 
       a {
         font-weight: 500;
-        color: $primary;
+        color: var(--primary);
       }
     }
   }
@@ -57,23 +57,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: $radius-rounded;
-    border: 1px solid $fade-grey-dark-3;
-    box-shadow: $light-box-shadow;
+    border-radius: var(--radius-rounded);
+    border: 1px solid var(--fade-grey-dark-3);
+    box-shadow: var(--light-box-shadow);
     transition: all 0.3s;
 
     &:hover {
       svg {
-        color: $dark-text;
+        color: var(--dark-text);
       }
     }
 
     &.is-active {
-      border-color: $fade-grey-dark-6;
+      border-color: var(--fade-grey-dark-6);
       transform: rotate(180deg);
 
       svg {
-        color: $primary;
+        color: var(--primary);
 
         &.open {
           display: none !important;
@@ -88,7 +88,7 @@
     svg {
       height: 16px;
       width: 16px;
-      color: $light-text;
+      color: var(--light-text);
       transition: stroke 0.3s;
 
       &.open {
@@ -139,19 +139,19 @@
         cursor: pointer;
 
         &:hover {
-          background-color: $fade-grey-light-5;
+          background-color: var(--fade-grey-light-5);
 
           .lnil,
           .lnir,
           .fas,
           .fab {
             transform: scale(1.1);
-            color: $primary;
+            color: var(--primary);
           }
 
           svg {
             transform: scale(1.1);
-            color: $primary;
+            color: var(--primary);
           }
         }
       }
@@ -160,7 +160,7 @@
       .lnir,
       .fas,
       .fab {
-        color: $light-text;
+        color: var(--light-text);
         font-size: 1.6rem;
         transition: all 0.35s;
       }
@@ -169,7 +169,7 @@
         height: 20px;
         width: 20px;
         stroke-width: 1.8px;
-        color: $light-text;
+        color: var(--light-text);
         transition: stroke 0.3s;
       }
 
@@ -184,7 +184,7 @@
       }
 
       .icon-name {
-        color: $light-text;
+        color: var(--light-text);
       }
     }
 
@@ -222,8 +222,8 @@
       th {
         font-size: 0.9rem;
         font-weight: 600;
-        font-family: $font-alt;
-        border-bottom: solid 1px $border;
+        font-family: var(--font-alt);
+        border-bottom: solid 1px var(--border);
 
         &:first-of-type {
           width: 200px;
@@ -233,11 +233,11 @@
       td {
         font-size: 1rem;
         font-weight: 400;
-        font-family: $font;
-        border-bottom: solid 1px $border;
+        font-family: var(--font);
+        border-bottom: solid 1px var(--border);
 
         code {
-          font-family: $font-monospace;
+          font-family: var(--font-monospace);
 
           &:first-child {
             padding-left: 0 !important;
@@ -246,12 +246,12 @@
 
         .is-string {
           code {
-            color: $accent;
+            color: var(--primary);
           }
         }
         .is-function {
           code {
-            color: $info;
+            color: var(--info);
           }
         }
         .is-number,
@@ -268,7 +268,7 @@
         }
         .is-array {
           code {
-            color: $dark-text;
+            color: var(--dark-text);
           }
         }
       }
@@ -285,78 +285,78 @@
   .color-dot {
     height: 40px;
     width: 40px;
-    border-radius: $radius-rounded;
+    border-radius: var(--radius-rounded);
 
     &.is-primary {
-      background: $primary;
+      background: var(--primary);
     }
 
     &.is-accent {
-      background: $accent;
+      background: var(--primary);
     }
 
     &.is-success {
-      background: $success;
+      background: var(--success);
     }
 
     &.is-info {
-      background: $info;
+      background: var(--info);
     }
 
     &.is-warning {
-      background: $warning;
+      background: var(--warning);
     }
 
     &.is-danger {
-      background: $danger;
+      background: var(--danger);
     }
 
     &.is-dark {
-      background: $dark-sidebar;
+      background: var(--dark-sidebar);
     }
 
     &.is-fade-grey {
-      background: $fade-grey;
+      background: var(--fade-grey);
     }
 
     &.is-muted-grey {
-      background: $muted-grey;
+      background: var(--muted-grey);
     }
 
     &.is-placeholder {
-      background: $placeholder;
+      background: var(--placeholder);
     }
 
     &.is-dark-text {
-      background: $dark-text;
+      background: var(--dark-text);
     }
 
     &.is-light-text {
-      background: $light-text;
+      background: var(--light-text);
     }
 
     &.is-h-purple {
-      background: $h-purple;
+      background: var(--purple);
     }
 
     &.is-h-blue {
-      background: $h-blue;
+      background: var(--blue);
     }
 
     &.is-h-green {
-      background: $h-green;
+      background: var(--green);
     }
 
     &.is-h-red {
-      background: $h-red;
+      background: var(--red);
     }
 
     &.is-h-yellow {
-      background: $h-yellow;
+      background: var(--yellow);
     }
 
     &.is-h-orange {
-      background: $h-orange;
+      background: var(--orange);
     }
   }
 
@@ -365,16 +365,16 @@
 
     span {
       display: block;
-      font-family: $font-alt;
+      font-family: var(--font-alt);
 
       &:first-child {
-        color: $dark-text;
+        color: var(--dark-text);
         font-weight: 600;
       }
 
       &:nth-child(2) {
         font-size: 0.9rem;
-        color: $light-text;
+        color: var(--light-text);
       }
     }
   }
@@ -401,7 +401,7 @@
   .category,
   th {
     width: 25%;
-    font-family: $font-alt;
+    font-family: var(--font-alt);
     font-weight: 600;
     font-size: 1.05rem;
   }
@@ -418,7 +418,7 @@
 .demo-table {
   .table {
     th {
-      font-family: $font-alt;
+      font-family: var(--font-alt);
       font-weight: 600;
       font-size: 0.9rem;
     }
@@ -439,23 +439,23 @@
 
     .demo-title {
       h3 {
-        color: $dark-dark-text;
+        color: var(--dark-dark-text);
       }
 
       .code-trigger {
-        border-color: $dark-sidebar-light-14;
+        border-color: var(--dark-sidebar-light-14);
         &:hover {
           svg {
-            color: $light-text;
+            color: var(--light-text);
           }
         }
 
         &.is-active {
-          border-color: $dark-sidebar-light-16;
-          background: $dark-sidebar-light-12;
+          border-color: var(--dark-sidebar-light-16);
+          background: var(--dark-sidebar-light-12);
 
           svg {
-            color: $primary;
+            color: var(--primary);
           }
         }
       }
@@ -463,17 +463,17 @@
 
     .demo-icon-list {
       li:hover {
-        background-color: $dark-sidebar-light-10 !important;
+        background-color: var(--dark-sidebar-light-10) !important;
 
         .lnil,
         .lnir,
         .fas,
         .fab {
-          color: $accent;
+          color: var(--primary);
         }
 
         svg {
-          color: $accent;
+          color: var(--primary);
         }
       }
     }
@@ -485,7 +485,7 @@
     .meta {
       span {
         &:first-child {
-          color: $dark-dark-text;
+          color: var(--dark-dark-text);
         }
       }
     }

@@ -73,7 +73,6 @@
 </template>
 
 <style lang="scss">
-@import '../../../scss/abstracts/_variables.scss';
 @import '../../../scss/abstracts/_mixins.scss';
 @import '../../../scss/pages/profile/_user-profile.scss';
 </style>

@@ -721,8 +721,6 @@ watchPostEffect(() => {
 </template>
 
 <style lang="scss">
-@import '../scss/abstracts/_variables.scss';
-
 /* ==========================================================================
 1. Chat side FAB
 ========================================================================== */
@@ -736,10 +734,10 @@ watchPostEffect(() => {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: $white;
-  border-radius: $radius-rounded;
-  border: 1px solid $fade-grey-dark-3;
-  box-shadow: $light-box-shadow;
+  background: var(--white);
+  border-radius: var(--radius-rounded);
+  border: 1px solid var(--fade-grey-dark-3);
+  box-shadow: var(--light-box-shadow);
   transform: translateX(60px) rotate(360deg);
   transition: all 0.3s;
 
@@ -752,7 +750,7 @@ watchPostEffect(() => {
     left: -1px;
     height: 20px;
     width: 20px;
-    color: $light-text;
+    color: var(--light-text);
   }
 }
 
@@ -802,10 +800,10 @@ watchPostEffect(() => {
           position: absolute;
           top: 9px;
           left: 9px;
-          color: $placeholder;
+          color: var(--placeholder);
 
           span {
-            color: $dark-text;
+            color: var(--dark-text);
             font-weight: 500;
           }
 
@@ -830,7 +828,7 @@ watchPostEffect(() => {
           svg {
             height: 18px;
             width: 18px;
-            color: $muted-grey;
+            color: var(--muted-grey);
           }
         }
 
@@ -841,12 +839,12 @@ watchPostEffect(() => {
             padding-left: 40px;
             border: none;
             box-shadow: none;
-            color: $muted-grey;
+            color: var(--muted-grey);
             transition: all 0.3s;
 
             &:focus {
               + .icon {
-                color: $primary;
+                color: var(--primary);
               }
             }
           }
@@ -864,7 +862,7 @@ watchPostEffect(() => {
               .autocpl-avatar {
                 width: 40px !important;
                 height: 40px !important;
-                border-radius: $radius-rounded !important;
+                border-radius: var(--radius-rounded) !important;
               }
 
               .avatar-badge {
@@ -873,8 +871,8 @@ watchPostEffect(() => {
                 right: -5px;
                 width: 18px;
                 height: 18px;
-                border: 2px solid $white;
-                border-radius: $radius-rounded;
+                border: 2px solid var(--white);
+                border-radius: var(--radius-rounded);
               }
             }
 
@@ -883,7 +881,7 @@ watchPostEffect(() => {
 
               span {
                 font-size: 0.8rem;
-                color: $title-grey;
+                color: var(--title-grey);
               }
             }
           }
@@ -903,7 +901,7 @@ watchPostEffect(() => {
         border: none !important;
 
         ul {
-          border-radius: $radius !important;
+          border-radius: var(--radius) !important;
           box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06) !important;
         }
       }
@@ -921,8 +919,8 @@ watchPostEffect(() => {
       img {
         height: 36px;
         width: 36px;
-        border: 3px solid $white;
-        border-radius: $radius-rounded;
+        border: 3px solid var(--white);
+        border-radius: var(--radius-rounded);
         display: block;
 
         &:nth-child(2),
@@ -935,17 +933,17 @@ watchPostEffect(() => {
       .more-indicator {
         height: 36px;
         width: 36px;
-        border-radius: $radius-rounded;
-        background: $primary;
+        border-radius: var(--radius-rounded);
+        background: var(--primary);
         display: flex;
         justify-content: center;
         align-items: center;
         margin-left: -15px;
-        border: 2px solid $white;
+        border: 2px solid var(--white);
 
         span {
           display: block;
-          color: $white;
+          color: var(--white);
           font-weight: 600;
           font-size: 0.8rem;
         }
@@ -984,8 +982,8 @@ watchPostEffect(() => {
   position: relative;
   width: 320px;
   height: 100%;
-  border-left: 1px solid $fade-grey;
-  background: $white;
+  border-left: 1px solid var(--fade-grey);
+  background: var(--white);
   z-index: 3;
   transition: all 0.3s;
 
@@ -1010,7 +1008,7 @@ watchPostEffect(() => {
       img {
         height: 90px;
         width: 90px;
-        border-radius: $radius-rounded;
+        border-radius: var(--radius-rounded);
         display: block;
 
         &.is-squared {
@@ -1022,10 +1020,10 @@ watchPostEffect(() => {
           position: absolute;
           right: -6px;
           bottom: 0;
-          border: 3px solid $white;
+          border: 3px solid var(--white);
           height: 34px;
           width: 34px;
-          border-radius: $radius-rounded;
+          border-radius: var(--radius-rounded);
         }
       }
     }
@@ -1034,21 +1032,21 @@ watchPostEffect(() => {
       margin-top: 10px;
       font-size: 1.2rem;
       font-weight: 700;
-      color: $dark-text;
+      color: var(--dark-text);
     }
 
     .user-job-title {
-      color: $muted-grey;
+      color: var(--muted-grey);
     }
 
     .side-actions {
       padding: 12px 0;
 
       .button {
-        color: $light-text;
+        color: var(--light-text);
 
         &:hover {
-          box-shadow: $light-box-shadow;
+          box-shadow: var(--light-box-shadow);
         }
       }
     }
@@ -1064,7 +1062,7 @@ watchPostEffect(() => {
         font-weight: 400;
         font-size: 1rem;
         margin-bottom: 20px;
-        color: $light-text;
+        color: var(--light-text);
 
         svg {
           width: 16px;
@@ -1090,7 +1088,7 @@ watchPostEffect(() => {
 
       .view-more {
         display: block;
-        color: $primary;
+        color: var(--primary);
         font-weight: 600;
         font-size: 15px;
         margin: 25px 0;
@@ -1126,7 +1124,7 @@ watchPostEffect(() => {
       margin: 1.5em auto 1.5em auto;
 
       span {
-        color: $placeholder;
+        color: var(--placeholder);
         font-weight: 400;
         text-transform: uppercase;
         font-size: 0.8rem;
@@ -1153,7 +1151,7 @@ watchPostEffect(() => {
     position: relative;
     display: block;
     z-index: 2;
-    border-radius: $radius-rounded;
+    border-radius: var(--radius-rounded);
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     -ms-border-radius: 100%;
@@ -1162,7 +1160,7 @@ watchPostEffect(() => {
     img {
       width: 40px;
       height: 40px;
-      border-radius: $radius-rounded;
+      border-radius: var(--radius-rounded);
       background-color: rgba(255, 255, 255, 0.9);
       -webkit-touch-callout: none;
       -webkit-user-select: none;
@@ -1178,14 +1176,16 @@ watchPostEffect(() => {
     text-align: center;
     color: #c0c0c0;
     height: 20px;
-    text-shadow: 7px 0 0 $lighter-grey, 6px 0 0 $lighter-grey,
-      5px 0 0 $lighter-grey, 4px 0 0 $lighter-grey, 3px 0 0 $lighter-grey,
-      2px 0 0 $lighter-grey, 1px 0 0 $lighter-grey, 1px 0 0 $lighter-grey,
-      0 0 0 $lighter-grey, -1px 0 0 $lighter-grey, -2px 0 0 $lighter-grey,
-      -3px 0 0 $lighter-grey, -4px 0 0 $lighter-grey, -5px 0 0 $lighter-grey,
-      -6px 0 0 $lighter-grey, -7px 0 0 $lighter-grey;
-    box-shadow: inset 20px 0 0 $lighter-grey, inset -20px 0 0 $lighter-grey,
-      inset 0 -2px 0 #d7d7d7;
+    text-shadow: 7px 0 0 var(--lighter-grey), 6px 0 0 var(--lighter-grey),
+      5px 0 0 var(--lighter-grey), 4px 0 0 var(--lighter-grey),
+      3px 0 0 var(--lighter-grey), 2px 0 0 var(--lighter-grey),
+      1px 0 0 var(--lighter-grey), 1px 0 0 var(--lighter-grey),
+      0 0 0 var(--lighter-grey), -1px 0 0 var(--lighter-grey),
+      -2px 0 0 var(--lighter-grey), -3px 0 0 var(--lighter-grey),
+      -4px 0 0 var(--lighter-grey), -5px 0 0 var(--lighter-grey),
+      -6px 0 0 var(--lighter-grey), -7px 0 0 var(--lighter-grey);
+    box-shadow: inset 20px 0 0 var(--lighter-grey),
+      inset -20px 0 0 var(--lighter-grey), inset 0 -2px 0 #d7d7d7;
     line-height: 38px;
     margin-top: 5px;
     margin-bottom: 20px;
@@ -1205,7 +1205,7 @@ watchPostEffect(() => {
       }
 
       .msg {
-        border-radius: $radius-large;
+        border-radius: var(--radius-large);
 
         &::after {
           display: none;
@@ -1236,12 +1236,12 @@ watchPostEffect(() => {
 
       p {
         font-size: 0.9rem;
-        color: $light-text;
+        color: var(--light-text);
       }
 
       .msg-inner {
-        background: $white;
-        color: $dark-text;
+        background: var(--white);
+        color: var(--dark-text);
         border-radius: 0 12px 12px 12px;
         padding: 16px;
         position: relative;
@@ -1251,7 +1251,7 @@ watchPostEffect(() => {
         display: block;
         text-align: right;
         font-size: 0.8rem;
-        color: $light-text;
+        color: var(--light-text);
         margin-top: 3px;
         cursor: default;
         -webkit-touch-callout: none;
@@ -1265,7 +1265,7 @@ watchPostEffect(() => {
           top: 1px;
           height: 10px;
           width: 10px;
-          color: $white;
+          color: var(--white);
           margin-left: 3px;
         }
       }
@@ -1294,7 +1294,7 @@ watchPostEffect(() => {
 
       .msg-inner {
         background: #e6e5ed;
-        color: $dark-text;
+        color: var(--dark-text);
         border-radius: 12px 0 12px 12px;
         padding: 12px;
       }
@@ -1307,7 +1307,7 @@ watchPostEffect(() => {
         display: block;
         text-align: left;
         font-size: 0.8rem;
-        color: $light-text;
+        color: var(--light-text);
         margin-top: 3px;
         cursor: default;
         -webkit-touch-callout: none;
@@ -1321,7 +1321,7 @@ watchPostEffect(() => {
           top: 1px;
           height: 10px;
           width: 10px;
-          color: $dark-text;
+          color: var(--dark-text);
           margin-right: 3px;
         }
       }
@@ -1372,7 +1372,7 @@ watchPostEffect(() => {
       }
 
       p {
-        color: $muted-grey;
+        color: var(--muted-grey);
       }
     }
   }
@@ -1441,7 +1441,7 @@ watchPostEffect(() => {
         position: relative;
         display: block;
         border-radius: 3px;
-        border: 4px solid $white;
+        border: 4px solid var(--white);
         z-index: 1;
       }
 
@@ -1452,8 +1452,8 @@ watchPostEffect(() => {
         width: 100%;
         height: 100%;
         opacity: 0;
-        background: $primary;
-        border: 4px solid $white;
+        background: var(--primary);
+        border: 4px solid var(--white);
         border-radius: 3px;
         transition: all 0.3s;
         z-index: 2;
@@ -1484,24 +1484,24 @@ watchPostEffect(() => {
             align-items: center;
             height: 40px;
             width: 40px;
-            border-radius: $radius-rounded;
-            background: $white;
+            border-radius: var(--radius-rounded);
+            background: var(--white);
             margin: 0 6px;
             cursor: pointer;
             transition: all 0.3s;
 
             &:hover {
-              background: $success;
+              background: var(--success);
 
               svg {
-                color: $smoke-white;
+                color: var(--smoke-white);
               }
             }
 
             svg {
               height: 18px;
               width: 18px;
-              color: $success;
+              color: var(--success);
               transition: all 0.3s;
             }
           }
@@ -1520,7 +1520,7 @@ watchPostEffect(() => {
 
       img {
         max-width: 320px;
-        border-radius: $radius-large 6px 0 0;
+        border-radius: var(--radius-large) 6px 0 0;
       }
 
       .link-badge {
@@ -1535,7 +1535,7 @@ watchPostEffect(() => {
           display: block;
           height: 40px;
           width: 40px;
-          border-radius: $radius-rounded;
+          border-radius: var(--radius-rounded);
         }
       }
     }
@@ -1546,14 +1546,14 @@ watchPostEffect(() => {
       .link-title {
         display: block;
         font-weight: 500;
-        color: $dark-text;
+        color: var(--dark-text);
       }
 
       small {
         display: block;
         width: 100%;
         font-size: 0.75rem;
-        color: $muted-grey;
+        color: var(--muted-grey);
         padding-top: 5px;
       }
     }
@@ -1578,9 +1578,9 @@ watchPostEffect(() => {
       height: 36px;
       min-width: 36px !important;
       max-height: 36px;
-      border-radius: $radius-rounded;
-      border: 2px solid $white;
-      background: $primary;
+      border-radius: var(--radius-rounded);
+      border: 2px solid var(--white);
+      background: var(--primary);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -1588,7 +1588,7 @@ watchPostEffect(() => {
       svg {
         width: 16px;
         height: 16px;
-        color: $white;
+        color: var(--white);
       }
     }
 
@@ -1596,7 +1596,7 @@ watchPostEffect(() => {
       margin-left: 10px;
 
       span {
-        color: $dark-text;
+        color: var(--dark-text);
         font-weight: 500;
         font-size: 0.9rem;
       }
@@ -1605,7 +1605,7 @@ watchPostEffect(() => {
         display: block;
         font-size: 0.9rem;
         font-weight: 500;
-        color: $primary;
+        color: var(--primary);
       }
     }
 
@@ -1624,7 +1624,7 @@ watchPostEffect(() => {
     display: block;
     width: 450px;
     border-radius: 5px;
-    box-shadow: 0 0 3px $light-grey;
+    box-shadow: 0 0 3px var(--light-grey);
     transition: all 0.4s cubic-bezier(0.565, -0.26, 0.255, 1.41);
     cursor: default;
     -webkit-touch-callout: none;
@@ -1686,10 +1686,10 @@ watchPostEffect(() => {
       &:hover {
         > div {
           .button {
-            background: $fade-grey;
+            background: var(--fade-grey);
 
             svg {
-              color: $primary;
+              color: var(--primary);
             }
           }
         }
@@ -1706,7 +1706,7 @@ watchPostEffect(() => {
       .button {
         width: 28px;
         height: 28px;
-        border-radius: $radius-rounded;
+        border-radius: var(--radius-rounded);
         border: none;
         padding: 0;
         display: flex;
@@ -1715,7 +1715,7 @@ watchPostEffect(() => {
         transition: all 0.3s;
 
         svg {
-          color: $placeholder;
+          color: var(--placeholder);
           stroke-width: 2px;
           height: 18px;
           width: 18px;
@@ -1731,7 +1731,7 @@ watchPostEffect(() => {
           svg {
             height: 18px;
             width: 18px;
-            color: $muted-grey;
+            color: var(--muted-grey);
           }
 
           .meta {
@@ -1743,12 +1743,12 @@ watchPostEffect(() => {
               &:first-child {
                 font-size: 0.9rem;
                 font-weight: 500;
-                color: $dark-text;
+                color: var(--dark-text);
               }
 
               &:nth-child(2) {
                 font-size: 0.9rem;
-                color: $muted-grey;
+                color: var(--muted-grey);
               }
             }
           }
@@ -1769,10 +1769,10 @@ watchPostEffect(() => {
 
       &:hover {
         .button {
-          background: $fade-grey;
+          background: var(--fade-grey);
 
           svg {
-            color: $primary;
+            color: var(--primary);
           }
         }
       }
@@ -1780,7 +1780,7 @@ watchPostEffect(() => {
       .button {
         width: 28px;
         height: 28px;
-        border-radius: $radius-rounded;
+        border-radius: var(--radius-rounded);
         border: none;
         padding: 0;
         display: flex;
@@ -1789,7 +1789,7 @@ watchPostEffect(() => {
         transition: all 0.3s;
 
         svg {
-          color: $placeholder;
+          color: var(--placeholder);
           stroke-width: 2px;
           height: 18px;
           width: 18px;
@@ -1870,11 +1870,11 @@ watchPostEffect(() => {
       h3 {
         font-size: 1.4rem;
         font-weight: 500;
-        color: $dark-text;
+        color: var(--dark-text);
       }
 
       p {
-        color: $muted-grey;
+        color: var(--muted-grey);
         margin-bottom: 10px;
       }
     }
@@ -1887,39 +1887,39 @@ watchPostEffect(() => {
 
 .is-dark {
   .chat-side-fab {
-    background: $dark-sidebar-light-2 !important;
-    border-color: $dark-sidebar-light-12 !important;
+    background: var(--dark-sidebar-light-2) !important;
+    border-color: var(--dark-sidebar-light-12) !important;
   }
 
   .is-chat-placeholder {
-    background: $dark-sidebar-light-5 !important;
-    border-color: $dark-sidebar-light-5 !important;
+    background: var(--dark-sidebar-light-5) !important;
+    border-color: var(--dark-sidebar-light-5) !important;
 
     h3 {
-      color: $accent-grey-dark-15 !important;
+      color: var(--primary-grey-dark-15) !important;
     }
   }
 
   .is-chat {
     border: none !important;
-    background: $dark-sidebar-light-3 !important;
+    background: var(--dark-sidebar-light-3) !important;
 
     .chat-loader {
-      background: $dark-sidebar-light-2;
+      background: var(--dark-sidebar-light-2);
     }
 
     .chat-header {
-      //background: $dark-sidebar-light-2;
-      //border-color: $dark-sidebar-light-2;
+      //background: var(--dark-sidebar-light-2);
+      //border-color: var(--dark-sidebar-light-2);
 
       .is-badge {
-        border-color: $dark-sidebar !important;
+        border-color: var(--dark-sidebar) !important;
       }
 
       .recipient-meta {
         span {
           &:first-child {
-            color: $accent-grey-light-6 !important;
+            color: var(--primary-grey-light-6) !important;
           }
         }
       }
@@ -1927,7 +1927,7 @@ watchPostEffect(() => {
       .chat-options {
         #hide-conversation:hover,
         #hide-chat-side:hover {
-          color: $accent !important;
+          color: var(--primary) !important;
         }
       }
 
@@ -1941,52 +1941,52 @@ watchPostEffect(() => {
         #users-autocpl {
           background: none;
           border-color: none;
-          color: $accent-grey-dark-4;
+          color: var(--primary-grey-dark-4);
 
           &::-webkit-input-placeholder {
-            color: $accent-grey-dark-30 !important;
+            color: var(--primary-grey-dark-30) !important;
           }
 
           &::-moz-placeholder {
-            color: $accent-grey-dark-30 !important;
+            color: var(--primary-grey-dark-30) !important;
           }
 
           &:-ms-input-placeholder {
-            color: $accent-grey-dark-30 !important;
+            color: var(--primary-grey-dark-30) !important;
           }
 
           &:-moz-placeholder {
-            color: $accent-grey-dark-30 !important;
+            color: var(--primary-grey-dark-30) !important;
           }
         }
 
         svg {
-          color: $accent-grey-dark-30 !important;
+          color: var(--primary-grey-dark-30) !important;
         }
 
         .icon span {
-          color: $smoke-white !important;
+          color: var(--smoke-white) !important;
         }
 
         .easy-autocomplete-container {
-          background: $dark-sidebar;
+          background: var(--dark-sidebar);
 
           ul {
-            background: none repeat scroll 0 0 $dark-sidebar;
+            background: none repeat scroll 0 0 var(--dark-sidebar);
             border-top: none;
 
             li {
-              border-color: $dark-sidebar !important;
+              border-color: var(--dark-sidebar) !important;
 
               &.selected {
-                background: $dark-sidebar-light-2;
+                background: var(--dark-sidebar-light-2);
               }
 
               .entry-text {
-                color: $accent-grey-dark-10;
+                color: var(--primary-grey-dark-10);
 
                 span {
-                  color: $accent-grey-dark-40 !important;
+                  color: var(--primary-grey-dark-40) !important;
                 }
               }
             }
@@ -1996,35 +1996,35 @@ watchPostEffect(() => {
     }
 
     .chat-side {
-      background: $dark-sidebar-light-4;
-      border-color: $dark-sidebar-light-2;
+      background: var(--dark-sidebar-light-4);
+      border-color: var(--dark-sidebar-light-2);
 
       .user-name {
-        color: $accent-grey;
+        color: var(--primary-grey);
       }
 
       .chat-side-content {
         .is-badge {
-          border-color: $dark-sidebar-light-4;
+          border-color: var(--dark-sidebar-light-4);
         }
 
         .detail-photos {
           .view-more {
-            color: $accent;
+            color: var(--primary);
           }
         }
       }
     }
 
     .chat-body {
-      background: $dark-sidebar-light-7;
+      background: var(--dark-sidebar-light-7);
 
       .divider span {
-        color: $dark-sidebar-light-22 !important;
+        color: var(--dark-sidebar-light-22) !important;
 
         &::before,
         &::after {
-          border-color: $dark-sidebar-light-15 !important;
+          border-color: var(--dark-sidebar-light-15) !important;
         }
       }
 
@@ -2032,11 +2032,11 @@ watchPostEffect(() => {
         &.other {
           .msg {
             .msg-inner {
-              color: $smoke-white;
-              background: $accent;
+              color: var(--smoke-white);
+              background: var(--primary);
 
               p {
-                color: $smoke-white;
+                color: var(--smoke-white);
               }
             }
           }
@@ -2045,15 +2045,15 @@ watchPostEffect(() => {
         &.self {
           .msg {
             .msg-inner {
-              background: $dark-sidebar-light-15 !important;
-              color: $accent-grey-dark-10 !important;
+              background: var(--dark-sidebar-light-15) !important;
+              color: var(--primary-grey-dark-10) !important;
             }
 
             time {
-              color: $accent-grey-dark-10 !important;
+              color: var(--primary-grey-dark-10) !important;
 
               svg {
-                color: $accent-grey-dark-10 !important;
+                color: var(--primary-grey-dark-10) !important;
               }
             }
           }
@@ -2065,32 +2065,32 @@ watchPostEffect(() => {
           border-radius: 10px;
 
           .link-body {
-            background: $dark-sidebar-light-5;
+            background: var(--dark-sidebar-light-5);
             border-radius: 0 0 6px 6px;
 
             .link-title,
             small {
-              color: $smoke-white !important;
+              color: var(--smoke-white) !important;
             }
           }
         }
 
         &.is-link {
-          background: $dark-sidebar-light-3;
-          border-radius: $radius-large;
+          background: var(--dark-sidebar-light-3);
+          border-radius: var(--radius-large);
 
           .icon-wrapper {
-            border-color: $dark-sidebar-light-5;
-            background: $accent;
+            border-color: var(--dark-sidebar-light-5);
+            background: var(--primary);
           }
 
           .link-meta {
             span {
-              color: $smoke-white !important;
+              color: var(--smoke-white) !important;
             }
 
             a {
-              color: $accent !important;
+              color: var(--primary) !important;
             }
           }
         }
@@ -2098,7 +2098,7 @@ watchPostEffect(() => {
         &.is-image {
           .image-container {
             .image-overlay {
-              background: $accent;
+              background: var(--primary);
             }
           }
         }
@@ -2108,14 +2108,14 @@ watchPostEffect(() => {
     .message-field-wrapper {
       .add-content {
         .button {
-          background: $accent;
-          border-color: $accent;
+          background: var(--primary);
+          border-color: var(--primary);
         }
 
         .dropdown-item {
           .meta {
             span:first-child {
-              color: $smoke-white !important;
+              color: var(--smoke-white) !important;
             }
           }
         }
@@ -2127,42 +2127,42 @@ watchPostEffect(() => {
     }
 
     #chat-input {
-      background: $dark-sidebar-light-2 !important;
-      color: $accent-grey-dark-10 !important;
+      background: var(--dark-sidebar-light-2) !important;
+      color: var(--primary-grey-dark-10) !important;
 
       &::-webkit-input-placeholder {
-        color: $accent-grey-dark-15 !important;
+        color: var(--primary-grey-dark-15) !important;
       }
 
       &::-moz-placeholder {
-        color: $accent-grey-dark-15 !important;
+        color: var(--primary-grey-dark-15) !important;
       }
 
       &:-ms-input-placeholder {
-        color: $accent-grey-dark-15 !important;
+        color: var(--primary-grey-dark-15) !important;
       }
 
       &:-moz-placeholder {
-        color: $accent-grey-dark-15 !important;
+        color: var(--primary-grey-dark-15) !important;
       }
     }
   }
 
   .collapsed-messaging {
-    background: $dark-sidebar-light-5;
-    border-color: $dark-sidebar-light-5 !important;
+    background: var(--dark-sidebar-light-5);
+    border-color: var(--dark-sidebar-light-5) !important;
 
     .collapsed-conversations {
       li {
         &.is-active {
-          background: $dark-sidebar-light-2;
-          border-color: $accent !important;
+          background: var(--dark-sidebar-light-2);
+          border-color: var(--primary) !important;
         }
 
         .user-container {
           .is-badge,
           .is-count {
-            border-color: $dark-sidebar-light-5 !important;
+            border-color: var(--dark-sidebar-light-5) !important;
           }
         }
       }
@@ -2332,7 +2332,7 @@ watchPostEffect(() => {
   .collapsed-messaging {
     &.is-active {
       left: 60px !important;
-      border-left: 1px $fade-grey-dark-3;
+      border-left: 1px var(--fade-grey-dark-3);
     }
   }
 }

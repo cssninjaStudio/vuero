@@ -49,7 +49,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: $dark-sidebar;
+    background-color: var(--dark-sidebar);
     opacity: 0;
     pointer-events: none;
     z-index: 101;
@@ -62,7 +62,7 @@
     right: 0;
     width: 360px;
     height: 100%;
-    background: $white;
+    background: var(--white);
     transform: translateX(100%);
     z-index: 102;
     transition: all 0.3s;
@@ -77,8 +77,8 @@
       padding: 0 20px;
 
       h3 {
-        color: $muted-grey;
-        font-family: $font-alt;
+        color: var(--muted-grey);
+        font-family: var(--font-alt);
         font-size: 1.2rem;
       }
 
@@ -92,19 +92,19 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: $radius-rounded;
+        border-radius: var(--radius-rounded);
         transition: all 0.3s;
 
         &:hover {
-          background: $fade-grey;
+          background: var(--fade-grey);
 
           svg {
-            color: $primary;
+            color: var(--primary);
           }
         }
 
         svg {
-          color: $light-text;
+          color: var(--light-text);
           height: 22px;
           width: 22px;
           transition: stroke 0.3s;
@@ -127,19 +127,19 @@
 .is-dark {
   .right-panel-wrapper {
     .right-panel {
-      background: $dark-sidebar;
+      background: var(--dark-sidebar);
 
       .right-panel-head {
         h3 {
-          color: $dark-dark-text;
+          color: var(--dark-dark-text);
         }
 
         .close-panel {
           &:hover {
-            background: $dark-sidebar-light-6;
+            background: var(--dark-sidebar-light-6);
 
             svg {
-              color: $accent;
+              color: var(--primary);
             }
           }
         }
@@ -186,7 +186,7 @@
 
               &:checked {
                 + .language-option-inner {
-                  border-color: $primary;
+                  border-color: var(--primary);
 
                   .indicator {
                     display: flex;
@@ -202,10 +202,10 @@
               align-items: center;
               height: 55px;
               width: 55px;
-              border-radius: $radius-rounded;
-              border: 1.6px solid $fade-grey;
-              background: $white;
-              box-shadow: $light-box-shadow;
+              border-radius: var(--radius-rounded);
+              border: 1.6px solid var(--fade-grey);
+              background: var(--white);
+              box-shadow: var(--light-box-shadow);
               transition: all 0.3s;
 
               img {
@@ -213,7 +213,7 @@
                 width: 40px;
                 min-width: 40px;
                 height: 40px;
-                border-radius: $radius-rounded;
+                border-radius: var(--radius-rounded);
               }
 
               .indicator {
@@ -222,18 +222,18 @@
                 right: -4px;
                 height: 26px;
                 width: 26px;
-                border-radius: $radius-rounded;
+                border-radius: var(--radius-rounded);
                 display: none;
                 justify-content: center;
                 align-items: center;
-                background: $primary;
-                border: 3px solid $white;
+                background: var(--primary);
+                border: 3px solid var(--white);
 
                 svg {
                   height: 10px;
                   width: 10px;
                   stroke-width: 3px;
-                  color: $white;
+                  color: var(--white);
                 }
               }
             }
@@ -264,18 +264,18 @@
               input {
                 &:checked {
                   + .language-option-inner {
-                    border-color: $accent;
+                    border-color: var(--primary);
                   }
                 }
               }
 
               .language-option-inner {
-                border-color: $dark-sidebar-light-12;
-                background: $dark-sidebar;
+                border-color: var(--dark-sidebar-light-12);
+                background: var(--dark-sidebar);
 
                 .indicator {
-                  background: $accent;
-                  border-color: $dark-sidebar;
+                  background: var(--primary);
+                  border-color: var(--dark-sidebar);
                 }
               }
             }
@@ -316,12 +316,12 @@
               display: block;
 
               &:first-child {
-                color: $dark-text;
+                color: var(--dark-text);
                 font-weight: 500;
               }
 
               &:nth-child(2) {
-                color: $light-text;
+                color: var(--light-text);
                 font-size: 0.9rem;
 
                 svg {
@@ -340,24 +340,24 @@
             margin-left: auto;
             height: 34px;
             width: 34px;
-            background: $white;
-            border: 1px solid $fade-grey-dark-3;
-            border-radius: $radius-rounded;
+            background: var(--white);
+            border: 1px solid var(--fade-grey-dark-3);
+            border-radius: var(--radius-rounded);
             transition: all 0.3s;
 
             &:hover {
-              border-color: $primary;
-              box-shadow: $light-box-shadow;
+              border-color: var(--primary);
+              box-shadow: var(--light-box-shadow);
 
               svg {
-                color: $primary;
+                color: var(--primary);
               }
             }
 
             svg {
               height: 16px;
               width: 16px;
-              color: $light-text;
+              color: var(--light-text);
             }
           }
         }
@@ -386,15 +386,15 @@
                 display: block;
 
                 &:first-child {
-                  color: $dark-text;
-                  font-family: $font-alt;
+                  color: var(--dark-text);
+                  font-family: var(--font-alt);
                   font-size: 0.9rem;
                   font-weight: 600;
                 }
 
                 &:nth-child(2) {
-                  font-family: $font;
-                  color: $light-text;
+                  font-family: var(--font);
+                  color: var(--light-text);
                   font-size: 0.9rem;
                 }
               }
@@ -407,24 +407,24 @@
               margin-left: auto;
               height: 34px;
               width: 34px;
-              background: $white;
-              border: 1px solid $fade-grey-dark-3;
-              border-radius: $radius-rounded;
+              background: var(--white);
+              border: 1px solid var(--fade-grey-dark-3);
+              border-radius: var(--radius-rounded);
               transition: all 0.3s;
 
               &:hover {
-                border-color: $primary;
-                box-shadow: $light-box-shadow;
+                border-color: var(--primary);
+                box-shadow: var(--light-box-shadow);
 
                 svg {
-                  color: $primary;
+                  color: var(--primary);
                 }
               }
 
               svg {
                 height: 16px;
                 width: 16px;
-                color: $light-text;
+                color: var(--light-text);
               }
             }
           }
@@ -443,8 +443,8 @@
               justify-content: space-between;
 
               span {
-                font-family: $font;
-                color: $light-text;
+                font-family: var(--font);
+                color: var(--light-text);
               }
             }
           }
@@ -465,7 +465,7 @@
               left: 18px;
               width: 1px;
               height: calc(100% - 36px);
-              border-left: 1px solid $fade-grey-dark-3;
+              border-left: 1px solid var(--fade-grey-dark-3);
             }
 
             .timeline-icon {
@@ -475,11 +475,11 @@
               display: flex;
               justify-content: center;
               align-items: center;
-              background: $white;
-              border: 1px solid $fade-grey-dark-3;
-              border-radius: $radius-rounded;
-              color: $light-text;
-              box-shadow: $light-box-shadow;
+              background: var(--white);
+              border: 1px solid var(--fade-grey-dark-3);
+              border-radius: var(--radius-rounded);
+              color: var(--light-text);
+              box-shadow: var(--light-box-shadow);
 
               &::after {
                 content: '';
@@ -488,14 +488,14 @@
                 left: 40px;
                 width: 20px;
                 height: 1px;
-                border-top: 1px solid $fade-grey-dark-3;
+                border-top: 1px solid var(--fade-grey-dark-3);
               }
 
               img {
                 display: block;
                 height: 28px;
                 width: 28px;
-                border-radius: $radius-rounded;
+                border-radius: var(--radius-rounded);
               }
 
               svg {
@@ -511,12 +511,12 @@
 
               p {
                 font-size: 0.95rem;
-                font-family: $font-alt;
+                font-family: var(--font-alt);
               }
 
               span {
                 font-size: 0.85rem;
-                color: $light-text;
+                color: var(--light-text);
               }
             }
           }
@@ -549,8 +549,8 @@
         .project-card {
           @include vuero-card--dark();
 
-          background: $dark-sidebar-light-2 !important;
-          border-color: $dark-sidebar-light-8 !important;
+          background: var(--dark-sidebar-light-2) !important;
+          border-color: var(--dark-sidebar-light-8) !important;
         }
 
         .team-card,
@@ -558,20 +558,20 @@
           .meta {
             span {
               &:first-child {
-                color: $dark-dark-text;
+                color: var(--dark-dark-text);
               }
             }
           }
 
           .link {
-            background: $dark-sidebar-light-6 !important;
-            border-color: $dark-sidebar-light-12 !important;
+            background: var(--dark-sidebar-light-6) !important;
+            border-color: var(--dark-sidebar-light-12) !important;
 
             &:hover {
-              border-color: $accent !important;
+              border-color: var(--primary) !important;
 
               svg {
-                color: $accent !important;
+                color: var(--primary) !important;
               }
             }
           }
@@ -580,15 +580,15 @@
         .icon-timeline {
           .timeline-item {
             &::after {
-              border-color: $dark-sidebar-light-12 !important;
+              border-color: var(--dark-sidebar-light-12) !important;
             }
 
             .timeline-icon {
-              background: $dark-sidebar-light-6 !important;
-              border-color: $dark-sidebar-light-12 !important;
+              background: var(--dark-sidebar-light-6) !important;
+              border-color: var(--dark-sidebar-light-12) !important;
 
               &::after {
-                border-color: $dark-sidebar-light-12 !important;
+                border-color: var(--dark-sidebar-light-12) !important;
               }
             }
           }
@@ -617,28 +617,28 @@
         .task-group {
           margin-bottom: 20px;
           padding-bottom: 20px;
-          border-bottom: 1.6px dashed $fade-grey-dark-3 h3 {
+          border-bottom: 1.6px dashed var(--fade-grey-dark-3) h3 {
             text-transform: uppercase;
-            font-family: $font-alt;
+            font-family: var(--font-alt);
             font-size: 0.8rem;
             font-weight: 600;
-            color: $primary;
+            color: var(--primary);
             margin-bottom: 10px;
           }
 
           h4 {
-            font-family: $font-alt;
+            font-family: var(--font-alt);
             font-size: 1rem;
             font-weight: 600;
-            color: $dark-text;
+            color: var(--dark-text);
             margin-bottom: 5px;
           }
 
           h5 {
             text-transform: uppercase;
-            font-family: $font;
+            font-family: var(--font);
             font-size: 0.8rem;
-            color: $light-text;
+            color: var(--light-text);
           }
 
           .task-description {
@@ -650,10 +650,10 @@
 
               a {
                 text-transform: uppercase;
-                font-family: $font;
+                font-family: var(--font);
                 font-weight: 600;
                 font-size: 0.75rem;
-                color: $light-text;
+                color: var(--light-text);
               }
             }
           }
@@ -669,9 +669,9 @@
                 width: 40px;
                 border-right: 50%;
                 background: none;
-                border: 1.8px dashed $light-text;
-                border-radius: $radius-rounded;
-                color: $light-text;
+                border: 1.8px dashed var(--light-text);
+                border-radius: var(--radius-rounded);
+                color: var(--light-text);
                 cursor: pointer;
                 outline: none;
                 padding: 0;
@@ -681,8 +681,8 @@
                 transition: all 0.3s;
 
                 &:hover {
-                  border: 1.8px solid $primary;
-                  color: $primary;
+                  border: 1.8px solid var(--primary);
+                  color: var(--primary);
                 }
 
                 svg {
@@ -704,7 +704,7 @@
             a {
               display: flex;
               align-items: center;
-              color: $light-text;
+              color: var(--light-text);
 
               span {
                 margin-left: 3px;
@@ -722,10 +722,10 @@
 
             a {
               text-transform: uppercase;
-              font-family: $font;
+              font-family: var(--font);
               font-weight: 600;
               font-size: 0.75rem;
-              color: $primary;
+              color: var(--primary);
 
               span {
                 margin-left: 5px;
@@ -744,15 +744,15 @@
               display: flex;
               align-items: center;
               padding: 8px;
-              background: $white;
+              background: var(--white);
               border: 1px solid transparent;
               border-radius: 12px;
               cursor: pointer;
               transition: all 0.3s;
 
               &:hover {
-                border-color: $fade-grey-dark-3;
-                box-shadow: $light-box-shadow;
+                border-color: var(--fade-grey-dark-3);
+                box-shadow: var(--light-box-shadow);
               }
 
               img {
@@ -770,21 +770,21 @@
                   display: block;
 
                   &:first-child {
-                    font-family: $font-alt;
+                    font-family: var(--font-alt);
                     font-size: 0.9rem;
                     font-weight: 600;
-                    color: $dark-text;
+                    color: var(--dark-text);
                   }
 
                   &:nth-child(2) {
                     font-size: 0.9rem;
-                    color: $light-text;
+                    color: var(--light-text);
 
                     i {
                       position: relative;
                       top: -3px;
                       font-size: 0.3rem;
-                      color: $light-text;
+                      color: var(--light-text);
                       margin: 0 4px;
                     }
                   }
@@ -809,15 +809,15 @@
                   display: flex;
                   justify-content: center;
                   align-items: center;
-                  color: $light-text;
-                  border-radius: $radius-rounded;
+                  color: var(--light-text);
+                  border-radius: var(--radius-rounded);
                   border: 1px solid transparent;
                   transition: all 0.3s;
 
                   &:hover {
-                    border-color: $fade-grey-dark-4;
-                    box-shadow: $light-box-shadow;
-                    color: $primary;
+                    border-color: var(--fade-grey-dark-4);
+                    box-shadow: var(--light-box-shadow);
+                    color: var(--primary);
                   }
 
                   svg {
@@ -848,14 +848,14 @@
       .right-panel {
         .right-panel-body {
           .task-group {
-            border-color: $dark-sidebar-light-12 !important;
+            border-color: var(--dark-sidebar-light-12) !important;
 
             h3 {
-              color: $accent;
+              color: var(--primary);
             }
 
             h4 {
-              color: $dark-dark-text;
+              color: var(--dark-dark-text);
             }
 
             .task-participants {
@@ -863,15 +863,15 @@
                 .avatar-stack {
                   .v-avatar {
                     img {
-                      border-color: $dark-sidebar;
+                      border-color: var(--dark-sidebar);
                     }
                   }
                 }
 
                 button {
                   &:hover {
-                    border-color: $accent;
-                    color: $accent;
+                    border-color: var(--primary);
+                    color: var(--primary);
                   }
                 }
               }
@@ -879,19 +879,19 @@
 
             .task-stats {
               > a {
-                color: $accent;
+                color: var(--primary);
               }
             }
 
             .task-files {
               .file-box {
-                background: $dark-sidebar !important;
-                border-color: $dark-sidebar !important;
+                background: var(--dark-sidebar) !important;
+                border-color: var(--dark-sidebar) !important;
 
                 .meta {
                   span {
                     &:first-child {
-                      color: $dark-dark-text;
+                      color: var(--dark-dark-text);
                     }
                   }
                 }
@@ -938,14 +938,14 @@
         }
 
         .recent {
-          font-family: $font;
+          font-family: var(--font);
           margin-bottom: 30px;
           padding: 0 20px;
 
           h4 {
             text-transform: uppercase;
             font-size: 0.8rem;
-            color: $light-text;
+            color: var(--light-text);
             margin-bottom: 12px;
           }
 

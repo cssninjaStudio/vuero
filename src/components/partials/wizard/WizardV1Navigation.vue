@@ -179,7 +179,6 @@ const setStep = (target: number) => {
 </template>
 
 <style lang="scss" scoped>
-@import '../../../scss/abstracts/_variables.scss';
 @import '../../../scss/abstracts/_mixins.scss';
 
 .wizard-navigation {
@@ -189,7 +188,7 @@ const setStep = (target: number) => {
   justify-content: flex-start;
   align-items: center;
   height: 60px;
-  background: $white;
+  background: var(--white);
   padding: 0 20px;
   transition: all 0.3s;
   z-index: 99;
@@ -205,15 +204,15 @@ const setStep = (target: number) => {
   .navbar-item {
     &.is-wizard-title {
       margin-left: 15px;
-      border-left: 1px solid $muted-grey-light-15;
+      border-left: 1px solid var(--muted-grey-light-15);
       padding-bottom: 6px;
       padding-top: 6px;
-      font-family: $font;
+      font-family: var(--font);
 
       .title-wrap {
         position: relative;
         display: block;
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         font-size: 1.2rem;
         font-weight: 600;
 
@@ -237,20 +236,20 @@ const setStep = (target: number) => {
       svg {
         height: 18px;
         width: 18px;
-        color: $light-text;
+        color: var(--light-text);
       }
     }
 
     .dropdown-menu {
-      border: 1px solid $fade-grey-dark-3;
-      box-shadow: $light-box-shadow;
+      border: 1px solid var(--fade-grey-dark-3);
+      box-shadow: var(--light-box-shadow);
       border-radius: 8px;
       padding-top: 0;
       overflow: hidden;
 
       .dropdown-content {
         .dropdown-item {
-          font-family: $font;
+          font-family: var(--font);
         }
       }
     }
@@ -266,10 +265,10 @@ const setStep = (target: number) => {
       display: flex;
       align-items: center;
       justify-content: center;
-      border-radius: $radius-rounded;
-      border: 1px solid $fade-grey-dark-3;
-      box-shadow: $light-box-shadow;
-      background: $white;
+      border-radius: var(--radius-rounded);
+      border: 1px solid var(--fade-grey-dark-3);
+      box-shadow: var(--light-box-shadow);
+      background: var(--white);
       transition: all 0.3s;
 
       .dark-mode {
@@ -292,7 +291,7 @@ const setStep = (target: number) => {
           display: block;
           width: 38px;
           height: 38px;
-          border-radius: $radius-rounded;
+          border-radius: var(--radius-rounded);
         }
 
         .badge {
@@ -301,8 +300,8 @@ const setStep = (target: number) => {
           bottom: 0;
           width: 20px;
           height: 20px;
-          border: 2px solid $white;
-          border-radius: $radius-rounded;
+          border: 2px solid var(--white);
+          border-radius: var(--radius-rounded);
         }
       }
 
@@ -310,15 +309,15 @@ const setStep = (target: number) => {
         margin-left: 3px;
         width: 18px;
         height: 18px;
-        color: $light-text;
+        color: var(--light-text);
         transition: all 0.3s;
       }
     }
 
     .dropdown-menu {
       top: 52px;
-      border: 1px solid $fade-grey-dark-3;
-      box-shadow: $light-box-shadow;
+      border: 1px solid var(--fade-grey-dark-3);
+      box-shadow: var(--light-box-shadow);
       border-radius: 8px;
       padding-top: 0;
       width: 180px;
@@ -327,23 +326,23 @@ const setStep = (target: number) => {
       .dropdown-item {
         display: flex;
         align-items: center;
-        font-family: $font;
+        font-family: var(--font);
         font-size: 0.9rem;
         padding: 8px 12px;
-        color: $light-text;
+        color: var(--light-text);
 
         p {
-          font-family: $font-alt;
+          font-family: var(--font-alt);
           font-weight: 600;
           font-size: 0.95rem;
-          color: $dark-text;
+          color: var(--dark-text);
         }
 
         svg {
           margin-right: 8px;
           height: 16px;
           width: 16px;
-          color: $light-text;
+          color: var(--light-text);
         }
       }
     }

@@ -126,7 +126,6 @@ useHead({
 </template>
 
 <style lang="scss">
-@import '../scss/abstracts/_variables.scss';
 @import '../scss/abstracts/_mixins.scss';
 @import '../scss/pages/demo/_landing.scss';
 @import '../scss/pages/generic/_marketing.scss';

@@ -319,7 +319,6 @@ const democheck = ref(['value_2'])
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
 
 .is-navbar {
@@ -338,7 +337,7 @@ const democheck = ref(['value_2'])
 
     .user-meta {
       padding: 0 3rem;
-      border-right: 1px solid $fade-grey-dark-3 h3 {
+      border-right: 1px solid var(--fade-grey-dark-3) h3 {
         max-width: 180px;
       }
     }
@@ -352,11 +351,10 @@ const democheck = ref(['value_2'])
       flex-grow: 2;
       max-width: 275px;
       margin-left: auto;
-      background: $primary-light-8;
+      background: var(--primary-light-8);
       padding: 20px;
-      border-radius: $radius-large;
-      box-shadow: $primary-box-shadow;
-
+      border-radius: var(--radius-large);
+      box-shadow: var(--primary-box-shadow);
       .lnil,
       .lnir {
         position: absolute;
@@ -367,13 +365,13 @@ const democheck = ref(['value_2'])
       }
 
       .link {
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         display: block;
         font-weight: 500;
         margin-top: 0.5rem;
 
         &:hover {
-          color: $smoke-white;
+          color: var(--smoke-white);
           opacity: 0.6;
         }
       }
@@ -396,10 +394,10 @@ const democheck = ref(['value_2'])
       margin-bottom: 20px;
 
       h3 {
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         font-size: 1rem;
         font-weight: 600;
-        color: $dark-text;
+        color: var(--dark-text);
         margin-bottom: 0;
       }
     }
@@ -421,8 +419,8 @@ const democheck = ref(['value_2'])
 
     .home-header {
       .cta {
-        background: $accent-light-2;
-        box-shadow: $accent-box-shadow;
+        background: var(--primary-light-2);
+        box-shadow: var(--primary-box-shadow);
       }
     }
   }

@@ -26,7 +26,7 @@
     cursor: pointer;
 
     &:checked ~ .toggler {
-      border-color: $accent;
+      border-color: var(--primary);
 
       .dark,
       .light {
@@ -48,7 +48,7 @@
     display: block;
     height: 31px;
     width: 53px;
-    border: 2px solid $primary;
+    border: 2px solid var(--primary);
     border-radius: 100px;
     transition: all 0.3s;
 
@@ -59,7 +59,7 @@
       left: 2px;
       height: 22px;
       width: 22px;
-      border-radius: $radius-rounded;
+      border-radius: var(--radius-rounded);
       background: black;
       display: flex;
       justify-content: center;
@@ -68,7 +68,7 @@
       transition: all 0.3s ease;
 
       svg {
-        color: $white !important;
+        color: var(--white) !important;
         height: 14px !important;
         width: 14px !important;
         opacity: 1 !important;
@@ -76,20 +76,20 @@
     }
 
     .light {
-      background: $primary;
-      border-color: $primary;
+      background: var(--primary);
+      border-color: var(--primary);
       opacity: 1;
       z-index: 1;
     }
 
     .dark {
-      background: $accent;
-      border-color: $accent;
+      background: var(--primary);
+      border-color: var(--primary);
       opacity: 0;
       z-index: 0;
 
       svg {
-        color: $white !important;
+        color: var(--white) !important;
       }
     }
   }
@@ -103,9 +103,9 @@
   position: relative;
 
   label {
-    background-color: $white;
-    border: 1px solid $accent-grey;
-    border-radius: $radius-rounded;
+    background-color: var(--white);
+    border: 1px solid var(--primary-grey);
+    border-radius: var(--radius-rounded);
     cursor: pointer;
     height: 28px;
     left: 0;
@@ -114,7 +114,7 @@
     width: 28px;
 
     &::after {
-      border: 2px solid $white;
+      border: 2px solid var(--white);
       border-top: none;
       border-right: none;
       content: '';
@@ -133,8 +133,8 @@
   }
 
   input[type='checkbox']:checked + label {
-    background-color: $primary;
-    border-color: $primary;
+    background-color: var(--primary);
+    border-color: var(--primary);
   }
 
   input[type='checkbox']:checked + label::after {

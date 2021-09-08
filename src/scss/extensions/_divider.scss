@@ -15,7 +15,7 @@ $divider-color: $grey-light !default;
 
 .is-divider[data-content]::after,
 .is-divider-vertical[data-content]::after {
-  background: $white;
+  background: var(--white);
   color: $divider-color;
   content: attr(data-content);
   display: inline-block;
@@ -57,25 +57,6 @@ $divider-color: $grey-light !default;
       -webkit-transform: translateY(-50%) translateX(-50%);
       -ms-transform: translateY(-50%) translateX(-50%);
       transform: translateY(-50%) translateX(-50%);
-    }
-  }
-}
-.is-divider,
-.is-divider-vertical {
-  @each $name, $pair in mergeColorMaps($colors, $shades) {
-    $color: nth($pair, 1);
-    $color-invert: nth($pair, 2);
-    &.is-#{$name} {
-      border-top-color: $color;
-
-      &[data-content]::after,
-      &[data-content]::after {
-        background: $color-invert;
-        color: $color;
-      }
-      &::before {
-        border-left-color: $color;
-      }
     }
   }
 }

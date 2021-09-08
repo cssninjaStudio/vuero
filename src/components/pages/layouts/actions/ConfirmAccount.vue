@@ -60,7 +60,6 @@ const confirm = async () => {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
 
 /* ==========================================================================
@@ -84,7 +83,7 @@ const confirm = async () => {
 
       .box-content {
         text-align: center;
-        font-family: $font;
+        font-family: var(--font);
 
         img {
           display: block;
@@ -99,13 +98,13 @@ const confirm = async () => {
 
         h3 {
           font-size: 1.1rem;
-          font-family: $font-alt;
+          font-family: var(--font-alt);
           font-weight: 600;
           max-width: 320px;
           margin: 0 auto 8px auto;
 
           span {
-            color: $primary;
+            color: var(--primary);
           }
         }
 

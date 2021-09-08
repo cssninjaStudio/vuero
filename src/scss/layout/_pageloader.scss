@@ -17,7 +17,7 @@
   bottom: 0;
   left: 80px;
   width: calc(100% - 80px);
-  background-color: $fade-grey;
+  background-color: var(--fade-grey);
   z-index: 999998;
   opacity: 0;
   transition: -webkit-opacity 0.35s ease-out;
@@ -62,7 +62,7 @@
     margin-left: -30px;
     width: 60px;
     height: 60px;
-    background-color: $white;
+    background-color: var(--white);
     -webkit-animation: page-loader-outer 1.5s infinite ease-in;
     animation: page-loader-outer 1.5s infinite ease-in;
   }
@@ -111,7 +111,7 @@
   bottom: 0;
   left: 80px;
   width: calc(100% - 80px);
-  background: $background-grey;
+  background: var(--background-grey);
   z-index: -1;
   opacity: 0;
   transition: opacity 0.35s;

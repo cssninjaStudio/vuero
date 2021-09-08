@@ -35,8 +35,10 @@
   "scripts": {
     "dev": "vite",
     "dev:force": "vite --force",
+    "build": "run-s build:*",
+    "build:update-bulma-colors": "bulma-css-vars",
+    "build:vite": "vite build",
     "preview": "vite preview",
-    "build": "vite build",
     "lint": "run-s lint:doc:fix lint:eslint:fix lint:stylelint:fix lint:prettier:fix",
     "lint:prettier": "prettier --check \"./src/**/*.(ts|vue|css|scss)\"",
     "lint:prettier:fix": "prettier --write \"./src/**/*.(ts|vue|css|scss)\"",
@@ -50,12 +52,11 @@
     "test": "run-p test:lint",
     "test:tsc": "vue-tsc --noEmit",
     "test:lint": "run-p lint:eslint lint:stylelint lint:prettier",
-    "test:e2e": "echo \"[warning] no e2e test implemented yet\"",
+    "test:e2e": "cypress run",
     "test:unit": "echo \"[warning] no unit test implemented yet\"",
     "commit": "commit",
     "release": "run-s test build release:*",
-    "release:standard-version": "standard-version",
-    "e2e": "cypress run"
+    "release:standard-version": "standard-version"
   },
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "29.2.0",
@@ -71,6 +72,7 @@
     "axios": "0.21.1",
     "billboard.js": "3.1.5",
     "bulma": "0.9.3",
+    "bulma-css-vars": "^0.6.1",
     "dayjs": "1.10.6",
     "dragula": "3.7.3",
     "dropzone": "5.9.2",

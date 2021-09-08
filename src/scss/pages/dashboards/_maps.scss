@@ -42,7 +42,7 @@
 
     .content-section {
       width: 380px;
-      background: $white;
+      background: var(--white);
 
       .content-section-header {
         height: 80px;
@@ -63,23 +63,23 @@
         padding: 2rem 2rem 2rem 2rem;
 
         .content-section-title {
-          font-family: $font;
+          font-family: var(--font);
           font-size: 0.8rem;
-          color: $light-text;
+          color: var(--light-text);
           text-transform: uppercase;
           margin-bottom: 0.75rem;
         }
 
         .map-box {
-          border: 1px solid $border;
+          border: 1px solid var(--border);
           border-radius: 0.75rem;
           box-shadow: none;
           cursor: pointer;
           transition: border 0.3s, box-shadow 0.3s;
 
           &.is-active {
-            border-color: $primary;
-            box-shadow: $light-box-shadow;
+            border-color: var(--primary);
+            box-shadow: var(--light-box-shadow);
           }
 
           .map-box-body {
@@ -98,10 +98,10 @@
             .rating {
               i {
                 font-size: 0.9rem;
-                color: $widget-grey;
+                color: var(--widget-grey);
 
                 &.highlighted {
-                  color: $h-yellow;
+                  color: var(--yellow);
                 }
               }
             }
@@ -109,15 +109,15 @@
             .action {
               display: flex;
               align-items: center;
-              font-family: $font;
+              font-family: var(--font);
               font-size: 0.9rem;
-              color: $dark-text;
+              color: var(--dark-text);
 
               svg {
                 height: 16px;
                 width: 16px;
                 margin-right: 0.25rem;
-                color: $light-text;
+                color: var(--light-text);
               }
             }
           }
@@ -165,8 +165,8 @@
   }
 
   .mapboxgl-popup-content {
-    border: 1px solid $border;
-    box-shadow: $light-box-shadow;
+    border: 1px solid var(--border);
+    box-shadow: var(--light-box-shadow);
     padding: 1.25rem;
     border-radius: 0.5rem;
 
@@ -200,22 +200,22 @@
 .mapboxgl-ctrl-geocoder {
   min-width: 100% !important;
   border-radius: 0.65rem !important;
-  border: 1px solid $border;
-  box-shadow: $light-box-shadow;
+  border: 1px solid var(--border);
+  box-shadow: var(--light-box-shadow);
 
   .mapboxgl-ctrl-geocoder--suggestion-title {
-    font-family: $font;
+    font-family: var(--font);
   }
 
   .mapboxgl-ctrl-geocoder--suggestion-address {
-    font-family: $font;
+    font-family: var(--font);
   }
 
   .mapboxgl-ctrl-geocoder--icon-search {
     top: 13px;
     left: 12px;
     transition: stroke 0.3s;
-    fill: $light-text;
+    fill: var(--light-text);
   }
 
   .mapboxgl-ctrl-geocoder--pin-right > * {
@@ -231,14 +231,14 @@
     height: 44px;
     padding-left: 3rem;
     border-radius: 0.75rem;
-    background: $white;
+    background: var(--white);
     transition: all 0.3s;
 
     &:focus {
       outline: none;
 
       ~ .mapboxgl-ctrl-geocoder--icon-search {
-        fill: $primary !important;
+        fill: var(--primary) !important;
       }
     }
   }
@@ -248,15 +248,15 @@
   .dashboard-map-wrapper {
     .dashboard-map-wrapper-inner {
       .content-section {
-        background: $dark-sidebar-dark-3;
+        background: var(--dark-sidebar-dark-3);
 
         .content-section-body {
           .map-box {
-            background: $dark-sidebar-light-3;
-            border-color: $dark-sidebar-light-10;
+            background: var(--dark-sidebar-light-3);
+            border-color: var(--dark-sidebar-light-10);
 
             &.is-active {
-              border-color: $accent !important;
+              border-color: var(--primary) !important;
             }
           }
         }
@@ -267,34 +267,34 @@
   .mapboxgl-popup {
     &.mapboxgl-popup-anchor-bottom {
       .mapboxgl-popup-tip {
-        border-top-color: $dark-sidebar-dark-3;
+        border-top-color: var(--dark-sidebar-dark-3);
       }
     }
 
     &.mapboxgl-popup-anchor-top {
       .mapboxgl-popup-tip {
-        border-bottom-color: $dark-sidebar-dark-3;
+        border-bottom-color: var(--dark-sidebar-dark-3);
       }
     }
 
     &.mapboxgl-popup-anchor-left {
       .mapboxgl-popup-tip {
-        border-right-color: $dark-sidebar-dark-3;
+        border-right-color: var(--dark-sidebar-dark-3);
       }
     }
 
     &.mapboxgl-popup-anchor-right {
       .mapboxgl-popup-tip {
-        border-left-color: $dark-sidebar-dark-3;
+        border-left-color: var(--dark-sidebar-dark-3);
       }
     }
 
     .mapboxgl-popup-content {
-      background: $dark-sidebar-dark-3;
-      border-color: $dark-sidebar-light-10;
+      background: var(--dark-sidebar-dark-3);
+      border-color: var(--dark-sidebar-light-10);
 
       .mapboxgl-popup-close-button {
-        color: $dark-dark-text !important;
+        color: var(--dark-dark-text) !important;
       }
     }
   }
@@ -302,38 +302,38 @@
   .mapboxgl-marker {
     svg {
       circle {
-        fill: $dark-sidebar-light-3 !important;
+        fill: var(--dark-sidebar-light-3) !important;
       }
     }
   }
 
   .mapboxgl-ctrl-geocoder {
-    background: $dark-sidebar-dark-3;
-    border-color: $dark-sidebar-light-10;
+    background: var(--dark-sidebar-dark-3);
+    border-color: var(--dark-sidebar-light-10);
 
     input {
-      color: $white;
-      background: $dark-sidebar-dark-3;
+      color: var(--white);
+      background: var(--dark-sidebar-dark-3);
     }
 
     .suggestions-wrapper {
       .suggestions {
-        background: $dark-sidebar-dark-3;
-        border-color: $dark-sidebar-light-10;
+        background: var(--dark-sidebar-dark-3);
+        border-color: var(--dark-sidebar-light-10);
       }
     }
 
     .suggestions > .active > a,
     .suggestions > li > a:hover {
-      background: $dark-sidebar-dark-6;
+      background: var(--dark-sidebar-dark-6);
     }
 
     .mapboxgl-ctrl-geocoder--suggestion-title {
-      color: $dark-dark-text;
+      color: var(--dark-dark-text);
     }
 
     .mapboxgl-ctrl-geocoder--suggestion-address {
-      color: $light-text;
+      color: var(--light-text);
     }
   }
 }

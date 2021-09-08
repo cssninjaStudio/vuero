@@ -21,71 +21,71 @@
 
   &.is-purple {
     .checkmark-circle {
-      color: $h-purple !important;
+      color: var(--purple) !important;
     }
 
     .checkmark {
-      box-shadow: inset 0 0 0 $h-purple !important;
+      box-shadow: inset 0 0 0 var(--purple) !important;
     }
 
     .checkmark-check {
-      color: $h-purple !important;
+      color: var(--purple) !important;
     }
   }
 
   &.is-info {
     .checkmark-circle {
-      color: $info !important;
+      color: var(--info) !important;
     }
 
     .checkmark {
-      box-shadow: inset 0 0 0 $info !important;
+      box-shadow: inset 0 0 0 var(--info) !important;
     }
 
     .checkmark-check {
-      color: $info !important;
+      color: var(--info) !important;
     }
   }
 
   &.is-success {
     .checkmark-circle {
-      color: $success !important;
+      color: var(--success) !important;
     }
 
     .checkmark {
-      box-shadow: inset 0 0 0 $success !important;
+      box-shadow: inset 0 0 0 var(--success) !important;
     }
 
     .checkmark-check {
-      color: $success !important;
+      color: var(--success) !important;
     }
   }
 
   &.is-warning {
     .checkmark-circle {
-      color: $warning !important;
+      color: var(--warning) !important;
     }
 
     .checkmark {
-      box-shadow: inset 0 0 0 $warning !important;
+      box-shadow: inset 0 0 0 var(--warning) !important;
     }
 
     .checkmark-check {
-      color: $warning !important;
+      color: var(--warning) !important;
     }
   }
 
   &.is-danger {
     .checkmark-circle {
-      color: $h-red !important;
+      color: var(--red) !important;
     }
 
     .checkmark {
-      box-shadow: inset 0 0 0 $h-red !important;
+      box-shadow: inset 0 0 0 var(--red) !important;
     }
 
     .checkmark-check {
-      color: $h-red !important;
+      color: var(--red) !important;
     }
   }
 
@@ -111,8 +111,8 @@
       left: 0;
       height: 32px;
       width: 32px;
-      border-radius: $radius-rounded;
-      border: 1px solid $placeholder;
+      border-radius: var(--radius-rounded);
+      border: 1px solid var(--placeholder);
       z-index: 0;
       opacity: 1;
       transition: all 0.2s;
@@ -130,20 +130,20 @@
       stroke-width: 2;
       stroke-miterlimit: 10;
       fill: none;
-      color: $primary;
+      color: var(--primary);
     }
 
     //Checkmark
     .checkmark {
       width: 32px;
       height: 32px;
-      border-radius: $radius-rounded;
+      border-radius: var(--radius-rounded);
       display: block;
       stroke-width: 2;
-      color: $placeholder;
+      color: var(--placeholder);
       stroke-miterlimit: 10;
       margin: 0 auto;
-      box-shadow: inset 0 0 0 $primary;
+      box-shadow: inset 0 0 0 var(--primary);
     }
 
     //Check symbol
@@ -151,7 +151,7 @@
       transform-origin: 50% 50%;
       stroke-dasharray: 48;
       stroke-dashoffset: 48;
-      color: $primary;
+      color: var(--primary);
     }
   }
 
@@ -212,11 +212,11 @@
       .checkmark-wrap {
         .checkmark-circle,
         .checkmark-check {
-          color: $accent;
+          color: var(--primary);
         }
 
         .shadow-circle {
-          border-color: $dark-sidebar-light-20;
+          border-color: var(--dark-sidebar-light-20);
         }
       }
     }
@@ -249,16 +249,16 @@
         line-height: 1.4;
 
         &:first-child {
-          font-family: $font-alt;
+          font-family: var(--font-alt);
           font-size: 0.95rem;
           font-weight: 600;
-          color: $dark-text;
+          color: var(--dark-text);
         }
 
         &:nth-child(2) {
-          font-family: $font;
+          font-family: var(--font);
           font-size: 0.9rem;
-          color: $light-text;
+          color: var(--light-text);
         }
       }
     }
@@ -271,7 +271,7 @@
 
 %controller {
   position: relative;
-  font-family: $font;
+  font-family: var(--font);
   cursor: pointer;
   padding: 1em;
 
@@ -282,7 +282,7 @@
   input + span {
     position: relative;
     top: -1px;
-    background: $white;
+    background: var(--white);
     content: '';
     display: inline-block;
     margin: 0 0.5em 0 0;
@@ -290,7 +290,7 @@
     vertical-align: middle;
     width: 1.4em;
     height: 1.4em;
-    border: 1px solid $fade-grey-dark-8;
+    border: 1px solid var(--fade-grey-dark-8);
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
 
@@ -331,74 +331,74 @@
 .checkbox {
   @extend %controller;
 
-  color: $light-text;
+  color: var(--light-text);
 
   &:hover {
-    color: $light-text;
+    color: var(--light-text);
   }
 
   &.is-circle {
     input + span {
-      border-radius: $radius-rounded;
+      border-radius: var(--radius-rounded);
     }
   }
 
   &.is-solid {
     input + span {
-      background: $fade-grey-light-3;
+      background: var(--fade-grey-light-3);
     }
 
     &.is-primary {
       input + span {
-        border-color: $primary;
-        background: $primary;
+        border-color: var(--primary);
+        background: var(--primary);
 
         &::after {
-          color: $white;
+          color: var(--white);
         }
       }
     }
 
     &.is-success {
       input + span {
-        border-color: $success;
-        background: $success;
+        border-color: var(--success);
+        background: var(--success);
 
         &::after {
-          color: $white;
+          color: var(--white);
         }
       }
     }
 
     &.is-info {
       input + span {
-        border-color: $info;
-        background: $info;
+        border-color: var(--info);
+        background: var(--info);
 
         &::after {
-          color: $white;
+          color: var(--white);
         }
       }
     }
 
     &.is-warning {
       input + span {
-        border-color: $warning;
-        background: $warning;
+        border-color: var(--warning);
+        background: var(--warning);
 
         &::after {
-          color: $white;
+          color: var(--white);
         }
       }
     }
 
     &.is-danger {
       input + span {
-        border-color: $danger;
-        background: $danger;
+        border-color: var(--danger);
+        background: var(--danger);
 
         &::after {
-          color: $white;
+          color: var(--white);
         }
       }
     }
@@ -407,67 +407,67 @@
   &.is-outlined {
     &.is-primary {
       input:checked + span {
-        border-color: $primary;
+        border-color: var(--primary);
       }
 
       input + span {
         &::after {
-          color: $primary;
+          color: var(--primary);
         }
       }
     }
 
     &.is-success {
       input:checked + span {
-        border-color: $success;
+        border-color: var(--success);
       }
 
       input + span {
         &::after {
-          color: $success;
+          color: var(--success);
         }
       }
     }
 
     &.is-info {
       input:checked + span {
-        border-color: $info;
+        border-color: var(--info);
       }
 
       input + span {
         &::after {
-          color: $info;
+          color: var(--info);
         }
       }
     }
 
     &.is-warning {
       input:checked + span {
-        border-color: $warning;
+        border-color: var(--warning);
       }
 
       input + span {
         &::after {
-          color: $warning;
+          color: var(--warning);
         }
       }
     }
 
     &.is-danger {
       input:checked + span {
-        border-color: $danger;
+        border-color: var(--danger);
       }
 
       input + span {
         &::after {
-          color: $danger;
+          color: var(--danger);
         }
       }
     }
   }
 
   input + span {
-    border-radius: $radius-small;
+    border-radius: var(--radius-small);
     transition: all 0.3s;
 
     &::after {
@@ -487,78 +487,78 @@
 .radio {
   @extend %controller;
 
-  color: $light-text;
+  color: var(--light-text);
 
   + .radio {
     margin-left: 0 !important;
   }
 
   &:hover {
-    color: $light-text;
+    color: var(--light-text);
   }
 
   &.is-square {
     input + span {
-      border-radius: $radius;
+      border-radius: var(--radius);
     }
   }
 
   &.is-solid {
     input + span {
-      background: $fade-grey-light-3;
+      background: var(--fade-grey-light-3);
     }
 
     &.is-primary {
       input + span {
-        border-color: $primary;
-        background: $primary;
+        border-color: var(--primary);
+        background: var(--primary);
 
         &::after {
-          color: $white;
+          color: var(--white);
         }
       }
     }
 
     &.is-success {
       input + span {
-        border-color: $success;
-        background: $success;
+        border-color: var(--success);
+        background: var(--success);
 
         &::after {
-          color: $white;
+          color: var(--white);
         }
       }
     }
 
     &.is-info {
       input + span {
-        border-color: $info;
-        background: $info;
+        border-color: var(--info);
+        background: var(--info);
 
         &::after {
-          color: $white;
+          color: var(--white);
         }
       }
     }
 
     &.is-warning {
       input + span {
-        border-color: $warning;
-        background: $warning;
+        border-color: var(--warning);
+        background: var(--warning);
 
         &::after {
-          color: $white;
+          color: var(--white);
         }
       }
     }
 
     &.is-danger {
       input + span {
-        border-color: $danger;
-        background: $danger;
+        border-color: var(--danger);
+        background: var(--danger);
 
         &::after {
-          color: $white;
+          color: var(--white);
         }
       }
     }
@@ -567,60 +567,60 @@
   &.is-outlined {
     &.is-primary {
       input:checked + span {
-        border-color: $primary;
+        border-color: var(--primary);
       }
 
       input + span {
         &::after {
-          color: $primary;
+          color: var(--primary);
         }
       }
     }
 
     &.is-success {
       input:checked + span {
-        border-color: $success;
+        border-color: var(--success);
       }
 
       input + span {
         &::after {
-          color: $success;
+          color: var(--success);
         }
       }
     }
 
     &.is-info {
       input:checked + span {
-        border-color: $info;
+        border-color: var(--info);
       }
 
       input + span {
         &::after {
-          color: $info;
+          color: var(--info);
         }
       }
     }
 
     &.is-warning {
       input:checked + span {
-        border-color: $warning;
+        border-color: var(--warning);
       }
 
       input + span {
         &::after {
-          color: $warning;
+          color: var(--warning);
         }
       }
     }
 
     &.is-danger {
       input:checked + span {
-        border-color: $danger;
+        border-color: var(--danger);
       }
 
       input + span {
         &::after {
-          color: $danger;
+          color: var(--danger);
         }
       }
     }
@@ -650,16 +650,16 @@
 .is-dark {
   %controller {
     input + span {
-      background-color: $dark-sidebar-light-2;
-      border-color: $dark-sidebar-light-4;
+      background-color: var(--dark-sidebar-light-2);
+      border-color: var(--dark-sidebar-light-4);
 
       &::after {
-        color: $dark-dark-text;
+        color: var(--dark-dark-text);
       }
     }
 
     input + span {
-      border-color: $dark-sidebar-light-16;
+      border-color: var(--dark-sidebar-light-16);
     }
   }
 
@@ -667,17 +667,17 @@
   .radio {
     &.is-solid.is-primary {
       input + span {
-        background-color: $accent !important;
-        border-color: $accent !important;
+        background-color: var(--primary) !important;
+        border-color: var(--primary) !important;
       }
     }
 
     &.is-outlined.is-primary {
       input:checked + span {
-        border-color: $accent !important;
+        border-color: var(--primary) !important;
 
         &::after {
-          color: $accent !important;
+          color: var(--primary) !important;
         }
       }
     }
@@ -706,8 +706,8 @@
     cursor: pointer;
 
     &:checked ~ .toggler {
-      background: $placeholder-light-10;
-      border-color: $placeholder-light-10;
+      background: var(--placeholder-light-10);
+      border-color: var(--placeholder-light-10);
 
       .active,
       .inactive {
@@ -729,7 +729,7 @@
     display: block;
     height: 16px;
     width: 50px;
-    border: 1.6px solid $placeholder;
+    border: 1.6px solid var(--placeholder);
     border-radius: 100px;
     transition: all 0.3s;
 
@@ -740,10 +740,10 @@
       left: -10px;
       height: 40px;
       width: 40px;
-      border-radius: $radius-rounded;
-      background: $white;
+      border-radius: var(--radius-rounded);
+      background: var(--white);
       border: 1.6px solid transparent;
-      box-shadow: $light-box-shadow;
+      box-shadow: var(--light-box-shadow);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -751,7 +751,7 @@
       transition: all 0.3s ease;
 
       i {
-        color: $white;
+        color: var(--white);
         font-size: 18px;
       }
 
@@ -762,17 +762,17 @@
     }
 
     .inactive {
-      background: $white;
-      border-color: $success;
-      color: $success;
+      background: var(--white);
+      border-color: var(--success);
+      color: var(--success);
       opacity: 1;
       z-index: 1;
     }
 
     .active {
-      background: $white;
-      border-color: $light-text;
-      color: $light-text;
+      background: var(--white);
+      border-color: var(--light-text);
+      color: var(--light-text);
       opacity: 0;
       z-index: 0;
     }
@@ -787,16 +787,16 @@
   .h-toggle {
     input {
       &:checked ~ .toggler {
-        background: $dark-sidebar-light-2;
+        background: var(--dark-sidebar-light-2);
       }
     }
 
     .toggler {
-      border-color: $dark-sidebar-light-25 !important;
+      border-color: var(--dark-sidebar-light-25) !important;
 
       .active,
       .inactive {
-        background: $dark-sidebar-light-2;
+        background: var(--dark-sidebar-light-2);
       }
     }
   }

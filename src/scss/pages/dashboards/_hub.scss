@@ -44,16 +44,16 @@
       flex-wrap: wrap;
 
       .hub-card {
-        background-color: $white;
-        border-radius: $radius-large;
-        border: 1px solid $fade-grey-dark-3;
+        background-color: var(--white);
+        border-radius: var(--radius-large);
+        border: 1px solid var(--fade-grey-dark-3);
         width: calc(50% - 20px);
         max-width: calc(50% - 20px);
         margin: 10px;
         transition: all 0.3s;
 
         &:hover {
-          box-shadow: $light-box-shadow;
+          box-shadow: var(--light-box-shadow);
 
           .hub-card-body {
             img {
@@ -82,7 +82,7 @@
             .partner-name {
               span {
                 font-weight: 500;
-                color: $dark-text;
+                color: var(--dark-text);
               }
             }
           }
@@ -99,12 +99,12 @@
         }
 
         .hub-card-foot {
-          border-top: 1px dashed $fade-grey-dark-4;
+          border-top: 1px dashed var(--fade-grey-dark-4);
           border-top-width: 1.6px;
           padding: 18px 24px;
 
           a {
-            color: $primary;
+            color: var(--primary);
             opacity: 0.6;
             font-weight: 500;
             transition: opacity 0.3s;
@@ -142,7 +142,7 @@
     .hub-header {
       .v-avatar {
         .badge {
-          border-color: $dark-sidebar-light-6 !important;
+          border-color: var(--dark-sidebar-light-6) !important;
         }
       }
     }
@@ -150,14 +150,14 @@
     .hub-body {
       .body-inner {
         .hub-card {
-          background: $dark-sidebar-light-6;
-          border-color: $dark-sidebar-light-12;
+          background: var(--dark-sidebar-light-6);
+          border-color: var(--dark-sidebar-light-12);
 
           .hub-card-foot {
-            border-color: $muted-grey-dark-25;
+            border-color: var(--muted-grey-dark-25);
 
             a {
-              color: $accent;
+              color: var(--primary);
             }
           }
         }

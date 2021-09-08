@@ -11,8 +11,8 @@
 ========================================================================== */
 
 .title {
-  font-family: $font-alt;
-  color: $dark-text;
+  font-family: var(--font-alt);
+  color: var(--dark-text);
 
   &.is-narrow {
     margin-bottom: 0;
@@ -36,8 +36,8 @@
 }
 
 .subtitle {
-  font-family: $font;
-  color: $dark-text;
+  font-family: var(--font);
+  color: var(--dark-text);
 
   &.is-narrow {
     margin-bottom: 0;
@@ -61,17 +61,17 @@
 }
 
 p {
-  font-family: $font;
+  font-family: var(--font);
   font-weight: 300;
-  color: $light-text;
+  color: var(--light-text);
 
   &.white-text {
-    color: $white;
+    color: var(--white);
   }
 }
 
 div {
-  color: $dark-text;
+  color: var(--dark-text);
 }
 
 var {
@@ -83,14 +83,14 @@ var {
 }
 
 .has-dark-text {
-  color: $dark-text;
+  color: var(--dark-text);
 }
 
 code {
   white-space: pre;
-  color: $accent;
-  background: $white;
-  font-family: $font-monospace;
+  color: var(--primary);
+  background: var(--white);
+  font-family: var(--font-monospace);
 }
 
 /* ==========================================================================
@@ -100,20 +100,20 @@ code {
 .is-dark {
   .title,
   .dark-inverted {
-    color: $dark-dark-text !important;
+    color: var(--dark-dark-text) !important;
   }
 
   .subtitle {
-    color: $light-text;
+    color: var(--light-text);
   }
 
   a {
     &.dark-inverted {
-      color: $accent !important;
+      color: var(--primary) !important;
     }
 
     &.dark-inverted-hover:hover {
-      color: $accent !important;
+      color: var(--primary) !important;
     }
   }
 
@@ -123,22 +123,22 @@ code {
   h4,
   h5,
   h6 {
-    color: $dark-dark-text;
+    color: var(--dark-dark-text);
   }
 
   code {
-    background: $dark-sidebar-light-6;
-    color: $accent;
+    background: var(--dark-sidebar-light-6);
+    color: var(--primary);
   }
 
   strong {
-    color: $white;
+    color: var(--white);
   }
 }
 
 .content {
   .title {
-    font-family: $font-alt;
+    font-family: var(--font-alt);
   }
 }
 
@@ -147,11 +147,11 @@ code {
 ========================================================================== */
 
 .is-font {
-  font-family: $font;
+  font-family: var(--font);
 }
 
 .is-font-alt {
-  font-family: $font-alt !important;
+  font-family: var(--font-alt) !important;
 }
 
 .is-weight-300 {

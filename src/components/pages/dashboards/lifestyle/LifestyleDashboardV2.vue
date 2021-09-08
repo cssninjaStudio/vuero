@@ -406,7 +406,6 @@ import {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
 @import '../../../../scss/pages/generic/_widgets-lists.scss';
 
@@ -416,7 +415,7 @@ import {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
-    font-family: $font;
+    font-family: var(--font);
 
     &.is-main {
       margin-bottom: 30px;
@@ -427,10 +426,10 @@ import {
     }
 
     h2 {
-      font-family: $font-alt;
+      font-family: var(--font-alt);
       font-size: 1.2rem;
       font-weight: 600;
-      color: $dark-text;
+      color: var(--dark-text);
     }
   }
 
@@ -464,7 +463,7 @@ import {
       left: 0;
       height: 100%;
       width: 100%;
-      background: $dark-sidebar;
+      background: var(--dark-sidebar);
       opacity: 0;
       pointer-events: none;
       z-index: 1;
@@ -483,7 +482,7 @@ import {
       flex-direction: column;
       justify-content: space-between;
       padding: 20px;
-      font-family: $font;
+      font-family: var(--font);
       opacity: 0;
       pointer-events: none;
       z-index: 2;
@@ -498,7 +497,7 @@ import {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        color: $smoke-white;
+        color: var(--smoke-white);
       }
 
       .top {
@@ -546,10 +545,10 @@ import {
 
             i {
               font-size: 12px;
-              color: $widget-grey-dark-12;
+              color: var(--widget-grey-dark-12);
 
               &.selected {
-                color: $h-yellow;
+                color: var(--yellow);
               }
             }
           }

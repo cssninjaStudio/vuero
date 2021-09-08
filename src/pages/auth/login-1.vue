@@ -226,12 +226,11 @@ useHead({
 </template>
 
 <style lang="scss" scoped>
-@import '../../scss/abstracts/_variables.scss';
 @import '../../scss/abstracts/_mixins.scss';
 
 .modern-login {
   position: relative;
-  background: $white;
+  background: var(--white);
   min-height: 100vh;
 
   .column {
@@ -301,7 +300,7 @@ useHead({
 
   .is-image {
     position: relative;
-    border-right: 1px solid $fade-grey;
+    border-right: 1px solid var(--fade-grey);
 
     .hero-image {
       position: relative;
@@ -327,21 +326,21 @@ useHead({
       animation: fadeInLeft 0.5s;
 
       h2 {
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         font-weight: 400;
         font-size: 2rem;
-        color: $primary;
+        color: var(--primary);
       }
 
       p {
-        color: $muted-grey;
+        color: var(--muted-grey);
         margin-top: 10px;
       }
     }
 
     .recover-text {
       font-size: 0.9rem;
-      color: $dark-text;
+      color: var(--dark-text);
     }
 
     .login-wrapper {
@@ -360,18 +359,18 @@ useHead({
           transition: all 0.3s;
 
           &:focus {
-            background: $fade-grey-light-6;
-            border-color: $placeholder;
+            background: var(--fade-grey-light-6);
+            border-color: var(--placeholder);
 
             ~ .auth-label,
             ~ .autv-icon i {
-              color: $muted-grey;
+              color: var(--muted-grey);
             }
           }
         }
 
         .error-text {
-          color: $danger;
+          color: var(--danger);
           font-size: 0.8rem;
           display: none;
           padding: 2px 6px;
@@ -382,7 +381,7 @@ useHead({
           top: 6px;
           left: 55px;
           font-size: 0.8rem;
-          color: $dark-text;
+          color: var(--dark-text);
           font-weight: 500;
           z-index: 2;
           transition: all 0.3s;
@@ -400,7 +399,7 @@ useHead({
 
           i {
             font-size: 24px;
-            color: $placeholder;
+            color: var(--placeholder);
             transition: all 0.3s;
           }
         }
@@ -422,25 +421,25 @@ useHead({
               display: flex;
               justify-content: center;
               align-items: center;
-              border-radius: $radius-rounded;
+              border-radius: var(--radius-rounded);
 
               svg {
                 height: 10px;
                 width: 10px;
                 stroke-width: 3px;
-                color: $white;
+                color: var(--white);
               }
             }
 
             &.is-success {
               .icon-wrapper {
-                background: $success;
+                background: var(--success);
               }
             }
 
             &.is-error {
               .icon-wrapper {
-                background: $danger;
+                background: var(--danger);
               }
             }
           }
@@ -459,7 +458,7 @@ useHead({
 
           &.has-error {
             .input {
-              border-color: $danger;
+              border-color: var(--danger);
             }
 
             .error-text {
@@ -485,19 +484,19 @@ useHead({
           a {
             display: block;
             margin-left: auto;
-            color: $muted-grey;
+            color: var(--muted-grey);
             font-weight: 500;
             font-size: 0.9rem;
             transition: color 0.3s;
 
             &:hover {
-              color: $primary;
+              color: var(--primary);
             }
           }
 
           .remember-me {
             font-size: 0.9rem;
-            color: $muted-grey;
+            color: var(--muted-grey);
             font-weight: 500;
           }
         }
@@ -512,10 +511,10 @@ useHead({
 
           > span {
             margin-left: 12px;
-            font-family: $font;
+            font-family: var(--font);
 
             a {
-              color: $primary;
+              color: var(--primary);
               font-weight: 500;
               padding: 0 2px;
             }
@@ -556,7 +555,7 @@ useHead({
     cursor: pointer;
 
     &:checked ~ .toggler {
-      border-color: $primary;
+      border-color: var(--primary);
 
       .active,
       .inactive {
@@ -578,7 +577,7 @@ useHead({
     display: block;
     height: 34px;
     width: 61px;
-    border: 2px solid $placeholder;
+    border: 2px solid var(--placeholder);
     border-radius: 100px;
     transition: all 0.3s;
 
@@ -589,7 +588,7 @@ useHead({
       left: 2px;
       height: 26px;
       width: 26px;
-      border-radius: $radius-rounded;
+      border-radius: var(--radius-rounded);
       background: black;
       display: flex;
       justify-content: center;
@@ -598,7 +597,7 @@ useHead({
       transition: all 0.3s ease;
 
       svg {
-        color: $white;
+        color: var(--white);
         height: 14px;
         width: 14px;
         stroke-width: 3px;
@@ -606,15 +605,15 @@ useHead({
     }
 
     .inactive {
-      background: $placeholder;
-      border-color: $placeholder;
+      background: var(--placeholder);
+      border-color: var(--placeholder);
       opacity: 1;
       z-index: 1;
     }
 
     .active {
-      background: $primary;
-      border-color: $primary;
+      background: var(--primary);
+      border-color: var(--primary);
       opacity: 0;
       z-index: 0;
     }
@@ -665,20 +664,20 @@ Dark mode
 
 .is-dark {
   .modern-login {
-    background: $dark-sidebar;
+    background: var(--dark-sidebar);
 
     .underlay {
-      background: $dark-sidebar-light-10;
+      background: var(--dark-sidebar-light-10);
     }
 
     .is-image {
-      border-color: $dark-sidebar-light-10;
+      border-color: var(--dark-sidebar-light-10);
     }
 
     .is-form {
       .form-text {
         h2 {
-          color: $accent;
+          color: var(--primary);
         }
       }
 
@@ -686,36 +685,36 @@ Dark mode
         .control {
           &.is-flex {
             a:hover {
-              color: $accent;
+              color: var(--primary);
             }
           }
 
           .input {
-            background: $dark-sidebar-light-4;
+            background: var(--dark-sidebar-light-4);
 
             &:focus {
-              border-color: $accent;
+              border-color: var(--primary);
 
               ~ .autv-icon {
                 i {
-                  color: $accent;
+                  color: var(--primary);
                 }
               }
             }
           }
 
           .auth-label {
-            color: $light-text;
+            color: var(--light-text);
           }
         }
 
         .button-wrap {
           &.has-help {
             span {
-              color: $light-text;
+              color: var(--light-text);
 
               a {
-                color: $accent;
+                color: var(--primary);
               }
             }
           }
@@ -726,19 +725,19 @@ Dark mode
   .remember-toggle {
     input {
       &:checked + .toggler {
-        border-color: $accent;
+        border-color: var(--primary);
 
         > span {
-          background: $accent;
+          background: var(--primary);
         }
       }
     }
 
     .toggler {
-      border-color: $dark-sidebar-light-12;
+      border-color: var(--dark-sidebar-light-12);
 
       > span {
-        background: $dark-sidebar-light-12;
+        background: var(--dark-sidebar-light-12);
       }
     }
   }

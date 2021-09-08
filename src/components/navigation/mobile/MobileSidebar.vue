@@ -35,7 +35,6 @@ const emit = defineEmits(['toggle'])
 </template>
 
 <style lang="scss">
-@import '../../../scss/abstracts/_variables.scss';
 @import '../../../scss/layout/_sidebar.scss';
 @import '../../../scss/layout/_sidebar-mobile.scss';
 
@@ -58,9 +57,9 @@ const emit = defineEmits(['toggle'])
   left: 0;
   height: calc(100% - 60px);
   width: 60px;
-  background: $white;
-  border-top: 1px solid $fade-grey;
-  border-right: 1px solid $fade-grey;
+  background: var(--white);
+  border-top: 1px solid var(--fade-grey);
+  border-right: 1px solid var(--fade-grey);
   z-index: 100;
   transform: translateX(-100%);
   transition: all 0.3s;
@@ -93,12 +92,12 @@ const emit = defineEmits(['toggle'])
           &:hover,
           &.is-active {
             > svg {
-              color: $primary;
+              color: var(--primary);
             }
           }
 
           > svg {
-            color: $title-grey;
+            color: var(--title-grey);
             height: 20px;
             width: 20px;
             stroke-width: 1.6px;
@@ -115,7 +114,7 @@ const emit = defineEmits(['toggle'])
 
           &:hover svg,
           &.is-active svg {
-            color: $primary;
+            color: var(--primary);
           }
 
           &.is-opened {
@@ -131,7 +130,7 @@ const emit = defineEmits(['toggle'])
           &.is-selected,
           &.router-link-exact-active {
             svg {
-              color: $primary;
+              color: var(--primary);
             }
           }
         }
@@ -151,7 +150,7 @@ const emit = defineEmits(['toggle'])
 
         &.is-active {
           a svg {
-            color: $primary;
+            color: var(--primary);
           }
         }
       }
@@ -167,8 +166,8 @@ const emit = defineEmits(['toggle'])
 
 .is-dark {
   .mobile-main-sidebar {
-    background: $dark-sidebar-dark-6;
-    border-color: $dark-sidebar-light-1 !important;
+    background: var(--dark-sidebar-dark-6);
+    border-color: var(--dark-sidebar-light-1) !important;
 
     .inner {
       .icon-side-menu {
@@ -176,7 +175,7 @@ const emit = defineEmits(['toggle'])
           a {
             &.is-active {
               svg {
-                color: $accent;
+                color: var(--primary);
               }
             }
           }

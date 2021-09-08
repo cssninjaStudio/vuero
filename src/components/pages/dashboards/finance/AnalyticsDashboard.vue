@@ -345,7 +345,6 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
 @import '../../../../scss/pages/generic/_widgets-lists.scss';
 
@@ -353,7 +352,7 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
   .dashboard-tile {
     @include vuero-s-card();
 
-    font-family: $font;
+    font-family: var(--font);
 
     .tile-head {
       display: flex;
@@ -361,8 +360,8 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
       justify-content: space-between;
 
       h3 {
-        font-family: $font-alt;
-        color: $dark-text;
+        font-family: var(--font-alt);
+        color: var(--dark-text);
         font-weight: 600;
       }
     }
@@ -372,7 +371,7 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
       padding: 4px 0 8px 0;
 
       span {
-        color: $dark-text;
+        color: var(--dark-text);
         font-weight: 600;
       }
     }
@@ -391,7 +390,7 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
         }
 
         &:nth-child(2) {
-          color: $light-text;
+          color: var(--light-text);
           font-size: 0.9rem;
         }
       }
@@ -401,7 +400,7 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
   .dashboard-card {
     @include vuero-s-card();
 
-    font-family: $font;
+    font-family: var(--font);
     height: 100%;
 
     .card-head {
@@ -411,10 +410,10 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
       margin-bottom: 20px;
 
       h3 {
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         font-size: 1rem;
         font-weight: 600;
-        color: $dark-text;
+        color: var(--dark-text);
       }
     }
 
@@ -423,24 +422,24 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
 
       .revenue-stat {
         margin-right: 30px;
-        font-family: $font;
+        font-family: var(--font);
 
         span {
           display: block;
 
           &:first-child {
-            color: $light-text;
+            color: var(--light-text);
             font-size: 0.9rem;
           }
 
           &:nth-child(2) {
-            color: $dark-text;
+            color: var(--dark-text);
             font-size: 1.2rem;
             font-weight: 600;
           }
 
           &.current {
-            color: $accent;
+            color: var(--primary);
           }
         }
       }
@@ -455,25 +454,25 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
         margin-top: auto;
         display: flex;
         padding-top: 20px;
-        border-top: 1px solid $fade-grey-dark-3;
+        border-top: 1px solid var(--fade-grey-dark-3);
         .radial-stat {
           width: 50%;
           text-align: center;
 
           &:first-child {
-            border-right: 1px solid $fade-grey-dark-3;
+            border-right: 1px solid var(--fade-grey-dark-3);
           }
 
           span {
             display: block;
 
             &:first-child {
-              color: $light-text;
+              color: var(--light-text);
               font-size: 0.9rem;
             }
 
             &:nth-child(2) {
-              color: $dark-text;
+              color: var(--dark-text);
               font-size: 1.3rem;
               font-weight: 600;
             }
@@ -486,14 +485,14 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
       display: flex;
       flex-direction: column;
       height: calc(100% - 44px);
-      font-family: $font;
+      font-family: var(--font);
 
       .value {
         font-size: 1.4rem;
         font-weight: 600;
 
         span {
-          color: $dark-text;
+          color: var(--dark-text);
         }
       }
 
@@ -515,7 +514,7 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
           }
 
           &:nth-child(2) {
-            color: $light-text;
+            color: var(--light-text);
             font-size: 0.9rem;
           }
         }

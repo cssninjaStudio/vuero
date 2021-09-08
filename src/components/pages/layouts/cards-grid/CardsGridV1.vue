@@ -139,7 +139,6 @@ const optionsSingle = [
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
 
 .card-grid {
@@ -159,9 +158,9 @@ const optionsSingle = [
     flex: 1;
     display: inline-block;
     width: 100%;
-    background-color: $white;
+    background-color: var(--white);
     border-radius: 6px;
-    border: 1px solid $fade-grey-dark-3;
+    border: 1px solid var(--fade-grey-dark-3);
     transition: all 0.3s;
 
     .card-grid-item-body {
@@ -169,7 +168,7 @@ const optionsSingle = [
       align-items: center;
       justify-content: space-between;
       padding: 20px;
-      border-bottom: 1px solid $fade-grey-dark-3;
+      border-bottom: 1px solid var(--fade-grey-dark-3);
 
       .left {
         display: flex;
@@ -185,14 +184,14 @@ const optionsSingle = [
             &:first-child {
               font-size: 1.1rem;
               font-weight: 600;
-              font-family: $font-alt;
-              color: $dark-text;
+              font-family: var(--font-alt);
+              color: var(--dark-text);
             }
 
             &:nth-child(2) {
-              font-family: $font;
+              font-family: var(--font);
               font-size: 0.85rem;
-              color: $light-text;
+              color: var(--light-text);
             }
           }
         }
@@ -212,17 +211,17 @@ const optionsSingle = [
             width: 32px;
             min-width: 32px;
             border-radius: 50%;
-            border: 1px solid $fade-grey-dark-3;
+            border: 1px solid var(--fade-grey-dark-3);
             margin: 0 4px;
-            color: $primary;
-            box-shadow: $light-box-shadow;
+            color: var(--primary);
+            box-shadow: var(--light-box-shadow);
             transition: all 0.3s;
 
             &:hover {
-              color: $white;
-              background: $primary;
-              border-color: $primary;
-              box-shadow: $primary-box-shadow;
+              color: var(--white);
+              background: var(--primary);
+              border-color: var(--primary);
+              box-shadow: var(--primary-box-shadow);
             }
 
             i {
@@ -253,15 +252,15 @@ const optionsSingle = [
             display: block;
 
             &:first-child {
-              font-family: $font-alt;
+              font-family: var(--font-alt);
               font-size: 0.9rem;
               font-weight: 600;
-              color: $dark-text;
+              color: var(--dark-text);
             }
 
             &:nth-child(2) {
               font-size: 0.9rem;
-              color: $light-text;
+              color: var(--light-text);
             }
           }
         }
@@ -273,13 +272,13 @@ const optionsSingle = [
 
       .right {
         .v-button {
-          color: $light-text;
+          color: var(--light-text);
 
           &:hover {
-            border-color: $primary;
-            background: $primary;
-            color: $smoke-white;
-            box-shadow: $primary-box-shadow;
+            border-color: var(--primary);
+            background: var(--primary);
+            color: var(--smoke-white);
+            box-shadow: var(--primary-box-shadow);
           }
         }
       }
@@ -290,16 +289,16 @@ const optionsSingle = [
 .is-dark {
   .card-grid-v1 {
     .card-grid-item {
-      background: $dark-sidebar-light-6;
-      border-color: $dark-sidebar-light-12;
+      background: var(--dark-sidebar-light-6);
+      border-color: var(--dark-sidebar-light-12);
 
       .card-grid-item-body {
-        border-color: $dark-sidebar-light-12;
+        border-color: var(--dark-sidebar-light-12);
 
         .left {
           .v-avatar {
             .badge {
-              border-color: $dark-sidebar-light-6;
+              border-color: var(--dark-sidebar-light-6);
             }
           }
         }
@@ -307,13 +306,13 @@ const optionsSingle = [
         .right {
           .social-links {
             .social-link {
-              background: $dark-sidebar-light-2;
-              border-color: $dark-sidebar-light-12;
-              color: $dark-dark-text;
+              background: var(--dark-sidebar-light-2);
+              border-color: var(--dark-sidebar-light-12);
+              color: var(--dark-dark-text);
 
               &:hover {
-                border-color: $accent !important;
-                color: $accent !important;
+                border-color: var(--primary) !important;
+                color: var(--primary) !important;
               }
             }
           }

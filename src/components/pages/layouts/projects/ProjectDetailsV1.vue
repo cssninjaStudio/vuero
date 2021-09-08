@@ -696,7 +696,6 @@ const tab = ref(props.activeTab)
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
 
 /* ==========================================================================
@@ -714,7 +713,7 @@ const tab = ref(props.activeTab)
     .tabs-inner {
       .tabs {
         margin: 0 auto;
-        background: $white;
+        background: var(--white);
       }
     }
   }
@@ -735,10 +734,10 @@ const tab = ref(props.activeTab)
 
         .title-wrap {
           h3 {
-            font-family: $font-alt;
+            font-family: var(--font-alt);
             font-size: 1.5rem;
             font-weight: 700;
-            color: $dark-text;
+            color: var(--dark-text);
             line-height: 1.2;
             transition: all 0.3s;
           }
@@ -759,8 +758,8 @@ const tab = ref(props.activeTab)
       .project-features {
         display: flex;
         padding: 25px 0;
-        border-top: 1px solid $fade-grey-dark-3;
-        border-bottom: 1px solid $fade-grey-dark-3;
+        border-top: 1px solid var(--fade-grey-dark-3);
+        border-bottom: 1px solid var(--fade-grey-dark-3);
 
         .project-feature {
           margin-right: 20px;
@@ -768,21 +767,21 @@ const tab = ref(props.activeTab)
 
           i {
             font-size: 1.6rem;
-            color: $primary;
+            color: var(--primary);
             margin-bottom: 8px;
           }
 
           h4 {
-            font-family: $font-alt;
+            font-family: var(--font-alt);
             font-size: 0.85rem;
             font-weight: 600;
-            color: $dark;
+            color: var(--dark);
           }
 
           p {
             line-height: 1.2;
             font-size: 0.85rem;
-            color: $light-text;
+            color: var(--light-text);
             margin-bottom: 0;
           }
         }
@@ -792,11 +791,11 @@ const tab = ref(props.activeTab)
         padding: 20px 0;
 
         h4 {
-          font-family: $font-alt;
+          font-family: var(--font-alt);
           font-weight: 600;
           font-size: 0.8rem;
           text-transform: uppercase;
-          color: $primary;
+          color: var(--primary);
           margin-bottom: 12px;
         }
 
@@ -804,15 +803,15 @@ const tab = ref(props.activeTab)
           display: flex;
           align-items: center;
           padding: 8px;
-          background: $white;
+          background: var(--white);
           border: 1px solid transparent;
           border-radius: 12px;
           cursor: pointer;
           transition: all 0.3s;
 
           &:hover {
-            border-color: $fade-grey-dark-3;
-            box-shadow: $light-box-shadow;
+            border-color: var(--fade-grey-dark-3);
+            box-shadow: var(--light-box-shadow);
           }
 
           img {
@@ -830,21 +829,21 @@ const tab = ref(props.activeTab)
               display: block;
 
               &:first-child {
-                font-family: $font-alt;
+                font-family: var(--font-alt);
                 font-size: 0.9rem;
                 font-weight: 600;
-                color: $dark-text;
+                color: var(--dark-text);
               }
 
               &:nth-child(2) {
                 font-size: 0.9rem;
-                color: $light-text;
+                color: var(--light-text);
 
                 i {
                   position: relative;
                   top: -3px;
                   font-size: 0.3rem;
-                  color: $light-text;
+                  color: var(--light-text);
                   margin: 0 4px;
                 }
               }
@@ -865,11 +864,11 @@ const tab = ref(props.activeTab)
       margin-bottom: 1.5rem;
 
       h4 {
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         font-weight: 600;
         font-size: 0.8rem;
         text-transform: uppercase;
-        color: $primary;
+        color: var(--primary);
         margin-bottom: 16px;
       }
     }
@@ -886,11 +885,11 @@ const tab = ref(props.activeTab)
         padding: 1.5rem;
 
         &:nth-child(odd) {
-          border-right: 1px solid $fade-grey-dark-3;
+          border-right: 1px solid var(--fade-grey-dark-3);
         }
 
         &.has-border-bottom {
-          border-bottom: 1px solid $fade-grey-dark-3;
+          border-bottom: 1px solid var(--fade-grey-dark-3);
         }
       }
     }
@@ -903,25 +902,25 @@ const tab = ref(props.activeTab)
         margin-bottom: 20px;
 
         h3 {
-          font-family: $font-alt;
+          font-family: var(--font-alt);
           font-size: 1.5rem;
           font-weight: 700;
-          color: $dark-text;
+          color: var(--dark-text);
           line-height: 1.2;
         }
 
         .filter {
           display: flex;
           align-items: center;
-          background: $white;
+          background: var(--white);
           padding: 8px 24px;
           border-radius: 100px;
 
           > span {
-            font-family: $font-alt;
+            font-family: var(--font-alt);
             font-size: 0.85rem;
             font-weight: 600;
-            color: $dark-text;
+            color: var(--dark-text);
             margin-right: 20px;
           }
 
@@ -948,23 +947,23 @@ const tab = ref(props.activeTab)
 
         &:hover {
           transform: translateY(-5px);
-          box-shadow: $light-box-shadow;
+          box-shadow: var(--light-box-shadow);
         }
 
         .title-wrap {
           h3 {
             font-size: 1.1rem;
-            font-family: $font-alt;
+            font-family: var(--font-alt);
             font-weight: 600;
-            color: $dark-text;
+            color: var(--dark-text);
             line-height: 1.2;
             margin-bottom: 4px;
           }
 
           span {
-            font-family: $font;
+            font-family: var(--font);
             font-size: 0.9rem;
-            color: $light-text;
+            color: var(--light-text);
           }
         }
 
@@ -984,14 +983,14 @@ const tab = ref(props.activeTab)
 
               i {
                 font-size: 15px;
-                color: $light-text;
+                color: var(--light-text);
               }
 
               span {
                 margin-left: 2px;
                 font-size: 0.9rem;
-                font-family: $font;
-                color: $light-text;
+                font-family: var(--font);
+                color: var(--light-text);
               }
             }
           }
@@ -1014,41 +1013,41 @@ const tab = ref(props.activeTab)
         .card-head {
           .title-wrap {
             h3 {
-              color: $dark-dark-text !important;
+              color: var(--dark-dark-text) !important;
             }
           }
         }
 
         .project-features {
-          border-color: $dark-sidebar-light-12;
+          border-color: var(--dark-sidebar-light-12);
 
           .project-feature {
             i {
-              color: $accent;
+              color: var(--primary);
             }
 
             h4 {
-              color: $dark-dark-text;
+              color: var(--dark-dark-text);
             }
           }
         }
 
         .project-files {
           h4 {
-            color: $accent;
+            color: var(--primary);
           }
 
           .file-box {
-            background: $dark-sidebar-light-3;
+            background: var(--dark-sidebar-light-3);
 
             &:hover {
-              border-color: $dark-sidebar-light-10;
+              border-color: var(--dark-sidebar-light-10);
             }
 
             .meta {
               span {
                 &:first-child {
-                  color: $dark-dark-text;
+                  color: var(--dark-dark-text);
                 }
               }
             }
@@ -1060,7 +1059,7 @@ const tab = ref(props.activeTab)
         @include vuero-card--dark();
 
         h4 {
-          color: $accent;
+          color: var(--primary);
         }
       }
 
@@ -1068,22 +1067,22 @@ const tab = ref(props.activeTab)
         @include vuero-card--dark();
 
         .column {
-          border-color: $dark-sidebar-light-12;
+          border-color: var(--dark-sidebar-light-12);
         }
       }
 
       .task-grid {
         .grid-header {
           h3 {
-            color: $dark-dark-text;
+            color: var(--dark-dark-text);
           }
 
           .filter {
-            background: $dark-sidebar-light-1 !important;
-            border-color: $dark-sidebar-light-4 !important;
+            background: var(--dark-sidebar-light-1) !important;
+            border-color: var(--dark-sidebar-light-4) !important;
 
             > span {
-              color: $dark-dark-text;
+              color: var(--dark-dark-text);
             }
           }
         }
@@ -1093,7 +1092,7 @@ const tab = ref(props.activeTab)
 
           .title-wrap {
             h3 {
-              color: $dark-dark-text;
+              color: var(--dark-dark-text);
             }
           }
         }

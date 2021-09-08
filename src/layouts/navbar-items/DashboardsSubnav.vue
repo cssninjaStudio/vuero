@@ -661,7 +661,6 @@ const activeTab = ref<TabId>('dashboards')
 </template>
 
 <style lang="scss">
-@import '../../scss/abstracts/_variables.scss';
 @import '../../scss/abstracts/_mixins.scss';
 @import '../../scss/layout/_navbar.scss';
 @import '../../scss/layout/_responsive.scss';

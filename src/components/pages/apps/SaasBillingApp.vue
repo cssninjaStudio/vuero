@@ -356,7 +356,6 @@ const randomCard = () => {
 </template>
 
 <style lang="scss">
-@import '../../../scss/abstracts/_variables.scss';
 @import '../../../scss/abstracts/_mixins.scss';
 
 /* ==========================================================================
@@ -370,7 +369,7 @@ const randomCard = () => {
   .plans-wrapper {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid $fade-grey-dark-4;
+    border-bottom: 1px solid var(--fade-grey-dark-4);
     padding-bottom: 20px;
     margin-bottom: 20px;
 
@@ -379,10 +378,10 @@ const randomCard = () => {
 
       .inner-wrap {
         > h3 {
-          font-family: $font-alt;
+          font-family: var(--font-alt);
           font-size: 1.1rem;
           font-weight: 600;
-          color: $dark-text;
+          color: var(--dark-text);
           margin-bottom: 10px;
         }
       }
@@ -410,8 +409,8 @@ const randomCard = () => {
             z-index: 1;
 
             &:checked + .plan-inner {
-              border-color: $primary;
-              box-shadow: $light-box-shadow;
+              border-color: var(--primary);
+              box-shadow: var(--light-box-shadow);
 
               img {
                 filter: grayscale(0);
@@ -450,17 +449,17 @@ const randomCard = () => {
 
               span {
                 display: block;
-                font-family: $font;
+                font-family: var(--font);
 
                 &:first-child {
-                  font-family: $font-alt;
+                  font-family: var(--font-alt);
                   font-size: 0.95rem;
                   font-weight: 600;
-                  color: $dark-text;
+                  color: var(--dark-text);
                 }
 
                 &:nth-child(2) {
-                  color: $light-text;
+                  color: var(--light-text);
                   font-size: 0.85rem;
                 }
               }
@@ -474,11 +473,11 @@ const randomCard = () => {
               height: 32px;
               width: 32px;
               min-width: 32px;
-              border-radius: $radius-rounded;
-              background: $white;
-              border: 1px solid $fade-grey-dark-3;
-              box-shadow: $light-box-shadow;
-              color: $success;
+              border-radius: var(--radius-rounded);
+              background: var(--white);
+              border: 1px solid var(--fade-grey-dark-3);
+              box-shadow: var(--light-box-shadow);
+              color: var(--success);
 
               svg {
                 width: 16px;
@@ -498,10 +497,10 @@ const randomCard = () => {
 
       .plan-details {
         > h3 {
-          font-family: $font;
+          font-family: var(--font);
           font-size: 1.1rem;
           font-weight: 500;
-          color: $dark-text;
+          color: var(--dark-text);
           margin-bottom: 10px;
         }
 
@@ -527,23 +526,23 @@ const randomCard = () => {
 
               .plan-pricing {
                 padding: 5px 0 10px 0;
-                font-family: $font;
+                font-family: var(--font);
                 line-height: 1.3;
 
                 span {
                   display: block;
                   font-size: 0.9rem;
                   font-weight: 500;
-                  color: $primary;
-                  font-family: $font-alt;
+                  color: var(--primary);
+                  font-family: var(--font-alt);
 
                   &:first-child {
-                    color: $dark-text;
+                    color: var(--dark-text);
                   }
 
                   b {
                     font-size: 2rem;
-                    font-family: $font;
+                    font-family: var(--font);
                   }
                 }
               }
@@ -559,9 +558,9 @@ const randomCard = () => {
           .plan-summary {
             .plan-features {
               ul {
-                font-family: $font-alt;
+                font-family: var(--font-alt);
                 font-size: 0.95rem;
-                color: $dark-text;
+                color: var(--dark-text);
               }
             }
           }
@@ -589,23 +588,23 @@ const randomCard = () => {
           margin-bottom: 16px;
 
           h3 {
-            font-family: $font-alt;
+            font-family: var(--font-alt);
             font-size: 1rem;
             font-weight: 600;
-            color: $dark-text;
+            color: var(--dark-text);
           }
 
           span {
-            font-family: $font;
-            color: $light-text;
+            font-family: var(--font);
+            color: var(--light-text);
           }
 
           a {
-            font-family: $font;
-            color: $light-text;
+            font-family: var(--font);
+            color: var(--light-text);
 
             &:hover {
-              color: $primary;
+              color: var(--primary);
             }
           }
         }
@@ -626,9 +625,9 @@ const randomCard = () => {
               height: 40px;
               width: 40px;
               min-width: 40px;
-              border-radius: $radius-rounded;
-              border: 1.6px dashed $light-text;
-              color: $light-text;
+              border-radius: var(--radius-rounded);
+              border: 1.6px dashed var(--light-text);
+              color: var(--light-text);
               outline: none;
               padding: 0;
               background: none;
@@ -637,8 +636,8 @@ const randomCard = () => {
               transition: all 0.3s;
 
               &:hover {
-                border: 1.6px solid $primary;
-                color: $primary;
+                border: 1.6px solid var(--primary);
+                color: var(--primary);
               }
 
               svg {
@@ -657,9 +656,9 @@ const randomCard = () => {
 
       .payment-form {
         padding: 20px 30px;
-        background: $white;
-        border-radius: $radius;
-        border: 1px solid $fade-grey-dark-3;
+        background: var(--white);
+        border-radius: var(--radius);
+        border: 1px solid var(--fade-grey-dark-3);
 
         .form-header {
           display: flex;
@@ -667,15 +666,15 @@ const randomCard = () => {
           justify-content: space-between;
 
           h3 {
-            font-family: $font-alt;
+            font-family: var(--font-alt);
             font-size: 1rem;
             font-weight: 600;
-            color: $dark-text;
+            color: var(--dark-text);
           }
 
           span {
-            font-family: $font;
-            color: $light-text;
+            font-family: var(--font);
+            color: var(--light-text);
             cursor: pointer;
           }
         }
@@ -728,12 +727,12 @@ const randomCard = () => {
 .is-dark {
   .saas-billing-wrapper {
     .plans-wrapper {
-      border-color: $dark-sidebar-light-20;
+      border-color: var(--dark-sidebar-light-20);
 
       .left {
         .inner-wrap {
           > h3 {
-            color: $dark-dark-text;
+            color: var(--dark-dark-text);
           }
         }
 
@@ -741,7 +740,7 @@ const randomCard = () => {
           .plan {
             input {
               &:checked + .plan-inner {
-                border-color: $accent !important;
+                border-color: var(--primary) !important;
               }
             }
 
@@ -750,13 +749,13 @@ const randomCard = () => {
 
               .meta span {
                 &:first-child {
-                  color: $dark-dark-text;
+                  color: var(--dark-dark-text);
                 }
               }
 
               .checkmark {
-                background: $dark-sidebar-light-2;
-                border-color: $dark-sidebar-light-12;
+                background: var(--dark-sidebar-light-2);
+                border-color: var(--dark-sidebar-light-12);
               }
             }
           }
@@ -770,11 +769,11 @@ const randomCard = () => {
               .right {
                 .plan-pricing span {
                   &:first-child {
-                    color: $dark-dark-text;
+                    color: var(--dark-dark-text);
                   }
 
                   &:nth-child(2) {
-                    color: $accent;
+                    color: var(--primary);
                   }
                 }
               }
@@ -783,7 +782,7 @@ const randomCard = () => {
             .plan-summary {
               .plan-features {
                 ul {
-                  color: $dark-dark-text;
+                  color: var(--dark-dark-text);
                 }
               }
             }
@@ -799,19 +798,19 @@ const randomCard = () => {
 
           .block-header {
             h3 {
-              color: $dark-dark-text;
+              color: var(--dark-dark-text);
             }
 
             a:hover {
-              color: $accent;
+              color: var(--primary);
             }
           }
 
           .block-body {
             &.is-seats {
               .add-seat:hover {
-                border-color: $accent;
-                color: $accent;
+                border-color: var(--primary);
+                color: var(--primary);
               }
             }
           }
@@ -820,17 +819,17 @@ const randomCard = () => {
 
       .right {
         .payment-form {
-          background: $dark-sidebar-light-6;
-          border-color: $dark-sidebar-light-12;
+          background: var(--dark-sidebar-light-6);
+          border-color: var(--dark-sidebar-light-12);
 
           .form-header {
             h3 {
-              color: $dark-dark-text;
+              color: var(--dark-dark-text);
             }
 
             span:hover,
             a:hover {
-              color: $accent;
+              color: var(--primary);
             }
           }
         }

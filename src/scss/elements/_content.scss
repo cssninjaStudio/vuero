@@ -12,46 +12,46 @@
 .content {
   ol,
   ul {
-    color: $dark-text;
-    font-family: $font;
+    color: var(--dark-text);
+    font-family: var(--font);
 
     &.is-light {
-      color: $light-text;
+      color: var(--light-text);
     }
   }
 
   blockquote {
-    color: $light-text;
+    color: var(--light-text);
 
     &.is-primary {
-      border-color: $primary;
+      border-color: var(--primary);
     }
 
     &.is-success {
-      border-color: $success;
+      border-color: var(--success);
     }
 
     &.is-info {
-      border-color: $info;
+      border-color: var(--info);
     }
 
     &.is-warning {
-      border-color: $warning;
+      border-color: var(--warning);
     }
 
     &.is-danger {
-      border-color: $danger;
+      border-color: var(--danger);
     }
   }
 
   table {
     th {
-      color: $dark-text;
-      font-family: $font-alt;
+      color: var(--dark-text);
+      font-family: var(--font-alt);
     }
 
     td {
-      color: $light-text;
+      color: var(--light-text);
     }
   }
 }
@@ -65,44 +65,44 @@
     ol,
     ul {
       &:not(.is-light) {
-        color: $dark-dark-text;
+        color: var(--dark-dark-text);
       }
     }
 
     blockquote {
-      background: $dark-sidebar-light-10;
+      background: var(--dark-sidebar-light-10);
 
       &:not(.is-primary):not(.is-success):not(.is-info):not(.is-warning):not(.is-danger) {
-        border-color: $dark-sidebar-light-2;
+        border-color: var(--dark-sidebar-light-2);
       }
 
       &.is-primary {
-        border-color: $accent;
+        border-color: var(--primary);
       }
     }
 
     table {
       th {
-        color: $dark-dark-text;
-        border-color: $dark-sidebar-light-14;
+        color: var(--dark-dark-text);
+        border-color: var(--dark-sidebar-light-14);
       }
 
       td {
-        border-color: $dark-sidebar-light-14;
+        border-color: var(--dark-sidebar-light-14);
       }
     }
   }
 
   .is-divider,
   .is-divider-vertical {
-    border-color: $dark-sidebar-light-14;
+    border-color: var(--dark-sidebar-light-14);
 
     &::before {
-      border-color: $dark-sidebar-light-14;
+      border-color: var(--dark-sidebar-light-14);
     }
 
     &::after {
-      background: $dark-sidebar-light-6;
+      background: var(--dark-sidebar-light-6);
     }
   }
 }

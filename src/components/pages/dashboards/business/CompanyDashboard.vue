@@ -450,21 +450,20 @@ onMounted(async () => {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
 
 .company-dashboard {
   .company-header {
     display: flex;
     padding: 20px;
-    background: $white;
-    border: 1px solid $fade-grey-dark-3;
-    border-radius: $radius-large;
+    background: var(--white);
+    border: 1px solid var(--fade-grey-dark-3);
+    border-radius: var(--radius-large);
     margin-bottom: 1.5rem;
 
     .header-item {
       width: 25%;
-      border-right: 1px solid $fade-grey-dark-3;
+      border-right: 1px solid var(--fade-grey-dark-3);
 
       &:last-child {
         border-right: none;
@@ -477,19 +476,19 @@ onMounted(async () => {
         .lnir {
           font-size: 1.8rem;
           margin-bottom: 6px;
-          color: $primary;
+          color: var(--primary);
         }
 
         span {
           display: block;
-          font-family: $font;
+          font-family: var(--font);
           font-weight: 600;
           font-size: 1.6rem;
-          color: $dark-text;
+          color: var(--dark-text);
         }
 
         p {
-          font-family: $font-alt;
+          font-family: var(--font-alt);
           font-size: 0.95rem;
         }
       }
@@ -522,8 +521,8 @@ onMounted(async () => {
       }
 
       > h3 {
-        color: $dark-text;
-        font-family: $font-alt;
+        color: var(--dark-text);
+        font-family: var(--font-alt);
         font-size: 1.2rem;
         font-weight: 600;
       }
@@ -540,7 +539,7 @@ onMounted(async () => {
         display: flex;
         padding-top: 20px;
         margin-top: 20px;
-        border-top: 1px solid $fade-grey-dark-3;
+        border-top: 1px solid var(--fade-grey-dark-3);
 
         .company-stat {
           width: 33.3%;
@@ -551,17 +550,17 @@ onMounted(async () => {
 
           span {
             display: block;
-            font-family: $font;
+            font-family: var(--font);
 
             &:first-child {
               text-transform: uppercase;
-              font-family: $font-alt;
+              font-family: var(--font-alt);
               font-size: 0.75rem;
-              color: $light-text;
+              color: var(--light-text);
             }
 
             &:nth-child(2) {
-              color: $dark-text;
+              color: var(--dark-text);
               font-size: 1.4rem;
               font-weight: 600;
             }
@@ -581,30 +580,30 @@ onMounted(async () => {
         .revenue-stats {
           display: flex;
           padding-bottom: 20px;
-          border-bottom: 1px solid $fade-grey-dark-3;
+          border-bottom: 1px solid var(--fade-grey-dark-3);
 
           .revenue-stat {
             margin-right: 30px;
-            font-family: $font;
+            font-family: var(--font);
 
             span {
               display: block;
 
               &:first-child {
                 text-transform: uppercase;
-                font-family: $font-alt;
+                font-family: var(--font-alt);
                 font-size: 0.75rem;
-                color: $light-text;
+                color: var(--light-text);
               }
 
               &:nth-child(2) {
-                color: $dark-text;
+                color: var(--dark-text);
                 font-size: 1.6rem;
                 font-weight: 600;
               }
 
               &.current {
-                color: $accent;
+                color: var(--primary);
               }
             }
           }
@@ -626,7 +625,7 @@ onMounted(async () => {
           + .media-flex {
             margin-top: 20px;
             padding-top: 20px;
-            border-top: 1px solid $fade-grey-dark-3;
+            border-top: 1px solid var(--fade-grey-dark-3);
           }
 
           .flex-meta {
@@ -634,13 +633,13 @@ onMounted(async () => {
               &:nth-child(2) {
                 font-size: 1rem;
                 margin: 4px 0;
-                color: $light-text-dark-20;
+                color: var(--light-text-dark-20);
                 max-width: 430px;
               }
 
               &:nth-child(3) {
                 font-size: 0.9rem;
-                color: $light-text;
+                color: var(--light-text);
               }
             }
           }
@@ -655,10 +654,10 @@ onMounted(async () => {
       margin-bottom: 20px;
 
       h3 {
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         font-size: 1rem;
         font-weight: 600;
-        color: $dark-text;
+        color: var(--dark-text);
       }
     }
   }

@@ -48,20 +48,20 @@
       display: block;
 
       &:first-child {
-        font-family: $font-alt;
-        color: $dark-text;
+        font-family: var(--font-alt);
+        color: var(--dark-text);
         font-weight: 600;
       }
 
       &:nth-child(2) {
-        font-family: $font;
-        color: $light-text;
+        font-family: var(--font);
+        color: var(--light-text);
         font-size: 0.9rem;
       }
     }
 
     a:hover {
-      color: $primary;
+      color: var(--primary);
     }
   }
 
@@ -118,21 +118,21 @@
       display: block;
 
       &:first-child {
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         font-size: 0.95rem;
-        color: $dark-text;
+        color: var(--dark-text);
         font-weight: 600;
       }
 
       &:nth-child(2) {
-        font-family: $font;
-        color: $light-text;
+        font-family: var(--font);
+        color: var(--light-text);
         font-size: 0.9rem;
       }
     }
 
     a:hover {
-      color: $primary;
+      color: var(--primary);
     }
   }
 
@@ -159,12 +159,12 @@
       span,
       a {
         &:first-child {
-          color: $dark-dark-text !important;
+          color: var(--dark-dark-text) !important;
         }
       }
 
       a:hover {
-        color: $accent;
+        color: var(--primary);
       }
     }
   }

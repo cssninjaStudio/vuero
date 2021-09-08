@@ -29,15 +29,15 @@ Onboarding Layouts
     text-align: center;
 
     h2 {
-      font-family: $font-alt;
+      font-family: var(--font-alt);
       font-weight: 600;
       font-size: 1.4rem;
-      color: $dark-text;
+      color: var(--dark-text);
     }
 
     p {
       text-transform: uppercase;
-      font-family: $font;
+      font-family: var(--font);
       font-size: 0.85rem;
     }
   }
@@ -65,15 +65,15 @@ Onboarding Layouts
         }
 
         h3 {
-          font-family: $font-alt;
+          font-family: var(--font-alt);
           font-size: 1.1rem;
           font-weight: 600;
-          color: $dark-text;
+          color: var(--dark-text);
           margin-bottom: 12px;
         }
 
         p {
-          font-family: $font;
+          font-family: var(--font);
           font-size: 0.95rem;
         }
 
@@ -98,7 +98,7 @@ Onboarding Layouts
   .standard-onboarding {
     .title-wrap {
       h2 {
-        color: $dark-dark-text;
+        color: var(--dark-dark-text);
       }
     }
 
@@ -108,7 +108,7 @@ Onboarding Layouts
           @include vuero-card--dark();
 
           h3 {
-            color: $dark-dark-text;
+            color: var(--dark-dark-text);
           }
         }
       }
@@ -131,15 +131,15 @@ Onboarding Layouts
     text-align: center;
 
     h2 {
-      font-family: $font-alt;
+      font-family: var(--font-alt);
       font-weight: 600;
       font-size: 1.4rem;
-      color: $dark-text;
+      color: var(--dark-text);
     }
 
     p {
       text-transform: uppercase;
-      font-family: $font;
+      font-family: var(--font);
       font-size: 0.85rem;
     }
   }
@@ -172,15 +172,15 @@ Onboarding Layouts
             padding: 0 20px 30px 20px;
 
             h3 {
-              font-family: $font-alt;
+              font-family: var(--font-alt);
               font-size: 1.1rem;
               font-weight: 600;
-              color: $dark-text;
+              color: var(--dark-text);
               margin-bottom: 12px;
             }
 
             p {
-              font-family: $font;
+              font-family: var(--font);
               font-size: 0.95rem;
             }
 
@@ -233,15 +233,15 @@ Onboarding Layouts
             padding: 0 20px 30px 20px;
 
             h3 {
-              font-family: $font-alt;
+              font-family: var(--font-alt);
               font-size: 1.1rem;
               font-weight: 600;
-              color: $dark-text;
+              color: var(--dark-text);
               margin-bottom: 12px;
             }
 
             p {
-              font-family: $font;
+              font-family: var(--font);
               font-size: 0.95rem;
             }
 

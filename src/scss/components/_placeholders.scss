@@ -30,16 +30,16 @@
     }
 
     h3 {
-      font-family: $font-alt;
+      font-family: var(--font-alt);
       font-size: 1.1rem;
       font-weight: 600;
-      color: $dark-text;
+      color: var(--dark-text);
     }
 
     p {
-      font-family: $font;
+      font-family: var(--font);
       font-size: 1rem;
-      color: $light-text;
+      color: var(--light-text);
       max-width: 280px;
       margin: 0 auto 12px auto;
     }
@@ -87,15 +87,15 @@
     h3 {
       font-size: 1.3rem;
       font-weight: 600;
-      font-family: $font-alt;
-      color: $dark-text;
+      font-family: var(--font-alt);
+      color: var(--dark-text);
     }
 
     p {
       font-size: 1.1rem;
       max-width: 440px;
       margin: 0 auto 12px auto;
-      color: $light-text;
+      color: var(--light-text);
 
       &.is-larger {
         max-width: 620px;
@@ -112,7 +112,7 @@
   .page-placeholder {
     .placeholder-content {
       h3 {
-        color: $dark-dark-text;
+        color: var(--dark-dark-text);
       }
     }
   }

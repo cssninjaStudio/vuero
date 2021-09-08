@@ -14,10 +14,10 @@
   .note-modal-content {
     .note-modal-header {
       h4 {
-        font-family: $font;
+        font-family: var(--font);
         font-size: 1.2rem !important;
         font-weight: 500;
-        color: $dark-text;
+        color: var(--dark-text);
       }
 
       .close {
@@ -30,10 +30,10 @@
 
       .form-group {
         label {
-          font-family: $font;
+          font-family: var(--font);
           font-size: 1rem;
           font-weight: 400;
-          color: $light-text;
+          color: var(--light-text);
         }
       }
     }
@@ -41,18 +41,18 @@
     .note-modal-footer {
       padding: 0 16px;
       height: 70px;
-      background: $widget-grey-dark-2;
+      background: var(--widget-grey-dark-2);
       display: flex;
       align-items: center;
       justify-content: flex-end;
 
       .btn-primary {
         height: 40px;
-        background: $primary;
+        background: var(--primary);
         padding-bottom: 8px;
         opacity: 1;
         min-width: 130px;
-        border-radius: $radius-large;
+        border-radius: var(--radius-large);
       }
     }
   }
@@ -65,34 +65,34 @@
 .is-dark {
   .note-editor {
     .note-toolbar {
-      background: $dark-sidebar-light-2;
-      border-color: $dark-sidebar-light-12;
+      background: var(--dark-sidebar-light-2);
+      border-color: var(--dark-sidebar-light-12);
 
       .note-btn-group {
         .note-btn {
-          background: $dark-sidebar-light-4;
-          border-color: $dark-sidebar-light-12;
+          background: var(--dark-sidebar-light-4);
+          border-color: var(--dark-sidebar-light-12);
 
           i,
           .note-icon-caret {
-            color: $dark-dark-text;
+            color: var(--dark-dark-text);
           }
         }
 
         .note-dropdown-menu {
-          background: $dark-sidebar-dark-2;
-          border-color: $dark-sidebar-light-8;
+          background: var(--dark-sidebar-dark-2);
+          border-color: var(--dark-sidebar-light-8);
 
           .note-dropdown-item {
-            color: $light-text;
+            color: var(--light-text);
 
             &:hover {
-              background: $dark-sidebar-light-1;
+              background: var(--dark-sidebar-light-1);
             }
           }
 
           .note-dimension-display {
-            color: $dark-dark-text;
+            color: var(--dark-dark-text);
           }
         }
       }
@@ -102,30 +102,30 @@
       .table {
         tbody {
           td {
-            border-color: $dark-sidebar-light-12 !important;
+            border-color: var(--dark-sidebar-light-12) !important;
           }
         }
       }
     }
 
     .note-popover {
-      background: $dark-sidebar-light-2;
-      border-color: $dark-sidebar-light-12;
+      background: var(--dark-sidebar-light-2);
+      border-color: var(--dark-sidebar-light-12);
 
       &.bottom {
         .note-popover-arrow::after {
-          border-bottom-color: $dark-sidebar-light-2;
+          border-bottom-color: var(--dark-sidebar-light-2);
         }
       }
 
       .note-btn-group {
         .note-btn {
-          background: $dark-sidebar-light-4;
-          border-color: $dark-sidebar-light-12;
+          background: var(--dark-sidebar-light-4);
+          border-color: var(--dark-sidebar-light-12);
 
           i,
           .note-icon-caret {
-            color: $dark-dark-text;
+            color: var(--dark-dark-text);
           }
         }
       }
@@ -138,43 +138,43 @@
     border: none;
 
     .note-modal-header {
-      background: $dark-sidebar-light-2;
-      border-color: $dark-sidebar-light-12;
+      background: var(--dark-sidebar-light-2);
+      border-color: var(--dark-sidebar-light-12);
 
       h4 {
-        color: $dark-dark-text;
+        color: var(--dark-dark-text);
       }
 
       .close {
-        color: $dark-dark-text !important;
+        color: var(--dark-dark-text) !important;
 
         .note-icon-close {
-          color: $dark-dark-text !important;
+          color: var(--dark-dark-text) !important;
         }
       }
     }
 
     .note-modal-body {
-      background: $dark-sidebar-light-4;
+      background: var(--dark-sidebar-light-4);
 
       .form-group {
         input {
-          background: $dark-sidebar-dark-2;
-          border-color: $dark-sidebar-light-8;
-          color: $light-text;
+          background: var(--dark-sidebar-dark-2);
+          border-color: var(--dark-sidebar-light-8);
+          color: var(--light-text);
           height: 38px;
-          border-radius: $radius;
+          border-radius: var(--radius);
         }
       }
     }
 
     .note-modal-footer {
-      background: $dark-sidebar-light-2;
-      border-color: $dark-sidebar-light-12;
+      background: var(--dark-sidebar-light-2);
+      border-color: var(--dark-sidebar-light-12);
 
       .btn-primary {
-        background: $accent;
-        border-color: $accent;
+        background: var(--primary);
+        border-color: var(--primary);
       }
     }
   }
@@ -187,36 +187,36 @@
 .is-dark {
   .sun-editor {
     width: 100%;
-    border-color: $dark-sidebar-light-12 !important;
-    background: $dark-sidebar-dark-2;
+    border-color: var(--dark-sidebar-light-12) !important;
+    background: var(--dark-sidebar-dark-2);
 
     .se-container {
       .se-toolbar {
-        background: $dark-sidebar-dark-2;
-        border-color: $dark-sidebar-light-12;
+        background: var(--dark-sidebar-dark-2);
+        border-color: var(--dark-sidebar-light-12);
         outline: none;
 
         &.se-toolbar-balloon {
-          box-shadow: $light-box-shadow !important;
+          box-shadow: var(--light-box-shadow) !important;
 
           .se-arrow.se-arrow-down::after {
-            border-top-color: $dark-sidebar-dark-2;
+            border-top-color: var(--dark-sidebar-dark-2);
           }
         }
 
         .se-btn-tray {
           .se-btn-module {
-            background: $dark-sidebar-light-4;
-            border-color: $dark-sidebar-light-12;
+            background: var(--dark-sidebar-light-4);
+            border-color: var(--dark-sidebar-light-12);
 
             .se-menu-list {
               li {
                 button {
-                  color: $dark-dark-text;
+                  color: var(--dark-dark-text);
 
                   &:hover {
-                    background: $dark-sidebar-light-2;
-                    border-color: $dark-sidebar-light-12;
+                    background: var(--dark-sidebar-light-2);
+                    border-color: var(--dark-sidebar-light-12);
                   }
                 }
               }
@@ -226,17 +226,17 @@
       }
 
       .se-wrapper {
-        background: $dark-sidebar-dark-10;
+        background: var(--dark-sidebar-dark-10);
 
         .se-wrapper-inner {
-          background: $dark-sidebar-dark-10;
-          color: $dark-dark-text;
+          background: var(--dark-sidebar-dark-10);
+          color: var(--dark-dark-text);
         }
       }
 
       .se-resizing-bar {
-        background: $dark-sidebar-dark-2;
-        border-color: $dark-sidebar-light-12;
+        background: var(--dark-sidebar-dark-2);
+        border-color: var(--dark-sidebar-light-12);
       }
     }
   }

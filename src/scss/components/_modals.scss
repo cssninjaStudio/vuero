@@ -78,14 +78,19 @@
 
   .v-modal-card {
     width: 100%;
-    background: $white;
-    border: 1px solid $fade-grey;
+    background: var(--white);
+    border: 1px solid var(--fade-grey);
     border-radius: 8px;
     padding: 40px;
   }
 
   .modal-background {
-    background-color: rgba($dark-sidebar, 0.8);
+    background-color: hsla(
+      var(--dark-sidebar-h),
+      var(--dark-sidebar-s),
+      var(--dark-sidebar-l),
+      0.8
+    );
   }
 
   .modal-content {
@@ -110,16 +115,16 @@
         justify-content: space-between;
         align-items: center;
         padding: 15px 20px;
-        background: $white;
-        border-bottom-color: $fade-grey-dark-3;
+        background: var(--white);
+        border-bottom-color: var(--fade-grey-dark-3);
 
         &.no-border {
           border-bottom-color: transparent;
         }
 
         h3 {
-          font-family: $font-alt;
-          color: $dark-text;
+          font-family: var(--font-alt);
+          color: var(--dark-text);
           font-weight: 600;
           font-size: 1rem;
         }
@@ -137,14 +142,14 @@
 
           &:hover {
             svg {
-              color: $primary;
+              color: var(--primary);
             }
           }
 
           svg {
             width: 22px;
             height: 22px;
-            color: $muted-grey;
+            color: var(--muted-grey);
           }
         }
       }
@@ -178,9 +183,9 @@
       }
 
       .modal-card-foot {
-        background-color: $white;
+        background-color: var(--white);
         padding: 15px 20px;
-        border-top: 1px solid $fade-grey-dark-3;
+        border-top: 1px solid var(--fade-grey-dark-3);
 
         &.no-border {
           border-top-color: transparent;
@@ -219,29 +224,29 @@
     .modal-content {
       .modal-card {
         .modal-card-head {
-          background: $dark-sidebar-light-6 !important;
-          border-color: $dark-sidebar-light-12;
+          background: var(--dark-sidebar-light-6) !important;
+          border-color: var(--dark-sidebar-light-12);
 
           h3 {
-            color: $dark-dark-text;
+            color: var(--dark-dark-text);
           }
 
           .v-modal-close {
             &:hover {
               svg {
-                color: $accent;
+                color: var(--primary);
               }
             }
           }
         }
 
         .modal-card-body {
-          background: $dark-sidebar-light-6 !important;
+          background: var(--dark-sidebar-light-6) !important;
         }
 
         .modal-card-foot {
-          background: $dark-sidebar-light-6 !important;
-          border-color: $dark-sidebar-light-12;
+          background: var(--dark-sidebar-light-6) !important;
+          border-color: var(--dark-sidebar-light-12);
         }
       }
     }

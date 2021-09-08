@@ -35,12 +35,12 @@
 
     .control {
       .button {
-        color: $light-text;
+        color: var(--light-text);
 
         &:hover {
-          background: $primary;
-          border-color: $primary;
-          color: $smoke-white;
+          background: var(--primary);
+          border-color: var(--primary);
+          color: var(--smoke-white);
         }
       }
     }
@@ -65,13 +65,13 @@
     .field {
       .control {
         .button {
-          background: $dark-sidebar !important;
-          color: $light-text;
+          background: var(--dark-sidebar) !important;
+          color: var(--light-text);
 
           &:hover {
-            background: $accent !important;
-            border-color: $accent !important;
-            color: $smoke-white !important;
+            background: var(--primary) !important;
+            border-color: var(--primary) !important;
+            color: var(--smoke-white) !important;
           }
         }
       }
@@ -93,10 +93,10 @@
       label {
         display: block;
         position: relative;
-        font-family: $font;
+        font-family: var(--font);
         font-weight: 400;
         font-size: 0.9rem;
-        color: $light-text;
+        color: var(--light-text);
 
         &::after {
           position: absolute;
@@ -106,29 +106,29 @@
           font-family: 'Font Awesome 5 Free';
           font-weight: 900;
           font-size: 0.9rem;
-          color: $light-text;
+          color: var(--light-text);
           height: 36px;
           width: 36px;
           border-radius: 0.5rem;
           display: flex;
           justify-content: center;
           align-items: center;
-          background: $white;
+          background: var(--white);
         }
       }
 
       select {
         font-size: 1rem;
-        background: $white;
-        border: 1px solid $border;
-        color: $dark-text;
+        background: var(--white);
+        border: 1px solid var(--border);
+        color: var(--dark-text);
         border-radius: 0.5rem;
         height: 38px;
         outline: none;
         transition: box-shadow 0.3s;
 
         &:focus {
-          box-shadow: $light-box-shadow;
+          box-shadow: var(--light-box-shadow);
         }
       }
     }
@@ -144,40 +144,40 @@
         font-family: 'Font Awesome 5 Free';
         font-weight: 900;
         font-size: 0.9rem;
-        color: $light-text;
+        color: var(--light-text);
         height: 36px;
         width: 36px;
         border-radius: 0.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        background: $white;
+        background: var(--white);
       }
 
       input {
-        font-family: $font;
+        font-family: var(--font);
         font-size: 1rem;
-        background: $white;
-        border: 1px solid $border;
-        color: $dark-text;
+        background: var(--white);
+        border: 1px solid var(--border);
+        color: var(--dark-text);
         border-radius: 0.5rem;
         height: 38px;
         outline: none;
         transition: box-shadow 0.3s;
 
         &::placeholder {
-          color: $placeholder;
+          color: var(--placeholder);
         }
 
         &:focus {
-          box-shadow: $light-box-shadow;
+          box-shadow: var(--light-box-shadow);
         }
       }
     }
   }
 
   .dataTable-container {
-    background: $white;
+    background: var(--white);
     border: none !important;
     overflow-x: auto;
 
@@ -191,17 +191,17 @@
     }
 
     .dataTable-table {
-      border: 1px solid $fade-grey;
+      border: 1px solid var(--fade-grey);
       border-collapse: collapse;
       border-radius: 0.75rem;
 
       th {
         padding: 16px 20px;
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         font-size: 0.8rem;
-        color: $dark-text;
+        color: var(--dark-text);
         text-transform: uppercase;
-        border: 1px solid $fade-grey;
+        border: 1px solid var(--fade-grey);
         font-weight: 600;
 
         &:last-child {
@@ -210,10 +210,10 @@
       }
 
       td {
-        font-family: $font;
+        font-family: var(--font);
         vertical-align: middle;
         padding: 12px 20px;
-        border-bottom: 1px solid $fade-grey;
+        border-bottom: 1px solid var(--fade-grey);
 
         &:last-child {
           text-align: right;
@@ -225,7 +225,7 @@
       }
 
       .light-text {
-        color: $light-text;
+        color: var(--light-text);
       }
 
       .flex-media {
@@ -239,12 +239,12 @@
           span {
             display: block;
             font-size: 0.8rem;
-            color: $light-text;
-            font-family: $font;
+            color: var(--light-text);
+            font-family: var(--font);
 
             &:first-child {
-              font-family: $font-alt;
-              color: $dark-text;
+              font-family: var(--font-alt);
+              color: var(--dark-text);
             }
           }
         }
@@ -274,8 +274,8 @@
       .drinks-icon {
         display: block;
         max-width: 48px;
-        border-radius: $radius-rounded;
-        border: 1px solid $fade-grey;
+        border-radius: var(--radius-rounded);
+        border: 1px solid var(--fade-grey);
       }
 
       .negative-icon,
@@ -288,7 +288,7 @@
 
       .positive-icon {
         .iconify {
-          color: $success;
+          color: var(--success);
 
           * {
             stroke-width: 4px;
@@ -299,12 +299,12 @@
       .negative-icon {
         &.is-danger {
           .iconify {
-            color: $danger !important;
+            color: var(--danger) !important;
           }
         }
 
         .iconify {
-          color: $light-text;
+          color: var(--light-text);
 
           * {
             stroke-width: 4px;
@@ -313,7 +313,7 @@
       }
 
       .price {
-        color: $dark-text;
+        color: var(--dark-text);
         font-weight: 500;
 
         &::before {
@@ -321,7 +321,7 @@
         }
 
         &.price-free {
-          color: $light-text;
+          color: var(--light-text);
         }
       }
 
@@ -331,19 +331,19 @@
 
         &.is-available {
           i {
-            color: $success;
+            color: var(--success);
           }
         }
 
         &.is-busy {
           i {
-            color: $danger;
+            color: var(--danger);
           }
         }
 
         &.is-offline {
           i {
-            color: $light-text;
+            color: var(--light-text);
           }
         }
 
@@ -353,9 +353,9 @@
         }
 
         span {
-          font-family: $font;
+          font-family: var(--font);
           font-size: 0.9rem;
-          color: $light-text;
+          color: var(--light-text);
         }
       }
     }
@@ -363,24 +363,24 @@
 
   .dataTable-bottom {
     .dataTable-info {
-      font-family: $font;
+      font-family: var(--font);
       font-size: 0.9rem;
-      color: $light-text;
+      color: var(--light-text);
     }
 
     .dataTable-pagination {
       li {
         &:not(.active) {
           a:hover {
-            background: $white;
+            background: var(--white);
           }
         }
 
         &.active {
           a {
-            background: $primary;
-            box-shadow: $primary-box-shadow;
-            color: $white;
+            background: var(--primary);
+            box-shadow: var(--primary-box-shadow);
+            color: var(--white);
           }
         }
 
@@ -388,9 +388,9 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          font-family: $font;
-          color: $light-text;
-          border-radius: $radius-rounded;
+          font-family: var(--font);
+          color: var(--light-text);
+          border-radius: var(--radius-rounded);
           min-width: 34px;
           min-height: 34px;
           padding: 0;
@@ -410,57 +410,57 @@
       .dataTable-dropdown {
         label {
           &::after {
-            background: $dark-sidebar-light-6 !important;
+            background: var(--dark-sidebar-light-6) !important;
           }
         }
 
         select {
-          border-color: $dark-sidebar-light-12;
-          background: $dark-sidebar-light-6;
-          color: $white;
+          border-color: var(--dark-sidebar-light-12);
+          background: var(--dark-sidebar-light-6);
+          color: var(--white);
         }
       }
 
       .dataTable-search {
         &::after {
-          background: $dark-sidebar-light-6 !important;
+          background: var(--dark-sidebar-light-6) !important;
         }
 
         input {
-          border-color: $dark-sidebar-light-12;
-          background: $dark-sidebar-light-6;
-          color: $white;
+          border-color: var(--dark-sidebar-light-12);
+          background: var(--dark-sidebar-light-6);
+          color: var(--white);
         }
       }
     }
 
     .dataTable-container {
-      border-color: $dark-sidebar-light-12;
-      background: $dark-sidebar-light-6;
+      border-color: var(--dark-sidebar-light-12);
+      background: var(--dark-sidebar-light-6);
 
       .dataTable-table {
-        border-color: $dark-sidebar-light-12;
+        border-color: var(--dark-sidebar-light-12);
 
         th,
         td {
-          border-color: $dark-sidebar-light-12;
-          color: $dark-dark-text;
+          border-color: var(--dark-sidebar-light-12);
+          color: var(--dark-dark-text);
         }
 
         th {
           .dataTable-sorter {
             &::before {
-              border-top-color: $dark-dark-text;
+              border-top-color: var(--dark-dark-text);
             }
 
             &::after {
-              border-bottom-color: $dark-dark-text;
+              border-bottom-color: var(--dark-dark-text);
             }
           }
         }
 
         .drinks-icon {
-          border-color: $dark-sidebar-light-12;
+          border-color: var(--dark-sidebar-light-12);
         }
       }
     }

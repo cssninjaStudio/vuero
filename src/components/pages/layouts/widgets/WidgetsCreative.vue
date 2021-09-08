@@ -171,7 +171,6 @@ import Widget8 from '/@src/assets/illustrations/widgets/8.svg'
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
 @import '../../../../scss/pages/generic/_widgets-lists.scss';
 </style>

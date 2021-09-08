@@ -175,7 +175,6 @@ const { locale, t } = useI18n()
 </template>
 
 <style lang="scss">
-@import '../../../scss/abstracts/_variables.scss';
 @import '../../../scss/abstracts/_mixins.scss';
 @import '../../../scss/layout/_right-panel.scss';
 </style>

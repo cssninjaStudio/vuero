@@ -8,12 +8,12 @@
   }
 
   &.is-raised {
-    box-shadow: $light-box-shadow;
+    box-shadow: var(--light-box-shadow);
   }
 
   &.is-primary {
-    background: $primary;
-    border-color: $primary;
+    background: var(--primary);
+    border-color: var(--primary);
 
     .title,
     .subtitle,
@@ -22,13 +22,13 @@
     h3,
     h4,
     p {
-      color: $smoke-white !important;
+      color: var(--smoke-white) !important;
     }
   }
 
   &.is-secondary {
-    background: $secondary !important;
-    border-color: $secondary !important;
+    background: var(--secondary) !important;
+    border-color: var(--secondary) !important;
 
     .title,
     .subtitle,
@@ -37,13 +37,13 @@
     h3,
     h4,
     p {
-      color: $smoke-white !important;
+      color: var(--smoke-white) !important;
     }
   }
 
   &.is-info {
-    background: $info !important;
-    border-color: $info !important;
+    background: var(--info) !important;
+    border-color: var(--info) !important;
 
     .title,
     .subtitle,
@@ -52,13 +52,13 @@
     h3,
     h4,
     p {
-      color: $smoke-white !important;
+      color: var(--smoke-white) !important;
     }
   }
 
   &.is-success {
-    background: $success !important;
-    border-color: $success !important;
+    background: var(--success) !important;
+    border-color: var(--success) !important;
 
     .title,
     .subtitle,
@@ -67,13 +67,13 @@
     h3,
     h4,
     p {
-      color: $smoke-white !important;
+      color: var(--smoke-white) !important;
     }
   }
 
   &.is-warning {
-    background: $warning !important;
-    border-color: $warning !important;
+    background: var(--warning) !important;
+    border-color: var(--warning) !important;
 
     .title,
     .subtitle,
@@ -82,13 +82,13 @@
     h3,
     h4,
     p {
-      color: $smoke-white !important;
+      color: var(--smoke-white) !important;
     }
   }
 
   &.is-danger {
-    background: $danger !important;
-    border-color: $danger !important;
+    background: var(--danger) !important;
+    border-color: var(--danger) !important;
 
     .title,
     .subtitle,
@@ -97,7 +97,7 @@
     h3,
     h4,
     p {
-      color: $smoke-white !important;
+      color: var(--smoke-white) !important;
     }
   }
 
@@ -130,28 +130,28 @@
 }
 
 @mixin vuero-card--dark() {
-  background: $dark-sidebar-light-6;
-  border-color: $dark-sidebar-light-12;
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
 
   &.is-primary {
-    background: $accent;
-    border-color: $accent;
+    background: var(--primary);
+    border-color: var(--primary);
   }
 
   .v-avatar {
     img {
-      border-color: $dark-sidebar-light-6 !important;
+      border-color: var(--dark-sidebar-light-6) !important;
     }
   }
 
   .avatar-stack {
     .v-avatar {
-      border-color: $dark-sidebar-light-6 !important;
+      border-color: var(--dark-sidebar-light-6) !important;
 
       .avatar {
         &.is-more {
           .inner {
-            border-color: $dark-sidebar-light-6 !important;
+            border-color: var(--dark-sidebar-light-6) !important;
           }
         }
       }
@@ -163,8 +163,8 @@
   flex: 1;
   display: inline-block;
   width: 100%;
-  background-color: $white;
-  border: 1px solid $fade-grey-dark-3;
+  background-color: var(--white);
+  border: 1px solid var(--fade-grey-dark-3);
   transition: all 0.3s;
 
   .card-head,
@@ -187,11 +187,11 @@
   }
 
   .card-head {
-    border-bottom: 1px solid $fade-grey-dark-3;
+    border-bottom: 1px solid var(--fade-grey-dark-3);
   }
 
   .card-foot {
-    border-top: 1px solid $fade-grey-dark-3;
+    border-top: 1px solid var(--fade-grey-dark-3);
   }
 
   .card-body {
@@ -201,14 +201,14 @@
 
 @mixin vuero-v-card() {
   box-shadow: none;
-  border-radius: $radius;
-  border: 1px solid $fade-grey-dark-3;
+  border-radius: var(--radius);
+  border: 1px solid var(--fade-grey-dark-3);
 
   .card-header {
     box-shadow: none;
 
     .card-header-title {
-      font-family: $font-alt;
+      font-family: var(--font-alt);
       font-weight: 600;
     }
   }
@@ -221,33 +221,33 @@
 
   .card-footer {
     a {
-      font-family: $font;
-      color: $light-text;
+      font-family: var(--font);
+      color: var(--light-text);
     }
   }
 }
 
 @mixin vuero-v-card--dark() {
-  background: $dark-sidebar-light-6;
-  border-color: $dark-sidebar-light-12;
+  background: var(--dark-sidebar-light-6);
+  border-color: var(--dark-sidebar-light-12);
 
   .card-header {
     .card-header-title {
-      color: $dark-dark-text;
+      color: var(--dark-dark-text);
     }
   }
 
   .card-footer {
-    border-color: $dark-sidebar-light-12;
+    border-color: var(--dark-sidebar-light-12);
 
     a {
-      border-color: $dark-sidebar-light-12;
+      border-color: var(--dark-sidebar-light-12);
     }
   }
 
   .v-avatar {
     .badge {
-      border-color: $dark-sidebar-light-6;
+      border-color: var(--dark-sidebar-light-6);
     }
   }
 }
@@ -259,9 +259,9 @@
   display: inline-block;
   width: 100%;
   padding: 20px;
-  background-color: $white;
+  background-color: var(--white);
   border-radius: 10px;
-  border: 1px solid $fade-grey-dark-3;
+  border: 1px solid var(--fade-grey-dark-3);
   transition: all 0.3s;
 }
 @mixin vuero-s-card() {
@@ -271,9 +271,9 @@
   display: inline-block;
   width: 100%;
   padding: 20px;
-  background-color: $white;
-  border-radius: $radius-large;
-  border: 1px solid $fade-grey-dark-3;
+  background-color: var(--white);
+  border-radius: var(--radius-large);
+  border: 1px solid var(--fade-grey-dark-3);
   transition: all 0.3s;
 }
 @mixin vuero-l-card() {
@@ -283,8 +283,8 @@
   display: inline-block;
   width: 100%;
   padding: 20px;
-  background-color: $white;
+  background-color: var(--white);
   border-radius: 16px;
-  border: 1px solid $fade-grey-dark-3;
+  border: 1px solid var(--fade-grey-dark-3);
   transition: all 0.3s;
 }

@@ -23,7 +23,6 @@
 </template>
 
 <style lang="scss">
-@import '../../../scss/abstracts/_variables.scss';
 @import '../../../scss/abstracts/_mixins.scss';
 
 /* ==========================================================================
@@ -49,7 +48,7 @@
   .projects-toolbar {
     .avatar-stack {
       .avatar {
-        border-color: $dark-sidebar-light-3;
+        border-color: var(--dark-sidebar-light-3);
       }
     }
   }

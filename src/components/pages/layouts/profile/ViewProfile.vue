@@ -495,15 +495,14 @@
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
 @import '../../../../scss/pages/profile/_user-profile.scss';
 
 .is-dark {
   .icon-wrap,
   .icon-wrap.is-placeholder {
-    background: $dark-sidebar-light-2 !important;
-    border-color: $dark-sidebar-light-12 !important;
+    background: var(--dark-sidebar-light-2) !important;
+    border-color: var(--dark-sidebar-light-12) !important;
   }
 }
 </style>

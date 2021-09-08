@@ -6,3 +6,5 @@ node_modules
 public
 
 *.md
+generated-vars.sass
+generated-fallback.css

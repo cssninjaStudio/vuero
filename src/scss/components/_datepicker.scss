@@ -11,7 +11,7 @@
 
 .vc-pane-container {
   .vc-pane-layout {
-    font-family: $font;
+    font-family: var(--font);
 
     .vc-pane {
       padding: 1rem;
@@ -52,7 +52,7 @@
     padding: 8px 24px;
 
     .vc-arrow {
-      border-radius: $radius-rounded;
+      border-radius: var(--radius-rounded);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -87,29 +87,29 @@
         .vc-nav-arrow {
           position: relative;
           top: 0.25rem;
-          border-radius: $radius-rounded;
+          border-radius: var(--radius-rounded);
           width: 24px;
           height: 24px;
           min-width: 24px;
           display: flex;
           justify-content: center;
           align-items: center;
-          color: $white;
+          color: var(--white);
 
           svg {
             position: relative;
             top: -1px;
             height: 20px;
             width: 20px;
-            stroke: $white;
+            stroke: var(--white);
           }
         }
       }
 
       .vc-nav-items {
         .vc-nav-item {
-          color: $white;
-          font-family: $font;
+          color: var(--white);
+          font-family: var(--font);
           font-weight: 400;
           font-size: 0.75rem;
           text-transform: uppercase;
@@ -117,7 +117,7 @@
           padding-bottom: 0.5rem;
 
           &.is-active {
-            background: $primary !important;
+            background: var(--primary) !important;
           }
         }
       }
@@ -134,7 +134,7 @@
 
   .vc-am-pm {
     > button {
-      font-family: $font;
+      font-family: var(--font);
       font-size: 0.85rem;
     }
   }
@@ -144,7 +144,7 @@
   .vc-date-time {
     .vc-date {
       > span {
-        font-family: $font;
+        font-family: var(--font);
         font-size: 0.9rem;
       }
     }
@@ -158,36 +158,36 @@
 .is-dark {
   .vc-popover-content-wrapper {
     .vc-popover-caret {
-      border-color: $dark-sidebar !important;
+      border-color: var(--dark-sidebar) !important;
     }
   }
 
   .vc-container {
-    background: $dark-sidebar !important;
-    border: 1px solid $dark-sidebar-light-8 !important;
+    background: var(--dark-sidebar) !important;
+    border: 1px solid var(--dark-sidebar-light-8) !important;
   }
 
   .vc-pane-container {
     .vc-pane-layout {
       .vc-header {
         .vc-title {
-          color: $dark-dark-text !important;
+          color: var(--dark-dark-text) !important;
         }
       }
     }
 
     .vc-day-content {
-      color: $dark-dark-text;
+      color: var(--dark-dark-text);
 
       &:hover {
-        background: $dark-sidebar-light-4 !important;
+        background: var(--dark-sidebar-light-4) !important;
       }
     }
 
     .vc-arrows-container {
       .vc-arrow {
         &:hover {
-          background: $dark-sidebar-light-4 !important;
+          background: var(--dark-sidebar-light-4) !important;
         }
       }
     }
@@ -195,29 +195,29 @@
 
   .vc-popover-content-wrapper {
     .vc-nav-popover-container {
-      background: $dark-sidebar-dark-4 !important;
-      border-color: $dark-sidebar-light-4 !important;
+      background: var(--dark-sidebar-dark-4) !important;
+      border-color: var(--dark-sidebar-light-4) !important;
 
       .vc-nav-container {
         .vc-nav-header {
           .vc-nav-title,
           .vc-nav-arrow {
             &:hover {
-              background: $dark-sidebar-light-2 !important;
+              background: var(--dark-sidebar-light-2) !important;
             }
           }
         }
 
         .vc-nav-items {
           .vc-nav-item {
-            color: $white;
+            color: var(--white);
 
             &:not(.is-active):hover {
-              background: $dark-sidebar-light-2 !important;
+              background: var(--dark-sidebar-light-2) !important;
             }
 
             &.is-active {
-              background: $primary !important;
+              background: var(--primary) !important;
             }
           }
         }
@@ -227,13 +227,13 @@
 
   .vc-time-picker {
     &.vc-bordered {
-      border-color: $dark-sidebar-light-12 !important;
+      border-color: var(--dark-sidebar-light-12) !important;
     }
 
     .vc-date-time {
       .vc-date {
         .vc-time-weekday {
-          color: $light-text !important;
+          color: var(--light-text) !important;
         }
       }
     }
@@ -241,23 +241,23 @@
     .vc-time-content {
       .vc-time-date {
         .vc-time-weekday {
-          color: $light-text !important;
+          color: var(--light-text) !important;
         }
       }
 
       .vc-select {
         select {
-          background: $dark-sidebar-dark-4 !important;
-          border-color: $dark-sidebar-dark-4 !important;
-          color: $dark-dark-text !important;
+          background: var(--dark-sidebar-dark-4) !important;
+          border-color: var(--dark-sidebar-dark-4) !important;
+          color: var(--dark-dark-text) !important;
         }
       }
 
       .vc-am-pm {
-        background: $dark-sidebar-dark-4 !important;
+        background: var(--dark-sidebar-dark-4) !important;
 
         > button {
-          color: $white !important;
+          color: var(--white) !important;
         }
       }
     }

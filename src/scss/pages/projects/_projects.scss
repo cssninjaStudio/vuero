@@ -16,10 +16,10 @@
 
 .all-projects {
   .section-heading {
-    font-family: $font-alt;
+    font-family: var(--font-alt);
     font-size: 0.85rem;
     text-transform: uppercase;
-    color: $light-text;
+    color: var(--light-text);
     margin-bottom: 1rem;
   }
 
@@ -33,8 +33,8 @@
       box-shadow: none;
 
       &:hover {
-        border-color: $fade-grey-dark-6;
-        box-shadow: $light-box-shadow;
+        border-color: var(--fade-grey-dark-6);
+        box-shadow: var(--light-box-shadow);
 
         .project-avatar {
           filter: grayscale(0);
@@ -55,9 +55,9 @@
 
       h3 {
         font-size: 0.95rem;
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         font-weight: 600;
-        color: $dark-text;
+        color: var(--dark-text);
       }
 
       p {
@@ -79,7 +79,7 @@
         @include vuero-card--dark();
 
         h3 {
-          color: $dark-dark-text;
+          color: var(--dark-dark-text);
         }
       }
     }
@@ -94,14 +94,14 @@
   .all-projects-header {
     display: flex;
     padding: 20px;
-    background: $white;
-    border: 1px solid $fade-grey-dark-3;
-    border-radius: $radius-large;
+    background: var(--white);
+    border: 1px solid var(--fade-grey-dark-3);
+    border-radius: var(--radius-large);
     margin-bottom: 1.5rem;
 
     .header-item {
       width: 25%;
-      border-right: 1px solid $fade-grey-dark-3;
+      border-right: 1px solid var(--fade-grey-dark-3);
 
       &:last-child {
         border-right: none;
@@ -114,19 +114,19 @@
         .lnir {
           font-size: 2.2rem;
           margin-bottom: 6px;
-          color: $primary;
+          color: var(--primary);
         }
 
         span {
           display: block;
-          font-family: $font;
+          font-family: var(--font);
           font-weight: 600;
           font-size: 1.4rem;
-          color: $dark-text;
+          color: var(--dark-text);
         }
 
         p {
-          font-family: $font-alt;
+          font-family: var(--font-alt);
         }
       }
     }
@@ -139,9 +139,9 @@
       justify-content: space-between;
       min-height: 220px;
       padding: 20px;
-      background: $white;
-      border: 1px solid $fade-grey-dark-3;
-      border-radius: $radius-large;
+      background: var(--white);
+      border: 1px solid var(--fade-grey-dark-3);
+      border-radius: var(--radius-large);
 
       .top-section {
         .head {
@@ -152,16 +152,16 @@
 
           h3 {
             font-size: 1rem;
-            font-family: $font-alt;
-            color: $dark-text;
+            font-family: var(--font-alt);
+            color: var(--dark-text);
             font-weight: 600;
           }
         }
 
         .body {
           p {
-            font-family: $font;
-            color: $light-text;
+            font-family: var(--font);
+            color: var(--light-text);
           }
         }
       }
@@ -173,9 +173,9 @@
           margin-right: 30px;
 
           .heading {
-            font-family: $font-alt;
+            font-family: var(--font-alt);
             font-size: 0.75rem;
-            color: $light-text-dark-22;
+            color: var(--light-text-dark-22);
           }
 
           > p {
@@ -202,31 +202,31 @@
 .is-dark {
   .all-projects {
     .all-projects-header {
-      background: $dark-sidebar-light-6;
-      border-color: $dark-sidebar-light-12;
+      background: var(--dark-sidebar-light-6);
+      border-color: var(--dark-sidebar-light-12);
 
       .header-item {
-        border-color: $dark-sidebar-light-18;
+        border-color: var(--dark-sidebar-light-18);
 
         span {
-          color: $dark-dark-text;
+          color: var(--dark-dark-text);
         }
 
         i {
-          color: $accent !important;
+          color: var(--primary) !important;
         }
       }
     }
 
     .projects-card-grid {
       .grid-item {
-        background: $dark-sidebar-light-6;
-        border-color: $dark-sidebar-light-12;
+        background: var(--dark-sidebar-light-6);
+        border-color: var(--dark-sidebar-light-12);
 
         .top-section {
           .head {
             h3 {
-              color: $dark-dark-text;
+              color: var(--dark-dark-text);
             }
           }
         }
@@ -234,7 +234,7 @@
         .bottom-section {
           .foot-block {
             .heading {
-              color: $light-text-dark-12;
+              color: var(--light-text-dark-12);
             }
           }
         }
@@ -273,9 +273,9 @@
         display: flex;
         align-items: center;
         padding: 20px;
-        background: $white;
-        border: 1px solid $fade-grey-dark-3;
-        border-radius: $radius-large;
+        background: var(--white);
+        border: 1px solid var(--fade-grey-dark-3);
+        border-radius: var(--radius-large);
 
         .stat-item {
           text-align: center;
@@ -284,10 +284,10 @@
           span {
             position: relative;
             display: block;
-            font-family: $font;
+            font-family: var(--font);
             font-weight: 600;
             font-size: 2rem;
-            color: $dark-text;
+            color: var(--dark-text);
             line-height: 1;
             width: 75px;
             margin: 0 auto;
@@ -299,38 +299,38 @@
               right: 6px;
               height: 8px;
               width: 8px;
-              border-radius: $radius-rounded;
+              border-radius: var(--radius-rounded);
             }
 
             &.is-success {
               &::after {
-                background: $success;
+                background: var(--success);
               }
             }
 
             &.is-info {
               &::after {
-                background: $info;
+                background: var(--info);
               }
             }
 
             &.is-warning {
               &::after {
-                background: $warning;
+                background: var(--warning);
               }
             }
 
             &.is-primary {
               &::after {
-                background: $primary;
+                background: var(--primary);
               }
             }
           }
 
           p {
-            font-family: $font-alt;
+            font-family: var(--font-alt);
             font-size: 0.9rem;
-            color: $light-text;
+            color: var(--light-text);
           }
         }
       }
@@ -341,11 +341,11 @@
     padding: 20px 0;
 
     .recent-heading {
-      font-family: $font-alt;
+      font-family: var(--font-alt);
       font-size: 0.8rem;
       font-weight: 500;
       text-transform: uppercase;
-      color: $light-text;
+      color: var(--light-text);
       margin-bottom: 1rem;
     }
 
@@ -353,20 +353,20 @@
       display: flex;
       align-items: center;
       padding: 20px;
-      background: $white;
-      border: 1px solid $fade-grey-dark-3;
+      background: var(--white);
+      border: 1px solid var(--fade-grey-dark-3);
       border-radius: 8px;
       transition: all 0.3s;
 
       &:hover {
-        box-shadow: $light-box-shadow;
+        box-shadow: var(--light-box-shadow);
       }
 
       h3 {
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         font-size: 1.1rem;
         font-weight: 600;
-        color: $dark-text;
+        color: var(--dark-text);
         margin-left: 16px;
         line-height: 1.2;
       }
@@ -380,10 +380,10 @@
       justify-content: space-between;
 
       h3 {
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         font-size: 1.5rem;
         font-weight: 700;
-        color: $dark-text;
+        color: var(--dark-text);
         margin-left: 16px;
         line-height: 1.2;
       }
@@ -391,15 +391,15 @@
       .filter {
         display: flex;
         align-items: center;
-        background: $white;
+        background: var(--white);
         padding: 8px 24px;
         border-radius: 100px;
 
         > span {
-          font-family: $font-alt;
+          font-family: var(--font-alt);
           font-size: 0.85rem;
           font-weight: 600;
-          color: $dark-text;
+          color: var(--dark-text);
           margin-right: 20px;
         }
 
@@ -421,13 +421,13 @@
         flex-direction: column;
         justify-content: space-between;
         padding: 26px;
-        background: $white;
-        border: 1px solid $fade-grey-dark-3;
+        background: var(--white);
+        border: 1px solid var(--fade-grey-dark-3);
         border-radius: 8px;
         transition: all 0.3s;
 
         &:hover {
-          box-shadow: $light-box-shadow;
+          box-shadow: var(--light-box-shadow);
 
           .item-title {
             h3 {
@@ -440,11 +440,11 @@
           display: flex;
           align-items: center;
           justify-content: space-between;
-          font-family: $font;
+          font-family: var(--font);
 
           .type {
             text-transform: uppercase;
-            color: $light-text;
+            color: var(--light-text);
             font-size: 0.8rem;
             font-weight: 600;
           }
@@ -452,23 +452,23 @@
           .status {
             text-transform: uppercase;
             font-size: 0.75rem;
-            font-family: $font-alt;
+            font-family: var(--font-alt);
             font-weight: 600;
 
             &.is-success {
-              color: $success;
+              color: var(--success);
             }
 
             &.is-info {
-              color: $info;
+              color: var(--info);
             }
 
             &.is-warning {
-              color: $warning;
+              color: var(--warning);
             }
 
             &.is-danger {
-              color: $danger;
+              color: var(--danger);
             }
           }
         }
@@ -477,10 +477,10 @@
           padding: 40px 0 40px 0;
 
           h3 {
-            font-family: $font-alt;
+            font-family: var(--font-alt);
             font-size: 1.3rem;
             font-weight: 700;
-            color: $dark-text;
+            color: var(--dark-text);
             line-height: 1.2;
             margin-bottom: 8px;
             transition: all 0.3s;
@@ -499,8 +499,8 @@
             padding-top: 20px;
 
             .label {
-              font-family: $font;
-              color: $light-text;
+              font-family: var(--font);
+              color: var(--light-text);
               font-weight: 400;
             }
           }
@@ -519,12 +519,12 @@
     .illustration-header {
       .header-stats {
         .stats-inner {
-          background: $dark-sidebar-light-6;
-          border-color: $dark-sidebar-light-12;
+          background: var(--dark-sidebar-light-6);
+          border-color: var(--dark-sidebar-light-12);
 
           .stat-item {
             span {
-              color: $dark-dark-text;
+              color: var(--dark-dark-text);
             }
           }
         }
@@ -533,11 +533,11 @@
 
     .recent-projects {
       .project-box {
-        background: $dark-sidebar-light-6;
-        border-color: $dark-sidebar-light-12;
+        background: var(--dark-sidebar-light-6);
+        border-color: var(--dark-sidebar-light-12);
 
         h3 {
-          color: $dark-dark-text;
+          color: var(--dark-dark-text);
         }
       }
     }
@@ -545,33 +545,33 @@
     .project-minimal-grid {
       .grid-header {
         h3 {
-          color: $dark-dark-text;
+          color: var(--dark-dark-text);
         }
 
         .filter {
-          background: $dark-sidebar-light-1 !important;
-          border-color: $dark-sidebar-light-4 !important;
+          background: var(--dark-sidebar-light-1) !important;
+          border-color: var(--dark-sidebar-light-4) !important;
 
           > span {
-            color: $dark-dark-text;
+            color: var(--dark-dark-text);
           }
         }
       }
 
       .grid-body {
         .grid-item {
-          background: $dark-sidebar-light-6;
-          border-color: $dark-sidebar-light-12;
+          background: var(--dark-sidebar-light-6);
+          border-color: var(--dark-sidebar-light-12);
 
           .item-title {
             h3 {
-              color: $dark-dark-text;
+              color: var(--dark-dark-text);
             }
           }
 
           .v-avatar {
             img {
-              border-color: $dark-sidebar-light-6;
+              border-color: var(--dark-sidebar-light-6);
             }
           }
         }
@@ -592,7 +592,7 @@
       .header-item {
         width: 100%;
         border-right: none;
-        border-bottom: 1px solid $fade-grey-dark-3;
+        border-bottom: 1px solid var(--fade-grey-dark-3);
         padding: 16px 0;
 
         &:last-child {

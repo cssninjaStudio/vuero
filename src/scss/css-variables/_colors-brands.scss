@@ -1,0 +1,25 @@
+:root {
+  // brands colors
+  @include colorHsl('javascript', 53, 93%, 54%);
+  @include colorHsl('angular', 2, 82%, 48%);
+  @include colorHsl('reactjs', 189, 100%, 50%);
+  @include colorHsl('android', 74, 55%, 50%);
+  @include colorHsl('swift', 4, 86%, 56%);
+  @include colorHsl('vuejs', 152, 44%, 52%);
+  @include colorHsl('wordpress', 199, 65%, 37%);
+  @include colorHsl('csharp', 305, 36%, 45%);
+  @include colorHsl('nodejs', 103, 50%, 53%);
+  @include colorHsl('html', 18, 88%, 55%);
+  @include colorHsl('facebook', 221, 44%, 41%);
+  @include colorHsl('twitter', 194, 100%, 56%);
+  @include colorHsl('linkedin', 199, 100%, 36%);
+  @include colorHsl('tumblr', 214, 27%, 28%);
+  @include colorHsl('github', 0, 0%, 27%);
+  @include colorHsl('dribbble', 337, 79%, 61%);
+  @include colorHsl('google-plus', 7, 64%, 52%);
+  @include colorHsl('youtube', 358, 79%, 45%);
+  @include colorHsl('reddit', 16, 100%, 50%);
+  @include colorHsl('invision', 345, 100%, 60%);
+  @include colorHsl('amazon', 36, 100%, 50%);
+  @include colorHsl('instagram', 340, 75%, 54%);
+}

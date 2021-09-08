@@ -364,7 +364,6 @@ const goto = (index: number) => {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
 
 .banking-dashboard-v2 {
@@ -377,7 +376,7 @@ const goto = (index: number) => {
 
     &.is-card-panel {
       &.is-grey {
-        background: $widget-grey;
+        background: var(--widget-grey);
         border: none;
       }
 
@@ -385,7 +384,7 @@ const goto = (index: number) => {
         .column {
           &:first-child {
             .inner-box {
-              border-right: 1px solid $fade-grey-dark-3;
+              border-right: 1px solid var(--fade-grey-dark-3);
             }
           }
         }
@@ -407,10 +406,10 @@ const goto = (index: number) => {
           margin-bottom: 20px;
 
           h3 {
-            font-family: $font-alt;
+            font-family: var(--font-alt);
             font-size: 1.1rem;
             font-weight: 600;
-            color: $dark-text;
+            color: var(--dark-text);
           }
 
           .field {
@@ -423,7 +422,7 @@ const goto = (index: number) => {
             .multiselect {
               .multiselect-input {
                 .multiselect-single-label {
-                  color: $light-text;
+                  color: var(--light-text);
                 }
               }
 
@@ -468,13 +467,13 @@ const goto = (index: number) => {
                 height: 9px;
                 padding: 0;
                 margin: 0 5px;
-                border-radius: $radius-rounded;
-                background: $medium-grey;
+                border-radius: var(--radius-rounded);
+                background: var(--medium-grey);
                 border: 0;
                 outline: none;
 
                 &.tns-nav-active {
-                  background: $primary;
+                  background: var(--primary);
                 }
               }
             }
@@ -491,11 +490,11 @@ const goto = (index: number) => {
                   .ccard {
                     background-image: linear-gradient(
                       -225deg,
-                      $primary-dark-8 0%,
-                      $primary-dark-2 48%,
-                      $primary-light-12 100%
+                      var(--primary-dark-8) 0%,
+                      var(--primary-dark-2) 48%,
+                      var(--primary-light-12) 100%
                     );
-                    box-shadow: $primary-box-shadow;
+                    box-shadow: var(--primary-box-shadow);
 
                     .shape {
                       opacity: 0.15;
@@ -516,7 +515,7 @@ const goto = (index: number) => {
 
                     .bottom {
                       span {
-                        color: $smoke-white;
+                        color: var(--smoke-white);
                       }
                     }
                   }
@@ -526,11 +525,11 @@ const goto = (index: number) => {
                   position: relative;
                   display: flex;
                   flex-direction: column;
-                  font-family: $font;
+                  font-family: var(--font);
                   width: 240px;
                   height: 144px;
                   border-radius: 14px;
-                  background: $fade-grey;
+                  background: var(--fade-grey);
                   padding: 18px;
                   margin: 0 auto;
                   overflow: hidden;
@@ -542,8 +541,8 @@ const goto = (index: number) => {
                     right: -10px;
                     height: 70px;
                     width: 70px;
-                    background: $white;
-                    border-radius: $radius-rounded;
+                    background: var(--white);
+                    border-radius: var(--radius-rounded);
                     opacity: 0;
                     transition: opacity 0.3s;
                   }
@@ -568,7 +567,7 @@ const goto = (index: number) => {
 
                     span {
                       display: block;
-                      color: $dark-text;
+                      color: var(--dark-text);
 
                       &:first-child {
                         font-weight: 600;
@@ -594,7 +593,7 @@ const goto = (index: number) => {
           .card-balance {
             span {
               display: block;
-              color: $primary;
+              color: var(--primary);
 
               &:first-child {
                 font-weight: 700;
@@ -614,10 +613,10 @@ const goto = (index: number) => {
 
             .card-balance-stat {
               width: 50%;
-              font-family: $font;
+              font-family: var(--font);
 
               .stat-title {
-                color: $light-text;
+                color: var(--light-text);
                 margin-bottom: 6px;
               }
 
@@ -631,14 +630,14 @@ const goto = (index: number) => {
                   align-items: center;
                   height: 30px;
                   width: 30px;
-                  border-radius: $radius-rounded;
-                  background: $fade-grey-light-2;
+                  border-radius: var(--radius-rounded);
+                  background: var(--fade-grey-light-2);
 
                   &.is-up {
                     transform: rotate(-45deg);
 
                     svg {
-                      color: $h-green;
+                      color: var(--green);
                     }
                   }
 
@@ -646,7 +645,7 @@ const goto = (index: number) => {
                     transform: rotate(45deg);
 
                     svg {
-                      color: $h-red;
+                      color: var(--red);
                     }
                   }
 
@@ -659,10 +658,10 @@ const goto = (index: number) => {
 
                 .stat-text {
                   margin-left: 12px;
-                  font-family: $font;
+                  font-family: var(--font);
                   font-weight: 600;
                   font-size: 1.1rem;
-                  color: $dark-text;
+                  color: var(--dark-text);
                 }
               }
             }
@@ -672,15 +671,15 @@ const goto = (index: number) => {
         .monthly-summary-wrap {
           .monthly-summary {
             padding: 0 20px;
-            border: 1px solid $fade-grey-dark-5;
-            border-radius: $radius-large;
+            border: 1px solid var(--fade-grey-dark-5);
+            border-radius: var(--radius-large);
 
             .monthly-summary-item {
               padding: 20px 0;
-              font-family: $font;
+              font-family: var(--font);
 
               &:first-child {
-                border-bottom: 1px solid $fade-grey-dark-5;
+                border-bottom: 1px solid var(--fade-grey-dark-5);
               }
 
               span {
@@ -689,18 +688,18 @@ const goto = (index: number) => {
                 &:first-child {
                   font-size: 0.85rem;
                   font-weight: 500;
-                  color: $light-text;
+                  color: var(--light-text);
                 }
 
                 &:nth-child(2) {
                   font-weight: 500;
 
                   &.is-income {
-                    color: $h-green;
+                    color: var(--green);
                   }
 
                   &.is-expense {
-                    color: $h-red;
+                    color: var(--red);
                   }
                 }
               }
@@ -732,10 +731,10 @@ const goto = (index: number) => {
             }
 
             .flex-end {
-              font-family: $font;
+              font-family: var(--font);
               font-size: 1rem;
               font-weight: 500;
-              color: $dark-text;
+              color: var(--dark-text);
             }
           }
         }
@@ -760,21 +759,21 @@ const goto = (index: number) => {
       @include vuero-card--dark();
 
       &.is-card-panel {
-        background: $dark-sidebar-light-6;
+        background: var(--dark-sidebar-light-6);
 
         .inner-box {
-          border-color: $dark-sidebar-light-12 !important;
+          border-color: var(--dark-sidebar-light-12) !important;
 
           .box-title {
             h3 {
-              color: $dark-dark-text;
+              color: var(--dark-dark-text);
             }
           }
 
           .cards-carousel {
             .tns-nav {
               [aria-controls] {
-                background: $dark-sidebar-light-12;
+                background: var(--dark-sidebar-light-12);
               }
             }
 
@@ -784,12 +783,11 @@ const goto = (index: number) => {
                   .ccard {
                     background-image: linear-gradient(
                       -225deg,
-                      $accent-dark-8 0%,
-                      $accent-dark-2 48%,
-                      $accent-light-12 100%
+                      var(--primary-dark-8) 0%,
+                      var(--primary-dark-2) 48%,
+                      var(--primary-light-12) 100%
                     );
-                    box-shadow: $accent-box-shadow;
-
+                    box-shadow: var(--primary-box-shadow);
                     .top {
                       .inactive.dark-image {
                         display: none !important;
@@ -799,7 +797,7 @@ const goto = (index: number) => {
                 }
 
                 .ccard {
-                  background: $dark-sidebar-light-2;
+                  background: var(--dark-sidebar-light-2);
 
                   .top {
                     .inactive.dark-image {
@@ -809,7 +807,7 @@ const goto = (index: number) => {
 
                   .bottom {
                     span {
-                      color: $dark-dark-text;
+                      color: var(--dark-dark-text);
                     }
                   }
                 }
@@ -820,7 +818,7 @@ const goto = (index: number) => {
           .card-balance-wrap {
             .card-balance {
               span {
-                color: $accent;
+                color: var(--primary);
               }
             }
 
@@ -828,11 +826,11 @@ const goto = (index: number) => {
               .card-balance-stat {
                 .stat-block {
                   .stat-icon {
-                    background: $dark-sidebar-light-2;
+                    background: var(--dark-sidebar-light-2);
                   }
 
                   .stat-text {
-                    color: $dark-dark-text;
+                    color: var(--dark-dark-text);
                   }
                 }
               }
@@ -841,11 +839,11 @@ const goto = (index: number) => {
 
           .monthly-summary-wrap {
             .monthly-summary {
-              border-color: $dark-sidebar-light-12;
-              background: $dark-sidebar-light-4;
+              border-color: var(--dark-sidebar-light-12);
+              background: var(--dark-sidebar-light-4);
 
               .monthly-summary-item {
-                border-color: $dark-sidebar-light-12;
+                border-color: var(--dark-sidebar-light-12);
               }
             }
           }

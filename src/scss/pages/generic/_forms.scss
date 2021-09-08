@@ -45,27 +45,27 @@ Form Layouts
             width: 50%;
 
             h3 {
-              font-family: $font-alt;
+              font-family: var(--font-alt);
               font-weight: 600;
               font-size: 0.95rem;
-              color: $dark-text;
+              color: var(--dark-text);
               margin-bottom: 20px;
             }
           }
 
           .left {
             position: relative;
-            border-right: 1px solid $fade-grey-dark-3;
+            border-right: 1px solid var(--fade-grey-dark-3);
 
             .operator {
               position: absolute;
               top: 17px;
               right: -10px;
               text-transform: uppercase;
-              font-family: $font;
+              font-family: var(--font);
               font-weight: 500;
-              color: $dark-text;
-              background: $white;
+              color: var(--dark-text);
+              background: var(--white);
               padding: 4px 0;
             }
           }
@@ -88,10 +88,10 @@ Form Layouts
 
                 &:checked {
                   + .radio-pill-inner {
-                    background: $primary;
-                    border-color: $primary;
-                    box-shadow: $primary-box-shadow;
-                    color: $white;
+                    background: var(--primary);
+                    border-color: var(--primary);
+                    box-shadow: var(--primary-box-shadow);
+                    color: var(--white);
                   }
                 }
               }
@@ -102,10 +102,10 @@ Form Layouts
                 justify-content: center;
                 width: 60px;
                 height: 40px;
-                background: $white;
-                border: 1px solid $fade-grey-dark-3;
+                background: var(--white);
+                border: 1px solid var(--fade-grey-dark-3);
                 border-radius: 8px;
-                font-family: $font;
+                font-family: var(--font);
                 font-weight: 600;
                 font-size: 0.9rem;
                 transition: all 0.3s;
@@ -143,10 +143,10 @@ Form Layouts
             }
 
             > h3 {
-              font-family: $font-alt;
+              font-family: var(--font-alt);
               font-size: 1.2rem;
               font-weight: 600;
-              color: $dark-text;
+              color: var(--dark-text);
               margin-bottom: 30px;
             }
 
@@ -179,33 +179,33 @@ Form Layouts
 
                   &:checked {
                     + .radio-box-inner {
-                      background: $primary;
-                      border-color: $primary;
-                      box-shadow: $primary-box-shadow;
+                      background: var(--primary);
+                      border-color: var(--primary);
+                      box-shadow: var(--primary-box-shadow);
 
                       .fee,
                       p {
-                        color: $smoke-white;
+                        color: var(--smoke-white);
                       }
                     }
                   }
                 }
 
                 .radio-box-inner {
-                  background: $white;
-                  border: 1px solid $fade-grey-dark-3;
+                  background: var(--white);
+                  border: 1px solid var(--fade-grey-dark-3);
                   text-align: center;
-                  border-radius: $radius;
-                  font-family: $font;
+                  border-radius: var(--radius);
+                  font-family: var(--font);
                   font-weight: 600;
                   font-size: 0.9rem;
                   transition: all 0.3s;
                   padding: 30px 20px;
 
                   .fee {
-                    font-family: $font;
+                    font-family: var(--font);
                     font-weight: 700;
-                    color: $dark-text;
+                    color: var(--dark-text);
                     font-size: 2.4rem;
                     line-height: 1;
 
@@ -220,7 +220,7 @@ Form Layouts
                   }
 
                   p {
-                    font-family: $font-alt;
+                    font-family: var(--font-alt);
                   }
                 }
               }
@@ -236,7 +236,7 @@ Form Layouts
 
                   span {
                     font-weight: 500;
-                    color: $dark-text;
+                    color: var(--dark-text);
                   }
                 }
               }
@@ -258,7 +258,7 @@ Form Layouts
                 min-height: 60px;
                 font-size: 1.05rem;
                 font-weight: 600;
-                font-family: $font-alt;
+                font-family: var(--font-alt);
               }
             }
           }
@@ -274,7 +274,7 @@ Form Layouts
 
         .form-section {
           padding: 40px;
-          border-bottom: 1px solid $fade-grey-dark-4;
+          border-bottom: 1px solid var(--fade-grey-dark-4);
 
           &.is-grey {
             background: #fafafa;
@@ -284,15 +284,15 @@ Form Layouts
             display: flex;
             align-items: center;
             justify-content: space-between;
-            border-bottom: 1px solid $fade-grey-dark-4;
+            border-bottom: 1px solid var(--fade-grey-dark-4);
             padding-bottom: 20px;
             margin-bottom: 30px;
 
             .left {
               h3 {
-                font-family: $font-alt;
+                font-family: var(--font-alt);
                 font-weight: 600;
-                color: $dark-text;
+                color: var(--dark-text);
               }
             }
           }
@@ -343,9 +343,9 @@ Form Layouts
               height: 40px;
               width: 40px;
               min-width: 40px;
-              border-radius: $radius-rounded;
-              border: 1.6px dashed $light-text;
-              color: $light-text;
+              border-radius: var(--radius-rounded);
+              border: 1.6px dashed var(--light-text);
+              color: var(--light-text);
               outline: none;
               padding: 0;
               background: none;
@@ -354,8 +354,8 @@ Form Layouts
               transition: all 0.3s;
 
               &:hover {
-                border: 1.6px solid $primary;
-                color: $primary;
+                border: 1.6px solid var(--primary);
+                color: var(--primary);
               }
 
               svg {
@@ -373,10 +373,10 @@ Form Layouts
             .color-code {
               height: 14px;
               width: 14px;
-              border-radius: $radius-rounded;
-              background: $white;
+              border-radius: var(--radius-rounded);
+              background: var(--white);
               margin-right: 10px;
-              border: 3px solid $light-text;
+              border: 3px solid var(--light-text);
               cursor: pointer;
               opacity: 0.6;
               transition: all 0.3s;
@@ -386,23 +386,23 @@ Form Layouts
               }
 
               &.is-primary {
-                border-color: $primary;
+                border-color: var(--primary);
               }
 
               &.is-secondary {
-                border-color: $secondary;
+                border-color: var(--secondary);
               }
 
               &.is-info {
-                border-color: $info;
+                border-color: var(--info);
               }
 
               &.is-success {
-                border-color: $success;
+                border-color: var(--success);
               }
 
               &.is-purple {
-                border-color: $h-purple;
+                border-color: var(--purple);
               }
             }
           }
@@ -410,10 +410,10 @@ Form Layouts
           .add-link {
             display: inline-block;
             padding: 4px 0;
-            font-family: $font;
+            font-family: var(--font);
             font-weight: 500;
             font-size: 0.9rem;
-            color: $primary;
+            color: var(--primary);
           }
         }
       }
@@ -427,13 +427,13 @@ Form Layouts
 
     .form-header {
       padding: 12px 20px;
-      border-bottom: 1px solid $fade-grey-dark-3;
+      border-bottom: 1px solid var(--fade-grey-dark-3);
       transition: all 0.3s;
 
       &.is-stuck {
-        background: $white;
+        background: var(--white);
         padding-right: 80px;
-        border-left: 1px solid $fade-grey-dark-3;
+        border-left: 1px solid var(--fade-grey-dark-3);
       }
 
       .form-header-inner {
@@ -444,7 +444,7 @@ Form Layouts
 
       .left {
         h3 {
-          font-family: $font-alt;
+          font-family: var(--font-alt);
           font-size: 1.2rem;
           font-weight: 600;
           line-height: 1.3;
@@ -473,36 +473,36 @@ Form Layouts
         .form-body {
           .form-section {
             &.is-grey {
-              background: $dark-sidebar-light-4 !important;
+              background: var(--dark-sidebar-light-4) !important;
             }
 
             h3 {
-              color: $dark-dark-text;
+              color: var(--dark-dark-text);
             }
 
             .left {
-              border-color: $dark-sidebar-light-12 !important;
+              border-color: var(--dark-sidebar-light-12) !important;
 
               .operator {
-                background: $dark-sidebar-light-6 !important;
-                color: $dark-dark-text;
+                background: var(--dark-sidebar-light-6) !important;
+                color: var(--dark-dark-text);
               }
 
               .radio-pills {
                 .radio-pill {
                   input {
                     &:checked + .radio-pill-inner {
-                      border-color: $accent;
-                      background: $accent;
-                      box-shadow: $accent-box-shadow;
-                      color: $smoke-white;
+                      border-color: var(--primary);
+                      background: var(--primary);
+                      box-shadow: var(--primary-box-shadow);
+                      color: var(--smoke-white);
                     }
                   }
 
                   .radio-pill-inner {
-                    background: $dark-sidebar-light-2;
-                    border-color: $dark-sidebar-light-12;
-                    color: $dark-dark-text;
+                    background: var(--dark-sidebar-light-2);
+                    border-color: var(--dark-sidebar-light-12);
+                    color: var(--dark-dark-text);
                   }
                 }
               }
@@ -522,28 +522,28 @@ Form Layouts
               @include vuero-card--dark();
 
               > h3 {
-                color: $dark-dark-text;
+                color: var(--dark-dark-text);
               }
 
               .radio-boxes {
                 .radio-box {
                   input:checked + .radio-box-inner {
-                    background: $accent;
-                    border-color: $accent;
-                    box-shadow: $accent-box-shadow;
+                    background: var(--primary);
+                    border-color: var(--primary);
+                    box-shadow: var(--primary-box-shadow);
 
                     .fee,
                     p {
-                      color: $smoke-white;
+                      color: var(--smoke-white);
                     }
                   }
 
                   .radio-box-inner {
-                    background: $dark-sidebar-light-2;
-                    border-color: $dark-sidebar-light-12;
+                    background: var(--dark-sidebar-light-2);
+                    border-color: var(--dark-sidebar-light-12);
 
                     .fee {
-                      color: $dark-dark-text;
+                      color: var(--dark-dark-text);
                     }
                   }
                 }
@@ -558,33 +558,33 @@ Form Layouts
       .form-outer {
         .form-body {
           .form-section {
-            border-color: $dark-sidebar-light-12;
+            border-color: var(--dark-sidebar-light-12);
 
             &.is-grey {
-              background: $dark-sidebar-light-4;
+              background: var(--dark-sidebar-light-4);
             }
 
             .form-section-header {
-              border-color: $dark-sidebar-light-12;
+              border-color: var(--dark-sidebar-light-12);
 
               .left {
                 h3 {
-                  color: $dark-dark-text;
+                  color: var(--dark-dark-text);
                 }
               }
             }
 
             .form-section-inner {
               .add-link {
-                color: $accent;
+                color: var(--primary);
               }
 
               .color-codes {
                 .color-code {
-                  background: $dark-sidebar-light-6;
+                  background: var(--dark-sidebar-light-6);
 
                   &.is-primary {
-                    border-color: $accent;
+                    border-color: var(--primary);
                   }
                 }
               }
@@ -592,8 +592,8 @@ Form Layouts
               .participants {
                 .add-participant {
                   &:hover {
-                    border: 1.6px solid $accent;
-                    color: $accent;
+                    border: 1.6px solid var(--primary);
+                    color: var(--primary);
                   }
                 }
               }
@@ -607,16 +607,16 @@ Form Layouts
       @include vuero-card--dark();
 
       .form-header {
-        border-color: $dark-sidebar-light-12;
+        border-color: var(--dark-sidebar-light-12);
 
         &.is-stuck {
-          background: $dark-sidebar;
-          border-color: $dark-sidebar-light-6;
+          background: var(--dark-sidebar);
+          border-color: var(--dark-sidebar-light-6);
         }
 
         .left {
           h3 {
-            color: $dark-dark-text;
+            color: var(--dark-dark-text);
           }
         }
       }
@@ -627,7 +627,7 @@ Form Layouts
             .input,
             .textarea {
               &:focus {
-                border-color: $accent;
+                border-color: var(--primary);
               }
             }
           }
@@ -656,7 +656,7 @@ Form Layouts
 
             .left {
               border-right: none;
-              border-bottom: 1px solid $fade-grey-dark-3;
+              border-bottom: 1px solid var(--fade-grey-dark-3);
               padding-bottom: 40px;
 
               .operator {

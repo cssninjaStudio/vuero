@@ -35,17 +35,17 @@
 
         span {
           display: block;
-          font-family: $font;
+          font-family: var(--font);
 
           &:first-child {
-            color: $dark-text;
-            font-family: $font-alt;
+            color: var(--dark-text);
+            font-family: var(--font-alt);
             font-weight: 600;
             font-size: 1rem;
           }
 
           &:nth-child(2) {
-            color: $light-text;
+            color: var(--light-text);
             font-size: 0.9rem;
           }
         }

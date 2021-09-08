@@ -39,33 +39,33 @@
 
 .is-dark {
   .progress {
-    background-color: $dark-sidebar;
+    background-color: var(--dark-sidebar);
 
     &::-webkit-progress-bar {
-      background-color: $dark-sidebar;
+      background-color: var(--dark-sidebar);
     }
 
     &.is-primary {
       &::-webkit-progress-value {
-        background: $accent;
+        background: var(--primary);
       }
 
       &::-moz-progress-bar {
-        background: $accent;
+        background: var(--primary);
       }
 
       &::-ms-fill {
-        background: $accent;
+        background: var(--primary);
       }
     }
 
     &:indeterminate {
       &.is-primary {
-        background-color: $accent;
+        background-color: var(--primary);
         background-image: linear-gradient(
           to right,
-          $dark-sidebar 30%,
-          $accent 30%
+          var(--dark-sidebar) 30%,
+          var(--primary) 30%
         );
 
         &::-webkit-progress-bar {
@@ -78,11 +78,11 @@
       }
 
       &.is-success {
-        background-color: $success;
+        background-color: var(--success);
         background-image: linear-gradient(
           to right,
-          $dark-sidebar 30%,
-          $success 30%
+          var(--dark-sidebar) 30%,
+          var(--success) 30%
         );
 
         &::-webkit-progress-bar {
@@ -95,11 +95,11 @@
       }
 
       &.is-info {
-        background-color: $info;
+        background-color: var(--info);
         background-image: linear-gradient(
           to right,
-          $dark-sidebar 30%,
-          $info 30%
+          var(--dark-sidebar) 30%,
+          var(--info) 30%
         );
 
         &::-webkit-progress-bar {
@@ -112,11 +112,11 @@
       }
 
       &.is-warning {
-        background-color: $warning;
+        background-color: var(--warning);
         background-image: linear-gradient(
           to right,
-          $dark-sidebar 30%,
-          $warning 30%
+          var(--dark-sidebar) 30%,
+          var(--warning) 30%
         );
 
         &::-webkit-progress-bar {
@@ -129,11 +129,11 @@
       }
 
       &.is-danger {
-        background-color: $danger;
+        background-color: var(--danger);
         background-image: linear-gradient(
           to right,
-          $dark-sidebar 30%,
-          $danger 30%
+          var(--dark-sidebar) 30%,
+          var(--danger) 30%
         );
 
         &::-webkit-progress-bar {

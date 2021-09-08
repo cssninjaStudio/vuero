@@ -145,7 +145,6 @@ const optionsSingle = [
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
 
 .card-grid {
@@ -163,13 +162,13 @@ const optionsSingle = [
 .card-grid-v2 {
   .card-grid-item {
     .card {
-      border: 1px solid $fade-grey-dark-4;
+      border: 1px solid var(--fade-grey-dark-4);
       box-shadow: none;
-      border-radius: $radius-large;
+      border-radius: var(--radius-large);
 
       .card-header {
         box-shadow: none;
-        border-bottom: 1px solid $fade-grey-dark-4;
+        border-bottom: 1px solid var(--fade-grey-dark-4);
 
         .card-header-title {
           display: flex;
@@ -184,15 +183,15 @@ const optionsSingle = [
               font-weight: 400;
 
               &:first-child {
-                font-family: $font-alt;
+                font-family: var(--font-alt);
                 font-size: 0.95rem;
-                color: $dark-text;
+                color: var(--dark-text);
                 font-weight: 600;
               }
 
               &:nth-child(2) {
                 font-size: 0.9rem;
-                color: $light-text;
+                color: var(--light-text);
               }
             }
           }
@@ -206,7 +205,7 @@ const optionsSingle = [
       }
 
       .card-content {
-        border-top: 1px solid $fade-grey-dark-4;
+        border-top: 1px solid var(--fade-grey-dark-4);
         padding: 1rem;
 
         .card-content-flex {
@@ -216,9 +215,9 @@ const optionsSingle = [
 
           .card-info {
             h3 {
-              font-family: $font-alt;
+              font-family: var(--font-alt);
               font-size: 1rem;
-              color: $dark-text;
+              color: var(--dark-text);
               font-weight: 600;
             }
 
@@ -239,14 +238,14 @@ const optionsSingle = [
 
       .card-footer {
         a {
-          font-family: $font;
-          color: $light-text;
+          font-family: var(--font);
+          color: var(--light-text);
           padding: 1rem 0.75rem;
           transition: all 0.3s;
 
           &:hover {
-            background: $fade-grey-light-4;
-            color: $primary;
+            background: var(--fade-grey-light-4);
+            color: var(--primary);
           }
         }
       }
@@ -257,35 +256,35 @@ const optionsSingle = [
 .is-dark {
   .card-grid-v2 {
     .card-grid-item {
-      border-color: $dark-sidebar-light-12;
+      border-color: var(--dark-sidebar-light-12);
 
       .card {
-        background: $dark-sidebar-light-6;
-        border-color: $dark-sidebar-light-12;
+        background: var(--dark-sidebar-light-6);
+        border-color: var(--dark-sidebar-light-12);
 
         .card-header {
-          border-color: $dark-sidebar-light-12;
+          border-color: var(--dark-sidebar-light-12);
         }
 
         .card-content {
-          border-color: $dark-sidebar-light-12;
+          border-color: var(--dark-sidebar-light-12);
 
           .avatar-stack {
             .avatar {
-              border-color: $dark-sidebar-light-6;
+              border-color: var(--dark-sidebar-light-6);
             }
           }
         }
 
         .card-footer {
-          border-color: $dark-sidebar-light-12;
+          border-color: var(--dark-sidebar-light-12);
 
           a {
-            border-color: $dark-sidebar-light-12;
+            border-color: var(--dark-sidebar-light-12);
 
             &:hover {
-              background: $dark-sidebar-light-2;
-              color: $accent;
+              background: var(--dark-sidebar-light-2);
+              color: var(--primary);
             }
           }
         }

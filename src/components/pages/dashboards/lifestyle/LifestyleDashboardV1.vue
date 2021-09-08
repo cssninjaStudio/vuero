@@ -1373,7 +1373,6 @@ const activeTab = ref<TabId>('overview')
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
 @import '../../../../scss/pages/generic/_widgets-stats.scss';
 
@@ -1383,7 +1382,7 @@ const activeTab = ref<TabId>('overview')
   left: 0;
   width: 100%;
   height: 355px;
-  background: $white;
+  background: var(--white);
   z-index: 1;
 
   &.has-top-nav {
@@ -1415,7 +1414,7 @@ const activeTab = ref<TabId>('overview')
           height: 140px;
           width: 140px;
           min-width: 140px;
-          border-radius: $radius-rounded;
+          border-radius: var(--radius-rounded);
         }
 
         .button {
@@ -1426,7 +1425,7 @@ const activeTab = ref<TabId>('overview')
       }
 
       .header-meta {
-        font-family: $font;
+        font-family: var(--font);
         margin-left: 16px;
 
         .username-wrap {
@@ -1434,20 +1433,20 @@ const activeTab = ref<TabId>('overview')
 
           .username {
             h3 {
-              font-family: $font-alt;
-              color: $dark-text;
+              font-family: var(--font-alt);
+              color: var(--dark-text);
               font-size: 1.2rem;
               font-weight: 700;
 
               i {
                 font-size: 1.2rem;
                 margin-left: 5px;
-                color: $h-yellow;
+                color: var(--yellow);
               }
             }
 
             > span {
-              color: $light-text-dark-5;
+              color: var(--light-text-dark-5);
             }
           }
 
@@ -1469,14 +1468,14 @@ const activeTab = ref<TabId>('overview')
 
             span {
               &:first-child {
-                color: $dark-text;
+                color: var(--dark-text);
                 font-size: 1.3rem;
                 font-weight: 600;
                 margin-right: 0.25rem;
               }
 
               &:nth-child(2) {
-                color: $light-text;
+                color: var(--light-text);
               }
             }
           }
@@ -1486,7 +1485,7 @@ const activeTab = ref<TabId>('overview')
           max-width: 640px;
 
           p {
-            color: $light-text-dark-5;
+            color: var(--light-text-dark-5);
           }
         }
 
@@ -1501,25 +1500,25 @@ const activeTab = ref<TabId>('overview')
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 3px solid $white;
-            background: $fade-grey;
-            border-radius: $radius-rounded;
+            border: 3px solid var(--white);
+            background: var(--fade-grey);
+            border-radius: var(--radius-rounded);
             margin-right: 10px;
-            box-shadow: $light-box-shadow;
+            box-shadow: var(--light-box-shadow);
 
             &.is-primary {
-              color: $primary;
-              background: $primary-light-45;
+              color: var(--primary);
+              background: var(--primary-light-45);
             }
 
             &.is-yellow {
-              color: $h-yellow;
-              background: $h-yellow-light-22;
+              color: var(--yellow);
+              background: var(--yellow-light-22);
             }
 
             &.is-danger {
-              color: $danger;
-              background: $danger-light-40;
+              color: var(--danger);
+              background: var(--danger-light-40);
             }
           }
         }
@@ -1556,14 +1555,14 @@ const activeTab = ref<TabId>('overview')
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: $font;
+    font-family: var(--font);
     margin-bottom: 20px;
 
     h3 {
-      font-family: $font-alt;
+      font-family: var(--font-alt);
       font-size: 1.1rem;
       font-weight: 700;
-      color: $dark-text;
+      color: var(--dark-text);
     }
 
     .field {
@@ -1573,7 +1572,7 @@ const activeTab = ref<TabId>('overview')
       .multiselect {
         .multiselect-input {
           .multiselect-single-label {
-            color: $light-text;
+            color: var(--light-text);
           }
         }
 
@@ -1588,7 +1587,7 @@ const activeTab = ref<TabId>('overview')
   .overview-card {
     @include vuero-s-card();
 
-    font-family: $font;
+    font-family: var(--font);
 
     &.is-metrics,
     &.is-heatmap {
@@ -1605,21 +1604,21 @@ const activeTab = ref<TabId>('overview')
       }
 
       h4 {
-        color: $light-text-dark-2;
+        color: var(--light-text-dark-2);
       }
 
       h3 {
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         font-size: 1rem;
         font-weight: 600;
-        color: $dark-text;
+        color: var(--dark-text);
       }
     }
 
     .card-metric {
       font-weight: 700;
       font-size: 2.8rem;
-      color: $dark-text;
+      color: var(--dark-text);
       padding: 6px 0 16px 0;
 
       &.is-smaller {
@@ -1633,7 +1632,7 @@ const activeTab = ref<TabId>('overview')
 
       &.is-up {
         span span {
-          color: $h-green;
+          color: var(--green);
 
           svg {
             transform: rotate(-45deg);
@@ -1643,7 +1642,7 @@ const activeTab = ref<TabId>('overview')
 
       &.is-down {
         span span {
-          color: $h-red;
+          color: var(--red);
 
           svg {
             transform: rotate(45deg);
@@ -1653,7 +1652,7 @@ const activeTab = ref<TabId>('overview')
 
       span {
         display: flex;
-        color: $light-text;
+        color: var(--light-text);
 
         span {
           margin-right: 8px;
@@ -1683,19 +1682,19 @@ const activeTab = ref<TabId>('overview')
           a {
             text-decoration: none;
             line-height: 1.8em;
-            font-family: $font;
-            color: $dark-text;
+            font-family: var(--font);
+            color: var(--dark-text);
             transition: background-color 0.3s, box-shadow 0.3s;
 
             &.size1 {
-              color: $light-text;
+              color: var(--light-text);
               padding: 6px;
               border-radius: 0.5rem;
 
               &:hover {
-                background-color: $accent;
-                box-shadow: $accent-box-shadow;
-                color: $white;
+                background-color: var(--primary);
+                box-shadow: var(--primary-box-shadow);
+                color: var(--white);
               }
             }
 
@@ -1705,9 +1704,9 @@ const activeTab = ref<TabId>('overview')
               border-radius: 0.5rem;
 
               &:hover {
-                background-color: $danger;
-                box-shadow: $danger-box-shadow;
-                color: $white;
+                background-color: var(--danger);
+                box-shadow: var(--danger-box-shadow);
+                color: var(--white);
               }
             }
 
@@ -1715,12 +1714,12 @@ const activeTab = ref<TabId>('overview')
               font-size: 1.5rem;
               padding: 18px;
               border-radius: 0.75rem;
-              color: $dark-text-light-18;
+              color: var(--dark-text-light-18);
 
               &:hover {
-                background-color: $h-yellow;
-                box-shadow: $h-yellow-box-shadow;
-                color: $white;
+                background-color: var(--yellow);
+                box-shadow: var(--yellow-box-shadow);
+                color: var(--white);
               }
             }
 
@@ -1730,9 +1729,9 @@ const activeTab = ref<TabId>('overview')
               border-radius: 0.75rem;
 
               &:hover {
-                background-color: $h-green;
-                box-shadow: $h-green-box-shadow;
-                color: $white;
+                background-color: var(--green);
+                box-shadow: var(--green-box-shadow);
+                color: var(--white);
               }
             }
 
@@ -1742,9 +1741,9 @@ const activeTab = ref<TabId>('overview')
               border-radius: 0.75rem;
 
               &:hover {
-                background-color: $info;
-                box-shadow: $info-box-shadow;
-                color: $white;
+                background-color: var(--info);
+                box-shadow: var(--info-box-shadow);
+                color: var(--white);
               }
             }
 
@@ -1754,9 +1753,9 @@ const activeTab = ref<TabId>('overview')
               border-radius: 0.75rem;
 
               &:hover {
-                background-color: $h-purple;
-                box-shadow: $h-purple-box-shadow;
-                color: $white;
+                background-color: var(--purple);
+                box-shadow: var(--purple-box-shadow);
+                color: var(--white);
               }
             }
           }
@@ -1771,14 +1770,14 @@ const activeTab = ref<TabId>('overview')
         justify-content: space-between;
 
         h4 {
-          color: $light-text-dark-2;
+          color: var(--light-text-dark-2);
         }
       }
 
       .metric {
         font-weight: 700;
         font-size: 2.8rem;
-        color: $dark-text;
+        color: var(--dark-text);
         padding: 10px 0;
 
         &.is-smaller {
@@ -1792,7 +1791,7 @@ const activeTab = ref<TabId>('overview')
 
         &.is-up {
           span span {
-            color: $h-green;
+            color: var(--green);
 
             svg {
               transform: rotate(-45deg);
@@ -1802,7 +1801,7 @@ const activeTab = ref<TabId>('overview')
 
         &.is-down {
           span span {
-            color: $h-red;
+            color: var(--red);
 
             svg {
               transform: rotate(45deg);
@@ -1812,7 +1811,7 @@ const activeTab = ref<TabId>('overview')
 
         span {
           display: flex;
-          color: $light-text;
+          color: var(--light-text);
 
           span {
             margin-right: 8px;
@@ -1842,17 +1841,17 @@ const activeTab = ref<TabId>('overview')
       padding: 16px;
 
       .title-avatar {
-        border-radius: $radius-rounded;
-        border: 1px solid $fade-grey-dark-3;
-        box-shadow: $light-box-shadow;
+        border-radius: var(--radius-rounded);
+        border: 1px solid var(--fade-grey-dark-3);
+        box-shadow: var(--light-box-shadow);
 
         img {
           display: block;
           height: 50px;
           width: 50px;
           min-width: 50px;
-          border-radius: $radius-rounded;
-          border: 3px solid $white;
+          border-radius: var(--radius-rounded);
+          border: 3px solid var(--white);
         }
       }
 
@@ -1861,7 +1860,7 @@ const activeTab = ref<TabId>('overview')
 
         p {
           span {
-            color: $dark-text;
+            color: var(--dark-text);
             font-weight: 500;
           }
         }
@@ -1876,7 +1875,7 @@ const activeTab = ref<TabId>('overview')
         .heatmap-row-label {
           width: 60px;
           text-align: center;
-          color: $light-text;
+          color: var(--light-text);
           font-size: 0.95rem;
         }
 
@@ -1891,29 +1890,29 @@ const activeTab = ref<TabId>('overview')
             justify-content: center;
             align-items: center;
             min-height: 34px;
-            border-radius: $radius-large;
-            background: $widget-grey-dark-2;
+            border-radius: var(--radius-large);
+            background: var(--widget-grey-dark-2);
 
             &.heat-1 {
-              background: $primary-light-48;
+              background: var(--primary-light-48);
             }
 
             &.heat-2 {
-              background: $primary-light-30;
+              background: var(--primary-light-30);
             }
 
             &.heat-3 {
-              background: $primary;
+              background: var(--primary);
 
               i {
-                color: $smoke-white;
+                color: var(--smoke-white);
                 font-size: 12px;
               }
             }
 
             &.is-time {
               background: none;
-              color: $light-text;
+              color: var(--light-text);
               font-size: 0.95rem;
               min-height: 26px;
             }
@@ -1927,11 +1926,11 @@ const activeTab = ref<TabId>('overview')
     padding: 16px;
     text-align: center;
     width: 100%;
-    font-family: $font;
+    font-family: var(--font);
     font-size: 0.9rem;
 
     span {
-      color: $light-text;
+      color: var(--light-text);
     }
 
     .post-stat {
@@ -1948,7 +1947,7 @@ const activeTab = ref<TabId>('overview')
       .count {
         font-size: 2.2rem;
         font-weight: 700;
-        color: $dark-text;
+        color: var(--dark-text);
       }
     }
   }
@@ -1972,7 +1971,7 @@ const activeTab = ref<TabId>('overview')
           min-height: 65px;
           max-height: 85px;
           object-fit: cover;
-          border-radius: $radius-large;
+          border-radius: var(--radius-large);
           margin: 0;
         }
       }
@@ -1982,7 +1981,7 @@ const activeTab = ref<TabId>('overview')
 
 .is-dark {
   .lifestyle-dashboard-bg {
-    background: $dark-sidebar-light-6;
+    background: var(--dark-sidebar-light-6);
   }
 
   .lifestyle-dashboard-v1 {
@@ -1992,7 +1991,7 @@ const activeTab = ref<TabId>('overview')
           .username-wrap {
             .username {
               h3 {
-                color: $dark-dark-text;
+                color: var(--dark-dark-text);
               }
             }
           }
@@ -2001,7 +2000,7 @@ const activeTab = ref<TabId>('overview')
             .meta-stat {
               span {
                 &:first-child {
-                  color: $dark-dark-text;
+                  color: var(--dark-dark-text);
                 }
               }
             }
@@ -2012,7 +2011,7 @@ const activeTab = ref<TabId>('overview')
 
     .body-title {
       h3 {
-        color: $dark-dark-text;
+        color: var(--dark-dark-text);
       }
     }
 
@@ -2021,23 +2020,23 @@ const activeTab = ref<TabId>('overview')
 
       .card-metric,
       .metric .metric {
-        color: $dark-dark-text;
+        color: var(--dark-dark-text);
       }
 
       .cloud-container {
         ul li a {
-          color: $white;
+          color: var(--white);
 
           &.size-1 {
-            color: $light-text !important;
+            color: var(--light-text) !important;
           }
 
           &.size-3 {
-            color: $dark-text-light-25 !important;
+            color: var(--dark-text-light-25) !important;
           }
 
           &.size-4 {
-            color: $dark-dark-text !important;
+            color: var(--dark-dark-text) !important;
           }
         }
       }
@@ -2045,16 +2044,16 @@ const activeTab = ref<TabId>('overview')
       .heatmap-wrapper {
         .heatmap-title {
           .title-avatar {
-            border-color: $dark-sidebar-light-12;
+            border-color: var(--dark-sidebar-light-12);
 
             img {
-              border-color: $dark-sidebar-dark-2;
+              border-color: var(--dark-sidebar-dark-2);
             }
           }
 
           .title-meta {
             p span {
-              color: $dark-dark-text;
+              color: var(--dark-dark-text);
             }
           }
         }
@@ -2063,21 +2062,21 @@ const activeTab = ref<TabId>('overview')
           .heatmap-row {
             .heatmap-row-content {
               .heatmap-row-item:not(.is-time) {
-                background: $dark-sidebar-light-10;
+                background: var(--dark-sidebar-light-10);
 
                 &.heat-1 {
-                  background: $dark-sidebar-light-2;
+                  background: var(--dark-sidebar-light-2);
                 }
 
                 &.heat-2 {
-                  background: $accent-light-10;
+                  background: var(--primary-light-10);
                 }
 
                 &.heat-3 {
-                  background: $accent;
+                  background: var(--primary);
 
                   i {
-                    color: $smoke-white;
+                    color: var(--smoke-white);
                   }
                 }
               }

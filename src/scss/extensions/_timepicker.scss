@@ -20,7 +20,7 @@
         align-items: center;
         .timepicker-input {
           position: relative;
-          color: $primary;
+          color: var(--primary);
           text-align: center;
           overflow: hidden;
           font-size: 2rem;
@@ -123,7 +123,7 @@
       justify-content: center;
       align-items: center;
       font-size: 1.5rem;
-      color: $primary;
+      color: var(--primary);
     }
     @each $name, $pair in $colors {
       $color: nth($pair, 1);

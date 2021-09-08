@@ -14,7 +14,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: $white;
+  background: var(--white);
   z-index: 15;
   transition: all 0.3s;
 
@@ -25,8 +25,8 @@
 
     &.is-solid,
     &.is-scrolled {
-      background: $white;
-      border-bottom-color: $fade-grey;
+      background: var(--white);
+      border-bottom-color: var(--fade-grey);
     }
 
     &.is-solid {
@@ -49,8 +49,8 @@
             }
 
             .button:hover {
-              background: $white;
-              border-color: $white;
+              background: var(--white);
+              border-color: var(--white);
             }
           }
         }
@@ -79,9 +79,9 @@
         }
 
         span {
-          font-family: $font;
+          font-family: var(--font);
           font-size: 0.95rem;
-          color: $muted-grey;
+          color: var(--muted-grey);
           letter-spacing: 1px;
           max-width: 50px;
           line-height: 1.2;
@@ -92,7 +92,7 @@
       .separator {
         height: 38px;
         width: 2px;
-        border-right: 1px solid $fade-grey-dark-4;
+        border-right: 1px solid var(--fade-grey-dark-4);
         margin: 0 20px 0 16px;
       }
 
@@ -120,12 +120,12 @@
               padding: 16px;
 
               &:hover {
-                background: $fade-grey-light-4;
+                background: var(--fade-grey-light-4);
               }
 
               .meta {
                 margin-left: 12px;
-                font-family: $font;
+                font-family: var(--font);
 
                 span {
                   display: block;
@@ -133,7 +133,7 @@
                   &:first-child {
                     font-size: 0.95rem;
                     font-weight: 500;
-                    color: $dark-text;
+                    color: var(--dark-text);
                     line-height: 1.2;
                     max-width: 140px;
                     white-space: nowrap;
@@ -143,7 +143,7 @@
 
                   &:nth-child(2) {
                     //text-transform: uppercase;
-                    color: $light-text;
+                    color: var(--light-text);
                     font-size: 0.85rem;
                   }
                 }
@@ -207,21 +207,21 @@
         align-items: center;
         height: 34px;
         width: 34px;
-        border-radius: $radius-rounded;
+        border-radius: var(--radius-rounded);
         margin: 0 4px;
         transition: all 0.3s;
 
         &:hover {
-          background: $white;
-          border-color: $fade-grey;
-          box-shadow: $light-box-shadow;
+          background: var(--white);
+          border-color: var(--fade-grey);
+          box-shadow: var(--light-box-shadow);
         }
 
         svg {
           height: 18px;
           width: 18px;
           stroke-width: 1.6px;
-          color: $light-text;
+          color: var(--light-text);
           transition: stroke 0.3s;
           vertical-align: 0;
           transform: none;
@@ -253,7 +253,7 @@
 
               .meta {
                 margin-left: 12px;
-                font-family: $font;
+                font-family: var(--font);
 
                 span {
                   display: block;
@@ -261,13 +261,13 @@
                   &:first-child {
                     font-size: 1.1rem;
                     font-weight: 500;
-                    color: $dark-text;
+                    color: var(--dark-text);
                     line-height: 1.2;
                   }
 
                   &:nth-child(2) {
                     text-transform: uppercase;
-                    color: $light-text;
+                    color: var(--light-text);
                     font-size: 0.7rem;
                   }
                 }
@@ -276,7 +276,7 @@
 
             .logout-button {
               svg {
-                stroke: $smoke-white !important;
+                stroke: var(--smoke-white) !important;
               }
             }
           }
@@ -305,19 +305,19 @@
           font-weight: 500;
           border-radius: 0.5rem;
           border: none;
-          color: $light-text;
+          color: var(--light-text);
 
           &:hover {
-            background: $widget-grey-dark-2;
-            color: $dark-text;
+            background: var(--widget-grey-dark-2);
+            color: var(--dark-text);
           }
         }
 
         .welcome-text {
           font-size: 0.9rem;
           font-weight: 500;
-          font-family: $font;
-          color: $light-text;
+          font-family: var(--font);
+          color: var(--light-text);
         }
       }
 
@@ -361,8 +361,8 @@
 .is-dark {
   .navbar-navbar-clean {
     &:not(.is-colored) {
-      background: $dark-sidebar-dark-2;
-      border-color: $dark-sidebar-light-1;
+      background: var(--dark-sidebar-dark-2);
+      border-color: var(--dark-sidebar-light-1);
 
       &.is-transparent {
         background: transparent;
@@ -371,8 +371,8 @@
 
         &.is-solid,
         &.is-scrolled {
-          background: $dark-sidebar-dark-2;
-          border-color: $dark-sidebar-light-1;
+          background: var(--dark-sidebar-dark-2);
+          border-color: var(--dark-sidebar-light-1);
         }
 
         &:not(.is-scrolled) {
@@ -387,8 +387,8 @@
                 }
 
                 .button:hover {
-                  background: $dark-sidebar-dark-2 !important;
-                  border-color: $dark-sidebar-dark-2 !important;
+                  background: var(--dark-sidebar-dark-2) !important;
+                  border-color: var(--dark-sidebar-dark-2) !important;
                 }
               }
             }
@@ -400,23 +400,23 @@
     .navbar-navbar-inner {
       .left {
         .separator {
-          border-color: $dark-sidebar-light-12;
+          border-color: var(--dark-sidebar-light-12);
         }
 
         .project-dropdown {
           .dropdown-menu {
             .dropdown-content {
               .dropdown-block {
-                background: $dark-sidebar-light-2 !important;
+                background: var(--dark-sidebar-light-2) !important;
 
                 &:hover {
-                  background: $dark-sidebar-light-5 !important;
+                  background: var(--dark-sidebar-light-5) !important;
                 }
 
                 .meta {
                   span {
                     &:first-child {
-                      color: $dark-dark-text !important;
+                      color: var(--dark-dark-text) !important;
                     }
                   }
                 }
@@ -428,15 +428,15 @@
 
       .right {
         .icon-link {
-          background: $landing-dark-2;
+          background: var(--landing-yyy);
 
           &:hover {
-            background: $landing-dark-6;
+            background: var(--landing-yyy-dark-12);
           }
 
           > svg {
-            color: $smoke-white;
-            stroke: $smoke-white;
+            color: var(--smoke-white);
+            stroke: var(--smoke-white);
           }
         }
 
@@ -444,20 +444,20 @@
           .dropdown-menu {
             .dropdown-content {
               .dropdown-head {
-                background: $dark-sidebar-light-2 !important;
+                background: var(--dark-sidebar-light-2) !important;
 
                 &:hover {
-                  background: $dark-sidebar-light-2 !important;
+                  background: var(--dark-sidebar-light-2) !important;
                 }
 
                 .meta {
                   &:hover {
-                    background: $dark-sidebar-light-2 !important;
+                    background: var(--dark-sidebar-light-2) !important;
                   }
 
                   span {
                     &:first-child {
-                      color: $dark-dark-text !important;
+                      color: var(--dark-dark-text) !important;
                     }
                   }
                 }
@@ -474,13 +474,13 @@
         .left,
         .center {
           .button {
-            background: $dark-sidebar-dark-2 !important;
-            border-color: $dark-sidebar-dark-2 !important;
+            background: var(--dark-sidebar-dark-2) !important;
+            border-color: var(--dark-sidebar-dark-2) !important;
 
             &:hover {
-              background: $dark-sidebar-light-4 !important;
-              border-color: $dark-sidebar-light-4 !important;
-              color: $white !important;
+              background: var(--dark-sidebar-light-4) !important;
+              border-color: var(--dark-sidebar-light-4) !important;
+              color: var(--white) !important;
             }
           }
         }

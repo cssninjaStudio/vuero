@@ -346,7 +346,6 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
 @import '../../../../scss/pages/generic/_widgets-lists.scss';
 
@@ -355,10 +354,9 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
     display: flex;
     border-radius: 16px;
     padding: 50px;
-    background: $primary;
-    font-family: $font;
-    box-shadow: $primary-box-shadow;
-
+    background: var(--primary);
+    font-family: var(--font);
+    box-shadow: var(--primary-box-shadow);
     .left,
     .right {
       width: 30%;
@@ -370,7 +368,7 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
       width: 40%;
       padding-right: 30px;
       margin-right: 30px;
-      border-right: 1px solid $primary-light-10;
+      border-right: 1px solid var(--primary-light-10);
 
       .block-text {
         margin-bottom: 16px;
@@ -390,8 +388,8 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
           justify-content: center;
           align-items: center;
           border-radius: 10px;
-          background: $white;
-          color: $light-text;
+          background: var(--white);
+          color: var(--light-text);
           border: none;
           outline: none;
           cursor: pointer;
@@ -416,10 +414,10 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
         }
 
         h3 {
-          font-family: $font-alt;
+          font-family: var(--font-alt);
           font-weight: 700;
           font-size: 1.8rem;
-          color: $white;
+          color: var(--white);
           line-height: 1.2;
         }
       }
@@ -435,17 +433,17 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
     }
 
     .block-heading {
-      font-family: $font-alt;
+      font-family: var(--font-alt);
       font-weight: 600;
       font-size: 1.1rem;
-      color: $white;
+      color: var(--white);
       margin-bottom: 4px;
     }
 
     .block-text {
-      font-family: $font;
+      font-family: var(--font);
       font-size: 0.9rem;
-      color: $white;
+      color: var(--white);
       margin-bottom: 16px;
     }
 
@@ -454,8 +452,8 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
       padding-right: 30px;
 
       h3 {
-        color: $smoke-white;
-        font-family: $font-alt;
+        color: var(--smoke-white);
+        font-family: var(--font-alt);
         font-weight: 700;
         font-size: 1.3rem;
         max-width: 280px;
@@ -463,7 +461,7 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
 
       p {
         font-weight: 400;
-        color: $smoke-white-dark-2;
+        color: var(--smoke-white-dark-2);
         margin-bottom: 16px;
         max-width: 320px;
       }
@@ -489,10 +487,10 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
     padding: 20px 0;
 
     h3 {
-      font-family: $font-alt;
+      font-family: var(--font-alt);
       font-size: 1.1rem;
       font-weight: 600;
-      color: $dark-text;
+      color: var(--dark-text);
     }
 
     .button {
@@ -501,20 +499,20 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
       margin-right: 4px;
 
       &.is-selected {
-        background: $primary;
-        color: $white;
-        border-color: $primary;
-        box-shadow: $primary-box-shadow;
+        background: var(--primary);
+        color: var(--white);
+        border-color: var(--primary);
+        box-shadow: var(--primary-box-shadow);
       }
     }
   }
 
   .side-text {
     h3 {
-      font-family: $font-alt;
+      font-family: var(--font-alt);
       font-size: 1.1rem;
       font-weight: 600;
-      color: $dark-text;
+      color: var(--dark-text);
       margin-bottom: 8px;
     }
 
@@ -536,10 +534,10 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
       margin-bottom: 20px;
 
       h3 {
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         font-size: 1.1rem;
         font-weight: 600;
-        color: $dark-text;
+        color: var(--dark-text);
       }
     }
 
@@ -594,10 +592,10 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
     }
 
     h3 {
-      font-family: $font-alt;
+      font-family: var(--font-alt);
       font-size: 1.1rem;
       font-weight: 600;
-      color: $dark-text;
+      color: var(--dark-text);
     }
 
     p {
@@ -619,13 +617,13 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
         a {
           opacity: 0;
           pointer-events: none;
-          color: $light-text;
+          color: var(--light-text);
           font-weight: 500;
           font-size: 0.9rem;
           transition: opacity 0.3s, color 0.3s;
 
           &:hover {
-            color: $primary;
+            color: var(--primary);
           }
         }
       }
@@ -642,23 +640,23 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
 
   .hr-dashboard {
     .block-header {
-      background: $dark-sidebar;
+      background: var(--dark-sidebar);
       box-shadow: none;
 
       .center {
-        border-color: $dark-sidebar-light-10;
+        border-color: var(--dark-sidebar-light-10);
 
         .candidates {
           button {
-            background: $dark-sidebar-light-10;
+            background: var(--dark-sidebar-light-10);
             border: 1px solid transparent;
             transition: all 0.3s;
 
             &:hover {
-              border-color: $accent;
+              border-color: var(--primary);
 
               svg {
-                color: $accent;
+                color: var(--primary);
               }
             }
           }
@@ -669,10 +667,10 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
     .feed-settings {
       .button {
         &.is-selected {
-          background: $accent !important;
-          border-color: $accent !important;
-          box-shadow: $accent-box-shadow !important;
-          color: $white !important;
+          background: var(--primary) !important;
+          border-color: var(--primary) !important;
+          box-shadow: var(--primary-box-shadow) !important;
+          color: var(--white) !important;
         }
       }
     }

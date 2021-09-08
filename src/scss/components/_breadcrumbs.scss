@@ -23,8 +23,8 @@
       }
 
       .breadcrumb-item {
-        font-family: $font;
-        color: $light-text;
+        font-family: var(--font);
+        color: var(--light-text);
         padding: 0 0.75em;
 
         .icon {
@@ -45,7 +45,7 @@
       a {
         &.breadcrumb-item {
           &:hover {
-            color: $primary;
+            color: var(--primary);
           }
         }
       }
@@ -64,7 +64,7 @@
         a {
           &.breadcrumb-item {
             &:hover {
-              color: $accent;
+              color: var(--primary);
             }
           }
         }

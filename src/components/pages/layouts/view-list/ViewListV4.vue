@@ -230,7 +230,6 @@ const filteredData = computed(() => {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
 
 .list-view-v4 {
@@ -249,8 +248,8 @@ const filteredData = computed(() => {
         width: 160px;
 
         h3 {
-          font-family: $font-alt;
-          color: $dark-text;
+          font-family: var(--font-alt);
+          color: var(--dark-text);
           font-size: 1rem;
           font-weight: 600;
           max-width: 150px;
@@ -266,8 +265,8 @@ const filteredData = computed(() => {
         min-width: 60px;
         max-height: 60px;
         min-height: 60px;
-        border-radius: $radius-rounded;
-        border: 1px solid $fade-grey;
+        border-radius: var(--radius-rounded);
+        border: 1px solid var(--fade-grey);
       }
 
       .meta-left {
@@ -276,9 +275,9 @@ const filteredData = computed(() => {
         h3 {
           display: flex;
           align-items: center;
-          font-family: $font-alt;
+          font-family: var(--font-alt);
           font-weight: 600;
-          color: $dark-text;
+          color: var(--dark-text);
           font-size: 0.75rem;
           line-height: 1;
 
@@ -286,14 +285,14 @@ const filteredData = computed(() => {
             display: block;
             height: 18px;
             width: 18px;
-            border-radius: $radius-rounded;
+            border-radius: var(--radius-rounded);
             margin-right: 6px;
           }
         }
 
         > span:not(.tag) {
           font-size: 0.9rem;
-          color: $light-text;
+          color: var(--light-text);
 
           svg {
             position: relative;
@@ -307,7 +306,7 @@ const filteredData = computed(() => {
             position: relative;
             top: -3px;
             font-size: 5px;
-            color: $light-text;
+            color: var(--light-text);
             padding: 0 8px;
           }
         }
@@ -327,9 +326,9 @@ const filteredData = computed(() => {
           margin-right: 30px;
 
           > span {
-            font-family: $font;
+            font-family: var(--font);
             font-size: 0.9rem;
-            color: $light-text;
+            color: var(--light-text);
             margin-left: 6px;
           }
         }
@@ -345,10 +344,10 @@ const filteredData = computed(() => {
               transition: all 0.3s;
 
               &:hover {
-                background: $white;
-                border: 1px solid $fade-grey-dark-3;
-                box-shadow: $light-box-shadow;
-                color: $danger;
+                background: var(--white);
+                border: 1px solid var(--fade-grey-dark-3);
+                box-shadow: var(--light-box-shadow);
+                color: var(--danger);
               }
             }
           }
@@ -366,17 +365,17 @@ const filteredData = computed(() => {
       .list-view-item-inner {
         .pre-meta {
           h3 {
-            color: $dark-dark-text;
+            color: var(--dark-dark-text);
           }
         }
 
         > img {
-          border-color: $dark-sidebar-light-12;
+          border-color: var(--dark-sidebar-light-12);
         }
 
         .meta-left {
           h3 {
-            color: $dark-dark-text !important;
+            color: var(--dark-dark-text) !important;
           }
         }
 
@@ -384,14 +383,14 @@ const filteredData = computed(() => {
           .buttons {
             .button {
               &:nth-child(2) {
-                background: $dark-sidebar-light-2;
-                border-color: $dark-sidebar-light-8;
-                color: $dark-dark-text;
+                background: var(--dark-sidebar-light-2);
+                border-color: var(--dark-sidebar-light-8);
+                color: var(--dark-dark-text);
                 transition: all 0.3s;
 
                 &:hover {
-                  border-color: $danger;
-                  color: $danger;
+                  border-color: var(--danger);
+                  color: var(--danger);
                 }
               }
             }

@@ -61,24 +61,24 @@
 
   &.reversed-play {
     .plyr--full-ui.plyr--video .plyr__control--overlaid {
-      background: $white !important;
-      border: 1px solid $primary;
-      color: $primary !important;
+      background: var(--white) !important;
+      border: 1px solid var(--primary);
+      color: var(--primary) !important;
 
       &:hover {
-        background: $primary !important;
-        border-color: $primary !important;
-        color: $white !important;
+        background: var(--primary) !important;
+        border-color: var(--primary) !important;
+        color: var(--white) !important;
 
         svg {
-          fill: $white !important;
-          stroke: $white !important;
+          fill: var(--white) !important;
+          stroke: var(--white) !important;
         }
       }
 
       svg {
         fill: none;
-        stroke: $primary;
+        stroke: var(--primary);
         stroke-width: 1.6px;
       }
     }
@@ -94,8 +94,8 @@
 }
 
 .plyr--full-ui.plyr--video .plyr__control--overlaid {
-  background: $primary !important;
-  box-shadow: $primary-box-shadow;
+  background: var(--primary) !important;
+  box-shadow: var(--primary-box-shadow);
 }
 
 .plyr--video .plyr__control.plyr__tab-focus,
@@ -103,11 +103,11 @@
 .plyr--video .plyr__control[aria-expanded='true'],
 .plyr__menu__container
   .plyr__control[role='menuitemradio'][aria-checked='true']::before {
-  background: $primary;
+  background: var(--primary);
 }
 
 .plyr--full-ui input[type='range'] {
-  color: $primary;
+  color: var(--primary);
 }
 
 .plyr__controls {

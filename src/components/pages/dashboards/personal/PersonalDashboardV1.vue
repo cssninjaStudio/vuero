@@ -170,7 +170,6 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
 
 .is-navbar {
@@ -183,17 +182,17 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
   .dashboard-header {
     display: flex;
     align-items: center;
-    font-family: $font;
+    font-family: var(--font);
     margin-bottom: 30px;
 
     .start {
       margin-left: 12px;
 
       h3 {
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         font-weight: 600;
         font-size: 1.3rem;
-        color: $dark-text;
+        color: var(--dark-text);
       }
     }
 
@@ -212,14 +211,14 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
     .dashboard-card {
       @include vuero-s-card();
 
-      font-family: $font;
+      font-family: var(--font);
 
       > h4,
       .ApexCharts-title-text {
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         font-size: 1rem;
         font-weight: 600;
-        color: $dark-text;
+        color: var(--dark-text);
         margin-bottom: 12px;
       }
 
@@ -233,9 +232,9 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
           .quick-stat {
             width: calc(50% - 16px);
             padding: 40px 20px;
-            background: $widget-grey;
+            background: var(--widget-grey);
             margin: 8px;
-            border-radius: $radius-large;
+            border-radius: var(--radius-large);
             transition: all 0.3s;
 
             ::v-deep(.media-flex-center) {
@@ -244,7 +243,7 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
                   &:first-child {
                     font-size: 1.4rem;
                     font-weight: 600;
-                    color: $dark-text;
+                    color: var(--dark-text);
                   }
                 }
               }
@@ -260,13 +259,12 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
         display: flex;
         justify-content: center;
         align-items: center;
-        background: $primary-light-8;
-        border-color: $primary-light-8;
+        background: var(--primary-light-8);
+        border-color: var(--primary-light-8);
         padding: 20px 40px;
         min-height: 320px;
-        border-radius: $radius-large;
-        box-shadow: $primary-box-shadow;
-
+        border-radius: var(--radius-large);
+        box-shadow: var(--primary-box-shadow);
         .lnil,
         .lnir {
           position: absolute;
@@ -280,22 +278,22 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
           text-align: center;
 
           h4 {
-            font-family: $font-alt;
+            font-family: var(--font-alt);
             font-weight: 600;
             font-size: 1.2rem;
-            color: $smoke-white;
+            color: var(--smoke-white);
             margin-bottom: 8px;
           }
         }
 
         .link {
           display: block;
-          font-family: $font-alt;
+          font-family: var(--font-alt);
           font-weight: 500;
           margin-top: 0.5rem;
 
           &:hover {
-            color: $smoke-white;
+            color: var(--smoke-white);
             opacity: 0.6;
           }
         }
@@ -327,7 +325,7 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
     .dashboard-header {
       .start {
         h3 {
-          color: $dark-dark-text;
+          color: var(--dark-dark-text);
         }
       }
     }
@@ -337,22 +335,22 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
         @include vuero-card--dark();
 
         &.is-upgrade {
-          background: $accent;
-          border-color: $accent;
-          box-shadow: $accent-box-shadow;
+          background: var(--primary);
+          border-color: var(--primary);
+          box-shadow: var(--primary-box-shadow);
         }
 
         .quick-stats {
           .quick-stats-inner {
             .quick-stat {
-              background: $dark-sidebar-light-2;
-              border: 1px solid $dark-sidebar-light-12;
+              background: var(--dark-sidebar-light-2);
+              border: 1px solid var(--dark-sidebar-light-12);
 
               .media-flex-center {
                 .flex-meta {
                   span {
                     &:first-child {
-                      color: $dark-dark-text;
+                      color: var(--dark-dark-text);
                     }
                   }
                 }

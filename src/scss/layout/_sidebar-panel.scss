@@ -20,7 +20,7 @@
   left: 80px;
   height: 100%;
   width: 240px;
-  background: $white;
+  background: var(--white);
   z-index: 31;
 
   .inner {
@@ -29,7 +29,7 @@
     width: 240px;
     overflow-y: auto;
     overflow-x: hidden;
-    background: $white;
+    background: var(--white);
 
     &::-webkit-scrollbar {
       width: 3px;
@@ -53,21 +53,21 @@
 
 .is-dark {
   .sidebar-panel {
-    background: $dark-sidebar-light-5;
-    border-color: $dark-sidebar-light-5 !important;
+    background: var(--dark-sidebar-light-5);
+    border-color: var(--dark-sidebar-light-5) !important;
 
     .panel-close {
       svg {
-        color: $muted-grey !important;
+        color: var(--muted-grey) !important;
       }
     }
 
     .subpanel-header {
-      background: $dark-sidebar-light-5;
+      background: var(--dark-sidebar-light-5);
     }
 
     .inner {
-      background: $dark-sidebar-light-5;
+      background: var(--dark-sidebar-light-5);
     }
   }
 }
@@ -92,7 +92,7 @@
         > img {
           height: 32px;
           width: 32px;
-          border-radius: $radius-rounded;
+          border-radius: var(--radius-rounded);
         }
 
         .dropdown-menu {
@@ -109,12 +109,12 @@
               padding: 16px;
 
               &:hover {
-                background: $fade-grey-light-4;
+                background: var(--fade-grey-light-4);
               }
 
               .meta {
                 margin-left: 12px;
-                font-family: $font;
+                font-family: var(--font);
 
                 span {
                   display: block;
@@ -122,7 +122,7 @@
                   &:first-child {
                     font-size: 0.95rem;
                     font-weight: 500;
-                    color: $dark-text;
+                    color: var(--dark-text);
                     line-height: 1.2;
                     max-width: 140px;
                     white-space: nowrap;
@@ -132,7 +132,7 @@
 
                   &:nth-child(2) {
                     //text-transform: uppercase;
-                    color: $light-text;
+                    color: var(--light-text);
                     font-size: 0.85rem;
                   }
                 }
@@ -143,8 +143,8 @@
       }
 
       h3 {
-        font-family: $font-alt;
-        color: $light-text;
+        font-family: var(--font-alt);
+        color: var(--light-text);
         font-size: 1.3rem;
       }
 
@@ -177,7 +177,7 @@
         &.is-active {
           a {
             font-weight: 500;
-            color: $primary;
+            color: var(--primary);
           }
 
           > a {
@@ -187,13 +187,13 @@
 
         > a.router-link-exact-active {
           font-weight: 600;
-          color: $primary;
+          color: var(--primary);
         }
 
         &.has-children {
           .is-submenu.router-link-exact-active {
             font-weight: 500;
-            color: $primary;
+            color: var(--primary);
           }
         }
 
@@ -231,7 +231,7 @@
               max-height: 500px;
             }
             .collapse-wrap > a {
-              color: $dark-text;
+              color: var(--dark-text);
               font-weight: 600;
 
               svg {
@@ -242,7 +242,7 @@
 
           &:hover {
             .collapse-wrap > a {
-              color: $dark-text;
+              color: var(--dark-text);
             }
           }
 
@@ -255,8 +255,8 @@
               margin-left: auto;
               margin-right: 20px;
               border-radius: 100px;
-              background: $danger;
-              color: $white;
+              background: var(--danger);
+              color: var(--white);
               font-size: 0.8rem;
               font-weight: 600;
             }
@@ -269,12 +269,12 @@
             min-height: 36px;
 
             > a {
-              font-family: $font-alt;
+              font-family: var(--font-alt);
               display: flex;
               align-items: center;
               font-size: 0.9rem;
               font-weight: 500;
-              color: $light-text;
+              color: var(--light-text);
 
               svg {
                 position: relative;
@@ -283,7 +283,7 @@
                 width: 18px;
                 margin-left: auto;
                 transform: rotate(0);
-                color: $light-text;
+                color: var(--light-text);
                 transition: all 0.3s;
               }
             }
@@ -297,7 +297,7 @@
 
             li {
               height: 32px;
-              font-family: $font;
+              font-family: var(--font);
 
               &.is-active,
               .router-link-exact-active {
@@ -313,7 +313,7 @@
               .is-submenu {
                 display: flex;
                 font-weight: 400;
-                font-family: $font;
+                font-family: var(--font);
                 align-items: center;
                 padding-left: 32px;
                 font-size: 0.9rem;
@@ -321,7 +321,7 @@
                 &.is-active,
                 .router-link-exact-active {
                   font-weight: 500;
-                  color: $primary;
+                  color: var(--primary);
                 }
 
                 .lnil,
@@ -331,7 +331,7 @@
                 }
 
                 > span {
-                  font-family: $font;
+                  font-family: var(--font);
                 }
 
                 svg {
@@ -359,15 +359,15 @@
         }
 
         a {
-          font-family: $font;
+          font-family: var(--font);
           display: block;
           width: 100%;
           padding: 0 20px;
           font-size: 0.95rem;
-          color: $light-text;
+          color: var(--light-text);
 
           &:hover {
-            color: $dark-text;
+            color: var(--dark-text);
           }
 
           .tag {
@@ -379,10 +379,10 @@
         }
 
         > a {
-          font-family: $font-alt;
+          font-family: var(--font-alt);
           font-size: 0.9rem;
           font-weight: 500;
-          color: $light-text;
+          color: var(--light-text);
         }
       }
 
@@ -432,16 +432,16 @@
           .dropdown-menu {
             .dropdown-content {
               .dropdown-block {
-                background: $dark-sidebar-light-2;
+                background: var(--dark-sidebar-light-2);
 
                 &:hover {
-                  background: $dark-sidebar-light-5 !important;
+                  background: var(--dark-sidebar-light-5) !important;
                 }
 
                 .meta {
                   span {
                     &:first-child {
-                      color: $dark-dark-text !important;
+                      color: var(--dark-dark-text) !important;
                     }
                   }
                 }
@@ -456,37 +456,37 @@
           li {
             &.is-active {
               a {
-                color: $accent !important;
+                color: var(--primary) !important;
               }
             }
 
             a.router-link-exact-active {
-              color: $accent !important;
+              color: var(--primary) !important;
             }
 
             &.has-children {
               &.active {
                 .collapse-wrap > a {
-                  color: $smoke-white;
+                  color: var(--smoke-white);
                 }
               }
 
               &:hover {
                 .collapse-wrap > a {
-                  color: $dark-dark-text-light-14;
+                  color: var(--dark-dark-text-light-14);
                 }
               }
             }
 
             a {
               &:hover {
-                color: $dark-dark-text;
+                color: var(--dark-dark-text);
               }
             }
 
             .is-submenu {
               &:hover {
-                color: $accent;
+                color: var(--primary);
               }
             }
           }
@@ -510,7 +510,7 @@
       padding: 0 20px;
 
       h3 {
-        color: $muted-grey;
+        color: var(--muted-grey);
         font-size: 1.4rem;
       }
 
@@ -603,7 +603,7 @@
               position: absolute;
               top: 7px;
               left: 7px;
-              color: $placeholder;
+              color: var(--placeholder);
 
               svg {
                 width: 20px;
@@ -618,17 +618,17 @@
 
               input {
                 padding-left: 40px;
-                background: $fade-grey;
+                background: var(--fade-grey);
                 border: none;
                 box-shadow: none;
-                color: $muted-grey;
+                color: var(--muted-grey);
                 transition: all 0.3s;
 
                 &:focus {
-                  background: $light-white;
+                  background: var(--body-color);
 
                   + .icon {
-                    color: $primary;
+                    color: var(--primary);
                   }
                 }
               }
@@ -648,7 +648,7 @@
                   .autocpl-avatar {
                     width: 40px !important;
                     height: 40px !important;
-                    border-radius: $radius-rounded !important;
+                    border-radius: var(--radius-rounded) !important;
                   }
 
                   .avatar-badge {
@@ -657,8 +657,8 @@
                     right: -5px;
                     width: 18px;
                     height: 18px;
-                    border: 2px solid $white;
-                    border-radius: $radius-rounded;
+                    border: 2px solid var(--white);
+                    border-radius: var(--radius-rounded);
                   }
                 }
 
@@ -668,7 +668,7 @@
 
                   span {
                     font-size: 0.8rem;
-                    color: $title-grey;
+                    color: var(--title-grey);
                   }
                 }
               }
@@ -690,7 +690,7 @@
             border: none !important;
 
             ul {
-              border-radius: $radius !important;
+              border-radius: var(--radius) !important;
               box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06) !important;
             }
           }
@@ -730,11 +730,11 @@
         cursor: pointer;
 
         &.is-active {
-          border-left-color: $primary;
-          background: $primary-light-51;
+          border-left-color: var(--primary);
+          background: var(--primary-light-51);
 
           &:hover {
-            background: $primary-light-51;
+            background: var(--primary-light-51);
           }
         }
 
@@ -755,7 +755,7 @@
             img {
               height: 36px;
               width: 36px;
-              border-radius: $radius-rounded;
+              border-radius: var(--radius-rounded);
               display: block;
 
               &.is-user {
@@ -767,10 +767,10 @@
                 position: absolute;
                 right: -5px;
                 bottom: 0;
-                border: 2px solid $white;
+                border: 2px solid var(--white);
                 height: 16px;
                 width: 16px;
-                border-radius: $radius-rounded;
+                border-radius: var(--radius-rounded);
               }
             }
           }
@@ -782,17 +782,17 @@
               display: block;
 
               &:first-child {
-                color: $dark-text;
+                color: var(--dark-text);
                 font-weight: 500;
                 font-size: 0.9rem;
               }
 
               &:nth-child(2) {
                 font-size: 0.75rem;
-                color: $muted-grey;
+                color: var(--muted-grey);
 
                 /* &.is-unread {
-                                    color: $dark-text;
+                                    color: var(--dark-text);
                                     font-weight: 500;
                                 } */
               }
@@ -808,7 +808,7 @@
                             top: -14px;
                             right: 20px;
                             font-size: .75rem;
-                            color: $muted-grey;
+                            color: var(--muted-grey);
                         } */
           }
         }
@@ -826,8 +826,8 @@
           img {
             height: 36px;
             width: 36px;
-            border: 3px solid $white;
-            border-radius: $radius-rounded;
+            border: 3px solid var(--white);
+            border-radius: var(--radius-rounded);
             display: block;
 
             &.is-user {
@@ -846,17 +846,17 @@
             height: 36px;
             width: 36px;
             min-width: 36px;
-            border-radius: $radius-rounded;
-            background: $primary;
+            border-radius: var(--radius-rounded);
+            background: var(--primary);
             display: flex;
             justify-content: center;
             align-items: center;
             margin-left: -15px;
-            border: 2px solid $white;
+            border: 2px solid var(--white);
 
             span {
               display: block;
-              color: $white;
+              color: var(--white);
               font-weight: 600;
               font-size: 0.8rem;
             }
@@ -870,7 +870,7 @@
           top: 2px;
           right: 20px;
           font-size: 0.75rem;
-          color: $muted-grey;
+          color: var(--muted-grey);
         }
 
         //Group message
@@ -878,10 +878,10 @@
           padding: 0 20px;
           margin-top: -20px;
           font-size: 0.75rem;
-          color: $muted-grey;
+          color: var(--muted-grey);
 
           &.is-unread {
-            color: $dark-text;
+            color: var(--dark-text);
             font-weight: 500;
           }
         }
@@ -904,47 +904,47 @@
     &.is-messages {
       li {
         &.is-active {
-          background: $dark-sidebar-light-10 !important;
+          background: var(--dark-sidebar-light-10) !important;
 
           &:hover {
-            background: $dark-sidebar-light-10 !important;
+            background: var(--dark-sidebar-light-10) !important;
           }
 
           img,
           .more-indicator {
-            border-color: $dark-sidebar-light-10 !important;
+            border-color: var(--dark-sidebar-light-10) !important;
           }
         }
 
         &:hover {
-          background: $dark-sidebar-light-6 !important;
+          background: var(--dark-sidebar-light-6) !important;
         }
 
         img,
         .more-indicator {
-          border-color: $dark-sidebar-light-6 !important;
+          border-color: var(--dark-sidebar-light-6) !important;
         }
 
         .more-indicator {
-          background: $accent !important;
+          background: var(--primary) !important;
         }
 
         .recipient-meta {
           span {
             &:first-child {
-              color: $accent-grey-light-6 !important;
+              color: var(--primary-grey-light-6) !important;
             }
 
             &.is-unread {
-              color: $accent-grey-light-6 !important;
+              color: var(--primary-grey-light-6) !important;
             }
           }
         }
       }
 
       .start-conversation {
-        background: $accent !important;
-        border: 1px solid $accent !important;
+        background: var(--primary) !important;
+        border: 1px solid var(--primary) !important;
       }
     }
   }
@@ -960,10 +960,10 @@
   left: 80px;
   height: 100%;
   width: 80px;
-  background-color: $body-color;
+  background-color: var(--body-color);
   box-shadow: none;
   z-index: 34;
-  border-left: 1px solid $fade-grey;
+  border-left: 1px solid var(--fade-grey);
   transform: translateX(-100%);
   transition: all 0.3s;
 
@@ -994,12 +994,12 @@
       .button {
         height: 36px;
         width: 36px;
-        border-radius: $radius-rounded;
+        border-radius: var(--radius-rounded);
         padding: 4px;
         transition: all 0.3s;
 
         &:hover {
-          box-shadow: $primary-box-shadow;
+          box-shadow: var(--primary-box-shadow);
         }
 
         svg {
@@ -1022,11 +1022,11 @@
         cursor: pointer;
 
         &.is-active {
-          border-left-color: $primary;
-          background: $primary-light-51;
+          border-left-color: var(--primary);
+          background: var(--primary-light-51);
 
           &:hover {
-            background: $primary-light-51;
+            background: var(--primary-light-51);
           }
         }
 
@@ -1037,7 +1037,7 @@
           img {
             height: 36px;
             width: 36px;
-            border-radius: $radius-rounded;
+            border-radius: var(--radius-rounded);
             display: block;
 
             &.is-user {
@@ -1049,10 +1049,10 @@
               position: absolute;
               right: -5px;
               bottom: 0;
-              border: 2px solid $white;
+              border: 2px solid var(--white);
               height: 16px;
               width: 16px;
-              border-radius: $radius-rounded;
+              border-radius: var(--radius-rounded);
             }
           }
 
@@ -1060,11 +1060,11 @@
             position: absolute;
             right: -12px;
             bottom: -5px;
-            border-radius: $radius-rounded;
-            border: 2px solid $white;
+            border-radius: var(--radius-rounded);
+            border: 2px solid var(--white);
             height: 28px;
             width: 28px;
-            background: $primary;
+            background: var(--primary);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -1073,7 +1073,7 @@
               display: block;
               font-size: 0.7rem;
               font-size: 700;
-              color: $smoke-white;
+              color: var(--smoke-white);
 
               &::before {
                 content: '+';

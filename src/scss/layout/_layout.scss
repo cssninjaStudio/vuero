@@ -16,11 +16,11 @@
 ========================================================================== */
 
 body {
-  background: $body-color;
-  background: $background-grey;
+  background: var(--body-color);
+  background: var(--background-grey);
 
   &.opened {
-    background: $white;
+    background: var(--white);
   }
 
   &.is-fixed {
@@ -118,7 +118,7 @@ body {
   width: calc(100% - 80px);
   padding: 0 0 60px 0;
   margin-left: 80px;
-  background: $background-grey;
+  background: var(--background-grey);
   transition: all 0.3s;
 
   &.is-pushed-full {
@@ -221,7 +221,7 @@ body {
 
     p {
       line-height: 1;
-      color: $light-text;
+      color: var(--light-text);
       font-size: 1.1rem;
     }
   }
@@ -248,10 +248,10 @@ body {
     .dropdown {
       &:hover {
         .is-trigger {
-          background: $white;
-          border-color: $fade-grey;
-          border-radius: $radius-rounded;
-          box-shadow: $light-box-shadow;
+          background: var(--white);
+          border-color: var(--fade-grey);
+          border-radius: var(--radius-rounded);
+          box-shadow: var(--light-box-shadow);
         }
       }
 
@@ -267,8 +267,8 @@ body {
           display: block;
           width: 8px;
           height: 8px;
-          border-radius: $radius-rounded;
-          background: $danger;
+          border-radius: var(--radius-rounded);
+          background: var(--danger);
         }
       }
 
@@ -276,11 +276,11 @@ body {
         .dropdown-content {
           top: 2.5rem;
           line-height: 1.5;
-          color: $dark-text;
+          color: var(--dark-text);
           width: 20rem;
-          background: $white;
+          background: var(--white);
           border-radius: 5px;
-          box-shadow: $light-box-shadow;
+          box-shadow: var(--light-box-shadow);
           padding-top: 0;
 
           .heading {
@@ -288,14 +288,14 @@ body {
             align-items: flex-start;
             justify-content: space-between;
             padding: 1rem;
-            border-bottom: 0.01rem solid $light-grey;
+            border-bottom: 0.01rem solid var(--light-grey);
             margin-bottom: 0;
 
             .heading-left {
               h6 {
                 font-size: 0.8rem;
                 font-weight: 500;
-                color: $light-text;
+                color: var(--light-text);
                 line-height: 1.6;
               }
             }
@@ -303,7 +303,7 @@ body {
             .heading-right {
               .notification-link {
                 margin: 0.4rem 0;
-                color: $primary;
+                color: var(--primary);
                 font-weight: 500;
               }
             }
@@ -325,17 +325,17 @@ body {
                   height: 2.25rem;
                   width: 2.25rem;
                   margin: 0 0.5rem 0 0;
-                  border-radius: $radius-rounded;
+                  border-radius: var(--radius-rounded);
                   max-width: 100%;
                 }
               }
 
               .user-content {
                 text-align: left;
-                font-family: $font;
+                font-family: var(--font);
 
                 .user-info {
-                  color: $dark-text;
+                  color: var(--dark-text);
                   font-size: 0.95rem;
 
                   span {
@@ -346,7 +346,7 @@ body {
                 .time {
                   margin: 0;
                   font-size: 0.85rem;
-                  color: $light-text;
+                  color: var(--light-text);
                 }
               }
             }
@@ -362,21 +362,21 @@ body {
     align-items: center;
     height: 34px;
     width: 34px;
-    border-radius: $radius-rounded;
+    border-radius: var(--radius-rounded);
     margin: 0 4px;
     transition: all 0.3s;
 
     &:hover {
-      background: $white;
-      border-color: $fade-grey;
-      box-shadow: $light-box-shadow;
+      background: var(--white);
+      border-color: var(--fade-grey);
+      box-shadow: var(--light-box-shadow);
     }
 
     svg {
       height: 18px;
       width: 18px;
       stroke-width: 1.6px;
-      color: $light-text;
+      color: var(--light-text);
       transition: stroke 0.3s;
     }
 
@@ -385,7 +385,7 @@ body {
       height: 24px;
       width: 24px;
       min-width: 24px;
-      border-radius: $radius-rounded;
+      border-radius: var(--radius-rounded);
     }
   }
 }
@@ -398,19 +398,19 @@ body {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: $lighter-grey;
+  background: var(--lighter-grey);
   transition: all 0.3s;
 
   &.light {
-    background: $white;
+    background: var(--white);
   }
 
   &.lighter {
-    background: $smoke-white;
+    background: var(--smoke-white);
   }
 
   &.darker {
-    background: $background-grey;
+    background: var(--background-grey);
   }
 
   .minimal-wrap {
@@ -482,23 +482,23 @@ body {
     content: ' ';
     width: 3.5em;
     height: 3.5em;
-    border-radius: $radius-rounded;
+    border-radius: var(--radius-rounded);
     position: absolute;
     top: 0;
     right: 0;
     z-index: -2;
-    background-color: $primary-dark-5;
-    box-shadow: $primary-box-shadow;
+    background-color: var(--primary-dark-5);
+    box-shadow: var(--primary-box-shadow);
     transition: all 0.3s ease;
   }
 
   .floating-btn {
     width: 3.5em;
     height: 3.5em;
-    border-radius: $radius-rounded;
-    background-color: $primary-light-3;
-    box-shadow: $primary-box-shadow;
-    color: $smoke-white;
+    border-radius: var(--radius-rounded);
+    background-color: var(--primary-light-3);
+    box-shadow: var(--primary-box-shadow);
+    color: var(--smoke-white);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -535,7 +535,7 @@ body {
     font-size: 1em;
     width: 3em;
     height: 3em;
-    border-radius: $radius-rounded;
+    border-radius: var(--radius-rounded);
     text-align: center;
     line-height: 3;
     background-color: hsla(0, 0%, 0%, 0.2);
@@ -559,13 +559,13 @@ body {
         height: 24px;
         width: 24px;
         min-width: 24px;
-        border-radius: $radius-rounded;
+        border-radius: var(--radius-rounded);
       }
 
       svg {
         height: 18px;
         width: 18px;
-        color: $smoke-white;
+        color: var(--smoke-white);
         stroke-width: 1.6px;
       }
     }
@@ -579,7 +579,7 @@ body {
 .is-dark {
   .circular-menu {
     &::after {
-      background: $dark-sidebar-dark-2;
+      background: var(--dark-sidebar-dark-2);
       box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.3) !important;
     }
 
@@ -590,7 +590,7 @@ body {
     }
 
     .floating-btn {
-      background: $dark-sidebar-light-2;
+      background: var(--dark-sidebar-light-2);
       box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.3) !important;
     }
   }

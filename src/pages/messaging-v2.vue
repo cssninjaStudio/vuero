@@ -603,14 +603,12 @@ useHead({
 </template>
 
 <style lang="scss">
-@import '../scss/abstracts/_variables.scss';
-
 /* ==========================================================================
 1. Variables / Wrapper / Header
 ========================================================================== */
 
 // TODO
-$theme-bg-color: $white;
+$theme-bg-color: var(--white);
 $input-bg: #f8f8fa;
 $input-chat-color: #a2a2a2;
 $border-color: #eef2f4;
@@ -632,8 +630,10 @@ $overlay-bg: linear-gradient(
 $overlay-bg-dark: linear-gradient(
   to bottom,
   rgba(255, 255, 255, 0) 0%,
-  rgba($dark-sidebar, 1) 65%,
-  rgba($dark-sidebar, 1) 100%
+  hsla(var(--dark-sidebar-h), var(--dark-sidebar-s), var(--dark-sidebar-l), 1)
+    65%,
+  hsla(var(--dark-sidebar-h), var(--dark-sidebar-s), var(--dark-sidebar-l), 1)
+    100%
 );
 
 .chat-app-wrapper {
@@ -690,8 +690,8 @@ $overlay-bg-dark: linear-gradient(
             display: block;
             background-color: transparent;
             border: none;
-            color: $body-color;
-            font-family: $font;
+            color: var(--body-color);
+            font-family: var(--font);
             font-weight: 500;
             font-size: 15px;
             padding-left: 80px;
@@ -730,7 +730,7 @@ $overlay-bg-dark: linear-gradient(
               display: block;
               width: 38px;
               height: 38px;
-              border-radius: $radius-rounded;
+              border-radius: var(--radius-rounded);
             }
 
             .badge {
@@ -739,8 +739,8 @@ $overlay-bg-dark: linear-gradient(
               bottom: 0;
               width: 20px;
               height: 20px;
-              border: 2px solid $white;
-              border-radius: $radius-rounded;
+              border: 2px solid var(--white);
+              border-radius: var(--radius-rounded);
             }
           }
 
@@ -748,15 +748,15 @@ $overlay-bg-dark: linear-gradient(
             margin-left: 3px;
             width: 18px;
             height: 18px;
-            color: $light-text;
+            color: var(--light-text);
             transition: all 0.3s;
           }
         }
 
         .dropdown-menu {
           top: 52px;
-          border: 1px solid $fade-grey-dark-3;
-          box-shadow: $light-box-shadow;
+          border: 1px solid var(--fade-grey-dark-3);
+          box-shadow: var(--light-box-shadow);
           border-radius: 8px;
           padding-top: 0;
           width: 180px;
@@ -765,16 +765,16 @@ $overlay-bg-dark: linear-gradient(
           .dropdown-item {
             display: flex;
             align-items: center;
-            font-family: $font;
+            font-family: var(--font);
             font-size: 0.9rem;
             padding: 8px 12px;
-            color: $light-text;
+            color: var(--light-text);
 
             svg {
               margin-right: 8px;
               height: 16px;
               width: 16px;
-              color: $light-text;
+              color: var(--light-text);
             }
           }
         }
@@ -790,14 +790,14 @@ $overlay-bg-dark: linear-gradient(
 .is-dark {
   .chat-app-wrapper {
     .chat-app-header {
-      background: $dark-sidebar-dark-2;
-      border-color: $dark-sidebar-light-2;
+      background: var(--dark-sidebar-dark-2);
+      border-color: var(--dark-sidebar-light-2);
 
       .search-bar {
         .field {
           .control {
             .input {
-              color: $dark-dark-text;
+              color: var(--dark-dark-text);
             }
           }
         }
@@ -806,7 +806,7 @@ $overlay-bg-dark: linear-gradient(
       .user-settings {
         .user-dropdown {
           .dropdown-menu {
-            border-color: $dark-sidebar-light-12;
+            border-color: var(--dark-sidebar-light-12);
           }
         }
       }
@@ -860,7 +860,7 @@ $overlay-bg-dark: linear-gradient(
 
         &.active {
           background: $active-conversation-bg;
-          border-left: 4px solid $primary;
+          border-left: 4px solid var(--primary);
 
           .conversation-detail {
             .conversation-username {
@@ -875,11 +875,11 @@ $overlay-bg-dark: linear-gradient(
 
         .conversation-detail {
           overflow: hidden;
-          font-family: $font;
+          font-family: var(--font);
 
           .conversation-username {
-            font-family: $font-alt;
-            color: $dark-text;
+            font-family: var(--font-alt);
+            color: var(--dark-text);
             font-weight: 500;
             font-size: 0.95rem;
           }
@@ -893,13 +893,13 @@ $overlay-bg-dark: linear-gradient(
               white-space: nowrap;
               overflow: hidden;
               text-overflow: ellipsis;
-              color: $light-text;
+              color: var(--light-text);
               max-width: 170px;
             }
 
             .conversation-date {
               font-size: 0.9rem;
-              color: $light-text;
+              color: var(--light-text);
               margin-left: 4px;
 
               &::before {
@@ -922,8 +922,8 @@ $overlay-bg-dark: linear-gradient(
   .chat-app-wrapper {
     .wrapper {
       .conversation-area {
-        background: $dark-sidebar-light-4;
-        border-color: $dark-sidebar-light-12;
+        background: var(--dark-sidebar-light-4);
+        border-color: var(--dark-sidebar-light-12);
 
         .overlay {
           background: $overlay-bg-dark;
@@ -931,17 +931,17 @@ $overlay-bg-dark: linear-gradient(
 
         .conversation {
           &:hover {
-            background: $dark-sidebar-light-6;
+            background: var(--dark-sidebar-light-6);
           }
 
           &.active {
-            background: $dark-sidebar-light-1;
-            border-color: $accent;
+            background: var(--dark-sidebar-light-1);
+            border-color: var(--primary);
           }
 
           .conversation-detail {
             .conversation-username {
-              color: $dark-dark-text;
+              color: var(--dark-dark-text);
             }
           }
         }
@@ -994,7 +994,7 @@ $overlay-bg-dark: linear-gradient(
         width: 100%;
         align-items: center;
         padding: 20px;
-        background: $white;
+        background: var(--white);
 
         .trigger {
           padding: 8px;
@@ -1015,7 +1015,7 @@ $overlay-bg-dark: linear-gradient(
           margin-left: auto;
 
           * {
-            border: 2px solid $white;
+            border: 2px solid var(--white);
           }
 
           * + * {
@@ -1025,9 +1025,9 @@ $overlay-bg-dark: linear-gradient(
           > span {
             width: 32px;
             height: 32px;
-            background-color: $primary-light-48;
-            color: $primary;
-            border-radius: $radius-rounded;
+            background-color: var(--primary-light-48);
+            color: var(--primary);
+            border-radius: var(--radius-rounded);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -1049,14 +1049,14 @@ $overlay-bg-dark: linear-gradient(
 
         .chat-area-profile {
           width: 32px;
-          border-radius: $radius-rounded;
+          border-radius: var(--radius-rounded);
           object-fit: cover;
         }
 
         .chat-area-title {
           font-size: 1.1rem;
-          font-family: $font-alt;
-          color: $dark-text;
+          font-family: var(--font-alt);
+          color: var(--dark-text);
           font-weight: 700;
         }
       }
@@ -1067,7 +1067,7 @@ $overlay-bg-dark: linear-gradient(
         .chat-msg-img {
           height: 40px;
           width: 40px;
-          border-radius: $radius-rounded;
+          border-radius: var(--radius-rounded);
           object-fit: cover;
         }
 
@@ -1083,7 +1083,7 @@ $overlay-bg-dark: linear-gradient(
           left: calc(100% + 12px);
           bottom: 0;
           font-size: 12px;
-          font-family: $font;
+          font-family: var(--font);
           font-weight: 500;
           color: $msg-date;
           white-space: nowrap;
@@ -1106,7 +1106,7 @@ $overlay-bg-dark: linear-gradient(
             padding: 15px;
             border-radius: 20px 20px 20px 0;
             line-height: 1.5;
-            font-family: $font;
+            font-family: var(--font);
             font-size: 0.95rem;
             font-weight: 500;
 
@@ -1130,8 +1130,8 @@ $overlay-bg-dark: linear-gradient(
           }
 
           .chat-msg-text {
-            background-color: $primary;
-            color: $white;
+            background-color: var(--primary);
+            color: var(--white);
             border-radius: 20px 20px 0 20px;
           }
 
@@ -1165,10 +1165,10 @@ $overlay-bg-dark: linear-gradient(
         input {
           border: 1px solid transparent;
           outline: none;
-          color: $body-color;
+          color: var(--body-color);
           background-color: $input-bg;
           padding: 12px;
-          border-radius: $radius-large;
+          border-radius: var(--radius-large);
           font-size: 15px;
           margin: 0 12px;
           width: 100%;
@@ -1179,9 +1179,9 @@ $overlay-bg-dark: linear-gradient(
           }
 
           &:focus {
-            background: $white;
-            border-color: $fade-grey-dark-3;
-            box-shadow: $light-box-shadow;
+            background: var(--white);
+            border-color: var(--fade-grey-dark-3);
+            box-shadow: var(--light-box-shadow);
           }
         }
 
@@ -1189,10 +1189,10 @@ $overlay-bg-dark: linear-gradient(
           &:hover {
             > div {
               .button {
-                background: $fade-grey;
+                background: var(--fade-grey);
 
                 svg {
-                  color: $primary;
+                  color: var(--primary);
                 }
               }
             }
@@ -1209,7 +1209,7 @@ $overlay-bg-dark: linear-gradient(
           .button {
             width: 28px;
             height: 28px;
-            border-radius: $radius-rounded;
+            border-radius: var(--radius-rounded);
             border: none;
             padding: 0;
             display: flex;
@@ -1218,7 +1218,7 @@ $overlay-bg-dark: linear-gradient(
             transition: all 0.3s;
 
             svg {
-              color: $placeholder;
+              color: var(--placeholder);
               stroke-width: 2px;
               height: 18px;
               width: 18px;
@@ -1234,7 +1234,7 @@ $overlay-bg-dark: linear-gradient(
               svg {
                 height: 18px;
                 width: 18px;
-                color: $muted-grey;
+                color: var(--muted-grey);
               }
 
               .meta {
@@ -1246,12 +1246,12 @@ $overlay-bg-dark: linear-gradient(
                   &:first-child {
                     font-size: 0.9rem;
                     font-weight: 500;
-                    color: $dark-text;
+                    color: var(--dark-text);
                   }
 
                   &:nth-child(2) {
                     font-size: 0.9rem;
-                    color: $muted-grey;
+                    color: var(--muted-grey);
                   }
                 }
               }
@@ -1268,10 +1268,10 @@ $overlay-bg-dark: linear-gradient(
 
           &:hover {
             .button {
-              background: $fade-grey;
+              background: var(--fade-grey);
 
               svg {
-                color: $primary;
+                color: var(--primary);
               }
             }
           }
@@ -1279,7 +1279,7 @@ $overlay-bg-dark: linear-gradient(
           .button {
             width: 28px;
             height: 28px;
-            border-radius: $radius-rounded;
+            border-radius: var(--radius-rounded);
             border: none;
             padding: 0;
             display: flex;
@@ -1288,7 +1288,7 @@ $overlay-bg-dark: linear-gradient(
             transition: all 0.3s;
 
             svg {
-              color: $placeholder;
+              color: var(--placeholder);
               stroke-width: 2px;
               height: 18px;
               width: 18px;
@@ -1309,31 +1309,31 @@ $overlay-bg-dark: linear-gradient(
   .chat-app-wrapper {
     .wrapper {
       .chat-area {
-        background: $dark-sidebar-light-10;
-        border-color: $dark-sidebar-light-12;
+        background: var(--dark-sidebar-light-10);
+        border-color: var(--dark-sidebar-light-12);
 
         .chat-area-header {
-          background: $dark-sidebar-light-10;
+          background: var(--dark-sidebar-light-10);
 
           .trigger {
             svg {
-              color: $dark-dark-text;
+              color: var(--dark-dark-text);
             }
           }
 
           .chat-area-title {
-            color: $dark-dark-text;
+            color: var(--dark-dark-text);
           }
 
           .chat-area-group {
             img {
-              border-color: $dark-sidebar-light-10;
+              border-color: var(--dark-sidebar-light-10);
             }
 
             > span {
-              border-color: $dark-sidebar-light-10;
-              color: $accent-dark-5;
-              background: $accent-light-20;
+              border-color: var(--dark-sidebar-light-10);
+              color: var(--primary-dark-5);
+              background: var(--primary-light-20);
             }
           }
         }
@@ -1343,32 +1343,32 @@ $overlay-bg-dark: linear-gradient(
             &.owner {
               .chat-msg-content {
                 .chat-msg-text {
-                  background: $accent-dark-4;
-                  color: $smoke-white;
+                  background: var(--primary-dark-4);
+                  color: var(--smoke-white);
                 }
               }
             }
 
             .chat-msg-content {
               .chat-msg-text {
-                background: $dark-sidebar-light-6;
-                color: $dark-dark-text;
+                background: var(--dark-sidebar-light-6);
+                color: var(--dark-dark-text);
               }
             }
           }
         }
 
         .chat-area-footer {
-          background: $dark-sidebar-light-10;
-          border-color: $dark-sidebar-light-12;
+          background: var(--dark-sidebar-light-10);
+          border-color: var(--dark-sidebar-light-12);
 
           .add-content .dropdown {
             &:hover {
               > div > .button {
-                background: $dark-sidebar-light-6 !important;
+                background: var(--dark-sidebar-light-6) !important;
 
                 svg {
-                  color: $accent;
+                  color: var(--primary);
                 }
               }
             }
@@ -1378,7 +1378,7 @@ $overlay-bg-dark: linear-gradient(
                 .dropdown-item {
                   .meta span {
                     &:first-child {
-                      color: $dark-dark-text;
+                      color: var(--dark-dark-text);
                     }
                   }
                 }
@@ -1389,22 +1389,22 @@ $overlay-bg-dark: linear-gradient(
           .add-emoji {
             &:hover {
               .button {
-                background: $dark-sidebar-light-6 !important;
+                background: var(--dark-sidebar-light-6) !important;
 
                 svg {
-                  color: $accent;
+                  color: var(--primary);
                 }
               }
             }
           }
 
           input {
-            background: $dark-sidebar-light-6;
-            color: $dark-dark-text;
+            background: var(--dark-sidebar-light-6);
+            color: var(--dark-dark-text);
 
             &:focus {
-              border-color: $dark-sidebar-light-12;
-              background: $dark-sidebar-light-4;
+              border-color: var(--dark-sidebar-light-12);
+              background: var(--dark-sidebar-light-4);
             }
           }
         }
@@ -1448,25 +1448,25 @@ $overlay-bg-dark: linear-gradient(
 
         .user-name {
           margin-top: 10px;
-          font-family: $font-alt;
+          font-family: var(--font-alt);
           font-size: 1.2rem;
           font-weight: 700;
-          color: $dark-text;
+          color: var(--dark-text);
         }
 
         .user-job-title {
-          font-family: $font;
-          color: $light-text;
+          font-family: var(--font);
+          color: var(--light-text);
         }
 
         .side-actions {
           padding: 12px 0;
 
           .button {
-            color: $light-text;
+            color: var(--light-text);
 
             &:hover {
-              box-shadow: $light-box-shadow;
+              box-shadow: var(--light-box-shadow);
             }
           }
         }
@@ -1482,7 +1482,7 @@ $overlay-bg-dark: linear-gradient(
             font-weight: 400;
             font-size: 1rem;
             margin-bottom: 20px;
-            color: $light-text;
+            color: var(--light-text);
 
             svg {
               width: 16px;
@@ -1508,7 +1508,7 @@ $overlay-bg-dark: linear-gradient(
 
           .view-more {
             display: block;
-            color: $primary;
+            color: var(--primary);
             font-weight: 600;
             font-size: 15px;
             margin: 25px 0;
@@ -1527,17 +1527,17 @@ $overlay-bg-dark: linear-gradient(
   .chat-app-wrapper {
     .wrapper {
       .detail-area {
-        background: $dark-sidebar-light-4;
-        border-color: $dark-sidebar-light-12;
+        background: var(--dark-sidebar-light-4);
+        border-color: var(--dark-sidebar-light-12);
 
         .chat-side-content {
           .user-name {
-            color: $dark-dark-text;
+            color: var(--dark-dark-text);
           }
 
           .detail-photos {
             .view-more {
-              color: $accent;
+              color: var(--primary);
             }
           }
         }
@@ -1564,7 +1564,7 @@ $overlay-bg-dark: linear-gradient(
         top: 0;
         left: 0;
         height: 100%;
-        background: $white;
+        background: var(--white);
         z-index: 10;
         transform: translateX(-100%);
         transition: all 0.3s;
@@ -1610,7 +1610,7 @@ $overlay-bg-dark: linear-gradient(
         top: 0;
         left: 0;
         height: 100%;
-        background: $white;
+        background: var(--white);
         z-index: 10;
         transform: translateX(-100%);
         transition: all 0.3s;

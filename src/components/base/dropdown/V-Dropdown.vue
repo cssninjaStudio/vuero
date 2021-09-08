@@ -111,7 +111,6 @@ defineExpose({
 </template>
 
 <style lang="scss" scoped>
-@import '../../../scss/abstracts/_variables.scss';
 @import '../../../scss/abstracts/_mixins.scss';
 
 .dropdown {
@@ -119,10 +118,10 @@ defineExpose({
     &:hover,
     &.is-active {
       .is-trigger {
-        background: $fade-grey-light-2;
+        background: var(--fade-grey-light-2);
 
         svg {
-          color: $light-text-dark-4;
+          color: var(--light-text-dark-4);
         }
       }
     }
@@ -133,7 +132,7 @@ defineExpose({
       align-items: center;
       height: 30px;
       width: 30px;
-      border-radius: $radius-rounded;
+      border-radius: var(--radius-rounded);
       border: none;
       outline: none;
       background: transparent;
@@ -148,7 +147,7 @@ defineExpose({
       svg {
         height: 20px;
         width: 20px;
-        color: $light-text;
+        color: var(--light-text);
         stroke-width: 1.6px;
         transition: stroke 0.3s;
       }
@@ -191,7 +190,7 @@ defineExpose({
         svg {
           height: 16px;
           width: 16px;
-          color: $light-text;
+          color: var(--light-text);
         }
       }
     }
@@ -204,7 +203,7 @@ defineExpose({
   &.is-spaced {
     .dropdown-menu {
       box-shadow: 0 5px 16px rgba(0, 0, 0, 0.05);
-      border-color: $fade-grey;
+      border-color: var(--fade-grey);
       padding-top: 0;
       min-width: 260px;
 
@@ -213,7 +212,7 @@ defineExpose({
       }
 
       .dropdown-content {
-        border: 1px solid $fade-grey;
+        border: 1px solid var(--fade-grey);
         box-shadow: none;
       }
     }
@@ -222,18 +221,18 @@ defineExpose({
     .dropdown-item {
       padding: 0.5rem 1rem;
       font-size: 0.95rem;
-      color: $light-text;
+      color: var(--light-text);
       transition: all 0.3s;
 
       &:not(.is-button):hover,
       &:not(.is-button).is-active {
-        background: $fade-grey-light-3;
-        color: $dark-text;
+        background: var(--fade-grey-light-3);
+        color: var(--dark-text);
       }
 
       &.no-hover {
         &:hover {
-          background: $white;
+          background: var(--white);
         }
       }
 
@@ -245,12 +244,12 @@ defineExpose({
         &.is-active {
           .icon {
             svg {
-              color: $primary;
+              color: var(--primary);
             }
 
             .lnir,
             .lnil {
-              color: $primary;
+              color: var(--primary);
             }
           }
         }
@@ -279,10 +278,10 @@ defineExpose({
           display: block;
           height: 32px;
           width: 32px;
-          border-radius: $radius-large;
+          border-radius: var(--radius-large);
 
           &.is-rounded {
-            border-radius: $radius-rounded;
+            border-radius: var(--radius-rounded);
           }
         }
 
@@ -294,15 +293,15 @@ defineExpose({
             line-height: 1.3;
 
             &:first-child {
-              font-family: $font-alt;
+              font-family: var(--font-alt);
               font-size: 0.9rem;
               font-weight: 600;
-              color: $dark-text;
+              color: var(--dark-text);
             }
 
             &:nth-child(2) {
-              font-family: $font;
-              color: $light-text;
+              font-family: var(--font);
+              color: var(--light-text);
               font-size: 0.9rem;
             }
           }
@@ -313,12 +312,12 @@ defineExpose({
 
   .is-trigger {
     &.button {
-      font-family: $font;
+      font-family: var(--font);
 
       &:focus {
         outline: none;
-        border-color: $fade-grey-dark-4;
-        box-shadow: $light-box-shadow;
+        border-color: var(--fade-grey-dark-4);
+        box-shadow: var(--light-box-shadow);
       }
 
       &:focus:not(:active) {
@@ -348,10 +347,10 @@ defineExpose({
   //Dropdown menu
   .dropdown-menu {
     .dropdown-item {
-      color: $light-text;
+      color: var(--light-text);
 
       &:hover {
-        color: $dark-text;
+        color: var(--dark-text);
       }
 
       //Child dropdown parent
@@ -365,7 +364,7 @@ defineExpose({
         svg {
           height: 16px;
           width: 16px;
-          color: $muted-grey;
+          color: var(--muted-grey);
         }
 
         //Child hover dropdown
@@ -384,9 +383,9 @@ defineExpose({
             position: relative;
             height: 100%;
             width: 100%;
-            background: $white;
-            border: 1px solid $accent-grey;
-            border-radius: $radius-large;
+            background: var(--white);
+            border: 1px solid var(--primary-grey);
+            border-radius: var(--radius-large);
             padding: 8px 0;
 
             //Kanban columns settings
@@ -406,12 +405,12 @@ defineExpose({
                   font-size: 0.8rem;
 
                   &:first-child {
-                    color: $dark-text;
+                    color: var(--dark-text);
                     font-weight: 500;
                   }
 
                   &:nth-child(2) {
-                    color: $muted-grey;
+                    color: var(--muted-grey);
                   }
                 }
               }
@@ -435,11 +434,11 @@ defineExpose({
 .is-dark {
   .toolbar-link {
     &:hover {
-      background: $dark-sidebar-light-2 !important;
+      background: var(--dark-sidebar-light-2) !important;
     }
 
     svg {
-      color: $dark-dark-text;
+      color: var(--dark-dark-text);
     }
   }
 
@@ -449,30 +448,30 @@ defineExpose({
       &:hover,
       &.is-active {
         .is-trigger {
-          background: $dark-sidebar-light-2 !important;
+          background: var(--dark-sidebar-light-2) !important;
 
           svg {
-            color: $dark-dark-text;
+            color: var(--dark-dark-text);
           }
         }
       }
 
       .dropdown-menu {
         .dropdown-content {
-          background: $dark-sidebar !important;
-          border-color: $dark-sidebar-light-8 !important;
+          background: var(--dark-sidebar) !important;
+          border-color: var(--dark-sidebar-light-8) !important;
 
           .heading {
-            border-color: $dark-sidebar-light-8 !important;
+            border-color: var(--dark-sidebar-light-8) !important;
 
             &:hover,
             *:hover {
-              background: $dark-sidebar !important;
+              background: var(--dark-sidebar) !important;
             }
 
             .heading-right {
               .notification-link {
-                color: $accent !important;
+                color: var(--primary) !important;
               }
             }
           }
@@ -482,12 +481,12 @@ defineExpose({
               .notification-item {
                 &:hover,
                 *:hover {
-                  background: $dark-sidebar !important;
+                  background: var(--dark-sidebar) !important;
                 }
 
                 .user-content {
                   .user-info {
-                    color: $dark-dark-text !important;
+                    color: var(--dark-dark-text) !important;
                   }
                 }
               }
@@ -498,31 +497,31 @@ defineExpose({
             &:hover {
               .icon {
                 svg {
-                  color: $accent !important;
+                  color: var(--primary) !important;
                 }
 
                 .lnir,
                 .lnil {
-                  color: $accent;
+                  color: var(--primary);
                 }
               }
             }
 
             .icon {
               svg {
-                color: $light-text;
+                color: var(--light-text);
               }
 
               .lnir,
               .lnil {
-                color: $light-text;
+                color: var(--light-text);
               }
             }
 
             .meta {
               span {
                 &:first-child {
-                  color: $dark-dark-text;
+                  color: var(--dark-dark-text);
                 }
               }
             }
@@ -533,25 +532,25 @@ defineExpose({
 
     .dropdown-menu {
       .dropdown-content {
-        background: $dark-sidebar;
-        border-color: $dark-sidebar-light-8 !important;
+        background: var(--dark-sidebar);
+        border-color: var(--dark-sidebar-light-8) !important;
 
         .dropdown-item {
-          font-family: $font;
-          color: $light-text;
+          font-family: var(--font);
+          color: var(--light-text);
 
           &.is-active {
-            background: $dark-sidebar-light-2 !important;
-            //color: $white !important;
+            background: var(--dark-sidebar-light-2) !important;
+            //color: var(--white) !important;
           }
         }
 
         .dropdown-divider {
-          background: $dark-sidebar-light-5;
+          background: var(--dark-sidebar-light-5);
         }
 
         a:hover {
-          background: $dark-sidebar-light-5 !important;
+          background: var(--dark-sidebar-light-5) !important;
         }
       }
     }
@@ -559,12 +558,12 @@ defineExpose({
 
   .child-dropdown {
     .inner {
-      background: $dark-sidebar !important;
-      border-color: $dark-sidebar-light-4 !important;
+      background: var(--dark-sidebar) !important;
+      border-color: var(--dark-sidebar-light-4) !important;
 
       &:hover {
-        background: $dark-sidebar !important;
-        border-color: $dark-sidebar-light-4 !important;
+        background: var(--dark-sidebar) !important;
+        border-color: var(--dark-sidebar-light-4) !important;
       }
 
       ul {
@@ -572,7 +571,7 @@ defineExpose({
           .text {
             span {
               &:first-child {
-                color: $dark-dark-text !important;
+                color: var(--dark-dark-text) !important;
               }
             }
           }

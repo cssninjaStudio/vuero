@@ -431,7 +431,6 @@ import {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
 @import '../../../../scss/pages/generic/_widgets-stats.scss';
 
@@ -439,17 +438,17 @@ import {
   .dashboard-header {
     display: flex;
     align-items: center;
-    font-family: $font;
+    font-family: var(--font);
     margin-bottom: 30px;
 
     .start {
       margin-left: 12px;
 
       h3 {
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         font-weight: 600;
         font-size: 1.3rem;
-        color: $dark-text;
+        color: var(--dark-text);
       }
     }
 
@@ -467,7 +466,7 @@ import {
   .dashboard-tile {
     @include vuero-s-card();
 
-    font-family: $font;
+    font-family: var(--font);
 
     .tile-head {
       display: flex;
@@ -475,8 +474,8 @@ import {
       justify-content: space-between;
 
       h3 {
-        font-family: $font-alt;
-        color: $light-text;
+        font-family: var(--font-alt);
+        color: var(--light-text);
         font-size: 1rem;
         font-weight: 500;
       }
@@ -492,7 +491,7 @@ import {
         span {
           font-size: 1.5rem;
           font-weight: 600;
-          color: $dark-text;
+          color: var(--dark-text);
         }
       }
 
@@ -506,14 +505,14 @@ import {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: $font;
+    font-family: var(--font);
     margin: 20px 0;
 
     h3 {
-      font-family: $font-alt;
+      font-family: var(--font-alt);
       font-size: 1.1rem;
       font-weight: 700;
-      color: $dark-text;
+      color: var(--dark-text);
     }
 
     .field {
@@ -523,7 +522,7 @@ import {
       .multiselect {
         .multiselect-input {
           .multiselect-single-label {
-            color: $light-text;
+            color: var(--light-text);
           }
         }
 

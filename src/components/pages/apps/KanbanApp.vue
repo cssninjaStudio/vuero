@@ -611,8 +611,6 @@ onMounted(() => {
 </template>
 
 <style lang="scss">
-@import '../../../scss/abstracts/_variables.scss';
-
 /*! _board.scss | Vuero | Css ninja 2020-2021 */
 
 /*
@@ -659,7 +657,7 @@ onMounted(() => {
     padding: 6px;
     background: #e3e4e5;
     border-radius: 8px;
-    border: 1px solid $medium-grey;
+    border: 1px solid var(--medium-grey);
 
     .column-title {
       display: flex;
@@ -668,11 +666,11 @@ onMounted(() => {
 
       h3 {
         margin-bottom: 0;
-        font-family: $font;
+        font-family: var(--font);
         font-size: 0.85rem;
         font-weight: 500;
         text-transform: uppercase;
-        color: $light-text-dark-8;
+        color: var(--light-text-dark-8);
       }
 
       .input {
@@ -682,7 +680,7 @@ onMounted(() => {
       svg {
         height: 18px;
         width: 18px;
-        color: $dark-text;
+        color: var(--dark-text);
       }
 
       .task-count {
@@ -705,7 +703,7 @@ onMounted(() => {
           svg {
             height: 18px;
             width: 18px;
-            color: $light-text-dark-8;
+            color: var(--light-text-dark-8);
           }
         }
       }
@@ -721,7 +719,7 @@ onMounted(() => {
       text-align: center;
       padding: 10px 10px 20px 10px;
       font-size: 0.95rem;
-      color: $dark-text;
+      color: var(--dark-text);
 
       span {
         display: block;
@@ -770,9 +768,9 @@ onMounted(() => {
           margin-top: 20px;
           height: 46px;
           width: 46px;
-          background: $white;
-          border-radius: $radius-rounded;
-          border: 1.4px solid $fade-grey;
+          background: var(--white);
+          border-radius: var(--radius-rounded);
+          border: 1.4px solid var(--fade-grey);
           display: flex;
           justify-content: center;
           align-items: center;
@@ -783,14 +781,14 @@ onMounted(() => {
             height: 18px;
             width: 18px;
             transition: all 0.3s;
-            color: $muted-grey;
+            color: var(--muted-grey);
           }
 
           &:hover {
-            border-color: $primary;
+            border-color: var(--primary);
 
             svg {
-              color: $primary;
+              color: var(--primary);
             }
           }
         }
@@ -799,14 +797,14 @@ onMounted(() => {
           margin-top: 20px;
           height: 38px;
           width: 38px;
-          background: $primary;
-          border-radius: $radius-rounded;
+          background: var(--primary);
+          border-radius: var(--radius-rounded);
           display: flex;
           justify-content: center;
           align-items: center;
           font-size: 0.9rem;
           font-weight: 700;
-          color: $smoke-white;
+          color: var(--smoke-white);
         }
 
         .collapsed-text {
@@ -814,7 +812,7 @@ onMounted(() => {
           bottom: 160px;
           min-width: 250px;
           font-size: 1rem;
-          color: $dark-text;
+          color: var(--dark-text);
           font-weight: 600;
           margin-left: -3px;
           transform: rotate(-90deg);
@@ -830,10 +828,10 @@ onMounted(() => {
 
 .kanban-card {
   width: 100%;
-  background: $white;
-  border-radius: $radius-large;
+  background: var(--white);
+  border-radius: var(--radius-large);
   margin-top: 10px;
-  border: 1px solid $medium-grey;
+  border: 1px solid var(--medium-grey);
   transition: all 0.4s;
 
   &:hover {
@@ -853,7 +851,7 @@ onMounted(() => {
         justify-content: center;
         align-items: center;
         margin: 0 auto;
-        border-radius: $radius-rounded;
+        border-radius: var(--radius-rounded);
 
         &::after {
           content: '';
@@ -862,8 +860,8 @@ onMounted(() => {
           left: calc(50% - 12px);
           height: 24px;
           width: 24px;
-          border-radius: $radius-rounded;
-          background: $white;
+          border-radius: var(--radius-rounded);
+          background: var(--white);
           animation: wave 1.6s infinite;
           animation-duration: 2s;
           transform-origin: center center;
@@ -875,47 +873,47 @@ onMounted(() => {
           display: block;
           width: 62px;
           height: 62px;
-          border-radius: $radius-rounded;
+          border-radius: var(--radius-rounded);
           z-index: 2;
         }
 
         &.is-warning {
-          border: 2px solid $warning;
+          border: 2px solid var(--warning);
 
           &::after {
-            background: $warning;
+            background: var(--warning);
           }
         }
 
         &.is-primary {
-          border: 2px solid $primary;
+          border: 2px solid var(--primary);
 
           &::after {
-            background: $primary;
+            background: var(--primary);
           }
         }
 
         &.is-success {
-          border: 2px solid $success;
+          border: 2px solid var(--success);
 
           &::after {
-            background: $success;
+            background: var(--success);
           }
         }
 
         &.is-danger {
-          border: 2px solid $danger;
+          border: 2px solid var(--danger);
 
           &::after {
-            background: $danger;
+            background: var(--danger);
           }
         }
 
         &.is-info {
-          border: 2px solid $info;
+          border: 2px solid var(--info);
 
           &::after {
-            background: $info;
+            background: var(--info);
           }
         }
       }
@@ -925,7 +923,7 @@ onMounted(() => {
       a {
         font-size: 0.85rem;
         font-weight: 500;
-        color: $light-text;
+        color: var(--light-text);
       }
     }
   }
@@ -941,7 +939,7 @@ onMounted(() => {
 
       > span {
         font-size: 0.9rem;
-        color: $light-text;
+        color: var(--light-text);
 
         svg {
           position: relative;
@@ -956,9 +954,9 @@ onMounted(() => {
 
   .card-title {
     font-size: 0.9rem;
-    font-family: $font-alt;
+    font-family: var(--font-alt);
     font-weight: 600;
-    color: $dark-text;
+    color: var(--dark-text);
   }
 
   .spaced-card-footer {
@@ -1005,88 +1003,88 @@ onMounted(() => {
 
 .is-dark {
   .kanban-column {
-    background: $dark-sidebar-light-15;
-    border-color: $dark-sidebar-light-15;
+    background: var(--dark-sidebar-light-15);
+    border-color: var(--dark-sidebar-light-15);
 
     .collapsed-content {
       .expand-button {
-        background: $dark-sidebar-light-6 !important;
-        border-color: $dark-sidebar-light-12 !important;
+        background: var(--dark-sidebar-light-6) !important;
+        border-color: var(--dark-sidebar-light-12) !important;
 
         &:hover {
           svg {
-            color: $accent !important;
+            color: var(--primary) !important;
           }
         }
       }
 
       .task-count {
-        background: $accent !important;
-        border-color: $accent !important;
+        background: var(--primary) !important;
+        border-color: var(--primary) !important;
 
         svg {
-          color: $white !important;
+          color: var(--white) !important;
         }
       }
 
       .collapsed-text {
-        color: $dark-dark-text !important;
+        color: var(--dark-dark-text) !important;
       }
     }
 
     .column-title {
       h3 {
-        color: $light-white;
+        color: var(--body-color);
       }
 
       .is-trigger svg {
-        color: $light-white !important;
+        color: var(--body-color) !important;
       }
     }
 
     .dropdown-content {
-      background: $dark-sidebar;
+      background: var(--dark-sidebar);
 
       .dropdown-item {
-        color: $white;
+        color: var(--white);
       }
 
       .dropdown-divider {
-        background: $dark-sidebar-light-5;
+        background: var(--dark-sidebar-light-5);
       }
 
       a:hover,
       div:hover {
-        background: $dark-sidebar-light-5 !important;
+        background: var(--dark-sidebar-light-5) !important;
       }
     }
 
     .empty-text {
-      color: $accent-grey;
+      color: var(--primary-grey);
     }
 
     .kanban-card,
     .gu-transit {
-      background: $dark-sidebar-light-6 !important;
-      border-color: $dark-sidebar-light-6 !important;
+      background: var(--dark-sidebar-light-6) !important;
+      border-color: var(--dark-sidebar-light-6) !important;
 
       &.is-new {
-        background: $dark-sidebar-light-6;
-        border-color: $dark-sidebar-light-6;
+        background: var(--dark-sidebar-light-6);
+        border-color: var(--dark-sidebar-light-6);
 
         .card-title {
-          color: $accent-grey-light-2;
+          color: var(--primary-grey-light-2);
         }
 
         .card-footer,
         .card-footer-item {
-          border-color: $dark-sidebar-light-20;
-          color: $light-white;
+          border-color: var(--dark-sidebar-light-20);
+          color: var(--body-color);
         }
       }
 
       .card-title {
-        color: $accent-grey-light-2;
+        color: var(--primary-grey-light-2);
       }
     }
   }

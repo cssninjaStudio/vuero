@@ -233,7 +233,6 @@
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
 
 .lifestyle-dashboard-v4 {
@@ -242,10 +241,9 @@
     align-items: center;
     padding: 10px;
     border-radius: 16px;
-    background: $primary;
-    font-family: $font;
-    box-shadow: $primary-box-shadow;
-
+    background: var(--primary);
+    font-family: var(--font);
+    box-shadow: var(--primary-box-shadow);
     .header-image {
       position: relative;
       height: 175px;
@@ -265,8 +263,8 @@
       padding-right: 30px;
 
       h3 {
-        color: $smoke-white;
-        font-family: $font-alt;
+        color: var(--smoke-white);
+        font-family: var(--font-alt);
         font-weight: 700;
         font-size: 1.3rem;
         max-width: 280px;
@@ -274,7 +272,7 @@
 
       p {
         font-weight: 400;
-        color: $smoke-white-dark-2;
+        color: var(--smoke-white-dark-2);
         margin-bottom: 16px;
         max-width: 320px;
       }
@@ -310,19 +308,19 @@
         display: block;
 
         &:first-child {
-          font-family: $font-alt;
+          font-family: var(--font-alt);
           font-size: 0.8rem;
           font-weight: 500;
           text-transform: uppercase;
           margin-bottom: 5px;
-          color: $light-text;
+          color: var(--light-text);
         }
 
         &:nth-child(2) {
-          font-family: $font;
+          font-family: var(--font);
           font-weight: 700;
           font-size: 1.8rem;
-          color: $dark-text;
+          color: var(--dark-text);
         }
       }
     }
@@ -340,10 +338,10 @@
       margin-bottom: 30px;
 
       h3 {
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         font-weight: 600;
         font-size: 1.1rem;
-        color: $dark-text;
+        color: var(--dark-text);
       }
 
       .action-link {
@@ -360,9 +358,9 @@
         .media-flex-center {
           .flex-end {
             span {
-              font-family: $font-alt;
+              font-family: var(--font-alt);
               font-weight: 600;
-              color: $dark-text;
+              color: var(--dark-text);
             }
           }
         }
@@ -383,10 +381,10 @@
       margin-bottom: 20px;
 
       h3 {
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         font-weight: 600;
         font-size: 1.1rem;
-        color: $dark-text;
+        color: var(--dark-text);
       }
 
       .action-link {
@@ -401,7 +399,7 @@
         justify-content: space-between;
         margin-bottom: 16px;
         padding-bottom: 16px;
-        border-bottom: 1px solid $fade-grey-dark-3;
+        border-bottom: 1px solid var(--fade-grey-dark-3);
 
         &:last-child {
           margin-bottom: 0;
@@ -416,17 +414,17 @@
           display: block;
           min-width: 60px;
           text-align: right;
-          font-family: $font;
+          font-family: var(--font);
           font-weight: 600;
           font-size: 0.8rem;
-          color: $dark-text;
+          color: var(--dark-text);
         }
       }
     }
   }
 
   .articles-feed {
-    background: $widget-grey;
+    background: var(--widget-grey);
     padding: 30px;
     border-radius: 12px;
 
@@ -437,10 +435,10 @@
       margin-bottom: 20px;
 
       h3 {
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         font-weight: 600;
         font-size: 1.1rem;
-        color: $dark-text;
+        color: var(--dark-text);
       }
 
       .action-link {
@@ -458,10 +456,10 @@
           margin-right: 4px;
 
           &.is-selected {
-            background: $primary;
-            color: $white;
-            border-color: $primary;
-            box-shadow: $primary-box-shadow;
+            background: var(--primary);
+            color: var(--white);
+            border-color: var(--primary);
+            box-shadow: var(--primary-box-shadow);
           }
         }
       }
@@ -494,7 +492,7 @@
             position: relative;
             padding: 25px;
             border-radius: 18px;
-            background: $white;
+            background: var(--white);
             margin-top: -40px;
             z-index: 1;
 
@@ -504,10 +502,10 @@
             }
 
             h4 {
-              font-family: $font-alt;
+              font-family: var(--font-alt);
               font-size: 1rem;
               font-weight: 600;
-              color: $dark-text;
+              color: var(--dark-text);
             }
 
             .media-flex-center {
@@ -527,7 +525,7 @@
 .is-dark {
   .lifestyle-dashboard-v4 {
     .illustration-header-2 {
-      background: $dark-sidebar;
+      background: var(--dark-sidebar);
       box-shadow: none;
     }
 
@@ -543,16 +541,16 @@
     }
 
     .articles-feed {
-      background: $dark-sidebar-light-8;
+      background: var(--dark-sidebar-light-8);
 
       .articles-feed-subheader {
         .selector {
           .button {
             &.is-selected {
-              background: $accent !important;
-              border-color: $accent !important;
-              box-shadow: $accent-box-shadow !important;
-              color: $white !important;
+              background: var(--primary) !important;
+              border-color: var(--primary) !important;
+              box-shadow: var(--primary-box-shadow) !important;
+              color: var(--white) !important;
             }
           }
         }
@@ -562,7 +560,7 @@
         .articles-feed-list-inner {
           .articles-feed-item {
             .featured-content {
-              background: $dark-sidebar;
+              background: var(--dark-sidebar);
             }
           }
         }

@@ -13,8 +13,8 @@
         margin-left: 16px;
 
         h3 {
-          font-family: $font-alt;
-          color: $dark-text;
+          font-family: var(--font-alt);
+          color: var(--dark-text);
           font-weight: 600;
           font-size: 1rem;
           line-height: 1;
@@ -22,7 +22,7 @@
 
         > span:not(.tag) {
           font-size: 0.9rem;
-          color: $light-text;
+          color: var(--light-text);
 
           svg {
             height: 12px;
@@ -56,21 +56,21 @@
             align-items: center;
             flex-direction: column;
             text-align: center;
-            color: $light-text;
+            color: var(--light-text);
 
             > span {
-              font-family: $font;
+              font-family: var(--font);
 
               &:first-child {
                 font-size: 1.2rem;
                 font-weight: 600;
-                color: $dark-text;
+                color: var(--dark-text);
                 line-height: 1.4;
               }
 
               &:nth-child(2) {
                 text-transform: uppercase;
-                font-family: $font-alt;
+                font-family: var(--font-alt);
                 font-size: 0.75rem;
               }
             }
@@ -88,7 +88,7 @@
           .separator {
             height: 25px;
             width: 2px;
-            border-right: 1px solid $fade-grey-dark-3;
+            border-right: 1px solid var(--fade-grey-dark-3);
             margin: 0 16px;
           }
         }
@@ -100,9 +100,9 @@
           min-width: 145px;
 
           > span {
-            font-family: $font;
+            font-family: var(--font);
             font-size: 0.9rem;
-            color: $light-text;
+            color: var(--light-text);
             margin-left: 6px;
           }
         }
@@ -123,7 +123,7 @@
       .list-view-item-inner {
         .meta-left {
           h3 {
-            color: $dark-dark-text !important;
+            color: var(--dark-dark-text) !important;
           }
         }
 
@@ -132,13 +132,13 @@
             .stat {
               span {
                 &:first-child {
-                  color: $dark-dark-text;
+                  color: var(--dark-dark-text);
                 }
               }
             }
 
             .separator {
-              border-color: $dark-sidebar-light-16 !important;
+              border-color: var(--dark-sidebar-light-16) !important;
             }
           }
         }

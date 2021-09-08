@@ -517,8 +517,6 @@ useHead({
 </template>
 
 <style lang="scss">
-@import '../scss/abstracts/_variables.scss';
-
 /* ==========================================================================
 1. Inbox V1 Layout
 ========================================================================== */
@@ -541,8 +539,8 @@ useHead({
       left: 0;
       height: 100%;
       width: 20%;
-      background: $white;
-      border-right: 1px solid $fade-grey-dark-3;
+      background: var(--white);
+      border-right: 1px solid var(--fade-grey-dark-3);
 
       .header-area {
         height: 80px;
@@ -550,16 +548,16 @@ useHead({
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-bottom: 1px solid $fade-grey-dark-3;
+        border-bottom: 1px solid var(--fade-grey-dark-3);
         padding: 0 20px;
 
         .inbox-title {
           display: flex;
           align-items: center;
-          font-family: $font-alt;
+          font-family: var(--font-alt);
           font-size: 1.4rem;
           font-weight: 600;
-          color: $dark-text;
+          color: var(--dark-text);
           width: 100%;
           max-width: 100%;
 
@@ -600,15 +598,15 @@ useHead({
           .compose-button {
             height: 40px;
             line-height: 1.8;
-            background: $primary;
-            border-color: $primary;
-            color: $smoke-white;
+            background: var(--primary);
+            border-color: var(--primary);
+            color: var(--smoke-white);
             font-weight: 500;
-            font-family: $font;
+            font-family: var(--font);
 
             &:hover {
               opacity: 0.8;
-              box-shadow: $primary-box-shadow;
+              box-shadow: var(--primary-box-shadow);
             }
           }
 
@@ -618,23 +616,23 @@ useHead({
             ul {
               li {
                 a {
-                  font-family: $font;
+                  font-family: var(--font);
                   display: flex;
                   align-items: center;
                   padding: 8px 12px;
                   border-radius: 100px;
 
                   &.is-active {
-                    background: $fade-grey-light-3;
+                    background: var(--fade-grey-light-3);
 
                     span,
                     i {
-                      color: $dark-text;
+                      color: var(--dark-text);
                       font-weight: 500;
                     }
 
                     svg {
-                      color: $primary;
+                      color: var(--primary);
                     }
 
                     .tag {
@@ -643,19 +641,19 @@ useHead({
                   }
 
                   i {
-                    color: $muted-grey;
+                    color: var(--muted-grey);
                   }
 
                   svg {
                     height: 16px;
                     width: 16px;
-                    color: $light-text;
+                    color: var(--light-text);
                   }
 
                   span {
                     display: block;
                     padding: 0 20px;
-                    color: $muted-grey;
+                    color: var(--muted-grey);
                   }
 
                   .tag {
@@ -664,10 +662,10 @@ useHead({
                     margin-bottom: 0;
                     font-size: 0.85rem;
                     height: 22px;
-                    background: $secondary;
+                    background: var(--secondary);
                     padding: 0 12px;
                     line-height: 1.8;
-                    color: $smoke-white !important;
+                    color: var(--smoke-white) !important;
                     border-radius: 100px;
                   }
                 }
@@ -682,7 +680,7 @@ useHead({
           left: 0;
           height: calc(100% - 304px);
           width: 100%;
-          border-top: 1px solid $fade-grey;
+          border-top: 1px solid var(--fade-grey);
           overflow-y: auto;
 
           .title-wrap {
@@ -693,9 +691,9 @@ useHead({
             padding: 0 20px;
 
             h3 {
-              font-family: $font-alt;
+              font-family: var(--font-alt);
               font-weight: 600;
-              color: $dark-text;
+              color: var(--dark-text);
             }
 
             .control {
@@ -718,7 +716,7 @@ useHead({
                 align-items: center;
 
                 i {
-                  color: $placeholder;
+                  color: var(--placeholder);
                   transition: color 0.3s;
                 }
               }
@@ -734,12 +732,12 @@ useHead({
 
               &:hover {
                 i {
-                  color: $dark-text;
+                  color: var(--dark-text);
                 }
               }
 
               i {
-                color: $placeholder;
+                color: var(--placeholder);
                 transition: color 0.3s;
 
                 &.material-icons {
@@ -767,7 +765,7 @@ useHead({
               cursor: pointer;
 
               &:hover {
-                background: $fade-grey-light-3;
+                background: var(--fade-grey-light-3);
               }
 
               img {
@@ -775,7 +773,7 @@ useHead({
                 height: 32px;
                 width: 32px;
                 min-width: 32px;
-                border-radius: $radius-rounded;
+                border-radius: var(--radius-rounded);
               }
 
               .contact-meta {
@@ -786,14 +784,14 @@ useHead({
                   font-size: 0.9rem;
 
                   &:first-child {
-                    font-family: $font-alt;
+                    font-family: var(--font-alt);
                     font-weight: 600;
-                    color: $dark-text;
+                    color: var(--dark-text);
                   }
 
                   &:nth-child(2) {
-                    font-family: $font;
-                    color: $muted-grey;
+                    font-family: var(--font);
+                    color: var(--muted-grey);
                   }
                 }
               }
@@ -809,8 +807,8 @@ useHead({
       left: 20%;
       height: 100%;
       width: 32%;
-      background: $white;
-      border-right: 1px solid $fade-grey-dark-3;
+      background: var(--white);
+      border-right: 1px solid var(--fade-grey-dark-3);
 
       .header-area {
         height: 80px;
@@ -818,7 +816,7 @@ useHead({
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-bottom: 1px solid $fade-grey-dark-3;
+        border-bottom: 1px solid var(--fade-grey-dark-3);
         padding: 0 20px;
 
         .actions {
@@ -835,7 +833,7 @@ useHead({
               padding-left: 42px;
 
               &:focus + .form-icon i {
-                color: $dark-text;
+                color: var(--dark-text);
               }
             }
 
@@ -850,7 +848,7 @@ useHead({
               align-items: center;
 
               i {
-                color: $placeholder;
+                color: var(--placeholder);
                 transition: color 0.3s;
               }
             }
@@ -871,12 +869,12 @@ useHead({
         .inbox-message {
           display: flex;
           align-items: stretch;
-          border-bottom: 1px solid $fade-grey-dark-3;
+          border-bottom: 1px solid var(--fade-grey-dark-3);
           padding: 20px;
           cursor: pointer;
 
           &.is-selected {
-            background: $fade-grey-light-4;
+            background: var(--fade-grey-light-4);
           }
 
           &.is-unread {
@@ -896,19 +894,19 @@ useHead({
               display: block;
 
               &.name {
-                font-family: $font-alt;
+                font-family: var(--font-alt);
                 font-weight: 500;
-                color: $dark-text;
+                color: var(--dark-text);
               }
 
               &.email {
-                font-family: $font;
+                font-family: var(--font);
                 font-size: 0.9rem;
-                color: $light-text;
+                color: var(--light-text);
               }
 
               &.subject {
-                font-family: $font;
+                font-family: var(--font);
                 font-size: 0.95rem;
                 white-space: nowrap;
                 overflow: hidden;
@@ -920,7 +918,7 @@ useHead({
 
           .pushed {
             margin-left: auto;
-            color: $muted-grey;
+            color: var(--muted-grey);
             font-size: 0.9rem;
           }
         }
@@ -935,7 +933,7 @@ useHead({
       width: 48%;
       z-index: -1;
       opacity: 0;
-      background: $white;
+      background: var(--white);
       transition: opacity 0.4s;
       display: flex;
       justify-content: center;
@@ -966,16 +964,16 @@ useHead({
         width: 100%;
         display: flex;
         align-items: center;
-        border-bottom: 1px solid $fade-grey-dark-3;
+        border-bottom: 1px solid var(--fade-grey-dark-3);
         padding: 0 20px;
-        background: $white;
+        background: var(--white);
 
         .sender-pic {
           display: block;
           height: 44px;
           width: 44px;
           min-width: 44px;
-          border-radius: $radius-rounded;
+          border-radius: var(--radius-rounded);
         }
 
         .message-meta {
@@ -987,15 +985,15 @@ useHead({
           }
 
           .message-title {
-            font-family: $font-alt;
+            font-family: var(--font-alt);
             font-weight: 600;
             font-size: 1.2rem;
-            color: $dark-text;
+            color: var(--dark-text);
           }
 
           .sender-email {
-            font-family: $font;
-            color: $light-text;
+            font-family: var(--font);
+            color: var(--light-text);
             font-size: 0.95rem;
           }
         }
@@ -1009,17 +1007,17 @@ useHead({
           font-size: 1.2rem;
 
           i {
-            color: $light-text;
+            color: var(--light-text);
           }
 
           svg {
-            color: $light-text;
+            color: var(--light-text);
             height: 16px;
             width: 16px;
           }
 
           span {
-            font-family: $font;
+            font-family: var(--font);
             font-weight: 600;
             display: block;
             margin-left: 4px;
@@ -1040,30 +1038,30 @@ useHead({
 
         .message-inner {
           padding: 20px;
-          background: $white;
-          border-bottom: 1px solid $fade-grey;
+          background: var(--white);
+          border-bottom: 1px solid var(--fade-grey);
 
           .message-head {
             display: flex;
             align-items: center;
             padding-bottom: 16px;
-            border-bottom: 1px solid $fade-grey;
+            border-bottom: 1px solid var(--fade-grey);
 
             .info {
               span {
                 display: block;
 
                 &:first-child {
-                  font-family: $font-alt;
+                  font-family: var(--font-alt);
                   font-size: 0.95rem;
                   font-weight: 600;
-                  color: $dark-text;
+                  color: var(--dark-text);
                 }
 
                 &:nth-child(2) {
-                  font-family: $font;
+                  font-family: var(--font);
                   font-size: 0.9rem;
-                  color: $light-text;
+                  color: var(--light-text);
                 }
               }
             }
@@ -1092,28 +1090,28 @@ useHead({
             align-items: center;
             padding: 6px 6px 6px 16px;
             margin: 0 6px 6px 6px;
-            border: 1px solid $fade-grey;
-            background: $white;
+            border: 1px solid var(--fade-grey);
+            background: var(--white);
             border-radius: 100px;
             cursor: pointer;
             transition: all 0.3s;
 
             &:hover {
-              border-color: $secondary;
-              box-shadow: $light-box-shadow;
+              border-color: var(--secondary);
+              box-shadow: var(--light-box-shadow);
 
               .download-icon {
                 transform: rotate(360deg);
-                background: $secondary;
-                border-color: $secondary;
-                box-shadow: $secondary-box-shadow;
+                background: var(--secondary);
+                border-color: var(--secondary);
+                box-shadow: var(--secondary-box-shadow);
 
                 i {
-                  color: $white;
+                  color: var(--white);
                 }
 
                 svg {
-                  color: $white;
+                  color: var(--white);
                 }
               }
             }
@@ -1123,15 +1121,15 @@ useHead({
               margin-right: 8px;
               font-size: 0.95rem;
               font-weight: 500;
-              color: $dark-text;
+              color: var(--dark-text);
               transition: all 0.3s;
             }
 
             .download-icon {
               height: 24px;
               width: 24px;
-              border: 1px solid $fade-grey;
-              border-radius: $radius-rounded;
+              border: 1px solid var(--fade-grey);
+              border-radius: var(--radius-rounded);
               display: flex;
               justify-content: center;
               align-items: center;
@@ -1157,9 +1155,9 @@ useHead({
           .reply-bubble {
             position: relative;
             padding: 20px;
-            border: 1px solid $fade-grey-dark-5;
-            border-radius: $radius-large;
-            background: $white;
+            border: 1px solid var(--fade-grey-dark-5);
+            border-radius: var(--radius-large);
+            background: var(--white);
             width: 100%;
 
             &::after,
@@ -1176,7 +1174,7 @@ useHead({
 
             &::after {
               border-color: rgba(255, 255, 255, 0);
-              border-bottom-color: $white;
+              border-bottom-color: var(--white);
               border-width: 16px;
               margin-left: -16px;
             }
@@ -1196,7 +1194,7 @@ useHead({
                 display: block;
                 height: 32px;
                 width: 32px;
-                border-radius: $radius-rounded;
+                border-radius: var(--radius-rounded);
               }
 
               .reply-details {
@@ -1206,14 +1204,14 @@ useHead({
                   display: block;
 
                   &:first-child {
-                    color: $dark-text;
-                    font-family: $font-alt;
+                    color: var(--dark-text);
+                    font-family: var(--font-alt);
                     font-weight: 600;
                   }
 
                   &:nth-child(2) {
-                    font-family: $font;
-                    color: $light-text;
+                    font-family: var(--font);
+                    color: var(--light-text);
                   }
                 }
               }
@@ -1238,13 +1236,13 @@ useHead({
                 height: 38px;
                 bottom: 8px;
                 right: 8px;
-                background: $secondary;
-                border-color: $secondary;
-                color: $smoke-white;
+                background: var(--secondary);
+                border-color: var(--secondary);
+                color: var(--smoke-white);
                 font-weight: 500;
 
                 &:hover {
-                  box-shadow: $secondary-box-shadow;
+                  box-shadow: var(--secondary-box-shadow);
                 }
               }
             }
@@ -1266,29 +1264,29 @@ useHead({
   justify-content: center;
   align-items: center;
   box-shadow: none;
-  border-radius: $radius-rounded;
+  border-radius: var(--radius-rounded);
   border: 1px solid transparent;
   transition: all 0.3s;
 
   &:hover {
-    border-color: $fade-grey-dark-4;
-    box-shadow: $light-box-shadow;
+    border-color: var(--fade-grey-dark-4);
+    box-shadow: var(--light-box-shadow);
 
     svg {
-      color: $primary;
+      color: var(--primary);
     }
   }
 
   &.is-checked {
-    border-color: $fade-grey-dark-3;
-    box-shadow: $light-box-shadow;
+    border-color: var(--fade-grey-dark-3);
+    box-shadow: var(--light-box-shadow);
   }
 
   svg {
     height: 16px;
     width: 16px;
     stroke-width: 1.6px;
-    color: $light-text;
+    color: var(--light-text);
   }
 
   i {
@@ -1310,13 +1308,13 @@ useHead({
     justify-content: center;
     align-items: center;
     box-shadow: none !important;
-    border-radius: $radius-rounded;
+    border-radius: var(--radius-rounded);
     background: transparent;
     border: 1px solid transparent;
 
     &:hover {
-      border-color: $fade-grey-dark-4;
-      box-shadow: $light-box-shadow !important;
+      border-color: var(--fade-grey-dark-4);
+      box-shadow: var(--light-box-shadow) !important;
     }
 
     i {
@@ -1326,7 +1324,7 @@ useHead({
     svg {
       height: 16px;
       width: 16px;
-      color: $light-text;
+      color: var(--light-text);
     }
   }
 
@@ -1337,19 +1335,19 @@ useHead({
       display: flex;
       align-items: center;
       font-size: 1rem;
-      font-family: $font;
+      font-family: var(--font);
       margin-bottom: 4px;
       padding-top: 8px;
       padding-bottom: 8px;
 
       i {
-        color: $light-text;
+        color: var(--light-text);
       }
 
       svg {
         height: 16px;
         width: 16px;
-        color: $light-text;
+        color: var(--light-text);
       }
 
       span {
@@ -1369,8 +1367,8 @@ useHead({
   right: 0;
   height: calc(100% - 65px);
   width: calc(48% - 40px);
-  background: $white;
-  border-left: 1px solid $fade-grey;
+  background: var(--white);
+  border-left: 1px solid var(--fade-grey);
   z-index: 10;
   transform: translateX(100%);
   transition: all 0.3s;
@@ -1384,13 +1382,13 @@ useHead({
     width: 100%;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid $fade-grey-dark-3;
+    border-bottom: 1px solid var(--fade-grey-dark-3);
     padding: 0 20px;
 
     .panel-title {
-      font-family: $font;
+      font-family: var(--font);
       font-size: 1.4rem;
-      color: $dark-text;
+      color: var(--dark-text);
     }
 
     .dropdown {
@@ -1423,7 +1421,7 @@ useHead({
           font-weight: 600;
           font-size: 1.1rem;
           text-align: right;
-          color: $dark-text;
+          color: var(--dark-text);
           margin-right: 20px;
           min-width: 60px;
         }
@@ -1448,13 +1446,13 @@ useHead({
             height: 38px;
             bottom: 8px;
             right: 8px;
-            background: $secondary;
-            border-color: $secondary;
-            color: $smoke-white;
+            background: var(--secondary);
+            border-color: var(--secondary);
+            color: var(--smoke-white);
             font-weight: 500;
 
             &:hover {
-              box-shadow: $secondary-box-shadow;
+              box-shadow: var(--secondary-box-shadow);
             }
           }
 
@@ -1467,19 +1465,19 @@ useHead({
             display: flex;
             justify-content: center;
             align-items: center;
-            background: $white;
-            border: 1px solid $fade-grey-dark-3;
-            border-radius: $radius-rounded;
+            background: var(--white);
+            border: 1px solid var(--fade-grey-dark-3);
+            border-radius: var(--radius-rounded);
             transition: all 0.3s;
 
             &:hover {
-              box-shadow: $light-box-shadow;
-              border-color: $dark-text;
+              box-shadow: var(--light-box-shadow);
+              border-color: var(--dark-text);
             }
 
             i {
               font-size: 16px;
-              color: $dark-text;
+              color: var(--dark-text);
             }
           }
         }
@@ -1499,46 +1497,46 @@ Dark mode
         border-right: none;
 
         .header-area {
-          background: $dark-sidebar;
-          border-color: $dark-sidebar-light-12;
+          background: var(--dark-sidebar);
+          border-color: var(--dark-sidebar-light-12);
 
           .inbox-title {
-            color: $dark-dark-text;
+            color: var(--dark-dark-text);
           }
         }
 
         .sidebar-inner {
-          background: $dark-sidebar-light-4;
-          border-color: $dark-sidebar-light-12;
+          background: var(--dark-sidebar-light-4);
+          border-color: var(--dark-sidebar-light-12);
 
           .inner-menu {
-            border-color: $dark-sidebar-light-12;
+            border-color: var(--dark-sidebar-light-12);
 
             .compose-button {
-              background: $accent !important;
-              border-color: $accent !important;
-              color: $smoke-white !important;
+              background: var(--primary) !important;
+              border-color: var(--primary) !important;
+              color: var(--smoke-white) !important;
 
               &:hover {
-                box-shadow: $accent-box-shadow;
+                box-shadow: var(--primary-box-shadow);
               }
             }
 
             .inbox-menu {
               ul li a {
                 &.is-active {
-                  background: $dark-sidebar-light-8;
+                  background: var(--dark-sidebar-light-8);
 
                   span {
-                    color: $smoke-white;
+                    color: var(--smoke-white);
                   }
 
                   svg {
-                    color: $accent;
+                    color: var(--primary);
                   }
 
                   .tag {
-                    background: $secondary !important;
+                    background: var(--secondary) !important;
                   }
                 }
               }
@@ -1546,11 +1544,11 @@ Dark mode
           }
 
           .scroll-menu {
-            border-color: $dark-sidebar-light-12;
+            border-color: var(--dark-sidebar-light-12);
 
             .title-wrap {
               h3 {
-                color: $dark-dark-text;
+                color: var(--dark-dark-text);
               }
 
               .searcv-button,
@@ -1562,13 +1560,13 @@ Dark mode
             .contact-list {
               .contact-block {
                 &:hover {
-                  background: $dark-sidebar-light-8;
+                  background: var(--dark-sidebar-light-8);
                 }
 
                 .contact-meta {
                   span {
                     &:first-child {
-                      color: $dark-dark-text;
+                      color: var(--dark-dark-text);
                     }
                   }
                 }
@@ -1579,29 +1577,29 @@ Dark mode
       }
 
       .inbox-messages {
-        border-color: $dark-sidebar-light-12;
-        border-left: 1px solid $dark-sidebar-light-12 !important;
+        border-color: var(--dark-sidebar-light-12);
+        border-left: 1px solid var(--dark-sidebar-light-12) !important;
 
         .header-area {
-          background: $dark-sidebar;
-          border-color: $dark-sidebar-light-12;
+          background: var(--dark-sidebar);
+          border-color: var(--dark-sidebar-light-12);
         }
 
         .messages-list {
-          background: $dark-sidebar-light-4;
+          background: var(--dark-sidebar-light-4);
 
           .inbox-message {
-            border-color: $dark-sidebar-light-12;
+            border-color: var(--dark-sidebar-light-12);
 
             &.is-selected {
-              background: $dark-sidebar-light-8;
+              background: var(--dark-sidebar-light-8);
             }
 
             .message-meta {
               span {
                 &:first-child,
                 &.subject {
-                  color: $dark-dark-text;
+                  color: var(--dark-dark-text);
                 }
               }
             }
@@ -1610,41 +1608,41 @@ Dark mode
       }
 
       .inbox-message-details {
-        border-color: $dark-sidebar-light-12;
+        border-color: var(--dark-sidebar-light-12);
 
         .header-area {
-          background: $dark-sidebar;
-          border-color: $dark-sidebar-light-12;
+          background: var(--dark-sidebar);
+          border-color: var(--dark-sidebar-light-12);
 
           .message-meta {
             span {
               &:first-child {
-                color: $dark-dark-text;
+                color: var(--dark-dark-text);
               }
             }
           }
 
           .attachments {
             span {
-              color: $dark-dark-text;
+              color: var(--dark-dark-text);
             }
           }
         }
 
         .message-wrapper {
-          background: $dark-sidebar-light-14;
+          background: var(--dark-sidebar-light-14);
 
           .message-inner {
-            background: $dark-sidebar-light-4;
-            border-color: $dark-sidebar-light-12;
+            background: var(--dark-sidebar-light-4);
+            border-color: var(--dark-sidebar-light-12);
 
             .message-head {
-              border-color: $dark-sidebar-light-12;
+              border-color: var(--dark-sidebar-light-12);
 
               .info {
                 span {
                   &:first-child {
-                    color: $dark-dark-text;
+                    color: var(--dark-dark-text);
                   }
                 }
               }
@@ -1652,18 +1650,18 @@ Dark mode
 
             .attachments-list {
               .attachment {
-                background: $dark-sidebar-light-2;
-                border-color: $dark-sidebar-light-12;
+                background: var(--dark-sidebar-light-2);
+                border-color: var(--dark-sidebar-light-12);
 
                 span {
-                  color: $dark-dark-text;
+                  color: var(--dark-dark-text);
                 }
 
                 .download-icon {
-                  border-color: $dark-sidebar-light-8;
+                  border-color: var(--dark-sidebar-light-8);
 
                   svg {
-                    color: $smoke-white;
+                    color: var(--smoke-white);
                   }
                 }
               }
@@ -1672,19 +1670,19 @@ Dark mode
 
           .reply-box-wrap {
             .reply-bubble {
-              background-color: $dark-sidebar-light-2;
-              border-color: $dark-sidebar-light-4;
+              background-color: var(--dark-sidebar-light-2);
+              border-color: var(--dark-sidebar-light-4);
 
               &::before,
               &::after {
-                border-bottom-color: $dark-sidebar-light-2 !important;
+                border-bottom-color: var(--dark-sidebar-light-2) !important;
               }
 
               .reply-as {
                 .reply-details {
                   span {
                     &:first-child {
-                      color: $dark-dark-text;
+                      color: var(--dark-dark-text);
                     }
                   }
                 }
@@ -1692,9 +1690,9 @@ Dark mode
 
               .control {
                 .button {
-                  background: $secondary;
-                  border-color: $secondary;
-                  color: $smoke-white;
+                  background: var(--secondary);
+                  border-color: var(--secondary);
+                  color: var(--smoke-white);
                 }
               }
             }
@@ -1705,19 +1703,19 @@ Dark mode
   }
   .inbox-action {
     &:hover {
-      background: $dark-sidebar-light-2;
-      border-color: $dark-sidebar-light-12;
+      background: var(--dark-sidebar-light-2);
+      border-color: var(--dark-sidebar-light-12);
 
       svg {
-        color: $accent;
+        color: var(--primary);
       }
     }
   }
   .inbox-dropdown {
     &:hover {
       div > .button {
-        background: $dark-sidebar-light-2 !important;
-        border-color: $dark-sidebar-light-12 !important;
+        background: var(--dark-sidebar-light-2) !important;
+        border-color: var(--dark-sidebar-light-12) !important;
       }
     }
 

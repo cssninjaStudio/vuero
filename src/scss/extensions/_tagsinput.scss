@@ -11,7 +11,7 @@
   }
   .tag {
     &.is-active {
-      background-color: $primary;
+      background-color: var(--primary);
       color: findColorInvert($primary);
     }
   }

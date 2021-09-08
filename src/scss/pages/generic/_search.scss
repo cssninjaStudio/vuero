@@ -32,8 +32,8 @@ Search UI Elements
 
     .search-info {
       span {
-        font-family: $font;
-        color: $light-text;
+        font-family: var(--font);
+        color: var(--light-text);
       }
     }
 
@@ -54,9 +54,9 @@ Search UI Elements
       margin-bottom: 16px;
 
       h4 {
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         font-weight: 600;
-        color: $dark-text;
+        color: var(--dark-text);
         margin-bottom: 10px;
       }
 
@@ -85,7 +85,7 @@ Search UI Elements
       .group-header {
         display: flex;
         align-items: center;
-        border-bottom: 1px solid $fade-grey-dark-6;
+        border-bottom: 1px solid var(--fade-grey-dark-6);
         padding: 0 0 12px 0;
         margin-bottom: 12px;
 
@@ -93,14 +93,14 @@ Search UI Elements
           height: 32px;
           width: 32px;
           min-width: 32px;
-          border-radius: $radius-rounded;
+          border-radius: var(--radius-rounded);
           display: flex;
           justify-content: center;
           align-items: center;
           margin-right: 6px;
-          background: $white;
-          border: 1px solid $primary;
-          color: $primary;
+          background: var(--white);
+          border: 1px solid var(--primary);
+          color: var(--primary);
 
           svg {
             height: 14px;
@@ -109,11 +109,11 @@ Search UI Elements
         }
 
         h4 {
-          font-family: $font-alt;
+          font-family: var(--font-alt);
           font-size: 0.8rem;
           font-weight: 500;
           text-transform: uppercase;
-          color: $light-text;
+          color: var(--light-text);
         }
       }
 
@@ -155,12 +155,12 @@ Search UI Elements
           }
         }
         .group-header {
-          border-color: $dark-sidebar-light-20;
+          border-color: var(--dark-sidebar-light-20);
 
           .icon-wrap {
-            background: $dark-sidebar-light-2;
-            border-color: $accent;
-            color: $accent;
+            background: var(--dark-sidebar-light-2);
+            border-color: var(--primary);
+            color: var(--primary);
           }
         }
       }

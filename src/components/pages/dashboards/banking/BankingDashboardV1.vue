@@ -425,7 +425,6 @@ import {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
 
 .banking-dashboard-v1 {
@@ -457,7 +456,7 @@ import {
           padding: 20px;
 
           &:not(:first-child) {
-            border-top: 1.6px dashed $fade-grey-dark-4;
+            border-top: 1.6px dashed var(--fade-grey-dark-4);
           }
 
           .credit-card {
@@ -468,19 +467,19 @@ import {
             height: 80px;
             width: 120px;
             min-width: 120px;
-            background: $fade-grey;
+            background: var(--fade-grey);
             border-radius: 10px;
             padding: 6px 10px 8px 10px;
             overflow: hidden;
 
             &.is-theme-1 {
-              background: $primary;
-              box-shadow: $primary-box-shadow;
+              background: var(--primary);
+              box-shadow: var(--primary-box-shadow);
             }
 
             &.is-theme-2 {
-              background: $info;
-              box-shadow: $info-box-shadow;
+              background: var(--info);
+              box-shadow: var(--info-box-shadow);
             }
 
             .top {
@@ -490,10 +489,10 @@ import {
                 align-items: center;
 
                 span {
-                  font-family: $font;
+                  font-family: var(--font);
                   font-size: 0.8rem;
                   font-weight: 500;
-                  color: $smoke-white;
+                  color: var(--smoke-white);
                   display: block;
                 }
 
@@ -506,10 +505,10 @@ import {
             }
 
             .bottom {
-              font-family: $font;
+              font-family: var(--font);
               font-size: 0.7rem;
               font-weight: 500;
-              color: $smoke-white;
+              color: var(--smoke-white);
             }
 
             .shape {
@@ -518,8 +517,8 @@ import {
               right: -10px;
               height: 46px;
               width: 46px;
-              background: $white;
-              border-radius: $radius-rounded;
+              background: var(--white);
+              border-radius: var(--radius-rounded);
               opacity: 0.15;
             }
           }
@@ -529,15 +528,15 @@ import {
 
             span {
               display: block;
-              font-family: $font;
+              font-family: var(--font);
 
               &:first-child {
                 font-size: 0.9rem;
-                color: $light-text;
+                color: var(--light-text);
               }
 
               &:nth-child(2) {
-                color: $dark-text;
+                color: var(--dark-text);
                 font-size: 1.6rem;
                 font-weight: 600;
                 line-height: 1.2;
@@ -562,7 +561,7 @@ import {
 
             h3 {
               font-size: 1rem;
-              color: $dark-text;
+              color: var(--dark-text);
               font-weight: 500;
             }
 
@@ -578,15 +577,15 @@ import {
             padding: 6px 0;
 
             h4 {
-              font-family: $font;
+              font-family: var(--font);
               font-weight: 500;
-              color: $dark-text;
+              color: var(--dark-text);
               font-size: 0.9rem;
               line-height: 2;
             }
 
             span {
-              color: $light-text;
+              color: var(--light-text);
               font-size: 0.9rem;
 
               &.has-image {
@@ -632,19 +631,19 @@ import {
           display: flex;
           align-items: center;
           justify-content: space-between;
-          font-family: $font;
+          font-family: var(--font);
           padding: 0 4px;
 
           span {
             font-size: 0.9rem;
-            color: $light-text;
+            color: var(--light-text);
           }
 
           a {
-            color: $light-text;
+            color: var(--light-text);
 
             &:hover {
-              color: $primary;
+              color: var(--primary);
             }
 
             svg {
@@ -674,10 +673,10 @@ import {
           }
 
           .flex-end {
-            font-family: $font;
+            font-family: var(--font);
             font-size: 1rem;
             font-weight: 500;
-            color: $dark-text;
+            color: var(--dark-text);
           }
         }
       }
@@ -696,7 +695,7 @@ import {
         .multiselect {
           .multiselect-input {
             .multiselect-single-label {
-              color: $light-text;
+              color: var(--light-text);
             }
           }
 
@@ -713,19 +712,19 @@ import {
       align-items: center;
       justify-content: space-between;
       margin-bottom: 12px;
-      font-family: $font;
+      font-family: var(--font);
 
       h3 {
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         font-size: 1rem;
         font-weight: 600;
-        color: $dark-text;
+        color: var(--dark-text);
       }
 
       .title-meta {
         font-size: 1rem;
         font-weight: 500;
-        color: $dark-text;
+        color: var(--dark-text);
       }
 
       .action-link {

@@ -13,17 +13,17 @@
 ========================================================================== */
 
 .single-accordion {
-  background: $white;
+  background: var(--white);
   margin: 0 auto;
-  box-shadow: $light-box-shadow;
-  border-radius: $radius-large;
+  box-shadow: var(--light-box-shadow);
+  border-radius: var(--radius-large);
   overflow: hidden;
 
   .accordion-item {
     &.is-active {
       .accordion-header {
         &::before {
-          background-color: $primary;
+          background-color: var(--primary);
         }
       }
       .accordion-content {
@@ -34,11 +34,11 @@
 
   .accordion-header {
     border-bottom: 1px solid #dde0e7;
-    color: $dark-text;
+    color: var(--dark-text);
     cursor: pointer;
     font-weight: 600;
     font-size: 0.95rem;
-    font-family: $font-alt;
+    font-family: var(--font-alt);
     padding: 1.5rem;
     display: block;
 
@@ -52,7 +52,7 @@
       display: inline-block;
       width: 0.75rem;
       height: 0.75rem;
-      border-radius: $radius-rounded;
+      border-radius: var(--radius-rounded);
       background-color: #b1b5be;
       margin-right: 0.75rem;
     }
@@ -63,8 +63,8 @@
     border-bottom: 1px solid #dde0e7;
     background: #f6f7f9;
     padding: 1.5rem;
-    color: $light-text;
-    font-family: $font;
+    color: var(--light-text);
+    font-family: var(--font);
   }
 }
 
@@ -74,31 +74,31 @@
 
 .is-dark {
   .single-accordion {
-    background: $dark-sidebar-light-4;
-    border-color: $dark-sidebar-light-12;
+    background: var(--dark-sidebar-light-4);
+    border-color: var(--dark-sidebar-light-12);
 
     .accordion-header {
-      color: $dark-dark-text;
-      border-color: $dark-sidebar-light-12;
+      color: var(--dark-dark-text);
+      border-color: var(--dark-sidebar-light-12);
 
       &:hover {
-        background: $dark-sidebar-light-6;
+        background: var(--dark-sidebar-light-6);
       }
 
       &::before {
-        background: $dark-sidebar;
+        background: var(--dark-sidebar);
       }
 
       &.is-active {
         &::before {
-          background-color: $accent;
+          background-color: var(--primary);
         }
       }
     }
 
     .accordion-content {
-      background: $dark-sidebar;
-      border-color: $dark-sidebar-light-8;
+      background: var(--dark-sidebar);
+      border-color: var(--dark-sidebar-light-8);
     }
   }
 }
@@ -141,8 +141,8 @@
 
   &[open] {
     .collapse-icon {
-      border-color: $fade-grey-dark-3 !important;
-      box-shadow: $light-box-shadow;
+      border-color: var(--fade-grey-dark-3) !important;
+      box-shadow: var(--light-box-shadow);
     }
   }
 
@@ -155,10 +155,10 @@
     cursor: pointer;
 
     h3 {
-      font-family: $font-alt;
+      font-family: var(--font-alt);
       font-size: 0.9rem;
       font-weight: 600;
-      color: $dark-text;
+      color: var(--dark-text);
     }
 
     .collapse-icon {
@@ -167,8 +167,8 @@
       align-items: center;
       height: 30px;
       width: 30px;
-      background: $white;
-      border-radius: $radius-rounded;
+      background: var(--white);
+      border-radius: var(--radius-rounded);
       border: 1px solid transparent;
       transition: all 0.3s;
 
@@ -181,7 +181,7 @@
       svg {
         height: 16px;
         width: 16px;
-        color: $light-text;
+        color: var(--light-text);
       }
     }
   }
@@ -189,8 +189,8 @@
   .collapse-content {
     display: none;
     padding: 0 20px 20px 20px;
-    color: $light-text;
-    font-family: $font;
+    color: var(--light-text);
+    font-family: var(--font);
 
     p:not(:last-child) {
       margin-bottom: 12px;
@@ -209,20 +209,20 @@
     &[open] {
       .collapse-header {
         .collapse-icon {
-          background: $dark-sidebar-light-2;
-          border-color: $dark-sidebar-light-4 !important;
+          background: var(--dark-sidebar-light-2);
+          border-color: var(--dark-sidebar-light-4) !important;
         }
       }
     }
 
     .collapse-header {
       h3 {
-        color: $dark-dark-text;
+        color: var(--dark-dark-text);
       }
 
       .collapse-icon {
-        background: $dark-sidebar-light-6;
-        border-color: $dark-sidebar-light-6;
+        background: var(--dark-sidebar-light-6);
+        border-color: var(--dark-sidebar-light-6);
       }
     }
   }
@@ -273,7 +273,7 @@ $text-offset: $a-height - 90;
           vertical-align: bottom;
           padding: 15px 20px;
           box-sizing: border-box;
-          color: $white;
+          color: var(--white);
           text-decoration: none;
           font-family: Open Sans, sans-serif;
           transition: all 200ms ease;
@@ -294,7 +294,7 @@ $text-offset: $a-height - 90;
           }
 
           h2 {
-            font-family: $font-alt;
+            font-family: var(--font-alt);
             font-weight: 300;
             text-overflow: clip;
             font-size: 1.4rem;
@@ -306,7 +306,7 @@ $text-offset: $a-height - 90;
           p {
             top: $text-offset;
             font-size: 13.5px;
-            color: $white;
+            color: var(--white);
           }
         }
       }

@@ -153,8 +153,6 @@ const isIconify = computed(() => {
 </template>
 
 <style lang="scss">
-@import '../../../scss/abstracts/_variables.scss';
-
 .icon-wrap {
   display: flex;
   justify-content: center;
@@ -162,11 +160,11 @@ const isIconify = computed(() => {
   height: 32px;
   width: 32px;
   min-width: 32px;
-  border-radius: $radius-rounded;
-  background: $white;
-  border: 1px solid $fade-grey-dark-3;
-  box-shadow: $light-box-shadow;
-  color: $primary;
+  border-radius: var(--radius-rounded);
+  background: var(--white);
+  border: 1px solid var(--fade-grey-dark-3);
+  box-shadow: var(--light-box-shadow);
+  color: var(--primary);
   font-size: 1rem;
 
   &.has-large-icon {
@@ -207,13 +205,13 @@ const isIconify = computed(() => {
   }
 
   img {
-    border-radius: $radius-rounded;
+    border-radius: var(--radius-rounded);
   }
 
   &.is-placeholder {
-    background-color: $fade-grey-light-2 !important;
-    border-color: $fade-grey-dark-3 !important;
-    color: $light-text;
+    background-color: var(--fade-grey-light-2) !important;
+    border-color: var(--fade-grey-dark-3) !important;
+    color: var(--light-text);
 
     i {
       font-size: 1.4rem;
@@ -223,7 +221,7 @@ const isIconify = computed(() => {
 
 .is-dark {
   .icon-wrap {
-    /* background: $dark-sidebar; */
+    /* background: var(--dark-sidebar); */
     border-color: transparent;
   }
 }

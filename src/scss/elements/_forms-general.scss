@@ -28,7 +28,7 @@
   margin-bottom: 4px;
   font-size: 0.9rem;
   font-weight: 500;
-  color: $dark-text;
+  color: var(--dark-text);
 
   &.is-smaller {
     font-size: 0.8rem;
@@ -42,7 +42,7 @@
 
 .sub-label {
   font-size: 0.8rem;
-  color: $muted-grey;
+  color: var(--muted-grey);
 }
 
 label[for] {
@@ -67,27 +67,27 @@ label[for] {
   transition: all 0.3s;
 
   &:focus {
-    border-color: $fade-grey-dark-4;
-    box-shadow: $light-box-shadow;
+    border-color: var(--fade-grey-dark-4);
+    box-shadow: var(--light-box-shadow);
 
     &.is-primary-focus {
-      border-color: $primary !important;
+      border-color: var(--primary) !important;
     }
 
     &.is-success-focus {
-      border-color: $success !important;
+      border-color: var(--success) !important;
     }
 
     &.is-info-focus {
-      border-color: $info !important;
+      border-color: var(--info) !important;
     }
 
     &.is-warning-focus {
-      border-color: $warning !important;
+      border-color: var(--warning) !important;
     }
 
     &.is-danger-focus {
-      border-color: $danger !important;
+      border-color: var(--danger) !important;
     }
   }
 }
@@ -96,27 +96,27 @@ label[for] {
   transition: all 0.3s;
 
   &:focus {
-    border-color: $fade-grey-dark-4;
-    box-shadow: $light-box-shadow;
+    border-color: var(--fade-grey-dark-4);
+    box-shadow: var(--light-box-shadow);
 
     &.is-primary-focus {
-      border-color: $primary !important;
+      border-color: var(--primary) !important;
     }
 
     &.is-success-focus {
-      border-color: $success !important;
+      border-color: var(--success) !important;
     }
 
     &.is-info-focus {
-      border-color: $info !important;
+      border-color: var(--info) !important;
     }
 
     &.is-warning-focus {
-      border-color: $warning !important;
+      border-color: var(--warning) !important;
     }
 
     &.is-danger-focus {
-      border-color: $danger !important;
+      border-color: var(--danger) !important;
     }
   }
 }
@@ -128,41 +128,41 @@ label[for] {
 .is-dark {
   .input,
   .textarea {
-    background-color: $dark-sidebar-light-2;
-    border-color: $dark-sidebar-light-4;
-    color: $dark-dark-text;
+    background-color: var(--dark-sidebar-light-2);
+    border-color: var(--dark-sidebar-light-4);
+    color: var(--dark-dark-text);
 
     &:hover {
-      border-color: $dark-sidebar-light-12;
+      border-color: var(--dark-sidebar-light-12);
     }
 
     &:focus {
-      border-color: $dark-sidebar-light-8;
+      border-color: var(--dark-sidebar-light-8);
 
       + .form-icon svg {
-        color: $accent !important;
+        color: var(--primary) !important;
       }
     }
 
     &::-webkit-input-placeholder {
-      color: $accent-grey-dark-30 !important;
+      color: var(--primary-grey-dark-30) !important;
     }
 
     &::-moz-placeholder {
-      color: $accent-grey-dark-30 !important;
+      color: var(--primary-grey-dark-30) !important;
     }
 
     &:-ms-input-placeholder {
-      color: $accent-grey-dark-30 !important;
+      color: var(--primary-grey-dark-30) !important;
     }
 
     &:-moz-placeholder {
-      color: $accent-grey-dark-30 !important;
+      color: var(--primary-grey-dark-30) !important;
     }
 
     &.is-primary-focus {
       &:focus {
-        border-color: $accent !important;
+        border-color: var(--primary) !important;
       }
     }
   }
@@ -191,7 +191,7 @@ label[for] {
 
         &:checked + .k-radio {
           .radio-knob {
-            border-color: $primary;
+            border-color: var(--primary);
 
             .knob-inner {
               transform: scale(1);
@@ -199,7 +199,7 @@ label[for] {
           }
 
           .label-text {
-            color: $dark-text;
+            color: var(--dark-text);
           }
         }
       }
@@ -216,8 +216,8 @@ label[for] {
         .radio-knob {
           height: 20px;
           width: 20px;
-          border: 1px solid $accent-grey;
-          border-radius: $radius-rounded;
+          border: 1px solid var(--primary-grey);
+          border-radius: var(--radius-rounded);
           display: flex;
           justify-content: center;
           align-items: center;
@@ -225,8 +225,8 @@ label[for] {
           .knob-inner {
             height: 8px;
             width: 8px;
-            border-radius: $radius-rounded;
-            background: $primary;
+            border-radius: var(--radius-rounded);
+            background: var(--primary);
             transition: all 0.3s;
             transform: scale(0);
           }
@@ -234,7 +234,7 @@ label[for] {
 
         .label-text {
           margin-left: 10px;
-          color: $muted-grey;
+          color: var(--muted-grey);
           font-size: 0.9rem;
           font-weight: 500;
           line-height: 0;
@@ -258,7 +258,7 @@ label[for] {
     margin-bottom: 20px;
 
     h4 {
-      font-family: $font-alt;
+      font-family: var(--font-alt);
       font-weight: 600;
     }
 
@@ -276,7 +276,7 @@ label[for] {
 }
 
 .select:not(.is-multiple):not(.is-loading)::after {
-  border-color: $muted-grey-light-14;
+  border-color: var(--muted-grey-light-14);
   border-width: 1.4px;
 }
 
@@ -305,11 +305,11 @@ label[for] {
 
 select {
   width: 100%;
-  font-family: $font;
+  font-family: var(--font);
 
   &:focus {
     box-shadow: none !important;
-    border-color: $fade-grey-dark-6 !important;
+    border-color: var(--fade-grey-dark-6) !important;
   }
 }
 
@@ -317,9 +317,9 @@ select {
   &.is-horizontal {
     .field-label {
       .label {
-        font-family: $font;
+        font-family: var(--font);
         font-size: 0.9rem;
-        color: $light-text !important;
+        color: var(--light-text) !important;
         font-weight: 400;
       }
     }
@@ -337,7 +337,7 @@ select {
 
         &.currency-select {
           select {
-            font-family: $font;
+            font-family: var(--font);
             font-weight: 600;
           }
         }
@@ -354,8 +354,8 @@ select {
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
       border-bottom: none;
-      border-color: $fade-grey-dark-2 !important;
-      box-shadow: $light-box-shadow;
+      border-color: var(--fade-grey-dark-2) !important;
+      box-shadow: var(--light-box-shadow);
     }
 
     .is-textarea-addon {
@@ -364,18 +364,18 @@ select {
       align-items: center;
       width: 100%;
       padding: 12px 8px;
-      background: $white;
+      background: var(--white);
       border-radius: 0 0 4px 4px;
-      border: 1px solid $fade-grey-dark-2;
+      border: 1px solid var(--fade-grey-dark-2);
       border-top: none;
-      box-shadow: $light-box-shadow;
+      box-shadow: var(--light-box-shadow);
     }
   }
 
   > label {
-    font-family: $font;
+    font-family: var(--font);
     font-size: 0.9rem;
-    color: $light-text !important;
+    color: var(--light-text) !important;
   }
 }
 
@@ -409,7 +409,7 @@ select {
       svg {
         height: 18px;
         width: 18px;
-        color: $placeholder;
+        color: var(--placeholder);
         transition: all 0.3s;
       }
 
@@ -417,14 +417,14 @@ select {
       .far,
       .fal,
       .fab {
-        color: $placeholder;
+        color: var(--placeholder);
         transition: all 0.3s;
       }
 
       .lnil,
       .lnir {
         font-size: 1.2rem;
-        color: $placeholder;
+        color: var(--placeholder);
         transition: all 0.3s;
       }
     }
@@ -437,19 +437,19 @@ select {
       &:focus {
         + .form-icon {
           svg {
-            color: $primary;
+            color: var(--primary);
           }
 
           .fas,
           .far,
           .fal,
           .fab {
-            color: $primary;
+            color: var(--primary);
           }
 
           .lnil,
           .lnir {
-            color: $primary;
+            color: var(--primary);
           }
         }
       }
@@ -459,8 +459,8 @@ select {
   &.has-validation {
     &.has-success {
       input {
-        border-color: $success !important;
-        box-shadow: $light-box-shadow;
+        border-color: var(--success) !important;
+        box-shadow: var(--light-box-shadow);
         transition: all 0.3s;
       }
 
@@ -470,15 +470,15 @@ select {
 
         svg,
         .form-icon svg {
-          color: $success !important;
+          color: var(--success) !important;
         }
       }
     }
 
     &.has-error {
       input {
-        border-color: $danger !important;
-        box-shadow: $light-box-shadow;
+        border-color: var(--danger) !important;
+        box-shadow: var(--light-box-shadow);
       }
 
       .validation-icon.is-error,
@@ -487,7 +487,7 @@ select {
 
         svg,
         .form-icon svg {
-          color: $danger !important;
+          color: var(--danger) !important;
         }
       }
 
@@ -521,7 +521,7 @@ select {
       svg {
         height: 18px;
         width: 18px;
-        color: $placeholder;
+        color: var(--placeholder);
         transition: all 0.3s;
       }
     }
@@ -529,7 +529,7 @@ select {
 
   .help-text {
     display: block;
-    color: $muted-grey;
+    color: var(--muted-grey);
     margin-top: 10px;
     font-size: 0.8rem;
 
@@ -540,7 +540,7 @@ select {
 
       &.error {
         display: none;
-        color: $danger;
+        color: var(--danger);
       }
     }
   }
@@ -552,13 +552,13 @@ select {
     width: 100%;
     max-height: 285px;
     overflow-y: auto;
-    background: $white;
+    background: var(--white);
     opacity: 0;
-    border: 1px solid $fade-grey-dark-3;
-    border-radius: $radius;
+    border: 1px solid var(--fade-grey-dark-3);
+    border-radius: var(--radius);
     pointer-events: none;
     transform: translateY(5px);
-    box-shadow: $light-box-shadow;
+    box-shadow: var(--light-box-shadow);
     z-index: 10;
     transition: all 0.3s;
 
@@ -583,14 +583,14 @@ select {
         }
 
         h3 {
-          font-family: $font;
+          font-family: var(--font);
           font-weight: 600;
-          color: $dark-text;
+          color: var(--dark-text);
           padding: 0;
         }
 
         p {
-          color: $light-text;
+          color: var(--light-text);
           font-size: 0.95rem;
           max-width: 420px;
           margin: 0 auto;
@@ -609,12 +609,12 @@ select {
       }
 
       &:hover {
-        background: $fade-grey-light-4;
+        background: var(--fade-grey-light-4);
       }
 
       .v-avatar {
         .article {
-          border-radius: $radius-small;
+          border-radius: var(--radius-small);
         }
       }
 
@@ -626,15 +626,15 @@ select {
           line-height: 1.3;
 
           &:first-child {
-            font-family: $font;
+            font-family: var(--font);
             font-weight: 500;
             font-size: 0.9rem;
-            color: $dark-text;
+            color: var(--dark-text);
           }
 
           &:nth-child(2) {
             font-size: 0.85rem;
-            color: $light-text;
+            color: var(--light-text);
           }
         }
       }
@@ -650,7 +650,7 @@ select {
   .form-fieldset {
     .fieldset-heading {
       h4 {
-        color: $dark-dark-text;
+        color: var(--dark-dark-text);
       }
     }
   }
@@ -658,12 +658,12 @@ select {
   .field {
     &.has-textarea-addon {
       .textarea {
-        border-color: $dark-sidebar-light-4 !important;
+        border-color: var(--dark-sidebar-light-4) !important;
       }
 
       .is-textarea-addon {
-        background-color: $dark-sidebar-light-2;
-        border-color: $dark-sidebar-light-4;
+        background-color: var(--dark-sidebar-light-2);
+        border-color: var(--dark-sidebar-light-4);
       }
     }
   }
@@ -674,7 +674,7 @@ select {
         &:focus {
           ~ .form-icon {
             svg {
-              color: $accent;
+              color: var(--primary);
             }
 
             .fas,
@@ -683,7 +683,7 @@ select {
             .fab,
             .lnir,
             .lnil {
-              color: $accent;
+              color: var(--primary);
             }
           }
         }
@@ -691,7 +691,7 @@ select {
 
       .form-icon {
         svg {
-          color: $light-text-dark-5;
+          color: var(--light-text-dark-5);
         }
 
         .fas,
@@ -700,7 +700,7 @@ select {
         .fab,
         .lnir,
         .lnil {
-          color: $light-text-dark-5;
+          color: var(--light-text-dark-5);
         }
       }
     }
@@ -710,31 +710,31 @@ select {
     &:not(.is-multiple):not(.is-loading) {
       &:hover {
         &::after {
-          border-color: $dark-dark-text !important;
+          border-color: var(--dark-dark-text) !important;
         }
       }
     }
 
     select {
-      background-color: $dark-sidebar-light-10;
-      border-color: $dark-sidebar-light-12 !important;
-      color: $dark-dark-text;
+      background-color: var(--dark-sidebar-light-10);
+      border-color: var(--dark-sidebar-light-12) !important;
+      color: var(--dark-dark-text);
     }
   }
 
   .search-results {
-    background: $dark-sidebar-dark-2;
-    border-color: $dark-sidebar-light-4 !important;
+    background: var(--dark-sidebar-dark-2);
+    border-color: var(--dark-sidebar-light-4) !important;
 
     .search-result {
       &:hover {
-        background: $dark-sidebar-light-2;
+        background: var(--dark-sidebar-light-2);
       }
 
       .meta {
         span {
           &:first-child {
-            color: $dark-dark-text;
+            color: var(--dark-dark-text);
           }
         }
       }
@@ -752,7 +752,7 @@ select {
 
   &.is-opened {
     .custom-select {
-      border-color: $placeholder;
+      border-color: var(--placeholder);
     }
 
     .select-drop {
@@ -765,7 +765,7 @@ select {
       transform: rotate(180deg);
 
       svg {
-        color: $primary;
+        color: var(--primary);
       }
     }
   }
@@ -774,14 +774,14 @@ select {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid $fade-grey;
-    border-radius: $radius-large;
+    border: 1px solid var(--fade-grey);
+    border-radius: var(--radius-large);
     padding: 14px 16px;
     cursor: pointer;
     transition: all 0.3s;
 
     &:hover {
-      border-color: $placeholder;
+      border-color: var(--placeholder);
     }
 
     .selected-option {
@@ -796,7 +796,7 @@ select {
           img {
             height: 38px;
             width: 38px;
-            border-radius: $radius-rounded;
+            border-radius: var(--radius-rounded);
           }
         }
 
@@ -807,12 +807,12 @@ select {
             &:first-child {
               font-size: 1rem;
               font-weight: 500;
-              color: $primary;
+              color: var(--primary);
             }
 
             &:nth-child(2) {
               font-size: 0.85rem;
-              color: $muted-grey;
+              color: var(--muted-grey);
             }
           }
         }
@@ -831,7 +831,7 @@ select {
       svg {
         width: 20px;
         height: 20px;
-        color: $muted-grey;
+        color: var(--muted-grey);
       }
     }
   }
@@ -841,9 +841,9 @@ select {
     top: 100%;
     left: 0;
     width: 100%;
-    background: $white;
-    border: 1px solid $fade-grey;
-    border-radius: $radius-large;
+    background: var(--white);
+    border: 1px solid var(--fade-grey);
+    border-radius: var(--radius-large);
     margin-top: 10px;
     padding: 5px 0;
     box-shadow: 0 5px 43px rgba(0, 0, 0, 0.18) !important;
@@ -858,7 +858,7 @@ select {
 
       .option-wrapper {
         cursor: pointer;
-        border-bottom: 1px solid $fade-grey;
+        border-bottom: 1px solid var(--fade-grey);
 
         &:last-child {
           border-bottom: 0;
@@ -880,7 +880,7 @@ select {
             img {
               height: 32px;
               width: 32px;
-              border-radius: $radius-rounded;
+              border-radius: var(--radius-rounded);
             }
           }
 
@@ -891,12 +891,12 @@ select {
               &:first-child {
                 font-size: 0.9rem;
                 font-weight: 500;
-                color: $dark-text;
+                color: var(--dark-text);
               }
 
               &:nth-child(2) {
                 font-size: 0.75rem;
-                color: $muted-grey;
+                color: var(--muted-grey);
               }
             }
           }
@@ -919,7 +919,7 @@ select {
 
       input {
         box-shadow: none;
-        color: $muted-grey;
+        color: var(--muted-grey);
         transition: all 0.3s;
       }
 
@@ -936,7 +936,7 @@ select {
           .autocpl-avatar {
             width: 40px !important;
             height: 40px !important;
-            border-radius: $radius-rounded !important;
+            border-radius: var(--radius-rounded) !important;
           }
 
           .avatar-badge {
@@ -945,8 +945,8 @@ select {
             right: -5px;
             width: 18px;
             height: 18px;
-            border: 2px solid $white;
-            border-radius: $radius-rounded;
+            border: 2px solid var(--white);
+            border-radius: var(--radius-rounded);
           }
         }
 
@@ -955,7 +955,7 @@ select {
 
           span {
             font-size: 0.8rem;
-            color: $title-grey;
+            color: var(--title-grey);
           }
         }
       }
@@ -975,7 +975,7 @@ select {
     border: none !important;
 
     ul {
-      border-radius: $radius !important;
+      border-radius: var(--radius) !important;
       box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06) !important;
     }
   }
@@ -990,10 +990,10 @@ select {
         box-shadow: none;
 
         &:focus {
-          box-shadow: $light-box-shadow;
+          box-shadow: var(--light-box-shadow);
 
           + .icon {
-            color: $primary;
+            color: var(--primary);
           }
         }
       }
@@ -1009,7 +1009,7 @@ select {
           .autocpl-avatar {
             width: 32px !important;
             height: 32px !important;
-            border-radius: $radius-rounded !important;
+            border-radius: var(--radius-rounded) !important;
           }
 
           .avatar-badge {
@@ -1018,29 +1018,29 @@ select {
             right: -2px;
             width: 16px;
             height: 16px;
-            border: 1px solid $white;
-            border-radius: $radius-rounded;
+            border: 1px solid var(--white);
+            border-radius: var(--radius-rounded);
           }
         }
 
         .entry-text {
-          color: $dark-text;
+          color: var(--dark-text);
           line-height: 1.3;
 
           span {
-            font-family: $font;
+            font-family: var(--font);
             display: block;
 
             &:first-child {
-              font-family: $font-alt;
+              font-family: var(--font-alt);
               font-size: 0.9rem;
               font-weight: 500;
-              color: $dark-text;
+              color: var(--dark-text);
             }
 
             &:nth-child(2) {
               font-size: 0.9rem;
-              color: $light-text;
+              color: var(--light-text);
             }
           }
         }
@@ -1061,7 +1061,7 @@ select {
     border: none !important;
 
     ul {
-      border-radius: $radius !important;
+      border-radius: var(--radius) !important;
       box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06) !important;
     }
   }
@@ -1075,24 +1075,24 @@ select {
   .is-autocomplete {
     .easy-autocomplete-container {
       > ul {
-        background: $dark-sidebar;
-        border-color: $dark-sidebar-light-8;
+        background: var(--dark-sidebar);
+        border-color: var(--dark-sidebar-light-8);
 
         li {
-          border-color: $dark-sidebar-light-8;
+          border-color: var(--dark-sidebar-light-8);
 
           &.selected {
-            background-color: $dark-sidebar-light-3;
+            background-color: var(--dark-sidebar-light-3);
           }
 
           .eac-item {
             .template-wrapper {
               .entry-text {
-                color: $dark-text;
+                color: var(--dark-text);
 
                 span {
                   &:first-child {
-                    color: $dark-dark-text;
+                    color: var(--dark-dark-text);
                   }
                 }
               }
@@ -1117,7 +1117,7 @@ select {
   &.is-primary {
     input {
       &:checked + i {
-        background-color: $primary;
+        background-color: var(--primary);
       }
     }
   }
@@ -1125,7 +1125,7 @@ select {
   &.is-success {
     input {
       &:checked + i {
-        background-color: $success;
+        background-color: var(--success);
       }
     }
   }
@@ -1133,7 +1133,7 @@ select {
   &.is-info {
     input {
       &:checked + i {
-        background-color: $info;
+        background-color: var(--info);
       }
     }
   }
@@ -1141,7 +1141,7 @@ select {
   &.is-warning {
     input {
       &:checked + i {
-        background-color: $warning;
+        background-color: var(--warning);
       }
     }
   }
@@ -1149,7 +1149,7 @@ select {
   &.is-danger {
     input {
       &:checked + i {
-        background-color: $danger;
+        background-color: var(--danger);
       }
     }
   }
@@ -1170,7 +1170,7 @@ select {
       left: 0;
       width: 42px;
       height: 22px;
-      background-color: $white;
+      background-color: var(--white);
       border-radius: 11px;
       transform: translate3d(2px, 2px, 0) scale3d(1, 1, 1);
       transition: all 0.25s linear;
@@ -1182,7 +1182,7 @@ select {
       left: 0;
       width: 22px;
       height: 22px;
-      background-color: $white;
+      background-color: var(--white);
       border-radius: 11px;
       box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24);
       transform: translate3d(2px, 2px, 0);
@@ -1209,7 +1209,7 @@ select {
     pointer-events: none;
 
     &:checked + i {
-      background-color: $light-text;
+      background-color: var(--light-text);
 
       &::before {
         transform: translate3d(18px, 2px, 0) scale3d(0, 0, 0);
@@ -1222,7 +1222,7 @@ select {
   }
 
   small {
-    color: $muted-grey;
+    color: var(--muted-grey);
     position: relative;
     top: -4px;
   }
@@ -1240,7 +1240,7 @@ select {
       display: block;
       position: relative;
       top: -2px;
-      color: $light-text;
+      color: var(--light-text);
     }
   }
 }
@@ -1254,10 +1254,10 @@ select {
     &.is-primary {
       input {
         &:checked + i {
-          background-color: $accent !important;
+          background-color: var(--primary) !important;
 
           &::after {
-            background: $white !important;
+            background: var(--white) !important;
           }
         }
       }
@@ -1266,10 +1266,10 @@ select {
     &.is-success {
       input {
         &:checked + i {
-          background-color: $success !important;
+          background-color: var(--success) !important;
 
           &::after {
-            background: $white !important;
+            background: var(--white) !important;
           }
         }
       }
@@ -1278,10 +1278,10 @@ select {
     &.is-info {
       input {
         &:checked + i {
-          background-color: $info !important;
+          background-color: var(--info) !important;
 
           &::after {
-            background: $white !important;
+            background: var(--white) !important;
           }
         }
       }
@@ -1290,10 +1290,10 @@ select {
     &.is-warning {
       input {
         &:checked + i {
-          background-color: $warning !important;
+          background-color: var(--warning) !important;
 
           &::after {
-            background: $white !important;
+            background: var(--white) !important;
           }
         }
       }
@@ -1302,31 +1302,31 @@ select {
     &.is-danger {
       input {
         &:checked + i {
-          background-color: $danger !important;
+          background-color: var(--danger) !important;
 
           &::after {
-            background: $white !important;
+            background: var(--white) !important;
           }
         }
       }
     }
 
     i {
-      background: $dark-sidebar !important;
+      background: var(--dark-sidebar) !important;
 
       &::before {
-        background: $dark-sidebar !important;
+        background: var(--dark-sidebar) !important;
       }
 
       &::after {
-        background: $dark-sidebar-light-22 !important;
+        background: var(--dark-sidebar-light-22) !important;
       }
     }
 
     input {
       &:checked + i {
         &::after {
-          background: $dark-sidebar-light-55 !important;
+          background: var(--dark-sidebar-light-55) !important;
         }
       }
     }
@@ -1343,55 +1343,55 @@ select {
 
   &.is-primary {
     .input:checked ~ .slider {
-      background: $primary-light-20;
+      background: var(--primary-light-20);
 
       &::after {
-        background: $primary;
-        border-color: $primary;
+        background: var(--primary);
+        border-color: var(--primary);
       }
     }
   }
 
   &.is-success {
     .input:checked ~ .slider {
-      background: $success-light-20;
+      background: var(--success-light-20);
 
       &::after {
-        background: $success;
-        border-color: $success;
+        background: var(--success);
+        border-color: var(--success);
       }
     }
   }
 
   &.is-info {
     .input:checked ~ .slider {
-      background: $info-light-20;
+      background: var(--info-light-20);
 
       &::after {
-        background: $info;
-        border-color: $info;
+        background: var(--info);
+        border-color: var(--info);
       }
     }
   }
 
   &.is-warning {
     .input:checked ~ .slider {
-      background: $warning-light-20;
+      background: var(--warning-light-20);
 
       &::after {
-        background: $warning;
-        border-color: $warning;
+        background: var(--warning);
+        border-color: var(--warning);
       }
     }
   }
 
   &.is-danger {
     .input:checked ~ .slider {
-      background: $danger-light-20;
+      background: var(--danger-light-20);
 
       &::after {
-        background: $danger;
-        border-color: $danger;
+        background: var(--danger);
+        border-color: var(--danger);
       }
     }
   }
@@ -1407,14 +1407,14 @@ select {
     transition: all 0.2s ease;
 
     &::after {
-      background: $light-grey;
+      background: var(--light-grey);
       position: absolute;
       left: -8px;
       top: (7px - 24px) / 2;
       display: block;
       width: 24px;
       height: 24px;
-      border-radius: $radius-rounded;
+      border-radius: var(--radius-rounded);
       border: 1px solid transparent;
       box-shadow: 0 2px 2px rgba(#000, 0.2);
       content: '';
@@ -1442,8 +1442,8 @@ select {
 
   .input:checked ~ .slider {
     &::after {
-      background: $white;
-      border: 1px solid $fade-grey;
+      background: var(--white);
+      border: 1px solid var(--fade-grey);
     }
   }
 }
@@ -1459,7 +1459,7 @@ select {
     span {
       display: block;
       position: relative;
-      color: $light-text;
+      color: var(--light-text);
     }
   }
 }
@@ -1472,11 +1472,11 @@ select {
   .thin-switch {
     &.is-primary {
       .input:checked ~ .slider {
-        background: $accent-light-20;
+        background: var(--primary-light-20);
 
         &::after {
-          background: $accent;
-          border-color: $accent;
+          background: var(--primary);
+          border-color: var(--primary);
         }
       }
     }
@@ -1484,8 +1484,8 @@ select {
     &.is-success {
       .input:checked ~ .slider {
         &::after {
-          background: $success;
-          border-color: $success;
+          background: var(--success);
+          border-color: var(--success);
         }
       }
     }
@@ -1493,8 +1493,8 @@ select {
     &.is-info {
       .input:checked ~ .slider {
         &::after {
-          background: $info;
-          border-color: $info;
+          background: var(--info);
+          border-color: var(--info);
         }
       }
     }
@@ -1502,8 +1502,8 @@ select {
     &.is-warning {
       .input:checked ~ .slider {
         &::after {
-          background: $warning;
-          border-color: $warning;
+          background: var(--warning);
+          border-color: var(--warning);
         }
       }
     }
@@ -1511,24 +1511,24 @@ select {
     &.is-danger {
       .input:checked ~ .slider {
         &::after {
-          background: $danger;
-          border-color: $danger;
+          background: var(--danger);
+          border-color: var(--danger);
         }
       }
     }
 
     .slider {
-      background: $dark-sidebar;
+      background: var(--dark-sidebar);
 
       &::after {
-        background: $dark-sidebar-light-22;
+        background: var(--dark-sidebar-light-22);
       }
     }
 
     .input:checked ~ .slider {
       &::after {
-        background: $dark-sidebar-light-55;
-        border: $dark-sidebar-light-55;
+        background: var(--dark-sidebar-light-55);
+        border: var(--dark-sidebar-light-55);
       }
     }
   }
@@ -1552,7 +1552,7 @@ select {
 
     small {
       font-size: 0.8rem;
-      color: $muted-grey;
+      color: var(--muted-grey);
     }
   }
 
@@ -1561,7 +1561,7 @@ select {
     width: 100%;
     height: 5px;
     border-radius: 5px;
-    background: $accent-grey;
+    background: var(--primary-grey);
     outline: none;
 
     &:focus {
@@ -1575,8 +1575,8 @@ select {
     -webkit-appearance: none;
     width: 16px;
     height: 16px;
-    border-radius: $radius-rounded;
-    background: $primary;
+    border-radius: var(--radius-rounded);
+    background: var(--primary);
     cursor: pointer;
     -webkit-transition: transform 0.3s;
     transition: transform 0.3s;
@@ -1584,19 +1584,19 @@ select {
   }
 
   .input-range::-webkit-slider-thumb:hover {
-    background: $primary;
+    background: var(--primary);
   }
 
   .input-range:active::-moz-range-thumb {
-    background: $primary;
+    background: var(--primary);
   }
 
   .input-range::-moz-range-thumb {
     width: 16px;
     height: 16px;
     border: 0;
-    border-radius: $radius-rounded;
-    background: $primary;
+    border-radius: var(--radius-rounded);
+    background: var(--primary);
     cursor: pointer;
     -webkit-transition: background-color 0.15s ease-in-out;
     transition: background-color 0.15s ease-in-out;
@@ -1605,14 +1605,14 @@ select {
   .range-value {
     display: block !important;
     position: relative;
-    color: $primary;
+    color: var(--primary);
     font-size: 14px;
     font-weight: 500;
     padding: 0 10px;
   }
 
   ::-moz-range-track {
-    background: $accent-grey;
+    background: var(--primary-grey);
     border: 0;
   }
 
@@ -1629,13 +1629,13 @@ select {
   &.is-default {
     &:hover {
       .file-cta {
-        box-shadow: $light-box-shadow !important;
+        box-shadow: var(--light-box-shadow) !important;
       }
     }
 
     .file-cta {
-      background: $white;
-      border: 1px solid $fade-grey-dark-3;
+      background: var(--white);
+      border: 1px solid var(--fade-grey-dark-3);
       transition: all 0.3s;
     }
   }
@@ -1649,15 +1649,15 @@ select {
   .file {
     &:not(.is-primary):not(.is-success):not(.is-info):not(.is-warning):not(.is-danger) {
       .file-cta {
-        background: $dark-sidebar-light-10;
-        border-color: $dark-sidebar-light-12;
-        color: $dark-dark-text;
+        background: var(--dark-sidebar-light-10);
+        border-color: var(--dark-sidebar-light-12);
+        color: var(--dark-dark-text);
       }
     }
 
     .file-name {
-      background-color: $dark-sidebar-light-2;
-      border-color: $dark-sidebar-light-4;
+      background-color: var(--dark-sidebar-light-2);
+      border-color: var(--dark-sidebar-light-4);
     }
   }
 }
@@ -1680,8 +1680,8 @@ select {
   }
 
   .filepond--root {
-    border: 2px dashed $fade-grey-dark-4;
-    border-radius: $radius;
+    border: 2px dashed var(--fade-grey-dark-4);
+    border-radius: var(--radius);
     min-height: 70px;
     cursor: pointer;
     transition: all 0.3s;
@@ -1720,23 +1720,23 @@ select {
 
   &:hover {
     .lnil {
-      color: $primary;
+      color: var(--primary);
     }
 
     .filepond--root {
-      border-color: dashed $fade-grey-dark-6;
+      border-color: dashed var(--fade-grey-dark-6);
     }
   }
 
   .lnil {
     pointer-events: none;
     font-size: 2.4rem;
-    color: $light-text;
+    color: var(--light-text);
     transition: color 0.3s;
   }
 
   .filepond--root {
-    border: 2px dashed $fade-grey-dark-4;
+    border: 2px dashed var(--fade-grey-dark-4);
     cursor: pointer;
     transition: all 0.3s;
   }
@@ -1744,7 +1744,7 @@ select {
 
 .filepond-square-wrap {
   .filepond--root {
-    border-radius: $radius;
+    border-radius: var(--radius);
   }
 }
 
@@ -1758,19 +1758,19 @@ select {
   .filepond-square-wrap {
     &:hover {
       .lnil {
-        color: $accent;
+        color: var(--primary);
       }
     }
 
     .filepond--root {
-      border-color: $dark-sidebar-light-12;
+      border-color: var(--dark-sidebar-light-12);
     }
 
     .filepond--drop-label {
-      background: $dark-sidebar-light-2;
+      background: var(--dark-sidebar-light-2);
 
       label {
-        color: $dark-dark-text;
+        color: var(--dark-dark-text);
       }
     }
   }
@@ -1783,22 +1783,22 @@ select {
 .choices {
   &.is-focused {
     .choices__inner {
-      border-color: $fade-grey-dark-3;
-      box-shadow: $light-box-shadow;
+      border-color: var(--fade-grey-dark-3);
+      box-shadow: var(--light-box-shadow);
     }
   }
 
   .choices__inner {
-    border-radius: $radius-large;
+    border-radius: var(--radius-large);
     transition: all 0.3s;
 
     .choices__list {
       .choices__item {
         position: relative !important;
-        background-color: $fade-grey-dark-2;
-        border-color: $fade-grey-dark-2;
-        color: $dark-text;
-        font-family: $font;
+        background-color: var(--fade-grey-dark-2);
+        border-color: var(--fade-grey-dark-2);
+        color: var(--dark-text);
+        font-family: var(--font);
         padding: 4px 10px 5px 10px;
 
         &::before {
@@ -1808,7 +1808,7 @@ select {
           right: 14px;
           font-family: 'Font Awesome\ 5 Free';
           font-weight: 900;
-          color: $light-text;
+          color: var(--light-text);
         }
 
         button {
@@ -1822,11 +1822,11 @@ select {
 
   .choices__list--dropdown {
     margin-top: 6px;
-    border-color: $fade-grey-dark-3;
-    box-shadow: $light-box-shadow;
+    border-color: var(--fade-grey-dark-3);
+    box-shadow: var(--light-box-shadow);
 
     .choices__item--choice {
-      color: $light-text;
+      color: var(--light-text);
     }
   }
 }
@@ -1839,35 +1839,35 @@ select {
   .choices {
     &.is-focused {
       .choices__inner {
-        border-color: $dark-sidebar-light-8;
+        border-color: var(--dark-sidebar-light-8);
       }
     }
 
     .choices__inner {
-      background-color: $dark-sidebar-light-2;
-      border-color: $dark-sidebar-light-4;
+      background-color: var(--dark-sidebar-light-2);
+      border-color: var(--dark-sidebar-light-4);
 
       input {
-        background-color: $dark-sidebar-light-2;
-        color: $dark-dark-text;
+        background-color: var(--dark-sidebar-light-2);
+        color: var(--dark-dark-text);
       }
 
       .choices__list {
         .choices__item {
-          background-color: $dark-sidebar-light-8;
-          border-color: $dark-sidebar-light-8;
-          color: $dark-dark-text;
+          background-color: var(--dark-sidebar-light-8);
+          border-color: var(--dark-sidebar-light-8);
+          color: var(--dark-dark-text);
         }
       }
     }
 
     .choices__list--dropdown {
-      background-color: $dark-sidebar-light-2;
-      border-color: $dark-sidebar-light-4;
+      background-color: var(--dark-sidebar-light-2);
+      border-color: var(--dark-sidebar-light-4);
 
       .choices__item {
         &.is-highlighted {
-          background-color: $dark-sidebar-dark-2;
+          background-color: var(--dark-sidebar-dark-2);
         }
       }
     }

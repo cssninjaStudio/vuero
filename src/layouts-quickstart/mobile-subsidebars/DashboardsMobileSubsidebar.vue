@@ -32,6 +32,5 @@
 </template>
 
 <style lang="scss">
-@import '../../scss/abstracts/_variables.scss';
 @import '../../scss/layout/_sidebar-mobile.scss';
 </style>

@@ -411,236 +411,236 @@
 }
 
 [class*='hint--']::after {
-  box-shadow: $light-box-shadow;
+  box-shadow: var(--light-box-shadow);
 }
 
 //Defines a primary tooltip.
 .hint--primary::after {
-  background-color: $primary;
+  background-color: var(--primary);
 }
 
 .hint--primary.hint--top-left::before {
-  border-top-color: $primary;
+  border-top-color: var(--primary);
 }
 
 .hint--primary.hint--top-right::before {
-  border-top-color: $primary;
+  border-top-color: var(--primary);
 }
 
 .hint--primary.hint--top::before {
-  border-top-color: $primary;
+  border-top-color: var(--primary);
 }
 
 .hint--primary.hint--bottom-left::before {
-  border-bottom-color: $primary;
+  border-bottom-color: var(--primary);
 }
 
 .hint--primary.hint--bottom-right::before {
-  border-bottom-color: $primary;
+  border-bottom-color: var(--primary);
 }
 
 .hint--primary.hint--bottom::before {
-  border-bottom-color: $primary;
+  border-bottom-color: var(--primary);
 }
 
 .hint--primary.hint--left::before {
-  border-left-color: $primary;
+  border-left-color: var(--primary);
 }
 
 .hint--primary.hint--right::before {
-  border-right-color: $primary;
+  border-right-color: var(--primary);
 }
 
 //Defines an error tooltip.
 .hint--error::after {
-  background-color: $danger;
+  background-color: var(--danger);
 }
 
 .hint--error.hint--top-left::before {
-  border-top-color: $danger;
+  border-top-color: var(--danger);
 }
 
 .hint--error.hint--top-right::before {
-  border-top-color: $danger;
+  border-top-color: var(--danger);
 }
 
 .hint--error.hint--top::before {
-  border-top-color: $danger;
+  border-top-color: var(--danger);
 }
 
 .hint--error.hint--bottom-left::before {
-  border-bottom-color: $danger;
+  border-bottom-color: var(--danger);
 }
 
 .hint--error.hint--bottom-right::before {
-  border-bottom-color: $danger;
+  border-bottom-color: var(--danger);
 }
 
 .hint--error.hint--bottom::before {
-  border-bottom-color: $danger;
+  border-bottom-color: var(--danger);
 }
 
 .hint--error.hint--left::before {
-  border-left-color: $danger;
+  border-left-color: var(--danger);
 }
 
 .hint--error.hint--right::before {
-  border-right-color: $danger;
+  border-right-color: var(--danger);
 }
 
 //Defines a warning tooltip.
 .hint--warning::after {
-  background-color: $warning;
+  background-color: var(--warning);
 }
 
 .hint--warning.hint--top-left::before {
-  border-top-color: $warning;
+  border-top-color: var(--warning);
 }
 
 .hint--warning.hint--top-right::before {
-  border-top-color: $warning;
+  border-top-color: var(--warning);
 }
 
 .hint--warning.hint--top::before {
-  border-top-color: $warning;
+  border-top-color: var(--warning);
 }
 
 .hint--warning.hint--bottom-left::before {
-  border-bottom-color: $warning;
+  border-bottom-color: var(--warning);
 }
 
 .hint--warning.hint--bottom-right::before {
-  border-bottom-color: $warning;
+  border-bottom-color: var(--warning);
 }
 
 .hint--warning.hint--bottom::before {
-  border-bottom-color: $warning;
+  border-bottom-color: var(--warning);
 }
 
 .hint--warning.hint--left::before {
-  border-left-color: $warning;
+  border-left-color: var(--warning);
 }
 
 .hint--warning.hint--right::before {
-  border-right-color: $warning;
+  border-right-color: var(--warning);
 }
 
 //Defines an info tooltip.
 .hint--info::after {
-  background-color: $info;
+  background-color: var(--info);
 }
 
 .hint--info.hint--top-left::before {
-  border-top-color: $info;
+  border-top-color: var(--info);
 }
 
 .hint--info.hint--top-right::before {
-  border-top-color: $info;
+  border-top-color: var(--info);
 }
 
 .hint--info.hint--top::before {
-  border-top-color: $info;
+  border-top-color: var(--info);
 }
 
 .hint--info.hint--bottom-left::before {
-  border-bottom-color: $info;
+  border-bottom-color: var(--info);
 }
 
 .hint--info.hint--bottom-right::before {
-  border-bottom-color: $info;
+  border-bottom-color: var(--info);
 }
 
 .hint--info.hint--bottom::before {
-  border-bottom-color: $info;
+  border-bottom-color: var(--info);
 }
 
 .hint--info.hint--left::before {
-  border-left-color: $info;
+  border-left-color: var(--info);
 }
 
 .hint--info.hint--right::before {
-  border-right-color: $info;
+  border-right-color: var(--info);
 }
 
 //Defines a success tooltip.
 .hint--success::after {
-  background-color: $success;
+  background-color: var(--success);
 }
 
 .hint--success.hint--top-left::before {
-  border-top-color: $success;
+  border-top-color: var(--success);
 }
 
 .hint--success.hint--top-right::before {
-  border-top-color: $success;
+  border-top-color: var(--success);
 }
 
 .hint--success.hint--top::before {
-  border-top-color: $success;
+  border-top-color: var(--success);
 }
 
 .hint--success.hint--bottom-left::before {
-  border-bottom-color: $success;
+  border-bottom-color: var(--success);
 }
 
 .hint--success.hint--bottom-right::before {
-  border-bottom-color: $success;
+  border-bottom-color: var(--success);
 }
 
 .hint--success.hint--bottom::before {
-  border-bottom-color: $success;
+  border-bottom-color: var(--success);
 }
 
 .hint--success.hint--left::before {
-  border-left-color: $success;
+  border-left-color: var(--success);
 }
 
 .hint--success.hint--right::before {
-  border-right-color: $success;
+  border-right-color: var(--success);
 }
 
 //Defines a light tooltip.
 .hint--light::after {
-  background-color: $white;
-  color: $dark-text !important;
+  background-color: var(--white);
+  color: var(--dark-text) !important;
   box-shadow: 0 5px 15px 0 rgba(39, 26, 54, 0.15);
 }
 
 .hint--light.hint--top-left::before {
-  border-top-color: $white;
+  border-top-color: var(--white);
 }
 
 .hint--light.hint--top-right::before {
-  border-top-color: $white;
+  border-top-color: var(--white);
 }
 
 .hint--light.hint--top::before {
-  border-top-color: $white;
+  border-top-color: var(--white);
 }
 
 .hint--light.hint--bottom-left::before {
-  border-bottom-color: $white;
+  border-bottom-color: var(--white);
 }
 
 .hint--light.hint--bottom-right::before {
-  border-bottom-color: $white;
+  border-bottom-color: var(--white);
 }
 
 .hint--light.hint--bottom::before {
-  border-bottom-color: $white;
+  border-bottom-color: var(--white);
 }
 
 .hint--light.hint--left::before {
-  border-left-color: $white;
+  border-left-color: var(--white);
 }
 
 .hint--light.hint--right::before {
-  border-right-color: $white;
+  border-right-color: var(--white);
 }
 
 //Defines a bubble shape tooltip.
 .hint--bubble::after {
-  //background-color: $primary;
+  //background-color: var(--primary);
   border-radius: 100px !important;
   font-size: 0.6rem !important;
   text-transform: uppercase !important;
@@ -783,7 +783,7 @@
 
 //Defines slightly rounded corner tooltips.
 .hint--rounded::after {
-  border-radius: $radius;
+  border-radius: var(--radius);
 }
 
 //Defines various transition effects for the tooltips.
@@ -817,117 +817,117 @@
 .is-dark {
   .hint--top-left:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
     &::after {
-      background: $dark-sidebar-dark-4 !important;
+      background: var(--dark-sidebar-dark-4) !important;
     }
 
     &::before {
-      border-top-color: $dark-sidebar-dark-4;
+      border-top-color: var(--dark-sidebar-dark-4);
     }
   }
 
   .hint--top-right:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
     &::after {
-      background: $dark-sidebar-dark-4 !important;
+      background: var(--dark-sidebar-dark-4) !important;
     }
 
     &::before {
-      border-top-color: $dark-sidebar-dark-4;
+      border-top-color: var(--dark-sidebar-dark-4);
     }
   }
 
   .hint--top:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
     &::after {
-      background: $dark-sidebar-dark-4 !important;
+      background: var(--dark-sidebar-dark-4) !important;
     }
 
     &::before {
-      border-top-color: $dark-sidebar-dark-4;
+      border-top-color: var(--dark-sidebar-dark-4);
     }
   }
 
   .hint--bottom-left:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
     &::after {
-      background: $dark-sidebar-dark-4 !important;
+      background: var(--dark-sidebar-dark-4) !important;
     }
 
     &::before {
-      border-bottom-color: $dark-sidebar-dark-4;
+      border-bottom-color: var(--dark-sidebar-dark-4);
     }
   }
 
   .hint--bottom-right:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
     &::after {
-      background: $dark-sidebar-dark-4 !important;
+      background: var(--dark-sidebar-dark-4) !important;
     }
 
     &::before {
-      border-bottom-color: $dark-sidebar-dark-4;
+      border-bottom-color: var(--dark-sidebar-dark-4);
     }
   }
 
   .hint--bottom:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
     &::after {
-      background: $dark-sidebar-dark-4 !important;
+      background: var(--dark-sidebar-dark-4) !important;
     }
 
     &::before {
-      border-bottom-color: $dark-sidebar-dark-4;
+      border-bottom-color: var(--dark-sidebar-dark-4);
     }
   }
 
   .hint--left:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
     &::after {
-      background: $dark-sidebar-dark-4 !important;
+      background: var(--dark-sidebar-dark-4) !important;
     }
 
     &::before {
-      border-left-color: $dark-sidebar-dark-4;
+      border-left-color: var(--dark-sidebar-dark-4);
     }
   }
 
   .hint--right:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
     &::after {
-      background: $dark-sidebar-dark-4 !important;
+      background: var(--dark-sidebar-dark-4) !important;
     }
 
     &::before {
-      border-right-color: $dark-sidebar-dark-4;
+      border-right-color: var(--dark-sidebar-dark-4);
     }
   }
 
   .hint--primary::after {
-    background-color: $accent;
+    background-color: var(--primary);
   }
 
   .hint--primary.hint--top-left::before {
-    border-top-color: $accent;
+    border-top-color: var(--primary);
   }
 
   .hint--primary.hint--top-right::before {
-    border-top-color: $accent;
+    border-top-color: var(--primary);
   }
 
   .hint--primary.hint--top::before {
-    border-top-color: $accent;
+    border-top-color: var(--primary);
   }
 
   .hint--primary.hint--bottom-left::before {
-    border-bottom-color: $accent;
+    border-bottom-color: var(--primary);
   }
 
   .hint--primary.hint--bottom-right::before {
-    border-bottom-color: $accent;
+    border-bottom-color: var(--primary);
   }
 
   .hint--primary.hint--bottom::before {
-    border-bottom-color: $accent;
+    border-bottom-color: var(--primary);
   }
 
   .hint--primary.hint--left::before {
-    border-left-color: $accent;
+    border-left-color: var(--primary);
   }
 
   .hint--primary.hint--right::before {
-    border-right-color: $accent;
+    border-right-color: var(--primary);
   }
 }

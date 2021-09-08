@@ -23,12 +23,12 @@
   }
 
   &.is-single {
-    background: $widget-grey;
+    background: var(--widget-grey);
     min-height: 100vh;
   }
 
   .hero-banner {
-    background: $widget-grey;
+    background: var(--widget-grey);
   }
 
   .hero-heading {
@@ -63,7 +63,7 @@
 
   .hero {
     &.is-white {
-      background: $white;
+      background: var(--white);
     }
 
     .hero-body {
@@ -80,21 +80,21 @@
 
         h2 {
           font-size: 2rem;
-          font-family: $font;
+          font-family: var(--font);
           line-height: 1;
         }
 
         p {
           font-size: 1rem;
           margin-bottom: 8px;
-          color: $muted-grey;
+          color: var(--muted-grey);
         }
 
         a {
           font-size: 0.9rem;
-          font-family: $font-alt;
+          font-family: var(--font-alt);
           font-weight: 500;
-          color: $primary;
+          color: var(--primary);
         }
       }
 
@@ -110,13 +110,13 @@
     margin-top: 10px;
 
     a {
-      font-family: $font-alt;
+      font-family: var(--font-alt);
       font-size: 0.9rem;
-      color: $light-text;
+      color: var(--light-text);
       transition: color 0.3s;
 
       &:hover {
-        color: $primary;
+        color: var(--primary);
       }
     }
   }
@@ -127,8 +127,8 @@
     padding: 10px 0;
 
     .setting-meta {
-      font-family: $font;
-      color: $light-text;
+      font-family: var(--font);
+      color: var(--light-text);
       margin-left: 8px;
     }
   }
@@ -145,22 +145,22 @@
 .is-dark {
   .auth-wrapper-inner {
     .hero-banner {
-      background: $dark-sidebar-light-4;
+      background: var(--dark-sidebar-light-4);
     }
 
     .hero {
       &.is-white {
-        background: $dark-sidebar-dark-4;
+        background: var(--dark-sidebar-dark-4);
       }
 
       .hero-body {
         .auth-content {
           h2 {
-            color: $dark-dark-text;
+            color: var(--dark-dark-text);
           }
 
           a {
-            color: $accent;
+            color: var(--primary);
           }
         }
       }
@@ -168,7 +168,7 @@
 
     .forgot-link {
       a:hover {
-        color: $accent;
+        color: var(--primary);
       }
     }
   }
@@ -243,27 +243,27 @@
 
         h2 {
           font-size: 2rem;
-          font-family: $font;
+          font-family: var(--font);
           line-height: 1;
         }
 
         p {
           font-size: 1rem;
           margin-bottom: 8px;
-          color: $muted-grey;
+          color: var(--muted-grey);
         }
 
         a {
           font-size: 0.9rem;
-          font-family: $font-alt;
+          font-family: var(--font-alt);
           font-weight: 500;
-          color: $primary;
+          color: var(--primary);
         }
       }
 
       .form-card {
-        background: $white;
-        border: 1px solid $fade-grey-dark-3;
+        background: var(--white);
+        border: 1px solid var(--fade-grey-dark-3);
         border-radius: 10px;
         padding: 50px;
         margin-bottom: 16px;
@@ -283,23 +283,23 @@
 .is-dark {
   .auth-wrapper-inner {
     &.is-single {
-      background: $dark-sidebar-light-4;
+      background: var(--dark-sidebar-light-4);
 
       .single-form-wrap {
         .inner-wrap {
           .auth-head {
             h2 {
-              color: $dark-dark-text;
+              color: var(--dark-dark-text);
             }
 
             a {
-              color: $accent;
+              color: var(--primary);
             }
           }
 
           .form-card {
-            background: $dark-sidebar-dark-4;
-            border-color: $dark-sidebar-light-1;
+            background: var(--dark-sidebar-dark-4);
+            border-color: var(--dark-sidebar-light-1);
           }
         }
       }

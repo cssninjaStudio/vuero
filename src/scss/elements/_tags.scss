@@ -28,162 +28,162 @@
   }
 
   &.is-elevated {
-    box-shadow: $light-box-shadow;
+    box-shadow: var(--light-box-shadow);
   }
 
   &.is-solid {
-    background: $white;
-    border: 1px solid $fade-grey-dark-3;
-    color: $light-text;
+    background: var(--white);
+    border: 1px solid var(--fade-grey-dark-3);
+    color: var(--light-text);
   }
 
   &.is-primary {
     &.is-elevated {
-      box-shadow: $primary-box-shadow;
+      box-shadow: var(--primary-box-shadow);
     }
 
     &.is-outlined {
       background: none !important;
-      color: $primary;
-      border: 1px solid $primary;
+      color: var(--primary);
+      border: 1px solid var(--primary);
     }
   }
 
   &.is-success {
     &.is-elevated {
-      box-shadow: $success-box-shadow;
+      box-shadow: var(--success-box-shadow);
     }
 
     &.is-outlined {
       background: none !important;
-      color: $success;
-      border: 1px solid $success;
+      color: var(--success);
+      border: 1px solid var(--success);
     }
   }
 
   &.is-info {
     &.is-elevated {
-      box-shadow: $info-box-shadow;
+      box-shadow: var(--info-box-shadow);
     }
 
     &.is-outlined {
       background: none !important;
-      color: $info;
-      border: 1px solid $info;
+      color: var(--info);
+      border: 1px solid var(--info);
     }
   }
 
   &.is-warning {
     &.is-elevated {
-      box-shadow: $warning-box-shadow;
+      box-shadow: var(--warning-box-shadow);
     }
 
     &.is-outlined {
       background: none !important;
-      color: $warning;
-      border: 1px solid $warning;
+      color: var(--warning);
+      border: 1px solid var(--warning);
     }
   }
 
   &.is-danger {
     &.is-elevated {
-      box-shadow: $danger-box-shadow;
+      box-shadow: var(--danger-box-shadow);
     }
 
     &.is-outlined {
       background: none !important;
-      color: $danger;
-      border: 1px solid $danger;
+      color: var(--danger);
+      border: 1px solid var(--danger);
     }
   }
 
   &.is-secondary {
-    background: $secondary;
-    color: $white;
+    background: var(--secondary);
+    color: var(--white);
 
     &.is-elevated {
-      box-shadow: $secondary-box-shadow;
+      box-shadow: var(--secondary-box-shadow);
     }
 
     &.is-outlined {
       background: none !important;
-      color: $secondary;
-      border: 1px solid $secondary;
+      color: var(--secondary);
+      border: 1px solid var(--secondary);
     }
   }
 
   &.is-green {
-    background: $h-green;
-    color: $white;
+    background: var(--green);
+    color: var(--white);
 
     &.is-elevated {
-      box-shadow: $h-green-box-shadow;
+      box-shadow: var(--green-box-shadow);
     }
 
     &.is-outlined {
       background: none !important;
-      color: $h-green;
-      border: 1px solid $h-green;
+      color: var(--green);
+      border: 1px solid var(--green);
     }
   }
 
   &.is-blue {
-    background: $h-blue;
-    color: $white;
+    background: var(--blue);
+    color: var(--white);
 
     &.is-elevated {
-      box-shadow: $h-blue-box-shadow;
+      box-shadow: var(--blue-box-shadow);
     }
 
     &.is-outlined {
       background: none !important;
-      color: $h-blue;
-      border: 1px solid $h-blue;
+      color: var(--blue);
+      border: 1px solid var(--blue);
     }
   }
 
   &.is-green {
-    background: $h-green;
-    color: $white;
+    background: var(--green);
+    color: var(--white);
 
     &.is-elevated {
-      box-shadow: $h-green-box-shadow;
+      box-shadow: var(--green-box-shadow);
     }
 
     &.is-outlined {
       background: none !important;
-      color: $h-green;
-      border: 1px solid $h-green;
+      color: var(--green);
+      border: 1px solid var(--green);
     }
   }
 
   &.is-purple {
-    background: $h-purple;
-    color: $white;
+    background: var(--purple);
+    color: var(--white);
 
     &.is-elevated {
-      box-shadow: $h-purple-box-shadow;
+      box-shadow: var(--purple-box-shadow);
     }
 
     &.is-outlined {
       background: none !important;
-      color: $h-purple;
-      border: 1px solid $h-purple;
+      color: var(--purple);
+      border: 1px solid var(--purple);
     }
   }
 
   &.is-orange {
-    background: $h-orange;
-    color: $white;
+    background: var(--orange);
+    color: var(--white);
 
     &.is-elevated {
-      box-shadow: $h-orange-box-shadow;
+      box-shadow: var(--orange-box-shadow);
     }
 
     &.is-outlined {
       background: none !important;
-      color: $h-orange;
-      border: 1px solid $h-orange;
+      color: var(--orange);
+      border: 1px solid var(--orange);
     }
   }
 }
@@ -195,22 +195,22 @@
 .is-dark {
   .tag {
     &:not(.is-primary):not(.is-secondary):not(.is-success):not(.is-info):not(.is-warning):not(.is-danger):not(.is-orange):not(.is-green):not(.is-blue):not(.is-purple) {
-      background: $dark-sidebar-light-10;
-      border-color: $dark-sidebar-light-10;
-      color: $dark-dark-text;
+      background: var(--dark-sidebar-light-10);
+      border-color: var(--dark-sidebar-light-10);
+      color: var(--dark-dark-text);
     }
 
     &.is-primary {
-      background: $accent;
+      background: var(--primary);
 
       &.is-outlined {
-        border-color: $accent;
-        color: $accent;
+        border-color: var(--primary);
+        color: var(--primary);
       }
 
       &.is-light {
-        background: $accent-light-22;
-        color: $accent;
+        background: var(--primary-light-22);
+        color: var(--primary);
       }
     }
   }

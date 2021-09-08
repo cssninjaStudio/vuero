@@ -199,7 +199,6 @@ const filteredData = computed(() => {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
 
 .list-view-v3 {
@@ -219,16 +218,16 @@ const filteredData = computed(() => {
         min-width: 60px;
         max-height: 60px;
         min-height: 60px;
-        border-radius: $radius-rounded;
-        border: 1px solid $fade-grey;
+        border-radius: var(--radius-rounded);
+        border: 1px solid var(--fade-grey);
       }
 
       .meta-left {
         margin-left: 16px;
 
         h3 {
-          font-family: $font-alt;
-          color: $dark-text;
+          font-family: var(--font-alt);
+          color: var(--dark-text);
           font-weight: 500;
           font-size: 1.1rem;
           line-height: 1;
@@ -236,7 +235,7 @@ const filteredData = computed(() => {
 
         > span:not(.tag) {
           font-size: 0.9rem;
-          color: $light-text;
+          color: var(--light-text);
 
           svg {
             position: relative;
@@ -249,7 +248,7 @@ const filteredData = computed(() => {
             position: relative;
             top: -3px;
             font-size: 5px;
-            color: $light-text;
+            color: var(--light-text);
             padding: 0 8px;
           }
 
@@ -281,12 +280,12 @@ const filteredData = computed(() => {
 
       .list-view-item-inner {
         > img {
-          border-color: $dark-sidebar-light-12;
+          border-color: var(--dark-sidebar-light-12);
         }
 
         .meta-left {
           h3 {
-            color: $dark-dark-text !important;
+            color: var(--dark-dark-text) !important;
           }
         }
 
@@ -294,14 +293,14 @@ const filteredData = computed(() => {
           .buttons {
             .button {
               &:nth-child(2) {
-                background: $dark-sidebar-light-2;
-                border-color: $dark-sidebar-light-8;
-                color: $dark-dark-text;
+                background: var(--dark-sidebar-light-2);
+                border-color: var(--dark-sidebar-light-8);
+                color: var(--dark-dark-text);
                 transition: all 0.3s;
 
                 &:hover {
-                  border-color: $accent;
-                  color: $accent;
+                  border-color: var(--primary);
+                  color: var(--primary);
                 }
               }
             }

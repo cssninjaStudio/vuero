@@ -1,6 +1,6 @@
 .ck-editor {
   /* Overrides the border radius setting in the theme. */
-  --ck-border-radius: $radius-large;
+  --ck-border-radius: var(--radius-large);
 
   /* Overrides the default font size in the theme. */
   --ck-font-size-base: 14px;
@@ -10,10 +10,10 @@
   --ck-custom-foreground: hsl(255, 3%, 18%);
   --ck-custom-border: hsl(300, 1%, 22%);
   --ck-custom-white: hsl(0, 0%, 100%);
-  --ck-color-base-active: #{$primary};
-  --ck-color-base-active-focus: #{$primary-dark-10};
-  --ck-color-base-focus: #{$primary-dark-10};
-  --ck-color-focus-border: #{$primary};
+  --ck-color-base-active: var(--primary);
+  --ck-color-base-active-focus: var(--primary-dark-10);
+  --ck-color-base-focus: var(--primary-dark-10);
+  --ck-color-focus-border: var(--primary);
   --ck-focus-ring: 1px solid var(--ck-color-focus-border);
 
   /* -- Overrides generic colors. ------------------------------------------------------------- */
@@ -109,7 +109,7 @@
 }
 
 .ck-editor {
-  font-family: $font;
+  font-family: var(--font);
 
   .ck-labeled-field-view__input-wrapper {
     box-shadow: none !important;
@@ -120,8 +120,8 @@
 
   .ck-insert-table-dropdown-grid-box {
     &.ck-on {
-      background: $primary !important;
-      border-color: $primary !important;
+      background: var(--primary) !important;
+      border-color: var(--primary) !important;
     }
   }
 
@@ -136,18 +136,18 @@
   .ck-editor {
     .ck-editor__main {
       .ck-editor__editable {
-        border-color: $dark-sidebar-light-12 !important;
+        border-color: var(--dark-sidebar-light-12) !important;
       }
       .ck-content {
-        background: $dark-sidebar-light-6 !important;
-        border-color: $dark-sidebar-light-12;
+        background: var(--dark-sidebar-light-6) !important;
+        border-color: var(--dark-sidebar-light-12);
       }
     }
 
     figcaption {
       &.ck-editor__nested-editable {
-        background: $dark-sidebar;
-        color: $light-text;
+        background: var(--dark-sidebar);
+        color: var(--light-text);
       }
     }
   }

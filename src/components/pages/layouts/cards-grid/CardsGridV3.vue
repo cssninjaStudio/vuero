@@ -164,7 +164,6 @@ const optionsSingle = [
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
 
 .card-grid {
@@ -201,8 +200,8 @@ const optionsSingle = [
 
       .avatar {
         object-fit: cover;
-        border: 1px solid $fade-grey-dark-4;
-        box-shadow: $light-box-shadow;
+        border: 1px solid var(--fade-grey-dark-4);
+        box-shadow: var(--light-box-shadow);
       }
 
       .badge {
@@ -214,8 +213,8 @@ const optionsSingle = [
     > h3 {
       font-size: 1.1rem;
       font-weight: 600;
-      font-family: $font-alt;
-      color: $dark-text;
+      font-family: var(--font-alt);
+      color: var(--dark-text);
     }
 
     > p {
@@ -242,12 +241,12 @@ const optionsSingle = [
 
       .button {
         width: calc(50% - 4px);
-        color: $light-text;
+        color: var(--light-text);
 
         &:hover {
-          border-color: $fade-grey-dark-4;
-          color: $primary;
-          box-shadow: $light-box-shadow;
+          border-color: var(--fade-grey-dark-4);
+          color: var(--primary);
+          box-shadow: var(--light-box-shadow);
         }
       }
     }

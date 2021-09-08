@@ -128,7 +128,6 @@ const filteredData = computed(() => {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
 
 .user-grid-v3 {
@@ -153,10 +152,10 @@ const filteredData = computed(() => {
     }
 
     h3 {
-      font-family: $font-alt;
+      font-family: var(--font-alt);
       font-size: 1.1rem;
       font-weight: 600;
-      color: $dark-text;
+      color: var(--dark-text);
     }
 
     p {
@@ -171,10 +170,10 @@ const filteredData = computed(() => {
         width: 100%;
         max-width: 180px;
         margin: 0 auto;
-        border: 1px solid $fade-grey-dark-4;
+        border: 1px solid var(--fade-grey-dark-4);
         border-radius: 8px;
-        background: $white;
-        box-shadow: $light-box-shadow;
+        background: var(--white);
+        box-shadow: var(--light-box-shadow);
         margin-bottom: 16px;
 
         .icon-tabs-inner {
@@ -187,12 +186,12 @@ const filteredData = computed(() => {
             align-items: center;
             justify-content: center;
             width: 33.3%;
-            color: $light-text;
+            color: var(--light-text);
             padding: 4px 8px;
             margin: 8px 0;
 
             &.is-active {
-              color: $primary;
+              color: var(--primary);
             }
 
             &:first-child {
@@ -202,8 +201,8 @@ const filteredData = computed(() => {
             }
 
             &:nth-child(2) {
-              border-left: 1px solid $fade-grey-dark-4;
-              border-right: 1px solid $fade-grey-dark-4;
+              border-left: 1px solid var(--fade-grey-dark-4);
+              border-right: 1px solid var(--fade-grey-dark-4);
 
               &.is-active ~ .icon-tabs-naver {
                 margin-left: 33% !important;
@@ -231,7 +230,7 @@ const filteredData = computed(() => {
             display: block;
             width: 33.3% !important;
             height: 2px;
-            background: $primary;
+            background: var(--primary);
             z-index: 1;
             transition: all 0.3s;
             border-radius: 12px;
@@ -261,16 +260,16 @@ const filteredData = computed(() => {
             display: block;
 
             &:first-child {
-              font-family: $font;
+              font-family: var(--font);
               font-size: 1.8rem;
-              color: $dark-text;
+              color: var(--dark-text);
               font-weight: 700;
               line-height: 1;
             }
 
             &:nth-child(2) {
-              font-family: $font-alt;
-              color: $light-text;
+              font-family: var(--font-alt);
+              color: var(--light-text);
             }
           }
         }
@@ -285,13 +284,13 @@ const filteredData = computed(() => {
       .button,
       .v-button {
         width: calc(50% - 4px);
-        color: $light-text;
+        color: var(--light-text);
         margin-bottom: 0;
 
         &:hover {
-          border-color: $fade-grey-dark-4;
-          color: $primary;
-          box-shadow: $light-box-shadow;
+          border-color: var(--fade-grey-dark-4);
+          color: var(--primary);
+          box-shadow: var(--light-box-shadow);
         }
       }
     }
@@ -305,20 +304,20 @@ const filteredData = computed(() => {
 
       .icon-tabs-wrapper {
         .icon-tabs {
-          background: $dark-sidebar-light-2;
-          border-color: $dark-sidebar-light-10;
+          background: var(--dark-sidebar-light-2);
+          border-color: var(--dark-sidebar-light-10);
 
           .icon-tabs-inner {
             .tab-item {
-              border-color: $dark-sidebar-light-10;
+              border-color: var(--dark-sidebar-light-10);
 
               &.is-active {
-                color: $accent;
+                color: var(--primary);
               }
             }
 
             .icon-tabs-naver {
-              background: $accent;
+              background: var(--primary);
             }
           }
         }

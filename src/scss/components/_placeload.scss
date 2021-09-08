@@ -40,26 +40,26 @@
   animation-name: placeload;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
-  background: $placeload-nuance-from;
+  background: var(--placeload-nuance-from);
   background: -webkit-gradient(
     linear,
     left top,
     right top,
-    color-stop(8%, $placeload-nuance-from),
-    color-stop(18%, $placeload-nuance-to),
-    color-stop(33%, $placeload-nuance-from)
+    color-stop(8%, var(--placeload-nuance-from)),
+    color-stop(18%, var(--placeload-nuance-to)),
+    color-stop(33%, var(--placeload-nuance-from))
   );
   background: -webkit-linear-gradient(
     left,
-    $placeload-nuance-from 8%,
-    $placeload-nuance-to 18%,
-    $placeload-nuance-from 33%
+    var(--placeload-nuance-from) 8%,
+    var(--placeload-nuance-to) 18%,
+    var(--placeload-nuance-from) 33%
   );
   background: linear-gradient(
     to right,
-    $placeload-nuance-from 8%,
-    $placeload-nuance-to 18%,
-    $placeload-nuance-from 33%
+    var(--placeload-nuance-from) 8%,
+    var(--placeload-nuance-to) 18%,
+    var(--placeload-nuance-from) 33%
   );
   -webkit-background-size: 800px 104px;
   background-size: 1200px 104px;
@@ -82,26 +82,26 @@
 
 .is-dark {
   .loads {
-    background: $placeload-dark-nuance-from;
+    background: var(--placeload-dark-nuance-from);
     background: -webkit-gradient(
       linear,
       left top,
       right top,
-      color-stop(8%, $placeload-dark-nuance-from),
-      color-stop(18%, $placeload-dark-nuance-to),
-      color-stop(33%, $placeload-dark-nuance-from)
+      color-stop(8%, var(--placeload-dark-nuance-from)),
+      color-stop(18%, var(--placeload-dark-nuance-to)),
+      color-stop(33%, var(--placeload-dark-nuance-from))
     );
     background: -webkit-linear-gradient(
       left,
-      $placeload-dark-nuance-from 8%,
-      $placeload-dark-nuance-to 18%,
-      $placeload-dark-nuance-from 33%
+      var(--placeload-dark-nuance-from) 8%,
+      var(--placeload-dark-nuance-to) 18%,
+      var(--placeload-dark-nuance-from) 33%
     );
     background: linear-gradient(
       to right,
-      $placeload-dark-nuance-from 8%,
-      $placeload-dark-nuance-to 18%,
-      $placeload-dark-nuance-from 33%
+      var(--placeload-dark-nuance-from) 8%,
+      var(--placeload-dark-nuance-to) 18%,
+      var(--placeload-dark-nuance-from) 33%
     );
     -webkit-background-size: 800px 104px;
     background-size: 1200px 104px;

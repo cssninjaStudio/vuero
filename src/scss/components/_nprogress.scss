@@ -1,5 +1,5 @@
 #nprogress .bar {
-  background: $primary;
+  background: var(--primary);
   z-index: 100000;
 }
 #nprogress .spinner {

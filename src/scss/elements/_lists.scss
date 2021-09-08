@@ -27,16 +27,16 @@
     margin: 0 10px;
 
     .name {
-      font-family: $font-alt;
+      font-family: var(--font-alt);
       font-size: 0.95rem;
       font-weight: 600;
-      color: $dark-text;
+      color: var(--dark-text);
     }
 
     .position {
-      font-family: $font;
+      font-family: var(--font);
       font-size: 12px;
-      color: $light-text;
+      color: var(--light-text);
     }
   }
 
@@ -44,20 +44,20 @@
     height: 10px;
     width: 10px;
     border-radius: 100px;
-    background: $fade-grey;
+    background: var(--fade-grey);
     margin-left: auto;
     margin-right: 1rem;
 
     &.is-offline {
-      background: $fade-grey;
+      background: var(--fade-grey);
     }
 
     &.is-online {
-      background: $success;
+      background: var(--success);
     }
 
     &.is-busy {
-      background: $warning;
+      background: var(--warning);
     }
   }
 
@@ -72,14 +72,14 @@
       align-items: center;
       height: 32px;
       width: 32px;
-      border-radius: $radius-rounded;
-      color: $light-text-light-15;
+      border-radius: var(--radius-rounded);
+      color: var(--light-text-light-15);
       font-size: 0.9rem;
       transition: all 0.3s;
 
       &:hover {
-        color: $light-text;
-        background: $fade-grey-light-3;
+        color: var(--light-text);
+        background: var(--fade-grey-light-3);
       }
     }
   }
@@ -93,7 +93,7 @@
   .user-list {
     .user-list-icons {
       a:hover {
-        background: $dark-sidebar-light-10;
+        background: var(--dark-sidebar-light-10);
       }
     }
   }

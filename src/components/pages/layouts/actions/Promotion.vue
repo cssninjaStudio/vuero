@@ -90,7 +90,6 @@
 </template>
 
 <style lang="scss" scoped>
-@import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
 
 /* ==========================================================================
@@ -117,7 +116,7 @@
         border: none;
         background: none;
         border-radius: 0;
-        border-right: 1px solid $fade-grey-dark-3;
+        border-right: 1px solid var(--fade-grey-dark-3);
 
         .price {
           text-align: center;
@@ -125,12 +124,12 @@
 
           span {
             display: block;
-            font-family: $font;
+            font-family: var(--font);
 
             &:first-child {
               font-size: 2.8rem;
               font-weight: 600;
-              color: $dark-text;
+              color: var(--dark-text);
               line-height: 1;
 
               &::before {
@@ -143,7 +142,7 @@
 
             &:nth-child(2) {
               font-size: 0.75rem;
-              color: $light-text;
+              color: var(--light-text);
               text-transform: uppercase;
             }
           }
@@ -158,13 +157,13 @@
 
       .side-inner {
         .side-title {
-          font-family: $font;
+          font-family: var(--font);
           margin-bottom: 16px;
 
           h3 {
-            font-family: $font-alt;
+            font-family: var(--font-alt);
             font-weight: 600;
-            color: $dark-text;
+            color: var(--dark-text);
           }
 
           p {
@@ -181,11 +180,11 @@
               height: 32px;
               width: 32px;
               min-width: 32px;
-              border-radius: $radius-rounded;
-              background: $white;
-              border: 1px solid $fade-grey-dark-3;
-              box-shadow: $light-box-shadow;
-              color: $primary;
+              border-radius: var(--radius-rounded);
+              background: var(--white);
+              border: 1px solid var(--fade-grey-dark-3);
+              box-shadow: var(--light-box-shadow);
+              color: var(--primary);
 
               svg {
                 width: 16px;
@@ -219,7 +218,7 @@
 
       .box-content {
         text-align: center;
-        font-family: $font;
+        font-family: var(--font);
 
         img {
           display: block;
@@ -234,13 +233,13 @@
 
         h3 {
           font-size: 1.1rem;
-          font-family: $font-alt;
+          font-family: var(--font-alt);
           font-weight: 600;
           max-width: 320px;
           margin: 0 auto 8px auto;
 
           span {
-            color: $primary;
+            color: var(--primary);
           }
         }
 
@@ -286,7 +285,7 @@
         .action-box {
           padding: 20px 20px 40px 20px;
           border-right: none;
-          border-bottom: 1px solid $fade-grey-dark-3;
+          border-bottom: 1px solid var(--fade-grey-dark-3);
 
           .box-content {
             .buttons {

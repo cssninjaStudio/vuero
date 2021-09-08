@@ -197,7 +197,6 @@ import { courses, files, students } from '/@src/data/dashboards/course'
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
 
 .course-dashboard {
@@ -206,7 +205,7 @@ import { courses, files, students } from '/@src/data/dashboards/course'
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
-    font-family: $font;
+    font-family: var(--font);
 
     &.is-main {
       margin-bottom: 30px;
@@ -217,10 +216,10 @@ import { courses, files, students } from '/@src/data/dashboards/course'
     }
 
     h2 {
-      font-family: $font-alt;
+      font-family: var(--font-alt);
       font-size: 1.2rem;
       font-weight: 600;
-      color: $dark-text;
+      color: var(--dark-text);
     }
   }
 
@@ -240,10 +239,10 @@ import { courses, files, students } from '/@src/data/dashboards/course'
       }
 
       h3 {
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         font-size: 1.1rem;
         font-weight: 600;
-        color: $dark-text;
+        color: var(--dark-text);
         margin-bottom: 1rem;
       }
 
@@ -266,9 +265,9 @@ import { courses, files, students } from '/@src/data/dashboards/course'
         }
 
         .link {
-          font-family: $font;
+          font-family: var(--font);
           font-weight: 500;
-          color: $primary;
+          color: var(--primary);
           margin-left: 1rem;
         }
       }
@@ -279,22 +278,22 @@ import { courses, files, students } from '/@src/data/dashboards/course'
         }
 
         > a {
-          font-family: $font;
+          font-family: var(--font);
           font-weight: 500;
-          color: $primary;
+          color: var(--primary);
           margin-bottom: 0.5rem;
         }
 
         .block-stats {
           display: flex;
-          color: $light-text;
+          color: var(--light-text);
 
           + .block-stats {
             margin-top: 0.25rem;
           }
 
           span {
-            font-family: $font;
+            font-family: var(--font);
             display: flex;
             align-items: center;
             margin-right: 0.75rem;
@@ -344,10 +343,10 @@ import { courses, files, students } from '/@src/data/dashboards/course'
         border-radius: 0.75rem;
 
         &:hover {
-          background: $primary;
-          border-color: $primary;
-          color: $white;
-          box-shadow: $primary-box-shadow;
+          background: var(--primary);
+          border-color: var(--primary);
+          color: var(--white);
+          box-shadow: var(--primary-box-shadow);
         }
       }
     }
@@ -375,8 +374,8 @@ import { courses, files, students } from '/@src/data/dashboards/course'
     cursor: pointer;
 
     &:hover {
-      border-color: $primary;
-      box-shadow: $light-box-shadow;
+      border-color: var(--primary);
+      box-shadow: var(--light-box-shadow);
     }
 
     .tile-grid-item-inner {
@@ -396,11 +395,11 @@ import { courses, files, students } from '/@src/data/dashboards/course'
 
         span {
           display: block;
-          font-family: $font;
+          font-family: var(--font);
 
           &:first-child {
-            color: $dark-text;
-            font-family: $font-alt;
+            color: var(--dark-text);
+            font-family: var(--font-alt);
             font-weight: 600;
             font-size: 1rem;
           }
@@ -411,7 +410,7 @@ import { courses, files, students } from '/@src/data/dashboards/course'
 
             span {
               display: inline-block;
-              color: $light-text;
+              color: var(--light-text);
               font-size: 0.8rem;
               font-weight: 400;
             }
@@ -419,7 +418,7 @@ import { courses, files, students } from '/@src/data/dashboards/course'
             .icon-separator {
               position: relative;
               font-size: 4px;
-              color: $light-text;
+              color: var(--light-text);
               padding: 0 6px;
             }
           }
@@ -450,7 +449,7 @@ import { courses, files, students } from '/@src/data/dashboards/course'
     .tile-grid-item {
       @include vuero-card--dark();
       &:hover {
-        border-color: $accent !important;
+        border-color: var(--primary) !important;
       }
     }
   }

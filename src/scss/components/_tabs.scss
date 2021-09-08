@@ -32,11 +32,11 @@
 
       &.is-active {
         a {
-          background: $primary;
-          border-color: $primary;
+          background: var(--primary);
+          border-color: var(--primary);
 
           &:hover {
-            color: $white;
+            color: var(--white);
           }
         }
       }
@@ -54,24 +54,24 @@
   li {
     &.is-active {
       a {
-        border-bottom-color: $primary;
-        color: $primary;
+        border-bottom-color: var(--primary);
+        color: var(--primary);
 
         &:hover {
-          border-bottom-color: $primary;
-          color: $primary;
+          border-bottom-color: var(--primary);
+          color: var(--primary);
         }
       }
     }
 
     a {
-      font-family: $font;
+      font-family: var(--font);
       border-bottom-width: 2px;
-      color: $placeholder;
+      color: var(--placeholder);
       border-bottom-color: transparent;
 
       &:hover {
-        color: $light-text;
+        color: var(--light-text);
         border-bottom-color: transparent;
       }
 
@@ -113,15 +113,15 @@
         &.is-active {
           a,
           a:hover {
-            background: $dark-sidebar-light-1 !important;
+            background: var(--dark-sidebar-light-1) !important;
           }
         }
 
         a {
-          border-color: $dark-sidebar-light-16 !important;
+          border-color: var(--dark-sidebar-light-16) !important;
 
           &:hover {
-            background: $dark-sidebar-light-4 !important;
+            background: var(--dark-sidebar-light-4) !important;
           }
         }
       }
@@ -132,31 +132,31 @@
         &.is-active {
           a,
           a:hover {
-            background: $accent !important;
-            border-color: $accent;
-            color: $white;
+            background: var(--primary) !important;
+            border-color: var(--primary);
+            color: var(--white);
           }
         }
 
         a {
-          border-color: $dark-sidebar-light-16 !important;
+          border-color: var(--dark-sidebar-light-16) !important;
 
           &:hover {
-            background: $dark-sidebar-light-4 !important;
+            background: var(--dark-sidebar-light-4) !important;
           }
         }
       }
     }
 
     ul {
-      border-bottom-color: $dark-sidebar-light-16;
+      border-bottom-color: var(--dark-sidebar-light-16);
     }
 
     li {
       &.is-active {
         a {
-          border-bottom-color: $accent;
-          color: $accent;
+          border-bottom-color: var(--primary);
+          color: var(--primary);
         }
       }
     }
@@ -198,7 +198,7 @@
   &.is-slider {
     &.is-inverted {
       .tabs {
-        background: $white;
+        background: var(--white);
       }
     }
 
@@ -211,8 +211,8 @@
 
     .tabs {
       position: relative;
-      background: $fade-grey-light-2;
-      border: 1px solid $fade-grey;
+      background: var(--fade-grey-light-2);
+      border: 1px solid var(--fade-grey);
       max-width: 185px;
       height: 35px;
       border-bottom: none;
@@ -224,11 +224,11 @@
         &.is-profile {
           li {
             a {
-              color: $smoke-white !important;
+              color: var(--smoke-white) !important;
             }
 
             &.is-active a {
-              color: $dark-text !important;
+              color: var(--dark-text) !important;
             }
           }
         }
@@ -238,8 +238,8 @@
         width: 50%;
 
         a {
-          color: $light-text;
-          font-family: $font;
+          color: var(--light-text);
+          font-family: var(--font);
           height: 40px;
           border-bottom: none;
           position: relative;
@@ -253,7 +253,7 @@
         }
 
         &.is-active a {
-          color: $white;
+          color: var(--white);
           font-weight: 400;
         }
 
@@ -273,7 +273,7 @@
 
     .tab-naver {
       left: 0;
-      background: $primary;
+      background: var(--primary);
       position: absolute;
       top: 0.5px;
       display: block;
@@ -283,7 +283,7 @@
       border-radius: 50px;
 
       &.is-profile {
-        background: $smoke-white !important;
+        background: var(--smoke-white) !important;
       }
 
       &.is-active {
@@ -302,7 +302,7 @@
   &.is-triple-slider {
     &.is-inverted {
       .tabs {
-        background: $white;
+        background: var(--white);
       }
     }
 
@@ -315,8 +315,8 @@
 
     .tabs {
       position: relative;
-      background: $fade-grey-light-2;
-      border: 1px solid $fade-grey;
+      background: var(--fade-grey-light-2);
+      border: 1px solid var(--fade-grey);
       max-width: 280px;
       height: 35px;
       border-bottom: none;
@@ -328,11 +328,11 @@
         &.is-profile {
           li {
             a {
-              color: $smoke-white !important;
+              color: var(--smoke-white) !important;
             }
 
             &.is-active a {
-              color: $dark-text !important;
+              color: var(--dark-text) !important;
             }
           }
         }
@@ -342,8 +342,8 @@
         width: 33.3%;
 
         a {
-          color: $light-text;
-          font-family: $font;
+          color: var(--light-text);
+          font-family: var(--font);
           font-weight: 400;
           height: 40px;
           border-bottom: none;
@@ -358,7 +358,7 @@
         }
 
         &.is-active a {
-          color: $white;
+          color: var(--white);
           font-weight: 400;
         }
 
@@ -388,14 +388,14 @@
       left: 0;
       display: block;
       width: 33.3% !important;
-      background: $primary;
+      background: var(--primary);
       height: 32px;
       transition: all 0.3s;
       z-index: 4;
       border-radius: 50px;
 
       &.is-profile {
-        background: $smoke-white !important;
+        background: var(--smoke-white) !important;
       }
 
       &.is-active {
@@ -415,17 +415,17 @@
     &.is-triple-slider {
       &.is-inverted {
         .tabs {
-          border: 1px solid $dark-sidebar-light-16 !important;
-          background: $dark-sidebar-light-2 !important;
+          border: 1px solid var(--dark-sidebar-light-16) !important;
+          background: var(--dark-sidebar-light-2) !important;
         }
       }
 
       .tabs {
-        border: 1px solid $dark-sidebar-light-16 !important;
-        background: $dark-sidebar-light-2 !important;
+        border: 1px solid var(--dark-sidebar-light-16) !important;
+        background: var(--dark-sidebar-light-2) !important;
 
         .tab-naver {
-          background: $accent !important;
+          background: var(--primary) !important;
         }
 
         ul {
@@ -435,7 +435,7 @@
         li {
           &.is-active {
             a {
-              color: $white;
+              color: var(--white);
             }
           }
         }
@@ -455,13 +455,13 @@
         li {
           &.is-active {
             a {
-              color: $primary;
-              border-bottom-color: $primary;
+              color: var(--primary);
+              border-bottom-color: var(--primary);
             }
           }
 
           a {
-            color: $light-text;
+            color: var(--light-text);
           }
         }
       }
@@ -500,8 +500,8 @@
 
           &.is-active {
             a {
-              color: $primary;
-              border-right-color: $primary;
+              color: var(--primary);
+              border-right-color: var(--primary);
             }
           }
 
@@ -509,7 +509,7 @@
             display: block;
             border-bottom-color: transparent !important;
             border-right: 2px solid #dbdbdb;
-            color: $light-text;
+            color: var(--light-text);
           }
         }
       }

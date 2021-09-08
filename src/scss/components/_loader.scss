@@ -35,8 +35,8 @@
 
     .loader-end {
       span {
-        font-family: $font;
-        color: $light-text;
+        font-family: var(--font);
+        color: var(--light-text);
       }
     }
   }
@@ -62,7 +62,7 @@
     align-items: center;
     height: 100%;
     width: 100%;
-    background: $white;
+    background: var(--white);
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s;
@@ -78,7 +78,7 @@
     }
 
     &.is-grey {
-      background: $background-grey;
+      background: var(--background-grey);
     }
 
     .loader {
@@ -106,10 +106,10 @@
 .is-dark {
   .has-loader {
     .v-loader-wrapper {
-      background: $dark-sidebar-light-6;
+      background: var(--dark-sidebar-light-6);
 
       &.is-grey {
-        background: $dark-sidebar-light-10;
+        background: var(--dark-sidebar-light-10);
       }
     }
   }
@@ -131,7 +131,7 @@ $radius-rounded: 290486px !default;
 @mixin loader {
   animation: spinAroundLoader 500ms infinite linear;
   border: 2px solid $grey-lighter;
-  border-radius: $radius-rounded;
+  border-radius: var(--radius-rounded);
   border-right-color: transparent;
   border-top-color: transparent;
   content: '';

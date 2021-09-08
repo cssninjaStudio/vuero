@@ -79,6 +79,5 @@ const emit = defineEmits(['addConversation', 'selectConversation'])
 </template>
 
 <style lang="scss">
-@import '../../../scss/abstracts/_variables.scss';
 @import '../../../scss/layout/_sidebar-panel.scss';
 </style>

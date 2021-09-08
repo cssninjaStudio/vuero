@@ -390,7 +390,6 @@
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
 
 .stock-dashboard {
@@ -420,39 +419,39 @@
 
       &.github::before,
       &.apple::before {
-        background: $github;
-        box-shadow: $github-box-shadow;
+        background: var(--github);
+        box-shadow: var(--github-box-shadow);
       }
 
       &.invision::before {
-        background: $invision;
-        box-shadow: $invision-box-shadow;
+        background: var(--invision);
+        box-shadow: var(--invision-box-shadow);
       }
 
       &.facebook::before,
       &.docker::before {
-        background: $facebook;
-        box-shadow: $facebook-box-shadow;
+        background: var(--facebook);
+        box-shadow: var(--facebook-box-shadow);
       }
 
       &.amazon::before {
-        background: $amazon;
-        box-shadow: $amazon-box-shadow;
+        background: var(--amazon);
+        box-shadow: var(--amazon-box-shadow);
       }
 
       &.twitter::before {
-        background: $twitter;
-        box-shadow: $twitter-box-shadow;
+        background: var(--twitter);
+        box-shadow: var(--twitter-box-shadow);
       }
 
       &.algolia::before {
-        background: $accent;
-        box-shadow: $accent-box-shadow;
+        background: var(--primary);
+        box-shadow: var(--primary-box-shadow);
       }
 
       &.snapchat::before {
-        background: $primary;
-        box-shadow: $primary-box-shadow;
+        background: var(--primary);
+        box-shadow: var(--primary-box-shadow);
       }
 
       i {
@@ -469,22 +468,22 @@
       line-height: 1.2;
 
       .stock-name {
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         font-weight: 600;
         font-size: 0.9rem;
-        color: $dark-text;
+        color: var(--dark-text);
       }
 
       .stock-fullname {
-        font-family: $font;
-        color: $light-text;
+        font-family: var(--font);
+        color: var(--light-text);
       }
     }
 
     .stock-value {
       flex: 1;
       font-weight: bold;
-      color: $light-text;
+      color: var(--light-text);
       text-align: right;
     }
   }
@@ -494,10 +493,10 @@
     display: inline-block;
     width: 100%;
     padding: 20px;
-    background: $white;
+    background: var(--white);
     border-radius: 10px;
-    box-shadow: $light-box-shadow;
-    border: 1px solid $fade-grey;
+    box-shadow: var(--light-box-shadow);
+    border: 1px solid var(--fade-grey);
 
     .dropdown {
       position: absolute;
@@ -512,7 +511,7 @@
       display: block;
 
       text {
-        font-family: $font;
+        font-family: var(--font);
         font-weight: 700;
         font-size: 12px;
         font-style: normal;
@@ -537,18 +536,18 @@
             transform: translateY(-5px);
 
             &::before {
-              border-color: $primary;
-              box-shadow: $light-box-shadow;
+              border-color: var(--primary);
+              box-shadow: var(--light-box-shadow);
             }
 
             i {
-              color: $primary;
+              color: var(--primary);
             }
           }
         }
 
         .asset-name {
-          color: $primary;
+          color: var(--primary);
         }
       }
 
@@ -569,8 +568,8 @@
             content: '';
             width: 46px;
             height: 46px;
-            background-color: $white;
-            border: 1px solid $fade-grey;
+            background-color: var(--white);
+            border: 1px solid var(--fade-grey);
             transform: rotate(45deg);
             border-radius: 10px;
             transition: all 0.3s;
@@ -581,7 +580,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            color: $light-text;
+            color: var(--light-text);
             font-size: 18px;
             transition: color 0.3s;
           }
@@ -589,9 +588,9 @@
       }
 
       .asset-name {
-        color: $dark-text;
+        color: var(--dark-text);
         font-size: 0.9rem;
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         font-weight: 600;
         transition: color 0.3s;
       }
@@ -608,10 +607,10 @@
       margin-bottom: 20px;
 
       h3 {
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         font-size: 1rem;
         font-weight: 600;
-        color: $dark-text;
+        color: var(--dark-text);
       }
     }
 
@@ -630,14 +629,14 @@
 .is-dark {
   .stock-dashboard {
     .graph {
-      background: $dark-sidebar-light-6 !important;
-      border-color: $dark-sidebar-light-12 !important;
+      background: var(--dark-sidebar-light-6) !important;
+      border-color: var(--dark-sidebar-light-12) !important;
     }
 
     .stock {
       .stock-info {
         .stock-name {
-          color: $dark-dark-text;
+          color: var(--dark-dark-text);
         }
       }
     }
@@ -648,31 +647,31 @@
           .asset {
             .asset-logo {
               &::before {
-                border-color: $accent !important;
+                border-color: var(--primary) !important;
               }
 
               i {
-                color: $accent;
+                color: var(--primary);
               }
             }
           }
 
           .asset-name {
-            color: $accent;
+            color: var(--primary);
           }
         }
 
         .asset {
           .asset-logo {
             &::before {
-              background: $dark-sidebar-light-6 !important;
-              border-color: $dark-sidebar-light-12 !important;
+              background: var(--dark-sidebar-light-6) !important;
+              border-color: var(--dark-sidebar-light-12) !important;
             }
           }
         }
 
         .asset-name {
-          color: $dark-dark-text;
+          color: var(--dark-dark-text);
         }
       }
     }
@@ -682,7 +681,7 @@
 
       .action-bar {
         h3 {
-          color: $dark-dark-text;
+          color: var(--dark-dark-text);
         }
       }
     }

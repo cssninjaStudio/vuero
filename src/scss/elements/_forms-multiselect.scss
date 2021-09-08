@@ -14,7 +14,7 @@
 ========================================================================== */
 
 .multiselect {
-  font-family: $font;
+  font-family: var(--font);
 
   .multiselect-dropdown {
     overflow: hidden;
@@ -35,49 +35,49 @@
   }
 
   .multiselect-input {
-    background: $white;
+    background: var(--white);
     min-height: 38px;
   }
 
   .multiselect-single-label {
-    font-family: $font;
+    font-family: var(--font);
     font-size: 0.9rem;
 
     .select-label-text {
-      font-family: $font;
+      font-family: var(--font);
       font-size: 0.9rem;
-      color: $dark-text;
+      color: var(--dark-text);
     }
   }
 
   .multiselect-placeholder,
   .multiselect-multiple-label {
     font-size: 0.9rem;
-    color: $light-text;
+    color: var(--light-text);
     padding-left: 1rem;
   }
 
   .multiselect-tags {
     .multiselect-tag {
-      font-family: $font;
+      font-family: var(--font);
       font-size: 0.9rem;
       font-weight: 400;
       padding: 1px 0 1px 8px;
-      background: $widget-grey-dark-4;
-      color: $dark-text;
+      background: var(--widget-grey-dark-4);
+      color: var(--dark-text);
 
       i {
         padding-right: 4px;
 
         &::before {
-          color: $light-text;
+          color: var(--light-text);
         }
 
         &:hover {
           background: transparent;
 
           &::before {
-            color: $dark-text;
+            color: var(--dark-text);
           }
         }
       }
@@ -85,9 +85,9 @@
   }
 
   .multiselect-search {
-    font-family: $font;
+    font-family: var(--font);
     font-size: 0.9rem;
-    color: $dark-text;
+    color: var(--dark-text);
   }
 
   .multiselect-options {
@@ -109,12 +109,12 @@
       transition: background-color 0.3s;
 
       &.is-pointed {
-        background: $widget-grey-dark-1;
+        background: var(--widget-grey-dark-1);
       }
 
       &.is-selected {
         background: transparent !important;
-        color: $dark-text;
+        color: var(--dark-text);
 
         &::after {
           position: absolute;
@@ -124,7 +124,7 @@
           font-family: 'Font Awesome 5 Free';
           font-weight: 900;
           font-size: 0.9rem;
-          color: $light-text;
+          color: var(--light-text);
         }
       }
 
@@ -140,9 +140,9 @@
     .multiselect-no-options,
     .multiselect-no-results {
       width: 100%;
-      font-family: $font;
+      font-family: var(--font);
       font-size: 0.95rem;
-      color: $light-text;
+      color: var(--light-text);
     }
   }
 }
@@ -155,7 +155,7 @@
           i {
             &:hover {
               &::before {
-                color: $white !important;
+                color: var(--white) !important;
               }
             }
           }
@@ -166,67 +166,67 @@
     .multiselect {
       .multiselect-tag {
         img {
-          border-color: $dark-sidebar-light-2 !important;
+          border-color: var(--dark-sidebar-light-2) !important;
         }
       }
     }
   }
 
   .multiselect {
-    background-color: $dark-sidebar-light-2;
-    border: 1px solid $dark-sidebar-light-10;
-    color: $dark-dark-text;
+    background-color: var(--dark-sidebar-light-2);
+    border: 1px solid var(--dark-sidebar-light-10);
+    color: var(--dark-dark-text);
 
     .multiselect-clear {
-      background-color: $dark-sidebar-light-2;
+      background-color: var(--dark-sidebar-light-2);
     }
 
     .multiselect-single-label {
-      color: $dark-dark-text;
+      color: var(--dark-dark-text);
     }
 
     .multiselect-tags-search,
     .multiselect-search {
       background: transparent;
-      color: $light-text;
+      color: var(--light-text);
     }
 
     .multiselect-single-label {
       .select-label-text {
-        color: $white;
+        color: var(--white);
       }
     }
 
     .multiselect-tags {
       .multiselect-tag {
-        background-color: $dark-sidebar-light-10;
-        color: $white;
+        background-color: var(--dark-sidebar-light-10);
+        color: var(--white);
 
         i::before {
           &:hover {
-            color: $white !important;
+            color: var(--white) !important;
           }
         }
       }
     }
 
     .multiselect-dropdown {
-      background-color: $dark-sidebar-dark-2;
-      border-color: $dark-sidebar-light-10;
+      background-color: var(--dark-sidebar-dark-2);
+      border-color: var(--dark-sidebar-light-10);
 
       .multiselect-option {
-        color: $light-text;
+        color: var(--light-text);
 
         &.is-pointed {
-          background: $dark-sidebar-light-6;
+          background: var(--dark-sidebar-light-6);
         }
 
         &.is-selected {
-          color: $white;
+          color: var(--white);
         }
 
         &.is-disabled {
-          background: $dark-sidebar-light-2;
+          background: var(--dark-sidebar-light-2);
           cursor: not-allowed;
         }
       }
@@ -321,7 +321,7 @@
       .select-option-icon-wrap,
       .select-label-icon,
       .select-label-icon-wrap {
-        border-radius: $radius-rounded;
+        border-radius: var(--radius-rounded);
       }
     }
   }
@@ -346,19 +346,19 @@
       min-width: 22px;
       border-radius: 0.15rem;
       font-size: 1rem;
-      color: $light-text;
+      color: var(--light-text);
     }
 
     .select-option-text {
-      font-family: $font;
+      font-family: var(--font);
       font-size: 0.9rem;
-      color: $light-text;
+      color: var(--light-text);
     }
 
     .select-label-text {
-      font-family: $font;
+      font-family: var(--font);
       font-size: 0.9rem;
-      color: $dark-text;
+      color: var(--dark-text);
     }
 
     .select-label-icon {
@@ -377,11 +377,11 @@
       justify-content: center;
       border-radius: 0.15rem;
       font-size: 1.1rem;
-      color: $light-text;
+      color: var(--light-text);
     }
 
     .select-option-label {
-      font-family: $font;
+      font-family: var(--font);
     }
 
     .select-option-icon,
@@ -391,7 +391,7 @@
       }
 
       &.is-rounded {
-        border-radius: $radius-rounded;
+        border-radius: var(--radius-rounded);
       }
     }
   }
@@ -408,7 +408,7 @@
         &.is-user,
         &.is-image,
         &.is-icon {
-          border-radius: $radius;
+          border-radius: var(--radius);
           // padding-left: 4px;
 
           img {
@@ -478,7 +478,7 @@
         }
 
         img {
-          border: 2px solid $white;
+          border: 2px solid var(--white);
           margin: 0 !important;
         }
 
@@ -486,7 +486,7 @@
           position: absolute;
           top: -2px;
           right: 0;
-          background: $white;
+          background: var(--white);
           height: 14px;
           width: 14px;
           min-width: 14px !important;
@@ -519,7 +519,7 @@
 
         img {
           min-width: 26px;
-          border-radius: $radius-rounded;
+          border-radius: var(--radius-rounded);
           height: 26px;
           margin-right: 8px;
           margin-top: 2px;
@@ -527,8 +527,8 @@
         }
 
         i::before {
-          color: $light-text;
-          border-radius: $radius-rounded;
+          color: var(--light-text);
+          border-radius: var(--radius-rounded);
           margin-left: 0.5rem;
           padding: 0;
           display: flex;

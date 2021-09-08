@@ -190,7 +190,6 @@ const optionsSingle = [
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
 
 .user-grid-v2 {
@@ -215,10 +214,10 @@ const optionsSingle = [
     }
 
     h3 {
-      font-family: $font-alt;
+      font-family: var(--font-alt);
       font-size: 1.1rem;
       font-weight: 600;
-      color: $dark-text;
+      color: var(--dark-text);
     }
 
     p {
@@ -241,25 +240,25 @@ const optionsSingle = [
 
       .button {
         width: calc(50% - 4px);
-        color: $light-text;
+        color: var(--light-text);
 
         &:hover {
-          border-color: $fade-grey-dark-4;
-          color: $primary;
-          box-shadow: $light-box-shadow;
+          border-color: var(--fade-grey-dark-4);
+          color: var(--primary);
+          box-shadow: var(--light-box-shadow);
         }
       }
     }
   }
 
   .grid-item-wrap {
-    border: 1px solid $fade-grey-dark-3;
-    border-radius: $radius-large;
+    border: 1px solid var(--fade-grey-dark-3);
+    border-radius: var(--radius-large);
     transition: all 0.3s;
 
     .grid-item-head {
       background: #fafafa;
-      border-radius: $radius-large 6px 0 0;
+      border-radius: var(--radius-large) 6px 0 0;
       padding: 20px;
 
       .flex-head {
@@ -273,15 +272,15 @@ const optionsSingle = [
             display: flex;
 
             &:first-child {
-              font-family: $font-alt;
+              font-family: var(--font-alt);
               font-weight: 600;
               font-size: 0.95rem;
-              color: $dark-text;
+              color: var(--dark-text);
             }
 
             &:nth-child(2) {
               font-size: 0.9rem;
-              color: $light-text;
+              color: var(--light-text);
             }
           }
         }
@@ -290,28 +289,28 @@ const optionsSingle = [
           height: 28px;
           width: 28px;
           min-width: 28px;
-          border-radius: $radius-rounded;
-          border: 1px solid $fade-grey-dark-3;
+          border-radius: var(--radius-rounded);
+          border: 1px solid var(--fade-grey-dark-3);
           display: flex;
           align-items: center;
           justify-content: center;
 
           &.is-success {
-            background: $success;
-            border-color: $success;
-            color: $white;
+            background: var(--success);
+            border-color: var(--success);
+            color: var(--white);
           }
 
           &.is-warning {
-            background: $h-orange;
-            border-color: $h-orange;
-            color: $white;
+            background: var(--orange);
+            border-color: var(--orange);
+            color: var(--white);
           }
 
           &.is-danger {
-            background: $danger;
-            border-color: $danger;
-            color: $white;
+            background: var(--danger);
+            border-color: var(--danger);
+            color: var(--white);
           }
 
           i {
@@ -328,13 +327,13 @@ const optionsSingle = [
         .button,
         .v-button {
           width: calc(50% - 4px);
-          color: $light-text;
+          color: var(--light-text);
           margin-bottom: 0;
 
           &:hover {
-            border-color: $fade-grey-dark-4;
-            color: $primary;
-            box-shadow: $light-box-shadow;
+            border-color: var(--fade-grey-dark-4);
+            color: var(--primary);
+            box-shadow: var(--light-box-shadow);
           }
         }
       }
@@ -356,10 +355,10 @@ const optionsSingle = [
   }
   .user-grid-v2 {
     .grid-item-wrap {
-      border-color: $dark-sidebar-light-12;
+      border-color: var(--dark-sidebar-light-12);
 
       .grid-item-head {
-        background: $dark-sidebar-light-4;
+        background: var(--dark-sidebar-light-4);
       }
     }
   }

@@ -121,7 +121,7 @@ Responsive styles
   }
 
   .sidebar-panel {
-    box-shadow: $light-box-shadow;
+    box-shadow: var(--light-box-shadow);
 
     .panel-close {
       display: block !important;
@@ -238,9 +238,9 @@ Responsive styles
         position: absolute;
         top: 100%;
         z-index: 3;
-        background: $white;
-        border-radius: $radius-large;
-        border: 1px solid $fade-grey;
+        background: var(--white);
+        border-radius: var(--radius-large);
+        border: 1px solid var(--fade-grey);
         box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1),
           0 0 0 1px rgba(10, 10, 10, 0.1);
       }
@@ -268,7 +268,7 @@ Responsive styles
     display: none !important;
     left: 0 !important;
     z-index: 100 !important;
-    box-shadow: $light-box-shadow;
+    box-shadow: var(--light-box-shadow);
 
     .panel-close {
       display: flex !important;
@@ -405,9 +405,9 @@ Responsive styles
         position: absolute;
         top: 100%;
         z-index: 3;
-        background: $white;
-        border-radius: $radius-large;
-        border: 1px solid $fade-grey;
+        background: var(--white);
+        border-radius: var(--radius-large);
+        border: 1px solid var(--fade-grey);
         box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1),
           0 0 0 1px rgba(10, 10, 10, 0.1);
       }
@@ -430,15 +430,15 @@ Responsive styles
     display: none !important;
     left: 0 !important;
     z-index: 100 !important;
-    border-right: 1px solid $fade-grey !important;
-    box-shadow: $light-box-shadow;
+    border-right: 1px solid var(--fade-grey) !important;
+    box-shadow: var(--light-box-shadow);
 
     .subpanel-header {
       height: 60px !important;
       background: #fafafa;
 
       svg {
-        color: $muted-grey;
+        color: var(--muted-grey);
       }
     }
   }

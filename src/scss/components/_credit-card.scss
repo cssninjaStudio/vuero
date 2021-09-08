@@ -38,13 +38,13 @@
     svg#cardfront,
     svg#cardback {
       width: 100%;
-      box-shadow: $light-box-shadow;
+      box-shadow: var(--light-box-shadow);
       border-radius: 18px;
     }
 
     #cardfront {
       .st2 {
-        fill: $white;
+        fill: var(--white);
       }
 
       .st3 {
@@ -67,7 +67,7 @@
 
       .st7 {
         opacity: 0.6;
-        fill: $white;
+        fill: var(--white);
       }
 
       .st8 {
@@ -129,7 +129,7 @@
       }
 
       .st9 {
-        fill: $white;
+        fill: var(--white);
       }
 
       .st10 {

@@ -211,7 +211,6 @@ import { popovers } from '/@src/data/users/userPopovers'
 </template>
 
 <style lang="scss">
-@import '../../../scss/abstracts/_variables.scss';
 @import '../../../scss/abstracts/_mixins.scss';
 
 /* ==========================================================================
@@ -232,14 +231,14 @@ import { popovers } from '/@src/data/users/userPopovers'
     justify-content: space-between;
     margin-bottom: 20px;
     padding-bottom: 10px;
-    border-bottom: 1px solid $fade-grey-dark-4;
+    border-bottom: 1px solid var(--fade-grey-dark-4);
 
     .left {
       h3 {
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         font-size: 1.2rem;
         font-weight: 600;
-        color: $dark-text;
+        color: var(--dark-text);
       }
     }
 
@@ -254,14 +253,14 @@ import { popovers } from '/@src/data/users/userPopovers'
           height: 32px;
           width: 32px;
           min-width: 32px;
-          border-radius: $radius-rounded;
-          color: $light-text;
+          border-radius: var(--radius-rounded);
+          color: var(--light-text);
           margin: 0 4px;
           transition: all 0.3s;
 
           &:hover {
-            color: $dark-text;
-            background: $fade-grey-dark-4;
+            color: var(--dark-text);
+            background: var(--fade-grey-dark-4);
           }
 
           svg {
@@ -289,10 +288,10 @@ import { popovers } from '/@src/data/users/userPopovers'
 
           .meta {
             margin-left: 16px;
-            font-family: $font;
+            font-family: var(--font);
 
             h3 {
-              font-family: $font-alt;
+              font-family: var(--font-alt);
               font-size: 1.1rem;
               font-weight: 600;
               line-height: 1;
@@ -300,7 +299,7 @@ import { popovers } from '/@src/data/users/userPopovers'
 
             span {
               display: block;
-              color: $light-text;
+              color: var(--light-text);
               font-weight: 400;
               font-size: 0.9rem;
             }
@@ -322,7 +321,7 @@ import { popovers } from '/@src/data/users/userPopovers'
             }
 
             h3 {
-              font-family: $font-alt;
+              font-family: var(--font-alt);
               font-size: 1.1rem;
               font-weight: 600;
               line-height: 1;
@@ -330,7 +329,7 @@ import { popovers } from '/@src/data/users/userPopovers'
 
             span {
               display: block;
-              color: $light-text;
+              color: var(--light-text);
               font-weight: 400;
               font-size: 0.9rem;
             }
@@ -338,14 +337,14 @@ import { popovers } from '/@src/data/users/userPopovers'
         }
 
         &.is-bordered {
-          border-bottom: 1px solid $fade-grey-dark-3;
+          border-bottom: 1px solid var(--fade-grey-dark-3);
         }
 
         .v-avatar {
           &.is-customer {
-            border: 1.6px solid $fade-grey-dark-3;
-            border-radius: $radius-rounded;
-            box-shadow: $light-box-shadow;
+            border: 1.6px solid var(--fade-grey-dark-3);
+            border-radius: var(--radius-rounded);
+            box-shadow: var(--light-box-shadow);
           }
         }
 
@@ -359,15 +358,15 @@ import { popovers } from '/@src/data/users/userPopovers'
               border: none;
 
               .table-label {
-                font-family: $font;
+                font-family: var(--font);
                 text-transform: uppercase;
                 font-size: 0.8rem;
-                color: $light-text;
+                color: var(--light-text);
               }
 
               .table-total {
-                font-family: $font;
-                color: $dark-text;
+                font-family: var(--font);
+                color: var(--dark-text);
                 font-weight: 500;
 
                 &.is-bigger {
@@ -406,11 +405,11 @@ import { popovers } from '/@src/data/users/userPopovers'
 .is-dark {
   .invoice-wrapper {
     .invoice-header {
-      border-color: $dark-sidebar-light-20;
+      border-color: var(--dark-sidebar-light-20);
 
       .left {
         h3 {
-          color: $dark-dark-text;
+          color: var(--dark-dark-text);
         }
       }
 
@@ -420,9 +419,9 @@ import { popovers } from '/@src/data/users/userPopovers'
             border: 1px solid transparent;
 
             &:hover {
-              background: $dark-sidebar-light-2;
-              border-color: $accent;
-              color: $accent;
+              background: var(--dark-sidebar-light-2);
+              border-color: var(--primary);
+              color: var(--primary);
             }
           }
         }
@@ -436,17 +435,17 @@ import { popovers } from '/@src/data/users/userPopovers'
     }
 
     .invoice-section {
-      border-color: $dark-sidebar-light-12 !important;
+      border-color: var(--dark-sidebar-light-12) !important;
 
       &.is-flex {
         .v-avatar {
-          border-color: $dark-sidebar-light-12 !important;
+          border-color: var(--dark-sidebar-light-12) !important;
         }
 
         .meta,
         .end {
           h3 {
-            color: $dark-dark-text;
+            color: var(--dark-dark-text);
           }
         }
       }

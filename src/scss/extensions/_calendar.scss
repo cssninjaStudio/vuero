@@ -1,14 +1,14 @@
 $calendar-legacy-border: none !default;
-$calendar-legacy-border-radius: $radius-small !default;
-$calendar-legacy-header-background-color: $primary !default;
+$calendar-legacy-border-radius: var(--radius-small) !default;
+$calendar-legacy-header-background-color: var(--primary) !default;
 $calendar-legacy-days-background-color: transparent !default;
 $calendar-legacy-header-days-color: $grey-light !default;
 $calendar-legacy-date-color: $text !default;
 $calendar-legacy-date-hover-background-color: $white-ter !default;
 $calendar-legacy-today-background: transparent !default;
-$calendar-legacy-today-border-color: $primary !default;
-$calendar-legacy-today-color: $primary !default;
-$calendar-legacy-range-background-color: $primary-light-50 !default;
+$calendar-legacy-today-border-color: var(--primary) !default;
+$calendar-legacy-today-color: var(--primary) !default;
+$calendar-legacy-range-background-color: var(--primary-light-50) !default;
 $calendar-legacy-body-padding: 0 1em 1em 1em !default;
 $calendar-legacy-header-padding: 1em 1em 0 1em !default;
 $calendar-legacy-header-nav-padding: 0.5em !default;
@@ -24,7 +24,7 @@ $calendar-legacy-date-padding: 0.4rem 0 !default;
 }
 @mixin calendar {
   .calendar-legacy {
-    background: $white;
+    background: var(--white);
     border: $calendar-legacy-border;
     border-radius: $calendar-legacy-border-radius;
     display: block;
@@ -36,9 +36,9 @@ $calendar-legacy-date-padding: 0.4rem 0 !default;
     }
     .calendar-nav {
       background: $calendar-legacy-header-background-color;
-      color: $white;
-      border-top-left-radius: $radius-small;
-      border-top-right-radius: $radius-small;
+      color: var(--white);
+      border-top-left-radius: var(--radius-small);
+      border-top-right-radius: var(--radius-small);
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -71,7 +71,7 @@ $calendar-legacy-date-padding: 0.4rem 0 !default;
         flex-grow: 0;
         flex-shrink: 0;
         text-decoration: none;
-        color: $white;
+        color: var(--white);
         &:hover {
           background-color: transparent;
           svg {
@@ -148,8 +148,8 @@ $calendar-legacy-date-padding: 0.4rem 0 !default;
           text-decoration: none;
         }
         &.is-active {
-          background: $primary;
-          border-color: $primary;
+          background: var(--primary);
+          border-color: var(--primary);
           color: findColorInvert($primary);
         }
       }
@@ -182,7 +182,7 @@ $calendar-legacy-date-padding: 0.4rem 0 !default;
         right: 50%;
       }
       .date-item {
-        color: $primary;
+        color: var(--primary);
       }
     }
     &.is-large {
@@ -229,8 +229,8 @@ $calendar-legacy-date-padding: 0.4rem 0 !default;
       }
       .calendar-event {
         background-color: $grey;
-        border-radius: $radius-small;
-        color: $white;
+        border-radius: var(--radius-small);
+        color: var(--white);
         display: block;
         font-size: 1rem;
         margin: 0.2rem auto;

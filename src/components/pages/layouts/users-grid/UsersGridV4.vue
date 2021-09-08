@@ -114,7 +114,6 @@ const optionsSingle = [
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
 
 .user-grid-v4 {
@@ -158,10 +157,10 @@ const optionsSingle = [
     }
 
     h3 {
-      font-family: $font-alt;
+      font-family: var(--font-alt);
       font-size: 1.1rem;
       font-weight: 600;
-      color: $dark-text;
+      color: var(--dark-text);
     }
 
     p {
@@ -183,13 +182,13 @@ const optionsSingle = [
         a {
           opacity: 0;
           pointer-events: none;
-          color: $light-text;
+          color: var(--light-text);
           font-weight: 500;
           font-size: 0.9rem;
           transition: opacity 0.3s, color 0.3s;
 
           &:hover {
-            color: $primary;
+            color: var(--primary);
           }
         }
       }

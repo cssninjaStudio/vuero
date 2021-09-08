@@ -228,7 +228,6 @@ import {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
 
 .lifestyle-dashboard-v5 {
@@ -237,7 +236,7 @@ import {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
-    font-family: $font;
+    font-family: var(--font);
 
     &.is-main {
       margin-bottom: 30px;
@@ -248,16 +247,16 @@ import {
     }
 
     h2 {
-      font-family: $font-alt;
+      font-family: var(--font-alt);
       font-size: 1.2rem;
       font-weight: 600;
-      color: $dark-text;
+      color: var(--dark-text);
     }
 
     .members {
       h4 {
-        font-family: $font;
-        color: $light-text;
+        font-family: var(--font);
+        color: var(--light-text);
         padding: 0 0.35rem;
         margin-bottom: 0.75rem;
       }
@@ -271,13 +270,13 @@ import {
           button {
             outline: none;
             border: none;
-            background: $primary;
-            box-shadow: $primary-box-shadow;
-            color: $white;
+            background: var(--primary);
+            box-shadow: var(--primary-box-shadow);
+            color: var(--white);
             cursor: pointer;
 
             svg {
-              stroke: $white;
+              stroke: var(--white);
               height: 16px;
               width: 16px;
             }
@@ -294,10 +293,10 @@ import {
       }
 
       .group-title {
-        font-family: $font;
+        font-family: var(--font);
         font-size: 0.85rem;
         font-weight: 500;
-        color: $light-text;
+        color: var(--light-text);
         text-transform: uppercase;
         margin-bottom: 1rem;
       }
@@ -349,7 +348,7 @@ import {
             position: absolute;
             top: 20px;
             left: 20px;
-            background: $white;
+            background: var(--white);
             height: 40px;
             width: 40px;
             display: flex;
@@ -360,13 +359,13 @@ import {
             border-radius: 0.75rem;
             z-index: 3;
             cursor: pointer;
-            box-shadow: $light-box-shadow;
+            box-shadow: var(--light-box-shadow);
 
             &:hover {
               svg,
               svg * {
-                stroke: $primary;
-                fill: $primary;
+                stroke: var(--primary);
+                fill: var(--primary);
               }
             }
 
@@ -376,8 +375,8 @@ import {
               left: 2px;
               height: 15px;
               width: 15px;
-              fill: $dark-text;
-              stroke: $dark-text;
+              fill: var(--dark-text);
+              stroke: var(--dark-text);
               transition: all 0.3s;
             }
           }
@@ -386,11 +385,11 @@ import {
             position: absolute;
             top: 20px;
             right: 20px;
-            background: $primary;
-            box-shadow: $primary-box-shadow;
-            font-family: $font;
+            background: var(--primary);
+            box-shadow: var(--primary-box-shadow);
+            font-family: var(--font);
             font-weight: 500;
-            color: $white;
+            color: var(--white);
             height: 2.75em;
             padding-left: 1rem;
             padding-right: 1rem;
@@ -417,14 +416,14 @@ import {
 
               .inner-content {
                 padding: 20px;
-                color: $white;
+                color: var(--white);
 
                 .media-title {
-                  font-family: $font-alt;
+                  font-family: var(--font-alt);
                   font-size: 1.3rem;
                   font-weight: bolder;
                   line-height: 24px;
-                  color: $smoke-white;
+                  color: var(--smoke-white);
                   margin-bottom: 6px;
                 }
 
@@ -445,21 +444,21 @@ import {
                     display: block;
                     font-size: 0.82rem;
                     font-weight: 500;
-                    color: $smoke-white-dark-8;
+                    color: var(--smoke-white-dark-8);
                     transition: color 0.3s;
 
                     &.is-hoverable:hover {
-                      color: $primary;
+                      color: var(--primary);
                     }
                   }
 
                   .separator {
                     padding: 0 10px;
                     font-size: 0.8rem;
-                    //color: $smoke-white-dark-10;
+                    //color: var(--smoke-white-dark-10);
                     opacity: 0.6;
                     text-align: center;
-                    color: $smoke-white;
+                    color: var(--smoke-white);
                   }
                 }
               }
@@ -488,12 +487,12 @@ import {
         .members-list {
           .h-avatar {
             button {
-              background: $accent !important;
+              background: var(--primary) !important;
             }
 
             .avatar {
               &.is-fake {
-                background: $dark-sidebar-light-2;
+                background: var(--dark-sidebar-light-2);
               }
             }
           }
@@ -508,9 +507,9 @@ import {
             @include vuero-card--dark();
 
             .item-duration {
-              background: $accent !important;
-              color: $white !important;
-              box-shadow: $accent-box-shadow !important;
+              background: var(--primary) !important;
+              color: var(--white) !important;
+              box-shadow: var(--primary-box-shadow) !important;
             }
           }
         }

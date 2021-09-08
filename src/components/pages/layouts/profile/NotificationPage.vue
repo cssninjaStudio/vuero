@@ -233,7 +233,6 @@
 </template>
 
 <style lang="scss" scoped>
-@import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
 
 /*
@@ -267,7 +266,7 @@
           left: 111px;
           height: 100%;
           width: 2px;
-          background: $placeholder;
+          background: var(--placeholder);
           z-index: 0;
         }
 
@@ -281,7 +280,7 @@
           .content-wrap {
             .content-box {
               .status {
-                background: $h-red !important;
+                background: var(--red) !important;
               }
             }
           }
@@ -289,12 +288,12 @@
 
         .date {
           width: 80px;
-          font-family: $font;
+          font-family: var(--font);
           text-align: right;
 
           span {
             font-size: 0.9rem;
-            color: $light-text;
+            color: var(--light-text);
           }
         }
 
@@ -302,29 +301,29 @@
           position: relative;
           height: 14px;
           width: 14px;
-          border-radius: $radius-rounded;
-          border: 2.6px solid $primary;
+          border-radius: var(--radius-rounded);
+          border: 2.6px solid var(--primary);
           margin: 0 25px;
           z-index: 1;
 
           &.is-info {
-            border-color: $info;
+            border-color: var(--info);
           }
 
           &.is-success {
-            border-color: $success;
+            border-color: var(--success);
           }
 
           &.is-warning {
-            border-color: $warning;
+            border-color: var(--warning);
           }
 
           &.is-danger {
-            border-color: $danger;
+            border-color: var(--danger);
           }
 
           &.is-purple {
-            border-color: $h-purple;
+            border-color: var(--purple);
           }
         }
 
@@ -341,8 +340,8 @@
               height: 8px;
               width: 8px;
               min-width: 8px;
-              border-radius: $radius-rounded;
-              background: $light-text-light-15;
+              border-radius: var(--radius-rounded);
+              background: var(--light-text-light-15);
               margin: 0 16px 0 0;
             }
 
@@ -357,16 +356,16 @@
                 line-height: 1.2;
 
                 p {
-                  color: $light-text-dark-10;
+                  color: var(--light-text-dark-10);
 
                   span {
-                    font-family: $font-alt;
-                    color: $dark-text;
+                    font-family: var(--font-alt);
+                    color: var(--dark-text);
                     font-weight: 600;
                   }
 
                   a {
-                    color: $primary;
+                    color: var(--primary);
                   }
 
                   .tag {
@@ -380,7 +379,7 @@
                 }
 
                 > span {
-                  color: $light-text;
+                  color: var(--light-text);
                   font-size: 0.9rem;
                 }
               }
@@ -411,7 +410,7 @@
         text-transform: uppercase;
         font-size: 0.85rem;
         font-weight: 500;
-        color: $light-text;
+        color: var(--light-text);
       }
     }
   }
@@ -427,7 +426,7 @@
       .timeline-container {
         .timeline-item {
           &::before {
-            background: $dark-sidebar-light-20;
+            background: var(--dark-sidebar-light-20);
           }
 
           .content-wrap {
@@ -435,18 +434,18 @@
 
             .content-box {
               .status {
-                background: $dark-sidebar-light-20;
+                background: var(--dark-sidebar-light-20);
               }
 
               .box-text {
                 .meta-text {
                   p {
                     span {
-                      color: $dark-dark-text;
+                      color: var(--dark-dark-text);
                     }
 
                     a {
-                      color: $accent;
+                      color: var(--primary);
                     }
                   }
                 }
@@ -458,7 +457,7 @@
 
       .load-more-wrap {
         .button {
-          background: $dark-sidebar-light-2 !important;
+          background: var(--dark-sidebar-light-2) !important;
         }
       }
     }

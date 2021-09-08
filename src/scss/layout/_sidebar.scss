@@ -16,14 +16,14 @@
   margin-left: 0;
   height: 100vh;
   width: 80px;
-  background-color: $body-color;
+  background-color: var(--body-color);
   box-shadow: none;
   z-index: 35;
   transition: border-radius 0.3s ease-in, background-color 0.3s ease-in,
     top 0.3s ease-in, margin-left 0.3s ease-in, height 0.3s ease-in;
 
   &.is-bordered {
-    border-right: 1px solid $fade-grey !important;
+    border-right: 1px solid var(--fade-grey) !important;
   }
 
   &.is-open {
@@ -34,7 +34,7 @@
     &:not(.is-bordered) {
       border-top-right-radius: 20px;
       border-bottom-right-radius: 20px;
-      border-right: 1px solid $fade-grey-dark-4 !important;
+      border-right: 1px solid var(--fade-grey-dark-4) !important;
 
       .sidebar-brand {
         border-top-right-radius: 20px;
@@ -43,12 +43,12 @@
   }
 
   &.is-colored {
-    border-color: $landing-dark-7;
-    background: $landing-dark-2;
+    border-color: var(--landing-yyy-light-2);
+    background: var(--landing-yyy);
 
     .sidebar-inner {
       .naver {
-        background: $white;
+        background: var(--white);
       }
 
       .icon-menu,
@@ -59,19 +59,19 @@
             &.is-active,
             &.router-link-active {
               .sidebar-svg {
-                color: $smoke-white;
+                color: var(--smoke-white);
               }
             }
 
             .sidebar-svg {
-              color: $light-text;
+              color: var(--light-text);
             }
           }
         }
 
         .profile-dropdown {
           .status-indicator {
-            border-color: $primary;
+            border-color: var(--primary);
           }
         }
       }
@@ -116,7 +116,7 @@
           a {
             &.router-link-active {
               &::after {
-                color: $primary;
+                color: var(--primary);
               }
             }
 
@@ -127,10 +127,10 @@
               left: -29px;
               right: 0;
               margin: 0 auto;
-              font-family: $font;
+              font-family: var(--font);
               font-size: 0.5rem;
               font-weight: 500;
-              color: $light-text;
+              color: var(--light-text);
               text-transform: uppercase;
               text-align: center;
               width: 80px;
@@ -157,7 +157,7 @@
     border: none !important;
 
     &:not(.is-bordered) {
-      box-shadow: $light-box-shadow;
+      box-shadow: var(--light-box-shadow);
     }
 
     &.is-bordered {
@@ -225,7 +225,7 @@
       height: 64px;
       width: 4px;
       border-radius: 100px;
-      background: $primary;
+      background: var(--primary);
       transition: all 0.3s;
 
       &.is-search-results {
@@ -257,7 +257,7 @@
         &.is-active,
         &.router-link-active {
           svg {
-            color: $primary;
+            color: var(--primary);
           }
         }
 
@@ -267,12 +267,12 @@
           right: 16px;
           display: block;
           line-height: 17px;
-          background: $danger;
-          color: $white;
+          background: var(--danger);
+          color: var(--white);
           font-weight: 500;
           font-size: 0.6rem;
           border-radius: 100px;
-          border: 1px solid $white;
+          border: 1px solid var(--white);
           transform: scale(0.8);
         }
 
@@ -287,14 +287,14 @@
           &.is-selected,
           &.router-link-active {
             .sidebar-svg {
-              color: $primary;
+              color: var(--primary);
             }
           }
 
           .sidebar-svg {
             height: 20px;
             width: 20px;
-            color: $title-grey;
+            color: var(--title-grey);
             stroke-width: 1.6px;
             transition: all 0.3s;
           }
@@ -305,13 +305,13 @@
                         transition: all .3s;
 
                         .path {
-                            fill: $title-grey;
+                            fill: var(--title-grey);
                             color: none;
                         }
 
                         &:hover, &.is-active {
                             .path {
-                                fill: $primary;
+                                fill: var(--primary);
                             }
                         }
                     } */
@@ -319,7 +319,7 @@
           &:hover svg,
           &.is-active svg,
           &.router-link-exact-active svg {
-            color: $primary;
+            color: var(--primary);
           }
 
           &.is-opened {
@@ -334,7 +334,7 @@
 
           /* &.is-selected {
                         svg .path {
-                            fill: $primary;
+                            fill: var(--primary);
                         }
                     } */
         }
@@ -386,7 +386,7 @@
           > img {
             height: 48px;
             width: 48px;
-            border-radius: $radius-rounded;
+            border-radius: var(--radius-rounded);
             position: relative;
             z-index: 1;
           }
@@ -398,9 +398,9 @@
             right: 0;
             width: 14px;
             height: 14px;
-            border-radius: $radius-rounded;
-            border: 2px solid $white;
-            background: $success;
+            border-radius: var(--radius-rounded);
+            border: 2px solid var(--white);
+            background: var(--success);
             z-index: 2;
           }
         }
@@ -424,7 +424,7 @@
 
               .meta {
                 margin-left: 12px;
-                font-family: $font;
+                font-family: var(--font);
 
                 span {
                   display: block;
@@ -432,13 +432,13 @@
                   &:first-child {
                     font-size: 1.1rem;
                     font-weight: 500;
-                    color: $dark-text;
+                    color: var(--dark-text);
                     line-height: 1.2;
                   }
 
                   &:nth-child(2) {
                     text-transform: uppercase;
-                    color: $light-text;
+                    color: var(--light-text);
                     font-size: 0.7rem;
                   }
                 }
@@ -447,7 +447,7 @@
 
             .logout-button {
               svg {
-                color: $smoke-white !important;
+                color: var(--smoke-white) !important;
               }
             }
           }
@@ -459,7 +459,7 @@
             width: 100% !important;
 
             &:hover:not(.is-button) {
-              background: $fade-grey-light-3;
+              background: var(--fade-grey-light-3);
             }
           }
 
@@ -471,7 +471,7 @@
 
             .toggle-title {
               font-size: 0.8rem;
-              color: $muted-grey;
+              color: var(--muted-grey);
 
               &:hover {
                 background: transparent !important;
@@ -494,20 +494,20 @@
 
 .is-dark {
   .main-sidebar:not(.is-colored) {
-    background: $dark-sidebar;
+    background: var(--dark-sidebar);
 
     &.is-bordered {
-      border-right: 1px solid $dark-sidebar !important;
+      border-right: 1px solid var(--dark-sidebar) !important;
     }
 
     &.is-curved {
       &:not(.is-bordered) {
-        border-color: $dark-sidebar-light-16 !important;
+        border-color: var(--dark-sidebar-light-16) !important;
       }
     }
 
     .naver {
-      background: $accent;
+      background: var(--primary);
     }
 
     .icon-menu,
@@ -517,79 +517,79 @@
           &.is-selected,
           &.router-link-active {
             svg {
-              color: $accent !important;
+              color: var(--primary) !important;
             }
 
             .sidebar-icon .path {
-              fill: $accent !important;
+              fill: var(--primary) !important;
             }
           }
 
           &:hover {
             svg {
-              color: $accent !important;
+              color: var(--primary) !important;
             }
 
             .sidebar-icon .path {
-              fill: $accent !important;
+              fill: var(--primary) !important;
             }
           }
 
           .sidebar-icon.is-active .path {
-            fill: $accent !important;
+            fill: var(--primary) !important;
           }
         }
 
         svg {
-          color: $accent-grey-light-3;
+          color: var(--primary-grey-light-3);
         }
 
         .status-indicator {
-          border-color: $dark-sidebar !important;
+          border-color: var(--dark-sidebar) !important;
         }
       }
     }
 
     .profile-dropdown {
       .dropdown-content {
-        background: $dark-sidebar;
+        background: var(--dark-sidebar);
 
         .dropdown-head {
-          background: $dark-sidebar-light-2 !important;
+          background: var(--dark-sidebar-light-2) !important;
 
           &:hover {
-            background: $dark-sidebar-light-2 !important;
+            background: var(--dark-sidebar-light-2) !important;
           }
 
           .meta {
             &:hover {
-              background: $dark-sidebar-light-2 !important;
+              background: var(--dark-sidebar-light-2) !important;
             }
 
             span {
               &:first-child {
-                color: $dark-dark-text !important;
+                color: var(--dark-dark-text) !important;
               }
             }
           }
         }
 
         .dropdown-item {
-          color: $white;
+          color: var(--white);
 
           &:not(.is-button):hover {
-            background: $dark-sidebar-light-5;
+            background: var(--dark-sidebar-light-5);
           }
 
           &.is-button {
             &:hover {
-              background: $dark-sidebar-light-2 !important;
+              background: var(--dark-sidebar-light-2) !important;
             }
           }
         }
 
         .dropdown-divider {
-          background: $dark-sidebar-light-5;
+          background: var(--dark-sidebar-light-5);
         }
       }
     }
@@ -601,7 +601,7 @@
           a {
             &.is-active {
               svg {
-                color: $accent !important;
+                color: var(--primary) !important;
               }
             }
           }
@@ -612,8 +612,8 @@
 
   .main-sidebar {
     &.is-colored {
-      //background: $accent-dark-2;
-      //border-color: $accent-dark-2 !important;
+      //background: var(--primary-dark-2);
+      //border-color: var(--primary-dark-2) !important;
 
       .sidebar-inner {
         .naver {
@@ -627,14 +627,14 @@
               &:hover,
               &.is-active {
                 .sidebar-svg {
-                  color: $smoke-white;
-                  stroke: $smoke-white;
+                  color: var(--smoke-white);
+                  stroke: var(--smoke-white);
                   opacity: 1;
                 }
               }
 
               .sidebar-svg {
-                color: $smoke-white-light-2;
+                color: var(--smoke-white-light-2);
                 opacity: 0.5;
               }
             }
@@ -644,26 +644,26 @@
 
       .profile-dropdown {
         .status-indicator {
-          border-color: $accent-dark-2 !important;
+          border-color: var(--primary-dark-2) !important;
         }
 
         .dropdown-menu {
           .dropdown-content {
             .dropdown-head {
-              background: $dark-sidebar-light-2 !important;
+              background: var(--dark-sidebar-light-2) !important;
 
               &:hover {
-                background: $dark-sidebar-light-2 !important;
+                background: var(--dark-sidebar-light-2) !important;
               }
 
               .meta {
                 &:hover {
-                  background: $dark-sidebar-light-2 !important;
+                  background: var(--dark-sidebar-light-2) !important;
                 }
 
                 span {
                   &:first-child {
-                    color: $dark-dark-text !important;
+                    color: var(--dark-dark-text) !important;
                   }
                 }
               }

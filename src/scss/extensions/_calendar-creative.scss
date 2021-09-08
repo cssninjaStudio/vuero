@@ -1,16 +1,16 @@
 $calendar-border: 0.1rem solid $white-ter !default;
-$calendar-border-radius: $radius-small !default;
-$calendar-selection-background-color: $primary !default;
+$calendar-border-radius: var(--radius-small) !default;
+$calendar-selection-background-color: var(--primary) !default;
 $calendar-days-background-color: transparent !default;
 $calendar-selection-days-color: $grey-light !default;
 $calendar-date-color: $text !default;
-$calendar-date-hover-background-color: $white !default;
-$calendar-date-hover-border: 0.1rem solid $primary !default;
-$calendar-date-hover-border: $primary !default;
+$calendar-date-hover-background-color: var(--white) !default;
+$calendar-date-hover-border: 0.1rem solid var(--primary) !default;
+$calendar-date-hover-border: var(--primary) !default;
 $calendar-today-background: transparent !default;
-$calendar-today-border: 0.1rem dotted $primary !default;
-$calendar-today-color: $primary !default;
-$calendar-range-background-color: $primary !default;
+$calendar-today-border: 0.1rem dotted var(--primary) !default;
+$calendar-today-color: var(--primary) !default;
+$calendar-range-background-color: var(--primary) !default;
 $calendar-body-padding: 0 !default;
 $calendar-selection-padding: 0.3rem 0 !default;
 $calendar-selection-nav-padding: 0.5em !default;
@@ -64,7 +64,7 @@ $calendar-date-padding: 0.1rem 0 !default;
         font-size: 2rem;
         line-height: 2.5rem;
         margin-right: 0.5rem;
-        color: $primary;
+        color: var(--primary);
         font-weight: 100;
       }
       .datetimepicker-selection-date {
@@ -151,7 +151,7 @@ $calendar-date-padding: 0.1rem 0 !default;
       flex-grow: 0;
       flex-shrink: 0;
       text-decoration: none;
-      color: $white;
+      color: var(--white);
       &:hover {
         background-color: transparent;
         svg {
@@ -249,8 +249,8 @@ $calendar-date-padding: 0.1rem 0 !default;
               text-decoration: none;
             }
             &.is-active {
-              background: $primary;
-              border-color: $primary;
+              background: var(--primary);
+              border-color: var(--primary);
               border-radius: 25091983px;
               color: findColorInvert($primary);
               &.is-today {
@@ -287,8 +287,8 @@ $calendar-date-padding: 0.1rem 0 !default;
             &.datepicker-range-end {
               .date-item {
                 background: findColorInvert($primary);
-                border: 0.1rem solid $primary;
-                color: $primary;
+                border: 0.1rem solid var(--primary);
+                color: var(--primary);
                 box-shadow: 0 0.2rem 0.2rem rgba(10, 10, 10, 0.1);
               }
             }
@@ -301,7 +301,7 @@ $calendar-date-padding: 0.1rem 0 !default;
               border-bottom-right-radius: 25091983px;
             }
             .date-item {
-              background-color: $primary;
+              background-color: var(--primary);
               color: findColorInvert($primary);
               &.is-today {
                 border-color: findColorInvert($primary) !important;
@@ -334,8 +334,8 @@ $calendar-date-padding: 0.1rem 0 !default;
         border-radius: 25091983px;
         border: 0.1rem solid transparent;
         &.is-active {
-          background: $primary;
-          border-color: $primary;
+          background: var(--primary);
+          border-color: var(--primary);
           color: findColorInvert($primary);
         }
         &:hover {
@@ -360,7 +360,7 @@ $calendar-date-padding: 0.1rem 0 !default;
   }
 }
 @mixin datetimepicker {
-  background: $white;
+  background: var(--white);
   border-radius: $calendar-border-radius;
   max-width: 320px;
   z-index: 1;
@@ -386,7 +386,7 @@ $calendar-date-padding: 0.1rem 0 !default;
       }
       &::after {
         border-color: rgba(255, 255, 255, 0);
-        border-bottom-color: $white;
+        border-bottom-color: var(--white);
         border-width: 0.75rem;
         margin-left: -0.75rem;
       }
@@ -446,8 +446,8 @@ $calendar-date-padding: 0.1rem 0 !default;
     }
     .datepicker-event {
       background-color: $grey;
-      border-radius: $radius-small;
-      color: $white;
+      border-radius: var(--radius-small);
+      color: var(--white);
       display: block;
       font-size: 1rem;
       margin: 0.2rem auto;
@@ -611,12 +611,12 @@ $calendar-date-padding: 0.1rem 0 !default;
     left: 0.75rem;
     width: 1.25rem;
     height: 1.25rem;
-    background-color: $primary;
+    background-color: var(--primary);
   }
   .datetimepicker-clear-button {
     background: transparent;
     border: 0;
-    color: $primary;
+    color: var(--primary);
     cursor: pointer;
     font-weight: $weight-normal;
     outline: 0;

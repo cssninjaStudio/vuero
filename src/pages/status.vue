@@ -307,7 +307,6 @@ useHead({
 </template>
 
 <style lang="scss">
-@import '../scss/abstracts/_variables.scss';
 @import '../scss/abstracts/_mixins.scss';
 @import '../scss/pages/generic/_utility.scss';
 
@@ -335,10 +334,10 @@ useHead({
   }
 
   .status-block {
-    background: $white;
+    background: var(--white);
     margin-bottom: 40px;
-    border: 1px solid $fade-grey-dark-3;
-    border-radius: $radius-large;
+    border: 1px solid var(--fade-grey-dark-3);
+    border-radius: var(--radius-large);
 
     .status-header {
       padding: 40px;
@@ -349,43 +348,43 @@ useHead({
         height: 15px;
         border-radius: 100%;
         margin-right: 20px;
-        background: $success;
+        background: var(--success);
       }
 
       .title {
         display: inline-block;
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         font-weight: 600;
-        color: $dark-text;
+        color: var(--dark-text);
       }
 
       .subtitle {
         display: block;
         margin-left: 35px;
-        color: $light-text;
+        color: var(--light-text);
       }
     }
 
     .status-uptime {
-      border-top: 1px solid $fade-grey-dark-3;
-      border-bottom: 1px solid $fade-grey-dark-3;
+      border-top: 1px solid var(--fade-grey-dark-3);
+      border-bottom: 1px solid var(--fade-grey-dark-3);
       padding: 16px 40px;
-      font-family: $font;
+      font-family: var(--font);
 
       .title {
         display: inline-block;
         font-size: 14px;
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         margin-bottom: 0;
         font-weight: 500;
-        color: $light-text;
+        color: var(--light-text);
       }
 
       .uptime {
         display: inline-block;
         margin-left: 60px;
         font-size: 14px;
-        color: $light-text;
+        color: var(--light-text);
       }
     }
 
@@ -403,17 +402,17 @@ useHead({
           height: 54px;
           width: 54px;
           min-width: 54px;
-          border-radius: $radius-rounded;
-          background: $white;
-          border: 1px solid $fade-grey-dark-3;
-          box-shadow: $light-box-shadow;
-          color: $primary;
+          border-radius: var(--radius-rounded);
+          background: var(--white);
+          border: 1px solid var(--fade-grey-dark-3);
+          box-shadow: var(--light-box-shadow);
+          color: var(--primary);
           margin-right: 12px;
 
           img {
             display: block;
             max-width: 54px;
-            border-radius: $radius-rounded;
+            border-radius: var(--radius-rounded);
           }
         }
 
@@ -429,7 +428,7 @@ useHead({
       }
 
       .label {
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         font-size: 0.95rem;
         font-weight: 600;
         margin-bottom: 0;
@@ -438,7 +437,7 @@ useHead({
 
       p {
         font-size: 0.9rem;
-        font-family: $font;
+        font-family: var(--font);
       }
 
       .amount {
@@ -448,17 +447,17 @@ useHead({
         justify-content: center;
         align-items: center;
         font-size: 16px;
-        color: $light-text;
+        color: var(--light-text);
         margin-left: auto;
         height: 40px;
         width: 40px;
         border-radius: 12px;
-        border: 1px solid $fade-grey-dark-3;
-        box-shadow: $light-box-shadow;
+        border: 1px solid var(--fade-grey-dark-3);
+        box-shadow: var(--light-box-shadow);
 
         span {
-          font-family: $font;
-          color: $dark-text;
+          font-family: var(--font);
+          color: var(--dark-text);
           font-weight: 600;
           font-size: 0.85rem;
         }
@@ -470,19 +469,19 @@ useHead({
     display: flex;
     align-items: center;
     padding: 24px 40px;
-    border-bottom: 1px solid $fade-grey-dark-3;
+    border-bottom: 1px solid var(--fade-grey-dark-3);
 
     .icon i {
       font-size: 1.6rem;
-      color: $twitter;
+      color: var(--twitter);
     }
 
     .username {
       margin-left: 10px;
-      font-family: $font-alt;
+      font-family: var(--font-alt);
       font-size: 0.95rem;
       font-weight: 600;
-      color: $dark-text;
+      color: var(--dark-text);
     }
 
     .action-link {
@@ -506,12 +505,12 @@ useHead({
           margin-left: 12px;
 
           .timestamp {
-            color: $light-text;
+            color: var(--light-text);
           }
 
           .tweet {
-            font-family: $font;
-            color: $dark-text;
+            font-family: var(--font);
+            color: var(--dark-text);
           }
         }
       }
@@ -523,21 +522,21 @@ useHead({
     padding: 20px;
 
     a {
-      font-family: $font;
-      color: $light-text-dark-8;
+      font-family: var(--font);
+      color: var(--light-text-dark-8);
       padding: 0 10px;
       transition: color 0.3s;
 
       &:hover {
         font-weight: 500;
-        color: $primary;
+        color: var(--primary);
       }
     }
 
     .copyright {
       margin-left: auto;
-      font-family: $font;
-      color: $light-text;
+      font-family: var(--font);
+      color: var(--light-text);
     }
   }
 }
@@ -545,16 +544,16 @@ useHead({
 .is-dark {
   .status-page-wrapper {
     .status-block {
-      background: $dark-sidebar-light-6;
-      border-color: $dark-sidebar-light-12;
+      background: var(--dark-sidebar-light-6);
+      border-color: var(--dark-sidebar-light-12);
 
       .status-uptime {
-        border-color: $dark-sidebar-light-12;
+        border-color: var(--dark-sidebar-light-12);
       }
 
       .status-list {
         hr {
-          background-color: $dark-sidebar-light-12;
+          background-color: var(--dark-sidebar-light-12);
           height: 1px;
         }
 
@@ -562,11 +561,11 @@ useHead({
           .progress-wrap {
             .progress-wrap-inner {
               .amount {
-                background: $dark-sidebar-light-2;
-                border-color: $dark-sidebar-light-12;
+                background: var(--dark-sidebar-light-2);
+                border-color: var(--dark-sidebar-light-12);
 
                 span {
-                  color: $dark-dark-text;
+                  color: var(--dark-dark-text);
                 }
               }
             }
@@ -575,7 +574,7 @@ useHead({
       }
 
       .tweets-header {
-        border-color: $dark-sidebar-light-12;
+        border-color: var(--dark-sidebar-light-12);
       }
 
       .status-tweets {
@@ -583,7 +582,7 @@ useHead({
           .update {
             .update-content {
               .tweet {
-                color: $dark-dark-text;
+                color: var(--dark-dark-text);
               }
             }
           }
@@ -594,7 +593,7 @@ useHead({
     .status-footer {
       a {
         &:hover {
-          color: $accent;
+          color: var(--primary);
         }
       }
     }

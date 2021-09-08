@@ -364,24 +364,23 @@ onMounted(() => {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
 
 .sales-dashboard {
   .dashboard-header {
     display: flex;
     align-items: center;
-    font-family: $font;
+    font-family: var(--font);
     margin-bottom: 30px;
 
     .start {
       margin-left: 12px;
 
       h3 {
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         font-weight: 600;
         font-size: 1.3rem;
-        color: $dark-text;
+        color: var(--dark-text);
       }
     }
 
@@ -422,10 +421,10 @@ onMounted(() => {
       margin-bottom: 20px;
 
       h3 {
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         font-size: 1rem;
         font-weight: 600;
-        color: $dark-text;
+        color: var(--dark-text);
       }
     }
 
@@ -435,24 +434,24 @@ onMounted(() => {
 
       .revenue-stat {
         margin-right: 30px;
-        font-family: $font;
+        font-family: var(--font);
 
         span {
           display: block;
 
           &:first-child {
-            color: $light-text;
+            color: var(--light-text);
             font-size: 0.9rem;
           }
 
           &:nth-child(2) {
-            color: $dark-text;
+            color: var(--dark-text);
             font-size: 1.2rem;
             font-weight: 600;
           }
 
           &.current {
-            color: $accent;
+            color: var(--primary);
           }
         }
       }
@@ -466,18 +465,18 @@ onMounted(() => {
       .meta {
         margin-right: 30px;
         align-items: center;
-        font-family: $font;
+        font-family: var(--font);
 
         h4 {
-          font-family: $font-alt;
+          font-family: var(--font-alt);
           font-size: 1rem;
           font-weight: 600;
-          color: $dark-text;
+          color: var(--dark-text);
         }
 
         span {
           display: block;
-          color: $dark-text;
+          color: var(--dark-text);
           font-size: 1.2rem;
           font-weight: 600;
           margin-bottom: 8px;
@@ -507,8 +506,8 @@ onMounted(() => {
         span {
           display: block;
           margin-top: -25px;
-          font-family: $font;
-          color: $dark-text;
+          font-family: var(--font);
+          color: var(--dark-text);
           font-weight: 600;
           font-size: 1.2rem;
         }

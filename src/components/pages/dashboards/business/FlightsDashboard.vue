@@ -432,7 +432,6 @@ const date = ref({
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
 
 .flights-dashboard {
@@ -440,13 +439,12 @@ const date = ref({
     @include vuero-s-card();
 
     position: relative;
-    background: $primary;
-    border-color: $primary;
+    background: var(--primary);
+    border-color: var(--primary);
     padding: 30px;
-    color: $white;
-    font-family: $font;
-    box-shadow: $primary-box-shadow;
-
+    color: var(--white);
+    font-family: var(--font);
+    box-shadow: var(--primary-box-shadow);
     .travel-illustration {
       position: absolute;
       bottom: 30px;
@@ -461,25 +459,25 @@ const date = ref({
 
       .lnil {
         font-size: 2.2rem;
-        color: $white;
+        color: var(--white);
       }
 
       .inner {
         margin-left: 16px;
 
         .booking-bar-heading {
-          font-family: $font-alt;
+          font-family: var(--font-alt);
           font-size: 1.4rem;
           font-weight: 600;
           line-height: 1.2;
-          color: $white;
+          color: var(--white);
         }
 
         .booking-bar-sub-heading {
-          font-family: $font;
+          font-family: var(--font);
           font-weight: 500;
           font-size: 1.1rem;
-          color: $white;
+          color: var(--white);
         }
       }
     }
@@ -498,8 +496,8 @@ const date = ref({
         }
 
         .input {
-          font-family: $font;
-          color: $light-text;
+          font-family: var(--font);
+          color: var(--light-text);
         }
       }
     }
@@ -512,9 +510,9 @@ const date = ref({
     justify-content: space-between;
 
     h3 {
-      font-family: $font;
+      font-family: var(--font);
       font-weight: 600;
-      color: $dark-text;
+      color: var(--dark-text);
     }
   }
 
@@ -524,34 +522,33 @@ const date = ref({
 
       display: flex;
       align-items: center;
-      border: 1px solid $fade-grey;
+      border: 1px solid var(--fade-grey);
       transition: all 0.3s;
 
       &:hover {
-        border-color: $primary;
+        border-color: var(--primary);
       }
 
       &.is-featured {
-        background: $primary;
-        border-color: $primary;
-        box-shadow: $primary-box-shadow;
-
+        background: var(--primary);
+        border-color: var(--primary);
+        box-shadow: var(--primary-box-shadow);
         .flight-price {
-          color: $white;
+          color: var(--white);
         }
 
         .meta {
           span {
-            color: $white !important;
+            color: var(--white) !important;
           }
         }
       }
 
       .flight-price {
-        font-family: $font;
+        font-family: var(--font);
         font-size: 2rem;
         font-weight: 700;
-        color: $primary;
+        color: var(--primary);
 
         &::before {
           content: '$';
@@ -570,16 +567,16 @@ const date = ref({
           display: block;
 
           &:first-child {
-            font-family: $font-alt;
-            color: $dark-text;
+            font-family: var(--font-alt);
+            color: var(--dark-text);
             font-size: 0.8rem;
             font-weight: 700;
             text-transform: uppercase;
           }
 
           &:nth-child(2) {
-            font-family: $font;
-            color: $light-text;
+            font-family: var(--font);
+            color: var(--light-text);
             font-size: 0.9rem;
           }
         }
@@ -599,7 +596,7 @@ const date = ref({
       box-shadow: none;
 
       &:hover {
-        box-shadow: $light-box-shadow;
+        box-shadow: var(--light-box-shadow);
 
         .route {
           .line {
@@ -613,7 +610,7 @@ const date = ref({
 
       > img {
         display: block;
-        border-radius: $radius-rounded;
+        border-radius: var(--radius-rounded);
         max-width: 32px;
       }
 
@@ -621,20 +618,20 @@ const date = ref({
       .end {
         span {
           display: block;
-          color: $dark-text;
-          font-family: $font;
+          color: var(--dark-text);
+          font-family: var(--font);
 
           &:first-child {
-            font-family: $font-alt;
+            font-family: var(--font-alt);
             font-weight: 600;
-            color: $dark-text;
+            color: var(--dark-text);
           }
 
           &:nth-child(2),
           &:nth-child(3) {
-            font-family: $font;
+            font-family: var(--font);
             font-size: 0.9rem;
-            color: $light-text;
+            color: var(--light-text);
           }
         }
       }
@@ -659,15 +656,15 @@ const date = ref({
         .departure {
           height: 16px;
           width: 16px;
-          border-radius: $radius-rounded;
-          border: 1px solid $light-text;
+          border-radius: var(--radius-rounded);
+          border: 1px solid var(--light-text);
         }
 
         .line {
           position: relative;
           flex-grow: 2;
           height: 1px;
-          border-bottom: 1.6px dashed $light-text;
+          border-bottom: 1.6px dashed var(--light-text);
 
           &::before,
           &::after {
@@ -684,7 +681,7 @@ const date = ref({
             right: 50%;
             height: 10px;
             width: 1px;
-            border-right: 1px solid $light-text;
+            border-right: 1px solid var(--light-text);
           }
 
           &::after {
@@ -695,7 +692,7 @@ const date = ref({
             width: 130px;
             font-size: 0.8rem;
             text-align: center;
-            color: $light-text;
+            color: var(--light-text);
           }
         }
 
@@ -712,17 +709,17 @@ const date = ref({
             position: relative;
             top: -4px;
             right: 5px;
-            color: $light-text;
+            color: var(--light-text);
             margin-left: 0.75rem;
           }
         }
       }
 
       .flight-price {
-        font-family: $font;
+        font-family: var(--font);
         font-size: 1.8rem;
         font-weight: 600;
-        color: $light-text;
+        color: var(--light-text);
 
         &::before {
           content: '$';
@@ -760,11 +757,11 @@ const date = ref({
 
       .field {
         > h5 {
-          font-family: $font-alt;
+          font-family: var(--font-alt);
           font-weight: 600;
           font-size: 0.8rem;
           text-transform: uppercase;
-          color: $dark-text;
+          color: var(--dark-text);
           padding-bottom: 6px;
         }
       }
@@ -781,9 +778,9 @@ const date = ref({
     .booking-bar-wrapper {
       @include vuero-card--dark();
 
-      background: $dark-sidebar-light-4;
-      border-color: $dark-sidebar-light-12;
-      box-shadow: $light-box-shadow;
+      background: var(--dark-sidebar-light-4);
+      border-color: var(--dark-sidebar-light-12);
+      box-shadow: var(--light-box-shadow);
     }
 
     .flights-summary-wrapper {
@@ -791,27 +788,27 @@ const date = ref({
         @include vuero-card--dark();
 
         &:hover {
-          border-color: $accent !important;
+          border-color: var(--primary) !important;
         }
 
         &.is-featured {
-          background: $accent !important;
-          border-color: $accent !important;
-          box-shadow: $accent-box-shadow !important;
+          background: var(--primary) !important;
+          border-color: var(--primary) !important;
+          box-shadow: var(--primary-box-shadow) !important;
 
           .flight-price {
-            color: $white;
+            color: var(--white);
           }
         }
 
         .flight-price {
-          color: $accent;
+          color: var(--primary);
         }
 
         .meta {
           span {
             &:first-child {
-              color: $dark-dark-text;
+              color: var(--dark-dark-text);
             }
           }
         }
@@ -826,7 +823,7 @@ const date = ref({
         .end {
           span {
             &:first-child {
-              color: $dark-dark-text;
+              color: var(--dark-dark-text);
             }
           }
         }

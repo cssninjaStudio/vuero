@@ -72,7 +72,6 @@ onMounted(() => {
 </template>
 
 <style lang="scss" scoped>
-@import '../../../scss/abstracts/_variables.scss';
 @import '../../../scss/abstracts/_mixins.scss';
 
 .toc {
@@ -89,17 +88,17 @@ onMounted(() => {
 }
 
 .toc-title {
-  font-family: $font-alt;
+  font-family: var(--font-alt);
   font-size: 0.9rem;
   text-transform: uppercase;
-  color: $dark-text;
+  color: var(--dark-text);
   padding-bottom: 4px;
   margin-bottom: 1.25rem;
   display: block;
 }
 
 ul {
-  border-left: 1px solid $fade-grey-dark-6;
+  border-left: 1px solid var(--fade-grey-dark-6);
 
   li {
     padding: 0.25rem 0;
@@ -107,13 +106,13 @@ ul {
     a {
       position: relative;
       left: -2px;
-      font-family: $font;
+      font-family: var(--font);
       border-left: 3px solid transparent;
       padding: 0.5rem 1.25rem;
 
       &.is-active {
         font-weight: 500;
-        border-color: $primary;
+        border-color: var(--primary);
       }
     }
   }
@@ -132,15 +131,15 @@ ul {
 }
 
 a {
-  color: $light-text;
+  color: var(--light-text);
 
   &.is-active {
-    color: $primary;
+    color: var(--primary);
   }
 
   &:focus:not(.is-active),
   &:hover:not(.is-active) {
-    color: $dark-text;
+    color: var(--dark-text);
   }
 }
 
@@ -151,17 +150,17 @@ a {
 
 .is-dark {
   .toc-title {
-    color: $dark-dark-text;
+    color: var(--dark-dark-text);
   }
 
   ul {
-    border-color: $dark-sidebar-light-22;
+    border-color: var(--dark-sidebar-light-22);
   }
 
   a {
     &:focus:not(.is-active),
     &:hover:not(.is-active) {
-      color: $white;
+      color: var(--white);
     }
   }
 }

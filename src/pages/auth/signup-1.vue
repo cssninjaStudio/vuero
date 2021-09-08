@@ -486,7 +486,6 @@ onUnmounted(() => {
 </template>
 
 <style lang="scss">
-@import '../../scss/abstracts/_variables.scss';
 @import '../../scss/abstracts/_mixins.scss';
 @import '../../scss/pages/profile/_user-profile.scss';
 
@@ -544,21 +543,21 @@ onUnmounted(() => {
       width: calc(100% - 80px);
       margin: 0 auto;
       height: 0.35rem !important;
-      background-color: $white;
+      background-color: var(--white);
       z-index: 0;
 
       &::-webkit-progress-value {
-        background-color: $primary;
+        background-color: var(--primary);
         transition: width 0.5s ease;
       }
 
       &::-moz-progress-bar {
-        background-color: $primary;
+        background-color: var(--primary);
         transition: width 0.5s ease;
       }
 
       &::-ms-fill {
-        background-color: $primary;
+        background-color: var(--primary);
         transition: width 0.5s ease;
       }
     }
@@ -570,29 +569,29 @@ onUnmounted(() => {
       align-items: center;
       height: 46px;
       width: 46px;
-      border-radius: $radius-rounded;
-      background: $fade-grey;
+      border-radius: var(--radius-rounded);
+      background: var(--fade-grey);
       cursor: pointer;
       z-index: 1;
 
       &.is-active {
         .inner {
-          background: $white;
-          border-color: $primary;
+          background: var(--white);
+          border-color: var(--primary);
 
           svg {
-            color: $primary;
+            color: var(--primary);
           }
         }
       }
 
       &.is-done {
         .inner {
-          background: $primary;
-          border-color: $primary;
+          background: var(--primary);
+          border-color: var(--primary);
 
           svg {
-            color: $smoke-white;
+            color: var(--smoke-white);
           }
         }
       }
@@ -608,9 +607,9 @@ onUnmounted(() => {
         align-items: center;
         height: 40px;
         width: 40px;
-        border-radius: $radius-rounded;
-        border: 2px solid $accent-grey;
-        background: $accent-grey;
+        border-radius: var(--radius-rounded);
+        border: 2px solid var(--primary-grey);
+        background: var(--primary-grey);
       }
 
       .step-label {
@@ -624,13 +623,13 @@ onUnmounted(() => {
         transform: translateX(-25%);
         font-size: 0.8rem;
         font-weight: 500;
-        color: $dark-text;
+        color: var(--dark-text);
       }
 
       svg {
         height: 16px;
         width: 16px;
-        color: $muted-grey;
+        color: var(--muted-grey);
       }
     }
   }
@@ -647,7 +646,7 @@ onUnmounted(() => {
 .signup-wrapper {
   position: relative;
   min-height: 100vh;
-  background: $fade-grey;
+  background: var(--fade-grey);
 
   .card-bg {
     position: absolute;
@@ -663,13 +662,13 @@ onUnmounted(() => {
   }
 
   .signup-title {
-    font-family: $font-alt;
-    color: $dark-text;
+    font-family: var(--font-alt);
+    color: var(--dark-text);
   }
 
   .signup-subtitle {
-    font-family: $font;
-    color: $muted-grey;
+    font-family: var(--font);
+    color: var(--muted-grey);
     font-size: 1rem;
   }
 
@@ -685,21 +684,21 @@ onUnmounted(() => {
 
           span {
             display: block;
-            color: $muted-grey;
+            color: var(--muted-grey);
           }
         }
 
         &.is-agree {
           span {
-            color: $placeholder-dark-8;
+            color: var(--placeholder-dark-8);
 
             a {
-              color: $muted-grey;
+              color: var(--muted-grey);
               font-weight: 500;
               transition: color 0.3s;
 
               &:hover {
-                color: $primary;
+                color: var(--primary);
               }
             }
           }
@@ -713,18 +712,18 @@ onUnmounted(() => {
           transition: all 0.3s;
 
           &:focus {
-            background: $fade-grey-light-6;
-            border-color: $placeholder;
+            background: var(--fade-grey-light-6);
+            border-color: var(--placeholder);
 
             ~ .auth-label,
             ~ .autv-icon i {
-              color: $muted-grey;
+              color: var(--muted-grey);
             }
           }
         }
 
         .error-text {
-          color: $danger;
+          color: var(--danger);
           font-size: 0.8rem;
           display: none;
           padding: 2px 6px;
@@ -735,7 +734,7 @@ onUnmounted(() => {
           top: 6px;
           left: 10px;
           font-size: 0.8rem;
-          color: $dark-text;
+          color: var(--dark-text);
           font-weight: 500;
           z-index: 2;
           transition: all 0.3s;
@@ -753,7 +752,7 @@ onUnmounted(() => {
 
           i {
             font-size: 24px;
-            color: $placeholder;
+            color: var(--placeholder);
             transition: all 0.3s;
           }
         }
@@ -775,25 +774,25 @@ onUnmounted(() => {
               display: flex;
               justify-content: center;
               align-items: center;
-              border-radius: $radius-rounded;
+              border-radius: var(--radius-rounded);
 
               svg {
                 height: 10px;
                 width: 10px;
                 stroke-width: 3px;
-                color: $white !important;
+                color: var(--white) !important;
               }
             }
 
             &.is-success {
               .icon-wrapper {
-                background: $success;
+                background: var(--success);
               }
             }
 
             &.is-error {
               .icon-wrapper {
-                background: $danger;
+                background: var(--danger);
               }
             }
           }
@@ -812,7 +811,7 @@ onUnmounted(() => {
 
           &.has-error {
             .input {
-              border-color: $danger;
+              border-color: var(--danger);
             }
 
             .error-text {
@@ -838,19 +837,19 @@ onUnmounted(() => {
           a {
             display: block;
             margin-left: auto;
-            color: $muted-grey;
+            color: var(--muted-grey);
             font-weight: 500;
             font-size: 0.9rem;
             transition: color 0.3s;
 
             &:hover {
-              color: $primary;
+              color: var(--primary);
             }
           }
 
           .remember-me {
             font-size: 0.9rem;
-            color: $muted-grey;
+            color: var(--muted-grey);
             font-weight: 500;
           }
         }
@@ -866,10 +865,10 @@ onUnmounted(() => {
 
         > span {
           margin-left: 12px;
-          font-family: $font;
+          font-family: var(--font);
 
           a {
-            color: $primary;
+            color: var(--primary);
             font-weight: 500;
             padding: 0 3px;
           }
@@ -894,13 +893,13 @@ onUnmounted(() => {
         &:first-child {
           &:hover {
             opacity: 0.95;
-            box-shadow: $primary-box-shadow;
+            box-shadow: var(--primary-box-shadow);
           }
         }
 
         &:nth-child(2) {
-          color: $dark-text;
-          border-color: $placeholder;
+          color: var(--dark-text);
+          border-color: var(--placeholder);
         }
       }
     }
@@ -925,15 +924,15 @@ onUnmounted(() => {
           cursor: pointer;
 
           &:checked + .signup-box {
-            border-color: $primary;
+            border-color: var(--primary);
 
             i {
-              color: $primary;
+              color: var(--primary);
             }
 
             .meta {
               span:first-child {
-                color: $primary;
+                color: var(--primary);
               }
             }
           }
@@ -943,14 +942,14 @@ onUnmounted(() => {
           display: flex;
           align-items: center;
           padding: 12px;
-          background: $white;
-          border: 1px solid $fade-grey-dark-3;
-          border-radius: $radius-large;
+          background: var(--white);
+          border: 1px solid var(--fade-grey-dark-3);
+          border-radius: var(--radius-large);
           transition: all 0.3s;
 
           i {
             font-size: 2rem;
-            color: $muted-grey;
+            color: var(--muted-grey);
           }
 
           .meta {
@@ -962,12 +961,12 @@ onUnmounted(() => {
               &:first-child {
                 font-size: 0.85rem;
                 font-weight: 500;
-                color: $dark-text;
+                color: var(--dark-text);
               }
 
               &:nth-child(2) {
                 font-size: 0.8rem;
-                color: $muted-grey;
+                color: var(--muted-grey);
               }
             }
           }
@@ -994,12 +993,12 @@ onUnmounted(() => {
   }
 
   .title {
-    font-family: $font-alt;
+    font-family: var(--font-alt);
     font-size: 1.4rem;
   }
 
   .subtitle {
-    font-family: $font;
+    font-family: var(--font);
     font-size: 1rem;
   }
 
@@ -1013,12 +1012,12 @@ onUnmounted(() => {
       width: 140px;
       height: 140px;
       margin: 10px auto;
-      border-radius: $radius-rounded;
+      border-radius: var(--radius-rounded);
 
       img {
         width: 140px;
         height: 140px;
-        border-radius: $radius-rounded;
+        border-radius: var(--radius-rounded);
         display: block;
         border: 4px solid #e8e8e8;
         margin-left: -1px;
@@ -1033,21 +1032,21 @@ onUnmounted(() => {
         display: flex;
         justify-content: center;
         align-items: center;
-        background: $white;
-        border-radius: $radius-rounded;
-        border: 1px solid $fade-grey-dark-4;
+        background: var(--white);
+        border-radius: var(--radius-rounded);
+        border: 1px solid var(--fade-grey-dark-4);
         z-index: 5;
         transition: all 0.3s;
         cursor: pointer;
 
         &:hover {
-          box-shadow: $light-box-shadow;
+          box-shadow: var(--light-box-shadow);
         }
 
         svg {
           height: 16px;
           width: 16px;
-          color: $dark-text;
+          color: var(--dark-text);
         }
       }
     }
@@ -1078,7 +1077,7 @@ onUnmounted(() => {
     img {
       height: 70px;
       width: 70px;
-      border-radius: $radius-rounded;
+      border-radius: var(--radius-rounded);
       margin: 0 auto;
       transition: all 0.3s;
     }
@@ -1103,7 +1102,7 @@ onUnmounted(() => {
       img {
         opacity: 1;
         transform: scale(1);
-        border: 2px solid $primary;
+        border: 2px solid var(--primary);
       }
     }
   }
@@ -1114,7 +1113,7 @@ onUnmounted(() => {
 
   .slick-prev::before,
   .slick-next::before {
-    color: $muted-grey;
+    color: var(--muted-grey);
   }
 
   .slick-custom {
@@ -1123,13 +1122,13 @@ onUnmounted(() => {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid $fade-grey;
+    border: 1px solid var(--fade-grey);
     width: 30px;
     height: 30px;
-    background: $white;
+    background: var(--white);
     border-radius: 100px;
     cursor: pointer;
-    color: $dark-text;
+    color: var(--dark-text);
     transition: all 0.3s;
     z-index: 25;
     opacity: 0;
@@ -1137,14 +1136,14 @@ onUnmounted(() => {
     svg {
       height: 16px;
       width: 16px;
-      color: $primary;
+      color: var(--primary);
       transition: all 0.3s;
     }
 
     &:hover {
-      border-color: $fade-grey-dark-4;
-      color: $white;
-      box-shadow: $light-box-shadow;
+      border-color: var(--fade-grey-dark-4);
+      color: var(--white);
+      box-shadow: var(--light-box-shadow);
     }
 
     &.is-prev {
@@ -1168,53 +1167,53 @@ onUnmounted(() => {
 
 .is-dark {
   .signup-wrapper {
-    background: $dark-sidebar-light-10;
+    background: var(--dark-sidebar-light-10);
   }
 
   .signup-steps {
     .steps-container {
       .progress {
         &::-webkit-progress-value {
-          background: $accent;
+          background: var(--primary);
         }
 
         &::-moz-progress-bar {
-          background: $accent;
+          background: var(--primary);
         }
 
         &::-ms-fill {
-          background: $accent;
+          background: var(--primary);
         }
       }
 
       .step-icon {
-        background: $dark-sidebar-light-7;
+        background: var(--dark-sidebar-light-7);
 
         &.is-active {
-          background: $dark-sidebar-light-16;
+          background: var(--dark-sidebar-light-16);
 
           .inner {
-            background: $accent;
+            background: var(--primary);
 
             svg {
-              color: $white;
-              stroke: $white;
+              color: var(--white);
+              stroke: var(--white);
             }
           }
 
           .step-label {
-            color: $accent;
+            color: var(--primary);
             opacity: 1;
           }
         }
 
         .inner {
-          background: $dark-sidebar-light-9;
-          border-color: $dark-sidebar-light-9;
+          background: var(--dark-sidebar-light-9);
+          border-color: var(--dark-sidebar-light-9);
         }
 
         .step-label {
-          color: $dark-dark-text;
+          color: var(--dark-dark-text);
           opacity: 0.6;
         }
       }
@@ -1225,17 +1224,17 @@ onUnmounted(() => {
     .signup-form {
       .control {
         .auth-label {
-          color: $light-text;
+          color: var(--light-text);
         }
 
         .input {
           &:focus {
-            background: $dark-sidebar-dark-4;
-            border-color: $dark-sidebar-light-12;
+            background: var(--dark-sidebar-dark-4);
+            border-color: var(--dark-sidebar-light-12);
 
             ~ .auth-label,
             ~ .auth-icon i {
-              color: $accent;
+              color: var(--primary);
             }
           }
         }
@@ -1245,27 +1244,27 @@ onUnmounted(() => {
         .box-wrap {
           input {
             &:checked + .signup-box {
-              border-color: $accent;
+              border-color: var(--primary);
 
               i {
-                color: $accent;
+                color: var(--primary);
               }
 
               .meta {
                 span:first-child {
-                  color: $accent;
+                  color: var(--primary);
                 }
               }
             }
           }
 
           .signup-box {
-            background-color: $dark-sidebar-light-2;
-            border-color: $dark-sidebar-light-4;
+            background-color: var(--dark-sidebar-light-2);
+            border-color: var(--dark-sidebar-light-4);
 
             .meta {
               span:first-child {
-                color: $dark-dark-text;
+                color: var(--dark-dark-text);
               }
             }
           }
@@ -1275,10 +1274,10 @@ onUnmounted(() => {
       .button-wrap {
         &.has-help {
           > span {
-            color: $light-text;
+            color: var(--light-text);
 
             a {
-              color: $accent;
+              color: var(--primary);
             }
           }
         }
@@ -1290,16 +1289,16 @@ onUnmounted(() => {
     .picture-selector {
       .image-container {
         img {
-          border-color: $dark-sidebar-light-10;
+          border-color: var(--dark-sidebar-light-10);
         }
 
         .upload-button {
-          background-color: $dark-sidebar-light-2;
-          border-color: $dark-sidebar-light-10;
+          background-color: var(--dark-sidebar-light-2);
+          border-color: var(--dark-sidebar-light-10);
 
           svg {
-            color: $light-text;
-            stroke: $light-text;
+            color: var(--light-text);
+            stroke: var(--light-text);
           }
         }
       }
@@ -1311,7 +1310,7 @@ onUnmounted(() => {
       span {
         &::before,
         &::after {
-          border-color: $dark-sidebar-light-18;
+          border-color: var(--dark-sidebar-light-18);
         }
       }
     }
@@ -1321,18 +1320,18 @@ onUnmounted(() => {
     .slick-slide {
       &.slick-current {
         img {
-          border-color: $accent;
+          border-color: var(--primary);
         }
       }
     }
 
     .slick-custom {
-      background-color: $dark-sidebar-light-2;
-      border-color: $dark-sidebar-light-10;
+      background-color: var(--dark-sidebar-light-2);
+      border-color: var(--dark-sidebar-light-10);
 
       &::before,
       &::after {
-        color: $light-text;
+        color: var(--light-text);
       }
     }
   }

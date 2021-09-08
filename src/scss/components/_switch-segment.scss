@@ -4,15 +4,15 @@
   justify-content: flex-end;
 
   .is-label {
-    font-family: $font;
+    font-family: var(--font);
     font-size: 0.9rem;
 
     &:first-child {
-      color: $dark-text;
+      color: var(--dark-text);
     }
 
     &:nth-child(3) {
-      color: $light-text;
+      color: var(--light-text);
     }
   }
 
@@ -26,7 +26,7 @@
   .switch-segment {
     .is-label {
       &:first-child {
-        color: $dark-dark-text;
+        color: var(--dark-dark-text);
       }
     }
   }

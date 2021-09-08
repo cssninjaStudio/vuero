@@ -113,7 +113,6 @@ const optionsSingle = [
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
 
 .card-grid {
@@ -139,7 +138,7 @@ const optionsSingle = [
     min-height: 300px;
 
     &:hover {
-      box-shadow: $light-box-shadow;
+      box-shadow: var(--light-box-shadow);
     }
 
     > img {
@@ -154,10 +153,10 @@ const optionsSingle = [
       padding: 12px 5px;
 
       h3 {
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         font-size: 1rem;
         font-weight: 600;
-        color: $dark-text;
+        color: var(--dark-text);
         line-height: 1.3;
       }
     }
@@ -177,16 +176,16 @@ const optionsSingle = [
           font-weight: 400;
 
           &:first-child {
-            font-family: $font-alt;
+            font-family: var(--font-alt);
             font-size: 0.9rem;
-            color: $dark-text;
+            color: var(--dark-text);
             font-weight: 600;
           }
 
           &:nth-child(2) {
-            font-family: $font;
+            font-family: var(--font);
             font-size: 0.85rem;
-            color: $light-text;
+            color: var(--light-text);
           }
         }
       }

@@ -274,7 +274,6 @@ const filteredData = computed(() => {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
 
 .list-view-v2 {
@@ -285,7 +284,7 @@ const filteredData = computed(() => {
     padding: 16px;
 
     &:hover {
-      box-shadow: $light-box-shadow;
+      box-shadow: var(--light-box-shadow);
     }
 
     .list-view-item-inner {
@@ -298,7 +297,7 @@ const filteredData = computed(() => {
         min-width: 190px;
         max-width: 190px;
         object-fit: cover;
-        border-radius: $radius;
+        border-radius: var(--radius);
       }
 
       .meta-left {
@@ -307,8 +306,8 @@ const filteredData = computed(() => {
         margin-left: 16px;
 
         h3 {
-          font-family: $font-alt;
-          color: $dark-text;
+          font-family: var(--font-alt);
+          color: var(--dark-text);
           font-weight: 600;
           font-size: 1.1rem;
           line-height: 1.5;
@@ -320,7 +319,7 @@ const filteredData = computed(() => {
               position: relative;
               top: -2px;
               font-size: 12px;
-              color: $fade-grey-dark-4;
+              color: var(--fade-grey-dark-4);
 
               &.active {
                 color: #ffc43b;
@@ -331,7 +330,7 @@ const filteredData = computed(() => {
 
         p {
           font-size: 0.95rem;
-          color: $light-text;
+          color: var(--light-text);
 
           svg {
             height: 12px;
@@ -343,13 +342,13 @@ const filteredData = computed(() => {
           display: flex;
           align-items: center;
           margin-top: 10px;
-          font-family: $font;
+          font-family: var(--font);
           font-size: 0.9rem;
-          color: $primary;
+          color: var(--primary);
 
           .icon-separator {
             font-size: 5px;
-            color: $light-text;
+            color: var(--light-text);
             padding: 0 10px;
           }
         }
@@ -365,14 +364,14 @@ const filteredData = computed(() => {
 
             span {
               font-size: 0.85rem;
-              font-family: $font-alt;
-              color: $dark-text;
+              font-family: var(--font-alt);
+              color: var(--dark-text);
             }
 
             i {
               font-size: 1.2rem;
               margin-right: 6px;
-              color: $light-text;
+              color: var(--light-text);
             }
           }
         }
@@ -401,23 +400,23 @@ const filteredData = computed(() => {
       .list-view-item-inner {
         .meta-left {
           h3 {
-            color: $dark-dark-text !important;
+            color: var(--dark-dark-text) !important;
 
             .rating {
               i:not(.active) {
-                color: $dark-sidebar-dark-2;
+                color: var(--dark-sidebar-dark-2);
               }
             }
           }
 
           > span {
-            color: $accent;
+            color: var(--primary);
           }
 
           .icon-list {
             > span {
               span {
-                color: $dark-dark-text;
+                color: var(--dark-dark-text);
               }
             }
           }
@@ -427,9 +426,9 @@ const filteredData = computed(() => {
           .buttons {
             .button {
               &:first-child {
-                background: $dark-sidebar-light-2;
-                border-color: $dark-sidebar-light-8;
-                color: $dark-dark-text;
+                background: var(--dark-sidebar-light-2);
+                border-color: var(--dark-sidebar-light-8);
+                color: var(--dark-dark-text);
               }
             }
           }

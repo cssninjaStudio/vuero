@@ -12,6 +12,9 @@
 1. Spacing helpers
 ========================================================================== */
 
+$spaceamounts: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80, 90, 100;
+$sides: top, bottom, left, right;
+
 @each $space in $spaceamounts {
   @each $side in $sides {
     .m-#{str-slice($side, 0, 1)}-#{$space} {
@@ -84,56 +87,19 @@
 2. Color helpers
 ========================================================================== */
 
-@mixin color-modifiers($attribute, $prefix) {
-  @each $name, $hex in $vuero-colors {
-    &#{$prefix}#{$name} {
-      #{$attribute}: $hex !important;
-    }
-  }
-}
-
-.text {
-  @each $name, $hex in $vuero-colors {
-    &-#{$name} {
-      color: $hex !important;
-    }
-  }
-}
-
-.hover-text {
-  @each $name, $hex in $vuero-colors {
-    &-#{$name} {
-      &:hover {
-        color: $hex !important;
-      }
-    }
-  }
-}
-
-.bg {
-  @each $name, $hex in $vuero-colors {
-    &-#{$name} {
-      background: $hex !important;
-    }
-  }
-}
-
-.hover-bg {
-  @each $name, $hex in $vuero-colors {
-    &-#{$name} {
-      &:hover {
-        background: $hex !important;
-        color: findColorInvert($hex) !important;
-      }
-    }
-  }
-}
+// .text { AnalyticsDashboard
+//   @each $name, $hex in $vuero-colors {
+//     &-#{$name} {
+//       color: $hex !important;
+//     }
+//   }
+// }
 
 .has-text-secondary {
-  color: $secondary !important;
+  color: var(--secondary) !important;
 }
 .has-background-secondary {
-  background-color: $secondary !important;
+  background-color: var(--secondary) !important;
 }
 
 // /* ==========================================================================
@@ -141,10 +107,10 @@
 // ========================================================================== */
 
 .has-light-shadow {
-  box-shadow: $light-box-shadow;
+  box-shadow: var(--light-box-shadow);
 
   &.has-light-border {
-    border: 1px solid $fade-grey-dark-3;
+    border: 1px solid var(--fade-grey-dark-3);
   }
 }
 
@@ -156,41 +122,41 @@
   //Card border helper
   .is-dark-card-bordered,
   .is-dark-bordered-12 {
-    border-color: $dark-sidebar-light-12 !important;
+    border-color: var(--dark-sidebar-light-12) !important;
   }
 
   //Primary Helper
   .is-dark-primary {
-    color: $accent !important;
+    color: var(--primary) !important;
   }
 
   .is-dark-primary-hover:hover {
-    color: $accent !important;
+    color: var(--primary) !important;
   }
 
   //BG Helpers
   .is-dark-bg-1 {
-    background: $dark-sidebar-light-1 !important;
+    background: var(--dark-sidebar-light-1) !important;
   }
 
   .is-dark-bg-2 {
-    background: $dark-sidebar-light-2 !important;
+    background: var(--dark-sidebar-light-2) !important;
   }
 
   .is-dark-bg-3 {
-    background: $dark-sidebar-light-3 !important;
+    background: var(--dark-sidebar-light-3) !important;
   }
 
   .is-dark-bg-4 {
-    background: $dark-sidebar-light-4 !important;
+    background: var(--dark-sidebar-light-4) !important;
   }
 
   .is-dark-bg-5 {
-    background: $dark-sidebar-light-5 !important;
+    background: var(--dark-sidebar-light-5) !important;
   }
 
   .is-dark-bg-6 {
-    background: $dark-sidebar-light-6 !important;
+    background: var(--dark-sidebar-light-6) !important;
   }
 }
 
@@ -207,7 +173,7 @@
 }
 
 .radius-full {
-  border-radius: $radius-rounded;
+  border-radius: var(--radius-rounded);
 }
 
 /* ==========================================================================

@@ -270,7 +270,6 @@ import { memberList } from '/@src/data/widgets/table/memberList'
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
 @import '../../../../scss/pages/generic/_widgets-stats.scss';
 </style>

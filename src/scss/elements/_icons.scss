@@ -38,7 +38,7 @@
   width: 40px;
   min-width: 40px;
   border-radius: 8px;
-  background: $fade-grey;
+  background: var(--fade-grey);
   transition: all 0.3s;
 
   &.is-small {
@@ -188,219 +188,219 @@
   }
 
   &.is-rounded {
-    border-radius: $radius-rounded;
+    border-radius: var(--radius-rounded);
   }
 
   &.is-primary {
-    background: $primary-light-42;
+    background: var(--primary-light-42);
 
     &.is-bordered {
-      border-color: $primary;
+      border-color: var(--primary);
     }
 
     i {
-      color: $primary;
+      color: var(--primary);
     }
 
     svg {
-      color: $primary;
+      color: var(--primary);
     }
   }
 
   &.is-secondary {
-    background: $secondary-light-42;
+    background: var(--secondary-light-42);
 
     &.is-bordered {
-      border-color: $secondary;
+      border-color: var(--secondary);
     }
 
     i {
-      color: $secondary;
+      color: var(--secondary);
     }
 
     svg {
-      color: $secondary;
+      color: var(--secondary);
     }
   }
 
   &.is-accent {
-    background: $accent-light-36;
+    background: var(--primary-light-36);
 
     &.is-bordered {
-      border-color: $accent;
+      border-color: var(--primary);
     }
 
     i {
-      color: $accent;
+      color: var(--primary);
     }
 
     svg {
-      color: $accent;
+      color: var(--primary);
     }
   }
 
   &.is-success {
-    background: $success-light-45;
+    background: var(--success-light-45);
 
     &.is-bordered {
-      border-color: $success;
+      border-color: var(--success);
     }
 
     i {
-      color: $success;
+      color: var(--success);
     }
 
     svg {
-      color: $success;
+      color: var(--success);
     }
   }
 
   &.is-info {
-    background: $info-light-45;
+    background: var(--info-light-45);
 
     &.is-bordered {
-      border-color: $info;
+      border-color: var(--info);
     }
 
     i {
-      color: $info;
+      color: var(--info);
     }
 
     svg {
-      color: $info;
+      color: var(--info);
     }
   }
 
   &.is-warning {
-    background: $warning-light-32;
+    background: var(--warning-light-32);
 
     &.is-bordered {
-      border-color: $warning;
+      border-color: var(--warning);
     }
 
     i {
-      color: $warning;
+      color: var(--warning);
     }
 
     svg {
-      color: $warning;
+      color: var(--warning);
     }
   }
 
   &.is-danger {
-    background: $danger-light-36;
+    background: var(--danger-light-36);
 
     &.is-bordered {
-      border-color: $danger;
+      border-color: var(--danger);
     }
 
     i {
-      color: $danger;
+      color: var(--danger);
     }
 
     svg {
-      color: $danger;
+      color: var(--danger);
     }
   }
 
   &.is-purple {
-    background: $h-purple-light-36;
+    background: var(--purple-light-36);
 
     &.is-bordered {
-      border-color: $h-purple;
+      border-color: var(--purple);
     }
 
     i {
-      color: $h-purple;
+      color: var(--purple);
     }
 
     svg {
-      color: $h-purple;
+      color: var(--purple);
     }
   }
 
   &.is-blue {
-    background: $h-blue-light-34;
+    background: var(--blue-light-34);
 
     &.is-bordered {
-      border-color: $h-blue;
+      border-color: var(--blue);
     }
 
     i {
-      color: $h-blue;
+      color: var(--blue);
     }
 
     svg {
-      color: $h-blue;
+      color: var(--blue);
     }
   }
 
   &.is-yellow {
-    background: $h-yellow-light-22;
+    background: var(--yellow-light-22);
 
     &.is-bordered {
-      border-color: $h-yellow;
+      border-color: var(--yellow);
     }
 
     i {
-      color: $h-yellow;
+      color: var(--yellow);
     }
 
     svg {
-      color: $h-yellow;
+      color: var(--yellow);
     }
   }
 
   &.is-orange {
-    background: $h-orange-light-20;
+    background: var(--orange-light-20);
 
     &.is-bordered {
-      border-color: $h-orange;
+      border-color: var(--orange);
     }
 
     i {
-      color: $h-orange;
+      color: var(--orange);
     }
 
     svg {
-      color: $h-orange;
+      color: var(--orange);
     }
   }
 
   &.is-green {
-    background: $h-green-light-23;
+    background: var(--green-light-23);
 
     &.is-bordered {
-      border-color: $h-green;
+      border-color: var(--green);
     }
 
     i {
-      color: $h-green;
+      color: var(--green);
     }
 
     svg {
-      color: $h-green;
+      color: var(--green);
     }
   }
 
   &.is-red {
-    background: $h-red-light-38;
+    background: var(--red-light-38);
 
     &.is-bordered {
-      border-color: $h-red;
+      border-color: var(--red);
     }
 
     i {
-      color: $h-red;
+      color: var(--red);
     }
 
     svg {
-      color: $h-red;
+      color: var(--red);
     }
   }
 
   &.is-bordered {
-    border: 1px solid $muted-grey;
+    border: 1px solid var(--muted-grey);
   }
 
   .fas,
@@ -408,7 +408,7 @@
   .far,
   .fal {
     font-size: 1.2rem;
-    color: $muted-grey;
+    color: var(--muted-grey);
     transition: color 0.3s;
   }
 
@@ -417,7 +417,7 @@
   .fas,
   .fab {
     font-size: 1.4rem;
-    color: $muted-grey;
+    color: var(--muted-grey);
     transition: color 0.3s;
   }
 
@@ -435,230 +435,230 @@
 .is-dark {
   .v-icon {
     &.is-primary {
-      background: $accent;
+      background: var(--primary);
 
       &.is-bordered {
-        border-color: $accent;
+        border-color: var(--primary);
       }
 
       .lnil,
       .lnir,
       .fas,
       .fab {
-        color: $white;
+        color: var(--white);
       }
 
       svg {
-        color: $smoke-white;
+        color: var(--smoke-white);
       }
     }
 
     &.is-accent {
-      background: $accent;
+      background: var(--primary);
 
       &.is-bordered {
-        border-color: $accent;
+        border-color: var(--primary);
       }
 
       .lnil,
       .lnir,
       .fas,
       .fab {
-        color: $white;
+        color: var(--white);
       }
 
       svg {
-        color: $smoke-white;
+        color: var(--smoke-white);
       }
     }
 
     &.is-success {
-      background: $success;
+      background: var(--success);
 
       &.is-bordered {
-        border-color: $success;
+        border-color: var(--success);
       }
 
       .lnil,
       .lnir,
       .fas,
       .fab {
-        color: $white;
+        color: var(--white);
       }
 
       svg {
-        color: $smoke-white;
+        color: var(--smoke-white);
       }
     }
 
     &.is-info {
-      background: $info;
+      background: var(--info);
 
       &.is-bordered {
-        border-color: $info;
+        border-color: var(--info);
       }
 
       .lnil,
       .lnir,
       .fas,
       .fab {
-        color: $white;
+        color: var(--white);
       }
 
       svg {
-        color: $smoke-white;
+        color: var(--smoke-white);
       }
     }
 
     &.is-warning {
-      background: $warning;
+      background: var(--warning);
 
       &.is-bordered {
-        border-color: $warning;
+        border-color: var(--warning);
       }
 
       .lnil,
       .lnir,
       .fas,
       .fab {
-        color: $white;
+        color: var(--white);
       }
 
       svg {
-        color: $smoke-white;
+        color: var(--smoke-white);
       }
     }
 
     &.is-danger {
-      background: $danger;
+      background: var(--danger);
 
       &.is-bordered {
-        border-color: $danger;
+        border-color: var(--danger);
       }
 
       .lnil,
       .lnir,
       .fas,
       .fab {
-        color: $white;
+        color: var(--white);
       }
 
       svg {
-        color: $smoke-white;
+        color: var(--smoke-white);
       }
     }
 
     &.is-purple {
-      background: $h-purple;
+      background: var(--purple);
 
       &.is-bordered {
-        border-color: $h-purple;
+        border-color: var(--purple);
       }
 
       .lnil,
       .lnir,
       .fas,
       .fab {
-        color: $white;
+        color: var(--white);
       }
 
       svg {
-        color: $smoke-white;
+        color: var(--smoke-white);
       }
     }
 
     &.is-blue {
-      background: $h-blue;
+      background: var(--blue);
 
       &.is-bordered {
-        border-color: $h-blue;
+        border-color: var(--blue);
       }
 
       .lnil,
       .lnir,
       .fas,
       .fab {
-        color: $white;
+        color: var(--white);
       }
 
       svg {
-        color: $smoke-white;
+        color: var(--smoke-white);
       }
     }
 
     &.is-yellow {
-      background: $h-yellow;
+      background: var(--yellow);
 
       &.is-bordered {
-        border-color: $h-yellow;
+        border-color: var(--yellow);
       }
 
       .lnil,
       .lnir,
       .fas,
       .fab {
-        color: $white;
+        color: var(--white);
       }
 
       svg {
-        color: $smoke-white;
+        color: var(--smoke-white);
       }
     }
 
     &.is-orange {
-      background: $h-orange;
+      background: var(--orange);
 
       &.is-bordered {
-        border-color: $h-orange;
+        border-color: var(--orange);
       }
 
       .lnil,
       .lnir,
       .fas,
       .fab {
-        color: $white;
+        color: var(--white);
       }
 
       svg {
-        color: $smoke-white;
+        color: var(--smoke-white);
       }
     }
 
     &.is-green {
-      background: $h-green;
+      background: var(--green);
 
       &.is-bordered {
-        border-color: $h-green;
+        border-color: var(--green);
       }
 
       .lnil,
       .lnir,
       .fas,
       .fab {
-        color: $white;
+        color: var(--white);
       }
 
       svg {
-        color: $smoke-white;
+        color: var(--smoke-white);
       }
     }
 
     &.is-red {
-      background: $h-red;
+      background: var(--red);
 
       &.is-bordered {
-        border-color: $h-red;
+        border-color: var(--red);
       }
 
       .lnil,
       .lnir,
       .fas,
       .fab {
-        color: $white;
+        color: var(--white);
       }
 
       svg {
-        color: $smoke-white;
+        color: var(--smoke-white);
       }
     }
   }

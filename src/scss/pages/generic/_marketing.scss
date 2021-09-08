@@ -35,7 +35,7 @@ Marketing Layouts
   }
 
   &.is-centered {
-    background: $widget-grey;
+    background: var(--widget-grey);
 
     .hero-body {
       .columns {
@@ -66,7 +66,7 @@ Marketing Layouts
 
   &.is-left,
   &.is-centered {
-    background: $widget-grey;
+    background: var(--widget-grey);
 
     .hexagon {
       position: absolute;
@@ -111,7 +111,7 @@ Marketing Layouts
   }
 
   &.is-right {
-    background: $widget-grey;
+    background: var(--widget-grey);
 
     .hexagon {
       position: absolute;
@@ -164,8 +164,8 @@ Marketing Layouts
     }
 
     .hero-mockup {
-      box-shadow: $light-box-shadow;
-      border: 1px solid $border;
+      box-shadow: var(--light-box-shadow);
+      border: 1px solid var(--border);
       border-radius: 0.75rem;
     }
   }
@@ -176,7 +176,7 @@ Marketing Layouts
     &.is-left,
     &.is-right,
     &.is-centered {
-      background: $landing-dark-3;
+      background: var(--landing-xxx-dark-2);
 
       .hexagon {
         opacity: 0.3;
@@ -184,28 +184,28 @@ Marketing Layouts
 
       .hero-body {
         .hero-mockup {
-          border-color: $landing-dark-15;
+          border-color: var(--landing-xxx-light-8);
         }
 
         .buttons {
           .button {
             &:not(.is-outlined) {
-              background: $accent !important;
-              border-color: $accent !important;
+              background: var(--primary) !important;
+              border-color: var(--primary) !important;
 
               &:hover {
-                box-shadow: $accent-box-shadow !important;
+                box-shadow: var(--primary-box-shadow) !important;
               }
             }
 
             &.is-outlined {
-              color: $accent !important;
-              border-color: $accent !important;
+              color: var(--primary) !important;
+              border-color: var(--primary) !important;
 
               &:hover {
-                background: $accent !important;
-                color: $white !important;
-                box-shadow: $accent-box-shadow !important;
+                background: var(--primary) !important;
+                color: var(--white) !important;
+                box-shadow: var(--primary-box-shadow) !important;
               }
             }
           }
@@ -267,13 +267,13 @@ Marketing Layouts
     z-index: 1;
 
     &.light-image-l {
-      box-shadow: $light-box-shadow;
-      border: 1px solid $border;
+      box-shadow: var(--light-box-shadow);
+      border: 1px solid var(--border);
     }
 
     &.dark-image-l {
-      box-shadow: $light-box-shadow;
-      border: 1px solid $dark-sidebar-light-12;
+      box-shadow: var(--light-box-shadow);
+      border: 1px solid var(--dark-sidebar-light-12);
     }
   }
 }
@@ -281,32 +281,32 @@ Marketing Layouts
 .is-dark {
   .centered-mockup-wrapper {
     .title {
-      color: $white !important;
+      color: var(--white) !important;
     }
   }
 
   .video-section {
     .title {
-      color: $white !important;
+      color: var(--white) !important;
     }
 
     .video-player-container {
       &.reversed-play {
         .plyr--full-ui.plyr--video .plyr__control--overlaid {
-          border-color: $accent !important;
-          color: $accent !important;
+          border-color: var(--primary) !important;
+          color: var(--primary) !important;
 
           &:hover {
-            background: $accent !important;
+            background: var(--primary) !important;
 
             svg {
-              stroke: $white !important;
-              fill: $white !important;
+              stroke: var(--white) !important;
+              fill: var(--white) !important;
             }
           }
 
           svg {
-            stroke: $accent !important;
+            stroke: var(--primary) !important;
           }
         }
       }
@@ -319,7 +319,7 @@ Marketing Layouts
 ========================================================================== */
 
 .pricing-wrapper {
-  font-family: $font;
+  font-family: var(--font);
   font-weight: 400;
   color: #9f9f9f;
   font-size: 15px;
@@ -331,8 +331,8 @@ Marketing Layouts
   .pricing-plan {
     width: calc(33.3% - 1.5rem);
     height: auto;
-    background: $white;
-    border: 1px solid $border;
+    background: var(--white);
+    border: 1px solid var(--border);
     border-radius: 0.65rem;
     display: inline-block;
     padding: 24px;
@@ -343,18 +343,18 @@ Marketing Layouts
     transition: box-shadow 0.3s;
 
     &:hover {
-      box-shadow: $light-box-shadow;
+      box-shadow: var(--light-box-shadow);
     }
 
     &.is-featured {
-      border-color: $primary;
+      border-color: var(--primary);
 
       &::before {
         width: 0;
         height: 0;
         border-style: solid;
         border-width: 64px 64px 0 0;
-        border-color: $primary transparent transparent transparent;
+        border-color: var(--primary) transparent transparent transparent;
         position: absolute;
         left: 0;
         top: 0;
@@ -365,17 +365,17 @@ Marketing Layouts
         font-family: 'Font Awesome 5 Free';
         font-weight: 900;
         content: '\f00c';
-        color: $white;
+        color: var(--white);
         position: absolute;
         left: 11px;
         top: 11px;
-        text-shadow: 0 0 2px $primary;
+        text-shadow: 0 0 2px var(--primary);
         font-size: 1rem;
       }
     }
 
     .name {
-      color: $dark-text;
+      color: var(--dark-text);
       font-weight: 300;
       font-size: 2rem;
       margin-top: -5px;
@@ -395,12 +395,12 @@ Marketing Layouts
         content: ' /per month';
         font-size: 1rem;
         font-weight: normal;
-        color: $light-text;
+        color: var(--light-text);
       }
     }
 
     hr {
-      background-color: $border;
+      background-color: var(--border);
       border: none;
       height: 1px;
     }
@@ -409,11 +409,11 @@ Marketing Layouts
       font-size: 0.9rem;
       font-weight: 600;
       padding: 2px 21px 2px 21px;
-      color: $primary;
-      border: 1px solid $border;
+      color: var(--primary);
+      border: 1px solid var(--border);
       display: inline-block;
       border-radius: 15px;
-      background-color: $white;
+      background-color: var(--white);
     }
 
     ul {
@@ -431,7 +431,7 @@ Marketing Layouts
         font-weight: 900;
         content: '\f00c';
         font-size: 0.9rem;
-        color: $success;
+        color: var(--success);
         margin-right: 6px;
       }
     }
@@ -441,40 +441,40 @@ Marketing Layouts
 .is-dark {
   .pricing-wrapper {
     .pricing-plan {
-      border-color: $landing-dark-16;
-      background: $landing-dark-14;
+      border-color: var(--landing-xxx-light-12);
+      background: var(--landing-xxx-light-6);
 
       &.is-featured {
-        border-color: $accent;
+        border-color: var(--primary);
 
         &::before {
-          border-color: $accent transparent transparent transparent;
+          border-color: var(--primary) transparent transparent transparent;
         }
       }
 
       .name {
-        color: $dark-dark-text;
+        color: var(--dark-dark-text);
       }
 
       .price {
-        color: $white;
+        color: var(--white);
       }
 
       .trial {
-        color: $accent;
-        border-color: $landing-dark-16;
-        background: $landing-dark-12;
+        color: var(--primary);
+        border-color: var(--landing-xxx-light-12);
+        background: var(--landing-xxx-light-2);
       }
 
       hr {
-        background: $landing-dark-16;
+        background: var(--landing-xxx-light-12);
       }
 
       li {
-        color: $light-text;
+        color: var(--light-text);
 
         strong {
-          color: $white;
+          color: var(--white);
         }
       }
     }
@@ -486,13 +486,13 @@ Marketing Layouts
 ========================================================================== */
 
 .card-icon-box {
-  border: 1px solid $border;
+  border: 1px solid var(--border);
   border-radius: 0.65rem;
   box-shadow: none;
   transition: box-shadow 0.3s;
 
   &:hover {
-    box-shadow: $light-box-shadow;
+    box-shadow: var(--light-box-shadow);
   }
 
   .v-icon {
@@ -502,16 +502,16 @@ Marketing Layouts
 
 .is-dark {
   .card-icon-box {
-    border-color: $landing-dark-16;
-    background: $landing-dark-13;
+    border-color: var(--landing-xxx-light-12);
+    background: var(--landing-xxx-light-4);
 
     .v-icon {
       background: transparent;
-      border: 2px solid $landing-dark-16;
+      border: 2px solid var(--landing-xxx-light-12);
     }
 
     .title {
-      color: $white;
+      color: var(--white);
     }
   }
 }
@@ -531,10 +531,10 @@ Marketing Layouts
   .has-bg-dots {
     background-image: radial-gradient(
         circle,
-        $landing-dark-13 10%,
+        var(--landing-xxx-light-4) 10%,
         transparent 15%
       ),
-      radial-gradient(circle, $landing-dark-13 10%, transparent 15%);
+      radial-gradient(circle, var(--landing-xxx-light-4) 10%, transparent 15%);
     background-size: 50px 50px;
     background-position: 0 0, 0 0;
   }
@@ -552,10 +552,10 @@ Marketing Layouts
   min-height: 430px;
   max-width: 1040px;
   margin: 0 auto;
-  background: $primary;
+  background: var(--primary);
   border-radius: 1rem;
   padding: 3rem;
-  box-shadow: $primary-box-shadow;
+  box-shadow: var(--primary-box-shadow);
   overflow: hidden;
   margin-bottom: 5rem;
 
@@ -643,7 +643,7 @@ Marketing Layouts
     }
 
     .avatar {
-      border: 4px solid $primary-light-8;
+      border: 4px solid var(--primary-light-8);
     }
   }
 
@@ -652,7 +652,7 @@ Marketing Layouts
 
     .title,
     .subtitle {
-      color: $white !important;
+      color: var(--white) !important;
     }
 
     .subtitle {
@@ -663,27 +663,26 @@ Marketing Layouts
       min-height: 44px;
       min-width: 190px;
       font-weight: 600;
-      color: $primary !important;
-      background-color: $white !important;
-      border-color: $primary !important;
+      color: var(--primary) !important;
+      background-color: var(--white) !important;
+      border-color: var(--primary) !important;
     }
   }
 }
 
 .is-dark {
   .boxed-cta {
-    background: $accent;
-    box-shadow: $accent-box-shadow;
-
+    background: var(--primary);
+    box-shadow: var(--primary-box-shadow);
     .v-avatar {
       .avatar {
-        border-color: $accent-light-8;
+        border-color: var(--primary-light-8);
       }
     }
 
     .boxed-cta-content {
       .v-button {
-        color: $accent;
+        color: var(--primary);
       }
     }
   }

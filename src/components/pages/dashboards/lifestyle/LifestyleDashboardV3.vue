@@ -417,7 +417,6 @@ import { followersList } from '/@src/data/widgets/ui/followers'
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
 
 .lifestyle-dashboard-v3 {
@@ -426,8 +425,8 @@ import { followersList } from '/@src/data/widgets/ui/followers'
     align-items: center;
     padding: 10px;
     border-radius: 16px;
-    background: $primary-dark-24;
-    font-family: $font;
+    background: var(--primary-dark-24);
+    font-family: var(--font);
     margin-bottom: 30px;
 
     .header-image {
@@ -448,15 +447,15 @@ import { followersList } from '/@src/data/widgets/ui/followers'
       margin-left: 0;
 
       h3 {
-        color: $smoke-white;
-        font-family: $font-alt;
+        color: var(--smoke-white);
+        font-family: var(--font-alt);
         font-weight: 700;
         font-size: 1.3rem;
       }
 
       p {
         font-weight: 400;
-        color: $smoke-white-dark-16;
+        color: var(--smoke-white-dark-16);
         margin-bottom: 16px;
       }
 
@@ -467,17 +466,17 @@ import { followersList } from '/@src/data/widgets/ui/followers'
           margin-right: 30px;
 
           span {
-            font-family: $font;
+            font-family: var(--font);
             display: block;
 
             &:first-child {
               font-size: 1.1rem;
-              font-family: $font-alt;
-              color: $smoke-white;
+              font-family: var(--font-alt);
+              color: var(--smoke-white);
             }
 
             &:nth-child(2) {
-              color: $primary-light-18;
+              color: var(--primary-light-18);
               font-size: 0.85rem;
             }
           }
@@ -499,7 +498,7 @@ import { followersList } from '/@src/data/widgets/ui/followers'
   }
 
   .health-tile {
-    font-family: $font;
+    font-family: var(--font);
 
     .tile-head {
       display: flex;
@@ -515,23 +514,23 @@ import { followersList } from '/@src/data/widgets/ui/followers'
           &:first-child {
             font-size: 1.2rem;
             font-weight: 600;
-            color: $dark-text;
+            color: var(--dark-text);
             margin-right: 0.25rem;
           }
 
           &:nth-child(2) {
             font-size: 0.95rem;
-            color: $light-text;
+            color: var(--light-text);
           }
         }
       }
     }
 
     h3 {
-      font-family: $font-alt;
+      font-family: var(--font-alt);
       font-size: 0.95rem;
       font-weight: 600;
-      color: $dark-text;
+      color: var(--dark-text);
     }
 
     p {
@@ -549,7 +548,7 @@ import { followersList } from '/@src/data/widgets/ui/followers'
       margin-bottom: 12px;
 
       h3 {
-        color: $dark-text;
+        color: var(--dark-text);
         font-size: 1.2rem;
         font-weight: 500;
       }
@@ -565,11 +564,11 @@ import { followersList } from '/@src/data/widgets/ui/followers'
           top: 2px;
           height: 16px;
           width: 16px;
-          color: $light-text;
+          color: var(--light-text);
         }
 
         a {
-          color: $primary;
+          color: var(--primary);
           font-weight: 500;
         }
       }
@@ -627,8 +626,8 @@ import { followersList } from '/@src/data/widgets/ui/followers'
 
     .health-tile {
       padding: 20px;
-      background: $white;
-      border: 1px solid $fade-grey-dark-3;
+      background: var(--white);
+      border: 1px solid var(--fade-grey-dark-3);
       border-radius: 10px;
     }
   }
@@ -636,8 +635,8 @@ import { followersList } from '/@src/data/widgets/ui/followers'
   .is-dark {
     .lifestyle-dashboard-v3 {
       .health-tile {
-        background: $dark-sidebar-light-6;
-        border-color: $dark-sidebar-light-12;
+        background: var(--dark-sidebar-light-6);
+        border-color: var(--dark-sidebar-light-12);
       }
     }
   }

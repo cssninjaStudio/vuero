@@ -25,7 +25,7 @@ Utility Pages
       margin: 0 auto;
 
       .bg-number {
-        font-family: $font;
+        font-family: var(--font);
         position: absolute;
         top: -58px;
         left: -50px;
@@ -53,14 +53,14 @@ Utility Pages
 
       h3 {
         font-size: 1.5rem;
-        font-family: $font-alt;
-        color: $dark-text;
+        font-family: var(--font-alt);
+        color: var(--dark-text);
         font-weight: 600;
         margin-top: 10px;
       }
 
       p {
-        font-family: $font;
+        font-family: var(--font);
         font-size: 1.1rem;
         margin-bottom: 16px;
       }

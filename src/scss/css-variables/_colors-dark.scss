@@ -1,0 +1,8 @@
+.is-dark {
+  --background-grey: var(--dark-sidebar-light-5);
+
+  // override primary dark HSL (#41b883) // hsl(100, 43%, 62%)
+  --primary-h: 100; /* Hue        */
+  --primary-s: 43%; /* Saturation */
+  --primary-l: 62%; /* Lightness  */
+}

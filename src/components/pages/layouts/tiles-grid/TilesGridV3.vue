@@ -532,7 +532,6 @@ const optionsSingle = [
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
 
 .tile-grid {
@@ -593,11 +592,11 @@ const optionsSingle = [
 
           .tile-title {
             h3 {
-              font-family: $font;
-              font-family: $font-alt;
+              font-family: var(--font);
+              font-family: var(--font-alt);
               font-size: 1rem;
               font-weight: 600;
-              color: $dark-text;
+              color: var(--dark-text);
               line-height: 1.3;
             }
           }
@@ -629,16 +628,16 @@ const optionsSingle = [
                 font-weight: 400;
 
                 &:first-child {
-                  color: $dark-text;
-                  font-family: $font-alt;
+                  color: var(--dark-text);
+                  font-family: var(--font-alt);
                   font-size: 0.85rem;
                   font-weight: 600;
                 }
 
                 &:nth-child(2) {
                   font-size: 0.8rem;
-                  font-family: $font;
-                  color: $light-text;
+                  font-family: var(--font);
+                  color: var(--light-text);
                 }
               }
             }
@@ -672,10 +671,10 @@ const optionsSingle = [
             padding-top: 10px;
 
             h3 {
-              font-family: $font;
+              font-family: var(--font);
               font-size: 1.2rem;
               font-weight: 500;
-              color: $dark-text;
+              color: var(--dark-text);
               line-height: 1.1;
             }
           }
@@ -707,14 +706,14 @@ const optionsSingle = [
                 font-weight: 400;
 
                 &:first-child {
-                  color: $dark-text;
+                  color: var(--dark-text);
                   font-size: 0.9rem;
                   font-weight: 500;
                 }
 
                 &:nth-child(2) {
                   font-size: 0.8rem;
-                  color: $light-text;
+                  color: var(--light-text);
                 }
               }
             }
@@ -748,15 +747,15 @@ const optionsSingle = [
             padding-top: 5px;
 
             h3 {
-              font-family: $font;
+              font-family: var(--font);
               font-size: 1.3rem;
               font-weight: 500;
-              color: $dark-text;
+              color: var(--dark-text);
               line-height: 1.1;
             }
 
             p {
-              color: $light-text;
+              color: var(--light-text);
               font-size: 0.95rem;
               padding-top: 5px;
             }
@@ -789,14 +788,14 @@ const optionsSingle = [
                 font-weight: 400;
 
                 &:first-child {
-                  color: $dark-text;
+                  color: var(--dark-text);
                   font-size: 0.9rem;
                   font-weight: 500;
                 }
 
                 &:nth-child(2) {
                   font-size: 0.8rem;
-                  color: $light-text;
+                  color: var(--light-text);
                 }
               }
             }
@@ -832,15 +831,15 @@ const optionsSingle = [
             padding-top: 10px;
 
             h3 {
-              font-family: $font;
+              font-family: var(--font);
               font-size: 1.2rem;
               font-weight: 500;
-              color: $dark-text;
+              color: var(--dark-text);
               line-height: 1.1;
             }
 
             p {
-              color: $light-text;
+              color: var(--light-text);
               font-size: 0.95rem;
               padding-top: 5px;
             }
@@ -873,14 +872,14 @@ const optionsSingle = [
                 font-weight: 400;
 
                 &:first-child {
-                  color: $dark-text;
+                  color: var(--dark-text);
                   font-size: 0.9rem;
                   font-weight: 500;
                 }
 
                 &:nth-child(2) {
                   font-size: 0.8rem;
-                  color: $light-text;
+                  color: var(--light-text);
                 }
               }
             }
@@ -934,10 +933,10 @@ const optionsSingle = [
 
           .tile-title {
             h3 {
-              font-family: $font !important;
+              font-family: var(--font) !important;
               font-size: 1.1rem !important;
               font-weight: 500;
-              color: $dark-text !important;
+              color: var(--dark-text) !important;
               line-height: 1.1 !important;
             }
 
@@ -973,14 +972,14 @@ const optionsSingle = [
                 font-weight: 400 !important;
 
                 &:first-child {
-                  color: $dark-text !important;
+                  color: var(--dark-text) !important;
                   font-size: 0.9rem !important;
                   font-weight: 500 !important;
                 }
 
                 &:nth-child(2) {
                   font-size: 0.8rem !important;
-                  color: $light-text !important;
+                  color: var(--light-text) !important;
                 }
               }
             }
@@ -1021,10 +1020,10 @@ const optionsSingle = [
 
           .tile-title {
             h3 {
-              font-family: $font !important;
+              font-family: var(--font) !important;
               font-size: 1.1rem !important;
               font-weight: 500;
-              color: $dark-text !important;
+              color: var(--dark-text) !important;
               line-height: 1.1 !important;
             }
 
@@ -1061,14 +1060,14 @@ const optionsSingle = [
                 font-weight: 400 !important;
 
                 &:first-child {
-                  color: $dark-text !important;
+                  color: var(--dark-text) !important;
                   font-size: 0.9rem !important;
                   font-weight: 500 !important;
                 }
 
                 &:nth-child(2) {
                   font-size: 0.8rem !important;
-                  color: $light-text !important;
+                  color: var(--light-text) !important;
                 }
               }
             }

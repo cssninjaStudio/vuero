@@ -287,7 +287,6 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
 
 .is-navbar {
@@ -310,23 +309,23 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
   .dashboard-card {
     @include vuero-l-card();
 
-    font-family: $font;
+    font-family: var(--font);
 
     &:not(:last-child) {
       margin-bottom: 1.5rem;
     }
 
     &.is-welcome {
-      background: $widget-grey;
+      background: var(--widget-grey);
       border: none;
       padding: 40px;
 
       .welcome-title {
         h3 {
-          font-family: $font-alt;
+          font-family: var(--font-alt);
           font-weight: 700;
           font-size: 2rem;
-          color: $dark-text;
+          color: var(--dark-text);
         }
       }
 
@@ -342,15 +341,15 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
             display: block;
 
             &:first-child {
-              color: $light-text;
+              color: var(--light-text);
               font-size: 0.95rem;
             }
 
             &:nth-child(2) {
-              font-family: $font-alt;
+              font-family: var(--font-alt);
               font-size: 1.1rem;
               font-weight: 600;
-              color: $dark-text;
+              color: var(--dark-text);
             }
           }
         }
@@ -373,7 +372,7 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
         svg {
           height: 18px;
           width: 18px;
-          color: $light-text;
+          color: var(--light-text);
         }
       }
     }
@@ -399,21 +398,21 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
       .left {
         span {
           display: block;
-          font-family: $font;
+          font-family: var(--font);
 
           &:first-child {
-            font-family: $font-alt;
+            font-family: var(--font-alt);
             font-weight: 600;
-            color: $dark-text;
+            color: var(--dark-text);
           }
 
           &:nth-child(2) {
             font-size: 0.9rem;
-            color: $light-text;
+            color: var(--light-text);
 
             a {
               font-weight: 500;
-              color: $primary;
+              color: var(--primary);
             }
           }
         }

@@ -165,7 +165,6 @@ watchEffect(() => {
 </template>
 
 <style lang="scss">
-@import '../scss/abstracts/_variables.scss';
 @import '../scss/abstracts/_mixins.scss';
 
 /* ==========================================================================
@@ -206,8 +205,8 @@ watchEffect(() => {
   right: 0;
   margin: 0 auto;
   max-width: 306px;
-  background: $white;
-  border: 1px solid $fade-grey-dark-3;
+  background: var(--white);
+  border: 1px solid var(--fade-grey-dark-3);
   border-radius: 14px;
   transform: translateY(120px);
   transition: all 0.3s;
@@ -252,15 +251,15 @@ watchEffect(() => {
       text-align: center;
 
       h2 {
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         font-size: 1.3rem;
         font-weight: 600;
-        color: $dark-text;
+        color: var(--dark-text);
         text-align: center;
       }
 
       p {
-        font-family: $font;
+        font-family: var(--font);
         font-size: 1.2rem;
       }
     }
@@ -321,14 +320,14 @@ watchEffect(() => {
             align-items: center;
             height: 30px;
             width: 30px;
-            border-radius: $radius-rounded;
-            background: $white;
-            border: 1px solid $fade-grey-dark-3;
+            border-radius: var(--radius-rounded);
+            background: var(--white);
+            border: 1px solid var(--fade-grey-dark-3);
             z-index: 1;
             transition: all 0.3s;
 
             i {
-              color: $light-text;
+              color: var(--light-text);
               font-size: 0.9rem;
             }
           }
@@ -346,7 +345,7 @@ watchEffect(() => {
             pointer-events: none;
             opacity: 0;
             font-size: 16px;
-            color: $light-text;
+            color: var(--light-text);
             transition: all 0.3s;
           }
         }
@@ -369,8 +368,8 @@ watchEffect(() => {
           @include vuero-l-card();
 
           &:hover {
-            border-color: $primary;
-            box-shadow: $light-box-shadow;
+            border-color: var(--primary);
+            box-shadow: var(--light-box-shadow);
 
             .edit-icon {
               opacity: 1;
@@ -383,8 +382,8 @@ watchEffect(() => {
             display: flex;
             justify-content: center;
             align-items: center;
-            font-family: $font;
-            color: $light-text;
+            font-family: var(--font);
+            color: var(--light-text);
 
             &.is-media {
               padding: 14px 0;
@@ -404,8 +403,8 @@ watchEffect(() => {
             align-items: center;
             height: 24px;
             width: 24px;
-            border-radius: $radius-rounded;
-            background: $fade-grey-light-3;
+            border-radius: var(--radius-rounded);
+            background: var(--fade-grey-light-3);
             opacity: 0;
             pointer-events: none;
             cursor: pointer;
@@ -419,9 +418,9 @@ watchEffect(() => {
           h4 {
             text-transform: uppercase;
             font-size: 0.8rem;
-            font-family: $font;
+            font-family: var(--font);
             font-weight: 600;
-            color: $dark-text;
+            color: var(--dark-text);
             margin-bottom: 12px;
           }
 
@@ -442,16 +441,16 @@ watchEffect(() => {
 
               .budget,
               .attachments {
-                color: $primary;
-                font-family: $font;
+                color: var(--primary);
+                font-family: var(--font);
                 font-size: 2rem;
                 font-weight: 600;
                 line-height: 1.4;
               }
 
               .date {
-                color: $primary;
-                font-family: $font;
+                color: var(--primary);
+                font-family: var(--font);
                 font-size: 1.3rem;
                 font-weight: 500;
                 line-height: 1.4;
@@ -511,7 +510,7 @@ watchEffect(() => {
           cursor: pointer;
 
           &:checked + .tool-card-inner {
-            border-color: $primary;
+            border-color: var(--primary);
 
             .flex-end {
               .checkmark {
@@ -523,8 +522,8 @@ watchEffect(() => {
 
         .tool-card-inner {
           padding: 12px;
-          background: $white;
-          border: 1px solid $fade-grey-dark-3;
+          background: var(--white);
+          border: 1px solid var(--fade-grey-dark-3);
           border-radius: 10px;
 
           .media-flex-center {
@@ -535,11 +534,11 @@ watchEffect(() => {
                 align-items: center;
                 height: 28px;
                 width: 28px;
-                border: 1px solid $fade-grey-dark-3;
-                border-radius: $radius-rounded;
-                box-shadow: $light-box-shadow;
+                border: 1px solid var(--fade-grey-dark-3);
+                border-radius: var(--radius-rounded);
+                box-shadow: var(--light-box-shadow);
                 opacity: 0;
-                color: $primary;
+                color: var(--primary);
                 transition: all 0.3s;
 
                 svg {
@@ -600,8 +599,8 @@ watchEffect(() => {
             align-items: center;
 
             span {
-              font-family: $font;
-              color: $light-text;
+              font-family: var(--font);
+              color: var(--light-text);
             }
           }
 
@@ -609,9 +608,9 @@ watchEffect(() => {
             position: relative;
             display: flex;
             align-items: center;
-            background: $white;
+            background: var(--white);
             padding: 12px;
-            border: 1px solid $fade-grey-dark-3;
+            border: 1px solid var(--fade-grey-dark-3);
             border-radius: 12px;
             margin-bottom: 12px;
             text-align: left;
@@ -620,7 +619,7 @@ watchEffect(() => {
               display: block;
               width: 80px;
               height: 80px;
-              border-radius: $radius-rounded;
+              border-radius: var(--radius-rounded);
               margin: 0 auto;
             }
 
@@ -630,18 +629,18 @@ watchEffect(() => {
 
               > span {
                 display: block;
-                font-family: $font;
+                font-family: var(--font);
                 font-size: 0.8rem;
                 text-transform: uppercase;
-                color: $light-text;
+                color: var(--light-text);
                 padding: 8px 0 0 0;
               }
 
               > p {
-                font-family: $font;
+                font-family: var(--font);
                 margin-bottom: 0;
                 font-weight: 500;
-                color: $dark-text;
+                color: var(--dark-text);
               }
             }
 
@@ -667,12 +666,12 @@ watchEffect(() => {
                     .permission-level-inner {
                       height: 11px;
                       width: 11px;
-                      border-radius: $radius-rounded;
-                      background: $placeholder;
+                      border-radius: var(--radius-rounded);
+                      background: var(--placeholder);
                       transition: all 0.3s;
 
                       &.is-active {
-                        background: $primary;
+                        background: var(--primary);
                         transform: scale(1.1);
                       }
                     }
@@ -706,15 +705,15 @@ watchEffect(() => {
                 align-items: center;
                 height: 34px;
                 width: 34px;
-                border: 1px solid $fade-grey-dark-3;
-                box-shadow: $light-box-shadow;
-                background: $white;
+                border: 1px solid var(--fade-grey-dark-3);
+                box-shadow: var(--light-box-shadow);
+                background: var(--white);
                 padding: 0;
                 transition: all 0.3s;
 
                 i {
                   font-size: 12px;
-                  color: $light-text;
+                  color: var(--light-text);
                 }
               }
             }
@@ -730,7 +729,7 @@ watchEffect(() => {
         max-width: 210px;
 
         &.is-rounded {
-          border-radius: $radius-rounded;
+          border-radius: var(--radius-rounded);
         }
       }
     }
@@ -760,9 +759,9 @@ watchEffect(() => {
           -webkit-box-pack: center;
           -ms-flex-pack: center;
           justify-content: center;
-          color: $white;
+          color: var(--white);
           text-align: center;
-          background-color: $secondary;
+          background-color: var(--secondary);
           transition: width 0.6s ease;
         }
 
@@ -822,8 +821,8 @@ watchEffect(() => {
                 height: 32px;
                 width: 32px;
                 min-width: 32px;
-                border-radius: $radius-rounded;
-                color: $light-text-light-12;
+                border-radius: var(--radius-rounded);
+                color: var(--light-text-light-12);
                 border: none;
                 background: none;
                 cursor: pointer;
@@ -831,8 +830,8 @@ watchEffect(() => {
                 transition: all 0.3s;
 
                 &:hover:not(.is-active) {
-                  background: $fade-grey-light-3;
-                  color: $light-text;
+                  background: var(--fade-grey-light-3);
+                  color: var(--light-text);
                 }
 
                 svg {
@@ -866,20 +865,20 @@ watchEffect(() => {
             display: flex;
             justify-content: center;
             align-items: center;
-            background: $white;
+            background: var(--white);
             height: 120px;
             border-radius: 3px;
             padding: 8px;
-            border: 2px dashed $fade-grey-dark-4;
+            border: 2px dashed var(--fade-grey-dark-4);
             cursor: pointer;
             transition: all 0.3s;
 
             &:hover {
-              border-color: $primary;
+              border-color: var(--primary);
 
               .uploader-label {
                 .lnil {
-                  color: $primary;
+                  color: var(--primary);
                 }
               }
             }
@@ -889,13 +888,13 @@ watchEffect(() => {
               text-align: center;
 
               h3 {
-                font-family: $font;
-                color: $light-text;
+                font-family: var(--font);
+                color: var(--light-text);
               }
 
               .lnil {
                 font-size: 2.4rem;
-                color: $placeholder;
+                color: var(--placeholder);
                 transition: all 0.3s;
               }
             }
@@ -932,11 +931,11 @@ watchEffect(() => {
           .preview-box {
             display: flex;
             align-items: center;
-            background: $white;
+            background: var(--white);
             width: 100%;
             border-radius: 12px;
             padding: 12px;
-            border: 1px solid $fade-grey;
+            border: 1px solid var(--fade-grey);
             margin-bottom: 16px;
 
             .preview {
@@ -944,7 +943,7 @@ watchEffect(() => {
                 height: 50px;
                 max-width: 50px;
                 min-width: 50px;
-                border-radius: $radius-rounded;
+                border-radius: var(--radius-rounded);
                 object-fit: cover;
               }
 
@@ -969,12 +968,12 @@ watchEffect(() => {
               margin-left: 12px;
 
               p {
-                font-family: $font;
+                font-family: var(--font);
 
                 &:first-child {
                   font-weight: 500;
                   font-size: 1.1rem;
-                  color: $dark-text;
+                  color: var(--dark-text);
                 }
               }
             }
@@ -1002,8 +1001,8 @@ watchEffect(() => {
                 min-height: 32px;
                 width: 32px;
                 min-width: 32px;
-                border-radius: $radius-rounded;
-                color: $light-text-light-12;
+                border-radius: var(--radius-rounded);
+                color: var(--light-text-light-12);
                 border: none;
                 background: none;
                 cursor: pointer;
@@ -1011,8 +1010,8 @@ watchEffect(() => {
                 transition: all 0.3s;
 
                 &:hover:not(.is-active) {
-                  background: $fade-grey-light-3;
-                  color: $light-text;
+                  background: var(--fade-grey-light-3);
+                  color: var(--light-text);
                 }
 
                 svg {
@@ -1047,7 +1046,7 @@ watchEffect(() => {
             margin: 0 auto 4px auto;
 
             .filepond--drop-label {
-              background: $white;
+              background: var(--white);
               cursor: pointer;
             }
           }
@@ -1073,7 +1072,7 @@ watchEffect(() => {
             .field {
               .control {
                 .input {
-                  font-family: $font;
+                  font-family: var(--font);
                   text-align: center;
                   font-size: 1.2rem;
                   height: 50px;
@@ -1099,20 +1098,20 @@ watchEffect(() => {
     }
 
     .project-dates {
-      background: $white;
+      background: var(--white);
       padding: 16px;
-      border: 1px solid $fade-grey-dark-3;
+      border: 1px solid var(--fade-grey-dark-3);
       border-radius: 14px;
       max-width: 380px;
       margin: 20px auto;
 
       > h4 {
-        font-family: $font;
+        font-family: var(--font);
         font-size: 0.8rem;
         text-transform: uppercase;
         text-align: center;
         margin-bottom: 8px;
-        color: $light-text;
+        color: var(--light-text);
       }
 
       .project-dates-inner {
@@ -1123,7 +1122,7 @@ watchEffect(() => {
         .separator {
           height: 25px;
           width: 2px;
-          border-right: 1px solid $fade-grey-dark-3;
+          border-right: 1px solid var(--fade-grey-dark-3);
           margin: 0 12px;
         }
 
@@ -1139,7 +1138,7 @@ watchEffect(() => {
             align-items: center;
             height: 28px;
             width: 28px;
-            color: $light-text;
+            color: var(--light-text);
 
             svg {
               height: 18px;
@@ -1155,7 +1154,7 @@ watchEffect(() => {
               background: none;
               box-shadow: none;
               padding-left: 4px;
-              font-family: $font;
+              font-family: var(--font);
             }
           }
         }
@@ -1163,20 +1162,20 @@ watchEffect(() => {
     }
 
     .project-budget {
-      background: $white;
+      background: var(--white);
       padding: 16px;
-      border: 1px solid $fade-grey-dark-3;
+      border: 1px solid var(--fade-grey-dark-3);
       border-radius: 14px;
       max-width: 380px;
       margin: 20px auto;
 
       > h4 {
-        font-family: $font;
+        font-family: var(--font);
         font-size: 0.8rem;
         text-transform: uppercase;
         text-align: center;
         margin-bottom: 16px;
-        color: $light-text;
+        color: var(--light-text);
       }
 
       .project-budget-inner {
@@ -1195,24 +1194,24 @@ watchEffect(() => {
             height: 32px;
             width: 65px;
             min-width: 50px;
-            border: 1px solid $fade-grey-dark-3;
+            border: 1px solid var(--fade-grey-dark-3);
             border-radius: 12px;
-            font-family: $font;
+            font-family: var(--font);
             font-size: 0.9rem;
-            color: $light-text-light-12;
+            color: var(--light-text-light-12);
             margin: 0 8px;
             transition: all 0.3s;
 
             &:hover:not(.is-active) {
-              //background: $fade-grey-light-3;
-              color: $light-text;
+              //background: var(--fade-grey-light-3);
+              color: var(--light-text);
             }
 
             &.is-active {
-              background: $primary;
-              border-color: $primary;
-              color: $smoke-white;
-              box-shadow: $primary-box-shadow;
+              background: var(--primary);
+              border-color: var(--primary);
+              color: var(--smoke-white);
+              box-shadow: var(--primary-box-shadow);
             }
           }
         }
@@ -1220,20 +1219,20 @@ watchEffect(() => {
     }
 
     .project-customer {
-      background: $white;
+      background: var(--white);
       padding: 16px;
-      border: 1px solid $fade-grey-dark-3;
+      border: 1px solid var(--fade-grey-dark-3);
       border-radius: 14px;
       max-width: 380px;
       margin: 20px auto;
 
       > h4 {
-        font-family: $font;
+        font-family: var(--font);
         font-size: 0.8rem;
         text-transform: uppercase;
         text-align: center;
         margin-bottom: 16px;
-        color: $light-text;
+        color: var(--light-text);
       }
 
       .field {
@@ -1253,7 +1252,7 @@ watchEffect(() => {
       .media-flex-center {
         .v-avatar {
           .avatar {
-            border: 1px solid $fade-grey-dark-3;
+            border: 1px solid var(--fade-grey-dark-3);
           }
         }
       }
@@ -1273,9 +1272,9 @@ watchEffect(() => {
         transition: all 0.3s;
 
         &:hover {
-          background: $white;
-          border-color: $fade-grey-light-3;
-          box-shadow: $light-box-shadow;
+          background: var(--white);
+          border-color: var(--fade-grey-light-3);
+          box-shadow: var(--light-box-shadow);
 
           .learn-more-link {
             a {
@@ -1293,18 +1292,18 @@ watchEffect(() => {
         }
 
         h3 {
-          font-family: $font-alt;
+          font-family: var(--font-alt);
           font-weight: 600;
           font-size: 1.1rem;
-          color: $dark-text;
+          color: var(--dark-text);
           text-align: center;
           margin: 16px 0 0 0;
         }
 
         p {
           font-size: 1.1rem;
-          font-family: $font;
-          color: $light-text;
+          font-family: var(--font);
+          color: var(--light-text);
           text-align: center;
           max-width: 240px;
           margin: 0 auto 20px auto;
@@ -1327,14 +1326,14 @@ watchEffect(() => {
             text-transform: uppercase;
             font-size: 0.8rem;
             font-weight: 500;
-            font-family: $font;
-            color: $light-text;
+            font-family: var(--font);
+            color: var(--light-text);
             opacity: 0;
             pointer-events: none;
             transition: all 0.3s;
 
             &:hover {
-              color: $primary;
+              color: var(--primary);
             }
           }
         }
@@ -1349,22 +1348,22 @@ watchEffect(() => {
 
 .is-dark {
   .wizard-navigation {
-    background: $dark-sidebar-dark-2;
-    border-color: $dark-sidebar-light-12;
+    background: var(--dark-sidebar-dark-2);
+    border-color: var(--dark-sidebar-light-12);
 
     .navbar-item {
       &.is-wizard-title {
-        border-color: $dark-sidebar-light-12;
+        border-color: var(--dark-sidebar-light-12);
 
         .title-wrap {
-          color: $dark-dark-text;
+          color: var(--dark-dark-text);
         }
       }
 
       &.is-dark-mode {
         .navbar-icon {
-          background: $dark-sidebar-light-6;
-          border-color: $dark-sidebar-light-12;
+          background: var(--dark-sidebar-light-6);
+          border-color: var(--dark-sidebar-light-12);
         }
       }
     }
@@ -1372,24 +1371,24 @@ watchEffect(() => {
     .wizard-dropdown,
     .user-dropdown {
       .dropdown-menu {
-        border-color: $dark-sidebar-light-12;
+        border-color: var(--dark-sidebar-light-12);
       }
     }
   }
 
   .wizard-buttons {
-    background: $dark-sidebar-light-1;
-    border-color: $dark-sidebar-light-10;
+    background: var(--dark-sidebar-light-1);
+    border-color: var(--dark-sidebar-light-10);
 
     .button {
       &.is-light {
-        background: $dark-sidebar-light-4;
-        border-color: $dark-sidebar-light-12;
-        color: $dark-dark-text;
+        background: var(--dark-sidebar-light-4);
+        border-color: var(--dark-sidebar-light-12);
+        color: var(--dark-dark-text);
 
         &:hover {
-          color: $accent;
-          border-color: $accent;
+          color: var(--primary);
+          border-color: var(--primary);
         }
       }
     }
@@ -1399,14 +1398,14 @@ watchEffect(() => {
     .step-content {
       .project-preview-wrapper {
         .project-preview-loader {
-          background: $dark-sidebar-light-10;
+          background: var(--dark-sidebar-light-10);
         }
 
         .project-preview-header {
           .v-avatar {
             .edit-icon {
-              border-color: $dark-sidebar-light-12;
-              background: $dark-sidebar-light-6;
+              border-color: var(--dark-sidebar-light-12);
+              background: var(--dark-sidebar-light-6);
             }
           }
         }
@@ -1416,15 +1415,15 @@ watchEffect(() => {
             @include vuero-card--dark();
 
             > h4 {
-              color: $dark-dark-text;
+              color: var(--dark-dark-text);
             }
 
             .edit-icon {
-              border-color: $dark-sidebar-light-12;
-              background: $dark-sidebar-light-2;
+              border-color: var(--dark-sidebar-light-12);
+              background: var(--dark-sidebar-light-2);
 
               i {
-                color: $light-text;
+                color: var(--light-text);
               }
             }
 
@@ -1434,7 +1433,7 @@ watchEffect(() => {
               > span,
               .date,
               .budget {
-                color: $accent;
+                color: var(--primary);
               }
             }
           }
@@ -1444,19 +1443,19 @@ watchEffect(() => {
       .tools-wrapper {
         .tool-card {
           input:checked + .tool-card-inner {
-            border-color: $accent !important;
+            border-color: var(--primary) !important;
           }
 
           .tool-card-inner {
-            border-color: $dark-sidebar-light-12;
-            background: $dark-sidebar-light-6;
+            border-color: var(--dark-sidebar-light-12);
+            background: var(--dark-sidebar-light-6);
 
             .media-flex-center {
               .flex-end {
                 .checkmark {
-                  border-color: $dark-sidebar-light-12;
-                  background: $dark-sidebar-light-2;
-                  color: $accent;
+                  border-color: var(--dark-sidebar-light-12);
+                  background: var(--dark-sidebar-light-2);
+                  color: var(--primary);
                 }
               }
             }
@@ -1468,18 +1467,18 @@ watchEffect(() => {
         .project-team-body {
           .members-list {
             .invited-member {
-              border-color: $dark-sidebar-light-12;
-              background: $dark-sidebar-light-6;
+              border-color: var(--dark-sidebar-light-12);
+              background: var(--dark-sidebar-light-6);
 
               .actions {
                 .permissions {
                   .permission-levels {
                     .permission-level {
                       .permission-level-inner {
-                        background: $dark-sidebar-light-18;
+                        background: var(--dark-sidebar-light-18);
 
                         &.is-active {
-                          background: $accent;
+                          background: var(--primary);
                         }
                       }
                     }
@@ -1498,7 +1497,7 @@ watchEffect(() => {
               .uploader-action {
                 .inner-action {
                   &:hover {
-                    background: $dark-sidebar-light-14;
+                    background: var(--dark-sidebar-light-14);
                   }
                 }
               }
@@ -1509,15 +1508,15 @@ watchEffect(() => {
         .uploader-container {
           .upload-wrapper {
             .upload-box {
-              border-color: $dark-sidebar-light-12;
-              background: $dark-sidebar-light-2;
+              border-color: var(--dark-sidebar-light-12);
+              background: var(--dark-sidebar-light-2);
 
               &:hover {
-                border-color: $accent;
+                border-color: var(--primary);
 
                 .uploader-label {
                   i {
-                    color: $accent;
+                    color: var(--primary);
                   }
                 }
               }
@@ -1528,29 +1527,29 @@ watchEffect(() => {
         .template-list {
           .template-list-item {
             .preview-box {
-              border-color: $dark-sidebar-light-12;
-              background: $dark-sidebar-light-6;
+              border-color: var(--dark-sidebar-light-12);
+              background: var(--dark-sidebar-light-6);
 
               .list-item-meta {
                 .name {
-                  color: $dark-dark-text;
+                  color: var(--dark-dark-text);
                 }
               }
 
               .list-item-progress {
                 .size strong {
-                  color: $dark-dark-text;
+                  color: var(--dark-dark-text);
                 }
 
                 .progress {
-                  background: $dark-sidebar-light-2;
+                  background: var(--dark-sidebar-light-2);
                 }
               }
 
               .list-item-actions {
                 .list-item-action {
                   &:hover {
-                    background: $dark-sidebar-light-12;
+                    background: var(--dark-sidebar-light-12);
                   }
                 }
               }
@@ -1561,7 +1560,7 @@ watchEffect(() => {
 
       .input {
         &.is-dark-focus:focus {
-          border-color: $accent !important;
+          border-color: var(--primary) !important;
         }
       }
 
@@ -1571,8 +1570,8 @@ watchEffect(() => {
           border-color: transparent;
 
           &:hover {
-            background: $dark-sidebar-light-6;
-            border-color: $dark-sidebar-light-12;
+            background: var(--dark-sidebar-light-6);
+            border-color: var(--dark-sidebar-light-12);
           }
         }
       }
@@ -1582,7 +1581,7 @@ watchEffect(() => {
           .project-avatar-upload {
             .filepond-profile-wrap {
               .filepond--drop-label {
-                background: $dark-sidebar-light-2;
+                background: var(--dark-sidebar-light-2);
               }
             }
           }
@@ -1590,43 +1589,43 @@ watchEffect(() => {
       }
 
       .project-customer {
-        background: $dark-sidebar-light-6;
-        border-color: $dark-sidebar-light-12;
+        background: var(--dark-sidebar-light-6);
+        border-color: var(--dark-sidebar-light-12);
 
         .media-flex-center {
           .v-avatar {
             .avatar {
-              border-color: $dark-sidebar-light-12;
+              border-color: var(--dark-sidebar-light-12);
             }
           }
         }
       }
 
       .project-dates {
-        background: $dark-sidebar-light-6;
-        border-color: $dark-sidebar-light-12;
+        background: var(--dark-sidebar-light-6);
+        border-color: var(--dark-sidebar-light-12);
 
         .project-dates-inner {
           .separator {
-            border-color: $dark-sidebar-light-20;
+            border-color: var(--dark-sidebar-light-20);
           }
         }
       }
 
       .project-budget {
-        background: $dark-sidebar-light-6;
-        border-color: $dark-sidebar-light-12;
+        background: var(--dark-sidebar-light-6);
+        border-color: var(--dark-sidebar-light-12);
 
         .project-budget-inner {
           .budget-item {
             .budget-item-inner {
-              background: $dark-sidebar-light-4;
-              border-color: $dark-sidebar-light-12;
+              background: var(--dark-sidebar-light-4);
+              border-color: var(--dark-sidebar-light-12);
 
               &.is-active {
-                border-color: $accent;
-                background: $accent;
-                box-shadow: $accent-box-shadow;
+                border-color: var(--primary);
+                background: var(--primary);
+                box-shadow: var(--primary-box-shadow);
               }
             }
           }

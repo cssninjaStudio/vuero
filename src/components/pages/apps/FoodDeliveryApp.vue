@@ -380,7 +380,6 @@ onUnmounted(() => {
 </template>
 
 <style lang="scss">
-@import '../../../scss/abstracts/_variables.scss';
 @import '../../../scss/abstracts/_mixins.scss';
 @import '../../../scss/pages/generic/_widgets-lists.scss';
 
@@ -410,8 +409,8 @@ onUnmounted(() => {
       align-items: center;
       padding: 10px;
       border-radius: 16px;
-      background: $accent-light-32;
-      font-family: $font;
+      background: var(--primary-light-32);
+      font-family: var(--font);
 
       .header-image {
         position: relative;
@@ -431,14 +430,14 @@ onUnmounted(() => {
         margin-bottom: 20px;
 
         h3 {
-          font-family: $font-alt;
+          font-family: var(--font-alt);
           font-weight: 700;
           font-size: 1.6rem;
         }
 
         p {
           font-weight: 400;
-          color: $primary-dark-14;
+          color: var(--primary-dark-14);
           margin-bottom: 8px;
         }
 
@@ -463,12 +462,12 @@ onUnmounted(() => {
           justify-content: space-between;
           align-items: center;
           margin: 20px 0;
-          font-family: $font;
+          font-family: var(--font);
 
           .left {
             h3 {
-              font-family: $font-alt;
-              color: $dark-text;
+              font-family: var(--font-alt);
+              color: var(--dark-text);
               font-size: 1.3rem;
               font-weight: 600;
             }
@@ -491,8 +490,8 @@ onUnmounted(() => {
             width: 80px;
             max-width: 80px;
             height: 170px;
-            background: $white;
-            border: 1px solid $fade-grey-dark-3;
+            background: var(--white);
+            border: 1px solid var(--fade-grey-dark-3);
             border-radius: 500px;
             padding: 10px;
             margin: 0 10px;
@@ -500,15 +499,15 @@ onUnmounted(() => {
             transition: all 0.3s;
 
             &.is-active {
-              background: $primary;
-              border-color: $primary;
+              background: var(--primary);
+              border-color: var(--primary);
 
               .food-pill-icon {
-                border-color: $primary;
+                border-color: var(--primary);
               }
 
               > span {
-                color: $smoke-white;
+                color: var(--smoke-white);
               }
             }
 
@@ -518,8 +517,8 @@ onUnmounted(() => {
               align-items: center;
               width: 60px;
               height: 80px;
-              background: $white;
-              border: 1px solid $fade-grey-dark-3;
+              background: var(--white);
+              border: 1px solid var(--fade-grey-dark-3);
               border-radius: 500px;
 
               img {
@@ -530,7 +529,7 @@ onUnmounted(() => {
             }
 
             span {
-              font-family: $font;
+              font-family: var(--font);
               font-weight: 500;
               padding-top: 12px;
               display: block;
@@ -545,22 +544,22 @@ onUnmounted(() => {
           }
 
           .active {
-            background: $primary;
-            border-color: $primary;
+            background: var(--primary);
+            border-color: var(--primary);
 
             .food-pill-icon {
-              border-color: $primary;
+              border-color: var(--primary);
             }
 
             > span {
-              color: $smoke-white;
+              color: var(--smoke-white);
             }
           }
         }
 
         .slick-prev::before,
         .slick-next::before {
-          color: $muted-grey;
+          color: var(--muted-grey);
         }
 
         .slick-custom {
@@ -575,7 +574,7 @@ onUnmounted(() => {
           background: transparent;
           border-radius: 100px;
           cursor: pointer;
-          color: $light-text;
+          color: var(--light-text);
           transition: all 0.3s;
           z-index: 25;
           outline: none !important;
@@ -599,15 +598,15 @@ onUnmounted(() => {
           }
 
           &:hover {
-            border-color: $fade-grey-dark-4;
-            background: $white;
-            box-shadow: $light-box-shadow;
+            border-color: var(--fade-grey-dark-4);
+            background: var(--white);
+            box-shadow: var(--light-box-shadow);
           }
 
           svg {
             height: 16px;
             width: 16px;
-            color: $primary;
+            color: var(--primary);
             transition: all 0.3s;
           }
         }
@@ -646,9 +645,9 @@ onUnmounted(() => {
               height: 50px;
               width: 50px;
               border-radius: 12px;
-              background: $primary;
-              border: 1px solid $primary;
-              font-family: $font;
+              background: var(--primary);
+              border: 1px solid var(--primary);
+              font-family: var(--font);
               text-align: center;
 
               span {
@@ -656,7 +655,7 @@ onUnmounted(() => {
 
                 &:first-child {
                   font-size: 1.3rem;
-                  color: $smoke-white;
+                  color: var(--smoke-white);
                   font-weight: 600;
                   line-height: 1;
                 }
@@ -664,7 +663,7 @@ onUnmounted(() => {
                 &:nth-child(2) {
                   font-size: 0.7rem;
                   text-transform: uppercase;
-                  color: $primary-light-40;
+                  color: var(--primary-light-40);
                 }
               }
             }
@@ -683,8 +682,8 @@ onUnmounted(() => {
               min-width: 46px;
               height: 46px;
               max-height: 46px;
-              background: $white;
-              border: 1px solid $fade-grey-dark-3;
+              background: var(--white);
+              border: 1px solid var(--fade-grey-dark-3);
               border-radius: 500px;
 
               img {
@@ -696,14 +695,14 @@ onUnmounted(() => {
 
             .meta-content {
               margin-left: 8px;
-              font-family: $font;
+              font-family: var(--font);
               line-height: 1.3;
 
               h4 {
-                font-family: $font-alt;
+                font-family: var(--font-alt);
                 font-weight: 600;
                 font-size: 1rem;
-                color: $dark-text;
+                color: var(--dark-text);
               }
 
               p {
@@ -722,7 +721,7 @@ onUnmounted(() => {
                   color: #fab82a;
 
                   + span {
-                    color: $dark-text;
+                    color: var(--dark-text);
                   }
                 }
               }
@@ -775,7 +774,7 @@ onUnmounted(() => {
 
         .cart-items {
           height: calc(100% - 160px);
-          border-bottom: 1px solid $fade-grey-dark-3;
+          border-bottom: 1px solid var(--fade-grey-dark-3);
           padding-bottom: 40px;
           overflow-y: auto;
 
@@ -798,18 +797,18 @@ onUnmounted(() => {
             padding: 10px 5px;
 
             span {
-              font-family: $font;
+              font-family: var(--font);
               margin: 0;
 
               &:first-child {
                 font-size: 1rem;
                 font-weight: 500;
-                color: $light-text;
+                color: var(--light-text);
                 text-transform: uppercase;
               }
 
               &:nth-child(2) {
-                color: $dark-text;
+                color: var(--dark-text);
                 font-weight: 600;
                 font-size: 1.4rem;
               }
@@ -825,15 +824,15 @@ onUnmounted(() => {
   .food-delivery-dashboard {
     .left {
       .left-header {
-        background: $dark-sidebar-light-2 !important;
+        background: var(--dark-sidebar-light-2) !important;
 
         .header-meta {
           h3 {
-            color: $dark-dark-text;
+            color: var(--dark-dark-text);
           }
 
           p {
-            color: $accent;
+            color: var(--primary);
           }
         }
       }
@@ -843,7 +842,7 @@ onUnmounted(() => {
           .restaurants-toolbar {
             .left {
               h3 {
-                color: $dark-dark-text;
+                color: var(--dark-dark-text);
               }
             }
           }
@@ -851,48 +850,48 @@ onUnmounted(() => {
           .food-pills {
             .food-pills-inner {
               .food-pill {
-                background: $dark-sidebar-light-2 !important;
-                border-color: $dark-sidebar-light-12 !important;
+                background: var(--dark-sidebar-light-2) !important;
+                border-color: var(--dark-sidebar-light-12) !important;
 
                 span {
-                  color: $dark-dark-text;
+                  color: var(--dark-dark-text);
                 }
 
                 &.active {
-                  background: $primary !important;
-                  border-color: $primary !important;
+                  background: var(--primary) !important;
+                  border-color: var(--primary) !important;
 
                   span {
-                    color: $white;
+                    color: var(--white);
                   }
                 }
 
                 .food-pill-icon {
-                  background: $fade-grey-light-3;
-                  border-color: $fade-grey-light-3;
+                  background: var(--fade-grey-light-3);
+                  border-color: var(--fade-grey-light-3);
                 }
               }
 
               .slick-slide {
                 &.slick-current {
-                  background: $accent !important;
-                  border-color: $accent !important;
+                  background: var(--primary) !important;
+                  border-color: var(--primary) !important;
 
                   .food-pill-icon {
-                    border-color: $accent !important;
+                    border-color: var(--primary) !important;
                   }
 
                   span {
-                    color: $smoke-white;
+                    color: var(--smoke-white);
                   }
                 }
               }
 
               .slick-custom {
                 &:hover {
-                  border-color: $dark-sidebar-light-2;
-                  background: $dark-sidebar-light-2;
-                  box-shadow: $light-box-shadow;
+                  border-color: var(--dark-sidebar-light-2);
+                  background: var(--dark-sidebar-light-2);
+                  box-shadow: var(--light-box-shadow);
                 }
               }
             }
@@ -907,12 +906,12 @@ onUnmounted(() => {
 
               .image-container {
                 .timer {
-                  background: $accent;
-                  border-color: $accent;
+                  background: var(--primary);
+                  border-color: var(--primary);
 
                   span {
                     &:nth-child(2) {
-                      color: $accent-light-18;
+                      color: var(--primary-light-18);
                     }
                   }
                 }
@@ -920,18 +919,18 @@ onUnmounted(() => {
 
               .meta-container {
                 .meta-icon {
-                  background: $fade-grey-light-3;
-                  border-color: $fade-grey-light-3;
+                  background: var(--fade-grey-light-3);
+                  border-color: var(--fade-grey-light-3);
                 }
 
                 .meta-content {
                   h4 {
-                    color: $dark-dark-text;
+                    color: var(--dark-dark-text);
                   }
 
                   p {
                     .fa-star {
-                      color: $accent;
+                      color: var(--primary);
                     }
                   }
                 }
@@ -945,18 +944,18 @@ onUnmounted(() => {
     .right {
       .cart-widget {
         .cart-items {
-          border-color: $dark-sidebar-light-12 !important;
+          border-color: var(--dark-sidebar-light-12) !important;
         }
 
         .cart-button {
           .total {
             span {
               &:first-child {
-                color: $light-text;
+                color: var(--light-text);
               }
 
               &:nth-child(2) {
-                color: $dark-dark-text;
+                color: var(--dark-dark-text);
               }
             }
           }

@@ -58,7 +58,6 @@ const displayCode = ref(false)
 </template>
 
 <style lang="scss" scoped>
-@import '../../../scss/abstracts/_variables.scss';
 @import '../../../scss/abstracts/_mixins.scss';
 
 .demo-code-wrapper {

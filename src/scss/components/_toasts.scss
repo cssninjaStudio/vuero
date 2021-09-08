@@ -18,14 +18,14 @@
         .far,
         .fad,
         .fab {
-          color: $white !important;
+          color: var(--white) !important;
           font-size: 1.6rem !important;
         }
       }
 
       .notyf__message {
-        font-family: $font;
-        color: $white !important;
+        font-family: var(--font);
+        color: var(--white) !important;
       }
     }
   }

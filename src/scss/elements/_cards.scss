@@ -46,7 +46,7 @@
 }
 
 .s-card-advanced {
-  border-radius: $radius-large;
+  border-radius: var(--radius-large);
 }
 
 .r-card-advanced,
@@ -63,28 +63,28 @@
   .r-card-advanced,
   .s-card-advanced,
   .l-card-advanced {
-    background: $dark-sidebar-light-6;
-    border-color: $dark-sidebar-light-12;
+    background: var(--dark-sidebar-light-6);
+    border-color: var(--dark-sidebar-light-12);
 
     .card-head,
     .card-foot {
-      border-color: $dark-sidebar-light-12;
+      border-color: var(--dark-sidebar-light-12);
     }
 
     .v-avatar {
       img {
-        border-color: $dark-sidebar-light-6 !important;
+        border-color: var(--dark-sidebar-light-6) !important;
       }
     }
 
     .avatar-stack {
       .v-avatar {
-        border-color: $dark-sidebar-light-6 !important;
+        border-color: var(--dark-sidebar-light-6) !important;
 
         .avatar {
           &.is-more {
             .inner {
-              border-color: $dark-sidebar-light-6 !important;
+              border-color: var(--dark-sidebar-light-6) !important;
             }
           }
         }

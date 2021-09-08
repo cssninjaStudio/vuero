@@ -9,42 +9,42 @@
 ========================================================================== */
 
 .is-dark {
-  background: $dark-sidebar-light-10;
+  background: var(--dark-sidebar-light-10);
 
   &.is-chat-side-collapsed {
-    background: $dark-sidebar-light-5 !important;
+    background: var(--dark-sidebar-light-5) !important;
   }
 
   &.opened {
-    background: $dark-sidebar-light-5;
+    background: var(--dark-sidebar-light-5);
   }
 
   .pageloader {
-    background: $dark-sidebar-light-10;
+    background: var(--dark-sidebar-light-10);
   }
 
   .infraloader {
-    background: $dark-sidebar-light-15 !important;
+    background: var(--dark-sidebar-light-15) !important;
   }
 
   .page-title {
     h1 {
-      color: $accent-grey-light-3;
+      color: var(--primary-grey-light-3);
     }
   }
 
   .menu-toggle i {
-    background: $accent;
+    background: var(--primary);
   }
 
   .view-wrapper,
   .minimal-wrapper {
-    background: $dark-sidebar-light-10;
-    border-color: $dark-sidebar-light-10;
+    background: var(--dark-sidebar-light-10);
+    border-color: var(--dark-sidebar-light-10);
   }
 
   .zoom-overlay {
-    background: $dark-sidebar-light-10;
-    border-color: $dark-sidebar-light-10;
+    background: var(--dark-sidebar-light-10);
+    border-color: var(--dark-sidebar-light-10);
   }
 }

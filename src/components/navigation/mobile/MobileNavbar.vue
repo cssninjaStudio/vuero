@@ -36,7 +36,6 @@ const emit = defineEmits(['toggle'])
 </template>
 
 <style lang="scss">
-@import '../../../scss/abstracts/_variables.scss';
 @import '../../../scss/abstracts/_mixins.scss';
 
 /* ==========================================================================
@@ -82,7 +81,7 @@ const emit = defineEmits(['toggle'])
 
       &.is-active {
         svg {
-          color: $muted-grey;
+          color: var(--muted-grey);
         }
       }
 
@@ -103,7 +102,7 @@ const emit = defineEmits(['toggle'])
             height: 32px;
             min-width: 32px;
             min-height: 32px;
-            border-radius: $radius-rounded;
+            border-radius: var(--radius-rounded);
           }
 
           .badge {
@@ -115,8 +114,8 @@ const emit = defineEmits(['toggle'])
             min-width: 18px;
             height: 18px;
             max-height: 18px;
-            border: 2px solid $white;
-            border-radius: $radius-rounded;
+            border: 2px solid var(--white);
+            border-radius: var(--radius-rounded);
           }
         }
 
@@ -124,7 +123,7 @@ const emit = defineEmits(['toggle'])
           margin-left: 3px;
           width: 22px;
           height: 22px;
-          color: $dark-sidebar;
+          color: var(--dark-sidebar);
           transition: all 0.3s;
         }
       }
@@ -146,7 +145,7 @@ const emit = defineEmits(['toggle'])
 
             .meta {
               margin-left: 12px;
-              font-family: $font;
+              font-family: var(--font);
 
               span {
                 display: block;
@@ -154,13 +153,13 @@ const emit = defineEmits(['toggle'])
                 &:first-child {
                   font-size: 1.1rem;
                   font-weight: 500;
-                  color: $dark-text;
+                  color: var(--dark-text);
                   line-height: 1.2;
                 }
 
                 &:nth-child(2) {
                   text-transform: uppercase;
-                  color: $light-text;
+                  color: var(--light-text);
                   font-size: 0.7rem;
                 }
               }
@@ -169,7 +168,7 @@ const emit = defineEmits(['toggle'])
 
           .logout-button {
             svg {
-              color: $smoke-white !important;
+              color: var(--smoke-white) !important;
             }
           }
         }
@@ -186,12 +185,12 @@ const emit = defineEmits(['toggle'])
         margin: 0 15px;
 
         .toggler svg {
-          color: $smoke-white !important;
+          color: var(--smoke-white) !important;
         }
 
         .toggle-title {
           font-size: 0.8rem;
-          color: $muted-grey;
+          color: var(--muted-grey);
 
           &:hover {
             background: transparent !important;
@@ -208,26 +207,26 @@ const emit = defineEmits(['toggle'])
   .navbar-item {
     &.has-icon {
       padding: 0.75rem !important;
-      border-bottom: 1px solid $fade-grey;
+      border-bottom: 1px solid var(--fade-grey);
 
       &:last-child {
         border-bottom: none !important;
       }
 
       svg {
-        color: $primary;
+        color: var(--primary);
       }
 
       .sidebar-icon {
         .path {
-          fill: $primary;
+          fill: var(--primary);
         }
       }
     }
 
     &.is-sidebar-toggler {
       svg {
-        color: $muted-grey !important;
+        color: var(--muted-grey) !important;
       }
     }
 
@@ -240,11 +239,11 @@ const emit = defineEmits(['toggle'])
         display: block;
 
         &.menu-badge {
-          color: $primary;
+          color: var(--primary);
           width: 20px;
           height: 20px;
-          border: 1px solid $primary;
-          border-radius: $radius-rounded;
+          border: 1px solid var(--primary);
+          border-radius: var(--radius-rounded);
           display: flex;
           justify-content: center;
           align-items: center;
@@ -262,7 +261,7 @@ const emit = defineEmits(['toggle'])
       height: 38px;
       width: 38px;
       transition: all 0.3s;
-      border-radius: $radius-rounded;
+      border-radius: var(--radius-rounded);
       margin-right: 12px;
 
       .navbar-link {
@@ -275,7 +274,7 @@ const emit = defineEmits(['toggle'])
       svg {
         height: 18px;
         width: 18px;
-        color: $muted-grey;
+        color: var(--muted-grey);
         transition: all 0.3s;
       }
 
@@ -286,8 +285,8 @@ const emit = defineEmits(['toggle'])
         display: block;
         width: 8px;
         height: 8px;
-        border-radius: $radius-rounded;
-        background: $danger;
+        border-radius: var(--radius-rounded);
+        background: var(--danger);
       }
 
       &:hover,
@@ -295,7 +294,7 @@ const emit = defineEmits(['toggle'])
         box-shadow: 0 3px 10px 4px rgba(0, 0, 0, 0.07);
 
         svg {
-          color: $primary;
+          color: var(--primary);
         }
       }
 
@@ -316,7 +315,7 @@ const emit = defineEmits(['toggle'])
           .count,
           .view-all {
             font-size: 0.8rem;
-            color: $danger;
+            color: var(--danger);
             text-transform: uppercase;
             font-weight: 500;
           }
@@ -327,13 +326,13 @@ const emit = defineEmits(['toggle'])
           align-items: flex-start;
           justify-content: space-between;
           padding: 1rem;
-          border-bottom: 0.01rem solid $light-grey;
+          border-bottom: 0.01rem solid var(--light-grey);
 
           .heading-left {
             h6 {
               font-size: 0.9rem;
               font-weight: 500;
-              color: $light-text;
+              color: var(--light-text);
               line-height: 1.1;
             }
           }
@@ -341,7 +340,7 @@ const emit = defineEmits(['toggle'])
           .heading-right {
             .notification-link {
               margin: 0.4rem 0;
-              color: $primary;
+              color: var(--primary);
               font-weight: 500;
             }
           }
@@ -371,7 +370,7 @@ const emit = defineEmits(['toggle'])
                   max-height: 3rem;
                   width: 3rem;
                   margin: 0 0.5rem 0 0;
-                  border-radius: $radius-rounded;
+                  border-radius: var(--radius-rounded);
                   max-width: 100%;
                 }
               }
@@ -380,7 +379,7 @@ const emit = defineEmits(['toggle'])
                 text-align: left;
 
                 .user-info {
-                  color: $dark-text;
+                  color: var(--dark-text);
                   margin: 0.15rem 0 0;
 
                   span {
@@ -390,7 +389,7 @@ const emit = defineEmits(['toggle'])
 
                 .time {
                   margin: 0;
-                  color: $light-text;
+                  color: var(--light-text);
                 }
               }
             }
@@ -408,16 +407,16 @@ const emit = defineEmits(['toggle'])
     }
 
     span {
-      background-color: $muted-grey;
+      background-color: var(--muted-grey);
     }
   }
 
   .navbar-menu {
-    background: $white;
+    background: var(--white);
 
     .navbar-item,
     .navbar-link {
-      color: $sidebar;
+      color: var(--sidebar);
     }
 
     .navbar-link {
@@ -436,13 +435,13 @@ const emit = defineEmits(['toggle'])
         height: 36px;
         width: 36px;
         max-height: 36px !important;
-        border-radius: $radius-rounded;
+        border-radius: var(--radius-rounded);
       }
 
       svg {
         height: 16px;
         width: 16px;
-        color: $primary;
+        color: var(--primary);
       }
 
       span {
@@ -451,7 +450,7 @@ const emit = defineEmits(['toggle'])
         &.is-heading {
           font-size: 12px;
           font-weight: 500;
-          color: $sidebar;
+          color: var(--sidebar);
           letter-spacing: 1px;
           text-transform: uppercase;
         }
@@ -459,7 +458,7 @@ const emit = defineEmits(['toggle'])
         &.is-subheading {
           font-size: 10px;
           font-weight: 400;
-          color: $muted-grey;
+          color: var(--muted-grey);
           letter-spacing: 1px;
           text-transform: uppercase;
         }
@@ -481,7 +480,7 @@ const emit = defineEmits(['toggle'])
           svg {
             height: 18px;
             width: 18px;
-            color: $muted-grey;
+            color: var(--muted-grey);
           }
         }
       }
@@ -494,12 +493,12 @@ const emit = defineEmits(['toggle'])
     .navbar-dropdown .navbar-item {
       font-size: 95%;
       padding: 0.75rem 1.5rem !important;
-      color: $muted-grey;
+      color: var(--muted-grey);
 
       &.is-active,
       &:hover {
-        color: $primary;
-        background: $placeholder-light-16;
+        color: var(--primary);
+        background: var(--placeholder-light-16);
       }
     }
   }
@@ -511,38 +510,38 @@ const emit = defineEmits(['toggle'])
 
 .is-dark {
   .mobile-navbar {
-    background: $dark-sidebar;
+    background: var(--dark-sidebar);
 
     .navbar-menu.is-active {
-      background: $dark-sidebar-light-3;
+      background: var(--dark-sidebar-light-3);
 
       .navbar-link {
         .is-heading {
-          color: $accent-grey-light-10;
+          color: var(--primary-grey-light-10);
         }
 
         svg {
-          color: $accent;
+          color: var(--primary);
         }
       }
 
       .navbar-item.has-icon {
-        border-bottom-color: $dark-sidebar-light-10 !important;
+        border-bottom-color: var(--dark-sidebar-light-10) !important;
       }
 
       .navbar-dropdown .navbar-item {
-        color: $accent-grey-dark-5 !important;
+        color: var(--primary-grey-dark-5) !important;
       }
 
       .is-search .control {
         input {
-          background: $dark-sidebar-light-10 !important;
-          border-color: $dark-sidebar-light-10 !important;
-          color: $accent-grey;
+          background: var(--dark-sidebar-light-10) !important;
+          border-color: var(--dark-sidebar-light-10) !important;
+          color: var(--primary-grey);
 
           &:focus {
             ~ span svg {
-              color: $accent;
+              color: var(--primary);
             }
           }
         }
@@ -554,21 +553,21 @@ const emit = defineEmits(['toggle'])
     &.is-active {
       .navbar-link {
         svg {
-          color: $accent !important;
+          color: var(--primary) !important;
         }
       }
     }
 
     .navbar-dropdown {
-      background: $dark-sidebar !important;
-      border-color: $dark-sidebar !important;
+      background: var(--dark-sidebar) !important;
+      border-color: var(--dark-sidebar) !important;
 
       .heading {
-        border-color: $dark-sidebar-light-12 !important;
+        border-color: var(--dark-sidebar-light-12) !important;
 
         .heading-right {
           .notification-link {
-            color: $accent !important;
+            color: var(--primary) !important;
           }
         }
       }
@@ -579,7 +578,7 @@ const emit = defineEmits(['toggle'])
             .notification-item {
               .user-content {
                 p {
-                  color: $dark-dark-text !important;
+                  color: var(--dark-dark-text) !important;
                 }
               }
             }

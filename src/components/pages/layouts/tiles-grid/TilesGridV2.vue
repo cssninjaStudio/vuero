@@ -117,7 +117,6 @@ const optionsSingle = [
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_variables.scss';
 @import '../../../../scss/abstracts/_mixins.scss';
 
 .tile-grid {
@@ -141,8 +140,8 @@ const optionsSingle = [
     cursor: pointer;
 
     &:hover {
-      border-color: $primary;
-      box-shadow: $light-box-shadow;
+      border-color: var(--primary);
+      box-shadow: var(--light-box-shadow);
     }
 
     .tile-grid-item-inner {
@@ -162,11 +161,11 @@ const optionsSingle = [
 
         span {
           display: block;
-          font-family: $font;
+          font-family: var(--font);
 
           &:first-child {
-            color: $dark-text;
-            font-family: $font-alt;
+            color: var(--dark-text);
+            font-family: var(--font-alt);
             font-weight: 600;
             font-size: 1rem;
           }
@@ -177,7 +176,7 @@ const optionsSingle = [
 
             span {
               display: inline-block;
-              color: $light-text;
+              color: var(--light-text);
               font-size: 0.8rem;
               font-weight: 400;
             }
@@ -185,7 +184,7 @@ const optionsSingle = [
             .icon-separator {
               position: relative;
               font-size: 4px;
-              color: $light-text;
+              color: var(--light-text);
               padding: 0 6px;
             }
           }
@@ -209,7 +208,7 @@ const optionsSingle = [
     .tile-grid-item {
       @include vuero-card--dark();
       &:hover {
-        border-color: $accent !important;
+        border-color: var(--primary) !important;
       }
     }
   }

@@ -33,9 +33,9 @@
       }
 
       .form-section-title {
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         font-weight: 600;
-        color: $dark-text;
+        color: var(--dark-text);
         margin-bottom: 1rem;
 
         button {
@@ -61,12 +61,12 @@
       .fieldset {
         padding: 0.75rem;
         border-radius: 0.5rem;
-        border: 1px solid $border;
-        background: $widget-grey-dark-3;
+        border: 1px solid var(--border);
+        background: var(--widget-grey-dark-3);
 
         .fieldset-separator {
           margin: 1.5rem 0;
-          border-top: 1px solid $border;
+          border-top: 1px solid var(--border);
         }
       }
 
@@ -87,9 +87,9 @@
         height: 100%;
 
         h4 {
-          font-family: $font;
+          font-family: var(--font);
           font-weight: 500;
-          color: $dark-text;
+          color: var(--dark-text);
         }
       }
 
@@ -108,26 +108,26 @@
       .input-button {
         height: 44px;
         width: 100%;
-        border: 2px dashed $border;
+        border: 2px dashed var(--border);
         border-radius: 0.65rem;
-        background: $widget-grey-dark-3;
+        background: var(--widget-grey-dark-3);
         display: flex;
         align-items: center;
         padding-left: calc(0.75em - 1px);
         padding-right: calc(0.75em - 1px);
         padding-top: 0;
         padding-bottom: 0;
-        color: $dark-text;
+        color: var(--dark-text);
         cursor: pointer;
         transition: color 0.3s, background-color 0.3s, border 0.3s,
           box-shadow 0.3s;
         outline: none;
 
         &:hover {
-          background: $white;
-          border: 2px solid $primary;
-          color: $primary;
-          box-shadow: $light-box-shadow;
+          background: var(--white);
+          border: 2px solid var(--primary);
+          color: var(--primary);
+          box-shadow: var(--light-box-shadow);
         }
 
         svg {
@@ -136,7 +136,7 @@
         }
 
         span {
-          font-family: $font;
+          font-family: var(--font);
           margin-left: 0.75rem;
         }
       }
@@ -168,11 +168,11 @@
               }
 
               ~ .option-inner {
-                border-color: $primary;
-                box-shadow: $light-box-shadow;
+                border-color: var(--primary);
+                box-shadow: var(--light-box-shadow);
 
                 i {
-                  color: $primary;
+                  color: var(--primary);
                 }
               }
             }
@@ -187,8 +187,8 @@
             align-items: center;
             height: 20px;
             width: 20px;
-            color: $white;
-            background: $primary;
+            color: var(--white);
+            background: var(--primary);
             border-radius: 50%;
             transform: scale(0);
             transition: transform 0.3s;
@@ -202,15 +202,15 @@
 
           .option-inner {
             padding: 1.5rem;
-            background: $white;
-            border: 1px solid $border;
+            background: var(--white);
+            border: 1px solid var(--border);
             border-radius: 0.5rem;
             transition: border 0.3s, box-shadow 0.3s;
 
             h4 {
-              color: $dark-text;
+              color: var(--dark-text);
               font-weight: 600;
-              font-family: $font-alt;
+              font-family: var(--font-alt);
             }
 
             p {
@@ -219,7 +219,7 @@
 
             i {
               font-size: 2.25rem;
-              color: $light-text;
+              color: var(--light-text);
               margin-bottom: 0.25rem;
             }
           }
@@ -229,14 +229,14 @@
       .validation-box {
         display: flex;
         padding: 2rem;
-        background: $white;
-        border: 1px solid $border;
+        background: var(--white);
+        border: 1px solid var(--border);
         border-radius: 0.5rem;
         transition: border 0.3s, box-shadow 0.3s;
 
         .box-content {
           h3 {
-            font-family: $font-alt;
+            font-family: var(--font-alt);
             font-size: 1.25rem;
             font-weight: 600;
             margin-bottom: 0.75rem;
@@ -267,16 +267,16 @@
         .output {
           height: 52px;
           width: 100%;
-          border: 1px solid $border;
+          border: 1px solid var(--border);
           border-radius: 0.65rem;
-          background: $white;
+          background: var(--white);
           display: flex;
           align-items: center;
           padding-left: calc(1em - 1px);
           padding-right: calc(1em - 1px);
           padding-top: 0;
           padding-bottom: 0;
-          color: $dark-text;
+          color: var(--dark-text);
           cursor: pointer;
           transition: color 0.3s, background-color 0.3s, border 0.3s,
             box-shadow 0.3s;
@@ -289,13 +289,13 @@
             height: 18px;
             width: 18px;
             margin-right: 0.75rem;
-            color: $light-text;
+            color: var(--light-text);
           }
 
           > span {
             font-weight: 500;
-            font-family: $font;
-            color: $dark-text;
+            font-family: var(--font);
+            color: var(--dark-text);
           }
 
           .action {
@@ -317,7 +317,7 @@
               outline: none;
 
               &:hover {
-                background: $widget-grey-dark-1;
+                background: var(--widget-grey-dark-1);
               }
 
               svg {
@@ -351,9 +351,9 @@
       position: relative;
       max-width: 300px;
       padding: 1.75rem;
-      border: 1px solid $border;
+      border: 1px solid var(--border);
       border-radius: 0.65rem;
-      background: $white;
+      background: var(--white);
 
       .form-help-inner {
         display: none;
@@ -364,7 +364,7 @@
       }
 
       h3 {
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         font-size: 1.25rem;
         font-weight: 600;
         margin-bottom: 1rem;
@@ -399,8 +399,8 @@
           margin-bottom: 0.15rem;
 
           span {
-            font-family: $font;
-            color: $light-text;
+            font-family: var(--font);
+            color: var(--light-text);
             font-weight: 300;
           }
 
@@ -409,14 +409,14 @@
             width: 14px;
             stroke-width: 3px;
             margin-right: 0.45rem;
-            color: $primary;
+            color: var(--primary);
           }
         }
       }
     }
 
     .step-number {
-      font-family: $font;
+      font-family: var(--font);
       font-weight: 500;
       font-size: 0.75rem !important;
     }
@@ -431,7 +431,7 @@
     .steps-segment {
       &.is-active {
         .step-info {
-          color: $dark-text;
+          color: var(--dark-text);
           font-weight: 600;
         }
       }
@@ -448,8 +448,8 @@
   left: 0;
   height: 65px;
   width: 100%;
-  background: $white;
-  border-bottom: 1px solid $border;
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
   z-index: 25;
   transform: translateY(-100%);
   transition: transform 0.3s;
@@ -484,42 +484,42 @@ body {
         .form-section {
           .form-section-title {
             span {
-              color: $dark-dark-text;
+              color: var(--dark-dark-text);
             }
 
             svg {
-              color: $dark-dark-text;
+              color: var(--dark-dark-text);
             }
           }
 
           .input-button {
-            background-color: $dark-sidebar-light-2 !important;
-            border-color: $dark-sidebar-light-12 !important;
-            color: $dark-dark-text;
+            background-color: var(--dark-sidebar-light-2) !important;
+            border-color: var(--dark-sidebar-light-12) !important;
+            color: var(--dark-dark-text);
 
             &:hover {
-              color: $accent;
-              border: 2px solid $accent !important;
+              color: var(--primary);
+              border: 2px solid var(--primary) !important;
             }
           }
 
           .fieldset {
-            background: $dark-sidebar-dark-2;
-            border-color: $dark-sidebar-light-12;
+            background: var(--dark-sidebar-dark-2);
+            border-color: var(--dark-sidebar-light-12);
           }
 
           .fieldset-separator {
-            border-color: $dark-sidebar-light-12;
+            border-color: var(--dark-sidebar-light-12);
           }
 
           .flex-label h4 {
-            color: $dark-dark-text;
+            color: var(--dark-dark-text);
           }
 
           .options {
             .option {
               .indicator {
-                background: $accent;
+                background: var(--primary);
               }
 
               input {
@@ -529,53 +529,53 @@ body {
                   }
 
                   ~ .option-inner {
-                    border-color: $accent !important;
+                    border-color: var(--primary) !important;
 
                     i {
-                      color: $accent;
+                      color: var(--primary);
                     }
                   }
                 }
               }
 
               .option-inner {
-                background-color: $dark-sidebar-light-2 !important;
-                border-color: $dark-sidebar-light-12 !important;
+                background-color: var(--dark-sidebar-light-2) !important;
+                border-color: var(--dark-sidebar-light-12) !important;
 
                 h4 {
-                  color: $dark-dark-text;
+                  color: var(--dark-dark-text);
                 }
               }
             }
           }
 
           .validation-box {
-            background-color: $dark-sidebar-light-2 !important;
-            border-color: $dark-sidebar-light-12 !important;
+            background-color: var(--dark-sidebar-light-2) !important;
+            border-color: var(--dark-sidebar-light-12) !important;
 
             .box-content h3 {
-              color: $dark-dark-text;
+              color: var(--dark-dark-text);
             }
           }
 
           .form-section-output {
             .output {
-              background-color: $dark-sidebar-light-2 !important;
-              border-color: $dark-sidebar-light-12 !important;
-              color: $dark-dark-text;
+              background-color: var(--dark-sidebar-light-2) !important;
+              border-color: var(--dark-sidebar-light-12) !important;
+              color: var(--dark-dark-text);
 
               > span {
-                color: $dark-dark-text;
+                color: var(--dark-dark-text);
               }
 
               .action {
                 button {
                   &:hover {
-                    background: $dark-sidebar-light-5;
+                    background: var(--dark-sidebar-light-5);
                   }
 
                   svg {
-                    color: $light-text;
+                    color: var(--light-text);
                   }
                 }
               }
@@ -588,35 +588,35 @@ body {
         .steps {
           &:not(.is-hollow) {
             .steps-marker:not(.is-hollow) {
-              background-color: $accent;
+              background-color: var(--primary);
             }
           }
 
           .steps-segment {
             &.is-active {
               ~ .steps-segment::after {
-                background: $dark-sidebar-dark-5;
+                background: var(--dark-sidebar-dark-5);
               }
 
               ~ .steps-segment {
                 .steps-marker:not(.is-hollow) {
-                  background: $dark-sidebar-dark-5;
+                  background: var(--dark-sidebar-dark-5);
                 }
               }
 
               &::after {
-                background: $dark-sidebar-dark-5;
+                background: var(--dark-sidebar-dark-5);
               }
 
               .steps-content {
                 .step-info {
-                  color: $dark-dark-text;
+                  color: var(--dark-dark-text);
                 }
               }
             }
 
             &::after {
-              background-color: $accent;
+              background-color: var(--primary);
             }
           }
         }

@@ -36,8 +36,8 @@ List Widgets Styles
         display: flex;
         min-width: 140px;
         height: 32px;
-        background: $widget-grey-dark-2;
-        font-family: $font;
+        background: var(--widget-grey-dark-2);
+        font-family: var(--font);
         border-radius: 8px;
 
         .tabbed-control {
@@ -47,11 +47,11 @@ List Widgets Styles
           justify-content: center;
           align-items: center;
           font-size: 0.9rem;
-          color: $light-text;
+          color: var(--light-text);
           z-index: 1;
 
           &.is-active {
-            color: $smoke-white;
+            color: var(--smoke-white);
 
             &:first-child {
               ~ .tabbed-naver {
@@ -74,7 +74,7 @@ List Widgets Styles
           width: 50%;
           height: 100%;
           border-radius: 8px;
-          background: $primary;
+          background: var(--primary);
           margin-left: 0;
           transition: all 0.3s;
           z-index: 0;
@@ -100,7 +100,7 @@ List Widgets Styles
     margin-bottom: 10px;
 
     h3 {
-      color: $dark-text;
+      color: var(--dark-text);
       font-size: 1.1rem;
       font-weight: 500;
     }
@@ -124,10 +124,10 @@ List Widgets Styles
     &.tabbed-widget {
       .widget-head {
         .tabbed-controls {
-          background: $dark-sidebar-light-3;
+          background: var(--dark-sidebar-light-3);
 
           .tabbed-naver {
-            background: $accent;
+            background: var(--primary);
           }
         }
       }
@@ -148,15 +148,15 @@ List Widgets Styles
       align-items: center;
       height: 36px;
       width: 36px;
-      border-radius: $radius-rounded;
-      background: $widget-grey;
-      color: $light-text;
+      border-radius: var(--radius-rounded);
+      background: var(--widget-grey);
+      color: var(--light-text);
 
       &::before {
         content: attr(data-content);
         position: absolute;
         left: -45px;
-        font-family: $font;
+        font-family: var(--font);
         font-size: 0.95rem;
         font-weight: 500;
       }
@@ -167,13 +167,13 @@ List Widgets Styles
 
       &.is-up {
         &::before {
-          color: $h-green;
+          color: var(--green);
         }
       }
 
       &.is-down {
         &::before {
-          color: $h-red;
+          color: var(--red);
         }
       }
 
@@ -190,8 +190,8 @@ List Widgets Styles
   .list-widget {
     &.list-widget-v1 {
       .go-icon {
-        background: $dark-sidebar-light-3;
-        border: 1px solid $dark-sidebar-light-12;
+        background: var(--dark-sidebar-light-3);
+        border: 1px solid var(--dark-sidebar-light-12);
       }
     }
   }
@@ -229,7 +229,7 @@ List Widgets Styles
           left: 18px;
           width: 1px;
           height: calc(100% - 36px);
-          border-left: 1px solid $fade-grey-dark-3;
+          border-left: 1px solid var(--fade-grey-dark-3);
         }
 
         .timeline-icon {
@@ -239,11 +239,11 @@ List Widgets Styles
           display: flex;
           justify-content: center;
           align-items: center;
-          background: $white;
-          border: 1px solid $fade-grey-dark-3;
-          border-radius: $radius-rounded;
-          color: $light-text;
-          box-shadow: $light-box-shadow;
+          background: var(--white);
+          border: 1px solid var(--fade-grey-dark-3);
+          border-radius: var(--radius-rounded);
+          color: var(--light-text);
+          box-shadow: var(--light-box-shadow);
 
           &::after {
             content: '';
@@ -252,7 +252,7 @@ List Widgets Styles
             left: 40px;
             width: 20px;
             height: 1px;
-            border-top: 1px solid $fade-grey-dark-3;
+            border-top: 1px solid var(--fade-grey-dark-3);
           }
 
           &.is-squared {
@@ -264,51 +264,49 @@ List Widgets Styles
           }
 
           &.is-primary {
-            background: $primary;
-            border-color: $primary;
-            box-shadow: $primary-box-shadow;
-
-            svg {
-              color: $smoke-white;
+            background: var(--primary);
+            border-color: var(--primary);
+            box-shadow: var(--primary-box-shadow) svg {
+              color: var(--smoke-white);
             }
           }
 
           &.is-info {
-            background: $info;
-            border-color: $info;
-            box-shadow: $info-box-shadow;
+            background: var(--info);
+            border-color: var(--info);
+            box-shadow: var(--info-box-shadow);
 
             svg {
-              color: $smoke-white;
+              color: var(--smoke-white);
             }
           }
 
           &.is-success {
-            background: $success;
-            border-color: $success;
-            box-shadow: $success-box-shadow;
+            background: var(--success);
+            border-color: var(--success);
+            box-shadow: var(--success-box-shadow);
 
             svg {
-              color: $smoke-white;
+              color: var(--smoke-white);
             }
           }
 
           &.is-orange {
-            background: $h-orange;
-            border-color: $h-orange;
-            box-shadow: $h-orange-box-shadow;
+            background: var(--orange);
+            border-color: var(--orange);
+            box-shadow: var(--orange-box-shadow);
 
             svg {
-              color: $smoke-white;
+              color: var(--smoke-white);
             }
           }
 
           &.is-yellow {
-            background: $h-yellow;
-            border-color: $h-yellow;
+            background: var(--yellow);
+            border-color: var(--yellow);
 
             svg {
-              color: $smoke-white;
+              color: var(--smoke-white);
             }
           }
 
@@ -316,7 +314,7 @@ List Widgets Styles
             display: block;
             height: 28px;
             width: 28px;
-            border-radius: $radius-rounded;
+            border-radius: var(--radius-rounded);
           }
 
           svg {
@@ -332,14 +330,14 @@ List Widgets Styles
 
           span {
             font-size: 0.85rem;
-            color: $light-text;
+            color: var(--light-text);
           }
 
           p {
-            font-family: $font-alt;
+            font-family: var(--font-alt);
             font-size: 0.95rem;
             font-weight: 500;
-            color: $dark-text;
+            color: var(--dark-text);
           }
         }
       }
@@ -357,33 +355,31 @@ List Widgets Styles
       .icon-timeline {
         .timeline-item {
           &::after {
-            border-color: $dark-sidebar-light-12 !important;
+            border-color: var(--dark-sidebar-light-12) !important;
           }
 
           .timeline-icon:not(.is-primary):not(.is-info):not(.is-success):not(.is-orange):not(.is-yellow) {
-            background: $dark-sidebar-light-3 !important;
-            border-color: $dark-sidebar-light-12 !important;
+            background: var(--dark-sidebar-light-3) !important;
+            border-color: var(--dark-sidebar-light-12) !important;
           }
 
           .timeline-icon {
             &::after {
-              border-color: $dark-sidebar-light-12 !important;
+              border-color: var(--dark-sidebar-light-12) !important;
             }
 
             &.is-primary {
-              background: $accent;
-              border-color: $accent;
-              box-shadow: $accent-box-shadow;
-
-              svg {
-                color: $smoke-white;
+              background: var(--primary);
+              border-color: var(--primary);
+              box-shadow: var(--primary-box-shadow) svg {
+                color: var(--smoke-white);
               }
             }
           }
 
           .timeline-content {
             p {
-              color: $dark-dark-text;
+              color: var(--dark-dark-text);
             }
           }
         }

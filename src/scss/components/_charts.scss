@@ -9,15 +9,15 @@
 ========================================================================== */
 
 .apexcharts-title-text {
-  font-family: $font-alt !important;
+  font-family: var(--font-alt) !important;
   font-size: 1rem !important;
   font-weight: 600 !important;
-  color: $dark-text;
+  color: var(--dark-text);
 }
 
 .apexcharts-legend {
   .apexcharts-legend-text {
-    font-family: $font !important;
+    font-family: var(--font) !important;
   }
 }
 
@@ -26,36 +26,36 @@
   .apexcharts-xaxis-texts-g,
   .apexcharts-yaxis-texts-g {
     .apexcharts-text {
-      font-family: $font !important;
+      font-family: var(--font) !important;
     }
   }
 }
 
 .apexcharts-datalabels-group {
   .apexcharts-text {
-    font-family: $font !important;
+    font-family: var(--font) !important;
     font-weight: 600;
   }
 }
 
 .is-dark {
   .apexcharts-ycrosshairs {
-    stroke: $dark-sidebar-light-12 !important;
+    stroke: var(--dark-sidebar-light-12) !important;
   }
 
   .apexcharts-title-text {
-    fill: $dark-dark-text !important;
+    fill: var(--dark-dark-text) !important;
   }
 
   .apexcharts-subtitle-text {
-    fill: $accent;
+    fill: var(--primary);
   }
 
   .apexcharts-yaxis {
     .apexcharts-yaxis-texts-g {
       .apexcharts-text,
       .apexcharts-yaxis-label {
-        fill: $dark-dark-text;
+        fill: var(--dark-dark-text);
       }
     }
   }
@@ -67,21 +67,21 @@
         .apexcharts-xaxis-texts-g {
           .apexcharts-text,
           .apexcharts-xaxis-label {
-            fill: $dark-dark-text;
+            fill: var(--dark-dark-text);
           }
         }
 
         line {
-          color: $dark-sidebar-light-12 !important;
-          stroke: $dark-sidebar-light-12 !important;
+          color: var(--dark-sidebar-light-12) !important;
+          stroke: var(--dark-sidebar-light-12) !important;
         }
       }
 
       .apexcharts-grid {
         .apexcharts-gridlines-horizontal {
           .apexcharts-gridline {
-            color: $dark-sidebar-light-12;
-            stroke: $dark-sidebar-light-12;
+            color: var(--dark-sidebar-light-12);
+            stroke: var(--dark-sidebar-light-12);
           }
         }
       }
@@ -90,40 +90,40 @@
 
   .apexcharts-gridlines-vertical {
     .apexcharts-gridline {
-      color: $dark-sidebar-light-12;
-      stroke: $dark-sidebar-light-12;
+      color: var(--dark-sidebar-light-12);
+      stroke: var(--dark-sidebar-light-12);
     }
   }
 
   .apexcharts-series-markers,
   .apexcharts-series-bubble {
     .apexcharts-marker {
-      color: $dark-sidebar-light-2;
-      stroke: $dark-sidebar-light-2;
+      color: var(--dark-sidebar-light-2);
+      stroke: var(--dark-sidebar-light-2);
     }
   }
 
   .apexcharts-pie-area,
   .apexcharts-pie-slice-0 {
-    color: $dark-sidebar-light-12;
-    stroke: $dark-sidebar-light-12;
+    color: var(--dark-sidebar-light-12);
+    stroke: var(--dark-sidebar-light-12);
   }
 
   .apexcharts-radialbar-area {
-    //color: $dark-sidebar-light-2;
+    //color: var(--dark-sidebar-light-2);
   }
 
   .apexcharts-datalabels-group {
     .apexcharts-text,
     .apexcharts-datalabel-value {
-      fill: $dark-dark-text;
+      fill: var(--dark-dark-text);
     }
   }
 
   .apexcharts-legend {
     .apexcharts-legend-series {
       .apexcharts-legend-text {
-        color: $dark-dark-text !important;
+        color: var(--dark-dark-text) !important;
       }
     }
   }
@@ -131,16 +131,16 @@
   .apexcharts-yaxis,
   .apexcharts-xaxis-inversed {
     line {
-      color: $dark-sidebar-light-12;
-      stroke: $dark-sidebar-light-12;
+      color: var(--dark-sidebar-light-12);
+      stroke: var(--dark-sidebar-light-12);
     }
   }
 
   .apexcharts-radialbar-track,
   .apexcharts-track {
     .apexcharts-radialbar-area {
-      color: $dark-sidebar-light-2;
-      stroke: $dark-sidebar-light-2;
+      color: var(--dark-sidebar-light-2);
+      stroke: var(--dark-sidebar-light-2);
     }
   }
 
@@ -149,26 +149,26 @@
     > polygon,
     > line {
       fill: none !important;
-      color: $dark-sidebar-light-12;
-      stroke: $dark-sidebar-light-12;
+      color: var(--dark-sidebar-light-12);
+      stroke: var(--dark-sidebar-light-12);
     }
   }
 
   .apexcharts-text,
   .apexcharts-yaxis-title-text {
-    fill: $dark-dark-text;
-    font-family: $font;
+    fill: var(--dark-dark-text);
+    font-family: var(--font);
     font-weight: 400;
   }
 
   .apexcharts-data-labels text {
     fill: #fafafa;
-    font-family: $font;
+    font-family: var(--font);
     font-weight: 400;
   }
 
   .apexcharts-bar-area {
-    color: $dark-sidebar-light-12;
+    color: var(--dark-sidebar-light-12);
   }
 
   .apexcharts-slices {
@@ -178,60 +178,60 @@
   }
 
   .apexcharts-tooltip {
-    box-shadow: 2px 2px 6px -4px $dark-sidebar !important;
+    box-shadow: 2px 2px 6px -4px var(--dark-sidebar) !important;
 
     &.apexcharts-theme-light {
-      border: 1px solid $dark-sidebar-light-12;
-      background: $dark-sidebar-light-2;
-      color: $dark-dark-text !important;
+      border: 1px solid var(--dark-sidebar-light-12);
+      background: var(--dark-sidebar-light-2);
+      color: var(--dark-dark-text) !important;
 
       .apexcharts-tooltip-title {
-        background: $dark-sidebar-light-2;
-        border-bottom: 1px solid $dark-sidebar-light-12;
-        color: $dark-dark-text;
+        background: var(--dark-sidebar-light-2);
+        border-bottom: 1px solid var(--dark-sidebar-light-12);
+        color: var(--dark-dark-text);
       }
 
       .apexcharts-tooltip-text-value,
       .apexcharts-tooltip-text-z-value,
       .apexcharts-tooltip-series-group,
       .apexcharts-tooltip-marker {
-        color: $dark-dark-text !important;
+        color: var(--dark-dark-text) !important;
       }
     }
 
     * {
-      font-family: $font;
+      font-family: var(--font);
       color: inherit;
     }
 
     .apexcharts-yaxistooltip-text {
-      color: $dark-dark-text !important;
+      color: var(--dark-dark-text) !important;
     }
   }
 
   .apexcharts-xaxistooltip {
-    border: 1px solid $dark-sidebar-light-12;
-    background: $dark-sidebar-light-2;
-    color: $dark-dark-text !important;
+    border: 1px solid var(--dark-sidebar-light-12);
+    background: var(--dark-sidebar-light-2);
+    color: var(--dark-dark-text) !important;
 
     &.apexcharts-xaxistooltip-bottom::after {
-      border-bottom-color: $dark-sidebar-light-2;
+      border-bottom-color: var(--dark-sidebar-light-2);
     }
 
     &.apexcharts-xaxistooltip-bottom::before {
-      border-bottom-color: $dark-sidebar-light-12;
+      border-bottom-color: var(--dark-sidebar-light-12);
     }
 
     &.apexcharts-xaxistooltip-top::after {
-      border-top-color: $dark-sidebar-light-2;
+      border-top-color: var(--dark-sidebar-light-2);
     }
 
     &.apexcharts-xaxistooltip-top::before {
-      border-top-color: $dark-sidebar-light-12;
+      border-top-color: var(--dark-sidebar-light-12);
     }
 
     * {
-      font-family: $font;
+      font-family: var(--font);
       color: inherit;
     }
   }
@@ -242,103 +242,103 @@
 ========================================================================== */
 
 .bb-title {
-  font-family: $font-alt !important;
+  font-family: var(--font-alt) !important;
   font-size: 1rem !important;
   font-weight: 600 !important;
-  color: $dark-text;
+  color: var(--dark-text);
 }
 
 .bb-axis line,
 .bb-axis .domain {
-  color: $fade-grey-dark-4;
-  stroke: $fade-grey-dark-4;
+  color: var(--fade-grey-dark-4);
+  stroke: var(--fade-grey-dark-4);
 }
 
 .tick {
   text tspan {
-    fill: $light-text-dark-5;
+    fill: var(--light-text-dark-5);
   }
 }
 
 .is-dark {
   .bb-title {
-    fill: $dark-dark-text !important;
+    fill: var(--dark-dark-text) !important;
   }
 
   .bb-axis line,
   .bb-axis .domain {
-    color: $dark-sidebar-light-20 !important;
-    stroke: $dark-sidebar-light-20 !important;
+    color: var(--dark-sidebar-light-20) !important;
+    stroke: var(--dark-sidebar-light-20) !important;
   }
 
   .bb-legend {
     .bb-legend-background rect {
-      fill: $dark-sidebar-dark-2 !important;
-      color: $dark-sidebar-light-12 !important;
-      stroke: $dark-sidebar-light-12 !important;
+      fill: var(--dark-sidebar-dark-2) !important;
+      color: var(--dark-sidebar-light-12) !important;
+      stroke: var(--dark-sidebar-light-12) !important;
     }
 
     .bb-legend-item {
       text {
-        fill: $dark-dark-text;
+        fill: var(--dark-dark-text);
       }
     }
   }
 
   .bb-chart-arc path {
-    color: $dark-sidebar-light-12 !important;
-    stroke: $dark-sidebar-light-12 !important;
+    color: var(--dark-sidebar-light-12) !important;
+    stroke: var(--dark-sidebar-light-12) !important;
   }
 
   .bb-chart-arc .bb-gauge-value {
-    fill: $light-text !important;
+    fill: var(--light-text) !important;
   }
 
   .bb-chart-arcs .bb-chart-arcs-background {
-    color: $dark-sidebar-light-10 !important;
-    fill: $dark-sidebar-dark-2 !important;
-    stroke: $dark-sidebar-dark-2 !important;
+    color: var(--dark-sidebar-light-10) !important;
+    fill: var(--dark-sidebar-dark-2) !important;
+    stroke: var(--dark-sidebar-dark-2) !important;
   }
 
   .bb-chart-arcs-title,
   .bb-gauge-value,
   .bb-axis text {
-    fill: $dark-dark-text;
+    fill: var(--dark-dark-text);
   }
 
   .bb-tooltip {
-    border: 1px solid $dark-sidebar-light-10 !important;
+    border: 1px solid var(--dark-sidebar-light-10) !important;
 
-    //background-color: $white;
+    //background-color: var(--white);
 
     th {
-      border-color: $dark-sidebar-light-10 !important;
-      background-color: $dark-sidebar-dark-2 !important;
+      border-color: var(--dark-sidebar-light-10) !important;
+      background-color: var(--dark-sidebar-dark-2) !important;
       color: #fffdfd !important;
-      font-family: $font !important;
+      font-family: var(--font) !important;
       font-weight: 400 !important;
 
       span {
-        font-family: $font !important;
+        font-family: var(--font) !important;
         font-weight: 400 !important;
         color: #fffdfd !important;
       }
     }
 
     tr {
-      border-color: $dark-sidebar-light-10 !important;
+      border-color: var(--dark-sidebar-light-10) !important;
     }
 
     td {
-      background-color: $dark-sidebar-dark-2 !important;
-      border-color: $dark-sidebar-light-10 !important;
-      color: $light-text !important;
+      background-color: var(--dark-sidebar-dark-2) !important;
+      border-color: var(--dark-sidebar-light-10) !important;
+      color: var(--light-text) !important;
 
       > span,
       > svg {
-        border-color: $dark-sidebar-light-10 !important;
-        fill: $white !important;
-        color: $white !important;
+        border-color: var(--dark-sidebar-light-10) !important;
+        fill: var(--white) !important;
+        color: var(--white) !important;
       }
     }
 

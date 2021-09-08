@@ -52,7 +52,7 @@ Widget Styles
     justify-content: flex-end;
 
     .tag {
-      font-family: $font;
+      font-family: var(--font);
     }
 
     .right-icon {
@@ -63,8 +63,8 @@ Widget Styles
       height: 32px;
       width: 32px;
       min-width: 32px;
-      border-radius: $radius-rounded;
-      color: $light-text-light-12;
+      border-radius: var(--radius-rounded);
+      color: var(--light-text-light-12);
       transition: all 0.3s;
 
       &.has-indicator {
@@ -75,9 +75,9 @@ Widget Styles
           right: 4px;
           height: 10px;
           width: 10px;
-          border-radius: $radius-rounded;
-          background: $secondary;
-          border: 1.8px solid $white;
+          border-radius: var(--radius-rounded);
+          background: var(--secondary);
+          border: 1.8px solid var(--white);
         }
       }
 
@@ -90,9 +90,9 @@ Widget Styles
   }
 
   h3 {
-    font-family: $font-alt;
+    font-family: var(--font-alt);
     font-size: 0.9rem;
-    color: $dark-text;
+    color: var(--dark-text);
     font-weight: 600;
 
     &.is-bigger {
@@ -108,8 +108,8 @@ Widget Styles
     height: 32px;
     width: 32px;
     min-width: 32px;
-    border-radius: $radius-rounded;
-    color: $light-text-light-12;
+    border-radius: var(--radius-rounded);
+    color: var(--light-text-light-12);
     transition: all 0.3s;
 
     svg {
@@ -123,14 +123,14 @@ Widget Styles
 .is-dark {
   .widget-toolbar {
     h3 {
-      color: $dark-dark-text;
+      color: var(--dark-dark-text);
     }
 
     .right {
       .right-icon {
         &.has-indicator {
           &::after {
-            border-color: $dark-sidebar-light-6;
+            border-color: var(--dark-sidebar-light-6);
           }
         }
       }
@@ -191,17 +191,17 @@ Widget Styles
         height: 32px;
         width: 32px;
         min-width: 32px;
-        border-radius: $radius-rounded;
-        color: $light-text-light-12;
+        border-radius: var(--radius-rounded);
+        color: var(--light-text-light-12);
         transition: all 0.3s;
 
         &:hover:not(.is-active) {
-          background: $fade-grey-light-3;
-          color: $light-text;
+          background: var(--fade-grey-light-3);
+          color: var(--light-text);
         }
 
         &.is-active {
-          color: $primary;
+          color: var(--primary);
         }
 
         svg {
@@ -221,14 +221,14 @@ Widget Styles
     .icon-toolbar {
       .toolbar-icon {
         .inner-icon {
-          color: $light-text-dark-12;
+          color: var(--light-text-dark-12);
 
           &:hover:not(.is-active) {
-            background: $dark-sidebar-light-3;
+            background: var(--dark-sidebar-light-3);
           }
 
           &.is-active {
-            color: $accent;
+            color: var(--primary);
           }
         }
       }
@@ -252,17 +252,17 @@ Widget Styles
       font-size: 0.9rem;
 
       span {
-        color: $dark-text;
+        color: var(--dark-text);
         font-weight: 500;
       }
     }
 
     .hashtags {
       padding-top: 8px;
-      font-family: $font;
+      font-family: var(--font);
 
       a {
-        color: $primary;
+        color: var(--primary);
         margin: 0 2px;
       }
     }
@@ -276,14 +276,14 @@ Widget Styles
     .widget-content {
       p {
         span {
-          color: $dark-dark-text;
+          color: var(--dark-dark-text);
         }
       }
     }
 
     .hashtags {
       a {
-        color: $accent;
+        color: var(--primary);
       }
     }
   }
@@ -331,18 +331,18 @@ Widget Styles
 
         span {
           display: block;
-          font-family: $font;
+          font-family: var(--font);
 
           &:first-child {
             font-weight: 700;
-            color: $dark-text;
+            color: var(--dark-text);
             font-size: 1.6rem;
           }
 
           &:nth-child(2) {
             font-size: 0.75rem;
             text-transform: uppercase;
-            color: $light-text;
+            color: var(--light-text);
           }
         }
       }
@@ -358,7 +358,7 @@ Widget Styles
         .date {
           span {
             &:first-child {
-              color: $dark-dark-text;
+              color: var(--dark-dark-text);
             }
           }
         }
@@ -398,7 +398,7 @@ Widget Styles
 
     .progress {
       background-color: #000;
-      background-image: linear-gradient(to right, $primary 30%, #000 30%);
+      background-image: linear-gradient(to right, var(--primary) 30%, #000 30%);
       height: 0.15rem !important;
     }
   }
@@ -412,7 +412,7 @@ Widget Styles
       .progress {
         background-image: linear-gradient(
           to right,
-          $accent 30%,
+          var(--primary) 30%,
           #000 30%
         ) !important;
       }
@@ -438,13 +438,13 @@ Widget Styles
       }
 
       a {
-        font-family: $font;
+        font-family: var(--font);
         display: flex;
         justify-content: space-between;
-        color: $light-text;
+        color: var(--light-text);
 
         &:hover {
-          color: $primary;
+          color: var(--primary);
         }
       }
     }
@@ -457,7 +457,7 @@ Widget Styles
       li {
         a {
           &:hover {
-            color: $accent;
+            color: var(--primary);
           }
         }
       }
@@ -477,9 +477,9 @@ Widget Styles
   }
 
   .calendar {
-    color: $dark-text;
+    color: var(--dark-text);
     font-size: 12px;
-    font-family: $font;
+    font-family: var(--font);
     width: 100%;
     margin-bottom: 5px;
 
@@ -491,7 +491,7 @@ Widget Styles
 
   .calendar thead,
   .calendar th {
-    color: $primary;
+    color: var(--primary);
     font-weight: 600;
     font-size: 10px;
     text-transform: uppercase;
@@ -506,12 +506,12 @@ Widget Styles
   }
 
   .calendar tbody td:hover {
-    background: $fade-grey-light-3;
-    color: $primary;
+    background: var(--fade-grey-light-3);
+    color: var(--primary);
   }
 
   .current-day {
-    color: $primary;
+    color: var(--primary);
     font-weight: 600;
   }
 
@@ -526,21 +526,21 @@ Widget Styles
     @include vuero-card--dark();
 
     .calendar {
-      color: $dark-dark-text;
+      color: var(--dark-dark-text);
 
       thead,
       th {
-        color: $accent;
+        color: var(--primary);
       }
 
       td:hover {
-        background: $dark-sidebar-light-3;
-        color: $accent;
+        background: var(--dark-sidebar-light-3);
+        color: var(--primary);
       }
     }
 
     .current-day {
-      color: $accent;
+      color: var(--primary);
     }
   }
 }
@@ -565,23 +565,23 @@ Widget Styles
   .stat-number {
     span {
       display: block;
-      font-family: $font;
+      font-family: var(--font);
 
       &:first-child {
         font-size: 2rem;
         font-weight: 700;
-        color: $dark-text;
+        color: var(--dark-text);
 
         svg {
-          color: $success;
+          color: var(--success);
         }
       }
 
       &:nth-child(2) {
         font-size: 0.75rem;
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         text-transform: uppercase;
-        color: $light-text;
+        color: var(--light-text);
       }
     }
   }
@@ -598,7 +598,7 @@ Widget Styles
     .stat-number {
       span {
         &:first-child {
-          color: $dark-dark-text;
+          color: var(--dark-dark-text);
         }
       }
     }
@@ -623,12 +623,12 @@ Widget Styles
       .input {
         height: 42px;
         border-radius: 8px;
-        background: $widget-grey;
-        border-color: $widget-grey;
+        background: var(--widget-grey);
+        border-color: var(--widget-grey);
 
         &:focus {
-          border-color: $fade-grey-dark-3;
-          background: $white;
+          border-color: var(--fade-grey-dark-3);
+          background: var(--white);
         }
       }
 
@@ -639,13 +639,13 @@ Widget Styles
         height: 42px;
         width: 42px;
         border-radius: 8px;
-        background: $primary;
+        background: var(--primary);
         display: flex;
         justify-content: center;
         align-items: center;
         border: none;
         outline: none;
-        color: $white;
+        color: var(--white);
         cursor: pointer;
 
         svg {
@@ -662,12 +662,12 @@ Widget Styles
       padding-top: 12px;
 
       a {
-        font-family: $font;
-        color: $light-text;
+        font-family: var(--font);
+        color: var(--light-text);
         font-size: 0.95rem;
 
         &:hover {
-          color: $primary;
+          color: var(--primary);
         }
       }
     }
@@ -681,18 +681,18 @@ Widget Styles
     .field {
       .control {
         .input {
-          background: $dark-sidebar-light-3;
-          border-color: $dark-sidebar-light-12;
+          background: var(--dark-sidebar-light-3);
+          border-color: var(--dark-sidebar-light-12);
         }
 
         .searcv-button {
-          background: $accent;
+          background: var(--primary);
         }
       }
 
       .topics {
         a:hover {
-          color: $accent;
+          color: var(--primary);
         }
       }
     }
@@ -722,14 +722,14 @@ Widget Styles
 
       &:hover {
         .icon-wrap {
-          background: $primary;
-          color: $white;
-          box-shadow: $primary-box-shadow;
+          background: var(--primary);
+          color: var(--white);
+          box-shadow: var(--primary-box-shadow);
         }
 
         .item-meta {
           span {
-            color: $dark-text;
+            color: var(--dark-text);
           }
         }
       }
@@ -742,8 +742,8 @@ Widget Styles
         width: 42px;
         border: none;
         border-radius: 10px;
-        background: $widget-grey-dark-2;
-        color: $light-text-dark-6;
+        background: var(--widget-grey-dark-2);
+        color: var(--light-text-dark-6);
         transition: all 0.3s;
 
         svg {
@@ -757,9 +757,9 @@ Widget Styles
         }
 
         &.is-placeholder {
-          background: $fade-grey-light-2;
-          border: 1px solid $fade-grey-dark-3;
-          color: $light-text;
+          background: var(--fade-grey-light-2);
+          border: 1px solid var(--fade-grey-dark-3);
+          color: var(--light-text);
 
           i {
             font-size: 1.4rem;
@@ -771,8 +771,8 @@ Widget Styles
         margin-left: 12px;
 
         span {
-          font-family: $font;
-          color: $light-text;
+          font-family: var(--font);
+          color: var(--light-text);
         }
       }
     }
@@ -787,21 +787,21 @@ Widget Styles
       .icon-list-item {
         &:hover {
           .icon-wrap {
-            background: $accent !important;
-            box-shadow: $accent-box-shadow;
-            color: $smoke-white;
+            background: var(--primary) !important;
+            box-shadow: var(--primary-box-shadow);
+            color: var(--smoke-white);
           }
 
           .item-meta {
             span {
-              color: $accent !important;
+              color: var(--primary) !important;
             }
           }
         }
 
         .icon-wrap {
-          background: $dark-sidebar-light-3;
-          color: $light-text-light-2;
+          background: var(--dark-sidebar-light-3);
+          color: var(--light-text-light-2);
         }
       }
     }
@@ -835,29 +835,29 @@ Widget Styles
       margin-left: 10px;
       display: flex;
       flex-direction: column;
-      font-family: $font;
+      font-family: var(--font);
 
       > svg {
         height: 20px;
         width: 20px;
         stroke-width: 1.6px;
-        color: $primary;
+        color: var(--primary);
         margin-bottom: 6px;
       }
 
       h4 {
         font-weight: 600;
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         font-size: 0.9rem;
         line-height: 1.3;
-        color: $dark-text;
+        color: var(--dark-text);
       }
 
       .views {
         display: flex;
         align-items: center;
         margin-top: auto;
-        color: $light-text;
+        color: var(--light-text);
 
         svg {
           height: 14px;
@@ -880,11 +880,11 @@ Widget Styles
 
     .widget-meta {
       > svg {
-        color: $accent;
+        color: var(--primary);
       }
 
       h4 {
-        color: $dark-dark-text;
+        color: var(--dark-dark-text);
       }
     }
   }
@@ -903,9 +903,9 @@ Widget Styles
 
   .sender-block {
     h4 {
-      font-family: $font;
+      font-family: var(--font);
       font-weight: 500;
-      color-interpolation-filters: $dark-text;
+      color-interpolation-filters: var(--dark-text);
       font-size: 0.95rem;
     }
 
@@ -919,7 +919,7 @@ Widget Styles
         line-height: 1.2;
 
         span {
-          font-family: $font-alt;
+          font-family: var(--font-alt);
           font-weight: 600;
           font-size: 0.8rem;
         }
@@ -929,16 +929,16 @@ Widget Styles
     .exerpt {
       padding: 10px;
       border-radius: 10px;
-      border: 1px solid $fade-grey-dark-3;
-      font-family: $font;
+      border: 1px solid var(--fade-grey-dark-3);
+      font-family: var(--font);
 
       h5 {
         display: flex;
         align-items: center;
         font-size: 0.8rem;
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         font-weight: 600;
-        color: $primary;
+        color: var(--primary);
         margin-bottom: 6px;
 
         i {
@@ -949,12 +949,12 @@ Widget Styles
 
       p {
         font-size: 0.9rem;
-        color: $dark-text;
+        color: var(--dark-text);
         margin-bottom: 6px;
       }
 
       small {
-        color: $light-text;
+        color: var(--light-text);
       }
     }
   }
@@ -968,22 +968,22 @@ Widget Styles
       .sender-block-inner {
         .meta {
           span {
-            color: $dark-dark-text;
+            color: var(--dark-dark-text);
           }
         }
       }
     }
 
     .exerpt {
-      background: $dark-sidebar-light-4;
-      border-color: $dark-sidebar-light-12;
+      background: var(--dark-sidebar-light-4);
+      border-color: var(--dark-sidebar-light-12);
 
       h5 {
-        color: $accent;
+        color: var(--primary);
       }
 
       p {
-        color: $dark-dark-text;
+        color: var(--dark-dark-text);
       }
     }
   }
@@ -1003,7 +1003,7 @@ Widget Styles
 
     padding: 40px 30px;
     text-align: center;
-    font-family: $font;
+    font-family: var(--font);
 
     .img-container {
       position: relative;
@@ -1036,8 +1036,8 @@ Widget Styles
     h3 {
       font-weight: 600;
       font-size: 0.95rem;
-      font-family: $font-alt;
-      color: $dark-text;
+      font-family: var(--font-alt);
+      color: var(--dark-text);
       margin-bottom: 4px;
     }
 
@@ -1063,8 +1063,8 @@ Widget Styles
     h3 {
       font-weight: 600;
       font-size: 0.95rem;
-      font-family: $font-alt;
-      color: $dark-text;
+      font-family: var(--font-alt);
+      color: var(--dark-text);
     }
 
     p {
@@ -1089,8 +1089,8 @@ Widget Styles
     h3 {
       font-weight: 600;
       font-size: 0.95rem;
-      font-family: $font-alt;
-      color: $dark-text;
+      font-family: var(--font-alt);
+      color: var(--dark-text);
     }
 
     p {
@@ -1107,7 +1107,7 @@ Widget Styles
     &.illustration-widget-v2,
     &.illustration-widget-v3 {
       h3 {
-        color: $dark-dark-text;
+        color: var(--dark-dark-text);
       }
     }
   }
@@ -1130,25 +1130,25 @@ Widget Styles
       align-items: center;
       padding: 10px;
       border-radius: 10px;
-      background: $fade-grey-light-3;
+      background: var(--fade-grey-light-3);
       margin-bottom: 8px;
 
       &.is-orange {
-        background: $h-orange-light-20;
+        background: var(--orange-light-20);
       }
 
       &.is-purple {
-        background: $h-purple-light-38;
+        background: var(--purple-light-38);
       }
 
       &.is-green {
-        background: $success-light-48;
+        background: var(--success-light-48);
       }
 
       .meta {
-        font-family: $font;
+        font-family: var(--font);
         font-size: 0.95rem;
-        color: $dark-text;
+        color: var(--dark-text);
         font-weight: 500;
         margin-left: 10px;
       }
@@ -1162,11 +1162,11 @@ Widget Styles
 
     .creative-list {
       .creative-list-item {
-        background: $dark-sidebar-light-2;
-        border: 1px solid $dark-sidebar-light-12;
+        background: var(--dark-sidebar-light-2);
+        border: 1px solid var(--dark-sidebar-light-12);
 
         .meta {
-          color: $smoke-white;
+          color: var(--smoke-white);
         }
       }
     }
@@ -1203,65 +1203,65 @@ Widget Styles
         width: 32px;
         min-width: 32px;
         border-radius: 8px;
-        color: $light-text-light-12;
+        color: var(--light-text-light-12);
         transition: all 0.3s;
 
         &:hover:not(.is-active) {
-          background: $fade-grey-light-3;
-          color: $light-text;
+          background: var(--fade-grey-light-3);
+          color: var(--light-text);
         }
 
         &.is-rounded {
-          border-radius: $radius-rounded;
+          border-radius: var(--radius-rounded);
         }
 
         &.is-active {
           &.is-facebook {
-            background: $facebook;
-            color: $smoke-white;
-            box-shadow: $facebook-box-shadow;
+            background: var(--facebook);
+            color: var(--smoke-white);
+            box-shadow: var(--facebook-box-shadow);
           }
 
           &.is-linkedin {
-            background: $linkedin;
-            color: $smoke-white;
-            box-shadow: $facebook-box-shadow;
+            background: var(--linkedin);
+            color: var(--smoke-white);
+            box-shadow: var(--facebook-box-shadow);
           }
 
           &.is-twitter {
-            background: $twitter;
-            color: $smoke-white;
-            box-shadow: $twitter-box-shadow;
+            background: var(--twitter);
+            color: var(--smoke-white);
+            box-shadow: var(--twitter-box-shadow);
           }
 
           &.is-instagram {
-            background: $instagram;
-            color: $smoke-white;
-            box-shadow: $angular-box-shadow;
+            background: var(--instagram);
+            color: var(--smoke-white);
+            box-shadow: var(--angular-box-shadow);
           }
 
           &.is-github {
-            background: $github;
-            color: $smoke-white;
-            box-shadow: $github-box-shadow;
+            background: var(--github);
+            color: var(--smoke-white);
+            box-shadow: var(--github-box-shadow);
           }
 
           &.is-invision {
-            background: $invision;
-            color: $smoke-white;
-            box-shadow: $invision-box-shadow;
+            background: var(--invision);
+            color: var(--smoke-white);
+            box-shadow: var(--invision-box-shadow);
           }
 
           &.is-atlassian {
-            background: $linkedin;
-            color: $smoke-white;
-            box-shadow: $linkedin-box-shadow;
+            background: var(--linkedin);
+            color: var(--smoke-white);
+            box-shadow: var(--linkedin-box-shadow);
           }
 
           &.is-bootstrap {
-            background: $h-purple;
-            color: $smoke-white;
-            box-shadow: $h-purple-box-shadow;
+            background: var(--purple);
+            color: var(--smoke-white);
+            box-shadow: var(--purple-box-shadow);
           }
         }
 
@@ -1283,8 +1283,8 @@ Widget Styles
       .social-button {
         .inner-button {
           &:hover:not(.is-active) {
-            background: $dark-sidebar-light-2;
-            color: $light-text;
+            background: var(--dark-sidebar-light-2);
+            color: var(--light-text);
           }
         }
       }
@@ -1305,7 +1305,7 @@ Widget Styles
 
   padding: 40px 30px;
   text-align: center;
-  font-family: $font;
+  font-family: var(--font);
 
   .img-container {
     position: relative;
@@ -1323,16 +1323,16 @@ Widget Styles
       width: 60px;
       bottom: 0;
       right: 2px;
-      border-radius: $radius-rounded;
-      border: 6px solid $white;
+      border-radius: var(--radius-rounded);
+      border: 6px solid var(--white);
     }
   }
 
   h3 {
     font-weight: 600;
-    font-family: $font-alt;
+    font-family: var(--font-alt);
     font-size: 1rem;
-    color: $dark-text;
+    color: var(--dark-text);
     margin-bottom: 4px;
   }
 
@@ -1352,18 +1352,18 @@ Widget Styles
       height: 36px;
       width: 36px;
       min-width: 36px;
-      border-radius: $radius-rounded;
-      color: $light-text-light-12;
+      border-radius: var(--radius-rounded);
+      color: var(--light-text-light-12);
       margin: 0 6px;
-      border: 1px solid $fade-grey-dark-3;
-      box-shadow: $light-box-shadow;
+      border: 1px solid var(--fade-grey-dark-3);
+      box-shadow: var(--light-box-shadow);
       transition: all 0.3s;
 
       &:hover {
-        background: $primary;
-        border-color: $primary;
-        color: $smoke-white;
-        box-shadow: $primary-box-shadow;
+        background: var(--primary);
+        border-color: var(--primary);
+        color: var(--smoke-white);
+        box-shadow: var(--primary-box-shadow);
       }
 
       svg {
@@ -1380,24 +1380,24 @@ Widget Styles
     @include vuero-card--dark();
 
     h3 {
-      color: $dark-dark-text;
+      color: var(--dark-dark-text);
     }
 
     .img-container {
       .badge {
-        border-color: $dark-sidebar-light-6;
+        border-color: var(--dark-sidebar-light-6);
       }
     }
 
     .actions {
       .action {
-        background: $dark-sidebar-light-2;
-        border: 1px solid $dark-sidebar-light-12;
-        color: $dark-dark-text;
+        background: var(--dark-sidebar-light-2);
+        border: 1px solid var(--dark-sidebar-light-12);
+        color: var(--dark-dark-text);
 
         &:hover {
-          border-color: $accent;
-          color: $accent;
+          border-color: var(--primary);
+          color: var(--primary);
         }
       }
     }
@@ -1424,12 +1424,12 @@ Widget Styles
       .input {
         height: 42px;
         border-radius: 8px;
-        background: $widget-grey;
-        border-color: $widget-grey;
+        background: var(--widget-grey);
+        border-color: var(--widget-grey);
 
         &:focus {
-          border-color: $fade-grey-dark-3;
-          background: $white;
+          border-color: var(--fade-grey-dark-3);
+          background: var(--white);
         }
       }
 
@@ -1440,13 +1440,13 @@ Widget Styles
         height: 42px;
         width: 42px;
         border-radius: 8px;
-        background: $primary;
+        background: var(--primary);
         display: flex;
         justify-content: center;
         align-items: center;
         border: none;
         outline: none;
-        color: $white;
+        color: var(--white);
         cursor: pointer;
 
         svg {
@@ -1467,13 +1467,13 @@ Widget Styles
       transition: all 0.3s;
 
       &:hover {
-        background: $fade-grey-light-3;
+        background: var(--fade-grey-light-3);
       }
 
       .meta {
-        font-family: $font-alt;
+        font-family: var(--font-alt);
         font-size: 0.95rem;
-        color: $dark-text;
+        color: var(--dark-text);
         font-weight: 600;
         margin-left: 10px;
       }
@@ -1488,18 +1488,18 @@ Widget Styles
     .field {
       .control {
         .input {
-          background: $dark-sidebar-light-3;
-          border-color: $dark-sidebar-light-12;
+          background: var(--dark-sidebar-light-3);
+          border-color: var(--dark-sidebar-light-12);
         }
 
         .searcv-button {
-          background: $accent;
+          background: var(--primary);
         }
       }
 
       .topics {
         a:hover {
-          color: $accent;
+          color: var(--primary);
         }
       }
     }
@@ -1507,11 +1507,11 @@ Widget Styles
     .avatar-list {
       .avatar-list-item {
         &:hover {
-          background: $dark-sidebar-light-8;
+          background: var(--dark-sidebar-light-8);
         }
 
         .meta {
-          color: $dark-dark-text;
+          color: var(--dark-dark-text);
         }
       }
     }
@@ -1537,7 +1537,7 @@ Widget Styles
 
   .widget-content {
     display: flex;
-    border-bottom: 1px solid $fade-grey-dark-3;
+    border-bottom: 1px solid var(--fade-grey-dark-3);
     margin-bottom: 16px;
     padding-bottom: 16px;
 
@@ -1557,11 +1557,11 @@ Widget Styles
 
     .right {
       width: 60%;
-      font-family: $font;
+      font-family: var(--font);
 
       > h3 {
-        font-family: $font-alt;
-        color: $dark-text;
+        font-family: var(--font-alt);
+        color: var(--dark-text);
         font-weight: 600;
         margin-bottom: 4px;
       }
@@ -1572,7 +1572,7 @@ Widget Styles
         margin-bottom: 4px;
 
         span {
-          color: $primary;
+          color: var(--primary);
         }
       }
 
@@ -1588,7 +1588,7 @@ Widget Styles
             width: 14px;
             margin-right: 4px;
             stroke-width: 1.4px;
-            color: $light-text;
+            color: var(--light-text);
           }
         }
       }
@@ -1606,22 +1606,22 @@ Widget Styles
     @include vuero-card--dark();
 
     .widget-content {
-      border-color: $dark-sidebar-light-12;
+      border-color: var(--dark-sidebar-light-12);
 
       .right {
         h3 {
-          color: $dark-dark-text;
+          color: var(--dark-dark-text);
         }
 
         .company {
           span:first-child {
-            color: $accent;
+            color: var(--primary);
           }
         }
 
         .contact-info {
           span span {
-            color: $dark-dark-text;
+            color: var(--dark-dark-text);
           }
         }
       }
@@ -1658,23 +1658,23 @@ Widget Styles
         height: 36px;
         width: 36px;
         border-radius: 10px;
-        background: $widget-grey;
+        background: var(--widget-grey);
         margin: 0 auto 4px auto;
 
         i {
           font-size: 14px;
-          color: $light-text;
+          color: var(--light-text);
         }
       }
 
       .channel-stats {
         span {
-          font-family: $font;
+          font-family: var(--font);
           display: block;
 
           &:first-child {
             font-weight: 500;
-            color: $light-text;
+            color: var(--light-text);
           }
         }
       }
@@ -1689,8 +1689,8 @@ Widget Styles
     .channels {
       .channel {
         .channel-icon {
-          background: $dark-sidebar-light-2;
-          border: 1px solid $dark-sidebar-light-12;
+          background: var(--dark-sidebar-light-2);
+          border: 1px solid var(--dark-sidebar-light-12);
         }
       }
     }
@@ -1720,15 +1720,15 @@ Widget Styles
 
         span {
           display: block;
-          font-family: $font;
+          font-family: var(--font);
 
           &:first-child {
             font-size: 0.9rem;
-            color: $light-text;
+            color: var(--light-text);
           }
 
           &:nth-child(2) {
-            color: $dark-text;
+            color: var(--dark-text);
             margin-top: auto;
             font-weight: 600;
             font-size: 1.2rem;
@@ -1757,7 +1757,7 @@ Widget Styles
         .meta {
           span {
             &:nth-child(2) {
-              color: $accent;
+              color: var(--primary);
             }
           }
         }
