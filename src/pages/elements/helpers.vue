@@ -99,51 +99,6 @@ useHead({
                     </td>
                   </tr>
                   <tr>
-                    <th scope="rowgroup" rowspan="4" class="category">
-                      <strong>Colors</strong>
-                    </th>
-                    <td class="name">Text (<code>text-*</code>)</td>
-                    <td class="description">
-                      Sets a color on the target element following the
-                      <code>color-*</code> pattern, where the first
-                      <code>*</code> stands for the color variable name. Check
-                      the Vuero colors to be able to use this helper properly.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="name">
-                      Hover color (<code>hover-text-*</code>)
-                    </td>
-                    <td class="description">
-                      Sets a color on the target element with hover state
-                      following the <code>color-*</code> pattern, where the
-                      first <code>*</code> stands for the color variable name.
-                      Check the Vuero colors to be able to use this helper
-                      properly.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="name">background (<code>bg-*</code>)</td>
-                    <td class="description">
-                      Sets a background color on the target element following
-                      the <code>color-*</code> pattern, where the first
-                      <code>*</code> stands for the color variable name. Check
-                      the Vuero colors to be able to use this helper properly.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="name">
-                      hover background (<code>hover-bg-*</code>)
-                    </td>
-                    <td class="description">
-                      Sets a background color on the target element with hover
-                      state following the <code>color-*</code> pattern, where
-                      the first <code>*</code> stands for the color variable
-                      name. Check the Vuero colors to be able to use this helper
-                      properly.
-                    </td>
-                  </tr>
-                  <tr>
                     <th scope="rowgroup" rowspan="3" class="category">
                       <strong>States</strong>
                     </th>

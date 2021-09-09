@@ -7,13 +7,13 @@ See code for more details about usage.
 
 ```vue
 <template>
-  <V-Flex column-gap="3px">
+  <V-Flex alignItems="flex-end" columnGap=".25rem">
     <V-IconWrap icon="feather:star" size="small" />
     <V-IconWrap icon="feather:star" />
     <V-IconWrap icon="feather:star" size="medium" />
     <V-IconWrap icon="feather:star" size="large" />
   </V-Flex>
-  <V-Flex column-gap="3px">
+  <V-Flex alignItems="flex-end" columnGap=".25rem">
     <V-IconWrap icon="feather:star" has-large-icon size="small" />
     <V-IconWrap icon="feather:star" has-large-icon />
     <V-IconWrap icon="feather:star" has-large-icon size="medium" />
@@ -27,13 +27,13 @@ See code for more details about usage.
 <!--example-->
 
 <div>
-  <V-Flex column-gap="3px">
+  <V-Flex alignItems="flex-end" columnGap=".25rem">
     <V-IconWrap icon="feather:star" size="small" />
     <V-IconWrap icon="feather:star" />
     <V-IconWrap icon="feather:star" size="medium" />
     <V-IconWrap icon="feather:star" size="large" />
   </V-Flex>
-  <V-Flex column-gap="3px">
+  <V-Flex alignItems="flex-end" columnGap=".25rem">
     <V-IconWrap icon="feather:star" has-large-icon size="small" />
     <V-IconWrap icon="feather:star" has-large-icon />
     <V-IconWrap icon="feather:star" has-large-icon size="medium" />

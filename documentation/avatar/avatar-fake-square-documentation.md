@@ -9,12 +9,14 @@ See the code examples for more details about usage.
 
 ```vue
 <template>
-  <V-Avatar initials="CT" size="small" squared />
-  <V-Avatar initials="CT" squared />
-  <V-Avatar initials="CT" size="medium" squared />
-  <V-Avatar initials="CT" size="large" squared />
-  <V-Avatar initials="CT" size="big" squared />
-  <V-Avatar initials="CT" size="xl" squared />
+  <V-Flex alignItems="flex-end" columnGap=".25rem">
+    <V-Avatar initials="CT" size="small" squared />
+    <V-Avatar initials="CT" squared />
+    <V-Avatar initials="CT" size="medium" squared />
+    <V-Avatar initials="CT" size="large" squared />
+    <V-Avatar initials="CT" size="big" squared />
+    <V-Avatar initials="CT" size="xl" squared />
+  </V-Flex>
 </template>
 ```
 
@@ -22,11 +24,13 @@ See the code examples for more details about usage.
 
 <!--example-->
 
-<V-Avatar initials="CT" size="small" squared />
-<V-Avatar initials="CT" squared />
-<V-Avatar initials="CT" size="medium" squared />
-<V-Avatar initials="CT" size="large" squared />
-<V-Avatar initials="CT" size="big" squared />
-<V-Avatar initials="CT" size="xl" squared />
+<V-Flex alignItems="flex-end" columnGap=".25rem">
+  <V-Avatar initials="CT" size="small" squared />
+  <V-Avatar initials="CT" squared />
+  <V-Avatar initials="CT" size="medium" squared />
+  <V-Avatar initials="CT" size="large" squared />
+  <V-Avatar initials="CT" size="big" squared />
+  <V-Avatar initials="CT" size="xl" squared />
+</V-Flex>
 
 <!--/example-->

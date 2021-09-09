@@ -7,12 +7,14 @@ when no valid URL is provided for the `picture` prop.
 
 ```vue
 <template>
-  <V-Avatar picture="no-file.jpg" size="small" />
-  <V-Avatar picture="no-file.jpg" />
-  <V-Avatar picture="no-file.jpg" size="medium" />
-  <V-Avatar picture="no-file.jpg" size="large" />
-  <V-Avatar picture="no-file.jpg" size="big" />
-  <V-Avatar picture="no-file.jpg" size="xl" />
+  <V-Flex alignItems="flex-end" columnGap=".25rem">
+    <V-Avatar picture="no-file.jpg" size="small" />
+    <V-Avatar picture="no-file.jpg" />
+    <V-Avatar picture="no-file.jpg" size="medium" />
+    <V-Avatar picture="no-file.jpg" size="large" />
+    <V-Avatar picture="no-file.jpg" size="big" />
+    <V-Avatar picture="no-file.jpg" size="xl" />
+  </V-Flex>
 </template>
 ```
 
@@ -20,11 +22,13 @@ when no valid URL is provided for the `picture` prop.
 
 <!--example-->
 
-<V-Avatar picture="no-file.jpg" size="small" />
-<V-Avatar picture="no-file.jpg" />
-<V-Avatar picture="no-file.jpg" size="medium" />
-<V-Avatar picture="no-file.jpg" size="large" />
-<V-Avatar picture="no-file.jpg" size="big" />
-<V-Avatar picture="no-file.jpg" size="xl" />
+<V-Flex alignItems="flex-end" columnGap=".25rem">
+  <V-Avatar picture="no-file.jpg" size="small" />
+  <V-Avatar picture="no-file.jpg" />
+  <V-Avatar picture="no-file.jpg" size="medium" />
+  <V-Avatar picture="no-file.jpg" size="large" />
+  <V-Avatar picture="no-file.jpg" size="big" />
+  <V-Avatar picture="no-file.jpg" size="xl" />
+</V-Flex>
 
 <!--/example-->

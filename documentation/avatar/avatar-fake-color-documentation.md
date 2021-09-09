@@ -10,7 +10,29 @@ Supports dark mode.
 
 ```vue
 <template>
-  <V-Avatar initials="CT" size="medium" />
+  <V-Flex alignItems="flex-end" columnGap=".25rem">
+    <V-Avatar initials="CT" size="medium" />
+    <V-Avatar initials="CT" size="medium" color="primary" />
+    <V-Avatar initials="CT" size="medium" color="success" />
+    <V-Avatar initials="CT" size="medium" color="info" />
+    <V-Avatar initials="CT" size="medium" color="warning" />
+    <V-Avatar initials="CT" size="medium" color="danger" />
+    <V-Avatar initials="CT" size="medium" color="h-purple" />
+    <V-Avatar initials="CT" size="medium" color="h-orange" />
+    <V-Avatar initials="CT" size="medium" color="h-blue" />
+    <V-Avatar initials="CT" size="medium" color="h-green" />
+    <V-Avatar initials="CT" size="medium" color="h-red" />
+    <V-Avatar initials="CT" size="medium" color="h-yellow" />
+  </V-Flex>
+</template>
+```
+
+<!--/code-->
+
+<!--example-->
+
+<V-Flex alignItems="flex-end" columnGap=".25rem">
+  <V-Avatar initials="CT" size="medium"/>
   <V-Avatar initials="CT" size="medium" color="primary" />
   <V-Avatar initials="CT" size="medium" color="success" />
   <V-Avatar initials="CT" size="medium" color="info" />
@@ -22,24 +44,6 @@ Supports dark mode.
   <V-Avatar initials="CT" size="medium" color="h-green" />
   <V-Avatar initials="CT" size="medium" color="h-red" />
   <V-Avatar initials="CT" size="medium" color="h-yellow" />
-</template>
-```
-
-<!--/code-->
-
-<!--example-->
-
-<V-Avatar initials="CT" size="medium"/>
-<V-Avatar initials="CT" size="medium" color="primary" />
-<V-Avatar initials="CT" size="medium" color="success" />
-<V-Avatar initials="CT" size="medium" color="info" />
-<V-Avatar initials="CT" size="medium" color="warning" />
-<V-Avatar initials="CT" size="medium" color="danger" />
-<V-Avatar initials="CT" size="medium" color="h-purple" />
-<V-Avatar initials="CT" size="medium" color="h-orange" />
-<V-Avatar initials="CT" size="medium" color="h-blue" />
-<V-Avatar initials="CT" size="medium" color="h-green" />
-<V-Avatar initials="CT" size="medium" color="h-red" />
-<V-Avatar initials="CT" size="medium" color="h-yellow" />
+</V-Flex>
 
 <!--/example-->

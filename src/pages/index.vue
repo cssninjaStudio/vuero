@@ -60,7 +60,7 @@ useHead({
             </h1>
             <h3 class="subtitle is-4 is-light">
               Premium Webapp UI Kit.
-              <span class="tag is-primary is-rounded">1.3</span>
+              <span class="tag is-primary is-rounded">1.4</span>
             </h3>
 
             <img
