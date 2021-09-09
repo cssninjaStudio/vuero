@@ -62,8 +62,8 @@
   // warning HSL (#faae42) // hsl(35, 95%, 62%)
   @include colorHsl('warning', 35, 95%, 62%);
 
-  // warning HSL (#e62965) // hsl(341, 79%, 53%)
-  @include colorHsl('warning', 341, 79%, 53%);
+  // danger HSL (#e62965) // hsl(341, 79%, 53%)
+  @include colorHsl('danger', 341, 79%, 53%);
 
   // smoke-white HSL (#fcfcfc) // hsl(0, 0%, 99%)
   @include colorHsl('smoke-white', 0, 0%, 99%);

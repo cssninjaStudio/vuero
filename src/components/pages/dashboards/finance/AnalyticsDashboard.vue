@@ -349,6 +349,18 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
 @import '../../../../scss/pages/generic/_widgets-lists.scss';
 
 .analytics-dashboard {
+  .text-h-green {
+    color: var(--green);
+  }
+
+  .text-h-red {
+    color: var(--red);
+  }
+
+  .text-widget {
+    color: var(--widget-grey);
+  }
+
   .dashboard-tile {
     @include vuero-s-card();
 

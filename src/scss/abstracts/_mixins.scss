@@ -14,6 +14,7 @@
   &.is-primary {
     background: var(--primary);
     border-color: var(--primary);
+    color: var(--primary--color-invert);
 
     .title,
     .subtitle,
@@ -132,11 +133,6 @@
 @mixin vuero-card--dark() {
   background: var(--dark-sidebar-light-6);
   border-color: var(--dark-sidebar-light-12);
-
-  &.is-primary {
-    background: var(--primary);
-    border-color: var(--primary);
-  }
 
   .v-avatar {
     img {

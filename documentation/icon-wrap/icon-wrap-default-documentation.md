@@ -8,7 +8,7 @@ See code for more details about usage.
 
 ```vue
 <template>
-  <V-IconWraps>
+  <V-Flex column-gap="3px">
     <V-IconWrap icon="feather:star" />
     <V-IconWrap
       icon="feather:help-circle"
@@ -20,7 +20,7 @@ See code for more details about usage.
     <V-IconWrap icon="feather:code" />
     <V-IconWrap picture="/demo/avatars/8.jpg" />
     <V-IconWrap picture="/demo/avatars/13.jpg" />
-  </V-IconWraps>
+  </V-Flex>
 </template>
 ```
 
@@ -29,7 +29,7 @@ See code for more details about usage.
 <!--example-->
 
 <div>
-  <V-IconWraps>
+  <V-Flex column-gap="3px">
     <V-IconWrap icon="feather:star" color="warning" />
     <V-IconWrap icon="feather:code" />
     <V-IconWrap icon="feather:x" color="danger" has-large-icon />
@@ -41,7 +41,7 @@ See code for more details about usage.
     />
     <V-IconWrap picture="/demo/avatars/8.jpg" />
     <V-IconWrap picture="/demo/avatars/13.jpg" />
-  </V-IconWraps>
+  </V-Flex>
 </div>
 
 <!--/example-->

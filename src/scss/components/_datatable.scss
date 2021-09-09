@@ -40,7 +40,7 @@
         &:hover {
           background: var(--primary);
           border-color: var(--primary);
-          color: var(--smoke-white);
+          color: var(--primary--color-invert);
         }
       }
     }
@@ -380,7 +380,7 @@
           a {
             background: var(--primary);
             box-shadow: var(--primary-box-shadow);
-            color: var(--white);
+            color: var(--primary--color-invert);
           }
         }
 

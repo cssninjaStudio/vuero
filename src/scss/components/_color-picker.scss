@@ -1,0 +1,176 @@
+.vacp-color-picker {
+  --vacp-focus-color: hsla(
+    var(--primary-h),
+    var(--primary-s),
+    var(--primary-l),
+    0.6
+  ) !important;
+  --range-slider-focus: hsla(
+    var(--primary-grey-h),
+    var(--primary-grey-s),
+    var(--primary-grey-l),
+    0.6
+  ) !important;
+
+  display: flex !important;
+  flex-direction: column;
+  max-width: 100% !important;
+
+  &.hide-alpha {
+    .vacp-range-input-label--alpha,
+    [id*='rgb-a'],
+    [id*='hwb-a'],
+    [id*='hsl-a'] {
+      display: none !important;
+    }
+  }
+  &.hide-copy {
+    .vacp-copy-button {
+      display: none !important;
+    }
+  }
+
+  :focus {
+    outline: none !important;
+  }
+  .vacp-format-switch-button {
+    border-radius: var(--radius);
+  }
+  .vacp-color-inputs {
+    align-items: flex-end;
+  }
+  .vacp-color-input {
+    border-radius: var(--radius);
+    border-color: #ccc !important;
+
+    &:focus {
+      border-color: var(--primary) !important;
+      box-shadow: 0 0 0 2px var(--vacp-focus-color);
+    }
+  }
+  .vacp-color-space-thumb {
+    box-shadow: 0 0 0 2px #0002;
+  }
+  .vacp-range-input {
+    border-color: #ccc !important;
+    border-radius: var(--radius);
+    outline: none !important;
+
+    &:focus::-moz-range-track {
+      border: 1px solid var(--primary-grey);
+      outline: none;
+      box-shadow: 0 0 0 2px var(--range-slider-focus);
+    }
+    &:focus::-webkit-slider-runnable-track {
+      border: 1px solid var(--primary-grey);
+      outline: none;
+      box-shadow: 0 0 0 2px var(--range-slider-focus);
+    }
+    &:focus::-ms-track {
+      border: 1px solid var(--primary-grey);
+      outline: none;
+      box-shadow: 0 0 0 2px var(--range-slider-focus);
+    }
+
+    &::-moz-range-thumb {
+      box-sizing: border-box;
+      width: var(--vacp-slider-thumb-size);
+      height: var(--vacp-slider-thumb-size);
+      border: 3px solid #fff;
+      border-radius: 50%;
+      background-color: transparent;
+      box-shadow: 0 0 0 2px #0002;
+      transform: rotate(0);
+    }
+
+    &::-webkit-slider-thumb {
+      width: var(--vacp-slider-thumb-size);
+      height: var(--vacp-slider-thumb-size);
+      margin-top: calc(
+        (var(--vacp-slider-track-height) - var(--vacp-slider-thumb-size)) / 2
+      );
+      border: 3px solid #fff;
+      border-radius: 50%;
+      background-color: transparent;
+      box-shadow: 0 0 0 2px #0002;
+      transform: rotate(0);
+    }
+
+    &::-ms-thumb {
+      width: var(--vacp-slider-thumb-size);
+      height: var(--vacp-slider-thumb-size);
+      margin-top: 0;
+      border: 3px solid #fff;
+      border-radius: 50%;
+      background-color: transparent;
+      box-shadow: 0 0 0 2px #0002;
+      transform: rotate(0);
+    }
+  }
+}
+
+.is-dark {
+  .vacp-color-picker {
+    --range-slider-focus: hsla(
+      var(--primary-grey-h),
+      var(--primary-grey-s),
+      var(--primary-grey-l) + 10,
+      1
+    ) !important;
+
+    background: var(--dark-sidebar-light-6);
+
+    .vacp-color-input {
+      background-color: var(--dark-sidebar-light-2);
+      border-color: var(--dark-sidebar-light-12) !important;
+      color: var(--dark-dark-text);
+    }
+    .vacp-format-switch-button {
+      background-color: var(--dark-sidebar-light-2);
+      border-color: var(--dark-sidebar-light-12) !important;
+      color: var(--dark-dark-text);
+
+      &:hover {
+        background-color: var(--dark-sidebar) !important;
+      }
+    }
+
+    .vacp-range-input--alpha {
+      --vacp-tiled-background-image: linear-gradient(
+          45deg,
+          var(--dark-sidebar-light-8) 25%,
+          transparent 25%,
+          transparent 75%,
+          var(--dark-sidebar-light-8) 75%,
+          var(--dark-sidebar-light-8)
+        ),
+        linear-gradient(
+          45deg,
+          var(--dark-sidebar-light-8) 25%,
+          transparent 25%,
+          transparent 75%,
+          var(--dark-sidebar-light-8) 75%,
+          var(--dark-sidebar-light-8)
+        );
+
+      background-color: var(--dark-sidebar);
+      background-image: var(--vacp-tiled-background-image);
+    }
+
+    .vacp-range-input {
+      border-color: #ccc !important;
+      border-radius: var(--radius);
+      outline: none !important;
+
+      &:focus::-moz-range-track {
+        border: 1px solid var(--range-slider-focus);
+      }
+      &:focus::-webkit-slider-runnable-track {
+        border: 1px solid var(--range-slider-focus);
+      }
+      &:focus::-ms-track {
+        border: 1px solid var(--range-slider-focus);
+      }
+    }
+  }
+}

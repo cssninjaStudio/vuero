@@ -7,7 +7,7 @@ See code for more details about usage.
 
 ```vue
 <template>
-  <V-IconWraps>
+  <V-Flex column-gap="3px">
     <V-IconWrap icon="feather:star" color="primary" />
     <V-IconWrap icon="feather:star" color="secondary" />
     <V-IconWrap icon="feather:star" color="success" />
@@ -17,8 +17,8 @@ See code for more details about usage.
     <V-IconWrap icon="feather:star" color="danger" />
     <V-IconWrap icon="feather:star" color="black" />
     <V-IconWrap icon="feather:star" color="white" />
-  </V-IconWraps>
-  <V-IconWraps>
+  </V-Flex>
+  <V-Flex class="mt-2" column-gap="3px">
     <V-IconWrap icon="feather:star" has-background color="primary" />
     <V-IconWrap icon="feather:star" has-background color="secondary" />
     <V-IconWrap icon="feather:star" has-background color="success" />
@@ -28,7 +28,7 @@ See code for more details about usage.
     <V-IconWrap icon="feather:star" has-background color="danger" />
     <V-IconWrap icon="feather:star" has-background color="black" />
     <V-IconWrap icon="feather:star" has-background color="white" />
-  </V-IconWraps>
+  </V-Flex>
 </template>
 ```
 
@@ -37,7 +37,7 @@ See code for more details about usage.
 <!--example-->
 
 <div>
-  <V-IconWraps>
+  <V-Flex column-gap="3px">
     <V-IconWrap icon="feather:star" color="primary" />
     <V-IconWrap icon="feather:star" color="secondary" />
     <V-IconWrap icon="feather:star" color="success" />
@@ -47,8 +47,8 @@ See code for more details about usage.
     <V-IconWrap icon="feather:star" color="danger" />
     <V-IconWrap icon="feather:star" color="black" />
     <V-IconWrap icon="feather:star" color="white" />
-  </V-IconWraps>
-  <V-IconWraps>
+  </V-Flex>
+  <V-Flex class="mt-2" column-gap="3px">
     <V-IconWrap icon="feather:star" has-background color="primary" />
     <V-IconWrap icon="feather:star" has-background color="secondary" />
     <V-IconWrap icon="feather:star" has-background color="success" />
@@ -58,7 +58,7 @@ See code for more details about usage.
     <V-IconWrap icon="feather:star" has-background color="danger" />
     <V-IconWrap icon="feather:star" has-background color="black" />
     <V-IconWrap icon="feather:star" has-background color="white" />
-  </V-IconWraps>
+  </V-Flex>
 </div>
 
 <!--/example-->

@@ -7,7 +7,7 @@ See code for more details about usage.
 
 ```vue
 <template>
-  <V-IconWraps>
+  <V-Flex column-gap="3px">
     <V-IconWrap
       v-tooltip.rounded="'Iam a rounded tooltip'"
       icon="feather:help-circle"
@@ -15,7 +15,7 @@ See code for more details about usage.
       has-background
       has-large-icon
     />
-  </V-IconWraps>
+  </V-Flex>
 </template>
 ```
 
@@ -24,7 +24,7 @@ See code for more details about usage.
 <!--example-->
 
 <div>
-  <V-IconWraps>
+  <V-Flex column-gap="3px">
     <V-IconWrap
       v-tooltip.rounded="'Iam a rounded tooltip'"
       icon="feather:help-circle"
@@ -37,7 +37,7 @@ See code for more details about usage.
       icon="bi:question-lg"
       color="info"
     />
-  </V-IconWraps>
+  </V-Flex>
 </div>
 
 <!--/example-->

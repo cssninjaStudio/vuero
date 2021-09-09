@@ -5,4 +5,7 @@
   --primary-h: 100; /* Hue        */
   --primary-s: 43%; /* Saturation */
   --primary-l: 62%; /* Lightness  */
+
+  // override dark-text dark HSL (#a2a5b9) // hsl(232, 14%, 68%)
+  @include colorHsl('dark-text', 232, 14%, 68%);
 }

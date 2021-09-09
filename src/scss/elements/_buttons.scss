@@ -26,6 +26,7 @@
     border: 1px solid var(--placeholder);
     transition: all 0.3s;
     cursor: pointer;
+    box-shadow: none !important;
 
     &.is-rounded {
       border-radius: 500px;

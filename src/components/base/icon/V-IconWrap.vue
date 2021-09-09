@@ -33,7 +33,7 @@ const props = withDefaults(
     picture: undefined,
     color: undefined,
     size: undefined,
-    dark: undefined,
+    dark: '3',
   }
 )
 

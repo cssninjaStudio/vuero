@@ -1,7 +1,7 @@
 module.exports = {
   extends: ['stylelint-config-standard', 'stylelint-config-prettier'],
   plugins: ['stylelint-scss'],
-  
+
   rules: {
     'font-family-no-missing-generic-family-keyword': null,
     'at-rule-no-unknown': null,
@@ -11,8 +11,14 @@ module.exports = {
     'selector-pseudo-element-no-unknown': [
       true,
       {
-        ignorePseudoElements: ["/^v-deep/"]
-      }
+        ignorePseudoElements: ['/^v-deep/'],
+      },
+    ],
+    'value-keyword-case': [
+      'lower',
+      {
+        ignoreFunctions: ['v-bind'],
+      },
     ],
   },
 }

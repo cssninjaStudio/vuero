@@ -246,7 +246,7 @@
 
         .is-string {
           code {
-            color: var(--primary);
+            color: var(--red);
           }
         }
         .is-function {
@@ -257,18 +257,18 @@
         .is-number,
         .is-boolean {
           code {
-            color: #678eaf;
+            color: var(--orange);
           }
         }
         .is-null,
         .is-undefined {
           code {
-            color: #a04900;
+            color: var(--light-blue);
           }
         }
         .is-array {
           code {
-            color: var(--dark-text);
+            color: var(--dark);
           }
         }
       }
@@ -276,105 +276,17 @@
   }
 }
 
-.color-card {
-  @include vuero-s-card();
-
-  display: flex;
-  align-items: center;
-
-  .color-dot {
-    height: 40px;
-    width: 40px;
-    border-radius: var(--radius-rounded);
-
-    &.is-primary {
-      background: var(--primary);
-    }
-
-    &.is-accent {
-      background: var(--primary);
-    }
-
-    &.is-success {
-      background: var(--success);
-    }
-
-    &.is-info {
-      background: var(--info);
-    }
-
-    &.is-warning {
-      background: var(--warning);
-    }
-
-    &.is-danger {
-      background: var(--danger);
-    }
-
-    &.is-dark {
-      background: var(--dark-sidebar);
-    }
-
-    &.is-fade-grey {
-      background: var(--fade-grey);
-    }
-
-    &.is-muted-grey {
-      background: var(--muted-grey);
-    }
-
-    &.is-placeholder {
-      background: var(--placeholder);
-    }
-
-    &.is-dark-text {
-      background: var(--dark-text);
-    }
-
-    &.is-light-text {
-      background: var(--light-text);
-    }
-
-    &.is-h-purple {
-      background: var(--purple);
-    }
-
-    &.is-h-blue {
-      background: var(--blue);
-    }
-
-    &.is-h-green {
-      background: var(--green);
-    }
-
-    &.is-h-red {
-      background: var(--red);
-    }
-
-    &.is-h-yellow {
-      background: var(--yellow);
-    }
-
-    &.is-h-orange {
-      background: var(--orange);
-    }
-  }
-
-  .meta {
-    margin-left: 12px;
-
-    span {
-      display: block;
-      font-family: var(--font-alt);
-
-      &:first-child {
-        color: var(--dark-text);
-        font-weight: 600;
-      }
-
-      &:nth-child(2) {
-        font-size: 0.9rem;
-        color: var(--light-text);
+.is-dark {
+  .demo-card {
+    .content {
+      table {
+        td {
+          .is-array {
+            code {
+              color: var(--primary-grey-light-10);
+            }
+          }
+        }
       }
     }
   }
@@ -474,18 +386,6 @@
 
         svg {
           color: var(--primary);
-        }
-      }
-    }
-  }
-
-  .color-card {
-    @include vuero-card--dark();
-
-    .meta {
-      span {
-        &:first-child {
-          color: var(--dark-dark-text);
         }
       }
     }

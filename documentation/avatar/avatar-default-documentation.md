@@ -9,12 +9,14 @@ See code for more details about usage.
 
 ```vue
 <template>
-  <V-Avatar picture="/demo/avatars/7.jpg" size="small" />
-  <V-Avatar picture="/demo/avatars/8.jpg" />
-  <V-Avatar picture="/demo/avatars/11.jpg" size="medium" />
-  <V-Avatar picture="/demo/avatars/21.jpg" size="large" />
-  <V-Avatar picture="/demo/avatars/13.jpg" size="big" />
-  <V-Avatar picture="/demo/avatars/5.jpg" size="xl" />
+  <V-Flex>
+    <V-Avatar picture="/demo/avatars/7.jpg" size="small" />
+    <V-Avatar picture="/demo/avatars/8.jpg" />
+    <V-Avatar picture="/demo/avatars/11.jpg" size="medium" />
+    <V-Avatar picture="/demo/avatars/21.jpg" size="large" />
+    <V-Avatar picture="/demo/avatars/13.jpg" size="big" />
+    <V-Avatar picture="/demo/avatars/5.jpg" size="xl" />
+  </V-Flex>
 </template>
 ```
 
@@ -22,11 +24,13 @@ See code for more details about usage.
 
 <!--example-->
 
-<V-Avatar picture="/demo/avatars/7.jpg" size="small" />
-<V-Avatar picture="/demo/avatars/8.jpg" />
-<V-Avatar picture="/demo/avatars/11.jpg" size="medium" />
-<V-Avatar picture="/demo/avatars/21.jpg" size="large" />
-<V-Avatar picture="/demo/avatars/13.jpg" size="big" />
-<V-Avatar picture="/demo/avatars/5.jpg" size="xl" />
+<V-Flex>
+  <V-Avatar picture="/demo/avatars/7.jpg" size="small" />
+  <V-Avatar picture="/demo/avatars/8.jpg" />
+  <V-Avatar picture="/demo/avatars/11.jpg" size="medium" />
+  <V-Avatar picture="/demo/avatars/21.jpg" size="large" />
+  <V-Avatar picture="/demo/avatars/13.jpg" size="big" />
+  <V-Avatar picture="/demo/avatars/5.jpg" size="xl" />
+</V-Flex>
 
 <!--/example-->

@@ -8,20 +8,20 @@ See code for more details about usage.
 
 ```vue
 <template>
-  <V-IconWraps>
+  <V-Flex column-gap="3px">
     <V-IconWrap icon="feather:star" dark="1" />
     <V-IconWrap icon="feather:star" dark="2" />
     <V-IconWrap icon="feather:star" />
     <V-IconWrap icon="feather:star" dark="4" />
     <V-IconWrap icon="feather:star" dark="5" />
     <V-IconWrap icon="feather:star" dark="6" />
-  </V-IconWraps>
-  <V-IconWraps>
+  </V-Flex>
+  <V-Flex class="mt-2" column-gap="3px">
     <V-IconWrap icon="feather:star" dark="1" dark-card-bordered />
     <V-IconWrap icon="feather:star" dark="1" />
     <V-IconWrap icon="feather:star" dark="6" dark-card-bordered />
     <V-IconWrap icon="feather:star" dark="6" />
-  </V-IconWraps>
+  </V-Flex>
 </template>
 ```
 
@@ -30,20 +30,20 @@ See code for more details about usage.
 <!--example-->
 
 <div>
-  <V-IconWraps>
+  <V-Flex column-gap="3px">
     <V-IconWrap icon="feather:star" dark="1" />
     <V-IconWrap icon="feather:star" dark="2" />
     <V-IconWrap icon="feather:star" />
     <V-IconWrap icon="feather:star" dark="4" />
     <V-IconWrap icon="feather:star" dark="5" />
     <V-IconWrap icon="feather:star" dark="6" />
-  </V-IconWraps>
-  <V-IconWraps>
+  </V-Flex>
+  <V-Flex class="mt-2" column-gap="3px">
     <V-IconWrap icon="feather:star" dark="1" dark-card-bordered />
     <V-IconWrap icon="feather:star" dark="1" />
     <V-IconWrap icon="feather:star" dark="6" dark-card-bordered />
     <V-IconWrap icon="feather:star" dark="6" />
-  </V-IconWraps>
+  </V-Flex>
 </div>
 
 <!--/example-->

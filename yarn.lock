@@ -11160,6 +11160,11 @@ vt-pbf@^3.1.1:
     "@mapbox/vector-tile" "^1.3.1"
     pbf "^3.2.1"
 
+vue-accessible-color-picker@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/vue-accessible-color-picker/-/vue-accessible-color-picker-3.0.0.tgz#63d180c99e9184606f97d6f7d27d180bcb8f152d"
+  integrity sha512-aaqVuUDyE066wZEl3PKY57dAbTnQ0Lp9IIfYWyDg+Dih/nLzA2PshXHTzcZJFyvsISQQ0Yt9y/xB9UHBV80a5g==
+
 vue-demi@*:
   version "0.11.3"
   resolved "https://registry.yarnpkg.com/vue-demi/-/vue-demi-0.11.3.tgz#dd7495b92b495ecfa35675bf024b1358a7add150"
