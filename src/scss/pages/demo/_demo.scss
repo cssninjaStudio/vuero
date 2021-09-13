@@ -122,6 +122,25 @@
       max-width: 540px;
     }
 
+    .demo-icon-search {
+      .input {
+        min-width: 260px;
+
+        &:focus {
+          min-width: 350px;
+        }
+      }
+    }
+
+    &.is-scrolling {
+      .demo-icon-search {
+        z-index: 10;
+        position: sticky;
+        top: 0;
+        left: 0;
+      }
+    }
+
     .demo-icon-list {
       display: flex;
       flex-wrap: wrap;
