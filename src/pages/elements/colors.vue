@@ -58,7 +58,7 @@ useHead({
           </div>
         </div>
 
-        <ColorsDocumentation />
+        <ThemeDocumentation />
         <div class="columns is-multiline">
           <div class="column is-4">
             <DocumentationColor color="purple" />
@@ -85,7 +85,7 @@ useHead({
             <DocumentationColor color="green" />
           </div>
         </div>
-        <ColorsDocumentation />
+        <ThemingDocumentation />
         <div class="columns is-multiline">
           <div class="column is-4">
             <DocumentationColor color="primary-grey" />

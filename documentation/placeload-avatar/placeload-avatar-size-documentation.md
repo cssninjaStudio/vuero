@@ -7,13 +7,13 @@ You can set the `size` properties according your needs
 
 ```vue
 <template>
-  <V-AvatarStack>
+  <V-Flex alignItems="flex-end" columnGap=".25rem">
     <V-PlaceloadAvatar class="mx-1" size="small" />
     <V-PlaceloadAvatar class="mx-1" size="medium" />
     <V-PlaceloadAvatar class="mx-1" size="large" />
     <V-PlaceloadAvatar class="mx-1" size="big" />
     <V-PlaceloadAvatar class="mx-1" size="xl" />
-  </V-AvatarStack>
+  </V-Flex>
 </template>
 ```
 
@@ -21,12 +21,12 @@ You can set the `size` properties according your needs
 
 <!--example-->
 
-<V-AvatarStack>
+<V-Flex alignItems="flex-end" columnGap=".25rem">
   <V-PlaceloadAvatar class="mx-1" size="small" />
   <V-PlaceloadAvatar class="mx-1" size="medium" />
   <V-PlaceloadAvatar class="mx-1" size="large" />
   <V-PlaceloadAvatar class="mx-1" size="big" />
   <V-PlaceloadAvatar class="mx-1" size="xl" />
-</V-AvatarStack>
+</V-Flex>
 
 <!--/example-->

@@ -8,35 +8,37 @@ See the code examples for more details about usage.
 
 ```vue
 <template>
-  <V-Avatar
-    initials="CT"
-    size="small"
-    badge="/images/icons/flags/united-states-of-america.svg"
-  />
-  <V-Avatar
-    initials="CT"
-    badge="/images/icons/flags/united-states-of-america.svg"
-  />
-  <V-Avatar
-    initials="CT"
-    size="medium"
-    badge="/images/icons/flags/united-states-of-america.svg"
-  />
-  <V-Avatar
-    initials="CT"
-    size="large"
-    badge="/images/icons/flags/united-states-of-america.svg"
-  />
-  <V-Avatar
-    initials="CT"
-    size="big"
-    badge="/images/icons/flags/united-states-of-america.svg"
-  />
-  <V-Avatar
-    initials="CT"
-    size="xl"
-    badge="/images/icons/flags/united-states-of-america.svg"
-  />
+  <V-Flex alignItems="flex-end" columnGap=".25rem">
+    <V-Avatar
+      initials="CT"
+      size="small"
+      badge="/images/icons/flags/united-states-of-america.svg"
+    />
+    <V-Avatar
+      initials="CT"
+      badge="/images/icons/flags/united-states-of-america.svg"
+    />
+    <V-Avatar
+      initials="CT"
+      size="medium"
+      badge="/images/icons/flags/united-states-of-america.svg"
+    />
+    <V-Avatar
+      initials="CT"
+      size="large"
+      badge="/images/icons/flags/united-states-of-america.svg"
+    />
+    <V-Avatar
+      initials="CT"
+      size="big"
+      badge="/images/icons/flags/united-states-of-america.svg"
+    />
+    <V-Avatar
+      initials="CT"
+      size="xl"
+      badge="/images/icons/flags/united-states-of-america.svg"
+    />
+  </V-Flex>
 </template>
 ```
 
@@ -44,11 +46,13 @@ See the code examples for more details about usage.
 
 <!--example-->
 
-<V-Avatar initials="CT" size="small" badge="/images/icons/flags/united-states-of-america.svg" />
-<V-Avatar initials="CT" badge="/images/icons/flags/united-states-of-america.svg" />
-<V-Avatar initials="CT" size="medium" badge="/images/icons/flags/united-states-of-america.svg" />
-<V-Avatar initials="CT" size="large" badge="/images/icons/flags/united-states-of-america.svg" />
-<V-Avatar initials="CT" size="big" badge="/images/icons/flags/united-states-of-america.svg" />
-<V-Avatar initials="CT" size="xl" badge="/images/icons/flags/united-states-of-america.svg" />
+<V-Flex alignItems="flex-end" columnGap=".25rem">
+  <V-Avatar initials="CT" size="small" badge="/images/icons/flags/united-states-of-america.svg" />
+  <V-Avatar initials="CT" badge="/images/icons/flags/united-states-of-america.svg" />
+  <V-Avatar initials="CT" size="medium" badge="/images/icons/flags/united-states-of-america.svg" />
+  <V-Avatar initials="CT" size="large" badge="/images/icons/flags/united-states-of-america.svg" />
+  <V-Avatar initials="CT" size="big" badge="/images/icons/flags/united-states-of-america.svg" />
+  <V-Avatar initials="CT" size="xl" badge="/images/icons/flags/united-states-of-america.svg" />
+</V-Flex>
 
 <!--/example-->

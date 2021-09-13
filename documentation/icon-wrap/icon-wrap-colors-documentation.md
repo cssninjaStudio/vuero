@@ -7,7 +7,7 @@ See code for more details about usage.
 
 ```vue
 <template>
-  <V-Flex column-gap="3px">
+  <V-Flex alignItems="flex-end" columnGap=".25rem">
     <V-IconWrap icon="feather:star" color="primary" />
     <V-IconWrap icon="feather:star" color="secondary" />
     <V-IconWrap icon="feather:star" color="success" />
@@ -18,7 +18,7 @@ See code for more details about usage.
     <V-IconWrap icon="feather:star" color="black" />
     <V-IconWrap icon="feather:star" color="white" />
   </V-Flex>
-  <V-Flex class="mt-2" column-gap="3px">
+  <V-Flex class="mt-4" alignItems="flex-end" columnGap=".25rem">
     <V-IconWrap icon="feather:star" has-background color="primary" />
     <V-IconWrap icon="feather:star" has-background color="secondary" />
     <V-IconWrap icon="feather:star" has-background color="success" />
@@ -37,7 +37,7 @@ See code for more details about usage.
 <!--example-->
 
 <div>
-  <V-Flex column-gap="3px">
+  <V-Flex alignItems="flex-end" columnGap=".25rem">
     <V-IconWrap icon="feather:star" color="primary" />
     <V-IconWrap icon="feather:star" color="secondary" />
     <V-IconWrap icon="feather:star" color="success" />
@@ -48,7 +48,7 @@ See code for more details about usage.
     <V-IconWrap icon="feather:star" color="black" />
     <V-IconWrap icon="feather:star" color="white" />
   </V-Flex>
-  <V-Flex class="mt-2" column-gap="3px">
+  <V-Flex class="mt-4" alignItems="flex-end" columnGap=".25rem">
     <V-IconWrap icon="feather:star" has-background color="primary" />
     <V-IconWrap icon="feather:star" has-background color="secondary" />
     <V-IconWrap icon="feather:star" has-background color="success" />
