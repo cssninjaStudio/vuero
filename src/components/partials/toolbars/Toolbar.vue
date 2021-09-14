@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import { isDark } from '/@src/state/darkModeState'
+import { computed, ref } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+import { isDark, toggleDarkModeHandler } from '/@src/state/darkModeState'
 import { activePanel } from '/@src/state/activePanelState'
 import useDropdown from '/@src/composable/useDropdown'
-import { useI18n } from 'vue-i18n'
-import { computed, ref } from 'vue'
 
 const { locale } = useI18n()
 const dropdownElement = ref<HTMLElement>()
@@ -35,11 +36,7 @@ const localFlagSrc = computed(() => {
         <input
           type="checkbox"
           :checked="!isDark"
-          @change="
-            (event) => {
-              isDark = !event.target.checked
-            }
-          "
+          @change="toggleDarkModeHandler"
         />
         <span></span>
       </label>

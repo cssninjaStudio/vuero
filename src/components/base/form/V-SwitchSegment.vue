@@ -27,6 +27,7 @@ const props = withDefaults(
     color: undefined,
   }
 )
+const blockSwitchId = `segment-switch-${++instances}`
 </script>
 
 <template inherit-attrs="false">

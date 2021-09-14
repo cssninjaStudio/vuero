@@ -1,10 +1,10 @@
 {
   "recommendations": [
-    "octref.vetur",
+    "johnsoncodehk.volar",
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
     "syler.sass-indented",
     "stylelint.vscode-stylelint",
-    "antfu.iconify",
+    "antfu.iconify"
   ]
 }

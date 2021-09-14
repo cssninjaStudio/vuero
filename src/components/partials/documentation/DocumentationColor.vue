@@ -51,8 +51,8 @@ const isOpen = ref(false)
 const toggle = () => {
   isOpen.value = !isOpen.value
 }
-function updateColor(eventData) {
-  const { h, s, l } = eventData.colors.hsl
+function updateColor({ colors }: any) {
+  const { h, s, l } = colors.hsl
   colorHueVar.value = `${Math.round(h * 360)}`
   colorSaturationVar.value = `${Math.round(s * 100)}%`
   colorLuminanceVar.value = `${Math.round(l * 100)}%`

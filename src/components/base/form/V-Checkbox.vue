@@ -21,7 +21,6 @@ const props = withDefaults(
     color: undefined,
     modelValue: () => [],
     circle: false,
-    circle: false,
     solid: false,
   }
 )

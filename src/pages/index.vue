@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import { useHead } from '@vueuse/head'
 
-import { isDark } from '/@src/state/darkModeState'
+import { isDark, toggleDarkModeHandler } from '/@src/state/darkModeState'
 
 type TabId = 'elements' | 'components' | 'forms' | 'plugins'
 const activeTab = ref<TabId>('elements')
@@ -44,11 +44,7 @@ useHead({
                   type="checkbox"
                   class="night-toggle--checkbox"
                   :checked="!isDark"
-                  @change="
-                    (event) => {
-                      isDark = !event.target.checked
-                    }
-                  "
+                  @change="toggleDarkModeHandler"
                 />
                 <label class="night-toggle--btn" for="night-toggle--daynight">
                   <span class="night-toggle--feature"></span>

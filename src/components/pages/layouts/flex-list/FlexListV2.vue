@@ -5,7 +5,7 @@ import { projects } from '/@src/data/layouts/flex-list-v2'
 
 const props = withDefaults(
   defineProps<{
-    activeTab?: 'active' | 'active'
+    activeTab?: 'active' | 'closed'
   }>(),
   {
     activeTab: 'active',

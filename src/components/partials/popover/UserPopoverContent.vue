@@ -1,17 +1,8 @@
 <script setup lang="ts">
-export type User = {
-  avatar?: string
-  badge?: string
-  username: string
-  location: string
-  position: string
-  bio: string
-  color?: string
-  initials?: string
-}
+import { UserPopover } from '/@src/models/users'
 
 const props = defineProps<{
-  user: User
+  user: UserPopover
 }>()
 </script>
 
@@ -19,27 +10,37 @@ const props = defineProps<{
   <div class="v-popover-profile has-loader">
     <div class="profile-popover-block">
       <div class="profile-popover-wrapper">
-        <div v-if="user.avatar" class="popover-avatar">
-          <img class="avatar" :src="user.avatar" alt="" />
-          <img v-if="user.badge" class="badge" :src="user.badge" alt="" />
+        <div v-if="props.user.avatar" class="popover-avatar">
+          <img class="avatar" :src="props.user.avatar" alt="" />
+          <img
+            v-if="props.user.badge"
+            class="badge"
+            :src="props.user.badge"
+            alt=""
+          />
         </div>
         <div
           v-else
           class="popover-fake-avatar"
-          :class="[user.color && `is-${user.color}`]"
+          :class="[props.user.color && `is-${props.user.color}`]"
         >
           <div class="fake-avatar">
-            <span>{{ user.initials }}</span>
+            <span>{{ props.user.initials }}</span>
           </div>
-          <img v-if="user.badge" class="badge" :src="user.badge" alt="" />
+          <img
+            v-if="props.user.badge"
+            class="badge"
+            :src="props.user.badge"
+            alt=""
+          />
         </div>
         <div class="popover-meta">
           <span class="user-meta">
-            <span class="username">{{ user.username }}</span>
-            <span class="location">{{ user.location }}</span>
+            <span class="username">{{ props.user.username }}</span>
+            <span class="location">{{ props.user.location }}</span>
           </span>
-          <span class="job-title mb-1">{{ user.position }}</span>
-          <span class="bio">{{ user.bio }}</span>
+          <span class="job-title mb-1">{{ props.user.position }}</span>
+          <span class="bio">{{ props.user.bio }}</span>
         </div>
       </div>
       <div class="popover-actions">

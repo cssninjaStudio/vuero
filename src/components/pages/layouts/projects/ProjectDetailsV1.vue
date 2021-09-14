@@ -4,7 +4,7 @@ import { activePanel } from '/@src/state/activePanelState'
 
 const props = withDefaults(
   defineProps<{
-    activeTab?: 'project' | 'content' | 'brands'
+    activeTab?: 'project' | 'team' | 'tasks'
   }>(),
   {
     activeTab: 'project',

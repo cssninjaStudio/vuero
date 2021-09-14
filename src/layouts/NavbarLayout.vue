@@ -10,7 +10,7 @@ export type NavbarTheme = 'default' | 'colored' | 'fade'
 export type SubnavId =
   | 'closed'
   | 'home'
-  | 'layout'
+  | 'layouts'
   | 'elements'
   | 'components'
   | 'search'
@@ -102,8 +102,8 @@ watch(
         </li>
         <li>
           <a
-            :class="[activeMobileSubsidebar === 'layout' && 'is-active']"
-            @click="activeMobileSubsidebar = 'layout'"
+            :class="[activeMobileSubsidebar === 'layouts' && 'is-active']"
+            @click="activeMobileSubsidebar = 'layouts'"
           >
             <i aria-hidden="true" class="iconify" data-icon="feather:grid"></i>
           </a>
@@ -160,7 +160,7 @@ watch(
     <!-- Mobile subsidebar links -->
     <transition name="slide-x">
       <LayoutsMobileSubsidebar
-        v-if="isMobileSidebarOpen && activeMobileSubsidebar === 'layout'"
+        v-if="isMobileSidebarOpen && activeMobileSubsidebar === 'layouts'"
       />
       <DashboardsMobileSubsidebar
         v-else-if="

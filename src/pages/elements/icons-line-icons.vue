@@ -18,7 +18,7 @@ const filteredIcons = computed(() => {
   }
 
   return lineIcons.filter((icon) => {
-    return icon.name.match(new RegExp(filter.value, 'i'))
+    return icon.className.match(new RegExp(filter.value, 'i'))
   })
 })
 
@@ -78,7 +78,7 @@ useHead({
             </V-Flex>
             <ul class="demo-icon-list">
               <li
-                v-for="icon in lineIcons"
+                v-for="icon in filteredIcons"
                 :key="icon.className"
                 class="textFilter-target"
               >

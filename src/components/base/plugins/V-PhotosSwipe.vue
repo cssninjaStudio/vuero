@@ -7,15 +7,18 @@ let instances = 0
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
-import PhotoSwipe from 'photoswipe/dist/photoswipe'
+import PhotoSwipe from 'photoswipe'
 import PhotoSwipeUI_Default from 'photoswipe/dist/photoswipe-ui-default'
+import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
 export type PhotoswipeItem = {
   src: string
   msrc?: string
+  thumbnail?: string
+  alt?: string
   w?: number
-  w?: number
-  title?: number
+  h?: number
+  title?: string
   el?: HTMLElement
 }
 
@@ -193,6 +196,9 @@ const openPhotoSwipe = async function (
   if (!galleryElement) {
     return
   }
+  if (!pswpElement.value) {
+    return
+  }
 
   let gallery: any, options: any, items: any
 
@@ -331,7 +337,11 @@ const resetAngle = () => {
           :alt="item.alt"
           itemprop="thumbnail"
           @error.once="
-            $event.target.src = `https://via.placeholder.com/${item.w}x${item.h}`
+            (event) =>
+              useViaPlaceholderError(
+                event,
+                `${item.w || '100'}x${item.h || '100'}`
+              )
           "
         />
       </a>
@@ -360,8 +370,8 @@ const resetAngle = () => {
             title="Close (Esc)"
           ></button>
 
-          <button
-            v-if="options.rotationOn"
+          <!-- <button
+            v-if="options.r"
             class="pswp__button pswp__button--rotate pswp__button--rotate--left"
             title="Rotate left"
             @click="rotate(-90)"
@@ -373,7 +383,7 @@ const resetAngle = () => {
             "
             title="Rotate right"
             @click="rotate(90)"
-          ></button>
+          ></button> -->
 
           <button
             class="pswp__button pswp__button--share"

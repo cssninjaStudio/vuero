@@ -2,8 +2,9 @@
 import { useHead } from '@vueuse/head'
 import { computed, ref, watch } from 'vue'
 
-import { isDark } from '/@src/state/darkModeState'
+import { isDark, toggleDarkModeHandler } from '/@src/state/darkModeState'
 import useDropdown from '/@src/composable/useDropdown'
+import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
 const contactSearchOpen = ref(false)
 const activeTab = ref('inbox')
@@ -67,11 +68,7 @@ useHead({
                 <input
                   type="checkbox"
                   :checked="!isDark"
-                  @change="
-                    (event) => {
-                      isDark = !event.target.checked
-                    }
-                  "
+                  @change="toggleDarkModeHandler"
                 />
                 <span></span>
               </label>
@@ -271,7 +268,7 @@ useHead({
                     src="/demo/avatars/7.jpg"
                     alt=""
                     @error.once="
-                      $event.target.src = 'https://via.placeholder.com/150x150'
+                      (event) => useViaPlaceholderError(event, '150x150')
                     "
                   />
                   <div class="contact-meta">
@@ -285,7 +282,7 @@ useHead({
                     src="/demo/avatars/25.jpg"
                     alt=""
                     @error.once="
-                      $event.target.src = 'https://via.placeholder.com/150x150'
+                      (event) => useViaPlaceholderError(event, '150x150')
                     "
                   />
                   <div class="contact-meta">
@@ -299,7 +296,7 @@ useHead({
                     src="/demo/avatars/18.jpg"
                     alt=""
                     @error.once="
-                      $event.target.src = 'https://via.placeholder.com/150x150'
+                      (event) => useViaPlaceholderError(event, '150x150')
                     "
                   />
                   <div class="contact-meta">
@@ -313,7 +310,7 @@ useHead({
                     src="/demo/avatars/32.jpg"
                     alt=""
                     @error.once="
-                      $event.target.src = 'https://via.placeholder.com/150x150'
+                      (event) => useViaPlaceholderError(event, '150x150')
                     "
                   />
                   <div class="contact-meta">
@@ -327,7 +324,7 @@ useHead({
                     src="/demo/avatars/38.jpg"
                     alt=""
                     @error.once="
-                      $event.target.src = 'https://via.placeholder.com/150x150'
+                      (event) => useViaPlaceholderError(event, '150x150')
                     "
                   />
                   <div class="contact-meta">

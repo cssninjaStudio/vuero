@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+
 export type AvatarSize = 'small' | 'medium' | 'large' | 'big' | 'xl'
 export type AvatarColor =
   | 'primary'
@@ -62,7 +64,7 @@ const props = withDefaults(
         :class="[squared && 'is-squared']"
         :src="picture"
         alt=""
-        @error.once="$event.target.src = 'https://via.placeholder.com/150x150'"
+        @error.once="(event) => useViaPlaceholderError(event, '150x150')"
       />
       <span
         v-else
@@ -77,7 +79,7 @@ const props = withDefaults(
         :class="[squared && 'is-squared']"
         :src="pictureDark"
         alt=""
-        @error.once="$event.target.src = 'https://via.placeholder.com/150x150'"
+        @error.once="(event) => useViaPlaceholderError(event, '150x150')"
       />
     </slot>
 
@@ -87,7 +89,7 @@ const props = withDefaults(
         class="badge"
         :src="badge"
         alt=""
-        @error.once="$event.target.src = 'https://via.placeholder.com/150x150'"
+        @error.once="(event) => useViaPlaceholderError(event, '150x150')"
       />
     </slot>
   </div>

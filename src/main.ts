@@ -12,16 +12,6 @@
  */
 
 import { createApp } from './app'
-import { ColorUpdater } from 'bulma-css-vars'
-import { bulmaCssVariablesDefs } from './scss/bulma-generated/bulma-colors'
-
-// the updater do the style change
-const colorUpdater = new ColorUpdater(bulmaCssVariablesDefs)
-if (window) {
-  //@ts-ignore
-  window.colorUpdater = colorUpdater
-}
-// colorUpdater.updateVarsInDocument(colorName, value)
 
 /**
  * We create our app and mount it when it is ready

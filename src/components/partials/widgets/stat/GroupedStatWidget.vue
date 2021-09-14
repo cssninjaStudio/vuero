@@ -2,14 +2,14 @@
 const props = withDefaults(
   defineProps<{
     title?: string
-    value?: any[]
+    values?: any[]
     labels?: any[]
     straight?: boolean
     gauge?: boolean
   }>(),
   {
     title: 'Grouped stats widget',
-    value: () => [],
+    values: () => [],
     labels: () => [],
   }
 )

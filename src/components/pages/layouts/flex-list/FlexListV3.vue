@@ -2,6 +2,7 @@
 import { computed, ref } from 'vue'
 
 import { classes } from '/@src/data/layouts/flex-list-v3'
+import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
 const props = withDefaults(
   defineProps<{
@@ -114,7 +115,7 @@ const filteredData = computed(() => {
                     :src="item.picture"
                     alt=""
                     @error.once="
-                      $event.target.src = 'https://via.placeholder.com/150x110'
+                      (event) => useViaPlaceholderError(event, '150x110')
                     "
                   />
                   <div>

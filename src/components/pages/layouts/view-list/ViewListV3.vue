@@ -2,6 +2,7 @@
 import { computed, ref } from 'vue'
 
 import { offers } from '/@src/data/layouts/view-list-v3'
+import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
 type TabId = 'all' | 'saved'
 const activeTab = ref<TabId>('all')
@@ -100,7 +101,7 @@ const filteredData = computed(() => {
                     :src="item.logo"
                     alt=""
                     @error.once="
-                      $event.target.src = 'https://via.placeholder.com/150x150'
+                      (event) => useViaPlaceholderError(event, '150x150')
                     "
                   />
                   <div class="meta-left">

@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+
 import useDropdown from '/@src/composable/useDropdown'
 import { currentStep, stepTitle } from '/@src/state/wizardState'
-import { isDark } from '/@src/state/darkModeState'
+import { isDark, toggleDarkModeHandler } from '/@src/state/darkModeState'
+import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
 const dropdownElement1 = ref<HTMLElement>()
 const dropdown1 = useDropdown(dropdownElement1)
@@ -102,11 +104,7 @@ const setStep = (target: number) => {
           <input
             type="checkbox"
             :checked="!isDark"
-            @change="
-              (event) => {
-                isDark = !event.target.checked
-              }
-            "
+            @change="toggleDarkModeHandler"
           />
           <span></span>
         </label>
@@ -123,9 +121,7 @@ const setStep = (target: number) => {
             class="avatar"
             src="/demo/avatars/8.jpg"
             alt=""
-            @error.once="
-              $event.target.src = 'https://via.placeholder.com/150x150'
-            "
+            @error.once="(event) => useViaPlaceholderError(event, '150x150')"
           />
         </div>
         <i

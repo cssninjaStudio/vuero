@@ -30,6 +30,11 @@ export const isDark = computed({
   },
 })
 
+export const toggleDarkModeHandler = (event: Event) => {
+  const target = event.target as HTMLInputElement
+  isDark.value = !target.checked
+}
+
 /**
  * watchEffect callbacks will be executed each time used reactives value has changed
  */

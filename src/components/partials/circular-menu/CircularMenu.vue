@@ -3,7 +3,7 @@ import { useWindowScroll } from '@vueuse/core'
 import { computed, ref, watchEffect } from 'vue'
 import { useI18n } from 'vue-i18n'
 
-import { isDark } from '/@src/state/darkModeState'
+import { isDark, toggleDarkModeHandler } from '/@src/state/darkModeState'
 import { activePanel } from '/@src/state/activePanelState'
 
 const { locale } = useI18n()
@@ -55,11 +55,7 @@ const localFlagSrc = computed(() => {
           <input
             type="checkbox"
             :checked="!isDark"
-            @change="
-              (event) => {
-                isDark = !event.target.checked
-              }
-            "
+            @change="toggleDarkModeHandler"
           />
           <span></span>
         </label>

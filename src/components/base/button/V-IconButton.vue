@@ -105,7 +105,7 @@ export default defineComponent({
   },
   setup(props, { attrs }) {
     const classes = computed(() => {
-      const defaultClasses = attrs?.class || []
+      const defaultClasses = (attrs?.class || []) as any
       return [
         ...defaultClasses,
         props.disabled && 'is-disabled',

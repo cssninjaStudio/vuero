@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import useDropdown from '/@src/composable/useDropdown'
+import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
 const dropdownElement = ref<HTMLElement>()
 const dropdown = useDropdown(dropdownElement)
@@ -38,7 +39,7 @@ const dropdown = useDropdown(dropdownElement)
                   alt=""
                   src="/demo/avatars/7.jpg"
                   @error.once="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
+                    (event) => useViaPlaceholderError(event, '150x150')
                   "
                 />
               </div>
@@ -58,7 +59,7 @@ const dropdown = useDropdown(dropdownElement)
                   alt=""
                   src="/demo/avatars/12.jpg"
                   @error.once="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
+                    (event) => useViaPlaceholderError(event, '150x150')
                   "
                 />
               </div>
@@ -78,7 +79,7 @@ const dropdown = useDropdown(dropdownElement)
                   alt=""
                   src="/demo/avatars/13.jpg"
                   @error.once="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
+                    (event) => useViaPlaceholderError(event, '150x150')
                   "
                 />
               </div>
@@ -98,7 +99,7 @@ const dropdown = useDropdown(dropdownElement)
                   alt=""
                   src="/demo/avatars/25.jpg"
                   @error.once="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
+                    (event) => useViaPlaceholderError(event, '150x150')
                   "
                 />
               </div>

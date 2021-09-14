@@ -1,11 +1,14 @@
 <script setup lang="ts">
 import { useWindowScroll } from '@vueuse/core'
 import { computed, ref } from 'vue'
+
 import useNotyf from '/@src/composable/useNotyf'
 import sleep from '/@src/utils/sleep'
+import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
 const isUploading = ref(false)
 const isLoading = ref(false)
+const range = ref()
 
 const notyf = useNotyf()
 const { y } = useWindowScroll()
@@ -195,9 +198,7 @@ const onSave = async () => {
               <img
                 src="/demo/photos/brands/airbnb.svg?url"
                 alt=""
-                @error.once="
-                  $event.target.src = 'https://via.placeholder.com/50x50'
-                "
+                @error.once="(event) => useViaPlaceholderError(event, '50x50')"
               />
               <div class="meta">
                 <span class="dark-inverted">Airbnb HQ</span>
@@ -218,9 +219,7 @@ const onSave = async () => {
               <img
                 src="/demo/photos/brands/facebook.svg?url"
                 alt=""
-                @error.once="
-                  $event.target.src = 'https://via.placeholder.com/50x50'
-                "
+                @error.once="(event) => useViaPlaceholderError(event, '50x50')"
               />
               <div class="meta">
                 <span class="dark-inverted">Facebook</span>
@@ -241,9 +240,7 @@ const onSave = async () => {
               <img
                 src="/demo/photos/brands/atlassian.svg?url"
                 alt=""
-                @error.once="
-                  $event.target.src = 'https://via.placeholder.com/50x50'
-                "
+                @error.once="(event) => useViaPlaceholderError(event, '50x50')"
               />
               <div class="meta">
                 <span class="dark-inverted">Atlassian</span>
@@ -264,9 +261,7 @@ const onSave = async () => {
               <img
                 src="/demo/photos/brands/github.svg?url"
                 alt=""
-                @error.once="
-                  $event.target.src = 'https://via.placeholder.com/50x50'
-                "
+                @error.once="(event) => useViaPlaceholderError(event, '50x50')"
               />
               <div class="meta">
                 <span class="dark-inverted">Github</span>
@@ -287,9 +282,7 @@ const onSave = async () => {
               <img
                 src="/demo/photos/brands/slack.svg?url"
                 alt=""
-                @error.once="
-                  $event.target.src = 'https://via.placeholder.com/50x50'
-                "
+                @error.once="(event) => useViaPlaceholderError(event, '50x50')"
               />
               <div class="meta">
                 <span class="dark-inverted">Slack</span>
@@ -310,9 +303,7 @@ const onSave = async () => {
               <img
                 src="/demo/photos/brands/gitlab.svg?url"
                 alt=""
-                @error.once="
-                  $event.target.src = 'https://via.placeholder.com/50x50'
-                "
+                @error.once="(event) => useViaPlaceholderError(event, '50x50')"
               />
               <div class="meta">
                 <span class="dark-inverted">Gitlab</span>

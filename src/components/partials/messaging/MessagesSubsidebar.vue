@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
+import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
 const emit = defineEmits<{
   (e: 'addConversation'): void
@@ -66,7 +67,7 @@ const props = withDefaults(
                 :src="conversation.avatar"
                 alt=""
                 @error.once="
-                  $event.target.src = 'https://via.placeholder.com/150x150'
+                  (event) => useViaPlaceholderError(event, '150x150')
                 "
               />
             </div>

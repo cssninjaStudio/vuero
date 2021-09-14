@@ -16,12 +16,12 @@ const props = withDefaults(
 
 if (props.width.match(CssUnitRe) === null) {
   console.warn(
-    `V-Placeload: invalid "${value}" width. Should be a valid css unit value.`
+    `V-Placeload: invalid "${props.width}" width. Should be a valid css unit value.`
   )
 }
 if (props.height.match(CssUnitRe) === null) {
   console.warn(
-    `V-Placeload: invalid "${value}" height. Should be a valid css unit value.`
+    `V-Placeload: invalid "${props.height}" height. Should be a valid css unit value.`
   )
 }
 </script>

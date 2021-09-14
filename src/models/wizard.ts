@@ -6,10 +6,7 @@
  */
 import type { Ref } from 'vue'
 
-export type WizardRelatedTo =
-  | 'UX/Design'
-  | 'Web development'
-  | 'export Marketing'
+export type WizardRelatedTo = 'UI/UX Design' | 'Web Development' | 'Marketing'
 export type WizardBudget = '< 5K' | '< 30K' | '< 100K' | '100K+'
 export type WizardTimeFrame = {
   start: Date

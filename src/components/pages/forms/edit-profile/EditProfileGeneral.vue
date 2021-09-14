@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import { useWindowScroll } from '@vueuse/core'
 import { computed, ref } from 'vue'
+
 import useNotyf from '/@src/composable/useNotyf'
 import sleep from '/@src/utils/sleep'
+import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
 const isUploading = ref(false)
 const isLoading = ref(false)
@@ -93,9 +95,7 @@ const onSave = async () => {
               class="avatar"
               src="/demo/avatars/8.jpg"
               alt=""
-              @error.once="
-                $event.target.src = 'https://via.placeholder.com/150x150'
-              "
+              @error.once="(event) => useViaPlaceholderError(event, '150x150')"
             />
             <V-FilePond
               v-else

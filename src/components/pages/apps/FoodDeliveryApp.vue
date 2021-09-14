@@ -8,6 +8,7 @@ import FoodWidget from '/@src/assets/illustrations/dashboards/food/widget.svg'
 import * as foodDelivery from '/@src/data/dashboards/food-delivery'
 import { followersStats } from '/@src/data/widgets/ui/followers'
 import { iconList } from '/@src/data/widgets/ui/menuList'
+import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
 const activeSection = ref('cart')
 
@@ -137,8 +138,7 @@ onUnmounted(() => {
                       :src="restaurant.picture"
                       alt=""
                       @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/800x450'
+                        (event) => useViaPlaceholderError(event, '800x450')
                       "
                     />
                     <div class="timer">
@@ -154,8 +154,11 @@ onUnmounted(() => {
                         :src="restaurant.icon"
                         alt=""
                         @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/800x450'
+                          (event) =>
+                            useViaPlaceholderError(
+                              event,
+                              '                            '
+                            )
                         "
                       />
                     </div>

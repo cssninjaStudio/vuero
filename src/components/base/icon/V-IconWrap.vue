@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
+import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
 export type IconWrapDark = '1' | '2' | '3' | '4' | '5' | '6'
 export type IconWrapSize = 'small' | 'medium' | 'large'
@@ -69,7 +70,7 @@ const isIconify = computed(() => {
       v-if="props.picture"
       :src="props.picture"
       alt=""
-      @error.once="$event.target.src = 'https://via.placeholder.com/32x32'"
+      @error.once="(event) => useViaPlaceholderError(event, '32x32')"
     />
     <i
       v-else-if="isIconify"

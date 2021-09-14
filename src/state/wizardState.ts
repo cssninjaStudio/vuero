@@ -51,7 +51,7 @@ export async function saveData() {
 export function resetData() {
   wizardData.name = ''
   wizardData.description = ''
-  wizardData.relatedTo = 'UX/Design'
+  wizardData.relatedTo = 'UI/UX Design'
   wizardData.logo = null
   wizardData.timeFrame = {
     start: new Date(),
@@ -67,7 +67,7 @@ export function resetData() {
 export const wizardData = reactive<WizardData>({
   name: '',
   description: '',
-  relatedTo: 'UX/Design',
+  relatedTo: 'UI/UX Design',
   logo: null,
   timeFrame: ref({
     start: new Date(),

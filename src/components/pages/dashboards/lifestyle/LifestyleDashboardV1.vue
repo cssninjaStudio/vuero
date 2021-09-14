@@ -15,6 +15,8 @@ import {
   optionsSingle,
 } from '/@src/data/dashboards/lifestyle-v1/dashboardData'
 
+import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+
 type TabId = 'overview' | 'content' | 'brands'
 const activeTab = ref<TabId>('overview')
 </script>
@@ -25,11 +27,9 @@ const activeTab = ref<TabId>('overview')
       <div class="dashboard-header">
         <div class="avatar-container">
           <img
-            src="/demo/photos/faces/girl1.jpg"
+            src="/demo/photos/faces/eegirl1.jpg"
             alt=""
-            @error.once="
-              $event.target.src = 'https://via.placeholder.com/150x150'
-            "
+            @error.once="(event) => useViaPlaceholderError(event, '150x150')"
           />
           <button class="button is-circle">
             <span class="icon is-small">
@@ -643,8 +643,7 @@ const activeTab = ref<TabId>('overview')
                       src="/demo/photos/faces/girl1.jpg"
                       alt=""
                       @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
+                        (event) => useViaPlaceholderError(event, '150x150')
                       "
                     />
                   </div>
@@ -1141,7 +1140,7 @@ const activeTab = ref<TabId>('overview')
                     src="/demo/photos/30.jpg"
                     alt=""
                     @error.once="
-                      $event.target.src = 'https://via.placeholder.com/1280x960'
+                      (event) => useViaPlaceholderError(event, '1280x960')
                     "
                   />
                 </figure>
@@ -1153,8 +1152,7 @@ const activeTab = ref<TabId>('overview')
                       src="/demo/photos/33.jpg"
                       alt=""
                       @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/1280x960'
+                        (event) => useViaPlaceholderError(event, '1280x960')
                       "
                     />
                   </a>
@@ -1163,8 +1161,7 @@ const activeTab = ref<TabId>('overview')
                       src="/demo/photos/34.jpg"
                       alt=""
                       @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/1280x960'
+                        (event) => useViaPlaceholderError(event, '1280x960')
                       "
                     />
                   </a>
@@ -1173,8 +1170,7 @@ const activeTab = ref<TabId>('overview')
                       src="/demo/photos/35.jpeg"
                       alt=""
                       @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/1280x960'
+                        (event) => useViaPlaceholderError(event, '1280x960')
                       "
                     />
                   </a>
@@ -1183,8 +1179,7 @@ const activeTab = ref<TabId>('overview')
                       src="/demo/photos/36.jpg"
                       alt=""
                       @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/1280x960'
+                        (event) => useViaPlaceholderError(event, '1280x960')
                       "
                     />
                   </a>
@@ -1214,7 +1209,7 @@ const activeTab = ref<TabId>('overview')
                     src="/demo/photos/31.png"
                     alt=""
                     @error.once="
-                      $event.target.src = 'https://via.placeholder.com/1280x960'
+                      (event) => useViaPlaceholderError(event, '1280x960')
                     "
                   />
                 </figure>
@@ -1226,8 +1221,7 @@ const activeTab = ref<TabId>('overview')
                       src="/demo/photos/33.jpg"
                       alt=""
                       @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/1280x960'
+                        (event) => useViaPlaceholderError(event, '1280x960')
                       "
                     />
                   </a>
@@ -1236,8 +1230,7 @@ const activeTab = ref<TabId>('overview')
                       src="/demo/photos/34.jpg"
                       alt=""
                       @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/1280x960'
+                        (event) => useViaPlaceholderError(event, '1280x960')
                       "
                     />
                   </a>
@@ -1246,8 +1239,7 @@ const activeTab = ref<TabId>('overview')
                       src="/demo/photos/35.jpeg"
                       alt=""
                       @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/1280x960'
+                        (event) => useViaPlaceholderError(event, '1280x960')
                       "
                     />
                   </a>
@@ -1256,8 +1248,7 @@ const activeTab = ref<TabId>('overview')
                       src="/demo/photos/36.jpg"
                       alt=""
                       @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/1280x960'
+                        (event) => useViaPlaceholderError(event, '1280x960')
                       "
                     />
                   </a>
@@ -1287,7 +1278,7 @@ const activeTab = ref<TabId>('overview')
                     src="/demo/photos/32.jpg"
                     alt=""
                     @error.once="
-                      $event.target.src = 'https://via.placeholder.com/1280x960'
+                      (event) => useViaPlaceholderError(event, '1280x960')
                     "
                   />
                 </figure>
@@ -1299,8 +1290,7 @@ const activeTab = ref<TabId>('overview')
                       src="/demo/photos/33.jpg"
                       alt=""
                       @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/1280x960'
+                        (event) => useViaPlaceholderError(event, '1280x960')
                       "
                     />
                   </a>
@@ -1309,8 +1299,7 @@ const activeTab = ref<TabId>('overview')
                       src="/demo/photos/34.jpg"
                       alt=""
                       @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/1280x960'
+                        (event) => useViaPlaceholderError(event, '1280x960')
                       "
                     />
                   </a>
@@ -1319,8 +1308,7 @@ const activeTab = ref<TabId>('overview')
                       src="/demo/photos/35.jpeg"
                       alt=""
                       @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/1280x960'
+                        (event) => useViaPlaceholderError(event, '1280x960')
                       "
                     />
                   </a>
@@ -1329,8 +1317,7 @@ const activeTab = ref<TabId>('overview')
                       src="/demo/photos/36.jpg"
                       alt=""
                       @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/1280x960'
+                        (event) => useViaPlaceholderError(event, '1280x960')
                       "
                     />
                   </a>

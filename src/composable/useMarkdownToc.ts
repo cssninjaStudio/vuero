@@ -16,7 +16,9 @@ export type TocItem = {
   level: number
 }
 
-export default function useMarkdownToc(container: Ref<HTMLElement | null>) {
+export default function useMarkdownToc(
+  container: Ref<HTMLElement | undefined>
+) {
   const toc = ref<TocItem[]>([])
 
   watchEffect(() => {

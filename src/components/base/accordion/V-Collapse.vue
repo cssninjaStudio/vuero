@@ -9,12 +9,12 @@ export type CollapseItem = {
 const props = withDefaults(
   defineProps<{
     items: CollapseItem[]
-    openItems?: number[]
+    itemOpen?: number
     withChevron?: boolean
   }>(),
   {
     items: () => [],
-    openItems: undefined,
+    itemOpen: undefined,
   }
 )
 

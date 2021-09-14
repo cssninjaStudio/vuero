@@ -17,12 +17,12 @@ const props = withDefaults(
 )
 if (props.width.match(CssUnitRe) === null) {
   console.warn(
-    `V-PlaceloadText: invalid "${value}" width. Should be a valid css unit value.`
+    `V-PlaceloadText: invalid "${props.width}" width. Should be a valid css unit value.`
   )
 }
 if (props.lastLineWidth.match(CssUnitRe) === null) {
   console.warn(
-    `V-PlaceloadText: invalid "${value}" lastLineWidth. Should be a valid css unit value.`
+    `V-PlaceloadText: invalid "${props.lastLineWidth}" lastLineWidth. Should be a valid css unit value.`
   )
 }
 </script>

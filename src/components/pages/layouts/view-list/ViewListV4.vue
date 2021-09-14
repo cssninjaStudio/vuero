@@ -2,6 +2,7 @@
 import { computed, ref } from 'vue'
 
 import { recipes } from '/@src/data/layouts/view-list-v4'
+import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
 const props = withDefaults(
   defineProps<{
@@ -106,7 +107,7 @@ const filteredData = computed(() => {
                   :src="item.icon"
                   alt=""
                   @error.once="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
+                    (event) => useViaPlaceholderError(event, '150x150')
                   "
                 />
                 <div class="meta-left">
@@ -116,8 +117,7 @@ const filteredData = computed(() => {
                       :src="item.author.avatar"
                       alt=""
                       @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
+                        (event) => useViaPlaceholderError(event, '150x150')
                       "
                     />
                     <span>{{ item.author.name }}</span>

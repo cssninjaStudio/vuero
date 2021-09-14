@@ -3,7 +3,7 @@ import { ref } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useHead } from '@vueuse/head'
 
-import { isDark } from '/@src/state/darkModeState'
+import { isDark, toggleDarkModeHandler } from '/@src/state/darkModeState'
 import useUserSession from '/@src/composable/useUserSession'
 import useNotyf from '/@src/composable/useNotyf'
 import sleep from '/@src/utils/sleep'
@@ -72,11 +72,7 @@ useHead({
           <input
             type="checkbox"
             :checked="!isDark"
-            @change="
-              (event) => {
-                isDark = !event.target.checked
-              }
-            "
+            @change="toggleDarkModeHandler"
           />
           <span></span>
         </label>

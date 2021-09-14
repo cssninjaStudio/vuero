@@ -5,6 +5,7 @@ import { computed, onMounted, ref, watchEffect, watchPostEffect } from 'vue'
 
 import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
 import { sidebarTheme } from '/@src/state/sidebarLayoutState'
+import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
 import useDropdown from '/@src/composable/useDropdown'
 import sleep from '/@src/utils/sleep'
@@ -389,8 +390,11 @@ watchPostEffect(() => {
                         :src="selectedConversation.avatar"
                         alt=""
                         @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
+                          (event) =>
+                            useViaPlaceholderError(
+                              event,
+                              '                            '
+                            )
                         "
                       />
                       <img
@@ -399,8 +403,7 @@ watchPostEffect(() => {
                         src="/images/icons/flags/united-states-of-america.svg?url"
                         alt=""
                         @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/150x150'
+                          (event) => useViaPlaceholderError(event, '150x150')
                         "
                       />
                     </div>
@@ -459,96 +462,84 @@ watchPostEffect(() => {
                           src="/demo/photos/demo-apps/1.jpg"
                           alt=""
                           @error.once="
-                            $event.target.src =
-                              'https://via.placeholder.com/1600x900'
+                            (event) => useViaPlaceholderError(event, '1600x900')
                           "
                         />
                         <img
                           src="/demo/photos/demo-apps/2.jpg"
                           alt=""
                           @error.once="
-                            $event.target.src =
-                              'https://via.placeholder.com/1600x900'
+                            (event) => useViaPlaceholderError(event, '1600x900')
                           "
                         />
                         <img
                           src="/demo/photos/demo-apps/3.jpg"
                           alt=""
                           @error.once="
-                            $event.target.src =
-                              'https://via.placeholder.com/1600x900'
+                            (event) => useViaPlaceholderError(event, '1600x900')
                           "
                         />
                         <img
                           src="/demo/photos/demo-apps/4.jpg"
                           alt=""
                           @error.once="
-                            $event.target.src =
-                              'https://via.placeholder.com/1600x900'
+                            (event) => useViaPlaceholderError(event, '1600x900')
                           "
                         />
                         <img
                           src="/demo/photos/demo-apps/5.jpg"
                           alt=""
                           @error.once="
-                            $event.target.src =
-                              'https://via.placeholder.com/1600x900'
+                            (event) => useViaPlaceholderError(event, '1600x900')
                           "
                         />
                         <img
                           src="/demo/photos/demo-apps/6.jpg"
                           alt=""
                           @error.once="
-                            $event.target.src =
-                              'https://via.placeholder.com/1600x900'
+                            (event) => useViaPlaceholderError(event, '1600x900')
                           "
                         />
                         <img
                           src="/demo/photos/demo-apps/7.jpg"
                           alt=""
                           @error.once="
-                            $event.target.src =
-                              'https://via.placeholder.com/1600x900'
+                            (event) => useViaPlaceholderError(event, '1600x900')
                           "
                         />
                         <img
                           src="/demo/photos/demo-apps/8.jpg"
                           alt=""
                           @error.once="
-                            $event.target.src =
-                              'https://via.placeholder.com/1600x900'
+                            (event) => useViaPlaceholderError(event, '1600x900')
                           "
                         />
                         <img
                           src="/demo/photos/demo-apps/9.jpg"
                           alt=""
                           @error.once="
-                            $event.target.src =
-                              'https://via.placeholder.com/1600x900'
+                            (event) => useViaPlaceholderError(event, '1600x900')
                           "
                         />
                         <img
                           src="/demo/photos/demo-apps/10.jpg"
                           alt=""
                           @error.once="
-                            $event.target.src =
-                              'https://via.placeholder.com/1600x900'
+                            (event) => useViaPlaceholderError(event, '1600x900')
                           "
                         />
                         <img
                           src="/demo/photos/demo-apps/11.jpg"
                           alt=""
                           @error.once="
-                            $event.target.src =
-                              'https://via.placeholder.com/1600x900'
+                            (event) => useViaPlaceholderError(event, '1600x900')
                           "
                         />
                         <img
                           src="/demo/photos/demo-apps/12.jpg"
                           alt=""
                           @error.once="
-                            $event.target.src =
-                              'https://via.placeholder.com/1600x900'
+                            (event) => useViaPlaceholderError(event, '1600x900')
                           "
                         />
                       </div>
@@ -682,7 +673,7 @@ watchPostEffect(() => {
                   src="/@src/assets/illustrations/placeholders/having-coffee.svg?url"
                   alt=""
                   @error.once="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
+                    (event) => useViaPlaceholderError(event, '150x150')
                   "
                 />
                 <div class="text">

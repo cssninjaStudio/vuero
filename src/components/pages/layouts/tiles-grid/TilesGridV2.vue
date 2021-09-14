@@ -2,6 +2,7 @@
 import { computed, ref } from 'vue'
 
 import { files } from '/@src/data/layouts/tile-grid-v2'
+import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
 const filters = ref('')
 
@@ -93,7 +94,7 @@ const optionsSingle = [
                 :src="item.icon"
                 alt=""
                 @error.once="
-                  $event.target.src = 'https://via.placeholder.com/150x150'
+                  (event) => useViaPlaceholderError(event, '150x150')
                 "
               />
               <div class="meta">

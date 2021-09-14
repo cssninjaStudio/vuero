@@ -4,7 +4,7 @@ import { useRouter } from 'vue-router'
 import { useHead } from '@vueuse/head'
 import useNotyf from '/@src/composable/useNotyf'
 
-import { isDark } from '/@src/state/darkModeState'
+import { isDark, toggleDarkModeHandler } from '/@src/state/darkModeState'
 import sleep from '/@src/utils/sleep'
 
 const router = useRouter()
@@ -41,11 +41,7 @@ useHead({
           <input
             type="checkbox"
             :checked="!isDark"
-            @change="
-              (event) => {
-                isDark = !event.target.checked
-              }
-            "
+            @change="toggleDarkModeHandler"
           />
           <span></span>
         </label>

@@ -1,4 +1,7 @@
-export const popovers = {
+import { UserPopover } from '/@src/models/users'
+export const popovers: {
+  [id: string]: UserPopover
+} = {
   user5: {
     id: 5,
     avatar: '/demo/avatars/5.jpg',
@@ -373,7 +376,7 @@ export const popovers = {
   },
   user120: {
     id: 120,
-    avatar: null,
+    avatar: undefined,
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Sara C.',
     fullName: 'Sara Connor',
@@ -385,7 +388,7 @@ export const popovers = {
   },
   user121: {
     id: 121,
-    avatar: null,
+    avatar: undefined,
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Naomi L.',
     fullName: 'Naomi Liversky',
@@ -397,7 +400,7 @@ export const popovers = {
   },
   user122: {
     id: 122,
-    avatar: null,
+    avatar: undefined,
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Betty T.',
     fullName: 'Betty Trejo',
@@ -409,7 +412,7 @@ export const popovers = {
   },
   user123: {
     id: 123,
-    avatar: null,
+    avatar: undefined,
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'John D.',
     fullName: 'John Daniels',
@@ -421,7 +424,7 @@ export const popovers = {
   },
   user124: {
     id: 124,
-    avatar: null,
+    avatar: undefined,
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Alan T.',
     fullName: 'Alan Thorne',

@@ -7,27 +7,22 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "[vue]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "octref.vetur"
-  },
   "[markdown]": {
-    "editor.formatOnSave": true,
     "editor.rulers": [80]
   },
   "eslint.alwaysShowStatus": true,
   "eslint.validate": ["javascript", "javascriptreact", "markdown", "vue"],
   "i18n-ally.localesPaths": ["src/locales"],
-  "vetur.validation.template": true,
-  "vetur.validation.script": false,
-  "vetur.experimental.templateInterpolationService": false,
-  "vetur.validation.interpolation": false,
-  "vetur.completion.tagCasing": "initial",
-  "vetur.completion.autoImport": true,
-  "vetur.useWorkspaceDependencies": true,
-  "vetur.grammar.customBlocks": {
-    "meta": "yaml",
-    "i18n": "yaml"
-  },
+  // "vetur.validation.template": true,
+  // "vetur.validation.script": false,
+  // "vetur.experimental.templateInterpolationService": false,
+  // "vetur.validation.interpolation": false,
+  // "vetur.completion.tagCasing": "initial",
+  // "vetur.completion.autoImport": true,
+  // "vetur.useWorkspaceDependencies": true,
+  // "vetur.grammar.customBlocks": {
+  //   "meta": "yaml",
+  //   "i18n": "yaml"
+  // },
   "typescript.tsdk": "node_modules/typescript/lib"
 }

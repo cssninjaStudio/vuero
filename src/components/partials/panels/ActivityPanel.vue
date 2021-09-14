@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { activePanel } from '/@src/state/activePanelState'
+import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
 type TabId = 'team' | 'projects' | 'schedule'
 const activeTab = ref<TabId>('team')
@@ -171,7 +172,7 @@ const activeTab = ref<TabId>('team')
                   src="/images/icons/logos/slicer.svg?url"
                   alt=""
                   @error.once="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
+                    (event) => useViaPlaceholderError(event, '150x150')
                   "
                 />
                 <div class="meta">
@@ -214,7 +215,7 @@ const activeTab = ref<TabId>('team')
                   src="/images/icons/logos/metamovies.svg?url"
                   alt=""
                   @error.once="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
+                    (event) => useViaPlaceholderError(event, '150x150')
                   "
                 />
                 <div class="meta">
@@ -256,7 +257,7 @@ const activeTab = ref<TabId>('team')
                   src="/images/icons/logos/fastpizza.svg?url"
                   alt=""
                   @error.once="
-                    $event.target.src = 'https://via.placeholder.com/150x150'
+                    (event) => useViaPlaceholderError(event, '150x150')
                   "
                 />
                 <div class="meta">
@@ -320,7 +321,7 @@ const activeTab = ref<TabId>('team')
                     src="/demo/avatars/7.jpg"
                     alt=""
                     @error.once="
-                      $event.target.src = 'https://via.placeholder.com/150x150'
+                      (event) => useViaPlaceholderError(event, '150x150')
                     "
                   />
                 </div>

@@ -7,6 +7,7 @@ import { computed, onMounted, ref, reactive } from 'vue'
 import dragula from 'dragula'
 
 import { tasks } from '/@src/data/apps/kanban'
+import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
 const newContainer = ref<HTMLElement>()
 const progressContainer = ref<HTMLElement>()
@@ -230,8 +231,7 @@ onMounted(() => {
                         :src="task.participants[0].picture"
                         alt=""
                         @error.once="
-                          $event.target.src =
-                            'https://via.placeholder.com/62x62'
+                          (event) => useViaPlaceholderError(event, '62x62')
                         "
                       />
                     </div>

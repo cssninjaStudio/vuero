@@ -36,7 +36,7 @@ const props = withDefaults(
       <li
         v-for="(item, key) in items"
         :key="key"
-        :aria-current="key === items.length - 1 ? 'page' : ''"
+        :aria-current="key === items.length - 1 ? 'page' : undefined"
         itemprop="itemListElement"
         itemscope
         itemtype="https://schema.org/ListItem"
@@ -61,7 +61,7 @@ const props = withDefaults(
           />
           <span v-else itemprop="name">{{ item.label }}</span>
 
-          <meta itemprop="position" :content="key + 1" />
+          <meta itemprop="position" :content="`${key + 1}`" />
         </RouterLink>
         <a
           v-else-if="item.link"
@@ -83,7 +83,7 @@ const props = withDefaults(
           />
           <span v-else itemprop="name">{{ item.label }}</span>
 
-          <meta itemprop="position" :content="key + 1" />
+          <meta itemprop="position" :content="`${key + 1}`" />
         </a>
         <span v-else class="breadcrumb-item">
           <span
@@ -100,7 +100,7 @@ const props = withDefaults(
           />
           <span v-else itemprop="name">{{ item.label }}</span>
 
-          <meta itemprop="position" :content="key + 1" />
+          <meta itemprop="position" :content="`${key + 1}`" />
         </span>
       </li>
     </ul>

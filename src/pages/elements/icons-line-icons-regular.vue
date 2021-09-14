@@ -18,7 +18,7 @@ const filteredIcons = computed(() => {
   }
 
   return lineIconsRegular.filter((icon) => {
-    return icon.name.match(new RegExp(filter.value, 'i'))
+    return icon.className.match(new RegExp(filter.value, 'i'))
   })
 })
 
@@ -79,7 +79,7 @@ useHead({
 
             <ul class="demo-icon-list">
               <li
-                v-for="icon in lineIconsRegular"
+                v-for="icon in filteredIcons"
                 :key="icon.className"
                 class="textFilter-target"
               >

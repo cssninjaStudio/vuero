@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+</script>
+
 <template>
   <div class="profile-wrapper">
     <div class="profile-header has-text-centered">
@@ -69,8 +73,7 @@
                       src="/demo/photos/brands/airbnb.svg?url"
                       alt=""
                       @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
+                        (event) => useViaPlaceholderError(event, '150x150')
                       "
                     />
                     <div class="meta">
@@ -88,8 +91,7 @@
                       src="/demo/photos/brands/facebook.svg?url"
                       alt=""
                       @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
+                        (event) => useViaPlaceholderError(event, '150x150')
                       "
                     />
                     <div class="meta">
@@ -107,8 +109,7 @@
                       src="/demo/photos/brands/atlassian.svg?url"
                       alt=""
                       @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
+                        (event) => useViaPlaceholderError(event, '150x150')
                       "
                     />
                     <div class="meta">
@@ -126,8 +127,7 @@
                       src="/demo/photos/brands/github.svg?url"
                       alt=""
                       @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
+                        (event) => useViaPlaceholderError(event, '150x150')
                       "
                     />
                     <div class="meta">

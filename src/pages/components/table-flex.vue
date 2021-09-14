@@ -2,6 +2,7 @@
 import { useHead } from '@vueuse/head'
 
 import { pageTitle } from '/@src/state/sidebarLayoutState'
+import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
 pageTitle.value = 'V-FlexTable'
 useHead({
@@ -71,8 +72,7 @@ useHead({
                       src="/demo/avatars/25.jpg"
                       alt=""
                       @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
+                        (event) => useViaPlaceholderError(event, '150x150')
                       "
                     />
                   </div>
@@ -87,8 +87,7 @@ useHead({
                       src="/demo/avatars/8.jpg"
                       alt=""
                       @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
+                        (event) => useViaPlaceholderError(event, '150x150')
                       "
                     />
                   </div>
@@ -161,8 +160,7 @@ useHead({
                       src="/demo/avatars/7.jpg"
                       alt=""
                       @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
+                        (event) => useViaPlaceholderError(event, '150x150')
                       "
                     />
                   </div>
@@ -195,8 +193,7 @@ useHead({
                       src="/demo/avatars/13.jpg"
                       alt=""
                       @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
+                        (event) => useViaPlaceholderError(event, '150x150')
                       "
                     />
                   </div>
@@ -229,8 +226,7 @@ useHead({
                       src="/demo/avatars/25.jpg"
                       alt=""
                       @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
+                        (event) => useViaPlaceholderError(event, '150x150')
                       "
                     />
                   </div>
@@ -240,8 +236,7 @@ useHead({
                       src="/demo/avatars/11.jpg"
                       alt=""
                       @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
+                        (event) => useViaPlaceholderError(event, '150x150')
                       "
                     />
                   </div>
@@ -251,8 +246,7 @@ useHead({
                       src="/demo/avatars/5.jpg"
                       alt=""
                       @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
+                        (event) => useViaPlaceholderError(event, '150x150')
                       "
                     />
                   </div>

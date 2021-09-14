@@ -79,7 +79,7 @@ useHead({
 
             <ul class="demo-icon-list">
               <li
-                v-for="icon in fontAwesome"
+                v-for="icon in filteredIcons"
                 :id="icon.name"
                 :key="icon.name"
                 class="

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
+import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
 useHead({
   title: 'Utility Status - Sidebar - Vuero',
@@ -43,7 +44,7 @@ useHead({
                 src="/demo/photos/animaticons/lightbulb.gif"
                 alt=""
                 @error.once="
-                  $event.target.src = 'https://via.placeholder.com/150x150'
+                  (event) => useViaPlaceholderError(event, '150x150')
                 "
               />
             </div>
@@ -73,7 +74,7 @@ useHead({
                 src="/demo/photos/animaticons/image.gif"
                 alt=""
                 @error.once="
-                  $event.target.src = 'https://via.placeholder.com/150x150'
+                  (event) => useViaPlaceholderError(event, '150x150')
                 "
               />
             </div>
@@ -103,7 +104,7 @@ useHead({
                 src="/demo/photos/animaticons/search.gif"
                 alt=""
                 @error.once="
-                  $event.target.src = 'https://via.placeholder.com/150x150'
+                  (event) => useViaPlaceholderError(event, '150x150')
                 "
               />
             </div>
@@ -133,7 +134,7 @@ useHead({
                 src="/demo/photos/animaticons/diamond.gif"
                 alt=""
                 @error.once="
-                  $event.target.src = 'https://via.placeholder.com/150x150'
+                  (event) => useViaPlaceholderError(event, '150x150')
                 "
               />
             </div>
@@ -163,7 +164,7 @@ useHead({
                 src="/demo/photos/animaticons/chart.gif"
                 alt=""
                 @error.once="
-                  $event.target.src = 'https://via.placeholder.com/150x150'
+                  (event) => useViaPlaceholderError(event, '150x150')
                 "
               />
             </div>
@@ -193,7 +194,7 @@ useHead({
                 src="/demo/photos/animaticons/rocket.gif"
                 alt=""
                 @error.once="
-                  $event.target.src = 'https://via.placeholder.com/150x150'
+                  (event) => useViaPlaceholderError(event, '150x150')
                 "
               />
             </div>
@@ -223,7 +224,7 @@ useHead({
                 src="/demo/photos/animaticons/check.gif"
                 alt=""
                 @error.once="
-                  $event.target.src = 'https://via.placeholder.com/150x150'
+                  (event) => useViaPlaceholderError(event, '150x150')
                 "
               />
             </div>

@@ -84,7 +84,7 @@ const nameUppercase = computed(() => props.name.toUpperCase())
               transform="matrix(1 0 0 1 54.1064 428.1723)"
               class="st2 st5 st6"
             >
-              {{ props.nameUppercase || 'JOHN DOE' }}
+              {{ nameUppercase || 'JOHN DOE' }}
             </text>
             <text
               transform="matrix(1 0 0 1 54.1074 389.8793)"

@@ -33,5 +33,6 @@
     "src/**/*.tsx",
     "src/**/*.vue",
     "documentation/**/*.md"
-  ]
+  ],
+  "exclude": ["node_modules", "bulma-colors.ts"]
 }

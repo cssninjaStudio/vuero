@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+
 const props = defineProps<{
   picture: string
   badge: string
@@ -15,7 +17,7 @@ const props = defineProps<{
         class="badge"
         :src="props.badge"
         alt=""
-        @error.once="$event.target.src = 'https://via.placeholder.com/150x150'"
+        @error.once="(event) => useViaPlaceholderError(event, '150x150')"
       />
     </div>
     <h3>Call {{ props.username }}?</h3>

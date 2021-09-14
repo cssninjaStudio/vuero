@@ -87,7 +87,11 @@ const optionsSingle = [
       <!--Card Grid v1-->
       <transition-group name="list" tag="div" class="columns is-multiline">
         <!--Grid item-->
-        <div v-for="item in filteredData" :key="item.id" class="column is-6">
+        <div
+          v-for="(item, index) in filteredData"
+          :key="index"
+          class="column is-6"
+        >
           <div class="card-grid-item">
             <div class="card-grid-item-body">
               <div class="left">
@@ -104,8 +108,8 @@ const optionsSingle = [
               <div class="right">
                 <div class="social-links">
                   <a
-                    v-for="channel in item.social"
-                    :key="channel.id"
+                    v-for="(channel, channelIndex) in item.social"
+                    :key="channelIndex"
                     :href="channel.url"
                     class="social-link"
                   >

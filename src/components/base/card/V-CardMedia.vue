@@ -26,6 +26,11 @@ const props = withDefaults(
 const slots = useSlots()
 const hasDefaultSlot = ref(!!slots.default?.())
 
+function placeholderHandler(event: Event) {
+  const target = event.target as HTMLImageElement
+  target.src = props.placeholder
+}
+
 onUpdated(() => {
   hasDefaultSlot.value = !!slots.default?.()
 })
@@ -38,11 +43,7 @@ onUpdated(() => {
         class="image is-4by3"
         :class="[props.format && `is-${props.format}`]"
       >
-        <img
-          :src="image"
-          alt=""
-          @error.once="$event.target.src = props.placeholder"
-        />
+        <img :src="image" alt="" @error.once="placeholderHandler" />
       </figure>
     </div>
     <div class="card-content">

@@ -9,6 +9,7 @@ Dropzone.autoDiscover = false
 import { nextTick, onUnmounted, ref, watch } from 'vue'
 
 import { wizardData } from '/@src/state/wizardState'
+import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 import sleep from '/@src/utils/sleep'
 
 const isUploading = ref(false)
@@ -320,7 +321,7 @@ watch(previewTemplate, () => {
                 data-dz-thumbnail
                 alt=""
                 @error.once="
-                  $event.target.src = 'https://via.placeholder.com/150x150'
+                  (event) => useViaPlaceholderError(event, '150x150')
                 "
               />
             </div>

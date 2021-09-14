@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+</script>
+
 <template>
   <div class="lifestyle-dashboard lifestyle-dashboard-v4">
     <div class="columns">
@@ -187,7 +191,7 @@
                     src="/demo/photos/38.jpg"
                     alt=""
                     @error.once="
-                      $event.target.src = 'https://via.placeholder.com/800x600'
+                      (event) => useViaPlaceholderError(event, '800x600')
                     "
                   />
                 </div>
@@ -209,7 +213,7 @@
                     src="/demo/photos/37.jpg"
                     alt=""
                     @error.once="
-                      $event.target.src = 'https://via.placeholder.com/800x600'
+                      (event) => useViaPlaceholderError(event, '800x600')
                     "
                   />
                 </div>

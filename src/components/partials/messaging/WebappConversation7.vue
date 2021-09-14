@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+
 const emit = defineEmits(['toggleMobileConversation'])
 </script>
 
@@ -22,9 +24,7 @@ const emit = defineEmits(['toggleMobileConversation'])
           src="/demo/avatars/18.jpg"
           alt=""
           data-user-popover="7"
-          @error.once="
-            $event.target.src = 'https://via.placeholder.com/150x150'
-          "
+          @error.once="(event) => useViaPlaceholderError(event, '150x150')"
         />
       </div>
     </div>
@@ -47,27 +47,21 @@ const emit = defineEmits(['toggleMobileConversation'])
             <img
               src="/demo/photos/apps/4.png"
               alt=""
-              @error.once="
-                $event.target.src = 'https://via.placeholder.com/400x300'
-              "
+              @error.once="(event) => useViaPlaceholderError(event, '400x300')"
             />
           </div>
           <div class="chat-msg-text">
             <img
               src="/demo/photos/apps/7.png"
               alt=""
-              @error.once="
-                $event.target.src = 'https://via.placeholder.com/400x300'
-              "
+              @error.once="(event) => useViaPlaceholderError(event, '400x300')"
             />
           </div>
           <div class="chat-msg-text">
             <img
               src="/demo/photos/apps/6.png"
               alt=""
-              @error.once="
-                $event.target.src = 'https://via.placeholder.com/400x300'
-              "
+              @error.once="(event) => useViaPlaceholderError(event, '400x300')"
             />
           </div>
           <div class="chat-msg-text">I can send you the files.</div>
@@ -80,9 +74,7 @@ const emit = defineEmits(['toggleMobileConversation'])
             src="/demo/avatars/8.jpg"
             alt=""
             data-user-popover="3"
-            @error.once="
-              $event.target.src = 'https://via.placeholder.com/150x150'
-            "
+            @error.once="(event) => useViaPlaceholderError(event, '150x150')"
           />
           <div class="chat-msg-date">Sent at 2:37pm</div>
         </div>

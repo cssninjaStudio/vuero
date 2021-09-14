@@ -2,6 +2,7 @@
 import { computed, ref } from 'vue'
 
 import { posts } from '/@src/data/layouts/card-grid-v4'
+import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
 const filters = ref('')
 
@@ -89,9 +90,7 @@ const optionsSingle = [
             <img
               :src="item.image"
               alt=""
-              @error.once="
-                $event.target.src = 'https://via.placeholder.com/400x300'
-              "
+              @error.once="(event) => useViaPlaceholderError(event, '400x300')"
             />
             <div class="card-grid-item-content">
               <h3 class="dark-inverted">

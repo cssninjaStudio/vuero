@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+
 const emit = defineEmits(['toggleMobileConversation'])
 </script>
 
@@ -22,27 +24,21 @@ const emit = defineEmits(['toggleMobileConversation'])
           src="/demo/avatars/8.jpg"
           alt=""
           data-user-popover="3"
-          @error.once="
-            $event.target.src = 'https://via.placeholder.com/150x150'
-          "
+          @error.once="(event) => useViaPlaceholderError(event, '150x150')"
         />
         <img
           class="chat-area-profile"
           src="/demo/avatars/13.jpg"
           alt=""
           data-user-popover="6"
-          @error.once="
-            $event.target.src = 'https://via.placeholder.com/150x150'
-          "
+          @error.once="(event) => useViaPlaceholderError(event, '150x150')"
         />
         <img
           class="chat-area-profile"
           src="/demo/avatars/19.jpg"
           alt=""
           data-user-popover="17"
-          @error.once="
-            $event.target.src = 'https://via.placeholder.com/150x150'
-          "
+          @error.once="(event) => useViaPlaceholderError(event, '150x150')"
         />
         <span>
           <span>4</span>
@@ -57,9 +53,7 @@ const emit = defineEmits(['toggleMobileConversation'])
             src="/demo/avatars/13.jpg"
             alt=""
             data-user-popover="6"
-            @error.once="
-              $event.target.src = 'https://via.placeholder.com/150x150'
-            "
+            @error.once="(event) => useViaPlaceholderError(event, '150x150')"
           />
           <div class="chat-msg-date">Sent at 4:15pm</div>
         </div>
@@ -69,9 +63,7 @@ const emit = defineEmits(['toggleMobileConversation'])
             <img
               src="/demo/photos/demo-apps/1.jpg"
               alt=""
-              @error.once="
-                $event.target.src = 'https://via.placeholder.com/400x300'
-              "
+              @error.once="(event) => useViaPlaceholderError(event, '400x300')"
             />
           </div>
           <div class="chat-msg-text">
@@ -86,9 +78,7 @@ const emit = defineEmits(['toggleMobileConversation'])
             src="/demo/avatars/8.jpg"
             alt=""
             data-user-popover="3"
-            @error.once="
-              $event.target.src = 'https://via.placeholder.com/150x150'
-            "
+            @error.once="(event) => useViaPlaceholderError(event, '150x150')"
           />
           <div class="chat-msg-date">Sent at 4:15pm</div>
         </div>
@@ -106,9 +96,7 @@ const emit = defineEmits(['toggleMobileConversation'])
             src="/demo/avatars/19.jpg"
             alt=""
             data-user-popover="17"
-            @error.once="
-              $event.target.src = 'https://via.placeholder.com/150x150'
-            "
+            @error.once="(event) => useViaPlaceholderError(event, '150x150')"
           />
           <div class="chat-msg-date">Sent at 4:27pm</div>
         </div>
@@ -129,9 +117,7 @@ const emit = defineEmits(['toggleMobileConversation'])
             src="/demo/avatars/8.jpg"
             alt=""
             data-user-popover="3"
-            @error.once="
-              $event.target.src = 'https://via.placeholder.com/150x150'
-            "
+            @error.once="(event) => useViaPlaceholderError(event, '150x150')"
           />
           <div class="chat-msg-date">Sent at 4:31pm</div>
         </div>
@@ -149,9 +135,7 @@ const emit = defineEmits(['toggleMobileConversation'])
             src="/demo/avatars/12.jpg"
             alt=""
             data-user-popover="2"
-            @error.once="
-              $event.target.src = 'https://via.placeholder.com/150x150'
-            "
+            @error.once="(event) => useViaPlaceholderError(event, '150x150')"
           />
           <div class="chat-msg-date">Sent at 4:32pm</div>
         </div>
@@ -166,9 +150,7 @@ const emit = defineEmits(['toggleMobileConversation'])
             src="/demo/avatars/7.jpg"
             alt=""
             data-user-popover="0"
-            @error.once="
-              $event.target.src = 'https://via.placeholder.com/150x150'
-            "
+            @error.once="(event) => useViaPlaceholderError(event, '150x150')"
           />
           <div class="chat-msg-date">Sent at 4:32pm</div>
         </div>
@@ -185,9 +167,7 @@ const emit = defineEmits(['toggleMobileConversation'])
             src="/demo/avatars/8.jpg"
             alt=""
             data-user-popover="3"
-            @error.once="
-              $event.target.src = 'https://via.placeholder.com/150x150'
-            "
+            @error.once="(event) => useViaPlaceholderError(event, '150x150')"
           />
           <div class="chat-msg-date">Sent at 4:33pm</div>
         </div>
@@ -202,9 +182,7 @@ const emit = defineEmits(['toggleMobileConversation'])
             src="/demo/avatars/32.jpg"
             alt=""
             data-user-popover="28"
-            @error.once="
-              $event.target.src = 'https://via.placeholder.com/150x150'
-            "
+            @error.once="(event) => useViaPlaceholderError(event, '150x150')"
           />
           <div class="chat-msg-date">Sent at 4:39pm</div>
         </div>

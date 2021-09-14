@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 
 import useDropdown from '/@src/composable/useDropdown'
+import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 import { isMediumScreen } from '/@src/state/responsiveState'
 
 const emit = defineEmits<{
@@ -32,7 +33,7 @@ const dropdown2 = useDropdown(dropdownElement2)
         class="sender-pic"
         src="/demo/avatars/24.jpg"
         alt=""
-        @error.once="$event.target.src = 'https://via.placeholder.com/150x150'"
+        @error.once="(event) => useViaPlaceholderError(event, '150x150')"
       />
       <div class="message-meta">
         <span class="message-title">You didn't answer my last email !</span>
@@ -168,9 +169,7 @@ const dropdown2 = useDropdown(dropdownElement2)
             <img
               src="/demo/avatars/8.jpg"
               alt=""
-              @error.once="
-                $event.target.src = 'https://via.placeholder.com/150x150'
-              "
+              @error.once="(event) => useViaPlaceholderError(event, '150x150')"
             />
             <div class="reply-details">
               <span>Reply as</span>

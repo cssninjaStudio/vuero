@@ -24,6 +24,11 @@ const props = withDefaults(
   }
 )
 
+function placeholderHandler(event: Event) {
+  const target = event.target as HTMLImageElement
+  target.src = props.placeholder
+}
+
 const isIconify = computed(() => {
   return props.icon && props.icon.indexOf(':') !== -1
 })
@@ -49,7 +54,7 @@ const isIconify = computed(() => {
         class="avatar"
         :src="image"
         alt=""
-        @error.once="$event.target.src = placeholder"
+        @error.once="placeholderHandler"
       />
     </div>
     <span class="snack-text">{{ title }}</span>

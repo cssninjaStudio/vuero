@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-type TabId = 'display' | 'display' | 'plugins'
+type TabId = 'display' | 'layout'
 const activeTab = ref<TabId>('display')
 </script>
 

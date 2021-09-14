@@ -2,6 +2,7 @@
 import { computed, ref } from 'vue'
 
 import { posts } from '/@src/data/layouts/tile-grid-v3'
+import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
 const filters = ref('')
 
@@ -87,7 +88,7 @@ const optionsSingle = [
                 src="/demo/photos/11.jpg"
                 alt=""
                 @error.once="
-                  $event.target.src = 'https://via.placeholder.com/400x300'
+                  (event) => useViaPlaceholderError(event, '400x300')
                 "
               />
               <div class="meta">
@@ -120,7 +121,7 @@ const optionsSingle = [
                 src="/demo/photos/12.jpg"
                 alt=""
                 @error.once="
-                  $event.target.src = 'https://via.placeholder.com/400x300'
+                  (event) => useViaPlaceholderError(event, '400x300')
                 "
               />
               <div class="meta">
@@ -153,7 +154,7 @@ const optionsSingle = [
                 src="/demo/photos/13.jpg"
                 alt=""
                 @error.once="
-                  $event.target.src = 'https://via.placeholder.com/400x300'
+                  (event) => useViaPlaceholderError(event, '400x300')
                 "
               />
               <div class="meta">
@@ -191,7 +192,7 @@ const optionsSingle = [
                     src="/demo/photos/14.jpg"
                     alt=""
                     @error.once="
-                      $event.target.src = 'https://via.placeholder.com/400x300'
+                      (event) => useViaPlaceholderError(event, '400x300')
                     "
                   />
                   <div class="meta">
@@ -223,7 +224,7 @@ const optionsSingle = [
                     src="/demo/photos/15.jpg"
                     alt=""
                     @error.once="
-                      $event.target.src = 'https://via.placeholder.com/400x300'
+                      (event) => useViaPlaceholderError(event, '400x300')
                     "
                   />
                   <div class="meta">
@@ -257,7 +258,7 @@ const optionsSingle = [
                     src="/demo/photos/16.jpg"
                     alt=""
                     @error.once="
-                      $event.target.src = 'https://via.placeholder.com/400x300'
+                      (event) => useViaPlaceholderError(event, '400x300')
                     "
                   />
                   <div class="meta">
@@ -291,7 +292,7 @@ const optionsSingle = [
                   src="/demo/photos/18.jpg"
                   alt=""
                   @error.once="
-                    $event.target.src = 'https://via.placeholder.com/400x300'
+                    (event) => useViaPlaceholderError(event, '400x300')
                   "
                 />
                 <div class="meta">
@@ -329,7 +330,7 @@ const optionsSingle = [
                 src="/demo/photos/19.jpg"
                 alt=""
                 @error.once="
-                  $event.target.src = 'https://via.placeholder.com/400x300'
+                  (event) => useViaPlaceholderError(event, '400x300')
                 "
               />
               <div class="meta">
@@ -369,7 +370,7 @@ const optionsSingle = [
                 src="/demo/photos/20.jpg"
                 alt=""
                 @error.once="
-                  $event.target.src = 'https://via.placeholder.com/400x300'
+                  (event) => useViaPlaceholderError(event, '400x300')
                 "
               />
               <div class="meta">
@@ -400,7 +401,7 @@ const optionsSingle = [
                 src="/demo/photos/23.jpg"
                 alt=""
                 @error.once="
-                  $event.target.src = 'https://via.placeholder.com/400x300'
+                  (event) => useViaPlaceholderError(event, '400x300')
                 "
               />
               <div class="meta">
@@ -436,7 +437,7 @@ const optionsSingle = [
                 src="/demo/photos/22.jpg"
                 alt=""
                 @error.once="
-                  $event.target.src = 'https://via.placeholder.com/400x300'
+                  (event) => useViaPlaceholderError(event, '400x300')
                 "
               />
               <div class="meta">
@@ -467,7 +468,7 @@ const optionsSingle = [
                 src="/demo/photos/24.jpg"
                 alt=""
                 @error.once="
-                  $event.target.src = 'https://via.placeholder.com/400x300'
+                  (event) => useViaPlaceholderError(event, '400x300')
                 "
               />
               <div class="meta">
@@ -500,7 +501,7 @@ const optionsSingle = [
                 src="/demo/photos/27.jpg"
                 alt=""
                 @error.once="
-                  $event.target.src = 'https://via.placeholder.com/400x300'
+                  (event) => useViaPlaceholderError(event, '400x300')
                 "
               />
               <div class="meta">

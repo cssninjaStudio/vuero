@@ -34,7 +34,7 @@ onMounted(() => {
 onBeforeUnmount(() => {
   if (player.value) {
     player.value.destroy()
-    player.value = null
+    player.value = undefined
   }
 })
 </script>

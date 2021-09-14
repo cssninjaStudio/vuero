@@ -8,7 +8,7 @@ import { themeColors } from '/@src/utils/themeColors'
 import { isDark } from '/@src/state/darkModeState'
 
 // You can set the VITE_MAPBOX_ACCESS_TOKEN inside .env file
-mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN
+mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN as string
 
 const props = defineProps<{
   reversed?: boolean

@@ -23,21 +23,21 @@ const props = withDefaults(
   <div class="avatar-stack">
     <slot>
       <V-Avatar
-        v-for="(avatar, index) in avatars.slice(0, limit)"
+        v-for="(avatar, index) in avatars.slice(0, props.limit)"
         :key="index"
-        :size="size"
+        :size="props.size"
         :picture="avatar.picture"
         :initials="avatar.initials"
         :color="avatar.color"
       />
       <div
-        v-if="avatars.length > limit"
+        v-if="avatars.length > props.limit"
         class="v-avatar"
-        :class="[size && 'is-' + size]"
+        :class="[size && 'is-' + props.size]"
       >
         <span class="avatar is-more">
           <span class="inner">
-            <span>+{{ avatars.length - limit }}</span>
+            <span>+{{ avatars.length - props.limit }}</span>
           </span>
         </span>
       </div>

@@ -4,6 +4,7 @@ import { ref } from 'vue'
 
 import useMarkdownToc from '/@src/composable/useMarkdownToc'
 import { pageTitle } from '/@src/state/sidebarLayoutState'
+import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
@@ -495,8 +496,7 @@ useHead({
                           src="/images/avatars/placeholder.jpg"
                           alt=""
                           @error.once="
-                            $event.target.src =
-                              'https://via.placeholder.com/150x150'
+                            (event) => useViaPlaceholderError(event, '150x150')
                           "
                         />
                         <span class="selected-item">Add people</span>
@@ -518,8 +518,8 @@ useHead({
                                 src="/demo/avatars/22.jpg"
                                 alt=""
                                 @error.once="
-                                  $event.target.src =
-                                    'https://via.placeholder.com/150x150'
+                                  (event) =>
+                                    useViaPlaceholderError(event, '150x150')
                                 "
                               />
                             </span>
@@ -538,8 +538,8 @@ useHead({
                                 src="/demo/avatars/8.jpg"
                                 alt=""
                                 @error.once="
-                                  $event.target.src =
-                                    'https://via.placeholder.com/150x150'
+                                  (event) =>
+                                    useViaPlaceholderError(event, '150x150')
                                 "
                               />
                             </span>
@@ -558,8 +558,8 @@ useHead({
                                 src="/demo/avatars/7.jpg"
                                 alt=""
                                 @error.once="
-                                  $event.target.src =
-                                    'https://via.placeholder.com/150x150'
+                                  (event) =>
+                                    useViaPlaceholderError(event, '150x150')
                                 "
                               />
                             </span>
@@ -578,8 +578,8 @@ useHead({
                                 src="/demo/avatars/25.jpg"
                                 alt=""
                                 @error.once="
-                                  $event.target.src =
-                                    'https://via.placeholder.com/150x150'
+                                  (event) =>
+                                    useViaPlaceholderError(event, '150x150')
                                 "
                               />
                             </span>
@@ -598,8 +598,8 @@ useHead({
                                 src="/demo/avatars/12.jpg"
                                 alt=""
                                 @error.once="
-                                  $event.target.src =
-                                    'https://via.placeholder.com/150x150'
+                                  (event) =>
+                                    useViaPlaceholderError(event, '150x150')
                                 "
                               />
                             </span>
@@ -739,8 +739,7 @@ useHead({
                           src="/images/avatars/placeholder.jpg"
                           alt=""
                           @error.once="
-                            $event.target.src =
-                              'https://via.placeholder.com/150x150'
+                            (event) => useViaPlaceholderError(event, '150x150')
                           "
                         />
                         <span class="selected-item">Add people</span>
@@ -762,8 +761,8 @@ useHead({
                                 src="/demo/avatars/22.jpg"
                                 alt=""
                                 @error.once="
-                                  $event.target.src =
-                                    'https://via.placeholder.com/150x150'
+                                  (event) =>
+                                    useViaPlaceholderError(event, '150x150')
                                 "
                               />
                             </span>
@@ -782,8 +781,8 @@ useHead({
                                 src="/demo/avatars/8.jpg"
                                 alt=""
                                 @error.once="
-                                  $event.target.src =
-                                    'https://via.placeholder.com/150x150'
+                                  (event) =>
+                                    useViaPlaceholderError(event, '150x150')
                                 "
                               />
                             </span>
@@ -802,8 +801,8 @@ useHead({
                                 src="/demo/avatars/7.jpg"
                                 alt=""
                                 @error.once="
-                                  $event.target.src =
-                                    'https://via.placeholder.com/150x150'
+                                  (event) =>
+                                    useViaPlaceholderError(event, '150x150')
                                 "
                               />
                             </span>
@@ -822,8 +821,8 @@ useHead({
                                 src="/demo/avatars/25.jpg"
                                 alt=""
                                 @error.once="
-                                  $event.target.src =
-                                    'https://via.placeholder.com/150x150'
+                                  (event) =>
+                                    useViaPlaceholderError(event, '150x150')
                                 "
                               />
                             </span>
@@ -842,8 +841,8 @@ useHead({
                                 src="/demo/avatars/12.jpg"
                                 alt=""
                                 @error.once="
-                                  $event.target.src =
-                                    'https://via.placeholder.com/150x150'
+                                  (event) =>
+                                    useViaPlaceholderError(event, '150x150')
                                 "
                               />
                             </span>

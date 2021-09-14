@@ -13,14 +13,14 @@ const props = withDefaults(
   {
     todos: () => [],
     modelValue: () => [],
-    color: () => undefined,
+    color: undefined,
   }
 )
 
 const completed = ref(props.modelValue)
 
 watch(completed, () => {
-  emit('update:modelValue', completed.value)
+  emit('update:modelValue', completed.value ?? [])
 })
 </script>
 

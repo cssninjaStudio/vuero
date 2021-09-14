@@ -2,9 +2,10 @@
 import { computed, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 
-import { isDark } from '/@src/state/darkModeState'
+import { isDark, toggleDarkModeHandler } from '/@src/state/darkModeState'
 import { activePanel } from '/@src/state/activePanelState'
 import useDropdown from '/@src/composable/useDropdown'
+import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
 const emit = defineEmits(['close'])
 
@@ -38,11 +39,7 @@ const localFlagSrc = computed(() => {
         <input
           type="checkbox"
           :checked="!isDark"
-          @change="
-            (event) => {
-              isDark = !event.target.checked
-            }
-          "
+          @change="toggleDarkModeHandler"
         />
         <span></span>
       </label>
@@ -88,8 +85,7 @@ const localFlagSrc = computed(() => {
                       alt=""
                       src="/demo/avatars/7.jpg"
                       @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
+                        (event) => useViaPlaceholderError(event, '150x150')
                       "
                     />
                   </div>
@@ -109,8 +105,7 @@ const localFlagSrc = computed(() => {
                       alt=""
                       src="/demo/avatars/12.jpg"
                       @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
+                        (event) => useViaPlaceholderError(event, '150x150')
                       "
                     />
                   </div>
@@ -130,8 +125,7 @@ const localFlagSrc = computed(() => {
                       alt=""
                       src="/demo/avatars/13.jpg"
                       @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
+                        (event) => useViaPlaceholderError(event, '150x150')
                       "
                     />
                   </div>
@@ -151,8 +145,7 @@ const localFlagSrc = computed(() => {
                       alt=""
                       src="/demo/avatars/25.jpg"
                       @error.once="
-                        $event.target.src =
-                          'https://via.placeholder.com/150x150'
+                        (event) => useViaPlaceholderError(event, '150x150')
                       "
                     />
                   </div>
