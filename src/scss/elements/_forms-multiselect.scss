@@ -16,6 +16,10 @@
 .multiselect {
   font-family: var(--font);
 
+  &.is-active {
+    box-shadow: none;
+  }
+
   .multiselect-dropdown {
     overflow: hidden;
   }

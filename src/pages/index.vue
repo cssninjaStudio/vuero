@@ -410,6 +410,35 @@ useHead({
               </div>
             </div>
           </div>
+
+          <!--Title-->
+          <div class="section-title has-text-centered">
+            <h2 class="title is-2">Get started with Vuero</h2>
+            <h4>
+              Watch the quickstart tutorial and access our private Discord and
+              GitHub repo.
+            </h4>
+
+            <div class="mt-4">
+              <VButtons align="centered">
+                <VButton icon="fa-brands:discord" dark-outlined raised
+                  >Discord Access</VButton
+                >
+                <VButton icon="fa-brands:github" dark-outlined raised
+                  >GitHub Access</VButton
+                >
+              </VButtons>
+            </div>
+          </div>
+
+          <div class="video-player-container-wrapper mb-6">
+            <VPlyr
+              ratio="16by9"
+              source="https://www.youtube.com/embed/lE5VNpP8JqA"
+              poster="/video/poster-2c.jpg"
+              embed
+            />
+          </div>
         </div>
       </div>
 
