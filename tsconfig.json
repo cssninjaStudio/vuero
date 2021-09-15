@@ -12,6 +12,7 @@
     "removeComments": true,
     "importHelpers": false,
     "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
     "lib": ["esnext", "dom"],
     "types": [
       "vite/client",
@@ -27,6 +28,7 @@
   },
   "include": [
     "components.d.ts",
+    "components-global.d.ts",
     "src/**/*.js",
     "src/**/*.ts",
     "src/**/*.d.ts",
@@ -34,5 +36,5 @@
     "src/**/*.vue",
     "documentation/**/*.md"
   ],
-  "exclude": ["node_modules", "bulma-colors.ts"]
+  "exclude": ["bulma-colors.ts"]
 }

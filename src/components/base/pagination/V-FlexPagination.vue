@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { useRoute } from 'vue-router'
+import { useRoute, RouteLocationOptions } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 
 const props = withDefaults(
@@ -66,7 +66,7 @@ const paginatedLink = (page = 1) => {
     name: route.name,
     params: route.params,
     query,
-  }
+  } as RouteLocationOptions
 }
 </script>
 
@@ -133,7 +133,7 @@ zh-CN:
           :to="paginatedLink(page)"
           class="pagination-link"
           :aria-label="t('goto-page-title', { page: page })"
-          :aria-current="currentPage === page ? 'page' : ''"
+          :aria-current="currentPage === page ? 'page' : undefined"
           :class="[currentPage === page && 'is-current']"
         >
           {{ page }}
