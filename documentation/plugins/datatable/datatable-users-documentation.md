@@ -13,7 +13,7 @@ import { optionsUsers } from '/@src/data/v-datatable/users-datatable'
 </script>
 
 <template>
-  <V-SimpleDatatables :options="optionsUsers" />
+  <VSimpleDatatables :options="optionsUsers" />
 </template>
 ```
 

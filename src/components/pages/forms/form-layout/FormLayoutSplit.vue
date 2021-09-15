@@ -22,15 +22,15 @@ const isStuck = computed(() => {
           </div>
           <div class="right">
             <div class="buttons">
-              <V-Button
+              <VButton
                 icon="lnir lnir-arrow-left rem-100"
                 :to="{ name: 'sidebar-layouts-profile-view' }"
                 light
                 dark-outlined
               >
                 Cancel
-              </V-Button>
-              <V-Button color="primary" raised> Request Payout </V-Button>
+              </VButton>
+              <VButton color="primary" raised> Request Payout </VButton>
             </div>
           </div>
         </div>
@@ -42,8 +42,8 @@ const isStuck = computed(() => {
             <div class="operator">
               <span>Or</span>
             </div>
-            <V-Field>
-              <V-Control>
+            <VField>
+              <VControl>
                 <div class="radio-pills">
                   <div class="radio-pill">
                     <input type="radio" name="amount_selection" :value="20" />
@@ -70,13 +70,13 @@ const isStuck = computed(() => {
                     </div>
                   </div>
                 </div>
-              </V-Control>
-            </V-Field>
+              </VControl>
+            </VField>
           </div>
           <div class="right">
             <h3 class="has-text-centered">Enter your own</h3>
-            <V-Field>
-              <V-Control icon="feather:dollar-sign">
+            <VField>
+              <VControl icon="feather:dollar-sign">
                 <input
                   class="input"
                   type="number"
@@ -84,35 +84,35 @@ const isStuck = computed(() => {
                   step="10"
                   placeholder="Amount..."
                 />
-              </V-Control>
-            </V-Field>
+              </VControl>
+            </VField>
           </div>
         </div>
         <div class="form-section is-grey">
           <div class="left">
             <h3>Personal Info</h3>
-            <V-Field>
-              <V-Control icon="feather:user">
+            <VField>
+              <VControl icon="feather:user">
                 <input
                   type="text"
                   class="input"
                   placeholder="First Name *"
                   autocomplete="given-name"
                 />
-              </V-Control>
-            </V-Field>
-            <V-Field>
-              <V-Control icon="feather:user">
+              </VControl>
+            </VField>
+            <VField>
+              <VControl icon="feather:user">
                 <input
                   type="text"
                   class="input"
                   placeholder="Last Name *"
                   autocomplete="family-name"
                 />
-              </V-Control>
-            </V-Field>
-            <V-Field>
-              <V-Control icon="feather:mail">
+              </VControl>
+            </VField>
+            <VField>
+              <VControl icon="feather:mail">
                 <input
                   type="email"
                   class="input"
@@ -120,10 +120,10 @@ const isStuck = computed(() => {
                   autocomplete="email"
                   inputmode="email"
                 />
-              </V-Control>
-            </V-Field>
-            <V-Field>
-              <V-Control icon="feather:phone">
+              </VControl>
+            </VField>
+            <VField>
+              <VControl icon="feather:phone">
                 <input
                   type="tel"
                   class="input"
@@ -131,35 +131,35 @@ const isStuck = computed(() => {
                   autocomplete="tel"
                   inputmode="tel"
                 />
-              </V-Control>
-            </V-Field>
+              </VControl>
+            </VField>
           </div>
           <div class="right">
             <h3>Payout Details</h3>
 
-            <V-Field>
-              <V-Control>
+            <VField>
+              <VControl>
                 <Multiselect
                   v-model="bankAccount"
                   placeholder="Bank Account"
                   :options="['AMEX **** 42', 'HSBC **** 29']"
                 />
-              </V-Control>
-            </V-Field>
+              </VControl>
+            </VField>
 
-            <V-Field>
-              <V-Control>
+            <VField>
+              <VControl>
                 <Multiselect
                   v-model="transferFees"
                   placeholder="Bank Account"
                   :options="['Super Fast - $3.00', 'Regular - $0.50']"
                 />
-              </V-Control>
-            </V-Field>
+              </VControl>
+            </VField>
 
-            <V-Field>
+            <VField>
               <label>Notify me when funds are ready?</label>
-              <V-Control>
+              <VControl>
                 <label class="radio">
                   <input type="radio" name="notification_selection" checked />
                   <span></span>
@@ -171,8 +171,8 @@ const isStuck = computed(() => {
                   <span></span>
                   No
                 </label>
-              </V-Control>
-            </V-Field>
+              </VControl>
+            </VField>
           </div>
         </div>
       </div>

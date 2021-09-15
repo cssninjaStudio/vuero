@@ -1,10 +1,5 @@
 <template>
-  <V-Dropdown
-    icon="feather:more-vertical"
-    class="is-pushed-mobile"
-    spaced
-    right
-  >
+  <VDropdown icon="feather:more-vertical" class="is-pushed-mobile" spaced right>
     <a role="menuitem" href="#" class="dropdown-item is-media">
       <div class="icon">
         <i aria-hidden="true" class="lnil lnil-pencil"></i>
@@ -23,5 +18,5 @@
         <span>Delete this record</span>
       </div>
     </a>
-  </V-Dropdown>
+  </VDropdown>
 </template>

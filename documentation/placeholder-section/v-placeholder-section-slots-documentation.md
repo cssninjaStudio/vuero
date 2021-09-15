@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-PlaceholderSection Slots
+### VPlaceholderSection Slots
 
-Here is the full slots available for `<V-PlaceholderSection />` component:
+Here is the full slots available for `<VPlaceholderSection />` component:
 
 | Slot    | Properties                          | Description               |
 | ------- | ----------------------------------- | ------------------------- |

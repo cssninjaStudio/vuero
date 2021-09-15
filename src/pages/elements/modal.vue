@@ -29,16 +29,16 @@ const bigFormOpen = ref(false)
 const noscrollOpen = ref(false)
 const nocloseOpen = ref(false)
 
-pageTitle.value = 'V-Modal'
+pageTitle.value = 'VModal'
 useHead({
-  title: 'V-Modal - Elements - Vuero',
+  title: 'VModal - Elements - Vuero',
 })
 </script>
 
 <template>
   <div>
     <div class="page-content-inner">
-      <V-Breadcrumb
+      <VBreadcrumb
         with-icons
         separator="bullet"
         :items="[
@@ -53,7 +53,7 @@ useHead({
             to: { name: 'elements' },
           },
           {
-            label: 'V-Modal',
+            label: 'VModal',
             to: { name: 'elements-modal' },
           },
         ]"
@@ -65,62 +65,62 @@ useHead({
           :class="[toc.length > 0 ? 'is-9' : 'is-12']"
           class="column doc-column"
         >
-          <!--V-Modal-->
+          <!--VModal-->
           <VModalBaseDocumentation />
 
           <div class="buttons mb-6">
-            <V-Button bold @click="leftActionsOpen = true">
+            <VButton bold @click="leftActionsOpen = true">
               Left Actions
-            </V-Button>
-            <V-Button bold @click="centeredActionsOpen = true">
+            </VButton>
+            <VButton bold @click="centeredActionsOpen = true">
               Center Actions
-            </V-Button>
-            <V-Button bold @click="rightActionsOpen = true">
+            </VButton>
+            <VButton bold @click="rightActionsOpen = true">
               Right Actions
-            </V-Button>
-            <V-Button bold @click="customLabelActionsOpen = true">
+            </VButton>
+            <VButton bold @click="customLabelActionsOpen = true">
               Custom label
-            </V-Button>
+            </VButton>
           </div>
 
-          <!--V-Modal sizes-->
+          <!--VModal sizes-->
           <VModalSizesDocumentation />
 
           <div class="buttons mb-6">
-            <V-Button bold @click="smallOpen = true">Small Modal</V-Button>
-            <V-Button bold @click="standardOpen = true">
+            <VButton bold @click="smallOpen = true">Small Modal</VButton>
+            <VButton bold @click="standardOpen = true">
               Standard Modal
-            </V-Button>
-            <V-Button bold @click="mediumOpen = true">Medium Modal</V-Button>
-            <V-Button bold @click="largeOpen = true">Large Modal</V-Button>
-            <V-Button bold @click="bigOpen = true">Big Modal</V-Button>
+            </VButton>
+            <VButton bold @click="mediumOpen = true">Medium Modal</VButton>
+            <VButton bold @click="largeOpen = true">Large Modal</VButton>
+            <VButton bold @click="bigOpen = true">Big Modal</VButton>
           </div>
 
-          <!--V-Modal forms-->
+          <!--VModal forms-->
           <VModalFormsDocumentation />
 
           <div class="buttons mb-6">
-            <V-Button bold @click="smallFormOpen = true">Small Modal</V-Button>
-            <V-Button bold @click="standardFormOpen = true">
+            <VButton bold @click="smallFormOpen = true">Small Modal</VButton>
+            <VButton bold @click="standardFormOpen = true">
               Standard Modal
-            </V-Button>
-            <V-Button bold @click="mediumFormOpen = true">
+            </VButton>
+            <VButton bold @click="mediumFormOpen = true">
               Medium Modal
-            </V-Button>
-            <V-Button bold @click="largeFormOpen = true">Large Modal</V-Button>
-            <V-Button bold @click="bigFormOpen = true">Big Modal</V-Button>
+            </VButton>
+            <VButton bold @click="largeFormOpen = true">Large Modal</VButton>
+            <VButton bold @click="bigFormOpen = true">Big Modal</VButton>
           </div>
 
-          <!--V-Modal options-->
+          <!--VModal options-->
           <VModalOptionsDocumentation />
 
           <div class="buttons mb-6">
-            <V-Button bold @click="noscrollOpen = true">
+            <VButton bold @click="noscrollOpen = true">
               Scroll disabled
-            </V-Button>
-            <V-Button bold @click="nocloseOpen = true">
+            </VButton>
+            <VButton bold @click="nocloseOpen = true">
               No background close handler
-            </V-Button>
+            </VButton>
           </div>
 
           <!--Props-->
@@ -138,57 +138,57 @@ useHead({
       </div>
     </div>
 
-    <V-Modal
+    <VModal
       title="Standard actions"
       :open="leftActionsOpen"
       @close="leftActionsOpen = false"
     >
       <template #content>
-        <V-PlaceholderSection
+        <VPlaceholderSection
           title="Go Premium"
           subtitle="Unlock more features and business tools by going premium"
         />
       </template>
       <template #action>
-        <V-Button color="primary" raised>Confirm</V-Button>
+        <VButton color="primary" raised>Confirm</VButton>
       </template>
-    </V-Modal>
+    </VModal>
 
-    <V-Modal
+    <VModal
       title="Centered actions"
       :open="centeredActionsOpen"
       actions="center"
       @close="centeredActionsOpen = false"
     >
       <template #content>
-        <V-PlaceholderSection
+        <VPlaceholderSection
           title="Go Premium"
           subtitle="Unlock more features and business tools by going premium"
         />
       </template>
       <template #action>
-        <V-Button color="primary" raised>Confirm</V-Button>
+        <VButton color="primary" raised>Confirm</VButton>
       </template>
-    </V-Modal>
+    </VModal>
 
-    <V-Modal
+    <VModal
       title="Right actions"
       :open="rightActionsOpen"
       actions="right"
       @close="rightActionsOpen = false"
     >
       <template #content>
-        <V-PlaceholderSection
+        <VPlaceholderSection
           title="Go Premium"
           subtitle="Unlock more features and business tools by going premium"
         />
       </template>
       <template #action>
-        <V-Button color="primary" raised>Confirm</V-Button>
+        <VButton color="primary" raised>Confirm</VButton>
       </template>
-    </V-Modal>
+    </VModal>
 
-    <V-Modal
+    <VModal
       title="Custom Label"
       :open="customLabelActionsOpen"
       actions="right"
@@ -196,14 +196,14 @@ useHead({
       @close="customLabelActionsOpen = false"
     >
       <template #content>
-        <V-PlaceholderSection
+        <VPlaceholderSection
           title="Go Premium"
           subtitle="Unlock more features and business tools by going premium"
         />
       </template>
-    </V-Modal>
+    </VModal>
 
-    <V-Modal
+    <VModal
       :open="smallOpen"
       title="Invitation"
       size="small"
@@ -212,24 +212,24 @@ useHead({
       @close="smallOpen = false"
     >
       <template #content>
-        <V-PlaceholderSection
+        <VPlaceholderSection
           title="You were invited"
           subtitle="Jimmy H. invited you to join the Heartman &amp; Sons project."
         >
           <template #image>
-            <V-Avatar
+            <VAvatar
               picture="/demo/avatars/22.jpg"
-              badge="/images/icons/flags/united-states-of-america.svg?url"
+              badge="/images/icons/flags/united-states-of-america.svg"
             />
           </template>
-        </V-PlaceholderSection>
+        </VPlaceholderSection>
       </template>
       <template #action>
-        <V-Button color="primary" rounded raised>Confirm</V-Button>
+        <VButton color="primary" rounded raised>Confirm</VButton>
       </template>
-    </V-Modal>
+    </VModal>
 
-    <V-Modal
+    <VModal
       :open="standardOpen"
       title="Invitation"
       actions="center"
@@ -237,24 +237,24 @@ useHead({
       @close="standardOpen = false"
     >
       <template #content>
-        <V-PlaceholderSection
+        <VPlaceholderSection
           title="You were invited"
           subtitle="Jimmy H. invited you to join the Heartman &amp; Sons project."
         >
           <template #image>
-            <V-Avatar
+            <VAvatar
               picture="/demo/avatars/22.jpg"
-              badge="/images/icons/flags/united-states-of-america.svg?url"
+              badge="/images/icons/flags/united-states-of-america.svg"
             />
           </template>
-        </V-PlaceholderSection>
+        </VPlaceholderSection>
       </template>
       <template #action>
-        <V-Button color="primary" rounded raised>Confirm</V-Button>
+        <VButton color="primary" rounded raised>Confirm</VButton>
       </template>
-    </V-Modal>
+    </VModal>
 
-    <V-Modal
+    <VModal
       :open="mediumOpen"
       title="Invitation"
       size="medium"
@@ -263,24 +263,24 @@ useHead({
       @close="mediumOpen = false"
     >
       <template #content>
-        <V-PlaceholderSection
+        <VPlaceholderSection
           title="You were invited"
           subtitle="Jimmy H. invited you to join the Heartman &amp; Sons project."
         >
           <template #image>
-            <V-Avatar
+            <VAvatar
               picture="/demo/avatars/22.jpg"
-              badge="/images/icons/flags/united-states-of-america.svg?url"
+              badge="/images/icons/flags/united-states-of-america.svg"
             />
           </template>
-        </V-PlaceholderSection>
+        </VPlaceholderSection>
       </template>
       <template #action>
-        <V-Button color="primary" rounded raised>Confirm</V-Button>
+        <VButton color="primary" rounded raised>Confirm</VButton>
       </template>
-    </V-Modal>
+    </VModal>
 
-    <V-Modal
+    <VModal
       :open="largeOpen"
       title="Invitation"
       size="large"
@@ -289,24 +289,24 @@ useHead({
       @close="largeOpen = false"
     >
       <template #content>
-        <V-PlaceholderSection
+        <VPlaceholderSection
           title="You were invited"
           subtitle="Jimmy H. invited you to join the Heartman &amp; Sons project."
         >
           <template #image>
-            <V-Avatar
+            <VAvatar
               picture="/demo/avatars/22.jpg"
-              badge="/images/icons/flags/united-states-of-america.svg?url"
+              badge="/images/icons/flags/united-states-of-america.svg"
             />
           </template>
-        </V-PlaceholderSection>
+        </VPlaceholderSection>
       </template>
       <template #action>
-        <V-Button color="primary" rounded raised>Confirm</V-Button>
+        <VButton color="primary" rounded raised>Confirm</VButton>
       </template>
-    </V-Modal>
+    </VModal>
 
-    <V-Modal
+    <VModal
       :open="bigOpen"
       title="Invitation"
       size="big"
@@ -315,24 +315,24 @@ useHead({
       @close="bigOpen = false"
     >
       <template #content>
-        <V-PlaceholderSection
+        <VPlaceholderSection
           title="You were invited"
           subtitle="Jimmy H. invited you to join the Heartman &amp; Sons project."
         >
           <template #image>
-            <V-Avatar
+            <VAvatar
               picture="/demo/avatars/22.jpg"
-              badge="/images/icons/flags/united-states-of-america.svg?url"
+              badge="/images/icons/flags/united-states-of-america.svg"
             />
           </template>
-        </V-PlaceholderSection>
+        </VPlaceholderSection>
       </template>
       <template #action>
-        <V-Button color="primary" rounded raised>Confirm</V-Button>
+        <VButton color="primary" rounded raised>Confirm</VButton>
       </template>
-    </V-Modal>
+    </VModal>
 
-    <V-Modal
+    <VModal
       :open="smallFormOpen"
       title="Leave a Comment"
       size="small"
@@ -366,11 +366,11 @@ useHead({
         </form>
       </template>
       <template #action>
-        <V-Button color="primary" raised>Publish</V-Button>
+        <VButton color="primary" raised>Publish</VButton>
       </template>
-    </V-Modal>
+    </VModal>
 
-    <V-Modal
+    <VModal
       :open="standardFormOpen"
       title="Leave a Comment"
       actions="right"
@@ -403,11 +403,11 @@ useHead({
         </form>
       </template>
       <template #action>
-        <V-Button color="primary" raised>Publish</V-Button>
+        <VButton color="primary" raised>Publish</VButton>
       </template>
-    </V-Modal>
+    </VModal>
 
-    <V-Modal
+    <VModal
       :open="mediumFormOpen"
       size="medium"
       title="Horizontal Form"
@@ -459,11 +459,11 @@ useHead({
         </form>
       </template>
       <template #action>
-        <V-Button color="primary" raised>Publish</V-Button>
+        <VButton color="primary" raised>Publish</VButton>
       </template>
-    </V-Modal>
+    </VModal>
 
-    <V-Modal
+    <VModal
       :open="largeFormOpen"
       size="large"
       title="Create Project"
@@ -702,11 +702,11 @@ useHead({
         </div>
       </template>
       <template #action>
-        <V-Button color="primary" raised>Save Changes</V-Button>
+        <VButton color="primary" raised>Save Changes</VButton>
       </template>
-    </V-Modal>
+    </VModal>
 
-    <V-Modal
+    <VModal
       :open="bigFormOpen"
       size="large"
       title="Create Project"
@@ -945,11 +945,11 @@ useHead({
         </div>
       </template>
       <template #action>
-        <V-Button color="primary" raised>Save Changes</V-Button>
+        <VButton color="primary" raised>Save Changes</VButton>
       </template>
-    </V-Modal>
+    </VModal>
 
-    <V-Modal
+    <VModal
       :open="noscrollOpen"
       title="Invitation"
       size="small"
@@ -958,17 +958,17 @@ useHead({
       @close="noscrollOpen = false"
     >
       <template #content>
-        <V-PlaceholderSection
+        <VPlaceholderSection
           title="Go Premium"
           subtitle="Unlock more features and business tools by going premium"
         />
       </template>
       <template #action>
-        <V-Button color="primary" raised>Confirm</V-Button>
+        <VButton color="primary" raised>Confirm</VButton>
       </template>
-    </V-Modal>
+    </VModal>
 
-    <V-Modal
+    <VModal
       :open="nocloseOpen"
       title="Invitation"
       size="small"
@@ -977,14 +977,14 @@ useHead({
       @close="nocloseOpen = false"
     >
       <template #content>
-        <V-PlaceholderSection
+        <VPlaceholderSection
           title="Go Premium"
           subtitle="Unlock more features and business tools by going premium"
         />
       </template>
       <template #action>
-        <V-Button color="primary" raised>Confirm</V-Button>
+        <VButton color="primary" raised>Confirm</VButton>
       </template>
-    </V-Modal>
+    </VModal>
   </div>
 </template>

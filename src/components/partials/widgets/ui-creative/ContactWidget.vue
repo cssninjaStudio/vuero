@@ -31,7 +31,7 @@ const props = withDefaults(
   >
     <div class="widget-content">
       <div class="left">
-        <V-Avatar
+        <VAvatar
           size="medium"
           :picture="props.picture"
           :squared="props.squared"

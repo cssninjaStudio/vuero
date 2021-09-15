@@ -1,13 +1,13 @@
-### V-Placeload
+### VPlaceload
 
-Vuero provides a `<V-Placeload />` component to display skeleton element
+Vuero provides a `<VPlaceload />` component to display skeleton element
 while loading. Check the markup for more details.
 
 <!--code-->
 
 ```vue
 <template>
-  <V-Placeload />
+  <VPlaceload />
 </template>
 ```
 
@@ -15,6 +15,6 @@ while loading. Check the markup for more details.
 
 <!--example-->
 
-<V-Placeload />
+<VPlaceload />
 
 <!--/example-->

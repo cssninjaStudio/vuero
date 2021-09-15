@@ -1,9 +1,27 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 
-import { users } from '/@src/data/layouts/flex-list-v1'
+import type {
+  VAvatarProps,
+  VAvatarColor,
+} from '/@src/components/base/avatar/VAvatar.vue'
+import * as listData from '/@src/data/layouts/flex-list-v1'
+
+export interface UserData extends VAvatarProps {
+  id: number
+  username: string
+  position: string
+  picture: string
+  badge: string
+  location: string
+  industry: string
+  status: string
+  contacts: VAvatarProps[]
+}
 
 const filters = ref('')
+
+const users = listData.users as UserData[]
 
 const filteredData = computed(() => {
   if (!filters.value) {
@@ -25,27 +43,27 @@ const filteredData = computed(() => {
 <template>
   <div>
     <div class="list-flex-toolbar flex-list-v1">
-      <V-Field>
-        <V-Control icon="feather:search">
+      <VField>
+        <VControl icon="feather:search">
           <input
             v-model="filters"
             class="input custom-text-filter"
             placeholder="Search..."
           />
-        </V-Control>
-      </V-Field>
+        </VControl>
+      </VField>
 
-      <V-Buttons>
-        <V-Button color="primary" icon="fas fa-plus" elevated>
+      <VButtons>
+        <VButton color="primary" icon="fas fa-plus" elevated>
           Add User
-        </V-Button>
-      </V-Buttons>
+        </VButton>
+      </VButtons>
     </div>
 
     <div class="page-content-inner">
       <div class="flex-list-wrapper flex-list-v1">
         <!--List Empty Search Placeholder -->
-        <V-PlaceholderPage
+        <VPlaceholderPage
           :class="[filteredData.length !== 0 && 'is-hidden']"
           title="We couldn't find any matching results."
           subtitle="Too bad. Looks like we couldn't find any matching results for the
@@ -56,16 +74,16 @@ const filteredData = computed(() => {
           <template #image>
             <img
               class="light-image"
-              src="/@src/assets/illustrations/placeholders/search-4.svg?url"
+              src="/@src/assets/illustrations/placeholders/search-4.svg"
               alt=""
             />
             <img
               class="dark-image"
-              src="/@src/assets/illustrations/placeholders/search-4-dark.svg?url"
+              src="/@src/assets/illustrations/placeholders/search-4-dark.svg"
               alt=""
             />
           </template>
-        </V-PlaceholderPage>
+        </VPlaceholderPage>
 
         <div class="flex-table">
           <!--Table header-->
@@ -90,7 +108,7 @@ const filteredData = computed(() => {
                 class="flex-table-item"
               >
                 <div class="flex-table-cell is-media is-grow">
-                  <V-Avatar
+                  <VAvatar
                     :picture="item.picture"
                     :badge="item.badge"
                     :color="item.color"
@@ -135,7 +153,7 @@ const filteredData = computed(() => {
                   >
                 </div>
                 <div class="flex-table-cell" data-th="Relations">
-                  <V-AvatarStack
+                  <VAvatarStack
                     :avatars="item.contacts"
                     size="small"
                     :limit="3"
@@ -151,7 +169,7 @@ const filteredData = computed(() => {
         </div>
 
         <!--Table Pagination-->
-        <V-FlexPagination
+        <VFlexPagination
           v-if="filteredData.length > 5"
           :item-per-page="10"
           :total-items="873"

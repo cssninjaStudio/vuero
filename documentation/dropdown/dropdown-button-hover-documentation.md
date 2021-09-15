@@ -1,6 +1,6 @@
 ### Hover buttons
 
-Vuero's `<V-Dropdown />` component can also be opened
+Vuero's `<VDropdown />` component can also be opened
 on hover or after any custom event.
 Please refer to the markup for more details about usage.
 
@@ -8,16 +8,16 @@ Please refer to the markup for more details about usage.
 
 ```vue
 <template>
-  <V-Dropdown>
+  <VDropdown>
     <template #button="{ open, toggle }">
-      <V-Button
+      <VButton
         icon="feather:help-circle"
         class="is-trigger"
         @mouseenter="open"
         @click="toggle"
       >
         Hover me!
-      </V-Button>
+      </VButton>
     </template>
 
     <template #content="{ close }">
@@ -30,7 +30,7 @@ Please refer to the markup for more details about usage.
         <a href="#" class="dropdown-item"> With a divider </a>
       </div>
     </template>
-  </V-Dropdown>
+  </VDropdown>
 </template>
 ```
 
@@ -40,9 +40,9 @@ Please refer to the markup for more details about usage.
 
 <div class="field is-grouped">
   <div class="control">
-    <V-Dropdown>
+    <VDropdown>
       <template #button="{ open, toggle }">
-        <V-Button
+        <VButton
           icon="feather:alert-triangle"
           class="is-trigger"
           color="warning"
@@ -50,7 +50,7 @@ Please refer to the markup for more details about usage.
           @click="toggle"
         >
           Hover me!
-        </V-Button>
+        </VButton>
       </template>
       <template #content="{ close }">
         <div @mouseleave="close">
@@ -62,20 +62,20 @@ Please refer to the markup for more details about usage.
           <a href="#" class="dropdown-item"> With a divider </a>
         </div>
       </template>
-    </V-Dropdown>
+    </VDropdown>
   </div>
 
   <div class="control">
-    <V-Dropdown title="Primary button" up>
+    <VDropdown title="Primary button" up>
       <template #button="{ open, toggle }">
-        <V-Button
+        <VButton
           icon="feather:help-circle"
           class="is-trigger"
           @mouseenter="open"
           @click="toggle"
         >
           Hover me!
-        </V-Button>
+        </VButton>
       </template>
       <template #content="{ close }">
         <div @mouseleave="close">
@@ -87,7 +87,7 @@ Please refer to the markup for more details about usage.
           <a href="#" class="dropdown-item"> With a divider </a>
         </div>
       </template>
-    </V-Dropdown>
+    </VDropdown>
   </div>
 </div>
 

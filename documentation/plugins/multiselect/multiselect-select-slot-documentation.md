@@ -44,8 +44,8 @@ const selectSlotOptions = [
 </script>
 
 <template>
-  <V-Field class="is-image-select">
-    <V-Control>
+  <VField class="is-image-select">
+    <VControl>
       <Multiselect
         v-model="selectSlotValue"
         placeholder="Select a language"
@@ -67,8 +67,8 @@ const selectSlotOptions = [
           </span>
         </template>
       </Multiselect>
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -78,8 +78,8 @@ const selectSlotOptions = [
 
 <div class="columns">
   <div class="column is-4">
-    <V-Field class="is-image-select">
-      <V-Control>
+    <VField class="is-image-select">
+      <VControl>
         <Multiselect
           v-model="frontmatter.selectSlotValue"
           placeholder="Select a language"
@@ -101,12 +101,12 @@ const selectSlotOptions = [
             </span>  
           </template>
         </Multiselect>
-      </V-Control>
-    </V-Field>
+      </VControl>
+    </VField>
   </div>
   <div class="column is-4">
-    <V-Field class="is-image-select is-curved-select">
-      <V-Control>
+    <VField class="is-image-select is-curved-select">
+      <VControl>
         <Multiselect
           v-model="frontmatter.selectSlotValue"
           placeholder="Select a language"
@@ -128,12 +128,12 @@ const selectSlotOptions = [
             </span>  
           </template>
         </Multiselect>
-      </V-Control>
-    </V-Field>
+      </VControl>
+    </VField>
   </div>
   <div class="column is-4">
-    <V-Field class="is-image-select is-rounded-select">
-      <V-Control>
+    <VField class="is-image-select is-rounded-select">
+      <VControl>
         <Multiselect
           v-model="frontmatter.selectSlotValue"
           placeholder="Select a language"
@@ -155,8 +155,8 @@ const selectSlotOptions = [
             </span>  
           </template>
         </Multiselect>
-      </V-Control>
-    </V-Field>
+      </VControl>
+    </VField>
   </div>
 </div>
 

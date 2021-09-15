@@ -4,15 +4,15 @@ import { useHead } from '@vueuse/head'
 import { userStack2 } from '/@src/data/users/userStacks'
 import { pageTitle } from '/@src/state/sidebarLayoutState'
 
-pageTitle.value = 'V-CardSocial'
+pageTitle.value = 'VCardSocial'
 useHead({
-  title: 'V-CardSocial - Components - Vuero',
+  title: 'VCardSocial - Components - Vuero',
 })
 </script>
 
 <template>
   <div class="page-content-inner">
-    <V-Breadcrumb
+    <VBreadcrumb
       with-icons
       separator="bullet"
       :items="[
@@ -30,7 +30,7 @@ useHead({
           label: 'Cards',
         },
         {
-          label: 'V-CardSocial',
+          label: 'VCardSocial',
           to: { name: 'components-card-social' },
         },
       ]"
@@ -38,12 +38,12 @@ useHead({
 
     <div class="columns is-multiline">
       <div class="column is-12">
-        <!--V-Card Social-->
+        <!--VCard Social-->
         <VCardSocialDocumentation />
       </div>
 
       <div class="column is-4">
-        <V-CardSocial
+        <VCardSocial
           title="Featured Tweet"
           network="twitter"
           avatar="/demo/avatars/19.jpg"
@@ -56,11 +56,11 @@ useHead({
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
             nec iaculis mauris.
           </span>
-        </V-CardSocial>
+        </VCardSocial>
       </div>
 
       <div class="column is-4">
-        <V-CardSocial
+        <VCardSocial
           title="Featured Story"
           network="instagram"
           avatar="/demo/avatars/5.jpg"
@@ -71,11 +71,11 @@ useHead({
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
             nec iaculis mauris.
           </span>
-        </V-CardSocial>
+        </VCardSocial>
       </div>
 
       <div class="column is-4">
-        <V-CardSocial
+        <VCardSocial
           title="Featured Post"
           network="facebook"
           avatar="/demo/avatars/36.jpg"
@@ -88,7 +88,7 @@ useHead({
               nec iaculis mauris.
             </span>
           </template>
-        </V-CardSocial>
+        </VCardSocial>
       </div>
 
       <div class="column is-12 mt-5">

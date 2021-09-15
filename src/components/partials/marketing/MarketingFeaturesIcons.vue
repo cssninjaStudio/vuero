@@ -14,9 +14,9 @@
           <div class="column is-3">
             <div class="card card-icon-box">
               <div class="card-content">
-                <V-IconBox size="medium" color="blue">
+                <VIconBox size="medium" color="blue">
                   <i aria-hidden="true" class="lnil lnil-layout-alt-2"></i>
-                </V-IconBox>
+                </VIconBox>
 
                 <h4 class="title is-5">Nice Vectors</h4>
                 <p class="subtitle is-6 light-text">
@@ -29,9 +29,9 @@
           <div class="column is-3">
             <div class="card card-icon-box">
               <div class="card-content">
-                <V-IconBox size="medium" color="warning">
+                <VIconBox size="medium" color="warning">
                   <i aria-hidden="true" class="lnil lnil-layers"></i>
-                </V-IconBox>
+                </VIconBox>
 
                 <h4 class="title is-5">Icon title</h4>
                 <p class="subtitle is-6 light-text">
@@ -44,9 +44,9 @@
           <div class="column is-3">
             <div class="card card-icon-box">
               <div class="card-content">
-                <V-IconBox size="medium" color="success">
+                <VIconBox size="medium" color="success">
                   <i aria-hidden="true" class="lnil lnil-grid-alt"></i>
-                </V-IconBox>
+                </VIconBox>
 
                 <h4 class="title is-5">Icon title</h4>
                 <p class="subtitle is-6 light-text">
@@ -59,9 +59,9 @@
           <div class="column is-3">
             <div class="card card-icon-box">
               <div class="card-content">
-                <V-IconBox size="medium" color="purple">
+                <VIconBox size="medium" color="purple">
                   <i aria-hidden="true" class="lnil lnil-bulb"></i>
-                </V-IconBox>
+                </VIconBox>
 
                 <h4 class="title is-5">Icon title</h4>
                 <p class="subtitle is-6 light-text">
@@ -74,9 +74,9 @@
           <div class="column is-3">
             <div class="card card-icon-box">
               <div class="card-content">
-                <V-IconBox size="medium" color="green">
+                <VIconBox size="medium" color="green">
                   <i aria-hidden="true" class="lnil lnil-cog"></i>
-                </V-IconBox>
+                </VIconBox>
 
                 <h4 class="title is-5">Icon title</h4>
                 <p class="subtitle is-6 light-text">
@@ -89,9 +89,9 @@
           <div class="column is-3">
             <div class="card card-icon-box">
               <div class="card-content">
-                <V-IconBox size="medium" color="yellow">
+                <VIconBox size="medium" color="yellow">
                   <i aria-hidden="true" class="lnil lnil-plug"></i>
-                </V-IconBox>
+                </VIconBox>
 
                 <h4 class="title is-5">Icon title</h4>
                 <p class="subtitle is-6 light-text">
@@ -104,9 +104,9 @@
           <div class="column is-3">
             <div class="card card-icon-box">
               <div class="card-content">
-                <V-IconBox size="medium" color="orange">
+                <VIconBox size="medium" color="orange">
                   <i aria-hidden="true" class="lnil lnil-folder-alt"></i>
-                </V-IconBox>
+                </VIconBox>
 
                 <h4 class="title is-5">Icon title</h4>
                 <p class="subtitle is-6 light-text">
@@ -119,9 +119,9 @@
           <div class="column is-3">
             <div class="card card-icon-box">
               <div class="card-content">
-                <V-IconBox size="medium" color="info">
+                <VIconBox size="medium" color="info">
                   <i aria-hidden="true" class="lnil lnil-timer"></i>
-                </V-IconBox>
+                </VIconBox>
 
                 <h4 class="title is-5">Icon title</h4>
                 <p class="subtitle is-6 light-text">
@@ -134,9 +134,9 @@
           <div class="column is-3">
             <div class="card card-icon-box">
               <div class="card-content">
-                <V-IconBox size="medium" color="blue">
+                <VIconBox size="medium" color="blue">
                   <i aria-hidden="true" class="lnil lnil-pie-chart-alt"></i>
-                </V-IconBox>
+                </VIconBox>
 
                 <h4 class="title is-5">Icon title</h4>
                 <p class="subtitle is-6 light-text">
@@ -149,9 +149,9 @@
           <div class="column is-3">
             <div class="card card-icon-box">
               <div class="card-content">
-                <V-IconBox size="medium" color="purple">
+                <VIconBox size="medium" color="purple">
                   <i aria-hidden="true" class="lnil lnil-licencse"></i>
-                </V-IconBox>
+                </VIconBox>
 
                 <h4 class="title is-5">Icon title</h4>
                 <p class="subtitle is-6 light-text">
@@ -164,9 +164,9 @@
           <div class="column is-3">
             <div class="card card-icon-box">
               <div class="card-content">
-                <V-IconBox size="medium" color="green">
+                <VIconBox size="medium" color="green">
                   <i aria-hidden="true" class="lnil lnil-grow"></i>
-                </V-IconBox>
+                </VIconBox>
 
                 <h4 class="title is-5">Icon title</h4>
                 <p class="subtitle is-6 light-text">
@@ -179,9 +179,9 @@
           <div class="column is-3">
             <div class="card card-icon-box">
               <div class="card-content">
-                <V-IconBox size="medium" color="yellow">
+                <VIconBox size="medium" color="yellow">
                   <i aria-hidden="true" class="lnil lnil-bank"></i>
-                </V-IconBox>
+                </VIconBox>
 
                 <h4 class="title is-5">Icon title</h4>
                 <p class="subtitle is-6 light-text">
@@ -200,7 +200,7 @@
           </div>
           <div class="head-action">
             <div class="buttons">
-              <V-Button
+              <VButton
                 class="action-button"
                 color="primary"
                 rounded
@@ -208,7 +208,7 @@
                 href="https://docs.cssninja.io/vuero"
               >
                 Read the Docs
-              </V-Button>
+              </VButton>
               <a
                 href="https://cssninja.io"
                 target="_blank"

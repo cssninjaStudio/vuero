@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-SwitchBlock Props
+### VSwitchBlock Props
 
-Here is the full props available for `<V-SwitchBlock />` component:
+Here is the full props available for `<VSwitchBlock />` component:
 
 | Props      | Default                                       | Type                                              |
 | ---------- | --------------------------------------------- | ------------------------------------------------- |

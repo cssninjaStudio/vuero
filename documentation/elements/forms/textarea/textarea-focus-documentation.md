@@ -21,64 +21,64 @@ const textarea = ref('')
 
 <template>
   <!-- is-primary-focus -->
-  <V-Field>
-    <V-Control>
+  <VField>
+    <VControl>
       <textarea
         v-model="textarea"
         class="textarea is-primary-focus"
         rows="2"
         placeholder="Primary..."
       ></textarea>
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 
   <!-- is-success-focus -->
-  <V-Field>
-    <V-Control>
+  <VField>
+    <VControl>
       <textarea
         v-model="textarea"
         class="textarea is-success-focus"
         rows="2"
         placeholder="Success..."
       ></textarea>
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 
   <!-- is-info-focus -->
-  <V-Field>
-    <V-Control>
+  <VField>
+    <VControl>
       <textarea
         v-model="textarea"
         class="textarea is-info-focus"
         rows="2"
         placeholder="Info..."
       ></textarea>
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 
   <!-- is-warning-focus -->
-  <V-Field>
-    <V-Control>
+  <VField>
+    <VControl>
       <textarea
         v-model="textarea"
         class="textarea is-warning-focus"
         rows="2"
         placeholder="Warning..."
       ></textarea>
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 
   <!-- is-danger-focus -->
-  <V-Field>
-    <V-Control>
+  <VField>
+    <VControl>
       <textarea
         v-model="textarea"
         class="textarea is-danger-focus"
         rows="2"
         placeholder="Danger..."
       ></textarea>
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -87,56 +87,56 @@ const textarea = ref('')
 <!--example-->
 
 <div>
-  <V-Field>
-    <V-Control>
+  <VField>
+    <VControl>
       <textarea
         v-model="frontmatter.state.textarea"
         class="textarea is-primary-focus"
         rows="2"
         placeholder="Primary..."
       ></textarea>
-    </V-Control>
-  </V-Field>
-  <V-Field>
-    <V-Control>
+    </VControl>
+  </VField>
+  <VField>
+    <VControl>
       <textarea
         v-model="frontmatter.state.textarea"
         class="textarea is-success-focus"
         rows="2"
         placeholder="Success..."
       ></textarea>
-    </V-Control>
-  </V-Field>
-  <V-Field>
-    <V-Control>
+    </VControl>
+  </VField>
+  <VField>
+    <VControl>
       <textarea
         v-model="frontmatter.state.textarea"
         class="textarea is-info-focus"
         rows="2"
         placeholder="Info..."
       ></textarea>
-    </V-Control>
-  </V-Field>
-  <V-Field>
-    <V-Control>
+    </VControl>
+  </VField>
+  <VField>
+    <VControl>
       <textarea
         v-model="frontmatter.state.textarea"
         class="textarea is-warning-focus"
         rows="2"
         placeholder="Warning..."
       ></textarea>
-    </V-Control>
-  </V-Field>
-  <V-Field>
-    <V-Control>
+    </VControl>
+  </VField>
+  <VField>
+    <VControl>
       <textarea
         v-model="frontmatter.state.textarea"
         class="textarea is-danger-focus"
         rows="2"
         placeholder="Danger..."
       ></textarea>
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 </div>
 
 <!--/example-->

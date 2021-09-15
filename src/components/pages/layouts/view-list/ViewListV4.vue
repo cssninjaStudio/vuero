@@ -1,8 +1,24 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 
-import { recipes } from '/@src/data/layouts/view-list-v4'
+import type { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
+import * as listData from '/@src/data/layouts/view-list-v4'
 import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+
+export interface RecipeData {
+  icon: string
+  name: string
+  category: string
+  duration: string
+  attachments: number
+  author: {
+    avatar: string
+    name: string
+  }
+  followers: VAvatarProps[]
+}
+
+const recipes = listData.recipes as RecipeData[]
 
 const props = withDefaults(
   defineProps<{
@@ -36,13 +52,13 @@ const filteredData = computed(() => {
 <template>
   <div>
     <div class="list-view-toolbar is-reversed">
-      <V-Control icon="feather:search">
+      <VControl icon="feather:search">
         <input
           v-model="filters"
           class="input custom-text-filter"
           placeholder="Search..."
         />
-      </V-Control>
+      </VControl>
 
       <div class="tabs-inner">
         <div class="tabs">
@@ -62,7 +78,7 @@ const filteredData = computed(() => {
     <!--List-->
     <div class="list-view list-view-v4">
       <!--List Empty Search Placeholder -->
-      <V-PlaceholderPage
+      <VPlaceholderPage
         :class="[filteredData.length !== 0 && 'is-hidden']"
         title="We couldn't find any matching results."
         subtitle="Too bad. Looks like we couldn't find any matching results for the
@@ -73,16 +89,16 @@ const filteredData = computed(() => {
         <template #image>
           <img
             class="light-image"
-            src="/@src/assets/illustrations/placeholders/search-3.svg?url"
+            src="/@src/assets/illustrations/placeholders/search-3.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/@src/assets/illustrations/placeholders/search-3-dark.svg?url"
+            src="/@src/assets/illustrations/placeholders/search-3-dark.svg"
             alt=""
           />
         </template>
-      </V-PlaceholderPage>
+      </VPlaceholderPage>
 
       <!--Active Tab-->
       <div
@@ -94,8 +110,8 @@ const filteredData = computed(() => {
           <transition-group name="list-complete" tag="div">
             <!--Item-->
             <div
-              v-for="item in filteredData"
-              :key="item.id"
+              v-for="(item, key) in filteredData"
+              :key="key"
               class="list-view-item"
             >
               <div class="list-view-item-inner">
@@ -153,7 +169,7 @@ const filteredData = computed(() => {
                 </div>
                 <div class="meta-right">
                   <div class="network">
-                    <V-AvatarStack
+                    <VAvatarStack
                       :avatars="item.followers"
                       size="small"
                       :limit="3"
@@ -187,7 +203,7 @@ const filteredData = computed(() => {
           </transition-group>
         </div>
 
-        <V-FlexPagination
+        <VFlexPagination
           v-if="filteredData.length > 5"
           :item-per-page="10"
           :total-items="873"
@@ -204,7 +220,7 @@ const filteredData = computed(() => {
       >
         <div class="list-view-inner">
           <!--Empty placeholder-->
-          <V-PlaceholderPage
+          <VPlaceholderPage
             title="No saved recipes."
             subtitle="Looks like you don't have any saved recipes for the moment.
                 Start by exploring the latest ones and add your favorites to the
@@ -214,16 +230,16 @@ const filteredData = computed(() => {
             <template #image>
               <img
                 class="light-image"
-                src="/@src/assets/illustrations/placeholders/cooking.svg?url"
+                src="/@src/assets/illustrations/placeholders/cooking.svg"
                 alt=""
               />
               <img
                 class="dark-image"
-                src="/@src/assets/illustrations/placeholders/cooking-dark.svg?url"
+                src="/@src/assets/illustrations/placeholders/cooking-dark.svg"
                 alt=""
               />
             </template>
-          </V-PlaceholderPage>
+          </VPlaceholderPage>
         </div>
       </div>
     </div>

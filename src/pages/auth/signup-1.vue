@@ -176,40 +176,40 @@ onUnmounted(() => {
                   <form class="signup-form is-mobile-spaced" @submit.prevent>
                     <div class="columns is-multiline">
                       <div class="column is-6">
-                        <V-Field>
-                          <V-Control>
+                        <VField>
+                          <VControl>
                             <input
                               type="text"
                               class="input"
                               autocomplete="given-name"
                             />
                             <div class="auth-label">First Name</div>
-                          </V-Control>
-                        </V-Field>
+                          </VControl>
+                        </VField>
                       </div>
                       <div class="column is-6">
-                        <V-Field>
-                          <V-Control>
+                        <VField>
+                          <VControl>
                             <input
                               type="text"
                               class="input"
                               autocomplete="family-name"
                             />
                             <div class="auth-label">Last Name</div>
-                          </V-Control>
-                        </V-Field>
+                          </VControl>
+                        </VField>
                       </div>
                       <div class="column is-12">
-                        <V-Field>
-                          <V-Control>
+                        <VField>
+                          <VControl>
                             <input
                               type="text"
                               class="input"
                               autocomplete="email"
                             />
                             <div class="auth-label">Email Address</div>
-                          </V-Control>
-                        </V-Field>
+                          </VControl>
+                        </VField>
                       </div>
                       <div class="column is-12">
                         <div class="signup-type">
@@ -251,7 +251,7 @@ onUnmounted(() => {
                     </div>
 
                     <div class="button-wrap has-help">
-                      <V-Button
+                      <VButton
                         color="primary"
                         size="big"
                         bold
@@ -260,7 +260,7 @@ onUnmounted(() => {
                         @click="step++"
                       >
                         Continue
-                      </V-Button>
+                      </VButton>
                       <span>
                         Or
                         <RouterLink :to="{ name: 'auth-login-1' }">
@@ -329,7 +329,7 @@ onUnmounted(() => {
                   </div>
                 </div>
                 <div class="button-wrap is-centered has-text-centered">
-                  <V-Button
+                  <VButton
                     color="primary"
                     size="big"
                     rounded
@@ -337,7 +337,7 @@ onUnmounted(() => {
                     @click="step++"
                   >
                     Continue
-                  </V-Button>
+                  </VButton>
                 </div>
               </form>
             </div>
@@ -358,44 +358,44 @@ onUnmounted(() => {
                 <form class="signup-form" @submit.prevent="handleSignup">
                   <div class="columns is-multiline">
                     <div class="column is-12">
-                      <V-Field>
-                        <V-Control>
+                      <VField>
+                        <VControl>
                           <input
                             type="text"
                             class="input"
                             autocomplete="username"
                           />
                           <div class="auth-label">Username</div>
-                        </V-Control>
-                      </V-Field>
+                        </VControl>
+                      </VField>
                     </div>
                     <div class="column is-12">
-                      <V-Field>
-                        <V-Control>
+                      <VField>
+                        <VControl>
                           <input
                             type="password"
                             class="input"
                             autocomplete="new-password"
                           />
                           <div class="auth-label">Password</div>
-                        </V-Control>
-                      </V-Field>
+                        </VControl>
+                      </VField>
                     </div>
                     <div class="column is-12">
-                      <V-Field>
-                        <V-Control>
+                      <VField>
+                        <VControl>
                           <input
                             type="password"
                             class="input"
                             autocomplete="new-password"
                           />
                           <div class="auth-label">Confirm Password</div>
-                        </V-Control>
-                      </V-Field>
+                        </VControl>
+                      </VField>
                     </div>
                     <div class="column is-12">
-                      <V-Field>
-                        <V-Control class="has-switch">
+                      <VField>
+                        <VControl class="has-switch">
                           <label for="send-marketing">
                             <span>
                               Send me marketing and transaction emails
@@ -412,13 +412,13 @@ onUnmounted(() => {
                             />
                             <i aria-hidden="true"></i>
                           </label>
-                        </V-Control>
-                      </V-Field>
+                        </VControl>
+                      </VField>
                     </div>
                   </div>
 
                   <div class="button-wrap is-centered has-text-centered">
-                    <V-Button
+                    <VButton
                       size="big"
                       color="primary"
                       rounded
@@ -427,7 +427,7 @@ onUnmounted(() => {
                       :loading="isLoading"
                     >
                       Done
-                    </V-Button>
+                    </VButton>
                   </div>
                 </form>
               </div>
@@ -438,7 +438,7 @@ onUnmounted(() => {
     </div>
 
     <!-- upload modal -->
-    <V-Modal
+    <VModal
       :open="uploadModalOpen"
       title="Upload and crop your picture"
       actions="center"
@@ -447,21 +447,21 @@ onUnmounted(() => {
     >
       <template #content>
         <div class="has-text-centered">
-          <div class="upload-demo-wrap"><V-Avatar size="big" /></div>
+          <div class="upload-demo-wrap"><VAvatar size="big" /></div>
 
           <small class="help-text">Use the slider to resize the image</small>
 
-          <V-Field class="resize-handler">
-            <V-Control>
+          <VField class="resize-handler">
+            <VControl>
               <Slider v-model="resizeValue" :tooltips="false" />
-            </V-Control>
-          </V-Field>
+            </VControl>
+          </VField>
         </div>
       </template>
       <template #cancel><wbr /></template>
       <template #action>
-        <V-Field grouped>
-          <V-Control>
+        <VField grouped>
+          <VControl>
             <div class="file">
               <label class="file-label">
                 <input class="file-input" type="file" name="resume" />
@@ -473,15 +473,15 @@ onUnmounted(() => {
                 </span>
               </label>
             </div>
-          </V-Control>
-          <V-Control>
-            <V-Button class="upload-result" size="big" outlined disabled>
+          </VControl>
+          <VControl>
+            <VButton class="upload-result" size="big" outlined disabled>
               Confirm
-            </V-Button>
-          </V-Control>
-        </V-Field>
+            </VButton>
+          </VControl>
+        </VField>
       </template>
-    </V-Modal>
+    </VModal>
   </div>
 </template>
 

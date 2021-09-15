@@ -1,6 +1,6 @@
 ### Advanced table
 
-Vuero provides a custom table component called `<V-FlexTable />`.
+Vuero provides a custom table component called `<VFlexTable />`.
 It looks like a table but is not an Html5 table.
 Instead, it uses the flexbox technology and is fully responsive.
 Check the markup for more details about usage.
@@ -38,20 +38,20 @@ const data = [
     <!--Custom table toolbar-->
     <div class="flex-table-toolbar">
       <div class="left">
-        <V-Field>
-          <V-Control icon="feather:search">
+        <VField>
+          <VControl icon="feather:search">
             <input
               type="text"
               class="input is-rounded"
               placeholder="Filter..."
             />
-          </V-Control>
-        </V-Field>
+          </VControl>
+        </VField>
       </div>
 
       <div class="right">
-        <V-Field>
-          <V-Control>
+        <VField>
+          <VControl>
             <div class="select is-rounded">
               <select>
                 <option selected>10 results per page</option>
@@ -60,13 +60,13 @@ const data = [
                 <option>100 results per page</option>
               </select>
             </div>
-          </V-Control>
-        </V-Field>
+          </VControl>
+        </VField>
       </div>
     </div>
 
-    <!--V-FlexTable-->
-    <V-FlexTable>
+    <!--VFlexTable-->
+    <VFlexTable>
       <template #header>
         <div class="flex-table-header">
           <span class="is-grow">User</span>
@@ -78,12 +78,12 @@ const data = [
         </div>
       </template>
       <template #body>
-        <V-FlexTableRowMedia :rows="data" />
+        <VFlexTableRowMedia :rows="data" />
       </template>
-    </V-FlexTable>
+    </VFlexTable>
 
     <!--Table Pagination-->
-    <V-FlexPagination
+    <VFlexPagination
       :item-per-page="10"
       :total-items="873"
       :current-page="42"

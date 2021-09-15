@@ -12,32 +12,32 @@
           <!--Hexagon shapes-->
           <img
             class="hexagon hexagon-1 light-image-l"
-            src="/images/icons/hexagons/green.svg?url"
+            src="/images/icons/hexagons/green.svg"
             alt=""
           />
           <img
             class="hexagon hexagon-1 dark-image-l"
-            src="/images/icons/hexagons/green-heavy.svg?url"
+            src="/images/icons/hexagons/green-heavy.svg"
             alt=""
           />
           <img
             class="hexagon hexagon-2 light-image-l"
-            src="/images/icons/hexagons/orange.svg?url"
+            src="/images/icons/hexagons/orange.svg"
             alt=""
           />
           <img
             class="hexagon hexagon-2 dark-image-l"
-            src="/images/icons/hexagons/orange-heavy.svg?url"
+            src="/images/icons/hexagons/orange-heavy.svg"
             alt=""
           />
           <img
             class="hexagon hexagon-3 light-image-l"
-            src="/images/icons/hexagons/accent.svg?url"
+            src="/images/icons/hexagons/accent.svg"
             alt=""
           />
           <img
             class="hexagon hexagon-3 dark-image-l"
-            src="/images/icons/hexagons/accent-heavy.svg?url"
+            src="/images/icons/hexagons/accent-heavy.svg"
             alt=""
           />
 
@@ -82,7 +82,7 @@
       <div class="stacks">
         <tippy class="has-help-cursor" interactive placement="top">
           <div class="stack">
-            <img src="/images/icons/stacks/vuejs.svg?url" alt="" />
+            <img src="/images/icons/stacks/vuejs.svg" alt="" />
           </div>
           <template #content>
             <StackPopoverContent
@@ -101,7 +101,7 @@
 
         <tippy class="has-help-cursor" interactive placement="top">
           <div class="stack">
-            <img src="/images/icons/stacks/vite.svg?url" alt="" />
+            <img src="/images/icons/stacks/vite.svg" alt="" />
           </div>
           <template #content>
             <StackPopoverContent
@@ -120,7 +120,7 @@
 
         <tippy class="has-help-cursor" interactive placement="top">
           <div class="stack">
-            <img src="/images/icons/stacks/bulma.svg?url" alt="" />
+            <img src="/images/icons/stacks/bulma.svg" alt="" />
           </div>
           <template #content>
             <StackPopoverContent
@@ -139,7 +139,7 @@
 
         <tippy class="has-help-cursor" interactive placement="top">
           <div class="stack">
-            <img src="/images/icons/stacks/sass.svg?url" alt="" />
+            <img src="/images/icons/stacks/sass.svg" alt="" />
           </div>
           <template #content>
             <StackPopoverContent
@@ -158,7 +158,7 @@
 
         <tippy class="has-help-cursor" interactive placement="top">
           <div class="stack">
-            <img src="/images/icons/stacks/typescript.svg?url" alt="" />
+            <img src="/images/icons/stacks/typescript.svg" alt="" />
           </div>
           <template #content>
             <StackPopoverContent

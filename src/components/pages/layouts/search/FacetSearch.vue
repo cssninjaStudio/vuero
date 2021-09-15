@@ -98,9 +98,9 @@ const activeTab = ref<TabId>('all')
 <template>
   <div class="search-results-wrapper">
     <div class="search-results-header">
-      <V-Control icon="feather:search">
+      <VControl icon="feather:search">
         <input class="input" placeholder="Search again..." />
-      </V-Control>
+      </VControl>
 
       <div class="search-info">
         <span>54 results found</span>
@@ -131,8 +131,8 @@ const activeTab = ref<TabId>('all')
           <div class="filter-box">
             <h4 class="dark-inverted">Publication</h4>
 
-            <V-Field>
-              <V-Control>
+            <VField>
+              <VControl>
                 <label class="checkbox is-circle">
                   <input type="checkbox" />
                   <span></span>
@@ -140,12 +140,12 @@ const activeTab = ref<TabId>('all')
                 </label>
 
                 <div class="control-end">
-                  <V-Tag label="23" rounded />
+                  <VTag label="23" rounded />
                 </div>
-              </V-Control>
-            </V-Field>
-            <V-Field>
-              <V-Control>
+              </VControl>
+            </VField>
+            <VField>
+              <VControl>
                 <label class="checkbox is-circle">
                   <input type="checkbox" />
                   <span></span>
@@ -153,12 +153,12 @@ const activeTab = ref<TabId>('all')
                 </label>
 
                 <div class="control-end">
-                  <V-Tag label="31" rounded />
+                  <VTag label="31" rounded />
                 </div>
-              </V-Control>
-            </V-Field>
-            <V-Field>
-              <V-Control>
+              </VControl>
+            </VField>
+            <VField>
+              <VControl>
                 <label class="checkbox is-circle">
                   <input type="checkbox" />
                   <span></span>
@@ -166,17 +166,17 @@ const activeTab = ref<TabId>('all')
                 </label>
 
                 <div class="control-end">
-                  <V-Tag label="12" rounded />
+                  <VTag label="12" rounded />
                 </div>
-              </V-Control>
-            </V-Field>
+              </VControl>
+            </VField>
           </div>
 
           <div class="filter-box">
             <h4 class="dark-inverted">Type</h4>
 
-            <V-Field>
-              <V-Control>
+            <VField>
+              <VControl>
                 <label class="checkbox is-circle">
                   <input type="checkbox" />
                   <span></span>
@@ -184,12 +184,12 @@ const activeTab = ref<TabId>('all')
                 </label>
 
                 <div class="control-end">
-                  <V-Tag label="19" rounded />
+                  <VTag label="19" rounded />
                 </div>
-              </V-Control>
-            </V-Field>
-            <V-Field>
-              <V-Control>
+              </VControl>
+            </VField>
+            <VField>
+              <VControl>
                 <label class="checkbox is-circle">
                   <input type="checkbox" />
                   <span></span>
@@ -197,12 +197,12 @@ const activeTab = ref<TabId>('all')
                 </label>
 
                 <div class="control-end">
-                  <V-Tag label="174" rounded />
+                  <VTag label="174" rounded />
                 </div>
-              </V-Control>
-            </V-Field>
-            <V-Field>
-              <V-Control>
+              </VControl>
+            </VField>
+            <VField>
+              <VControl>
                 <label class="checkbox is-circle">
                   <input type="checkbox" />
                   <span></span>
@@ -210,12 +210,12 @@ const activeTab = ref<TabId>('all')
                 </label>
 
                 <div class="control-end">
-                  <V-Tag label="71" rounded />
+                  <VTag label="71" rounded />
                 </div>
-              </V-Control>
-            </V-Field>
-            <V-Field>
-              <V-Control>
+              </VControl>
+            </VField>
+            <VField>
+              <VControl>
                 <label class="checkbox is-circle">
                   <input type="checkbox" />
                   <span></span>
@@ -223,12 +223,12 @@ const activeTab = ref<TabId>('all')
                 </label>
 
                 <div class="control-end">
-                  <V-Tag label="54" rounded />
+                  <VTag label="54" rounded />
                 </div>
-              </V-Control>
-            </V-Field>
-            <V-Field>
-              <V-Control>
+              </VControl>
+            </VField>
+            <VField>
+              <VControl>
                 <label class="checkbox is-circle">
                   <input type="checkbox" />
                   <span></span>
@@ -236,17 +236,17 @@ const activeTab = ref<TabId>('all')
                 </label>
 
                 <div class="control-end">
-                  <V-Tag label="8" rounded />
+                  <VTag label="8" rounded />
                 </div>
-              </V-Control>
-            </V-Field>
+              </VControl>
+            </VField>
           </div>
 
           <div class="filter-box">
             <h4 class="dark-inverted">Topics</h4>
 
-            <V-Field>
-              <V-Control>
+            <VField>
+              <VControl>
                 <label class="checkbox is-circle">
                   <input type="checkbox" />
                   <span></span>
@@ -254,12 +254,12 @@ const activeTab = ref<TabId>('all')
                 </label>
 
                 <div class="control-end">
-                  <V-Tag label="45" rounded />
+                  <VTag label="45" rounded />
                 </div>
-              </V-Control>
-            </V-Field>
-            <V-Field>
-              <V-Control>
+              </VControl>
+            </VField>
+            <VField>
+              <VControl>
                 <label class="checkbox is-circle">
                   <input type="checkbox" />
                   <span></span>
@@ -267,12 +267,12 @@ const activeTab = ref<TabId>('all')
                 </label>
 
                 <div class="control-end">
-                  <V-Tag label="12" rounded />
+                  <VTag label="12" rounded />
                 </div>
-              </V-Control>
-            </V-Field>
-            <V-Field>
-              <V-Control>
+              </VControl>
+            </VField>
+            <VField>
+              <VControl>
                 <label class="checkbox is-circle">
                   <input type="checkbox" />
                   <span></span>
@@ -280,12 +280,12 @@ const activeTab = ref<TabId>('all')
                 </label>
 
                 <div class="control-end">
-                  <V-Tag label="36" rounded />
+                  <VTag label="36" rounded />
                 </div>
-              </V-Control>
-            </V-Field>
-            <V-Field>
-              <V-Control>
+              </VControl>
+            </VField>
+            <VField>
+              <VControl>
                 <label class="checkbox is-circle">
                   <input type="checkbox" />
                   <span></span>
@@ -293,12 +293,12 @@ const activeTab = ref<TabId>('all')
                 </label>
 
                 <div class="control-end">
-                  <V-Tag label="3" rounded />
+                  <VTag label="3" rounded />
                 </div>
-              </V-Control>
-            </V-Field>
-            <V-Field>
-              <V-Control>
+              </VControl>
+            </VField>
+            <VField>
+              <VControl>
                 <label class="checkbox is-circle">
                   <input type="checkbox" />
                   <span></span>
@@ -306,10 +306,10 @@ const activeTab = ref<TabId>('all')
                 </label>
 
                 <div class="control-end">
-                  <V-Tag label="7" rounded />
+                  <VTag label="7" rounded />
                 </div>
-              </V-Control>
-            </V-Field>
+              </VControl>
+            </VField>
           </div>
         </div>
 
@@ -322,7 +322,7 @@ const activeTab = ref<TabId>('all')
             <!--Search Results Group-->
             <div class="search-results-group">
               <div class="group-header">
-                <V-IconWrap icon="feather:user" />
+                <VIconWrap icon="feather:user" />
                 <h4>People</h4>
               </div>
 
@@ -333,14 +333,14 @@ const activeTab = ref<TabId>('all')
                   :key="index"
                   class="search-results-item"
                 >
-                  <V-Block :title="person.name" :subtitle="person.role" center>
+                  <VBlock :title="person.name" :subtitle="person.role" center>
                     <template #icon>
-                      <V-Avatar size="medium" :picture="person.avatar" />
+                      <VAvatar size="medium" :picture="person.avatar" />
                     </template>
                     <template #action>
-                      <V-Button dark-outlined> Profile </V-Button>
+                      <VButton dark-outlined> Profile </VButton>
                     </template>
-                  </V-Block>
+                  </VBlock>
                 </div>
               </div>
             </div>
@@ -348,7 +348,7 @@ const activeTab = ref<TabId>('all')
             <!--Search Results Group-->
             <div class="search-results-group">
               <div class="group-header">
-                <V-IconWrap icon="feather:file-text" />
+                <VIconWrap icon="feather:file-text" />
 
                 <h4>Records</h4>
               </div>
@@ -360,18 +360,18 @@ const activeTab = ref<TabId>('all')
                   :key="index"
                   class="search-results-item"
                 >
-                  <V-Block :title="record.name" :subtitle="record.date" center>
+                  <VBlock :title="record.name" :subtitle="record.date" center>
                     <template #icon>
-                      <V-Avatar
+                      <VAvatar
                         size="medium"
                         :picture="record.preview"
                         :squared="record.squared"
                       />
                     </template>
                     <template #action>
-                      <V-Button dark-outlined> Details </V-Button>
+                      <VButton dark-outlined> Details </VButton>
                     </template>
-                  </V-Block>
+                  </VBlock>
                 </div>
               </div>
             </div>
@@ -389,14 +389,14 @@ const activeTab = ref<TabId>('all')
                   :key="index"
                   class="search-results-item"
                 >
-                  <V-Block :title="person.name" :subtitle="person.role" center>
+                  <VBlock :title="person.name" :subtitle="person.role" center>
                     <template #icon>
-                      <V-Avatar size="medium" :picture="person.avatar" />
+                      <VAvatar size="medium" :picture="person.avatar" />
                     </template>
                     <template #action>
-                      <V-Button dark-outlined> Profile </V-Button>
+                      <VButton dark-outlined> Profile </VButton>
                     </template>
-                  </V-Block>
+                  </VBlock>
                 </div>
               </div>
             </div>
@@ -415,18 +415,18 @@ const activeTab = ref<TabId>('all')
                   :key="index"
                   class="search-results-item"
                 >
-                  <V-Block :title="record.name" :subtitle="record.date" center>
+                  <VBlock :title="record.name" :subtitle="record.date" center>
                     <template #icon>
-                      <V-Avatar
+                      <VAvatar
                         size="medium"
                         :picture="record.preview"
                         :squared="record.squared"
                       />
                     </template>
                     <template #action>
-                      <V-Button dark-outlined> Details </V-Button>
+                      <VButton dark-outlined> Details </VButton>
                     </template>
-                  </V-Block>
+                  </VBlock>
                 </div>
               </div>
             </div>

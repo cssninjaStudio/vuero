@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-AnimatedCheckbox Props
+### VAnimatedCheckbox Props
 
-Here is the full props available for `<V-AnimatedCheckbox />` component:
+Here is the full props available for `<VAnimatedCheckbox />` component:
 
 | Props                        | Default                                       | Type                                                        |
 | ---------------------------- | --------------------------------------------- | ----------------------------------------------------------- |

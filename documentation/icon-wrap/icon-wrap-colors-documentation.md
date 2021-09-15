@@ -1,34 +1,34 @@
 ### Colors
 
-Customize `<V-IconWrap />` with the `color` and `hasBackground` props.  
+Customize `<VIconWrap />` with the `color` and `hasBackground` props.  
 See code for more details about usage.
 
 <!--code-->
 
 ```vue
 <template>
-  <V-Flex alignItems="flex-end" columnGap=".25rem">
-    <V-IconWrap icon="feather:star" color="primary" />
-    <V-IconWrap icon="feather:star" color="secondary" />
-    <V-IconWrap icon="feather:star" color="success" />
-    <V-IconWrap icon="feather:star" color="link" />
-    <V-IconWrap icon="feather:star" color="info" />
-    <V-IconWrap icon="feather:star" color="warning" />
-    <V-IconWrap icon="feather:star" color="danger" />
-    <V-IconWrap icon="feather:star" color="black" />
-    <V-IconWrap icon="feather:star" color="white" />
-  </V-Flex>
-  <V-Flex class="mt-4" alignItems="flex-end" columnGap=".25rem">
-    <V-IconWrap icon="feather:star" has-background color="primary" />
-    <V-IconWrap icon="feather:star" has-background color="secondary" />
-    <V-IconWrap icon="feather:star" has-background color="success" />
-    <V-IconWrap icon="feather:star" has-background color="link" />
-    <V-IconWrap icon="feather:star" has-background color="info" />
-    <V-IconWrap icon="feather:star" has-background color="warning" />
-    <V-IconWrap icon="feather:star" has-background color="danger" />
-    <V-IconWrap icon="feather:star" has-background color="black" />
-    <V-IconWrap icon="feather:star" has-background color="white" />
-  </V-Flex>
+  <VFlex alignItems="flex-end" columnGap=".25rem">
+    <VIconWrap icon="feather:star" color="primary" />
+    <VIconWrap icon="feather:star" color="secondary" />
+    <VIconWrap icon="feather:star" color="success" />
+    <VIconWrap icon="feather:star" color="link" />
+    <VIconWrap icon="feather:star" color="info" />
+    <VIconWrap icon="feather:star" color="warning" />
+    <VIconWrap icon="feather:star" color="danger" />
+    <VIconWrap icon="feather:star" color="black" />
+    <VIconWrap icon="feather:star" color="white" />
+  </VFlex>
+  <VFlex class="mt-4" alignItems="flex-end" columnGap=".25rem">
+    <VIconWrap icon="feather:star" has-background color="primary" />
+    <VIconWrap icon="feather:star" has-background color="secondary" />
+    <VIconWrap icon="feather:star" has-background color="success" />
+    <VIconWrap icon="feather:star" has-background color="link" />
+    <VIconWrap icon="feather:star" has-background color="info" />
+    <VIconWrap icon="feather:star" has-background color="warning" />
+    <VIconWrap icon="feather:star" has-background color="danger" />
+    <VIconWrap icon="feather:star" has-background color="black" />
+    <VIconWrap icon="feather:star" has-background color="white" />
+  </VFlex>
 </template>
 ```
 
@@ -37,28 +37,28 @@ See code for more details about usage.
 <!--example-->
 
 <div>
-  <V-Flex alignItems="flex-end" columnGap=".25rem">
-    <V-IconWrap icon="feather:star" color="primary" />
-    <V-IconWrap icon="feather:star" color="secondary" />
-    <V-IconWrap icon="feather:star" color="success" />
-    <V-IconWrap icon="feather:star" color="link" />
-    <V-IconWrap icon="feather:star" color="info" />
-    <V-IconWrap icon="feather:star" color="warning" />
-    <V-IconWrap icon="feather:star" color="danger" />
-    <V-IconWrap icon="feather:star" color="black" />
-    <V-IconWrap icon="feather:star" color="white" />
-  </V-Flex>
-  <V-Flex class="mt-4" alignItems="flex-end" columnGap=".25rem">
-    <V-IconWrap icon="feather:star" has-background color="primary" />
-    <V-IconWrap icon="feather:star" has-background color="secondary" />
-    <V-IconWrap icon="feather:star" has-background color="success" />
-    <V-IconWrap icon="feather:star" has-background color="link" />
-    <V-IconWrap icon="feather:star" has-background color="info" />
-    <V-IconWrap icon="feather:star" has-background color="warning" />
-    <V-IconWrap icon="feather:star" has-background color="danger" />
-    <V-IconWrap icon="feather:star" has-background color="black" />
-    <V-IconWrap icon="feather:star" has-background color="white" />
-  </V-Flex>
+  <VFlex alignItems="flex-end" columnGap=".25rem">
+    <VIconWrap icon="feather:star" color="primary" />
+    <VIconWrap icon="feather:star" color="secondary" />
+    <VIconWrap icon="feather:star" color="success" />
+    <VIconWrap icon="feather:star" color="link" />
+    <VIconWrap icon="feather:star" color="info" />
+    <VIconWrap icon="feather:star" color="warning" />
+    <VIconWrap icon="feather:star" color="danger" />
+    <VIconWrap icon="feather:star" color="black" />
+    <VIconWrap icon="feather:star" color="white" />
+  </VFlex>
+  <VFlex class="mt-4" alignItems="flex-end" columnGap=".25rem">
+    <VIconWrap icon="feather:star" has-background color="primary" />
+    <VIconWrap icon="feather:star" has-background color="secondary" />
+    <VIconWrap icon="feather:star" has-background color="success" />
+    <VIconWrap icon="feather:star" has-background color="link" />
+    <VIconWrap icon="feather:star" has-background color="info" />
+    <VIconWrap icon="feather:star" has-background color="warning" />
+    <VIconWrap icon="feather:star" has-background color="danger" />
+    <VIconWrap icon="feather:star" has-background color="black" />
+    <VIconWrap icon="feather:star" has-background color="white" />
+  </VFlex>
 </div>
 
 <!--/example-->

@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-PlaceloadText Props
+### VPlaceloadText Props
 
-Here is the full props available for `<V-PlaceloadText />` component:
+Here is the full props available for `<VPlaceloadText />` component:
 
 | Props         | Default                                 | Type    |
 | ------------- | --------------------------------------- | ------- |

@@ -7,7 +7,7 @@ state:
 ### Bi-Directional
 
 Inputs can have addons on both sides. You can even attach a select element
-to your `<V-Control />` component. Please refer to the code example
+to your `<VControl />` component. Please refer to the code example
 for more details about usage.
 
 <!--code-->
@@ -20,9 +20,9 @@ const currency = ref('$')
 </script>
 
 <template>
-  <V-Field addons>
+  <VField addons>
     <!-- currency selector -->
-    <V-Control>
+    <VControl>
       <span class="select">
         <select v-model="currency">
           <option value="$">$</option>
@@ -30,23 +30,23 @@ const currency = ref('$')
           <option value="€">€</option>
         </select>
       </span>
-    </V-Control>
+    </VControl>
 
     <!-- amount input -->
-    <V-Control expanded>
+    <VControl expanded>
       <input
         v-model="amount"
         type="text"
         class="input"
         placeholder="Amount of money"
       />
-    </V-Control>
+    </VControl>
 
     <!-- submit -->
-    <V-Control>
+    <VControl>
       <a class="button is-primary">Send Payment</a>
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -54,8 +54,8 @@ const currency = ref('$')
 
 <!--example-->
 
-<V-Field addons>
-  <V-Control>
+<VField addons>
+  <VControl>
     <span class="select">
       <select v-model="frontmatter.state.currency">
         <option value="$">$</option>
@@ -63,18 +63,18 @@ const currency = ref('$')
         <option value="€">€</option>
       </select>
     </span>
-  </V-Control>
-  <V-Control expanded>
+  </VControl>
+  <VControl expanded>
     <input
       v-model="frontmatter.state.amount"
       type="number"
       class="input"
       placeholder="Amount of money"
     />
-  </V-Control>
-  <V-Control>
+  </VControl>
+  <VControl>
     <a class="button is-primary">Send Payment</a>
-  </V-Control>
-</V-Field>
+  </VControl>
+</VField>
 
 <!--/example-->

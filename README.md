@@ -213,7 +213,7 @@ Vuero
 |
 ```
 
-The `components` folder holds all reusable elements. They consist in chunks of code that you can reuse accross your application: it can be a button, a navbar, a content section or whatever you want. You can create as many subfolders as you want to organize your components. `/base` components are all basic reusable blocks like `<v-button>` and `<v-tag>` for example. `/navigation` components are main layout sidebars, navbars and panels. `/pages` represent the inner content of each Vuero page. It is abstracted this way so it can be reused in any kind of layout. `/partials` components are small and miscellaneous components / chunks of pages that are reused accross the entire template.
+The `components` folder holds all reusable elements. They consist in chunks of code that you can reuse accross your application: it can be a button, a navbar, a content section or whatever you want. You can create as many subfolders as you want to organize your components. `/base` components are all basic reusable blocks like `<Vbutton>` and `<Vtag>` for example. `/navigation` components are main layout sidebars, navbars and panels. `/pages` represent the inner content of each Vuero page. It is abstracted this way so it can be reused in any kind of layout. `/partials` components are small and miscellaneous components / chunks of pages that are reused accross the entire template.
 
 **Here is an example of a component:**
 

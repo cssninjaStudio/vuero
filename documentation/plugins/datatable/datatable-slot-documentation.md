@@ -23,7 +23,7 @@ const data = [
 </script>
 
 <template>
-  <V-SimpleDatatables>
+  <VSimpleDatatables>
     <thead>
       <tr>
         <th scope="col">Name</th>
@@ -44,14 +44,14 @@ const data = [
         <td>{{ row[2] }}</td>
         <td>{{ row[3] }}</td>
         <td>
-          <V-Tag
+          <VTag
             :color="row[4] === '100%' ? 'primary' : 'light'"
             :label="row[4]"
           />
         </td>
       </tr>
     </tbody>
-  </V-SimpleDatatables>
+  </VSimpleDatatables>
 </template>
 ```
 

@@ -18,7 +18,7 @@ const errorToast = () => {
 </script>
 
 <template>
-  <V-Button bold @click="errorToast">Error Toast</V-Button>
+  <VButton bold @click="errorToast">Error Toast</VButton>
 </template>
 ```
 

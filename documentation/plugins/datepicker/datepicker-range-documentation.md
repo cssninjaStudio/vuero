@@ -7,7 +7,7 @@ state:
 
 ### DateRangepicker
 
-`<V-Calendar />` can be turned into a date range picker if needed. Check the
+`<VCalendar />` can be turned into a date range picker if needed. Check the
 code example for more details about usage.
 
 <!--code-->
@@ -23,27 +23,27 @@ const date = reactive({
 </script>
 
 <template>
-  <v-date-picker v-model="range" is-range color="green" trim-weeks>
+  <Vdate-picker v-model="range" is-range color="green" trim-weeks>
     <template #default="{ inputValue, inputEvents }">
-      <V-Field addons>
-        <V-Control>
+      <VField addons>
+        <VControl>
           <input
             :value="inputValue.start"
             class="input"
             v-on="inputEvents.start"
           />
-        </V-Control>
-        <V-Control>
+        </VControl>
+        <VControl>
           <a class="button is-static"
             ><i class="iconify" data-icon="feather:arrow-right"></i
           ></a>
-        </V-Control>
-        <V-Control>
+        </VControl>
+        <VControl>
           <input :value="inputValue.end" class="input" v-on="inputEvents.end" />
-        </V-Control>
-      </V-Field>
+        </VControl>
+      </VField>
     </template>
-  </v-date-picker>
+  </Vdate-picker>
 </template>
 ```
 
@@ -51,28 +51,28 @@ const date = reactive({
 
 <!--example-->
 
-<v-date-picker v-model="frontmatter.state.range" is-range color="green" trim-weeks>
+<Vdate-picker v-model="frontmatter.state.range" is-range color="green" trim-weeks>
   <template v-slot="{ inputValue, inputEvents }">
-    <V-Field addons>
-      <V-Control>
+    <VField addons>
+      <VControl>
         <input
           :value="inputValue.start"
           v-on="inputEvents.start"
           class="input"
         />
-      </V-Control>
-      <V-Control>
+      </VControl>
+      <VControl>
         <a class="button is-static"><i class="iconify" data-icon="feather:arrow-right"></i></a>
-      </V-Control>
-      <V-Control>
+      </VControl>
+      <VControl>
         <input
           :value="inputValue.end"
           v-on="inputEvents.end"
           class="input"
         />
-      </V-Control>
-    </V-Field>
+      </VControl>
+    </VField>
   </template>
-</v-date-picker>
+</Vdate-picker>
 
 <!--/example-->

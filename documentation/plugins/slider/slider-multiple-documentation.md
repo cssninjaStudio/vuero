@@ -20,11 +20,11 @@ const value = ref([16, 62])
 </script>
 
 <template>
-  <V-Field class="has-rounded-tooltip">
-    <V-Control>
+  <VField class="has-rounded-tooltip">
+    <VControl>
       <Slider v-model="value" />
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -34,11 +34,11 @@ const value = ref([16, 62])
 
 <div class="columns mt-2">
   <div class="column is-6">
-    <V-Field class="pt-5 px-4 has-rounded-tooltip">
-      <V-Control>
+    <VField class="pt-5 px-4 has-rounded-tooltip">
+      <VControl>
         <Slider v-model="frontmatter.state.value" />
-      </V-Control>
-    </V-Field>
+      </VControl>
+    </VField>
   </div>
 </div>
 

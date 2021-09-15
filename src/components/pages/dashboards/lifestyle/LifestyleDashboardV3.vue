@@ -17,7 +17,7 @@ import { followersList } from '/@src/data/widgets/ui/followers'
     <div class="illustration-header">
       <div class="header-image">
         <img
-          src="/@src/assets/illustrations/dashboards/lifestyle/doctor.svg?url"
+          src="/@src/assets/illustrations/dashboards/lifestyle/doctor.svg"
           alt=""
         />
       </div>
@@ -54,9 +54,9 @@ import { followersList } from '/@src/data/widgets/ui/followers'
       <div class="column is-3">
         <div class="health-tile">
           <div class="tile-head">
-            <V-IconBox color="primary">
+            <VIconBox color="primary">
               <i aria-hidden="true" class="fas fa-tint"></i>
-            </V-IconBox>
+            </VIconBox>
             <h4>
               <span class="dark-inverted">114/90</span>
               <span>Min/Max</span>
@@ -74,9 +74,9 @@ import { followersList } from '/@src/data/widgets/ui/followers'
       <div class="column is-3">
         <div class="health-tile">
           <div class="tile-head">
-            <V-IconBox color="primary">
+            <VIconBox color="primary">
               <i aria-hidden="true" class="fas fa-heart"></i>
-            </V-IconBox>
+            </VIconBox>
             <h4>
               <span class="dark-inverted">112</span>
               <span>Bpm</span>
@@ -94,9 +94,9 @@ import { followersList } from '/@src/data/widgets/ui/followers'
       <div class="column is-3">
         <div class="health-tile">
           <div class="tile-head">
-            <V-IconBox color="primary">
+            <VIconBox color="primary">
               <i aria-hidden="true" class="fas fa-pump-medical"></i>
-            </V-IconBox>
+            </VIconBox>
             <h4>
               <span class="dark-inverted">12/14</span>
               <span>units</span>
@@ -114,9 +114,9 @@ import { followersList } from '/@src/data/widgets/ui/followers'
       <div class="column is-3">
         <div class="health-tile">
           <div class="tile-head">
-            <V-IconBox color="primary">
+            <VIconBox color="primary">
               <i aria-hidden="true" class="fas fa-weight"></i>
-            </V-IconBox>
+            </VIconBox>
             <h4>
               <span class="dark-inverted">60.4</span>
               <span>lbs</span>
@@ -380,7 +380,7 @@ import { followersList } from '/@src/data/widgets/ui/followers'
           </template>
           <template #body>
             <div class="gauge-wrap">
-              <V-BillboardJS
+              <VBillboardJS
                 class="gauge-holder"
                 :options="personalScoreGaugeOptions"
                 @ready="onPersonalScoreGaugeReady"

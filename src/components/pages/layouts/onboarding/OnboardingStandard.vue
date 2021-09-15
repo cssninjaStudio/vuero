@@ -11,12 +11,12 @@
         <div class="onboarding-card">
           <img
             class="light-image"
-            src="/@src/assets/illustrations/onboarding/set1-1.svg?url"
+            src="/@src/assets/illustrations/onboarding/set1-1.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/@src/assets/illustrations/onboarding/set1-1-dark.svg?url"
+            src="/@src/assets/illustrations/onboarding/set1-1-dark.svg"
             alt=""
           />
           <h3>Configure Shop</h3>
@@ -26,21 +26,21 @@
             tament.
           </p>
           <div class="button-wrap">
-            <V-Button color="primary" outlined rounded raised>
+            <VButton color="primary" outlined rounded raised>
               Configure Shop
-            </V-Button>
+            </VButton>
           </div>
         </div>
         <!--Card-->
         <div class="onboarding-card">
           <img
             class="light-image"
-            src="/@src/assets/illustrations/onboarding/set1-2.svg?url"
+            src="/@src/assets/illustrations/onboarding/set1-2.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/@src/assets/illustrations/onboarding/set1-2-dark.svg?url"
+            src="/@src/assets/illustrations/onboarding/set1-2-dark.svg"
             alt=""
           />
           <h3>Manage Products</h3>
@@ -50,21 +50,21 @@
             tament.
           </p>
           <div class="button-wrap">
-            <V-Button color="primary" outlined rounded raised>
+            <VButton color="primary" outlined rounded raised>
               Manage Products
-            </V-Button>
+            </VButton>
           </div>
         </div>
         <!--Card-->
         <div class="onboarding-card">
           <img
             class="light-image"
-            src="/@src/assets/illustrations/onboarding/set1-3.svg?url"
+            src="/@src/assets/illustrations/onboarding/set1-3.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/@src/assets/illustrations/onboarding/set1-3-dark.svg?url"
+            src="/@src/assets/illustrations/onboarding/set1-3-dark.svg"
             alt=""
           />
           <h3>Setup Payments</h3>
@@ -74,9 +74,9 @@
             tament.
           </p>
           <div class="button-wrap">
-            <V-Button color="primary" outlined rounded raised>
+            <VButton color="primary" outlined rounded raised>
               Setup Payments
-            </V-Button>
+            </VButton>
           </div>
         </div>
       </div>

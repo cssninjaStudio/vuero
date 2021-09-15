@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 
+import type {
+  VAvatarProps,
+  VAvatarColor,
+} from '/@src/components/base/avatar/VAvatar.vue'
 import { projects } from '/@src/data/layouts/card-grid-v3'
 
 const filters = ref('')
@@ -26,42 +30,50 @@ const optionsSingle = [
   'Dashboards',
   'Landing Pages',
 ]
+
+function getAvatarData(user: any): VAvatarProps {
+  return {
+    picture: user?.picture,
+    initials: user?.initials,
+    color: user?.color as VAvatarColor,
+  }
+}
 </script>
 
 <template>
   <div>
     <div class="card-grid-toolbar">
-      <V-Control icon="feather:search">
+      <VControl icon="feather:search">
         <input
           v-model="filters"
           class="input custom-text-filter"
           placeholder="Search..."
         />
-      </V-Control>
+      </VControl>
 
       <div class="buttons">
-        <V-Field class="h-hidden-mobile">
-          <V-Control>
+        <VField class="h-hidden-mobile">
+          <VControl>
             <Multiselect
               v-model="valueSingle"
               :options="optionsSingle"
               :max-height="145"
               placeholder="Select an option"
             />
-          </V-Control>
-        </V-Field>
-        <V-Button color="primary" raised>
+          </VControl>
+        </VField>
+        <VButton color="primary" raised>
           <span class="icon">
             <i aria-hidden="true" class="fas fa-plus"></i>
           </span>
           <span>New Project</span>
-        </V-Button>
+        </VButton>
       </div>
     </div>
 
     <div class="card-grid card-grid-v3">
       <!--List Empty Search Placeholder -->
-      <V-PlaceholderPage
+      <VPlaceholderPage
         :class="[filteredData.length !== 0 && 'is-hidden']"
         title="We couldn't find any matching results."
         subtitle="Too bad. Looks like we couldn't find any matching results for the
@@ -72,16 +84,16 @@ const optionsSingle = [
         <template #image>
           <img
             class="light-image"
-            src="/@src/assets/illustrations/placeholders/search-3.svg?url"
+            src="/@src/assets/illustrations/placeholders/search-3.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/@src/assets/illustrations/placeholders/search-3-dark.svg?url"
+            src="/@src/assets/illustrations/placeholders/search-3-dark.svg"
             alt=""
           />
         </template>
-      </V-PlaceholderPage>
+      </VPlaceholderPage>
 
       <!--Card Grid v3-->
       <transition-group
@@ -111,7 +123,7 @@ const optionsSingle = [
                 </span>
               </span>
             </label>
-            <V-Avatar
+            <VAvatar
               size="large"
               :picture="item.image"
               :badge="item.badge"
@@ -125,13 +137,11 @@ const optionsSingle = [
               <p>{{ item.description }}</p>
             </div>
             <div class="people">
-              <V-Avatar
+              <VAvatar
                 v-for="user in item.team"
                 :key="user.id"
                 size="small"
-                :color="user.color"
-                :initials="user.initials"
-                :picture="user.picture"
+                v-bind="getAvatarData(user)"
               />
             </div>
             <div class="buttons">

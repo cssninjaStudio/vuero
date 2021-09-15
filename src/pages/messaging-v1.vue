@@ -238,12 +238,12 @@ watchPostEffect(() => {
                   <li v-if="messages.length === 0" class="no-messages">
                     <img
                       class="light-image"
-                      src="/@src/assets/illustrations/placeholders/search-4.svg?url"
+                      src="/@src/assets/illustrations/placeholders/search-4.svg"
                       alt=""
                     />
                     <img
                       class="dark-image"
-                      src="/@src/assets/illustrations/placeholders/search-4-dark.svg?url"
+                      src="/@src/assets/illustrations/placeholders/search-4-dark.svg"
                       alt=""
                     />
                     <div class="text">
@@ -293,7 +293,7 @@ watchPostEffect(() => {
                       </div>
                       <div class="msg is-image">
                         <div class="image-container">
-                          <V-PhotosSwipe
+                          <VPhotosSwipe
                             :items="[
                               {
                                 src: message.content.image_url,
@@ -358,7 +358,7 @@ watchPostEffect(() => {
                         <img :src="message.avatar" draggable="false" alt="" />
                       </div>
                       <div class="msg is-link">
-                        <V-IconWrap icon="feather:link" />
+                        <VIconWrap icon="feather:link" />
                         <p class="link-meta">
                           <span>{{ message.content.text }}</span>
                           <a href="#">{{ message.content.subtext }}</a>
@@ -400,7 +400,7 @@ watchPostEffect(() => {
                       <img
                         id="user-details-badge"
                         class="is-badge"
-                        src="/images/icons/flags/united-states-of-america.svg?url"
+                        src="/images/icons/flags/united-states-of-america.svg"
                         alt=""
                         @error.once="
                           (event) => useViaPlaceholderError(event, '150x150')
@@ -670,7 +670,7 @@ watchPostEffect(() => {
             >
               <div class="caption">
                 <img
-                  src="/@src/assets/illustrations/placeholders/having-coffee.svg?url"
+                  src="/@src/assets/illustrations/placeholders/having-coffee.svg"
                   alt=""
                   @error.once="
                     (event) => useViaPlaceholderError(event, '150x150')

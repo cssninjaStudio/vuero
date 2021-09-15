@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-CardAction Props
+### VCardAction Props
 
-Here is the full props available for `<V-CardAction />` component:
+Here is the full props available for `<VCardAction />` component:
 
 | Props                     | Default                                                               | Type                                                                                                                                     |
 | ------------------------- | --------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |

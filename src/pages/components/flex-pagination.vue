@@ -14,15 +14,15 @@ const currentPage = computed(() => {
   return 1
 })
 
-pageTitle.value = 'V-FlexPagination'
+pageTitle.value = 'VFlexPagination'
 useHead({
-  title: 'V-FlexPagination - Components - Vuero',
+  title: 'VFlexPagination - Components - Vuero',
 })
 </script>
 
 <template>
   <div class="page-content-inner">
-    <V-Breadcrumb
+    <VBreadcrumb
       with-icons
       separator="bullet"
       :items="[
@@ -37,7 +37,7 @@ useHead({
           to: { name: 'components' },
         },
         {
-          label: 'V-FlexPagination',
+          label: 'VFlexPagination',
           to: { name: 'components-flex-pagination' },
         },
       ]"
@@ -49,7 +49,7 @@ useHead({
         <VFlexPaginationBaseDocumentation />
 
         <div class="mt-4">
-          <V-FlexPagination
+          <VFlexPagination
             :item-per-page="8"
             :total-items="512"
             :current-page="currentPage"
@@ -57,7 +57,7 @@ useHead({
         </div>
 
         <div class="mt-4 mb-6">
-          <V-FlexPagination
+          <VFlexPagination
             :item-per-page="8"
             :total-items="512"
             :current-page="currentPage"

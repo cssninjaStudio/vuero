@@ -1,13 +1,13 @@
 ### Menu with Icons
 
-`<V-Dropdown />` menu items can have icons and a more structured layout.
+`<VDropdown />` menu items can have icons and a more structured layout.
 Use the `spaced` prop with the provided markup in the code example.
 
 <!--code-->
 
 ```vue
 <template>
-  <V-Dropdown title="Dropdown with icon" spaced>
+  <VDropdown title="Dropdown with icon" spaced>
     <template #content>
       <a href="#" class="dropdown-item is-media">
         <div class="icon">
@@ -47,7 +47,7 @@ Use the `spaced` prop with the provided markup in the code example.
         </div>
       </a>
     </template>
-  </V-Dropdown>
+  </VDropdown>
 </template>
 ```
 
@@ -57,7 +57,7 @@ Use the `spaced` prop with the provided markup in the code example.
 
 <div class="field is-grouped">
   <div class="control">
-    <V-Dropdown title="Dropdown with icon" spaced>
+    <VDropdown title="Dropdown with icon" spaced>
       <template #content>
         <a href="#" class="dropdown-item is-media">
           <div class="icon">
@@ -97,11 +97,11 @@ Use the `spaced` prop with the provided markup in the code example.
           </div>
         </a>
       </template>
-    </V-Dropdown>
+    </VDropdown>
   </div>
 
   <div class="control">
-    <V-Dropdown title="With unicons" spaced>
+    <VDropdown title="With unicons" spaced>
       <template #content>
         <a href="#" class="dropdown-item is-media">
           <div class="icon">
@@ -141,7 +141,7 @@ Use the `spaced` prop with the provided markup in the code example.
           </div>
         </a>
       </template>
-    </V-Dropdown>
+    </VDropdown>
   </div>
 </div>
 

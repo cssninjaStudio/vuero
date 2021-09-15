@@ -20,9 +20,9 @@ const selected = ref('value_2')
 </script>
 
 <template>
-  <V-Field>
-    <V-Control>
-      <V-Radio
+  <VField>
+    <VControl>
+      <VRadio
         v-model="selected"
         value="value_1"
         label="Choice 1"
@@ -30,7 +30,7 @@ const selected = ref('value_2')
         solid
       />
 
-      <V-Radio
+      <VRadio
         v-model="selected"
         value="value_2"
         label="Choice 2"
@@ -39,7 +39,7 @@ const selected = ref('value_2')
         solid
       />
 
-      <V-Radio
+      <VRadio
         v-model="selected"
         value="value_3"
         label="Choice 3"
@@ -48,7 +48,7 @@ const selected = ref('value_2')
         solid
       />
 
-      <V-Radio
+      <VRadio
         v-model="selected"
         value="value_4"
         label="Choice 4"
@@ -57,7 +57,7 @@ const selected = ref('value_2')
         solid
       />
 
-      <V-Radio
+      <VRadio
         v-model="selected"
         value="value_5"
         label="Choice 5"
@@ -66,7 +66,7 @@ const selected = ref('value_2')
         solid
       />
 
-      <V-Radio
+      <VRadio
         v-model="selected"
         value="value_6"
         label="Choice 6"
@@ -74,8 +74,8 @@ const selected = ref('value_2')
         color="danger"
         solid
       />
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -83,16 +83,16 @@ const selected = ref('value_2')
 
 <!--example-->
 
-<V-Field>
-  <V-Control>
-    <V-Radio
+<VField>
+  <VControl>
+    <VRadio
       v-model="frontmatter.state.selected"
       value="value_1"
       label="Choice 1"
       name="solid_radio"
       solid
     />
-    <V-Radio
+    <VRadio
       v-model="frontmatter.state.selected"
       value="value_2"
       label="Choice 2"
@@ -100,7 +100,7 @@ const selected = ref('value_2')
       color="primary"
       solid
     />
-    <V-Radio
+    <VRadio
       v-model="frontmatter.state.selected"
       value="value_3"
       label="Choice 3"
@@ -108,7 +108,7 @@ const selected = ref('value_2')
       color="info"
       solid
     />
-    <V-Radio
+    <VRadio
       v-model="frontmatter.state.selected"
       value="value_4"
       label="Choice 4"
@@ -116,7 +116,7 @@ const selected = ref('value_2')
       color="success"
       solid
     />
-    <V-Radio
+    <VRadio
       v-model="frontmatter.state.selected"
       value="value_5"
       label="Choice 5"
@@ -124,7 +124,7 @@ const selected = ref('value_2')
       color="warning"
       solid
     />
-    <V-Radio
+    <VRadio
       v-model="frontmatter.state.selected"
       value="value_6"
       label="Choice 6"
@@ -132,7 +132,7 @@ const selected = ref('value_2')
       color="danger"
       solid
     />
-  </V-Control>
-</V-Field>
+  </VControl>
+</VField>
 
 <!--/example-->

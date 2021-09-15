@@ -370,15 +370,15 @@ watch(isDark, () => {
           >
             <div class="map-box-place">
               <div class="map-box-header">
-                <V-Block
+                <VBlock
                   :title="feature.properties.name"
                   :subtitle="`Open until ${feature.properties.openingCount}`"
                   center
                 >
                   <template #icon>
-                    <V-Avatar size="small" :picture="feature.properties.logo" />
+                    <VAvatar size="small" :picture="feature.properties.logo" />
                   </template>
-                </V-Block>
+                </VBlock>
               </div>
               <div class="map-box-body">
                 <p>

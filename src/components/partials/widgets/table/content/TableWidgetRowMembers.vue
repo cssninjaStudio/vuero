@@ -9,7 +9,7 @@ const props = defineProps<{
 <template>
   <tr v-for="row in props.rows" :key="row.id">
     <td class="is-media">
-      <V-Avatar
+      <VAvatar
         :picture="row.picture"
         :initials="row.initials"
         size="medium"
@@ -31,7 +31,7 @@ const props = defineProps<{
     </td>
     <td>
       <div class="avatars">
-        <V-Avatar
+        <VAvatar
           v-for="skill in row.skills"
           :key="skill.id"
           :picture="skill.icon"
@@ -55,7 +55,7 @@ const props = defineProps<{
     </td>
     <td>
       <div class="tag-wrap">
-        <V-Tag
+        <VTag
           :class="[
             row.status === 'Approved' && 'is-green',
             row.status === 'Pending' && 'is-info',

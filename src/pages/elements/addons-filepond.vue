@@ -9,15 +9,15 @@ const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 const date = ref(null)
 
-pageTitle.value = 'V-FilePond'
+pageTitle.value = 'VFilePond'
 useHead({
-  title: 'V-FilePond - Addons - Vuero',
+  title: 'VFilePond - Addons - Vuero',
 })
 </script>
 
 <template>
   <div class="page-content-inner">
-    <V-Breadcrumb
+    <VBreadcrumb
       with-icons
       separator="bullet"
       :items="[
@@ -35,7 +35,7 @@ useHead({
           label: 'Addons',
         },
         {
-          label: 'V-FilePond',
+          label: 'VFilePond',
           to: { name: 'elements-addons-filepond' },
         },
       ]"

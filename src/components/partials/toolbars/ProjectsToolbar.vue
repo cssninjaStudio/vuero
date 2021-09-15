@@ -8,12 +8,12 @@
     </div>
 
     <div class="avatar-stack">
-      <V-Avatar size="small" picture="/demo/avatars/7.jpg" />
-      <V-Avatar size="small" picture="/demo/avatars/9.jpg" />
-      <V-Avatar size="small" picture="/demo/avatars/12.jpg" />
-      <V-Avatar size="small" picture="/demo/avatars/8.jpg" />
-      <V-Avatar size="small" picture="/demo/avatars/25.jpg" />
-      <V-Avatar size="small" picture="/demo/avatars/22.jpg" />
+      <VAvatar size="small" picture="/demo/avatars/7.jpg" />
+      <VAvatar size="small" picture="/demo/avatars/9.jpg" />
+      <VAvatar size="small" picture="/demo/avatars/12.jpg" />
+      <VAvatar size="small" picture="/demo/avatars/8.jpg" />
+      <VAvatar size="small" picture="/demo/avatars/25.jpg" />
+      <VAvatar size="small" picture="/demo/avatars/22.jpg" />
     </div>
 
     <a class="button v-button is-primary is-raised is-bold">

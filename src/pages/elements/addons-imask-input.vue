@@ -9,15 +9,15 @@ const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 const date = ref(null)
 
-pageTitle.value = 'V-IMaskInput'
+pageTitle.value = 'VIMaskInput'
 useHead({
-  title: 'V-IMaskInput - Addons - Vuero',
+  title: 'VIMaskInput - Addons - Vuero',
 })
 </script>
 
 <template>
   <div class="page-content-inner">
-    <V-Breadcrumb
+    <VBreadcrumb
       with-icons
       separator="bullet"
       :items="[
@@ -35,7 +35,7 @@ useHead({
           label: 'Addons',
         },
         {
-          label: 'V-IMaskInput',
+          label: 'VIMaskInput',
           to: { name: 'elements-addons-imask-input' },
         },
       ]"

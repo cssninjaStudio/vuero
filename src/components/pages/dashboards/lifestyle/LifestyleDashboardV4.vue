@@ -12,7 +12,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
             <div class="illustration-header-2">
               <div class="header-image">
                 <img
-                  src="/@src/assets/illustrations/dashboards/lifestyle/reading.svg?url"
+                  src="/@src/assets/illustrations/dashboards/lifestyle/reading.svg"
                   alt=""
                 />
               </div>
@@ -22,9 +22,9 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                   Have any ideas for a new article? If not, you should
                   definitely check the feed for some inspiration.
                 </p>
-                <V-Button light outlined icon="feather:plus">
+                <VButton light outlined icon="feather:plus">
                   New Article
-                </V-Button>
+                </VButton>
               </div>
             </div>
           </div>
@@ -59,51 +59,51 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
               <div class="featured-authors-list">
                 <!--Item-->
                 <div class="featured-authors-item">
-                  <V-Block title="Alice C." subtitle="Software Engineer" center>
+                  <VBlock title="Alice C." subtitle="Software Engineer" center>
                     <template #icon>
-                      <V-Avatar picture="/demo/avatars/7.jpg" squared />
+                      <VAvatar picture="/demo/avatars/7.jpg" squared />
                     </template>
                     <template #action>
                       <span class="dark-inverted">112K</span>
                     </template>
-                  </V-Block>
+                  </VBlock>
                 </div>
                 <!--Item-->
                 <div class="featured-authors-item">
-                  <V-Block title="Elizabeth F." subtitle="Web Developer" center>
+                  <VBlock title="Elizabeth F." subtitle="Web Developer" center>
                     <template #icon>
-                      <V-Avatar picture="/demo/avatars/21.jpg" squared />
+                      <VAvatar picture="/demo/avatars/21.jpg" squared />
                     </template>
                     <template #action>
                       <span class="dark-inverted">91K</span>
                     </template>
-                  </V-Block>
+                  </VBlock>
                 </div>
                 <!--Item-->
                 <div class="featured-authors-item">
-                  <V-Block title="Jonathan K." subtitle="UI/UX Designer" center>
+                  <VBlock title="Jonathan K." subtitle="UI/UX Designer" center>
                     <template #icon>
-                      <V-Avatar picture="/demo/avatars/32.jpg" squared />
+                      <VAvatar picture="/demo/avatars/32.jpg" squared />
                     </template>
                     <template #action>
                       <span class="dark-inverted">72K</span>
                     </template>
-                  </V-Block>
+                  </VBlock>
                 </div>
                 <!--Item-->
                 <div class="featured-authors-item">
-                  <V-Block
+                  <VBlock
                     title="Christie D."
                     subtitle="Software Engineer"
                     center
                   >
                     <template #icon>
-                      <V-Avatar picture="/demo/avatars/38.jpg" squared />
+                      <VAvatar picture="/demo/avatars/38.jpg" squared />
                     </template>
                     <template #action>
                       <span class="dark-inverted">19K</span>
                     </template>
-                  </V-Block>
+                  </VBlock>
                 </div>
               </div>
             </div>
@@ -199,11 +199,11 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                   <h4 class="dark-inverted">Learning the modern novel</h4>
                   <p>Some article content and lorem ipsum sit dolor amet</p>
 
-                  <V-Block title="Alice C." subtitle="Software Engineer">
+                  <VBlock title="Alice C." subtitle="Software Engineer">
                     <template #icon>
-                      <V-Avatar picture="/demo/avatars/7.jpg" squared />
+                      <VAvatar picture="/demo/avatars/7.jpg" squared />
                     </template>
-                  </V-Block>
+                  </VBlock>
                 </div>
               </a>
               <!--Item-->
@@ -221,11 +221,11 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                   <h4 class="dark-inverted">5 Writing tips for you</h4>
                   <p>Some article content and lorem ipsum sit dolor amet</p>
 
-                  <V-Block title="Mary L." subtitle="Project Manager">
+                  <VBlock title="Mary L." subtitle="Project Manager">
                     <template #icon>
-                      <V-Avatar picture="/demo/avatars/5.jpg" squared />
+                      <VAvatar picture="/demo/avatars/5.jpg" squared />
                     </template>
-                  </V-Block>
+                  </VBlock>
                 </div>
               </a>
             </div>

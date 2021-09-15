@@ -3,12 +3,22 @@ import { useHead } from '@vueuse/head'
 import { activePanel } from '/@src/state/activePanelState'
 import { computed, ref } from 'vue'
 
+import type { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
 import useDropdown from '/@src/composable/useDropdown'
 import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
+export interface conversationData {
+  id: number
+  name: string
+  role: string
+  avatar: VAvatarProps
+  lastMessage: string
+  lastMessagePreview: string
+}
+
 // we are using static data here, but you might need to load those from your API
 // to do so, this should be a ref<any[]>([]) and be populated when request is done
-const conversations = [
+const conversations: conversationData[] = [
   {
     id: 1,
     name: 'Kelly Marston',
@@ -463,7 +473,7 @@ useHead({
         <!--Conversation Details-->
         <div class="detail-area" data-simplebar>
           <div class="chat-side-content is-single">
-            <V-Avatar
+            <VAvatar
               :picture="selectedConversation.avatar.picture"
               :color="selectedConversation.avatar.color"
               :initials="selectedConversation.avatar.initials"

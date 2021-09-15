@@ -10,7 +10,7 @@ import { courses, files, students } from '/@src/data/dashboards/course'
         <p class="h-hidden-mobile">Classes from January 6 to 10</p>
       </div>
       <div class="right">
-        <V-Button color="primary" elevated>Open Schedule</V-Button>
+        <VButton color="primary" elevated>Open Schedule</VButton>
       </div>
     </div>
 
@@ -31,16 +31,13 @@ import { courses, files, students } from '/@src/data/dashboards/course'
             <h3 class="dark-inverted">{{ course.title }}</h3>
             <p>{{ course.summary }}</p>
             <div class="students">
-              <V-Avatar
+              <VAvatar
                 v-for="student in course.students"
                 :key="student.id"
                 :picture="student.picture"
                 size="small"
               />
-              <V-Avatar
-                size="small"
-                :initials="`+${course.participants - 3}`"
-              />
+              <VAvatar size="small" :initials="`+${course.participants - 3}`" />
               <a class="link is-dark-primary">Class discussion</a>
             </div>
             <div class="attached-block">
@@ -150,7 +147,7 @@ import { courses, files, students } from '/@src/data/dashboards/course'
             class="flex-table-item"
           >
             <div class="flex-table-cell is-media is-grow" data-th="">
-              <V-Avatar :picture="student.picture" size="medium" />
+              <VAvatar :picture="student.picture" size="medium" />
               <div>
                 <span class="item-name dark-inverted">{{
                   student.username

@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-Loader Slots
+### VLoader Slots
 
-Here is the full slots available for `<V-Loader />` component:
+Here is the full slots available for `<VLoader />` component:
 
 | Slot                       | Properties                          | Description                     |
 | -------------------------- | ----------------------------------- | ------------------------------- |

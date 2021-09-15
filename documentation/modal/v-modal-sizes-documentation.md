@@ -1,6 +1,6 @@
 ### Modal Sizes
 
-The `<V-Modal />` component can have different sizes. use the size `true`
+The `<VModal />` component can have different sizes. use the size `true`
 prop to change the modal size. Available sizes are: `small`, default,
 `medium`, `large` and `big`.
 
@@ -13,24 +13,24 @@ const centeredActionsOpen = ref(false)
 </script>
 
 <template>
-  <V-Button bold @click="centeredActionsOpen = true"> Open Modal </V-Button>
+  <VButton bold @click="centeredActionsOpen = true"> Open Modal </VButton>
 
-  <V-Modal
+  <VModal
     :open="centeredActionsOpen"
     size="small"
     actions="center"
     @close="centeredActionsOpen = false"
   >
     <template #content>
-      <V-PlaceholderSection
+      <VPlaceholderSection
         title="Go Premium"
         subtitle="Unlock more features and business tools by going premium"
       />
     </template>
     <template #action>
-      <V-Button color="primary" raised>Confirm</V-Button>
+      <VButton color="primary" raised>Confirm</VButton>
     </template>
-  </V-Modal>
+  </VModal>
 </template>
 ```
 

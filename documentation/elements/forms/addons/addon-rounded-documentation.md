@@ -8,18 +8,18 @@ element to create a rounded field with addons.
 
 ```vue
 <template>
-  <V-Field addons>
-    <V-Control expanded>
+  <VField addons>
+    <VControl expanded>
       <input
         type="text"
         class="input is-rounded"
         placeholder="Find a repository"
       />
-    </V-Control>
-    <V-Control>
+    </VControl>
+    <VControl>
       <a class="button is-primary is-rounded">Search</a>
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -27,17 +27,17 @@ element to create a rounded field with addons.
 
 <!--example-->
 
-<V-Field addons>
-  <V-Control expanded>
+<VField addons>
+  <VControl expanded>
     <input
         type="text"
         class="input is-rounded"
         placeholder="Find a repository"
       />
-  </V-Control>
-  <V-Control>
+  </VControl>
+  <VControl>
     <a class="button is-primary is-rounded">Search</a>
-  </V-Control>
-</V-Field>
+  </VControl>
+</VField>
 
 <!--/example-->

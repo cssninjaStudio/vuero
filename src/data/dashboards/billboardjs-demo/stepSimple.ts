@@ -1,7 +1,8 @@
+import type { ChartOptions } from 'billboard.js'
 import { themeColors } from '/@src/utils/themeColors'
 import { step, areaStep } from 'billboard.js'
 
-export const options = {
+export const options: ChartOptions = {
   data: {
     columns: [
       ['data1', 300, 350, 300, 0, 0, 100],
@@ -26,7 +27,7 @@ export const options = {
   },
   title: {
     text: 'Step Chart',
-    position: 'top-left',
+    position: 'left',
     padding: {
       bottom: 20,
       right: 20,

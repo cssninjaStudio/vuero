@@ -8,9 +8,9 @@ const activeTab = ref<TabId>('all')
 <template>
   <div class="search-results-wrapper">
     <div class="search-results-header">
-      <V-Control icon="feather:search">
+      <VControl icon="feather:search">
         <input class="input" placeholder="Search again..." />
-      </V-Control>
+      </VControl>
 
       <div class="search-info">
         <span>0 results found</span>
@@ -40,12 +40,12 @@ const activeTab = ref<TabId>('all')
         <div class="placeholder-content">
           <img
             class="light-image"
-            src="/@src/assets/illustrations/placeholders/search-7.svg?url"
+            src="/@src/assets/illustrations/placeholders/search-7.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/@src/assets/illustrations/placeholders/search-7-dark.svg?url"
+            src="/@src/assets/illustrations/placeholders/search-7-dark.svg"
             alt=""
           />
           <h3>We couldn't find any matching results.</h3>

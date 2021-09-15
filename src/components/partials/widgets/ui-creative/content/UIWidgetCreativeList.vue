@@ -18,7 +18,7 @@ const props = withDefaults(
       class="creative-list-item"
       :class="'is-' + item.color"
     >
-      <V-Avatar :picture="item.picture" :squared="props.squared" />
+      <VAvatar :picture="item.picture" :squared="props.squared" />
       <div class="meta">
         <span>{{ item.name }}</span>
       </div>

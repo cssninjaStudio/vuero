@@ -9,8 +9,8 @@ Please refer to markup for more details about usage.
 
 ```vue
 <template>
-  <V-Field grouped>
-    <V-Control>
+  <VField grouped>
+    <VControl>
       <div class="file">
         <label class="file-label">
           <input class="file-input" type="file" name="resume" />
@@ -22,8 +22,8 @@ Please refer to markup for more details about usage.
           </span>
         </label>
       </div>
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -31,8 +31,8 @@ Please refer to markup for more details about usage.
 
 <!--example-->
 
-<V-Field grouped>
-    <V-Control>
+<VField grouped>
+    <VControl>
         <div class="file">
             <label class="file-label">
                 <input class="file-input" type="file" name="resume">
@@ -46,8 +46,8 @@ Please refer to markup for more details about usage.
                 </span>
             </label>
         </div>
-    </V-Control>
-    <V-Control>
+    </VControl>
+    <VControl>
         <div class="file is-default">
             <label class="file-label">
                 <input class="file-input" type="file" name="resume">
@@ -61,8 +61,8 @@ Please refer to markup for more details about usage.
                 </span>
             </label>
         </div>
-    </V-Control>
-    <V-Control>
+    </VControl>
+    <VControl>
         <div class="file is-primary">
             <label class="file-label">
                 <input class="file-input" type="file" name="resume">
@@ -76,8 +76,8 @@ Please refer to markup for more details about usage.
                 </span>
             </label>
         </div>
-    </V-Control>
-    <V-Control>
+    </VControl>
+    <VControl>
         <div class="file is-info">
             <label class="file-label">
                 <input class="file-input" type="file" name="resume">
@@ -91,7 +91,7 @@ Please refer to markup for more details about usage.
                 </span>
             </label>
         </div>
-    </V-Control>
-</V-Field>
+    </VControl>
+</VField>
 
 <!--/example-->

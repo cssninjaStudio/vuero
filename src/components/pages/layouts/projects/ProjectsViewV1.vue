@@ -20,7 +20,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
         <a class="project-grid-item">
           <img
             class="project-avatar"
-            src="/images/icons/logos/slicer.svg?url"
+            src="/images/icons/logos/slicer.svg"
             alt=""
             @error.once="(event) => useViaPlaceholderError(event, '150x150')"
           />
@@ -36,7 +36,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
         <a class="project-grid-item">
           <img
             class="project-avatar"
-            src="/images/icons/logos/metamovies.svg?url"
+            src="/images/icons/logos/metamovies.svg"
             alt=""
             @error.once="(event) => useViaPlaceholderError(event, '150x150')"
           />
@@ -52,7 +52,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
         <a class="project-grid-item">
           <img
             class="project-avatar"
-            src="/@src/assets/illustrations/dashboards/flights/company1.svg?url"
+            src="/@src/assets/illustrations/dashboards/flights/company1.svg"
             alt=""
             @error.once="(event) => useViaPlaceholderError(event, '150x150')"
           />
@@ -68,7 +68,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
         <a class="project-grid-item">
           <img
             class="project-avatar"
-            src="/images/icons/logos/fastpizza.svg?url"
+            src="/images/icons/logos/fastpizza.svg"
             alt=""
             @error.once="(event) => useViaPlaceholderError(event, '150x150')"
           />
@@ -84,7 +84,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
         <a class="project-grid-item">
           <img
             class="project-avatar"
-            src="/images/icons/logos/drop.svg?url"
+            src="/images/icons/logos/drop.svg"
             alt=""
             @error.once="(event) => useViaPlaceholderError(event, '150x150')"
           />
@@ -125,7 +125,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
               <span class="tag is-solid is-rounded">Active</span>
             </div>
             <div class="flex-table-cell" data-th="Contacts">
-              <V-AvatarStack
+              <VAvatarStack
                 class="is-pushed-mobile"
                 size="small"
                 :limit="3"
@@ -158,7 +158,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
               <span class="tag is-solid is-rounded">New</span>
             </div>
             <div class="flex-table-cell" data-th="Contacts">
-              <V-AvatarStack
+              <VAvatarStack
                 class="is-pushed-mobile"
                 size="small"
                 :avatars="[{ color: 'danger', initials: 'SC' }]"
@@ -184,7 +184,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
               <span class="tag is-solid is-rounded">Active</span>
             </div>
             <div class="flex-table-cell" data-th="Contacts">
-              <V-AvatarStack
+              <VAvatarStack
                 class="is-pushed-mobile"
                 size="small"
                 :avatars="[
@@ -210,10 +210,10 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
               <span class="light-text">Software</span>
             </div>
             <div class="flex-table-cell" data-th="Status">
-              <V-Tag label="Disabled" color="solid" rounded />
+              <VTag label="Disabled" color="solid" rounded />
             </div>
             <div class="flex-table-cell" data-th="Contacts">
-              <V-AvatarStack
+              <VAvatarStack
                 class="is-pushed-mobile"
                 size="small"
                 :avatars="[{ picture: '/demo/avatars/13.jpg' }]"
@@ -236,10 +236,10 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
               <span class="light-text">Software</span>
             </div>
             <div class="flex-table-cell" data-th="Status">
-              <V-Tag label="Suspended" color="solid" rounded />
+              <VTag label="Suspended" color="solid" rounded />
             </div>
             <div class="flex-table-cell" data-th="Contacts">
-              <V-AvatarStack
+              <VAvatarStack
                 class="is-pushed-mobile"
                 size="small"
                 :avatars="[

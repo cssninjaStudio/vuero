@@ -23,7 +23,7 @@ useHead({
 
 <template>
   <div class="page-content-inner">
-    <V-Breadcrumb
+    <VBreadcrumb
       with-icons
       separator="bullet"
       :items="[
@@ -57,77 +57,77 @@ useHead({
         <NotyfSuccessDocumentation />
 
         <div class="buttons mb-6">
-          <V-Button bold @click="notyf.success('Success Toast')">
+          <VButton bold @click="notyf.success('Success Toast')">
             Success Toast
-          </V-Button>
+          </VButton>
         </div>
 
         <!--Error Toast-->
         <NotyfErrorDocumentation />
 
         <div class="buttons mb-6">
-          <V-Button bold @click="notyf.error('Error Toast')">
+          <VButton bold @click="notyf.error('Error Toast')">
             Error Toast
-          </V-Button>
+          </VButton>
         </div>
 
         <!--Info Toast-->
         <NotyfInfoDocumentation />
 
         <div class="buttons mb-6">
-          <V-Button bold @click="notyf.info('Info Toast')">Info Toast</V-Button>
+          <VButton bold @click="notyf.info('Info Toast')">Info Toast</VButton>
         </div>
 
         <!--Warning Toast-->
         <NotyfWarningDocumentation />
 
         <div class="buttons mb-6">
-          <V-Button bold @click="notyf.warning('Warning Toast')">
+          <VButton bold @click="notyf.warning('Warning Toast')">
             Warning Toast
-          </V-Button>
+          </VButton>
         </div>
 
         <!--Primary Toast-->
         <NotyfPrimaryDocumentation />
 
         <div class="buttons mb-6">
-          <V-Button bold @click="notyf.primary('Primary Toast')">
+          <VButton bold @click="notyf.primary('Primary Toast')">
             Primary Toast
-          </V-Button>
+          </VButton>
         </div>
 
         <!--Purple Toast-->
         <NotyfPurpleDocumentation />
 
         <div class="buttons mb-6">
-          <V-Button bold @click="notyf.purple('Purple Toast')">
+          <VButton bold @click="notyf.purple('Purple Toast')">
             Purple Toast
-          </V-Button>
+          </VButton>
         </div>
 
         <!--Blue Toast-->
         <NotyfBlueDocumentation />
 
         <div class="buttons mb-6">
-          <V-Button bold @click="notyf.blue('Blue Toast')">Blue Toast</V-Button>
+          <VButton bold @click="notyf.blue('Blue Toast')">Blue Toast</VButton>
         </div>
 
         <!--Green Toast-->
         <NotyfGreenDocumentation />
 
         <div class="buttons mb-6">
-          <V-Button bold @click="notyf.green('Green Toast')">
+          <VButton bold @click="notyf.green('Green Toast')">
             Green Toast
-          </V-Button>
+          </VButton>
         </div>
 
         <!--Orange Toast-->
         <NotyfOrangeDocumentation />
 
         <div class="buttons mb-6">
-          <V-Button bold @click="notyf.orange('Orange Toast')">
+          <VButton bold @click="notyf.orange('Orange Toast')">
             Orange Toast
-          </V-Button>
+          </VButton>
         </div>
       </div>
       <div v-if="toc.length" class="column is-3 toc-column">

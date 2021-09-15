@@ -44,12 +44,12 @@
         >
           <img
             class="light-image-l featured-image"
-            src="/@src/assets/illustrations/landing/feature-2.svg?url"
+            src="/@src/assets/illustrations/landing/feature-2.svg"
             alt=""
           />
           <img
             class="dark-image-l featured-image"
-            src="/@src/assets/illustrations/landing/feature-2-dark.svg?url"
+            src="/@src/assets/illustrations/landing/feature-2-dark.svg"
             alt=""
           />
         </div>
@@ -66,12 +66,12 @@
         <div class="column is-6 has-text-centered h-hidden-mobile">
           <img
             class="light-image-l featured-image"
-            src="/@src/assets/illustrations/landing/feature-2.svg?url"
+            src="/@src/assets/illustrations/landing/feature-2.svg"
             alt=""
           />
           <img
             class="dark-image-l featured-image"
-            src="/@src/assets/illustrations/landing/feature-2-dark.svg?url"
+            src="/@src/assets/illustrations/landing/feature-2-dark.svg"
             alt=""
           />
         </div>
@@ -81,12 +81,12 @@
         <div class="column is-6 has-text-centered">
           <img
             class="light-image-l featured-image"
-            src="/@src/assets/illustrations/landing/feature-3.svg?url"
+            src="/@src/assets/illustrations/landing/feature-3.svg"
             alt=""
           />
           <img
             class="dark-image-l featured-image"
-            src="/@src/assets/illustrations/landing/feature-3-dark.svg?url"
+            src="/@src/assets/illustrations/landing/feature-3-dark.svg"
             alt=""
           />
         </div>
@@ -110,7 +110,7 @@
         </div>
         <div class="head-action">
           <div class="buttons">
-            <V-Button
+            <VButton
               class="action-button"
               color="primary"
               rounded
@@ -118,7 +118,7 @@
               href="https://docs.cssninja.io/vuero"
             >
               Read the Docs
-            </V-Button>
+            </VButton>
             <a
               href="https://cssninja.io"
               target="_blank"

@@ -31,7 +31,7 @@ const options = {
 </script>
 
 <template>
-  <V-SimpleDatatables :options="options" />
+  <VSimpleDatatables :options="options" />
 </template>
 ```
 

@@ -7,21 +7,21 @@ const filters = ref('')
 <template>
   <div>
     <div class="list-flex-toolbar flex-list-v1">
-      <V-Field>
-        <V-Control icon="feather:search">
+      <VField>
+        <VControl icon="feather:search">
           <input
             v-model="filters"
             class="input custom-text-filter"
             placeholder="Search..."
           />
-        </V-Control>
-      </V-Field>
+        </VControl>
+      </VField>
 
-      <V-Buttons>
-        <V-Button color="primary" icon="fas fa-plus" elevated>
+      <VButtons>
+        <VButton color="primary" icon="fas fa-plus" elevated>
           Add User
-        </V-Button>
-      </V-Buttons>
+        </VButton>
+      </VButtons>
     </div>
 
     <div class="flex-list-wrapper flex-list-v1">
@@ -40,9 +40,9 @@ const filters = ref('')
           <!--Table item placeload-->
           <div v-for="key in 10" :key="key" class="flex-table-item">
             <div class="flex-table-cell is-media is-grow">
-              <V-PlaceloadAvatar size="medium" />
+              <VPlaceloadAvatar size="medium" />
 
-              <V-PlaceloadText
+              <VPlaceloadText
                 :lines="2"
                 width="80%"
                 last-line-width="60%"
@@ -50,23 +50,23 @@ const filters = ref('')
               />
             </div>
             <div class="flex-table-cell" data-th="Location">
-              <V-Placeload class="mx-1" />
+              <VPlaceload class="mx-1" />
             </div>
             <div class="flex-table-cell" data-th="Industry">
-              <V-Placeload class="mx-1" />
+              <VPlaceload class="mx-1" />
             </div>
             <div class="flex-table-cell" data-th="Status">
-              <V-Placeload class="mx-1" />
+              <VPlaceload class="mx-1" />
             </div>
             <div class="flex-table-cell" data-th="Relations">
-              <V-AvatarStack class="is-pushed-mobile">
-                <V-PlaceloadAvatar size="small" class="mx-1" />
-                <V-PlaceloadAvatar size="small" class="mx-1" />
-                <V-PlaceloadAvatar size="small" class="mx-1" />
-              </V-AvatarStack>
+              <VAvatarStack class="is-pushed-mobile">
+                <VPlaceloadAvatar size="small" class="mx-1" />
+                <VPlaceloadAvatar size="small" class="mx-1" />
+                <VPlaceloadAvatar size="small" class="mx-1" />
+              </VAvatarStack>
             </div>
             <div class="flex-table-cell cell-end" data-th="Actions">
-              <V-Placeload class="mx-1" />
+              <VPlaceload class="mx-1" />
             </div>
           </div>
         </div>

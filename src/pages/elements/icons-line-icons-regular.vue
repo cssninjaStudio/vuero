@@ -30,7 +30,7 @@ useHead({
 
 <template>
   <div class="page-content-inner">
-    <V-Breadcrumb
+    <VBreadcrumb
       with-icons
       separator="bullet"
       :items="[
@@ -61,21 +61,21 @@ useHead({
 
         <div class="demo-card mt-4">
           <div class="card-inner" :class="{ 'is-scrolling': isScrolling }">
-            <V-Flex
+            <VFlex
               justify-content="flex-end"
               class="demo-icon-search py-4 px-6"
             >
-              <V-Field>
-                <V-Control icon="feather:search">
+              <VField>
+                <VControl icon="feather:search">
                   <input
                     v-model="filter"
                     type="search"
                     class="input is-rounded"
                     placeholder="Search regular line icons ..."
                   />
-                </V-Control>
-              </V-Field>
-            </V-Flex>
+                </VControl>
+              </VField>
+            </VFlex>
 
             <ul class="demo-icon-list">
               <li

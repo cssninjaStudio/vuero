@@ -11,7 +11,7 @@ useHead({
 
 <template>
   <div class="page-content-inner">
-    <V-Breadcrumb
+    <VBreadcrumb
       with-icons
       separator="bullet"
       :items="[
@@ -109,7 +109,7 @@ useHead({
                     </td>
                   </tr>
                   <tr>
-                    <td class="name">V-Hidden (<code>is-vhidden</code>)</td>
+                    <td class="name">VHidden (<code>is-vhidden</code>)</td>
                     <td class="description">
                       Sets the <code>visibility</code> property to
                       <code>hidden</code> on the target element.

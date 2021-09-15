@@ -3,9 +3,9 @@ state:
   flipped: false
 ---
 
-### V-CreditCard
+### VCreditCard
 
-Vuero ships with the `<V-CreditCard />` component, a custom credit card
+Vuero ships with the `<VCreditCard />` component, a custom credit card
 previewer. Check the code for more details.
 
 <!--code-->
@@ -18,15 +18,11 @@ const flipped = ref(null)
 </script>
 
 <template>
-  <V-Field>
-    <V-Control>
-      <V-CreditCard
-        color="grey"
-        :flipped="flipped"
-        @flip="flipped = !flipped"
-      />
-    </V-Control>
-  </V-Field>
+  <VField>
+    <VControl>
+      <VCreditCard color="grey" :flipped="flipped" @flip="flipped = !flipped" />
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -34,14 +30,14 @@ const flipped = ref(null)
 
 <!--example-->
 
-<V-Field class="credit-card">
-  <V-Control>
-    <V-CreditCard
+<VField class="credit-card">
+  <VControl>
+    <VCreditCard
       color="grey"
       :flipped="frontmatter.state.flipped"
       @flip="frontmatter.state.flipped = !frontmatter.state.flipped"
     />
-  </V-Control>
-</V-Field>
+  </VControl>
+</VField>
 
 <!--/example-->

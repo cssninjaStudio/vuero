@@ -36,7 +36,7 @@ const props = withDefaults(
         }
       "
     >
-      <V-Avatar
+      <VAvatar
         :picture="conversation.avatar.picture"
         :color="conversation.avatar.color"
         :initials="conversation.avatar.initials"

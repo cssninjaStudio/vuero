@@ -9,15 +9,15 @@ import { pageTitle } from '/@src/state/sidebarLayoutState'
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-pageTitle.value = 'V-PlaceholderSection'
+pageTitle.value = 'VPlaceholderSection'
 useHead({
-  title: 'V-PlaceholderSection - Components - Vuero',
+  title: 'VPlaceholderSection - Components - Vuero',
 })
 </script>
 
 <template>
   <div class="page-content-inner">
-    <V-Breadcrumb
+    <VBreadcrumb
       with-icons
       separator="bullet"
       :items="[
@@ -32,7 +32,7 @@ useHead({
           to: { name: 'components' },
         },
         {
-          label: 'V-PlaceholderSection',
+          label: 'VPlaceholderSection',
           to: { name: 'components-placeholder-section' },
         },
       ]"
@@ -46,32 +46,32 @@ useHead({
       >
         <div class="columns is-vcentered">
           <div class="column is-6">
-            <V-Card>
-              <V-PlaceholderSection
+            <VCard>
+              <VPlaceholderSection
                 title="You were invited"
                 subtitle="Jimmy H. invited you to join the Heartman &amp; Sons project."
               >
                 <template #image>
-                  <V-Avatar
+                  <VAvatar
                     picture="/demo/avatars/22.jpg"
-                    badge="/images/icons/flags/united-states-of-america.svg?url"
+                    badge="/images/icons/flags/united-states-of-america.svg"
                   />
                 </template>
-              </V-PlaceholderSection>
-            </V-Card>
+              </VPlaceholderSection>
+            </VCard>
           </div>
 
           <div class="column is-6">
-            <V-PlaceholderSection
+            <VPlaceholderSection
               title="Go Premium"
               subtitle="Unlock more features and business tools by going premium"
             >
               <template #action>
-                <V-Buttons align="centered">
-                  <V-Button color="primary">View plans</V-Button>
-                </V-Buttons>
+                <VButtons align="centered">
+                  <VButton color="primary">View plans</VButton>
+                </VButtons>
               </template>
-            </V-PlaceholderSection>
+            </VPlaceholderSection>
           </div>
         </div>
 

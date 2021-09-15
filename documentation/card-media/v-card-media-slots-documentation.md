@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-CardMedia Slots
+### VCardMedia Slots
 
-Here is the full slots available for `<V-CardMedia />` component:
+Here is the full slots available for `<VCardMedia />` component:
 
 | Slot     | Properties                          | Description       |
 | -------- | ----------------------------------- | ----------------- |

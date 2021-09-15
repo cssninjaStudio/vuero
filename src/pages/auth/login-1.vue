@@ -55,7 +55,7 @@ useHead({
                 <div class="column">
                   <img
                     class="hero-image"
-                    src="/@src/assets/illustrations/login/station.svg?url"
+                    src="/@src/assets/illustrations/login/station.svg"
                     alt=""
                   />
                 </div>
@@ -104,10 +104,10 @@ useHead({
                   <i aria-hidden="true" class="lnil lnil-envelope"></i>
                 </div>
                 <div class="validation-icon is-success">
-                  <V-IconWrap icon="feather:check" />
+                  <VIconWrap icon="feather:check" />
                 </div>
                 <div class="validation-icon is-error">
-                  <V-IconWrap icon="feather:x" />
+                  <VIconWrap icon="feather:x" />
                 </div>
               </div>
               <div class="control has-validation">
@@ -146,7 +146,7 @@ useHead({
                 <a @click="step = 'forgot-password'">Forgot Password?</a>
               </div>
               <div class="button-wrap has-help">
-                <V-Button
+                <VButton
                   :loading="isLoading"
                   color="primary"
                   type="submit"
@@ -156,7 +156,7 @@ useHead({
                   bold
                 >
                   Confirm
-                </V-Button>
+                </VButton>
                 <span>
                   Or
                   <RouterLink :to="{ name: 'auth-signup-1' }">
@@ -185,14 +185,14 @@ useHead({
                   <i aria-hidden="true" class="lnil lnil-envelope"></i>
                 </div>
                 <div class="validation-icon is-success">
-                  <V-IconWrap icon="feather:check" />
+                  <VIconWrap icon="feather:check" />
                 </div>
                 <div class="validation-icon is-error">
-                  <V-IconWrap icon="feather:x" />
+                  <VIconWrap icon="feather:x" />
                 </div>
               </div>
               <div class="button-wrap">
-                <V-Button
+                <VButton
                   color="white"
                   size="big"
                   lower
@@ -200,8 +200,8 @@ useHead({
                   @click="step = 'login'"
                 >
                   Cancel
-                </V-Button>
-                <V-Button
+                </VButton>
+                <VButton
                   color="primary"
                   size="big"
                   type="submit"
@@ -211,7 +211,7 @@ useHead({
                   @click="step = 'login'"
                 >
                   Confirm
-                </V-Button>
+                </VButton>
               </div>
             </form>
           </div>

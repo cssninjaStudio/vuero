@@ -60,22 +60,22 @@ const onSave = async () => {
         </div>
         <div class="right">
           <div class="buttons">
-            <V-Button
+            <VButton
               :to="{ name: 'sidebar-layouts-profile-view' }"
               icon="lnir lnir-arrow-left rem-100"
               light
               dark-outlined
             >
               Go Back
-            </V-Button>
-            <V-Button
+            </VButton>
+            <VButton
               color="primary"
               raised
               :loading="isLoading"
               @click="onSave"
             >
               Save Changes
-            </V-Button>
+            </VButton>
           </div>
         </div>
       </div>
@@ -101,8 +101,8 @@ const onSave = async () => {
             <div class="field-wrap">
               <div class="columns is-multiline">
                 <div class="column is-6">
-                  <V-Field class="is-image-select">
-                    <V-Control>
+                  <VField class="is-image-select">
+                    <VControl>
                       <Multiselect
                         v-model="selectedLanguage"
                         placeholder="Select a language"
@@ -153,12 +153,12 @@ const onSave = async () => {
                           </span>
                         </template>
                       </Multiselect>
-                    </V-Control>
-                  </V-Field>
+                    </VControl>
+                  </VField>
                 </div>
                 <div class="column is-6">
-                  <V-Field>
-                    <V-Control>
+                  <VField>
+                    <VControl>
                       <Multiselect
                         v-model="selectedLanguageLevel"
                         placeholder="Select your level"
@@ -182,34 +182,34 @@ const onSave = async () => {
                         ]"
                       >
                       </Multiselect>
-                    </V-Control>
-                  </V-Field>
+                    </VControl>
+                  </VField>
                 </div>
                 <div class="column is-12">
-                  <V-Field>
-                    <V-Control icon="feather:message-circle">
+                  <VField>
+                    <VControl icon="feather:message-circle">
                       <input
                         type="text"
                         class="input"
                         placeholder="Write a quick comment..."
                         autocomplete="off"
                       />
-                    </V-Control>
-                  </V-Field>
+                    </VControl>
+                  </VField>
                 </div>
                 <div class="column is-12">
-                  <V-Field>
-                    <V-Control>
-                      <V-Button
+                  <VField>
+                    <VControl>
+                      <VButton
                         color="primary"
                         icon="fas fa-plus"
                         raised
                         fullwidth
                       >
                         Add Language
-                      </V-Button>
-                    </V-Control>
-                  </V-Field>
+                      </VButton>
+                    </VControl>
+                  </VField>
                 </div>
               </div>
             </div>
@@ -218,8 +218,8 @@ const onSave = async () => {
           <template v-else>
             <!--Experience Item-->
             <div class="setting-item">
-              <V-IconWrap
-                picture="/images/icons/flags/united-states-of-america.svg?url"
+              <VIconWrap
+                picture="/images/icons/flags/united-states-of-america.svg"
               />
 
               <div class="meta">
@@ -233,7 +233,7 @@ const onSave = async () => {
 
             <!--Experience Item-->
             <div class="setting-item">
-              <V-IconWrap picture="/images/icons/flags/france.svg?url" />
+              <VIconWrap picture="/images/icons/flags/france.svg" />
 
               <div class="meta">
                 <span class="dark-inverted">French</span>
@@ -246,7 +246,7 @@ const onSave = async () => {
 
             <!--Experience Item-->
             <div class="setting-item">
-              <V-IconWrap picture="/images/icons/flags/germany.svg?url" />
+              <VIconWrap picture="/images/icons/flags/germany.svg" />
 
               <div class="meta">
                 <span class="dark-inverted">German</span>
@@ -259,7 +259,7 @@ const onSave = async () => {
 
             <!--Experience Item-->
             <div class="setting-item">
-              <V-IconWrap picture="/images/icons/flags/spain.svg?url" />
+              <VIconWrap picture="/images/icons/flags/spain.svg" />
 
               <div class="meta">
                 <span class="dark-inverted">Spanish</span>
@@ -272,14 +272,14 @@ const onSave = async () => {
 
             <!--Create Item-->
             <div class="setting-item is-create">
-              <V-IconWrap icon="lnil lnil-circle-plus" />
+              <VIconWrap icon="lnil lnil-circle-plus" />
 
               <div class="meta">
                 <span class="dark-inverted">New Item</span>
                 <span>Add a new language item</span>
               </div>
               <div class="end">
-                <V-Button
+                <VButton
                   raised
                   dark-outlined
                   icon="fas fa-plus"
@@ -287,7 +287,7 @@ const onSave = async () => {
                   @click="isEditingLanguages = true"
                 >
                   Add
-                </V-Button>
+                </VButton>
               </div>
             </div>
           </template>
@@ -314,8 +314,8 @@ const onSave = async () => {
             <div class="field-wrap">
               <div class="columns is-multiline">
                 <div class="column is-6">
-                  <V-Field class="is-image-select">
-                    <V-Control>
+                  <VField class="is-image-select">
+                    <VControl>
                       <Multiselect
                         v-model="selectedSkill"
                         placeholder="Select a Skill"
@@ -386,12 +386,12 @@ const onSave = async () => {
                           </span>
                         </template>
                       </Multiselect>
-                    </V-Control>
-                  </V-Field>
+                    </VControl>
+                  </VField>
                 </div>
                 <div class="column is-6">
-                  <V-Field>
-                    <V-Control>
+                  <VField>
+                    <VControl>
                       <Multiselect
                         v-model="selectedSkillLevel"
                         placeholder="Years of Exp."
@@ -439,22 +439,22 @@ const onSave = async () => {
                         ]"
                       >
                       </Multiselect>
-                    </V-Control>
-                  </V-Field>
+                    </VControl>
+                  </VField>
                 </div>
                 <div class="column is-12">
-                  <V-Field>
-                    <V-Control>
-                      <V-Button
+                  <VField>
+                    <VControl>
+                      <VButton
                         color="primary"
                         icon="fas fa-plus"
                         raised
                         fullwidth
                       >
                         Add Skill
-                      </V-Button>
-                    </V-Control>
-                  </V-Field>
+                      </VButton>
+                    </VControl>
+                  </VField>
                 </div>
               </div>
             </div>
@@ -462,7 +462,7 @@ const onSave = async () => {
           <template v-else>
             <!--Skill Item-->
             <div class="setting-item">
-              <V-IconWrap picture="/images/icons/stacks/js.svg?url" />
+              <VIconWrap picture="/images/icons/stacks/js.svg" />
 
               <div class="meta">
                 <span class="dark-inverted">Javascript</span>
@@ -475,7 +475,7 @@ const onSave = async () => {
 
             <!--Skill Item-->
             <div class="setting-item">
-              <V-IconWrap picture="/images/icons/stacks/html5.svg?url" />
+              <VIconWrap picture="/images/icons/stacks/html5.svg" />
 
               <div class="meta">
                 <span class="dark-inverted">Html5</span>
@@ -488,7 +488,7 @@ const onSave = async () => {
 
             <!--Skill Item-->
             <div class="setting-item">
-              <V-IconWrap picture="/images/icons/stacks/css3.svg?url" />
+              <VIconWrap picture="/images/icons/stacks/css3.svg" />
 
               <div class="meta">
                 <span class="dark-inverted">CSS3</span>
@@ -501,14 +501,14 @@ const onSave = async () => {
 
             <!--Create Item-->
             <div class="setting-item is-create">
-              <V-IconWrap icon="lnil lnil-circle-plus" />
+              <VIconWrap icon="lnil lnil-circle-plus" />
 
               <div class="meta">
                 <span class="dark-inverted">New Item</span>
                 <span>Add a new skill item</span>
               </div>
               <div class="end">
-                <V-Button
+                <VButton
                   raised
                   dark-outlined
                   icon="fas fa-plus"
@@ -516,7 +516,7 @@ const onSave = async () => {
                   @click="isEditingSkills = true"
                 >
                   Add
-                </V-Button>
+                </VButton>
               </div>
             </div>
           </template>
@@ -543,8 +543,8 @@ const onSave = async () => {
             <div class="field-wrap">
               <div class="columns is-multiline">
                 <div class="column is-6">
-                  <V-Field class="is-image-select">
-                    <V-Control>
+                  <VField class="is-image-select">
+                    <VControl>
                       <Multiselect
                         v-model="selectedTool"
                         placeholder="Select a Tool"
@@ -595,12 +595,12 @@ const onSave = async () => {
                           </span>
                         </template>
                       </Multiselect>
-                    </V-Control>
-                  </V-Field>
+                    </VControl>
+                  </VField>
                 </div>
                 <div class="column is-6">
-                  <V-Field>
-                    <V-Control>
+                  <VField>
+                    <VControl>
                       <Multiselect
                         v-model="selectedToolLevel"
                         placeholder="Select your level"
@@ -628,22 +628,22 @@ const onSave = async () => {
                         ]"
                       >
                       </Multiselect>
-                    </V-Control>
-                  </V-Field>
+                    </VControl>
+                  </VField>
                 </div>
                 <div class="column is-12">
-                  <V-Field>
-                    <V-Control>
-                      <V-Button
+                  <VField>
+                    <VControl>
+                      <VButton
                         color="primary"
                         icon="fas fa-plus"
                         raised
                         fullwidth
                       >
                         Add Tool
-                      </V-Button>
-                    </V-Control>
-                  </V-Field>
+                      </VButton>
+                    </VControl>
+                  </VField>
                 </div>
               </div>
             </div>
@@ -652,7 +652,7 @@ const onSave = async () => {
           <template v-else>
             <!--Skill Item-->
             <div class="setting-item">
-              <V-IconWrap picture="/images/icons/stacks/illustrator.svg?url" />
+              <VIconWrap picture="/images/icons/stacks/illustrator.svg" />
 
               <div class="meta">
                 <span class="dark-inverted">Illustrator</span>
@@ -665,7 +665,7 @@ const onSave = async () => {
 
             <!--Skill Item-->
             <div class="setting-item">
-              <V-IconWrap picture="/demo/photos/tools/jira.svg?url" />
+              <VIconWrap picture="/demo/photos/tools/jira.svg" />
 
               <div class="meta">
                 <span class="dark-inverted">Jira Software</span>
@@ -678,7 +678,7 @@ const onSave = async () => {
 
             <!--Skill Item-->
             <div class="setting-item">
-              <V-IconWrap picture="/demo/photos/tools/office.svg?url" />
+              <VIconWrap picture="/demo/photos/tools/office.svg" />
 
               <div class="meta">
                 <span class="dark-inverted">MS Office</span>
@@ -691,14 +691,14 @@ const onSave = async () => {
 
             <!--Create Item-->
             <div class="setting-item is-create">
-              <V-IconWrap icon="lnil lnil-circle-plus" />
+              <VIconWrap icon="lnil lnil-circle-plus" />
 
               <div class="meta">
                 <span class="dark-inverted">New Item</span>
                 <span>Add a new tool item</span>
               </div>
               <div class="end">
-                <V-Button
+                <VButton
                   raised
                   dark-outlined
                   icon="fas fa-plus"
@@ -706,7 +706,7 @@ const onSave = async () => {
                   @click="isEditingTools = true"
                 >
                   Add
-                </V-Button>
+                </VButton>
               </div>
             </div>
           </template>

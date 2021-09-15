@@ -1,25 +1,25 @@
-### V-Tag elevated
+### VTag elevated
 
-Vuero provides a `<V-Tag />` component than can be customized to fit any needs.
-V-Tags can have a permanent box shadow.
+Vuero provides a `<VTag />` component than can be customized to fit any needs.
+VTags can have a permanent box shadow.
 Use the `elevated` prop to add elevation to the component.
 
 <!--code-->
 
 ```vue
 <template>
-  <V-Tags>
-    <V-Tag color="solid" label="Tag Label" rounded elevated />
-    <V-Tag color="primary" label="Tag Label" rounded elevated />
-    <V-Tag color="info" label="Tag Label" rounded elevated />
-    <V-Tag color="success" label="Tag Label" rounded elevated />
-    <V-Tag color="warning" label="Tag Label" rounded elevated />
-    <V-Tag color="danger" label="Tag Label" rounded elevated />
-    <V-Tag color="orange" label="Tag Label" rounded elevated />
-    <V-Tag color="blue" label="Tag Label" rounded elevated />
-    <V-Tag color="green" label="Tag Label" rounded elevated />
-    <V-Tag color="purple" label="Tag Label" rounded elevated />
-  </V-Tags>
+  <VTags>
+    <VTag color="solid" label="Tag Label" rounded elevated />
+    <VTag color="primary" label="Tag Label" rounded elevated />
+    <VTag color="info" label="Tag Label" rounded elevated />
+    <VTag color="success" label="Tag Label" rounded elevated />
+    <VTag color="warning" label="Tag Label" rounded elevated />
+    <VTag color="danger" label="Tag Label" rounded elevated />
+    <VTag color="orange" label="Tag Label" rounded elevated />
+    <VTag color="blue" label="Tag Label" rounded elevated />
+    <VTag color="green" label="Tag Label" rounded elevated />
+    <VTag color="purple" label="Tag Label" rounded elevated />
+  </VTags>
 </template>
 ```
 
@@ -27,17 +27,17 @@ Use the `elevated` prop to add elevation to the component.
 
 <!--example-->
 
-<V-Tags>
-  <V-Tag color="solid" label="Tag Label" rounded elevated />
-  <V-Tag color="primary" label="Tag Label" rounded elevated />
-  <V-Tag color="info" label="Tag Label" rounded elevated />
-  <V-Tag color="success" label="Tag Label" rounded elevated />
-  <V-Tag color="warning" label="Tag Label" rounded elevated />
-  <V-Tag color="danger" label="Tag Label" rounded elevated />
-  <V-Tag color="orange" label="Tag Label" rounded elevated />
-  <V-Tag color="blue" label="Tag Label" rounded elevated />
-  <V-Tag color="green" label="Tag Label" rounded elevated />
-  <V-Tag color="purple" label="Tag Label" rounded elevated />
-</V-Tags>
+<VTags>
+  <VTag color="solid" label="Tag Label" rounded elevated />
+  <VTag color="primary" label="Tag Label" rounded elevated />
+  <VTag color="info" label="Tag Label" rounded elevated />
+  <VTag color="success" label="Tag Label" rounded elevated />
+  <VTag color="warning" label="Tag Label" rounded elevated />
+  <VTag color="danger" label="Tag Label" rounded elevated />
+  <VTag color="orange" label="Tag Label" rounded elevated />
+  <VTag color="blue" label="Tag Label" rounded elevated />
+  <VTag color="green" label="Tag Label" rounded elevated />
+  <VTag color="purple" label="Tag Label" rounded elevated />
+</VTags>
 
 <!--/example-->

@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-Dropdown Props
+### VDropdown Props
 
-Here is the full props available for `<V-Dropdown />` component:
+Here is the full props available for `<VDropdown />` component:
 
 | Props  | Default                                       | Type                                              |
 | ------ | --------------------------------------------- | ------------------------------------------------- |

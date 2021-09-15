@@ -1,6 +1,6 @@
 ### Text popover
 
-Vuero ships with the `<Tippy />` component from the `V-Tippy` library. It lets
+Vuero ships with the `<Tippy />` component from the `VTippy` library. It lets
 you create any type of popover with custom content. You can set the trigger
 to be a click event using the `trigger="click"` prop.
 
@@ -10,12 +10,12 @@ to be a click event using the `trigger="click"` prop.
 <template>
   <div class="buttons">
     <tippy>
-      <V-Button>Hover me!</V-Button>
+      <VButton>Hover me!</VButton>
       <template #content> Tooltip content </template>
     </tippy>
 
     <tippy trigger="click">
-      <V-Button>Click me!</V-Button>
+      <VButton>Click me!</VButton>
       <template #content> Tooltip content </template>
     </tippy>
   </div>
@@ -28,7 +28,7 @@ to be a click event using the `trigger="click"` prop.
 
 <div class="buttons">
   <tippy>
-    <V-Button class="mx-1">Hover me!</V-Button>
+    <VButton class="mx-1">Hover me!</VButton>
     <template #content>
       <div class="v-popover-content is-text">
           <div class="popover-head">
@@ -42,7 +42,7 @@ to be a click event using the `trigger="click"` prop.
     </template>
   </tippy>
   <tippy trigger="click">
-    <V-Button class="mx-1">Click me!</V-Button>
+    <VButton class="mx-1">Click me!</VButton>
     <template #content>
       <div class="v-popover-content is-text">
           <div class="popover-head">

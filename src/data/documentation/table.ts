@@ -14,7 +14,7 @@ export const flexRowsBasic = [
       },
       {
         id: 1,
-        picture: null,
+        picture: undefined,
         initials: 'JP',
         color: 'info',
       },
@@ -32,7 +32,7 @@ export const flexRowsBasic = [
       },
       {
         id: 4,
-        picture: null,
+        picture: undefined,
         initials: 'SC',
         color: 'success',
       },
@@ -47,7 +47,7 @@ export const flexRowsBasic = [
     contacts: [
       {
         id: 4,
-        picture: null,
+        picture: undefined,
         initials: 'SC',
         color: 'h-purple',
       },
@@ -62,7 +62,7 @@ export const flexRowsBasic = [
     contacts: [
       {
         id: 12,
-        picture: null,
+        picture: undefined,
         initials: 'BT',
         color: 'success',
       },
@@ -137,7 +137,7 @@ export const flexRowsAdvanced = [
       },
       {
         id: 1,
-        picture: null,
+        picture: undefined,
         initials: 'JP',
         color: 'info',
       },
@@ -155,7 +155,7 @@ export const flexRowsAdvanced = [
       },
       {
         id: 4,
-        picture: null,
+        picture: undefined,
         initials: 'SC',
         color: 'success',
       },
@@ -173,7 +173,7 @@ export const flexRowsAdvanced = [
     contacts: [
       {
         id: 4,
-        picture: null,
+        picture: undefined,
         initials: 'SC',
         color: 'h-purple',
       },
@@ -191,7 +191,7 @@ export const flexRowsAdvanced = [
     contacts: [
       {
         id: 12,
-        picture: null,
+        picture: undefined,
         initials: 'BT',
         color: 'success',
       },

@@ -9,15 +9,15 @@ import { pageTitle } from '/@src/state/sidebarLayoutState'
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-pageTitle.value = 'V-PlaceholderPage'
+pageTitle.value = 'VPlaceholderPage'
 useHead({
-  title: 'V-PlaceholderPage - Components - Vuero',
+  title: 'VPlaceholderPage - Components - Vuero',
 })
 </script>
 
 <template>
   <div class="page-content-inner">
-    <V-Breadcrumb
+    <VBreadcrumb
       with-icons
       separator="bullet"
       :items="[
@@ -32,7 +32,7 @@ useHead({
           to: { name: 'components' },
         },
         {
-          label: 'V-PlaceholderPage',
+          label: 'VPlaceholderPage',
           to: { name: 'components-placeholder-page' },
         },
       ]"
@@ -44,7 +44,7 @@ useHead({
         :class="[toc.length > 0 ? 'is-9' : 'is-12']"
         class="column doc-column"
       >
-        <V-PlaceholderPage
+        <VPlaceholderPage
           title="We couldn't find any matching results."
           subtitle="Too bad. Looks like we couldn't find any matching results for the
             search terms you've entered. Please try different search terms or
@@ -54,22 +54,22 @@ useHead({
           <template #image>
             <img
               class="light-image"
-              src="/@src/assets/illustrations/placeholders/search-1.svg?url"
+              src="/@src/assets/illustrations/placeholders/search-1.svg"
               alt=""
             />
             <img
               class="dark-image"
-              src="/@src/assets/illustrations/placeholders/search-1-dark.svg?url"
+              src="/@src/assets/illustrations/placeholders/search-1-dark.svg"
               alt=""
             />
           </template>
           <template #action>
-            <V-Buttons align="centered">
-              <V-Button>Go to the catalog</V-Button>
-              <V-Button color="primary">Search everywhere</V-Button>
-            </V-Buttons>
+            <VButtons align="centered">
+              <VButton>Go to the catalog</VButton>
+              <VButton color="primary">Search everywhere</VButton>
+            </VButtons>
           </template>
-        </V-PlaceholderPage>
+        </VPlaceholderPage>
 
         <div class="pt-6">
           <VPlaceholderPagePropsDocumentation />

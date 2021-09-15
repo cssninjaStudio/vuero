@@ -23,7 +23,7 @@ Thumbnails can be the size you want based on the thumbnail image real size.
 
 ```vue
 <template>
-  <V-PhotosSwipe :items="items" thumbnail-radius="5" />
+  <VPhotosSwipe :items="items" thumbnail-radius="5" />
 </template>
 ```
 
@@ -31,6 +31,6 @@ Thumbnails can be the size you want based on the thumbnail image real size.
 
 <!--example-->
 
-<V-PhotosSwipe :items="frontmatter.items" thumbnail-radius="5" />
+<VPhotosSwipe :items="frontmatter.items" thumbnail-radius="5" />
 
 <!--/example-->

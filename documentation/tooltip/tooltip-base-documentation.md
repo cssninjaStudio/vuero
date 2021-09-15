@@ -1,4 +1,4 @@
-### V-Tooltip
+### VTooltip
 
 Vuero offers a very simple versatile v-tooltip directive.
 The example below is the default and basic version.
@@ -9,43 +9,43 @@ There are 6 default positions accessible with modifiers: `.top-left`,
 
 ```vue {4,10,16,22,28,34}
 <template>
-  <V-Tags>
-    <V-Tag
+  <VTags>
+    <VTag
       v-tooltip.left="'Iam a top left tooltip'"
       color="solid"
       label="Top Left"
     />
 
-    <V-Tag
+    <VTag
       v-tooltip="'Iam a top center tooltip'"
       color="solid"
       label="Top Center"
     />
 
-    <V-Tag
+    <VTag
       v-tooltip.right="'Iam a top right tooltip'"
       color="solid"
       label="Top Right"
     />
 
-    <V-Tag
+    <VTag
       v-tooltip.bottom.left="'Iam a bottom left tooltip'"
       color="solid"
       label="Bottom Left"
     />
 
-    <V-Tag
+    <VTag
       v-tooltip.bottom="'Iam a bottom center tooltip'"
       color="solid"
       label="Bottom Center"
     />
 
-    <V-Tag
+    <VTag
       v-tooltip.bottom.right="'Iam a bottom right tooltip'"
       color="solid"
       label="Bottom Right"
     />
-  </V-Tags>
+  </VTags>
 </template>
 ```
 
@@ -53,37 +53,37 @@ There are 6 default positions accessible with modifiers: `.top-left`,
 
 <!--Example-->
 
-<V-Tags>
-  <V-Tag
+<VTags>
+  <VTag
     v-tooltip.left="'Iam a top left tooltip'"
     color="solid"
     label="Top Left"
   />
-  <V-Tag
+  <VTag
     v-tooltip="'Iam a top center tooltip'"
     color="solid"
     label="Top Center"
   />
-  <V-Tag
+  <VTag
     v-tooltip.right="'Iam a top right tooltip'"
     color="solid"
     label="Top Right"
   />
-  <V-Tag
+  <VTag
     v-tooltip.bottom.left="'Iam a bottom left tooltip'"
     color="solid"
     label="Bottom Left"
   />
-  <V-Tag
+  <VTag
     v-tooltip.bottom="'Iam a bottom center tooltip'"
     color="solid"
     label="Bottom Center"
   />
-  <V-Tag
+  <VTag
     v-tooltip.bottom.right="'Iam a bottom right tooltip'"
     color="solid"
     label="Bottom Right"
   />
-</V-Tags>
+</VTags>
 
 <!--/Example-->

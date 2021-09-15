@@ -7,7 +7,6 @@ import ViteFonts from 'vite-plugin-fonts'
 import ViteRadar from 'vite-plugin-radar'
 import PurgeIcons from 'vite-plugin-purge-icons'
 import { imagetools } from 'vite-imagetools'
-import SvgLoader from 'vite-svg-loader'
 import ImageMin from 'vite-plugin-imagemin'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
 import VueroDocumentation from './vite-plugin-vuero-doc/index'
@@ -166,18 +165,6 @@ export default defineConfig({
       extensions: ['vue', 'md'],
       dts: true,
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
-    }),
-
-    /**
-     * vite-svg-loader allow to load SVG files as Vue components
-     *
-     * @see https://github.com/jpkleemans/vite-svg-loader
-     */
-    SvgLoader({
-      svgo: true,
-      svgoConfig: {
-        multipass: true,
-      },
     }),
 
     /**

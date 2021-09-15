@@ -8,15 +8,15 @@ import { pageTitle } from '/@src/state/sidebarLayoutState'
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-pageTitle.value = 'V-Progress'
+pageTitle.value = 'VProgress'
 useHead({
-  title: 'V-Progress - Elements - Vuero',
+  title: 'VProgress - Elements - Vuero',
 })
 </script>
 
 <template>
   <div class="page-content-inner">
-    <V-Breadcrumb
+    <VBreadcrumb
       with-icons
       separator="bullet"
       :items="[
@@ -31,7 +31,7 @@ useHead({
           to: { name: 'elements' },
         },
         {
-          label: 'V-Progess',
+          label: 'VProgess',
           to: { name: 'elements-progress' },
         },
       ]"
@@ -43,13 +43,13 @@ useHead({
         :class="[toc.length > 0 ? 'is-9' : 'is-12']"
         class="column doc-column"
       >
-        <!--V-Progress-->
+        <!--VProgress-->
         <VProgressBaseDocumentation />
 
-        <!--V-Progress colors-->
+        <!--VProgress colors-->
         <VProgressColorsDocumentation />
 
-        <!--V-Progress undeterminate-->
+        <!--VProgress undeterminate-->
         <VProgressUndeterminateDocumentation />
 
         <!--Props-->

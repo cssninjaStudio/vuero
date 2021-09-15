@@ -1,6 +1,6 @@
 ### Icon centered
 
-You can adjust the `<V-Block />` component flex alignment using
+You can adjust the `<VBlock />` component flex alignment using
 the `center` prop. This will apply the `flex` property
 `align-items: center;` to the component.
 
@@ -8,16 +8,16 @@ the `center` prop. This will apply the `flex` property
 
 ```vue
 <template>
-  <V-Block title="Team Tasks" subtitle="View all tasks" center>
+  <VBlock title="Team Tasks" subtitle="View all tasks" center>
     <template #icon>
       <VIconBox color="info" size="medium" rounded>
         <i class="iconify" data-icon="feather:chrome"></i>
       </VIconBox>
     </template>
     <template #action>
-      <V-Button color="primary" elevated>View</V-Button>
+      <VButton color="primary" elevated>View</VButton>
     </template>
-  </V-Block>
+  </VBlock>
 </template>
 ```
 
@@ -28,16 +28,16 @@ the `center` prop. This will apply the `flex` property
 <div class="field">
   <div class="control">
     <div class="l-card">
-      <V-Block title="Team Tasks" subtitle="View all tasks" center>
+      <VBlock title="Team Tasks" subtitle="View all tasks" center>
         <template #icon>
           <VIconBox color="info" size="medium" rounded>
             <i class="iconify" data-icon="feather:chrome"></i>
           </VIconBox>
         </template>
         <template #action>
-          <V-Button color="primary" elevated>View</V-Button>
+          <VButton color="primary" elevated>View</VButton>
         </template>
-      </V-Block>
+      </VBlock>
     </div>
   </div>
 </div>

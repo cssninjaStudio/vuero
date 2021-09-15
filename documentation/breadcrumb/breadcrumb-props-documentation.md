@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-Breadcrumb Props
+### VBreadcrumb Props
 
-Here is the full props available for `<V-Breadcrumb />` component:
+Here is the full props available for `<VBreadcrumb />` component:
 
 | Props                  | Default                                       | Type                                                                                                                                                                    |
 | ---------------------- | --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

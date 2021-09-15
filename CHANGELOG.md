@@ -4,34 +4,32 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [1.4.0](https://github.com/cssninja-digisquad/vuero/compare/v1.3.2...v1.4.0) (2021-09-09)
 
-
 ### Features
 
-* **collapse-model:** add v-collapsemodel component ([2ad9030](https://github.com/cssninja-digisquad/vuero/commit/2ad903010fd6eee21c0f5d2561f391bb35805e85))
-* **components:** add v-flex in components, add css vars documentation ([a64cdf5](https://github.com/cssninja-digisquad/vuero/commit/a64cdf5ac39a8bd65fdc9bd1c1e9f77ed8be6104))
-* **dev-tools:** add commitlint and standard-version release tool for changelog/version generation ([1f0d473](https://github.com/cssninja-digisquad/vuero/commit/1f0d4739c6bea2a9ffbea32c7a896dab58bef64c))
-* **docs:** add color picker on documentation ([4a2a844](https://github.com/cssninja-digisquad/vuero/commit/4a2a844d4df8d8b9b85b445c516fa33ebe3c6911))
-* **env:** add .env file with example for mapbox api key) ([7f4ef80](https://github.com/cssninja-digisquad/vuero/commit/7f4ef8057d73a753a8d9920512f045447c38d7b1))
-* **flex-pagination:** translate component ([760fd47](https://github.com/cssninja-digisquad/vuero/commit/760fd476e3cbaebad6e28543b7e37191f2e3c0e6))
-* **flex:** add v-flex component ([2d39989](https://github.com/cssninja-digisquad/vuero/commit/2d39989471c8c3ad67c5dc2d2c5c40168a569905))
-* **modal:** translate component ([4fbb873](https://github.com/cssninja-digisquad/vuero/commit/4fbb873adc4f5de5844201c8bb379967faa06b86))
-* **page-404:** translate page ([d4619cf](https://github.com/cssninja-digisquad/vuero/commit/d4619cf3c787b0f24fbfed317933cc2cceb9dc00))
-* **reload-promp:** add appName props + translate component ([a4475a4](https://github.com/cssninja-digisquad/vuero/commit/a4475a4a0557202f4d53cda9bd690702d9984dc5))
-* **scss:** migrate to native css variables 🌈 ([a680ad6](https://github.com/cssninja-digisquad/vuero/commit/a680ad63910043f39989bebd8ad52e773d5520dc))
-* **scss:** replace darken function in components with variables ([d5f72a2](https://github.com/cssninja-digisquad/vuero/commit/d5f72a23217b4de23aca030844d2763f502bb77d))
-* **scss:** replace lighten function in components with variables ([970586a](https://github.com/cssninja-digisquad/vuero/commit/970586a99b14a85a855c41576426a69e55f15b4a))
-* **scss:** resolve darken/lighten colors ([c17b9f8](https://github.com/cssninja-digisquad/vuero/commit/c17b9f8d7eea2ed57cbde53c443685bfdbd81889))
-* **svg:** add vite-svg-loader + use css variables in error-1.svg for demo ([69c1867](https://github.com/cssninja-digisquad/vuero/commit/69c186782a03b7fd4b47a35642084feb63932c81))
-* **typings:** migrate all components declaration to typescript with generic type notation ([3e6c654](https://github.com/cssninja-digisquad/vuero/commit/3e6c6546bd0b413f8ddebfc2587f7624b82b01ab))
-
+- **collapse-model:** add v-collapsemodel component ([2ad9030](https://github.com/cssninja-digisquad/vuero/commit/2ad903010fd6eee21c0f5d2561f391bb35805e85))
+- **components:** add v-flex in components, add css vars documentation ([a64cdf5](https://github.com/cssninja-digisquad/vuero/commit/a64cdf5ac39a8bd65fdc9bd1c1e9f77ed8be6104))
+- **dev-tools:** add commitlint and standard-version release tool for changelog/version generation ([1f0d473](https://github.com/cssninja-digisquad/vuero/commit/1f0d4739c6bea2a9ffbea32c7a896dab58bef64c))
+- **docs:** add color picker on documentation ([4a2a844](https://github.com/cssninja-digisquad/vuero/commit/4a2a844d4df8d8b9b85b445c516fa33ebe3c6911))
+- **env:** add .env file with example for mapbox api key) ([7f4ef80](https://github.com/cssninja-digisquad/vuero/commit/7f4ef8057d73a753a8d9920512f045447c38d7b1))
+- **flex-pagination:** translate component ([760fd47](https://github.com/cssninja-digisquad/vuero/commit/760fd476e3cbaebad6e28543b7e37191f2e3c0e6))
+- **flex:** add v-flex component ([2d39989](https://github.com/cssninja-digisquad/vuero/commit/2d39989471c8c3ad67c5dc2d2c5c40168a569905))
+- **modal:** translate component ([4fbb873](https://github.com/cssninja-digisquad/vuero/commit/4fbb873adc4f5de5844201c8bb379967faa06b86))
+- **page-404:** translate page ([d4619cf](https://github.com/cssninja-digisquad/vuero/commit/d4619cf3c787b0f24fbfed317933cc2cceb9dc00))
+- **reload-promp:** add appName props + translate component ([a4475a4](https://github.com/cssninja-digisquad/vuero/commit/a4475a4a0557202f4d53cda9bd690702d9984dc5))
+- **scss:** migrate to native css variables 🌈 ([a680ad6](https://github.com/cssninja-digisquad/vuero/commit/a680ad63910043f39989bebd8ad52e773d5520dc))
+- **scss:** replace darken function in components with variables ([d5f72a2](https://github.com/cssninja-digisquad/vuero/commit/d5f72a23217b4de23aca030844d2763f502bb77d))
+- **scss:** replace lighten function in components with variables ([970586a](https://github.com/cssninja-digisquad/vuero/commit/970586a99b14a85a855c41576426a69e55f15b4a))
+- **scss:** resolve darken/lighten colors ([c17b9f8](https://github.com/cssninja-digisquad/vuero/commit/c17b9f8d7eea2ed57cbde53c443685bfdbd81889))
+- **svg:** add vite-svg-loader + use css variables in error-1.svg for demo ([69c1867](https://github.com/cssninja-digisquad/vuero/commit/69c186782a03b7fd4b47a35642084feb63932c81))
+- **typings:** migrate all components declaration to typescript with generic type notation ([3e6c654](https://github.com/cssninja-digisquad/vuero/commit/3e6c6546bd0b413f8ddebfc2587f7624b82b01ab))
 
 ### Bug Fixes
 
-* **button:** import v-placeload instead of resolving ([c97f1b0](https://github.com/cssninja-digisquad/vuero/commit/c97f1b042b98edab82bf59c02743b99e7984e290))
-* collapse icon ([c7d52cc](https://github.com/cssninja-digisquad/vuero/commit/c7d52cc8df70cd594320b55d74a0814d95a95162))
-* **dark-mode:** set is-dark class to documentElement (root html) instead of body ([c6c3bf5](https://github.com/cssninja-digisquad/vuero/commit/c6c3bf5e8e6d68aa1a920d9ff6a318ea5df9deb0))
-* **svg:** use .svg?url in html to avoid being imported as component by vite-svg-loader ([f98be7e](https://github.com/cssninja-digisquad/vuero/commit/f98be7edab65421d19db0bd9618ccaea85ef2d07))
-* **typings:** remove unecessary declaration + ignore components.d.ts for linter ([46da1bb](https://github.com/cssninja-digisquad/vuero/commit/46da1bb8c7f06682a3fe0550657c29b42048dbdc))
+- **button:** import v-placeload instead of resolving ([c97f1b0](https://github.com/cssninja-digisquad/vuero/commit/c97f1b042b98edab82bf59c02743b99e7984e290))
+- collapse icon ([c7d52cc](https://github.com/cssninja-digisquad/vuero/commit/c7d52cc8df70cd594320b55d74a0814d95a95162))
+- **dark-mode:** set is-dark class to documentElement (root html) instead of body ([c6c3bf5](https://github.com/cssninja-digisquad/vuero/commit/c6c3bf5e8e6d68aa1a920d9ff6a318ea5df9deb0))
+- **svg:** use .svg in html to avoid being imported as component by vite-svg-loader ([f98be7e](https://github.com/cssninja-digisquad/vuero/commit/f98be7edab65421d19db0bd9618ccaea85ef2d07))
+- **typings:** remove unecessary declaration + ignore components.d.ts for linter ([46da1bb](https://github.com/cssninja-digisquad/vuero/commit/46da1bb8c7f06682a3fe0550657c29b42048dbdc))
 
 ## 1.3.0 (2021-07-17)
 

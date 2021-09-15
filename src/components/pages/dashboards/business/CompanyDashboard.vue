@@ -80,10 +80,10 @@ onMounted(async () => {
     <div class="columns is-multiline">
       <div class="column is-4">
         <div class="dashboard-card is-company">
-          <V-Avatar
+          <VAvatar
             size="big"
-            picture="/demo/photos/brands/udemy.svg?url"
-            picture-dark="/demo/photos/brands/udemy-dark.svg?url"
+            picture="/demo/photos/brands/udemy.svg"
+            picture-dark="/demo/photos/brands/udemy-dark.svg"
           >
             <template #badge>
               <button class="button icon-button is-circle is-dark-outlined">
@@ -96,7 +96,7 @@ onMounted(async () => {
                 </span>
               </button>
             </template>
-          </V-Avatar>
+          </VAvatar>
 
           <h3 class="dark-inverted">U Learning</h3>
           <p>Online Courses</p>
@@ -191,7 +191,7 @@ onMounted(async () => {
 
       <div class="column is-12">
         <!-- Datatable -->
-        <V-SimpleDatatables :options="optionsCompany" />
+        <VSimpleDatatables :options="optionsCompany" />
       </div>
 
       <div class="column is-3">
@@ -202,7 +202,7 @@ onMounted(async () => {
           </template>
           <template #body>
             <div class="gauge-wrap">
-              <V-BillboardJS
+              <VBillboardJS
                 class="gauge-holder"
                 :options="personalScoreGaugeOptions"
                 @ready="onPersonalScoreGaugeReady"
@@ -336,7 +336,7 @@ onMounted(async () => {
 
           <div class="ticket-list">
             <!--Ticket-->
-            <V-Block
+            <VBlock
               title="[#45651] Cannot save changes to user profile"
               subtitle="Iam not able to save changes I make to my user profile. When
                   I click on the save button, it simply says failed."
@@ -351,19 +351,19 @@ onMounted(async () => {
                   :offset="[0, 10]"
                   placement="top-start"
                 >
-                  <V-Avatar size="medium" picture="/demo/avatars/31.jpg" />
+                  <VAvatar size="medium" picture="/demo/avatars/31.jpg" />
                   <template #content>
                     <UserPopoverContent :user="popovers.user31" />
                   </template>
                 </tippy>
               </template>
               <template #action>
-                <V-Button color="primary" raised>Manage</V-Button>
+                <VButton color="primary" raised>Manage</VButton>
               </template>
-            </V-Block>
+            </VBlock>
 
             <!--Ticket-->
-            <V-Block
+            <VBlock
               title="[#45783] Cannot create a new opportunity"
               subtitle="when I try to create a new opportunity, Iam redirected to a
                   404 page after clicking the action button."
@@ -378,19 +378,19 @@ onMounted(async () => {
                   :offset="[0, 10]"
                   placement="top-start"
                 >
-                  <V-Avatar size="medium" picture="/demo/avatars/23.jpg" />
+                  <VAvatar size="medium" picture="/demo/avatars/23.jpg" />
                   <template #content>
                     <UserPopoverContent :user="popovers.user23" />
                   </template>
                 </tippy>
               </template>
               <template #action>
-                <V-Button color="primary" raised>Manage</V-Button>
+                <VButton color="primary" raised>Manage</VButton>
               </template>
-            </V-Block>
+            </VBlock>
 
             <!--Ticket-->
-            <V-Block
+            <VBlock
               title="[#45723] Payment fails when using PayPal"
               subtitle="When I try to use PayPal as a payment method, it spins
                   forever and I get an error message after that."
@@ -405,19 +405,19 @@ onMounted(async () => {
                   :offset="[0, 10]"
                   placement="top-start"
                 >
-                  <V-Avatar size="medium" picture="/demo/avatars/32.jpg" />
+                  <VAvatar size="medium" picture="/demo/avatars/32.jpg" />
                   <template #content>
                     <UserPopoverContent :user="popovers.user32" />
                   </template>
                 </tippy>
               </template>
               <template #action>
-                <V-Button color="primary" raised>Manage</V-Button>
+                <VButton color="primary" raised>Manage</VButton>
               </template>
-            </V-Block>
+            </VBlock>
 
             <!--Ticket-->
-            <V-Block
+            <VBlock
               title="[#45862] Cannot find the assets in the theme folder"
               subtitle="I followed the documentation but Iam not able to locate the
                   assets in the main folder. Can I get some help?"
@@ -432,16 +432,16 @@ onMounted(async () => {
                   :offset="[0, 10]"
                   placement="top-start"
                 >
-                  <V-Avatar size="medium" picture="/demo/avatars/13.jpg" />
+                  <VAvatar size="medium" picture="/demo/avatars/13.jpg" />
                   <template #content>
                     <UserPopoverContent :user="popovers.user13" />
                   </template>
                 </tippy>
               </template>
               <template #action>
-                <V-Button color="primary" raised>Manage</V-Button>
+                <VButton color="primary" raised>Manage</VButton>
               </template>
-            </V-Block>
+            </VBlock>
           </div>
         </div>
       </div>

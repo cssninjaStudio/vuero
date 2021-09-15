@@ -21,32 +21,32 @@
           <span class="divider-label">Display</span>
         </li>
         <li>
-          <RouterLink :to="{ name: 'components-avatar' }">V-Avatar</RouterLink>
+          <RouterLink :to="{ name: 'components-avatar' }">VAvatar</RouterLink>
         </li>
         <li>
           <RouterLink :to="{ name: 'components-avatar-stack' }">
-            V-AvatarStack
+            VAvatarStack
           </RouterLink>
         </li>
         <li>
-          <RouterLink :to="{ name: 'components-block' }">V-Block</RouterLink>
+          <RouterLink :to="{ name: 'components-block' }">VBlock</RouterLink>
         </li>
 
         <li>
           <RouterLink :to="{ name: 'components-icon-box' }">
-            V-IconBox
+            VIconBox
           </RouterLink>
         </li>
         <li>
           <RouterLink :to="{ name: 'components-icon-wrap' }">
-            V-IconWrap
+            VIconWrap
           </RouterLink>
         </li>
         <li>
-          <RouterLink :to="{ name: 'components-snack' }"> V-Snack </RouterLink>
+          <RouterLink :to="{ name: 'components-snack' }"> VSnack </RouterLink>
         </li>
         <li>
-          <RouterLink :to="{ name: 'components-tag' }">V-Tag</RouterLink>
+          <RouterLink :to="{ name: 'components-tag' }">VTag</RouterLink>
         </li>
 
         <li class="divider with-label">
@@ -54,21 +54,21 @@
         </li>
         <li>
           <RouterLink :to="{ name: 'components-breadcrumb' }">
-            V-Breadcrumb
+            VBreadcrumb
           </RouterLink>
         </li>
         <li>
-          <RouterLink :to="{ name: 'components-tabs' }"> V-Tabs </RouterLink>
+          <RouterLink :to="{ name: 'components-tabs' }"> VTabs </RouterLink>
         </li>
         <li>
           <RouterLink :to="{ name: 'components-flex-pagination' }">
-            V-FlexPagination
+            VFlexPagination
           </RouterLink>
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
             <a class="parent-link">
-              V-FlexTable
+              VFlexTable
               <i
                 aria-hidden="true"
                 class="iconify"
@@ -154,7 +154,7 @@
                   class="iconify"
                   data-icon="feather:circle"
                 ></i>
-                V-Accordion
+                VAccordion
               </RouterLink>
             </li>
             <li>
@@ -167,7 +167,7 @@
                   class="iconify"
                   data-icon="feather:circle"
                 ></i>
-                V-Collapse
+                VCollapse
               </RouterLink>
             </li>
             <li>
@@ -180,7 +180,7 @@
                   class="iconify"
                   data-icon="feather:circle"
                 ></i>
-                V-AccordionImage
+                VAccordionImage
               </RouterLink>
             </li>
           </ul>
@@ -204,7 +204,7 @@
                   class="iconify"
                   data-icon="feather:circle"
                 ></i>
-                V-Card
+                VCard
               </RouterLink>
             </li>
             <li>
@@ -217,8 +217,8 @@
                   class="iconify"
                   data-icon="feather:circle"
                 ></i>
-                V-CardAction
-                <V-Tag label="v1.1" color="primary" outlined curved />
+                VCardAction
+                <VTag label="v1.1" color="primary" outlined curved />
               </RouterLink>
             </li>
             <li>
@@ -231,7 +231,7 @@
                   class="iconify"
                   data-icon="feather:circle"
                 ></i>
-                V-CardAdvanced
+                VCardAdvanced
               </RouterLink>
             </li>
             <li>
@@ -244,8 +244,8 @@
                   class="iconify"
                   data-icon="feather:circle"
                 ></i>
-                V-CardMedia
-                <V-Tag label="v1.1" color="primary" outlined curved />
+                VCardMedia
+                <VTag label="v1.1" color="primary" outlined curved />
               </RouterLink>
             </li>
             <li>
@@ -258,7 +258,7 @@
                   class="iconify"
                   data-icon="feather:circle"
                 ></i>
-                V-CardSocial
+                VCardSocial
               </RouterLink>
             </li>
           </ul>
@@ -285,7 +285,7 @@
                   class="iconify"
                   data-icon="feather:circle"
                 ></i>
-                V-PlaceholderPage
+                VPlaceholderPage
               </RouterLink>
             </li>
             <li>
@@ -298,7 +298,7 @@
                   class="iconify"
                   data-icon="feather:circle"
                 ></i>
-                V-PlaceholderSection
+                VPlaceholderSection
               </RouterLink>
             </li>
           </ul>
@@ -353,7 +353,7 @@
                   class="iconify"
                   data-icon="feather:circle"
                 ></i>
-                V-BillboardJS
+                VBillboardJS
               </RouterLink>
             </li>
             <li>
@@ -366,7 +366,7 @@
                   class="iconify"
                   data-icon="feather:circle"
                 ></i>
-                V-PhotosSwipe
+                VPhotosSwipe
               </RouterLink>
             </li>
             <li>
@@ -379,7 +379,7 @@
                   class="iconify"
                   data-icon="feather:circle"
                 ></i>
-                V-Plyr
+                VPlyr
               </RouterLink>
             </li>
             <li>
@@ -392,7 +392,7 @@
                   class="iconify"
                   data-icon="feather:circle"
                 ></i>
-                V-SimpleDatatables
+                VSimpleDatatables
               </RouterLink>
             </li>
           </ul>

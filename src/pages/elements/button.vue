@@ -8,15 +8,15 @@ import { pageTitle } from '/@src/state/sidebarLayoutState'
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-pageTitle.value = 'V-Button'
+pageTitle.value = 'VButton'
 useHead({
-  title: 'V-Button - Elements - Vuero',
+  title: 'VButton - Elements - Vuero',
 })
 </script>
 
 <template>
   <div class="page-content-inner">
-    <V-Breadcrumb
+    <VBreadcrumb
       with-icons
       separator="bullet"
       :items="[
@@ -34,7 +34,7 @@ useHead({
           label: 'Buttons',
         },
         {
-          label: 'V-Button',
+          label: 'VButton',
           to: { name: 'elements-button' },
         },
       ]"
@@ -46,40 +46,40 @@ useHead({
         :class="[toc.length > 0 ? 'is-9' : 'is-12']"
         class="column doc-column"
       >
-        <!--V-Button base-->
+        <!--VButton base-->
         <VButtonBaseDocumentation />
 
-        <!--V-Button link-->
+        <!--VButton link-->
         <VButtonLinkDocumentation />
 
-        <!--V-Button colors-->
+        <!--VButton colors-->
         <VButtonColorsDocumentation />
 
-        <!--V-Button light colors-->
+        <!--VButton light colors-->
         <VButtonColorsLightDocumentation />
 
-        <!--V-Button outlined colors-->
+        <!--VButton outlined colors-->
         <VButtonColorsOutlinedDocumentation />
 
-        <!--V-Button placeload-->
+        <!--VButton placeload-->
         <VButtonPlaceloadDocumentation />
 
-        <!--V-Button Elevation-->
+        <!--VButton Elevation-->
         <VButtonElevatedDocumentation />
 
-        <!--V-Button Disabled-->
+        <!--VButton Disabled-->
         <VButtonDisabledDocumentation />
 
-        <!--V-Button Font Awesome-->
+        <!--VButton Font Awesome-->
         <VButtonFaDocumentation />
 
-        <!--V-Button Feather-->
+        <!--VButton Feather-->
         <VButtonFeatherDocumentation />
 
-        <!--V-Button Group-->
+        <!--VButton Group-->
         <VButtonGroupDocumentation />
 
-        <!--V-Button Addons-->
+        <!--VButton Addons-->
         <VButtonAddonsDocumentation />
 
         <!--Props-->

@@ -1,19 +1,19 @@
 ### Disabled
 
-`<V-Button />` components can be disabled and not responsive to pointer events.
+`<VButton />` components can be disabled and not responsive to pointer events.
 Use the `disabled` prop to set a button in a disabled state.
 
 <!--code-->
 
 ```vue
 <template>
-  <V-Buttons>
-    <V-Button color="primary" disabled> Button </V-Button>
-    <V-Button color="info" disabled> Button </V-Button>
-    <V-Button color="success" disabled> Button </V-Button>
-    <V-Button color="warning" disabled> Button </V-Button>
-    <V-Button color="danger" disabled> Button </V-Button>
-  </V-Buttons>
+  <VButtons>
+    <VButton color="primary" disabled> Button </VButton>
+    <VButton color="info" disabled> Button </VButton>
+    <VButton color="success" disabled> Button </VButton>
+    <VButton color="warning" disabled> Button </VButton>
+    <VButton color="danger" disabled> Button </VButton>
+  </VButtons>
 </template>
 ```
 
@@ -21,22 +21,22 @@ Use the `disabled` prop to set a button in a disabled state.
 
 <!--example-->
 
-<V-Buttons>
-  <V-Button color="primary" disabled>
+<VButtons>
+  <VButton color="primary" disabled>
       Button
-  </V-Button>
-  <V-Button color="info" disabled>
+  </VButton>
+  <VButton color="info" disabled>
       Button
-  </V-Button>
-  <V-Button color="success" disabled>
+  </VButton>
+  <VButton color="success" disabled>
       Button
-  </V-Button>
-  <V-Button color="warning" disabled>
+  </VButton>
+  <VButton color="warning" disabled>
       Button
-  </V-Button>
-  <V-Button color="danger" disabled>
+  </VButton>
+  <VButton color="danger" disabled>
       Button
-  </V-Button>
-</V-Buttons>
+  </VButton>
+</VButtons>
 
 <!--/example-->

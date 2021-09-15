@@ -1,9 +1,6 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
 
-// Here we load a svg as component, this svg use css variables to set the color
-import ErrorSvg from '/@src/assets/illustrations/placeholders/error-1.svg?component'
-
 useHead({
   title: 'Error Page 1 - Vuero',
 })
@@ -14,7 +11,7 @@ useHead({
     <div class="error-wrapper">
       <div class="error-inner has-text-centered">
         <div class="bg-number dark-inverted">404</div>
-        <ErrorSvg />
+        <SVGErrorPlaceholder />
 
         <h3 class="dark-inverted">We couldn't find that page</h3>
         <p>
@@ -22,9 +19,9 @@ useHead({
           administrator if the problem persists.
         </p>
         <div class="button-wrap">
-          <V-Button color="primary" elevated @click="$router.go(-1)">
+          <VButton color="primary" elevated @click="$router.go(-1)">
             Take me Back
-          </V-Button>
+          </VButton>
         </div>
       </div>
     </div>

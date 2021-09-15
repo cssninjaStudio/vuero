@@ -31,33 +31,33 @@ const optionsSingle = [
 <template>
   <div>
     <div class="tile-grid-toolbar">
-      <V-Control icon="feather:search">
+      <VControl icon="feather:search">
         <input class="input custom-text-filter" placeholder="Search..." />
-      </V-Control>
+      </VControl>
 
       <div class="buttons">
-        <V-Field class="h-hidden-mobile">
-          <V-Control>
+        <VField class="h-hidden-mobile">
+          <VControl>
             <Multiselect
               v-model="valueSingle"
               :options="optionsSingle"
               :max-height="145"
               placeholder="Select an option"
             />
-          </V-Control>
-        </V-Field>
-        <V-Button color="primary" raised>
+          </VControl>
+        </VField>
+        <VButton color="primary" raised>
           <span class="icon">
             <i aria-hidden="true" class="fas fa-plus"></i>
           </span>
           <span>Add User</span>
-        </V-Button>
+        </VButton>
       </div>
     </div>
 
     <div class="tile-grid tile-grid-v3">
       <!--List Empty Search Placeholder -->
-      <V-PlaceholderPage
+      <VPlaceholderPage
         :class="[filteredData.length !== 0 && 'is-hidden']"
         title="We couldn't find any matching results."
         subtitle="Too bad. Looks like we couldn't find any matching results for the
@@ -68,16 +68,16 @@ const optionsSingle = [
         <template #image>
           <img
             class="light-image"
-            src="/@src/assets/illustrations/placeholders/search-6.svg?url"
+            src="/@src/assets/illustrations/placeholders/search-6.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/@src/assets/illustrations/placeholders/search-6-dark.svg?url"
+            src="/@src/assets/illustrations/placeholders/search-6-dark.svg"
             alt=""
           />
         </template>
-      </V-PlaceholderPage>
+      </VPlaceholderPage>
 
       <!--Tile Grid v3-->
       <div class="tile is-ancestor">
@@ -102,7 +102,7 @@ const optionsSingle = [
                   </p>
                 </div>
                 <div class="tile-meta">
-                  <V-Avatar picture="/demo/avatars/39.jpg" size="small" />
+                  <VAvatar picture="/demo/avatars/39.jpg" size="small" />
                   <div class="meta-inner">
                     <span class="dark-inverted" data-filter-match>
                       Alejandro B.</span
@@ -135,7 +135,7 @@ const optionsSingle = [
                   </p>
                 </div>
                 <div class="tile-meta">
-                  <V-Avatar picture="/demo/avatars/15.jpg" size="small" />
+                  <VAvatar picture="/demo/avatars/15.jpg" size="small" />
                   <div class="meta-inner">
                     <span class="dark-inverted" data-filter-match>
                       Hilde V.</span
@@ -168,7 +168,7 @@ const optionsSingle = [
                   </p>
                 </div>
                 <div class="tile-meta">
-                  <V-Avatar picture="/demo/avatars/24.jpg" size="small" />
+                  <VAvatar picture="/demo/avatars/24.jpg" size="small" />
                   <div class="meta-inner">
                     <span class="dark-inverted" data-filter-match>
                       Sandrine C.</span
@@ -207,7 +207,7 @@ const optionsSingle = [
                       </p>
                     </div>
                     <div class="tile-meta">
-                      <V-Avatar picture="/demo/avatars/27.jpg" size="small" />
+                      <VAvatar picture="/demo/avatars/27.jpg" size="small" />
                       <div class="meta-inner">
                         <span class="dark-inverted" data-filter-match>
                           Carmen E.</span
@@ -239,7 +239,7 @@ const optionsSingle = [
                       </p>
                     </div>
                     <div class="tile-meta">
-                      <V-Avatar picture="/demo/avatars/10.jpg" size="small" />
+                      <VAvatar picture="/demo/avatars/10.jpg" size="small" />
                       <div class="meta-inner">
                         <span class="dark-inverted" data-filter-match>
                           Henry G.</span
@@ -272,7 +272,7 @@ const optionsSingle = [
                       </p>
                     </div>
                     <div class="tile-meta">
-                      <V-Avatar picture="/demo/avatars/22.jpg" size="small" />
+                      <VAvatar picture="/demo/avatars/22.jpg" size="small" />
                       <div class="meta-inner">
                         <span class="dark-inverted" data-filter-match>
                           Jimmy H.</span
@@ -310,7 +310,7 @@ const optionsSingle = [
                     </p>
                   </div>
                   <div class="tile-meta">
-                    <V-Avatar picture="/demo/avatars/16.jpg" size="small" />
+                    <VAvatar picture="/demo/avatars/16.jpg" size="small" />
                     <div class="meta-inner">
                       <span class="dark-inverted" data-filter-match>
                         Jason G.</span
@@ -348,7 +348,7 @@ const optionsSingle = [
                   </p>
                 </div>
                 <div class="tile-meta">
-                  <V-Avatar picture="/demo/avatars/26.jpg" size="small" />
+                  <VAvatar picture="/demo/avatars/26.jpg" size="small" />
                   <div class="meta-inner">
                     <span class="dark-inverted" data-filter-match>
                       Courtney W.</span
@@ -384,7 +384,7 @@ const optionsSingle = [
                   </p>
                 </div>
                 <div class="tile-meta">
-                  <V-Avatar picture="/demo/avatars/8.jpg" size="small" />
+                  <VAvatar picture="/demo/avatars/8.jpg" size="small" />
                   <div class="meta-inner">
                     <span class="dark-inverted" data-filter-match>Erik K.</span>
                     <span>2 days ago</span>
@@ -415,7 +415,7 @@ const optionsSingle = [
                   </p>
                 </div>
                 <div class="tile-meta">
-                  <V-Avatar picture="/demo/avatars/40.jpg" size="small" />
+                  <VAvatar picture="/demo/avatars/40.jpg" size="small" />
                   <div class="meta-inner">
                     <span class="dark-inverted" data-filter-match>
                       Jeanne M.</span
@@ -451,7 +451,7 @@ const optionsSingle = [
                   </p>
                 </div>
                 <div class="tile-meta">
-                  <V-Avatar picture="/demo/avatars/9.jpg" size="small" />
+                  <VAvatar picture="/demo/avatars/9.jpg" size="small" />
                   <div class="meta-inner">
                     <span class="dark-inverted" data-filter-match>Ana B.</span>
                     <span>3 days ago</span>
@@ -482,7 +482,7 @@ const optionsSingle = [
                   </p>
                 </div>
                 <div class="tile-meta">
-                  <V-Avatar picture="/demo/avatars/19.jpg" size="small" />
+                  <VAvatar picture="/demo/avatars/19.jpg" size="small" />
                   <div class="meta-inner">
                     <span class="dark-inverted" data-filter-match>
                       Greta K.</span
@@ -515,7 +515,7 @@ const optionsSingle = [
                   </p>
                 </div>
                 <div class="tile-meta">
-                  <V-Avatar picture="/demo/avatars/33.jpg" size="small" />
+                  <VAvatar picture="/demo/avatars/33.jpg" size="small" />
                   <div class="meta-inner">
                     <span class="dark-inverted" data-filter-match>
                       Harvey M.</span

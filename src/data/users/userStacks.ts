@@ -7,7 +7,7 @@ export const userStack1 = [
   },
   {
     id: 1,
-    picture: null,
+    picture: undefined,
     initials: 'JP',
     color: 'info',
   },
@@ -25,7 +25,7 @@ export const userStack1 = [
   },
   {
     id: 4,
-    picture: null,
+    picture: undefined,
     initials: 'SC',
     color: 'success',
   },
@@ -70,7 +70,7 @@ export const userStack2 = [
   },
   {
     id: 4,
-    picture: null,
+    picture: undefined,
     initials: 'SC',
     color: 'success',
   },

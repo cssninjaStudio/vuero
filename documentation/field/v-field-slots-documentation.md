@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-Field Slots
+### VField Slots
 
-Here is the full slots available for `<V-Field />` component:
+Here is the full slots available for `<VField />` component:
 
 | Slot     | Properties                          | Description         |
 | -------- | ----------------------------------- | ------------------- |

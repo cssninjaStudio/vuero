@@ -14,7 +14,7 @@ watch([() => route.fullPath, dropdownElement], () => {
 </script>
 
 <template>
-  <V-Dropdown
+  <VDropdown
     ref="dropdownElement"
     class="has-mega-dropdown"
     modern
@@ -27,7 +27,7 @@ watch([() => route.fullPath, dropdownElement], () => {
         aria-haspopup="true"
         aria-controls="dropdown-menu"
       >
-        <V-Button
+        <VButton
           aria-haspopup="true"
           aria-controls="dropdown-menu"
           icon-caret="feather:chevron-down"
@@ -35,7 +35,7 @@ watch([() => route.fullPath, dropdownElement], () => {
           @click="toggle"
         >
           Components
-        </V-Button>
+        </VButton>
       </div>
     </template>
 
@@ -66,12 +66,12 @@ watch([() => route.fullPath, dropdownElement], () => {
 
           <img
             class="placeholder-image light-image"
-            src="/@src/assets/illustrations/components/icons.svg?url"
+            src="/@src/assets/illustrations/components/icons.svg"
             alt=""
           />
           <img
             class="placeholder-image dark-image"
-            src="/@src/assets/illustrations/components/icons-dark.svg?url"
+            src="/@src/assets/illustrations/components/icons-dark.svg"
             alt=""
           />
         </div>
@@ -173,7 +173,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-user-alt"></i>
                   </div>
                   <div class="meta">
-                    <span>V-Avatar</span>
+                    <span>VAvatar</span>
                   </div>
                 </RouterLink>
                 <RouterLink
@@ -184,7 +184,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-users-alt"></i>
                   </div>
                   <div class="meta">
-                    <span>V-AvatarStack</span>
+                    <span>VAvatarStack</span>
                   </div>
                 </RouterLink>
 
@@ -196,7 +196,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-keyboard"></i>
                   </div>
                   <div class="meta">
-                    <span>V-Block</span>
+                    <span>VBlock</span>
                   </div>
                 </RouterLink>
 
@@ -208,7 +208,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-round-box-minus"></i>
                   </div>
                   <div class="meta">
-                    <span>V-IconBox</span>
+                    <span>VIconBox</span>
                   </div>
                 </RouterLink>
 
@@ -220,7 +220,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-circle-minus"></i>
                   </div>
                   <div class="meta">
-                    <span>V-IconWrap</span>
+                    <span>VIconWrap</span>
                   </div>
                 </RouterLink>
 
@@ -232,8 +232,8 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-bookmark-alt"></i>
                   </div>
                   <div class="meta">
-                    <span>V-Snack</span>
-                    <V-Tag
+                    <span>VSnack</span>
+                    <VTag
                       label="v1.1"
                       color="primary"
                       outlined
@@ -251,7 +251,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-tag"></i>
                   </div>
                   <div class="meta">
-                    <span>V-Tag</span>
+                    <span>VTag</span>
                   </div>
                 </RouterLink>
               </div>
@@ -285,7 +285,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-slideshow"></i>
                   </div>
                   <div class="meta">
-                    <span>V-Accordion</span>
+                    <span>VAccordion</span>
                   </div>
                 </RouterLink>
 
@@ -297,7 +297,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-slideshow"></i>
                   </div>
                   <div class="meta">
-                    <span>V-AccordionImage</span>
+                    <span>VAccordionImage</span>
                   </div>
                 </RouterLink>
 
@@ -309,7 +309,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-more"></i>
                   </div>
                   <div class="meta">
-                    <span>V-Breadcrumb</span>
+                    <span>VBreadcrumb</span>
                   </div>
                 </RouterLink>
 
@@ -321,7 +321,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-slideshow"></i>
                   </div>
                   <div class="meta">
-                    <span>V-Collapse</span>
+                    <span>VCollapse</span>
                   </div>
                 </RouterLink>
 
@@ -333,7 +333,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-more"></i>
                   </div>
                   <div class="meta">
-                    <span>V-FlexPagination</span>
+                    <span>VFlexPagination</span>
                   </div>
                 </RouterLink>
 
@@ -345,7 +345,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-table"></i>
                   </div>
                   <div class="meta">
-                    <span>V-FlexTable</span>
+                    <span>VFlexTable</span>
                   </div>
                 </RouterLink>
 
@@ -357,7 +357,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-question-circle"></i>
                   </div>
                   <div class="meta">
-                    <span>V-PlaceholderPage</span>
+                    <span>VPlaceholderPage</span>
                   </div>
                 </RouterLink>
 
@@ -369,7 +369,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-question-circle"></i>
                   </div>
                   <div class="meta">
-                    <span>V-PlaceholderSection</span>
+                    <span>VPlaceholderSection</span>
                   </div>
                 </RouterLink>
 
@@ -381,9 +381,9 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-list-alt-1"></i>
                   </div>
                   <div class="meta">
-                    <span>V-Tabs</span>
+                    <span>VTabs</span>
 
-                    <V-Tag
+                    <VTag
                       label="v1.1"
                       color="primary"
                       outlined
@@ -417,8 +417,8 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-layout-alt"></i>
                   </div>
                   <div class="meta">
-                    <span>V-Card</span>
-                    <V-Tag
+                    <span>VCard</span>
+                    <VTag
                       label="v1.1"
                       color="primary"
                       outlined
@@ -436,8 +436,8 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-layout-alt-2"></i>
                   </div>
                   <div class="meta">
-                    <span>V-CardAction</span>
-                    <V-Tag
+                    <span>VCardAction</span>
+                    <VTag
                       label="v1.1"
                       color="primary"
                       outlined
@@ -455,7 +455,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-layout"></i>
                   </div>
                   <div class="meta">
-                    <span>V-CardAdvanced</span>
+                    <span>VCardAdvanced</span>
                   </div>
                 </RouterLink>
 
@@ -467,8 +467,8 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-image"></i>
                   </div>
                   <div class="meta">
-                    <span>V-CardMedia</span>
-                    <V-Tag
+                    <span>VCardMedia</span>
+                    <VTag
                       label="v1.1"
                       color="primary"
                       outlined
@@ -485,7 +485,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
                   </div>
                   <div class="meta">
-                    <span>V-CardSocial</span>
+                    <span>VCardSocial</span>
                   </div>
                 </RouterLink>
               </div>
@@ -543,7 +543,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-plug"></i>
                   </div>
                   <div class="meta">
-                    <span>V-BillboardJS</span>
+                    <span>VBillboardJS</span>
                   </div>
                 </RouterLink>
 
@@ -555,7 +555,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-plug"></i>
                   </div>
                   <div class="meta">
-                    <span>V-PhotosSwipe</span>
+                    <span>VPhotosSwipe</span>
                   </div>
                 </RouterLink>
 
@@ -567,7 +567,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-plug"></i>
                   </div>
                   <div class="meta">
-                    <span>V-Plyr</span>
+                    <span>VPlyr</span>
                   </div>
                 </RouterLink>
 
@@ -579,7 +579,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-plug"></i>
                   </div>
                   <div class="meta">
-                    <span>V-SimpleDatatables</span>
+                    <span>VSimpleDatatables</span>
                   </div>
                 </RouterLink>
               </div>
@@ -588,5 +588,5 @@ watch([() => route.fullPath, dropdownElement], () => {
         </div>
       </div>
     </template>
-  </V-Dropdown>
+  </VDropdown>
 </template>

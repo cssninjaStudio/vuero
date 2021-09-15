@@ -18,7 +18,7 @@ import {
         <div class="members">
           <h4>Members</h4>
           <div class="members-list">
-            <V-Avatar size="small" squared>
+            <VAvatar size="small" squared>
               <template #avatar>
                 <button class="avatar is-fake is-squared">
                   <i
@@ -28,15 +28,15 @@ import {
                   ></i>
                 </button>
               </template>
-            </V-Avatar>
-            <V-Avatar
+            </VAvatar>
+            <VAvatar
               v-for="member in members.list"
               :key="member.id"
               :picture="member.avatar"
               size="small"
               squared
             />
-            <V-Avatar size="small" initials="+6" squared />
+            <VAvatar size="small" initials="+6" squared />
           </div>
         </div>
       </div>

@@ -12,7 +12,7 @@ Check the markup for more details.
 
 ```vue
 <template>
-  <V-Tabs
+  <VTabs
     type="boxed"
     selected="team"
     :tabs="[
@@ -34,7 +34,7 @@ Check the markup for more details.
         Chryippo. Duo Reges: constructio interrete.
       </p>
     </template>
-  </V-Tabs>
+  </VTabs>
 </template>
 ```
 
@@ -42,7 +42,7 @@ Check the markup for more details.
 
 <!--example-->
 
-<V-Tabs type="boxed" selected="team" :tabs="[{ label: 'Team', value: 'team' },{ label: 'Projects', value: 'projects' }]">
+<VTabs type="boxed" selected="team" :tabs="[{ label: 'Team', value: 'team' },{ label: 'Projects', value: 'projects' }]">
   <template #tab="{ activeValue }">
     <p v-if="activeValue === 'team'">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -59,6 +59,6 @@ Check the markup for more details.
       Reges: constructio interrete.
     </p>
   </template>
-</V-Tabs>
+</VTabs>
 
 <!--/example-->

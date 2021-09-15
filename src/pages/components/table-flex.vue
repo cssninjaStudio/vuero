@@ -4,15 +4,15 @@ import { useHead } from '@vueuse/head'
 import { pageTitle } from '/@src/state/sidebarLayoutState'
 import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
-pageTitle.value = 'V-FlexTable'
+pageTitle.value = 'VFlexTable'
 useHead({
-  title: 'V-FlexTable - Components - Vuero',
+  title: 'VFlexTable - Components - Vuero',
 })
 </script>
 
 <template>
   <div class="page-content-inner">
-    <V-Breadcrumb
+    <VBreadcrumb
       with-icons
       separator="bullet"
       :items="[
@@ -27,7 +27,7 @@ useHead({
           to: { name: 'components' },
         },
         {
-          label: 'V-FlexTable',
+          label: 'VFlexTable',
           to: { name: 'components-table-flex' },
         },
       ]"
@@ -259,7 +259,7 @@ useHead({
           </div>
 
           <!--Table Pagination-->
-          <V-FlexPagination
+          <VFlexPagination
             :item-per-page="10"
             :total-items="873"
             :current-page="42"

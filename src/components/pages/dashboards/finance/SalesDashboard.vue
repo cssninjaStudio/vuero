@@ -51,15 +51,15 @@ onMounted(() => {
   <div class="finance-dashboard sales-dashboard">
     <!--Header-->
     <div class="dashboard-header">
-      <V-Avatar size="large" picture="/demo/avatars/8.jpg" />
+      <VAvatar size="large" picture="/demo/avatars/8.jpg" />
 
       <div class="start">
         <h3 class="dark-inverted">Welcome back, Erik Kovalsky</h3>
         <p>We're very happy to see you again on your dashboard.</p>
       </div>
       <div class="end">
-        <V-Button dark="3">View Reports</V-Button>
-        <V-Button color="primary" elevated>Transactions</V-Button>
+        <VButton dark="3">View Reports</VButton>
+        <VButton color="primary" elevated>Transactions</VButton>
       </div>
     </div>
 
@@ -236,7 +236,7 @@ onMounted(() => {
             </div>
             <div class="gauge-wrap">
               <div id="gauge-holder" class="gauge-holder"></div>
-              <V-BillboardJS
+              <VBillboardJS
                 :options="personalScoreGaugeOptions"
                 @ready="onPersonalScoreGaugeReady"
               />

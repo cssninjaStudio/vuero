@@ -2,10 +2,10 @@
 disable_code: true
 ---
 
-### V-Dropdown Expose
+### VDropdown Expose
 
 Here is the full exposed methods and variables available
-for `<V-Dropdown />` component:
+for `<VDropdown />` component:
 
 | Name                                        | Description                  |
 | ------------------------------------------- | ---------------------------- |

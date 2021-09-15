@@ -56,9 +56,9 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <V-Avatar size="small" color="primary" initials="FE" />
-                <V-Avatar size="small" color="success" initials="SD" />
-                <V-Avatar size="small" color="info" initials="NJ" />
+                <VAvatar size="small" color="primary" initials="FE" />
+                <VAvatar size="small" color="success" initials="SD" />
+                <VAvatar size="small" color="info" initials="NJ" />
               </div>
             </div>
             <div class="foot-block">
@@ -98,9 +98,9 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <V-Avatar size="small" picture="/demo/avatars/7.jpg" />
-                <V-Avatar size="small" picture="/demo/avatars/8.jpg" />
-                <V-Avatar size="small" color="danger" initials="DC" />
+                <VAvatar size="small" picture="/demo/avatars/7.jpg" />
+                <VAvatar size="small" picture="/demo/avatars/8.jpg" />
+                <VAvatar size="small" color="danger" initials="DC" />
               </div>
             </div>
             <div class="foot-block">
@@ -140,7 +140,7 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <V-Avatar size="small" picture="/demo/avatars/25.jpg" />
+                <VAvatar size="small" picture="/demo/avatars/25.jpg" />
               </div>
             </div>
             <div class="foot-block">
@@ -180,8 +180,8 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <V-Avatar size="small" picture="/demo/avatars/7.jpg" />
-                <V-Avatar size="small" picture="/demo/avatars/23.jpg" />
+                <VAvatar size="small" picture="/demo/avatars/7.jpg" />
+                <VAvatar size="small" picture="/demo/avatars/23.jpg" />
               </div>
             </div>
             <div class="foot-block">
@@ -222,8 +222,8 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <V-Avatar size="small" picture="/demo/avatars/11.jpg" />
-                <V-Avatar size="small" color="h-orange" initials="AG" />
+                <VAvatar size="small" picture="/demo/avatars/11.jpg" />
+                <VAvatar size="small" color="h-orange" initials="AG" />
               </div>
             </div>
             <div class="foot-block">
@@ -263,7 +263,7 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <V-Avatar size="small" picture="/demo/avatars/12.jpg" />
+                <VAvatar size="small" picture="/demo/avatars/12.jpg" />
               </div>
             </div>
             <div class="foot-block">
@@ -303,9 +303,9 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <V-Avatar size="small" picture="/demo/avatars/24.jpg" />
-                <V-Avatar size="small" picture="/demo/avatars/18.jpg" />
-                <V-Avatar size="small" picture="/demo/avatars/16.jpg" />
+                <VAvatar size="small" picture="/demo/avatars/24.jpg" />
+                <VAvatar size="small" picture="/demo/avatars/18.jpg" />
+                <VAvatar size="small" picture="/demo/avatars/16.jpg" />
               </div>
             </div>
             <div class="foot-block">
@@ -346,8 +346,8 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <V-Avatar size="small" color="info" initials="ET" />
-                <V-Avatar size="small" color="warning" initials="BH" />
+                <VAvatar size="small" color="info" initials="ET" />
+                <VAvatar size="small" color="warning" initials="BH" />
               </div>
             </div>
             <div class="foot-block">
@@ -387,8 +387,8 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <V-Avatar size="small" picture="/demo/avatars/25.jpg" />
-                <V-Avatar size="small" color="info" initials="ET" />
+                <VAvatar size="small" picture="/demo/avatars/25.jpg" />
+                <VAvatar size="small" color="info" initials="ET" />
               </div>
             </div>
             <div class="foot-block">

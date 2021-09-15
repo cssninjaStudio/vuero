@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-PlaceloadAvatar Props
+### VPlaceloadAvatar Props
 
-Here is the full props available for `<V-PlaceloadAvatar />` component:
+Here is the full props available for `<VPlaceloadAvatar />` component:
 
 | Props    | Default                                       | Type                                    |
 | -------- | --------------------------------------------- | --------------------------------------- |

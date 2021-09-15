@@ -1,20 +1,20 @@
 ### Icon popover
 
 Popovers can hold any type of content, including existing Vuero components. You
-can easily add a `<V-IconBox />` inside your popover.
+can easily add a `<VIconBox />` inside your popover.
 
 <!--code-->
 
 ```vue
 <template>
   <tippy>
-    <V-Button>Hover me!</V-Button>
+    <VButton>Hover me!</VButton>
     <template #content>
       <div class="v-popover-content is-text">
         <div class="popover-head">
-          <V-IconBox size="small" color="primary">
+          <VIconBox size="small" color="primary">
             <i class="lnil lnil-crown-alt-1"></i>
-          </V-IconBox>
+          </VIconBox>
           <h4 class="dark-inverted">Hover Popover</h4>
         </div>
         <div class="popover-body">
@@ -32,13 +32,13 @@ can easily add a `<V-IconBox />` inside your popover.
 
 <div class="buttons">
   <tippy>
-    <V-Button class="mx-1">Hover me!</V-Button>
+    <VButton class="mx-1">Hover me!</VButton>
     <template #content>
       <div class="v-popover-content is-text">
           <div class="popover-head">
-              <V-IconBox size="small" color="primary">
+              <VIconBox size="small" color="primary">
                 <i class="iconify" data-icon="feather:x" />
-              </V-IconBox>
+              </VIconBox>
               <h4 class="dark-inverted">Hover Popover</h4>
           </div>
           <div class="popover-body">
@@ -48,13 +48,13 @@ can easily add a `<V-IconBox />` inside your popover.
     </template>
   </tippy>
   <tippy>
-    <V-Button class="mx-1">Hover me!</V-Button>
+    <VButton class="mx-1">Hover me!</VButton>
     <template #content>
       <div class="v-popover-content is-text">
           <div class="popover-head">
-                <V-IconBox size="small" color="info">
+                <VIconBox size="small" color="info">
                     <i class="lnil lnil-crown-alt-1"></i>
-                </V-IconBox>
+                </VIconBox>
                 <h4 class="dark-inverted">Hover Popover</h4>
           </div>
           <div class="popover-body">
@@ -64,13 +64,13 @@ can easily add a `<V-IconBox />` inside your popover.
     </template>
   </tippy>
   <tippy>
-    <V-Button class="mx-1">Hover me!</V-Button>
+    <VButton class="mx-1">Hover me!</VButton>
     <template #content>
       <div class="v-popover-content is-text">
           <div class="popover-head">
-                <V-IconBox size="small" color="orange">
+                <VIconBox size="small" color="orange">
                     <i class="lnil lnil-crown-alt-1"></i>
-                </V-IconBox>
+                </VIconBox>
                 <h4 class="dark-inverted">Hover Popover</h4>
           </div>
           <div class="popover-body">
@@ -80,13 +80,13 @@ can easily add a `<V-IconBox />` inside your popover.
     </template>
   </tippy>
   <tippy>
-    <V-Button class="mx-1">Hover me!</V-Button>
+    <VButton class="mx-1">Hover me!</VButton>
     <template #content>
       <div class="v-popover-content is-text">
           <div class="popover-head">
-                <V-IconBox size="small" color="green">
+                <VIconBox size="small" color="green">
                     <i class="lnil lnil-crown-alt-1"></i>
-                </V-IconBox>
+                </VIconBox>
                 <h4 class="dark-inverted">Hover Popover</h4>
           </div>
           <div class="popover-body">

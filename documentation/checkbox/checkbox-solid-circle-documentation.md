@@ -20,10 +20,10 @@ const options = ref(['Option 2'])
 </script>
 
 <template>
-  <V-Field>
-    <V-Control>
-      <V-Checkbox v-model="options" value="Option 1" label="Option 1" solid />
-      <V-Checkbox
+  <VField>
+    <VControl>
+      <VCheckbox v-model="options" value="Option 1" label="Option 1" solid />
+      <VCheckbox
         v-model="options"
         value="Option 2"
         label="Option 2"
@@ -31,7 +31,7 @@ const options = ref(['Option 2'])
         solid
         circle
       />
-      <V-Checkbox
+      <VCheckbox
         v-model="options"
         value="Option 3"
         label="Option 3"
@@ -39,7 +39,7 @@ const options = ref(['Option 2'])
         solid
         circle
       />
-      <V-Checkbox
+      <VCheckbox
         v-model="options"
         value="Option 4"
         label="Option 4"
@@ -47,7 +47,7 @@ const options = ref(['Option 2'])
         solid
         circle
       />
-      <V-Checkbox
+      <VCheckbox
         v-model="options"
         value="Option 5"
         label="Option 5"
@@ -55,7 +55,7 @@ const options = ref(['Option 2'])
         solid
         circle
       />
-      <V-Checkbox
+      <VCheckbox
         v-model="options"
         value="Option 6"
         label="Option 6"
@@ -63,8 +63,8 @@ const options = ref(['Option 2'])
         solid
         circle
       />
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -72,16 +72,16 @@ const options = ref(['Option 2'])
 
 <!--example-->
 
-<V-Field>
-  <V-Control>
-    <V-Checkbox
+<VField>
+  <VControl>
+    <VCheckbox
       v-model="frontmatter.state.options"
       value="Option 1"
       label="Option 1"
       solid
       circle
     />
-    <V-Checkbox
+    <VCheckbox
       v-model="frontmatter.state.options"
       value="Option 2"
       label="Option 2"
@@ -89,7 +89,7 @@ const options = ref(['Option 2'])
       solid
       circle
     />
-    <V-Checkbox
+    <VCheckbox
       v-model="frontmatter.state.options"
       value="Option 3"
       label="Option 3"
@@ -97,7 +97,7 @@ const options = ref(['Option 2'])
       solid
       circle
     />
-    <V-Checkbox
+    <VCheckbox
       v-model="frontmatter.state.options"
       value="Option 4"
       label="Option 4"
@@ -105,7 +105,7 @@ const options = ref(['Option 2'])
       solid
       circle
     />
-    <V-Checkbox
+    <VCheckbox
       v-model="frontmatter.state.options"
       value="Option 5"
       label="Option 5"
@@ -113,7 +113,7 @@ const options = ref(['Option 2'])
       solid
       circle
     />
-    <V-Checkbox
+    <VCheckbox
       v-model="frontmatter.state.options"
       value="Option 6"
       label="Option 6"
@@ -121,7 +121,7 @@ const options = ref(['Option 2'])
       solid
       circle
     />
-  </V-Control>
-</V-Field>
+  </VControl>
+</VField>
 
 <!--/example-->

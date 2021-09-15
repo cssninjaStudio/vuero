@@ -1,28 +1,28 @@
-### V-Tag rounded
+### VTag rounded
 
-Vuero provides a `<V-Tag />` component than can be customized
-to fit any needs. V-Tags can have rounded edges.
+Vuero provides a `<VTag />` component than can be customized
+to fit any needs. VTags can have rounded edges.
 Use the `rounded` prop to change the component shape.
 
 <!--code-->
 
 ```vue
 <template>
-  <V-Tags>
-    <V-Tag label="Tag Label" />
-    <V-Tag color="white" label="Tag Label" rounded />
-    <V-Tag color="light" label="Tag Label" rounded />
-    <V-Tag color="solid" label="Tag Label" rounded />
-    <V-Tag color="primary" label="Tag Label" rounded />
-    <V-Tag color="info" label="Tag Label" rounded />
-    <V-Tag color="success" label="Tag Label" rounded />
-    <V-Tag color="warning" label="Tag Label" rounded />
-    <V-Tag color="danger" label="Tag Label" rounded />
-    <V-Tag color="orange" label="Tag Label" rounded />
-    <V-Tag color="blue" label="Tag Label" rounded />
-    <V-Tag color="green" label="Tag Label" rounded />
-    <V-Tag color="purple" label="Tag Label" rounded />
-  </V-Tags>
+  <VTags>
+    <VTag label="Tag Label" />
+    <VTag color="white" label="Tag Label" rounded />
+    <VTag color="light" label="Tag Label" rounded />
+    <VTag color="solid" label="Tag Label" rounded />
+    <VTag color="primary" label="Tag Label" rounded />
+    <VTag color="info" label="Tag Label" rounded />
+    <VTag color="success" label="Tag Label" rounded />
+    <VTag color="warning" label="Tag Label" rounded />
+    <VTag color="danger" label="Tag Label" rounded />
+    <VTag color="orange" label="Tag Label" rounded />
+    <VTag color="blue" label="Tag Label" rounded />
+    <VTag color="green" label="Tag Label" rounded />
+    <VTag color="purple" label="Tag Label" rounded />
+  </VTags>
 </template>
 ```
 
@@ -30,20 +30,20 @@ Use the `rounded` prop to change the component shape.
 
 <!--example-->
 
-<V-Tags>
-  <V-Tag label="Tag Label" />
-  <V-Tag color="white" label="Tag Label" rounded />
-  <V-Tag color="light" label="Tag Label" rounded />
-  <V-Tag color="solid" label="Tag Label" rounded />
-  <V-Tag color="primary" label="Tag Label" rounded />
-  <V-Tag color="info" label="Tag Label" rounded />
-  <V-Tag color="success" label="Tag Label" rounded />
-  <V-Tag color="warning" label="Tag Label" rounded />
-  <V-Tag color="danger" label="Tag Label" rounded />
-  <V-Tag color="orange" label="Tag Label" rounded />
-  <V-Tag color="blue" label="Tag Label" rounded />
-  <V-Tag color="green" label="Tag Label" rounded />
-  <V-Tag color="purple" label="Tag Label" rounded />
-</V-Tags>
+<VTags>
+  <VTag label="Tag Label" />
+  <VTag color="white" label="Tag Label" rounded />
+  <VTag color="light" label="Tag Label" rounded />
+  <VTag color="solid" label="Tag Label" rounded />
+  <VTag color="primary" label="Tag Label" rounded />
+  <VTag color="info" label="Tag Label" rounded />
+  <VTag color="success" label="Tag Label" rounded />
+  <VTag color="warning" label="Tag Label" rounded />
+  <VTag color="danger" label="Tag Label" rounded />
+  <VTag color="orange" label="Tag Label" rounded />
+  <VTag color="blue" label="Tag Label" rounded />
+  <VTag color="green" label="Tag Label" rounded />
+  <VTag color="purple" label="Tag Label" rounded />
+</VTags>
 
 <!--/example-->

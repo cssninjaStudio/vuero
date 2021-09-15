@@ -11,12 +11,12 @@
         <div class="onboarding-card">
           <img
             class="light-image"
-            src="/@src/assets/illustrations/onboarding/set4-1.svg?url"
+            src="/@src/assets/illustrations/onboarding/set4-1.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/@src/assets/illustrations/onboarding/set4-1-dark.svg?url"
+            src="/@src/assets/illustrations/onboarding/set4-1-dark.svg"
             alt=""
           />
           <h3>Explore Workboard</h3>
@@ -26,19 +26,19 @@
             tament.
           </p>
           <div class="button-wrap">
-            <V-Button color="primary" elevated> Explore </V-Button>
+            <VButton color="primary" elevated> Explore </VButton>
           </div>
         </div>
         <!--Card-->
         <div class="onboarding-card">
           <img
             class="light-image"
-            src="/@src/assets/illustrations/onboarding/set4-2.svg?url"
+            src="/@src/assets/illustrations/onboarding/set4-2.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/@src/assets/illustrations/onboarding/set4-2-dark.svg?url"
+            src="/@src/assets/illustrations/onboarding/set4-2-dark.svg"
             alt=""
           />
           <h3>Add some Tasks</h3>
@@ -48,19 +48,19 @@
             tament.
           </p>
           <div class="button-wrap">
-            <V-Button color="primary" elevated> Add Tasks </V-Button>
+            <VButton color="primary" elevated> Add Tasks </VButton>
           </div>
         </div>
         <!--Card-->
         <div class="onboarding-card">
           <img
             class="light-image"
-            src="/@src/assets/illustrations/onboarding/set4-3.svg?url"
+            src="/@src/assets/illustrations/onboarding/set4-3.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/@src/assets/illustrations/onboarding/set4-3-dark.svg?url"
+            src="/@src/assets/illustrations/onboarding/set4-3-dark.svg"
             alt=""
           />
           <h3>Browse Wiki</h3>
@@ -70,7 +70,7 @@
             tament.
           </p>
           <div class="button-wrap">
-            <V-Button color="primary" elevated> Browse </V-Button>
+            <VButton color="primary" elevated> Browse </VButton>
           </div>
         </div>
       </div>

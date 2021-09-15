@@ -143,18 +143,18 @@ const validateStep = async () => {
           </h3>
 
           <div class="form-section-inner">
-            <V-Field>
-              <V-Control>
+            <VField>
+              <VControl>
                 <input
                   type="text"
                   class="input"
                   placeholder="What is this shipment about?"
                 />
-              </V-Control>
-            </V-Field>
+              </VControl>
+            </VField>
 
-            <V-Field>
-              <V-Control>
+            <VField>
+              <VControl>
                 <button class="input-button">
                   <i
                     aria-hidden="true"
@@ -163,78 +163,78 @@ const validateStep = async () => {
                   ></i>
                   <span>Add shipment group</span>
                 </button>
-              </V-Control>
-            </V-Field>
+              </VControl>
+            </VField>
 
             <div class="fieldset">
-              <V-Field grouped>
-                <V-Control expanded>
+              <VField grouped>
+                <VControl expanded>
                   <input type="text" class="input" placeholder="Group name" />
-                </V-Control>
-                <V-Control subcontrol>
-                  <V-SwitchSegment
+                </VControl>
+                <VControl subcontrol>
+                  <VSwitchSegment
                     color="primary"
                     label-true="Other"
                     label-false="Ground"
                   />
-                </V-Control>
-              </V-Field>
+                </VControl>
+              </VField>
 
-              <V-Field grouped>
-                <V-Control expanded>
+              <VField grouped>
+                <VControl expanded>
                   <input
                     type="text"
                     class="input"
                     placeholder="Group description"
                   />
-                </V-Control>
-                <V-Control subcontrol>
+                </VControl>
+                <VControl subcontrol>
                   <label class="checkbox">
                     <input type="checkbox" checked />
                     <span></span>
                     Fragile
                   </label>
-                </V-Control>
-              </V-Field>
+                </VControl>
+              </VField>
 
               <div class="fieldset-separator"></div>
 
-              <V-Field grouped>
-                <V-Control expanded>
+              <VField grouped>
+                <VControl expanded>
                   <div class="flex-label">
                     <h4>Control Service</h4>
                   </div>
-                </V-Control>
-                <V-Control subcontrol>
-                  <V-SwitchSegment label-true="ON" label-false="OFF" />
-                </V-Control>
-              </V-Field>
+                </VControl>
+                <VControl subcontrol>
+                  <VSwitchSegment label-true="ON" label-false="OFF" />
+                </VControl>
+              </VField>
 
-              <V-Field>
+              <VField>
                 <label>Type</label>
-                <V-Control>
+                <VControl>
                   <Multiselect
                     v-model="controlType"
                     :options="['X-REF Quality', 'SERPA Check', 'AMF Check']"
                     placeholder="Select a control type"
                   />
-                </V-Control>
-              </V-Field>
+                </VControl>
+              </VField>
 
-              <V-Field>
+              <VField>
                 <label>Additional Notes</label>
-                <V-Control>
+                <VControl>
                   <input
                     type="text"
                     class="input"
                     placeholder="Add some additional notes"
                   />
-                </V-Control>
-              </V-Field>
+                </VControl>
+              </VField>
 
-              <V-Field>
+              <VField>
                 <label>Method</label>
-                <V-Control>
+                <VControl>
                   <Multiselect
                     v-model="storageType"
                     :options="[
@@ -244,36 +244,36 @@ const validateStep = async () => {
                     ]"
                     placeholder="Select a storage"
                   />
-                </V-Control>
-              </V-Field>
+                </VControl>
+              </VField>
 
-              <V-Field>
+              <VField>
                 <label>Quantity (units)</label>
-                <V-Control>
+                <VControl>
                   <input
                     type="number"
                     class="input"
                     placeholder="Enter a quantity"
                   />
-                </V-Control>
-              </V-Field>
+                </VControl>
+              </VField>
 
-              <V-Field>
+              <VField>
                 <label>Duration (days)</label>
-                <V-Control>
+                <VControl>
                   <input
                     type="number"
                     class="input"
                     placeholder="Enter a storage duration"
                   />
-                </V-Control>
-              </V-Field>
+                </VControl>
+              </VField>
 
-              <V-Field>
+              <VField>
                 <div class="buttons">
-                  <V-Button>Add Shipment</V-Button>
+                  <VButton>Add Shipment</VButton>
                 </div>
-              </V-Field>
+              </VField>
             </div>
           </div>
           <div class="form-section-output">
@@ -285,7 +285,7 @@ const validateStep = async () => {
               ></i>
               <span>15 i9 Laptops - b2</span>
               <div class="action">
-                <V-IconButton icon="feather:trash-2" />
+                <VIconButton icon="feather:trash-2" />
               </div>
             </div>
           </div>
@@ -314,18 +314,18 @@ const validateStep = async () => {
             </h3>
 
             <div class="form-section-inner">
-              <V-Field>
-                <V-Control>
+              <VField>
+                <VControl>
                   <input
                     type="text"
                     class="input"
                     placeholder="Owning company name"
                   />
-                </V-Control>
-              </V-Field>
+                </VControl>
+              </VField>
 
-              <V-Field>
-                <V-Control>
+              <VField>
+                <VControl>
                   <button class="input-button">
                     <i
                       aria-hidden="true"
@@ -334,46 +334,46 @@ const validateStep = async () => {
                     ></i>
                     <span>Add contact</span>
                   </button>
-                </V-Control>
-              </V-Field>
+                </VControl>
+              </VField>
 
               <div class="fieldset">
-                <V-Field grouped>
-                  <V-Control expanded>
+                <VField grouped>
+                  <VControl expanded>
                     <input type="text" class="input" placeholder="Full name" />
-                  </V-Control>
-                  <V-Control subcontrol>
-                    <V-SwitchSegment label-true="Ground" label-false="Other" />
-                  </V-Control>
-                </V-Field>
+                  </VControl>
+                  <VControl subcontrol>
+                    <VSwitchSegment label-true="Ground" label-false="Other" />
+                  </VControl>
+                </VField>
 
-                <V-Field grouped>
-                  <V-Control expanded>
+                <VField grouped>
+                  <VControl expanded>
                     <input
                       type="text"
                       class="input"
                       placeholder="Email address"
                     />
-                  </V-Control>
-                  <V-Control subcontrol>
+                  </VControl>
+                  <VControl subcontrol>
                     <label class="checkbox">
                       <input type="checkbox" checked />
                       <span></span>
                       Primary
                     </label>
-                  </V-Control>
-                </V-Field>
+                  </VControl>
+                </VField>
 
-                <V-Field grouped>
-                  <V-Control expanded>
+                <VField grouped>
+                  <VControl expanded>
                     <input
                       type="text"
                       class="input"
                       placeholder="Phone number"
                     />
-                  </V-Control>
-                  <V-Control subcontrol></V-Control>
-                </V-Field>
+                  </VControl>
+                  <VControl subcontrol></VControl>
+                </VField>
               </div>
             </div>
 
@@ -386,7 +386,7 @@ const validateStep = async () => {
                 ></i>
                 <span>Erik Kovalsky</span>
                 <div class="action">
-                  <V-IconButton icon="feather:trash-2" />
+                  <VIconButton icon="feather:trash-2" />
                 </div>
               </div>
               <div class="output">
@@ -397,7 +397,7 @@ const validateStep = async () => {
                 ></i>
                 <span>Elsa Walker</span>
                 <div class="action">
-                  <V-IconButton icon="feather:trash-2" />
+                  <VIconButton icon="feather:trash-2" />
                 </div>
               </div>
             </div>
@@ -427,38 +427,38 @@ const validateStep = async () => {
             </h3>
 
             <div class="form-section-inner">
-              <V-Field>
-                <V-Control>
+              <VField>
+                <VControl>
                   <input
                     type="text"
                     class="input"
                     placeholder="Company Tax ID"
                   />
-                </V-Control>
-              </V-Field>
+                </VControl>
+              </VField>
 
               <div class="columns">
                 <div class="column is-6">
-                  <V-Field>
-                    <V-Control>
+                  <VField>
+                    <VControl>
                       <Multiselect
                         v-model="taxType"
                         :options="['VAT', 'RFC', 'SFC']"
                         placeholder="Tax Type"
                       />
-                    </V-Control>
-                  </V-Field>
+                    </VControl>
+                  </VField>
                 </div>
                 <div class="column is-6">
-                  <V-Field>
-                    <V-Control>
+                  <VField>
+                    <VControl>
                       <Multiselect
                         v-model="taxStatements"
                         :options="['W-12 Form', 'W-12a Form', 'Z-Form']"
                         placeholder="Tax Statements"
                       />
-                    </V-Control>
-                  </V-Field>
+                    </VControl>
+                  </VField>
                 </div>
               </div>
             </div>
@@ -621,10 +621,7 @@ const validateStep = async () => {
                   </p>
                 </div>
                 <div class="box-illustration">
-                  <img
-                    src="/@src/assets/illustrations/plants/1.svg?url"
-                    alt=""
-                  />
+                  <img src="/@src/assets/illustrations/plants/1.svg" alt="" />
                 </div>
               </div>
             </div>
@@ -633,14 +630,14 @@ const validateStep = async () => {
 
         <div class="navigation-buttons">
           <div class="buttons is-right">
-            <V-Button
+            <VButton
               color="primary"
               bold
               :loading="isLoading"
               @click="validateStep"
             >
               Continue
-            </V-Button>
+            </VButton>
           </div>
         </div>
       </div>

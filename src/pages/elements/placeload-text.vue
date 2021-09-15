@@ -8,15 +8,15 @@ import { pageTitle } from '/@src/state/sidebarLayoutState'
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-pageTitle.value = 'V-PlaceloadText'
+pageTitle.value = 'VPlaceloadText'
 useHead({
-  title: 'V-PlaceloadText - Elements - Vuero',
+  title: 'VPlaceloadText - Elements - Vuero',
 })
 </script>
 
 <template>
   <div class="page-content-inner">
-    <V-Breadcrumb
+    <VBreadcrumb
       with-icons
       separator="bullet"
       :items="[
@@ -31,7 +31,7 @@ useHead({
           to: { name: 'elements' },
         },
         {
-          label: 'V-PlaceloadText',
+          label: 'VPlaceloadText',
           to: { name: 'elements-placeload-text' },
         },
       ]"

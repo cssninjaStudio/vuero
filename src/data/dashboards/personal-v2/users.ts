@@ -37,7 +37,7 @@ export const avatarStack2 = [
 export const avatarStack3 = [
   {
     id: 112,
-    picture: null,
+    picture: undefined,
     initials: 'NL',
     color: 'success',
   },

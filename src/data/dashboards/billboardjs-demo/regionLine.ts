@@ -1,7 +1,8 @@
+import type { ChartOptions } from 'billboard.js'
 import { themeColors } from '/@src/utils/themeColors'
 import { line } from 'billboard.js'
 
-export const options = {
+export const options: ChartOptions = {
   data: {
     type: line(),
     columns: [
@@ -44,7 +45,7 @@ export const options = {
   },
   title: {
     text: 'Line Chart with Regions',
-    position: 'top-left',
+    position: 'left',
     padding: {
       bottom: 20,
       right: 20,

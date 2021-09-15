@@ -13,7 +13,7 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
               <!--left-->
               <div class="left">
                 <div class="current-user">
-                  <V-Avatar
+                  <VAvatar
                     size="medium"
                     picture="/demo/avatars/8.jpg"
                     squared
@@ -30,9 +30,9 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
                   Praeclarae mortes.
                 </p>
                 <div class="candidates">
-                  <V-Avatar picture="/demo/avatars/13.jpg" squared />
-                  <V-Avatar picture="/demo/avatars/32.jpg" squared />
-                  <V-Avatar picture="/demo/avatars/9.jpg" squared />
+                  <VAvatar picture="/demo/avatars/13.jpg" squared />
+                  <VAvatar picture="/demo/avatars/32.jpg" squared />
+                  <VAvatar picture="/demo/avatars/9.jpg" squared />
                   <button>
                     <i
                       aria-hidden="true"
@@ -51,7 +51,7 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
                   Praeclarae mortes.
                 </p>
 
-                <V-Button bold fullwidth dark-outlined>Manage Jobs</V-Button>
+                <VButton bold fullwidth dark-outlined>Manage Jobs</VButton>
               </div>
             </div>
           </div>
@@ -98,9 +98,9 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
                 <!--Table item-->
                 <div class="flex-table-item">
                   <div class="flex-table-cell is-media is-grow-lg" data-th="">
-                    <V-IconBox color="green">
+                    <VIconBox color="green">
                       <i aria-hidden="true" class="lnil lnil-envelope-alt"></i>
-                    </V-IconBox>
+                    </VIconBox>
                     <div>
                       <span class="item-name dark-inverted">Messages</span>
                       <span class="item-meta">
@@ -112,7 +112,7 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
                     <span class="light-text">5</span>
                   </div>
                   <div class="flex-table-cell" data-th="Status">
-                    <V-Tag rounded color="success" label="New" />
+                    <VTag rounded color="success" label="New" />
                   </div>
                   <div class="flex-table-cell cell-end" data-th="Actions">
                     <a class="action-link is-pushed-mobile">Open</a>
@@ -122,12 +122,12 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
                 <!--Table item-->
                 <div class="flex-table-item">
                   <div class="flex-table-cell is-media is-grow-lg" data-th="">
-                    <V-IconBox color="orange">
+                    <VIconBox color="orange">
                       <i
                         aria-hidden="true"
                         class="lnil lnil-checkmark-circle"
                       ></i>
-                    </V-IconBox>
+                    </VIconBox>
                     <div>
                       <span class="item-name dark-inverted">Tasks</span>
                       <span class="item-meta">
@@ -139,7 +139,7 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
                     <span class="light-text">3</span>
                   </div>
                   <div class="flex-table-cell" data-th="Status">
-                    <V-Tag rounded label="Pending" />
+                    <VTag rounded label="Pending" />
                   </div>
                   <div class="flex-table-cell cell-end" data-th="Actions">
                     <a class="action-link is-pushed-mobile">Open</a>
@@ -162,15 +162,15 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
                 <div class="column is-4">
                   <div class="grid-item">
                     <UserCardDropdown />
-                    <V-Avatar
+                    <VAvatar
                       picture="/demo/avatars/13.jpg"
-                      badge="/images/icons/stacks/illustrator.svg?url"
+                      badge="/images/icons/stacks/illustrator.svg"
                       size="large"
                     />
                     <h3 class="dark-inverted">Tara Svenson</h3>
                     <p>UI/UX Designer</p>
                     <div class="button-wrap has-text-centered">
-                      <V-Button color="primary" raised>Hire</V-Button>
+                      <VButton color="primary" raised>Hire</VButton>
                     </div>
                   </div>
                 </div>
@@ -178,15 +178,15 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
                 <div class="column is-4">
                   <div class="grid-item">
                     <UserCardDropdown />
-                    <V-Avatar
+                    <VAvatar
                       picture="/demo/avatars/37.jpg"
-                      badge="/images/icons/flags/france.svg?url"
+                      badge="/images/icons/flags/france.svg"
                       size="large"
                     />
                     <h3 class="dark-inverted">Helmut Fritz</h3>
                     <p>Product Manager</p>
                     <div class="button-wrap has-text-centered">
-                      <V-Button dark-outlined bold>Assess</V-Button>
+                      <VButton dark-outlined bold>Assess</VButton>
                     </div>
                   </div>
                 </div>
@@ -194,15 +194,15 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
                 <div class="column is-4">
                   <div class="grid-item">
                     <UserCardDropdown />
-                    <V-Avatar
+                    <VAvatar
                       picture="/demo/avatars/25.jpg"
-                      badge="/images/icons/stacks/js.svg?url"
+                      badge="/images/icons/stacks/js.svg"
                       size="large"
                     />
                     <h3 class="dark-inverted">Melany Wallace</h3>
                     <p>Web Developer</p>
                     <div class="button-wrap has-text-centered">
-                      <V-Button dark-outlined bold>Assess</V-Button>
+                      <VButton dark-outlined bold>Assess</VButton>
                     </div>
                   </div>
                 </div>

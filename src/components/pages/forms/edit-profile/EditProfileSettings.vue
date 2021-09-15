@@ -35,22 +35,22 @@ const onSave = async () => {
         </div>
         <div class="right">
           <div class="buttons">
-            <V-Button
+            <VButton
               :to="{ name: 'sidebar-layouts-profile-view' }"
               icon="lnir lnir-arrow-left rem-100"
               light
               dark-outlined
             >
               Go Back
-            </V-Button>
-            <V-Button
+            </VButton>
+            <VButton
               color="primary"
               raised
               :loading="isLoading"
               @click="onSave"
             >
               Save Changes
-            </V-Button>
+            </VButton>
           </div>
         </div>
       </div>
@@ -66,42 +66,42 @@ const onSave = async () => {
         <div class="columns is-multiline">
           <!--Field-->
           <div class="column is-12">
-            <V-Field>
-              <V-Control icon="feather:unlock">
+            <VField>
+              <VControl icon="feather:unlock">
                 <input
                   type="password"
                   class="input"
                   placeholder="Old Password"
                   autocomplete="current-password"
                 />
-              </V-Control>
-            </V-Field>
+              </VControl>
+            </VField>
           </div>
           <!--Field-->
           <div class="column is-12">
-            <V-Field>
-              <V-Control icon="feather:lock">
+            <VField>
+              <VControl icon="feather:lock">
                 <input
                   type="password"
                   class="input"
                   placeholder="New Password"
                   autocomplete="new-password"
                 />
-              </V-Control>
-            </V-Field>
+              </VControl>
+            </VField>
           </div>
           <!--Field-->
           <div class="column is-12">
-            <V-Field>
-              <V-Control icon="feather:lock">
+            <VField>
+              <VControl icon="feather:lock">
                 <input
                   type="password"
                   class="input"
                   placeholder="Repeat New Password"
                   autocomplete="new-password"
                 />
-              </V-Control>
-            </V-Field>
+              </VControl>
+            </VField>
           </div>
         </div>
       </div>
@@ -116,20 +116,20 @@ const onSave = async () => {
         <div class="columns is-multiline">
           <!--Field-->
           <div class="column is-12">
-            <V-Field>
-              <V-Control>
-                <V-SwitchBlock
+            <VField>
+              <VControl>
+                <VSwitchBlock
                   v-model="twoFactor"
                   label="Enable / disable 2 factor"
                   color="primary"
                 />
-              </V-Control>
-            </V-Field>
+              </VControl>
+            </VField>
           </div>
           <!--Field-->
           <div v-if="twoFactor" class="column is-12">
-            <V-Field>
-              <V-Control icon="feather:smartphone">
+            <VField>
+              <VControl icon="feather:smartphone">
                 <input
                   type="text"
                   class="input"
@@ -137,8 +137,8 @@ const onSave = async () => {
                   autocomplete="tel"
                   inputmode="tel"
                 />
-              </V-Control>
-            </V-Field>
+              </VControl>
+            </VField>
           </div>
         </div>
       </div>
@@ -153,25 +153,25 @@ const onSave = async () => {
         <div class="columns is-multiline">
           <!--Field-->
           <div class="column is-12">
-            <V-Field>
-              <V-Control>
-                <V-SwitchBlock
+            <VField>
+              <VControl>
+                <VSwitchBlock
                   v-model="notifications"
                   label="Disable all notifications"
                   color="primary"
                 />
-              </V-Control>
-            </V-Field>
+              </VControl>
+            </VField>
 
-            <V-Field>
-              <V-Control>
-                <V-SwitchBlock
+            <VField>
+              <VControl>
+                <VSwitchBlock
                   v-model="notificationsLow"
                   label="Disable low priority notifications"
                   color="primary"
                 />
-              </V-Control>
-            </V-Field>
+              </VControl>
+            </VField>
           </div>
         </div>
       </div>
@@ -186,24 +186,24 @@ const onSave = async () => {
         <div class="columns is-multiline">
           <!--Field-->
           <div class="column is-12">
-            <V-Field>
-              <V-Control>
-                <V-SwitchBlock
+            <VField>
+              <VControl>
+                <VSwitchBlock
                   v-model="marketing"
                   label="Enable marketing emails"
                   color="primary"
                 />
-              </V-Control>
-            </V-Field>
-            <V-Field>
-              <V-Control>
-                <V-SwitchBlock
+              </VControl>
+            </VField>
+            <VField>
+              <VControl>
+                <VSwitchBlock
                   v-model="partners"
                   label="Enable partners emails"
                   color="primary"
                 />
-              </V-Control>
-            </V-Field>
+              </VControl>
+            </VField>
           </div>
         </div>
       </div>

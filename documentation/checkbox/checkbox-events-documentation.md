@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-Checkbox Events
+### VCheckbox Events
 
-Here is the full events available for `<V-Checkbox />` component:
+Here is the full events available for `<VCheckbox />` component:
 
 | Event              | Callback                                                  | Description                                                                        |
 | ------------------ | --------------------------------------------------------- | ---------------------------------------------------------------------------------- |

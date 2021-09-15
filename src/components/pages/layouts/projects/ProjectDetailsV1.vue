@@ -59,7 +59,7 @@ const participants = [
                   <p>UI/UX Design</p>
                 </div>
 
-                <V-IconButton
+                <VIconButton
                   size="small"
                   icon="feather:edit-3"
                   @click="activePanel = 'task'"
@@ -72,7 +72,7 @@ const participants = [
                   iudicant sensus? Primum quid tu dicis breve? Etiam
                   beatissimum? Ne discipulum abducam, times.
                 </p>
-                <V-AvatarStack :avatars="participants" />
+                <VAvatarStack :avatars="participants" />
               </div>
 
               <div class="project-features">
@@ -115,10 +115,7 @@ const participants = [
                 <div class="columns is-multiline">
                   <div class="column is-6">
                     <div class="file-box">
-                      <img
-                        src="/images/icons/files/zip-format.svg?url"
-                        alt=""
-                      />
+                      <img src="/images/icons/files/zip-format.svg" alt="" />
                       <div class="meta">
                         <span>Preliminary Sketches</span>
                         <span>
@@ -131,7 +128,7 @@ const participants = [
                   </div>
                   <div class="column is-6">
                     <div class="file-box">
-                      <img src="/images/icons/files/pdf.svg?url" alt="" />
+                      <img src="/images/icons/files/pdf.svg" alt="" />
                       <div class="meta">
                         <span>Project Scope</span>
                         <span>
@@ -145,10 +142,7 @@ const participants = [
                   </div>
                   <div class="column is-6">
                     <div class="file-box">
-                      <img
-                        src="/images/icons/files/presentation.svg?url"
-                        alt=""
-                      />
+                      <img src="/images/icons/files/presentation.svg" alt="" />
                       <div class="meta">
                         <span>Project Presentation</span>
                         <span>
@@ -162,7 +156,7 @@ const participants = [
                   </div>
                   <div class="column is-6">
                     <div class="file-box">
-                      <img src="/images/icons/files/sheet.svg?url" alt="" />
+                      <img src="/images/icons/files/sheet.svg" alt="" />
                       <div class="meta">
                         <span>Project Budget</span>
                         <span>
@@ -176,7 +170,7 @@ const participants = [
                   </div>
                   <div class="column is-6">
                     <div class="file-box">
-                      <img src="/images/icons/files/doc.svg?url" alt="" />
+                      <img src="/images/icons/files/doc.svg" alt="" />
                       <div class="meta">
                         <span>Project Notes</span>
                         <span>
@@ -190,7 +184,7 @@ const participants = [
                   </div>
                   <div class="column is-6">
                     <div class="file-box">
-                      <img src="/images/icons/files/video.svg?url" alt="" />
+                      <img src="/images/icons/files/video.svg" alt="" />
                       <div class="meta">
                         <span>POC Demo</span>
                         <span>
@@ -211,80 +205,76 @@ const participants = [
             <div class="side-card">
               <h4>Project Tools</h4>
 
-              <V-Block center title="Sketch" subtitle="Design Software">
+              <VBlock center title="Sketch" subtitle="Design Software">
                 <template #icon>
-                  <V-Avatar
+                  <VAvatar
                     size="small"
-                    picture="/images/icons/stacks/sketch.svg?url"
+                    picture="/images/icons/stacks/sketch.svg"
                   />
                 </template>
-              </V-Block>
+              </VBlock>
 
-              <V-Block center title="Illustrator" subtitle="Design Software">
+              <VBlock center title="Illustrator" subtitle="Design Software">
                 <template #icon>
-                  <V-Avatar
+                  <VAvatar
                     size="small"
-                    picture="/images/icons/stacks/illustrator.svg?url"
+                    picture="/images/icons/stacks/illustrator.svg"
                   />
                 </template>
-              </V-Block>
+              </VBlock>
 
-              <V-Block center title="Photoshop" subtitle="Design Software">
+              <VBlock center title="Photoshop" subtitle="Design Software">
                 <template #icon>
-                  <V-Avatar
+                  <VAvatar
                     size="small"
-                    picture="/images/icons/stacks/photoshop.svg?url"
+                    picture="/images/icons/stacks/photoshop.svg"
                   />
                 </template>
-              </V-Block>
+              </VBlock>
             </div>
 
             <div class="side-card">
               <h4>Project Stacks</h4>
 
-              <V-Block center title="Html5" subtitle="Hypertext Markup">
+              <VBlock center title="Html5" subtitle="Hypertext Markup">
                 <template #icon>
-                  <V-Avatar
+                  <VAvatar
                     size="small"
-                    picture="/images/icons/stacks/html5.svg?url"
+                    picture="/images/icons/stacks/html5.svg"
                   />
                 </template>
-              </V-Block>
+              </VBlock>
 
-              <V-Block center title="CSS3" subtitle="Cascading Stylesheets">
+              <VBlock center title="CSS3" subtitle="Cascading Stylesheets">
                 <template #icon>
-                  <V-Avatar
+                  <VAvatar
                     size="small"
-                    picture="/images/icons/stacks/css3.svg?url"
+                    picture="/images/icons/stacks/css3.svg"
                   />
                 </template>
-              </V-Block>
+              </VBlock>
 
-              <V-Block center title="VueJS" subtitle="Javascript Framework">
+              <VBlock center title="VueJS" subtitle="Javascript Framework">
                 <template #icon>
-                  <V-Avatar
+                  <VAvatar
                     size="small"
-                    picture="/images/icons/stacks/vuejs.svg?url"
+                    picture="/images/icons/stacks/vuejs.svg"
                   />
                 </template>
-              </V-Block>
+              </VBlock>
             </div>
 
             <div class="side-card">
               <h4>Customer</h4>
 
-              <V-Block
-                center
-                title="VFlights"
-                subtitle="Transportation company"
-              >
+              <VBlock center title="VFlights" subtitle="Transportation company">
                 <template #icon>
-                  <V-Avatar
+                  <VAvatar
                     size="small"
-                    picture="/@src/assets/illustrations/dashboards/flights/company1.svg?url"
+                    picture="/@src/assets/illustrations/dashboards/flights/company1.svg"
                   />
                 </template>
-              </V-Block>
+              </VBlock>
             </div>
           </div>
         </div>
@@ -301,15 +291,15 @@ const participants = [
             <div class="columns is-multiline">
               <!--Team Member-->
               <div class="column is-6 has-border-bottom">
-                <V-Block center title="Alice C." subtitle="Software Engineer">
+                <VBlock center title="Alice C." subtitle="Software Engineer">
                   <template #icon>
-                    <V-Avatar size="medium" picture="/demo/avatars/7.jpg" />
+                    <VAvatar size="medium" picture="/demo/avatars/7.jpg" />
                   </template>
 
                   <template #action>
                     <TeamCardDropdown />
                   </template>
-                </V-Block>
+                </VBlock>
 
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si
@@ -319,15 +309,15 @@ const participants = [
               </div>
               <!--Team Member-->
               <div class="column is-6 has-border-bottom">
-                <V-Block center title="Anna B." subtitle="UX Designer">
+                <VBlock center title="Anna B." subtitle="UX Designer">
                   <template #icon>
-                    <V-Avatar size="medium" picture="/demo/avatars/9.jpg" />
+                    <VAvatar size="medium" picture="/demo/avatars/9.jpg" />
                   </template>
 
                   <template #action>
                     <TeamCardDropdown />
                   </template>
-                </V-Block>
+                </VBlock>
 
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si
@@ -337,15 +327,15 @@ const participants = [
               </div>
               <!--Team Member-->
               <div class="column is-6 has-border-bottom">
-                <V-Block center title="Joshua S." subtitle="Backend Developer">
+                <VBlock center title="Joshua S." subtitle="Backend Developer">
                   <template #icon>
-                    <V-Avatar size="medium" picture="/demo/avatars/12.jpg" />
+                    <VAvatar size="medium" picture="/demo/avatars/12.jpg" />
                   </template>
 
                   <template #action>
                     <TeamCardDropdown />
                   </template>
-                </V-Block>
+                </VBlock>
 
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si
@@ -355,15 +345,15 @@ const participants = [
               </div>
               <!--Team Member-->
               <div class="column is-6 has-border-bottom">
-                <V-Block center title="Erik K." subtitle="Product Manager">
+                <VBlock center title="Erik K." subtitle="Product Manager">
                   <template #icon>
-                    <V-Avatar size="medium" picture="/demo/avatars/8.jpg" />
+                    <VAvatar size="medium" picture="/demo/avatars/8.jpg" />
                   </template>
 
                   <template #action>
                     <TeamCardDropdown />
                   </template>
-                </V-Block>
+                </VBlock>
 
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si
@@ -373,15 +363,15 @@ const participants = [
               </div>
               <!--Team Member-->
               <div class="column is-6 has-border-bottom">
-                <V-Block center title="Melany W." subtitle="Web Developer">
+                <VBlock center title="Melany W." subtitle="Web Developer">
                   <template #icon>
-                    <V-Avatar size="medium" picture="/demo/avatars/25.jpg" />
+                    <VAvatar size="medium" picture="/demo/avatars/25.jpg" />
                   </template>
 
                   <template #action>
                     <TeamCardDropdown />
                   </template>
-                </V-Block>
+                </VBlock>
 
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si
@@ -391,15 +381,15 @@ const participants = [
               </div>
               <!--Team Member-->
               <div class="column is-6 has-border-bottom">
-                <V-Block center title="Tara S." subtitle="UI/UX Designer">
+                <VBlock center title="Tara S." subtitle="UI/UX Designer">
                   <template #icon>
-                    <V-Avatar size="medium" picture="/demo/avatars/13.jpg" />
+                    <VAvatar size="medium" picture="/demo/avatars/13.jpg" />
                   </template>
 
                   <template #action>
                     <TeamCardDropdown />
                   </template>
-                </V-Block>
+                </VBlock>
 
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si
@@ -409,15 +399,15 @@ const participants = [
               </div>
               <!--Team Member-->
               <div class="column is-6">
-                <V-Block center title="Esteban C." subtitle="UI/UX Designer">
+                <VBlock center title="Esteban C." subtitle="UI/UX Designer">
                   <template #icon>
-                    <V-Avatar size="medium" picture="/demo/avatars/18.jpg" />
+                    <VAvatar size="medium" picture="/demo/avatars/18.jpg" />
                   </template>
 
                   <template #action>
                     <TeamCardDropdown />
                   </template>
-                </V-Block>
+                </VBlock>
 
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si
@@ -427,15 +417,15 @@ const participants = [
               </div>
               <!--Team Member-->
               <div class="column is-6">
-                <V-Block center title="Mary L." subtitle="Project Manager">
+                <VBlock center title="Mary L." subtitle="Project Manager">
                   <template #icon>
-                    <V-Avatar size="medium" picture="/demo/avatars/5.jpg" />
+                    <VAvatar size="medium" picture="/demo/avatars/5.jpg" />
                   </template>
 
                   <template #action>
                     <TeamCardDropdown />
                   </template>
-                </V-Block>
+                </VBlock>
 
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si
@@ -459,13 +449,13 @@ const participants = [
               <h3>Tasks</h3>
               <div class="filter">
                 <span>Filter by</span>
-                <V-Control>
+                <VControl>
                   <Multiselect
                     v-model="filterTasks"
                     :options="['New', 'In Progress', 'Closed', 'Archived']"
                     placeholder="In Progress"
                   />
-                </V-Control>
+                </VControl>
               </div>
             </div>
 
@@ -479,7 +469,7 @@ const participants = [
                   </a>
                   <div class="content-wrap">
                     <div class="left">
-                      <V-AvatarStack
+                      <VAvatarStack
                         size="small"
                         :avatars="[
                           { picture: '/demo/avatars/7.jpg' },
@@ -509,7 +499,7 @@ const participants = [
                   </a>
                   <div class="content-wrap">
                     <div class="left">
-                      <V-AvatarStack
+                      <VAvatarStack
                         size="small"
                         :avatars="[{ picture: '/demo/avatars/12.jpg' }]"
                       />
@@ -535,7 +525,7 @@ const participants = [
                   </a>
                   <div class="content-wrap">
                     <div class="left">
-                      <V-AvatarStack
+                      <VAvatarStack
                         size="small"
                         :avatars="[{ picture: '/demo/avatars/12.jpg' }]"
                       />
@@ -561,7 +551,7 @@ const participants = [
                   </a>
                   <div class="content-wrap">
                     <div class="left">
-                      <V-AvatarStack
+                      <VAvatarStack
                         size="small"
                         :avatars="[
                           { picture: '/demo/avatars/5.jpg' },
@@ -590,7 +580,7 @@ const participants = [
                   </a>
                   <div class="content-wrap">
                     <div class="left">
-                      <V-AvatarStack
+                      <VAvatarStack
                         size="small"
                         :avatars="[{ picture: '/demo/avatars/25.jpg' }]"
                       />
@@ -616,7 +606,7 @@ const participants = [
                   </a>
                   <div class="content-wrap">
                     <div class="left">
-                      <V-AvatarStack
+                      <VAvatarStack
                         size="small"
                         :avatars="[
                           { picture: '/demo/avatars/25.jpg' },
@@ -645,7 +635,7 @@ const participants = [
                   </a>
                   <div class="content-wrap">
                     <div class="left">
-                      <V-AvatarStack
+                      <VAvatarStack
                         size="small"
                         :avatars="[
                           { picture: '/demo/avatars/25.jpg' },
@@ -674,7 +664,7 @@ const participants = [
                   </a>
                   <div class="content-wrap">
                     <div class="left">
-                      <V-AvatarStack
+                      <VAvatarStack
                         size="small"
                         :avatars="[
                           { picture: '/demo/avatars/25.jpg' },

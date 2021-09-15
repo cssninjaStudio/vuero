@@ -11,12 +11,12 @@
         <div class="onboarding-card">
           <img
             class="light-image"
-            src="/@src/assets/illustrations/onboarding/set6-1.svg?url"
+            src="/@src/assets/illustrations/onboarding/set6-1.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/@src/assets/illustrations/onboarding/set6-1-dark.svg?url"
+            src="/@src/assets/illustrations/onboarding/set6-1-dark.svg"
             alt=""
           />
           <h3>Configure Shop</h3>
@@ -26,19 +26,19 @@
             tament.
           </p>
           <div class="button-wrap">
-            <V-Button color="primary" elevated> Configure </V-Button>
+            <VButton color="primary" elevated> Configure </VButton>
           </div>
         </div>
         <!--Card-->
         <div class="onboarding-card">
           <img
             class="light-image"
-            src="/@src/assets/illustrations/onboarding/set6-2.svg?url"
+            src="/@src/assets/illustrations/onboarding/set6-2.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/@src/assets/illustrations/onboarding/set6-2-dark.svg?url"
+            src="/@src/assets/illustrations/onboarding/set6-2-dark.svg"
             alt=""
           />
           <h3>Configure Warehouse</h3>
@@ -48,19 +48,19 @@
             tament.
           </p>
           <div class="button-wrap">
-            <V-Button color="primary" elevated> Configure </V-Button>
+            <VButton color="primary" elevated> Configure </VButton>
           </div>
         </div>
         <!--Card-->
         <div class="onboarding-card">
           <img
             class="light-image"
-            src="/@src/assets/illustrations/onboarding/set6-3.svg?url"
+            src="/@src/assets/illustrations/onboarding/set6-3.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/@src/assets/illustrations/onboarding/set6-3-dark.svg?url"
+            src="/@src/assets/illustrations/onboarding/set6-3-dark.svg"
             alt=""
           />
           <h3>Manage Products</h3>
@@ -70,7 +70,7 @@
             tament.
           </p>
           <div class="button-wrap">
-            <V-Button color="primary" elevated> Manage </V-Button>
+            <VButton color="primary" elevated> Manage </VButton>
           </div>
         </div>
       </div>

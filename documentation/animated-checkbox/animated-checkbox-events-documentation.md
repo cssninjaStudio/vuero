@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-AnimatedCheckbox Events
+### VAnimatedCheckbox Events
 
-Here is the full events available for `<V-AnimatedCheckbox />` component:
+Here is the full events available for `<VAnimatedCheckbox />` component:
 
 | Event              | Callback                                                    | Description                                                                      |
 | ------------------ | ----------------------------------------------------------- | -------------------------------------------------------------------------------- |

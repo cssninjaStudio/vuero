@@ -72,7 +72,7 @@ export const memberList = [
   },
   {
     id: 3,
-    picture: null,
+    picture: undefined,
     name: 'Jolaine Joestar',
     initials: 'jj',
     color: 'info',

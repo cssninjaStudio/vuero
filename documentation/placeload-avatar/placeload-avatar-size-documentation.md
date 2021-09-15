@@ -1,19 +1,19 @@
 ### Size
 
-Control the size of `<V-PlaceloadAvatar />` component to match your interface.
+Control the size of `<VPlaceloadAvatar />` component to match your interface.
 You can set the `size` properties according your needs
 
 <!--code-->
 
 ```vue
 <template>
-  <V-Flex alignItems="flex-end" columnGap=".25rem">
-    <V-PlaceloadAvatar class="mx-1" size="small" />
-    <V-PlaceloadAvatar class="mx-1" size="medium" />
-    <V-PlaceloadAvatar class="mx-1" size="large" />
-    <V-PlaceloadAvatar class="mx-1" size="big" />
-    <V-PlaceloadAvatar class="mx-1" size="xl" />
-  </V-Flex>
+  <VFlex alignItems="flex-end" columnGap=".25rem">
+    <VPlaceloadAvatar class="mx-1" size="small" />
+    <VPlaceloadAvatar class="mx-1" size="medium" />
+    <VPlaceloadAvatar class="mx-1" size="large" />
+    <VPlaceloadAvatar class="mx-1" size="big" />
+    <VPlaceloadAvatar class="mx-1" size="xl" />
+  </VFlex>
 </template>
 ```
 
@@ -21,12 +21,12 @@ You can set the `size` properties according your needs
 
 <!--example-->
 
-<V-Flex alignItems="flex-end" columnGap=".25rem">
-  <V-PlaceloadAvatar class="mx-1" size="small" />
-  <V-PlaceloadAvatar class="mx-1" size="medium" />
-  <V-PlaceloadAvatar class="mx-1" size="large" />
-  <V-PlaceloadAvatar class="mx-1" size="big" />
-  <V-PlaceloadAvatar class="mx-1" size="xl" />
-</V-Flex>
+<VFlex alignItems="flex-end" columnGap=".25rem">
+  <VPlaceloadAvatar class="mx-1" size="small" />
+  <VPlaceloadAvatar class="mx-1" size="medium" />
+  <VPlaceloadAvatar class="mx-1" size="large" />
+  <VPlaceloadAvatar class="mx-1" size="big" />
+  <VPlaceloadAvatar class="mx-1" size="xl" />
+</VFlex>
 
 <!--/example-->

@@ -50,7 +50,7 @@ const items = [
 </script>
 
 <template>
-  <V-PhotosSwipe :items="items" thumbnail-radius="full" />
+  <VPhotosSwipe :items="items" thumbnail-radius="full" />
 </template>
 ```
 
@@ -58,6 +58,6 @@ const items = [
 
 <!--example-->
 
-<V-PhotosSwipe :items="frontmatter.items" thumbnail-radius="full" />
+<VPhotosSwipe :items="frontmatter.items" thumbnail-radius="full" />
 
 <!--/example-->

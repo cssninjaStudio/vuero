@@ -1,7 +1,7 @@
-### V-SwitchBlock
+### VSwitchBlock
 
 Vuero provides nicely styled switch checkboxes when you need to
-display such control in yoour forms. Vuero `V-SwitchBlock` component have
+display such control in yoour forms. Vuero `VSwitchBlock` component have
 several color modififers. Available modifiers are `primary`, `success`,
 `info`, `warning` and `danger`.
 Please refer to the markup for more details about usage.
@@ -10,26 +10,26 @@ Please refer to the markup for more details about usage.
 
 ```vue
 <template>
-  <V-Field grouped>
-    <V-Control>
-      <V-SwitchBlock />
-    </V-Control>
-    <V-Control>
-      <V-SwitchBlock color="primary" checked />
-    </V-Control>
-    <V-Control>
-      <V-SwitchBlock color="success" checked />
-    </V-Control>
-    <V-Control>
-      <V-SwitchBlock color="info" checked />
-    </V-Control>
-    <V-Control>
-      <V-SwitchBlock color="warning" checked />
-    </V-Control>
-    <V-Control>
-      <V-SwitchBlock color="danger" checked />
-    </V-Control>
-  </V-Field>
+  <VField grouped>
+    <VControl>
+      <VSwitchBlock />
+    </VControl>
+    <VControl>
+      <VSwitchBlock color="primary" checked />
+    </VControl>
+    <VControl>
+      <VSwitchBlock color="success" checked />
+    </VControl>
+    <VControl>
+      <VSwitchBlock color="info" checked />
+    </VControl>
+    <VControl>
+      <VSwitchBlock color="warning" checked />
+    </VControl>
+    <VControl>
+      <VSwitchBlock color="danger" checked />
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -37,25 +37,25 @@ Please refer to the markup for more details about usage.
 
 <!--example-->
 
-<V-Field grouped>
-  <V-Control>
-    <V-SwitchBlock />
-  </V-Control>
-  <V-Control>
-    <V-SwitchBlock color="primary" checked />
-  </V-Control>
-  <V-Control>
-    <V-SwitchBlock color="success" checked />
-  </V-Control>
-  <V-Control>
-    <V-SwitchBlock color="info" checked />
-  </V-Control>
-  <V-Control>
-    <V-SwitchBlock color="warning" checked />
-  </V-Control>
-  <V-Control>
-    <V-SwitchBlock color="danger" checked />
-  </V-Control>
-</V-Field>
+<VField grouped>
+  <VControl>
+    <VSwitchBlock />
+  </VControl>
+  <VControl>
+    <VSwitchBlock color="primary" checked />
+  </VControl>
+  <VControl>
+    <VSwitchBlock color="success" checked />
+  </VControl>
+  <VControl>
+    <VSwitchBlock color="info" checked />
+  </VControl>
+  <VControl>
+    <VSwitchBlock color="warning" checked />
+  </VControl>
+  <VControl>
+    <VSwitchBlock color="danger" checked />
+  </VControl>
+</VField>
 
 <!--/example-->

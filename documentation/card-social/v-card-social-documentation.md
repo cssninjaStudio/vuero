@@ -1,6 +1,6 @@
-### V-CardSocial
+### VCardSocial
 
-The `<V-CardSocial />` component is a enhamcement and port to Vue
+The `<VCardSocial />` component is a enhamcement and port to Vue
 of the classic bulma card component, a classy and easy way
 to display post-like content. The component has several props
 to pass in the content you want to display.
@@ -10,7 +10,7 @@ Check the code example for more details.
 
 ```vue
 <template>
-  <V-CardSocial
+  <VCardSocial
     title="Featured Tweet"
     network="twitter"
     avatar="/demo/avatars/19.jpg"
@@ -21,7 +21,7 @@ Check the code example for more details.
   >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
     iaculis mauris.
-  </V-CardSocial>
+  </VCardSocial>
 </template>
 ```
 

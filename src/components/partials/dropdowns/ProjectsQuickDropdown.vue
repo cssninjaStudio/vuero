@@ -1,7 +1,13 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { VAvatarColor } from '/@src/components/base/avatar/VAvatar.vue'
 
-const projects = [
+const projects: {
+  initials: string
+  color: VAvatarColor
+  name: string
+  subtitle: string
+}[] = [
   {
     initials: 'D',
     color: 'warning',
@@ -31,9 +37,9 @@ const selectedProject = ref(projects[1])
 </script>
 
 <template>
-  <V-Dropdown class="project-dropdown" spaced>
+  <VDropdown class="project-dropdown" spaced>
     <template #button="{ toggle }">
-      <V-Avatar
+      <VAvatar
         size="small"
         :color="selectedProject.color"
         :initials="selectedProject.initials"
@@ -54,7 +60,7 @@ const selectedProject = ref(projects[1])
           }
         "
       >
-        <V-Avatar
+        <VAvatar
           size="small"
           :color="project.color"
           :initials="project.initials"
@@ -66,5 +72,5 @@ const selectedProject = ref(projects[1])
         </div>
       </a>
     </template>
-  </V-Dropdown>
+  </VDropdown>
 </template>

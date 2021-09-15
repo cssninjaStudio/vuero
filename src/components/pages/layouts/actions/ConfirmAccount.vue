@@ -28,16 +28,16 @@ const confirm = async () => {
   <div class="confirm-account-wrapper">
     <div class="wrapper-inner">
       <div class="action-box">
-        <V-Loader :active="isLoading">
+        <VLoader :active="isLoading">
           <div class="box-content">
             <img
               class="light-image"
-              src="/@src/assets/illustrations/placeholders/launch.svg?url"
+              src="/@src/assets/illustrations/placeholders/launch.svg"
               alt=""
             />
             <img
               class="dark-image"
-              src="/@src/assets/illustrations/placeholders/launch-dark.svg?url"
+              src="/@src/assets/illustrations/placeholders/launch-dark.svg"
               alt=""
             />
             <h3 class="dark-inverted">Please confirm your account</h3>
@@ -48,12 +48,12 @@ const confirm = async () => {
               board.
             </p>
             <div class="buttons">
-              <V-Button color="primary" raised @click="confirm">
+              <VButton color="primary" raised @click="confirm">
                 Confirm Account
-              </V-Button>
+              </VButton>
             </div>
           </div>
-        </V-Loader>
+        </VLoader>
       </div>
     </div>
   </div>

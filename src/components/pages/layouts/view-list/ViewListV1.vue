@@ -1,7 +1,28 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 
-import { users } from '/@src/data/layouts/view-list-v1'
+import type { VTagColor } from '/@src/components/base/tags/VTag.vue'
+import type { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
+import * as listData from '/@src/data/layouts/view-list-v1'
+
+export interface UserData extends VAvatarProps {
+  name: string
+  location: string
+  role: string
+  roleColor: VTagColor
+  medias: {
+    avatar: string
+    flag: string
+  }
+  stats: {
+    projects: number
+    replies: number
+    posts: number
+  }
+  teams: VAvatarProps[]
+}
+
+const users = listData.users as UserData[]
 
 const filters = ref('')
 
@@ -22,15 +43,15 @@ const filteredData = computed(() => {
 <template>
   <div>
     <div class="list-view-toolbar">
-      <V-Field>
-        <V-Control icon="feather:search">
+      <VField>
+        <VControl icon="feather:search">
           <input
             v-model="filters"
             class="input custom-text-filter"
             placeholder="Search..."
           />
-        </V-Control>
-      </V-Field>
+        </VControl>
+      </VField>
 
       <div class="list-info">
         <span v-if="filteredData.length === 1">1 record found</span>
@@ -38,9 +59,9 @@ const filteredData = computed(() => {
       </div>
 
       <div class="buttons">
-        <V-Button color="primary" icon="fas fa-check" elevated>
+        <VButton color="primary" icon="fas fa-check" elevated>
           Approve
-        </V-Button>
+        </VButton>
       </div>
     </div>
 
@@ -48,7 +69,7 @@ const filteredData = computed(() => {
       <!--List-->
       <div class="list-view list-view-v1">
         <!--List Empty Search Placeholder -->
-        <V-PlaceholderPage
+        <VPlaceholderPage
           :class="[filteredData.length !== 0 && 'is-hidden']"
           title="We couldn't find any matching results."
           subtitle="Too bad. Looks like we couldn't find any matching results for the
@@ -59,27 +80,27 @@ const filteredData = computed(() => {
           <template #image>
             <img
               class="light-image"
-              src="/@src/assets/illustrations/placeholders/search-1.svg?url"
+              src="/@src/assets/illustrations/placeholders/search-1.svg"
               alt=""
             />
             <img
               class="dark-image"
-              src="/@src/assets/illustrations/placeholders/search-1-dark.svg?url"
+              src="/@src/assets/illustrations/placeholders/search-1-dark.svg"
               alt=""
             />
           </template>
-        </V-PlaceholderPage>
+        </VPlaceholderPage>
 
         <div class="list-view-inner">
           <!--Item-->
           <transition-group name="list-complete" tag="div">
             <div
-              v-for="item in filteredData"
-              :key="item.id"
+              v-for="(item, key) in filteredData"
+              :key="key"
               class="list-view-item"
             >
               <div class="list-view-item-inner">
-                <V-Avatar
+                <VAvatar
                   :picture="item.medias.avatar"
                   size="large"
                   :badge="item.medias.flag"
@@ -97,7 +118,7 @@ const filteredData = computed(() => {
                 </div>
                 <div class="meta-right">
                   <div class="tags">
-                    <V-Tag
+                    <VTag
                       :label="item.role"
                       :color="item.roleColor"
                       rounded
@@ -123,7 +144,7 @@ const filteredData = computed(() => {
                   </div>
 
                   <div class="network">
-                    <V-AvatarStack
+                    <VAvatarStack
                       :avatars="item.teams"
                       :limit="3"
                       size="small"
@@ -140,7 +161,7 @@ const filteredData = computed(() => {
         </div>
       </div>
 
-      <V-FlexPagination
+      <VFlexPagination
         v-if="filteredData.length > 5"
         :item-per-page="10"
         :total-items="873"

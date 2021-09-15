@@ -13,12 +13,12 @@ useHead({
         <div class="bg-number dark-inverted">500</div>
         <img
           class="light-image"
-          src="/@src/assets/illustrations/placeholders/error-5.svg?url"
+          src="/@src/assets/illustrations/placeholders/error-5.svg"
           alt=""
         />
         <img
           class="dark-image"
-          src="/@src/assets/illustrations/placeholders/error-5-dark.svg?url"
+          src="/@src/assets/illustrations/placeholders/error-5-dark.svg"
           alt=""
         />
         <h3 class="dark-inverted">Internal Server Error</h3>
@@ -27,9 +27,9 @@ useHead({
           the website administrator.
         </p>
         <div class="button-wrap">
-          <V-Button color="primary" elevated rounded @click="$router.go(-1)">
+          <VButton color="primary" elevated rounded @click="$router.go(-1)">
             Take me Back
-          </V-Button>
+          </VButton>
         </div>
       </div>
     </div>

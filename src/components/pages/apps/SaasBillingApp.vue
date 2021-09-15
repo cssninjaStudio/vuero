@@ -148,35 +148,35 @@ const randomCard = () => {
           </div>
           <div class="block-body is-seats">
             <tippy class="has-help-cursor" interactive placement="bottom-start">
-              <V-Avatar picture="/demo/avatars/8.jpg" />
+              <VAvatar picture="/demo/avatars/8.jpg" />
               <template #content>
                 <UserPopoverContent :user="popovers.user8" />
               </template>
             </tippy>
 
             <tippy class="has-help-cursor" interactive placement="bottom-start">
-              <V-Avatar color="warning" initials="BT" />
+              <VAvatar color="warning" initials="BT" />
               <template #content>
                 <UserPopoverContent :user="popovers.user122" />
               </template>
             </tippy>
 
             <tippy class="has-help-cursor" interactive placement="bottom">
-              <V-Avatar picture="/demo/avatars/18.jpg" />
+              <VAvatar picture="/demo/avatars/18.jpg" />
               <template #content>
                 <UserPopoverContent :user="popovers.user18" />
               </template>
             </tippy>
 
             <tippy class="has-help-cursor" interactive placement="bottom">
-              <V-Avatar color="info" initials="JD" />
+              <VAvatar color="info" initials="JD" />
               <template #content>
                 <UserPopoverContent :user="popovers.user123" />
               </template>
             </tippy>
 
             <tippy class="has-help-cursor" interactive placement="bottom">
-              <V-Avatar picture="/demo/avatars/7.jpg" />
+              <VAvatar picture="/demo/avatars/7.jpg" />
               <template #content>
                 <UserPopoverContent :user="popovers.user7" />
               </template>
@@ -197,12 +197,12 @@ const randomCard = () => {
             <h3>Options</h3>
           </div>
           <div class="block-body">
-            <V-SwitchBlock
+            <VSwitchBlock
               v-model="invoces"
               label="Send new invoices to my inbox"
               color="primary"
             />
-            <V-SwitchBlock
+            <VSwitchBlock
               v-model="warnBilling"
               label="Warn me before the end of the billing period"
               color="primary"
@@ -216,8 +216,8 @@ const randomCard = () => {
             <a>My Invoices</a>
           </div>
           <div class="block-body">
-            <V-Field>
-              <V-Control>
+            <VField>
+              <VControl>
                 <label class="radio">
                   <input
                     type="radio"
@@ -234,8 +234,8 @@ const randomCard = () => {
                   <span></span>
                   Yearly
                 </label>
-              </V-Control>
-            </V-Field>
+              </VControl>
+            </VField>
           </div>
         </div>
       </div>
@@ -247,7 +247,7 @@ const randomCard = () => {
             <span @click="randomCard">Randomize</span>
           </div>
 
-          <V-CreditCard
+          <VCreditCard
             :color="creditcardColor"
             :flipped="isCardFlipped"
             :name="creditcardInput.name"
@@ -263,14 +263,14 @@ const randomCard = () => {
               v-html="creditcardLogo"
             ></div>
             <!-- eslint-enable vue/no-v-html -->
-          </V-CreditCard>
+          </VCreditCard>
 
           <div class="form-container">
             <div class="columns is-multiline">
               <div class="column is-12">
-                <V-Field>
+                <VField>
                   <label for="name">Name</label>
-                  <V-Control>
+                  <VControl>
                     <input
                       id="name"
                       v-model="creditcardInput.name"
@@ -281,14 +281,14 @@ const randomCard = () => {
                       placeholder="The name on the card"
                       @focus="isCardFlipped = false"
                     />
-                  </V-Control>
-                </V-Field>
+                  </VControl>
+                </VField>
               </div>
               <div class="column is-12">
-                <V-Field>
+                <VField>
                   <label for="cardnumber">Card Number</label>
-                  <V-Control>
-                    <V-IMaskInput
+                  <VControl>
+                    <VIMaskInput
                       id="cardnumber"
                       v-model="creditcardInput.number"
                       autocomplete="cc-number"
@@ -305,14 +305,14 @@ const randomCard = () => {
                       v-html="creditcardIcon"
                     ></div>
                     <!-- eslint-enable vue/no-v-html -->
-                  </V-Control>
-                </V-Field>
+                  </VControl>
+                </VField>
               </div>
               <div class="column is-6">
-                <V-Field>
+                <VField>
                   <label for="expirationdate">Expiration</label>
-                  <V-Control>
-                    <V-IMaskInput
+                  <VControl>
+                    <VIMaskInput
                       id="expirationdate"
                       v-model="creditcardInput.expiry"
                       autocomplete="cc-exp"
@@ -321,14 +321,14 @@ const randomCard = () => {
                       placeholder="MM / YY"
                       @focus="isCardFlipped = false"
                     />
-                  </V-Control>
-                </V-Field>
+                  </VControl>
+                </VField>
               </div>
               <div class="column is-6">
-                <V-Field>
+                <VField>
                   <label for="securitycode">CVC</label>
-                  <V-Control>
-                    <V-IMaskInput
+                  <VControl>
+                    <VIMaskInput
                       id="securitycode"
                       v-model="creditcardInput.cvc"
                       autocomplete="cc-csc"
@@ -337,14 +337,14 @@ const randomCard = () => {
                       placeholder="3 digits code"
                       @focus="isCardFlipped = true"
                     />
-                  </V-Control>
-                </V-Field>
+                  </VControl>
+                </VField>
               </div>
               <div class="column is-12">
                 <div class="button-wrap">
-                  <V-Button color="primary" raised fullwidth>
+                  <VButton color="primary" raised fullwidth>
                     Save Payment Method
-                  </V-Button>
+                  </VButton>
                 </div>
               </div>
             </div>

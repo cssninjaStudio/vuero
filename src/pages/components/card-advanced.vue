@@ -1,18 +1,20 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
 
+import type { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
 import { pageTitle } from '/@src/state/sidebarLayoutState'
-import { userStack2 } from '/@src/data/users/userStacks'
+import * as userStacks from '/@src/data/users/userStacks'
 
-pageTitle.value = 'V-CardAdvanced'
+const userStack2 = userStacks.userStack2 as VAvatarProps[]
+pageTitle.value = 'VCardAdvanced'
 useHead({
-  title: 'V-CardAdvanced - Components - Vuero',
+  title: 'VCardAdvanced - Components - Vuero',
 })
 </script>
 
 <template>
   <div class="page-content-inner">
-    <V-Breadcrumb
+    <VBreadcrumb
       with-icons
       separator="bullet"
       :items="[
@@ -30,7 +32,7 @@ useHead({
           label: 'Cards',
         },
         {
-          label: 'V-CardAdvanced',
+          label: 'VCardAdvanced',
           to: { name: 'components-card-advanced' },
         },
       ]"
@@ -38,24 +40,24 @@ useHead({
 
     <div class="columns is-multiline">
       <div class="column is-12">
-        <!--V-Card Advanced-->
+        <!--VCard Advanced-->
         <VCardAdvancedDocumentation />
       </div>
 
       <div class="column is-4">
-        <V-CardAdvanced>
+        <VCardAdvanced>
           <template #header-left>
-            <V-Block title="Anna B." subtitle="UX Designer" center>
+            <VBlock title="Anna B." subtitle="UX Designer" center>
               <template #icon>
-                <V-Avatar
+                <VAvatar
                   picture="/demo/avatars/19.jpg"
-                  badge="/images/icons/flags/germany.svg?url"
+                  badge="/images/icons/flags/germany.svg"
                 />
               </template>
-            </V-Block>
+            </VBlock>
           </template>
           <template #header-right>
-            <V-AvatarStack :avatars="userStack2" :limit="1" size="small" />
+            <VAvatarStack :avatars="userStack2" :limit="1" size="small" />
           </template>
           <template #content>
             <p>
@@ -66,24 +68,24 @@ useHead({
           </template>
           <template #footer-left>
             <div class="tags">
-              <V-Tag label="Business" color="solid" rounded />
+              <VTag label="Business" color="solid" rounded />
             </div>
           </template>
           <template #footer-right>
-            <V-Button color="primary" raised>Action</V-Button>
+            <VButton color="primary" raised>Action</VButton>
           </template>
-        </V-CardAdvanced>
+        </VCardAdvanced>
       </div>
 
       <div class="column is-4">
-        <V-CardAdvanced radius="smooth">
+        <VCardAdvanced radius="smooth">
           <template #header-left>
             <div class="tags">
-              <V-Tag label="Business" color="solid" rounded />
+              <VTag label="Business" color="solid" rounded />
             </div>
           </template>
           <template #header-right>
-            <V-Button color="primary" raised>Action</V-Button>
+            <VButton color="primary" raised>Action</VButton>
           </template>
           <template #content>
             <p>
@@ -93,23 +95,23 @@ useHead({
             </p>
           </template>
           <template #footer-left>
-            <V-Block title="Anna B." subtitle="UX Designer" center>
+            <VBlock title="Anna B." subtitle="UX Designer" center>
               <template #icon>
-                <V-Avatar
+                <VAvatar
                   picture="/demo/avatars/19.jpg"
-                  badge="/images/icons/flags/germany.svg?url"
+                  badge="/images/icons/flags/germany.svg"
                 />
               </template>
-            </V-Block>
+            </VBlock>
           </template>
           <template #footer-right>
-            <V-AvatarStack :avatars="userStack2" :limit="1" size="small" />
+            <VAvatarStack :avatars="userStack2" :limit="1" size="small" />
           </template>
-        </V-CardAdvanced>
+        </VCardAdvanced>
       </div>
 
       <div class="column is-4">
-        <V-CardAdvanced radius="rounded">
+        <VCardAdvanced radius="rounded">
           <template #header-left>
             <h3 class="title is-6">A Card Title</h3>
           </template>
@@ -124,19 +126,19 @@ useHead({
             </p>
           </template>
           <template #footer-left>
-            <V-Block title="Anna B." subtitle="UX Designer" center>
+            <VBlock title="Anna B." subtitle="UX Designer" center>
               <template #icon>
-                <V-Avatar
+                <VAvatar
                   picture="/demo/avatars/19.jpg"
-                  badge="/images/icons/flags/germany.svg?url"
+                  badge="/images/icons/flags/germany.svg"
                 />
               </template>
-            </V-Block>
+            </VBlock>
           </template>
           <template #footer-right>
-            <V-AvatarStack :avatars="userStack2" :limit="1" size="small" />
+            <VAvatarStack :avatars="userStack2" :limit="1" size="small" />
           </template>
-        </V-CardAdvanced>
+        </VCardAdvanced>
       </div>
 
       <div class="column is-12 mt-5">

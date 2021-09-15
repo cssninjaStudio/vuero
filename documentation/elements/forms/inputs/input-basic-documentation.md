@@ -7,8 +7,8 @@ state:
 
 Vuero provides elegant form controls with minimum styling.
 You can use regular Html inputs by adding the `input` class
-to a html `input` element. Always wrap your inputs inside a `<V-Field />`
-and a `<V-Control />` to build forms quickly and efficiently.
+to a html `input` element. Always wrap your inputs inside a `<VField />`
+and a `<VControl />` to build forms quickly and efficiently.
 
 <!--code-->
 
@@ -20,16 +20,16 @@ const input = ref('')
 </script>
 
 <template>
-  <V-Field>
-    <V-Control>
+  <VField>
+    <VControl>
       <input
         v-model="input"
         type="text"
         class="input"
         placeholder="Your username"
       />
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -37,15 +37,15 @@ const input = ref('')
 
 <!--example-->
 
-<V-Field>
-  <V-Control>
+<VField>
+  <VControl>
     <input
       v-model="frontmatter.state.input"
       type="text"
       class="input"
       placeholder="Your username"
     />
-  </V-Control>
-</V-Field>
+  </VControl>
+</VField>
 
 <!--/example-->

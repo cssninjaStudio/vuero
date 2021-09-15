@@ -9,12 +9,12 @@ const filterProjects = ref(0)
     <div class="illustration-header">
       <img
         class="light-image"
-        src="/@src/assets/illustrations/projects/header.svg?url"
+        src="/@src/assets/illustrations/projects/header.svg"
         alt=""
       />
       <img
         class="dark-image"
-        src="/@src/assets/illustrations/projects/header-dark.svg?url"
+        src="/@src/assets/illustrations/projects/header-dark.svg"
         alt=""
       />
       <div class="header-stats">
@@ -76,13 +76,13 @@ const filterProjects = ref(0)
         <div class="filter">
           <span>Filter by</span>
 
-          <V-Control>
+          <VControl>
             <Multiselect
               v-model="filterProjects"
               :options="['Shipping Soon', 'In Progress', 'Blocked', 'Archived']"
               placeholder="Shipping Soon"
             />
-          </V-Control>
+          </VControl>
         </div>
       </div>
 
@@ -97,9 +97,9 @@ const filterProjects = ref(0)
             <div class="item-title">
               <h3>Finance App Onboarding Revamp</h3>
               <div class="tags">
-                <V-Tag label="Finance" color="solid" rounded />
-                <V-Tag label="Marketing" color="solid" rounded />
-                <V-Tag label="Payments" color="solid" rounded />
+                <VTag label="Finance" color="solid" rounded />
+                <VTag label="Marketing" color="solid" rounded />
+                <VTag label="Payments" color="solid" rounded />
               </div>
             </div>
             <div class="item-description">
@@ -111,7 +111,7 @@ const filterProjects = ref(0)
               </p>
 
               <div class="item-people">
-                <V-AvatarStack
+                <VAvatarStack
                   size="small"
                   :avatars="[
                     { picture: '/demo/avatars/13.jpg' },
@@ -134,8 +134,8 @@ const filterProjects = ref(0)
             <div class="item-title">
               <h3>Ecommerce Website for Sunset Surfers</h3>
               <div class="tags">
-                <V-Tag label="Sports" color="solid" rounded />
-                <V-Tag label="Surf" color="solid" rounded />
+                <VTag label="Sports" color="solid" rounded />
+                <VTag label="Surf" color="solid" rounded />
               </div>
             </div>
             <div class="item-description">
@@ -147,7 +147,7 @@ const filterProjects = ref(0)
               </p>
 
               <div class="item-people">
-                <V-AvatarStack
+                <VAvatarStack
                   size="small"
                   :avatars="[
                     { picture: '/demo/avatars/7.jpg' },
@@ -177,9 +177,9 @@ const filterProjects = ref(0)
             <div class="item-title">
               <h3>Business Model for Growing Startup</h3>
               <div class="tags">
-                <V-Tag label="Business" color="solid" rounded />
-                <V-Tag label="Startups" color="solid" rounded />
-                <V-Tag label="Management" color="solid" rounded />
+                <VTag label="Business" color="solid" rounded />
+                <VTag label="Startups" color="solid" rounded />
+                <VTag label="Management" color="solid" rounded />
               </div>
             </div>
             <div class="item-description">
@@ -191,7 +191,7 @@ const filterProjects = ref(0)
               </p>
 
               <div class="item-people">
-                <V-AvatarStack
+                <VAvatarStack
                   size="small"
                   :avatars="[{ picture: '/demo/avatars/14.jpg' }]"
                 />
@@ -211,8 +211,8 @@ const filterProjects = ref(0)
             <div class="item-title">
               <h3>Build a Document Parser with React Hooks</h3>
               <div class="tags">
-                <V-Tag label="Javascript" color="solid" rounded />
-                <V-Tag label="Tesseract" color="solid" rounded />
+                <VTag label="Javascript" color="solid" rounded />
+                <VTag label="Tesseract" color="solid" rounded />
               </div>
             </div>
             <div class="item-description">
@@ -224,7 +224,7 @@ const filterProjects = ref(0)
               </p>
 
               <div class="item-people">
-                <V-AvatarStack
+                <VAvatarStack
                   size="small"
                   :avatars="[
                     { picture: '/demo/avatars/8.jpg' },
@@ -250,8 +250,8 @@ const filterProjects = ref(0)
             <div class="item-title">
               <h3>Stabilize AI Project and Consolidate Features</h3>
               <div class="tags">
-                <V-Tag label="AI" color="solid" rounded />
-                <V-Tag label="Machine Learning" color="solid" rounded />
+                <VTag label="AI" color="solid" rounded />
+                <VTag label="Machine Learning" color="solid" rounded />
               </div>
             </div>
             <div class="item-description">
@@ -263,7 +263,7 @@ const filterProjects = ref(0)
               </p>
 
               <div class="item-people">
-                <V-AvatarStack
+                <VAvatarStack
                   size="small"
                   :avatars="[
                     { picture: '/demo/avatars/13.jpg' },
@@ -288,9 +288,9 @@ const filterProjects = ref(0)
             <div class="item-title">
               <h3>Rework BigBro Branding and Identity</h3>
               <div class="tags">
-                <V-Tag label="Music" color="solid" rounded />
-                <V-Tag label="Venue" color="solid" rounded />
-                <V-Tag label="Urban" color="solid" rounded />
+                <VTag label="Music" color="solid" rounded />
+                <VTag label="Venue" color="solid" rounded />
+                <VTag label="Urban" color="solid" rounded />
               </div>
             </div>
             <div class="item-description">
@@ -302,7 +302,7 @@ const filterProjects = ref(0)
               </p>
 
               <div class="item-people">
-                <V-AvatarStack
+                <VAvatarStack
                   size="small"
                   :avatars="[
                     { picture: '/demo/avatars/13.jpg' },
@@ -325,8 +325,8 @@ const filterProjects = ref(0)
             <div class="item-title">
               <h3>Customer Management Dashboard</h3>
               <div class="tags">
-                <V-Tag label="Business" color="solid" rounded />
-                <V-Tag label="Customers" color="solid" rounded />
+                <VTag label="Business" color="solid" rounded />
+                <VTag label="Customers" color="solid" rounded />
               </div>
             </div>
             <div class="item-description">
@@ -338,7 +338,7 @@ const filterProjects = ref(0)
               </p>
 
               <div class="item-people">
-                <V-AvatarStack
+                <VAvatarStack
                   size="small"
                   :avatars="[
                     { picture: '/demo/avatars/13.jpg' },
@@ -363,8 +363,8 @@ const filterProjects = ref(0)
             <div class="item-title">
               <h3>CandyBar Website and App Redesign</h3>
               <div class="tags">
-                <V-Tag label="Mobile" color="solid" rounded />
-                <V-Tag label="Hybrid" color="solid" rounded />
+                <VTag label="Mobile" color="solid" rounded />
+                <VTag label="Hybrid" color="solid" rounded />
               </div>
             </div>
             <div class="item-description">
@@ -376,7 +376,7 @@ const filterProjects = ref(0)
               </p>
 
               <div class="item-people">
-                <V-AvatarStack
+                <VAvatarStack
                   size="small"
                   :avatars="[
                     { picture: '/demo/avatars/22.jpg' },
@@ -400,8 +400,8 @@ const filterProjects = ref(0)
             <div class="item-title">
               <h3>Marketing and Investment Platform</h3>
               <div class="tags">
-                <V-Tag label="Business" color="solid" rounded />
-                <V-Tag label="Finance" color="solid" rounded />
+                <VTag label="Business" color="solid" rounded />
+                <VTag label="Finance" color="solid" rounded />
               </div>
             </div>
             <div class="item-description">
@@ -413,7 +413,7 @@ const filterProjects = ref(0)
               </p>
 
               <div class="item-people">
-                <V-AvatarStack
+                <VAvatarStack
                   size="small"
                   :avatars="[
                     { picture: '/demo/avatars/14.jpg' },

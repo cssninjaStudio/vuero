@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-PlaceholderSection Props
+### VPlaceholderSection Props
 
-Here is the full props available for `<V-PlaceholderSection />` component:
+Here is the full props available for `<VPlaceholderSection />` component:
 
 | Props                   | Default                                       | Type   |
 | ----------------------- | --------------------------------------------- | ------ |

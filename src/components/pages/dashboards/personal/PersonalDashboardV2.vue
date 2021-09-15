@@ -2,15 +2,16 @@
 import { ref } from 'vue'
 import ApexChart from 'vue3-apexcharts'
 
+import type { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
 import { completionOptions } from '/@src/data/dashboards/personal-v2/taskCompletionChart'
 import { barOptions } from '/@src/data/dashboards/personal-v2/teamEfficiencyChart'
-import {
-  avatarStack1,
-  avatarStack2,
-  avatarStack3,
-  avatarStack4,
-} from '/@src/data/dashboards/personal-v2/users'
 import { popovers } from '/@src/data/users/userPopovers'
+import * as usersData from '/@src/data/dashboards/personal-v2/users'
+
+const avatarStack1 = usersData.avatarStack1 as VAvatarProps[]
+const avatarStack2 = usersData.avatarStack1 as VAvatarProps[]
+const avatarStack3 = usersData.avatarStack1 as VAvatarProps[]
+const avatarStack4 = usersData.avatarStack1 as VAvatarProps[]
 
 const democheck = ref(['value_2'])
 </script>
@@ -21,9 +22,9 @@ const democheck = ref(['value_2'])
     <div class="columns is-multiline">
       <div class="column is-12">
         <div class="dashboard-header">
-          <V-Avatar
+          <VAvatar
             picture="/demo/avatars/8.jpg"
-            badge="/images/icons/flags/united-states-of-america.svg?url"
+            badge="/images/icons/flags/united-states-of-america.svg"
             size="xl"
           />
           <div class="user-meta is-dark-bordered-12">
@@ -55,84 +56,84 @@ const democheck = ref(['value_2'])
           </div>
           <div class="active-projects">
             <!--Project-->
-            <V-Block
+            <VBlock
               title="Delivery App Project"
               subtitle="Updated 30m ago"
               center
             >
               <template #icon>
-                <V-Avatar
+                <VAvatar
                   picture="/demo/photos/apps/1.jpg"
-                  badge="/images/icons/stacks/illustrator.svg?url"
+                  badge="/images/icons/stacks/illustrator.svg"
                   size="medium"
                   squared
                 />
               </template>
               <template #action>
-                <V-AvatarStack :avatars="avatarStack1" size="small" />
+                <VAvatarStack :avatars="avatarStack1" size="small" />
                 <ProjectWidgetDropdown />
               </template>
-            </V-Block>
+            </VBlock>
 
             <!--Project-->
-            <V-Block
+            <VBlock
               title="Health and Fitness Dashboard"
               subtitle="Updated 5h ago"
               center
             >
               <template #icon>
-                <V-Avatar
+                <VAvatar
                   picture="/demo/photos/apps/2.png"
-                  badge="/images/icons/stacks/reactjs.svg?url"
+                  badge="/images/icons/stacks/reactjs.svg"
                   size="medium"
                   squared
                 />
               </template>
               <template #action>
-                <V-AvatarStack :avatars="avatarStack2" size="small" />
+                <VAvatarStack :avatars="avatarStack2" size="small" />
                 <ProjectWidgetDropdown />
               </template>
-            </V-Block>
+            </VBlock>
 
             <!--Project-->
-            <V-Block
+            <VBlock
               title="Learning Tracker Dashboard"
               subtitle="Updated 7h ago"
               center
             >
               <template #icon>
-                <V-Avatar
+                <VAvatar
                   picture="/demo/photos/apps/3.png"
-                  badge="/images/icons/stacks/angular.svg?url"
+                  badge="/images/icons/stacks/angular.svg"
                   size="medium"
                   squared
                 />
               </template>
               <template #action>
-                <V-AvatarStack :avatars="avatarStack3" size="small" />
+                <VAvatarStack :avatars="avatarStack3" size="small" />
                 <ProjectWidgetDropdown />
               </template>
-            </V-Block>
+            </VBlock>
 
             <!--Project-->
-            <V-Block
+            <VBlock
               title="Banking App Dashboard"
               subtitle="Updated 10h ago"
               center
             >
               <template #icon>
-                <V-Avatar
+                <VAvatar
                   picture="/demo/photos/apps/4.png"
-                  badge="/images/icons/stacks/js.svg?url"
+                  badge="/images/icons/stacks/js.svg"
                   size="medium"
                   squared
                 />
               </template>
               <template #action>
-                <V-AvatarStack :avatars="avatarStack4" size="small" />
+                <VAvatarStack :avatars="avatarStack4" size="small" />
                 <ProjectWidgetDropdown />
               </template>
-            </V-Block>
+            </VBlock>
           </div>
         </div>
 
@@ -177,7 +178,7 @@ const democheck = ref(['value_2'])
             <ul class="user-list">
               <li>
                 <tippy class="has-help-cursor" interactive :offset="[0, 10]">
-                  <V-Avatar picture="/demo/avatars/18.jpg" />
+                  <VAvatar picture="/demo/avatars/18.jpg" />
                   <template #content>
                     <UserPopoverContent :user="popovers.user18" />
                   </template>
@@ -193,7 +194,7 @@ const democheck = ref(['value_2'])
               </li>
               <li>
                 <tippy class="has-help-cursor" interactive :offset="[0, 10]">
-                  <V-Avatar initials="SC" color="h-orange" />
+                  <VAvatar initials="SC" color="h-orange" />
                   <template #content>
                     <UserPopoverContent :user="popovers.user120" />
                   </template>
@@ -209,7 +210,7 @@ const democheck = ref(['value_2'])
               </li>
               <li>
                 <tippy class="has-help-cursor" interactive :offset="[0, 10]">
-                  <V-Avatar picture="/demo/avatars/13.jpg" />
+                  <VAvatar picture="/demo/avatars/13.jpg" />
                   <template #content>
                     <UserPopoverContent :user="popovers.user13" />
                   </template>
@@ -225,7 +226,7 @@ const democheck = ref(['value_2'])
               </li>
               <li>
                 <tippy class="has-help-cursor" interactive :offset="[0, 10]">
-                  <V-Avatar initials="NL" color="success" />
+                  <VAvatar initials="NL" color="success" />
                   <template #content>
                     <UserPopoverContent :user="popovers.user121" />
                   </template>
@@ -253,7 +254,7 @@ const democheck = ref(['value_2'])
               <!-- List item -->
               <div class="list-item">
                 <!-- Animated checkbox-->
-                <V-AnimatedCheckbox v-model="democheck" value="value_1" />
+                <VAnimatedCheckbox v-model="democheck" value="value_1" />
                 <div class="item-meta">
                   <span class="dark-inverted">Call Mr. Markstrom</span>
                   <span>Review the project initial wireframes</span>
@@ -262,7 +263,7 @@ const democheck = ref(['value_2'])
               <!-- List item -->
               <div class="list-item">
                 <!-- Animated checkbox-->
-                <V-AnimatedCheckbox v-model="democheck" value="value_2" />
+                <VAnimatedCheckbox v-model="democheck" value="value_2" />
                 <div class="item-meta">
                   <span class="dark-inverted">Finish wireframes</span>
                   <span>Make all requested changes and publish</span>
@@ -271,7 +272,7 @@ const democheck = ref(['value_2'])
               <!-- List item -->
               <div class="list-item">
                 <!-- Animated checkbox-->
-                <V-AnimatedCheckbox v-model="democheck" value="value_3" />
+                <VAnimatedCheckbox v-model="democheck" value="value_3" />
                 <div class="item-meta">
                   <span class="dark-inverted">Update timesheets</span>
                   <span>Update all the team timesheets</span>
@@ -280,7 +281,7 @@ const democheck = ref(['value_2'])
               <!-- List item -->
               <div class="list-item">
                 <!-- Animated checkbox-->
-                <V-AnimatedCheckbox v-model="democheck" value="value_4" />
+                <VAnimatedCheckbox v-model="democheck" value="value_4" />
                 <div class="item-meta">
                   <span class="dark-inverted">Request payout</span>
                   <span>send project invoice to client</span>
@@ -291,27 +292,27 @@ const democheck = ref(['value_2'])
         </div>
 
         <div class="dashboard-card">
-          <V-PlaceholderSection
+          <VPlaceholderSection
             title="Go Premium"
             subtitle="Unlock more features and business tools by going premium"
           >
             <template #image>
               <img
                 class="light-image"
-                src="/@src/assets/illustrations/placeholders/chart-guy.svg?url"
+                src="/@src/assets/illustrations/placeholders/chart-guy.svg"
                 alt=""
               />
               <img
                 class="dark-image"
-                src="/@src/assets/illustrations/placeholders/chart-guy-dark.svg?url"
+                src="/@src/assets/illustrations/placeholders/chart-guy-dark.svg"
                 alt=""
               />
             </template>
 
             <template #action>
-              <V-Button color="primary" elevated> Go Premium </V-Button>
+              <VButton color="primary" elevated> Go Premium </VButton>
             </template>
-          </V-PlaceholderSection>
+          </VPlaceholderSection>
         </div>
       </div>
     </div>

@@ -1,7 +1,8 @@
+import type { ChartOptions } from 'billboard.js'
 import { themeColors } from '/@src/utils/themeColors'
 import { radar } from 'billboard.js'
 
-export const options = {
+export const options: ChartOptions = {
   data: {
     x: 'x',
     columns: [
@@ -38,7 +39,7 @@ export const options = {
   },
   title: {
     text: 'Radar Chart',
-    position: 'top-left',
+    position: 'left',
     padding: {
       bottom: 20,
       right: 20,

@@ -8,15 +8,15 @@ import { pageTitle } from '/@src/state/sidebarLayoutState'
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-pageTitle.value = 'V-PhotosSwipe'
+pageTitle.value = 'VPhotosSwipe'
 useHead({
-  title: 'V-PhotosSwipe - Plugins - Vuero',
+  title: 'VPhotosSwipe - Plugins - Vuero',
 })
 </script>
 
 <template>
   <div class="page-content-inner">
-    <V-Breadcrumb
+    <VBreadcrumb
       with-icons
       separator="bullet"
       :items="[
@@ -34,7 +34,7 @@ useHead({
           label: 'Plugins',
         },
         {
-          label: 'V-PhotosSwipe',
+          label: 'VPhotosSwipe',
           to: { name: 'components-plugins-photos-swipe' },
         },
       ]"

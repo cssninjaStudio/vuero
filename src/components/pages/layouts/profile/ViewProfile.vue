@@ -5,10 +5,10 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 <template>
   <div class="profile-wrapper">
     <div class="profile-header has-text-centered">
-      <V-Avatar
+      <VAvatar
         size="xl"
         picture="/demo/avatars/8.jpg"
-        badge="/images/icons/flags/united-states-of-america.svg?url"
+        badge="/images/icons/flags/united-states-of-america.svg"
       />
 
       <h3 class="title is-4 is-narrow is-thin">Erik Kovalsky</h3>
@@ -70,7 +70,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                 <div class="experience-wrapper">
                   <div class="experience-item">
                     <img
-                      src="/demo/photos/brands/airbnb.svg?url"
+                      src="/demo/photos/brands/airbnb.svg"
                       alt=""
                       @error.once="
                         (event) => useViaPlaceholderError(event, '150x150')
@@ -88,7 +88,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                   </div>
                   <div class="experience-item">
                     <img
-                      src="/demo/photos/brands/facebook.svg?url"
+                      src="/demo/photos/brands/facebook.svg"
                       alt=""
                       @error.once="
                         (event) => useViaPlaceholderError(event, '150x150')
@@ -106,7 +106,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                   </div>
                   <div class="experience-item">
                     <img
-                      src="/demo/photos/brands/atlassian.svg?url"
+                      src="/demo/photos/brands/atlassian.svg"
                       alt=""
                       @error.once="
                         (event) => useViaPlaceholderError(event, '150x150')
@@ -124,7 +124,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                   </div>
                   <div class="experience-item">
                     <img
-                      src="/demo/photos/brands/github.svg?url"
+                      src="/demo/photos/brands/github.svg"
                       alt=""
                       @error.once="
                         (event) => useViaPlaceholderError(event, '150x150')
@@ -142,7 +142,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                   </div>
                 </div>
                 <div class="more-button has-text-centered">
-                  <V-Button light>View More</V-Button>
+                  <VButton light>View More</VButton>
                 </div>
               </div>
             </div>
@@ -158,8 +158,8 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
               <div class="section-content">
                 <div class="languages-wrapper">
                   <div class="languages-item">
-                    <V-IconWrap
-                      picture="/images/icons/flags/united-states-of-america.svg?url"
+                    <VIconWrap
+                      picture="/images/icons/flags/united-states-of-america.svg"
                     />
 
                     <div class="meta">
@@ -168,7 +168,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                     </div>
                   </div>
                   <div class="languages-item">
-                    <V-IconWrap picture="/images/icons/flags/france.svg?url" />
+                    <VIconWrap picture="/images/icons/flags/france.svg" />
 
                     <div class="meta">
                       <span class="dark-inverted">French</span>
@@ -176,7 +176,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                     </div>
                   </div>
                   <div class="languages-item">
-                    <V-IconWrap picture="/images/icons/flags/germany.svg?url" />
+                    <VIconWrap picture="/images/icons/flags/germany.svg" />
 
                     <div class="meta">
                       <span class="dark-inverted">German</span>
@@ -184,7 +184,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                     </div>
                   </div>
                   <div class="languages-item">
-                    <V-IconWrap picture="/images/icons/flags/spain.svg?url" />
+                    <VIconWrap picture="/images/icons/flags/spain.svg" />
 
                     <div class="meta">
                       <span class="dark-inverted">Spanish</span>
@@ -209,75 +209,75 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                 <div class="skills-wrapper">
                   <!--Skill-->
                   <div class="skills-item">
-                    <V-IconWrap picture="/images/icons/stacks/js.svg?url" />
+                    <VIconWrap picture="/images/icons/stacks/js.svg" />
 
                     <div class="skill-info">
                       <span class="dark-inverted">Javascript</span>
                       <span>7 years of experience</span>
                     </div>
                     <div class="people">
-                      <V-Avatar size="small" initials="BT" color="warning" />
-                      <V-Avatar size="small" picture="/demo/avatars/18.jpg" />
-                      <V-Avatar size="small" initials="JD" color="info" />
-                      <V-Avatar size="small" picture="/demo/avatars/7.jpg" />
-                      <V-Avatar size="small" initials="38" />
+                      <VAvatar size="small" initials="BT" color="warning" />
+                      <VAvatar size="small" picture="/demo/avatars/18.jpg" />
+                      <VAvatar size="small" initials="JD" color="info" />
+                      <VAvatar size="small" picture="/demo/avatars/7.jpg" />
+                      <VAvatar size="small" initials="38" />
                     </div>
                   </div>
 
                   <!--Skill-->
                   <div class="skills-item">
-                    <V-IconWrap icon="lnil lnil-burger-alt" placeholder />
+                    <VIconWrap icon="lnil lnil-burger-alt" placeholder />
 
                     <div class="skill-info">
                       <span class="dark-inverted">Product Management</span>
                       <span>4 years of experience</span>
                     </div>
                     <div class="people">
-                      <V-Avatar size="small" picture="/demo/avatars/21.jpg" />
-                      <V-Avatar size="small" initials="AT" color="success" />
-                      <V-Avatar size="small" picture="/demo/avatars/39.jpg" />
-                      <V-Avatar size="small" picture="/demo/avatars/23.jpg" />
-                      <V-Avatar size="small" initials="27" />
+                      <VAvatar size="small" picture="/demo/avatars/21.jpg" />
+                      <VAvatar size="small" initials="AT" color="success" />
+                      <VAvatar size="small" picture="/demo/avatars/39.jpg" />
+                      <VAvatar size="small" picture="/demo/avatars/23.jpg" />
+                      <VAvatar size="small" initials="27" />
                     </div>
                   </div>
 
                   <!--Skill-->
                   <div class="skills-item">
-                    <V-IconWrap picture="/images/icons/stacks/html5.svg?url" />
+                    <VIconWrap picture="/images/icons/stacks/html5.svg" />
 
                     <div class="skill-info">
                       <span class="dark-inverted">Html 5</span>
                       <span>10+ years of experience</span>
                     </div>
                     <div class="people">
-                      <V-Avatar size="small" picture="/demo/avatars/38.jpg" />
-                      <V-Avatar size="small" picture="/demo/avatars/11.jpg" />
-                      <V-Avatar size="small" initials="SC" color="h-purple" />
-                      <V-Avatar size="small" picture="/demo/avatars/13.jpg" />
-                      <V-Avatar size="small" initials="19" />
+                      <VAvatar size="small" picture="/demo/avatars/38.jpg" />
+                      <VAvatar size="small" picture="/demo/avatars/11.jpg" />
+                      <VAvatar size="small" initials="SC" color="h-purple" />
+                      <VAvatar size="small" picture="/demo/avatars/13.jpg" />
+                      <VAvatar size="small" initials="19" />
                     </div>
                   </div>
 
                   <!--Skill-->
                   <div class="skills-item">
-                    <V-IconWrap picture="/images/icons/stacks/css3.svg?url" />
+                    <VIconWrap picture="/images/icons/stacks/css3.svg" />
 
                     <div class="skill-info">
                       <span class="dark-inverted">CSS 3</span>
                       <span>10+ years of experience</span>
                     </div>
                     <div class="people">
-                      <V-Avatar size="small" picture="/demo/avatars/21.jpg" />
-                      <V-Avatar size="small" initials="SC" color="h-purple" />
-                      <V-Avatar size="small" picture="/demo/avatars/5.jpg" />
-                      <V-Avatar size="small" picture="/demo/avatars/7.jpg" />
-                      <V-Avatar size="small" initials="31" />
+                      <VAvatar size="small" picture="/demo/avatars/21.jpg" />
+                      <VAvatar size="small" initials="SC" color="h-purple" />
+                      <VAvatar size="small" picture="/demo/avatars/5.jpg" />
+                      <VAvatar size="small" picture="/demo/avatars/7.jpg" />
+                      <VAvatar size="small" initials="31" />
                     </div>
                   </div>
                 </div>
 
                 <div class="more-button has-text-centered">
-                  <V-Button light>View More</V-Button>
+                  <VButton light>View More</VButton>
                 </div>
               </div>
             </div>
@@ -295,10 +295,10 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                 <div class="recommendations-wrapper">
                   <!--Recommendation-->
                   <div class="recommendations-item">
-                    <V-Avatar
+                    <VAvatar
                       size="large"
                       picture="/demo/avatars/5.jpg"
-                      badge="/images/icons/flags/united-states-of-america.svg?url"
+                      badge="/images/icons/flags/united-states-of-america.svg"
                     />
                     <h3 class="dark-inverted">Project Manager</h3>
                     <p>
@@ -314,10 +314,10 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
                   <!--Recommendation-->
                   <div class="recommendations-item">
-                    <V-Avatar
+                    <VAvatar
                       size="large"
                       picture="/demo/avatars/18.jpg"
-                      badge="/images/icons/flags/united-states-of-america.svg?url"
+                      badge="/images/icons/flags/united-states-of-america.svg"
                     />
 
                     <h3 class="dark-inverted">UI/UX Designer</h3>
@@ -342,12 +342,12 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
             <div class="profile-card-section no-padding">
               <div class="section-title">
                 <h4>Notifications</h4>
-                <V-Control>
+                <VControl>
                   <label class="form-switch is-success">
                     <input type="checkbox" class="is-switch" checked />
                     <i aria-hidden="true"></i>
                   </label>
-                </V-Control>
+                </VControl>
               </div>
               <div class="section-content">
                 <div class="network-notifications">
@@ -377,9 +377,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                 <div class="tools-wrapper">
                   <!--Tool-->
                   <div class="tools-item">
-                    <V-IconWrap
-                      picture="/images/icons/stacks/illustrator.svg?url"
-                    />
+                    <VIconWrap picture="/images/icons/stacks/illustrator.svg" />
 
                     <div class="meta">
                       <span class="dark-inverted">Adobe Illustrator</span>
@@ -389,7 +387,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
                   <!--Tool-->
                   <div class="tools-item">
-                    <V-IconWrap picture="/demo/photos/brands/jira.svg?url" />
+                    <VIconWrap picture="/demo/photos/brands/jira.svg" />
 
                     <div class="meta">
                       <span class="dark-inverted">Jira Software</span>
@@ -399,7 +397,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
                   <!--Tool-->
                   <div class="tools-item">
-                    <V-IconWrap picture="/demo/photos/brands/office.svg?url" />
+                    <VIconWrap picture="/demo/photos/brands/office.svg" />
 
                     <div class="meta">
                       <span class="dark-inverted">MS Office</span>
@@ -422,9 +420,9 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                 <div class="people-wrapper">
                   <!--People-->
                   <a href="#" class="people-item">
-                    <V-Avatar
+                    <VAvatar
                       picture="/demo/avatars/25.jpg"
-                      badge="/images/icons/stacks/js.svg?url"
+                      badge="/images/icons/stacks/js.svg"
                     />
 
                     <div class="meta">
@@ -435,9 +433,9 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
                   <!--People-->
                   <a href="#" class="people-item">
-                    <V-Avatar
+                    <VAvatar
                       picture="/demo/avatars/29.jpg"
-                      badge="/images/icons/stacks/python.svg?url"
+                      badge="/images/icons/stacks/python.svg"
                     />
 
                     <div class="meta">
@@ -448,9 +446,9 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
                   <!--People-->
                   <a href="#" class="people-item">
-                    <V-Avatar
+                    <VAvatar
                       picture="/demo/avatars/38.jpg"
-                      badge="/images/icons/stacks/vuejs.svg?url"
+                      badge="/images/icons/stacks/vuejs.svg"
                     />
 
                     <div class="meta">
@@ -461,9 +459,9 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
                   <!--People-->
                   <a href="#" class="people-item">
-                    <V-Avatar
+                    <VAvatar
                       picture="/demo/avatars/28.jpg"
-                      badge="/images/icons/stacks/angular.svg?url"
+                      badge="/images/icons/stacks/angular.svg"
                     />
 
                     <div class="meta">
@@ -474,9 +472,9 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
                   <!--People-->
                   <a href="#" class="people-item">
-                    <V-Avatar
+                    <VAvatar
                       picture="/demo/avatars/19.jpg"
-                      badge="/images/icons/stacks/cplus.svg?url"
+                      badge="/images/icons/stacks/cplus.svg"
                     />
 
                     <div class="meta">

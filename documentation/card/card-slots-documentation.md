@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-Card Slots
+### VCard Slots
 
-Here is the full slots available for `<V-Card />` component:
+Here is the full slots available for `<VCard />` component:
 
 | Slot     | Properties                          | Description       |
 | -------- | ----------------------------------- | ----------------- |

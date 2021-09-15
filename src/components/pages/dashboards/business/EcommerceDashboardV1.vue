@@ -32,14 +32,14 @@ import {
   <div class="ecommerce-dashboard ecommerce-dashboard-v1">
     <!--Header-->
     <div class="dashboard-header">
-      <V-Avatar picture="/demo/avatars/8.jpg" size="large" />
+      <VAvatar picture="/demo/avatars/8.jpg" size="large" />
       <div class="start">
         <h3 class="dark-inverted">Welcome back, Erik Kovalsky</h3>
         <p>We're very happy to see you again on your dashboard.</p>
       </div>
       <div class="end">
-        <V-Button dark="3">View Reports</V-Button>
-        <V-Button color="primary" elevated>Manage Shop</V-Button>
+        <VButton dark="3">View Reports</VButton>
+        <VButton color="primary" elevated>Manage Shop</VButton>
       </div>
     </div>
 
@@ -49,13 +49,13 @@ import {
         <div class="dashboard-tile">
           <div class="tile-head">
             <h3>Total Sales</h3>
-            <V-IconBox color="info" rounded>
+            <VIconBox color="info" rounded>
               <i
                 aria-hidden="true"
                 class="iconify"
                 data-icon="feather:gift"
               ></i>
-            </V-IconBox>
+            </VIconBox>
           </div>
           <div class="dashboard-tile-inner">
             <div class="left">
@@ -80,13 +80,13 @@ import {
         <div class="dashboard-tile">
           <div class="tile-head">
             <h3>Total Income</h3>
-            <V-IconBox color="purple" rounded>
+            <VIconBox color="purple" rounded>
               <i
                 aria-hidden="true"
                 class="iconify"
                 data-icon="feather:dollar-sign"
               ></i>
-            </V-IconBox>
+            </VIconBox>
           </div>
           <div class="dashboard-tile-inner">
             <div class="left">
@@ -111,9 +111,9 @@ import {
         <div class="dashboard-tile">
           <div class="tile-head">
             <h3>New Orders</h3>
-            <V-IconBox color="green" rounded>
+            <VIconBox color="green" rounded>
               <i aria-hidden="true" class="iconify" data-icon="feather:box"></i>
-            </V-IconBox>
+            </VIconBox>
           </div>
           <div class="dashboard-tile-inner">
             <div class="left">
@@ -138,13 +138,13 @@ import {
         <div class="dashboard-tile">
           <div class="tile-head">
             <h3>Abandonned</h3>
-            <V-IconBox color="orange" rounded>
+            <VIconBox color="orange" rounded>
               <i
                 aria-hidden="true"
                 class="iconify"
                 data-icon="feather:shopping-cart"
               ></i>
-            </V-IconBox>
+            </VIconBox>
           </div>
           <div class="dashboard-tile-inner">
             <div class="left">
@@ -399,16 +399,16 @@ import {
         <!--Header-->
         <div class="table-header">
           <h3 class="dark-inverted">Recent Orders</h3>
-          <V-Field class="is-minimal-select">
-            <V-Control>
+          <VField class="is-minimal-select">
+            <VControl>
               <Multiselect
                 v-model="valueSingle"
                 :options="optionsSingle"
                 placeholder="Select an option"
                 :max-height="145"
               />
-            </V-Control>
-          </V-Field>
+            </VControl>
+          </VField>
         </div>
 
         <div class="flex-table">
@@ -423,7 +423,7 @@ import {
           </div>
 
           <!--Table item-->
-          <V-FlexTableRowOrders :rows="flexRowsOrders" />
+          <VFlexTableRowOrders :rows="flexRowsOrders" />
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
-### V-Loader
+### VLoader
 
-Vuero ships with a dead simple and versatile `<V-Loader />` component.
+Vuero ships with a dead simple and versatile `<VLoader />` component.
 This loader is mostly CSS based and gets activated by passing a `true` value
 to the `active` prop. You can change the loader size using the `size` prop.
 4 sizes are available: `small`, default, `large` and `xl`.
@@ -18,9 +18,9 @@ const toggleLoaders = () => {
 </script>
 
 <template>
-  <V-Loader size="large" :active="isLoaderActive">
+  <VLoader size="large" :active="isLoaderActive">
     <!-- content ... --->
-  </V-Loader>
+  </VLoader>
 </template>
 ```
 

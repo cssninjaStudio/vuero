@@ -8,14 +8,14 @@ You can use the `is-primary`, `is-success`, `is-info`,
 
 ```vue
 <template>
-  <V-Field addons>
-    <V-Control expanded>
+  <VField addons>
+    <VControl expanded>
       <input type="text" class="input" placeholder="Find a repository" />
-    </V-Control>
-    <V-Control>
+    </VControl>
+    <VControl>
       <a class="button is-primary">Search</a>
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -23,17 +23,17 @@ You can use the `is-primary`, `is-success`, `is-info`,
 
 <!--example-->
 
-<V-Field addons>
-  <V-Control expanded>
+<VField addons>
+  <VControl expanded>
     <input
         type="text"
         class="input"
         placeholder="Find a repository"
       />
-  </V-Control>
-  <V-Control>
+  </VControl>
+  <VControl>
     <a class="button is-primary">Search</a>
-  </V-Control>
-</V-Field>
+  </VControl>
+</VField>
 
 <!--/example-->

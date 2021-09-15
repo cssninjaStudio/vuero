@@ -10,15 +10,15 @@ const toggleLoaders = () => {
   isLoaderActive.value = !isLoaderActive.value
 }
 
-pageTitle.value = 'V-Loader'
+pageTitle.value = 'VLoader'
 useHead({
-  title: 'V-Loader - Elements - Vuero',
+  title: 'VLoader - Elements - Vuero',
 })
 </script>
 
 <template>
   <div class="page-content-inner">
-    <V-Breadcrumb
+    <VBreadcrumb
       with-icons
       separator="bullet"
       :items="[
@@ -33,7 +33,7 @@ useHead({
           to: { name: 'elements' },
         },
         {
-          label: 'V-Loader',
+          label: 'VLoader',
           to: { name: 'elements-loader' },
         },
       ]"
@@ -45,18 +45,18 @@ useHead({
         <VLoaderDocumentation />
 
         <div class="mb-4">
-          <V-Button color="primary" elevated @click="toggleLoaders">
+          <VButton color="primary" elevated @click="toggleLoaders">
             <span v-if="!isLoaderActive">Show Loaders</span>
             <span v-else>Hide Loaders</span>
-          </V-Button>
+          </VButton>
         </div>
 
         <div class="columns is-multiline">
           <div class="column is-4">
-            <V-Loader size="small" :active="isLoaderActive" grey>
-              <V-CardAction
+            <VLoader size="small" :active="isLoaderActive" grey>
+              <VCardAction
                 avatar="/demo/avatars/19.jpg"
-                badge="/images/icons/flags/germany.svg?url"
+                badge="/images/icons/flags/germany.svg"
                 title="Greta K."
                 subtitle="Sales Manager"
               >
@@ -65,14 +65,14 @@ useHead({
                   Quibusnam praeteritis? At multis se probavit. Quoniam, si dis
                   placet, ab Epicuro loqui discimus. Et ille ridens.
                 </p>
-              </V-CardAction>
-            </V-Loader>
+              </VCardAction>
+            </VLoader>
           </div>
           <div class="column is-4">
-            <V-Loader card="regular" size="small" :active="isLoaderActive">
-              <V-CardAction
+            <VLoader card="regular" size="small" :active="isLoaderActive">
+              <VCardAction
                 avatar="/demo/avatars/19.jpg"
-                badge="/images/icons/flags/germany.svg?url"
+                badge="/images/icons/flags/germany.svg"
                 title="Greta K."
                 subtitle="Sales Manager"
               >
@@ -81,19 +81,19 @@ useHead({
                   Quibusnam praeteritis? At multis se probavit. Quoniam, si dis
                   placet, ab Epicuro loqui discimus. Et ille ridens.
                 </p>
-              </V-CardAction>
-            </V-Loader>
+              </VCardAction>
+            </VLoader>
           </div>
           <div class="column is-4">
-            <V-Loader
+            <VLoader
               card="regular"
               size="small"
               :active="isLoaderActive"
               translucent
             >
-              <V-CardAction
+              <VCardAction
                 avatar="/demo/avatars/19.jpg"
-                badge="/images/icons/flags/germany.svg?url"
+                badge="/images/icons/flags/germany.svg"
                 title="Greta K."
                 subtitle="Sales Manager"
               >
@@ -102,14 +102,14 @@ useHead({
                   Quibusnam praeteritis? At multis se probavit. Quoniam, si dis
                   placet, ab Epicuro loqui discimus. Et ille ridens.
                 </p>
-              </V-CardAction>
-            </V-Loader>
+              </VCardAction>
+            </VLoader>
           </div>
           <div class="column is-4">
-            <V-Loader card="smooth" :active="isLoaderActive">
-              <V-CardAction
+            <VLoader card="smooth" :active="isLoaderActive">
+              <VCardAction
                 avatar="/demo/avatars/19.jpg"
-                badge="/images/icons/flags/germany.svg?url"
+                badge="/images/icons/flags/germany.svg"
                 title="Greta K."
                 subtitle="Sales Manager"
                 radius="smooth"
@@ -119,14 +119,14 @@ useHead({
                   Quibusnam praeteritis? At multis se probavit. Quoniam, si dis
                   placet, ab Epicuro loqui discimus. Et ille ridens.
                 </p>
-              </V-CardAction>
-            </V-Loader>
+              </VCardAction>
+            </VLoader>
           </div>
           <div class="column is-4">
-            <V-Loader card="rounded" size="large" :active="isLoaderActive">
-              <V-CardAction
+            <VLoader card="rounded" size="large" :active="isLoaderActive">
+              <VCardAction
                 avatar="/demo/avatars/19.jpg"
-                badge="/images/icons/flags/germany.svg?url"
+                badge="/images/icons/flags/germany.svg"
                 title="Greta K."
                 subtitle="Sales Manager"
                 radius="rounded"
@@ -136,14 +136,14 @@ useHead({
                   Quibusnam praeteritis? At multis se probavit. Quoniam, si dis
                   placet, ab Epicuro loqui discimus. Et ille ridens.
                 </p>
-              </V-CardAction>
-            </V-Loader>
+              </VCardAction>
+            </VLoader>
           </div>
           <div class="column is-4">
-            <V-Loader card="rounded" size="xl" :active="isLoaderActive">
-              <V-CardAction
+            <VLoader card="rounded" size="xl" :active="isLoaderActive">
+              <VCardAction
                 avatar="/demo/avatars/19.jpg"
-                badge="/images/icons/flags/germany.svg?url"
+                badge="/images/icons/flags/germany.svg"
                 title="Greta K."
                 subtitle="Sales Manager"
                 radius="rounded"
@@ -153,8 +153,8 @@ useHead({
                   Quibusnam praeteritis? At multis se probavit. Quoniam, si dis
                   placet, ab Epicuro loqui discimus. Et ille ridens.
                 </p>
-              </V-CardAction>
-            </V-Loader>
+              </VCardAction>
+            </VLoader>
           </div>
         </div>
 

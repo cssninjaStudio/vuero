@@ -36,9 +36,11 @@ export const tasks = reactive([
         picture: '/demo/avatars/12.jpg',
       },
       {
+        color: undefined,
         picture: '/demo/avatars/26.jpg',
       },
       {
+        color: undefined,
         picture: '/demo/avatars/19.jpg',
       },
     ],

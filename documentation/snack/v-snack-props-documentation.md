@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-Snack Props
+### VSnack Props
 
-Here is the full props available for `<V-Snack />` component:
+Here is the full props available for `<VSnack />` component:
 
 | Props                   | Default                                                            | Type                                              |
 | ----------------------- | ------------------------------------------------------------------ | ------------------------------------------------- |

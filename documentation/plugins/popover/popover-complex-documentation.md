@@ -45,7 +45,7 @@ const user = {
 
 <template>
   <tippy class="has-help-cursor" interactive :offset="[0, 30]">
-    <V-Avatar :picture="user.avatar" />
+    <VAvatar :picture="user.avatar" />
     <template #content>
       <UserPopoverContent :user="user" />
     </template>
@@ -59,21 +59,21 @@ const user = {
 
 <div>
   <tippy class="mx-1" interactive :offset="[0, 30]">
-    <V-Avatar :picture="frontmatter.user1.avatar" />
+    <VAvatar :picture="frontmatter.user1.avatar" />
     <template #content>
       <UserPopoverContent :user="frontmatter.user1" />
     </template>
   </tippy>
 
   <tippy class="mx-1" interactive :offset="[0, 30]">
-    <V-Avatar :picture="frontmatter.user2.avatar" />
+    <VAvatar :picture="frontmatter.user2.avatar" />
     <template #content>
       <UserPopoverContent :user="frontmatter.user2" />
     </template>
   </tippy>
 
   <tippy class="mx-1" interactive :offset="[0, 30]">
-    <V-Avatar :picture="frontmatter.user3.avatar" />
+    <VAvatar :picture="frontmatter.user3.avatar" />
     <template #content>
       <UserPopoverContent :user="frontmatter.user3" />
     </template>

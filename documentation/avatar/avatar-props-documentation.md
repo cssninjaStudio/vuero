@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-Avatar Props
+### VAvatar Props
 
-Here is the full props available for `<V-Avatar />` component:
+Here is the full props available for `<VAvatar />` component:
 
 | Props       | Default                                                            | Type                                                                                                                |
 | ----------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- |

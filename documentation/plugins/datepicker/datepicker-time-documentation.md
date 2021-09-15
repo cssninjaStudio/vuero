@@ -5,7 +5,7 @@ state:
 
 ### DateTimepicker
 
-`<V-Calendar />` can be turned into a date range picker if needed. Check the
+`<VCalendar />` can be turned into a date range picker if needed. Check the
 code example for more details about usage.
 
 <!--code-->
@@ -18,15 +18,15 @@ const date = ref(new Date())
 </script>
 
 <template>
-  <v-date-picker v-model="date" mode="dateTime">
+  <Vdate-picker v-model="date" mode="dateTime">
     <template #default="{ inputValue, inputEvents }">
-      <V-Field>
-        <V-Control>
+      <VField>
+        <VControl>
           <input class="input" :value="inputValue" v-on="inputEvents" />
-        </V-Control>
-      </V-Field>
+        </VControl>
+      </VField>
     </template>
-  </v-date-picker>
+  </Vdate-picker>
 </template>
 ```
 
@@ -34,14 +34,14 @@ const date = ref(new Date())
 
 <!--example-->
 
-<v-date-picker v-model="frontmatter.state.date" color="green" mode="dateTime">
+<Vdate-picker v-model="frontmatter.state.date" color="green" mode="dateTime">
   <template #default="{ inputValue, inputEvents }">
-    <V-Field>
-      <V-Control>
+    <VField>
+      <VControl>
         <input class="input" :value="inputValue" v-on="inputEvents" />
-      </V-Control>
-    </V-Field>
+      </VControl>
+    </VField>
   </template>
-</v-date-picker>
+</Vdate-picker>
 
 <!--/example-->

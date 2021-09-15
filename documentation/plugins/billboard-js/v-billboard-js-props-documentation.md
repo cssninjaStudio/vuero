@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-BillboardJS Props
+### VBillboardJS Props
 
-Here is the full props available for `<V-BillboardJS />` component:
+Here is the full props available for `<VBillboardJS />` component:
 
 | Props   | Default                            | Type                                                                                         |
 | ------- | ---------------------------------- | -------------------------------------------------------------------------------------------- |

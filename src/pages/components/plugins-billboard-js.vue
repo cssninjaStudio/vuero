@@ -11,15 +11,15 @@ import { pageTitle } from '/@src/state/sidebarLayoutState'
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-pageTitle.value = 'V-BillboardJS'
+pageTitle.value = 'VBillboardJS'
 useHead({
-  title: 'V-BillboardJS - Plugins - Vuero',
+  title: 'VBillboardJS - Plugins - Vuero',
 })
 </script>
 
 <template>
   <div class="page-content-inner">
-    <V-Breadcrumb
+    <VBreadcrumb
       with-icons
       separator="bullet"
       :items="[
@@ -37,7 +37,7 @@ useHead({
           label: 'Plugins',
         },
         {
-          label: 'V-BillboardJS',
+          label: 'VBillboardJS',
           to: { name: 'components-plugins-billboard-js' },
         },
       ]"
@@ -53,8 +53,8 @@ useHead({
 
         <div class="columns is-mutliline">
           <div class="column is-6">
-            <V-Card>
-              <V-BillboardJS
+            <VCard>
+              <VBillboardJS
                 :options="{
                   data: {
                     x: 'x',
@@ -92,7 +92,7 @@ useHead({
                   },
                   title: {
                     text: 'Radar Chart',
-                    position: 'top-left',
+                    position: 'left',
                     padding: {
                       bottom: 20,
                       right: 20,
@@ -105,12 +105,12 @@ useHead({
                   },
                 }"
               />
-            </V-Card>
+            </VCard>
           </div>
           <div class="column is-6">
-            <V-Card type="smooth">
-              <V-BillboardJS :options="splineSimple.options" />
-            </V-Card>
+            <VCard type="smooth">
+              <VBillboardJS :options="splineSimple.options" />
+            </VCard>
           </div>
         </div>
 

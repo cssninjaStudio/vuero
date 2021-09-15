@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-Message Props
+### VMessage Props
 
-Here is the full props available for `<V-Message />` component:
+Here is the full props available for `<VMessage />` component:
 
 | Props    | Default                                       | Type                                                       |
 | -------- | --------------------------------------------- | ---------------------------------------------------------- |

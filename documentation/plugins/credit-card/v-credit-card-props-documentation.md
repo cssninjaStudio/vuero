@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-CreditCard Props
+### VCreditCard Props
 
-Here is the full props available for `<V-CreditCard />` component:
+Here is the full props available for `<VCreditCard />` component:
 
 | Props   | Default                                              | Type                                                                              |
 | ------- | ---------------------------------------------------- | --------------------------------------------------------------------------------- |

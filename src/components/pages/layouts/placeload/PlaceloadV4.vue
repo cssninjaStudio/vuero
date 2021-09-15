@@ -15,28 +15,28 @@ const optionsSingle = [
 <template>
   <div>
     <div class="user-grid-toolbar">
-      <V-Control icon="feather:search">
+      <VControl icon="feather:search">
         <input v-model="filters" class="input" placeholder="Search..." />
-      </V-Control>
+      </VControl>
 
-      <V-Buttons>
-        <V-Field class="v-hidden-mobile">
-          <V-Control>
+      <VButtons>
+        <VField class="v-hidden-mobile">
+          <VControl>
             <Multiselect
               v-model="valueSingle"
               :options="optionsSingle"
               :max-height="145"
               placeholder="Select an option"
             />
-          </V-Control>
-        </V-Field>
-        <V-Button color="primary" raised>
+          </VControl>
+        </VField>
+        <VButton color="primary" raised>
           <span class="icon">
             <i aria-hidden="true" class="fas fa-plus"></i>
           </span>
           <span>Add User</span>
-        </V-Button>
-      </V-Buttons>
+        </VButton>
+      </VButtons>
     </div>
 
     <div class="tile-grid tile-grid-v1">
@@ -46,8 +46,8 @@ const optionsSingle = [
         <div v-for="key in 30" :key="key" class="column is-4">
           <div class="tile-grid-item">
             <div class="tile-grid-item-inner placeload-wrap is-flex">
-              <V-PlaceloadAvatar size="medium" />
-              <V-PlaceloadText width="80%" last-line-width="60%" class="mx-2" />
+              <VPlaceloadAvatar size="medium" />
+              <VPlaceloadText width="80%" last-line-width="60%" class="mx-2" />
             </div>
           </div>
         </div>

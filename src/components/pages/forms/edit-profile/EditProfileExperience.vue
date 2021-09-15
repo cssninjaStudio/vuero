@@ -60,22 +60,22 @@ const onSave = async () => {
         </div>
         <div class="right">
           <div class="buttons">
-            <V-Button
+            <VButton
               :to="{ name: 'sidebar-layouts-profile-view' }"
               icon="lnir lnir-arrow-left rem-100"
               light
               dark-outlined
             >
               Go Back
-            </V-Button>
-            <V-Button
+            </VButton>
+            <VButton
               color="primary"
               raised
               :loading="isLoading"
               @click="onSave"
             >
               Save Changes
-            </V-Button>
+            </VButton>
           </div>
         </div>
       </div>
@@ -98,7 +98,7 @@ const onSave = async () => {
             class="setting-form"
             @submit.prevent="addExperience"
           >
-            <V-FilePond
+            <VFilePond
               size="tiny"
               class="profile-filepond"
               name="profile_filepond"
@@ -120,22 +120,22 @@ const onSave = async () => {
             <div class="field-wrap">
               <div class="columns is-multiline">
                 <div class="column is-12">
-                  <v-date-picker
+                  <Vdate-picker
                     v-model="range"
                     is-range
                     color="green"
                     trim-weeks
                   >
                     <template #default="{ inputValue, inputEvents }">
-                      <V-Field addons class="has-addons-fullwidth">
-                        <V-Control>
+                      <VField addons class="has-addons-fullwidth">
+                        <VControl>
                           <input
                             :value="inputValue.start"
                             class="input"
                             v-on="inputEvents.start"
                           />
-                        </V-Control>
-                        <V-Control nogrow>
+                        </VControl>
+                        <VControl nogrow>
                           <div class="button">
                             <i
                               aria-hidden="true"
@@ -143,50 +143,50 @@ const onSave = async () => {
                               data-icon="feather:arrow-right"
                             ></i>
                           </div>
-                        </V-Control>
-                        <V-Control>
+                        </VControl>
+                        <VControl>
                           <input
                             :value="inputValue.end"
                             class="input"
                             v-on="inputEvents.end"
                           />
-                        </V-Control>
-                      </V-Field>
+                        </VControl>
+                      </VField>
                     </template>
-                  </v-date-picker>
+                  </Vdate-picker>
                 </div>
                 <div class="column is-6">
-                  <V-Field>
-                    <V-Control icon="feather:box">
+                  <VField>
+                    <VControl icon="feather:box">
                       <input
                         type="text"
                         class="input"
                         placeholder="Company Name"
                         autocomplete="organization"
                       />
-                    </V-Control>
-                  </V-Field>
+                    </VControl>
+                  </VField>
                 </div>
                 <div class="column is-6">
-                  <V-Field>
-                    <V-Control icon="feather:briefcase">
+                  <VField>
+                    <VControl icon="feather:briefcase">
                       <input
                         type="text"
                         class="input"
                         placeholder="Job Title"
                         autocomplete="organization-title"
                       />
-                    </V-Control>
-                  </V-Field>
+                    </VControl>
+                  </VField>
                 </div>
                 <div class="column is-12">
-                  <V-Field>
-                    <V-Control>
-                      <V-Button color="primary" raised fullwidth>
+                  <VField>
+                    <VControl>
+                      <VButton color="primary" raised fullwidth>
                         Add Work Experience
-                      </V-Button>
-                    </V-Control>
-                  </V-Field>
+                      </VButton>
+                    </VControl>
+                  </VField>
                 </div>
               </div>
             </div>
@@ -196,7 +196,7 @@ const onSave = async () => {
             <!--Experience Item-->
             <div class="setting-item">
               <img
-                src="/demo/photos/brands/airbnb.svg?url"
+                src="/demo/photos/brands/airbnb.svg"
                 alt=""
                 @error.once="(event) => useViaPlaceholderError(event, '50x50')"
               />
@@ -217,7 +217,7 @@ const onSave = async () => {
             <!--Experience Item-->
             <div class="setting-item">
               <img
-                src="/demo/photos/brands/facebook.svg?url"
+                src="/demo/photos/brands/facebook.svg"
                 alt=""
                 @error.once="(event) => useViaPlaceholderError(event, '50x50')"
               />
@@ -238,7 +238,7 @@ const onSave = async () => {
             <!--Experience Item-->
             <div class="setting-item">
               <img
-                src="/demo/photos/brands/atlassian.svg?url"
+                src="/demo/photos/brands/atlassian.svg"
                 alt=""
                 @error.once="(event) => useViaPlaceholderError(event, '50x50')"
               />
@@ -259,7 +259,7 @@ const onSave = async () => {
             <!--Experience Item-->
             <div class="setting-item">
               <img
-                src="/demo/photos/brands/github.svg?url"
+                src="/demo/photos/brands/github.svg"
                 alt=""
                 @error.once="(event) => useViaPlaceholderError(event, '50x50')"
               />
@@ -280,7 +280,7 @@ const onSave = async () => {
             <!--Experience Item-->
             <div class="setting-item">
               <img
-                src="/demo/photos/brands/slack.svg?url"
+                src="/demo/photos/brands/slack.svg"
                 alt=""
                 @error.once="(event) => useViaPlaceholderError(event, '50x50')"
               />
@@ -301,7 +301,7 @@ const onSave = async () => {
             <!--Experience Item-->
             <div class="setting-item">
               <img
-                src="/demo/photos/brands/gitlab.svg?url"
+                src="/demo/photos/brands/gitlab.svg"
                 alt=""
                 @error.once="(event) => useViaPlaceholderError(event, '50x50')"
               />
@@ -321,14 +321,14 @@ const onSave = async () => {
 
             <!--Create Item-->
             <div class="setting-item is-create">
-              <V-IconWrap icon="lnil lnil-circle-plus" />
+              <VIconWrap icon="lnil lnil-circle-plus" />
 
               <div class="meta">
                 <span class="dark-inverted">New Item</span>
                 <span>Add a new work experience item</span>
               </div>
               <div class="end">
-                <V-Button
+                <VButton
                   raised
                   dark-outlined
                   icon="fas fa-plus"
@@ -336,7 +336,7 @@ const onSave = async () => {
                   @click="isUploading = true"
                 >
                   Add
-                </V-Button>
+                </VButton>
               </div>
             </div>
           </template>

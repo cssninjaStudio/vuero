@@ -19,7 +19,7 @@ const props = withDefaults(
   <div class="widget-content">
     <div class="sender-block">
       <div class="sender-block-inner">
-        <V-Avatar :picture="props.picture" />
+        <VAvatar :picture="props.picture" />
         <div class="meta">
           <span>{{ props.user }} just sent you an inbox message.</span>
         </div>

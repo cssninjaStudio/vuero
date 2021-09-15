@@ -1,18 +1,18 @@
 <template>
-  <V-Dropdown right spaced class="user-dropdown profile-dropdown">
+  <VDropdown right spaced class="user-dropdown profile-dropdown">
     <template #button="{ toggle }">
       <a
         class="is-trigger dropdown-trigger"
         aria-haspopup="true"
         @click="toggle"
       >
-        <V-Avatar picture="/demo/avatars/8.jpg" />
+        <VAvatar picture="/demo/avatars/8.jpg" />
       </a>
     </template>
 
     <template #content>
       <div class="dropdown-head">
-        <V-Avatar size="large" picture="/demo/avatars/8.jpg" />
+        <VAvatar size="large" picture="/demo/avatars/8.jpg" />
 
         <div class="meta">
           <span>Erik Kovalsky</span>
@@ -67,7 +67,7 @@
       <hr class="dropdown-divider" />
 
       <div class="dropdown-item is-button">
-        <V-Button
+        <VButton
           class="logout-button"
           icon="feather:log-out"
           color="primary"
@@ -76,8 +76,8 @@
           fullwidth
         >
           Logout
-        </V-Button>
+        </VButton>
       </div>
     </template>
-  </V-Dropdown>
+  </VDropdown>
 </template>

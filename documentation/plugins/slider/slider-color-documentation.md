@@ -19,11 +19,11 @@ const value = ref(0)
 </script>
 
 <template>
-  <V-Field class="has-rounded-tooltip is-slider-info">
-    <V-Control>
+  <VField class="has-rounded-tooltip is-slider-info">
+    <VControl>
       <Slider v-model="value" />
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -33,32 +33,32 @@ const value = ref(0)
 
 <div class="columns is-multiline">
   <div class="column is-6">
-    <V-Field class="pt-6 px-4 has-rounded-tooltip is-slider-info">
-      <V-Control>
+    <VField class="pt-6 px-4 has-rounded-tooltip is-slider-info">
+      <VControl>
         <Slider v-model="frontmatter.state.value" />
-      </V-Control>
-    </V-Field>
+      </VControl>
+    </VField>
   </div>
   <div class="column is-6">
-    <V-Field class="pt-6 px-4 has-rounded-tooltip is-slider-success">
-      <V-Control>
+    <VField class="pt-6 px-4 has-rounded-tooltip is-slider-success">
+      <VControl>
         <Slider v-model="frontmatter.state.value" />
-      </V-Control>
-    </V-Field>
+      </VControl>
+    </VField>
   </div>
   <div class="column is-6">
-    <V-Field class="pt-6 px-4 has-rounded-tooltip is-slider-warning">
-      <V-Control>
+    <VField class="pt-6 px-4 has-rounded-tooltip is-slider-warning">
+      <VControl>
         <Slider v-model="frontmatter.state.value" />
-      </V-Control>
-    </V-Field>
+      </VControl>
+    </VField>
   </div>
   <div class="column is-6">
-    <V-Field class="pt-6 px-4 has-rounded-tooltip is-slider-danger">
-      <V-Control>
+    <VField class="pt-6 px-4 has-rounded-tooltip is-slider-danger">
+      <VControl>
         <Slider v-model="frontmatter.state.value" />
-      </V-Control>
-    </V-Field>
+      </VControl>
+    </VField>
   </div>
 </div>
 

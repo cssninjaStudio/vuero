@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-CardMedia Props
+### VCardMedia Props
 
-Here is the full props available for `<V-CardMedia />` component:
+Here is the full props available for `<VCardMedia />` component:
 
 | Props                   | Default                                                               | Type            |
 | ----------------------- | --------------------------------------------------------------------- | --------------- |

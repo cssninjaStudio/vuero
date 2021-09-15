@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-Modal Slots
+### VModal Slots
 
-Here is the full slots available for `<V-Modal />` component:
+Here is the full slots available for `<VModal />` component:
 
 | Slot                      | Properties                          | Description         |
 | ------------------------- | ----------------------------------- | ------------------- |

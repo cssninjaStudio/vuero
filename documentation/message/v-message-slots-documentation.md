@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-Message Slots
+### VMessage Slots
 
-Here is the full slots available for `<V-Message />` component:
+Here is the full slots available for `<VMessage />` component:
 
 | Slot                       | Properties                          | Description     |
 | -------------------------- | ----------------------------------- | --------------- |

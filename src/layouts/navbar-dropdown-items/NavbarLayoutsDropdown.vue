@@ -14,14 +14,14 @@ watch([() => route.fullPath, dropdownElement], () => {
 </script>
 
 <template>
-  <V-Dropdown ref="dropdownElement" class="has-mega-dropdown" modern spaced>
+  <VDropdown ref="dropdownElement" class="has-mega-dropdown" modern spaced>
     <template #button="{ toggle }">
       <div
         class="dropdown-trigger is-trigger"
         aria-haspopup="true"
         aria-controls="dropdown-menu"
       >
-        <V-Button
+        <VButton
           aria-haspopup="true"
           aria-controls="dropdown-menu"
           icon-caret="feather:chevron-down"
@@ -29,7 +29,7 @@ watch([() => route.fullPath, dropdownElement], () => {
           @click="toggle"
         >
           Layouts
-        </V-Button>
+        </VButton>
       </div>
     </template>
 
@@ -979,7 +979,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                   <div class="meta">
                     <span>Placeload V1</span>
-                    <V-Tag
+                    <VTag
                       label="v1.2"
                       color="primary"
                       outlined
@@ -997,7 +997,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                   <div class="meta">
                     <span>Placeload V2</span>
-                    <V-Tag
+                    <VTag
                       label="v1.2"
                       color="primary"
                       outlined
@@ -1015,7 +1015,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                   <div class="meta">
                     <span>Placeload V3</span>
-                    <V-Tag
+                    <VTag
                       label="v1.2"
                       color="primary"
                       outlined
@@ -1033,7 +1033,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                   <div class="meta">
                     <span>Placeload V4</span>
-                    <V-Tag
+                    <VTag
                       label="v1.2"
                       color="primary"
                       outlined
@@ -1048,5 +1048,5 @@ watch([() => route.fullPath, dropdownElement], () => {
         </div>
       </div>
     </template>
-  </V-Dropdown>
+  </VDropdown>
 </template>

@@ -30,7 +30,7 @@ const accept = async () => {
       <div class="wrapper-inner">
         <div class="action-box">
           <div class="box-content">
-            <V-Avatar
+            <VAvatar
               size="big"
               picture="/demo/avatars/16.jpg"
               badge="/demo/photos/apps/9.png"
@@ -54,21 +54,21 @@ const accept = async () => {
             <div class="people-wrap">
               <div class="people">
                 <tippy class="has-help-cursor" interactive placement="bottom">
-                  <V-Avatar size="small" picture="/demo/avatars/21.jpg" />
+                  <VAvatar size="small" picture="/demo/avatars/21.jpg" />
                   <template #content>
                     <UserPopoverContent :user="popovers.user21" />
                   </template>
                 </tippy>
 
                 <tippy class="has-help-cursor" interactive placement="bottom">
-                  <V-Avatar size="small" color="h-purple" initials="SC" />
+                  <VAvatar size="small" color="h-purple" initials="SC" />
                   <template #content>
                     <UserPopoverContent :user="popovers.user120" />
                   </template>
                 </tippy>
 
                 <tippy class="has-help-cursor" interactive placement="bottom">
-                  <V-Avatar size="small" picture="/demo/avatars/39.jpg" />
+                  <VAvatar size="small" picture="/demo/avatars/39.jpg" />
                   <template #content>
                     <UserPopoverContent :user="popovers.user39" />
                   </template>
@@ -79,15 +79,15 @@ const accept = async () => {
               </div>
             </div>
             <div class="buttons">
-              <V-Button dark-outlined> Decline </V-Button>
-              <V-Button
+              <VButton dark-outlined> Decline </VButton>
+              <VButton
                 color="primary"
                 :loading="isLoading"
                 raised
                 @click="accept"
               >
                 Accept
-              </V-Button>
+              </VButton>
             </div>
           </div>
         </div>
@@ -101,48 +101,48 @@ const accept = async () => {
           </div>
 
           <div class="action-list">
-            <V-Block title="Project Summary">
+            <VBlock title="Project Summary">
               <p>
                 Please read the project summary. You'll find it in your inbox
               </p>
 
               <template #icon>
-                <V-IconWrap
+                <VIconWrap
                   icon="feather:check"
                   dark="3"
                   dark-primary
                   dark-card-bordered
                 />
               </template>
-            </V-Block>
+            </VBlock>
 
-            <V-Block title="UI Review">
+            <VBlock title="UI Review">
               <p>Please review the latest wireframs the team has provided</p>
 
               <template #icon>
-                <V-IconWrap
+                <VIconWrap
                   icon="feather:check"
                   dark="3"
                   dark-primary
                   dark-card-bordered
                 />
               </template>
-            </V-Block>
+            </VBlock>
 
-            <V-Block title="Schedule">
+            <VBlock title="Schedule">
               <p>
                 Please schedule a meeting with the team so they can ramp you up.
               </p>
 
               <template #icon>
-                <V-IconWrap
+                <VIconWrap
                   icon="feather:check"
                   dark="3"
                   dark-primary
                   dark-card-bordered
                 />
               </template>
-            </V-Block>
+            </VBlock>
           </div>
         </div>
       </div>

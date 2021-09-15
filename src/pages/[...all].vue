@@ -15,9 +15,6 @@ import { onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 
-// Here we load a svg as component, this svg use css variables to set the color
-import ErrorSvg from '/@src/assets/illustrations/placeholders/error-1.svg?component'
-
 const route = useRoute()
 const { t } = useI18n()
 
@@ -83,16 +80,16 @@ zh-CN:
       <div class="error-wrapper">
         <div class="error-inner has-text-centered">
           <div class="bg-number">404</div>
-          <ErrorSvg />
+          <SVGErrorPlaceholder />
 
           <h3>{{ t('page-heading') }}</h3>
           <p>
             {{ t('page-body') }}
           </p>
           <div class="button-wrap">
-            <V-Button color="primary" elevated :to="{ name: 'index' }">
+            <VButton color="primary" elevated :to="{ name: 'index' }">
               {{ t('back-button') }}
-            </V-Button>
+            </VButton>
           </div>
         </div>
       </div>

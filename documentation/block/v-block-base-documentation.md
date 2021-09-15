@@ -1,25 +1,25 @@
-### V-Block
+### VBlock
 
-Vuero provides a versatile flex block media component named `<V-Block />`.
-V-Block has 2 named slots. One for the `icon` element, which can
+Vuero provides a versatile flex block media component named `<VBlock />`.
+VBlock has 2 named slots. One for the `icon` element, which can
 be whatever you want, and one for the `action`.
 
 <!--code-->
 
 ```vue
 <template>
-  <V-Block title="Anna B." subtitle="UX Designer">
+  <VBlock title="Anna B." subtitle="UX Designer">
     <template #icon>
-      <V-Avatar
+      <VAvatar
         size="medium"
         picture="/demo/avatars/19.jpg"
         badge="/images/icons/flags/germany.svg"
       />
     </template>
     <template #action>
-      <V-Button color="primary" elevated>View</V-Button>
+      <VButton color="primary" elevated>View</VButton>
     </template>
-  </V-Block>
+  </VBlock>
 </template>
 ```
 
@@ -30,18 +30,18 @@ be whatever you want, and one for the `action`.
 <div class="field">
   <div class="control">
     <div class="l-card">
-      <V-Block title="Anna B." subtitle="UX Designer">
+      <VBlock title="Anna B." subtitle="UX Designer">
         <template #icon>
-          <V-Avatar 
+          <VAvatar 
             size="medium" 
             picture="/demo/avatars/19.jpg" 
             badge="/images/icons/flags/germany.svg" 
           />
         </template>
         <template #action>
-          <V-Button color="primary" elevated>View</V-Button>
+          <VButton color="primary" elevated>View</VButton>
         </template>
-      </V-Block>
+      </VBlock>
     </div>
   </div>
 </div>

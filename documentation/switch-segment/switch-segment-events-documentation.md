@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-SwitchSegment Events
+### VSwitchSegment Events
 
-Here is the full events available for `<V-SwitchSegment />` component:
+Here is the full events available for `<VSwitchSegment />` component:
 
 | Event              | Callback                                                    | Description                                                                      |
 | ------------------ | ----------------------------------------------------------- | -------------------------------------------------------------------------------- |

@@ -345,7 +345,7 @@ export const projects = [
     team: [
       {
         id: 119,
-        picture: null,
+        picture: undefined,
         name: 'Sarah Connor.',
         initials: 'SC',
         color: 'h-purple',

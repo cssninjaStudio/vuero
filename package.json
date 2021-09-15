@@ -49,11 +49,12 @@
     "lint:doc:fix": "run-s lint:doc:fix:*",
     "lint:doc:fix:eslint": "eslint --fix --ext .md ./documentation",
     "lint:doc:fix:prettier": "prettier --write \"./documentation/**/*.(md)\"",
-    "test": "run-p test:lint",
+    "test": "run-p test:lint test:tsc",
     "test:tsc": "vue-tsc --noEmit",
     "test:lint": "run-p lint:eslint lint:stylelint lint:prettier",
-    "test:e2e": "cypress run",
+    "test:e2e": "echo \"[warning] no e2e test implemented yet\"",
     "test:unit": "echo \"[warning] no unit test implemented yet\"",
+    "cypress": "cypress",
     "commit": "commit",
     "release": "run-s test build release:*",
     "release:standard-version": "standard-version"
@@ -160,11 +161,7 @@
     "vite-plugin-purge-icons": "0.7.0",
     "vite-plugin-pwa": "0.11.2",
     "vite-plugin-radar": "0.2.0",
-    "vite-svg-loader": "^2.2.0",
     "vue-tsc": "^0.3.0",
     "yorkie": "2.0.0"
-  },
-  "resolutions": {
-    "vscode-vue-languageservice": "0.27.20"
   }
 }

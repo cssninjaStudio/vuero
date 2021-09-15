@@ -1,7 +1,13 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
+
+import type {
+  VAvatarProps,
+  VAvatarColor,
+} from '/@src/components/base/avatar/VAvatar.vue'
 import { activePanel } from '/@src/state/activePanelState'
 import { popovers } from '/@src/data/users/userPopovers'
+import { UserPopover } from '/@src/models/users'
 
 const filter = ref('')
 const filteredData = computed(() => {
@@ -16,6 +22,14 @@ const filteredData = computed(() => {
     )
   })
 })
+
+function getAvatarData(user: UserPopover): VAvatarProps {
+  return {
+    picture: user.avatar,
+    initials: user.initials,
+    color: user.color as VAvatarColor,
+  }
+}
 </script>
 
 <template>
@@ -38,8 +52,8 @@ const filteredData = computed(() => {
         </a>
       </div>
       <div class="right-panel-body has-slimscroll">
-        <V-Field>
-          <V-Control icon="feather:search">
+        <VField>
+          <VControl icon="feather:search">
             <input
               v-model="filter"
               type="text"
@@ -56,11 +70,7 @@ const filteredData = computed(() => {
                   :key="user.id"
                   class="search-result"
                 >
-                  <V-Avatar
-                    :picture="user.avatar"
-                    :initials="user.initials"
-                    :color="user.color"
-                  />
+                  <VAvatar v-bind="getAvatarData(user)" />
                   <div class="meta">
                     <span>{{ user.username }}</span>
                     <span>{{ user.position }}</span>
@@ -68,52 +78,52 @@ const filteredData = computed(() => {
                 </div>
               </div>
             </template>
-          </V-Control>
-        </V-Field>
+          </VControl>
+        </VField>
 
         <div class="recent">
           <h4>Recently viewed</h4>
           <div class="recent-block">
-            <V-Block title="Browser Support" subtitle="Blog post" center>
+            <VBlock title="Browser Support" subtitle="Blog post" center>
               <template #icon>
-                <V-IconBox size="small" color="info" rounded>
+                <VIconBox size="small" color="info" rounded>
                   <i
                     aria-hidden="true"
                     class="iconify"
                     data-icon="feather:chrome"
                   ></i>
-                </V-IconBox>
+                </VIconBox>
               </template>
-            </V-Block>
-            <V-Block title="Twitch API" subtitle="Blog post" center>
+            </VBlock>
+            <VBlock title="Twitch API" subtitle="Blog post" center>
               <template #icon>
-                <V-IconBox size="small" color="orange" rounded>
+                <VIconBox size="small" color="orange" rounded>
                   <i
                     aria-hidden="true"
                     class="iconify"
                     data-icon="feather:tv"
                   ></i>
-                </V-IconBox>
+                </VIconBox>
               </template>
-            </V-Block>
-            <V-Block title="Browser Support" subtitle="Blog post" center>
+            </VBlock>
+            <VBlock title="Browser Support" subtitle="Blog post" center>
               <template #icon>
-                <V-IconBox size="small" color="green" rounded>
+                <VIconBox size="small" color="green" rounded>
                   <i
                     aria-hidden="true"
                     class="iconify"
                     data-icon="feather:twitter"
                   ></i>
-                </V-IconBox>
+                </VIconBox>
               </template>
-            </V-Block>
+            </VBlock>
           </div>
         </div>
 
         <div class="recent">
           <h4>Recent Members</h4>
           <div class="recent-block">
-            <V-Block title="Alice C." subtitle="Software Engineer" center>
+            <VBlock title="Alice C." subtitle="Software Engineer" center>
               <template #icon>
                 <tippy
                   class="has-help-cursor"
@@ -121,15 +131,15 @@ const filteredData = computed(() => {
                   :offset="[0, 10]"
                   placement="top-start"
                 >
-                  <V-Avatar size="small" picture="/demo/avatars/7.jpg" />
+                  <VAvatar size="small" picture="/demo/avatars/7.jpg" />
                   <template #content>
                     <UserPopoverContent :user="popovers.user7" />
                   </template>
                 </tippy>
               </template>
-            </V-Block>
+            </VBlock>
 
-            <V-Block title="Tara S." subtitle="UI/UX Designer" center>
+            <VBlock title="Tara S." subtitle="UI/UX Designer" center>
               <template #icon>
                 <tippy
                   class="has-help-cursor"
@@ -137,15 +147,15 @@ const filteredData = computed(() => {
                   :offset="[0, 10]"
                   placement="top-start"
                 >
-                  <V-Avatar size="small" picture="/demo/avatars/13.jpg" />
+                  <VAvatar size="small" picture="/demo/avatars/13.jpg" />
                   <template #content>
                     <UserPopoverContent :user="popovers.user13" />
                   </template>
                 </tippy>
               </template>
-            </V-Block>
+            </VBlock>
 
-            <V-Block title="Jimmy H." subtitle="Project Manager" center>
+            <VBlock title="Jimmy H." subtitle="Project Manager" center>
               <template #icon>
                 <tippy
                   class="has-help-cursor"
@@ -153,13 +163,13 @@ const filteredData = computed(() => {
                   :offset="[0, 10]"
                   placement="top-start"
                 >
-                  <V-Avatar size="small" picture="/demo/avatars/22.jpg" />
+                  <VAvatar size="small" picture="/demo/avatars/22.jpg" />
                   <template #content>
                     <UserPopoverContent :user="popovers.user22" />
                   </template>
                 </tippy>
               </template>
-            </V-Block>
+            </VBlock>
           </div>
         </div>
       </div>

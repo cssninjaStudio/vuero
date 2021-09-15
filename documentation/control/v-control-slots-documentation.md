@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-Control Slots
+### VControl Slots
 
-Here is the full slots available for `<V-Control />` component:
+Here is the full slots available for `<VControl />` component:
 
 | Slot     | Properties                          | Description                                                       |
 | -------- | ----------------------------------- | ----------------------------------------------------------------- |

@@ -1,8 +1,23 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 
-import { projects } from '/@src/data/layouts/card-grid-v2'
+import type { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
 import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+import * as gridData from '/@src/data/layouts/card-grid-v2'
+
+export interface ProjectData {
+  name: string
+  dueDate: string
+  updated: string
+  image: string
+  team: VAvatarProps[]
+  owner: {
+    name: string
+    avatar: string
+  }
+}
+
+const projects = gridData.projects as ProjectData[]
 
 const filters = ref('')
 
@@ -33,37 +48,37 @@ const optionsSingle = [
 <template>
   <div>
     <div class="card-grid-toolbar">
-      <V-Control icon="feather:search">
+      <VControl icon="feather:search">
         <input
           v-model="filters"
           class="input custom-text-filter"
           placeholder="Search..."
         />
-      </V-Control>
+      </VControl>
 
       <div class="buttons">
-        <V-Field class="h-hidden-mobile">
-          <V-Control>
+        <VField class="h-hidden-mobile">
+          <VControl>
             <Multiselect
               v-model="valueSingle"
               :options="optionsSingle"
               :max-height="145"
               placeholder="Select an option"
             />
-          </V-Control>
-        </V-Field>
-        <V-Button color="primary" raised>
+          </VControl>
+        </VField>
+        <VButton color="primary" raised>
           <span class="icon">
             <i aria-hidden="true" class="fas fa-plus"></i>
           </span>
           <span>New Project</span>
-        </V-Button>
+        </VButton>
       </div>
     </div>
 
     <div class="card-grid card-grid-v2">
       <!--List Empty Search Placeholder -->
-      <V-PlaceholderPage
+      <VPlaceholderPage
         :class="[filteredData.length !== 0 && 'is-hidden']"
         title="We couldn't find any matching results."
         subtitle="Too bad. Looks like we couldn't find any matching results for the
@@ -74,26 +89,26 @@ const optionsSingle = [
         <template #image>
           <img
             class="light-image"
-            src="/@src/assets/illustrations/placeholders/search-3.svg?url"
+            src="/@src/assets/illustrations/placeholders/search-3.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/@src/assets/illustrations/placeholders/search-3-dark.svg?url"
+            src="/@src/assets/illustrations/placeholders/search-3-dark.svg"
             alt=""
           />
         </template>
-      </V-PlaceholderPage>
+      </VPlaceholderPage>
 
       <!--Card Grid v2-->
       <transition-group name="list" tag="div" class="columns is-multiline">
         <!--Grid Item-->
-        <div v-for="item in filteredData" :key="item.id" class="column is-4">
+        <div v-for="(item, key) in filteredData" :key="key" class="column is-4">
           <div class="card-grid-item">
             <div class="card">
               <header class="card-header">
                 <div class="card-header-title">
-                  <V-Avatar size="small" :picture="item.owner.avatar" />
+                  <VAvatar size="small" :picture="item.owner.avatar" />
                   <div class="meta">
                     <span class="dark-inverted">{{ item.owner.name }}</span>
                     <span>updated {{ item.updated }}</span>
@@ -130,7 +145,7 @@ const optionsSingle = [
                       >{{ item.dueDate }}
                     </p>
                   </div>
-                  <V-AvatarStack :avatars="item.team" size="small" :limit="3" />
+                  <VAvatarStack :avatars="item.team" size="small" :limit="3" />
                 </div>
               </div>
               <footer class="card-footer">

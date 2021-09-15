@@ -3,9 +3,9 @@ state:
   closed: 0
 ---
 
-### V-Message
+### VMessage
 
-Vuero provides a `<V-Message />` component for messages that you can use
+Vuero provides a `<VMessage />` component for messages that you can use
 in your forms, for instance. The default message is displayed
 on a grey background. Check the markup for more details.
 
@@ -13,11 +13,11 @@ on a grey background. Check the markup for more details.
 
 ```vue
 <template>
-  <V-Message closable>
+  <VMessage closable>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus quis
     placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.
     Nullam gravida purus diam, et dictum.
-  </V-Message>
+  </VMessage>
 </template>
 ```
 
@@ -27,11 +27,11 @@ on a grey background. Check the markup for more details.
 
 <div class="field">
   <div class="control">
-    <V-Message @close="frontmatter.state.closed++" closable>
+    <VMessage @close="frontmatter.state.closed++" closable>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus quis
       placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.
       Nullam gravida purus diam, et dictum.
-    </V-Message>
+    </VMessage>
   </div>
 </div>
 

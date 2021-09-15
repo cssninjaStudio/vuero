@@ -1,7 +1,7 @@
 ### Image accordion
 
 A nice experimental and playful CSS only image
-accordion component: `<V-AccordionImage />`.
+accordion component: `<VAccordionImage />`.
 Images simply stack on mobile.
 Pass an **Array** to the `items` props to render the accordion.
 Check markup for more details about usage.
@@ -46,7 +46,7 @@ const data = [
 
 <template>
   <div class="column is-12">
-    <V-AccordionImage :items="accordionImagesData" />
+    <VAccordionImage :items="accordionImagesData" />
   </div>
 </template>
 ```

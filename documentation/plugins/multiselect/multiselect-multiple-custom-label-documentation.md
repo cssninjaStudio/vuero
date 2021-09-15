@@ -28,8 +28,8 @@ const optionMultipleObject = ref({
 </script>
 
 <template>
-  <V-Field class="demo-field mb-6">
-    <V-Control>
+  <VField class="demo-field mb-6">
+    <VControl>
       <Multiselect
         v-model="valueMultipleObject"
         mode="multiple"
@@ -42,8 +42,8 @@ const optionMultipleObject = ref({
           </div>
         </template>
       </Multiselect>
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -53,8 +53,8 @@ const optionMultipleObject = ref({
 
 <div class="columns">
   <div class="column is-4">
-    <V-Field>
-      <V-Control>
+    <VField>
+      <VControl>
         <Multiselect
           v-model="frontmatter.valueMultipleObject"
           mode="multiple"
@@ -67,12 +67,12 @@ const optionMultipleObject = ref({
             </div>
           </template>
         </Multiselect>
-      </V-Control>
-    </V-Field>
+      </VControl>
+    </VField>
   </div>
   <div class="column is-4">
-    <V-Field class="is-curved-select">
-      <V-Control>
+    <VField class="is-curved-select">
+      <VControl>
         <Multiselect
           v-model="frontmatter.valueMultipleObject"
           mode="multiple"
@@ -85,12 +85,12 @@ const optionMultipleObject = ref({
             </div>
           </template>
         </Multiselect>
-      </V-Control>
-    </V-Field>
+      </VControl>
+    </VField>
   </div>
   <div class="column is-4">
-    <V-Field class="is-rounded-select">
-      <V-Control>
+    <VField class="is-rounded-select">
+      <VControl>
         <Multiselect
           v-model="frontmatter.valueMultipleObject"
           mode="multiple"
@@ -103,8 +103,8 @@ const optionMultipleObject = ref({
             </div>
           </template>
         </Multiselect>
-      </V-Control>
-    </V-Field>
+      </VControl>
+    </VField>
   </div>
 </div>
 

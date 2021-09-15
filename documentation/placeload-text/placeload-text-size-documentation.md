@@ -1,13 +1,13 @@
 ### Size
 
-Control the size of `<V-PlaceloadText />` component to match your interface.
+Control the size of `<VPlaceloadText />` component to match your interface.
 You can set the `height` and the `width` properties according your needs
 
 <!--code-->
 
 ```vue
 <template>
-  <V-PlaceloadText :lines="5" width="75%" last-line-width="25%" />
+  <VPlaceloadText :lines="5" width="75%" last-line-width="25%" />
 </template>
 ```
 
@@ -15,6 +15,6 @@ You can set the `height` and the `width` properties according your needs
 
 <!--example-->
 
-<V-PlaceloadText :lines="5" width="75%" last-line-width="25%" />
+<VPlaceloadText :lines="5" width="75%" last-line-width="25%" />
 
 <!--/example-->

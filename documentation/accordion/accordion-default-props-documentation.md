@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-Accordion Props
+### VAccordion Props
 
-Here is the full props available for `<V-Accordion />` component:
+Here is the full props available for `<VAccordion />` component:
 
 | Props                  | Default                                       | Type                                                                                         |
 | ---------------------- | --------------------------------------------- | -------------------------------------------------------------------------------------------- |

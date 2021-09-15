@@ -8,7 +8,7 @@ Check the markup for more details. These tabs only support 3 items.
 
 ```vue
 <template>
-  <V-Tabs
+  <VTabs
     slider
     selected="team"
     :tabs="[
@@ -37,7 +37,7 @@ Check the markup for more details. These tabs only support 3 items.
         Chryippo. Duo Reges: constructio interrete.
       </p>
     </template>
-  </V-Tabs>
+  </VTabs>
 </template>
 ```
 
@@ -45,7 +45,7 @@ Check the markup for more details. These tabs only support 3 items.
 
 <!--example-->
 
-<V-Tabs slider selected="team" :tabs="[{ label: 'Team', value: 'team' },{ label: 'Projects', value: 'projects' },{ label: 'Tasks', value: 'tasks' }]">
+<VTabs slider selected="team" :tabs="[{ label: 'Team', value: 'team' },{ label: 'Projects', value: 'projects' },{ label: 'Tasks', value: 'tasks' }]">
   <template #tab="{ activeValue }">
     <p v-if="activeValue === 'team'">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -69,6 +69,6 @@ Check the markup for more details. These tabs only support 3 items.
       Reges: constructio interrete.
     </p>
   </template>
-</V-Tabs>
+</VTabs>
 
 <!--/example-->

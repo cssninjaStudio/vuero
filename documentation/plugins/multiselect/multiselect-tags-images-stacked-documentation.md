@@ -76,8 +76,8 @@ const tagsSlotOptions = [
 </script>
 
 <template>
-  <V-Field class="is-image-tags is-stacked">
-    <V-Control>
+  <VField class="is-image-tags is-stacked">
+    <VControl>
       <Multiselect
         v-model="tagsSlotValue"
         mode="tags"
@@ -100,8 +100,8 @@ const tagsSlotOptions = [
           </div>
         </template>
       </Multiselect>
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -111,8 +111,8 @@ const tagsSlotOptions = [
 
 <div class="columns">
   <div class="column is-4">
-    <V-Field class="is-image-tags is-stacked">
-      <V-Control>
+    <VField class="is-image-tags is-stacked">
+      <VControl>
         <Multiselect
           v-model="frontmatter.tagsSlotValue"
           mode="tags"
@@ -134,12 +134,12 @@ const tagsSlotOptions = [
             </div>
           </template>
         </Multiselect>
-      </V-Control>
-    </V-Field>
+      </VControl>
+    </VField>
   </div>
   <div class="column is-4">
-    <V-Field class="is-image-tags is-stacked is-curved-select">
-      <V-Control>
+    <VField class="is-image-tags is-stacked is-curved-select">
+      <VControl>
         <Multiselect
           v-model="frontmatter.tagsSlotValue"
           mode="tags"
@@ -161,12 +161,12 @@ const tagsSlotOptions = [
             </div>
           </template>
         </Multiselect>
-      </V-Control>
-    </V-Field>
+      </VControl>
+    </VField>
   </div>
   <div class="column is-4">
-    <V-Field class="is-image-tags is-stacked is-rounded-select">
-      <V-Control>
+    <VField class="is-image-tags is-stacked is-rounded-select">
+      <VControl>
         <Multiselect
           v-model="frontmatter.tagsSlotValue"
           mode="tags"
@@ -188,8 +188,8 @@ const tagsSlotOptions = [
             </div>
           </template>
         </Multiselect>
-      </V-Control>
-    </V-Field>
+      </VControl>
+    </VField>
   </div>
 </div>
 

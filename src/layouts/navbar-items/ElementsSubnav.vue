@@ -111,7 +111,7 @@ const activeTab = ref<TabId>('interaction')
                 <ul>
                   <li>
                     <RouterLink :to="{ name: 'elements-loader' }">
-                      <span>V-Loader</span>
+                      <span>VLoader</span>
                       <i
                         aria-hidden="true"
                         class="iconify"
@@ -121,8 +121,8 @@ const activeTab = ref<TabId>('interaction')
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-placeload' }">
-                      <span>V-Placeload</span>
-                      <V-Tag label="v1.2" color="primary" outlined curved />
+                      <span>VPlaceload</span>
+                      <VTag label="v1.2" color="primary" outlined curved />
                       <i
                         aria-hidden="true"
                         class="iconify"
@@ -132,8 +132,8 @@ const activeTab = ref<TabId>('interaction')
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-placeload-text' }">
-                      <span>V-PlaceloadText</span>
-                      <V-Tag label="v1.2" color="primary" outlined curved />
+                      <span>VPlaceloadText</span>
+                      <VTag label="v1.2" color="primary" outlined curved />
                       <i
                         aria-hidden="true"
                         class="iconify"
@@ -143,8 +143,8 @@ const activeTab = ref<TabId>('interaction')
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-placeload-avatar' }">
-                      <span>V-PlaceloadAvatar</span>
-                      <V-Tag label="v1.2" color="primary" outlined curved />
+                      <span>VPlaceloadAvatar</span>
+                      <VTag label="v1.2" color="primary" outlined curved />
                       <i
                         aria-hidden="true"
                         class="iconify"
@@ -160,7 +160,7 @@ const activeTab = ref<TabId>('interaction')
                 <ul>
                   <li>
                     <RouterLink :to="{ name: 'elements-dropdown' }">
-                      <span>V-Dropdown</span>
+                      <span>VDropdown</span>
                       <i
                         aria-hidden="true"
                         class="iconify"
@@ -170,7 +170,7 @@ const activeTab = ref<TabId>('interaction')
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-message' }">
-                      <span>V-Message</span>
+                      <span>VMessage</span>
                       <i
                         aria-hidden="true"
                         class="iconify"
@@ -180,7 +180,7 @@ const activeTab = ref<TabId>('interaction')
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-modal' }">
-                      <span>V-Modal</span>
+                      <span>VModal</span>
                       <i
                         aria-hidden="true"
                         class="iconify"
@@ -190,7 +190,7 @@ const activeTab = ref<TabId>('interaction')
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-progress' }">
-                      <span>V-Progress</span>
+                      <span>VProgress</span>
                       <i
                         aria-hidden="true"
                         class="iconify"
@@ -200,8 +200,8 @@ const activeTab = ref<TabId>('interaction')
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-tooltip' }">
-                      <span>V-Tooltip</span>
-                      <V-Tag label="v1.1" color="primary" outlined curved />
+                      <span>VTooltip</span>
+                      <VTag label="v1.1" color="primary" outlined curved />
                       <i
                         aria-hidden="true"
                         class="iconify"
@@ -217,7 +217,7 @@ const activeTab = ref<TabId>('interaction')
                 <ul>
                   <li>
                     <RouterLink :to="{ name: 'elements-button' }">
-                      <span>V-Button</span>
+                      <span>VButton</span>
                       <i
                         aria-hidden="true"
                         class="iconify"
@@ -227,7 +227,7 @@ const activeTab = ref<TabId>('interaction')
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-action' }">
-                      <span>V-Action</span>
+                      <span>VAction</span>
                       <i
                         aria-hidden="true"
                         class="iconify"
@@ -237,7 +237,7 @@ const activeTab = ref<TabId>('interaction')
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-icon-button' }">
-                      <span>V-IconButton</span>
+                      <span>VIconButton</span>
                       <i
                         aria-hidden="true"
                         class="iconify"
@@ -317,7 +317,7 @@ const activeTab = ref<TabId>('interaction')
                 <ul>
                   <li>
                     <RouterLink :to="{ name: 'elements-control' }">
-                      <span>V-Control</span>
+                      <span>VControl</span>
                       <i
                         aria-hidden="true"
                         class="iconify"
@@ -327,7 +327,7 @@ const activeTab = ref<TabId>('interaction')
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-field' }">
-                      <span>V-Field</span>
+                      <span>VField</span>
                       <i
                         aria-hidden="true"
                         class="iconify"
@@ -343,7 +343,7 @@ const activeTab = ref<TabId>('interaction')
                 <ul>
                   <li>
                     <RouterLink :to="{ name: 'elements-animated-checkbox' }">
-                      <span>V-AnimatedCheckbox</span>
+                      <span>VAnimatedCheckbox</span>
                       <i
                         aria-hidden="true"
                         class="iconify"
@@ -353,8 +353,8 @@ const activeTab = ref<TabId>('interaction')
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-checkbox' }">
-                      <span>V-Checkbox</span>
-                      <V-Tag label="v1.1" color="primary" outlined curved />
+                      <span>VCheckbox</span>
+                      <VTag label="v1.1" color="primary" outlined curved />
                       <i
                         aria-hidden="true"
                         class="iconify"
@@ -364,8 +364,8 @@ const activeTab = ref<TabId>('interaction')
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-radio' }">
-                      <span>V-Radio</span>
-                      <V-Tag label="v1.1" color="primary" outlined curved />
+                      <span>VRadio</span>
+                      <VTag label="v1.1" color="primary" outlined curved />
                       <i
                         aria-hidden="true"
                         class="iconify"
@@ -375,7 +375,7 @@ const activeTab = ref<TabId>('interaction')
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-switch-block' }">
-                      <span>V-SwitchBlock</span>
+                      <span>VSwitchBlock</span>
                       <i
                         aria-hidden="true"
                         class="iconify"
@@ -385,8 +385,8 @@ const activeTab = ref<TabId>('interaction')
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-switch-segment' }">
-                      <span>V-SwitchSegment</span>
-                      <V-Tag label="v1.1" color="primary" outlined curved />
+                      <span>VSwitchSegment</span>
+                      <VTag label="v1.1" color="primary" outlined curved />
                       <i
                         aria-hidden="true"
                         class="iconify"
@@ -402,7 +402,7 @@ const activeTab = ref<TabId>('interaction')
                 <ul>
                   <li>
                     <RouterLink :to="{ name: 'elements-addons-calendar' }">
-                      <span>V-Calendar</span>
+                      <span>VCalendar</span>
                       <i
                         aria-hidden="true"
                         class="iconify"
@@ -412,7 +412,7 @@ const activeTab = ref<TabId>('interaction')
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-addons-imask-input' }">
-                      <span>V-IMaskInput</span>
+                      <span>VIMaskInput</span>
                       <i
                         aria-hidden="true"
                         class="iconify"
@@ -422,7 +422,7 @@ const activeTab = ref<TabId>('interaction')
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-addons-filepond' }">
-                      <span>V-FilePond</span>
+                      <span>VFilePond</span>
                       <i
                         aria-hidden="true"
                         class="iconify"

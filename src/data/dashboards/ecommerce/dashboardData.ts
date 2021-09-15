@@ -36,7 +36,7 @@ export const flexRowsOrders = [
     date: 'Oct 31, 2020',
     amount: 236.79,
     status: 'pending',
-    tracking: null,
+    tracking: undefined,
   },
   {
     id: 3,

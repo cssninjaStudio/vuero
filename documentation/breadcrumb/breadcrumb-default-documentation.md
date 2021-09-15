@@ -8,12 +8,12 @@ breadcrumb:
     icon: feather:cpu
     to:
       name: components
-  - label: V-Breadcrumb
+  - label: VBreadcrumb
 ---
 
 ### Default Separator
 
-Vuero provides a `<V-Breadcrumb />` component.
+Vuero provides a `<VBreadcrumb />` component.
 Default breadcrumb items are separated by a slash sign.
 To show icons, use the `with-icons` prop. You can also change the alignment
 by using the `align` prop (possible values are `center` and `right`).
@@ -41,14 +41,14 @@ const breadcrumb = [
     },
   },
   {
-    label: 'V-Breadcrumb',
+    label: 'VBreadcrumb',
   },
 ]
 </script>
 
 <template>
-  <V-Breadcrumb :items="breadcrumb" />
-  <V-Breadcrumb :items="breadcrumb" with-icons />
+  <VBreadcrumb :items="breadcrumb" />
+  <VBreadcrumb :items="breadcrumb" with-icons />
 </template>
 ```
 
@@ -57,8 +57,8 @@ const breadcrumb = [
 <!--example-->
 
 <div>
-  <V-Breadcrumb :items="frontmatter.breadcrumb" />
-  <V-Breadcrumb :items="frontmatter.breadcrumb" with-icons />
+  <VBreadcrumb :items="frontmatter.breadcrumb" />
+  <VBreadcrumb :items="frontmatter.breadcrumb" with-icons />
 </div>
 
 <!--/example-->

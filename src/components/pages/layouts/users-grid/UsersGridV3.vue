@@ -33,13 +33,13 @@ const filteredData = computed(() => {
 <template>
   <div>
     <div class="user-grid-toolbar is-reversed">
-      <V-Control icon="feather:search">
+      <VControl icon="feather:search">
         <input
           v-model="filters"
           class="input custom-text-filter"
           placeholder="Search..."
         />
-      </V-Control>
+      </VControl>
 
       <div class="tabs-inner">
         <div class="tabs">
@@ -58,7 +58,7 @@ const filteredData = computed(() => {
 
     <div class="user-grid user-grid-v3">
       <!--List Empty Search Placeholder -->
-      <V-PlaceholderPage
+      <VPlaceholderPage
         :class="[filteredData.length !== 0 && 'is-hidden']"
         title="We couldn't find any matching results."
         subtitle="Too bad. Looks like we couldn't find any matching results for the
@@ -69,16 +69,16 @@ const filteredData = computed(() => {
         <template #image>
           <img
             class="light-image"
-            src="/@src/assets/illustrations/placeholders/search-5.svg?url"
+            src="/@src/assets/illustrations/placeholders/search-5.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/@src/assets/illustrations/placeholders/search-5-dark.svg?url"
+            src="/@src/assets/illustrations/placeholders/search-5-dark.svg"
             alt=""
           />
         </template>
-      </V-PlaceholderPage>
+      </VPlaceholderPage>
 
       <!--Active Tab-->
       <div
@@ -105,7 +105,7 @@ const filteredData = computed(() => {
         :class="[tab === 'team' && 'is-active']"
       >
         <!--Empty placeholder-->
-        <V-PlaceholderPage
+        <VPlaceholderPage
           title="No team members."
           subtitle="Looks like you don't have any team members yet. When you'll start
               adding some to your team, they will be showing up in here."
@@ -113,16 +113,16 @@ const filteredData = computed(() => {
           <template #image>
             <img
               class="light-image is-larger"
-              src="/@src/assets/illustrations/placeholders/team.svg?url"
+              src="/@src/assets/illustrations/placeholders/team.svg"
               alt=""
             />
             <img
               class="dark-image is-larger"
-              src="/@src/assets/illustrations/placeholders/team-dark.svg?url"
+              src="/@src/assets/illustrations/placeholders/team-dark.svg"
               alt=""
             />
           </template>
-        </V-PlaceholderPage>
+        </VPlaceholderPage>
       </div>
     </div>
   </div>

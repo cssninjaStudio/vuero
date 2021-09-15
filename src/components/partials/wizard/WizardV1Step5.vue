@@ -81,12 +81,12 @@ watchEffect(() => {
       <div class="placeholder-content">
         <img
           class="light-image is-rounded"
-          src="/@src/assets/illustrations/wizard/team-placeholder.svg?url"
+          src="/@src/assets/illustrations/wizard/team-placeholder.svg"
           alt=""
         />
         <img
           class="dark-image is-rounded"
-          src="/@src/assets/illustrations/wizard/team-placeholder.svg?url"
+          src="/@src/assets/illustrations/wizard/team-placeholder.svg"
           alt=""
         />
         <h3>Invite People</h3>
@@ -105,30 +105,30 @@ watchEffect(() => {
 
     <div v-if="isAddingMembers" class="project-team-wrapper">
       <div class="project-team-header">
-        <V-Avatar
+        <VAvatar
           size="big"
           picture="/demo/avatars/8.jpg"
-          badge="/images/icons/flags/united-states-of-america.svg?url"
+          badge="/images/icons/flags/united-states-of-america.svg"
         />
         <h3 class="title is-4 is-narrow is-thin">Erik Kovalsky</h3>
         <p class="light-text">You are the project owner</p>
 
-        <V-Field class="mt-4">
-          <V-Control icon="feather:search">
+        <VField class="mt-4">
+          <VControl icon="feather:search">
             <input
               v-model="search"
               class="input"
               placeholder="Search teammates..."
             />
-          </V-Control>
-        </V-Field>
+          </VControl>
+        </VField>
       </div>
 
       <div class="project-team-body">
         <div class="members-list">
           <template v-if="filteredUsers.length > 0">
             <transition-group name="list" tag="div">
-              <V-Block
+              <VBlock
                 v-for="teammate in filteredUsers"
                 :key="teammate.name"
                 class="invited-member"
@@ -136,11 +136,11 @@ watchEffect(() => {
                 :subtitle="teammate.name"
               >
                 <template #icon>
-                  <V-Avatar size="medium" :picture="teammate.picture" />
+                  <VAvatar size="medium" :picture="teammate.picture" />
                 </template>
                 <template #action>
                   <div class="actions">
-                    <V-IconButton
+                    <VIconButton
                       icon="fas fa-plus"
                       class="cancel-button hint--top hint--bubble hint--primary"
                       :aria-label="`Invite ${teammate.name}`"
@@ -149,12 +149,12 @@ watchEffect(() => {
                     />
                   </div>
                 </template>
-              </V-Block>
+              </VBlock>
             </transition-group>
           </template>
           <template v-if="wizardData.teammates.length > 0">
             <transition-group name="list-complete" tag="div">
-              <V-Block
+              <VBlock
                 v-for="teammate in wizardData.teammates"
                 :key="teammate.name"
                 class="invited-member"
@@ -162,7 +162,7 @@ watchEffect(() => {
                 :subtitle="teammate.name"
               >
                 <template #icon>
-                  <V-Avatar size="medium" :picture="teammate.picture" />
+                  <VAvatar size="medium" :picture="teammate.picture" />
                 </template>
                 <template #action>
                   <div class="actions">
@@ -241,7 +241,7 @@ watchEffect(() => {
                         </progress>
                       </div>
                     </div>
-                    <V-IconButton
+                    <VIconButton
                       icon="fas fa-times"
                       class="cancel-button hint--top hint--bubble hint--primary"
                       aria-label="Cancel Invite"
@@ -250,7 +250,7 @@ watchEffect(() => {
                     />
                   </div>
                 </template>
-              </V-Block>
+              </VBlock>
             </transition-group>
           </template>
           <div v-else class="empty-wrap has-text-centered">

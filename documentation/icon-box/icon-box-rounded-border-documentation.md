@@ -1,6 +1,6 @@
 ### Rounded border
 
-The Vuero `<V-IconBox />` component can have a thick border.
+The Vuero `<VIconBox />` component can have a thick border.
 You can add a border by simply adding the `bordered` and `rounded`
 props to the component. See the code example for more details.
 
@@ -8,39 +8,39 @@ props to the component. See the code example for more details.
 
 ```vue
 <template>
-  <V-IconBox size="medium" color="primary" bordered rounded>
+  <VIconBox size="medium" color="primary" bordered rounded>
     <i class="lnil lnil-vector-pen"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="info" bordered rounded>
+  </VIconBox>
+  <VIconBox size="medium" color="info" bordered rounded>
     <i class="lnil lnil-vector-pen"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="success" bordered rounded>
+  </VIconBox>
+  <VIconBox size="medium" color="success" bordered rounded>
     <i class="lnil lnil-vector-pen"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="warning" bordered rounded>
+  </VIconBox>
+  <VIconBox size="medium" color="warning" bordered rounded>
     <i class="lnil lnil-vector-pen"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="danger" bordered rounded>
+  </VIconBox>
+  <VIconBox size="medium" color="danger" bordered rounded>
     <i class="lnil lnil-vector-pen"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="purple" bordered rounded>
+  </VIconBox>
+  <VIconBox size="medium" color="purple" bordered rounded>
     <i class="lnil lnil-vector-pen"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="yellow" bordered rounded>
+  </VIconBox>
+  <VIconBox size="medium" color="yellow" bordered rounded>
     <i class="lnil lnil-vector-pen"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="orange" bordered rounded>
+  </VIconBox>
+  <VIconBox size="medium" color="orange" bordered rounded>
     <i class="lnil lnil-vector-pen"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="green" bordered rounded>
+  </VIconBox>
+  <VIconBox size="medium" color="green" bordered rounded>
     <i class="lnil lnil-vector-pen"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="red" bordered rounded>
+  </VIconBox>
+  <VIconBox size="medium" color="red" bordered rounded>
     <i class="lnil lnil-vector-pen"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="blue" bordered rounded>
+  </VIconBox>
+  <VIconBox size="medium" color="blue" bordered rounded>
     <i class="lnil lnil-vector-pen"></i>
-  </V-IconBox>
+  </VIconBox>
 </template>
 ```
 
@@ -49,39 +49,39 @@ props to the component. See the code example for more details.
 <!--example-->
 
 <div class="icon-boxes">
-    <V-IconBox size="medium" color="primary" bordered rounded>
+    <VIconBox size="medium" color="primary" bordered rounded>
         <i class="lnil lnil-vector-pen"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="info" bordered rounded>
+    </VIconBox>
+    <VIconBox size="medium" color="info" bordered rounded>
         <i class="lnil lnil-vector-pen"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="success" bordered rounded>
+    </VIconBox>
+    <VIconBox size="medium" color="success" bordered rounded>
         <i class="lnil lnil-vector-pen"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="warning" bordered rounded>
+    </VIconBox>
+    <VIconBox size="medium" color="warning" bordered rounded>
         <i class="lnil lnil-vector-pen"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="danger" bordered rounded>
+    </VIconBox>
+    <VIconBox size="medium" color="danger" bordered rounded>
         <i class="lnil lnil-vector-pen"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="purple" bordered rounded>
+    </VIconBox>
+    <VIconBox size="medium" color="purple" bordered rounded>
         <i class="lnil lnil-vector-pen"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="yellow" bordered rounded>
+    </VIconBox>
+    <VIconBox size="medium" color="yellow" bordered rounded>
         <i class="lnil lnil-vector-pen"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="orange" bordered rounded>
+    </VIconBox>
+    <VIconBox size="medium" color="orange" bordered rounded>
         <i class="lnil lnil-vector-pen"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="green" bordered rounded>
+    </VIconBox>
+    <VIconBox size="medium" color="green" bordered rounded>
         <i class="lnil lnil-vector-pen"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="red" bordered rounded>
+    </VIconBox>
+    <VIconBox size="medium" color="red" bordered rounded>
         <i class="lnil lnil-vector-pen"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="blue" bordered rounded>
+    </VIconBox>
+    <VIconBox size="medium" color="blue" bordered rounded>
         <i class="lnil lnil-vector-pen"></i>
-    </V-IconBox>
+    </VIconBox>
 </div>
 
 <!--/example-->

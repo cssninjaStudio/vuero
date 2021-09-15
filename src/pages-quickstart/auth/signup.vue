@@ -62,51 +62,51 @@ useHead({
                   <form @submit.prevent="handleSignup">
                     <div id="signin-form" class="login-form">
                       <!-- Input -->
-                      <V-Field>
-                        <V-Control icon="feather:user">
+                      <VField>
+                        <VControl icon="feather:user">
                           <input
                             class="input"
                             type="text"
                             placeholder="Name"
                             autocomplete="name"
                           />
-                        </V-Control>
-                      </V-Field>
+                        </VControl>
+                      </VField>
                       <!-- Input -->
-                      <V-Field>
-                        <V-Control icon="feather:mail">
+                      <VField>
+                        <VControl icon="feather:mail">
                           <input
                             class="input"
                             type="text"
                             placeholder="Email Address"
                             autocomplete="email"
                           />
-                        </V-Control>
-                      </V-Field>
+                        </VControl>
+                      </VField>
                       <!-- Input -->
-                      <V-Field>
-                        <V-Control icon="feather:lock">
+                      <VField>
+                        <VControl icon="feather:lock">
                           <input
                             class="input"
                             type="password"
                             placeholder="Password"
                             autocomplete="new-password"
                           />
-                        </V-Control>
-                      </V-Field>
+                        </VControl>
+                      </VField>
                       <!-- Input -->
-                      <V-Field>
-                        <V-Control icon="feather:lock">
+                      <VField>
+                        <VControl icon="feather:lock">
                           <input
                             class="input"
                             type="password"
                             placeholder="Repeat Password"
                           />
-                        </V-Control>
-                      </V-Field>
+                        </VControl>
+                      </VField>
 
-                      <V-Field>
-                        <V-Control class="setting-item">
+                      <VField>
+                        <VControl class="setting-item">
                           <label
                             for="send-promotional"
                             class="form-switch is-primary"
@@ -123,14 +123,14 @@ useHead({
                               <span>Receive promotional offers</span>
                             </label>
                           </div>
-                        </V-Control>
-                      </V-Field>
+                        </VControl>
+                      </VField>
 
                       <!-- Submit -->
 
-                      <V-Field>
-                        <V-Control class="login">
-                          <V-Button
+                      <VField>
+                        <VControl class="login">
+                          <VButton
                             color="primary"
                             type="submit"
                             bold
@@ -138,9 +138,9 @@ useHead({
                             raised
                           >
                             Sign Up
-                          </V-Button>
-                        </V-Control>
-                      </V-Field>
+                          </VButton>
+                        </VControl>
+                      </VField>
                     </div>
                   </form>
                 </div>

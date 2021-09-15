@@ -43,14 +43,9 @@ watchEffect(async () => {
       <p>You can go back to previous steps if you need to edit anything.</p>
     </div>
 
-    <V-Loader
-      size="xl"
-      class="project-preview-wrapper"
-      :active="isLoading"
-      grey
-    >
+    <VLoader size="xl" class="project-preview-wrapper" :active="isLoading" grey>
       <div class="project-preview-header">
-        <V-Avatar
+        <VAvatar
           color="h-green"
           size="big"
           :initials="projectInitial"
@@ -92,17 +87,17 @@ watchEffect(async () => {
               <a class="edit-icon" @click="currentStep = 1">
                 <i aria-hidden="true" class="lnil lnil-pencil"></i>
               </a>
-              <V-Block
+              <VBlock
                 :title="wizardData.relatedTo"
                 subtitle="Project Type"
                 center
               >
                 <template #icon>
-                  <V-IconBox size="medium" color="warning" rounded>
+                  <VIconBox size="medium" color="warning" rounded>
                     <i aria-hidden="true" class="lnil lnil-vector-pen"></i>
-                  </V-IconBox>
+                  </VIconBox>
                 </template>
-              </V-Block>
+              </VBlock>
             </div>
           </div>
 
@@ -111,16 +106,16 @@ watchEffect(async () => {
               <a class="edit-icon" @click="currentStep = 3">
                 <i aria-hidden="true" class="lnil lnil-pencil"></i>
               </a>
-              <V-Block
+              <VBlock
                 v-if="wizardData.customer"
                 :title="wizardData.customer.name"
                 subtitle="Project Customer"
                 center
               >
                 <template #icon>
-                  <V-Avatar size="medium" :picture="wizardData.customer.logo" />
+                  <VAvatar size="medium" :picture="wizardData.customer.logo" />
                 </template>
-              </V-Block>
+              </VBlock>
               <div v-else class="edit-box-placeholder is-media">
                 <span>No selected customer</span>
               </div>
@@ -199,15 +194,15 @@ watchEffect(async () => {
                   :key="teammate.name"
                   class="media-list-item"
                 >
-                  <V-Block
+                  <VBlock
                     :title="teammate.name"
                     :subtitle="capitalize(teammate.role)"
                     center
                   >
                     <template #icon>
-                      <V-Avatar :picture="teammate.picture" />
+                      <VAvatar :picture="teammate.picture" />
                     </template>
-                  </V-Block>
+                  </VBlock>
                 </div>
               </div>
             </div>
@@ -234,21 +229,21 @@ watchEffect(async () => {
                   :key="tool.name"
                   class="media-list-item"
                 >
-                  <V-Block
+                  <VBlock
                     :title="tool.name"
                     :subtitle="tool.description"
                     center
                   >
                     <template #icon>
-                      <V-Avatar :picture="tool.logo" />
+                      <VAvatar :picture="tool.logo" />
                     </template>
-                  </V-Block>
+                  </VBlock>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </V-Loader>
+    </VLoader>
   </div>
 </template>

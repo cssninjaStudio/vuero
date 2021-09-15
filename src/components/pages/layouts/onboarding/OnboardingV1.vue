@@ -13,12 +13,12 @@
         <div class="onboarding-card">
           <img
             class="light-image"
-            src="/@src/assets/illustrations/onboarding/set2-1.svg?url"
+            src="/@src/assets/illustrations/onboarding/set2-1.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/@src/assets/illustrations/onboarding/set2-1-dark.svg?url"
+            src="/@src/assets/illustrations/onboarding/set2-1-dark.svg"
             alt=""
           />
           <div class="onboarding-content">
@@ -28,7 +28,7 @@
               dicis; Ita enim vivunt.
             </p>
             <div class="button-wrap">
-              <V-Button color="primary" rounded elevated> Explore </V-Button>
+              <VButton color="primary" rounded elevated> Explore </VButton>
             </div>
           </div>
         </div>
@@ -36,12 +36,12 @@
         <div class="onboarding-card">
           <img
             class="light-image"
-            src="/@src/assets/illustrations/onboarding/set2-2.svg?url"
+            src="/@src/assets/illustrations/onboarding/set2-2.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/@src/assets/illustrations/onboarding/set2-2-dark.svg?url"
+            src="/@src/assets/illustrations/onboarding/set2-2-dark.svg"
             alt=""
           />
           <div class="onboarding-content">
@@ -51,7 +51,7 @@
               dicis; Ita enim vivunt.
             </p>
             <div class="button-wrap">
-              <V-Button color="primary" rounded elevated> Schedule </V-Button>
+              <VButton color="primary" rounded elevated> Schedule </VButton>
             </div>
           </div>
         </div>
@@ -59,12 +59,12 @@
         <div class="onboarding-card">
           <img
             class="light-image"
-            src="/@src/assets/illustrations/onboarding/set2-3.svg?url"
+            src="/@src/assets/illustrations/onboarding/set2-3.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/@src/assets/illustrations/onboarding/set2-3-dark.svg?url"
+            src="/@src/assets/illustrations/onboarding/set2-3-dark.svg"
             alt=""
           />
           <div class="onboarding-content">
@@ -74,7 +74,7 @@
               dicis; Ita enim vivunt.
             </p>
             <div class="button-wrap">
-              <V-Button color="primary" rounded elevated> Take a Nap </V-Button>
+              <VButton color="primary" rounded elevated> Take a Nap </VButton>
             </div>
           </div>
         </div>

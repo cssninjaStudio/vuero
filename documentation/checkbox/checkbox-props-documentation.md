@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-Checkbox Props
+### VCheckbox Props
 
-Here is the full props available for `<V-Checkbox />` component:
+Here is the full props available for `<VCheckbox />` component:
 
 | Props                   | Default                                       | Type                                              |
 | ----------------------- | --------------------------------------------- | ------------------------------------------------- |

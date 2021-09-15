@@ -74,8 +74,8 @@ const selectSlotIconOptions = [
 </script>
 
 <template>
-  <V-Field class="is-icon-select">
-    <V-Control>
+  <VField class="is-icon-select">
+    <VControl>
       <Multiselect
         v-model="frontmatter.selectSlotIconValue"
         placeholder="Select a member"
@@ -104,8 +104,8 @@ const selectSlotIconOptions = [
           </span>
         </template>
       </Multiselect>
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -115,8 +115,8 @@ const selectSlotIconOptions = [
 
 <div class="columns">
   <div class="column is-4">
-    <V-Field class="is-icon-select">
-      <V-Control>
+    <VField class="is-icon-select">
+      <VControl>
         <Multiselect
           v-model="frontmatter.selectSlotIconValue"
           placeholder="Select a member"
@@ -145,12 +145,12 @@ const selectSlotIconOptions = [
             </span>  
           </template>
         </Multiselect>
-      </V-Control>
-    </V-Field>
+      </VControl>
+    </VField>
   </div>
   <div class="column is-4">
-    <V-Field class="is-icon-select is-curved-select">
-      <V-Control>
+    <VField class="is-icon-select is-curved-select">
+      <VControl>
         <Multiselect
           v-model="frontmatter.selectSlotIconValue"
           placeholder="Select a member"
@@ -179,12 +179,12 @@ const selectSlotIconOptions = [
             </span>  
           </template>
         </Multiselect>
-      </V-Control>
-    </V-Field>
+      </VControl>
+    </VField>
   </div>
   <div class="column is-4">
-    <V-Field class="is-icon-select is-rounded-select">
-      <V-Control>
+    <VField class="is-icon-select is-rounded-select">
+      <VControl>
         <Multiselect
           v-model="frontmatter.selectSlotIconValue"
           placeholder="Select a member"
@@ -213,8 +213,8 @@ const selectSlotIconOptions = [
             </span>  
           </template>
         </Multiselect>
-      </V-Control>
-    </V-Field>
+      </VControl>
+    </VField>
   </div>
 </div>
 

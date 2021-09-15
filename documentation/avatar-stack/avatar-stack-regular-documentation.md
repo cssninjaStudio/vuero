@@ -1,7 +1,7 @@
 ### Regular stack
 
 Vuero avatars can be stacked in an slighlty overlaping line.
-Use the `<V-AvatarStack />` component. The component takes 2 props:
+Use the `<VAvatarStack />` component. The component takes 2 props:
 `avatars` and `size`. Available sizes are normal, `small` and `medium`.
 
 <!--code-->
@@ -27,7 +27,7 @@ const users = [
 </script>
 
 <template>
-  <V-AvatarStack :avatars="users" />
+  <VAvatarStack :avatars="users" />
 </template>
 ```
 
@@ -35,12 +35,12 @@ const users = [
 
 <!--example-->
 <div class="avatar-stack">
-    <V-Avatar picture="/demo/avatars/7.jpg" />
-    <V-Avatar initials="JO" color="info" />
-    <V-Avatar picture="/demo/avatars/8.jpg" />
-    <V-Avatar picture="/demo/avatars/5.jpg" />
-    <V-Avatar initials="CP" color="success" />
-    <V-Avatar picture="/demo/avatars/5.jpg" />
+    <VAvatar picture="/demo/avatars/7.jpg" />
+    <VAvatar initials="JO" color="info" />
+    <VAvatar picture="/demo/avatars/8.jpg" />
+    <VAvatar picture="/demo/avatars/5.jpg" />
+    <VAvatar initials="CP" color="success" />
+    <VAvatar picture="/demo/avatars/5.jpg" />
     <div class="v-avatar">
         <span class="avatar is-more">
             <span class="inner">

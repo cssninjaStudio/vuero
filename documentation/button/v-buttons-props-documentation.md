@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-Buttons Props
+### VButtons Props
 
-Here is the full props available for `<V-Buttons />` component:
+Here is the full props available for `<VButtons />` component:
 
 | Props  | Default                                       | Type                |
 | ------ | --------------------------------------------- | ------------------- |

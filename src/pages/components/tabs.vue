@@ -8,15 +8,15 @@ import { pageTitle } from '/@src/state/sidebarLayoutState'
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-pageTitle.value = 'V-Tabs'
+pageTitle.value = 'VTabs'
 useHead({
-  title: 'V-Tabs - Components - Vuero',
+  title: 'VTabs - Components - Vuero',
 })
 </script>
 
 <template>
   <div class="page-content-inner">
-    <V-Breadcrumb
+    <VBreadcrumb
       with-icons
       separator="bullet"
       :items="[
@@ -31,7 +31,7 @@ useHead({
           to: { name: 'components' },
         },
         {
-          label: 'V-Tabs',
+          label: 'VTabs',
           to: { name: 'components-tabs' },
         },
       ]"
@@ -43,7 +43,7 @@ useHead({
         :class="[toc.length > 0 ? 'is-9' : 'is-12']"
         class="column doc-column"
       >
-        <!--V-Tabs-->
+        <!--VTabs-->
         <TabsBaseDocumentation />
 
         <!--Centered Tabs-->

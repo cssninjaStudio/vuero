@@ -35,13 +35,13 @@ const filteredData = computed(() => {
 <template>
   <div>
     <div class="list-flex-toolbar is-reversed">
-      <V-Control icon="feather:search">
+      <VControl icon="feather:search">
         <input
           v-model="filters"
           class="input custom-text-filter"
           placeholder="Search..."
         />
-      </V-Control>
+      </VControl>
 
       <div class="tabs-inner">
         <div class="tabs">
@@ -60,7 +60,7 @@ const filteredData = computed(() => {
 
     <div class="flex-list-wrapper flex-list-v3">
       <!--List Empty Search Placeholder -->
-      <V-PlaceholderPage
+      <VPlaceholderPage
         :class="[filteredData.length !== 0 && 'is-hidden']"
         title="We couldn't find any matching results."
         subtitle="Too bad. Looks like we couldn't find any matching results for the
@@ -71,16 +71,16 @@ const filteredData = computed(() => {
         <template #image>
           <img
             class="light-image"
-            src="/@src/assets/illustrations/placeholders/search-4.svg?url"
+            src="/@src/assets/illustrations/placeholders/search-4.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/@src/assets/illustrations/placeholders/search-4-dark.svg?url"
+            src="/@src/assets/illustrations/placeholders/search-4-dark.svg"
             alt=""
           />
         </template>
-      </V-PlaceholderPage>
+      </VPlaceholderPage>
 
       <!--Active Tab-->
       <div
@@ -122,7 +122,7 @@ const filteredData = computed(() => {
                     <span class="item-name dark-inverted">{{ item.name }}</span>
                     <div class="item-meta">
                       <div class="flex-media">
-                        <V-Avatar :picture="item.author.picture" size="small" />
+                        <VAvatar :picture="item.author.picture" size="small" />
                         <div class="meta">
                           <span>by {{ item.author.username }}</span>
                         </div>
@@ -192,7 +192,7 @@ const filteredData = computed(() => {
         </div>
 
         <!--Table Pagination-->
-        <V-FlexPagination
+        <VFlexPagination
           v-if="filteredData.length > 5"
           :item-per-page="10"
           :total-items="873"
@@ -208,7 +208,7 @@ const filteredData = computed(() => {
         :class="[tab === 'saved' && 'is-active']"
       >
         <!--Empty placeholder-->
-        <V-PlaceholderPage
+        <VPlaceholderPage
           title="No saved courses."
           subtitle="Looks like you don't have any saved courses yet. You can add a
               course to your saved courses by visiting the course details and
@@ -217,16 +217,16 @@ const filteredData = computed(() => {
           <template #image>
             <img
               class="light-image is-larger"
-              src="/@src/assets/illustrations/placeholders/courses.svg?url"
+              src="/@src/assets/illustrations/placeholders/courses.svg"
               alt=""
             />
             <img
               class="dark-image is-larger"
-              src="/@src/assets/illustrations/placeholders/courses-dark.svg?url"
+              src="/@src/assets/illustrations/placeholders/courses-dark.svg"
               alt=""
             />
           </template>
-        </V-PlaceholderPage>
+        </VPlaceholderPage>
       </div>
     </div>
   </div>

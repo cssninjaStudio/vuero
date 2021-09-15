@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-Action Slots
+### VAction Slots
 
-Here is the full slots available for `<V-Action />` component:
+Here is the full slots available for `<VAction />` component:
 
 | Slot                       | Properties                          | Description    |
 | -------------------------- | ----------------------------------- | -------------- |

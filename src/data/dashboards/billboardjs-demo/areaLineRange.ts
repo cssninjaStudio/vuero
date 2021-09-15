@@ -1,11 +1,11 @@
-import type { Chart } from 'billboard.js'
+import type { Chart, ChartOptions } from 'billboard.js'
 import { themeColors } from '/@src/utils/themeColors'
 import { areaLineRange, areaSplineRange } from 'billboard.js'
 
-export const options = {
-  type: areaLineRange(),
+export const options: ChartOptions = {
   data: {
     x: 'x',
+    type: areaLineRange(),
     columns: [
       [
         'x',
@@ -16,7 +16,7 @@ export const options = {
         '2013-01-05',
         '2013-01-06',
       ],
-      [
+      <any>[
         'data1',
         [150, 140, 110],
         [155, 130, 115],
@@ -53,7 +53,7 @@ export const options = {
   },
   title: {
     text: 'Area Range Chart',
-    position: 'top-left',
+    position: 'left',
     padding: {
       bottom: 20,
       right: 20,

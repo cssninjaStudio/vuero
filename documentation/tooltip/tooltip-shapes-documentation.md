@@ -10,25 +10,25 @@ and doesn't have a tooltip arrow.
 
 ```vue {4,10,16}
 <template>
-  <V-Tags>
-    <V-Tag
+  <VTags>
+    <VTag
       v-tooltip.primary="'Iam a default tooltip'"
       color="solid"
       label="Rounded"
     />
 
-    <V-Tag
+    <VTag
       v-tooltip.primary.rounded="'Iam a rounded tooltip'"
       color="solid"
       label="Default"
     />
 
-    <V-Tag
+    <VTag
       v-tooltip.primary.bubble="'Iam a bubble tooltip'"
       color="solid"
       label="Bubble"
     />
-  </V-Tags>
+  </VTags>
 </template>
 ```
 
@@ -36,10 +36,10 @@ and doesn't have a tooltip arrow.
 
 <!--Example-->
 
-<V-Tags>
-  <V-Tag v-tooltip.primary="'Iam a default tooltip'" color="solid" label="Rounded" />
-  <V-Tag v-tooltip.primary.rounded="'Iam a rounded tooltip'" color="solid" label="Default" />
-  <V-Tag v-tooltip.primary.bubble="'Iam a bubble tooltip'" color="solid" label="Bubble" />
-</V-Tags>
+<VTags>
+  <VTag v-tooltip.primary="'Iam a default tooltip'" color="solid" label="Rounded" />
+  <VTag v-tooltip.primary.rounded="'Iam a rounded tooltip'" color="solid" label="Default" />
+  <VTag v-tooltip.primary.bubble="'Iam a bubble tooltip'" color="solid" label="Bubble" />
+</VTags>
 
 <!--/Example-->

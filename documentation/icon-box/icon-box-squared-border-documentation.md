@@ -1,6 +1,6 @@
 ### Box border
 
-The Vuero `<V-IconBox />` component can have a thick border.
+The Vuero `<VIconBox />` component can have a thick border.
 You can add a border by simply adding the `bordered` prop to the component.
 See the code example for more details.
 
@@ -8,39 +8,39 @@ See the code example for more details.
 
 ```vue
 <template>
-  <V-IconBox size="medium" color="primary" bordered>
+  <VIconBox size="medium" color="primary" bordered>
     <i class="lnil lnil-vector-pen"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="info" bordered>
+  </VIconBox>
+  <VIconBox size="medium" color="info" bordered>
     <i class="lnil lnil-vector-pen"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="success" bordered>
+  </VIconBox>
+  <VIconBox size="medium" color="success" bordered>
     <i class="lnil lnil-vector-pen"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="warning" bordered>
+  </VIconBox>
+  <VIconBox size="medium" color="warning" bordered>
     <i class="lnil lnil-vector-pen"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="danger" bordered>
+  </VIconBox>
+  <VIconBox size="medium" color="danger" bordered>
     <i class="lnil lnil-vector-pen"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="purple" bordered>
+  </VIconBox>
+  <VIconBox size="medium" color="purple" bordered>
     <i class="lnil lnil-vector-pen"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="yellow" bordered>
+  </VIconBox>
+  <VIconBox size="medium" color="yellow" bordered>
     <i class="lnil lnil-vector-pen"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="orange" bordered>
+  </VIconBox>
+  <VIconBox size="medium" color="orange" bordered>
     <i class="lnil lnil-vector-pen"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="green" bordered>
+  </VIconBox>
+  <VIconBox size="medium" color="green" bordered>
     <i class="lnil lnil-vector-pen"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="red" bordered>
+  </VIconBox>
+  <VIconBox size="medium" color="red" bordered>
     <i class="lnil lnil-vector-pen"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="blue" bordered>
+  </VIconBox>
+  <VIconBox size="medium" color="blue" bordered>
     <i class="lnil lnil-vector-pen"></i>
-  </V-IconBox>
+  </VIconBox>
 </template>
 ```
 
@@ -49,39 +49,39 @@ See the code example for more details.
 <!--example-->
 
 <div class="icon-boxes">
-    <V-IconBox size="medium" color="primary" bordered>
+    <VIconBox size="medium" color="primary" bordered>
         <i class="lnil lnil-vector-pen"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="info" bordered>
+    </VIconBox>
+    <VIconBox size="medium" color="info" bordered>
         <i class="lnil lnil-vector-pen"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="success" bordered>
+    </VIconBox>
+    <VIconBox size="medium" color="success" bordered>
         <i class="lnil lnil-vector-pen"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="warning" bordered>
+    </VIconBox>
+    <VIconBox size="medium" color="warning" bordered>
         <i class="lnil lnil-vector-pen"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="danger" bordered>
+    </VIconBox>
+    <VIconBox size="medium" color="danger" bordered>
         <i class="lnil lnil-vector-pen"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="purple" bordered>
+    </VIconBox>
+    <VIconBox size="medium" color="purple" bordered>
         <i class="lnil lnil-vector-pen"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="yellow" bordered>
+    </VIconBox>
+    <VIconBox size="medium" color="yellow" bordered>
         <i class="lnil lnil-vector-pen"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="orange" bordered>
+    </VIconBox>
+    <VIconBox size="medium" color="orange" bordered>
         <i class="lnil lnil-vector-pen"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="green" bordered>
+    </VIconBox>
+    <VIconBox size="medium" color="green" bordered>
         <i class="lnil lnil-vector-pen"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="red" bordered>
+    </VIconBox>
+    <VIconBox size="medium" color="red" bordered>
         <i class="lnil lnil-vector-pen"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="blue" bordered>
+    </VIconBox>
+    <VIconBox size="medium" color="blue" bordered>
         <i class="lnil lnil-vector-pen"></i>
-    </V-IconBox>
+    </VIconBox>
 </div>
 
 <!--/example-->

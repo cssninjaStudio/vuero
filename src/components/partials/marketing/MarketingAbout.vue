@@ -11,7 +11,7 @@
         <div class="columns is-vcentered">
           <div class="column is-6 is-relative is-centered-portrait">
             <!--Video PLayer-->
-            <V-Plyr
+            <VPlyr
               ratio="square"
               source="/video/hands.mp4"
               poster="/video/poster-1c.jpg"

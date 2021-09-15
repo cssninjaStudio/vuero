@@ -231,7 +231,7 @@ const emit = defineEmits(['close'])
               >
                 <i aria-hidden="true" class="lnil lnil-reload"></i>
                 <span>Placeload V1</span>
-                <V-Tag label="v1.2" color="primary" outlined curved />
+                <VTag label="v1.2" color="primary" outlined curved />
               </RouterLink>
             </li>
             <li>
@@ -241,7 +241,7 @@ const emit = defineEmits(['close'])
               >
                 <i aria-hidden="true" class="lnil lnil-reload"></i>
                 <span>Placeload V2</span>
-                <V-Tag label="v1.2" color="primary" outlined curved />
+                <VTag label="v1.2" color="primary" outlined curved />
               </RouterLink>
             </li>
             <li>
@@ -251,7 +251,7 @@ const emit = defineEmits(['close'])
               >
                 <i aria-hidden="true" class="lnil lnil-reload"></i>
                 <span>Placeload V3</span>
-                <V-Tag label="v1.2" color="primary" outlined curved />
+                <VTag label="v1.2" color="primary" outlined curved />
               </RouterLink>
             </li>
             <li>
@@ -261,7 +261,7 @@ const emit = defineEmits(['close'])
               >
                 <i aria-hidden="true" class="lnil lnil-reload"></i>
                 <span>Placeload V4</span>
-                <V-Tag label="v1.2" color="primary" outlined curved />
+                <VTag label="v1.2" color="primary" outlined curved />
               </RouterLink>
             </li>
           </ul>

@@ -1,6 +1,6 @@
 ### Tablet responsive
 
-`<V-Block />` can be made responsive for the tablet portrait viewport
+`<VBlock />` can be made responsive for the tablet portrait viewport
 by adding the `tResponsive` prop to the component. When set to responsive mode,
 the flex block elements stack to fit in the available space.
 Resize your screen to see it in action.
@@ -9,7 +9,7 @@ Resize your screen to see it in action.
 
 ```vue
 <template>
-  <V-Block
+  <VBlock
     title="Team Tasks"
     subtitle="View all tasks"
     center
@@ -22,9 +22,9 @@ Resize your screen to see it in action.
       </VIconBox>
     </template>
     <template #action>
-      <V-Button color="primary" elevated>View</V-Button>
+      <VButton color="primary" elevated>View</VButton>
     </template>
-  </V-Block>
+  </VBlock>
 </template>
 ```
 
@@ -35,7 +35,7 @@ Resize your screen to see it in action.
 <div class="field">
   <div class="control">
     <div class="l-card">
-      <V-Block 
+      <VBlock 
         title="Team Tasks" 
         subtitle="View all tasks" 
         center 
@@ -48,9 +48,9 @@ Resize your screen to see it in action.
           </VIconBox>
         </template>
         <template #action>
-          <V-Button color="primary" elevated>View</V-Button>
+          <VButton color="primary" elevated>View</VButton>
         </template>
-      </V-Block>
+      </VBlock>
     </div>
   </div>
 </div>

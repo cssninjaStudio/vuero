@@ -1,7 +1,24 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 
-import { users } from '/@src/data/layouts/user-grid-v2'
+import type { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
+import * as gridData from '/@src/data/layouts/user-grid-v2'
+
+export interface UserData extends VAvatarProps {
+  id: number
+  username: string
+  fullName: string
+  location: string
+  position: string
+  bio: string
+  tasks: {
+    pending: number
+  }
+  status: string
+  team: VAvatarProps[]
+}
+
+const users = gridData.users as UserData[]
 
 const filters = ref('')
 
@@ -14,7 +31,7 @@ const filteredData = computed(() => {
         item.username.match(new RegExp(filters.value, 'i')) ||
         item.location.match(new RegExp(filters.value, 'i')) ||
         item.position.match(new RegExp(filters.value, 'i')) ||
-        item.badge.match(new RegExp(filters.value, 'i'))
+        item.badge?.match(new RegExp(filters.value, 'i'))
       )
     })
   }
@@ -33,37 +50,37 @@ const optionsSingle = [
 <template>
   <div>
     <div class="user-grid-toolbar">
-      <V-Control icon="feather:search">
+      <VControl icon="feather:search">
         <input
           v-model="filters"
           class="input custom-text-filter"
           placeholder="Search..."
         />
-      </V-Control>
+      </VControl>
 
       <div class="buttons">
-        <V-Field class="h-hidden-mobile">
-          <V-Control>
+        <VField class="h-hidden-mobile">
+          <VControl>
             <Multiselect
               v-model="valueSingle"
               :options="optionsSingle"
               :max-height="145"
               placeholder="Select an option"
             />
-          </V-Control>
-        </V-Field>
-        <V-Button color="primary" raised>
+          </VControl>
+        </VField>
+        <VButton color="primary" raised>
           <span class="icon">
             <i aria-hidden="true" class="fas fa-plus"></i>
           </span>
           <span>Add User</span>
-        </V-Button>
+        </VButton>
       </div>
     </div>
 
     <div class="user-grid user-grid-v2">
       <!--List Empty Search Placeholder -->
-      <V-PlaceholderPage
+      <VPlaceholderPage
         :class="[filteredData.length !== 0 && 'is-hidden']"
         title="We couldn't find any matching results."
         subtitle="Too bad. Looks like we couldn't find any matching results for the
@@ -74,16 +91,16 @@ const optionsSingle = [
         <template #image>
           <img
             class="light-image"
-            src="/@src/assets/illustrations/placeholders/search-4.svg?url"
+            src="/@src/assets/illustrations/placeholders/search-4.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/@src/assets/illustrations/placeholders/search-4-dark.svg?url"
+            src="/@src/assets/illustrations/placeholders/search-4-dark.svg"
             alt=""
           />
         </template>
-      </V-PlaceholderPage>
+      </VPlaceholderPage>
 
       <transition-group name="list" tag="div" class="columns is-multiline">
         <!--Grid item-->
@@ -146,17 +163,17 @@ const optionsSingle = [
               </div>
             </div>
             <div class="grid-item">
-              <V-Avatar :picture="item.avatar" :badge="item.badge" size="big" />
+              <VAvatar :picture="item.picture" :badge="item.badge" size="big" />
               <h3 class="dark-inverted">{{ item.fullName }}</h3>
               <p>{{ item.position }}</p>
               <div class="people">
-                <V-Avatar
-                  v-for="user in item.team"
-                  :key="user.id"
+                <VAvatar
+                  v-for="(user, key) in item.team"
+                  :key="key"
                   size="small"
                   :color="user.color"
                   :initials="user.initials"
-                  :picture="user.avatar"
+                  :picture="user.picture"
                 />
               </div>
               <div class="buttons">

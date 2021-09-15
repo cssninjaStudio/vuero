@@ -8,15 +8,15 @@ import { pageTitle } from '/@src/state/sidebarLayoutState'
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-pageTitle.value = 'V-Radio'
+pageTitle.value = 'VRadio'
 useHead({
-  title: 'V-Radio - Switches Elements - Vuero',
+  title: 'VRadio - Switches Elements - Vuero',
 })
 </script>
 
 <template>
   <div class="page-content-inner">
-    <V-Breadcrumb
+    <VBreadcrumb
       with-icons
       separator="bullet"
       :items="[
@@ -34,7 +34,7 @@ useHead({
           label: 'Switches',
         },
         {
-          label: 'V-Radio',
+          label: 'VRadio',
           to: { name: 'elements-radio' },
         },
       ]"

@@ -1,6 +1,6 @@
-### V-FlexTable
+### VFlexTable
 
-Vuero provides a custom table component called `<V-FlexTable />`.
+Vuero provides a custom table component called `<VFlexTable />`.
 It looks like a table but is not an Html5 table.
 Instead, it uses the flexbox technology and is fully responsive.
 Check the markup for more details about usage.
@@ -31,8 +31,8 @@ const data = [
 </script>
 
 <template>
-  <!--V-FlexTable-->
-  <V-FlexTable>
+  <!--VFlexTable-->
+  <VFlexTable>
     <template #header>
       <div class="flex-table-header">
         <span>Company</span>
@@ -44,12 +44,12 @@ const data = [
       </div>
     </template>
     <template #body>
-      <V-FlexTableRowBase :rows="data" />
+      <VFlexTableRowBase :rows="data" />
     </template>
-  </V-FlexTable>
+  </VFlexTable>
 
   <!--Table Pagination-->
-  <V-FlexPagination
+  <VFlexPagination
     :item-per-page="10"
     :total-items="873"
     :current-page="42"

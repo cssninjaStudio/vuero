@@ -1,18 +1,18 @@
 ### Button group
 
-You can easily align `<V-Button />` components and group them together
-by wrapping them inside a `<V-Buttons />` element.
+You can easily align `<VButton />` components and group them together
+by wrapping them inside a `<VButtons />` element.
 You can mix any button styles.
 
 <!--code-->
 
 ```vue
 <template>
-  <V-Buttons>
-    <V-Button icon="feather:eye"> View </V-Button>
-    <V-Button icon="feather:edit-2"> View </V-Button>
-    <V-Button color="primary" icon="fas fa-check" elevated> Approve </V-Button>
-  </V-Buttons>
+  <VButtons>
+    <VButton icon="feather:eye"> View </VButton>
+    <VButton icon="feather:edit-2"> View </VButton>
+    <VButton color="primary" icon="fas fa-check" elevated> Approve </VButton>
+  </VButtons>
 </template>
 ```
 
@@ -20,16 +20,16 @@ You can mix any button styles.
 
 <!--example-->
 
-<V-Buttons>
-  <V-Button icon="feather:eye">
+<VButtons>
+  <VButton icon="feather:eye">
     View
-  </V-Button>
-  <V-Button icon="feather:edit-2">
+  </VButton>
+  <VButton icon="feather:edit-2">
     View
-  </V-Button>
-  <V-Button color="primary" icon="fas fa-check" elevated>
+  </VButton>
+  <VButton color="primary" icon="fas fa-check" elevated>
     Approve
-  </V-Button>
-</V-Buttons>
+  </VButton>
+</VButtons>
 
 <!--/example-->

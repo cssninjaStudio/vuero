@@ -1,6 +1,6 @@
-### V-FlexPagination
+### VFlexPagination
 
-Vuero provides a custom pagination component called `<V-FlexPagination />`.
+Vuero provides a custom pagination component called `<VFlexPagination />`.
 Check the markup for more details about usage.
 
 <!--code-->
@@ -19,7 +19,7 @@ const currentPage = computed(() => {
 </script>
 
 <template>
-  <V-FlexPagination
+  <VFlexPagination
     :item-per-page="8"
     :total-items="512"
     :current-page="currentPage"

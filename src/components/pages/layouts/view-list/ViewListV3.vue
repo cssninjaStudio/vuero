@@ -28,7 +28,7 @@ const filteredData = computed(() => {
 <template>
   <div>
     <div class="list-view-toolbar is-reversed">
-      <V-Control icon="feather:search">
+      <VControl icon="feather:search">
         <input
           v-model="filters"
           class="input custom-text-filter"
@@ -38,7 +38,7 @@ const filteredData = computed(() => {
         <div class="form-icon">
           <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
         </div>
-      </V-Control>
+      </VControl>
 
       <div class="tabs-inner">
         <div class="tabs">
@@ -59,7 +59,7 @@ const filteredData = computed(() => {
       <!--List-->
       <div class="list-view list-view-v3">
         <!--List Empty Search Placeholder -->
-        <V-PlaceholderPage
+        <VPlaceholderPage
           :class="[filteredData.length !== 0 && 'is-hidden']"
           title="We couldn't find any matching results."
           subtitle="Too bad. Looks like we couldn't find any matching results for the
@@ -70,16 +70,16 @@ const filteredData = computed(() => {
           <template #image>
             <img
               class="light-image"
-              src="/@src/assets/illustrations/placeholders/search-3.svg?url"
+              src="/@src/assets/illustrations/placeholders/search-3.svg"
               alt=""
             />
             <img
               class="dark-image"
-              src="/@src/assets/illustrations/placeholders/search-3-dark.svg?url"
+              src="/@src/assets/illustrations/placeholders/search-3-dark.svg"
               alt=""
             />
           </template>
-        </V-PlaceholderPage>
+        </VPlaceholderPage>
 
         <!--Active Tab-->
         <div
@@ -139,11 +139,11 @@ const filteredData = computed(() => {
                   </div>
                   <div class="meta-right">
                     <div class="buttons">
-                      <V-Button color="primary" outlined raised>
+                      <VButton color="primary" outlined raised>
                         Apply Now
-                      </V-Button>
+                      </VButton>
 
-                      <V-IconButton
+                      <VIconButton
                         icon="feather:bookmark"
                         class="hint--bubble hint--primary hint--top"
                         data-hint="Save"
@@ -157,7 +157,7 @@ const filteredData = computed(() => {
             </transition-group>
           </div>
 
-          <V-FlexPagination
+          <VFlexPagination
             v-if="filteredData.length > 5"
             :item-per-page="10"
             :total-items="873"
@@ -174,7 +174,7 @@ const filteredData = computed(() => {
         >
           <div class="list-view-inner">
             <!--Empty placeholder-->
-            <V-PlaceholderPage
+            <VPlaceholderPage
               title="No saved jobs."
               subtitle="Looks like you don't have any saved jobs for the moment. It's
                   also possible that some of your saved items expired."
@@ -182,16 +182,16 @@ const filteredData = computed(() => {
               <template #image>
                 <img
                   class="light-image"
-                  src="/@src/assets/illustrations/placeholders/thinking-canvas.svg?url"
+                  src="/@src/assets/illustrations/placeholders/thinking-canvas.svg"
                   alt=""
                 />
                 <img
                   class="dark-image"
-                  src="/@src/assets/illustrations/placeholders/thinking-canvas-dark.svg?url"
+                  src="/@src/assets/illustrations/placeholders/thinking-canvas-dark.svg"
                   alt=""
                 />
               </template>
-            </V-PlaceholderPage>
+            </VPlaceholderPage>
           </div>
         </div>
       </div>

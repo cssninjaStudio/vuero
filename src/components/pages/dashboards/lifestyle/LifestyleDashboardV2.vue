@@ -1,11 +1,12 @@
 <script setup lang="ts">
-import {
-  avatarStack1,
-  avatarStack2,
-  avatarStack3,
-  avatarStack4,
-  topicList,
-} from '/@src/data/dashboards/lifestyle-v2/dashboardData'
+import type { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
+import * as dashboardData from '/@src/data/dashboards/lifestyle-v2/dashboardData'
+
+const avatarStack1 = dashboardData.avatarStack1 as VAvatarProps[]
+const avatarStack2 = dashboardData.avatarStack1 as VAvatarProps[]
+const avatarStack3 = dashboardData.avatarStack1 as VAvatarProps[]
+const avatarStack4 = dashboardData.avatarStack1 as VAvatarProps[]
+const topicList = dashboardData.topicList as any[]
 </script>
 
 <template>
@@ -42,7 +43,7 @@ import {
                 </div>
                 <div class="bottom">
                   <span>28.3K</span>
-                  <V-AvatarStack size="small" :avatars="avatarStack1" />
+                  <VAvatarStack size="small" :avatars="avatarStack1" />
                 </div>
               </a>
             </div>
@@ -65,7 +66,7 @@ import {
                 </div>
                 <div class="bottom">
                   <span>8.1K</span>
-                  <V-AvatarStack size="small" :avatars="avatarStack2" />
+                  <VAvatarStack size="small" :avatars="avatarStack2" />
                 </div>
               </a>
             </div>
@@ -88,7 +89,7 @@ import {
                 </div>
                 <div class="bottom">
                   <span>19.7K</span>
-                  <V-AvatarStack size="small" :avatars="avatarStack3" />
+                  <VAvatarStack size="small" :avatars="avatarStack3" />
                 </div>
               </a>
             </div>
@@ -111,7 +112,7 @@ import {
                 </div>
                 <div class="bottom">
                   <span>48.4K</span>
-                  <V-AvatarStack size="small" :avatars="avatarStack4" />
+                  <VAvatarStack size="small" :avatars="avatarStack4" />
                 </div>
               </a>
             </div>
@@ -128,13 +129,13 @@ import {
               </div>
 
               <div class="inner-list">
-                <V-Block
+                <VBlock
                   title="Extreme Foot Trekk"
                   subtitle="Oct 31, 2020"
                   center
                 >
                   <template #icon>
-                    <V-Avatar
+                    <VAvatar
                       picture="/demo/photos/dashboards/lifestyle/1.jpg"
                       squared
                     />
@@ -147,17 +148,17 @@ import {
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                     </div>
-                    <V-IconButton
+                    <VIconButton
                       icon="feather:arrow-right"
                       circle
                       dark-outlined
                     />
                   </template>
-                </V-Block>
+                </VBlock>
 
-                <V-Block title="Rafting trip" subtitle="Oct 30, 2020" center>
+                <VBlock title="Rafting trip" subtitle="Oct 30, 2020" center>
                   <template #icon>
-                    <V-Avatar
+                    <VAvatar
                       picture="/demo/photos/dashboards/lifestyle/2.jpg"
                       squared
                     />
@@ -170,21 +171,21 @@ import {
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                       <i aria-hidden="true" class="fas fa-star"></i>
                     </div>
-                    <V-IconButton
+                    <VIconButton
                       icon="feather:arrow-right"
                       circle
                       dark-outlined
                     />
                   </template>
-                </V-Block>
+                </VBlock>
 
-                <V-Block
+                <VBlock
                   title="Climbing Group [Pro]"
                   subtitle="Oct 31, 2020"
                   center
                 >
                   <template #icon>
-                    <V-Avatar
+                    <VAvatar
                       picture="/demo/photos/dashboards/lifestyle/3.jpg"
                       squared
                     />
@@ -197,21 +198,21 @@ import {
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                     </div>
-                    <V-IconButton
+                    <VIconButton
                       icon="feather:arrow-right"
                       circle
                       dark-outlined
                     />
                   </template>
-                </V-Block>
+                </VBlock>
 
-                <V-Block
+                <VBlock
                   title="Bicycle Madness Trek"
                   subtitle="Oct 31, 2020"
                   center
                 >
                   <template #icon>
-                    <V-Avatar
+                    <VAvatar
                       picture="/demo/photos/dashboards/lifestyle/4.jpg"
                       squared
                     />
@@ -224,13 +225,13 @@ import {
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                     </div>
-                    <V-IconButton
+                    <VIconButton
                       icon="feather:arrow-right"
                       circle
                       dark-outlined
                     />
                   </template>
-                </V-Block>
+                </VBlock>
               </div>
             </div>
           </div>
@@ -248,13 +249,9 @@ import {
                 </div>
               </div>
               <div class="inner-list">
-                <V-Block
-                  title="Extreme Triathlon"
-                  subtitle="Nov 2, 2020"
-                  center
-                >
+                <VBlock title="Extreme Triathlon" subtitle="Nov 2, 2020" center>
                   <template #icon>
-                    <V-Avatar
+                    <VAvatar
                       picture="/demo/photos/dashboards/lifestyle/5.jpg"
                       squared
                     />
@@ -267,17 +264,17 @@ import {
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                     </div>
-                    <V-IconButton
+                    <VIconButton
                       icon="feather:arrow-right"
                       circle
                       dark-outlined
                     />
                   </template>
-                </V-Block>
+                </VBlock>
 
-                <V-Block title="Group Running" subtitle="Oct 29, 2020" center>
+                <VBlock title="Group Running" subtitle="Oct 29, 2020" center>
                   <template #icon>
-                    <V-Avatar
+                    <VAvatar
                       picture="/demo/photos/dashboards/lifestyle/6.jpg"
                       squared
                     />
@@ -290,17 +287,17 @@ import {
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                       <i aria-hidden="true" class="fas fa-star"></i>
                     </div>
-                    <V-IconButton
+                    <VIconButton
                       icon="feather:arrow-right"
                       circle
                       dark-outlined
                     />
                   </template>
-                </V-Block>
+                </VBlock>
 
-                <V-Block title="Suit Diving" subtitle="Oct 28, 2020" center>
+                <VBlock title="Suit Diving" subtitle="Oct 28, 2020" center>
                   <template #icon>
-                    <V-Avatar
+                    <VAvatar
                       picture="/demo/photos/dashboards/lifestyle/7.jpg"
                       squared
                     />
@@ -313,17 +310,17 @@ import {
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                     </div>
-                    <V-IconButton
+                    <VIconButton
                       icon="feather:arrow-right"
                       circle
                       dark-outlined
                     />
                   </template>
-                </V-Block>
+                </VBlock>
 
-                <V-Block title="Desert Trekk" subtitle="Oct 27, 2020" center>
+                <VBlock title="Desert Trekk" subtitle="Oct 27, 2020" center>
                   <template #icon>
-                    <V-Avatar
+                    <VAvatar
                       picture="/demo/photos/dashboards/lifestyle/7.jpg"
                       squared
                     />
@@ -336,13 +333,13 @@ import {
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                     </div>
-                    <V-IconButton
+                    <VIconButton
                       icon="feather:arrow-right"
                       circle
                       dark-outlined
                     />
                   </template>
-                </V-Block>
+                </VBlock>
               </div>
             </div>
           </div>

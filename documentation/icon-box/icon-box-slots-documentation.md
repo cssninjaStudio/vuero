@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-Button Slots
+### VButton Slots
 
-Here is the full slots available for `<V-Button />` component:
+Here is the full slots available for `<VButton />` component:
 
 | Slot                       | Properties                          | Description          |
 | -------------------------- | ----------------------------------- | -------------------- |

@@ -33,7 +33,7 @@ const onRemoveFile = (error: any, fileInfo: any) => {
     <div class="project-info">
       <div class="project-info-head">
         <div class="project-avatar-upload">
-          <V-FilePond
+          <VFilePond
             size="small"
             class="profile-filepond"
             name="profile_filepond"
@@ -59,19 +59,19 @@ const onRemoveFile = (error: any, fileInfo: any) => {
         </div>
         <div class="project-info">
           <div class="project-name">
-            <V-Field>
-              <V-Control>
+            <VField>
+              <VControl>
                 <input
                   v-model="wizardData.name"
                   class="input"
                   placeholder="Project Name"
                 />
-              </V-Control>
-            </V-Field>
+              </VControl>
+            </VField>
           </div>
           <div class="project-description p-t-10">
-            <V-Field>
-              <V-Control>
+            <VField>
+              <VControl>
                 <textarea
                   v-model="wizardData.description"
                   class="textarea"
@@ -90,11 +90,11 @@ const onRemoveFile = (error: any, fileInfo: any) => {
                 <p v-else-if="wizardData.description.length < 50" class="help">
                   {{ 50 - wizardData.description.length }} characters remaining
                 </p>
-              </V-Control>
-            </V-Field>
-            <V-Field>
+              </VControl>
+            </VField>
+            <VField>
               <label>Related Industries</label>
-              <V-Control>
+              <VControl>
                 <Multiselect
                   v-model="wizardData.relatedTo"
                   label="value"
@@ -112,8 +112,8 @@ const onRemoveFile = (error: any, fileInfo: any) => {
                   ]"
                 >
                 </Multiselect>
-              </V-Control>
-            </V-Field>
+              </VControl>
+            </VField>
           </div>
         </div>
       </div>

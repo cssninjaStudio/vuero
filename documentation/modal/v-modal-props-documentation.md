@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-Modal Props
+### VModal Props
 
-Here is the full props available for `<V-Modal />` component:
+Here is the full props available for `<VModal />` component:
 
 | Props                   | Default                                       | Type                              |
 | ----------------------- | --------------------------------------------- | --------------------------------- |

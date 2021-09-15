@@ -9,31 +9,31 @@ Available classes are `is-primary-focus`, `is-success-focus`,
 
 ```vue
 <template>
-  <V-Field>
-    <V-Control>
+  <VField>
+    <VControl>
       <input type="text" class="input is-primary-focus" placeholder="Primary" />
-    </V-Control>
-  </V-Field>
-  <V-Field>
-    <V-Control>
+    </VControl>
+  </VField>
+  <VField>
+    <VControl>
       <input type="text" class="input is-info-focus" placeholder="Info" />
-    </V-Control>
-  </V-Field>
-  <V-Field>
-    <V-Control>
+    </VControl>
+  </VField>
+  <VField>
+    <VControl>
       <input type="text" class="input is-success-focus" placeholder="Success" />
-    </V-Control>
-  </V-Field>
-  <V-Field>
-    <V-Control>
+    </VControl>
+  </VField>
+  <VField>
+    <VControl>
       <input type="text" class="input is-warning-focus" placeholder="Warning" />
-    </V-Control>
-  </V-Field>
-  <V-Field>
-    <V-Control>
+    </VControl>
+  </VField>
+  <VField>
+    <VControl>
       <input type="text" class="input is-danger-focus" placeholder="Danger" />
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -41,50 +41,50 @@ Available classes are `is-primary-focus`, `is-success-focus`,
 
 <!--example-->
 
-<V-Field>
-  <V-Control>
+<VField>
+  <VControl>
     <input
         type="text"
         class="input is-primary-focus"
         placeholder="Primary"
       />
-  </V-Control>
-</V-Field>
-<V-Field>
-  <V-Control>
+  </VControl>
+</VField>
+<VField>
+  <VControl>
     <input
         type="text"
         class="input is-info-focus"
         placeholder="Info"
       />
-  </V-Control>
-</V-Field>
-<V-Field>
-  <V-Control>
+  </VControl>
+</VField>
+<VField>
+  <VControl>
     <input
         type="text"
         class="input is-success-focus"
         placeholder="Success"
       />
-  </V-Control>
-</V-Field>
-<V-Field>
-  <V-Control>
+  </VControl>
+</VField>
+<VField>
+  <VControl>
     <input
         type="text"
         class="input is-warning-focus"
         placeholder="Warning"
       />
-  </V-Control>
-</V-Field>
-<V-Field>
-  <V-Control>
+  </VControl>
+</VField>
+<VField>
+  <VControl>
     <input
         type="text"
         class="input is-danger-focus"
         placeholder="Danger"
       />
-  </V-Control>
-</V-Field>
+  </VControl>
+</VField>
 
 <!--/example-->

@@ -1,19 +1,19 @@
-### V-Action
+### VAction
 
 Vuero provides a versatile small button component named
-`<V-Action />` components can have different colors.
-V-Actions can be `rounded`, `hoverable` or `grey` using the related props.
+`<VAction />` components can have different colors.
+VActions can be `rounded`, `hoverable` or `grey` using the related props.
 
 <!--code-->
 
 ```vue
 <template>
-  <V-Buttons>
-    <V-Action> Action </V-Action>
-    <V-Action rounded> Action </V-Action>
-    <V-Action hoverable> Action </V-Action>
-    <V-Action grey> Action </V-Action>
-  </V-Buttons>
+  <VButtons>
+    <VAction> Action </VAction>
+    <VAction rounded> Action </VAction>
+    <VAction hoverable> Action </VAction>
+    <VAction grey> Action </VAction>
+  </VButtons>
 </template>
 ```
 
@@ -21,11 +21,11 @@ V-Actions can be `rounded`, `hoverable` or `grey` using the related props.
 
 <!--example-->
 
-<V-Buttons>
-  <V-Action> Action </V-Action>
-  <V-Action rounded> Action </V-Action>
-  <V-Action hoverable> Action </V-Action>
-  <V-Action grey> Action </V-Action>
-</V-Buttons>
+<VButtons>
+  <VAction> Action </VAction>
+  <VAction rounded> Action </VAction>
+  <VAction hoverable> Action </VAction>
+  <VAction grey> Action </VAction>
+</VButtons>
 
 <!--/example-->

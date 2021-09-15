@@ -19,8 +19,8 @@ const input = ref('')
 </script>
 
 <template>
-  <V-Field>
-    <V-Control>
+  <VField>
+    <VControl>
       <div class="select">
         <select v-model="input">
           <option value="">Select a Hero</option>
@@ -32,8 +32,8 @@ const input = ref('')
           <option value="Galactus">Galactus</option>
         </select>
       </div>
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -41,8 +41,8 @@ const input = ref('')
 
 <!--example-->
 
-<V-Field>
-  <V-Control>
+<VField>
+  <VControl>
     <div class="select">
       <select v-model="frontmatter.state.input">
         <option value="">Select a Hero</option>
@@ -54,7 +54,7 @@ const input = ref('')
         <option value="Galactus">Galactus</option>
       </select>
     </div>
-  </V-Control>
-</V-Field>
+  </VControl>
+</VField>
 
 <!--/example-->

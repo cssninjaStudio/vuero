@@ -1,6 +1,6 @@
 ### RouterLink
 
-`<V-Button />` provides a `to` property that can be used like
+`<VButton />` provides a `to` property that can be used like
 on `<RouterLink />`. You can also use a `href` property to render
 a standard `<a>` tag. If none is used a `<button>` is rendered insted.
 
@@ -8,12 +8,12 @@ a standard `<a>` tag. If none is used a `<button>` is rendered insted.
 
 ```vue
 <template>
-  <V-Buttons>
-    <V-Button :to="{ name: 'index' }"> Home </V-Button>
-    <V-Button bold :to="{ name: 'index' }"> Home </V-Button>
-    <V-Button rounded href="https://vuero.cssninja.io"> Home </V-Button>
-    <V-Button bold rounded href="https://vuero.cssninja.io"> Home </V-Button>
-  </V-Buttons>
+  <VButtons>
+    <VButton :to="{ name: 'index' }"> Home </VButton>
+    <VButton bold :to="{ name: 'index' }"> Home </VButton>
+    <VButton rounded href="https://vuero.cssninja.io"> Home </VButton>
+    <VButton bold rounded href="https://vuero.cssninja.io"> Home </VButton>
+  </VButtons>
 </template>
 ```
 
@@ -21,19 +21,19 @@ a standard `<a>` tag. If none is used a `<button>` is rendered insted.
 
 <!--example-->
 
-<V-Buttons>
-  <V-Button :to="{ name: 'index' }">
+<VButtons>
+  <VButton :to="{ name: 'index' }">
     Home
-  </V-Button>
-  <V-Button bold :to="{ name: 'index' }">
+  </VButton>
+  <VButton bold :to="{ name: 'index' }">
     Home
-  </V-Button>
-  <V-Button rounded href="https://vuero.cssninja.io">
+  </VButton>
+  <VButton rounded href="https://vuero.cssninja.io">
     Home
-  </V-Button>
-  <V-Button bold rounded href="https://vuero.cssninja.io">
+  </VButton>
+  <VButton bold rounded href="https://vuero.cssninja.io">
     Home
-  </V-Button>
-</V-Buttons>
+  </VButton>
+</VButtons>
 
 <!--/example-->

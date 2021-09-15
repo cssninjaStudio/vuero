@@ -15,12 +15,12 @@ const date = ref({
         <div class="booking-bar-wrapper">
           <img
             class="travel-illustration light-image"
-            src="/@src/assets/illustrations/dashboards/flights/travel.svg?url"
+            src="/@src/assets/illustrations/dashboards/flights/travel.svg"
             alt=""
           />
           <img
             class="travel-illustration dark-image"
-            src="/@src/assets/illustrations/dashboards/flights/travel-dark.svg?url"
+            src="/@src/assets/illustrations/dashboards/flights/travel-dark.svg"
             alt=""
           />
           <div class="booking-bar-info">
@@ -34,10 +34,10 @@ const date = ref({
             </div>
           </div>
           <div class="booking-bar">
-            <v-date-picker v-model="date" is-range color="green" trim-weeks>
+            <Vdate-picker v-model="date" is-range color="green" trim-weeks>
               <template #default="{ inputValue, inputEvents }">
                 <div class="booking-bar-inputs">
-                  <V-Control icon="feather:calendar">
+                  <VControl icon="feather:calendar">
                     <input
                       type="text"
                       class="input flight-datepicker"
@@ -45,8 +45,8 @@ const date = ref({
                       :value="inputValue.start"
                       v-on="inputEvents.start"
                     />
-                  </V-Control>
-                  <V-Control icon="feather:calendar">
+                  </VControl>
+                  <VControl icon="feather:calendar">
                     <input
                       type="text"
                       class="input flight-datepicker"
@@ -54,10 +54,10 @@ const date = ref({
                       :value="inputValue.end"
                       v-on="inputEvents.end"
                     />
-                  </V-Control>
+                  </VControl>
                 </div>
               </template>
-            </v-date-picker>
+            </Vdate-picker>
           </div>
         </div>
 
@@ -103,7 +103,7 @@ const date = ref({
           <!--Flight-->
           <a class="flight-card">
             <img
-              src="/@src/assets/illustrations/dashboards/flights/company1.svg?url"
+              src="/@src/assets/illustrations/dashboards/flights/company1.svg"
               alt=""
             />
             <div class="start">
@@ -129,7 +129,7 @@ const date = ref({
           <!--Flight-->
           <a class="flight-card">
             <img
-              src="/@src/assets/illustrations/dashboards/flights/company2.svg?url"
+              src="/@src/assets/illustrations/dashboards/flights/company2.svg"
               alt=""
             />
             <div class="start">
@@ -155,7 +155,7 @@ const date = ref({
           <!--Flight-->
           <a class="flight-card">
             <img
-              src="/@src/assets/illustrations/dashboards/flights/company1.svg?url"
+              src="/@src/assets/illustrations/dashboards/flights/company1.svg"
               alt=""
             />
             <div class="start">
@@ -181,7 +181,7 @@ const date = ref({
           <!--Flight-->
           <a class="flight-card">
             <img
-              src="/@src/assets/illustrations/dashboards/flights/company3.svg?url"
+              src="/@src/assets/illustrations/dashboards/flights/company3.svg"
               alt=""
             />
             <div class="start">
@@ -207,7 +207,7 @@ const date = ref({
           <!--Flight-->
           <a class="flight-card">
             <img
-              src="/@src/assets/illustrations/dashboards/flights/company1.svg?url"
+              src="/@src/assets/illustrations/dashboards/flights/company1.svg"
               alt=""
             />
             <div class="start">

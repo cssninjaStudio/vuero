@@ -12,7 +12,7 @@ const props = withDefaults(
 <template>
   <div class="icon-list">
     <div v-for="item in props.list" :key="item.id" class="icon-list-item">
-      <V-IconWrap :icon="item.icon" />
+      <VIconWrap :icon="item.icon" />
 
       <div class="item-meta">
         <span>{{ item.label }}</span>

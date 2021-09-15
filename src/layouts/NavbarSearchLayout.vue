@@ -1,6 +1,12 @@
 <script setup lang="ts">
 import { ref, computed, watch } from 'vue'
 import { useRoute } from 'vue-router'
+
+import type {
+  VAvatarProps,
+  VAvatarColor,
+} from '/@src/components/base/avatar/VAvatar.vue'
+import type { UserPopover } from '/@src/models/users'
 import { popovers } from '/@src/data/users/userPopovers'
 import { pageTitle } from '/@src/state/navbarLayoutState'
 import { activePanel } from '/@src/state/activePanelState'
@@ -22,6 +28,32 @@ const isMobileSidebarOpen = ref(false)
 const activeMobileSubsidebar = ref('dashboard')
 const filter = ref('')
 
+const users: VAvatarProps[] = [
+  {
+    picture: '/demo/avatars/12.jpg',
+    initials: 'JS',
+    color: 'info',
+  },
+  {
+    picture: '/demo/avatars/22.jpg',
+    initials: 'JH',
+    color: 'info',
+  },
+  {
+    picture: '/demo/avatars/40.jpg',
+    initials: 'SM',
+    color: 'h-purple',
+  },
+]
+
+function getAvatarData(user: UserPopover): VAvatarProps {
+  return {
+    picture: user.avatar,
+    initials: user.initials,
+    color: user.color as VAvatarColor,
+  }
+}
+
 const filteredData = computed(() => {
   if (!filter.value) {
     return []
@@ -34,27 +66,6 @@ const filteredData = computed(() => {
     )
   })
 })
-
-const users = [
-  {
-    id: 5,
-    picture: '/demo/avatars/12.jpg',
-    initials: 'JS',
-    color: 'info',
-  },
-  {
-    id: 22,
-    picture: '/demo/avatars/22.jpg',
-    initials: 'JH',
-    color: 'info',
-  },
-  {
-    id: 40,
-    picture: '/demo/avatars/40.jpg',
-    initials: 'SM',
-    color: 'h-purple',
-  },
-]
 
 watch(
   () => route.fullPath,
@@ -215,10 +226,10 @@ watch(
       </template>
 
       <template #toolbar-bottom>
-        <V-AvatarStack :avatars="users" :limit="3" size="small" />
-        <V-Dropdown spaced right>
+        <VAvatarStack :avatars="users" :limit="3" size="small" />
+        <VDropdown spaced right>
           <template #button="{ open }">
-            <V-IconButton icon="feather:plus" circle @click="open" />
+            <VIconButton icon="feather:plus" circle @click="open" />
           </template>
           <template #content>
             <a href="#" class="dropdown-item is-media">
@@ -259,7 +270,7 @@ watch(
               </div>
             </a>
           </template>
-        </V-Dropdown>
+        </VDropdown>
       </template>
 
       <!-- Custom navbar search -->
@@ -292,15 +303,11 @@ watch(
                 class="search-results has-slimscroll is-active"
               >
                 <div
-                  v-for="user in filteredData"
-                  :key="user.id"
+                  v-for="(user, key) in filteredData"
+                  :key="key"
                   class="search-result"
                 >
-                  <V-Avatar
-                    :picture="user.avatar"
-                    :initials="user.initials"
-                    :color="user.color"
-                  />
+                  <VAvatar v-bind="getAvatarData(user)" />
                   <div class="meta">
                     <span>{{ user.username }}</span>
                     <span>{{ user.position }}</span>

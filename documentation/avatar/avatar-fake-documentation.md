@@ -9,14 +9,14 @@ See the code examples for more details about usage.
 
 ```vue
 <template>
-  <V-Flex alignItems="flex-end" columnGap=".25rem">
-    <V-Avatar initials="CT" size="small" />
-    <V-Avatar initials="CT" />
-    <V-Avatar initials="CT" size="medium" />
-    <V-Avatar initials="CT" size="large" />
-    <V-Avatar initials="CT" size="big" />
-    <V-Avatar initials="CT" size="xl" />
-  </V-Flex>
+  <VFlex alignItems="flex-end" columnGap=".25rem">
+    <VAvatar initials="CT" size="small" />
+    <VAvatar initials="CT" />
+    <VAvatar initials="CT" size="medium" />
+    <VAvatar initials="CT" size="large" />
+    <VAvatar initials="CT" size="big" />
+    <VAvatar initials="CT" size="xl" />
+  </VFlex>
 </template>
 ```
 
@@ -24,13 +24,13 @@ See the code examples for more details about usage.
 
 <!--example-->
 
-<V-Flex alignItems="flex-end" columnGap=".25rem">
-  <V-Avatar initials="CT" size="small" />
-  <V-Avatar initials="CT" />
-  <V-Avatar initials="CT" size="medium" />
-  <V-Avatar initials="CT" size="large" />
-  <V-Avatar initials="CT" size="big" />
-  <V-Avatar initials="CT" size="xl" />
-</V-Flex>
+<VFlex alignItems="flex-end" columnGap=".25rem">
+  <VAvatar initials="CT" size="small" />
+  <VAvatar initials="CT" />
+  <VAvatar initials="CT" size="medium" />
+  <VAvatar initials="CT" size="large" />
+  <VAvatar initials="CT" size="big" />
+  <VAvatar initials="CT" size="xl" />
+</VFlex>
 
 <!--/example-->

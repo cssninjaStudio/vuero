@@ -19,7 +19,7 @@ import {
 import { initApi, apiSymbol } from '/@src/composable/useApi'
 import useNotyf from '/@src/composable/useNotyf'
 
-import VReloadPrompt from '/@src/components/base/modal/V-ReloadPrompt.vue'
+import VReloadPrompt from './components/base/modal/VReloadPrompt.vue'
 
 type VueroAppOptions = {
   enhanceApp?: (app: App) => Promise<void>

@@ -9,15 +9,15 @@ import { popovers } from '/@src/data/users/userPopovers'
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-pageTitle.value = 'V-CardAction'
+pageTitle.value = 'VCardAction'
 useHead({
-  title: 'V-CardAction - Components - Vuero',
+  title: 'VCardAction - Components - Vuero',
 })
 </script>
 
 <template>
   <div class="page-content-inner">
-    <V-Breadcrumb
+    <VBreadcrumb
       with-icons
       separator="bullet"
       :items="[
@@ -32,7 +32,7 @@ useHead({
           to: { name: 'components' },
         },
         {
-          label: 'V-CardAction',
+          label: 'VCardAction',
           to: { name: 'components-card-action' },
         },
       ]"
@@ -48,33 +48,33 @@ useHead({
 
         <div class="columns is-multiline mb-6">
           <div class="column is-4">
-            <V-CardAction
+            <VCardAction
               avatar="/demo/avatars/19.jpg"
-              badge="/images/icons/flags/germany.svg?url"
+              badge="/images/icons/flags/germany.svg"
               title="Greta K."
               subtitle="Sales Manager"
             >
               <template #action>
-                <V-Tag color="green" label="trending" rounded />
+                <VTag color="green" label="trending" rounded />
               </template>
-            </V-CardAction>
+            </VCardAction>
           </div>
           <div class="column is-4">
-            <V-CardAction
+            <VCardAction
               avatar="/demo/avatars/18.jpg"
-              badge="/images/icons/flags/united-states-of-america.svg?url"
+              badge="/images/icons/flags/united-states-of-america.svg"
               title="George W."
               subtitle="Software Engineer"
             >
               <template #action>
-                <V-IconButton icon="feather:heart" circle />
+                <VIconButton icon="feather:heart" circle />
               </template>
-            </V-CardAction>
+            </VCardAction>
           </div>
           <div class="column is-4">
-            <V-CardAction
+            <VCardAction
               avatar="/demo/avatars/22.jpg"
-              badge="/images/icons/flags/france.svg?url"
+              badge="/images/icons/flags/france.svg"
               title="Sandrine C."
               subtitle="HR Manager"
               radius="rounded"
@@ -82,7 +82,7 @@ useHead({
               <template #action>
                 <WidgetDropdown />
               </template>
-            </V-CardAction>
+            </VCardAction>
           </div>
         </div>
 
@@ -90,43 +90,43 @@ useHead({
 
         <div class="columns is-multiline mb-6">
           <div class="column is-4">
-            <V-CardAction
+            <VCardAction
               avatar="/demo/avatars/19.jpg"
-              badge="/images/icons/flags/germany.svg?url"
+              badge="/images/icons/flags/germany.svg"
               title="Greta K."
               subtitle="Sales Manager"
             >
               <template #action>
-                <V-Tag color="green" label="trending" rounded />
+                <VTag color="green" label="trending" rounded />
               </template>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Quibusnam praeteritis? At multis se probavit. Quoniam, si dis
                 placet, ab Epicuro loqui discimus. Et ille ridens.
               </p>
-            </V-CardAction>
+            </VCardAction>
           </div>
           <div class="column is-4">
-            <V-CardAction
+            <VCardAction
               avatar="/demo/avatars/18.jpg"
-              badge="/images/icons/flags/united-states-of-america.svg?url"
+              badge="/images/icons/flags/united-states-of-america.svg"
               title="George W."
               subtitle="Software Engineer"
             >
               <template #action>
-                <V-Action>View</V-Action>
+                <VAction>View</VAction>
               </template>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Quibusnam praeteritis? At multis se probavit. Quoniam, si dis
                 placet, ab Epicuro loqui discimus. Et ille ridens.
               </p>
-            </V-CardAction>
+            </VCardAction>
           </div>
           <div class="column is-4">
-            <V-CardAction
+            <VCardAction
               avatar="/demo/avatars/22.jpg"
-              badge="/images/icons/flags/france.svg?url"
+              badge="/images/icons/flags/france.svg"
               title="Sandrine C."
               subtitle="HR Manager"
               radius="rounded"
@@ -139,7 +139,7 @@ useHead({
                 Quibusnam praeteritis? At multis se probavit. Quoniam, si dis
                 placet, ab Epicuro loqui discimus. Et ille ridens.
               </p>
-            </V-CardAction>
+            </VCardAction>
           </div>
         </div>
         <!--Props-->

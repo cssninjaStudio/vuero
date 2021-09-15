@@ -25,7 +25,7 @@ export const users = [
     team: [
       {
         id: 148,
-        avatar: null,
+        avatar: undefined,
         name: 'Betty T.',
         initials: 'BT',
         color: 'h-yellow',
@@ -39,7 +39,7 @@ export const users = [
       },
       {
         id: 159,
-        avatar: null,
+        avatar: undefined,
         name: 'John D.',
         initials: 'JD',
         color: 'info',
@@ -86,7 +86,7 @@ export const users = [
       },
       {
         id: 189,
-        avatar: null,
+        avatar: undefined,
         name: 'Alan T.',
         initials: 'AT',
         color: 'success',
@@ -133,7 +133,7 @@ export const users = [
       },
       {
         id: 198,
-        avatar: null,
+        avatar: undefined,
         name: 'Sarah C.',
         initials: 'SC',
         color: 'h-purple',
@@ -213,7 +213,7 @@ export const users = [
     team: [
       {
         id: 189,
-        avatar: null,
+        avatar: undefined,
         name: 'Alan T.',
         initials: 'AT',
         color: 'success',
@@ -253,7 +253,7 @@ export const users = [
     team: [
       {
         id: 148,
-        avatar: null,
+        avatar: undefined,
         name: 'Betty T.',
         initials: 'BT',
         color: 'h-yellow',
@@ -267,7 +267,7 @@ export const users = [
       },
       {
         id: 159,
-        avatar: null,
+        avatar: undefined,
         name: 'John D.',
         initials: 'JD',
         color: 'info',
@@ -300,7 +300,7 @@ export const users = [
     team: [
       {
         id: 198,
-        avatar: null,
+        avatar: undefined,
         name: 'Sarah C.',
         initials: 'SC',
         color: 'h-purple',
@@ -340,7 +340,7 @@ export const users = [
     team: [
       {
         id: 189,
-        avatar: null,
+        avatar: undefined,
         name: 'Alan T.',
         initials: 'AT',
         color: 'success',
@@ -380,7 +380,7 @@ export const users = [
     team: [
       {
         id: 148,
-        avatar: null,
+        avatar: undefined,
         name: 'Betty T.',
         initials: 'BT',
         color: 'h-yellow',
@@ -394,7 +394,7 @@ export const users = [
       },
       {
         id: 159,
-        avatar: null,
+        avatar: undefined,
         name: 'John D.',
         initials: 'JD',
         color: 'info',
@@ -441,7 +441,7 @@ export const users = [
       },
       {
         id: 198,
-        avatar: null,
+        avatar: undefined,
         name: 'Sarah C.',
         initials: 'SC',
         color: 'h-purple',
@@ -481,7 +481,7 @@ export const users = [
     team: [
       {
         id: 148,
-        avatar: null,
+        avatar: undefined,
         name: 'Betty T.',
         initials: 'BT',
         color: 'h-yellow',
@@ -568,7 +568,7 @@ export const users = [
       },
       {
         id: 189,
-        avatar: null,
+        avatar: undefined,
         name: 'Alan T.',
         initials: 'AT',
         color: 'success',
@@ -615,7 +615,7 @@ export const users = [
       },
       {
         id: 198,
-        avatar: null,
+        avatar: undefined,
         name: 'Sarah C.',
         initials: 'SC',
         color: 'h-purple',
@@ -648,7 +648,7 @@ export const users = [
     team: [
       {
         id: 189,
-        avatar: null,
+        avatar: undefined,
         name: 'Alan T.',
         initials: 'AT',
         color: 'success',
@@ -688,7 +688,7 @@ export const users = [
     team: [
       {
         id: 148,
-        avatar: null,
+        avatar: undefined,
         name: 'Betty T.',
         initials: 'BT',
         color: 'h-yellow',
@@ -702,7 +702,7 @@ export const users = [
       },
       {
         id: 159,
-        avatar: null,
+        avatar: undefined,
         name: 'John D.',
         initials: 'JD',
         color: 'info',
@@ -742,7 +742,7 @@ export const users = [
       },
       {
         id: 198,
-        avatar: null,
+        avatar: undefined,
         name: 'Sarah C.',
         initials: 'SC',
         color: 'h-purple',
@@ -782,14 +782,14 @@ export const users = [
     team: [
       {
         id: 148,
-        avatar: null,
+        avatar: undefined,
         name: 'Betty T.',
         initials: 'BT',
         color: 'h-yellow',
       },
       {
         id: 198,
-        avatar: null,
+        avatar: undefined,
         name: 'Sarah C.',
         initials: 'SC',
         color: 'h-purple',

@@ -88,44 +88,40 @@
         </li>
         <li>
           <RouterLink :to="{ name: 'elements-dropdown' }">
-            V-Dropdown
+            VDropdown
           </RouterLink>
         </li>
         <li>
-          <RouterLink :to="{ name: 'elements-loader' }">V-Loader</RouterLink>
+          <RouterLink :to="{ name: 'elements-loader' }">VLoader</RouterLink>
         </li>
         <li>
           <RouterLink :to="{ name: 'elements-placeload' }"
-            >V-Placeload</RouterLink
+            >VPlaceload</RouterLink
           >
         </li>
         <li>
           <RouterLink :to="{ name: 'elements-placeload-text' }"
-            >V-PlaceloadText</RouterLink
+            >VPlaceloadText</RouterLink
           >
         </li>
         <li>
           <RouterLink :to="{ name: 'elements-placeload-avatar' }"
-            >V-PlaceloadAvatar</RouterLink
+            >VPlaceloadAvatar</RouterLink
           >
         </li>
         <li>
-          <RouterLink :to="{ name: 'elements-message' }">
-            V-Message
-          </RouterLink>
+          <RouterLink :to="{ name: 'elements-message' }"> VMessage </RouterLink>
         </li>
         <li>
-          <RouterLink :to="{ name: 'elements-modal' }">V-Modal</RouterLink>
+          <RouterLink :to="{ name: 'elements-modal' }">VModal</RouterLink>
         </li>
         <li>
           <RouterLink :to="{ name: 'elements-progress' }">
-            V-Progress
+            VProgress
           </RouterLink>
         </li>
         <li>
-          <RouterLink :to="{ name: 'elements-tooltip' }">
-            V-Tootlip
-          </RouterLink>
+          <RouterLink :to="{ name: 'elements-tooltip' }"> VTootlip </RouterLink>
         </li>
 
         <li v-has-nested-router-link class="has-children">
@@ -142,12 +138,12 @@
           <ul>
             <li>
               <RouterLink :to="{ name: 'elements-button' }" class="is-submenu">
-                V-Button
+                VButton
               </RouterLink>
             </li>
             <li>
               <RouterLink :to="{ name: 'elements-action' }" class="is-submenu">
-                V-Action
+                VAction
               </RouterLink>
             </li>
             <li>
@@ -155,7 +151,7 @@
                 :to="{ name: 'elements-icon-button' }"
                 class="is-submenu"
               >
-                V-IconButton
+                VIconButton
               </RouterLink>
             </li>
           </ul>
@@ -240,12 +236,12 @@
             </li>
             <li>
               <RouterLink :to="{ name: 'elements-control' }" class="is-submenu">
-                V-Control
+                VControl
               </RouterLink>
             </li>
             <li>
               <RouterLink :to="{ name: 'elements-field' }" class="is-submenu">
-                V-Field
+                VField
               </RouterLink>
             </li>
           </ul>
@@ -272,7 +268,7 @@
                   class="iconify"
                   data-icon="feather:circle"
                 ></i>
-                V-AnimatedCheckbox
+                VAnimatedCheckbox
               </RouterLink>
             </li>
             <li>
@@ -285,7 +281,7 @@
                   class="iconify"
                   data-icon="feather:circle"
                 ></i>
-                V-Checkbox
+                VCheckbox
               </RouterLink>
             </li>
             <li>
@@ -295,7 +291,7 @@
                   class="iconify"
                   data-icon="feather:circle"
                 ></i>
-                V-Radio
+                VRadio
               </RouterLink>
             </li>
             <li>
@@ -308,7 +304,7 @@
                   class="iconify"
                   data-icon="feather:circle"
                 ></i>
-                V-SwitchBlock
+                VSwitchBlock
               </RouterLink>
             </li>
             <li>
@@ -321,7 +317,7 @@
                   class="iconify"
                   data-icon="feather:circle"
                 ></i>
-                V-SwitchSegment
+                VSwitchSegment
               </RouterLink>
             </li>
           </ul>
@@ -349,7 +345,7 @@
                   class="iconify"
                   data-icon="feather:circle"
                 ></i>
-                V-Calendar &amp; V-DatePicker
+                VCalendar &amp; VDatePicker
               </RouterLink>
             </li>
             <li>
@@ -362,7 +358,7 @@
                   class="iconify"
                   data-icon="feather:circle"
                 ></i>
-                V-IMaskInput
+                VIMaskInput
               </RouterLink>
             </li>
             <li>
@@ -375,7 +371,7 @@
                   class="iconify"
                   data-icon="feather:circle"
                 ></i>
-                V-FilePond
+                VFilePond
               </RouterLink>
             </li>
             <li>
@@ -388,7 +384,7 @@
                   class="iconify"
                   data-icon="feather:circle"
                 ></i>
-                V-CreditCard
+                VCreditCard
               </RouterLink>
             </li>
 

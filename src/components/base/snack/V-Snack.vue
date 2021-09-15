@@ -1,28 +1,26 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 
-export type SnackColor = 'primary' | 'success' | 'info' | 'warning' | 'danger'
-export type SnackSize = 'small'
+export type VSnackColor = 'primary' | 'success' | 'info' | 'warning' | 'danger'
+export type VSnackSize = 'small'
+export interface VSnackProps {
+  title: string
+  icon?: string
+  image?: string
+  placeholder?: string
+  color?: VSnackColor
+  size?: VSnackSize
+  solid?: boolean
+  white?: boolean
+}
 
-const props = withDefaults(
-  defineProps<{
-    title: string
-    icon?: string
-    image?: string
-    placeholder?: string
-    color?: SnackColor
-    size?: SnackSize
-    solid?: boolean
-    white?: boolean
-  }>(),
-  {
-    icon: undefined,
-    image: undefined,
-    color: undefined,
-    size: undefined,
-    placeholder: 'https://via.placeholder.com/50x50',
-  }
-)
+const props = withDefaults(defineProps<VSnackProps>(), {
+  icon: undefined,
+  image: undefined,
+  color: undefined,
+  size: undefined,
+  placeholder: 'https://via.placeholder.com/50x50',
+})
 
 function placeholderHandler(event: Event) {
   const target = event.target as HTMLImageElement
@@ -35,11 +33,14 @@ const isIconify = computed(() => {
 </script>
 
 <template>
-  <div class="snack" :class="[white && 'is-white', size && `is-${size}`]">
+  <div
+    class="snack"
+    :class="[props.white && 'is-white', props.size && `is-${props.size}`]"
+  >
     <div
-      v-if="icon"
+      v-if="props.icon"
       class="snack-media is-icon"
-      :class="[color && `is-${color}`, solid && `is-solid`]"
+      :class="[props.color && `is-${props.color}`, props.solid && `is-solid`]"
     >
       <i
         v-if="isIconify"
@@ -47,17 +48,17 @@ const isIconify = computed(() => {
         class="iconify snack-icon"
         :data-icon="icon"
       ></i>
-      <i v-else aria-hidden="true" class="snack-icon" :class="icon"></i>
+      <i v-else aria-hidden="true" class="snack-icon" :class="props.icon"></i>
     </div>
-    <div v-else-if="image" class="snack-media">
+    <div v-else-if="props.image" class="snack-media">
       <img
         class="avatar"
-        :src="image"
+        :src="props.image"
         alt=""
         @error.once="placeholderHandler"
       />
     </div>
-    <span class="snack-text">{{ title }}</span>
+    <span class="snack-text">{{ props.title }}</span>
     <span class="snack-action">
       <slot></slot>
     </span>

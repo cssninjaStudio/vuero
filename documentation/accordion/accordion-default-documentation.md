@@ -1,7 +1,7 @@
-### V-Accordion
+### VAccordion
 
 Vuero provides 2 accordion components with enough styling to be able to use
-them out of the box: `<V-Accordion />` and `<V-Collapse />`.
+them out of the box: `<VAccordion />` and `<VCollapse />`.
 In the simple accordion, each item can be openened separately, whereas in the
 exclusive accordion, only one item can be expanded at a time.
 Pass an **Array** to the `items` props to render the accordion.
@@ -28,11 +28,11 @@ const data = [
 
 <template>
   <div class="column is-6">
-    <V-Accordion :items="data" />
+    <VAccordion :items="data" />
   </div>
 
   <div class="column is-6">
-    <V-Accordion :items="data" exclusive />
+    <VAccordion :items="data" exclusive />
   </div>
 </template>
 ```

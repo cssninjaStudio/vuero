@@ -1,19 +1,19 @@
-import type { Chart } from 'billboard.js'
+import type { Chart, ChartOptions, DataItem } from 'billboard.js'
 import { themeColors } from '/@src/utils/themeColors'
 import { gauge } from 'billboard.js'
 
-export const options = {
+export const options: ChartOptions = {
   data: {
     columns: [['data', 91.4]],
     type: gauge(),
-    onclick: (data: number, index: number) => {
-      console.log('[gaugeSimple] onclick', data, index)
+    onclick(this: Chart, d: DataItem, element: SVGAElement) {
+      console.log('[gaugeSimple] onclick', d, element)
     },
-    onover: (data: number, index: number) => {
-      console.log('[gaugeSimple] onover', data, index)
+    onover(this: Chart, d: DataItem, element?: SVGAElement) {
+      console.log('[gaugeSimple] onover', d, element)
     },
-    onout: (data: number, index: number) => {
-      console.log('[gaugeSimple] onout', data, index)
+    onout(this: Chart, d: DataItem, element?: SVGAElement) {
+      console.log('[gaugeSimple] onout', d, element)
     },
   },
   gauge: {},
@@ -36,7 +36,7 @@ export const options = {
   },
   title: {
     text: 'Gauge Chart',
-    position: 'top-left',
+    position: 'left',
     padding: {
       bottom: 20,
       right: 20,

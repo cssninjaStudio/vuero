@@ -19,9 +19,9 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
             <div class="dashboard-tile">
               <div class="tile-head">
                 <h3 class="dark-inverted">Transactions</h3>
-                <V-IconBox color="primary" size="small" rounded>
+                <VIconBox color="primary" size="small" rounded>
                   <i aria-hidden="true" class="fas fa-gem"></i>
-                </V-IconBox>
+                </VIconBox>
               </div>
               <div class="tile-body">
                 <span class="dark-inverted">8,637</span>
@@ -44,9 +44,9 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
             <div class="dashboard-tile">
               <div class="tile-head">
                 <h3 class="dark-inverted">Subscriptions</h3>
-                <V-IconBox color="orange" size="small" rounded>
+                <VIconBox color="orange" size="small" rounded>
                   <i aria-hidden="true" class="fas fa-user-plus"></i>
-                </V-IconBox>
+                </VIconBox>
               </div>
               <div class="tile-body">
                 <span class="dark-inverted">1,378</span>
@@ -69,9 +69,9 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
             <div class="dashboard-tile">
               <div class="tile-head">
                 <h3 class="dark-inverted">Referals</h3>
-                <V-IconBox color="green" size="small" rounded>
+                <VIconBox color="green" size="small" rounded>
                   <i aria-hidden="true" class="fas fa-bullhorn"></i>
-                </V-IconBox>
+                </VIconBox>
               </div>
               <div class="tile-body">
                 <span class="dark-inverted">1,911</span>
@@ -155,7 +155,7 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
                 <div class="value">
                   <span class="dark-inverted">78%</span>
                 </div>
-                <V-Progress size="tiny" :value="78" />
+                <VProgress size="tiny" :value="78" />
                 <div class="progress-foot">
                   <span class="text-h-green"
                     >+6.4%

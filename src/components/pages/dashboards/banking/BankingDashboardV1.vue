@@ -38,7 +38,7 @@ import {
                   <div class="card-number">
                     <span>** 4628</span>
                     <img
-                      src="/images/icons/dashboards/banking/visa-squared-white.svg?url"
+                      src="/images/icons/dashboards/banking/visa-squared-white.svg"
                       alt=""
                     />
                   </div>
@@ -76,7 +76,7 @@ import {
                 <h4 class="dark-inverted">Type</h4>
                 <span class="has-image">
                   <img
-                    src="/images/icons/dashboards/banking/visa-squared-color.svg?url"
+                    src="/images/icons/dashboards/banking/visa-squared-color.svg"
                     alt=""
                   />
                   Credit card
@@ -90,7 +90,7 @@ import {
                   <div class="card-number">
                     <span>** 2649</span>
                     <img
-                      src="/images/icons/dashboards/banking/visa-squared-white.svg?url"
+                      src="/images/icons/dashboards/banking/visa-squared-white.svg"
                       alt=""
                     />
                   </div>
@@ -118,53 +118,53 @@ import {
           </div>
 
           <div class="transactions">
-            <V-Block
+            <VBlock
               title="Food Delivery"
               subtitle="Oct 23, 2020 - 8:46pm"
               center
               lighter
             >
               <template #icon>
-                <V-IconBox color="green" rounded>
+                <VIconBox color="green" rounded>
                   <i aria-hidden="true" class="lnil lnil-service"></i>
-                </V-IconBox>
+                </VIconBox>
               </template>
               <template #action>
                 <span class="dark-inverted">- $41.49</span>
               </template>
-            </V-Block>
+            </VBlock>
 
-            <V-Block
+            <VBlock
               title="Market Earnings"
               subtitle="Oct 18, 2020 - 9:11am"
               center
               lighter
             >
               <template #icon>
-                <V-IconBox color="orange" rounded>
+                <VIconBox color="orange" rounded>
                   <i aria-hidden="true" class="lnil lnil-analytics-alt-1"></i>
-                </V-IconBox>
+                </VIconBox>
               </template>
               <template #action>
                 <span class="dark-inverted">+ $263.39</span>
               </template>
-            </V-Block>
+            </VBlock>
 
-            <V-Block
+            <VBlock
               title="Online Order"
               subtitle="Oct 16, 2020 - 2:13pm"
               center
               lighter
             >
               <template #icon>
-                <V-IconBox color="purple" rounded>
+                <VIconBox color="purple" rounded>
                   <i aria-hidden="true" class="lnil lnil-cart-alt"></i>
-                </V-IconBox>
+                </VIconBox>
               </template>
               <template #action>
                 <span class="dark-inverted">- $92.00</span>
               </template>
-            </V-Block>
+            </VBlock>
           </div>
         </div>
       </div>
@@ -176,8 +176,8 @@ import {
               <div class="title-wrap">
                 <h3 class="dark-inverted">Quick Transfer</h3>
               </div>
-              <V-Field class="is-image-select has-curved-images">
-                <V-Control>
+              <VField class="is-image-select has-curved-images">
+                <VControl>
                   <Multiselect
                     v-model="selectSlotValue"
                     placeholder="Select a language"
@@ -208,8 +208,8 @@ import {
                       </span>
                     </template>
                   </Multiselect>
-                </V-Control>
-              </V-Field>
+                </VControl>
+              </VField>
 
               <p class="context-text">
                 Select one of your bank accounts to transfer some funds. The
@@ -242,7 +242,7 @@ import {
               </div>
 
               <div class="progress-wrap m-b-10 m-t-10">
-                <V-Progress size="tiny" :value="65" />
+                <VProgress size="tiny" :value="65" />
               </div>
               <p class="context-text">
                 This is your Vuero customer level. Reach out higher levels to
@@ -273,7 +273,7 @@ import {
                     :offset="[0, 10]"
                     placement="bottom-end"
                   >
-                    <V-Avatar color="warning" initials="BT" size="small" />
+                    <VAvatar color="warning" initials="BT" size="small" />
                     <template #content>
                       <UserPopoverContent :user="popovers.user122" />
                     </template>
@@ -284,7 +284,7 @@ import {
                     :offset="[0, 10]"
                     placement="bottom-end"
                   >
-                    <V-Avatar picture="/demo/avatars/18.jpg" size="small" />
+                    <VAvatar picture="/demo/avatars/18.jpg" size="small" />
                     <template #content>
                       <UserPopoverContent :user="popovers.user18" />
                     </template>
@@ -295,7 +295,7 @@ import {
                     :offset="[0, 10]"
                     placement="bottom-end"
                   >
-                    <V-Avatar color="info" initials="JD" size="small" />
+                    <VAvatar color="info" initials="JD" size="small" />
                     <template #content>
                       <UserPopoverContent :user="popovers.user123" />
                     </template>
@@ -306,7 +306,7 @@ import {
                     :offset="[0, 10]"
                     placement="bottom-end"
                   >
-                    <V-Avatar picture="/demo/avatars/7.jpg" size="small" />
+                    <VAvatar picture="/demo/avatars/7.jpg" size="small" />
                     <template #content>
                       <UserPopoverContent :user="popovers.user7" />
                     </template>
@@ -325,8 +325,8 @@ import {
               </div>
 
               <div class="transfer-form">
-                <V-Field class="is-image-select has-curved-images">
-                  <V-Control>
+                <VField class="is-image-select has-curved-images">
+                  <VControl>
                     <Multiselect
                       v-model="selectSlotValue"
                       placeholder="Select a language"
@@ -357,8 +357,8 @@ import {
                         </span>
                       </template>
                     </Multiselect>
-                  </V-Control>
-                </V-Field>
+                  </VControl>
+                </VField>
 
                 <div class="field">
                   <label>Amount</label>
@@ -387,9 +387,9 @@ import {
                 </p>
 
                 <div class="submit-wrap">
-                  <V-Button color="primary" size="big" fullwidth raised bold>
+                  <VButton color="primary" size="big" fullwidth raised bold>
                     Send Money
-                  </V-Button>
+                  </VButton>
                 </div>
               </div>
             </div>
@@ -397,16 +397,16 @@ import {
 
           <div class="column is-12">
             <div class="dashboard-card is-income">
-              <V-Field class="is-minimal-select">
-                <V-Control>
+              <VField class="is-minimal-select">
+                <VControl>
                   <Multiselect
                     v-model="valueSingle"
                     :options="optionsSingle"
                     placeholder="Select an option"
                     :max-height="145"
                   />
-                </V-Control>
-              </V-Field>
+                </VControl>
+              </VField>
 
               <ApexChart
                 id="income-chart"

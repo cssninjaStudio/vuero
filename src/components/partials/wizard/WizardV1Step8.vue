@@ -24,12 +24,12 @@ const validateStep = async () => {
       <div class="placeholder-content">
         <img
           class="light-image"
-          src="/@src/assets/illustrations/wizard/finish.svg?url"
+          src="/@src/assets/illustrations/wizard/finish.svg"
           alt=""
         />
         <img
           class="dark-image"
-          src="/@src/assets/illustrations/wizard/finish-dark.svg?url"
+          src="/@src/assets/illustrations/wizard/finish-dark.svg"
           alt=""
         />
         <h3>Get ready for next steps.</h3>
@@ -38,9 +38,9 @@ const validateStep = async () => {
           creating tasks.
         </p>
         <div class="button-wrap">
-          <V-Button color="primary" rounded bold elevated @click="validateStep">
+          <VButton color="primary" rounded bold elevated @click="validateStep">
             View Project
-          </V-Button>
+          </VButton>
         </div>
       </div>
     </div>

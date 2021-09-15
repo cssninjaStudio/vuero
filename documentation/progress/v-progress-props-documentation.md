@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-Progress Props
+### VProgress Props
 
-Here is the full props available for `<V-Progress />` component:
+Here is the full props available for `<VProgress />` component:
 
 | Props | Default                                       | Type                                              |
 | ----- | --------------------------------------------- | ------------------------------------------------- |

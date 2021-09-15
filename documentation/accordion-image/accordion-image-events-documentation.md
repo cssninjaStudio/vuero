@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-AccordionImage Events
+### VAccordionImage Events
 
-Here is the full events available for `<V-AccordionImage />` component:
+Here is the full events available for `<VAccordionImage />` component:
 
 | Event   | Callback                                                   | Description                                  |
 | ------- | ---------------------------------------------------------- | -------------------------------------------- |

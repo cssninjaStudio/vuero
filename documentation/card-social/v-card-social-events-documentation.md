@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-CardSocial Events
+### VCardSocial Events
 
-Here is the full events available for `<V-CardSocial />` component:
+Here is the full events available for `<VCardSocial />` component:
 
 | Event         | Callback                                                     | Description                                  |
 | ------------- | ------------------------------------------------------------ | -------------------------------------------- |

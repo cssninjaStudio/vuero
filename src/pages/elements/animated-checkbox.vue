@@ -8,15 +8,15 @@ import { pageTitle } from '/@src/state/sidebarLayoutState'
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-pageTitle.value = 'V-AnimatedCheckbox'
+pageTitle.value = 'VAnimatedCheckbox'
 useHead({
-  title: 'V-AnimatedCheckbox - Switches Elements - Vuero',
+  title: 'VAnimatedCheckbox - Switches Elements - Vuero',
 })
 </script>
 
 <template>
   <div class="page-content-inner">
-    <V-Breadcrumb
+    <VBreadcrumb
       with-icons
       separator="bullet"
       :items="[
@@ -34,7 +34,7 @@ useHead({
           label: 'Switches',
         },
         {
-          label: 'V-AnimatedCheckbox',
+          label: 'VAnimatedCheckbox',
           to: { name: 'elements-animated-checkbox' },
         },
       ]"

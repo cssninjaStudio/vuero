@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-Control Props
+### VControl Props
 
-Here is the full props available for `<V-Control />` component:
+Here is the full props available for `<VControl />` component:
 
 | Props      | Default                                       | Type    |
 | ---------- | --------------------------------------------- | ------- |

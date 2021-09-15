@@ -1,7 +1,21 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 
-import { projects } from '/@src/data/layouts/flex-list-v2'
+import type { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
+import * as listData from '/@src/data/layouts/flex-list-v2'
+
+export interface ProjectData {
+  id: number
+  name: string
+  customer: string
+  duration: string
+  picture: string
+  industry: string
+  status: string
+  team: VAvatarProps[]
+}
+
+const projects = listData.projects as ProjectData[]
 
 const props = withDefaults(
   defineProps<{
@@ -35,13 +49,13 @@ const filteredData = computed(() => {
 <template>
   <div>
     <div class="list-flex-toolbar is-reversed">
-      <V-Control icon="feather:search">
+      <VControl icon="feather:search">
         <input
           v-model="filters"
           class="input custom-text-filter"
           placeholder="Search..."
         />
-      </V-Control>
+      </VControl>
 
       <div class="tabs-inner">
         <div class="tabs">
@@ -60,7 +74,7 @@ const filteredData = computed(() => {
 
     <div class="flex-list-wrapper flex-list-v2">
       <!--List Empty Search Placeholder -->
-      <V-PlaceholderPage
+      <VPlaceholderPage
         :class="[filteredData.length !== 0 && 'is-hidden']"
         title="We couldn't find any matching results."
         subtitle="Too bad. Looks like we couldn't find any matching results for the
@@ -71,16 +85,16 @@ const filteredData = computed(() => {
         <template #image>
           <img
             class="light-image"
-            src="/@src/assets/illustrations/placeholders/search-4.svg?url"
+            src="/@src/assets/illustrations/placeholders/search-4.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/@src/assets/illustrations/placeholders/search-4-dark.svg?url"
+            src="/@src/assets/illustrations/placeholders/search-4-dark.svg"
             alt=""
           />
         </template>
-      </V-PlaceholderPage>
+      </VPlaceholderPage>
 
       <!--Active Tab-->
       <div
@@ -111,7 +125,7 @@ const filteredData = computed(() => {
                 class="flex-table-item"
               >
                 <div class="flex-table-cell is-media is-grow">
-                  <V-Avatar :picture="item.picture" />
+                  <VAvatar :picture="item.picture" />
                   <div>
                     <span class="item-name dark-inverted">{{ item.name }}</span>
                     <span class="item-meta">
@@ -140,7 +154,7 @@ const filteredData = computed(() => {
                   class="flex-table-cell h-hidden-tablet-p"
                   data-th="Relations"
                 >
-                  <V-AvatarStack
+                  <VAvatarStack
                     :avatars="item.team"
                     size="small"
                     :limit="3"
@@ -156,7 +170,7 @@ const filteredData = computed(() => {
         </div>
 
         <!--Table Pagination-->
-        <V-FlexPagination
+        <VFlexPagination
           v-if="filteredData.length > 5"
           :item-per-page="10"
           :total-items="873"
@@ -172,7 +186,7 @@ const filteredData = computed(() => {
         :class="[tab === 'closed' && 'is-active']"
       >
         <!--Empty placeholder-->
-        <V-PlaceholderPage
+        <VPlaceholderPage
           title="No closed projects."
           subtitle="Looks like you don't have any closed project yet. When you'll
               start closing off projects, they will be showing up in here."
@@ -180,16 +194,16 @@ const filteredData = computed(() => {
           <template #image>
             <img
               class="light-image is-larger"
-              src="/@src/assets/illustrations/placeholders/projects.svg?url"
+              src="/@src/assets/illustrations/placeholders/projects.svg"
               alt=""
             />
             <img
               class="dark-image is-larger"
-              src="/@src/assets/illustrations/placeholders/projects-dark.svg?url"
+              src="/@src/assets/illustrations/placeholders/projects-dark.svg"
               alt=""
             />
           </template>
-        </V-PlaceholderPage>
+        </VPlaceholderPage>
       </div>
     </div>
   </div>

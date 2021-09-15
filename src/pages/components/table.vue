@@ -16,7 +16,7 @@ useHead({
 
 <template>
   <div class="page-content-inner">
-    <V-Breadcrumb
+    <VBreadcrumb
       with-icons
       separator="bullet"
       :items="[
@@ -46,7 +46,7 @@ useHead({
         <!--Table-->
         <TableBaseDocumentation />
 
-        <V-Card radius="smooth" class="demo-table mb-6">
+        <VCard radius="smooth" class="demo-table mb-6">
           <table
             class="table is-hoverable is-fullwidth"
             aria-label="Vuero basic table example"
@@ -118,12 +118,12 @@ useHead({
               </tr>
             </tbody>
           </table>
-        </V-Card>
+        </VCard>
 
         <!--Table striped-->
         <TableStripedDocumentation />
 
-        <V-Card radius="smooth" class="demo-table">
+        <VCard radius="smooth" class="demo-table">
           <table
             class="table is-striped is-fullwidth"
             aria-label="Vuero striped table example"
@@ -195,12 +195,12 @@ useHead({
               </tr>
             </tbody>
           </table>
-        </V-Card>
+        </VCard>
 
         <!--Table media-->
         <TableMediaDocumentation />
 
-        <V-Card radius="smooth" class="demo-table">
+        <VCard radius="smooth" class="demo-table">
           <table
             class="table is-hoverable is-fullwidth"
             aria-label="Vuero media table example"
@@ -223,7 +223,7 @@ useHead({
             <tbody>
               <tr>
                 <td class="is-media">
-                  <V-Avatar picture="/demo/avatars/8.gif" />
+                  <VAvatar picture="/demo/avatars/8.gif" />
                 </td>
                 <td>Tina</td>
                 <td>Bergmann</td>
@@ -236,7 +236,7 @@ useHead({
               </tr>
               <tr>
                 <td class="is-media">
-                  <V-Avatar picture="/demo/avatars/1.gif" />
+                  <VAvatar picture="/demo/avatars/1.gif" />
                 </td>
                 <td>John</td>
                 <td>Wistmus</td>
@@ -249,7 +249,7 @@ useHead({
               </tr>
               <tr>
                 <td class="is-media">
-                  <V-Avatar picture="/demo/avatars/4.gif" />
+                  <VAvatar picture="/demo/avatars/4.gif" />
                 </td>
                 <td>Sam</td>
                 <td>Watson</td>
@@ -262,7 +262,7 @@ useHead({
               </tr>
               <tr>
                 <td class="is-media">
-                  <V-Avatar initials="JD" color="info" />
+                  <VAvatar initials="JD" color="info" />
                 </td>
                 <td>Jolaine</td>
                 <td>Joestar</td>
@@ -275,7 +275,7 @@ useHead({
               </tr>
               <tr>
                 <td class="is-media">
-                  <V-Avatar picture="/demo/avatars/3.gif" />
+                  <VAvatar picture="/demo/avatars/3.gif" />
                 </td>
                 <td>Anders</td>
                 <td>Jensen</td>
@@ -288,7 +288,7 @@ useHead({
               </tr>
             </tbody>
           </table>
-        </V-Card>
+        </VCard>
       </div>
       <div v-if="toc.length" class="column is-3 toc-column">
         <DocumentationToc :toc="toc" />

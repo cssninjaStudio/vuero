@@ -8,8 +8,8 @@ to apply this style. Please refer to markup for more details about usage.
 
 ```vue
 <template>
-  <V-Field grouped>
-    <V-Control>
+  <VField grouped>
+    <VControl>
       <div class="file has-name">
         <label class="file-label">
           <input class="file-input" type="file" name="resume" />
@@ -24,8 +24,8 @@ to apply this style. Please refer to markup for more details about usage.
           </span>
         </label>
       </div>
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -33,8 +33,8 @@ to apply this style. Please refer to markup for more details about usage.
 
 <!--example-->
 
-<V-Field grouped>
-    <V-Control>
+<VField grouped>
+    <VControl>
         <div class="file has-name">
             <label class="file-label">
                 <input class="file-input" type="file" name="resume">
@@ -51,7 +51,7 @@ to apply this style. Please refer to markup for more details about usage.
                 </span>
             </label>
         </div>
-    </V-Control>
-</V-Field>
+    </VControl>
+</VField>
 
 <!--/example-->

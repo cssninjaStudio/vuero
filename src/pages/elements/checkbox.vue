@@ -8,15 +8,15 @@ import { pageTitle } from '/@src/state/sidebarLayoutState'
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-pageTitle.value = 'V-Checkbox'
+pageTitle.value = 'VCheckbox'
 useHead({
-  title: 'V-Checkbox - Forms Elements - Vuero',
+  title: 'VCheckbox - Forms Elements - Vuero',
 })
 </script>
 
 <template>
   <div class="page-content-inner">
-    <V-Breadcrumb
+    <VBreadcrumb
       with-icons
       separator="bullet"
       :items="[
@@ -34,7 +34,7 @@ useHead({
           label: 'Switches',
         },
         {
-          label: 'V-Checkbox',
+          label: 'VCheckbox',
           to: { name: 'elements-checkbox' },
         },
       ]"
@@ -46,7 +46,7 @@ useHead({
         :class="[toc.length > 0 ? 'is-9' : 'is-12']"
         class="column doc-column"
       >
-        <!-- V-Checkbox -->
+        <!-- VCheckbox -->
         <CheckboxOutlinedDocumentation />
 
         <CheckboxOutlinedCircleDocumentation />

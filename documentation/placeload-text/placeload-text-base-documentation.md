@@ -1,13 +1,13 @@
-### V-PlaceloadText
+### VPlaceloadText
 
-Vuero provides a `<V-PlaceloadText />` component to display text skeleton
+Vuero provides a `<VPlaceloadText />` component to display text skeleton
 while loading. Check the markup for more details.
 
 <!--code-->
 
 ```vue
 <template>
-  <V-PlaceloadText />
+  <VPlaceloadText />
 </template>
 ```
 
@@ -15,6 +15,6 @@ while loading. Check the markup for more details.
 
 <!--example-->
 
-<V-PlaceloadText />
+<VPlaceloadText />
 
 <!--/example-->

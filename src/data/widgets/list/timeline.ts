@@ -2,7 +2,7 @@ export const timeline = [
   {
     id: 0,
     icon: 'feather:phone-call',
-    picture: null,
+    picture: undefined,
     title: "Call Danny at Colby's",
     time: 'Today - 11:30am',
     color: 'primary',
@@ -18,7 +18,7 @@ export const timeline = [
   {
     id: 2,
     icon: 'feather:message-circle',
-    picture: null,
+    picture: undefined,
     title: "Answer Annie's message",
     time: 'Today - 01:45pm',
     color: 'info',
@@ -26,7 +26,7 @@ export const timeline = [
   {
     id: 3,
     icon: 'feather:mail',
-    picture: null,
+    picture: undefined,
     title: 'Send new campaign',
     time: 'Today - 02:30pm',
     color: 'success',
@@ -34,7 +34,7 @@ export const timeline = [
   {
     id: 4,
     icon: 'feather:smile',
-    picture: null,
+    picture: undefined,
     title: 'Project review',
     time: 'Today - 03:30pm',
     color: '',
@@ -42,7 +42,7 @@ export const timeline = [
   {
     id: 5,
     icon: 'feather:phone-call',
-    picture: null,
+    picture: undefined,
     title: 'Call Trisha Jackson',
     time: 'Today - 05:00pm',
     color: 'orange',
@@ -50,7 +50,7 @@ export const timeline = [
   {
     id: 6,
     icon: 'feather:feather',
-    picture: null,
+    picture: undefined,
     title: 'Write proposal for Don',
     time: 'Today - 06:00pm',
     color: 'yellow',

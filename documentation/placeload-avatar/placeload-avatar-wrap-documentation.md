@@ -1,17 +1,17 @@
 ### Wrapping
 
-You can set multiple `<V-PlaceloadAvatar />` on a row.
-Simply wrap them in `<V-AvatarStack />`
+You can set multiple `<VPlaceloadAvatar />` on a row.
+Simply wrap them in `<VAvatarStack />`
 
 <!--code-->
 
 ```vue
 <template>
-  <V-AvatarStack>
-    <V-PlaceloadAvatar class="mx-1" />
-    <V-PlaceloadAvatar class="mx-1" />
-    <V-PlaceloadAvatar class="mx-1" />
-  </V-AvatarStack>
+  <VAvatarStack>
+    <VPlaceloadAvatar class="mx-1" />
+    <VPlaceloadAvatar class="mx-1" />
+    <VPlaceloadAvatar class="mx-1" />
+  </VAvatarStack>
 </template>
 ```
 
@@ -19,10 +19,10 @@ Simply wrap them in `<V-AvatarStack />`
 
 <!--example-->
 
-<V-AvatarStack>
-  <V-PlaceloadAvatar class="mx-1" />
-  <V-PlaceloadAvatar class="mx-1" />
-  <V-PlaceloadAvatar class="mx-1" />
-</V-AvatarStack>
+<VAvatarStack>
+  <VPlaceloadAvatar class="mx-1" />
+  <VPlaceloadAvatar class="mx-1" />
+  <VPlaceloadAvatar class="mx-1" />
+</VAvatarStack>
 
 <!--/example-->

@@ -1,6 +1,6 @@
 ### Feather Icons
 
-The Vuero `<V-IconBox />` component works also very well with
+The Vuero `<VIconBox />` component works also very well with
 the `Feather Icons` icon set. Use the same markup and
 just replace the existing icons with some from Feather Icons.
 
@@ -8,39 +8,39 @@ just replace the existing icons with some from Feather Icons.
 
 ```vue
 <template>
-  <V-IconBox size="medium" color="primary" rounded>
+  <VIconBox size="medium" color="primary" rounded>
     <i class="iconify" data-icon="feather:award"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="info" rounded>
+  </VIconBox>
+  <VIconBox size="medium" color="info" rounded>
     <i class="iconify" data-icon="feather:chrome"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="success" rounded>
+  </VIconBox>
+  <VIconBox size="medium" color="success" rounded>
     <i class="iconify" data-icon="feather:clock"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="warning" rounded>
+  </VIconBox>
+  <VIconBox size="medium" color="warning" rounded>
     <i class="iconify" data-icon="feather:coffee"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="danger" rounded>
+  </VIconBox>
+  <VIconBox size="medium" color="danger" rounded>
     <i class="iconify" data-icon="feather:home"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="purple" rounded>
+  </VIconBox>
+  <VIconBox size="medium" color="purple" rounded>
     <i class="iconify" data-icon="feather:lock"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="yellow" rounded>
+  </VIconBox>
+  <VIconBox size="medium" color="yellow" rounded>
     <i class="iconify" data-icon="feather:moon"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="orange" rounded>
+  </VIconBox>
+  <VIconBox size="medium" color="orange" rounded>
     <i class="iconify" data-icon="feather:phone"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="green" rounded>
+  </VIconBox>
+  <VIconBox size="medium" color="green" rounded>
     <i class="iconify" data-icon="feather:paperclip"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="red" rounded>
+  </VIconBox>
+  <VIconBox size="medium" color="red" rounded>
     <i class="iconify" data-icon="feather:smile"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="blue" rounded>
+  </VIconBox>
+  <VIconBox size="medium" color="blue" rounded>
     <i class="iconify" data-icon="feather:shield"></i>
-  </V-IconBox>
+  </VIconBox>
 </template>
 ```
 
@@ -49,39 +49,39 @@ just replace the existing icons with some from Feather Icons.
 <!--example-->
 
 <div class="icon-boxes">
-    <V-IconBox size="medium" color="primary" rounded>
+    <VIconBox size="medium" color="primary" rounded>
         <i class="iconify" data-icon="feather:award"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="info" rounded>
+    </VIconBox>
+    <VIconBox size="medium" color="info" rounded>
         <i class="iconify" data-icon="feather:chrome"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="success" rounded>
+    </VIconBox>
+    <VIconBox size="medium" color="success" rounded>
         <i class="iconify" data-icon="feather:clock"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="warning" rounded>
+    </VIconBox>
+    <VIconBox size="medium" color="warning" rounded>
         <i class="iconify" data-icon="feather:coffee"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="danger" rounded>
+    </VIconBox>
+    <VIconBox size="medium" color="danger" rounded>
         <i class="iconify" data-icon="feather:home"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="purple" rounded>
+    </VIconBox>
+    <VIconBox size="medium" color="purple" rounded>
         <i class="iconify" data-icon="feather:lock"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="yellow" rounded>
+    </VIconBox>
+    <VIconBox size="medium" color="yellow" rounded>
         <i class="iconify" data-icon="feather:moon"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="orange" rounded>
+    </VIconBox>
+    <VIconBox size="medium" color="orange" rounded>
         <i class="iconify" data-icon="feather:phone"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="green" rounded>
+    </VIconBox>
+    <VIconBox size="medium" color="green" rounded>
         <i class="iconify" data-icon="feather:paperclip"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="red" rounded>
+    </VIconBox>
+    <VIconBox size="medium" color="red" rounded>
         <i class="iconify" data-icon="feather:smile"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="blue" rounded>
+    </VIconBox>
+    <VIconBox size="medium" color="blue" rounded>
         <i class="iconify" data-icon="feather:shield"></i>
-    </V-IconBox>
+    </VIconBox>
 </div>
 
 <!--/example-->

@@ -3,9 +3,9 @@ state:
   flipped: false
 ---
 
-### V-FilePond
+### VFilePond
 
-Vuero ships with the `<V-FilePond />` component, a custom credit card
+Vuero ships with the `<VFilePond />` component, a custom credit card
 previewer. Check the code for more details.
 
 <!--code-->
@@ -37,9 +37,9 @@ const onRemoveFile = (error: any, fileInfo: any) => {
 </script>
 
 <template>
-  <V-Field>
-    <V-Control>
-      <V-FilePond
+  <VField>
+    <VControl>
+      <VFilePond
         class="profile-filepond"
         name="profile_filepond"
         :chunk-retry-delays="[500, 1000, 3000]"
@@ -57,8 +57,8 @@ const onRemoveFile = (error: any, fileInfo: any) => {
         @addfile="onAddFile"
         @removefile="onRemoveFile"
       />
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -66,9 +66,9 @@ const onRemoveFile = (error: any, fileInfo: any) => {
 
 <!--example-->
 
-<V-Field grouped>
-  <V-Control>
-    <V-FilePond
+<VField grouped>
+  <VControl>
+    <VFilePond
       class="profile-filepond"
       name="profile_filepond"
       :chunk-retry-delays="[500, 1000, 3000]"
@@ -84,9 +84,9 @@ const onRemoveFile = (error: any, fileInfo: any) => {
       style-button-remove-item-position="left bottom"
       style-button-process-item-position="right bottom"
     />
-  </V-Control>
-  <V-Control>
-    <V-FilePond
+  </VControl>
+  <VControl>
+    <VFilePond
       size="small"
       class="profile-filepond"
       name="profile_filepond"
@@ -103,9 +103,9 @@ const onRemoveFile = (error: any, fileInfo: any) => {
       style-button-remove-item-position="left bottom"
       style-button-process-item-position="right bottom"
     />
-  </V-Control>
-  <V-Control>
-    <V-FilePond
+  </VControl>
+  <VControl>
+    <VFilePond
       size="tiny"
       class="profile-filepond"
       name="profile_filepond"
@@ -122,7 +122,7 @@ const onRemoveFile = (error: any, fileInfo: any) => {
       style-button-remove-item-position="left bottom"
       style-button-process-item-position="right bottom"
     />
-  </V-Control>
-</V-Field>
+  </VControl>
+</VField>
 
 <!--/example-->

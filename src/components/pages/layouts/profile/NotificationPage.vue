@@ -12,7 +12,7 @@
           <div class="content-wrap">
             <div class="content-box">
               <div class="status"></div>
-              <V-Avatar picture="/demo/avatars/13.jpg" />
+              <VAvatar picture="/demo/avatars/13.jpg" />
 
               <div class="box-text">
                 <div class="meta-text">
@@ -24,7 +24,7 @@
                 </div>
               </div>
               <div class="box-end">
-                <V-Avatar size="small" picture="/demo/avatars/8.jpg" />
+                <VAvatar size="small" picture="/demo/avatars/8.jpg" />
               </div>
             </div>
           </div>
@@ -39,7 +39,7 @@
           <div class="content-wrap">
             <div class="content-box">
               <div class="status"></div>
-              <V-Avatar picture="/demo/avatars/23.jpg" />
+              <VAvatar picture="/demo/avatars/23.jpg" />
 
               <div class="box-text">
                 <div class="meta-text">
@@ -63,7 +63,7 @@
           <div class="content-wrap">
             <div class="content-box">
               <div class="status"></div>
-              <V-Avatar picture="/demo/avatars/5.jpg" />
+              <VAvatar picture="/demo/avatars/5.jpg" />
 
               <div class="box-text">
                 <div class="meta-text">
@@ -75,9 +75,9 @@
                 </div>
               </div>
               <div class="box-end">
-                <V-Avatar size="small" color="warning" initials="BT" />
-                <V-Avatar size="small" picture="/demo/avatars/18.jpg" />
-                <V-Avatar size="small" color="info" initials="JD" />
+                <VAvatar size="small" color="warning" initials="BT" />
+                <VAvatar size="small" picture="/demo/avatars/18.jpg" />
+                <VAvatar size="small" color="info" initials="JD" />
               </div>
             </div>
           </div>
@@ -92,16 +92,16 @@
           <div class="content-wrap">
             <div class="content-box">
               <div class="status"></div>
-              <V-Avatar picture="/demo/avatars/12.jpg" />
+              <VAvatar picture="/demo/avatars/12.jpg" />
 
               <div class="box-text">
                 <div class="meta-text">
                   <p>
                     <span>Joshua S.</span> changed the status of a
                     <a>Task</a> from
-                    <V-Tag label="Pending" color="purple" rounded />
+                    <VTag label="Pending" color="purple" rounded />
                     to
-                    <V-Tag label="Completed" color="green" rounded />
+                    <VTag label="Completed" color="green" rounded />
                   </p>
                   <span>9:18 am</span>
                 </div>
@@ -119,7 +119,7 @@
           <div class="content-wrap">
             <div class="content-box">
               <div class="status"></div>
-              <V-Avatar picture="/demo/avatars/26.jpg" />
+              <VAvatar picture="/demo/avatars/26.jpg" />
 
               <div class="box-text">
                 <div class="meta-text">
@@ -131,12 +131,12 @@
                 </div>
               </div>
               <div class="box-end">
-                <V-Avatar
+                <VAvatar
                   size="small"
                   squared
                   picture="/demo/photos/apps/5.png"
                 />
-                <V-Avatar
+                <VAvatar
                   size="small"
                   squared
                   picture="/demo/photos/apps/8.png"
@@ -155,7 +155,7 @@
           <div class="content-wrap">
             <div class="content-box">
               <div class="status"></div>
-              <V-Avatar picture="/demo/avatars/31.jpg" />
+              <VAvatar picture="/demo/avatars/31.jpg" />
 
               <div class="box-text">
                 <div class="meta-text">
@@ -167,7 +167,7 @@
                 </div>
               </div>
               <div class="box-end">
-                <V-Avatar size="small" picture="/demo/avatars/8.jpg" />
+                <VAvatar size="small" picture="/demo/avatars/8.jpg" />
               </div>
             </div>
           </div>
@@ -182,7 +182,7 @@
           <div class="content-wrap">
             <div class="content-box">
               <div class="status"></div>
-              <V-Avatar picture="/demo/avatars/13.jpg" />
+              <VAvatar picture="/demo/avatars/13.jpg" />
 
               <div class="box-text">
                 <div class="meta-text">
@@ -206,16 +206,16 @@
           <div class="content-wrap">
             <div class="content-box">
               <div class="status"></div>
-              <V-Avatar picture="/demo/avatars/25.jpg" />
+              <VAvatar picture="/demo/avatars/25.jpg" />
 
               <div class="box-text">
                 <div class="meta-text">
                   <p>
                     <span>Melany W.</span> changed the status of a
                     <a>Task</a> from
-                    <V-Tag label="Overdue" color="danger" rounded />
+                    <VTag label="Overdue" color="danger" rounded />
                     to
-                    <V-Tag label="Completed" color="green" rounded />
+                    <VTag label="Completed" color="green" rounded />
                   </p>
                   <span>9:18 am</span>
                 </div>
@@ -226,7 +226,7 @@
       </div>
 
       <div class="load-more-wrap has-text-centered">
-        <V-Button dark-outlined>Load More</V-Button>
+        <VButton dark-outlined>Load More</VButton>
       </div>
     </div>
   </div>

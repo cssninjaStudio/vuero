@@ -1,15 +1,15 @@
 ### Wrapping
 
-You can set multiple `<V-Placeload />` on a row. Simply wrap them in `<V-PlaceloadWrap />`
+You can set multiple `<VPlaceload />` on a row. Simply wrap them in `<VPlaceloadWrap />`
 
 <!--code-->
 
 ```vue
 <template>
-  <V-PlaceloadWrap>
-    <V-Placeload class="mx-2" />
-    <V-Placeload class="mx-2" />
-  </V-PlaceloadWrap>
+  <VPlaceloadWrap>
+    <VPlaceload class="mx-2" />
+    <VPlaceload class="mx-2" />
+  </VPlaceloadWrap>
 </template>
 ```
 
@@ -17,9 +17,9 @@ You can set multiple `<V-Placeload />` on a row. Simply wrap them in `<V-Placelo
 
 <!--example-->
 
-<V-PlaceloadWrap>
-  <V-Placeload class="mx-2" />
-  <V-Placeload class="mx-2" />
-</V-PlaceloadWrap>
+<VPlaceloadWrap>
+  <VPlaceload class="mx-2" />
+  <VPlaceload class="mx-2" />
+</VPlaceloadWrap>
 
 <!--/example-->

@@ -4,7 +4,7 @@ state:
     - 'Option 2'
 ---
 
-### V-Checkbox
+### VCheckbox
 
 Vuero provides default styled checkboxes in 2 main styles, `outlined` (default)
 and `solid`. Those checkboxes also support all main colors.
@@ -21,41 +21,41 @@ const options = ref(['Option 2'])
 </script>
 
 <template>
-  <V-Field>
-    <V-Control>
-      <V-Checkbox v-model="options" value="Option 1" label="Option 1" solid />
-      <V-Checkbox
+  <VField>
+    <VControl>
+      <VCheckbox v-model="options" value="Option 1" label="Option 1" solid />
+      <VCheckbox
         v-model="options"
         value="Option 2"
         label="Option 2"
         color="primary"
       />
-      <V-Checkbox
+      <VCheckbox
         v-model="options"
         value="Option 3"
         label="Option 3"
         color="info"
       />
-      <V-Checkbox
+      <VCheckbox
         v-model="options"
         value="Option 4"
         label="Option 4"
         color="success"
       />
-      <V-Checkbox
+      <VCheckbox
         v-model="options"
         value="Option 5"
         label="Option 5"
         color="warning"
       />
-      <V-Checkbox
+      <VCheckbox
         v-model="options"
         value="Option 6"
         label="Option 6"
         color="danger"
       />
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -63,44 +63,44 @@ const options = ref(['Option 2'])
 
 <!--example-->
 
-<V-Field>
-  <V-Control>
-    <V-Checkbox
+<VField>
+  <VControl>
+    <VCheckbox
       v-model="frontmatter.state.options"
       value="Option 1"
       label="Option 1"
     />
-    <V-Checkbox
+    <VCheckbox
       v-model="frontmatter.state.options"
       value="Option 2"
       label="Option 2"
       color="primary"
     />
-    <V-Checkbox
+    <VCheckbox
       v-model="frontmatter.state.options"
       value="Option 3"
       label="Option 3"
       color="info"
     />
-    <V-Checkbox
+    <VCheckbox
       v-model="frontmatter.state.options"
       value="Option 4"
       label="Option 4"
       color="success"
     />
-    <V-Checkbox
+    <VCheckbox
       v-model="frontmatter.state.options"
       value="Option 5"
       label="Option 5"
       color="warning"
     />
-    <V-Checkbox
+    <VCheckbox
       v-model="frontmatter.state.options"
       value="Option 6"
       label="Option 6"
       color="danger"
     />
-  </V-Control>
-</V-Field>
+  </VControl>
+</VField>
 
 <!--/example-->

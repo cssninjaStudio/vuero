@@ -8,15 +8,15 @@ import { pageTitle } from '/@src/state/sidebarLayoutState'
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-pageTitle.value = 'V-Tag'
+pageTitle.value = 'VTag'
 useHead({
-  title: 'V-Tag - Components - Vuero',
+  title: 'VTag - Components - Vuero',
 })
 </script>
 
 <template>
   <div class="page-content-inner">
-    <V-Breadcrumb
+    <VBreadcrumb
       with-icons
       separator="bullet"
       :items="[
@@ -31,7 +31,7 @@ useHead({
           to: { name: 'components' },
         },
         {
-          label: 'V-Tag',
+          label: 'VTag',
           to: { name: 'components-tag' },
         },
       ]"
@@ -43,25 +43,25 @@ useHead({
         :class="[toc.length > 0 ? 'is-9' : 'is-12']"
         class="column doc-column"
       >
-        <!--V-Tag base-->
+        <!--VTag base-->
         <VTagBaseDocumentation />
 
-        <!--V-Tag rounded-->
+        <!--VTag rounded-->
         <VTagRoundedDocumentation />
 
-        <!--V-Tag curved-->
+        <!--VTag curved-->
         <VTagCurvedDocumentation />
 
-        <!--V-Tag Outlined-->
+        <!--VTag Outlined-->
         <VTagOutlinedDocumentation />
 
-        <!--V-Tag Elevated-->
+        <!--VTag Elevated-->
         <VTagElevatedDocumentation />
 
-        <!--V-Tag addons-->
+        <!--VTag addons-->
         <VTagAddonsDocumentation />
 
-        <!--V-Tag list-->
+        <!--VTag list-->
         <VTagListDocumentation />
 
         <!--Props-->

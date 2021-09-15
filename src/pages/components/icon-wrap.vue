@@ -8,15 +8,15 @@ import { pageTitle } from '/@src/state/sidebarLayoutState'
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-pageTitle.value = 'V-IconWrap'
+pageTitle.value = 'VIconWrap'
 useHead({
-  title: 'V-IconWrap - Components - Vuero',
+  title: 'VIconWrap - Components - Vuero',
 })
 </script>
 
 <template>
   <div class="page-content-inner">
-    <V-Breadcrumb
+    <VBreadcrumb
       with-icons
       separator="bullet"
       :items="[
@@ -31,7 +31,7 @@ useHead({
           to: { name: 'components' },
         },
         {
-          label: 'V-IconWrap',
+          label: 'VIconWrap',
           to: { name: 'components-icon-wrap' },
         },
       ]"

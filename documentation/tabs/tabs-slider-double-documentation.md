@@ -8,7 +8,7 @@ Check the markup for more details. These tabs only support 2 items.
 
 ```vue
 <template>
-  <V-Tabs
+  <VTabs
     slider
     type="rounded"
     selected="team"
@@ -31,7 +31,7 @@ Check the markup for more details. These tabs only support 2 items.
         Chryippo. Duo Reges: constructio interrete.
       </p>
     </template>
-  </V-Tabs>
+  </VTabs>
 </template>
 ```
 
@@ -39,7 +39,7 @@ Check the markup for more details. These tabs only support 2 items.
 
 <!--example-->
 
-<V-Tabs slider type="rounded" selected="team" :tabs="[{ label: 'Team', value: 'team' },{ label: 'Projects', value: 'projects' }]">
+<VTabs slider type="rounded" selected="team" :tabs="[{ label: 'Team', value: 'team' },{ label: 'Projects', value: 'projects' }]">
   <template #tab="{ activeValue }">
     <p v-if="activeValue === 'team'">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -56,6 +56,6 @@ Check the markup for more details. These tabs only support 2 items.
       Reges: constructio interrete.
     </p>
   </template>
-</V-Tabs>
+</VTabs>
 
 <!--/example-->

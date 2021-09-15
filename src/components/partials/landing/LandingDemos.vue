@@ -32,12 +32,12 @@ const navbarDemos = navbar.sort(displayOrder)
       <div class="demo-section-title">
         <img
           class="light-image-block-l"
-          src="/images/icons/components/layout-1.svg?url"
+          src="/images/icons/components/layout-1.svg"
           alt=""
         />
         <img
           class="dark-image-block-l"
-          src="/images/icons/components/layout-1-dark.svg?url"
+          src="/images/icons/components/layout-1-dark.svg"
           alt=""
         />
         <div class="title-meta">
@@ -92,12 +92,12 @@ const navbarDemos = navbar.sort(displayOrder)
       <div class="demo-section-title">
         <img
           class="light-image-block-l"
-          src="/images/icons/components/layout-2.svg?url"
+          src="/images/icons/components/layout-2.svg"
           alt=""
         />
         <img
           class="dark-image-block-l"
-          src="/images/icons/components/layout-2-dark.svg?url"
+          src="/images/icons/components/layout-2-dark.svg"
           alt=""
         />
         <div class="title-meta">
@@ -152,12 +152,12 @@ const navbarDemos = navbar.sort(displayOrder)
       <div class="demo-section-title">
         <img
           class="light-image-block-l"
-          src="/images/icons/components/layout-3.svg?url"
+          src="/images/icons/components/layout-3.svg"
           alt=""
         />
         <img
           class="dark-image-block-l"
-          src="/images/icons/components/layout-3-dark.svg?url"
+          src="/images/icons/components/layout-3-dark.svg"
           alt=""
         />
         <div class="title-meta">
@@ -212,12 +212,12 @@ const navbarDemos = navbar.sort(displayOrder)
       <div class="demo-section-title">
         <img
           class="light-image-block-l"
-          src="/images/icons/components/layout-3.svg?url"
+          src="/images/icons/components/layout-3.svg"
           alt=""
         />
         <img
           class="dark-image-block-l"
-          src="/images/icons/components/layout-3-dark.svg?url"
+          src="/images/icons/components/layout-3-dark.svg"
           alt=""
         />
         <div class="title-meta">
@@ -272,12 +272,12 @@ const navbarDemos = navbar.sort(displayOrder)
       <div class="demo-section-title">
         <img
           class="light-image-block-l"
-          src="/images/icons/components/layout-3.svg?url"
+          src="/images/icons/components/layout-3.svg"
           alt=""
         />
         <img
           class="dark-image-block-l"
-          src="/images/icons/components/layout-3-dark.svg?url"
+          src="/images/icons/components/layout-3-dark.svg"
           alt=""
         />
         <div class="title-meta">

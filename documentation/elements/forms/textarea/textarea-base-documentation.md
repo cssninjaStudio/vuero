@@ -19,16 +19,16 @@ const textarea = ref('')
 </script>
 
 <template>
-  <V-Field>
-    <V-Control>
+  <VField>
+    <VControl>
       <textarea
         v-model="textarea"
         class="textarea"
         rows="4"
         placeholder="A longer message..."
       ></textarea>
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -36,13 +36,13 @@ const textarea = ref('')
 
 <!--example-->
 
-<V-Field>
-  <V-Control>
+<VField>
+  <VControl>
     <textarea class="textarea" 
         rows="4" 
         placeholder="A longer message..." 
         v-model="frontmatter.state.textarea"></textarea>
-  </V-Control>
-</V-Field>
+  </VControl>
+</VField>
 
 <!--/example-->

@@ -6,12 +6,12 @@
           <div class="box-content">
             <img
               class="light-image is-larger"
-              src="/@src/assets/illustrations/placeholders/promotion.svg?url"
+              src="/@src/assets/illustrations/placeholders/promotion.svg"
               alt=""
             />
             <img
               class="dark-image is-larger"
-              src="/@src/assets/illustrations/placeholders/promotion-dark.svg?url"
+              src="/@src/assets/illustrations/placeholders/promotion-dark.svg"
               alt=""
             />
             <h3 class="dark-inverted">
@@ -22,8 +22,8 @@
               <span>Per Month</span>
             </div>
             <div class="buttons">
-              <V-Button dark-outlined> Skip </V-Button>
-              <V-Button color="primary" raised> Upgrade </V-Button>
+              <VButton dark-outlined> Skip </VButton>
+              <VButton color="primary" raised> Upgrade </VButton>
             </div>
           </div>
         </div>
@@ -37,51 +37,51 @@
           </div>
 
           <div class="action-list">
-            <V-Block title="Includes 8 team seats">
+            <VBlock title="Includes 8 team seats">
               <p>
                 Each team member on your account can create projects and tasks.
               </p>
 
               <template #icon>
-                <V-IconWrap
+                <VIconWrap
                   icon="feather:check"
                   dark="3"
                   dark-primary
                   dark-card-bordered
                 />
               </template>
-            </V-Block>
+            </VBlock>
 
-            <V-Block title="Integrations">
+            <VBlock title="Integrations">
               <p>
                 Add up to 5 addons to your main application to help you manage.
               </p>
 
               <template #icon>
-                <V-IconWrap
+                <VIconWrap
                   icon="feather:check"
                   dark="3"
                   dark-primary
                   dark-card-bordered
                 />
               </template>
-            </V-Block>
+            </VBlock>
 
-            <V-Block title="Scale">
+            <VBlock title="Scale">
               <p>
                 Your application grows in parallel of your business, without any
                 effort.
               </p>
 
               <template #icon>
-                <V-IconWrap
+                <VIconWrap
                   icon="feather:check"
                   dark="3"
                   dark-primary
                   dark-card-bordered
                 />
               </template>
-            </V-Block>
+            </VBlock>
           </div>
         </div>
       </div>

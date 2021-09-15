@@ -1,7 +1,7 @@
 ### Help Text
 
 You can easily add a help text to guide users when they
-interact with your forms. Use the `help` prop of the `<V-Field />`
+interact with your forms. Use the `help` prop of the `<VField />`
 component to inject your help text string. See the code example
 for more details about usage.
 
@@ -9,12 +9,12 @@ for more details about usage.
 
 ```vue
 <template>
-  <V-Field>
-    <V-Control>
+  <VField>
+    <VControl>
       <input type="text" class="input" placeholder="Username" />
       <p class="help">Choose a nice username</p>
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -22,15 +22,15 @@ for more details about usage.
 
 <!--example-->
 
-<V-Field>
-  <V-Control>
+<VField>
+  <VControl>
     <input
       type="text"
       class="input"
       placeholder="Username"
     />
     <p class="help">Choose a nice username</p>
-  </V-Control>
-</V-Field>
+  </VControl>
+</VField>
 
 <!--/example-->

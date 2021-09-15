@@ -7,7 +7,7 @@ state:
 
 Textareas that are wrapped by a control and a field can have a single
 bottom addon. You can use it to display a toolbar or any type of user actions.
-Use the `textaddon` prop on the `<V-Field />` and the second `<V-Control />`
+Use the `textaddon` prop on the `<VField />` and the second `<VControl />`
 component. Please refer to the code example for more details about usage.
 
 <!--code-->
@@ -20,29 +20,29 @@ const textarea = ref('')
 </script>
 
 <template>
-  <V-Field textaddon>
-    <V-Control>
+  <VField textaddon>
+    <VControl>
       <textarea
         v-model="textarea"
         class="textarea"
         rows="4"
         placeholder="A longer message..."
       ></textarea>
-    </V-Control>
+    </VControl>
 
-    <V-Control textaddon>
+    <VControl textaddon>
       <div class="start">
         <div class="avatar-stack">
-          <V-Avatar picture="/demo/avatars/7.jpg" size="small" />
-          <V-Avatar initials="JO" color="info" size="small" />
-          <V-Avatar picture="/demo/avatars/8.jpg" size="small" />
+          <VAvatar picture="/demo/avatars/7.jpg" size="small" />
+          <VAvatar initials="JO" color="info" size="small" />
+          <VAvatar picture="/demo/avatars/8.jpg" size="small" />
         </div>
       </div>
       <div class="end">
-        <V-Button color="primary" raised>Post Comment</V-Button>
+        <VButton color="primary" raised>Post Comment</VButton>
       </div>
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -50,27 +50,27 @@ const textarea = ref('')
 
 <!--example-->
 
-<V-Field textaddon>
-  <V-Control>
+<VField textaddon>
+  <VControl>
     <textarea
       v-model="frontmatter.state.textarea"
       class="textarea"
       rows="4"
       placeholder="A longer message..."
     ></textarea>
-  </V-Control>
-  <V-Control textaddon>
+  </VControl>
+  <VControl textaddon>
     <div class="start">
       <div class="avatar-stack">
-        <V-Avatar picture="/demo/avatars/7.jpg" size="small" />
-        <V-Avatar initials="JO" color="info" size="small" />
-        <V-Avatar picture="/demo/avatars/8.jpg" size="small" />
+        <VAvatar picture="/demo/avatars/7.jpg" size="small" />
+        <VAvatar initials="JO" color="info" size="small" />
+        <VAvatar picture="/demo/avatars/8.jpg" size="small" />
       </div>
     </div>
     <div class="end">
-      <V-Button color="primary" raised>Post Comment</V-Button>
+      <VButton color="primary" raised>Post Comment</VButton>
     </div>
-  </V-Control>
-</V-Field>
+  </VControl>
+</VField>
 
 <!--/example-->

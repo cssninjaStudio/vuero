@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-Message Events
+### VMessage Events
 
-Here is the full events available for `<V-Message />` component:
+Here is the full events available for `<VMessage />` component:
 
 | Event  | Callback                                      | Description                              |
 | ------ | --------------------------------------------- | ---------------------------------------- |

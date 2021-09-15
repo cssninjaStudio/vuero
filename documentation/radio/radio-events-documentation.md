@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-Radio Events
+### VRadio Events
 
-Here is the full events available for `<V-Radio />` component:
+Here is the full events available for `<VRadio />` component:
 
 | Event              | Callback                                                  | Description                                                                     |
 | ------------------ | --------------------------------------------------------- | ------------------------------------------------------------------------------- |

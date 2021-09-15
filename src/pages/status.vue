@@ -262,9 +262,9 @@ useHead({
         <div class="status-tweets">
           <div class="updates">
             <div class="update">
-              <V-Avatar
-                picture="/images/logos/logo/hanzo.svg?url"
-                badge="/images/icons/stacks/html5.svg?url"
+              <VAvatar
+                picture="/images/logos/logo/hanzo.svg"
+                badge="/images/icons/stacks/html5.svg"
               />
 
               <div class="update-content">
@@ -277,9 +277,9 @@ useHead({
               </div>
             </div>
             <div class="update">
-              <V-Avatar
-                picture="/images/logos/logo/hanzo.svg?url"
-                badge="/images/icons/stacks/html5.svg?url"
+              <VAvatar
+                picture="/images/logos/logo/hanzo.svg"
+                badge="/images/icons/stacks/html5.svg"
               />
 
               <div class="update-content">

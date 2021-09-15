@@ -10,15 +10,15 @@ import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
         <!--Navigation-->
         <div class="column is-4">
           <div class="account-box is-navigation">
-            <V-Block title="Erik Kovalsky" subtitle="Product Manager" center>
+            <VBlock title="Erik Kovalsky" subtitle="Product Manager" center>
               <template #icon>
-                <V-Avatar
+                <VAvatar
                   size="large"
                   picture="/demo/avatars/8.jpg"
-                  badge="/images/icons/flags/united-states-of-america.svg?url"
+                  badge="/images/icons/flags/united-states-of-america.svg"
                 />
               </template>
-            </V-Block>
+            </VBlock>
 
             <div class="account-menu">
               <RouterLink

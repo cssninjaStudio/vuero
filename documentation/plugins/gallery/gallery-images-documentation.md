@@ -49,7 +49,7 @@ const items = [
 </script>
 
 <template>
-  <V-PhotosSwipe :items="items" />
+  <VPhotosSwipe :items="items" />
 </template>
 ```
 
@@ -57,6 +57,6 @@ const items = [
 
 <!--example-->
 
-<V-PhotosSwipe :items="frontmatter.items" />
+<VPhotosSwipe :items="frontmatter.items" />
 
 <!--/example-->

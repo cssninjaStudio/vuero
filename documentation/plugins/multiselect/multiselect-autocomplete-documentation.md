@@ -24,16 +24,16 @@ const optionsSingle = ['Batman', 'Robin', 'Joker']
 </script>
 
 <template>
-  <V-Field class="is-autocomplete-select">
-    <V-Control icon="feather:search">
+  <VField class="is-autocomplete-select">
+    <VControl icon="feather:search">
       <Multiselect
         v-model="valueSingle"
         :options="optionsSingle"
         placeholder="Search heroes..."
         :searchable="true"
       />
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -43,40 +43,40 @@ const optionsSingle = ['Batman', 'Robin', 'Joker']
 
 <div class="columns">
   <div class="column is-4">
-    <V-Field class="is-autocomplete-select">
-      <V-Control icon="feather:search">
+    <VField class="is-autocomplete-select">
+      <VControl icon="feather:search">
         <Multiselect
           v-model="frontmatter.state.valueSingle"
           :options="frontmatter.optionsSingle"
           placeholder="Search heroes..."
           :searchable="true"
         />
-      </V-Control>
-    </V-Field>
+      </VControl>
+    </VField>
   </div>
   <div class="column is-4">
-    <V-Field class="is-curved-select is-autocomplete-select">
-      <V-Control icon="feather:search">
+    <VField class="is-curved-select is-autocomplete-select">
+      <VControl icon="feather:search">
         <Multiselect
           v-model="frontmatter.state.valueSingle"
           :options="frontmatter.optionsSingle"
           placeholder="Search heroes..."
           :searchable="true"
         />
-      </V-Control>
-    </V-Field>
+      </VControl>
+    </VField>
   </div>
   <div class="column is-4">
-    <V-Field class="is-rounded-select is-autocomplete-select">
-      <V-Control icon="feather:search">
+    <VField class="is-rounded-select is-autocomplete-select">
+      <VControl icon="feather:search">
         <Multiselect
           v-model="frontmatter.state.valueSingle"
           :options="frontmatter.optionsSingle"
           placeholder="Search heroes..."
           :searchable="true"
         />
-      </V-Control>
-    </V-Field>
+      </VControl>
+    </VField>
   </div>
 </div>
 

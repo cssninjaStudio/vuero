@@ -31,37 +31,37 @@ const optionsSingle = [
 <template>
   <div>
     <div class="card-grid-toolbar">
-      <V-Control icon="feather:search">
+      <VControl icon="feather:search">
         <input
           v-model="filters"
           class="input custom-text-filter"
           placeholder="Search..."
         />
-      </V-Control>
+      </VControl>
 
       <div class="buttons">
-        <V-Field class="h-hidden-mobile">
-          <V-Control>
+        <VField class="h-hidden-mobile">
+          <VControl>
             <Multiselect
               v-model="valueSingle"
               :options="optionsSingle"
               :max-height="145"
               placeholder="Select an option"
             />
-          </V-Control>
-        </V-Field>
-        <V-Button color="primary" raised>
+          </VControl>
+        </VField>
+        <VButton color="primary" raised>
           <span class="icon">
             <i aria-hidden="true" class="fas fa-plus"></i>
           </span>
           <span>New Post</span>
-        </V-Button>
+        </VButton>
       </div>
     </div>
 
     <div class="card-grid card-grid-v4">
       <!--List Empty Search Placeholder -->
-      <V-PlaceholderPage
+      <VPlaceholderPage
         :class="[filteredData.length !== 0 && 'is-hidden']"
         title="We couldn't find any matching results."
         subtitle="Too bad. Looks like we couldn't find any matching results for the
@@ -72,16 +72,16 @@ const optionsSingle = [
         <template #image>
           <img
             class="light-image"
-            src="/@src/assets/illustrations/placeholders/search-4.svg?url"
+            src="/@src/assets/illustrations/placeholders/search-4.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/@src/assets/illustrations/placeholders/search-4-dark.svg?url"
+            src="/@src/assets/illustrations/placeholders/search-4-dark.svg"
             alt=""
           />
         </template>
-      </V-PlaceholderPage>
+      </VPlaceholderPage>
 
       <transition-group name="list" tag="div" class="columns is-multiline">
         <!--Grid item-->
@@ -98,7 +98,7 @@ const optionsSingle = [
               </h3>
             </div>
             <div class="card-grid-item-footer">
-              <V-Avatar :picture="item.author.avatar" size="small" />
+              <VAvatar :picture="item.author.avatar" size="small" />
               <div class="meta">
                 <span class="dark-inverted">{{ item.author.name }}</span>
                 <span>{{ item.published }}</span>

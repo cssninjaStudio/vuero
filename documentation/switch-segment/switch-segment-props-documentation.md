@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-SwitchSegment Props
+### VSwitchSegment Props
 
-Here is the full props available for `<V-SwitchSegment />` component:
+Here is the full props available for `<VSwitchSegment />` component:
 
 | Props      | Default                                       | Type                                              |
 | ---------- | --------------------------------------------- | ------------------------------------------------- |

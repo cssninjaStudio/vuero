@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-PlaceholderPage Props
+### VPlaceholderPage Props
 
-Here is the full props available for `<V-PlaceholderPage />` component:
+Here is the full props available for `<VPlaceholderPage />` component:
 
 | Props                   | Default                                       | Type    |
 | ----------------------- | --------------------------------------------- | ------- |

@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-IconWrap Props
+### VIconWrap Props
 
-Here is the full props available for `<V-IconWrap />` component:
+Here is the full props available for `<VIconWrap />` component:
 
 | Props            | Default                                       | Type                                                                                                      |
 | ---------------- | --------------------------------------------- | --------------------------------------------------------------------------------------------------------- |

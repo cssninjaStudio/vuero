@@ -18,11 +18,11 @@ import { popovers } from '/@src/data/users/userPopovers'
       </div>
       <div class="right">
         <div class="buttons">
-          <V-Action dark="3">Hour</V-Action>
-          <V-Action dark="3">Day</V-Action>
-          <V-Action dark="3" active>Week</V-Action>
-          <V-Action dark="3">Month</V-Action>
-          <V-Action dark="3">Year</V-Action>
+          <VAction dark="3">Hour</VAction>
+          <VAction dark="3">Day</VAction>
+          <VAction dark="3" active>Week</VAction>
+          <VAction dark="3">Month</VAction>
+          <VAction dark="3">Year</VAction>
         </div>
       </div>
     </div>
@@ -92,14 +92,14 @@ import { popovers } from '/@src/data/users/userPopovers'
       <div class="column is-4">
         <!--Info-->
         <div class="dashboard-card is-side">
-          <V-Block title="Bitcoin" subtitle="BTC" center m-responsive>
+          <VBlock title="Bitcoin" subtitle="BTC" center m-responsive>
             <template #icon>
-              <V-Avatar picture="/images/icons/cryptocurrencies/btc.svg?url" />
+              <VAvatar picture="/images/icons/cryptocurrencies/btc.svg" />
             </template>
             <template #action>
               <GraphDropdown />
             </template>
-          </V-Block>
+          </VBlock>
           <div class="currency-description">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vide,
@@ -109,8 +109,8 @@ import { popovers } from '/@src/data/users/userPopovers'
             </p>
           </div>
           <div class="button-wrap">
-            <V-Button color="primary" elevated>Buy BTC</V-Button>
-            <V-Button dark-outlined>Compare</V-Button>
+            <VButton color="primary" elevated>Buy BTC</VButton>
+            <VButton dark-outlined>Compare</VButton>
           </div>
         </div>
 
@@ -127,7 +127,7 @@ import { popovers } from '/@src/data/users/userPopovers'
               :offset="[0, 40]"
               placement="top-end"
             >
-              <V-Avatar picture="/demo/avatars/21.jpg" />
+              <VAvatar picture="/demo/avatars/21.jpg" />
               <template #content>
                 <UserPopoverContent :user="popovers.user21" />
               </template>
@@ -138,7 +138,7 @@ import { popovers } from '/@src/data/users/userPopovers'
               :offset="[0, 40]"
               placement="top-end"
             >
-              <V-Avatar initials="SC" color="h-purple" />
+              <VAvatar initials="SC" color="h-purple" />
               <template #content>
                 <UserPopoverContent :user="popovers.user120" />
               </template>
@@ -149,7 +149,7 @@ import { popovers } from '/@src/data/users/userPopovers'
               :offset="[0, 40]"
               placement="top-end"
             >
-              <V-Avatar picture="/demo/avatars/7.jpg" />
+              <VAvatar picture="/demo/avatars/7.jpg" />
               <template #content>
                 <UserPopoverContent :user="popovers.user7" />
               </template>
@@ -160,7 +160,7 @@ import { popovers } from '/@src/data/users/userPopovers'
               :offset="[0, 40]"
               placement="top-end"
             >
-              <V-Avatar initials="AT" color="success" />
+              <VAvatar initials="AT" color="success" />
               <template #content>
                 <UserPopoverContent :user="popovers.user124" />
               </template>
@@ -171,12 +171,12 @@ import { popovers } from '/@src/data/users/userPopovers'
               :offset="[0, 40]"
               placement="top-end"
             >
-              <V-Avatar picture="/demo/avatars/31.jpg" />
+              <VAvatar picture="/demo/avatars/31.jpg" />
               <template #content>
                 <UserPopoverContent :user="popovers.user31" />
               </template>
             </tippy>
-            <V-Avatar initials="50K" color="h-yellow" />
+            <VAvatar initials="50K" color="h-yellow" />
           </div>
         </div>
 
@@ -186,53 +186,53 @@ import { popovers } from '/@src/data/users/userPopovers'
             <a href="#" class="action-link">View All</a>
           </div>
 
-          <V-Block title="Monero" subtitle="XMR" center>
+          <VBlock title="Monero" subtitle="XMR" center>
             <template #icon>
-              <V-Avatar
-                picture="/images/icons/cryptocurrencies/xmr.svg?url"
+              <VAvatar
+                picture="/images/icons/cryptocurrencies/xmr.svg"
                 size="small"
               />
             </template>
             <template #action>
-              <V-IconButton icon="feather:plus" circle dark-outlined />
+              <VIconButton icon="feather:plus" circle dark-outlined />
             </template>
-          </V-Block>
+          </VBlock>
 
-          <V-Block title="Litecoin" subtitle="LTC" center>
+          <VBlock title="Litecoin" subtitle="LTC" center>
             <template #icon>
-              <V-Avatar
-                picture="/images/icons/cryptocurrencies/ltc.svg?url"
+              <VAvatar
+                picture="/images/icons/cryptocurrencies/ltc.svg"
                 size="small"
               />
             </template>
             <template #action>
-              <V-IconButton icon="feather:plus" circle dark-outlined />
+              <VIconButton icon="feather:plus" circle dark-outlined />
             </template>
-          </V-Block>
+          </VBlock>
 
-          <V-Block title="ChainLink" subtitle="LINK" center>
+          <VBlock title="ChainLink" subtitle="LINK" center>
             <template #icon>
-              <V-Avatar
-                picture="/images/icons/cryptocurrencies/link.svg?url"
+              <VAvatar
+                picture="/images/icons/cryptocurrencies/link.svg"
                 size="small"
               />
             </template>
             <template #action>
-              <V-IconButton icon="feather:plus" circle dark-outlined />
+              <VIconButton icon="feather:plus" circle dark-outlined />
             </template>
-          </V-Block>
+          </VBlock>
 
-          <V-Block title="Binance Coin" subtitle="BNB" center>
+          <VBlock title="Binance Coin" subtitle="BNB" center>
             <template #icon>
-              <V-Avatar
-                picture="/images/icons/cryptocurrencies/bnb.svg?url"
+              <VAvatar
+                picture="/images/icons/cryptocurrencies/bnb.svg"
                 size="small"
               />
             </template>
             <template #action>
-              <V-IconButton icon="feather:plus" circle dark-outlined />
+              <VIconButton icon="feather:plus" circle dark-outlined />
             </template>
-          </V-Block>
+          </VBlock>
         </div>
       </div>
     </div>

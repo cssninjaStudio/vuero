@@ -1,8 +1,8 @@
-import type { Chart } from 'billboard.js'
+import type { Chart, ChartOptions, DataItem } from 'billboard.js'
 import { themeColors } from '/@src/utils/themeColors'
 import { donut } from 'billboard.js'
 
-export const options = {
+export const options: ChartOptions = {
   data: {
     columns: [
       ['data1', 30],
@@ -18,14 +18,14 @@ export const options = {
       virginica: themeColors.success,
     },
     type: donut(),
-    onclick: (data: number, index: number) => {
-      console.log('[donutSimple] onclick', data, index)
+    onclick(this: Chart, d: DataItem, element: SVGAElement) {
+      console.log('[donutSimple] onclick', d, element)
     },
-    onover: (data: number, index: number) => {
-      console.log('[donutSimple] onover', data, index)
+    onover(this: Chart, d: DataItem, element?: SVGAElement) {
+      console.log('[donutSimple] onover', d, element)
     },
-    onout: (data: number, index: number) => {
-      console.log('[donutSimple] onout', data, index)
+    onout(this: Chart, d: DataItem, element?: SVGAElement) {
+      console.log('[donutSimple] onout', d, element)
     },
   },
   donut: {
@@ -39,7 +39,7 @@ export const options = {
   },
   title: {
     text: 'Donut Chart',
-    position: 'top-left',
+    position: 'left',
     padding: {
       bottom: 20,
       right: 20,

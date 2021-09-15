@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, watch } from 'vue'
+import { VAnimatedCheckboxColor } from '/@src/components/base/form/VAnimatedCheckbox.vue'
 
 const emit = defineEmits<{
   (e: 'update:modelValue', value: any[]): void
@@ -8,7 +9,7 @@ const props = withDefaults(
   defineProps<{
     todos?: any[]
     modelValue?: any[]
-    color?: string
+    color?: VAnimatedCheckboxColor
   }>(),
   {
     todos: () => [],
@@ -31,7 +32,7 @@ watch(completed, () => {
       :key="todo.id"
       class="inner-list-item media-flex-center"
     >
-      <V-AnimatedCheckbox
+      <VAnimatedCheckbox
         v-model="completed"
         :value="todo.title"
         :color="color"

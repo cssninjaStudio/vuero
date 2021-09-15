@@ -25,7 +25,7 @@ const props = defineProps<{
         :key="avatar.id"
         class="avatar-list-item"
       >
-        <V-Avatar :picture="avatar.picture" :squared="props.squared" />
+        <VAvatar :picture="avatar.picture" :squared="props.squared" />
         <div class="meta">
           <span>{{ avatar.name }}</span>
         </div>

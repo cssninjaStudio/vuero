@@ -17,15 +17,15 @@ const props = withDefaults(
       :key="topic.id"
       class="inner-list-item media-flex-center"
     >
-      <V-IconBox :rounded="props.rounded" :color="topic.color">
+      <VIconBox :rounded="props.rounded" :color="topic.color">
         <i aria-hidden="true" class="iconify" :data-icon="topic.icon"></i>
-      </V-IconBox>
+      </VIconBox>
       <div class="flex-meta is-light">
         <a href="#">{{ topic.name }}</a>
         <span>{{ topic.category }}</span>
       </div>
       <div v-if="topic.users" class="flex-end">
-        <V-AvatarStack :avatars="topic.users" size="small" :limit="3" />
+        <VAvatarStack :avatars="topic.users" size="small" :limit="3" />
       </div>
     </div>
   </div>

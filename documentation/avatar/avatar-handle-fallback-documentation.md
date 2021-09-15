@@ -7,14 +7,14 @@ when no valid URL is provided for the `picture` prop.
 
 ```vue
 <template>
-  <V-Flex alignItems="flex-end" columnGap=".25rem">
-    <V-Avatar picture="no-file.jpg" size="small" />
-    <V-Avatar picture="no-file.jpg" />
-    <V-Avatar picture="no-file.jpg" size="medium" />
-    <V-Avatar picture="no-file.jpg" size="large" />
-    <V-Avatar picture="no-file.jpg" size="big" />
-    <V-Avatar picture="no-file.jpg" size="xl" />
-  </V-Flex>
+  <VFlex alignItems="flex-end" columnGap=".25rem">
+    <VAvatar picture="no-file.jpg" size="small" />
+    <VAvatar picture="no-file.jpg" />
+    <VAvatar picture="no-file.jpg" size="medium" />
+    <VAvatar picture="no-file.jpg" size="large" />
+    <VAvatar picture="no-file.jpg" size="big" />
+    <VAvatar picture="no-file.jpg" size="xl" />
+  </VFlex>
 </template>
 ```
 
@@ -22,13 +22,13 @@ when no valid URL is provided for the `picture` prop.
 
 <!--example-->
 
-<V-Flex alignItems="flex-end" columnGap=".25rem">
-  <V-Avatar picture="no-file.jpg" size="small" />
-  <V-Avatar picture="no-file.jpg" />
-  <V-Avatar picture="no-file.jpg" size="medium" />
-  <V-Avatar picture="no-file.jpg" size="large" />
-  <V-Avatar picture="no-file.jpg" size="big" />
-  <V-Avatar picture="no-file.jpg" size="xl" />
-</V-Flex>
+<VFlex alignItems="flex-end" columnGap=".25rem">
+  <VAvatar picture="no-file.jpg" size="small" />
+  <VAvatar picture="no-file.jpg" />
+  <VAvatar picture="no-file.jpg" size="medium" />
+  <VAvatar picture="no-file.jpg" size="large" />
+  <VAvatar picture="no-file.jpg" size="big" />
+  <VAvatar picture="no-file.jpg" size="xl" />
+</VFlex>
 
 <!--/example-->

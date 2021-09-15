@@ -1,7 +1,7 @@
-### V-Collapse
+### VCollapse
 
 Vuero provides 2 collapse component variations:
-`<V-Collapse />` and `<V-Collapse with-chevron />`.  
+`<VCollapse />` and `<VCollapse with-chevron />`.  
 There are 2 available variations that you can use to change the
 collapse header icon. Pass an **Array** to the `items` props to render
 the chosen collapse component. Check markup for more details.
@@ -28,11 +28,11 @@ const data = [
 
 <template>
   <div class="column is-6">
-    <V-Collapse :items="data" />
+    <VCollapse :items="data" />
   </div>
 
   <div class="column is-6">
-    <V-Collapse :items="data" with-chevron />
+    <VCollapse :items="data" with-chevron />
   </div>
 </template>
 ```

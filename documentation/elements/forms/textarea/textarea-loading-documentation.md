@@ -2,7 +2,7 @@
 
 A textarea can be shown in a loading state. For that, you need to wrap
 it inside a control element. Then, simply add the `loading` prop to the
-wrapping `<V-Control />` component.
+wrapping `<VControl />` component.
 Please refer to the code example for more details about usage.
 
 <!--code-->
@@ -16,16 +16,16 @@ const loading = ref(true)
 </script>
 
 <template>
-  <V-Field>
-    <V-Control :loading="loading">
+  <VField>
+    <VControl :loading="loading">
       <textarea
         v-model="textarea"
         class="textarea"
         rows="4"
         placeholder="A longer message..."
       ></textarea>
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -33,12 +33,12 @@ const loading = ref(true)
 
 <!--example-->
 
-<V-Field>
-  <V-Control loading>
+<VField>
+  <VControl loading>
     <textarea class="textarea" 
         rows="4" 
         placeholder="A longer message..."></textarea>
-  </V-Control>
-</V-Field>
+  </VControl>
+</VField>
 
 <!--/example-->

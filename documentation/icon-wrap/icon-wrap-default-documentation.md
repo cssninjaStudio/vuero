@@ -1,6 +1,6 @@
-### V-IconWrap
+### VIconWrap
 
-The Vuero `<V-IconWrap />` component let you display icons
+The Vuero `<VIconWrap />` component let you display icons
 in a fancy and colored way.
 See code for more details about usage.
 
@@ -8,19 +8,19 @@ See code for more details about usage.
 
 ```vue
 <template>
-  <V-Flex column-gap="3px">
-    <V-IconWrap icon="feather:star" />
-    <V-IconWrap
+  <VFlex column-gap="3px">
+    <VIconWrap icon="feather:star" />
+    <VIconWrap
       icon="feather:help-circle"
       color="info"
       has-background
       has-large-icon
     />
-    <V-IconWrap icon="feather:x" color="danger" />
-    <V-IconWrap icon="feather:code" />
-    <V-IconWrap picture="/demo/avatars/8.jpg" />
-    <V-IconWrap picture="/demo/avatars/13.jpg" />
-  </V-Flex>
+    <VIconWrap icon="feather:x" color="danger" />
+    <VIconWrap icon="feather:code" />
+    <VIconWrap picture="/demo/avatars/8.jpg" />
+    <VIconWrap picture="/demo/avatars/13.jpg" />
+  </VFlex>
 </template>
 ```
 
@@ -29,19 +29,19 @@ See code for more details about usage.
 <!--example-->
 
 <div>
-  <V-Flex column-gap="3px">
-    <V-IconWrap icon="feather:star" color="warning" />
-    <V-IconWrap icon="feather:code" />
-    <V-IconWrap icon="feather:x" color="danger" has-large-icon />
-    <V-IconWrap
+  <VFlex column-gap="3px">
+    <VIconWrap icon="feather:star" color="warning" />
+    <VIconWrap icon="feather:code" />
+    <VIconWrap icon="feather:x" color="danger" has-large-icon />
+    <VIconWrap
       icon="feather:help-circle"
       color="info"
       has-background
       has-large-icon
     />
-    <V-IconWrap picture="/demo/avatars/8.jpg" />
-    <V-IconWrap picture="/demo/avatars/13.jpg" />
-  </V-Flex>
+    <VIconWrap picture="/demo/avatars/8.jpg" />
+    <VIconWrap picture="/demo/avatars/13.jpg" />
+  </VFlex>
 </div>
 
 <!--/example-->

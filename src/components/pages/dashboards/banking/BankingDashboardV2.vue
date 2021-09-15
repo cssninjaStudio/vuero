@@ -80,17 +80,17 @@ const goto = (index: number) => {
                       <div class="top">
                         <img
                           class="active"
-                          src="/images/icons/dashboards/banking/visa-text-white.svg?url"
+                          src="/images/icons/dashboards/banking/visa-text-white.svg"
                           alt=""
                         />
                         <img
                           class="light-image inactive"
-                          src="/images/icons/dashboards/banking/visa-text-dark.svg?url"
+                          src="/images/icons/dashboards/banking/visa-text-dark.svg"
                           alt=""
                         />
                         <img
                           class="dark-image inactive"
-                          src="/images/icons/dashboards/banking/visa-text-white.svg?url"
+                          src="/images/icons/dashboards/banking/visa-text-white.svg"
                           alt=""
                         />
                       </div>
@@ -107,17 +107,17 @@ const goto = (index: number) => {
                       <div class="top">
                         <img
                           class="active"
-                          src="/images/icons/dashboards/banking/visa-text-white.svg?url"
+                          src="/images/icons/dashboards/banking/visa-text-white.svg"
                           alt=""
                         />
                         <img
                           class="light-image inactive"
-                          src="/images/icons/dashboards/banking/visa-text-dark.svg?url"
+                          src="/images/icons/dashboards/banking/visa-text-dark.svg"
                           alt=""
                         />
                         <img
                           class="dark-image inactive"
-                          src="/images/icons/dashboards/banking/visa-text-white.svg?url"
+                          src="/images/icons/dashboards/banking/visa-text-white.svg"
                           alt=""
                         />
                       </div>
@@ -134,17 +134,17 @@ const goto = (index: number) => {
                       <div class="top">
                         <img
                           class="active"
-                          src="/images/icons/dashboards/banking/visa-text-white.svg?url"
+                          src="/images/icons/dashboards/banking/visa-text-white.svg"
                           alt=""
                         />
                         <img
                           class="light-image inactive"
-                          src="/images/icons/dashboards/banking/visa-text-dark.svg?url"
+                          src="/images/icons/dashboards/banking/visa-text-dark.svg"
                           alt=""
                         />
                         <img
                           class="dark-image inactive"
-                          src="/images/icons/dashboards/banking/visa-text-white.svg?url"
+                          src="/images/icons/dashboards/banking/visa-text-white.svg"
                           alt=""
                         />
                       </div>
@@ -161,17 +161,17 @@ const goto = (index: number) => {
                       <div class="top">
                         <img
                           class="active"
-                          src="/images/icons/dashboards/banking/visa-text-white.svg?url"
+                          src="/images/icons/dashboards/banking/visa-text-white.svg"
                           alt=""
                         />
                         <img
                           class="light-image inactive"
-                          src="/images/icons/dashboards/banking/visa-text-dark.svg?url"
+                          src="/images/icons/dashboards/banking/visa-text-dark.svg"
                           alt=""
                         />
                         <img
                           class="dark-image inactive"
-                          src="/images/icons/dashboards/banking/visa-text-white.svg?url"
+                          src="/images/icons/dashboards/banking/visa-text-white.svg"
                           alt=""
                         />
                       </div>
@@ -191,16 +191,16 @@ const goto = (index: number) => {
           <div class="inner-box">
             <div class="box-title">
               <h3>Balance</h3>
-              <V-Field class="is-minimal-select">
-                <V-Control>
+              <VField class="is-minimal-select">
+                <VControl>
                   <Multiselect
                     v-model="valueSingle"
                     :options="optionsSingle"
                     placeholder="Select an option"
                     :max-height="145"
                   />
-                </V-Control>
-              </V-Field>
+                </VControl>
+              </VField>
             </div>
 
             <!--Balance-->
@@ -304,57 +304,57 @@ const goto = (index: number) => {
             <!--Transactions-->
             <div class="transactions">
               <!--Transaction-->
-              <V-Block
+              <VBlock
                 title="Food Delivery"
                 subtitle="Oct 23, 2020 - 8:46pm"
                 center
                 lighter
               >
                 <template #icon>
-                  <V-IconBox color="green" rounded>
+                  <VIconBox color="green" rounded>
                     <i aria-hidden="true" class="lnil lnil-service"></i>
-                  </V-IconBox>
+                  </VIconBox>
                 </template>
                 <template #action>
                   <span class="dark-inverted">- $41.49</span>
                 </template>
-              </V-Block>
+              </VBlock>
               <!--Transaction-->
-              <V-Block
+              <VBlock
                 title="Market Earnings"
                 subtitle="Oct 18, 2020 - 9:11am"
                 center
                 lighter
               >
                 <template #icon>
-                  <V-IconBox color="orange" rounded>
+                  <VIconBox color="orange" rounded>
                     <i aria-hidden="true" class="lnil lnil-analytics-alt-1"></i>
-                  </V-IconBox>
+                  </VIconBox>
                 </template>
                 <template #action>
                   <span class="dark-inverted">+ $263.39</span>
                 </template>
-              </V-Block>
+              </VBlock>
               <!--Transaction-->
-              <V-Block
+              <VBlock
                 title="Online Order"
                 subtitle="Oct 16, 2020 - 2:13pm"
                 center
                 lighter
               >
                 <template #icon>
-                  <V-IconBox color="purple" rounded>
+                  <VIconBox color="purple" rounded>
                     <i aria-hidden="true" class="lnil lnil-cart-alt"></i>
-                  </V-IconBox>
+                  </VIconBox>
                 </template>
                 <template #action>
                   <span class="dark-inverted">- $92.00</span>
                 </template>
-              </V-Block>
+              </VBlock>
             </div>
             <div class="button-wrap">
-              <V-Button color="primary" fullwidth elevated>New</V-Button>
-              <V-Button fullwidth>Settings</V-Button>
+              <VButton color="primary" fullwidth elevated>New</VButton>
+              <VButton fullwidth>Settings</VButton>
             </div>
           </div>
         </div>

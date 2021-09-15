@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-IMaskInput Props
+### VIMaskInput Props
 
-Here is the full props available for `<V-IMaskInput />` component:
+Here is the full props available for `<VIMaskInput />` component:
 
 | Props                        | Default                                       | Type                                           |
 | ---------------------------- | --------------------------------------------- | ---------------------------------------------- |

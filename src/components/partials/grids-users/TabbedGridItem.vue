@@ -27,7 +27,7 @@ const tab = ref(props.activeTab)
 
 <template>
   <div class="grid-item">
-    <V-Avatar :picture="user.avatar" :badge="user.badge" size="big" />
+    <VAvatar :picture="user.avatar" :badge="user.badge" size="big" />
     <h3 class="dark-inverted">{{ user.fullName }}</h3>
     <p>{{ user.position }}</p>
     <div class="icon-tabs-wrapper">

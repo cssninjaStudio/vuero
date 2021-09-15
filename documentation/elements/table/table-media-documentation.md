@@ -29,7 +29,7 @@ You can easily add media elements like the vuero avatars inside your table rows.
     <tbody>
       <tr>
         <td class="is-media">
-          <V-Avatar picture="/demo/avatars/8.gif" />
+          <VAvatar picture="/demo/avatars/8.gif" />
         </td>
         <td>Tina</td>
         <td>Bergmann</td>
@@ -42,7 +42,7 @@ You can easily add media elements like the vuero avatars inside your table rows.
       </tr>
       <tr>
         <td class="is-media">
-          <V-Avatar picture="/demo/avatars/1.gif" />
+          <VAvatar picture="/demo/avatars/1.gif" />
         </td>
         <td>John</td>
         <td>Wistmus</td>
@@ -55,7 +55,7 @@ You can easily add media elements like the vuero avatars inside your table rows.
       </tr>
       <tr>
         <td class="is-media">
-          <V-Avatar picture="/demo/avatars/4.gif" />
+          <VAvatar picture="/demo/avatars/4.gif" />
         </td>
         <td>Sam</td>
         <td>Watson</td>
@@ -68,7 +68,7 @@ You can easily add media elements like the vuero avatars inside your table rows.
       </tr>
       <tr>
         <td class="is-media">
-          <V-Avatar initials="JD" color="info" />
+          <VAvatar initials="JD" color="info" />
         </td>
         <td>Jolaine</td>
         <td>Joestar</td>
@@ -81,7 +81,7 @@ You can easily add media elements like the vuero avatars inside your table rows.
       </tr>
       <tr>
         <td class="is-media">
-          <V-Avatar picture="/demo/avatars/3.gif" />
+          <VAvatar picture="/demo/avatars/3.gif" />
         </td>
         <td>Anders</td>
         <td>Jensen</td>

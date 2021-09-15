@@ -183,12 +183,12 @@ const activeTab = ref<TabId>('list')
                 <a href="https://cssninja.io" class="column-placeholder">
                   <img
                     class="light-image"
-                    src="/images/icons/misc/buoy.svg?url"
+                    src="/images/icons/misc/buoy.svg"
                     alt=""
                   />
                   <img
                     class="dark-image"
-                    src="/images/icons/misc/buoy-dark.svg?url"
+                    src="/images/icons/misc/buoy-dark.svg"
                     alt=""
                   />
                   <h3>Support</h3>
@@ -199,12 +199,12 @@ const activeTab = ref<TabId>('list')
                 >
                   <img
                     class="light-image"
-                    src="/images/icons/misc/docs.svg?url"
+                    src="/images/icons/misc/docs.svg"
                     alt=""
                   />
                   <img
                     class="dark-image"
-                    src="/images/icons/misc/docs-dark.svg?url"
+                    src="/images/icons/misc/docs-dark.svg"
                     alt=""
                   />
                   <h3>Documentation</h3>
@@ -363,12 +363,12 @@ const activeTab = ref<TabId>('list')
                 <a href="https://cssninja.io" class="column-placeholder">
                   <img
                     class="light-image"
-                    src="/images/icons/misc/buoy.svg?url"
+                    src="/images/icons/misc/buoy.svg"
                     alt=""
                   />
                   <img
                     class="dark-image"
-                    src="/images/icons/misc/buoy-dark.svg?url"
+                    src="/images/icons/misc/buoy-dark.svg"
                     alt=""
                   />
                   <h3>Support</h3>
@@ -379,12 +379,12 @@ const activeTab = ref<TabId>('list')
                 >
                   <img
                     class="light-image"
-                    src="/images/icons/misc/docs.svg?url"
+                    src="/images/icons/misc/docs.svg"
                     alt=""
                   />
                   <img
                     class="dark-image"
-                    src="/images/icons/misc/docs-dark.svg?url"
+                    src="/images/icons/misc/docs-dark.svg"
                     alt=""
                   />
                   <h3>Documentation</h3>
@@ -877,7 +877,7 @@ const activeTab = ref<TabId>('list')
                     <RouterLink :to="{ name: 'navbar-layouts-placeload-1' }">
                       <i aria-hidden="true" class="lnil lnil lnil-reload"></i>
                       <span>Placeload V1</span>
-                      <V-Tag label="v1.2" color="primary" outlined curved />
+                      <VTag label="v1.2" color="primary" outlined curved />
                       <i
                         aria-hidden="true"
                         class="iconify"
@@ -889,7 +889,7 @@ const activeTab = ref<TabId>('list')
                     <RouterLink :to="{ name: 'navbar-layouts-placeload-2' }">
                       <i aria-hidden="true" class="lnil lnil lnil-reload"></i>
                       <span>Placeload V2</span>
-                      <V-Tag label="v1.2" color="primary" outlined curved />
+                      <VTag label="v1.2" color="primary" outlined curved />
                       <i
                         aria-hidden="true"
                         class="iconify"
@@ -901,7 +901,7 @@ const activeTab = ref<TabId>('list')
                     <RouterLink :to="{ name: 'navbar-layouts-placeload-3' }">
                       <i aria-hidden="true" class="lnil lnil lnil-reload"></i>
                       <span>Placeload V3</span>
-                      <V-Tag label="v1.2" color="primary" outlined curved />
+                      <VTag label="v1.2" color="primary" outlined curved />
                       <i
                         aria-hidden="true"
                         class="iconify"
@@ -913,7 +913,7 @@ const activeTab = ref<TabId>('list')
                     <RouterLink :to="{ name: 'navbar-layouts-placeload-4' }">
                       <i aria-hidden="true" class="lnil lnil lnil-reload"></i>
                       <span>Placeload V4</span>
-                      <V-Tag label="v1.2" color="primary" outlined curved />
+                      <VTag label="v1.2" color="primary" outlined curved />
                       <i
                         aria-hidden="true"
                         class="iconify"

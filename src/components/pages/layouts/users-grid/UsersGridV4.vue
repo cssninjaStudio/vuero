@@ -33,37 +33,37 @@ const optionsSingle = [
 <template>
   <div>
     <div class="user-grid-toolbar">
-      <V-Control icon="feather:search">
+      <VControl icon="feather:search">
         <input
           v-model="filters"
           class="input custom-text-filter"
           placeholder="Search..."
         />
-      </V-Control>
+      </VControl>
 
       <div class="buttons">
-        <V-Field class="h-hidden-mobile">
-          <V-Control>
+        <VField class="h-hidden-mobile">
+          <VControl>
             <Multiselect
               v-model="valueSingle"
               :options="optionsSingle"
               :max-height="145"
               placeholder="Select an option"
             />
-          </V-Control>
-        </V-Field>
-        <V-Button color="primary" raised>
+          </VControl>
+        </VField>
+        <VButton color="primary" raised>
           <span class="icon">
             <i aria-hidden="true" class="fas fa-plus"></i>
           </span>
           <span>Add User</span>
-        </V-Button>
+        </VButton>
       </div>
     </div>
 
     <div class="user-grid user-grid-v4">
       <!--List Empty Search Placeholder -->
-      <V-PlaceholderPage
+      <VPlaceholderPage
         :class="[filteredData.length !== 0 && 'is-hidden']"
         title="We couldn't find any matching results."
         subtitle="Too bad. Looks like we couldn't find any matching results for the
@@ -74,16 +74,16 @@ const optionsSingle = [
         <template #image>
           <img
             class="light-image"
-            src="/@src/assets/illustrations/placeholders/search-5.svg?url"
+            src="/@src/assets/illustrations/placeholders/search-5.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/@src/assets/illustrations/placeholders/search-5-dark.svg?url"
+            src="/@src/assets/illustrations/placeholders/search-5-dark.svg"
             alt=""
           />
         </template>
-      </V-PlaceholderPage>
+      </VPlaceholderPage>
 
       <transition-group
         name="list"
@@ -94,14 +94,14 @@ const optionsSingle = [
         <div v-for="item in filteredData" :key="item.id" class="column is-3">
           <div class="grid-item">
             <UserCardDropdown />
-            <V-Avatar :picture="item.avatar" :badge="item.badge" size="big" />
+            <VAvatar :picture="item.avatar" :badge="item.badge" size="big" />
             <h3 class="dark-inverted">{{ item.fullName }}</h3>
             <p>{{ item.position }}</p>
             <div class="button-wrap has-text-centered">
-              <V-Button v-if="item.added" color="primary" raised>
+              <VButton v-if="item.added" color="primary" raised>
                 Add To Project
-              </V-Button>
-              <V-Button v-else dark-outlined raised>Add To Team</V-Button>
+              </VButton>
+              <VButton v-else dark-outlined raised>Add To Team</VButton>
               <div>
                 <a class="dark-inverted-hover">View Profile</a>
               </div>

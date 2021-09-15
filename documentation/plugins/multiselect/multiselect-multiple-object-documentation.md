@@ -26,16 +26,16 @@ const optionMultipleObject = {
 </script>
 
 <template>
-  <V-Field>
-    <V-Control>
+  <VField>
+    <VControl>
       <Multiselect
         v-model="valueMultipleObject"
         mode="multiple"
         :options="optionMultipleObject"
         placeholder="Select options"
       />
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -45,40 +45,40 @@ const optionMultipleObject = {
 
 <div class="columns">
   <div class="column is-4">
-    <V-Field>
-      <V-Control>
+    <VField>
+      <VControl>
         <Multiselect
           v-model="frontmatter.valueMultipleObject"
           mode="multiple"
           :options="frontmatter.optionMultipleObject"
           placeholder="Select options"
         />
-      </V-Control>
-    </V-Field>
+      </VControl>
+    </VField>
   </div>
   <div class="column is-4">
-    <V-Field class="is-curved-select">
-      <V-Control>
+    <VField class="is-curved-select">
+      <VControl>
         <Multiselect
           v-model="frontmatter.valueMultipleObject"
           mode="multiple"
           :options="frontmatter.optionMultipleObject"
           placeholder="Select options"
         />
-      </V-Control>
-    </V-Field>
+      </VControl>
+    </VField>
   </div>
   <div class="column is-4">
-    <V-Field class="is-rounded-select">
-      <V-Control>
+    <VField class="is-rounded-select">
+      <VControl>
         <Multiselect
           v-model="frontmatter.valueMultipleObject"
           mode="multiple"
           :options="frontmatter.optionMultipleObject"
           placeholder="Select options"
         />
-      </V-Control>
-    </V-Field>
+      </VControl>
+    </VField>
   </div>
 </div>
 

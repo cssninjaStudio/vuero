@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-Loader Props
+### VLoader Props
 
-Here is the full props available for `<V-Loader />` component:
+Here is the full props available for `<VLoader />` component:
 
 | Props       | Default                                       | Type                           |
 | ----------- | --------------------------------------------- | ------------------------------ |

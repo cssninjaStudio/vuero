@@ -3,9 +3,9 @@ state:
   value: ''
 ---
 
-### V-IMaskInput
+### VIMaskInput
 
-Vuero ships with the `<V-IMaskInput />` component, a wrapper arround the great
+Vuero ships with the `<VIMaskInput />` component, a wrapper arround the great
 [imask javascript library](https://imask.js.org/).
 Check the code for more details.
 
@@ -19,9 +19,9 @@ const value = ref('')
 </script>
 
 <template>
-  <V-Field>
-    <V-Control>
-      <V-IMaskInput
+  <VField>
+    <VControl>
+      <VIMaskInput
         v-model="value"
         autocomplete="cc-csc"
         class="input"
@@ -30,8 +30,8 @@ const value = ref('')
         }"
         placeholder="3 digits code"
       />
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -39,9 +39,9 @@ const value = ref('')
 
 <!--example-->
 
-<V-Field>
-  <V-Control>
-  <V-IMaskInput
+<VField>
+  <VControl>
+  <VIMaskInput
     v-model="frontmatter.state.value"
     autocomplete="cc-csc"
     class="input"
@@ -50,7 +50,7 @@ const value = ref('')
     }"
     placeholder="3 digits code"
   />
-  </V-Control>
-</V-Field>
+  </VControl>
+</VField>
 
 <!--/example-->

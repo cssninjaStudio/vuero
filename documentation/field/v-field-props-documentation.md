@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-Field Props
+### VField Props
 
-Here is the full props available for `<V-Field />` component:
+Here is the full props available for `<VField />` component:
 
 | Props      | Default                                       | Type    |
 | ---------- | --------------------------------------------- | ------- |

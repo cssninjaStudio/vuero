@@ -6,7 +6,7 @@ state:
 ### Thin label
 
 You might have to add a label to your switches in some cases.
-If so, use the `V-SwitchBlock` component, which provides a nice and
+If so, use the `VSwitchBlock` component, which provides a nice and
 clean flexbox layout. See the code example for more details about usage.
 
 <!--code-->
@@ -19,7 +19,7 @@ const value = ref(true)
 </script>
 
 <template>
-  <V-SwitchBlock v-model="value" label="Some option" thin />
+  <VSwitchBlock v-model="value" label="Some option" thin />
 </template>
 ```
 
@@ -28,7 +28,7 @@ const value = ref(true)
 <!--example-->
 
 <div>
-  <V-SwitchBlock 
+  <VSwitchBlock 
     v-model="frontmatter.state.value" 
     label="Some option" 
     thin 

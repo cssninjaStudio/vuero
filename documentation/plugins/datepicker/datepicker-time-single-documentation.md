@@ -5,7 +5,7 @@ state:
 
 ### Timepicker
 
-`<V-Calendar />` can be turned into a simple time picker if needed.
+`<VCalendar />` can be turned into a simple time picker if needed.
 You can add the `is24hr` attribute to display hours in 24h format.
 Check the code example for more details about usage.
 
@@ -19,15 +19,15 @@ const date = ref(null)
 </script>
 
 <template>
-  <v-date-picker v-model="date" mode="dateTime" is24hr>
+  <Vdate-picker v-model="date" mode="dateTime" is24hr>
     <template #default="{ inputValue, inputEvents }">
-      <V-Field>
-        <V-Control>
+      <VField>
+        <VControl>
           <input class="input" :value="inputValue" v-on="inputEvents" />
-        </V-Control>
-      </V-Field>
+        </VControl>
+      </VField>
     </template>
-  </v-date-picker>
+  </Vdate-picker>
 </template>
 ```
 
@@ -35,14 +35,14 @@ const date = ref(null)
 
 <!--example-->
 
-<v-date-picker v-model="frontmatter.state.date" color="green" mode="time" is24hr>
+<Vdate-picker v-model="frontmatter.state.date" color="green" mode="time" is24hr>
   <template #default="{ inputValue, inputEvents }">
-    <V-Field>
-      <V-Control>
+    <VField>
+      <VControl>
         <input class="input" :value="inputValue" v-on="inputEvents" />
-      </V-Control>
-    </V-Field>
+      </VControl>
+    </VField>
   </template>
-</v-date-picker>
+</Vdate-picker>
 
 <!--/example-->

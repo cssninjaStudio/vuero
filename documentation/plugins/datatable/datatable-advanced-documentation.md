@@ -13,7 +13,7 @@ import { optionsAdvanced } from '/@src/data/v-datatable/advanced-datatable'
 </script>
 
 <template>
-  <V-SimpleDatatables :options="optionsAdvanced" />
+  <VSimpleDatatables :options="optionsAdvanced" />
 </template>
 ```
 

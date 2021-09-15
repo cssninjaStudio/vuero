@@ -1,6 +1,6 @@
 ### Feather icons
 
-Vuero provides a `<V-Snack />` component than can be used
+Vuero provides a `<VSnack />` component than can be used
 to show a pill with an icon. Use the available `slots` prop
 to insert your content. Check the markup for more details.
 
@@ -8,24 +8,24 @@ to insert your content. Check the markup for more details.
 
 ```vue
 <template>
-  <V-Snack title="Shopping" white icon="feather:shopping-cart">
+  <VSnack title="Shopping" white icon="feather:shopping-cart">
     <i class="iconify" data-icon="feather:plus"></i>
-  </V-Snack>
-  <V-Snack title="Shopping" color="primary" icon="feather:smile">
+  </VSnack>
+  <VSnack title="Shopping" color="primary" icon="feather:smile">
     <i class="iconify" data-icon="feather:plus"></i>
-  </V-Snack>
-  <V-Snack title="Support" color="success" white icon="feather:life-buoy">
+  </VSnack>
+  <VSnack title="Support" color="success" white icon="feather:life-buoy">
     <i class="iconify" data-icon="feather:plus"></i>
-  </V-Snack>
-  <V-Snack title="Business" color="info" icon="feather:briefcase">
+  </VSnack>
+  <VSnack title="Business" color="info" icon="feather:briefcase">
     <i class="iconify" data-icon="feather:plus"></i>
-  </V-Snack>
-  <V-Snack title="Warning" color="warning" white icon="feather:alert-octagon">
+  </VSnack>
+  <VSnack title="Warning" color="warning" white icon="feather:alert-octagon">
     <i class="iconify" data-icon="feather:plus"></i>
-  </V-Snack>
-  <V-Snack title="Health" color="danger" white icon="feather:thermometer">
+  </VSnack>
+  <VSnack title="Health" color="danger" white icon="feather:thermometer">
     <i class="iconify" data-icon="feather:plus"></i>
-  </V-Snack>
+  </VSnack>
 </template>
 ```
 
@@ -34,29 +34,29 @@ to insert your content. Check the markup for more details.
 <!--example-->
 
 <div class="snacks">
-  <V-Snack title="Shopping" white icon="feather:shopping-cart">
+  <VSnack title="Shopping" white icon="feather:shopping-cart">
     <i class="iconify" data-icon="feather:plus"></i>
-  </V-Snack>
-  <V-Snack title="Shopping" color="primary" icon="feather:smile">
+  </VSnack>
+  <VSnack title="Shopping" color="primary" icon="feather:smile">
     <i class="iconify" data-icon="feather:plus"></i>
-  </V-Snack>
-  <V-Snack title="Support" color="success" white icon="feather:life-buoy">
+  </VSnack>
+  <VSnack title="Support" color="success" white icon="feather:life-buoy">
     <i class="iconify" data-icon="feather:plus"></i>
-  </V-Snack>
-  <V-Snack title="Business" color="info" icon="feather:briefcase">
+  </VSnack>
+  <VSnack title="Business" color="info" icon="feather:briefcase">
     <i class="iconify" data-icon="feather:plus"></i>
-  </V-Snack>
-  <V-Snack
+  </VSnack>
+  <VSnack
     title="Warning"
     color="warning"
     white
     icon="feather:alert-octagon"
   >
     <i class="iconify" data-icon="feather:plus"></i>
-  </V-Snack>
-  <V-Snack title="Health" color="danger" white icon="feather:thermometer">
+  </VSnack>
+  <VSnack title="Health" color="danger" white icon="feather:thermometer">
     <i class="iconify" data-icon="feather:plus"></i>
-  </V-Snack>
+  </VSnack>
 </div>
 
 <!--/example-->

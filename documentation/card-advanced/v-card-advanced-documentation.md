@@ -1,6 +1,6 @@
-### V-CardAdvanced
+### VCardAdvanced
 
-Vuero ships with a `<V-CardAdvanced />` component that features a card header,
+Vuero ships with a `<VCardAdvanced />` component that features a card header,
 body, and footer, to display any type of content.
 Card header and footer have both a left and right `slots` where you
 can insert your UI elements/components. You can also control the card radius
@@ -10,19 +10,19 @@ using the `radius` prop.
 
 ```vue
 <template>
-  <V-CardAdvanced>
+  <VCardAdvanced>
     <template #header-left>
-      <V-Block title="Anna B." subtitle="UX Designer" center>
+      <VBlock title="Anna B." subtitle="UX Designer" center>
         <template #icon>
-          <V-Avatar
+          <VAvatar
             picture="/demo/avatars/19.jpg"
             badge="/images/icons/flags/germany.svg"
           />
         </template>
-      </V-Block>
+      </VBlock>
     </template>
     <template #header-right>
-      <V-AvatarStack
+      <VAvatarStack
         :avatars="[
           {
             id: 5,
@@ -62,14 +62,14 @@ using the `radius` prop.
     </template>
     <template #footer-left>
       <div class="tags">
-        <V-Tag label="Sales" color="solid" rounded />
-        <V-Tag label="Business" color="solid" rounded />
+        <VTag label="Sales" color="solid" rounded />
+        <VTag label="Business" color="solid" rounded />
       </div>
     </template>
     <template #footer-right>
-      <V-Button color="primary" raised>Action</V-Button>
+      <VButton color="primary" raised>Action</VButton>
     </template>
-  </V-CardAdvanced>
+  </VCardAdvanced>
 </template>
 ```
 

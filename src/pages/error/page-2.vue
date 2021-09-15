@@ -13,12 +13,12 @@ useHead({
         <div class="bg-number dark-inverted">404</div>
         <img
           class="light-image"
-          src="/@src/assets/illustrations/placeholders/error-2.svg?url"
+          src="/@src/assets/illustrations/placeholders/error-2.svg"
           alt=""
         />
         <img
           class="dark-image"
-          src="/@src/assets/illustrations/placeholders/error-2-dark.svg?url"
+          src="/@src/assets/illustrations/placeholders/error-2-dark.svg"
           alt=""
         />
         <h3 class="dark-inverted">We couldn't find that page</h3>
@@ -27,9 +27,9 @@ useHead({
           administrator if the problem persists.
         </p>
         <div class="button-wrap">
-          <V-Button color="primary" elevated @click="$router.go(-1)">
+          <VButton color="primary" elevated @click="$router.go(-1)">
             Take me Back
-          </V-Button>
+          </VButton>
         </div>
       </div>
     </div>

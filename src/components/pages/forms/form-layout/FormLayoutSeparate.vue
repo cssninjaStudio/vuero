@@ -13,35 +13,35 @@ const country = ref('')
             <h3 class="has-text-centered">Personal Information</h3>
             <div class="columns is-multiline">
               <div class="column is-6">
-                <V-Field>
+                <VField>
                   <label>First Name</label>
-                  <V-Control icon="feather:user">
+                  <VControl icon="feather:user">
                     <input
                       type="text"
                       class="input"
                       placeholder=""
                       autocomplete="given-name"
                     />
-                  </V-Control>
-                </V-Field>
+                  </VControl>
+                </VField>
               </div>
               <div class="column is-6">
-                <V-Field>
+                <VField>
                   <label>Last Name</label>
-                  <V-Control icon="feather:user">
+                  <VControl icon="feather:user">
                     <input
                       type="text"
                       class="input"
                       placeholder=""
                       autocomplete="family-name"
                     />
-                  </V-Control>
-                </V-Field>
+                  </VControl>
+                </VField>
               </div>
               <div class="column is-12">
-                <V-Field>
+                <VField>
                   <label>Email Address</label>
-                  <V-Control icon="feather:mail">
+                  <VControl icon="feather:mail">
                     <input
                       type="email"
                       class="input"
@@ -49,39 +49,39 @@ const country = ref('')
                       autocomplete="email"
                       inputmode="email"
                     />
-                  </V-Control>
-                </V-Field>
+                  </VControl>
+                </VField>
               </div>
               <div class="column is-12">
-                <V-Field>
+                <VField>
                   <label>Street</label>
-                  <V-Control icon="feather:map-pin">
+                  <VControl icon="feather:map-pin">
                     <input
                       type="text"
                       class="input"
                       placeholder=""
                       autocomplete="street-address"
                     />
-                  </V-Control>
-                </V-Field>
+                  </VControl>
+                </VField>
               </div>
               <div class="column is-6">
-                <V-Field>
+                <VField>
                   <label>City</label>
-                  <V-Control icon="feather:map-pin">
+                  <VControl icon="feather:map-pin">
                     <input
                       type="text"
                       class="input"
                       placeholder=""
                       autocomplete="address-level2"
                     />
-                  </V-Control>
-                </V-Field>
+                  </VControl>
+                </VField>
               </div>
               <div class="column is-6">
-                <V-Field class="is-image-select">
+                <VField class="is-image-select">
                   <label>Country</label>
-                  <V-Control>
+                  <VControl>
                     <Multiselect
                       v-model="country"
                       placeholder="Select a country"
@@ -133,13 +133,13 @@ const country = ref('')
                         </span>
                       </template>
                     </Multiselect>
-                  </V-Control>
-                </V-Field>
+                  </VControl>
+                </VField>
               </div>
               <div class="column is-12">
-                <V-Field>
+                <VField>
                   <label>Phone</label>
-                  <V-Control icon="feather:phone">
+                  <VControl icon="feather:phone">
                     <input
                       type="tel"
                       class="input"
@@ -147,8 +147,8 @@ const country = ref('')
                       autocomplete="tel"
                       inputmode="tel"
                     />
-                  </V-Control>
-                </V-Field>
+                  </VControl>
+                </VField>
               </div>
             </div>
           </div>
@@ -158,9 +158,9 @@ const country = ref('')
             <h3 class="has-text-centered">Delivery</h3>
             <div class="columns is-multiline">
               <div class="column is-12">
-                <V-Field>
+                <VField>
                   <label>Delivery Fee</label>
-                  <V-Control>
+                  <VControl>
                     <div class="radio-boxes">
                       <div class="radio-box">
                         <input type="radio" name="delivery_type" />
@@ -186,38 +186,38 @@ const country = ref('')
                       <span>Estimated delivery date: <span>Oct 23</span></span>
                       <span>Each package has a tracking number</span>
                     </p>
-                  </V-Control>
-                </V-Field>
+                  </VControl>
+                </VField>
               </div>
             </div>
           </div>
 
           <div class="form-section-outer">
             <div class="checkboxes">
-              <V-Field>
-                <V-Control>
+              <VField>
+                <VControl>
                   <label class="checkbox is-circle">
                     <input type="checkbox" checked />
                     <span></span>
                     Create an account
                   </label>
-                </V-Control>
-              </V-Field>
+                </VControl>
+              </VField>
 
-              <V-Field>
-                <V-Control>
+              <VField>
+                <VControl>
                   <label class="checkbox is-circle">
                     <input type="checkbox" />
                     <span></span>
                     Subscribe to our Newsletter
                   </label>
-                </V-Control>
-              </V-Field>
+                </VControl>
+              </VField>
             </div>
             <div class="button-wrap">
-              <V-Button color="primary" bold raised fullwidth>
+              <VButton color="primary" bold raised fullwidth>
                 Confirm My Order
-              </V-Button>
+              </VButton>
             </div>
           </div>
         </div>

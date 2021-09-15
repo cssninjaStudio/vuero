@@ -18,15 +18,15 @@ const data = [
   },
 ]
 
-pageTitle.value = 'V-Collapse'
+pageTitle.value = 'VCollapse'
 useHead({
-  title: 'V-Collapse - Components - Vuero',
+  title: 'VCollapse - Components - Vuero',
 })
 </script>
 
 <template>
   <div class="page-content-inner">
-    <V-Breadcrumb
+    <VBreadcrumb
       with-icons
       separator="bullet"
       :items="[
@@ -44,7 +44,7 @@ useHead({
           label: 'Accordions',
         },
         {
-          label: 'V-Collapse',
+          label: 'VCollapse',
           to: { name: 'components-collapse' },
         },
       ]"
@@ -57,11 +57,11 @@ useHead({
       </div>
 
       <div class="column is-6">
-        <V-Collapse :items="data" />
+        <VCollapse :items="data" />
       </div>
 
       <div class="column is-6">
-        <V-Collapse :items="data" with-chevron />
+        <VCollapse :items="data" with-chevron />
       </div>
 
       <div class="column is-12">

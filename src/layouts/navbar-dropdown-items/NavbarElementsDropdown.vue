@@ -14,14 +14,14 @@ watch([() => route.fullPath, dropdownElement], () => {
 </script>
 
 <template>
-  <V-Dropdown ref="dropdownElement" class="has-mega-dropdown" modern spaced>
+  <VDropdown ref="dropdownElement" class="has-mega-dropdown" modern spaced>
     <template #button="{ toggle }">
       <div
         class="dropdown-trigger is-trigger"
         aria-haspopup="true"
         aria-controls="dropdown-menu"
       >
-        <V-Button
+        <VButton
           aria-haspopup="true"
           aria-controls="dropdown-menu"
           icon-caret="feather:chevron-down"
@@ -29,7 +29,7 @@ watch([() => route.fullPath, dropdownElement], () => {
           @click="toggle"
         >
           Elements
-        </V-Button>
+        </VButton>
       </div>
     </template>
 
@@ -60,12 +60,12 @@ watch([() => route.fullPath, dropdownElement], () => {
 
           <img
             class="placeholder-image light-image"
-            src="/@src/assets/illustrations/components/buttons.svg?url"
+            src="/@src/assets/illustrations/components/buttons.svg"
             alt=""
           />
           <img
             class="placeholder-image dark-image"
-            src="/@src/assets/illustrations/components/buttons-dark.svg?url"
+            src="/@src/assets/illustrations/components/buttons-dark.svg"
             alt=""
           />
         </div>
@@ -215,7 +215,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-pointer-top"></i>
                   </div>
                   <div class="meta">
-                    <span>V-Action</span>
+                    <span>VAction</span>
                   </div>
                 </RouterLink>
 
@@ -227,7 +227,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-pointer-top"></i>
                   </div>
                   <div class="meta">
-                    <span>V-Button</span>
+                    <span>VButton</span>
                   </div>
                 </RouterLink>
 
@@ -239,7 +239,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-chevron-down"></i>
                   </div>
                   <div class="meta">
-                    <span>V-Dropdown</span>
+                    <span>VDropdown</span>
                   </div>
                 </RouterLink>
 
@@ -251,7 +251,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-pointer-top"></i>
                   </div>
                   <div class="meta">
-                    <span>V-IconButton</span>
+                    <span>VIconButton</span>
                   </div>
                 </RouterLink>
 
@@ -263,7 +263,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-spinner-3"></i>
                   </div>
                   <div class="meta">
-                    <span>V-Loader</span>
+                    <span>VLoader</span>
                   </div>
                 </RouterLink>
 
@@ -275,8 +275,8 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-reload"></i>
                   </div>
                   <div class="meta">
-                    <span>V-Placeload</span>
-                    <V-Tag
+                    <span>VPlaceload</span>
+                    <VTag
                       label="v1.2"
                       color="primary"
                       outlined
@@ -294,8 +294,8 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-reload"></i>
                   </div>
                   <div class="meta">
-                    <span>V-PlaceloadText</span>
-                    <V-Tag
+                    <span>VPlaceloadText</span>
+                    <VTag
                       label="v1.2"
                       color="primary"
                       outlined
@@ -313,8 +313,8 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-reload"></i>
                   </div>
                   <div class="meta">
-                    <span>V-PlaceloadAvatar</span>
-                    <V-Tag
+                    <span>VPlaceloadAvatar</span>
+                    <VTag
                       label="v1.2"
                       color="primary"
                       outlined
@@ -332,8 +332,8 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-capital-letter"></i>
                   </div>
                   <div class="meta">
-                    <span>V-Message</span>
-                    <V-Tag
+                    <span>VMessage</span>
+                    <VTag
                       label="v1.1"
                       color="primary"
                       outlined
@@ -354,7 +354,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     ></i>
                   </div>
                   <div class="meta">
-                    <span>V-Modal</span>
+                    <span>VModal</span>
                   </div>
                 </RouterLink>
 
@@ -366,7 +366,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-half-battery"></i>
                   </div>
                   <div class="meta">
-                    <span>V-Progress</span>
+                    <span>VProgress</span>
                   </div>
                 </RouterLink>
 
@@ -378,7 +378,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-comments-alt"></i>
                   </div>
                   <div class="meta">
-                    <span>V-Tooltip</span>
+                    <span>VTooltip</span>
                   </div>
                 </RouterLink>
               </div>
@@ -472,7 +472,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-stop"></i>
                   </div>
                   <div class="meta">
-                    <span>V-Control</span>
+                    <span>VControl</span>
                   </div>
                 </RouterLink>
 
@@ -484,7 +484,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-stop"></i>
                   </div>
                   <div class="meta">
-                    <span>V-Field</span>
+                    <span>VField</span>
                   </div>
                 </RouterLink>
               </div>
@@ -512,8 +512,8 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-round-box-check"></i>
                   </div>
                   <div class="meta">
-                    <span>V-AnimatedCheckbox</span>
-                    <V-Tag
+                    <span>VAnimatedCheckbox</span>
+                    <VTag
                       label="v1.1"
                       color="primary"
                       outlined
@@ -531,8 +531,8 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-round-box-check"></i>
                   </div>
                   <div class="meta">
-                    <span>V-Checkbox</span>
-                    <V-Tag
+                    <span>VCheckbox</span>
+                    <VTag
                       label="v1.1"
                       color="primary"
                       outlined
@@ -553,8 +553,8 @@ watch([() => route.fullPath, dropdownElement], () => {
                     ></i>
                   </div>
                   <div class="meta">
-                    <span>V-Radio</span>
-                    <V-Tag
+                    <span>VRadio</span>
+                    <VTag
                       label="v1.1"
                       color="primary"
                       outlined
@@ -572,7 +572,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-switch"></i>
                   </div>
                   <div class="meta">
-                    <span>V-SwitchBlock</span>
+                    <span>VSwitchBlock</span>
                   </div>
                 </RouterLink>
                 <RouterLink
@@ -583,7 +583,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-switch"></i>
                   </div>
                   <div class="meta">
-                    <span>V-SwitchSegment</span>
+                    <span>VSwitchSegment</span>
                   </div>
                 </RouterLink>
               </div>
@@ -617,7 +617,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-code"></i>
                   </div>
                   <div class="meta">
-                    <span>V-Calendar</span>
+                    <span>VCalendar</span>
                   </div>
                 </RouterLink>
 
@@ -629,7 +629,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-code"></i>
                   </div>
                   <div class="meta">
-                    <span>V-IMaskInput</span>
+                    <span>VIMaskInput</span>
                   </div>
                 </RouterLink>
 
@@ -641,7 +641,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-code"></i>
                   </div>
                   <div class="meta">
-                    <span>V-FilePond</span>
+                    <span>VFilePond</span>
                   </div>
                 </RouterLink>
 
@@ -686,5 +686,5 @@ watch([() => route.fullPath, dropdownElement], () => {
         </div>
       </div>
     </template>
-  </V-Dropdown>
+  </VDropdown>
 </template>

@@ -1,6 +1,6 @@
 ### Colors
 
-`<V-Button />` components can have different colors.
+`<VButton />` components can have different colors.
 Use the `color` prop on the component to change its color.
 Available color values are `primary`, `info`, `success`, `warning`,
 `danger` and `white`.
@@ -9,13 +9,13 @@ Available color values are `primary`, `info`, `success`, `warning`,
 
 ```vue
 <template>
-  <V-Buttons>
-    <V-Button color="primary"> Button </V-Button>
-    <V-Button color="info"> Button </V-Button>
-    <V-Button color="success"> Button </V-Button>
-    <V-Button color="warning"> Button </V-Button>
-    <V-Button color="danger"> Button </V-Button>
-    <V-Button color="white"> Button </V-Button></V-Buttons
+  <VButtons>
+    <VButton color="primary"> Button </VButton>
+    <VButton color="info"> Button </VButton>
+    <VButton color="success"> Button </VButton>
+    <VButton color="warning"> Button </VButton>
+    <VButton color="danger"> Button </VButton>
+    <VButton color="white"> Button </VButton></VButtons
   >
 </template>
 ```
@@ -24,25 +24,25 @@ Available color values are `primary`, `info`, `success`, `warning`,
 
 <!--example-->
 
-<V-Buttons>
-    <V-Button color="primary">
+<VButtons>
+    <VButton color="primary">
         Button
-    </V-Button>
-    <V-Button color="info">
+    </VButton>
+    <VButton color="info">
         Button
-    </V-Button>
-    <V-Button color="success">
+    </VButton>
+    <VButton color="success">
         Button
-    </V-Button>
-    <V-Button color="warning">
+    </VButton>
+    <VButton color="warning">
         Button
-    </V-Button>
-    <V-Button color="danger">
+    </VButton>
+    <VButton color="danger">
         Button
-    </V-Button>
-    <V-Button color="white">
+    </VButton>
+    <VButton color="white">
         Button
-    </V-Button>
-</V-Buttons>
+    </VButton>
+</VButtons>
 
 <!--/example-->

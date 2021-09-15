@@ -1,6 +1,6 @@
 ### Modal Forms
 
-Vuero `<V-Modal />` component can be used for anything, including displaying
+Vuero `<VModal />` component can be used for anything, including displaying
 and handling forms. Use the `content` slot `<template #content></template>`
 to inject any kind of content inside the modal.
 
@@ -13,9 +13,9 @@ const smallFormOpen = ref(false)
 </script>
 
 <template>
-  <V-Button bold @click="smallFormOpen = true"> Open Modal </V-Button>
+  <VButton bold @click="smallFormOpen = true"> Open Modal </VButton>
 
-  <V-Modal
+  <VModal
     :open="smallFormOpen"
     title="Leave a Comment"
     size="small"
@@ -49,9 +49,9 @@ const smallFormOpen = ref(false)
       </form>
     </template>
     <template #action>
-      <V-Button color="primary" raised>Publish</V-Button>
+      <VButton color="primary" raised>Publish</VButton>
     </template>
-  </V-Modal>
+  </VModal>
 </template>
 ```
 

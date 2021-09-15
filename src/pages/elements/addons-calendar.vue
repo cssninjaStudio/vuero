@@ -9,15 +9,15 @@ const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 const date = ref(null)
 
-pageTitle.value = 'V-Calendar'
+pageTitle.value = 'VCalendar'
 useHead({
-  title: 'V-Calendar - Addons - Vuero',
+  title: 'VCalendar - Addons - Vuero',
 })
 </script>
 
 <template>
   <div class="page-content-inner">
-    <V-Breadcrumb
+    <VBreadcrumb
       with-icons
       separator="bullet"
       :items="[
@@ -35,7 +35,7 @@ useHead({
           label: 'Addons',
         },
         {
-          label: 'V-Calendar',
+          label: 'VCalendar',
           to: { name: 'elements-addons-calendar' },
         },
       ]"

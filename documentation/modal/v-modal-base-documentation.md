@@ -1,7 +1,7 @@
-### V-Modal
+### VModal
 
-Vuero ships with a dead simple and versatile `<V-Modal />` component.
-The V-Modal component has 2 available `slots`: one for the `content`,
+Vuero ships with a dead simple and versatile `<VModal />` component.
+The VModal component has 2 available `slots`: one for the `content`,
 so you can put anything you want inside, and one for the primary `action`.
 Check the code example for more details.
 
@@ -14,23 +14,23 @@ const centeredActionsOpen = ref(false)
 </script>
 
 <template>
-  <V-Button bold @click="centeredActionsOpen = true"> Open Modal </V-Button>
+  <VButton bold @click="centeredActionsOpen = true"> Open Modal </VButton>
 
-  <V-Modal
+  <VModal
     :open="centeredActionsOpen"
     actions="center"
     @close="centeredActionsOpen = false"
   >
     <template #content>
-      <V-PlaceholderSection
+      <VPlaceholderSection
         title="Go Premium"
         subtitle="Unlock more features and business tools by going premium"
       />
     </template>
     <template #action>
-      <V-Button color="primary" raised>Confirm</V-Button>
+      <VButton color="primary" raised>Confirm</VButton>
     </template>
-  </V-Modal>
+  </VModal>
 </template>
 ```
 

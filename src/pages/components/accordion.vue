@@ -3,15 +3,15 @@ import { useHead } from '@vueuse/head'
 
 import { pageTitle } from '/@src/state/sidebarLayoutState'
 
-pageTitle.value = 'V-Accordion'
+pageTitle.value = 'VAccordion'
 useHead({
-  title: 'V-Accordion - Components - Vuero',
+  title: 'VAccordion - Components - Vuero',
 })
 </script>
 
 <template>
   <div class="page-content-inner">
-    <V-Breadcrumb
+    <VBreadcrumb
       with-icons
       separator="bullet"
       :items="[
@@ -29,7 +29,7 @@ useHead({
           label: 'Accordions',
         },
         {
-          label: 'V-Accordion',
+          label: 'VAccordion',
           to: { name: 'components-accordion' },
         },
       ]"
@@ -42,7 +42,7 @@ useHead({
       </div>
 
       <div class="column is-6 is-full-tablet">
-        <V-Accordion
+        <VAccordion
           :items="[
             {
               title: 'Accordion Item 1',
@@ -61,7 +61,7 @@ useHead({
       </div>
 
       <div class="column is-6 is-full-tablet">
-        <V-Accordion
+        <VAccordion
           :items="[
             {
               title: 'Accordion Item 1',

@@ -17,7 +17,7 @@ const props = withDefaults(
       :key="user.id"
       class="inner-list-item media-flex-center"
     >
-      <V-Avatar :picture="user.picture" :squared="props.squared" />
+      <VAvatar :picture="user.picture" :squared="props.squared" />
       <div class="flex-meta is-light">
         <a href="#">{{ user.name }}</a>
         <span>{{ user.position }}</span>

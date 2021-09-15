@@ -1,6 +1,6 @@
 ### Modern Dropdown
 
-If you add in some specific markup, `<V-Dropdown />` buttons can
+If you add in some specific markup, `<VDropdown />` buttons can
 be enhanced into modern dropdowns with an animated caret icon.
 Use the `modern` prop on the component.
 
@@ -8,7 +8,7 @@ Use the `modern` prop on the component.
 
 ```vue
 <template>
-  <V-Dropdown title="Modern dropdown" modern>
+  <VDropdown title="Modern dropdown" modern>
     <template #content>
       <a href="#" class="dropdown-item"> Dropdown item </a>
       <a href="#" class="dropdown-item"> Other dropdown item </a>
@@ -17,7 +17,7 @@ Use the `modern` prop on the component.
       <hr class="dropdown-divider" />
       <a href="#" class="dropdown-item"> With a divider </a>
     </template>
-  </V-Dropdown>
+  </VDropdown>
 </template>
 ```
 
@@ -27,7 +27,7 @@ Use the `modern` prop on the component.
 
 <div class="field is-grouped">
   <div class="control">
-    <V-Dropdown title="Modern rounded" class="is-rounded" rounded modern>
+    <VDropdown title="Modern rounded" class="is-rounded" rounded modern>
       <template #content>
         <a href="#" class="dropdown-item"> Dropdown item </a>
         <a href="#" class="dropdown-item"> Other dropdown item </a>
@@ -36,11 +36,11 @@ Use the `modern` prop on the component.
         <hr class="dropdown-divider" />
         <a href="#" class="dropdown-item"> With a divider </a>
       </template>
-    </V-Dropdown>
+    </VDropdown>
   </div>
 
   <div class="control">
-    <V-Dropdown title="Modern dropdown" modern up right>
+    <VDropdown title="Modern dropdown" modern up right>
       <template #content>
         <a href="#" class="dropdown-item"> Dropdown item </a>
         <a href="#" class="dropdown-item"> Other dropdown item </a>
@@ -49,7 +49,7 @@ Use the `modern` prop on the component.
         <hr class="dropdown-divider" />
         <a href="#" class="dropdown-item"> With a divider </a>
       </template>
-    </V-Dropdown>
+    </VDropdown>
   </div>
 </div>
 

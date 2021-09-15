@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-Avatar Slots
+### VAvatar Slots
 
-Here is the full slots available for `<V-Avatar />` component:
+Here is the full slots available for `<VAvatar />` component:
 
 | Slot    | Properties                          | Description         |
 | ------- | ----------------------------------- | ------------------- |

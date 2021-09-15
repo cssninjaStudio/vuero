@@ -1,13 +1,13 @@
-### V-PlaceloadAvatar
+### VPlaceloadAvatar
 
-Vuero provides a `<V-PlaceloadAvatar />` component to display avatar skeleton
+Vuero provides a `<VPlaceloadAvatar />` component to display avatar skeleton
 while loading. Check the markup for more details.
 
 <!--code-->
 
 ```vue
 <template>
-  <V-PlaceloadAvatar />
+  <VPlaceloadAvatar />
 </template>
 ```
 
@@ -15,6 +15,6 @@ while loading. Check the markup for more details.
 
 <!--example-->
 
-<V-PlaceloadAvatar />
+<VPlaceloadAvatar />
 
 <!--/example-->

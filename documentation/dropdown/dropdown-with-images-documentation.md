@@ -1,6 +1,6 @@
 ### Menu with Images
 
-`<V-Dropdown />` menus items can have images and more original layout.
+`<VDropdown />` menus items can have images and more original layout.
 Use the `spaced` prop with the provided markup in the code example.
 The inner images can be be made rounded by adding
 the `is-rounded` class to the image element.
@@ -9,7 +9,7 @@ the `is-rounded` class to the image element.
 
 ```vue
 <template>
-  <V-Dropdown title="Dropdown with image" spaced>
+  <VDropdown title="Dropdown with image" spaced>
     <template #content>
       <a href="#" class="dropdown-item is-media">
         <img class="item-img" src="/demo/avatars/8.jpg" alt="" />
@@ -41,7 +41,7 @@ the `is-rounded` class to the image element.
         </div>
       </a>
     </template>
-  </V-Dropdown>
+  </VDropdown>
 </template>
 ```
 
@@ -51,7 +51,7 @@ the `is-rounded` class to the image element.
 
 <div class="field is-grouped">
   <div class="control">
-    <V-Dropdown title="Dropdown with image" spaced>
+    <VDropdown title="Dropdown with image" spaced>
       <template #content>
         <a href="#" class="dropdown-item is-media">
           <img
@@ -99,11 +99,11 @@ the `is-rounded` class to the image element.
           </div>
         </a>
       </template>
-    </V-Dropdown>
+    </VDropdown>
   </div>
 
   <div class="control">
-    <V-Dropdown title="Dropdown with rounded image" spaced>
+    <VDropdown title="Dropdown with rounded image" spaced>
       <template #content>
         <a href="#" class="dropdown-item is-media">
           <img
@@ -151,7 +151,7 @@ the `is-rounded` class to the image element.
           </div>
         </a>
       </template>
-    </V-Dropdown>
+    </VDropdown>
   </div>
 </div>
 

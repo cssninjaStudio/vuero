@@ -3,16 +3,16 @@ import { datatableV4 } from '/@src/data/layouts/datatable-v4'
 </script>
 
 <template>
-  <V-SimpleDatatables>
+  <VSimpleDatatables>
     <thead>
       <tr>
         <th scope="col" data-sortable="false">
-          <V-Control>
+          <VControl>
             <label class="checkbox is-primary is-outlined is-circle">
               <input id="head-checkbox" type="checkbox" />
               <span></span>
             </label>
-          </V-Control>
+          </VControl>
         </th>
         <th scope="col" data-sortable="false">Type</th>
         <th scope="col">Name</th>
@@ -26,25 +26,25 @@ import { datatableV4 } from '/@src/data/layouts/datatable-v4'
       <tr v-if="datatableV4.length === 0">
         <td colspan="7">
           <!--Empty Placeholder-->
-          <V-PlaceholderSection
+          <VPlaceholderSection
             title="No data to show"
             subtitle="There is currently no data to show in this list."
           >
             <template #image>
               <img
                 class="light-image"
-                src="/@src/assets/illustrations/placeholders/search-4.svg?url"
+                src="/@src/assets/illustrations/placeholders/search-4.svg"
                 alt=""
               />
               <img
                 class="dark-image"
-                src="/@src/assets/illustrations/placeholders/search-4-dark.svg?url"
+                src="/@src/assets/illustrations/placeholders/search-4-dark.svg"
                 alt=""
               />
             </template>
-          </V-PlaceholderSection>
+          </VPlaceholderSection>
         </td>
       </tr>
     </tbody>
-  </V-SimpleDatatables>
+  </VSimpleDatatables>
 </template>

@@ -1,6 +1,6 @@
 ### Context Menu
 
-Vuero's `<V-Dropdown />` component can also be displayed
+Vuero's `<VDropdown />` component can also be displayed
 as a context menu holding a single icon.
 The icon can be whatever you want with the specific `icon` prop set.
 Please refer to the markup for more details about usage.
@@ -9,7 +9,7 @@ Please refer to the markup for more details about usage.
 
 ```vue
 <template>
-  <V-Dropdown icon="feather:more-vertical">
+  <VDropdown icon="feather:more-vertical">
     <template #content>
       <a href="#" class="dropdown-item"> Dropdown item </a>
       <a href="#" class="dropdown-item"> Other dropdown item </a>
@@ -18,7 +18,7 @@ Please refer to the markup for more details about usage.
       <hr class="dropdown-divider" />
       <a href="#" class="dropdown-item"> With a divider </a>
     </template>
-  </V-Dropdown>
+  </VDropdown>
 </template>
 ```
 
@@ -28,7 +28,7 @@ Please refer to the markup for more details about usage.
 
 <div class="field is-grouped">
   <div class="control">
-    <V-Dropdown icon="feather:more-horizontal">
+    <VDropdown icon="feather:more-horizontal">
       <template #content>
         <a href="#" class="dropdown-item"> Dropdown item </a>
         <a href="#" class="dropdown-item"> Other dropdown item </a>
@@ -37,11 +37,11 @@ Please refer to the markup for more details about usage.
         <hr class="dropdown-divider" />
         <a href="#" class="dropdown-item"> With a divider </a>
       </template>
-    </V-Dropdown>
+    </VDropdown>
   </div>
 
   <div class="control">
-    <V-Dropdown icon="feather:more-vertical">
+    <VDropdown icon="feather:more-vertical">
       <template #content>
         <a href="#" class="dropdown-item"> Dropdown item </a>
         <a href="#" class="dropdown-item"> Other dropdown item </a>
@@ -50,11 +50,11 @@ Please refer to the markup for more details about usage.
         <hr class="dropdown-divider" />
         <a href="#" class="dropdown-item"> With a divider </a>
       </template>
-    </V-Dropdown>
+    </VDropdown>
   </div>
 
   <div class="control">
-    <V-Dropdown icon="feather:help-circle" up>
+    <VDropdown icon="feather:help-circle" up>
       <template #content>
         <a href="#" class="dropdown-item"> Dropdown item </a>
         <a href="#" class="dropdown-item"> Other dropdown item </a>
@@ -63,7 +63,7 @@ Please refer to the markup for more details about usage.
         <hr class="dropdown-divider" />
         <a href="#" class="dropdown-item"> With a divider </a>
       </template>
-    </V-Dropdown>
+    </VDropdown>
   </div>
 </div>
 

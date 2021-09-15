@@ -9,15 +9,15 @@ import { popovers } from '/@src/data/users/userPopovers'
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-pageTitle.value = 'V-Card'
+pageTitle.value = 'VCard'
 useHead({
-  title: 'V-Card - Components - Vuero',
+  title: 'VCard - Components - Vuero',
 })
 </script>
 
 <template>
   <div class="page-content-inner">
-    <V-Breadcrumb
+    <VBreadcrumb
       with-icons
       separator="bullet"
       :items="[
@@ -32,7 +32,7 @@ useHead({
           to: { name: 'components' },
         },
         {
-          label: 'V-Card',
+          label: 'VCard',
           to: { name: 'components-card' },
         },
       ]"
@@ -49,31 +49,31 @@ useHead({
 
         <div class="columns is-multiline mb-6">
           <div class="column is-4">
-            <V-Card radius="smooth">
+            <VCard radius="smooth">
               <h3 class="title is-5 mb-2">I have smooth radius</h3>
               <p>
-                I can be used as is in any layout. V-Cards are simple containers
+                I can be used as is in any layout. VCards are simple containers
                 that can hold any type of content.
               </p>
-            </V-Card>
+            </VCard>
           </div>
           <div class="column is-4">
-            <V-Card>
+            <VCard>
               <h3 class="title is-5 mb-2">I have regular radius</h3>
               <p>
-                I can be used as is in any layout. V-Cards are simple containers
+                I can be used as is in any layout. VCards are simple containers
                 that can hold any type of content.
               </p>
-            </V-Card>
+            </VCard>
           </div>
           <div class="column is-4">
-            <V-Card radius="rounded">
+            <VCard radius="rounded">
               <h3 class="title is-5 mb-2">I have rounded radius</h3>
               <p>
-                I can be used as is in any layout. V-Cards are simple containers
+                I can be used as is in any layout. VCards are simple containers
                 that can hold any type of content.
               </p>
-            </V-Card>
+            </VCard>
           </div>
         </div>
 
@@ -82,31 +82,31 @@ useHead({
 
         <div class="columns is-multiline mb-6">
           <div class="column is-4 mb-2">
-            <V-Card radius="smooth" elevated>
-              <h3 class="title is-5 mb-2">Raised V-Card</h3>
+            <VCard radius="smooth" elevated>
+              <h3 class="title is-5 mb-2">Raised VCard</h3>
               <p>
-                I can be used as is in any layout. V-Cards are simple containers
+                I can be used as is in any layout. VCards are simple containers
                 that can hold any type of content.
               </p>
-            </V-Card>
+            </VCard>
           </div>
           <div class="column is-4">
-            <V-Card elevated>
-              <h3 class="title is-5 mb-2">Raised V-Card</h3>
+            <VCard elevated>
+              <h3 class="title is-5 mb-2">Raised VCard</h3>
               <p>
-                I can be used as is in any layout. V-Cards are simple containers
+                I can be used as is in any layout. VCards are simple containers
                 that can hold any type of content.
               </p>
-            </V-Card>
+            </VCard>
           </div>
           <div class="column is-4">
-            <V-Card radius="rounded" elevated>
-              <h3 class="title is-5 mb-2">Raised V-Card</h3>
+            <VCard radius="rounded" elevated>
+              <h3 class="title is-5 mb-2">Raised VCard</h3>
               <p>
-                I can be used as is in any layout. V-Cards are simple containers
+                I can be used as is in any layout. VCards are simple containers
                 that can hold any type of content.
               </p>
-            </V-Card>
+            </VCard>
           </div>
         </div>
 
@@ -115,58 +115,58 @@ useHead({
 
         <div class="columns is-multiline mb-6">
           <div class="column is-4">
-            <V-Card radius="smooth" color="primary">
-              <h3 class="title is-5 mb-2">Primary V-Card</h3>
+            <VCard radius="smooth" color="primary">
+              <h3 class="title is-5 mb-2">Primary VCard</h3>
               <p>
-                I can be used as is in any layout. V-Cards are simple containers
+                I can be used as is in any layout. VCards are simple containers
                 that can hold any type of content.
               </p>
-            </V-Card>
+            </VCard>
           </div>
           <div class="column is-4">
-            <V-Card color="secondary">
-              <h3 class="title is-5 mb-2">Secondary V-Card</h3>
+            <VCard color="secondary">
+              <h3 class="title is-5 mb-2">Secondary VCard</h3>
               <p>
-                I can be used as is in any layout. V-Cards are simple containers
+                I can be used as is in any layout. VCards are simple containers
                 that can hold any type of content.
               </p>
-            </V-Card>
+            </VCard>
           </div>
           <div class="column is-4">
-            <V-Card radius="rounded" color="info">
-              <h3 class="title is-5 mb-2">Info V-Card</h3>
+            <VCard radius="rounded" color="info">
+              <h3 class="title is-5 mb-2">Info VCard</h3>
               <p>
-                I can be used as is in any layout. V-Cards are simple containers
+                I can be used as is in any layout. VCards are simple containers
                 that can hold any type of content.
               </p>
-            </V-Card>
+            </VCard>
           </div>
           <div class="column is-4">
-            <V-Card radius="smooth" color="success">
-              <h3 class="title is-5 mb-2">Success V-Card</h3>
+            <VCard radius="smooth" color="success">
+              <h3 class="title is-5 mb-2">Success VCard</h3>
               <p>
-                I can be used as is in any layout. V-Cards are simple containers
+                I can be used as is in any layout. VCards are simple containers
                 that can hold any type of content.
               </p>
-            </V-Card>
+            </VCard>
           </div>
           <div class="column is-4">
-            <V-Card color="warning">
-              <h3 class="title is-5 mb-2">Warning V-Card</h3>
+            <VCard color="warning">
+              <h3 class="title is-5 mb-2">Warning VCard</h3>
               <p>
-                I can be used as is in any layout. V-Cards are simple containers
+                I can be used as is in any layout. VCards are simple containers
                 that can hold any type of content.
               </p>
-            </V-Card>
+            </VCard>
           </div>
           <div class="column is-4">
-            <V-Card radius="rounded" color="danger">
-              <h3 class="title is-5 mb-2">Danger V-Card</h3>
+            <VCard radius="rounded" color="danger">
+              <h3 class="title is-5 mb-2">Danger VCard</h3>
               <p>
-                I can be used as is in any layout. V-Cards are simple containers
+                I can be used as is in any layout. VCards are simple containers
                 that can hold any type of content.
               </p>
-            </V-Card>
+            </VCard>
           </div>
         </div>
 
@@ -175,9 +175,9 @@ useHead({
 
         <div class="columns is-multiline mb-6">
           <div class="column is-4">
-            <V-Card radius="smooth" elevated>
+            <VCard radius="smooth" elevated>
               <div class="card-head">
-                <V-Block
+                <VBlock
                   title="Greta K."
                   subtitle="Sales Manager"
                   center
@@ -190,32 +190,32 @@ useHead({
                       :offset="[0, 10]"
                       placement="top-start"
                     >
-                      <V-Avatar
+                      <VAvatar
                         picture="/demo/avatars/19.jpg"
-                        badge="/images/icons/flags/germany.svg?url"
+                        badge="/images/icons/flags/germany.svg"
                       />
                       <template #content>
                         <UserPopoverContent :user="popovers.user19" />
                       </template>
                     </tippy>
                   </template>
-                </V-Block>
+                </VBlock>
 
                 <UserCardDropdown />
               </div>
 
               <div class="card-inner">
                 <p>
-                  I can be used as is in any layout. V-Cards are simple
+                  I can be used as is in any layout. VCards are simple
                   containers that can hold any type of content.
                 </p>
               </div>
-            </V-Card>
+            </VCard>
           </div>
           <div class="column is-4">
-            <V-Card elevated>
+            <VCard elevated>
               <div class="card-head">
-                <V-Block
+                <VBlock
                   title="Greta K."
                   subtitle="Sales Manager"
                   center
@@ -228,31 +228,31 @@ useHead({
                       :offset="[0, 10]"
                       placement="top-start"
                     >
-                      <V-Avatar
+                      <VAvatar
                         picture="/demo/avatars/19.jpg"
-                        badge="/images/icons/flags/germany.svg?url"
+                        badge="/images/icons/flags/germany.svg"
                       />
                       <template #content>
                         <UserPopoverContent :user="popovers.user19" />
                       </template>
                     </tippy>
                   </template>
-                </V-Block>
+                </VBlock>
 
                 <UserCardDropdown />
               </div>
               <div class="card-inner">
                 <p>
-                  I can be used as is in any layout. V-Cards are simple
+                  I can be used as is in any layout. VCards are simple
                   containers that can hold any type of content.
                 </p>
               </div>
-            </V-Card>
+            </VCard>
           </div>
           <div class="column is-4">
-            <V-Card radius="rounded" elevated>
+            <VCard radius="rounded" elevated>
               <div class="card-head">
-                <V-Block
+                <VBlock
                   title="Greta K."
                   subtitle="Sales Manager"
                   center
@@ -265,26 +265,26 @@ useHead({
                       :offset="[0, 10]"
                       placement="top-start"
                     >
-                      <V-Avatar
+                      <VAvatar
                         picture="/demo/avatars/19.jpg"
-                        badge="/images/icons/flags/germany.svg?url"
+                        badge="/images/icons/flags/germany.svg"
                       />
                       <template #content>
                         <UserPopoverContent :user="popovers.user19" />
                       </template>
                     </tippy>
                   </template>
-                </V-Block>
+                </VBlock>
 
                 <UserCardDropdown />
               </div>
               <div class="card-inner">
                 <p>
-                  I can be used as is in any layout. V-Cards are simple
+                  I can be used as is in any layout. VCards are simple
                   containers that can hold any type of content.
                 </p>
               </div>
-            </V-Card>
+            </VCard>
           </div>
         </div>
 

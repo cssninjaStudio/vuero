@@ -1,7 +1,7 @@
-### V-Tag outlined
+### VTag outlined
 
-Vuero provides a `<V-Tag />` component than can be customized
-to fit any needs. V-Tags can have outlined edges
+Vuero provides a `<VTag />` component than can be customized
+to fit any needs. VTags can have outlined edges
 and a transparent background.
 Use the `outlined` prop to change the component shape.
 
@@ -9,18 +9,18 @@ Use the `outlined` prop to change the component shape.
 
 ```vue
 <template>
-  <V-Tags>
-    <V-Tag color="solid" label="Tag Label" curved outlined />
-    <V-Tag color="primary" label="Tag Label" curved outlined />
-    <V-Tag color="info" label="Tag Label" curved outlined />
-    <V-Tag color="success" label="Tag Label" curved outlined />
-    <V-Tag color="warning" label="Tag Label" curved outlined />
-    <V-Tag color="danger" label="Tag Label" curved outlined />
-    <V-Tag color="orange" label="Tag Label" curved outlined />
-    <V-Tag color="blue" label="Tag Label" curved outlined />
-    <V-Tag color="green" label="Tag Label" curved outlined />
-    <V-Tag color="purple" label="Tag Label" curved outlined />
-  </V-Tags>
+  <VTags>
+    <VTag color="solid" label="Tag Label" curved outlined />
+    <VTag color="primary" label="Tag Label" curved outlined />
+    <VTag color="info" label="Tag Label" curved outlined />
+    <VTag color="success" label="Tag Label" curved outlined />
+    <VTag color="warning" label="Tag Label" curved outlined />
+    <VTag color="danger" label="Tag Label" curved outlined />
+    <VTag color="orange" label="Tag Label" curved outlined />
+    <VTag color="blue" label="Tag Label" curved outlined />
+    <VTag color="green" label="Tag Label" curved outlined />
+    <VTag color="purple" label="Tag Label" curved outlined />
+  </VTags>
 </template>
 ```
 
@@ -28,17 +28,17 @@ Use the `outlined` prop to change the component shape.
 
 <!--example-->
 
-<V-Tags>
-  <V-Tag color="solid" label="Tag Label" curved outlined />
-  <V-Tag color="primary" label="Tag Label" curved outlined />
-  <V-Tag color="info" label="Tag Label" curved outlined />
-  <V-Tag color="success" label="Tag Label" curved outlined />
-  <V-Tag color="warning" label="Tag Label" curved outlined />
-  <V-Tag color="danger" label="Tag Label" curved outlined />
-  <V-Tag color="orange" label="Tag Label" curved outlined />
-  <V-Tag color="blue" label="Tag Label" curved outlined />
-  <V-Tag color="green" label="Tag Label" curved outlined />
-  <V-Tag color="purple" label="Tag Label" curved outlined />
-</V-Tags>
+<VTags>
+  <VTag color="solid" label="Tag Label" curved outlined />
+  <VTag color="primary" label="Tag Label" curved outlined />
+  <VTag color="info" label="Tag Label" curved outlined />
+  <VTag color="success" label="Tag Label" curved outlined />
+  <VTag color="warning" label="Tag Label" curved outlined />
+  <VTag color="danger" label="Tag Label" curved outlined />
+  <VTag color="orange" label="Tag Label" curved outlined />
+  <VTag color="blue" label="Tag Label" curved outlined />
+  <VTag color="green" label="Tag Label" curved outlined />
+  <VTag color="purple" label="Tag Label" curved outlined />
+</VTags>
 
 <!--/example-->

@@ -1,24 +1,24 @@
 ### Size
 
-Customize `<V-IconWrap />` with the `size` and `hasLargeIcon` props.  
+Customize `<VIconWrap />` with the `size` and `hasLargeIcon` props.  
 See code for more details about usage.
 
 <!--code-->
 
 ```vue
 <template>
-  <V-Flex alignItems="flex-end" columnGap=".25rem">
-    <V-IconWrap icon="feather:star" size="small" />
-    <V-IconWrap icon="feather:star" />
-    <V-IconWrap icon="feather:star" size="medium" />
-    <V-IconWrap icon="feather:star" size="large" />
-  </V-Flex>
-  <V-Flex alignItems="flex-end" columnGap=".25rem">
-    <V-IconWrap icon="feather:star" has-large-icon size="small" />
-    <V-IconWrap icon="feather:star" has-large-icon />
-    <V-IconWrap icon="feather:star" has-large-icon size="medium" />
-    <V-IconWrap icon="feather:star" has-large-icon size="large" />
-  </V-Flex>
+  <VFlex alignItems="flex-end" columnGap=".25rem">
+    <VIconWrap icon="feather:star" size="small" />
+    <VIconWrap icon="feather:star" />
+    <VIconWrap icon="feather:star" size="medium" />
+    <VIconWrap icon="feather:star" size="large" />
+  </VFlex>
+  <VFlex alignItems="flex-end" columnGap=".25rem">
+    <VIconWrap icon="feather:star" has-large-icon size="small" />
+    <VIconWrap icon="feather:star" has-large-icon />
+    <VIconWrap icon="feather:star" has-large-icon size="medium" />
+    <VIconWrap icon="feather:star" has-large-icon size="large" />
+  </VFlex>
 </template>
 ```
 
@@ -27,18 +27,18 @@ See code for more details about usage.
 <!--example-->
 
 <div>
-  <V-Flex alignItems="flex-end" columnGap=".25rem">
-    <V-IconWrap icon="feather:star" size="small" />
-    <V-IconWrap icon="feather:star" />
-    <V-IconWrap icon="feather:star" size="medium" />
-    <V-IconWrap icon="feather:star" size="large" />
-  </V-Flex>
-  <V-Flex alignItems="flex-end" columnGap=".25rem">
-    <V-IconWrap icon="feather:star" has-large-icon size="small" />
-    <V-IconWrap icon="feather:star" has-large-icon />
-    <V-IconWrap icon="feather:star" has-large-icon size="medium" />
-    <V-IconWrap icon="feather:star" has-large-icon size="large" />
-  </V-Flex>
+  <VFlex alignItems="flex-end" columnGap=".25rem">
+    <VIconWrap icon="feather:star" size="small" />
+    <VIconWrap icon="feather:star" />
+    <VIconWrap icon="feather:star" size="medium" />
+    <VIconWrap icon="feather:star" size="large" />
+  </VFlex>
+  <VFlex alignItems="flex-end" columnGap=".25rem">
+    <VIconWrap icon="feather:star" has-large-icon size="small" />
+    <VIconWrap icon="feather:star" has-large-icon />
+    <VIconWrap icon="feather:star" has-large-icon size="medium" />
+    <VIconWrap icon="feather:star" has-large-icon size="large" />
+  </VFlex>
 </div>
 
 <!--/example-->

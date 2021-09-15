@@ -18,15 +18,15 @@ const props = withDefaults(
 <template>
   <div class="map-box-location">
     <div class="map-box-header">
-      <V-Block
+      <VBlock
         :title="props.name"
         :subtitle="`Open until ${props.openingCount}`"
         center
       >
         <template #icon>
-          <V-Avatar size="small" :picture="props.logo" />
+          <VAvatar size="small" :picture="props.logo" />
         </template>
-      </V-Block>
+      </VBlock>
     </div>
     <div class="map-box-body">
       <p>{{ props.description }}</p>

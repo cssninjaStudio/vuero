@@ -12,7 +12,7 @@ export const projects = [
     team: [
       {
         id: 148,
-        picture: null,
+        picture: undefined,
         name: 'Betty T.',
         initials: 'BT',
         color: 'h-yellow',
@@ -26,7 +26,7 @@ export const projects = [
       },
       {
         id: 159,
-        picture: null,
+        picture: undefined,
         name: 'John D.',
         initials: 'JD',
         color: 'info',
@@ -60,7 +60,7 @@ export const projects = [
       },
       {
         id: 189,
-        picture: null,
+        picture: undefined,
         name: 'Alan T.',
         initials: 'AT',
         color: 'success',
@@ -94,7 +94,7 @@ export const projects = [
       },
       {
         id: 198,
-        picture: null,
+        picture: undefined,
         name: 'Sarah C.',
         initials: 'SC',
         color: 'h-purple',
@@ -148,7 +148,7 @@ export const projects = [
     team: [
       {
         id: 189,
-        picture: null,
+        picture: undefined,
         name: 'Alan T.',
         initials: 'AT',
         color: 'success',
@@ -175,7 +175,7 @@ export const projects = [
     team: [
       {
         id: 148,
-        picture: null,
+        picture: undefined,
         name: 'Betty T.',
         initials: 'BT',
         color: 'h-yellow',
@@ -189,7 +189,7 @@ export const projects = [
       },
       {
         id: 159,
-        picture: null,
+        picture: undefined,
         name: 'John D.',
         initials: 'JD',
         color: 'info',
@@ -209,7 +209,7 @@ export const projects = [
     team: [
       {
         id: 198,
-        picture: null,
+        picture: undefined,
         name: 'Sarah C.',
         initials: 'SC',
         color: 'h-purple',
@@ -236,7 +236,7 @@ export const projects = [
     team: [
       {
         id: 198,
-        picture: null,
+        picture: undefined,
         name: 'Sarah C.',
         initials: 'SC',
         color: 'h-purple',
@@ -263,7 +263,7 @@ export const projects = [
     team: [
       {
         id: 189,
-        picture: null,
+        picture: undefined,
         name: 'Alan T.',
         initials: 'AT',
         color: 'success',
@@ -290,7 +290,7 @@ export const projects = [
     team: [
       {
         id: 189,
-        picture: null,
+        picture: undefined,
         name: 'Alan T.',
         initials: 'AT',
         color: 'success',
@@ -317,7 +317,7 @@ export const projects = [
     team: [
       {
         id: 148,
-        picture: null,
+        picture: undefined,
         name: 'Betty T.',
         initials: 'BT',
         color: 'h-yellow',
@@ -331,7 +331,7 @@ export const projects = [
       },
       {
         id: 159,
-        picture: null,
+        picture: undefined,
         name: 'John D.',
         initials: 'JD',
         color: 'info',
@@ -365,7 +365,7 @@ export const projects = [
       },
       {
         id: 198,
-        picture: null,
+        picture: undefined,
         name: 'Sarah C.',
         initials: 'SC',
         color: 'h-purple',
@@ -392,7 +392,7 @@ export const projects = [
     team: [
       {
         id: 148,
-        picture: null,
+        picture: undefined,
         name: 'Betty T.',
         initials: 'BT',
         color: 'h-yellow',
@@ -453,7 +453,7 @@ export const projects = [
       },
       {
         id: 189,
-        picture: null,
+        picture: undefined,
         name: 'Alan T.',
         initials: 'AT',
         color: 'success',

@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-CardAdvanced Slots
+### VCardAdvanced Slots
 
-Here is the full slots available for `<V-CardAdvanced />` component:
+Here is the full slots available for `<VCardAdvanced />` component:
 
 | Slot          | Properties                          | Description               |
 | ------------- | ----------------------------------- | ------------------------- |

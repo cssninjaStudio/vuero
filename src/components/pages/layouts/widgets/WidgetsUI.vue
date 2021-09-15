@@ -26,7 +26,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
         </template>
         <template #body>
           <div class="gauge-wrap">
-            <V-BillboardJS
+            <VBillboardJS
               class="gauge-holder"
               :options="personalScoreGaugeOptions"
               @ready="onPersonalScoreGaugeReady"

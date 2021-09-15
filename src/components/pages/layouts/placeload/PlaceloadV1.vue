@@ -7,24 +7,24 @@ const filters = ref('')
 <template>
   <div>
     <div class="list-view-toolbar">
-      <V-Field>
-        <V-Control icon="feather:search">
+      <VField>
+        <VControl icon="feather:search">
           <input
             v-model="filters"
             class="input custom-text-filter"
             placeholder="Search..."
           />
-        </V-Control>
-      </V-Field>
+        </VControl>
+      </VField>
 
       <div class="list-info">
         <span>Loading records</span>
       </div>
 
       <div class="buttons">
-        <V-Button color="primary" icon="fas fa-check" elevated disabled>
+        <VButton color="primary" icon="fas fa-check" elevated disabled>
           Approve
-        </V-Button>
+        </VButton>
       </div>
     </div>
 
@@ -32,15 +32,15 @@ const filters = ref('')
       <div class="list-view-inner">
         <!--Item-->
         <div v-for="key in 10" :key="key" class="list-view-item">
-          <V-PlaceloadWrap>
-            <V-PlaceloadAvatar size="medium" />
+          <VPlaceloadWrap>
+            <VPlaceloadAvatar size="medium" />
 
-            <V-PlaceloadText last-line-width="60%" class="mx-2" />
-            <V-Placeload class="mx-2" disabled />
-            <V-Placeload class="mx-2 h-hidden-tablet-p" />
-            <V-Placeload class="mx-2 h-hidden-tablet-p" />
-            <V-Placeload class="mx-2" />
-          </V-PlaceloadWrap>
+            <VPlaceloadText last-line-width="60%" class="mx-2" />
+            <VPlaceload class="mx-2" disabled />
+            <VPlaceload class="mx-2 h-hidden-tablet-p" />
+            <VPlaceload class="mx-2 h-hidden-tablet-p" />
+            <VPlaceload class="mx-2" />
+          </VPlaceloadWrap>
         </div>
       </div>
     </div>

@@ -13,7 +13,7 @@ Vuero is integrated with `Vue Multiselect`, a vue 3 select single, multiple and
 tags input library. You can check the plugin documentation on
 [Github](https://github.com/vueform/multiselect). You can change the
 `<Multiselect />` component radius by adding the `is-curved` or `is-rounded`
-class to the parent `<V-Field />` component.
+class to the parent `<VField />` component.
 
 <!--code-->
 
@@ -24,15 +24,15 @@ const optionsSingle = ['Batman', 'Robin', 'Joker']
 </script>
 
 <template>
-  <V-Field class="is-curved-select">
-    <V-Control>
+  <VField class="is-curved-select">
+    <VControl>
       <Multiselect
         v-model="valueSingle"
         :options="optionsSingle"
         placeholder="Select an option"
       />
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -42,37 +42,37 @@ const optionsSingle = ['Batman', 'Robin', 'Joker']
 
 <div class="columns">
   <div class="column is-4">
-    <V-Field>
-      <V-Control>
+    <VField>
+      <VControl>
         <Multiselect
           v-model="frontmatter.state.valueSingle"
           :options="frontmatter.optionsSingle"
           placeholder="Select an option"
         />
-      </V-Control>
-    </V-Field>
+      </VControl>
+    </VField>
   </div>
   <div class="column is-4">
-    <V-Field class="is-curved-select">
-      <V-Control>
+    <VField class="is-curved-select">
+      <VControl>
         <Multiselect
           v-model="frontmatter.state.valueSingle"
           :options="frontmatter.optionsSingle"
           placeholder="Select an option"
         />
-      </V-Control>
-    </V-Field>
+      </VControl>
+    </VField>
   </div>
   <div class="column is-4">
-    <V-Field class="is-rounded-select">
-      <V-Control>
+    <VField class="is-rounded-select">
+      <VControl>
         <Multiselect
           v-model="frontmatter.state.valueSingle"
           :options="frontmatter.optionsSingle"
           placeholder="Select an option"
         />
-      </V-Control>
-    </V-Field>
+      </VControl>
+    </VField>
   </div>
 </div>
 

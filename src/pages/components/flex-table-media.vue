@@ -4,15 +4,15 @@ import { useHead } from '@vueuse/head'
 import { flexRowsAdvanced } from '/@src/data/documentation/table'
 import { pageTitle } from '/@src/state/sidebarLayoutState'
 
-pageTitle.value = 'V-FlexTable (Media)'
+pageTitle.value = 'VFlexTable (Media)'
 useHead({
-  title: 'V-FlexTable Media - Components - Vuero',
+  title: 'VFlexTable Media - Components - Vuero',
 })
 </script>
 
 <template>
   <div class="page-content-inner">
-    <V-Breadcrumb
+    <VBreadcrumb
       with-icons
       separator="bullet"
       :items="[
@@ -27,7 +27,7 @@ useHead({
           to: { name: 'components' },
         },
         {
-          label: 'V-FlexTable',
+          label: 'VFlexTable',
           to: { name: 'components-flex-table' },
         },
         {
@@ -43,8 +43,8 @@ useHead({
         <VFlexTableMediaDocumentation />
 
         <div class="mt-4">
-          <!--V-FlexTable-->
-          <V-FlexTable>
+          <!--VFlexTable-->
+          <VFlexTable>
             <template #header>
               <div class="flex-table-header">
                 <span class="is-grow">User</span>
@@ -56,12 +56,12 @@ useHead({
               </div>
             </template>
             <template #body>
-              <V-FlexTableRowMedia :rows="flexRowsAdvanced" />
+              <VFlexTableRowMedia :rows="flexRowsAdvanced" />
             </template>
-          </V-FlexTable>
+          </VFlexTable>
 
           <!--Table Pagination-->
-          <V-FlexPagination
+          <VFlexPagination
             :item-per-page="10"
             :total-items="873"
             :current-page="42"

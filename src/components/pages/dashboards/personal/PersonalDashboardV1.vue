@@ -11,14 +11,14 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
     <!--Personal Dashboard V1-->
     <!--Header-->
     <div class="dashboard-header">
-      <V-Avatar picture="/demo/avatars/8.jpg" size="large" />
+      <VAvatar picture="/demo/avatars/8.jpg" size="large" />
       <div class="start">
         <h3>Welcome back, Erik Kovalsky</h3>
         <p>We're very happy to see you again on your personal dashboard.</p>
       </div>
       <div class="end">
-        <V-Button dark="3">View Reports</V-Button>
-        <V-Button color="primary" elevated>Manage Store</V-Button>
+        <VButton dark="3">View Reports</VButton>
+        <VButton color="primary" elevated>Manage Store</VButton>
       </div>
     </div>
 
@@ -34,7 +34,7 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
               <div class="quick-stats-inner">
                 <!--Stat-->
                 <div class="quick-stat">
-                  <V-Block
+                  <VBlock
                     title="2,870"
                     subtitle="Sales this month"
                     center
@@ -42,19 +42,19 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
                     t-responsive
                   >
                     <template #icon>
-                      <V-IconBox color="purple" rounded>
+                      <VIconBox color="purple" rounded>
                         <i
                           aria-hidden="true"
                           class="lnil lnil-analytics-alt-1"
                         ></i>
-                      </V-IconBox>
+                      </VIconBox>
                     </template>
-                  </V-Block>
+                  </VBlock>
                 </div>
 
                 <!--Stat-->
                 <div class="quick-stat">
-                  <V-Block
+                  <VBlock
                     title="131"
                     subtitle="New users"
                     center
@@ -62,16 +62,16 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
                     t-responsive
                   >
                     <template #icon>
-                      <V-IconBox color="orange" rounded>
+                      <VIconBox color="orange" rounded>
                         <i aria-hidden="true" class="lnil lnil-handshake"></i>
-                      </V-IconBox>
+                      </VIconBox>
                     </template>
-                  </V-Block>
+                  </VBlock>
                 </div>
 
                 <!--Stat-->
                 <div class="quick-stat">
-                  <V-Block
+                  <VBlock
                     title="$398,49"
                     subtitle="Earned today"
                     center
@@ -79,16 +79,16 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
                     t-responsive
                   >
                     <template #icon>
-                      <V-IconBox color="green" rounded>
+                      <VIconBox color="green" rounded>
                         <i aria-hidden="true" class="lnil lnil-diamond-alt"></i>
-                      </V-IconBox>
+                      </VIconBox>
                     </template>
-                  </V-Block>
+                  </VBlock>
                 </div>
 
                 <!--Stat-->
                 <div class="quick-stat">
-                  <V-Block
+                  <VBlock
                     title="$6542,31"
                     subtitle="Total balance"
                     center
@@ -96,11 +96,11 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
                     t-responsive
                   >
                     <template #icon>
-                      <V-IconBox color="info" rounded>
+                      <VIconBox color="info" rounded>
                         <i aria-hidden="true" class="lnil lnil-bank"></i>
-                      </V-IconBox>
+                      </VIconBox>
                     </template>
-                  </V-Block>
+                  </VBlock>
                 </div>
               </div>
             </div>
@@ -138,9 +138,9 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
         <div class="column is-4">
           <div class="dashboard-card is-gauge">
             <div class="people">
-              <V-Avatar picture="/demo/avatars/21.jpg" />
-              <V-Avatar initials="SC" color="h-purple" />
-              <V-Avatar picture="/demo/avatars/39.jpg" />
+              <VAvatar picture="/demo/avatars/21.jpg" />
+              <VAvatar initials="SC" color="h-purple" />
+              <VAvatar picture="/demo/avatars/39.jpg" />
             </div>
             <ApexChart
               :height="teamGaugeOptions.chart.height"

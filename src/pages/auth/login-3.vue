@@ -78,29 +78,29 @@ useHead({
         <div class="form-card">
           <form @submit.prevent="handleLogin">
             <div class="login-form">
-              <V-Field>
-                <V-Control icon="feather:user">
+              <VField>
+                <VControl icon="feather:user">
                   <input
                     class="input"
                     type="text"
                     placeholder="Username"
                     autocomplete="username"
                   />
-                </V-Control>
-              </V-Field>
-              <V-Field>
-                <V-Control icon="feather:lock">
+                </VControl>
+              </VField>
+              <VField>
+                <VControl icon="feather:lock">
                   <input
                     class="input"
                     type="password"
                     placeholder="Password"
                     autocomplete="current-password"
                   />
-                </V-Control>
-              </V-Field>
+                </VControl>
+              </VField>
 
               <!-- Switch -->
-              <V-Control class="setting-item">
+              <VControl class="setting-item">
                 <label for="remember-me" class="form-switch is-primary">
                   <input id="remember-me" type="checkbox" class="is-switch" />
                   <i aria-hidden="true"></i>
@@ -110,11 +110,11 @@ useHead({
                     <span>Remember Me</span>
                   </label>
                 </div>
-              </V-Control>
+              </VControl>
 
               <!-- Submit -->
-              <V-Control class="login">
-                <V-Button
+              <VControl class="login">
+                <VButton
                   :loading="isLoading"
                   type="submit"
                   color="primary"
@@ -123,8 +123,8 @@ useHead({
                   raised
                 >
                   Sign In
-                </V-Button>
-              </V-Control>
+                </VButton>
+              </VControl>
             </div>
           </form>
         </div>

@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-Dropdown Slots
+### VDropdown Slots
 
-Here is the full slots available for `<V-Dropdown />` component:
+Here is the full slots available for `<VDropdown />` component:
 
 | Slot                       | Properties                                                                                                                                   | Description            |
 | -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- |

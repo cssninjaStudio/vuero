@@ -1,18 +1,18 @@
 ### Line Icons
 
 Vuero inputs are fully compatible with Line Icons.
-Use the `icon` or `iconify` props on the `<V-Control />`
+Use the `icon` or `iconify` props on the `<VControl />`
 component to show an icon.
 
 <!--code-->
 
 ```vue
 <template>
-  <V-Field>
-    <V-Control icon="lnil lnil-briefcase">
+  <VField>
+    <VControl icon="lnil lnil-briefcase">
       <input type="text" class="input" placeholder="Company" />
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -20,14 +20,14 @@ component to show an icon.
 
 <!--example-->
 
-<V-Field>
-  <V-Control icon="lnil lnil-briefcase">
+<VField>
+  <VControl icon="lnil lnil-briefcase">
     <input
         type="text"
         class="input"
         placeholder="Company"
       />
-  </V-Control>
-</V-Field>
+  </VControl>
+</VField>
 
 <!--/example-->

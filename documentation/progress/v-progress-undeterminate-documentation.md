@@ -8,11 +8,11 @@ you just need to omit the `value` prop. The CSS will take care of the rest.
 
 ```vue
 <template>
-  <V-Progress size="tiny" />
-  <V-Progress size="tiny" color="success" />
-  <V-Progress size="tiny" color="info" />
-  <V-Progress size="tiny" color="warning" />
-  <V-Progress size="tiny" color="danger" />
+  <VProgress size="tiny" />
+  <VProgress size="tiny" color="success" />
+  <VProgress size="tiny" color="info" />
+  <VProgress size="tiny" color="warning" />
+  <VProgress size="tiny" color="danger" />
 </template>
 ```
 
@@ -22,11 +22,11 @@ you just need to omit the `value` prop. The CSS will take care of the rest.
 
 <div class="field">
     <div class="control">
-        <V-Progress size="tiny" />
-        <V-Progress size="tiny" color="success" />
-        <V-Progress size="tiny" color="info" />
-        <V-Progress size="tiny" color="warning" />
-        <V-Progress size="tiny" color="danger" />
+        <VProgress size="tiny" />
+        <VProgress size="tiny" color="success" />
+        <VProgress size="tiny" color="info" />
+        <VProgress size="tiny" color="warning" />
+        <VProgress size="tiny" color="danger" />
     </div>
 </div>
 

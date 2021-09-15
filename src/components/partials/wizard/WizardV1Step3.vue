@@ -37,35 +37,35 @@ const selectCustomer = (customer: WizardCustomer) => {
     <div class="project-customer">
       <h4>Customer</h4>
 
-      <V-Field v-if="!wizardData.customer">
-        <V-Control icon="feather:search">
+      <VField v-if="!wizardData.customer">
+        <VControl icon="feather:search">
           <input v-model="search" class="input" placeholder="search..." />
-        </V-Control>
-      </V-Field>
+        </VControl>
+      </VField>
 
-      <V-Block
+      <VBlock
         v-if="wizardData.customer"
         :title="wizardData.customer.name"
         :subtitle="wizardData.customer.location"
         center
       >
         <template #icon>
-          <V-Avatar size="medium" :picture="wizardData.customer.logo" />
+          <VAvatar size="medium" :picture="wizardData.customer.logo" />
         </template>
 
         <template #action>
-          <V-IconButton
+          <VIconButton
             size="small"
             icon="feather:x"
             circle
             @click="wizardData.customer = null"
           />
         </template>
-      </V-Block>
+      </VBlock>
 
       <template v-else-if="filteredCustomers.length > 0">
         <transition-group name="list" tag="div">
-          <V-Block
+          <VBlock
             v-for="customer in filteredCustomers"
             :key="customer.name"
             :title="customer.name"
@@ -73,25 +73,25 @@ const selectCustomer = (customer: WizardCustomer) => {
             center
           >
             <template #icon>
-              <V-Avatar size="medium" :picture="customer.logo" />
+              <VAvatar size="medium" :picture="customer.logo" />
             </template>
 
             <template #action>
-              <V-IconButton
+              <VIconButton
                 size="small"
                 icon="feather:plus"
                 circle
                 @click="wizardData.customer = customer"
               />
             </template>
-          </V-Block>
+          </VBlock>
         </transition-group>
       </template>
     </div>
 
     <div class="project-dates">
       <h4>Project Time Frame</h4>
-      <v-date-picker
+      <Vdate-picker
         v-model="wizardData.timeFrame"
         is-range
         color="green"
@@ -107,14 +107,14 @@ const selectCustomer = (customer: WizardCustomer) => {
                   data-icon="feather:map-pin"
                 ></i>
               </div>
-              <V-Control>
+              <VControl>
                 <input
                   :value="inputValue.start"
                   class="input form-datepicker"
                   placeholder="Start Date"
                   v-on="inputEvents.start"
                 />
-              </V-Control>
+              </VControl>
             </div>
             <div class="separator"></div>
             <div class="project-date">
@@ -125,18 +125,18 @@ const selectCustomer = (customer: WizardCustomer) => {
                   data-icon="feather:flag"
                 ></i>
               </div>
-              <V-Control>
+              <VControl>
                 <input
                   :value="inputValue.end"
                   class="input form-datepicker"
                   placeholder="End Date"
                   v-on="inputEvents.end"
                 />
-              </V-Control>
+              </VControl>
             </div>
           </div>
         </template>
-      </v-date-picker>
+      </Vdate-picker>
     </div>
 
     <div class="project-budget">

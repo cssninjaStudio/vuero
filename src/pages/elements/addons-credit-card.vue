@@ -9,15 +9,15 @@ const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 const date = ref(null)
 
-pageTitle.value = 'V-CreditCard'
+pageTitle.value = 'VCreditCard'
 useHead({
-  title: 'V-CreditCard - Addons - Vuero',
+  title: 'VCreditCard - Addons - Vuero',
 })
 </script>
 
 <template>
   <div class="page-content-inner">
-    <V-Breadcrumb
+    <VBreadcrumb
       with-icons
       separator="bullet"
       :items="[
@@ -35,7 +35,7 @@ useHead({
           label: 'Addons',
         },
         {
-          label: 'V-CreditCard',
+          label: 'VCreditCard',
           to: { name: 'elements-addons-credit-card' },
         },
       ]"

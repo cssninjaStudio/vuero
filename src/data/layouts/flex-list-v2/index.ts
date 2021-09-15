@@ -16,7 +16,7 @@ export const projects = [
       },
       {
         id: 1,
-        picture: null,
+        picture: undefined,
         initials: 'JP',
         color: 'info',
       },
@@ -34,7 +34,7 @@ export const projects = [
       },
       {
         id: 4,
-        picture: null,
+        picture: undefined,
         initials: 'SC',
         color: 'success',
       },
@@ -51,7 +51,7 @@ export const projects = [
     team: [
       {
         id: 148,
-        picture: null,
+        picture: undefined,
         initials: 'SC',
         color: 'h-purple',
       },
@@ -68,7 +68,7 @@ export const projects = [
     team: [
       {
         id: 127,
-        picture: null,
+        picture: undefined,
         initials: 'BT',
         color: 'success',
       },
@@ -86,19 +86,19 @@ export const projects = [
       },
       {
         id: 148,
-        picture: null,
+        picture: undefined,
         initials: 'SC',
         color: 'h-purple',
       },
       {
         id: 149,
-        picture: null,
+        picture: undefined,
         initials: 'SC',
         color: 'h-purple',
       },
       {
         id: 150,
-        picture: null,
+        picture: undefined,
         initials: 'SC',
         color: 'h-purple',
       },
@@ -115,13 +115,13 @@ export const projects = [
     team: [
       {
         id: 188,
-        picture: null,
+        picture: undefined,
         initials: 'BT',
         color: 'success',
       },
       {
         id: 187,
-        picture: null,
+        picture: undefined,
         initials: 'AT',
         color: 'h-yellow',
       },
@@ -179,25 +179,25 @@ export const projects = [
       },
       {
         id: 150,
-        picture: null,
+        picture: undefined,
         initials: 'SC',
         color: 'h-purple',
       },
       {
         id: 151,
-        picture: null,
+        picture: undefined,
         initials: 'SC',
         color: 'h-purple',
       },
       {
         id: 152,
-        picture: null,
+        picture: undefined,
         initials: 'SC',
         color: 'h-purple',
       },
       {
         id: 154,
-        picture: null,
+        picture: undefined,
         initials: 'SC',
         color: 'h-purple',
       },
@@ -220,7 +220,7 @@ export const projects = [
       },
       {
         id: 14,
-        picture: null,
+        picture: undefined,
         initials: 'AT',
         color: 'h-yellow',
       },
@@ -232,19 +232,19 @@ export const projects = [
       },
       {
         id: 150,
-        picture: null,
+        picture: undefined,
         initials: 'SC',
         color: 'h-purple',
       },
       {
         id: 151,
-        picture: null,
+        picture: undefined,
         initials: 'SC',
         color: 'h-purple',
       },
       {
         id: 152,
-        picture: null,
+        picture: undefined,
         initials: 'SC',
         color: 'h-purple',
       },
@@ -267,7 +267,7 @@ export const projects = [
       },
       {
         id: 14,
-        picture: null,
+        picture: undefined,
         initials: 'BV',
         color: 'h-purple',
       },
@@ -279,13 +279,13 @@ export const projects = [
       },
       {
         id: 150,
-        picture: null,
+        picture: undefined,
         initials: 'SC',
         color: 'h-purple',
       },
       {
         id: 151,
-        picture: null,
+        picture: undefined,
         initials: 'SC',
         color: 'h-purple',
       },
@@ -337,7 +337,7 @@ export const projects = [
       },
       {
         id: 165,
-        picture: null,
+        picture: undefined,
         initials: 'JD',
         color: 'info',
       },
@@ -349,13 +349,13 @@ export const projects = [
       },
       {
         id: 150,
-        picture: null,
+        picture: undefined,
         initials: 'SC',
         color: 'h-purple',
       },
       {
         id: 151,
-        picture: null,
+        picture: undefined,
         initials: 'SC',
         color: 'h-purple',
       },

@@ -71,7 +71,7 @@ onUnmounted(() => {
       <div class="left-header">
         <div class="header-image">
           <img
-            src="/@src/assets/illustrations/dashboards/food/header.svg?url"
+            src="/@src/assets/illustrations/dashboards/food/header.svg"
             alt=""
           />
         </div>
@@ -253,26 +253,26 @@ onUnmounted(() => {
               <span class="tag is-curved">0 items</span>
             </div>
           </div>
-          <V-PlaceholderSection
+          <VPlaceholderSection
             title="No Items"
             subtitle="Your cart is currently empty. Start adding products."
           >
             <template #image>
               <img
                 class="light-image"
-                src="/@src/assets/illustrations/dashboards/food/cart-placeholder.svg?url"
+                src="/@src/assets/illustrations/dashboards/food/cart-placeholder.svg"
                 alt=""
               />
               <img
                 class="dark-image"
-                src="/@src/assets/illustrations/dashboards/food/cart-placeholder.svg?url"
+                src="/@src/assets/illustrations/dashboards/food/cart-placeholder.svg"
                 alt=""
               />
             </template>
-          </V-PlaceholderSection>
+          </VPlaceholderSection>
           <div class="cart-items has-slimscroll is-hidden">
             <div class="cart-item">
-              <V-Avatar
+              <VAvatar
                 picture="/demo/photos/food/1.jpg"
                 size="medium"
                 squared
@@ -283,7 +283,7 @@ onUnmounted(() => {
               </div>
             </div>
             <div class="cart-item">
-              <V-Avatar
+              <VAvatar
                 picture="/demo/photos/food/2.jpg"
                 size="medium"
                 squared
@@ -294,7 +294,7 @@ onUnmounted(() => {
               </div>
             </div>
             <div class="cart-item">
-              <V-Avatar
+              <VAvatar
                 picture="/demo/photos/food/3.jpg"
                 size="medium"
                 squared
@@ -310,9 +310,9 @@ onUnmounted(() => {
               <span class="label">Total</span>
               <span>$0.00</span>
             </div>
-            <V-Button color="primary" raised bold fullwidth>
+            <VButton color="primary" raised bold fullwidth>
               Start Checkout
-            </V-Button>
+            </VButton>
           </div>
         </div>
 

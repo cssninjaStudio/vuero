@@ -3,7 +3,7 @@ const emit = defineEmits(['rename', 'collapse'])
 </script>
 
 <template>
-  <V-Dropdown icon="feather:more-vertical" right>
+  <VDropdown icon="feather:more-vertical" right>
     <template #content>
       <a class="dropdown-item kanban-rename kill-drop" @click="emit('rename')">
         Rename
@@ -67,5 +67,5 @@ const emit = defineEmits(['rename', 'collapse'])
         </div>
       </div>
     </template>
-  </V-Dropdown>
+  </VDropdown>
 </template>

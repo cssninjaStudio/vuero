@@ -8,7 +8,7 @@ breadcrumb:
     icon: feather:cpu
     to:
       name: components
-  - label: V-Breadcrumb
+  - label: VBreadcrumb
 ---
 
 ### Bullet Separator
@@ -37,14 +37,14 @@ const breadcrumb = [
     },
   },
   {
-    label: 'V-Breadcrumb',
+    label: 'VBreadcrumb',
   },
 ]
 </script>
 
 <template>
-  <V-Breadcrumb :items="breadcrumb" separator="bullet" />
-  <V-Breadcrumb :items="breadcrumb" separator="bullet" with-icons />
+  <VBreadcrumb :items="breadcrumb" separator="bullet" />
+  <VBreadcrumb :items="breadcrumb" separator="bullet" with-icons />
 </template>
 ```
 
@@ -53,8 +53,8 @@ const breadcrumb = [
 <!--example-->
 
 <div>
-  <V-Breadcrumb :items="frontmatter.breadcrumb" separator="bullet" />
-  <V-Breadcrumb :items="frontmatter.breadcrumb" separator="bullet" with-icons />
+  <VBreadcrumb :items="frontmatter.breadcrumb" separator="bullet" />
+  <VBreadcrumb :items="frontmatter.breadcrumb" separator="bullet" with-icons />
 </div>
 
 <!--/example-->

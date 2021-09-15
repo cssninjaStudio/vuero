@@ -8,49 +8,49 @@ CSS class. Available color classes are: `.light`, `.primary`,
 
 ```vue {4,10,16,22,28,34,40}
 <template>
-  <V-Tags>
-    <V-Tag
+  <VTags>
+    <VTag
       v-tooltip="'Iam a default colored tooltip'"
       color="solid"
       label="Default"
     />
 
-    <V-Tag
+    <VTag
       v-tooltip.light="'Iam a light colored tooltip'"
       color="solid"
       label="Light"
     />
 
-    <V-Tag
+    <VTag
       v-tooltip.primary="'Iam a primary colored tooltip'"
       color="solid"
       label="Primary"
     />
 
-    <V-Tag
+    <VTag
       v-tooltip.info="'Iam a info colored tooltip'"
       color="solid"
       label="Info"
     />
 
-    <V-Tag
+    <VTag
       v-tooltip.success="'Iam a success colored tooltip'"
       color="solid"
       label="Success"
     />
 
-    <V-Tag
+    <VTag
       v-tooltip.warning="'Iam a warning colored tooltip'"
       color="solid"
       label="Warning"
     />
 
-    <V-Tag
+    <VTag
       v-tooltip.error="'Iam a error colored tooltip'"
       color="solid"
       label="Error"
     />
-  </V-Tags>
+  </VTags>
 </template>
 ```
 
@@ -58,42 +58,42 @@ CSS class. Available color classes are: `.light`, `.primary`,
 
 <!--Example-->
 
-<V-Tags>
-  <V-Tag
+<VTags>
+  <VTag
     v-tooltip="'Iam a default colored tooltip'"
     color="solid"
     label="Default"
   />
-  <V-Tag
+  <VTag
     v-tooltip.light="'Iam a light colored tooltip'"
     color="solid"
     label="Light"
   />
-  <V-Tag
+  <VTag
     v-tooltip.primary="'Iam a primary colored tooltip'"
     color="solid"
     label="Primary"
   />
-  <V-Tag
+  <VTag
     v-tooltip.info="'Iam a info colored tooltip'"
     color="solid"
     label="Info"
   />
-  <V-Tag
+  <VTag
     v-tooltip.success="'Iam a success colored tooltip'"
     color="solid"
     label="Success"
   />
-  <V-Tag
+  <VTag
     v-tooltip.warning="'Iam a warning colored tooltip'"
     color="solid"
     label="Warning"
   />
-  <V-Tag
+  <VTag
     v-tooltip.error="'Iam a error colored tooltip'"
     color="solid"
     label="Error"
   />
-</V-Tags>
+</VTags>
 
 <!--/Example-->

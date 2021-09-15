@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-Collapse Props
+### VCollapse Props
 
-Here is the full props available for `<V-Collapse />` component:
+Here is the full props available for `<VCollapse />` component:
 
 | Props                  | Default                                       | Type                                                                                         |
 | ---------------------- | --------------------------------------------- | -------------------------------------------------------------------------------------------- |

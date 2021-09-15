@@ -24,11 +24,11 @@ const merge = 10
 </script>
 
 <template>
-  <V-Field>
-    <V-Control>
+  <VField>
+    <VControl>
       <Slider v-model="value" :merge="merge" />
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -38,14 +38,14 @@ const merge = 10
 
 <div class="columns mt-2">
   <div class="column is-6">
-    <V-Field class="pt-5 px-4 is-slider-info">
-      <V-Control>
+    <VField class="pt-5 px-4 is-slider-info">
+      <VControl>
         <Slider 
           v-model="frontmatter.state.value" 
           :merge="frontmatter.state.merge"
         />
-      </V-Control>
-    </V-Field>
+      </VControl>
+    </VField>
   </div>
 </div>
 

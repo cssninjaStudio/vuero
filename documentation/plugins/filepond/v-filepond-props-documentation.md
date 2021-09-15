@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-FilePond Props
+### VFilePond Props
 
-Here is the props added for `<V-FilePond />` component,
+Here is the props added for `<VFilePond />` component,
 you can check all options available on [filepond official documentation](https://pqina.nl/filepond/docs/patterns/api/filepond-instance/#properties):
 
 | Props | Default                               | Type            |

@@ -1,8 +1,8 @@
-import type { Chart } from 'billboard.js'
+import type { Chart, ChartOptions } from 'billboard.js'
 import { themeColors } from '/@src/utils/themeColors'
 import { bubble } from 'billboard.js'
 
-export const options = {
+export const options: ChartOptions = {
   data: {
     columns: [
       ['data1', 30, 190, 200, 110, 150, 160, 50, 80, 55, 220],
@@ -37,7 +37,7 @@ export const options = {
   },
   title: {
     text: 'Bubble Chart',
-    position: 'top-left',
+    position: 'left',
     padding: {
       bottom: 20,
       right: 20,

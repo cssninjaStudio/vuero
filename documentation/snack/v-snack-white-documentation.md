@@ -1,6 +1,6 @@
-### V-Snack white
+### VSnack white
 
-Vuero provides a `<V-Snack />` component than can be used to show
+Vuero provides a `<VSnack />` component than can be used to show
 a pill with an image. Use the `image` prop to insert an image
 inside the component. You cna also use the `white` prop to make
 the component background white.
@@ -9,25 +9,25 @@ the component background white.
 
 ```vue
 <template>
-  <V-Snack title="Support" white image="/demo/photos/misc/buoy.jpg">
+  <VSnack title="Support" white image="/demo/photos/misc/buoy.jpg">
     <i class="iconify" data-icon="feather:x"></i>
-  </V-Snack>
-  <V-Snack title="Metamovies" white image="/images/icons/logos/metamovies.svg">
+  </VSnack>
+  <VSnack title="Metamovies" white image="/images/icons/logos/metamovies.svg">
     <i class="iconify" data-icon="feather:x"></i>
-  </V-Snack>
-  <V-Snack title="Corporate" white image="/demo/avatars/7.jpg">
+  </VSnack>
+  <VSnack title="Corporate" white image="/demo/avatars/7.jpg">
     <i class="iconify" data-icon="feather:x"></i>
-  </V-Snack>
-  <V-Snack
+  </VSnack>
+  <VSnack
     title="English"
     white
     image="/images/icons/flags/united-states-of-america.svg"
   >
     <i class="iconify" data-icon="feather:x"></i>
-  </V-Snack>
-  <V-Snack title="Slicer" white image="/images/icons/logos/slicer.svg">
+  </VSnack>
+  <VSnack title="Slicer" white image="/images/icons/logos/slicer.svg">
     <i class="iconify" data-icon="feather:x"></i>
-  </V-Snack>
+  </VSnack>
 </template>
 ```
 
@@ -36,21 +36,21 @@ the component background white.
 <!--example-->
 
 <div class="snacks">
-    <V-Snack title="Support" white  image="/demo/photos/misc/buoy.jpg">
+    <VSnack title="Support" white  image="/demo/photos/misc/buoy.jpg">
         <i class="iconify" data-icon="feather:x"></i>
-    </V-Snack>
-    <V-Snack title="Metamovies" white  image="/images/icons/logos/metamovies.svg">
+    </VSnack>
+    <VSnack title="Metamovies" white  image="/images/icons/logos/metamovies.svg">
         <i class="iconify" data-icon="feather:x"></i>
-    </V-Snack>
-    <V-Snack title="Corporate" white  image="/demo/avatars/7.jpg">
+    </VSnack>
+    <VSnack title="Corporate" white  image="/demo/avatars/7.jpg">
         <i class="iconify" data-icon="feather:x"></i>
-    </V-Snack>
-    <V-Snack title="English" white  image="/images/icons/flags/united-states-of-america.svg">
+    </VSnack>
+    <VSnack title="English" white  image="/images/icons/flags/united-states-of-america.svg">
         <i class="iconify" data-icon="feather:x"></i>
-    </V-Snack>
-    <V-Snack title="Slicer" white  image="/images/icons/logos/slicer.svg">
+    </VSnack>
+    <VSnack title="Slicer" white  image="/images/icons/logos/slicer.svg">
         <i class="iconify" data-icon="feather:x"></i>
-    </V-Snack>
+    </VSnack>
 </div>
 
 <!--/example-->

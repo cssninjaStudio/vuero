@@ -4,15 +4,15 @@ import { useHead } from '@vueuse/head'
 import { flexRowsBasic } from '/@src/data/documentation/table'
 import { pageTitle } from '/@src/state/sidebarLayoutState'
 
-pageTitle.value = 'V-FlexTable (Compact)'
+pageTitle.value = 'VFlexTable (Compact)'
 useHead({
-  title: 'V-FlexTable Compact - Components - Vuero',
+  title: 'VFlexTable Compact - Components - Vuero',
 })
 </script>
 
 <template>
   <div class="page-content-inner">
-    <V-Breadcrumb
+    <VBreadcrumb
       with-icons
       separator="bullet"
       :items="[
@@ -27,7 +27,7 @@ useHead({
           to: { name: 'components' },
         },
         {
-          label: 'V-FlexTable',
+          label: 'VFlexTable',
           to: { name: 'components-flex-table' },
         },
         {
@@ -43,8 +43,8 @@ useHead({
         <VFlexTableCompactDocumentation />
 
         <div class="mt-4">
-          <!--V-FlexTabe-->
-          <V-FlexTable compact>
+          <!--VFlexTabe-->
+          <VFlexTable compact>
             <template #header>
               <div class="flex-table-header">
                 <span>Company</span>
@@ -56,12 +56,12 @@ useHead({
               </div>
             </template>
             <template #body>
-              <V-FlexTableRowBase :rows="flexRowsBasic" />
+              <VFlexTableRowBase :rows="flexRowsBasic" />
             </template>
-          </V-FlexTable>
+          </VFlexTable>
 
           <!--Table Pagination-->
-          <V-FlexPagination
+          <VFlexPagination
             :item-per-page="10"
             :total-items="873"
             :current-page="42"

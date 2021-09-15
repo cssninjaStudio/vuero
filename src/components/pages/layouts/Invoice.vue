@@ -41,7 +41,7 @@ import { popovers } from '/@src/data/users/userPopovers'
       <div class="invoice-card">
         <div class="invoice-section is-flex is-bordered">
           <tippy class="has-help-cursor" interactive placement="bottom-start">
-            <V-Avatar size="large" picture="/demo/avatars/13.jpg" />
+            <VAvatar size="large" picture="/demo/avatars/13.jpg" />
             <template #content>
               <UserPopoverContent :user="popovers.user13" />
             </template>
@@ -60,10 +60,10 @@ import { popovers } from '/@src/data/users/userPopovers'
         </div>
 
         <div class="invoice-section is-flex is-bordered">
-          <V-Avatar
+          <VAvatar
             size="large"
             class="is-customer"
-            picture="/demo/photos/brands/airbnb.svg?url"
+            picture="/demo/photos/brands/airbnb.svg"
           />
 
           <div class="meta">

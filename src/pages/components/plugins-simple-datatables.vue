@@ -37,15 +37,15 @@ onBeforeUnmount(() => {
   }
 })
 
-pageTitle.value = 'V-SimpleDatatables'
+pageTitle.value = 'VSimpleDatatables'
 useHead({
-  title: 'V-SimpleDatatables - Plugins - Vuero',
+  title: 'VSimpleDatatables - Plugins - Vuero',
 })
 </script>
 
 <template>
   <div class="page-content-inner">
-    <V-Breadcrumb
+    <VBreadcrumb
       with-icons
       separator="bullet"
       :items="[
@@ -63,7 +63,7 @@ useHead({
           label: 'Plugins',
         },
         {
-          label: 'V-SimpleDatatables',
+          label: 'VSimpleDatatables',
           to: { name: 'components-plugins-simple-datatables' },
         },
       ]"
@@ -79,21 +79,21 @@ useHead({
         <DatatableBaseDocumentation />
 
         <div class="mb-6">
-          <V-SimpleDatatables :options="optionsBase" />
+          <VSimpleDatatables :options="optionsBase" />
         </div>
 
         <!--Reactive Datatable-->
         <DatatableReactiveDocumentation />
 
         <div class="mb-6">
-          <V-SimpleDatatables :options="optionsReactive" autoupdate />
+          <VSimpleDatatables :options="optionsReactive" autoupdate />
         </div>
 
         <!--Slot Datatable-->
         <DatatableSlotDocumentation />
 
         <div class="mb-6">
-          <V-SimpleDatatables>
+          <VSimpleDatatables>
             <thead>
               <tr>
                 <th scope="col">Name</th>
@@ -116,28 +116,28 @@ useHead({
                 <td>{{ row[2] }}</td>
                 <td>{{ row[3] }}</td>
                 <td>
-                  <V-Tag
+                  <VTag
                     :color="row[4] === '100%' ? 'primary' : 'light'"
                     :label="row[4]"
                   />
                 </td>
               </tr>
             </tbody>
-          </V-SimpleDatatables>
+          </VSimpleDatatables>
         </div>
 
         <!--Advanced Datatable-->
         <DatatableAdvancedDocumentation />
 
         <div class="mb-6">
-          <V-SimpleDatatables :options="optionsAdvanced" />
+          <VSimpleDatatables :options="optionsAdvanced" />
         </div>
 
         <!--Users Datatable-->
         <DatatableUsersDocumentation />
 
         <div class="mb-6">
-          <V-SimpleDatatables :options="optionsUsers" />
+          <VSimpleDatatables :options="optionsUsers" />
         </div>
       </div>
       <div v-if="toc.length" class="column is-3 toc-column">

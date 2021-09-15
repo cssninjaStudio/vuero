@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-CardAdvanced Props
+### VCardAdvanced Props
 
-Here is the full props available for `<V-CardAdvanced />` component:
+Here is the full props available for `<VCardAdvanced />` component:
 
 | Props  | Default                                  | Type                           |
 | ------ | ---------------------------------------- | ------------------------------ |

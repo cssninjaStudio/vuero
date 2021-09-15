@@ -1,5 +1,5 @@
 <template>
-  <V-Dropdown icon="feather:more-vertical" dots right spaced>
+  <VDropdown icon="feather:more-vertical" dots right spaced>
     <template #content>
       <a href="#" class="dropdown-item is-media">
         <div class="icon">
@@ -49,5 +49,5 @@
         </div>
       </a>
     </template>
-  </V-Dropdown>
+  </VDropdown>
 </template>

@@ -3,9 +3,9 @@ state:
   flipped: false
 ---
 
-### V-BillboardJS
+### VBillboardJS
 
-Vuero ships with the `<V-BillboardJS />` component, a custom vue3 wrapper
+Vuero ships with the `<VBillboardJS />` component, a custom vue3 wrapper
 for the [billboard.js](https://naver.github.io/billboard.js/) library.  
  Check the code for more details.
 
@@ -69,7 +69,7 @@ const billboardJsOptions = {
 </script>
 
 <template>
-  <V-BillboardJS :options="billboardJsOptions" />
+  <VBillboardJS :options="billboardJsOptions" />
 </template>
 ```
 

@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-Tags Props
+### VTags Props
 
-Here is the full props available for `<V-Tags />` component:
+Here is the full props available for `<VTags />` component:
 
 | Props  | Default                                 | Type    |
 | ------ | --------------------------------------- | ------- |

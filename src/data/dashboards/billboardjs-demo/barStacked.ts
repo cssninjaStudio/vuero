@@ -1,8 +1,8 @@
-import type { Chart } from 'billboard.js'
+import type { Chart, ChartOptions } from 'billboard.js'
 import { themeColors } from '/@src/utils/themeColors'
 import { bar } from 'billboard.js'
 
-export const options = {
+export const options: ChartOptions = {
   data: {
     type: bar(),
     columns: [
@@ -34,7 +34,7 @@ export const options = {
   },
   title: {
     text: 'Stacked Bar Chart',
-    position: 'top-left',
+    position: 'left',
     padding: {
       bottom: 20,
       right: 20,

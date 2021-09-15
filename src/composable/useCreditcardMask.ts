@@ -2,11 +2,21 @@ import type { InputMask } from 'imask'
 import { MaskedRange } from 'imask'
 import { ref } from 'vue'
 
-import type { CreditCardColor } from '/@src/components/base/plugins/V-CreditCard.vue'
+export type VCreditCardColor =
+  | 'grey'
+  | 'green'
+  | 'lime'
+  | 'orange'
+  | 'purple'
+  | 'red'
+  | 'yellow'
+  | 'lightblue'
+  | 'cyan'
+
 export default function useCreditcardMask() {
   const creditcardIcon = ref('')
   const creditcardLogo = ref('')
-  const creditcardColor = ref<CreditCardColor>('grey')
+  const creditcardColor = ref<VCreditCardColor>('grey')
 
   const creditcardMaskDate = {
     mask: Date, // enable date mask

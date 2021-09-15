@@ -1,6 +1,6 @@
-### V-IconBox
+### VIconBox
 
-The Vuero `<V-IconBox />` component let you display icons
+The Vuero `<VIconBox />` component let you display icons
 in a fancy and colored way. Box sizes can be controled with
 the `size` prop. Available sizes are `small`, `medium`, `large`,
 `big` and `xl`. See code for more details about usage.
@@ -9,24 +9,24 @@ the `size` prop. Available sizes are `small`, `medium`, `large`,
 
 ```vue
 <template>
-  <V-IconBox size="small">
+  <VIconBox size="small">
     <i class="lnil lnil-vector-pen"></i>
-  </V-IconBox>
-  <V-IconBox>
+  </VIconBox>
+  <VIconBox>
     <i class="lnil lnil-vector-pen"></i>
-  </V-IconBox>
-  <V-IconBox size="medium">
+  </VIconBox>
+  <VIconBox size="medium">
     <i class="lnil lnil-vector-pen"></i>
-  </V-IconBox>
-  <V-IconBox size="large">
+  </VIconBox>
+  <VIconBox size="large">
     <i class="lnil lnil-vector-pen"></i>
-  </V-IconBox>
-  <V-IconBox size="big">
+  </VIconBox>
+  <VIconBox size="big">
     <i class="lnil lnil-vector-pen"></i>
-  </V-IconBox>
-  <V-IconBox size="xl">
+  </VIconBox>
+  <VIconBox size="xl">
     <i class="lnil lnil-vector-pen"></i>
-  </V-IconBox>
+  </VIconBox>
 </template>
 ```
 
@@ -35,24 +35,24 @@ the `size` prop. Available sizes are `small`, `medium`, `large`,
 <!--example-->
 
 <div class="icon-boxes">
-    <V-IconBox size="small">
+    <VIconBox size="small">
         <i class="lnil lnil-vector-pen"></i>
-    </V-IconBox>
-    <V-IconBox>
+    </VIconBox>
+    <VIconBox>
         <i class="lnil lnil-vector-pen"></i>
-    </V-IconBox>
-    <V-IconBox size="medium">
+    </VIconBox>
+    <VIconBox size="medium">
         <i class="lnil lnil-vector-pen"></i>
-    </V-IconBox>
-    <V-IconBox size="large">
+    </VIconBox>
+    <VIconBox size="large">
         <i class="lnil lnil-vector-pen"></i>
-    </V-IconBox>
-    <V-IconBox size="big">
+    </VIconBox>
+    <VIconBox size="big">
         <i class="lnil lnil-vector-pen"></i>
-    </V-IconBox>
-    <V-IconBox size="xl">
+    </VIconBox>
+    <VIconBox size="xl">
         <i class="lnil lnil-vector-pen"></i>
-    </V-IconBox>
+    </VIconBox>
 </div>
 
 <!--/example-->

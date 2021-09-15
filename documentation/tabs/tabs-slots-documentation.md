@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-Tabs Slots
+### VTabs Slots
 
-Here is the full slots available for `<V-Tabs />` component:
+Here is the full slots available for `<VTabs />` component:
 
 | Slot                   | Properties                                                | Description       |
 | ---------------------- | --------------------------------------------------------- | ----------------- |

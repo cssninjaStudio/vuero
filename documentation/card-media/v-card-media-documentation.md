@@ -1,6 +1,6 @@
-### V-CardMedia
+### VCardMedia
 
-The `<V-CardMedia />` component is a enhamcement and port to Vue
+The `<VCardMedia />` component is a enhamcement and port to Vue
 of the classic bulma card component, a classy and easy way
 to display media content. The component has several props
 to pass in the content you want to display.
@@ -10,7 +10,7 @@ Check the code example for more details.
 
 ```vue
 <template>
-  <V-CardMedia
+  <VCardMedia
     image="/demo/photos/apps/1.jpg"
     avatar="/demo/avatars/19.jpg"
     badge="/images/icons/flags/germany.svg"
@@ -24,7 +24,7 @@ Check the code example for more details.
     </p>
 
     <a class="action-link">Read More</a>
-  </V-CardMedia>
+  </VCardMedia>
 </template>
 ```
 

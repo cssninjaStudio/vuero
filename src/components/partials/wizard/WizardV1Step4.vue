@@ -215,12 +215,12 @@ watch(previewTemplate, () => {
       <div class="placeholder-content">
         <img
           class="light-image is-rounded"
-          src="/@src/assets/illustrations/wizard/upload-placeholder.svg?url"
+          src="/@src/assets/illustrations/wizard/upload-placeholder.svg"
           alt=""
         />
         <img
           class="dark-image is-rounded"
-          src="/@src/assets/illustrations/wizard/upload-placeholder.svg?url"
+          src="/@src/assets/illustrations/wizard/upload-placeholder.svg"
           alt=""
         />
         <h3>Upload project files</h3>

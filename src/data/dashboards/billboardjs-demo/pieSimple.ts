@@ -1,8 +1,8 @@
-import type { Chart } from 'billboard.js'
+import type { Chart, ChartOptions, DataItem } from 'billboard.js'
 import { themeColors } from '/@src/utils/themeColors'
 import { pie } from 'billboard.js'
 
-export const options = {
+export const options: ChartOptions = {
   data: {
     columns: [
       ['data1', 30],
@@ -18,14 +18,14 @@ export const options = {
       virginica: themeColors.success,
     },
     type: pie(),
-    onclick: (data: number, index: number) => {
-      console.log('[pieSimple] onclick', data, index)
+    onclick(this: Chart, d: DataItem, element: SVGAElement) {
+      console.log('[pieSimple] onclick', d, element)
     },
-    onover: (data: number, index: number) => {
-      console.log('[pieSimple] onover', data, index)
+    onover(this: Chart, d: DataItem, element?: SVGAElement) {
+      console.log('[pieSimple] onover', d, element)
     },
-    onout: (data: number, index: number) => {
-      console.log('[pieSimple] onout', data, index)
+    onout(this: Chart, d: DataItem, element?: SVGAElement) {
+      console.log('[pieSimple] onout', d, element)
     },
   },
   size: {
@@ -36,7 +36,7 @@ export const options = {
   },
   title: {
     text: 'Pie Chart',
-    position: 'top-left',
+    position: 'left',
     padding: {
       bottom: 20,
       right: 20,

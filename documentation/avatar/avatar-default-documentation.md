@@ -1,6 +1,6 @@
-### V-Avatar
+### VAvatar
 
-Vuero `<V-Avatar />` components are rounded images used for media
+Vuero `<VAvatar />` components are rounded images used for media
 and personal pages. Avatar sizes can be controled with 'size' prop.
 Available size prop values `small`, `medium`, `large`, `big` and `xl`.
 See code for more details about usage.
@@ -9,14 +9,14 @@ See code for more details about usage.
 
 ```vue
 <template>
-  <V-Flex alignItems="flex-end" columnGap=".25rem">
-    <V-Avatar picture="/demo/avatars/7.jpg" size="small" />
-    <V-Avatar picture="/demo/avatars/8.jpg" />
-    <V-Avatar picture="/demo/avatars/11.jpg" size="medium" />
-    <V-Avatar picture="/demo/avatars/21.jpg" size="large" />
-    <V-Avatar picture="/demo/avatars/13.jpg" size="big" />
-    <V-Avatar picture="/demo/avatars/5.jpg" size="xl" />
-  </V-Flex>
+  <VFlex alignItems="flex-end" columnGap=".25rem">
+    <VAvatar picture="/demo/avatars/7.jpg" size="small" />
+    <VAvatar picture="/demo/avatars/8.jpg" />
+    <VAvatar picture="/demo/avatars/11.jpg" size="medium" />
+    <VAvatar picture="/demo/avatars/21.jpg" size="large" />
+    <VAvatar picture="/demo/avatars/13.jpg" size="big" />
+    <VAvatar picture="/demo/avatars/5.jpg" size="xl" />
+  </VFlex>
 </template>
 ```
 
@@ -24,13 +24,13 @@ See code for more details about usage.
 
 <!--example-->
 
-<V-Flex alignItems="flex-end" columnGap=".25rem">
-  <V-Avatar picture="/demo/avatars/7.jpg" size="small" />
-  <V-Avatar picture="/demo/avatars/8.jpg" />
-  <V-Avatar picture="/demo/avatars/11.jpg" size="medium" />
-  <V-Avatar picture="/demo/avatars/21.jpg" size="large" />
-  <V-Avatar picture="/demo/avatars/13.jpg" size="big" />
-  <V-Avatar picture="/demo/avatars/5.jpg" size="xl" />
-</V-Flex>
+<VFlex alignItems="flex-end" columnGap=".25rem">
+  <VAvatar picture="/demo/avatars/7.jpg" size="small" />
+  <VAvatar picture="/demo/avatars/8.jpg" />
+  <VAvatar picture="/demo/avatars/11.jpg" size="medium" />
+  <VAvatar picture="/demo/avatars/21.jpg" size="large" />
+  <VAvatar picture="/demo/avatars/13.jpg" size="big" />
+  <VAvatar picture="/demo/avatars/5.jpg" size="xl" />
+</VFlex>
 
 <!--/example-->

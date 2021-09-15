@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-SwitchBlock Events
+### VSwitchBlock Events
 
-Here is the full events available for `<V-SwitchBlock />` component:
+Here is the full events available for `<VSwitchBlock />` component:
 
 | Event              | Callback                                                    | Description                                                                      |
 | ------------------ | ----------------------------------------------------------- | -------------------------------------------------------------------------------- |

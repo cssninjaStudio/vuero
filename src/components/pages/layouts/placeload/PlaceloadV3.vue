@@ -15,32 +15,32 @@ const optionsSingle = [
 <template>
   <div>
     <div class="user-grid-toolbar">
-      <V-Control icon="feather:search">
+      <VControl icon="feather:search">
         <input
           v-model="filters"
           class="input custom-text-filter"
           placeholder="Search..."
         />
-      </V-Control>
+      </VControl>
 
-      <V-Buttons>
-        <V-Field class="h-hidden-mobile">
-          <V-Control>
+      <VButtons>
+        <VField class="h-hidden-mobile">
+          <VControl>
             <Multiselect
               v-model="valueSingle"
               :options="optionsSingle"
               :max-height="145"
               placeholder="Select an option"
             />
-          </V-Control>
-        </V-Field>
-        <V-Button color="primary" raised>
+          </VControl>
+        </VField>
+        <VButton color="primary" raised>
           <span class="icon">
             <i aria-hidden="true" class="fas fa-plus"></i>
           </span>
           <span>Add User</span>
-        </V-Button>
-      </V-Buttons>
+        </VButton>
+      </VButtons>
     </div>
 
     <div class="user-grid user-grid-v1">
@@ -48,9 +48,9 @@ const optionsSingle = [
         <!--Grid item-->
         <div v-for="key in 20" :key="key" class="column is-3">
           <div class="grid-item">
-            <V-PlaceloadAvatar size="big" centered class="mb-2" />
+            <VPlaceloadAvatar size="big" centered class="mb-2" />
 
-            <V-PlaceloadText
+            <VPlaceloadText
               class="mb-4"
               width="80%"
               :lines="3"
@@ -59,16 +59,16 @@ const optionsSingle = [
             />
 
             <div class="people">
-              <V-PlaceloadAvatar size="small" class="mx-1" />
-              <V-PlaceloadAvatar size="small" class="mx-1" />
-              <V-PlaceloadAvatar size="small" class="mx-1" />
-              <V-PlaceloadAvatar size="small" class="mx-1" />
+              <VPlaceloadAvatar size="small" class="mx-1" />
+              <VPlaceloadAvatar size="small" class="mx-1" />
+              <VPlaceloadAvatar size="small" class="mx-1" />
+              <VPlaceloadAvatar size="small" class="mx-1" />
             </div>
 
-            <V-Buttons>
-              <V-Button placeload="100%" dark-outlined>loading ...</V-Button>
-              <V-Button placeload="100%" dark-outlined>loading ...</V-Button>
-            </V-Buttons>
+            <VButtons>
+              <VButton placeload="100%" dark-outlined>loading ...</VButton>
+              <VButton placeload="100%" dark-outlined>loading ...</VButton>
+            </VButtons>
           </div>
         </div>
       </div>

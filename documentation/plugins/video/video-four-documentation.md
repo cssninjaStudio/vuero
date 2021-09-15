@@ -8,7 +8,7 @@ Available ratios are `square`, `4by3` and `16by9`.
 
 ```vue
 <template>
-  <V-Plyr ratio="4by3" source="/video/hands.mp4" poster="/video/poster-3.jpg" />
+  <VPlyr ratio="4by3" source="/video/hands.mp4" poster="/video/poster-3.jpg" />
 </template>
 ```
 
@@ -17,7 +17,7 @@ Available ratios are `square`, `4by3` and `16by9`.
 <!--example-->
 
 <div>
-  <V-Plyr class="ml-1"
+  <VPlyr class="ml-1"
     ratio="4by3"
     source="/video/hands.mp4"
     poster="/video/poster-3.jpg"

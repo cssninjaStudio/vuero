@@ -3,15 +3,15 @@ import { useHead } from '@vueuse/head'
 
 import { pageTitle } from '/@src/state/sidebarLayoutState'
 
-pageTitle.value = 'V-CardMedia'
+pageTitle.value = 'VCardMedia'
 useHead({
-  title: 'V-CardMedia - Components - Vuero',
+  title: 'VCardMedia - Components - Vuero',
 })
 </script>
 
 <template>
   <div class="page-content-inner">
-    <V-Breadcrumb
+    <VBreadcrumb
       with-icons
       separator="bullet"
       :items="[
@@ -29,7 +29,7 @@ useHead({
           label: 'Cards',
         },
         {
-          label: 'V-CardMedia',
+          label: 'VCardMedia',
           to: { name: 'components-card-media' },
         },
       ]"
@@ -37,15 +37,15 @@ useHead({
 
     <div class="columns is-multiline">
       <div class="column is-12">
-        <!--V-CardMedia-->
+        <!--VCardMedia-->
         <VCardMediaDocumentation />
       </div>
 
       <div class="column is-4">
-        <V-CardMedia
+        <VCardMedia
           image="/demo/photos/apps/1.jpg"
           avatar="/demo/avatars/19.jpg"
-          badge="/images/icons/flags/germany.svg?url"
+          badge="/images/icons/flags/germany.svg"
           title="Greta K."
           subtitle="Sales Manager"
         >
@@ -56,14 +56,14 @@ useHead({
           </p>
 
           <a class="action-link">Read More</a>
-        </V-CardMedia>
+        </VCardMedia>
       </div>
 
       <div class="column is-4">
-        <V-CardMedia
+        <VCardMedia
           image="/demo/photos/apps/2.png"
           avatar="/demo/avatars/23.jpg"
-          badge="/images/icons/flags/united-states-of-america.svg?url"
+          badge="/images/icons/flags/united-states-of-america.svg"
           title="Irina V."
           subtitle="Project Manager"
         >
@@ -74,14 +74,14 @@ useHead({
           </p>
 
           <a class="action-link">Read More</a>
-        </V-CardMedia>
+        </VCardMedia>
       </div>
 
       <div class="column is-4">
-        <V-CardMedia
+        <VCardMedia
           image="/demo/photos/apps/3.png"
           avatar="/demo/avatars/12.jpg"
-          badge="/images/icons/flags/united-states-of-america.svg?url"
+          badge="/images/icons/flags/united-states-of-america.svg"
           title="Joshua S."
           subtitle="Backend Developer"
         >
@@ -92,7 +92,7 @@ useHead({
           </p>
 
           <a class="action-link">Read More</a>
-        </V-CardMedia>
+        </VCardMedia>
       </div>
 
       <div class="column is-12 mt-5">

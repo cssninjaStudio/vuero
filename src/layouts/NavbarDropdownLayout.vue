@@ -2,6 +2,11 @@
 import { computed, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
+import type { UserPopover } from '/@src/models/users'
+import type {
+  VAvatarColor,
+  VAvatarProps,
+} from '/@src/components/base/avatar/VAvatar.vue'
 import { popovers } from '/@src/data/users/userPopovers'
 import { pageTitle } from '/@src/state/navbarLayoutState'
 import { activePanel } from '/@src/state/activePanelState'
@@ -36,6 +41,14 @@ const filteredUsers = computed(() => {
     )
   })
 })
+
+function getAvatarData(user: UserPopover): VAvatarProps {
+  return {
+    picture: user.avatar,
+    initials: user.initials,
+    color: user.color as VAvatarColor,
+  }
+}
 
 watch(
   () => route.fullPath,
@@ -250,11 +263,7 @@ watch(
                   :key="user.id"
                   class="search-result"
                 >
-                  <V-Avatar
-                    :picture="user.avatar"
-                    :initials="user.initials"
-                    :color="user.color"
-                  />
+                  <VAvatar v-bind="getAvatarData(user)" />
                   <div class="meta">
                     <span>{{ user.username }}</span>
                     <span>{{ user.position }}</span>

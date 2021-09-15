@@ -3,16 +3,16 @@ import { datatableV3 } from '/@src/data/layouts/datatable-v3'
 </script>
 
 <template>
-  <V-SimpleDatatables>
+  <VSimpleDatatables>
     <thead>
       <tr>
         <th scope="col" data-sortable="false">
-          <V-Control>
+          <VControl>
             <label class="checkbox is-primary is-outlined is-circle">
               <input id="head-checkbox" type="checkbox" />
               <span></span>
             </label>
-          </V-Control>
+          </VControl>
         </th>
         <th scope="col" data-sortable="false">Type</th>
         <th scope="col">Name</th>
@@ -25,12 +25,12 @@ import { datatableV3 } from '/@src/data/layouts/datatable-v3'
     <tbody>
       <tr v-for="(row, index) in datatableV3" :key="index">
         <td>
-          <V-Control>
+          <VControl>
             <label class="checkbox is-primary is-outlined is-circle">
               <input :id="`row-checkbox-${index}`" type="checkbox" />
               <span></span>
             </label>
-          </V-Control>
+          </VControl>
         </td>
         <td>
           <img class="file-icon" :src="row[0]" alt="" />
@@ -49,7 +49,7 @@ import { datatableV3 } from '/@src/data/layouts/datatable-v3'
         </td>
         <td>
           <div class="flex-media">
-            <V-Avatar :picture="row[4]" size="small" />
+            <VAvatar :picture="row[4]" size="small" />
 
             <div class="meta">
               <span>{{ row[5] }}</span>
@@ -62,5 +62,5 @@ import { datatableV3 } from '/@src/data/layouts/datatable-v3'
         </td>
       </tr>
     </tbody>
-  </V-SimpleDatatables>
+  </VSimpleDatatables>
 </template>

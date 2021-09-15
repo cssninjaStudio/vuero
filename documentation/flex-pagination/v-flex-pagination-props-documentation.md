@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-FlexPagination Props
+### VFlexPagination Props
 
-Here is the full props available for `<V-FlexPagination />` component:
+Here is the full props available for `<VFlexPagination />` component:
 
 | Props                         | Default                                       | Type   |
 | ----------------------------- | --------------------------------------------- | ------ |

@@ -1,9 +1,10 @@
+import type { ChartOptions } from 'billboard.js'
 import { themeColors } from '/@src/utils/themeColors'
 import { area } from 'billboard.js'
 
-export const options = {
-  type: area(),
+export const options: ChartOptions = {
   data: {
+    type: area(),
     columns: [
       ['data1', 300, 350, 300, 0, 0, 0],
       ['data2', 130, 100, 140, 200, 150, 50],
@@ -26,7 +27,7 @@ export const options = {
   },
   title: {
     text: 'Area Chart',
-    position: 'top-left',
+    position: 'left',
     padding: {
       bottom: 20,
       right: 20,

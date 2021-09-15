@@ -8,15 +8,15 @@ import { pageTitle } from '/@src/state/sidebarLayoutState'
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-pageTitle.value = 'V-Snack'
+pageTitle.value = 'VSnack'
 useHead({
-  title: 'V-Snack - Components - Vuero',
+  title: 'VSnack - Components - Vuero',
 })
 </script>
 
 <template>
   <div class="page-content-inner">
-    <V-Breadcrumb
+    <VBreadcrumb
       with-icons
       separator="bullet"
       :items="[
@@ -31,7 +31,7 @@ useHead({
           to: { name: 'components' },
         },
         {
-          label: 'V-Snack',
+          label: 'VSnack',
           to: { name: 'components-snack' },
         },
       ]"
@@ -43,34 +43,34 @@ useHead({
         :class="[toc.length > 0 ? 'is-9' : 'is-12']"
         class="column doc-column"
       >
-        <!--V-Snack base-->
+        <!--VSnack base-->
         <VSnackBaseDocumentation />
 
-        <!--V-Snack white-->
+        <!--VSnack white-->
         <VSnackWhiteDocumentation />
 
-        <!--V-Snack feather-->
+        <!--VSnack feather-->
         <VSnackFeatherDocumentation />
 
-        <!--V-Snack feather solid-->
+        <!--VSnack feather solid-->
         <VSnackFeatherSolidDocumentation />
 
-        <!--V-Snack fa-->
+        <!--VSnack fa-->
         <VSnackFaDocumentation />
 
-        <!--V-Snack fa solid-->
+        <!--VSnack fa solid-->
         <VSnackFaSolidDocumentation />
 
-        <!--V-Snack line-->
+        <!--VSnack line-->
         <VSnackLineDocumentation />
 
-        <!--V-Snack line solid-->
+        <!--VSnack line solid-->
         <VSnackLineSolidDocumentation />
 
-        <!--V-Snack small image-->
+        <!--VSnack small image-->
         <VSnackSmallImageDocumentation />
 
-        <!--V-Snack small icon-->
+        <!--VSnack small icon-->
         <VSnackSmallIconDocumentation />
 
         <!--Props-->

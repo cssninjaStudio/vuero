@@ -15,9 +15,9 @@ useHead({
       <div class="column is-12">
         <div class="hub-wrapper">
           <div class="hub-header has-text-centered">
-            <V-Avatar
+            <VAvatar
               size="xl"
-              picture="/images/avatars/svg/vuero-2.svg?url"
+              picture="/images/avatars/svg/vuero-2.svg"
               badge="/demo/photos/misc/buoy.jpg"
             />
 
@@ -41,12 +41,12 @@ useHead({
                 <template #icon>
                   <img
                     class="light-image"
-                    src="/@src/assets/illustrations/components/lists.svg?url"
+                    src="/@src/assets/illustrations/components/lists.svg"
                     alt=""
                   />
                   <img
                     class="dark-image"
-                    src="/@src/assets/illustrations/components/lists-dark.svg?url"
+                    src="/@src/assets/illustrations/components/lists-dark.svg"
                     alt=""
                   />
                 </template>
@@ -64,12 +64,12 @@ useHead({
                 <template #icon>
                   <img
                     class="light-image"
-                    src="/@src/assets/illustrations/components/tags.svg?url"
+                    src="/@src/assets/illustrations/components/tags.svg"
                     alt=""
                   />
                   <img
                     class="dark-image"
-                    src="/@src/assets/illustrations/components/tags-dark.svg?url"
+                    src="/@src/assets/illustrations/components/tags-dark.svg"
                     alt=""
                   />
                 </template>
@@ -87,12 +87,12 @@ useHead({
                 <template #icon>
                   <img
                     class="light-image"
-                    src="/@src/assets/illustrations/components/tabs.svg?url"
+                    src="/@src/assets/illustrations/components/tabs.svg"
                     alt=""
                   />
                   <img
                     class="dark-image"
-                    src="/@src/assets/illustrations/components/tabs-dark.svg?url"
+                    src="/@src/assets/illustrations/components/tabs-dark.svg"
                     alt=""
                   />
                 </template>
@@ -110,12 +110,12 @@ useHead({
                 <template #icon>
                   <img
                     class="light-image"
-                    src="/@src/assets/illustrations/components/cards.svg?url"
+                    src="/@src/assets/illustrations/components/cards.svg"
                     alt=""
                   />
                   <img
                     class="dark-image"
-                    src="/@src/assets/illustrations/components/cards-dark.svg?url"
+                    src="/@src/assets/illustrations/components/cards-dark.svg"
                     alt=""
                   />
                 </template>
@@ -132,12 +132,12 @@ useHead({
                 <template #icon>
                   <img
                     class="light-image"
-                    src="/@src/assets/illustrations/components/avatar.svg?url"
+                    src="/@src/assets/illustrations/components/avatar.svg"
                     alt=""
                   />
                   <img
                     class="dark-image"
-                    src="/@src/assets/illustrations/components/avatar-dark.svg?url"
+                    src="/@src/assets/illustrations/components/avatar-dark.svg"
                     alt=""
                   />
                 </template>
@@ -155,12 +155,12 @@ useHead({
                 <template #icon>
                   <img
                     class="light-image"
-                    src="/@src/assets/illustrations/components/accordion.svg?url"
+                    src="/@src/assets/illustrations/components/accordion.svg"
                     alt=""
                   />
                   <img
                     class="dark-image"
-                    src="/@src/assets/illustrations/components/accordion-dark.svg?url"
+                    src="/@src/assets/illustrations/components/accordion-dark.svg"
                     alt=""
                   />
                 </template>
@@ -178,12 +178,12 @@ useHead({
                 <template #icon>
                   <img
                     class="light-image"
-                    src="/@src/assets/illustrations/components/breadcrumb.svg?url"
+                    src="/@src/assets/illustrations/components/breadcrumb.svg"
                     alt=""
                   />
                   <img
                     class="dark-image"
-                    src="/@src/assets/illustrations/components/breadcrumb-dark.svg?url"
+                    src="/@src/assets/illustrations/components/breadcrumb-dark.svg"
                     alt=""
                   />
                 </template>
@@ -201,12 +201,12 @@ useHead({
                 <template #icon>
                   <img
                     class="light-image"
-                    src="/@src/assets/illustrations/components/icon-box.svg?url"
+                    src="/@src/assets/illustrations/components/icon-box.svg"
                     alt=""
                   />
                   <img
                     class="dark-image"
-                    src="/@src/assets/illustrations/components/icon-box-dark.svg?url"
+                    src="/@src/assets/illustrations/components/icon-box-dark.svg"
                     alt=""
                   />
                 </template>
@@ -224,12 +224,12 @@ useHead({
                 <template #icon>
                   <img
                     class="light-image"
-                    src="/@src/assets/illustrations/components/table.svg?url"
+                    src="/@src/assets/illustrations/components/table.svg"
                     alt=""
                   />
                   <img
                     class="dark-image"
-                    src="/@src/assets/illustrations/components/table-dark.svg?url"
+                    src="/@src/assets/illustrations/components/table-dark.svg"
                     alt=""
                   />
                 </template>
@@ -247,12 +247,12 @@ useHead({
                 <template #icon>
                   <img
                     class="light-image"
-                    src="/@src/assets/illustrations/components/snacks.svg?url"
+                    src="/@src/assets/illustrations/components/snacks.svg"
                     alt=""
                   />
                   <img
                     class="dark-image"
-                    src="/@src/assets/illustrations/components/snacks-dark.svg?url"
+                    src="/@src/assets/illustrations/components/snacks-dark.svg"
                     alt=""
                   />
                 </template>

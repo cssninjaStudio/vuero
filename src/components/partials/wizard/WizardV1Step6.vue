@@ -18,9 +18,9 @@ import { wizardData } from '/@src/state/wizardState'
             <input v-model="wizardData.tools" type="checkbox" :value="tool" />
 
             <div class="tool-card-inner">
-              <V-Block :title="tool.name" :subtitle="tool.description" center>
+              <VBlock :title="tool.name" :subtitle="tool.description" center>
                 <template #icon>
-                  <V-Avatar :picture="tool.logo" />
+                  <VAvatar :picture="tool.logo" />
                 </template>
                 <template #action>
                   <div class="checkmark">
@@ -31,7 +31,7 @@ import { wizardData } from '/@src/state/wizardState'
                     ></i>
                   </div>
                 </template>
-              </V-Block>
+              </VBlock>
             </div>
           </div>
         </div>

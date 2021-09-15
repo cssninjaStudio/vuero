@@ -44,7 +44,7 @@ setInterval(() => {
 </script>
 
 <template>
-  <V-SimpleDatatables :options="options" autoupdate />
+  <VSimpleDatatables :options="options" autoupdate />
 </template>
 ```
 

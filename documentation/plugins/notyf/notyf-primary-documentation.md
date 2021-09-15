@@ -38,7 +38,7 @@ const primaryToast = () => {
 </script>
 
 <template>
-  <V-Button bold @click="primaryToast">Primary Toast</V-Button>
+  <VButton bold @click="primaryToast">Primary Toast</VButton>
 </template>
 ```
 

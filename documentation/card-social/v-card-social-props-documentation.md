@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-CardSocial Props
+### VCardSocial Props
 
-Here is the full props available for `<V-CardSocial />` component:
+Here is the full props available for `<VCardSocial />` component:
 
 | Props                     | Default                                                               | Type                                                                                                                                     |
 | ------------------------- | --------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |

@@ -1,10 +1,10 @@
 <template>
   <div class="profile-wrapper">
     <div class="profile-header has-text-centered">
-      <V-Avatar
+      <VAvatar
         size="xl"
         picture="/demo/avatars/8.jpg"
-        badge="/images/icons/flags/united-states-of-america.svg?url"
+        badge="/images/icons/flags/united-states-of-america.svg"
       />
 
       <h3 class="title is-4 is-narrow">Erik Kovalsky</h3>
@@ -38,7 +38,7 @@
             <i aria-hidden="true" class="lnil lnil-pencil"></i>
           </div>
 
-          <V-IconWrap dark="6" icon="lnil lnil-apartment" />
+          <VIconWrap dark="6" icon="lnil lnil-apartment" />
 
           <span>Company</span>
           <h3>Manage Company</h3>
@@ -48,7 +48,7 @@
             <i aria-hidden="true" class="lnil lnil-pencil"></i>
           </div>
 
-          <V-IconWrap dark="6" icon="lnil lnil-users" />
+          <VIconWrap dark="6" icon="lnil lnil-users" />
 
           <span>Team</span>
           <h3>Manage Team</h3>
@@ -58,7 +58,7 @@
             <i aria-hidden="true" class="lnil lnil-pencil"></i>
           </div>
 
-          <V-IconWrap dark="6" icon="lnil lnil-briefcase-alt" />
+          <VIconWrap dark="6" icon="lnil lnil-briefcase-alt" />
 
           <span>Projects</span>
           <h3>Project Settings</h3>
@@ -68,7 +68,7 @@
             <i aria-hidden="true" class="lnil lnil-pencil"></i>
           </div>
 
-          <V-IconWrap dark="6" icon="lnil lnil-lock-alt-1" />
+          <VIconWrap dark="6" icon="lnil lnil-lock-alt-1" />
 
           <span>Permissions</span>
           <h3>Manage Permissions</h3>
@@ -78,7 +78,7 @@
             <i aria-hidden="true" class="lnil lnil-pencil"></i>
           </div>
 
-          <V-IconWrap dark="6" icon="lnil lnil-file-name" />
+          <VIconWrap dark="6" icon="lnil lnil-file-name" />
 
           <span>Document</span>
           <h3>Document Policies</h3>
@@ -88,7 +88,7 @@
             <i aria-hidden="true" class="lnil lnil-pencil"></i>
           </div>
 
-          <V-IconWrap dark="6" icon="lnil lnil-file-upload" />
+          <VIconWrap dark="6" icon="lnil lnil-file-upload" />
 
           <span>Upload</span>
           <h3>Upload Policies</h3>
@@ -98,7 +98,7 @@
             <i aria-hidden="true" class="lnil lnil-pencil"></i>
           </div>
 
-          <V-IconWrap dark="6" icon="lnil lnil-credit-card" />
+          <VIconWrap dark="6" icon="lnil lnil-credit-card" />
 
           <span>Billing</span>
           <h3>Billing and Plans</h3>
@@ -108,7 +108,7 @@
             <i aria-hidden="true" class="lnil lnil-pencil"></i>
           </div>
 
-          <V-IconWrap dark="6" icon="lnil lnil-bubble" />
+          <VIconWrap dark="6" icon="lnil lnil-bubble" />
 
           <span>Messaging</span>
           <h3>Messaging Settings</h3>
@@ -118,7 +118,7 @@
             <i aria-hidden="true" class="lnil lnil-pencil"></i>
           </div>
 
-          <V-IconWrap dark="6" icon="lnil lnil-shield" />
+          <VIconWrap dark="6" icon="lnil lnil-shield" />
 
           <span>Security</span>
           <h3>Security Settings</h3>
@@ -128,7 +128,7 @@
             <i aria-hidden="true" class="lnil lnil-pencil"></i>
           </div>
 
-          <V-IconWrap dark="6" icon="lnil lnil-cogs" />
+          <VIconWrap dark="6" icon="lnil lnil-cogs" />
 
           <span>Preferences</span>
           <h3>General Settings</h3>

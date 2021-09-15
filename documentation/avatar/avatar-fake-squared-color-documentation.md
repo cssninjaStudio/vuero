@@ -10,20 +10,20 @@ Supports dark mode.
 
 ```vue
 <template>
-  <V-Flex alignItems="flex-end" columnGap=".25rem">
-    <V-Avatar initials="CT" size="medium" squared />
-    <V-Avatar initials="CT" size="medium" color="primary" squared />
-    <V-Avatar initials="CT" size="medium" color="success" squared />
-    <V-Avatar initials="CT" size="medium" color="info" squared />
-    <V-Avatar initials="CT" size="medium" color="warning" squared />
-    <V-Avatar initials="CT" size="medium" color="danger" squared />
-    <V-Avatar initials="CT" size="medium" color="h-purple" squared />
-    <V-Avatar initials="CT" size="medium" color="h-orange" squared />
-    <V-Avatar initials="CT" size="medium" color="h-blue" squared />
-    <V-Avatar initials="CT" size="medium" color="h-green" squared />
-    <V-Avatar initials="CT" size="medium" color="h-red" squared />
-    <V-Avatar initials="CT" size="medium" color="h-yellow" squared />
-  </V-Flex>
+  <VFlex alignItems="flex-end" columnGap=".25rem">
+    <VAvatar initials="CT" size="medium" squared />
+    <VAvatar initials="CT" size="medium" color="primary" squared />
+    <VAvatar initials="CT" size="medium" color="success" squared />
+    <VAvatar initials="CT" size="medium" color="info" squared />
+    <VAvatar initials="CT" size="medium" color="warning" squared />
+    <VAvatar initials="CT" size="medium" color="danger" squared />
+    <VAvatar initials="CT" size="medium" color="h-purple" squared />
+    <VAvatar initials="CT" size="medium" color="h-orange" squared />
+    <VAvatar initials="CT" size="medium" color="h-blue" squared />
+    <VAvatar initials="CT" size="medium" color="h-green" squared />
+    <VAvatar initials="CT" size="medium" color="h-red" squared />
+    <VAvatar initials="CT" size="medium" color="h-yellow" squared />
+  </VFlex>
 </template>
 ```
 
@@ -31,19 +31,19 @@ Supports dark mode.
 
 <!--example-->
 
-<V-Flex alignItems="flex-end" columnGap=".25rem">
-  <V-Avatar initials="CT" size="medium" squared/>
-  <V-Avatar initials="CT" size="medium" color="primary" squared />
-  <V-Avatar initials="CT" size="medium" color="success" squared />
-  <V-Avatar initials="CT" size="medium" color="info" squared />
-  <V-Avatar initials="CT" size="medium" color="warning" squared />
-  <V-Avatar initials="CT" size="medium" color="danger" squared />
-  <V-Avatar initials="CT" size="medium" color="h-purple" squared />
-  <V-Avatar initials="CT" size="medium" color="h-orange" squared />
-  <V-Avatar initials="CT" size="medium" color="h-blue" squared />
-  <V-Avatar initials="CT" size="medium" color="h-green" squared />
-  <V-Avatar initials="CT" size="medium" color="h-red" squared />
-  <V-Avatar initials="CT" size="medium" color="h-yellow" squared />
-</V-Flex>
+<VFlex alignItems="flex-end" columnGap=".25rem">
+  <VAvatar initials="CT" size="medium" squared/>
+  <VAvatar initials="CT" size="medium" color="primary" squared />
+  <VAvatar initials="CT" size="medium" color="success" squared />
+  <VAvatar initials="CT" size="medium" color="info" squared />
+  <VAvatar initials="CT" size="medium" color="warning" squared />
+  <VAvatar initials="CT" size="medium" color="danger" squared />
+  <VAvatar initials="CT" size="medium" color="h-purple" squared />
+  <VAvatar initials="CT" size="medium" color="h-orange" squared />
+  <VAvatar initials="CT" size="medium" color="h-blue" squared />
+  <VAvatar initials="CT" size="medium" color="h-green" squared />
+  <VAvatar initials="CT" size="medium" color="h-red" squared />
+  <VAvatar initials="CT" size="medium" color="h-yellow" squared />
+</VFlex>
 
 <!--/example-->

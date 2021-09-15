@@ -1,8 +1,8 @@
-import type { Chart } from 'billboard.js'
+import type { Chart, ChartOptions } from 'billboard.js'
 import { themeColors } from '/@src/utils/themeColors'
 import { scatter } from 'billboard.js'
 
-export const options = {
+export const options: ChartOptions = {
   data: {
     xs: {
       setosa: 'setosa_x',
@@ -251,7 +251,7 @@ export const options = {
   },
   title: {
     text: 'Scatter Plot',
-    position: 'top-left',
+    position: 'left',
     padding: {
       bottom: 20,
       right: 20,

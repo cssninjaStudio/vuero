@@ -6594,7 +6594,6 @@ p.white-text {
 
 code {
   color: rgb(65, 185, 131);
-  background: rgb(255, 255, 255);
 }
 
 .is-dark code {
@@ -6770,6 +6769,7 @@ body.opened {
 .r-card.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .s-card {
@@ -6779,6 +6779,7 @@ body.opened {
 .s-card.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .l-card {
@@ -6788,13 +6789,7 @@ body.opened {
 .l-card.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
-}
-
-.is-dark .r-card.is-primary,
-.is-dark .s-card.is-primary,
-.is-dark .l-card.is-primary {
-  background: rgb(65, 185, 131);
-  border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .r-card-advanced,
@@ -7700,15 +7695,11 @@ body.opened {
 .collapse.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .collapse .collapse-header .collapse-icon {
   background: rgb(255, 255, 255);
-}
-
-.is-dark .collapse.is-primary {
-  background: rgb(65, 185, 131);
-  border-color: rgb(65, 185, 131);
 }
 
 .image-accordion ul li div a {
@@ -8457,6 +8448,7 @@ body.opened {
 .datatable-toolbar .field .control .button:hover {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .dataTable-wrapper .dataTable-top .dataTable-dropdown label::after {
@@ -8799,6 +8791,7 @@ body.opened {
 .gauge-widget.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .gauge-widget.is-straight {
@@ -8808,11 +8801,7 @@ body.opened {
 .gauge-widget.is-straight.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
-}
-
-.is-dark .gauge-widget.is-primary {
-  background: rgb(65, 185, 131);
-  border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .icon-toolbar-widget {
@@ -8822,6 +8811,7 @@ body.opened {
 .icon-toolbar-widget.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .icon-toolbar-widget.is-straight {
@@ -8831,15 +8821,11 @@ body.opened {
 .icon-toolbar-widget.is-straight.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .icon-toolbar-widget .icon-toolbar .toolbar-icon .inner-icon.is-active {
   color: rgb(65, 185, 131);
-}
-
-.is-dark .icon-toolbar-widget.is-primary {
-  background: rgb(65, 185, 131);
-  border-color: rgb(65, 185, 131);
 }
 
 .is-dark .icon-toolbar-widget .icon-toolbar .toolbar-icon .inner-icon.is-active {
@@ -8853,6 +8839,7 @@ body.opened {
 .text-widget.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .text-widget.is-straight {
@@ -8862,15 +8849,11 @@ body.opened {
 .text-widget.is-straight.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .text-widget .widget-content .hashtags a {
   color: rgb(65, 185, 131);
-}
-
-.is-dark .text-widget.is-primary {
-  background: rgb(65, 185, 131);
-  border-color: rgb(65, 185, 131);
 }
 
 .is-dark .text-widget .hashtags a {
@@ -8884,6 +8867,7 @@ body.opened {
 .tags-widget.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .tags-widget.is-straight {
@@ -8893,11 +8877,7 @@ body.opened {
 .tags-widget.is-straight.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
-}
-
-.is-dark .tags-widget.is-primary {
-  background: rgb(65, 185, 131);
-  border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .calendar-widget .calendar-widget-inner .calendar-square {
@@ -8907,11 +8887,7 @@ body.opened {
 .calendar-widget .calendar-widget-inner .calendar-square.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
-}
-
-.is-dark .calendar-widget .calendar-widget-inner .calendar-square.is-primary {
-  background: rgb(65, 185, 131);
-  border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .image-widget {
@@ -8921,6 +8897,7 @@ body.opened {
 .image-widget.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .image-widget.is-straight {
@@ -8930,11 +8907,7 @@ body.opened {
 .image-widget.is-straight.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
-}
-
-.is-dark .image-widget.is-primary {
-  background: rgb(65, 185, 131);
-  border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .list-widget {
@@ -8944,6 +8917,7 @@ body.opened {
 .list-widget.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .list-widget.is-straight {
@@ -8953,6 +8927,7 @@ body.opened {
 .list-widget.is-straight.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .list-widget ul li a:hover {
@@ -8970,6 +8945,7 @@ body.opened {
 .picker-widget.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .picker-widget.is-straight {
@@ -8979,6 +8955,7 @@ body.opened {
 .picker-widget.is-straight.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .picker-widget .calendar thead,
@@ -8992,11 +8969,6 @@ body.opened {
 
 .picker-widget .current-day {
   color: rgb(65, 185, 131);
-}
-
-.is-dark .picker-widget.is-primary {
-  background: rgb(65, 185, 131);
-  border-color: rgb(65, 185, 131);
 }
 
 .is-dark .picker-widget .calendar thead,
@@ -9019,6 +8991,7 @@ body.opened {
 .stats-widget.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .stats-widget.is-straight {
@@ -9028,15 +9001,11 @@ body.opened {
 .stats-widget.is-straight.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .stats-widget .stat-number span:first-child svg {
   color: rgb(6, 214, 158);
-}
-
-.is-dark .stats-widget.is-primary {
-  background: rgb(65, 185, 131);
-  border-color: rgb(65, 185, 131);
 }
 
 .search-widget {
@@ -9046,6 +9015,7 @@ body.opened {
 .search-widget.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .search-widget.is-straight {
@@ -9055,6 +9025,7 @@ body.opened {
 .search-widget.is-straight.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .search-widget .field .control .input:focus {
@@ -9068,11 +9039,6 @@ body.opened {
 
 .search-widget .field .topics a:hover {
   color: rgb(65, 185, 131);
-}
-
-.is-dark .search-widget.is-primary {
-  background: rgb(65, 185, 131);
-  border-color: rgb(65, 185, 131);
 }
 
 .is-dark .search-widget .field .control .searcv-button {
@@ -9090,6 +9056,7 @@ body.opened {
 .icon-list-widget.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .icon-list-widget.is-straight {
@@ -9099,16 +9066,12 @@ body.opened {
 .icon-list-widget.is-straight.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .icon-list-widget .icon-list .icon-list-item:hover .icon-wrap {
   background: rgb(65, 185, 131);
   color: rgb(255, 255, 255);
-}
-
-.is-dark .icon-list-widget.is-primary {
-  background: rgb(65, 185, 131);
-  border-color: rgb(65, 185, 131);
 }
 
 .video-widget {
@@ -9118,6 +9081,7 @@ body.opened {
 .video-widget.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .video-widget.is-straight {
@@ -9127,15 +9091,11 @@ body.opened {
 .video-widget.is-straight.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .video-widget .widget-content .widget-meta > svg {
   color: rgb(65, 185, 131);
-}
-
-.is-dark .video-widget.is-primary {
-  background: rgb(65, 185, 131);
-  border-color: rgb(65, 185, 131);
 }
 
 .is-dark .video-widget .widget-meta > svg {
@@ -9149,6 +9109,7 @@ body.opened {
 .inbox-widget.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .inbox-widget.is-straight {
@@ -9158,15 +9119,11 @@ body.opened {
 .inbox-widget.is-straight.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .inbox-widget .sender-block .exerpt h5 {
   color: rgb(65, 185, 131);
-}
-
-.is-dark .inbox-widget.is-primary {
-  background: rgb(65, 185, 131);
-  border-color: rgb(65, 185, 131);
 }
 
 .is-dark .inbox-widget .exerpt h5 {
@@ -9180,6 +9137,7 @@ body.opened {
 .illustration-widget.illustration-widget-v1.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .illustration-widget.illustration-widget-v1.is-straight {
@@ -9189,6 +9147,7 @@ body.opened {
 .illustration-widget.illustration-widget-v1.is-straight.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .illustration-widget.illustration-widget-v2 {
@@ -9198,6 +9157,7 @@ body.opened {
 .illustration-widget.illustration-widget-v2.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .illustration-widget.illustration-widget-v2.is-straight {
@@ -9207,6 +9167,7 @@ body.opened {
 .illustration-widget.illustration-widget-v2.is-straight.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .illustration-widget.illustration-widget-v3 {
@@ -9216,6 +9177,7 @@ body.opened {
 .illustration-widget.illustration-widget-v3.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .illustration-widget.illustration-widget-v3.is-straight {
@@ -9225,11 +9187,7 @@ body.opened {
 .illustration-widget.illustration-widget-v3.is-straight.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
-}
-
-.is-dark .illustration-widget.is-primary {
-  background: rgb(65, 185, 131);
-  border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .creative-list-widget {
@@ -9239,6 +9197,7 @@ body.opened {
 .creative-list-widget.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .creative-list-widget.is-straight {
@@ -9248,11 +9207,7 @@ body.opened {
 .creative-list-widget.is-straight.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
-}
-
-.is-dark .creative-list-widget.is-primary {
-  background: rgb(65, 185, 131);
-  border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .social-buttons-widget {
@@ -9262,6 +9217,7 @@ body.opened {
 .social-buttons-widget.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .social-buttons-widget.is-straight {
@@ -9271,11 +9227,7 @@ body.opened {
 .social-buttons-widget.is-straight.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
-}
-
-.is-dark .social-buttons-widget.is-primary {
-  background: rgb(65, 185, 131);
-  border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .call-widget {
@@ -9285,6 +9237,7 @@ body.opened {
 .call-widget.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .call-widget.is-straight {
@@ -9294,14 +9247,10 @@ body.opened {
 .call-widget.is-straight.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .call-widget .actions .action:hover {
-  background: rgb(65, 185, 131);
-  border-color: rgb(65, 185, 131);
-}
-
-.is-dark .call-widget.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
 }
@@ -9318,6 +9267,7 @@ body.opened {
 .avatar-list-widget.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .avatar-list-widget.is-straight {
@@ -9327,6 +9277,7 @@ body.opened {
 .avatar-list-widget.is-straight.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .avatar-list-widget .field .control .input:focus {
@@ -9336,11 +9287,6 @@ body.opened {
 .avatar-list-widget .field .control .searcv-button {
   background: rgb(65, 185, 131);
   color: rgb(255, 255, 255);
-}
-
-.is-dark .avatar-list-widget.is-primary {
-  background: rgb(65, 185, 131);
-  border-color: rgb(65, 185, 131);
 }
 
 .is-dark .avatar-list-widget .field .control .searcv-button {
@@ -9358,6 +9304,7 @@ body.opened {
 .contact-widget.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .contact-widget.is-straight {
@@ -9367,15 +9314,11 @@ body.opened {
 .contact-widget.is-straight.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .contact-widget .widget-content .right .company span {
   color: rgb(65, 185, 131);
-}
-
-.is-dark .contact-widget.is-primary {
-  background: rgb(65, 185, 131);
-  border-color: rgb(65, 185, 131);
 }
 
 .is-dark .contact-widget .widget-content .right .company span:first-child {
@@ -9389,6 +9332,7 @@ body.opened {
 .followers-widget.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .followers-widget.is-straight {
@@ -9398,11 +9342,7 @@ body.opened {
 .followers-widget.is-straight.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
-}
-
-.is-dark .followers-widget.is-primary {
-  background: rgb(65, 185, 131);
-  border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .cart-widget {
@@ -9412,6 +9352,7 @@ body.opened {
 .cart-widget.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .cart-widget.is-straight {
@@ -9421,11 +9362,7 @@ body.opened {
 .cart-widget.is-straight.is-primary {
   background: rgb(65, 185, 131);
   border-color: rgb(65, 185, 131);
-}
-
-.is-dark .cart-widget.is-primary {
-  background: rgb(65, 185, 131);
-  border-color: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }
 
 .is-dark .cart-widget .cart-items .cart-item .meta span:nth-child(2) {
@@ -9446,4 +9383,5 @@ body.opened {
 
 .is-dark .menu-toggle i {
   background: rgb(65, 185, 131);
+  color: rgb(255, 255, 255);
 }

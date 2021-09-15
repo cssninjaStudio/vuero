@@ -1,7 +1,7 @@
 export const users = [
   {
     id: 29,
-    avatar: '/demo/avatars/29.jpg',
+    picture: '/demo/avatars/29.jpg',
     badge: '/images/icons/stacks/python.svg',
     username: 'Hakeem C.',
     initials: 'HC',
@@ -12,7 +12,7 @@ export const users = [
   },
   {
     id: 21,
-    avatar: '/demo/avatars/21.jpg',
+    picture: '/demo/avatars/21.jpg',
     badge: '/images/icons/flags/england.svg',
     username: 'Elisabeth F.',
     initials: 'EF',
@@ -23,7 +23,7 @@ export const users = [
   },
   {
     id: 8,
-    avatar: '/demo/avatars/8.jpg',
+    picture: '/demo/avatars/8.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Erik K.',
     initials: 'EK',
@@ -34,7 +34,7 @@ export const users = [
   },
   {
     id: 7,
-    avatar: '/demo/avatars/7.jpg',
+    picture: '/demo/avatars/7.jpg',
     badge: '/images/icons/stacks/js.svg',
     username: 'Alice C.',
     initials: 'AC',
@@ -45,7 +45,7 @@ export const users = [
   },
   {
     id: 122,
-    avatar: null,
+    picture: undefined,
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Betty T.',
     initials: 'BT',
@@ -56,7 +56,7 @@ export const users = [
   },
   {
     id: 23,
-    avatar: '/demo/avatars/23.jpg',
+    picture: '/demo/avatars/23.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Irina V.',
     initials: 'IV',
@@ -67,7 +67,7 @@ export const users = [
   },
   {
     id: 37,
-    avatar: '/demo/avatars/37.jpg',
+    picture: '/demo/avatars/37.jpg',
     badge: '/images/icons/flags/france.svg',
     username: 'Helmut F.',
     initials: 'HF',
@@ -78,7 +78,7 @@ export const users = [
   },
   {
     id: 25,
-    avatar: '/demo/avatars/25.jpg',
+    picture: '/demo/avatars/25.jpg',
     badge: '/images/icons/stacks/js.svg',
     username: 'Melany W.',
     initials: 'MW',
@@ -89,7 +89,7 @@ export const users = [
   },
   {
     id: 39,
-    avatar: '/demo/avatars/39.jpg',
+    picture: '/demo/avatars/39.jpg',
     badge: '/images/icons/stacks/python.svg',
     username: 'Alejandro B.',
     initials: 'AB',
@@ -100,7 +100,7 @@ export const users = [
   },
   {
     id: 19,
-    avatar: '/demo/avatars/19.jpg',
+    picture: '/demo/avatars/19.jpg',
     badge: '/images/icons/flags/germany.svg',
     username: 'Greta K.',
     initials: 'GK',
@@ -111,7 +111,7 @@ export const users = [
   },
   {
     id: 9,
-    avatar: '/demo/avatars/9.jpg',
+    picture: '/demo/avatars/9.jpg',
     badge: '/images/icons/stacks/illustrator.svg',
     username: 'Anna B.',
     initials: 'AB',
@@ -122,7 +122,7 @@ export const users = [
   },
   {
     id: 124,
-    avatar: null,
+    picture: undefined,
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Alan T.',
     initials: 'AT',
@@ -133,7 +133,7 @@ export const users = [
   },
   {
     id: 120,
-    avatar: null,
+    picture: undefined,
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Sara C.',
     initials: 'SC',
@@ -144,7 +144,7 @@ export const users = [
   },
   {
     id: 32,
-    avatar: '/demo/avatars/32.jpg',
+    picture: '/demo/avatars/32.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Jonathan K.',
     initials: 'JK',
@@ -155,7 +155,7 @@ export const users = [
   },
   {
     id: 36,
-    avatar: '/demo/avatars/36.jpg',
+    picture: '/demo/avatars/36.jpg',
     badge: '/images/icons/stacks/reactjs.svg',
     username: 'Benoit B.',
     initials: 'BB',
@@ -166,7 +166,7 @@ export const users = [
   },
   {
     id: 38,
-    avatar: '/demo/avatars/38.jpg',
+    picture: '/demo/avatars/38.jpg',
     badge: '/images/icons/stacks/vuejs.svg',
     username: 'Christie B.',
     initials: 'CB',
@@ -177,7 +177,7 @@ export const users = [
   },
   {
     id: 26,
-    avatar: '/demo/avatars/26.jpg',
+    picture: '/demo/avatars/26.jpg',
     badge: '/images/icons/stacks/html5.svg',
     username: 'Courtney W.',
     initials: 'CW',
@@ -188,7 +188,7 @@ export const users = [
   },
   {
     id: 16,
-    avatar: '/demo/avatars/16.jpg',
+    picture: '/demo/avatars/16.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Jason G.',
     initials: 'JG',
@@ -199,7 +199,7 @@ export const users = [
   },
   {
     id: 28,
-    avatar: '/demo/avatars/28.jpg',
+    picture: '/demo/avatars/28.jpg',
     badge: '/images/icons/stacks/angular.svg',
     username: 'Edouard F.',
     initials: 'EF',
@@ -210,7 +210,7 @@ export const users = [
   },
   {
     id: 22,
-    avatar: '/demo/avatars/22.jpg',
+    picture: '/demo/avatars/22.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Dwayne H.',
     initials: 'DH',
@@ -221,7 +221,7 @@ export const users = [
   },
   {
     id: 13,
-    avatar: '/demo/avatars/13.jpg',
+    picture: '/demo/avatars/13.jpg',
     badge: '/images/icons/stacks/illustrator.svg',
     username: 'Tara S.',
     initials: 'TS',
@@ -232,7 +232,7 @@ export const users = [
   },
   {
     id: 24,
-    avatar: '/demo/avatars/24.jpg',
+    picture: '/demo/avatars/24.jpg',
     badge: '/images/icons/flags/france.svg',
     username: 'Sandrine C.',
     initials: 'SC',
@@ -243,7 +243,7 @@ export const users = [
   },
   {
     id: 27,
-    avatar: '/demo/avatars/27.jpg',
+    picture: '/demo/avatars/27.jpg',
     badge: '/images/icons/flags/spain.svg',
     username: 'Carmen E.',
     initials: 'CE',
@@ -254,7 +254,7 @@ export const users = [
   },
   {
     id: 11,
-    avatar: '/demo/avatars/11.jpg',
+    picture: '/demo/avatars/11.jpg',
     badge: '/images/icons/flags/england.svg',
     username: 'Kelly M.',
     initials: 'KM',
@@ -265,7 +265,7 @@ export const users = [
   },
   {
     id: 15,
-    avatar: '/demo/avatars/15.jpg',
+    picture: '/demo/avatars/15.jpg',
     badge: '/images/icons/flags/germany.svg',
     username: 'Hilde V.',
     initials: 'HV',
@@ -276,7 +276,7 @@ export const users = [
   },
   {
     id: 14,
-    avatar: '/demo/avatars/14.jpg',
+    picture: '/demo/avatars/14.jpg',
     badge: '/images/icons/flags/england.svg',
     username: 'Ryan B.',
     initials: 'RB',
@@ -287,7 +287,7 @@ export const users = [
   },
   {
     id: 10,
-    avatar: '/demo/avatars/10.jpg',
+    picture: '/demo/avatars/10.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Henry G.',
     initials: 'HG',
@@ -298,7 +298,7 @@ export const users = [
   },
   {
     id: 18,
-    avatar: '/demo/avatars/18.jpg',
+    picture: '/demo/avatars/18.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Esteban C.',
     initials: 'EC',

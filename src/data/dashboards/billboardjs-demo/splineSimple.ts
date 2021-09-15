@@ -1,7 +1,8 @@
+import type { ChartOptions } from 'billboard.js'
 import { themeColors } from '/@src/utils/themeColors'
 import { spline } from 'billboard.js'
 
-export const options = {
+export const options: ChartOptions = {
   data: {
     columns: [
       ['data1', 30, 200, 100, 400, 150, 250],
@@ -23,7 +24,7 @@ export const options = {
   },
   title: {
     text: 'Spline Chart',
-    position: 'top-left',
+    position: 'left',
     padding: {
       bottom: 20,
       right: 20,

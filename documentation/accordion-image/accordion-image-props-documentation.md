@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-AccordionImage Props
+### VAccordionImage Props
 
-Here is the full props available for `<V-AccordionImage />` component:
+Here is the full props available for `<VAccordionImage />` component:
 
 | Props                  | Default                                       | Type                                                                                                              |
 | ---------------------- | --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |

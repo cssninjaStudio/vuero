@@ -31,15 +31,15 @@ const filteredData = computed(() => {
 
 <template>
   <div class="list-view-toolbar">
-    <V-Field>
-      <V-Control icon="feather:search">
+    <VField>
+      <VControl icon="feather:search">
         <input
           v-model="filters"
           class="input custom-text-filter"
           placeholder="Search..."
         />
-      </V-Control>
-    </V-Field>
+      </VControl>
+    </VField>
 
     <div class="tabs-inner">
       <div class="tabs">
@@ -60,7 +60,7 @@ const filteredData = computed(() => {
     <!--List-->
     <div class="list-view list-view-v2">
       <!--List Empty Search Placeholder -->
-      <V-PlaceholderPage
+      <VPlaceholderPage
         :class="[filteredData.length !== 0 && 'is-hidden']"
         title="We couldn't find any matching results."
         subtitle="Too bad. Looks like we couldn't find any matching results for the
@@ -71,16 +71,16 @@ const filteredData = computed(() => {
         <template #image>
           <img
             class="light-image"
-            src="/@src/assets/illustrations/placeholders/search-2.svg?url"
+            src="/@src/assets/illustrations/placeholders/search-2.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/@src/assets/illustrations/placeholders/search-2-dark.svg?url"
+            src="/@src/assets/illustrations/placeholders/search-2-dark.svg"
             alt=""
           />
         </template>
-      </V-PlaceholderPage>
+      </VPlaceholderPage>
 
       <!--Active Tab-->
       <div
@@ -222,8 +222,8 @@ const filteredData = computed(() => {
                 </div>
                 <div class="meta-right">
                   <div class="buttons">
-                    <V-Button light>More Info</V-Button>
-                    <V-Button color="primary" raised>Book Now</V-Button>
+                    <VButton light>More Info</VButton>
+                    <VButton color="primary" raised>Book Now</VButton>
                   </div>
                 </div>
               </div>
@@ -231,7 +231,7 @@ const filteredData = computed(() => {
           </transition-group>
         </div>
 
-        <V-FlexPagination
+        <VFlexPagination
           v-if="filteredData.length > 5"
           :item-per-page="10"
           :total-items="873"
@@ -248,7 +248,7 @@ const filteredData = computed(() => {
       >
         <div class="list-view-inner">
           <!--Empty placeholder-->
-          <V-PlaceholderPage
+          <VPlaceholderPage
             title="There are no inactive properties."
             subtitle="Looks like there are no inactive properties to display. You can
                 disable and also enable a property from the property settings."
@@ -257,16 +257,16 @@ const filteredData = computed(() => {
             <template #image>
               <img
                 class="light-image"
-                src="/@src/assets/illustrations/placeholders/having-coffee.svg?url"
+                src="/@src/assets/illustrations/placeholders/having-coffee.svg"
                 alt=""
               />
               <img
                 class="dark-image"
-                src="/@src/assets/illustrations/placeholders/having-coffee-dark.svg?url"
+                src="/@src/assets/illustrations/placeholders/having-coffee-dark.svg"
                 alt=""
               />
             </template>
-          </V-PlaceholderPage>
+          </VPlaceholderPage>
         </div>
       </div>
     </div>

@@ -60,22 +60,22 @@ const onSave = async () => {
         </div>
         <div class="right">
           <div class="buttons">
-            <V-Button
+            <VButton
               :to="{ name: 'sidebar-layouts-profile-view' }"
               icon="lnir lnir-arrow-left rem-100"
               light
               dark-outlined
             >
               Go Back
-            </V-Button>
-            <V-Button
+            </VButton>
+            <VButton
               color="primary"
               raised
               :loading="isLoading"
               @click="onSave"
             >
               Save Changes
-            </V-Button>
+            </VButton>
           </div>
         </div>
       </div>
@@ -88,7 +88,7 @@ const onSave = async () => {
           <p>This is how others will recognize you</p>
         </div>
 
-        <V-Avatar size="xl" class="profile-v-avatar">
+        <VAvatar size="xl" class="profile-v-avatar">
           <template #avatar>
             <img
               v-if="!isUploading"
@@ -97,7 +97,7 @@ const onSave = async () => {
               alt=""
               @error.once="(event) => useViaPlaceholderError(event, '150x150')"
             />
-            <V-FilePond
+            <VFilePond
               v-else
               class="profile-filepond"
               name="profile_filepond"
@@ -116,14 +116,14 @@ const onSave = async () => {
               @addfile="onAddFile"
               @removefile="onRemoveFile"
             />
-            <V-IconButton
+            <VIconButton
               v-if="!isUploading"
               icon="feather:edit-2"
               class="edit-button is-edit"
               circle
               @click="isUploading = true"
             />
-            <V-IconButton
+            <VIconButton
               v-else
               icon="feather:arrow-left"
               class="edit-button is-back"
@@ -131,7 +131,7 @@ const onSave = async () => {
               @click="isUploading = false"
             />
           </template>
-        </V-Avatar>
+        </VAvatar>
       </div>
 
       <!--Fieldset-->
@@ -144,60 +144,60 @@ const onSave = async () => {
         <div class="columns is-multiline">
           <!--Field-->
           <div class="column is-6">
-            <V-Field>
-              <V-Control icon="feather:user">
+            <VField>
+              <VControl icon="feather:user">
                 <input
                   type="text"
                   class="input"
                   placeholder="First Name"
                   autocomplete="given-name"
                 />
-              </V-Control>
-            </V-Field>
+              </VControl>
+            </VField>
           </div>
           <!--Field-->
           <div class="column is-6">
-            <V-Field>
-              <V-Control icon="feather:user">
+            <VField>
+              <VControl icon="feather:user">
                 <input
                   type="text"
                   class="input"
                   placeholder="Last Name"
                   autocomplete="family-name"
                 />
-              </V-Control>
-            </V-Field>
+              </VControl>
+            </VField>
           </div>
           <!--Field-->
           <div class="column is-12">
-            <V-Field>
-              <V-Control icon="feather:briefcase">
+            <VField>
+              <VControl icon="feather:briefcase">
                 <input
                   type="text"
                   class="input"
                   placeholder="Job Title"
                   autocomplete="organization-title"
                 />
-              </V-Control>
-            </V-Field>
+              </VControl>
+            </VField>
           </div>
           <!--Field-->
           <div class="column is-12">
-            <V-Field>
-              <V-Control icon="feather:map-pin">
+            <VField>
+              <VControl icon="feather:map-pin">
                 <input
                   type="text"
                   class="input"
                   placeholder="Location"
                   autocomplete="country-name"
                 />
-              </V-Control>
-            </V-Field>
+              </VControl>
+            </VField>
           </div>
           <!--Field-->
           <div class="column is-12">
-            <V-Field>
-              <V-Control>
+            <VField>
+              <VControl>
                 <textarea
                   class="textarea"
                   rows="4"
@@ -206,8 +206,8 @@ const onSave = async () => {
                   autocapitalize="off"
                   spellcheck="true"
                 ></textarea>
-              </V-Control>
-            </V-Field>
+              </VControl>
+            </VField>
           </div>
         </div>
       </div>
@@ -221,8 +221,8 @@ const onSave = async () => {
         <div class="columns is-multiline">
           <!--Field-->
           <div class="column is-6">
-            <V-Field>
-              <V-Control>
+            <VField>
+              <VControl>
                 <Multiselect
                   v-model="experience"
                   placeholder="Experience"
@@ -233,49 +233,49 @@ const onSave = async () => {
                     '10+ years',
                   ]"
                 />
-              </V-Control>
-            </V-Field>
+              </VControl>
+            </VField>
           </div>
           <!--Field-->
           <div class="column is-6">
-            <V-Field>
-              <V-Control>
+            <VField>
+              <VControl>
                 <Multiselect
                   v-model="firstJob"
                   placeholder="Is this your first job?"
                   :options="['Yes', 'No']"
                 />
-              </V-Control>
-            </V-Field>
+              </VControl>
+            </VField>
           </div>
           <!--Field-->
           <div class="column is-6">
-            <V-Field>
-              <V-Control>
+            <VField>
+              <VControl>
                 <Multiselect
                   v-model="flexibility"
                   placeholder="Are you flexible?"
                   :options="['Yes', 'No']"
                 />
-              </V-Control>
-            </V-Field>
+              </VControl>
+            </VField>
           </div>
           <!--Field-->
           <div class="column is-6">
-            <V-Field>
-              <V-Control>
+            <VField>
+              <VControl>
                 <Multiselect
                   v-model="remote"
                   placeholder="Do you work remotely?"
                   :options="['Yes', 'No']"
                 />
-              </V-Control>
-            </V-Field>
+              </VControl>
+            </VField>
           </div>
           <!--Field-->
           <div class="column is-12">
-            <V-Field>
-              <V-Control>
+            <VField>
+              <VControl>
                 <Multiselect
                   v-model="skills"
                   mode="tags"
@@ -284,8 +284,8 @@ const onSave = async () => {
                   :options="skillsOptions"
                   placeholder="Add tags"
                 />
-              </V-Control>
-            </V-Field>
+              </VControl>
+            </VField>
           </div>
         </div>
       </div>
@@ -299,81 +299,81 @@ const onSave = async () => {
         <div class="columns is-multiline">
           <!--Field-->
           <div class="column is-6">
-            <V-Field>
-              <V-Control icon="fab fa-facebook-f">
+            <VField>
+              <VControl icon="fab fa-facebook-f">
                 <input
                   type="text"
                   class="input"
                   placeholder="Facebook URL"
                   inputmode="url"
                 />
-              </V-Control>
-            </V-Field>
+              </VControl>
+            </VField>
           </div>
           <!--Field-->
           <div class="column is-6">
-            <V-Field>
-              <V-Control icon="fab fa-twitter">
+            <VField>
+              <VControl icon="fab fa-twitter">
                 <input
                   type="text"
                   class="input"
                   placeholder="Twitter URL"
                   inputmode="url"
                 />
-              </V-Control>
-            </V-Field>
+              </VControl>
+            </VField>
           </div>
           <!--Field-->
           <div class="column is-6">
-            <V-Field>
-              <V-Control icon="fab fa-dribbble">
+            <VField>
+              <VControl icon="fab fa-dribbble">
                 <input
                   type="text"
                   class="input"
                   placeholder="Dribbble URL"
                   inputmode="url"
                 />
-              </V-Control>
-            </V-Field>
+              </VControl>
+            </VField>
           </div>
           <!--Field-->
           <div class="column is-6">
-            <V-Field>
-              <V-Control icon="fab fa-instagram">
+            <VField>
+              <VControl icon="fab fa-instagram">
                 <input
                   type="text"
                   class="input"
                   placeholder="Instagram URL"
                   inputmode="url"
                 />
-              </V-Control>
-            </V-Field>
+              </VControl>
+            </VField>
           </div>
           <!--Field-->
           <div class="column is-6">
-            <V-Field>
-              <V-Control icon="fab fa-github">
+            <VField>
+              <VControl icon="fab fa-github">
                 <input
                   type="text"
                   class="input"
                   placeholder="Github URL"
                   inputmode="url"
                 />
-              </V-Control>
-            </V-Field>
+              </VControl>
+            </VField>
           </div>
           <!--Field-->
           <div class="column is-6">
-            <V-Field>
-              <V-Control icon="fab fa-gitlab">
+            <VField>
+              <VControl icon="fab fa-gitlab">
                 <input
                   type="text"
                   class="input"
                   placeholder="Gitlab URL"
                   inputmode="url"
                 />
-              </V-Control>
-            </V-Field>
+              </VControl>
+            </VField>
           </div>
         </div>
       </div>

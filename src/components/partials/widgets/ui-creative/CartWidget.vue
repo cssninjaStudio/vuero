@@ -12,11 +12,7 @@ const props = defineProps<{
         <h3>Your Cart</h3>
       </div>
       <div class="right">
-        <V-Tag
-          :label="props.products.length + ' items'"
-          color="orange"
-          curved
-        />
+        <VTag :label="props.products.length + ' items'" color="orange" curved />
       </div>
     </div>
     <div class="cart-items">
@@ -25,7 +21,7 @@ const props = defineProps<{
         :key="product.id"
         class="cart-item"
       >
-        <V-Avatar :picture="product.picture" size="large" squared />
+        <VAvatar :picture="product.picture" size="large" squared />
         <div class="meta">
           <span class="text">{{ product.name }}</span>
           <span class="price">${{ product.price }}</span>

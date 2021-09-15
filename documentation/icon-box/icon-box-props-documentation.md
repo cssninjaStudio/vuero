@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-IconBox Props
+### VIconBox Props
 
-Here is the full props available for `<V-IconBox />` component:
+Here is the full props available for `<VIconBox />` component:
 
 | Props    | Default                                       | Type                                                                                                    |
 | -------- | --------------------------------------------- | ------------------------------------------------------------------------------------------------------- |

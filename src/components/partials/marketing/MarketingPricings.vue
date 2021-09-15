@@ -12,7 +12,7 @@
         <!--Pricing plan-->
         <div class="pricing-plan">
           <div class="name">Free</div>
-          <img src="/images/logos/logo/logo-platinum.svg?url" alt="" />
+          <img src="/images/logos/logo/logo-platinum.svg" alt="" />
           <div class="price">$0</div>
           <div class="trial">Forever free</div>
           <hr />
@@ -35,7 +35,7 @@
         <!--Pricing plan-->
         <div class="pricing-plan">
           <div class="name">Business</div>
-          <img src="/images/logos/logo/logo-accent.svg?url" alt="" />
+          <img src="/images/logos/logo/logo-accent.svg" alt="" />
           <div class="price">$49</div>
           <div class="trial">Free 14 day trial</div>
           <hr />
@@ -58,7 +58,7 @@
         <!--Pricing plan-->
         <div class="pricing-plan is-featured">
           <div class="name">Pro</div>
-          <img src="/images/logos/logo/logo.svg?url" alt="" />
+          <img src="/images/logos/logo/logo.svg" alt="" />
           <div class="price">$119</div>
           <div class="trial">Free 14 day trial</div>
           <hr />
@@ -89,7 +89,7 @@
         </div>
         <div class="head-action">
           <div class="buttons">
-            <V-Button
+            <VButton
               class="action-button"
               color="primary"
               rounded
@@ -97,7 +97,7 @@
               href="https://docs.cssninja.io/vuero"
             >
               Read the Docs
-            </V-Button>
+            </VButton>
             <a
               href="https://cssninja.io"
               target="_blank"

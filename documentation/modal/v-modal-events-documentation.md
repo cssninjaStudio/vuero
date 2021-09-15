@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-Modal Events
+### VModal Events
 
-Here is the full events available for `<V-Modal />` component:
+Here is the full events available for `<VModal />` component:
 
 | Event  | Callback                                      | Description                        |
 | ------ | --------------------------------------------- | ---------------------------------- |

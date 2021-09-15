@@ -12,12 +12,12 @@ useHead({
       <div class="error-inner has-text-centered">
         <img
           class="light-image"
-          src="/@src/assets/illustrations/placeholders/error-4.svg?url"
+          src="/@src/assets/illustrations/placeholders/error-4.svg"
           alt=""
         />
         <img
           class="dark-image"
-          src="/@src/assets/illustrations/placeholders/error-4-dark.svg?url"
+          src="/@src/assets/illustrations/placeholders/error-4-dark.svg"
           alt=""
         />
         <h3 class="dark-inverted">We couldn't find that page</h3>
@@ -26,9 +26,9 @@ useHead({
           administrator if the problem persists.
         </p>
         <div class="button-wrap">
-          <V-Button color="primary" elevated rounded @click="$router.go(-1)">
+          <VButton color="primary" elevated rounded @click="$router.go(-1)">
             Take me Back
-          </V-Button>
+          </VButton>
         </div>
       </div>
     </div>

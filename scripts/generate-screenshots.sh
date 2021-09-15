@@ -16,7 +16,7 @@ set -xe
 npx tsc ./cypress/fixtures/routes.ts
 npx tsc ./scripts/create-screenshot-data.ts
 
-yarn e2e
+yarn cypress run
 node ./scripts/create-screenshot-data.js
 ./scripts/convert-screenshot-webp.sh
 

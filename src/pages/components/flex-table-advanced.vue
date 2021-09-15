@@ -4,15 +4,15 @@ import { useHead } from '@vueuse/head'
 import { flexRowsAdvanced } from '/@src/data/documentation/table'
 import { pageTitle } from '/@src/state/sidebarLayoutState'
 
-pageTitle.value = 'V-FlexTable (Advanced)'
+pageTitle.value = 'VFlexTable (Advanced)'
 useHead({
-  title: 'V-FlexTable Advanced - Components - Vuero',
+  title: 'VFlexTable Advanced - Components - Vuero',
 })
 </script>
 
 <template>
   <div class="page-content-inner">
-    <V-Breadcrumb
+    <VBreadcrumb
       with-icons
       separator="bullet"
       :items="[
@@ -27,7 +27,7 @@ useHead({
           to: { name: 'components' },
         },
         {
-          label: 'V-FlexTable',
+          label: 'VFlexTable',
           to: { name: 'components-flex-table' },
         },
         {
@@ -45,20 +45,20 @@ useHead({
         <div class="flex-table-wrapper mt-4">
           <div class="flex-table-toolbar">
             <div class="left">
-              <V-Field>
-                <V-Control icon="feather:search">
+              <VField>
+                <VControl icon="feather:search">
                   <input
                     type="text"
                     class="input is-rounded"
                     placeholder="Filter..."
                   />
-                </V-Control>
-              </V-Field>
+                </VControl>
+              </VField>
             </div>
 
             <div class="right">
-              <V-Field>
-                <V-Control>
+              <VField>
+                <VControl>
                   <div class="select is-rounded">
                     <select>
                       <option selected>10 results per page</option>
@@ -67,13 +67,13 @@ useHead({
                       <option>100 results per page</option>
                     </select>
                   </div>
-                </V-Control>
-              </V-Field>
+                </VControl>
+              </VField>
             </div>
           </div>
 
-          <!--V-FlexTable-->
-          <V-FlexTable>
+          <!--VFlexTable-->
+          <VFlexTable>
             <template #header>
               <div class="flex-table-header">
                 <span class="is-grow">User</span>
@@ -85,13 +85,13 @@ useHead({
               </div>
             </template>
             <template #body>
-              <V-FlexTableRowMedia :rows="flexRowsAdvanced" />
+              <VFlexTableRowMedia :rows="flexRowsAdvanced" />
             </template>
-          </V-FlexTable>
+          </VFlexTable>
         </div>
 
         <!--Table Pagination-->
-        <V-FlexPagination
+        <VFlexPagination
           :item-per-page="10"
           :total-items="873"
           :current-page="42"

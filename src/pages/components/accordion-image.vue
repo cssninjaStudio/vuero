@@ -37,15 +37,15 @@ const data = [
   },
 ]
 
-pageTitle.value = 'V-AccordionImage'
+pageTitle.value = 'VAccordionImage'
 useHead({
-  title: 'V-AccordionImage - Components - Vuero',
+  title: 'VAccordionImage - Components - Vuero',
 })
 </script>
 
 <template>
   <div class="page-content-inner">
-    <V-Breadcrumb
+    <VBreadcrumb
       with-icons
       separator="bullet"
       :items="[
@@ -63,7 +63,7 @@ useHead({
           label: 'Accordions',
         },
         {
-          label: 'V-AccordionImage',
+          label: 'VAccordionImage',
           to: { name: 'components-accordion-image' },
         },
       ]"
@@ -75,7 +75,7 @@ useHead({
         <AccordionImageDocumentation />
       </div>
       <div class="column is-12">
-        <V-AccordionImage :items="data" />
+        <VAccordionImage :items="data" />
       </div>
       <div class="column is-12">
         <!--Props-->

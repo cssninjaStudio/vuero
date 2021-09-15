@@ -94,48 +94,48 @@ const emit = defineEmits(['close'])
         </li>
         <li>
           <RouterLink :to="{ name: 'elements-dropdown' }">
-            V-Dropdown
+            VDropdown
           </RouterLink>
         </li>
         <li>
-          <RouterLink :to="{ name: 'elements-loader' }">V-Loader</RouterLink>
+          <RouterLink :to="{ name: 'elements-loader' }">VLoader</RouterLink>
         </li>
         <li>
           <RouterLink :to="{ name: 'elements-placeload' }">
-            V-Placeload
-            <V-Tag label="v1.2" color="primary" outlined curved />
+            VPlaceload
+            <VTag label="v1.2" color="primary" outlined curved />
           </RouterLink>
         </li>
         <li>
           <RouterLink :to="{ name: 'elements-placeload-text' }">
-            V-PlaceloadText
-            <V-Tag label="v1.2" color="primary" outlined curved />
+            VPlaceloadText
+            <VTag label="v1.2" color="primary" outlined curved />
           </RouterLink>
         </li>
         <li>
           <RouterLink :to="{ name: 'elements-placeload-avatar' }">
-            V-PlaceloadAvatar
-            <V-Tag label="v1.2" color="primary" outlined curved />
+            VPlaceloadAvatar
+            <VTag label="v1.2" color="primary" outlined curved />
           </RouterLink>
         </li>
         <li>
           <RouterLink :to="{ name: 'elements-message' }">
-            V-Message
-            <V-Tag label="v1.1" color="primary" outlined curved />
+            VMessage
+            <VTag label="v1.1" color="primary" outlined curved />
           </RouterLink>
         </li>
         <li>
-          <RouterLink :to="{ name: 'elements-modal' }">V-Modal</RouterLink>
+          <RouterLink :to="{ name: 'elements-modal' }">VModal</RouterLink>
         </li>
         <li>
           <RouterLink :to="{ name: 'elements-progress' }">
-            V-Progress
+            VProgress
           </RouterLink>
         </li>
         <li>
           <RouterLink :to="{ name: 'elements-tooltip' }">
-            V-Tootlip
-            <V-Tag label="v1.1" color="primary" outlined curved />
+            VTootlip
+            <VTag label="v1.1" color="primary" outlined curved />
           </RouterLink>
         </li>
 
@@ -153,12 +153,12 @@ const emit = defineEmits(['close'])
           <ul>
             <li>
               <RouterLink :to="{ name: 'elements-button' }" class="is-submenu">
-                V-Button
+                VButton
               </RouterLink>
             </li>
             <li>
               <RouterLink :to="{ name: 'elements-action' }" class="is-submenu">
-                V-Action
+                VAction
               </RouterLink>
             </li>
             <li>
@@ -166,7 +166,7 @@ const emit = defineEmits(['close'])
                 :to="{ name: 'elements-icon-button' }"
                 class="is-submenu"
               >
-                V-IconButton
+                VIconButton
               </RouterLink>
             </li>
           </ul>
@@ -251,12 +251,12 @@ const emit = defineEmits(['close'])
             </li>
             <li>
               <RouterLink :to="{ name: 'elements-control' }" class="is-submenu">
-                V-Control
+                VControl
               </RouterLink>
             </li>
             <li>
               <RouterLink :to="{ name: 'elements-field' }" class="is-submenu">
-                V-Field
+                VField
               </RouterLink>
             </li>
           </ul>
@@ -283,7 +283,7 @@ const emit = defineEmits(['close'])
                   class="iconify"
                   data-icon="feather:circle"
                 ></i>
-                V-AnimatedCheckbox
+                VAnimatedCheckbox
               </RouterLink>
             </li>
             <li>
@@ -296,8 +296,8 @@ const emit = defineEmits(['close'])
                   class="iconify"
                   data-icon="feather:circle"
                 ></i>
-                V-Checkbox
-                <V-Tag label="v1.1" color="primary" outlined curved />
+                VCheckbox
+                <VTag label="v1.1" color="primary" outlined curved />
               </RouterLink>
             </li>
             <li>
@@ -307,8 +307,8 @@ const emit = defineEmits(['close'])
                   class="iconify"
                   data-icon="feather:circle"
                 ></i>
-                V-Radio
-                <V-Tag label="v1.1" color="primary" outlined curved />
+                VRadio
+                <VTag label="v1.1" color="primary" outlined curved />
               </RouterLink>
             </li>
             <li>
@@ -321,7 +321,7 @@ const emit = defineEmits(['close'])
                   class="iconify"
                   data-icon="feather:circle"
                 ></i>
-                V-SwitchBlock
+                VSwitchBlock
               </RouterLink>
             </li>
             <li>
@@ -334,8 +334,8 @@ const emit = defineEmits(['close'])
                   class="iconify"
                   data-icon="feather:circle"
                 ></i>
-                V-SwitchSegment
-                <V-Tag label="v1.1" color="primary" outlined curved />
+                VSwitchSegment
+                <VTag label="v1.1" color="primary" outlined curved />
               </RouterLink>
             </li>
           </ul>
@@ -363,7 +363,7 @@ const emit = defineEmits(['close'])
                   class="iconify"
                   data-icon="feather:circle"
                 ></i>
-                V-Calendar &amp; V-DatePicker
+                VCalendar &amp; VDatePicker
               </RouterLink>
             </li>
             <li>
@@ -376,7 +376,7 @@ const emit = defineEmits(['close'])
                   class="iconify"
                   data-icon="feather:circle"
                 ></i>
-                V-IMaskInput
+                VIMaskInput
               </RouterLink>
             </li>
             <li>
@@ -389,7 +389,7 @@ const emit = defineEmits(['close'])
                   class="iconify"
                   data-icon="feather:circle"
                 ></i>
-                V-FilePond
+                VFilePond
               </RouterLink>
             </li>
             <li>
@@ -402,7 +402,7 @@ const emit = defineEmits(['close'])
                   class="iconify"
                   data-icon="feather:circle"
                 ></i>
-                V-CreditCard
+                VCreditCard
               </RouterLink>
             </li>
 

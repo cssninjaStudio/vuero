@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-Tabs Props
+### VTabs Props
 
-Here is the full props available for `<V-Tabs />` component:
+Here is the full props available for `<VTabs />` component:
 
 | Props                 | Default                                       | Type                                                                                                            |
 | --------------------- | --------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |

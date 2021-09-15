@@ -6,7 +6,7 @@ state:
 ### Label
 
 You might have to add a label to your switches in some cases.
-If so, use the `V-SwitchSegment` component, which provides `labelTrue` and
+If so, use the `VSwitchSegment` component, which provides `labelTrue` and
 `labelFalse` attributes. See the code example for more details about usage.
 
 <!--code-->
@@ -19,16 +19,16 @@ const value = ref(true)
 </script>
 
 <template>
-  <V-Field grouped>
-    <V-Control>
-      <V-SwitchSegment
+  <VField grouped>
+    <VControl>
+      <VSwitchSegment
         v-model="value"
         label-true="ON"
         label-false="OFF"
         color="primary"
       />
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -36,15 +36,15 @@ const value = ref(true)
 
 <!--example-->
 
-<V-Field grouped>
-  <V-Control>
-    <V-SwitchSegment
+<VField grouped>
+  <VControl>
+    <VSwitchSegment
       v-model="frontmatter.state.value"
       label-true="ON"
       label-false="OFF"
       color="primary"
     />
-  </V-Control>
-</V-Field>
+  </VControl>
+</VField>
 
 <!--/example-->

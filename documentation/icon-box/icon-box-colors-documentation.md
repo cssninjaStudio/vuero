@@ -1,6 +1,6 @@
 ### Box colors
 
-The Vuero `<V-IconBox />` component can have different colors.
+The Vuero `<VIconBox />` component can have different colors.
 You can change the color by passing a value to the `color` prop.
 Available values are: `primary`, `info`, `success`, `warning`,
 `danger`, `purple`, `yellow`, `orange`, `green`, `red`, or `blue`.
@@ -9,39 +9,39 @@ Available values are: `primary`, `info`, `success`, `warning`,
 
 ```vue
 <template>
-  <V-IconBox size="medium" color="primary">
+  <VIconBox size="medium" color="primary">
     <i class="lnil lnil-vector-pen"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="info">
+  </VIconBox>
+  <VIconBox size="medium" color="info">
     <i class="lnil lnil-vector-pen"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="success">
+  </VIconBox>
+  <VIconBox size="medium" color="success">
     <i class="lnil lnil-vector-pen"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="warning">
+  </VIconBox>
+  <VIconBox size="medium" color="warning">
     <i class="lnil lnil-vector-pen"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="danger">
+  </VIconBox>
+  <VIconBox size="medium" color="danger">
     <i class="lnil lnil-vector-pen"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="purple">
+  </VIconBox>
+  <VIconBox size="medium" color="purple">
     <i class="lnil lnil-vector-pen"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="yellow">
+  </VIconBox>
+  <VIconBox size="medium" color="yellow">
     <i class="lnil lnil-vector-pen"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="orange">
+  </VIconBox>
+  <VIconBox size="medium" color="orange">
     <i class="lnil lnil-vector-pen"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="green">
+  </VIconBox>
+  <VIconBox size="medium" color="green">
     <i class="lnil lnil-vector-pen"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="red">
+  </VIconBox>
+  <VIconBox size="medium" color="red">
     <i class="lnil lnil-vector-pen"></i>
-  </V-IconBox>
-  <V-IconBox size="medium" color="blue">
+  </VIconBox>
+  <VIconBox size="medium" color="blue">
     <i class="lnil lnil-vector-pen"></i>
-  </V-IconBox>
+  </VIconBox>
 </template>
 ```
 
@@ -50,39 +50,39 @@ Available values are: `primary`, `info`, `success`, `warning`,
 <!--example-->
 
 <div class="icon-boxes">
-    <V-IconBox size="medium" color="primary">
+    <VIconBox size="medium" color="primary">
         <i class="lnil lnil-vector-pen"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="info">
+    </VIconBox>
+    <VIconBox size="medium" color="info">
         <i class="lnil lnil-vector-pen"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="success">
+    </VIconBox>
+    <VIconBox size="medium" color="success">
         <i class="lnil lnil-vector-pen"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="warning">
+    </VIconBox>
+    <VIconBox size="medium" color="warning">
         <i class="lnil lnil-vector-pen"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="danger">
+    </VIconBox>
+    <VIconBox size="medium" color="danger">
         <i class="lnil lnil-vector-pen"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="purple">
+    </VIconBox>
+    <VIconBox size="medium" color="purple">
         <i class="lnil lnil-vector-pen"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="yellow">
+    </VIconBox>
+    <VIconBox size="medium" color="yellow">
         <i class="lnil lnil-vector-pen"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="orange">
+    </VIconBox>
+    <VIconBox size="medium" color="orange">
         <i class="lnil lnil-vector-pen"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="green">
+    </VIconBox>
+    <VIconBox size="medium" color="green">
         <i class="lnil lnil-vector-pen"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="red">
+    </VIconBox>
+    <VIconBox size="medium" color="red">
         <i class="lnil lnil-vector-pen"></i>
-    </V-IconBox>
-    <V-IconBox size="medium" color="blue">
+    </VIconBox>
+    <VIconBox size="medium" color="blue">
         <i class="lnil lnil-vector-pen"></i>
-    </V-IconBox>
+    </VIconBox>
 </div>
 
 <!--/example-->

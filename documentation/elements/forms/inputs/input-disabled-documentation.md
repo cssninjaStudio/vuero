@@ -7,11 +7,11 @@ simply add the `disabled` atribute to the target input element.
 
 ```vue
 <template>
-  <V-Field>
-    <V-Control>
+  <VField>
+    <VControl>
       <input type="text" class="input" placeholder="Username" disabled />
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -19,15 +19,15 @@ simply add the `disabled` atribute to the target input element.
 
 <!--example-->
 
-<V-Field>
-  <V-Control>
+<VField>
+  <VControl>
     <input
         type="text"
         class="input"
         placeholder="Username"
         disabled
       />
-  </V-Control>
-</V-Field>
+  </VControl>
+</VField>
 
 <!--/example-->

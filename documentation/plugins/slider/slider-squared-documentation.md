@@ -5,7 +5,7 @@ state:
 
 ### Squared tooltip
 
-Use the `has-squared-tooltip` class on the `<V-Field />` component to show a
+Use the `has-squared-tooltip` class on the `<VField />` component to show a
 square shaped tooltip. Supports bigger values than the rounded tooltip.
 
 <!--code-->
@@ -18,11 +18,11 @@ const value = ref(0)
 </script>
 
 <template>
-  <V-Field class="has-squared-tooltip">
-    <V-Control>
+  <VField class="has-squared-tooltip">
+    <VControl>
       <Slider v-model="value" />
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -32,11 +32,11 @@ const value = ref(0)
 
 <div class="columns mt-2">
   <div class="column is-6">
-    <V-Field class="pt-5 px-4 has-squared-tooltip">
-      <V-Control>
+    <VField class="pt-5 px-4 has-squared-tooltip">
+      <VControl>
         <Slider v-model="frontmatter.state.value" />
-      </V-Control>
-    </V-Field>
+      </VControl>
+    </VField>
   </div>
 </div>
 

@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-IconButton Props
+### VIconButton Props
 
-Here is the full props available for `<V-IconButton />` component:
+Here is the full props available for `<VIconButton />` component:
 
 | Props                  | Default                                       | Type                                                       |
 | ---------------------- | --------------------------------------------- | ---------------------------------------------------------- |

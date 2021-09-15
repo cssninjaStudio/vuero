@@ -2,6 +2,11 @@
 import { computed, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
+import type {
+  VAvatarProps,
+  VAvatarColor,
+} from '/@src/components/base/avatar/VAvatar.vue'
+import type { UserPopover } from '/@src/models/users'
 import { popovers } from '/@src/data/users/userPopovers'
 import { pageTitle } from '/@src/state/navbarLayoutState'
 import { activePanel } from '/@src/state/activePanelState'
@@ -31,14 +36,6 @@ const isMobileSidebarOpen = ref(false)
 const activeMobileSubsidebar = ref('dashboard')
 const activeSubnav = ref<SubnavId>('closed')
 
-function toggleSubnav(subnav: SubnavId) {
-  if (activeSubnav.value === subnav) {
-    activeSubnav.value = 'closed'
-  } else {
-    activeSubnav.value = subnav
-  }
-}
-
 const filteredUsers = computed(() => {
   if (!filter.value) {
     return []
@@ -51,6 +48,22 @@ const filteredUsers = computed(() => {
     )
   })
 })
+
+function toggleSubnav(subnav: SubnavId) {
+  if (activeSubnav.value === subnav) {
+    activeSubnav.value = 'closed'
+  } else {
+    activeSubnav.value = subnav
+  }
+}
+
+function getAvatarData(user: UserPopover): VAvatarProps {
+  return {
+    picture: user.avatar,
+    initials: user.initials,
+    color: user.color as VAvatarColor,
+  }
+}
 
 watch(
   () => route.fullPath,
@@ -302,11 +315,7 @@ watch(
                   :key="user.id"
                   class="search-result"
                 >
-                  <V-Avatar
-                    :picture="user.avatar"
-                    :initials="user.initials"
-                    :color="user.color"
-                  />
+                  <VAvatar v-bind="getAvatarData(user)" />
                   <div class="meta">
                     <span>{{ user.username }}</span>
                     <span>{{ user.position }}</span>

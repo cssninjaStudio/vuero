@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-CardSocial Slots
+### VCardSocial Slots
 
-Here is the full slots available for `<V-CardSocial />` component:
+Here is the full slots available for `<VCardSocial />` component:
 
 | Slot     | Properties                          | Description       |
 | -------- | ----------------------------------- | ----------------- |

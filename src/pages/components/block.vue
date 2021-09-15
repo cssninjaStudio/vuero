@@ -8,15 +8,15 @@ import { pageTitle } from '/@src/state/sidebarLayoutState'
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-pageTitle.value = 'V-Block'
+pageTitle.value = 'VBlock'
 useHead({
-  title: 'V-Block - Components - Vuero',
+  title: 'VBlock - Components - Vuero',
 })
 </script>
 
 <template>
   <div class="page-content-inner">
-    <V-Breadcrumb
+    <VBreadcrumb
       with-icons
       separator="bullet"
       :items="[
@@ -31,7 +31,7 @@ useHead({
           to: { name: 'components' },
         },
         {
-          label: 'V-Block',
+          label: 'VBlock',
           to: { name: 'components-block' },
         },
       ]"
@@ -43,25 +43,25 @@ useHead({
         :class="[toc.length > 0 ? 'is-9' : 'is-12']"
         class="column doc-column"
       >
-        <!--V-Block base-->
+        <!--VBlock base-->
         <VBlockBaseDocumentation />
 
-        <!--V-Block icon-->
+        <!--VBlock icon-->
         <VBlockIconDocumentation />
 
-        <!--V-Block center-->
+        <!--VBlock center-->
         <VBlockCenterDocumentation />
 
-        <!--V-Block icon center-->
+        <!--VBlock icon center-->
         <VBlockIconCenterDocumentation />
 
-        <!--V-Block base responsive-->
+        <!--VBlock base responsive-->
         <VBlockBaseResponsiveDocumentation />
 
-        <!--V-Block center responsive-->
+        <!--VBlock center responsive-->
         <VBlockCenterResponsiveDocumentation />
 
-        <!--V-Block Props-->
+        <!--VBlock Props-->
         <VBlockPropsDocumentation />
       </div>
       <div v-if="toc.length" class="column is-3 toc-column">

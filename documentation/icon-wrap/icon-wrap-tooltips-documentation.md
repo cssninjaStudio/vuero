@@ -1,21 +1,21 @@
 ### Tooltips
 
-You can add the `v-tooltip` directive to `<V-IconWrap />` component.  
+You can add the `v-tooltip` directive to `<VIconWrap />` component.  
 See code for more details about usage.
 
 <!--code-->
 
 ```vue
 <template>
-  <V-Flex column-gap="3px">
-    <V-IconWrap
+  <VFlex column-gap="3px">
+    <VIconWrap
       v-tooltip.rounded="'Iam a rounded tooltip'"
       icon="feather:help-circle"
       color="info"
       has-background
       has-large-icon
     />
-  </V-Flex>
+  </VFlex>
 </template>
 ```
 
@@ -24,20 +24,20 @@ See code for more details about usage.
 <!--example-->
 
 <div>
-  <V-Flex column-gap="3px">
-    <V-IconWrap
+  <VFlex column-gap="3px">
+    <VIconWrap
       v-tooltip.rounded="'Iam a rounded tooltip'"
       icon="feather:help-circle"
       color="info"
       has-background
       has-large-icon
     />
-    <V-IconWrap
+    <VIconWrap
       v-tooltip.info.rounded="'Iam a rounded tooltip'"
       icon="bi:question-lg"
       color="info"
     />
-  </V-Flex>
+  </VFlex>
 </div>
 
 <!--/example-->

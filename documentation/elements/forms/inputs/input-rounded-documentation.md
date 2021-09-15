@@ -7,11 +7,11 @@ Simply add the `is-rounded` class to the Html `input` element.
 
 ```vue
 <template>
-  <V-Field>
-    <V-Control>
+  <VField>
+    <VControl>
       <input type="text" class="input is-rounded" placeholder="Username" />
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -19,14 +19,14 @@ Simply add the `is-rounded` class to the Html `input` element.
 
 <!--example-->
 
-<V-Field>
-  <V-Control>
+<VField>
+  <VControl>
     <input
         type="text"
         class="input is-rounded"
         placeholder="Username"
       />
-  </V-Control>
-</V-Field>
+  </VControl>
+</VField>
 
 <!--/example-->

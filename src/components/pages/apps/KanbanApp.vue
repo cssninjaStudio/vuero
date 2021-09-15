@@ -3,11 +3,21 @@ import 'dragula/dist/dragula.css'
 </script>
 
 <script setup lang="ts">
-import { computed, onMounted, ref, reactive } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 import dragula from 'dragula'
+
+import { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
 
 import { tasks } from '/@src/data/apps/kanban'
 import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+
+export interface KanbanTask {
+  id: string
+  title: string
+  state: string
+  dueDate: string
+  participants: VAvatarProps[]
+}
 
 const newContainer = ref<HTMLElement>()
 const progressContainer = ref<HTMLElement>()
@@ -24,31 +34,28 @@ const isColumnCompletedCollapsed = ref(false)
 
 const filteredTasks = computed(() => {
   if (!search.value) {
-    return tasks
+    return tasks as KanbanTask[]
   } else {
     return tasks.filter((item) => {
       return item.title.match(new RegExp(search.value, 'i'))
-    })
+    }) as KanbanTask[]
   }
 })
 
 const participants = computed(() => {
-  return tasks.reduce<{ picture: string; color?: string }[]>(
-    (accumulator, task) => {
-      for (const participant of task.participants) {
-        const exists = accumulator.find((value) => {
-          return value.picture === participant.picture
-        })
+  return tasks.reduce<VAvatarProps[]>((accumulator, task) => {
+    for (const participant of task.participants) {
+      const exists = accumulator.find((value) => {
+        return value.picture === participant.picture
+      })
 
-        if (!exists) {
-          accumulator.push(participant)
-        }
+      if (!exists) {
+        accumulator.push(participant as VAvatarProps)
       }
+    }
 
-      return accumulator
-    },
-    []
-  )
+    return accumulator
+  }, [])
 })
 
 const newTasks = computed(() => {
@@ -136,13 +143,13 @@ onMounted(() => {
 <template>
   <div class="page-content kanban-content is-relative">
     <div class="kanban-toolbar">
-      <V-Control icon="feather:search">
+      <VControl icon="feather:search">
         <input v-model="search" class="input" placeholder="Search..." />
-      </V-Control>
+      </VControl>
 
-      <V-AvatarStack :avatars="participants" size="small" />
+      <VAvatarStack :avatars="participants" size="small" />
 
-      <V-Button color="primary" raised bold> New Task </V-Button>
+      <VButton color="primary" raised bold> New Task </VButton>
     </div>
 
     <div class="columns is-kanban-wrapper">
@@ -195,12 +202,12 @@ onMounted(() => {
               <div v-if="newTasks.length === 0" class="kanban-empty">
                 <img
                   class="empty-state theme-image light-image"
-                  src="/@src/assets/illustrations/projects/board/new.svg?url"
+                  src="/@src/assets/illustrations/projects/board/new.svg"
                   alt=""
                 />
                 <img
                   class="empty-state theme-image dark-image"
-                  src="/@src/assets/illustrations/projects/board/new-dark.svg?url"
+                  src="/@src/assets/illustrations/projects/board/new-dark.svg"
                   alt=""
                 />
                 <p class="empty-text">
@@ -299,12 +306,12 @@ onMounted(() => {
               <div v-if="progressTasks.length === 0" class="kanban-empty">
                 <img
                   class="empty-state theme-image light-image-block"
-                  src="/@src/assets/illustrations/projects/board/progress.svg?url"
+                  src="/@src/assets/illustrations/projects/board/progress.svg"
                   alt=""
                 />
                 <img
                   class="empty-state theme-image dark-image-block"
-                  src="/@src/assets/illustrations/projects/board/progress-dark.svg?url"
+                  src="/@src/assets/illustrations/projects/board/progress-dark.svg"
                   alt=""
                 />
                 <p class="empty-text">
@@ -330,7 +337,7 @@ onMounted(() => {
                       {{ task.dueDate }}
                     </span>
 
-                    <V-AvatarStack size="small" :avatars="task.participants" />
+                    <VAvatarStack size="small" :avatars="task.participants" />
                   </div>
                 </div>
               </div>
@@ -386,12 +393,12 @@ onMounted(() => {
                 <!-- Empty state image / text -->
                 <img
                   class="empty-state theme-image light-image-block"
-                  src="/@src/assets/illustrations/projects/board/ready.svg?url"
+                  src="/@src/assets/illustrations/projects/board/ready.svg"
                   alt=""
                 />
                 <img
                   class="empty-state theme-image dark-image-block"
-                  src="/@src/assets/illustrations/projects/board/ready-dark.svg?url"
+                  src="/@src/assets/illustrations/projects/board/ready-dark.svg"
                   alt=""
                 />
                 <p class="empty-text">
@@ -423,7 +430,7 @@ onMounted(() => {
                       {{ task.dueDate }}
                     </span>
 
-                    <V-AvatarStack size="small" :avatars="task.participants" />
+                    <VAvatarStack size="small" :avatars="task.participants" />
                   </div>
                 </div>
               </div>
@@ -479,12 +486,12 @@ onMounted(() => {
                 <!-- Empty state image / text -->
                 <img
                   class="empty-state theme-image light-image-block"
-                  src="/@src/assets/illustrations/projects/board/test.svg?url"
+                  src="/@src/assets/illustrations/projects/board/test.svg"
                   alt=""
                 />
                 <img
                   class="empty-state theme-image dark-image-block"
-                  src="/@src/assets/illustrations/projects/board/test-dark.svg?url"
+                  src="/@src/assets/illustrations/projects/board/test-dark.svg"
                   alt=""
                 />
                 <p class="empty-text">
@@ -510,7 +517,7 @@ onMounted(() => {
                       {{ task.dueDate }}
                     </span>
 
-                    <V-AvatarStack size="small" :avatars="task.participants" />
+                    <VAvatarStack size="small" :avatars="task.participants" />
                   </div>
                 </div>
               </div>
@@ -569,12 +576,12 @@ onMounted(() => {
               <div v-if="completedTasks.length === 0" class="kanban-empty">
                 <img
                   class="empty-state theme-image light-image-block"
-                  src="/@src/assets/illustrations/projects/board/complete.svg?url"
+                  src="/@src/assets/illustrations/projects/board/complete.svg"
                   alt=""
                 />
                 <img
                   class="empty-state theme-image dark-image-block"
-                  src="/@src/assets/illustrations/projects/board/complete-dark.svg?url"
+                  src="/@src/assets/illustrations/projects/board/complete-dark.svg"
                   alt=""
                 />
                 <p class="empty-text">You have no completed bounties.</p>
@@ -598,7 +605,7 @@ onMounted(() => {
                       {{ task.dueDate }}
                     </span>
 
-                    <V-AvatarStack size="small" :avatars="task.participants" />
+                    <VAvatarStack size="small" :avatars="task.participants" />
                   </div>
                 </div>
               </div>

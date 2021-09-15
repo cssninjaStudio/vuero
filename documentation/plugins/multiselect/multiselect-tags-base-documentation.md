@@ -30,8 +30,8 @@ const tagsOptions = [
 </script>
 
 <template>
-  <V-Field>
-    <V-Control>
+  <VField>
+    <VControl>
       <Multiselect
         v-model="tagsValue"
         mode="tags"
@@ -40,8 +40,8 @@ const tagsOptions = [
         :options="tagsOptions"
         placeholder="Add tags"
       />
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -51,8 +51,8 @@ const tagsOptions = [
 
 <div class="columns">
   <div class="column is-4">
-    <V-Field>
-      <V-Control>
+    <VField>
+      <VControl>
         <Multiselect
           v-model="frontmatter.tagsValue"
           mode="tags"
@@ -61,12 +61,12 @@ const tagsOptions = [
           :options="frontmatter.tagsOptions"
           placeholder="Add tags"
         />
-      </V-Control>
-    </V-Field>
+      </VControl>
+    </VField>
   </div>
   <div class="column is-4">
-    <V-Field class="is-curved-select">
-      <V-Control>
+    <VField class="is-curved-select">
+      <VControl>
         <Multiselect
           v-model="frontmatter.tagsValue"
           mode="tags"
@@ -75,12 +75,12 @@ const tagsOptions = [
           :options="frontmatter.tagsOptions"
           placeholder="Add tags"
         />
-      </V-Control>
-    </V-Field>
+      </VControl>
+    </VField>
   </div>
   <div class="column is-4">
-    <V-Field class="is-rounded-select">
-      <V-Control>
+    <VField class="is-rounded-select">
+      <VControl>
         <Multiselect
           v-model="frontmatter.tagsValue"
           mode="tags"
@@ -89,8 +89,8 @@ const tagsOptions = [
           :options="frontmatter.tagsOptions"
           placeholder="Add tags"
         />
-      </V-Control>
-    </V-Field>
+      </VControl>
+    </VField>
   </div>
 </div>
 

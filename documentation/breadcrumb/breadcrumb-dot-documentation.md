@@ -8,7 +8,7 @@ breadcrumb:
     icon: feather:cpu
     to:
       name: components
-  - label: V-Breadcrumb
+  - label: VBreadcrumb
 ---
 
 ### Dot Separator
@@ -38,14 +38,14 @@ const breadcrumb = [
     },
   },
   {
-    label: 'V-Breadcrumb',
+    label: 'VBreadcrumb',
   },
 ]
 </script>
 
 <template>
-  <V-Breadcrumb :items="breadcrumb" separator="dot" />
-  <V-Breadcrumb :items="breadcrumb" separator="dot" with-icons />
+  <VBreadcrumb :items="breadcrumb" separator="dot" />
+  <VBreadcrumb :items="breadcrumb" separator="dot" with-icons />
 </template>
 ```
 
@@ -54,8 +54,8 @@ const breadcrumb = [
 <!--example-->
 
 <div>
-  <V-Breadcrumb :items="frontmatter.breadcrumb" separator="dot" />
-  <V-Breadcrumb :items="frontmatter.breadcrumb" separator="dot" with-icons />
+  <VBreadcrumb :items="frontmatter.breadcrumb" separator="dot" />
+  <VBreadcrumb :items="frontmatter.breadcrumb" separator="dot" with-icons />
 </div>
 
 <!--/example-->

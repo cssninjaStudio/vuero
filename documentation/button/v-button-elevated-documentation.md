@@ -1,6 +1,6 @@
 ### Elevation
 
-`<V-Button />` components can be elevated using box shadows.
+`<VButton />` components can be elevated using box shadows.
 Use the `raised` prop to show a box shadow on hover or
 use the `elevated` prop to set a permanent box shadow.
 
@@ -8,13 +8,13 @@ use the `elevated` prop to set a permanent box shadow.
 
 ```vue
 <template>
-  <V-Buttons>
-    <V-Button color="primary" raised> Button </V-Button>
-    <V-Button color="info" raised> Button </V-Button>
-    <V-Button color="success" raised> Button </V-Button>
-    <V-Button color="warning" raised> Button </V-Button>
-    <V-Button color="danger" elevated> Button </V-Button>
-  </V-Buttons>
+  <VButtons>
+    <VButton color="primary" raised> Button </VButton>
+    <VButton color="info" raised> Button </VButton>
+    <VButton color="success" raised> Button </VButton>
+    <VButton color="warning" raised> Button </VButton>
+    <VButton color="danger" elevated> Button </VButton>
+  </VButtons>
 </template>
 ```
 
@@ -22,22 +22,22 @@ use the `elevated` prop to set a permanent box shadow.
 
 <!--example-->
 
-<V-Buttons>
-    <V-Button color="primary" raised>
+<VButtons>
+    <VButton color="primary" raised>
         Button
-    </V-Button>
-    <V-Button color="info" raised>
+    </VButton>
+    <VButton color="info" raised>
         Button
-    </V-Button>
-    <V-Button color="success" raised>
+    </VButton>
+    <VButton color="success" raised>
         Button
-    </V-Button>
-    <V-Button color="warning" raised>
+    </VButton>
+    <VButton color="warning" raised>
         Button
-    </V-Button>
-    <V-Button color="danger" elevated>
+    </VButton>
+    <VButton color="danger" elevated>
         Button
-    </V-Button>
-</V-Buttons>
+    </VButton>
+</VButtons>
 
 <!--/example-->

@@ -17,7 +17,7 @@ export const users = [
       },
       {
         id: 1,
-        picture: null,
+        picture: undefined,
         initials: 'JP',
         color: 'info',
       },
@@ -35,7 +35,7 @@ export const users = [
       },
       {
         id: 4,
-        picture: null,
+        picture: undefined,
         initials: 'SC',
         color: 'success',
       },
@@ -53,7 +53,7 @@ export const users = [
     contacts: [
       {
         id: 148,
-        picture: null,
+        picture: undefined,
         initials: 'SC',
         color: 'h-purple',
       },
@@ -71,7 +71,7 @@ export const users = [
     contacts: [
       {
         id: 127,
-        picture: null,
+        picture: undefined,
         initials: 'BT',
         color: 'success',
       },
@@ -89,19 +89,19 @@ export const users = [
       },
       {
         id: 148,
-        picture: null,
+        picture: undefined,
         initials: 'SC',
         color: 'h-purple',
       },
       {
         id: 149,
-        picture: null,
+        picture: undefined,
         initials: 'SC',
         color: 'h-purple',
       },
       {
         id: 150,
-        picture: null,
+        picture: undefined,
         initials: 'SC',
         color: 'h-purple',
       },
@@ -155,25 +155,25 @@ export const users = [
       },
       {
         id: 150,
-        picture: null,
+        picture: undefined,
         initials: 'SC',
         color: 'h-purple',
       },
       {
         id: 151,
-        picture: null,
+        picture: undefined,
         initials: 'SC',
         color: 'h-purple',
       },
       {
         id: 152,
-        picture: null,
+        picture: undefined,
         initials: 'SC',
         color: 'h-purple',
       },
       {
         id: 154,
-        picture: null,
+        picture: undefined,
         initials: 'SC',
         color: 'h-purple',
       },
@@ -197,7 +197,7 @@ export const users = [
       },
       {
         id: 14,
-        picture: null,
+        picture: undefined,
         initials: 'AT',
         color: 'h-yellow',
       },
@@ -209,19 +209,19 @@ export const users = [
       },
       {
         id: 150,
-        picture: null,
+        picture: undefined,
         initials: 'SC',
         color: 'h-purple',
       },
       {
         id: 151,
-        picture: null,
+        picture: undefined,
         initials: 'SC',
         color: 'h-purple',
       },
       {
         id: 152,
-        picture: null,
+        picture: undefined,
         initials: 'SC',
         color: 'h-purple',
       },
@@ -245,7 +245,7 @@ export const users = [
       },
       {
         id: 14,
-        picture: null,
+        picture: undefined,
         initials: 'BV',
         color: 'h-purple',
       },
@@ -257,13 +257,13 @@ export const users = [
       },
       {
         id: 150,
-        picture: null,
+        picture: undefined,
         initials: 'SC',
         color: 'h-purple',
       },
       {
         id: 151,
-        picture: null,
+        picture: undefined,
         initials: 'SC',
         color: 'h-purple',
       },
@@ -303,7 +303,7 @@ export const users = [
     id: 8,
     username: 'Alan T.',
     position: 'Software Engineer',
-    picture: null,
+    picture: undefined,
     badge: '/images/icons/flags/united-states-of-america.svg',
     color: 'h-yellow',
     initials: 'AT',
@@ -337,7 +337,7 @@ export const users = [
       },
       {
         id: 165,
-        picture: null,
+        picture: undefined,
         initials: 'JD',
         color: 'info',
       },
@@ -349,13 +349,13 @@ export const users = [
       },
       {
         id: 150,
-        picture: null,
+        picture: undefined,
         initials: 'SC',
         color: 'h-purple',
       },
       {
         id: 151,
-        picture: null,
+        picture: undefined,
         initials: 'SC',
         color: 'h-purple',
       },

@@ -1,12 +1,15 @@
 <script setup lang="ts">
 import ApexChart from 'vue3-apexcharts'
 
+import type { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
 import { interviewsOptions } from '/@src/data/dashboards/personal-v3/interviewsChart'
 import {
   progressGaugeOptions,
   onprogressGaugeReady,
 } from '/@src/data/dashboards/personal-v3/progressChart'
-import { userStack } from '/@src/data/dashboards/personal-v3/users'
+import * as userData from '/@src/data/dashboards/personal-v3/users'
+
+const userStack = userData.userStack as VAvatarProps[]
 </script>
 
 <template>
@@ -24,7 +27,7 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
                 </p>
               </div>
               <div class="welcome-progress">
-                <V-BillboardJS
+                <VBillboardJS
                   :options="progressGaugeOptions"
                   @ready="onprogressGaugeReady"
                 />
@@ -34,9 +37,9 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
                 </div>
               </div>
               <div class="button-wrap">
-                <V-Button color="primary" size="big" fullwidth raised>
+                <VButton color="primary" size="big" fullwidth raised>
                   View Schedule
-                </V-Button>
+                </VButton>
               </div>
             </div>
           </div>
@@ -46,62 +49,62 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
               <div class="columns is-multiline is-flex-tablet-p">
                 <div class="column is-6">
                   <div class="dashboard-card">
-                    <V-Block title="62K" subtitle="Minutes" center>
+                    <VBlock title="62K" subtitle="Minutes" center>
                       <template #icon>
-                        <V-IconBox color="info" rounded>
+                        <VIconBox color="info" rounded>
                           <i
                             aria-hidden="true"
                             class="iconify"
                             data-icon="feather:clock"
                           ></i>
-                        </V-IconBox>
+                        </VIconBox>
                       </template>
-                    </V-Block>
+                    </VBlock>
                   </div>
                 </div>
                 <div class="column is-6">
                   <div class="dashboard-card">
-                    <V-Block title="263" subtitle="Interviews" center>
+                    <VBlock title="263" subtitle="Interviews" center>
                       <template #icon>
-                        <V-IconBox color="purple" rounded>
+                        <VIconBox color="purple" rounded>
                           <i
                             aria-hidden="true"
                             class="iconify"
                             data-icon="feather:radio"
                           ></i>
-                        </V-IconBox>
+                        </VIconBox>
                       </template>
-                    </V-Block>
+                    </VBlock>
                   </div>
                 </div>
                 <div class="column is-6">
                   <div class="dashboard-card">
-                    <V-Block title="49" subtitle="Approved" center>
+                    <VBlock title="49" subtitle="Approved" center>
                       <template #icon>
-                        <V-IconBox color="green" rounded>
+                        <VIconBox color="green" rounded>
                           <i
                             aria-hidden="true"
                             class="iconify"
                             data-icon="feather:user-check"
                           ></i>
-                        </V-IconBox>
+                        </VIconBox>
                       </template>
-                    </V-Block>
+                    </VBlock>
                   </div>
                 </div>
                 <div class="column is-6">
                   <div class="dashboard-card">
-                    <V-Block title="214" subtitle="Rejected" center>
+                    <VBlock title="214" subtitle="Rejected" center>
                       <template #icon>
-                        <V-IconBox color="orange" rounded>
+                        <VIconBox color="orange" rounded>
                           <i
                             aria-hidden="true"
                             class="iconify"
                             data-icon="feather:frown"
                           ></i>
-                        </V-IconBox>
+                        </VIconBox>
                       </template>
-                    </V-Block>
+                    </VBlock>
                   </div>
                 </div>
               </div>
@@ -115,7 +118,7 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
                   >
                 </div>
                 <div class="right">
-                  <V-AvatarStack :avatars="userStack" :limit="3" />
+                  <VAvatarStack :avatars="userStack" :limit="3" />
                 </div>
               </div>
             </div>
@@ -123,7 +126,7 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
 
           <div class="column is-6 h-hidden-mobile h-hidden-tablet-p">
             <img
-              src="/@src/assets/illustrations/dashboards/personal/interviews.svg?url"
+              src="/@src/assets/illustrations/dashboards/personal/interviews.svg"
               alt=""
             />
           </div>
@@ -240,9 +243,9 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
         </UIWidget>
 
         <a href="#" class="dashboard-card is-interview">
-          <V-Block title="Jonathan K." subtitle="08:00 - 09:00" center>
+          <VBlock title="Jonathan K." subtitle="08:00 - 09:00" center>
             <template #icon>
-              <V-Avatar picture="/demo/avatars/32.jpg" />
+              <VAvatar picture="/demo/avatars/32.jpg" />
             </template>
             <template #action>
               <i
@@ -251,12 +254,12 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
                 data-icon="feather:chevron-right"
               ></i>
             </template>
-          </V-Block>
+          </VBlock>
         </a>
         <a href="#" class="dashboard-card is-interview">
-          <V-Block title="Greta K." subtitle="10:30 - 11:00" center>
+          <VBlock title="Greta K." subtitle="10:30 - 11:00" center>
             <template #icon>
-              <V-Avatar picture="/demo/avatars/19.jpg" />
+              <VAvatar picture="/demo/avatars/19.jpg" />
             </template>
             <template #action>
               <i
@@ -265,12 +268,12 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
                 data-icon="feather:chevron-right"
               ></i>
             </template>
-          </V-Block>
+          </VBlock>
         </a>
         <a href="#" class="dashboard-card is-interview">
-          <V-Block title="Joshua S." subtitle="02:30 - 03:00" center>
+          <VBlock title="Joshua S." subtitle="02:30 - 03:00" center>
             <template #icon>
-              <V-Avatar picture="/demo/avatars/12.jpg" />
+              <VAvatar picture="/demo/avatars/12.jpg" />
             </template>
             <template #action>
               <i
@@ -279,7 +282,7 @@ import { userStack } from '/@src/data/dashboards/personal-v3/users'
                 data-icon="feather:chevron-right"
               ></i>
             </template>
-          </V-Block>
+          </VBlock>
         </a>
       </div>
     </div>

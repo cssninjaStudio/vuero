@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-Card Props
+### VCard Props
 
-Here is the full props available for `<V-Card />` component:
+Here is the full props available for `<VCard />` component:
 
 | Props    | Default                                       | Type                                                           |
 | -------- | --------------------------------------------- | -------------------------------------------------------------- |

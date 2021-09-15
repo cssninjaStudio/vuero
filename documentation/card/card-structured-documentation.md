@@ -11,9 +11,9 @@ come content. Check the markup for more details about usage.
 
 ```vue
 <template>
-  <V-Card radius="small" elevated>
+  <VCard radius="small" elevated>
     <div class="card-head">
-      <V-Block
+      <VBlock
         title="Greta K."
         subtitle="Sales Manager"
         center
@@ -26,7 +26,7 @@ come content. Check the markup for more details about usage.
             :offset="[0, 10]"
             placement="top-start"
           >
-            <V-Avatar
+            <VAvatar
               picture="/demo/avatars/19.jpg"
               badge="/images/icons/flags/germany.svg"
             />
@@ -48,7 +48,7 @@ come content. Check the markup for more details about usage.
             </template>
           </tippy>
         </template>
-      </V-Block>
+      </VBlock>
 
       <UserCardDropdown />
     </div>
@@ -60,7 +60,7 @@ come content. Check the markup for more details about usage.
         loqui discimus. Et ille ridens.
       </p>
     </div>
-  </V-Card>
+  </VCard>
 </template>
 ```
 

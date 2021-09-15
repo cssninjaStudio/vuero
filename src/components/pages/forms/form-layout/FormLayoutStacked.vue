@@ -27,15 +27,15 @@ const isStuck = computed(() => {
           </div>
           <div class="right">
             <div class="buttons">
-              <V-Button
+              <VButton
                 icon="lnir lnir-arrow-left rem-100"
                 :to="{ name: 'sidebar-layouts-profile-view' }"
                 light
                 dark-outlined
               >
                 Cancel
-              </V-Button>
-              <V-Button color="primary" raised> Schedule </V-Button>
+              </VButton>
+              <VButton color="primary" raised> Schedule </VButton>
             </div>
           </div>
         </div>
@@ -44,18 +44,18 @@ const isStuck = computed(() => {
         <div class="form-section">
           <div class="columns is-multiline">
             <div class="column is-12">
-              <V-Field>
-                <V-Control icon="feather:slack">
+              <VField>
+                <VControl icon="feather:slack">
                   <input
                     type="text"
                     class="input"
                     placeholder="What is this meeting about?"
                   />
-                </V-Control>
-              </V-Field>
+                </VControl>
+              </VField>
             </div>
 
-            <v-date-picker
+            <Vdate-picker
               v-model="date"
               is-range
               color="green"
@@ -65,38 +65,38 @@ const isStuck = computed(() => {
               <template #default="{ inputValue, inputEvents }">
                 <div class="columns v-calendar-combo">
                   <div class="column is-6">
-                    <V-Field>
+                    <VField>
                       <label>Meeting date</label>
 
-                      <V-Control icon="feather:calendar">
+                      <VControl icon="feather:calendar">
                         <input
                           placeholder="Start Date"
                           :value="inputValue.start"
                           class="input form-datepicker"
                           v-on="inputEvents.start"
                         />
-                      </V-Control>
-                    </V-Field>
+                      </VControl>
+                    </VField>
                   </div>
                   <div class="column is-6">
-                    <V-Field>
+                    <VField>
                       <label class="is-vhidden">Meeting date</label>
 
-                      <V-Control icon="feather:calendar">
+                      <VControl icon="feather:calendar">
                         <input
                           placeholder="End Date"
                           :value="inputValue.end"
                           class="input form-datepicker"
                           v-on="inputEvents.end"
                         />
-                      </V-Control>
-                    </V-Field>
+                      </VControl>
+                    </VField>
                   </div>
                 </div>
               </template>
-            </v-date-picker>
+            </Vdate-picker>
 
-            <v-date-picker
+            <Vdate-picker
               v-model="date.start"
               class="column is-3"
               color="green"
@@ -104,20 +104,20 @@ const isStuck = computed(() => {
               is24hr
             >
               <template #default="{ inputValue, inputEvents }">
-                <V-Field>
+                <VField>
                   <label>Meeting time</label>
-                  <V-Control>
+                  <VControl>
                     <input
                       class="input form-timepicker"
                       :value="inputValue"
                       v-on="inputEvents"
                     />
-                  </V-Control>
-                </V-Field>
+                  </VControl>
+                </VField>
               </template>
-            </v-date-picker>
+            </Vdate-picker>
 
-            <v-date-picker
+            <Vdate-picker
               v-model="date.end"
               class="column is-3"
               color="green"
@@ -125,22 +125,22 @@ const isStuck = computed(() => {
               is24hr
             >
               <template #default="{ inputValue, inputEvents }">
-                <V-Field>
+                <VField>
                   <label class="is-vhidden">Meeting time</label>
-                  <V-Control>
+                  <VControl>
                     <input
                       class="input form-timepicker"
                       :value="inputValue"
                       v-on="inputEvents"
                     />
-                  </V-Control>
-                </V-Field>
+                  </VControl>
+                </VField>
               </template>
-            </v-date-picker>
+            </Vdate-picker>
 
             <div class="column is-12">
-              <V-Field>
-                <V-Control>
+              <VField>
+                <VControl>
                   <label class="checkbox">
                     <input type="checkbox" checked />
                     <span></span>
@@ -152,8 +152,8 @@ const isStuck = computed(() => {
                     <span></span>
                     Repeat every week
                   </label>
-                </V-Control>
-              </V-Field>
+                </VControl>
+              </VField>
             </div>
           </div>
         </div>
@@ -164,7 +164,7 @@ const isStuck = computed(() => {
               <h3>Meeting details</h3>
             </div>
             <div class="right">
-              <V-Button dark-outlined> Add People </V-Button>
+              <VButton dark-outlined> Add People </VButton>
             </div>
           </div>
 
@@ -174,15 +174,15 @@ const isStuck = computed(() => {
                 <label class="label">Participants</label>
               </div>
               <div class="field-body">
-                <V-Field>
-                  <V-Control>
+                <VField>
+                  <VControl>
                     <div class="participants">
                       <tippy
                         class="has-help-cursor"
                         interactive
                         placement="top-start"
                       >
-                        <V-Avatar picture="/demo/avatars/8.jpg" />
+                        <VAvatar picture="/demo/avatars/8.jpg" />
                         <template #content>
                           <UserPopoverContent :user="popovers.user8" />
                         </template>
@@ -193,7 +193,7 @@ const isStuck = computed(() => {
                         interactive
                         placement="top-start"
                       >
-                        <V-Avatar color="warning" initials="BT" />
+                        <VAvatar color="warning" initials="BT" />
                         <template #content>
                           <UserPopoverContent :user="popovers.user122" />
                         </template>
@@ -204,7 +204,7 @@ const isStuck = computed(() => {
                         interactive
                         placement="top-start"
                       >
-                        <V-Avatar picture="/demo/avatars/18.jpg" />
+                        <VAvatar picture="/demo/avatars/18.jpg" />
                         <template #content>
                           <UserPopoverContent :user="popovers.user18" />
                         </template>
@@ -215,7 +215,7 @@ const isStuck = computed(() => {
                         interactive
                         placement="top-start"
                       >
-                        <V-Avatar color="info" initials="JD" />
+                        <VAvatar color="info" initials="JD" />
                         <template #content>
                           <UserPopoverContent :user="popovers.user123" />
                         </template>
@@ -226,7 +226,7 @@ const isStuck = computed(() => {
                         interactive
                         placement="top-start"
                       >
-                        <V-Avatar picture="/demo/avatars/7.jpg" />
+                        <VAvatar picture="/demo/avatars/7.jpg" />
                         <template #content>
                           <UserPopoverContent :user="popovers.user7" />
                         </template>
@@ -240,8 +240,8 @@ const isStuck = computed(() => {
                         ></i>
                       </button>
                     </div>
-                  </V-Control>
-                </V-Field>
+                  </VControl>
+                </VField>
               </div>
             </div>
 
@@ -250,15 +250,15 @@ const isStuck = computed(() => {
                 <label class="label">Where</label>
               </div>
               <div class="field-body">
-                <V-Field>
-                  <V-Control icon="feather:map-pin">
+                <VField>
+                  <VControl icon="feather:map-pin">
                     <input
                       class="input"
                       type="text"
                       placeholder="e.g. Conference room"
                     />
-                  </V-Control>
-                </V-Field>
+                  </VControl>
+                </VField>
               </div>
             </div>
             <div class="field is-horizontal">
@@ -266,16 +266,16 @@ const isStuck = computed(() => {
                 <label class="label">Meeting URL</label>
               </div>
               <div class="field-body">
-                <V-Field>
-                  <V-Control icon="feather:map-pin">
+                <VField>
+                  <VControl icon="feather:map-pin">
                     <input
                       class="input"
                       type="url"
                       placeholder="https://zoom.com/m/156546"
                       inputmode="url"
                     />
-                  </V-Control>
-                </V-Field>
+                  </VControl>
+                </VField>
               </div>
             </div>
             <div class="field is-horizontal">
@@ -283,8 +283,8 @@ const isStuck = computed(() => {
                 <label class="label">Calendar</label>
               </div>
               <div class="field-body">
-                <V-Field>
-                  <V-Control>
+                <VField>
+                  <VControl>
                     <Multiselect
                       v-model="calendarTarget"
                       placeholder="Pick a calendar"
@@ -294,8 +294,8 @@ const isStuck = computed(() => {
                         'Company Calendar',
                       ]"
                     />
-                  </V-Control>
-                </V-Field>
+                  </VControl>
+                </VField>
               </div>
             </div>
             <div class="field is-horizontal">
@@ -303,8 +303,8 @@ const isStuck = computed(() => {
                 <label class="label">Description</label>
               </div>
               <div class="field-body">
-                <V-Field>
-                  <V-Control>
+                <VField>
+                  <VControl>
                     <textarea
                       class="textarea"
                       rows="4"
@@ -314,8 +314,8 @@ const isStuck = computed(() => {
                       spellcheck="true"
                     ></textarea>
                     <a class="add-link">Add Attachments</a>
-                  </V-Control>
-                </V-Field>
+                  </VControl>
+                </VField>
               </div>
             </div>
           </div>
@@ -328,8 +328,8 @@ const isStuck = computed(() => {
                 <label class="label">Color Code</label>
               </div>
               <div class="field-body">
-                <V-Field>
-                  <V-Control>
+                <VField>
+                  <VControl>
                     <div class="color-codes">
                       <div class="color-code is-primary"></div>
                       <div class="color-code is-secondary"></div>
@@ -337,8 +337,8 @@ const isStuck = computed(() => {
                       <div class="color-code is-success"></div>
                       <div class="color-code is-purple"></div>
                     </div>
-                  </V-Control>
-                </V-Field>
+                  </VControl>
+                </VField>
               </div>
             </div>
             <div class="field is-horizontal">
@@ -346,19 +346,19 @@ const isStuck = computed(() => {
                 <label class="label">Notifications</label>
               </div>
               <div class="field-body">
-                <V-Field>
-                  <V-Control>
+                <VField>
+                  <VControl>
                     <Multiselect
                       v-model="notificationMedium"
                       placeholder="Select a channel"
                       :options="['Email', 'SMS', 'Slack', 'Project Board']"
                     />
                     <a class="add-link">Add Notification</a>
-                  </V-Control>
-                </V-Field>
+                  </VControl>
+                </VField>
 
-                <V-Field class="is-image-select">
-                  <V-Control>
+                <VField class="is-image-select">
+                  <VControl>
                     <Multiselect
                       v-model="notificationTarget"
                       placeholder="Select a target"
@@ -420,8 +420,8 @@ const isStuck = computed(() => {
                         </span>
                       </template>
                     </Multiselect>
-                  </V-Control>
-                </V-Field>
+                  </VControl>
+                </VField>
               </div>
             </div>
           </div>

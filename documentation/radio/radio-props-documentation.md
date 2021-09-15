@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-Radio Props
+### VRadio Props
 
-Here is the full props available for `<V-Radio />` component:
+Here is the full props available for `<VRadio />` component:
 
 | Props                   | Default                                       | Type                                              |
 | ----------------------- | --------------------------------------------- | ------------------------------------------------- |

@@ -7,7 +7,7 @@ state:
 
 Vuero provides a customisable `<Slider />` component. You can check the plugin
 documentation on [Github](https://github.com/vueform/slider). Use the
-`has-rounded-tooltip`class on the `<V-Field />` component to show a rounded
+`has-rounded-tooltip`class on the `<VField />` component to show a rounded
 tooltip.
 
 <!--code-->
@@ -20,11 +20,11 @@ const value = ref(0)
 </script>
 
 <template>
-  <V-Field class="has-rounded-tooltip">
-    <V-Control>
+  <VField class="has-rounded-tooltip">
+    <VControl>
       <Slider v-model="value" />
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -34,11 +34,11 @@ const value = ref(0)
 
 <div class="columns mt-2">
   <div class="column is-6">
-    <V-Field class="pt-5 px-4 has-rounded-tooltip">
-        <V-Control>
+    <VField class="pt-5 px-4 has-rounded-tooltip">
+        <VControl>
             <Slider v-model="frontmatter.state.value" />
-        </V-Control>
-    </V-Field>
+        </VControl>
+    </VField>
   </div>
 </div>
 

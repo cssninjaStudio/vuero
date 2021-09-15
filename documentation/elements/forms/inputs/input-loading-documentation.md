@@ -1,17 +1,17 @@
 ### Input Loading
 
 An input can be shown in a loading state. To apply that style,
-simply add the `loading` prop to the wrapping `<V-Control />` component.
+simply add the `loading` prop to the wrapping `<VControl />` component.
 
 <!--code-->
 
 ```vue
 <template>
-  <V-Field>
-    <V-Control loading>
+  <VField>
+    <VControl loading>
       <input type="text" class="input" placeholder="Username" />
-    </V-Control>
-  </V-Field>
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -19,14 +19,14 @@ simply add the `loading` prop to the wrapping `<V-Control />` component.
 
 <!--example-->
 
-<V-Field>
-  <V-Control loading>
+<VField>
+  <VControl loading>
     <input
         type="text"
         class="input"
         placeholder="Username"
       />
-  </V-Control>
-</V-Field>
+  </VControl>
+</VField>
 
 <!--/example-->

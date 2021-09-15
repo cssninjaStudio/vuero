@@ -27,7 +27,7 @@ const activeTab = ref<TabId>('overview')
       <div class="dashboard-header">
         <div class="avatar-container">
           <img
-            src="/demo/photos/faces/eegirl1.jpg"
+            src="/demo/photos/faces/girl1.jpg"
             alt=""
             @error.once="(event) => useViaPlaceholderError(event, '150x150')"
           />
@@ -51,8 +51,8 @@ const activeTab = ref<TabId>('overview')
               <span>Clarissa Geller</span>
             </div>
             <div class="badges">
-              <V-Tag rounded color="info" label="Music" />
-              <V-Tag rounded color="primary" label="Lifestyle" />
+              <VTag rounded color="info" label="Music" />
+              <VTag rounded color="primary" label="Lifestyle" />
             </div>
           </div>
           <div class="meta-stats">
@@ -84,9 +84,9 @@ const activeTab = ref<TabId>('overview')
               <template #content>
                 <div class="v-popover-content is-text">
                   <div class="popover-head">
-                    <V-IconBox size="small" color="danger">
+                    <VIconBox size="small" color="danger">
                       <i aria-hidden="true" class="fas fa-fire"></i>
-                    </V-IconBox>
+                    </VIconBox>
                     <h4 class="dark-inverted">On Fire</h4>
                   </div>
                   <div class="popover-body">
@@ -105,9 +105,9 @@ const activeTab = ref<TabId>('overview')
               <template #content>
                 <div class="v-popover-content is-text">
                   <div class="popover-head">
-                    <V-IconBox size="small" color="primary">
+                    <VIconBox size="small" color="primary">
                       <i aria-hidden="true" class="fas fa-medal"></i>
-                    </V-IconBox>
+                    </VIconBox>
                     <h4 class="dark-inverted">Post Veteran</h4>
                   </div>
                   <div class="popover-body">
@@ -126,9 +126,9 @@ const activeTab = ref<TabId>('overview')
               <template #content>
                 <div class="v-popover-content is-text">
                   <div class="popover-head">
-                    <V-IconBox size="small" color="yellow">
+                    <VIconBox size="small" color="yellow">
                       <i aria-hidden="true" class="fas fa-medal"></i>
-                    </V-IconBox>
+                    </VIconBox>
                     <h4 class="dark-inverted">Social Champion</h4>
                   </div>
                   <div class="popover-body">
@@ -173,8 +173,8 @@ const activeTab = ref<TabId>('overview')
       >
         <div class="body-title">
           <h3>Instagram Stats</h3>
-          <V-Field class="is-minimal-select">
-            <V-Control>
+          <VField class="is-minimal-select">
+            <VControl>
               <Multiselect
                 id="instagram-stats-select"
                 v-model="valueSingle"
@@ -182,8 +182,8 @@ const activeTab = ref<TabId>('overview')
                 placeholder="Select an option"
                 :max-height="145"
               />
-            </V-Control>
-          </V-Field>
+            </VControl>
+          </VField>
         </div>
 
         <div class="columns is-multiline is-flex-tablet-p">
@@ -192,9 +192,9 @@ const activeTab = ref<TabId>('overview')
             <div class="overview-card">
               <div class="card-head">
                 <h4>Content Posts (30 days)</h4>
-                <V-IconBox color="purple" rounded>
+                <VIconBox color="purple" rounded>
                   <i aria-hidden="true" class="fab fa-instagram"></i>
-                </V-IconBox>
+                </VIconBox>
               </div>
               <div class="card-metric">
                 <span>112</span>
@@ -220,9 +220,9 @@ const activeTab = ref<TabId>('overview')
             <div class="overview-card">
               <div class="card-head">
                 <h4>Followers (30 days)</h4>
-                <V-IconBox color="info" rounded>
+                <VIconBox color="info" rounded>
                   <i aria-hidden="true" class="fas fa-users"></i>
-                </V-IconBox>
+                </VIconBox>
               </div>
               <div class="card-metric">
                 <span>14.3k</span>
@@ -248,9 +248,9 @@ const activeTab = ref<TabId>('overview')
             <div class="overview-card">
               <div class="card-head">
                 <h4>Following (30 days)</h4>
-                <V-IconBox color="yellow" rounded>
+                <VIconBox color="yellow" rounded>
                   <i aria-hidden="true" class="fas fa-user-plus"></i>
-                </V-IconBox>
+                </VIconBox>
               </div>
               <div class="card-metric">
                 <span>44</span>
@@ -276,9 +276,9 @@ const activeTab = ref<TabId>('overview')
             <div class="overview-card">
               <div class="card-head">
                 <h4>Likes (30 days)</h4>
-                <V-IconBox color="red" rounded>
+                <VIconBox color="red" rounded>
                   <i aria-hidden="true" class="fas fa-heart"></i>
-                </V-IconBox>
+                </VIconBox>
               </div>
               <div class="card-metric">
                 <span>140.8K</span>
@@ -304,9 +304,9 @@ const activeTab = ref<TabId>('overview')
             <div class="overview-card">
               <div class="card-head">
                 <h4>Comments (30 days)</h4>
-                <V-IconBox color="yellow" rounded>
+                <VIconBox color="yellow" rounded>
                   <i aria-hidden="true" class="fas fa-comment"></i>
-                </V-IconBox>
+                </VIconBox>
               </div>
               <div class="card-metric">
                 <span>9.3K</span>
@@ -332,9 +332,9 @@ const activeTab = ref<TabId>('overview')
             <div class="overview-card">
               <div class="card-head">
                 <h4>Profile Views (30 days)</h4>
-                <V-IconBox color="success" rounded>
+                <VIconBox color="success" rounded>
                   <i aria-hidden="true" class="fas fa-glasses"></i>
-                </V-IconBox>
+                </VIconBox>
               </div>
               <div class="card-metric">
                 <span>12.1k</span>
@@ -615,8 +615,8 @@ const activeTab = ref<TabId>('overview')
       >
         <div class="body-title">
           <h3>Content Stats</h3>
-          <V-Field class="is-minimal-select">
-            <V-Control>
+          <VField class="is-minimal-select">
+            <VControl>
               <Multiselect
                 id="content-stats-select"
                 v-model="valueSingle"
@@ -624,8 +624,8 @@ const activeTab = ref<TabId>('overview')
                 placeholder="Select an option"
                 :max-height="145"
               />
-            </V-Control>
-          </V-Field>
+            </VControl>
+          </VField>
         </div>
 
         <div class="columns is-multiline">
@@ -970,9 +970,9 @@ const activeTab = ref<TabId>('overview')
             <div class="overview-card">
               <div class="card-head">
                 <h4>Post Day</h4>
-                <V-IconBox color="green" rounded>
+                <VIconBox color="green" rounded>
                   <i aria-hidden="true" class="fas fa-calendar-day"></i>
-                </V-IconBox>
+                </VIconBox>
               </div>
               <div class="card-metric is-smaller">
                 <span>Monday</span>
@@ -988,9 +988,9 @@ const activeTab = ref<TabId>('overview')
             <div class="overview-card">
               <div class="card-head">
                 <h4>hashtags</h4>
-                <V-IconBox color="info" rounded>
+                <VIconBox color="info" rounded>
                   <i aria-hidden="true" class="fab fa-slack-hash"></i>
-                </V-IconBox>
+                </VIconBox>
               </div>
               <div class="card-metric is-smaller">
                 <span>#Music</span>
@@ -1006,9 +1006,9 @@ const activeTab = ref<TabId>('overview')
             <div class="overview-card">
               <div class="card-head">
                 <h4>Filters</h4>
-                <V-IconBox color="orange" rounded>
+                <VIconBox color="orange" rounded>
                   <i aria-hidden="true" class="fas fa-camera"></i>
-                </V-IconBox>
+                </VIconBox>
               </div>
               <div class="card-metric is-smaller">
                 <span>Normal</span>
@@ -1338,12 +1338,12 @@ const activeTab = ref<TabId>('overview')
           <div class="placeholder-content">
             <img
               class="light-image"
-              src="/@src/assets/illustrations/placeholders/having-coffee.svg?url"
+              src="/@src/assets/illustrations/placeholders/having-coffee.svg"
               alt=""
             />
             <img
               class="dark-image"
-              src="/@src/assets/illustrations/placeholders/having-coffee-dark.svg?url"
+              src="/@src/assets/illustrations/placeholders/having-coffee-dark.svg"
               alt=""
             />
             <h3>No brands to show.</h3>

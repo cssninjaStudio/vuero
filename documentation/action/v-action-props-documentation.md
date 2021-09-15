@@ -2,9 +2,9 @@
 disable_code: true
 ---
 
-### V-Action Props
+### VAction Props
 
-Here is the full props available for `<V-Action />` component:
+Here is the full props available for `<VAction />` component:
 
 | Props     | Default                                 | Type    |
 | --------- | --------------------------------------- | ------- |
