@@ -11,7 +11,7 @@ export const elements = [
   {
     id: 2,
     link: 'components-tag',
-    name: 'V-Tag',
+    name: 'VTag',
     media: {
       light: '/images/icons/components/badges.svg',
       dark: '/images/icons/components/badges-dark.svg',
@@ -20,7 +20,7 @@ export const elements = [
   {
     id: 3,
     link: 'elements-button',
-    name: 'V-Button',
+    name: 'VButton',
     media: {
       light: '/images/icons/components/buttons.svg',
       dark: '/images/icons/components/buttons-dark.svg',
@@ -74,7 +74,7 @@ export const elements = [
   {
     id: 9,
     link: 'components-card',
-    name: 'V-Card',
+    name: 'VCard',
     media: {
       light: '/images/icons/components/cards.svg',
       dark: '/images/icons/components/cards-dark.svg',
@@ -92,7 +92,7 @@ export const elements = [
   {
     id: 11,
     link: 'components-tabs',
-    name: 'V-Tabs',
+    name: 'VTabs',
     media: {
       light: '/images/icons/components/tabs.svg',
       dark: '/images/icons/components/tabs-dark.svg',
@@ -101,7 +101,7 @@ export const elements = [
   {
     id: 13,
     link: 'elements-tooltip',
-    name: 'V-Tooltip',
+    name: 'VTooltip',
     media: {
       light: '/images/icons/components/tooltip.svg',
       dark: '/images/icons/components/tooltip-dark.svg',
@@ -158,7 +158,7 @@ export const forms = [
   {
     id: 6,
     link: 'elements-checkbox',
-    name: 'V-Checkbox',
+    name: 'VCheckbox',
     media: {
       light: '/images/icons/components/toggles.svg',
       dark: '/images/icons/components/toggles-dark.svg',
@@ -167,7 +167,7 @@ export const forms = [
   {
     id: 7,
     link: 'elements-radio',
-    name: 'V-Radio',
+    name: 'VRadio',
     media: {
       light: '/images/icons/components/toggles.svg',
       dark: '/images/icons/components/toggles-dark.svg',
@@ -176,7 +176,7 @@ export const forms = [
   {
     id: 8,
     link: 'elements-switch-block',
-    name: 'V-SwitchBlock',
+    name: 'VSwitchBlock',
     media: {
       light: '/images/icons/components/switch.svg',
       dark: '/images/icons/components/switch-dark.svg',
@@ -224,7 +224,7 @@ export const components = [
   {
     id: 1,
     link: 'components-avatar',
-    name: 'V-Avatar',
+    name: 'VAvatar',
     media: {
       light: '/images/icons/components/avatar.svg',
       dark: '/images/icons/components/avatar-dark.svg',
@@ -233,7 +233,7 @@ export const components = [
   {
     id: 2,
     link: 'components-avatar-stack',
-    name: 'V-AvatarStack',
+    name: 'VAvatarStack',
     media: {
       light: '/images/icons/components/avatar.svg',
       dark: '/images/icons/components/avatar-dark.svg',
@@ -242,7 +242,7 @@ export const components = [
   {
     id: 3,
     link: 'components-accordion',
-    name: 'V-Accordion',
+    name: 'VAccordion',
     media: {
       light: '/images/icons/components/accordion.svg',
       dark: '/images/icons/components/accordion-dark.svg',
@@ -251,7 +251,7 @@ export const components = [
   {
     id: 4,
     link: 'components-collapse',
-    name: 'V-Collapse',
+    name: 'VCollapse',
     media: {
       light: '/images/icons/components/accordion.svg',
       dark: '/images/icons/components/accordion-dark.svg',
@@ -260,7 +260,7 @@ export const components = [
   {
     id: 5,
     link: 'components-accordion-image',
-    name: 'V-AccordionImages',
+    name: 'VAccordionImages',
     media: {
       light: '/images/icons/components/accordion.svg',
       dark: '/images/icons/components/accordion-dark.svg',
@@ -269,7 +269,7 @@ export const components = [
   {
     id: 6,
     link: 'components-block',
-    name: 'V-Block',
+    name: 'VBlock',
     media: {
       light: '/images/icons/components/blocks.svg',
       dark: '/images/icons/components/blocks-dark.svg',
@@ -278,7 +278,7 @@ export const components = [
   {
     id: 7,
     link: 'components-breadcrumb',
-    name: 'V-Breadcrumb',
+    name: 'VBreadcrumb',
     media: {
       light: '/images/icons/components/breadcrumb.svg',
       dark: '/images/icons/components/breadcrumb-dark.svg',
@@ -287,7 +287,7 @@ export const components = [
   {
     id: 8,
     link: 'elements-button',
-    name: 'V-Button',
+    name: 'VButton',
     media: {
       light: '/images/icons/components/buttons.svg',
       dark: '/images/icons/components/buttons-dark.svg',
@@ -296,7 +296,7 @@ export const components = [
   {
     id: 9,
     link: 'components-card-advanced',
-    name: 'V-CardAdvanced',
+    name: 'VCardAdvanced',
     media: {
       light: '/images/icons/components/cards.svg',
       dark: '/images/icons/components/cards-dark.svg',
@@ -305,7 +305,7 @@ export const components = [
   {
     id: 10,
     link: 'components-card-media',
-    name: 'V-CardMedia',
+    name: 'VCardMedia',
     media: {
       light: '/images/icons/components/cards.svg',
       dark: '/images/icons/components/cards-dark.svg',
@@ -314,7 +314,7 @@ export const components = [
   {
     id: 11,
     link: 'components-card-social',
-    name: 'V-CardSocial',
+    name: 'VCardSocial',
     media: {
       light: '/images/icons/components/cards.svg',
       dark: '/images/icons/components/cards-dark.svg',
@@ -323,7 +323,7 @@ export const components = [
   {
     id: 12,
     link: 'elements-dropdown',
-    name: 'V-Dropdown',
+    name: 'VDropdown',
     media: {
       light: '/images/icons/components/dropdowns.svg',
       dark: '/images/icons/components/dropdowns-dark.svg',
@@ -332,7 +332,7 @@ export const components = [
   {
     id: 13,
     link: 'components-icon-box',
-    name: 'V-IconBox',
+    name: 'VIconBox',
     media: {
       light: '/images/icons/components/icon-box.svg',
       dark: '/images/icons/components/icon-box-dark.svg',
@@ -341,7 +341,7 @@ export const components = [
   {
     id: 14,
     link: 'elements-message',
-    name: 'V-Message',
+    name: 'VMessage',
     media: {
       light: '/images/icons/components/messages.svg',
       dark: '/images/icons/components/messages-dark.svg',
@@ -350,7 +350,7 @@ export const components = [
   {
     id: 15,
     link: 'elements-modal',
-    name: 'V-Modal',
+    name: 'VModal',
     media: {
       light: '/images/icons/components/modals.svg',
       dark: '/images/icons/components/modals-dark.svg',
@@ -359,7 +359,7 @@ export const components = [
   {
     id: 16,
     link: 'elements-progress',
-    name: 'V-Progress',
+    name: 'VProgress',
     media: {
       light: '/images/icons/components/progress.svg',
       dark: '/images/icons/components/progress-dark.svg',
@@ -368,7 +368,7 @@ export const components = [
   {
     id: 17,
     link: 'components-flex-table',
-    name: 'V-FlexTable',
+    name: 'VFlexTable',
     media: {
       light: '/images/icons/components/flex-tables.svg',
       dark: '/images/icons/components/flex-tables-dark.svg',
@@ -377,7 +377,7 @@ export const components = [
   {
     id: 18,
     link: 'components-tag',
-    name: 'V-Tag',
+    name: 'VTag',
     media: {
       light: '/images/icons/components/badges.svg',
       dark: '/images/icons/components/badges-dark.svg',
@@ -386,7 +386,7 @@ export const components = [
   {
     id: 19,
     link: 'components-snack',
-    name: 'V-Snack',
+    name: 'VSnack',
     media: {
       light: '/images/icons/components/snacks.svg',
       dark: '/images/icons/components/snacks-dark.svg',
@@ -416,7 +416,7 @@ export const plugins = [
   {
     id: 3,
     link: 'components-plugins-simple-datatables',
-    name: 'V-Datatable',
+    name: 'VDatatable',
     media: {
       light: '/images/icons/components/tables.svg',
       dark: '/images/icons/components/tables-dark.svg',
@@ -425,7 +425,7 @@ export const plugins = [
   {
     id: 3,
     link: 'elements-addons-calendar',
-    name: 'V-Calendar',
+    name: 'VCalendar',
     media: {
       light: '/images/icons/components/datepicker.svg',
       dark: '/images/icons/components/datepicker-dark.svg',
@@ -434,7 +434,7 @@ export const plugins = [
   {
     id: 4,
     link: 'components-plugins-plyr',
-    name: 'V-Plyr',
+    name: 'VPlyr',
     media: {
       light: '/images/icons/components/video.svg',
       dark: '/images/icons/components/video-dark.svg',
@@ -443,7 +443,7 @@ export const plugins = [
   {
     id: 5,
     link: 'elements-addons-vueform-multiselect',
-    name: 'V-Multiselect',
+    name: 'VMultiselect',
     media: {
       light: '/images/icons/components/selects.svg',
       dark: '/images/icons/components/selects-dark.svg',
@@ -452,7 +452,7 @@ export const plugins = [
   {
     id: 6,
     link: 'elements-addons-vueform-slider',
-    name: 'V-Slider',
+    name: 'VSlider',
     media: {
       light: '/images/icons/components/slider.svg',
       dark: '/images/icons/components/slider-dark.svg',
@@ -461,7 +461,7 @@ export const plugins = [
   {
     id: 7,
     link: 'components-plugins-tippy',
-    name: 'V-Tippy',
+    name: 'VTippy',
     media: {
       light: '/images/icons/components/popover.svg',
       dark: '/images/icons/components/popover-dark.svg',
