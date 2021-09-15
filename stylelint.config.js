@@ -3,21 +3,29 @@ module.exports = {
   plugins: ['stylelint-scss'],
 
   rules: {
+    /** Font icons */
     'font-family-no-missing-generic-family-keyword': null,
+
+    /** SCSS **/
     'at-rule-no-unknown': null,
-    'no-descending-specificity': null, // TODO
+    'no-descending-specificity': null,
+
+    /** Bulma **/
+    'function-name-case': null,
     'no-duplicate-selectors': null, // TODO
-    'function-name-case': null, // bulma
+    'no-duplicate-selectors': null, // TODO
+
+    /** Vuejs **/
     'selector-pseudo-element-no-unknown': [
       true,
       {
         ignorePseudoElements: ['/^v-deep/'],
       },
     ],
-    'value-keyword-case': [
-      'lower',
+    'selector-pseudo-class-no-unknown': [
+      true,
       {
-        ignoreFunctions: ['v-bind'],
+        ignorePseudoClasses: ['/^deep/', '/^slotted/', '/^global/'],
       },
     ],
   },

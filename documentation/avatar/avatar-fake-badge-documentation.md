@@ -8,7 +8,12 @@ See the code examples for more details about usage.
 
 ```vue
 <template>
-  <VFlex alignItems="flex-end" columnGap=".25rem">
+  <VFlex
+    flex-wrap="wrap"
+    align-items="flex-end"
+    row-gap=".5rem"
+    column-gap=".25rem"
+  >
     <VAvatar
       initials="CT"
       size="small"
@@ -46,7 +51,7 @@ See the code examples for more details about usage.
 
 <!--example-->
 
-<VFlex alignItems="flex-end" columnGap=".25rem">
+<VFlex flex-wrap="wrap" align-items="flex-end" row-gap=".5rem" column-gap=".25rem">
   <VAvatar initials="CT" size="small" badge="/images/icons/flags/united-states-of-america.svg" />
   <VAvatar initials="CT" badge="/images/icons/flags/united-states-of-america.svg" />
   <VAvatar initials="CT" size="medium" badge="/images/icons/flags/united-states-of-america.svg" />

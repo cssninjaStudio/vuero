@@ -53,6 +53,16 @@
           <span class="divider-label">Layout</span>
         </li>
         <li>
+          <RouterLink :to="{ name: 'components-flex' }">
+            VFlex <small>& VFlexItem</small>
+          </RouterLink>
+        </li>
+        <li>
+          <RouterLink :to="{ name: 'components-grid' }">
+            VGrid <small>& VGridItem</small>
+          </RouterLink>
+        </li>
+        <li>
           <RouterLink :to="{ name: 'components-breadcrumb' }">
             VBreadcrumb
           </RouterLink>

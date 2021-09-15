@@ -7,7 +7,12 @@ when no valid URL is provided for the `picture` prop.
 
 ```vue
 <template>
-  <VFlex alignItems="flex-end" columnGap=".25rem">
+  <VFlex
+    flex-wrap="wrap"
+    align-items="flex-end"
+    row-gap=".5rem"
+    column-gap=".25rem"
+  >
     <VAvatar picture="no-file.jpg" size="small" />
     <VAvatar picture="no-file.jpg" />
     <VAvatar picture="no-file.jpg" size="medium" />
@@ -22,7 +27,7 @@ when no valid URL is provided for the `picture` prop.
 
 <!--example-->
 
-<VFlex alignItems="flex-end" columnGap=".25rem">
+<VFlex flex-wrap="wrap" align-items="flex-end" row-gap=".5rem" column-gap=".25rem">
   <VAvatar picture="no-file.jpg" size="small" />
   <VAvatar picture="no-file.jpg" />
   <VAvatar picture="no-file.jpg" size="medium" />

@@ -9,7 +9,12 @@ See the code examples for more details about usage.
 
 ```vue
 <template>
-  <VFlex alignItems="flex-end" columnGap=".25rem">
+  <VFlex
+    flex-wrap="wrap"
+    align-items="flex-end"
+    row-gap=".5rem"
+    column-gap=".25rem"
+  >
     <VAvatar initials="CT" size="small" squared />
     <VAvatar initials="CT" squared />
     <VAvatar initials="CT" size="medium" squared />
@@ -24,7 +29,7 @@ See the code examples for more details about usage.
 
 <!--example-->
 
-<VFlex alignItems="flex-end" columnGap=".25rem">
+<VFlex flex-wrap="wrap" align-items="flex-end" row-gap=".5rem" column-gap=".25rem">
   <VAvatar initials="CT" size="small" squared />
   <VAvatar initials="CT" squared />
   <VAvatar initials="CT" size="medium" squared />

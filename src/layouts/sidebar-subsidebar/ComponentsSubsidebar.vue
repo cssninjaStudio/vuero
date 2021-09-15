@@ -62,6 +62,18 @@ const emit = defineEmits(['close'])
           <span class="divider-label">Layout</span>
         </li>
         <li>
+          <RouterLink :to="{ name: 'components-flex' }">
+            VFlex <small>& VFlexItem</small>
+            <VTag label="v2.0" color="primary" outlined curved />
+          </RouterLink>
+        </li>
+        <li>
+          <RouterLink :to="{ name: 'components-grid' }">
+            VGrid <small>& VGridItem</small>
+            <VTag label="v2.0" color="primary" outlined curved />
+          </RouterLink>
+        </li>
+        <li>
           <RouterLink :to="{ name: 'components-breadcrumb' }">
             VBreadcrumb
           </RouterLink>

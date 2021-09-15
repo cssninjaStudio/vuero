@@ -278,6 +278,44 @@ watch([() => route.fullPath, dropdownElement], () => {
 
               <div class="column-content" data-simplebar>
                 <RouterLink
+                  :to="{ name: 'components-flex' }"
+                  class="dropdown-item is-media"
+                >
+                  <div class="icon">
+                    <i aria-hidden="true" class="lnil lnil-layout-alt-2"></i>
+                  </div>
+                  <div class="meta">
+                    <span>VFlex <small>& VFlexItem</small></span>
+
+                    <VTag
+                      label="v2.0"
+                      color="primary"
+                      outlined
+                      curved
+                      class="ml-3"
+                    />
+                  </div>
+                </RouterLink>
+                <RouterLink
+                  :to="{ name: 'components-grid' }"
+                  class="dropdown-item is-media"
+                >
+                  <div class="icon">
+                    <i aria-hidden="true" class="lnil lnil-grid-alt"></i>
+                  </div>
+                  <div class="meta">
+                    <span>VGrid <small>& VGridItem</small></span>
+
+                    <VTag
+                      label="v2.0"
+                      color="primary"
+                      outlined
+                      curved
+                      class="ml-3"
+                    />
+                  </div>
+                </RouterLink>
+                <RouterLink
                   :to="{ name: 'components-accordion' }"
                   class="dropdown-item is-media"
                 >

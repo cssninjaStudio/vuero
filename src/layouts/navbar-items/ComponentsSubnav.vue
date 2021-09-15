@@ -258,6 +258,28 @@ const activeTab = ref<TabId>('display')
                 <h4 class="column-heading">General</h4>
                 <ul>
                   <li>
+                    <RouterLink :to="{ name: 'components-flex' }">
+                      <span>VFlex <small>& VFlexItem</small></span>
+                      <VTag label="v2.0" color="primary" outlined curved />
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink :to="{ name: 'components-grid' }">
+                      <span>VGrid <small>& VGridItem</small></span>
+                      <VTag label="v2.0" color="primary" outlined curved />
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
+                    </RouterLink>
+                  </li>
+                  <li>
                     <RouterLink :to="{ name: 'components-breadcrumb' }">
                       <span>VBreadcrumb</span>
                       <i

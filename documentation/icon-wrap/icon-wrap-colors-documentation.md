@@ -7,7 +7,12 @@ See code for more details about usage.
 
 ```vue
 <template>
-  <VFlex alignItems="flex-end" columnGap=".25rem">
+  <VFlex
+    flex-wrap="wrap"
+    align-items="flex-end"
+    row-gap=".5rem"
+    column-gap=".25rem"
+  >
     <VIconWrap icon="feather:star" color="primary" />
     <VIconWrap icon="feather:star" color="secondary" />
     <VIconWrap icon="feather:star" color="success" />
@@ -18,7 +23,7 @@ See code for more details about usage.
     <VIconWrap icon="feather:star" color="black" />
     <VIconWrap icon="feather:star" color="white" />
   </VFlex>
-  <VFlex class="mt-4" alignItems="flex-end" columnGap=".25rem">
+  <VFlex class="mt-4" align-items="flex-end" column-gap=".25rem">
     <VIconWrap icon="feather:star" has-background color="primary" />
     <VIconWrap icon="feather:star" has-background color="secondary" />
     <VIconWrap icon="feather:star" has-background color="success" />
@@ -37,7 +42,12 @@ See code for more details about usage.
 <!--example-->
 
 <div>
-  <VFlex alignItems="flex-end" columnGap=".25rem">
+  <VFlex
+  flex-wrap="wrap"
+  align-items="flex-end"
+  row-gap=".5rem"
+  column-gap=".25rem"
+>
     <VIconWrap icon="feather:star" color="primary" />
     <VIconWrap icon="feather:star" color="secondary" />
     <VIconWrap icon="feather:star" color="success" />
@@ -48,7 +58,7 @@ See code for more details about usage.
     <VIconWrap icon="feather:star" color="black" />
     <VIconWrap icon="feather:star" color="white" />
   </VFlex>
-  <VFlex class="mt-4" alignItems="flex-end" columnGap=".25rem">
+  <VFlex class="mt-4" align-items="flex-end" column-gap=".25rem">
     <VIconWrap icon="feather:star" has-background color="primary" />
     <VIconWrap icon="feather:star" has-background color="secondary" />
     <VIconWrap icon="feather:star" has-background color="success" />

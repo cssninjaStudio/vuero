@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { computed } from 'vue'
+
 export type VFlexDirection = 'row' | 'row-reverse' | 'column' | 'column-reverse'
 export type VFlexWrap = 'nowrap' | 'wrap' | 'wrap-reverse'
 export type VFlexJustifyContent =
@@ -12,6 +14,7 @@ export type VFlexJustifyContent =
   | 'space-between'
   | 'space-around'
   | 'space-evenly'
+  | 'normal'
 export type VFlexAlignItems =
   | 'flex-start'
   | 'flex-end'
@@ -22,8 +25,8 @@ export type VFlexAlignItems =
   | 'center'
   | 'baseline'
   | 'stretch'
-export type VFlexAlignContent =
   | 'normal'
+export type VFlexAlignContent =
   | 'flex-start'
   | 'flex-end'
   | 'start'
@@ -34,28 +37,29 @@ export type VFlexAlignContent =
   | 'space-between'
   | 'space-around'
   | 'space-evenly'
+  | 'normal'
 
 export interface VFlexProps {
-  direction?: VFlexDirection
-  wrap?: VFlexWrap
+  inline?: boolean
+  flexDirection?: VFlexDirection
+  flexWrap?: VFlexWrap
   justifyContent?: VFlexJustifyContent
   alignItems?: VFlexAlignItems
   alignContent?: VFlexAlignContent
-  gap?: string
   rowGap?: string
   columnGap?: string
 }
 
 const props = withDefaults(defineProps<VFlexProps>(), {
-  direction: 'row',
-  wrap: 'nowrap',
-  justifyContent: 'flex-start',
-  alignItems: 'stretch',
+  flexDirection: 'row',
+  flexWrap: 'nowrap',
+  justifyContent: 'normal',
+  alignItems: 'normal',
   alignContent: 'normal',
-  gap: '0',
-  rowGap: '0',
-  columnGap: '0',
+  rowGap: 'normal',
+  columnGap: 'normal',
 })
+const display = computed(() => (props.inline ? 'inline-flex' : 'flex'))
 </script>
 
 <template>
@@ -64,15 +68,14 @@ const props = withDefaults(defineProps<VFlexProps>(), {
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .v-flex {
-  display: flex;
-  flex-direction: v-bind('props.direction');
-  flex-wrap: v-bind('props.wrap');
+  display: v-bind(display);
+  flex-direction: v-bind('props.flexDirection');
+  flex-wrap: v-bind('props.flexWrap');
   justify-content: v-bind('props.justifyContent');
   align-items: v-bind('props.alignItems');
   align-content: v-bind('props.alignContent');
-  gap: v-bind('props.gap');
   row-gap: v-bind('props.rowGap');
   column-gap: v-bind('props.columnGap');
 }

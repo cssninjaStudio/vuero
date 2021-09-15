@@ -8,7 +8,12 @@ to the target avatar component. See code for more details about usage.
 
 ```vue
 <template>
-  <VFlex alignItems="flex-end" columnGap=".25rem">
+  <VFlex
+    flex-wrap="wrap"
+    align-items="flex-end"
+    row-gap=".5rem"
+    column-gap=".25rem"
+  >
     <VAvatar picture="/demo/avatars/7.jpg" size="small" dot squared />
     <VAvatar picture="/demo/avatars/8.jpg" dot squared />
     <VAvatar picture="/demo/avatars/11.jpg" size="medium" dot squared />
@@ -23,7 +28,7 @@ to the target avatar component. See code for more details about usage.
 
 <!--example-->
 
-<VFlex alignItems="flex-end" columnGap=".25rem">
+<VFlex flex-wrap="wrap" align-items="flex-end" row-gap=".5rem" column-gap=".25rem">
   <VAvatar picture="/demo/avatars/7.jpg" size="small" dot squared />
   <VAvatar picture="/demo/avatars/8.jpg" dot squared />
   <VAvatar picture="/demo/avatars/11.jpg" size="medium" dot squared />
