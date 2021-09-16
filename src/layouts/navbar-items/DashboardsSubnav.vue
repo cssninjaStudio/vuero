@@ -103,6 +103,17 @@ const activeTab = ref<TabId>('dashboards')
                       ></i>
                     </RouterLink>
                   </li>
+                  <li>
+                    <RouterLink :to="{ name: 'navbar-dashboards-soccer' }">
+                      <i aria-hidden="true" class="lnil lnil-tshirt"></i>
+                      <span>Soccer</span>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
+                    </RouterLink>
+                  </li>
                 </ul>
               </div>
               <div class="column is-3">
@@ -243,6 +254,17 @@ const activeTab = ref<TabId>('dashboards')
                     <RouterLink :to="{ name: 'navbar-dashboards-ecommerce-1' }">
                       <i aria-hidden="true" class="lnil lnil-cart"></i>
                       <span>Ecommerce V1</span>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink :to="{ name: 'navbar-dashboards-jobs' }">
+                      <i aria-hidden="true" class="lnil lnil-briefcase"></i>
+                      <span>Jobs</span>
                       <i
                         aria-hidden="true"
                         class="iconify"

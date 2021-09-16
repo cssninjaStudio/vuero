@@ -185,6 +185,15 @@ const emit = defineEmits(['close'])
                 <span>Course Dashboard</span>
               </RouterLink>
             </li>
+            <li>
+              <RouterLink
+                :to="{ name: 'sidebar-dashboards-jobs' }"
+                class="is-submenu"
+              >
+                <i aria-hidden="true" class="lnil lnil-briefcase"></i>
+                <span>Jobs Dashboard</span>
+              </RouterLink>
+            </li>
           </ul>
         </li>
         <li v-has-nested-router-link class="has-children">
@@ -242,6 +251,15 @@ const emit = defineEmits(['close'])
               >
                 <i aria-hidden="true" class="lnil lnil-video-alt-1"></i>
                 <span>Video</span>
+              </RouterLink>
+            </li>
+            <li>
+              <RouterLink
+                :to="{ name: 'sidebar-dashboards-soccer' }"
+                class="is-submenu"
+              >
+                <i aria-hidden="true" class="lnil lnil-tshirt"></i>
+                <span>Soccer Dashboard</span>
               </RouterLink>
             </li>
           </ul>

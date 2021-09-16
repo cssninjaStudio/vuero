@@ -337,6 +337,10 @@
     color: var(--light-text);
   }
 
+  &.is-paddingless {
+    padding: 0 !important;
+  }
+
   &.is-circle {
     input + span {
       border-radius: var(--radius-rounded);
@@ -495,6 +499,10 @@
 
   &:hover {
     color: var(--light-text);
+  }
+
+  &.is-paddingless {
+    padding: 0 !important;
   }
 
   &.is-square {

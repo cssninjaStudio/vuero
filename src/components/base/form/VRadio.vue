@@ -13,6 +13,7 @@ export interface VRadioProps {
   color?: VRadioColor
   square?: boolean
   solid?: boolean
+  paddingless?: boolean
 }
 
 const emit = defineEmits<VRadioEmits>()
@@ -20,6 +21,7 @@ const props = withDefaults(defineProps<VRadioProps>(), {
   modelValue: undefined,
   label: undefined,
   color: undefined,
+  paddingless: false,
 })
 
 const checked = computed(() => props.value === props.modelValue)
@@ -36,6 +38,7 @@ function change() {
       props.solid ? 'is-solid' : 'is-outlined',
       props.square && 'is-square',
       props.color && `is-${props.color}`,
+      props.paddingless && 'is-paddingless',
     ]"
   >
     <input

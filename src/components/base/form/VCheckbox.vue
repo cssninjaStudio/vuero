@@ -17,6 +17,7 @@ export interface VCheckboxProps {
   modelValue?: (string | number)[]
   circle?: boolean
   solid?: boolean
+  paddingless?: boolean
 }
 
 const emit = defineEmits<VCheckboxEmits>()
@@ -27,6 +28,7 @@ const props = withDefaults(defineProps<VCheckboxProps>(), {
   modelValue: () => [],
   circle: false,
   solid: false,
+  paddingless: false,
 })
 
 const checked = computed(() => props.modelValue.includes(props.value))
@@ -50,6 +52,7 @@ function change() {
       props.solid ? 'is-solid' : 'is-outlined',
       props.circle && 'is-circle',
       props.color && `is-${props.color}`,
+      props.paddingless && 'is-paddingless',
     ]"
   >
     <input

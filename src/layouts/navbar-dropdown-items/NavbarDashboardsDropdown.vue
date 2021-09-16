@@ -187,6 +187,17 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <span>Video</span>
                   </div>
                 </RouterLink>
+                <RouterLink
+                  :to="{ name: 'navbar-dashboards-soccer' }"
+                  class="dropdown-item is-media"
+                >
+                  <div class="icon">
+                    <i aria-hidden="true" class="lnil lnil-tshirt"></i>
+                  </div>
+                  <div class="meta">
+                    <span>Soccer</span>
+                  </div>
+                </RouterLink>
               </div>
             </div>
           </div>
@@ -311,6 +322,17 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                   <div class="meta">
                     <span>Course Board</span>
+                  </div>
+                </RouterLink>
+                <RouterLink
+                  :to="{ name: 'navbar-dashboards-jobs' }"
+                  class="dropdown-item is-media"
+                >
+                  <div class="icon">
+                    <i aria-hidden="true" class="lnil lnil-briefcase"></i>
+                  </div>
+                  <div class="meta">
+                    <span>Jobs Board</span>
                   </div>
                 </RouterLink>
               </div>
