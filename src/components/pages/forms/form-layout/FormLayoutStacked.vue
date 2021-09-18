@@ -55,7 +55,7 @@ const isStuck = computed(() => {
               </VField>
             </div>
 
-            <Vdate-picker
+            <v-date-picker
               v-model="date"
               is-range
               color="green"
@@ -94,9 +94,9 @@ const isStuck = computed(() => {
                   </div>
                 </div>
               </template>
-            </Vdate-picker>
+            </v-date-picker>
 
-            <Vdate-picker
+            <v-date-picker
               v-model="date.start"
               class="column is-3"
               color="green"
@@ -115,9 +115,9 @@ const isStuck = computed(() => {
                   </VControl>
                 </VField>
               </template>
-            </Vdate-picker>
+            </v-date-picker>
 
-            <Vdate-picker
+            <v-date-picker
               v-model="date.end"
               class="column is-3"
               color="green"
@@ -136,7 +136,7 @@ const isStuck = computed(() => {
                   </VControl>
                 </VField>
               </template>
-            </Vdate-picker>
+            </v-date-picker>
 
             <div class="column is-12">
               <VField>

@@ -91,7 +91,7 @@ const selectCustomer = (customer: WizardCustomer) => {
 
     <div class="project-dates">
       <h4>Project Time Frame</h4>
-      <Vdate-picker
+      <v-date-picker
         v-model="wizardData.timeFrame"
         is-range
         color="green"
@@ -136,7 +136,7 @@ const selectCustomer = (customer: WizardCustomer) => {
             </div>
           </div>
         </template>
-      </Vdate-picker>
+      </v-date-picker>
     </div>
 
     <div class="project-budget">

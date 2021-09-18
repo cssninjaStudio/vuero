@@ -34,7 +34,7 @@ const date = ref({
             </div>
           </div>
           <div class="booking-bar">
-            <Vdate-picker v-model="date" is-range color="green" trim-weeks>
+            <v-date-picker v-model="date" is-range color="green" trim-weeks>
               <template #default="{ inputValue, inputEvents }">
                 <div class="booking-bar-inputs">
                   <VControl icon="feather:calendar">
@@ -57,7 +57,7 @@ const date = ref({
                   </VControl>
                 </div>
               </template>
-            </Vdate-picker>
+            </v-date-picker>
           </div>
         </div>
 
