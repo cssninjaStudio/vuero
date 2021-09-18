@@ -45,11 +45,7 @@ const participants = [
         </div>
       </div>
 
-      <div
-        id="project-tab"
-        class="tab-content"
-        :class="[tab === 'project' && 'is-active']"
-      >
+      <div v-if="tab === 'project'" class="tab-content is-active">
         <div class="columns project-details-inner">
           <div class="column is-8">
             <div class="project-details-card">
@@ -281,11 +277,7 @@ const participants = [
       </div>
 
       <!--Project Team-->
-      <div
-        id="team-tab"
-        class="tab-content"
-        :class="[activeTab === 'team' && 'is-active']"
-      >
+      <div v-if="tab === 'team'" class="tab-content is-active">
         <div class="project-details-inner">
           <div class="project-team-card">
             <div class="columns is-multiline">
@@ -438,11 +430,7 @@ const participants = [
         </div>
       </div>
 
-      <div
-        id="tasks-tab"
-        class="tab-content"
-        :class="[activeTab === 'tasks' && 'is-active']"
-      >
+      <div v-if="tab === 'tasks'" class="tab-content is-active">
         <div class="project-details-inner">
           <div class="task-grid">
             <div class="grid-header">
