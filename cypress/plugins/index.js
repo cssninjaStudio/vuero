@@ -11,7 +11,7 @@
 
 // This function is called when a project is opened or re-opened (e.g. due to
 // the project's config changing)
-const fs = require('fs')
+const fs = require('fs/promises')
 
 /**
  * @type {Cypress.PluginConfig}
@@ -31,13 +31,13 @@ module.exports = (on, config) => {
 
       // fs.rename moves the file to the existing directory 'new/path/to'
       // and renames the image to 'screenshot.png'
-      fs.rename(details.path, cleanPath, (err) => {
-        if (err) return reject(err)
+      try {
+        await fs.rename(details.path, cleanPath)
+      } catch (error) {
+        return reject(err)
+      }
 
-        // because we renamed and moved the image, resolve with the new path
-        // so it is accurate in the test results
-        resolve({ path: cleanPath })
-      })
+      resolve({ path: cleanPath })
     })
   })
 }

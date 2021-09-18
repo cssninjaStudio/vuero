@@ -870,7 +870,7 @@ const dashboards = [
     name: 'Video',
     category: 'DASHBOARD',
     path: '/video',
-    pageDelay: 200,
+    pageDelay: 1000,
     checkVisibleSelector: '.page-content-inner',
     displayOrder: 180,
   },
