@@ -1,14 +1,8 @@
 <script lang="ts">
 import type { PropType, ComponentPropsOptions, EmitsOptions } from 'vue'
-import type { FilePond, FilePondEvent, FilePondOptions } from 'filepond'
+import type { FilePondEvent, FilePondOptions } from 'filepond'
 import { onMounted, onUnmounted, ref, defineComponent, h } from 'vue'
-import {
-  OptionTypes,
-  create,
-  supported,
-  registerPlugin,
-  getOptions,
-} from 'filepond'
+import * as FilePond from 'filepond'
 import FilePondPluginFileValidateSize from 'filepond-plugin-file-validate-size'
 import FilePondPluginFileValidateType from 'filepond-plugin-file-validate-type'
 import FilePondPluginImageExitOrientation from 'filepond-plugin-image-exif-orientation'
@@ -35,7 +29,7 @@ const plugins = [
   FilePondPluginImageTransform,
 ]
 
-registerPlugin(...plugins)
+FilePond.registerPlugin(...plugins)
 
 const types = {
   boolean: Boolean,
@@ -59,7 +53,7 @@ const getNativeConstructorFromType = (type: keyof typeof types) => {
   return types[type]
 }
 
-const _OptionTypes = OptionTypes as Record<string, keyof typeof types>
+const _OptionTypes = FilePond.OptionTypes as Record<string, keyof typeof types>
 
 // Activated props
 const propsOptions: ComponentPropsOptions = {}
@@ -67,7 +61,7 @@ const propsOptions: ComponentPropsOptions = {}
 // Events that need to be mapped to emitters
 const eventNames: EmitsOptions = []
 
-const defaultOptions = getOptions() as Record<string, any>
+const defaultOptions = FilePond.getOptions() as Record<string, any>
 
 for (const prop in _OptionTypes) {
   // don't add events to the props array
@@ -105,13 +99,29 @@ export default defineComponent({
   },
   emits: ['input', ...eventNames],
   setup(props, { emit }) {
-    const pond = ref<FilePond>()
+    const pond = ref<FilePond.FilePond>()
     const inputElement = ref<HTMLInputElement>()
     const pondOptions = Object.assign({}, { ...props }) as FilePondOptions
 
     onMounted(() => {
-      if (inputElement.value && supported()) {
-        pond.value = create(inputElement.value, pondOptions)
+      if (inputElement.value && FilePond.supported()) {
+        pond.value = FilePond.create(inputElement.value, {
+          ...pondOptions,
+          fileValidateTypeDetectType: (source, type) =>
+            new Promise((resolve, reject) => {
+              if (pondOptions.acceptedFileTypes) {
+                const index = pondOptions.acceptedFileTypes.findIndex(
+                  (allowedType) => allowedType === type
+                )
+                if (index > -1) {
+                  resolve(type)
+                  return
+                }
+              }
+
+              reject()
+            }),
+        })
 
         for (const eventName of eventNames) {
           const event = eventName as FilePondEvent

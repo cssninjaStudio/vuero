@@ -1,8 +1,12 @@
 <script setup lang="ts">
+import useNotyf from '/@src/composable/useNotyf'
 import { wizardData } from '/@src/state/wizardState'
+
+const notyf = useNotyf()
 
 const onAddFile = (error: any, fileInfo: any) => {
   if (error) {
+    notyf.error(`${error.main}: ${error.sub}`)
     console.error(error)
     return
   }
@@ -15,6 +19,7 @@ const onAddFile = (error: any, fileInfo: any) => {
 
 const onRemoveFile = (error: any, fileInfo: any) => {
   if (error) {
+    notyf.error(error)
     console.error(error)
     return
   }
