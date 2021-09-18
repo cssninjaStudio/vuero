@@ -334,7 +334,7 @@ $shade-variants: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 20,
    * dark-sidebar colors
    */
   // dark-sidebar - dark shades
-  @each $shade in 2, 3, 4, 5, 6, 10 {
+  @each $shade in 2, 3, 4, 5, 6, 10, 12 {
     --dark-sidebar-dark-#{$shade}: hsl(
       var(--dark-sidebar-h),
       var(--dark-sidebar-s),

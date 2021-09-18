@@ -477,147 +477,145 @@
   }
 }
 
-body {
-  &.is-dark {
-    .stepper-form {
-      .form-sections {
-        .form-section {
-          .form-section-title {
-            span {
-              color: var(--dark-dark-text);
-            }
-
-            svg {
-              color: var(--dark-dark-text);
-            }
-          }
-
-          .input-button {
-            background-color: var(--dark-sidebar-light-2) !important;
-            border-color: var(--dark-sidebar-light-12) !important;
-            color: var(--dark-dark-text);
-
-            &:hover {
-              color: var(--primary);
-              border: 2px solid var(--primary) !important;
-            }
-          }
-
-          .fieldset {
-            background: var(--dark-sidebar-dark-2);
-            border-color: var(--dark-sidebar-light-12);
-          }
-
-          .fieldset-separator {
-            border-color: var(--dark-sidebar-light-12);
-          }
-
-          .flex-label h4 {
+.is-dark {
+  .stepper-form {
+    .form-sections {
+      .form-section {
+        .form-section-title {
+          span {
             color: var(--dark-dark-text);
           }
 
-          .options {
-            .option {
-              .indicator {
-                background: var(--primary);
-              }
+          svg {
+            color: var(--dark-dark-text);
+          }
+        }
 
-              input {
-                &:checked {
-                  ~ .indicator {
-                    transform: scale(1);
-                  }
+        .input-button {
+          background-color: var(--dark-sidebar-light-2) !important;
+          border-color: var(--dark-sidebar-light-12) !important;
+          color: var(--dark-dark-text);
 
-                  ~ .option-inner {
-                    border-color: var(--primary) !important;
+          &:hover {
+            color: var(--primary);
+            border: 2px solid var(--primary) !important;
+          }
+        }
 
-                    i {
-                      color: var(--primary);
-                    }
+        .fieldset {
+          background: var(--dark-sidebar-dark-2);
+          border-color: var(--dark-sidebar-light-12);
+        }
+
+        .fieldset-separator {
+          border-color: var(--dark-sidebar-light-12);
+        }
+
+        .flex-label h4 {
+          color: var(--dark-dark-text);
+        }
+
+        .options {
+          .option {
+            .indicator {
+              background: var(--primary);
+            }
+
+            input {
+              &:checked {
+                ~ .indicator {
+                  transform: scale(1);
+                }
+
+                ~ .option-inner {
+                  border-color: var(--primary) !important;
+
+                  i {
+                    color: var(--primary);
                   }
                 }
               }
-
-              .option-inner {
-                background-color: var(--dark-sidebar-light-2) !important;
-                border-color: var(--dark-sidebar-light-12) !important;
-
-                h4 {
-                  color: var(--dark-dark-text);
-                }
-              }
             }
-          }
 
-          .validation-box {
-            background-color: var(--dark-sidebar-light-2) !important;
-            border-color: var(--dark-sidebar-light-12) !important;
-
-            .box-content h3 {
-              color: var(--dark-dark-text);
-            }
-          }
-
-          .form-section-output {
-            .output {
+            .option-inner {
               background-color: var(--dark-sidebar-light-2) !important;
               border-color: var(--dark-sidebar-light-12) !important;
-              color: var(--dark-dark-text);
 
-              > span {
+              h4 {
                 color: var(--dark-dark-text);
               }
+            }
+          }
+        }
 
-              .action {
-                button {
-                  &:hover {
-                    background: var(--dark-sidebar-light-5);
-                  }
+        .validation-box {
+          background-color: var(--dark-sidebar-light-2) !important;
+          border-color: var(--dark-sidebar-light-12) !important;
 
-                  svg {
-                    color: var(--light-text);
-                  }
+          .box-content h3 {
+            color: var(--dark-dark-text);
+          }
+        }
+
+        .form-section-output {
+          .output {
+            background-color: var(--dark-sidebar-light-2) !important;
+            border-color: var(--dark-sidebar-light-12) !important;
+            color: var(--dark-dark-text);
+
+            > span {
+              color: var(--dark-dark-text);
+            }
+
+            .action {
+              button {
+                &:hover {
+                  background: var(--dark-sidebar-light-5);
+                }
+
+                svg {
+                  color: var(--light-text);
                 }
               }
             }
           }
         }
       }
+    }
 
-      .form-stepper {
-        .steps {
-          &:not(.is-hollow) {
-            .steps-marker:not(.is-hollow) {
-              background-color: var(--primary);
-            }
+    .form-stepper {
+      .steps {
+        &:not(.is-hollow) {
+          .steps-marker:not(.is-hollow) {
+            background-color: var(--primary);
           }
+        }
 
-          .steps-segment {
-            &.is-active {
-              ~ .steps-segment::after {
+        .steps-segment {
+          &.is-active {
+            ~ .steps-segment::after {
+              background: var(--dark-sidebar-dark-5);
+            }
+
+            ~ .steps-segment {
+              .steps-marker:not(.is-hollow) {
                 background: var(--dark-sidebar-dark-5);
-              }
-
-              ~ .steps-segment {
-                .steps-marker:not(.is-hollow) {
-                  background: var(--dark-sidebar-dark-5);
-                }
-              }
-
-              &::after {
-                background: var(--dark-sidebar-dark-5);
-              }
-
-              .steps-content {
-                .step-info {
-                  color: var(--dark-dark-text);
-                }
               }
             }
 
             &::after {
-              background-color: var(--primary);
+              background: var(--dark-sidebar-dark-5);
             }
+
+            .steps-content {
+              .step-info {
+                color: var(--dark-dark-text);
+              }
+            }
+          }
+
+          &::after {
+            background-color: var(--primary);
           }
         }
       }
