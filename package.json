@@ -128,7 +128,7 @@
     "@types/vivus": "0.4.4",
     "@typescript-eslint/eslint-plugin": "4.31.1",
     "@typescript-eslint/parser": "4.31.1",
-    "@vitejs/plugin-vue": "1.6.2",
+    "@vitejs/plugin-vue": "1.7.0",
     "@vue/compiler-sfc": "3.2.12",
     "commitlint": "13.1.0",
     "cross-env": "7.0.3",
