@@ -68,6 +68,7 @@ useHead({
         <RouterLink :to="{ name: 'index' }" class="top-logo">
           <AnimatedLogo width="38px" height="38px" />
         </RouterLink>
+
         <label class="dark-mode ml-auto">
           <input
             type="checkbox"
@@ -94,6 +95,7 @@ useHead({
               <div class="control has-validation">
                 <input
                   type="text"
+                  name="email"
                   class="input"
                   placeholder=""
                   autocomplete="email"
@@ -112,6 +114,7 @@ useHead({
               </div>
               <div class="control has-validation">
                 <input
+                  name="password"
                   type="password"
                   class="input"
                   autocomplete="current-password"
@@ -147,6 +150,7 @@ useHead({
               </div>
               <div class="button-wrap has-help">
                 <VButton
+                  id="login-button"
                   :loading="isLoading"
                   color="primary"
                   type="submit"

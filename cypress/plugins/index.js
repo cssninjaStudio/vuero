@@ -11,18 +11,33 @@
 
 // This function is called when a project is opened or re-opened (e.g. due to
 // the project's config changing)
+const fs = require('fs')
 
 /**
  * @type {Cypress.PluginConfig}
  */
+// eslint-disable-next-line no-unused-vars
 module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
-  on('before:browser:launch', (browser = {}, launchOptions) => {
-    // if (browser.name === 'electron') {
-    //   // launchOptions.preferences is a `BrowserWindow` `options` object
-    //   launchOptions.preferences.darkTheme = true
-    //   return launchOptions
-    // }
+
+  on('after:screenshot', (details) => {
+    return new Promise((resolve, reject) => {
+      if (details.testAttemptIndex === 0) {
+        return resolve({})
+      }
+
+      const cleanPath = details.path.replace(/ \(attempt [0-9]+\)/, '')
+
+      // fs.rename moves the file to the existing directory 'new/path/to'
+      // and renames the image to 'screenshot.png'
+      fs.rename(details.path, cleanPath, (err) => {
+        if (err) return reject(err)
+
+        // because we renamed and moved the image, resolve with the new path
+        // so it is accurate in the test results
+        resolve({ path: cleanPath })
+      })
+    })
   })
 }

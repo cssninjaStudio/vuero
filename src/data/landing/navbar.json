@@ -938,6 +938,20 @@
     }
   },
   {
+    "name": "Jobs Dashboard",
+    "category": "DASHBOARD",
+    "displayOrder": 131,
+    "new": false,
+    "route": {
+      "name": "navbar-dashboards-jobs",
+      "path": "/navbar/dashboards/jobs"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/navbar/jobs-dashboard-light.webp",
+      "dark": "/images/screenshots/navbar/jobs-dashboard-dark.webp"
+    }
+  },
+  {
     "name": "Charts Apex",
     "category": "DASHBOARD",
     "displayOrder": 220,
@@ -1089,6 +1103,20 @@
     "screenshot": {
       "light": "/images/screenshots/navbar/video-light.webp",
       "dark": "/images/screenshots/navbar/video-dark.webp"
+    }
+  },
+  {
+    "name": "Soccer league",
+    "category": "DASHBOARD",
+    "displayOrder": 181,
+    "new": true,
+    "route": {
+      "name": "navbar-dashboards-soccer",
+      "path": "/navbar/dashboards/soccer"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/navbar/soccer-league-light.webp",
+      "dark": "/images/screenshots/navbar/soccer-league-dark.webp"
     }
   },
   {

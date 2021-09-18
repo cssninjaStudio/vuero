@@ -10,7 +10,7 @@ useHead({
 </script>
 
 <template>
-  <div class="is-navbar-lg">
+  <div class="is-navbar-lg page-content-inner">
     <ProjectsViewV3 />
   </div>
 </template>
