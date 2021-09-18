@@ -99,6 +99,7 @@
     "tippy.js": "6.3.1",
     "tslib": "2.3.1",
     "v-calendar": "3.0.0-alpha.5",
+    "vee-validate": "4.5.0-alpha.6",
     "vivus": "0.4.6",
     "vue": "3.2.11",
     "vue-accessible-color-picker": "3.0.0",
@@ -106,7 +107,8 @@
     "vue-router": "4.0.10",
     "vue-scrollto": "2.20.0",
     "vue-tippy": "6.0.0-alpha.32",
-    "vue3-apexcharts": "1.4.1"
+    "vue3-apexcharts": "1.4.1",
+    "yup": "^0.32.9"
   },
   "devDependencies": {
     "@commitlint/cli": "13.1.0",

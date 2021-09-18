@@ -2,16 +2,33 @@
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { useHead } from '@vueuse/head'
-import useNotyf from '/@src/composable/useNotyf'
+import { Form, Field, ErrorMessage } from 'vee-validate'
+import * as yup from 'yup'
 
 import { isDark, toggleDarkModeHandler } from '/@src/state/darkModeState'
+import useNotyf from '/@src/composable/useNotyf'
 import sleep from '/@src/utils/sleep'
 
 const router = useRouter()
 const notif = useNotyf()
+
 const isLoading = ref(false)
 
-const handleSignup = async () => {
+// Define a validation schema
+const schema = yup.object({
+  promotional: yup.mixed(),
+  name: yup.string().required(),
+  email: yup.string().required().email(),
+  password: yup.string().required().min(8),
+  passwordCheck: yup
+    .string()
+    .required()
+    .oneOf([yup.ref('password')], 'Passwords do not match'),
+})
+
+const handleSignup = async (values: typeof schema) => {
+  console.log(values)
+
   if (!isLoading.value) {
     isLoading.value = true
     sleep(2000)
@@ -59,67 +76,111 @@ useHead({
                 </div>
                 <div class="auth-form-wrapper">
                   <!-- Login Form -->
-                  <form @submit.prevent="handleSignup">
+                  <Form :validation-schema="schema" @submit="handleSignup">
                     <div id="signin-form" class="login-form">
                       <!-- Input -->
-                      <VField>
-                        <VControl icon="feather:user">
-                          <input
-                            class="input"
-                            type="text"
-                            placeholder="Name"
-                            autocomplete="name"
-                          />
-                        </VControl>
-                      </VField>
+                      <Field v-slot="{ field, errorMessage }" name="name">
+                        <VField>
+                          <VControl
+                            icon="feather:user"
+                            :has-error="Boolean(errorMessage)"
+                          >
+                            <input
+                              v-bind="field"
+                              class="input"
+                              type="text"
+                              placeholder="Name"
+                              autocomplete="name"
+                            />
+                            <p v-if="errorMessage" class="help is-danger">
+                              {{ errorMessage }}
+                            </p>
+                          </VControl>
+                        </VField>
+                      </Field>
+
                       <!-- Input -->
-                      <VField>
-                        <VControl icon="feather:mail">
-                          <input
-                            class="input"
-                            type="text"
-                            placeholder="Email Address"
-                            autocomplete="email"
-                          />
-                        </VControl>
-                      </VField>
+                      <Field v-slot="{ field, errorMessage }" name="email">
+                        <VField>
+                          <VControl
+                            icon="feather:mail"
+                            :has-error="Boolean(errorMessage)"
+                          >
+                            <input
+                              v-bind="field"
+                              class="input"
+                              type="text"
+                              placeholder="Email Address"
+                              autocomplete="email"
+                            />
+                            <p v-if="errorMessage" class="help is-danger">
+                              {{ errorMessage }}
+                            </p>
+                          </VControl>
+                        </VField>
+                      </Field>
+
                       <!-- Input -->
-                      <VField>
-                        <VControl icon="feather:lock">
-                          <input
-                            class="input"
-                            type="password"
-                            placeholder="Password"
-                            autocomplete="new-password"
-                          />
-                        </VControl>
-                      </VField>
+                      <Field v-slot="{ field, errorMessage }" name="password">
+                        <VField>
+                          <VControl
+                            icon="feather:lock"
+                            :has-error="Boolean(errorMessage)"
+                          >
+                            <input
+                              v-bind="field"
+                              class="input"
+                              type="password"
+                              placeholder="Password"
+                              autocomplete="new-password"
+                            />
+                            <p v-if="errorMessage" class="help is-danger">
+                              {{ errorMessage }}
+                            </p>
+                          </VControl>
+                        </VField>
+                      </Field>
+
                       <!-- Input -->
-                      <VField>
-                        <VControl icon="feather:lock">
-                          <input
-                            class="input"
-                            type="password"
-                            placeholder="Repeat Password"
-                          />
-                        </VControl>
-                      </VField>
+                      <Field
+                        v-slot="{ field, errorMessage }"
+                        name="passwordCheck"
+                      >
+                        <VField>
+                          <VControl
+                            icon="feather:lock"
+                            :has-error="Boolean(errorMessage)"
+                          >
+                            <input
+                              v-bind="field"
+                              class="input"
+                              type="password"
+                              placeholder="Repeat Password"
+                            />
+                            <p v-if="errorMessage" class="help is-danger">
+                              {{ errorMessage }}
+                            </p>
+                          </VControl>
+                        </VField>
+                      </Field>
 
                       <VField>
                         <VControl class="setting-item">
                           <label
-                            for="send-promotional"
+                            for="promotional"
                             class="form-switch is-primary"
                           >
-                            <input
-                              id="send-promotional"
+                            <Field
+                              id="promotional"
                               type="checkbox"
-                              class="is-switch"
+                              name="promotional"
+                              value="yes"
                             />
+
                             <i aria-hidden="true"></i>
                           </label>
                           <div class="setting-meta">
-                            <label for="send-promotional">
+                            <label for="promotional">
                               <span>Receive promotional offers</span>
                             </label>
                           </div>
@@ -130,13 +191,19 @@ useHead({
 
                       <VField>
                         <VControl class="login">
-                          <VButton color="primary" bold fullwidth raised>
+                          <VButton
+                            type="submit"
+                            color="primary"
+                            bold
+                            fullwidth
+                            raised
+                          >
                             Sign Up
                           </VButton>
                         </VControl>
                       </VField>
                     </div>
-                  </form>
+                  </Form>
                 </div>
               </div>
             </div>
