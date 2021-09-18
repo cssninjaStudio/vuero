@@ -748,7 +748,10 @@
 
           &.router-link-exact-active {
             box-shadow: var(--light-box-shadow);
-            border-color: var(--fade-grey-dark-3) span, i {
+            border-color: var(--fade-grey-dark-3);
+
+            span,
+            i {
               color: var(--primary);
             }
 
