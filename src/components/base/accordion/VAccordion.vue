@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { reactive } from 'vue'
+import { ref } from 'vue'
 
 export interface VAccordionItem {
   title: string
@@ -13,27 +13,27 @@ export interface VAccordionProps {
 
 const props = withDefaults(defineProps<VAccordionProps>(), {
   items: () => [],
-  openItems: undefined,
+  openItems: () => [],
 })
 
-const internalOpenItems = reactive(props.openItems)
+const internalOpenItems = ref(props.openItems)
 const toggle = (key: number) => {
-  const wasOpen = internalOpenItems.includes(key)
+  const wasOpen = internalOpenItems.value.includes(key)
 
   if (props.exclusive) {
-    internalOpenItems.splice(0, internalOpenItems.length)
+    internalOpenItems.value.splice(0, internalOpenItems.value.length)
 
     if (!wasOpen) {
-      internalOpenItems.push(key)
+      internalOpenItems.value.push(key)
     }
 
     return
   }
 
   if (wasOpen) {
-    internalOpenItems.splice(internalOpenItems.indexOf(key), 1)
+    internalOpenItems.value.splice(internalOpenItems.value.indexOf(key), 1)
   } else {
-    internalOpenItems.push(key)
+    internalOpenItems.value.push(key)
   }
 }
 </script>
@@ -44,8 +44,8 @@ const toggle = (key: number) => {
       v-for="(item, key) in items"
       :key="key"
       class="accordion-item"
-      :open="internalOpenItems.includes(key) || undefined"
-      :class="[internalOpenItems.includes(key) && 'is-active']"
+      :open="internalOpenItems?.includes(key) ?? undefined"
+      :class="[internalOpenItems?.includes(key) && 'is-active']"
     >
       <summary class="accordion-header" @click.prevent="() => toggle(key)">
         {{ item.title }}
