@@ -18,7 +18,6 @@ export interface VPlyrProps {
 
 const props = withDefaults(defineProps<VPlyrProps>(), {
   ratio: '16by9',
-  embed: false,
   options: () => ({}),
 })
 
@@ -45,8 +44,16 @@ onBeforeUnmount(() => {
     :class="[ratio && 'is-' + ratio, reversed && 'reversed-play']"
   >
     <!-- video element -->
+    <iframe
+      v-if="embed"
+      :src="`${source}`"
+      allowfullscreen
+      allowtransparency
+      allow="autoplay"
+    ></iframe>
+
     <video
-      v-if="!embed"
+      v-else
       ref="videoElement"
       controls
       crossorigin
@@ -55,13 +62,5 @@ onBeforeUnmount(() => {
     >
       <source :src="source" type="video/mp4" />
     </video>
-
-    <iframe
-      v-if="embed"
-      :src="`${source}?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;autohide=1&amp;playsinline=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1`"
-      allowfullscreen
-      allowtransparency
-      allow="autoplay"
-    ></iframe>
   </div>
 </template>
