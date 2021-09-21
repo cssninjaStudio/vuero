@@ -2,7 +2,9 @@
 import { ref } from 'vue'
 import { jobs } from '/@src/data/dashboards/jobs'
 
-const tagsValue = []
+export type Job = 'web-developer' | 'uiux-designer' | 'backend-developer'
+
+const tagsValue: Job[] = []
 const tagsOptions = [
   { value: 'web-developer', label: 'Frontend' },
   { value: 'uiux-designer', label: 'UI/UX' },

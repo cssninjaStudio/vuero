@@ -16,6 +16,7 @@ module.exports = {
     'no-duplicate-selectors': null, // TODO
 
     /** Vuejs **/
+    'value-keyword-case': null,
     'selector-pseudo-element-no-unknown': [
       true,
       {
