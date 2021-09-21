@@ -2,6 +2,41 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/cssninjaStudio/vuero/compare/v1.4.0...v2.0.0) (2021-09-21)
+
+### ⚠ BREAKING CHANGES
+
+- **typescript:** remove dashs `-` from components name to match vue standards
+- **typescript:** enable volar and vue-tsc
+
+### Features
+
+- add soccer and jobs dashboards ([386206a](https://github.com/cssninjaStudio/vuero/commit/386206a2cb3b00a769b4bebd8adefaa8f670cca9))
+- add VFlex, VFlexItem, VGrid and VGridItem components ([70afa23](https://github.com/cssninjaStudio/vuero/commit/70afa23e39accb4851ad96ce65b3d4126b3b9535))
+- add video player on home, fix: multiselect shadow ([d88e0cb](https://github.com/cssninjaStudio/vuero/commit/d88e0cb54f14541d544fa55aa5d6ccfa62837f29))
+- **homepage:** add demo search input ([a2c6220](https://github.com/cssninjaStudio/vuero/commit/a2c6220416d7ec47a9d49657b2a7936cee6820dc))
+- **i18n:** translate auth/signup-2 page ([7aa6d3f](https://github.com/cssninjaStudio/vuero/commit/7aa6d3f8c6b12319a5ee1c98844401dd82efbab4))
+- **typescript:** enable volar and vue-tsc ([869969a](https://github.com/cssninjaStudio/vuero/commit/869969a8dab1578108c5bcd783c36b96a295a17c))
+- **typescript:** remove dashs `-` from components name to match vue standards ([a0505c7](https://github.com/cssninjaStudio/vuero/commit/a0505c7c87ef7f3bcc981e143241382b250ced9f))
+- **vee-validate:** add form validation example won signup-2 demo page (close [#82](https://github.com/cssninjaStudio/vuero/issues/82)) ([5c2081f](https://github.com/cssninjaStudio/vuero/commit/5c2081ffc0a05cdf68dfbda2b16608e0c1e009f4))
+
+### Bug Fixes
+
+- **cypress:** add new page + fill auth form when required ([be7ab25](https://github.com/cssninjaStudio/vuero/commit/be7ab2570ca9276d03f3f6829c2f4fbc2b7100dd))
+- **dark:** change border and red colors in dark mode ([a923e09](https://github.com/cssninjaStudio/vuero/commit/a923e0972b47af72164fdd081deb1acba6c81489))
+- **flex-pagination:** aria-current value when empty page ([0d4794e](https://github.com/cssninjaStudio/vuero/commit/0d4794e84989ec064dd31329c0c3a2e2e2798325))
+- **form-stepper:** broken dark mode ([353ba4d](https://github.com/cssninjaStudio/vuero/commit/353ba4dfcd3b63a20ec43387a72961449c8237e4))
+- **icons:** replace huge html file ([ccfc19f](https://github.com/cssninjaStudio/vuero/commit/ccfc19f7db5f180e27fa7b98689583c1b4062fcf))
+- **profile-edit:** edit profile menu item hover color (close [#101](https://github.com/cssninjaStudio/vuero/issues/101)) ([744e7dd](https://github.com/cssninjaStudio/vuero/commit/744e7ddaf55700a1fd2a68590a76546b905bbebb))
+- **project-details:** broken tabs (close [#103](https://github.com/cssninjaStudio/vuero/issues/103)) ([f374b23](https://github.com/cssninjaStudio/vuero/commit/f374b23111563663028bec749cf718d808e75620))
+- **stylelint:** disable value-keyword-case rule ([8be676f](https://github.com/cssninjaStudio/vuero/commit/8be676f14109cb94796f8cba199d8f19f8b30fde))
+- **theme-colors:** use getComputedStyle and map css variable values to themeColors (close [#95](https://github.com/cssninjaStudio/vuero/issues/95)) ([c895d1d](https://github.com/cssninjaStudio/vuero/commit/c895d1d3b3ce04f7bbf69469fc305db083ec8c40))
+- **v-avatar-stack:** add limit into props interface (close [#97](https://github.com/cssninjaStudio/vuero/issues/97)) ([efb9cf9](https://github.com/cssninjaStudio/vuero/commit/efb9cf9b2430209a03dee71b636044fbd3f42dd9))
+- **v-date-picker:** use kebab case ([a715486](https://github.com/cssninjaStudio/vuero/commit/a715486e22a6db2be58919af44db6bded8598258))
+- **v-plyr:** clean iframe source ([0148804](https://github.com/cssninjaStudio/vuero/commit/014880411dcbf4d20095ffbe75803365af6cb580))
+- **vaccordion:** use default value when no openItems props is set (close [#93](https://github.com/cssninjaStudio/vuero/issues/93)) ([632fb1e](https://github.com/cssninjaStudio/vuero/commit/632fb1ef6b65a1f6e5908cfab7af57e417277303))
+- **vfilepond:** custom file validator to map accepted file props ([eb5bc18](https://github.com/cssninjaStudio/vuero/commit/eb5bc1805221c5ee356aa3c8184a544168386b11))
+
 ## [1.4.0](https://github.com/cssninja-digisquad/vuero/compare/v1.3.2...v1.4.0) (2021-09-09)
 
 ### Features
