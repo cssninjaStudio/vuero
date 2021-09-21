@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { useRouter } from 'vue-router'
 import { useHead } from '@vueuse/head'
 import { Form, Field } from 'vee-validate'
@@ -13,27 +14,37 @@ const router = useRouter()
 const notif = useNotyf()
 
 const isLoading = ref(false)
+const { t } = useI18n()
 
 // Define a validation schema
 const schema = yup.object({
   promotional: yup.mixed(),
-  name: yup.string().required(),
-  email: yup.string().required().email(),
-  password: yup.string().required().min(8),
+  name: yup.string().required(t('auth.errors.name.required')),
+  email: yup
+    .string()
+    .required(t('auth.errors.email.required'))
+    .email(t('auth.errors.email.format')),
+  password: yup
+    .string()
+    .required(t('auth.errors.password.required'))
+    .min(8, t('auth.errors.password.length')),
   passwordCheck: yup
     .string()
-    .required()
-    .oneOf([yup.ref('password')], 'Passwords do not match'),
+    .required(t('auth.errors.passwordCheck.required'))
+    .oneOf([yup.ref('password')], t('auth.errors.passwordCheck.match')),
 })
 
 const handleSignup = async (values: typeof schema) => {
-  console.log(values)
+  console.log('handleSignup values')
+  console.table(values)
 
   if (!isLoading.value) {
     isLoading.value = true
-    sleep(2000)
+
+    await sleep(800)
     notif.success('Welcome, Erik Kovalsky')
-    router.push({ name: 'sidebar-dashboards' })
+
+    router.push({ name: 'app' })
     isLoading.value = false
   }
 }
@@ -68,10 +79,10 @@ useHead({
             <div class="columns">
               <div class="column is-12">
                 <div class="auth-content">
-                  <h2>Join Us Now.</h2>
-                  <p>Start by creating your account</p>
+                  <h2>{{ t('auth.title') }}</h2>
+                  <p>{{ t('auth.subtitle') }}</p>
                   <RouterLink :to="{ name: 'auth-login-2' }">
-                    I already have an account
+                    {{ t('auth.action.login') }}
                   </RouterLink>
                 </div>
                 <div class="auth-form-wrapper">
@@ -89,7 +100,7 @@ useHead({
                               v-bind="field"
                               class="input"
                               type="text"
-                              placeholder="Name"
+                              :placeholder="t('auth.placeholder.name')"
                               autocomplete="name"
                             />
                             <p v-if="errorMessage" class="help is-danger">
@@ -110,7 +121,7 @@ useHead({
                               v-bind="field"
                               class="input"
                               type="text"
-                              placeholder="Email Address"
+                              :placeholder="t('auth.placeholder.email')"
                               autocomplete="email"
                             />
                             <p v-if="errorMessage" class="help is-danger">
@@ -131,7 +142,7 @@ useHead({
                               v-bind="field"
                               class="input"
                               type="password"
-                              placeholder="Password"
+                              :placeholder="t('auth.placeholder.password')"
                               autocomplete="new-password"
                             />
                             <p v-if="errorMessage" class="help is-danger">
@@ -155,12 +166,9 @@ useHead({
                               v-bind="field"
                               class="input"
                               type="password"
-                              placeholder="Repeat Password"
+                              :placeholder="t('auth.placeholder.passwordCheck')"
                             />
-                            <p
-                              v-if="(errorMessage as number).toString() "
-                              class="help is-danger"
-                            >
+                            <p v-if="errorMessage" class="help is-danger">
                               {{ errorMessage }}
                             </p>
                           </VControl>
@@ -184,7 +192,7 @@ useHead({
                           </label>
                           <div class="setting-meta">
                             <label for="promotional">
-                              <span>Receive promotional offers</span>
+                              <span>{{ t('auth.label.promotional') }} </span>
                             </label>
                           </div>
                         </VControl>
@@ -201,7 +209,7 @@ useHead({
                             fullwidth
                             raised
                           >
-                            Sign Up
+                            {{ t('auth.action.signup') }}
                           </VButton>
                         </VControl>
                       </VField>

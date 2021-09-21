@@ -10,7 +10,7 @@ import { optionsAdvanced } from '/@src/data/documentation/v-datatable/advanced-d
 import { optionsUsers } from '/@src/data/documentation/v-datatable/users-datatable'
 import { pageTitle } from '/@src/state/sidebarLayoutState'
 
-let interval: NodeJS.Timeout
+let interval: any
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 

@@ -1,3 +1,37 @@
 {
-  "select-language": "Sélectionnez une langue"
+  "select-language": "Sélectionnez une langue",
+  "auth": {
+    "title": "Rejoignez-nous maintenant",
+    "subtitle": "Commencez par créer votre compte",
+    "label": {
+      "promotional": "Recevez des offres promotionnelles"
+    },
+    "action": {
+      "login": "J'ai déjà un compte",
+      "signup": "Créer un compte"
+    },
+    "placeholder": {
+      "name": "Nom",
+      "email": "Adresse électronique",
+      "password": "Mot de passe",
+      "passwordCheck": "Vérification du mot de passe"
+    },
+    "errors": {
+      "name": {
+        "required": "Votre nom, prénom est obligatoire"
+      },
+      "email": {
+        "required": "Entrez votre email, il sera nécessaire pour vous connecter",
+        "format": "Veuillez entrer une adresse électronique valide"
+      },
+      "password": {
+        "required": "Entrez votre mot de passe avec au moins 8 caractères, il vous sera demandé pour vous connecter",
+        "length": "Le mot de passe doit contenir au moins 8 caractères"
+      },
+      "passwordCheck": {
+        "required": "Veuillez confirmer votre mot de passe",
+        "match": "Le mot de passe ne correspond pas"
+      }
+    }
+  }
 }

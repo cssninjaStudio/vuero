@@ -8,8 +8,8 @@ import ViteRadar from 'vite-plugin-radar'
 import PurgeIcons from 'vite-plugin-purge-icons'
 import { imagetools } from 'vite-imagetools'
 import ImageMin from 'vite-plugin-imagemin'
-import VueI18n from '@intlify/vite-plugin-vue-i18n'
 import VueroDocumentation from './vite-plugin-vuero-doc/index'
+import { vueI18n } from '@intlify/vite-plugin-vue-i18n'
 import { VitePWA } from 'vite-plugin-pwa'
 
 const SILENT = Boolean(process.env.SILENT) ?? false
@@ -73,9 +73,7 @@ export default defineConfig({
       'v-calendar',
       'vee-validate',
       'vue',
-      'vue-router',
       'vue-scrollto',
-      'vue-i18n',
       'vue3-apexcharts',
       'vue-tippy',
       'simplebar',
@@ -126,9 +124,9 @@ export default defineConfig({
     /**
      * vite-plugin-vue-i18n plugin does i18n resources pre-compilation / optimizations
      *
-     * @see https://github.com/intlify/vite-plugin-vue-i18n
+     * @see https://github.com/intlify/bundle-tools/tree/main/packages/vite-plugin-vue-i18n
      */
-    VueI18n({
+    vueI18n({
       include: path.resolve(__dirname, './src/locales/**'),
     }),
 

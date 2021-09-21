@@ -1,3 +1,37 @@
 {
-  "select-language": "Sprache auswählen"
+  "select-language": "Sprache auswählen",
+  "auth": {
+    "title": "Jetzt mitmachen",
+    "subtitle": "Beginnen Sie mit der Erstellung Ihres Kontos",
+    "label": {
+      "promotional": "Erhalten Sie Werbeangebote"
+    },
+    "action": {
+      "login": "Ich habe bereits ein Konto",
+      "signup": "Registrieren"
+    },
+    "placeholder": {
+      "name": "Name",
+      "email": "Mailadresse",
+      "password": "Passwort",
+      "passwordCheck": "Passwortüberprüfung"
+    },
+    "errors": {
+      "name": {
+        "required": "Ihr Name, Vorname ist erforderlich"
+      },
+      "email": {
+        "required": "Geben Sie Ihre E-Mail ein, sie wird für die Anmeldung benötigt",
+        "format": "Bitte geben Sie eine gültige E-Mail ein"
+      },
+      "password": {
+        "required": "Geben Sie Ihr Passwort mit mindestens 8 Zeichen ein, es wird für die Anmeldung benötigt",
+        "length": "Das Passwort sollte mindestens 8 Zeichen enthalten"
+      },
+      "passwordCheck": {
+        "required": "Bitte bestätigen Sie Ihr Passwort",
+        "match": "Das Passwort stimmt nicht überein"
+      }
+    }
+  }
 }

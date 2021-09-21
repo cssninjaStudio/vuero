@@ -1,3 +1,37 @@
 {
-  "select-language": "选择语言"
+  "select-language": "选择语言",
+  "auth": {
+    "title": "现在就加入我们",
+    "subtitle": "从创建你的账户开始",
+    "label": {
+      "promotional": "接收促销优惠"
+    },
+    "action": {
+      "login": "我已经有一个账户",
+      "signup": "注册"
+    },
+    "placeholder": {
+      "name": "姓名",
+      "email": "电子邮件地址",
+      "password": "密码",
+      "passwordCheck": "密码验证"
+    },
+    "errors": {
+      "name": {
+        "required": "您的姓名是必填的"
+      },
+      "email": {
+        "required": "输入你的电子邮件，它将是登录的必要条件",
+        "format": "请输入一个有效的电子邮件"
+      },
+      "password": {
+        "required": "请输入你的密码，至少有8个字符，登录时必须输入",
+        "length": "密码应至少包含8个字符"
+      },
+      "passwordCheck": {
+        "required": "请确认您的密码",
+        "match": "该密码不匹配"
+      }
+    }
+  }
 }
