@@ -32,7 +32,7 @@ const filteredData = computed(() => {
 
 <template>
   <div>
-    <div class="user-grid-toolbar is-reversed">
+    <div class="user-grid-toolbar is-reversed tabs-wrapper is-slider">
       <VControl icon="feather:search">
         <input
           v-model="filters"
