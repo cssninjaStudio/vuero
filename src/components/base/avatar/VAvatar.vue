@@ -60,7 +60,10 @@ const props = withDefaults(defineProps<VAvatarProps>(), {
       <img
         v-if="props.picture"
         class="avatar"
-        :class="[props.squared && 'is-squared']"
+        :class="[
+          props.squared && 'is-squared',
+          props.pictureDark && 'light-image',
+        ]"
         :src="props.picture"
         alt=""
         @error.once="(event) => useViaPlaceholderError(event, '150x150')"
