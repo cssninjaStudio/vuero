@@ -160,7 +160,19 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                   <div class="languages-item">
                     <VIconWrap
                       picture="/images/icons/flags/united-states-of-america.svg"
-                    />
+                    >
+                      <template #after>
+                        <VPeity
+                          type="donut"
+                          :values="[100, 100]"
+                          :fill="['var(--primary)', 'transparent']"
+                          :height="50"
+                          :inner-radius="22"
+                          :radius="8"
+                          :width="50"
+                        />
+                      </template>
+                    </VIconWrap>
 
                     <div class="meta">
                       <span class="dark-inverted">English</span>
@@ -168,7 +180,18 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                     </div>
                   </div>
                   <div class="languages-item">
-                    <VIconWrap picture="/images/icons/flags/france.svg" />
+                    <VIconWrap picture="/images/icons/flags/france.svg">
+                      <template #after>
+                        <VPeity
+                          type="donut"
+                          :values="[80, 100]"
+                          :fill="['var(--primary)', 'transparent']"
+                          :height="50"
+                          :inner-radius="22"
+                          :width="50"
+                        />
+                      </template>
+                    </VIconWrap>
 
                     <div class="meta">
                       <span class="dark-inverted">French</span>
@@ -176,7 +199,18 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                     </div>
                   </div>
                   <div class="languages-item">
-                    <VIconWrap picture="/images/icons/flags/germany.svg" />
+                    <VIconWrap picture="/images/icons/flags/germany.svg">
+                      <template #after>
+                        <VPeity
+                          type="donut"
+                          :values="[30, 100]"
+                          :fill="['var(--primary)', 'transparent']"
+                          :height="50"
+                          :inner-radius="22"
+                          :width="50"
+                        />
+                      </template>
+                    </VIconWrap>
 
                     <div class="meta">
                       <span class="dark-inverted">German</span>
@@ -184,7 +218,18 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                     </div>
                   </div>
                   <div class="languages-item">
-                    <VIconWrap picture="/images/icons/flags/spain.svg" />
+                    <VIconWrap picture="/images/icons/flags/spain.svg">
+                      <template #after>
+                        <VPeity
+                          type="donut"
+                          :values="[40, 100]"
+                          :fill="['var(--primary)', 'transparent']"
+                          :height="50"
+                          :inner-radius="22"
+                          :width="50"
+                        />
+                      </template>
+                    </VIconWrap>
 
                     <div class="meta">
                       <span class="dark-inverted">Spanish</span>
@@ -377,7 +422,18 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                 <div class="tools-wrapper">
                   <!--Tool-->
                   <div class="tools-item">
-                    <VIconWrap picture="/images/icons/stacks/illustrator.svg" />
+                    <VIconWrap picture="/images/icons/stacks/illustrator.svg">
+                      <template #after>
+                        <VPeity
+                          type="pie"
+                          :values="[80, 100]"
+                          :fill="['var(--primary)', 'transparent']"
+                          :height="50"
+                          :inner-radius="22"
+                          :width="50"
+                        />
+                      </template>
+                    </VIconWrap>
 
                     <div class="meta">
                       <span class="dark-inverted">Adobe Illustrator</span>
@@ -387,7 +443,18 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
                   <!--Tool-->
                   <div class="tools-item">
-                    <VIconWrap picture="/demo/photos/brands/jira.svg" />
+                    <VIconWrap picture="/demo/photos/brands/jira.svg">
+                      <template #after>
+                        <VPeity
+                          type="pie"
+                          :values="[60, 100]"
+                          :fill="['var(--primary)', 'transparent']"
+                          :height="50"
+                          :inner-radius="22"
+                          :width="50"
+                        />
+                      </template>
+                    </VIconWrap>
 
                     <div class="meta">
                       <span class="dark-inverted">Jira Software</span>
@@ -397,7 +464,18 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
                   <!--Tool-->
                   <div class="tools-item">
-                    <VIconWrap picture="/demo/photos/brands/office.svg" />
+                    <VIconWrap picture="/demo/photos/brands/office.svg">
+                      <template #after>
+                        <VPeity
+                          type="pie"
+                          :values="[95, 100]"
+                          :fill="['var(--primary)', 'transparent']"
+                          :height="50"
+                          :inner-radius="22"
+                          :width="50"
+                        />
+                      </template>
+                    </VIconWrap>
 
                     <div class="meta">
                       <span class="dark-inverted">MS Office</span>

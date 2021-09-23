@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 
 export type UserItem = {
   avatar?: string
@@ -23,6 +23,25 @@ const props = withDefaults(
 )
 
 const tab = ref(props.activeTab)
+
+const getRandom = () => Math.round(Math.random() * 10)
+const values = ref<number[]>([])
+let interval: number
+
+for (let i = 0; i < 20; i++) {
+  values.value.push(getRandom())
+}
+
+onMounted(() => {
+  interval = setInterval(() => {
+    values.value.shift()
+    values.value.push(getRandom())
+  }, 1000)
+})
+
+onUnmounted(() => {
+  clearInterval(interval)
+})
 </script>
 
 <template>
@@ -78,12 +97,17 @@ const tab = ref(props.activeTab)
         :class="[tab === 'posts' && 'is-active']"
       >
         <div class="chart-block">
-          <div class="circle-chart-wrapper">
-            <CircleChart :value="user.posts.progress" :size="54" />
-          </div>
+          <VPeity
+            type="line"
+            :height="45"
+            :width="100"
+            :stroke-width="1.6"
+            :stroke="'var(--primary)'"
+            :values="values"
+          />
           <div class="stats">
-            <span class="dark-inverted">{{ user.posts.count }}</span>
-            <span>Posts</span>
+            <span class="dark-inverted">{{ values[values.length - 1] }}</span>
+            <span>Viewers</span>
           </div>
         </div>
       </div>

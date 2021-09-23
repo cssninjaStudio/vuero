@@ -490,7 +490,7 @@
                   min-width: 32px;
                   height: 32px;
                   border-radius: var(--radius-rounded);
-                  border: 1px solid var(--fade-grey-dark-4);
+                  border: 1px solid transparent;
                 }
               }
 
@@ -920,7 +920,7 @@
                 min-width: 50px;
                 height: 50px;
                 border-radius: var(--radius-rounded);
-                border: 1px solid var(--fade-grey-dark-4);
+                border: 1px solid transparent;
               }
 
               .meta {

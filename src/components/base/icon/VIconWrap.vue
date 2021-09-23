@@ -77,6 +77,7 @@ const isIconify = computed(() => {
       :data-icon="props.icon"
     ></i>
     <i v-else-if="props.icon" aria-hidden="true" :class="props.icon"></i>
+    <slot name="after"></slot>
   </div>
 </template>
 
