@@ -10,7 +10,7 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "removeComments": true,
-    "importHelpers": false,
+    "importHelpers": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
     "lib": ["esnext", "dom"],

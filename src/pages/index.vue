@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import { useHead } from '@vueuse/head'
 
+import packageJson from '../../package.json'
 import { isDark, toggleDarkModeHandler } from '/@src/state/darkModeState'
 
 type TabId = 'elements' | 'components' | 'forms' | 'plugins'
@@ -56,7 +57,9 @@ useHead({
             </h1>
             <h3 class="subtitle is-4 is-light">
               Premium Webapp UI Kit.
-              <span class="tag is-primary is-rounded">1.4</span>
+              <span class="tag is-primary is-rounded">{{
+                packageJson.version
+              }}</span>
             </h3>
 
             <img
@@ -421,12 +424,25 @@ useHead({
 
             <div class="mt-4">
               <VButtons align="centered">
-                <VButton icon="fa-brands:discord" dark-outlined raised
-                  >Discord Access</VButton
+                <VButton
+                  href="https://discord.gg/v2WR6ZvkQ4"
+                  icon="fa-brands:discord"
+                  dark-outlined
+                  raised
                 >
-                <VButton icon="fa-brands:github" dark-outlined raised
-                  >GitHub Access</VButton
+                  Discord Access
+                </VButton>
+                <VButton
+                  v-tooltip.top.rounded="
+                    'Send us your GitHub username at https://support.cssninja.io'
+                  "
+                  icon="fa-brands:github"
+                  style="cursor: help"
+                  dark-outlined
+                  raised
                 >
+                  GitHub Access
+                </VButton>
               </VButtons>
             </div>
           </div>
