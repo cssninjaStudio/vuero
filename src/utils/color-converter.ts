@@ -1,22 +1,46 @@
-export function HSLToHex(hslCss: string) {
-  const sep = hslCss.indexOf(',') > -1 ? ',' : ' '
-  const hsl = hslCss.substr(4).split(')')[0].split('(')[1].split(sep)
+'use-strict'
 
-  const hString = hsl[0]
+const hslRe =
+  /hsl\(\s*(\d+)((?:deg)|(?:turn)|(?:rad))?\s*,?\s*(\d+(?:\.\d+)?%)\s*,?\s*(\d+(?:\.\d+)?%)\s*\)/
+
+export function HSLToHex(hslCss?: string) {
+  if (!hslCss) {
+    return '#fff'
+  }
+
+  const res = hslRe.exec(hslCss)
+  if (res === null) {
+    return '#fff'
+  }
+
+  const [hueString, hueUnit, saturationString, luminanceString] = res.slice(1)
+  if (!hueString || !saturationString || !luminanceString) {
+    return '#fff'
+  }
+
   let h = 0
-  let s = parseFloat(hsl[1].substr(0, hsl[1].length - 1))
-  let l = parseFloat(hsl[2].substr(0, hsl[2].length - 1))
+  let s = parseFloat(saturationString ?? '0')
+  let l = parseFloat(luminanceString ?? '0')
 
   // Strip label and convert to degrees (if necessary)
-  if (hString.indexOf('deg') > -1)
-    h = parseFloat(hString.substr(0, hString.length - 3))
-  else if (hString.indexOf('rad') > -1)
-    h = Math.round(
-      parseFloat(hString.substr(0, hString.length - 3)) * (180 / Math.PI)
-    )
-  else if (hString.indexOf('turn') > -1)
-    h = Math.round(parseFloat(hString.substr(0, hString.length - 4)) * 360)
-  else h = parseFloat(hString)
+  switch (hueUnit) {
+    case 'deg':
+      h = parseFloat(hueString.substr(0, hueString.length - 3))
+      break
+    case 'turn':
+      h = Math.round(
+        parseFloat(hueString.substr(0, hueString.length - 4)) * 360
+      )
+      break
+    case 'rad':
+      h = Math.round(
+        parseFloat(hueString.substr(0, hueString.length - 3)) * (180 / Math.PI)
+      )
+      break
+    default:
+      h = parseFloat(hueString)
+      break
+  }
 
   if (h >= 360) h %= 360
 

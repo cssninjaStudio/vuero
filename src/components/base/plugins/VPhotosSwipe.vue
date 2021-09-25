@@ -162,7 +162,7 @@ const photoswipeParseHash = function () {
   let hash = window.location.hash.substring(1),
     params: Record<string, any> = {}
 
-  if (hash.length < 5) {
+  if (typeof hash !== 'string' || hash.length < 5) {
     return params
   }
 
