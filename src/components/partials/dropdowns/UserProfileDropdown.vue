@@ -6,13 +6,13 @@
         aria-haspopup="true"
         @click="toggle"
       >
-        <VAvatar picture="/demo/avatars/8.jpg" />
+        <VAvatar picture="/images/avatars/svg/vuero-1.svg" />
       </a>
     </template>
 
     <template #content>
       <div class="dropdown-head">
-        <VAvatar size="large" picture="/demo/avatars/8.jpg" />
+        <VAvatar size="large" picture="/images/avatars/svg/vuero-1.svg" />
 
         <div class="meta">
           <span>Erik Kovalsky</span>

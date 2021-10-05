@@ -49,8 +49,8 @@ find documentation -type d -empty -delete
 
 # remove unncecessary public assets for the quickstart
 rm -rf \
-  public/{api,demo,video} \
-  public/images/{avatars,illustrations,photos,screenshots} \
+  public/{api,demo} \
+  public/images/{illustrations,photos,screenshots} \
   public/icons/{components,cryptocurrencies,dashboards,datatable,files,food,layouts,logos,misc,soccer} \
   src/models \
   src/data
@@ -147,11 +147,12 @@ zip -r .release/quickstarter-${PROJECT}-${TAG}.zip . \
   -x ".scannerwork/*" \
   -x ".git/*" \
   -x ".github/*" \
-  -x "pages-quickstart/*" \
-  -x "layouts-quickstart/*" \
-  -x "cypress/screenshots/*" \
+  -x "cypress/*" \
+  -x "scripts/*" \
   -x "sonar-project.properties" \
+  -x "cypress.json" \
   -x "docker-compose.sonarqube.yml"\
+  -x "docker-compose.e2e.yml"\
   -x "docker-compose.yml"
 
 

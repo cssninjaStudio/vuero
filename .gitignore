@@ -155,8 +155,8 @@ cypress/videos
 
 # ignoring vuero releases files
 
-/_.pdf
-/_.zip
+*.pdf
+*.zip
 
 # sonarqube
 
