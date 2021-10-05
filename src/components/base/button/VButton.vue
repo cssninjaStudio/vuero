@@ -231,7 +231,6 @@ export default defineComponent({
     }
 
     return () => {
-      let link
       if (props.to) {
         return h(
           RouterLink,
