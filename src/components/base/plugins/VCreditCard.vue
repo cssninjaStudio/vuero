@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 
 import type { VCreditCardColor } from '/@src/composable/useCreditcardMask'
 
@@ -7,10 +8,10 @@ export interface VCreditCardEmits {
   (e: 'flip'): void
 }
 export interface VCreditCardProps {
-  number: string
-  name: string
-  expiry: string
-  cvc: string | number
+  number?: string
+  name?: string
+  expiry?: string
+  cvc?: string | number
   color?: VCreditCardColor
   flipped?: boolean
 }
@@ -18,10 +19,60 @@ export interface VCreditCardProps {
 const emit = defineEmits<VCreditCardEmits>()
 const props = withDefaults(defineProps<VCreditCardProps>(), {
   color: 'grey',
+  name: 'John Doe',
+  number: '1234 1234 1234 1234',
+  cvc: '123',
+  expiry: '01/30',
 })
 
-const nameUppercase = computed(() => props.name.toUpperCase())
+const { t } = useI18n()
+const nameUppercase = computed(() => props.name?.toUpperCase() ?? '')
 </script>
+
+<i18n lang="yaml">
+de:
+  holder-label: 'Karteninhabername'
+  number-label: 'Kartennummer'
+  expiration-label: 'Ablauf'
+  cvc-label: 'Sicherheitscode'
+  valid-label: 'GÜLTIG'
+  valid-thru-label: 'BIS'
+en:
+  holder-label: 'cardholder name'
+  number-label: 'card number'
+  expiration-label: 'expiration'
+  cvc-label: 'security code'
+  valid-label: 'VALID'
+  valid-thru-label: 'THRU'
+es-MX:
+  holder-label: 'nombre del titular'
+  number-label: 'número de tarjeta'
+  expiration-label: 'caducidad'
+  cvc-label: 'código de seguridad'
+  valid-label: 'VÁLIDO'
+  valid-thru-label: 'HASTA'
+es:
+  holder-label: 'nombre del titular'
+  number-label: 'número de tarjeta'
+  expiration-label: 'caducidad'
+  cvc-label: 'código de seguridad'
+  valid-label: 'VÁLIDO'
+  valid-thru-label: 'HASTA'
+fr:
+  holder-label: 'titulaire de la carte'
+  number-label: 'numéro de carte'
+  expiration-label: 'expiration'
+  cvc-label: 'code de sécurité'
+  valid-label: 'VALABLE'
+  valid-thru-label: "JUSQU'À"
+zh-CN:
+  holder-label: '持卡人姓名'
+  number-label: '卡号'
+  expiration-label: '到期'
+  cvc-label: '安全代码'
+  valid-label: '有效'
+  valid-thru-label: '突破'
+</i18n>
 
 <template>
   <div class="card-container">
@@ -68,29 +119,29 @@ const nameUppercase = computed(() => props.name.toUpperCase())
               transform="matrix(1 0 0 1 60.106 295.0121)"
               class="st2 st3 st4"
             >
-              {{ props.number || '1234 1234 1234 1234' }}
+              {{ props.number }}
             </text>
             <text
               id="svgname"
               transform="matrix(1 0 0 1 54.1064 428.1723)"
               class="st2 st5 st6"
             >
-              {{ nameUppercase || 'JOHN DOE' }}
+              {{ nameUppercase }}
             </text>
             <text
               transform="matrix(1 0 0 1 54.1074 389.8793)"
               class="st7 st5 st8"
             >
-              cardholder name
+              {{ t('holder-label') }}
             </text>
             <text
               transform="matrix(1 0 0 1 479.7754 388.8793)"
               class="st7 st5 st8"
             >
-              expiration
+              {{ t('expiration-label') }}
             </text>
             <text transform="matrix(1 0 0 1 65.1054 241.5)" class="st7 st5 st8">
-              card number
+              {{ t('number-label') }}
             </text>
             <g>
               <text
@@ -98,19 +149,19 @@ const nameUppercase = computed(() => props.name.toUpperCase())
                 transform="matrix(1 0 0 1 574.4219 433.8095)"
                 class="st2 st5 st9"
               >
-                {{ props.expiry || '01/30' }}
+                {{ props.expiry }}
               </text>
               <text
                 transform="matrix(1 0 0 1 479.3848 417.0097)"
                 class="st2 st10 st11"
               >
-                VALID
+                {{ t('valid-label') }}
               </text>
               <text
                 transform="matrix(1 0 0 1 479.3848 435.6762)"
                 class="st2 st10 st11"
               >
-                THRU
+                {{ t('valid-thru-label') }}
               </text>
               <polygon
                 class="st2"
@@ -242,14 +293,14 @@ const nameUppercase = computed(() => props.name.toUpperCase())
               transform="matrix(1 0 0 1 621.999 227.2734)"
               class="st6 st7"
             >
-              {{ props.cvc || '123' }}
+              {{ props.cvc }}
             </text>
             <g class="st8">
               <text
                 transform="matrix(1 0 0 1 518.083 280.0879)"
                 class="st9 st6 st10"
               >
-                security code
+                {{ t('cvc-label') }}
               </text>
             </g>
             <rect x="58.1" y="378.6" class="st11" width="375.5" height="13.5" />
@@ -259,7 +310,7 @@ const nameUppercase = computed(() => props.name.toUpperCase())
               transform="matrix(1 0 0 1 59.5073 228.6099)"
               class="st12 st13"
             >
-              {{ props.name || 'John Doe' }}
+              {{ props.name }}
             </text>
           </g>
         </svg>
