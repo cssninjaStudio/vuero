@@ -46,4 +46,7 @@ createApp({
     app.directive('background', background)
     app.directive('tooltip', tooltip)
   },
-}).then((app) => app.mount('#app'))
+}).then(async ({ app, router }) => {
+  await router.isReady()
+  app.mount('#app')
+})

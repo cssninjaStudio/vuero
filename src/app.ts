@@ -4,7 +4,6 @@ import {
   VNode,
   resolveDynamicComponent,
   Transition,
-  provide,
   App,
 } from 'vue'
 import { RouterView } from 'vue-router'
@@ -13,10 +12,10 @@ import { createI18n } from './i18n'
 import { createRouter } from './router'
 
 import {
-  initUserSession,
-  userSessionSymbol,
+  provideUserSession,
+  useUserSession,
 } from '/@src/composable/useUserSession'
-import { initApi, apiSymbol } from '/@src/composable/useApi'
+import { provideApi } from '/@src/composable/useApi'
 import useNotyf from '/@src/composable/useNotyf'
 
 import VReloadPrompt from './components/base/modal/VReloadPrompt.vue'
@@ -29,23 +28,6 @@ export async function createApp({ enhanceApp }: VueroAppOptions) {
   const head = createHead()
   const i18n = createI18n()
   const router = createRouter()
-  const session = initUserSession()
-  const api = initApi(session)
-
-  /**
-   * Here you can check if your user has a token stored
-   * and check with your api if it still valid before your app start
-   */
-  // if (session.isLoggedIn) {
-  //   try {
-  //     // do api request call to retreive its profile
-  //     const user = await api.get('/users/me')
-  //     session.user = user
-  //   } catch (err) {
-  //     // delete stored token if it fails
-  //     session.token = ''
-  //   }
-  // }
 
   const app = createClientApp({
     // This is the global app setup function
@@ -56,8 +38,25 @@ export async function createApp({ enhanceApp }: VueroAppOptions) {
        *
        * @see /@src/composable/useApi and /@src/composable/useUserSession
        */
-      provide(userSessionSymbol, session)
-      provide(apiSymbol, api)
+      const userSession = provideUserSession()
+      provideApi(userSession)
+
+      /**
+       * Here you can check if your user has a token stored
+       * and check with your api if it still valid before your app start
+       */
+      // if (userSession.isLoggedIn) {
+      //   try {
+      //     // do api request call to retreive its profile
+      //     const user = await api.get('/users/me')
+      //     userSession.user = user
+      //   } catch (err) {
+      //     // delete stored token if it fails
+      //     userSession.token = ''
+      //     // redirect the user somewhere
+      //     router.replace('/auth/login')
+      //   }
+      // }
 
       /**
        * Here we are creating a render function for our router view with
@@ -119,7 +118,9 @@ export async function createApp({ enhanceApp }: VueroAppOptions) {
    * </template>
    */
   router.beforeEach((to, from) => {
-    if (to.meta.requiresAuth && !session.isLoggedIn) {
+    const userSession = useUserSession()
+
+    if (to.meta.requiresAuth && !userSession.isLoggedIn) {
       // this route requires auth, check if logged in
       // if not, redirect to login page.
       const notif = useNotyf()
@@ -146,5 +147,10 @@ export async function createApp({ enhanceApp }: VueroAppOptions) {
     await enhanceApp(app)
   }
 
-  return app
+  return {
+    app,
+    router,
+    head,
+    i18n,
+  }
 }

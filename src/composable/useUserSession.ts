@@ -1,4 +1,4 @@
-import { InjectionKey, ref, computed, inject, reactive } from 'vue'
+import { InjectionKey, ref, computed, inject, reactive, provide } from 'vue'
 import { useStorage } from '@vueuse/core'
 
 export const userSessionSymbol: InjectionKey<UserSessionData> = Symbol()
@@ -11,22 +11,26 @@ export interface UserSessionData {
   isLoggedIn: boolean
 }
 
-export function initUserSession(): UserSessionData {
+export function provideUserSession(): UserSessionData {
   const token = useStorage('token', '')
   const user = ref<UserData>(null)
   const isLoggedIn = computed(() => token.value !== '')
 
-  return reactive({
+  const userSession = reactive({
     token,
     user,
     isLoggedIn,
-  })
+  }) as UserSessionData
+
+  provide(userSessionSymbol, userSession)
+
+  return userSession
 }
 
-export default function useUserSession() {
-  const userSession = inject(userSessionSymbol)
+export function useUserSession() {
+  let userSession = inject(userSessionSymbol)
   if (!userSession) {
-    throw new Error('UserSession not properly injected in app')
+    userSession = provideUserSession()
   }
   return userSession
 }

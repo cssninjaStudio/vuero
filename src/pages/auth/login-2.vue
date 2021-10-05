@@ -4,7 +4,7 @@ import { useRouter, useRoute } from 'vue-router'
 import { useHead } from '@vueuse/head'
 
 import { isDark, toggleDarkModeHandler } from '/@src/state/darkModeState'
-import useUserSession from '/@src/composable/useUserSession'
+import { useUserSession } from '/@src/composable/useUserSession'
 import useNotyf from '/@src/composable/useNotyf'
 import sleep from '/@src/utils/sleep'
 

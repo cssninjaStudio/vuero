@@ -1,33 +1,39 @@
-import { InjectionKey, inject } from 'vue'
+import { InjectionKey, inject, provide } from 'vue'
 import axios, { AxiosInstance } from 'axios'
 
-import { UserSessionData } from './useUserSession'
+import { UserSessionData, useUserSession } from './useUserSession'
 
 export const apiSymbol: InjectionKey<AxiosInstance> = Symbol()
 
-export function initApi(session: UserSessionData) {
+export function provideApi(session: UserSessionData) {
   // Here we set the base URL for all requests made to the api
   const api = axios.create({
-    baseURL: 'http://localhost:1337',
+    baseURL: import.meta.env.VITE_API_BASE_URL,
   })
 
   // We set an interceptor for each request to
   // include Bearer token to the request if user is logged in
   api.interceptors.request.use((config) => {
     if (session.token) {
-      config.headers.Authorization = `Bearer ${session.token}`
+      config.headers = {
+        ...config.headers,
+        Authorization: `Bearer ${session.token}`,
+      }
     }
 
     return config
   })
 
+  provide(apiSymbol, api)
+
   return api
 }
 
-export default function useApi() {
-  const api = inject(apiSymbol)
+export function useApi() {
+  let api = inject(apiSymbol)
   if (!api) {
-    throw new Error('Api not properly injected in app')
+    const userSession = useUserSession()
+    api = provideApi(userSession)
   }
   return api
 }
