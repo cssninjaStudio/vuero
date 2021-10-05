@@ -75,7 +75,7 @@ zh-CN:
 </i18n>
 
 <template>
-  <MinimalLayout>
+  <LandingLayout theme="darker">
     <div class="error-container">
       <div class="error-wrapper">
         <div class="error-inner has-text-centered">
@@ -94,7 +94,7 @@ zh-CN:
         </div>
       </div>
     </div>
-  </MinimalLayout>
+  </LandingLayout>
 </template>
 
 <style lang="scss">

@@ -2,7 +2,6 @@
 import { ref, watchPostEffect, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
-import { activePanel } from '/@src/state/activePanelState'
 import { pageTitle } from '/@src/state/sidebarLayoutState'
 
 export type SidebarTheme =
