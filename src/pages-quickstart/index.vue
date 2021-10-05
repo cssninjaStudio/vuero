@@ -97,7 +97,7 @@ useHead({
       </div>
 
       <!--Feature boxes section-->
-      <a id="features" name="features" />
+      <a id="features" name="features" aria-label="Features" />
       <MarketingFeaturesIcons />
 
       <!--Pricing section-->
@@ -117,7 +117,7 @@ useHead({
 
       <!-- Back To Top Button -->
       <div id="backtotop">
-        <a href="#">
+        <a href="#" aria-label="back to top">
           <i aria-hidden="true" class="fas fa-angle-up"></i>
         </a>
       </div>

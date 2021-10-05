@@ -12,7 +12,7 @@ the `is-rounded` class to the image element.
   <VDropdown title="Dropdown with image" spaced>
     <template #content>
       <a href="#" class="dropdown-item is-media">
-        <img class="item-img" src="/demo/avatars/8.jpg" alt="" />
+        <img class="item-img" src="/images/avatars/svg/vuero-1.svg" alt="" />
         <div class="meta">
           <span>Erik K.</span>
           <span>New York, NY</span>
@@ -56,7 +56,7 @@ the `is-rounded` class to the image element.
         <a href="#" class="dropdown-item is-media">
           <img
             class="item-img"
-            src="/demo/avatars/8.jpg"
+            src="/images/avatars/svg/vuero-1.svg"
             alt=""
           />
           <div class="meta">
@@ -108,7 +108,7 @@ the `is-rounded` class to the image element.
         <a href="#" class="dropdown-item is-media">
           <img
             class="item-img is-rounded"
-            src="/demo/avatars/8.jpg"
+            src="/images/avatars/svg/vuero-1.svg"
             alt=""
           />
           <div class="meta">

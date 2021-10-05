@@ -33,7 +33,10 @@ const userStack = userData.userStack as VAvatarProps[]
                 />
                 <div class="meta">
                   <span>Your Progress</span>
-                  <span class="dark-inverted">Outstanding 🎉</span>
+                  <span class="dark-inverted"
+                    >Outstanding
+                    <span role="img" aria-label="Party Popper">🎉</span></span
+                  >
                 </div>
               </div>
               <div class="button-wrap">

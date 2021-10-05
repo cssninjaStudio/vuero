@@ -176,6 +176,7 @@ useHead({
                 type="text"
                 class="input search-input"
                 placeholder="Search..."
+                aria-label="Search"
               />
               <div class="form-icon">
                 <i
@@ -197,6 +198,7 @@ useHead({
 
             <a
               class="toolbar-link right-panel-trigger"
+              aria-label="View activity"
               @click="activePanel = 'activity'"
             >
               <i
@@ -220,7 +222,7 @@ useHead({
               <div class="profile-avatar">
                 <img
                   class="avatar"
-                  src="/demo/avatars/8.jpg"
+                  src="/images/avatars/svg/vuero-1.svg"
                   alt=""
                   @error.once="
                     (event) => useViaPlaceholderError(event, '150x150')
@@ -466,7 +468,11 @@ useHead({
                 ></i>
               </div>
             </div>
-            <input type="text" placeholder="Type something here..." />
+            <input
+              type="text"
+              placeholder="Type something here..."
+              aria-label="Add new message"
+            />
           </div>
         </div>
 

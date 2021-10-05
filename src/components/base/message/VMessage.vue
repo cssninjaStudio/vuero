@@ -22,7 +22,12 @@ const props = withDefaults(defineProps<VMessageProps>(), {
 
 <template>
   <div class="message" :class="[props.color && `is-${props.color}`]">
-    <a v-if="props.closable" class="delete" @click.prevent="emit('close')"></a>
+    <a
+      v-if="props.closable"
+      aria-label="Dismiss"
+      class="delete"
+      @click.prevent="emit('close')"
+    ></a>
     <div class="message-body"><slot></slot></div>
   </div>
 </template>

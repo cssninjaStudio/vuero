@@ -48,7 +48,7 @@ can easily add a `<VAvatar />` inside your popover.
     <template #content>
       <div class="v-popover-content is-text">
           <div class="popover-head">
-              <VAvatar picture="/demo/avatars/8.jpg" size="small" squared />
+              <VAvatar picture="/images/avatars/svg/vuero-1.svg" size="small" squared />
               <h4 class="dark-inverted">Erik K.</h4>
           </div>
           <div class="popover-body">

@@ -27,6 +27,7 @@ useHead({
 
             <a
               class="toolbar-link right-panel-trigger"
+              aria-label="View activity"
               @click="activePanel = 'activity'"
             >
               <i

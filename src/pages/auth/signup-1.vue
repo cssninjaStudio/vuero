@@ -293,6 +293,7 @@ onUnmounted(() => {
                       <div
                         class="upload-button"
                         role="button"
+                        tabindex="0"
                         @click="uploadModalOpen = true"
                       >
                         <i

@@ -36,7 +36,7 @@ const users = [
 <div class="avatar-stack">
     <VAvatar picture="/demo/avatars/7.jpg" size="medium" />
     <VAvatar initials="JO" color="info" size="medium" />
-    <VAvatar picture="/demo/avatars/8.jpg" size="medium" />
+    <VAvatar picture="/images/avatars/svg/vuero-1.svg" size="medium" />
     <VAvatar picture="/demo/avatars/5.jpg" size="medium" />
     <VAvatar initials="CP" color="success" size="medium" />
     <VAvatar picture="/demo/avatars/5.jpg" size="medium" />

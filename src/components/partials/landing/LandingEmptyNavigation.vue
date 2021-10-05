@@ -42,6 +42,7 @@ watchEffect(() => {
         :class="[isMobileNavOpen && 'is-active']"
         class="navbar-burger burger"
         aria-label="menu"
+        tabindex="0"
         aria-expanded="false"
         @click="isMobileNavOpen = !isMobileNavOpen"
       >

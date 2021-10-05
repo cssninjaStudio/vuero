@@ -49,7 +49,7 @@ const emit = defineEmits(['toggleMobileConversation'])
         <div class="chat-msg-profile">
           <img
             class="chat-msg-img"
-            src="/demo/avatars/8.jpg"
+            src="/images/avatars/svg/vuero-1.svg"
             alt=""
             data-user-popover="3"
             @error.once="(event) => useViaPlaceholderError(event, '150x150')"

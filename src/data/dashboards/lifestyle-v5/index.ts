@@ -64,7 +64,7 @@ export const featuredLeft = {
       duration: '01:43',
       author: {
         name: 'Erik K.',
-        avatar: '/demo/avatars/8.jpg',
+        avatar: '/images/avatars/svg/vuero-1.svg',
       },
       comments: 2,
     },

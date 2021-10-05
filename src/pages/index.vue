@@ -45,11 +45,12 @@ useHead({
                   type="checkbox"
                   class="night-toggle--checkbox"
                   :checked="!isDark"
+                  aria-label="Toggle dark mode"
                   @change="toggleDarkModeHandler"
                 />
-                <label class="night-toggle--btn" for="night-toggle--daynight">
+                <span class="night-toggle--btn" for="night-toggle--daynight">
                   <span class="night-toggle--feature"></span>
-                </label>
+                </span>
               </div>
             </div>
             <h1 class="title is-1 is-bold is-light is-bold">
@@ -452,6 +453,7 @@ useHead({
               ratio="16by9"
               source="https://www.youtube.com/embed/lE5VNpP8JqA"
               poster="/video/poster-2c.jpg"
+              title="VUERO | part 1 - Cleaning the project and getting started"
               embed
             />
           </div>
@@ -862,7 +864,7 @@ useHead({
 
       <!-- Back To Top Button -->
       <div id="backtotop">
-        <a href="#">
+        <a href="#" aria-label="back to top">
           <i aria-hidden="true" class="fas fa-angle-up"></i>
         </a>
       </div>

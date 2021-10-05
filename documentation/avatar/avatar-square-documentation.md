@@ -15,7 +15,7 @@ See code for more details about usage.
     column-gap=".25rem"
   >
     <VAvatar picture="/demo/avatars/7.jpg" size="small" squared />
-    <VAvatar picture="/demo/avatars/8.jpg" squared />
+    <VAvatar picture="/images/avatars/svg/vuero-1.svg" squared />
     <VAvatar picture="/demo/avatars/11.jpg" size="medium" squared />
     <VAvatar picture="/demo/avatars/21.jpg" size="large" squared />
     <VAvatar picture="/demo/avatars/13.jpg" size="big" squared />
@@ -30,7 +30,7 @@ See code for more details about usage.
 
 <VFlex flex-wrap="wrap" align-items="flex-end" row-gap=".5rem" column-gap=".25rem">
   <VAvatar picture="/demo/avatars/7.jpg" size="small" squared />
-  <VAvatar picture="/demo/avatars/8.jpg" squared />
+  <VAvatar picture="/images/avatars/svg/vuero-1.svg" squared />
   <VAvatar picture="/demo/avatars/11.jpg" size="medium" squared />
   <VAvatar picture="/demo/avatars/21.jpg" size="large" squared />
   <VAvatar picture="/demo/avatars/13.jpg" size="big" squared />

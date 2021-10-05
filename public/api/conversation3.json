@@ -25,7 +25,7 @@
                 "id": "2",
                 "type": "msg",
                 "sender": "self",
-                "avatar": "/demo/avatars/8.jpg",
+                "avatar": "/images/avatars/svg/vuero-1.svg",
                 "content": {
                     "text": "Oh, sorry I don't really remember, could you be more specific?",
                     "time": "12:31pm"
@@ -68,7 +68,7 @@
                 "id": "6",
                 "type": "msg",
                 "sender": "self",
-                "avatar": "/demo/avatars/8.jpg",
+                "avatar": "/images/avatars/svg/vuero-1.svg",
                 "content": {
                     "text": "I see, now I remember. Sure I can send it you real quick. Do you want it on your email inbox or is it fine to post ot here?",
                     "time": "09:23am"
@@ -88,7 +88,7 @@
                 "id": "8",
                 "type": "msg",
                 "sender": "self",
-                "avatar": "/demo/avatars/8.jpg",
+                "avatar": "/images/avatars/svg/vuero-1.svg",
                 "content": {
                     "text": "Ok then, I'll shoot you an email in a few minutes.",
                     "time": "09:44am"

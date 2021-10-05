@@ -17,7 +17,7 @@ export const recipes = [
       },
       {
         id: 2,
-        picture: '/demo/avatars/8.jpg',
+        picture: '/images/avatars/svg/vuero-1.svg',
       },
     ],
   },
@@ -185,7 +185,7 @@ export const recipes = [
     followers: [
       {
         id: 1,
-        picture: '/demo/avatars/8.jpg',
+        picture: '/images/avatars/svg/vuero-1.svg',
       },
       {
         id: 2,
@@ -235,7 +235,7 @@ export const recipes = [
     followers: [
       {
         id: 1,
-        picture: '/demo/avatars/8.jpg',
+        picture: '/images/avatars/svg/vuero-1.svg',
       },
       {
         id: 2,

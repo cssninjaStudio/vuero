@@ -20,7 +20,7 @@ export const flexRowsBasic = [
       },
       {
         id: 2,
-        picture: '/demo/avatars/8.jpg',
+        picture: '/images/avatars/svg/vuero-1.svg',
         initials: 'EK',
         color: 'h-purple',
       },
@@ -123,7 +123,7 @@ export const flexRowsAdvanced = [
     id: 0,
     username: 'Erik K.',
     position: 'Product Manager',
-    picture: '/demo/avatars/8.jpg',
+    picture: '/images/avatars/svg/vuero-1.svg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     location: 'Las Vegas, NV',
     industry: 'Software',
@@ -143,7 +143,7 @@ export const flexRowsAdvanced = [
       },
       {
         id: 2,
-        picture: '/demo/avatars/8.jpg',
+        picture: '/images/avatars/svg/vuero-1.svg',
         initials: 'EK',
         color: 'h-purple',
       },

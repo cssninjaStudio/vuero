@@ -16,7 +16,7 @@ export const users = [
     },
     teams: [
       { picture: '/demo/avatars/9.jpg' },
-      { picture: '/demo/avatars/8.jpg' },
+      { picture: '/images/avatars/svg/vuero-1.svg' },
     ],
   },
   {
@@ -47,7 +47,7 @@ export const users = [
     role: 'Product Manager',
     roleColor: 'secondary',
     medias: {
-      avatar: '/demo/avatars/8.jpg',
+      avatar: '/images/avatars/svg/vuero-1.svg',
       flag: '/images/icons/flags/united-states-of-america.svg',
     },
     stats: {
@@ -78,12 +78,12 @@ export const users = [
     teams: [
       { picture: '/demo/avatars/18.jpg' },
       { picture: '/demo/avatars/13.jpg' },
-      { picture: '/demo/avatars/8.jpg' },
-      { picture: '/demo/avatars/8.jpg' },
-      { picture: '/demo/avatars/8.jpg' },
-      { picture: '/demo/avatars/8.jpg' },
-      { picture: '/demo/avatars/8.jpg' },
-      { picture: '/demo/avatars/8.jpg' },
+      { picture: '/images/avatars/svg/vuero-1.svg' },
+      { picture: '/images/avatars/svg/vuero-1.svg' },
+      { picture: '/images/avatars/svg/vuero-1.svg' },
+      { picture: '/images/avatars/svg/vuero-1.svg' },
+      { picture: '/images/avatars/svg/vuero-1.svg' },
+      { picture: '/images/avatars/svg/vuero-1.svg' },
     ],
   },
   {
@@ -119,7 +119,7 @@ export const users = [
       posts: 12,
     },
     teams: [
-      { picture: '/demo/avatars/8.jpg' },
+      { picture: '/images/avatars/svg/vuero-1.svg' },
       { picture: '/demo/avatars/5.jpg' },
     ],
   },
@@ -211,7 +211,7 @@ export const users = [
     },
     teams: [
       { picture: '/demo/avatars/9.jpg' },
-      { picture: '/demo/avatars/8.jpg' },
+      { picture: '/images/avatars/svg/vuero-1.svg' },
     ],
   },
 ]

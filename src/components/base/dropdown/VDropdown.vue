@@ -48,6 +48,7 @@ defineExpose({
       <a
         v-if="props.icon"
         class="is-trigger dropdown-trigger"
+        aria-label="View more actions"
         @click="dropdown.toggle"
       >
         <VIcon :icon="props.icon" />

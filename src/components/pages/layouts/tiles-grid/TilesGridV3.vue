@@ -384,7 +384,10 @@ const optionsSingle = [
                   </p>
                 </div>
                 <div class="tile-meta">
-                  <VAvatar picture="/demo/avatars/8.jpg" size="small" />
+                  <VAvatar
+                    picture="/images/avatars/svg/vuero-1.svg"
+                    size="small"
+                  />
                   <div class="meta-inner">
                     <span class="dark-inverted" data-filter-match>Erik K.</span>
                     <span>2 days ago</span>

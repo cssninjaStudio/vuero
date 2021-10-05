@@ -7,7 +7,7 @@ user1:
   position: Sales Manager
   bio: This is a nice user description that we can use as demo content.
 user2:
-  avatar: /demo/avatars/8.jpg
+  avatar: /images/avatars/svg/vuero-1.svg
   badge: /images/icons/flags/united-states-of-america.svg
   username: Erik K.
   location: Las Begas, NV

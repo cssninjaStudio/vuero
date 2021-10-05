@@ -15,7 +15,7 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
                 <div class="current-user">
                   <VAvatar
                     size="medium"
-                    picture="/demo/avatars/8.jpg"
+                    picture="/images/avatars/svg/vuero-1.svg"
                     squared
                   />
                   <h3>Welcome back, Erik.</h3>

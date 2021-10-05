@@ -23,7 +23,7 @@ const democheck = ref(['value_2'])
       <div class="column is-12">
         <div class="dashboard-header">
           <VAvatar
-            picture="/demo/avatars/8.jpg"
+            picture="/images/avatars/svg/vuero-1.svg"
             badge="/images/icons/flags/united-states-of-america.svg"
             size="xl"
           />

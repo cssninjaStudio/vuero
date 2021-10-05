@@ -546,6 +546,18 @@ const props = defineProps<{
         }
       }
     }
+
+    .navbar-brand {
+      .user-dropdown {
+        .dropdown-menu {
+          .dropdown-content {
+            .dropdown-head {
+              background: var(--dark-sidebar-light-6);
+            }
+          }
+        }
+      }
+    }
   }
 
   .is-notification {

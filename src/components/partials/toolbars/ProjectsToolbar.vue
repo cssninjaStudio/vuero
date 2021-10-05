@@ -11,7 +11,7 @@
       <VAvatar size="small" picture="/demo/avatars/7.jpg" />
       <VAvatar size="small" picture="/demo/avatars/9.jpg" />
       <VAvatar size="small" picture="/demo/avatars/12.jpg" />
-      <VAvatar size="small" picture="/demo/avatars/8.jpg" />
+      <VAvatar size="small" picture="/images/avatars/svg/vuero-1.svg" />
       <VAvatar size="small" picture="/demo/avatars/25.jpg" />
       <VAvatar size="small" picture="/demo/avatars/22.jpg" />
     </div>

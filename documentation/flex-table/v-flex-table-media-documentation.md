@@ -14,7 +14,7 @@ const data = [
     id: 0,
     username: 'Erik K.',
     position: 'Product Manager',
-    picture: '/demo/avatars/8.jpg',
+    picture: '/images/avatars/svg/vuero-1.svg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     location: 'Las Vegas, NV',
     industry: 'Software',

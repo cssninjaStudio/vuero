@@ -35,7 +35,7 @@
                 "id": "3",
                 "type": "msg",
                 "sender": "self",
-                "avatar": "/demo/avatars/8.jpg",
+                "avatar": "/images/avatars/svg/vuero-1.svg",
                 "content": {
                     "text": "Yeah, I know him, the guy's a bit the nervous type.",
                     "time": "04:19pm"
@@ -45,7 +45,7 @@
                 "id": "4",
                 "type": "msg",
                 "sender": "self",
-                "avatar": "/demo/avatars/8.jpg",
+                "avatar": "/images/avatars/svg/vuero-1.svg",
                 "content": {
                     "text": "You should walk him through the latest features and give him our usual guarantees.",
                     "time": "04:20"
@@ -65,7 +65,7 @@
                 "id": "6",
                 "type": "msg",
                 "sender": "self",
-                "avatar": "/demo/avatars/8.jpg",
+                "avatar": "/images/avatars/svg/vuero-1.svg",
                 "content": {
                     "text": "Yes, don't worry, he's going to drop it soon enough.",
                     "time": "06:34pm"

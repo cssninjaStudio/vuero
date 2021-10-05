@@ -43,6 +43,7 @@ watchEffect(() => {
         class="navbar-burger burger"
         aria-label="menu"
         aria-expanded="false"
+        tabindex="0"
         @click="isMobileNavOpen = !isMobileNavOpen"
       >
         <span aria-hidden="true"></span>

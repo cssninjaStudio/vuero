@@ -49,7 +49,7 @@ export const optionsCompany = {
     data: [
       [
         0,
-        '/demo/avatars/8.jpg',
+        '/images/avatars/svg/vuero-1.svg',
         'Erik Kovalsky',
         'Product Manager',
         'busy',

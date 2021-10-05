@@ -99,6 +99,7 @@ watch(
         <li>
           <a
             :class="[activeMobileSubsidebar === 'dashboard' && 'is-active']"
+            aria-label="Display dashboard content"
             @click="activeMobileSubsidebar = 'dashboard'"
           >
             <i
@@ -110,25 +111,28 @@ watch(
         </li>
         <li>
           <a
+            aria-label="Dsiplay layout content"
             :class="[activeMobileSubsidebar === 'layout' && 'is-active']"
             @click="activeMobileSubsidebar = 'layout'"
           >
             <i aria-hidden="true" class="iconify" data-icon="feather:grid"></i>
           </a>
         </li>
-        <li
-          :class="[activeMobileSubsidebar === 'elements' && 'is-active']"
-          @click="activeMobileSubsidebar = 'elements'"
-        >
-          <a>
+        <li>
+          <a
+            aria-label="Dsiplay element content"
+            :class="[activeMobileSubsidebar === 'elements' && 'is-active']"
+            @click="activeMobileSubsidebar = 'elements'"
+          >
             <i aria-hidden="true" class="iconify" data-icon="feather:box"></i>
           </a>
         </li>
-        <li
-          :class="[activeMobileSubsidebar === 'components' && 'is-active']"
-          @click="activeMobileSubsidebar = 'components'"
-        >
-          <a>
+        <li>
+          <a
+            aria-label="Dsiplay components content"
+            :class="[activeMobileSubsidebar === 'components' && 'is-active']"
+            @click="activeMobileSubsidebar = 'components'"
+          >
             <i aria-hidden="true" class="iconify" data-icon="feather:cpu"></i>
           </a>
         </li>
@@ -145,7 +149,7 @@ watch(
 
       <template #bottom-links>
         <li>
-          <a @click="activePanel = 'search'">
+          <a aria-label="Display search panel" @click="activePanel = 'search'">
             <i
               aria-hidden="true"
               class="iconify"
@@ -154,7 +158,7 @@ watch(
           </a>
         </li>
         <li>
-          <a href="#">
+          <a aria-label="View settings" href="#">
             <i
               aria-hidden="true"
               class="iconify"
@@ -195,6 +199,7 @@ watch(
           <a
             :class="[activeMobileSubsidebar === 'dashboard' && 'is-active']"
             data-content="Dashboards"
+            aria-label="View dashboards"
             @click="switchSidebar('dashboard')"
           >
             <i
@@ -210,6 +215,7 @@ watch(
           <a
             :class="[activeMobileSubsidebar === 'layout' && 'is-active']"
             data-content="Layouts"
+            aria-label="View layouts"
             @click="switchSidebar('layout')"
           >
             <i
@@ -225,6 +231,7 @@ watch(
           <a
             :class="[activeMobileSubsidebar === 'elements' && 'is-active']"
             data-content="Elements"
+            aria-label="View elements"
             @click="switchSidebar('elements')"
           >
             <i
@@ -240,6 +247,7 @@ watch(
           <a
             :class="[activeMobileSubsidebar === 'components' && 'is-active']"
             data-content="Components"
+            aria-label="View components"
             @click="switchSidebar('components')"
           >
             <i
@@ -274,14 +282,22 @@ watch(
 
         <!-- Search -->
         <li class="right-panel-trigger is-hidden-touch">
-          <a data-content="Search" @click="activePanel = 'search'">
+          <a
+            aria-label="Display search panel"
+            data-content="Search"
+            @click="activePanel = 'search'"
+          >
             <i
               aria-hidden="true"
               class="iconify sidebar-svg"
               data-icon="feather-search"
             />
           </a>
-          <a class="is-hidden is-inactive" @click="activePanel = 'none'">
+          <a
+            aria-label="Close all panels"
+            class="is-hidden is-inactive"
+            @click="activePanel = 'none'"
+          >
             <i
               aria-hidden="true"
               class="iconify sidebar-svg"
@@ -375,6 +391,7 @@ watch(
 
               <a
                 class="toolbar-link right-panel-trigger"
+                aria-label="View activity panel"
                 @click="activePanel = 'activity'"
               >
                 <i

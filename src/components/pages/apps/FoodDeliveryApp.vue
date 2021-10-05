@@ -76,7 +76,10 @@ onUnmounted(() => {
           />
         </div>
         <div class="header-meta">
-          <h3>$0 delivery for 30 days! 🎉</h3>
+          <h3>
+            $0 delivery for 30 days!
+            <span role="img" aria-label="Party Popper">🎉</span>
+          </h3>
           <p>$0 delivery fee for orders over $10 for 30 days</p>
           <a class="action-link">
             <span>Learn More</span>
@@ -355,7 +358,7 @@ onUnmounted(() => {
           </UIWidget>
 
           <ContactWidget
-            picture="/demo/avatars/8.jpg"
+            picture="/images/avatars/svg/vuero-1.svg"
             username="Erik K."
             email="erikkovalsky@vuero.io"
             company="Vuero Ltd."

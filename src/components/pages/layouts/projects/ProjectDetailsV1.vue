@@ -18,7 +18,7 @@ const participants = [
   { picture: '/demo/avatars/7.jpg' },
   { picture: '/demo/avatars/9.jpg' },
   { picture: '/demo/avatars/12.jpg' },
-  { picture: '/demo/avatars/8.jpg' },
+  { picture: '/images/avatars/svg/vuero-1.svg' },
   { picture: '/demo/avatars/25.jpg' },
   { picture: '/demo/avatars/25.jpg' },
   { picture: '/demo/avatars/25.jpg' },
@@ -339,7 +339,10 @@ const participants = [
               <div class="column is-6 has-border-bottom">
                 <VBlock center title="Erik K." subtitle="Product Manager">
                   <template #icon>
-                    <VAvatar size="medium" picture="/demo/avatars/8.jpg" />
+                    <VAvatar
+                      size="medium"
+                      picture="/images/avatars/svg/vuero-1.svg"
+                    />
                   </template>
 
                   <template #action>
@@ -461,7 +464,7 @@ const participants = [
                         size="small"
                         :avatars="[
                           { picture: '/demo/avatars/7.jpg' },
-                          { picture: '/demo/avatars/8.jpg' },
+                          { picture: '/images/avatars/svg/vuero-1.svg' },
                           { picture: '/demo/avatars/5.jpg' },
                         ]"
                       />

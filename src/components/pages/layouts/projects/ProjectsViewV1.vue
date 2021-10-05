@@ -189,7 +189,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                 size="small"
                 :avatars="[
                   { color: 'success', initials: 'BT' },
-                  { picture: '/demo/avatars/8.jpg' },
+                  { picture: '/images/avatars/svg/vuero-1.svg' },
                 ]"
               />
             </div>

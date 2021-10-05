@@ -10,7 +10,7 @@ export const optionsSingle = [
 export const flexRowsOrders = [
   {
     id: 0,
-    picture: '/demo/avatars/8.jpg',
+    picture: '/images/avatars/svg/vuero-1.svg',
     username: 'Erik K.',
     orderId: '#158456',
     date: 'Oct 31, 2020',

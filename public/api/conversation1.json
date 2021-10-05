@@ -25,7 +25,7 @@
                 "id": "2",
                 "type": "msg",
                 "sender": "self",
-                "avatar": "/demo/avatars/8.jpg",
+                "avatar": "/images/avatars/svg/vuero-1.svg",
                 "content": {
                     "text": "Sure, I'd Love to learn more about it. Do you have any links or documentation?",
                     "time": "08:18pm"
@@ -68,7 +68,7 @@
                 "id": "6",
                 "type": "msg",
                 "sender": "self",
-                "avatar": "/demo/avatars/8.jpg",
+                "avatar": "/images/avatars/svg/vuero-1.svg",
                 "content": {
                     "text": "Thanks, so do you think this one would be a good fit to manage our projects?",
                     "time": "11:32am"
@@ -99,7 +99,7 @@
                 "id": "9",
                 "type": "image",
                 "sender": "self",
-                "avatar": "/demo/avatars/8.jpg",
+                "avatar": "/images/avatars/svg/vuero-1.svg",
                 "content": {
                     "time": null,
                     "image_url": "/demo/photos/demo-apps/2.jpg"
@@ -109,7 +109,7 @@
                 "id": "10",
                 "type": "msg",
                 "sender": "self",
-                "avatar": "/demo/avatars/8.jpg",
+                "avatar": "/images/avatars/svg/vuero-1.svg",
                 "content": {
                     "text": "Well, I think we might give it a shot. At least, it's worth trying. Don't you think so?",
                     "time": "11:49am"

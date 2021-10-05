@@ -3,7 +3,11 @@
     <div class="container">
       <div class="">
         <div class="boxed-cta">
-          <VAvatar class="v-avatar-1" picture="/demo/avatars/8.jpg" size="xl" />
+          <VAvatar
+            class="v-avatar-1"
+            picture="/images/avatars/svg/vuero-1.svg"
+            size="xl"
+          />
           <VAvatar
             class="v-avatar-2"
             picture="/demo/avatars/5.jpg"

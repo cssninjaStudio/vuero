@@ -5,7 +5,7 @@ selectSlotOptions:
     icon: /demo/avatars/7.jpg
   - value: erik
     name: Erik Kovalsky
-    icon: /demo/avatars/8.jpg
+    icon: /images/avatars/svg/vuero-1.svg
   - value: melany
     name: Melany Wallace
     icon: /demo/avatars/25.jpg
@@ -44,7 +44,7 @@ const selectSlotOptions = [
   {
     value: 'erik',
     name: 'Erik Kovalsky',
-    icon: '/demo/avatars/8.jpg',
+    icon: '/images/avatars/svg/vuero-1.svg',
   },
   {
     value: 'melany',

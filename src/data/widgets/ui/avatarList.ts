@@ -11,7 +11,7 @@ export const avatarList = [
   },
   {
     id: 2,
-    picture: '/demo/avatars/8.jpg',
+    picture: '/images/avatars/svg/vuero-1.svg',
     name: 'Erik K.',
   },
 ]
@@ -31,7 +31,7 @@ export const avatarListCreative = [
   },
   {
     id: 2,
-    picture: '/demo/avatars/8.jpg',
+    picture: '/images/avatars/svg/vuero-1.svg',
     name: 'Erik K.',
     color: 'green',
   },

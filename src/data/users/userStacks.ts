@@ -13,7 +13,7 @@ export const userStack1 = [
   },
   {
     id: 2,
-    picture: '/demo/avatars/8.jpg',
+    picture: '/images/avatars/svg/vuero-1.svg',
     initials: 'EK',
     color: 'purple',
   },

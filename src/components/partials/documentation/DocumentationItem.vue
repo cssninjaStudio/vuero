@@ -24,6 +24,7 @@ const displayCode = ref(false)
 
       <a
         v-if="!props.frontmatter.disable_code"
+        aria-label="Toggle code example"
         class="code-trigger"
         :class="[displayCode && 'is-active']"
         @click="displayCode = !displayCode"

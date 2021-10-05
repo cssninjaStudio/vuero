@@ -13,7 +13,7 @@ const props = defineProps<{
       <ul class="icon-side-menu">
         <slot name="links">
           <li>
-            <a href="/">
+            <a aria-label="Back to homepage" href="/">
               <i
                 aria-hidden="true"
                 class="iconify"

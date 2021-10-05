@@ -25,7 +25,7 @@
                 "id": "2",
                 "type": "msg",
                 "sender": "self",
-                "avatar": "/demo/avatars/8.jpg",
+                "avatar": "/images/avatars/svg/vuero-1.svg",
                 "content": {
                     "text": "Sure, I'll give you everything you need to know",
                     "time": "08:54am"
@@ -35,7 +35,7 @@
                 "id": "3",
                 "type": "msg",
                 "sender": "self",
-                "avatar": "/demo/avatars/8.jpg",
+                "avatar": "/images/avatars/svg/vuero-1.svg",
                 "content": {
                     "text": "Would you like some early metrics as well?",
                     "time": "08:58am"
@@ -45,7 +45,7 @@
                 "id": "4",
                 "type": "msg",
                 "sender": "self",
-                "avatar": "/demo/avatars/8.jpg",
+                "avatar": "/images/avatars/svg/vuero-1.svg",
                 "content": {
                     "text": "Also, I have it in several formats. Would you prefer web, PDF or something else?",
                     "time": "09:05am"
@@ -65,7 +65,7 @@
                 "id": "6",
                 "type": "msg",
                 "sender": "self",
-                "avatar": "/demo/avatars/8.jpg",
+                "avatar": "/images/avatars/svg/vuero-1.svg",
                 "content": {
                     "text": "Got it Boss, right on the way.",
                     "time": "09:11"

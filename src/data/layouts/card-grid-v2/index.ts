@@ -44,7 +44,7 @@ export const projects = [
     image: '/demo/photos/apps/2.png',
     owner: {
       id: 8,
-      avatar: '/demo/avatars/8.jpg',
+      avatar: '/images/avatars/svg/vuero-1.svg',
       name: 'Erik K.',
       initials: 'EK',
       color: 'info',
@@ -179,7 +179,7 @@ export const projects = [
       },
       {
         id: 8,
-        picture: '/demo/avatars/8.jpg',
+        picture: '/images/avatars/svg/vuero-1.svg',
         name: 'Erik K.',
         initials: 'EK',
         color: 'h-purple',
@@ -368,7 +368,7 @@ export const projects = [
     team: [
       {
         id: 8,
-        picture: '/demo/avatars/8.jpg',
+        picture: '/images/avatars/svg/vuero-1.svg',
         name: 'Erik K.',
         initials: 'EK',
         color: 'h-purple',

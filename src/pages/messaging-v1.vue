@@ -65,7 +65,7 @@ const onConversationChanged = async () => {
   await sleep(1000)
 
   try {
-    const { data } = await axios.get(
+    const { data } = await axios.get<{ messages: any }>(
       `/api/conversation${selectedConversationId.value}.json`
     )
     if (data.messages && data.messages.message) {
@@ -214,8 +214,8 @@ watchPostEffect(() => {
                         id="users-autocpl"
                         type="text"
                         class="input"
+                        aria-label="To"
                         placeholder="Start typing a name"
-                        autofocus
                       />
                     </div>
                     <div class="icon">
@@ -318,6 +318,7 @@ watchPostEffect(() => {
                               <a
                                 :href="message.content.image_url"
                                 class="action messaging-popup"
+                                aria-label="Maximize"
                               >
                                 <span
                                   class="iconify"
@@ -643,6 +644,7 @@ watchPostEffect(() => {
                     class="input is-rounded"
                     type="text"
                     placeholder="Write a message ..."
+                    aria-label="Write a message"
                   />
                   <div class="send-message">
                     <div
@@ -699,6 +701,7 @@ watchPostEffect(() => {
       <a
         :class="[mobileConversationDetailsOpen && 'is-mobile-active']"
         class="chat-side-fab"
+        aria-label="Close convesation details"
         @click="mobileConversationDetailsOpen = !mobileConversationDetailsOpen"
       >
         <i

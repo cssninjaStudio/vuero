@@ -180,7 +180,7 @@ const dropdown2 = useDropdown(dropdownElement2)
         <div class="reply-bubble">
           <div class="reply-as">
             <img
-              src="/demo/avatars/8.jpg"
+              src="/images/avatars/svg/vuero-1.svg"
               alt=""
               @error.once="(event) => useViaPlaceholderError(event, '150x150')"
             />

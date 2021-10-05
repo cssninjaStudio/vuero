@@ -12,7 +12,7 @@ export const classes = [
     },
     author: {
       id: 8,
-      picture: '/demo/avatars/8.jpg',
+      picture: '/images/avatars/svg/vuero-1.svg',
       username: 'Erik K.',
       initials: 'EK',
       color: 'info',

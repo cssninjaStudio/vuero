@@ -58,7 +58,7 @@ const emit = defineEmits(['toggleMobileConversation'])
         <div class="chat-msg-profile">
           <img
             class="chat-msg-img"
-            src="/demo/avatars/8.jpg"
+            src="/images/avatars/svg/vuero-1.svg"
             alt=""
             data-user-popover="3"
             @error.once="(event) => useViaPlaceholderError(event, '150x150')"
@@ -67,7 +67,8 @@ const emit = defineEmits(['toggleMobileConversation'])
         </div>
         <div class="chat-msg-content">
           <div class="chat-msg-text">
-            Yeah I know, well I feel a bit miserable about that 😂.
+            Yeah I know, well I feel a bit miserable about that
+            <span role="img" aria-label="Faces with Tears of Joy">😂</span>.
           </div>
           <div class="chat-msg-text">I was working on that till 4:00 am.</div>
         </div>
@@ -97,7 +98,7 @@ const emit = defineEmits(['toggleMobileConversation'])
         <div class="chat-msg-profile">
           <img
             class="chat-msg-img"
-            src="/demo/avatars/8.jpg"
+            src="/images/avatars/svg/vuero-1.svg"
             alt=""
             data-user-popover="3"
             @error.once="(event) => useViaPlaceholderError(event, '150x150')"

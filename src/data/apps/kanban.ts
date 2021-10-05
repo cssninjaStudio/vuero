@@ -21,7 +21,7 @@ export const tasks = reactive([
     participants: [
       {
         color: 'info',
-        picture: '/demo/avatars/8.jpg',
+        picture: '/images/avatars/svg/vuero-1.svg',
       },
     ],
   },
@@ -77,7 +77,7 @@ export const tasks = reactive([
     participants: [
       {
         color: 'warning',
-        picture: '/demo/avatars/8.jpg',
+        picture: '/images/avatars/svg/vuero-1.svg',
       },
     ],
   },

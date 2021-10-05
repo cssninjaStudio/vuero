@@ -18,7 +18,7 @@ See code for more details about usage.
     />
     <VIconWrap icon="feather:x" color="danger" />
     <VIconWrap icon="feather:code" />
-    <VIconWrap picture="/demo/avatars/8.jpg" />
+    <VIconWrap picture="/images/avatars/svg/vuero-1.svg" />
     <VIconWrap picture="/demo/avatars/13.jpg" />
   </VFlex>
 </template>
@@ -39,7 +39,7 @@ See code for more details about usage.
       has-background
       has-large-icon
     />
-    <VIconWrap picture="/demo/avatars/8.jpg" />
+    <VIconWrap picture="/images/avatars/svg/vuero-1.svg" />
     <VIconWrap picture="/demo/avatars/13.jpg" />
   </VFlex>
 </div>

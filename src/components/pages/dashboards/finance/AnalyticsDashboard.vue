@@ -202,7 +202,7 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
       <div class="column is-3">
         <!--Widget-->
         <ContactWidget
-          picture="/demo/avatars/8.jpg"
+          picture="/images/avatars/svg/vuero-1.svg"
           username="Erik K."
           email="erikkovalsky@vuero.io"
           company="Vuero Ltd."

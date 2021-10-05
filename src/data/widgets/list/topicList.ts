@@ -53,7 +53,7 @@ export const topicList = [
       },
       {
         id: 3,
-        picture: '/demo/avatars/8.jpg',
+        picture: '/images/avatars/svg/vuero-1.svg',
       },
     ],
   },
@@ -91,7 +91,7 @@ export const topicList = [
       },
       {
         id: 3,
-        picture: '/demo/avatars/8.jpg',
+        picture: '/images/avatars/svg/vuero-1.svg',
       },
       {
         id: 100,

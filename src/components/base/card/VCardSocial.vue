@@ -80,6 +80,7 @@ const icon = computed(() => {
         v-if="icon"
         class="card-header-icon"
         :class="[props.network && `text-${props.network}`]"
+        :aria-label="`View on ${props.network}`"
         @click="emit('iconClick')"
       >
         <VIcon :icon="icon" />

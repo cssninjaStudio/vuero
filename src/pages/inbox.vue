@@ -127,6 +127,7 @@ useHead({
             </div>
             <a
               class="inbox-action inbox-close-sidebar-mobile"
+              aria-label="Close"
               @click="mobileSidebarOpen = false"
             >
               <i aria-hidden="true" class="iconify" data-icon="feather:x"></i>
@@ -236,6 +237,7 @@ useHead({
                 <a
                   :class="[contactSearchOpen && 'is-hidden']"
                   class="button searcv-button"
+                  aria-label="Search"
                 >
                   <span class="icon is-small" @click="contactSearchOpen = true">
                     <i
@@ -248,6 +250,7 @@ useHead({
                 <a
                   :class="[!contactSearchOpen && 'is-hidden']"
                   class="button cancel-searcv-button"
+                  aria-label="Close"
                 >
                   <span
                     class="icon is-small"
@@ -343,6 +346,7 @@ useHead({
             <div class="actions">
               <a
                 class="inbox-action mobile-menu-action"
+                aria-label="Open messages list"
                 @click="mobileSidebarOpen = true"
               >
                 <i
@@ -354,6 +358,7 @@ useHead({
               <a
                 class="inbox-action check-all-action"
                 :class="[isAllChecked && 'is-checked']"
+                aria-label="Toggle selection"
                 @click="toggleSelection"
               >
                 <i

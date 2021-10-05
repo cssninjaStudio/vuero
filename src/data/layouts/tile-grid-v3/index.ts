@@ -118,7 +118,7 @@ export const posts = [
     image: '/demo/photos/20.jpg',
     author: {
       id: 8,
-      avatar: '/demo/avatars/8.jpg',
+      avatar: '/images/avatars/svg/vuero-1.svg',
       name: 'Erik K.',
       initials: 'EK',
       color: 'info',

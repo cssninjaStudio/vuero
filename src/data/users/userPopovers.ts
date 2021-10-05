@@ -28,7 +28,7 @@ export const popovers: {
   },
   user8: {
     id: 8,
-    avatar: '/demo/avatars/8.jpg',
+    avatar: '/images/avatars/svg/vuero-1.svg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Erik K.',
     fullName: 'Erik Kovalsky',

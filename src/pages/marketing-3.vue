@@ -117,7 +117,7 @@ useHead({
 
       <!-- Back To Top Button -->
       <div id="backtotop">
-        <a href="#">
+        <a href="#" aria-label="back to top">
           <i aria-hidden="true" class="fas fa-angle-up"></i>
         </a>
       </div>

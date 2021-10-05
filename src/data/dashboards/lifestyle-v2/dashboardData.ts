@@ -55,7 +55,7 @@ export const avatarStack3 = [
   },
   {
     id: 8,
-    picture: '/demo/avatars/8.jpg',
+    picture: '/images/avatars/svg/vuero-1.svg',
     initials: 'EK',
     color: 'warning',
   },

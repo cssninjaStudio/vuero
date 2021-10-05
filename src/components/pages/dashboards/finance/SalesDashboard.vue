@@ -51,7 +51,7 @@ onMounted(() => {
   <div class="finance-dashboard sales-dashboard">
     <!--Header-->
     <div class="dashboard-header">
-      <VAvatar size="large" picture="/demo/avatars/8.jpg" />
+      <VAvatar size="large" picture="/images/avatars/svg/vuero-1.svg" />
 
       <div class="start">
         <h3 class="dark-inverted">Welcome back, Erik Kovalsky</h3>

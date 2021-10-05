@@ -64,7 +64,11 @@ const layoutComponent = (slug: string) => {
 
 <template>
   <div v-if="hasDynamicLayout">
-    <a class="icon-link" @click.passive="isModalOpen = true">
+    <a
+      aria-label="Open layout switcher"
+      class="icon-link"
+      @click.passive="isModalOpen = true"
+    >
       <i
         aria-hidden="true"
         class="iconify sidebar-svg"

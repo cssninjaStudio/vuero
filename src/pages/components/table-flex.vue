@@ -84,7 +84,7 @@ useHead({
                   <div class="v-avatar is-small">
                     <img
                       class="avatar"
-                      src="/demo/avatars/8.jpg"
+                      src="/images/avatars/svg/vuero-1.svg"
                       alt=""
                       @error.once="
                         (event) => useViaPlaceholderError(event, '150x150')

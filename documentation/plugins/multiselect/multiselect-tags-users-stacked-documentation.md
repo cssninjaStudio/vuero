@@ -5,7 +5,7 @@ tagsStackedUsersOptions:
     image: /demo/avatars/7.jpg
   - value: erik
     name: Erik Kovalsky
-    image: /demo/avatars/8.jpg
+    image: /images/avatars/svg/vuero-1.svg
   - value: melany
     name: Melany Wallace
     image: /demo/avatars/25.jpg
@@ -45,7 +45,7 @@ const tagsStackedUsersOptions = [
   {
     value: 'erik',
     name: 'Erik Kovalsky',
-    image: '/demo/avatars/8.jpg',
+    image: '/images/avatars/svg/vuero-1.svg',
   },
   {
     value: 'melany',

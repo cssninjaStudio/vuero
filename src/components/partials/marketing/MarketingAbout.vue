@@ -13,6 +13,7 @@
             <!--Video PLayer-->
             <VPlyr
               ratio="square"
+              title="Lorem ipsum dolor sit amet"
               source="/video/hands.mp4"
               poster="/video/poster-1c.jpg"
               reversed

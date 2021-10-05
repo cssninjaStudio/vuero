@@ -35,7 +35,7 @@ const textarea = ref('')
         <div class="avatar-stack">
           <VAvatar picture="/demo/avatars/7.jpg" size="small" />
           <VAvatar initials="JO" color="info" size="small" />
-          <VAvatar picture="/demo/avatars/8.jpg" size="small" />
+          <VAvatar picture="/images/avatars/svg/vuero-1.svg" size="small" />
         </div>
       </div>
       <div class="end">
@@ -64,7 +64,7 @@ const textarea = ref('')
       <div class="avatar-stack">
         <VAvatar picture="/demo/avatars/7.jpg" size="small" />
         <VAvatar initials="JO" color="info" size="small" />
-        <VAvatar picture="/demo/avatars/8.jpg" size="small" />
+        <VAvatar picture="/images/avatars/svg/vuero-1.svg" size="small" />
       </div>
     </div>
     <div class="end">

@@ -182,7 +182,7 @@ const isStuck = computed(() => {
                         interactive
                         placement="top-start"
                       >
-                        <VAvatar picture="/demo/avatars/8.jpg" />
+                        <VAvatar picture="/images/avatars/svg/vuero-1.svg" />
                         <template #content>
                           <UserPopoverContent :user="popovers.user8" />
                         </template>
@@ -373,7 +373,7 @@ const isStuck = computed(() => {
                         {
                           name: 'Erik K.',
                           value: 'eric',
-                          icon: '/demo/avatars/8.jpg',
+                          icon: '/images/avatars/svg/vuero-1.svg',
                         },
                         {
                           name: 'Joshua S.',

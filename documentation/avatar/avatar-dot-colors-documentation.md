@@ -16,7 +16,7 @@ See code for more details about usage.
   >
     <VAvatar picture="/demo/avatars/7.jpg" size="medium" dot />
     <VAvatar
-      picture="/demo/avatars/8.jpg"
+      picture="/images/avatars/svg/vuero-1.svg"
       size="medium"
       dot
       dot-color="primary"
@@ -50,7 +50,7 @@ See code for more details about usage.
 
 <VFlex flex-wrap="wrap" align-items="flex-end" row-gap=".5rem" column-gap=".25rem">
   <VAvatar picture="/demo/avatars/7.jpg" size="medium" dot />
-  <VAvatar picture="/demo/avatars/8.jpg" size="medium" dot dotColor="primary" />
+  <VAvatar picture="/images/avatars/svg/vuero-1.svg" size="medium" dot dotColor="primary" />
   <VAvatar picture="/demo/avatars/11.jpg" size="medium" dot dotColor="info" />
   <VAvatar picture="/demo/avatars/21.jpg" size="medium" dot dotColor="warning" />
   <VAvatar picture="/demo/avatars/13.jpg" size="medium" dot dotColor="danger" />

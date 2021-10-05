@@ -99,7 +99,10 @@
               <h4 class="heading">Developers</h4>
               <div class="developers">
                 <VAvatar size="small" picture="/demo/avatars/7.jpg" />
-                <VAvatar size="small" picture="/demo/avatars/8.jpg" />
+                <VAvatar
+                  size="small"
+                  picture="/images/avatars/svg/vuero-1.svg"
+                />
                 <VAvatar size="small" color="danger" initials="DC" />
               </div>
             </div>

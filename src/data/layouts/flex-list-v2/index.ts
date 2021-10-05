@@ -22,7 +22,7 @@ export const projects = [
       },
       {
         id: 2,
-        picture: '/demo/avatars/8.jpg',
+        picture: '/images/avatars/svg/vuero-1.svg',
         initials: 'EK',
         color: 'h-purple',
       },
@@ -273,7 +273,7 @@ export const projects = [
       },
       {
         id: 8,
-        picture: '/demo/avatars/8.jpg',
+        picture: '/images/avatars/svg/vuero-1.svg',
         initials: 'ML',
         color: 'warning',
       },

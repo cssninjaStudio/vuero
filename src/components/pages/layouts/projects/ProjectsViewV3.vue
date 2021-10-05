@@ -154,7 +154,7 @@ const filterProjects = ref(0)
                     { picture: '/demo/avatars/9.jpg' },
                     { color: 'info', initials: 'JD' },
                     { picture: '/demo/avatars/12.jpg' },
-                    { picture: '/demo/avatars/8.jpg' },
+                    { picture: '/images/avatars/svg/vuero-1.svg' },
                     { picture: '/demo/avatars/25.jpg' },
                     { picture: '/demo/avatars/25.jpg' },
                     { picture: '/demo/avatars/25.jpg' },
@@ -227,7 +227,7 @@ const filterProjects = ref(0)
                 <VAvatarStack
                   size="small"
                   :avatars="[
-                    { picture: '/demo/avatars/8.jpg' },
+                    { picture: '/images/avatars/svg/vuero-1.svg' },
                     { picture: '/demo/avatars/22.jpg' },
                     { picture: '/demo/avatars/12.jpg' },
                     { picture: '/demo/avatars/10.jpg' },
@@ -268,7 +268,7 @@ const filterProjects = ref(0)
                   :avatars="[
                     { picture: '/demo/avatars/13.jpg' },
                     { picture: '/demo/avatars/11.jpg' },
-                    { picture: '/demo/avatars/8.jpg' },
+                    { picture: '/images/avatars/svg/vuero-1.svg' },
                     { picture: '/demo/avatars/22.jpg' },
                   ]"
                 />

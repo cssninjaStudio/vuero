@@ -40,7 +40,7 @@ import { activePanel } from '/@src/state/activePanelState'
             <div class="participants-inner">
               <div class="avatar-stack">
                 <VAvatar picture="/demo/avatars/7.jpg" />
-                <VAvatar picture="/demo/avatars/8.jpg" />
+                <VAvatar picture="/images/avatars/svg/vuero-1.svg" />
                 <VAvatar picture="/demo/avatars/5.jpg" />
               </div>
 
@@ -145,7 +145,10 @@ import { activePanel } from '/@src/state/activePanelState'
             <div class="control is-textarea-addon">
               <div class="start">
                 <div class="avatar-stack">
-                  <VAvatar size="small" picture="/demo/avatars/8.jpg" />
+                  <VAvatar
+                    size="small"
+                    picture="/images/avatars/svg/vuero-1.svg"
+                  />
                 </div>
               </div>
               <div class="end">

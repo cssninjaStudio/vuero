@@ -11,7 +11,7 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
     <!--Personal Dashboard V1-->
     <!--Header-->
     <div class="dashboard-header">
-      <VAvatar picture="/demo/avatars/8.jpg" size="large" />
+      <VAvatar picture="/images/avatars/svg/vuero-1.svg" size="large" />
       <div class="start">
         <h3>Welcome back, Erik Kovalsky</h3>
         <p>We're very happy to see you again on your personal dashboard.</p>

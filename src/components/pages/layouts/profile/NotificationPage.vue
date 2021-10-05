@@ -24,7 +24,10 @@
                 </div>
               </div>
               <div class="box-end">
-                <VAvatar size="small" picture="/demo/avatars/8.jpg" />
+                <VAvatar
+                  size="small"
+                  picture="/images/avatars/svg/vuero-1.svg"
+                />
               </div>
             </div>
           </div>
@@ -167,7 +170,10 @@
                 </div>
               </div>
               <div class="box-end">
-                <VAvatar size="small" picture="/demo/avatars/8.jpg" />
+                <VAvatar
+                  size="small"
+                  picture="/images/avatars/svg/vuero-1.svg"
+                />
               </div>
             </div>
           </div>

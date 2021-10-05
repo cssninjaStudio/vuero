@@ -7,7 +7,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
     <div class="profile-header has-text-centered">
       <VAvatar
         size="xl"
-        picture="/demo/avatars/8.jpg"
+        picture="/images/avatars/svg/vuero-1.svg"
         badge="/images/icons/flags/united-states-of-america.svg"
       />
 

@@ -6,7 +6,7 @@ export const selectSlotOptions = [
   {
     value: 'default',
     name: 'Select an account',
-    icon: '/demo/avatars/8.jpg',
+    icon: '/images/avatars/svg/vuero-1.svg',
   },
   {
     value: '4156 1000 56565 17',

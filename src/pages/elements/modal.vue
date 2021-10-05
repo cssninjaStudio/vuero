@@ -535,7 +535,7 @@ useHead({
                           <li>
                             <span class="item-icon">
                               <img
-                                src="/demo/avatars/8.jpg"
+                                src="/images/avatars/svg/vuero-1.svg"
                                 alt=""
                                 @error.once="
                                   (event) =>
@@ -778,7 +778,7 @@ useHead({
                           <li>
                             <span class="item-icon">
                               <img
-                                src="/demo/avatars/8.jpg"
+                                src="/images/avatars/svg/vuero-1.svg"
                                 alt=""
                                 @error.once="
                                   (event) =>

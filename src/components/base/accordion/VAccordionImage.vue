@@ -24,7 +24,7 @@ const props = withDefaults(defineProps<VAccordionImageProps>(), {
         v-for="(item, key) in props.items"
         :key="key"
         class="has-background-image"
-        tabindex="1"
+        tabindex="0"
         :style="{ backgroundImage: `url(${item.image})` }"
       >
         <div>

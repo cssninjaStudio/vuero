@@ -32,7 +32,7 @@ import {
   <div class="ecommerce-dashboard ecommerce-dashboard-v1">
     <!--Header-->
     <div class="dashboard-header">
-      <VAvatar picture="/demo/avatars/8.jpg" size="large" />
+      <VAvatar picture="/images/avatars/svg/vuero-1.svg" size="large" />
       <div class="start">
         <h3 class="dark-inverted">Welcome back, Erik Kovalsky</h3>
         <p>We're very happy to see you again on your dashboard.</p>
