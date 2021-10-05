@@ -23,7 +23,7 @@ const date = reactive({
 </script>
 
 <template>
-  <Vdate-picker v-model="range" is-range color="green" trim-weeks>
+  <v-date-picker v-model="range" is-range color="green" trim-weeks>
     <template #default="{ inputValue, inputEvents }">
       <VField addons>
         <VControl>
@@ -43,7 +43,7 @@ const date = reactive({
         </VControl>
       </VField>
     </template>
-  </Vdate-picker>
+  </v-date-picker>
 </template>
 ```
 
@@ -51,7 +51,7 @@ const date = reactive({
 
 <!--example-->
 
-<Vdate-picker v-model="frontmatter.state.range" is-range color="green" trim-weeks>
+<v-date-picker v-model="frontmatter.state.range" is-range color="green" trim-weeks>
   <template v-slot="{ inputValue, inputEvents }">
     <VField addons>
       <VControl>
@@ -73,6 +73,6 @@ const date = reactive({
       </VControl>
     </VField>
   </template>
-</Vdate-picker>
+</v-date-picker>
 
 <!--/example-->
