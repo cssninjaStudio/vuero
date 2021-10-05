@@ -1,5 +1,6 @@
 #!/bin/bash
 
+DIRECTORY=`dirname $0`
 PROJECT=$1
 TAG=$2
 
@@ -43,37 +44,7 @@ zip -r .release/template-${PROJECT}-${TAG}.zip . \
   -x "docker-compose.sonarqube.yml"\
   -x "docker-compose.yml"
 
-# replaces quickstarter pages and layout
-rm -rf \
-  src/pages \
-  src/layouts \
-  dist
-
-mv \
-  src/pages-quickstart \
-  src/pages
-
-mv \
-  src/layouts-quickstart \
-  src/layouts
-
-## build without artifacts and with quickstarter content
-yarn build
-
-# zip sources quickstarter-${PROJECT}-${TAG}.zip
-zip -r .release/quickstarter-${PROJECT}-${TAG}.zip . \
-  -x "*.zip" \
-  -x "node_modules/*" \
-  -x ".release/*" \
-  -x ".scannerwork/*" \
-  -x ".git/*" \
-  -x ".github/*" \
-  -x "pages-quickstart/*" \
-  -x "layouts-quickstart/*" \
-  -x "cypress/screenshots/*" \
-  -x "sonar-project.properties" \
-  -x "docker-compose.sonarqube.yml"\
-  -x "docker-compose.yml"
+$DIRECTORY/build-quickstarter.sh $PROJECT $TAG
 
 # top level zip release-${PROJECT}-${TAG}.zip 
 zip -j .release/release-${PROJECT}-${TAG}.zip \
