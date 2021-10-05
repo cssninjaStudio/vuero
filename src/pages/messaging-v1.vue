@@ -654,7 +654,7 @@ watchPostEffect(() => {
                 </div>
 
                 <div class="typing-indicator">
-                  <img src="/images/icons/typing.gif" alt="" />
+                  <img src="/images/icons/misc/typing.gif" alt="" />
                 </div>
               </div>
             </div>
