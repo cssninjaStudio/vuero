@@ -1,4 +1,4 @@
-import { Notyf } from 'notyf'
+import { Notyf, INotyfNotificationOptions } from 'notyf'
 import { themeColors } from '/@src/utils/themeColors'
 
 const notyf = new Notyf({
@@ -85,53 +85,102 @@ const notyf = new Notyf({
 
 export default function useNotyf() {
   return {
-    success: (message: string) => {
-      notyf.success(message)
+    success: (payload: string | Partial<INotyfNotificationOptions>) => {
+      notyf.success(payload)
     },
-    error: (message: string) => {
-      notyf.error(message)
+    error: (payload: string | Partial<INotyfNotificationOptions>) => {
+      notyf.error(payload)
     },
-    info: (message: string) => {
-      notyf.open({
+    info: (payload: string | Partial<INotyfNotificationOptions>) => {
+      const options: Partial<INotyfNotificationOptions> = {
         type: 'info',
-        message,
-      })
+      }
+
+      if (typeof payload === 'string') {
+        options.message = payload
+      } else {
+        Object.assign(options, payload)
+      }
+
+      notyf.open(options)
     },
-    warning: (message: string) => {
-      notyf.open({
+    warning: (payload: string | Partial<INotyfNotificationOptions>) => {
+      const options: Partial<INotyfNotificationOptions> = {
         type: 'warning',
-        message,
-      })
+      }
+
+      if (typeof payload === 'string') {
+        options.message = payload
+      } else {
+        Object.assign(options, payload)
+      }
+
+      notyf.open(options)
     },
-    primary: (message: string) => {
-      notyf.open({
+    primary: (payload: string | Partial<INotyfNotificationOptions>) => {
+      const options: Partial<INotyfNotificationOptions> = {
         type: 'primary',
-        message,
-      })
+      }
+
+      if (typeof payload === 'string') {
+        options.message = payload
+      } else {
+        Object.assign(options, payload)
+      }
+
+      notyf.open(options)
     },
-    purple: (message: string) => {
-      notyf.open({
+    purple: (payload: string | Partial<INotyfNotificationOptions>) => {
+      const options: Partial<INotyfNotificationOptions> = {
         type: 'purple',
-        message,
-      })
+      }
+
+      if (typeof payload === 'string') {
+        options.message = payload
+      } else {
+        Object.assign(options, payload)
+      }
+
+      notyf.open(options)
     },
-    blue: (message: string) => {
-      notyf.open({
+    blue: (payload: string | Partial<INotyfNotificationOptions>) => {
+      const options: Partial<INotyfNotificationOptions> = {
         type: 'blue',
-        message,
-      })
+      }
+
+      if (typeof payload === 'string') {
+        options.message = payload
+      } else {
+        Object.assign(options, payload)
+      }
+
+      notyf.open(options)
     },
-    green: (message: string) => {
-      notyf.open({
+    green: (payload: string | Partial<INotyfNotificationOptions>) => {
+      const options: Partial<INotyfNotificationOptions> = {
         type: 'green',
-        message,
-      })
+      }
+
+      if (typeof payload === 'string') {
+        options.message = payload
+      } else {
+        Object.assign(options, payload)
+      }
+
+      notyf.open(options)
     },
-    orange: (message: string) => {
-      notyf.open({
+    orange: (payload: string | Partial<INotyfNotificationOptions>) => {
+      const options: Partial<INotyfNotificationOptions> = {
         type: 'orange',
-        message,
-      })
+      }
+
+      if (typeof payload === 'string') {
+        options.message = payload
+      } else {
+        Object.assign(options, payload)
+      }
+
+      notyf.open(options)
     },
   }
 }

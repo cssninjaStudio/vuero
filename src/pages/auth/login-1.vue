@@ -79,11 +79,11 @@ useHead({
         </label>
         <div class="is-form">
           <div class="hero-body">
-            <div class="form-text">
+            <div class="form-text" :class="[step !== 'login' && 'is-hidden']">
               <h2>Sign In</h2>
               <p>Welcome back to your account.</p>
             </div>
-            <div class="form-text is-hidden">
+            <div class="form-text" :class="[step === 'login' && 'is-hidden']">
               <h2>Recover Account</h2>
               <p>Reset your account password.</p>
             </div>
@@ -92,6 +92,17 @@ useHead({
               class="login-wrapper"
               @submit.prevent="handleLogin"
             >
+              <VMessage color="primary">
+                <div>
+                  <strong class="pr-1">email:</strong
+                  ><span>john.doe@cssninja.io</span>
+                </div>
+                <div>
+                  <strong class="pr-1">password:</strong
+                  ><span>ada.lovelace</span>
+                </div>
+              </VMessage>
+
               <div class="control has-validation">
                 <input
                   type="text"
