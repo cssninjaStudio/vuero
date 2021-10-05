@@ -11,6 +11,7 @@ import ImageMin from 'vite-plugin-imagemin'
 import VueroDocumentation from './vite-plugin-vuero-doc/index'
 import { vueI18n } from '@intlify/vite-plugin-vue-i18n'
 import { VitePWA } from 'vite-plugin-pwa'
+import purgecss from 'rollup-plugin-purgecss'
 
 const SILENT = Boolean(process.env.SILENT) ?? false
 const SOURCE_MAP = Boolean(process.env.SOURCE_MAP) ?? false
@@ -102,6 +103,7 @@ export default defineConfig({
     // Turning off brotliSize display can slightly reduce packaging time
     brotliSize: !SILENT,
     chunkSizeWarningLimit: 2000,
+    minify: false,
 
     /**
      * Uncomment this section to build the demo with missing images
@@ -249,6 +251,16 @@ export default defineConfig({
           },
         ],
       },
+    }),
+
+    /**
+     * rollup-plugin-purgecss plugin is responsible of purging css rules
+     * that are not used in the bundle
+     *
+     * @see https://github.com/FullHuman/purgecss/tree/main/packages/rollup-plugin-purgecss
+     */
+    purgecss({
+      content: ['index.html'],
     }),
 
     /**
