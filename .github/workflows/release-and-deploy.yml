@@ -61,6 +61,7 @@ jobs:
         with:
           tag_name: ${{ steps.meta.outputs.tag }}
           name: Vuero ${{ steps.meta.outputs.tag }}
+          body: View [CHANGELOG.md](https://github.com/cssninjaStudio/vuero/blob/main/CHANGELOG.md) for details
           draft: false
           prerelease: false
           files: ./.release/release-${{ steps.meta.outputs.project }}-${{ steps.meta.outputs.tag }}.zip
