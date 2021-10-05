@@ -4,6 +4,9 @@ LineIconsPro Light Web Font
 Generated using nucleoapp.com
 
 -------------------------------- */
+
+/* purgecss start ignore */
+
 @font-face {
   font-family: 'LineIconsPro Light';
   src: url('/fonts/LineIconsProLight.eot');
@@ -8367,3 +8370,5 @@ Author: lineicons.com
 .lnir-sleep::before {
   content: '\ee21';
 }
+
+/* purgecss end ignore */

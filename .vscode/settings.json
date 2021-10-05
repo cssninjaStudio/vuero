@@ -8,9 +8,13 @@
     "editor.rulers": [80]
   },
   "[vue]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
   },
   "eslint.alwaysShowStatus": true,
   "eslint.validate": ["javascript", "javascriptreact", "markdown", "vue"],
+  "volar.takeOverBuiltinTsExtension": true,
   "i18n-ally.localesPaths": "src/locales"
 }

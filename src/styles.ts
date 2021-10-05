@@ -16,8 +16,4 @@ import 'tippy.js/dist/border.css'
 import 'tippy.js/dist/backdrop.css'
 import 'tippy.js/themes/light.css'
 
-import './scss/vendors/font-awesome-v5.css'
-import './scss/vendors/line-icons-pro.css'
-import './scss/vendors/prism-coldark-cold.css'
-
 import './scss/main.scss'

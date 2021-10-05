@@ -7,6 +7,8 @@
  * @license MIT
  */
 
+/* purgecss start ignore */
+
 .demo-code div[class*='language-'] {
   position: relative;
   background: whitesmoke;
@@ -474,3 +476,5 @@ pre.diff-highlight > code .prism--token.inserted:not(.prism--prefix),
 pre > code.diff-highlight .prism--token.inserted:not(.prism--prefix) {
   background-color: #41b8831f;
 }
+
+/* purgecss end ignore */

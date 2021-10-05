@@ -260,7 +260,27 @@ export default defineConfig({
      * @see https://github.com/FullHuman/purgecss/tree/main/packages/rollup-plugin-purgecss
      */
     purgecss({
-      content: ['index.html'],
+      content: [`./src/**/*.vue`],
+      variables: false,
+      safelist: {
+        standard: [
+          /(autv|lnil|lnir|fas?)/,
+          /-(leave|enter|appear)(|-(to|from|active))$/,
+          /^(?!(|.*?:)cursor-move).+-move$/,
+          /^router-link(|-exact)-active$/,
+          /data-v-.*/,
+        ],
+      },
+      defaultExtractor(content) {
+        const contentWithoutStyleBlocks = content.replace(
+          /<style[^]+?<\/style>/gi,
+          ''
+        )
+        return (
+          contentWithoutStyleBlocks.match(/[A-Za-z0-9-_/:]*[A-Za-z0-9-_/]+/g) ||
+          []
+        )
+      },
     }),
 
     /**

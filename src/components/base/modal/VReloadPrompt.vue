@@ -1,19 +1,27 @@
 <script setup lang="ts">
 import { useRegisterSW } from 'virtual:pwa-register/vue'
+import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 export interface VReloadPromptProps {
   appName: string
 }
 
+const loading = ref(false)
 const props = defineProps<VReloadPromptProps>()
 
 const { t } = useI18n()
 const { offlineReady, needRefresh, updateServiceWorker } = useRegisterSW()
 
 const close = async () => {
+  loading.value = false
   offlineReady.value = false
   needRefresh.value = false
+}
+const update = async () => {
+  loading.value = true
+  await updateServiceWorker()
+  loading.value = false
 }
 </script>
 
@@ -71,7 +79,8 @@ zh-CN:
           v-if="needRefresh"
           color="primary"
           icon="ion:reload-outline"
-          @click="updateServiceWorker()"
+          :loading="loading"
+          @click="() => update()"
         >
           {{ t('reload-button') }}
         </VButton>
@@ -83,7 +92,7 @@ zh-CN:
   </transition>
 </template>
 
-<style scoped>
+<style lang="scss">
 .pwa-toast {
   position: fixed;
   right: 0;
@@ -93,7 +102,7 @@ zh-CN:
   padding: 12px;
   border: 1px solid #8885;
   border-radius: 4px;
-  z-index: 1;
+  z-index: 10;
   text-align: left;
   box-shadow: 3px 4px 5px 0 #8885;
 }
