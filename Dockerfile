@@ -3,7 +3,7 @@ WORKDIR /app
 
 COPY package.json ./
 COPY yarn.lock ./
-RUN CYPRESS_INSTALL_BINARY=0 yarn install
+RUN CYPRESS_INSTALL_BINARY=0 yarn --frozen-lockfile
 
 COPY . .
 RUN SILENT=1 yarn run build
