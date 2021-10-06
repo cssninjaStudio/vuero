@@ -42,6 +42,8 @@ const handleSignup = async (values: typeof schema) => {
     isLoading.value = true
 
     await sleep(800)
+
+    notif.dismissAll()
     notif.success('Welcome, Erik Kovalsky')
 
     router.push({ name: 'sidebar-dashboards' })

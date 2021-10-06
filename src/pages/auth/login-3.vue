@@ -21,6 +21,8 @@ const handleLogin = async () => {
 
     await sleep(2000)
     userSession.token = 'logged-in'
+
+    notif.dismissAll()
     notif.success('Welcome back, Erik Kovalsky')
 
     if (redirect) {

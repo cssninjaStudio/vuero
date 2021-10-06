@@ -85,11 +85,17 @@ const notyf = new Notyf({
 
 export default function useNotyf() {
   return {
+    dismiss: (notification: NotyfNotification) => {
+      notyf.dismiss()
+    },
+    dismissAll: () => {
+      notyf.dismissAll()
+    },
     success: (payload: string | Partial<INotyfNotificationOptions>) => {
-      notyf.success(payload)
+      return notyf.success(payload)
     },
     error: (payload: string | Partial<INotyfNotificationOptions>) => {
-      notyf.error(payload)
+      return notyf.error(payload)
     },
     info: (payload: string | Partial<INotyfNotificationOptions>) => {
       const options: Partial<INotyfNotificationOptions> = {
@@ -102,7 +108,7 @@ export default function useNotyf() {
         Object.assign(options, payload)
       }
 
-      notyf.open(options)
+      return notyf.open(options)
     },
     warning: (payload: string | Partial<INotyfNotificationOptions>) => {
       const options: Partial<INotyfNotificationOptions> = {
@@ -115,7 +121,7 @@ export default function useNotyf() {
         Object.assign(options, payload)
       }
 
-      notyf.open(options)
+      return notyf.open(options)
     },
     primary: (payload: string | Partial<INotyfNotificationOptions>) => {
       const options: Partial<INotyfNotificationOptions> = {
@@ -128,7 +134,7 @@ export default function useNotyf() {
         Object.assign(options, payload)
       }
 
-      notyf.open(options)
+      return notyf.open(options)
     },
     purple: (payload: string | Partial<INotyfNotificationOptions>) => {
       const options: Partial<INotyfNotificationOptions> = {
@@ -141,7 +147,7 @@ export default function useNotyf() {
         Object.assign(options, payload)
       }
 
-      notyf.open(options)
+      return notyf.open(options)
     },
     blue: (payload: string | Partial<INotyfNotificationOptions>) => {
       const options: Partial<INotyfNotificationOptions> = {
@@ -154,7 +160,7 @@ export default function useNotyf() {
         Object.assign(options, payload)
       }
 
-      notyf.open(options)
+      return notyf.open(options)
     },
     green: (payload: string | Partial<INotyfNotificationOptions>) => {
       const options: Partial<INotyfNotificationOptions> = {
@@ -167,7 +173,7 @@ export default function useNotyf() {
         Object.assign(options, payload)
       }
 
-      notyf.open(options)
+      return notyf.open(options)
     },
     orange: (payload: string | Partial<INotyfNotificationOptions>) => {
       const options: Partial<INotyfNotificationOptions> = {
@@ -180,7 +186,7 @@ export default function useNotyf() {
         Object.assign(options, payload)
       }
 
-      notyf.open(options)
+      return notyf.open(options)
     },
   }
 }

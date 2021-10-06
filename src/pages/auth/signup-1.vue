@@ -41,6 +41,8 @@ const handleSignup = async () => {
     step.value++
     isLoading.value = true
     sleep(2000)
+
+    notif.dismissAll()
     notif.success('Welcome, Erik Kovalsky')
     router.push({ name: 'sidebar-dashboards' })
     isLoading.value = false
