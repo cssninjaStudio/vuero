@@ -3,9 +3,10 @@ import { computed, ref } from 'vue'
 
 import type { WizardCustomer } from '/@src/models/wizard'
 import { customers } from '/@src/data/wizard'
-import { wizardData } from '/@src/state/wizardState'
+import { useWizard } from '/@src/stores/wizard'
 
 const search = ref('')
+const wizard = useWizard()
 
 const filteredCustomers = computed<WizardCustomer[]>(() => {
   if (!search.value) {
@@ -23,7 +24,7 @@ const filteredCustomers = computed<WizardCustomer[]>(() => {
 })
 
 const selectCustomer = (customer: WizardCustomer) => {
-  wizardData.customer = customer
+  wizard.data.customer = customer
 }
 </script>
 
@@ -37,20 +38,20 @@ const selectCustomer = (customer: WizardCustomer) => {
     <div class="project-customer">
       <h4>Customer</h4>
 
-      <VField v-if="!wizardData.customer">
+      <VField v-if="!wizard.data.customer">
         <VControl icon="feather:search">
           <input v-model="search" class="input" placeholder="search..." />
         </VControl>
       </VField>
 
       <VBlock
-        v-if="wizardData.customer"
-        :title="wizardData.customer.name"
-        :subtitle="wizardData.customer.location"
+        v-if="wizard.data.customer"
+        :title="wizard.data.customer.name"
+        :subtitle="wizard.data.customer.location"
         center
       >
         <template #icon>
-          <VAvatar size="medium" :picture="wizardData.customer.logo" />
+          <VAvatar size="medium" :picture="wizard.data.customer.logo" />
         </template>
 
         <template #action>
@@ -58,7 +59,7 @@ const selectCustomer = (customer: WizardCustomer) => {
             size="small"
             icon="feather:x"
             circle
-            @click="wizardData.customer = null"
+            @click="wizard.data.customer = null"
           />
         </template>
       </VBlock>
@@ -81,7 +82,7 @@ const selectCustomer = (customer: WizardCustomer) => {
                 size="small"
                 icon="feather:plus"
                 circle
-                @click="wizardData.customer = customer"
+                @click="wizard.data.customer = customer"
               />
             </template>
           </VBlock>
@@ -92,7 +93,7 @@ const selectCustomer = (customer: WizardCustomer) => {
     <div class="project-dates">
       <h4>Project Time Frame</h4>
       <v-date-picker
-        v-model="wizardData.timeFrame"
+        v-model="wizard.data.timeFrame"
         is-range
         color="green"
         trim-weeks
@@ -145,29 +146,29 @@ const selectCustomer = (customer: WizardCustomer) => {
         <div class="budget-item">
           <a
             class="budget-item-inner"
-            :class="[wizardData.budget === '< 5K' && 'is-active']"
-            @click="wizardData.budget = '< 5K'"
+            :class="[wizard.data.budget === '< 5K' && 'is-active']"
+            @click="wizard.data.budget = '< 5K'"
           >
             <span>&lt; 5K</span>
           </a>
           <a
             class="budget-item-inner"
-            :class="[wizardData.budget === '< 30K' && 'is-active']"
-            @click="wizardData.budget = '< 30K'"
+            :class="[wizard.data.budget === '< 30K' && 'is-active']"
+            @click="wizard.data.budget = '< 30K'"
           >
             <span>&lt; 30K</span>
           </a>
           <a
             class="budget-item-inner"
-            :class="[wizardData.budget === '< 100K' && 'is-active']"
-            @click="wizardData.budget = '< 100K'"
+            :class="[wizard.data.budget === '< 100K' && 'is-active']"
+            @click="wizard.data.budget = '< 100K'"
           >
             <span>&lt; 100K</span>
           </a>
           <a
             class="budget-item-inner"
-            :class="[wizardData.budget === '100K+' && 'is-active']"
-            @click="wizardData.budget = '100K+'"
+            :class="[wizard.data.budget === '100K+' && 'is-active']"
+            @click="wizard.data.budget = '100K+'"
           >
             <span>100K+</span>
           </a>

@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import type { WizardRelatedTo } from '/@src/models/wizard'
-import { wizardData, currentStep } from '/@src/state/wizardState'
+import { useWizard } from '/@src/stores/wizard'
+
+const wizard = useWizard()
 
 const validateStep = (relatedTo: WizardRelatedTo) => {
-  wizardData.relatedTo = relatedTo
-  currentStep.value = 2
+  wizard.data.relatedTo = relatedTo
+  wizard.setStep(2)
 }
 </script>
 

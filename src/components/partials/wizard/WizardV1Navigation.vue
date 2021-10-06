@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 
 import useDropdown from '/@src/composable/useDropdown'
-import { currentStep, stepTitle } from '/@src/state/wizardState'
+import { useWizard } from '/@src/stores/wizard'
 import { isDark, toggleDarkModeHandler } from '/@src/state/darkModeState'
 import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
@@ -12,9 +12,11 @@ const dropdown1 = useDropdown(dropdownElement1)
 const dropdownElement2 = ref<HTMLElement>()
 const dropdown2 = useDropdown(dropdownElement2)
 
+const wizard = useWizard()
+
 const setStep = (target: number) => {
-  if (currentStep.value >= target) {
-    currentStep.value = target
+  if (wizard.step >= target) {
+    wizard.setStep(target)
     dropdown1.close()
   }
 }
@@ -28,7 +30,7 @@ const setStep = (target: number) => {
 
     <div class="navbar-item is-wizard-title" @click="dropdown1.toggle">
       <span class="title-wrap">
-        Step {{ currentStep }}: <span>{{ stepTitle }}</span>
+        Step {{ wizard.step }}: <span>{{ wizard.stepTitle }}</span>
       </span>
     </div>
 
@@ -46,49 +48,49 @@ const setStep = (target: number) => {
       <div id="wizard-navigation-dropdown" class="dropdown-menu" role="menu">
         <div class="dropdown-content">
           <a
-            :class="[currentStep < 1 && 'is-disabled']"
+            :class="[wizard.step < 1 && 'is-disabled']"
             class="dropdown-item kill-drop"
             @click="setStep(1)"
           >
-            Step 1: {{ stepTitle }}
+            Step 1: {{ wizard.stepTitle }}
           </a>
           <a
-            :class="[currentStep < 2 && 'is-disabled']"
+            :class="[wizard.step < 2 && 'is-disabled']"
             class="dropdown-item kill-drop"
             @click="setStep(2)"
           >
             Step 2: Project Info
           </a>
           <a
-            :class="[currentStep < 3 && 'is-disabled']"
+            :class="[wizard.step < 3 && 'is-disabled']"
             class="dropdown-item kill-drop"
             @click="setStep(3)"
           >
             Step 3: Project Details
           </a>
           <a
-            :class="[currentStep < 4 && 'is-disabled']"
+            :class="[wizard.step < 4 && 'is-disabled']"
             class="dropdown-item kill-drop"
             @click="setStep(4)"
           >
             Step 4: Project Files
           </a>
           <a
-            :class="[currentStep < 5 && 'is-disabled']"
+            :class="[wizard.step < 5 && 'is-disabled']"
             class="dropdown-item kill-drop"
             @click="setStep(5)"
           >
             Step 5: Team Members
           </a>
           <a
-            :class="[currentStep < 6 && 'is-disabled']"
+            :class="[wizard.step < 6 && 'is-disabled']"
             class="dropdown-item kill-drop"
             @click="setStep(6)"
           >
             Step 6: Project Tools
           </a>
           <a
-            :class="[currentStep < 7 && 'is-disabled']"
+            :class="[wizard.step < 7 && 'is-disabled']"
             class="dropdown-item kill-drop"
             @click="setStep(7)"
           >

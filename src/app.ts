@@ -8,13 +8,11 @@ import {
 } from 'vue'
 import { RouterView } from 'vue-router'
 import { createHead } from '@vueuse/head'
+import { createPinia } from 'pinia'
 import { createI18n } from './i18n'
 import { createRouter } from './router'
 
-import {
-  provideUserSession,
-  useUserSession,
-} from '/@src/composable/useUserSession'
+import { useUserSession } from '/@src/stores/userSession'
 import { provideApi } from '/@src/composable/useApi'
 import useNotyf from '/@src/composable/useNotyf'
 
@@ -28,6 +26,7 @@ export async function createApp({ enhanceApp }: VueroAppOptions) {
   const head = createHead()
   const i18n = createI18n()
   const router = createRouter()
+  const pinia = createPinia()
 
   const app = createClientApp({
     // This is the global app setup function
@@ -36,15 +35,15 @@ export async function createApp({ enhanceApp }: VueroAppOptions) {
        * We provide user state and api to our entire app
        * We can then inject them later in any component
        *
-       * @see /@src/composable/useApi and /@src/composable/useUserSession
+       * @see /@src/composable/useApi
        */
-      const userSession = provideUserSession()
-      provideApi(userSession)
+      provideApi()
 
       /**
        * Here you can check if your user has a token stored
        * and check with your api if it still valid before your app start
        */
+      // const userSession = useUserSession()
       // if (userSession.isLoggedIn) {
       //   try {
       //     // do api request call to retreive its profile
@@ -52,7 +51,7 @@ export async function createApp({ enhanceApp }: VueroAppOptions) {
       //     userSession.user = user
       //   } catch (err) {
       //     // delete stored token if it fails
-      //     userSession.token = ''
+      //     userSession.logoutUser()
       //     // redirect the user somewhere
       //     router.replace('/auth/login')
       //   }
@@ -142,6 +141,7 @@ export async function createApp({ enhanceApp }: VueroAppOptions) {
   app.use(head)
   app.use(router)
   app.use(i18n)
+  app.use(pinia)
 
   if (enhanceApp) {
     await enhanceApp(app)

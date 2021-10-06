@@ -1,15 +1,16 @@
 <script setup lang="ts">
 import { useRouter } from 'vue-router'
 
-import { resetData } from '/@src/state/wizardState'
+import { useWizard } from '/@src/stores/wizard'
 
 const router = useRouter()
+const wizard = useWizard()
 
 const validateStep = async () => {
   router.push({
     name: 'navbar-layouts-projects-details',
   })
-  resetData()
+  wizard.reset()
 }
 </script>
 

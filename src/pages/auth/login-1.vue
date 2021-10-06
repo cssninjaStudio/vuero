@@ -4,7 +4,7 @@ import { useRouter, useRoute } from 'vue-router'
 import { useHead } from '@vueuse/head'
 
 import { isDark, toggleDarkModeHandler } from '/@src/state/darkModeState'
-import { useUserSession } from '/@src/composable/useUserSession'
+import { useUserSession } from '/@src/stores/userSession'
 import useNotyf from '/@src/composable/useNotyf'
 import sleep from '/@src/utils/sleep'
 
@@ -22,7 +22,7 @@ const handleLogin = async () => {
     isLoading.value = true
 
     await sleep(2000)
-    userSession.token = 'logged-in'
+    userSession.setToken('logged-in')
 
     notif.dismissAll()
     notif.success('Welcome back, Erik Kovalsky')

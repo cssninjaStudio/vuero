@@ -8,7 +8,7 @@ Dropzone.autoDiscover = false
 <script setup lang="ts">
 import { nextTick, onUnmounted, ref, watch } from 'vue'
 
-import { wizardData } from '/@src/state/wizardState'
+import { useWizard } from '/@src/stores/wizard'
 import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 import sleep from '/@src/utils/sleep'
 
@@ -23,6 +23,8 @@ const dropzone = ref<typeof Dropzone>()
 const previewTemplate = ref('')
 let isInit = false
 
+const wizard = useWizard()
+
 const onAddFile = (error: any, fileInfo: any) => {
   if (error) {
     console.error(error)
@@ -31,7 +33,7 @@ const onAddFile = (error: any, fileInfo: any) => {
 
   const _file = fileInfo.file as File
   if (_file) {
-    wizardData.logo = _file
+    wizard.data.logo = _file
   }
 }
 const onRemoveFile = (error: any, fileInfo: any) => {
@@ -40,7 +42,7 @@ const onRemoveFile = (error: any, fileInfo: any) => {
     return
   }
 
-  wizardData.logo = null
+  wizard.data.logo = null
 }
 
 const initDropzone = () => {
@@ -72,16 +74,16 @@ const initDropzone = () => {
         url: file.upload.url,
       },
     }
-    wizardData.attachments.push(attachment)
+    wizard.data.attachments.push(attachment)
   })
 
   dropzone.value.on('removedfile', (file: any) => {
-    const fileIndex = wizardData.attachments.findIndex((item) => {
+    const fileIndex = wizard.data.attachments.findIndex((item) => {
       return item.upload.uuid === file.upload.uuid
     })
 
     if (fileIndex !== -1) {
-      wizardData.attachments.splice(fileIndex, 1)
+      wizard.data.attachments.splice(fileIndex, 1)
     }
   })
 
@@ -131,7 +133,7 @@ const initDropzone = () => {
       if (dropzone.value) {
         dropzone.value.removeAllFiles(true)
       }
-      wizardData.attachments.splice(0, wizardData.attachments.length)
+      wizard.data.attachments.splice(0, wizard.data.attachments.length)
     }
   }
 

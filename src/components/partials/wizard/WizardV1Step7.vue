@@ -2,18 +2,20 @@
 import { computed, ref, watchEffect } from 'vue'
 import dayjs from 'dayjs'
 
-import { wizardData, currentStep, isLoading } from '/@src/state/wizardState'
+import { useWizard } from '/@src/stores/wizard'
+
+const wizard = useWizard()
 
 const capitalize = (string: string) => {
   return string.slice(0, 1).toUpperCase() + string.slice(1)
 }
 
 const projectInitial = computed(() => {
-  return wizardData.name.slice(0, 1).toUpperCase() || 'P'
+  return wizard.data.name.slice(0, 1).toUpperCase() || 'P'
 })
 
 const formatedDueDate = computed(() => {
-  return dayjs(wizardData.timeFrame.end).format('MMM D, YYYY')
+  return dayjs(wizard.data.timeFrame.end).format('MMM D, YYYY')
 })
 
 const projectPicture = ref('')
@@ -21,9 +23,9 @@ const projectPicture = ref('')
 watchEffect(async () => {
   try {
     projectPicture.value = await new Promise((resolve, reject) => {
-      if (wizardData.logo) {
+      if (wizard.data.logo) {
         const reader = new FileReader()
-        reader.readAsDataURL(wizardData.logo)
+        reader.readAsDataURL(wizard.data.logo)
         reader.onload = () => resolve(reader.result?.toString() || '')
         reader.onerror = (error) => reject(error)
       } else {
@@ -43,7 +45,12 @@ watchEffect(async () => {
       <p>You can go back to previous steps if you need to edit anything.</p>
     </div>
 
-    <VLoader size="xl" class="project-preview-wrapper" :active="isLoading" grey>
+    <VLoader
+      size="xl"
+      class="project-preview-wrapper"
+      :active="wizard.loading"
+      grey
+    >
       <div class="project-preview-header">
         <VAvatar
           color="h-green"
@@ -53,10 +60,10 @@ watchEffect(async () => {
         />
 
         <h3 class="title is-4 is-narrow is-thin">
-          <span v-if="wizardData.name">{{ wizardData.name }}</span>
+          <span v-if="wizard.data.name">{{ wizard.data.name }}</span>
           <span v-else>Project Title Goes Here</span>
 
-          <a class="edit-icon" @click="currentStep = 2">
+          <a class="edit-icon" @click="wizard.setStep(2)">
             <i aria-hidden="true" class="lnil lnil-pencil"></i>
           </a>
         </h3>
@@ -68,12 +75,12 @@ watchEffect(async () => {
             <div class="edit-box">
               <h4>Description</h4>
 
-              <a class="edit-icon" @click="currentStep = 2">
+              <a class="edit-icon" @click="wizard.setStep(2)">
                 <i aria-hidden="true" class="lnil lnil-pencil"></i>
               </a>
 
-              <p v-if="wizardData.description">
-                {{ wizardData.description }}
+              <p v-if="wizard.data.description">
+                {{ wizard.data.description }}
               </p>
               <p v-else>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
@@ -84,11 +91,11 @@ watchEffect(async () => {
           </div>
           <div class="column is-6 is-tablet-50">
             <div class="edit-box">
-              <a class="edit-icon" @click="currentStep = 1">
+              <a class="edit-icon" @click="wizard.setStep(1)">
                 <i aria-hidden="true" class="lnil lnil-pencil"></i>
               </a>
               <VBlock
-                :title="wizardData.relatedTo"
+                :title="wizard.data.relatedTo"
                 subtitle="Project Type"
                 center
               >
@@ -103,17 +110,17 @@ watchEffect(async () => {
 
           <div class="column is-6 is-tablet-50">
             <div class="edit-box">
-              <a class="edit-icon" @click="currentStep = 3">
+              <a class="edit-icon" @click="wizard.setStep(3)">
                 <i aria-hidden="true" class="lnil lnil-pencil"></i>
               </a>
               <VBlock
-                v-if="wizardData.customer"
-                :title="wizardData.customer.name"
+                v-if="wizard.data.customer"
+                :title="wizard.data.customer.name"
                 subtitle="Project Customer"
                 center
               >
                 <template #icon>
-                  <VAvatar size="medium" :picture="wizardData.customer.logo" />
+                  <VAvatar size="medium" :picture="wizard.data.customer.logo" />
                 </template>
               </VBlock>
               <div v-else class="edit-box-placeholder is-media">
@@ -124,13 +131,13 @@ watchEffect(async () => {
 
           <div class="column is-4 is-tablet-33">
             <div class="edit-box">
-              <a class="edit-icon" @click="currentStep = 3">
+              <a class="edit-icon" @click="wizard.setStep(3)">
                 <i aria-hidden="true" class="lnil lnil-pencil"></i>
               </a>
               <div class="estimated-budget">
                 <div class="inner-block">
                   <div class="budget">
-                    <span>{{ wizardData.budget }}</span>
+                    <span>{{ wizard.data.budget }}</span>
                   </div>
                   <p>Estimated Budget</p>
                 </div>
@@ -140,7 +147,7 @@ watchEffect(async () => {
 
           <div class="column is-4 is-tablet-33">
             <div class="edit-box">
-              <a class="edit-icon" @click="currentStep = 3">
+              <a class="edit-icon" @click="wizard.setStep(3)">
                 <i aria-hidden="true" class="lnil lnil-pencil"></i>
               </a>
               <div class="estimated-due-date">
@@ -156,14 +163,14 @@ watchEffect(async () => {
 
           <div class="column is-4 is-tablet-33">
             <div class="edit-box">
-              <a class="edit-icon" @click="currentStep = 4">
+              <a class="edit-icon" @click="wizard.setStep(4)">
                 <i aria-hidden="true" class="lnil lnil-pencil"></i>
               </a>
               <div class="attachments-count">
                 <div class="inner-block">
                   <div class="attachments">
-                    <span v-if="wizardData.attachments.length">{{
-                      wizardData.attachments.length
+                    <span v-if="wizard.data.attachments.length">{{
+                      wizard.data.attachments.length
                     }}</span>
                     <span v-else>No</span>
                   </div>
@@ -177,12 +184,12 @@ watchEffect(async () => {
             <div class="edit-box">
               <h4>Team</h4>
 
-              <a class="edit-icon" @click="currentStep = 5">
+              <a class="edit-icon" @click="wizard.setStep(5)">
                 <i aria-hidden="true" class="lnil lnil-pencil"></i>
               </a>
 
               <div
-                v-if="wizardData.teammates.length === 0"
+                v-if="wizard.data.teammates.length === 0"
                 class="edit-box-placeholder is-media"
               >
                 <span>No selected teammate</span>
@@ -190,7 +197,7 @@ watchEffect(async () => {
 
               <div v-else class="media-list">
                 <div
-                  v-for="teammate in wizardData.teammates"
+                  v-for="teammate in wizard.data.teammates"
                   :key="teammate.name"
                   class="media-list-item"
                 >
@@ -212,12 +219,12 @@ watchEffect(async () => {
             <div class="edit-box">
               <h4>Tools</h4>
 
-              <a class="edit-icon" @click="currentStep = 6">
+              <a class="edit-icon" @click="wizard.setStep(6)">
                 <i aria-hidden="true" class="lnil lnil-pencil"></i>
               </a>
 
               <div
-                v-if="wizardData.tools.length === 0"
+                v-if="wizard.data.tools.length === 0"
                 class="edit-box-placeholder is-list"
               >
                 <span>No selected tools</span>
@@ -225,7 +232,7 @@ watchEffect(async () => {
 
               <div v-else class="media-list">
                 <div
-                  v-for="tool in wizardData.tools"
+                  v-for="tool in wizard.data.tools"
                   :key="tool.name"
                   class="media-list-item"
                 >

@@ -3,50 +3,49 @@ import { useHead } from '@vueuse/head'
 import { watch, watchEffect } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 
-import {
-  stepTitle,
-  currentStep,
-  saveData,
-  resetData,
-} from '/@src/state/wizardState'
+import { useWizard } from '/@src/stores/wizard'
 
 const route = useRoute()
 const router = useRouter()
+const wizard = useWizard()
 
 const previousStep = () => {
-  if (currentStep.value > 1) {
-    currentStep.value--
+  if (wizard.step > 1) {
+    wizard.setStep(wizard.step - 1)
   }
 }
 
 const validateStep = async () => {
-  if (currentStep.value < 7) {
-    currentStep.value++
-  } else if (currentStep.value === 7) {
-    await saveData()
-    currentStep.value++
+  if (wizard.step < 7) {
+    wizard.setStep(wizard.step + 1)
+  } else if (wizard.step === 7) {
+    await wizard.save()
+    wizard.setStep(wizard.step + 1)
   } else {
     router.push({
       name: 'navbar-layouts-projects-details',
     })
-    resetData()
+    wizard.reset()
   }
 }
 
 useHead({
-  title: `${stepTitle.value} - Wizard V1 - Vuero`,
+  title: `${wizard.stepTitle} - Wizard V1 - Vuero`,
 })
-watch(currentStep, () => {
-  router.push({
-    query: {
-      step: currentStep.value,
-    },
-  })
-})
+watch(
+  () => wizard.step,
+  () => {
+    router.push({
+      query: {
+        step: wizard.step,
+      },
+    })
+  }
+)
 watchEffect(() => {
   const step = route.query.step as string
   if (step) {
-    currentStep.value = parseInt(step)
+    wizard.setStep(parseInt(step))
   }
 })
 </script>
@@ -54,13 +53,13 @@ watchEffect(() => {
 <template>
   <MinimalLayout>
     <!--Wizard Navbar-->
-    <WizardV1Navigation v-model:step="currentStep" :title="stepTitle" />
+    <WizardV1Navigation v-model:step="wizard.step" :title="wizard.stepTitle" />
 
     <!--Wizard Progress Bar-->
     <progress
       id="wizard-progress"
       class="progress is-smaller is-primary wizard-progress"
-      :value="(currentStep / 8) * 100"
+      :value="(wizard.step / 8) * 100"
       max="100"
     ></progress>
 
@@ -69,63 +68,63 @@ watchEffect(() => {
       <div
         id="wizard-step-0"
         class="inner-wrapper"
-        :class="[currentStep === 1 && 'is-active']"
+        :class="[wizard.step === 1 && 'is-active']"
       >
-        <WizardV1Step1 @next="currentStep = 2" />
+        <WizardV1Step1 @next="wizard.setStep(2)" />
       </div>
 
       <div
         id="wizard-step-1"
         class="inner-wrapper"
-        :class="[currentStep === 2 && 'is-active']"
+        :class="[wizard.step === 2 && 'is-active']"
       >
-        <WizardV1Step2 @next="currentStep = 3" @prev="currentStep = 1" />
+        <WizardV1Step2 @next="wizard.setStep(3)" @prev="wizard.setStep(1)" />
       </div>
 
       <div
         id="wizard-step-2"
         class="inner-wrapper"
-        :class="[currentStep === 3 && 'is-active']"
+        :class="[wizard.step === 3 && 'is-active']"
       >
-        <WizardV1Step3 @next="currentStep = 4" @prev="currentStep = 2" />
+        <WizardV1Step3 @next="wizard.setStep(4)" @prev="wizard.setStep(2)" />
       </div>
 
       <div
         id="wizard-step-3"
         class="inner-wrapper"
-        :class="[currentStep === 4 && 'is-active']"
+        :class="[wizard.step === 4 && 'is-active']"
       >
-        <WizardV1Step4 @next="currentStep = 5" @prev="currentStep = 3" />
+        <WizardV1Step4 @next="wizard.setStep(5)" @prev="wizard.setStep(3)" />
       </div>
 
       <div
         id="wizard-step-4"
         class="inner-wrapper"
-        :class="[currentStep === 5 && 'is-active']"
+        :class="[wizard.step === 5 && 'is-active']"
       >
-        <WizardV1Step5 @next="currentStep = 6" @prev="currentStep = 4" />
+        <WizardV1Step5 @next="wizard.setStep(6)" @prev="wizard.setStep(4)" />
       </div>
 
       <div
         id="wizard-step-5"
         class="inner-wrapper"
-        :class="[currentStep === 6 && 'is-active']"
+        :class="[wizard.step === 6 && 'is-active']"
       >
-        <WizardV1Step6 @next="currentStep = 7" @prev="currentStep = 5" />
+        <WizardV1Step6 @next="wizard.setStep(7)" @prev="wizard.setStep(5)" />
       </div>
 
       <div
         id="wizard-step-6"
-        :class="[currentStep === 7 && 'is-active']"
+        :class="[wizard.step === 7 && 'is-active']"
         class="inner-wrapper"
         data-step-title="Preview"
       >
-        <WizardV1Step7 @next="currentStep = 8" @prev="currentStep = 6" />
+        <WizardV1Step7 @next="wizard.setStep(8)" @prev="wizard.setStep(6)" />
       </div>
 
       <div
         id="wizard-step-7"
-        :class="[currentStep === 8 && 'is-active']"
+        :class="[wizard.step === 8 && 'is-active']"
         class="inner-wrapper"
         data-step-title="Finish"
       >
@@ -135,13 +134,13 @@ watchEffect(() => {
       <!--Wizard Navigation Buttons-->
       <div
         class="wizard-buttons"
-        :class="[currentStep > 1 && currentStep < 8 && 'is-active']"
+        :class="[wizard.step > 1 && wizard.step < 8 && 'is-active']"
       >
         <div class="wizard-buttons-inner">
           <button
             :class="[
-              currentStep === 2 && 'is-light',
-              currentStep > 2 && 'is-primary is-elevated',
+              wizard.step === 2 && 'is-light',
+              wizard.step > 2 && 'is-primary is-elevated',
             ]"
             class="button v-button is-bold wizard-button-previous"
             @click="previousStep"
@@ -150,13 +149,13 @@ watchEffect(() => {
           </button>
           <button
             :class="[
-              currentStep === 8 && 'is-light',
-              currentStep < 8 && 'is-primary is-elevated',
+              wizard.step === 8 && 'is-light',
+              wizard.step < 8 && 'is-primary is-elevated',
             ]"
             class="button v-button is-bold wizard-button-next"
             @click="validateStep"
           >
-            {{ currentStep === 7 ? 'Validate' : 'Next' }}
+            {{ wizard.step === 7 ? 'Validate' : 'Next' }}
           </button>
         </div>
       </div>

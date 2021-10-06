@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import useNotyf from '/@src/composable/useNotyf'
-import { wizardData } from '/@src/state/wizardState'
+import { useWizard } from '/@src/stores/wizard'
 
 const notyf = useNotyf()
+const wizard = useWizard()
 
 const onAddFile = (error: any, fileInfo: any) => {
   if (error) {
@@ -13,7 +14,7 @@ const onAddFile = (error: any, fileInfo: any) => {
 
   const _file = fileInfo.file as File
   if (_file) {
-    wizardData.logo = _file
+    wizard.data.logo = _file
   }
 }
 
@@ -24,7 +25,7 @@ const onRemoveFile = (error: any, fileInfo: any) => {
     return
   }
 
-  wizardData.logo = null
+  wizard.data.logo = null
 }
 </script>
 
@@ -67,7 +68,7 @@ const onRemoveFile = (error: any, fileInfo: any) => {
             <VField>
               <VControl>
                 <input
-                  v-model="wizardData.name"
+                  v-model="wizard.data.name"
                   class="input"
                   placeholder="Project Name"
                 />
@@ -78,22 +79,22 @@ const onRemoveFile = (error: any, fileInfo: any) => {
             <VField>
               <VControl>
                 <textarea
-                  v-model="wizardData.description"
+                  v-model="wizard.data.description"
                   class="textarea"
                   rows="4"
                   placeholder="Describe your project..."
                 ></textarea>
-                <p v-if="wizardData.description.length === 0" class="help">
+                <p v-if="wizard.data.description.length === 0" class="help">
                   Minimum of 50 characters
                 </p>
                 <p
-                  v-else-if="wizardData.description.length === 49"
+                  v-else-if="wizard.data.description.length === 49"
                   class="help"
                 >
-                  {{ 50 - wizardData.description.length }} character remaining
+                  {{ 50 - wizard.data.description.length }} character remaining
                 </p>
-                <p v-else-if="wizardData.description.length < 50" class="help">
-                  {{ 50 - wizardData.description.length }} characters remaining
+                <p v-else-if="wizard.data.description.length < 50" class="help">
+                  {{ 50 - wizard.data.description.length }} characters remaining
                 </p>
               </VControl>
             </VField>
@@ -101,7 +102,7 @@ const onRemoveFile = (error: any, fileInfo: any) => {
               <label>Related Industries</label>
               <VControl>
                 <Multiselect
-                  v-model="wizardData.relatedTo"
+                  v-model="wizard.data.relatedTo"
                   label="value"
                   placeholder="Enter something"
                   :options="[

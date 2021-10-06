@@ -48,9 +48,9 @@ useHead({
                   aria-label="Toggle dark mode"
                   @change="toggleDarkModeHandler"
                 />
-                <span class="night-toggle--btn" for="night-toggle--daynight">
+                <label class="night-toggle--btn" for="night-toggle--daynight">
                   <span class="night-toggle--feature"></span>
-                </span>
+                </label>
               </div>
             </div>
             <h1 class="title is-1 is-bold is-light is-bold">

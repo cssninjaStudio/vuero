@@ -1,4 +1,4 @@
-import { Notyf, INotyfNotificationOptions } from 'notyf'
+import { Notyf, INotyfNotificationOptions, NotyfNotification } from 'notyf'
 import { themeColors } from '/@src/utils/themeColors'
 
 const notyf = new Notyf({
@@ -86,7 +86,7 @@ const notyf = new Notyf({
 export default function useNotyf() {
   return {
     dismiss: (notification: NotyfNotification) => {
-      notyf.dismiss()
+      notyf.dismiss(notification)
     },
     dismissAll: () => {
       notyf.dismissAll()

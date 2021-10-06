@@ -31,6 +31,7 @@ export const isDark = computed({
 })
 
 export const toggleDarkModeHandler = (event: Event) => {
+  console.log('toggleDarkModeHandler', event)
   const target = event.target as HTMLInputElement
   isDark.value = !target.checked
 }

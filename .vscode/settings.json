@@ -15,6 +15,5 @@
   },
   "eslint.alwaysShowStatus": true,
   "eslint.validate": ["javascript", "javascriptreact", "markdown", "vue"],
-  "volar.takeOverBuiltinTsExtension": true,
   "i18n-ally.localesPaths": "src/locales"
 }

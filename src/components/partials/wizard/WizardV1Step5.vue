@@ -3,14 +3,15 @@ import { ref, watchEffect } from 'vue'
 
 import type { WizardTeammate, WizardTeammateRole } from '/@src/models/wizard'
 import { users } from '/@src/data/wizard'
-import { wizardData } from '/@src/state/wizardState'
+import { useWizard } from '/@src/stores/wizard'
 
 const search = ref('')
 const isAddingMembers = ref(false)
 const filteredUsers = ref<Omit<WizardTeammate, 'role'>[]>([])
+const wizard = useWizard()
 
 const addTeammate = (teammate: Omit<WizardTeammate, 'role'>) => {
-  wizardData.teammates.push({
+  wizard.data.teammates.push({
     ...teammate,
     role: 'reader',
   })
@@ -21,21 +22,21 @@ const setTeammateRole = (
   teammate: Omit<WizardTeammate, 'role'>,
   role: WizardTeammateRole
 ) => {
-  const index = wizardData.teammates.findIndex((item) => {
+  const index = wizard.data.teammates.findIndex((item) => {
     return item.name === teammate.name
   })
 
   if (index > -1) {
-    wizardData.teammates[index].role = role
+    wizard.data.teammates[index].role = role
   }
 }
 
 const removeTeammate = (teammate: Omit<WizardTeammate, 'role'>) => {
-  const index = wizardData.teammates.findIndex((item) => {
+  const index = wizard.data.teammates.findIndex((item) => {
     return item.name === teammate.name
   })
   if (index > -1) {
-    wizardData.teammates.splice(index, 1)
+    wizard.data.teammates.splice(index, 1)
   }
 }
 
@@ -61,7 +62,7 @@ watchEffect(() => {
 
   filteredUsers.value = users
     .filter((item) => {
-      return !wizardData.teammates.find((_item) => {
+      return !wizard.data.teammates.find((_item) => {
         return item.name === _item.name
       })
     })
@@ -152,10 +153,10 @@ watchEffect(() => {
               </VBlock>
             </transition-group>
           </template>
-          <template v-if="wizardData.teammates.length > 0">
+          <template v-if="wizard.data.teammates.length > 0">
             <transition-group name="list-complete" tag="div">
               <VBlock
-                v-for="teammate in wizardData.teammates"
+                v-for="teammate in wizard.data.teammates"
                 :key="teammate.name"
                 class="invited-member"
                 title="Invited"

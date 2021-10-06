@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { tools } from '/@src/data/wizard'
-import { wizardData } from '/@src/state/wizardState'
+import { useWizard } from '/@src/stores/wizard'
+const wizard = useWizard()
 </script>
 
 <template>
@@ -15,7 +16,7 @@ import { wizardData } from '/@src/state/wizardState'
         <!--Tool-->
         <div v-for="tool in tools" :key="tool.name" class="column is-4">
           <div class="tool-card">
-            <input v-model="wizardData.tools" type="checkbox" :value="tool" />
+            <input v-model="wizard.data.tools" type="checkbox" :value="tool" />
 
             <div class="tool-card-inner">
               <VBlock :title="tool.name" :subtitle="tool.description" center>
