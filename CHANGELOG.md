@@ -2,6 +2,35 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/cssninjaStudio/vuero/compare/v2.0.0...v2.1.0) (2021-10-06)
+
+### Features
+
+- **accessibility:** add eslint plugin to check accessibility in vue 3 files ([b4c5774](https://github.com/cssninjaStudio/vuero/commit/b4c577441fb55d9a35b4310b0d6a5c7cae5173d3))
+- **build:** add rollup purgecss plugin ([7475783](https://github.com/cssninjaStudio/vuero/commit/747578359031a3e4d30e2ddea3cab1ad58808021))
+- **notyf:** improve useNotif to use INotyfNotificationOptions payload ([5968143](https://github.com/cssninjaStudio/vuero/commit/596814364aa4ee275ba2dc6d556469ba42a5ff20))
+- **pinia:** replace userSession and wizard states with pinia stores ([5966a86](https://github.com/cssninjaStudio/vuero/commit/5966a861c7ca16180fa4cc1c79468acd9485fa21))
+- **v-credit-card:** translate component + set default props values ([198c7cb](https://github.com/cssninjaStudio/vuero/commit/198c7cbf02cb4011b8184fc9a0fef27251b132f5))
+- **v-peity:** add peity chart component (close [#100](https://github.com/cssninjaStudio/vuero/issues/100)) ([3e59f07](https://github.com/cssninjaStudio/vuero/commit/3e59f07123ca47d3ba996d98b5bdf6ee2ee61337))
+
+### Bug Fixes
+
+- **datepicker:** use camel-case component name in markdown examples ([998ee61](https://github.com/cssninjaStudio/vuero/commit/998ee61b25df173e8632f5aa86d2e2dcd39a8120))
+- delay icon loading and set purgecss safelist ([eb06946](https://github.com/cssninjaStudio/vuero/commit/eb069466b4d32cec6115a93115f861dae1d050b5))
+- **homepage:** add discord and github info + version from package.json ([f0d068b](https://github.com/cssninjaStudio/vuero/commit/f0d068bf10fafda43feeb0e5bdb6cbcd5195b668))
+- **i18n:** persist selected language when user use the language panel ([8c11b19](https://github.com/cssninjaStudio/vuero/commit/8c11b1932d4d040757fd475a862921b48a00f854))
+- **main:** update how userSession and api are provided ([644924c](https://github.com/cssninjaStudio/vuero/commit/644924c3c5fa0300918ba98eb24c8a92342fee78))
+- **nabar-divider:** use border cssvar for bg color (close [#109](https://github.com/cssninjaStudio/vuero/issues/109)) ([3e8f330](https://github.com/cssninjaStudio/vuero/commit/3e8f3304d3f63752f2e4db85b0f4f663d51a2bd5))
+- **quickstarter:** clean unused files before adding to the release archive ([db65175](https://github.com/cssninjaStudio/vuero/commit/db651752103499e43242790040548011147faa2d))
+- **quickstarter:** remove all demo images references ([3cf8fce](https://github.com/cssninjaStudio/vuero/commit/3cf8fce2a99555753dc4366d54fba486ccae958b))
+- **quickstart:** use LandingLayout on not found page ([4294eb0](https://github.com/cssninjaStudio/vuero/commit/4294eb0c17c483c6aedf50a608ca5616bc32ccba))
+- remove unused images ([c706d43](https://github.com/cssninjaStudio/vuero/commit/c706d43521339f274a9ed4ebdd0f0f18948b0758))
+- use regex in hsltohex parser ([948d56d](https://github.com/cssninjaStudio/vuero/commit/948d56d471c17c8c529b7a7310f041e2146c6150))
+- **user-grid-v3:** tab slider was missing ([bc49405](https://github.com/cssninjaStudio/vuero/commit/bc49405df2403dfe157acb6430e22c45d351944f))
+- **v-avatar:** light/dark image toggle (close [#107](https://github.com/cssninjaStudio/vuero/issues/107)) ([a651520](https://github.com/cssninjaStudio/vuero/commit/a6515200f3cf159f0ac1b4ea755ba9e742211e3f))
+- **v-flex-pagination:** last page was missing in some cases ([e5ccd13](https://github.com/cssninjaStudio/vuero/commit/e5ccd13c38f94c5ea057a2e9abecaa57aab2c91e))
+- **vscode:** simplify settings and update recommended extensions ([99215e8](https://github.com/cssninjaStudio/vuero/commit/99215e803dc00a8a50f9f2d88506e3a7db82144f))
+
 ## [2.0.0](https://github.com/cssninjaStudio/vuero/compare/v1.4.0...v2.0.0) (2021-09-21)
 
 ### ⚠ BREAKING CHANGES
