@@ -15,6 +15,7 @@
 
 .multiselect {
   font-family: var(--font);
+  min-width: 190px;
 
   &.is-active {
     box-shadow: none;
