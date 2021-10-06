@@ -12,7 +12,7 @@ export interface VFlexPaginationProps {
 
 const props = withDefaults(defineProps<VFlexPaginationProps>(), {
   currentPage: 1,
-  maxLinksDisplayed: 1,
+  maxLinksDisplayed: 4,
 })
 
 const { t } = useI18n()
@@ -43,6 +43,10 @@ const pages = computed(() => {
   }
 
   for (let page = firstButton; page <= lastButton; page += 1) {
+    if (page === firstButton || page === lastButton) {
+      continue
+    }
+
     _pages.push(page)
   }
 
@@ -115,17 +119,20 @@ zh-CN:
     </RouterLink>
 
     <ul class="pagination-list">
-      <li v-if="showFirstLink">
+      <li>
         <RouterLink
           :to="paginatedLink(1)"
           class="pagination-link"
           :aria-label="t('goto-page-title', { page: 1 })"
+          :class="[currentPage === 1 && 'is-current']"
         >
           1
         </RouterLink>
       </li>
 
-      <li v-if="pages[0] > 2"><span class="pagination-ellipsis">…</span></li>
+      <li v-if="pages.length === 0 || pages[0] > 2">
+        <span class="pagination-ellipsis">…</span>
+      </li>
 
       <li v-for="page in pages" :key="page">
         <RouterLink
@@ -143,11 +150,12 @@ zh-CN:
         <span class="pagination-ellipsis">…</span>
       </li>
 
-      <li v-if="showLastLink">
+      <li>
         <RouterLink
           :to="paginatedLink(lastPage)"
           class="pagination-link"
           :aria-label="t('goto-page-title', { page: lastPage })"
+          :class="[currentPage === lastPage && 'is-current']"
         >
           {{ lastPage }}
         </RouterLink>
