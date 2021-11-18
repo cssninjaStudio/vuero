@@ -2,6 +2,7 @@
 import type { ChartOptions, Chart } from 'billboard.js'
 import { nextTick, ref, watchEffect } from 'vue'
 import bb from 'billboard.js'
+import 'billboard.js/dist/billboard.min.css'
 
 export interface VBillboardJSEmits {
   (e: 'ready', billboard: Chart): void
@@ -37,7 +38,3 @@ watchEffect(() => {
 <template>
   <div ref="element"></div>
 </template>
-
-<style lang="scss">
-@import 'billboard.js/src/scss/billboard';
-</style>

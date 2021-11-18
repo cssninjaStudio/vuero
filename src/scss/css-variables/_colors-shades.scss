@@ -101,6 +101,23 @@ $shade-variants: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 20, 
   }
 
   /**
+   * lime
+   */
+  // lime - dark shades
+  @each $shade in $shade-variants {
+    --lime-dark-#{$shade}: hsl(
+      var(--lime-h) var(--lime-s) calc(var(--lime-l) - #{$shade}%)
+    );
+  }
+
+  // lime - light shades
+  @each $shade in $shade-variants {
+    --lime-light-#{$shade}: hsl(
+      var(--lime-h) var(--lime-s) calc(var(--lime-l) + #{$shade}%)
+    );
+  }
+
+  /**
    * blue colors
    */
   // blue - light shades
