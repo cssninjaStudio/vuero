@@ -12,13 +12,7 @@ Check the markup for more details.
   <VSnack title="Shopping" color="primary" solid icon="lnil lnil-sleep">
     <i class="iconify" data-icon="feather:plus"></i>
   </VSnack>
-  <VSnack
-    title="Support"
-    color="success"
-    white
-    solid
-    icon="lnil lnil-life-ring"
-  >
+  <VSnack title="Support" color="success" white solid icon="lnil lnil-life-ring">
     <i class="iconify" data-icon="feather:plus"></i>
   </VSnack>
   <VSnack title="Business" color="info" solid icon="lnil lnil-apartment">
@@ -27,13 +21,7 @@ Check the markup for more details.
   <VSnack title="Warning" color="warning" white solid icon="lnil lnil-warning">
     <i class="iconify" data-icon="feather:plus"></i>
   </VSnack>
-  <VSnack
-    title="Health"
-    color="danger"
-    white
-    solid
-    icon="lnil lnil-thermometer"
-  >
+  <VSnack title="Health" color="danger" white solid icon="lnil lnil-thermometer">
     <i class="iconify" data-icon="feather:plus"></i>
   </VSnack>
 </template>

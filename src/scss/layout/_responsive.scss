@@ -17,19 +17,19 @@ Responsive styles
 ========================================================================== */
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  //Loaders
+  // Loaders
   .pageloader,
   .infraloader {
     width: calc(100% - 60px) !important;
     left: 60px !important;
   }
 
-  //Navbars
+  // Navbars
   .navbar-brand {
     align-items: center;
   }
 
-  //Sidebar
+  // Sidebar
   .main-sidebar {
     width: 60px !important;
 
@@ -142,7 +142,7 @@ Responsive styles
     }
   }
 
-  //Layout
+  // Layout
   .view-wrapper {
     width: calc(100% - 60px) !important;
     margin-left: 60px !important;
@@ -182,14 +182,14 @@ Responsive styles
 ========================================================================== */
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  //Loaders
+  // Loaders
   .infraloader,
   .pageloader {
     width: 100% !important;
     left: 0 !important;
   }
 
-  //Navbars
+  // Navbars
   .navbar-navbar,
   .circular-menu,
   .navbar-navbar-clean {
@@ -241,13 +241,12 @@ Responsive styles
         background: var(--white);
         border-radius: var(--radius-large);
         border: 1px solid var(--fade-grey);
-        box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1),
-          0 0 0 1px rgba(10, 10, 10, 0.1);
+        box-shadow: 0 8px 8px rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 10%);
       }
     }
   }
 
-  //Toolbar
+  // Toolbar
   .toolbar {
     .toolbar-notifications {
       display: none;
@@ -258,7 +257,7 @@ Responsive styles
     display: none !important;
   }
 
-  //Sidebars
+  // Sidebars
   .main-sidebar,
   .sidebar {
     display: none;
@@ -275,7 +274,7 @@ Responsive styles
     }
   }
 
-  //Layout
+  // Layout
   .view-wrapper {
     width: 100% !important;
     margin-left: 0 !important;
@@ -350,7 +349,7 @@ Responsive styles
 ========================================================================== */
 
 @media (max-width: 767px) {
-  //Loaders
+  // Loaders
   .infraloader,
   .pageloader {
     width: 100% !important;
@@ -408,13 +407,12 @@ Responsive styles
         background: var(--white);
         border-radius: var(--radius-large);
         border: 1px solid var(--fade-grey);
-        box-shadow: 0 8px 8px rgba(10, 10, 10, 0.1),
-          0 0 0 1px rgba(10, 10, 10, 0.1);
+        box-shadow: 0 8px 8px rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 10%);
       }
     }
   }
 
-  //Toolbar
+  // Toolbar
   .toolbar {
     .toolbar-notifications {
       display: none;
@@ -425,7 +423,7 @@ Responsive styles
     display: none !important;
   }
 
-  //Sidebar
+  // Sidebar
   .sidebar-panel {
     display: none !important;
     left: 0 !important;
@@ -448,7 +446,7 @@ Responsive styles
     display: none;
   }
 
-  //Layout
+  // Layout
   .view-wrapper {
     width: 100% !important;
     margin-left: 0 !important;
@@ -474,6 +472,7 @@ Responsive styles
     .view-wrapper {
       padding-top: 0 !important;
     }
+
     .page-title {
       display: flex !important;
       margin-top: 0;
@@ -481,7 +480,7 @@ Responsive styles
   }
 
   .page-content {
-    padding: 0 10px 0 10px !important;
+    padding: 0 10px !important;
 
     &.projects-content {
       padding: 0 16px;
@@ -625,6 +624,7 @@ Responsive styles
   .mobile-navbar .navbar-item.is-notification {
     display: flex !important;
   }
+
   .mobile-navbar {
     display: flex !important;
 

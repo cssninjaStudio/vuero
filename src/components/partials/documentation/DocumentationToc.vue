@@ -51,11 +51,7 @@ onMounted(() => {
   <div class="toc">
     <strong class="toc-title">Contents</strong>
     <ul>
-      <li
-        v-for="item of props.toc"
-        :key="item.id"
-        :class="[`toc-level-${item.level}`]"
-      >
+      <li v-for="item of props.toc" :key="item.id" :class="[`toc-level-${item.level}`]">
         <a
           :href="`#${item.id}`"
           :class="[isActiveAnchor(item.id) && 'is-active']"
@@ -73,18 +69,18 @@ onMounted(() => {
 </template>
 
 <style lang="scss" scoped>
-@import '../../../scss/abstracts/_mixins.scss';
+@import '../../../scss/abstracts/mixins';
 
 .toc {
   position: fixed;
   display: block;
   padding-left: 2rem;
   transition: opacity 0.3s ease;
-  opacity: 0.6;
+  opacity: 60%;
 
   &:hover,
   &:focus-within {
-    opacity: 1;
+    opacity: 100%;
   }
 }
 

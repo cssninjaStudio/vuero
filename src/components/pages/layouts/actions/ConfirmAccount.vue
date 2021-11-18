@@ -42,15 +42,12 @@ const confirm = async () => {
             />
             <h3 class="dark-inverted">Please confirm your account</h3>
             <p>
-              Hey Erik, It would be really cool if you could give us a hand on
-              this project. There are a lot of tasks popping out every day and I
-              feel the team is getting a bit overwhelmed. We'd love to have you
-              board.
+              Hey Erik, It would be really cool if you could give us a hand on this
+              project. There are a lot of tasks popping out every day and I feel the team
+              is getting a bit overwhelmed. We'd love to have you board.
             </p>
             <div class="buttons">
-              <VButton color="primary" raised @click="confirm">
-                Confirm Account
-              </VButton>
+              <VButton color="primary" raised @click="confirm"> Confirm Account </VButton>
             </div>
           </div>
         </VLoader>
@@ -60,12 +57,11 @@ const confirm = async () => {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/abstracts/mixins';
 
 /* ==========================================================================
 1. Confirm Account
 ========================================================================== */
-
 .confirm-account-wrapper {
   display: flex;
   justify-content: center;
@@ -77,7 +73,7 @@ const confirm = async () => {
 
   .wrapper-inner {
     .action-box {
-      @include vuero-s-card();
+      @include vuero-s-card;
 
       padding: 40px;
 
@@ -89,7 +85,7 @@ const confirm = async () => {
           display: block;
           width: 100%;
           max-width: 220px;
-          margin: 0 auto 8px auto;
+          margin: 0 auto 8px;
 
           &.is-larger {
             max-width: 300px;
@@ -101,7 +97,7 @@ const confirm = async () => {
           font-family: var(--font-alt);
           font-weight: 600;
           max-width: 320px;
-          margin: 0 auto 8px auto;
+          margin: 0 auto 8px;
 
           span {
             color: var(--primary);
@@ -132,11 +128,12 @@ const confirm = async () => {
   .confirm-account-wrapper {
     .wrapper-inner {
       .action-box {
-        @include vuero-card--dark();
+        @include vuero-card--dark;
       }
     }
+
     .wrapper-outer {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
     }
   }
 }

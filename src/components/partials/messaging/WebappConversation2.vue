@@ -52,12 +52,9 @@ const emit = defineEmits(['toggleMobileConversation'])
             />
           </div>
           <div class="chat-msg-text">
-            Although, Iam not a specialist, but I reviewed those and they look
-            great.
+            Although, Iam not a specialist, but I reviewed those and they look great.
           </div>
-          <div class="chat-msg-text">
-            We should make a couple of changes though.
-          </div>
+          <div class="chat-msg-text">We should make a couple of changes though.</div>
         </div>
       </div>
       <div class="chat-msg owner">
@@ -90,12 +87,8 @@ const emit = defineEmits(['toggleMobileConversation'])
           <div class="chat-msg-date">Sent at 9:43am</div>
         </div>
         <div class="chat-msg-content">
-          <div class="chat-msg-text">
-            Nah, I have a meeting that starts in 5.
-          </div>
-          <div class="chat-msg-text">
-            Let's schedule something for this afternoon.
-          </div>
+          <div class="chat-msg-text">Nah, I have a meeting that starts in 5.</div>
+          <div class="chat-msg-text">Let's schedule something for this afternoon.</div>
           <div class="chat-msg-text">And send me a calendar invite.</div>
         </div>
       </div>

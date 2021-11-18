@@ -1,10 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 
-import type {
-  VAvatarProps,
-  VAvatarColor,
-} from '/@src/components/base/avatar/VAvatar.vue'
+import type { VAvatarProps, VAvatarColor } from '/@src/components/base/avatar/VAvatar.vue'
 import { activePanel } from '/@src/state/activePanelState'
 import { popovers } from '/@src/data/users/userPopovers'
 import { UserPopover } from '/@src/models/users'
@@ -44,11 +41,7 @@ function getAvatarData(user: UserPopover): VAvatarProps {
       <div class="right-panel-head">
         <AnimatedLogo width="38px" height="38px" />
         <a class="close-panel" @click="activePanel = 'none'">
-          <i
-            aria-hidden="true"
-            class="iconify"
-            data-icon="feather:chevron-left"
-          ></i>
+          <i aria-hidden="true" class="iconify" data-icon="feather:chevron-left"></i>
         </a>
       </div>
       <div class="right-panel-body has-slimscroll">
@@ -65,11 +58,7 @@ function getAvatarData(user: UserPopover): VAvatarProps {
                 v-if="filteredData.length > 0"
                 class="is-active search-results has-slimscroll"
               >
-                <div
-                  v-for="user in filteredData"
-                  :key="user.id"
-                  class="search-result"
-                >
+                <div v-for="user in filteredData" :key="user.id" class="search-result">
                   <VAvatar v-bind="getAvatarData(user)" />
                   <div class="meta">
                     <span>{{ user.username }}</span>
@@ -87,33 +76,21 @@ function getAvatarData(user: UserPopover): VAvatarProps {
             <VBlock title="Browser Support" subtitle="Blog post" center>
               <template #icon>
                 <VIconBox size="small" color="info" rounded>
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:chrome"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:chrome"></i>
                 </VIconBox>
               </template>
             </VBlock>
             <VBlock title="Twitch API" subtitle="Blog post" center>
               <template #icon>
                 <VIconBox size="small" color="orange" rounded>
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:tv"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:tv"></i>
                 </VIconBox>
               </template>
             </VBlock>
             <VBlock title="Browser Support" subtitle="Blog post" center>
               <template #icon>
                 <VIconBox size="small" color="green" rounded>
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:twitter"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:twitter"></i>
                 </VIconBox>
               </template>
             </VBlock>
@@ -178,6 +155,6 @@ function getAvatarData(user: UserPopover): VAvatarProps {
 </template>
 
 <style lang="scss">
-@import '../../../scss/abstracts/_mixins.scss';
-@import '../../../scss/layout/_right-panel.scss';
+@import '../../../scss/abstracts/mixins';
+@import '../../../scss/layout/right-panel';
 </style>

@@ -1,11 +1,6 @@
 export const valueSingle = 0
 
-export const optionsSingle = [
-  'Last week',
-  'Last 30 days',
-  'Last 60 days',
-  'Last 90 days',
-]
+export const optionsSingle = ['Last week', 'Last 30 days', 'Last 60 days', 'Last 90 days']
 
 export const flexRowsOrders = [
   {

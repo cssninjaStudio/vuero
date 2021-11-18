@@ -240,11 +240,7 @@ const date = ref({
               <div class="control">
                 <input type="text" class="input" placeholder="Search..." />
                 <button class="searcv-button">
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:search"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
                 </button>
               </div>
 
@@ -432,11 +428,11 @@ const date = ref({
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/abstracts/mixins';
 
 .flights-dashboard {
   .booking-bar-wrapper {
-    @include vuero-s-card();
+    @include vuero-s-card;
 
     position: relative;
     background: var(--primary);
@@ -445,6 +441,7 @@ const date = ref({
     color: var(--white);
     font-family: var(--font);
     box-shadow: var(--primary-box-shadow);
+
     .travel-illustration {
       position: absolute;
       bottom: 30px;
@@ -518,7 +515,7 @@ const date = ref({
 
   .flights-summary-wrapper {
     .flight-summary {
-      @include vuero-s-card();
+      @include vuero-s-card;
 
       display: flex;
       align-items: center;
@@ -533,6 +530,7 @@ const date = ref({
         background: var(--primary);
         border-color: var(--primary);
         box-shadow: var(--primary-box-shadow);
+
         .flight-price {
           color: var(--white);
         }
@@ -588,7 +586,7 @@ const date = ref({
     padding: 1.5rem 0;
 
     .flight-card {
-      @include vuero-s-card();
+      @include vuero-s-card;
 
       display: flex;
       align-items: center;
@@ -602,7 +600,7 @@ const date = ref({
           .line {
             &::before,
             &::after {
-              opacity: 1;
+              opacity: 100%;
             }
           }
         }
@@ -668,7 +666,7 @@ const date = ref({
 
           &::before,
           &::after {
-            opacity: 0;
+            opacity: 0%;
             pointer-events: none;
             transition: all 0.3s;
           }
@@ -734,7 +732,7 @@ const date = ref({
   }
 
   .company-card {
-    @include vuero-s-card();
+    @include vuero-s-card;
 
     padding: 30px;
     margin-bottom: 1.5rem;
@@ -746,14 +744,14 @@ const date = ref({
   }
 
   .filters-card {
-    @include vuero-s-card();
+    @include vuero-s-card;
 
     padding: 30px;
     margin-bottom: 1.5rem;
 
     .checkboxes-list {
       margin: 0;
-      padding: 20px 0 0 0;
+      padding: 20px 0 0;
 
       .field {
         > h5 {
@@ -776,7 +774,7 @@ const date = ref({
 .is-dark {
   .flights-dashboard {
     .booking-bar-wrapper {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
 
       background: var(--dark-sidebar-light-4);
       border-color: var(--dark-sidebar-light-12);
@@ -785,7 +783,7 @@ const date = ref({
 
     .flights-summary-wrapper {
       .flight-summary {
-        @include vuero-card--dark();
+        @include vuero-card--dark;
 
         &:hover {
           border-color: var(--primary) !important;
@@ -817,7 +815,7 @@ const date = ref({
 
     .flights {
       .flight-card {
-        @include vuero-card--dark();
+        @include vuero-card--dark;
 
         .start,
         .end {
@@ -832,7 +830,7 @@ const date = ref({
 
     .company-card,
     .filters-card {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
     }
   }
 }

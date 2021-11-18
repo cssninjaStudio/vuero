@@ -50,9 +50,8 @@ const activeTab = ref<TabId>('all')
           />
           <h3>We couldn't find any matching results.</h3>
           <p class="is-larger">
-            Too bad. Looks like we couldn't find any matching results for the
-            search terms you've entered. Please try different search terms or
-            criteria.
+            Too bad. Looks like we couldn't find any matching results for the search terms
+            you've entered. Please try different search terms or criteria.
           </p>
         </div>
       </div>
@@ -61,6 +60,6 @@ const activeTab = ref<TabId>('all')
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
-@import '../../../../scss/pages/generic/_search.scss';
+@import '../../../../scss/abstracts/mixins';
+@import '../../../../scss/pages/generic/search';
 </style>

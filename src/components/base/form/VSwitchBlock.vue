@@ -3,12 +3,7 @@ let instances = 0
 </script>
 
 <script setup lang="ts">
-export type VSwitchBlockColor =
-  | 'primary'
-  | 'info'
-  | 'success'
-  | 'warning'
-  | 'danger'
+export type VSwitchBlockColor = 'primary' | 'info' | 'success' | 'warning' | 'danger'
 export interface VSwitchBlockEmits {
   (e: 'update:modelValue', value: boolean): void
 }

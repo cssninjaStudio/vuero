@@ -16,10 +16,7 @@ import { followersList } from '/@src/data/widgets/ui/followers'
   <div class="lifestyle-dashboard lifestyle-dashboard-v3">
     <div class="illustration-header">
       <div class="header-image">
-        <img
-          src="/@src/assets/illustrations/dashboards/lifestyle/doctor.svg"
-          alt=""
-        />
+        <img src="/@src/assets/illustrations/dashboards/lifestyle/doctor.svg" alt="" />
       </div>
       <div class="header-meta">
         <h3>Today's Summary</h3>
@@ -63,10 +60,7 @@ import { followersList } from '/@src/data/widgets/ui/followers'
             </h4>
           </div>
           <h3 class="dark-inverted">Blood</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit Illis
-            videtur.
-          </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Illis videtur.</p>
         </div>
       </div>
 
@@ -83,10 +77,7 @@ import { followersList } from '/@src/data/widgets/ui/followers'
             </h4>
           </div>
           <h3 class="dark-inverted">Heart Rate</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit Illis
-            videtur.
-          </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Illis videtur.</p>
         </div>
       </div>
 
@@ -103,10 +94,7 @@ import { followersList } from '/@src/data/widgets/ui/followers'
             </h4>
           </div>
           <h3 class="dark-inverted">Blood Pressure</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit Illis
-            videtur.
-          </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Illis videtur.</p>
         </div>
       </div>
 
@@ -123,10 +111,7 @@ import { followersList } from '/@src/data/widgets/ui/followers'
             </h4>
           </div>
           <h3 class="dark-inverted">Weight</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit Illis
-            videtur.
-          </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Illis videtur.</p>
         </div>
       </div>
     </div>
@@ -260,11 +245,7 @@ import { followersList } from '/@src/data/widgets/ui/followers'
               <div class="control">
                 <input type="text" class="input" placeholder="Search..." />
                 <button class="searcv-button">
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:search"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
                 </button>
               </div>
 
@@ -395,18 +376,15 @@ import { followersList } from '/@src/data/widgets/ui/followers'
         <!--Widget-->
         <UIWidget class="text-widget">
           <template #header>
-            <UIWidgetToolbarFollowers
-              title="New Friends"
-              :avatars="followersList"
-            />
+            <UIWidgetToolbarFollowers title="New Friends" :avatars="followersList" />
           </template>
           <template #body>
             <div class="widget-content">
               <p>
                 Great News! <span>{{ followersList[0].name }}</span
                 >, <span>{{ followersList[1].name }}</span> and
-                <span>{{ followersList[2].name }}</span> are now friends with
-                you. Take some time to look at their profile.
+                <span>{{ followersList[2].name }}</span> are now friends with you. Take
+                some time to look at their profile.
               </p>
             </div>
           </template>
@@ -417,7 +395,7 @@ import { followersList } from '/@src/data/widgets/ui/followers'
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/abstracts/mixins';
 
 .lifestyle-dashboard-v3 {
   .illustration-header {
@@ -539,7 +517,7 @@ import { followersList } from '/@src/data/widgets/ui/followers'
   }
 
   .dashboard-card {
-    @include vuero-l-card();
+    @include vuero-l-card;
 
     .card-head {
       display: flex;
@@ -579,7 +557,7 @@ import { followersList } from '/@src/data/widgets/ui/followers'
 .is-dark {
   .lifestyle-dashboard-v3 {
     .dashboard-card {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
     }
   }
 }

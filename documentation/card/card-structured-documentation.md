@@ -13,12 +13,7 @@ come content. Check the markup for more details about usage.
 <template>
   <VCard radius="small" elevated>
     <div class="card-head">
-      <VBlock
-        title="Greta K."
-        subtitle="Sales Manager"
-        center
-        class="no-margin"
-      >
+      <VBlock title="Greta K." subtitle="Sales Manager" center class="no-margin">
         <template #icon>
           <tippy
             class="has-help-cursor"
@@ -55,9 +50,9 @@ come content. Check the markup for more details about usage.
 
     <div class="card-inner">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quibusnam
-        praeteritis? At multis se probavit. Quoniam, si dis placet, ab Epicuro
-        loqui discimus. Et ille ridens.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quibusnam praeteritis? At
+        multis se probavit. Quoniam, si dis placet, ab Epicuro loqui discimus. Et ille
+        ridens.
       </p>
     </div>
   </VCard>

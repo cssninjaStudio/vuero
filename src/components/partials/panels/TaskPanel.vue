@@ -14,11 +14,7 @@ import { activePanel } from '/@src/state/activePanelState'
       <div class="right-panel-head">
         <h3>Task Details</h3>
         <a class="close-panel" @click="activePanel = 'none'">
-          <i
-            aria-hidden="true"
-            class="iconify"
-            data-icon="feather:chevron-right"
-          ></i>
+          <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right"></i>
         </a>
       </div>
       <div class="right-panel-body has-slimscroll" data-simplebar>
@@ -28,9 +24,9 @@ import { activePanel } from '/@src/state/activePanelState'
           <div class="task-description">
             <h4>Build a desktop and mobile landing page wireframe</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Videmus
-              igitur ut conquiescere ne infantes quidem possint. Duo Reges:
-              constructio interrete... <a>See More</a>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Videmus igitur ut
+              conquiescere ne infantes quidem possint. Duo Reges: constructio interrete...
+              <a>See More</a>
             </p>
           </div>
 
@@ -45,11 +41,7 @@ import { activePanel } from '/@src/state/activePanelState'
               </div>
 
               <button>
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:plus"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:plus"></i>
               </button>
             </div>
           </div>
@@ -59,19 +51,11 @@ import { activePanel } from '/@src/state/activePanelState'
           <h3>Statistics</h3>
           <div class="task-stats">
             <div class="task-stat">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:clock"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:clock"></i>
               <span>5 days</span>
             </div>
             <div class="task-stat">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:file"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:file"></i>
               <span>3 files</span>
             </div>
             <div class="task-stat">
@@ -83,11 +67,7 @@ import { activePanel } from '/@src/state/activePanelState'
               <span>54</span>
             </div>
             <a>
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:plus"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:plus"></i>
               <span>Add Checklist</span>
             </a>
           </div>
@@ -101,8 +81,7 @@ import { activePanel } from '/@src/state/activePanelState'
               <div class="meta">
                 <span>Preliminary Sketches</span>
                 <span
-                  >3MB <i aria-hidden="true" class="fas fa-circle"></i> 5 days
-                  ago</span
+                  >3MB <i aria-hidden="true" class="fas fa-circle"></i> 5 days ago</span
                 >
               </div>
               <FileCardDropdown />
@@ -112,8 +91,7 @@ import { activePanel } from '/@src/state/activePanelState'
               <div class="meta">
                 <span>Project Budget</span>
                 <span
-                  >0.6MB <i aria-hidden="true" class="fas fa-circle"></i> 8 days
-                  ago</span
+                  >0.6MB <i aria-hidden="true" class="fas fa-circle"></i> 8 days ago</span
                 >
               </div>
               <FileCardDropdown />
@@ -123,8 +101,8 @@ import { activePanel } from '/@src/state/activePanelState'
               <div class="meta">
                 <span>POC Demo</span>
                 <span
-                  >8.75MB <i aria-hidden="true" class="fas fa-circle"></i> 8
-                  days ago</span
+                  >8.75MB <i aria-hidden="true" class="fas fa-circle"></i> 8 days
+                  ago</span
                 >
               </div>
               <FileCardDropdown />
@@ -145,33 +123,18 @@ import { activePanel } from '/@src/state/activePanelState'
             <div class="control is-textarea-addon">
               <div class="start">
                 <div class="avatar-stack">
-                  <VAvatar
-                    size="small"
-                    picture="/images/avatars/svg/vuero-1.svg"
-                  />
+                  <VAvatar size="small" picture="/images/avatars/svg/vuero-1.svg" />
                 </div>
               </div>
               <div class="end">
                 <a class="message-action">
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:smile"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:smile"></i>
                 </a>
                 <a class="message-action">
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:at-sign"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:at-sign"></i>
                 </a>
                 <a class="message-action">
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:paperclip"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:paperclip"></i>
                 </a>
                 <a class="button v-button is-primary is-bold is-raised">Send</a>
               </div>
@@ -184,6 +147,6 @@ import { activePanel } from '/@src/state/activePanelState'
 </template>
 
 <style lang="scss">
-@import '../../../scss/abstracts/_mixins.scss';
-@import '../../../scss/layout/_right-panel.scss';
+@import '../../../scss/abstracts/mixins';
+@import '../../../scss/layout/right-panel';
 </style>

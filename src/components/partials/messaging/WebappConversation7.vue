@@ -40,9 +40,7 @@ const emit = defineEmits(['toggleMobileConversation'])
           <div class="chat-msg-date">Sent at 2:32pm</div>
         </div>
         <div class="chat-msg-content">
-          <div class="chat-msg-text">
-            Look at those screens, just finished them.
-          </div>
+          <div class="chat-msg-text">Look at those screens, just finished them.</div>
           <div class="chat-msg-text">
             <img
               src="/demo/photos/apps/4.png"

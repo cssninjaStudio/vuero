@@ -5,10 +5,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <div
-    class="stat-widget spark-tile-widget"
-    :class="[props.straight && 'is-straight']"
-  >
+  <div class="stat-widget spark-tile-widget" :class="[props.straight && 'is-straight']">
     <slot></slot>
   </div>
 </template>

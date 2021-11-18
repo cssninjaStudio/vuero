@@ -234,13 +234,13 @@ export const options: ChartOptions = {
   },
   axis: {
     x: {
-      //label: "Sepal.Width",
+      // label: "Sepal.Width",
       tick: {
         fit: false,
       },
     },
     y: {
-      //label: "Petal.Width"
+      // label: "Petal.Width"
     },
   },
   size: {

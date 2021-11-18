@@ -26,19 +26,15 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
               <div class="center">
                 <h4 class="block-heading">New Rookies</h4>
                 <p class="block-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Praeclarae mortes.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praeclarae
+                  mortes.
                 </p>
                 <div class="candidates">
                   <VAvatar picture="/demo/avatars/13.jpg" squared />
                   <VAvatar picture="/demo/avatars/32.jpg" squared />
                   <VAvatar picture="/demo/avatars/9.jpg" squared />
                   <button>
-                    <i
-                      aria-hidden="true"
-                      class="iconify"
-                      data-icon="feather:plus"
-                    ></i>
+                    <i aria-hidden="true" class="iconify" data-icon="feather:plus"></i>
                   </button>
                 </div>
               </div>
@@ -47,8 +43,8 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
               <div class="right">
                 <h4 class="block-heading">Job Feed</h4>
                 <p class="block-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Praeclarae mortes.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praeclarae
+                  mortes.
                 </p>
 
                 <VButton bold fullwidth dark-outlined>Manage Jobs</VButton>
@@ -62,9 +58,7 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
               <h3 class="dark-inverted">Manage feed settings</h3>
               <div class="buttons">
                 <button class="button is-dark-outlined">All</button>
-                <button class="button is-selected is-dark-outlined">
-                  Candidates
-                </button>
+                <button class="button is-selected is-dark-outlined">Candidates</button>
                 <button class="button is-dark-outlined">Companies</button>
               </div>
             </div>
@@ -75,9 +69,9 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
             <div class="side-text">
               <h3 class="dark-inverted">More Details</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Perge
-                porro; Oratio me istius philosophi non offendit; Duo Reges:
-                constructio interrete.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Perge porro;
+                Oratio me istius philosophi non offendit; Duo Reges: constructio
+                interrete.
               </p>
               <a class="action-link">Read More</a>
             </div>
@@ -123,10 +117,7 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
                 <div class="flex-table-item">
                   <div class="flex-table-cell is-media is-grow-lg" data-th="">
                     <VIconBox color="orange">
-                      <i
-                        aria-hidden="true"
-                        class="lnil lnil-checkmark-circle"
-                      ></i>
+                      <i aria-hidden="true" class="lnil lnil-checkmark-circle"></i>
                     </VIconBox>
                     <div>
                       <span class="item-name dark-inverted">Tasks</span>
@@ -220,11 +211,7 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
               <div class="control">
                 <input type="text" class="input" placeholder="Search..." />
                 <button class="searcv-button">
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:search"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
                 </button>
               </div>
             </div>
@@ -232,11 +219,7 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
         </UIWidget>
 
         <!--Widget-->
-        <ListWidgetTabbed
-          title="Todo"
-          :labels="['All', 'Mine']"
-          class="list-widget-v2"
-        >
+        <ListWidgetTabbed title="Todo" :labels="['All', 'Mine']" class="list-widget-v2">
           <template #tab1>
             <ListWidgetTodoList :todos="todoList3" />
           </template>
@@ -346,8 +329,8 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
-@import '../../../../scss/pages/generic/_widgets-lists.scss';
+@import '../../../../scss/abstracts/mixins';
+@import '../../../../scss/pages/generic/widgets-lists';
 
 .hr-dashboard {
   .block-header {
@@ -357,6 +340,7 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
     background: var(--primary);
     font-family: var(--font);
     box-shadow: var(--primary-box-shadow);
+
     .left,
     .right {
       width: 30%;
@@ -544,7 +528,7 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
     .user-grid {
       &.user-grid-v4 {
         .grid-item {
-          @include vuero-l-card();
+          @include vuero-l-card;
         }
       }
     }
@@ -564,7 +548,7 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
 
   .grid-item {
     position: relative;
-    @include vuero-s-card();
+    @include vuero-s-card;
 
     text-align: center;
 
@@ -572,7 +556,7 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
       .button-wrap {
         > div {
           a {
-            opacity: 1;
+            opacity: 100%;
             pointer-events: all;
           }
         }
@@ -588,7 +572,7 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
 
     > .v-avatar {
       display: block;
-      margin: 0 auto 4px auto;
+      margin: 0 auto 4px;
     }
 
     h3 {
@@ -603,7 +587,7 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
     }
 
     .button-wrap {
-      margin: 20px 0 0 0;
+      margin: 20px 0 0;
 
       .v-button {
         width: 100%;
@@ -612,10 +596,10 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
       }
 
       > div {
-        margin: 6px 0 0 0;
+        margin: 6px 0 0;
 
         a {
-          opacity: 0;
+          opacity: 0%;
           pointer-events: none;
           color: var(--light-text);
           font-weight: 500;
@@ -634,7 +618,7 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
 .is-dark {
   .user-grid {
     .grid-item {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
     }
   }
 
@@ -679,7 +663,7 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
       .user-grid {
         &.user-grid-v4 {
           .grid-item {
-            @include vuero-card--dark();
+            @include vuero-card--dark;
           }
         }
       }
@@ -762,7 +746,7 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
       &.is-7 {
         &.is-offset-1 {
           margin-left: 2% !important;
-          width: 64.33333% !important;
+          width: 64.3333% !important;
         }
       }
     }

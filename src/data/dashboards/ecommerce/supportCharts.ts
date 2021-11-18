@@ -5,7 +5,7 @@ export const activeTicketsChartOptions = {
   chart: {
     height: 100,
     type: 'radialBar',
-    //offsetY: -20,
+    // offsetY: -20,
     sparkline: {
       enabled: true,
     },
@@ -65,7 +65,7 @@ export const escalatedChartOptions = {
   chart: {
     height: 100,
     type: 'radialBar',
-    //offsetY: -20,
+    // offsetY: -20,
     sparkline: {
       enabled: true,
     },
@@ -125,7 +125,7 @@ export const closedTicketsChartOptions = {
   chart: {
     height: 100,
     type: 'radialBar',
-    //offsetY: -20,
+    // offsetY: -20,
     sparkline: {
       enabled: true,
     },

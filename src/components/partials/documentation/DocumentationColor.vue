@@ -94,11 +94,7 @@ function updateColor({ colors }: any) {
           <template #copy-button>
             <span class="sr-only">Copy color</span>
 
-            <i
-              class="iconify is-clickable"
-              aria-hidden="true"
-              data-icon="feather:copy"
-            />
+            <i class="iconify is-clickable" aria-hidden="true" data-icon="feather:copy" />
           </template>
 
           <template #format-switch-button>
@@ -139,13 +135,14 @@ function updateColor({ colors }: any) {
 </template>
 
 <style lang="scss" scoped>
-@import '../../../scss/abstracts/_mixins.scss';
+@import '../../../scss/abstracts/mixins';
 
 .color-picker {
   margin: 0 auto;
 }
+
 .color-card {
-  @include vuero-s-card();
+  @include vuero-s-card;
 
   .color-card-header {
     display: flex;
@@ -208,7 +205,7 @@ function updateColor({ colors }: any) {
 
 .is-dark {
   .color-card {
-    @include vuero-card--dark();
+    @include vuero-card--dark;
 
     .is-divider {
       border-top-color: var(--dark-sidebar-light-12);

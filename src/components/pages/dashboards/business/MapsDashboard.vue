@@ -293,8 +293,7 @@ watchPostEffect(() => {
   // over the copy being pointed to.
   if (selectedFeatureLatLng.value) {
     while (Math.abs(selectedFeatureLatLng.value.lng - coordinates[0]) > 180) {
-      coordinates[0] +=
-        selectedFeatureLatLng.value.lng > coordinates[0] ? 360 : -360
+      coordinates[0] += selectedFeatureLatLng.value.lng > coordinates[0] ? 360 : -360
     }
   }
 
@@ -336,10 +335,7 @@ watch(isDark, () => {
 
 <template>
   <div class="dashboard-map-wrapper">
-    <div
-      class="dashboard-map-wrapper-inner"
-      :class="[props.reversed && 'is-reversed']"
-    >
+    <div class="dashboard-map-wrapper-inner" :class="[props.reversed && 'is-reversed']">
       <div ref="mapElement" class="map-section">
         <div ref="geocoderElement" class="geocoder"></div>
         <div ref="popupElement" style="display: none; visibility: hidden">
@@ -363,9 +359,7 @@ watch(isDark, () => {
             v-for="(feature, key) in locations.features"
             :key="key"
             class="box map-box"
-            :class="[
-              selectedFeatureName === feature.properties.name && 'is-active',
-            ]"
+            :class="[selectedFeatureName === feature.properties.name && 'is-active']"
             @click="selectFeature(feature)"
           >
             <div class="map-box-place">
@@ -395,11 +389,7 @@ watch(isDark, () => {
                 </div>
                 <div class="actions">
                   <div class="action">
-                    <i
-                      aria-hidden="true"
-                      class="iconify"
-                      data-icon="feather:flag"
-                    ></i>
+                    <i aria-hidden="true" class="iconify" data-icon="feather:flag"></i>
                     <span class="dark-inverted">
                       {{ feature.properties.distance }} mile
                     </span>
@@ -415,6 +405,6 @@ watch(isDark, () => {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
-@import '../../../../scss/pages/dashboards/_maps.scss';
+@import '../../../../scss/abstracts/mixins';
+@import '../../../../scss/pages/dashboards/maps';
 </style>

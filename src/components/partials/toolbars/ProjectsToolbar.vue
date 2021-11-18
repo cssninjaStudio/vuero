@@ -23,12 +23,11 @@
 </template>
 
 <style lang="scss">
-@import '../../../scss/abstracts/_mixins.scss';
+@import '../../../scss/abstracts/mixins';
 
 /* ==========================================================================
 1. Projects Toolbar
 ========================================================================== */
-
 .projects-toolbar {
   display: flex;
   align-items: center;

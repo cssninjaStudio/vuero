@@ -41,11 +41,7 @@ const hello = ref('world')
                 <span class="score">0</span>
               </div>
               <div class="right">
-                <img
-                  class="team-logo"
-                  src="/images/icons/soccer/teams/psg.svg"
-                  alt=""
-                />
+                <img class="team-logo" src="/images/icons/soccer/teams/psg.svg" alt="" />
                 <span class="team-name">PSG</span>
               </div>
             </div>
@@ -60,10 +56,7 @@ const hello = ref('world')
               <h3 class="title is-5">Available leagues</h3>
             </div>
             <div class="leagues-list">
-              <RouterLink
-                :to="{ name: 'sidebar-dashboards-soccer' }"
-                class="league-item"
-              >
+              <RouterLink :to="{ name: 'sidebar-dashboards-soccer' }" class="league-item">
                 <img
                   class="league-logo"
                   src="/images/icons/soccer/leagues/ligue-1.svg"
@@ -77,10 +70,7 @@ const hello = ref('world')
                   <span>8 matches</span>
                 </div>
               </RouterLink>
-              <RouterLink
-                :to="{ name: 'sidebar-dashboards-soccer' }"
-                class="league-item"
-              >
+              <RouterLink :to="{ name: 'sidebar-dashboards-soccer' }" class="league-item">
                 <img
                   class="league-logo"
                   src="/images/icons/soccer/leagues/laliga.svg"
@@ -94,10 +84,7 @@ const hello = ref('world')
                   <span>8 matches</span>
                 </div>
               </RouterLink>
-              <RouterLink
-                :to="{ name: 'sidebar-dashboards-soccer' }"
-                class="league-item"
-              >
+              <RouterLink :to="{ name: 'sidebar-dashboards-soccer' }" class="league-item">
                 <img
                   class="league-logo"
                   src="/images/icons/soccer/leagues/liga.svg"
@@ -111,10 +98,7 @@ const hello = ref('world')
                   <span>8 matches</span>
                 </div>
               </RouterLink>
-              <RouterLink
-                :to="{ name: 'sidebar-dashboards-soccer' }"
-                class="league-item"
-              >
+              <RouterLink :to="{ name: 'sidebar-dashboards-soccer' }" class="league-item">
                 <img
                   class="league-logo"
                   src="/images/icons/soccer/leagues/bundesliga.svg"
@@ -139,12 +123,10 @@ const hello = ref('world')
             <div class="dashboard-cta-img">
               <img alt="" src="/demo/photos/soccer/player.png" />
             </div>
-            <h2 class="dashboard-cta-title">
-              Win awesome prizes in our contest
-            </h2>
+            <h2 class="dashboard-cta-title">Win awesome prizes in our contest</h2>
             <p class="dashboard-cta-text">
-              Predict who will win and how a match will end and get a chance to
-              win incredible cash prizes.
+              Predict who will win and how a match will end and get a chance to win
+              incredible cash prizes.
             </p>
             <VButton color="light" bold raised>Learn More</VButton>
           </div>
@@ -198,10 +180,7 @@ const hello = ref('world')
                       <div class="score score-vertical">
                         <div class="score-team score-team-vertical">
                           <span>Barcelona</span
-                          ><img
-                            alt=""
-                            src="/images/icons/soccer/teams/barcelona.svg"
-                          />
+                          ><img alt="" src="/images/icons/soccer/teams/barcelona.svg" />
                         </div>
                         <p class="score-result score-result-vertical">
                           <span class="score-goals">4</span
@@ -209,10 +188,9 @@ const hello = ref('world')
                           ><span class="score-goals">0</span>
                         </p>
                         <div class="score-team score-team-vertical">
-                          <img
-                            alt=""
-                            src="/images/icons/soccer/teams/psg.svg"
-                          /><span>PSG</span>
+                          <img alt="" src="/images/icons/soccer/teams/psg.svg" /><span
+                            >PSG</span
+                          >
                         </div>
                       </div>
                     </td>
@@ -241,10 +219,7 @@ const hello = ref('world')
                       <div class="score score-vertical">
                         <div class="score-team score-team-vertical">
                           <span>Real Madrid</span
-                          ><img
-                            alt=""
-                            src="/images/icons/soccer/teams/madrid.svg"
-                          />
+                          ><img alt="" src="/images/icons/soccer/teams/madrid.svg" />
                         </div>
                         <p class="score-result score-result-vertical">
                           <span class="score-goals">1</span
@@ -284,10 +259,7 @@ const hello = ref('world')
                       <div class="score score-vertical">
                         <div class="score-team score-team-vertical">
                           <span>Arsenal</span
-                          ><img
-                            alt=""
-                            src="/images/icons/soccer/teams/arsenal.svg"
-                          />
+                          ><img alt="" src="/images/icons/soccer/teams/arsenal.svg" />
                         </div>
                         <p
                           class="
@@ -301,10 +273,9 @@ const hello = ref('world')
                           ><span class="score-goals">-</span>
                         </p>
                         <div class="score-team score-team-vertical">
-                          <img
-                            alt=""
-                            src="/images/icons/soccer/teams/chelsea.svg"
-                          /><span>Chelsea</span>
+                          <img alt="" src="/images/icons/soccer/teams/chelsea.svg" /><span
+                            >Chelsea</span
+                          >
                         </div>
                       </div>
                     </td>
@@ -333,10 +304,7 @@ const hello = ref('world')
                       <div class="score score-vertical">
                         <div class="score-team score-team-vertical">
                           <span>Everton</span
-                          ><img
-                            alt=""
-                            src="/images/icons/soccer/teams/everton.svg"
-                          />
+                          ><img alt="" src="/images/icons/soccer/teams/everton.svg" />
                         </div>
                         <p
                           class="
@@ -382,10 +350,7 @@ const hello = ref('world')
                       <div class="score score-vertical">
                         <div class="score-team score-team-vertical">
                           <span>Valladolid</span
-                          ><img
-                            alt=""
-                            src="/images/icons/soccer/teams/valladolid.svg"
-                          />
+                          ><img alt="" src="/images/icons/soccer/teams/valladolid.svg" />
                         </div>
                         <p
                           class="
@@ -399,10 +364,9 @@ const hello = ref('world')
                           ><span class="score-goals">-</span>
                         </p>
                         <div class="score-team score-team-vertical">
-                          <img
-                            alt=""
-                            src="/images/icons/soccer/teams/zagreb.svg"
-                          /><span>Zagreb</span>
+                          <img alt="" src="/images/icons/soccer/teams/zagreb.svg" /><span
+                            >Zagreb</span
+                          >
                         </div>
                       </div>
                     </td>
@@ -431,10 +395,7 @@ const hello = ref('world')
                       <div class="score score-vertical">
                         <div class="score-team score-team-vertical">
                           <span>PSG</span
-                          ><img
-                            alt=""
-                            src="/images/icons/soccer/teams/psg.svg"
-                          />
+                          ><img alt="" src="/images/icons/soccer/teams/psg.svg" />
                         </div>
                         <p
                           class="
@@ -448,10 +409,9 @@ const hello = ref('world')
                           ><span class="score-goals">-</span>
                         </p>
                         <div class="score-team score-team-vertical">
-                          <img
-                            alt=""
-                            src="/images/icons/soccer/teams/chelsea.svg"
-                          /><span>Chelsea</span>
+                          <img alt="" src="/images/icons/soccer/teams/chelsea.svg" /><span
+                            >Chelsea</span
+                          >
                         </div>
                       </div>
                     </td>
@@ -475,12 +435,12 @@ const hello = ref('world')
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/abstracts/mixins';
 
 .soccer-dashboard {
   .soccer-dashboard-inner {
     .live-match {
-      @include vuero-l-card();
+      @include vuero-l-card;
 
       padding: 2rem;
       margin-bottom: 1.5rem;
@@ -588,7 +548,7 @@ const hello = ref('world')
     }
 
     .leagues {
-      @include vuero-l-card();
+      @include vuero-l-card;
 
       padding: 2rem;
 
@@ -658,7 +618,7 @@ const hello = ref('world')
 
       .dashboard-cta-text {
         color: var(--white);
-        opacity: 0.9;
+        opacity: 90%;
         font-family: var(--font);
         line-height: 1.7;
         margin-top: 0;
@@ -683,7 +643,7 @@ const hello = ref('world')
     }
 
     .matches-card {
-      @include vuero-l-card();
+      @include vuero-l-card;
 
       padding: 0;
       overflow: hidden;
@@ -693,7 +653,7 @@ const hello = ref('world')
         align-items: center;
         justify-content: space-between;
         margin-bottom: 3rem;
-        padding: 2rem 2rem 0 2rem;
+        padding: 2rem 2rem 0;
 
         .header-nav {
           display: flex;
@@ -801,6 +761,7 @@ const hello = ref('world')
 
             .score-team {
               text-align: center;
+
               span {
                 display: block;
                 font-weight: 500;
@@ -815,13 +776,16 @@ const hello = ref('world')
                 display: flex;
                 align-items: center;
                 flex: 1;
+
                 &:first-child {
                   justify-content: flex-end;
                 }
+
                 span {
                   white-space: nowrap;
                   font-size: inherit;
                 }
+
                 img {
                   width: 32px;
                   margin: 0 0.5rem;
@@ -836,9 +800,11 @@ const hello = ref('world')
               font-size: 1.75rem;
               margin: 0;
               letter-spacing: 0.4em;
+
               &.score-result-not-started {
                 color: gray;
               }
+
               &.score-result-vertical {
                 letter-spacing: 0.2em;
                 font-size: inherit;
@@ -858,6 +824,7 @@ const hello = ref('world')
             padding-left: 0;
           }
         }
+
         .nav-link {
           padding-top: 0;
           padding-bottom: 0;
@@ -872,7 +839,7 @@ const hello = ref('world')
     .soccer-dashboard-inner {
       .live-match,
       .leagues {
-        @include vuero-card--dark();
+        @include vuero-card--dark;
 
         .head {
           .title {
@@ -901,7 +868,7 @@ const hello = ref('world')
       }
 
       .matches-card {
-        @include vuero-card--dark();
+        @include vuero-card--dark;
 
         .matches-card-header {
           .header-nav {

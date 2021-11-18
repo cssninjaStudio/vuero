@@ -50,9 +50,9 @@ useHead({
           subtitle="Sales Manager"
         >
           <p class="pb-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ego vero
-            isti, inquam, permitto. Id Sextilius factum negabat. Apparet statim,
-            quae sint officia, quae actiones. Sed hoc sane concedamus...
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ego vero isti,
+            inquam, permitto. Id Sextilius factum negabat. Apparet statim, quae sint
+            officia, quae actiones. Sed hoc sane concedamus...
           </p>
 
           <a class="action-link">Read More</a>
@@ -68,9 +68,9 @@ useHead({
           subtitle="Project Manager"
         >
           <p class="pb-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ego vero
-            isti, inquam, permitto. Id Sextilius factum negabat. Apparet statim,
-            quae sint officia, quae actiones. Sed hoc sane concedamus...
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ego vero isti,
+            inquam, permitto. Id Sextilius factum negabat. Apparet statim, quae sint
+            officia, quae actiones. Sed hoc sane concedamus...
           </p>
 
           <a class="action-link">Read More</a>
@@ -86,9 +86,9 @@ useHead({
           subtitle="Backend Developer"
         >
           <p class="pb-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ego vero
-            isti, inquam, permitto. Id Sextilius factum negabat. Apparet statim,
-            quae sint officia, quae actiones. Sed hoc sane concedamus...
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ego vero isti,
+            inquam, permitto. Id Sextilius factum negabat. Apparet statim, quae sint
+            officia, quae actiones. Sed hoc sane concedamus...
           </p>
 
           <a class="action-link">Read More</a>

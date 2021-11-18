@@ -10,12 +10,7 @@ See code for more details about usage.
 <template>
   <VFlex column-gap="3px">
     <VIconWrap icon="feather:star" />
-    <VIconWrap
-      icon="feather:help-circle"
-      color="info"
-      has-background
-      has-large-icon
-    />
+    <VIconWrap icon="feather:help-circle" color="info" has-background has-large-icon />
     <VIconWrap icon="feather:x" color="danger" />
     <VIconWrap icon="feather:code" />
     <VIconWrap picture="/images/avatars/svg/vuero-1.svg" />

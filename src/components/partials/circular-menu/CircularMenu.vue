@@ -52,18 +52,11 @@ const localFlagSrc = computed(() => {
     <div class="items-wrapper">
       <div class="menu-item is-flex">
         <label class="dark-mode">
-          <input
-            type="checkbox"
-            :checked="!isDark"
-            @change="toggleDarkModeHandler"
-          />
+          <input type="checkbox" :checked="!isDark" @change="toggleDarkModeHandler" />
           <span></span>
         </label>
       </div>
-      <a
-        class="menu-item is-flex right-panel-trigger"
-        @click="activePanel = 'languages'"
-      >
+      <a class="menu-item is-flex right-panel-trigger" @click="activePanel = 'languages'">
         <img :src="localFlagSrc" alt="" />
       </a>
       <RouterLink

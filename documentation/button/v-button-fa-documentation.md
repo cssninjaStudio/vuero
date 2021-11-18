@@ -11,12 +11,8 @@ Please refer to markup for detailed examples.
 ```vue
 <template>
   <VButtons>
-    <VButton color="primary" icon="fab fa-twitter" elevated>
-      Tweet Now
-    </VButton>
-    <VButton color="success" icon="fas fa-check" raised rounded>
-      Save Changes
-    </VButton>
+    <VButton color="primary" icon="fab fa-twitter" elevated> Tweet Now </VButton>
+    <VButton color="success" icon="fas fa-check" raised rounded> Save Changes </VButton>
   </VButtons>
 </template>
 ```

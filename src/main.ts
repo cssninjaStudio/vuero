@@ -26,9 +26,8 @@ createApp({
     const VueSlider = (await import('@vueform/slider')).default
     const VueTippy = (await import('vue-tippy')).default
 
-    const hasNestedRouterLink = (
-      await import('./directives/has-nested-router-link')
-    ).default
+    const hasNestedRouterLink = (await import('./directives/has-nested-router-link'))
+      .default
     const background = (await import('./directives/background')).default
     const tooltip = (await import('./directives/tooltip')).default
 

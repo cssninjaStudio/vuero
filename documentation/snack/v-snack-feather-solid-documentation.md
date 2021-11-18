@@ -18,13 +18,7 @@ if you want to show a solid icon. Check the markup for more details.
   <VSnack title="Business" color="info" solid icon="feather:briefcase">
     <i class="iconify" data-icon="feather:plus"></i>
   </VSnack>
-  <VSnack
-    title="Warning"
-    color="warning"
-    white
-    solid
-    icon="feather:alert-octagon"
-  >
+  <VSnack title="Warning" color="warning" white solid icon="feather:alert-octagon">
     <i class="iconify" data-icon="feather:plus"></i>
   </VSnack>
   <VSnack title="Health" color="danger" white solid icon="feather:thermometer">

@@ -7,9 +7,7 @@ const hasNestedRouterLink: Directive = {
   mounted(el: HTMLElement) {
     const link = el.querySelector<HTMLElement>('.parent-link')
     const content = el.querySelector<HTMLElement>('ul')
-    const linkExactActive = el.querySelector<HTMLElement>(
-      '.router-link-exact-active'
-    )
+    const linkExactActive = el.querySelector<HTMLElement>('.router-link-exact-active')
 
     if (link && content) {
       if (linkExactActive) {

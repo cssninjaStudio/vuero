@@ -61,10 +61,7 @@ useHead({
 
         <div class="demo-card mt-4">
           <div class="card-inner" :class="{ 'is-scrolling': isScrolling }">
-            <VFlex
-              justify-content="flex-end"
-              class="demo-icon-search py-4 px-6"
-            >
+            <VFlex justify-content="flex-end" class="demo-icon-search py-4 px-6">
               <VField>
                 <VControl icon="feather:search">
                   <input

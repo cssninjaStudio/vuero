@@ -1,10 +1,7 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 import { useRoute } from 'vue-router'
-import {
-  navbarLayoutId,
-  navbarLayoutTheme,
-} from '/@src/state/navbarLayoutState'
+import { navbarLayoutId, navbarLayoutTheme } from '/@src/state/navbarLayoutState'
 import { sidebarTheme } from '/@src/state/sidebarLayoutState'
 
 const isModalOpen = ref(false)
@@ -69,11 +66,7 @@ const layoutComponent = (slug: string) => {
       class="icon-link"
       @click.passive="isModalOpen = true"
     >
-      <i
-        aria-hidden="true"
-        class="iconify sidebar-svg"
-        data-icon="feather:sidebar"
-      ></i>
+      <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather:sidebar"></i>
     </a>
     <VModal
       :open="isModalOpen"
@@ -424,9 +417,7 @@ const layoutComponent = (slug: string) => {
                         :to="sidebarLayoutLink"
                         class="layout-item"
                         :class="[
-                          isSidebarLayout &&
-                            sidebarTheme === 'default' &&
-                            'is-active',
+                          isSidebarLayout && sidebarTheme === 'default' && 'is-active',
                         ]"
                         @click.passive="
                           () => {
@@ -461,9 +452,7 @@ const layoutComponent = (slug: string) => {
                         :to="sidebarLayoutLink"
                         class="layout-item"
                         :class="[
-                          isSidebarLayout &&
-                            sidebarTheme === 'color' &&
-                            'is-active',
+                          isSidebarLayout && sidebarTheme === 'color' && 'is-active',
                         ]"
                         @click.passive="
                           () => {
@@ -498,9 +487,7 @@ const layoutComponent = (slug: string) => {
                         :to="sidebarLayoutLink"
                         class="layout-item"
                         :class="[
-                          isSidebarLayout &&
-                            sidebarTheme === 'curved' &&
-                            'is-active',
+                          isSidebarLayout && sidebarTheme === 'curved' && 'is-active',
                         ]"
                         @click.passive="
                           () => {
@@ -572,9 +559,7 @@ const layoutComponent = (slug: string) => {
                         :to="sidebarLayoutLink"
                         class="layout-item"
                         :class="[
-                          isSidebarLayout &&
-                            sidebarTheme === 'labels' &&
-                            'is-active',
+                          isSidebarLayout && sidebarTheme === 'labels' && 'is-active',
                         ]"
                         @click.passive="
                           () => {
@@ -646,9 +631,7 @@ const layoutComponent = (slug: string) => {
                         :to="sidebarLayoutLink"
                         class="layout-item"
                         :class="[
-                          isSidebarLayout &&
-                            sidebarTheme === 'float' &&
-                            'is-active',
+                          isSidebarLayout && sidebarTheme === 'float' && 'is-active',
                         ]"
                         @click.passive="
                           () => {

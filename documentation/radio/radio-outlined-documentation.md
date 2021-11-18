@@ -21,12 +21,7 @@ const selected = ref('value_2')
 <template>
   <VField>
     <VControl>
-      <VRadio
-        v-model="selected"
-        value="value_1"
-        label="Choice 1"
-        name="outlined_radio"
-      />
+      <VRadio v-model="selected" value="value_1" label="Choice 1" name="outlined_radio" />
 
       <VRadio
         v-model="selected"

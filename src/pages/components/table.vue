@@ -57,9 +57,7 @@ useHead({
                 <th scope="col">Last Name</th>
                 <th scope="col">Position</th>
                 <th scope="col" class="is-end">
-                  <div
-                    class="dark-inverted is-flex is-justify-content-flex-end"
-                  >
+                  <div class="dark-inverted is-flex is-justify-content-flex-end">
                     Actions
                   </div>
                 </th>
@@ -134,9 +132,7 @@ useHead({
                 <th scope="col">Last Name</th>
                 <th scope="col">Position</th>
                 <th scope="col" class="is-end">
-                  <div
-                    class="dark-inverted is-flex is-justify-content-flex-end"
-                  >
+                  <div class="dark-inverted is-flex is-justify-content-flex-end">
                     Actions
                   </div>
                 </th>
@@ -212,9 +208,7 @@ useHead({
                 <th scope="col">Last Name</th>
                 <th scope="col">Position</th>
                 <th scope="col" class="is-end">
-                  <div
-                    class="dark-inverted is-flex is-justify-content-flex-end"
-                  >
+                  <div class="dark-inverted is-flex is-justify-content-flex-end">
                     Actions
                   </div>
                 </th>

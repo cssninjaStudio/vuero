@@ -42,20 +42,13 @@ export default function useCreditcardMask() {
       const month = date.getMonth() + 1
       const year = date.getFullYear()
 
-      return [
-        month < 10 ? `0${month}` : month,
-        year.toString().substr(2, 2),
-      ].join('/')
+      return [month < 10 ? `0${month}` : month, year.toString().substr(2, 2)].join('/')
     },
     // define value -> date convertion
     parse: (value: string) => {
       const monthYear = value.split('/')
       if (monthYear.length === 2) {
-        return new Date(
-          parseInt(monthYear[1]) + 2000,
-          parseInt(monthYear[0]) - 1,
-          1
-        )
+        return new Date(parseInt(monthYear[1]) + 2000, parseInt(monthYear[0]) - 1, 1)
       }
       return new Date()
     },

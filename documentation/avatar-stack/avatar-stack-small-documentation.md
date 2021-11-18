@@ -21,7 +21,7 @@ const users = [
     initials: 'JP',
     color: 'info',
   },
-  //etc...
+  // etc...
 ]
 </script>
 

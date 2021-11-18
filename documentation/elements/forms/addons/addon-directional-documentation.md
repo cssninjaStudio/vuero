@@ -34,12 +34,7 @@ const currency = ref('$')
 
     <!-- amount input -->
     <VControl expanded>
-      <input
-        v-model="amount"
-        type="text"
-        class="input"
-        placeholder="Amount of money"
-      />
+      <input v-model="amount" type="text" class="input" placeholder="Amount of money" />
     </VControl>
 
     <!-- submit -->

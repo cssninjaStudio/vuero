@@ -104,19 +104,13 @@ const filteredData = computed(() => {
           <div class="flex-list-inner">
             <transition-group name="list" tag="div">
               <!--Table item-->
-              <div
-                v-for="item in filteredData"
-                :key="item.id"
-                class="flex-table-item"
-              >
+              <div v-for="item in filteredData" :key="item.id" class="flex-table-item">
                 <div class="flex-table-cell is-media is-grow-lg">
                   <img
                     class="media"
                     :src="item.picture"
                     alt=""
-                    @error.once="
-                      (event) => useViaPlaceholderError(event, '150x110')
-                    "
+                    @error.once="(event) => useViaPlaceholderError(event, '150x110')"
                   />
                   <div>
                     <span class="item-name dark-inverted">{{ item.name }}</span>
@@ -171,19 +165,9 @@ const filteredData = computed(() => {
                   </span>
                 </div>
                 <div class="flex-table-cell cell-end" data-th="Actions">
-                  <a
-                    class="
-                      button
-                      v-button
-                      has-dot
-                      dark-outlined
-                      is-pushed-mobile
-                    "
-                  >
+                  <a class="button v-button has-dot dark-outlined is-pushed-mobile">
                     Purchase
-                    <i aria-hidden="true" class="fas fa-circle dot"></i> ${{
-                      item.price
-                    }}
+                    <i aria-hidden="true" class="fas fa-circle dot"></i> ${{ item.price }}
                   </a>
                 </div>
               </div>

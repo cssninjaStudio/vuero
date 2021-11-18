@@ -92,21 +92,12 @@ const selectCustomer = (customer: WizardCustomer) => {
 
     <div class="project-dates">
       <h4>Project Time Frame</h4>
-      <v-date-picker
-        v-model="wizard.data.timeFrame"
-        is-range
-        color="green"
-        trim-weeks
-      >
+      <v-date-picker v-model="wizard.data.timeFrame" is-range color="green" trim-weeks>
         <template #default="{ inputValue, inputEvents }">
           <div class="project-dates-inner">
             <div class="project-date">
               <div class="date-icon">
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:map-pin"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:map-pin"></i>
               </div>
               <VControl>
                 <input
@@ -120,11 +111,7 @@ const selectCustomer = (customer: WizardCustomer) => {
             <div class="separator"></div>
             <div class="project-date">
               <div class="date-icon">
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:flag"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:flag"></i>
               </div>
               <VControl>
                 <input

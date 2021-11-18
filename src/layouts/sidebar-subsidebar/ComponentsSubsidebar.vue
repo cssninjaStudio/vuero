@@ -39,9 +39,7 @@ const emit = defineEmits(['close'])
         </li>
 
         <li>
-          <RouterLink :to="{ name: 'components-icon-box' }">
-            VIconBox
-          </RouterLink>
+          <RouterLink :to="{ name: 'components-icon-box' }"> VIconBox </RouterLink>
         </li>
         <li>
           <RouterLink :to="{ name: 'components-icon-wrap' }">
@@ -74,9 +72,7 @@ const emit = defineEmits(['close'])
           </RouterLink>
         </li>
         <li>
-          <RouterLink :to="{ name: 'components-breadcrumb' }">
-            VBreadcrumb
-          </RouterLink>
+          <RouterLink :to="{ name: 'components-breadcrumb' }"> VBreadcrumb </RouterLink>
         </li>
         <li>
           <RouterLink :to="{ name: 'components-tabs' }">
@@ -92,24 +88,13 @@ const emit = defineEmits(['close'])
           <div class="collapse-wrap">
             <a class="parent-link">
               VFlexTable
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:chevron-right"
-              />
+              <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
           </div>
           <ul>
             <li>
-              <RouterLink
-                :to="{ name: 'components-flex-table' }"
-                class="is-submenu"
-              >
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:circle"
-                ></i>
+              <RouterLink :to="{ name: 'components-flex-table' }" class="is-submenu">
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                 Base Table
               </RouterLink>
             </li>
@@ -118,11 +103,7 @@ const emit = defineEmits(['close'])
                 :to="{ name: 'components-flex-table-compact' }"
                 class="is-submenu"
               >
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:circle"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                 Compact Table
               </RouterLink>
             </li>
@@ -131,11 +112,7 @@ const emit = defineEmits(['close'])
                 :to="{ name: 'components-flex-table-media' }"
                 class="is-submenu"
               >
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:circle"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                 Media Table
               </RouterLink>
             </li>
@@ -144,11 +121,7 @@ const emit = defineEmits(['close'])
                 :to="{ name: 'components-flex-table-advanced' }"
                 class="is-submenu"
               >
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:circle"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                 Advanced Table</RouterLink
               >
             </li>
@@ -159,50 +132,25 @@ const emit = defineEmits(['close'])
           <div class="collapse-wrap">
             <a class="parent-link">
               Accordions
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:chevron-right"
-              />
+              <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
           </div>
           <ul>
             <li>
-              <RouterLink
-                :to="{ name: 'components-accordion' }"
-                class="is-submenu"
-              >
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:circle"
-                ></i>
+              <RouterLink :to="{ name: 'components-accordion' }" class="is-submenu">
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                 VAccordion
               </RouterLink>
             </li>
             <li>
-              <RouterLink
-                :to="{ name: 'components-collapse' }"
-                class="is-submenu"
-              >
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:circle"
-                ></i>
+              <RouterLink :to="{ name: 'components-collapse' }" class="is-submenu">
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                 VCollapse
               </RouterLink>
             </li>
             <li>
-              <RouterLink
-                :to="{ name: 'components-accordion-image' }"
-                class="is-submenu"
-              >
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:circle"
-                ></i>
+              <RouterLink :to="{ name: 'components-accordion-image' }" class="is-submenu">
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                 VAccordionImage
               </RouterLink>
             </li>
@@ -212,76 +160,40 @@ const emit = defineEmits(['close'])
           <div class="collapse-wrap">
             <a class="parent-link">
               Cards
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:chevron-right"
-              />
+              <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
           </div>
           <ul>
             <li>
               <RouterLink :to="{ name: 'components-card' }" class="is-submenu">
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:circle"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                 VCard
                 <VTag label="v1.1" color="primary" outlined curved />
               </RouterLink>
             </li>
             <li>
-              <RouterLink
-                :to="{ name: 'components-card-action' }"
-                class="is-submenu"
-              >
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:circle"
-                ></i>
+              <RouterLink :to="{ name: 'components-card-action' }" class="is-submenu">
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                 VCardAction
                 <VTag label="v1.1" color="primary" outlined curved />
               </RouterLink>
             </li>
             <li>
-              <RouterLink
-                :to="{ name: 'components-card-advanced' }"
-                class="is-submenu"
-              >
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:circle"
-                ></i>
+              <RouterLink :to="{ name: 'components-card-advanced' }" class="is-submenu">
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                 VCardAdvanced
               </RouterLink>
             </li>
             <li>
-              <RouterLink
-                :to="{ name: 'components-card-media' }"
-                class="is-submenu"
-              >
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:circle"
-                ></i>
+              <RouterLink :to="{ name: 'components-card-media' }" class="is-submenu">
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                 VCardMedia
                 <VTag label="v1.1" color="primary" outlined curved />
               </RouterLink>
             </li>
             <li>
-              <RouterLink
-                :to="{ name: 'components-card-social' }"
-                class="is-submenu"
-              >
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:circle"
-                ></i>
+              <RouterLink :to="{ name: 'components-card-social' }" class="is-submenu">
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                 VCardSocial
               </RouterLink>
             </li>
@@ -291,11 +203,7 @@ const emit = defineEmits(['close'])
           <div class="collapse-wrap">
             <a class="parent-link">
               Placeholders
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:chevron-right"
-              />
+              <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
           </div>
           <ul>
@@ -304,11 +212,7 @@ const emit = defineEmits(['close'])
                 :to="{ name: 'components-placeholder-page' }"
                 class="is-submenu"
               >
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:circle"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                 VPlaceholderPage
               </RouterLink>
             </li>
@@ -317,11 +221,7 @@ const emit = defineEmits(['close'])
                 :to="{ name: 'components-placeholder-section' }"
                 class="is-submenu"
               >
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:circle"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                 VPlaceholderSection
               </RouterLink>
             </li>
@@ -333,37 +233,19 @@ const emit = defineEmits(['close'])
           <div class="collapse-wrap">
             <a class="parent-link">
               Plugins
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:chevron-right"
-              />
+              <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
           </div>
           <ul>
             <li>
-              <RouterLink
-                :to="{ name: 'components-plugins-notif' }"
-                class="is-submenu"
-              >
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:circle"
-                ></i>
+              <RouterLink :to="{ name: 'components-plugins-notif' }" class="is-submenu">
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                 Notyf
               </RouterLink>
             </li>
             <li>
-              <RouterLink
-                :to="{ name: 'components-plugins-tippy' }"
-                class="is-submenu"
-              >
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:circle"
-                ></i>
+              <RouterLink :to="{ name: 'components-plugins-tippy' }" class="is-submenu">
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                 Tippy
               </RouterLink>
             </li>
@@ -372,11 +254,7 @@ const emit = defineEmits(['close'])
                 :to="{ name: 'components-plugins-billboard-js' }"
                 class="is-submenu"
               >
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:circle"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                 VBillboardJS
               </RouterLink>
             </li>
@@ -385,24 +263,13 @@ const emit = defineEmits(['close'])
                 :to="{ name: 'components-plugins-photos-swipe' }"
                 class="is-submenu"
               >
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:circle"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                 VPhotosSwipe
               </RouterLink>
             </li>
             <li>
-              <RouterLink
-                :to="{ name: 'components-plugins-plyr' }"
-                class="is-submenu"
-              >
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:circle"
-                ></i>
+              <RouterLink :to="{ name: 'components-plugins-plyr' }" class="is-submenu">
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                 VPlyr
               </RouterLink>
             </li>
@@ -411,11 +278,7 @@ const emit = defineEmits(['close'])
                 :to="{ name: 'components-plugins-simple-datatables' }"
                 class="is-submenu"
               >
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:circle"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                 VSimpleDatatables
               </RouterLink>
             </li>
@@ -427,5 +290,5 @@ const emit = defineEmits(['close'])
 </template>
 
 <style lang="scss">
-@import '../../scss/layout/_sidebar-panel.scss';
+@import '../../scss/layout/sidebar-panel';
 </style>

@@ -459,7 +459,7 @@ They are not added by default to `main.scss`, instead we lazyload them in layout
 
 <style lang="scss">
   /* files imported in components will be loaded only once they are needed */
-  @import '../scss/abstracts/_variables.scss';
+  @import '../scss/abstracts/variables';
 </style>
 ```
 

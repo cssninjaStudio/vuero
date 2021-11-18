@@ -27,11 +27,7 @@ const date = reactive({
     <template #default="{ inputValue, inputEvents }">
       <VField addons>
         <VControl>
-          <input
-            :value="inputValue.start"
-            class="input"
-            v-on="inputEvents.start"
-          />
+          <input :value="inputValue.start" class="input" v-on="inputEvents.start" />
         </VControl>
         <VControl>
           <a class="button is-static"

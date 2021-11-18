@@ -39,5 +39,5 @@ watchEffect(() => {
 </template>
 
 <style lang="scss">
-@import 'billboard.js/src/scss/billboard.scss';
+@import 'billboard.js/src/scss/billboard';
 </style>

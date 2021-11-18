@@ -57,22 +57,22 @@
           <div class="column is-4">
             <h3 class="title is-4">Bulma 0.9.1</h3>
             <p class="subtitle is-6 light-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Summum
-              ením bonum exposuit vacuitatem.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Summum ením bonum
+              exposuit vacuitatem.
             </p>
           </div>
           <div class="column is-4">
             <h3 class="title is-4">Clean Code</h3>
             <p class="subtitle is-6 light-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Summum
-              ením bonum exposuit vacuitatem.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Summum ením bonum
+              exposuit vacuitatem.
             </p>
           </div>
           <div class="column is-4">
             <h3 class="title is-4">Modern UI</h3>
             <p class="subtitle is-6 light-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Summum
-              ením bonum exposuit vacuitatem.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Summum ením bonum
+              exposuit vacuitatem.
             </p>
           </div>
         </div>

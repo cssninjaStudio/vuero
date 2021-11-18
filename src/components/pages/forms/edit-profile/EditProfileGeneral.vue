@@ -68,12 +68,7 @@ const onSave = async () => {
             >
               Go Back
             </VButton>
-            <VButton
-              color="primary"
-              raised
-              :loading="isLoading"
-              @click="onSave"
-            >
+            <VButton color="primary" raised :loading="isLoading" @click="onSave">
               Save Changes
             </VButton>
           </div>
@@ -226,12 +221,7 @@ const onSave = async () => {
                 <Multiselect
                   v-model="experience"
                   placeholder="Experience"
-                  :options="[
-                    '0-2 years',
-                    '2-5 years',
-                    '5-10 years',
-                    '10+ years',
-                  ]"
+                  :options="['0-2 years', '2-5 years', '5-10 years', '10+ years']"
                 />
               </VControl>
             </VField>

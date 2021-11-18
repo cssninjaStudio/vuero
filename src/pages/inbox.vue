@@ -19,15 +19,9 @@ const isAllChecked = computed(() => {
 
 const toggleSelection = () => {
   if (isAllChecked.value) {
-    selectedConversationList.value.splice(
-      0,
-      selectedConversationList.value.length
-    )
+    selectedConversationList.value.splice(0, selectedConversationList.value.length)
   } else {
-    selectedConversationList.value.splice(
-      0,
-      selectedConversationList.value.length
-    )
+    selectedConversationList.value.splice(0, selectedConversationList.value.length)
     selectedConversationList.value.push(...[1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
   }
 }
@@ -52,10 +46,7 @@ useHead({
     <div class="inbox-wrapper">
       <div class="wrapper-inner">
         <!--Inbox sidebar-->
-        <div
-          class="inbox-sidebar"
-          :class="[mobileSidebarOpen && 'mobile-active']"
-        >
+        <div class="inbox-sidebar" :class="[mobileSidebarOpen && 'mobile-active']">
           <!-- Header -->
           <div class="header-area">
             <div class="inbox-title">
@@ -99,11 +90,7 @@ useHead({
                     <span>Refresh</span>
                   </a>
                   <a class="dropdown-item">
-                    <i
-                      aria-hidden="true"
-                      class="iconify"
-                      data-icon="feather:bell"
-                    ></i>
+                    <i aria-hidden="true" class="iconify" data-icon="feather:bell"></i>
                     <span>Notifications</span>
                   </a>
                   <a class="dropdown-item">
@@ -145,11 +132,7 @@ useHead({
                       :class="[activeTab === 'inbox' && 'is-active']"
                       @click="activeTab = 'inbox'"
                     >
-                      <i
-                        aria-hidden="true"
-                        class="iconify"
-                        data-icon="feather:mail"
-                      ></i>
+                      <i aria-hidden="true" class="iconify" data-icon="feather:mail"></i>
                       <span>Inbox</span>
                       <span class="tag">24</span>
                     </a>
@@ -173,11 +156,7 @@ useHead({
                       :class="[activeTab === 'sent' && 'is-active']"
                       @click="activeTab = 'sent'"
                     >
-                      <i
-                        aria-hidden="true"
-                        class="iconify"
-                        data-icon="feather:send"
-                      ></i>
+                      <i aria-hidden="true" class="iconify" data-icon="feather:send"></i>
                       <span>Sent</span>
                       <span class="tag">7</span>
                     </a>
@@ -221,17 +200,9 @@ useHead({
                   :class="[!contactSearchOpen && 'is-hidden']"
                   class="control has-icon"
                 >
-                  <input
-                    type="text"
-                    class="input"
-                    placeholder="Search Contacts..."
-                  />
+                  <input type="text" class="input" placeholder="Search Contacts..." />
                   <div class="form-icon">
-                    <i
-                      aria-hidden="true"
-                      class="iconify"
-                      data-icon="feather:search"
-                    ></i>
+                    <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
                   </div>
                 </div>
                 <a
@@ -240,11 +211,7 @@ useHead({
                   aria-label="Search"
                 >
                   <span class="icon is-small" @click="contactSearchOpen = true">
-                    <i
-                      aria-hidden="true"
-                      class="iconify"
-                      data-icon="feather:search"
-                    ></i>
+                    <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
                   </span>
                 </a>
                 <a
@@ -252,15 +219,8 @@ useHead({
                   class="button cancel-searcv-button"
                   aria-label="Close"
                 >
-                  <span
-                    class="icon is-small"
-                    @click="contactSearchOpen = false"
-                  >
-                    <i
-                      aria-hidden="true"
-                      class="iconify"
-                      data-icon="feather:x"
-                    ></i>
+                  <span class="icon is-small" @click="contactSearchOpen = false">
+                    <i aria-hidden="true" class="iconify" data-icon="feather:x"></i>
                   </span>
                 </a>
               </div>
@@ -270,9 +230,7 @@ useHead({
                   <img
                     src="/demo/avatars/7.jpg"
                     alt=""
-                    @error.once="
-                      (event) => useViaPlaceholderError(event, '150x150')
-                    "
+                    @error.once="(event) => useViaPlaceholderError(event, '150x150')"
                   />
                   <div class="contact-meta">
                     <span>Alice Carasca</span>
@@ -284,9 +242,7 @@ useHead({
                   <img
                     src="/demo/avatars/25.jpg"
                     alt=""
-                    @error.once="
-                      (event) => useViaPlaceholderError(event, '150x150')
-                    "
+                    @error.once="(event) => useViaPlaceholderError(event, '150x150')"
                   />
                   <div class="contact-meta">
                     <span>Melany Wallace</span>
@@ -298,9 +254,7 @@ useHead({
                   <img
                     src="/demo/avatars/18.jpg"
                     alt=""
-                    @error.once="
-                      (event) => useViaPlaceholderError(event, '150x150')
-                    "
+                    @error.once="(event) => useViaPlaceholderError(event, '150x150')"
                   />
                   <div class="contact-meta">
                     <span>Esteban Castellanos</span>
@@ -312,9 +266,7 @@ useHead({
                   <img
                     src="/demo/avatars/32.jpg"
                     alt=""
-                    @error.once="
-                      (event) => useViaPlaceholderError(event, '150x150')
-                    "
+                    @error.once="(event) => useViaPlaceholderError(event, '150x150')"
                   />
                   <div class="contact-meta">
                     <span>Jonathan Krugger</span>
@@ -326,9 +278,7 @@ useHead({
                   <img
                     src="/demo/avatars/38.jpg"
                     alt=""
-                    @error.once="
-                      (event) => useViaPlaceholderError(event, '150x150')
-                    "
+                    @error.once="(event) => useViaPlaceholderError(event, '150x150')"
                   />
                   <div class="contact-meta">
                     <span>Christie Dallas</span>
@@ -361,11 +311,7 @@ useHead({
                 aria-label="Toggle selection"
                 @click="toggleSelection"
               >
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:check"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
               </a>
             </div>
             <div class="actions">
@@ -376,11 +322,7 @@ useHead({
                   placeholder="Search Inbox..."
                 />
                 <div class="form-icon">
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:search"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
                 </div>
               </div>
 
@@ -402,11 +344,7 @@ useHead({
                 <div class="dropdown-menu">
                   <div class="dropdown-content">
                     <a class="dropdown-item">
-                      <i
-                        aria-hidden="true"
-                        class="iconify"
-                        data-icon="feather:check"
-                      ></i>
+                      <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                       <span>Mark all as read</span>
                     </a>
                     <a class="dropdown-item">
@@ -427,11 +365,7 @@ useHead({
                       <span>Sort by date</span>
                     </a>
                     <a class="dropdown-item">
-                      <i
-                        aria-hidden="true"
-                        class="iconify"
-                        data-icon="feather:user"
-                      ></i>
+                      <i aria-hidden="true" class="iconify" data-icon="feather:user"></i>
                       <span>Sort by user</span>
                     </a>
                   </div>
@@ -607,7 +541,7 @@ useHead({
             font-family: var(--font);
 
             &:hover {
-              opacity: 0.8;
+              opacity: 80%;
               box-shadow: var(--primary-box-shadow);
             }
           }
@@ -934,7 +868,7 @@ useHead({
       height: 100%;
       width: 48%;
       z-index: -1;
-      opacity: 0;
+      opacity: 0%;
       background: var(--white);
       transition: opacity 0.4s;
       display: flex;
@@ -942,7 +876,7 @@ useHead({
       align-items: center;
 
       &.is-active {
-        opacity: 1;
+        opacity: 100%;
         z-index: 1;
       }
 
@@ -1076,13 +1010,14 @@ useHead({
           }
 
           .mail-content {
-            padding: 40px 60px 30px 60px;
+            padding: 40px 60px 30px;
+            /* stylelint-disable-next-line font-family-name-quotes */
             font-family: 'Roboto', sans-serif;
           }
         }
 
         .attachments-list {
-          padding: 0 60px 30px 60px;
+          padding: 0 60px 30px;
           display: flex;
           align-items: center;
           flex-wrap: wrap;
@@ -1091,7 +1026,7 @@ useHead({
             display: flex;
             align-items: center;
             padding: 6px 6px 6px 16px;
-            margin: 0 6px 6px 6px;
+            margin: 0 6px 6px;
             border: 1px solid var(--fade-grey);
             background: var(--white);
             border-radius: 100px;
@@ -1152,7 +1087,7 @@ useHead({
 
         .reply-box-wrap {
           position: relative;
-          padding: 40px 30px 30px 30px;
+          padding: 40px 30px 30px;
 
           .reply-bubble {
             position: relative;
@@ -1175,14 +1110,14 @@ useHead({
             }
 
             &::after {
-              border-color: rgba(255, 255, 255, 0);
+              border-color: rgb(255 255 255 / 0%);
               border-bottom-color: var(--white);
               border-width: 16px;
               margin-left: -16px;
             }
 
             &::before {
-              border-color: rgba(237, 237, 237, 0);
+              border-color: rgb(237 237 237 / 0%);
               border-bottom-color: #e0e0e0;
               border-width: 17px;
               margin-left: -17px;
@@ -1703,6 +1638,7 @@ Dark mode
       }
     }
   }
+
   .inbox-action {
     &:hover {
       background: var(--dark-sidebar-light-2);
@@ -1713,6 +1649,7 @@ Dark mode
       }
     }
   }
+
   .inbox-dropdown {
     &:hover {
       div > .button {
@@ -1732,7 +1669,7 @@ Dark mode
 4. Media Queries
 ========================================================================== */
 
-//Media queries
+// Media queries
 @media (max-width: 767px) {
   .inbox-hidden-mobile {
     display: none !important;
@@ -1836,7 +1773,7 @@ Dark mode
       }
 
       .mail-content {
-        padding: 40px 20px 20px 20px !important;
+        padding: 40px 20px 20px !important;
       }
 
       .attachments-list {
@@ -1888,7 +1825,7 @@ Dark mode
   }
 }
 
-//Tablet portrait
+// Tablet portrait
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .inbox-hidden-mobile {
     display: none !important;
@@ -1963,7 +1900,7 @@ Dark mode
       }
 
       .mail-content {
-        padding: 40px 20px 20px 20px !important;
+        padding: 40px 20px 20px !important;
       }
 
       .attachments-list {
@@ -2015,7 +1952,7 @@ Dark mode
   }
 }
 
-//Tablet landscape
+// Tablet landscape
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .inbox-hidden-mobile {
     display: none !important;

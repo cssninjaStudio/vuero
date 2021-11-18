@@ -164,7 +164,7 @@ watchEffect(() => {
 </template>
 
 <style lang="scss">
-@import '../scss/abstracts/_mixins.scss';
+@import '../scss/abstracts/mixins';
 
 /* ==========================================================================
 1. Wizard V1 Navigation
@@ -277,13 +277,13 @@ watchEffect(() => {
         display: flex;
         justify-content: center;
         background: #f2f2f2;
-        opacity: 0;
+        opacity: 0%;
         pointer-events: none;
         z-index: 2;
         transition: all 0.3s;
 
         &.is-active {
-          opacity: 1;
+          opacity: 100%;
           pointer-events: all;
         }
 
@@ -308,7 +308,7 @@ watchEffect(() => {
 
         .v-avatar {
           position: relative;
-          margin: 0 auto 12px auto;
+          margin: 0 auto 12px;
 
           .edit-icon {
             position: absolute;
@@ -335,14 +335,14 @@ watchEffect(() => {
         h3 {
           &:hover {
             .edit-icon {
-              opacity: 1;
+              opacity: 100%;
               pointer-events: all;
             }
           }
 
           .edit-icon {
             pointer-events: none;
-            opacity: 0;
+            opacity: 0%;
             font-size: 16px;
             color: var(--light-text);
             transition: all 0.3s;
@@ -364,14 +364,14 @@ watchEffect(() => {
         .edit-box {
           position: relative;
 
-          @include vuero-l-card();
+          @include vuero-l-card;
 
           &:hover {
             border-color: var(--primary);
             box-shadow: var(--light-box-shadow);
 
             .edit-icon {
-              opacity: 1;
+              opacity: 100%;
               pointer-events: all;
             }
           }
@@ -404,7 +404,7 @@ watchEffect(() => {
             width: 24px;
             border-radius: var(--radius-rounded);
             background: var(--fade-grey-light-3);
-            opacity: 0;
+            opacity: 0%;
             pointer-events: none;
             cursor: pointer;
             transition: all 0.3s;
@@ -505,7 +505,7 @@ watchEffect(() => {
           left: 0;
           height: 100%;
           width: 100%;
-          opacity: 0;
+          opacity: 0%;
           cursor: pointer;
 
           &:checked + .tool-card-inner {
@@ -513,7 +513,7 @@ watchEffect(() => {
 
             .flex-end {
               .checkmark {
-                opacity: 1;
+                opacity: 100%;
               }
             }
           }
@@ -536,7 +536,7 @@ watchEffect(() => {
                 border: 1px solid var(--fade-grey-dark-3);
                 border-radius: var(--radius-rounded);
                 box-shadow: var(--light-box-shadow);
-                opacity: 0;
+                opacity: 0%;
                 color: var(--primary);
                 transition: all 0.3s;
 
@@ -575,7 +575,7 @@ watchEffect(() => {
         }
 
         .v-avatar {
-          margin: 0 auto 12px auto;
+          margin: 0 auto 12px;
         }
 
         p {
@@ -632,7 +632,7 @@ watchEffect(() => {
                 font-size: 0.8rem;
                 text-transform: uppercase;
                 color: var(--light-text);
-                padding: 8px 0 0 0;
+                padding: 8px 0 0;
               }
 
               > p {
@@ -753,7 +753,6 @@ watchEffect(() => {
           display: flex;
           -webkit-box-orient: vertical;
           -webkit-box-direction: normal;
-          -ms-flex-direction: column;
           flex-direction: column;
           -webkit-box-pack: center;
           -ms-flex-pack: center;
@@ -767,11 +766,11 @@ watchEffect(() => {
         .progress-bar-striped {
           background-image: linear-gradient(
             45deg,
-            rgba(255, 255, 255, 0.15) 25%,
+            rgb(255 255 255 / 15%) 25%,
             transparent 25%,
             transparent 50%,
-            rgba(255, 255, 255, 0.15) 50%,
-            rgba(255, 255, 255, 0.15) 75%,
+            rgb(255 255 255 / 15%) 50%,
+            rgb(255 255 255 / 15%) 75%,
             transparent 75%,
             transparent
           );
@@ -779,7 +778,6 @@ watchEffect(() => {
         }
 
         .progress-bar-animated {
-          -webkit-animation: progress-bar-stripes 1s linear infinite;
           animation: progress-bar-stripes 1s linear infinite;
         }
 
@@ -797,11 +795,11 @@ watchEffect(() => {
       .uploader-toolbar {
         display: flex;
         justify-content: space-between;
-        margin: 0 0 20px 0;
+        margin: 0 0 20px;
 
         .left {
           .uploader-actions {
-            @include vuero-l-card();
+            @include vuero-l-card;
 
             display: flex;
             padding: 10px 16px;
@@ -846,7 +844,7 @@ watchEffect(() => {
         .right {
           .fileupload-process {
             #total-progress {
-              opacity: 0;
+              opacity: 0%;
               transition: opacity 0.3s linear;
             }
           }
@@ -908,7 +906,7 @@ watchEffect(() => {
             .preview-box {
               .list-item-progress {
                 .progress {
-                  //opacity: 0;
+                  // opacity: 0;
                   transition: opacity 0.3s linear;
                 }
               }
@@ -1042,8 +1040,9 @@ watchEffect(() => {
 
           .filepond-profile-wrap {
             display: block;
-            margin: 0 auto 4px auto;
+            margin: 0 auto 4px;
 
+            /* stylelint-disable-next-line selector-class-pattern */
             .filepond--drop-label {
               background: var(--white);
               cursor: pointer;
@@ -1202,7 +1201,7 @@ watchEffect(() => {
             transition: all 0.3s;
 
             &:hover:not(.is-active) {
-              //background: var(--fade-grey-light-3);
+              // background: var(--fade-grey-light-3);
               color: var(--light-text);
             }
 
@@ -1262,7 +1261,7 @@ watchEffect(() => {
       margin: 0 auto;
 
       .wizard-card {
-        @include vuero-l-card();
+        @include vuero-l-card;
 
         text-align: center;
         background: none;
@@ -1277,7 +1276,7 @@ watchEffect(() => {
 
           .learn-more-link {
             a {
-              opacity: 1;
+              opacity: 100%;
               pointer-events: all;
             }
           }
@@ -1296,7 +1295,7 @@ watchEffect(() => {
           font-size: 1.1rem;
           color: var(--dark-text);
           text-align: center;
-          margin: 16px 0 0 0;
+          margin: 16px 0 0;
         }
 
         p {
@@ -1305,7 +1304,7 @@ watchEffect(() => {
           color: var(--light-text);
           text-align: center;
           max-width: 240px;
-          margin: 0 auto 20px auto;
+          margin: 0 auto 20px;
         }
 
         .button-wrap {
@@ -1327,7 +1326,7 @@ watchEffect(() => {
             font-weight: 500;
             font-family: var(--font);
             color: var(--light-text);
-            opacity: 0;
+            opacity: 0%;
             pointer-events: none;
             transition: all 0.3s;
 
@@ -1411,7 +1410,7 @@ watchEffect(() => {
 
         .project-preview-body {
           .edit-box {
-            @include vuero-card--dark();
+            @include vuero-card--dark;
 
             > h4 {
               color: var(--dark-dark-text);
@@ -1579,6 +1578,7 @@ watchEffect(() => {
         .project-info-head {
           .project-avatar-upload {
             .filepond-profile-wrap {
+              /* stylelint-disable-next-line selector-class-pattern */
               .filepond--drop-label {
                 background: var(--dark-sidebar-light-2);
               }

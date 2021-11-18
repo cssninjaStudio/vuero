@@ -119,22 +119,14 @@ const filteredData = computed(() => {
           <div class="flex-list-inner">
             <transition-group name="list" tag="div">
               <!--Table item-->
-              <div
-                v-for="item in filteredData"
-                :key="item.id"
-                class="flex-table-item"
-              >
+              <div v-for="item in filteredData" :key="item.id" class="flex-table-item">
                 <div class="flex-table-cell is-media is-grow">
                   <VAvatar :picture="item.picture" />
                   <div>
                     <span class="item-name dark-inverted">{{ item.name }}</span>
                     <span class="item-meta">
                       <span>
-                        <i
-                          aria-hidden="true"
-                          class="iconify"
-                          data-icon="feather:clock"
-                        >
+                        <i aria-hidden="true" class="iconify" data-icon="feather:clock">
                         </i
                         >{{ item.duration }}</span
                       >
@@ -150,10 +142,7 @@ const filteredData = computed(() => {
                 <div class="flex-table-cell" data-th="Status">
                   <span class="tag is-rounded">{{ item.status }}</span>
                 </div>
-                <div
-                  class="flex-table-cell h-hidden-tablet-p"
-                  data-th="Relations"
-                >
+                <div class="flex-table-cell h-hidden-tablet-p" data-th="Relations">
                   <VAvatarStack
                     :avatars="item.team"
                     size="small"

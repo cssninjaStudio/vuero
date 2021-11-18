@@ -14,9 +14,9 @@ on a grey background. Check the markup for more details.
 ```vue
 <template>
   <VMessage closable>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus quis
-    placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla.
-    Nullam gravida purus diam, et dictum.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus quis placerat ut,
+    porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus
+    diam, et dictum.
   </VMessage>
 </template>
 ```

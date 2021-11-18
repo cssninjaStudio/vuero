@@ -10,23 +10,11 @@ There are 6 default positions accessible with modifiers: `.top-left`,
 ```vue {4,10,16,22,28,34}
 <template>
   <VTags>
-    <VTag
-      v-tooltip.left="'Iam a top left tooltip'"
-      color="solid"
-      label="Top Left"
-    />
+    <VTag v-tooltip.left="'Iam a top left tooltip'" color="solid" label="Top Left" />
 
-    <VTag
-      v-tooltip="'Iam a top center tooltip'"
-      color="solid"
-      label="Top Center"
-    />
+    <VTag v-tooltip="'Iam a top center tooltip'" color="solid" label="Top Center" />
 
-    <VTag
-      v-tooltip.right="'Iam a top right tooltip'"
-      color="solid"
-      label="Top Right"
-    />
+    <VTag v-tooltip.right="'Iam a top right tooltip'" color="solid" label="Top Right" />
 
     <VTag
       v-tooltip.bottom.left="'Iam a bottom left tooltip'"

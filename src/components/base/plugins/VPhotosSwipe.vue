@@ -285,10 +285,7 @@ const rotate = (newAngle: number) => {
     angle.value = angle.value + newAngle
     pswpElement.value
       .querySelectorAll('.pswp__img')
-      .forEach(
-        (i) =>
-          ((i as HTMLElement).style.transform = `rotate(${angle.value}deg)`)
-      )
+      .forEach((i) => ((i as HTMLElement).style.transform = `rotate(${angle.value}deg)`))
   }
 }
 
@@ -297,10 +294,7 @@ const resetAngle = () => {
     angle.value = 0
     pswpElement.value
       .querySelectorAll('.pswp__img')
-      .forEach(
-        (i) =>
-          ((i as HTMLElement).style.transform = `rotate(${angle.value}deg)`)
-      )
+      .forEach((i) => ((i as HTMLElement).style.transform = `rotate(${angle.value}deg)`))
   }
 }
 </script>
@@ -336,23 +330,14 @@ const resetAngle = () => {
           itemprop="thumbnail"
           @error.once="
             (event) =>
-              useViaPlaceholderError(
-                event,
-                `${item.w || '100'}x${item.h || '100'}`
-              )
+              useViaPlaceholderError(event, `${item.w || '100'}x${item.h || '100'}`)
           "
         />
       </a>
     </figure>
   </div>
 
-  <div
-    ref="pswpElement"
-    class="pswp"
-    tabindex="-1"
-    role="dialog"
-    aria-hidden="true"
-  >
+  <div ref="pswpElement" class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="pswp__bg"></div>
     <div class="pswp__scroll-wrap">
       <div class="pswp__container">
@@ -363,10 +348,7 @@ const resetAngle = () => {
       <div class="pswp__ui pswp__ui--hidden">
         <div class="pswp__top-bar">
           <div class="pswp__counter"></div>
-          <button
-            class="pswp__button pswp__button--close"
-            title="Close (Esc)"
-          ></button>
+          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
 
           <!-- <button
             v-if="options.r"
@@ -383,18 +365,12 @@ const resetAngle = () => {
             @click="rotate(90)"
           ></button> -->
 
-          <button
-            class="pswp__button pswp__button--share"
-            title="Share"
-          ></button>
+          <button class="pswp__button pswp__button--share" title="Share"></button>
           <button
             class="pswp__button pswp__button--fs"
             title="Toggle fullscreen"
           ></button>
-          <button
-            class="pswp__button pswp__button--zoom"
-            title="Zoom in/out"
-          ></button>
+          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
           <div class="pswp__preloader">
             <div class="pswp__preloader__icn">
               <div class="pswp__preloader__cut">
@@ -403,9 +379,7 @@ const resetAngle = () => {
             </div>
           </div>
         </div>
-        <div
-          class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"
-        >
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
           <div class="pswp__share-tooltip"></div>
         </div>
         <button

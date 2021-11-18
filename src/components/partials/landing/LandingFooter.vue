@@ -14,9 +14,7 @@
             >
               Buy Vuero
             </a>
-            <a href="https://cssninja.io" class="button chat-button">
-              Chat with us
-            </a>
+            <a href="https://cssninja.io" class="button chat-button"> Chat with us </a>
           </div>
         </div>
       </div>
@@ -27,9 +25,8 @@
             <AnimatedLogo width="36px" height="36px" />
 
             <div class="footer-description p-t-10 p-b-10">
-              Vuero is built for developers and designers. It's modular approach
-              lets you create awesome navbars with incredible layouts and
-              elements.
+              Vuero is built for developers and designers. It's modular approach lets you
+              create awesome navbars with incredible layouts and elements.
             </div>
           </div>
           <div>
@@ -104,8 +101,8 @@
       </div>
       <div class="footer-copyright has-text-centered">
         <p>
-          &copy; 2020-2021 | <a href="https://cssninja.io">Css Ninja</a> | All
-          Rights Reserved.
+          <span role="img" aria-label="copyright">&copy;</span> 2020-2021 |
+          <a href="https://cssninja.io">Css Ninja</a> | All Rights Reserved.
         </p>
       </div>
     </div>

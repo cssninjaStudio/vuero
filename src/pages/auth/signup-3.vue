@@ -40,11 +40,7 @@ useHead({
       </div>
       <div class="right">
         <label class="dark-mode ml-auto">
-          <input
-            type="checkbox"
-            :checked="!isDark"
-            @change="toggleDarkModeHandler"
-          />
+          <input type="checkbox" :checked="!isDark" @change="toggleDarkModeHandler" />
           <span></span>
         </label>
       </div>
@@ -102,22 +98,14 @@ useHead({
               <!-- Input -->
               <VField>
                 <VControl icon="feather:lock">
-                  <input
-                    class="input"
-                    type="password"
-                    placeholder="Repeat Password"
-                  />
+                  <input class="input" type="password" placeholder="Repeat Password" />
                 </VControl>
               </VField>
 
               <VField>
                 <VControl class="setting-item">
                   <label for="send-promotional" class="form-switch is-primary">
-                    <input
-                      id="send-promotional"
-                      type="checkbox"
-                      class="is-switch"
-                    />
+                    <input id="send-promotional" type="checkbox" class="is-switch" />
                     <i aria-hidden="true"></i>
                   </label>
                   <div class="setting-meta">
@@ -131,9 +119,7 @@ useHead({
               <!-- Submit -->
               <VField>
                 <VControl class="login">
-                  <VButton color="primary" bold fullwidth raised>
-                    Sign Up
-                  </VButton>
+                  <VButton color="primary" bold fullwidth raised> Sign Up </VButton>
                 </VControl>
               </VField>
             </div>

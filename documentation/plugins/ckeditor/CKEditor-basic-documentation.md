@@ -25,11 +25,7 @@ const config = {
 
 <template>
   <div class="content">
-    <CKEditor
-      v-model="content"
-      :editor="ClassicEditor"
-      :config="config"
-    ></CKEditor>
+    <CKEditor v-model="content" :editor="ClassicEditor" :config="config"></CKEditor>
   </div>
 </template>
 ```

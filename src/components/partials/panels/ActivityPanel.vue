@@ -19,11 +19,7 @@ const activeTab = ref<TabId>('team')
       <div class="right-panel-head">
         <h3>Activity</h3>
         <a class="close-panel" @click="activePanel = 'none'">
-          <i
-            aria-hidden="true"
-            class="iconify"
-            data-icon="feather:chevron-right"
-          ></i>
+          <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right"></i>
         </a>
       </div>
       <div class="tabs-wrapper is-triple-slider is-squared">
@@ -60,20 +56,12 @@ const activeTab = ref<TabId>('team')
               <div class="meta">
                 <span>Joshua S.</span>
                 <span>
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:map-pin"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:map-pin"></i>
                   Las Vegas, NV
                 </span>
               </div>
               <a class="link">
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:arrow-right"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:arrow-right"></i>
               </a>
             </div>
 
@@ -87,20 +75,12 @@ const activeTab = ref<TabId>('team')
               <div class="meta">
                 <span>Melany W.</span>
                 <span>
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:map-pin"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:map-pin"></i>
                   San Jose, CA
                 </span>
               </div>
               <a class="link">
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:arrow-right"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:arrow-right"></i>
               </a>
             </div>
 
@@ -114,20 +94,12 @@ const activeTab = ref<TabId>('team')
               <div class="meta">
                 <span>Esteban C.</span>
                 <span>
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:map-pin"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:map-pin"></i>
                   Miami, FL
                 </span>
               </div>
               <a class="link">
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:arrow-right"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:arrow-right"></i>
               </a>
             </div>
 
@@ -141,20 +113,12 @@ const activeTab = ref<TabId>('team')
               <div class="meta">
                 <span>Tara S.</span>
                 <span>
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:map-pin"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:map-pin"></i>
                   New York, NY
                 </span>
               </div>
               <a class="link">
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:arrow-right"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:arrow-right"></i>
               </a>
             </div>
           </div>
@@ -171,9 +135,7 @@ const activeTab = ref<TabId>('team')
                   class="project-avatar"
                   src="/images/icons/logos/slicer.svg"
                   alt=""
-                  @error.once="
-                    (event) => useViaPlaceholderError(event, '150x150')
-                  "
+                  @error.once="(event) => useViaPlaceholderError(event, '150x150')"
                 />
                 <div class="meta">
                   <span>The slicer project</span>
@@ -188,11 +150,7 @@ const activeTab = ref<TabId>('team')
                 </a>
               </div>
               <div class="project-foot">
-                <progress
-                  class="progress is-primary is-tiny"
-                  value="31"
-                  max="100"
-                >
+                <progress class="progress is-primary is-tiny" value="31" max="100">
                   31%
                 </progress>
                 <div class="foot-stats">
@@ -201,10 +159,7 @@ const activeTab = ref<TabId>('team')
                   <div class="avatar-stack">
                     <VAvatar size="small" picture="/demo/avatars/5.jpg" />
                     <VAvatar size="small" picture="/demo/avatars/7.jpg" />
-                    <VAvatar
-                      size="small"
-                      picture="/images/avatars/svg/vuero-1.svg"
-                    />
+                    <VAvatar size="small" picture="/images/avatars/svg/vuero-1.svg" />
                   </div>
                 </div>
               </div>
@@ -217,9 +172,7 @@ const activeTab = ref<TabId>('team')
                   class="project-avatar"
                   src="/images/icons/logos/metamovies.svg"
                   alt=""
-                  @error.once="
-                    (event) => useViaPlaceholderError(event, '150x150')
-                  "
+                  @error.once="(event) => useViaPlaceholderError(event, '150x150')"
                 />
                 <div class="meta">
                   <span>Metamovies reworked</span>
@@ -234,11 +187,7 @@ const activeTab = ref<TabId>('team')
                 </a>
               </div>
               <div class="project-foot">
-                <progress
-                  class="progress is-primary is-tiny"
-                  value="84"
-                  max="100"
-                >
+                <progress class="progress is-primary is-tiny" value="84" max="100">
                   84%
                 </progress>
                 <div class="foot-stats">
@@ -259,9 +208,7 @@ const activeTab = ref<TabId>('team')
                   class="project-avatar"
                   src="/images/icons/logos/fastpizza.svg"
                   alt=""
-                  @error.once="
-                    (event) => useViaPlaceholderError(event, '150x150')
-                  "
+                  @error.once="(event) => useViaPlaceholderError(event, '150x150')"
                 />
                 <div class="meta">
                   <span>Fast Pizza redesign</span>
@@ -276,11 +223,7 @@ const activeTab = ref<TabId>('team')
                 </a>
               </div>
               <div class="project-foot">
-                <progress
-                  class="progress is-primary is-tiny"
-                  value="60"
-                  max="100"
-                >
+                <progress class="progress is-primary is-tiny" value="60" max="100">
                   60%
                 </progress>
                 <div class="foot-stats">
@@ -323,9 +266,7 @@ const activeTab = ref<TabId>('team')
                     class="avatar"
                     src="/demo/avatars/7.jpg"
                     alt=""
-                    @error.once="
-                      (event) => useViaPlaceholderError(event, '150x150')
-                    "
+                    @error.once="(event) => useViaPlaceholderError(event, '150x150')"
                   />
                 </div>
                 <div class="timeline-content">
@@ -350,11 +291,7 @@ const activeTab = ref<TabId>('team')
               <!--Timeline item-->
               <div class="timeline-item">
                 <div class="timeline-icon">
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:mail"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:mail"></i>
                 </div>
                 <div class="timeline-content">
                   <p>Send new campaign</p>
@@ -364,11 +301,7 @@ const activeTab = ref<TabId>('team')
               <!--Timeline item-->
               <div class="timeline-item">
                 <div class="timeline-icon">
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:smile"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:smile"></i>
                 </div>
                 <div class="timeline-content">
                   <p>Project review</p>
@@ -392,11 +325,7 @@ const activeTab = ref<TabId>('team')
               <!--Timeline item-->
               <div class="timeline-item">
                 <div class="timeline-icon">
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:feather"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:feather"></i>
                 </div>
                 <div class="timeline-content">
                   <p>Write proposal for Don</p>
@@ -412,6 +341,6 @@ const activeTab = ref<TabId>('team')
 </template>
 
 <style lang="scss">
-@import '../../../scss/abstracts/_mixins.scss';
-@import '../../../scss/layout/_right-panel.scss';
+@import '../../../scss/abstracts/mixins';
+@import '../../../scss/layout/right-panel';
 </style>

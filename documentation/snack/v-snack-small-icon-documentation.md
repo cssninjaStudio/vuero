@@ -13,34 +13,16 @@ Use the `size="small"` prop on the component to show a smaller version of it.
   <VSnack title="Shopping" color="primary" size="small" icon="feather:smile">
     <i class="iconify" data-icon="feather:plus"></i>
   </VSnack>
-  <VSnack
-    title="Support"
-    color="success"
-    white
-    size="small"
-    icon="feather:life-buoy"
-  >
+  <VSnack title="Support" color="success" white size="small" icon="feather:life-buoy">
     <i class="iconify" data-icon="feather:plus"></i>
   </VSnack>
   <VSnack title="Business" color="info" size="small" icon="feather:briefcase">
     <i class="iconify" data-icon="feather:plus"></i>
   </VSnack>
-  <VSnack
-    title="Warning"
-    color="warning"
-    white
-    size="small"
-    icon="feather:alert-octagon"
-  >
+  <VSnack title="Warning" color="warning" white size="small" icon="feather:alert-octagon">
     <i class="iconify" data-icon="feather:plus"></i>
   </VSnack>
-  <VSnack
-    title="Health"
-    color="danger"
-    white
-    size="small"
-    icon="feather:thermometer"
-  >
+  <VSnack title="Health" color="danger" white size="small" icon="feather:thermometer">
     <i class="iconify" data-icon="feather:plus"></i>
   </VSnack>
 </template>

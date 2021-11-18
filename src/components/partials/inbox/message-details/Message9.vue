@@ -50,39 +50,23 @@ const dropdown2 = useDropdown(dropdownElement2)
         <div>
           <button class="button" @click="dropdown1.toggle">
             <span class="icon is-small">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:more-vertical"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:more-vertical"></i>
             </span>
           </button>
         </div>
         <div class="dropdown-menu">
           <div class="dropdown-content">
             <a class="dropdown-item">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:bookmark"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:bookmark"></i>
               <span>Bookmark</span>
             </a>
             <a class="dropdown-item">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:share-2"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:share-2"></i>
               <span>Share message</span>
             </a>
             <hr class="dropdown-divider" />
             <a class="dropdown-item">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:thumbs-down"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:thumbs-down"></i>
               <span>Mark as spam</span>
             </a>
           </div>
@@ -112,11 +96,7 @@ const dropdown2 = useDropdown(dropdownElement2)
               ></i>
             </a>
             <a class="inbox-action">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:file-text"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:file-text"></i>
             </a>
             <a class="inbox-action">
               <i aria-hidden="true" class="iconify" data-icon="feather:tag"></i>
@@ -129,11 +109,7 @@ const dropdown2 = useDropdown(dropdownElement2)
               ></i>
             </a>
             <a class="inbox-action">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:lock"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:lock"></i>
             </a>
           </div>
         </div>
@@ -141,21 +117,17 @@ const dropdown2 = useDropdown(dropdownElement2)
         <div class="mail-content content">
           <p>Hi Mr. Kovalsky,</p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nos
-            commodius agimus. Si longus, levis;
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nos commodius agimus.
+            Si longus, levis;
             <a href="#">Summum ením bonum exposuit vacuitatem doloris;</a>
-            Eadem fortitudinis ratio reperietur. Duo Reges: constructio
-            interrete. Facile est hoc cernere in primis puerorum aetatulis.
+            Eadem fortitudinis ratio reperietur. Duo Reges: constructio interrete. Facile
+            est hoc cernere in primis puerorum aetatulis.
           </p>
           <ul>
             <li>Sed residamus, inquit, si placet.</li>
-            <li>
-              Parvi enim primo ortu sic iacent, tamquam omnino sine animo sint.
-            </li>
+            <li>Parvi enim primo ortu sic iacent, tamquam omnino sine animo sint.</li>
             <li>Beatus autem esse in maximarum rerum timore nemo potest.</li>
-            <li>
-              Illa argumenta propria videamus, cur omnia sint paria peccata.
-            </li>
+            <li>Illa argumenta propria videamus, cur omnia sint paria peccata.</li>
           </ul>
 
           <p>Sandrine</p>
@@ -209,11 +181,7 @@ const dropdown2 = useDropdown(dropdownElement2)
                     <span>Spelling</span>
                   </a>
                   <a class="dropdown-item">
-                    <i
-                      aria-hidden="true"
-                      class="iconify"
-                      data-icon="feather:at-sign"
-                    ></i>
+                    <i aria-hidden="true" class="iconify" data-icon="feather:at-sign"></i>
                     <span>Mention</span>
                   </a>
                 </div>

@@ -8,12 +8,8 @@ export function drawLine(el: HTMLElement, data: number[], opts: PeityOptions) {
     values.push(values[0])
   }
 
-  const max = Math.max(
-    ...(opts.max === undefined ? values : values.concat(opts.max))
-  )
-  const min = Math.min(
-    ...(opts.min === undefined ? values : values.concat(opts.min))
-  )
+  const max = Math.max(...(opts.max === undefined ? values : values.concat(opts.max)))
+  const min = Math.min(...(opts.min === undefined ? values : values.concat(opts.min)))
 
   const rect = el.getBoundingClientRect()
   const strokeWidth = opts.strokeWidth ?? 1

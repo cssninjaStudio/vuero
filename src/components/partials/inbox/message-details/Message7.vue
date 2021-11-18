@@ -52,39 +52,23 @@ const dropdown2 = useDropdown(dropdownElement2)
         <div>
           <button class="button" @click="dropdown1.toggle">
             <span class="icon is-small">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:more-vertical"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:more-vertical"></i>
             </span>
           </button>
         </div>
         <div class="dropdown-menu">
           <div class="dropdown-content">
             <a class="dropdown-item">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:bookmark"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:bookmark"></i>
               <span>Bookmark</span>
             </a>
             <a class="dropdown-item">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:share-2"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:share-2"></i>
               <span>Share message</span>
             </a>
             <hr class="dropdown-divider" />
             <a class="dropdown-item">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:thumbs-down"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:thumbs-down"></i>
               <span>Mark as spam</span>
             </a>
           </div>
@@ -114,11 +98,7 @@ const dropdown2 = useDropdown(dropdownElement2)
               ></i>
             </a>
             <a class="inbox-action">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:file-text"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:file-text"></i>
             </a>
             <a class="inbox-action">
               <i aria-hidden="true" class="iconify" data-icon="feather:tag"></i>
@@ -131,11 +111,7 @@ const dropdown2 = useDropdown(dropdownElement2)
               ></i>
             </a>
             <a class="inbox-action">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:lock"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:lock"></i>
             </a>
           </div>
         </div>
@@ -143,33 +119,28 @@ const dropdown2 = useDropdown(dropdownElement2)
         <div class="mail-content content">
           <p>Hey Erik,</p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid
-            adiuvas? Philosophi autem in suis lectulis plerumque moriuntur.
-            Reguli reiciendam; Si autem id non concedatur, non continuo vita
-            beata tollitur. <mark>Quod quidem nobis non saepe contingit.</mark>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid adiuvas?
+            Philosophi autem in suis lectulis plerumque moriuntur. Reguli reiciendam; Si
+            autem id non concedatur, non continuo vita beata tollitur.
+            <mark>Quod quidem nobis non saepe contingit.</mark>
           </p>
           <p>
-            <a href="http://loripsum.net/">
-              Illa tamen simplicia, vestra versuta.</a
-            >
-            Ea possunt paria non esse. Quid adiuvas? Praeclarae mortes sunt
-            imperatoriae;
+            <a href="http://loripsum.net/"> Illa tamen simplicia, vestra versuta.</a>
+            Ea possunt paria non esse. Quid adiuvas? Praeclarae mortes sunt imperatoriae;
           </p>
           <ul>
             <li>Si enim ita est, vide ne facinus facias, cum mori suadeas.</li>
             <li>In eo enim positum est id, quod dicimus esse expetendum.</li>
             <li>
-              Minime id quidem, inquam, alienum, multumque ad ea, quae
-              quaerimus, explicatio tua ista profecerit.
+              Minime id quidem, inquam, alienum, multumque ad ea, quae quaerimus,
+              explicatio tua ista profecerit.
             </li>
             <li>
-              Quae qui non vident, nihil umquam magnum ac cognitione dignum
-              amaverunt.
+              Quae qui non vident, nihil umquam magnum ac cognitione dignum amaverunt.
             </li>
           </ul>
           <p>
-            Duo Reges: constructio interrete. Qui est in parvis malis. Paria
-            sunt igitur.
+            Duo Reges: constructio interrete. Qui est in parvis malis. Paria sunt igitur.
           </p>
 
           <p>Alejandro</p>
@@ -180,21 +151,13 @@ const dropdown2 = useDropdown(dropdownElement2)
           <div class="attachment">
             <span>landing-page.png</span>
             <div class="download-icon">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:arrow-down"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:arrow-down"></i>
             </div>
           </div>
           <div class="attachment">
             <span>dashboard.png</span>
             <div class="download-icon">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:arrow-down"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:arrow-down"></i>
             </div>
           </div>
         </div>
@@ -247,11 +210,7 @@ const dropdown2 = useDropdown(dropdownElement2)
                     <span>Spelling</span>
                   </a>
                   <a class="dropdown-item">
-                    <i
-                      aria-hidden="true"
-                      class="iconify"
-                      data-icon="feather:at-sign"
-                    ></i>
+                    <i aria-hidden="true" class="iconify" data-icon="feather:at-sign"></i>
                     <span>Mention</span>
                   </a>
                 </div>

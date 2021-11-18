@@ -84,9 +84,7 @@ zh-CN:
         >
           {{ t('reload-button') }}
         </VButton>
-        <VButton icon="feather:x" @click="close">{{
-          t('close-button')
-        }}</VButton>
+        <VButton icon="feather:x" @click="close">{{ t('close-button') }}</VButton>
       </VButtons>
     </VCard>
   </transition>

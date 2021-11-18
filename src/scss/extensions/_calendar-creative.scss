@@ -1,3 +1,5 @@
+/* stylelint-disable declaration-block-no-redundant-longhand-properties */
+/* stylelint-disable scss/no-global-function-names */
 $calendar-border: 0.1rem solid $white-ter !default;
 $calendar-border-radius: var(--radius-small) !default;
 $calendar-selection-background-color: var(--primary) !default;
@@ -16,7 +18,7 @@ $calendar-selection-padding: 0.3rem 0 !default;
 $calendar-selection-nav-padding: 0.5em !default;
 $calendar-date-padding: 0.1rem 0 !default;
 
-@import './_timepicker.scss';
+@import './timepicker';
 
 @mixin datetimepicker-header {
   .datetimepicker-header {
@@ -27,18 +29,22 @@ $calendar-date-padding: 0.1rem 0 !default;
     position: relative;
     padding: 0.5rem 1rem;
     font-size: 1rem;
-    box-shadow: 0 0.2rem 0.2rem -0.2rem rgba(10, 10, 10, 0.1);
+    box-shadow: 0 0.2rem 0.2rem -0.2rem rgb(10 10 10 / 10%);
+
     &.is-date-only {
       flex-direction: row;
+
       .datetimepicker-selection-end {
         .datetimepicker-selection-wrapper {
           justify-content: flex-end !important;
         }
       }
     }
+
     .datetimepicker-selection-details {
       flex: 1;
     }
+
     .datetimepicker-selection-from,
     .datetimepicker-selection-to {
       font-size: 0.65rem;
@@ -46,18 +52,21 @@ $calendar-date-padding: 0.1rem 0 !default;
       text-transform: uppercase;
       padding: 0;
     }
+
     .datetimepicker-selection-start,
     .datetimepicker-selection-end {
       padding: 0;
       display: flex;
       flex: 1;
       flex-direction: row;
+
       .datetimepicker-selection-wrapper {
         flex-direction: row;
         display: flex;
         min-height: 2.5rem;
         flex: 1 1 2rem;
       }
+
       .datetimepicker-selection-day {
         flex: 0;
         text-transform: capitalize;
@@ -67,6 +76,7 @@ $calendar-date-padding: 0.1rem 0 !default;
         color: var(--primary);
         font-weight: 100;
       }
+
       .datetimepicker-selection-date {
         font-size: 0.85rem;
         line-height: 0.85rem;
@@ -75,16 +85,19 @@ $calendar-date-padding: 0.1rem 0 !default;
         flex-direction: column;
         font-weight: 300;
       }
+
       .datetimepicker-selection-month {
         color: $text;
         text-transform: capitalize;
       }
+
       .datetimepicker-selection-weekday {
         font-size: 0.75em;
         color: #b6b4b6;
         text-transform: capitalize;
         text-align: left;
       }
+
       .datetimepicker-selection-hour {
         font-size: 1.5rem;
         font-weight: 100;
@@ -94,9 +107,11 @@ $calendar-date-padding: 0.1rem 0 !default;
         text-align: center;
       }
     }
+
     .datetimepicker-selection-start,
     .datetimepicker-selection-end {
       align-items: center;
+
       &.is-centered {
         .datetimepicker-selection-wrapper {
           justify-content: center;
@@ -104,9 +119,11 @@ $calendar-date-padding: 0.1rem 0 !default;
         }
       }
     }
+
     .datetimepicker-selection-time {
       flex: 1;
       display: flex;
+
       .datetimepicker-selection-time-icon {
         display: flex;
         justify-content: center;
@@ -126,25 +143,31 @@ $calendar-date-padding: 0.1rem 0 !default;
     justify-content: space-between;
     padding: $calendar-selection-nav-padding;
     flex-direction: row;
+
     .datepicker-nav-month-year {
       flex-direction: row;
       display: flex;
     }
+
     .datepicker-nav-month,
     .datepicker-nav-year {
       text-decoration: none;
       font-size: $size-6;
       color: findColorInvert($primary);
+
       &:hover {
         cursor: pointer;
       }
     }
+
     .datepicker-nav-month {
       text-transform: capitalize;
     }
+
     .datepicker-nav-year {
       font-weight: $weight-bold;
     }
+
     .datepicker-nav-previous,
     .datepicker-nav-next {
       flex-basis: auto;
@@ -152,12 +175,15 @@ $calendar-date-padding: 0.1rem 0 !default;
       flex-shrink: 0;
       text-decoration: none;
       color: var(--white);
+
       &:hover {
         background-color: transparent;
+
         svg {
           stroke-width: 1em;
         }
       }
+
       svg {
         stroke: currentColor;
         width: 11.25px;
@@ -167,26 +193,32 @@ $calendar-date-padding: 0.1rem 0 !default;
   }
 }
 @mixin datepicker-body {
-  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+  box-shadow: 0 2px 3px rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 10%);
+
   // .datepicker
   //   box-shadow: 0 .2rem .2rem -.2rem rgba(10,10,10,.1)
   .datepicker-body {
     overflow: hidden;
+
     .datepicker-dates {
       display: none;
+
       &.is-active {
         display: flex;
         flex-direction: column;
       }
     }
+
     .datepicker-months,
     .datepicker-years {
       display: none;
+
       &.is-active {
         display: flex;
         flex-direction: row;
       }
     }
+
     .datepicker-weekdays {
       display: flex;
       flex-wrap: wrap;
@@ -195,12 +227,14 @@ $calendar-date-padding: 0.1rem 0 !default;
       background: $calendar-days-background-color;
       color: findColorInvert($calendar-days-background-color);
       font-size: $size-7;
+
       .datepicker-date {
         background: $calendar-days-background-color !important;
         color: $calendar-selection-days-color;
         padding: 0.3rem;
       }
     }
+
     .datepicker-dates {
       .datepicker-days {
         display: flex;
@@ -209,13 +243,15 @@ $calendar-date-padding: 0.1rem 0 !default;
         justify-content: space-around;
         padding: $calendar-body-padding;
         color: $grey;
+
         .datepicker-date {
           background: #f5f5f5;
           display: flex;
           justify-content: center;
-          flex: 14.28571%;
+          flex: 14.285%;
           margin: 0.1rem 0;
           align-items: center;
+
           .date-item {
             margin: 0 auto;
             appearance: none;
@@ -234,30 +270,36 @@ $calendar-date-padding: 0.1rem 0 !default;
             vertical-align: middle;
             white-space: nowrap;
             width: 2.2rem;
+
             // transform: scale(0.7)
-            animation: bounce-button-in 0.45s 0s
-              cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+            animation: bounce-button-in 0.45s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+              forwards;
+
             &.is-today {
               background: $calendar-today-background;
               border: $calendar-today-border;
               color: $calendar-today-color;
             }
+
             &:focus {
               background: $calendar-date-hover-background-color;
               border-color: $calendar-date-hover-background-color;
               color: findColorInvert($calendar-date-hover-background-color);
               text-decoration: none;
             }
+
             &.is-active {
               background: var(--primary);
               border-color: var(--primary);
               border-radius: 25091983px;
               color: findColorInvert($primary);
+
               &.is-today {
                 border-color: findColorInvert($primary) !important;
                 color: findColorInvert($primary) !important;
               }
             }
+
             &:hover {
               background: $calendar-date-hover-background-color;
               border: $calendar-date-hover-border;
@@ -265,44 +307,53 @@ $calendar-date-padding: 0.1rem 0 !default;
               text-decoration: none;
             }
           }
+
           &.is-current-month {
             background: transparent;
           }
+
           &.is-disabled,
           &[disabled] {
             background-color: $white-ter;
-            background-image: url(data:image/gif;base64,R0lGODlhBQAFAOMAAP/14////93uHt3uHt3uHt3uHv///////////wAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAAALAAAAAAFAAUAAAQL0ACAzpG0YnonNxEAOw==) !important;
+            background-image: url('data:image/gif;base64,R0lGODlhBQAFAOMAAP/14////93uHt3uHt3uHt3uHv///////////wAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAAALAAAAAAFAAUAAAQL0ACAzpG0YnonNxEAOw==') !important;
+
             .date-item,
             .calendar-event {
               cursor: default;
-              opacity: 0.25;
+              opacity: 25%;
               pointer-events: none;
             }
           }
+
           &.datepicker-range {
             position: relative;
             background: $calendar-range-background-color;
             z-index: 1;
+
             &.datepicker-range-start,
             &.datepicker-range-end {
               .date-item {
                 background: findColorInvert($primary);
                 border: 0.1rem solid var(--primary);
                 color: var(--primary);
-                box-shadow: 0 0.2rem 0.2rem rgba(10, 10, 10, 0.1);
+                box-shadow: 0 0.2rem 0.2rem rgb(10 10 10 / 10%);
               }
             }
+
             &.datepicker-range-start {
               border-top-left-radius: 25091983px;
               border-bottom-left-radius: 25091983px;
             }
+
             &.datepicker-range-end {
               border-top-right-radius: 25091983px;
               border-bottom-right-radius: 25091983px;
             }
+
             .date-item {
               background-color: var(--primary);
               color: findColorInvert($primary);
+
               &.is-today {
                 border-color: findColorInvert($primary) !important;
                 color: findColorInvert($primary) !important;
@@ -312,6 +363,7 @@ $calendar-date-padding: 0.1rem 0 !default;
         }
       }
     }
+
     .datepicker-months,
     .datepicker-years {
       display: none;
@@ -320,9 +372,11 @@ $calendar-date-padding: 0.1rem 0 !default;
       padding: 0.5rem;
       max-height: 17rem;
       overflow-y: auto;
+
       &.is-active {
         display: flex;
       }
+
       .datepicker-month,
       .datepicker-year {
         padding: 0.5rem;
@@ -333,11 +387,13 @@ $calendar-date-padding: 0.1rem 0 !default;
         text-transform: capitalize;
         border-radius: 25091983px;
         border: 0.1rem solid transparent;
+
         &.is-active {
           background: var(--primary);
           border-color: var(--primary);
           color: findColorInvert($primary);
         }
+
         &:hover {
           cursor: pointer;
           background: $calendar-date-hover-background-color;
@@ -354,6 +410,7 @@ $calendar-date-padding: 0.1rem 0 !default;
     flex: 1;
     justify-content: space-evenly;
     margin: 0;
+
     > * {
       text-decoration: none !important;
     }
@@ -368,6 +425,7 @@ $calendar-date-padding: 0.1rem 0 !default;
   @include datepicker-nav;
   @include datepicker-body;
   @include datetimepicker-footer;
+
   &.is-datetimepicker-default {
     .datetimepicker-container {
       display: flex;
@@ -384,25 +442,30 @@ $calendar-date-padding: 0.1rem 0 !default;
         position: absolute;
         pointer-events: none;
       }
+
       &::after {
-        border-color: rgba(255, 255, 255, 0);
+        border-color: rgb(255 255 255 / 0%);
         border-bottom-color: var(--white);
         border-width: 0.75rem;
         margin-left: -0.75rem;
       }
+
       &::before {
-        border-color: rgba(74, 74, 74, 0);
+        border-color: rgb(74 74 74 / 0%);
         border-bottom-color: #4a4a4a;
         border-width: 0.75rem;
         margin-left: -0.75rem;
       }
+
       &.has-header-bottom {
         flex-direction: column-reverse;
       }
     }
   }
+
   &.is-large {
     max-width: 100%;
+
     .datepicker-body {
       .datepicker-date {
         border-bottom: $calendar-border;
@@ -411,39 +474,47 @@ $calendar-date-padding: 0.1rem 0 !default;
         flex-direction: column;
         height: 11rem;
         padding: 0;
+
         &:nth-child(7n) {
           border-right: 0;
         }
+
         false {
           border-bottom: 0;
         }
       }
     }
+
     .date-item {
       align-self: flex-end;
       height: 2.2rem;
       margin-right: 0.5rem;
       margin-top: 0.5rem;
     }
+
     .datepicker-range {
       &::before,
       &::before {
         top: 1.9rem;
       }
+
       &.datepicker-range-start::before {
         left: auto;
         width: 1.9rem;
       }
+
       &.datepicker-range-end::before {
         right: 1.9rem;
       }
     }
+
     .datepicker-events {
       flex-grow: 1;
       line-height: 1;
       overflow-y: auto;
       padding: 0.5rem;
     }
+
     .datepicker-event {
       background-color: $grey;
       border-radius: var(--radius-small);
@@ -468,10 +539,12 @@ $calendar-date-padding: 0.1rem 0 !default;
     }
   }
 }
+
 .datetimepicker {
   transition: width 0.8s cubic-bezier(1, -0.55, 0.2, 1.37), opacity 0.2s ease,
     visibility 0.2s ease, margin 0.2s ease;
   display: none;
+
   &.is-active {
     display: block;
   }
@@ -487,10 +560,12 @@ $calendar-date-padding: 0.1rem 0 !default;
           color: $color;
         }
       }
+
       .datepicker-nav {
         background: $color;
         color: $color-invert;
       }
+
       .datepicker-body {
         .datepicker-dates {
           .datepicker-days {
@@ -500,28 +575,35 @@ $calendar-date-padding: 0.1rem 0 !default;
                   background: $color;
                   border-color: $color;
                 }
+
                 &.is-today {
                   border-color: $color;
                   color: $color;
                 }
+
                 &:hover {
                   border-color: $color;
                 }
               }
+
               &.datepicker-range {
                 background: $color;
+
                 &::before,
                 &::before {
                   background: $color;
                 }
+
                 .date-item {
                   background-color: $color;
                   color: $color-invert;
+
                   &.is-today {
                     border-color: $color-invert !important;
                     color: $color-invert !important;
                   }
                 }
+
                 &.datepicker-range-start,
                 &.datepicker-range-end {
                   .date-item {
@@ -546,10 +628,12 @@ $calendar-date-padding: 0.1rem 0 !default;
           color: $color;
         }
       }
+
       .datepicker-nav {
         background: $color;
         color: $color-invert;
       }
+
       .datepicker-body {
         .datepicker-dates {
           .datepicker-days {
@@ -559,28 +643,35 @@ $calendar-date-padding: 0.1rem 0 !default;
                   background: $color;
                   border-color: $color;
                 }
+
                 &.is-today {
                   border-color: $color;
                   color: $color;
                 }
+
                 &:hover {
                   border-color: $color;
                 }
               }
+
               &.datepicker-range {
                 background: $color;
+
                 &::before,
                 &::before {
                   background: $color;
                 }
+
                 .date-item {
                   background-color: $color;
                   color: $color-invert;
+
                   &.is-today {
                     border-color: $color-invert !important;
                     color: $color-invert !important;
                   }
                 }
+
                 &.datepicker-range-start,
                 &.datepicker-range-end {
                   .date-item {
@@ -597,15 +688,17 @@ $calendar-date-padding: 0.1rem 0 !default;
     }
   }
 }
+
 .datetimepicker-dummy {
   position: relative;
   display: flex;
   width: 100%;
   height: 2.5rem;
+
   &::before,
   &::before {
     content: '';
-    mask: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNjAgNjAiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwYXRoIGZpbGw9ImN1cnJlbnRjb2xvciIgZD0iTTU3LDRoLTdWMWMwLTAuNTUzLTAuNDQ3LTEtMS0xaC03Yy0wLjU1MywwLTEsMC40NDctMSwxdjNIMTlWMWMwLTAuNTUzLTAuNDQ3LTEtMS0xaC03Yy0wLjU1MywwLTEsMC40NDctMSwxdjNIM0MyLjQ0Nyw0LDIsNC40NDcsMiw1djExdjQzYzAsMC41NTMsMC40NDcsMSwxLDFoNTRjMC41NTMsMCwxLTAuNDQ3LDEtMVYxNlY1QzU4LDQuNDQ3LDU3LjU1Myw0LDU3LDR6IE00MywyaDV2M3YzaC01VjVWMnogTTEyLDJoNXYzdjNoLTVWNVYyeiBNNCw2aDZ2M2MwLDAuNTUzLDAuNDQ3LDEsMSwxaDdjMC41NTMsMCwxLTAuNDQ3LDEtMVY2aDIydjNjMCwwLjU1MywwLjQ0NywxLDEsMWg3YzAuNTUzLDAsMS0wLjQ0NywxLTFWNmg2djlINFY2ek00LDU4VjE3aDUydjQxSDR6Ii8+PHBhdGggZmlsbD0iY3VycmVudGNvbG9yIiBkPSJNMzgsMjNoLTdoLTJoLTdoLTJoLTl2OXYydjd2MnY5aDloMmg3aDJoN2gyaDl2LTl2LTJ2LTd2LTJ2LTloLTlIMzh6TTMxLDI1aDd2N2gtN1YyNXpNMzgsNDFoLTd2LTdoN1Y0MXpNMjIsMzRoN3Y3aC03VjM0ek0yMiwyNWg3djdoLTdWMjV6TTEzLDI1aDd2N2gtN1YyNXpNMTMsMzRoN3Y3aC03VjM0ek0yMCw1MGgtN3YtN2g3VjUwek0yOSw1MGgtN3YtN2g3VjUweiBNMzgsNTBoLTd2LTdoN1Y1MHogTTQ3LDUwaC03di03aDdWNTB6IE00Nyw0MWgtN3YtN2g3VjQxek00NywyNXY3aC03di03SDQ3eiIvPjwvZz48L3N2Zz4=);
+    mask: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNjAgNjAiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwYXRoIGZpbGw9ImN1cnJlbnRjb2xvciIgZD0iTTU3LDRoLTdWMWMwLTAuNTUzLTAuNDQ3LTEtMS0xaC03Yy0wLjU1MywwLTEsMC40NDctMSwxdjNIMTlWMWMwLTAuNTUzLTAuNDQ3LTEtMS0xaC03Yy0wLjU1MywwLTEsMC40NDctMSwxdjNIM0MyLjQ0Nyw0LDIsNC40NDcsMiw1djExdjQzYzAsMC41NTMsMC40NDcsMSwxLDFoNTRjMC41NTMsMCwxLTAuNDQ3LDEtMVYxNlY1QzU4LDQuNDQ3LDU3LjU1Myw0LDU3LDR6IE00MywyaDV2M3YzaC01VjVWMnogTTEyLDJoNXYzdjNoLTVWNVYyeiBNNCw2aDZ2M2MwLDAuNTUzLDAuNDQ3LDEsMSwxaDdjMC41NTMsMCwxLTAuNDQ3LDEtMVY2aDIydjNjMCwwLjU1MywwLjQ0NywxLDEsMWg3YzAuNTUzLDAsMS0wLjQ0NywxLTFWNmg2djlINFY2ek00LDU4VjE3aDUydjQxSDR6Ii8+PHBhdGggZmlsbD0iY3VycmVudGNvbG9yIiBkPSJNMzgsMjNoLTdoLTJoLTdoLTJoLTl2OXYydjd2MnY5aDloMmg3aDJoN2gyaDl2LTl2LTJ2LTd2LTJ2LTloLTlIMzh6TTMxLDI1aDd2N2gtN1YyNXpNMzgsNDFoLTd2LTdoN1Y0MXpNMjIsMzRoN3Y3aC03VjM0ek0yMiwyNWg3djdoLTdWMjV6TTEzLDI1aDd2N2gtN1YyNXpNMTMsMzRoN3Y3aC03VjM0ek0yMCw1MGgtN3YtN2g3VjUwek0yOSw1MGgtN3YtN2g3VjUweiBNMzgsNTBoLTd2LTdoN1Y1MHogTTQ3LDUwaC03di03aDdWNTB6IE00Nyw0MWgtN3YtN2g3VjQxek00NywyNXY3aC03di03SDQ3eiIvPjwvZz48L3N2Zz4=');
     position: absolute;
     top: 0.65rem;
     left: 0.75rem;
@@ -613,6 +706,7 @@ $calendar-date-padding: 0.1rem 0 !default;
     height: 1.25rem;
     background-color: var(--primary);
   }
+
   .datetimepicker-clear-button {
     background: transparent;
     border: 0;
@@ -630,6 +724,7 @@ $calendar-date-padding: 0.1rem 0 !default;
     top: 0;
     width: 1.75rem;
   }
+
   .datetimepicker-dummy-wrapper {
     border: 1px solid $grey-light;
     cursor: pointer;
@@ -638,6 +733,7 @@ $calendar-date-padding: 0.1rem 0 !default;
     flex-wrap: nowrap;
     height: 100%;
     max-width: 100%;
+
     .datetimepicker-dummy-input {
       color: $text;
       font-size: 1rem;
@@ -646,15 +742,18 @@ $calendar-date-padding: 0.1rem 0 !default;
       flex: 1;
       height: 100%;
       max-width: 50%;
+
       &:first-child {
         text-indent: 2.5rem;
       }
+
       &.is-datetimepicker-range {
         background: transparent
-          url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjE4IiB2aWV3Qm94PSIwIDAgOCAxOCI+CiAgICA8cGF0aCBmaWxsPSIjOTU5OUFBIiBmaWxsLXJ1bGU9Im5vbnplcm8iIGQ9Ik0uMTE5LjcxOGw3LjE1OCA3LjQwNy0uMDMzLS41NTEtNi43MzcgOC44ODlhLjQyNS40MjUgMCAwIDAgLjA4LjU5My40Mi40MiAwIDAgMCAuNTktLjA4bDYuNzM3LTguODg5YS40MjUuNDI1IDAgMCAwLS4wMzMtLjU1MUwuNzIzLjEyOEEuNDIuNDIgMCAwIDAgLjEyOC4xMmEuNDI1LjQyNSAwIDAgMC0uMDA5LjU5OHoiLz4KPC9zdmc+Cg==)
+          url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjE4IiB2aWV3Qm94PSIwIDAgOCAxOCI+CiAgICA8cGF0aCBmaWxsPSIjOTU5OUFBIiBmaWxsLXJ1bGU9Im5vbnplcm8iIGQ9Ik0uMTE5LjcxOGw3LjE1OCA3LjQwNy0uMDMzLS41NTEtNi43MzcgOC44ODlhLjQyNS40MjUgMCAwIDAgLjA4LjU5My40Mi40MiAwIDAgMCAuNTktLjA4bDYuNzM3LTguODg5YS40MjUuNDI1IDAgMCAwLS4wMzMtLjU1MUwuNzIzLjEyOEEuNDIuNDIgMCAwIDAgLjEyOC4xMmEuNDI1LjQyNSAwIDAgMC0uMDA5LjU5OHoiLz4KPC9zdmc+Cg==')
           no-repeat 100%/8px;
       }
     }
+
     input {
       background: transparent;
       outline: none;
@@ -663,6 +762,7 @@ $calendar-date-padding: 0.1rem 0 !default;
     }
   }
 }
+
 .datetimepicker-dummy {
   @each $name, $pair in $colors {
     $color: nth($pair, 1);
@@ -672,6 +772,7 @@ $calendar-date-padding: 0.1rem 0 !default;
       &::before {
         background-color: $color;
       }
+
       .datetimepicker-clear-button {
         color: $color;
       }
@@ -685,12 +786,14 @@ $calendar-date-padding: 0.1rem 0 !default;
       &::before {
         background-color: $color;
       }
+
       .datetimepicker-clear-button {
         color: $color;
       }
     }
   }
 }
+
 .modal {
   .datetimepicker {
     display: block;

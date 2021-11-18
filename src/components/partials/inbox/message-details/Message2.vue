@@ -36,9 +36,7 @@ const dropdown2 = useDropdown(dropdownElement2)
         @error.once="(event) => useViaPlaceholderError(event, '150x150')"
       />
       <div class="message-meta">
-        <span class="message-title">
-          I couldn't catch up on last time's dinner</span
-        >
+        <span class="message-title"> I couldn't catch up on last time's dinner</span>
         <span class="sender-email">&lt;jonathan@vuero.io&gt;</span>
       </div>
       <div class="attachments inbox-hidden-mobile">
@@ -52,39 +50,23 @@ const dropdown2 = useDropdown(dropdownElement2)
         <div>
           <button class="button" @click="dropdown1.toggle">
             <span class="icon is-small">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:more-vertical"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:more-vertical"></i>
             </span>
           </button>
         </div>
         <div class="dropdown-menu">
           <div class="dropdown-content">
             <a class="dropdown-item">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:bookmark"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:bookmark"></i>
               <span>Bookmark</span>
             </a>
             <a class="dropdown-item">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:share-2"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:share-2"></i>
               <span>Share message</span>
             </a>
             <hr class="dropdown-divider" />
             <a class="dropdown-item">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:thumbs-down"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:thumbs-down"></i>
               <span>Mark as spam</span>
             </a>
           </div>
@@ -114,11 +96,7 @@ const dropdown2 = useDropdown(dropdownElement2)
               ></i>
             </a>
             <a class="inbox-action">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:file-text"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:file-text"></i>
             </a>
             <a class="inbox-action">
               <i aria-hidden="true" class="iconify" data-icon="feather:tag"></i>
@@ -131,11 +109,7 @@ const dropdown2 = useDropdown(dropdownElement2)
               ></i>
             </a>
             <a class="inbox-action">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:lock"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:lock"></i>
             </a>
           </div>
         </div>
@@ -143,24 +117,21 @@ const dropdown2 = useDropdown(dropdownElement2)
         <div class="mail-content content">
           <p>Hello dude,</p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quare
-            conare, quaeso. Prave, nequiter, turpiter cenabat;
-            <em>Quid igitur, inquit, eos responsuros putas?</em> Erit enim
-            mecum, si tecum erit.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quare conare, quaeso.
+            Prave, nequiter, turpiter cenabat;
+            <em>Quid igitur, inquit, eos responsuros putas?</em> Erit enim mecum, si tecum
+            erit.
           </p>
           <p>
-            Ratio enim nostra consentit, pugnat oratio. Age sane, inquam. Duo
-            Reges: constructio interrete. Beatus sibi videtur esse moriens. Sed
-            ego in hoc resisto; <em>Idemne, quod iucunde?</em>
+            Ratio enim nostra consentit, pugnat oratio. Age sane, inquam. Duo Reges:
+            constructio interrete. Beatus sibi videtur esse moriens. Sed ego in hoc
+            resisto; <em>Idemne, quod iucunde?</em>
           </p>
+          <p><strong>Tamen a proposito, inquam, aberramus.</strong> Quid de Pythagora?</p>
           <p>
-            <strong>Tamen a proposito, inquam, aberramus.</strong> Quid de
-            Pythagora?
-          </p>
-          <p>
-            Cur deinde Metrodori liberos commendas? Non dolere, inquam, istud
-            quam vim habeat postea videro; Pauca mutat vel plura sane; Quamquam
-            ab iis philosophiam et omnes ingenuas disciplinas habemus;
+            Cur deinde Metrodori liberos commendas? Non dolere, inquam, istud quam vim
+            habeat postea videro; Pauca mutat vel plura sane; Quamquam ab iis philosophiam
+            et omnes ingenuas disciplinas habemus;
           </p>
 
           <p>Elie Daniels</p>
@@ -171,41 +142,25 @@ const dropdown2 = useDropdown(dropdownElement2)
           <div class="attachment">
             <span>presentation.ppt</span>
             <div class="download-icon">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:arrow-down"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:arrow-down"></i>
             </div>
           </div>
           <div class="attachment">
             <span>venue-1.jpg</span>
             <div class="download-icon">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:arrow-down"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:arrow-down"></i>
             </div>
           </div>
           <div class="attachment">
             <span>venue-2.jpg</span>
             <div class="download-icon">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:arrow-down"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:arrow-down"></i>
             </div>
           </div>
           <div class="attachment">
             <span>venue-3.jpg</span>
             <div class="download-icon">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:arrow-down"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:arrow-down"></i>
             </div>
           </div>
         </div>
@@ -258,11 +213,7 @@ const dropdown2 = useDropdown(dropdownElement2)
                     <span>Spelling</span>
                   </a>
                   <a class="dropdown-item">
-                    <i
-                      aria-hidden="true"
-                      class="iconify"
-                      data-icon="feather:at-sign"
-                    ></i>
+                    <i aria-hidden="true" class="iconify" data-icon="feather:at-sign"></i>
                     <span>Mention</span>
                   </a>
                 </div>

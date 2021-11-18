@@ -45,12 +45,7 @@ watchEffect(async () => {
       <p>You can go back to previous steps if you need to edit anything.</p>
     </div>
 
-    <VLoader
-      size="xl"
-      class="project-preview-wrapper"
-      :active="wizard.loading"
-      grey
-    >
+    <VLoader size="xl" class="project-preview-wrapper" :active="wizard.loading" grey>
       <div class="project-preview-header">
         <VAvatar
           color="h-green"
@@ -83,9 +78,9 @@ watchEffect(async () => {
                 {{ wizard.data.description }}
               </p>
               <p v-else>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
-                negat? Tamen a proposito, inquam, aberramus. Deinde dolorem quem
-                maximum? Quae duo sunt, unum facit. Quod vestri non item.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis negat? Tamen
+                a proposito, inquam, aberramus. Deinde dolorem quem maximum? Quae duo
+                sunt, unum facit. Quod vestri non item.
               </p>
             </div>
           </div>
@@ -94,11 +89,7 @@ watchEffect(async () => {
               <a class="edit-icon" @click="wizard.setStep(1)">
                 <i aria-hidden="true" class="lnil lnil-pencil"></i>
               </a>
-              <VBlock
-                :title="wizard.data.relatedTo"
-                subtitle="Project Type"
-                center
-              >
+              <VBlock :title="wizard.data.relatedTo" subtitle="Project Type" center>
                 <template #icon>
                   <VIconBox size="medium" color="warning" rounded>
                     <i aria-hidden="true" class="lnil lnil-vector-pen"></i>
@@ -236,11 +227,7 @@ watchEffect(async () => {
                   :key="tool.name"
                   class="media-list-item"
                 >
-                  <VBlock
-                    :title="tool.name"
-                    :subtitle="tool.description"
-                    center
-                  >
+                  <VBlock :title="tool.name" :subtitle="tool.description" center>
                     <template #icon>
                       <VAvatar :picture="tool.logo" />
                     </template>

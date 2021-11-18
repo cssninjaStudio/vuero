@@ -25,10 +25,7 @@ export interface DemoItem {
 }
 
 // This is a helper function that generate a computed items filtered with the input
-function useFilter(
-  items: DemoItem[],
-  filter: Ref<string>
-): ComputedRef<DemoItem[]> {
+function useFilter(items: DemoItem[], filter: Ref<string>): ComputedRef<DemoItem[]> {
   return computed(() => {
     if (!filter.value) {
       return items
@@ -51,10 +48,7 @@ function generateFeatureRequestLink(name: string) {
   return `https://github.com/cssninjaStudio/vuero-public/issues/new?assignees=&labels=feature-request%2Ctriage&template=feature_request.yml&title=%5BFeature%5D%3A+%20${name}`
 }
 
-function displayOrder(
-  a: { displayOrder: number },
-  b: { displayOrder: number }
-) {
+function displayOrder(a: { displayOrder: number }, b: { displayOrder: number }) {
   if (a.displayOrder < b.displayOrder) {
     return -1
   }
@@ -484,6 +478,7 @@ debouncedWatch(
   &:deep(.label) {
     text-align: center !important;
   }
+
   .input {
     min-width: 300px;
   }

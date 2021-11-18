@@ -1,11 +1,7 @@
 <template>
   <VDropdown right spaced class="user-dropdown profile-dropdown">
     <template #button="{ toggle }">
-      <a
-        class="is-trigger dropdown-trigger"
-        aria-haspopup="true"
-        @click="toggle"
-      >
+      <a class="is-trigger dropdown-trigger" aria-haspopup="true" @click="toggle">
         <VAvatar picture="/images/avatars/svg/vuero-1.svg" />
       </a>
     </template>

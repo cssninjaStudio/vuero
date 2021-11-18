@@ -2,10 +2,7 @@
 import { ref, computed, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
-import type {
-  VAvatarProps,
-  VAvatarColor,
-} from '/@src/components/base/avatar/VAvatar.vue'
+import type { VAvatarProps, VAvatarColor } from '/@src/components/base/avatar/VAvatar.vue'
 import type { UserPopover } from '/@src/models/users'
 import { popovers } from '/@src/data/users/userPopovers'
 import { pageTitle } from '/@src/state/navbarLayoutState'
@@ -107,11 +104,7 @@ watch(
             :class="[activeMobileSubsidebar === 'dashboard' && 'is-active']"
             @click="activeMobileSubsidebar = 'dashboard'"
           >
-            <i
-              aria-hidden="true"
-              class="iconify"
-              data-icon="feather:activity"
-            ></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:activity"></i>
           </a>
         </li>
         <li>
@@ -140,11 +133,7 @@ watch(
         </li>
         <li>
           <RouterLink :to="{ name: 'messaging-v1' }">
-            <i
-              aria-hidden="true"
-              class="iconify"
-              data-icon="feather:message-circle"
-            ></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:message-circle"></i>
           </RouterLink>
         </li>
       </template>
@@ -152,20 +141,12 @@ watch(
       <template #bottom-links>
         <li>
           <a @click="activePanel = 'search'">
-            <i
-              aria-hidden="true"
-              class="iconify"
-              data-icon="feather:search"
-            ></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
           </a>
         </li>
         <li>
           <a href="#">
-            <i
-              aria-hidden="true"
-              class="iconify"
-              data-icon="feather:settings"
-            ></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:settings"></i>
           </a>
         </li>
       </template>
@@ -177,14 +158,10 @@ watch(
         v-if="isMobileSidebarOpen && activeMobileSubsidebar === 'layout'"
       />
       <DashboardsMobileSubsidebar
-        v-else-if="
-          isMobileSidebarOpen && activeMobileSubsidebar === 'dashboard'
-        "
+        v-else-if="isMobileSidebarOpen && activeMobileSubsidebar === 'dashboard'"
       />
       <ComponentsMobileSubsidebar
-        v-else-if="
-          isMobileSidebarOpen && activeMobileSubsidebar === 'components'
-        "
+        v-else-if="isMobileSidebarOpen && activeMobileSubsidebar === 'components'"
       />
       <ElementsMobileSubsidebar
         v-else-if="isMobileSidebarOpen && activeMobileSubsidebar === 'elements'"
@@ -213,10 +190,7 @@ watch(
         <Toolbar class="desktop-toolbar">
           <ToolbarNotification />
 
-          <a
-            class="toolbar-link right-panel-trigger"
-            @click="activePanel = 'activity'"
-          >
+          <a class="toolbar-link right-panel-trigger" @click="activePanel = 'activity'">
             <i aria-hidden="true" class="iconify" data-icon="feather:grid"></i>
           </a>
         </Toolbar>
@@ -285,28 +259,16 @@ watch(
                 placeholder="Search records..."
               />
               <div class="form-icon">
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:search"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
               </div>
-              <div
-                v-if="filter"
-                class="form-icon is-right"
-                @click="filter = ''"
-              >
+              <div v-if="filter" class="form-icon is-right" @click="filter = ''">
                 <i aria-hidden="true" class="iconify" data-icon="feather:x"></i>
               </div>
               <div
                 v-if="filteredData.length > 0"
                 class="search-results has-slimscroll is-active"
               >
-                <div
-                  v-for="(user, key) in filteredData"
-                  :key="key"
-                  class="search-result"
-                >
+                <div v-for="(user, key) in filteredData" :key="key" class="search-result">
                   <VAvatar v-bind="getAvatarData(user)" />
                   <div class="meta">
                     <span>{{ user.username }}</span>
@@ -355,11 +317,7 @@ watch(
                   class="toolbar-link right-panel-trigger"
                   @click="activePanel = 'activity'"
                 >
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:grid"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:grid"></i>
                 </a>
               </Toolbar>
             </div>

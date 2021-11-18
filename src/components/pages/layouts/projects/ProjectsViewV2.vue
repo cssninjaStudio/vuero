@@ -45,10 +45,10 @@
             </div>
             <div class="body">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem
-                iste, inquam, de voluptate quid sentit? Itaque contra est, ac
-                dicitis; Quae cum essent dicta, discessimus. Iam enim adesse
-                poterit. Duo Reges: constructio interrete.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem iste,
+                inquam, de voluptate quid sentit? Itaque contra est, ac dicitis; Quae cum
+                essent dicta, discessimus. Iam enim adesse poterit. Duo Reges: constructio
+                interrete.
               </p>
             </div>
           </div>
@@ -88,9 +88,8 @@
             </div>
             <div class="body">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem
-                iste, inquam, de voluptate quid sentit? Itaque contra est, ac
-                dicitis.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem iste,
+                inquam, de voluptate quid sentit? Itaque contra est, ac dicitis.
               </p>
             </div>
           </div>
@@ -99,10 +98,7 @@
               <h4 class="heading">Developers</h4>
               <div class="developers">
                 <VAvatar size="small" picture="/demo/avatars/7.jpg" />
-                <VAvatar
-                  size="small"
-                  picture="/images/avatars/svg/vuero-1.svg"
-                />
+                <VAvatar size="small" picture="/images/avatars/svg/vuero-1.svg" />
                 <VAvatar size="small" color="danger" initials="DC" />
               </div>
             </div>
@@ -133,9 +129,9 @@
             </div>
             <div class="body">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem
-                iste, inquam, de voluptate quid sentit? Itaque contra est, ac
-                dicitis; Quae cum essent dicta, discessimus. Iam enim.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem iste,
+                inquam, de voluptate quid sentit? Itaque contra est, ac dicitis; Quae cum
+                essent dicta, discessimus. Iam enim.
               </p>
             </div>
           </div>
@@ -173,9 +169,8 @@
             </div>
             <div class="body">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem
-                iste, inquam, de voluptate quid sentit? Itaque contra est, ac
-                dicitis.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem iste,
+                inquam, de voluptate quid sentit? Itaque contra est, ac dicitis.
               </p>
             </div>
           </div>
@@ -214,10 +209,10 @@
             </div>
             <div class="body">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem
-                iste, inquam, de voluptate quid sentit? Itaque contra est, ac
-                dicitis; Quae cum essent dicta, discessimus. Iam enim adesse
-                poterit. Duo Reges: constructio interrete.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem iste,
+                inquam, de voluptate quid sentit? Itaque contra est, ac dicitis; Quae cum
+                essent dicta, discessimus. Iam enim adesse poterit. Duo Reges: constructio
+                interrete.
               </p>
             </div>
           </div>
@@ -256,9 +251,9 @@
             </div>
             <div class="body">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem
-                iste, inquam, de voluptate quid sentit? Itaque contra est, ac
-                dicitis; Quae cum essent dicta, discessimus. Iam enim.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem iste,
+                inquam, de voluptate quid sentit? Itaque contra est, ac dicitis; Quae cum
+                essent dicta, discessimus. Iam enim.
               </p>
             </div>
           </div>
@@ -296,9 +291,8 @@
             </div>
             <div class="body">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem
-                iste, inquam, de voluptate quid sentit? Itaque contra est, ac
-                dicitis.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem iste,
+                inquam, de voluptate quid sentit? Itaque contra est, ac dicitis.
               </p>
             </div>
           </div>
@@ -338,10 +332,10 @@
             </div>
             <div class="body">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem
-                iste, inquam, de voluptate quid sentit? Itaque contra est, ac
-                dicitis; Quae cum essent dicta, discessimus. Iam enim adesse
-                poterit. Duo Reges: constructio interrete.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem iste,
+                inquam, de voluptate quid sentit? Itaque contra est, ac dicitis; Quae cum
+                essent dicta, discessimus. Iam enim adesse poterit. Duo Reges: constructio
+                interrete.
               </p>
             </div>
           </div>
@@ -380,9 +374,9 @@
             </div>
             <div class="body">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem
-                iste, inquam, de voluptate quid sentit? Itaque contra est, ac
-                dicitis; Quae cum essent dicta, discessimus. Iam enim.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem iste,
+                inquam, de voluptate quid sentit? Itaque contra est, ac dicitis; Quae cum
+                essent dicta, discessimus. Iam enim.
               </p>
             </div>
           </div>
@@ -414,6 +408,6 @@
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
-@import '../../../../scss/pages/projects/_projects.scss';
+@import '../../../../scss/abstracts/mixins';
+@import '../../../../scss/pages/projects/projects';
 </style>

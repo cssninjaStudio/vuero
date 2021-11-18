@@ -18,11 +18,7 @@ the component background white.
   <VSnack title="Corporate" white image="/demo/avatars/7.jpg">
     <i class="iconify" data-icon="feather:x"></i>
   </VSnack>
-  <VSnack
-    title="English"
-    white
-    image="/images/icons/flags/united-states-of-america.svg"
-  >
+  <VSnack title="English" white image="/images/icons/flags/united-states-of-america.svg">
     <i class="iconify" data-icon="feather:x"></i>
   </VSnack>
   <VSnack title="Slicer" white image="/images/icons/logos/slicer.svg">

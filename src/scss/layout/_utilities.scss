@@ -69,7 +69,7 @@ var {
 
   .divider {
     text-align: center;
-    margin: 1.5em auto 1em auto;
+    margin: 1.5em auto 1em;
     width: 100%;
     position: relative;
 
@@ -129,7 +129,7 @@ var {
 
 .is-disabled {
   pointer-events: none;
-  opacity: 0.4;
+  opacity: 40%;
   cursor: default !important;
 }
 
@@ -171,7 +171,7 @@ var {
 
   &::-webkit-scrollbar-thumb {
     border-radius: 10px !important;
-    background: rgba(0, 0, 0, 0.2) !important;
+    background: rgb(0 0 0 / 20%) !important;
   }
 }
 
@@ -182,7 +182,7 @@ var {
 
   &::-webkit-scrollbar-thumb {
     border-radius: 10px !important;
-    background: rgba(0, 0, 0, 0.2) !important;
+    background: rgb(0 0 0 / 20%) !important;
   }
 }
 
@@ -229,7 +229,7 @@ var {
   cursor: pointer;
   padding: 0;
   transition: opacity 0.4s;
-  opacity: 1;
+  opacity: 100%;
   position: relative;
 
   &.has-chevron {
@@ -256,10 +256,10 @@ var {
     height: 30px;
 
     &.active > span.rotate {
-      -webkit-transform: rotate(90deg);
-      -moz-transform: translate(0, 0) rotate(90deg);
-      -ms-transform: translate(0, 0) rotate(90deg);
-      -o-transform: translate(0, 0) rotate(90deg);
+      transform: rotate(90deg);
+      transform: translate(0, 0) rotate(90deg);
+      transform: translate(0, 0) rotate(90deg);
+      transform: translate(0, 0) rotate(90deg);
       transform: translate(0, 0) rotate(90deg);
     }
 
@@ -274,10 +274,10 @@ var {
       margin: -2px 0 0 -10px;
       left: 50%;
       top: 12px;
-      -webkit-transform: rotate(135deg);
-      -moz-transform: translate(0, 0) rotate(135deg);
-      -ms-transform: translate(0, 0) rotate(135deg);
-      -o-transform: translate(0, 0) rotate(135deg);
+      transform: rotate(135deg);
+      transform: translate(0, 0) rotate(135deg);
+      transform: translate(0, 0) rotate(135deg);
+      transform: translate(0, 0) rotate(135deg);
       transform: translate(0, 0) rotate(135deg);
     }
 
@@ -285,10 +285,10 @@ var {
       margin: -2px 0 0 -10px;
       left: 50%;
       top: 12px;
-      -webkit-transform: rotate(45deg);
-      -moz-transform: translate(0, 0) rotate(45deg);
-      -ms-transform: translate(0, 0) rotate(45deg);
-      -o-transform: translate(0, 0) rotate(45deg);
+      transform: rotate(45deg);
+      transform: translate(0, 0) rotate(45deg);
+      transform: translate(0, 0) rotate(45deg);
+      transform: translate(0, 0) rotate(45deg);
       transform: translate(0, 0) rotate(45deg);
     }
   }
@@ -301,9 +301,6 @@ var {
     margin: -1px 0 0 -10px;
     left: 50%;
     top: 12px;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
   }
 
@@ -315,9 +312,6 @@ var {
     margin: -3px 0 0 -10px;
     left: 50%;
     top: 6px;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
   }
 
@@ -329,9 +323,6 @@ var {
     margin: 2px 0 0 -10px;
     left: 50%;
     top: 17px;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
   }
 }
@@ -386,7 +377,7 @@ var {
 }
 
 .ajs-ok {
-  padding: 8px 22px 8px 22px;
+  padding: 8px 22px;
   height: 33px;
   min-width: 82px !important;
   line-height: 0;
@@ -407,7 +398,7 @@ var {
 }
 
 .ajs-cancel {
-  padding: 8px 22px 8px 22px;
+  padding: 8px 22px;
   height: 33px;
   min-width: 82px !important;
   line-height: 0;
@@ -610,7 +601,7 @@ var {
     transform: scale(1);
 
     .form-switch {
-      opacity: 1 !important;
+      opacity: 100% !important;
       pointer-events: all !important;
     }
   }
@@ -629,7 +620,7 @@ var {
       left: -10px;
       display: block;
       transition: all 0.3s;
-      opacity: 0;
+      opacity: 0%;
       pointer-events: none;
     }
   }
@@ -643,7 +634,7 @@ var {
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgb(0 0 0 / 10%);
 
   &.is-top {
     background-position: top !important;
@@ -707,7 +698,7 @@ var {
 ========================================================================== */
 
 .simplebar-scrollbar::before {
-  background: rgba(0, 0, 0, 0.2) !important;
+  background: rgb(0 0 0 / 20%) !important;
 }
 
 /* ==========================================================================
@@ -717,7 +708,7 @@ var {
 #backtotop {
   position: fixed;
   right: 0;
-  opacity: 0;
+  opacity: 0%;
   visibility: hidden;
   bottom: 25px;
   margin: 0 25px 0 0;
@@ -726,13 +717,13 @@ var {
   transition: all 0.5s;
 
   &.visible {
-    opacity: 1;
+    opacity: 100%;
     visibility: visible;
     transform: scale(1);
 
     a:hover {
       outline: none;
-      opacity: 0.9;
+      opacity: 90%;
       background: var(--primary);
       color: var(--white);
     }
@@ -747,7 +738,7 @@ var {
     width: 46px;
     height: 46px;
     background-color: var(--medium-grey);
-    opacity: 1;
+    opacity: 100%;
     transition: all 0.3s;
     border-radius: var(--radius-rounded);
     text-align: center;

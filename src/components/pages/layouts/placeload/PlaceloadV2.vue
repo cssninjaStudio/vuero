@@ -18,9 +18,7 @@ const filters = ref('')
       </VField>
 
       <VButtons>
-        <VButton color="primary" icon="fas fa-plus" elevated>
-          Add User
-        </VButton>
+        <VButton color="primary" icon="fas fa-plus" elevated> Add User </VButton>
       </VButtons>
     </div>
 
@@ -42,12 +40,7 @@ const filters = ref('')
             <div class="flex-table-cell is-media is-grow">
               <VPlaceloadAvatar size="medium" />
 
-              <VPlaceloadText
-                :lines="2"
-                width="80%"
-                last-line-width="60%"
-                class="mx-2"
-              />
+              <VPlaceloadText :lines="2" width="80%" last-line-width="60%" class="mx-2" />
             </div>
             <div class="flex-table-cell" data-th="Location">
               <VPlaceload class="mx-1" />
@@ -76,6 +69,6 @@ const filters = ref('')
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
-@import '../../../../scss/pages/lists/_list-view-1.scss';
+@import '../../../../scss/abstracts/mixins';
+@import '../../../../scss/pages/lists/list-view-1';
 </style>

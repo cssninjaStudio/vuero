@@ -57,16 +57,7 @@ export const datatableV2 = {
     { select: 7, render: renderButton, sortable: false },
   ],
   data: {
-    headings: [
-      'ID',
-      'Picture',
-      'Name',
-      'SKU',
-      'Price',
-      'Stock',
-      'Category',
-      'Actions',
-    ],
+    headings: ['ID', 'Picture', 'Name', 'SKU', 'Price', 'Stock', 'Category', 'Actions'],
     data: [
       [
         0,

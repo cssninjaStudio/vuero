@@ -14,12 +14,7 @@ export type VAvatarColor =
   | 'h-green'
   | 'h-red'
   | 'h-yellow'
-export type VAvatarDotColor =
-  | 'primary'
-  | 'success'
-  | 'info'
-  | 'warning'
-  | 'danger'
+export type VAvatarDotColor = 'primary' | 'success' | 'info' | 'warning' | 'danger'
 
 export interface VAvatarProps {
   picture?: string
@@ -60,10 +55,7 @@ const props = withDefaults(defineProps<VAvatarProps>(), {
       <img
         v-if="props.picture"
         class="avatar"
-        :class="[
-          props.squared && 'is-squared',
-          props.pictureDark && 'light-image',
-        ]"
+        :class="[props.squared && 'is-squared', props.pictureDark && 'light-image']"
         :src="props.picture"
         alt=""
         @error.once="(event) => useViaPlaceholderError(event, '150x150')"
@@ -71,10 +63,7 @@ const props = withDefaults(defineProps<VAvatarProps>(), {
       <span
         v-else
         class="avatar is-fake"
-        :class="[
-          props.squared && 'is-squared',
-          props.color && `is-${props.color}`,
-        ]"
+        :class="[props.squared && 'is-squared', props.color && `is-${props.color}`]"
       >
         <span>{{ props.initials }}</span>
       </span>

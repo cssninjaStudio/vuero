@@ -10,11 +10,7 @@ Use the `size="small"` prop on the component to show a smaller version of it.
   <VSnack title="Support" image="/demo/photos/misc/buoy.jpg" size="small">
     <i class="iconify" data-icon="feather:x"></i>
   </VSnack>
-  <VSnack
-    title="Metamovies"
-    image="/images/icons/logos/metamovies.svg"
-    size="small"
-  >
+  <VSnack title="Metamovies" image="/images/icons/logos/metamovies.svg" size="small">
     <i class="iconify" data-icon="feather:x"></i>
   </VSnack>
   <VSnack title="Corporate" image="/demo/avatars/7.jpg" size="small">

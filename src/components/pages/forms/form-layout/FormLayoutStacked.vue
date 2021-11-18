@@ -177,55 +177,35 @@ const isStuck = computed(() => {
                 <VField>
                   <VControl>
                     <div class="participants">
-                      <tippy
-                        class="has-help-cursor"
-                        interactive
-                        placement="top-start"
-                      >
+                      <tippy class="has-help-cursor" interactive placement="top-start">
                         <VAvatar picture="/images/avatars/svg/vuero-1.svg" />
                         <template #content>
                           <UserPopoverContent :user="popovers.user8" />
                         </template>
                       </tippy>
 
-                      <tippy
-                        class="has-help-cursor"
-                        interactive
-                        placement="top-start"
-                      >
+                      <tippy class="has-help-cursor" interactive placement="top-start">
                         <VAvatar color="warning" initials="BT" />
                         <template #content>
                           <UserPopoverContent :user="popovers.user122" />
                         </template>
                       </tippy>
 
-                      <tippy
-                        class="has-help-cursor"
-                        interactive
-                        placement="top-start"
-                      >
+                      <tippy class="has-help-cursor" interactive placement="top-start">
                         <VAvatar picture="/demo/avatars/18.jpg" />
                         <template #content>
                           <UserPopoverContent :user="popovers.user18" />
                         </template>
                       </tippy>
 
-                      <tippy
-                        class="has-help-cursor"
-                        interactive
-                        placement="top-start"
-                      >
+                      <tippy class="has-help-cursor" interactive placement="top-start">
                         <VAvatar color="info" initials="JD" />
                         <template #content>
                           <UserPopoverContent :user="popovers.user123" />
                         </template>
                       </tippy>
 
-                      <tippy
-                        class="has-help-cursor"
-                        interactive
-                        placement="top-start"
-                      >
+                      <tippy class="has-help-cursor" interactive placement="top-start">
                         <VAvatar picture="/demo/avatars/7.jpg" />
                         <template #content>
                           <UserPopoverContent :user="popovers.user7" />
@@ -252,11 +232,7 @@ const isStuck = computed(() => {
               <div class="field-body">
                 <VField>
                   <VControl icon="feather:map-pin">
-                    <input
-                      class="input"
-                      type="text"
-                      placeholder="e.g. Conference room"
-                    />
+                    <input class="input" type="text" placeholder="e.g. Conference room" />
                   </VControl>
                 </VField>
               </div>
@@ -288,11 +264,7 @@ const isStuck = computed(() => {
                     <Multiselect
                       v-model="calendarTarget"
                       placeholder="Pick a calendar"
-                      :options="[
-                        'My Calendar',
-                        'Team Calendar',
-                        'Company Calendar',
-                      ]"
+                      :options="['My Calendar', 'Team Calendar', 'Company Calendar']"
                     />
                   </VControl>
                 </VField>
@@ -399,22 +371,14 @@ const isStuck = computed(() => {
                     >
                       <template #singlelabel="{ value }">
                         <div class="multiselect-single-label">
-                          <img
-                            class="select-label-icon"
-                            :src="value.icon"
-                            alt=""
-                          />
+                          <img class="select-label-icon" :src="value.icon" alt="" />
                           <span class="select-label-text">
                             {{ value.name }}
                           </span>
                         </div>
                       </template>
                       <template #option="{ option }">
-                        <img
-                          class="select-option-icon"
-                          :src="option.icon"
-                          alt=""
-                        />
+                        <img class="select-option-icon" :src="option.icon" alt="" />
                         <span class="select-label-text">
                           {{ option.name }}
                         </span>
@@ -432,9 +396,8 @@ const isStuck = computed(() => {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
-@import '../../../../scss/pages/generic/_forms.scss';
-
+@import '../../../../scss/abstracts/mixins';
+@import '../../../../scss/pages/generic/forms';
 @media only screen and (min-width: 767px) {
   .v-calendar-combo {
     margin: 0 !important;
@@ -446,6 +409,7 @@ const isStuck = computed(() => {
       &:first-child {
         padding-left: 0 !important;
       }
+
       &:last-child {
         padding-right: 0 !important;
       }

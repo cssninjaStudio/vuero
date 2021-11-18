@@ -76,11 +76,7 @@ zh-CN:
 
 <template>
   <div class="card-container">
-    <div
-      :class="[props.flipped && 'flipped']"
-      class="creditcard"
-      @click="emit('flip')"
-    >
+    <div :class="[props.flipped && 'flipped']" class="creditcard" @click="emit('flip')">
       <div class="front">
         <slot></slot>
 
@@ -128,16 +124,10 @@ zh-CN:
             >
               {{ nameUppercase }}
             </text>
-            <text
-              transform="matrix(1 0 0 1 54.1074 389.8793)"
-              class="st7 st5 st8"
-            >
+            <text transform="matrix(1 0 0 1 54.1074 389.8793)" class="st7 st5 st8">
               {{ t('holder-label') }}
             </text>
-            <text
-              transform="matrix(1 0 0 1 479.7754 388.8793)"
-              class="st7 st5 st8"
-            >
+            <text transform="matrix(1 0 0 1 479.7754 388.8793)" class="st7 st5 st8">
               {{ t('expiration-label') }}
             </text>
             <text transform="matrix(1 0 0 1 65.1054 241.5)" class="st7 st5 st8">
@@ -151,22 +141,13 @@ zh-CN:
               >
                 {{ props.expiry }}
               </text>
-              <text
-                transform="matrix(1 0 0 1 479.3848 417.0097)"
-                class="st2 st10 st11"
-              >
+              <text transform="matrix(1 0 0 1 479.3848 417.0097)" class="st2 st10 st11">
                 {{ t('valid-label') }}
               </text>
-              <text
-                transform="matrix(1 0 0 1 479.3848 435.6762)"
-                class="st2 st10 st11"
-              >
+              <text transform="matrix(1 0 0 1 479.3848 435.6762)" class="st2 st10 st11">
                 {{ t('valid-thru-label') }}
               </text>
-              <polygon
-                class="st2"
-                points="554.5,421 540.4,414.2 540.4,427.9 		"
-              />
+              <polygon class="st2" points="554.5,421 540.4,414.2 540.4,427.9 		" />
             </g>
             <g id="cchip">
               <g>
@@ -194,40 +175,16 @@ zh-CN:
                   />
                 </g>
                 <g>
-                  <rect
-                    x="82.8"
-                    y="82.1"
-                    class="st12"
-                    width="25.8"
-                    height="1.5"
-                  />
+                  <rect x="82.8" y="82.1" class="st12" width="25.8" height="1.5" />
                 </g>
                 <g>
-                  <rect
-                    x="82.8"
-                    y="117.9"
-                    class="st12"
-                    width="26.1"
-                    height="1.5"
-                  />
+                  <rect x="82.8" y="117.9" class="st12" width="26.1" height="1.5" />
                 </g>
                 <g>
-                  <rect
-                    x="142.4"
-                    y="82.1"
-                    class="st12"
-                    width="25.8"
-                    height="1.5"
-                  />
+                  <rect x="142.4" y="82.1" class="st12" width="25.8" height="1.5" />
                 </g>
                 <g>
-                  <rect
-                    x="142"
-                    y="117.9"
-                    class="st12"
-                    width="26.2"
-                    height="1.5"
-                  />
+                  <rect x="142" y="117.9" class="st12" width="26.2" height="1.5" />
                 </g>
               </g>
             </g>
@@ -269,20 +226,8 @@ zh-CN:
                 d="M701.1,249.1H48.9c-3.3,0-6-2.7-6-6v-52.5c0-3.3,2.7-6,6-6h652.1c3.3,0,6,2.7,6,6v52.5
                 C707.1,246.4,704.4,249.1,701.1,249.1z"
               />
-              <rect
-                x="42.9"
-                y="198.6"
-                class="st4"
-                width="664.1"
-                height="10.5"
-              />
-              <rect
-                x="42.9"
-                y="224.5"
-                class="st4"
-                width="664.1"
-                height="10.5"
-              />
+              <rect x="42.9" y="198.6" class="st4" width="664.1" height="10.5" />
+              <rect x="42.9" y="224.5" class="st4" width="664.1" height="10.5" />
               <path
                 class="st5"
                 d="M701.1,184.6H618h-8h-10v64.5h10h8h83.1c3.3,0,6-2.7,6-6v-52.5C707.1,187.3,704.4,184.6,701.1,184.6z"
@@ -296,10 +241,7 @@ zh-CN:
               {{ props.cvc }}
             </text>
             <g class="st8">
-              <text
-                transform="matrix(1 0 0 1 518.083 280.0879)"
-                class="st9 st6 st10"
-              >
+              <text transform="matrix(1 0 0 1 518.083 280.0879)" class="st9 st6 st10">
                 {{ t('cvc-label') }}
               </text>
             </g>

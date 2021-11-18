@@ -102,10 +102,10 @@ import { popovers } from '/@src/data/users/userPopovers'
           </VBlock>
           <div class="currency-description">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vide,
-              quantum, inquam, fallare, Torquate. Quid censes in Latino fore?
-              Optime, inquam. Ratio quidem vestra sic cogit. Prave, nequiter,
-              turpiter cenabat; Duo Reges: constructio interrete.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vide, quantum,
+              inquam, fallare, Torquate. Quid censes in Latino fore? Optime, inquam. Ratio
+              quidem vestra sic cogit. Prave, nequiter, turpiter cenabat; Duo Reges:
+              constructio interrete.
             </p>
           </div>
           <div class="button-wrap">
@@ -188,10 +188,7 @@ import { popovers } from '/@src/data/users/userPopovers'
 
           <VBlock title="Monero" subtitle="XMR" center>
             <template #icon>
-              <VAvatar
-                picture="/images/icons/cryptocurrencies/xmr.svg"
-                size="small"
-              />
+              <VAvatar picture="/images/icons/cryptocurrencies/xmr.svg" size="small" />
             </template>
             <template #action>
               <VIconButton icon="feather:plus" circle dark-outlined />
@@ -200,10 +197,7 @@ import { popovers } from '/@src/data/users/userPopovers'
 
           <VBlock title="Litecoin" subtitle="LTC" center>
             <template #icon>
-              <VAvatar
-                picture="/images/icons/cryptocurrencies/ltc.svg"
-                size="small"
-              />
+              <VAvatar picture="/images/icons/cryptocurrencies/ltc.svg" size="small" />
             </template>
             <template #action>
               <VIconButton icon="feather:plus" circle dark-outlined />
@@ -212,10 +206,7 @@ import { popovers } from '/@src/data/users/userPopovers'
 
           <VBlock title="ChainLink" subtitle="LINK" center>
             <template #icon>
-              <VAvatar
-                picture="/images/icons/cryptocurrencies/link.svg"
-                size="small"
-              />
+              <VAvatar picture="/images/icons/cryptocurrencies/link.svg" size="small" />
             </template>
             <template #action>
               <VIconButton icon="feather:plus" circle dark-outlined />
@@ -224,10 +215,7 @@ import { popovers } from '/@src/data/users/userPopovers'
 
           <VBlock title="Binance Coin" subtitle="BNB" center>
             <template #icon>
-              <VAvatar
-                picture="/images/icons/cryptocurrencies/bnb.svg"
-                size="small"
-              />
+              <VAvatar picture="/images/icons/cryptocurrencies/bnb.svg" size="small" />
             </template>
             <template #action>
               <VIconButton icon="feather:plus" circle dark-outlined />
@@ -240,7 +228,7 @@ import { popovers } from '/@src/data/users/userPopovers'
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/abstracts/mixins';
 
 .banking-dashboard-v3 {
   .dashboard-header {
@@ -294,7 +282,7 @@ import { popovers } from '/@src/data/users/userPopovers'
     margin-bottom: 1rem;
 
     .dashboard-tile {
-      @include vuero-s-card();
+      @include vuero-s-card;
 
       width: calc(33.3% - 16px);
       margin: 8px;
@@ -319,7 +307,7 @@ import { popovers } from '/@src/data/users/userPopovers'
   }
 
   .dashboard-card {
-    @include vuero-s-card();
+    @include vuero-s-card;
 
     &:not(:last-child) {
       margin-bottom: 1.5rem;
@@ -364,7 +352,7 @@ import { popovers } from '/@src/data/users/userPopovers'
     }
 
     .currency-description {
-      padding: 10px 0 20px 0;
+      padding: 10px 0 20px;
     }
 
     .button-wrap {
@@ -382,12 +370,12 @@ import { popovers } from '/@src/data/users/userPopovers'
   .banking-dashboard-v3 {
     .dashboard-tiles {
       .dashboard-tile {
-        @include vuero-card--dark();
+        @include vuero-card--dark;
       }
     }
 
     .dashboard-card {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
     }
   }
 }

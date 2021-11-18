@@ -1,8 +1,5 @@
 <script setup lang="ts">
-import type {
-  TinySliderInstance,
-  TinySliderInfo,
-} from 'tiny-slider/src/tiny-slider'
+import type { TinySliderInstance, TinySliderInfo } from 'tiny-slider/src/tiny-slider'
 import { tns } from 'tiny-slider/src/tiny-slider'
 import { useHead } from '@vueuse/head'
 import { ref, onMounted, onUnmounted } from 'vue'
@@ -114,11 +111,7 @@ onUnmounted(() => {
             :class="[step >= 1 && 'is-active', step < 1 && 'is-inactive']"
           >
             <div class="inner">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:user"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:user"></i>
             </div>
             <span class="step-label">Profile Pic</span>
           </div>
@@ -127,11 +120,7 @@ onUnmounted(() => {
             :class="[step >= 2 && 'is-active', step < 2 && 'is-inactive']"
           >
             <div class="inner">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:shield"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:shield"></i>
             </div>
             <span class="step-label">Account</span>
           </div>
@@ -140,11 +129,7 @@ onUnmounted(() => {
             :class="[step >= 3 && 'is-active', step < 3 && 'is-inactive']"
           >
             <div class="inner">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:check"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
             </div>
             <span class="step-label">Done</span>
           </div>
@@ -163,10 +148,7 @@ onUnmounted(() => {
         <div class="hero-body">
           <div class="container">
             <!-- Step 1 -->
-            <div
-              class="columns signup-columns"
-              :class="[step !== 0 && 'is-hidden']"
-            >
+            <div class="columns signup-columns" :class="[step !== 0 && 'is-hidden']">
               <div class="column is-4 is-offset-1">
                 <h1 id="main-signup-title" class="title is-3 signup-title">
                   Become a Vuero
@@ -180,11 +162,7 @@ onUnmounted(() => {
                       <div class="column is-6">
                         <VField>
                           <VControl>
-                            <input
-                              type="text"
-                              class="input"
-                              autocomplete="given-name"
-                            />
+                            <input type="text" class="input" autocomplete="given-name" />
                             <div class="auth-label">First Name</div>
                           </VControl>
                         </VField>
@@ -192,11 +170,7 @@ onUnmounted(() => {
                       <div class="column is-6">
                         <VField>
                           <VControl>
-                            <input
-                              type="text"
-                              class="input"
-                              autocomplete="family-name"
-                            />
+                            <input type="text" class="input" autocomplete="family-name" />
                             <div class="auth-label">Last Name</div>
                           </VControl>
                         </VField>
@@ -204,11 +178,7 @@ onUnmounted(() => {
                       <div class="column is-12">
                         <VField>
                           <VControl>
-                            <input
-                              type="text"
-                              class="input"
-                              autocomplete="email"
-                            />
+                            <input type="text" class="input" autocomplete="email" />
                             <div class="auth-label">Email Address</div>
                           </VControl>
                         </VField>
@@ -218,10 +188,7 @@ onUnmounted(() => {
                           <div class="box-wrap">
                             <input type="radio" name="signup_type" checked />
                             <div class="signup-box">
-                              <i
-                                aria-hidden="true"
-                                class="lnil lnil-coffee-cup"
-                              ></i>
+                              <i aria-hidden="true" class="lnil lnil-coffee-cup"></i>
                               <div class="meta">
                                 <span>Free</span>
                                 <span>Nice to get started</span>
@@ -231,10 +198,7 @@ onUnmounted(() => {
                           <div class="box-wrap">
                             <input type="radio" name="signup_type" />
                             <div class="signup-box">
-                              <i
-                                aria-hidden="true"
-                                class="lnil lnil-crown-alt-1"
-                              ></i>
+                              <i aria-hidden="true" class="lnil lnil-crown-alt-1"></i>
                               <div class="meta">
                                 <span>Paid</span>
                                 <span>Get a lot more features</span>
@@ -265,9 +229,7 @@ onUnmounted(() => {
                       </VButton>
                       <span>
                         Or
-                        <RouterLink :to="{ name: 'auth-login-1' }">
-                          Sign In
-                        </RouterLink>
+                        <RouterLink :to="{ name: 'auth-login-1' }"> Sign In </RouterLink>
                         to your account.
                       </span>
                     </div>
@@ -277,10 +239,7 @@ onUnmounted(() => {
             </div>
 
             <!-- Step 2 -->
-            <div
-              class="columns signup-columns"
-              :class="[step !== 1 && 'is-hidden']"
-            >
+            <div class="columns signup-columns" :class="[step !== 1 && 'is-hidden']">
               <form class="column is-8" @submit.prevent>
                 <div class="signup-profile-wrapper">
                   <h1 class="title is-5 signup-title has-text-centered">
@@ -315,30 +274,18 @@ onUnmounted(() => {
                 </div>
 
                 <div ref="sliderElement" class="avatar-carousel resized-mobile">
-                  <div
-                    v-for="(avatar, key) in avatars"
-                    :key="key"
-                    class="carousel-item"
-                  >
+                  <div v-for="(avatar, key) in avatars" :key="key" class="carousel-item">
                     <div class="image-wrapper">
                       <img
                         :src="avatar"
                         alt=""
-                        @error.once="
-                          (event) => useViaPlaceholderError(event, '150x150')
-                        "
+                        @error.once="(event) => useViaPlaceholderError(event, '150x150')"
                       />
                     </div>
                   </div>
                 </div>
                 <div class="button-wrap is-centered has-text-centered">
-                  <VButton
-                    color="primary"
-                    size="big"
-                    rounded
-                    lower
-                    @click="step++"
-                  >
+                  <VButton color="primary" size="big" rounded lower @click="step++">
                     Continue
                   </VButton>
                 </div>
@@ -346,28 +293,19 @@ onUnmounted(() => {
             </div>
 
             <!-- Step 3 -->
-            <div
-              class="columns signup-columns"
-              :class="[step !== 2 && 'is-hidden']"
-            >
+            <div class="columns signup-columns" :class="[step !== 2 && 'is-hidden']">
               <div class="column is-4 is-offset-4 username-form">
-                <h1 class="title is-5 signup-title has-text-centered">
-                  Pick a username
-                </h1>
+                <h1 class="title is-5 signup-title has-text-centered">Pick a username</h1>
                 <h2 class="subtitle signup-subtitle has-text-centered">
-                  Your username is how others will find you on Vuero so pick a
-                  good one. You can change it later.
+                  Your username is how others will find you on Vuero so pick a good one.
+                  You can change it later.
                 </h2>
                 <form class="signup-form" @submit.prevent="handleSignup">
                   <div class="columns is-multiline">
                     <div class="column is-12">
                       <VField>
                         <VControl>
-                          <input
-                            type="text"
-                            class="input"
-                            autocomplete="username"
-                          />
+                          <input type="text" class="input" autocomplete="username" />
                           <div class="auth-label">Username</div>
                         </VControl>
                       </VField>
@@ -400,14 +338,9 @@ onUnmounted(() => {
                       <VField>
                         <VControl class="has-switch">
                           <label for="send-marketing">
-                            <span>
-                              Send me marketing and transaction emails
-                            </span>
+                            <span> Send me marketing and transaction emails </span>
                           </label>
-                          <label
-                            for="send-marketing"
-                            class="form-switch ml-auto"
-                          >
+                          <label for="send-marketing" class="form-switch ml-auto">
                             <input
                               id="send-marketing"
                               type="checkbox"
@@ -489,13 +422,12 @@ onUnmounted(() => {
 </template>
 
 <style lang="scss">
-@import '../../scss/abstracts/_mixins.scss';
-@import '../../scss/pages/profile/_user-profile.scss';
+@import '../../scss/abstracts/mixins';
+@import '../../scss/pages/profile/user-profile';
 
 /* ==========================================================================
 4. Sign up
 ========================================================================== */
-
 .signup-nav {
   position: fixed;
   top: 0;
@@ -660,7 +592,7 @@ onUnmounted(() => {
     transition: all 0.3s;
 
     &.faded {
-      opacity: 0;
+      opacity: 0%;
     }
   }
 
@@ -860,7 +792,7 @@ onUnmounted(() => {
     }
 
     .button-wrap {
-      margin: 20px 0 0 0;
+      margin: 20px 0 0;
 
       &.has-help {
         display: flex;
@@ -895,7 +827,7 @@ onUnmounted(() => {
 
         &:first-child {
           &:hover {
-            opacity: 0.95;
+            opacity: 95%;
             box-shadow: var(--primary-box-shadow);
           }
         }
@@ -911,7 +843,7 @@ onUnmounted(() => {
       display: flex;
       align-items: center;
 
-      //margin-top: 16px;
+      // margin-top: 16px;
 
       .box-wrap {
         width: 100%;
@@ -923,7 +855,7 @@ onUnmounted(() => {
           left: 0;
           width: 100%;
           height: 100%;
-          opacity: 0;
+          opacity: 0%;
           cursor: pointer;
 
           &:checked + .signup-box {
@@ -988,7 +920,7 @@ onUnmounted(() => {
 }
 
 .signup-profile-wrapper {
-  padding: 80px 60px 10px 60px;
+  padding: 80px 60px 10px;
 
   .title,
   .subtitle {
@@ -1058,11 +990,12 @@ onUnmounted(() => {
 
 .avatar-carousel {
   text-align: center;
+
   // max-width: 550px;
   // margin: 0 auto 20px auto;
 
   &:hover .slick-custom {
-    opacity: 1;
+    opacity: 100%;
   }
 
   .carousel-item {
@@ -1096,14 +1029,14 @@ onUnmounted(() => {
     }
 
     img {
-      opacity: 0.6;
+      opacity: 60%;
       border: 4px solid transparent;
       transform: scale(0.75);
     }
 
     &.active {
       img {
-        opacity: 1;
+        opacity: 100%;
         transform: scale(1);
         border: 2px solid var(--primary);
       }
@@ -1134,7 +1067,7 @@ onUnmounted(() => {
     color: var(--dark-text);
     transition: all 0.3s;
     z-index: 25;
-    opacity: 0;
+    opacity: 0%;
 
     svg {
       height: 16px;
@@ -1161,7 +1094,7 @@ onUnmounted(() => {
 
 .resize-handler {
   max-width: 200px;
-  margin: 7px auto 10px auto;
+  margin: 7px auto 10px;
 }
 
 .username-form {
@@ -1206,7 +1139,7 @@ onUnmounted(() => {
 
           .step-label {
             color: var(--primary);
-            opacity: 1;
+            opacity: 100%;
           }
         }
 
@@ -1217,7 +1150,7 @@ onUnmounted(() => {
 
         .step-label {
           color: var(--dark-dark-text);
-          opacity: 0.6;
+          opacity: 60%;
         }
       }
     }

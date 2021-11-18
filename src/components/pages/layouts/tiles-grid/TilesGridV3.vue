@@ -20,12 +20,7 @@ const filteredData = computed(() => {
 })
 
 const valueSingle = ref(0)
-const optionsSingle = [
-  'All Posts',
-  'Recent Posts',
-  'Older Posts',
-  'Popular Posts',
-]
+const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Posts']
 </script>
 
 <template>
@@ -87,9 +82,7 @@ const optionsSingle = [
               <img
                 src="/demo/photos/11.jpg"
                 alt=""
-                @error.once="
-                  (event) => useViaPlaceholderError(event, '400x300')
-                "
+                @error.once="(event) => useViaPlaceholderError(event, '400x300')"
               />
               <div class="meta">
                 <div class="tile-title">
@@ -97,16 +90,14 @@ const optionsSingle = [
                     How to serve coffee at the office the proper way
                   </h3>
                   <p class="h-hidden-tablet-l h-hidden-desktop">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Optime, inquam. Duo Reges constructio.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Optime,
+                    inquam. Duo Reges constructio.
                   </p>
                 </div>
                 <div class="tile-meta">
                   <VAvatar picture="/demo/avatars/39.jpg" size="small" />
                   <div class="meta-inner">
-                    <span class="dark-inverted" data-filter-match>
-                      Alejandro B.</span
-                    >
+                    <span class="dark-inverted" data-filter-match> Alejandro B.</span>
                     <span>30 minutes ago</span>
                   </div>
                 </div>
@@ -120,9 +111,7 @@ const optionsSingle = [
               <img
                 src="/demo/photos/12.jpg"
                 alt=""
-                @error.once="
-                  (event) => useViaPlaceholderError(event, '400x300')
-                "
+                @error.once="(event) => useViaPlaceholderError(event, '400x300')"
               />
               <div class="meta">
                 <div class="tile-title">
@@ -130,16 +119,14 @@ const optionsSingle = [
                     Teamwork can dramatically increase productivity
                   </h3>
                   <p class="h-hidden-tablet-l h-hidden-desktop">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Optime, inquam. Duo Reges constructio.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Optime,
+                    inquam. Duo Reges constructio.
                   </p>
                 </div>
                 <div class="tile-meta">
                   <VAvatar picture="/demo/avatars/15.jpg" size="small" />
                   <div class="meta-inner">
-                    <span class="dark-inverted" data-filter-match>
-                      Hilde V.</span
-                    >
+                    <span class="dark-inverted" data-filter-match> Hilde V.</span>
                     <span>4 hours ago</span>
                   </div>
                 </div>
@@ -153,9 +140,7 @@ const optionsSingle = [
               <img
                 src="/demo/photos/13.jpg"
                 alt=""
-                @error.once="
-                  (event) => useViaPlaceholderError(event, '400x300')
-                "
+                @error.once="(event) => useViaPlaceholderError(event, '400x300')"
               />
               <div class="meta">
                 <div class="tile-title">
@@ -163,16 +148,14 @@ const optionsSingle = [
                     Is team building a scam or the next thing?
                   </h3>
                   <p class="h-hidden-tablet-l h-hidden-desktop">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Optime, inquam. Duo Reges constructio.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Optime,
+                    inquam. Duo Reges constructio.
                   </p>
                 </div>
                 <div class="tile-meta">
                   <VAvatar picture="/demo/avatars/24.jpg" size="small" />
                   <div class="meta-inner">
-                    <span class="dark-inverted" data-filter-match>
-                      Sandrine C.</span
-                    >
+                    <span class="dark-inverted" data-filter-match> Sandrine C.</span>
                     <span>5 hours ago</span>
                   </div>
                 </div>
@@ -191,27 +174,22 @@ const optionsSingle = [
                   <img
                     src="/demo/photos/14.jpg"
                     alt=""
-                    @error.once="
-                      (event) => useViaPlaceholderError(event, '400x300')
-                    "
+                    @error.once="(event) => useViaPlaceholderError(event, '400x300')"
                   />
                   <div class="meta">
                     <div class="tile-title">
                       <h3 class="dark-inverted" data-filter-match>
-                        3 things you should know when applying for developer
-                        jobs
+                        3 things you should know when applying for developer jobs
                       </h3>
                       <p class="h-hidden-tablet-l h-hidden-desktop">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Optime, inquam. Duo Reges constructio.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Optime,
+                        inquam. Duo Reges constructio.
                       </p>
                     </div>
                     <div class="tile-meta">
                       <VAvatar picture="/demo/avatars/27.jpg" size="small" />
                       <div class="meta-inner">
-                        <span class="dark-inverted" data-filter-match>
-                          Carmen E.</span
-                        >
+                        <span class="dark-inverted" data-filter-match> Carmen E.</span>
                         <span>8 hours ago</span>
                       </div>
                     </div>
@@ -223,27 +201,22 @@ const optionsSingle = [
                   <img
                     src="/demo/photos/15.jpg"
                     alt=""
-                    @error.once="
-                      (event) => useViaPlaceholderError(event, '400x300')
-                    "
+                    @error.once="(event) => useViaPlaceholderError(event, '400x300')"
                   />
                   <div class="meta">
                     <div class="tile-title">
                       <h3 class="dark-inverted" data-filter-match>
-                        The construction business massively invests in mobile
-                        apps
+                        The construction business massively invests in mobile apps
                       </h3>
                       <p class="h-hidden-tablet-l h-hidden-desktop">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Optime, inquam. Duo Reges constructio.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Optime,
+                        inquam. Duo Reges constructio.
                       </p>
                     </div>
                     <div class="tile-meta">
                       <VAvatar picture="/demo/avatars/10.jpg" size="small" />
                       <div class="meta-inner">
-                        <span class="dark-inverted" data-filter-match>
-                          Henry G.</span
-                        >
+                        <span class="dark-inverted" data-filter-match> Henry G.</span>
                         <span>1 day ago</span>
                       </div>
                     </div>
@@ -257,9 +230,7 @@ const optionsSingle = [
                   <img
                     src="/demo/photos/16.jpg"
                     alt=""
-                    @error.once="
-                      (event) => useViaPlaceholderError(event, '400x300')
-                    "
+                    @error.once="(event) => useViaPlaceholderError(event, '400x300')"
                   />
                   <div class="meta">
                     <div class="tile-title">
@@ -267,16 +238,14 @@ const optionsSingle = [
                         Finding the right spot for your startup
                       </h3>
                       <p class="h-hidden-tablet-l h-hidden-desktop">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Optime, inquam. Duo Reges constructio.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Optime,
+                        inquam. Duo Reges constructio.
                       </p>
                     </div>
                     <div class="tile-meta">
                       <VAvatar picture="/demo/avatars/22.jpg" size="small" />
                       <div class="meta-inner">
-                        <span class="dark-inverted" data-filter-match>
-                          Jimmy H.</span
-                        >
+                        <span class="dark-inverted" data-filter-match> Jimmy H.</span>
                         <span>1 day ago</span>
                       </div>
                     </div>
@@ -291,9 +260,7 @@ const optionsSingle = [
                 <img
                   src="/demo/photos/18.jpg"
                   alt=""
-                  @error.once="
-                    (event) => useViaPlaceholderError(event, '400x300')
-                  "
+                  @error.once="(event) => useViaPlaceholderError(event, '400x300')"
                 />
                 <div class="meta">
                   <div class="tile-title">
@@ -301,20 +268,18 @@ const optionsSingle = [
                       4 tips to make your business lunches awesome
                     </h3>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Optime, inquam. Duo Reges constructio.
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Optime,
+                      inquam. Duo Reges constructio.
                     </p>
                     <p class="h-hidden-mobile h-hidden-tablet-p">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Optime, inquam. Duo Reges constructio.
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Optime,
+                      inquam. Duo Reges constructio.
                     </p>
                   </div>
                   <div class="tile-meta">
                     <VAvatar picture="/demo/avatars/16.jpg" size="small" />
                     <div class="meta-inner">
-                      <span class="dark-inverted" data-filter-match>
-                        Jason G.</span
-                      >
+                      <span class="dark-inverted" data-filter-match> Jason G.</span>
                       <span>2 days ago</span>
                     </div>
                   </div>
@@ -329,9 +294,7 @@ const optionsSingle = [
               <img
                 src="/demo/photos/19.jpg"
                 alt=""
-                @error.once="
-                  (event) => useViaPlaceholderError(event, '400x300')
-                "
+                @error.once="(event) => useViaPlaceholderError(event, '400x300')"
               />
               <div class="meta">
                 <div class="tile-title">
@@ -339,20 +302,18 @@ const optionsSingle = [
                     Setting up a design system for your app project
                   </h3>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Optime, inquam. Duo Reges constructio.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Optime,
+                    inquam. Duo Reges constructio.
                   </p>
                   <p class="h-hidden-mobile h-hidden-tablet-p">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Optime, inquam. Duo Reges constructio.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Optime,
+                    inquam. Duo Reges constructio.
                   </p>
                 </div>
                 <div class="tile-meta">
                   <VAvatar picture="/demo/avatars/26.jpg" size="small" />
                   <div class="meta-inner">
-                    <span class="dark-inverted" data-filter-match>
-                      Courtney W.</span
-                    >
+                    <span class="dark-inverted" data-filter-match> Courtney W.</span>
                     <span>2 days ago</span>
                   </div>
                 </div>
@@ -369,9 +330,7 @@ const optionsSingle = [
               <img
                 src="/demo/photos/20.jpg"
                 alt=""
-                @error.once="
-                  (event) => useViaPlaceholderError(event, '400x300')
-                "
+                @error.once="(event) => useViaPlaceholderError(event, '400x300')"
               />
               <div class="meta">
                 <div class="tile-title">
@@ -379,15 +338,12 @@ const optionsSingle = [
                     Foundation of a great E-Learning system
                   </h3>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Optime, inquam. Duo Reges constructio.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Optime,
+                    inquam. Duo Reges constructio.
                   </p>
                 </div>
                 <div class="tile-meta">
-                  <VAvatar
-                    picture="/images/avatars/svg/vuero-1.svg"
-                    size="small"
-                  />
+                  <VAvatar picture="/images/avatars/svg/vuero-1.svg" size="small" />
                   <div class="meta-inner">
                     <span class="dark-inverted" data-filter-match>Erik K.</span>
                     <span>2 days ago</span>
@@ -403,9 +359,7 @@ const optionsSingle = [
               <img
                 src="/demo/photos/23.jpg"
                 alt=""
-                @error.once="
-                  (event) => useViaPlaceholderError(event, '400x300')
-                "
+                @error.once="(event) => useViaPlaceholderError(event, '400x300')"
               />
               <div class="meta">
                 <div class="tile-title">
@@ -413,16 +367,14 @@ const optionsSingle = [
                     Why it pays to profile your customers
                   </h3>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Optime, inquam. Duo Reges constructio.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Optime,
+                    inquam. Duo Reges constructio.
                   </p>
                 </div>
                 <div class="tile-meta">
                   <VAvatar picture="/demo/avatars/40.jpg" size="small" />
                   <div class="meta-inner">
-                    <span class="dark-inverted" data-filter-match>
-                      Jeanne M.</span
-                    >
+                    <span class="dark-inverted" data-filter-match> Jeanne M.</span>
                     <span>3 days ago</span>
                   </div>
                 </div>
@@ -439,9 +391,7 @@ const optionsSingle = [
               <img
                 src="/demo/photos/22.jpg"
                 alt=""
-                @error.once="
-                  (event) => useViaPlaceholderError(event, '400x300')
-                "
+                @error.once="(event) => useViaPlaceholderError(event, '400x300')"
               />
               <div class="meta">
                 <div class="tile-title">
@@ -449,8 +399,8 @@ const optionsSingle = [
                     Using flashy colors in your websites and apps
                   </h3>
                   <p class="h-hidden-tablet-l h-hidden-desktop">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Optime, inquam. Duo Reges constructio.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Optime,
+                    inquam. Duo Reges constructio.
                   </p>
                 </div>
                 <div class="tile-meta">
@@ -470,9 +420,7 @@ const optionsSingle = [
               <img
                 src="/demo/photos/24.jpg"
                 alt=""
-                @error.once="
-                  (event) => useViaPlaceholderError(event, '400x300')
-                "
+                @error.once="(event) => useViaPlaceholderError(event, '400x300')"
               />
               <div class="meta">
                 <div class="tile-title">
@@ -480,16 +428,14 @@ const optionsSingle = [
                     Building a consistent and talented team
                   </h3>
                   <p class="h-hidden-tablet-l h-hidden-desktop">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Optime, inquam. Duo Reges constructio.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Optime,
+                    inquam. Duo Reges constructio.
                   </p>
                 </div>
                 <div class="tile-meta">
                   <VAvatar picture="/demo/avatars/19.jpg" size="small" />
                   <div class="meta-inner">
-                    <span class="dark-inverted" data-filter-match>
-                      Greta K.</span
-                    >
+                    <span class="dark-inverted" data-filter-match> Greta K.</span>
                     <span>3 days ago</span>
                   </div>
                 </div>
@@ -503,9 +449,7 @@ const optionsSingle = [
               <img
                 src="/demo/photos/27.jpg"
                 alt=""
-                @error.once="
-                  (event) => useViaPlaceholderError(event, '400x300')
-                "
+                @error.once="(event) => useViaPlaceholderError(event, '400x300')"
               />
               <div class="meta">
                 <div class="tile-title">
@@ -513,16 +457,14 @@ const optionsSingle = [
                     Diving into building an e-commerce brand - part 1
                   </h3>
                   <p class="h-hidden-tablet-l h-hidden-desktop">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Optime, inquam. Duo Reges constructio.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Optime,
+                    inquam. Duo Reges constructio.
                   </p>
                 </div>
                 <div class="tile-meta">
                   <VAvatar picture="/demo/avatars/33.jpg" size="small" />
                   <div class="meta-inner">
-                    <span class="dark-inverted" data-filter-match>
-                      Harvey M.</span
-                    >
+                    <span class="dark-inverted" data-filter-match> Harvey M.</span>
                     <span>4 days ago</span>
                   </div>
                 </div>
@@ -536,7 +478,7 @@ const optionsSingle = [
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/abstracts/mixins';
 
 .tile-grid {
   .columns {
@@ -564,7 +506,7 @@ const optionsSingle = [
   }
 
   .tile-grid-item {
-    @include vuero-s-card();
+    @include vuero-s-card;
 
     padding: 10px;
     border-radius: 16px;
@@ -609,7 +551,7 @@ const optionsSingle = [
             display: flex;
             align-items: center;
             margin-top: auto;
-            padding: 0 0 5px 0;
+            padding: 0 0 5px;
 
             .v-avatar {
               max-width: 26px;
@@ -687,7 +629,7 @@ const optionsSingle = [
             display: flex;
             align-items: center;
             margin-top: auto;
-            padding: 0 0 5px 0;
+            padding: 0 0 5px;
 
             .v-avatar {
               max-width: 26px;
@@ -769,7 +711,7 @@ const optionsSingle = [
             display: flex;
             align-items: center;
             margin-top: auto;
-            padding: 0 0 5px 0;
+            padding: 0 0 5px;
 
             .v-avatar {
               max-width: 26px;
@@ -819,7 +761,7 @@ const optionsSingle = [
           border-radius: 12px;
           width: 100%;
 
-          //max-width: 110px;
+          // max-width: 110px;
           height: 220px;
           object-fit: cover;
         }
@@ -853,7 +795,7 @@ const optionsSingle = [
             display: flex;
             align-items: center;
             margin-top: auto;
-            padding: 0 0 5px 0;
+            padding: 0 0 5px;
 
             .v-avatar {
               max-width: 26px;
@@ -897,12 +839,13 @@ const optionsSingle = [
 .is-dark {
   .tile-grid {
     .tile-grid-item {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
     }
   }
+
   .tile-grid-v3 {
     .tile-grid-item {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
     }
   }
 }
@@ -953,7 +896,7 @@ const optionsSingle = [
             display: flex !important;
             align-items: center !important;
             margin-top: auto !important;
-            padding: 0 0 5px 0 !important;
+            padding: 0 0 5px !important;
 
             .v-avatar {
               max-width: 26px !important;
@@ -1041,7 +984,7 @@ const optionsSingle = [
             display: flex !important;
             align-items: center !important;
             margin-top: auto !important;
-            padding: 0 0 5px 0 !important;
+            padding: 0 0 5px !important;
 
             .v-avatar {
               max-width: 26px !important;

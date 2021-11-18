@@ -41,18 +41,15 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
       <!--Widget-->
       <UIWidget class="text-widget">
         <template #header>
-          <UIWidgetToolbarFollowers
-            title="New Followers"
-            :avatars="followersList"
-          />
+          <UIWidgetToolbarFollowers title="New Followers" :avatars="followersList" />
         </template>
         <template #body>
           <div class="widget-content">
             <p>
               Great News! <span>{{ followersList[0].name }}</span
               >, <span>{{ followersList[1].name }}</span> and
-              <span>{{ followersList[2].name }}</span> are now following you.
-              Take some time to look at their profile.
+              <span>{{ followersList[2].name }}</span> are now following you. Take some
+              time to look at their profile.
             </p>
           </div>
         </template>
@@ -65,11 +62,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
             <div class="control">
               <input type="text" class="input" placeholder="Search..." />
               <button class="searcv-button">
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:search"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
               </button>
             </div>
 
@@ -227,8 +220,8 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
         <template #body>
           <div class="widget-content">
             <p>
-              You have an upcoming payment for your recurring subscription fee
-              due on <span>Sept 20, 2020</span>.
+              You have an upcoming payment for your recurring subscription fee due on
+              <span>Sept 20, 2020</span>.
             </p>
           </div>
         </template>
@@ -243,9 +236,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
             @error.once="(event) => useViaPlaceholderError(event, '400x300')"
           />
           <div class="progress-wrap">
-            <progress class="progress is-primary is-tiny" max="100">
-              55%
-            </progress>
+            <progress class="progress is-primary is-tiny" max="100">55%</progress>
           </div>
         </template>
       </UIWidget>
@@ -325,8 +316,8 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
           <div class="widget-content">
             <p>
               You currently have more than
-              <span>10 unread messages</span> in your inbox. It could be a good
-              time to check them out.
+              <span>10 unread messages</span> in your inbox. It could be a good time to
+              check them out.
             </p>
           </div>
         </template>
@@ -336,6 +327,6 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
-@import '../../../../scss/pages/generic/_widgets-lists.scss';
+@import '../../../../scss/abstracts/mixins';
+@import '../../../../scss/pages/generic/widgets-lists';
 </style>

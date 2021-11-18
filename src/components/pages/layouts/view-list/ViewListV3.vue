@@ -90,19 +90,13 @@ const filteredData = computed(() => {
           <div class="list-view-inner">
             <transition-group name="list-complete" tag="div">
               <!--Item-->
-              <div
-                v-for="item in filteredData"
-                :key="item.id"
-                class="list-view-item"
-              >
+              <div v-for="item in filteredData" :key="item.id" class="list-view-item">
                 <div class="list-view-item-inner">
                   <img
                     class="avatar"
                     :src="item.logo"
                     alt=""
-                    @error.once="
-                      (event) => useViaPlaceholderError(event, '150x150')
-                    "
+                    @error.once="(event) => useViaPlaceholderError(event, '150x150')"
                   />
                   <div class="meta-left">
                     <h3>
@@ -115,20 +109,10 @@ const filteredData = computed(() => {
                         data-icon="feather:map-pin"
                       ></i>
                       <span>{{ item.location }}</span>
-                      <i
-                        aria-hidden="true"
-                        class="fas fa-circle icon-separator"
-                      ></i>
-                      <i
-                        aria-hidden="true"
-                        class="iconify"
-                        data-icon="feather:clock"
-                      ></i>
+                      <i aria-hidden="true" class="fas fa-circle icon-separator"></i>
+                      <i aria-hidden="true" class="iconify" data-icon="feather:clock"></i>
                       <span>{{ item.duration }}</span>
-                      <i
-                        aria-hidden="true"
-                        class="fas fa-circle icon-separator"
-                      ></i>
+                      <i aria-hidden="true" class="fas fa-circle icon-separator"></i>
                       <i
                         aria-hidden="true"
                         class="iconify"
@@ -139,9 +123,7 @@ const filteredData = computed(() => {
                   </div>
                   <div class="meta-right">
                     <div class="buttons">
-                      <VButton color="primary" outlined raised>
-                        Apply Now
-                      </VButton>
+                      <VButton color="primary" outlined raised> Apply Now </VButton>
 
                       <VIconButton
                         icon="feather:bookmark"
@@ -200,11 +182,11 @@ const filteredData = computed(() => {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/abstracts/mixins';
 
 .list-view-v3 {
   .list-view-item {
-    @include vuero-r-card();
+    @include vuero-r-card;
 
     margin-bottom: 16px;
     padding: 16px;
@@ -277,7 +259,7 @@ const filteredData = computed(() => {
 .is-dark {
   .list-view-v3 {
     .list-view-item {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
 
       .list-view-item-inner {
         > img {
@@ -354,7 +336,7 @@ const filteredData = computed(() => {
         }
 
         .meta-right {
-          margin: 16px 0 0 0;
+          margin: 16px 0 0;
           width: 100%;
 
           .buttons {

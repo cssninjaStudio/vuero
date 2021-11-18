@@ -13,8 +13,8 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
       <h3 class="title is-4 is-narrow is-thin">Erik Kovalsky</h3>
       <p class="light-text">
-        Hey everyone, Iam a product manager from New York and Iam looking for
-        new opportunities in the software business.
+        Hey everyone, Iam a product manager from New York and Iam looking for new
+        opportunities in the software business.
       </p>
       <div class="profile-stats">
         <div class="profile-stat">
@@ -48,21 +48,18 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
               </div>
               <div class="section-content">
                 <p class="description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Falli
-                  igitur possumus. Praeteritis, inquit, gaudeo. Duo Reges:
-                  constructio interrete. Idemne, quod iucunde? Quis enim
-                  redargueret? Non semper, inquam; Quid nunc honeste dicit? Eam
-                  tum adesse, cum dolor omnis absit; Negat enim summo bono
-                  afferre incrementum diem.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Falli igitur
+                  possumus. Praeteritis, inquit, gaudeo. Duo Reges: constructio interrete.
+                  Idemne, quod iucunde? Quis enim redargueret? Non semper, inquam; Quid
+                  nunc honeste dicit? Eam tum adesse, cum dolor omnis absit; Negat enim
+                  summo bono afferre incrementum diem.
                 </p>
               </div>
             </div>
             <div class="profile-card-section">
               <div class="section-title">
                 <h4>Experience</h4>
-                <RouterLink
-                  :to="{ name: 'sidebar-layouts-profile-edit-experience' }"
-                >
+                <RouterLink :to="{ name: 'sidebar-layouts-profile-edit-experience' }">
                   <i aria-hidden="true" class="lnil lnil-pencil"></i>
                 </RouterLink>
               </div>
@@ -72,9 +69,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                     <img
                       src="/demo/photos/brands/airbnb.svg"
                       alt=""
-                      @error.once="
-                        (event) => useViaPlaceholderError(event, '150x150')
-                      "
+                      @error.once="(event) => useViaPlaceholderError(event, '150x150')"
                     />
                     <div class="meta">
                       <span class="dark-inverted">Airbnb HQ</span>
@@ -90,9 +85,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                     <img
                       src="/demo/photos/brands/facebook.svg"
                       alt=""
-                      @error.once="
-                        (event) => useViaPlaceholderError(event, '150x150')
-                      "
+                      @error.once="(event) => useViaPlaceholderError(event, '150x150')"
                     />
                     <div class="meta">
                       <span class="dark-inverted">Facebook</span>
@@ -108,9 +101,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                     <img
                       src="/demo/photos/brands/atlassian.svg"
                       alt=""
-                      @error.once="
-                        (event) => useViaPlaceholderError(event, '150x150')
-                      "
+                      @error.once="(event) => useViaPlaceholderError(event, '150x150')"
                     />
                     <div class="meta">
                       <span class="dark-inverted">Atlassian</span>
@@ -126,9 +117,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                     <img
                       src="/demo/photos/brands/github.svg"
                       alt=""
-                      @error.once="
-                        (event) => useViaPlaceholderError(event, '150x150')
-                      "
+                      @error.once="(event) => useViaPlaceholderError(event, '150x150')"
                     />
                     <div class="meta">
                       <span class="dark-inverted">Github</span>
@@ -149,18 +138,14 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
             <div class="profile-card-section">
               <div class="section-title">
                 <h4>Languages</h4>
-                <RouterLink
-                  :to="{ name: 'sidebar-layouts-profile-edit-skills' }"
-                >
+                <RouterLink :to="{ name: 'sidebar-layouts-profile-edit-skills' }">
                   <i aria-hidden="true" class="lnil lnil-pencil"></i>
                 </RouterLink>
               </div>
               <div class="section-content">
                 <div class="languages-wrapper">
                   <div class="languages-item">
-                    <VIconWrap
-                      picture="/images/icons/flags/united-states-of-america.svg"
-                    >
+                    <VIconWrap picture="/images/icons/flags/united-states-of-america.svg">
                       <template #after>
                         <VPeity
                           type="donut"
@@ -244,9 +229,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
             <div class="profile-card-section">
               <div class="section-title">
                 <h4>Skills</h4>
-                <RouterLink
-                  :to="{ name: 'sidebar-layouts-profile-edit-skills' }"
-                >
+                <RouterLink :to="{ name: 'sidebar-layouts-profile-edit-skills' }">
                   <i aria-hidden="true" class="lnil lnil-pencil"></i>
                 </RouterLink>
               </div>
@@ -347,9 +330,8 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                     />
                     <h3 class="dark-inverted">Project Manager</h3>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      At multis malis affectus. Certe, nisi voluptatem tanti
-                      aestimaretis.
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. At multis
+                      malis affectus. Certe, nisi voluptatem tanti aestimaretis.
                     </p>
                     <div class="meta">
                       <span>Mary L.</span>
@@ -367,9 +349,8 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
                     <h3 class="dark-inverted">UI/UX Designer</h3>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      At multis malis affectus. Certe, nisi voluptatem tanti
-                      aestimaretis.
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. At multis
+                      malis affectus. Certe, nisi voluptatem tanti aestimaretis.
                     </p>
                     <div class="meta">
                       <span>Esteban C.</span>
@@ -398,8 +379,8 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                 <div class="network-notifications">
                   <h3 class="dark-inverted">Notify Your Network?</h3>
                   <p>
-                    Enable or disable this setting to manage if your network
-                    should be notified when you make changes to your profile.
+                    Enable or disable this setting to manage if your network should be
+                    notified when you make changes to your profile.
                   </p>
                 </div>
               </div>
@@ -411,9 +392,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
             <div class="profile-card-section no-padding">
               <div class="section-title">
                 <h4>Tools</h4>
-                <RouterLink
-                  :to="{ name: 'sidebar-layouts-profile-edit-skills' }"
-                >
+                <RouterLink :to="{ name: 'sidebar-layouts-profile-edit-skills' }">
                   <i aria-hidden="true" class="lnil lnil-pencil"></i>
                 </RouterLink>
                 <a class="action-link">View All</a>
@@ -571,8 +550,8 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
-@import '../../../../scss/pages/profile/_user-profile.scss';
+@import '../../../../scss/abstracts/mixins';
+@import '../../../../scss/pages/profile/user-profile';
 
 .is-dark {
   .icon-wrap,

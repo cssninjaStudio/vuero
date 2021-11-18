@@ -120,22 +120,13 @@ const optionsSingle = [
                   </span>
                   <span>37 tasks remaining</span>
                 </div>
-                <div
-                  v-if="item.status === 'synced'"
-                  class="status-icon is-success"
-                >
+                <div v-if="item.status === 'synced'" class="status-icon is-success">
                   <i aria-hidden="true" class="fas fa-check"></i>
                 </div>
-                <div
-                  v-if="item.status === 'overdue'"
-                  class="status-icon is-warning"
-                >
+                <div v-if="item.status === 'overdue'" class="status-icon is-warning">
                   <i aria-hidden="true" class="fas fa-exclamation"></i>
                 </div>
-                <div
-                  v-if="item.status === 'blocked'"
-                  class="status-icon is-danger"
-                >
+                <div v-if="item.status === 'blocked'" class="status-icon is-danger">
                   <i aria-hidden="true" class="fas fa-times"></i>
                 </div>
               </div>
@@ -152,11 +143,7 @@ const optionsSingle = [
                 </button>
                 <button class="button v-button is-dark-outlined">
                   <span class="icon">
-                    <i
-                      aria-hidden="true"
-                      class="iconify"
-                      data-icon="feather:file"
-                    ></i>
+                    <i aria-hidden="true" class="iconify" data-icon="feather:file"></i>
                   </span>
                   <span>Files</span>
                 </button>
@@ -179,11 +166,7 @@ const optionsSingle = [
               <div class="buttons">
                 <button class="button v-button is-dark-outlined">
                   <span class="icon">
-                    <i
-                      aria-hidden="true"
-                      class="iconify"
-                      data-icon="feather:user"
-                    ></i>
+                    <i aria-hidden="true" class="iconify" data-icon="feather:user"></i>
                   </span>
                   <span>Profile</span>
                 </button>
@@ -207,7 +190,7 @@ const optionsSingle = [
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/abstracts/mixins';
 
 .user-grid-v2 {
   .columns {
@@ -221,13 +204,13 @@ const optionsSingle = [
   }
 
   .grid-item {
-    @include vuero-s-card();
+    @include vuero-s-card;
 
     text-align: center;
 
     > .v-avatar {
       display: block;
-      margin: 0 auto 4px auto;
+      margin: 0 auto 4px;
     }
 
     h3 {
@@ -244,7 +227,7 @@ const optionsSingle = [
     .people {
       display: flex;
       justify-content: center;
-      padding: 8px 0 30px 0;
+      padding: 8px 0 30px;
 
       .v-avatar {
         margin: 0 4px;
@@ -367,9 +350,10 @@ const optionsSingle = [
 .is-dark {
   .user-grid {
     .grid-item {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
     }
   }
+
   .user-grid-v2 {
     .grid-item-wrap {
       border-color: var(--dark-sidebar-light-12);

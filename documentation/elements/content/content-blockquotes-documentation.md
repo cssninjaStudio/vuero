@@ -13,28 +13,28 @@ Available color modifier classes are `is-primary`, `is-success`,
   <div class="content">
     <blockquote>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ergo, inquit,
-        tibi Q. Est enim effectrix multarum et magnarum voluptatum. Equidem, sed
-        audistine modo de Carneade? Dici enim nihil potest verius. Praeteritis,
-        inquit, gaudeo. Aliter autem vobis placet.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ergo, inquit, tibi Q. Est
+        enim effectrix multarum et magnarum voluptatum. Equidem, sed audistine modo de
+        Carneade? Dici enim nihil potest verius. Praeteritis, inquit, gaudeo. Aliter autem
+        vobis placet.
       </p>
     </blockquote>
 
     <blockquote class="is-primary">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ergo, inquit,
-        tibi Q. Est enim effectrix multarum et magnarum voluptatum. Equidem, sed
-        audistine modo de Carneade? Dici enim nihil potest verius. Praeteritis,
-        inquit, gaudeo. Aliter autem vobis placet.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ergo, inquit, tibi Q. Est
+        enim effectrix multarum et magnarum voluptatum. Equidem, sed audistine modo de
+        Carneade? Dici enim nihil potest verius. Praeteritis, inquit, gaudeo. Aliter autem
+        vobis placet.
       </p>
     </blockquote>
 
     <blockquote class="is-success">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ergo, inquit,
-        tibi Q. Est enim effectrix multarum et magnarum voluptatum. Equidem, sed
-        audistine modo de Carneade? Dici enim nihil potest verius. Praeteritis,
-        inquit, gaudeo. Aliter autem vobis placet.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ergo, inquit, tibi Q. Est
+        enim effectrix multarum et magnarum voluptatum. Equidem, sed audistine modo de
+        Carneade? Dici enim nihil potest verius. Praeteritis, inquit, gaudeo. Aliter autem
+        vobis placet.
       </p>
     </blockquote>
   </div>

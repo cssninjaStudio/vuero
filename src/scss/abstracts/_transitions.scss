@@ -9,7 +9,7 @@
 
 .fade-fast-enter-from,
 .fade-fast-leave-to {
-  opacity: 0;
+  opacity: 0%;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -30,7 +30,7 @@
 
 .fade-slow-enter-from,
 .fade-slow-leave-to {
-  opacity: 0;
+  opacity: 0%;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -52,11 +52,12 @@
 
 .translate-page-y-enter-from {
   transform: translateY(10px);
-  opacity: 0;
+  opacity: 0%;
 }
+
 .translate-page-y-leave-to {
   transform: translateY(-300px);
-  opacity: 0;
+  opacity: 0%;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -73,6 +74,7 @@
 .translate-page-x-enter-active {
   animation: translate-page-x-in 0.2s cubic-bezier(0.25, 1, 0.5, 1);
 }
+
 .translate-page-x-leave-active {
   animation: translate-page-x-out 0.2s cubic-bezier(0.25, 1, 0.5, 1);
 }
@@ -80,21 +82,23 @@
 @keyframes translate-page-x-in {
   0% {
     transform: translateX(-200px);
-    opacity: 0;
+    opacity: 0%;
   }
+
   100% {
     transform: translateX(0);
-    opacity: 1;
+    opacity: 100%;
   }
 }
 @keyframes translate-page-x-out {
   0% {
     transform: translateX(0);
-    opacity: 1;
+    opacity: 100%;
   }
+
   100% {
     transform: translateX(500px);
-    opacity: 0;
+    opacity: 0%;
   }
 }
 
@@ -113,13 +117,15 @@
   display: inline-block;
   margin-right: 10px;
 }
+
 .list-enter-active,
 .list-leave-active {
   transition: all 0.4s ease;
 }
+
 .list-enter-from,
 .list-leave-to {
-  opacity: 0;
+  opacity: 0%;
   transform: translateY(30px);
 }
 
@@ -142,7 +148,7 @@
 
 .list-complete-enter-from,
 .list-complete-leave-to {
-  opacity: 0;
+  opacity: 0%;
   transform: translateY(30px);
 }
 
@@ -172,6 +178,7 @@
 .slide-x-enter-from {
   transform: translateX(-100%);
 }
+
 .slide-x-enter-to {
   transform: translateX(0);
 }
@@ -179,6 +186,7 @@
 .slide-x-leave-from {
   transform: translateX(0);
 }
+
 .slide-x-leave-to {
   transform: translateX(-100%);
 }
@@ -197,7 +205,7 @@
 
 .from-bottom-enter-active,
 .from-bottom-leave-active {
-  opacity: 1;
+  opacity: 100%;
   transform: translateY(0);
   transition: opacity 0.2s ease, transform 0.3s ease;
 }
@@ -205,7 +213,7 @@
 .from-bottom-enter-from,
 .from-bottom-leave-to {
   transform: translateY(100%);
-  opacity: 0;
+  opacity: 0%;
 }
 
 @media (prefers-reduced-motion: reduce) {

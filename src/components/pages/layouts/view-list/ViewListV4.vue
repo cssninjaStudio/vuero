@@ -109,11 +109,7 @@ const filteredData = computed(() => {
         <div class="list-view-inner">
           <transition-group name="list-complete" tag="div">
             <!--Item-->
-            <div
-              v-for="(item, key) in filteredData"
-              :key="key"
-              class="list-view-item"
-            >
+            <div v-for="(item, key) in filteredData" :key="key" class="list-view-item">
               <div class="list-view-item-inner">
                 <div class="pre-meta">
                   <h3>{{ item.name }}</h3>
@@ -122,9 +118,7 @@ const filteredData = computed(() => {
                   class="avatar"
                   :src="item.icon"
                   alt=""
-                  @error.once="
-                    (event) => useViaPlaceholderError(event, '150x150')
-                  "
+                  @error.once="(event) => useViaPlaceholderError(event, '150x150')"
                 />
                 <div class="meta-left">
                   <h3>
@@ -132,33 +126,17 @@ const filteredData = computed(() => {
                       class="avatar"
                       :src="item.author.avatar"
                       alt=""
-                      @error.once="
-                        (event) => useViaPlaceholderError(event, '150x150')
-                      "
+                      @error.once="(event) => useViaPlaceholderError(event, '150x150')"
                     />
                     <span>{{ item.author.name }}</span>
                   </h3>
                   <span>
-                    <i
-                      aria-hidden="true"
-                      class="iconify"
-                      data-icon="feather:archive"
-                    ></i>
+                    <i aria-hidden="true" class="iconify" data-icon="feather:archive"></i>
                     <span>{{ item.category }}</span>
-                    <i
-                      aria-hidden="true"
-                      class="fas fa-circle icon-separator"
-                    ></i>
-                    <i
-                      aria-hidden="true"
-                      class="iconify"
-                      data-icon="feather:clock"
-                    ></i>
+                    <i aria-hidden="true" class="fas fa-circle icon-separator"></i>
+                    <i aria-hidden="true" class="iconify" data-icon="feather:clock"></i>
                     <span>{{ item.duration }}</span>
-                    <i
-                      aria-hidden="true"
-                      class="fas fa-circle icon-separator"
-                    ></i>
+                    <i aria-hidden="true" class="fas fa-circle icon-separator"></i>
                     <i
                       aria-hidden="true"
                       class="iconify"
@@ -169,11 +147,7 @@ const filteredData = computed(() => {
                 </div>
                 <div class="meta-right">
                   <div class="network">
-                    <VAvatarStack
-                      :avatars="item.followers"
-                      size="small"
-                      :limit="3"
-                    />
+                    <VAvatarStack :avatars="item.followers" size="small" :limit="3" />
                     <span>Like this</span>
                   </div>
                   <div class="buttons">
@@ -247,11 +221,11 @@ const filteredData = computed(() => {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/abstracts/mixins';
 
 .list-view-v4 {
   .list-view-item {
-    @include vuero-r-card();
+    @include vuero-r-card;
 
     margin-bottom: 16px;
     padding: 16px;
@@ -377,7 +351,7 @@ const filteredData = computed(() => {
 .is-dark {
   .list-view-v4 {
     .list-view-item {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
 
       .list-view-item-inner {
         .pre-meta {
@@ -428,7 +402,7 @@ const filteredData = computed(() => {
         flex-direction: column;
 
         .pre-meta {
-          margin: 0 0 16px 0;
+          margin: 0 0 16px;
 
           h3 {
             text-align: center;
@@ -472,7 +446,7 @@ const filteredData = computed(() => {
         }
 
         .meta-right {
-          margin: 16px 0 0 0;
+          margin: 16px 0 0;
           width: 100%;
 
           .network {
@@ -526,7 +500,7 @@ const filteredData = computed(() => {
         flex-direction: column;
 
         .pre-meta {
-          margin: 0 0 16px 0;
+          margin: 0 0 16px;
 
           h3 {
             margin-right: 0;
@@ -571,7 +545,7 @@ const filteredData = computed(() => {
         }
 
         .meta-right {
-          margin: 16px 0 0 0;
+          margin: 16px 0 0;
           width: 100%;
           justify-content: space-between;
 

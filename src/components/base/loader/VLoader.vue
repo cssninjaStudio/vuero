@@ -28,10 +28,7 @@ const props = withDefaults(defineProps<VLoaderProps>(), {
         card === 'rounded' && 'l-card',
       ]"
     >
-      <div
-        class="loader is-loading"
-        :class="[props.size && `is-${props.size}`]"
-      ></div>
+      <div class="loader is-loading" :class="[props.size && `is-${props.size}`]"></div>
     </div>
 
     <slot></slot>

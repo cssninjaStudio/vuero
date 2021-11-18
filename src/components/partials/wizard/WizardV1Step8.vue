@@ -35,8 +35,8 @@ const validateStep = async () => {
         />
         <h3>Get ready for next steps.</h3>
         <p>
-          You, and the team members you've added can already start working and
-          creating tasks.
+          You, and the team members you've added can already start working and creating
+          tasks.
         </p>
         <div class="button-wrap">
           <VButton color="primary" rounded bold elevated @click="validateStep">

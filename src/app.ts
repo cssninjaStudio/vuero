@@ -124,8 +124,7 @@ export async function createApp({ enhanceApp }: VueroAppOptions) {
       // if not, redirect to login page.
       const notif = useNotyf()
       notif.error({
-        message:
-          'Sorry, you should loggin to access this section (anything will work)',
+        message: 'Sorry, you should loggin to access this section (anything will work)',
         duration: 7000,
       })
 

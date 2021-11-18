@@ -40,11 +40,7 @@ const data = [
       <div class="left">
         <VField>
           <VControl icon="feather:search">
-            <input
-              type="text"
-              class="input is-rounded"
-              placeholder="Filter..."
-            />
+            <input type="text" class="input is-rounded" placeholder="Filter..." />
           </VControl>
         </VField>
       </div>

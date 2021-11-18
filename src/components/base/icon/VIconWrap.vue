@@ -47,14 +47,8 @@ const isIconify = computed(() => {
     :class="[
       props.color && !props.hasBackground && `has-text-${props.color}`,
       props.color && props.hasBackground && `has-background-${props.color}`,
-      props.color &&
-        props.color !== 'white' &&
-        props.hasBackground &&
-        `has-text-white`,
-      props.color &&
-        props.color === 'white' &&
-        props.hasBackground &&
-        `has-text-black`,
+      props.color && props.color !== 'white' && props.hasBackground && `has-text-white`,
+      props.color && props.color === 'white' && props.hasBackground && `has-text-black`,
       props.size && `is-${props.size}`,
       props.dark && !props.hasBackground && `is-dark-bg-${props.dark}`,
       props.darkPrimary && 'is-dark-primary',

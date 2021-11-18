@@ -93,18 +93,13 @@ const optionsSingle = [
               <img
                 :src="item.icon"
                 alt=""
-                @error.once="
-                  (event) => useViaPlaceholderError(event, '150x150')
-                "
+                @error.once="(event) => useViaPlaceholderError(event, '150x150')"
               />
               <div class="meta">
                 <span class="dark-inverted">{{ item.name }}</span>
                 <span>
                   <span>{{ item.size }}</span>
-                  <i
-                    aria-hidden="true"
-                    class="fas fa-circle icon-separator"
-                  ></i>
+                  <i aria-hidden="true" class="fas fa-circle icon-separator"></i>
                   <span>Updated {{ item.updated }}</span>
                 </span>
               </div>
@@ -118,7 +113,7 @@ const optionsSingle = [
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/abstracts/mixins';
 
 .tile-grid {
   .columns {
@@ -134,7 +129,7 @@ const optionsSingle = [
 
 .tile-grid-v2 {
   .tile-grid-item {
-    @include vuero-s-card();
+    @include vuero-s-card;
 
     border-radius: 14px;
     padding: 16px;
@@ -202,12 +197,14 @@ const optionsSingle = [
 .is-dark {
   .tile-grid {
     .tile-grid-item {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
     }
   }
+
   .tile-grid-v2 {
     .tile-grid-item {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
+
       &:hover {
         border-color: var(--primary) !important;
       }

@@ -17,10 +17,7 @@ an image inside the component.
   <VSnack title="Corporate" image="/demo/avatars/7.jpg">
     <i class="iconify" data-icon="feather:x"></i>
   </VSnack>
-  <VSnack
-    title="English"
-    image="/images/icons/flags/united-states-of-america.svg"
-  >
+  <VSnack title="English" image="/images/icons/flags/united-states-of-america.svg">
     <i class="iconify" data-icon="feather:x"></i>
   </VSnack>
   <VSnack title="Slicer" image="/images/icons/logos/slicer.svg">

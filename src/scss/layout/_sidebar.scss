@@ -19,15 +19,15 @@
   background-color: var(--body-color);
   box-shadow: none;
   z-index: 35;
-  transition: border-radius 0.3s ease-in, background-color 0.3s ease-in,
-    top 0.3s ease-in, margin-left 0.3s ease-in, height 0.3s ease-in;
+  transition: border-radius 0.3s ease-in, background-color 0.3s ease-in, top 0.3s ease-in,
+    margin-left 0.3s ease-in, height 0.3s ease-in;
 
   &.is-bordered {
     border-right: 1px solid var(--fade-grey) !important;
   }
 
   &.is-open {
-    box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.02);
+    box-shadow: 2px 0 2px 0 rgb(0 0 0 / 2%);
   }
 
   &.is-curved {
@@ -87,7 +87,7 @@
             &:hover {
               a {
                 &::after {
-                  opacity: 1;
+                  opacity: 100%;
                 }
               }
             }
@@ -96,12 +96,12 @@
               &.is-active,
               &.router-link-active {
                 &::after {
-                  opacity: 1 !important;
+                  opacity: 100% !important;
                 }
               }
 
               &::after {
-                opacity: 0;
+                opacity: 0%;
               }
             }
           }
@@ -280,7 +280,7 @@
           display: block;
           position: relative;
           transform: rotate(0);
-          opacity: 1;
+          opacity: 100%;
           transition: all 0.3s;
 
           &:hover,
@@ -324,12 +324,12 @@
 
           &.is-opened {
             transform: rotate(360deg);
-            opacity: 0;
+            opacity: 0%;
           }
 
           &.is-inactive {
             transform: rotate(-360deg);
-            opacity: 0;
+            opacity: 0%;
           }
 
           /* &.is-selected {
@@ -418,7 +418,7 @@
             .dropdown-head {
               display: flex;
               align-items: center;
-              padding: 20px 16px 20px 16px;
+              padding: 20px 16px;
               margin-bottom: 12px;
               background: #fafafa;
 
@@ -612,12 +612,12 @@
 
   .main-sidebar {
     &.is-colored {
-      //background: var(--primary-dark-2);
-      //border-color: var(--primary-dark-2) !important;
+      // background: var(--primary-dark-2);
+      // border-color: var(--primary-dark-2) !important;
 
       .sidebar-inner {
         .naver {
-          opacity: 0.8;
+          opacity: 80%;
         }
 
         .icon-menu,
@@ -629,13 +629,13 @@
                 .sidebar-svg {
                   color: var(--smoke-white);
                   stroke: var(--smoke-white);
-                  opacity: 1;
+                  opacity: 100%;
                 }
               }
 
               .sidebar-svg {
                 color: var(--smoke-white-light-2);
-                opacity: 0.5;
+                opacity: 50%;
               }
             }
           }

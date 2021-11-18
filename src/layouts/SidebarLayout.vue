@@ -102,11 +102,7 @@ watch(
             aria-label="Display dashboard content"
             @click="activeMobileSubsidebar = 'dashboard'"
           >
-            <i
-              aria-hidden="true"
-              class="iconify"
-              data-icon="feather:activity"
-            ></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:activity"></i>
           </a>
         </li>
         <li>
@@ -138,11 +134,7 @@ watch(
         </li>
         <li>
           <RouterLink :to="{ name: 'messaging-v1' }">
-            <i
-              aria-hidden="true"
-              class="iconify"
-              data-icon="feather:message-circle"
-            ></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:message-circle"></i>
           </RouterLink>
         </li>
       </template>
@@ -150,20 +142,12 @@ watch(
       <template #bottom-links>
         <li>
           <a aria-label="Display search panel" @click="activePanel = 'search'">
-            <i
-              aria-hidden="true"
-              class="iconify"
-              data-icon="feather:search"
-            ></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
           </a>
         </li>
         <li>
           <a aria-label="View settings" href="#">
-            <i
-              aria-hidden="true"
-              class="iconify"
-              data-icon="feather:settings"
-            ></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:settings"></i>
           </a>
         </li>
       </template>
@@ -175,14 +159,10 @@ watch(
         v-if="isMobileSidebarOpen && activeMobileSubsidebar === 'layout'"
       />
       <DashboardsMobileSubsidebar
-        v-else-if="
-          isMobileSidebarOpen && activeMobileSubsidebar === 'dashboard'
-        "
+        v-else-if="isMobileSidebarOpen && activeMobileSubsidebar === 'dashboard'"
       />
       <ComponentsMobileSubsidebar
-        v-else-if="
-          isMobileSidebarOpen && activeMobileSubsidebar === 'components'
-        "
+        v-else-if="isMobileSidebarOpen && activeMobileSubsidebar === 'components'"
       />
       <ElementsMobileSubsidebar
         v-else-if="isMobileSidebarOpen && activeMobileSubsidebar === 'elements'"
@@ -234,11 +214,7 @@ watch(
             aria-label="View elements"
             @click="switchSidebar('elements')"
           >
-            <i
-              aria-hidden="true"
-              class="iconify sidebar-svg"
-              data-icon="feather:box"
-            ></i>
+            <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather:box"></i>
           </a>
         </li>
 
@@ -250,11 +226,7 @@ watch(
             aria-label="View components"
             @click="switchSidebar('components')"
           >
-            <i
-              aria-hidden="true"
-              class="iconify sidebar-svg"
-              data-icon="feather:cpu"
-            ></i>
+            <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather:cpu"></i>
           </a>
         </li>
 
@@ -298,11 +270,7 @@ watch(
             class="is-hidden is-inactive"
             @click="activePanel = 'none'"
           >
-            <i
-              aria-hidden="true"
-              class="iconify sidebar-svg"
-              data-icon="feather-x"
-            />
+            <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather-x" />
           </a>
         </li>
 
@@ -334,15 +302,11 @@ watch(
         @close="isDesktopSidebarOpen = false"
       />
       <ElementsSubsidebar
-        v-else-if="
-          isDesktopSidebarOpen && activeMobileSubsidebar === 'elements'
-        "
+        v-else-if="isDesktopSidebarOpen && activeMobileSubsidebar === 'elements'"
         @close="isDesktopSidebarOpen = false"
       />
       <DashboardsSubsidebar
-        v-else-if="
-          isDesktopSidebarOpen && activeMobileSubsidebar === 'dashboard'
-        "
+        v-else-if="isDesktopSidebarOpen && activeMobileSubsidebar === 'dashboard'"
         @close="isDesktopSidebarOpen = false"
       />
       <LayoutsSubsidebar
@@ -369,10 +333,7 @@ watch(
               @click="isDesktopSidebarOpen = !isDesktopSidebarOpen"
             >
               <span class="menu-toggle has-chevron">
-                <span
-                  :class="[isDesktopSidebarOpen && 'active']"
-                  class="icon-box-toggle"
-                >
+                <span :class="[isDesktopSidebarOpen && 'active']" class="icon-box-toggle">
                   <span class="rotate">
                     <i aria-hidden="true" class="icon-line-top"></i>
                     <i aria-hidden="true" class="icon-line-center"></i>
@@ -394,11 +355,7 @@ watch(
                 aria-label="View activity panel"
                 @click="activePanel = 'activity'"
               >
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:grid"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:grid"></i>
               </a>
             </Toolbar>
           </div>

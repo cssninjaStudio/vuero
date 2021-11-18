@@ -1,10 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 
-import type {
-  VAvatarProps,
-  VAvatarColor,
-} from '/@src/components/base/avatar/VAvatar.vue'
+import type { VAvatarProps, VAvatarColor } from '/@src/components/base/avatar/VAvatar.vue'
 import { projects } from '/@src/data/layouts/card-grid-v3'
 
 const filters = ref('')
@@ -108,27 +105,14 @@ function getAvatarData(user: any): VAvatarProps {
               <input type="checkbox" :checked="item.locked" />
               <span class="toggler">
                 <span class="active">
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:lock"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:lock"></i>
                 </span>
                 <span class="inactive">
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:check"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                 </span>
               </span>
             </label>
-            <VAvatar
-              size="large"
-              :picture="item.image"
-              :badge="item.badge"
-              squared
-            />
+            <VAvatar size="large" :picture="item.image" :badge="item.badge" squared />
             <h3 class="dark-inverted">
               {{ item.name }}
             </h3>
@@ -147,21 +131,13 @@ function getAvatarData(user: any): VAvatarProps {
             <div class="buttons">
               <button class="button v-button is-dark-outlined">
                 <span class="icon">
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:eye"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:eye"></i>
                 </span>
                 <span>View</span>
               </button>
               <button class="button v-button is-dark-outlined">
                 <span class="icon">
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:edit-2"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:edit-2"></i>
                 </span>
                 <span>Edit</span>
               </button>
@@ -174,7 +150,7 @@ function getAvatarData(user: any): VAvatarProps {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/abstracts/mixins';
 
 .card-grid {
   .columns {
@@ -190,7 +166,7 @@ function getAvatarData(user: any): VAvatarProps {
 
 .card-grid-v3 {
   .card-grid-item {
-    @include vuero-s-card();
+    @include vuero-s-card;
 
     position: relative;
     text-align: center;
@@ -205,7 +181,7 @@ function getAvatarData(user: any): VAvatarProps {
 
     > .v-avatar {
       display: block;
-      margin: 0 auto 10px auto;
+      margin: 0 auto 10px;
       border-radius: 16px;
 
       .avatar {
@@ -238,7 +214,7 @@ function getAvatarData(user: any): VAvatarProps {
     .people {
       display: flex;
       justify-content: center;
-      padding: 8px 0 30px 0;
+      padding: 8px 0 30px;
 
       .v-avatar {
         margin: 0 4px;
@@ -266,7 +242,7 @@ function getAvatarData(user: any): VAvatarProps {
 .is-dark {
   .card-grid-v3 {
     .card-grid-item {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
     }
   }
 }

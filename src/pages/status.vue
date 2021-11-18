@@ -26,9 +26,7 @@ useHead({
         <div class="status-header">
           <div class="indicator"></div>
           <div class="title is-4">All services are online.</div>
-          <div class="subtitle is-6">
-            As of September 20, 2020 at 11:08 PM PST.
-          </div>
+          <div class="subtitle is-6">As of September 20, 2020 at 11:08 PM PST.</div>
         </div>
 
         <div class="status-uptime">
@@ -43,9 +41,7 @@ useHead({
               <img
                 src="/demo/photos/animaticons/lightbulb.gif"
                 alt=""
-                @error.once="
-                  (event) => useViaPlaceholderError(event, '150x150')
-                "
+                @error.once="(event) => useViaPlaceholderError(event, '150x150')"
               />
             </div>
             <div class="progress-wrap">
@@ -58,11 +54,7 @@ useHead({
                   <span>99%</span>
                 </div>
               </div>
-              <progress
-                class="progress is-primary is-smaller"
-                value="99"
-                max="100"
-              >
+              <progress class="progress is-primary is-smaller" value="99" max="100">
                 99%
               </progress>
             </div>
@@ -73,9 +65,7 @@ useHead({
               <img
                 src="/demo/photos/animaticons/image.gif"
                 alt=""
-                @error.once="
-                  (event) => useViaPlaceholderError(event, '150x150')
-                "
+                @error.once="(event) => useViaPlaceholderError(event, '150x150')"
               />
             </div>
             <div class="progress-wrap">
@@ -88,11 +78,7 @@ useHead({
                   <span>100%</span>
                 </div>
               </div>
-              <progress
-                class="progress is-success is-smaller"
-                value="100"
-                max="100"
-              >
+              <progress class="progress is-success is-smaller" value="100" max="100">
                 100%
               </progress>
             </div>
@@ -103,9 +89,7 @@ useHead({
               <img
                 src="/demo/photos/animaticons/search.gif"
                 alt=""
-                @error.once="
-                  (event) => useViaPlaceholderError(event, '150x150')
-                "
+                @error.once="(event) => useViaPlaceholderError(event, '150x150')"
               />
             </div>
             <div class="progress-wrap">
@@ -118,11 +102,7 @@ useHead({
                   <span>99%</span>
                 </div>
               </div>
-              <progress
-                class="progress is-primary is-smaller"
-                value="99"
-                max="100"
-              >
+              <progress class="progress is-primary is-smaller" value="99" max="100">
                 99%
               </progress>
             </div>
@@ -133,9 +113,7 @@ useHead({
               <img
                 src="/demo/photos/animaticons/diamond.gif"
                 alt=""
-                @error.once="
-                  (event) => useViaPlaceholderError(event, '150x150')
-                "
+                @error.once="(event) => useViaPlaceholderError(event, '150x150')"
               />
             </div>
             <div class="progress-wrap">
@@ -148,11 +126,7 @@ useHead({
                   <span>72%</span>
                 </div>
               </div>
-              <progress
-                class="progress is-warning is-smaller"
-                value="72"
-                max="100"
-              >
+              <progress class="progress is-warning is-smaller" value="72" max="100">
                 72%
               </progress>
             </div>
@@ -163,9 +137,7 @@ useHead({
               <img
                 src="/demo/photos/animaticons/chart.gif"
                 alt=""
-                @error.once="
-                  (event) => useViaPlaceholderError(event, '150x150')
-                "
+                @error.once="(event) => useViaPlaceholderError(event, '150x150')"
               />
             </div>
             <div class="progress-wrap">
@@ -178,11 +150,7 @@ useHead({
                   <span>100%</span>
                 </div>
               </div>
-              <progress
-                class="progress is-success is-smaller"
-                value="100"
-                max="100"
-              >
+              <progress class="progress is-success is-smaller" value="100" max="100">
                 100%
               </progress>
             </div>
@@ -193,9 +161,7 @@ useHead({
               <img
                 src="/demo/photos/animaticons/rocket.gif"
                 alt=""
-                @error.once="
-                  (event) => useViaPlaceholderError(event, '150x150')
-                "
+                @error.once="(event) => useViaPlaceholderError(event, '150x150')"
               />
             </div>
             <div class="progress-wrap">
@@ -208,11 +174,7 @@ useHead({
                   <span>100%</span>
                 </div>
               </div>
-              <progress
-                class="progress is-success is-smaller"
-                value="100"
-                max="100"
-              >
+              <progress class="progress is-success is-smaller" value="100" max="100">
                 100%
               </progress>
             </div>
@@ -223,9 +185,7 @@ useHead({
               <img
                 src="/demo/photos/animaticons/check.gif"
                 alt=""
-                @error.once="
-                  (event) => useViaPlaceholderError(event, '150x150')
-                "
+                @error.once="(event) => useViaPlaceholderError(event, '150x150')"
               />
             </div>
             <div class="progress-wrap">
@@ -238,11 +198,7 @@ useHead({
                   <span>100%</span>
                 </div>
               </div>
-              <progress
-                class="progress is-primary is-smaller"
-                value="100"
-                max="100"
-              >
+              <progress class="progress is-primary is-smaller" value="100" max="100">
                 100%
               </progress>
             </div>
@@ -270,9 +226,8 @@ useHead({
               <div class="update-content">
                 <div class="timestamp">July 29 at 5:39pm</div>
                 <div class="tweet">
-                  We're experiencing higher than normal load on our batch
-                  infrastructure. Webhooks are about an hour delayed. API calls
-                  are not impacted
+                  We're experiencing higher than normal load on our batch infrastructure.
+                  Webhooks are about an hour delayed. API calls are not impacted
                 </div>
               </div>
             </div>
@@ -285,8 +240,8 @@ useHead({
               <div class="update-content">
                 <div class="timestamp">July 23 at 9:21pm</div>
                 <div class="tweet">
-                  Sorry about that! Our systems are showing everything as caught
-                  up now. Let us know if you're still seeing problems!
+                  Sorry about that! Our systems are showing everything as caught up now.
+                  Let us know if you're still seeing problems!
                 </div>
               </div>
             </div>
@@ -300,7 +255,8 @@ useHead({
           <a href="#">Jobs</a>
         </div>
         <div class="copyright">
-          <span>&copy; 2020-2021 Css Ninja</span>
+          <span role="img" aria-label="copyright">&copy;</span>
+          <span>2020-2021 Css Ninja</span>
         </div>
       </div>
     </div>
@@ -308,17 +264,16 @@ useHead({
 </template>
 
 <style lang="scss">
-@import '../scss/abstracts/_mixins.scss';
-@import '../scss/pages/generic/_utility.scss';
+@import '../scss/abstracts/mixins';
+@import '../scss/pages/generic/utility';
 
 /* ==========================================================================
 3. Status Page
 ========================================================================== */
-
 .status-page-wrapper {
   max-width: 720px;
   margin: 0 auto;
-  padding: 60px 16px 60px 16px;
+  padding: 60px 16px;
 
   .head {
     display: flex;
@@ -492,7 +447,7 @@ useHead({
 
   .status-tweets {
     .updates {
-      padding: 20px 40px 40px 40px;
+      padding: 20px 40px 40px;
 
       .update {
         display: flex;
@@ -635,7 +590,7 @@ useHead({
 
     .status-tweets {
       .updates {
-        padding: 20px 30px 30px 30px;
+        padding: 20px 30px 30px;
 
         .update {
           .v-avatar {

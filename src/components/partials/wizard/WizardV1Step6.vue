@@ -25,11 +25,7 @@ const wizard = useWizard()
                 </template>
                 <template #action>
                   <div class="checkmark">
-                    <i
-                      aria-hidden="true"
-                      class="iconify"
-                      data-icon="feather:check"
-                    ></i>
+                    <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                   </div>
                 </template>
               </VBlock>

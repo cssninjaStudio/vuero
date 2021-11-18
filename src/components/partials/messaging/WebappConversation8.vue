@@ -49,9 +49,7 @@ const emit = defineEmits(['toggleMobileConversation'])
               @error.once="(event) => useViaPlaceholderError(event, '400x300')"
             />
           </div>
-          <div class="chat-msg-text">
-            I has some issues with the headers tough.
-          </div>
+          <div class="chat-msg-text">I has some issues with the headers tough.</div>
         </div>
       </div>
       <div class="chat-msg owner">

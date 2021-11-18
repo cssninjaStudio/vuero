@@ -29,11 +29,7 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
               <div class="tile-foot">
                 <span class="text-h-green"
                   >+6.4%
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:trending-up"
-                  />
+                  <i aria-hidden="true" class="iconify" data-icon="feather:trending-up" />
                 </span>
                 <span>since last month</span>
               </div>
@@ -79,11 +75,7 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
               <div class="tile-foot">
                 <span class="text-h-green"
                   >+4.2%
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:trending-up"
-                  />
+                  <i aria-hidden="true" class="iconify" data-icon="feather:trending-up" />
                 </span>
                 <span>going up</span>
               </div>
@@ -313,18 +305,15 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
         <!--Widget-->
         <UIWidget class="text-widget" straight>
           <template #header>
-            <UIWidgetToolbarFollowers
-              title="New Followers"
-              :avatars="followersList"
-            />
+            <UIWidgetToolbarFollowers title="New Followers" :avatars="followersList" />
           </template>
           <template #body>
             <div class="widget-content">
               <p>
                 Great News! <span>{{ followersList[0].name }}</span
                 >, <span>{{ followersList[1].name }}</span> and
-                <span>{{ followersList[2].name }}</span> are now following you.
-                Take some time to look at their profile.
+                <span>{{ followersList[2].name }}</span> are now following you. Take some
+                time to look at their profile.
               </p>
             </div>
           </template>
@@ -345,8 +334,8 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
-@import '../../../../scss/pages/generic/_widgets-lists.scss';
+@import '../../../../scss/abstracts/mixins';
+@import '../../../../scss/pages/generic/widgets-lists';
 
 .analytics-dashboard {
   .text-h-green {
@@ -362,7 +351,7 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
   }
 
   .dashboard-tile {
-    @include vuero-s-card();
+    @include vuero-s-card;
 
     font-family: var(--font);
 
@@ -380,7 +369,7 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
 
     .tile-body {
       font-size: 2rem;
-      padding: 4px 0 8px 0;
+      padding: 4px 0 8px;
 
       span {
         color: var(--dark-text);
@@ -410,7 +399,7 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
   }
 
   .dashboard-card {
-    @include vuero-s-card();
+    @include vuero-s-card;
 
     font-family: var(--font);
     height: 100%;
@@ -467,6 +456,7 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
         display: flex;
         padding-top: 20px;
         border-top: 1px solid var(--fade-grey-dark-3);
+
         .radial-stat {
           width: 50%;
           text-align: center;
@@ -543,7 +533,7 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
   .analytics-dashboard {
     .dashboard-tile,
     .dashboard-card {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
     }
   }
 }

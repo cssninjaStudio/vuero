@@ -11,9 +11,7 @@
 
 import { computed, ref, defineAsyncComponent } from 'vue'
 
-const NavbarLayout = defineAsyncComponent(
-  () => import('/@src/layouts/NavbarLayout.vue')
-)
+const NavbarLayout = defineAsyncComponent(() => import('/@src/layouts/NavbarLayout.vue'))
 const NavbarDropdownLayout = defineAsyncComponent(
   () => import('/@src/layouts/NavbarDropdownLayout.vue')
 )
@@ -31,8 +29,7 @@ const layoutsComponents = {
   'navbar-clean-fade': NavbarSearchLayout,
 }
 
-export const navbarLayoutId =
-  ref<keyof typeof layoutsComponents>('navbar-default')
+export const navbarLayoutId = ref<keyof typeof layoutsComponents>('navbar-default')
 export const navbarLayoutComponent = computed(() => {
   return layoutsComponents[navbarLayoutId.value] || NavbarLayout
 })

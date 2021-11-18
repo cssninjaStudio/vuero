@@ -49,7 +49,7 @@ Search UI Elements
 
   .search-results-body {
     .filter-box {
-      @include vuero-s-card();
+      @include vuero-s-card;
 
       margin-bottom: 16px;
 
@@ -68,7 +68,7 @@ Search UI Elements
           align-items: center;
 
           .checkbox {
-            padding: 0.75em 0 0.75em 0;
+            padding: 0.75em 0;
           }
 
           .control-end {
@@ -86,7 +86,7 @@ Search UI Elements
         display: flex;
         align-items: center;
         border-bottom: 1px solid var(--fade-grey-dark-6);
-        padding: 0 0 12px 0;
+        padding: 0 0 12px;
         margin-bottom: 12px;
 
         .icon-wrap {
@@ -121,7 +121,7 @@ Search UI Elements
         padding: 10px 0;
 
         .search-results-item {
-          @include vuero-s-card();
+          @include vuero-s-card;
 
           margin-bottom: 16px;
 
@@ -145,15 +145,16 @@ Search UI Elements
   .search-results-wrapper {
     .search-results-body {
       .filter-box {
-        @include vuero-card--dark();
+        @include vuero-card--dark;
       }
 
       .search-results-group {
         .search-results-list {
           .search-results-item {
-            @include vuero-card--dark();
+            @include vuero-card--dark;
           }
         }
+
         .group-header {
           border-color: var(--dark-sidebar-light-20);
 

@@ -23,7 +23,7 @@
 
   &.is-active {
     .select-drop {
-      opacity: 1;
+      opacity: 100%;
       transform: translateY(0);
       pointer-events: all;
     }
@@ -58,7 +58,7 @@
     }
   }
 
-  //select box
+  // select box
   .select-box {
     position: relative;
     display: flex;
@@ -110,7 +110,8 @@
     top: 40px;
     left: 0;
     width: 100%;
-    //min-height: 180px;
+
+    // min-height: 180px;
     max-height: 180px;
     overflow-y: auto;
     background: var(--white);
@@ -118,7 +119,7 @@
     border-radius: var(--radius);
     z-index: 5;
     transition: all 0.3s;
-    opacity: 0;
+    opacity: 0%;
     transform: translateY(10px);
     pointer-events: none;
 
@@ -143,7 +144,7 @@
           left: 0;
           height: 100%;
           width: 100%;
-          opacity: 0;
+          opacity: 0%;
           cursor: pointer;
 
           &:checked + .option-meta {
@@ -365,7 +366,8 @@
           color: var(--dark-text);
           font-size: 0.9rem;
           font-weight: 500;
-          //margin-left: 8px;
+
+          // margin-left: 8px;
 
           &.is-pushed {
             margin-left: 18px;
@@ -399,7 +401,7 @@
       left: 0;
       width: 100%;
       z-index: 50;
-      opacity: 0;
+      opacity: 0%;
       transform: translateY(20px);
       pointer-events: none;
       transition: all 0.3s;
@@ -445,7 +447,7 @@
                 }
 
                 .faded-img {
-                  opacity: 1;
+                  opacity: 100%;
                 }
               }
 
@@ -454,7 +456,7 @@
               }
 
               .checkmark {
-                opacity: 1;
+                opacity: 100%;
               }
             }
 
@@ -503,7 +505,7 @@
                 transition: opacity 0.3s;
 
                 &.faded-img {
-                  opacity: 0.4;
+                  opacity: 40%;
                 }
               }
 
@@ -533,7 +535,7 @@
               width: 16px;
               margin-right: 8px;
               margin-left: auto;
-              opacity: 0;
+              opacity: 0%;
               transition: all 0.3s;
 
               svg {
@@ -556,7 +558,7 @@
     }
 
     &.is-active {
-      //border-color: var(--primary);
+      // border-color: var(--primary);
       box-shadow: var(--light-box-shadow);
 
       .box-chevron svg {
@@ -564,7 +566,7 @@
       }
 
       .box-dropdown {
-        opacity: 1;
+        opacity: 100%;
         transform: translateY(0);
         pointer-events: all;
       }
@@ -653,7 +655,7 @@
       left: 0;
       width: 100%;
       z-index: 50;
-      opacity: 0;
+      opacity: 0%;
       transform: translateY(20px);
       pointer-events: none;
       transition: all 0.3s;
@@ -742,7 +744,7 @@
       }
 
       .box-dropdown {
-        opacity: 1;
+        opacity: 100%;
         transform: translateY(0);
         pointer-events: all;
       }

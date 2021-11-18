@@ -7,12 +7,7 @@ Simply add a 1:1 ratio image URL to the avatar component using the `badge` prop.
 
 ```vue
 <template>
-  <VFlex
-    flex-wrap="wrap"
-    align-items="flex-end"
-    row-gap=".5rem"
-    column-gap=".25rem"
-  >
+  <VFlex flex-wrap="wrap" align-items="flex-end" row-gap=".5rem" column-gap=".25rem">
     <VAvatar
       picture="/demo/avatars/7.jpg"
       size="small"

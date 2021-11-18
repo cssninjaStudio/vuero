@@ -69,18 +69,10 @@ useHead({
           <VModalBaseDocumentation />
 
           <div class="buttons mb-6">
-            <VButton bold @click="leftActionsOpen = true">
-              Left Actions
-            </VButton>
-            <VButton bold @click="centeredActionsOpen = true">
-              Center Actions
-            </VButton>
-            <VButton bold @click="rightActionsOpen = true">
-              Right Actions
-            </VButton>
-            <VButton bold @click="customLabelActionsOpen = true">
-              Custom label
-            </VButton>
+            <VButton bold @click="leftActionsOpen = true"> Left Actions </VButton>
+            <VButton bold @click="centeredActionsOpen = true"> Center Actions </VButton>
+            <VButton bold @click="rightActionsOpen = true"> Right Actions </VButton>
+            <VButton bold @click="customLabelActionsOpen = true"> Custom label </VButton>
           </div>
 
           <!--VModal sizes-->
@@ -88,9 +80,7 @@ useHead({
 
           <div class="buttons mb-6">
             <VButton bold @click="smallOpen = true">Small Modal</VButton>
-            <VButton bold @click="standardOpen = true">
-              Standard Modal
-            </VButton>
+            <VButton bold @click="standardOpen = true"> Standard Modal </VButton>
             <VButton bold @click="mediumOpen = true">Medium Modal</VButton>
             <VButton bold @click="largeOpen = true">Large Modal</VButton>
             <VButton bold @click="bigOpen = true">Big Modal</VButton>
@@ -101,12 +91,8 @@ useHead({
 
           <div class="buttons mb-6">
             <VButton bold @click="smallFormOpen = true">Small Modal</VButton>
-            <VButton bold @click="standardFormOpen = true">
-              Standard Modal
-            </VButton>
-            <VButton bold @click="mediumFormOpen = true">
-              Medium Modal
-            </VButton>
+            <VButton bold @click="standardFormOpen = true"> Standard Modal </VButton>
+            <VButton bold @click="mediumFormOpen = true"> Medium Modal </VButton>
             <VButton bold @click="largeFormOpen = true">Large Modal</VButton>
             <VButton bold @click="bigFormOpen = true">Big Modal</VButton>
           </div>
@@ -115,9 +101,7 @@ useHead({
           <VModalOptionsDocumentation />
 
           <div class="buttons mb-6">
-            <VButton bold @click="noscrollOpen = true">
-              Scroll disabled
-            </VButton>
+            <VButton bold @click="noscrollOpen = true"> Scroll disabled </VButton>
             <VButton bold @click="nocloseOpen = true">
               No background close handler
             </VButton>
@@ -477,11 +461,7 @@ useHead({
               <div class="field">
                 <label>Project Name *</label>
                 <div class="control">
-                  <input
-                    type="text"
-                    class="input"
-                    placeholder="Ex: A cool project"
-                  />
+                  <input type="text" class="input" placeholder="Ex: A cool project" />
                 </div>
               </div>
             </div>
@@ -518,8 +498,7 @@ useHead({
                                 src="/demo/avatars/22.jpg"
                                 alt=""
                                 @error.once="
-                                  (event) =>
-                                    useViaPlaceholderError(event, '150x150')
+                                  (event) => useViaPlaceholderError(event, '150x150')
                                 "
                               />
                             </span>
@@ -538,8 +517,7 @@ useHead({
                                 src="/images/avatars/svg/vuero-1.svg"
                                 alt=""
                                 @error.once="
-                                  (event) =>
-                                    useViaPlaceholderError(event, '150x150')
+                                  (event) => useViaPlaceholderError(event, '150x150')
                                 "
                               />
                             </span>
@@ -558,8 +536,7 @@ useHead({
                                 src="/demo/avatars/7.jpg"
                                 alt=""
                                 @error.once="
-                                  (event) =>
-                                    useViaPlaceholderError(event, '150x150')
+                                  (event) => useViaPlaceholderError(event, '150x150')
                                 "
                               />
                             </span>
@@ -578,8 +555,7 @@ useHead({
                                 src="/demo/avatars/25.jpg"
                                 alt=""
                                 @error.once="
-                                  (event) =>
-                                    useViaPlaceholderError(event, '150x150')
+                                  (event) => useViaPlaceholderError(event, '150x150')
                                 "
                               />
                             </span>
@@ -598,8 +574,7 @@ useHead({
                                 src="/demo/avatars/12.jpg"
                                 alt=""
                                 @error.once="
-                                  (event) =>
-                                    useViaPlaceholderError(event, '150x150')
+                                  (event) => useViaPlaceholderError(event, '150x150')
                                 "
                               />
                             </span>
@@ -720,11 +695,7 @@ useHead({
               <div class="field">
                 <label>Project Name *</label>
                 <div class="control">
-                  <input
-                    type="text"
-                    class="input"
-                    placeholder="Ex: A cool project"
-                  />
+                  <input type="text" class="input" placeholder="Ex: A cool project" />
                 </div>
               </div>
             </div>
@@ -761,8 +732,7 @@ useHead({
                                 src="/demo/avatars/22.jpg"
                                 alt=""
                                 @error.once="
-                                  (event) =>
-                                    useViaPlaceholderError(event, '150x150')
+                                  (event) => useViaPlaceholderError(event, '150x150')
                                 "
                               />
                             </span>
@@ -781,8 +751,7 @@ useHead({
                                 src="/images/avatars/svg/vuero-1.svg"
                                 alt=""
                                 @error.once="
-                                  (event) =>
-                                    useViaPlaceholderError(event, '150x150')
+                                  (event) => useViaPlaceholderError(event, '150x150')
                                 "
                               />
                             </span>
@@ -801,8 +770,7 @@ useHead({
                                 src="/demo/avatars/7.jpg"
                                 alt=""
                                 @error.once="
-                                  (event) =>
-                                    useViaPlaceholderError(event, '150x150')
+                                  (event) => useViaPlaceholderError(event, '150x150')
                                 "
                               />
                             </span>
@@ -821,8 +789,7 @@ useHead({
                                 src="/demo/avatars/25.jpg"
                                 alt=""
                                 @error.once="
-                                  (event) =>
-                                    useViaPlaceholderError(event, '150x150')
+                                  (event) => useViaPlaceholderError(event, '150x150')
                                 "
                               />
                             </span>
@@ -841,8 +808,7 @@ useHead({
                                 src="/demo/avatars/12.jpg"
                                 alt=""
                                 @error.once="
-                                  (event) =>
-                                    useViaPlaceholderError(event, '150x150')
+                                  (event) => useViaPlaceholderError(event, '150x150')
                                 "
                               />
                             </span>

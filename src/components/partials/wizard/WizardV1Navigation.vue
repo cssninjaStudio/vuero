@@ -34,16 +34,9 @@ const setStep = (target: number) => {
       </span>
     </div>
 
-    <div
-      ref="dropdownElement1"
-      class="dropdown wizard-dropdown dropdown-trigger"
-    >
+    <div ref="dropdownElement1" class="dropdown wizard-dropdown dropdown-trigger">
       <div class="is-trigger" @click="dropdown1.toggle">
-        <i
-          aria-hidden="true"
-          class="iconify"
-          data-icon="feather:chevron-down"
-        ></i>
+        <i aria-hidden="true" class="iconify" data-icon="feather:chevron-down"></i>
       </div>
       <div id="wizard-navigation-dropdown" class="dropdown-menu" role="menu">
         <div class="dropdown-content">
@@ -103,20 +96,13 @@ const setStep = (target: number) => {
     <div class="navbar-item is-dark-mode">
       <div class="navbar-icon">
         <label class="dark-mode">
-          <input
-            type="checkbox"
-            :checked="!isDark"
-            @change="toggleDarkModeHandler"
-          />
+          <input type="checkbox" :checked="!isDark" @change="toggleDarkModeHandler" />
           <span></span>
         </label>
       </div>
     </div>
 
-    <div
-      ref="dropdownElement2"
-      class="dropdown is-right dropdown-trigger user-dropdown"
-    >
+    <div ref="dropdownElement2" class="dropdown is-right dropdown-trigger user-dropdown">
       <div class="is-trigger" aria-haspopup="true" @click="dropdown2.toggle">
         <div class="profile-avatar">
           <img
@@ -126,11 +112,7 @@ const setStep = (target: number) => {
             @error.once="(event) => useViaPlaceholderError(event, '150x150')"
           />
         </div>
-        <i
-          aria-hidden="true"
-          class="iconify"
-          data-icon="feather:chevron-down"
-        ></i>
+        <i aria-hidden="true" class="iconify" data-icon="feather:chevron-down"></i>
       </div>
       <div class="dropdown-menu" role="menu">
         <div class="dropdown-content">
@@ -142,11 +124,7 @@ const setStep = (target: number) => {
             <span>Profile</span>
           </a>
           <a class="dropdown-item">
-            <i
-              aria-hidden="true"
-              class="iconify"
-              data-icon="feather:edit-2"
-            ></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:edit-2"></i>
             <span>Edit Profile</span>
           </a>
           <a class="dropdown-item">
@@ -154,20 +132,12 @@ const setStep = (target: number) => {
             <span>Projects</span>
           </a>
           <a class="dropdown-item">
-            <i
-              aria-hidden="true"
-              class="iconify"
-              data-icon="feather:settings"
-            ></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:settings"></i>
             <span>Settings</span>
           </a>
           <hr class="dropdown-divider" />
           <a href="#" class="dropdown-item">
-            <i
-              aria-hidden="true"
-              class="iconify"
-              data-icon="feather:log-out"
-            ></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:log-out"></i>
             <span>Sign Out</span>
           </a>
         </div>
@@ -177,7 +147,7 @@ const setStep = (target: number) => {
 </template>
 
 <style lang="scss" scoped>
-@import '../../../scss/abstracts/_mixins.scss';
+@import '../../../scss/abstracts/mixins';
 
 .wizard-navigation {
   position: fixed;

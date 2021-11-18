@@ -2,9 +2,7 @@
   <div class="onboarding-wrapper onboarding-v1">
     <div class="title-wrap">
       <p>Looks like you're new here</p>
-      <h2 class="dark-inverted">
-        Welcome to Vuero. What would you like to do?
-      </h2>
+      <h2 class="dark-inverted">Welcome to Vuero. What would you like to do?</h2>
     </div>
 
     <div class="onboarding-wrap">
@@ -24,8 +22,8 @@
           <div class="onboarding-content">
             <h3 class="dark-inverted">Explore Posts</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Recte
-              dicis; Ita enim vivunt.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Recte dicis; Ita
+              enim vivunt.
             </p>
             <div class="button-wrap">
               <VButton color="primary" rounded elevated> Explore </VButton>
@@ -47,8 +45,8 @@
           <div class="onboarding-content">
             <h3 class="dark-inverted">Schedule a Meeting</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Recte
-              dicis; Ita enim vivunt.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Recte dicis; Ita
+              enim vivunt.
             </p>
             <div class="button-wrap">
               <VButton color="primary" rounded elevated> Schedule </VButton>
@@ -70,8 +68,8 @@
           <div class="onboarding-content">
             <h3 class="dark-inverted">Chill Out</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Recte
-              dicis; Ita enim vivunt.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Recte dicis; Ita
+              enim vivunt.
             </p>
             <div class="button-wrap">
               <VButton color="primary" rounded elevated> Take a Nap </VButton>
@@ -84,6 +82,6 @@
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
-@import '../../../../scss/pages/generic/_onboarding.scss';
+@import '../../../../scss/abstracts/mixins';
+@import '../../../../scss/pages/generic/onboarding';
 </style>

@@ -25,11 +25,7 @@ const props = defineProps<{
         <span>Based on your latest stats</span>
       </div>
       <a href="#" class="go-icon">
-        <i
-          aria-hidden="true"
-          class="iconify"
-          data-icon="feather:chevron-right"
-        ></i>
+        <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right"></i>
       </a>
     </div>
   </div>

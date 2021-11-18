@@ -13,13 +13,13 @@ See the code example for more details about usage.
     <div class="column is-5">
       <div class="content">
         <p>
-          Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero
-          hendrerit ipsum, ut blandit est tellus sit amet turpis.
+          Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero hendrerit
+          ipsum, ut blandit est tellus sit amet turpis.
         </p>
         <div class="is-divider" data-content="OR"></div>
         <p>
-          Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero
-          hendrerit ipsum, ut blandit est tellus sit amet turpis.
+          Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero hendrerit
+          ipsum, ut blandit est tellus sit amet turpis.
         </p>
       </div>
     </div>
@@ -28,15 +28,15 @@ See the code example for more details about usage.
       <div class="columns">
         <div class="column">
           <p>
-            Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero
-            hendrerit ipsum, ut blandit est tellus sit amet turpis.
+            Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero hendrerit
+            ipsum, ut blandit est tellus sit amet turpis.
           </p>
         </div>
         <div class="is-divider-vertical" data-content="OR"></div>
         <div class="column">
           <p>
-            Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero
-            hendrerit ipsum, ut blandit est tellus sit amet turpis.
+            Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero hendrerit
+            ipsum, ut blandit est tellus sit amet turpis.
           </p>
         </div>
       </div>

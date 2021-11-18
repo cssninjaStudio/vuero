@@ -7,13 +7,13 @@
   --medium-grey: #ddd;
   --light-grey: #eee;
   --white: #fff;
-  --border: hsl(0, 0%, 86%);
+  --border: hsl(0deg 0% 86%);
 
   // placeload colors
-  --placeload-nuance-from: rgba(0, 0, 0, 0.07);
-  --placeload-nuance-to: rgba(0, 0, 0, 0.15);
-  --placeload-dark-nuance-from: rgba(255, 255, 255, 0.15);
-  --placeload-dark-nuance-to: rgba(255, 255, 255, 0.24);
+  --placeload-nuance-from: rgb(0 0 0 / 7%);
+  --placeload-nuance-to: rgb(0 0 0 / 15%);
+  --placeload-dark-nuance-from: rgb(255 255 255 / 15%);
+  --placeload-dark-nuance-to: rgb(255 255 255 / 24%);
 
   // primary HSL (#41b883) // hsl(153, 48%, 49%)
   @include colorHsl('primary', 153, 48%, 49%);
@@ -47,6 +47,9 @@
 
   // light-blue HSL (#77d2f3) // hsl(196, 84%, 71%)
   @include colorHsl('light-blue', 196, 84%, 71%);
+
+  // light-green HSL (#90e0d0) // hsl(168, 56%, 72%)
+  @include colorHsl('light-green', 168, 56%, 72%);
 
   // dark HSL (#283252) // hsl(226, 34%, 24%)
   @include colorHsl('dark', 226, 34%, 24%);

@@ -21,12 +21,7 @@ const value = ref(true)
 <template>
   <VField grouped>
     <VControl>
-      <VSwitchSegment
-        v-model="value"
-        label-true="ON"
-        label-false="OFF"
-        color="primary"
-      />
+      <VSwitchSegment v-model="value" label-true="ON" label-false="OFF" color="primary" />
     </VControl>
   </VField>
 </template>

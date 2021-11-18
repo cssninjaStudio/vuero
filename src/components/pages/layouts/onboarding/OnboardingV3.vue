@@ -21,9 +21,8 @@
           />
           <h3>Explore Workboard</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Recte
-            dicis; Ita enim vivunt quidam, ut eorum vita refellatur oratio. Sed
-            tament.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Recte dicis; Ita enim
+            vivunt quidam, ut eorum vita refellatur oratio. Sed tament.
           </p>
           <div class="button-wrap">
             <VButton color="primary" elevated> Explore </VButton>
@@ -43,9 +42,8 @@
           />
           <h3>Add some Tasks</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Recte
-            dicis; Ita enim vivunt quidam, ut eorum vita refellatur oratio. Sed
-            tament.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Recte dicis; Ita enim
+            vivunt quidam, ut eorum vita refellatur oratio. Sed tament.
           </p>
           <div class="button-wrap">
             <VButton color="primary" elevated> Add Tasks </VButton>
@@ -65,9 +63,8 @@
           />
           <h3>Browse Wiki</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Recte
-            dicis; Ita enim vivunt quidam, ut eorum vita refellatur oratio. Sed
-            tament.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Recte dicis; Ita enim
+            vivunt quidam, ut eorum vita refellatur oratio. Sed tament.
           </p>
           <div class="button-wrap">
             <VButton color="primary" elevated> Browse </VButton>
@@ -79,6 +76,6 @@
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
-@import '../../../../scss/pages/generic/_onboarding.scss';
+@import '../../../../scss/abstracts/mixins';
+@import '../../../../scss/pages/generic/onboarding';
 </style>

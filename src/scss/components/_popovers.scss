@@ -18,13 +18,13 @@
   box-shadow: var(--light-box-shadow);
 
   .tippy-content {
-    //padding: 0 !important;
-    //border: none
+    // padding: 0 !important;
+    // border: none
   }
 }
 
 .v-popover {
-  box-shadow: rgba(0, 0, 0, 0.04) 0 3px 10px 4px !important;
+  box-shadow: rgb(0 0 0 / 4%) 0 3px 10px 4px !important;
   background: var(--white) !important;
   color: var(--dark-text) !important;
   margin-top: -20px !important;
@@ -76,7 +76,7 @@
 
   &.is-text {
     max-width: 200px;
-    padding: 8px 5px 4px 5px;
+    padding: 8px 5px 4px;
     font-size: 0.9rem !important;
   }
 
@@ -261,7 +261,7 @@
     }
 
     .loader-overlay {
-      background: rgba(42, 42, 44, 0.95) !important;
+      background: rgb(42 42 44 / 95%) !important;
     }
   }
 }
@@ -472,7 +472,7 @@
       display: flex;
       justify-content: flex-end;
       align-items: center;
-      padding: 8px 12px 12px 12px;
+      padding: 8px 12px 12px;
 
       .button {
         height: 26px;
@@ -519,14 +519,14 @@
       border-radius: 8px;
       justify-content: center;
       align-items: center;
-      background: rgba(255, 255, 255, 0.95);
-      opacity: 0;
+      background: rgb(255 255 255 / 95%);
+      opacity: 0%;
       transition: all 0.3s;
       z-index: 0;
       pointer-events: none;
 
       &.is-active {
-        opacity: 1;
+        opacity: 100%;
         z-index: 1;
         pointer-events: all;
       }
@@ -553,23 +553,19 @@
     border-color: var(--dark-sidebar-light-6);
   }
 
-  .tippy-box[data-theme~='light'][data-placement^='top']
-    > .tippy-arrow::before {
+  .tippy-box[data-theme~='light'][data-placement^='top'] > .tippy-arrow::before {
     border-top-color: var(--dark-sidebar) !important;
   }
 
-  .tippy-box[data-theme~='light'][data-placement^='bottom']
-    > .tippy-arrow::before {
+  .tippy-box[data-theme~='light'][data-placement^='bottom'] > .tippy-arrow::before {
     border-bottom-color: var(--dark-sidebar) !important;
   }
 
-  .tippy-box[data-theme~='light'][data-placement^='left']
-    > .tippy-arrow::before {
+  .tippy-box[data-theme~='light'][data-placement^='left'] > .tippy-arrow::before {
     border-left-color: var(--dark-sidebar) !important;
   }
 
-  .tippy-box[data-theme~='light'][data-placement^='right']
-    > .tippy-arrow::before {
+  .tippy-box[data-theme~='light'][data-placement^='right'] > .tippy-arrow::before {
     border-right-color: var(--dark-sidebar) !important;
   }
 

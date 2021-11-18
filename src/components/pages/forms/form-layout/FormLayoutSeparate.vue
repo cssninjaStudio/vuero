@@ -112,22 +112,14 @@ const country = ref('')
                     >
                       <template #singlelabel="{ value }">
                         <div class="multiselect-single-label">
-                          <img
-                            class="select-label-icon"
-                            :src="value.icon"
-                            alt=""
-                          />
+                          <img class="select-label-icon" :src="value.icon" alt="" />
                           <span class="select-label-text">
                             {{ value.name }}
                           </span>
                         </div>
                       </template>
                       <template #option="{ option }">
-                        <img
-                          class="select-option-icon"
-                          :src="option.icon"
-                          alt=""
-                        />
+                        <img class="select-option-icon" :src="option.icon" alt="" />
                         <span class="select-label-text">
                           {{ option.name }}
                         </span>
@@ -215,9 +207,7 @@ const country = ref('')
               </VField>
             </div>
             <div class="button-wrap">
-              <VButton color="primary" bold raised fullwidth>
-                Confirm My Order
-              </VButton>
+              <VButton color="primary" bold raised fullwidth> Confirm My Order </VButton>
             </div>
           </div>
         </div>
@@ -227,6 +217,6 @@ const country = ref('')
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
-@import '../../../../scss/pages/generic/_forms.scss';
+@import '../../../../scss/abstracts/mixins';
+@import '../../../../scss/pages/generic/forms';
 </style>

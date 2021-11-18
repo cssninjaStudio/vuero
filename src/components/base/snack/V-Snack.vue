@@ -51,12 +51,7 @@ const isIconify = computed(() => {
       <i v-else aria-hidden="true" class="snack-icon" :class="props.icon"></i>
     </div>
     <div v-else-if="props.image" class="snack-media">
-      <img
-        class="avatar"
-        :src="props.image"
-        alt=""
-        @error.once="placeholderHandler"
-      />
+      <img class="avatar" :src="props.image" alt="" @error.once="placeholderHandler" />
     </div>
     <span class="snack-text">{{ props.title }}</span>
     <span class="snack-action">

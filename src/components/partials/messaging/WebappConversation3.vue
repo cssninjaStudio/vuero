@@ -84,9 +84,7 @@ const emit = defineEmits(['toggleMobileConversation'])
         </div>
         <div class="chat-msg-content">
           <div class="chat-msg-text">Sure, I'll take a look real quick.</div>
-          <div class="chat-msg-text">
-            Iam also going to look at the available plans.
-          </div>
+          <div class="chat-msg-text">Iam also going to look at the available plans.</div>
         </div>
       </div>
       <div class="chat-msg">
@@ -102,11 +100,9 @@ const emit = defineEmits(['toggleMobileConversation'])
         </div>
         <div class="chat-msg-content">
           <div class="chat-msg-text">
-            I know this one, we were using it in my previous company. It's
-            reliable and fast
-            <span role="img" aria-label="Smiling Face with Smiling Eyes"
-              >😊</span
-            >.
+            I know this one, we were using it in my previous company. It's reliable and
+            fast
+            <span role="img" aria-label="Smiling Face with Smiling Eyes">😊</span>.
           </div>
           <div class="chat-msg-text">
             I mean it's worth a try and we're in need right now.
@@ -125,9 +121,7 @@ const emit = defineEmits(['toggleMobileConversation'])
           <div class="chat-msg-date">Sent at 4:31pm</div>
         </div>
         <div class="chat-msg-content">
-          <div class="chat-msg-text">
-            Yeah but I need to test some use cases.
-          </div>
+          <div class="chat-msg-text">Yeah but I need to test some use cases.</div>
           <div class="chat-msg-text">Can't sign up before being sure.</div>
         </div>
       </div>

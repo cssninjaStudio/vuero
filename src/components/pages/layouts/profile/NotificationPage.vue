@@ -24,10 +24,7 @@
                 </div>
               </div>
               <div class="box-end">
-                <VAvatar
-                  size="small"
-                  picture="/images/avatars/svg/vuero-1.svg"
-                />
+                <VAvatar size="small" picture="/images/avatars/svg/vuero-1.svg" />
               </div>
             </div>
           </div>
@@ -100,8 +97,7 @@
               <div class="box-text">
                 <div class="meta-text">
                   <p>
-                    <span>Joshua S.</span> changed the status of a
-                    <a>Task</a> from
+                    <span>Joshua S.</span> changed the status of a <a>Task</a> from
                     <VTag label="Pending" color="purple" rounded />
                     to
                     <VTag label="Completed" color="green" rounded />
@@ -134,16 +130,8 @@
                 </div>
               </div>
               <div class="box-end">
-                <VAvatar
-                  size="small"
-                  squared
-                  picture="/demo/photos/apps/5.png"
-                />
-                <VAvatar
-                  size="small"
-                  squared
-                  picture="/demo/photos/apps/8.png"
-                />
+                <VAvatar size="small" squared picture="/demo/photos/apps/5.png" />
+                <VAvatar size="small" squared picture="/demo/photos/apps/8.png" />
               </div>
             </div>
           </div>
@@ -163,17 +151,14 @@
               <div class="box-text">
                 <div class="meta-text">
                   <p>
-                    <span>Yassine A.</span> mentionned you in a
-                    <a>comment</a> on <a>Delivery tracking Dashboard</a>.
+                    <span>Yassine A.</span> mentionned you in a <a>comment</a> on
+                    <a>Delivery tracking Dashboard</a>.
                   </p>
                   <span>11:42 am</span>
                 </div>
               </div>
               <div class="box-end">
-                <VAvatar
-                  size="small"
-                  picture="/images/avatars/svg/vuero-1.svg"
-                />
+                <VAvatar size="small" picture="/images/avatars/svg/vuero-1.svg" />
               </div>
             </div>
           </div>
@@ -217,8 +202,7 @@
               <div class="box-text">
                 <div class="meta-text">
                   <p>
-                    <span>Melany W.</span> changed the status of a
-                    <a>Task</a> from
+                    <span>Melany W.</span> changed the status of a <a>Task</a> from
                     <VTag label="Overdue" color="danger" rounded />
                     to
                     <VTag label="Completed" color="green" rounded />
@@ -239,7 +223,7 @@
 </template>
 
 <style lang="scss" scoped>
-@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/abstracts/mixins';
 
 /*
   1. Timeline
@@ -250,7 +234,6 @@
 /* ==========================================================================
 1. Timeline
 ========================================================================== */
-
 .timeline-wrapper {
   max-width: 940px;
   margin: 0 auto;
@@ -334,7 +317,7 @@
         }
 
         .content-wrap {
-          @include vuero-s-card();
+          @include vuero-s-card;
 
           flex-grow: 2;
 
@@ -436,7 +419,7 @@
           }
 
           .content-wrap {
-            @include vuero-card--dark();
+            @include vuero-card--dark;
 
             .content-box {
               .status {

@@ -34,10 +34,7 @@ watch([() => route.fullPath, dropdownElement], () => {
     </template>
 
     <template #content>
-      <div
-        class="category-selector"
-        :class="[selectedCategory !== '' && 'is-hidden']"
-      >
+      <div class="category-selector" :class="[selectedCategory !== '' && 'is-hidden']">
         <div class="title-wrap">
           <h4>Select a category</h4>
         </div>
@@ -65,20 +62,10 @@ watch([() => route.fullPath, dropdownElement], () => {
         </div>
       </div>
 
-      <div
-        class="content-wrap"
-        :class="[selectedCategory === '' && 'is-hidden']"
-      >
-        <button
-          class="button is-circle back-button"
-          @click="selectedCategory = ''"
-        >
+      <div class="content-wrap" :class="[selectedCategory === '' && 'is-hidden']">
+        <button class="button is-circle back-button" @click="selectedCategory = ''">
           <span class="icon is-small">
-            <i
-              aria-hidden="true"
-              class="iconify"
-              data-icon="feather:arrow-left"
-            ></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:arrow-left"></i>
           </span>
         </button>
 
@@ -91,11 +78,7 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div class="column is-4">
             <div class="dropdown-item-group">
               <h4 class="column-heading is-info">
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:circle"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                 <span>List Views</span>
               </h4>
 
@@ -151,11 +134,7 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div class="column is-4">
             <div class="dropdown-item-group">
               <h4 class="column-heading is-green">
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:circle"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                 <span>Flex Lists</span>
               </h4>
 
@@ -200,11 +179,7 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div class="column is-4">
             <div class="dropdown-item-group">
               <h4 class="column-heading is-orange">
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:circle"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                 <span>Datatables</span>
               </h4>
 
@@ -267,11 +242,7 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div class="column is-4">
             <div class="dropdown-item-group">
               <h4 class="column-heading is-purple">
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:circle"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                 <span>Cards</span>
               </h4>
 
@@ -328,11 +299,7 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div class="column is-4">
             <div class="dropdown-item-group">
               <h4 class="column-heading is-secondary">
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:circle"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                 <span>Tiles</span>
               </h4>
 
@@ -378,11 +345,7 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div class="column is-4">
             <div class="dropdown-item-group">
               <h4 class="column-heading is-success">
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:circle"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                 <span>Users</span>
               </h4>
 
@@ -445,11 +408,7 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div class="column is-4">
             <div class="dropdown-item-group">
               <h4 class="column-heading is-yellow">
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:circle"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                 <span>Personal</span>
               </h4>
 
@@ -506,19 +465,12 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div class="column is-4">
             <div class="dropdown-item-group">
               <h4 class="column-heading is-primary">
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:circle"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                 <span>Pages</span>
               </h4>
 
               <div class="column-content" data-simplebar>
-                <RouterLink
-                  :to="{ name: 'auth-login-1' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink :to="{ name: 'auth-login-1' }" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-pointer-right"></i>
                   </div>
@@ -526,10 +478,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <span>Login v1</span>
                   </div>
                 </RouterLink>
-                <RouterLink
-                  :to="{ name: 'auth-login-2' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink :to="{ name: 'auth-login-2' }" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-pointer-right"></i>
                   </div>
@@ -537,10 +486,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <span>Login v2</span>
                   </div>
                 </RouterLink>
-                <RouterLink
-                  :to="{ name: 'auth-login-3' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink :to="{ name: 'auth-login-3' }" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-pointer-right"></i>
                   </div>
@@ -611,11 +557,7 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div class="column is-4">
             <div class="dropdown-item-group">
               <h4 class="column-heading is-success">
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:circle"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                 <span>Projects</span>
               </h4>
 
@@ -689,11 +631,7 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div class="column is-4">
             <div class="dropdown-item-group">
               <h4 class="column-heading is-green">
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:circle"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                 <span>Subpages</span>
               </h4>
 
@@ -709,10 +647,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <span>SaaS Billing</span>
                   </div>
                 </RouterLink>
-                <RouterLink
-                  :to="{ name: 'navbar' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink :to="{ name: 'navbar' }" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-door-alt"></i>
                   </div>
@@ -749,11 +684,7 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div class="column is-4">
             <div class="dropdown-item-group">
               <h4 class="column-heading is-yellow">
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:circle"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                 <span>Utility</span>
               </h4>
 
@@ -791,15 +722,9 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <span>Invoice</span>
                   </div>
                 </RouterLink>
-                <RouterLink
-                  :to="{ name: 'status' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink :to="{ name: 'status' }" class="dropdown-item is-media">
                   <div class="icon">
-                    <i
-                      aria-hidden="true"
-                      class="lnil lnil-checkmark-circle"
-                    ></i>
+                    <i aria-hidden="true" class="lnil lnil-checkmark-circle"></i>
                   </div>
                   <div class="meta">
                     <span>App Status</span>
@@ -812,11 +737,7 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div class="column is-4">
             <div class="dropdown-item-group">
               <h4 class="column-heading is-secondary">
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:circle"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                 <span>Onboarding</span>
               </h4>
 
@@ -890,19 +811,12 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div class="column is-4">
             <div class="dropdown-item-group">
               <h4 class="column-heading is-secondary">
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:circle"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                 <span>utility</span>
               </h4>
 
               <div class="column-content" data-simplebar>
-                <RouterLink
-                  :to="{ name: 'error-page-1' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink :to="{ name: 'error-page-1' }" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-cross-circle"></i>
                   </div>
@@ -910,10 +824,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <span>Error Page V1</span>
                   </div>
                 </RouterLink>
-                <RouterLink
-                  :to="{ name: 'error-page-2' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink :to="{ name: 'error-page-2' }" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-cross-circle"></i>
                   </div>
@@ -921,10 +832,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <span>Error Page V2</span>
                   </div>
                 </RouterLink>
-                <RouterLink
-                  :to="{ name: 'error-page-3' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink :to="{ name: 'error-page-3' }" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-cross-circle"></i>
                   </div>
@@ -932,10 +840,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <span>Error Page V3</span>
                   </div>
                 </RouterLink>
-                <RouterLink
-                  :to="{ name: 'error-page-4' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink :to="{ name: 'error-page-4' }" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-cross-circle"></i>
                   </div>
@@ -943,10 +848,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <span>Error Page V4</span>
                   </div>
                 </RouterLink>
-                <RouterLink
-                  :to="{ name: 'error-page-5' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink :to="{ name: 'error-page-5' }" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-cross-circle"></i>
                   </div>
@@ -961,11 +863,7 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div class="column is-4">
             <div class="dropdown-item-group">
               <h4 class="column-heading is-secondary">
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:circle"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                 <span>Placeload</span>
               </h4>
 
@@ -979,13 +877,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                   <div class="meta">
                     <span>Placeload V1</span>
-                    <VTag
-                      label="v1.2"
-                      color="primary"
-                      outlined
-                      curved
-                      class="ml-3"
-                    />
+                    <VTag label="v1.2" color="primary" outlined curved class="ml-3" />
                   </div>
                 </RouterLink>
                 <RouterLink
@@ -997,13 +889,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                   <div class="meta">
                     <span>Placeload V2</span>
-                    <VTag
-                      label="v1.2"
-                      color="primary"
-                      outlined
-                      curved
-                      class="ml-3"
-                    />
+                    <VTag label="v1.2" color="primary" outlined curved class="ml-3" />
                   </div>
                 </RouterLink>
                 <RouterLink
@@ -1015,13 +901,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                   <div class="meta">
                     <span>Placeload V3</span>
-                    <VTag
-                      label="v1.2"
-                      color="primary"
-                      outlined
-                      curved
-                      class="ml-3"
-                    />
+                    <VTag label="v1.2" color="primary" outlined curved class="ml-3" />
                   </div>
                 </RouterLink>
                 <RouterLink
@@ -1033,13 +913,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                   <div class="meta">
                     <span>Placeload V4</span>
-                    <VTag
-                      label="v1.2"
-                      color="primary"
-                      outlined
-                      curved
-                      class="ml-3"
-                    />
+                    <VTag label="v1.2" color="primary" outlined curved class="ml-3" />
                   </div>
                 </RouterLink>
               </div>

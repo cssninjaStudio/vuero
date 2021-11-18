@@ -20,12 +20,7 @@ const filteredData = computed(() => {
 })
 
 const valueSingle = ref(0)
-const optionsSingle = [
-  'All Posts',
-  'Recent Posts',
-  'Older Posts',
-  'Popular Posts',
-]
+const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Posts']
 </script>
 
 <template>
@@ -112,7 +107,7 @@ const optionsSingle = [
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/abstracts/mixins';
 
 .card-grid {
   .columns {
@@ -128,7 +123,7 @@ const optionsSingle = [
 
 .card-grid-v4 {
   .card-grid-item {
-    @include vuero-s-card();
+    @include vuero-s-card;
 
     display: flex;
     flex-direction: column;
@@ -164,7 +159,7 @@ const optionsSingle = [
       display: flex;
       align-items: center;
       margin-top: auto;
-      padding: 0 5px 10px 5px;
+      padding: 0 5px 10px;
 
       .meta {
         margin-left: 8px;
@@ -195,7 +190,7 @@ const optionsSingle = [
 .is-dark {
   .card-grid-v4 {
     .card-grid-item {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
     }
   }
 }

@@ -315,10 +315,7 @@ const activeTab = ref<TabId>('all')
 
         <!--Results-->
         <div class="column is-8">
-          <div
-            class="tab-content"
-            :class="[activeTab === 'all' && 'is-active']"
-          >
+          <div class="tab-content" :class="[activeTab === 'all' && 'is-active']">
             <!--Search Results Group-->
             <div class="search-results-group">
               <div class="group-header">
@@ -377,10 +374,7 @@ const activeTab = ref<TabId>('all')
             </div>
           </div>
 
-          <div
-            class="tab-content"
-            :class="[activeTab === 'people' && 'is-active']"
-          >
+          <div class="tab-content" :class="[activeTab === 'people' && 'is-active']">
             <!--Search Results Group-->
             <div class="search-results-group">
               <div class="search-results-list">
@@ -402,10 +396,7 @@ const activeTab = ref<TabId>('all')
             </div>
           </div>
 
-          <div
-            class="tab-content"
-            :class="[activeTab === 'records' && 'is-active']"
-          >
+          <div class="tab-content" :class="[activeTab === 'records' && 'is-active']">
             <!--Search Results Group-->
             <div class="search-results-group">
               <div class="search-results-list">
@@ -438,6 +429,6 @@ const activeTab = ref<TabId>('all')
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
-@import '../../../../scss/pages/generic/_search.scss';
+@import '../../../../scss/abstracts/mixins';
+@import '../../../../scss/pages/generic/search';
 </style>

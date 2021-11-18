@@ -33,13 +33,7 @@ const cardRadius = computed(() => {
 </script>
 
 <template>
-  <div
-    :class="[
-      cardRadius,
-      elevated && 'is-raised',
-      props.color && `is-${props.color}`,
-    ]"
-  >
+  <div :class="[cardRadius, elevated && 'is-raised', props.color && `is-${props.color}`]">
     <slot></slot>
   </div>
 </template>

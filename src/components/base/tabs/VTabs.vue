@@ -61,9 +61,7 @@ const sliderClass = computed(() => {
         :class="[
           props.align === 'centered' && 'is-centered',
           props.align === 'right' && 'is-right',
-          props.type === 'rounded' &&
-            !props.slider &&
-            'is-toggle is-toggle-rounded',
+          props.type === 'rounded' && !props.slider && 'is-toggle is-toggle-rounded',
           props.type === 'toggle' && 'is-toggle',
           props.type === 'boxed' && 'is-boxed',
         ]"

@@ -37,10 +37,7 @@ onUpdated(() => {
 <template>
   <div class="card v-card">
     <div v-if="props.image" class="card-image">
-      <figure
-        class="image is-4by3"
-        :class="[props.format && `is-${props.format}`]"
-      >
+      <figure class="image is-4by3" :class="[props.format && `is-${props.format}`]">
         <img :src="image" alt="" @error.once="placeholderHandler" />
       </figure>
     </div>

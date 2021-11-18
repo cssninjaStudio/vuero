@@ -1,7 +1,15 @@
 module.exports = {
-  extends: ['stylelint-config-standard', 'stylelint-config-prettier'],
-  plugins: ['stylelint-scss'],
-
+  extends: [
+    'stylelint-config-standard-scss',
+    'stylelint-config-recommended-vue',
+    'stylelint-prettier/recommended',
+  ],
+  overrides: [
+    {
+      files: ['*.vue', '**/*.vue'],
+      customSyntax: 'postcss-html',
+    },
+  ],
   rules: {
     /** Font icons */
     'font-family-no-missing-generic-family-keyword': null,
@@ -9,10 +17,15 @@ module.exports = {
     /** SCSS **/
     'at-rule-no-unknown': null,
     'no-descending-specificity': null,
+    'scss/at-mixin-pattern': null,
+    'keyframes-name-pattern': null,
+    'selector-class-pattern': null,
+    'custom-property-pattern': null,
+    'declaration-block-no-redundant-longhand-properties': null,
 
     /** Bulma **/
     'function-name-case': null,
-    'no-duplicate-selectors': null, // TODO
+    'scss/dollar-variable-pattern': null,
     'no-duplicate-selectors': null, // TODO
 
     /** Vuejs **/
@@ -27,6 +40,12 @@ module.exports = {
       true,
       {
         ignorePseudoClasses: ['/^deep/', '/^slotted/', '/^global/'],
+      },
+    ],
+    'value-keyword-case': [
+      'lower',
+      {
+        ignoreFunctions: ['v-bind'],
       },
     ],
   },

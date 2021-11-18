@@ -51,7 +51,7 @@ Onboarding Layouts
       margin: 0 auto;
 
       .onboarding-card {
-        @include vuero-r-card();
+        @include vuero-r-card;
 
         margin: 8px;
         width: calc(33.3% - 16px);
@@ -79,7 +79,7 @@ Onboarding Layouts
 
         .button-wrap {
           text-align: center;
-          padding: 30px 0 20px 0;
+          padding: 30px 0 20px;
 
           .button {
             min-width: 140px;
@@ -105,7 +105,7 @@ Onboarding Layouts
     .onboarding-wrap {
       .onboarding-wrap-inner {
         .onboarding-card {
-          @include vuero-card--dark();
+          @include vuero-card--dark;
 
           h3 {
             color: var(--dark-dark-text);
@@ -154,7 +154,7 @@ Onboarding Layouts
         margin: 0 auto;
 
         .onboarding-card {
-          @include vuero-r-card();
+          @include vuero-r-card;
 
           margin: 8px;
           width: calc(33.3% - 16px);
@@ -169,7 +169,7 @@ Onboarding Layouts
           }
 
           .onboarding-content {
-            padding: 0 20px 30px 20px;
+            padding: 0 20px 30px;
 
             h3 {
               font-family: var(--font-alt);
@@ -186,7 +186,7 @@ Onboarding Layouts
 
             .button-wrap {
               text-align: center;
-              padding: 20px 0 0 0;
+              padding: 20px 0 0;
 
               .button {
                 min-width: 140px;
@@ -215,7 +215,7 @@ Onboarding Layouts
         margin: 0 auto;
 
         .onboarding-card {
-          @include vuero-r-card();
+          @include vuero-r-card;
 
           margin: 8px;
           width: calc(33.3% - 16px);
@@ -230,7 +230,7 @@ Onboarding Layouts
           }
 
           .onboarding-content {
-            padding: 0 20px 30px 20px;
+            padding: 0 20px 30px;
 
             h3 {
               font-family: var(--font-alt);
@@ -247,7 +247,7 @@ Onboarding Layouts
 
             .button-wrap {
               text-align: center;
-              padding: 20px 0 0 0;
+              padding: 20px 0 0;
 
               .button {
                 min-width: 140px;
@@ -268,7 +268,7 @@ Onboarding Layouts
       .onboarding-wrap {
         .onboarding-wrap-inner {
           .onboarding-card {
-            @include vuero-card--dark();
+            @include vuero-card--dark;
           }
         }
       }
@@ -298,6 +298,7 @@ Onboarding Layouts
         flex-wrap: wrap;
       }
     }
+
     .onboarding-wrap {
       .onboarding-wrap-inner {
         .onboarding-card {

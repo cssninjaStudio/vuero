@@ -37,12 +37,7 @@ const isIconify = computed(() => {
   >
     <slot></slot>
     <div v-if="icon" class="form-icon">
-      <i
-        v-if="isIconify"
-        aria-hidden="true"
-        class="iconify"
-        :data-icon="icon"
-      ></i>
+      <i v-if="isIconify" aria-hidden="true" class="iconify" :data-icon="icon"></i>
       <i v-else aria-hidden="true" :class="icon"></i>
     </div>
     <div v-if="isValid" class="validation-icon is-success">

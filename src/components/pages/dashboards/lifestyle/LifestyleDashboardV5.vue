@@ -21,11 +21,7 @@ import {
             <VAvatar size="small" squared>
               <template #avatar>
                 <button class="avatar is-fake is-squared">
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:plus"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:plus"></i>
                 </button>
               </template>
             </VAvatar>
@@ -73,11 +69,7 @@ import {
                     <span class="tag item-duration">{{ item.duration }}</span>
                     <!--Play button-->
                     <button class="play-button">
-                      <i
-                        aria-hidden="true"
-                        class="iconify"
-                        data-icon="feather:play"
-                      ></i>
+                      <i aria-hidden="true" class="iconify" data-icon="feather:play"></i>
                     </button>
                     <!--Bottom Overlay-->
                     <div class="item-overlay"></div>
@@ -90,9 +82,7 @@ import {
                           </h3>
                           <div class="media-meta">
                             <img :src="item.author.avatar" alt="" />
-                            <a class="meta-item is-hoverable">{{
-                              item.author.name
-                            }}</a>
+                            <a class="meta-item is-hoverable">{{ item.author.name }}</a>
                             <span class="separator">|</span>
                             <span v-if="item.new" class="meta-item">NEW</span>
                             <span v-if="item.new" class="separator">|</span>
@@ -130,11 +120,7 @@ import {
                     <span class="tag item-duration">{{ item.duration }}</span>
                     <!--Play button-->
                     <button class="play-button">
-                      <i
-                        aria-hidden="true"
-                        class="iconify"
-                        data-icon="feather:play"
-                      ></i>
+                      <i aria-hidden="true" class="iconify" data-icon="feather:play"></i>
                     </button>
                     <!--Bottom Overlay-->
                     <div class="item-overlay"></div>
@@ -147,9 +133,7 @@ import {
                           </h3>
                           <div class="media-meta">
                             <img :src="item.author.avatar" alt="" />
-                            <a class="meta-item is-hoverable">{{
-                              item.author.name
-                            }}</a>
+                            <a class="meta-item is-hoverable">{{ item.author.name }}</a>
                             <span class="separator">|</span>
                             <span v-if="item.new" class="meta-item">NEW</span>
                             <span v-if="item.new" class="separator">|</span>
@@ -188,11 +172,7 @@ import {
                 <span class="tag item-duration">{{ item.duration }}</span>
                 <!--Play button-->
                 <button class="play-button">
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:play"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:play"></i>
                 </button>
                 <!--Bottom Overlay-->
                 <div class="item-overlay"></div>
@@ -205,15 +185,11 @@ import {
                       </h3>
                       <div class="media-meta">
                         <img :src="item.author.avatar" alt="" />
-                        <a class="meta-item is-hoverable">{{
-                          item.author.name
-                        }}</a>
+                        <a class="meta-item is-hoverable">{{ item.author.name }}</a>
                         <span class="separator">|</span>
                         <span v-if="item.new" class="meta-item">NEW</span>
                         <span v-if="item.new" class="separator">|</span>
-                        <a class="meta-item is-hoverable"
-                          >{{ item.comments }} comments</a
-                        >
+                        <a class="meta-item is-hoverable">{{ item.comments }} comments</a>
                       </div>
                     </div>
                   </div>
@@ -228,7 +204,7 @@ import {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/abstracts/mixins';
 
 .lifestyle-dashboard-v5 {
   .dashboard-title {
@@ -304,7 +280,7 @@ import {
       .group-content {
         .media-feed-item {
           position: relative;
-          @include vuero-r-card();
+          @include vuero-r-card;
 
           padding: 1.5rem;
           min-height: 220px;
@@ -335,6 +311,7 @@ import {
               .overlay-content {
                 .inner-content {
                   padding: 40px;
+
                   .media-title {
                     font-size: 2.5rem;
                     line-height: 43px;
@@ -455,8 +432,9 @@ import {
                   .separator {
                     padding: 0 10px;
                     font-size: 0.8rem;
-                    //color: var(--smoke-white-dark-10);
-                    opacity: 0.6;
+
+                    // color: var(--smoke-white-dark-10);
+                    opacity: 60%;
                     text-align: center;
                     color: var(--smoke-white);
                   }
@@ -471,7 +449,7 @@ import {
             left: 0;
             height: 100%;
             width: 100%;
-            background: linear-gradient(to top, #161616, rgba(255, 0, 0, 0));
+            background: linear-gradient(to top, #161616, rgb(255 0 0 / 0%));
             z-index: 0;
           }
         }
@@ -504,7 +482,7 @@ import {
       .feed-group {
         .group-content {
           .media-feed-item {
-            @include vuero-card--dark();
+            @include vuero-card--dark;
 
             .item-duration {
               background: var(--primary) !important;

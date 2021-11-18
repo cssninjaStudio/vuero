@@ -10,11 +10,7 @@
           <div class="collapse-wrap">
             <a class="parent-link">
               Personal
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:chevron-right"
-              />
+              <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
           </div>
           <ul>
@@ -32,5 +28,5 @@
 </template>
 
 <style lang="scss">
-@import '../../scss/layout/_sidebar-mobile.scss';
+@import '../../scss/layout/sidebar-mobile';
 </style>

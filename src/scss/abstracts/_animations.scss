@@ -22,8 +22,6 @@
 ========================================================================== */
 
 .animated {
-  -webkit-animation-duration: 0.5s;
-  -webkit-animation-fill-mode: both;
   animation-duration: 0.5s;
   animation-fill-mode: both;
 }
@@ -34,24 +32,24 @@
 
 @keyframes pulsate {
   0% {
-    -webkit-transform: scale(0.1, 0.1);
-    opacity: 0;
+    transform: scale(0.1, 0.1);
+    opacity: 0%;
   }
 
   50% {
-    opacity: 1;
+    opacity: 100%;
   }
 
   100% {
-    -webkit-transform: scale(1.2, 1.2);
-    opacity: 0;
+    transform: scale(1.2, 1.2);
+    opacity: 0%;
   }
 }
 
 .pulsate {
   animation: pulsate 1.5s ease-out;
   animation-iteration-count: infinite;
-  opacity: 0;
+  opacity: 0%;
 }
 
 /* ==========================================================================
@@ -60,45 +58,25 @@
 
 @keyframes rotating {
   from {
-    -o-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
 
   to {
-    -o-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
 
-@-webkit-keyframes rotating {
+@keyframes rotating {
   from {
-    -o-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
 
   to {
-    -o-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
 
 .rotating {
-  -webkit-animation: rotating 2s linear infinite;
-  -moz-animation: rotating 2s linear infinite;
-  -ms-animation: rotating 2s linear infinite;
-  -o-animation: rotating 2s linear infinite;
   animation: rotating 2s linear infinite;
 }
 
@@ -106,39 +84,34 @@
 4. Fade In Up
 ========================================================================== */
 
-@-webkit-keyframes fadeInUp {
+@keyframes fadeInUp {
   from {
-    -webkit-transform: translate3d(0, 20px, 0);
     transform: translate3d(0, 20px, 0);
   }
 
   to {
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    opacity: 1;
+    opacity: 100%;
   }
 }
 
 @keyframes fadeInUp {
   from {
-    -webkit-transform: translate3d(0, 20px, 0);
     transform: translate3d(0, 20px, 0);
   }
 
   to {
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    opacity: 1;
+    opacity: 100%;
   }
 }
 
 .preFadeInUp {
-  opacity: 0;
+  opacity: 0%;
 }
 
 .fadeInUp {
-  opacity: 0;
-  -webkit-animation-name: fadeinup;
+  opacity: 0%;
   animation-name: fadeInUp;
 }
 
@@ -146,40 +119,35 @@
 5. Fade In Down
 ========================================================================== */
 
-@-webkit-keyframes fadeInDown {
+@keyframes fadeInDown {
   from {
-    -webkit-transform: translate3d(0, -20px, 0);
     transform: translate3d(0, -20px, 0);
   }
 
   to {
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    opacity: 1;
+    opacity: 100%;
   }
 }
 
 @keyframes fadeInDown {
   from {
-    -webkit-transform: translate3d(0, -20px, 0);
     transform: translate3d(0, -20px, 0);
-    opacity: 0;
+    opacity: 0%;
   }
 
   to {
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    opacity: 1;
+    opacity: 100%;
   }
 }
 
 .preFadeInDown {
-  opacity: 0;
+  opacity: 0%;
 }
 
 .fadeInDown {
-  opacity: 0;
-  -webkit-animation-name: fadeindown;
+  opacity: 0%;
   animation-name: fadeInDown;
 }
 
@@ -187,41 +155,36 @@
 6. Fade In Left
 ========================================================================== */
 
-@-webkit-keyframes fadeInLeft {
+@keyframes fadeInLeft {
   from {
-    -webkit-transform: translate3d(20px, 0, 0);
     transform: translate3d(20px, 0, 0);
-    opacity: 0;
+    opacity: 0%;
   }
 
   to {
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    opacity: 1;
+    opacity: 100%;
   }
 }
 
 @keyframes fadeInLeft {
   from {
-    -webkit-transform: translate3d(20px, 0, 0);
     transform: translate3d(20px, 0, 0);
-    opacity: 0;
+    opacity: 0%;
   }
 
   to {
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    opacity: 1;
+    opacity: 100%;
   }
 }
 
 .preFadeInLeft {
-  opacity: 0;
+  opacity: 0%;
 }
 
 .fadeInLeft {
-  opacity: 0;
-  -webkit-animation-name: fadeinleft;
+  opacity: 0%;
   animation-name: fadeInLeft;
 }
 
@@ -229,14 +192,12 @@
 7. Scale in
 ========================================================================== */
 
-@-webkit-keyframes scaleIn {
+@keyframes scaleIn {
   from {
-    -webkit-transform: scale(0);
     transform: scale(0);
   }
 
   to {
-    -webkit-transform: scale(1);
     transform: scale(1);
   }
 }
@@ -252,15 +213,11 @@
 }
 
 .scaleIn {
-  -webkit-animation: scalein 0.5s;
-  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
   animation: scaleIn 0.5s;
   animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .scaleInTooltip {
-  -webkit-animation: scalein 0.3s;
-  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
   animation: scaleIn 0.3s;
   animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
 }
@@ -269,14 +226,12 @@
 8. Scale out
 ========================================================================== */
 
-@-webkit-keyframes scaleOut {
+@keyframes scaleOut {
   from {
-    -webkit-transform: scale(1);
     transform: scale(1);
   }
 
   to {
-    -webkit-transform: scale(0);
     transform: scale(0);
   }
 }
@@ -292,15 +247,11 @@
 }
 
 .scaleOut {
-  -webkit-animation: scaleout 0.5s;
-  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
   animation: scaleOut 0.5s;
   animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .scaleOutTooltip {
-  -webkit-animation: scaleout 0.3s;
-  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
   animation: scaleOut 0.3s;
   animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
 }
@@ -309,14 +260,12 @@
 9. Scale in circle (used for modal popup)
 ========================================================================== */
 
-@-webkit-keyframes scaleInCircle {
+@keyframes scaleInCircle {
   from {
-    -webkit-transform: scale(0);
     transform: scale(0);
   }
 
   to {
-    -webkit-transform: scale(7);
     transform: scale(7);
   }
 }
@@ -332,8 +281,6 @@
 }
 
 .scaleInCircle {
-  -webkit-animation: scaleincircle 0.6s;
-  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
   animation: scaleInCircle 0.6s;
   animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
 }
@@ -342,25 +289,21 @@
 10. Gelatine
 ========================================================================== */
 
-@-webkit-keyframes gelatine {
+@keyframes gelatine {
   from,
   to {
-    -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
   }
 
   25% {
-    -webkit-transform: scale(0.9, 1.1);
     transform: scale(0.9, 1.1);
   }
 
   50% {
-    -webkit-transform: scale(1.1, 0.9);
     transform: scale(1.1, 0.9);
   }
 
   75% {
-    -webkit-transform: scale(0.95, 1.05);
     transform: scale(0.95, 1.05);
   }
 }
@@ -385,9 +328,6 @@
 }
 
 .gelatine {
-  -webkit-animation: gelatine 0.6s;
-  -webkit-animation-duration: 0.6s;
-  -webkit-animation-fill-mode: both;
   animation: gelatine 0.6s;
   animation-duration: 0.6s;
   animation-fill-mode: both;
@@ -400,17 +340,17 @@
 @keyframes wave {
   0% {
     transform: scale(1);
-    opacity: 1;
+    opacity: 100%;
   }
 
   25% {
     transform: scale(1);
-    opacity: 1;
+    opacity: 100%;
   }
 
   100% {
     transform: scale(4.5);
-    opacity: 0;
+    opacity: 0%;
   }
 }
 
@@ -418,45 +358,35 @@
 12. Levitate
 ========================================================================== */
 
-@-webkit-keyframes levitate {
+@keyframes levitate {
   from {
-    -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
   }
 
   50% {
-    -webkit-transform: translate(0, 10px);
     transform: translate(0, 10px);
   }
 
   to {
-    -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
   }
 }
 
 @keyframes levitate {
   from {
-    -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
   }
 
   50% {
-    -webkit-transform: translate(0, 10px);
     transform: translate(0, 10px);
   }
 
   to {
-    -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
   }
 }
 
 .levitate {
-  -webkit-animation-name: levitate;
-  -webkit-animation-duration: 3s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
   animation-name: levitate;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -489,34 +419,27 @@
 14. Translate Left
 ========================================================================== */
 
-@-webkit-keyframes translateLeft {
+@keyframes translateLeft {
   from {
-    -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
   }
 
   to {
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 }
 
 @keyframes translateLeft {
   from {
-    -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
   }
 
   to {
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 }
 
 .translateLeft {
-  -webkit-animation-name: translateleft;
-  -webkit-animation-duration: 0.3s;
-  -webkit-transition: all 500ms cubic-bezier(0.755, 0.05, 0.855, 0.06);
   animation-name: translateLeft;
   animation-duration: 0.3s;
   transition: all 500ms cubic-bezier(0.755, 0.05, 0.855, 0.06);

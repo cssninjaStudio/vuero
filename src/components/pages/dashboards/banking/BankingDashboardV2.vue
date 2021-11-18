@@ -61,11 +61,7 @@ const goto = (index: number) => {
               <div class="controls">
                 <button class="button is-large">
                   <span class="icon is-medium">
-                    <i
-                      aria-hidden="true"
-                      class="iconify"
-                      data-icon="feather:plus"
-                    ></i>
+                    <i aria-hidden="true" class="iconify" data-icon="feather:plus"></i>
                   </span>
                 </button>
               </div>
@@ -364,11 +360,11 @@ const goto = (index: number) => {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/abstracts/mixins';
 
 .banking-dashboard-v2 {
   .dashboard-card {
-    @include vuero-s-card();
+    @include vuero-s-card;
 
     &:not(:last-child) {
       margin-bottom: 1.5rem;
@@ -497,7 +493,7 @@ const goto = (index: number) => {
                     box-shadow: var(--primary-box-shadow);
 
                     .shape {
-                      opacity: 0.15;
+                      opacity: 15%;
                     }
 
                     .top {
@@ -543,7 +539,7 @@ const goto = (index: number) => {
                     width: 70px;
                     background: var(--white);
                     border-radius: var(--radius-rounded);
-                    opacity: 0;
+                    opacity: 0%;
                     transition: opacity 0.3s;
                   }
 
@@ -742,7 +738,7 @@ const goto = (index: number) => {
         .button-wrap {
           display: flex;
           justify-content: space-between;
-          padding: 20px 0 0 0;
+          padding: 20px 0 0;
 
           .button {
             max-width: 49%;
@@ -756,7 +752,7 @@ const goto = (index: number) => {
 .is-dark {
   .banking-dashboard-v2 {
     .dashboard-card {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
 
       &.is-card-panel {
         background: var(--dark-sidebar-light-6);
@@ -788,6 +784,7 @@ const goto = (index: number) => {
                       var(--primary-light-12) 100%
                     );
                     box-shadow: var(--primary-box-shadow);
+
                     .top {
                       .inactive.dark-image {
                         display: none !important;

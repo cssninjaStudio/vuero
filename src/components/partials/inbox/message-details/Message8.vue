@@ -36,9 +36,7 @@ const dropdown2 = useDropdown(dropdownElement2)
         @error.once="(event) => useViaPlaceholderError(event, '150x150')"
       />
       <div class="message-meta">
-        <span class="message-title">
-          Customer dashboard february bug report
-        </span>
+        <span class="message-title"> Customer dashboard february bug report </span>
         <span class="sender-email">&lt;edouard@vuero.io&gt;</span>
       </div>
       <div class="attachments inbox-hidden-mobile">
@@ -52,39 +50,23 @@ const dropdown2 = useDropdown(dropdownElement2)
         <div>
           <button class="button" @click="dropdown1.toggle">
             <span class="icon is-small">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:more-vertical"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:more-vertical"></i>
             </span>
           </button>
         </div>
         <div class="dropdown-menu">
           <div class="dropdown-content">
             <a class="dropdown-item">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:bookmark"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:bookmark"></i>
               <span>Bookmark</span>
             </a>
             <a class="dropdown-item">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:share-2"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:share-2"></i>
               <span>Share message</span>
             </a>
             <hr class="dropdown-divider" />
             <a class="dropdown-item">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:thumbs-down"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:thumbs-down"></i>
               <span>Mark as spam</span>
             </a>
           </div>
@@ -114,11 +96,7 @@ const dropdown2 = useDropdown(dropdownElement2)
               ></i>
             </a>
             <a class="inbox-action">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:file-text"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:file-text"></i>
             </a>
             <a class="inbox-action">
               <i aria-hidden="true" class="iconify" data-icon="feather:tag"></i>
@@ -131,11 +109,7 @@ const dropdown2 = useDropdown(dropdownElement2)
               ></i>
             </a>
             <a class="inbox-action">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:lock"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:lock"></i>
             </a>
           </div>
         </div>
@@ -145,16 +119,13 @@ const dropdown2 = useDropdown(dropdownElement2)
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             <a href="#">Nunc haec primum fortasse audientis servire debemus.</a>
-            At iste non dolendi status non vocatur voluptas. Quae duo sunt, unum
-            facit. Etiam beatissimum? Haec quo modo conveniant, non sane
-            intellego. Duo Reges: constructio interrete.
+            At iste non dolendi status non vocatur voluptas. Quae duo sunt, unum facit.
+            Etiam beatissimum? Haec quo modo conveniant, non sane intellego. Duo Reges:
+            constructio interrete.
           </p>
           <ul>
             <li>Nam Pyrrho, Aristo, Erillus iam diu abiecti.</li>
-            <li>
-              Maximas vero virtutes iacere omnis necesse est voluptate
-              dominante.
-            </li>
+            <li>Maximas vero virtutes iacere omnis necesse est voluptate dominante.</li>
           </ul>
 
           <p>Nick</p>
@@ -165,11 +136,7 @@ const dropdown2 = useDropdown(dropdownElement2)
           <div class="attachment">
             <span>report.pdf</span>
             <div class="download-icon">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:arrow-down"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:arrow-down"></i>
             </div>
           </div>
         </div>
@@ -222,11 +189,7 @@ const dropdown2 = useDropdown(dropdownElement2)
                     <span>Spelling</span>
                   </a>
                   <a class="dropdown-item">
-                    <i
-                      aria-hidden="true"
-                      class="iconify"
-                      data-icon="feather:at-sign"
-                    ></i>
+                    <i aria-hidden="true" class="iconify" data-icon="feather:at-sign"></i>
                     <span>Mention</span>
                   </a>
                 </div>

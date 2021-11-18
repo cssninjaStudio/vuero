@@ -11,11 +11,7 @@ const route = useRoute()
 </script>
 
 <template>
-  <SidebarLayout
-    :theme="sidebarTheme"
-    close-on-change
-    default-sidebar="dashboard"
-  >
+  <SidebarLayout :theme="sidebarTheme" close-on-change default-sidebar="dashboard">
     <!-- Content Wrapper -->
     <RouterView v-slot="{ Component }">
       <transition name="fade-fast" mode="out-in">

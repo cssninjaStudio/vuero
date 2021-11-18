@@ -105,11 +105,7 @@ watch(
       <template #bottom-links>
         <li>
           <a href="#">
-            <i
-              aria-hidden="true"
-              class="iconify"
-              data-icon="feather:settings"
-            ></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:settings"></i>
           </a>
         </li>
       </template>
@@ -163,10 +159,7 @@ watch(
               @click="isDesktopSidebarOpen = !isDesktopSidebarOpen"
             >
               <span class="menu-toggle has-chevron">
-                <span
-                  :class="[isDesktopSidebarOpen && 'active']"
-                  class="icon-box-toggle"
-                >
+                <span :class="[isDesktopSidebarOpen && 'active']" class="icon-box-toggle">
                   <span class="rotate">
                     <i aria-hidden="true" class="icon-line-top"></i>
                     <i aria-hidden="true" class="icon-line-center"></i>

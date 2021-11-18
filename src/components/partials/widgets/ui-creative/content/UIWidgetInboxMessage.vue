@@ -29,9 +29,7 @@ const props = withDefaults(
           <i aria-hidden="true" class="fas fa-circle"></i>
           <span>{{ props.title }}</span>
         </h5>
-        <p>
-          Where are we in terms of design? We need to review the new screens.
-        </p>
+        <p>Where are we in terms of design? We need to review the new screens.</p>
         <small>{{ props.time }}</small>
       </div>
     </div>

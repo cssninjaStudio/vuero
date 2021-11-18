@@ -20,9 +20,7 @@ You can easily add media elements like the vuero avatars inside your table rows.
         <th scope="col">Last Name</th>
         <th scope="col">Position</th>
         <th scope="col" class="is-end">
-          <div class="dark-inverted is-flex is-justify-content-flex-end">
-            Actions
-          </div>
+          <div class="dark-inverted is-flex is-justify-content-flex-end">Actions</div>
         </th>
       </tr>
     </thead>

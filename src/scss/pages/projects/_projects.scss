@@ -27,7 +27,7 @@
     margin-bottom: 1.5rem;
 
     .project-grid-item {
-      @include vuero-s-card();
+      @include vuero-s-card;
 
       text-align: center;
       box-shadow: none;
@@ -38,7 +38,7 @@
 
         .project-avatar {
           filter: grayscale(0);
-          opacity: 1;
+          opacity: 100%;
         }
       }
 
@@ -47,9 +47,9 @@
         height: 40px;
         width: 40px;
         border-radius: 10px;
-        margin: 0 auto 10px auto;
+        margin: 0 auto 10px;
         filter: grayscale(1);
-        opacity: 0.6;
+        opacity: 60%;
         transition: all 0.3s;
       }
 
@@ -76,7 +76,7 @@
   .all-projects {
     .project-grid {
       .project-grid-item {
-        @include vuero-card--dark();
+        @include vuero-card--dark;
 
         h3 {
           color: var(--dark-dark-text);
@@ -431,7 +431,7 @@
 
           .item-title {
             h3 {
-              opacity: 0.6;
+              opacity: 60%;
             }
           }
         }
@@ -474,7 +474,7 @@
         }
 
         .item-title {
-          padding: 40px 0 40px 0;
+          padding: 40px 0;
 
           h3 {
             font-family: var(--font-alt);

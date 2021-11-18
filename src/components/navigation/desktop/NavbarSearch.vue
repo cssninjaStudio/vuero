@@ -25,10 +25,7 @@ const isScrolling = computed(() => {
 <template>
   <div
     class="navbar-navbar-clean"
-    :class="[
-      isScrolling && 'is-scrolled',
-      props.theme === 'fade' && 'is-transparent',
-    ]"
+    :class="[isScrolling && 'is-scrolled', props.theme === 'fade' && 'is-transparent']"
   >
     <div class="navbar-navbar-inner">
       <!-- Title slot -->
@@ -79,7 +76,7 @@ const isScrolling = computed(() => {
 </template>
 
 <style lang="scss">
-@import '../../../scss/abstracts/_mixins.scss';
-@import '../../../scss/layout/_navbar-extension.scss';
-@import '../../../scss/layout/_responsive.scss';
+@import '../../../scss/abstracts/mixins';
+@import '../../../scss/layout/navbar-extension';
+@import '../../../scss/layout/responsive';
 </style>

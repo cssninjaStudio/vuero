@@ -64,9 +64,9 @@ const participants = [
 
               <div class="project-overview">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid
-                  iudicant sensus? Primum quid tu dicis breve? Etiam
-                  beatissimum? Ne discipulum abducam, times.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid iudicant
+                  sensus? Primum quid tu dicis breve? Etiam beatissimum? Ne discipulum
+                  abducam, times.
                 </p>
                 <VAvatarStack :avatars="participants" />
               </div>
@@ -76,33 +76,27 @@ const participants = [
                   <i aria-hidden="true" class="lnil lnil-vector-pen"></i>
                   <h4>UI/UX Design</h4>
                   <p>
-                    Designing a perfect user experience is in the scope of this
-                    project.
+                    Designing a perfect user experience is in the scope of this project.
                   </p>
                 </div>
                 <div class="project-feature">
                   <i aria-hidden="true" class="lnil lnil-alarm-clock"></i>
                   <h4>1 Week Sprints</h4>
                   <p>
-                    This project development iterations follow a 1 week sprint
-                    pattern.
+                    This project development iterations follow a 1 week sprint pattern.
                   </p>
                 </div>
                 <div class="project-feature">
                   <i aria-hidden="true" class="lnil lnil-calendar"></i>
                   <h4>3 Months</h4>
                   <p>
-                    This project and all related tasks should completed within 3
-                    months.
+                    This project and all related tasks should completed within 3 months.
                   </p>
                 </div>
                 <div class="project-feature">
                   <i aria-hidden="true" class="lnil lnil-diamond-alt"></i>
                   <h4>Fixed</h4>
-                  <p>
-                    This project's budget planning is based on an imutable fixed
-                    bid.
-                  </p>
+                  <p>This project's budget planning is based on an imutable fixed bid.</p>
                 </div>
               </div>
 
@@ -115,8 +109,7 @@ const participants = [
                       <div class="meta">
                         <span>Preliminary Sketches</span>
                         <span>
-                          3MB <i aria-hidden="true" class="fas fa-circle"></i> 5
-                          days ago
+                          3MB <i aria-hidden="true" class="fas fa-circle"></i> 5 days ago
                         </span>
                       </div>
                       <FileCardDropdown />
@@ -129,8 +122,7 @@ const participants = [
                         <span>Project Scope</span>
                         <span>
                           0.8MB
-                          <i aria-hidden="true" class="fas fa-circle"></i> 7
-                          days ago
+                          <i aria-hidden="true" class="fas fa-circle"></i> 7 days ago
                         </span>
                       </div>
                       <FileCardDropdown />
@@ -143,8 +135,7 @@ const participants = [
                         <span>Project Presentation</span>
                         <span>
                           2.4MB
-                          <i aria-hidden="true" class="fas fa-circle"></i> 7
-                          days ago
+                          <i aria-hidden="true" class="fas fa-circle"></i> 7 days ago
                         </span>
                       </div>
                       <FileCardDropdown />
@@ -157,8 +148,7 @@ const participants = [
                         <span>Project Budget</span>
                         <span>
                           0.6MB
-                          <i aria-hidden="true" class="fas fa-circle"></i> 8
-                          days ago
+                          <i aria-hidden="true" class="fas fa-circle"></i> 8 days ago
                         </span>
                       </div>
                       <FileCardDropdown />
@@ -171,8 +161,7 @@ const participants = [
                         <span>Project Notes</span>
                         <span>
                           0.4MB
-                          <i aria-hidden="true" class="fas fa-circle"></i> 8
-                          days ago
+                          <i aria-hidden="true" class="fas fa-circle"></i> 8 days ago
                         </span>
                       </div>
                       <FileCardDropdown />
@@ -185,8 +174,7 @@ const participants = [
                         <span>POC Demo</span>
                         <span>
                           8.75MB
-                          <i aria-hidden="true" class="fas fa-circle"></i> 8
-                          days ago
+                          <i aria-hidden="true" class="fas fa-circle"></i> 8 days ago
                         </span>
                       </div>
                       <FileCardDropdown />
@@ -203,28 +191,19 @@ const participants = [
 
               <VBlock center title="Sketch" subtitle="Design Software">
                 <template #icon>
-                  <VAvatar
-                    size="small"
-                    picture="/images/icons/stacks/sketch.svg"
-                  />
+                  <VAvatar size="small" picture="/images/icons/stacks/sketch.svg" />
                 </template>
               </VBlock>
 
               <VBlock center title="Illustrator" subtitle="Design Software">
                 <template #icon>
-                  <VAvatar
-                    size="small"
-                    picture="/images/icons/stacks/illustrator.svg"
-                  />
+                  <VAvatar size="small" picture="/images/icons/stacks/illustrator.svg" />
                 </template>
               </VBlock>
 
               <VBlock center title="Photoshop" subtitle="Design Software">
                 <template #icon>
-                  <VAvatar
-                    size="small"
-                    picture="/images/icons/stacks/photoshop.svg"
-                  />
+                  <VAvatar size="small" picture="/images/icons/stacks/photoshop.svg" />
                 </template>
               </VBlock>
             </div>
@@ -234,28 +213,19 @@ const participants = [
 
               <VBlock center title="Html5" subtitle="Hypertext Markup">
                 <template #icon>
-                  <VAvatar
-                    size="small"
-                    picture="/images/icons/stacks/html5.svg"
-                  />
+                  <VAvatar size="small" picture="/images/icons/stacks/html5.svg" />
                 </template>
               </VBlock>
 
               <VBlock center title="CSS3" subtitle="Cascading Stylesheets">
                 <template #icon>
-                  <VAvatar
-                    size="small"
-                    picture="/images/icons/stacks/css3.svg"
-                  />
+                  <VAvatar size="small" picture="/images/icons/stacks/css3.svg" />
                 </template>
               </VBlock>
 
               <VBlock center title="VueJS" subtitle="Javascript Framework">
                 <template #icon>
-                  <VAvatar
-                    size="small"
-                    picture="/images/icons/stacks/vuejs.svg"
-                  />
+                  <VAvatar size="small" picture="/images/icons/stacks/vuejs.svg" />
                 </template>
               </VBlock>
             </div>
@@ -294,9 +264,9 @@ const participants = [
                 </VBlock>
 
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si
-                  enim ad populum me vocas, eum. Quod cum dixissent, ille
-                  contra. Cur id non ita fit? Duo Reges: constructio interrete.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si enim ad
+                  populum me vocas, eum. Quod cum dixissent, ille contra. Cur id non ita
+                  fit? Duo Reges: constructio interrete.
                 </p>
               </div>
               <!--Team Member-->
@@ -312,9 +282,9 @@ const participants = [
                 </VBlock>
 
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si
-                  enim ad populum me vocas, eum. Quod cum dixissent, ille
-                  contra. Cur id non ita fit? Duo Reges: constructio interrete.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si enim ad
+                  populum me vocas, eum. Quod cum dixissent, ille contra. Cur id non ita
+                  fit? Duo Reges: constructio interrete.
                 </p>
               </div>
               <!--Team Member-->
@@ -330,19 +300,16 @@ const participants = [
                 </VBlock>
 
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si
-                  enim ad populum me vocas, eum. Quod cum dixissent, ille
-                  contra. Cur id non ita fit? Duo Reges: constructio interrete.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si enim ad
+                  populum me vocas, eum. Quod cum dixissent, ille contra. Cur id non ita
+                  fit? Duo Reges: constructio interrete.
                 </p>
               </div>
               <!--Team Member-->
               <div class="column is-6 has-border-bottom">
                 <VBlock center title="Erik K." subtitle="Product Manager">
                   <template #icon>
-                    <VAvatar
-                      size="medium"
-                      picture="/images/avatars/svg/vuero-1.svg"
-                    />
+                    <VAvatar size="medium" picture="/images/avatars/svg/vuero-1.svg" />
                   </template>
 
                   <template #action>
@@ -351,9 +318,9 @@ const participants = [
                 </VBlock>
 
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si
-                  enim ad populum me vocas, eum. Quod cum dixissent, ille
-                  contra. Cur id non ita fit? Duo Reges: constructio interrete.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si enim ad
+                  populum me vocas, eum. Quod cum dixissent, ille contra. Cur id non ita
+                  fit? Duo Reges: constructio interrete.
                 </p>
               </div>
               <!--Team Member-->
@@ -369,9 +336,9 @@ const participants = [
                 </VBlock>
 
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si
-                  enim ad populum me vocas, eum. Quod cum dixissent, ille
-                  contra. Cur id non ita fit? Duo Reges: constructio interrete.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si enim ad
+                  populum me vocas, eum. Quod cum dixissent, ille contra. Cur id non ita
+                  fit? Duo Reges: constructio interrete.
                 </p>
               </div>
               <!--Team Member-->
@@ -387,9 +354,9 @@ const participants = [
                 </VBlock>
 
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si
-                  enim ad populum me vocas, eum. Quod cum dixissent, ille
-                  contra. Cur id non ita fit? Duo Reges: constructio interrete.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si enim ad
+                  populum me vocas, eum. Quod cum dixissent, ille contra. Cur id non ita
+                  fit? Duo Reges: constructio interrete.
                 </p>
               </div>
               <!--Team Member-->
@@ -405,9 +372,9 @@ const participants = [
                 </VBlock>
 
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si
-                  enim ad populum me vocas, eum. Quod cum dixissent, ille
-                  contra. Cur id non ita fit? Duo Reges: constructio interrete.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si enim ad
+                  populum me vocas, eum. Quod cum dixissent, ille contra. Cur id non ita
+                  fit? Duo Reges: constructio interrete.
                 </p>
               </div>
               <!--Team Member-->
@@ -423,9 +390,9 @@ const participants = [
                 </VBlock>
 
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si
-                  enim ad populum me vocas, eum. Quod cum dixissent, ille
-                  contra. Cur id non ita fit? Duo Reges: constructio interrete.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si enim ad
+                  populum me vocas, eum. Quod cum dixissent, ille contra. Cur id non ita
+                  fit? Duo Reges: constructio interrete.
                 </p>
               </div>
             </div>
@@ -684,12 +651,11 @@ const participants = [
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/abstracts/mixins';
 
 /* ==========================================================================
 1. Project Details
 ========================================================================== */
-
 .is-navbar {
   .project-details {
     padding-top: 30px;
@@ -710,7 +676,7 @@ const participants = [
     padding: 20px 0;
 
     .project-details-card {
-      @include vuero-s-card();
+      @include vuero-s-card;
 
       padding: 40px;
 
@@ -846,7 +812,7 @@ const participants = [
     }
 
     .side-card {
-      @include vuero-s-card();
+      @include vuero-s-card;
 
       padding: 40px;
       margin-bottom: 1.5rem;
@@ -862,7 +828,7 @@ const participants = [
     }
 
     .project-team-card {
-      @include vuero-s-card();
+      @include vuero-s-card;
 
       padding: 40px;
       max-width: 940px;
@@ -923,7 +889,7 @@ const participants = [
       }
 
       .task-card {
-        @include vuero-s-card();
+        @include vuero-s-card;
 
         min-height: 200px;
         display: flex !important;
@@ -996,7 +962,7 @@ const participants = [
   .project-details {
     .project-details-inner {
       .project-details-card {
-        @include vuero-card--dark();
+        @include vuero-card--dark;
 
         .card-head {
           .title-wrap {
@@ -1044,7 +1010,7 @@ const participants = [
       }
 
       .side-card {
-        @include vuero-card--dark();
+        @include vuero-card--dark;
 
         h4 {
           color: var(--primary);
@@ -1052,7 +1018,7 @@ const participants = [
       }
 
       .project-team-card {
-        @include vuero-card--dark();
+        @include vuero-card--dark;
 
         .column {
           border-color: var(--dark-sidebar-light-12);
@@ -1076,7 +1042,7 @@ const participants = [
         }
 
         .task-card {
-          @include vuero-card--dark();
+          @include vuero-card--dark;
 
           .title-wrap {
             h3 {

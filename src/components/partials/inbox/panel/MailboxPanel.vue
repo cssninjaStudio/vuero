@@ -17,9 +17,7 @@ const dropdown = useDropdown(dropdownElement)
         <div>
           <button class="button" @click="dropdown.toggle">
             <span class="icon is-small">
-              <i aria-hidden="true" class="material-icons">
-                keyboard_arrow_down</i
-              >
+              <i aria-hidden="true" class="material-icons"> keyboard_arrow_down</i>
             </span>
           </button>
         </div>
@@ -93,9 +91,7 @@ const dropdown = useDropdown(dropdownElement)
               rows="9"
               placeholder="Write your message..."
             ></textarea>
-            <button type="button" class="button send-button">
-              Send Message
-            </button>
+            <button type="button" class="button send-button">Send Message</button>
             <a class="attacv-button">
               <i aria-hidden="true" class="sl sl-icon-paper-clip"></i>
             </a>

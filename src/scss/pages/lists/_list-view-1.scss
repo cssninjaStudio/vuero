@@ -1,6 +1,6 @@
 .list-view-v1 {
   .list-view-item {
-    @include vuero-r-card();
+    @include vuero-r-card;
 
     margin-bottom: 16px;
     padding: 16px;
@@ -118,7 +118,7 @@
 .is-dark {
   .list-view-v1 {
     .list-view-item {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
 
       .list-view-item-inner {
         .meta-left {
@@ -175,7 +175,7 @@
           }
 
           .network {
-            margin: 10px 0 0 0;
+            margin: 10px 0 0;
             justify-content: center;
 
             > span {
@@ -229,7 +229,7 @@
           }
 
           .network {
-            margin: 10px 0 0 0;
+            margin: 10px 0 0;
             justify-content: center;
 
             > span {

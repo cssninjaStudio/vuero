@@ -86,10 +86,7 @@ export const options2 = {
   legend: {
     tooltipHoverFormatter: function (val: string, opts: any) {
       return (
-        val +
-        ' - ' +
-        opts.w.globals.series[opts.seriesIndex][opts.dataPointIndex] +
-        ''
+        val + ' - ' + opts.w.globals.series[opts.seriesIndex][opts.dataPointIndex] + ''
       )
     },
     position: 'top',
@@ -386,7 +383,7 @@ export const options7 = {
   legend: {
     position: 'top',
     horizontalAlign: 'center',
-    //offsetX: -10
+    // offsetX: -10
   },
 }
 
@@ -506,12 +503,7 @@ export const options9 = {
       endingShape: 'rounded',
     },
   },
-  colors: [
-    themeColors.accent,
-    themeColors.info,
-    themeColors.green,
-    themeColors.purple,
-  ],
+  colors: [themeColors.accent, themeColors.info, themeColors.green, themeColors.purple],
   dataLabels: {
     enabled: false,
   },
@@ -801,42 +793,27 @@ export const options14 = {
       data: [
         {
           x: 'Analysis',
-          y: [
-            new Date('2019-02-27').getTime(),
-            new Date('2019-03-04').getTime(),
-          ],
+          y: [new Date('2019-02-27').getTime(), new Date('2019-03-04').getTime()],
           fillColor: themeColors.accent,
         },
         {
           x: 'Design',
-          y: [
-            new Date('2019-03-04').getTime(),
-            new Date('2019-03-08').getTime(),
-          ],
+          y: [new Date('2019-03-04').getTime(), new Date('2019-03-08').getTime()],
           fillColor: themeColors.info,
         },
         {
           x: 'Coding',
-          y: [
-            new Date('2019-03-07').getTime(),
-            new Date('2019-03-10').getTime(),
-          ],
+          y: [new Date('2019-03-07').getTime(), new Date('2019-03-10').getTime()],
           fillColor: themeColors.green,
         },
         {
           x: 'Testing',
-          y: [
-            new Date('2019-03-08').getTime(),
-            new Date('2019-03-12').getTime(),
-          ],
+          y: [new Date('2019-03-08').getTime(), new Date('2019-03-12').getTime()],
           fillColor: themeColors.purple,
         },
         {
           x: 'Deployment',
-          y: [
-            new Date('2019-03-12').getTime(),
-            new Date('2019-03-17').getTime(),
-          ],
+          y: [new Date('2019-03-12').getTime(), new Date('2019-03-17').getTime()],
           fillColor: themeColors.orange,
         },
       ],
@@ -905,8 +882,7 @@ function generateData(
   const _series = []
   while (i < count) {
     const x = Math.floor(Math.random() * (750 - 1 + 1)) + 1
-    const y =
-      Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min
+    const y = Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min
     const z = Math.floor(Math.random() * (75 - 15 + 1)) + 15
 
     _series.push([x, y, z])
@@ -991,8 +967,7 @@ function generateDayWiseTimeSeries(
   let i = 0
   const series = []
   while (i < count) {
-    const y =
-      Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min
+    const y = Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min
 
     series.push([baseval, y])
     baseval += 86400000
@@ -1005,58 +980,38 @@ export const options16 = {
   series: [
     {
       name: 'Team 1',
-      data: generateDayWiseTimeSeries(
-        new Date('11 Feb 2017 GMT').getTime(),
-        20,
-        {
-          min: 10,
-          max: 60,
-        }
-      ),
+      data: generateDayWiseTimeSeries(new Date('11 Feb 2017 GMT').getTime(), 20, {
+        min: 10,
+        max: 60,
+      }),
     },
     {
       name: 'Team 2',
-      data: generateDayWiseTimeSeries(
-        new Date('11 Feb 2017 GMT').getTime(),
-        20,
-        {
-          min: 10,
-          max: 60,
-        }
-      ),
+      data: generateDayWiseTimeSeries(new Date('11 Feb 2017 GMT').getTime(), 20, {
+        min: 10,
+        max: 60,
+      }),
     },
     {
       name: 'Team 3',
-      data: generateDayWiseTimeSeries(
-        new Date('11 Feb 2017 GMT').getTime(),
-        30,
-        {
-          min: 10,
-          max: 60,
-        }
-      ),
+      data: generateDayWiseTimeSeries(new Date('11 Feb 2017 GMT').getTime(), 30, {
+        min: 10,
+        max: 60,
+      }),
     },
     {
       name: 'Team 4',
-      data: generateDayWiseTimeSeries(
-        new Date('11 Feb 2017 GMT').getTime(),
-        10,
-        {
-          min: 10,
-          max: 60,
-        }
-      ),
+      data: generateDayWiseTimeSeries(new Date('11 Feb 2017 GMT').getTime(), 10, {
+        min: 10,
+        max: 60,
+      }),
     },
     {
       name: 'Team 5',
-      data: generateDayWiseTimeSeries(
-        new Date('11 Feb 2017 GMT').getTime(),
-        30,
-        {
-          min: 10,
-          max: 60,
-        }
-      ),
+      data: generateDayWiseTimeSeries(new Date('11 Feb 2017 GMT').getTime(), 30, {
+        min: 10,
+        max: 60,
+      }),
     },
   ],
   title: {
@@ -1316,7 +1271,7 @@ export const options22 = {
   chart: {
     height: 295,
     type: 'radialBar',
-    //offsetY: -20,
+    // offsetY: -20,
     sparkline: {
       enabled: true,
     },
@@ -1361,7 +1316,7 @@ export const options22 = {
   },
   grid: {
     padding: {
-      //top: -10
+      // top: -10
     },
   },
   fill: {

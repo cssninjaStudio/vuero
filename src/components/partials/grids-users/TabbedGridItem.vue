@@ -58,11 +58,7 @@ onUnmounted(() => {
             :class="[tab === 'posts' && 'is-active']"
             @click="tab = 'posts'"
           >
-            <i
-              aria-hidden="true"
-              class="iconify"
-              data-icon="feather:activity"
-            ></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:activity"></i>
           </a>
           <a
             data-target-section="subsection-2"
@@ -70,11 +66,7 @@ onUnmounted(() => {
             :class="[tab === 'projects' && 'is-active']"
             @click="tab = 'projects'"
           >
-            <i
-              aria-hidden="true"
-              class="iconify"
-              data-icon="feather:briefcase"
-            ></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:briefcase"></i>
           </a>
           <a
             data-target-section="subsection-3"
@@ -82,11 +74,7 @@ onUnmounted(() => {
             :class="[tab === 'tasks' && 'is-active']"
             @click="tab = 'tasks'"
           >
-            <i
-              aria-hidden="true"
-              class="iconify"
-              data-icon="feather:check-circle"
-            ></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:check-circle"></i>
           </a>
           <div class="icon-tabs-naver"></div>
         </div>
@@ -151,11 +139,7 @@ onUnmounted(() => {
       </button>
       <button class="button v-button is-dark-outlined">
         <span class="icon">
-          <i
-            aria-hidden="true"
-            class="iconify"
-            data-icon="feather:message-circle"
-          ></i>
+          <i aria-hidden="true" class="iconify" data-icon="feather:message-circle"></i>
         </span>
         <span>Talk</span>
       </button>

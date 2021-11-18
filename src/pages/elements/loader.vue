@@ -61,9 +61,9 @@ useHead({
                 subtitle="Sales Manager"
               >
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Quibusnam praeteritis? At multis se probavit. Quoniam, si dis
-                  placet, ab Epicuro loqui discimus. Et ille ridens.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quibusnam
+                  praeteritis? At multis se probavit. Quoniam, si dis placet, ab Epicuro
+                  loqui discimus. Et ille ridens.
                 </p>
               </VCardAction>
             </VLoader>
@@ -77,20 +77,15 @@ useHead({
                 subtitle="Sales Manager"
               >
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Quibusnam praeteritis? At multis se probavit. Quoniam, si dis
-                  placet, ab Epicuro loqui discimus. Et ille ridens.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quibusnam
+                  praeteritis? At multis se probavit. Quoniam, si dis placet, ab Epicuro
+                  loqui discimus. Et ille ridens.
                 </p>
               </VCardAction>
             </VLoader>
           </div>
           <div class="column is-4">
-            <VLoader
-              card="regular"
-              size="small"
-              :active="isLoaderActive"
-              translucent
-            >
+            <VLoader card="regular" size="small" :active="isLoaderActive" translucent>
               <VCardAction
                 avatar="/demo/avatars/19.jpg"
                 badge="/images/icons/flags/germany.svg"
@@ -98,9 +93,9 @@ useHead({
                 subtitle="Sales Manager"
               >
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Quibusnam praeteritis? At multis se probavit. Quoniam, si dis
-                  placet, ab Epicuro loqui discimus. Et ille ridens.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quibusnam
+                  praeteritis? At multis se probavit. Quoniam, si dis placet, ab Epicuro
+                  loqui discimus. Et ille ridens.
                 </p>
               </VCardAction>
             </VLoader>
@@ -115,9 +110,9 @@ useHead({
                 radius="smooth"
               >
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Quibusnam praeteritis? At multis se probavit. Quoniam, si dis
-                  placet, ab Epicuro loqui discimus. Et ille ridens.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quibusnam
+                  praeteritis? At multis se probavit. Quoniam, si dis placet, ab Epicuro
+                  loqui discimus. Et ille ridens.
                 </p>
               </VCardAction>
             </VLoader>
@@ -132,9 +127,9 @@ useHead({
                 radius="rounded"
               >
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Quibusnam praeteritis? At multis se probavit. Quoniam, si dis
-                  placet, ab Epicuro loqui discimus. Et ille ridens.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quibusnam
+                  praeteritis? At multis se probavit. Quoniam, si dis placet, ab Epicuro
+                  loqui discimus. Et ille ridens.
                 </p>
               </VCardAction>
             </VLoader>
@@ -149,9 +144,9 @@ useHead({
                 radius="rounded"
               >
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Quibusnam praeteritis? At multis se probavit. Quoniam, si dis
-                  placet, ab Epicuro loqui discimus. Et ille ridens.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quibusnam
+                  praeteritis? At multis se probavit. Quoniam, si dis placet, ab Epicuro
+                  loqui discimus. Et ille ridens.
                 </p>
               </VCardAction>
             </VLoader>

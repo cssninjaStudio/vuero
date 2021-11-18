@@ -27,16 +27,8 @@ watch(completed, () => {
 
 <template>
   <div>
-    <div
-      v-for="todo in todos"
-      :key="todo.id"
-      class="inner-list-item media-flex-center"
-    >
-      <VAnimatedCheckbox
-        v-model="completed"
-        :value="todo.title"
-        :color="color"
-      />
+    <div v-for="todo in todos" :key="todo.id" class="inner-list-item media-flex-center">
+      <VAnimatedCheckbox v-model="completed" :value="todo.title" :color="color" />
       <div class="flex-meta is-light">
         <a href="#">{{ todo.title }}</a>
         <span>{{ todo.time }}</span>

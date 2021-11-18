@@ -32,7 +32,7 @@
     }
 
     .v-avatar {
-      margin: 0 auto 12px auto;
+      margin: 0 auto 12px;
     }
 
     .anim-icon {
@@ -115,10 +115,10 @@
   }
 
   .profile-body {
-    padding: 10px 0 20px 0;
+    padding: 10px 0 20px;
 
     .profile-card {
-      @include vuero-s-card();
+      @include vuero-s-card;
 
       padding: 30px;
 
@@ -410,7 +410,7 @@
 
               > .v-avatar {
                 display: block;
-                margin: 0 auto 8px auto;
+                margin: 0 auto 8px;
               }
 
               h3 {
@@ -616,7 +616,7 @@
 
     .profile-body {
       .profile-card {
-        @include vuero-card--dark();
+        @include vuero-card--dark;
 
         .profile-card-section {
           border-color: var(--dark-sidebar-light-12);
@@ -721,7 +721,7 @@
   padding-bottom: 60px;
 
   .account-box {
-    @include vuero-s-card();
+    @include vuero-s-card;
 
     &.is-navigation {
       .media-flex-center {
@@ -877,7 +877,7 @@
               text-align: center;
 
               .filepond-profile-wrap {
-                margin: 0 auto 10px auto !important;
+                margin: 0 auto 10px !important;
               }
             }
 
@@ -978,7 +978,7 @@
 .is-dark {
   .account-wrapper {
     .account-box {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
 
       &.is-navigation {
         .account-menu {
@@ -1090,7 +1090,7 @@
           box-shadow: var(--light-box-shadow);
 
           .edit-icon {
-            opacity: 1;
+            opacity: 100%;
             pointer-events: all;
           }
 
@@ -1128,7 +1128,7 @@
           width: 18px;
           border-radius: var(--radius-rounded);
           background: var(--fade-grey-light-3);
-          opacity: 0;
+          opacity: 0%;
           pointer-events: none;
           transition: all 0.3s;
 

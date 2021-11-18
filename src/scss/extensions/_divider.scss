@@ -21,11 +21,12 @@ $divider-color: $grey-light !default;
   display: inline-block;
   font-size: $divider-font-size;
   padding: 0.4rem 0.8rem;
-  -webkit-transform: translateY(-1.1rem);
-  -ms-transform: translateY(-1.1rem);
+  transform: translateY(-1.1rem);
+  transform: translateY(-1.1rem);
   transform: translateY(-1.1rem);
   text-align: center;
 }
+
 .is-divider-vertical {
   @include tablet {
     display: block;
@@ -37,6 +38,7 @@ $divider-color: $grey-light !default;
     position: relative;
     border-top: none;
     min-height: 2rem;
+
     &::before {
       border-left: $divider-thickness solid $divider-background-color;
       bottom: 1rem;
@@ -45,17 +47,18 @@ $divider-color: $grey-light !default;
       left: 50%;
       position: absolute;
       top: 1rem;
-      -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      transform: translateX(-50%);
       transform: translateX(-50%);
     }
+
     &[data-content]::after {
       position: absolute;
       left: 50%;
       top: 50%;
       padding: 0.1rem;
-      -webkit-transform: translateY(-50%) translateX(-50%);
-      -ms-transform: translateY(-50%) translateX(-50%);
+      transform: translateY(-50%) translateX(-50%);
+      transform: translateY(-50%) translateX(-50%);
       transform: translateY(-50%) translateX(-50%);
     }
   }

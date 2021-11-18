@@ -3,12 +3,7 @@ let instances = 0
 </script>
 
 <script setup lang="ts">
-export type VSwitchSegmentColor =
-  | 'primary'
-  | 'info'
-  | 'success'
-  | 'warning'
-  | 'danger'
+export type VSwitchSegmentColor = 'primary' | 'info' | 'success' | 'warning' | 'danger'
 export interface VSwitchSegmentEmits {
   (e: 'update:modelValue', value: boolean): void
 }

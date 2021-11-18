@@ -100,9 +100,9 @@ useHead({
                 <VTag color="green" label="trending" rounded />
               </template>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Quibusnam praeteritis? At multis se probavit. Quoniam, si dis
-                placet, ab Epicuro loqui discimus. Et ille ridens.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quibusnam
+                praeteritis? At multis se probavit. Quoniam, si dis placet, ab Epicuro
+                loqui discimus. Et ille ridens.
               </p>
             </VCardAction>
           </div>
@@ -117,9 +117,9 @@ useHead({
                 <VAction>View</VAction>
               </template>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Quibusnam praeteritis? At multis se probavit. Quoniam, si dis
-                placet, ab Epicuro loqui discimus. Et ille ridens.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quibusnam
+                praeteritis? At multis se probavit. Quoniam, si dis placet, ab Epicuro
+                loqui discimus. Et ille ridens.
               </p>
             </VCardAction>
           </div>
@@ -135,9 +135,9 @@ useHead({
                 <WidgetDropdown />
               </template>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Quibusnam praeteritis? At multis se probavit. Quoniam, si dis
-                placet, ab Epicuro loqui discimus. Et ille ridens.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quibusnam
+                praeteritis? At multis se probavit. Quoniam, si dis placet, ab Epicuro
+                loqui discimus. Et ille ridens.
               </p>
             </VCardAction>
           </div>

@@ -9,9 +9,7 @@ export const useUserSession = defineStore('userSession', () => {
   const user = ref<Partial<UserData>>()
   const loading = ref(true)
 
-  const isLoggedIn = computed(
-    () => token.value !== undefined && token.value !== ''
-  )
+  const isLoggedIn = computed(() => token.value !== undefined && token.value !== '')
 
   function setUser(newUser: Partial<UserData>) {
     user.value = newUser

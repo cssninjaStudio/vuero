@@ -17,9 +17,7 @@ const props = withDefaults(defineProps<VFlexPaginationProps>(), {
 
 const { t } = useI18n()
 const route = useRoute()
-const lastPage = computed(
-  () => Math.ceil(props.totalItems / props.itemPerPage) || 1
-)
+const lastPage = computed(() => Math.ceil(props.totalItems / props.itemPerPage) || 1)
 const totalPageDisplayed = computed(() =>
   lastPage.value > props.maxLinksDisplayed - 2
     ? props.maxLinksDisplayed - 2
@@ -29,8 +27,7 @@ const pages = computed(() => {
   const _pages = []
   let firstButton = props.currentPage - Math.floor(totalPageDisplayed.value / 2)
   let lastButton =
-    firstButton +
-    (totalPageDisplayed.value - Math.ceil(totalPageDisplayed.value % 2))
+    firstButton + (totalPageDisplayed.value - Math.ceil(totalPageDisplayed.value % 2))
 
   if (firstButton < 1) {
     firstButton = 1
@@ -54,9 +51,7 @@ const pages = computed(() => {
 })
 
 const showFirstLink = computed(() => pages.value[0] > 1)
-const showLastLink = computed(
-  () => pages.value[pages.value.length - 1] < lastPage.value
-)
+const showLastLink = computed(() => pages.value[pages.value.length - 1] < lastPage.value)
 
 const paginatedLink = (page = 1) => {
   const _page = Math.min(page, lastPage.value)
@@ -100,22 +95,14 @@ zh-CN:
       :to="paginatedLink(currentPage - 1)"
       class="pagination-previous has-chevron"
     >
-      <i
-        aria-hidden="true"
-        class="iconify"
-        data-icon="feather:chevron-left"
-      ></i>
+      <i aria-hidden="true" class="iconify" data-icon="feather:chevron-left"></i>
     </RouterLink>
     <RouterLink
       v-if="lastPage > 1"
       :to="paginatedLink(currentPage + 1)"
       class="pagination-next has-chevron"
     >
-      <i
-        aria-hidden="true"
-        class="iconify"
-        data-icon="feather:chevron-right"
-      ></i>
+      <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right"></i>
     </RouterLink>
 
     <ul class="pagination-list">

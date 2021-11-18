@@ -7,13 +7,7 @@
           <!--Dropdown-->
           <GraphDropdown />
 
-          <svg
-            id="stock-chart-1"
-            data-vivus
-            viewBox="0 0 250 60"
-            width="250"
-            height="90"
-          >
+          <svg id="stock-chart-1" data-vivus viewBox="0 0 250 60" width="250" height="90">
             <path
               d="M 209.328 17.34 C 221.956 17.588 235.264 32.599 250 22.328"
               fill="none"
@@ -24,22 +18,16 @@
               stroke-linecap="round"
               stroke-miterlimit="3"
             ></path>
-            <linearGradient
-              id="_lgradient_1"
-              x1="0%"
-              y1="50%"
-              x2="100%"
-              y2="50%"
-            >
+            <linearGradient id="_lgradient_1" x1="0%" y1="50%" x2="100%" y2="50%">
               <stop
                 offset="0%"
                 stop-opacity="1"
-                style="stop-color: rgb(65, 184, 131)"
+                style="stop-color: rgb(65 184 131)"
               ></stop>
               <stop
                 offset="100%"
                 stop-opacity="1"
-                style="stop-color: rgb(182, 240, 214)"
+                style="stop-color: rgb(182 240 214)"
               ></stop>
             </linearGradient>
             <path
@@ -82,13 +70,7 @@
           <!--Dropdown-->
           <GraphDropdown />
 
-          <svg
-            id="stock-chart-2"
-            data-vivus
-            viewBox="0 0 250 60"
-            width="250"
-            height="90"
-          >
+          <svg id="stock-chart-2" data-vivus viewBox="0 0 250 60" width="250" height="90">
             <path
               vector-effect="non-scaling-stroke"
               d="M209.3,32.3c12.6,0.2,25.9,15.3,40.7,5"
@@ -99,22 +81,12 @@
               stroke-linecap="round"
               stroke-miterlimit="3"
             />
-            <text
-              transform="matrix(1 0 0 1 195 20)"
-              stroke="none"
-              fill="rgb(51, 51, 51)"
-            >
+            <text transform="matrix(1 0 0 1 195 20)" stroke="none" fill="rgb(51, 51, 51)">
               -5%
             </text>
-            <linearGradient
-              id="_lgradient_2"
-              x1="0%"
-              y1="50%"
-              x2="100%"
-              y2="50%"
-            >
-              <stop offset="0" style="stop-color: rgb(51, 51, 51)" />
-              <stop offset="1" style="stop-color: rgb(87, 83, 83)" />
+            <linearGradient id="_lgradient_2" x1="0%" y1="50%" x2="100%" y2="50%">
+              <stop offset="0" style="stop-color: rgb(51 51 51)" />
+              <stop offset="1" style="stop-color: rgb(87 83 83)" />
             </linearGradient>
             <path
               fill="none"
@@ -150,13 +122,7 @@
           <!--Dropdown-->
           <GraphDropdown />
 
-          <svg
-            id="stock-chart-3"
-            data-vivus
-            viewBox="0 0 250 60"
-            width="250"
-            height="90"
-          >
+          <svg id="stock-chart-3" data-vivus viewBox="0 0 250 60" width="250" height="90">
             <path
               fill="none"
               vector-effect="non-scaling-stroke"
@@ -174,15 +140,9 @@
             >
               +8%
             </text>
-            <linearGradient
-              id="_lgradient_3"
-              x1="0%"
-              y1="50%"
-              x2="100%"
-              y2="50%"
-            >
-              <stop offset="0" style="stop-color: rgb(255, 51, 102)" />
-              <stop offset="1" style="stop-color: rgb(255, 143, 171)" />
+            <linearGradient id="_lgradient_3" x1="0%" y1="50%" x2="100%" y2="50%">
+              <stop offset="0" style="stop-color: rgb(255 51 102)" />
+              <stop offset="1" style="stop-color: rgb(255 143 171)" />
             </linearGradient>
             <path
               fill="none"
@@ -390,7 +350,7 @@
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/abstracts/mixins';
 
 .stock-dashboard {
   .stock {
@@ -507,7 +467,7 @@
     > svg {
       max-width: 100%;
       min-height: 90px;
-      margin: 0 auto 16px auto;
+      margin: 0 auto 16px;
       display: block;
 
       text {
@@ -598,7 +558,7 @@
   }
 
   .stock-card {
-    @include vuero-r-card();
+    @include vuero-r-card;
 
     .action-bar {
       display: flex;
@@ -677,7 +637,7 @@
     }
 
     .stock-card {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
 
       .action-bar {
         h3 {

@@ -43,10 +43,7 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
                   >
                     <template #icon>
                       <VIconBox color="purple" rounded>
-                        <i
-                          aria-hidden="true"
-                          class="lnil lnil-analytics-alt-1"
-                        ></i>
+                        <i aria-hidden="true" class="lnil lnil-analytics-alt-1"></i>
                       </VIconBox>
                     </template>
                   </VBlock>
@@ -126,9 +123,7 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
             <i aria-hidden="true" class="lnil lnil-crown-alt-1"></i>
             <div class="cta-content">
               <h4>Hey Erik, you're doing great.</h4>
-              <p class="white-text">
-                Start using our team and project management tools
-              </p>
+              <p class="white-text">Start using our team and project management tools</p>
               <a class="link inverted-text">Learn More</a>
             </div>
           </div>
@@ -170,7 +165,7 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/abstracts/mixins';
 
 .is-navbar {
   .personal-dashboard {
@@ -209,7 +204,7 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
 
   .dashboard-body {
     .dashboard-card {
-      @include vuero-s-card();
+      @include vuero-s-card;
 
       font-family: var(--font);
 
@@ -265,13 +260,14 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
         min-height: 320px;
         border-radius: var(--radius-large);
         box-shadow: var(--primary-box-shadow);
+
         .lnil,
         .lnir {
           position: absolute;
           bottom: 1rem;
           right: 1rem;
           font-size: 4rem;
-          opacity: 0.3;
+          opacity: 30%;
         }
 
         .cta-content {
@@ -294,10 +290,11 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
 
           &:hover {
             color: var(--smoke-white);
-            opacity: 0.6;
+            opacity: 60%;
           }
         }
       }
+
       &.is-gauge {
         position: relative;
 
@@ -332,7 +329,7 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
 
     .dashboard-body {
       .dashboard-card {
-        @include vuero-card--dark();
+        @include vuero-card--dark;
 
         &.is-upgrade {
           background: var(--primary);
@@ -409,13 +406,13 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
         .quick-stats {
           .quick-stats-inner {
             .quick-stat {
-              padding: 20px 20px;
+              padding: 20px;
 
               .media-flex-center {
                 flex-direction: column;
 
                 .flex-meta {
-                  margin: 2px 0 0 0;
+                  margin: 2px 0 0;
                   text-align: center;
                 }
               }

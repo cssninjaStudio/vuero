@@ -34,9 +34,7 @@ useHead({
                 title="Buttons"
                 content="Get familiar with the Vuero button styles. Code examples included."
               >
-                <RouterLink :to="{ name: 'elements-button' }">
-                  Get Started
-                </RouterLink>
+                <RouterLink :to="{ name: 'elements-button' }"> Get Started </RouterLink>
 
                 <template #icon>
                   <img
@@ -80,9 +78,7 @@ useHead({
                 title="Dropdowns"
                 content="Get familiar with the Vuero dropdown styles. Code examples included."
               >
-                <RouterLink :to="{ name: 'elements-dropdown' }">
-                  Get Started
-                </RouterLink>
+                <RouterLink :to="{ name: 'elements-dropdown' }"> Get Started </RouterLink>
 
                 <template #icon>
                   <img
@@ -103,9 +99,7 @@ useHead({
                 title="Modals"
                 content="Get familiar with the Vuero modal styles. Code examples included."
               >
-                <RouterLink :to="{ name: 'elements-modal' }">
-                  Get Started
-                </RouterLink>
+                <RouterLink :to="{ name: 'elements-modal' }"> Get Started </RouterLink>
 
                 <template #icon>
                   <img
@@ -126,9 +120,7 @@ useHead({
                 title="Progress"
                 content="Get familiar with the Vuero progress bar styles. Code examples included."
               >
-                <RouterLink :to="{ name: 'elements-progress' }">
-                  Get Started
-                </RouterLink>
+                <RouterLink :to="{ name: 'elements-progress' }"> Get Started </RouterLink>
 
                 <template #icon>
                   <img
@@ -172,9 +164,7 @@ useHead({
                 title="Checkboxes"
                 content="Get familiar with the Vuero checkboxes styles. Code examples included."
               >
-                <RouterLink :to="{ name: 'elements-checkbox' }">
-                  Get Started
-                </RouterLink>
+                <RouterLink :to="{ name: 'elements-checkbox' }"> Get Started </RouterLink>
 
                 <template #icon>
                   <img
@@ -225,5 +215,5 @@ useHead({
 </template>
 
 <style lang="scss">
-@import '../../scss/pages/dashboards/_hub.scss';
+@import '../../scss/pages/dashboards/hub';
 </style>

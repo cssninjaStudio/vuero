@@ -34,7 +34,7 @@
     }
 
     &.is-scrolled {
-      box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12);
+      box-shadow: 0 0 8px 0 rgb(0 0 0 / 12%);
     }
 
     &:not(.is-scrolled) {
@@ -142,7 +142,7 @@
                   }
 
                   &:nth-child(2) {
-                    //text-transform: uppercase;
+                    // text-transform: uppercase;
                     color: var(--light-text);
                     font-size: 0.85rem;
                   }
@@ -247,7 +247,7 @@
             .dropdown-head {
               display: flex;
               align-items: center;
-              padding: 20px 16px 20px 16px;
+              padding: 20px 16px;
               margin-bottom: 12px;
               background: #fafafa;
 

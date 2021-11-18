@@ -1,7 +1,4 @@
-import {
-  createRouter as createClientRouter,
-  createWebHistory,
-} from 'vue-router'
+import { createRouter as createClientRouter, createWebHistory } from 'vue-router'
 import * as NProgress from 'nprogress'
 
 /**

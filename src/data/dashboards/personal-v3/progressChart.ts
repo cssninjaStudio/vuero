@@ -38,7 +38,7 @@ export const progressGaugeOptions = ref({
   },
 })
 
-//For demo purpose
+// For demo purpose
 export const onprogressGaugeReady = (billboard: Chart) => {
   setTimeout(function () {
     billboard.load({

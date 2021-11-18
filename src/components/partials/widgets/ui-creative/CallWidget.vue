@@ -23,11 +23,7 @@ const props = defineProps<{
     <h3>Call {{ props.username }}?</h3>
     <div class="actions">
       <a class="action">
-        <i
-          aria-hidden="true"
-          class="iconify"
-          data-icon="feather:message-square"
-        ></i>
+        <i aria-hidden="true" class="iconify" data-icon="feather:message-square"></i>
       </a>
       <a class="action">
         <i aria-hidden="true" class="iconify" data-icon="feather:phone"></i>

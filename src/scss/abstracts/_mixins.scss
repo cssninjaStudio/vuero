@@ -249,7 +249,7 @@
 }
 
 @mixin vuero-r-card() {
-  @include vuero-card();
+  @include vuero-card;
 
   flex: 1;
   display: inline-block;
@@ -261,7 +261,7 @@
   transition: all 0.3s;
 }
 @mixin vuero-s-card() {
-  @include vuero-card();
+  @include vuero-card;
 
   flex: 1;
   display: inline-block;
@@ -273,7 +273,7 @@
   transition: all 0.3s;
 }
 @mixin vuero-l-card() {
-  @include vuero-card();
+  @include vuero-card;
 
   flex: 1;
   display: inline-block;

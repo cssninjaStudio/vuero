@@ -51,7 +51,7 @@
       height: calc(100% - 70px);
       overflow-y: auto;
       margin-top: 10px;
-      padding: 0 20px 20px 20px;
+      padding: 0 20px 20px;
 
       li {
         &.is-active {
@@ -130,6 +130,7 @@
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
+
             // display: none;
 
             li {
@@ -171,8 +172,8 @@
           cursor: default;
           pointer-events: none;
           height: 10px;
-          margin: 5px 0 10px 0;
-          border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+          margin: 5px 0 10px;
+          border-bottom: 1px solid rgb(0 0 0 / 15%);
         }
 
         a {
@@ -213,7 +214,7 @@
       justify-content: flex-start;
       align-items: center;
       border-left: 2px solid transparent;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      border-bottom: 1px solid rgb(0 0 0 / 5%);
       cursor: pointer;
 
       &.is-active {
@@ -369,11 +370,11 @@
       padding: 10px;
       border-left: 2px solid transparent;
       border-bottom: 1px solid var(--fade-grey);
-      opacity: 0.8;
+      opacity: 80%;
       cursor: pointer;
 
       &.is-active {
-        opacity: 1;
+        opacity: 100%;
         background: var(--primary-light-51);
         border-left-color: var(--primary);
 
@@ -465,7 +466,7 @@
 
       .button {
         height: 40px !important;
-        padding: 0 26px 0 26px;
+        padding: 0 26px;
 
         &:hover {
           svg {

@@ -162,9 +162,7 @@ watchEffect(() => {
     <div class="message-meta">
       <span class="name">Alejandro Badajoz</span>
       <span class="email">&lt;alejandro@vuero.io&gt;</span>
-      <span class="subject">
-        New design ideas from the user experience team
-      </span>
+      <span class="subject"> New design ideas from the user experience team </span>
     </div>
     <div class="pushed">Oct 18</div>
   </div>

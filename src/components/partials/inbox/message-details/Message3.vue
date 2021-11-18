@@ -36,9 +36,7 @@ const dropdown2 = useDropdown(dropdownElement2)
         @error.once="(event) => useViaPlaceholderError(event, '150x150')"
       />
       <div class="message-meta">
-        <span class="message-title">
-          Don't forget to send me those budget notes</span
-        >
+        <span class="message-title"> Don't forget to send me those budget notes</span>
         <span class="sender-email">&lt;greta@vuero.io&gt;</span>
       </div>
       <div class="attachments is-vhidden inbox-hidden-mobile">
@@ -52,39 +50,23 @@ const dropdown2 = useDropdown(dropdownElement2)
         <div>
           <button class="button" @click="dropdown1.toggle">
             <span class="icon is-small">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:more-vertical"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:more-vertical"></i>
             </span>
           </button>
         </div>
         <div class="dropdown-menu">
           <div class="dropdown-content">
             <a class="dropdown-item">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:bookmark"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:bookmark"></i>
               <span>Bookmark</span>
             </a>
             <a class="dropdown-item">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:share-2"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:share-2"></i>
               <span>Share message</span>
             </a>
             <hr class="dropdown-divider" />
             <a class="dropdown-item">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:thumbs-down"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:thumbs-down"></i>
               <span>Mark as spam</span>
             </a>
           </div>
@@ -114,11 +96,7 @@ const dropdown2 = useDropdown(dropdownElement2)
               ></i>
             </a>
             <a class="inbox-action">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:file-text"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:file-text"></i>
             </a>
             <a class="inbox-action">
               <i aria-hidden="true" class="iconify" data-icon="feather:tag"></i>
@@ -131,11 +109,7 @@ const dropdown2 = useDropdown(dropdownElement2)
               ></i>
             </a>
             <a class="inbox-action">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:lock"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:lock"></i>
             </a>
           </div>
         </div>
@@ -143,23 +117,23 @@ const dropdown2 = useDropdown(dropdownElement2)
         <div class="mail-content content">
           <p>Hi Erik,</p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suo genere
-            perveniant ad extremum; Non potes, nisi retexueris illa.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suo genere perveniant
+            ad extremum; Non potes, nisi retexueris illa.
           </p>
           <ul>
             <li>Si id dicis, vicimus.</li>
             <li>
-              Roges enim Aristonem, bonane ei videantur haec: vacuitas doloris,
-              divitiae, valitudo;
+              Roges enim Aristonem, bonane ei videantur haec: vacuitas doloris, divitiae,
+              valitudo;
             </li>
             <li>Sed ille, ut dixi, vitiose.</li>
             <li>
-              Nam, ut paulo ante docui, augendae voluptatis finis est doloris
-              omnis amotio.
+              Nam, ut paulo ante docui, augendae voluptatis finis est doloris omnis
+              amotio.
             </li>
             <li>
-              Nam, ut saepe iam dixi, in infirma aetate inbecillaque mente vis
-              naturae quasi per caliginem cernitur;
+              Nam, ut saepe iam dixi, in infirma aetate inbecillaque mente vis naturae
+              quasi per caliginem cernitur;
             </li>
           </ul>
           <p>
@@ -167,19 +141,17 @@ const dropdown2 = useDropdown(dropdownElement2)
               Deinde disputat, quod cuiusque generis animantium statui deceat
               extremum.</mark
             >
-            Ne amores quidem sanctos a sapiente alienos esse arbitrantur. Qui
-            est in parvis malis. Sit enim idem caecus, debilis. Hic nihil fuit,
-            quod quaereremus.
+            Ne amores quidem sanctos a sapiente alienos esse arbitrantur. Qui est in
+            parvis malis. Sit enim idem caecus, debilis. Hic nihil fuit, quod quaereremus.
           </p>
           <p>
-            Negat esse eam, inquit, propter se expetendam. Collatio igitur ista
-            te nihil iuvat. Rationis enim perfectio est virtus; At certe
-            gravius. Laboro autem non sine causa; Nam Pyrrho, Aristo, Erillus
-            iam diu abiecti.
+            Negat esse eam, inquit, propter se expetendam. Collatio igitur ista te nihil
+            iuvat. Rationis enim perfectio est virtus; At certe gravius. Laboro autem non
+            sine causa; Nam Pyrrho, Aristo, Erillus iam diu abiecti.
           </p>
           <p>
-            Nam quid possumus facere melius? Primum divisit ineleganter; Duo
-            Reges: constructio interrete. Erat enim Polemonis. Equidem e Cn.
+            Nam quid possumus facere melius? Primum divisit ineleganter; Duo Reges:
+            constructio interrete. Erat enim Polemonis. Equidem e Cn.
           </p>
 
           <p>Greta Kroppfer</p>
@@ -229,11 +201,7 @@ const dropdown2 = useDropdown(dropdownElement2)
                     <span>Spelling</span>
                   </a>
                   <a class="dropdown-item">
-                    <i
-                      aria-hidden="true"
-                      class="iconify"
-                      data-icon="feather:at-sign"
-                    ></i>
+                    <i aria-hidden="true" class="iconify" data-icon="feather:at-sign"></i>
                     <span>Mention</span>
                   </a>
                 </div>

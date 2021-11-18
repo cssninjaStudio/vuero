@@ -13,14 +13,14 @@
 .is-dark {
   .tile-grid {
     .tile-grid-item {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
     }
   }
 }
 
 .tile-grid-v1 {
   .tile-grid-item {
-    @include vuero-s-card();
+    @include vuero-s-card;
 
     border-radius: 14px;
     padding: 16px;

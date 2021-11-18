@@ -22,8 +22,8 @@ const userStack = userData.userStack as VAvatarProps[]
               <div class="welcome-title">
                 <h3 class="dark-inverted">Hi Erik K.</h3>
                 <p>
-                  You have 6 interviews to conduct during this week. Your
-                  current progress is great.
+                  You have 6 interviews to conduct during this week. Your current progress
+                  is great.
                 </p>
               </div>
               <div class="welcome-progress">
@@ -115,10 +115,7 @@ const userStack = userData.userStack as VAvatarProps[]
               <div class="people">
                 <div class="left">
                   <span class="dark-inverted">Total Interviews</span>
-                  <span>
-                    <a class="is-dark-primary">23 interviews</a> this
-                    month</span
-                  >
+                  <span> <a class="is-dark-primary">23 interviews</a> this month</span>
                 </div>
                 <div class="right">
                   <VAvatarStack :avatars="userStack" :limit="3" />
@@ -251,11 +248,7 @@ const userStack = userData.userStack as VAvatarProps[]
               <VAvatar picture="/demo/avatars/32.jpg" />
             </template>
             <template #action>
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:chevron-right"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right"></i>
             </template>
           </VBlock>
         </a>
@@ -265,11 +258,7 @@ const userStack = userData.userStack as VAvatarProps[]
               <VAvatar picture="/demo/avatars/19.jpg" />
             </template>
             <template #action>
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:chevron-right"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right"></i>
             </template>
           </VBlock>
         </a>
@@ -279,11 +268,7 @@ const userStack = userData.userStack as VAvatarProps[]
               <VAvatar picture="/demo/avatars/12.jpg" />
             </template>
             <template #action>
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:chevron-right"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right"></i>
             </template>
           </VBlock>
         </a>
@@ -293,7 +278,7 @@ const userStack = userData.userStack as VAvatarProps[]
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/abstracts/mixins';
 
 .is-navbar {
   .personal-dashboard {
@@ -313,7 +298,7 @@ const userStack = userData.userStack as VAvatarProps[]
   }
 
   .dashboard-card {
-    @include vuero-l-card();
+    @include vuero-l-card;
 
     font-family: var(--font);
 
@@ -430,7 +415,7 @@ const userStack = userData.userStack as VAvatarProps[]
 .is-dark {
   .personal-dashboard-v3 {
     .dashboard-card {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
     }
   }
 }

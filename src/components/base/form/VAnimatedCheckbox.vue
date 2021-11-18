@@ -67,11 +67,7 @@ watchEffect(updateCheckbox)
 </script>
 
 <template>
-  <div
-    ref="element"
-    class="animated-checkbox"
-    :class="[color && 'is-' + color]"
-  >
+  <div ref="element" class="animated-checkbox" :class="[color && 'is-' + color]">
     <input
       :id="animatedCheckboxId"
       type="checkbox"
@@ -82,17 +78,9 @@ watchEffect(updateCheckbox)
     />
     <label :for="animatedCheckboxId" class="checkmark-wrap">
       <div ref="innerElement" class="shadow-circle"></div>
-      <svg
-        class="checkmark"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 52 52"
-      >
+      <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
         <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none" />
-        <path
-          class="checkmark-check"
-          fill="none"
-          d="M14.1 27.2l7.1 7.2 16.7-16.8"
-        />
+        <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
       </svg>
     </label>
   </div>
@@ -208,7 +196,7 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
     left: 0;
     height: 100%;
     width: 100%;
-    opacity: 0;
+    opacity: 0%;
     cursor: pointer;
     z-index: 1;
   }
@@ -227,11 +215,11 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
       border-radius: var(--radius-rounded);
       border: 1px solid var(--placeholder);
       z-index: 0;
-      opacity: 1;
+      opacity: 100%;
       transition: all 0.2s;
 
       &.is-opaque {
-        opacity: 0;
+        opacity: 0%;
       }
     }
 
@@ -247,7 +235,7 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
       stroke: var(--primary);
     }
 
-    //Checkmark
+    // Checkmark
     .checkmark {
       width: 32px;
       height: 32px;
@@ -261,7 +249,7 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
       box-shadow: inset 0 0 0 var(--primary);
     }
 
-    //Check symbol
+    // Check symbol
     .checkmark-check {
       transform-origin: 50% 50%;
       stroke-dasharray: 48;
@@ -291,7 +279,7 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
     }
   }
 
-  //Keyframes
+  // Keyframes
   @keyframes stroke {
     100% {
       stroke-dashoffset: 0;

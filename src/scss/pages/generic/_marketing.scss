@@ -179,7 +179,7 @@ Marketing Layouts
       background: var(--landing-xxx-dark-2);
 
       .hexagon {
-        opacity: 0.3;
+        opacity: 30%;
       }
 
       .hero-body {
@@ -388,7 +388,7 @@ Marketing Layouts
 
     .price {
       font-size: 1.8rem;
-      margin: 0.75rem 0 1.5rem 0;
+      margin: 0.75rem 0 1.5rem;
       font-weight: bold;
 
       &::after {
@@ -408,7 +408,7 @@ Marketing Layouts
     .trial {
       font-size: 0.9rem;
       font-weight: 600;
-      padding: 2px 21px 2px 21px;
+      padding: 2px 21px;
       color: var(--primary);
       border: 1px solid var(--border);
       display: inline-block;
@@ -656,7 +656,7 @@ Marketing Layouts
     }
 
     .subtitle {
-      opacity: 0.8;
+      opacity: 80%;
     }
 
     .v-button {
@@ -674,6 +674,7 @@ Marketing Layouts
   .boxed-cta {
     background: var(--primary);
     box-shadow: var(--primary-box-shadow);
+
     .v-avatar {
       .avatar {
         border-color: var(--primary-light-8);

@@ -37,7 +37,7 @@
 
     &::-webkit-scrollbar-thumb {
       border-radius: 5px;
-      background: rgba(0, 0, 0, 0.2);
+      background: rgb(0 0 0 / 20%);
     }
   }
 
@@ -133,7 +133,7 @@
                   }
 
                   &:nth-child(2) {
-                    //text-transform: uppercase;
+                    // text-transform: uppercase;
                     color: var(--light-text);
                     font-size: 0.85rem;
                   }
@@ -203,8 +203,8 @@
           cursor: default;
           pointer-events: none;
           height: 10px;
-          margin: 5px 20px 10px 20px;
-          border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+          margin: 5px 20px 10px;
+          border-bottom: 1px solid rgb(0 0 0 / 15%);
 
           &.with-label {
             border-bottom: 0;
@@ -232,6 +232,7 @@
             ul {
               max-height: 500px;
             }
+
             .collapse-wrap > a {
               color: var(--dark-text);
               font-weight: 600;
@@ -522,7 +523,7 @@
       }
     }
 
-    //Messages inner
+    // Messages inner
     .inner {
       overflow-y: hidden !important;
 
@@ -531,14 +532,14 @@
         height: 100%;
         overflow-y: auto !important;
 
-        //Webkit scrollbar
+        // Webkit scrollbar
         &::-webkit-scrollbar {
           width: 3px;
         }
 
         &::-webkit-scrollbar-thumb {
           border-radius: 5px;
-          background: rgba(0, 0, 0, 0.2);
+          background: rgb(0 0 0 / 20%);
         }
 
         li {
@@ -560,13 +561,13 @@
         }
       }
 
-      //New conversation
+      // New conversation
       .is-new-conversation {
         height: 60px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        border-bottom: 1px solid rgb(0 0 0 / 5%);
         cursor: pointer;
 
         .button {
@@ -582,12 +583,12 @@
         }
       }
 
-      //New conversation section
+      // New conversation section
       .new-chat-sidebar {
         overflow: auto;
         height: 100%;
 
-        //Autocomplete
+        // Autocomplete
         .is-autocomplete {
           justify-content: center;
           padding: 0 20px;
@@ -597,7 +598,7 @@
             background: transparent !important;
           }
 
-          //Control
+          // Control
           .control {
             position: relative;
 
@@ -614,7 +615,7 @@
               }
             }
 
-            //Input
+            // Input
             .easy-autocomplete {
               width: 100% !important;
 
@@ -635,13 +636,13 @@
                 }
               }
 
-              //template
+              // template
               .template-wrapper {
                 display: flex !important;
                 justify-content: flex-start;
                 align-items: center;
 
-                //avatar
+                // avatar
                 .avatar-wrapper {
                   position: relative;
                   width: 40px !important;
@@ -664,7 +665,7 @@
                   }
                 }
 
-                //text
+                // text
                 .entry-text {
                   margin-left: 15px;
 
@@ -677,7 +678,7 @@
             }
           }
 
-          //List item
+          // List item
           li {
             height: auto !important;
             padding-top: 8px;
@@ -686,19 +687,19 @@
             border-right: none !important;
           }
 
-          //Container
+          // Container
           .easy-autocomplete-container {
             top: 120% !important;
             border: none !important;
 
             ul {
               border-radius: var(--radius) !important;
-              box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06) !important;
+              box-shadow: -1px 3px 10px 0 rgb(0 0 0 / 6%) !important;
             }
           }
         }
 
-        //cancel button
+        // cancel button
         .is-cancel {
           height: 80px;
           display: flex;
@@ -712,23 +713,23 @@
         }
       }
 
-      //Messages list
+      // Messages list
       ul {
         overflow: auto;
         height: 100%;
       }
 
-      //Conversation item
+      // Conversation item
       li {
         position: relative;
         height: 64px;
 
-        //height: 70px;
+        // height: 70px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
         border-left: 2px solid transparent;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        border-bottom: 1px solid rgb(0 0 0 / 5%);
         cursor: pointer;
 
         &.is-active {
@@ -740,7 +741,7 @@
           }
         }
 
-        //conversation block
+        // conversation block
         .recent-user {
           position: relative;
           width: 100%;
@@ -750,7 +751,7 @@
           padding-left: 20px;
           cursor: pointer;
 
-          //Avatar
+          // Avatar
           .user-container {
             position: relative;
 
@@ -800,13 +801,13 @@
               }
             }
 
-            //Timstamp
+            // Timstamp
 
             /* time {
                             display: block;
                             position: absolute;
 
-                            //top: 2px;
+                            // top: 2px;
                             top: -14px;
                             right: 20px;
                             font-size: .75rem;
@@ -815,7 +816,7 @@
           }
         }
 
-        //user group
+        // user group
         .user-group {
           position: relative;
           width: 100%;
@@ -843,7 +844,7 @@
             }
           }
 
-          //More Indicator
+          // More Indicator
           .more-indicator {
             height: 36px;
             width: 36px;
@@ -865,7 +866,7 @@
           }
         }
 
-        //Timestamp
+        // Timestamp
         time {
           display: block;
           position: absolute;
@@ -875,7 +876,7 @@
           color: var(--muted-grey);
         }
 
-        //Group message
+        // Group message
         .group-message {
           padding: 0 20px;
           margin-top: -20px;
@@ -888,7 +889,7 @@
           }
         }
 
-        //Conversation item hover state
+        // Conversation item hover state
         &:hover {
           background: #fafafa;
         }
@@ -1032,7 +1033,7 @@
           }
         }
 
-        //Avatar
+        // Avatar
         .user-container {
           position: relative;
 

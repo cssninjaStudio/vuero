@@ -44,11 +44,7 @@ import { courses, files, students } from '/@src/data/dashboards/course'
               <a class="is-dark-primary">Week 6 lecture recording</a>
               <div class="block-stats">
                 <span>
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:clock"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:clock"></i>
                   <small>{{ course.duration }}</small>
                 </span>
                 <span>
@@ -65,11 +61,7 @@ import { courses, files, students } from '/@src/data/dashboards/course'
               <a class="is-dark-primary">{{ course.actionLabel }}</a>
               <div class="block-stats">
                 <span>
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:calendar"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:calendar"></i>
                   <small>{{ course.actionText }}</small>
                 </span>
               </div>
@@ -127,11 +119,7 @@ import { courses, files, students } from '/@src/data/dashboards/course'
                   placeholder="Search students..."
                 />
                 <div class="form-icon">
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:search"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
                 </div>
               </div>
             </div>
@@ -141,17 +129,11 @@ import { courses, files, students } from '/@src/data/dashboards/course'
         <!--Table-->
         <div class="flex-table">
           <!--Table item-->
-          <div
-            v-for="student in students"
-            :key="student.id"
-            class="flex-table-item"
-          >
+          <div v-for="student in students" :key="student.id" class="flex-table-item">
             <div class="flex-table-cell is-media is-grow" data-th="">
               <VAvatar :picture="student.picture" size="medium" />
               <div>
-                <span class="item-name dark-inverted">{{
-                  student.username
-                }}</span>
+                <span class="item-name dark-inverted">{{ student.username }}</span>
                 <span class="item-meta">
                   <span>{{ student.progress }}% completed</span>
                 </span>
@@ -176,12 +158,7 @@ import { courses, files, students } from '/@src/data/dashboards/course'
             </div>
             <div class="flex-table-cell cell-end" data-th="Actions">
               <button
-                class="
-                  button
-                  h-button
-                  action-button
-                  is-dark-outlined is-pushed-mobile
-                "
+                class="button h-button action-button is-dark-outlined is-pushed-mobile"
               >
                 Chat
               </button>
@@ -194,7 +171,7 @@ import { courses, files, students } from '/@src/data/dashboards/course'
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/abstracts/mixins';
 
 .course-dashboard {
   .dashboard-title {
@@ -224,7 +201,7 @@ import { courses, files, students } from '/@src/data/dashboards/course'
     margin-bottom: 2rem;
 
     .course-card {
-      @include vuero-l-card();
+      @include vuero-l-card;
 
       .tag {
         height: 2.75em;
@@ -364,7 +341,7 @@ import { courses, files, students } from '/@src/data/dashboards/course'
 
 .tile-grid-v2 {
   .tile-grid-item {
-    @include vuero-s-card();
+    @include vuero-s-card;
 
     border-radius: 14px;
     padding: 16px;
@@ -433,18 +410,21 @@ import { courses, files, students } from '/@src/data/dashboards/course'
   .course-dashboard {
     .course-grid {
       .course-card {
-        @include vuero-card--dark();
+        @include vuero-card--dark;
       }
     }
   }
+
   .tile-grid {
     .tile-grid-item {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
     }
   }
+
   .tile-grid-v2 {
     .tile-grid-item {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
+
       &:hover {
         border-color: var(--primary) !important;
       }

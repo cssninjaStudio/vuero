@@ -94,7 +94,7 @@
   }
 
   &.v-button {
-    padding: 8px 22px 8px 22px;
+    padding: 8px 22px;
     height: 38px;
     line-height: 1.1;
     font-size: 0.95rem;
@@ -118,7 +118,7 @@
 
     &.is-primary {
       &.is-raised:hover {
-        opacity: 0.9;
+        opacity: 90%;
         box-shadow: var(--primary-box-shadow);
       }
 
@@ -129,7 +129,7 @@
 
     &.is-success {
       &.is-raised:hover {
-        opacity: 0.9;
+        opacity: 90%;
         box-shadow: var(--success-box-shadow);
       }
 
@@ -140,7 +140,7 @@
 
     &.is-info {
       &.is-raised:hover {
-        opacity: 0.9;
+        opacity: 90%;
         box-shadow: var(--info-box-shadow);
       }
 
@@ -151,7 +151,7 @@
 
     &.is-warning {
       &.is-raised:hover {
-        opacity: 0.9;
+        opacity: 90%;
         box-shadow: var(--warning-box-shadow);
       }
 
@@ -162,7 +162,7 @@
 
     &.is-danger {
       &.is-raised:hover {
-        opacity: 0.9;
+        opacity: 90%;
         box-shadow: var(--danger-box-shadow);
       }
 
@@ -201,7 +201,7 @@
       color: var(--smoke-white);
 
       &:hover {
-        opacity: 0.95;
+        opacity: 95%;
         box-shadow: var(--primary-box-shadow);
         color: var(--smoke-white) !important;
       }

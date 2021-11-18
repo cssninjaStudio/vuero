@@ -10,15 +10,15 @@
 ========================================================================== */
 
 .r-card {
-  @include vuero-r-card();
+  @include vuero-r-card;
 }
 
 .s-card {
-  @include vuero-s-card();
+  @include vuero-s-card;
 }
 
 .l-card {
-  @include vuero-l-card();
+  @include vuero-l-card;
 }
 
 /* ==========================================================================
@@ -29,7 +29,7 @@
   .r-card,
   .s-card,
   .l-card {
-    @include vuero-card--dark();
+    @include vuero-card--dark;
   }
 }
 
@@ -52,7 +52,7 @@
 .r-card-advanced,
 .s-card-advanced,
 .l-card-advanced {
-  @include vuero-card--advanced();
+  @include vuero-card--advanced;
 }
 
 /* ==========================================================================
@@ -99,7 +99,7 @@
 
 .card {
   &.v-card {
-    @include vuero-v-card();
+    @include vuero-v-card;
   }
 }
 
@@ -110,7 +110,7 @@
 .is-dark {
   .card {
     &.v-card {
-      @include vuero-v-card--dark();
+      @include vuero-v-card--dark;
     }
   }
 }

@@ -33,11 +33,7 @@ const activeTab = ref<TabId>('overview')
           />
           <button class="button is-circle">
             <span class="icon is-small">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:plus"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:plus"></i>
             </span>
           </button>
         </div>
@@ -71,9 +67,9 @@ const activeTab = ref<TabId>('overview')
           </div>
           <div class="meta-description">
             <p>
-              Artist, musician, songwriter, influencer, these are the many names
-              people give me. But for you Iam simply Clarissa. *Forever with all
-              my friends* // Latest video can be found here youtu.be/8Tcee5Cyz
+              Artist, musician, songwriter, influencer, these are the many names people
+              give me. But for you Iam simply Clarissa. *Forever with all my friends* //
+              Latest video can be found here youtu.be/8Tcee5Cyz
             </p>
           </div>
           <div class="meta-achievements">
@@ -90,9 +86,7 @@ const activeTab = ref<TabId>('overview')
                     <h4 class="dark-inverted">On Fire</h4>
                   </div>
                   <div class="popover-body">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                   </div>
                 </div>
               </template>
@@ -111,9 +105,7 @@ const activeTab = ref<TabId>('overview')
                     <h4 class="dark-inverted">Post Veteran</h4>
                   </div>
                   <div class="popover-body">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                   </div>
                 </div>
               </template>
@@ -132,9 +124,7 @@ const activeTab = ref<TabId>('overview')
                     <h4 class="dark-inverted">Social Champion</h4>
                   </div>
                   <div class="popover-body">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                   </div>
                 </div>
               </template>
@@ -363,9 +353,8 @@ const activeTab = ref<TabId>('overview')
                   <h4 class="dark-inverted">Reputation Growth</h4>
                   <span class="is-dark-primary">+ 2,654</span>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Bonum integritas corporis: misera debilitas. Ita ne hoc
-                    quidem modo paria.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bonum
+                    integritas corporis: misera debilitas. Ita ne hoc quidem modo paria.
                   </p>
                 </div>
                 <div class="chart-container">
@@ -445,9 +434,8 @@ const activeTab = ref<TabId>('overview')
                   <h4 class="dark-inverted">Influence Growth</h4>
                   <span class="is-dark-primary">+ 3,624</span>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Bonum integritas corporis: misera debilitas. Ita ne hoc
-                    quidem modo paria.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bonum
+                    integritas corporis: misera debilitas. Ita ne hoc quidem modo paria.
                   </p>
                 </div>
                 <div class="chart-container">
@@ -608,11 +596,7 @@ const activeTab = ref<TabId>('overview')
         </div>
       </div>
 
-      <div
-        v-if="activeTab === 'content'"
-        id="content-tab"
-        class="tab-content is-active"
-      >
+      <div v-if="activeTab === 'content'" id="content-tab" class="tab-content is-active">
         <div class="body-title">
           <h3>Content Stats</h3>
           <VField class="is-minimal-select">
@@ -642,16 +626,13 @@ const activeTab = ref<TabId>('overview')
                     <img
                       src="/demo/photos/faces/girl1.jpg"
                       alt=""
-                      @error.once="
-                        (event) => useViaPlaceholderError(event, '150x150')
-                      "
+                      @error.once="(event) => useViaPlaceholderError(event, '150x150')"
                     />
                   </div>
                   <div class="title-meta">
                     <p>
                       Clarissa generally posts media on:
-                      <span>Mondays at 11am</span>,
-                      <span>Thursdays at 3pm</span>,
+                      <span>Mondays at 11am</span>, <span>Thursdays at 3pm</span>,
                       <span>Fridays at 4pm</span> ...
                     </p>
                   </div>
@@ -1139,9 +1120,7 @@ const activeTab = ref<TabId>('overview')
                   <img
                     src="/demo/photos/30.jpg"
                     alt=""
-                    @error.once="
-                      (event) => useViaPlaceholderError(event, '1280x960')
-                    "
+                    @error.once="(event) => useViaPlaceholderError(event, '1280x960')"
                   />
                 </figure>
               </div>
@@ -1151,36 +1130,28 @@ const activeTab = ref<TabId>('overview')
                     <img
                       src="/demo/photos/33.jpg"
                       alt=""
-                      @error.once="
-                        (event) => useViaPlaceholderError(event, '1280x960')
-                      "
+                      @error.once="(event) => useViaPlaceholderError(event, '1280x960')"
                     />
                   </a>
                   <a>
                     <img
                       src="/demo/photos/34.jpg"
                       alt=""
-                      @error.once="
-                        (event) => useViaPlaceholderError(event, '1280x960')
-                      "
+                      @error.once="(event) => useViaPlaceholderError(event, '1280x960')"
                     />
                   </a>
                   <a>
                     <img
                       src="/demo/photos/35.jpeg"
                       alt=""
-                      @error.once="
-                        (event) => useViaPlaceholderError(event, '1280x960')
-                      "
+                      @error.once="(event) => useViaPlaceholderError(event, '1280x960')"
                     />
                   </a>
                   <a>
                     <img
                       src="/demo/photos/36.jpg"
                       alt=""
-                      @error.once="
-                        (event) => useViaPlaceholderError(event, '1280x960')
-                      "
+                      @error.once="(event) => useViaPlaceholderError(event, '1280x960')"
                     />
                   </a>
                 </div>
@@ -1195,10 +1166,7 @@ const activeTab = ref<TabId>('overview')
                 <div class="post-stats">
                   <span>Most Commented Posts</span>
                   <div class="post-stat">
-                    <i
-                      aria-hidden="true"
-                      class="fas fa-comment text-h-yellow"
-                    ></i>
+                    <i aria-hidden="true" class="fas fa-comment text-h-yellow"></i>
                     <span class="count dark-inverted">2.3K</span>
                   </div>
                 </div>
@@ -1208,9 +1176,7 @@ const activeTab = ref<TabId>('overview')
                   <img
                     src="/demo/photos/31.png"
                     alt=""
-                    @error.once="
-                      (event) => useViaPlaceholderError(event, '1280x960')
-                    "
+                    @error.once="(event) => useViaPlaceholderError(event, '1280x960')"
                   />
                 </figure>
               </div>
@@ -1220,36 +1186,28 @@ const activeTab = ref<TabId>('overview')
                     <img
                       src="/demo/photos/33.jpg"
                       alt=""
-                      @error.once="
-                        (event) => useViaPlaceholderError(event, '1280x960')
-                      "
+                      @error.once="(event) => useViaPlaceholderError(event, '1280x960')"
                     />
                   </a>
                   <a>
                     <img
                       src="/demo/photos/34.jpg"
                       alt=""
-                      @error.once="
-                        (event) => useViaPlaceholderError(event, '1280x960')
-                      "
+                      @error.once="(event) => useViaPlaceholderError(event, '1280x960')"
                     />
                   </a>
                   <a>
                     <img
                       src="/demo/photos/35.jpeg"
                       alt=""
-                      @error.once="
-                        (event) => useViaPlaceholderError(event, '1280x960')
-                      "
+                      @error.once="(event) => useViaPlaceholderError(event, '1280x960')"
                     />
                   </a>
                   <a>
                     <img
                       src="/demo/photos/36.jpg"
                       alt=""
-                      @error.once="
-                        (event) => useViaPlaceholderError(event, '1280x960')
-                      "
+                      @error.once="(event) => useViaPlaceholderError(event, '1280x960')"
                     />
                   </a>
                 </div>
@@ -1264,10 +1222,7 @@ const activeTab = ref<TabId>('overview')
                 <div class="post-stats">
                   <span>Most Engaging Posts</span>
                   <div class="post-stat">
-                    <i
-                      aria-hidden="true"
-                      class="fas fa-hand-paper text-h-green"
-                    ></i>
+                    <i aria-hidden="true" class="fas fa-hand-paper text-h-green"></i>
                     <span class="count dark-inverted">51.6%</span>
                   </div>
                 </div>
@@ -1277,9 +1232,7 @@ const activeTab = ref<TabId>('overview')
                   <img
                     src="/demo/photos/32.jpg"
                     alt=""
-                    @error.once="
-                      (event) => useViaPlaceholderError(event, '1280x960')
-                    "
+                    @error.once="(event) => useViaPlaceholderError(event, '1280x960')"
                   />
                 </figure>
               </div>
@@ -1289,36 +1242,28 @@ const activeTab = ref<TabId>('overview')
                     <img
                       src="/demo/photos/33.jpg"
                       alt=""
-                      @error.once="
-                        (event) => useViaPlaceholderError(event, '1280x960')
-                      "
+                      @error.once="(event) => useViaPlaceholderError(event, '1280x960')"
                     />
                   </a>
                   <a>
                     <img
                       src="/demo/photos/34.jpg"
                       alt=""
-                      @error.once="
-                        (event) => useViaPlaceholderError(event, '1280x960')
-                      "
+                      @error.once="(event) => useViaPlaceholderError(event, '1280x960')"
                     />
                   </a>
                   <a>
                     <img
                       src="/demo/photos/35.jpeg"
                       alt=""
-                      @error.once="
-                        (event) => useViaPlaceholderError(event, '1280x960')
-                      "
+                      @error.once="(event) => useViaPlaceholderError(event, '1280x960')"
                     />
                   </a>
                   <a>
                     <img
                       src="/demo/photos/36.jpg"
                       alt=""
-                      @error.once="
-                        (event) => useViaPlaceholderError(event, '1280x960')
-                      "
+                      @error.once="(event) => useViaPlaceholderError(event, '1280x960')"
                     />
                   </a>
                 </div>
@@ -1328,11 +1273,7 @@ const activeTab = ref<TabId>('overview')
         </div>
       </div>
 
-      <div
-        v-if="activeTab === 'brands'"
-        id="brands-tab"
-        class="tab-content is-active"
-      >
+      <div v-if="activeTab === 'brands'" id="brands-tab" class="tab-content is-active">
         <!--Empty Placeholder -->
         <div class="page-placeholder">
           <div class="placeholder-content">
@@ -1348,9 +1289,8 @@ const activeTab = ref<TabId>('overview')
             />
             <h3>No brands to show.</h3>
             <p class="is-larger">
-              Too bad. Looks like Clarissa enabled her brand privacy setting.
-              You won't be able to see the brands she's working with unless you
-              contact her directly.
+              Too bad. Looks like Clarissa enabled her brand privacy setting. You won't be
+              able to see the brands she's working with unless you contact her directly.
             </p>
           </div>
         </div>
@@ -1360,8 +1300,8 @@ const activeTab = ref<TabId>('overview')
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
-@import '../../../../scss/pages/generic/_widgets-stats.scss';
+@import '../../../../scss/abstracts/mixins';
+@import '../../../../scss/pages/generic/widgets-stats';
 
 .lifestyle-dashboard-bg {
   position: absolute;
@@ -1572,7 +1512,7 @@ const activeTab = ref<TabId>('overview')
   }
 
   .overview-card {
-    @include vuero-s-card();
+    @include vuero-s-card;
 
     font-family: var(--font);
 
@@ -1606,7 +1546,7 @@ const activeTab = ref<TabId>('overview')
       font-weight: 700;
       font-size: 2.8rem;
       color: var(--dark-text);
-      padding: 6px 0 16px 0;
+      padding: 6px 0 16px;
 
       &.is-smaller {
         font-size: 2.5rem;
@@ -2003,7 +1943,7 @@ const activeTab = ref<TabId>('overview')
     }
 
     .overview-card {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
 
       .card-metric,
       .metric .metric {
@@ -2094,7 +2034,7 @@ const activeTab = ref<TabId>('overview')
         flex-direction: column;
 
         .avatar-container {
-          margin: 0 auto 10px auto;
+          margin: 0 auto 10px;
         }
 
         .header-meta {
@@ -2148,6 +2088,7 @@ const activeTab = ref<TabId>('overview')
     &.has-top-nav {
       height: 428px;
     }
+
     &:not(.has-top-nav) {
       height: 415px;
     }

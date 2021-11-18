@@ -9,8 +9,8 @@
 
       <h3 class="title is-4 is-narrow">Erik Kovalsky</h3>
       <p class="light-text">
-        Hey everyone, Iam a product manager from New York and Iam looking for
-        new opportunities in the software business.
+        Hey everyone, Iam a product manager from New York and Iam looking for new
+        opportunities in the software business.
       </p>
       <div class="profile-stats">
         <div class="profile-stat">
@@ -139,6 +139,6 @@
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
-@import '../../../../scss/pages/profile/_user-profile.scss';
+@import '../../../../scss/abstracts/mixins';
+@import '../../../../scss/pages/profile/user-profile';
 </style>

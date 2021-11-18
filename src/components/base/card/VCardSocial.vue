@@ -89,12 +89,7 @@ const icon = computed(() => {
     <div class="card-content">
       <VBlock :title="props.username" class="pb-3">
         <template #icon>
-          <VAvatar
-            v-if="props.avatar"
-            size="medium"
-            :picture="props.avatar"
-            squared
-          />
+          <VAvatar v-if="props.avatar" size="medium" :picture="props.avatar" squared />
         </template>
         <slot></slot>
         <span v-if="props.hashtags.length">

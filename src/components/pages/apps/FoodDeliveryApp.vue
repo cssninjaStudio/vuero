@@ -27,11 +27,7 @@ const onIndexChanged = (info: any) => {
   info.slideItems[indexCurrent].classList.add('active')
 }
 onMounted(() => {
-  if (
-    sliderElement.value &&
-    nextButtonElement.value &&
-    prevButtonElement.value
-  ) {
+  if (sliderElement.value && nextButtonElement.value && prevButtonElement.value) {
     slider = tns({
       container: sliderElement.value,
       controls: true,
@@ -70,10 +66,7 @@ onUnmounted(() => {
     <div class="left">
       <div class="left-header">
         <div class="header-image">
-          <img
-            src="/@src/assets/illustrations/dashboards/food/header.svg"
-            alt=""
-          />
+          <img src="/@src/assets/illustrations/dashboards/food/header.svg" alt="" />
         </div>
         <div class="header-meta">
           <h3>
@@ -99,16 +92,10 @@ onUnmounted(() => {
           </div>
 
           <div class="food-pills">
-            <div
-              ref="prevButtonElement"
-              class="slick-custom is-prev slick-arrow"
-            >
+            <div ref="prevButtonElement" class="slick-custom is-prev slick-arrow">
               <i aria-hidden="true" class="fas fa-angle-left"></i>
             </div>
-            <div
-              ref="nextButtonElement"
-              class="slick-custom is-next slick-arrow"
-            >
+            <div ref="nextButtonElement" class="slick-custom is-next slick-arrow">
               <i aria-hidden="true" class="fas fa-angle-right"></i>
             </div>
             <div ref="sliderElement" class="food-pills-inner pill-carousel">
@@ -140,9 +127,7 @@ onUnmounted(() => {
                     <img
                       :src="restaurant.picture"
                       alt=""
-                      @error.once="
-                        (event) => useViaPlaceholderError(event, '800x450')
-                      "
+                      @error.once="(event) => useViaPlaceholderError(event, '800x450')"
                     />
                     <div class="timer">
                       <div>
@@ -158,10 +143,7 @@ onUnmounted(() => {
                         alt=""
                         @error.once="
                           (event) =>
-                            useViaPlaceholderError(
-                              event,
-                              '                            '
-                            )
+                            useViaPlaceholderError(event, '                            ')
                         "
                       />
                     </div>
@@ -208,11 +190,7 @@ onUnmounted(() => {
                 :class="[activeSection === 'activity' && 'is-active']"
                 @click="activeSection = 'activity'"
               >
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:activity"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:activity"></i>
               </a>
             </div>
             <div class="toolbar-icon">
@@ -221,11 +199,7 @@ onUnmounted(() => {
                 :class="[activeSection === 'address' && 'is-active']"
                 @click="activeSection = 'address'"
               >
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:map-pin"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:map-pin"></i>
               </a>
             </div>
             <div class="toolbar-icon">
@@ -234,11 +208,7 @@ onUnmounted(() => {
                 :class="[activeSection === 'settings' && 'is-active']"
                 @click="activeSection = 'settings'"
               >
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:settings"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:settings"></i>
               </a>
             </div>
           </div>
@@ -275,33 +245,21 @@ onUnmounted(() => {
           </VPlaceholderSection>
           <div class="cart-items has-slimscroll is-hidden">
             <div class="cart-item">
-              <VAvatar
-                picture="/demo/photos/food/1.jpg"
-                size="medium"
-                squared
-              />
+              <VAvatar picture="/demo/photos/food/1.jpg" size="medium" squared />
               <div class="meta">
                 <span class="text"> Double XL Burger </span>
                 <span class="price">$15.50 x 1</span>
               </div>
             </div>
             <div class="cart-item">
-              <VAvatar
-                picture="/demo/photos/food/2.jpg"
-                size="medium"
-                squared
-              />
+              <VAvatar picture="/demo/photos/food/2.jpg" size="medium" squared />
               <div class="meta">
                 <span class="text"> Cherry Cupcakes </span>
                 <span class="price">$8.00 x 3</span>
               </div>
             </div>
             <div class="cart-item">
-              <VAvatar
-                picture="/demo/photos/food/3.jpg"
-                size="medium"
-                squared
-              />
+              <VAvatar picture="/demo/photos/food/3.jpg" size="medium" squared />
               <div class="meta">
                 <span class="text"> Extra Fries </span>
                 <span class="price">$7.90 x 2</span>
@@ -313,16 +271,11 @@ onUnmounted(() => {
               <span class="label">Total</span>
               <span>$0.00</span>
             </div>
-            <VButton color="primary" raised bold fullwidth>
-              Start Checkout
-            </VButton>
+            <VButton color="primary" raised bold fullwidth> Start Checkout </VButton>
           </div>
         </div>
 
-        <div
-          class="side-section"
-          :class="[activeSection === 'activity' && 'is-active']"
-        >
+        <div class="side-section" :class="[activeSection === 'activity' && 'is-active']">
           <UIWidget class="followers-widget">
             <template #header>
               <UIWidgetToolbarDropdown title="Followers" />
@@ -340,10 +293,7 @@ onUnmounted(() => {
           />
         </div>
 
-        <div
-          class="side-section"
-          :class="[activeSection === 'address' && 'is-active']"
-        >
+        <div class="side-section" :class="[activeSection === 'address' && 'is-active']">
           <UIWidget class="text-widget">
             <template #header>
               <UIWidgetToolbarIcon title="Deliver to" icon="feather:map-pin" />
@@ -370,10 +320,7 @@ onUnmounted(() => {
           />
         </div>
 
-        <div
-          class="side-section"
-          :class="[activeSection === 'settings' && 'is-active']"
-        >
+        <div class="side-section" :class="[activeSection === 'settings' && 'is-active']">
           <UIWidget class="icon-list-widget">
             <template #body>
               <UIWidgetIconList :list="iconList" />
@@ -386,8 +333,8 @@ onUnmounted(() => {
 </template>
 
 <style lang="scss">
-@import '../../../scss/abstracts/_mixins.scss';
-@import '../../../scss/pages/generic/_widgets-lists.scss';
+@import '../../../scss/abstracts/mixins';
+@import '../../../scss/pages/generic/widgets-lists';
 
 .food-delivery-dashboard {
   display: flex;
@@ -622,7 +569,7 @@ onUnmounted(() => {
         padding: 30px 0;
 
         .restaurants-list-item {
-          @include vuero-l-card();
+          @include vuero-l-card;
 
           position: relative;
           padding: 0;
@@ -678,7 +625,7 @@ onUnmounted(() => {
           .meta-container {
             display: flex;
             align-items: center;
-            padding: 5px 5px;
+            padding: 5px;
 
             .meta-icon {
               display: flex;
@@ -774,7 +721,7 @@ onUnmounted(() => {
 
           img {
             max-width: 90px;
-            margin: 0 auto 10px auto;
+            margin: 0 auto 10px;
           }
         }
 
@@ -905,7 +852,7 @@ onUnmounted(() => {
 
           .restaurants-list {
             .restaurants-list-item {
-              @include vuero-card--dark();
+              @include vuero-card--dark;
 
               background: none;
               border: none;

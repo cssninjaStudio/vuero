@@ -75,33 +75,19 @@ watchEffect(() => {
       <div class="navbar-end">
         <div class="navbar-item is-theme-toggle">
           <label class="theme-toggle">
-            <input
-              id="navbar-night-toggle--daynight"
-              v-model="isDark"
-              type="checkbox"
-            />
+            <input id="navbar-night-toggle--daynight" v-model="isDark" type="checkbox" />
             <span class="toggler">
               <span class="dark">
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:moon"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:moon"></i>
               </span>
               <span class="light">
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:sun"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:sun"></i>
               </span>
             </span>
           </label>
         </div>
         <div class="navbar-item">
-          <RouterLink :to="{ name: 'auth-login' }" class="nav-link">
-            Login
-          </RouterLink>
+          <RouterLink :to="{ name: 'auth-login' }" class="nav-link"> Login </RouterLink>
         </div>
         <div class="navbar-item">
           <VButton :to="{ name: 'auth-signup' }" color="primary" rounded raised>

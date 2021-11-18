@@ -72,11 +72,7 @@ useHead({
         </RouterLink>
 
         <label class="dark-mode ml-auto">
-          <input
-            type="checkbox"
-            :checked="!isDark"
-            @change="toggleDarkModeHandler"
-          />
+          <input type="checkbox" :checked="!isDark" @change="toggleDarkModeHandler" />
           <span></span>
         </label>
         <div class="is-form">
@@ -96,12 +92,10 @@ useHead({
             >
               <VMessage color="primary">
                 <div>
-                  <strong class="pr-1">email:</strong
-                  ><span>john.doe@cssninja.io</span>
+                  <strong class="pr-1">email:</strong><span>john.doe@cssninja.io</span>
                 </div>
                 <div>
-                  <strong class="pr-1">password:</strong
-                  ><span>ada.lovelace</span>
+                  <strong class="pr-1">password:</strong><span>ada.lovelace</span>
                 </div>
               </VMessage>
 
@@ -143,11 +137,7 @@ useHead({
                   <input type="checkbox" />
                   <span class="toggler">
                     <span class="active">
-                      <i
-                        aria-hidden="true"
-                        class="iconify"
-                        data-icon="feather:check"
-                      ></i>
+                      <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                     </span>
                     <span class="inactive">
                       <i
@@ -176,9 +166,7 @@ useHead({
                 </VButton>
                 <span>
                   Or
-                  <RouterLink :to="{ name: 'auth-signup-1' }">
-                    Create
-                  </RouterLink>
+                  <RouterLink :to="{ name: 'auth-signup-1' }"> Create </RouterLink>
                   an account.
                 </span>
               </div>
@@ -190,9 +178,8 @@ useHead({
               @submit.prevent
             >
               <p class="recover-text">
-                Enter your email and click on the confirm button to reset your
-                password. We'll send you an email detailing the steps to
-                complete the procedure.
+                Enter your email and click on the confirm button to reset your password.
+                We'll send you an email detailing the steps to complete the procedure.
               </p>
               <div class="control has-validation">
                 <input type="text" class="input" autocomplete="email" />
@@ -209,13 +196,7 @@ useHead({
                 </div>
               </div>
               <div class="button-wrap">
-                <VButton
-                  color="white"
-                  size="big"
-                  lower
-                  rounded
-                  @click="step = 'login'"
-                >
+                <VButton color="white" size="big" lower rounded @click="step = 'login'">
                   Cancel
                 </VButton>
                 <VButton
@@ -239,7 +220,7 @@ useHead({
 </template>
 
 <style lang="scss" scoped>
-@import '../../scss/abstracts/_mixins.scss';
+@import '../../scss/abstracts/mixins';
 
 .modern-login {
   position: relative;
@@ -263,7 +244,7 @@ useHead({
         width: 100%;
         height: 100%;
         background: #5d4298 !important;
-        opacity: 0.6;
+        opacity: 60%;
       }
     }
   }
@@ -319,7 +300,7 @@ useHead({
       position: relative;
       z-index: 2;
       display: block;
-      margin: -80px auto 0 auto;
+      margin: -80px auto 0;
       max-width: 60%;
       width: 60%;
     }
@@ -541,7 +522,7 @@ useHead({
 
           &:first-child {
             &:hover {
-              opacity: 0.8;
+              opacity: 80%;
             }
           }
         }
@@ -556,15 +537,12 @@ useHead({
   position: relative;
   cursor: pointer;
   font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   transform: scale(0.9);
 
   input {
     position: absolute;
-    opacity: 0;
+    opacity: 0%;
     cursor: pointer;
 
     &:checked ~ .toggler {
@@ -576,11 +554,11 @@ useHead({
       }
 
       .active {
-        opacity: 1;
+        opacity: 100%;
       }
 
       .inactive {
-        opacity: 0;
+        opacity: 0%;
       }
     }
   }
@@ -620,14 +598,14 @@ useHead({
     .inactive {
       background: var(--placeholder);
       border-color: var(--placeholder);
-      opacity: 1;
+      opacity: 100%;
       z-index: 1;
     }
 
     .active {
       background: var(--primary);
       border-color: var(--primary);
-      opacity: 0;
+      opacity: 0%;
       z-index: 0;
     }
   }
@@ -735,6 +713,7 @@ Dark mode
       }
     }
   }
+
   .remember-toggle {
     input {
       &:checked + .toggler {

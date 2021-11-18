@@ -10,11 +10,7 @@ const dropdown = useDropdown(dropdownElement)
 <template>
   <div
     ref="dropdownElement"
-    class="
-      navbar-item
-      has-dropdown
-      is-notification is-hidden-tablet is-hidden-desktop
-    "
+    class="navbar-item has-dropdown is-notification is-hidden-tablet is-hidden-desktop"
   >
     <a class="navbar-link is-arrowless" @click="dropdown.toggle">
       <i aria-hidden="true" class="iconify" data-icon="feather:bell"></i>
@@ -38,9 +34,7 @@ const dropdown = useDropdown(dropdownElement)
                   class="user-photo"
                   alt=""
                   src="/images/avatars/svg/vuero-4.svg"
-                  @error.once="
-                    (event) => useViaPlaceholderError(event, '150x150')
-                  "
+                  @error.once="(event) => useViaPlaceholderError(event, '150x150')"
                 />
               </div>
               <div class="user-content">
@@ -58,9 +52,7 @@ const dropdown = useDropdown(dropdownElement)
                   class="user-photo"
                   alt=""
                   src="/images/avatars/svg/vuero-2.svg"
-                  @error.once="
-                    (event) => useViaPlaceholderError(event, '150x150')
-                  "
+                  @error.once="(event) => useViaPlaceholderError(event, '150x150')"
                 />
               </div>
               <div class="user-content">
@@ -78,9 +70,7 @@ const dropdown = useDropdown(dropdownElement)
                   class="user-photo"
                   alt=""
                   src="/images/avatars/svg/vuero-5.svg"
-                  @error.once="
-                    (event) => useViaPlaceholderError(event, '150x150')
-                  "
+                  @error.once="(event) => useViaPlaceholderError(event, '150x150')"
                 />
               </div>
               <div class="user-content">
@@ -98,9 +88,7 @@ const dropdown = useDropdown(dropdownElement)
                   class="user-photo"
                   alt=""
                   src="/images/avatars/svg/vuero-9.svg"
-                  @error.once="
-                    (event) => useViaPlaceholderError(event, '150x150')
-                  "
+                  @error.once="(event) => useViaPlaceholderError(event, '150x150')"
                 />
               </div>
               <div class="user-content">

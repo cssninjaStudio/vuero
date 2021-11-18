@@ -34,10 +34,7 @@ watch([() => route.fullPath, dropdownElement], () => {
     </template>
 
     <template #content>
-      <div
-        class="category-selector"
-        :class="[selectedCategory !== '' && 'is-hidden']"
-      >
+      <div class="category-selector" :class="[selectedCategory !== '' && 'is-hidden']">
         <div class="title-wrap">
           <h4>Select a category</h4>
         </div>
@@ -71,21 +68,11 @@ watch([() => route.fullPath, dropdownElement], () => {
         </div>
       </div>
 
-      <div
-        class="content-wrap"
-        :class="[selectedCategory === '' && 'is-hidden']"
-      >
+      <div class="content-wrap" :class="[selectedCategory === '' && 'is-hidden']">
         <!--Back button-->
-        <button
-          class="button is-circle back-button"
-          @click="selectedCategory = ''"
-        >
+        <button class="button is-circle back-button" @click="selectedCategory = ''">
           <span class="icon is-small">
-            <i
-              aria-hidden="true"
-              class="iconify"
-              data-icon="feather:arrow-left"
-            ></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:arrow-left"></i>
           </span>
         </button>
 
@@ -98,19 +85,12 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div class="column is-6">
             <div class="dropdown-item-group">
               <h4 class="column-heading is-info">
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:circle"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                 <span>General</span>
               </h4>
 
               <div class="column-content" data-simplebar>
-                <RouterLink
-                  :to="{ name: 'elements' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink :to="{ name: 'elements' }" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-home"></i>
                   </div>
@@ -198,11 +178,7 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div class="column is-6">
             <div class="dropdown-item-group">
               <h4 class="column-heading is-orange">
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:circle"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                 <span>Interaction</span>
               </h4>
 
@@ -276,13 +252,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                   <div class="meta">
                     <span>VPlaceload</span>
-                    <VTag
-                      label="v1.2"
-                      color="primary"
-                      outlined
-                      curved
-                      class="ml-3"
-                    />
+                    <VTag label="v1.2" color="primary" outlined curved class="ml-3" />
                   </div>
                 </RouterLink>
 
@@ -295,13 +265,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                   <div class="meta">
                     <span>VPlaceloadText</span>
-                    <VTag
-                      label="v1.2"
-                      color="primary"
-                      outlined
-                      curved
-                      class="ml-3"
-                    />
+                    <VTag label="v1.2" color="primary" outlined curved class="ml-3" />
                   </div>
                 </RouterLink>
 
@@ -314,13 +278,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                   <div class="meta">
                     <span>VPlaceloadAvatar</span>
-                    <VTag
-                      label="v1.2"
-                      color="primary"
-                      outlined
-                      curved
-                      class="ml-3"
-                    />
+                    <VTag label="v1.2" color="primary" outlined curved class="ml-3" />
                   </div>
                 </RouterLink>
 
@@ -333,13 +291,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                   <div class="meta">
                     <span>VMessage</span>
-                    <VTag
-                      label="v1.1"
-                      color="primary"
-                      outlined
-                      curved
-                      class="ml-3"
-                    />
+                    <VTag label="v1.1" color="primary" outlined curved class="ml-3" />
                   </div>
                 </RouterLink>
 
@@ -348,10 +300,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i
-                      aria-hidden="true"
-                      class="lnil lnil-top-right-arrow-box"
-                    ></i>
+                    <i aria-hidden="true" class="lnil lnil-top-right-arrow-box"></i>
                   </div>
                   <div class="meta">
                     <span>VModal</span>
@@ -395,11 +344,7 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div class="column is-6">
             <div class="dropdown-item-group">
               <h4 class="column-heading is-info">
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:circle"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                 <span>Forms</span>
               </h4>
 
@@ -495,11 +440,7 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div class="column is-6">
             <div class="dropdown-item-group">
               <h4 class="column-heading is-green">
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:circle"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                 <span>Switches</span>
               </h4>
 
@@ -513,13 +454,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                   <div class="meta">
                     <span>VAnimatedCheckbox</span>
-                    <VTag
-                      label="v1.1"
-                      color="primary"
-                      outlined
-                      curved
-                      class="ml-3"
-                    />
+                    <VTag label="v1.1" color="primary" outlined curved class="ml-3" />
                   </div>
                 </RouterLink>
 
@@ -532,13 +467,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                   <div class="meta">
                     <span>VCheckbox</span>
-                    <VTag
-                      label="v1.1"
-                      color="primary"
-                      outlined
-                      curved
-                      class="ml-3"
-                    />
+                    <VTag label="v1.1" color="primary" outlined curved class="ml-3" />
                   </div>
                 </RouterLink>
 
@@ -547,20 +476,11 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i
-                      aria-hidden="true"
-                      class="lnil lnil-checkmark-circle"
-                    ></i>
+                    <i aria-hidden="true" class="lnil lnil-checkmark-circle"></i>
                   </div>
                   <div class="meta">
                     <span>VRadio</span>
-                    <VTag
-                      label="v1.1"
-                      color="primary"
-                      outlined
-                      curved
-                      class="ml-3"
-                    />
+                    <VTag label="v1.1" color="primary" outlined curved class="ml-3" />
                   </div>
                 </RouterLink>
 
@@ -600,11 +520,7 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div class="column is-12">
             <div class="dropdown-item-group">
               <h4 class="column-heading is-green">
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:circle"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                 <span>Addons</span>
               </h4>
 

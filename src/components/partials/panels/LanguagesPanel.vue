@@ -33,11 +33,7 @@ watch(locale, () => {
       <div class="right-panel-head">
         <h3>{{ t('select-language') }}</h3>
         <a class="close-panel" @click="activePanel = 'none'">
-          <i
-            aria-hidden="true"
-            class="iconify"
-            data-icon="feather:chevron-right"
-          ></i>
+          <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right"></i>
         </a>
       </div>
       <div class="right-panel-body has-slimscroll">
@@ -52,16 +48,9 @@ watch(locale, () => {
                 checked
               />
               <div class="language-option-inner">
-                <img
-                  src="/images/icons/flags/united-states-of-america.svg"
-                  alt=""
-                />
+                <img src="/images/icons/flags/united-states-of-america.svg" alt="" />
                 <div class="indicator">
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:check"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                 </div>
               </div>
             </div>
@@ -69,20 +58,11 @@ watch(locale, () => {
 
           <div class="language-box">
             <div class="language-option">
-              <input
-                v-model="locale"
-                type="radio"
-                name="language_selection"
-                value="fr"
-              />
+              <input v-model="locale" type="radio" name="language_selection" value="fr" />
               <div class="language-option-inner">
                 <img src="/images/icons/flags/france.svg" alt="" />
                 <div class="indicator">
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:check"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                 </div>
               </div>
             </div>
@@ -90,20 +70,11 @@ watch(locale, () => {
 
           <div class="language-box">
             <div class="language-option">
-              <input
-                v-model="locale"
-                type="radio"
-                name="language_selection"
-                value="es"
-              />
+              <input v-model="locale" type="radio" name="language_selection" value="es" />
               <div class="language-option-inner">
                 <img src="/images/icons/flags/spain.svg" alt="" />
                 <div class="indicator">
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:check"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                 </div>
               </div>
             </div>
@@ -111,20 +82,11 @@ watch(locale, () => {
 
           <div class="language-box">
             <div class="language-option">
-              <input
-                v-model="locale"
-                type="radio"
-                name="language_selection"
-                value="de"
-              />
+              <input v-model="locale" type="radio" name="language_selection" value="de" />
               <div class="language-option-inner">
                 <img src="/images/icons/flags/germany.svg" alt="" />
                 <div class="indicator">
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:check"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                 </div>
               </div>
             </div>
@@ -141,11 +103,7 @@ watch(locale, () => {
               <div class="language-option-inner">
                 <img src="/images/icons/flags/mexico.svg" alt="" />
                 <div class="indicator">
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:check"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                 </div>
               </div>
             </div>
@@ -162,11 +120,7 @@ watch(locale, () => {
               <div class="language-option-inner">
                 <img src="/images/icons/flags/china.svg" alt="" />
                 <div class="indicator">
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:check"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                 </div>
               </div>
             </div>
@@ -191,6 +145,6 @@ watch(locale, () => {
 </template>
 
 <style lang="scss">
-@import '../../../scss/abstracts/_mixins.scss';
-@import '../../../scss/layout/_right-panel.scss';
+@import '../../../scss/abstracts/mixins';
+@import '../../../scss/layout/right-panel';
 </style>

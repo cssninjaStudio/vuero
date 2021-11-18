@@ -61,10 +61,7 @@ useHead({
 
         <div class="demo-card">
           <div class="card-inner" :class="{ 'is-scrolling': isScrolling }">
-            <VFlex
-              justify-content="flex-end"
-              class="demo-icon-search py-4 px-6"
-            >
+            <VFlex justify-content="flex-end" class="demo-icon-search py-4 px-6">
               <VField>
                 <VControl icon="feather:search">
                   <input
@@ -120,19 +117,7 @@ useHead({
                   >
                     {{ icon.name }}
                   </dd>
-                  <dd
-                    class="
-                      ma0
-                      pa0
-                      select-all
-                      gray5
-                      dtc
-                      v-top
-                      tr
-                      f2
-                      icon-unicode
-                    "
-                  >
+                  <dd class="ma0 pa0 select-all gray5 dtc v-top tr f2 icon-unicode">
                     {{ icon.charCode }}
                   </dd>
                 </dl>

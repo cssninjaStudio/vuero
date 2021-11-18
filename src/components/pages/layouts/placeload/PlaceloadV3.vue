@@ -77,6 +77,6 @@ const optionsSingle = [
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
-@import '../../../../scss/pages/lists/_user-grid-v1.scss';
+@import '../../../../scss/abstracts/mixins';
+@import '../../../../scss/pages/lists/user-grid-v1';
 </style>

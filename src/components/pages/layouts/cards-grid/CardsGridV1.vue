@@ -87,11 +87,7 @@ const optionsSingle = [
       <!--Card Grid v1-->
       <transition-group name="list" tag="div" class="columns is-multiline">
         <!--Grid item-->
-        <div
-          v-for="(item, index) in filteredData"
-          :key="index"
-          class="column is-6"
-        >
+        <div v-for="(item, index) in filteredData" :key="index" class="column is-6">
           <div class="card-grid-item">
             <div class="card-grid-item-body">
               <div class="left">
@@ -143,7 +139,7 @@ const optionsSingle = [
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/abstracts/mixins';
 
 .card-grid {
   .columns {
@@ -345,7 +341,7 @@ const optionsSingle = [
           text-align: center;
 
           .meta {
-            margin: 5px 0 20px 0;
+            margin: 5px 0 20px;
           }
         }
       }

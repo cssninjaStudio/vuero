@@ -31,13 +31,7 @@ const options = ref(['Option 2'])
         color="primary"
         solid
       />
-      <VCheckbox
-        v-model="options"
-        value="Option 3"
-        label="Option 3"
-        color="info"
-        solid
-      />
+      <VCheckbox v-model="options" value="Option 3" label="Option 3" color="info" solid />
       <VCheckbox
         v-model="options"
         value="Option 4"

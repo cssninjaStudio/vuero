@@ -1,10 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 
-import type {
-  VAvatarProps,
-  VAvatarColor,
-} from '/@src/components/base/avatar/VAvatar.vue'
+import type { VAvatarProps, VAvatarColor } from '/@src/components/base/avatar/VAvatar.vue'
 import * as listData from '/@src/data/layouts/flex-list-v1'
 
 export interface UserData extends VAvatarProps {
@@ -54,9 +51,7 @@ const filteredData = computed(() => {
       </VField>
 
       <VButtons>
-        <VButton color="primary" icon="fas fa-plus" elevated>
-          Add User
-        </VButton>
+        <VButton color="primary" icon="fas fa-plus" elevated> Add User </VButton>
       </VButtons>
     </div>
 
@@ -102,11 +97,7 @@ const filteredData = computed(() => {
           <div class="flex-list-inner">
             <transition-group name="list" tag="div">
               <!--Table item-->
-              <div
-                v-for="item in filteredData"
-                :key="item.id"
-                class="flex-table-item"
-              >
+              <div v-for="item in filteredData" :key="item.id" class="flex-table-item">
                 <div class="flex-table-cell is-media is-grow">
                   <VAvatar
                     :picture="item.picture"
@@ -116,9 +107,7 @@ const filteredData = computed(() => {
                     size="medium"
                   />
                   <div>
-                    <span class="item-name dark-inverted">{{
-                      item.username
-                    }}</span>
+                    <span class="item-name dark-inverted">{{ item.username }}</span>
                     <span class="item-meta">
                       <span>{{ item.position }}</span>
                     </span>
@@ -136,21 +125,17 @@ const filteredData = computed(() => {
                     class="tag is-success is-rounded"
                     >{{ item.status }}</span
                   >
-                  <span
-                    v-if="item.status === 'Working'"
-                    class="tag is-info is-rounded"
-                    >{{ item.status }}</span
-                  >
+                  <span v-if="item.status === 'Working'" class="tag is-info is-rounded">{{
+                    item.status
+                  }}</span>
                   <span
                     v-if="item.status === 'Suspended'"
                     class="tag is-danger is-rounded"
                     >{{ item.status }}</span
                   >
-                  <span
-                    v-if="item.status === 'Offline'"
-                    class="tag is-rounded"
-                    >{{ item.status }}</span
-                  >
+                  <span v-if="item.status === 'Offline'" class="tag is-rounded">{{
+                    item.status
+                  }}</span>
                 </div>
                 <div class="flex-table-cell" data-th="Relations">
                   <VAvatarStack

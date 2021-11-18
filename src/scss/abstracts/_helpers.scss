@@ -98,6 +98,7 @@ $sides: top, bottom, left, right;
 .has-text-secondary {
   color: var(--secondary) !important;
 }
+
 .has-background-secondary {
   background-color: var(--secondary) !important;
 }
@@ -119,13 +120,13 @@ $sides: top, bottom, left, right;
 ========================================================================== */
 
 .is-dark {
-  //Card border helper
+  // Card border helper
   .is-dark-card-bordered,
   .is-dark-bordered-12 {
     border-color: var(--dark-sidebar-light-12) !important;
   }
 
-  //Primary Helper
+  // Primary Helper
   .is-dark-primary {
     color: var(--primary) !important;
   }
@@ -134,7 +135,7 @@ $sides: top, bottom, left, right;
     color: var(--primary) !important;
   }
 
-  //BG Helpers
+  // BG Helpers
   .is-dark-bg-1 {
     background: var(--dark-sidebar-light-1) !important;
   }

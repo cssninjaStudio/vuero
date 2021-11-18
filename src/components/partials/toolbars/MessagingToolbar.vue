@@ -36,19 +36,12 @@ const localFlagSrc = computed(() => {
   <div class="toolbar ml-auto">
     <div class="toolbar-link">
       <label class="dark-mode ml-auto">
-        <input
-          type="checkbox"
-          :checked="!isDark"
-          @change="toggleDarkModeHandler"
-        />
+        <input type="checkbox" :checked="!isDark" @change="toggleDarkModeHandler" />
         <span></span>
       </label>
     </div>
 
-    <a
-      class="toolbar-link right-panel-trigger"
-      @click="activePanel = 'languages'"
-    >
+    <a class="toolbar-link right-panel-trigger" @click="activePanel = 'languages'">
       <img :src="localFlagSrc" alt="" />
     </a>
 
@@ -84,9 +77,7 @@ const localFlagSrc = computed(() => {
                       class="user-photo"
                       alt=""
                       src="/demo/avatars/7.jpg"
-                      @error.once="
-                        (event) => useViaPlaceholderError(event, '150x150')
-                      "
+                      @error.once="(event) => useViaPlaceholderError(event, '150x150')"
                     />
                   </div>
                   <div class="user-content">
@@ -104,9 +95,7 @@ const localFlagSrc = computed(() => {
                       class="user-photo"
                       alt=""
                       src="/demo/avatars/12.jpg"
-                      @error.once="
-                        (event) => useViaPlaceholderError(event, '150x150')
-                      "
+                      @error.once="(event) => useViaPlaceholderError(event, '150x150')"
                     />
                   </div>
                   <div class="user-content">
@@ -124,9 +113,7 @@ const localFlagSrc = computed(() => {
                       class="user-photo"
                       alt=""
                       src="/demo/avatars/13.jpg"
-                      @error.once="
-                        (event) => useViaPlaceholderError(event, '150x150')
-                      "
+                      @error.once="(event) => useViaPlaceholderError(event, '150x150')"
                     />
                   </div>
                   <div class="user-content">
@@ -144,9 +131,7 @@ const localFlagSrc = computed(() => {
                       class="user-photo"
                       alt=""
                       src="/demo/avatars/25.jpg"
-                      @error.once="
-                        (event) => useViaPlaceholderError(event, '150x150')
-                      "
+                      @error.once="(event) => useViaPlaceholderError(event, '150x150')"
                     />
                   </div>
                   <div class="user-content">
@@ -164,11 +149,7 @@ const localFlagSrc = computed(() => {
     </div>
 
     <a id="hide-chat-side" class="toolbar-link" @click="emit('close')">
-      <i
-        aria-hidden="true"
-        class="iconify"
-        data-icon="feather:chevron-right"
-      ></i>
+      <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right"></i>
     </a>
   </div>
 </template>

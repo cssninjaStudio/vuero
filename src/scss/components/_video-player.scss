@@ -112,8 +112,7 @@
 .plyr--video .plyr__control.plyr__tab-focus,
 .plyr--video .plyr__control:hover,
 .plyr--video .plyr__control[aria-expanded='true'],
-.plyr__menu__container
-  .plyr__control[role='menuitemradio'][aria-checked='true']::before {
+.plyr__menu__container .plyr__control[role='menuitemradio'][aria-checked='true']::before {
   background: var(--primary);
 }
 
@@ -128,7 +127,7 @@
 .plyr--paused,
 .plyr--stopped {
   .plyr__controls {
-    opacity: 0;
+    opacity: 0%;
     pointer-events: none;
   }
 }

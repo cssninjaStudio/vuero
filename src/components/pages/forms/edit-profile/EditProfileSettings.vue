@@ -43,12 +43,7 @@ const onSave = async () => {
             >
               Go Back
             </VButton>
-            <VButton
-              color="primary"
-              raised
-              :loading="isLoading"
-              @click="onSave"
-            >
+            <VButton color="primary" raised :loading="isLoading" @click="onSave">
               Save Changes
             </VButton>
           </div>

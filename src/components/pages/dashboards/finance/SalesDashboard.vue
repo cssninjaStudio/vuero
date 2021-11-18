@@ -150,8 +150,7 @@ onMounted(() => {
                 <span class="is-dark-primary">$8,641.26</span>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bonum
-                  integritas corporis: misera debilitas. Ita ne hoc quidem modo
-                  paria.
+                  integritas corporis: misera debilitas. Ita ne hoc quidem modo paria.
                 </p>
               </div>
               <div class="chart-container">
@@ -364,7 +363,7 @@ onMounted(() => {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/abstracts/mixins';
 
 .sales-dashboard {
   .dashboard-header {
@@ -397,14 +396,14 @@ onMounted(() => {
 
   .spark-tiles {
     .spark-tile {
-      @include vuero-s-card();
+      @include vuero-s-card;
 
       padding: 0;
     }
   }
 
   .dashboard-card {
-    @include vuero-s-card();
+    @include vuero-s-card;
 
     &:not(:last-child) {
       margin-bottom: 1.5rem;
@@ -528,7 +527,7 @@ onMounted(() => {
   .sales-dashboard {
     .spark-tile,
     .dashboard-card {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
     }
   }
 }

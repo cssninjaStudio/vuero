@@ -126,9 +126,7 @@ const activeTab = ref<TabId>('list')
                 <h4 class="column-heading">Datatables</h4>
                 <ul>
                   <li>
-                    <RouterLink
-                      :to="{ name: 'navbar-layouts-list-datatable-1' }"
-                    >
+                    <RouterLink :to="{ name: 'navbar-layouts-list-datatable-1' }">
                       <i aria-hidden="true" class="lnil lnil-layout-alt"></i>
                       <span>Datatable V1</span>
                       <i
@@ -139,9 +137,7 @@ const activeTab = ref<TabId>('list')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink
-                      :to="{ name: 'navbar-layouts-list-datatable-2' }"
-                    >
+                    <RouterLink :to="{ name: 'navbar-layouts-list-datatable-2' }">
                       <i aria-hidden="true" class="lnil lnil-layout-alt"></i>
                       <span>Datatable V2</span>
                       <i
@@ -152,9 +148,7 @@ const activeTab = ref<TabId>('list')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink
-                      :to="{ name: 'navbar-layouts-list-datatable-3' }"
-                    >
+                    <RouterLink :to="{ name: 'navbar-layouts-list-datatable-3' }">
                       <i aria-hidden="true" class="lnil lnil-layout-alt"></i>
                       <span>Datatable V3</span>
                       <i
@@ -165,9 +159,7 @@ const activeTab = ref<TabId>('list')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink
-                      :to="{ name: 'navbar-layouts-list-datatable-4' }"
-                    >
+                    <RouterLink :to="{ name: 'navbar-layouts-list-datatable-4' }">
                       <i aria-hidden="true" class="lnil lnil-layout-alt"></i>
                       <span>Datatable V4</span>
                       <i
@@ -181,32 +173,13 @@ const activeTab = ref<TabId>('list')
               </div>
               <div class="column is-3">
                 <a href="https://cssninja.io" class="column-placeholder">
-                  <img
-                    class="light-image"
-                    src="/images/icons/misc/buoy.svg"
-                    alt=""
-                  />
-                  <img
-                    class="dark-image"
-                    src="/images/icons/misc/buoy-dark.svg"
-                    alt=""
-                  />
+                  <img class="light-image" src="/images/icons/misc/buoy.svg" alt="" />
+                  <img class="dark-image" src="/images/icons/misc/buoy-dark.svg" alt="" />
                   <h3>Support</h3>
                 </a>
-                <a
-                  href="https://docs.cssninja.io/vuero"
-                  class="column-placeholder"
-                >
-                  <img
-                    class="light-image"
-                    src="/images/icons/misc/docs.svg"
-                    alt=""
-                  />
-                  <img
-                    class="dark-image"
-                    src="/images/icons/misc/docs-dark.svg"
-                    alt=""
-                  />
+                <a href="https://docs.cssninja.io/vuero" class="column-placeholder">
+                  <img class="light-image" src="/images/icons/misc/docs.svg" alt="" />
+                  <img class="dark-image" src="/images/icons/misc/docs-dark.svg" alt="" />
                   <h3>Documentation</h3>
                 </a>
               </div>
@@ -361,32 +334,13 @@ const activeTab = ref<TabId>('list')
               </div>
               <div class="column is-3">
                 <a href="https://cssninja.io" class="column-placeholder">
-                  <img
-                    class="light-image"
-                    src="/images/icons/misc/buoy.svg"
-                    alt=""
-                  />
-                  <img
-                    class="dark-image"
-                    src="/images/icons/misc/buoy-dark.svg"
-                    alt=""
-                  />
+                  <img class="light-image" src="/images/icons/misc/buoy.svg" alt="" />
+                  <img class="dark-image" src="/images/icons/misc/buoy-dark.svg" alt="" />
                   <h3>Support</h3>
                 </a>
-                <a
-                  href="https://docs.cssninja.io/vuero"
-                  class="column-placeholder"
-                >
-                  <img
-                    class="light-image"
-                    src="/images/icons/misc/docs.svg"
-                    alt=""
-                  />
-                  <img
-                    class="dark-image"
-                    src="/images/icons/misc/docs-dark.svg"
-                    alt=""
-                  />
+                <a href="https://docs.cssninja.io/vuero" class="column-placeholder">
+                  <img class="light-image" src="/images/icons/misc/docs.svg" alt="" />
+                  <img class="dark-image" src="/images/icons/misc/docs-dark.svg" alt="" />
                   <h3>Documentation</h3>
                 </a>
               </div>
@@ -429,9 +383,7 @@ const activeTab = ref<TabId>('list')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink
-                      :to="{ name: 'navbar-layouts-profile-notifications' }"
-                    >
+                    <RouterLink :to="{ name: 'navbar-layouts-profile-notifications' }">
                       <i aria-hidden="true" class="lnil lnil-notification"></i>
                       <span>Notifications</span>
                       <i
@@ -442,9 +394,7 @@ const activeTab = ref<TabId>('list')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink
-                      :to="{ name: 'navbar-layouts-profile-settings' }"
-                    >
+                    <RouterLink :to="{ name: 'navbar-layouts-profile-settings' }">
                       <i aria-hidden="true" class="lnil lnil-cog"></i>
                       <span>Settings</span>
                       <i
@@ -602,9 +552,7 @@ const activeTab = ref<TabId>('list')
                 <h4 class="column-heading">Projects</h4>
                 <ul>
                   <li>
-                    <RouterLink
-                      :to="{ name: 'navbar-layouts-projects-projects-1' }"
-                    >
+                    <RouterLink :to="{ name: 'navbar-layouts-projects-projects-1' }">
                       <i aria-hidden="true" class="lnil lnil-grid-alt"></i>
                       <span>Projects V1</span>
                       <i
@@ -615,9 +563,7 @@ const activeTab = ref<TabId>('list')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink
-                      :to="{ name: 'navbar-layouts-projects-projects-2' }"
-                    >
+                    <RouterLink :to="{ name: 'navbar-layouts-projects-projects-2' }">
                       <i aria-hidden="true" class="lnil lnil-grid-alt"></i>
                       <span>Projects V2</span>
                       <i
@@ -628,9 +574,7 @@ const activeTab = ref<TabId>('list')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink
-                      :to="{ name: 'navbar-layouts-projects-projects-3' }"
-                    >
+                    <RouterLink :to="{ name: 'navbar-layouts-projects-projects-3' }">
                       <i aria-hidden="true" class="lnil lnil-grid-alt"></i>
                       <span>Projects V3</span>
                       <i
@@ -641,9 +585,7 @@ const activeTab = ref<TabId>('list')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink
-                      :to="{ name: 'navbar-layouts-projects-details' }"
-                    >
+                    <RouterLink :to="{ name: 'navbar-layouts-projects-details' }">
                       <i aria-hidden="true" class="lnil lnil-layout"></i>
                       <span>Project Details</span>
                       <i
@@ -683,9 +625,7 @@ const activeTab = ref<TabId>('list')
                 <h4 class="column-heading">Utility</h4>
                 <ul>
                   <li>
-                    <RouterLink
-                      :to="{ name: 'navbar-layouts-utility-account-confirm' }"
-                    >
+                    <RouterLink :to="{ name: 'navbar-layouts-utility-account-confirm' }">
                       <i aria-hidden="true" class="lnil lnil-thunderbolt"></i>
                       <span>Confirm Account</span>
                       <i
@@ -696,9 +636,7 @@ const activeTab = ref<TabId>('list')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink
-                      :to="{ name: 'navbar-layouts-utility-promotion' }"
-                    >
+                    <RouterLink :to="{ name: 'navbar-layouts-utility-promotion' }">
                       <i aria-hidden="true" class="lnil lnil-magnet"></i>
                       <span>Promotion Page</span>
                       <i
@@ -709,13 +647,8 @@ const activeTab = ref<TabId>('list')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink
-                      :to="{ name: 'navbar-layouts-utility-invoice' }"
-                    >
-                      <i
-                        aria-hidden="true"
-                        class="lnil lnil-calculator-alt"
-                      ></i>
+                    <RouterLink :to="{ name: 'navbar-layouts-utility-invoice' }">
+                      <i aria-hidden="true" class="lnil lnil-calculator-alt"></i>
                       <span>Invoice</span>
                       <i
                         aria-hidden="true"
@@ -726,10 +659,7 @@ const activeTab = ref<TabId>('list')
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'status' }">
-                      <i
-                        aria-hidden="true"
-                        class="lnil lnil-checkmark-circle"
-                      ></i>
+                      <i aria-hidden="true" class="lnil lnil-checkmark-circle"></i>
                       <span>App Status</span>
                       <i
                         aria-hidden="true"
@@ -744,9 +674,7 @@ const activeTab = ref<TabId>('list')
                 <h4 class="column-heading">Onboarding</h4>
                 <ul>
                   <li>
-                    <RouterLink
-                      :to="{ name: 'navbar-layouts-onboarding-page-1' }"
-                    >
+                    <RouterLink :to="{ name: 'navbar-layouts-onboarding-page-1' }">
                       <i aria-hidden="true" class="lnil lnil-train"></i>
                       <span>Onboarding V1</span>
                       <i
@@ -757,9 +685,7 @@ const activeTab = ref<TabId>('list')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink
-                      :to="{ name: 'navbar-layouts-onboarding-page-2' }"
-                    >
+                    <RouterLink :to="{ name: 'navbar-layouts-onboarding-page-2' }">
                       <i aria-hidden="true" class="lnil lnil-train-alt"></i>
                       <span>Onboarding V2</span>
                       <i
@@ -770,9 +696,7 @@ const activeTab = ref<TabId>('list')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink
-                      :to="{ name: 'navbar-layouts-onboarding-page-3' }"
-                    >
+                    <RouterLink :to="{ name: 'navbar-layouts-onboarding-page-3' }">
                       <i aria-hidden="true" class="lnil lnil-car"></i>
                       <span>Onboarding V3</span>
                       <i
@@ -783,9 +707,7 @@ const activeTab = ref<TabId>('list')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink
-                      :to="{ name: 'navbar-layouts-onboarding-page-4' }"
-                    >
+                    <RouterLink :to="{ name: 'navbar-layouts-onboarding-page-4' }">
                       <i aria-hidden="true" class="lnil lnil-car-alt"></i>
                       <span>Onboarding V4</span>
                       <i
@@ -796,9 +718,7 @@ const activeTab = ref<TabId>('list')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink
-                      :to="{ name: 'navbar-layouts-onboarding-page-5' }"
-                    >
+                    <RouterLink :to="{ name: 'navbar-layouts-onboarding-page-5' }">
                       <i aria-hidden="true" class="lnil lnil-train-alt"></i>
                       <span>Onboarding V5</span>
                       <i
@@ -932,7 +852,7 @@ const activeTab = ref<TabId>('list')
 </template>
 
 <style lang="scss">
-@import '../../scss/abstracts/_mixins.scss';
-@import '../../scss/layout/_navbar.scss';
-@import '../../scss/layout/_responsive.scss';
+@import '../../scss/abstracts/mixins';
+@import '../../scss/layout/navbar';
+@import '../../scss/layout/responsive';
 </style>

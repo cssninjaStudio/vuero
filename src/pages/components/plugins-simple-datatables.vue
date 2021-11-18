@@ -17,9 +17,7 @@ const toc = useMarkdownToc(markdownContainer)
 const randomUpdate = () => {
   const max = optionsReactive.data.data.length
   const index = Math.floor(Math.random() * max)
-  const percent = parseInt(
-    `${optionsReactive.data.data[index][4]}`.replace('%', '')
-  )
+  const percent = parseInt(`${optionsReactive.data.data[index][4]}`.replace('%', ''))
 
   if (percent < 100) {
     optionsReactive.data.data[index][1] = Math.floor(Math.random() * 5000)
@@ -99,9 +97,7 @@ useHead({
                 <th scope="col">Name</th>
                 <th scope="col">Ext.</th>
                 <th scope="col">City</th>
-                <th scope="col" data-type="date" data-format="YYYY/MM/DD">
-                  Start Date
-                </th>
+                <th scope="col" data-type="date" data-format="YYYY/MM/DD">Start Date</th>
                 <th scope="col" data-sort="asc">Completion</th>
               </tr>
             </thead>

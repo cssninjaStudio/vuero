@@ -60,22 +60,20 @@ useHead({
                     <td class="name">Margin (<code>m-*-*</code>)</td>
                     <td class="description">
                       Sets a margin on the target element following the
-                      <code>m-*-*</code> pattern, where the first
-                      <code>*</code> stands for directon (<code>t</code>,
-                      <code>b</code>, <code>l</code> and <code>r</code>) and the
-                      second one for pixel amount. Minimum and maximum pixel
-                      amounts are <code>5</code> and <code>100</code>.
+                      <code>m-*-*</code> pattern, where the first <code>*</code> stands
+                      for directon (<code>t</code>, <code>b</code>, <code>l</code> and
+                      <code>r</code>) and the second one for pixel amount. Minimum and
+                      maximum pixel amounts are <code>5</code> and <code>100</code>.
                     </td>
                   </tr>
                   <tr>
                     <td class="name">Padding (<code>p-*-*</code>)</td>
                     <td class="description">
                       Sets a padding on the target element following the
-                      <code>p-*-*</code> pattern, where the first
-                      <code>*</code> stands for directon (<code>t</code>,
-                      <code>b</code>, <code>l</code> and <code>r</code>) and the
-                      second one for pixel amount. Minimum and maximum pixel
-                      amounts are <code>5</code> and <code>100</code>.
+                      <code>p-*-*</code> pattern, where the first <code>*</code> stands
+                      for directon (<code>t</code>, <code>b</code>, <code>l</code> and
+                      <code>r</code>) and the second one for pixel amount. Minimum and
+                      maximum pixel amounts are <code>5</code> and <code>100</code>.
                     </td>
                   </tr>
                   <tr>
@@ -84,8 +82,8 @@ useHead({
                       Sets a margin on the target element following the
                       <code>no-margin-*</code> pattern, where the first
                       <code>*</code> stands for directon (<code>all</code>,
-                      <code>top</code>, <code>bottom</code>,
-                      <code>left</code> and <code>right</code>).
+                      <code>top</code>, <code>bottom</code>, <code>left</code> and
+                      <code>right</code>).
                     </td>
                   </tr>
                   <tr>
@@ -94,8 +92,8 @@ useHead({
                       Sets a padding on the target element following the
                       <code>no-padding-*</code> pattern, where the first
                       <code>*</code> stands for directon (<code>all</code>,
-                      <code>top</code>, <code>bottom</code>,
-                      <code>left</code> and <code>right</code>).
+                      <code>top</code>, <code>bottom</code>, <code>left</code> and
+                      <code>right</code>).
                     </td>
                   </tr>
                   <tr>
@@ -104,36 +102,32 @@ useHead({
                     </th>
                     <td class="name">Hidden (<code>is-hidden</code>)</td>
                     <td class="description">
-                      Sets the <code>display</code> property to
-                      <code>none</code> on the target element.
+                      Sets the <code>display</code> property to <code>none</code> on the
+                      target element.
                     </td>
                   </tr>
                   <tr>
                     <td class="name">VHidden (<code>is-vhidden</code>)</td>
                     <td class="description">
-                      Sets the <code>visibility</code> property to
-                      <code>hidden</code> on the target element.
+                      Sets the <code>visibility</code> property to <code>hidden</code> on
+                      the target element.
                     </td>
                   </tr>
                   <tr>
                     <td class="name">Disabled (<code>is-disabled</code>)</td>
                     <td class="description">
                       Sets the <code>pointer-events</code> property to
-                      <code>none</code> on the target element and decreases its
-                      opacity.
+                      <code>none</code> on the target element and decreases its opacity.
                     </td>
                   </tr>
                   <tr>
                     <th scope="row" class="category">
                       <strong>Scroll</strong>
                     </th>
-                    <td class="name">
-                      Slimscroll (<code>has-slimscroll</code>)
-                    </td>
+                    <td class="name">Slimscroll (<code>has-slimscroll</code>)</td>
                     <td class="description">
-                      Sets the <code>overflowY</code> property to
-                      <code>auto</code> on the target element and tweaks the
-                      webkit scrollbar.
+                      Sets the <code>overflowY</code> property to <code>auto</code> on the
+                      target element and tweaks the webkit scrollbar.
                     </td>
                   </tr>
                   <tr>
@@ -144,65 +138,50 @@ useHead({
                     <td class="description">
                       Toggle images between light mode and dark mode using the
                       corresponding classes:
-                      <code>light-image</code> and <code>dark-image</code>.
-                      Displayed images will be displayed as
-                      <code>inline-block</code>. To display images as
-                      <code>block</code> use the
+                      <code>light-image</code> and <code>dark-image</code>. Displayed
+                      images will be displayed as <code>inline-block</code>. To display
+                      images as <code>block</code> use the
                       <code>light-image-block</code> and
                       <code>dark-image-block</code> classes instead.
                     </td>
                   </tr>
                   <tr>
-                    <td class="name">
-                      Dark Background (<code>is-dark-bg-*</code>)
-                    </td>
+                    <td class="name">Dark Background (<code>is-dark-bg-*</code>)</td>
                     <td class="description">
-                      Sets the <code>background-color</code> property to the
-                      specidifed value, where <code>*</code> is a percentage of
-                      the dark mode main color. Accepted values: 2, 3, 4, 6.
+                      Sets the <code>background-color</code> property to the specidifed
+                      value, where <code>*</code> is a percentage of the dark mode main
+                      color. Accepted values: 2, 3, 4, 6.
                     </td>
                   </tr>
                   <tr>
                     <th scope="rowgroup" rowspan="4" class="category">
                       <strong>Responsive</strong>
                     </th>
-                    <td class="name">
-                      Hidden mobile (<code>h-hidden-mobile</code>)
-                    </td>
+                    <td class="name">Hidden mobile (<code>h-hidden-mobile</code>)</td>
                     <td class="description">
-                      Sets the <code>display</code> property to
-                      <code>none</code> on the target element when on a mobile
-                      display.
+                      Sets the <code>display</code> property to <code>none</code> on the
+                      target element when on a mobile display.
                     </td>
                   </tr>
                   <tr>
-                    <td class="name">
-                      Hidden tablet (<code>h-hidden-tablet-p</code>)
-                    </td>
+                    <td class="name">Hidden tablet (<code>h-hidden-tablet-p</code>)</td>
                     <td class="description">
-                      Sets the <code>display</code> property to
-                      <code>none</code> on the target element when on a tablet
-                      display in portrait mode.
+                      Sets the <code>display</code> property to <code>none</code> on the
+                      target element when on a tablet display in portrait mode.
                     </td>
                   </tr>
                   <tr>
-                    <td class="name">
-                      Hidden tablet (<code>h-hidden-tablet-l</code>)
-                    </td>
+                    <td class="name">Hidden tablet (<code>h-hidden-tablet-l</code>)</td>
                     <td class="description">
-                      Sets the <code>display</code> property to
-                      <code>none</code> on the target element when on a tablet
-                      display in landscape mode.
+                      Sets the <code>display</code> property to <code>none</code> on the
+                      target element when on a tablet display in landscape mode.
                     </td>
                   </tr>
                   <tr>
-                    <td class="name">
-                      Hidden desktop (<code>h-hidden-desktop</code>)
-                    </td>
+                    <td class="name">Hidden desktop (<code>h-hidden-desktop</code>)</td>
                     <td class="description">
-                      Sets the <code>display</code> property to
-                      <code>none</code> on the target element when on a desktop
-                      display.
+                      Sets the <code>display</code> property to <code>none</code> on the
+                      target element when on a desktop display.
                     </td>
                   </tr>
                   <tr>
@@ -223,21 +202,17 @@ useHead({
                     </td>
                   </tr>
                   <tr>
-                    <td class="name">
-                      Font Weight (<code>.is-weight-*</code>)
-                    </td>
+                    <td class="name">Font Weight (<code>.is-weight-*</code>)</td>
                     <td class="description">
-                      Sets the <code>font-weight</code> property to the
-                      specidifed value, where <code>*</code> is a value between
-                      300 and 900.
+                      Sets the <code>font-weight</code> property to the specidifed value,
+                      where <code>*</code> is a value between 300 and 900.
                     </td>
                   </tr>
                   <tr>
                     <td class="name">Font Size (<code>.rem-*</code>)</td>
                     <td class="description">
-                      Sets the <code>font-size</code> property to the specidifed
-                      value, where <code>*</code> is a value between 70 and 100.
-                      Increments by 5.
+                      Sets the <code>font-size</code> property to the specidifed value,
+                      where <code>*</code> is a value between 70 and 100. Increments by 5.
                     </td>
                   </tr>
                 </tbody>

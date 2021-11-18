@@ -26,18 +26,10 @@ const toggleTabs = () => {
     <div class="widget-head">
       <h3 class="dark-inverted">{{ title }}</h3>
       <div class="tabbed-controls">
-        <a
-          class="tabbed-control"
-          :class="[!state && 'is-active']"
-          @click="toggleTabs"
-        >
+        <a class="tabbed-control" :class="[!state && 'is-active']" @click="toggleTabs">
           <span>{{ labels[0] }}</span>
         </a>
-        <a
-          class="tabbed-control"
-          :class="[state && 'is-active']"
-          @click="toggleTabs"
-        >
+        <a class="tabbed-control" :class="[state && 'is-active']" @click="toggleTabs">
           <span>{{ labels[1] }}</span>
         </a>
         <div class="tabbed-naver"></div>

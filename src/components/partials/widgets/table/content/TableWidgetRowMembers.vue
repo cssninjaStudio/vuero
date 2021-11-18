@@ -68,36 +68,19 @@ const props = defineProps<{
     </td>
     <td class="is-end">
       <div class="buttons">
-        <button
-          class="button is-dark-outlined"
-          :class="[props.circled && 'is-circle']"
-        >
+        <button class="button is-dark-outlined" :class="[props.circled && 'is-circle']">
           <span class="icon is-small">
-            <i
-              aria-hidden="true"
-              class="iconify"
-              data-icon="feather:edit-2"
-            ></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:edit-2"></i>
           </span>
         </button>
-        <button
-          class="button is-dark-outlined"
-          :class="[props.circled && 'is-circle']"
-        >
+        <button class="button is-dark-outlined" :class="[props.circled && 'is-circle']">
           <span class="icon is-small">
             <i aria-hidden="true" class="iconify" data-icon="feather:eye"></i>
           </span>
         </button>
-        <button
-          class="button is-dark-outlined"
-          :class="[props.circled && 'is-circle']"
-        >
+        <button class="button is-dark-outlined" :class="[props.circled && 'is-circle']">
           <span class="icon is-small">
-            <i
-              aria-hidden="true"
-              class="iconify"
-              data-icon="feather:trash-2"
-            ></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:trash-2"></i>
           </span>
         </button>
       </div>

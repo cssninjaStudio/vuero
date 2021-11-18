@@ -123,9 +123,7 @@ const optionsSingle = [
                   <img
                     :src="item.image"
                     alt=""
-                    @error.once="
-                      (event) => useViaPlaceholderError(event, '1280x960')
-                    "
+                    @error.once="(event) => useViaPlaceholderError(event, '1280x960')"
                   />
                 </figure>
               </div>
@@ -136,11 +134,7 @@ const optionsSingle = [
                       {{ item.name }}
                     </h3>
                     <p>
-                      <i
-                        aria-hidden="true"
-                        class="iconify"
-                        data-icon="feather:calendar"
-                      >
+                      <i aria-hidden="true" class="iconify" data-icon="feather:calendar">
                       </i
                       >{{ item.dueDate }}
                     </p>
@@ -161,7 +155,7 @@ const optionsSingle = [
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/abstracts/mixins';
 
 .card-grid {
   .columns {

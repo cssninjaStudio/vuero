@@ -28,9 +28,7 @@ export function HSLToHex(hslCss?: string) {
       h = parseFloat(hueString.substr(0, hueString.length - 3))
       break
     case 'turn':
-      h = Math.round(
-        parseFloat(hueString.substr(0, hueString.length - 4)) * 360
-      )
+      h = Math.round(parseFloat(hueString.substr(0, hueString.length - 4)) * 360)
       break
     case 'rad':
       h = Math.round(

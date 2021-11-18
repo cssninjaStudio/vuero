@@ -20,9 +20,7 @@ for more details about usage.
             </span>
             <span class="file-label"> Choose a file… </span>
           </span>
-          <span class="file-name light-text">
-            22082020_project_budget.xls
-          </span>
+          <span class="file-name light-text"> 22082020_project_budget.xls </span>
         </label>
       </div>
     </VControl>

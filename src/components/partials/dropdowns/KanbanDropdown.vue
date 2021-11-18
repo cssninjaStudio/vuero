@@ -8,20 +8,13 @@ const emit = defineEmits(['rename', 'collapse'])
       <a class="dropdown-item kanban-rename kill-drop" @click="emit('rename')">
         Rename
       </a>
-      <a
-        class="dropdown-item kanban-collapse kill-drop"
-        @click="emit('collapse')"
-      >
+      <a class="dropdown-item kanban-collapse kill-drop" @click="emit('collapse')">
         Collapse
       </a>
       <hr class="dropdown-divider" />
       <div class="dropdown-item has-child">
         Settings
-        <i
-          aria-hidden="true"
-          class="iconify"
-          data-icon="feather:chevron-right"
-        ></i>
+        <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right"></i>
 
         <div class="child-dropdown">
           <div class="inner">

@@ -35,12 +35,11 @@ const props = defineProps<{
 </template>
 
 <style lang="scss">
-@import '../../../scss/abstracts/_mixins.scss';
+@import '../../../scss/abstracts/mixins';
 
 /* ==========================================================================
 1. Mobile Navbar
 ========================================================================== */
-
 .mobile-navbar {
   position: fixed;
   top: 0;
@@ -48,7 +47,7 @@ const props = defineProps<{
   display: none;
   width: 100%;
   z-index: 100;
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 8px 0 rgb(0 0 0 / 12%);
   transition: all 0.3s;
 
   &.no-shadow {
@@ -138,7 +137,7 @@ const props = defineProps<{
           .dropdown-head {
             display: flex;
             align-items: center;
-            padding: 20px 16px 20px 16px;
+            padding: 20px 16px;
             margin-bottom: 12px;
             background: #fafafa;
 
@@ -290,7 +289,7 @@ const props = defineProps<{
 
       &:hover,
       &.is-active {
-        box-shadow: 0 3px 10px 4px rgba(0, 0, 0, 0.07);
+        box-shadow: 0 3px 10px 4px rgb(0 0 0 / 7%);
 
         svg {
           color: var(--primary);
@@ -402,7 +401,7 @@ const props = defineProps<{
     margin-left: 0 !important;
 
     &:hover {
-      background-color: rgba(0, 0, 0, 0.02);
+      background-color: rgb(0 0 0 / 2%);
     }
 
     span {

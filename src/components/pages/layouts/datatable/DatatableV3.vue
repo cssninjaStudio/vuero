@@ -36,10 +36,9 @@ import { datatableV3 } from '/@src/data/layouts/datatable-v3'
           <img class="file-icon" :src="row[0]" alt="" />
         </td>
         <td>
-          <span
-            class="has-dark-text dark-inverted is-font-alt is-weight-600 rem-90"
-            >{{ row[1] }}</span
-          >
+          <span class="has-dark-text dark-inverted is-font-alt is-weight-600 rem-90">{{
+            row[1]
+          }}</span>
         </td>
         <td>
           <span class="light-text">{{ row[2] }}</span>

@@ -29,6 +29,6 @@ useHead({
 </template>
 
 <style lang="scss">
-@import '../../scss/abstracts/_mixins.scss';
-@import '../../scss/pages/generic/_utility.scss';
+@import '../../scss/abstracts/mixins';
+@import '../../scss/pages/generic/utility';
 </style>

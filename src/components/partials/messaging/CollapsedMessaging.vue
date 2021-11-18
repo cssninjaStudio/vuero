@@ -20,10 +20,7 @@ const props = withDefaults(
 </script>
 
 <template>
-  <div
-    :class="[activeSidebar !== 'messages' && 'is-active']"
-    class="collapsed-messaging"
-  >
+  <div :class="[activeSidebar !== 'messages' && 'is-active']" class="collapsed-messaging">
     <div class="inner">
       <div class="collapsed-menu">
         <div
@@ -31,10 +28,7 @@ const props = withDefaults(
           @click="toggleSidebar('messages')"
         >
           <span class="menu-toggle has-chevron">
-            <span
-              :class="[activeSidebar !== 'none' && 'active']"
-              class="icon-box-toggle"
-            >
+            <span :class="[activeSidebar !== 'none' && 'active']" class="icon-box-toggle">
               <span class="rotate">
                 <i aria-hidden="true" class="icon-line-top"></i>
                 <i aria-hidden="true" class="icon-line-center"></i>
@@ -74,5 +68,5 @@ const props = withDefaults(
 </template>
 
 <style lang="scss">
-@import '../../../scss/layout/_sidebar-panel.scss';
+@import '../../../scss/layout/sidebar-panel';
 </style>

@@ -50,39 +50,23 @@ const dropdown2 = useDropdown(dropdownElement2)
         <div>
           <button class="button" @click="dropdown1.toggle">
             <span class="icon is-small">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:more-vertical"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:more-vertical"></i>
             </span>
           </button>
         </div>
         <div class="dropdown-menu">
           <div class="dropdown-content">
             <a class="dropdown-item">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:bookmark"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:bookmark"></i>
               <span>Bookmark</span>
             </a>
             <a class="dropdown-item">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:share-2"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:share-2"></i>
               <span>Share message</span>
             </a>
             <hr class="dropdown-divider" />
             <a class="dropdown-item">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:thumbs-down"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:thumbs-down"></i>
               <span>Mark as spam</span>
             </a>
           </div>
@@ -112,11 +96,7 @@ const dropdown2 = useDropdown(dropdownElement2)
               ></i>
             </a>
             <a class="inbox-action">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:file-text"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:file-text"></i>
             </a>
             <a class="inbox-action">
               <i aria-hidden="true" class="iconify" data-icon="feather:tag"></i>
@@ -129,11 +109,7 @@ const dropdown2 = useDropdown(dropdownElement2)
               ></i>
             </a>
             <a class="inbox-action">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:lock"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:lock"></i>
             </a>
           </div>
         </div>
@@ -141,10 +117,9 @@ const dropdown2 = useDropdown(dropdownElement2)
         <div class="mail-content content">
           <p>Hi Erik,</p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid
-            adiuvas? Dat enim intervalla et relaxat. Et nemo nimium beatus est;
-            Claudii libidini, qui tum erat summo ne imperio, dederetur. Duo
-            Reges: constructio interrete.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid adiuvas? Dat
+            enim intervalla et relaxat. Et nemo nimium beatus est; Claudii libidini, qui
+            tum erat summo ne imperio, dederetur. Duo Reges: constructio interrete.
           </p>
           <p>
             Sedulo, inquam, faciam. Certe, nisi voluptatem tanti aestimaretis.
@@ -154,18 +129,16 @@ const dropdown2 = useDropdown(dropdownElement2)
           <ul>
             <li>Quid nunc honeste dicit?</li>
             <li>
-              Nos quidem Virtutes sic natae sumus, ut tibi serviremus, aliud
-              negotii nihil habemus.
+              Nos quidem Virtutes sic natae sumus, ut tibi serviremus, aliud negotii nihil
+              habemus.
             </li>
-            <li>
-              Negabat igitur ullam esse artem, quae ipsa a se proficisceretur;
-            </li>
+            <li>Negabat igitur ullam esse artem, quae ipsa a se proficisceretur;</li>
           </ul>
           <p>
-            Satis est ad hoc responsum. Quod iam a me expectare noli. Confecta
-            res esset. Bonum integritas corporis: misera debilitas. Illum mallem
-            levares, quo optimum atque humanissimum virum, Cn. Utrum igitur tibi
-            litteram videor an totas paginas commovere?
+            Satis est ad hoc responsum. Quod iam a me expectare noli. Confecta res esset.
+            Bonum integritas corporis: misera debilitas. Illum mallem levares, quo optimum
+            atque humanissimum virum, Cn. Utrum igitur tibi litteram videor an totas
+            paginas commovere?
           </p>
           <p>Kelly</p>
         </div>
@@ -175,11 +148,7 @@ const dropdown2 = useDropdown(dropdownElement2)
           <div class="attachment">
             <span>iteration-4.pdf</span>
             <div class="download-icon">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:arrow-down"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:arrow-down"></i>
             </div>
           </div>
         </div>
@@ -232,11 +201,7 @@ const dropdown2 = useDropdown(dropdownElement2)
                     <span>Spelling</span>
                   </a>
                   <a class="dropdown-item">
-                    <i
-                      aria-hidden="true"
-                      class="iconify"
-                      data-icon="feather:at-sign"
-                    ></i>
+                    <i aria-hidden="true" class="iconify" data-icon="feather:at-sign"></i>
                     <span>Mention</span>
                   </a>
                 </div>

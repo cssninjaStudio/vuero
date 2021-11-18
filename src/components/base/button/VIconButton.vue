@@ -31,15 +31,9 @@ export default defineComponent({
       validator: (value: VIconButtonColor) => {
         // The value must match one of these strings
         if (
-          [
-            undefined,
-            'primary',
-            'info',
-            'success',
-            'warning',
-            'danger',
-            'white',
-          ].indexOf(value) === -1
+          [undefined, 'primary', 'info', 'success', 'warning', 'danger', 'white'].indexOf(
+            value
+          ) === -1
         ) {
           console.warn(
             `VIconButton: invalid "${value}" color. Should be primary, info, success, warning, danger, white or undefined`
@@ -121,9 +115,7 @@ export default defineComponent({
         props.light && 'is-light',
       ]
     })
-    const isIconify = computed(
-      () => props.icon && props.icon.indexOf(':') !== -1
-    )
+    const isIconify = computed(() => props.icon && props.icon.indexOf(':') !== -1)
 
     return () => {
       let icon

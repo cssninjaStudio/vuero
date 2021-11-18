@@ -5,6 +5,6 @@
 </template>
 
 <style lang="scss">
-@import '../scss/abstracts/_mixins.scss';
-@import '../scss/pages/auth/_auth.scss';
+@import '../scss/abstracts/mixins';
+@import '../scss/pages/auth/auth';
 </style>

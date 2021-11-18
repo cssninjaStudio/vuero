@@ -5,10 +5,7 @@ import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
 
 import { pageTitle } from '/@src/state/sidebarLayoutState'
 
-import {
-  editorData,
-  editorConfig,
-} from '/@src/data/documentation/ck-editor/editor-data'
+import { editorData, editorConfig } from '/@src/data/documentation/ck-editor/editor-data'
 
 const CKEditor = CKE.component
 
@@ -51,11 +48,7 @@ useHead({
 
         <div class="columns">
           <div class="column is-12 content">
-            <CKEditor
-              v-model="editorData"
-              :editor="ClassicEditor"
-              :config="editorConfig"
-            >
+            <CKEditor v-model="editorData" :editor="ClassicEditor" :config="editorConfig">
             </CKEditor>
           </div>
         </div>

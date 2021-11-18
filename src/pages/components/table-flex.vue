@@ -71,9 +71,7 @@ useHead({
                       class="avatar"
                       src="/demo/avatars/25.jpg"
                       alt=""
-                      @error.once="
-                        (event) => useViaPlaceholderError(event, '150x150')
-                      "
+                      @error.once="(event) => useViaPlaceholderError(event, '150x150')"
                     />
                   </div>
                   <div class="v-avatar is-small">
@@ -86,9 +84,7 @@ useHead({
                       class="avatar"
                       src="/images/avatars/svg/vuero-1.svg"
                       alt=""
-                      @error.once="
-                        (event) => useViaPlaceholderError(event, '150x150')
-                      "
+                      @error.once="(event) => useViaPlaceholderError(event, '150x150')"
                     />
                   </div>
                   <div class="v-avatar is-small">
@@ -159,9 +155,7 @@ useHead({
                       class="avatar"
                       src="/demo/avatars/7.jpg"
                       alt=""
-                      @error.once="
-                        (event) => useViaPlaceholderError(event, '150x150')
-                      "
+                      @error.once="(event) => useViaPlaceholderError(event, '150x150')"
                     />
                   </div>
                 </div>
@@ -192,9 +186,7 @@ useHead({
                       class="avatar"
                       src="/demo/avatars/13.jpg"
                       alt=""
-                      @error.once="
-                        (event) => useViaPlaceholderError(event, '150x150')
-                      "
+                      @error.once="(event) => useViaPlaceholderError(event, '150x150')"
                     />
                   </div>
                 </div>
@@ -225,9 +217,7 @@ useHead({
                       class="avatar"
                       src="/demo/avatars/25.jpg"
                       alt=""
-                      @error.once="
-                        (event) => useViaPlaceholderError(event, '150x150')
-                      "
+                      @error.once="(event) => useViaPlaceholderError(event, '150x150')"
                     />
                   </div>
                   <div class="v-avatar is-small">
@@ -235,9 +225,7 @@ useHead({
                       class="avatar"
                       src="/demo/avatars/11.jpg"
                       alt=""
-                      @error.once="
-                        (event) => useViaPlaceholderError(event, '150x150')
-                      "
+                      @error.once="(event) => useViaPlaceholderError(event, '150x150')"
                     />
                   </div>
                   <div class="v-avatar is-small">
@@ -245,9 +233,7 @@ useHead({
                       class="avatar"
                       src="/demo/avatars/5.jpg"
                       alt=""
-                      @error.once="
-                        (event) => useViaPlaceholderError(event, '150x150')
-                      "
+                      @error.once="(event) => useViaPlaceholderError(event, '150x150')"
                     />
                   </div>
                 </div>

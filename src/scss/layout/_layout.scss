@@ -43,13 +43,13 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgb(0, 0, 0);
-  opacity: 0;
+  background: rgb(0 0 0);
+  opacity: 0%;
   z-index: -1;
   transition: opacity 0.3s;
 
   &.is-active {
-    opacity: 0.8;
+    opacity: 80%;
     z-index: 9999;
   }
 }
@@ -116,7 +116,7 @@ body {
   height: 100%;
   min-height: 100vh;
   width: calc(100% - 80px);
-  padding: 0 0 60px 0;
+  padding: 0 0 60px;
   margin-left: 80px;
   background: var(--background-grey);
   transition: all 0.3s;
@@ -184,10 +184,10 @@ body {
   }
 }
 
-//Enable this setting if you want the dashboard to be larger
+// Enable this setting if you want the dashboard to be larger
 @media only screen and (min-width: 1408px) {
   .page-content-wrapper {
-    //max-width: 1380px;
+    // max-width: 1380px;
   }
 }
 
@@ -443,7 +443,7 @@ body {
     }
 
     .floating-btn {
-      box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.3);
+      box-shadow: 0 4px 8px 0 hsl(0deg 0% 0% / 30%);
 
       i {
         &:first-child {
@@ -531,18 +531,18 @@ body {
     z-index: -1;
     display: block;
     text-decoration: none;
-    color: hsl(0, 0%, 100%);
+    color: hsl(0deg 0% 100%);
     font-size: 1em;
     width: 3em;
     height: 3em;
     border-radius: var(--radius-rounded);
     text-align: center;
     line-height: 3;
-    background-color: hsla(0, 0%, 0%, 0.2);
+    background-color: hsl(0deg 0% 0% / 20%);
     transition: transform 0.3s ease, background-color 0.2s ease;
 
     &:hover {
-      background-color: hsla(0, 0%, 0%, 0.3);
+      background-color: hsl(0deg 0% 0% / 30%);
     }
 
     &.is-flex {
@@ -580,18 +580,18 @@ body {
   .circular-menu {
     &::after {
       background: var(--dark-sidebar-dark-2);
-      box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.3) !important;
+      box-shadow: 0 4px 8px 0 hsl(0deg 0% 0% / 30%) !important;
     }
 
     &.active {
       .floating-btn {
-        box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.3) !important;
+        box-shadow: 0 4px 8px 0 hsl(0deg 0% 0% / 30%) !important;
       }
     }
 
     .floating-btn {
       background: var(--dark-sidebar-light-2);
-      box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.3) !important;
+      box-shadow: 0 4px 8px 0 hsl(0deg 0% 0% / 30%) !important;
     }
   }
 }

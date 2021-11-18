@@ -1,10 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 
-import type {
-  VAvatarProps,
-  VAvatarColor,
-} from '/@src/components/base/avatar/VAvatar.vue'
+import type { VAvatarProps, VAvatarColor } from '/@src/components/base/avatar/VAvatar.vue'
 import { users } from '/@src/data/layouts/user-grid-v1'
 
 const filters = ref('')
@@ -115,11 +112,7 @@ function getAvatarData(user: any): VAvatarProps {
             <div class="buttons">
               <button class="button v-button is-dark-outlined">
                 <span class="icon">
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:user"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:user"></i>
                 </span>
                 <span>Profile</span>
               </button>
@@ -142,6 +135,6 @@ function getAvatarData(user: any): VAvatarProps {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
-@import '../../../../scss/pages/lists/_user-grid-v1.scss';
+@import '../../../../scss/abstracts/mixins';
+@import '../../../../scss/pages/lists/user-grid-v1';
 </style>

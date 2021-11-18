@@ -143,10 +143,10 @@ Widget Styles
 ========================================================================== */
 
 .gauge-widget {
-  @include vuero-l-card();
+  @include vuero-l-card;
 
   &.is-straight {
-    @include vuero-s-card();
+    @include vuero-s-card;
   }
 
   text-align: center;
@@ -158,7 +158,7 @@ Widget Styles
 
 .is-dark {
   .gauge-widget {
-    @include vuero-card--dark();
+    @include vuero-card--dark;
   }
 }
 
@@ -167,10 +167,10 @@ Widget Styles
 ========================================================================== */
 
 .icon-toolbar-widget {
-  @include vuero-l-card();
+  @include vuero-l-card;
 
   &.is-straight {
-    @include vuero-s-card();
+    @include vuero-s-card;
   }
 
   padding: 16px;
@@ -216,7 +216,7 @@ Widget Styles
 
 .is-dark {
   .icon-toolbar-widget {
-    @include vuero-card--dark();
+    @include vuero-card--dark;
 
     .icon-toolbar {
       .toolbar-icon {
@@ -241,10 +241,10 @@ Widget Styles
 ========================================================================== */
 
 .text-widget {
-  @include vuero-l-card();
+  @include vuero-l-card;
 
   &.is-straight {
-    @include vuero-s-card();
+    @include vuero-s-card;
   }
 
   .widget-content {
@@ -271,7 +271,7 @@ Widget Styles
 
 .is-dark {
   .text-widget {
-    @include vuero-card--dark();
+    @include vuero-card--dark;
 
     .widget-content {
       p {
@@ -294,16 +294,16 @@ Widget Styles
 ========================================================================== */
 
 .tags-widget {
-  @include vuero-l-card();
+  @include vuero-l-card;
 
   &.is-straight {
-    @include vuero-s-card();
+    @include vuero-s-card;
   }
 }
 
 .is-dark {
   .tags-widget {
-    @include vuero-card--dark();
+    @include vuero-card--dark;
   }
 }
 
@@ -320,7 +320,7 @@ Widget Styles
     margin-right: -6px;
 
     .calendar-square {
-      @include vuero-l-card();
+      @include vuero-l-card;
 
       flex: 1;
       margin: 6px;
@@ -354,7 +354,8 @@ Widget Styles
   .calendar-widget {
     .calendar-widget-inner {
       .calendar-square {
-        @include vuero-card--dark();
+        @include vuero-card--dark;
+
         .date {
           span {
             &:first-child {
@@ -372,10 +373,10 @@ Widget Styles
 ========================================================================== */
 
 .image-widget {
-  @include vuero-l-card();
+  @include vuero-l-card;
 
   &.is-straight {
-    @include vuero-s-card();
+    @include vuero-s-card;
   }
 
   position: relative;
@@ -406,7 +407,7 @@ Widget Styles
 
 .is-dark {
   .image-widget {
-    @include vuero-card--dark();
+    @include vuero-card--dark;
 
     .progress-wrap {
       .progress {
@@ -425,10 +426,10 @@ Widget Styles
 ========================================================================== */
 
 .list-widget {
-  @include vuero-l-card();
+  @include vuero-l-card;
 
   &.is-straight {
-    @include vuero-s-card();
+    @include vuero-s-card;
   }
 
   ul {
@@ -470,10 +471,10 @@ Widget Styles
 ========================================================================== */
 
 .picker-widget {
-  @include vuero-l-card();
+  @include vuero-l-card;
 
   &.is-straight {
-    @include vuero-s-card();
+    @include vuero-s-card;
   }
 
   .calendar {
@@ -523,7 +524,7 @@ Widget Styles
 
 .is-dark {
   .picker-widget {
-    @include vuero-card--dark();
+    @include vuero-card--dark;
 
     .calendar {
       color: var(--dark-dark-text);
@@ -550,13 +551,13 @@ Widget Styles
 ========================================================================== */
 
 .stats-widget {
-  @include vuero-l-card();
+  @include vuero-l-card;
 
   &.is-straight {
-    @include vuero-s-card();
+    @include vuero-s-card;
   }
 
-  padding: 20px 0 0 0;
+  padding: 20px 0 0;
 
   .widget-toolbar {
     padding: 0 20px;
@@ -594,7 +595,8 @@ Widget Styles
 
 .is-dark {
   .stats-widget {
-    @include vuero-card--dark();
+    @include vuero-card--dark;
+
     .stat-number {
       span {
         &:first-child {
@@ -610,10 +612,10 @@ Widget Styles
 ========================================================================== */
 
 .search-widget {
-  @include vuero-l-card();
+  @include vuero-l-card;
 
   &.is-straight {
-    @include vuero-s-card();
+    @include vuero-s-card;
   }
 
   .field {
@@ -676,7 +678,7 @@ Widget Styles
 
 .is-dark {
   .search-widget {
-    @include vuero-card--dark();
+    @include vuero-card--dark;
 
     .field {
       .control {
@@ -704,10 +706,10 @@ Widget Styles
 ========================================================================== */
 
 .icon-list-widget {
-  @include vuero-l-card();
+  @include vuero-l-card;
 
   &.is-straight {
-    @include vuero-s-card();
+    @include vuero-s-card;
   }
 
   .icon-list {
@@ -781,7 +783,7 @@ Widget Styles
 
 .is-dark {
   .icon-list-widget {
-    @include vuero-card--dark();
+    @include vuero-card--dark;
 
     .icon-list {
       .icon-list-item {
@@ -813,10 +815,10 @@ Widget Styles
 ========================================================================== */
 
 .video-widget {
-  @include vuero-l-card();
+  @include vuero-l-card;
 
   &.is-straight {
-    @include vuero-s-card();
+    @include vuero-s-card;
   }
 
   padding: 10px;
@@ -876,7 +878,7 @@ Widget Styles
 
 .is-dark {
   .video-widget {
-    @include vuero-card--dark();
+    @include vuero-card--dark;
 
     .widget-meta {
       > svg {
@@ -895,10 +897,10 @@ Widget Styles
 ========================================================================== */
 
 .inbox-widget {
-  @include vuero-l-card();
+  @include vuero-l-card;
 
   &.is-straight {
-    @include vuero-s-card();
+    @include vuero-s-card;
   }
 
   .sender-block {
@@ -962,7 +964,7 @@ Widget Styles
 
 .is-dark {
   .inbox-widget {
-    @include vuero-card--dark();
+    @include vuero-card--dark;
 
     .sender-block {
       .sender-block-inner {
@@ -995,10 +997,10 @@ Widget Styles
 
 .illustration-widget {
   &.illustration-widget-v1 {
-    @include vuero-l-card();
+    @include vuero-l-card;
 
     &.is-straight {
-      @include vuero-s-card();
+      @include vuero-s-card;
     }
 
     padding: 40px 30px;
@@ -1007,7 +1009,7 @@ Widget Styles
 
     .img-container {
       position: relative;
-      margin: 0 auto 12px auto;
+      margin: 0 auto 12px;
       max-width: 180px;
 
       .main {
@@ -1047,10 +1049,10 @@ Widget Styles
   }
 
   &.illustration-widget-v2 {
-    @include vuero-l-card();
+    @include vuero-l-card;
 
     &.is-straight {
-      @include vuero-s-card();
+      @include vuero-s-card;
     }
 
     padding: 16px;
@@ -1073,10 +1075,10 @@ Widget Styles
   }
 
   &.illustration-widget-v3 {
-    @include vuero-l-card();
+    @include vuero-l-card;
 
     &.is-straight {
-      @include vuero-s-card();
+      @include vuero-s-card;
     }
 
     padding: 24px;
@@ -1101,7 +1103,7 @@ Widget Styles
 
 .is-dark {
   .illustration-widget {
-    @include vuero-card--dark();
+    @include vuero-card--dark;
 
     &.illustration-widget-v1,
     &.illustration-widget-v2,
@@ -1118,10 +1120,10 @@ Widget Styles
 ========================================================================== */
 
 .creative-list-widget {
-  @include vuero-l-card();
+  @include vuero-l-card;
 
   &.is-straight {
-    @include vuero-s-card();
+    @include vuero-s-card;
   }
 
   .creative-list {
@@ -1158,7 +1160,7 @@ Widget Styles
 
 .is-dark {
   .creative-list-widget {
-    @include vuero-card--dark();
+    @include vuero-card--dark;
 
     .creative-list {
       .creative-list-item {
@@ -1178,10 +1180,10 @@ Widget Styles
 ========================================================================== */
 
 .social-buttons-widget {
-  @include vuero-l-card();
+  @include vuero-l-card;
 
   &.is-straight {
-    @include vuero-s-card();
+    @include vuero-s-card;
   }
 
   padding: 16px;
@@ -1277,7 +1279,7 @@ Widget Styles
 
 .is-dark {
   .social-buttons-widget {
-    @include vuero-card--dark();
+    @include vuero-card--dark;
 
     .social-buttons {
       .social-button {
@@ -1297,10 +1299,10 @@ Widget Styles
 ========================================================================== */
 
 .call-widget {
-  @include vuero-l-card();
+  @include vuero-l-card;
 
   &.is-straight {
-    @include vuero-s-card();
+    @include vuero-s-card;
   }
 
   padding: 40px 30px;
@@ -1309,7 +1311,7 @@ Widget Styles
 
   .img-container {
     position: relative;
-    margin: 0 auto 12px auto;
+    margin: 0 auto 12px;
     max-width: 180px;
     max-height: 180px;
 
@@ -1377,7 +1379,7 @@ Widget Styles
 
 .is-dark {
   .call-widget {
-    @include vuero-card--dark();
+    @include vuero-card--dark;
 
     h3 {
       color: var(--dark-dark-text);
@@ -1409,10 +1411,10 @@ Widget Styles
 ========================================================================== */
 
 .avatar-list-widget {
-  @include vuero-l-card();
+  @include vuero-l-card;
 
   &.is-straight {
-    @include vuero-s-card();
+    @include vuero-s-card;
   }
 
   padding: 14px;
@@ -1483,7 +1485,7 @@ Widget Styles
 
 .is-dark {
   .avatar-list-widget {
-    @include vuero-card--dark();
+    @include vuero-card--dark;
 
     .field {
       .control {
@@ -1523,10 +1525,10 @@ Widget Styles
 ========================================================================== */
 
 .contact-widget {
-  @include vuero-l-card();
+  @include vuero-l-card;
 
   &.is-straight {
-    @include vuero-s-card();
+    @include vuero-s-card;
   }
 
   &.is-reversed {
@@ -1603,7 +1605,7 @@ Widget Styles
 
 .is-dark {
   .contact-widget {
-    @include vuero-card--dark();
+    @include vuero-card--dark;
 
     .widget-content {
       border-color: var(--dark-sidebar-light-12);
@@ -1634,10 +1636,10 @@ Widget Styles
 ========================================================================== */
 
 .followers-widget {
-  @include vuero-l-card();
+  @include vuero-l-card;
 
   &.is-straight {
-    @include vuero-s-card();
+    @include vuero-s-card;
   }
 
   .channels {
@@ -1659,7 +1661,7 @@ Widget Styles
         width: 36px;
         border-radius: 10px;
         background: var(--widget-grey);
-        margin: 0 auto 4px auto;
+        margin: 0 auto 4px;
 
         i {
           font-size: 14px;
@@ -1684,7 +1686,7 @@ Widget Styles
 
 .is-dark {
   .followers-widget {
-    @include vuero-card--dark();
+    @include vuero-card--dark;
 
     .channels {
       .channel {
@@ -1702,10 +1704,10 @@ Widget Styles
 ========================================================================== */
 
 .cart-widget {
-  @include vuero-l-card();
+  @include vuero-l-card;
 
   &.is-straight {
-    @include vuero-s-card();
+    @include vuero-s-card;
   }
 
   .cart-items {
@@ -1750,7 +1752,7 @@ Widget Styles
 
 .is-dark {
   .cart-widget {
-    @include vuero-card--dark();
+    @include vuero-card--dark;
 
     .cart-items {
       .cart-item {

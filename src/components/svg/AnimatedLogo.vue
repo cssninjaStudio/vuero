@@ -53,14 +53,16 @@ router.afterEach(() => {
 </template>
 
 <style lang="scss" scoped>
-@import '../../scss/layout/_sidebar.scss';
+@import '../../scss/layout/sidebar';
 
 .right {
   fill: var(--primary-dark-7);
 }
+
 .bottom {
   fill: var(--primary);
 }
+
 .left {
   fill: var(--primary-light-15);
 }
@@ -72,11 +74,13 @@ svg:hover {
     animation-fill-mode: forwards;
     animation-delay: 0s;
   }
+
   .left {
     animation: is-roll-left 8s ease infinite;
     animation-fill-mode: forwards;
     animation-delay: 0s;
   }
+
   .bottom {
     animation: is-roll-bottom 8s ease infinite;
     animation-fill-mode: forwards;
@@ -89,10 +93,12 @@ svg:hover {
     fill: var(--white);
     animation: none;
   }
+
   .bottom {
     fill: #fffc;
     animation: none;
   }
+
   .left {
     fill: #fffa;
     animation: none;
@@ -103,12 +109,15 @@ svg:hover {
   0% {
     fill: var(--primary-dark-7);
   }
+
   33% {
     fill: var(--primary-light-8);
   }
+
   66% {
     fill: var(--primary-light-40);
   }
+
   100% {
     fill: var(--primary-dark-7);
   }
@@ -118,12 +127,15 @@ svg:hover {
   0% {
     fill: var(--primary);
   }
+
   33% {
-    fill: var(--primary-light-24); //darken(#1ee8c0, 7%);
+    fill: var(--primary-light-24); // darken(#1ee8c0, 7%);
   }
+
   66% {
     fill: var(--primary-light-20);
   }
+
   100% {
     fill: var(--primary);
   }
@@ -133,12 +145,15 @@ svg:hover {
   0% {
     fill: var(--primary-light-15);
   }
+
   33% {
-    fill: var(--primary-light-12); //lighten(#1ee8c0, 15%);
+    fill: var(--primary-light-12); // lighten(#1ee8c0, 15%);
   }
+
   66% {
     fill: var(--primary-light-15);
   }
+
   100% {
     fill: var(--primary-light-15);
   }

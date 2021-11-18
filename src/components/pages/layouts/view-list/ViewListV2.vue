@@ -15,14 +15,10 @@ const filteredData = computed(() => {
       return (
         item.name.match(new RegExp(filters.value, 'i')) ||
         item.location.match(new RegExp(filters.value, 'i')) ||
-        ('parking'.match(new RegExp(filters.value, 'i')) &&
-          item.comodities.parking) ||
-        ('wifi'.match(new RegExp(filters.value, 'i')) &&
-          item.comodities.wifi) ||
-        ('heater'.match(new RegExp(filters.value, 'i')) &&
-          item.comodities.heater) ||
-        ('cleaning'.match(new RegExp(filters.value, 'i')) &&
-          item.comodities.cleaning)
+        ('parking'.match(new RegExp(filters.value, 'i')) && item.comodities.parking) ||
+        ('wifi'.match(new RegExp(filters.value, 'i')) && item.comodities.wifi) ||
+        ('heater'.match(new RegExp(filters.value, 'i')) && item.comodities.heater) ||
+        ('cleaning'.match(new RegExp(filters.value, 'i')) && item.comodities.cleaning)
       )
     })
   }
@@ -90,11 +86,7 @@ const filteredData = computed(() => {
       >
         <div class="list-view-inner">
           <transition-group name="list-complete" tag="div">
-            <div
-              v-for="item in filteredData"
-              :key="item.id"
-              class="list-view-item"
-            >
+            <div v-for="item in filteredData" :key="item.id" class="list-view-item">
               <div class="list-view-item-inner">
                 <img :src="item.picture" alt="" />
                 <div class="meta-left">
@@ -129,11 +121,7 @@ const filteredData = computed(() => {
                     </span>
                   </h3>
                   <p>
-                    <i
-                      aria-hidden="true"
-                      class="iconify"
-                      data-icon="feather:map-pin"
-                    ></i>
+                    <i aria-hidden="true" class="iconify" data-icon="feather:map-pin"></i>
                     <span>{{ item.location }}</span>
                   </p>
                   <span>
@@ -144,10 +132,7 @@ const filteredData = computed(() => {
                           : `${item.details.rooms} room`
                       }}
                     </span>
-                    <i
-                      aria-hidden="true"
-                      class="fas fa-circle icon-separator"
-                    ></i>
+                    <i aria-hidden="true" class="fas fa-circle icon-separator"></i>
                     <span>
                       {{
                         item.details.beds > 1
@@ -155,10 +140,7 @@ const filteredData = computed(() => {
                           : `${item.details.beds} bed`
                       }}
                     </span>
-                    <i
-                      aria-hidden="true"
-                      class="fas fa-circle icon-separator"
-                    ></i>
+                    <i aria-hidden="true" class="fas fa-circle icon-separator"></i>
                     <span>
                       {{
                         item.details.bathrooms > 1
@@ -206,11 +188,7 @@ const filteredData = computed(() => {
                       <i aria-hidden="true" class="lnil lnil-more"></i>
                       <span>3 more</span>
                     </span>
-                    <span
-                      v-else-if="
-                        item.comodities.other && item.comodities.otherThing
-                      "
-                    >
+                    <span v-else-if="item.comodities.other && item.comodities.otherThing">
                       <i aria-hidden="true" class="lnil lnil-more"></i>
                       <span>2 more</span>
                     </span>
@@ -274,11 +252,11 @@ const filteredData = computed(() => {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/abstracts/mixins';
 
 .list-view-v2 {
   .list-view-item {
-    @include vuero-s-card();
+    @include vuero-s-card;
 
     margin-bottom: 16px;
     padding: 16px;
@@ -395,7 +373,7 @@ const filteredData = computed(() => {
 .is-dark {
   .list-view-v2 {
     .list-view-item {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
 
       .list-view-item-inner {
         .meta-left {
@@ -478,7 +456,7 @@ const filteredData = computed(() => {
         }
 
         .meta-right {
-          margin: 16px 0 0 0;
+          margin: 16px 0 0;
 
           .buttons {
             margin: 0;
@@ -544,13 +522,13 @@ const filteredData = computed(() => {
           }
 
           .meta-right {
-            margin: auto 0 0 0;
+            margin: auto 0 0;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
 
             .buttons {
-              margin: 16px 0 0 0;
+              margin: 16px 0 0;
               width: 100%;
               display: flex;
               justify-content: space-between;

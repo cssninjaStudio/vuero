@@ -38,9 +38,7 @@ const props = withDefaults(
                 class="is-user"
                 :src="conversation.avatar"
                 alt=""
-                @error.once="
-                  (event) => useViaPlaceholderError(event, '150x150')
-                "
+                @error.once="(event) => useViaPlaceholderError(event, '150x150')"
               />
             </div>
             <div class="recipient-meta">
@@ -55,5 +53,5 @@ const props = withDefaults(
 </template>
 
 <style lang="scss">
-@import '../../../scss/layout/_sidebar-mobile.scss';
+@import '../../../scss/layout/sidebar-mobile';
 </style>

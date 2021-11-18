@@ -1,7 +1,7 @@
 .is-dark {
   .user-grid {
     .grid-item {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
     }
   }
 }
@@ -18,13 +18,13 @@
   }
 
   .grid-item {
-    @include vuero-s-card();
+    @include vuero-s-card;
 
     text-align: center;
 
     > .v-avatar {
       display: block;
-      margin: 0 auto 4px auto;
+      margin: 0 auto 4px;
     }
 
     h3 {
@@ -41,7 +41,7 @@
     .people {
       display: flex;
       justify-content: center;
-      padding: 8px 0 30px 0;
+      padding: 8px 0 30px;
 
       .v-avatar {
         margin: 0 4px;

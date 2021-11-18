@@ -51,9 +51,7 @@ const emit = defineEmits(['toggleMobileConversation'])
               @error.once="(event) => useViaPlaceholderError(event, '400X300')"
             />
           </div>
-          <div class="chat-msg-text">
-            This one is pretty colorful, I like it.
-          </div>
+          <div class="chat-msg-text">This one is pretty colorful, I like it.</div>
           <div class="chat-msg-text">
             <img
               src="/demo/photos/apps/9.png"

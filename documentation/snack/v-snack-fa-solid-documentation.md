@@ -21,13 +21,7 @@ a solid icon. Check the markup for more details.
   <VSnack title="Warning" color="warning" white solid icon="fas fa-radiation">
     <i class="iconify" data-icon="feather:plus"></i>
   </VSnack>
-  <VSnack
-    title="Health"
-    color="danger"
-    white
-    solid
-    icon="fas fa-thermometer-half"
-  >
+  <VSnack title="Health" color="danger" white solid icon="fas fa-thermometer-half">
     <i class="iconify" data-icon="feather:plus"></i>
   </VSnack>
 </template>

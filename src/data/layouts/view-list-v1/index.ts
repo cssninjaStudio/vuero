@@ -55,10 +55,7 @@ export const users = [
       replies: 97,
       posts: 16,
     },
-    teams: [
-      { picture: '/demo/avatars/7.jpg' },
-      { picture: '/demo/avatars/23.jpg' },
-    ],
+    teams: [{ picture: '/demo/avatars/7.jpg' }, { picture: '/demo/avatars/23.jpg' }],
   },
   {
     id: '40',
@@ -166,10 +163,7 @@ export const users = [
       replies: 15,
       posts: 2,
     },
-    teams: [
-      { picture: '/demo/avatars/32.jpg' },
-      { picture: '/demo/avatars/22.jpg' },
-    ],
+    teams: [{ picture: '/demo/avatars/32.jpg' }, { picture: '/demo/avatars/22.jpg' }],
   },
   {
     id: '25',

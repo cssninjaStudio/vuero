@@ -27,7 +27,7 @@ Subpages UI Elements
 
     .wrapper-inner {
       .action-box {
-        @include vuero-s-card();
+        @include vuero-s-card;
 
         padding: 40px;
 
@@ -37,14 +37,14 @@ Subpages UI Elements
 
           .v-avatar {
             display: block;
-            margin: 0 auto 8px auto;
+            margin: 0 auto 8px;
           }
 
           h3 {
             font-family: var(--font-alt);
             font-weight: 600;
             max-width: 320px;
-            margin: 0 auto 16px auto;
+            margin: 0 auto 16px;
 
             span {
               color: var(--primary);
@@ -78,7 +78,7 @@ Subpages UI Elements
             .people {
               display: flex;
               justify-content: center;
-              padding: 16px 0 8px 0;
+              padding: 16px 0 8px;
 
               .v-avatar {
                 margin: 0 4px;
@@ -118,7 +118,7 @@ Subpages UI Elements
     max-width: 840px;
 
     .wrapper-outer {
-      @include vuero-s-card();
+      @include vuero-s-card;
 
       display: flex;
       padding: 0;
@@ -199,11 +199,12 @@ Subpages UI Elements
     &.action-page-v2 {
       .wrapper-inner {
         .action-box {
-          @include vuero-card--dark();
+          @include vuero-card--dark;
         }
       }
+
       .wrapper-outer {
-        @include vuero-card--dark();
+        @include vuero-card--dark;
       }
     }
   }
@@ -237,7 +238,7 @@ Subpages UI Elements
 
         .wrapper-inner {
           .action-box {
-            padding: 20px 20px 40px 20px;
+            padding: 20px 20px 40px;
             border-right: none;
             border-bottom: 1px solid var(--fade-grey-dark-3);
 

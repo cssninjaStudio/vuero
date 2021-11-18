@@ -54,8 +54,7 @@ const validateStep = async () => {
             href="#"
             class="steps-content"
             @click.prevent="
-              currentStep >= 0 &&
-                scrollTo('#form-step-0', 800, { offset: -150 })
+              currentStep >= 0 && scrollTo('#form-step-0', 800, { offset: -150 })
             "
           >
             <p class="step-number">Step 1</p>
@@ -68,8 +67,7 @@ const validateStep = async () => {
             href="#"
             class="steps-content"
             @click.prevent="
-              currentStep >= 1 &&
-                scrollTo('#form-step-1', 800, { offset: -150 })
+              currentStep >= 1 && scrollTo('#form-step-1', 800, { offset: -150 })
             "
           >
             <p class="step-number">Step 2</p>
@@ -82,8 +80,7 @@ const validateStep = async () => {
             href="#"
             class="steps-content"
             @click.prevent="
-              currentStep >= 2 &&
-                scrollTo('#form-step-2', 800, { offset: -150 })
+              currentStep >= 2 && scrollTo('#form-step-2', 800, { offset: -150 })
             "
           >
             <p class="step-number">Step 3</p>
@@ -96,8 +93,7 @@ const validateStep = async () => {
             href="#"
             class="steps-content"
             @click.prevent="
-              currentStep >= 3 &&
-                scrollTo('#form-step-3', 800, { offset: -150 })
+              currentStep >= 3 && scrollTo('#form-step-3', 800, { offset: -150 })
             "
           >
             <p class="step-number">Step 4</p>
@@ -110,8 +106,7 @@ const validateStep = async () => {
             href="#"
             class="steps-content"
             @click.prevent="
-              currentStep >= 4 &&
-                scrollTo('#form-step-4', 800, { offset: -150 })
+              currentStep >= 4 && scrollTo('#form-step-4', 800, { offset: -150 })
             "
           >
             <p class="step-number">Step 5</p>
@@ -121,24 +116,14 @@ const validateStep = async () => {
     </div>
     <div class="stepper-form">
       <div class="form-sections">
-        <div
-          v-if="currentStep >= 0"
-          id="form-step-0"
-          class="form-section is-active"
-        >
+        <div v-if="currentStep >= 0" id="form-step-0" class="form-section is-active">
           <h3 class="form-section-title">
             <span>General Information</span>
             <button
               class="help-button"
-              @click="
-                currentHelp === 0 ? (currentHelp = -1) : (currentHelp = 0)
-              "
+              @click="currentHelp === 0 ? (currentHelp = -1) : (currentHelp = 0)"
             >
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:help-circle"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:help-circle"></i>
             </button>
           </h3>
 
@@ -156,11 +141,7 @@ const validateStep = async () => {
             <VField>
               <VControl>
                 <button class="input-button">
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:plus"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:plus"></i>
                   <span>Add shipment group</span>
                 </button>
               </VControl>
@@ -182,11 +163,7 @@ const validateStep = async () => {
 
               <VField grouped>
                 <VControl expanded>
-                  <input
-                    type="text"
-                    class="input"
-                    placeholder="Group description"
-                  />
+                  <input type="text" class="input" placeholder="Group description" />
                 </VControl>
                 <VControl subcontrol>
                   <label class="checkbox">
@@ -250,11 +227,7 @@ const validateStep = async () => {
               <VField>
                 <label>Quantity (units)</label>
                 <VControl>
-                  <input
-                    type="number"
-                    class="input"
-                    placeholder="Enter a quantity"
-                  />
+                  <input type="number" class="input" placeholder="Enter a quantity" />
                 </VControl>
               </VField>
 
@@ -278,11 +251,7 @@ const validateStep = async () => {
           </div>
           <div class="form-section-output">
             <div class="output">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:archive"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:archive"></i>
               <span>15 i9 Laptops - b2</span>
               <div class="action">
                 <VIconButton icon="feather:trash-2" />
@@ -292,46 +261,28 @@ const validateStep = async () => {
         </div>
 
         <transition name="fade-slow">
-          <div
-            v-if="currentStep >= 1"
-            id="form-step-1"
-            class="form-section is-active"
-          >
+          <div v-if="currentStep >= 1" id="form-step-1" class="form-section is-active">
             <h3 class="form-section-title">
               <span>Shipment Owner</span>
               <button
                 class="help-button"
-                @click="
-                  currentHelp === 1 ? (currentHelp = -1) : (currentHelp = 1)
-                "
+                @click="currentHelp === 1 ? (currentHelp = -1) : (currentHelp = 1)"
               >
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:help-circle"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:help-circle"></i>
               </button>
             </h3>
 
             <div class="form-section-inner">
               <VField>
                 <VControl>
-                  <input
-                    type="text"
-                    class="input"
-                    placeholder="Owning company name"
-                  />
+                  <input type="text" class="input" placeholder="Owning company name" />
                 </VControl>
               </VField>
 
               <VField>
                 <VControl>
                   <button class="input-button">
-                    <i
-                      aria-hidden="true"
-                      class="iconify"
-                      data-icon="feather:plus"
-                    ></i>
+                    <i aria-hidden="true" class="iconify" data-icon="feather:plus"></i>
                     <span>Add contact</span>
                   </button>
                 </VControl>
@@ -349,11 +300,7 @@ const validateStep = async () => {
 
                 <VField grouped>
                   <VControl expanded>
-                    <input
-                      type="text"
-                      class="input"
-                      placeholder="Email address"
-                    />
+                    <input type="text" class="input" placeholder="Email address" />
                   </VControl>
                   <VControl subcontrol>
                     <label class="checkbox">
@@ -366,11 +313,7 @@ const validateStep = async () => {
 
                 <VField grouped>
                   <VControl expanded>
-                    <input
-                      type="text"
-                      class="input"
-                      placeholder="Phone number"
-                    />
+                    <input type="text" class="input" placeholder="Phone number" />
                   </VControl>
                   <VControl subcontrol></VControl>
                 </VField>
@@ -379,22 +322,14 @@ const validateStep = async () => {
 
             <div class="form-section-output">
               <div class="output">
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:user"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:user"></i>
                 <span>Erik Kovalsky</span>
                 <div class="action">
                   <VIconButton icon="feather:trash-2" />
                 </div>
               </div>
               <div class="output">
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:user"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:user"></i>
                 <span>Elsa Walker</span>
                 <div class="action">
                   <VIconButton icon="feather:trash-2" />
@@ -405,35 +340,21 @@ const validateStep = async () => {
         </transition>
 
         <transition name="fade-slow">
-          <div
-            v-if="currentStep >= 2"
-            id="form-step-2"
-            class="form-section is-active"
-          >
+          <div v-if="currentStep >= 2" id="form-step-2" class="form-section is-active">
             <h3 class="form-section-title">
               <span>Shipment Taxes</span>
               <button
                 class="help-button"
-                @click="
-                  currentHelp === 2 ? (currentHelp = -1) : (currentHelp = 2)
-                "
+                @click="currentHelp === 2 ? (currentHelp = -1) : (currentHelp = 2)"
               >
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:help-circle"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:help-circle"></i>
               </button>
             </h3>
 
             <div class="form-section-inner">
               <VField>
                 <VControl>
-                  <input
-                    type="text"
-                    class="input"
-                    placeholder="Company Tax ID"
-                  />
+                  <input type="text" class="input" placeholder="Company Tax ID" />
                 </VControl>
               </VField>
 
@@ -466,24 +387,14 @@ const validateStep = async () => {
         </transition>
 
         <transition name="fade-slow">
-          <div
-            v-if="currentStep >= 3"
-            id="form-step-3"
-            class="form-section is-active"
-          >
+          <div v-if="currentStep >= 3" id="form-step-3" class="form-section is-active">
             <h3 class="form-section-title">
               <span>Options</span>
               <button
                 class="help-button"
-                @click="
-                  currentHelp === 3 ? (currentHelp = -1) : (currentHelp = 3)
-                "
+                @click="currentHelp === 3 ? (currentHelp = -1) : (currentHelp = 3)"
               >
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:help-circle"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:help-circle"></i>
               </button>
             </h3>
 
@@ -492,11 +403,7 @@ const validateStep = async () => {
                 <div class="option">
                   <input type="checkbox" />
                   <div class="indicator">
-                    <i
-                      aria-hidden="true"
-                      class="iconify"
-                      data-icon="feather:check"
-                    ></i>
+                    <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                   </div>
                   <div class="option-inner">
                     <i aria-hidden="true" class="lnil lnil-consulting"></i>
@@ -508,11 +415,7 @@ const validateStep = async () => {
                 <div class="option">
                   <input type="checkbox" />
                   <div class="indicator">
-                    <i
-                      aria-hidden="true"
-                      class="iconify"
-                      data-icon="feather:check"
-                    ></i>
+                    <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                   </div>
                   <div class="option-inner">
                     <i aria-hidden="true" class="lnil lnil-tie"></i>
@@ -524,11 +427,7 @@ const validateStep = async () => {
                 <div class="option">
                   <input type="checkbox" />
                   <div class="indicator">
-                    <i
-                      aria-hidden="true"
-                      class="iconify"
-                      data-icon="feather:check"
-                    ></i>
+                    <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                   </div>
                   <div class="option-inner">
                     <i aria-hidden="true" class="lnil lnil-handshake"></i>
@@ -540,11 +439,7 @@ const validateStep = async () => {
                 <div class="option">
                   <input type="checkbox" />
                   <div class="indicator">
-                    <i
-                      aria-hidden="true"
-                      class="iconify"
-                      data-icon="feather:check"
-                    ></i>
+                    <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                   </div>
                   <div class="option-inner">
                     <i aria-hidden="true" class="lnil lnil-licencse"></i>
@@ -556,11 +451,7 @@ const validateStep = async () => {
                 <div class="option">
                   <input type="checkbox" />
                   <div class="indicator">
-                    <i
-                      aria-hidden="true"
-                      class="iconify"
-                      data-icon="feather:check"
-                    ></i>
+                    <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                   </div>
                   <div class="option-inner">
                     <i aria-hidden="true" class="lnil lnil-pie-chart-alt"></i>
@@ -572,11 +463,7 @@ const validateStep = async () => {
                 <div class="option">
                   <input type="checkbox" />
                   <div class="indicator">
-                    <i
-                      aria-hidden="true"
-                      class="iconify"
-                      data-icon="feather:check"
-                    ></i>
+                    <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                   </div>
                   <div class="option-inner">
                     <i aria-hidden="true" class="lnil lnil-customer"></i>
@@ -590,24 +477,14 @@ const validateStep = async () => {
         </transition>
 
         <transition name="fade-slow">
-          <div
-            v-if="currentStep >= 4"
-            id="form-step-4"
-            class="form-section is-active"
-          >
+          <div v-if="currentStep >= 4" id="form-step-4" class="form-section is-active">
             <h3 class="form-section-title">
               <span>Validation</span>
               <button
                 class="help-button"
-                @click="
-                  currentHelp === 4 ? (currentHelp = -1) : (currentHelp = 4)
-                "
+                @click="currentHelp === 4 ? (currentHelp = -1) : (currentHelp = 4)"
               >
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:help-circle"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:help-circle"></i>
               </button>
             </h3>
             <div class="form-section-inner">
@@ -615,9 +492,9 @@ const validateStep = async () => {
                 <div class="box-content">
                   <h3>Excellent</h3>
                   <p>
-                    Before submitting the form, make sure you've filled all the
-                    required fields. Once submitted, you won't be able to change
-                    the info for this shipment.
+                    Before submitting the form, make sure you've filled all the required
+                    fields. Once submitted, you won't be able to change the info for this
+                    shipment.
                   </p>
                 </div>
                 <div class="box-illustration">
@@ -630,22 +507,14 @@ const validateStep = async () => {
 
         <div class="navigation-buttons">
           <div class="buttons is-right">
-            <VButton
-              color="primary"
-              bold
-              :loading="isLoading"
-              @click="validateStep"
-            >
+            <VButton color="primary" bold :loading="isLoading" @click="validateStep">
               Continue
             </VButton>
           </div>
         </div>
       </div>
       <div class="form-stepper">
-        <ul
-          v-if="currentHelp === -1"
-          class="steps is-vertical is-thin is-short"
-        >
+        <ul v-if="currentHelp === -1" class="steps is-vertical is-thin is-short">
           <li
             id="step-segment-0"
             :class="[currentStep === 0 && 'is-active']"
@@ -728,35 +597,22 @@ const validateStep = async () => {
             </button>
             <h3>General Information</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quod
-              proximum fuit non vidit. Quantum Aristoxeni ingenium consumptum
-              videmus in musicis? An eiusdem modi? Quae similitudo in genere
-              etiam humano apparet.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quod proximum
+              fuit non vidit. Quantum Aristoxeni ingenium consumptum videmus in musicis?
+              An eiusdem modi? Quae similitudo in genere etiam humano apparet.
             </p>
             <div class="list-wrap">
               <ul>
                 <li>
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:check"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                   <span>Some nice list item</span>
                 </li>
                 <li>
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:check"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                   <span>Some nice list item</span>
                 </li>
                 <li>
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:check"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                   <span>Some nice list item</span>
                 </li>
               </ul>
@@ -772,26 +628,18 @@ const validateStep = async () => {
             </button>
             <h3>Shipment Owner</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quod
-              proximum fuit non vidit. Quantum Aristoxeni ingenium consumptum
-              videmus in musicis? An eiusdem modi? Quae similitudo in genere.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quod proximum
+              fuit non vidit. Quantum Aristoxeni ingenium consumptum videmus in musicis?
+              An eiusdem modi? Quae similitudo in genere.
             </p>
             <div class="list-wrap">
               <ul>
                 <li>
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:check"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                   <span>Some nice list item</span>
                 </li>
                 <li>
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:check"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                   <span>Some nice list item</span>
                 </li>
               </ul>
@@ -807,35 +655,22 @@ const validateStep = async () => {
             </button>
             <h3>Shipment Taxes</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quod
-              proximum fuit non vidit. Quantum Aristoxeni ingenium consumptum
-              videmus in musicis? An eiusdem modi? Quae similitudo in genere
-              etiam humano apparet.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quod proximum
+              fuit non vidit. Quantum Aristoxeni ingenium consumptum videmus in musicis?
+              An eiusdem modi? Quae similitudo in genere etiam humano apparet.
             </p>
             <div class="list-wrap">
               <ul>
                 <li>
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:check"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                   <span>Some nice list item</span>
                 </li>
                 <li>
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:check"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                   <span>Some nice list item</span>
                 </li>
                 <li>
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:check"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                   <span>Some nice list item</span>
                 </li>
               </ul>
@@ -851,26 +686,18 @@ const validateStep = async () => {
             </button>
             <h3>Options</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quod
-              proximum fuit non vidit. Quantum Aristoxeni ingenium consumptum
-              videmus in musicis? An eiusdem modi? Quae similitudo in genere.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quod proximum
+              fuit non vidit. Quantum Aristoxeni ingenium consumptum videmus in musicis?
+              An eiusdem modi? Quae similitudo in genere.
             </p>
             <div class="list-wrap">
               <ul>
                 <li>
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:check"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                   <span>Some nice list item</span>
                 </li>
                 <li>
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:check"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                   <span>Some nice list item</span>
                 </li>
               </ul>
@@ -886,26 +713,18 @@ const validateStep = async () => {
             </button>
             <h3>Validation</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quod
-              proximum fuit non vidit. Quantum Aristoxeni ingenium consumptum
-              videmus in musicis? An eiusdem modi? Quae similitudo in genere.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quod proximum
+              fuit non vidit. Quantum Aristoxeni ingenium consumptum videmus in musicis?
+              An eiusdem modi? Quae similitudo in genere.
             </p>
             <div class="list-wrap">
               <ul>
                 <li>
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:check"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                   <span>Some nice list item</span>
                 </li>
                 <li>
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:check"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                   <span>Some nice list item</span>
                 </li>
               </ul>
@@ -918,6 +737,6 @@ const validateStep = async () => {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
-@import '../../../../scss/pages/generic/_forms-stepper.scss';
+@import '../../../../scss/abstracts/mixins';
+@import '../../../../scss/pages/generic/forms-stepper';
 </style>

@@ -2,10 +2,7 @@
 import { computed, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
-import type {
-  VAvatarProps,
-  VAvatarColor,
-} from '/@src/components/base/avatar/VAvatar.vue'
+import type { VAvatarProps, VAvatarColor } from '/@src/components/base/avatar/VAvatar.vue'
 import type { UserPopover } from '/@src/models/users'
 import { popovers } from '/@src/data/users/userPopovers'
 import { pageTitle } from '/@src/state/navbarLayoutState'
@@ -106,11 +103,7 @@ watch(
             :class="[activeMobileSubsidebar === 'dashboard' && 'is-active']"
             @click="activeMobileSubsidebar = 'dashboard'"
           >
-            <i
-              aria-hidden="true"
-              class="iconify"
-              data-icon="feather:activity"
-            ></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:activity"></i>
           </a>
         </li>
         <li>
@@ -139,11 +132,7 @@ watch(
         </li>
         <li>
           <RouterLink :to="{ name: 'messaging-v1' }">
-            <i
-              aria-hidden="true"
-              class="iconify"
-              data-icon="feather:message-circle"
-            ></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:message-circle"></i>
           </RouterLink>
         </li>
       </template>
@@ -151,20 +140,12 @@ watch(
       <template #bottom-links>
         <li>
           <a @click="activePanel = 'search'">
-            <i
-              aria-hidden="true"
-              class="iconify"
-              data-icon="feather:search"
-            ></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
           </a>
         </li>
         <li>
           <a href="#">
-            <i
-              aria-hidden="true"
-              class="iconify"
-              data-icon="feather:settings"
-            ></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:settings"></i>
           </a>
         </li>
       </template>
@@ -176,14 +157,10 @@ watch(
         v-if="isMobileSidebarOpen && activeMobileSubsidebar === 'layouts'"
       />
       <DashboardsMobileSubsidebar
-        v-else-if="
-          isMobileSidebarOpen && activeMobileSubsidebar === 'dashboard'
-        "
+        v-else-if="isMobileSidebarOpen && activeMobileSubsidebar === 'dashboard'"
       />
       <ComponentsMobileSubsidebar
-        v-else-if="
-          isMobileSidebarOpen && activeMobileSubsidebar === 'components'
-        "
+        v-else-if="isMobileSidebarOpen && activeMobileSubsidebar === 'components'"
       />
       <ElementsMobileSubsidebar
         v-else-if="isMobileSidebarOpen && activeMobileSubsidebar === 'elements'"
@@ -209,10 +186,7 @@ watch(
         <Toolbar class="desktop-toolbar">
           <ToolbarNotification />
 
-          <a
-            class="toolbar-link right-panel-trigger"
-            @click="activePanel = 'activity'"
-          >
+          <a class="toolbar-link right-panel-trigger" @click="activePanel = 'activity'">
             <i aria-hidden="true" class="iconify" data-icon="feather:grid"></i>
           </a>
         </Toolbar>
@@ -223,30 +197,21 @@ watch(
 
       <!-- Custom navbar links -->
       <template #links>
-        <div
-          class="centered-links"
-          :class="[activeSubnav === 'search' && 'is-hidden']"
-        >
+        <div class="centered-links" :class="[activeSubnav === 'search' && 'is-hidden']">
           <a
             :class="[
-              (activeSubnav === 'home' ||
-                route.path.startsWith('/navbar/dashboards')) &&
+              (activeSubnav === 'home' || route.path.startsWith('/navbar/dashboards')) &&
                 'is-active',
             ]"
             class="centered-link centered-link-toggle"
             @click="toggleSubnav('home')"
           >
-            <i
-              aria-hidden="true"
-              class="iconify"
-              data-icon="feather:activity"
-            ></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:activity"></i>
             <span>Dashboards</span>
           </a>
           <a
             :class="[
-              (activeSubnav === 'layouts' ||
-                route.path.startsWith('/navbar/layouts')) &&
+              (activeSubnav === 'layouts' || route.path.startsWith('/navbar/layouts')) &&
                 'is-active',
             ]"
             class="centered-link centered-link-toggle"
@@ -271,23 +236,13 @@ watch(
             <i aria-hidden="true" class="iconify" data-icon="feather:cpu"></i>
             <span>Components</span>
           </a>
-          <a
-            class="centered-link centered-link-search"
-            @click="toggleSubnav('search')"
-          >
-            <i
-              aria-hidden="true"
-              class="iconify"
-              data-icon="feather:search"
-            ></i>
+          <a class="centered-link centered-link-search" @click="toggleSubnav('search')">
+            <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
             <span>Search</span>
           </a>
         </div>
 
-        <div
-          class="centered-search"
-          :class="[activeSubnav !== 'search' && 'is-hidden']"
-        >
+        <div class="centered-search" :class="[activeSubnav !== 'search' && 'is-hidden']">
           <div class="field">
             <div class="control has-icon">
               <input
@@ -297,11 +252,7 @@ watch(
                 placeholder="Search records..."
               />
               <div class="form-icon">
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:search"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
               </div>
               <div class="form-icon is-right" @click="toggleSubnav('search')">
                 <i aria-hidden="true" class="iconify" data-icon="feather:x"></i>
@@ -310,11 +261,7 @@ watch(
                 v-if="filteredUsers.length > 0"
                 class="search-results has-slimscroll is-active"
               >
-                <div
-                  v-for="user in filteredUsers"
-                  :key="user.id"
-                  class="search-result"
-                >
+                <div v-for="user in filteredUsers" :key="user.id" class="search-result">
                   <VAvatar v-bind="getAvatarData(user)" />
                   <div class="meta">
                     <span>{{ user.username }}</span>
@@ -331,8 +278,7 @@ watch(
       <template #subnav>
         <div
           :class="[
-            !(activeSubnav === 'closed' || activeSubnav === 'search') &&
-              'is-active',
+            !(activeSubnav === 'closed' || activeSubnav === 'search') && 'is-active',
           ]"
           class="navbar-subnavbar"
         >
@@ -340,13 +286,9 @@ watch(
 
           <LayoutsSubnav :class="[activeSubnav === 'layouts' && 'is-active']" />
 
-          <ElementsSubnav
-            :class="[activeSubnav === 'elements' && 'is-active']"
-          />
+          <ElementsSubnav :class="[activeSubnav === 'elements' && 'is-active']" />
 
-          <ComponentsSubnav
-            :class="[activeSubnav === 'components' && 'is-active']"
-          />
+          <ComponentsSubnav :class="[activeSubnav === 'components' && 'is-active']" />
         </div>
       </template>
     </Navbar>
@@ -375,11 +317,7 @@ watch(
                   class="toolbar-link right-panel-trigger"
                   @click="activePanel = 'activity'"
                 >
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:grid"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:grid"></i>
                 </a>
               </Toolbar>
             </div>

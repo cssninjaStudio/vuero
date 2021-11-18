@@ -7,12 +7,7 @@ See code for more details about usage.
 
 ```vue
 <template>
-  <VFlex
-    flex-wrap="wrap"
-    align-items="flex-end"
-    row-gap=".5rem"
-    column-gap=".25rem"
-  >
+  <VFlex flex-wrap="wrap" align-items="flex-end" row-gap=".5rem" column-gap=".25rem">
     <VIconWrap icon="feather:star" color="primary" />
     <VIconWrap icon="feather:star" color="secondary" />
     <VIconWrap icon="feather:star" color="success" />

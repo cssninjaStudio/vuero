@@ -14,11 +14,7 @@ const props = defineProps<{
         <slot name="links">
           <li>
             <a aria-label="Back to homepage" href="/">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:activity"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:activity"></i>
             </a>
           </li>
         </slot>
@@ -34,8 +30,8 @@ const props = defineProps<{
 </template>
 
 <style lang="scss">
-@import '../../../scss/layout/_sidebar.scss';
-@import '../../../scss/layout/_sidebar-mobile.scss';
+@import '../../../scss/layout/sidebar';
+@import '../../../scss/layout/sidebar-mobile';
 
 /* ==========================================================================
 1. Mobile Sidebar
@@ -50,6 +46,7 @@ const props = defineProps<{
   z-index: 20;
   backdrop-filter: blur(1px);
 }
+
 .mobile-main-sidebar {
   position: fixed;
   top: 60px;
@@ -85,7 +82,7 @@ const props = defineProps<{
           display: block;
           position: relative;
           transform: rotate(0);
-          opacity: 1;
+          opacity: 100%;
           transition: all 0.3s;
 
           &:hover,
@@ -118,12 +115,12 @@ const props = defineProps<{
 
           &.is-opened {
             transform: rotate(360deg);
-            opacity: 0;
+            opacity: 0%;
           }
 
           &.is-inactive {
             transform: rotate(-360deg);
-            opacity: 0;
+            opacity: 0%;
           }
 
           &.is-selected,

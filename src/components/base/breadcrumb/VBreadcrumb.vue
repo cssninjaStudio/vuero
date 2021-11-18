@@ -28,10 +28,7 @@ const props = withDefaults(defineProps<VBreadcrumbsProps>(), {
     aria-label="breadcrumbs"
     itemscope
     itemtype="https://schema.org/BreadcrumbList"
-    :class="[
-      `has-${props.separator}-separator`,
-      props.align && `is-${props.align}`,
-    ]"
+    :class="[`has-${props.separator}-separator`, props.align && `is-${props.align}`]"
   >
     <ul>
       <li
@@ -42,18 +39,11 @@ const props = withDefaults(defineProps<VBreadcrumbsProps>(), {
         itemscope
         itemtype="https://schema.org/ListItem"
       >
-        <RouterLink
-          v-if="item.to"
-          class="breadcrumb-item"
-          itemprop="item"
-          :to="item.to"
-        >
+        <RouterLink v-if="item.to" class="breadcrumb-item" itemprop="item" :to="item.to">
           <span
             v-if="props.withIcons && !!item.icon"
             class="icon is-small"
-            :class="[
-              item.hideLabel && props.withIcons && !!item.icon && 'is-solo',
-            ]"
+            :class="[item.hideLabel && props.withIcons && !!item.icon && 'is-solo']"
           >
             <i aria-hidden="true" class="iconify" :data-icon="item.icon"></i>
           </span>
@@ -75,9 +65,7 @@ const props = withDefaults(defineProps<VBreadcrumbsProps>(), {
           <span
             v-if="props.withIcons && !!item.icon"
             class="icon is-small"
-            :class="[
-              item.hideLabel && props.withIcons && !!item.icon && 'is-solo',
-            ]"
+            :class="[item.hideLabel && props.withIcons && !!item.icon && 'is-solo']"
           >
             <i aria-hidden="true" class="iconify" :data-icon="item.icon"></i>
           </span>
@@ -94,9 +82,7 @@ const props = withDefaults(defineProps<VBreadcrumbsProps>(), {
           <span
             v-if="props.withIcons && !!item.icon"
             class="icon is-small"
-            :class="[
-              item.hideLabel && props.withIcons && !!item.icon && 'is-solo',
-            ]"
+            :class="[item.hideLabel && props.withIcons && !!item.icon && 'is-solo']"
           >
             <i aria-hidden="true" class="iconify" :data-icon="item.icon"></i>
           </span>

@@ -23,7 +23,7 @@
     &:hover {
       img {
         filter: grayscale(0);
-        opacity: 1;
+        opacity: 100%;
       }
     }
 
@@ -32,11 +32,11 @@
 
       img {
         filter: grayscale(0);
-        opacity: 1;
+        opacity: 100%;
       }
 
       .indicator {
-        opacity: 1;
+        opacity: 100%;
       }
     }
 
@@ -52,7 +52,7 @@
       height: 32px;
       width: 32px;
       border-radius: var(--radius-rounded);
-      opacity: 0;
+      opacity: 0%;
       transition: opacity 0.3s;
       pointer-events: none;
       color: var(--white);
@@ -73,7 +73,7 @@
       max-width: 150px;
       margin: 0 auto;
       filter: grayscale(1);
-      opacity: 0.6;
+      opacity: 60%;
       transition: all 0.3s;
     }
 

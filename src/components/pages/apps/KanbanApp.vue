@@ -172,11 +172,7 @@ onMounted(() => {
           <!-- Collapsed content -->
           <div class="collapsed-content">
             <div class="expand-button" @click="isColumnNewCollapsed = false">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:plus"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:plus"></i>
             </div>
             <div>
               <span class="task-count">{{ newTasks.length }}</span>
@@ -186,10 +182,7 @@ onMounted(() => {
           <!-- Expanded content -->
           <div class="expanded-content">
             <div class="column-title">
-              <input
-                type="text"
-                class="input is-small rename-input is-hidden"
-              />
+              <input type="text" class="input is-small rename-input is-hidden" />
               <h3>
                 <span class="column-name">New</span>
                 <span class="task-count">{{ newTasks.length }}</span>
@@ -210,9 +203,7 @@ onMounted(() => {
                   src="/@src/assets/illustrations/projects/board/new-dark.svg"
                   alt=""
                 />
-                <p class="empty-text">
-                  There are no new tasks to approve for now.
-                </p>
+                <p class="empty-text">There are no new tasks to approve for now.</p>
               </div>
 
               <div
@@ -229,17 +220,14 @@ onMounted(() => {
                     <div
                       class="avatar-wrapper"
                       :class="[
-                        task.participants[0].color &&
-                          `is-${task.participants[0].color}`,
+                        task.participants[0].color && `is-${task.participants[0].color}`,
                       ]"
                     >
                       <img
                         class="task-owner"
                         :src="task.participants[0].picture"
                         alt=""
-                        @error.once="
-                          (event) => useViaPlaceholderError(event, '62x62')
-                        "
+                        @error.once="(event) => useViaPlaceholderError(event, '62x62')"
                       />
                     </div>
                   </div>
@@ -272,15 +260,8 @@ onMounted(() => {
         >
           <!-- Collapsed content -->
           <div class="collapsed-content">
-            <div
-              class="expand-button"
-              @click="isColumnProgressCollapsed = false"
-            >
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:plus"
-              ></i>
+            <div class="expand-button" @click="isColumnProgressCollapsed = false">
+              <i aria-hidden="true" class="iconify" data-icon="feather:plus"></i>
             </div>
             <div>
               <span class="task-count">{{ progressTasks.length }}</span>
@@ -290,10 +271,7 @@ onMounted(() => {
           <!-- Expanded content -->
           <div class="expanded-content">
             <div class="column-title">
-              <input
-                type="text"
-                class="input is-small rename-input is-hidden"
-              />
+              <input type="text" class="input is-small rename-input is-hidden" />
               <h3>
                 <span class="column-name">In Progress</span>
                 <span class="task-count">{{ progressTasks.length }}</span>
@@ -314,9 +292,7 @@ onMounted(() => {
                   src="/@src/assets/illustrations/projects/board/progress-dark.svg"
                   alt=""
                 />
-                <p class="empty-text">
-                  There are no tasks in progress at the moment.
-                </p>
+                <p class="empty-text">There are no tasks in progress at the moment.</p>
               </div>
 
               <div
@@ -329,11 +305,7 @@ onMounted(() => {
                   <h4 class="card-title">{{ task.title }}</h4>
                   <div class="kanban-card-stats">
                     <span>
-                      <i
-                        aria-hidden="true"
-                        class="iconify"
-                        data-icon="feather:clock"
-                      ></i>
+                      <i aria-hidden="true" class="iconify" data-icon="feather:clock"></i>
                       {{ task.dueDate }}
                     </span>
 
@@ -363,11 +335,7 @@ onMounted(() => {
           <!-- Collapsed content -->
           <div class="collapsed-content">
             <div class="expand-button" @click="isColumnReadyCollapsed = false">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:plus"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:plus"></i>
             </div>
             <div>
               <span class="task-count">{{ readyTasks.length }}</span>
@@ -377,10 +345,7 @@ onMounted(() => {
           <!-- Expanded content -->
           <div class="expanded-content">
             <div class="column-title">
-              <input
-                type="text"
-                class="input is-small rename-input is-hidden"
-              />
+              <input type="text" class="input is-small rename-input is-hidden" />
               <h3>
                 <span class="column-name">Ready</span>
                 <span class="task-count">{{ readyTasks.length }}</span>
@@ -403,10 +368,7 @@ onMounted(() => {
                 />
                 <p class="empty-text">
                   <span>There are no tasks marked as ready for now.</span>
-                  <a
-                    href="#"
-                    class="button v-button is-outlined is-rounded is-fullwidth"
-                  >
+                  <a href="#" class="button v-button is-outlined is-rounded is-fullwidth">
                     Create Task
                   </a>
                 </p>
@@ -422,11 +384,7 @@ onMounted(() => {
                   <h4 class="card-title">{{ task.title }}</h4>
                   <div class="kanban-card-stats">
                     <span>
-                      <i
-                        aria-hidden="true"
-                        class="iconify"
-                        data-icon="feather:clock"
-                      ></i>
+                      <i aria-hidden="true" class="iconify" data-icon="feather:clock"></i>
                       {{ task.dueDate }}
                     </span>
 
@@ -456,11 +414,7 @@ onMounted(() => {
           <!-- Collapsed content -->
           <div class="collapsed-content">
             <div class="expand-button" @click="isColumnReviewCollapsed = false">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:plus"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:plus"></i>
             </div>
             <div>
               <span class="task-count"> {{ reviewTasks.length }}</span>
@@ -470,10 +424,7 @@ onMounted(() => {
           <!-- Expanded content -->
           <div class="expanded-content">
             <div class="column-title">
-              <input
-                type="text"
-                class="input is-small rename-input is-hidden"
-              />
+              <input type="text" class="input is-small rename-input is-hidden" />
               <h3>
                 <span class="column-name">In Review</span>
                 <span class="task-count">{{ reviewTasks.length }}</span>
@@ -494,9 +445,7 @@ onMounted(() => {
                   src="/@src/assets/illustrations/projects/board/test-dark.svg"
                   alt=""
                 />
-                <p class="empty-text">
-                  No tasks are being reviewed at the moment.
-                </p>
+                <p class="empty-text">No tasks are being reviewed at the moment.</p>
               </div>
 
               <div
@@ -509,11 +458,7 @@ onMounted(() => {
                   <h4 class="card-title">{{ task.title }}</h4>
                   <div class="kanban-card-stats">
                     <span>
-                      <i
-                        aria-hidden="true"
-                        class="iconify"
-                        data-icon="feather:clock"
-                      ></i>
+                      <i aria-hidden="true" class="iconify" data-icon="feather:clock"></i>
                       {{ task.dueDate }}
                     </span>
 
@@ -542,15 +487,8 @@ onMounted(() => {
         >
           <!-- Collapsed content -->
           <div class="collapsed-content">
-            <div
-              class="expand-button"
-              @click="isColumnCompletedCollapsed = false"
-            >
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:plus"
-              ></i>
+            <div class="expand-button" @click="isColumnCompletedCollapsed = false">
+              <i aria-hidden="true" class="iconify" data-icon="feather:plus"></i>
             </div>
             <div>
               <span class="task-count">{{ completedTasks.length }}</span>
@@ -560,10 +498,7 @@ onMounted(() => {
           <!-- Expanded content -->
           <div class="expanded-content">
             <div class="column-title">
-              <input
-                type="text"
-                class="input is-small rename-input is-hidden"
-              />
+              <input type="text" class="input is-small rename-input is-hidden" />
               <h3>
                 <span class="column-name">Completed</span>
                 <span class="task-count">{{ completedTasks.length }}</span>
@@ -597,11 +532,7 @@ onMounted(() => {
                   <h4 class="card-title">{{ task.title }}</h4>
                   <div class="kanban-card-stats">
                     <span>
-                      <i
-                        aria-hidden="true"
-                        class="iconify"
-                        data-icon="feather:clock"
-                      ></i>
+                      <i aria-hidden="true" class="iconify" data-icon="feather:clock"></i>
                       {{ task.dueDate }}
                     </span>
 
@@ -696,6 +627,7 @@ onMounted(() => {
         &::before {
           content: '(';
         }
+
         &::after {
           content: ')';
         }
@@ -717,14 +649,14 @@ onMounted(() => {
     }
 
     .empty-state {
-      margin: 30px auto 10px auto;
+      margin: 30px auto 10px;
       width: 150px;
       height: auto;
     }
 
     .empty-text {
       text-align: center;
-      padding: 10px 10px 20px 10px;
+      padding: 10px 10px 20px;
       font-size: 0.95rem;
       color: var(--dark-text);
 
@@ -842,12 +774,12 @@ onMounted(() => {
   transition: all 0.4s;
 
   &:hover {
-    box-shadow: 0 5px 43px rgba(0, 0, 0, 0.18) !important;
+    box-shadow: 0 5px 43px rgb(0 0 0 / 18%) !important;
   }
 
   &.is-new {
     .new-avatar {
-      margin: 20px 0 10px 0;
+      margin: 20px 0 10px;
       width: 100%;
 
       .avatar-wrapper {
@@ -979,25 +911,21 @@ onMounted(() => {
 
 .can-drag {
   .kanban-card {
-    //fallback if grab cursor is unsupported
+    // fallback if grab cursor is unsupported
     cursor: move;
     cursor: grab;
-    cursor: -moz-grab;
-    cursor: -webkit-grab;
+    cursor: grab;
+    cursor: grab;
 
-    //(Optional) Apply a "closed-hand" cursor during drag operation.
+    // (Optional) Apply a "closed-hand" cursor during drag operation.
     &:active {
       cursor: grabbing;
-      cursor: -moz-grabbing;
-      cursor: -webkit-grabbing;
     }
   }
 }
 
 .gu-transit {
   cursor: grabbing !important;
-  cursor: -moz-grabbing !important;
-  cursor: -webkit-grabbing !important;
 }
 
 .gu-mirror {

@@ -21,10 +21,7 @@ const activeTab = ref<TabId>('dashboards')
     </div>
 
     <div class="container">
-      <div
-        class="tab-content"
-        :class="[activeTab === 'dashboards' && 'is-active']"
-      >
+      <div class="tab-content" :class="[activeTab === 'dashboards' && 'is-active']">
         <div class="tab-content-inner">
           <div class="center has-slimscroll">
             <div class="columns">
@@ -33,10 +30,7 @@ const activeTab = ref<TabId>('dashboards')
                 <ul>
                   <li>
                     <RouterLink :to="{ name: 'navbar-dashboards' }">
-                      <i
-                        aria-hidden="true"
-                        class="lnil lnil-analytics-alt-1"
-                      ></i>
+                      <i aria-hidden="true" class="lnil lnil-analytics-alt-1"></i>
                       <span>Personal V1</span>
                       <i
                         aria-hidden="true"
@@ -80,10 +74,7 @@ const activeTab = ref<TabId>('dashboards')
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'navbar-dashboards-health' }">
-                      <i
-                        aria-hidden="true"
-                        class="lnil lnil-hospital-alt-3"
-                      ></i>
+                      <i aria-hidden="true" class="lnil lnil-hospital-alt-3"></i>
                       <span>Health</span>
                       <i
                         aria-hidden="true"
@@ -121,10 +112,7 @@ const activeTab = ref<TabId>('dashboards')
                 <ul>
                   <li>
                     <RouterLink :to="{ name: 'navbar-dashboards-analytics' }">
-                      <i
-                        aria-hidden="true"
-                        class="lnil lnil-analytics-alt-1"
-                      ></i>
+                      <i aria-hidden="true" class="lnil lnil-analytics-alt-1"></i>
                       <span>Analytics</span>
                       <i
                         aria-hidden="true"
@@ -227,9 +215,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink
-                      :to="{ name: 'navbar-dashboards-human-ressources' }"
-                    >
+                    <RouterLink :to="{ name: 'navbar-dashboards-human-ressources' }">
                       <i aria-hidden="true" class="lnil lnil-users-alt"></i>
                       <span>HR Board</span>
                       <i
@@ -278,9 +264,7 @@ const activeTab = ref<TabId>('dashboards')
                 <h4 class="column-heading">Apps</h4>
                 <ul>
                   <li>
-                    <RouterLink
-                      :to="{ name: 'navbar-dashboards-food-delivery' }"
-                    >
+                    <RouterLink :to="{ name: 'navbar-dashboards-food-delivery' }">
                       <i aria-hidden="true" class="lnil lnil-pizza"></i>
                       <span>Food Delivery</span>
                       <i
@@ -354,10 +338,7 @@ const activeTab = ref<TabId>('dashboards')
         </div>
       </div>
 
-      <div
-        class="tab-content"
-        :class="[activeTab === 'templates' && 'is-active']"
-      >
+      <div class="tab-content" :class="[activeTab === 'templates' && 'is-active']">
         <div class="tab-content-inner">
           <div class="center">
             <div class="columns">
@@ -551,9 +532,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink
-                      :to="{ name: 'navbar-dashboards-charts-billboardsjs' }"
-                    >
+                    <RouterLink :to="{ name: 'navbar-dashboards-charts-billboardsjs' }">
                       <i aria-hidden="true" class="lnil lnil-bar-chart"></i>
                       <span>Billboard JS</span>
                       <i
@@ -564,9 +543,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink
-                      :to="{ name: 'navbar-dashboards-widgets-sample-ui' }"
-                    >
+                    <RouterLink :to="{ name: 'navbar-dashboards-widgets-sample-ui' }">
                       <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
                       <span>UI Widgets</span>
                       <i
@@ -592,9 +569,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink
-                      :to="{ name: 'navbar-dashboards-widgets-sample-list' }"
-                    >
+                    <RouterLink :to="{ name: 'navbar-dashboards-widgets-sample-list' }">
                       <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
                       <span>List Widgets</span>
                       <i
@@ -605,9 +580,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink
-                      :to="{ name: 'navbar-dashboards-widgets-sample-stats' }"
-                    >
+                    <RouterLink :to="{ name: 'navbar-dashboards-widgets-sample-stats' }">
                       <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
                       <span>Stat Widgets</span>
                       <i
@@ -683,7 +656,7 @@ const activeTab = ref<TabId>('dashboards')
 </template>
 
 <style lang="scss">
-@import '../../scss/abstracts/_mixins.scss';
-@import '../../scss/layout/_navbar.scss';
-@import '../../scss/layout/_responsive.scss';
+@import '../../scss/abstracts/mixins';
+@import '../../scss/layout/navbar';
+@import '../../scss/layout/responsive';
 </style>

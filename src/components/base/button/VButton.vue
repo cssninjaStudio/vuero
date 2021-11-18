@@ -175,9 +175,7 @@ export default defineComponent({
         props.light && 'is-light',
       ]
     })
-    const isIconify = computed(
-      () => props.icon && props.icon.indexOf(':') !== -1
-    )
+    const isIconify = computed(() => props.icon && props.icon.indexOf(':') !== -1)
     const isCaretIconify = computed(
       () => props.iconCaret && props.iconCaret.indexOf(':') !== -1
     )

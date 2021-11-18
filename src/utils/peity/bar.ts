@@ -4,12 +4,8 @@ import { createSvgElement } from './createSvgElement'
 
 export function drawBar(el: HTMLElement, data: number[], opts: PeityOptions) {
   const values = data
-  const max = Math.max(
-    ...(opts.max === undefined ? values : values.concat(opts.max))
-  )
-  const min = Math.min(
-    ...(opts.min === undefined ? values : values.concat(opts.min))
-  )
+  const max = Math.max(...(opts.max === undefined ? values : values.concat(opts.max)))
+  const min = Math.min(...(opts.min === undefined ? values : values.concat(opts.min)))
 
   const rect = el.getBoundingClientRect()
 

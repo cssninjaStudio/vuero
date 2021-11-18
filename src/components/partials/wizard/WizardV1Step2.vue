@@ -87,10 +87,7 @@ const onRemoveFile = (error: any, fileInfo: any) => {
                 <p v-if="wizard.data.description.length === 0" class="help">
                   Minimum of 50 characters
                 </p>
-                <p
-                  v-else-if="wizard.data.description.length === 49"
-                  class="help"
-                >
+                <p v-else-if="wizard.data.description.length === 49" class="help">
                   {{ 50 - wizard.data.description.length }} character remaining
                 </p>
                 <p v-else-if="wizard.data.description.length < 50" class="help">

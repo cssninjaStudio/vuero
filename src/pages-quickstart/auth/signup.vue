@@ -63,11 +63,7 @@ useHead({
       <div class="hero is-fullheight is-white">
         <div class="hero-heading">
           <label class="dark-mode ml-auto">
-            <input
-              type="checkbox"
-              :checked="!isDark"
-              @change="toggleDarkModeHandler"
-            />
+            <input type="checkbox" :checked="!isDark" @change="toggleDarkModeHandler" />
             <span></span>
           </label>
           <div class="auth-logo">
@@ -155,10 +151,7 @@ useHead({
                       </Field>
 
                       <!-- Input -->
-                      <Field
-                        v-slot="{ field, errorMessage }"
-                        name="passwordCheck"
-                      >
+                      <Field v-slot="{ field, errorMessage }" name="passwordCheck">
                         <VField>
                           <VControl
                             icon="feather:lock"
@@ -179,10 +172,7 @@ useHead({
 
                       <VField>
                         <VControl class="setting-item">
-                          <label
-                            for="promotional"
-                            class="form-switch is-primary"
-                          >
+                          <label for="promotional" class="form-switch is-primary">
                             <Field
                               id="promotional"
                               type="checkbox"
@@ -204,13 +194,7 @@ useHead({
 
                       <VField>
                         <VControl class="login">
-                          <VButton
-                            type="submit"
-                            color="primary"
-                            bold
-                            fullwidth
-                            raised
-                          >
+                          <VButton type="submit" color="primary" bold fullwidth raised>
                             {{ t('auth.action.signup') }}
                           </VButton>
                         </VControl>

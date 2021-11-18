@@ -2,12 +2,7 @@
 import { ref } from 'vue'
 import useDropdown from '/@src/composable/useDropdown'
 
-export type VDropdownColor =
-  | 'primary'
-  | 'info'
-  | 'success'
-  | 'warning'
-  | 'danger'
+export type VDropdownColor = 'primary' | 'info' | 'success' | 'warning' | 'danger'
 export interface VDropdownProps {
   title?: string
   color?: VDropdownColor
@@ -61,9 +56,7 @@ defineExpose({
         @click="dropdown.toggle"
       >
         <span v-if="props.title">{{ props.title }}</span>
-        <span
-          :class="[!props.modern && 'base-caret', props.modern && 'base-caret']"
-        >
+        <span :class="[!props.modern && 'base-caret', props.modern && 'base-caret']">
           <VIcon v-if="!dropdown.isOpen" icon="fa:angle-down" />
           <VIcon v-else icon="fa:angle-up" />
         </span>
@@ -168,7 +161,7 @@ defineExpose({
 
   &.is-spaced {
     .dropdown-menu {
-      box-shadow: 0 5px 16px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 5px 16px rgb(0 0 0 / 5%);
       border-color: var(--fade-grey);
       padding-top: 0;
       min-width: 260px;
@@ -183,7 +176,7 @@ defineExpose({
       }
     }
 
-    //Item
+    // Item
     .dropdown-item {
       padding: 0.5rem 1rem;
       font-size: 0.95rem;
@@ -310,7 +303,7 @@ defineExpose({
     }
   }
 
-  //Dropdown menu
+  // Dropdown menu
   .dropdown-menu {
     .dropdown-item {
       color: var(--light-text);
@@ -319,7 +312,7 @@ defineExpose({
         color: var(--dark-text);
       }
 
-      //Child dropdown parent
+      // Child dropdown parent
       &.has-child {
         position: relative;
         display: flex;
@@ -333,18 +326,18 @@ defineExpose({
           color: var(--muted-grey);
         }
 
-        //Child hover dropdown
+        // Child hover dropdown
         .child-dropdown {
           position: absolute;
           right: -282px;
           top: 0;
           width: 280px;
           transition: all 0.3s;
-          opacity: 0;
+          opacity: 0%;
           transform: translateY(10px);
           pointer-events: none;
 
-          //Inner
+          // Inner
           .inner {
             position: relative;
             height: 100%;
@@ -354,7 +347,7 @@ defineExpose({
             border-radius: var(--radius-large);
             padding: 8px 0;
 
-            //Kanban columns settings
+            // Kanban columns settings
             .column-setting {
               padding: 0 6px;
               display: flex;
@@ -384,10 +377,10 @@ defineExpose({
           }
         }
 
-        //Hover state
+        // Hover state
         &:hover {
           .child-dropdown {
-            opacity: 1;
+            opacity: 100%;
             transform: translateY(0);
             pointer-events: all;
           }
@@ -507,7 +500,8 @@ defineExpose({
 
           &.is-active {
             background: var(--dark-sidebar-light-2) !important;
-            //color: var(--white) !important;
+
+            // color: var(--white) !important;
           }
         }
 

@@ -9,17 +9,9 @@ CSS class. Available color classes are: `.light`, `.primary`,
 ```vue {4,10,16,22,28,34,40}
 <template>
   <VTags>
-    <VTag
-      v-tooltip="'Iam a default colored tooltip'"
-      color="solid"
-      label="Default"
-    />
+    <VTag v-tooltip="'Iam a default colored tooltip'" color="solid" label="Default" />
 
-    <VTag
-      v-tooltip.light="'Iam a light colored tooltip'"
-      color="solid"
-      label="Light"
-    />
+    <VTag v-tooltip.light="'Iam a light colored tooltip'" color="solid" label="Light" />
 
     <VTag
       v-tooltip.primary="'Iam a primary colored tooltip'"
@@ -27,11 +19,7 @@ CSS class. Available color classes are: `.light`, `.primary`,
       label="Primary"
     />
 
-    <VTag
-      v-tooltip.info="'Iam a info colored tooltip'"
-      color="solid"
-      label="Info"
-    />
+    <VTag v-tooltip.info="'Iam a info colored tooltip'" color="solid" label="Info" />
 
     <VTag
       v-tooltip.success="'Iam a success colored tooltip'"
@@ -45,11 +33,7 @@ CSS class. Available color classes are: `.light`, `.primary`,
       label="Warning"
     />
 
-    <VTag
-      v-tooltip.error="'Iam a error colored tooltip'"
-      color="solid"
-      label="Error"
-    />
+    <VTag v-tooltip.error="'Iam a error colored tooltip'" color="solid" label="Error" />
   </VTags>
 </template>
 ```

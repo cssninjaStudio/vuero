@@ -126,13 +126,13 @@ watchPostEffect(() => {
           v-if="activeSidebar === 'messages'"
           :conversations="conversations"
           :selected-conversation-id="selectedConversationId"
-          @addConversation="
+          @add-conversation="
             () => {
               selectedConversationId = 0
               addConversationOpen = !addConversationOpen
             }
           "
-          @selectConversation="
+          @select-conversation="
             (id) => {
               addConversationOpen = false
               selectedConversationId = id
@@ -145,7 +145,7 @@ watchPostEffect(() => {
           v-if="isMobileSidebarOpen"
           :conversations="conversations"
           :selected-conversation-id="selectedConversationId"
-          @selectConversation="
+          @select-conversation="
             (id) => {
               addConversationOpen = false
               selectedConversationId = id
@@ -157,13 +157,13 @@ watchPostEffect(() => {
       <CollapsedMessaging
         :conversations="conversations"
         :selected-conversation-id="selectedConversationId"
-        @addConversation="
+        @add-conversation="
           () => {
             selectedConversationId = 0
             addConversationOpen = !addConversationOpen
           }
         "
-        @selectConversation="
+        @select-conversation="
           (id) => {
             addConversationOpen = false
             selectedConversationId = id
@@ -222,11 +222,7 @@ watchPostEffect(() => {
                       <span>To:</span>
                     </div>
                     <div class="hide" @click="addConversationOpen = false">
-                      <i
-                        aria-hidden="true"
-                        class="iconify"
-                        data-icon="feather:x"
-                      ></i>
+                      <i aria-hidden="true" class="iconify" data-icon="feather:x"></i>
                     </div>
                   </div>
                 </div>
@@ -309,10 +305,7 @@ watchPostEffect(() => {
                           <div class="image-actions">
                             <div class="actions-inner">
                               <div class="action download">
-                                <span
-                                  class="iconify"
-                                  data-icon="feather:download"
-                                >
+                                <span class="iconify" data-icon="feather:download">
                                 </span>
                               </div>
                               <a
@@ -320,10 +313,7 @@ watchPostEffect(() => {
                                 class="action messaging-popup"
                                 aria-label="Maximize"
                               >
-                                <span
-                                  class="iconify"
-                                  data-icon="feather:maximize"
-                                >
+                                <span class="iconify" data-icon="feather:maximize">
                                 </span>
                               </a>
                             </div>
@@ -345,9 +335,7 @@ watchPostEffect(() => {
                           </div>
                         </figure>
                         <div class="link-body">
-                          <span class="link-title">{{
-                            message.content.text
-                          }}</span>
+                          <span class="link-title">{{ message.content.text }}</span>
                           <small>{{ message.content.subtext }}</small>
                         </div>
                       </div>
@@ -379,9 +367,7 @@ watchPostEffect(() => {
                   class="chat-side"
                 >
                   <div class="chat-side-header">
-                    <MessagingToolbar
-                      @close="mobileConversationDetailsOpen = false"
-                    />
+                    <MessagingToolbar @close="mobileConversationDetailsOpen = false" />
                   </div>
 
                   <div class="chat-side-content is-single">
@@ -392,10 +378,7 @@ watchPostEffect(() => {
                         alt=""
                         @error.once="
                           (event) =>
-                            useViaPlaceholderError(
-                              event,
-                              '                            '
-                            )
+                            useViaPlaceholderError(event, '                            ')
                         "
                       />
                       <img
@@ -403,18 +386,13 @@ watchPostEffect(() => {
                         class="is-badge"
                         src="/images/icons/flags/united-states-of-america.svg"
                         alt=""
-                        @error.once="
-                          (event) => useViaPlaceholderError(event, '150x150')
-                        "
+                        @error.once="(event) => useViaPlaceholderError(event, '150x150')"
                       />
                     </div>
                     <h4 v-if="selectedConversation.name" class="user-name">
                       {{ selectedConversation.name }}
                     </h4>
-                    <p
-                      v-if="selectedConversation.lastMessage"
-                      class="user-job-title"
-                    >
+                    <p v-if="selectedConversation.lastMessage" class="user-job-title">
                       {{ selectedConversation.lastMessage }}
                     </p>
 
@@ -445,14 +423,7 @@ watchPostEffect(() => {
                           stroke-linejoin="round"
                           class="feather feather-image"
                         >
-                          <rect
-                            x="3"
-                            y="3"
-                            width="18"
-                            height="18"
-                            rx="2"
-                            ry="2"
-                          ></rect>
+                          <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                           <circle cx="8.5" cy="8.5" r="1.5"></circle>
                           <path d="M21 15l-5-5L5 21"></path>
                         </svg>
@@ -553,16 +524,9 @@ watchPostEffect(() => {
               <div class="message-field-wrapper">
                 <div class="control">
                   <div class="add-content">
-                    <div
-                      ref="dropdownElement"
-                      class="dropdown dropdown-trigger is-up"
-                    >
+                    <div ref="dropdownElement" class="dropdown dropdown-trigger is-up">
                       <div>
-                        <div
-                          class="button"
-                          aria-haspopup="true"
-                          @click="dropdown.toggle"
-                        >
+                        <div class="button" aria-haspopup="true" @click="dropdown.toggle">
                           <i
                             aria-hidden="true"
                             class="iconify"
@@ -583,10 +547,7 @@ watchPostEffect(() => {
                               <span>Embed a video</span>
                             </div>
                           </a>
-                          <a
-                            href="#"
-                            class="dropdown-item kill-drop v-modal-trigger"
-                          >
+                          <a href="#" class="dropdown-item kill-drop v-modal-trigger">
                             <i
                               aria-hidden="true"
                               class="iconify"
@@ -597,10 +558,7 @@ watchPostEffect(() => {
                               <span>Upload pictures</span>
                             </div>
                           </a>
-                          <a
-                            href="#"
-                            class="dropdown-item kill-drop v-modal-trigger"
-                          >
+                          <a href="#" class="dropdown-item kill-drop v-modal-trigger">
                             <i
                               aria-hidden="true"
                               class="iconify"
@@ -612,10 +570,7 @@ watchPostEffect(() => {
                             </div>
                           </a>
                           <hr class="dropdown-divider" />
-                          <a
-                            href="#"
-                            class="dropdown-item kill-drop v-modal-trigger"
-                          >
+                          <a href="#" class="dropdown-item kill-drop v-modal-trigger">
                             <i
                               aria-hidden="true"
                               class="iconify"
@@ -632,11 +587,7 @@ watchPostEffect(() => {
                   </div>
                   <div class="add-emoji">
                     <div class="button">
-                      <i
-                        aria-hidden="true"
-                        class="iconify"
-                        data-icon="feather:smile"
-                      ></i>
+                      <i aria-hidden="true" class="iconify" data-icon="feather:smile"></i>
                     </div>
                   </div>
                   <input
@@ -647,9 +598,7 @@ watchPostEffect(() => {
                     aria-label="Write a message"
                   />
                   <div class="send-message">
-                    <div
-                      class="button v-button is-primary is-raised is-rounded"
-                    >
+                    <div class="button v-button is-primary is-raised is-rounded">
                       Send
                     </div>
                   </div>
@@ -661,33 +610,19 @@ watchPostEffect(() => {
               </div>
             </div>
 
-            <div
-              class="
-                is-chat-placeholder
-                animated
-                preFadeInUp
-                fadeInUp
-                is-hidden
-              "
-            >
+            <div class="is-chat-placeholder animated preFadeInUp fadeInUp is-hidden">
               <div class="caption">
                 <img
                   src="/@src/assets/illustrations/placeholders/having-coffee.svg"
                   alt=""
-                  @error.once="
-                    (event) => useViaPlaceholderError(event, '150x150')
-                  "
+                  @error.once="(event) => useViaPlaceholderError(event, '150x150')"
                 />
                 <div class="text">
                   <h3>Nothing to show</h3>
                   <p>Select an existing conversation or start a new one</p>
                   <a
                     id="new-chat"
-                    class="
-                      button
-                      v-button
-                      is-solid is-outlined is-big is-rounded
-                    "
+                    class="button v-button is-solid is-outlined is-big is-rounded"
                   >
                     Start a new conversation
                   </a>
@@ -704,11 +639,7 @@ watchPostEffect(() => {
         aria-label="Close convesation details"
         @click="mobileConversationDetailsOpen = !mobileConversationDetailsOpen"
       >
-        <i
-          aria-hidden="true"
-          class="iconify"
-          data-icon="feather:chevron-left"
-        ></i>
+        <i aria-hidden="true" class="iconify" data-icon="feather:chevron-left"></i>
       </a>
     </template>
   </MessagingLayout>
@@ -772,9 +703,6 @@ watchPostEffect(() => {
     padding: 5px 10px;
     z-index: 2;
     -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
 
     .is-autocomplete {
@@ -896,7 +824,7 @@ watchPostEffect(() => {
 
         ul {
           border-radius: var(--radius) !important;
-          box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06) !important;
+          box-shadow: -1px 3px 10px 0 rgb(0 0 0 / 6%) !important;
         }
       }
     }
@@ -966,7 +894,7 @@ watchPostEffect(() => {
       transform: translateX(100%);
 
       .chat-side-content {
-        opacity: 0;
+        opacity: 0%;
       }
     }
   }
@@ -1098,7 +1026,7 @@ watchPostEffect(() => {
   overflow-y: auto;
   list-style: none;
   margin: 0;
-  padding: 0 30px 80px 30px;
+  padding: 0 30px 80px;
   transition: all 0.3s;
 
   &::-webkit-scrollbar {
@@ -1107,7 +1035,7 @@ watchPostEffect(() => {
 
   &::-webkit-scrollbar-thumb {
     border-radius: 5px;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgb(0 0 0 / 20%);
   }
 
   .divider-container {
@@ -1115,7 +1043,7 @@ watchPostEffect(() => {
     max-width: 100%;
 
     .divider {
-      margin: 1.5em auto 1.5em auto;
+      margin: 1.5em auto;
 
       span {
         color: var(--placeholder);
@@ -1127,7 +1055,7 @@ watchPostEffect(() => {
         &::after {
           top: 0.9em;
           width: 43%;
-          border-top: 1px solid rgba(0, 0, 0, 0.1);
+          border-top: 1px solid rgb(0 0 0 / 10%);
         }
       }
     }
@@ -1146,20 +1074,17 @@ watchPostEffect(() => {
     display: block;
     z-index: 2;
     border-radius: var(--radius-rounded);
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    -ms-border-radius: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 100%;
+    border-radius: 100%;
+    border-radius: 100%;
+    background-color: rgb(255 255 255 / 90%);
 
     img {
       width: 40px;
       height: 40px;
       border-radius: var(--radius-rounded);
-      background-color: rgba(255, 255, 255, 0.9);
+      background-color: rgb(255 255 255 / 90%);
       -webkit-touch-callout: none;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
       user-select: none;
     }
   }
@@ -1173,21 +1098,18 @@ watchPostEffect(() => {
     text-shadow: 7px 0 0 var(--lighter-grey), 6px 0 0 var(--lighter-grey),
       5px 0 0 var(--lighter-grey), 4px 0 0 var(--lighter-grey),
       3px 0 0 var(--lighter-grey), 2px 0 0 var(--lighter-grey),
-      1px 0 0 var(--lighter-grey), 1px 0 0 var(--lighter-grey),
-      0 0 0 var(--lighter-grey), -1px 0 0 var(--lighter-grey),
-      -2px 0 0 var(--lighter-grey), -3px 0 0 var(--lighter-grey),
-      -4px 0 0 var(--lighter-grey), -5px 0 0 var(--lighter-grey),
-      -6px 0 0 var(--lighter-grey), -7px 0 0 var(--lighter-grey);
-    box-shadow: inset 20px 0 0 var(--lighter-grey),
-      inset -20px 0 0 var(--lighter-grey), inset 0 -2px 0 #d7d7d7;
+      1px 0 0 var(--lighter-grey), 1px 0 0 var(--lighter-grey), 0 0 0 var(--lighter-grey),
+      -1px 0 0 var(--lighter-grey), -2px 0 0 var(--lighter-grey),
+      -3px 0 0 var(--lighter-grey), -4px 0 0 var(--lighter-grey),
+      -5px 0 0 var(--lighter-grey), -6px 0 0 var(--lighter-grey),
+      -7px 0 0 var(--lighter-grey);
+    box-shadow: inset 20px 0 0 var(--lighter-grey), inset -20px 0 0 var(--lighter-grey),
+      inset 0 -2px 0 #d7d7d7;
     line-height: 38px;
     margin-top: 5px;
     margin-bottom: 20px;
     cursor: default;
     -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
   }
 
@@ -1236,7 +1158,7 @@ watchPostEffect(() => {
       .msg-inner {
         background: var(--white);
         color: var(--dark-text);
-        border-radius: 0 12px 12px 12px;
+        border-radius: 0 12px 12px;
         padding: 16px;
         position: relative;
       }
@@ -1249,9 +1171,6 @@ watchPostEffect(() => {
         margin-top: 3px;
         cursor: default;
         -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
         user-select: none;
 
         svg {
@@ -1305,9 +1224,6 @@ watchPostEffect(() => {
         margin-top: 3px;
         cursor: default;
         -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
         user-select: none;
 
         svg {
@@ -1382,14 +1298,14 @@ watchPostEffect(() => {
     align-items: center;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 1);
+    background: rgb(255 255 255 / 100%);
     z-index: 9;
-    opacity: 0;
+    opacity: 0%;
     pointer-events: none;
     transition: all 0.4s;
 
     &.is-active {
-      opacity: 1;
+      opacity: 100%;
       pointer-events: all;
       z-index: 9 !important;
     }
@@ -1418,12 +1334,12 @@ watchPostEffect(() => {
 
       &:hover {
         .image-overlay {
-          opacity: 0.45;
+          opacity: 45%;
           pointer-events: none;
         }
 
         .image-actions {
-          opacity: 1;
+          opacity: 100%;
 
           .download {
             pointer-events: all;
@@ -1445,7 +1361,7 @@ watchPostEffect(() => {
         left: 0;
         width: 100%;
         height: 100%;
-        opacity: 0;
+        opacity: 0%;
         background: var(--primary);
         border: 4px solid var(--white);
         border-radius: 3px;
@@ -1459,7 +1375,7 @@ watchPostEffect(() => {
         left: 0;
         width: 100%;
         height: 100%;
-        opacity: 0;
+        opacity: 0%;
         pointer-events: none;
         transition: all 0.3s;
         z-index: 3;
@@ -1610,7 +1526,7 @@ watchPostEffect(() => {
 
   p {
     font-size: 0.8rem;
-    margin: 0 0 0.2rem 0;
+    margin: 0 0 0.2rem;
   }
 
   img {
@@ -1622,14 +1538,11 @@ watchPostEffect(() => {
     transition: all 0.4s cubic-bezier(0.565, -0.26, 0.255, 1.41);
     cursor: default;
     -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
   }
 }
 
-//Message queries
+// Message queries
 @media screen and (max-width: 800px) {
   .msg img {
     width: 300px;
@@ -1812,12 +1725,12 @@ watchPostEffect(() => {
     width: 100px;
     height: 100px;
     z-index: 2;
-    opacity: 0;
+    opacity: 0%;
     transform: translateY(30px);
     transition: all 0.3s;
 
     &.is-active {
-      opacity: 1;
+      opacity: 100%;
       transform: translateY(25px);
     }
 
@@ -1903,8 +1816,8 @@ watchPostEffect(() => {
     }
 
     .chat-header {
-      //background: var(--dark-sidebar-light-2);
-      //border-color: var(--dark-sidebar-light-2);
+      // background: var(--dark-sidebar-light-2);
+      // border-color: var(--dark-sidebar-light-2);
 
       .is-badge {
         border-color: var(--dark-sidebar) !important;
@@ -1937,19 +1850,7 @@ watchPostEffect(() => {
           border-color: none;
           color: var(--primary-grey-dark-4);
 
-          &::-webkit-input-placeholder {
-            color: var(--primary-grey-dark-30) !important;
-          }
-
-          &::-moz-placeholder {
-            color: var(--primary-grey-dark-30) !important;
-          }
-
-          &:-ms-input-placeholder {
-            color: var(--primary-grey-dark-30) !important;
-          }
-
-          &:-moz-placeholder {
+          &::placeholder {
             color: var(--primary-grey-dark-30) !important;
           }
         }
@@ -2124,19 +2025,7 @@ watchPostEffect(() => {
       background: var(--dark-sidebar-light-2) !important;
       color: var(--primary-grey-dark-10) !important;
 
-      &::-webkit-input-placeholder {
-        color: var(--primary-grey-dark-15) !important;
-      }
-
-      &::-moz-placeholder {
-        color: var(--primary-grey-dark-15) !important;
-      }
-
-      &:-ms-input-placeholder {
-        color: var(--primary-grey-dark-15) !important;
-      }
-
-      &:-moz-placeholder {
+      &::placeholder {
         color: var(--primary-grey-dark-15) !important;
       }
     }
@@ -2213,7 +2102,7 @@ watchPostEffect(() => {
 
       .chat-body {
         width: 100% !important;
-        padding: 0 10px 40px 10px;
+        padding: 0 10px 40px;
 
         .avatar,
         .avatar img {
@@ -2290,7 +2179,7 @@ watchPostEffect(() => {
 
       .chat-body {
         width: 100% !important;
-        padding: 0 10px 40px 10px;
+        padding: 0 10px 40px;
 
         .avatar,
         .avatar img {

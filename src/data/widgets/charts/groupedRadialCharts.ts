@@ -5,7 +5,7 @@ export const widgetGaugeGroup1Options = {
   chart: {
     height: 100,
     type: 'radialBar',
-    //offsetY: -20,
+    // offsetY: -20,
     sparkline: {
       enabled: true,
     },
@@ -65,7 +65,7 @@ export const widgetGaugeGroup2Options = {
   chart: {
     height: 100,
     type: 'radialBar',
-    //offsetY: -20,
+    // offsetY: -20,
     sparkline: {
       enabled: true,
     },
@@ -125,7 +125,7 @@ export const widgetGaugeGroup3Options = {
   chart: {
     height: 100,
     type: 'radialBar',
-    //offsetY: -20,
+    // offsetY: -20,
     sparkline: {
       enabled: true,
     },

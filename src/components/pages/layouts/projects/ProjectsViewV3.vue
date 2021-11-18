@@ -104,10 +104,10 @@ const filterProjects = ref(0)
             </div>
             <div class="item-description">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem
-                iste, inquam, de voluptate quid sentit? Itaque contra est, ac
-                dicitis; Quae cum essent dicta, discessimus. Iam enim adesse
-                poterit. Duo Reges: constructio interrete.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem iste,
+                inquam, de voluptate quid sentit? Itaque contra est, ac dicitis; Quae cum
+                essent dicta, discessimus. Iam enim adesse poterit. Duo Reges: constructio
+                interrete.
               </p>
 
               <div class="item-people">
@@ -140,10 +140,10 @@ const filterProjects = ref(0)
             </div>
             <div class="item-description">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem
-                iste, inquam, de voluptate quid sentit? Itaque contra est, ac
-                dicitis; Quae cum essent dicta, discessimus. Iam enim adesse
-                poterit. Duo Reges: constructio interrete.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem iste,
+                inquam, de voluptate quid sentit? Itaque contra est, ac dicitis; Quae cum
+                essent dicta, discessimus. Iam enim adesse poterit. Duo Reges: constructio
+                interrete.
               </p>
 
               <div class="item-people">
@@ -184,10 +184,10 @@ const filterProjects = ref(0)
             </div>
             <div class="item-description">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem
-                iste, inquam, de voluptate quid sentit? Itaque contra est, ac
-                dicitis; Quae cum essent dicta, discessimus. Iam enim adesse
-                poterit. Duo Reges: constructio interrete.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem iste,
+                inquam, de voluptate quid sentit? Itaque contra est, ac dicitis; Quae cum
+                essent dicta, discessimus. Iam enim adesse poterit. Duo Reges: constructio
+                interrete.
               </p>
 
               <div class="item-people">
@@ -217,10 +217,10 @@ const filterProjects = ref(0)
             </div>
             <div class="item-description">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem
-                iste, inquam, de voluptate quid sentit? Itaque contra est, ac
-                dicitis; Quae cum essent dicta, discessimus. Iam enim adesse
-                poterit. Duo Reges: constructio interrete.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem iste,
+                inquam, de voluptate quid sentit? Itaque contra est, ac dicitis; Quae cum
+                essent dicta, discessimus. Iam enim adesse poterit. Duo Reges: constructio
+                interrete.
               </p>
 
               <div class="item-people">
@@ -256,10 +256,10 @@ const filterProjects = ref(0)
             </div>
             <div class="item-description">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem
-                iste, inquam, de voluptate quid sentit? Itaque contra est, ac
-                dicitis; Quae cum essent dicta, discessimus. Iam enim adesse
-                poterit. Duo Reges: constructio interrete.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem iste,
+                inquam, de voluptate quid sentit? Itaque contra est, ac dicitis; Quae cum
+                essent dicta, discessimus. Iam enim adesse poterit. Duo Reges: constructio
+                interrete.
               </p>
 
               <div class="item-people">
@@ -295,10 +295,10 @@ const filterProjects = ref(0)
             </div>
             <div class="item-description">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem
-                iste, inquam, de voluptate quid sentit? Itaque contra est, ac
-                dicitis; Quae cum essent dicta, discessimus. Iam enim adesse
-                poterit. Duo Reges: constructio interrete.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem iste,
+                inquam, de voluptate quid sentit? Itaque contra est, ac dicitis; Quae cum
+                essent dicta, discessimus. Iam enim adesse poterit. Duo Reges: constructio
+                interrete.
               </p>
 
               <div class="item-people">
@@ -331,10 +331,10 @@ const filterProjects = ref(0)
             </div>
             <div class="item-description">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem
-                iste, inquam, de voluptate quid sentit? Itaque contra est, ac
-                dicitis; Quae cum essent dicta, discessimus. Iam enim adesse
-                poterit. Duo Reges: constructio interrete.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem iste,
+                inquam, de voluptate quid sentit? Itaque contra est, ac dicitis; Quae cum
+                essent dicta, discessimus. Iam enim adesse poterit. Duo Reges: constructio
+                interrete.
               </p>
 
               <div class="item-people">
@@ -369,10 +369,10 @@ const filterProjects = ref(0)
             </div>
             <div class="item-description">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem
-                iste, inquam, de voluptate quid sentit? Itaque contra est, ac
-                dicitis; Quae cum essent dicta, discessimus. Iam enim adesse
-                poterit. Duo Reges: constructio interrete.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem iste,
+                inquam, de voluptate quid sentit? Itaque contra est, ac dicitis; Quae cum
+                essent dicta, discessimus. Iam enim adesse poterit. Duo Reges: constructio
+                interrete.
               </p>
 
               <div class="item-people">
@@ -406,10 +406,10 @@ const filterProjects = ref(0)
             </div>
             <div class="item-description">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem
-                iste, inquam, de voluptate quid sentit? Itaque contra est, ac
-                dicitis; Quae cum essent dicta, discessimus. Iam enim adesse
-                poterit. Duo Reges: constructio interrete.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem iste,
+                inquam, de voluptate quid sentit? Itaque contra est, ac dicitis; Quae cum
+                essent dicta, discessimus. Iam enim adesse poterit. Duo Reges: constructio
+                interrete.
               </p>
 
               <div class="item-people">
@@ -433,6 +433,6 @@ const filterProjects = ref(0)
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
-@import '../../../../scss/pages/projects/_projects.scss';
+@import '../../../../scss/abstracts/mixins';
+@import '../../../../scss/pages/projects/projects';
 </style>

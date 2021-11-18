@@ -11,7 +11,7 @@
 ========================================================================== */
 
 .demo-card {
-  @include vuero-s-card();
+  @include vuero-s-card;
 
   position: relative;
   margin-bottom: 1.5rem;
@@ -97,7 +97,7 @@
 
       &.close {
         display: none !important;
-        opacity: 1 !important;
+        opacity: 100% !important;
       }
     }
   }
@@ -145,7 +145,7 @@
       display: flex;
       flex-wrap: wrap;
 
-      //justify-content: center;
+      // justify-content: center;
 
       li {
         width: 20%;
@@ -236,6 +236,7 @@
   .content {
     table {
       margin-top: 2rem;
+
       // background-color: red;
 
       th {
@@ -268,23 +269,27 @@
             color: var(--red);
           }
         }
+
         .is-function {
           code {
             color: var(--info);
           }
         }
+
         .is-number,
         .is-boolean {
           code {
             color: var(--orange);
           }
         }
+
         .is-null,
         .is-undefined {
           code {
             color: var(--light-blue);
           }
         }
+
         .is-array {
           code {
             color: var(--dark);
@@ -366,7 +371,7 @@
 
 .is-dark {
   .demo-card {
-    @include vuero-card--dark();
+    @include vuero-card--dark;
 
     .demo-title {
       h3 {
@@ -375,6 +380,7 @@
 
       .code-trigger {
         border-color: var(--dark-sidebar-light-14);
+
         &:hover {
           svg {
             color: var(--light-text);

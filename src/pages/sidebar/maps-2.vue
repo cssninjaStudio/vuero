@@ -11,12 +11,7 @@ useHead({
 </script>
 
 <template>
-  <SidebarLayout
-    :theme="sidebarTheme"
-    close-on-change
-    default-sidebar="dashboard"
-    nowrap
-  >
+  <SidebarLayout :theme="sidebarTheme" close-on-change default-sidebar="dashboard" nowrap>
     <MapsDashboard reversed>
       <template #header>
         <div class="content-section-header">
@@ -30,11 +25,7 @@ useHead({
               aria-label="View activity"
               @click="activePanel = 'activity'"
             >
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:grid"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:grid"></i>
             </a>
           </Toolbar>
         </div>

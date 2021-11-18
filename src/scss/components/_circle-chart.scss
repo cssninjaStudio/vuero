@@ -49,7 +49,7 @@
 }
 
 .circle-chart__circle_2 {
-  animation: circle-chart-fill_3 4s reverse;
+  animation: circle-chart-fill-3 4s reverse;
 }
 
 .circle-chart__background {
@@ -67,30 +67,30 @@
   }
 }
 
-@keyframes circle-chart-fill_2 {
+@keyframes circle-chart-fill-2 {
   from {
-    opacity: 1;
+    opacity: 100%;
   }
 
   to {
     stroke-dasharray: 0 100;
-    opacity: 0;
+    opacity: 0%;
   }
 }
 
-@keyframes circle-chart-fill_3 {
+@keyframes circle-chart-fill-3 {
   0% {
-    opacity: 1;
+    opacity: 100%;
   }
 
   50% {
-    opacity: 1;
+    opacity: 100%;
     stroke-dasharray: 0 100;
   }
 
   100% {
     stroke-dasharray: 0 100;
-    opacity: 0;
+    opacity: 0%;
   }
 }
 

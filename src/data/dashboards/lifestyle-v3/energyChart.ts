@@ -8,8 +8,7 @@ function generateDayWiseTimeSeries(
   let i = 0
   const series = []
   while (i < count) {
-    const y =
-      Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min
+    const y = Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min
 
     series.push([baseval, y])
     baseval += 86400000
@@ -22,36 +21,24 @@ export const energyChartOptions = {
   series: [
     {
       name: 'Tonic',
-      data: generateDayWiseTimeSeries(
-        new Date('Oct 11 2020 GMT').getTime(),
-        20,
-        {
-          min: 10,
-          max: 60,
-        }
-      ),
+      data: generateDayWiseTimeSeries(new Date('Oct 11 2020 GMT').getTime(), 20, {
+        min: 10,
+        max: 60,
+      }),
     },
     {
       name: 'Tantra',
-      data: generateDayWiseTimeSeries(
-        new Date('Oct 11 2020 GMT').getTime(),
-        20,
-        {
-          min: 10,
-          max: 60,
-        }
-      ),
+      data: generateDayWiseTimeSeries(new Date('Oct 11 2020 GMT').getTime(), 20, {
+        min: 10,
+        max: 60,
+      }),
     },
     {
       name: 'Vital',
-      data: generateDayWiseTimeSeries(
-        new Date('Oct 11 2020 GMT').getTime(),
-        30,
-        {
-          min: 10,
-          max: 60,
-        }
-      ),
+      data: generateDayWiseTimeSeries(new Date('Oct 11 2020 GMT').getTime(), 30, {
+        min: 10,
+        max: 60,
+      }),
     },
   ],
   chart: {

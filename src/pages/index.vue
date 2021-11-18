@@ -58,9 +58,7 @@ useHead({
             </h1>
             <h3 class="subtitle is-4 is-light">
               Premium Webapp UI Kit.
-              <span class="tag is-primary is-rounded">{{
-                packageJson.version
-              }}</span>
+              <span class="tag is-primary is-rounded">{{ packageJson.version }}</span>
             </h3>
 
             <img
@@ -192,17 +190,12 @@ useHead({
               <div class="flex-cell is-bordered">
                 <i aria-hidden="true" class="lnil lnil-toolbox"></i>
                 <h3>500+ Vue Components</h3>
-                <p>
-                  An incredible set of building blocks with dark mode support.
-                </p>
+                <p>An incredible set of building blocks with dark mode support.</p>
               </div>
               <div class="flex-cell is-bordered">
                 <i aria-hidden="true" class="lnil lnil-display-alt"></i>
                 <h3>220+ Demos</h3>
-                <p>
-                  Vuero ships with a huge number of demos to kickstart your
-                  project.
-                </p>
+                <p>Vuero ships with a huge number of demos to kickstart your project.</p>
               </div>
               <div class="flex-cell is-bordered">
                 <i aria-hidden="true" class="lnil lnil-moon"></i>
@@ -217,10 +210,7 @@ useHead({
               <div class="flex-cell">
                 <i aria-hidden="true" class="lnil lnil-code"></i>
                 <h3>Clean Code</h3>
-                <p>
-                  Vuero's codebase is huge, but structured and easy to
-                  understand
-                </p>
+                <p>Vuero's codebase is huge, but structured and easy to understand</p>
               </div>
               <div class="flex-cell">
                 <i aria-hidden="true" class="lnil lnil-plug"></i>
@@ -250,12 +240,7 @@ useHead({
               <div class="buttons">
                 <a
                   href="https://themeforest.net/item/vuero-vuejs-3-admin-and-webapp-ui-kit/31053035"
-                  class="
-                    button
-                    v-button
-                    is-primary is-rounded is-elevated
-                    action-button
-                  "
+                  class="button v-button is-primary is-rounded is-elevated action-button"
                 >
                   Buy Now
                 </a>
@@ -279,17 +264,13 @@ useHead({
                 <img src="/images/icons/stacks/vuejs-solo.svg" alt="" />
                 <h3>Vue 3</h3>
                 <p>
-                  Vue 3 and its powerful composition API makes your experience
-                  pleasant.
+                  Vue 3 and its powerful composition API makes your experience pleasant.
                 </p>
               </div>
               <div class="flex-cell">
                 <img src="/images/icons/stacks/typescript-square.svg" alt="" />
                 <h3>Typescript</h3>
-                <p>
-                  Typescript makes things much more simpler but remains
-                  optional.
-                </p>
+                <p>Typescript makes things much more simpler but remains optional.</p>
               </div>
               <div class="flex-cell is-bordered">
                 <img src="/images/icons/stacks/vite.svg" alt="" />
@@ -303,24 +284,24 @@ useHead({
                 <img src="/images/icons/stacks/vscode.svg" alt="" />
                 <h3>VS Code Integration</h3>
                 <p>
-                  Vuero is fully integrated with VS Code to help you produce
-                  quality checked code.
+                  Vuero is fully integrated with VS Code to help you produce quality
+                  checked code.
                 </p>
               </div>
               <div class="flex-cell is-bordered">
                 <img src="/images/icons/stacks/eslint.svg" alt="" />
                 <h3>ES Lint</h3>
                 <p>
-                  ES Lint watches your javascript code and makes sure it matches
-                  the best standards.
+                  ES Lint watches your javascript code and makes sure it matches the best
+                  standards.
                 </p>
               </div>
               <div class="flex-cell is-bordered">
                 <img src="/images/icons/stacks/prettier.svg" alt="" />
                 <h3>Prettier</h3>
                 <p>
-                  Prettier tidies your code and makes it look much more cleaner
-                  and easier to read.
+                  Prettier tidies your code and makes it look much more cleaner and easier
+                  to read.
                 </p>
               </div>
               <div class="flex-cell">
@@ -336,80 +317,80 @@ useHead({
                 />
                 <h3>Stylelint</h3>
                 <p>
-                  Stylelint looks for poorly formatted styles and fixes
-                  everything for you.
+                  Stylelint looks for poorly formatted styles and fixes everything for
+                  you.
                 </p>
               </div>
               <div class="flex-cell">
                 <img src="/images/icons/stacks/iconify.svg" alt="" />
                 <h3>Iconify</h3>
                 <p>
-                  Iconify displays icons inside your code editor so you always
-                  know what you're doing.
+                  Iconify displays icons inside your code editor so you always know what
+                  you're doing.
                 </p>
               </div>
               <div class="flex-cell">
                 <img src="/images/icons/stacks/cypress.svg" alt="" />
                 <h3>Cypress</h3>
                 <p>
-                  Cypress handles end to end testing to make sure everything
-                  works as expected.
+                  Cypress handles end to end testing to make sure everything works as
+                  expected.
                 </p>
               </div>
               <div class="flex-cell">
                 <img src="/images/icons/stacks/pnpm-yarn.svg" alt="" />
                 <h3>Pnpm + Yarn</h3>
                 <p>
-                  Vuero works very well with Pnpm or Yarn for efficient
-                  dependency management.
+                  Vuero works very well with Pnpm or Yarn for efficient dependency
+                  management.
                 </p>
               </div>
               <div class="flex-cell">
                 <img src="/images/icons/stacks/docker-whale.svg" alt="" />
                 <h3>Docker</h3>
                 <p>
-                  Vuero ships with a Docker file to make your test deployments
-                  faster and easier.
+                  Vuero ships with a Docker file to make your test deployments faster and
+                  easier.
                 </p>
               </div>
               <div class="flex-cell">
                 <img src="/images/icons/stacks/robot.svg" alt="" />
                 <h3>Robot Friendly</h3>
                 <p>
-                  Fully featured with structured data. Help your site display in
-                  richer features in search results.
+                  Fully featured with structured data. Help your site display in richer
+                  features in search results.
                 </p>
               </div>
               <div class="flex-cell">
                 <img src="/images/icons/misc/success.svg" alt="" />
                 <h3>Props Validation</h3>
                 <p>
-                  Vuero base components ship with props validation to prevent
-                  unexpected errors.
+                  Vuero base components ship with props validation to prevent unexpected
+                  errors.
                 </p>
               </div>
               <div class="flex-cell">
                 <img src="/images/icons/misc/error.svg" alt="" />
                 <h3>Error Handling</h3>
                 <p>
-                  While developping Vuero, we focused on providing an up to
-                  standards error handling.
+                  While developping Vuero, we focused on providing an up to standards
+                  error handling.
                 </p>
               </div>
               <div class="flex-cell">
                 <img src="/images/icons/misc/folder.svg" alt="" />
                 <h3>Project Structure</h3>
                 <p>
-                  A clean and organized project structure lets you find any file
-                  or content quickly.
+                  A clean and organized project structure lets you find any file or
+                  content quickly.
                 </p>
               </div>
               <div class="flex-cell">
                 <img src="/images/icons/misc/documentation.svg" alt="" />
                 <h3>Component Guide</h3>
                 <p>
-                  A full component / plugin documentation with a lot of code
-                  examples lives inside Vuero.
+                  A full component / plugin documentation with a lot of code examples
+                  lives inside Vuero.
                 </p>
               </div>
             </div>
@@ -419,8 +400,8 @@ useHead({
           <div class="section-title has-text-centered">
             <h2 class="title is-2">Get started with Vuero</h2>
             <h4>
-              Watch the quickstart tutorial and access our private Discord and
-              GitHub repo.
+              Watch the quickstart tutorial and access our private Discord and GitHub
+              repo.
             </h4>
 
             <div class="mt-4">
@@ -497,29 +478,17 @@ useHead({
               />
             </div>
             <div class="column is-5">
-              <h2 class="title m-b-10 is-centered-tablet-portrait">
-                Incredible UI
-              </h2>
-              <p
-                class="section-feature-description is-centered-tablet-portrait"
-              >
-                Vuero's UI has been carefully thought and designed, and is
-                simply one of the best you'll find on the market. It's visual
-                power and its modularity will let you build great apps
-                seamlessly.
+              <h2 class="title m-b-10 is-centered-tablet-portrait">Incredible UI</h2>
+              <p class="section-feature-description is-centered-tablet-portrait">
+                Vuero's UI has been carefully thought and designed, and is simply one of
+                the best you'll find on the market. It's visual power and its modularity
+                will let you build great apps seamlessly.
               </p>
             </div>
           </div>
           <!-- Feature -->
           <div class="columns is-vcentered side-feature">
-            <div
-              class="
-                column
-                is-6
-                has-text-centered
-                h-hidden-desktop h-hidden-tablet-p
-              "
-            >
+            <div class="column is-6 has-text-centered h-hidden-desktop h-hidden-tablet-p">
               <img
                 class="light-image-l featured-image"
                 src="/@src/assets/illustrations/landing/feature-2.svg"
@@ -532,15 +501,10 @@ useHead({
               />
             </div>
             <div class="column is-5 is-offset-1">
-              <h2 class="title m-b-10 is-centered-tablet-portrait">
-                Playful Vectors
-              </h2>
-              <p
-                class="section-feature-description is-centered-tablet-portrait"
-              >
-                Vuero ships with a lot of svg illustrations representing various
-                elements that can be used in a website, following very high
-                quality standards.
+              <h2 class="title m-b-10 is-centered-tablet-portrait">Playful Vectors</h2>
+              <p class="section-feature-description is-centered-tablet-portrait">
+                Vuero ships with a lot of svg illustrations representing various elements
+                that can be used in a website, following very high quality standards.
               </p>
             </div>
             <div class="column is-6 has-text-centered h-hidden-mobile">
@@ -571,15 +535,11 @@ useHead({
               />
             </div>
             <div class="column is-5">
-              <h2 class="title m-b-10 is-centered-tablet-portrait">
-                Handcrafted UI
-              </h2>
-              <p
-                class="section-feature-description is-centered-tablet-portrait"
-              >
-                Vuero ships with it's own component library based on the
-                Bulma.io CSS framework. Each component has been carefully
-                handcrafted and natively supports dark mode.
+              <h2 class="title m-b-10 is-centered-tablet-portrait">Handcrafted UI</h2>
+              <p class="section-feature-description is-centered-tablet-portrait">
+                Vuero ships with it's own component library based on the Bulma.io CSS
+                framework. Each component has been carefully handcrafted and natively
+                supports dark mode.
               </p>
             </div>
           </div>
@@ -594,19 +554,11 @@ useHead({
               <div class="buttons">
                 <a
                   href="https://docs.cssninja.io/vuero"
-                  class="
-                    button
-                    v-button
-                    is-primary is-rounded is-elevated
-                    action-button
-                  "
+                  class="button v-button is-primary is-rounded is-elevated action-button"
                 >
                   Read the Docs
                 </a>
-                <a
-                  href="https://cssninja.io"
-                  class="button chat-button is-secondary"
-                >
+                <a href="https://cssninja.io" class="button chat-button is-secondary">
                   Chat with us
                 </a>
               </div>
@@ -636,9 +588,8 @@ useHead({
                 <div class="flex-meta">
                   <h4>Modular</h4>
                   <p>
-                    Vuero uses a modular CSS structure leveraging the power of
-                    Sass. Each component family has it's own files and
-                    encapsulated styles.
+                    Vuero uses a modular CSS structure leveraging the power of Sass. Each
+                    component family has it's own files and encapsulated styles.
                   </p>
                 </div>
               </div>
@@ -652,9 +603,9 @@ useHead({
                 <div class="flex-meta">
                   <h4>Code Blocks</h4>
                   <p>
-                    A lot of code examples are provided out of the box with
-                    syntax highlighting. Building your app layout is a simple as
-                    copying and pasting.
+                    A lot of code examples are provided out of the box with syntax
+                    highlighting. Building your app layout is a simple as copying and
+                    pasting.
                   </p>
                 </div>
               </div>
@@ -668,9 +619,8 @@ useHead({
                 <div class="flex-meta">
                   <h4>Easy Theming</h4>
                   <p>
-                    Vuero's components provide easy to use class based color
-                    variations and modifiers to help you write less CSS. Theming
-                    is also very easy.
+                    Vuero's components provide easy to use class based color variations
+                    and modifiers to help you write less CSS. Theming is also very easy.
                   </p>
                 </div>
               </div>
@@ -681,11 +631,7 @@ useHead({
           <p class="p-t-40 p-b-40 has-text-centered">
             <a
               href="https://themeforest.net/item/vuero-vuejs-3-admin-and-webapp-ui-kit/31053035"
-              class="
-                button
-                v-button
-                is-rounded is-primary is-elevated is-bold is-huge
-              "
+              class="button v-button is-rounded is-primary is-elevated is-bold is-huge"
             >
               Buy Now
             </a>
@@ -742,19 +688,11 @@ useHead({
                 />
               </div>
               <div class="column is-5">
-                <h2 class="title m-b-10 is-centered-tablet-portrait">
-                  Professional
-                </h2>
-                <p
-                  class="
-                    section-feature-description
-                    is-centered-tablet-portrait
-                  "
-                >
-                  Vuero is a professional product to build professional
-                  applications. You'll find everything you need to build a
-                  project that is up to the highest standards of web
-                  development.
+                <h2 class="title m-b-10 is-centered-tablet-portrait">Professional</h2>
+                <p class="section-feature-description is-centered-tablet-portrait">
+                  Vuero is a professional product to build professional applications.
+                  You'll find everything you need to build a project that is up to the
+                  highest standards of web development.
                 </p>
               </div>
             </div>
@@ -762,12 +700,7 @@ useHead({
             <!-- Feature -->
             <div class="columns is-vcentered side-feature">
               <div
-                class="
-                  column
-                  is-5
-                  has-text-centered
-                  h-hidden-desktop h-hidden-tablet-p
-                "
+                class="column is-5 has-text-centered h-hidden-desktop h-hidden-tablet-p"
               >
                 <img
                   class="light-image-l featured-image"
@@ -781,20 +714,12 @@ useHead({
                 />
               </div>
               <div class="column is-5 is-offset-1">
-                <h2 class="title m-b-10 is-centered-tablet-portrait">
-                  Fast Development
-                </h2>
-                <p
-                  class="
-                    section-feature-description
-                    is-centered-tablet-portrait
-                  "
-                >
-                  Vuero ships with a Vitejs development server that will assist
-                  you when customizing the template. It handles .vue files
-                  compilation as well as SCSS and Typescript code. The page is
-                  refreshed each time you hit the save trigger in your favorite
-                  editor.
+                <h2 class="title m-b-10 is-centered-tablet-portrait">Fast Development</h2>
+                <p class="section-feature-description is-centered-tablet-portrait">
+                  Vuero ships with a Vitejs development server that will assist you when
+                  customizing the template. It handles .vue files compilation as well as
+                  SCSS and Typescript code. The page is refreshed each time you hit the
+                  save trigger in your favorite editor.
                 </p>
               </div>
               <div class="column is-5 has-text-centered h-hidden-mobile">
@@ -829,16 +754,11 @@ useHead({
                 <h2 class="title m-b-10 is-centered-tablet-portrait">
                   Extensive Documentation
                 </h2>
-                <p
-                  class="
-                    section-feature-description
-                    is-centered-tablet-portrait
-                  "
-                >
-                  Vuero's documentation will be a precious ally, as the template
-                  has a large codebase, and a lot of files. Read carefully the
-                  docs, all you need to know for an optimal development
-                  experience is there, even if you still are a beginner.
+                <p class="section-feature-description is-centered-tablet-portrait">
+                  Vuero's documentation will be a precious ally, as the template has a
+                  large codebase, and a lot of files. Read carefully the docs, all you
+                  need to know for an optimal development experience is there, even if you
+                  still are a beginner.
                 </p>
               </div>
             </div>
@@ -873,6 +793,6 @@ useHead({
 </template>
 
 <style lang="scss">
-@import '../scss/abstracts/_mixins.scss';
-@import '../scss/pages/demo/_landing.scss';
+@import '../scss/abstracts/mixins';
+@import '../scss/pages/demo/landing';
 </style>

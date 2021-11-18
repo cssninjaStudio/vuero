@@ -31,9 +31,7 @@ const options = reactive({
 setInterval(() => {
   const max = optionsReactive.data.data.length
   const index = Math.floor(Math.random() * max)
-  const percent = parseInt(
-    `${optionsReactive.data.data[index][4]}`.replace('%', '')
-  )
+  const percent = parseInt(`${optionsReactive.data.data[index][4]}`.replace('%', ''))
 
   if (percent < 100) {
     // updating the data will refresh the datatable

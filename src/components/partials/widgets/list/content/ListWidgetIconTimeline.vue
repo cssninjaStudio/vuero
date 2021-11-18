@@ -18,10 +18,7 @@ const props = withDefaults(
     <div v-for="item in props.items" :key="item.id" class="timeline-item">
       <div
         class="timeline-icon"
-        :class="[
-          props.squared && 'is-squared',
-          props.colored && 'is-' + item.color,
-        ]"
+        :class="[props.squared && 'is-squared', props.colored && 'is-' + item.color]"
       >
         <img
           v-if="item.picture"

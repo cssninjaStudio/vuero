@@ -187,7 +187,7 @@
 
     &::-webkit-scrollbar-thumb {
       border-radius: 10px !important;
-      background: rgba(0, 0, 0, 0.2) !important;
+      background: rgb(0 0 0 / 20%) !important;
     }
 
     .dataTable-table {
@@ -220,7 +220,7 @@
         }
 
         &.dataTables-empty {
-          opacity: 0;
+          opacity: 0%;
         }
       }
 

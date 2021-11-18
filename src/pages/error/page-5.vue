@@ -23,8 +23,8 @@ useHead({
         />
         <h3 class="dark-inverted">Internal Server Error</h3>
         <p>
-          Looks like an unexpacted problem occured. Please try again or contact
-          the website administrator.
+          Looks like an unexpacted problem occured. Please try again or contact the
+          website administrator.
         </p>
         <div class="button-wrap">
           <VButton color="primary" elevated rounded @click="$router.go(-1)">
@@ -37,6 +37,6 @@ useHead({
 </template>
 
 <style lang="scss">
-@import '../../scss/abstracts/_mixins.scss';
-@import '../../scss/pages/generic/_utility.scss';
+@import '../../scss/abstracts/mixins';
+@import '../../scss/pages/generic/utility';
 </style>

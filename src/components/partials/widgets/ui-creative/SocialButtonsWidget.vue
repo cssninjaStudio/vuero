@@ -17,10 +17,7 @@ const tab = ref(props.activeTab)
 </script>
 
 <template>
-  <div
-    class="widget social-buttons-widget"
-    :class="[props.straight && 'is-straight']"
-  >
+  <div class="widget social-buttons-widget" :class="[props.straight && 'is-straight']">
     <div class="social-buttons">
       <div
         v-for="(button, index) in props.buttons"

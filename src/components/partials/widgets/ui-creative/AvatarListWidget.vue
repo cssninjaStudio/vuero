@@ -7,10 +7,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <div
-    class="widget avatar-list-widget"
-    :class="[props.straight && 'is-straight']"
-  >
+  <div class="widget avatar-list-widget" :class="[props.straight && 'is-straight']">
     <div class="field">
       <div class="control">
         <input type="text" class="input" placeholder="Search..." />
@@ -20,11 +17,7 @@ const props = defineProps<{
       </div>
     </div>
     <div class="avatar-list">
-      <div
-        v-for="avatar in props.avatars"
-        :key="avatar.id"
-        class="avatar-list-item"
-      >
+      <div v-for="avatar in props.avatars" :key="avatar.id" class="avatar-list-item">
         <VAvatar :picture="avatar.picture" :squared="props.squared" />
         <div class="meta">
           <span>{{ avatar.name }}</span>

@@ -83,7 +83,7 @@ Form Layouts
                 left: 0;
                 height: 100%;
                 width: 100%;
-                opacity: 0;
+                opacity: 0%;
                 cursor: pointer;
 
                 &:checked {
@@ -133,7 +133,7 @@ Form Layouts
           width: 50%;
 
           .form-section-inner {
-            @include vuero-s-card();
+            @include vuero-s-card;
 
             padding: 40px;
 
@@ -174,7 +174,7 @@ Form Layouts
                   left: 0;
                   height: 100%;
                   width: 100%;
-                  opacity: 0;
+                  opacity: 0%;
                   cursor: pointer;
 
                   &:checked {
@@ -378,11 +378,11 @@ Form Layouts
               margin-right: 10px;
               border: 3px solid var(--light-text);
               cursor: pointer;
-              opacity: 0.6;
+              opacity: 60%;
               transition: all 0.3s;
 
               &:hover {
-                opacity: 1;
+                opacity: 100%;
               }
 
               &.is-primary {
@@ -421,7 +421,7 @@ Form Layouts
   }
 
   .form-outer {
-    @include vuero-s-card();
+    @include vuero-s-card;
 
     padding: 0;
 
@@ -457,7 +457,7 @@ Form Layouts
     }
 
     .form-body {
-      padding: 20px 40px 40px 40px;
+      padding: 20px 40px 40px;
     }
   }
 }
@@ -519,7 +519,7 @@ Form Layouts
         .form-body {
           .form-section {
             .form-section-inner {
-              @include vuero-card--dark();
+              @include vuero-card--dark;
 
               > h3 {
                 color: var(--dark-dark-text);
@@ -604,7 +604,7 @@ Form Layouts
     }
 
     .form-outer {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
 
       .form-header {
         border-color: var(--dark-sidebar-light-12);
@@ -759,10 +759,10 @@ Form Layouts
           padding-left: 0;
           padding-right: 0;
 
-          //flex-direction: column;
+          // flex-direction: column;
 
           .form-section {
-            //width: 100%;
+            // width: 100%;
 
             .form-section-inner {
               padding: 30px;

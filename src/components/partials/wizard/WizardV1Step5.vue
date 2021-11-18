@@ -92,13 +92,10 @@ watchEffect(() => {
         />
         <h3>Invite People</h3>
         <p class="is-larger">
-          You can already start adding files to your project if you have them
-          handy. But don't worry, you'll be able to add and manage files later.
+          You can already start adding files to your project if you have them handy. But
+          don't worry, you'll be able to add and manage files later.
         </p>
-        <a
-          class="action-link toggle-members-link"
-          @click="isAddingMembers = true"
-        >
+        <a class="action-link toggle-members-link" @click="isAddingMembers = true">
           Add Members
         </a>
       </div>
@@ -116,11 +113,7 @@ watchEffect(() => {
 
         <VField class="mt-4">
           <VControl icon="feather:search">
-            <input
-              v-model="search"
-              class="input"
-              placeholder="Search teammates..."
-            />
+            <input v-model="search" class="input" placeholder="Search teammates..." />
           </VControl>
         </VField>
       </div>
@@ -170,71 +163,47 @@ watchEffect(() => {
                     <div class="permissions">
                       <div class="permission-levels">
                         <div
-                          class="
-                            permission-level
-                            hint--bubble hint--primary hint--top
-                          "
+                          class="permission-level hint--bubble hint--primary hint--top"
                           aria-label="Reader"
                           @click="setTeammateRole(teammate, 'reader')"
                         >
                           <div
                             class="permission-level-inner"
-                            :class="[
-                              getRoleLevel(teammate) >= 0 && 'is-active',
-                            ]"
+                            :class="[getRoleLevel(teammate) >= 0 && 'is-active']"
                           ></div>
                         </div>
                         <div
-                          class="
-                            permission-level
-                            hint--bubble hint--primary hint--top
-                          "
+                          class="permission-level hint--bubble hint--primary hint--top"
                           aria-label="Collaborator"
                           @click="setTeammateRole(teammate, 'collaborator')"
                         >
                           <div
                             class="permission-level-inner"
-                            :class="[
-                              getRoleLevel(teammate) >= 1 && 'is-active',
-                            ]"
+                            :class="[getRoleLevel(teammate) >= 1 && 'is-active']"
                           ></div>
                         </div>
                         <div
-                          class="
-                            permission-level
-                            hint--bubble hint--primary hint--top
-                          "
+                          class="permission-level hint--bubble hint--primary hint--top"
                           aria-label="Manager"
                           @click="setTeammateRole(teammate, 'manager')"
                         >
                           <div
                             class="permission-level-inner"
-                            :class="[
-                              getRoleLevel(teammate) >= 2 && 'is-active',
-                            ]"
+                            :class="[getRoleLevel(teammate) >= 2 && 'is-active']"
                           ></div>
                         </div>
                         <div
-                          class="
-                            permission-level
-                            hint--bubble hint--primary hint--top
-                          "
+                          class="permission-level hint--bubble hint--primary hint--top"
                           aria-label="Owner"
                           @click="setTeammateRole(teammate, 'owner')"
                         >
                           <div
                             class="permission-level-inner"
-                            :class="[
-                              getRoleLevel(teammate) >= 3 && 'is-active',
-                            ]"
+                            :class="[getRoleLevel(teammate) >= 3 && 'is-active']"
                           ></div>
                         </div>
                         <progress
-                          class="
-                            progress
-                            permissions-progress
-                            is-primary is-tiny
-                          "
+                          class="progress permissions-progress is-primary is-tiny"
                           :value="getRoleLevel(teammate)"
                           :max="3"
                         >

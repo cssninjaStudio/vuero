@@ -57,9 +57,7 @@ useHead({
                 title="Tags"
                 content="Get familiar with the Vuero tags styles. Code examples included."
               >
-                <RouterLink :to="{ name: 'components-tag' }">
-                  Get Started
-                </RouterLink>
+                <RouterLink :to="{ name: 'components-tag' }"> Get Started </RouterLink>
 
                 <template #icon>
                   <img
@@ -80,9 +78,7 @@ useHead({
                 title="Tabs"
                 content="Get familiar with the Vuero nav tabs styles. Code examples included."
               >
-                <RouterLink :to="{ name: 'components-tabs' }">
-                  Get Started
-                </RouterLink>
+                <RouterLink :to="{ name: 'components-tabs' }"> Get Started </RouterLink>
 
                 <template #icon>
                   <img
@@ -103,9 +99,7 @@ useHead({
                 title="Cards"
                 content="Get familiar with the Vuero card styles. Code examples included."
               >
-                <RouterLink :to="{ name: 'components-card' }">
-                  Get Started
-                </RouterLink>
+                <RouterLink :to="{ name: 'components-card' }"> Get Started </RouterLink>
 
                 <template #icon>
                   <img
@@ -125,9 +119,7 @@ useHead({
                 title="Avatars"
                 content="Get familiar with the Vuero avatar styles. Code examples included."
               >
-                <RouterLink :to="{ name: 'components-avatar' }">
-                  Get Started
-                </RouterLink>
+                <RouterLink :to="{ name: 'components-avatar' }"> Get Started </RouterLink>
 
                 <template #icon>
                   <img
@@ -240,9 +232,7 @@ useHead({
                 title="Snacks"
                 content="Get familiar with the Vuero snacks styles. Code examples included."
               >
-                <RouterLink :to="{ name: 'components-snack' }">
-                  Get Started
-                </RouterLink>
+                <RouterLink :to="{ name: 'components-snack' }"> Get Started </RouterLink>
 
                 <template #icon>
                   <img
@@ -270,5 +260,5 @@ useHead({
 </template>
 
 <style lang="scss">
-@import '../../scss/pages/dashboards/_hub.scss';
+@import '../../scss/pages/dashboards/hub';
 </style>

@@ -11,13 +11,13 @@
 
 .infinite-scroll-loader {
   width: 100%;
-  opacity: 0;
+  opacity: 0%;
   pointer-events: none;
   transition: all 0.3s;
 
   &.is-active {
     pointer-events: all;
-    opacity: 1;
+    opacity: 100%;
   }
 
   .infinite-scroll-loader-inner {
@@ -63,17 +63,17 @@
     height: 100%;
     width: 100%;
     background: var(--white);
-    opacity: 0;
+    opacity: 0%;
     pointer-events: none;
     transition: opacity 0.3s;
     z-index: 5;
 
     &.is-active {
-      opacity: 1;
+      opacity: 100%;
       pointer-events: all;
 
       &.is-translucent {
-        opacity: 0.65;
+        opacity: 65%;
       }
     }
 
@@ -115,7 +115,7 @@
   }
 }
 
-$grey-lighter: hsl(0, 0%, 86%) !default;
+$grey-lighter: hsl(0deg 0% 86%) !default;
 $radius-rounded: 290486px !default;
 
 @keyframes spinAroundLoader {

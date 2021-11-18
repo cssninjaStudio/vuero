@@ -129,16 +129,9 @@ const topicList = dashboardData.topicList as any[]
               </div>
 
               <div class="inner-list">
-                <VBlock
-                  title="Extreme Foot Trekk"
-                  subtitle="Oct 31, 2020"
-                  center
-                >
+                <VBlock title="Extreme Foot Trekk" subtitle="Oct 31, 2020" center>
                   <template #icon>
-                    <VAvatar
-                      picture="/demo/photos/dashboards/lifestyle/1.jpg"
-                      squared
-                    />
+                    <VAvatar picture="/demo/photos/dashboards/lifestyle/1.jpg" squared />
                   </template>
                   <template #action>
                     <div class="rating">
@@ -148,20 +141,13 @@ const topicList = dashboardData.topicList as any[]
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                     </div>
-                    <VIconButton
-                      icon="feather:arrow-right"
-                      circle
-                      dark-outlined
-                    />
+                    <VIconButton icon="feather:arrow-right" circle dark-outlined />
                   </template>
                 </VBlock>
 
                 <VBlock title="Rafting trip" subtitle="Oct 30, 2020" center>
                   <template #icon>
-                    <VAvatar
-                      picture="/demo/photos/dashboards/lifestyle/2.jpg"
-                      squared
-                    />
+                    <VAvatar picture="/demo/photos/dashboards/lifestyle/2.jpg" squared />
                   </template>
                   <template #action>
                     <div class="rating">
@@ -171,24 +157,13 @@ const topicList = dashboardData.topicList as any[]
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                       <i aria-hidden="true" class="fas fa-star"></i>
                     </div>
-                    <VIconButton
-                      icon="feather:arrow-right"
-                      circle
-                      dark-outlined
-                    />
+                    <VIconButton icon="feather:arrow-right" circle dark-outlined />
                   </template>
                 </VBlock>
 
-                <VBlock
-                  title="Climbing Group [Pro]"
-                  subtitle="Oct 31, 2020"
-                  center
-                >
+                <VBlock title="Climbing Group [Pro]" subtitle="Oct 31, 2020" center>
                   <template #icon>
-                    <VAvatar
-                      picture="/demo/photos/dashboards/lifestyle/3.jpg"
-                      squared
-                    />
+                    <VAvatar picture="/demo/photos/dashboards/lifestyle/3.jpg" squared />
                   </template>
                   <template #action>
                     <div class="rating">
@@ -198,24 +173,13 @@ const topicList = dashboardData.topicList as any[]
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                     </div>
-                    <VIconButton
-                      icon="feather:arrow-right"
-                      circle
-                      dark-outlined
-                    />
+                    <VIconButton icon="feather:arrow-right" circle dark-outlined />
                   </template>
                 </VBlock>
 
-                <VBlock
-                  title="Bicycle Madness Trek"
-                  subtitle="Oct 31, 2020"
-                  center
-                >
+                <VBlock title="Bicycle Madness Trek" subtitle="Oct 31, 2020" center>
                   <template #icon>
-                    <VAvatar
-                      picture="/demo/photos/dashboards/lifestyle/4.jpg"
-                      squared
-                    />
+                    <VAvatar picture="/demo/photos/dashboards/lifestyle/4.jpg" squared />
                   </template>
                   <template #action>
                     <div class="rating">
@@ -225,11 +189,7 @@ const topicList = dashboardData.topicList as any[]
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                     </div>
-                    <VIconButton
-                      icon="feather:arrow-right"
-                      circle
-                      dark-outlined
-                    />
+                    <VIconButton icon="feather:arrow-right" circle dark-outlined />
                   </template>
                 </VBlock>
               </div>
@@ -251,10 +211,7 @@ const topicList = dashboardData.topicList as any[]
               <div class="inner-list">
                 <VBlock title="Extreme Triathlon" subtitle="Nov 2, 2020" center>
                   <template #icon>
-                    <VAvatar
-                      picture="/demo/photos/dashboards/lifestyle/5.jpg"
-                      squared
-                    />
+                    <VAvatar picture="/demo/photos/dashboards/lifestyle/5.jpg" squared />
                   </template>
                   <template #action>
                     <div class="rating">
@@ -264,20 +221,13 @@ const topicList = dashboardData.topicList as any[]
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                     </div>
-                    <VIconButton
-                      icon="feather:arrow-right"
-                      circle
-                      dark-outlined
-                    />
+                    <VIconButton icon="feather:arrow-right" circle dark-outlined />
                   </template>
                 </VBlock>
 
                 <VBlock title="Group Running" subtitle="Oct 29, 2020" center>
                   <template #icon>
-                    <VAvatar
-                      picture="/demo/photos/dashboards/lifestyle/6.jpg"
-                      squared
-                    />
+                    <VAvatar picture="/demo/photos/dashboards/lifestyle/6.jpg" squared />
                   </template>
                   <template #action>
                     <div class="rating">
@@ -287,20 +237,13 @@ const topicList = dashboardData.topicList as any[]
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                       <i aria-hidden="true" class="fas fa-star"></i>
                     </div>
-                    <VIconButton
-                      icon="feather:arrow-right"
-                      circle
-                      dark-outlined
-                    />
+                    <VIconButton icon="feather:arrow-right" circle dark-outlined />
                   </template>
                 </VBlock>
 
                 <VBlock title="Suit Diving" subtitle="Oct 28, 2020" center>
                   <template #icon>
-                    <VAvatar
-                      picture="/demo/photos/dashboards/lifestyle/7.jpg"
-                      squared
-                    />
+                    <VAvatar picture="/demo/photos/dashboards/lifestyle/7.jpg" squared />
                   </template>
                   <template #action>
                     <div class="rating">
@@ -310,20 +253,13 @@ const topicList = dashboardData.topicList as any[]
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                     </div>
-                    <VIconButton
-                      icon="feather:arrow-right"
-                      circle
-                      dark-outlined
-                    />
+                    <VIconButton icon="feather:arrow-right" circle dark-outlined />
                   </template>
                 </VBlock>
 
                 <VBlock title="Desert Trekk" subtitle="Oct 27, 2020" center>
                   <template #icon>
-                    <VAvatar
-                      picture="/demo/photos/dashboards/lifestyle/7.jpg"
-                      squared
-                    />
+                    <VAvatar picture="/demo/photos/dashboards/lifestyle/7.jpg" squared />
                   </template>
                   <template #action>
                     <div class="rating">
@@ -333,11 +269,7 @@ const topicList = dashboardData.topicList as any[]
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                     </div>
-                    <VIconButton
-                      icon="feather:arrow-right"
-                      circle
-                      dark-outlined
-                    />
+                    <VIconButton icon="feather:arrow-right" circle dark-outlined />
                   </template>
                 </VBlock>
               </div>
@@ -354,11 +286,7 @@ const topicList = dashboardData.topicList as any[]
               <div class="control">
                 <input type="text" class="input" placeholder="Search..." />
                 <button class="searcv-button">
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:search"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
                 </button>
               </div>
 
@@ -374,17 +302,14 @@ const topicList = dashboardData.topicList as any[]
         <!--Widget-->
         <UIWidget class="text-widget">
           <template #header>
-            <UIWidgetToolbarIcon
-              title="Messages"
-              icon="feather:message-square"
-            />
+            <UIWidgetToolbarIcon title="Messages" icon="feather:message-square" />
           </template>
           <template #body>
             <div class="widget-content">
               <p>
                 You currently have more than
-                <span>10 unread messages</span> in your inbox. It could be a
-                good time to check them out.
+                <span>10 unread messages</span> in your inbox. It could be a good time to
+                check them out.
               </p>
             </div>
           </template>
@@ -403,8 +328,8 @@ const topicList = dashboardData.topicList as any[]
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
-@import '../../../../scss/pages/generic/_widgets-lists.scss';
+@import '../../../../scss/abstracts/mixins';
+@import '../../../../scss/pages/generic/widgets-lists';
 
 .lifestyle-dashboard-v2 {
   .dashboard-title {
@@ -431,25 +356,25 @@ const topicList = dashboardData.topicList as any[]
   }
 
   .long-card {
-    @include vuero-l-card();
+    @include vuero-l-card;
 
     position: relative;
     min-height: 300px;
 
     &:hover {
       .long-card-overlay {
-        opacity: 0.5;
+        opacity: 50%;
         pointer-events: all;
       }
 
       .long-card-text-overlay {
-        opacity: 1;
+        opacity: 100%;
         pointer-events: all;
 
         .top,
         .bottom {
           transform: translateY(0);
-          opacity: 1;
+          opacity: 100%;
         }
       }
     }
@@ -461,7 +386,7 @@ const topicList = dashboardData.topicList as any[]
       height: 100%;
       width: 100%;
       background: var(--dark-sidebar);
-      opacity: 0;
+      opacity: 0%;
       pointer-events: none;
       z-index: 1;
       cursor: pointer;
@@ -480,7 +405,7 @@ const topicList = dashboardData.topicList as any[]
       justify-content: space-between;
       padding: 20px;
       font-family: var(--font);
-      opacity: 0;
+      opacity: 0%;
       pointer-events: none;
       z-index: 2;
       overflow: hidden;
@@ -489,7 +414,7 @@ const topicList = dashboardData.topicList as any[]
       .top,
       .bottom {
         transition: all 0.2s;
-        opacity: 0;
+        opacity: 0%;
         transition-delay: 0.15s;
         display: flex;
         align-items: center;
@@ -515,7 +440,7 @@ const topicList = dashboardData.topicList as any[]
   .dashboard-list {
     .inner-list {
       .media-flex-center {
-        @include vuero-l-card();
+        @include vuero-l-card;
 
         display: flex;
         padding: 12px;
@@ -524,7 +449,7 @@ const topicList = dashboardData.topicList as any[]
         &:hover {
           .flex-end {
             .rating {
-              opacity: 1;
+              opacity: 100%;
             }
           }
         }
@@ -537,7 +462,7 @@ const topicList = dashboardData.topicList as any[]
         .flex-end {
           .rating {
             padding: 0 20px;
-            opacity: 0;
+            opacity: 0%;
             transition: all 0.3s;
 
             i {
@@ -558,13 +483,13 @@ const topicList = dashboardData.topicList as any[]
 .is-dark {
   .lifestyle-dashboard-v2 {
     .long-card {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
     }
 
     .dashboard-list {
       .inner-list {
         .media-flex-center {
-          @include vuero-card--dark();
+          @include vuero-card--dark;
         }
       }
     }
@@ -575,19 +500,19 @@ const topicList = dashboardData.topicList as any[]
   .lifestyle-dashboard-v2 {
     .long-card {
       .long-card-overlay {
-        opacity: 0.5 !important;
+        opacity: 50% !important;
         pointer-events: all !important;
       }
 
       .long-card-text-overlay {
-        opacity: 1 !important;
+        opacity: 100% !important;
         pointer-events: all !important;
         padding: 30px;
 
         .top,
         .bottom {
           font-size: 1rem;
-          opacity: 1 !important;
+          opacity: 100% !important;
           transform: translateY(0) !important;
         }
       }
@@ -605,17 +530,17 @@ const topicList = dashboardData.topicList as any[]
 
           .long-card {
             .long-card-overlay {
-              opacity: 0.5 !important;
+              opacity: 50% !important;
               pointer-events: all !important;
             }
 
             .long-card-text-overlay {
-              opacity: 1 !important;
+              opacity: 100% !important;
               pointer-events: all !important;
 
               .top,
               .bottom {
-                opacity: 1 !important;
+                opacity: 100% !important;
                 transform: translateY(0) !important;
               }
 
@@ -642,17 +567,17 @@ const topicList = dashboardData.topicList as any[]
   .lifestyle-dashboard-v2 {
     .long-card {
       .long-card-overlay {
-        opacity: 0.5 !important;
+        opacity: 50% !important;
         pointer-events: all !important;
       }
 
       .long-card-text-overlay {
-        opacity: 1 !important;
+        opacity: 100% !important;
         pointer-events: all !important;
 
         .top,
         .bottom {
-          opacity: 1 !important;
+          opacity: 100% !important;
           transform: translateY(0) !important;
         }
 

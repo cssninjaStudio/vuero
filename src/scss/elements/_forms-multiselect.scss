@@ -105,7 +105,7 @@
 
     &::-webkit-scrollbar-thumb {
       border-radius: 10px !important;
-      background: rgba(0, 0, 0, 0.2) !important;
+      background: rgb(0 0 0 / 20%) !important;
     }
 
     .multiselect-option {
@@ -254,6 +254,7 @@
     .multiselect-input,
     .multiselect-search {
       border-radius: 500px;
+
       &::before {
         right: 20px;
       }
@@ -287,6 +288,7 @@
     .multiselect-input,
     .multiselect-search {
       border-radius: 0.5rem;
+
       .multiselect-tags {
         .multiselect-tag {
           border-radius: 0.35rem;
@@ -414,6 +416,7 @@
         &.is-image,
         &.is-icon {
           border-radius: var(--radius);
+
           // padding-left: 4px;
 
           img {
@@ -431,6 +434,7 @@
         &.is-image,
         &.is-icon {
           border-radius: 0.45rem;
+
           // padding-left: 4px;
 
           img {
@@ -477,7 +481,7 @@
 
         &:hover {
           i::before {
-            opacity: 1;
+            opacity: 100%;
             pointer-events: all;
           }
         }
@@ -499,7 +503,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          opacity: 0;
+          opacity: 0%;
           pointer-events: none;
           transition: opacity 0.3s;
         }
@@ -557,6 +561,7 @@
     .multiselect-placeholder {
       padding-left: 40px !important;
     }
+
     .multiselect-search {
       padding-left: 40px !important;
     }

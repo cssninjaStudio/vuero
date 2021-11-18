@@ -1,7 +1,7 @@
 import { reactive } from 'vue'
 import { themeColors } from '/@src/utils/themeColors'
 
-//Bar Chart
+// Bar Chart
 export const barData = [
   {
     x: 'Jan',

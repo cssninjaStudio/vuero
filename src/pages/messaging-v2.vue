@@ -48,8 +48,7 @@ const conversations: conversationData[] = [
       initials: 'WG',
     },
     lastMessage: '31m',
-    lastMessagePreview:
-      'This is getting funnier and funnier. You gotta love dat team 🥰',
+    lastMessagePreview: 'This is getting funnier and funnier. You gotta love dat team 🥰',
   },
   {
     id: 4,
@@ -119,8 +118,7 @@ const conversations: conversationData[] = [
       picture: '/demo/avatars/19.jpg',
     },
     lastMessage: '3h',
-    lastMessagePreview:
-      'Thank you for you clean presentation, it was stunning.',
+    lastMessagePreview: 'Thank you for you clean presentation, it was stunning.',
   },
   {
     id: 11,
@@ -179,11 +177,7 @@ useHead({
                 aria-label="Search"
               />
               <div class="form-icon">
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:search"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
               </div>
               <div class="search-results has-slimscroll"></div>
             </div>
@@ -201,11 +195,7 @@ useHead({
               aria-label="View activity"
               @click="activePanel = 'activity'"
             >
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:grid"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:grid"></i>
             </a>
           </Toolbar>
 
@@ -214,26 +204,16 @@ useHead({
             ref="dropdownElement1"
             class="dropdown is-right dropdown-trigger user-dropdown"
           >
-            <div
-              class="is-trigger"
-              aria-haspopup="true"
-              @click="dropdown1.toggle"
-            >
+            <div class="is-trigger" aria-haspopup="true" @click="dropdown1.toggle">
               <div class="profile-avatar">
                 <img
                   class="avatar"
                   src="/images/avatars/svg/vuero-1.svg"
                   alt=""
-                  @error.once="
-                    (event) => useViaPlaceholderError(event, '150x150')
-                  "
+                  @error.once="(event) => useViaPlaceholderError(event, '150x150')"
                 />
               </div>
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:chevron-down"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:chevron-down"></i>
             </div>
             <div class="dropdown-menu" role="menu">
               <div class="dropdown-content">
@@ -241,44 +221,24 @@ useHead({
                   <p class="is-size-7">Erik Kovalsky</p>
                 </div>
                 <a href="#" class="dropdown-item">
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:user"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:user"></i>
                   <span>Profile</span>
                 </a>
                 <a class="dropdown-item">
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:edit-2"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:edit-2"></i>
                   <span>Edit Profile</span>
                 </a>
                 <a class="dropdown-item">
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:box"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:box"></i>
                   <span>Projects</span>
                 </a>
                 <a class="dropdown-item">
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:settings"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:settings"></i>
                   <span>Settings</span>
                 </a>
                 <hr class="dropdown-divider" />
                 <a href="#" class="dropdown-item">
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:log-out"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:log-out"></i>
                   <span>Sign Out</span>
                 </a>
               </div>
@@ -294,7 +254,7 @@ useHead({
           v-model:conversationId="selectedConversationId"
           :mobile-conversation-list-open="mobileConversationListOpen"
           :conversations="conversations"
-          @toggleMobileConversation="
+          @toggle-mobile-csonversation="
             mobileConversationListOpen = !mobileConversationListOpen
           "
         />
@@ -304,7 +264,7 @@ useHead({
           <!--Conversation 1-->
           <WebappConversation1
             :class="[selectedConversationId === 1 && 'is-active']"
-            @toggleMobileConversation="
+            @toggle-mobile-csonversation="
               mobileConversationListOpen = !mobileConversationListOpen
             "
           />
@@ -312,7 +272,7 @@ useHead({
           <!--Conversation 2-->
           <WebappConversation2
             :class="[selectedConversationId === 2 && 'is-active']"
-            @toggleMobileConversation="
+            @toggle-mobile-csonversation="
               mobileConversationListOpen = !mobileConversationListOpen
             "
           />
@@ -320,7 +280,7 @@ useHead({
           <!--Conversation 3-->
           <WebappConversation3
             :class="[selectedConversationId === 3 && 'is-active']"
-            @toggleMobileConversation="
+            @toggle-mobile-csonversation="
               mobileConversationListOpen = !mobileConversationListOpen
             "
           />
@@ -328,7 +288,7 @@ useHead({
           <!--Conversation 4-->
           <WebappConversation4
             :class="[selectedConversationId === 4 && 'is-active']"
-            @toggleMobileConversation="
+            @toggle-mobile-csonversation="
               mobileConversationListOpen = !mobileConversationListOpen
             "
           />
@@ -336,7 +296,7 @@ useHead({
           <!--Conversation 5-->
           <WebappConversation5
             :class="[selectedConversationId === 5 && 'is-active']"
-            @toggleMobileConversation="
+            @toggle-mobile-csonversation="
               mobileConversationListOpen = !mobileConversationListOpen
             "
           />
@@ -344,7 +304,7 @@ useHead({
           <!--Conversation 6-->
           <WebappConversation6
             :class="[selectedConversationId === 6 && 'is-active']"
-            @toggleMobileConversation="
+            @toggle-mobile-csonversation="
               mobileConversationListOpen = !mobileConversationListOpen
             "
           />
@@ -352,7 +312,7 @@ useHead({
           <!--Conversation 7-->
           <WebappConversation7
             :class="[selectedConversationId === 7 && 'is-active']"
-            @toggleMobileConversation="
+            @toggle-mobile-csonversation="
               mobileConversationListOpen = !mobileConversationListOpen
             "
           />
@@ -360,7 +320,7 @@ useHead({
           <!--Conversation 8-->
           <WebappConversation8
             :class="[selectedConversationId === 8 && 'is-active']"
-            @toggleMobileConversation="
+            @toggle-mobile-csonversation="
               mobileConversationListOpen = !mobileConversationListOpen
             "
           />
@@ -368,7 +328,7 @@ useHead({
           <!--Conversation 9-->
           <WebappConversation9
             :class="[selectedConversationId === 9 && 'is-active']"
-            @toggleMobileConversation="
+            @toggle-mobile-csonversation="
               mobileConversationListOpen = !mobileConversationListOpen
             "
           />
@@ -376,7 +336,7 @@ useHead({
           <!--Conversation 10-->
           <WebappConversation10
             :class="[selectedConversationId === 10 && 'is-active']"
-            @toggleMobileConversation="
+            @toggle-mobile-csonversation="
               mobileConversationListOpen = !mobileConversationListOpen
             "
           />
@@ -384,60 +344,37 @@ useHead({
           <!--Conversation 11-->
           <WebappConversation11
             :class="[selectedConversationId === 11 && 'is-active']"
-            @toggleMobileConversation="
+            @toggle-mobile-csonversation="
               mobileConversationListOpen = !mobileConversationListOpen
             "
           />
 
           <div class="chat-area-footer">
             <div class="add-content">
-              <div
-                ref="dropdownElement2"
-                class="dropdown dropdown-trigger is-up"
-              >
+              <div ref="dropdownElement2" class="dropdown dropdown-trigger is-up">
                 <div>
-                  <div
-                    class="button"
-                    aria-haspopup="true"
-                    @click="dropdown2.toggle"
-                  >
-                    <i
-                      aria-hidden="true"
-                      class="iconify"
-                      data-icon="feather:plus"
-                    ></i>
+                  <div class="button" aria-haspopup="true" @click="dropdown2.toggle">
+                    <i aria-hidden="true" class="iconify" data-icon="feather:plus"></i>
                   </div>
                 </div>
                 <div class="dropdown-menu" role="menu">
                   <div class="dropdown-content">
                     <a class="dropdown-item">
-                      <i
-                        aria-hidden="true"
-                        class="iconify"
-                        data-icon="feather:video"
-                      ></i>
+                      <i aria-hidden="true" class="iconify" data-icon="feather:video"></i>
                       <div class="meta">
                         <span>Video</span>
                         <span>Embed a video</span>
                       </div>
                     </a>
                     <a href="#" class="dropdown-item kill-drop v-modal-trigger">
-                      <i
-                        aria-hidden="true"
-                        class="iconify"
-                        data-icon="feather:image"
-                      ></i>
+                      <i aria-hidden="true" class="iconify" data-icon="feather:image"></i>
                       <div class="meta">
                         <span>Images</span>
                         <span>Upload pictures</span>
                       </div>
                     </a>
                     <a href="#" class="dropdown-item kill-drop v-modal-trigger">
-                      <i
-                        aria-hidden="true"
-                        class="iconify"
-                        data-icon="feather:link"
-                      ></i>
+                      <i aria-hidden="true" class="iconify" data-icon="feather:link"></i>
                       <div class="meta">
                         <span>Link</span>
                         <span>Post a link</span>
@@ -445,11 +382,7 @@ useHead({
                     </a>
                     <hr class="dropdown-divider" />
                     <a href="#" class="dropdown-item kill-drop v-modal-trigger">
-                      <i
-                        aria-hidden="true"
-                        class="iconify"
-                        data-icon="feather:file"
-                      ></i>
+                      <i aria-hidden="true" class="iconify" data-icon="feather:file"></i>
                       <div class="meta">
                         <span>File</span>
                         <span>Upload a file</span>
@@ -461,11 +394,7 @@ useHead({
             </div>
             <div class="add-emoji">
               <div class="button">
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:smile"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:smile"></i>
               </div>
             </div>
             <input
@@ -528,86 +457,62 @@ useHead({
                 <img
                   src="/demo/photos/demo-apps/1.jpg"
                   alt=""
-                  @error.once="
-                    (event) => useViaPlaceholderError(event, '1600x900')
-                  "
+                  @error.once="(event) => useViaPlaceholderError(event, '1600x900')"
                 />
                 <img
                   src="/demo/photos/demo-apps/2.jpg"
                   alt=""
-                  @error.once="
-                    (event) => useViaPlaceholderError(event, '1600x900')
-                  "
+                  @error.once="(event) => useViaPlaceholderError(event, '1600x900')"
                 />
                 <img
                   src="/demo/photos/demo-apps/3.jpg"
                   alt=""
-                  @error.once="
-                    (event) => useViaPlaceholderError(event, '1600x900')
-                  "
+                  @error.once="(event) => useViaPlaceholderError(event, '1600x900')"
                 />
                 <img
                   src="/demo/photos/demo-apps/4.jpg"
                   alt=""
-                  @error.once="
-                    (event) => useViaPlaceholderError(event, '1600x900')
-                  "
+                  @error.once="(event) => useViaPlaceholderError(event, '1600x900')"
                 />
                 <img
                   src="/demo/photos/demo-apps/5.jpg"
                   alt=""
-                  @error.once="
-                    (event) => useViaPlaceholderError(event, '1600x900')
-                  "
+                  @error.once="(event) => useViaPlaceholderError(event, '1600x900')"
                 />
                 <img
                   src="/demo/photos/demo-apps/6.jpg"
                   alt=""
-                  @error.once="
-                    (event) => useViaPlaceholderError(event, '1600x900')
-                  "
+                  @error.once="(event) => useViaPlaceholderError(event, '1600x900')"
                 />
                 <img
                   src="/demo/photos/demo-apps/7.jpg"
                   alt=""
-                  @error.once="
-                    (event) => useViaPlaceholderError(event, '1600x900')
-                  "
+                  @error.once="(event) => useViaPlaceholderError(event, '1600x900')"
                 />
                 <img
                   src="/demo/photos/demo-apps/8.jpg"
                   alt=""
-                  @error.once="
-                    (event) => useViaPlaceholderError(event, '1600x900')
-                  "
+                  @error.once="(event) => useViaPlaceholderError(event, '1600x900')"
                 />
                 <img
                   src="/demo/photos/demo-apps/9.jpg"
                   alt=""
-                  @error.once="
-                    (event) => useViaPlaceholderError(event, '1600x900')
-                  "
+                  @error.once="(event) => useViaPlaceholderError(event, '1600x900')"
                 />
                 <img
                   src="/demo/photos/demo-apps/10.jpg"
                   alt=""
-                  @error.once="
-                    (event) => useViaPlaceholderError(event, '1600x900')
-                  "
+                  @error.once="(event) => useViaPlaceholderError(event, '1600x900')"
                 />
                 <img
                   src="/demo/photos/demo-apps/11.jpg"
                   alt=""
-                  @error.once="
-                    (event) => useViaPlaceholderError(event, '1600x900')
-                  "
+                  @error.once="(event) => useViaPlaceholderError(event, '1600x900')"
                 />
                 <img
                   src="/demo/photos/demo-apps/12.jpg"
                   alt=""
-                  @error.once="
-                    (event) => useViaPlaceholderError(event, '1600x900')
-                  "
+                  @error.once="(event) => useViaPlaceholderError(event, '1600x900')"
                 />
               </div>
               <a class="view-more">View More</a>
@@ -632,25 +537,23 @@ $border-color: #eef2f4;
 $body-color: #273346;
 $chat-text-bg: #f1f2f6;
 $msg-date: #c0c7d2;
-$msg-hover-bg: rgba(238, 242, 244, 0.4);
+$msg-hover-bg: rgb(238 242 244 / 40%);
 $active-conversation-bg: linear-gradient(
   to right,
-  rgba(238, 242, 244, 0.4) 0%,
-  rgba(238, 242, 244, 0) 100%
+  rgb(238 242 244 / 40%) 0%,
+  rgb(238 242 244 / 0%) 100%
 );
 $overlay-bg: linear-gradient(
   to bottom,
-  rgba(255, 255, 255, 0) 0%,
-  rgba(255, 255, 255, 1) 65%,
-  rgba(255, 255, 255, 1) 100%
+  rgb(255 255 255 / 0%) 0%,
+  rgb(255 255 255 / 100%) 65%,
+  rgb(255 255 255 / 100%) 100%
 );
 $overlay-bg-dark: linear-gradient(
   to bottom,
-  rgba(255, 255, 255, 0) 0%,
-  hsla(var(--dark-sidebar-h), var(--dark-sidebar-s), var(--dark-sidebar-l), 1)
-    65%,
-  hsla(var(--dark-sidebar-h), var(--dark-sidebar-s), var(--dark-sidebar-l), 1)
-    100%
+  rgb(255 255 255 / 0%) 0%,
+  hsl(var(--dark-sidebar-h) var(--dark-sidebar-s) var(--dark-sidebar-l) / 100%) 65%,
+  hsl(var(--dark-sidebar-h) var(--dark-sidebar-s) var(--dark-sidebar-l) / 100%) 100%
 );
 
 .chat-app-wrapper {
@@ -1149,7 +1052,7 @@ $overlay-bg-dark: linear-gradient(
           .chat-msg-text {
             background-color: var(--primary);
             color: var(--white);
-            border-radius: 20px 20px 0 20px;
+            border-radius: 20px 20px 0;
           }
 
           .chat-msg-date {
@@ -1446,7 +1349,7 @@ $overlay-bg-dark: linear-gradient(
       flex-shrink: 0;
       border-left: 1px solid $border-color;
       margin-left: auto;
-      padding: 30px 30px 0 30px;
+      padding: 30px 30px 0;
       display: flex;
       flex-direction: column;
       overflow: auto;

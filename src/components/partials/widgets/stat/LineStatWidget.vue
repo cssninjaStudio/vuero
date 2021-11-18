@@ -19,10 +19,7 @@ const props = withDefaults(
 </script>
 
 <template>
-  <div
-    class="stat-widget line-stats-widget"
-    :class="[props.straight && 'is-straight']"
-  >
+  <div class="stat-widget line-stats-widget" :class="[props.straight && 'is-straight']">
     <div class="widget-head">
       <h3 class="dark-inverted">{{ props.title }}</h3>
     </div>

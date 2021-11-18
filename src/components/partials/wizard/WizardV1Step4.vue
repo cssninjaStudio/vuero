@@ -227,8 +227,8 @@ watch(previewTemplate, () => {
         />
         <h3>Upload project files</h3>
         <p class="is-larger">
-          You can already start adding files to your project if you have them
-          handy. But don't worry, you'll be able to add and manage files later.
+          You can already start adding files to your project if you have them handy. But
+          don't worry, you'll be able to add and manage files later.
         </p>
         <a class="action-link toggle-uploader-link" @click="isUploading = true">
           Add Files
@@ -243,18 +243,10 @@ watch(previewTemplate, () => {
             <div class="uploader-action">
               <span
                 ref="addUploadElement"
-                class="
-                  inner-action
-                  fileinput-button
-                  hint--bubble hint--primary hint--top
-                "
+                class="inner-action fileinput-button hint--bubble hint--primary hint--top"
                 data-hint="Add Files"
               >
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:plus"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:plus"></i>
               </span>
             </div>
             <div class="uploader-action">
@@ -264,11 +256,7 @@ watch(previewTemplate, () => {
                 class="inner-action start hint--bubble hint--primary hint--top"
                 data-hint="Upload All"
               >
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:upload"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:upload"></i>
               </button>
             </div>
             <div class="uploader-action">
@@ -294,10 +282,7 @@ watch(previewTemplate, () => {
               aria-valuemax="100"
               aria-valuenow="0"
             >
-              <div
-                class="progress-bar progress-bar-success"
-                data-dz-uploadprogress
-              ></div>
+              <div class="progress-bar progress-bar-success" data-dz-uploadprogress></div>
             </div>
           </div>
         </div>
@@ -322,9 +307,7 @@ watch(previewTemplate, () => {
               <img
                 data-dz-thumbnail
                 alt=""
-                @error.once="
-                  (event) => useViaPlaceholderError(event, '150x150')
-                "
+                @error.once="(event) => useViaPlaceholderError(event, '150x150')"
               />
             </div>
             <div class="list-item-meta">
@@ -348,40 +331,20 @@ watch(previewTemplate, () => {
             </div>
             <div class="list-item-actions">
               <button
-                class="
-                  list-item-action
-                  start
-                  hint--bubble hint--primary hint--top
-                "
+                class="list-item-action start hint--bubble hint--primary hint--top"
                 data-hint="Upload File"
               >
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:play"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:play"></i>
               </button>
               <button
                 data-dz-remove
-                class="
-                  list-item-action
-                  cancel
-                  hint--bubble hint--primary hint--top
-                "
+                class="list-item-action cancel hint--bubble hint--primary hint--top"
                 data-hint="Cancel"
               >
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:arrow-left"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:arrow-left"></i>
               </button>
               <button data-dz-remove class="list-item-action delete">
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:trash-2"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:trash-2"></i>
               </button>
             </div>
           </div>

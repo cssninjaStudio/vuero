@@ -22,13 +22,11 @@
           />
         </div>
         <div class="column is-5">
-          <h2 class="title m-b-10 is-centered-tablet-portrait">
-            Incredible UI
-          </h2>
+          <h2 class="title m-b-10 is-centered-tablet-portrait">Incredible UI</h2>
           <p class="section-feature-description is-centered-tablet-portrait">
-            Vuero's UI has been carefully thought and designed, and is simply
-            one of the best you'll find on the market. It's visual power and its
-            modularity will let you build great apps seamlessly.
+            Vuero's UI has been carefully thought and designed, and is simply one of the
+            best you'll find on the market. It's visual power and its modularity will let
+            you build great apps seamlessly.
           </p>
         </div>
       </div>
@@ -54,13 +52,10 @@
           />
         </div>
         <div class="column is-5 is-offset-1">
-          <h2 class="title m-b-10 is-centered-tablet-portrait">
-            Playful Vectors
-          </h2>
+          <h2 class="title m-b-10 is-centered-tablet-portrait">Playful Vectors</h2>
           <p class="section-feature-description is-centered-tablet-portrait">
-            Vuero ships with a lot of svg illustrations representing various
-            elements that can be used in a website, following very high quality
-            standards.
+            Vuero ships with a lot of svg illustrations representing various elements that
+            can be used in a website, following very high quality standards.
           </p>
         </div>
         <div class="column is-6 has-text-centered h-hidden-mobile">
@@ -91,13 +86,11 @@
           />
         </div>
         <div class="column is-5">
-          <h2 class="title m-b-10 is-centered-tablet-portrait">
-            Handcrafted UI
-          </h2>
+          <h2 class="title m-b-10 is-centered-tablet-portrait">Handcrafted UI</h2>
           <p class="section-feature-description is-centered-tablet-portrait">
-            Vuero ships with it's own component library based on the Bulma.io
-            CSS framework. Each component has been carefully handcrafted and
-            natively supports dark mode.
+            Vuero ships with it's own component library based on the Bulma.io CSS
+            framework. Each component has been carefully handcrafted and natively supports
+            dark mode.
           </p>
         </div>
       </div>

@@ -18,6 +18,7 @@ $dayBtn: #ffb62e;
 
   input {
     display: none;
+
     & + span {
       display: block;
       border-radius: var(--radius-rounded);
@@ -27,6 +28,7 @@ $dayBtn: #ffb62e;
       box-shadow: inset 16px -16px 0 0 $nightBtn;
       transform: scale(1) rotate(-2deg);
       transition: box-shadow 0.5s ease 0s, transform 0.4s ease 0.1s;
+
       &::before {
         content: '';
         width: inherit;
@@ -38,6 +40,7 @@ $dayBtn: #ffb62e;
         backface-visibility: hidden;
         transition: background-color 0.3s ease;
       }
+
       &::after {
         content: '';
         width: 8px;
@@ -54,15 +57,18 @@ $dayBtn: #ffb62e;
         transition: all 0.3s ease;
       }
     }
+
     &:checked + span {
       box-shadow: inset 32px -32px 0 0 $nightBtn;
       transform: scale(0.5) rotate(0deg);
       transition: transform 0.3s ease 0.1s, box-shadow 0.2s ease 0s;
+
       &::before {
         background: $dayBtn;
         backface-visibility: hidden;
         transition: background-color 0.3s ease 0.1s;
       }
+
       &::after {
         transform: scale(1.5);
         transition: transform 0.5s ease 0.15s;

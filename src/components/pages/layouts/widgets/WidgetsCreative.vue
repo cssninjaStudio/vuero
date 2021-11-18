@@ -1,8 +1,5 @@
 <script setup lang="ts">
-import {
-  avatarList,
-  avatarListCreative,
-} from '/@src/data/widgets/ui/avatarList'
+import { avatarList, avatarListCreative } from '/@src/data/widgets/ui/avatarList'
 import {
   socialButtonList1,
   socialButtonList2,
@@ -94,8 +91,8 @@ import Widget8 from '/@src/assets/illustrations/widgets/8.svg'
         <template #body>
           <div class="widget-content">
             <p>
-              Vuero will be released very soon, probably around the end of the
-              year of the Christmas holidays.
+              Vuero will be released very soon, probably around the end of the year of the
+              Christmas holidays.
             </p>
             <p class="hashtags">
               <a>#uikit</a>
@@ -171,6 +168,6 @@ import Widget8 from '/@src/assets/illustrations/widgets/8.svg'
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
-@import '../../../../scss/pages/generic/_widgets-lists.scss';
+@import '../../../../scss/abstracts/mixins';
+@import '../../../../scss/pages/generic/widgets-lists';
 </style>

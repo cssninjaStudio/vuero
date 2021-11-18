@@ -85,17 +85,14 @@
   }
 
   .modal-background {
-    background-color: hsla(
-      var(--dark-sidebar-h),
-      var(--dark-sidebar-s),
-      var(--dark-sidebar-l),
-      0.8
+    background-color: hsl(
+      var(--dark-sidebar-h) var(--dark-sidebar-s) var(--dark-sidebar-l) / 80%
     );
   }
 
   .modal-content {
     transform: scale(1) !important;
-    opacity: 1 !important;
+    opacity: 100% !important;
     max-width: 540px;
     overflow-x: hidden;
     animation: fadeInDown 0.5s;
@@ -156,7 +153,7 @@
 
       .modal-card-body {
         .modal-form {
-          padding: 10px 0 20px 0;
+          padding: 10px 0 20px;
         }
 
         &.has-tabs {
@@ -172,7 +169,7 @@
 
             &::-webkit-scrollbar-thumb {
               border-radius: 10px !important;
-              background: rgba(0, 0, 0, 0.2) !important;
+              background: rgb(0 0 0 / 20%) !important;
             }
 
             a {
@@ -218,7 +215,7 @@
 .is-dark {
   .v-modal {
     .modal-background {
-      background: rgba(101, 101, 104, 0.8) !important;
+      background: rgb(101 101 104 / 80%) !important;
     }
 
     .modal-content {

@@ -24,7 +24,7 @@
     }
 
     .v-avatar {
-      margin: 0 auto 12px auto;
+      margin: 0 auto 12px;
     }
 
     .anim-icon {
@@ -37,7 +37,7 @@
   }
 
   .hub-body {
-    padding: 10px 0 20px 0;
+    padding: 10px 0 20px;
 
     .body-inner {
       display: flex;
@@ -58,7 +58,7 @@
           .hub-card-body {
             img {
               filter: grayscale(0);
-              opacity: 1;
+              opacity: 100%;
             }
           }
         }
@@ -93,7 +93,7 @@
             max-width: 100px;
             height: 100px;
             filter: grayscale(1);
-            opacity: 0.6;
+            opacity: 60%;
             transition: all 0.3s;
           }
         }
@@ -105,12 +105,12 @@
 
           a {
             color: var(--primary);
-            opacity: 0.6;
+            opacity: 60%;
             font-weight: 500;
             transition: opacity 0.3s;
 
             &:hover {
-              opacity: 1;
+              opacity: 100%;
             }
           }
         }

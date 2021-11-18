@@ -39,11 +39,7 @@ const smallFormOpen = ref(false)
         <div class="field">
           <label>Comment *</label>
           <div class="control">
-            <textarea
-              class="textarea"
-              rows="4"
-              placeholder="Your message..."
-            ></textarea>
+            <textarea class="textarea" rows="4" placeholder="Your message..."></textarea>
           </div>
         </div>
       </form>

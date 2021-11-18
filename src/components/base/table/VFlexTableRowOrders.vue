@@ -26,17 +26,10 @@ const props = defineProps<VFlexTableRowOrders>()
     </div>
     <div class="flex-table-cell" data-th="Status">
       <VTag v-if="row.status === 'paid'" color="green" rounded label="Paid" />
-      <VTag
-        v-if="row.status === 'pending'"
-        color="orange"
-        rounded
-        label="Pending"
-      />
+      <VTag v-if="row.status === 'pending'" color="orange" rounded label="Pending" />
     </div>
     <div class="flex-table-cell" data-th="Tracking">
-      <a v-if="row.tracking" class="action-link is-pushed-mobile">{{
-        row.tracking
-      }}</a>
+      <a v-if="row.tracking" class="action-link is-pushed-mobile">{{ row.tracking }}</a>
       <span v-else class="light-text is-pushed-mobile">N/A</span>
     </div>
     <div class="flex-table-cell cell-end" data-th="Actions">

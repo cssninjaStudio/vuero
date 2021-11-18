@@ -98,9 +98,7 @@ const optionsSingle = [
             <h3 class="dark-inverted">{{ item.fullName }}</h3>
             <p>{{ item.position }}</p>
             <div class="button-wrap has-text-centered">
-              <VButton v-if="item.added" color="primary" raised>
-                Add To Project
-              </VButton>
+              <VButton v-if="item.added" color="primary" raised> Add To Project </VButton>
               <VButton v-else dark-outlined raised>Add To Team</VButton>
               <div>
                 <a class="dark-inverted-hover">View Profile</a>
@@ -114,7 +112,7 @@ const optionsSingle = [
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/abstracts/mixins';
 
 .user-grid-v4 {
   .columns {
@@ -129,7 +127,7 @@ const optionsSingle = [
 
   .grid-item {
     position: relative;
-    @include vuero-s-card();
+    @include vuero-s-card;
 
     text-align: center;
 
@@ -137,7 +135,7 @@ const optionsSingle = [
       .button-wrap {
         > div {
           a {
-            opacity: 1;
+            opacity: 100%;
             pointer-events: all;
           }
         }
@@ -153,7 +151,7 @@ const optionsSingle = [
 
     > .v-avatar {
       display: block;
-      margin: 0 auto 4px auto;
+      margin: 0 auto 4px;
     }
 
     h3 {
@@ -168,7 +166,7 @@ const optionsSingle = [
     }
 
     .button-wrap {
-      margin: 20px 0 0 0;
+      margin: 20px 0 0;
 
       .v-button {
         width: 100%;
@@ -177,10 +175,10 @@ const optionsSingle = [
       }
 
       > div {
-        margin: 6px 0 0 0;
+        margin: 6px 0 0;
 
         a {
-          opacity: 0;
+          opacity: 0%;
           pointer-events: none;
           color: var(--light-text);
           font-weight: 500;
@@ -199,7 +197,7 @@ const optionsSingle = [
 .is-dark {
   .user-grid-v4 {
     .grid-item {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
     }
   }
 }

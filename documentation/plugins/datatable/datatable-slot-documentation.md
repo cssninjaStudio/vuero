@@ -44,10 +44,7 @@ const data = [
         <td>{{ row[2] }}</td>
         <td>{{ row[3] }}</td>
         <td>
-          <VTag
-            :color="row[4] === '100%' ? 'primary' : 'light'"
-            :label="row[4]"
-          />
+          <VTag :color="row[4] === '100%' ? 'primary' : 'light'" :label="row[4]" />
         </td>
       </tr>
     </tbody>

@@ -121,7 +121,7 @@
           .navbar-menu {
             .navbar-item {
               &.is-theme-toggle {
-                opacity: 0;
+                opacity: 0%;
                 pointer-events: none;
                 transition: all 0.3s;
               }
@@ -176,7 +176,7 @@
       .navbar-menu {
         .navbar-item {
           &.is-theme-toggle {
-            opacity: 1;
+            opacity: 100%;
             pointer-events: all;
           }
 
@@ -193,34 +193,24 @@
               top: -4px;
               left: 2px;
               width: 50%;
-              -webkit-transform-origin: right center;
-              -ms-transform-origin: right center;
               transform-origin: right center;
               height: 3px;
               border-radius: 50px;
               background: var(--primary);
-              -webkit-transform: scale(0, 1);
-              -ms-transform: scale(0, 1);
               transform: scale(0, 1);
-              -webkit-transition: -webkit-transform 0.4s
-                cubic-bezier(0.4, 0, 0.2, 1);
               transition: -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
               transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
               transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
                 -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             }
 
-            //Hover state
+            // Hover state
             &:hover,
             &.is-active {
               color: var(--dark-text);
 
               &::before {
-                -webkit-transform-origin: left center;
-                -ms-transform-origin: left center;
                 transform-origin: left center;
-                -webkit-transform: scale(1, 1);
-                -ms-transform: scale(1, 1);
                 transform: scale(1, 1);
               }
             }
@@ -243,7 +233,7 @@
 
             input {
               position: absolute;
-              opacity: 0;
+              opacity: 0%;
               cursor: pointer;
 
               &:checked ~ .toggler {
@@ -255,11 +245,11 @@
                 }
 
                 .dark {
-                  opacity: 1 !important;
+                  opacity: 100% !important;
                 }
 
                 .light {
-                  opacity: 0 !important;
+                  opacity: 0% !important;
                 }
               }
             }
@@ -292,21 +282,21 @@
                   color: var(--white) !important;
                   height: 14px !important;
                   width: 14px !important;
-                  opacity: 1 !important;
+                  opacity: 100% !important;
                 }
               }
 
               .light {
                 background: var(--primary);
                 border-color: var(--primary);
-                opacity: 1;
+                opacity: 100%;
                 z-index: 1;
               }
 
               .dark {
                 background: var(--primary);
                 border-color: var(--primary);
-                opacity: 0;
+                opacity: 0%;
                 z-index: 0;
 
                 svg {
@@ -404,6 +394,7 @@
 ========================================================================== */
 
 .landing-page-wrapper {
+  /* stylelint-disable-next-line keyframes-name-pattern */
   @keyframes gradientBG {
     0% {
       background-position: 0% 50%;
@@ -418,7 +409,7 @@
     }
   }
 
-  //Canvas
+  // Canvas
   #demo-canvas {
     position: absolute;
     bottom: 20%;
@@ -438,7 +429,7 @@
 
           .header-inner {
             .states {
-              opacity: 1;
+              opacity: 100%;
               transform: translateY(-50%) scale(1);
             }
           }
@@ -447,6 +438,7 @@
         .hero-body {
           .hero-mockup {
             transform: translateY(0);
+
             // opacity: 1;
             pointer-events: all;
           }
@@ -458,7 +450,7 @@
         z-index: 1;
 
         .switch-wrapper {
-          margin: 80px auto 0 auto;
+          margin: 80px auto 0;
         }
 
         .title {
@@ -488,6 +480,7 @@
           max-width: 740px;
           margin: 0 auto;
           transform: translateY(10px);
+
           // opacity: 0;
           border-radius: 12px;
           box-shadow: var(--light-box-shadow);
@@ -578,7 +571,7 @@
   align-items: center;
   max-width: 540px;
   margin: 0 auto;
-  padding: 20px 0 20px 0;
+  padding: 20px 0;
 
   .stack {
     height: 54px;
@@ -619,7 +612,7 @@
   }
 
   .flex-card {
-    @include vuero-l-card();
+    @include vuero-l-card;
 
     padding: 30px;
     display: flex;
@@ -649,7 +642,7 @@
         display: block;
         width: 100%;
         max-width: 64px;
-        margin: 0 auto 6px auto;
+        margin: 0 auto 6px;
       }
 
       h3 {
@@ -672,7 +665,7 @@
 .is-dark {
   .boxed-features {
     .flex-card {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
     }
   }
 }
@@ -926,14 +919,14 @@
     }
 
     .demo-title {
-      opacity: 1;
+      opacity: 100%;
       transform: translateY(0);
       transition-delay: 0 !important;
     }
 
     .demo-link {
       color: var(--white);
-      opacity: 1;
+      opacity: 100%;
       transform: translateY(0);
       transition-delay: 0 !important;
     }
@@ -1008,7 +1001,7 @@
     font-family: var(--font);
     font-size: 1.5rem;
     font-weight: 600;
-    opacity: 0;
+    opacity: 0%;
     margin-bottom: 12px;
     padding-bottom: 12px;
     border-bottom: 1px solid var(--primary-light-20);
@@ -1031,7 +1024,7 @@
   }
 
   .demo-link {
-    opacity: 0;
+    opacity: 0%;
     transform: translateY(20px);
     transition: all 0.3s;
     transition-delay: 0.2s;
@@ -1045,13 +1038,13 @@
       i {
         position: relative;
         top: 1px;
-        opacity: 0;
+        opacity: 0%;
         transform: translateX(0);
         transition: all 0.3s ease-out;
       }
 
       &:hover i {
-        opacity: 1;
+        opacity: 100%;
         transform: translateX(5px);
       }
     }
@@ -1104,7 +1097,7 @@
     .component {
       img {
         filter: grayscale(0);
-        opacity: 1;
+        opacity: 100%;
       }
     }
 
@@ -1117,7 +1110,7 @@
     img {
       display: block;
       filter: grayscale(1);
-      opacity: 0.6;
+      opacity: 60%;
       max-height: 80px;
       transition: all 0.3s;
     }
@@ -1329,7 +1322,7 @@
   .footer-copyright {
     font-family: var(--font);
     color: var(--light-text);
-    padding: 4rem 0 2rem 0;
+    padding: 4rem 0 2rem;
 
     a {
       color: var(--light-text);
@@ -1462,17 +1455,14 @@
   $toggleWidth: 125px;
   $borderWidth: 5px;
   $toggleBtnRadius: $toggleHeight - 14px;
-
   $bgColor--night: #3c4145;
   $borderColor--night: #1c1c1c;
   $toggleBtn-bgColor--night: var(--white);
   $toggleBtn-borderColor--night: #e3e3c7;
-
   $bgColor--day: #cdcdfa; // lighten(#797bf2, 18%);
-  $borderColor--day: #babbf8; //lighten(#797bf2, 14%);
+  $borderColor--day: #babbf8; // lighten(#797bf2, 14%);
   $toggleBtn-bgColor--day: #ffdf6d;
   $toggleBtn-borderColor--day: #e1c348;
-
   $cloud-borderColor: #d3d3d3;
   $cloud-bgColor: var(--white);
 
@@ -1484,7 +1474,7 @@
       width: $toggleWidth;
       border-radius: $toggleHeight;
 
-      //toggle button
+      // toggle button
       &::before {
         position: absolute;
         top: 2px;
@@ -1501,7 +1491,7 @@
       border: $borderWidth solid $borderColor--night;
       background-color: $bgColor--night;
 
-      //toggle button
+      // toggle button
       &::before {
         background-color: $toggleBtn-bgColor--night;
         border: $borderWidth solid $toggleBtn-borderColor--night;
@@ -1514,41 +1504,40 @@
         z-index: 10;
         width: $toggleBtnRadius / 5;
         height: $toggleBtnRadius / 5;
-        opacity: 0;
+        opacity: 0%;
         background-color: $cloud-bgColor;
         border-radius: var(--radius-rounded);
 
-        //crazy ass box-shadow to make the cloud
-        box-shadow: $cloud-bgColor 0 0, $cloud-bgColor 3px 0,
-          $cloud-bgColor 6px 0, $cloud-bgColor 9px 0, $cloud-bgColor 11px 0,
-          $cloud-bgColor 14px 0, $cloud-bgColor 16px 0,
-          $cloud-bgColor 21px -1px 0 1px, $cloud-bgColor 16px -7px 0 -2px,
-          $cloud-bgColor 7px -7px 0 1px, $cloud-borderColor 0 0 0 4px,
-          $cloud-borderColor 6px 0 0 4px, $cloud-borderColor 11px 0 0 4px,
-          $cloud-borderColor 16px 0 0 4px, $cloud-borderColor 21px -1px 0 5px,
-          $cloud-borderColor 16px -7px 0 1px, $cloud-borderColor 7px -7px 0 5px;
+        // crazy ass box-shadow to make the cloud
+        box-shadow: $cloud-bgColor 0 0, $cloud-bgColor 3px 0, $cloud-bgColor 6px 0,
+          $cloud-bgColor 9px 0, $cloud-bgColor 11px 0, $cloud-bgColor 14px 0,
+          $cloud-bgColor 16px 0, $cloud-bgColor 21px -1px 0 1px,
+          $cloud-bgColor 16px -7px 0 -2px, $cloud-bgColor 7px -7px 0 1px,
+          $cloud-borderColor 0 0 0 4px, $cloud-borderColor 6px 0 0 4px,
+          $cloud-borderColor 11px 0 0 4px, $cloud-borderColor 16px 0 0 4px,
+          $cloud-borderColor 21px -1px 0 5px, $cloud-borderColor 16px -7px 0 1px,
+          $cloud-borderColor 7px -7px 0 5px;
         transition: opacity 100ms ease-in;
       }
     }
 
     @keyframes starry_star {
       50% {
-        background-color: rgba(255, 255, 255, 0.1);
+        background-color: rgb(255 255 255 / 10%);
         box-shadow: var(--white) 30px -3px 0 0, var(--white) 12px 10px 0 -1px,
-          rgba(255, 255, 255, 0.1) 38px 18px 0 1px, var(--white) 32px 34px 0 0,
-          rgba(255, 255, 255, 0.1) 20px 24px 0 -1.5px,
-          var(--white) 5px 38px 0 1px;
+          rgb(255 255 255 / 10%) 38px 18px 0 1px, var(--white) 32px 34px 0 0,
+          rgb(255 255 255 / 10%) 20px 24px 0 -1.5px, var(--white) 5px 38px 0 1px;
       }
     }
 
     @keyframes bounceIn {
       0% {
-        opacity: 0;
+        opacity: 0%;
         transform: scale(0.3);
       }
 
       50% {
-        opacity: 100;
+        opacity: 10000%;
         transform: scale(1.1);
       }
 
@@ -1561,12 +1550,12 @@
       }
 
       100% {
-        opacity: 100;
+        opacity: 10000%;
         transform: scale(1);
       }
     }
 
-    //stars
+    // stars
     .night-toggle--feature {
       display: block;
       position: absolute;
@@ -1577,10 +1566,10 @@
       height: 4px;
       border-radius: var(--radius-rounded);
       background-color: var(--white);
-      box-shadow: rgba(255, 255, 255, 0.1) 30px -3px 0 0,
-        rgba(255, 255, 255, 0.1) 12px 10px 0 -1px, var(--white) 38px 18px 0 1px,
-        rgba(255, 255, 255, 0.1) 32px 34px 0 0, var(--white) 20px 24px 0 -1.5px,
-        rgba(255, 255, 255, 0.1) 5px 38px 0 1px;
+      box-shadow: rgb(255 255 255 / 10%) 30px -3px 0 0,
+        rgb(255 255 255 / 10%) 12px 10px 0 -1px, var(--white) 38px 18px 0 1px,
+        rgb(255 255 255 / 10%) 32px 34px 0 0, var(--white) 20px 24px 0 -1.5px,
+        rgb(255 255 255 / 10%) 5px 38px 0 1px;
       animation: starry_star 5s ease-in-out infinite;
 
       &::before {
@@ -1598,7 +1587,7 @@
       }
     }
 
-    //what happens once checkbox is checked
+    // what happens once checkbox is checked
     .night-toggle--checkbox:checked {
       & + .night-toggle--btn {
         background-color: $bgColor--day;
@@ -1611,7 +1600,7 @@
         }
 
         &::after {
-          opacity: 100;
+          opacity: 10000%;
           animation-name: bounceIn;
           animation-duration: 0.6s;
           animation-delay: 0.1s;
@@ -1620,13 +1609,11 @@
         }
 
         > .night-toggle--feature {
-          opacity: 0;
-          box-shadow: rgba(255, 255, 255, 0.1) 30px -3px 0 -4px,
-            rgba(255, 255, 255, 0.1) 12px 10px 0 -5px,
-            var(--white) 38px 18px 0 -3px,
-            rgba(255, 255, 255, 0.1) 32px 34px 0 -4px,
-            var(--white) 20px 24px 0 -5.5px,
-            rgba(255, 255, 255, 0.1) 5px 38px 0 -3px;
+          opacity: 0%;
+          box-shadow: rgb(255 255 255 / 10%) 30px -3px 0 -4px,
+            rgb(255 255 255 / 10%) 12px 10px 0 -5px, var(--white) 38px 18px 0 -3px,
+            rgb(255 255 255 / 10%) 32px 34px 0 -4px, var(--white) 20px 24px 0 -5.5px,
+            rgb(255 255 255 / 10%) 5px 38px 0 -3px;
           animation: none;
 
           &::before {
@@ -1678,7 +1665,7 @@
         font-family: var(--font);
         font-weight: 600;
         font-size: 1rem;
-        color: darken(#8edfcf, 18%);
+        color: var(--light-green-dark-18);
         margin-left: 22px;
         transition: color 0.3s;
       }
@@ -1714,6 +1701,7 @@
         .navbar-menu {
           top: 73px !important;
         }
+
         .navbar-menu {
           .navbar-item {
             &.is-theme-toggle {

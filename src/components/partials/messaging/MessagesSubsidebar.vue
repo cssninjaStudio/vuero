@@ -29,10 +29,7 @@ const props = withDefaults(
         @click="toggleSidebar('messages')"
       >
         <span class="menu-toggle has-chevron">
-          <span
-            :class="[activeSidebar !== 'none' && 'active']"
-            class="icon-box-toggle"
-          >
+          <span :class="[activeSidebar !== 'none' && 'active']" class="icon-box-toggle">
             <span class="rotate">
               <i aria-hidden="true" class="icon-line-top"></i>
               <i aria-hidden="true" class="icon-line-center"></i>
@@ -66,9 +63,7 @@ const props = withDefaults(
                 class="is-user"
                 :src="conversation.avatar"
                 alt=""
-                @error.once="
-                  (event) => useViaPlaceholderError(event, '150x150')
-                "
+                @error.once="(event) => useViaPlaceholderError(event, '150x150')"
               />
             </div>
             <div class="recipient-meta">
@@ -83,5 +78,5 @@ const props = withDefaults(
 </template>
 
 <style lang="scss">
-@import '../../../scss/layout/_sidebar-panel.scss';
+@import '../../../scss/layout/sidebar-panel';
 </style>

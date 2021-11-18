@@ -41,11 +41,7 @@ const isScrolling = computed(() => {
         <slot name="links">
           <div class="centered-links">
             <a href="/" class="centered-link centered-link-toggle">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:activity"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:activity"></i>
               <span>Homepage</span>
             </a>
           </div>
@@ -88,7 +84,7 @@ const isScrolling = computed(() => {
 </template>
 
 <style lang="scss">
-@import '../../../scss/abstracts/_mixins.scss';
-@import '../../../scss/layout/_navbar.scss';
-@import '../../../scss/layout/_responsive.scss';
+@import '../../../scss/abstracts/mixins';
+@import '../../../scss/layout/navbar';
+@import '../../../scss/layout/responsive';
 </style>

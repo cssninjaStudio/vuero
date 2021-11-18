@@ -36,9 +36,7 @@ const dropdown2 = useDropdown(dropdownElement2)
         @error.once="(event) => useViaPlaceholderError(event, '150x150')"
       />
       <div class="message-meta">
-        <span class="message-title">
-          Important project review next thursday
-        </span>
+        <span class="message-title"> Important project review next thursday </span>
         <span class="sender-email">&lt;melany@vuero.io&gt;</span>
       </div>
       <div class="attachments inbox-hidden-mobile">
@@ -52,39 +50,23 @@ const dropdown2 = useDropdown(dropdownElement2)
         <div>
           <button class="button" @click="dropdown1.toggle">
             <span class="icon is-small">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:more-vertical"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:more-vertical"></i>
             </span>
           </button>
         </div>
         <div class="dropdown-menu">
           <div class="dropdown-content">
             <a class="dropdown-item">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:bookmark"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:bookmark"></i>
               <span>Bookmark</span>
             </a>
             <a class="dropdown-item">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:share-2"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:share-2"></i>
               <span>Share message</span>
             </a>
             <hr class="dropdown-divider" />
             <a class="dropdown-item">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:thumbs-down"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:thumbs-down"></i>
               <span>Mark as spam</span>
             </a>
           </div>
@@ -114,11 +96,7 @@ const dropdown2 = useDropdown(dropdownElement2)
               ></i>
             </a>
             <a class="inbox-action">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:file-text"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:file-text"></i>
             </a>
             <a class="inbox-action">
               <i aria-hidden="true" class="iconify" data-icon="feather:tag"></i>
@@ -131,11 +109,7 @@ const dropdown2 = useDropdown(dropdownElement2)
               ></i>
             </a>
             <a class="inbox-action">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:lock"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:lock"></i>
             </a>
           </div>
         </div>
@@ -143,11 +117,11 @@ const dropdown2 = useDropdown(dropdownElement2)
         <div class="mail-content content">
           <p>Hey man,</p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Haec igitur
-            Epicuri non probo, inquam. Nihil sane.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Haec igitur Epicuri
+            non probo, inquam. Nihil sane.
             <strong>Efficiens dici potest.</strong>
-            <em>Urgent tamen et nihil remittunt.</em> Ea possunt paria non esse.
-            Duo Reges: constructio interrete.
+            <em>Urgent tamen et nihil remittunt.</em> Ea possunt paria non esse. Duo
+            Reges: constructio interrete.
           </p>
           <ul>
             <li>
@@ -157,13 +131,12 @@ const dropdown2 = useDropdown(dropdownElement2)
             <li>Eiuro, inquit adridens, iniquum, hac quidem de re;</li>
           </ul>
           <p>
-            Tum Triarius: Posthac quidem, inquit, audacius. Quodsi ipsam
-            honestatem undique pertectam atque absolutam. Comprehensum, quod
-            cognitum non habet?
+            Tum Triarius: Posthac quidem, inquit, audacius. Quodsi ipsam honestatem
+            undique pertectam atque absolutam. Comprehensum, quod cognitum non habet?
           </p>
           <p>
-            <em>Nonne igitur tibi videntur, inquit, mala?</em> Poterat autem
-            inpune; Nunc omni virtuti vitium contrario nomine opponitur.
+            <em>Nonne igitur tibi videntur, inquit, mala?</em> Poterat autem inpune; Nunc
+            omni virtuti vitium contrario nomine opponitur.
           </p>
           <p>Sincerely,</p>
           <p>Melany Wallace - Cofounder</p>
@@ -174,21 +147,13 @@ const dropdown2 = useDropdown(dropdownElement2)
           <div class="attachment">
             <span>budget_draft.xlsx</span>
             <div class="download-icon">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:arrow-down"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:arrow-down"></i>
             </div>
           </div>
           <div class="attachment">
             <span>project-notes.docx</span>
             <div class="download-icon">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:arrow-down"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:arrow-down"></i>
             </div>
           </div>
         </div>
@@ -241,11 +206,7 @@ const dropdown2 = useDropdown(dropdownElement2)
                     <span>Spelling</span>
                   </a>
                   <a class="dropdown-item">
-                    <i
-                      aria-hidden="true"
-                      class="iconify"
-                      data-icon="feather:at-sign"
-                    ></i>
+                    <i aria-hidden="true" class="iconify" data-icon="feather:at-sign"></i>
                     <span>Mention</span>
                   </a>
                 </div>

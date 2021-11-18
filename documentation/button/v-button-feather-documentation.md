@@ -12,9 +12,7 @@ Please refer to markup for detailed examples.
 <template>
   <VButtons>
     <VButton color="info" icon="feather:twitter" elevated> Tweet Now </VButton>
-    <VButton color="danger" icon="feather:gitlab" raised rounded>
-      Commit Code
-    </VButton>
+    <VButton color="danger" icon="feather:gitlab" raised rounded> Commit Code </VButton>
   </VButtons>
 </template>
 ```

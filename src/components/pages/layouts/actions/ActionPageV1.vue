@@ -44,10 +44,9 @@ const accept = async () => {
           <div class="sender-message is-dark-card-bordered is-dark-bg-4">
             <h4 class="dark-inverted">Message from Jason</h4>
             <p>
-              Hey Erik, It would be really cool if you could give us a hand on
-              this project. There are a lot of tasks popping out every day and I
-              feel the team is getting a bit overwhelmed. We'd love to have you
-              board.
+              Hey Erik, It would be really cool if you could give us a hand on this
+              project. There are a lot of tasks popping out every day and I feel the team
+              is getting a bit overwhelmed. We'd love to have you board.
             </p>
           </div>
           <div class="people-wrap">
@@ -79,12 +78,7 @@ const accept = async () => {
           </div>
           <div class="buttons">
             <VButton dark-outlined> Decline </VButton>
-            <VButton
-              color="primary"
-              :loading="isLoading"
-              raised
-              @click="accept"
-            >
+            <VButton color="primary" :loading="isLoading" raised @click="accept">
               Accept
             </VButton>
           </div>
@@ -95,6 +89,6 @@ const accept = async () => {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
-@import '../../../../scss/pages/generic/_subpages.scss';
+@import '../../../../scss/abstracts/mixins';
+@import '../../../../scss/pages/generic/subpages';
 </style>

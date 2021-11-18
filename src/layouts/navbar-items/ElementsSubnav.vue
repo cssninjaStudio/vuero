@@ -82,9 +82,7 @@ const activeTab = ref<TabId>('interaction')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink
-                      :to="{ name: 'elements-icons-line-icons-regular' }"
-                    >
+                    <RouterLink :to="{ name: 'elements-icons-line-icons-regular' }">
                       <span>Line Icons Regular</span>
                       <i
                         aria-hidden="true"
@@ -431,9 +429,7 @@ const activeTab = ref<TabId>('interaction')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink
-                      :to="{ name: 'elements-addons-vueform-multiselect' }"
-                    >
+                    <RouterLink :to="{ name: 'elements-addons-vueform-multiselect' }">
                       <span>@vueform/multiselect</span>
                       <i
                         aria-hidden="true"
@@ -443,9 +439,7 @@ const activeTab = ref<TabId>('interaction')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink
-                      :to="{ name: 'elements-addons-vueform-slider' }"
-                    >
+                    <RouterLink :to="{ name: 'elements-addons-vueform-slider' }">
                       <span>@vueform/slider</span>
                       <i
                         aria-hidden="true"
@@ -475,7 +469,7 @@ const activeTab = ref<TabId>('interaction')
 </template>
 
 <style lang="scss">
-@import '../../scss/abstracts/_mixins.scss';
-@import '../../scss/layout/_navbar.scss';
-@import '../../scss/layout/_responsive.scss';
+@import '../../scss/abstracts/mixins';
+@import '../../scss/layout/navbar';
+@import '../../scss/layout/responsive';
 </style>

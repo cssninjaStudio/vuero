@@ -34,9 +34,7 @@ const displayCode = ref(false)
       </a>
     </div>
     <div
-      v-if="
-        !props.frontmatter.disable_code || !props.frontmatter.disable_example
-      "
+      v-if="!props.frontmatter.disable_code || !props.frontmatter.disable_example"
       class="card-inner"
     >
       <div v-if="!props.frontmatter.disable_code" class="demo-example">
@@ -59,7 +57,7 @@ const displayCode = ref(false)
 </template>
 
 <style lang="scss" scoped>
-@import '../../../scss/abstracts/_mixins.scss';
+@import '../../../scss/abstracts/mixins';
 
 .demo-code-wrapper {
   display: flex;
@@ -70,8 +68,9 @@ const displayCode = ref(false)
   .demo-code {
     flex-grow: 1;
   }
+
   .demo-state {
-    //flex-grow: 1;
+    // flex-grow: 1;
     position: relative;
     margin-bottom: 1.5rem;
     max-width: 100%;
@@ -98,7 +97,7 @@ const displayCode = ref(false)
   }
 }
 
-//Adjustments
+// Adjustments
 .demo-example {
   > .v-avatar {
     margin: 0 0.15rem;

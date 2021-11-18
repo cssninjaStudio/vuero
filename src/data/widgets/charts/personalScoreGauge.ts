@@ -43,7 +43,7 @@ export const personalScoreGaugeOptions = ref({
   },
 })
 
-//For demo purpose
+// For demo purpose
 export const onPersonalScoreGaugeReady = (billboard: Chart) => {
   setTimeout(function () {
     billboard.load({

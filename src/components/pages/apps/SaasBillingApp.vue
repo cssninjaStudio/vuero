@@ -69,11 +69,7 @@ const randomCard = () => {
                   <span>{{ plan.slogan }}</span>
                 </div>
                 <div class="checkmark">
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:check"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                 </div>
               </div>
             </div>
@@ -85,11 +81,7 @@ const randomCard = () => {
           <div v-if="selectedPlan" class="plan-details-inner">
             <div class="plan-description">
               <div class="left">
-                <img
-                  class="light-image"
-                  :src="selectedPlan.logo.light"
-                  alt=""
-                />
+                <img class="light-image" :src="selectedPlan.logo.light" alt="" />
                 <img class="dark-image" :src="selectedPlan.logo.dark" alt="" />
               </div>
               <div class="right">
@@ -183,11 +175,7 @@ const randomCard = () => {
             </tippy>
 
             <button class="add-seat">
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:plus"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:plus"></i>
             </button>
           </div>
         </div>
@@ -219,12 +207,7 @@ const randomCard = () => {
             <VField>
               <VControl>
                 <label class="radio">
-                  <input
-                    type="radio"
-                    name="billing_radio"
-                    value="monthly"
-                    checked
-                  />
+                  <input type="radio" name="billing_radio" value="monthly" checked />
                   <span></span>
                   Monthly
                 </label>
@@ -257,11 +240,7 @@ const randomCard = () => {
             @flip="isCardFlipped = !isCardFlipped"
           >
             <!-- eslint-disable vue/no-v-html -->
-            <div
-              v-if="creditcardLogo"
-              id="ccsingle"
-              v-html="creditcardLogo"
-            ></div>
+            <div v-if="creditcardLogo" id="ccsingle" v-html="creditcardLogo"></div>
             <!-- eslint-enable vue/no-v-html -->
           </VCreditCard>
 
@@ -356,12 +335,11 @@ const randomCard = () => {
 </template>
 
 <style lang="scss">
-@import '../../../scss/abstracts/_mixins.scss';
+@import '../../../scss/abstracts/mixins';
 
 /* ==========================================================================
 1. SaaS Billing
 ========================================================================== */
-
 .saas-billing-wrapper {
   max-width: 980px;
   margin: 0 auto;
@@ -404,7 +382,7 @@ const randomCard = () => {
             left: 0;
             height: 100%;
             width: 100%;
-            opacity: 0;
+            opacity: 0%;
             cursor: pointer;
             z-index: 1;
 
@@ -414,7 +392,7 @@ const randomCard = () => {
 
               img {
                 filter: grayscale(0);
-                opacity: 1;
+                opacity: 100%;
               }
 
               .checkmark {
@@ -424,7 +402,7 @@ const randomCard = () => {
           }
 
           .plan-inner {
-            @include vuero-s-card();
+            @include vuero-s-card;
 
             width: 100%;
             flex: 0;
@@ -438,7 +416,7 @@ const randomCard = () => {
               width: 32px;
               min-width: 32px;
               filter: grayscale(1);
-              opacity: 0.6;
+              opacity: 60%;
               pointer-events: none;
               transition: all 0.3s;
             }
@@ -525,7 +503,7 @@ const randomCard = () => {
               flex-grow: 2;
 
               .plan-pricing {
-                padding: 5px 0 10px 0;
+                padding: 5px 0 10px;
                 font-family: var(--font);
                 line-height: 1.3;
 
@@ -577,7 +555,7 @@ const randomCard = () => {
       width: 50%;
 
       .option-block {
-        @include vuero-s-card();
+        @include vuero-s-card;
 
         margin-bottom: 20px;
 
@@ -680,7 +658,7 @@ const randomCard = () => {
         }
 
         .form-container {
-          padding: 30px 0 20px 0;
+          padding: 30px 0 20px;
           max-width: 330px;
           margin: 0 auto;
           color: #707070;
@@ -745,7 +723,7 @@ const randomCard = () => {
             }
 
             .plan-inner {
-              @include vuero-card--dark();
+              @include vuero-card--dark;
 
               .meta span {
                 &:first-child {
@@ -794,7 +772,7 @@ const randomCard = () => {
     .billing-options-wrapper {
       .left {
         .option-block {
-          @include vuero-card--dark();
+          @include vuero-card--dark;
 
           .block-header {
             h3 {

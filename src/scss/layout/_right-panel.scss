@@ -20,7 +20,7 @@
 .right-panel-wrapper {
   &.is-active {
     .panel-overlay {
-      opacity: 0.8;
+      opacity: 80%;
       pointer-events: all;
     }
 
@@ -50,7 +50,7 @@
     width: 100%;
     height: 100%;
     background-color: var(--dark-sidebar);
-    opacity: 0;
+    opacity: 0%;
     pointer-events: none;
     z-index: 101;
     transition: all 0.3s;
@@ -165,7 +165,7 @@
         padding: 30px 0;
 
         .language-box {
-          margin: 8px 8px 16px 8px;
+          margin: 8px 8px 16px;
           width: calc(33.3% - 16px);
           display: flex;
           justify-content: center;
@@ -180,7 +180,7 @@
               left: 0;
               height: 100%;
               width: 100%;
-              opacity: 0;
+              opacity: 0%;
               cursor: pointer;
               z-index: 3;
 
@@ -302,7 +302,7 @@
         height: calc(100% - 55px);
 
         .team-card {
-          @include vuero-s-card();
+          @include vuero-s-card;
 
           display: flex !important;
           align-items: center;
@@ -363,7 +363,7 @@
         }
 
         .project-card {
-          @include vuero-s-card();
+          @include vuero-s-card;
 
           padding: 16px !important;
           margin-bottom: 16px;
@@ -547,7 +547,7 @@
       .right-panel-body {
         .team-card,
         .project-card {
-          @include vuero-card--dark();
+          @include vuero-card--dark;
 
           background: var(--dark-sidebar-light-2) !important;
           border-color: var(--dark-sidebar-light-8) !important;

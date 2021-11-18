@@ -56,9 +56,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
         <div class="search-type">
           <div class="alert">
             <div class="alert-title">Create Job Alert</div>
-            <div class="alert-subtitle">
-              Create a job alert now and never miss a job
-            </div>
+            <div class="alert-subtitle">Create a job alert now and never miss a job</div>
             <V-Field>
               <V-Control icon="feather:briefcase">
                 <input type="text" class="input" placeholder="Keywords" />
@@ -326,9 +324,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
-
-:root {
+@import '../../../../scss/abstracts/mixins': root {
   --header-bg-color: #fff;
   --search-border-color: #efefef;
   --subtitle-color: #83838e;
@@ -411,6 +407,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
         border: none;
         outline: none;
       }
+
       svg {
         margin-right: 0.5rem;
         width: 18px;
@@ -557,7 +554,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
     }
 
     .job-card {
-      @include vuero-l-card();
+      @include vuero-l-card;
 
       cursor: pointer;
       transition: 0.2s;
@@ -609,12 +606,12 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
 .is-dark {
   .jobs-dashboard {
     .job-card {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
     }
 
     .main-container {
       .alert {
-        @include vuero-card--dark();
+        @include vuero-card--dark;
       }
 
       .job-time {

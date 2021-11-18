@@ -42,9 +42,7 @@ const emit = defineEmits(['toggleMobileConversation'])
         </div>
         <div class="chat-msg-content">
           <div class="chat-msg-text">Do you have a moment?</div>
-          <div class="chat-msg-text">
-            I need some help on something Iam working on.
-          </div>
+          <div class="chat-msg-text">I need some help on something Iam working on.</div>
         </div>
       </div>
       <div class="chat-msg owner">

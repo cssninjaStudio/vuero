@@ -21,11 +21,7 @@ import {
             <h3 class="dark-inverted">My Cards</h3>
             <button class="button is-circle is-dark-outlined">
               <span class="icon is-small">
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  data-icon="feather:plus"
-                ></i>
+                <i aria-hidden="true" class="iconify" data-icon="feather:plus"></i>
               </span>
             </button>
           </div>
@@ -118,12 +114,7 @@ import {
           </div>
 
           <div class="transactions">
-            <VBlock
-              title="Food Delivery"
-              subtitle="Oct 23, 2020 - 8:46pm"
-              center
-              lighter
-            >
+            <VBlock title="Food Delivery" subtitle="Oct 23, 2020 - 8:46pm" center lighter>
               <template #icon>
                 <VIconBox color="green" rounded>
                   <i aria-hidden="true" class="lnil lnil-service"></i>
@@ -150,12 +141,7 @@ import {
               </template>
             </VBlock>
 
-            <VBlock
-              title="Online Order"
-              subtitle="Oct 16, 2020 - 2:13pm"
-              center
-              lighter
-            >
+            <VBlock title="Online Order" subtitle="Oct 16, 2020 - 2:13pm" center lighter>
               <template #icon>
                 <VIconBox color="purple" rounded>
                   <i aria-hidden="true" class="lnil lnil-cart-alt"></i>
@@ -187,22 +173,14 @@ import {
                   >
                     <template #singlelabel="{ value }">
                       <div class="multiselect-single-label">
-                        <img
-                          class="select-label-icon"
-                          :src="value.icon"
-                          alt=""
-                        />
+                        <img class="select-label-icon" :src="value.icon" alt="" />
                         <span class="select-label-text">
                           {{ value.name }}
                         </span>
                       </div>
                     </template>
                     <template #option="{ option }">
-                      <img
-                        class="select-option-icon"
-                        :src="option.icon"
-                        alt=""
-                      />
+                      <img class="select-option-icon" :src="option.icon" alt="" />
                       <span class="select-label-text">
                         {{ option.name }}
                       </span>
@@ -212,8 +190,8 @@ import {
               </VField>
 
               <p class="context-text">
-                Select one of your bank accounts to transfer some funds. The
-                transfer cannot exceed 20% of your balance.
+                Select one of your bank accounts to transfer some funds. The transfer
+                cannot exceed 20% of your balance.
               </p>
               <div class="level is-mobile">
                 <div class="level-left"></div>
@@ -245,8 +223,8 @@ import {
                 <VProgress size="tiny" :value="65" />
               </div>
               <p class="context-text">
-                This is your Vuero customer level. Reach out higher levels to
-                unlock achievements, special gifts, and more.
+                This is your Vuero customer level. Reach out higher levels to unlock
+                achievements, special gifts, and more.
               </p>
               <div class="level is-mobile">
                 <div class="level-left"></div>
@@ -336,22 +314,14 @@ import {
                     >
                       <template #singlelabel="{ value }">
                         <div class="multiselect-single-label">
-                          <img
-                            class="select-label-icon"
-                            :src="value.icon"
-                            alt=""
-                          />
+                          <img class="select-label-icon" :src="value.icon" alt="" />
                           <span class="select-label-text">
                             {{ value.name }}
                           </span>
                         </div>
                       </template>
                       <template #option="{ option }">
-                        <img
-                          class="select-option-icon"
-                          :src="option.icon"
-                          alt=""
-                        />
+                        <img class="select-option-icon" :src="option.icon" alt="" />
                         <span class="select-label-text">
                           {{ option.name }}
                         </span>
@@ -373,18 +343,12 @@ import {
                       </span>
                     </div>
                     <div class="control is-expanded">
-                      <input
-                        class="input"
-                        type="text"
-                        placeholder="Amount of money"
-                      />
+                      <input class="input" type="text" placeholder="Amount of money" />
                     </div>
                   </div>
                 </div>
 
-                <p class="context-text">
-                  Funds will reach destination tomorrow.
-                </p>
+                <p class="context-text">Funds will reach destination tomorrow.</p>
 
                 <div class="submit-wrap">
                   <VButton color="primary" size="big" fullwidth raised bold>
@@ -425,7 +389,7 @@ import {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/abstracts/mixins';
 
 .banking-dashboard-v1 {
   .columns {
@@ -435,7 +399,7 @@ import {
   }
 
   .dashboard-card {
-    @include vuero-s-card();
+    @include vuero-s-card;
 
     &:not(:last-child) {
       margin-bottom: 1.5rem;
@@ -445,7 +409,7 @@ import {
       padding: 0;
 
       .title-wrap {
-        padding: 20px 20px 10px 20px;
+        padding: 20px 20px 10px;
         margin-bottom: 0;
       }
 
@@ -469,7 +433,7 @@ import {
             min-width: 120px;
             background: var(--fade-grey);
             border-radius: 10px;
-            padding: 6px 10px 8px 10px;
+            padding: 6px 10px 8px;
             overflow: hidden;
 
             &.is-theme-1 {
@@ -519,7 +483,7 @@ import {
               width: 46px;
               background: var(--white);
               border-radius: var(--radius-rounded);
-              opacity: 0.15;
+              opacity: 15%;
             }
           }
 
@@ -550,7 +514,7 @@ import {
         }
 
         .info-block-inner {
-          padding: 10px 20px 20px 20px;
+          padding: 10px 20px 20px;
 
           .title-wrap {
             display: flex;
@@ -742,7 +706,7 @@ import {
 .is-dark {
   .banking-dashboard-v1 {
     .dashboard-card {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
     }
   }
 }

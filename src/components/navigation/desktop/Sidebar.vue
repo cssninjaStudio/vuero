@@ -63,5 +63,5 @@ const themeClasses = computed(() => {
 </template>
 
 <style lang="scss">
-@import '../../../scss/layout/_sidebar.scss';
+@import '../../../scss/layout/sidebar';
 </style>

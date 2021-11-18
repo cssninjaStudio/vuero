@@ -19,9 +19,7 @@ You can also add the `.is-hoverable` class to highlight the rows on hover.
         <th scope="col">Last Name</th>
         <th scope="col">Position</th>
         <th scope="col" class="is-end">
-          <div class="dark-inverted is-flex is-justify-content-flex-end">
-            Actions
-          </div>
+          <div class="dark-inverted is-flex is-justify-content-flex-end">Actions</div>
         </th>
       </tr>
     </thead>

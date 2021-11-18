@@ -129,7 +129,7 @@ const filteredData = computed(() => {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/abstracts/mixins';
 
 .user-grid-v3 {
   .columns {
@@ -143,13 +143,13 @@ const filteredData = computed(() => {
   }
 
   .grid-item {
-    @include vuero-s-card();
+    @include vuero-s-card;
 
     text-align: center;
 
     > .v-avatar {
       display: block;
-      margin: 0 auto 4px auto;
+      margin: 0 auto 4px;
     }
 
     h3 {
@@ -301,7 +301,7 @@ const filteredData = computed(() => {
 .is-dark {
   .user-grid-v3 {
     .grid-item {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
 
       .icon-tabs-wrapper {
         .icon-tabs {

@@ -21,14 +21,11 @@
           />
           <h3>Configure Shop</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Recte
-            dicis; Ita enim vivunt quidam, ut eorum vita refellatur oratio. Sed
-            tament.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Recte dicis; Ita enim
+            vivunt quidam, ut eorum vita refellatur oratio. Sed tament.
           </p>
           <div class="button-wrap">
-            <VButton color="primary" outlined rounded raised>
-              Configure Shop
-            </VButton>
+            <VButton color="primary" outlined rounded raised> Configure Shop </VButton>
           </div>
         </div>
         <!--Card-->
@@ -45,14 +42,11 @@
           />
           <h3>Manage Products</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Recte
-            dicis; Ita enim vivunt quidam, ut eorum vita refellatur oratio. Sed
-            tament.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Recte dicis; Ita enim
+            vivunt quidam, ut eorum vita refellatur oratio. Sed tament.
           </p>
           <div class="button-wrap">
-            <VButton color="primary" outlined rounded raised>
-              Manage Products
-            </VButton>
+            <VButton color="primary" outlined rounded raised> Manage Products </VButton>
           </div>
         </div>
         <!--Card-->
@@ -69,14 +63,11 @@
           />
           <h3>Setup Payments</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Recte
-            dicis; Ita enim vivunt quidam, ut eorum vita refellatur oratio. Sed
-            tament.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Recte dicis; Ita enim
+            vivunt quidam, ut eorum vita refellatur oratio. Sed tament.
           </p>
           <div class="button-wrap">
-            <VButton color="primary" outlined rounded raised>
-              Setup Payments
-            </VButton>
+            <VButton color="primary" outlined rounded raised> Setup Payments </VButton>
           </div>
         </div>
       </div>
@@ -85,6 +76,6 @@
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
-@import '../../../../scss/pages/generic/_onboarding.scss';
+@import '../../../../scss/abstracts/mixins';
+@import '../../../../scss/pages/generic/onboarding';
 </style>

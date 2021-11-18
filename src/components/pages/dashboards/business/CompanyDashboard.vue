@@ -50,20 +50,14 @@ onMounted(async () => {
       </div>
       <div class="header-item is-dark-bordered-12">
         <div class="item-inner">
-          <i
-            aria-hidden="true"
-            class="lnil lnil-diamond-alt is-dark-primary"
-          ></i>
+          <i aria-hidden="true" class="lnil lnil-diamond-alt is-dark-primary"></i>
           <span class="dark-inverted">$1,835.41</span>
           <p>Daily Income</p>
         </div>
       </div>
       <div class="header-item is-dark-bordered-12">
         <div class="item-inner">
-          <i
-            aria-hidden="true"
-            class="lnil lnil-briefcase-alt is-dark-primary"
-          ></i>
+          <i aria-hidden="true" class="lnil lnil-briefcase-alt is-dark-primary"></i>
           <span class="dark-inverted">378</span>
           <p>Completed Projects</p>
         </div>
@@ -88,11 +82,7 @@ onMounted(async () => {
             <template #badge>
               <button class="button icon-button is-circle is-dark-outlined">
                 <span class="icon is-small">
-                  <i
-                    aria-hidden="true"
-                    class="iconify"
-                    data-icon="feather:plus"
-                  ></i>
+                  <i aria-hidden="true" class="iconify" data-icon="feather:plus"></i>
                 </span>
               </button>
             </template>
@@ -102,8 +92,8 @@ onMounted(async () => {
           <p>Online Courses</p>
           <div class="description">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fac
-              ista esse non inportuna.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fac ista esse
+              non inportuna.
             </p>
           </div>
           <div class="company-stats is-dark-bordered-12">
@@ -450,7 +440,7 @@ onMounted(async () => {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/abstracts/mixins';
 
 .company-dashboard {
   .company-header {
@@ -500,7 +490,7 @@ onMounted(async () => {
   }
 
   .dashboard-card {
-    @include vuero-s-card();
+    @include vuero-s-card;
 
     height: 100%;
 
@@ -510,7 +500,7 @@ onMounted(async () => {
 
       .v-avatar {
         display: block;
-        margin: 0 auto 10px auto;
+        margin: 0 auto 10px;
 
         .button {
           position: absolute;
@@ -532,7 +522,7 @@ onMounted(async () => {
       }
 
       .description {
-        padding: 10px 0 0 0;
+        padding: 10px 0 0;
       }
 
       .company-stats {
@@ -677,7 +667,7 @@ onMounted(async () => {
 .is-dark {
   .company-dashboard {
     .dashboard-card {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
     }
   }
 }

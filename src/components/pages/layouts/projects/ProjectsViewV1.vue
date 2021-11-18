@@ -8,14 +8,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
     <h3 class="section-heading">Recently viewed</h3>
 
-    <div
-      class="
-        columns
-        is-multiline
-        project-grid
-        is-flex-tablet-p is-half-tablet-p
-      "
-    >
+    <div class="columns is-multiline project-grid is-flex-tablet-p is-half-tablet-p">
       <div class="column is-one-fifth">
         <a class="project-grid-item">
           <img
@@ -260,6 +253,6 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
-@import '../../../../scss/pages/projects/_projects.scss';
+@import '../../../../scss/abstracts/mixins';
+@import '../../../../scss/pages/projects/projects';
 </style>

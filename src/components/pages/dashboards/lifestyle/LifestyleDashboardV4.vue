@@ -19,12 +19,10 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
               <div class="header-meta">
                 <h3>Hello, Erik.</h3>
                 <p>
-                  Have any ideas for a new article? If not, you should
-                  definitely check the feed for some inspiration.
+                  Have any ideas for a new article? If not, you should definitely check
+                  the feed for some inspiration.
                 </p>
-                <VButton light outlined icon="feather:plus">
-                  New Article
-                </VButton>
+                <VButton light outlined icon="feather:plus"> New Article </VButton>
               </div>
             </div>
           </div>
@@ -92,11 +90,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                 </div>
                 <!--Item-->
                 <div class="featured-authors-item">
-                  <VBlock
-                    title="Christie D."
-                    subtitle="Software Engineer"
-                    center
-                  >
+                  <VBlock title="Christie D." subtitle="Software Engineer" center>
                     <template #icon>
                       <VAvatar picture="/demo/avatars/38.jpg" squared />
                     </template>
@@ -122,42 +116,27 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
               <div class="updates-list">
                 <!--Update-->
                 <div class="update-item is-dark-bordered-12">
-                  <p>
-                    Lorem ipsum sit dolor amet is a dummy text used by
-                    typographers.
-                  </p>
+                  <p>Lorem ipsum sit dolor amet is a dummy text used by typographers.</p>
                   <span class="dark-inverted">Oct 23</span>
                 </div>
                 <!--Update-->
                 <div class="update-item is-dark-bordered-12">
-                  <p>
-                    Lorem ipsum sit dolor amet is a dummy text used by
-                    typographers.
-                  </p>
+                  <p>Lorem ipsum sit dolor amet is a dummy text used by typographers.</p>
                   <span class="dark-inverted">Oct 23</span>
                 </div>
                 <!--Update-->
                 <div class="update-item is-dark-bordered-12">
-                  <p>
-                    Lorem ipsum sit dolor amet is a dummy text used by
-                    typographers.
-                  </p>
+                  <p>Lorem ipsum sit dolor amet is a dummy text used by typographers.</p>
                   <span class="dark-inverted">Oct 23</span>
                 </div>
                 <!--Update-->
                 <div class="update-item is-dark-bordered-12">
-                  <p>
-                    Lorem ipsum sit dolor amet is a dummy text used by
-                    typographers.
-                  </p>
+                  <p>Lorem ipsum sit dolor amet is a dummy text used by typographers.</p>
                   <span class="dark-inverted">Oct 23</span>
                 </div>
                 <!--Update-->
                 <div class="update-item is-dark-bordered-12">
-                  <p>
-                    Lorem ipsum sit dolor amet is a dummy text used by
-                    typographers.
-                  </p>
+                  <p>Lorem ipsum sit dolor amet is a dummy text used by typographers.</p>
                   <span class="dark-inverted">Oct 23</span>
                 </div>
               </div>
@@ -190,9 +169,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                   <img
                     src="/demo/photos/38.jpg"
                     alt=""
-                    @error.once="
-                      (event) => useViaPlaceholderError(event, '800x600')
-                    "
+                    @error.once="(event) => useViaPlaceholderError(event, '800x600')"
                   />
                 </div>
                 <div class="featured-content">
@@ -212,9 +189,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                   <img
                     src="/demo/photos/37.jpg"
                     alt=""
-                    @error.once="
-                      (event) => useViaPlaceholderError(event, '800x600')
-                    "
+                    @error.once="(event) => useViaPlaceholderError(event, '800x600')"
                   />
                 </div>
                 <div class="featured-content">
@@ -237,7 +212,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/abstracts/mixins';
 
 .lifestyle-dashboard-v4 {
   .illustration-header-2 {
@@ -248,6 +223,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
     background: var(--primary);
     font-family: var(--font);
     box-shadow: var(--primary-box-shadow);
+
     .header-image {
       position: relative;
       height: 175px;
@@ -302,7 +278,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
     margin-right: -8px;
 
     .writing-stat {
-      @include vuero-l-card();
+      @include vuero-l-card;
 
       margin: 8px;
       width: calc(33.3% - 16px);
@@ -331,7 +307,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
   }
 
   .featured-authors {
-    @include vuero-l-card();
+    @include vuero-l-card;
 
     padding: 20px;
 
@@ -373,7 +349,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
   }
 
   .updates {
-    @include vuero-l-card();
+    @include vuero-l-card;
 
     padding: 20px;
     margin-top: 8px;
@@ -535,13 +511,13 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
     .writing-stats {
       .writing-stat {
-        @include vuero-card--dark();
+        @include vuero-card--dark;
       }
     }
 
     .updates,
     .featured-authors {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
     }
 
     .articles-feed {

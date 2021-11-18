@@ -18,13 +18,13 @@ Stat Widgets Styles
 ========================================================================== */
 
 .stat-widget {
-  @include vuero-l-card();
+  @include vuero-l-card;
 
   padding: 30px;
   font-family: var(--font);
 
   &.is-straight {
-    @include vuero-s-card();
+    @include vuero-s-card;
   }
 
   .widget-head {
@@ -275,7 +275,7 @@ Stat Widgets Styles
 
 .is-dark {
   .stat-widget {
-    @include vuero-card--dark();
+    @include vuero-card--dark;
 
     &.followers-stat-widget-v1 {
       .follow-block {

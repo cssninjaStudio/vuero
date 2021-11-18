@@ -11,28 +11,16 @@ import { popovers } from '/@src/data/users/userPopovers'
       <div class="right">
         <div class="controls">
           <a class="action">
-            <i
-              aria-hidden="true"
-              class="iconify"
-              data-icon="feather:printer"
-            ></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:printer"></i>
           </a>
           <a class="action">
-            <i
-              aria-hidden="true"
-              class="iconify"
-              data-icon="feather:download-cloud"
-            ></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:download-cloud"></i>
           </a>
           <a class="action">
             <i aria-hidden="true" class="iconify" data-icon="feather:mail"></i>
           </a>
           <a class="action">
-            <i
-              aria-hidden="true"
-              class="iconify"
-              data-icon="feather:arrow-left"
-            ></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:arrow-left"></i>
           </a>
         </div>
       </div>
@@ -74,8 +62,8 @@ import { popovers } from '/@src/data/users/userPopovers'
           <div class="end is-left">
             <h3>Description</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod
-              equidem non reprehendo.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quod equidem non
+              reprehendo.
             </p>
           </div>
         </div>
@@ -211,12 +199,11 @@ import { popovers } from '/@src/data/users/userPopovers'
 </template>
 
 <style lang="scss">
-@import '../../../scss/abstracts/_mixins.scss';
+@import '../../../scss/abstracts/mixins';
 
 /* ==========================================================================
 4. Invoice
 ========================================================================== */
-
 .invoice-wrapper {
   max-width: 740px;
   margin: 0 auto;
@@ -275,7 +262,7 @@ import { popovers } from '/@src/data/users/userPopovers'
 
   .invoice-body {
     .invoice-card {
-      @include vuero-s-card();
+      @include vuero-s-card;
 
       padding: 0;
 
@@ -430,7 +417,7 @@ import { popovers } from '/@src/data/users/userPopovers'
 
     .invoice-body {
       .invoice-card {
-        @include vuero-card--dark();
+        @include vuero-card--dark;
       }
     }
 
@@ -469,7 +456,7 @@ import { popovers } from '/@src/data/users/userPopovers'
         }
 
         .end {
-          margin: 16px auto 0 auto;
+          margin: 16px auto 0;
           text-align: center !important;
         }
       }

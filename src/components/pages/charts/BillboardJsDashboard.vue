@@ -19,10 +19,7 @@ import * as radarSimple from '/@src/data/dashboards/billboardjs-demo/radarSimple
   <div class="columns is-multiline">
     <div class="column is-6">
       <div class="s-card">
-        <VBillboardJS
-          :options="genericLine.options"
-          @ready="genericLine.onReady"
-        />
+        <VBillboardJS :options="genericLine.options" @ready="genericLine.onReady" />
       </div>
     </div>
     <div class="column is-6">
@@ -37,10 +34,7 @@ import * as radarSimple from '/@src/data/dashboards/billboardjs-demo/radarSimple
     </div>
     <div class="column is-6">
       <div class="s-card">
-        <VBillboardJS
-          :options="areaLineRange.options"
-          @ready="areaLineRange.onReady"
-        />
+        <VBillboardJS :options="areaLineRange.options" @ready="areaLineRange.onReady" />
       </div>
     </div>
     <div class="column is-6">
@@ -50,10 +44,7 @@ import * as radarSimple from '/@src/data/dashboards/billboardjs-demo/radarSimple
     </div>
     <div class="column is-6">
       <div class="s-card">
-        <VBillboardJS
-          :options="barStacked.options"
-          @ready="barStacked.onReady"
-        />
+        <VBillboardJS :options="barStacked.options" @ready="barStacked.onReady" />
       </div>
     </div>
     <div class="column is-6">
@@ -68,18 +59,12 @@ import * as radarSimple from '/@src/data/dashboards/billboardjs-demo/radarSimple
     </div>
     <div class="column is-6">
       <div class="s-card">
-        <VBillboardJS
-          :options="bubbleSimple.options"
-          @ready="bubbleSimple.onReady"
-        />
+        <VBillboardJS :options="bubbleSimple.options" @ready="bubbleSimple.onReady" />
       </div>
     </div>
     <div class="column is-6">
       <div class="s-card">
-        <VBillboardJS
-          :options="scatterSimple.options"
-          @ready="scatterSimple.onReady"
-        />
+        <VBillboardJS :options="scatterSimple.options" @ready="scatterSimple.onReady" />
       </div>
     </div>
     <div class="column is-6">
@@ -89,18 +74,12 @@ import * as radarSimple from '/@src/data/dashboards/billboardjs-demo/radarSimple
     </div>
     <div class="column is-6">
       <div class="s-card">
-        <VBillboardJS
-          :options="donutSimple.options"
-          @ready="donutSimple.onReady"
-        />
+        <VBillboardJS :options="donutSimple.options" @ready="donutSimple.onReady" />
       </div>
     </div>
     <div class="column is-6">
       <div class="s-card">
-        <VBillboardJS
-          :options="gaugeSimple.options"
-          @ready="gaugeSimple.onReady"
-        />
+        <VBillboardJS :options="gaugeSimple.options" @ready="gaugeSimple.onReady" />
       </div>
     </div>
     <div class="column is-6">

@@ -64,10 +64,7 @@ zh-CN:
 
 <template>
   <teleport to="body">
-    <div
-      :class="[open && 'is-active', size && `is-${size}`]"
-      class="modal v-modal"
-    >
+    <div :class="[open && 'is-active', size && `is-${size}`]" class="modal v-modal">
       <div
         class="modal-background v-modal-close"
         @click="() => noclose === false && emit('close')"

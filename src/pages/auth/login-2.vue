@@ -45,15 +45,7 @@ useHead({
 <template>
   <div class="auth-wrapper-inner columns is-gapless">
     <!-- Image section (hidden on mobile) -->
-    <div
-      class="
-        column
-        login-column
-        is-8
-        h-hidden-mobile h-hidden-tablet-p
-        hero-banner
-      "
-    >
+    <div class="column login-column is-8 h-hidden-mobile h-hidden-tablet-p hero-banner">
       <div class="hero login-hero is-fullheight is-app-grey">
         <div class="hero-body">
           <div class="columns">
@@ -82,11 +74,7 @@ useHead({
       <div class="hero is-fullheight is-white">
         <div class="hero-heading">
           <label class="dark-mode ml-auto">
-            <input
-              type="checkbox"
-              :checked="!isDark"
-              @change="toggleDarkModeHandler"
-            />
+            <input type="checkbox" :checked="!isDark" @change="toggleDarkModeHandler" />
             <span></span>
           </label>
           <div class="auth-logo">
@@ -137,11 +125,7 @@ useHead({
                       <!-- Switch -->
                       <VControl class="setting-item">
                         <label for="remember-me" class="form-switch is-primary">
-                          <input
-                            id="remember-me"
-                            type="checkbox"
-                            class="is-switch"
-                          />
+                          <input id="remember-me" type="checkbox" class="is-switch" />
                           <i aria-hidden="true"></i>
                         </label>
                         <div class="setting-meta">

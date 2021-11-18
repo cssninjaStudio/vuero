@@ -10,10 +10,7 @@ useHead({
   <MinimalLayout theme="light">
     <div class="landing-page-wrapper">
       <!-- Hero and Navbar -->
-      <div
-        id="Vuero-marketing"
-        class="hero marketing-hero is-left is-fullheight"
-      >
+      <div id="Vuero-marketing" class="hero marketing-hero is-left is-fullheight">
         <!-- Navbar partial -->
         <LandingNavigation />
 
@@ -63,17 +60,13 @@ useHead({
           <div class="container">
             <div class="columns is-vcentered">
               <div class="column is-5">
-                <h1 class="title is-1 is-bold">
-                  Easier development. Beautiful projects
-                </h1>
+                <h1 class="title is-1 is-bold">Easier development. Beautiful projects</h1>
                 <h3 class="subtitle is-4 pt-2 light-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Isto
-                  modo ne improbos quidem.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Isto modo ne
+                  improbos quidem.
                 </h3>
                 <div class="buttons">
-                  <VButton color="primary" bold rounded raised>
-                    Get Started
-                  </VButton>
+                  <VButton color="primary" bold rounded raised> Get Started </VButton>
                   <VButton color="primary" outlined bold rounded raised>
                     14-day Trial
                   </VButton>
@@ -128,7 +121,7 @@ useHead({
 </template>
 
 <style lang="scss">
-@import '../scss/abstracts/_mixins.scss';
-@import '../scss/pages/demo/_landing.scss';
-@import '../scss/pages/generic/_marketing.scss';
+@import '../scss/abstracts/mixins';
+@import '../scss/pages/demo/landing';
+@import '../scss/pages/generic/marketing';
 </style>

@@ -53,8 +53,8 @@ useHead({
           like-label="Save"
         >
           <span class="dark-inverted">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            nec iaculis mauris.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis
+            mauris.
           </span>
         </VCardSocial>
       </div>
@@ -68,8 +68,8 @@ useHead({
           :hashtags="['#bulmaio', '#css', '#responsive']"
         >
           <span class="dark-inverted">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            nec iaculis mauris.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis
+            mauris.
           </span>
         </VCardSocial>
       </div>
@@ -84,8 +84,8 @@ useHead({
         >
           <template #default>
             <span class="dark-inverted">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-              nec iaculis mauris.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
+              iaculis mauris.
             </span>
           </template>
         </VCardSocial>

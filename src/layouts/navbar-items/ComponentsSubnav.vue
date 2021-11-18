@@ -166,9 +166,7 @@ const activeTab = ref<TabId>('display')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink
-                      :to="{ name: 'components-plugins-billboard-js' }"
-                    >
+                    <RouterLink :to="{ name: 'components-plugins-billboard-js' }">
                       <span>VBillboardJS</span>
                       <i
                         aria-hidden="true"
@@ -178,9 +176,7 @@ const activeTab = ref<TabId>('display')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink
-                      :to="{ name: 'components-plugins-photos-swipe' }"
-                    >
+                    <RouterLink :to="{ name: 'components-plugins-photos-swipe' }">
                       <span>VPhotosSwipe</span>
                       <i
                         aria-hidden="true"
@@ -200,9 +196,7 @@ const activeTab = ref<TabId>('display')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink
-                      :to="{ name: 'components-plugins-simple-datatables' }"
-                    >
+                    <RouterLink :to="{ name: 'components-plugins-simple-datatables' }">
                       <span>VSimpleDatatables</span>
                       <i
                         aria-hidden="true"
@@ -216,32 +210,13 @@ const activeTab = ref<TabId>('display')
 
               <div class="column is-3">
                 <a href="https://cssninja.io" class="column-placeholder">
-                  <img
-                    class="light-image"
-                    src="/images/icons/misc/buoy.svg"
-                    alt=""
-                  />
-                  <img
-                    class="dark-image"
-                    src="/images/icons/misc/buoy-dark.svg"
-                    alt=""
-                  />
+                  <img class="light-image" src="/images/icons/misc/buoy.svg" alt="" />
+                  <img class="dark-image" src="/images/icons/misc/buoy-dark.svg" alt="" />
                   <h3>Support</h3>
                 </a>
-                <a
-                  href="https://docs.cssninja.io/vuero"
-                  class="column-placeholder"
-                >
-                  <img
-                    class="light-image"
-                    src="/images/icons/misc/docs.svg"
-                    alt=""
-                  />
-                  <img
-                    class="dark-image"
-                    src="/images/icons/misc/docs-dark.svg"
-                    alt=""
-                  />
+                <a href="https://docs.cssninja.io/vuero" class="column-placeholder">
+                  <img class="light-image" src="/images/icons/misc/docs.svg" alt="" />
+                  <img class="dark-image" src="/images/icons/misc/docs-dark.svg" alt="" />
                   <h3>Documentation</h3>
                 </a>
               </div>
@@ -432,9 +407,7 @@ const activeTab = ref<TabId>('display')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink
-                      :to="{ name: 'components-placeholder-section' }"
-                    >
+                    <RouterLink :to="{ name: 'components-placeholder-section' }">
                       <span>VPlaceholderSection</span>
                       <i
                         aria-hidden="true"
@@ -454,7 +427,7 @@ const activeTab = ref<TabId>('display')
 </template>
 
 <style lang="scss">
-@import '../../scss/abstracts/_mixins.scss';
-@import '../../scss/layout/_navbar.scss';
-@import '../../scss/layout/_responsive.scss';
+@import '../../scss/abstracts/mixins';
+@import '../../scss/layout/navbar';
+@import '../../scss/layout/responsive';
 </style>

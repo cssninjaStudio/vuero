@@ -1,12 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 
-export type VCheckboxColor =
-  | 'primary'
-  | 'info'
-  | 'success'
-  | 'warning'
-  | 'danger'
+export type VCheckboxColor = 'primary' | 'info' | 'success' | 'warning' | 'danger'
 export interface VCheckboxEmits {
   (e: 'update:modelValue', value: (string | number)[]): void
 }

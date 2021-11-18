@@ -68,12 +68,7 @@ const onSave = async () => {
             >
               Go Back
             </VButton>
-            <VButton
-              color="primary"
-              raised
-              :loading="isLoading"
-              @click="onSave"
-            >
+            <VButton color="primary" raised :loading="isLoading" @click="onSave">
               Save Changes
             </VButton>
           </div>
@@ -132,22 +127,14 @@ const onSave = async () => {
                       >
                         <template #singlelabel="{ value }">
                           <div class="multiselect-single-label">
-                            <img
-                              class="select-label-icon"
-                              :src="value.icon"
-                              alt=""
-                            />
+                            <img class="select-label-icon" :src="value.icon" alt="" />
                             <span class="select-label-text">
                               {{ value.name }}
                             </span>
                           </div>
                         </template>
                         <template #option="{ option }">
-                          <img
-                            class="select-option-icon"
-                            :src="option.icon"
-                            alt=""
-                          />
+                          <img class="select-option-icon" :src="option.icon" alt="" />
                           <span class="select-label-text">
                             {{ option.name }}
                           </span>
@@ -200,12 +187,7 @@ const onSave = async () => {
                 <div class="column is-12">
                   <VField>
                     <VControl>
-                      <VButton
-                        color="primary"
-                        icon="fas fa-plus"
-                        raised
-                        fullwidth
-                      >
+                      <VButton color="primary" icon="fas fa-plus" raised fullwidth>
                         Add Language
                       </VButton>
                     </VControl>
@@ -218,9 +200,7 @@ const onSave = async () => {
           <template v-else>
             <!--Experience Item-->
             <div class="setting-item">
-              <VIconWrap
-                picture="/images/icons/flags/united-states-of-america.svg"
-              />
+              <VIconWrap picture="/images/icons/flags/united-states-of-america.svg" />
 
               <div class="meta">
                 <span class="dark-inverted">English</span>
@@ -306,11 +286,7 @@ const onSave = async () => {
 
         <div class="setting-list">
           <!--Inner Form-->
-          <form
-            v-if="isEditingSkills"
-            class="setting-form"
-            @submit.prevent="addSkill"
-          >
+          <form v-if="isEditingSkills" class="setting-form" @submit.prevent="addSkill">
             <div class="field-wrap">
               <div class="columns is-multiline">
                 <div class="column is-6">
@@ -365,22 +341,14 @@ const onSave = async () => {
                       >
                         <template #singlelabel="{ value }">
                           <div class="multiselect-single-label">
-                            <img
-                              class="select-label-icon"
-                              :src="value.icon"
-                              alt=""
-                            />
+                            <img class="select-label-icon" :src="value.icon" alt="" />
                             <span class="select-label-text">
                               {{ value.name }}
                             </span>
                           </div>
                         </template>
                         <template #option="{ option }">
-                          <img
-                            class="select-option-icon"
-                            :src="option.icon"
-                            alt=""
-                          />
+                          <img class="select-option-icon" :src="option.icon" alt="" />
                           <span class="select-label-text">
                             {{ option.name }}
                           </span>
@@ -445,12 +413,7 @@ const onSave = async () => {
                 <div class="column is-12">
                   <VField>
                     <VControl>
-                      <VButton
-                        color="primary"
-                        icon="fas fa-plus"
-                        raised
-                        fullwidth
-                      >
+                      <VButton color="primary" icon="fas fa-plus" raised fullwidth>
                         Add Skill
                       </VButton>
                     </VControl>
@@ -535,11 +498,7 @@ const onSave = async () => {
 
         <div class="setting-list">
           <!--Inner Form-->
-          <form
-            v-if="isEditingTools"
-            class="setting-form"
-            @submit.prevent="addTool"
-          >
+          <form v-if="isEditingTools" class="setting-form" @submit.prevent="addTool">
             <div class="field-wrap">
               <div class="columns is-multiline">
                 <div class="column is-6">
@@ -574,22 +533,14 @@ const onSave = async () => {
                       >
                         <template #singlelabel="{ value }">
                           <div class="multiselect-single-label">
-                            <img
-                              class="select-label-icon"
-                              :src="value.icon"
-                              alt=""
-                            />
+                            <img class="select-label-icon" :src="value.icon" alt="" />
                             <span class="select-label-text">
                               {{ value.name }}
                             </span>
                           </div>
                         </template>
                         <template #option="{ option }">
-                          <img
-                            class="select-option-icon"
-                            :src="option.icon"
-                            alt=""
-                          />
+                          <img class="select-option-icon" :src="option.icon" alt="" />
                           <span class="select-label-text">
                             {{ option.name }}
                           </span>
@@ -634,12 +585,7 @@ const onSave = async () => {
                 <div class="column is-12">
                   <VField>
                     <VControl>
-                      <VButton
-                        color="primary"
-                        icon="fas fa-plus"
-                        raised
-                        fullwidth
-                      >
+                      <VButton color="primary" icon="fas fa-plus" raised fullwidth>
                         Add Tool
                       </VButton>
                     </VControl>

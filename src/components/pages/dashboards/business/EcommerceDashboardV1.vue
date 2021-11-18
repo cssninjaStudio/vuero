@@ -50,11 +50,7 @@ import {
           <div class="tile-head">
             <h3>Total Sales</h3>
             <VIconBox color="info" rounded>
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:gift"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:gift"></i>
             </VIconBox>
           </div>
           <div class="dashboard-tile-inner">
@@ -81,11 +77,7 @@ import {
           <div class="tile-head">
             <h3>Total Income</h3>
             <VIconBox color="purple" rounded>
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:dollar-sign"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:dollar-sign"></i>
             </VIconBox>
           </div>
           <div class="dashboard-tile-inner">
@@ -139,11 +131,7 @@ import {
           <div class="tile-head">
             <h3>Abandonned</h3>
             <VIconBox color="orange" rounded>
-              <i
-                aria-hidden="true"
-                class="iconify"
-                data-icon="feather:shopping-cart"
-              ></i>
+              <i aria-hidden="true" class="iconify" data-icon="feather:shopping-cart"></i>
             </VIconBox>
           </div>
           <div class="dashboard-tile-inner">
@@ -230,9 +218,8 @@ import {
               <h4 class="dark-inverted">Product Returns</h4>
               <span class="is-dark-primary">Avg. 642</span>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bonum
-                integritas corporis: misera debilitas. Ita ne hoc quidem modo
-                paria.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bonum integritas
+                corporis: misera debilitas. Ita ne hoc quidem modo paria.
               </p>
             </div>
             <div class="chart-container">
@@ -257,9 +244,8 @@ import {
               <h4 class="dark-inverted">Customer Engagement</h4>
               <span class="is-dark-primary">+34.2%</span>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bonum
-                integritas corporis: misera debilitas. Ita ne hoc quidem modo
-                paria.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bonum integritas
+                corporis: misera debilitas. Ita ne hoc quidem modo paria.
               </p>
             </div>
             <div class="chart-container">
@@ -431,8 +417,8 @@ import {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
-@import '../../../../scss/pages/generic/_widgets-stats.scss';
+@import '../../../../scss/abstracts/mixins';
+@import '../../../../scss/pages/generic/widgets-stats';
 
 .ecommerce-dashboard-v1 {
   .dashboard-header {
@@ -464,7 +450,7 @@ import {
   }
 
   .dashboard-tile {
-    @include vuero-s-card();
+    @include vuero-s-card;
 
     font-family: var(--font);
 
@@ -538,7 +524,7 @@ import {
 .is-dark {
   .ecommerce-dashboard-v1 {
     .dashboard-tile {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
     }
   }
 }

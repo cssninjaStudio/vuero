@@ -3,14 +3,7 @@ import 'simple-datatables/src/style.css'
 </script>
 
 <script setup lang="ts">
-import {
-  isReactive,
-  onBeforeUnmount,
-  onMounted,
-  ref,
-  watch,
-  reactive,
-} from 'vue'
+import { isReactive, onBeforeUnmount, onMounted, ref, watch, reactive } from 'vue'
 import { DataTable } from 'simple-datatables'
 
 export interface VSimpleDatatablesProps {
@@ -64,8 +57,7 @@ const registerEvents = () => {
     const paginationElement = wrapperElement.value.querySelector(
       '.dataTable-pagination'
     ) as HTMLElement
-    const sortersElement =
-      wrapperElement.value.querySelectorAll('.dataTable-sorter')
+    const sortersElement = wrapperElement.value.querySelectorAll('.dataTable-sorter')
 
     if (searchElement) {
       searchElement.addEventListener('focus', onFocus, false)
@@ -102,14 +94,11 @@ const registerEvents = () => {
     datatable.value.on(`datatable.page`, (page: number) => {
       emit('page', page)
     })
-    datatable.value.on(
-      `datatable.sort`,
-      (column: number, direction?: string) => {
-        lastSort.column = column
-        lastSort.direction = direction || ''
-        emit('sort', column, direction)
-      }
-    )
+    datatable.value.on(`datatable.sort`, (column: number, direction?: string) => {
+      lastSort.column = column
+      lastSort.direction = direction || ''
+      emit('sort', column, direction)
+    })
     datatable.value.on(`datatable.perpage`, (perpage: number) => {
       emit('perpage', perpage)
     })
@@ -135,8 +124,7 @@ const unregisterEvents = () => {
     const paginationElement = wrapperElement.value.querySelector(
       '.dataTable-pagination'
     ) as HTMLElement
-    const sortersElement =
-      wrapperElement.value.querySelectorAll('.dataTable-sorter')
+    const sortersElement = wrapperElement.value.querySelectorAll('.dataTable-sorter')
 
     if (searchElement) {
       searchElement.removeEventListener('focus', onFocus)

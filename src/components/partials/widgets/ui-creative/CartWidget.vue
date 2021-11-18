@@ -16,11 +16,7 @@ const props = defineProps<{
       </div>
     </div>
     <div class="cart-items">
-      <div
-        v-for="product in props.products"
-        :key="product.id"
-        class="cart-item"
-      >
+      <div v-for="product in props.products" :key="product.id" class="cart-item">
         <VAvatar :picture="product.picture" size="large" squared />
         <div class="meta">
           <span class="text">{{ product.name }}</span>

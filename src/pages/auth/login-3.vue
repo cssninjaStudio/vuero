@@ -54,11 +54,7 @@ useHead({
       </div>
       <div class="right">
         <label class="dark-mode ml-auto">
-          <input
-            type="checkbox"
-            :checked="!isDark"
-            @change="toggleDarkModeHandler"
-          />
+          <input type="checkbox" :checked="!isDark" @change="toggleDarkModeHandler" />
           <span></span>
         </label>
       </div>

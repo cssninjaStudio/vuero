@@ -48,11 +48,7 @@ const isDesktopSidebarOpen = ref(false)
       <template #links>
         <li>
           <RouterLink :to="{ name: 'sidebar-dashboards' }">
-            <i
-              aria-hidden="true"
-              class="iconify"
-              data-icon="feather:activity"
-            ></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:activity"></i>
           </RouterLink>
         </li>
         <li>
@@ -72,11 +68,7 @@ const isDesktopSidebarOpen = ref(false)
         </li>
         <li>
           <RouterLink :to="{ name: 'messaging-v1' }">
-            <i
-              aria-hidden="true"
-              class="iconify"
-              data-icon="feather:message-circle"
-            ></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:message-circle"></i>
           </RouterLink>
         </li>
       </template>
@@ -84,20 +76,12 @@ const isDesktopSidebarOpen = ref(false)
       <template #bottom-links>
         <li>
           <a @click="activePanel = 'search'">
-            <i
-              aria-hidden="true"
-              class="iconify"
-              data-icon="feather:search"
-            ></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
           </a>
         </li>
         <li>
           <a href="#">
-            <i
-              aria-hidden="true"
-              class="iconify"
-              data-icon="feather:settings"
-            ></i>
+            <i aria-hidden="true" class="iconify" data-icon="feather:settings"></i>
           </a>
         </li>
       </template>
@@ -130,22 +114,14 @@ const isDesktopSidebarOpen = ref(false)
         <!-- Elements -->
         <li>
           <RouterLink :to="{ name: 'elements' }">
-            <i
-              aria-hidden="true"
-              class="iconify sidebar-svg"
-              data-icon="feather:box"
-            ></i>
+            <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather:box"></i>
           </RouterLink>
         </li>
 
         <!-- Components -->
         <li>
           <RouterLink :to="{ name: 'components' }">
-            <i
-              aria-hidden="true"
-              class="iconify sidebar-svg"
-              data-icon="feather:cpu"
-            ></i>
+            <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather:cpu"></i>
           </RouterLink>
         </li>
 
@@ -172,11 +148,7 @@ const isDesktopSidebarOpen = ref(false)
             />
           </a>
           <a class="is-hidden is-inactive" @click="activePanel = 'none'">
-            <i
-              aria-hidden="true"
-              class="iconify sidebar-svg"
-              data-icon="feather-x"
-            />
+            <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather-x" />
           </a>
         </li>
 

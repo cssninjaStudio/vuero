@@ -22,9 +22,7 @@ const filters = ref('')
       </div>
 
       <div class="buttons">
-        <VButton color="primary" icon="fas fa-check" elevated disabled>
-          Approve
-        </VButton>
+        <VButton color="primary" icon="fas fa-check" elevated disabled> Approve </VButton>
       </div>
     </div>
 
@@ -48,6 +46,6 @@ const filters = ref('')
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
-@import '../../../../scss/pages/lists/_list-view-1.scss';
+@import '../../../../scss/abstracts/mixins';
+@import '../../../../scss/pages/lists/list-view-1';
 </style>

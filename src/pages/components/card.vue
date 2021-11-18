@@ -52,8 +52,8 @@ useHead({
             <VCard radius="smooth">
               <h3 class="title is-5 mb-2">I have smooth radius</h3>
               <p>
-                I can be used as is in any layout. VCards are simple containers
-                that can hold any type of content.
+                I can be used as is in any layout. VCards are simple containers that can
+                hold any type of content.
               </p>
             </VCard>
           </div>
@@ -61,8 +61,8 @@ useHead({
             <VCard>
               <h3 class="title is-5 mb-2">I have regular radius</h3>
               <p>
-                I can be used as is in any layout. VCards are simple containers
-                that can hold any type of content.
+                I can be used as is in any layout. VCards are simple containers that can
+                hold any type of content.
               </p>
             </VCard>
           </div>
@@ -70,8 +70,8 @@ useHead({
             <VCard radius="rounded">
               <h3 class="title is-5 mb-2">I have rounded radius</h3>
               <p>
-                I can be used as is in any layout. VCards are simple containers
-                that can hold any type of content.
+                I can be used as is in any layout. VCards are simple containers that can
+                hold any type of content.
               </p>
             </VCard>
           </div>
@@ -85,8 +85,8 @@ useHead({
             <VCard radius="smooth" elevated>
               <h3 class="title is-5 mb-2">Raised VCard</h3>
               <p>
-                I can be used as is in any layout. VCards are simple containers
-                that can hold any type of content.
+                I can be used as is in any layout. VCards are simple containers that can
+                hold any type of content.
               </p>
             </VCard>
           </div>
@@ -94,8 +94,8 @@ useHead({
             <VCard elevated>
               <h3 class="title is-5 mb-2">Raised VCard</h3>
               <p>
-                I can be used as is in any layout. VCards are simple containers
-                that can hold any type of content.
+                I can be used as is in any layout. VCards are simple containers that can
+                hold any type of content.
               </p>
             </VCard>
           </div>
@@ -103,8 +103,8 @@ useHead({
             <VCard radius="rounded" elevated>
               <h3 class="title is-5 mb-2">Raised VCard</h3>
               <p>
-                I can be used as is in any layout. VCards are simple containers
-                that can hold any type of content.
+                I can be used as is in any layout. VCards are simple containers that can
+                hold any type of content.
               </p>
             </VCard>
           </div>
@@ -118,8 +118,8 @@ useHead({
             <VCard radius="smooth" color="primary">
               <h3 class="title is-5 mb-2">Primary VCard</h3>
               <p>
-                I can be used as is in any layout. VCards are simple containers
-                that can hold any type of content.
+                I can be used as is in any layout. VCards are simple containers that can
+                hold any type of content.
               </p>
             </VCard>
           </div>
@@ -127,8 +127,8 @@ useHead({
             <VCard color="secondary">
               <h3 class="title is-5 mb-2">Secondary VCard</h3>
               <p>
-                I can be used as is in any layout. VCards are simple containers
-                that can hold any type of content.
+                I can be used as is in any layout. VCards are simple containers that can
+                hold any type of content.
               </p>
             </VCard>
           </div>
@@ -136,8 +136,8 @@ useHead({
             <VCard radius="rounded" color="info">
               <h3 class="title is-5 mb-2">Info VCard</h3>
               <p>
-                I can be used as is in any layout. VCards are simple containers
-                that can hold any type of content.
+                I can be used as is in any layout. VCards are simple containers that can
+                hold any type of content.
               </p>
             </VCard>
           </div>
@@ -145,8 +145,8 @@ useHead({
             <VCard radius="smooth" color="success">
               <h3 class="title is-5 mb-2">Success VCard</h3>
               <p>
-                I can be used as is in any layout. VCards are simple containers
-                that can hold any type of content.
+                I can be used as is in any layout. VCards are simple containers that can
+                hold any type of content.
               </p>
             </VCard>
           </div>
@@ -154,8 +154,8 @@ useHead({
             <VCard color="warning">
               <h3 class="title is-5 mb-2">Warning VCard</h3>
               <p>
-                I can be used as is in any layout. VCards are simple containers
-                that can hold any type of content.
+                I can be used as is in any layout. VCards are simple containers that can
+                hold any type of content.
               </p>
             </VCard>
           </div>
@@ -163,8 +163,8 @@ useHead({
             <VCard radius="rounded" color="danger">
               <h3 class="title is-5 mb-2">Danger VCard</h3>
               <p>
-                I can be used as is in any layout. VCards are simple containers
-                that can hold any type of content.
+                I can be used as is in any layout. VCards are simple containers that can
+                hold any type of content.
               </p>
             </VCard>
           </div>
@@ -206,8 +206,8 @@ useHead({
 
               <div class="card-inner">
                 <p>
-                  I can be used as is in any layout. VCards are simple
-                  containers that can hold any type of content.
+                  I can be used as is in any layout. VCards are simple containers that can
+                  hold any type of content.
                 </p>
               </div>
             </VCard>
@@ -243,8 +243,8 @@ useHead({
               </div>
               <div class="card-inner">
                 <p>
-                  I can be used as is in any layout. VCards are simple
-                  containers that can hold any type of content.
+                  I can be used as is in any layout. VCards are simple containers that can
+                  hold any type of content.
                 </p>
               </div>
             </VCard>
@@ -280,8 +280,8 @@ useHead({
               </div>
               <div class="card-inner">
                 <p>
-                  I can be used as is in any layout. VCards are simple
-                  containers that can hold any type of content.
+                  I can be used as is in any layout. VCards are simple containers that can
+                  hold any type of content.
                 </p>
               </div>
             </VCard>

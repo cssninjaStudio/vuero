@@ -28,17 +28,12 @@
   border-radius: 0.25rem;
 }
 
-//Loading animation
+// Loading animation
 .loads {
-  -webkit-animation-duration: 1s;
   animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  -webkit-animation-name: placeload;
   animation-name: placeload;
-  -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
   background: var(--placeload-nuance-from);
   background: -webkit-gradient(
@@ -49,19 +44,13 @@
     color-stop(18%, var(--placeload-nuance-to)),
     color-stop(33%, var(--placeload-nuance-from))
   );
-  background: -webkit-linear-gradient(
-    left,
-    var(--placeload-nuance-from) 8%,
-    var(--placeload-nuance-to) 18%,
-    var(--placeload-nuance-from) 33%
-  );
   background: linear-gradient(
     to right,
     var(--placeload-nuance-from) 8%,
     var(--placeload-nuance-to) 18%,
     var(--placeload-nuance-from) 33%
   );
-  -webkit-background-size: 800px 104px;
+  background-size: 800px 104px;
   background-size: 1200px 104px;
   position: relative;
 }
@@ -91,19 +80,13 @@
       color-stop(18%, var(--placeload-dark-nuance-to)),
       color-stop(33%, var(--placeload-dark-nuance-from))
     );
-    background: -webkit-linear-gradient(
-      left,
-      var(--placeload-dark-nuance-from) 8%,
-      var(--placeload-dark-nuance-to) 18%,
-      var(--placeload-dark-nuance-from) 33%
-    );
     background: linear-gradient(
       to right,
       var(--placeload-dark-nuance-from) 8%,
       var(--placeload-dark-nuance-to) 18%,
       var(--placeload-dark-nuance-from) 33%
     );
-    -webkit-background-size: 800px 104px;
+    background-size: 800px 104px;
     background-size: 1200px 104px;
   }
 }

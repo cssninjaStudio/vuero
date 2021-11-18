@@ -19,8 +19,7 @@ Check the code example for more details.
     share-label="Retweet"
     like-label="Like"
   >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
-    iaculis mauris.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
   </VCardSocial>
 </template>
 ```

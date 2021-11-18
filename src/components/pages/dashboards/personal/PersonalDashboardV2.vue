@@ -39,9 +39,7 @@ const democheck = ref(['value_2'])
           <div class="cta h-hidden-tablet-p">
             <div class="media-flex inverted-text">
               <i aria-hidden="true" class="lnil lnil-crown-alt-1"></i>
-              <p class="white-text">
-                Start using our team and project management tools
-              </p>
+              <p class="white-text">Start using our team and project management tools</p>
             </div>
             <a class="link inverted-text">Learn More</a>
           </div>
@@ -56,11 +54,7 @@ const democheck = ref(['value_2'])
           </div>
           <div class="active-projects">
             <!--Project-->
-            <VBlock
-              title="Delivery App Project"
-              subtitle="Updated 30m ago"
-              center
-            >
+            <VBlock title="Delivery App Project" subtitle="Updated 30m ago" center>
               <template #icon>
                 <VAvatar
                   picture="/demo/photos/apps/1.jpg"
@@ -76,11 +70,7 @@ const democheck = ref(['value_2'])
             </VBlock>
 
             <!--Project-->
-            <VBlock
-              title="Health and Fitness Dashboard"
-              subtitle="Updated 5h ago"
-              center
-            >
+            <VBlock title="Health and Fitness Dashboard" subtitle="Updated 5h ago" center>
               <template #icon>
                 <VAvatar
                   picture="/demo/photos/apps/2.png"
@@ -96,11 +86,7 @@ const democheck = ref(['value_2'])
             </VBlock>
 
             <!--Project-->
-            <VBlock
-              title="Learning Tracker Dashboard"
-              subtitle="Updated 7h ago"
-              center
-            >
+            <VBlock title="Learning Tracker Dashboard" subtitle="Updated 7h ago" center>
               <template #icon>
                 <VAvatar
                   picture="/demo/photos/apps/3.png"
@@ -116,11 +102,7 @@ const democheck = ref(['value_2'])
             </VBlock>
 
             <!--Project-->
-            <VBlock
-              title="Banking App Dashboard"
-              subtitle="Updated 10h ago"
-              center
-            >
+            <VBlock title="Banking App Dashboard" subtitle="Updated 10h ago" center>
               <template #icon>
                 <VAvatar
                   picture="/demo/photos/apps/4.png"
@@ -320,7 +302,7 @@ const democheck = ref(['value_2'])
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/abstracts/mixins';
 
 .is-navbar {
   .personal-dashboard {
@@ -330,7 +312,7 @@ const democheck = ref(['value_2'])
 
 .personal-dashboard-v2 {
   .dashboard-header {
-    @include vuero-s-card();
+    @include vuero-s-card;
 
     display: flex;
     align-items: center;
@@ -356,13 +338,14 @@ const democheck = ref(['value_2'])
       padding: 20px;
       border-radius: var(--radius-large);
       box-shadow: var(--primary-box-shadow);
+
       .lnil,
       .lnir {
         position: absolute;
         bottom: 1rem;
         right: 1rem;
         font-size: 4rem;
-        opacity: 0.3;
+        opacity: 30%;
       }
 
       .link {
@@ -373,14 +356,14 @@ const democheck = ref(['value_2'])
 
         &:hover {
           color: var(--smoke-white);
-          opacity: 0.6;
+          opacity: 60%;
         }
       }
     }
   }
 
   .dashboard-card {
-    @include vuero-s-card();
+    @include vuero-s-card;
 
     padding: 30px;
 
@@ -415,7 +398,7 @@ const democheck = ref(['value_2'])
   .personal-dashboard-v2 {
     .dashboard-header,
     .dashboard-card {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
     }
 
     .home-header {

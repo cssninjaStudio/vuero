@@ -10,12 +10,7 @@ Supports dark mode.
 
 ```vue
 <template>
-  <VFlex
-    flex-wrap="wrap"
-    align-items="flex-end"
-    row-gap=".5rem"
-    column-gap=".25rem"
-  >
+  <VFlex flex-wrap="wrap" align-items="flex-end" row-gap=".5rem" column-gap=".25rem">
     <VAvatar initials="CT" size="medium" squared />
     <VAvatar initials="CT" size="medium" color="primary" squared />
     <VAvatar initials="CT" size="medium" color="success" squared />

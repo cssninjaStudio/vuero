@@ -61,10 +61,7 @@ useHead({
 
         <div class="demo-card">
           <div class="card-inner" :class="{ 'is-scrolling': isScrolling }">
-            <VFlex
-              justify-content="flex-end"
-              class="demo-icon-search py-4 px-6"
-            >
+            <VFlex justify-content="flex-end" class="demo-icon-search py-4 px-6">
               <VField>
                 <VControl icon="feather:search">
                   <input
@@ -83,11 +80,7 @@ useHead({
                 :key="icon.name"
                 class="textFilter-target"
               >
-                <i
-                  aria-hidden="true"
-                  class="iconify"
-                  :data-icon="icon.dataIcon"
-                ></i>
+                <i aria-hidden="true" class="iconify" :data-icon="icon.dataIcon"></i>
                 <p class="textFilter-match">{{ icon.name }}</p>
               </li>
             </ul>

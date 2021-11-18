@@ -1,12 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 
-export type VGridJustifyItems =
-  | 'start'
-  | 'end'
-  | 'center'
-  | 'stretch'
-  | 'initial'
+export type VGridJustifyItems = 'start' | 'end' | 'center' | 'stretch' | 'initial'
 export type VGridAlignItems = 'start' | 'end' | 'center' | 'stretch' | 'initial'
 export type VGridJustifyContent =
   | 'start'
@@ -26,12 +21,7 @@ export type VGridAlignContent =
   | 'space-between'
   | 'space-evenly'
   | 'initial'
-export type VGridAutoFlow =
-  | 'row'
-  | 'column'
-  | 'row dense'
-  | 'column dense'
-  | 'initial'
+export type VGridAutoFlow = 'row' | 'column' | 'row dense' | 'column dense' | 'initial'
 
 export interface VGridProps {
   inline?: boolean

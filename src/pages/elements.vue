@@ -3,11 +3,7 @@ import { sidebarTheme } from '/@src/state/sidebarLayoutState'
 </script>
 
 <template>
-  <SidebarLayout
-    :theme="sidebarTheme"
-    open-on-mounted
-    default-sidebar="elements"
-  >
+  <SidebarLayout :theme="sidebarTheme" open-on-mounted default-sidebar="elements">
     <!-- Content Wrapper -->
     <RouterView v-slot="{ Component }">
       <transition name="translate-page-y" mode="out-in">
@@ -18,6 +14,6 @@ import { sidebarTheme } from '/@src/state/sidebarLayoutState'
 </template>
 
 <style lang="scss">
-@import '../scss/abstracts/_mixins.scss';
-@import '../scss/pages/demo/_demo.scss';
+@import '../scss/abstracts/mixins';
+@import '../scss/pages/demo/demo';
 </style>

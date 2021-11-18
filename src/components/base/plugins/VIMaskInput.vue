@@ -64,8 +64,7 @@ export default defineComponent({
       }
     })
 
-    return () =>
-      h('input', { ref: inputElement, type: 'text', value: props.modelValue })
+    return () => h('input', { ref: inputElement, type: 'text', value: props.modelValue })
   },
 })
 </script>

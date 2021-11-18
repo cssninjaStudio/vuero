@@ -57,6 +57,6 @@ const optionsSingle = [
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/_mixins.scss';
-@import '../../../../scss/pages/lists/_tile-grid-v1.scss';
+@import '../../../../scss/abstracts/mixins';
+@import '../../../../scss/pages/lists/tile-grid-v1';
 </style>

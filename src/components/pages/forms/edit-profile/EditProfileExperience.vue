@@ -68,12 +68,7 @@ const onSave = async () => {
             >
               Go Back
             </VButton>
-            <VButton
-              color="primary"
-              raised
-              :loading="isLoading"
-              @click="onSave"
-            >
+            <VButton color="primary" raised :loading="isLoading" @click="onSave">
               Save Changes
             </VButton>
           </div>
@@ -93,11 +88,7 @@ const onSave = async () => {
 
         <div class="setting-list">
           <!--Inner Form-->
-          <form
-            v-if="isUploading"
-            class="setting-form"
-            @submit.prevent="addExperience"
-          >
+          <form v-if="isUploading" class="setting-form" @submit.prevent="addExperience">
             <VFilePond
               size="tiny"
               class="profile-filepond"
@@ -120,12 +111,7 @@ const onSave = async () => {
             <div class="field-wrap">
               <div class="columns is-multiline">
                 <div class="column is-12">
-                  <v-date-picker
-                    v-model="range"
-                    is-range
-                    color="green"
-                    trim-weeks
-                  >
+                  <v-date-picker v-model="range" is-range color="green" trim-weeks>
                     <template #default="{ inputValue, inputEvents }">
                       <VField addons class="has-addons-fullwidth">
                         <VControl>

@@ -38,9 +38,7 @@
 
           <div class="action-list">
             <VBlock title="Includes 8 team seats">
-              <p>
-                Each team member on your account can create projects and tasks.
-              </p>
+              <p>Each team member on your account can create projects and tasks.</p>
 
               <template #icon>
                 <VIconWrap
@@ -53,9 +51,7 @@
             </VBlock>
 
             <VBlock title="Integrations">
-              <p>
-                Add up to 5 addons to your main application to help you manage.
-              </p>
+              <p>Add up to 5 addons to your main application to help you manage.</p>
 
               <template #icon>
                 <VIconWrap
@@ -69,8 +65,7 @@
 
             <VBlock title="Scale">
               <p>
-                Your application grows in parallel of your business, without any
-                effort.
+                Your application grows in parallel of your business, without any effort.
               </p>
 
               <template #icon>
@@ -90,12 +85,11 @@
 </template>
 
 <style lang="scss" scoped>
-@import '../../../../scss/abstracts/_mixins.scss';
+@import '../../../../scss/abstracts/mixins';
 
 /* ==========================================================================
 1. Confirm Account
 ========================================================================== */
-
 .promotion-page-wrapper {
   display: flex;
   justify-content: center;
@@ -106,7 +100,7 @@
   max-width: 840px;
 
   .wrapper-outer {
-    @include vuero-s-card();
+    @include vuero-s-card;
 
     display: flex;
     padding: 0;
@@ -212,7 +206,7 @@
 
   .wrapper-inner {
     .action-box {
-      @include vuero-s-card();
+      @include vuero-s-card;
 
       padding: 40px;
 
@@ -224,7 +218,7 @@
           display: block;
           width: 100%;
           max-width: 220px;
-          margin: 0 auto 8px auto;
+          margin: 0 auto 8px;
 
           &.is-larger {
             max-width: 300px;
@@ -236,7 +230,7 @@
           font-family: var(--font-alt);
           font-weight: 600;
           max-width: 320px;
-          margin: 0 auto 8px auto;
+          margin: 0 auto 8px;
 
           span {
             color: var(--primary);
@@ -267,11 +261,12 @@
   .promotion-page-wrapper {
     .wrapper-inner {
       .action-box {
-        @include vuero-card--dark();
+        @include vuero-card--dark;
       }
     }
+
     .wrapper-outer {
-      @include vuero-card--dark();
+      @include vuero-card--dark;
     }
   }
 }
@@ -283,7 +278,7 @@
 
       .wrapper-inner {
         .action-box {
-          padding: 20px 20px 40px 20px;
+          padding: 20px 20px 40px;
           border-right: none;
           border-bottom: 1px solid var(--fade-grey-dark-3);
 
