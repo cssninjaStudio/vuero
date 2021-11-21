@@ -111,6 +111,7 @@ declare module 'vue' {
     DatepickerTimeDocumentation: typeof import('./documentation/plugins/datepicker/datepicker-time-documentation.md')['default']
     DatepickerTimeSingleDocumentation: typeof import('./documentation/plugins/datepicker/datepicker-time-single-documentation.md')['default']
     DocumentationColor: typeof import('./src/components/partials/documentation/DocumentationColor.vue')['default']
+    DocumentationDivider: typeof import('./src/components/partials/documentation/DocumentationDivider.vue')['default']
     DocumentationItem: typeof import('./src/components/partials/documentation/DocumentationItem.vue')['default']
     DocumentationToc: typeof import('./src/components/partials/documentation/DocumentationToc.vue')['default']
     DropdownButtonHoverDocumentation: typeof import('./documentation/dropdown/dropdown-button-hover-documentation.md')['default']

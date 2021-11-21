@@ -17,7 +17,7 @@ const displayCode = ref(false)
 
 <template>
   <div class="demo-card">
-    <div class="demo-title">
+    <div class="demo-title has-slimscroll-all">
       <div class="content">
         <slot></slot>
       </div>

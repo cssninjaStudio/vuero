@@ -83,12 +83,7 @@ useHead({
           />
         </div>
 
-        <a id="grow" name="grow" class="is-invisible is-block zero-height"> Grow </a>
-        <div
-          class="is-divider"
-          data-content="Grow"
-          style="--white: var(--background-grey)"
-        ></div>
+        <DocumentationDivider id="grow" title="Grow" />
 
         <div class="mt-4">
           <VFlexTable
@@ -119,14 +114,7 @@ useHead({
           />
         </div>
 
-        <a id="grow-lg" name="grow-lg" class="is-invisible is-block zero-height">
-          Grow (large)
-        </a>
-        <div
-          class="is-divider"
-          data-content="Grow (large)"
-          style="--white: var(--background-grey)"
-        ></div>
+        <DocumentationDivider id="grow-lg" title="Grow (large)" />
 
         <div class="mt-4">
           <VFlexTable
@@ -157,14 +145,7 @@ useHead({
           />
         </div>
 
-        <a id="grow-xl" name="grow-xl" class="is-invisible is-block zero-height">
-          Grow (xl)
-        </a>
-        <div
-          class="is-divider"
-          data-content="Grow (xl)"
-          style="--white: var(--background-grey)"
-        ></div>
+        <DocumentationDivider id="grow-xl" title="Grow (xl)" />
 
         <div class="mt-4">
           <VFlexTable
@@ -258,7 +239,7 @@ useHead({
                 </div>
               </template>
 
-              <VPlaceload v-else-if="column.key === 'status'" />
+              <VPlaceload v-else-if="column.key === 'status'" mobile-width="30%" />
 
               <VAvatarStack
                 v-else-if="column.key === 'contacts'"

@@ -139,9 +139,8 @@ useHead({
                 <a
                   v-else
                   class="
-                    is-overlay
-                    m-3
-                    is-flex is-align-items-center
+                    is-overlay-desktop is-flex is-pushed-mobile is-align-items-center
+                    mx-3-desktop
                     edit-icon-link
                     is-clickable
                   "
@@ -186,18 +185,7 @@ useHead({
           </VFlexTable>
         </div>
 
-        <a
-          id="with-reactive"
-          name="with-reactive"
-          class="is-invisible is-block zero-height"
-        >
-          With reactive props
-        </a>
-        <div
-          class="is-divider"
-          data-content="With reactive props"
-          style="--white: var(--background-grey)"
-        ></div>
+        <DocumentationDivider id="with-reactive" title="With reactive props" />
 
         <div class="mt-4">
           <VFlexTable
@@ -252,18 +240,7 @@ useHead({
           </VFlexTable>
         </div>
 
-        <a
-          id="without-reactive"
-          name="without-reactive"
-          class="is-invisible is-block zero-height"
-        >
-          Without reactive props
-        </a>
-        <div
-          class="is-divider"
-          data-content="Without reactive props"
-          style="--white: var(--background-grey)"
-        ></div>
+        <DocumentationDivider id="without-reactive" title="Without reactive props" />
 
         <div class="mt-4">
           <VFlexTable :data="flexRowsContacts" :columns="columns" compact rounded>
@@ -313,18 +290,7 @@ useHead({
           </VFlexTable>
         </div>
 
-        <a
-          id="with-clickable"
-          name="with-clickable"
-          class="is-invisible is-block zero-height"
-        >
-          With clickable props
-        </a>
-        <div
-          class="is-divider"
-          data-content="With clickable props"
-          style="--white: var(--background-grey)"
-        ></div>
+        <DocumentationDivider id="with-clickable" title="With clickable props" />
 
         <div class="mt-4">
           <VFlexTable

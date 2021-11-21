@@ -1,8 +1,6 @@
 /*! _table.scss | Vuero | Css ninja 2020-2021 */
 
 /*
-    1. Flex Table
-    2. Flex Table Dark mode
     3. Table Pagination
     4. Table Pagination Dark mode
     5. Flex Table Advanced wrapper
@@ -300,74 +298,6 @@
     }
   }
 
-  .flex-table {
-    .flex-table-header {
-      display: none;
-    }
-
-    .flex-table-cell {
-      position: relative;
-      margin-bottom: 12px;
-
-      &::before {
-        content: attr(data-th);
-        font-size: 0.9rem;
-        text-transform: uppercase;
-        font-weight: 500;
-        color: var(--muted-grey);
-      }
-
-      &.no-label-mobile {
-        &::before {
-          display: none !important;
-        }
-      }
-
-      &.cell-end {
-        justify-content: flex-start !important;
-
-        .btn-group {
-          margin-left: auto;
-        }
-      }
-
-      &.is-user {
-        span {
-          font-size: 1.2rem;
-        }
-      }
-
-      > span,
-      > small,
-      > strong,
-      > p,
-      > div,
-      > .is-pushed-mobile {
-        margin-left: auto;
-
-        &.no-push {
-          margin-left: 0 !important;
-        }
-      }
-    }
-
-    .flex-table-item {
-      flex-direction: column;
-      justify-content: center;
-      width: 100% !important;
-      padding: 20px;
-      margin-bottom: 16px;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-
-      > div {
-        border: none !important;
-      }
-    }
-  }
-
   .pagination-next,
   .pagination-previous {
     &.has-chevron {
@@ -378,16 +308,6 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  .flex-table {
-    .flex-table-cell {
-      &.is-user {
-        img {
-          min-width: 50px;
-        }
-      }
-    }
-  }
-
   .pagination-next,
   .pagination-previous {
     &.has-chevron {

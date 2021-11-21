@@ -55,70 +55,44 @@ useHead({
           <VFlexTable :data="flexRowsBasic" />
         </div>
 
-        <a id="no-header" name="no-header" class="is-invisible is-block zero-height">
-          Without header
-        </a>
-        <div
-          class="is-divider"
-          data-content="Without header"
-          style="--white: var(--background-grey)"
-        ></div>
+        <DocumentationDivider id="no-header" title="Without header" />
 
         <div class="mt-4">
           <VFlexTable :data="flexRowsBasic" no-header />
         </div>
 
-        <a id="rounded" name="rounded" class="is-invisible is-block zero-height">
-          Rounded
-        </a>
-        <div
-          class="is-divider"
-          data-content="Rounded"
-          style="--white: var(--background-grey)"
-        ></div>
+        <DocumentationDivider id="separators" title="With separators" />
+
+        <div class="mt-4">
+          <VFlexTable :data="flexRowsBasic" separators />
+        </div>
+
+        <DocumentationDivider id="rounded" title="Rounded" />
 
         <div class="mt-4">
           <VFlexTable :data="flexRowsBasic" rounded />
         </div>
 
-        <a id="compact" name="compact" class="is-invisible is-block zero-height">
-          Compact
-        </a>
-        <div
-          class="is-divider"
-          data-content="Compact"
-          style="--white: var(--background-grey)"
-        ></div>
+        <DocumentationDivider id="compact" title="Compact" />
 
         <div class="mt-4 mb-4">
           <VFlexTable :data="flexRowsBasic" compact />
         </div>
 
-        <a
-          id="compact-rounded"
-          name="compact-rounded"
-          class="is-invisible is-block zero-height"
-        >
-          Compact & Rounded
-        </a>
-        <div
-          class="is-divider"
-          data-content="Compact & Rounded"
-          style="--white: var(--background-grey)"
-        ></div>
+        <DocumentationDivider id="all-options" title="All options together" />
 
         <div class="mt-4">
-          <VFlexTable :data="flexRowsBasic" compact rounded />
+          <VFlexTable
+            :data="flexRowsBasic"
+            no-header
+            compact
+            rounded
+            separators
+            clickable
+          />
         </div>
 
-        <a id="subtable" name="subtable" class="is-invisible is-block zero-height">
-          SubTable
-        </a>
-        <div
-          class="is-divider"
-          data-content="SubTable"
-          style="--white: var(--background-grey)"
-        ></div>
+        <DocumentationDivider id="subtable" title="SubTable" />
 
         <div class="mt-4">
           <VFlexTable :data="flexRowsBasic" subtable />
@@ -130,18 +104,7 @@ useHead({
           <VFlexTable rounded :data="flexRowsContacts" print-objects />
         </div>
 
-        <a
-          id="without-print-object"
-          name="without-print-object"
-          class="is-invisible is-block zero-height"
-        >
-          Without print-objects
-        </a>
-        <div
-          class="is-divider"
-          data-content="Without print-objects"
-          style="--white: var(--background-grey)"
-        ></div>
+        <DocumentationDivider id="without-print-object" title="Without print-objects" />
 
         <div class="mt-4">
           <VFlexTable rounded :data="flexRowsContacts" />

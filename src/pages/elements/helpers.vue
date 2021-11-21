@@ -131,6 +131,28 @@ useHead({
                     </td>
                   </tr>
                   <tr>
+                    <th scope="row" class="category">
+                      <strong>Scroll</strong>
+                    </th>
+                    <td class="name">Slimscroll X (<code>has-slimscroll-x</code>)</td>
+                    <td class="description">
+                      Sets the <code>overflowX</code> property to <code>auto</code> on the
+                      target element and tweaks the webkit scrollbar.
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="category">
+                      <strong>Scroll</strong>
+                    </th>
+                    <td class="name">
+                      Slimscroll X and Y (<code>has-slimscroll-all</code>)
+                    </td>
+                    <td class="description">
+                      Sets the <code>overflow</code> property to <code>auto</code> on the
+                      target element and tweaks the webkit scrollbar.
+                    </td>
+                  </tr>
+                  <tr>
                     <th scope="rowgroup" rowspan="2" class="category">
                       <strong>Dark Mode</strong>
                     </th>
