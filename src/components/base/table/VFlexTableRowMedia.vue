@@ -7,7 +7,7 @@ const props = defineProps<VFlexTableRowMediaProps>()
 
 <template>
   <div v-for="row in props.rows" :key="row.id" class="flex-table-item">
-    <div class="flex-table-cell is-media is-grow" data-th="User">
+    <div class="flex-table-cell is-media is-grow">
       <VAvatar size="medium" :picture="row.picture" :badge="row.badge" />
       <div>
         <span class="item-name">{{ row.name }}</span>
@@ -16,13 +16,13 @@ const props = defineProps<VFlexTableRowMediaProps>()
         </span>
       </div>
     </div>
-    <div class="flex-table-cell" data-th="Location">
+    <div class="flex-table-cell">
       <span class="light-text">{{ row.location }}</span>
     </div>
-    <div class="flex-table-cell" data-th="Industry">
+    <div class="flex-table-cell">
       <span class="light-text">{{ row.industry }}</span>
     </div>
-    <div class="flex-table-cell" data-th="Status">
+    <div class="flex-table-cell">
       <span
         class="tag is-rounded"
         :class="[
@@ -34,7 +34,7 @@ const props = defineProps<VFlexTableRowMediaProps>()
         >{{ row.status }}</span
       >
     </div>
-    <div class="flex-table-cell" data-th="Relations">
+    <div class="flex-table-cell">
       <VAvatarStack
         class="is-pushed-mobile"
         size="small"
@@ -42,7 +42,7 @@ const props = defineProps<VFlexTableRowMediaProps>()
         :limit="3"
       />
     </div>
-    <div class="flex-table-cell cell-end" data-th="Actions">
+    <div class="flex-table-cell cell-end">
       <FlexTableDropdown />
     </div>
   </div>

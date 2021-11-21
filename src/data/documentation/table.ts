@@ -1,5 +1,38 @@
 export const flexRowsBasic = [
   {
+    emoji: '🚴‍♂️',
+    color: 'yellow',
+    name: 'Biking',
+    category: 'Sports',
+  },
+  {
+    emoji: '🏃‍♀️',
+    color: 'orange',
+    name: 'Running',
+    category: 'Sports',
+  },
+  {
+    emoji: '🎿',
+    color: 'green',
+    name: 'Skiing',
+    category: 'Sports',
+  },
+  {
+    emoji: '🏊',
+    color: 'info',
+    name: 'Swimming',
+    category: 'Sports',
+  },
+  {
+    emoji: '🤸',
+    color: 'purple',
+    name: 'Cartwheeling',
+    category: 'Sports',
+  },
+]
+
+export const flexRowsContacts = [
+  {
     id: 0,
     company: 'Grubspot',
     type: 'New Lead',
@@ -127,6 +160,7 @@ export const flexRowsAdvanced = [
     badge: '/images/icons/flags/united-states-of-america.svg',
     location: 'Las Vegas, NV',
     industry: 'Software',
+    annualEarnings: 115000,
     status: 'Active',
     contacts: [
       {
@@ -169,6 +203,7 @@ export const flexRowsAdvanced = [
     badge: '/images/icons/flags/united-states-of-america.svg',
     location: 'Los Angeles, CA',
     industry: 'Business',
+    annualEarnings: 110000,
     status: 'New',
     contacts: [
       {
@@ -188,6 +223,7 @@ export const flexRowsAdvanced = [
     location: 'San Jose, CA',
     industry: 'Design',
     status: 'Active',
+    annualEarnings: 90000,
     contacts: [
       {
         id: 12,
@@ -212,6 +248,7 @@ export const flexRowsAdvanced = [
     location: 'Las Vegas, NV',
     industry: 'Accounting',
     status: 'Disabled',
+    annualEarnings: 160000,
     contacts: [
       {
         id: 7,
@@ -230,6 +267,7 @@ export const flexRowsAdvanced = [
     location: 'Los Angeles, CA',
     industry: 'Finance',
     status: 'Suspended',
+    annualEarnings: 247000,
     contacts: [
       {
         id: 0,

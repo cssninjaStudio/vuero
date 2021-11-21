@@ -4,9 +4,9 @@ import { useHead } from '@vueuse/head'
 import { flexRowsAdvanced } from '/@src/data/documentation/table'
 import { pageTitle } from '/@src/state/sidebarLayoutState'
 
-pageTitle.value = 'VFlexTable (Advanced)'
+pageTitle.value = 'VFlexTableWrapper'
 useHead({
-  title: 'VFlexTable Advanced - Components - Vuero',
+  title: 'VFlexTableWrapper - Components - Vuero',
 })
 </script>
 
@@ -32,7 +32,7 @@ useHead({
         },
         {
           label: 'Advanced',
-          to: { name: 'components-flex-table-advanced' },
+          to: { name: 'components-flex-table-wrapper' },
         },
       ]"
     />
@@ -68,7 +68,6 @@ useHead({
             </div>
           </div>
 
-          <!--VFlexTable-->
           <VFlexTable>
             <template #header>
               <div class="flex-table-header">

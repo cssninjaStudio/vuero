@@ -85,11 +85,11 @@
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'components-flex-table-compact' }"
+                :to="{ name: 'components-flex-table-slots' }"
                 class="is-submenu"
               >
                 <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-                Compact Table
+                Customized slots
               </RouterLink>
             </li>
             <li>
@@ -103,7 +103,7 @@
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'components-flex-table-advanced' }"
+                :to="{ name: 'components-flex-table-wrapper' }"
                 class="is-submenu"
               >
                 <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>

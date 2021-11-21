@@ -1,15 +1,15 @@
-### VFlexTable Compact
+### Scrollable columns
 
 Vuero provides a custom table component called `<VFlexTable />`.
 It looks like a table but is not an Html5 table.
 Instead, it uses the flexbox technology and is fully responsive.
-Make the table compact by using the `compact` prop.
 Check the markup for more details about usage.
 
 <!--code-->
 
 ```vue
 <script setup lang="ts">
+// this is our data
 const data = [
   {
     id: 0,
@@ -29,33 +29,33 @@ const data = [
   },
   // and more data ...
 ]
+
+const columns = {
+  id: {
+    label: 'Identifier',
+    inverted: true,
+    format: (value) => `N°${value}`,
+  },
+  company: {
+    label: 'Company',
+    bold: true,
+    grow: true,
+  },
+  type: 'Type',
+  status: {
+    label: 'Contacts',
+    align: 'center',
+  },
+  contacts: {
+    label: 'Contacts',
+    align: 'end',
+    scrollX: true,
+  },
+}
 </script>
 
 <template>
-  <!--VFlexTable-->
-  <VFlexTable compact>
-    <template #header>
-      <div class="flex-table-header">
-        <span>Company</span>
-        <span>Type</span>
-        <span>Industry</span>
-        <span>Status</span>
-        <span>Contacts</span>
-        <span class="cell-end">Actions</span>
-      </div>
-    </template>
-    <template #body>
-      <VFlexTableRowBase :rows="flexRowsBasic" />
-    </template>
-  </VFlexTable>
-
-  <!--Table Pagination-->
-  <VFlexPagination
-    :item-per-page="10"
-    :total-items="873"
-    :current-page="42"
-    :max-links-displayed="5"
-  />
+  <VFlexTable :data="data" :columns="columns" print-objects />
 </template>
 ```
 

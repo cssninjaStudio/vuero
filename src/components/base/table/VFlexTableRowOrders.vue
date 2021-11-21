@@ -7,7 +7,7 @@ const props = defineProps<VFlexTableRowOrders>()
 
 <template>
   <div v-for="row in props.rows" :key="row.id" class="flex-table-item">
-    <div class="flex-table-cell is-media is-grow" data-th="">
+    <div class="flex-table-cell is-media is-grow">
       <VAvatar :picture="row.picture" size="medium" squared />
       <div>
         <span class="item-name dark-inverted is-font-alt is-weight-600">{{
@@ -18,21 +18,21 @@ const props = defineProps<VFlexTableRowOrders>()
         </span>
       </div>
     </div>
-    <div class="flex-table-cell" data-th="Date">
+    <div class="flex-table-cell">
       <span class="light-text">{{ row.date }}</span>
     </div>
-    <div class="flex-table-cell" data-th="Amount">
+    <div class="flex-table-cell">
       <span class="dark-inverted is-weight-600">${{ row.amount }}</span>
     </div>
-    <div class="flex-table-cell" data-th="Status">
+    <div class="flex-table-cell">
       <VTag v-if="row.status === 'paid'" color="green" rounded label="Paid" />
       <VTag v-if="row.status === 'pending'" color="orange" rounded label="Pending" />
     </div>
-    <div class="flex-table-cell" data-th="Tracking">
+    <div class="flex-table-cell">
       <a v-if="row.tracking" class="action-link is-pushed-mobile">{{ row.tracking }}</a>
       <span v-else class="light-text is-pushed-mobile">N/A</span>
     </div>
-    <div class="flex-table-cell cell-end" data-th="Actions">
+    <div class="flex-table-cell cell-end">
       <VButton class="is-pushed-mobile" dark-outlined>View Order</VButton>
     </div>
   </div>

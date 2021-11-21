@@ -87,7 +87,8 @@ const emit = defineEmits(['close'])
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
             <a class="parent-link">
-              VFlexTable
+              Datatables
+              <VTag label="v2.2" color="primary" outlined curved />
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
           </div>
@@ -95,34 +96,43 @@ const emit = defineEmits(['close'])
             <li>
               <RouterLink :to="{ name: 'components-flex-table' }" class="is-submenu">
                 <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-                Base Table
+                VFlexTable
               </RouterLink>
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'components-flex-table-compact' }"
+                :to="{ name: 'components-flex-table-columns' }"
                 class="is-submenu"
               >
                 <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-                Compact Table
+                Customize columns
               </RouterLink>
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'components-flex-table-media' }"
+                :to="{ name: 'components-flex-table-slots' }"
                 class="is-submenu"
               >
                 <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-                Media Table
+                Slots usage (advanced)
               </RouterLink>
             </li>
             <li>
               <RouterLink
-                :to="{ name: 'components-flex-table-advanced' }"
+                :to="{ name: 'components-flex-table-render' }"
                 class="is-submenu"
               >
                 <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-                Advanced Table</RouterLink
+                Render functions (advanced)
+              </RouterLink>
+            </li>
+            <li>
+              <RouterLink
+                :to="{ name: 'components-flex-table-wrapper' }"
+                class="is-submenu"
+              >
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+                VFlexTableWrapper</RouterLink
               >
             </li>
           </ul>

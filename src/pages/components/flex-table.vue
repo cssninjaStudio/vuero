@@ -1,8 +1,18 @@
 <script setup lang="ts">
+import { h, ref, reactive, computed } from 'vue'
+import { RouterLink, useRoute } from 'vue-router'
 import { useHead } from '@vueuse/head'
 
-import { flexRowsBasic } from '/@src/data/documentation/table'
+import { flexRowsBasic, flexRowsContacts } from '/@src/data/documentation/table'
+import useMarkdownToc from '/@src/composable/useMarkdownToc'
 import { pageTitle } from '/@src/state/sidebarLayoutState'
+
+const markdownContainer = ref<HTMLElement>()
+const toc = useMarkdownToc(markdownContainer)
+
+const rowClick = (row: any) => {
+  console.log(row)
+}
 
 pageTitle.value = 'VFlexTable'
 useHead({
@@ -34,36 +44,117 @@ useHead({
     />
 
     <div class="columns">
-      <div class="column is-12">
-        <!--Flex Table-->
+      <div
+        ref="markdownContainer"
+        :class="[toc.length > 0 ? 'is-9' : 'is-12']"
+        class="column doc-column"
+      >
         <VFlexTableBaseDocumentation />
 
-        <div class="mt-4">
-          <!--VFlexTabe-->
-          <VFlexTable>
-            <template #header>
-              <div class="flex-table-header">
-                <span>Company</span>
-                <span>Type</span>
-                <span>Industry</span>
-                <span>Status</span>
-                <span>Contacts</span>
-                <span class="cell-end">Actions</span>
-              </div>
-            </template>
-            <template #body>
-              <VFlexTableRowBase :rows="flexRowsBasic" />
-            </template>
-          </VFlexTable>
-
-          <!--Table Pagination-->
-          <VFlexPagination
-            :item-per-page="10"
-            :total-items="873"
-            :current-page="42"
-            :max-links-displayed="5"
-          />
+        <div class="mt-4 mb-4">
+          <VFlexTable :data="flexRowsBasic" />
         </div>
+
+        <a id="no-header" name="no-header" class="is-invisible is-block zero-height">
+          Without header
+        </a>
+        <div
+          class="is-divider"
+          data-content="Without header"
+          style="--white: var(--background-grey)"
+        ></div>
+
+        <div class="mt-4">
+          <VFlexTable :data="flexRowsBasic" no-header />
+        </div>
+
+        <a id="rounded" name="rounded" class="is-invisible is-block zero-height">
+          Rounded
+        </a>
+        <div
+          class="is-divider"
+          data-content="Rounded"
+          style="--white: var(--background-grey)"
+        ></div>
+
+        <div class="mt-4">
+          <VFlexTable :data="flexRowsBasic" rounded />
+        </div>
+
+        <a id="compact" name="compact" class="is-invisible is-block zero-height">
+          Compact
+        </a>
+        <div
+          class="is-divider"
+          data-content="Compact"
+          style="--white: var(--background-grey)"
+        ></div>
+
+        <div class="mt-4 mb-4">
+          <VFlexTable :data="flexRowsBasic" compact />
+        </div>
+
+        <a
+          id="compact-rounded"
+          name="compact-rounded"
+          class="is-invisible is-block zero-height"
+        >
+          Compact & Rounded
+        </a>
+        <div
+          class="is-divider"
+          data-content="Compact & Rounded"
+          style="--white: var(--background-grey)"
+        ></div>
+
+        <div class="mt-4">
+          <VFlexTable :data="flexRowsBasic" compact rounded />
+        </div>
+
+        <a id="subtable" name="subtable" class="is-invisible is-block zero-height">
+          SubTable
+        </a>
+        <div
+          class="is-divider"
+          data-content="SubTable"
+          style="--white: var(--background-grey)"
+        ></div>
+
+        <div class="mt-4">
+          <VFlexTable :data="flexRowsBasic" subtable />
+        </div>
+
+        <VFlexTablePrintObjectsDocumentation class="mt-6" />
+
+        <div class="mt-4">
+          <VFlexTable rounded :data="flexRowsContacts" print-objects />
+        </div>
+
+        <a
+          id="without-print-object"
+          name="without-print-object"
+          class="is-invisible is-block zero-height"
+        >
+          Without print-objects
+        </a>
+        <div
+          class="is-divider"
+          data-content="Without print-objects"
+          style="--white: var(--background-grey)"
+        ></div>
+
+        <div class="mt-4">
+          <VFlexTable rounded :data="flexRowsContacts" />
+        </div>
+
+        <VFlexTablePropsDocumentation class="mt-6" />
+
+        <VFlexTableEventsDocumentation class="mt-6" />
+
+        <VFlexTableSlotsDocumentation class="mt-6" />
+      </div>
+      <div v-if="toc.length" class="column is-3 toc-column">
+        <DocumentationToc :toc="toc" />
       </div>
     </div>
   </div>

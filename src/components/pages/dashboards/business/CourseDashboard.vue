@@ -126,45 +126,59 @@ import { courses, files, students } from '/@src/data/dashboards/course'
           </div>
         </div>
 
-        <!--Table-->
-        <div class="flex-table">
-          <!--Table item-->
-          <div v-for="student in students" :key="student.id" class="flex-table-item">
-            <div class="flex-table-cell is-media is-grow" data-th="">
-              <VAvatar :picture="student.picture" size="medium" />
+        <VFlexTable
+          rounded
+          :data="students"
+          :columns="{
+            picture: {
+              label: 'Picture',
+              media: true,
+              grow: true,
+            },
+            location: 'Location',
+            status: 'Status',
+            attendance: 'Schedule',
+            actions: {
+              label: 'Actions',
+              align: 'end',
+            },
+          }"
+        >
+          <template #header><div /></template>
+
+          <template #body-cell="{ row, column, value }">
+            <template v-if="column.key === 'picture'">
+              <VAvatar :picture="row.picture" size="medium" />
               <div>
-                <span class="item-name dark-inverted">{{ student.username }}</span>
+                <span class="item-name dark-inverted">{{ row.username }}</span>
                 <span class="item-meta">
-                  <span>{{ student.progress }}% completed</span>
+                  <span>{{ row.progress }}% completed</span>
                 </span>
               </div>
-            </div>
-            <div class="flex-table-cell" data-th="Location">
-              <span class="light-text">{{ student.location }}</span>
-            </div>
-            <div class="flex-table-cell" data-th="Status">
-              <span
+            </template>
+            <template v-else-if="column.key === 'status'">
+              <VTag
                 class="tag is-rounded"
-                :class="[
-                  student.status === 'Online' && 'is-green',
-                  student.status === 'Busy' && 'is-orange',
-                  student.status === 'Offline' && '',
-                ]"
-                >{{ student.status }}</span
+                :color="
+                  row.status === 'Online'
+                    ? 'green'
+                    : row.status === 'Busy'
+                    ? 'orange'
+                    : undefined
+                "
               >
-            </div>
-            <div class="flex-table-cell" data-th="Schedule">
-              <span class="light-text">{{ student.attendance }}</span>
-            </div>
-            <div class="flex-table-cell cell-end" data-th="Actions">
-              <button
-                class="button h-button action-button is-dark-outlined is-pushed-mobile"
+                {{ row.status }}
+              </VTag>
+            </template>
+            <template v-else-if="column.key === 'actions'">
+              <VAction class="action-button is-dark-outlined is-pushed-mobile"
+                >Chat</VAction
               >
-                Chat
-              </button>
-            </div>
-          </div>
-        </div>
+            </template>
+
+            <span v-else class="light-text">{{ value }}</span>
+          </template>
+        </VFlexTable>
       </div>
     </div>
   </div>

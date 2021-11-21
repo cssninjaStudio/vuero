@@ -9,52 +9,20 @@ Check the markup for more details about usage.
 
 ```vue
 <script setup lang="ts">
+// this is our data
 const data = [
   {
-    id: 0,
-    company: 'Grubspot',
-    type: 'New Lead',
-    industry: 'Software',
-    status: 'Active',
-    contacts: [
-      {
-        id: 0,
-        picture: '/demo/avatars/25.jpg',
-        initials: 'AC',
-        color: 'info',
-      },
-      // and more contacts ..
-    ],
+    emoji: '🚴‍♂️',
+    color: 'yellow',
+    name: 'Biking',
+    category: 'Sports',
   },
   // and more data ...
 ]
 </script>
 
 <template>
-  <!--VFlexTable-->
-  <VFlexTable>
-    <template #header>
-      <div class="flex-table-header">
-        <span>Company</span>
-        <span>Type</span>
-        <span>Industry</span>
-        <span>Status</span>
-        <span>Contacts</span>
-        <span class="cell-end">Actions</span>
-      </div>
-    </template>
-    <template #body>
-      <VFlexTableRowBase :rows="data" />
-    </template>
-  </VFlexTable>
-
-  <!--Table Pagination-->
-  <VFlexPagination
-    :item-per-page="10"
-    :total-items="873"
-    :current-page="42"
-    :max-links-displayed="5"
-  />
+  <VFlexTable :data="data" />
 </template>
 ```
 

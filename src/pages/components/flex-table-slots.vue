@@ -1,0 +1,379 @@
+<script setup lang="ts">
+import { ref, computed } from 'vue'
+import { useHead } from '@vueuse/head'
+
+import { flexRowsContacts } from '/@src/data/documentation/table'
+import { pageTitle } from '/@src/state/sidebarLayoutState'
+
+// this is a local directive (it begins with V..., usable with v-focus)
+// that is used to force the focus on input when mounted
+const VFocus = {
+  mounted(el: HTMLInputElement) {
+    el.focus()
+  },
+}
+
+const selectedRows = ref<number[]>([])
+const editCompanyIndex = ref<number>()
+const isAllSelected = computed(
+  () => flexRowsContacts.length === selectedRows.value.length
+)
+
+const columns = {
+  select: {
+    label: '',
+    cellClass: 'is-flex-grow-0',
+  },
+  company: {
+    label: 'Company',
+    grow: true,
+  },
+  type: 'Type',
+  industry: 'Industry',
+  status: 'Status',
+  contacts: {
+    label: '',
+    align: 'end',
+  },
+} as const
+function toggleSelection() {
+  if (isAllSelected.value) {
+    selectedRows.value = []
+  } else {
+    selectedRows.value = flexRowsContacts.map((_, index) => index)
+  }
+}
+function clickOnRow(row: any) {
+  if (selectedRows.value.includes(row.id)) {
+    selectedRows.value = selectedRows.value.filter((i) => i !== row.id)
+  } else {
+    selectedRows.value = [...selectedRows.value, row.id]
+  }
+}
+function contactUser(row: any) {
+  alert(`Contacting "${row.company}" ...`)
+}
+
+pageTitle.value = 'VFlexTable (Compact)'
+useHead({
+  title: 'VFlexTable Compact - Components - Vuero',
+})
+</script>
+
+<template>
+  <div class="page-content-inner">
+    <VBreadcrumb
+      with-icons
+      separator="bullet"
+      :items="[
+        {
+          label: 'Vuero',
+          hideLabel: true,
+          icon: 'feather:home',
+          to: { name: 'index' },
+        },
+        {
+          label: 'Components',
+          to: { name: 'components' },
+        },
+        {
+          label: 'VFlexTable',
+          to: { name: 'components-flex-table' },
+        },
+        {
+          label: 'Compact',
+          to: { name: 'components-flex-table-slots' },
+        },
+      ]"
+    />
+
+    <div class="columns">
+      <div class="column is-12">
+        <!--Flex Table-->
+        <VFlexTableWithSlotsDocumentation class="mt-5" />
+
+        <div class="mt-4">
+          <!--VFlexTabe-->
+          <VFlexTable
+            :data="flexRowsContacts"
+            :columns="columns"
+            compact
+            rounded
+            reactive
+          >
+            <!-- header-column slot -->
+            <template #header-column="{ column }">
+              <VCheckbox
+                v-if="column.key === 'select'"
+                class="ml-2 mr-3"
+                :checked="isAllSelected"
+                name="all_selected"
+                color="primary"
+                square
+                @click="toggleSelection"
+              />
+            </template>
+            <!-- body-cell slot -->
+            <template #body-cell="{ row, column, index, value }">
+              <VCheckbox
+                v-if="column.key === 'select'"
+                v-model="selectedRows"
+                :value="row.id"
+                name="selection"
+                square
+              />
+              <template v-else-if="column.key === 'company'">
+                <VControl v-if="editCompanyIndex === index">
+                  <VField>
+                    <input
+                      v-model="row[column.key]"
+                      v-focus
+                      type="text"
+                      class="input is-info-focus"
+                      @blur="editCompanyIndex = undefined"
+                      @keyup.enter="editCompanyIndex = undefined"
+                    />
+                  </VField>
+                </VControl>
+
+                <a
+                  v-else
+                  class="is-overlay m-3 is-clickable"
+                  tabindex="0"
+                  @click="editCompanyIndex = index"
+                  @focus="editCompanyIndex = index"
+                >
+                  {{ value }}
+                  <i
+                    class="iconify is-inline"
+                    data-icon="feather:edit"
+                    role="img"
+                    aria-label="edit"
+                  ></i>
+                </a>
+              </template>
+
+              <VTag
+                v-else-if="column.key === 'status'"
+                rounded
+                :color="
+                  value === 'Suspended'
+                    ? 'orange'
+                    : value === 'New'
+                    ? 'info'
+                    : value === 'Active'
+                    ? 'primary'
+                    : undefined
+                "
+              >
+                {{ value }}
+              </VTag>
+
+              <VAction
+                v-else-if="column.key === 'contacts'"
+                hoverable
+                @click="contactUser(row)"
+              >
+                Contact manager
+              </VAction>
+            </template>
+          </VFlexTable>
+        </div>
+
+        <a
+          id="with-reactive"
+          name="with-reactive"
+          class="is-invisible is-block zero-height"
+        >
+          With reactive props
+        </a>
+        <div
+          class="is-divider"
+          data-content="With reactive props"
+          style="--white: var(--background-grey)"
+        ></div>
+
+        <div class="mt-4">
+          <VFlexTable
+            :data="flexRowsContacts"
+            :columns="columns"
+            compact
+            rounded
+            reactive
+          >
+            <template #header-column="{ column }">
+              <VCheckbox
+                v-if="column.key === 'select'"
+                class="ml-2 mr-3"
+                :checked="isAllSelected"
+                name="all_selected"
+                color="primary"
+                square
+                @click="toggleSelection"
+              />
+            </template>
+            <template #body-cell="{ row, column, value }">
+              <VCheckbox
+                v-if="column.key === 'select'"
+                v-model="selectedRows"
+                :value="row.id"
+                name="selection"
+                square
+              />
+              <VTag
+                v-else-if="column.key === 'status'"
+                rounded
+                :color="
+                  value === 'Suspended'
+                    ? 'orange'
+                    : value === 'New'
+                    ? 'info'
+                    : value === 'Active'
+                    ? 'primary'
+                    : undefined
+                "
+              >
+                {{ value }}
+              </VTag>
+              <VAction
+                v-if="column.key === 'contacts'"
+                hoverable
+                @click="contactUser(row)"
+              >
+                Contact manager
+              </VAction>
+            </template>
+          </VFlexTable>
+        </div>
+
+        <a
+          id="without-reactive"
+          name="without-reactive"
+          class="is-invisible is-block zero-height"
+        >
+          Without reactive props
+        </a>
+        <div
+          class="is-divider"
+          data-content="Without reactive props"
+          style="--white: var(--background-grey)"
+        ></div>
+
+        <div class="mt-4">
+          <VFlexTable :data="flexRowsContacts" :columns="columns" compact rounded>
+            <template #header-column="{ column }">
+              <VCheckbox
+                v-if="column.key === 'select'"
+                class="ml-2 mr-3"
+                :checked="isAllSelected"
+                name="all_selected"
+                color="primary"
+                square
+                @click="toggleSelection"
+              />
+            </template>
+            <template #body-cell="{ row, column, value }">
+              <VCheckbox
+                v-if="column.key === 'select'"
+                v-model="selectedRows"
+                :value="row.id"
+                name="selection"
+                square
+              />
+
+              <VTag
+                v-else-if="column.key === 'status'"
+                rounded
+                :color="
+                  value === 'Suspended'
+                    ? 'orange'
+                    : value === 'New'
+                    ? 'info'
+                    : value === 'Active'
+                    ? 'primary'
+                    : undefined
+                "
+              >
+                {{ value }}
+              </VTag>
+              <VAction
+                v-else-if="column.key === 'contacts'"
+                hoverable
+                @click="contactUser(row)"
+              >
+                Contact manager
+              </VAction>
+            </template>
+          </VFlexTable>
+        </div>
+
+        <a
+          id="with-clickable"
+          name="with-clickable"
+          class="is-invisible is-block zero-height"
+        >
+          With clickable props
+        </a>
+        <div
+          class="is-divider"
+          data-content="With clickable props"
+          style="--white: var(--background-grey)"
+        ></div>
+
+        <div class="mt-4">
+          <VFlexTable
+            :data="flexRowsContacts"
+            :columns="columns"
+            clickable
+            compact
+            rounded
+            @row-click="clickOnRow"
+          >
+            <template #header-column="{ column }">
+              <VCheckbox
+                v-if="column.key === 'select'"
+                class="ml-2 mr-3"
+                :checked="isAllSelected"
+                name="all_selected"
+                color="primary"
+                square
+                @click="toggleSelection"
+              />
+            </template>
+            <template #body-cell="{ row, column, value }">
+              <VCheckbox
+                v-if="column.key === 'select'"
+                v-model="selectedRows"
+                :value="row.id"
+                name="selection"
+                square
+              />
+
+              <VTag
+                v-else-if="column.key === 'status'"
+                rounded
+                :color="
+                  value === 'Suspended'
+                    ? 'orange'
+                    : value === 'New'
+                    ? 'info'
+                    : value === 'Active'
+                    ? 'primary'
+                    : undefined
+                "
+              >
+                {{ value }}
+              </VTag>
+              <VAction
+                v-else-if="column.key === 'contacts'"
+                @click.stop="contactUser(row)"
+              >
+                Contact manager
+              </VAction>
+            </template>
+          </VFlexTable>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

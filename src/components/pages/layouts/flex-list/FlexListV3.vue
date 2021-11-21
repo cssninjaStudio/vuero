@@ -16,16 +16,32 @@ const props = withDefaults(
 const filters = ref('')
 const tab = ref(props.activeTab)
 
+const columns = {
+  picture: {
+    label: 'Course',
+    grow: 'lg',
+  },
+  category: 'Category',
+  skill: 'Main Skill',
+  difficulty: 'Difficulty',
+  actions: {
+    label: 'Actions',
+    align: 'end',
+  },
+} as const
+
 const filteredData = computed(() => {
   if (!filters.value) {
     return classes
   } else {
+    const filterRe = new RegExp(filters.value, 'i')
+
     return classes.filter((item) => {
       return (
-        item.name.match(new RegExp(filters.value, 'i')) ||
-        item.category.match(new RegExp(filters.value, 'i')) ||
-        item.skill.name.match(new RegExp(filters.value, 'i')) ||
-        item.author.username.match(new RegExp(filters.value, 'i'))
+        item.name.match(filterRe) ||
+        item.category.match(filterRe) ||
+        item.skill.name.match(filterRe) ||
+        item.author.username.match(filterRe)
       )
     })
   }
@@ -61,7 +77,7 @@ const filteredData = computed(() => {
     <div class="flex-list-wrapper flex-list-v3">
       <!--List Empty Search Placeholder -->
       <VPlaceholderPage
-        :class="[filteredData.length !== 0 && 'is-hidden']"
+        v-if="tab === 'all' && !filteredData.length"
         title="We couldn't find any matching results."
         subtitle="Too bad. Looks like we couldn't find any matching results for the
           search terms you've entered. Please try different search terms or
@@ -83,26 +99,10 @@ const filteredData = computed(() => {
       </VPlaceholderPage>
 
       <!--Active Tab-->
-      <div
-        id="active-items-tab"
-        class="tab-content"
-        :class="[tab === 'all' && 'is-active']"
-      >
-        <div class="flex-table">
-          <!--Table header-->
-          <div
-            class="flex-table-header"
-            :class="[filteredData.length === 0 && 'is-hidden']"
-          >
-            <span class="is-grow-lg">Course</span>
-            <span>Category</span>
-            <span>Main Skill</span>
-            <span>Difficulty</span>
-            <span class="cell-end">Actions</span>
-          </div>
-
-          <div class="flex-list-inner">
-            <transition-group name="list" tag="div">
+      <div v-else-if="tab === 'all' && filteredData.length" class="tab-content is-active">
+        <VFlexTable :data="filteredData" :columns="columns" rounded>
+          <template #body>
+            <transition-group name="list" tag="div" class="flex-list-inner">
               <!--Table item-->
               <div v-for="item in filteredData" :key="item.id" class="flex-table-item">
                 <div class="flex-table-cell is-media is-grow-lg">
@@ -124,10 +124,10 @@ const filteredData = computed(() => {
                     </div>
                   </div>
                 </div>
-                <div class="flex-table-cell" data-th="Category">
+                <div class="flex-table-cell">
                   <span class="light-text">{{ item.category }}</span>
                 </div>
-                <div class="flex-table-cell" data-th="Main Skill">
+                <div class="flex-table-cell">
                   <i
                     aria-hidden="true"
                     class="cell-icon is-pushed-mobile"
@@ -135,7 +135,7 @@ const filteredData = computed(() => {
                   ></i>
                   <span class="light-text no-push">{{ item.skill.name }}</span>
                 </div>
-                <div class="flex-table-cell" data-th="Difficulty">
+                <div class="flex-table-cell">
                   <span class="dot-levels">
                     <i
                       class="fas fa-circle dot active"
@@ -164,7 +164,7 @@ const filteredData = computed(() => {
                     ></i>
                   </span>
                 </div>
-                <div class="flex-table-cell cell-end" data-th="Actions">
+                <div class="flex-table-cell cell-end">
                   <a class="button v-button has-dot dark-outlined is-pushed-mobile">
                     Purchase
                     <i aria-hidden="true" class="fas fa-circle dot"></i> ${{ item.price }}
@@ -172,8 +172,8 @@ const filteredData = computed(() => {
                 </div>
               </div>
             </transition-group>
-          </div>
-        </div>
+          </template>
+        </VFlexTable>
 
         <!--Table Pagination-->
         <VFlexPagination
@@ -187,9 +187,8 @@ const filteredData = computed(() => {
 
       <!--inactive Tab-->
       <div
-        id="inactive-items-tab"
-        class="tab-content"
-        :class="[tab === 'saved' && 'is-active']"
+        v-else-if="tab === 'saved' && filteredData.length"
+        class="tab-content is-active"
       >
         <!--Empty placeholder-->
         <VPlaceholderPage

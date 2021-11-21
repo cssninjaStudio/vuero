@@ -1,5 +1,69 @@
 <script setup lang="ts">
+import { h } from 'vue'
+
 import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+import { flexRowsBasic as data } from '/@src/data/documentation/table'
+import VTag from '/@src/components/base/tags/VTag.vue'
+import FlexTableDropdown from '/@src/components/partials/dropdowns/FlexTableDropdown.vue'
+import VAvatarStack from '/@src/components/base/avatar/VAvatarStack.vue'
+
+const columns = {
+  company: {
+    label: 'Company',
+    bold: true,
+    sortable: true,
+    searchable: true,
+  },
+  type: 'Type',
+  industry: 'Industry',
+  status: {
+    label: 'Status',
+    // we can use custom render function for each rows
+    renderRow: (row: any) =>
+      h(
+        VTag,
+        {
+          rounded: true,
+          color:
+            row.status === 'Active'
+              ? 'success'
+              : row.status === 'New'
+              ? 'info'
+              : row.status === 'Suspended'
+              ? 'orange'
+              : undefined,
+        },
+        // note that notation is to render content in the default slot
+        {
+          default() {
+            return `${row.status}`
+          },
+        }
+      ),
+  },
+  contacts: {
+    label: 'Contacts',
+    renderRow: (row: any) =>
+      // We can render custom components and set props
+      h(VAvatarStack, {
+        class: 'is-pushed-mobile',
+        size: 'small',
+        avatars: row.contacts,
+        limit: 3,
+      }),
+  },
+  actions: {
+    label: 'Actions',
+    align: 'end',
+    renderRow: (row: any) =>
+      h(FlexTableDropdown, {
+        // We can catch all events from vue
+        onClick: () => {
+          console.log('clicked on FlexTableDropdown', row)
+        },
+      }),
+  },
+} as const
 </script>
 
 <template>
@@ -92,161 +156,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
     <div class="columns">
       <div class="column is-12">
-        <div class="flex-table is-compact">
-          <!--Table header-->
-          <div class="flex-table-header">
-            <span>Company</span>
-            <span>Type</span>
-            <span>Industry</span>
-            <span>Status</span>
-            <span>Contacts</span>
-            <span class="cell-end">Actions</span>
-          </div>
-
-          <!--Table item-->
-          <div class="flex-table-item">
-            <div class="flex-table-cell is-bold" data-th="Company">
-              <span class="dark-text">Grubspot</span>
-            </div>
-            <div class="flex-table-cell" data-th="Type">
-              <span class="light-text">New lead</span>
-            </div>
-            <div class="flex-table-cell" data-th="Industry">
-              <span class="light-text">Software</span>
-            </div>
-            <div class="flex-table-cell" data-th="Status">
-              <span class="tag is-solid is-rounded">Active</span>
-            </div>
-            <div class="flex-table-cell" data-th="Contacts">
-              <VAvatarStack
-                class="is-pushed-mobile"
-                size="small"
-                :limit="3"
-                :avatars="[
-                  { picture: '/demo/avatars/7.jpg' },
-                  { color: 'info', initials: 'JD' },
-                  { picture: '/demo/avatars/12.jpg' },
-                  { picture: '/demo/avatars/12.jpg' },
-                  { picture: '/demo/avatars/12.jpg' },
-                ]"
-              />
-            </div>
-            <div class="flex-table-cell cell-end" data-th="Actions">
-              <FlexTableDropdown />
-            </div>
-          </div>
-
-          <!--Table item-->
-          <div class="flex-table-item">
-            <div class="flex-table-cell is-bold" data-th="Company">
-              <span class="dark-text">PhaseBit</span>
-            </div>
-            <div class="flex-table-cell" data-th="Type">
-              <span class="light-text">Confirmed</span>
-            </div>
-            <div class="flex-table-cell" data-th="Industry">
-              <span class="light-text">Cryptocurrency</span>
-            </div>
-            <div class="flex-table-cell" data-th="Status">
-              <span class="tag is-solid is-rounded">New</span>
-            </div>
-            <div class="flex-table-cell" data-th="Contacts">
-              <VAvatarStack
-                class="is-pushed-mobile"
-                size="small"
-                :avatars="[{ color: 'danger', initials: 'SC' }]"
-              />
-            </div>
-            <div class="flex-table-cell cell-end" data-th="Actions">
-              <FlexTableDropdown />
-            </div>
-          </div>
-
-          <!--Table item-->
-          <div class="flex-table-item">
-            <div class="flex-table-cell is-bold" data-th="Company">
-              <span class="dark-text">Kokolint</span>
-            </div>
-            <div class="flex-table-cell" data-th="Type">
-              <span class="light-text">New lead</span>
-            </div>
-            <div class="flex-table-cell" data-th="Industry">
-              <span class="light-text">Software</span>
-            </div>
-            <div class="flex-table-cell" data-th="Status">
-              <span class="tag is-solid is-rounded">Active</span>
-            </div>
-            <div class="flex-table-cell" data-th="Contacts">
-              <VAvatarStack
-                class="is-pushed-mobile"
-                size="small"
-                :avatars="[
-                  { color: 'success', initials: 'BT' },
-                  { picture: '/images/avatars/svg/vuero-1.svg' },
-                ]"
-              />
-            </div>
-            <div class="flex-table-cell cell-end" data-th="Actions">
-              <FlexTableDropdown />
-            </div>
-          </div>
-
-          <!--Table item-->
-          <div class="flex-table-item">
-            <div class="flex-table-cell is-bold" data-th="Company">
-              <span class="dark-text">VScope X</span>
-            </div>
-            <div class="flex-table-cell" data-th="Type">
-              <span class="light-text">Canceled</span>
-            </div>
-            <div class="flex-table-cell" data-th="Industry">
-              <span class="light-text">Software</span>
-            </div>
-            <div class="flex-table-cell" data-th="Status">
-              <VTag label="Disabled" color="solid" rounded />
-            </div>
-            <div class="flex-table-cell" data-th="Contacts">
-              <VAvatarStack
-                class="is-pushed-mobile"
-                size="small"
-                :avatars="[{ picture: '/demo/avatars/13.jpg' }]"
-              />
-            </div>
-            <div class="flex-table-cell cell-end" data-th="Actions">
-              <FlexTableDropdown />
-            </div>
-          </div>
-
-          <!--Table item-->
-          <div class="flex-table-item">
-            <div class="flex-table-cell is-bold" data-th="Company">
-              <span class="dark-text">MediHelp</span>
-            </div>
-            <div class="flex-table-cell" data-th="Type">
-              <span class="light-text">Confirmed</span>
-            </div>
-            <div class="flex-table-cell" data-th="Industry">
-              <span class="light-text">Software</span>
-            </div>
-            <div class="flex-table-cell" data-th="Status">
-              <VTag label="Suspended" color="solid" rounded />
-            </div>
-            <div class="flex-table-cell" data-th="Contacts">
-              <VAvatarStack
-                class="is-pushed-mobile"
-                size="small"
-                :avatars="[
-                  { picture: '/demo/avatars/11.jpg' },
-                  { picture: '/demo/avatars/16.jpg' },
-                  { picture: '/demo/avatars/19.jpg' },
-                ]"
-              />
-            </div>
-            <div class="flex-table-cell cell-end" data-th="Actions">
-              <FlexTableDropdown />
-            </div>
-          </div>
-        </div>
+        <VFlexTable :data="data" :columns="columns" rounded compact></VFlexTable>
       </div>
     </div>
   </div>

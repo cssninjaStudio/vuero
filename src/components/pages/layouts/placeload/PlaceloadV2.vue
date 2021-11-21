@@ -23,47 +23,55 @@ const filters = ref('')
     </div>
 
     <div class="flex-list-wrapper flex-list-v1">
-      <div class="flex-table">
-        <!--Table header-->
-        <div class="flex-table-header" data-filter-hide>
-          <span class="is-grow">User</span>
-          <span>Location</span>
-          <span>Industry</span>
-          <span>Status</span>
-          <span>Relations</span>
-          <span class="cell-end">Actions</span>
-        </div>
+      <VFlexTable rounded>
+        <template #header>
+          <div class="flex-table-header" data-filter-hide>
+            <span class="is-grow">User</span>
+            <span>Location</span>
+            <span>Industry</span>
+            <span>Status</span>
+            <span>Relations</span>
+            <span class="cell-end">Actions</span>
+          </div>
+        </template>
 
-        <div class="flex-list-inner">
-          <!--Table item placeload-->
-          <div v-for="key in 10" :key="key" class="flex-table-item">
-            <div class="flex-table-cell is-media is-grow">
-              <VPlaceloadAvatar size="medium" />
+        <template #body>
+          <div class="flex-list-inner">
+            <!--Table item placeload-->
+            <div v-for="key in 10" :key="key" class="flex-table-item">
+              <div class="flex-table-cell is-media is-grow">
+                <VPlaceloadAvatar size="medium" />
 
-              <VPlaceloadText :lines="2" width="80%" last-line-width="60%" class="mx-2" />
-            </div>
-            <div class="flex-table-cell" data-th="Location">
-              <VPlaceload class="mx-1" />
-            </div>
-            <div class="flex-table-cell" data-th="Industry">
-              <VPlaceload class="mx-1" />
-            </div>
-            <div class="flex-table-cell" data-th="Status">
-              <VPlaceload class="mx-1" />
-            </div>
-            <div class="flex-table-cell" data-th="Relations">
-              <VAvatarStack class="is-pushed-mobile">
-                <VPlaceloadAvatar size="small" class="mx-1" />
-                <VPlaceloadAvatar size="small" class="mx-1" />
-                <VPlaceloadAvatar size="small" class="mx-1" />
-              </VAvatarStack>
-            </div>
-            <div class="flex-table-cell cell-end" data-th="Actions">
-              <VPlaceload class="mx-1" />
+                <VPlaceloadText
+                  :lines="2"
+                  width="80%"
+                  last-line-width="60%"
+                  class="mx-2"
+                />
+              </div>
+              <div class="flex-table-cell">
+                <VPlaceload class="mx-1" />
+              </div>
+              <div class="flex-table-cell">
+                <VPlaceload class="mx-1" />
+              </div>
+              <div class="flex-table-cell">
+                <VPlaceload class="mx-1" />
+              </div>
+              <div class="flex-table-cell">
+                <VAvatarStack class="is-pushed-mobile">
+                  <VPlaceloadAvatar size="small" class="mx-1" />
+                  <VPlaceloadAvatar size="small" class="mx-1" />
+                  <VPlaceloadAvatar size="small" class="mx-1" />
+                </VAvatarStack>
+              </div>
+              <div class="flex-table-cell cell-end">
+                <VPlaceload class="mx-1" />
+              </div>
             </div>
           </div>
-        </div>
-      </div>
+        </template>
+      </VFlexTable>
     </div>
   </div>
 </template>

@@ -397,20 +397,62 @@ import {
           </VField>
         </div>
 
-        <div class="flex-table">
-          <!--Table header-->
-          <div class="flex-table-header">
-            <span class="is-grow">Customer</span>
-            <span>Date</span>
-            <span>Amount</span>
-            <span>Status</span>
-            <span>Tracking</span>
-            <span class="cell-end">Actions</span>
-          </div>
+        <VFlexTable
+          rounded
+          :data="flexRowsOrders"
+          :columns="{
+            picture: {
+              label: 'Customer',
+              media: true,
+              grow: true,
+            },
+            date: 'Date',
+            amount: 'Amount',
+            status: 'Status',
+            tracking: 'Tracking',
+            actions: {
+              label: 'Actions',
+              align: 'end',
+            },
+          }"
+        >
+          <template #body-cell="{ row, column, value }">
+            <template v-if="column.key === 'picture'">
+              <VAvatar :picture="row.picture" size="medium" squared />
+              <div>
+                <span class="item-name dark-inverted is-font-alt is-weight-600">{{
+                  row.username
+                }}</span>
+                <span class="item-meta">
+                  <span>{{ row.orderId }}</span>
+                </span>
+              </div>
+            </template>
+            <template v-else-if="column.key === 'amount'">
+              <span class="dark-inverted is-weight-600">${{ row.amount }}</span>
+            </template>
+            <template v-else-if="column.key === 'status'">
+              <VTag v-if="row.status === 'paid'" color="green" rounded label="Paid" />
+              <VTag
+                v-if="row.status === 'pending'"
+                color="orange"
+                rounded
+                label="Pending"
+              />
+            </template>
+            <template v-else-if="column.key === 'tracking'">
+              <a v-if="row.tracking" class="action-link is-pushed-mobile">{{
+                row.tracking
+              }}</a>
+              <span v-else class="light-text is-pushed-mobile">N/A</span>
+            </template>
+            <template v-else-if="column.key === 'actions'">
+              <VButton class="is-pushed-mobile" dark-outlined>View Order</VButton>
+            </template>
 
-          <!--Table item-->
-          <VFlexTableRowOrders :rows="flexRowsOrders" />
-        </div>
+            <span v-else class="light-text">{{ value }}</span>
+          </template>
+        </VFlexTable>
       </div>
     </div>
   </div>

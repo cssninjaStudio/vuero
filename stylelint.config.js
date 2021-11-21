@@ -30,6 +30,7 @@ module.exports = {
 
     /** Vuejs **/
     'value-keyword-case': null,
+    'custom-property-empty-line-before': null,
     'selector-pseudo-element-no-unknown': [
       true,
       {

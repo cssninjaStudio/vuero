@@ -1,5 +1,35 @@
 <script setup lang="ts">
 import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
+
+const data = [
+  {
+    type: 'messages',
+    count: 5,
+    status: 'new',
+  },
+  {
+    type: 'tasks',
+    count: 3,
+    status: 'pending',
+  },
+]
+
+const columns = {
+  type: {
+    label: 'Type',
+    grow: 'lg',
+    media: true,
+  },
+  count: {
+    label: 'Count',
+    align: 'center',
+  },
+  status: 'Status',
+  actions: {
+    label: 'Actions',
+    align: 'end',
+  },
+} as const
 </script>
 
 <template>
@@ -80,18 +110,9 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
           <!--Incoming-->
           <div class="column is-7 is-offset-1">
             <div class="incoming">
-              <div class="flex-table">
-                <!--Table header-->
-                <div class="flex-table-header">
-                  <span class="is-grow-lg">Type</span>
-                  <span>Count</span>
-                  <span>Status</span>
-                  <span class="cell-end">Actions</span>
-                </div>
-
-                <!--Table item-->
-                <div class="flex-table-item">
-                  <div class="flex-table-cell is-media is-grow-lg" data-th="">
+              <VFlexTable rounded :data="data" :columns="columns">
+                <template #body-cell="{ row, column, value }">
+                  <template v-if="column.key === 'type' && row.type === 'messages'">
                     <VIconBox color="green">
                       <i aria-hidden="true" class="lnil lnil-envelope-alt"></i>
                     </VIconBox>
@@ -101,21 +122,8 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
                         <span>Inbox messages</span>
                       </span>
                     </div>
-                  </div>
-                  <div class="flex-table-cell cell-center" data-th="Count">
-                    <span class="light-text">5</span>
-                  </div>
-                  <div class="flex-table-cell" data-th="Status">
-                    <VTag rounded color="success" label="New" />
-                  </div>
-                  <div class="flex-table-cell cell-end" data-th="Actions">
-                    <a class="action-link is-pushed-mobile">Open</a>
-                  </div>
-                </div>
-
-                <!--Table item-->
-                <div class="flex-table-item">
-                  <div class="flex-table-cell is-media is-grow-lg" data-th="">
+                  </template>
+                  <template v-else-if="column.key === 'type' && row.type === 'tasks'">
                     <VIconBox color="orange">
                       <i aria-hidden="true" class="lnil lnil-checkmark-circle"></i>
                     </VIconBox>
@@ -125,18 +133,23 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
                         <span>Pending tasks</span>
                       </span>
                     </div>
-                  </div>
-                  <div class="flex-table-cell cell-center" data-th="Count">
-                    <span class="light-text">3</span>
-                  </div>
-                  <div class="flex-table-cell" data-th="Status">
-                    <VTag rounded label="Pending" />
-                  </div>
-                  <div class="flex-table-cell cell-end" data-th="Actions">
+                  </template>
+                  <template v-else-if="column.key === 'status'">
+                    <VTag
+                      v-if="row.status === 'new'"
+                      rounded
+                      color="success"
+                      label="New"
+                    />
+                    <VTag v-else rounded label="Pending" />
+                  </template>
+                  <template v-else-if="column.key === 'actions'">
                     <a class="action-link is-pushed-mobile">Open</a>
-                  </div>
-                </div>
-              </div>
+                  </template>
+
+                  <span v-else class="light-text">{{ value }}</span>
+                </template>
+              </VFlexTable>
             </div>
           </div>
 
