@@ -24,6 +24,7 @@ export interface VFlexTableProps<T = any> {
   reactive?: boolean
   compact?: boolean
   rounded?: boolean
+  separators?: boolean
   clickable?: boolean
   subtable?: boolean
   noHeader?: boolean
@@ -85,6 +86,8 @@ const columns = computed(() => {
     :class="[
       props.compact && 'is-compact',
       props.rounded && 'is-rounded',
+      props.separators && 'with-separators',
+      props.noHeader && 'no-header',
       props.clickable && 'is-table-clickable',
       props.subtable && 'sub-table',
     ]"
@@ -123,7 +126,7 @@ const columns = computed(() => {
       <div
         v-for="(row, index) in data"
         :key="index"
-        class="flex-table-item"
+        class="flex-table-item has-slimscroll-x"
         :class="[props.clickable && 'is-clickable']"
         @click="
           () => {
@@ -141,14 +144,14 @@ const columns = computed(() => {
                 column.grow === true && 'is-grow',
                 column.grow === 'lg' && 'is-grow-lg',
                 column.grow === 'xl' && 'is-grow-xl',
-                column.scrollX && !column.scrollY && 'has-slimscroll-h',
+                column.scrollX && !column.scrollY && 'has-slimscroll-x',
                 !column.scrollX && column.scrollY && 'has-slimscroll',
                 column.scrollX && column.scrollY && 'has-slimscroll-all',
                 column.align === 'end' && 'cell-end',
                 column.align === 'center' && 'cell-center',
                 column.cellClass,
               ]"
-              :data-th="column.label"
+              :data-th="column.label || undefined"
             >
               <slot
                 name="body-cell"
@@ -172,7 +175,9 @@ const columns = computed(() => {
                   ]"
                 >
                   <details v-if="printObjects">
-                    <pre><code class="language-json">{{ column.format(row[column.key], row, index) }}</code></pre>
+                    <div class="language-json py-4">
+                      <pre><code>{{ column.format(row[column.key], row, index) }}</code></pre>
+                    </div>
                   </details>
                 </span>
                 <span
@@ -287,6 +292,8 @@ const columns = computed(() => {
       align-items: center;
       padding: 0 10px;
       font-family: var(--font);
+      word-break: keep-all;
+      white-space: nowrap;
 
       &.is-scrollable-x {
         overflow-x: auto;
@@ -546,14 +553,29 @@ const columns = computed(() => {
     }
 
     &.is-rounded {
-      .flex-table-item {
-        &:nth-of-type(2) {
-          border-radius: 8px 8px 0 0;
-        }
+      &:not(.no-header) {
+        .flex-table-item {
+          &:nth-of-type(2) {
+            border-radius: 8px 8px 0 0;
+          }
 
-        &:last-child {
-          margin-bottom: 6px;
-          border-radius: 0 0 8px 8px;
+          &:last-child {
+            margin-bottom: 6px;
+            border-radius: 0 0 8px 8px;
+          }
+        }
+      }
+
+      &.no-header {
+        .flex-table-item {
+          &:first-child {
+            border-radius: 8px 8px 0 0;
+          }
+
+          &:last-child {
+            margin-bottom: 6px;
+            border-radius: 0 0 8px 8px;
+          }
         }
       }
     }
@@ -570,10 +592,26 @@ const columns = computed(() => {
   &.is-table-clickable {
     .flex-table-item {
       &:hover {
-        background: var(--primary);
+        background: var(--primary) !important;
 
         .light-text {
           color: var(--white);
+        }
+
+        .flex-table-cell {
+          &::before {
+            color: var(--white);
+          }
+        }
+      }
+    }
+  }
+
+  &.with-separators {
+    .flex-table-item {
+      .flex-table-cell {
+        &:not(:first-of-type) {
+          border-left: dashed 1px var(--fade-grey-dark-3);
         }
       }
     }
@@ -587,9 +625,6 @@ const columns = computed(() => {
 .is-dark {
   .flex-table {
     .flex-table-item {
-      background: var(--dark-sidebar-light-6);
-      border-color: var(--dark-sidebar-light-12);
-
       .flex-table-cell {
         &.is-user,
         &.is-media {
@@ -635,6 +670,120 @@ const columns = computed(() => {
               color: var(--primary);
             }
           }
+        }
+      }
+    }
+
+    &:not(.sub-table) {
+      .flex-table-item {
+        background: var(--dark-sidebar-light-6);
+        border-color: var(--dark-sidebar-light-12);
+      }
+    }
+
+    &.with-separators {
+      .flex-table-item {
+        .flex-table-cell {
+          &:not(:first-of-type) {
+            border-left: dashed 1px var(--dark-sidebar-light-12);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+3. Media Queries
+========================================================================== */
+
+@media (max-width: 767px) {
+  .flex-table {
+    .flex-table-header {
+      display: none;
+    }
+
+    .flex-table-item {
+      flex-direction: column;
+      justify-content: center;
+      width: 100% !important;
+      padding: 20px;
+      margin-bottom: 16px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      > div {
+        border: none !important;
+      }
+
+      .flex-table-cell {
+        position: relative;
+        margin-bottom: 12px;
+
+        &.no-label-mobile {
+          &::before {
+            display: none !important;
+          }
+        }
+
+        &.cell-end {
+          justify-content: flex-start !important;
+
+          .btn-group {
+            margin-left: auto;
+          }
+        }
+
+        &.is-user,
+        &.is-media {
+          padding-left: 10px;
+
+          span {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+
+    &:not(.sub-table) {
+      .flex-table-item {
+        .flex-table-cell {
+          > span,
+          > small,
+          > strong,
+          > p,
+          > div,
+          > .is-pushed-mobile {
+            margin-left: auto;
+
+            &.no-push {
+              margin-left: 0 !important;
+            }
+          }
+
+          &[data-th] {
+            &::before {
+              content: attr(data-th);
+              font-size: 0.9rem;
+              text-transform: uppercase;
+              font-weight: 500;
+              color: var(--muted-grey);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .flex-table {
+    .flex-table-cell {
+      &.is-user {
+        img {
+          min-width: 50px;
         }
       }
     }

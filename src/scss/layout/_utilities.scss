@@ -166,7 +166,7 @@ var {
   overflow-x: hidden;
 }
 
-.has-slimscroll-h {
+.has-slimscroll-x {
   overflow-y: hidden;
   overflow-x: auto;
 }
@@ -176,7 +176,7 @@ var {
 }
 
 .has-slimscroll,
-.has-slimscroll-h,
+.has-slimscroll-x,
 .has-slimscroll-all {
   &::-webkit-scrollbar {
     height: 6px !important;
