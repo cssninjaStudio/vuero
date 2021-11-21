@@ -4,8 +4,9 @@ import { computed, ref, watchEffect } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 import { isDark, toggleDarkModeHandler } from '/@src/state/darkModeState'
-import { activePanel } from '/@src/state/activePanelState'
+import { usePanels } from '/@src/stores/panels'
 
+const panels = usePanels()
 const { locale } = useI18n()
 const { y } = useWindowScroll()
 const isOpen = ref(false)
@@ -56,7 +57,10 @@ const localFlagSrc = computed(() => {
           <span></span>
         </label>
       </div>
-      <a class="menu-item is-flex right-panel-trigger" @click="activePanel = 'languages'">
+      <a
+        class="menu-item is-flex right-panel-trigger"
+        @click="panels.setActive('languages')"
+      >
         <img :src="localFlagSrc" alt="" />
       </a>
       <RouterLink
@@ -65,7 +69,7 @@ const localFlagSrc = computed(() => {
       >
         <i aria-hidden="true" class="iconify" data-icon="feather:bell"></i>
       </RouterLink>
-      <a class="menu-item is-flex" @click="activePanel = 'activity'">
+      <a class="menu-item is-flex" @click="panels.setActive('activity')">
         <i aria-hidden="true" class="iconify" data-icon="feather:grid"></i>
       </a>
     </div>

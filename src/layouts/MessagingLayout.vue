@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import { useRoute } from 'vue-router'
 
-import { activePanel } from '/@src/state/activePanelState'
+import { usePanels } from '/@src/stores/panels'
 
 export type SidebarTheme =
   | 'default'
@@ -22,6 +22,7 @@ const props = withDefaults(
   }
 )
 
+const panels = usePanels()
 const route = useRoute()
 const isMobileSidebarOpen = ref(false)
 const isDesktopSidebarOpen = ref(false)
@@ -75,7 +76,7 @@ const isDesktopSidebarOpen = ref(false)
 
       <template #bottom-links>
         <li>
-          <a @click="activePanel = 'search'">
+          <a @click="panels.setActive('search')">
             <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
           </a>
         </li>
@@ -140,14 +141,14 @@ const isDesktopSidebarOpen = ref(false)
       <template #bottom-links>
         <!-- Search -->
         <li class="right-panel-trigger is-hidden-tablet">
-          <a data-content="Search" @click="activePanel = 'search'">
+          <a data-content="Search" @click="panels.setActive('search')">
             <i
               aria-hidden="true"
               class="iconify sidebar-svg"
               data-icon="feather-search"
             />
           </a>
-          <a class="is-hidden is-inactive" @click="activePanel = 'none'">
+          <a class="is-hidden is-inactive" @click="panels.close()">
             <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather-x" />
           </a>
         </li>

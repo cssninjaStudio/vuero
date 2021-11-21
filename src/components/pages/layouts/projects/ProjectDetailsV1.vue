@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { activePanel } from '/@src/state/activePanelState'
+import { usePanels } from '/@src/stores/panels'
 
+const panels = usePanels()
 const props = withDefaults(
   defineProps<{
     activeTab?: 'project' | 'team' | 'tasks'
@@ -58,7 +59,7 @@ const participants = [
                 <VIconButton
                   size="small"
                   icon="feather:edit-3"
-                  @click="activePanel = 'task'"
+                  @click="panels.setActive('task')"
                 />
               </div>
 

@@ -6,7 +6,7 @@ import type { UserPopover } from '/@src/models/users'
 import type { VAvatarColor, VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
 import { popovers } from '/@src/data/users/userPopovers'
 import { pageTitle } from '/@src/state/navbarLayoutState'
-import { activePanel } from '/@src/state/activePanelState'
+import { usePanels } from '/@src/stores/panels'
 
 type NavbarDropdownTheme = 'default' | 'colored' | 'fade'
 
@@ -20,6 +20,7 @@ const props = withDefaults(
   }
 )
 
+const panels = usePanels()
 const route = useRoute()
 const displaySearch = ref(false)
 const isMobileSidebarOpen = ref(false)
@@ -123,7 +124,7 @@ watch(
 
       <template #bottom-links>
         <li>
-          <a @click="activePanel = 'search'">
+          <a @click="panels.setActive('search')">
             <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
           </a>
         </li>
@@ -169,7 +170,10 @@ watch(
         <Toolbar class="desktop-toolbar">
           <ToolbarNotification />
 
-          <a class="toolbar-link right-panel-trigger" @click="activePanel = 'activity'">
+          <a
+            class="toolbar-link right-panel-trigger"
+            @click="panels.setActive('activity')"
+          >
             <i aria-hidden="true" class="iconify" data-icon="feather:grid"></i>
           </a>
         </Toolbar>
@@ -260,7 +264,7 @@ watch(
 
                 <a
                   class="toolbar-link right-panel-trigger"
-                  @click="activePanel = 'activity'"
+                  @click="panels.setActive('activity')"
                 >
                   <i aria-hidden="true" class="iconify" data-icon="feather:grid"></i>
                 </a>

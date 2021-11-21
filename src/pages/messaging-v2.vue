@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
-import { activePanel } from '/@src/state/activePanelState'
+import { usePanels } from '/@src/stores/panels'
 import { computed, ref } from 'vue'
 
 import type { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
@@ -132,6 +132,7 @@ const conversations: conversationData[] = [
   },
 ]
 
+const panels = usePanels()
 const selectedConversationId = ref(3)
 const mobileConversationListOpen = ref(false)
 const selectedConversation = computed(() => {
@@ -193,7 +194,7 @@ useHead({
             <a
               class="toolbar-link right-panel-trigger"
               aria-label="View activity"
-              @click="activePanel = 'activity'"
+              @click="panels.setActive('activity')"
             >
               <i aria-hidden="true" class="iconify" data-icon="feather:grid"></i>
             </a>

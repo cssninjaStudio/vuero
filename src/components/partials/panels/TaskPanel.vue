@@ -1,19 +1,20 @@
 <script setup lang="ts">
-import { activePanel } from '/@src/state/activePanelState'
+import { usePanels } from '/@src/stores/panels'
+const panels = usePanels()
 </script>
 
 <template>
   <div
     id="task-panel"
-    :class="[activePanel === 'task' && 'is-active']"
+    :class="[panels.active === 'task' && 'is-active']"
     class="right-panel-wrapper is-task"
   >
-    <div class="panel-overlay" @click="activePanel = 'none'"></div>
+    <div class="panel-overlay" @click="panels.close()"></div>
 
     <div class="right-panel">
       <div class="right-panel-head">
         <h3>Task Details</h3>
-        <a class="close-panel" @click="activePanel = 'none'">
+        <a class="close-panel" @click="panels.close()">
           <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right"></i>
         </a>
       </div>

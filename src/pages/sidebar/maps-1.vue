@@ -2,8 +2,9 @@
 import { useHead } from '@vueuse/head'
 
 import { pageTitle, sidebarTheme } from '/@src/state/sidebarLayoutState'
-import { activePanel } from '/@src/state/activePanelState'
+import { usePanels } from '/@src/stores/panels'
 
+const panels = usePanels()
 pageTitle.value = 'Maps 1'
 useHead({
   title: 'Maps 1 - Sidebar - Vuero',
@@ -23,7 +24,7 @@ useHead({
             <a
               class="toolbar-link right-panel-trigger"
               aria-label="View activity"
-              @click="activePanel = 'activity'"
+              @click="panels.setActive('activity')"
             >
               <i aria-hidden="true" class="iconify" data-icon="feather:grid"></i>
             </a>

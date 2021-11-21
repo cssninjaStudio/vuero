@@ -2,10 +2,11 @@
 import { computed, ref } from 'vue'
 
 import type { VAvatarProps, VAvatarColor } from '/@src/components/base/avatar/VAvatar.vue'
-import { activePanel } from '/@src/state/activePanelState'
+import { usePanels } from '/@src/stores/panels'
 import { popovers } from '/@src/data/users/userPopovers'
 import { UserPopover } from '/@src/models/users'
 
+const panels = usePanels()
 const filter = ref('')
 const filteredData = computed(() => {
   if (!filter.value) {
@@ -32,15 +33,15 @@ function getAvatarData(user: UserPopover): VAvatarProps {
 <template>
   <div
     id="search-panel"
-    :class="[activePanel === 'search' && 'is-active']"
+    :class="[panels.active === 'search' && 'is-active']"
     class="right-panel-wrapper is-search is-left"
   >
-    <div class="panel-overlay" @click="activePanel = 'none'"></div>
+    <div class="panel-overlay" @click="panels.close()"></div>
 
     <div class="right-panel">
       <div class="right-panel-head">
         <AnimatedLogo width="38px" height="38px" />
-        <a class="close-panel" @click="activePanel = 'none'">
+        <a class="close-panel" @click="panels.close()">
           <i aria-hidden="true" class="iconify" data-icon="feather:chevron-left"></i>
         </a>
       </div>

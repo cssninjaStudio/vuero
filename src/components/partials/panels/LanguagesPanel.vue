@@ -3,8 +3,9 @@ import { watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useStorage } from '@vueuse/core'
 
-import { activePanel } from '/@src/state/activePanelState'
+import { usePanels } from '/@src/stores/panels'
 
+const panels = usePanels()
 const { locale, t } = useI18n()
 
 /**
@@ -24,15 +25,15 @@ watch(locale, () => {
 <template>
   <div
     id="languages-panel"
-    :class="[activePanel === 'languages' && 'is-active']"
+    :class="[panels.active === 'languages' && 'is-active']"
     class="right-panel-wrapper is-languages"
   >
-    <div class="panel-overlay" @click="activePanel = 'none'"></div>
+    <div class="panel-overlay" @click="panels.close()"></div>
 
     <div class="right-panel">
       <div class="right-panel-head">
         <h3>{{ t('select-language') }}</h3>
-        <a class="close-panel" @click="activePanel = 'none'">
+        <a class="close-panel" @click="panels.close()">
           <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right"></i>
         </a>
       </div>

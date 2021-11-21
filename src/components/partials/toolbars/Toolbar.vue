@@ -3,11 +3,12 @@ import { computed, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 import { isDark, toggleDarkModeHandler } from '/@src/state/darkModeState'
-import { activePanel } from '/@src/state/activePanelState'
+import { usePanels } from '/@src/stores/panels'
 import useDropdown from '/@src/composable/useDropdown'
 
 const { locale } = useI18n()
 const dropdownElement = ref<HTMLElement>()
+const panels = usePanels()
 const dropdown = useDropdown(dropdownElement)
 
 const localFlagSrc = computed(() => {
@@ -41,8 +42,8 @@ const localFlagSrc = computed(() => {
     <a
       tabindex="0"
       class="toolbar-link right-panel-trigger"
-      @keydown.space.prevent="activePanel = 'languages'"
-      @click="activePanel = 'languages'"
+      @keydown.space.prevent="panels.setActive('languages')"
+      @click="panels.setActive('languages')"
     >
       <img :src="localFlagSrc" alt="" />
     </a>

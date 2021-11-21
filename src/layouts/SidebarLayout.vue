@@ -2,7 +2,7 @@
 import { ref, watchPostEffect, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
-import { activePanel } from '/@src/state/activePanelState'
+import { usePanels } from '/@src/stores/panels'
 import { pageTitle } from '/@src/state/sidebarLayoutState'
 
 export type SidebarTheme =
@@ -28,6 +28,7 @@ const props = withDefaults(
   }
 )
 
+const panels = usePanels()
 const route = useRoute()
 const isMobileSidebarOpen = ref(false)
 const isDesktopSidebarOpen = ref(props.openOnMounted)
@@ -141,7 +142,7 @@ watch(
 
       <template #bottom-links>
         <li>
-          <a aria-label="Display search panel" @click="activePanel = 'search'">
+          <a aria-label="Display search panel" @click="panels.setActive('search')">
             <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
           </a>
         </li>
@@ -266,8 +267,8 @@ watch(
             aria-label="Display search panel"
             data-content="Search"
             tabindex="0"
-            @keydown.space.prevent="activePanel = 'search'"
-            @click="activePanel = 'search'"
+            @keydown.space.prevent="panels.setActive('search')"
+            @click="panels.setActive('search')"
           >
             <i
               aria-hidden="true"
@@ -279,8 +280,8 @@ watch(
             aria-label="Close all panels"
             class="is-hidden is-inactive"
             tabindex="0"
-            @keydown.space.prevent="activePanel = 'none'"
-            @click="activePanel = 'none'"
+            @keydown.space.prevent="panels.close()"
+            @click="panels.close()"
           >
             <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather-x" />
           </a>
@@ -365,7 +366,7 @@ watch(
               <a
                 class="toolbar-link right-panel-trigger"
                 aria-label="View activity panel"
-                @click="activePanel = 'activity'"
+                @click="panels.setActive('activity')"
               >
                 <i aria-hidden="true" class="iconify" data-icon="feather:grid"></i>
               </a>

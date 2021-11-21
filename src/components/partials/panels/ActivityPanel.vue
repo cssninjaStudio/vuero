@@ -1,24 +1,26 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { activePanel } from '/@src/state/activePanelState'
+import { usePanels } from '/@src/stores/panels'
 import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
 type TabId = 'team' | 'projects' | 'schedule'
+
+const panels = usePanels()
 const activeTab = ref<TabId>('team')
 </script>
 
 <template>
   <div
     id="activity-panel"
-    :class="[activePanel === 'activity' && 'is-active']"
+    :class="[panels.active === 'activity' && 'is-active']"
     class="right-panel-wrapper is-activity"
   >
-    <div class="panel-overlay" @click="activePanel = 'none'"></div>
+    <div class="panel-overlay" @click="panels.close()"></div>
 
     <div class="right-panel">
       <div class="right-panel-head">
         <h3>Activity</h3>
-        <a class="close-panel" @click="activePanel = 'none'">
+        <a class="close-panel" @click="panels.close()">
           <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right"></i>
         </a>
       </div>
