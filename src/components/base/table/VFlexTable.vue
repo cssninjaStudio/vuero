@@ -250,6 +250,19 @@ const columns = computed(() => {
       &.is-grow-xl {
         flex-grow: 6;
       }
+
+      a {
+        color: var(--muted-grey);
+      }
+    }
+
+    .checkbox {
+      padding-bottom: 10px;
+      padding-top: 0;
+
+      > span {
+        min-height: 20px;
+      }
     }
   }
 
@@ -470,6 +483,23 @@ const columns = computed(() => {
 
           &.active {
             color: var(--primary);
+          }
+        }
+      }
+
+      .edit-icon-link {
+        color: var(--light-text);
+
+        .iconify {
+          opacity: 0%;
+          transition: opacity 0.3s;
+        }
+
+        &:hover {
+          color: var(--primary);
+
+          .iconify {
+            opacity: 100%;
           }
         }
       }
