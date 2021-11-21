@@ -137,7 +137,7 @@ const VFocus = {
               v-model="row[column.key]"
               v-focus
               type="text"
-              class="input is-info-focus"
+              class="input is-primary-focus"
               @blur="editCompanyIndex = undefined"
               @keyup.enter="editCompanyIndex = undefined"
             />
@@ -146,17 +146,19 @@ const VFocus = {
 
         <a
           v-else
-          class="is-overlay m-3 is-clickable"
+          class="
+          is-overlay m-3 is-flex is-align-items-center
+          is-clickable edit-icon-link"
           tabindex="0"
           @click="editCompanyIndex = index"
           @focus="editCompanyIndex = index"
         >
           {{ value }}
           <i
-            class="iconify is-inline"
+            class="iconify is-inline ml-1"
             data-icon="feather:edit"
             role="img"
-            aria-label="edit"
+            aria-label="edit-3"
           ></i>
         </a>
       </template>

@@ -129,7 +129,7 @@ useHead({
                       v-model="row[column.key]"
                       v-focus
                       type="text"
-                      class="input is-info-focus"
+                      class="input is-primary-focus"
                       @blur="editCompanyIndex = undefined"
                       @keyup.enter="editCompanyIndex = undefined"
                     />
@@ -138,15 +138,21 @@ useHead({
 
                 <a
                   v-else
-                  class="is-overlay m-3 is-clickable"
+                  class="
+                    is-overlay
+                    m-3
+                    is-flex is-align-items-center
+                    edit-icon-link
+                    is-clickable
+                  "
                   tabindex="0"
                   @click="editCompanyIndex = index"
                   @focus="editCompanyIndex = index"
                 >
                   {{ value }}
                   <i
-                    class="iconify is-inline"
-                    data-icon="feather:edit"
+                    class="iconify is-inline ml-1"
+                    data-icon="feather:edit-3"
                     role="img"
                     aria-label="edit"
                   ></i>
