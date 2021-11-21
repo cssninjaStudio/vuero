@@ -3,7 +3,7 @@ import axios from 'axios'
 import { useHead } from '@vueuse/head'
 import { computed, onMounted, ref, watchEffect, watchPostEffect } from 'vue'
 
-import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
+import { useSidebar } from '/@src/stores/sidebar'
 import { sidebarTheme } from '/@src/state/sidebarLayoutState'
 import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
@@ -44,6 +44,8 @@ const conversations = [
     avatar: '/demo/avatars/7.jpg',
   },
 ]
+
+const sidebar = useSidebar()
 
 const dropdownElement = ref<HTMLElement>()
 const dropdown = useDropdown(dropdownElement)
@@ -181,7 +183,7 @@ watchPostEffect(() => {
             <div class="page-title has-text-centered is-hidden">
               <div
                 class="vuero-hamburger nav-trigger push-resize"
-                @click="toggleSidebar('messages')"
+                @click="sidebar.toggle('messages')"
               >
                 <span class="menu-toggle has-chevron">
                   <span

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { activeSidebar } from '/@src/state/activeSidebarState'
+import { useSidebar } from '/@src/stores/sidebar'
 import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
 const emit = defineEmits<{
@@ -16,6 +16,8 @@ const props = withDefaults(
     selectedConversationId: 0,
   }
 )
+
+const sidebar = useSidebar()
 </script>
 
 <template>

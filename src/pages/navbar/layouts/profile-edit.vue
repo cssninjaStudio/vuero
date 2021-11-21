@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
+import { useSidebar } from '/@src/stores/sidebar'
+const sidebar = useSidebar()
 </script>
 
 <template>

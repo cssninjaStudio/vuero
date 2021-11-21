@@ -2,7 +2,9 @@
 import { useHead } from '@vueuse/head'
 import { onMounted } from 'vue'
 
-import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
+import { useSidebar } from '/@src/stores/sidebar'
+
+const sidebar = useSidebar()
 
 onMounted(() => {
   activeSidebar.value = 'components'
@@ -19,7 +21,7 @@ useHead({
       <!-- Sidebar Trigger -->
       <div
         class="vuero-hamburger nav-trigger push-resize"
-        @click="toggleSidebar('components')"
+        @click="sidebar.toggle('components')"
       >
         <span class="menu-toggle has-chevron">
           <span :class="[activeSidebar !== 'none' && 'active']" class="icon-box-toggle">

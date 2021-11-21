@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
+import { useSidebar } from '/@src/stores/sidebar'
 import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
 const emit = defineEmits<{
@@ -17,6 +17,7 @@ const props = withDefaults(
     selectedConversationId: 0,
   }
 )
+const sidebar = useSidebar()
 </script>
 
 <template>
@@ -25,7 +26,7 @@ const props = withDefaults(
       <div class="collapsed-menu">
         <div
           class="vuero-hamburger nav-trigger push-resize messages-push"
-          @click="toggleSidebar('messages')"
+          @click="sidebar.toggle('messages')"
         >
           <span class="menu-toggle has-chevron">
             <span :class="[activeSidebar !== 'none' && 'active']" class="icon-box-toggle">
