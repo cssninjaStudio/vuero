@@ -3,10 +3,11 @@ import { ref } from 'vue'
 import { useHead } from '@vueuse/head'
 
 import packageJson from '../../package.json'
-import { isDark, toggleDarkModeHandler } from '/@src/state/darkModeState'
+import { useDarkmode } from '/@src/stores/darkmode'
 
 type TabId = 'elements' | 'components' | 'forms' | 'plugins'
 const activeTab = ref<TabId>('elements')
+const darkmode = useDarkmode()
 
 useHead({
   title: 'Vuero - A complete Vue 3 design system',
@@ -44,9 +45,9 @@ useHead({
                   id="night-toggle--daynight"
                   type="checkbox"
                   class="night-toggle--checkbox"
-                  :checked="!isDark"
+                  :checked="!darkmode.isDark"
                   aria-label="Toggle dark mode"
-                  @change="toggleDarkModeHandler"
+                  @change="darkmode.onChange"
                 />
                 <label class="night-toggle--btn" for="night-toggle--daynight">
                   <span class="night-toggle--feature"></span>

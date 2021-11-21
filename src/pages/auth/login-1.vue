@@ -3,7 +3,7 @@ import { ref } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { useHead } from '@vueuse/head'
 
-import { isDark, toggleDarkModeHandler } from '/@src/state/darkModeState'
+import { useDarkmode } from '/@src/stores/darkmode'
 import { useUserSession } from '/@src/stores/userSession'
 import useNotyf from '/@src/composable/useNotyf'
 import sleep from '/@src/utils/sleep'
@@ -11,6 +11,7 @@ import sleep from '/@src/utils/sleep'
 type StepId = 'login' | 'forgot-password'
 const step = ref<StepId>('login')
 const isLoading = ref(false)
+const darkmode = useDarkmode()
 const router = useRouter()
 const route = useRoute()
 const notif = useNotyf()
@@ -72,7 +73,11 @@ useHead({
         </RouterLink>
 
         <label class="dark-mode ml-auto">
-          <input type="checkbox" :checked="!isDark" @change="toggleDarkModeHandler" />
+          <input
+            type="checkbox"
+            :checked="!darkmode.isDark"
+            @change="darkmode.onChange"
+          />
           <span></span>
         </label>
         <div class="is-form">

@@ -3,9 +3,10 @@ import { ref } from 'vue'
 
 import useDropdown from '/@src/composable/useDropdown'
 import { useWizard } from '/@src/stores/wizard'
-import { isDark, toggleDarkModeHandler } from '/@src/state/darkModeState'
+import { useDarkmode } from '/@src/stores/darkmode'
 import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
+const darkmode = useDarkmode()
 const dropdownElement1 = ref<HTMLElement>()
 const dropdown1 = useDropdown(dropdownElement1)
 
@@ -101,7 +102,11 @@ const setStep = (target: number) => {
     <div class="navbar-item is-dark-mode">
       <div class="navbar-icon">
         <label class="dark-mode">
-          <input type="checkbox" :checked="!isDark" @change="toggleDarkModeHandler" />
+          <input
+            type="checkbox"
+            :checked="!darkmode.isDark"
+            @change="darkmode.onChange"
+          />
           <span></span>
         </label>
       </div>

@@ -4,9 +4,10 @@ import { useRouter } from 'vue-router'
 import { useHead } from '@vueuse/head'
 import useNotyf from '/@src/composable/useNotyf'
 
-import { isDark, toggleDarkModeHandler } from '/@src/state/darkModeState'
+import { useDarkmode } from '/@src/stores/darkmode'
 import sleep from '/@src/utils/sleep'
 
+const darkmode = useDarkmode()
 const router = useRouter()
 const notif = useNotyf()
 const isLoading = ref(false)
@@ -40,7 +41,11 @@ useHead({
       </div>
       <div class="right">
         <label class="dark-mode ml-auto">
-          <input type="checkbox" :checked="!isDark" @change="toggleDarkModeHandler" />
+          <input
+            type="checkbox"
+            :checked="!darkmode.isDark"
+            @change="darkmode.onChange"
+          />
           <span></span>
         </label>
       </div>

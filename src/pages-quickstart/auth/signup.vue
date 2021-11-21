@@ -6,10 +6,11 @@ import { useHead } from '@vueuse/head'
 import { Form, Field } from 'vee-validate'
 import * as yup from 'yup'
 
-import { isDark, toggleDarkModeHandler } from '/@src/state/darkModeState'
+import { useDarkmode } from '/@src/stores/darkmode'
 import useNotyf from '/@src/composable/useNotyf'
 import sleep from '/@src/utils/sleep'
 
+const darkmode = useDarkmode()
 const router = useRouter()
 const notif = useNotyf()
 
@@ -63,7 +64,11 @@ useHead({
       <div class="hero is-fullheight is-white">
         <div class="hero-heading">
           <label class="dark-mode ml-auto">
-            <input type="checkbox" :checked="!isDark" @change="toggleDarkModeHandler" />
+            <input
+              type="checkbox"
+              :checked="!darkmode.isDark"
+              @change="darkmode.onChange"
+            />
             <span></span>
           </label>
           <div class="auth-logo">

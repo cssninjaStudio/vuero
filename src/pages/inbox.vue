@@ -2,10 +2,11 @@
 import { useHead } from '@vueuse/head'
 import { computed, ref, watch } from 'vue'
 
-import { isDark, toggleDarkModeHandler } from '/@src/state/darkModeState'
+import { useDarkmode } from '/@src/stores/darkmode'
 import useDropdown from '/@src/composable/useDropdown'
 import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
+const darkmode = useDarkmode()
 const contactSearchOpen = ref(false)
 const activeTab = ref('inbox')
 const selectedConversationId = ref(1)
@@ -58,8 +59,8 @@ useHead({
               <label class="dark-mode">
                 <input
                   type="checkbox"
-                  :checked="!isDark"
-                  @change="toggleDarkModeHandler"
+                  :checked="!darkmode.isDark"
+                  @change="darkmode.onChange"
                 />
                 <span></span>
               </label>

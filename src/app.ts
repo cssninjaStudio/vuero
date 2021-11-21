@@ -13,6 +13,7 @@ import { createI18n } from './i18n'
 import { createRouter } from './router'
 
 import { useUserSession } from '/@src/stores/userSession'
+import { initDarkmode } from '/@src/stores/darkmode'
 import { provideApi } from '/@src/composable/useApi'
 import useNotyf from '/@src/composable/useNotyf'
 
@@ -38,6 +39,13 @@ export async function createApp({ enhanceApp }: VueroAppOptions) {
        * @see /@src/composable/useApi
        */
       provideApi()
+
+      /**
+       * Initialize the darkmode watcher
+       *
+       * @see /@src/stores/darkmode
+       */
+      initDarkmode()
 
       /**
        * Here you can check if your user has a token stored

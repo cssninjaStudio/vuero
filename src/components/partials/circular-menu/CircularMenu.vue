@@ -3,9 +3,10 @@ import { useWindowScroll } from '@vueuse/core'
 import { computed, ref, watchEffect } from 'vue'
 import { useI18n } from 'vue-i18n'
 
-import { isDark, toggleDarkModeHandler } from '/@src/state/darkModeState'
+import { useDarkmode } from '/@src/stores/darkmode'
 import { usePanels } from '/@src/stores/panels'
 
+const darkmode = useDarkmode()
 const panels = usePanels()
 const { locale } = useI18n()
 const { y } = useWindowScroll()
@@ -53,7 +54,11 @@ const localFlagSrc = computed(() => {
     <div class="items-wrapper">
       <div class="menu-item is-flex">
         <label class="dark-mode">
-          <input type="checkbox" :checked="!isDark" @change="toggleDarkModeHandler" />
+          <input
+            type="checkbox"
+            :checked="!darkmode.isDark"
+            @change="darkmode.onChange"
+          />
           <span></span>
         </label>
       </div>

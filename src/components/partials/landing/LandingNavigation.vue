@@ -4,11 +4,12 @@ import { computed, ref, watchEffect } from 'vue'
 import { isLargeScreen } from '/@src/state/responsiveState'
 import VueScrollTo from 'vue-scrollto'
 
-import { isDark } from '/@src/state/darkModeState'
+import { useDarkmode } from '/@src/stores/darkmode'
 import { useRouter } from 'vue-router'
 
 const isMobileNavOpen = ref(false)
 const router = useRouter()
+const darkmode = useDarkmode()
 const scrollTo = VueScrollTo.scrollTo
 
 const { y } = useWindowScroll()
@@ -112,7 +113,11 @@ watchEffect(() => {
       <div class="navbar-end">
         <div class="navbar-item is-theme-toggle">
           <label class="theme-toggle">
-            <input id="navbar-night-toggle--daynight" v-model="isDark" type="checkbox" />
+            <input
+              id="navbar-night-toggle--daynight"
+              v-model="darkmode.isDark"
+              type="checkbox"
+            />
             <span class="toggler">
               <span class="dark">
                 <i aria-hidden="true" class="iconify" data-icon="feather:moon"></i>

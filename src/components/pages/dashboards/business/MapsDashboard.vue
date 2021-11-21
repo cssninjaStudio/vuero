@@ -5,7 +5,7 @@ import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.m
 import 'mapbox-gl/src/css/mapbox-gl.css'
 import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css'
 import { themeColors } from '/@src/utils/themeColors'
-import { isDark } from '/@src/state/darkModeState'
+import { useDarkmode } from '/@src/stores/darkmode'
 
 // You can set the VITE_MAPBOX_ACCESS_TOKEN inside .env file
 mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN as string
@@ -14,6 +14,7 @@ const props = defineProps<{
   reversed?: boolean
 }>()
 
+const darkmode = useDarkmode()
 const mapElement = ref<HTMLElement>()
 const geocoderElement = ref<HTMLElement>()
 const popupElement = ref<HTMLElement>()
@@ -204,10 +205,10 @@ function loadLayers() {
     type: 'circle',
     source: 'places',
     paint: {
-      'circle-color': isDark.value ? themeColors.accent : themeColors.primary,
+      'circle-color': darkmode.isDark ? themeColors.accent : themeColors.primary,
       'circle-radius': 6,
       'circle-stroke-width': 2,
-      'circle-stroke-color': isDark.value
+      'circle-stroke-color': darkmode.isDark
         ? themeColors.accentLight
         : themeColors.primaryMedium,
     },
@@ -249,7 +250,7 @@ onMounted(() => {
 
   map = new mapboxgl.Map({
     container: mapElement.value,
-    style: isDark.value
+    style: darkmode.isDark
       ? 'mapbox://styles/mapbox/dark-v10'
       : 'mapbox://styles/mapbox/light-v10',
     center: [-77.04, 38.907],
@@ -320,17 +321,20 @@ watchPostEffect(() => {
     .addTo(map)
 })
 
-watch(isDark, () => {
-  if (!map) {
-    return
-  }
+watch(
+  () => darkmode.isDark,
+  () => {
+    if (!map) {
+      return
+    }
 
-  if (isDark.value) {
-    map.setStyle('mapbox://styles/mapbox/dark-v10')
-  } else {
-    map.setStyle('mapbox://styles/mapbox/light-v10')
+    if (darkmode.isDark) {
+      map.setStyle('mapbox://styles/mapbox/dark-v10')
+    } else {
+      map.setStyle('mapbox://styles/mapbox/light-v10')
+    }
   }
-})
+)
 </script>
 
 <template>

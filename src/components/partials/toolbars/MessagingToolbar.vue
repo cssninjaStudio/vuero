@@ -2,12 +2,13 @@
 import { computed, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 
-import { isDark, toggleDarkModeHandler } from '/@src/state/darkModeState'
+import { useDarkmode } from '/@src/stores/darkmode'
 import { usePanels } from '/@src/stores/panels'
 import useDropdown from '/@src/composable/useDropdown'
 import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
 const panels = usePanels()
+const darkmode = useDarkmode()
 const emit = defineEmits(['close'])
 
 const { locale } = useI18n()
@@ -37,7 +38,7 @@ const localFlagSrc = computed(() => {
   <div class="toolbar ml-auto">
     <div class="toolbar-link">
       <label class="dark-mode ml-auto">
-        <input type="checkbox" :checked="!isDark" @change="toggleDarkModeHandler" />
+        <input type="checkbox" :checked="!darkmode.isDark" @change="darkmode.onChange" />
         <span></span>
       </label>
     </div>
