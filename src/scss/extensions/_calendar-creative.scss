@@ -266,7 +266,8 @@ $calendar-date-padding: 0.1rem 0 !default;
             position: relative;
             text-align: center;
             text-decoration: none;
-            transition: all 0.2s ease;
+            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+              width 0.3s;
             vertical-align: middle;
             white-space: nowrap;
             width: 2.2rem;

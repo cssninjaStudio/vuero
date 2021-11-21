@@ -161,7 +161,8 @@ const optionsSingle = [
     background-color: var(--white);
     border-radius: 6px;
     border: 1px solid var(--fade-grey-dark-3);
-    transition: all 0.3s;
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+      width 0.3s;
 
     .card-grid-item-body {
       display: flex;
@@ -215,7 +216,8 @@ const optionsSingle = [
             margin: 0 4px;
             color: var(--primary);
             box-shadow: var(--light-box-shadow);
-            transition: all 0.3s;
+            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+              width 0.3s;
 
             &:hover {
               color: var(--white);

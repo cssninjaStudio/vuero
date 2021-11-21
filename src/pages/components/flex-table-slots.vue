@@ -131,7 +131,7 @@ useHead({
                       type="text"
                       class="input is-primary-focus"
                       @blur="editCompanyIndex = undefined"
-                      @keyup.enter="editCompanyIndex = undefined"
+                      @keydown.space.prevent="editCompanyIndex = undefined"
                     />
                   </VField>
                 </VControl>

@@ -251,7 +251,8 @@ const optionsSingle = [
           font-family: var(--font);
           color: var(--light-text);
           padding: 1rem 0.75rem;
-          transition: all 0.3s;
+          transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+            width 0.3s;
 
           &:hover {
             background: var(--fade-grey-light-4);

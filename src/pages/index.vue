@@ -643,16 +643,40 @@ useHead({
               <div class="tabs">
                 <ul>
                   <li :class="[activeTab === 'elements' && 'is-active']">
-                    <a @click="activeTab = 'elements'">Elements</a>
+                    <a
+                      tabindex="0"
+                      @keydown.space.prevent="activeTab = 'elements'"
+                      @click="activeTab = 'elements'"
+                    >
+                      Elements
+                    </a>
                   </li>
                   <li :class="[activeTab === 'components' && 'is-active']">
-                    <a @click="activeTab = 'components'">Components</a>
+                    <a
+                      tabindex="0"
+                      @keydown.space.prevent="activeTab = 'components'"
+                      @click="activeTab = 'components'"
+                    >
+                      Components
+                    </a>
                   </li>
                   <li :class="[activeTab === 'forms' && 'is-active']">
-                    <a @click="activeTab = 'forms'">Forms</a>
+                    <a
+                      tabindex="0"
+                      @keydown.space.prevent="activeTab = 'forms'"
+                      @click="activeTab = 'forms'"
+                    >
+                      Forms
+                    </a>
                   </li>
                   <li :class="[activeTab === 'plugins' && 'is-active']">
-                    <a @click="activeTab = 'plugins'">Plugins</a>
+                    <a
+                      tabindex="0"
+                      @keydown.space.prevent="activeTab = 'plugins'"
+                      @click="activeTab = 'plugins'"
+                    >
+                      Plugins
+                    </a>
                   </li>
                 </ul>
               </div>

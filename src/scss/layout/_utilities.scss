@@ -163,11 +163,9 @@ var {
 
 .has-slimscroll {
   overflow-y: auto;
-  overflow-x: hidden;
 }
 
 .has-slimscroll-x {
-  overflow-y: hidden;
   overflow-x: auto;
 }
 
@@ -316,7 +314,8 @@ var {
     margin: -1px 0 0 -10px;
     left: 50%;
     top: 12px;
-    transition: all 0.2s ease;
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+      width 0.3s;
   }
 
   .icon-line-top {
@@ -327,7 +326,8 @@ var {
     margin: -3px 0 0 -10px;
     left: 50%;
     top: 6px;
-    transition: all 0.2s ease;
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+      width 0.3s;
   }
 
   .icon-line-bottom {
@@ -338,7 +338,8 @@ var {
     margin: 2px 0 0 -10px;
     left: 50%;
     top: 17px;
-    transition: all 0.2s ease;
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+      width 0.3s;
   }
 }
 
@@ -403,7 +404,8 @@ var {
   color: var(--white) !important;
   border: 1px solid var(--primary);
   border-radius: var(--radius-large);
-  transition: all 0.3s;
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+    width 0.3s;
   cursor: pointer;
   outline: none !important;
 
@@ -424,7 +426,8 @@ var {
   color: var(--primary) !important;
   border: 1px solid var(--primary) !important;
   border-radius: var(--radius-large);
-  transition: all 0.3s;
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+    width 0.3s;
   cursor: pointer;
   outline: none !important;
 }
@@ -585,7 +588,8 @@ var {
         height: 32px;
         min-width: 80px;
         border-radius: 100px;
-        transition: all 0.3s;
+        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+          width 0.3s;
 
         &:hover {
           background: var(--primary);
@@ -609,7 +613,8 @@ var {
   background: transparent;
   border-radius: var(--radius-rounded);
   transform: scale(0.4);
-  transition: all 0.3s;
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+    width 0.3s;
 
   &:hover {
     background: var(--white);
@@ -634,7 +639,8 @@ var {
       top: -10px;
       left: -10px;
       display: block;
-      transition: all 0.3s;
+      transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+        width 0.3s;
       opacity: 0%;
       pointer-events: none;
     }
@@ -754,7 +760,8 @@ var {
     height: 46px;
     background-color: var(--medium-grey);
     opacity: 100%;
-    transition: all 0.3s;
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+      width 0.3s;
     border-radius: var(--radius-rounded);
     text-align: center;
     font-size: 20px;

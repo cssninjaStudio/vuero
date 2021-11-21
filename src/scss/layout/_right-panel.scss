@@ -53,7 +53,8 @@
     opacity: 0%;
     pointer-events: none;
     z-index: 101;
-    transition: all 0.3s;
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+      width 0.3s;
   }
 
   .right-panel {
@@ -65,7 +66,8 @@
     background: var(--white);
     transform: translateX(100%);
     z-index: 102;
-    transition: all 0.3s;
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+      width 0.3s;
 
     .right-panel-head {
       position: relative;
@@ -93,7 +95,8 @@
         justify-content: center;
         align-items: center;
         border-radius: var(--radius-rounded);
-        transition: all 0.3s;
+        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+          width 0.3s;
 
         &:hover {
           background: var(--fade-grey);
@@ -206,7 +209,8 @@
               border: 1.6px solid var(--fade-grey);
               background: var(--white);
               box-shadow: var(--light-box-shadow);
-              transition: all 0.3s;
+              transition: color 0.3s, background-color 0.3s, border-color 0.3s,
+                height 0.3s, width 0.3s;
 
               img {
                 display: block;
@@ -343,7 +347,8 @@
             background: var(--white);
             border: 1px solid var(--fade-grey-dark-3);
             border-radius: var(--radius-rounded);
-            transition: all 0.3s;
+            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+              width 0.3s;
 
             &:hover {
               border-color: var(--primary);
@@ -410,7 +415,8 @@
               background: var(--white);
               border: 1px solid var(--fade-grey-dark-3);
               border-radius: var(--radius-rounded);
-              transition: all 0.3s;
+              transition: color 0.3s, background-color 0.3s, border-color 0.3s,
+                height 0.3s, width 0.3s;
 
               &:hover {
                 border-color: var(--primary);
@@ -678,7 +684,8 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                transition: all 0.3s;
+                transition: color 0.3s, background-color 0.3s, border-color 0.3s,
+                  height 0.3s, width 0.3s;
 
                 &:hover {
                   border: 1.8px solid var(--primary);
@@ -748,7 +755,8 @@
               border: 1px solid transparent;
               border-radius: 12px;
               cursor: pointer;
-              transition: all 0.3s;
+              transition: color 0.3s, background-color 0.3s, border-color 0.3s,
+                height 0.3s, width 0.3s;
 
               &:hover {
                 border-color: var(--fade-grey-dark-3);
@@ -812,7 +820,8 @@
                   color: var(--light-text);
                   border-radius: var(--radius-rounded);
                   border: 1px solid transparent;
-                  transition: all 0.3s;
+                  transition: color 0.3s, background-color 0.3s, border-color 0.3s,
+                    height 0.3s, width 0.3s;
 
                   &:hover {
                     border-color: var(--fade-grey-dark-4);

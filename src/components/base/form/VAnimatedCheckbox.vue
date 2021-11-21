@@ -94,6 +94,14 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
   height: 32px;
   width: 32px;
 
+  &:focus-within {
+    border-radius: 50%;
+    outline-offset: var(--accessibility-focus-outline-offset);
+    outline-width: var(--accessibility-focus-outline-width);
+    outline-style: var(--accessibility-focus-outline-style);
+    outline-color: var(--accessibility-focus-outline-color);
+  }
+
   &.is-purple {
     .checkmark-circle {
       color: var(--purple) !important;

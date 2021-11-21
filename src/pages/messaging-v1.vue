@@ -664,7 +664,8 @@ watchPostEffect(() => {
   border: 1px solid var(--fade-grey-dark-3);
   box-shadow: var(--light-box-shadow);
   transform: translateX(60px) rotate(360deg);
-  transition: all 0.3s;
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+    width 0.3s;
 
   &.is-active {
     transform: translateX(0) rotate(0);
@@ -732,7 +733,8 @@ watchPostEffect(() => {
           svg {
             width: 20px;
             height: 20px;
-            transition: all 0.3s;
+            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+              width 0.3s;
           }
         }
 
@@ -762,7 +764,8 @@ watchPostEffect(() => {
             border: none;
             box-shadow: none;
             color: var(--muted-grey);
-            transition: all 0.3s;
+            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+              width 0.3s;
 
             &:focus {
               + .icon {
@@ -907,7 +910,8 @@ watchPostEffect(() => {
   border-left: 1px solid var(--fade-grey);
   background: var(--white);
   z-index: 3;
-  transition: all 0.3s;
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+    width 0.3s;
 
   .chat-side-header {
     height: 60px;
@@ -919,7 +923,8 @@ watchPostEffect(() => {
 
   .chat-side-content {
     text-align: center;
-    transition: all 0.3s;
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+      width 0.3s;
     padding: 20px;
 
     .user-pic {
@@ -1027,7 +1032,8 @@ watchPostEffect(() => {
   list-style: none;
   margin: 0;
   padding: 0 30px 80px;
-  transition: all 0.3s;
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+    width 0.3s;
 
   &::-webkit-scrollbar {
     width: 5px;
@@ -1365,7 +1371,8 @@ watchPostEffect(() => {
         background: var(--primary);
         border: 4px solid var(--white);
         border-radius: 3px;
-        transition: all 0.3s;
+        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+          width 0.3s;
         z-index: 2;
       }
 
@@ -1377,7 +1384,8 @@ watchPostEffect(() => {
         height: 100%;
         opacity: 0%;
         pointer-events: none;
-        transition: all 0.3s;
+        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+          width 0.3s;
         z-index: 3;
 
         .actions-inner {
@@ -1398,7 +1406,8 @@ watchPostEffect(() => {
             background: var(--white);
             margin: 0 6px;
             cursor: pointer;
-            transition: all 0.3s;
+            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+              width 0.3s;
 
             &:hover {
               background: var(--success);
@@ -1412,7 +1421,8 @@ watchPostEffect(() => {
               height: 18px;
               width: 18px;
               color: var(--success);
-              transition: all 0.3s;
+              transition: color 0.3s, background-color 0.3s, border-color 0.3s,
+                height 0.3s, width 0.3s;
             }
           }
         }
@@ -1568,7 +1578,8 @@ watchPostEffect(() => {
   height: 60px;
   width: calc(100% - 320px);
   padding: 0 16px;
-  transition: all 0.3s;
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+    width 0.3s;
   z-index: 2;
 
   &.side-collapsed {
@@ -1619,14 +1630,16 @@ watchPostEffect(() => {
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: all 0.3s;
+        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+          width 0.3s;
 
         svg {
           color: var(--placeholder);
           stroke-width: 2px;
           height: 18px;
           width: 18px;
-          transition: all 0.3s;
+          transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+            width 0.3s;
         }
       }
 
@@ -1693,14 +1706,16 @@ watchPostEffect(() => {
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: all 0.3s;
+        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+          width 0.3s;
 
         svg {
           color: var(--placeholder);
           stroke-width: 2px;
           height: 18px;
           width: 18px;
-          transition: all 0.3s;
+          transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+            width 0.3s;
         }
       }
     }
@@ -1727,7 +1742,8 @@ watchPostEffect(() => {
     z-index: 2;
     opacity: 0%;
     transform: translateY(30px);
-    transition: all 0.3s;
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+      width 0.3s;
 
     &.is-active {
       opacity: 100%;
@@ -2088,7 +2104,8 @@ watchPostEffect(() => {
         height: 100%;
         width: 100%;
         transform: translateX(100%);
-        transition: all 0.3s;
+        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+          width 0.3s;
         z-index: 20;
 
         &.is-mobile-active {
@@ -2165,7 +2182,8 @@ watchPostEffect(() => {
         height: 100%;
         width: 340px;
         transform: translateX(100%);
-        transition: all 0.3s;
+        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+          width 0.3s;
         z-index: 20;
 
         &.is-mobile-active {

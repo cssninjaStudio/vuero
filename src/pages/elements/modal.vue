@@ -133,8 +133,8 @@ useHead({
           subtitle="Unlock more features and business tools by going premium"
         />
       </template>
-      <template #action>
-        <VButton color="primary" raised>Confirm</VButton>
+      <template #action="{ close }">
+        <VButton color="primary" raised @click="close()">Confirm</VButton>
       </template>
     </VModal>
 
@@ -150,8 +150,8 @@ useHead({
           subtitle="Unlock more features and business tools by going premium"
         />
       </template>
-      <template #action>
-        <VButton color="primary" raised>Confirm</VButton>
+      <template #action="{ close }">
+        <VButton color="primary" raised @click="close()">Confirm</VButton>
       </template>
     </VModal>
 
@@ -167,8 +167,8 @@ useHead({
           subtitle="Unlock more features and business tools by going premium"
         />
       </template>
-      <template #action>
-        <VButton color="primary" raised>Confirm</VButton>
+      <template #action="{ close }">
+        <VButton color="primary" raised @click="close()">Confirm</VButton>
       </template>
     </VModal>
 
@@ -208,8 +208,8 @@ useHead({
           </template>
         </VPlaceholderSection>
       </template>
-      <template #action>
-        <VButton color="primary" rounded raised>Confirm</VButton>
+      <template #action="{ close }">
+        <VButton color="primary" rounded raised @click="close()">Confirm</VButton>
       </template>
     </VModal>
 
@@ -233,8 +233,8 @@ useHead({
           </template>
         </VPlaceholderSection>
       </template>
-      <template #action>
-        <VButton color="primary" rounded raised>Confirm</VButton>
+      <template #action="{ close }">
+        <VButton color="primary" rounded raised @click="close()">Confirm</VButton>
       </template>
     </VModal>
 
@@ -259,8 +259,8 @@ useHead({
           </template>
         </VPlaceholderSection>
       </template>
-      <template #action>
-        <VButton color="primary" rounded raised>Confirm</VButton>
+      <template #action="{ close }">
+        <VButton color="primary" rounded raised @click="close()">Confirm</VButton>
       </template>
     </VModal>
 
@@ -285,8 +285,8 @@ useHead({
           </template>
         </VPlaceholderSection>
       </template>
-      <template #action>
-        <VButton color="primary" rounded raised>Confirm</VButton>
+      <template #action="{ close }">
+        <VButton color="primary" rounded raised @click="close()">Confirm</VButton>
       </template>
     </VModal>
 
@@ -311,8 +311,8 @@ useHead({
           </template>
         </VPlaceholderSection>
       </template>
-      <template #action>
-        <VButton color="primary" rounded raised>Confirm</VButton>
+      <template #action="{ close }">
+        <VButton color="primary" rounded raised @click="close()">Confirm</VButton>
       </template>
     </VModal>
 
@@ -349,8 +349,8 @@ useHead({
           </div>
         </form>
       </template>
-      <template #action>
-        <VButton color="primary" raised>Publish</VButton>
+      <template #action="{ close }">
+        <VButton color="primary" raised @click="close()">Publish</VButton>
       </template>
     </VModal>
 
@@ -386,8 +386,8 @@ useHead({
           </div>
         </form>
       </template>
-      <template #action>
-        <VButton color="primary" raised>Publish</VButton>
+      <template #action="{ close }">
+        <VButton color="primary" raised @click="close()">Publish</VButton>
       </template>
     </VModal>
 
@@ -442,8 +442,8 @@ useHead({
           </div>
         </form>
       </template>
-      <template #action>
-        <VButton color="primary" raised>Publish</VButton>
+      <template #action="{ close }">
+        <VButton color="primary" raised @click="close()">Publish</VButton>
       </template>
     </VModal>
 
@@ -676,8 +676,8 @@ useHead({
           </div>
         </div>
       </template>
-      <template #action>
-        <VButton color="primary" raised>Save Changes</VButton>
+      <template #action="{ close }">
+        <VButton color="primary" raised @click="close()">Save Changes</VButton>
       </template>
     </VModal>
 
@@ -910,8 +910,8 @@ useHead({
           </div>
         </div>
       </template>
-      <template #action>
-        <VButton color="primary" raised>Save Changes</VButton>
+      <template #action="{ close }">
+        <VButton color="primary" raised @click="close()">Save Changes</VButton>
       </template>
     </VModal>
 
@@ -929,8 +929,8 @@ useHead({
           subtitle="Unlock more features and business tools by going premium"
         />
       </template>
-      <template #action>
-        <VButton color="primary" raised>Confirm</VButton>
+      <template #action="{ close }">
+        <VButton color="primary" raised @click="close()">Confirm</VButton>
       </template>
     </VModal>
 
@@ -948,8 +948,8 @@ useHead({
           subtitle="Unlock more features and business tools by going premium"
         />
       </template>
-      <template #action>
-        <VButton color="primary" raised>Confirm</VButton>
+      <template #action="{ close }">
+        <VButton color="primary" raised @click="close()">Confirm</VButton>
       </template>
     </VModal>
   </div>

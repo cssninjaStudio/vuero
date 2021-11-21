@@ -697,7 +697,8 @@ useHead({
               padding: 6px 8px;
               border-radius: 100px;
               margin-bottom: 6px;
-              transition: all 0.3s;
+              transition: color 0.3s, background-color 0.3s, border-color 0.3s,
+                height 0.3s, width 0.3s;
               cursor: pointer;
 
               &:hover {
@@ -893,7 +894,8 @@ useHead({
       left: 52%;
       height: 100%;
       width: 48%;
-      transition: all 0.3s;
+      transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+        width 0.3s;
 
       .header-area {
         height: 80px;
@@ -1031,7 +1033,8 @@ useHead({
             background: var(--white);
             border-radius: 100px;
             cursor: pointer;
-            transition: all 0.3s;
+            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+              width 0.3s;
 
             &:hover {
               border-color: var(--secondary);
@@ -1059,7 +1062,8 @@ useHead({
               font-size: 0.95rem;
               font-weight: 500;
               color: var(--dark-text);
-              transition: all 0.3s;
+              transition: color 0.3s, background-color 0.3s, border-color 0.3s,
+                height 0.3s, width 0.3s;
             }
 
             .download-icon {
@@ -1070,7 +1074,8 @@ useHead({
               display: flex;
               justify-content: center;
               align-items: center;
-              transition: all 0.3s;
+              transition: color 0.3s, background-color 0.3s, border-color 0.3s,
+                height 0.3s, width 0.3s;
 
               i {
                 font-size: 12px;
@@ -1203,7 +1208,8 @@ useHead({
   box-shadow: none;
   border-radius: var(--radius-rounded);
   border: 1px solid transparent;
-  transition: all 0.3s;
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+    width 0.3s;
 
   &:hover {
     border-color: var(--fade-grey-dark-4);
@@ -1308,7 +1314,8 @@ useHead({
   border-left: 1px solid var(--fade-grey);
   z-index: 10;
   transform: translateX(100%);
-  transition: all 0.3s;
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+    width 0.3s;
 
   &.is-active {
     transform: translateX(0);
@@ -1405,7 +1412,8 @@ useHead({
             background: var(--white);
             border: 1px solid var(--fade-grey-dark-3);
             border-radius: var(--radius-rounded);
-            transition: all 0.3s;
+            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+              width 0.3s;
 
             &:hover {
               box-shadow: var(--light-box-shadow);
@@ -1974,7 +1982,8 @@ Dark mode
     left: unset !important;
     width: 68% !important;
     transform: translateX(100%);
-    transition: all 0.3s;
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+      width 0.3s;
 
     &.tablet-active {
       transform: translateX(0) !important;

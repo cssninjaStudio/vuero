@@ -268,7 +268,7 @@
     position: absolute;
     left: 50%;
     top: -70px;
-    transition: all 0.3s;
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s, width 0.3s;
     padding: 0;
 
     &::after {
@@ -475,6 +475,13 @@
   .slider-target {
     .slider-base {
       .slider-handle {
+        &:focus-visible {
+          outline-offset: var(--accessibility-focus-outline-offset);
+          outline-width: var(--accessibility-focus-outline-width);
+          outline-color: var(--accessibility-focus-outline-color);
+          outline-style: var(--accessibility-focus-outline-style);
+        }
+
         .slider-tooltip {
           border-radius: 100px;
           width: 28px;
@@ -494,6 +501,13 @@
   .slider-target {
     .slider-base {
       .slider-handle {
+        &:focus-visible {
+          outline-offset: var(--accessibility-focus-outline-offset);
+          outline-width: var(--accessibility-focus-outline-width);
+          outline-color: var(--accessibility-focus-outline-color);
+          outline-style: var(--accessibility-focus-outline-style);
+        }
+
         .slider-tooltip {
           border-radius: 0.75rem;
           min-width: 28px;
@@ -515,6 +529,13 @@
   .slider-target {
     .slider-base {
       .slider-handle {
+        &:focus-visible {
+          outline-offset: var(--accessibility-focus-outline-offset);
+          outline-width: var(--accessibility-focus-outline-width);
+          outline-color: var(--accessibility-focus-outline-color);
+          outline-style: var(--accessibility-focus-outline-style);
+        }
+
         .slider-tooltip {
           border-radius: 0.5rem;
           min-width: 28px;

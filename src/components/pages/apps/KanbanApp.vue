@@ -171,7 +171,12 @@ onMounted(() => {
         >
           <!-- Collapsed content -->
           <div class="collapsed-content">
-            <div class="expand-button" @click="isColumnNewCollapsed = false">
+            <div
+              class="expand-button"
+              tabindex="0"
+              @keydown.space.prevent="isColumnNewCollapsed = false"
+              @click="isColumnNewCollapsed = false"
+            >
               <i aria-hidden="true" class="iconify" data-icon="feather:plus"></i>
             </div>
             <div>
@@ -234,7 +239,12 @@ onMounted(() => {
                 </div>
                 <footer class="card-footer">
                   <a class="card-footer-item">View</a>
-                  <a class="card-footer-item" @click="task.state = 'progress'">
+                  <a
+                    class="card-footer-item"
+                    tabindex="0"
+                    @keydown.space.prevent="task.state = 'progress'"
+                    @click="task.state = 'progress'"
+                  >
                     Approve
                   </a>
                 </footer>
@@ -260,7 +270,12 @@ onMounted(() => {
         >
           <!-- Collapsed content -->
           <div class="collapsed-content">
-            <div class="expand-button" @click="isColumnProgressCollapsed = false">
+            <div
+              class="expand-button"
+              tabindex="0"
+              @keydown.space.prevent="isColumnProgressCollapsed = false"
+              @click="isColumnProgressCollapsed = false"
+            >
               <i aria-hidden="true" class="iconify" data-icon="feather:plus"></i>
             </div>
             <div>
@@ -334,7 +349,12 @@ onMounted(() => {
         >
           <!-- Collapsed content -->
           <div class="collapsed-content">
-            <div class="expand-button" @click="isColumnReadyCollapsed = false">
+            <div
+              class="expand-button"
+              tabindex="0"
+              @keydown.space.prevent="isColumnReadyCollapsed = false"
+              @click="isColumnReadyCollapsed = false"
+            >
               <i aria-hidden="true" class="iconify" data-icon="feather:plus"></i>
             </div>
             <div>
@@ -413,7 +433,12 @@ onMounted(() => {
         >
           <!-- Collapsed content -->
           <div class="collapsed-content">
-            <div class="expand-button" @click="isColumnReviewCollapsed = false">
+            <div
+              class="expand-button"
+              tabindex="0"
+              @keydown.space.prevent="isColumnReviewCollapsed = false"
+              @click="isColumnReviewCollapsed = false"
+            >
               <i aria-hidden="true" class="iconify" data-icon="feather:plus"></i>
             </div>
             <div>
@@ -487,7 +512,12 @@ onMounted(() => {
         >
           <!-- Collapsed content -->
           <div class="collapsed-content">
-            <div class="expand-button" @click="isColumnCompletedCollapsed = false">
+            <div
+              class="expand-button"
+              tabindex="0"
+              @keydown.space.prevent="isColumnCompletedCollapsed = false"
+              @click="isColumnCompletedCollapsed = false"
+            >
               <i aria-hidden="true" class="iconify" data-icon="feather:plus"></i>
             </div>
             <div>
@@ -713,13 +743,15 @@ onMounted(() => {
           display: flex;
           justify-content: center;
           align-items: center;
-          transition: all 0.3s;
+          transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+            width 0.3s;
           cursor: pointer;
 
           svg {
             height: 18px;
             width: 18px;
-            transition: all 0.3s;
+            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+              width 0.3s;
             color: var(--muted-grey);
           }
 

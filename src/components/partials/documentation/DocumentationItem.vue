@@ -1,5 +1,11 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, useSlots, computed } from 'vue'
+
+const slots = useSlots()
+
+const hasCodeSample = computed(() => !!slots.code?.())
+const hasExample = computed(() => !!slots.example?.())
+const hasDefault = computed(() => !!slots.default?.())
 
 const props = withDefaults(
   defineProps<{
@@ -13,38 +19,35 @@ const props = withDefaults(
 )
 
 const displayCode = ref(false)
+const hasSlimscroll = computed(() => props.frontmatter?.slimscroll ?? false)
 </script>
 
 <template>
   <div class="demo-card">
-    <div class="demo-title has-slimscroll-all">
+    <div class="demo-title" :class="[hasSlimscroll && 'has-slimscroll-x']">
       <div class="content">
         <slot></slot>
       </div>
 
       <a
-        v-if="!props.frontmatter.disable_code"
+        v-if="hasCodeSample"
         aria-label="Toggle code example"
         class="code-trigger"
+        tabindex="0"
         :class="[displayCode && 'is-active']"
+        @keydown.space.prevent="displayCode = !displayCode"
         @click="displayCode = !displayCode"
       >
         <VIcon v-if="!displayCode" style="height: 16px" icon="feather:code" />
         <VIcon v-else style="height: 16px" icon="feather:x" />
       </a>
     </div>
-    <div
-      v-if="!props.frontmatter.disable_code || !props.frontmatter.disable_example"
-      class="card-inner"
-    >
-      <div v-if="!props.frontmatter.disable_example" class="demo-example">
+    <div v-if="(hasCodeSample && displayCode) || hasExample" class="card-inner">
+      <div v-if="hasExample" class="demo-example">
         <slot name="example"></slot>
       </div>
 
-      <div
-        v-if="!props.frontmatter.disable_code && displayCode"
-        class="demo-code-wrapper"
-      >
+      <div v-if="hasCodeSample && displayCode" class="demo-code-wrapper">
         <div class="demo-code">
           <slot name="code"></slot>
         </div>

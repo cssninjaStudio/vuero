@@ -487,7 +487,8 @@
         max-width: 30px;
         margin: 0 2px;
         border-radius: var(--radius-rounded);
-        transition: all 0.3s;
+        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+          width 0.3s;
         cursor: pointer;
         pointer-events: all !important;
 
@@ -521,7 +522,8 @@
       align-items: center;
       background: rgb(255 255 255 / 95%);
       opacity: 0%;
-      transition: all 0.3s;
+      transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+        width 0.3s;
       z-index: 0;
       pointer-events: none;
 

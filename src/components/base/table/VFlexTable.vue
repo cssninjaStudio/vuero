@@ -128,6 +128,12 @@ const columns = computed(() => {
         :key="index"
         class="flex-table-item has-slimscroll-x"
         :class="[props.clickable && 'is-clickable']"
+        :tabindex="props.clickable ? 0 : undefined"
+        @keydown.space.prevent="
+          () => {
+            props.clickable && emits('rowClick', row, index)
+          }
+        "
         @click="
           () => {
             props.clickable && emits('rowClick', row, index)

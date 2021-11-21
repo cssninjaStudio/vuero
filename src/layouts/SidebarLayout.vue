@@ -180,6 +180,8 @@ watch(
             :class="[activeMobileSubsidebar === 'dashboard' && 'is-active']"
             data-content="Dashboards"
             aria-label="View dashboards"
+            tabindex="0"
+            @keydown.space.prevent="switchSidebar('dashboard')"
             @click="switchSidebar('dashboard')"
           >
             <i
@@ -196,6 +198,8 @@ watch(
             :class="[activeMobileSubsidebar === 'layout' && 'is-active']"
             data-content="Layouts"
             aria-label="View layouts"
+            tabindex="0"
+            @keydown.space.prevent="switchSidebar('layout')"
             @click="switchSidebar('layout')"
           >
             <i
@@ -212,6 +216,8 @@ watch(
             :class="[activeMobileSubsidebar === 'elements' && 'is-active']"
             data-content="Elements"
             aria-label="View elements"
+            tabindex="0"
+            @keydown.space.prevent="switchSidebar('elements')"
             @click="switchSidebar('elements')"
           >
             <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather:box"></i>
@@ -224,6 +230,8 @@ watch(
             :class="[activeMobileSubsidebar === 'components' && 'is-active']"
             data-content="Components"
             aria-label="View components"
+            tabindex="0"
+            @keydown.space.prevent="switchSidebar('components')"
             @click="switchSidebar('components')"
           >
             <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather:cpu"></i>
@@ -257,6 +265,8 @@ watch(
           <a
             aria-label="Display search panel"
             data-content="Search"
+            tabindex="0"
+            @keydown.space.prevent="activePanel = 'search'"
             @click="activePanel = 'search'"
           >
             <i
@@ -268,6 +278,8 @@ watch(
           <a
             aria-label="Close all panels"
             class="is-hidden is-inactive"
+            tabindex="0"
+            @keydown.space.prevent="activePanel = 'none'"
             @click="activePanel = 'none'"
           >
             <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather-x" />

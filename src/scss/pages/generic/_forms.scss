@@ -108,7 +108,8 @@ Form Layouts
                 font-family: var(--font);
                 font-weight: 600;
                 font-size: 0.9rem;
-                transition: all 0.3s;
+                transition: color 0.3s, background-color 0.3s, border-color 0.3s,
+                  height 0.3s, width 0.3s;
               }
             }
           }
@@ -199,7 +200,8 @@ Form Layouts
                   font-family: var(--font);
                   font-weight: 600;
                   font-size: 0.9rem;
-                  transition: all 0.3s;
+                  transition: color 0.3s, background-color 0.3s, border-color 0.3s,
+                    height 0.3s, width 0.3s;
                   padding: 30px 20px;
 
                   .fee {
@@ -351,7 +353,8 @@ Form Layouts
               background: none;
               margin-left: 4px;
               cursor: pointer;
-              transition: all 0.3s;
+              transition: color 0.3s, background-color 0.3s, border-color 0.3s,
+                height 0.3s, width 0.3s;
 
               &:hover {
                 border: 1.6px solid var(--primary);
@@ -379,7 +382,8 @@ Form Layouts
               border: 3px solid var(--light-text);
               cursor: pointer;
               opacity: 60%;
-              transition: all 0.3s;
+              transition: color 0.3s, background-color 0.3s, border-color 0.3s,
+                height 0.3s, width 0.3s;
 
               &:hover {
                 opacity: 100%;
@@ -428,7 +432,8 @@ Form Layouts
     .form-header {
       padding: 12px 20px;
       border-bottom: 1px solid var(--fade-grey-dark-3);
-      transition: all 0.3s;
+      transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+        width 0.3s;
 
       &.is-stuck {
         background: var(--white);

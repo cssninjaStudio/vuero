@@ -46,6 +46,7 @@ const onMounted: DirectiveHook = (el: HTMLElement, bindings) => {
 
   if (typeof value === 'string') {
     el.dataset.hint = value
+    el.tabIndex = 0
     el.classList.add(`hint--${placement}`)
 
     if (color) {

@@ -195,7 +195,7 @@ debouncedWatch(
           :key="index"
           class="column is-4 has-text-centered"
         >
-          <figure class="vuero-demo-wrapper loaded">
+          <figure class="vuero-demo-wrapper loaded" tabindex="0">
             <span v-if="item.new" class="new-tag">New</span>
             <img
               class="light-image-block-l"
@@ -217,7 +217,7 @@ debouncedWatch(
                   <span>{{ item.name }}</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="item.route">
+                  <RouterLink :to="item.route" tabindex="-1">
                     Go to demo
                     <i aria-hidden="true" class="fas fa-angle-right"></i>
                   </RouterLink>
@@ -255,7 +255,7 @@ debouncedWatch(
           :key="index"
           class="column is-4 has-text-centered"
         >
-          <figure class="vuero-demo-wrapper loaded">
+          <figure class="vuero-demo-wrapper loaded" tabindex="0">
             <span v-if="item.new" class="new-tag">New</span>
             <img
               class="light-image-block-l"
@@ -277,7 +277,7 @@ debouncedWatch(
                   <span>{{ item.name }}</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="item.route">
+                  <RouterLink :to="item.route" tabindex="-1">
                     Go to demo
                     <i aria-hidden="true" class="fas fa-angle-right"></i>
                   </RouterLink>
@@ -315,7 +315,7 @@ debouncedWatch(
           :key="index"
           class="column is-4 has-text-centered"
         >
-          <figure class="vuero-demo-wrapper loaded">
+          <figure class="vuero-demo-wrapper loaded" tabindex="0">
             <span v-if="item.new" class="new-tag">New</span>
             <img
               class="light-image-block-l"
@@ -337,7 +337,7 @@ debouncedWatch(
                   <span>{{ item.name }}</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="item.route">
+                  <RouterLink :to="item.route" tabindex="-1">
                     Go to demo
                     <i aria-hidden="true" class="fas fa-angle-right"></i>
                   </RouterLink>
@@ -375,7 +375,7 @@ debouncedWatch(
           :key="index"
           class="column is-4 has-text-centered"
         >
-          <figure class="vuero-demo-wrapper loaded">
+          <figure class="vuero-demo-wrapper loaded" tabindex="0">
             <span v-if="item.new" class="new-tag">New</span>
             <img
               class="light-image-block-l"
@@ -397,7 +397,7 @@ debouncedWatch(
                   <span>{{ item.name }}</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="item.route">
+                  <RouterLink :to="item.route" tabindex="-1">
                     Go to demo
                     <i aria-hidden="true" class="fas fa-angle-right"></i>
                   </RouterLink>
@@ -435,7 +435,7 @@ debouncedWatch(
           :key="index"
           class="column is-4 has-text-centered"
         >
-          <figure class="vuero-demo-wrapper loaded">
+          <figure class="vuero-demo-wrapper loaded" tabindex="0">
             <span v-if="item.new" class="new-tag">New</span>
             <img
               class="light-image-block-l"
@@ -457,7 +457,7 @@ debouncedWatch(
                   <span>{{ item.name }}</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="item.route">
+                  <RouterLink :to="item.route" tabindex="-1">
                     Go to demo
                     <i aria-hidden="true" class="fas fa-angle-right"></i>
                   </RouterLink>

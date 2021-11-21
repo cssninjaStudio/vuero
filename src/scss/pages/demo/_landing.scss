@@ -99,7 +99,8 @@
       border-radius: 500px;
       font-family: var(--font);
       z-index: 99;
-      transition: all 0.3s;
+      transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+        width 0.3s;
 
       &.is-docked {
         &:not(.is-solid) {
@@ -123,7 +124,8 @@
               &.is-theme-toggle {
                 opacity: 0%;
                 pointer-events: none;
-                transition: all 0.3s;
+                transition: color 0.3s, background-color 0.3s, border-color 0.3s,
+                  height 0.3s, width 0.3s;
               }
             }
           }
@@ -157,7 +159,8 @@
           justify-content: center;
           align-items: center;
           border: 1px solid transparent;
-          transition: all 0.3s;
+          transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+            width 0.3s;
 
           img {
             position: relative;
@@ -261,7 +264,8 @@
               width: 53px;
               border: 2px solid var(--primary);
               border-radius: 100px;
-              transition: all 0.3s;
+              transition: color 0.3s, background-color 0.3s, border-color 0.3s,
+                height 0.3s, width 0.3s;
 
               .dark,
               .light {
@@ -514,7 +518,8 @@
     height: 580px;
     background: var(--widget-grey-dark-4);
     transform: translateY(-100%);
-    transition: all 0.3s;
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+      width 0.3s;
 
     .header-inner {
       position: relative;
@@ -913,6 +918,13 @@
   border: 1px solid var(--fade-grey-dark-5);
   min-height: 205px;
 
+  &:focus-visible {
+    outline-offset: var(--accessibility-focus-outline-offset);
+    outline-width: var(--accessibility-focus-outline-width);
+    outline-color: var(--accessibility-focus-outline-color);
+    outline-style: var(--accessibility-focus-outline-style);
+  }
+
   &:hover {
     .circle-overlay {
       transform: scale(35);
@@ -1006,7 +1018,8 @@
     padding-bottom: 12px;
     border-bottom: 1px solid var(--primary-light-20);
     transform: translateY(20px);
-    transition: all 0.3s;
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s, transform 0.3s,
+      width 0.3s, opacity 0.3s;
     transition-delay: 0.1s;
 
     span {
@@ -1026,7 +1039,7 @@
   .demo-link {
     opacity: 0%;
     transform: translateY(20px);
-    transition: all 0.3s;
+    transition: transform 0.3s, opacity 0.3s, color 0.3s;
     transition-delay: 0.2s;
 
     a {
@@ -1086,7 +1099,7 @@
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 0;
-  transition: all 0.3s;
+  transition: coltransformor 0.3s, box-shadow 0.3s, border-color 0.3s;
   cursor: pointer;
 
   &:hover {
@@ -1112,7 +1125,8 @@
       filter: grayscale(1);
       opacity: 60%;
       max-height: 80px;
-      transition: all 0.3s;
+      transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+        width 0.3s;
     }
   }
 
@@ -1652,7 +1666,8 @@
       border-radius: 100px;
       background: #d3f4ed;
       box-shadow: var(--light-box-shadow);
-      transition: all 0.3s;
+      transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+        width 0.3s;
 
       img {
         display: block;

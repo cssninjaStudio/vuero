@@ -35,7 +35,9 @@ const blockSwitchId = `block-switch-${++instances}`
       <label
         :for="blockSwitchId"
         class="thin-switch"
+        tabindex="0"
         :class="[props.color && `is-${props.color}`]"
+        @keydown.space.prevent="() => emit('update:modelValue', !props.modelValue)"
       >
         <input
           :id="blockSwitchId"

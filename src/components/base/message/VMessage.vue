@@ -26,6 +26,8 @@ const props = withDefaults(defineProps<VMessageProps>(), {
       v-if="props.closable"
       aria-label="Dismiss"
       class="delete"
+      tabindex="0"
+      @keydown.space.prevent="emit('close')"
       @click.prevent="emit('close')"
     ></a>
     <div class="message-body"><slot></slot></div>

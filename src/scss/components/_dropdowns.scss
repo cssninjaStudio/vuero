@@ -30,7 +30,8 @@
       width: 30px;
       border-radius: var(--radius-rounded);
       cursor: pointer;
-      transition: all 0.3s;
+      transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+        width 0.3s;
 
       svg {
         height: 20px;
@@ -64,7 +65,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: all 0.3s;
+        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+          width 0.3s;
         margin-left: 6px;
 
         svg {
@@ -102,7 +104,8 @@
       padding: 0.5rem 1rem;
       font-size: 0.95rem;
       color: var(--light-text);
-      transition: all 0.3s;
+      transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+        width 0.3s;
 
       &:not(.is-button):hover,
       &:not(.is-button).is-active {
@@ -195,7 +198,6 @@
       font-family: var(--font);
 
       &:focus {
-        outline: none;
         border-color: var(--fade-grey-dark-4);
         box-shadow: var(--light-box-shadow);
       }
@@ -246,7 +248,8 @@
           right: -282px;
           top: 0;
           width: 280px;
-          transition: all 0.3s;
+          transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+            width 0.3s;
           opacity: 0%;
           transform: translateY(10px);
           pointer-events: none;

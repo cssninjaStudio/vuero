@@ -8,7 +8,7 @@
       <ul class="submenu" data-simplebar>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               Personal
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>

@@ -32,13 +32,18 @@ const localFlagSrc = computed(() => {
 <template>
   <div class="toolbar ml-auto">
     <div class="toolbar-link">
-      <label class="dark-mode ml-auto">
+      <label tabindex="0" class="dark-mode ml-auto">
         <input type="checkbox" :checked="!isDark" @change="toggleDarkModeHandler" />
         <span></span>
       </label>
     </div>
 
-    <a class="toolbar-link right-panel-trigger" @click="activePanel = 'languages'">
+    <a
+      tabindex="0"
+      class="toolbar-link right-panel-trigger"
+      @keydown.space.prevent="activePanel = 'languages'"
+      @click="activePanel = 'languages'"
+    >
       <img :src="localFlagSrc" alt="" />
     </a>
 

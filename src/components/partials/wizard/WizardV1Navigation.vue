@@ -35,7 +35,12 @@ const setStep = (target: number) => {
     </div>
 
     <div ref="dropdownElement1" class="dropdown wizard-dropdown dropdown-trigger">
-      <div class="is-trigger" @click="dropdown1.toggle">
+      <div
+        tabindex="0"
+        class="is-trigger"
+        @click="dropdown1.toggle"
+        @keydown.space.prevent="dropdown1.toggle"
+      >
         <i aria-hidden="true" class="iconify" data-icon="feather:chevron-down"></i>
       </div>
       <div id="wizard-navigation-dropdown" class="dropdown-menu" role="menu">
@@ -103,7 +108,13 @@ const setStep = (target: number) => {
     </div>
 
     <div ref="dropdownElement2" class="dropdown is-right dropdown-trigger user-dropdown">
-      <div class="is-trigger" aria-haspopup="true" @click="dropdown2.toggle">
+      <div
+        tabindex="0"
+        class="is-trigger"
+        aria-haspopup="true"
+        @click="dropdown2.toggle"
+        @keydown.space.prevent="dropdown2.toggle"
+      >
         <div class="profile-avatar">
           <img
             class="avatar"
@@ -158,7 +169,8 @@ const setStep = (target: number) => {
   height: 60px;
   background: var(--white);
   padding: 0 20px;
-  transition: all 0.3s;
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+    width 0.3s;
   z-index: 99;
 
   .wizard-brand {
@@ -237,7 +249,8 @@ const setStep = (target: number) => {
       border: 1px solid var(--fade-grey-dark-3);
       box-shadow: var(--light-box-shadow);
       background: var(--white);
-      transition: all 0.3s;
+      transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+        width 0.3s;
 
       .dark-mode {
         transform: scale(0.6);
@@ -278,7 +291,8 @@ const setStep = (target: number) => {
         width: 18px;
         height: 18px;
         color: var(--light-text);
-        transition: all 0.3s;
+        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+          width 0.3s;
       }
     }
 

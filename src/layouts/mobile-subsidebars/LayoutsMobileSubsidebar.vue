@@ -8,7 +8,7 @@
       <ul class="submenu">
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               Lists
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
@@ -51,7 +51,7 @@
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               Flex Lists
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
@@ -88,7 +88,7 @@
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               Datatable
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
@@ -135,7 +135,7 @@
 
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               Form Layouts
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
@@ -190,7 +190,7 @@
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               Placeload
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
@@ -237,7 +237,7 @@
         <li class="divider"></li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               Card Grid
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
@@ -283,7 +283,7 @@
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               Tile Grid
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
@@ -320,7 +320,7 @@
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               User Grid
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
@@ -364,7 +364,7 @@
         <li class="divider"></li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               Personal
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
@@ -410,7 +410,7 @@
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               Pages
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
@@ -474,7 +474,7 @@
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               Subpages
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
@@ -511,7 +511,7 @@
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               Projects
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
@@ -592,7 +592,7 @@
         <li class="divider"></li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               Utility
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
@@ -635,7 +635,7 @@
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               Onboarding
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
@@ -699,7 +699,7 @@
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               Error Pages
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>

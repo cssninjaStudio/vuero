@@ -26,7 +26,13 @@ const props = defineProps<{
     </div>
   </div>
 
-  <div v-if="props.isOpen" class="mobile-overlay" @click="emit('toggle')"></div>
+  <div
+    v-if="props.isOpen"
+    class="mobile-overlay"
+    tabindex="0"
+    @keydown.space.prevent="emit('toggle')"
+    @click="emit('toggle')"
+  ></div>
 </template>
 
 <style lang="scss">
@@ -58,7 +64,8 @@ const props = defineProps<{
   border-right: 1px solid var(--fade-grey);
   z-index: 100;
   transform: translateX(-100%);
-  transition: all 0.3s;
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+    width 0.3s;
 
   &.is-active {
     transform: translateX(0);
@@ -83,7 +90,8 @@ const props = defineProps<{
           position: relative;
           transform: rotate(0);
           opacity: 100%;
-          transition: all 0.3s;
+          transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+            width 0.3s;
 
           &:hover,
           &.is-active {
@@ -105,7 +113,8 @@ const props = defineProps<{
             align-items: center;
             height: 24px;
             width: 24px;
-            transition: all 0.3s;
+            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+              width 0.3s;
           }
 
           &:hover svg,
@@ -134,7 +143,8 @@ const props = defineProps<{
         #open-filters {
           svg {
             transform: rotate(0);
-            transition: all 0.3s;
+            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+              width 0.3s;
           }
 
           &:hover {

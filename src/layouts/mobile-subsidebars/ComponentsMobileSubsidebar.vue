@@ -71,7 +71,7 @@
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               VFlexTable
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
@@ -115,7 +115,7 @@
 
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               Accordions
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
@@ -143,7 +143,7 @@
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               Cards
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
@@ -185,7 +185,7 @@
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               Placeholders
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
@@ -215,7 +215,7 @@
         <li class="divider"></li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               Plugins
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>

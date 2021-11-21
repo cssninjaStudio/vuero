@@ -19,7 +19,8 @@
   width: 100%;
   height: 80px;
   background: var(--white);
-  transition: all 0.3s;
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+    width 0.3s;
   border-bottom: 1px solid var(--fade-grey);
   z-index: 100;
 
@@ -341,7 +342,8 @@
           border-radius: 8px;
           border: 1px solid transparent;
           margin: 0 4px;
-          transition: all 0.3s;
+          transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+            width 0.3s;
 
           &:hover {
             background: var(--fade-grey-light-4);
@@ -379,7 +381,8 @@
             font-size: 0.65rem;
             color: var(--muted-grey);
             text-transform: uppercase;
-            transition: all 0.3s;
+            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+              width 0.3s;
             cursor: pointer;
           }
         }
@@ -399,7 +402,8 @@
           border-radius: 8px;
           border: 1px solid transparent;
           margin: 0 4px;
-          transition: all 0.3s;
+          transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+            width 0.3s;
 
           > .button {
             display: flex;
@@ -413,7 +417,8 @@
             box-shadow: none;
             border-radius: var(--radius-rounded);
             color: var(--light-text);
-            transition: all 0.3s;
+            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+              width 0.3s;
 
             &:hover {
               background: var(--fade-grey-light-3);
@@ -520,7 +525,8 @@
                         border: 1px solid var(--fade-grey-dark-3);
                         border-radius: 10px;
                         cursor: pointer;
-                        transition: all 0.3s;
+                        transition: color 0.3s, background-color 0.3s, border-color 0.3s,
+                          height 0.3s, width 0.3s;
 
                         &:hover {
                           box-shadow: var(--light-box-shadow);
@@ -709,7 +715,8 @@
                 padding-left: 0.75rem !important;
                 padding-right: 0.75rem !important;
                 border-color: transparent;
-                transition: all 0.3s;
+                transition: color 0.3s, background-color 0.3s, border-color 0.3s,
+                  height 0.3s, width 0.3s;
               }
             }
 
@@ -767,7 +774,8 @@
         width: 34px;
         border-radius: var(--radius-rounded);
         margin: 0 4px;
-        transition: all 0.3s;
+        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+          width 0.3s;
 
         &:hover {
           background: var(--white);
@@ -1361,7 +1369,8 @@
   transform: translateY(10px);
   border: 1px solid var(--fade-grey-dark-3);
   box-shadow: var(--light-box-shadow);
-  transition: all 0.3s;
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+    width 0.3s;
   max-width: 800px;
   top: 85px;
   left: 0;
@@ -1440,7 +1449,8 @@
             border: 1px solid transparent;
             border-radius: 8px;
             margin: 0 10px;
-            transition: all 0.3s;
+            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+              width 0.3s;
           }
         }
       }
@@ -1515,7 +1525,8 @@
 
           ul {
             li {
-              transition: all 0.3s;
+              transition: color 0.3s, background-color 0.3s, border-color 0.3s,
+                height 0.3s, width 0.3s;
               margin-bottom: 6px;
 
               &:hover {
@@ -1581,7 +1592,8 @@
                   width: 6px;
                   stroke-width: 2px;
                   fill: var(--primary);
-                  transition: all 0.3s;
+                  transition: color 0.3s, background-color 0.3s, border-color 0.3s,
+                    height 0.3s, width 0.3s;
                 }
               }
             }

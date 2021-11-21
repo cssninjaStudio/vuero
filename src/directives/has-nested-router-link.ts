@@ -9,6 +9,20 @@ const hasNestedRouterLink: Directive = {
     const content = el.querySelector<HTMLElement>('ul')
     const linkExactActive = el.querySelector<HTMLElement>('.router-link-exact-active')
 
+    function handleClick() {
+      const isActive = el.classList.contains('active')
+
+      document
+        .querySelectorAll('.has-children')
+        .forEach((element) => element.classList.remove('active'))
+
+      if (isActive) {
+        el.classList.remove('active')
+      } else {
+        el.classList.add('active')
+      }
+    }
+
     if (link && content) {
       if (linkExactActive) {
         el.classList.add('active')
@@ -16,20 +30,17 @@ const hasNestedRouterLink: Directive = {
         el.classList.remove('active')
       }
 
+      // on space is pressed while focused
+      link.onkeydown = (event) => {
+        if (event.keyCode === 32) {
+          handleClick()
+        }
+      }
+
       link.onclick = (event) => {
         event.preventDefault()
 
-        const isActive = el.classList.contains('active')
-
-        document
-          .querySelectorAll('.has-children')
-          .forEach((element) => element.classList.remove('active'))
-
-        if (isActive) {
-          el.classList.remove('active')
-        } else {
-          el.classList.add('active')
-        }
+        handleClick()
       }
     }
   },

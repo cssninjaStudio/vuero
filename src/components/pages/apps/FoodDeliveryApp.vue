@@ -104,6 +104,8 @@ onUnmounted(() => {
                 v-for="(item, index) in foodDelivery.foodPills"
                 :key="item.id"
                 class="food-pill"
+                tabindex="0"
+                @keydown.space.prevent="goTo(index)"
                 @click="goTo(index)"
               >
                 <div class="food-pill-icon">
@@ -175,6 +177,8 @@ onUnmounted(() => {
               <a
                 class="inner-icon"
                 :class="[activeSection === 'cart' && 'is-active']"
+                tabindex="0"
+                @keydown.space.prevent="activeSection = 'cart'"
                 @click="activeSection = 'cart'"
               >
                 <i
@@ -188,6 +192,8 @@ onUnmounted(() => {
               <a
                 class="inner-icon"
                 :class="[activeSection === 'activity' && 'is-active']"
+                tabindex="0"
+                @keydown.space.prevent="activeSection = 'activity'"
                 @click="activeSection = 'activity'"
               >
                 <i aria-hidden="true" class="iconify" data-icon="feather:activity"></i>
@@ -197,6 +203,8 @@ onUnmounted(() => {
               <a
                 class="inner-icon"
                 :class="[activeSection === 'address' && 'is-active']"
+                tabindex="0"
+                @keydown.space.prevent="activeSection = 'address'"
                 @click="activeSection = 'address'"
               >
                 <i aria-hidden="true" class="iconify" data-icon="feather:map-pin"></i>
@@ -206,6 +214,8 @@ onUnmounted(() => {
               <a
                 class="inner-icon"
                 :class="[activeSection === 'settings' && 'is-active']"
+                tabindex="0"
+                @keydown.space.prevent="activeSection = 'settings'"
                 @click="activeSection = 'settings'"
               >
                 <i aria-hidden="true" class="iconify" data-icon="feather:settings"></i>
@@ -449,7 +459,8 @@ onUnmounted(() => {
             padding: 10px;
             margin: 0 10px;
             cursor: pointer;
-            transition: all 0.3s;
+            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+              width 0.3s;
 
             &.is-active {
               background: var(--primary);
@@ -528,7 +539,8 @@ onUnmounted(() => {
           border-radius: 100px;
           cursor: pointer;
           color: var(--light-text);
-          transition: all 0.3s;
+          transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+            width 0.3s;
           z-index: 25;
           outline: none !important;
 
@@ -560,7 +572,8 @@ onUnmounted(() => {
             height: 16px;
             width: 16px;
             color: var(--primary);
-            transition: all 0.3s;
+            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+              width 0.3s;
           }
         }
       }
@@ -692,7 +705,8 @@ onUnmounted(() => {
     .sticky-panel {
       position: fixed;
       height: calc(100% - 100px);
-      transition: all 0.3s;
+      transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+        width 0.3s;
       width: 336px;
 
       &.is-stretched {

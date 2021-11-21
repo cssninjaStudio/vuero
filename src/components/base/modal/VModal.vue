@@ -76,6 +76,8 @@ zh-CN:
             <button
               class="v-modal-close ml-auto"
               aria-label="close"
+              tabindex="0"
+              @keydown.space.prevent="emit('close')"
               @click="emit('close')"
             >
               <i aria-hidden="true" class="iconify" data-icon="feather:x"></i>
@@ -93,16 +95,18 @@ zh-CN:
               actions === 'right' && 'is-end',
             ]"
           >
-            <slot name="cancel">
+            <slot name="cancel" :close="() => emit('close')">
               <a
+                tabindex="0"
                 class="button v-button v-modal-close"
                 :class="[rounded && 'is-rounded']"
+                @keydown.space.prevent="emit('close')"
                 @click="emit('close')"
               >
                 {{ cancelLabel }}
               </a>
             </slot>
-            <slot name="action"></slot>
+            <slot name="action" :close="() => emit('close')"></slot>
           </div>
         </div>
       </div>

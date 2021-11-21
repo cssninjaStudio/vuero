@@ -13,7 +13,7 @@ You can use the `is-primary`, `is-success`, `is-info`,
       <input type="text" class="input" placeholder="Find a repository" />
     </VControl>
     <VControl>
-      <a class="button is-primary">Search</a>
+      <a class="button is-primary" tabindex="0">Search</a>
     </VControl>
   </VField>
 </template>
@@ -32,7 +32,7 @@ You can use the `is-primary`, `is-success`, `is-info`,
       />
   </VControl>
   <VControl>
-    <a class="button is-primary">Search</a>
+    <a class="button is-primary" tabindex="0">Search</a>
   </VControl>
 </VField>
 

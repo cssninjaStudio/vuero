@@ -15,6 +15,13 @@
   cursor: pointer;
 }
 
+[class*='hint--']:focus-visible {
+  outline-offset: var(--accessibility-focus-outline-offset);
+  outline-width: var(--accessibility-focus-outline-width);
+  outline-style: var(--accessibility-focus-outline-style);
+  outline-color: var(--accessibility-focus-outline-color);
+}
+
 [class*='hint--']::before,
 [class*='hint--']::after {
   position: absolute;
@@ -28,11 +35,15 @@
 }
 
 [class*='hint--']:hover::before,
-[class*='hint--']:hover::after {
+[class*='hint--']:hover::after,
+[class*='hint--']:focus-visible::before,
+[class*='hint--']:focus-visible::after {
   visibility: visible;
   opacity: 100%;
 }
 
+[class*='hint--']:focus-visible::before,
+[class*='hint--']:focus-visible::after,
 [class*='hint--']:hover::before,
 [class*='hint--']:hover::after {
   transition-delay: 100ms;
@@ -125,13 +136,15 @@
   transform: translateX(-50%);
 }
 
-.hint--top:hover::before {
+.hint--top:hover::before,
+.hint--top:focus-visible::before {
   transform: translateY(-8px);
   transform: translateY(-8px);
   transform: translateY(-8px);
 }
 
-.hint--top:hover::after {
+.hint--top:hover::after,
+.hint--top:focus-visible::after {
   transform: translateX(-50%) translateY(-8px);
   transform: translateX(-50%) translateY(-8px);
   transform: translateX(-50%) translateY(-8px);
@@ -158,13 +171,15 @@
   transform: translateX(-50%);
 }
 
-.hint--bottom:hover::before {
+.hint--bottom:hover::before,
+.hint--bottom:focus-visible::before {
   transform: translateY(8px);
   transform: translateY(8px);
   transform: translateY(8px);
 }
 
-.hint--bottom:hover::after {
+.hint--bottom:hover::after,
+.hint--bottom:focus-visible::after {
   transform: translateX(-50%) translateY(8px);
   transform: translateX(-50%) translateY(8px);
   transform: translateX(-50%) translateY(8px);
@@ -186,13 +201,15 @@
   bottom: 50%;
 }
 
-.hint--right:hover::before {
+.hint--right:hover::before,
+.hint--right:focus-visible::before {
   transform: translateX(8px);
   transform: translateX(8px);
   transform: translateX(8px);
 }
 
-.hint--right:hover::after {
+.hint--right:hover::after,
+.hint--right:focus-visible::after {
   transform: translateX(8px);
   transform: translateX(8px);
   transform: translateX(8px);
@@ -214,13 +231,15 @@
   bottom: 50%;
 }
 
-.hint--left:hover::before {
+.hint--left:hover::before,
+.hint--left:focus-visible::before {
   transform: translateX(-8px);
   transform: translateX(-8px);
   transform: translateX(-8px);
 }
 
-.hint--left:hover::after {
+.hint--left:hover::after,
+.hint--left:focus-visible::after {
   transform: translateX(-8px);
   transform: translateX(-8px);
   transform: translateX(-8px);
@@ -251,13 +270,15 @@
   margin-left: 12px;
 }
 
-.hint--top-left:hover::before {
+.hint--top-left:hover::before,
+.hint--top-left:focus-visible::before {
   transform: translateY(-8px);
   transform: translateY(-8px);
   transform: translateY(-8px);
 }
 
-.hint--top-left:hover::after {
+.hint--top-left:hover::after,
+.hint--top-left:focus-visible::after {
   transform: translateX(-100%) translateY(-8px);
   transform: translateX(-100%) translateY(-8px);
   transform: translateX(-100%) translateY(-8px);
@@ -288,13 +309,15 @@
   margin-left: -12px;
 }
 
-.hint--top-right:hover::before {
+.hint--top-right:hover::before,
+.hint--top-right:focus-visible::before {
   transform: translateY(-8px);
   transform: translateY(-8px);
   transform: translateY(-8px);
 }
 
-.hint--top-right:hover::after {
+.hint--top-right:hover::after,
+.hint--top-right:focus-visible::after {
   transform: translateY(-8px);
   transform: translateY(-8px);
   transform: translateY(-8px);
@@ -325,13 +348,15 @@
   margin-left: 12px;
 }
 
-.hint--bottom-left:hover::before {
+.hint--bottom-left:hover::before,
+.hint--bottom-left:focus-visible::before {
   transform: translateY(8px);
   transform: translateY(8px);
   transform: translateY(8px);
 }
 
-.hint--bottom-left:hover::after {
+.hint--bottom-left:hover::after,
+.hint--bottom-left:focus-visible::after {
   transform: translateX(-100%) translateY(8px);
   transform: translateX(-100%) translateY(8px);
   transform: translateX(-100%) translateY(8px);
@@ -362,13 +387,15 @@
   margin-left: -12px;
 }
 
-.hint--bottom-right:hover::before {
+.hint--bottom-right:hover::before,
+.hint--bottom-right:focus-visible::before {
   transform: translateY(8px);
   transform: translateY(8px);
   transform: translateY(8px);
 }
 
-.hint--bottom-right:hover::after {
+.hint--bottom-right:hover::after,
+.hint--bottom-right:focus-visible::after {
   transform: translateY(8px);
   transform: translateY(8px);
   transform: translateY(8px);

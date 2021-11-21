@@ -520,7 +520,8 @@ const date = ref({
       display: flex;
       align-items: center;
       border: 1px solid var(--fade-grey);
-      transition: all 0.3s;
+      transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+        width 0.3s;
 
       &:hover {
         border-color: var(--primary);
@@ -668,7 +669,8 @@ const date = ref({
           &::after {
             opacity: 0%;
             pointer-events: none;
-            transition: all 0.3s;
+            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+              width 0.3s;
           }
 
           &::before {

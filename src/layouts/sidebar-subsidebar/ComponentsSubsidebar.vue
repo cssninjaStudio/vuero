@@ -86,7 +86,7 @@ const emit = defineEmits(['close'])
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               Datatables
               <VTag label="v2.2" color="primary" outlined curved />
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -140,7 +140,7 @@ const emit = defineEmits(['close'])
 
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               Accordions
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
@@ -168,7 +168,7 @@ const emit = defineEmits(['close'])
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               Cards
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
@@ -211,7 +211,7 @@ const emit = defineEmits(['close'])
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               Placeholders
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
@@ -241,7 +241,7 @@ const emit = defineEmits(['close'])
         <li class="divider"></li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               Plugins
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>

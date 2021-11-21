@@ -408,7 +408,8 @@ const randomCard = () => {
             flex: 0;
             display: flex;
             align-items: center;
-            transition: all 0.3s;
+            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+              width 0.3s;
 
             img {
               display: block;
@@ -418,7 +419,8 @@ const randomCard = () => {
               filter: grayscale(1);
               opacity: 60%;
               pointer-events: none;
-              transition: all 0.3s;
+              transition: color 0.3s, background-color 0.3s, border-color 0.3s,
+                height 0.3s, width 0.3s;
             }
 
             .meta {
@@ -611,7 +613,8 @@ const randomCard = () => {
               background: none;
               margin-left: 4px;
               cursor: pointer;
-              transition: all 0.3s;
+              transition: color 0.3s, background-color 0.3s, border-color 0.3s,
+                height 0.3s, width 0.3s;
 
               &:hover {
                 border: 1.6px solid var(--primary);

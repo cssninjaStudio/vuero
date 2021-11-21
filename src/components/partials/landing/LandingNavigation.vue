@@ -44,6 +44,7 @@ watchEffect(() => {
         aria-label="menu"
         aria-expanded="false"
         tabindex="0"
+        @keydown.space.prevent="isMobileNavOpen = !isMobileNavOpen"
         @click="isMobileNavOpen = !isMobileNavOpen"
       >
         <span aria-hidden="true"></span>

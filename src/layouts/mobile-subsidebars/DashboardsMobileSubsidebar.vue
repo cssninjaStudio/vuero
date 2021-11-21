@@ -8,7 +8,7 @@
       <ul class="submenu" data-simplebar>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               Personal
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
@@ -42,7 +42,7 @@
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               Finance
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
@@ -73,7 +73,7 @@
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               Banking
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
@@ -110,7 +110,7 @@
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               Business
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
@@ -153,7 +153,7 @@
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               Lifestyle
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
@@ -202,7 +202,7 @@
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               Ecommerce
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
@@ -221,7 +221,7 @@
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               Apps
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
@@ -275,7 +275,7 @@
         <li class="divider"></li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               Charts
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
@@ -303,7 +303,7 @@
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               Widgets
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
@@ -349,7 +349,7 @@
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               Starters
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>

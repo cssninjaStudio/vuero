@@ -14,7 +14,13 @@ const dropdown = useDropdown(dropdownElement)
       ref="dropdownElement"
       class="dropdown is-spaced is-dots is-right dropdown-trigger"
     >
-      <div class="is-trigger" aria-haspopup="true" @click="dropdown.toggle">
+      <div
+        tabindex="0"
+        class="is-trigger"
+        aria-haspopup="true"
+        @click="dropdown.toggle"
+        @keydown.space.prevent="dropdown.toggle"
+      >
         <i aria-hidden="true" class="iconify" data-icon="feather:bell"></i>
         <span class="new-indicator pulsate"></span>
       </div>

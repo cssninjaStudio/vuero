@@ -42,8 +42,10 @@ defineExpose({
     <slot name="button" v-bind="dropdown">
       <a
         v-if="props.icon"
+        tabindex="0"
         class="is-trigger dropdown-trigger"
         aria-label="View more actions"
+        @keydown.space.prevent="dropdown.toggle"
         @click="dropdown.toggle"
       >
         <VIcon :icon="props.icon" />
@@ -51,8 +53,10 @@ defineExpose({
 
       <a
         v-else
+        tabindex="0"
         class="is-trigger button dropdown-trigger"
         :class="[props.color && `is-${props.color}`]"
+        @keydown.space.prevent="dropdown.toggle"
         @click="dropdown.toggle"
       >
         <span v-if="props.title">{{ props.title }}</span>
@@ -93,10 +97,10 @@ defineExpose({
       width: 30px;
       border-radius: var(--radius-rounded);
       border: none;
-      outline: none;
       background: transparent;
       cursor: pointer;
-      transition: all 0.3s;
+      transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+        width 0.3s;
 
       > span {
         height: 20px;
@@ -135,7 +139,8 @@ defineExpose({
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: all 0.3s;
+        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+          width 0.3s;
         margin-left: 6px;
 
         > span span {
@@ -181,7 +186,8 @@ defineExpose({
       padding: 0.5rem 1rem;
       font-size: 0.95rem;
       color: var(--light-text);
-      transition: all 0.3s;
+      transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+        width 0.3s;
 
       &:not(.is-button):hover,
       &:not(.is-button).is-active {
@@ -274,7 +280,6 @@ defineExpose({
       font-family: var(--font);
 
       &:focus {
-        outline: none;
         border-color: var(--fade-grey-dark-4);
         box-shadow: var(--light-box-shadow);
       }
@@ -282,6 +287,13 @@ defineExpose({
       &:focus:not(:active) {
         box-shadow: none !important;
       }
+    }
+
+    &:focus-visible {
+      outline-offset: var(--accessibility-focus-outline-offset);
+      outline-width: var(--accessibility-focus-outline-width);
+      outline-style: var(--accessibility-focus-outline-style);
+      outline-color: var(--accessibility-focus-outline-color);
     }
   }
 
@@ -332,7 +344,8 @@ defineExpose({
           right: -282px;
           top: 0;
           width: 280px;
-          transition: all 0.3s;
+          transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+            width 0.3s;
           opacity: 0%;
           transform: translateY(10px);
           pointer-events: none;

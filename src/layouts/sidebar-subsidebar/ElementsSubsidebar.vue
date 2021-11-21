@@ -24,7 +24,7 @@ const emit = defineEmits(['close'])
 
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               Icons
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
@@ -108,7 +108,7 @@ const emit = defineEmits(['close'])
 
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               Buttons
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
@@ -133,7 +133,7 @@ const emit = defineEmits(['close'])
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               Inputs
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
@@ -183,7 +183,7 @@ const emit = defineEmits(['close'])
         </li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               Switches
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>
@@ -227,7 +227,7 @@ const emit = defineEmits(['close'])
         <li class="divider"></li>
         <li v-has-nested-router-link class="has-children">
           <div class="collapse-wrap">
-            <a class="parent-link">
+            <a tabindex="0" class="parent-link">
               Addons
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </a>

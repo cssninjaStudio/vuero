@@ -332,7 +332,8 @@ const filteredData = computed(() => {
             margin-bottom: 0;
 
             &:nth-child(2) {
-              transition: all 0.3s;
+              transition: color 0.3s, background-color 0.3s, border-color 0.3s,
+                height 0.3s, width 0.3s;
 
               &:hover {
                 background: var(--white);
@@ -377,7 +378,8 @@ const filteredData = computed(() => {
                 background: var(--dark-sidebar-light-2);
                 border-color: var(--dark-sidebar-light-8);
                 color: var(--dark-dark-text);
-                transition: all 0.3s;
+                transition: color 0.3s, background-color 0.3s, border-color 0.3s,
+                  height 0.3s, width 0.3s;
 
                 &:hover {
                   border-color: var(--danger);

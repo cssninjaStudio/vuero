@@ -693,7 +693,8 @@ const participants = [
             font-weight: 700;
             color: var(--dark-text);
             line-height: 1.2;
-            transition: all 0.3s;
+            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+              width 0.3s;
           }
         }
       }
@@ -761,7 +762,8 @@ const participants = [
           border: 1px solid transparent;
           border-radius: 12px;
           cursor: pointer;
-          transition: all 0.3s;
+          transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+            width 0.3s;
 
           &:hover {
             border-color: var(--fade-grey-dark-3);
@@ -897,7 +899,8 @@ const participants = [
         justify-content: space-between;
         padding: 30px;
         cursor: pointer;
-        transition: all 0.3s;
+        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+          width 0.3s;
 
         &:hover {
           transform: translateY(-5px);

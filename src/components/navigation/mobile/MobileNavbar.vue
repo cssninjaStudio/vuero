@@ -20,6 +20,8 @@ const props = defineProps<{
           <div
             class="navbar-burger"
             :class="[props.isOpen && 'is-active']"
+            tabindex="0"
+            @keydown.space.prevent="emit('toggle')"
             @click="emit('toggle')"
           >
             <span></span>
@@ -48,7 +50,8 @@ const props = defineProps<{
   width: 100%;
   z-index: 100;
   box-shadow: 0 0 8px 0 rgb(0 0 0 / 12%);
-  transition: all 0.3s;
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+    width 0.3s;
 
   &.no-shadow {
     box-shadow: none !important;
@@ -122,7 +125,8 @@ const props = defineProps<{
           width: 22px;
           height: 22px;
           color: var(--dark-sidebar);
-          transition: all 0.3s;
+          transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+            width 0.3s;
         }
       }
 
@@ -258,7 +262,8 @@ const props = defineProps<{
       align-items: center;
       height: 38px;
       width: 38px;
-      transition: all 0.3s;
+      transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+        width 0.3s;
       border-radius: var(--radius-rounded);
       margin-right: 12px;
 
@@ -273,7 +278,8 @@ const props = defineProps<{
         height: 18px;
         width: 18px;
         color: var(--muted-grey);
-        transition: all 0.3s;
+        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+          width 0.3s;
       }
 
       .new-indicator {
@@ -472,7 +478,8 @@ const props = defineProps<{
           display: flex;
           justify-content: center;
           align-items: center;
-          transition: all 0.3s;
+          transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
+            width 0.3s;
           transform: rotate(0);
 
           svg {

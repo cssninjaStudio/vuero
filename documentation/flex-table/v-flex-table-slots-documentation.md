@@ -1,5 +1,6 @@
 ---
 disable_code: true
+slimscroll: true
 ---
 
 ### VFlexTable Slots

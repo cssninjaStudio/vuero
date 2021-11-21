@@ -72,7 +72,11 @@ const sliderClass = computed(() => {
             :key="key"
             :class="[activeValue === tab.value && 'is-active']"
           >
-            <a @click="activeValue = tab.value">
+            <a
+              tabindex="0"
+              @keydown.space.prevent="activeValue = tab.value"
+              @click="activeValue = tab.value"
+            >
               <VIcon v-if="tab.icon" :icon="tab.icon" />
               <span>{{ tab.label }}</span>
             </a>
