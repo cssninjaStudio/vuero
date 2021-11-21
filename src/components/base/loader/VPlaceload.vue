@@ -4,6 +4,8 @@ import { CssUnitRe } from '/@src/utils/regex'
 export type VPlaceloadProps = {
   width?: string
   height?: string
+  mobileWidth?: string
+  mobileHeight?: string
   disabled?: boolean
   centered?: boolean
 }
@@ -11,7 +13,11 @@ export type VPlaceloadProps = {
 const props = withDefaults(defineProps<VPlaceloadProps>(), {
   width: '100%',
   height: '10px',
+  mobileWidth: undefined,
+  mobileHeight: undefined,
 })
+const mobileWidthValue = props.mobileWidth ?? props.width
+const mobileHeightValue = props.mobileHeight ?? props.height
 
 if (props.width.match(CssUnitRe) === null) {
   console.warn(
@@ -23,6 +29,16 @@ if (props.height.match(CssUnitRe) === null) {
     `VPlaceload: invalid "${props.height}" height. Should be a valid css unit value.`
   )
 }
+if (mobileWidthValue.match(CssUnitRe) === null) {
+  console.warn(
+    `VPlaceload: invalid "${mobileWidthValue}" mobileWidth. Should be a valid css unit value.`
+  )
+}
+if (mobileHeightValue.match(CssUnitRe) === null) {
+  console.warn(
+    `VPlaceload: invalid "${mobileHeightValue}" mobileHeight. Should be a valid css unit value.`
+  )
+}
 </script>
 
 <template>
@@ -32,9 +48,16 @@ if (props.height.match(CssUnitRe) === null) {
   ></div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .content-shape {
   width: v-bind('props.width');
-  height: v-bind(height);
+  height: v-bind('props.height');
+}
+
+@media (max-width: 767px) {
+  .content-shape {
+    width: v-bind(mobileWidthValue);
+    height: v-bind(mobileHeightValue);
+  }
 }
 </style>
