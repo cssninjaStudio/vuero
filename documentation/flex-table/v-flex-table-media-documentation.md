@@ -1,8 +1,7 @@
-### Media table
+### Media columns
 
-Vuero provides a custom table component called `<VFlexTable />`.
-It looks like a table but is not an Html5 table.
-Instead, it uses the flexbox technology and is fully responsive.
+Displaying medias in cells can be improved with `media` in addition to `grow`
+property on columns.
 Check the markup for more details about usage.
 
 <!--code-->
@@ -31,33 +30,48 @@ const data = [
   },
   // and more data ...
 ]
+
+const columns = {
+  username: {
+    label: 'User (media)',
+    grow: true,
+    media: true,
+  },
+  position: 'Position',
+  status: {
+    label: 'Status',
+  },
+  contacts: {
+    label: 'Contacts',
+    align: 'end',
+    format: (value) => value.map((r: any) => r.initials).join(', '),
+  },
+}
 </script>
 
 <template>
-  <!--VFlexTable-->
-  <VFlexTable>
-    <template #header>
-      <div class="flex-table-header">
-        <span class="is-grow">User</span>
-        <span>Location</span>
-        <span>Industry</span>
-        <span>Status</span>
-        <span>Relations</span>
-        <span class="cell-end">Actions</span>
-      </div>
-    </template>
-    <template #body>
-      <VFlexTableRowMedia :rows="data" />
+  <VFlexTable rounded :data="flexRowsAdvanced" :columns="columns">
+    <template #body-cell="{ row, column, value }">
+      <template v-if="column.key === 'username'">
+        <VAvatar size="medium" :picture="row.picture" :badge="row.badge" />
+        <div>
+          <span class="item-name">{{ row.name }}</span>
+          <span class="item-meta">
+            <strong>{{ value }}</strong>
+          </span>
+        </div>
+      </template>
+
+      <VAvatarStack
+        v-else-if="column.key === 'contacts'"
+        class="is-pushed-mobile"
+        size="small"
+        :avatars="row.contacts"
+        :title="value"
+        :limit="3"
+      />
     </template>
   </VFlexTable>
-
-  <!--Table Pagination-->
-  <VFlexPagination
-    :item-per-page="10"
-    :total-items="873"
-    :current-page="42"
-    :max-links-displayed="5"
-  />
 </template>
 ```
 

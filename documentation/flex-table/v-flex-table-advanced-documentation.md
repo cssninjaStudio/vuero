@@ -61,8 +61,7 @@ const data = [
       </div>
     </div>
 
-    <!--VFlexTable-->
-    <VFlexTable>
+    <VFlexTable rounded>
       <template #header>
         <div class="flex-table-header">
           <span class="is-grow">User</span>

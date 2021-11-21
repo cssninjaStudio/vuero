@@ -83,17 +83,27 @@ $sides: top, bottom, left, right;
   cursor: help;
 }
 
+.zero-height {
+  height: 0;
+}
+
+.max-h-60 {
+  max-height: 60px;
+}
+
+.max-h-280 {
+  max-height: 280px;
+}
+
+.iconify {
+  &.is-inline {
+    vertical-align: -1px;
+  }
+}
+
 /* ==========================================================================
 2. Color helpers
 ========================================================================== */
-
-// .text { AnalyticsDashboard
-//   @each $name, $hex in $vuero-colors {
-//     &-#{$name} {
-//       color: $hex !important;
-//     }
-//   }
-// }
 
 .has-text-secondary {
   color: var(--secondary) !important;

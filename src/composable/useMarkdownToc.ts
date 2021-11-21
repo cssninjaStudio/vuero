@@ -1,7 +1,15 @@
 import type { Ref } from 'vue'
 import { ref, watchEffect } from 'vue'
 
-const HEADER_SELECTORS = ['h1[id]', 'h2[id]', 'h3[id]', 'h4[id]', 'h5[id]', 'h6[id]']
+const HEADER_SELECTORS = [
+  'h1[id]',
+  'h2[id]',
+  'h3[id]',
+  'h4[id]',
+  'h5[id]',
+  'h6[id]',
+  'a[name]',
+]
 
 export type TocItem = {
   id: string
@@ -18,7 +26,7 @@ export default function useMarkdownToc(container: Ref<HTMLElement | undefined>) 
       anchors.forEach((anchor) => {
         toc.value.push({
           id: anchor.id,
-          level: parseInt(anchor.tagName.replace(/[a-z]+/i, '')),
+          level: parseInt(anchor.tagName.replace(/[a-z]+/i, '') || 1),
           title: anchor.textContent || '',
         })
       })

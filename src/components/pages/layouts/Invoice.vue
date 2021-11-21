@@ -1,5 +1,92 @@
 <script setup lang="ts">
+import { computed, ref } from 'vue'
 import { popovers } from '/@src/data/users/userPopovers'
+
+const data = ref([
+  {
+    name: 'Website Redesign',
+    unit: 'hrs',
+    quantity: 54,
+    rate: 24,
+  },
+  {
+    name: 'Logo Design',
+    unit: 'hrs',
+    quantity: 12,
+    rate: 24,
+  },
+  {
+    name: 'Custom Illustrations',
+    unit: 'hrs',
+    quantity: 7,
+    rate: 32,
+  },
+])
+
+const vatRate = 0.1
+const totalData = computed(() => {
+  const subtotal = data.value.reduce((acc, item) => {
+    return acc + item.quantity * item.rate
+  }, 0)
+  const vatValue = subtotal * vatRate
+  const total = subtotal + vatValue
+
+  return [
+    {
+      label: 'Subtotal',
+      value: subtotal,
+    },
+    {
+      label: 'Taxes',
+      value: vatValue,
+    },
+    {
+      label: 'Total',
+      value: total,
+    },
+  ]
+})
+
+const usdFormatter = new Intl.NumberFormat('en-US', {
+  style: 'currency',
+  currency: 'USD',
+})
+
+const columns = {
+  name: {
+    label: 'Description',
+    grow: true,
+    inverted: true,
+  },
+  unit: {
+    label: 'Unit',
+    align: 'end',
+  },
+  quantity: 'Quantity',
+  rate: {
+    label: 'Rate',
+    inverted: true,
+    format: (value: any) => usdFormatter.format(value),
+  },
+  subtotal: {
+    label: 'Subtotal',
+    inverted: true,
+    format: (value: any, row: any) => usdFormatter.format(row.quantity * row.rate),
+  },
+} as const
+
+const totalColumns = {
+  label: {
+    label: '',
+    grow: 'xl',
+    align: 'end',
+  },
+  value: {
+    label: '',
+    bold: true,
+    format: (value: any) => usdFormatter.format(value),
+  },
+} as const
 </script>
 
 <template>
@@ -68,130 +155,40 @@ import { popovers } from '/@src/data/users/userPopovers'
           </div>
         </div>
         <div class="invoice-section">
-          <div class="flex-table">
-            <!--Table header-->
-            <div class="flex-table-header">
-              <span class="is-grow">Description</span>
-              <span class="cell-end">Unit</span>
-              <span>Quantity</span>
-              <span>Rate</span>
-              <span>Subtotal</span>
-            </div>
+          <VFlexTable :data="data" :columns="columns" rounded reactive>
+            <template #body-cell="{ column, value, row }">
+              <template v-if="column.key === 'quantity'">
+                <VControl>
+                  <VField>
+                    <input
+                      v-model="row[column.key]"
+                      class="input"
+                      type="number"
+                      min="0"
+                    />
+                  </VField>
+                </VControl>
+              </template>
 
-            <!--Table item-->
-            <div class="flex-table-item">
-              <div class="flex-table-cell is-grow" data-th="">
-                <span class="dark-text">Website Redesign</span>
-              </div>
-              <div class="flex-table-cell cell-end" data-th="Unit">
-                <span class="light-text">hrs</span>
-              </div>
-              <div class="flex-table-cell" data-th="Quantity">
-                <span class="light-text">54</span>
-              </div>
-              <div class="flex-table-cell" data-th="Rate">
-                <span class="dark-inverted">$24</span>
-              </div>
-              <div class="flex-table-cell has-text-right" data-th="Subtotal">
-                <span class="dark-inverted">$1,296</span>
-              </div>
-            </div>
+              <template v-else>
+                {{ value }}
+              </template>
+            </template>
+          </VFlexTable>
 
-            <!--Table item-->
-            <div class="flex-table-item">
-              <div class="flex-table-cell is-grow" data-th="">
-                <span class="dark-text">Logo Design</span>
-              </div>
-              <div class="flex-table-cell cell-end" data-th="Unit">
-                <span class="light-text">hrs</span>
-              </div>
-              <div class="flex-table-cell" data-th="Quantity">
-                <span class="light-text">12</span>
-              </div>
-              <div class="flex-table-cell" data-th="Rate">
-                <span class="dark-inverted">$24</span>
-              </div>
-              <div class="flex-table-cell has-text-right" data-th="Subtotal">
-                <span class="dark-inverted">$288</span>
-              </div>
-            </div>
-
-            <!--Table item-->
-            <div class="flex-table-item">
-              <div class="flex-table-cell is-grow" data-th="">
-                <span class="dark-text">Custom Illustrations</span>
-              </div>
-              <div class="flex-table-cell cell-end" data-th="Unit">
-                <span class="light-text">hrs</span>
-              </div>
-              <div class="flex-table-cell" data-th="Quantity">
-                <span class="light-text">7</span>
-              </div>
-              <div class="flex-table-cell" data-th="Rate">
-                <span class="dark-inverted">$32</span>
-              </div>
-              <div class="flex-table-cell has-text-right" data-th="Subtotal">
-                <span class="dark-inverted">$224</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="flex-table sub-table">
-            <!--Table item-->
-            <div class="flex-table-item">
-              <div class="flex-table-cell is-grow is-vhidden" data-th="">
-                <span class="dark-text">Website Development</span>
-              </div>
-              <div class="flex-table-cell cell-end is-vhidden" data-th="Unit">
-                <span class="light-text">hrs</span>
-              </div>
-              <div class="flex-table-cell is-vhidden" data-th="Quantity">
-                <span class="light-text">2</span>
-              </div>
-              <div class="flex-table-cell" data-th="">
-                <span class="table-label">Subtotal</span>
-              </div>
-              <div class="flex-table-cell has-text-right" data-th="">
-                <span class="table-total dark-inverted">$1,808</span>
-              </div>
-            </div>
-            <!--Table item-->
-            <div class="flex-table-item">
-              <div class="flex-table-cell is-grow is-vhidden" data-th="">
-                <span class="dark-text">Website Development</span>
-              </div>
-              <div class="flex-table-cell cell-end is-vhidden" data-th="Unit">
-                <span class="light-text">hrs</span>
-              </div>
-              <div class="flex-table-cell is-vhidden" data-th="Quantity">
-                <span class="light-text">2</span>
-              </div>
-              <div class="flex-table-cell" data-th="">
-                <span class="table-label">Taxes</span>
-              </div>
-              <div class="flex-table-cell has-text-right" data-th="">
-                <span class="table-total dark-inverted">$273</span>
-              </div>
-            </div>
-            <!--Table item-->
-            <div class="flex-table-item">
-              <div class="flex-table-cell is-grow is-vhidden" data-th="">
-                <span class="dark-text">Website Development</span>
-              </div>
-              <div class="flex-table-cell cell-end is-vhidden" data-th="Unit">
-                <span class="light-text">hrs</span>
-              </div>
-              <div class="flex-table-cell is-vhidden" data-th="Quantity">
-                <span class="light-text">2</span>
-              </div>
-              <div class="flex-table-cell" data-th="">
-                <span class="table-label">Total</span>
-              </div>
-              <div class="flex-table-cell has-text-right" data-th="">
-                <span class="table-total is-bigger dark-inverted">$2,081</span>
-              </div>
-            </div>
-          </div>
+          <VFlexTable subtable :data="totalData" :columns="totalColumns">
+            <template #body-cell="{ column, value, row }">
+              <template v-if="column.key === 'label'">
+                <span class="table-label">{{ value }}</span>
+              </template>
+              <template v-else-if="column.key === 'value' && row.label === 'Total'">
+                <span class="table-total is-bigger">{{ value }}</span>
+              </template>
+              <template v-else>
+                <span class="table-value">{{ value }}</span>
+              </template>
+            </template>
+          </VFlexTable>
         </div>
       </div>
     </div>
@@ -336,34 +333,6 @@ import { popovers } from '/@src/data/users/userPopovers'
         }
 
         .flex-table {
-          &.sub-table {
-            .flex-table-item {
-              padding-top: 0;
-              padding-bottom: 0;
-              margin-bottom: 0;
-              min-height: 40px;
-              border: none;
-
-              .table-label {
-                font-family: var(--font);
-                text-transform: uppercase;
-                font-size: 0.8rem;
-                color: var(--light-text);
-              }
-
-              .table-total {
-                font-family: var(--font);
-                color: var(--dark-text);
-                font-weight: 500;
-
-                &.is-bigger {
-                  font-size: 1.2rem;
-                  font-weight: 600;
-                }
-              }
-            }
-          }
-
           .flex-table-header {
             span {
               &:not(:first-child) {
@@ -462,18 +431,6 @@ import { popovers } from '/@src/data/users/userPopovers'
       }
 
       .flex-table {
-        &.sub-table {
-          padding-top: 16px;
-
-          .is-vhidden {
-            display: none !important;
-          }
-
-          .flex-table-item:not(.is-vhidden) {
-            flex-direction: revert !important;
-          }
-        }
-
         .flex-table-item {
           .flex-table-cell {
             &.is-grow {

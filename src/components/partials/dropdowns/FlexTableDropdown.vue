@@ -1,7 +1,26 @@
+<script setup lang="ts">
+const emits = defineEmits<{
+  (e: 'view'): void
+  (e: 'projects'): void
+  (e: 'schedule'): void
+  (e: 'remove'): void
+}>()
+</script>
+
 <template>
   <VDropdown icon="feather:more-vertical" class="is-pushed-mobile" spaced right>
-    <template #content>
-      <a role="menuitem" href="#" class="dropdown-item is-media">
+    <template #content="{ close }">
+      <a
+        role="menuitem"
+        href="#"
+        class="dropdown-item is-media"
+        @click.prevent="
+          () => {
+            emits('view')
+            close()
+          }
+        "
+      >
         <div class="icon">
           <i aria-hidden="true" class="lnil lnil-eye"></i>
         </div>
@@ -11,7 +30,17 @@
         </div>
       </a>
 
-      <a role="menuitem" href="#" class="dropdown-item is-media">
+      <a
+        role="menuitem"
+        href="#"
+        class="dropdown-item is-media"
+        @click.prevent="
+          () => {
+            emits('projects')
+            close()
+          }
+        "
+      >
         <div class="icon">
           <i aria-hidden="true" class="lnil lnil-briefcase"></i>
         </div>
@@ -21,7 +50,17 @@
         </div>
       </a>
 
-      <a role="menuitem" href="#" class="dropdown-item is-media">
+      <a
+        role="menuitem"
+        href="#"
+        class="dropdown-item is-media"
+        @click.prevent="
+          () => {
+            emits('schedule')
+            close()
+          }
+        "
+      >
         <div class="icon">
           <i aria-hidden="true" class="lnil lnil-calendar"></i>
         </div>
@@ -33,7 +72,17 @@
 
       <hr class="dropdown-divider" />
 
-      <a role="menuitem" href="#" class="dropdown-item is-media">
+      <a
+        role="menuitem"
+        href="#"
+        class="dropdown-item is-media"
+        @click.prevent="
+          () => {
+            emits('remove')
+            close()
+          }
+        "
+      >
         <div class="icon">
           <i aria-hidden="true" class="lnil lnil-trash-can-alt"></i>
         </div>

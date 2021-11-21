@@ -164,8 +164,22 @@ var {
 .has-slimscroll {
   overflow-y: auto;
   overflow-x: hidden;
+}
 
+.has-slimscroll-h {
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.has-slimscroll-all {
+  overflow: auto;
+}
+
+.has-slimscroll,
+.has-slimscroll-h,
+.has-slimscroll-all {
   &::-webkit-scrollbar {
+    height: 6px !important;
     width: 6px !important;
   }
 
@@ -177,6 +191,7 @@ var {
 
 .has-slimscroll-sm {
   &::-webkit-scrollbar {
+    height: 3px !important;
     width: 3px !important;
   }
 

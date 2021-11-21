@@ -29,17 +29,38 @@ const props = withDefaults(
 const filters = ref('')
 const tab = ref(props.activeTab)
 
+const columns = {
+  picture: {
+    label: 'Project',
+    grow: true,
+    media: true,
+  },
+  customer: 'Customer',
+  industry: 'Industry',
+  status: 'Status',
+  team: {
+    label: 'Team',
+    cellClass: 'h-hidden-tablet-p',
+  },
+  actions: {
+    label: 'Actions',
+    align: 'end',
+  },
+} as const
+
 const filteredData = computed(() => {
   if (!filters.value) {
     return projects
   } else {
+    const filterRe = new RegExp(filters.value, 'i')
+
     return projects.filter((item) => {
       return (
-        item.name.match(new RegExp(filters.value, 'i')) ||
-        item.customer.match(new RegExp(filters.value, 'i')) ||
-        item.industry.match(new RegExp(filters.value, 'i')) ||
-        item.status.match(new RegExp(filters.value, 'i')) ||
-        item.duration.match(new RegExp(filters.value, 'i'))
+        item.name.match(filterRe) ||
+        item.customer.match(filterRe) ||
+        item.industry.match(filterRe) ||
+        item.status.match(filterRe) ||
+        item.duration.match(filterRe)
       )
     })
   }
@@ -75,7 +96,7 @@ const filteredData = computed(() => {
     <div class="flex-list-wrapper flex-list-v2">
       <!--List Empty Search Placeholder -->
       <VPlaceholderPage
-        :class="[filteredData.length !== 0 && 'is-hidden']"
+        v-if="tab === 'active' && filteredData.length === 0"
         title="We couldn't find any matching results."
         subtitle="Too bad. Looks like we couldn't find any matching results for the
           search terms you've entered. Please try different search terms or
@@ -97,27 +118,15 @@ const filteredData = computed(() => {
       </VPlaceholderPage>
 
       <!--Active Tab-->
-      <div
-        id="active-items-tab"
-        class="tab-content"
-        :class="[tab === 'active' && 'is-active']"
-      >
-        <div class="flex-table">
-          <!--Table header-->
-          <div
-            class="flex-table-header"
-            :class="[filteredData.length === 0 && 'is-hidden']"
-          >
-            <span class="is-grow">Project</span>
-            <span>Customer</span>
-            <span>Industry</span>
-            <span>Status</span>
-            <span class="h-hidden-tablet-p">Team</span>
-            <span class="cell-end">Actions</span>
-          </div>
-
-          <div class="flex-list-inner">
-            <transition-group name="list" tag="div">
+      <div v-if="tab === 'active'" class="tab-content is-active">
+        <VFlexTable
+          v-if="filteredData.length"
+          :data="filteredData"
+          :columns="columns"
+          rounded
+        >
+          <template #body>
+            <transition-group name="list" tag="div" class="flex-list-inner">
               <!--Table item-->
               <div v-for="item in filteredData" :key="item.id" class="flex-table-item">
                 <div class="flex-table-cell is-media is-grow">
@@ -133,16 +142,16 @@ const filteredData = computed(() => {
                     </span>
                   </div>
                 </div>
-                <div class="flex-table-cell" data-th="Customer">
+                <div class="flex-table-cell">
                   <span class="light-text">{{ item.customer }}</span>
                 </div>
-                <div class="flex-table-cell" data-th="Industry">
+                <div class="flex-table-cell">
                   <span class="light-text">{{ item.industry }}</span>
                 </div>
-                <div class="flex-table-cell" data-th="Status">
-                  <span class="tag is-rounded">{{ item.status }}</span>
+                <div class="flex-table-cell">
+                  <VTag rounded>{{ item.status }}</VTag>
                 </div>
-                <div class="flex-table-cell h-hidden-tablet-p" data-th="Relations">
+                <div class="flex-table-cell h-hidden-tablet-p">
                   <VAvatarStack
                     :avatars="item.team"
                     size="small"
@@ -150,13 +159,13 @@ const filteredData = computed(() => {
                     class="is-pushed-mobile"
                   />
                 </div>
-                <div class="flex-table-cell cell-end" data-th="Actions">
+                <div class="flex-table-cell cell-end">
                   <ProjectListDropdown />
                 </div>
               </div>
             </transition-group>
-          </div>
-        </div>
+          </template>
+        </VFlexTable>
 
         <!--Table Pagination-->
         <VFlexPagination
@@ -169,11 +178,7 @@ const filteredData = computed(() => {
       </div>
 
       <!--inactive Tab-->
-      <div
-        id="inactive-items-tab"
-        class="tab-content"
-        :class="[tab === 'closed' && 'is-active']"
-      >
+      <div v-else-if="tab === 'closed'" class="tab-content is-active">
         <!--Empty placeholder-->
         <VPlaceholderPage
           title="No closed projects."

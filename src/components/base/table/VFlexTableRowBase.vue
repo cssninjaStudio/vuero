@@ -7,16 +7,16 @@ const props = defineProps<VFlexTableRowBaseProps>()
 
 <template>
   <div v-for="row in props.rows" :key="row.id" class="flex-table-item">
-    <div class="flex-table-cell is-bold" data-th="Company">
+    <div class="flex-table-cell is-bold">
       <span class="dark-text">{{ row.company }}</span>
     </div>
-    <div class="flex-table-cell" data-th="Type">
+    <div class="flex-table-cell">
       <span class="light-text">{{ row.type }}</span>
     </div>
-    <div class="flex-table-cell" data-th="Industry">
+    <div class="flex-table-cell">
       <span class="light-text">{{ row.industry }}</span>
     </div>
-    <div class="flex-table-cell" data-th="Status">
+    <div class="flex-table-cell">
       <span
         class="tag is-rounded"
         :class="[
@@ -28,7 +28,7 @@ const props = defineProps<VFlexTableRowBaseProps>()
         >{{ row.status }}</span
       >
     </div>
-    <div class="flex-table-cell" data-th="Contacts">
+    <div class="flex-table-cell">
       <VAvatarStack
         class="is-pushed-mobile"
         size="small"
@@ -36,7 +36,7 @@ const props = defineProps<VFlexTableRowBaseProps>()
         :limit="3"
       />
     </div>
-    <div class="flex-table-cell cell-end" data-th="Actions">
+    <div class="flex-table-cell cell-end">
       <FlexTableDropdown />
     </div>
   </div>

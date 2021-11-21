@@ -37,7 +37,7 @@ const displayCode = ref(false)
       v-if="!props.frontmatter.disable_code || !props.frontmatter.disable_example"
       class="card-inner"
     >
-      <div v-if="!props.frontmatter.disable_code" class="demo-example">
+      <div v-if="!props.frontmatter.disable_example" class="demo-example">
         <slot name="example"></slot>
       </div>
 
