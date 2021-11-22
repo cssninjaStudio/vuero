@@ -156,7 +156,7 @@ const totalColumns = {
         </div>
         <div class="invoice-section">
           <VFlexTable :data="data" :columns="columns" rounded reactive>
-            <template #body-cell="{ column, value, row }">
+            <template #body-cell="{ column, row }">
               <template v-if="column.key === 'quantity'">
                 <VControl>
                   <VField>
@@ -168,10 +168,6 @@ const totalColumns = {
                     />
                   </VField>
                 </VControl>
-              </template>
-
-              <template v-else>
-                {{ value }}
               </template>
             </template>
           </VFlexTable>

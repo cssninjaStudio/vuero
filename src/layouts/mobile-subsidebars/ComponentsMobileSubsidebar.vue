@@ -69,205 +69,152 @@
             VFlexPagination
           </RouterLink>
         </li>
-        <li v-has-nested-router-link class="has-children">
-          <div class="collapse-wrap">
-            <a tabindex="0" class="parent-link">
-              VFlexTable
-              <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
-            </a>
-          </div>
-          <ul>
-            <li>
-              <RouterLink :to="{ name: 'components-flex-table' }" class="is-submenu">
-                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-                Base Table
-              </RouterLink>
-            </li>
-            <li>
-              <RouterLink
-                :to="{ name: 'components-flex-table-slots' }"
-                class="is-submenu"
-              >
-                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-                Customized slots
-              </RouterLink>
-            </li>
-            <li>
-              <RouterLink
-                :to="{ name: 'components-flex-table-media' }"
-                class="is-submenu"
-              >
-                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-                Media Table
-              </RouterLink>
-            </li>
-            <li>
-              <RouterLink
-                :to="{ name: 'components-flex-table-wrapper' }"
-                class="is-submenu"
-              >
-                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-                Advanced Table</RouterLink
-              >
-            </li>
-          </ul>
-        </li>
 
-        <li v-has-nested-router-link class="has-children">
-          <div class="collapse-wrap">
-            <a tabindex="0" class="parent-link">
-              Accordions
-              <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
-            </a>
-          </div>
-          <ul>
-            <li>
-              <RouterLink :to="{ name: 'components-accordion' }" class="is-submenu">
-                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-                VAccordion
-              </RouterLink>
-            </li>
-            <li>
-              <RouterLink :to="{ name: 'components-collapse' }" class="is-submenu">
-                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-                VCollapse
-              </RouterLink>
-            </li>
-            <li>
-              <RouterLink :to="{ name: 'components-accordion-image' }" class="is-submenu">
-                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-                VAccordionImage
-              </RouterLink>
-            </li>
-          </ul>
-        </li>
-        <li v-has-nested-router-link class="has-children">
-          <div class="collapse-wrap">
-            <a tabindex="0" class="parent-link">
-              Cards
-              <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
-            </a>
-          </div>
-          <ul>
-            <li>
-              <RouterLink :to="{ name: 'components-card' }" class="is-submenu">
-                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-                VCard
-              </RouterLink>
-            </li>
-            <li>
-              <RouterLink :to="{ name: 'components-card-action' }" class="is-submenu">
-                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-                VCardAction
-                <VTag label="v1.1" color="primary" outlined curved />
-              </RouterLink>
-            </li>
-            <li>
-              <RouterLink :to="{ name: 'components-card-advanced' }" class="is-submenu">
-                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-                VCardAdvanced
-              </RouterLink>
-            </li>
-            <li>
-              <RouterLink :to="{ name: 'components-card-media' }" class="is-submenu">
-                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-                VCardMedia
-                <VTag label="v1.1" color="primary" outlined curved />
-              </RouterLink>
-            </li>
-            <li>
-              <RouterLink :to="{ name: 'components-card-social' }" class="is-submenu">
-                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-                VCardSocial
-              </RouterLink>
-            </li>
-          </ul>
-        </li>
-        <li v-has-nested-router-link class="has-children">
-          <div class="collapse-wrap">
-            <a tabindex="0" class="parent-link">
-              Placeholders
-              <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
-            </a>
-          </div>
-          <ul>
-            <li>
-              <RouterLink
-                :to="{ name: 'components-placeholder-page' }"
-                class="is-submenu"
-              >
-                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-                VPlaceholderPage
-              </RouterLink>
-            </li>
-            <li>
-              <RouterLink
-                :to="{ name: 'components-placeholder-section' }"
-                class="is-submenu"
-              >
-                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-                VPlaceholderSection
-              </RouterLink>
-            </li>
-          </ul>
-        </li>
+        <SidebarCollapsableLinks>
+          <template #header>
+            Datatables
+            <VTag label="v2.2" color="primary" outlined curved />
+            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+          </template>
+
+          <RouterLink :to="{ name: 'components-flex-table' }" class="is-submenu">
+            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+            VFlexTable
+          </RouterLink>
+          <RouterLink :to="{ name: 'components-flex-table-columns' }" class="is-submenu">
+            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+            Customize columns
+          </RouterLink>
+          <RouterLink :to="{ name: 'components-flex-table-slots' }" class="is-submenu">
+            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+            Slots usage
+          </RouterLink>
+          <RouterLink :to="{ name: 'components-flex-table-render' }" class="is-submenu">
+            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+            Render functions
+          </RouterLink>
+          <RouterLink :to="{ name: 'components-flex-table-wrapper' }" class="is-submenu">
+            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+            VFlexTableWrapper
+          </RouterLink>
+        </SidebarCollapsableLinks>
+
+        <SidebarCollapsableLinks>
+          <template #header>
+            Accordions
+            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+          </template>
+
+          <RouterLink :to="{ name: 'components-accordion' }" class="is-submenu">
+            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+            VAccordion
+          </RouterLink>
+          <RouterLink :to="{ name: 'components-collapse' }" class="is-submenu">
+            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+            VCollapse
+          </RouterLink>
+          <RouterLink :to="{ name: 'components-accordion-image' }" class="is-submenu">
+            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+            VAccordionImage
+          </RouterLink>
+        </SidebarCollapsableLinks>
+
+        <SidebarCollapsableLinks>
+          <template #header>
+            Cards
+            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+          </template>
+
+          <RouterLink :to="{ name: 'components-card' }" class="is-submenu">
+            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+            VCard
+          </RouterLink>
+          <RouterLink :to="{ name: 'components-card-action' }" class="is-submenu">
+            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+            VCardAction
+            <VTag label="v1.1" color="primary" outlined curved />
+          </RouterLink>
+          <RouterLink :to="{ name: 'components-card-advanced' }" class="is-submenu">
+            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+            VCardAdvanced
+          </RouterLink>
+          <RouterLink :to="{ name: 'components-card-media' }" class="is-submenu">
+            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+            VCardMedia
+            <VTag label="v1.1" color="primary" outlined curved />
+          </RouterLink>
+          <RouterLink :to="{ name: 'components-card-social' }" class="is-submenu">
+            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+            VCardSocial
+          </RouterLink>
+        </SidebarCollapsableLinks>
+
+        <SidebarCollapsableLinks>
+          <template #header>
+            Placeholders
+            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+          </template>
+
+          <RouterLink :to="{ name: 'components-placeholder-page' }" class="is-submenu">
+            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+            VPlaceholderPage
+          </RouterLink>
+          <RouterLink :to="{ name: 'components-placeholder-section' }" class="is-submenu">
+            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+            VPlaceholderSection
+          </RouterLink>
+        </SidebarCollapsableLinks>
 
         <li class="divider"></li>
-        <li v-has-nested-router-link class="has-children">
-          <div class="collapse-wrap">
-            <a tabindex="0" class="parent-link">
-              Plugins
-              <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
-            </a>
-          </div>
-          <ul>
-            <li>
-              <RouterLink :to="{ name: 'components-plugins-notif' }" class="is-submenu">
-                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-                Notyf
-              </RouterLink>
-            </li>
-            <li>
-              <RouterLink :to="{ name: 'components-plugins-tippy' }" class="is-submenu">
-                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-                Tippy
-              </RouterLink>
-            </li>
-            <li>
-              <RouterLink
-                :to="{ name: 'components-plugins-billboard-js' }"
-                class="is-submenu"
-              >
-                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-                VBillboardJS
-              </RouterLink>
-            </li>
-            <li>
-              <RouterLink
-                :to="{ name: 'components-plugins-photos-swipe' }"
-                class="is-submenu"
-              >
-                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-                VPhotosSwipe
-              </RouterLink>
-            </li>
-            <li>
-              <RouterLink :to="{ name: 'components-plugins-plyr' }" class="is-submenu">
-                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-                VPlyr
-              </RouterLink>
-            </li>
-            <li>
-              <RouterLink
-                :to="{ name: 'components-plugins-simple-datatables' }"
-                class="is-submenu"
-              >
-                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-                VSimpleDatatables
-              </RouterLink>
-            </li>
-          </ul>
-        </li>
+
+        <SidebarCollapsableLinks>
+          <template #header>
+            Plugins
+            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+          </template>
+
+          <RouterLink :to="{ name: 'components-plugins-notif' }" class="is-submenu">
+            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+            Notyf
+          </RouterLink>
+        </SidebarCollapsableLinks>
+
+        <SidebarCollapsableLinks>
+          <template #header>
+            Placeholders
+            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+          </template>
+
+          <RouterLink :to="{ name: 'components-plugins-tippy' }" class="is-submenu">
+            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+            Tippy
+          </RouterLink>
+          <RouterLink
+            :to="{ name: 'components-plugins-billboard-js' }"
+            class="is-submenu"
+          >
+            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+            VBillboardJS
+          </RouterLink>
+          <RouterLink
+            :to="{ name: 'components-plugins-photos-swipe' }"
+            class="is-submenu"
+          >
+            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+            VPhotosSwipe
+          </RouterLink>
+          <RouterLink :to="{ name: 'components-plugins-plyr' }" class="is-submenu">
+            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+            VPlyr
+          </RouterLink>
+          <RouterLink
+            :to="{ name: 'components-plugins-simple-datatables' }"
+            class="is-submenu"
+          >
+            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+            VSimpleDatatables
+          </RouterLink>
+        </SidebarCollapsableLinks>
       </ul>
     </div>
   </div>

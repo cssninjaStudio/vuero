@@ -6,22 +6,17 @@
       </div>
 
       <ul class="submenu" data-simplebar>
-        <li v-has-nested-router-link class="has-children">
-          <div class="collapse-wrap">
-            <a tabindex="0" class="parent-link">
-              Personal
-              <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
-            </a>
-          </div>
-          <ul>
-            <li>
-              <RouterLink :to="{ name: 'app' }" class="is-submenu">
-                <i aria-hidden="true" class="lnil lnil-home"></i>
-                <span>Home</span>
-              </RouterLink>
-            </li>
-          </ul>
-        </li>
+        <SidebarCollapsableLinks>
+          <template #header>
+            Personal
+            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+          </template>
+
+          <RouterLink :to="{ name: 'app' }" class="is-submenu">
+            <i aria-hidden="true" class="lnil lnil-home"></i>
+            <span>Home</span>
+          </RouterLink>
+        </SidebarCollapsableLinks>
       </ul>
     </div>
   </div>

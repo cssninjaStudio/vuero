@@ -28,6 +28,9 @@ export const useSidebar = defineStore('sidebar', () => {
       active.value = sidebarId
     }
   }
+  function setActive(sidebarId: SidebarId) {
+    active.value = sidebarId
+  }
 
   function close() {
     active.value = 'none'
@@ -36,6 +39,7 @@ export const useSidebar = defineStore('sidebar', () => {
   return {
     active,
     toggle,
+    setActive,
     close,
   } as const
 })

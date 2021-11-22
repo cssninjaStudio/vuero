@@ -100,7 +100,7 @@ const selectedConversation = computed(() => {
 })
 
 onMounted(() => {
-  sidebar.active = 'messages'
+  sidebar.setActive('messages')
   selectedConversationId.value = 1
 })
 
@@ -110,7 +110,7 @@ useHead({
 
 watchEffect(onConversationChanged)
 watchPostEffect(() => {
-  viewWrapper.setPushed(isDesktopSidebarOpen.value)
+  viewWrapper.setPushed(sidebar.active === 'messages')
 })
 </script>
 
