@@ -171,7 +171,7 @@ watchPostEffect(() => {
         :class="[sidebar.active === 'none' && 'is-pushed-messages']"
       >
         <VPageContentWrapper>
-          <div class="page-content chat-content">
+          <VPageContent class="chat-content">
             <div class="page-title has-text-centered is-hidden">
               <div
                 class="vuero-hamburger nav-trigger push-resize"
@@ -623,7 +623,7 @@ watchPostEffect(() => {
                 </div>
               </div>
             </div>
-          </div>
+          </VPageContent>
         </VPageContentWrapper>
       </VViewWrapper>
 

@@ -251,7 +251,7 @@ watch(
         <template v-if="props.nowrap">
           <slot></slot>
         </template>
-        <div v-else class="page-content is-relative">
+        <VPageContent v-else>
           <div class="is-navbar-lg">
             <div class="page-title has-text-centered">
               <!-- Mobile Page Title -->
@@ -273,7 +273,7 @@ watch(
 
             <slot></slot>
           </div>
-        </div>
+        </VPageContent>
       </VPageContentWrapper>
     </VViewWrapper>
   </div>

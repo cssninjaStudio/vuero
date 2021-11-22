@@ -141,7 +141,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="page-content kanban-content is-relative">
+  <VPageContent class="kanban-content">
     <div class="kanban-toolbar">
       <VControl icon="feather:search">
         <input v-model="search" class="input" placeholder="Search..." />
@@ -575,7 +575,7 @@ onMounted(() => {
         </div>
       </div>
     </div>
-  </div>
+  </VPageContent>
 </template>
 
 <style lang="scss">

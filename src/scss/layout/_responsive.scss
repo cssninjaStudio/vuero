@@ -156,10 +156,6 @@ Responsive styles
     }
   }
 
-  .page-content {
-    padding: 0 30px !important;
-  }
-
   .is-stuck {
     margin-left: 60px !important;
     width: calc(100% - 60px) !important;
@@ -283,14 +279,6 @@ Responsive styles
     .page-title {
       display: flex !important;
       margin-top: 0;
-    }
-  }
-
-  .page-content {
-    padding: 0 10px;
-
-    &.is-explore {
-      padding: 0 !important;
     }
   }
 
@@ -444,14 +432,6 @@ Responsive styles
     .page-title {
       display: flex !important;
       margin-top: 0;
-    }
-  }
-
-  .page-content {
-    padding: 0 10px !important;
-
-    &.projects-content {
-      padding: 0 16px;
     }
   }
 

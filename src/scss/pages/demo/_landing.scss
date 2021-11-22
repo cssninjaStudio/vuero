@@ -232,6 +232,14 @@
             user-select: none;
             transform: scale(0.9);
 
+            &:focus-within {
+              border-radius: 50px;
+              outline-offset: var(--accessibility-focus-outline-offset);
+              outline-width: var(--accessibility-focus-outline-width);
+              outline-style: var(--accessibility-focus-outline-style);
+              outline-color: var(--accessibility-focus-outline-color);
+            }
+
             input {
               position: absolute;
               opacity: 0%;
