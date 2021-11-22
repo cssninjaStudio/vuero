@@ -2,7 +2,7 @@
 import { ref, watchPostEffect, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
-import type { SidebarTheme } from '/@stc/stores/layoutSwitcher'
+import type { SidebarTheme } from '/@src/stores/layoutSwitcher'
 import { usePanels } from '/@src/stores/panels'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 

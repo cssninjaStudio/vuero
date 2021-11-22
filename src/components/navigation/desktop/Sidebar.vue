@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 
-import type { SidebarTheme } from '/@stc/stores/layoutSwitcher'
+import type { SidebarTheme } from '/@src/stores/layoutSwitcher'
 
 const props = withDefaults(
   defineProps<{
