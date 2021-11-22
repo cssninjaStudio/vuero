@@ -93,7 +93,7 @@ const layoutComponent = (slug: string) => {
                         ]"
                         @keydown.space.prevent="
                           () => {
-                            layoutSwitcher.setSidebarTheme('navbar-default')
+                            layoutSwitcher.setNavbarLayoutId('navbar-default')
                             isModalOpen = false
                           }
                         "
@@ -136,7 +136,7 @@ const layoutComponent = (slug: string) => {
                         ]"
                         @keydown.space.prevent="
                           () => {
-                            layoutSwitcher.setSidebarTheme('navbar-fade')
+                            layoutSwitcher.setNavbarLayoutId('navbar-fade')
                             isModalOpen = false
                           }
                         "
@@ -179,7 +179,7 @@ const layoutComponent = (slug: string) => {
                         ]"
                         @keydown.space.prevent="
                           () => {
-                            layoutSwitcher.setSidebarTheme('navbar-colored')
+                            layoutSwitcher.setNavbarLayoutId('navbar-colored')
                             isModalOpen = false
                           }
                         "
@@ -227,7 +227,7 @@ const layoutComponent = (slug: string) => {
                         ]"
                         @keydown.space.prevent="
                           () => {
-                            layoutSwitcher.setSidebarTheme('navbar-dropdown')
+                            layoutSwitcher.setNavbarLayoutId('navbar-dropdown')
                             isModalOpen = false
                           }
                         "
@@ -270,7 +270,7 @@ const layoutComponent = (slug: string) => {
                         ]"
                         @keydown.space.prevent="
                           () => {
-                            layoutSwitcher.setSidebarTheme('navbar-dropdown-colored')
+                            layoutSwitcher.setNavbarLayoutId('navbar-dropdown-colored')
                             isModalOpen = false
                           }
                         "
@@ -318,7 +318,7 @@ const layoutComponent = (slug: string) => {
                         ]"
                         @keydown.space.prevent="
                           () => {
-                            layoutSwitcher.setSidebarTheme('navbar-clean')
+                            layoutSwitcher.setNavbarLayoutId('navbar-clean')
                             isModalOpen = false
                           }
                         "
@@ -361,7 +361,7 @@ const layoutComponent = (slug: string) => {
                         ]"
                         @keydown.space.prevent="
                           () => {
-                            layoutSwitcher.setSidebarTheme('navbar-clean-center')
+                            layoutSwitcher.setNavbarLayoutId('navbar-clean-center')
                             isModalOpen = false
                           }
                         "
@@ -404,7 +404,7 @@ const layoutComponent = (slug: string) => {
                         ]"
                         @keydown.space.prevent="
                           () => {
-                            layoutSwitcher.setSidebarTheme('navbar-clean-fade')
+                            layoutSwitcher.setNavbarLayoutId('navbar-clean-fade')
                             isModalOpen = false
                           }
                         "
