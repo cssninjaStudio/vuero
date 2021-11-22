@@ -3,6 +3,7 @@ import { useWindowScroll } from '@vueuse/core'
 import { computed, ref } from 'vue'
 import { popovers } from '/@src/data/users/userPopovers'
 
+const selectedColor = ref('')
 const calendarTarget = ref('')
 const notificationMedium = ref('')
 const notificationTarget = ref('')
@@ -303,11 +304,41 @@ const isStuck = computed(() => {
                 <VField>
                   <VControl>
                     <div class="color-codes">
-                      <div class="color-code is-primary"></div>
-                      <div class="color-code is-secondary"></div>
-                      <div class="color-code is-info"></div>
-                      <div class="color-code is-success"></div>
-                      <div class="color-code is-purple"></div>
+                      <div
+                        :class="[selectedColor === 'primary' && 'is-active']"
+                        tabindex="0"
+                        class="color-code is-primary"
+                        @click="selectedColor = 'primary'"
+                        @keydown.space.prevent="selectedColor = 'primary'"
+                      ></div>
+                      <div
+                        :class="[selectedColor === 'secondary' && 'is-active']"
+                        tabindex="0"
+                        class="color-code is-secondary"
+                        @click="selectedColor = 'secondary'"
+                        @keydown.space.prevent="selectedColor = 'secondary'"
+                      ></div>
+                      <div
+                        :class="[selectedColor === 'info' && 'is-active']"
+                        tabindex="0"
+                        class="color-code is-info"
+                        @click="selectedColor = 'info'"
+                        @keydown.space.prevent="selectedColor = 'info'"
+                      ></div>
+                      <div
+                        :class="[selectedColor === 'success' && 'is-active']"
+                        tabindex="0"
+                        class="color-code is-success"
+                        @click="selectedColor = 'success'"
+                        @keydown.space.prevent="selectedColor = 'success'"
+                      ></div>
+                      <div
+                        :class="[selectedColor === 'purple' && 'is-active']"
+                        tabindex="0"
+                        class="color-code is-purple"
+                        @click="selectedColor = 'purple'"
+                        @keydown.space.prevent="selectedColor = 'purple'"
+                      ></div>
                     </div>
                   </VControl>
                 </VField>

@@ -169,6 +169,14 @@ Form Layouts
                 width: calc(50% - 16px);
                 margin: 8px;
 
+                &:focus-within {
+                  border-radius: 3px;
+                  outline-offset: var(--accessibility-focus-outline-offset);
+                  outline-width: var(--accessibility-focus-outline-width);
+                  outline-style: var(--accessibility-focus-outline-style);
+                  outline-color: var(--primary);
+                }
+
                 input {
                   position: absolute;
                   top: 0;
@@ -348,7 +356,6 @@ Form Layouts
               border-radius: var(--radius-rounded);
               border: 1.6px dashed var(--light-text);
               color: var(--light-text);
-              outline: none;
               padding: 0;
               background: none;
               margin-left: 4px;
@@ -359,6 +366,13 @@ Form Layouts
               &:hover {
                 border: 1.6px solid var(--primary);
                 color: var(--primary);
+              }
+
+              &:focus-visible {
+                outline-offset: var(--accessibility-focus-outline-offset);
+                outline-width: var(--accessibility-focus-outline-width);
+                outline-style: var(--accessibility-focus-outline-style);
+                outline-color: var(--accessibility-focus-outline-color);
               }
 
               svg {
@@ -389,24 +403,51 @@ Form Layouts
                 opacity: 100%;
               }
 
+              &:focus-visible {
+                outline-offset: var(--accessibility-focus-outline-offset);
+                outline-width: var(--accessibility-focus-outline-width);
+                outline-style: var(--accessibility-focus-outline-style);
+                outline-color: var(--accessibility-focus-outline-color);
+              }
+
               &.is-primary {
                 border-color: var(--primary);
+
+                &.is-active {
+                  background: var(--primary);
+                }
               }
 
               &.is-secondary {
                 border-color: var(--secondary);
+
+                &.is-active {
+                  background: var(--secondary);
+                }
               }
 
               &.is-info {
                 border-color: var(--info);
+
+                &.is-active {
+                  background: var(--info);
+                }
               }
 
               &.is-success {
                 border-color: var(--success);
+
+                &.is-active {
+                  background: var(--success);
+                }
               }
 
               &.is-purple {
                 border-color: var(--purple);
+
+                &.is-active {
+                  background: var(--purple);
+                }
               }
             }
           }

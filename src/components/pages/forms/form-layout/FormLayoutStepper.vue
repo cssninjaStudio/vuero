@@ -121,6 +121,10 @@ const validateStep = async () => {
             <span>General Information</span>
             <button
               class="help-button"
+              tabindex="0"
+              @keydown.space.prevent="
+                currentHelp === 0 ? (currentHelp = -1) : (currentHelp = 0)
+              "
               @click="currentHelp === 0 ? (currentHelp = -1) : (currentHelp = 0)"
             >
               <i aria-hidden="true" class="iconify" data-icon="feather:help-circle"></i>
@@ -266,6 +270,9 @@ const validateStep = async () => {
               <span>Shipment Owner</span>
               <button
                 class="help-button"
+                @keydown.space.prevent="
+                  currentHelp === 1 ? (currentHelp = -1) : (currentHelp = 1)
+                "
                 @click="currentHelp === 1 ? (currentHelp = -1) : (currentHelp = 1)"
               >
                 <i aria-hidden="true" class="iconify" data-icon="feather:help-circle"></i>
