@@ -1,37 +1,16 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
-import { useRoute } from 'vue-router'
-import { navbarLayoutId, navbarLayoutTheme } from '/@src/state/navbarLayoutState'
-import { sidebarTheme } from '/@src/state/sidebarLayoutState'
+import { useLayoutSwitcher } from '/@src/stores/layoutSwitcher'
 
+const layoutSwitcher = useLayoutSwitcher()
 const isModalOpen = ref(false)
-const route = useRoute()
-
-const isNavbarLayout = computed(() => {
-  return route.fullPath.startsWith('/navbar/')
-})
-const isSidebarLayout = computed(() => {
-  return route.fullPath.startsWith('/sidebar/')
-})
-
-const navbarLayoutLink = computed(() => {
-  return route.fullPath.replace('sidebar', 'navbar')
-})
-
-const sidebarLayoutLink = computed(() => {
-  return route.fullPath.replace('navbar', 'sidebar')
-})
-
-const hasDynamicLayout = computed(() => {
-  return isNavbarLayout.value || isSidebarLayout.value
-})
 
 const selectedSlug = computed(() => {
-  if (isSidebarLayout.value) {
+  if (layoutSwitcher.isSidebarLayout) {
     return 'sidebar'
   }
 
-  switch (navbarLayoutId.value) {
+  switch (layoutSwitcher.navbarLayoutId) {
     case 'navbar-dropdown':
     case 'navbar-dropdown-colored':
       return 'dropdown'
@@ -60,7 +39,7 @@ const layoutComponent = (slug: string) => {
 </script>
 
 <template>
-  <div v-if="hasDynamicLayout">
+  <div v-if="layoutSwitcher.hasDynamicLayout">
     <a
       aria-label="Open layout switcher"
       class="icon-link"
@@ -103,16 +82,16 @@ const layoutComponent = (slug: string) => {
                   >
                     <div class="column is-6">
                       <RouterLink
-                        :to="navbarLayoutLink"
+                        :to="layoutSwitcher.navbarLayoutLink"
                         class="layout-item"
                         :class="[
-                          isNavbarLayout &&
-                            navbarLayoutId === 'navbar-default' &&
+                          layoutSwitcher.isNavbarLayout &&
+                            layoutSwitcher.navbarLayoutId === 'navbar-default' &&
                             'is-active',
                         ]"
                         @click.passive="
                           () => {
-                            navbarLayoutId = 'navbar-default'
+                            layoutSwitcher.setNavbarLayoutId('navbar-default')
                             isModalOpen = false
                           }
                         "
@@ -140,16 +119,16 @@ const layoutComponent = (slug: string) => {
                     </div>
                     <div class="column is-6">
                       <RouterLink
-                        :to="navbarLayoutLink"
+                        :to="layoutSwitcher.navbarLayoutLink"
                         class="layout-item"
                         :class="[
-                          isNavbarLayout &&
-                            navbarLayoutId === 'navbar-fade' &&
+                          layoutSwitcher.isNavbarLayout &&
+                            layoutSwitcher.navbarLayoutId === 'navbar-fade' &&
                             'is-active',
                         ]"
                         @click.passive="
                           () => {
-                            navbarLayoutId = 'navbar-fade'
+                            layoutSwitcher.setNavbarLayoutId('navbar-fade')
                             isModalOpen = false
                           }
                         "
@@ -177,16 +156,16 @@ const layoutComponent = (slug: string) => {
                     </div>
                     <div class="column is-6">
                       <RouterLink
-                        :to="navbarLayoutLink"
+                        :to="layoutSwitcher.navbarLayoutLink"
                         class="layout-item"
                         :class="[
-                          isNavbarLayout &&
-                            navbarLayoutId === 'navbar-colored' &&
+                          layoutSwitcher.isNavbarLayout &&
+                            layoutSwitcher.navbarLayoutId === 'navbar-colored' &&
                             'is-active',
                         ]"
                         @click.passive="
                           () => {
-                            navbarLayoutId = 'navbar-colored'
+                            layoutSwitcher.setNavbarLayoutId('navbar-colored')
                             isModalOpen = false
                           }
                         "
@@ -219,16 +198,16 @@ const layoutComponent = (slug: string) => {
                   >
                     <div class="column is-6">
                       <RouterLink
-                        :to="navbarLayoutLink"
+                        :to="layoutSwitcher.navbarLayoutLink"
                         class="layout-item"
                         :class="[
-                          isNavbarLayout &&
-                            navbarLayoutId === 'navbar-dropdown' &&
+                          layoutSwitcher.isNavbarLayout &&
+                            layoutSwitcher.navbarLayoutId === 'navbar-dropdown' &&
                             'is-active',
                         ]"
                         @click.passive="
                           () => {
-                            navbarLayoutId = 'navbar-dropdown'
+                            layoutSwitcher.setNavbarLayoutId('navbar-dropdown')
                             isModalOpen = false
                           }
                         "
@@ -256,16 +235,16 @@ const layoutComponent = (slug: string) => {
                     </div>
                     <div class="column is-6">
                       <RouterLink
-                        :to="navbarLayoutLink"
+                        :to="layoutSwitcher.navbarLayoutLink"
                         class="layout-item"
                         :class="[
-                          isNavbarLayout &&
-                            navbarLayoutId === 'navbar-dropdown-colored' &&
+                          layoutSwitcher.isNavbarLayout &&
+                            layoutSwitcher.navbarLayoutId === 'navbar-dropdown-colored' &&
                             'is-active',
                         ]"
                         @click.passive="
                           () => {
-                            navbarLayoutId = 'navbar-dropdown-colored'
+                            layoutSwitcher.setNavbarLayoutId('navbar-dropdown-colored')
                             isModalOpen = false
                           }
                         "
@@ -298,16 +277,16 @@ const layoutComponent = (slug: string) => {
                   >
                     <div class="column is-6">
                       <RouterLink
-                        :to="navbarLayoutLink"
+                        :to="layoutSwitcher.navbarLayoutLink"
                         class="layout-item"
                         :class="[
-                          isNavbarLayout &&
-                            navbarLayoutId === 'navbar-clean' &&
+                          layoutSwitcher.isNavbarLayout &&
+                            layoutSwitcher.navbarLayoutId === 'navbar-clean' &&
                             'is-active',
                         ]"
                         @click.passive="
                           () => {
-                            navbarLayoutId = 'navbar-clean'
+                            layoutSwitcher.setNavbarLayoutId('navbar-clean')
                             isModalOpen = false
                           }
                         "
@@ -335,16 +314,16 @@ const layoutComponent = (slug: string) => {
                     </div>
                     <div class="column is-6">
                       <RouterLink
-                        :to="navbarLayoutLink"
+                        :to="layoutSwitcher.navbarLayoutLink"
                         class="layout-item"
                         :class="[
-                          isNavbarLayout &&
-                            navbarLayoutId === 'navbar-clean-center' &&
+                          layoutSwitcher.isNavbarLayout &&
+                            layoutSwitcher.navbarLayoutId === 'navbar-clean-center' &&
                             'is-active',
                         ]"
                         @click.passive="
                           () => {
-                            navbarLayoutId = 'navbar-clean-center'
+                            layoutSwitcher.setNavbarLayoutId('navbar-clean-center')
                             isModalOpen = false
                           }
                         "
@@ -372,16 +351,16 @@ const layoutComponent = (slug: string) => {
                     </div>
                     <div class="column is-6">
                       <RouterLink
-                        :to="navbarLayoutLink"
+                        :to="layoutSwitcher.navbarLayoutLink"
                         class="layout-item"
                         :class="[
-                          isNavbarLayout &&
-                            navbarLayoutId === 'navbar-clean-fade' &&
+                          layoutSwitcher.isNavbarLayout &&
+                            layoutSwitcher.navbarLayoutId === 'navbar-clean-fade' &&
                             'is-active',
                         ]"
                         @click.passive="
                           () => {
-                            navbarLayoutId = 'navbar-clean-fade'
+                            layoutSwitcher.setNavbarLayoutId('navbar-clean-fade')
                             isModalOpen = false
                           }
                         "
@@ -414,14 +393,16 @@ const layoutComponent = (slug: string) => {
                   >
                     <div class="column is-6">
                       <RouterLink
-                        :to="sidebarLayoutLink"
+                        :to="layoutSwitcher.sidebarLayoutLink"
                         class="layout-item"
                         :class="[
-                          isSidebarLayout && sidebarTheme === 'default' && 'is-active',
+                          layoutSwitcher.isSidebarLayout &&
+                            layoutSwitcher.sidebarTheme === 'default' &&
+                            'is-active',
                         ]"
                         @click.passive="
                           () => {
-                            sidebarTheme = 'default'
+                            layoutSwitcher.sidebarTheme = 'default'
                             isModalOpen = false
                           }
                         "
@@ -449,14 +430,16 @@ const layoutComponent = (slug: string) => {
                     </div>
                     <div class="column is-6">
                       <RouterLink
-                        :to="sidebarLayoutLink"
+                        :to="layoutSwitcher.sidebarLayoutLink"
                         class="layout-item"
                         :class="[
-                          isSidebarLayout && sidebarTheme === 'color' && 'is-active',
+                          layoutSwitcher.isSidebarLayout &&
+                            layoutSwitcher.sidebarTheme === 'color' &&
+                            'is-active',
                         ]"
                         @click.passive="
                           () => {
-                            sidebarTheme = 'color'
+                            layoutSwitcher.sidebarTheme = 'color'
                             isModalOpen = false
                           }
                         "
@@ -484,14 +467,16 @@ const layoutComponent = (slug: string) => {
                     </div>
                     <div class="column is-6">
                       <RouterLink
-                        :to="sidebarLayoutLink"
+                        :to="layoutSwitcher.sidebarLayoutLink"
                         class="layout-item"
                         :class="[
-                          isSidebarLayout && sidebarTheme === 'curved' && 'is-active',
+                          layoutSwitcher.isSidebarLayout &&
+                            layoutSwitcher.sidebarTheme === 'curved' &&
+                            'is-active',
                         ]"
                         @click.passive="
                           () => {
-                            sidebarTheme = 'curved'
+                            layoutSwitcher.sidebarTheme = 'curved'
                             isModalOpen = false
                           }
                         "
@@ -519,16 +504,16 @@ const layoutComponent = (slug: string) => {
                     </div>
                     <div class="column is-6">
                       <RouterLink
-                        :to="sidebarLayoutLink"
+                        :to="layoutSwitcher.sidebarLayoutLink"
                         class="layout-item"
                         :class="[
-                          isSidebarLayout &&
-                            sidebarTheme === 'color-curved' &&
+                          layoutSwitcher.isSidebarLayout &&
+                            layoutSwitcher.sidebarTheme === 'color-curved' &&
                             'is-active',
                         ]"
                         @click.passive="
                           () => {
-                            sidebarTheme = 'color-curved'
+                            layoutSwitcher.sidebarTheme = 'color-curved'
                             isModalOpen = false
                           }
                         "
@@ -556,14 +541,16 @@ const layoutComponent = (slug: string) => {
                     </div>
                     <div class="column is-6">
                       <RouterLink
-                        :to="sidebarLayoutLink"
+                        :to="layoutSwitcher.sidebarLayoutLink"
                         class="layout-item"
                         :class="[
-                          isSidebarLayout && sidebarTheme === 'labels' && 'is-active',
+                          layoutSwitcher.isSidebarLayout &&
+                            layoutSwitcher.sidebarTheme === 'labels' &&
+                            'is-active',
                         ]"
                         @click.passive="
                           () => {
-                            sidebarTheme = 'labels'
+                            layoutSwitcher.sidebarTheme = 'labels'
                             isModalOpen = false
                           }
                         "
@@ -591,16 +578,16 @@ const layoutComponent = (slug: string) => {
                     </div>
                     <div class="column is-6">
                       <RouterLink
-                        :to="sidebarLayoutLink"
+                        :to="layoutSwitcher.sidebarLayoutLink"
                         class="layout-item"
                         :class="[
-                          isSidebarLayout &&
-                            sidebarTheme === 'labels-hover' &&
+                          layoutSwitcher.isSidebarLayout &&
+                            layoutSwitcher.sidebarTheme === 'labels-hover' &&
                             'is-active',
                         ]"
                         @click.passive="
                           () => {
-                            sidebarTheme = 'labels-hover'
+                            layoutSwitcher.sidebarTheme = 'labels-hover'
                             isModalOpen = false
                           }
                         "
@@ -628,14 +615,16 @@ const layoutComponent = (slug: string) => {
                     </div>
                     <div class="column is-6">
                       <RouterLink
-                        :to="sidebarLayoutLink"
+                        :to="layoutSwitcher.sidebarLayoutLink"
                         class="layout-item"
                         :class="[
-                          isSidebarLayout && sidebarTheme === 'float' && 'is-active',
+                          layoutSwitcher.isSidebarLayout &&
+                            layoutSwitcher.sidebarTheme === 'float' &&
+                            'is-active',
                         ]"
                         @click.passive="
                           () => {
-                            sidebarTheme = 'float'
+                            layoutSwitcher.sidebarTheme = 'float'
                             isModalOpen = false
                           }
                         "

@@ -1,9 +1,14 @@
 <script setup lang="ts">
-import { sidebarTheme } from '/@src/state/sidebarLayoutState'
+import { useLayoutSwitcher } from '/@src/stores/layoutSwitcher'
+const layoutSwitcher = useLayoutSwitcher()
 </script>
 
 <template>
-  <SidebarLayout :theme="sidebarTheme" open-on-mounted default-sidebar="elements">
+  <SidebarLayout
+    :theme="layoutSwitcher.sidebarTheme"
+    open-on-mounted
+    default-sidebar="elements"
+  >
     <!-- Content Wrapper -->
     <RouterView v-slot="{ Component }">
       <transition name="translate-page-y" mode="out-in">

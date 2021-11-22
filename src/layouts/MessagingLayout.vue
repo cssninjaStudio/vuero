@@ -2,16 +2,8 @@
 import { ref } from 'vue'
 import { useRoute } from 'vue-router'
 
+import type { SidebarTheme } from '/@stc/stores/layoutSwitcher'
 import { usePanels } from '/@src/stores/panels'
-
-export type SidebarTheme =
-  | 'default'
-  | 'color'
-  | 'color-curved'
-  | 'curved'
-  | 'float'
-  | 'labels'
-  | 'labels-hover'
 
 const props = withDefaults(
   defineProps<{

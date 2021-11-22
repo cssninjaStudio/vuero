@@ -1,13 +1,10 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
 
-import {
-  navbarLayoutComponent,
-  navbarLayoutId,
-  navbarLayoutTheme,
-} from '/@src/state/navbarLayoutState'
+import { useLayoutSwitcher } from '/@src/stores/layoutSwitcher'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 
+const layoutSwitcher = useLayoutSwitcher()
 const viewWrapper = useViewWrapper()
 viewWrapper.setPageTitle('Maps 2')
 
@@ -17,7 +14,11 @@ useHead({
 </script>
 
 <template>
-  <component :is="navbarLayoutComponent" :theme="navbarLayoutTheme" nowrap>
+  <component
+    :is="layoutSwitcher.navbarLayoutComponent"
+    :theme="layoutSwitcher.navbarLayoutTheme"
+    nowrap
+  >
     <MapsDashboard reversed />
   </component>
 </template>

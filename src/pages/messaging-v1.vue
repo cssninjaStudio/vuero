@@ -4,7 +4,7 @@ import { useHead } from '@vueuse/head'
 import { computed, onMounted, ref, watchEffect, watchPostEffect } from 'vue'
 
 import { useSidebar } from '/@src/stores/sidebar'
-import { sidebarTheme } from '/@src/state/sidebarLayoutState'
+import { useLayoutSwitcher } from '/@src/stores/layoutSwitcher'
 import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 
@@ -46,6 +46,7 @@ const conversations = [
   },
 ]
 
+const layoutSwitcher = useLayoutSwitcher()
 const viewWrapper = useViewWrapper()
 const sidebar = useSidebar()
 
@@ -114,7 +115,7 @@ watchPostEffect(() => {
 </script>
 
 <template>
-  <MessagingLayout :theme="sidebarTheme">
+  <MessagingLayout :theme="layoutSwitcher.sidebarTheme">
     <template #default="{ isMobileSidebarOpen }">
       <transition name="slide-x">
         <MessagesSubsidebar

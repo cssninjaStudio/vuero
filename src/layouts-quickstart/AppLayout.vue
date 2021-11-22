@@ -2,16 +2,8 @@
 import { ref, watchPostEffect, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
+import type { SidebarTheme } from '/@stc/stores/layoutSwitcher'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
-
-export type SidebarTheme =
-  | 'default'
-  | 'color'
-  | 'color-curved'
-  | 'curved'
-  | 'float'
-  | 'labels'
-  | 'labels-hover'
 
 const props = withDefaults(
   defineProps<{

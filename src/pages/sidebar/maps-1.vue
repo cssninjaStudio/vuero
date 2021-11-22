@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
 
-import { sidebarTheme } from '/@src/state/sidebarLayoutState'
+import { useLayoutSwitcher } from '/@src/stores/layoutSwitcher'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 import { usePanels } from '/@src/stores/panels'
 
 const panels = usePanels()
+const layoutSwitcher = useLayoutSwitcher()
 const viewWrapper = useViewWrapper()
 viewWrapper.setPageTitle('Maps 1')
 
@@ -15,7 +16,12 @@ useHead({
 </script>
 
 <template>
-  <SidebarLayout :theme="sidebarTheme" close-on-change default-sidebar="dashboard" nowrap>
+  <SidebarLayout
+    :theme="layoutSwitcher.sidebarTheme"
+    close-on-change
+    default-sidebar="dashboard"
+    nowrap
+  >
     <MapsDashboard>
       <template #header>
         <div class="content-section-header">

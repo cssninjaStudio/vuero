@@ -6,17 +6,17 @@ meta:
 <script setup lang="ts">
 import { useRoute } from 'vue-router'
 
-import {
-  navbarLayoutComponent,
-  navbarLayoutId,
-  navbarLayoutTheme,
-} from '/@src/state/navbarLayoutState'
+import { useLayoutSwitcher } from '/@src/stores/layoutSwitcher'
 
+const layoutSwitcher = useLayoutSwitcher()
 const route = useRoute()
 </script>
 
 <template>
-  <component :is="navbarLayoutComponent" :theme="navbarLayoutTheme">
+  <component
+    :is="layoutSwitcher.navbarLayoutComponent"
+    :theme="layoutSwitcher.navbarLayoutTheme"
+  >
     <!-- Content Wrapper -->
     <RouterView v-slot="{ Component }">
       <transition name="fade-fast" mode="out-in">
