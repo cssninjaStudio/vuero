@@ -2,9 +2,11 @@
 import { useHead } from '@vueuse/head'
 
 import { userStack2 } from '/@src/data/users/userStacks'
-import { pageTitle } from '/@src/state/sidebarLayoutState'
+import { useViewWrapper } from '/@src/stores/viewWrapper'
 
-pageTitle.value = 'VCardSocial'
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('VCardSocial')
+
 useHead({
   title: 'VCardSocial - Components - Vuero',
 })

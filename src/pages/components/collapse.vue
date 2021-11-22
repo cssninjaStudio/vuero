@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
 
-import { pageTitle } from '/@src/state/sidebarLayoutState'
+import { useViewWrapper } from '/@src/stores/viewWrapper'
 
 const data = [
   {
@@ -18,7 +18,9 @@ const data = [
   },
 ]
 
-pageTitle.value = 'VCollapse'
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('VCollapse')
+
 useHead({
   title: 'VCollapse - Components - Vuero',
 })

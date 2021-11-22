@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
 
-import { pageTitle } from '/@src/state/sidebarLayoutState'
+import { useViewWrapper } from '/@src/stores/viewWrapper'
 
-pageTitle.value = 'Grid Tiles 3'
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('Grid Tiles 3')
+
 useHead({
   title: 'Grid Tiles 3 - Sidebar - Vuero',
 })

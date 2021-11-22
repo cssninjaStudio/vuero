@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
 
-import { pageTitle } from '/@src/state/navbarLayoutState'
+import { useViewWrapper } from '/@src/stores/viewWrapper'
 
-pageTitle.value = 'List Datatable 4'
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('List Datatable 4')
+
 useHead({
   title: 'List Datatable 4 - Navbar - Vuero',
 })

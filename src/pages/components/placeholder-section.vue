@@ -4,12 +4,14 @@ import { useHead } from '@vueuse/head'
 import { ref } from 'vue'
 import useMarkdownToc from '/@src/composable/useMarkdownToc'
 import { popovers } from '/@src/data/users/userPopovers'
-import { pageTitle } from '/@src/state/sidebarLayoutState'
+import { useViewWrapper } from '/@src/stores/viewWrapper'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-pageTitle.value = 'VPlaceholderSection'
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('VPlaceholderSection')
+
 useHead({
   title: 'VPlaceholderSection - Components - Vuero',
 })

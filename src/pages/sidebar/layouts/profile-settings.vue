@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
 
-import { pageTitle } from '/@src/state/sidebarLayoutState'
+import { useViewWrapper } from '/@src/stores/viewWrapper'
 
-pageTitle.value = 'Profile Settings'
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('Profile Settings')
+
 useHead({
   title: 'Profile Settings - Sidebar - Vuero',
 })

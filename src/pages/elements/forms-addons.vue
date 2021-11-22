@@ -3,12 +3,14 @@ import { useHead } from '@vueuse/head'
 
 import { ref } from 'vue'
 import useMarkdownToc from '/@src/composable/useMarkdownToc'
-import { pageTitle } from '/@src/state/sidebarLayoutState'
+import { useViewWrapper } from '/@src/stores/viewWrapper'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-pageTitle.value = 'Input Addons'
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('Input Addons')
+
 useHead({
   title: 'Input Addons - Forms Elements - Vuero',
 })

@@ -3,13 +3,15 @@ import { useHead } from '@vueuse/head'
 import CKE from '@ckeditor/ckeditor5-vue'
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
 
-import { pageTitle } from '/@src/state/sidebarLayoutState'
+import { useViewWrapper } from '/@src/stores/viewWrapper'
 
 import { editorData, editorConfig } from '/@src/data/documentation/ck-editor/editor-data'
 
 const CKEditor = CKE.component
 
-pageTitle.value = 'CKEditor'
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('CKEditor')
+
 useHead({
   title: 'CKEditor - Addons - Vuero',
 })

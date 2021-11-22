@@ -2,7 +2,7 @@
 import { useHead } from '@vueuse/head'
 import { onMounted } from 'vue'
 
-import { pageTitle } from '/@src/state/sidebarLayoutState'
+import { useViewWrapper } from '/@src/stores/viewWrapper'
 
 const data = [
   {
@@ -37,7 +37,9 @@ const data = [
   },
 ]
 
-pageTitle.value = 'VAccordionImage'
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('VAccordionImage')
+
 useHead({
   title: 'VAccordionImage - Components - Vuero',
 })

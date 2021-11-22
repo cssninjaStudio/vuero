@@ -3,7 +3,7 @@ import { computed, ref } from 'vue'
 import { useWindowScroll } from '@vueuse/core'
 import { useHead } from '@vueuse/head'
 
-import { pageTitle } from '/@src/state/sidebarLayoutState'
+import { useViewWrapper } from '/@src/stores/viewWrapper'
 import { lineIconsRegular } from '/@src/data/icons/lineIconsRegular'
 
 const { y } = useWindowScroll()
@@ -22,7 +22,9 @@ const filteredIcons = computed(() => {
   })
 })
 
-pageTitle.value = 'Line Icons Regular Icons'
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('Line Icons Regular Icons')
+
 useHead({
   title: 'Line Icons Regular Icons - Elements - Vuero',
 })

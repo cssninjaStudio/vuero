@@ -11,9 +11,11 @@
  * @see /src/router.ts
  */
 import { useHead } from '@vueuse/head'
-import { pageTitle } from '/@src/state/sidebarLayoutState'
+import { useViewWrapper } from '/@src/stores/viewWrapper'
 
-pageTitle.value = 'Blank Page 4'
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('Blank Page 4')
+
 useHead({
   title: 'Blank Page 4 - Sidebar - Vuero',
 })

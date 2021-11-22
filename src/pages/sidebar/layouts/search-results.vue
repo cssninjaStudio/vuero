@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
 
-import { pageTitle } from '/@src/state/sidebarLayoutState'
+import { useViewWrapper } from '/@src/stores/viewWrapper'
 
-pageTitle.value = 'Search Results'
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('Search Results')
+
 useHead({
   title: 'Search Results - Sidebar - Vuero',
 })

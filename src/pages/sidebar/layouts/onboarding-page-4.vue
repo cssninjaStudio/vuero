@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
 
-import { pageTitle } from '/@src/state/sidebarLayoutState'
+import { useViewWrapper } from '/@src/stores/viewWrapper'
 
-pageTitle.value = 'Onboarding Page 4'
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('Onboarding Page 4')
+
 useHead({
   title: 'Onboarding Page 4 - Sidebar - Vuero',
 })

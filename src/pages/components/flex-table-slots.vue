@@ -3,7 +3,7 @@ import { ref, computed } from 'vue'
 import { useHead } from '@vueuse/head'
 
 import { flexRowsContacts } from '/@src/data/documentation/table'
-import { pageTitle } from '/@src/state/sidebarLayoutState'
+import { useViewWrapper } from '/@src/stores/viewWrapper'
 
 // this is a local directive (it begins with V..., usable with v-focus)
 // that is used to force the focus on input when mounted
@@ -54,7 +54,9 @@ function contactUser(row: any) {
   alert(`Contacting "${row.company}" ...`)
 }
 
-pageTitle.value = 'VFlexTable (Compact)'
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('VFlexTable (Compact)')
+
 useHead({
   title: 'VFlexTable Compact - Components - Vuero',
 })

@@ -3,7 +3,7 @@ import { computed, ref } from 'vue'
 import { useWindowScroll } from '@vueuse/core'
 import { useHead } from '@vueuse/head'
 
-import { pageTitle } from '/@src/state/sidebarLayoutState'
+import { useViewWrapper } from '/@src/stores/viewWrapper'
 import { iconifyFeather } from '/@src/data/icons/iconifyFeather'
 
 const { y } = useWindowScroll()
@@ -22,7 +22,9 @@ const filteredIcons = computed(() => {
   })
 })
 
-pageTitle.value = 'Iconify Icons'
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('Iconify Icons')
+
 useHead({
   title: 'Iconify Icons - Elements - Vuero',
 })

@@ -2,7 +2,6 @@
 import { ref, watchPostEffect, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
-import { pageTitle } from '/@src/state/sidebarLayoutState'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 
 export type SidebarTheme =
@@ -163,7 +162,7 @@ watch(
             </div>
 
             <div class="title-wrap">
-              <h1 class="title is-4">{{ pageTitle }}</h1>
+              <h1 class="title is-4">{{ viewWrapper.pageTitle }}</h1>
             </div>
 
             <Toolbar class="desktop-toolbar" />

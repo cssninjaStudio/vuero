@@ -4,7 +4,7 @@ import { computed } from 'vue'
 
 import { flexRowsBasic } from '/@src/data/documentation/table'
 import { useRoute } from 'vue-router'
-import { pageTitle } from '/@src/state/sidebarLayoutState'
+import { useViewWrapper } from '/@src/stores/viewWrapper'
 
 const route = useRoute()
 const currentPage = computed(() => {
@@ -14,7 +14,9 @@ const currentPage = computed(() => {
   return 1
 })
 
-pageTitle.value = 'VFlexPagination'
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('VFlexPagination')
+
 useHead({
   title: 'VFlexPagination - Components - Vuero',
 })

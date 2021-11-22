@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
 
-import { pageTitle } from '/@src/state/navbarLayoutState'
+import { useViewWrapper } from '/@src/stores/viewWrapper'
 
-pageTitle.value = 'Charts Apex'
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('Charts Apex')
+
 useHead({
   title: 'Charts Apex - Navbar - Vuero',
 })

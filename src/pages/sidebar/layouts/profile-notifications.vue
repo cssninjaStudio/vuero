@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
 
-import { pageTitle } from '/@src/state/sidebarLayoutState'
+import { useViewWrapper } from '/@src/stores/viewWrapper'
 
-pageTitle.value = 'Profile Notifications'
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('Profile Notifications')
+
 useHead({
   title: 'Profile Notifications - Sidebar - Vuero',
 })

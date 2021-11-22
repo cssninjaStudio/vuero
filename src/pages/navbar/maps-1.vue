@@ -8,7 +8,9 @@ import {
   pageTitle,
 } from '/@src/state/navbarLayoutState'
 
-pageTitle.value = 'Maps 1'
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('Maps 1')
+
 useHead({
   title: 'Maps 1 - Navbar - Vuero',
 })

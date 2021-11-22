@@ -3,7 +3,7 @@ import { ref } from 'vue'
 
 import useDropdown from '/@src/composable/useDropdown'
 import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
-import { isMediumScreen } from '/@src/state/responsiveState'
+import { isMediumScreen } from '/@src/utils/responsive'
 
 const emit = defineEmits<{
   (e: 'update:mobileMessageOpen', value: boolean): void

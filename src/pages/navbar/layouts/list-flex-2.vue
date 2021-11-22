@@ -2,12 +2,14 @@
 import { useHead } from '@vueuse/head'
 import { ref } from 'vue'
 
-import { pageTitle } from '/@src/state/navbarLayoutState'
+import { useViewWrapper } from '/@src/stores/viewWrapper'
 
 type TabId = 'active' | 'closed'
 const activeTab = ref<TabId>('active')
 
-pageTitle.value = 'List Flex 2'
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('List Flex 2')
+
 useHead({
   title: 'List Flex 2 - Navbar - Vuero',
 })

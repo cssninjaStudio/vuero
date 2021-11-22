@@ -5,7 +5,9 @@ import { pageTitle, sidebarTheme } from '/@src/state/sidebarLayoutState'
 import { usePanels } from '/@src/stores/panels'
 
 const panels = usePanels()
-pageTitle.value = 'Maps 1'
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('Maps 1')
+
 useHead({
   title: 'Maps 1 - Sidebar - Vuero',
 })

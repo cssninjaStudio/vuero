@@ -2,7 +2,7 @@
 import { useHead } from '@vueuse/head'
 import { ref } from 'vue'
 
-import { pageTitle } from '/@src/state/sidebarLayoutState'
+import { useViewWrapper } from '/@src/stores/viewWrapper'
 
 const isLoaderActive = ref(false)
 
@@ -10,7 +10,9 @@ const toggleLoaders = () => {
   isLoaderActive.value = !isLoaderActive.value
 }
 
-pageTitle.value = 'VLoader'
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('VLoader')
+
 useHead({
   title: 'VLoader - Elements - Vuero',
 })

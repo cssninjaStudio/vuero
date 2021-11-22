@@ -2,12 +2,14 @@
 import { useHead } from '@vueuse/head'
 import { ref } from 'vue'
 
-import { pageTitle } from '/@src/state/sidebarLayoutState'
+import { useViewWrapper } from '/@src/stores/viewWrapper'
 
 type TabId = 'all' | 'saved'
 const activeTab = ref<TabId>('all')
 
-pageTitle.value = 'List View 4'
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('List View 4')
+
 useHead({
   title: 'List View 4 - Sidebar - Vuero',
 })

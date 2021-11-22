@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
 
-import { pageTitle } from '/@src/state/navbarLayoutState'
+import { useViewWrapper } from '/@src/stores/viewWrapper'
 
-pageTitle.value = 'Banking 1'
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('Banking 1')
+
 useHead({
   title: 'Banking 1 - Navbar - Vuero',
 })

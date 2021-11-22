@@ -3,23 +3,19 @@ import { defineStore } from 'pinia'
 
 export const useViewWrapper = defineStore('viewWrapper', () => {
   const isPushed = ref(false)
+  const pageTitle = ref('Welcome')
 
   function setPushed(value: boolean) {
     isPushed.value = value
   }
-
-  function toggle() {
-    isPushed.value = !isPushed.value
-  }
-
-  function close() {
-    isPushed.value = false
+  function setPageTitle(value: string) {
+    pageTitle.value = value
   }
 
   return {
     isPushed,
+    pageTitle,
     setPushed,
-    toggle,
-    close,
+    setPageTitle,
   } as const
 })

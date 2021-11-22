@@ -8,7 +8,7 @@ import { optionsBase } from '/@src/data/documentation/v-datatable/simple-datatab
 import { optionsReactive } from '/@src/data/documentation/v-datatable/reactive-datatable'
 import { optionsAdvanced } from '/@src/data/documentation/v-datatable/advanced-datatable'
 import { optionsUsers } from '/@src/data/documentation/v-datatable/users-datatable'
-import { pageTitle } from '/@src/state/sidebarLayoutState'
+import { useViewWrapper } from '/@src/stores/viewWrapper'
 
 let interval: any
 const markdownContainer = ref<HTMLElement>()
@@ -35,7 +35,9 @@ onBeforeUnmount(() => {
   }
 })
 
-pageTitle.value = 'VSimpleDatatables'
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('VSimpleDatatables')
+
 useHead({
   title: 'VSimpleDatatables - Plugins - Vuero',
 })

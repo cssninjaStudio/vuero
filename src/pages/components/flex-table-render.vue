@@ -4,7 +4,7 @@ import { RouterLink, useRoute } from 'vue-router'
 import { useHead } from '@vueuse/head'
 
 import { flexRowsAdvanced } from '/@src/data/documentation/table'
-import { pageTitle } from '/@src/state/sidebarLayoutState'
+import { useViewWrapper } from '/@src/stores/viewWrapper'
 import VTag from '/@src/components/base/tags/VTag.vue'
 import FlexTableDropdown from '/@src/components/partials/dropdowns/FlexTableDropdown.vue'
 import VAvatarStack from '/@src/components/base/avatar/VAvatarStack.vue'
@@ -237,7 +237,9 @@ const exampleColumns = {
   },
 } as const
 
-pageTitle.value = 'VFlexTable'
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('VFlexTable')
+
 useHead({
   title: 'VFlexTable - Components - Vuero',
 })

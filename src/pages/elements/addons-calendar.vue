@@ -3,13 +3,15 @@ import { useHead } from '@vueuse/head'
 
 import { ref } from 'vue'
 import useMarkdownToc from '/@src/composable/useMarkdownToc'
-import { pageTitle } from '/@src/state/sidebarLayoutState'
+import { useViewWrapper } from '/@src/stores/viewWrapper'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 const date = ref(null)
 
-pageTitle.value = 'VCalendar'
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('VCalendar')
+
 useHead({
   title: 'VCalendar - Addons - Vuero',
 })

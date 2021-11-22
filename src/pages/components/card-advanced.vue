@@ -2,11 +2,13 @@
 import { useHead } from '@vueuse/head'
 
 import type { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
-import { pageTitle } from '/@src/state/sidebarLayoutState'
+import { useViewWrapper } from '/@src/stores/viewWrapper'
 import * as userStacks from '/@src/data/users/userStacks'
 
 const userStack2 = userStacks.userStack2 as VAvatarProps[]
-pageTitle.value = 'VCardAdvanced'
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('VCardAdvanced')
+
 useHead({
   title: 'VCardAdvanced - Components - Vuero',
 })

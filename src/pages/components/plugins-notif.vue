@@ -4,7 +4,7 @@ import { onMounted, ref } from 'vue'
 
 import useNotyf from '/@src/composable/useNotyf'
 import useMarkdownToc from '/@src/composable/useMarkdownToc'
-import { pageTitle } from '/@src/state/sidebarLayoutState'
+import { useViewWrapper } from '/@src/stores/viewWrapper'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
@@ -15,7 +15,9 @@ onMounted(() => {
   notyf.success('This toast is displayed when the page is mounted')
 })
 
-pageTitle.value = 'notyf'
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('notyf')
+
 useHead({
   title: 'Notyf - Plugins - Vuero',
 })

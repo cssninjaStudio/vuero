@@ -5,7 +5,7 @@ import { useHead } from '@vueuse/head'
 
 import { flexRowsBasic, flexRowsContacts } from '/@src/data/documentation/table'
 import useMarkdownToc from '/@src/composable/useMarkdownToc'
-import { pageTitle } from '/@src/state/sidebarLayoutState'
+import { useViewWrapper } from '/@src/stores/viewWrapper'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
@@ -14,7 +14,9 @@ const rowClick = (row: any) => {
   console.log(row)
 }
 
-pageTitle.value = 'VFlexTable'
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('VFlexTable')
+
 useHead({
   title: 'VFlexTable - Components - Vuero',
 })

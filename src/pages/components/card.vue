@@ -3,13 +3,15 @@ import { useHead } from '@vueuse/head'
 
 import { ref } from 'vue'
 import useMarkdownToc from '/@src/composable/useMarkdownToc'
-import { pageTitle } from '/@src/state/sidebarLayoutState'
+import { useViewWrapper } from '/@src/stores/viewWrapper'
 import { popovers } from '/@src/data/users/userPopovers'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-pageTitle.value = 'VCard'
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('VCard')
+
 useHead({
   title: 'VCard - Components - Vuero',
 })

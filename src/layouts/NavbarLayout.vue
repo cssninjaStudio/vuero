@@ -5,7 +5,7 @@ import { useRoute } from 'vue-router'
 import type { VAvatarProps, VAvatarColor } from '/@src/components/base/avatar/VAvatar.vue'
 import type { UserPopover } from '/@src/models/users'
 import { popovers } from '/@src/data/users/userPopovers'
-import { pageTitle } from '/@src/state/navbarLayoutState'
+import { useViewWrapper } from '/@src/stores/viewWrapper'
 import { usePanels } from '/@src/stores/panels'
 
 export type NavbarTheme = 'default' | 'colored' | 'fade'
@@ -27,6 +27,7 @@ const props = withDefaults(
   }
 )
 
+const viewWrapper = useViewWrapper()
 const panels = usePanels()
 const route = useRoute()
 const filter = ref('')
@@ -179,7 +180,7 @@ watch(
         <div class="separator"></div>
 
         <ProjectsQuickDropdown />
-        <h1 class="title is-5">{{ pageTitle }}</h1>
+        <h1 class="title is-5">{{ viewWrapper.pageTitle }}</h1>
       </template>
 
       <!-- Custom navbar toolbar -->
@@ -311,7 +312,7 @@ watch(
             <div class="page-title has-text-centered">
               <!-- Mobile Page Title -->
               <div class="title-wrap">
-                <h1 class="title is-4">{{ pageTitle }}</h1>
+                <h1 class="title is-4">{{ viewWrapper.pageTitle }}</h1>
               </div>
 
               <Toolbar class="mobile-toolbar">

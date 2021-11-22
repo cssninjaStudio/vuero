@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
 
-import { pageTitle } from '/@src/state/navbarLayoutState'
+import { useViewWrapper } from '/@src/stores/viewWrapper'
 
-pageTitle.value = 'Utility Account Confirm'
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('Utility Account Confirm')
+
 useHead({
   title: 'Utility Account Confirm - Navbar - Vuero',
 })

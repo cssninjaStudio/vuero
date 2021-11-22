@@ -2,9 +2,11 @@
 import { useHead } from '@vueuse/head'
 
 import { flexRowsAdvanced } from '/@src/data/documentation/table'
-import { pageTitle } from '/@src/state/sidebarLayoutState'
+import { useViewWrapper } from '/@src/stores/viewWrapper'
 
-pageTitle.value = 'VFlexTableWrapper'
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('VFlexTableWrapper')
+
 useHead({
   title: 'VFlexTableWrapper - Components - Vuero',
 })

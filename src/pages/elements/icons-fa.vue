@@ -3,7 +3,7 @@ import { computed, ref } from 'vue'
 import { useWindowScroll } from '@vueuse/core'
 import { useHead } from '@vueuse/head'
 
-import { pageTitle } from '/@src/state/sidebarLayoutState'
+import { useViewWrapper } from '/@src/stores/viewWrapper'
 import { fontAwesome } from '/@src/data/icons/fontAwesome'
 
 const { y } = useWindowScroll()
@@ -22,7 +22,9 @@ const filteredIcons = computed(() => {
   })
 })
 
-pageTitle.value = 'Font Awesome Icons'
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('Font Awesome Icons')
+
 useHead({
   title: 'Font Awesome Icons - Elements - Vuero',
 })

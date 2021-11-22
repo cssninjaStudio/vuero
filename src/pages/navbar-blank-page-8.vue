@@ -12,9 +12,11 @@
  */
 
 import { useHead } from '@vueuse/head'
-import { pageTitle } from '/@src/state/navbarLayoutState'
+import { useViewWrapper } from '/@src/stores/viewWrapper'
 
-pageTitle.value = 'Blank Page 8'
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('Blank Page 8')
+
 useHead({
   title: 'Blank Page 8 - Navbar - Vuero',
 })

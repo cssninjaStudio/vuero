@@ -6,12 +6,14 @@ import { ref } from 'vue'
 import useMarkdownToc from '/@src/composable/useMarkdownToc'
 import * as splineSimple from '/@src/data/dashboards/billboardjs-demo/splineSimple'
 import { themeColors } from '/@src/utils/themeColors'
-import { pageTitle } from '/@src/state/sidebarLayoutState'
+import { useViewWrapper } from '/@src/stores/viewWrapper'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-pageTitle.value = 'VBillboardJS'
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('VBillboardJS')
+
 useHead({
   title: 'VBillboardJS - Plugins - Vuero',
 })
