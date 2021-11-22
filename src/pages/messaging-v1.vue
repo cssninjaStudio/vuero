@@ -170,7 +170,7 @@ watchPostEffect(() => {
         id="vuero-messaging"
         :class="[sidebar.active === 'none' && 'is-pushed-messages']"
       >
-        <div class="page-content-wrapper">
+        <VPageContentWrapper>
           <div class="page-content chat-content">
             <div class="page-title has-text-centered is-hidden">
               <div
@@ -624,7 +624,7 @@ watchPostEffect(() => {
               </div>
             </div>
           </div>
-        </div>
+        </VPageContentWrapper>
       </VViewWrapper>
 
       <a

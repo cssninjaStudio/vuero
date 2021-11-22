@@ -327,7 +327,7 @@ watch(
     <TaskPanel />
 
     <VViewWrapper>
-      <div class="page-content-wrapper">
+      <VPageContentWrapper>
         <template v-if="props.nowrap">
           <slot></slot>
         </template>
@@ -368,7 +368,7 @@ watch(
 
           <slot></slot>
         </div>
-      </div>
+      </VPageContentWrapper>
     </VViewWrapper>
   </div>
 </template>
