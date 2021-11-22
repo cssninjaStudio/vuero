@@ -355,8 +355,7 @@ useHead({
           height: 60px;
           border-radius: 10px;
           padding-left: 55px;
-          transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-            width 0.3s;
+          transition: all 0.3s; // transition-all test
 
           &:focus {
             background: var(--fade-grey-light-6);
@@ -384,8 +383,7 @@ useHead({
           color: var(--dark-text);
           font-weight: 500;
           z-index: 2;
-          transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-            width 0.3s;
+          transition: all 0.3s; // transition-all test
         }
 
         .autv-icon {
@@ -401,8 +399,7 @@ useHead({
           i {
             font-size: 24px;
             color: var(--placeholder);
-            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-              width 0.3s;
+            transition: all 0.3s; // transition-all test
           }
         }
 
@@ -578,8 +575,7 @@ useHead({
     width: 61px;
     border: 2px solid var(--placeholder);
     border-radius: 100px;
-    transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-      width 0.3s;
+    transition: all 0.3s; // transition-all test
 
     .active,
     .inactive {

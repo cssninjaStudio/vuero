@@ -30,7 +30,7 @@ const sidebar = useSidebar()
         @click="sidebar.toggle('messages')"
       >
         <span class="menu-toggle has-chevron">
-          <span :class="[activeSidebar !== 'none' && 'active']" class="icon-box-toggle">
+          <span :class="[sidebar.active !== 'none' && 'active']" class="icon-box-toggle">
             <span class="rotate">
               <i aria-hidden="true" class="icon-line-top"></i>
               <i aria-hidden="true" class="icon-line-center"></i>

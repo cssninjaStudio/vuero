@@ -50,8 +50,7 @@
         margin: 0 auto 10px;
         filter: grayscale(1);
         opacity: 60%;
-        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-          width 0.3s;
+        transition: all 0.3s; // transition-all test
       }
 
       h3 {
@@ -357,8 +356,7 @@
       background: var(--white);
       border: 1px solid var(--fade-grey-dark-3);
       border-radius: 8px;
-      transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-        width 0.3s;
+      transition: all 0.3s; // transition-all test
 
       &:hover {
         box-shadow: var(--light-box-shadow);
@@ -426,8 +424,7 @@
         background: var(--white);
         border: 1px solid var(--fade-grey-dark-3);
         border-radius: 8px;
-        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-          width 0.3s;
+        transition: all 0.3s; // transition-all test
 
         &:hover {
           box-shadow: var(--light-box-shadow);
@@ -486,8 +483,7 @@
             color: var(--dark-text);
             line-height: 1.2;
             margin-bottom: 8px;
-            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-              width 0.3s;
+            transition: all 0.3s; // transition-all test
           }
         }
 

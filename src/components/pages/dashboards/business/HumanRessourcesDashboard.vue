@@ -390,8 +390,7 @@ const columns = {
           border: none;
           outline: none;
           cursor: pointer;
-          transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-            width 0.3s;
+          transition: all 0.3s; // transition-all test
 
           svg {
             height: 18px;
@@ -648,8 +647,7 @@ const columns = {
           button {
             background: var(--dark-sidebar-light-10);
             border: 1px solid transparent;
-            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-              width 0.3s;
+            transition: all 0.3s; // transition-all test
 
             &:hover {
               border-color: var(--primary);

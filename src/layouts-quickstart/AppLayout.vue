@@ -3,6 +3,7 @@ import { ref, watchPostEffect, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
 import { pageTitle } from '/@src/state/sidebarLayoutState'
+import { useViewWrapper } from '/@src/stores/viewWrapper'
 
 export type SidebarTheme =
   | 'default'
@@ -27,6 +28,7 @@ const props = withDefaults(
   }
 )
 
+const viewWrapper = useViewWrapper()
 const route = useRoute()
 const isMobileSidebarOpen = ref(false)
 const isDesktopSidebarOpen = ref(props.openOnMounted)
@@ -45,16 +47,7 @@ function switchSidebar(id: string) {
  * watchPostEffect callback will be executed each time dependent reactive values has changed
  */
 watchPostEffect(() => {
-  const isOpen = isDesktopSidebarOpen.value
-  const wrappers = document.querySelectorAll('.view-wrapper')
-
-  wrappers.forEach((wrapper) => {
-    if (isOpen === false) {
-      wrapper.classList.remove('is-pushed-full')
-    } else if (!wrapper.classList.contains('is-pushed-full')) {
-      wrapper.classList.add('is-pushed-full')
-    }
-  })
+  viewWrapper.setPushed(isDesktopSidebarOpen.value)
 })
 watch(
   () => route.fullPath,
@@ -146,7 +139,7 @@ watch(
 
     <LanguagesPanel />
 
-    <div class="view-wrapper">
+    <VViewWrapper>
       <div class="page-content-wrapper">
         <template v-if="props.nowrap">
           <slot></slot>
@@ -179,6 +172,6 @@ watch(
           <slot></slot>
         </div>
       </div>
-    </div>
+    </VViewWrapper>
   </div>
 </template>

@@ -7,7 +7,7 @@ import { useSidebar } from '/@src/stores/sidebar'
 const sidebar = useSidebar()
 
 onMounted(() => {
-  activeSidebar.value = 'components'
+  sidebar.active = 'components'
 })
 
 useHead({
@@ -24,7 +24,7 @@ useHead({
         @click="sidebar.toggle('components')"
       >
         <span class="menu-toggle has-chevron">
-          <span :class="[activeSidebar !== 'none' && 'active']" class="icon-box-toggle">
+          <span :class="[sidebar.active !== 'none' && 'active']" class="icon-box-toggle">
             <span class="rotate">
               <i class="icon-line-top"></i>
               <i class="icon-line-center"></i>

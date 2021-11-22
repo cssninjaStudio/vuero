@@ -743,15 +743,13 @@ onMounted(() => {
           display: flex;
           justify-content: center;
           align-items: center;
-          transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-            width 0.3s;
+          transition: all 0.3s; // transition-all test
           cursor: pointer;
 
           svg {
             height: 18px;
             width: 18px;
-            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-              width 0.3s;
+            transition: all 0.3s; // transition-all test
             color: var(--muted-grey);
           }
 

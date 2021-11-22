@@ -324,8 +324,7 @@
     position: absolute;
     cursor: pointer;
     opacity: 0%;
-    transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-      width 0.3s;
+    transition: all 0.3s; // transition-all test
   }
 }
 
@@ -473,8 +472,7 @@
 
   input + span {
     border-radius: var(--radius-small);
-    transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-      width 0.3s;
+    transition: all 0.3s; // transition-all test
 
     &::after {
       background-size: contain;
@@ -760,8 +758,7 @@
     width: 50px;
     border: 1.6px solid var(--placeholder);
     border-radius: 100px;
-    transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-      width 0.3s;
+    transition: all 0.3s; // transition-all test
 
     .active,
     .inactive {

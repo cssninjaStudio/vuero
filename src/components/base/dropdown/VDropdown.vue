@@ -99,8 +99,7 @@ defineExpose({
       border: none;
       background: transparent;
       cursor: pointer;
-      transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-        width 0.3s;
+      transition: all 0.3s; // transition-all test
 
       > span {
         height: 20px;
@@ -139,8 +138,7 @@ defineExpose({
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-          width 0.3s;
+        transition: all 0.3s; // transition-all test
         margin-left: 6px;
 
         > span span {
@@ -186,8 +184,7 @@ defineExpose({
       padding: 0.5rem 1rem;
       font-size: 0.95rem;
       color: var(--light-text);
-      transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-        width 0.3s;
+      transition: all 0.3s; // transition-all test
 
       &:not(.is-button):hover,
       &:not(.is-button).is-active {
@@ -344,8 +341,7 @@ defineExpose({
           right: -282px;
           top: 0;
           width: 280px;
-          transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-            width 0.3s;
+          transition: all 0.3s; // transition-all test
           opacity: 0%;
           transform: translateY(10px);
           pointer-events: none;

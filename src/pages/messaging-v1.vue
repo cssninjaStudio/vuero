@@ -6,6 +6,7 @@ import { computed, onMounted, ref, watchEffect, watchPostEffect } from 'vue'
 import { useSidebar } from '/@src/stores/sidebar'
 import { sidebarTheme } from '/@src/state/sidebarLayoutState'
 import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+import { useViewWrapper } from '/@src/stores/viewWrapper'
 
 import useDropdown from '/@src/composable/useDropdown'
 import sleep from '/@src/utils/sleep'
@@ -45,6 +46,7 @@ const conversations = [
   },
 ]
 
+const viewWrapper = useViewWrapper()
 const sidebar = useSidebar()
 
 const dropdownElement = ref<HTMLElement>()
@@ -97,7 +99,7 @@ const selectedConversation = computed(() => {
 })
 
 onMounted(() => {
-  activeSidebar.value = 'messages'
+  sidebar.active = 'messages'
   selectedConversationId.value = 1
 })
 
@@ -107,16 +109,7 @@ useHead({
 
 watchEffect(onConversationChanged)
 watchPostEffect(() => {
-  const isOpen = activeSidebar.value === 'messages'
-  const wrappers = document.querySelectorAll('.view-wrapper')
-
-  wrappers.forEach((wrapper) => {
-    if (isOpen === false) {
-      wrapper.classList.remove('is-pushed-full')
-    } else if (!wrapper.classList.contains('is-pushed-full')) {
-      wrapper.classList.add('is-pushed-full')
-    }
-  })
+  viewWrapper.setPushed(isDesktopSidebarOpen.value)
 })
 </script>
 
@@ -125,7 +118,7 @@ watchPostEffect(() => {
     <template #default="{ isMobileSidebarOpen }">
       <transition name="slide-x">
         <MessagesSubsidebar
-          v-if="activeSidebar === 'messages'"
+          v-if="sidebar.active === 'messages'"
           :conversations="conversations"
           :selected-conversation-id="selectedConversationId"
           @add-conversation="
@@ -173,10 +166,9 @@ watchPostEffect(() => {
         "
       />
 
-      <div
+      <VViewWrapper
         id="vuero-messaging"
-        class="view-wrapper"
-        :class="[activeSidebar === 'none' && 'is-pushed-messages']"
+        :class="[sidebar.active === 'none' && 'is-pushed-messages']"
       >
         <div class="page-content-wrapper">
           <div class="page-content chat-content">
@@ -187,7 +179,7 @@ watchPostEffect(() => {
               >
                 <span class="menu-toggle has-chevron">
                   <span
-                    :class="[activeSidebar !== 'none' && 'active']"
+                    :class="[sidebar.active !== 'none' && 'active']"
                     class="icon-box-toggle"
                   >
                     <span class="rotate">
@@ -633,7 +625,7 @@ watchPostEffect(() => {
             </div>
           </div>
         </div>
-      </div>
+      </VViewWrapper>
 
       <a
         :class="[mobileConversationDetailsOpen && 'is-mobile-active']"
@@ -666,8 +658,7 @@ watchPostEffect(() => {
   border: 1px solid var(--fade-grey-dark-3);
   box-shadow: var(--light-box-shadow);
   transform: translateX(60px) rotate(360deg);
-  transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-    width 0.3s;
+  transition: all 0.3s; // transition-all test
 
   &.is-active {
     transform: translateX(0) rotate(0);
@@ -735,8 +726,7 @@ watchPostEffect(() => {
           svg {
             width: 20px;
             height: 20px;
-            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-              width 0.3s;
+            transition: all 0.3s; // transition-all test
           }
         }
 
@@ -766,8 +756,7 @@ watchPostEffect(() => {
             border: none;
             box-shadow: none;
             color: var(--muted-grey);
-            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-              width 0.3s;
+            transition: all 0.3s; // transition-all test
 
             &:focus {
               + .icon {
@@ -912,8 +901,7 @@ watchPostEffect(() => {
   border-left: 1px solid var(--fade-grey);
   background: var(--white);
   z-index: 3;
-  transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-    width 0.3s;
+  transition: all 0.3s; // transition-all test
 
   .chat-side-header {
     height: 60px;
@@ -925,8 +913,7 @@ watchPostEffect(() => {
 
   .chat-side-content {
     text-align: center;
-    transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-      width 0.3s;
+    transition: all 0.3s; // transition-all test
     padding: 20px;
 
     .user-pic {
@@ -1034,8 +1021,7 @@ watchPostEffect(() => {
   list-style: none;
   margin: 0;
   padding: 0 30px 80px;
-  transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-    width 0.3s;
+  transition: all 0.3s; // transition-all test
 
   &::-webkit-scrollbar {
     width: 5px;
@@ -1373,8 +1359,7 @@ watchPostEffect(() => {
         background: var(--primary);
         border: 4px solid var(--white);
         border-radius: 3px;
-        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-          width 0.3s;
+        transition: all 0.3s; // transition-all test
         z-index: 2;
       }
 
@@ -1386,8 +1371,7 @@ watchPostEffect(() => {
         height: 100%;
         opacity: 0%;
         pointer-events: none;
-        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-          width 0.3s;
+        transition: all 0.3s; // transition-all test
         z-index: 3;
 
         .actions-inner {
@@ -1408,8 +1392,7 @@ watchPostEffect(() => {
             background: var(--white);
             margin: 0 6px;
             cursor: pointer;
-            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-              width 0.3s;
+            transition: all 0.3s; // transition-all test
 
             &:hover {
               background: var(--success);
@@ -1580,8 +1563,7 @@ watchPostEffect(() => {
   height: 60px;
   width: calc(100% - 320px);
   padding: 0 16px;
-  transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-    width 0.3s;
+  transition: all 0.3s; // transition-all test
   z-index: 2;
 
   &.side-collapsed {
@@ -1632,16 +1614,14 @@ watchPostEffect(() => {
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-          width 0.3s;
+        transition: all 0.3s; // transition-all test
 
         svg {
           color: var(--placeholder);
           stroke-width: 2px;
           height: 18px;
           width: 18px;
-          transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-            width 0.3s;
+          transition: all 0.3s; // transition-all test
         }
       }
 
@@ -1708,16 +1688,14 @@ watchPostEffect(() => {
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-          width 0.3s;
+        transition: all 0.3s; // transition-all test
 
         svg {
           color: var(--placeholder);
           stroke-width: 2px;
           height: 18px;
           width: 18px;
-          transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-            width 0.3s;
+          transition: all 0.3s; // transition-all test
         }
       }
     }
@@ -1744,8 +1722,7 @@ watchPostEffect(() => {
     z-index: 2;
     opacity: 0%;
     transform: translateY(30px);
-    transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-      width 0.3s;
+    transition: all 0.3s; // transition-all test
 
     &.is-active {
       opacity: 100%;
@@ -2106,8 +2083,7 @@ watchPostEffect(() => {
         height: 100%;
         width: 100%;
         transform: translateX(100%);
-        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-          width 0.3s;
+        transition: all 0.3s; // transition-all test
         z-index: 20;
 
         &.is-mobile-active {
@@ -2184,8 +2160,7 @@ watchPostEffect(() => {
         height: 100%;
         width: 340px;
         transform: translateX(100%);
-        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-          width 0.3s;
+        transition: all 0.3s; // transition-all test
         z-index: 20;
 
         &.is-mobile-active {

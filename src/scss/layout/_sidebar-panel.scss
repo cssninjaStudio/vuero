@@ -971,8 +971,7 @@
   z-index: 34;
   border-left: 1px solid var(--fade-grey);
   transform: translateX(-100%);
-  transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-    width 0.3s;
+  transition: all 0.3s; // transition-all test
 
   &.is-active {
     transform: translateX(0);
@@ -1003,8 +1002,7 @@
         width: 36px;
         border-radius: var(--radius-rounded);
         padding: 4px;
-        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-          width 0.3s;
+        transition: all 0.3s; // transition-all test
 
         &:hover {
           box-shadow: var(--primary-box-shadow);
@@ -1026,8 +1024,7 @@
         align-items: center;
         height: 64px;
         border-left: 2px solid transparent;
-        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-          width 0.3s;
+        transition: all 0.3s; // transition-all test
         cursor: pointer;
 
         &.is-active {

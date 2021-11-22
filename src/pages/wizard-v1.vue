@@ -208,8 +208,7 @@ watchEffect(() => {
   border: 1px solid var(--fade-grey-dark-3);
   border-radius: 14px;
   transform: translateY(120px);
-  transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-    width 0.3s;
+  transition: all 0.3s; // transition-all test
   z-index: 5;
 
   &.is-active {
@@ -281,8 +280,7 @@ watchEffect(() => {
         opacity: 0%;
         pointer-events: none;
         z-index: 2;
-        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-          width 0.3s;
+        transition: all 0.3s; // transition-all test
 
         &.is-active {
           opacity: 100%;
@@ -325,8 +323,7 @@ watchEffect(() => {
             background: var(--white);
             border: 1px solid var(--fade-grey-dark-3);
             z-index: 1;
-            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-              width 0.3s;
+            transition: all 0.3s; // transition-all test
 
             i {
               color: var(--light-text);
@@ -348,8 +345,7 @@ watchEffect(() => {
             opacity: 0%;
             font-size: 16px;
             color: var(--light-text);
-            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-              width 0.3s;
+            transition: all 0.3s; // transition-all test
           }
         }
 
@@ -411,8 +407,7 @@ watchEffect(() => {
             opacity: 0%;
             pointer-events: none;
             cursor: pointer;
-            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-              width 0.3s;
+            transition: all 0.3s; // transition-all test
 
             i {
               font-size: 0.8rem;
@@ -877,8 +872,7 @@ watchEffect(() => {
             padding: 8px;
             border: 2px dashed var(--fade-grey-dark-4);
             cursor: pointer;
-            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-              width 0.3s;
+            transition: all 0.3s; // transition-all test
 
             &:hover {
               border-color: var(--primary);
@@ -1210,8 +1204,7 @@ watchEffect(() => {
             font-size: 0.9rem;
             color: var(--light-text-light-12);
             margin: 0 8px;
-            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-              width 0.3s;
+            transition: all 0.3s; // transition-all test
 
             &:hover:not(.is-active) {
               // background: var(--fade-grey-light-3);
@@ -1280,8 +1273,7 @@ watchEffect(() => {
         background: none;
         border: 1px solid transparent;
         padding: 30px;
-        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-          width 0.3s;
+        transition: all 0.3s; // transition-all test
 
         &:hover {
           background: var(--white);
@@ -1342,8 +1334,7 @@ watchEffect(() => {
             color: var(--light-text);
             opacity: 0%;
             pointer-events: none;
-            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-              width 0.3s;
+            transition: all 0.3s; // transition-all test
 
             &:hover {
               color: var(--primary);

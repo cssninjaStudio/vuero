@@ -64,8 +64,7 @@ label[for] {
   height: 38px;
 
   // padding-bottom: 8px;
-  transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-    width 0.3s;
+  transition: all 0.3s; // transition-all test
 
   &:focus-visible {
     outline-offset: var(--accessibility-focus-outline-offset);
@@ -101,8 +100,7 @@ label[for] {
 }
 
 .textarea {
-  transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-    width 0.3s;
+  transition: all 0.3s; // transition-all test
 
   &:focus {
     border-color: var(--fade-grey-dark-4);
@@ -231,8 +229,7 @@ label[for] {
             width: 8px;
             border-radius: var(--radius-rounded);
             background: var(--primary);
-            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-              width 0.3s;
+            transition: all 0.3s; // transition-all test
             transform: scale(0);
           }
         }
@@ -440,8 +437,7 @@ select {
         height: 18px;
         width: 18px;
         color: var(--placeholder);
-        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-          width 0.3s;
+        transition: all 0.3s; // transition-all test
       }
 
       .fas,
@@ -449,24 +445,21 @@ select {
       .fal,
       .fab {
         color: var(--placeholder);
-        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-          width 0.3s;
+        transition: all 0.3s; // transition-all test
       }
 
       .lnil,
       .lnir {
         font-size: 1.2rem;
         color: var(--placeholder);
-        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-          width 0.3s;
+        transition: all 0.3s; // transition-all test
       }
     }
 
     .input {
       height: 38px;
       padding-left: 38px;
-      transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-        width 0.3s;
+      transition: all 0.3s; // transition-all test
 
       &:focus {
         + .form-icon {
@@ -495,8 +488,7 @@ select {
       input {
         border-color: var(--success) !important;
         box-shadow: var(--light-box-shadow);
-        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-          width 0.3s;
+        transition: all 0.3s; // transition-all test
       }
 
       .validation-icon.is-success,
@@ -551,15 +543,13 @@ select {
       justify-content: center;
       align-items: center;
       opacity: 0%;
-      transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-        width 0.3s;
+      transition: all 0.3s; // transition-all test
 
       svg {
         height: 18px;
         width: 18px;
         color: var(--placeholder);
-        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-          width 0.3s;
+        transition: all 0.3s; // transition-all test
       }
     }
   }
@@ -597,8 +587,7 @@ select {
     transform: translateY(5px);
     box-shadow: var(--light-box-shadow);
     z-index: 10;
-    transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-      width 0.3s;
+    transition: all 0.3s; // transition-all test
 
     &.is-active {
       opacity: 100%;
@@ -640,8 +629,7 @@ select {
       display: flex;
       align-items: center;
       padding: 12px;
-      transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-        width 0.3s;
+      transition: all 0.3s; // transition-all test
 
       &:last-child {
         border-bottom: none;
@@ -817,8 +805,7 @@ select {
     border-radius: var(--radius-large);
     padding: 14px 16px;
     cursor: pointer;
-    transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-      width 0.3s;
+    transition: all 0.3s; // transition-all test
 
     &:hover {
       border-color: var(--placeholder);
@@ -866,8 +853,7 @@ select {
       width: 20px;
       height: 20px;
       transform: rotate(0);
-      transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-        width 0.3s;
+      transition: all 0.3s; // transition-all test
 
       svg {
         width: 20px;
@@ -892,8 +878,7 @@ select {
     opacity: 0%;
     transform: translateY(20px);
     pointer-events: none;
-    transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-      width 0.3s;
+    transition: all 0.3s; // transition-all test
 
     .inner {
       position: relative;
@@ -962,8 +947,7 @@ select {
       input {
         box-shadow: none;
         color: var(--muted-grey);
-        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-          width 0.3s;
+        transition: all 0.3s; // transition-all test
       }
 
       .template-wrapper {
@@ -1467,8 +1451,7 @@ select {
     border-radius: 8px;
     cursor: pointer;
     background: #c5c5c5;
-    transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-      top 0.2s ease, left 0.2s ease;
+    transition: all 0.3s; // transition-all test
 
     &::after {
       background: var(--light-grey);
@@ -1482,8 +1465,7 @@ select {
       border: 1px solid transparent;
       box-shadow: 0 2px 2px rgba(#000, 0.2);
       content: '';
-      transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-        top 0.2s ease, left 0.2s ease;
+      transition: all 0.3s; // transition-all test
     }
   }
 
@@ -1699,8 +1681,7 @@ select {
     .file-cta {
       background: var(--white);
       border: 1px solid var(--fade-grey-dark-3);
-      transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-        width 0.3s;
+      transition: all 0.3s; // transition-all test
     }
   }
 }
@@ -1748,8 +1729,7 @@ select {
     border-radius: var(--radius);
     min-height: 70px;
     cursor: pointer;
-    transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-      width 0.3s;
+    transition: all 0.3s; // transition-all test
   }
 }
 
@@ -1803,8 +1783,7 @@ select {
   .filepond--root {
     border: 2px dashed var(--fade-grey-dark-4);
     cursor: pointer;
-    transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-      width 0.3s;
+    transition: all 0.3s; // transition-all test
   }
 }
 
@@ -1856,8 +1835,7 @@ select {
 
   .choices__inner {
     border-radius: var(--radius-large);
-    transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-      width 0.3s;
+    transition: all 0.3s; // transition-all test
 
     .choices__list {
       .choices__item {

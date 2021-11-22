@@ -42,8 +42,7 @@
       }
 
       a {
-        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-          width 0.3s;
+        transition: all 0.3s; // transition-all test
 
         &:hover {
           border-color: #dbdbdb;
@@ -279,8 +278,7 @@
       top: 0.5px;
       display: block;
       height: 32px;
-      transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-        width 0.3s;
+      transition: all 0.3s; // transition-all test
       z-index: 4;
       border-radius: 50px;
 
@@ -392,8 +390,7 @@
       width: 33.3% !important;
       background: var(--primary);
       height: 32px;
-      transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-        width 0.3s;
+      transition: all 0.3s; // transition-all test
       z-index: 4;
       border-radius: 50px;
 

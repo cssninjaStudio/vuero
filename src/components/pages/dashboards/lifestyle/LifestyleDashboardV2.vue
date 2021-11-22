@@ -391,8 +391,7 @@ const topicList = dashboardData.topicList as any[]
       z-index: 1;
       cursor: pointer;
       border-radius: 16px;
-      transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-        width 0.3s;
+      transition: all 0.3s; // transition-all test
     }
 
     .long-card-text-overlay {
@@ -464,8 +463,7 @@ const topicList = dashboardData.topicList as any[]
           .rating {
             padding: 0 20px;
             opacity: 0%;
-            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-              width 0.3s;
+            transition: all 0.3s; // transition-all test
 
             i {
               font-size: 12px;

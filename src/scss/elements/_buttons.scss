@@ -13,8 +13,7 @@
 
 .button {
   font-family: var(--font);
-  transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-    width 0.3s;
+  transition: all 0.3s; // transition-all test
 
   &.v-action {
     padding: 8px 16px;
@@ -25,8 +24,7 @@
     background: var(--white);
     color: var(--dark-text);
     border: 1px solid var(--placeholder);
-    transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-      width 0.3s;
+    transition: all 0.3s; // transition-all test
     cursor: pointer;
     box-shadow: none !important;
 
@@ -122,8 +120,7 @@
     line-height: 1.1;
     font-size: 0.95rem;
     font-family: var(--font);
-    transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-      width 0.3s;
+    transition: all 0.3s; // transition-all test
 
     &:not([disabled]) {
       cursor: pointer;
@@ -223,8 +220,7 @@
     border-radius: 100px;
     font-size: 0.9rem;
     font-weight: 500;
-    transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-      width 0.3s;
+    transition: all 0.3s; // transition-all test
 
     &.is-purple {
       background: var(--primary);

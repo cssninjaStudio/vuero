@@ -64,8 +64,7 @@ const props = defineProps<{
   border-right: 1px solid var(--fade-grey);
   z-index: 100;
   transform: translateX(-100%);
-  transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-    width 0.3s;
+  transition: all 0.3s; // transition-all test
 
   &.is-active {
     transform: translateX(0);
@@ -90,8 +89,7 @@ const props = defineProps<{
           position: relative;
           transform: rotate(0);
           opacity: 100%;
-          transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-            width 0.3s;
+          transition: all 0.3s; // transition-all test
 
           &:hover,
           &.is-active {
@@ -113,8 +111,7 @@ const props = defineProps<{
             align-items: center;
             height: 24px;
             width: 24px;
-            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-              width 0.3s;
+            transition: all 0.3s; // transition-all test
           }
 
           &:hover svg,
@@ -143,8 +140,7 @@ const props = defineProps<{
         #open-filters {
           svg {
             transform: rotate(0);
-            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-              width 0.3s;
+            transition: all 0.3s; // transition-all test
           }
 
           &:hover {

@@ -522,8 +522,7 @@
           display: flex;
           justify-content: center;
           flex: 0;
-          transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-            width 0.3s;
+          transition: all 0.3s; // transition-all test
 
           &::before {
             content: '';
@@ -533,8 +532,7 @@
             border: 1px solid var(--fade-grey);
             transform: rotate(45deg);
             border-radius: 10px;
-            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-              width 0.3s;
+            transition: all 0.3s; // transition-all test
           }
 
           i {

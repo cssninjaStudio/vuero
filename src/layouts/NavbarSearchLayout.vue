@@ -301,7 +301,7 @@ watch(
     <ActivityPanel />
     <TaskPanel />
 
-    <div class="view-wrapper has-top-nav">
+    <VViewWrapper top-nav>
       <div class="page-content-wrapper">
         <template v-if="props.nowrap">
           <slot></slot>
@@ -330,7 +330,7 @@ watch(
           </div>
         </div>
       </div>
-    </div>
+    </VViewWrapper>
   </div>
 </template>
 

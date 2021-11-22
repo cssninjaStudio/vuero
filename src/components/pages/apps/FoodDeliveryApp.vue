@@ -459,8 +459,7 @@ onUnmounted(() => {
             padding: 10px;
             margin: 0 10px;
             cursor: pointer;
-            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-              width 0.3s;
+            transition: all 0.3s; // transition-all test
 
             &.is-active {
               background: var(--primary);
@@ -539,8 +538,7 @@ onUnmounted(() => {
           border-radius: 100px;
           cursor: pointer;
           color: var(--light-text);
-          transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-            width 0.3s;
+          transition: all 0.3s; // transition-all test
           z-index: 25;
           outline: none !important;
 
@@ -572,8 +570,7 @@ onUnmounted(() => {
             height: 16px;
             width: 16px;
             color: var(--primary);
-            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-              width 0.3s;
+            transition: all 0.3s; // transition-all test
           }
         }
       }
@@ -705,8 +702,7 @@ onUnmounted(() => {
     .sticky-panel {
       position: fixed;
       height: calc(100% - 100px);
-      transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-        width 0.3s;
+      transition: all 0.3s; // transition-all test
       width: 336px;
 
       &.is-stretched {

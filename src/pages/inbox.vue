@@ -895,8 +895,7 @@ useHead({
       left: 52%;
       height: 100%;
       width: 48%;
-      transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-        width 0.3s;
+      transition: all 0.3s; // transition-all test
 
       .header-area {
         height: 80px;
@@ -1034,8 +1033,7 @@ useHead({
             background: var(--white);
             border-radius: 100px;
             cursor: pointer;
-            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-              width 0.3s;
+            transition: all 0.3s; // transition-all test
 
             &:hover {
               border-color: var(--secondary);
@@ -1209,8 +1207,7 @@ useHead({
   box-shadow: none;
   border-radius: var(--radius-rounded);
   border: 1px solid transparent;
-  transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-    width 0.3s;
+  transition: all 0.3s; // transition-all test
 
   &:hover {
     border-color: var(--fade-grey-dark-4);
@@ -1315,8 +1312,7 @@ useHead({
   border-left: 1px solid var(--fade-grey);
   z-index: 10;
   transform: translateX(100%);
-  transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-    width 0.3s;
+  transition: all 0.3s; // transition-all test
 
   &.is-active {
     transform: translateX(0);
@@ -1413,8 +1409,7 @@ useHead({
             background: var(--white);
             border: 1px solid var(--fade-grey-dark-3);
             border-radius: var(--radius-rounded);
-            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-              width 0.3s;
+            transition: all 0.3s; // transition-all test
 
             &:hover {
               box-shadow: var(--light-box-shadow);
@@ -1983,8 +1978,7 @@ Dark mode
     left: unset !important;
     width: 68% !important;
     transform: translateX(100%);
-    transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-      width 0.3s;
+    transition: all 0.3s; // transition-all test
 
     &.tablet-active {
       transform: translateX(0) !important;

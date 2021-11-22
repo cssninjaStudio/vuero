@@ -142,17 +142,6 @@ Responsive styles
     }
   }
 
-  // Layout
-  .view-wrapper {
-    width: calc(100% - 60px) !important;
-    margin-left: 60px !important;
-
-    &.is-pushed-messages {
-      margin-left: 140px !important;
-      width: calc(100% - 140px) !important;
-    }
-  }
-
   .page-title {
     &.is-project-details {
       .vuero-hamburger {
@@ -271,20 +260,6 @@ Responsive styles
 
     .panel-close {
       display: flex !important;
-    }
-  }
-
-  // Layout
-  .view-wrapper {
-    width: 100% !important;
-    margin-left: 0 !important;
-    margin-top: 60px !important;
-    padding-left: 40px;
-    padding-right: 40px;
-
-    &.is-explore {
-      padding-left: 0 !important;
-      padding-right: 0 !important;
     }
   }
 
@@ -444,13 +419,6 @@ Responsive styles
   .main-sidebar,
   .sidebar {
     display: none;
-  }
-
-  // Layout
-  .view-wrapper {
-    width: 100% !important;
-    margin-left: 0 !important;
-    margin-top: 60px !important;
   }
 
   .page-title {

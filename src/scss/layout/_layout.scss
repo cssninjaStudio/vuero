@@ -60,94 +60,6 @@ body {
 }
 
 /* ==========================================================================
-2. View Wrapper
-========================================================================== */
-
-.view-wrapper {
-  &.has-top-nav {
-    margin-left: 0 !important;
-    width: 100% !important;
-    padding-top: 1px;
-
-    .is-stuck {
-      position: fixed;
-      top: 78px;
-      left: 0;
-      margin-left: 0;
-      border-left: 0 !important;
-      width: 100%;
-      z-index: 14;
-
-      &.stuck-header {
-        padding-right: 20px !important;
-
-        .form-head-inner,
-        .form-header-inner {
-          max-width: 1240px;
-          margin: 0 auto;
-        }
-      }
-    }
-
-    .page-title {
-      display: none;
-    }
-
-    .has-navbar-spacing {
-      margin-top: -20px;
-    }
-
-    .is-navbar-md {
-      margin-top: 90px;
-    }
-
-    .is-navbar-lg {
-      margin-top: 110px;
-    }
-
-    .is-navbar-xl {
-      margin-top: 130px;
-    }
-  }
-}
-
-.view-wrapper {
-  position: relative;
-  height: 100%;
-  min-height: 100vh;
-  width: calc(100% - 80px);
-  padding: 0 0 60px;
-  margin-left: 80px;
-  background: var(--background-grey);
-  transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-    width 0.3s;
-
-  &.is-pushed-full {
-    margin-left: 320px;
-    width: calc(100% - 320px);
-
-    .is-stuck {
-      margin-left: 320px;
-      width: calc(100% - 320px);
-    }
-  }
-
-  &.is-pushed-messages {
-    margin-left: 160px !important;
-    width: calc(100% - 160px) !important;
-  }
-
-  .is-stuck {
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin-left: 80px;
-    width: calc(100% - 80px);
-    z-index: 14;
-  }
-}
-
-/* ==========================================================================
 3. Page Content
 ========================================================================== */
 
@@ -365,8 +277,7 @@ body {
     width: 34px;
     border-radius: var(--radius-rounded);
     margin: 0 4px;
-    transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-      width 0.3s;
+    transition: all 0.3s; // transition-all test
 
     &:hover {
       background: var(--white);
@@ -408,8 +319,7 @@ body {
   width: 100%;
   min-height: 100vh;
   background: var(--lighter-grey);
-  transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-    width 0.3s;
+  transition: all 0.3s; // transition-all test
 
   &.light {
     background: var(--white);
@@ -611,20 +521,6 @@ body {
 ========================================================================== */
 
 @media (max-width: 767px) {
-  .view-wrapper {
-    &.has-top-nav {
-      .is-navbar-md,
-      .is-navbar-lg,
-      .is-navbar-xl {
-        margin-top: 0;
-      }
-
-      .page-title {
-        display: flex !important;
-      }
-    }
-  }
-
   .page-title {
     .toolbar {
       .control {
@@ -635,20 +531,6 @@ body {
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  .view-wrapper {
-    &.has-top-nav {
-      .is-navbar-md,
-      .is-navbar-lg,
-      .is-navbar-xl {
-        margin-top: 0;
-      }
-
-      .page-title {
-        display: flex !important;
-      }
-    }
-  }
-
   .page-content-wrapper {
     .page-content {
       padding: 0;

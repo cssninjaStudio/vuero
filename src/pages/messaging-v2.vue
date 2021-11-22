@@ -676,8 +676,7 @@ $overlay-bg-dark: linear-gradient(
             width: 18px;
             height: 18px;
             color: var(--light-text);
-            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-              width 0.3s;
+            transition: all 0.3s; // transition-all test
           }
         }
 
@@ -1100,8 +1099,7 @@ $overlay-bg-dark: linear-gradient(
           font-size: 15px;
           margin: 0 12px;
           width: 100%;
-          transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-            width 0.3s;
+          transition: all 0.3s; // transition-all test
 
           &::placeholder {
             color: $input-chat-color;
@@ -1144,8 +1142,7 @@ $overlay-bg-dark: linear-gradient(
             display: flex;
             justify-content: center;
             align-items: center;
-            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-              width 0.3s;
+            transition: all 0.3s; // transition-all test
 
             svg {
               color: var(--placeholder);
@@ -1216,8 +1213,7 @@ $overlay-bg-dark: linear-gradient(
             display: flex;
             justify-content: center;
             align-items: center;
-            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-              width 0.3s;
+            transition: all 0.3s; // transition-all test
 
             svg {
               color: var(--placeholder);
@@ -1370,8 +1366,7 @@ $overlay-bg-dark: linear-gradient(
 
       .chat-side-content {
         text-align: center;
-        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-          width 0.3s;
+        transition: all 0.3s; // transition-all test
         padding: 20px 10px;
 
         .user-pic {
@@ -1501,8 +1496,7 @@ $overlay-bg-dark: linear-gradient(
         background: var(--white);
         z-index: 10;
         transform: translateX(-100%);
-        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-          width 0.3s;
+        transition: all 0.3s; // transition-all test
 
         &.is-active {
           transform: translateX(0);
@@ -1548,8 +1542,7 @@ $overlay-bg-dark: linear-gradient(
         background: var(--white);
         z-index: 10;
         transform: translateX(-100%);
-        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-          width 0.3s;
+        transition: all 0.3s; // transition-all test
 
         &.is-active {
           transform: translateX(0);

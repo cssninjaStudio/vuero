@@ -432,8 +432,7 @@ Form Layouts
     .form-header {
       padding: 12px 20px;
       border-bottom: 1px solid var(--fade-grey-dark-3);
-      transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-        width 0.3s;
+      transition: all 0.3s; // transition-all test
 
       &.is-stuck {
         background: var(--white);

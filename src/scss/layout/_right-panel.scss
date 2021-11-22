@@ -53,8 +53,7 @@
     opacity: 0%;
     pointer-events: none;
     z-index: 101;
-    transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-      width 0.3s;
+    transition: all 0.3s; // transition-all test
   }
 
   .right-panel {
@@ -66,8 +65,7 @@
     background: var(--white);
     transform: translateX(100%);
     z-index: 102;
-    transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-      width 0.3s;
+    transition: all 0.3s; // transition-all test
 
     .right-panel-head {
       position: relative;
@@ -95,8 +93,7 @@
         justify-content: center;
         align-items: center;
         border-radius: var(--radius-rounded);
-        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-          width 0.3s;
+        transition: all 0.3s; // transition-all test
 
         &:hover {
           background: var(--fade-grey);
@@ -347,8 +344,7 @@
             background: var(--white);
             border: 1px solid var(--fade-grey-dark-3);
             border-radius: var(--radius-rounded);
-            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-              width 0.3s;
+            transition: all 0.3s; // transition-all test
 
             &:hover {
               border-color: var(--primary);

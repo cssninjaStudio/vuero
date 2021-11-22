@@ -50,8 +50,7 @@
         width: calc(50% - 20px);
         max-width: calc(50% - 20px);
         margin: 10px;
-        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-          width 0.3s;
+        transition: all 0.3s; // transition-all test
 
         &:hover {
           box-shadow: var(--light-box-shadow);
@@ -95,8 +94,7 @@
             height: 100px;
             filter: grayscale(1);
             opacity: 60%;
-            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-              width 0.3s;
+            transition: all 0.3s; // transition-all test
           }
         }
 

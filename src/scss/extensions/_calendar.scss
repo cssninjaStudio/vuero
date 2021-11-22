@@ -145,8 +145,7 @@ $calendar-legacy-date-padding: 0.4rem 0 !default;
         position: relative;
         text-align: center;
         text-decoration: none;
-        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-          width 0.3s;
+        transition: all 0.3s; // transition-all test
         vertical-align: middle;
         white-space: nowrap;
         width: 2.2rem;

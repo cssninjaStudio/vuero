@@ -174,8 +174,7 @@ const setStep = (target: number) => {
   height: 60px;
   background: var(--white);
   padding: 0 20px;
-  transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-    width 0.3s;
+  transition: all 0.3s; // transition-all test
   z-index: 99;
 
   .wizard-brand {
@@ -254,8 +253,7 @@ const setStep = (target: number) => {
       border: 1px solid var(--fade-grey-dark-3);
       box-shadow: var(--light-box-shadow);
       background: var(--white);
-      transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-        width 0.3s;
+      transition: all 0.3s; // transition-all test
 
       .dark-mode {
         transform: scale(0.6);
@@ -296,8 +294,7 @@ const setStep = (target: number) => {
         width: 18px;
         height: 18px;
         color: var(--light-text);
-        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-          width 0.3s;
+        transition: all 0.3s; // transition-all test
       }
     }
 

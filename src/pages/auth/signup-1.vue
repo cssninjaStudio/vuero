@@ -590,8 +590,7 @@ onUnmounted(() => {
     bottom: 0;
     display: block;
     width: 90%;
-    transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-      width 0.3s;
+    transition: all 0.3s; // transition-all test
 
     &.faded {
       opacity: 0%;
@@ -646,8 +645,7 @@ onUnmounted(() => {
           height: 60px;
           padding-left: 10px;
           border-radius: 8px;
-          transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-            width 0.3s;
+          transition: all 0.3s; // transition-all test
 
           &:focus {
             background: var(--fade-grey-light-6);
@@ -675,8 +673,7 @@ onUnmounted(() => {
           color: var(--dark-text);
           font-weight: 500;
           z-index: 2;
-          transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-            width 0.3s;
+          transition: all 0.3s; // transition-all test
         }
 
         .autv-icon {
@@ -692,8 +689,7 @@ onUnmounted(() => {
           i {
             font-size: 24px;
             color: var(--placeholder);
-            transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-              width 0.3s;
+            transition: all 0.3s; // transition-all test
           }
         }
 
@@ -885,8 +881,7 @@ onUnmounted(() => {
           background: var(--white);
           border: 1px solid var(--fade-grey-dark-3);
           border-radius: var(--radius-large);
-          transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-            width 0.3s;
+          transition: all 0.3s; // transition-all test
 
           i {
             font-size: 2rem;
@@ -977,8 +972,7 @@ onUnmounted(() => {
         border-radius: var(--radius-rounded);
         border: 1px solid var(--fade-grey-dark-4);
         z-index: 5;
-        transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-          width 0.3s;
+        transition: all 0.3s; // transition-all test
         cursor: pointer;
 
         &:hover {
@@ -1022,8 +1016,7 @@ onUnmounted(() => {
       width: 70px;
       border-radius: var(--radius-rounded);
       margin: 0 auto;
-      transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-        width 0.3s;
+      transition: all 0.3s; // transition-all test
     }
   }
 
@@ -1073,8 +1066,7 @@ onUnmounted(() => {
     border-radius: 100px;
     cursor: pointer;
     color: var(--dark-text);
-    transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-      width 0.3s;
+    transition: all 0.3s; // transition-all test
     z-index: 25;
     opacity: 0%;
 
@@ -1082,8 +1074,7 @@ onUnmounted(() => {
       height: 16px;
       width: 16px;
       color: var(--primary);
-      transition: color 0.3s, background-color 0.3s, border-color 0.3s, height 0.3s,
-        width 0.3s;
+      transition: all 0.3s; // transition-all test
     }
 
     &:hover {
