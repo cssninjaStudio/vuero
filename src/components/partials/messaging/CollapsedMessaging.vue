@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useSidebar } from '/@src/stores/sidebar'
-import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+import { onceImageErrored } from '/@src/utils/via-placeholder'
 
 const emit = defineEmits<{
   (e: 'addConversation'): void
@@ -65,7 +65,7 @@ const sidebar = useSidebar()
               class="is-user"
               :src="conversation.avatar"
               alt=""
-              @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+              @error.once="(event) => onceImageErrored(event, '150x150')"
             />
           </div>
         </li>

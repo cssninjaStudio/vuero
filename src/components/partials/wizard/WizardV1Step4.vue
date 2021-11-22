@@ -9,7 +9,7 @@ Dropzone.autoDiscover = false
 import { nextTick, onUnmounted, ref, watch } from 'vue'
 
 import { useWizard } from '/@src/stores/wizard'
-import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+import { onceImageErrored } from '/@src/utils/via-placeholder'
 import sleep from '/@src/utils/sleep'
 
 const isUploading = ref(false)
@@ -307,7 +307,7 @@ watch(previewTemplate, () => {
               <img
                 data-dz-thumbnail
                 alt=""
-                @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+                @error.once="(event) => onceImageErrored(event, '150x150')"
               />
             </div>
             <div class="list-item-meta">

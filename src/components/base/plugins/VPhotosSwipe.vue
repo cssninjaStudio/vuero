@@ -9,7 +9,7 @@ let instances = 0
 import { ref, onMounted } from 'vue'
 import PhotoSwipe from 'photoswipe'
 import PhotoSwipeUI_Default from 'photoswipe/dist/photoswipe-ui-default'
-import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+import { onceImageErrored } from '/@src/utils/via-placeholder'
 
 export interface VPhotoSwipeItem {
   src: string
@@ -329,8 +329,7 @@ const resetAngle = () => {
           :alt="item.alt"
           itemprop="thumbnail"
           @error.once="
-            (event) =>
-              useViaPlaceholderError(event, `${item.w || '100'}x${item.h || '100'}`)
+            (event) => onceImageErrored(event, `${item.w || '100'}x${item.h || '100'}`)
           "
         />
       </a>

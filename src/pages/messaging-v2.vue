@@ -5,7 +5,7 @@ import { computed, ref } from 'vue'
 
 import type { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
 import useDropdown from '/@src/composable/useDropdown'
-import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+import { onceImageErrored } from '/@src/utils/via-placeholder'
 
 export interface conversationData {
   id: number
@@ -217,7 +217,7 @@ useHead({
                   class="avatar"
                   src="/images/avatars/svg/vuero-1.svg"
                   alt=""
-                  @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+                  @error.once="(event) => onceImageErrored(event, '150x150')"
                 />
               </div>
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-down"></i>
@@ -464,62 +464,62 @@ useHead({
                 <img
                   src="/demo/photos/demo-apps/1.jpg"
                   alt=""
-                  @error.once="(event) => useViaPlaceholderError(event, '1600x900')"
+                  @error.once="(event) => onceImageErrored(event, '1600x900')"
                 />
                 <img
                   src="/demo/photos/demo-apps/2.jpg"
                   alt=""
-                  @error.once="(event) => useViaPlaceholderError(event, '1600x900')"
+                  @error.once="(event) => onceImageErrored(event, '1600x900')"
                 />
                 <img
                   src="/demo/photos/demo-apps/3.jpg"
                   alt=""
-                  @error.once="(event) => useViaPlaceholderError(event, '1600x900')"
+                  @error.once="(event) => onceImageErrored(event, '1600x900')"
                 />
                 <img
                   src="/demo/photos/demo-apps/4.jpg"
                   alt=""
-                  @error.once="(event) => useViaPlaceholderError(event, '1600x900')"
+                  @error.once="(event) => onceImageErrored(event, '1600x900')"
                 />
                 <img
                   src="/demo/photos/demo-apps/5.jpg"
                   alt=""
-                  @error.once="(event) => useViaPlaceholderError(event, '1600x900')"
+                  @error.once="(event) => onceImageErrored(event, '1600x900')"
                 />
                 <img
                   src="/demo/photos/demo-apps/6.jpg"
                   alt=""
-                  @error.once="(event) => useViaPlaceholderError(event, '1600x900')"
+                  @error.once="(event) => onceImageErrored(event, '1600x900')"
                 />
                 <img
                   src="/demo/photos/demo-apps/7.jpg"
                   alt=""
-                  @error.once="(event) => useViaPlaceholderError(event, '1600x900')"
+                  @error.once="(event) => onceImageErrored(event, '1600x900')"
                 />
                 <img
                   src="/demo/photos/demo-apps/8.jpg"
                   alt=""
-                  @error.once="(event) => useViaPlaceholderError(event, '1600x900')"
+                  @error.once="(event) => onceImageErrored(event, '1600x900')"
                 />
                 <img
                   src="/demo/photos/demo-apps/9.jpg"
                   alt=""
-                  @error.once="(event) => useViaPlaceholderError(event, '1600x900')"
+                  @error.once="(event) => onceImageErrored(event, '1600x900')"
                 />
                 <img
                   src="/demo/photos/demo-apps/10.jpg"
                   alt=""
-                  @error.once="(event) => useViaPlaceholderError(event, '1600x900')"
+                  @error.once="(event) => onceImageErrored(event, '1600x900')"
                 />
                 <img
                   src="/demo/photos/demo-apps/11.jpg"
                   alt=""
-                  @error.once="(event) => useViaPlaceholderError(event, '1600x900')"
+                  @error.once="(event) => onceImageErrored(event, '1600x900')"
                 />
                 <img
                   src="/demo/photos/demo-apps/12.jpg"
                   alt=""
-                  @error.once="(event) => useViaPlaceholderError(event, '1600x900')"
+                  @error.once="(event) => onceImageErrored(event, '1600x900')"
                 />
               </div>
               <a class="view-more">View More</a>

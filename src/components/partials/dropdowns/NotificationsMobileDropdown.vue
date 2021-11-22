@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import useDropdown from '/@src/composable/useDropdown'
-import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+import { onceImageErrored } from '/@src/utils/via-placeholder'
 
 const dropdownElement = ref<HTMLElement>()
 const dropdown = useDropdown(dropdownElement)
@@ -34,7 +34,7 @@ const dropdown = useDropdown(dropdownElement)
                   class="user-photo"
                   alt=""
                   src="/images/avatars/svg/vuero-4.svg"
-                  @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+                  @error.once="(event) => onceImageErrored(event, '150x150')"
                 />
               </div>
               <div class="user-content">
@@ -52,7 +52,7 @@ const dropdown = useDropdown(dropdownElement)
                   class="user-photo"
                   alt=""
                   src="/images/avatars/svg/vuero-2.svg"
-                  @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+                  @error.once="(event) => onceImageErrored(event, '150x150')"
                 />
               </div>
               <div class="user-content">
@@ -70,7 +70,7 @@ const dropdown = useDropdown(dropdownElement)
                   class="user-photo"
                   alt=""
                   src="/images/avatars/svg/vuero-5.svg"
-                  @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+                  @error.once="(event) => onceImageErrored(event, '150x150')"
                 />
               </div>
               <div class="user-content">
@@ -88,7 +88,7 @@ const dropdown = useDropdown(dropdownElement)
                   class="user-photo"
                   alt=""
                   src="/images/avatars/svg/vuero-9.svg"
-                  @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+                  @error.once="(event) => onceImageErrored(event, '150x150')"
                 />
               </div>
               <div class="user-content">

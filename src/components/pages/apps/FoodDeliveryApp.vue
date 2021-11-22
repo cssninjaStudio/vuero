@@ -8,7 +8,7 @@ import FoodWidget from '/@src/assets/illustrations/dashboards/food/widget.svg'
 import * as foodDelivery from '/@src/data/dashboards/food-delivery'
 import { followersStats } from '/@src/data/widgets/ui/followers'
 import { iconList } from '/@src/data/widgets/ui/menuList'
-import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+import { onceImageErrored } from '/@src/utils/via-placeholder'
 
 const activeSection = ref('cart')
 
@@ -129,7 +129,7 @@ onUnmounted(() => {
                     <img
                       :src="restaurant.picture"
                       alt=""
-                      @error.once="(event) => useViaPlaceholderError(event, '800x450')"
+                      @error.once="(event) => onceImageErrored(event, '800x450')"
                     />
                     <div class="timer">
                       <div>
@@ -145,7 +145,7 @@ onUnmounted(() => {
                         alt=""
                         @error.once="
                           (event) =>
-                            useViaPlaceholderError(event, '                            ')
+                            onceImageErrored(event, '                            ')
                         "
                       />
                     </div>

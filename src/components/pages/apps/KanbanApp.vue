@@ -9,7 +9,7 @@ import dragula from 'dragula'
 import { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
 
 import { tasks } from '/@src/data/apps/kanban'
-import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+import { onceImageErrored } from '/@src/utils/via-placeholder'
 
 export interface KanbanTask {
   id: string
@@ -232,7 +232,7 @@ onMounted(() => {
                         class="task-owner"
                         :src="task.participants[0].picture"
                         alt=""
-                        @error.once="(event) => useViaPlaceholderError(event, '62x62')"
+                        @error.once="(event) => onceImageErrored(event, '62x62')"
                       />
                     </div>
                   </div>

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
-import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+import { onceImageErrored } from '/@src/utils/via-placeholder'
 
 useHead({
   title: 'Utility Status - Sidebar - Vuero',
@@ -41,7 +41,7 @@ useHead({
               <img
                 src="/demo/photos/animaticons/lightbulb.gif"
                 alt=""
-                @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+                @error.once="(event) => onceImageErrored(event, '150x150')"
               />
             </div>
             <div class="progress-wrap">
@@ -65,7 +65,7 @@ useHead({
               <img
                 src="/demo/photos/animaticons/image.gif"
                 alt=""
-                @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+                @error.once="(event) => onceImageErrored(event, '150x150')"
               />
             </div>
             <div class="progress-wrap">
@@ -89,7 +89,7 @@ useHead({
               <img
                 src="/demo/photos/animaticons/search.gif"
                 alt=""
-                @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+                @error.once="(event) => onceImageErrored(event, '150x150')"
               />
             </div>
             <div class="progress-wrap">
@@ -113,7 +113,7 @@ useHead({
               <img
                 src="/demo/photos/animaticons/diamond.gif"
                 alt=""
-                @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+                @error.once="(event) => onceImageErrored(event, '150x150')"
               />
             </div>
             <div class="progress-wrap">
@@ -137,7 +137,7 @@ useHead({
               <img
                 src="/demo/photos/animaticons/chart.gif"
                 alt=""
-                @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+                @error.once="(event) => onceImageErrored(event, '150x150')"
               />
             </div>
             <div class="progress-wrap">
@@ -161,7 +161,7 @@ useHead({
               <img
                 src="/demo/photos/animaticons/rocket.gif"
                 alt=""
-                @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+                @error.once="(event) => onceImageErrored(event, '150x150')"
               />
             </div>
             <div class="progress-wrap">
@@ -185,7 +185,7 @@ useHead({
               <img
                 src="/demo/photos/animaticons/check.gif"
                 alt=""
-                @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+                @error.once="(event) => onceImageErrored(event, '150x150')"
               />
             </div>
             <div class="progress-wrap">

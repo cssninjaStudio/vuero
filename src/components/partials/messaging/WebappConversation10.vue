@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+import { onceImageErrored } from '/@src/utils/via-placeholder'
 
 const emit = defineEmits(['toggleMobileConversation'])
 </script>
@@ -24,7 +24,7 @@ const emit = defineEmits(['toggleMobileConversation'])
           src="/demo/avatars/19.jpg"
           alt=""
           data-user-popover="17"
-          @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+          @error.once="(event) => onceImageErrored(event, '150x150')"
         />
       </div>
     </div>
@@ -36,7 +36,7 @@ const emit = defineEmits(['toggleMobileConversation'])
             src="/demo/avatars/19.jpg"
             alt=""
             data-user-popover="5"
-            @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+            @error.once="(event) => onceImageErrored(event, '150x150')"
           />
           <div class="chat-msg-date">Sent at 5:19pm</div>
         </div>
@@ -54,7 +54,7 @@ const emit = defineEmits(['toggleMobileConversation'])
             src="/images/avatars/svg/vuero-1.svg"
             alt=""
             data-user-popover="3"
-            @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+            @error.once="(event) => onceImageErrored(event, '150x150')"
           />
           <div class="chat-msg-date">Sent at 6:32pm</div>
         </div>

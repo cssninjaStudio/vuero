@@ -4,7 +4,7 @@ import { computed, ref } from 'vue'
 
 import useNotyf from '/@src/composable/useNotyf'
 import sleep from '/@src/utils/sleep'
-import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+import { onceImageErrored } from '/@src/utils/via-placeholder'
 
 const isUploading = ref(false)
 const isLoading = ref(false)
@@ -90,7 +90,7 @@ const onSave = async () => {
               class="avatar"
               src="/images/avatars/svg/vuero-1.svg"
               alt=""
-              @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+              @error.once="(event) => onceImageErrored(event, '150x150')"
             />
             <VFilePond
               v-else

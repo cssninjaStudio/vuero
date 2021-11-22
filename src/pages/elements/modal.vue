@@ -4,7 +4,7 @@ import { ref } from 'vue'
 
 import useMarkdownToc from '/@src/composable/useMarkdownToc'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
-import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+import { onceImageErrored } from '/@src/utils/via-placeholder'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
@@ -477,9 +477,7 @@ useHead({
                         <img
                           src="/images/avatars/placeholder.jpg"
                           alt=""
-                          @error.once="
-                            (event) => useViaPlaceholderError(event, '150x150')
-                          "
+                          @error.once="(event) => onceImageErrored(event, '150x150')"
                         />
                         <span class="selected-item">Add people</span>
                       </div>
@@ -500,7 +498,7 @@ useHead({
                                 src="/demo/avatars/22.jpg"
                                 alt=""
                                 @error.once="
-                                  (event) => useViaPlaceholderError(event, '150x150')
+                                  (event) => onceImageErrored(event, '150x150')
                                 "
                               />
                             </span>
@@ -519,7 +517,7 @@ useHead({
                                 src="/images/avatars/svg/vuero-1.svg"
                                 alt=""
                                 @error.once="
-                                  (event) => useViaPlaceholderError(event, '150x150')
+                                  (event) => onceImageErrored(event, '150x150')
                                 "
                               />
                             </span>
@@ -538,7 +536,7 @@ useHead({
                                 src="/demo/avatars/7.jpg"
                                 alt=""
                                 @error.once="
-                                  (event) => useViaPlaceholderError(event, '150x150')
+                                  (event) => onceImageErrored(event, '150x150')
                                 "
                               />
                             </span>
@@ -557,7 +555,7 @@ useHead({
                                 src="/demo/avatars/25.jpg"
                                 alt=""
                                 @error.once="
-                                  (event) => useViaPlaceholderError(event, '150x150')
+                                  (event) => onceImageErrored(event, '150x150')
                                 "
                               />
                             </span>
@@ -576,7 +574,7 @@ useHead({
                                 src="/demo/avatars/12.jpg"
                                 alt=""
                                 @error.once="
-                                  (event) => useViaPlaceholderError(event, '150x150')
+                                  (event) => onceImageErrored(event, '150x150')
                                 "
                               />
                             </span>
@@ -711,9 +709,7 @@ useHead({
                         <img
                           src="/images/avatars/placeholder.jpg"
                           alt=""
-                          @error.once="
-                            (event) => useViaPlaceholderError(event, '150x150')
-                          "
+                          @error.once="(event) => onceImageErrored(event, '150x150')"
                         />
                         <span class="selected-item">Add people</span>
                       </div>
@@ -734,7 +730,7 @@ useHead({
                                 src="/demo/avatars/22.jpg"
                                 alt=""
                                 @error.once="
-                                  (event) => useViaPlaceholderError(event, '150x150')
+                                  (event) => onceImageErrored(event, '150x150')
                                 "
                               />
                             </span>
@@ -753,7 +749,7 @@ useHead({
                                 src="/images/avatars/svg/vuero-1.svg"
                                 alt=""
                                 @error.once="
-                                  (event) => useViaPlaceholderError(event, '150x150')
+                                  (event) => onceImageErrored(event, '150x150')
                                 "
                               />
                             </span>
@@ -772,7 +768,7 @@ useHead({
                                 src="/demo/avatars/7.jpg"
                                 alt=""
                                 @error.once="
-                                  (event) => useViaPlaceholderError(event, '150x150')
+                                  (event) => onceImageErrored(event, '150x150')
                                 "
                               />
                             </span>
@@ -791,7 +787,7 @@ useHead({
                                 src="/demo/avatars/25.jpg"
                                 alt=""
                                 @error.once="
-                                  (event) => useViaPlaceholderError(event, '150x150')
+                                  (event) => onceImageErrored(event, '150x150')
                                 "
                               />
                             </span>
@@ -810,7 +806,7 @@ useHead({
                                 src="/demo/avatars/12.jpg"
                                 alt=""
                                 @error.once="
-                                  (event) => useViaPlaceholderError(event, '150x150')
+                                  (event) => onceImageErrored(event, '150x150')
                                 "
                               />
                             </span>

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { h } from 'vue'
 
-import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+import { onceImageErrored } from '/@src/utils/via-placeholder'
 import { flexRowsBasic as data } from '/@src/data/documentation/table'
 import VTag from '/@src/components/base/tags/VTag.vue'
 import FlexTableDropdown from '/@src/components/partials/dropdowns/FlexTableDropdown.vue'
@@ -79,7 +79,7 @@ const columns = {
             class="project-avatar"
             src="/images/icons/logos/slicer.svg"
             alt=""
-            @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+            @error.once="(event) => onceImageErrored(event, '150x150')"
           />
           <h3>The Slicer project</h3>
           <p>Design project</p>
@@ -95,7 +95,7 @@ const columns = {
             class="project-avatar"
             src="/images/icons/logos/metamovies.svg"
             alt=""
-            @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+            @error.once="(event) => onceImageErrored(event, '150x150')"
           />
           <h3>Metamovies reworked</h3>
           <p>Design project</p>
@@ -111,7 +111,7 @@ const columns = {
             class="project-avatar"
             src="/@src/assets/illustrations/dashboards/flights/company1.svg"
             alt=""
-            @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+            @error.once="(event) => onceImageErrored(event, '150x150')"
           />
           <h3>Supreme Flights app</h3>
           <p>Software project</p>
@@ -127,7 +127,7 @@ const columns = {
             class="project-avatar"
             src="/images/icons/logos/fastpizza.svg"
             alt=""
-            @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+            @error.once="(event) => onceImageErrored(event, '150x150')"
           />
           <h3>Fastpizza delivery app</h3>
           <p>Software project</p>
@@ -143,7 +143,7 @@ const columns = {
             class="project-avatar"
             src="/images/icons/logos/drop.svg"
             alt=""
-            @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+            @error.once="(event) => onceImageErrored(event, '150x150')"
           />
           <h3>Drop website redesign</h3>
           <p>Design project</p>

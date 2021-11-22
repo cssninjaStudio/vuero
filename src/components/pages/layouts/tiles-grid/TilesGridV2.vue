@@ -2,7 +2,7 @@
 import { computed, ref } from 'vue'
 
 import { files } from '/@src/data/layouts/tile-grid-v2'
-import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+import { onceImageErrored } from '/@src/utils/via-placeholder'
 
 const filters = ref('')
 
@@ -93,7 +93,7 @@ const optionsSingle = [
               <img
                 :src="item.icon"
                 alt=""
-                @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+                @error.once="(event) => onceImageErrored(event, '150x150')"
               />
               <div class="meta">
                 <span class="dark-inverted">{{ item.name }}</span>

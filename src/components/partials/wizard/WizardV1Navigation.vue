@@ -4,7 +4,7 @@ import { ref } from 'vue'
 import useDropdown from '/@src/composable/useDropdown'
 import { useWizard } from '/@src/stores/wizard'
 import { useDarkmode } from '/@src/stores/darkmode'
-import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+import { onceImageErrored } from '/@src/utils/via-placeholder'
 
 const darkmode = useDarkmode()
 const dropdownElement1 = ref<HTMLElement>()
@@ -125,7 +125,7 @@ const setStep = (target: number) => {
             class="avatar"
             src="/images/avatars/svg/vuero-1.svg"
             alt=""
-            @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+            @error.once="(event) => onceImageErrored(event, '150x150')"
           />
         </div>
         <i aria-hidden="true" class="iconify" data-icon="feather:chevron-down"></i>

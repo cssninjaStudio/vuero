@@ -3,7 +3,7 @@ import { computed, ref } from 'vue'
 
 import type { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
 import * as listData from '/@src/data/layouts/view-list-v4'
-import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+import { onceImageErrored } from '/@src/utils/via-placeholder'
 
 export interface RecipeData {
   icon: string
@@ -118,7 +118,7 @@ const filteredData = computed(() => {
                   class="avatar"
                   :src="item.icon"
                   alt=""
-                  @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+                  @error.once="(event) => onceImageErrored(event, '150x150')"
                 />
                 <div class="meta-left">
                   <h3>
@@ -126,7 +126,7 @@ const filteredData = computed(() => {
                       class="avatar"
                       :src="item.author.avatar"
                       alt=""
-                      @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+                      @error.once="(event) => onceImageErrored(event, '150x150')"
                     />
                     <span>{{ item.author.name }}</span>
                   </h3>

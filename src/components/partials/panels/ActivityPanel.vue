@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { usePanels } from '/@src/stores/panels'
-import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+import { onceImageErrored } from '/@src/utils/via-placeholder'
 
 type TabId = 'team' | 'projects' | 'schedule'
 
@@ -137,7 +137,7 @@ const activeTab = ref<TabId>('team')
                   class="project-avatar"
                   src="/images/icons/logos/slicer.svg"
                   alt=""
-                  @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+                  @error.once="(event) => onceImageErrored(event, '150x150')"
                 />
                 <div class="meta">
                   <span>The slicer project</span>
@@ -174,7 +174,7 @@ const activeTab = ref<TabId>('team')
                   class="project-avatar"
                   src="/images/icons/logos/metamovies.svg"
                   alt=""
-                  @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+                  @error.once="(event) => onceImageErrored(event, '150x150')"
                 />
                 <div class="meta">
                   <span>Metamovies reworked</span>
@@ -210,7 +210,7 @@ const activeTab = ref<TabId>('team')
                   class="project-avatar"
                   src="/images/icons/logos/fastpizza.svg"
                   alt=""
-                  @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+                  @error.once="(event) => onceImageErrored(event, '150x150')"
                 />
                 <div class="meta">
                   <span>Fast Pizza redesign</span>
@@ -268,7 +268,7 @@ const activeTab = ref<TabId>('team')
                     class="avatar"
                     src="/demo/avatars/7.jpg"
                     alt=""
-                    @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+                    @error.once="(event) => onceImageErrored(event, '150x150')"
                   />
                 </div>
                 <div class="timeline-content">

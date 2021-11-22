@@ -2,7 +2,7 @@
 import { computed, ref } from 'vue'
 
 import { offers } from '/@src/data/layouts/view-list-v3'
-import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+import { onceImageErrored } from '/@src/utils/via-placeholder'
 
 type TabId = 'all' | 'saved'
 const activeTab = ref<TabId>('all')
@@ -96,7 +96,7 @@ const filteredData = computed(() => {
                     class="avatar"
                     :src="item.logo"
                     alt=""
-                    @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+                    @error.once="(event) => onceImageErrored(event, '150x150')"
                   />
                   <div class="meta-left">
                     <h3>

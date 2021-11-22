@@ -2,7 +2,7 @@
 import { computed, ref } from 'vue'
 
 import { classes } from '/@src/data/layouts/flex-list-v3'
-import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+import { onceImageErrored } from '/@src/utils/via-placeholder'
 
 const props = withDefaults(
   defineProps<{
@@ -110,7 +110,7 @@ const filteredData = computed(() => {
                     class="media"
                     :src="item.picture"
                     alt=""
-                    @error.once="(event) => useViaPlaceholderError(event, '150x110')"
+                    @error.once="(event) => onceImageErrored(event, '150x110')"
                   />
                   <div>
                     <span class="item-name dark-inverted">{{ item.name }}</span>

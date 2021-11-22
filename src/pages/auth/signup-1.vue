@@ -4,7 +4,7 @@ import { tns } from 'tiny-slider/src/tiny-slider'
 import { useHead } from '@vueuse/head'
 import { ref, onMounted, onUnmounted } from 'vue'
 import { useRouter } from 'vue-router'
-import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+import { onceImageErrored } from '/@src/utils/via-placeholder'
 
 import sleep from '/@src/utils/sleep'
 import useNotyf from '/@src/composable/useNotyf'
@@ -280,7 +280,7 @@ onUnmounted(() => {
                       <img
                         :src="avatar"
                         alt=""
-                        @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+                        @error.once="(event) => onceImageErrored(event, '150x150')"
                       />
                     </div>
                   </div>

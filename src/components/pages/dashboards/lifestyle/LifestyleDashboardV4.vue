@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+import { onceImageErrored } from '/@src/utils/via-placeholder'
 </script>
 
 <template>
@@ -169,7 +169,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                   <img
                     src="/demo/photos/38.jpg"
                     alt=""
-                    @error.once="(event) => useViaPlaceholderError(event, '800x600')"
+                    @error.once="(event) => onceImageErrored(event, '800x600')"
                   />
                 </div>
                 <div class="featured-content">
@@ -189,7 +189,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                   <img
                     src="/demo/photos/37.jpg"
                     alt=""
-                    @error.once="(event) => useViaPlaceholderError(event, '800x600')"
+                    @error.once="(event) => onceImageErrored(event, '800x600')"
                   />
                 </div>
                 <div class="featured-content">

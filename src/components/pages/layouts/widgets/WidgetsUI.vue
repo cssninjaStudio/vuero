@@ -12,7 +12,7 @@ import { days } from '/@src/data/widgets/ui/dayList'
 import { iconList } from '/@src/data/widgets/ui/menuList'
 import { notifications } from '/@src/data/widgets/ui/notificationList'
 import { trendWidgetChartOptions } from '/@src/data/widgets/charts/trendWidgetChart'
-import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+import { onceImageErrored } from '/@src/utils/via-placeholder'
 </script>
 
 <template>
@@ -233,7 +233,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
           <img
             src="/demo/photos/widgets/2.jpg"
             alt=""
-            @error.once="(event) => useViaPlaceholderError(event, '400x300')"
+            @error.once="(event) => onceImageErrored(event, '400x300')"
           />
           <div class="progress-wrap">
             <progress class="progress is-primary is-tiny" max="100">55%</progress>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+import { onceImageErrored } from '/@src/utils/via-placeholder'
 
 export type VAvatarSize = 'small' | 'medium' | 'large' | 'big' | 'xl'
 export type VAvatarColor =
@@ -58,7 +58,7 @@ const props = withDefaults(defineProps<VAvatarProps>(), {
         :class="[props.squared && 'is-squared', props.pictureDark && 'light-image']"
         :src="props.picture"
         alt=""
-        @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+        @error.once="(event) => onceImageErrored(event, '150x150')"
       />
       <span
         v-else
@@ -73,7 +73,7 @@ const props = withDefaults(defineProps<VAvatarProps>(), {
         :class="[props.squared && 'is-squared']"
         :src="props.pictureDark"
         alt=""
-        @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+        @error.once="(event) => onceImageErrored(event, '150x150')"
       />
     </slot>
 
@@ -83,7 +83,7 @@ const props = withDefaults(defineProps<VAvatarProps>(), {
         class="badge"
         :src="props.badge"
         alt=""
-        @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+        @error.once="(event) => onceImageErrored(event, '150x150')"
       />
     </slot>
   </div>

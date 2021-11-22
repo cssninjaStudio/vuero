@@ -2,7 +2,7 @@
 import { computed, ref } from 'vue'
 
 import { posts } from '/@src/data/layouts/card-grid-v4'
-import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+import { onceImageErrored } from '/@src/utils/via-placeholder'
 
 const filters = ref('')
 
@@ -85,7 +85,7 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
             <img
               :src="item.image"
               alt=""
-              @error.once="(event) => useViaPlaceholderError(event, '400x300')"
+              @error.once="(event) => onceImageErrored(event, '400x300')"
             />
             <div class="card-grid-item-content">
               <h3 class="dark-inverted">

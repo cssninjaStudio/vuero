@@ -2,7 +2,7 @@
 import { computed, ref } from 'vue'
 
 import type { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
-import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+import { onceImageErrored } from '/@src/utils/via-placeholder'
 import * as gridData from '/@src/data/layouts/card-grid-v2'
 
 export interface ProjectData {
@@ -123,7 +123,7 @@ const optionsSingle = [
                   <img
                     :src="item.image"
                     alt=""
-                    @error.once="(event) => useViaPlaceholderError(event, '1280x960')"
+                    @error.once="(event) => onceImageErrored(event, '1280x960')"
                   />
                 </figure>
               </div>

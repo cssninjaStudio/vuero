@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+import { onceImageErrored } from '/@src/utils/via-placeholder'
 </script>
 
 <template>
@@ -69,7 +69,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                     <img
                       src="/demo/photos/brands/airbnb.svg"
                       alt=""
-                      @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+                      @error.once="(event) => onceImageErrored(event, '150x150')"
                     />
                     <div class="meta">
                       <span class="dark-inverted">Airbnb HQ</span>
@@ -85,7 +85,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                     <img
                       src="/demo/photos/brands/facebook.svg"
                       alt=""
-                      @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+                      @error.once="(event) => onceImageErrored(event, '150x150')"
                     />
                     <div class="meta">
                       <span class="dark-inverted">Facebook</span>
@@ -101,7 +101,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                     <img
                       src="/demo/photos/brands/atlassian.svg"
                       alt=""
-                      @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+                      @error.once="(event) => onceImageErrored(event, '150x150')"
                     />
                     <div class="meta">
                       <span class="dark-inverted">Atlassian</span>
@@ -117,7 +117,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                     <img
                       src="/demo/photos/brands/github.svg"
                       alt=""
-                      @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+                      @error.once="(event) => onceImageErrored(event, '150x150')"
                     />
                     <div class="meta">
                       <span class="dark-inverted">Github</span>

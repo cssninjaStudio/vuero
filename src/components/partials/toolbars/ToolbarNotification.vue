@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 
 import useDropdown from '/@src/composable/useDropdown'
-import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+import { onceImageErrored } from '/@src/utils/via-placeholder'
 
 const dropdownElement = ref<HTMLElement>()
 const dropdown = useDropdown(dropdownElement)
@@ -47,7 +47,7 @@ const dropdown = useDropdown(dropdownElement)
                     class="user-photo"
                     alt=""
                     src="/demo/avatars/7.jpg"
-                    @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+                    @error.once="(event) => onceImageErrored(event, '150x150')"
                   />
                 </div>
                 <div class="user-content">
@@ -65,7 +65,7 @@ const dropdown = useDropdown(dropdownElement)
                     class="user-photo"
                     alt=""
                     src="/demo/avatars/12.jpg"
-                    @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+                    @error.once="(event) => onceImageErrored(event, '150x150')"
                   />
                 </div>
                 <div class="user-content">
@@ -83,7 +83,7 @@ const dropdown = useDropdown(dropdownElement)
                     class="user-photo"
                     alt=""
                     src="/demo/avatars/13.jpg"
-                    @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+                    @error.once="(event) => onceImageErrored(event, '150x150')"
                   />
                 </div>
                 <div class="user-content">
@@ -101,7 +101,7 @@ const dropdown = useDropdown(dropdownElement)
                     class="user-photo"
                     alt=""
                     src="/demo/avatars/25.jpg"
-                    @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+                    @error.once="(event) => onceImageErrored(event, '150x150')"
                   />
                 </div>
                 <div class="user-content">

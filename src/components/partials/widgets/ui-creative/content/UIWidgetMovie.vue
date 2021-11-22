@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+import { onceImageErrored } from '/@src/utils/via-placeholder'
 
 const props = withDefaults(
   defineProps<{
@@ -20,7 +20,7 @@ const props = withDefaults(
     <img
       :src="props.picture"
       alt=""
-      @error.once="(event) => useViaPlaceholderError(event, '400x300')"
+      @error.once="(event) => onceImageErrored(event, '400x300')"
     />
     <div class="widget-meta">
       <i aria-hidden="true" class="iconify" data-icon="feather:play-circle"></i>

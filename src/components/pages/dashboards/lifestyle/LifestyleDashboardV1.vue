@@ -15,7 +15,7 @@ import {
   optionsSingle,
 } from '/@src/data/dashboards/lifestyle-v1/dashboardData'
 
-import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+import { onceImageErrored } from '/@src/utils/via-placeholder'
 
 type TabId = 'overview' | 'content' | 'brands'
 const activeTab = ref<TabId>('overview')
@@ -29,7 +29,7 @@ const activeTab = ref<TabId>('overview')
           <img
             src="/demo/photos/faces/girl1.jpg"
             alt=""
-            @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+            @error.once="(event) => onceImageErrored(event, '150x150')"
           />
           <button class="button is-circle">
             <span class="icon is-small">
@@ -626,7 +626,7 @@ const activeTab = ref<TabId>('overview')
                     <img
                       src="/demo/photos/faces/girl1.jpg"
                       alt=""
-                      @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+                      @error.once="(event) => onceImageErrored(event, '150x150')"
                     />
                   </div>
                   <div class="title-meta">
@@ -1120,7 +1120,7 @@ const activeTab = ref<TabId>('overview')
                   <img
                     src="/demo/photos/30.jpg"
                     alt=""
-                    @error.once="(event) => useViaPlaceholderError(event, '1280x960')"
+                    @error.once="(event) => onceImageErrored(event, '1280x960')"
                   />
                 </figure>
               </div>
@@ -1130,28 +1130,28 @@ const activeTab = ref<TabId>('overview')
                     <img
                       src="/demo/photos/33.jpg"
                       alt=""
-                      @error.once="(event) => useViaPlaceholderError(event, '1280x960')"
+                      @error.once="(event) => onceImageErrored(event, '1280x960')"
                     />
                   </a>
                   <a>
                     <img
                       src="/demo/photos/34.jpg"
                       alt=""
-                      @error.once="(event) => useViaPlaceholderError(event, '1280x960')"
+                      @error.once="(event) => onceImageErrored(event, '1280x960')"
                     />
                   </a>
                   <a>
                     <img
                       src="/demo/photos/35.jpeg"
                       alt=""
-                      @error.once="(event) => useViaPlaceholderError(event, '1280x960')"
+                      @error.once="(event) => onceImageErrored(event, '1280x960')"
                     />
                   </a>
                   <a>
                     <img
                       src="/demo/photos/36.jpg"
                       alt=""
-                      @error.once="(event) => useViaPlaceholderError(event, '1280x960')"
+                      @error.once="(event) => onceImageErrored(event, '1280x960')"
                     />
                   </a>
                 </div>
@@ -1176,7 +1176,7 @@ const activeTab = ref<TabId>('overview')
                   <img
                     src="/demo/photos/31.png"
                     alt=""
-                    @error.once="(event) => useViaPlaceholderError(event, '1280x960')"
+                    @error.once="(event) => onceImageErrored(event, '1280x960')"
                   />
                 </figure>
               </div>
@@ -1186,28 +1186,28 @@ const activeTab = ref<TabId>('overview')
                     <img
                       src="/demo/photos/33.jpg"
                       alt=""
-                      @error.once="(event) => useViaPlaceholderError(event, '1280x960')"
+                      @error.once="(event) => onceImageErrored(event, '1280x960')"
                     />
                   </a>
                   <a>
                     <img
                       src="/demo/photos/34.jpg"
                       alt=""
-                      @error.once="(event) => useViaPlaceholderError(event, '1280x960')"
+                      @error.once="(event) => onceImageErrored(event, '1280x960')"
                     />
                   </a>
                   <a>
                     <img
                       src="/demo/photos/35.jpeg"
                       alt=""
-                      @error.once="(event) => useViaPlaceholderError(event, '1280x960')"
+                      @error.once="(event) => onceImageErrored(event, '1280x960')"
                     />
                   </a>
                   <a>
                     <img
                       src="/demo/photos/36.jpg"
                       alt=""
-                      @error.once="(event) => useViaPlaceholderError(event, '1280x960')"
+                      @error.once="(event) => onceImageErrored(event, '1280x960')"
                     />
                   </a>
                 </div>
@@ -1232,7 +1232,7 @@ const activeTab = ref<TabId>('overview')
                   <img
                     src="/demo/photos/32.jpg"
                     alt=""
-                    @error.once="(event) => useViaPlaceholderError(event, '1280x960')"
+                    @error.once="(event) => onceImageErrored(event, '1280x960')"
                   />
                 </figure>
               </div>
@@ -1242,28 +1242,28 @@ const activeTab = ref<TabId>('overview')
                     <img
                       src="/demo/photos/33.jpg"
                       alt=""
-                      @error.once="(event) => useViaPlaceholderError(event, '1280x960')"
+                      @error.once="(event) => onceImageErrored(event, '1280x960')"
                     />
                   </a>
                   <a>
                     <img
                       src="/demo/photos/34.jpg"
                       alt=""
-                      @error.once="(event) => useViaPlaceholderError(event, '1280x960')"
+                      @error.once="(event) => onceImageErrored(event, '1280x960')"
                     />
                   </a>
                   <a>
                     <img
                       src="/demo/photos/35.jpeg"
                       alt=""
-                      @error.once="(event) => useViaPlaceholderError(event, '1280x960')"
+                      @error.once="(event) => onceImageErrored(event, '1280x960')"
                     />
                   </a>
                   <a>
                     <img
                       src="/demo/photos/36.jpg"
                       alt=""
-                      @error.once="(event) => useViaPlaceholderError(event, '1280x960')"
+                      @error.once="(event) => onceImageErrored(event, '1280x960')"
                     />
                   </a>
                 </div>

@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 
 import useDropdown from '/@src/composable/useDropdown'
-import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+import { onceImageErrored } from '/@src/utils/via-placeholder'
 import { isMediumScreen } from '/@src/utils/responsive'
 
 const emit = defineEmits<{
@@ -33,7 +33,7 @@ const dropdown2 = useDropdown(dropdownElement2)
         class="sender-pic"
         src="/demo/avatars/23.jpg"
         alt=""
-        @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+        @error.once="(event) => onceImageErrored(event, '150x150')"
       />
       <div class="message-meta">
         <span class="message-title">This month's lead generation report</span>
@@ -156,7 +156,7 @@ const dropdown2 = useDropdown(dropdownElement2)
             <img
               src="/images/avatars/svg/vuero-1.svg"
               alt=""
-              @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+              @error.once="(event) => onceImageErrored(event, '150x150')"
             />
             <div class="reply-details">
               <span>Reply as</span>

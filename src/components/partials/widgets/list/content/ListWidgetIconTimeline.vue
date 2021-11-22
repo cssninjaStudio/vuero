@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+import { onceImageErrored } from '/@src/utils/via-placeholder'
 
 const props = withDefaults(
   defineProps<{
@@ -25,7 +25,7 @@ const props = withDefaults(
           class="avatar"
           :src="item.picture"
           alt=""
-          @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+          @error.once="(event) => onceImageErrored(event, '150x150')"
         />
         <i v-else aria-hidden="true" class="iconify" :data-icon="item.icon"></i>
       </div>

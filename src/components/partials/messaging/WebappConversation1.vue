@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+import { onceImageErrored } from '/@src/utils/via-placeholder'
 
 const emit = defineEmits(['toggleMobileConversation'])
 </script>
@@ -24,7 +24,7 @@ const emit = defineEmits(['toggleMobileConversation'])
           src="/demo/avatars/11.jpg"
           alt=""
           data-user-popover="13"
-          @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+          @error.once="(event) => onceImageErrored(event, '150x150')"
         />
       </div>
     </div>
@@ -36,7 +36,7 @@ const emit = defineEmits(['toggleMobileConversation'])
             src="/demo/avatars/11.jpg"
             alt=""
             data-user-popover="13"
-            @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+            @error.once="(event) => onceImageErrored(event, '150x150')"
           />
           <div class="chat-msg-date">Sent at 1:03pm</div>
         </div>
@@ -46,7 +46,7 @@ const emit = defineEmits(['toggleMobileConversation'])
             <img
               src="/demo/photos/apps/7.png"
               alt=""
-              @error.once="(event) => useViaPlaceholderError(event, '400x300')"
+              @error.once="(event) => onceImageErrored(event, '400x300')"
             />
           </div>
           <div class="chat-msg-text">
@@ -61,7 +61,7 @@ const emit = defineEmits(['toggleMobileConversation'])
             src="/images/avatars/svg/vuero-1.svg"
             alt=""
             data-user-popover="3"
-            @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+            @error.once="(event) => onceImageErrored(event, '150x150')"
           />
           <div class="chat-msg-date">Sent at 1:22pm</div>
         </div>
@@ -80,7 +80,7 @@ const emit = defineEmits(['toggleMobileConversation'])
             src="/demo/avatars/11.jpg"
             alt=""
             data-user-popover="13"
-            @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+            @error.once="(event) => onceImageErrored(event, '150x150')"
           />
           <div class="chat-msg-date">Sent at 1:22pm</div>
         </div>
@@ -97,7 +97,7 @@ const emit = defineEmits(['toggleMobileConversation'])
             src="/images/avatars/svg/vuero-1.svg"
             alt=""
             data-user-popover="3"
-            @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+            @error.once="(event) => onceImageErrored(event, '150x150')"
           />
           <div class="chat-msg-date">Sent at 1:23pm</div>
         </div>

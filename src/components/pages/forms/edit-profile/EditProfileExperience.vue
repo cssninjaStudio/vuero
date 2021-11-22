@@ -4,7 +4,7 @@ import { computed, ref } from 'vue'
 
 import useNotyf from '/@src/composable/useNotyf'
 import sleep from '/@src/utils/sleep'
-import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+import { onceImageErrored } from '/@src/utils/via-placeholder'
 
 const isUploading = ref(false)
 const isLoading = ref(false)
@@ -184,7 +184,7 @@ const onSave = async () => {
               <img
                 src="/demo/photos/brands/airbnb.svg"
                 alt=""
-                @error.once="(event) => useViaPlaceholderError(event, '50x50')"
+                @error.once="(event) => onceImageErrored(event, '50x50')"
               />
               <div class="meta">
                 <span class="dark-inverted">Airbnb HQ</span>
@@ -205,7 +205,7 @@ const onSave = async () => {
               <img
                 src="/demo/photos/brands/facebook.svg"
                 alt=""
-                @error.once="(event) => useViaPlaceholderError(event, '50x50')"
+                @error.once="(event) => onceImageErrored(event, '50x50')"
               />
               <div class="meta">
                 <span class="dark-inverted">Facebook</span>
@@ -226,7 +226,7 @@ const onSave = async () => {
               <img
                 src="/demo/photos/brands/atlassian.svg"
                 alt=""
-                @error.once="(event) => useViaPlaceholderError(event, '50x50')"
+                @error.once="(event) => onceImageErrored(event, '50x50')"
               />
               <div class="meta">
                 <span class="dark-inverted">Atlassian</span>
@@ -247,7 +247,7 @@ const onSave = async () => {
               <img
                 src="/demo/photos/brands/github.svg"
                 alt=""
-                @error.once="(event) => useViaPlaceholderError(event, '50x50')"
+                @error.once="(event) => onceImageErrored(event, '50x50')"
               />
               <div class="meta">
                 <span class="dark-inverted">Github</span>
@@ -268,7 +268,7 @@ const onSave = async () => {
               <img
                 src="/demo/photos/brands/slack.svg"
                 alt=""
-                @error.once="(event) => useViaPlaceholderError(event, '50x50')"
+                @error.once="(event) => onceImageErrored(event, '50x50')"
               />
               <div class="meta">
                 <span class="dark-inverted">Slack</span>
@@ -289,7 +289,7 @@ const onSave = async () => {
               <img
                 src="/demo/photos/brands/gitlab.svg"
                 alt=""
-                @error.once="(event) => useViaPlaceholderError(event, '50x50')"
+                @error.once="(event) => onceImageErrored(event, '50x50')"
               />
               <div class="meta">
                 <span class="dark-inverted">Gitlab</span>

@@ -4,7 +4,7 @@ import { computed, ref, watch } from 'vue'
 
 import { useDarkmode } from '/@src/stores/darkmode'
 import useDropdown from '/@src/composable/useDropdown'
-import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+import { onceImageErrored } from '/@src/utils/via-placeholder'
 
 const darkmode = useDarkmode()
 const contactSearchOpen = ref(false)
@@ -231,7 +231,7 @@ useHead({
                   <img
                     src="/demo/avatars/7.jpg"
                     alt=""
-                    @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+                    @error.once="(event) => onceImageErrored(event, '150x150')"
                   />
                   <div class="contact-meta">
                     <span>Alice Carasca</span>
@@ -243,7 +243,7 @@ useHead({
                   <img
                     src="/demo/avatars/25.jpg"
                     alt=""
-                    @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+                    @error.once="(event) => onceImageErrored(event, '150x150')"
                   />
                   <div class="contact-meta">
                     <span>Melany Wallace</span>
@@ -255,7 +255,7 @@ useHead({
                   <img
                     src="/demo/avatars/18.jpg"
                     alt=""
-                    @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+                    @error.once="(event) => onceImageErrored(event, '150x150')"
                   />
                   <div class="contact-meta">
                     <span>Esteban Castellanos</span>
@@ -267,7 +267,7 @@ useHead({
                   <img
                     src="/demo/avatars/32.jpg"
                     alt=""
-                    @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+                    @error.once="(event) => onceImageErrored(event, '150x150')"
                   />
                   <div class="contact-meta">
                     <span>Jonathan Krugger</span>
@@ -279,7 +279,7 @@ useHead({
                   <img
                     src="/demo/avatars/38.jpg"
                     alt=""
-                    @error.once="(event) => useViaPlaceholderError(event, '150x150')"
+                    @error.once="(event) => onceImageErrored(event, '150x150')"
                   />
                   <div class="contact-meta">
                     <span>Christie Dallas</span>
