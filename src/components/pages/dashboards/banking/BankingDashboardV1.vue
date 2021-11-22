@@ -55,7 +55,7 @@ import {
             <div class="info-block-inner">
               <div class="title-wrap">
                 <h3 class="dark-inverted">Information</h3>
-                <a class="action-link">Edit</a>
+                <a class="action-link" tabindex="0">Edit</a>
               </div>
               <div class="info-block-line">
                 <h4 class="dark-inverted">Status</h4>
@@ -110,7 +110,7 @@ import {
         <div class="dashboard-card is-transactions">
           <div class="title-wrap">
             <h3 class="dark-inverted">Transactions</h3>
-            <a class="action-link">View All</a>
+            <a class="action-link" tabindex="0">View All</a>
           </div>
 
           <div class="transactions">
@@ -197,7 +197,7 @@ import {
                 <div class="level-left"></div>
                 <div class="level-right">
                   <div class="level-item">
-                    <a class="action-link">Confirm</a>
+                    <a class="action-link" tabindex="0">Confirm</a>
                   </div>
                 </div>
               </div>
@@ -230,7 +230,7 @@ import {
                 <div class="level-left"></div>
                 <div class="level-right">
                   <div class="level-item">
-                    <a class="action-link">Details</a>
+                    <a class="action-link" tabindex="0">Details</a>
                   </div>
                 </div>
               </div>

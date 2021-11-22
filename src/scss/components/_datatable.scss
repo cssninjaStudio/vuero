@@ -124,7 +124,6 @@
         color: var(--dark-text);
         border-radius: 0.5rem;
         height: 38px;
-        outline: none;
         transition: box-shadow 0.3s;
 
         &:focus {
@@ -162,7 +161,6 @@
         color: var(--dark-text);
         border-radius: 0.5rem;
         height: 38px;
-        outline: none;
         transition: box-shadow 0.3s;
 
         &::placeholder {

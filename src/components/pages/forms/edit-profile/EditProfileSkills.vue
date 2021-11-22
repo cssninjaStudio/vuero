@@ -68,7 +68,14 @@ const onSave = async () => {
             >
               Go Back
             </VButton>
-            <VButton color="primary" raised :loading="isLoading" @click="onSave">
+            <VButton
+              color="primary"
+              raised
+              :loading="isLoading"
+              tabindex="0"
+              @keydown.space.prevent="onSave"
+              @click="onSave"
+            >
               Save Changes
             </VButton>
           </div>
@@ -83,7 +90,14 @@ const onSave = async () => {
           <p>How many languages do you speak?</p>
         </div>
         <div v-else class="fieldset-heading">
-          <a class="action-link" @click="isEditingLanguages = false">Cancel</a>
+          <a
+            class="action-link"
+            tabindex="0"
+            @keydown.space.prevent="isEditingLanguages = false"
+            @click="isEditingLanguages = false"
+          >
+            Cancel
+          </a>
         </div>
 
         <div class="setting-list">
@@ -264,6 +278,8 @@ const onSave = async () => {
                   dark-outlined
                   icon="fas fa-plus"
                   class="add-setting-item"
+                  tabindex="0"
+                  @keydown.space.prevent="isEditingLanguages = true"
                   @click="isEditingLanguages = true"
                 >
                   Add
@@ -281,7 +297,14 @@ const onSave = async () => {
           <p>Add your best skills</p>
         </div>
         <div v-else class="fieldset-heading">
-          <a class="action-link" @click="isEditingSkills = false">Cancel</a>
+          <a
+            class="action-link"
+            tabindex="0"
+            @keydown.space.prevent="isEditingSkills = false"
+            @click="isEditingSkills = false"
+          >
+            Cancel
+          </a>
         </div>
 
         <div class="setting-list">
@@ -476,6 +499,8 @@ const onSave = async () => {
                   dark-outlined
                   icon="fas fa-plus"
                   class="add-setting-item"
+                  tabindex="0"
+                  @keydown.space.prevent="isEditingSkills = true"
                   @click="isEditingSkills = true"
                 >
                   Add
@@ -493,7 +518,14 @@ const onSave = async () => {
           <p>Add the tools you work with</p>
         </div>
         <div v-else class="fieldset-heading">
-          <a class="action-link" @click="isEditingTools = false">Cancel</a>
+          <a
+            class="action-link"
+            tabindex="0"
+            @keydown.space.prevent="isEditingTools = false"
+            @click="isEditingTools = false"
+          >
+            Cancel
+          </a>
         </div>
 
         <div class="setting-list">
@@ -649,6 +681,8 @@ const onSave = async () => {
                   dark-outlined
                   icon="fas fa-plus"
                   class="add-setting-item"
+                  tabindex="0"
+                  @keydown.space.prevent="isEditingTools = true"
                   @click="isEditingTools = true"
                 >
                   Add

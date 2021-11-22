@@ -319,10 +319,6 @@ $text-offset: $a-height - 90;
       width: 8%;
     }
 
-    li:focus {
-      outline: none;
-    }
-
     &:hover li:hover,
     li:focus,
     &:focus-within li:focus {

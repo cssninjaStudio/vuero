@@ -47,7 +47,15 @@ const confirm = async () => {
               is getting a bit overwhelmed. We'd love to have you board.
             </p>
             <div class="buttons">
-              <VButton color="primary" raised @click="confirm"> Confirm Account </VButton>
+              <VButton
+                color="primary"
+                raised
+                tabindex="0"
+                @keydown.space.prevent="confirm"
+                @click="confirm"
+              >
+                Confirm Account
+              </VButton>
             </div>
           </div>
         </VLoader>

@@ -57,7 +57,7 @@ useHead({
             officia, quae actiones. Sed hoc sane concedamus...
           </p>
 
-          <a class="action-link">Read More</a>
+          <a class="action-link" tabindex="0">Read More</a>
         </VCardMedia>
       </div>
 
@@ -75,7 +75,7 @@ useHead({
             officia, quae actiones. Sed hoc sane concedamus...
           </p>
 
-          <a class="action-link">Read More</a>
+          <a class="action-link" tabindex="0">Read More</a>
         </VCardMedia>
       </div>
 
@@ -93,7 +93,7 @@ useHead({
             officia, quae actiones. Sed hoc sane concedamus...
           </p>
 
-          <a class="action-link">Read More</a>
+          <a class="action-link" tabindex="0">Read More</a>
         </VCardMedia>
       </div>
 

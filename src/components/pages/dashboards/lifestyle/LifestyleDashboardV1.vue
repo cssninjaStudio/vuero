@@ -144,13 +144,28 @@ const activeTab = ref<TabId>('overview')
         <div class="tabs">
           <ul>
             <li :class="[activeTab === 'overview' && 'is-active']">
-              <a @click="activeTab = 'overview'">Overview</a>
+              <a
+                tabindex="0"
+                @keydown.space.prevent="activeTab = 'overview'"
+                @click="activeTab = 'overview'"
+                >Overview</a
+              >
             </li>
             <li :class="[activeTab === 'content' && 'is-active']">
-              <a @click="activeTab = 'content'">Content</a>
+              <a
+                tabindex="0"
+                @keydown.space.prevent="activeTab = 'content'"
+                @click="activeTab = 'content'"
+                >Content</a
+              >
             </li>
             <li :class="[activeTab === 'brands' && 'is-active']">
-              <a @click="activeTab = 'brands'">Brands</a>
+              <a
+                tabindex="0"
+                @keydown.space.prevent="activeTab = 'brands'"
+                @click="activeTab = 'brands'"
+                >Brands</a
+              >
             </li>
           </ul>
         </div>

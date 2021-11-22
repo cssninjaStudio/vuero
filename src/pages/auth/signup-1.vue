@@ -1025,10 +1025,6 @@ onUnmounted(() => {
     text-align: center;
     cursor: pointer;
 
-    &:focus {
-      outline: none !important;
-    }
-
     img {
       opacity: 60%;
       border: 4px solid transparent;

@@ -5,10 +5,20 @@ const emit = defineEmits(['rename', 'collapse'])
 <template>
   <VDropdown icon="feather:more-vertical" right>
     <template #content>
-      <a class="dropdown-item kanban-rename kill-drop" @click="emit('rename')">
+      <a
+        class="dropdown-item kanban-rename kill-drop"
+        tabindex="0"
+        @keydown.space.prevent="emit('rename')"
+        @click="emit('rename')"
+      >
         Rename
       </a>
-      <a class="dropdown-item kanban-collapse kill-drop" @click="emit('collapse')">
+      <a
+        class="dropdown-item kanban-collapse kill-drop"
+        tabindex="0"
+        @keydown.space.prevent="emit('collapse')"
+        @click="emit('collapse')"
+      >
         Collapse
       </a>
       <hr class="dropdown-divider" />

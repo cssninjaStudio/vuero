@@ -78,7 +78,14 @@ const accept = async () => {
           </div>
           <div class="buttons">
             <VButton dark-outlined> Decline </VButton>
-            <VButton color="primary" :loading="isLoading" raised @click="accept">
+            <VButton
+              color="primary"
+              :loading="isLoading"
+              raised
+              tabindex="0"
+              @keydown.space.prevent="accept"
+              @click="accept"
+            >
               Accept
             </VButton>
           </div>

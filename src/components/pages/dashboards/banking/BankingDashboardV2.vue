@@ -70,7 +70,12 @@ const goto = (index: number) => {
               <div class="cards-carousel">
                 <div ref="sliderElement" class="cards-carousel-inner">
                   <!--Carousel Item-->
-                  <div class="cards-carousel-item" @click="goto(0)">
+                  <div
+                    class="cards-carousel-item"
+                    tabindex="0"
+                    @keydown.space.prevent="goto(0)"
+                    @click="goto(0)"
+                  >
                     <div class="ccard">
                       <div class="shape"></div>
                       <div class="top">
@@ -97,7 +102,12 @@ const goto = (index: number) => {
                     </div>
                   </div>
                   <!--Carousel Item-->
-                  <div class="cards-carousel-item" @click="goto(1)">
+                  <div
+                    class="cards-carousel-item"
+                    tabindex="0"
+                    @keydown.space.prevent="goto(1)"
+                    @click="goto(1)"
+                  >
                     <div class="ccard">
                       <div class="shape"></div>
                       <div class="top">
@@ -124,7 +134,12 @@ const goto = (index: number) => {
                     </div>
                   </div>
                   <!--Carousel Item-->
-                  <div class="cards-carousel-item" @click="goto(2)">
+                  <div
+                    class="cards-carousel-item"
+                    tabindex="0"
+                    @keydown.space.prevent="goto(2)"
+                    @click="goto(2)"
+                  >
                     <div class="ccard">
                       <div class="shape"></div>
                       <div class="top">
@@ -151,7 +166,12 @@ const goto = (index: number) => {
                     </div>
                   </div>
                   <!--Carousel Item-->
-                  <div class="cards-carousel-item" @click="goto(3)">
+                  <div
+                    class="cards-carousel-item"
+                    tabindex="0"
+                    @keydown.space.prevent="goto(3)"
+                    @click="goto(3)"
+                  >
                     <div class="ccard">
                       <div class="shape"></div>
                       <div class="top">
@@ -275,7 +295,7 @@ const goto = (index: number) => {
               <!--Chart-->
               <div class="column is-8">
                 <div class="chart-wrapper">
-                  <a class="action-link">All Reports</a>
+                  <a class="action-link" tabindex="0">All Reports</a>
                   <ApexChart
                     id="timeline-chart"
                     :height="expensesOptions.chart.height"
@@ -295,7 +315,7 @@ const goto = (index: number) => {
           <div class="inner-box">
             <div class="box-title">
               <h3>Transactions</h3>
-              <a class="action-link">View All</a>
+              <a class="action-link" tabindex="0">View All</a>
             </div>
             <!--Transactions-->
             <div class="transactions">
@@ -466,7 +486,6 @@ const goto = (index: number) => {
                 border-radius: var(--radius-rounded);
                 background: var(--medium-grey);
                 border: 0;
-                outline: none;
 
                 &.tns-nav-active {
                   background: var(--primary);
@@ -479,7 +498,6 @@ const goto = (index: number) => {
 
               .cards-carousel-item {
                 padding: 0 1.25rem 0.75rem 0;
-                outline: none !important;
                 user-select: none;
 
                 &.tns-slide-active {

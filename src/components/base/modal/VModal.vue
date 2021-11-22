@@ -67,6 +67,8 @@ zh-CN:
     <div :class="[open && 'is-active', size && `is-${size}`]" class="modal v-modal">
       <div
         class="modal-background v-modal-close"
+        tabindex="0"
+        @keydown.space.prevent="() => noclose === false && emit('close')"
         @click="() => noclose === false && emit('close')"
       ></div>
       <div class="modal-content">

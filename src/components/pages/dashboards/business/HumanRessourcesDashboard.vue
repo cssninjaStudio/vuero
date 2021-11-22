@@ -103,7 +103,7 @@ const columns = {
                 Oratio me istius philosophi non offendit; Duo Reges: constructio
                 interrete.
               </p>
-              <a class="action-link">Read More</a>
+              <a class="action-link" tabindex="0">Read More</a>
             </div>
           </div>
 
@@ -144,7 +144,7 @@ const columns = {
                     <VTag v-else rounded label="Pending" />
                   </template>
                   <template v-else-if="column.key === 'actions'">
-                    <a class="action-link is-pushed-mobile">Open</a>
+                    <a tabindex="0" class="action-link is-pushed-mobile">Open</a>
                   </template>
 
                   <span v-else class="light-text">{{ value }}</span>
@@ -158,7 +158,7 @@ const columns = {
             <div class="recent-rookies">
               <div class="recent-rookies-header">
                 <h3 class="dark-inverted">Recent Rookies</h3>
-                <a class="action-link">View All</a>
+                <a class="action-link" tabindex="0">View All</a>
               </div>
 
               <div class="columns user-grid user-grid-v4 is-flex-tablet-p">
@@ -388,7 +388,6 @@ const columns = {
           background: var(--white);
           color: var(--light-text);
           border: none;
-          outline: none;
           cursor: pointer;
           transition: all 0.3s; // transition-all test
 

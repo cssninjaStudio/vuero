@@ -38,7 +38,12 @@ const toggle = (key: number) => {
     :open="modelValue === key || undefined"
     class="collapse"
   >
-    <summary class="collapse-header" @click.prevent="() => toggle(key)">
+    <summary
+      class="collapse-header"
+      tabindex="0"
+      @keydown.space.prevent="() => toggle(key)"
+      @click.prevent="() => toggle(key)"
+    >
       <h3>{{ item.title }}</h3>
       <div class="collapse-icon">
         <VIcon v-if="withChevron" icon="feather:chevron-down" />

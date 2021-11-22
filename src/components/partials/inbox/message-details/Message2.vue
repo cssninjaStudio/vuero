@@ -48,7 +48,12 @@ const dropdown2 = useDropdown(dropdownElement2)
         class="dropdown inbox-dropdown dropdown-trigger is-right"
       >
         <div>
-          <button class="button" @click="dropdown1.toggle">
+          <button
+            class="button"
+            tabindex="0"
+            @keydown.space.prevent="dropdown1.toggle"
+            @click="dropdown1.toggle"
+          >
             <span class="icon is-small">
               <i aria-hidden="true" class="iconify" data-icon="feather:more-vertical"></i>
             </span>
@@ -74,6 +79,8 @@ const dropdown2 = useDropdown(dropdownElement2)
       </div>
       <a
         class="inbox-action inbox-close-details-mobile"
+        tabindex="0"
+        @keydown.space.prevent="emit('update:mobileMessageOpen', false)"
         @click="emit('update:mobileMessageOpen', false)"
       >
         <i aria-hidden="true" class="iconify" data-icon="feather:x"></i>
@@ -184,7 +191,12 @@ const dropdown2 = useDropdown(dropdownElement2)
               class="dropdown inbox-dropdown dropdown-trigger is-right"
             >
               <div>
-                <button class="button" @click="dropdown2.toggle">
+                <button
+                  class="button"
+                  tabindex="0"
+                  @keydown.space.prevent="dropdown2.toggle"
+                  @click="dropdown2.toggle"
+                >
                   <span class="icon is-small">
                     <i
                       aria-hidden="true"

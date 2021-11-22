@@ -76,7 +76,13 @@ zh-CN:
 
 <template>
   <div class="card-container">
-    <div :class="[props.flipped && 'flipped']" class="creditcard" @click="emit('flip')">
+    <div
+      :class="[props.flipped && 'flipped']"
+      class="creditcard"
+      tabindex="0"
+      @keydown.space.prevent="emit('flip')"
+      @click="emit('flip')"
+    >
       <div class="front">
         <slot></slot>
 

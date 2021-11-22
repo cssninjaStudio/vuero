@@ -105,7 +105,12 @@ pre {
 }
 
 a,
-button {
+select,
+textarea,
+input,
+label,
+button,
+.is-trigger {
   &:focus-visible {
     border-radius: 4px;
     outline-offset: var(--accessibility-focus-outline-offset);

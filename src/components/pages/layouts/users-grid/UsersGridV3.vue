@@ -45,10 +45,14 @@ const filteredData = computed(() => {
         <div class="tabs">
           <ul>
             <li :class="[tab === 'all' && 'is-active']">
-              <a @click="tab = 'all'"><span>All</span></a>
+              <a tabindex="0" @keydown.space.prevent="tab = 'all'" @click="tab = 'all'"
+                ><span>All</span></a
+              >
             </li>
             <li :class="[tab === 'team' && 'is-active']">
-              <a @click="tab = 'team'"><span>Team</span></a>
+              <a tabindex="0" @keydown.space.prevent="tab = 'team'" @click="tab = 'team'"
+                ><span>Team</span></a
+              >
             </li>
             <li class="tab-naver"></li>
           </ul>

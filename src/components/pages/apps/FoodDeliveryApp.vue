@@ -74,7 +74,7 @@ onUnmounted(() => {
             <span role="img" aria-label="Party Popper">🎉</span>
           </h3>
           <p>$0 delivery fee for orders over $10 for 30 days</p>
-          <a class="action-link">
+          <a class="action-link" tabindex="0">
             <span>Learn More</span>
             <i aria-hidden="true" class="fas fa-arrow-right"></i>
           </a>
@@ -448,7 +448,6 @@ onUnmounted(() => {
 
         .food-pills-inner {
           .food-pill {
-            outline: none;
             text-align: center;
             width: 80px;
             max-width: 80px;
@@ -502,10 +501,6 @@ onUnmounted(() => {
         }
 
         .tns-slider {
-          &:focus {
-            outline: none !important;
-          }
-
           .active {
             background: var(--primary);
             border-color: var(--primary);
@@ -540,7 +535,6 @@ onUnmounted(() => {
           color: var(--light-text);
           transition: all 0.3s; // transition-all test
           z-index: 25;
-          outline: none !important;
 
           &.is-prev {
             right: 30px;

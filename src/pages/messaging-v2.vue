@@ -194,6 +194,8 @@ useHead({
             <a
               class="toolbar-link right-panel-trigger"
               aria-label="View activity"
+              tabindex="0"
+              @keydown.space.prevent="panels.setActive('activity')"
               @click="panels.setActive('activity')"
             >
               <i aria-hidden="true" class="iconify" data-icon="feather:grid"></i>
@@ -928,7 +930,6 @@ $overlay-bg-dark: linear-gradient(
           margin-right: 6px;
           border: none;
           background: none;
-          outline: none;
 
           svg {
             height: 20px;
@@ -1091,7 +1092,6 @@ $overlay-bg-dark: linear-gradient(
 
         input {
           border: 1px solid transparent;
-          outline: none;
           color: var(--body-color);
           background-color: $input-bg;
           padding: 12px;

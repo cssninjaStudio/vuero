@@ -213,7 +213,7 @@ useHead({
           <div class="username">
             <span class="dark-inverted">&commat;cssninjaStudio</span>
           </div>
-          <a class="action-link">View on Twitter</a>
+          <a class="action-link" tabindex="0">View on Twitter</a>
         </div>
         <div class="status-tweets">
           <div class="updates">

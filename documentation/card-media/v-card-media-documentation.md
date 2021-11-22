@@ -23,7 +23,7 @@ Check the code example for more details.
       actiones. Sed hoc sane concedamus...
     </p>
 
-    <a class="action-link">Read More</a>
+    <a class="action-link" tabindex="0">Read More</a>
   </VCardMedia>
 </template>
 ```

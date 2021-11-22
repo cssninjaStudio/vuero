@@ -47,7 +47,12 @@ const toggle = (key: number) => {
       :open="internalOpenItems?.includes(key) ?? undefined"
       :class="[internalOpenItems?.includes(key) && 'is-active']"
     >
-      <summary class="accordion-header" @click.prevent="() => toggle(key)">
+      <summary
+        class="accordion-header"
+        tabindex="0"
+        @keydown.space.prevent="() => toggle(key)"
+        @click.prevent="() => toggle(key)"
+      >
         {{ item.title }}
       </summary>
       <div class="accordion-content">{{ item.content }}</div>

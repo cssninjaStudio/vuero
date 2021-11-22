@@ -95,7 +95,12 @@ watchEffect(() => {
           You can already start adding files to your project if you have them handy. But
           don't worry, you'll be able to add and manage files later.
         </p>
-        <a class="action-link toggle-members-link" @click="isAddingMembers = true">
+        <a
+          class="action-link toggle-members-link"
+          tabindex="0"
+          @keydown.space.prevent="isAddingMembers = true"
+          @click="isAddingMembers = true"
+        >
           Add Members
         </a>
       </div>
@@ -165,6 +170,8 @@ watchEffect(() => {
                         <div
                           class="permission-level hint--bubble hint--primary hint--top"
                           aria-label="Reader"
+                          tabindex="0"
+                          @keydown.space.prevent="setTeammateRole(teammate, 'reader')"
                           @click="setTeammateRole(teammate, 'reader')"
                         >
                           <div
@@ -175,6 +182,10 @@ watchEffect(() => {
                         <div
                           class="permission-level hint--bubble hint--primary hint--top"
                           aria-label="Collaborator"
+                          tabindex="0"
+                          @keydown.space.prevent="
+                            setTeammateRole(teammate, 'collaborator')
+                          "
                           @click="setTeammateRole(teammate, 'collaborator')"
                         >
                           <div
@@ -185,6 +196,8 @@ watchEffect(() => {
                         <div
                           class="permission-level hint--bubble hint--primary hint--top"
                           aria-label="Manager"
+                          tabindex="0"
+                          @keydown.space.prevent="setTeammateRole(teammate, 'manager')"
                           @click="setTeammateRole(teammate, 'manager')"
                         >
                           <div
@@ -195,6 +208,8 @@ watchEffect(() => {
                         <div
                           class="permission-level hint--bubble hint--primary hint--top"
                           aria-label="Owner"
+                          tabindex="0"
+                          @keydown.space.prevent="setTeammateRole(teammate, 'owner')"
                           @click="setTeammateRole(teammate, 'owner')"
                         >
                           <div

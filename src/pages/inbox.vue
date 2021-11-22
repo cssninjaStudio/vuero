@@ -116,6 +116,8 @@ useHead({
             <a
               class="inbox-action inbox-close-sidebar-mobile"
               aria-label="Close"
+              tabindex="0"
+              @keydown.space.prevent="mobileSidebarOpen = false"
               @click="mobileSidebarOpen = false"
             >
               <i aria-hidden="true" class="iconify" data-icon="feather:x"></i>
@@ -131,6 +133,8 @@ useHead({
                   <li>
                     <a
                       :class="[activeTab === 'inbox' && 'is-active']"
+                      tabindex="0"
+                      @keydown.space.prevent="activeTab = 'inbox'"
                       @click="activeTab = 'inbox'"
                     >
                       <i aria-hidden="true" class="iconify" data-icon="feather:mail"></i>
@@ -141,6 +145,8 @@ useHead({
                   <li>
                     <a
                       :class="[activeTab === 'drafts' && 'is-active']"
+                      tabindex="0"
+                      @keydown.space.prevent="activeTab = 'drafts'"
                       @click="activeTab = 'drafts'"
                     >
                       <i
@@ -155,6 +161,8 @@ useHead({
                   <li>
                     <a
                       :class="[activeTab === 'sent' && 'is-active']"
+                      tabindex="0"
+                      @keydown.space.prevent="activeTab = 'sent'"
                       @click="activeTab = 'sent'"
                     >
                       <i aria-hidden="true" class="iconify" data-icon="feather:send"></i>
@@ -165,6 +173,8 @@ useHead({
                   <li>
                     <a
                       :class="[activeTab === 'trash' && 'is-active']"
+                      tabindex="0"
+                      @keydown.space.prevent="activeTab = 'trash'"
                       @click="activeTab = 'trash'"
                     >
                       <i
@@ -179,6 +189,8 @@ useHead({
                   <li>
                     <a
                       :class="[activeTab === 'span' && 'is-active']"
+                      tabindex="0"
+                      @keydown.space.prevent="activeTab = 'span'"
                       @click="activeTab = 'span'"
                     >
                       <i
@@ -211,7 +223,12 @@ useHead({
                   class="button searcv-button"
                   aria-label="Search"
                 >
-                  <span class="icon is-small" @click="contactSearchOpen = true">
+                  <span
+                    class="icon is-small"
+                    tabindex="0"
+                    @keydown.space.prevent="contactSearchOpen = true"
+                    @click="contactSearchOpen = true"
+                  >
                     <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
                   </span>
                 </a>
@@ -220,7 +237,12 @@ useHead({
                   class="button cancel-searcv-button"
                   aria-label="Close"
                 >
-                  <span class="icon is-small" @click="contactSearchOpen = false">
+                  <span
+                    class="icon is-small"
+                    tabindex="0"
+                    @keydown.space.prevent="contactSearchOpen = true"
+                    @click="contactSearchOpen = false"
+                  >
                     <i aria-hidden="true" class="iconify" data-icon="feather:x"></i>
                   </span>
                 </a>
@@ -298,6 +320,8 @@ useHead({
               <a
                 class="inbox-action mobile-menu-action"
                 aria-label="Open messages list"
+                tabindex="0"
+                @keydown.space.prevent="mobileSidebarOpen = true"
                 @click="mobileSidebarOpen = true"
               >
                 <i
@@ -310,6 +334,8 @@ useHead({
                 class="inbox-action check-all-action"
                 :class="[isAllChecked && 'is-checked']"
                 aria-label="Toggle selection"
+                tabindex="0"
+                @keydown.space.prevent="toggleSelection"
                 @click="toggleSelection"
               >
                 <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
@@ -810,6 +836,13 @@ useHead({
           border-bottom: 1px solid var(--fade-grey-dark-3);
           padding: 20px;
           cursor: pointer;
+
+          &:focus-visible {
+            outline-offset: var(--accessibility-focus-outline-offset);
+            outline-width: var(--accessibility-focus-outline-width);
+            outline-style: var(--accessibility-focus-outline-style);
+            outline-color: var(--accessibility-focus-outline-color);
+          }
 
           &.is-selected {
             background: var(--fade-grey-light-4);

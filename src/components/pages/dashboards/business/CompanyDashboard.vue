@@ -321,7 +321,7 @@ onMounted(async () => {
         <div class="dashboard-card is-tickets">
           <div class="card-head">
             <h3 class="dark-inverted">Pending Tickets</h3>
-            <a class="action-link">View All</a>
+            <a class="action-link" tabindex="0">View All</a>
           </div>
 
           <div class="ticket-list">

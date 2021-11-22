@@ -43,7 +43,14 @@ const onSave = async () => {
             >
               Go Back
             </VButton>
-            <VButton color="primary" raised :loading="isLoading" @click="onSave">
+            <VButton
+              color="primary"
+              raised
+              :loading="isLoading"
+              tabindex="0"
+              @keydown.space.prevent="onSave"
+              @click="onSave"
+            >
               Save Changes
             </VButton>
           </div>

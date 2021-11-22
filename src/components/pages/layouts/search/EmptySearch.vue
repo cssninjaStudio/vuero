@@ -20,13 +20,28 @@ const activeTab = ref<TabId>('all')
         <div class="tabs is-disabled">
           <ul>
             <li :class="[activeTab === 'all' && 'is-active']">
-              <a @click="activeTab = 'all'"><span>All</span></a>
+              <a
+                tabindex="0"
+                @keydown.space.prevent="activeTab = 'all'"
+                @click="activeTab = 'all'"
+                ><span>All</span></a
+              >
             </li>
             <li :class="[activeTab === 'people' && 'is-active']">
-              <a @click="activeTab = 'people'"><span>People</span></a>
+              <a
+                tabindex="0"
+                @keydown.space.prevent="activeTab = 'people'"
+                @click="activeTab = 'people'"
+                ><span>People</span></a
+              >
             </li>
             <li :class="[activeTab === 'records' && 'is-active']">
-              <a @click="activeTab = 'records'"><span>Records</span></a>
+              <a
+                tabindex="0"
+                @keydown.space.prevent="activeTab = 'records'"
+                @click="activeTab = 'records'"
+                ><span>Records</span></a
+              >
             </li>
             <li class="tab-naver"></li>
           </ul>

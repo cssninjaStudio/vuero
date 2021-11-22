@@ -352,6 +352,9 @@ const validateStep = async () => {
               <span>Shipment Taxes</span>
               <button
                 class="help-button"
+                @keydown.space.prevent="
+                  currentHelp === 2 ? (currentHelp = -1) : (currentHelp = 2)
+                "
                 @click="currentHelp === 2 ? (currentHelp = -1) : (currentHelp = 2)"
               >
                 <i aria-hidden="true" class="iconify" data-icon="feather:help-circle"></i>
@@ -399,6 +402,9 @@ const validateStep = async () => {
               <span>Options</span>
               <button
                 class="help-button"
+                @keydown.space.prevent="
+                  currentHelp === 3 ? (currentHelp = -1) : (currentHelp = 3)
+                "
                 @click="currentHelp === 3 ? (currentHelp = -1) : (currentHelp = 3)"
               >
                 <i aria-hidden="true" class="iconify" data-icon="feather:help-circle"></i>
@@ -489,6 +495,9 @@ const validateStep = async () => {
               <span>Validation</span>
               <button
                 class="help-button"
+                @keydown.space.prevent="
+                  currentHelp === 4 ? (currentHelp = -1) : (currentHelp = 4)
+                "
                 @click="currentHelp === 4 ? (currentHelp = -1) : (currentHelp = 4)"
               >
                 <i aria-hidden="true" class="iconify" data-icon="feather:help-circle"></i>
@@ -514,7 +523,14 @@ const validateStep = async () => {
 
         <div class="navigation-buttons">
           <div class="buttons is-right">
-            <VButton color="primary" bold :loading="isLoading" @click="validateStep">
+            <VButton
+              color="primary"
+              bold
+              :loading="isLoading"
+              tabindex="0"
+              @keydown.space.prevent="validateStep"
+              @click="validateStep"
+            >
               Continue
             </VButton>
           </div>
@@ -526,6 +542,10 @@ const validateStep = async () => {
             id="step-segment-0"
             :class="[currentStep === 0 && 'is-active']"
             class="steps-segment"
+            tabindex="0"
+            @keydown.space.prevent="
+              currentStep >= 0 && scrollTo('#form-step-0', 800, { offset: -20 })
+            "
             @click.prevent="
               currentStep >= 0 && scrollTo('#form-step-0', 800, { offset: -20 })
             "
@@ -540,6 +560,10 @@ const validateStep = async () => {
             id="step-segment-1"
             :class="[currentStep === 1 && 'is-active']"
             class="steps-segment"
+            tabindex="0"
+            @keydown.space.prevent="
+              currentStep >= 1 && scrollTo('#form-step-1', 800, { offset: -20 })
+            "
             @click.prevent="
               currentStep >= 1 && scrollTo('#form-step-1', 800, { offset: -20 })
             "
@@ -554,6 +578,10 @@ const validateStep = async () => {
             id="step-segment-2"
             :class="[currentStep === 2 && 'is-active']"
             class="steps-segment"
+            tabindex="0"
+            @keydown.space.prevent="
+              currentStep >= 2 && scrollTo('#form-step-2', 800, { offset: -20 })
+            "
             @click.prevent="
               currentStep >= 2 && scrollTo('#form-step-2', 800, { offset: -20 })
             "
@@ -568,6 +596,10 @@ const validateStep = async () => {
             id="step-segment-3"
             :class="[currentStep === 3 && 'is-active']"
             class="steps-segment"
+            tabindex="0"
+            @keydown.space.prevent="
+              currentStep >= 3 && scrollTo('#form-step-3', 800, { offset: -20 })
+            "
             @click.prevent="
               currentStep >= 3 && scrollTo('#form-step-3', 800, { offset: -20 })
             "
@@ -582,6 +614,10 @@ const validateStep = async () => {
             id="step-segment-4"
             :class="[currentStep === 4 && 'is-active']"
             class="steps-segment"
+            tabindex="0"
+            @keydown.space.prevent="
+              currentStep >= 4 && scrollTo('#form-step-4', 800, { offset: -20 })
+            "
             @click.prevent="
               currentStep >= 4 && scrollTo('#form-step-4', 800, { offset: -20 })
             "
@@ -599,7 +635,12 @@ const validateStep = async () => {
             id="help-section-0"
             class="form-help-inner is-active"
           >
-            <button class="close-help-button" @click="currentHelp = -1">
+            <button
+              class="close-help-button"
+              tabindex="0"
+              @keydown.space.prevent="currentHelp = -1"
+              @click="currentHelp = -1"
+            >
               <i aria-hidden="true" class="iconify" data-icon="feather:x"></i>
             </button>
             <h3>General Information</h3>
@@ -630,7 +671,12 @@ const validateStep = async () => {
             id="help-section-1"
             class="form-help-inner is-active"
           >
-            <button class="close-help-button" @click="currentHelp = -1">
+            <button
+              class="close-help-button"
+              tabindex="0"
+              @keydown.space.prevent="currentHelp = -1"
+              @click="currentHelp = -1"
+            >
               <i aria-hidden="true" class="iconify" data-icon="feather:x"></i>
             </button>
             <h3>Shipment Owner</h3>
@@ -657,7 +703,12 @@ const validateStep = async () => {
             id="help-section-2"
             class="form-help-inner is-active"
           >
-            <button class="close-help-button" @click="currentHelp = -1">
+            <button
+              class="close-help-button"
+              tabindex="0"
+              @keydown.space.prevent="currentHelp = -1"
+              @click="currentHelp = -1"
+            >
               <i aria-hidden="true" class="iconify" data-icon="feather:x"></i>
             </button>
             <h3>Shipment Taxes</h3>
@@ -688,7 +739,12 @@ const validateStep = async () => {
             id="help-section-3"
             class="form-help-inner is-active"
           >
-            <button class="close-help-button" @click="currentHelp = -1">
+            <button
+              class="close-help-button"
+              tabindex="0"
+              @keydown.space.prevent="currentHelp = -1"
+              @click="currentHelp = -1"
+            >
               <i aria-hidden="true" class="iconify" data-icon="feather:x"></i>
             </button>
             <h3>Options</h3>
@@ -715,7 +771,12 @@ const validateStep = async () => {
             id="help-section-4"
             class="form-help-inner is-active"
           >
-            <button class="close-help-button" @click="currentHelp = -1">
+            <button
+              class="close-help-button"
+              tabindex="0"
+              @keydown.space.prevent="currentHelp = -1"
+              @click="currentHelp = -1"
+            >
               <i aria-hidden="true" class="iconify" data-icon="feather:x"></i>
             </button>
             <h3>Validation</h3>

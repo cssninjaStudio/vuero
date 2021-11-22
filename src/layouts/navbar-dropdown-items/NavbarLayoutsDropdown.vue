@@ -39,23 +39,48 @@ watch([() => route.fullPath, dropdownElement], () => {
           <h4>Select a category</h4>
         </div>
         <div class="category-selector-inner">
-          <div class="category-item" @click="selectedCategory = 'lists'">
+          <div
+            class="category-item"
+            tabindex="0"
+            @keydown.space.prevent="selectedCategory = 'lists'"
+            @click="selectedCategory = 'lists'"
+          >
             <i aria-hidden="true" class="lnil lnil-list-alt"></i>
             <span>Lists</span>
           </div>
-          <div class="category-item" @click="selectedCategory = 'grids'">
+          <div
+            class="category-item"
+            tabindex="0"
+            @keydown.space.prevent="selectedCategory = 'grids'"
+            @click="selectedCategory = 'grids'"
+          >
             <i aria-hidden="true" class="lnil lnil-grid-alt"></i>
             <span>Grids</span>
           </div>
-          <div class="category-item" @click="selectedCategory = 'pages'">
+          <div
+            class="category-item"
+            tabindex="0"
+            @keydown.space.prevent="selectedCategory = 'pages'"
+            @click="selectedCategory = 'pages'"
+          >
             <i aria-hidden="true" class="lnil lnil-layout"></i>
             <span>Pages</span>
           </div>
-          <div class="category-item" @click="selectedCategory = 'subpages'">
+          <div
+            class="category-item"
+            tabindex="0"
+            @keydown.space.prevent="selectedCategory = 'subpages'"
+            @click="selectedCategory = 'subpages'"
+          >
             <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
             <span>Subpages</span>
           </div>
-          <div class="category-item" @click="selectedCategory = 'utility'">
+          <div
+            class="category-item"
+            tabindex="0"
+            @keydown.space.prevent="selectedCategory = 'utility'"
+            @click="selectedCategory = 'utility'"
+          >
             <i aria-hidden="true" class="lnil lnil-reload"></i>
             <span>Utility</span>
           </div>

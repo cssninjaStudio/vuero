@@ -28,6 +28,12 @@ watchEffect(() => {
   <div
     class="inbox-message"
     :class="[conversationId === 2 && 'is-selected', unread && 'is-unread']"
+    @keydown.space.prevent="
+      () => {
+        unread = false
+        emit('update:conversationId', 2)
+      }
+    "
     @click="
       () => {
         unread = false
@@ -54,6 +60,8 @@ watchEffect(() => {
   <div
     class="inbox-message"
     :class="[conversationId === 1 && 'is-selected']"
+    tabindex="0"
+    @keydown.space.prevent="() => emit('update:conversationId', 1)"
     @click="() => emit('update:conversationId', 1)"
   >
     <div class="message-checkbox">
@@ -73,6 +81,8 @@ watchEffect(() => {
   <div
     class="inbox-message"
     :class="[conversationId === 3 && 'is-selected']"
+    tabindex="0"
+    @keydown.space.prevent="() => emit('update:conversationId', 3)"
     @click="() => emit('update:conversationId', 3)"
   >
     <div class="message-checkbox">
@@ -92,6 +102,8 @@ watchEffect(() => {
   <div
     class="inbox-message"
     :class="[conversationId === 4 && 'is-selected']"
+    tabindex="0"
+    @keydown.space.prevent="() => emit('update:conversationId', 4)"
     @click="() => emit('update:conversationId', 4)"
   >
     <div class="message-checkbox">
@@ -111,6 +123,8 @@ watchEffect(() => {
   <div
     class="inbox-message"
     :class="[conversationId === 5 && 'is-selected']"
+    tabindex="0"
+    @keydown.space.prevent="() => emit('update:conversationId', 5)"
     @click="() => emit('update:conversationId', 5)"
   >
     <div class="message-checkbox">
@@ -132,6 +146,8 @@ watchEffect(() => {
   <div
     class="inbox-message"
     :class="[conversationId === 6 && 'is-selected']"
+    tabindex="0"
+    @keydown.space.prevent="() => emit('update:conversationId', 6)"
     @click="() => emit('update:conversationId', 6)"
   >
     <div class="message-checkbox">
@@ -151,6 +167,8 @@ watchEffect(() => {
   <div
     class="inbox-message"
     :class="[conversationId === 7 && 'is-selected']"
+    tabindex="0"
+    @keydown.space.prevent="() => emit('update:conversationId', 7)"
     @click="() => emit('update:conversationId', 7)"
   >
     <div class="message-checkbox">
@@ -170,6 +188,8 @@ watchEffect(() => {
   <div
     class="inbox-message"
     :class="[conversationId === 8 && 'is-selected']"
+    tabindex="0"
+    @keydown.space.prevent="() => emit('update:conversationId', 8)"
     @click="() => emit('update:conversationId', 8)"
   >
     <div class="message-checkbox">
@@ -189,6 +209,8 @@ watchEffect(() => {
   <div
     class="inbox-message"
     :class="[conversationId === 9 && 'is-selected']"
+    tabindex="0"
+    @keydown.space.prevent="() => emit('update:conversationId', 9)"
     @click="() => emit('update:conversationId', 9)"
   >
     <div class="message-checkbox">
@@ -208,6 +230,8 @@ watchEffect(() => {
   <div
     class="inbox-message"
     :class="[conversationId === 10 && 'is-selected']"
+    tabindex="0"
+    @keydown.space.prevent="() => emit('update:conversationId', 10)"
     @click="() => emit('update:conversationId', 10)"
   >
     <div class="message-checkbox">

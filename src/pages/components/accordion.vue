@@ -21,6 +21,8 @@ useHead({
       <!-- Sidebar Trigger -->
       <div
         class="vuero-hamburger nav-trigger push-resize"
+        tabindex="0"
+        @keydown.space.prevent="sidebar.toggle('components')"
         @click="sidebar.toggle('components')"
       >
         <span class="menu-toggle has-chevron">

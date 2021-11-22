@@ -22,7 +22,6 @@ module.exports = {
     'vue/script-setup-uses-vars': 'error',
     'vue/multi-word-component-names': 'off',
 
-    'vuejs-accessibility/click-events-have-key-events': 'off',
     'vuejs-accessibility/form-control-has-label': 'off',
     'vuejs-accessibility/label-has-for': 'off',
     'vuejs-accessibility/anchor-has-content': 'off',

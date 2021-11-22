@@ -43,6 +43,8 @@ const layoutComponent = (slug: string) => {
     <a
       aria-label="Open layout switcher"
       class="icon-link"
+      tabindex="0"
+      @keydown.space.prevent="isModalOpen = true"
       @click.passive="isModalOpen = true"
     >
       <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather:sidebar"></i>
@@ -89,6 +91,12 @@ const layoutComponent = (slug: string) => {
                             layoutSwitcher.navbarLayoutId === 'navbar-default' &&
                             'is-active',
                         ]"
+                        @keydown.space.prevent="
+                          () => {
+                            layoutSwitcher.setSidebarTheme('navbar-default')
+                            isModalOpen = false
+                          }
+                        "
                         @click.passive="
                           () => {
                             layoutSwitcher.setNavbarLayoutId('navbar-default')
@@ -126,6 +134,12 @@ const layoutComponent = (slug: string) => {
                             layoutSwitcher.navbarLayoutId === 'navbar-fade' &&
                             'is-active',
                         ]"
+                        @keydown.space.prevent="
+                          () => {
+                            layoutSwitcher.setSidebarTheme('navbar-fade')
+                            isModalOpen = false
+                          }
+                        "
                         @click.passive="
                           () => {
                             layoutSwitcher.setNavbarLayoutId('navbar-fade')
@@ -163,6 +177,12 @@ const layoutComponent = (slug: string) => {
                             layoutSwitcher.navbarLayoutId === 'navbar-colored' &&
                             'is-active',
                         ]"
+                        @keydown.space.prevent="
+                          () => {
+                            layoutSwitcher.setSidebarTheme('navbar-colored')
+                            isModalOpen = false
+                          }
+                        "
                         @click.passive="
                           () => {
                             layoutSwitcher.setNavbarLayoutId('navbar-colored')
@@ -205,6 +225,12 @@ const layoutComponent = (slug: string) => {
                             layoutSwitcher.navbarLayoutId === 'navbar-dropdown' &&
                             'is-active',
                         ]"
+                        @keydown.space.prevent="
+                          () => {
+                            layoutSwitcher.setSidebarTheme('navbar-dropdown')
+                            isModalOpen = false
+                          }
+                        "
                         @click.passive="
                           () => {
                             layoutSwitcher.setNavbarLayoutId('navbar-dropdown')
@@ -242,6 +268,12 @@ const layoutComponent = (slug: string) => {
                             layoutSwitcher.navbarLayoutId === 'navbar-dropdown-colored' &&
                             'is-active',
                         ]"
+                        @keydown.space.prevent="
+                          () => {
+                            layoutSwitcher.setSidebarTheme('navbar-dropdown-colored')
+                            isModalOpen = false
+                          }
+                        "
                         @click.passive="
                           () => {
                             layoutSwitcher.setNavbarLayoutId('navbar-dropdown-colored')
@@ -284,6 +316,12 @@ const layoutComponent = (slug: string) => {
                             layoutSwitcher.navbarLayoutId === 'navbar-clean' &&
                             'is-active',
                         ]"
+                        @keydown.space.prevent="
+                          () => {
+                            layoutSwitcher.setSidebarTheme('navbar-clean')
+                            isModalOpen = false
+                          }
+                        "
                         @click.passive="
                           () => {
                             layoutSwitcher.setNavbarLayoutId('navbar-clean')
@@ -321,6 +359,12 @@ const layoutComponent = (slug: string) => {
                             layoutSwitcher.navbarLayoutId === 'navbar-clean-center' &&
                             'is-active',
                         ]"
+                        @keydown.space.prevent="
+                          () => {
+                            layoutSwitcher.setSidebarTheme('navbar-clean-center')
+                            isModalOpen = false
+                          }
+                        "
                         @click.passive="
                           () => {
                             layoutSwitcher.setNavbarLayoutId('navbar-clean-center')
@@ -358,6 +402,12 @@ const layoutComponent = (slug: string) => {
                             layoutSwitcher.navbarLayoutId === 'navbar-clean-fade' &&
                             'is-active',
                         ]"
+                        @keydown.space.prevent="
+                          () => {
+                            layoutSwitcher.setSidebarTheme('navbar-clean-fade')
+                            isModalOpen = false
+                          }
+                        "
                         @click.passive="
                           () => {
                             layoutSwitcher.setNavbarLayoutId('navbar-clean-fade')
@@ -400,9 +450,15 @@ const layoutComponent = (slug: string) => {
                             layoutSwitcher.sidebarTheme === 'default' &&
                             'is-active',
                         ]"
+                        @keydown.space.prevent="
+                          () => {
+                            layoutSwitcher.setSidebarTheme('default')
+                            isModalOpen = false
+                          }
+                        "
                         @click.passive="
                           () => {
-                            layoutSwitcher.sidebarTheme = 'default'
+                            layoutSwitcher.setSidebarTheme('default')
                             isModalOpen = false
                           }
                         "
@@ -437,9 +493,15 @@ const layoutComponent = (slug: string) => {
                             layoutSwitcher.sidebarTheme === 'color' &&
                             'is-active',
                         ]"
+                        @keydown.space.prevent="
+                          () => {
+                            layoutSwitcher.setSidebarTheme('color')
+                            isModalOpen = false
+                          }
+                        "
                         @click.passive="
                           () => {
-                            layoutSwitcher.sidebarTheme = 'color'
+                            layoutSwitcher.setSidebarTheme('color')
                             isModalOpen = false
                           }
                         "
@@ -474,9 +536,15 @@ const layoutComponent = (slug: string) => {
                             layoutSwitcher.sidebarTheme === 'curved' &&
                             'is-active',
                         ]"
+                        @keydown.space.prevent="
+                          () => {
+                            layoutSwitcher.setSidebarTheme('curved')
+                            isModalOpen = false
+                          }
+                        "
                         @click.passive="
                           () => {
-                            layoutSwitcher.sidebarTheme = 'curved'
+                            layoutSwitcher.setSidebarTheme('curved')
                             isModalOpen = false
                           }
                         "
@@ -511,9 +579,15 @@ const layoutComponent = (slug: string) => {
                             layoutSwitcher.sidebarTheme === 'color-curved' &&
                             'is-active',
                         ]"
+                        @keydown.space.prevent="
+                          () => {
+                            layoutSwitcher.setSidebarTheme('color-curved')
+                            isModalOpen = false
+                          }
+                        "
                         @click.passive="
                           () => {
-                            layoutSwitcher.sidebarTheme = 'color-curved'
+                            layoutSwitcher.setSidebarTheme('color-curved')
                             isModalOpen = false
                           }
                         "
@@ -548,9 +622,15 @@ const layoutComponent = (slug: string) => {
                             layoutSwitcher.sidebarTheme === 'labels' &&
                             'is-active',
                         ]"
+                        @keydown.space.prevent="
+                          () => {
+                            layoutSwitcher.setSidebarTheme('labels')
+                            isModalOpen = false
+                          }
+                        "
                         @click.passive="
                           () => {
-                            layoutSwitcher.sidebarTheme = 'labels'
+                            layoutSwitcher.setSidebarTheme('labels')
                             isModalOpen = false
                           }
                         "
@@ -585,9 +665,15 @@ const layoutComponent = (slug: string) => {
                             layoutSwitcher.sidebarTheme === 'labels-hover' &&
                             'is-active',
                         ]"
+                        @keydown.space.prevent="
+                          () => {
+                            layoutSwitcher.setSidebarTheme('labels-hover')
+                            isModalOpen = false
+                          }
+                        "
                         @click.passive="
                           () => {
-                            layoutSwitcher.sidebarTheme = 'labels-hover'
+                            layoutSwitcher.setSidebarTheme('labels-hover')
                             isModalOpen = false
                           }
                         "
@@ -622,9 +708,15 @@ const layoutComponent = (slug: string) => {
                             layoutSwitcher.sidebarTheme === 'float' &&
                             'is-active',
                         ]"
+                        @keydown.space.prevent="
+                          () => {
+                            layoutSwitcher.setSidebarTheme('float')
+                            isModalOpen = false
+                          }
+                        "
                         @click.passive="
                           () => {
-                            layoutSwitcher.sidebarTheme = 'float'
+                            layoutSwitcher.setSidebarTheme('float')
                             isModalOpen = false
                           }
                         "

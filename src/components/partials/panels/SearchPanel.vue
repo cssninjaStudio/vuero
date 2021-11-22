@@ -36,12 +36,22 @@ function getAvatarData(user: UserPopover): VAvatarProps {
     :class="[panels.active === 'search' && 'is-active']"
     class="right-panel-wrapper is-search is-left"
   >
-    <div class="panel-overlay" @click="panels.close()"></div>
+    <div
+      class="panel-overlay"
+      tabindex="0"
+      @keydown.space.prevent="panels.close()"
+      @click="panels.close()"
+    ></div>
 
     <div class="right-panel">
       <div class="right-panel-head">
         <AnimatedLogo width="38px" height="38px" />
-        <a class="close-panel" @click="panels.close()">
+        <a
+          class="close-panel"
+          tabindex="0"
+          @keydown.space.prevent="panels.close()"
+          @click="panels.close()"
+        >
           <i aria-hidden="true" class="iconify" data-icon="feather:chevron-left"></i>
         </a>
       </div>

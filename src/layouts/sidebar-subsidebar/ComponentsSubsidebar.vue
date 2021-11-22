@@ -6,7 +6,12 @@ const emit = defineEmits(['close'])
   <div class="sidebar-panel is-generic">
     <div class="subpanel-header">
       <h3 class="no-mb">Components</h3>
-      <div class="panel-close" @click="emit('close')">
+      <div
+        class="panel-close"
+        tabindex="0"
+        @keydown.space.prevent="emit('close')"
+        @click="emit('close')"
+      >
         <i aria-hidden="true" class="iconify" data-icon="feather:x"></i>
       </div>
     </div>

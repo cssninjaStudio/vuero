@@ -40,7 +40,7 @@ function switchSidebar(id: string) {
  * watchPostEffect callback will be executed each time dependent reactive values has changed
  */
 watchPostEffect(() => {
-  viewWrapper.setPushed(isDesktopSidebarOpen.value)
+  viewWrapper.setPushed(isDesktopSidebarOpen.value ?? false)
 })
 watch(
   () => route.fullPath,
@@ -85,6 +85,8 @@ watch(
           <a
             :class="[activeMobileSubsidebar === 'dashboard' && 'is-active']"
             aria-label="Display dashboard content"
+            tabindex="0"
+            @keydown.space.prevent="activeMobileSubsidebar = 'dashboard'"
             @click="activeMobileSubsidebar = 'dashboard'"
           >
             <i aria-hidden="true" class="iconify" data-icon="feather:activity"></i>
@@ -94,6 +96,8 @@ watch(
           <a
             aria-label="Dsiplay layout content"
             :class="[activeMobileSubsidebar === 'layout' && 'is-active']"
+            tabindex="0"
+            @keydown.space.prevent="activeMobileSubsidebar = 'layout'"
             @click="activeMobileSubsidebar = 'layout'"
           >
             <i aria-hidden="true" class="iconify" data-icon="feather:grid"></i>
@@ -103,6 +107,8 @@ watch(
           <a
             aria-label="Dsiplay element content"
             :class="[activeMobileSubsidebar === 'elements' && 'is-active']"
+            tabindex="0"
+            @keydown.space.prevent="activeMobileSubsidebar = 'elements'"
             @click="activeMobileSubsidebar = 'elements'"
           >
             <i aria-hidden="true" class="iconify" data-icon="feather:box"></i>
@@ -112,6 +118,8 @@ watch(
           <a
             aria-label="Dsiplay components content"
             :class="[activeMobileSubsidebar === 'components' && 'is-active']"
+            tabindex="0"
+            @keydown.space.prevent="activeMobileSubsidebar = 'components'"
             @click="activeMobileSubsidebar = 'components'"
           >
             <i aria-hidden="true" class="iconify" data-icon="feather:cpu"></i>
@@ -126,7 +134,12 @@ watch(
 
       <template #bottom-links>
         <li>
-          <a aria-label="Display search panel" @click="panels.setActive('search')">
+          <a
+            aria-label="Display search panel"
+            tabindex="0"
+            @keydown.space.prevent="panels.setActive('search')"
+            @click="panels.setActive('search')"
+          >
             <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
           </a>
         </li>
@@ -327,6 +340,8 @@ watch(
             <!-- Sidebar Trigger -->
             <div
               class="vuero-hamburger nav-trigger push-resize"
+              tabindex="0"
+              @keydown.space.prevent="isDesktopSidebarOpen = !isDesktopSidebarOpen"
               @click="isDesktopSidebarOpen = !isDesktopSidebarOpen"
             >
               <span class="menu-toggle has-chevron">
@@ -350,6 +365,8 @@ watch(
               <a
                 class="toolbar-link right-panel-trigger"
                 aria-label="View activity panel"
+                tabindex="0"
+                @keydown.space.prevent="panels.setActive('activity')"
                 @click="panels.setActive('activity')"
               >
                 <i aria-hidden="true" class="iconify" data-icon="feather:grid"></i>

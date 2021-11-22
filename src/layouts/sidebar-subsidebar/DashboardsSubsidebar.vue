@@ -8,7 +8,12 @@ const emit = defineEmits(['close'])
       <ProjectsQuickDropdown />
 
       <h3 class="no-mb">Dashboards</h3>
-      <div class="panel-close" @click="emit('close')">
+      <div
+        class="panel-close"
+        tabindex="0"
+        @keydown.space.prevent="emit('close')"
+        @click="emit('close')"
+      >
         <i aria-hidden="true" class="iconify" data-icon="feather:x"></i>
       </div>
     </div>

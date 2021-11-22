@@ -19,10 +19,6 @@
         font-weight: 500;
         color: var(--dark-text);
       }
-
-      .close {
-        outline: none !important;
-      }
     }
 
     .note-modal-body {
@@ -194,7 +190,6 @@
       .se-toolbar {
         background: var(--dark-sidebar-dark-2);
         border-color: var(--dark-sidebar-light-12);
-        outline: none;
 
         &.se-toolbar-balloon {
           box-shadow: var(--light-box-shadow) !important;

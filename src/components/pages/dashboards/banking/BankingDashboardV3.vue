@@ -117,7 +117,7 @@ import { popovers } from '/@src/data/users/userPopovers'
         <div class="dashboard-card is-side">
           <div class="subheading-wrap">
             <h4 class="subheading dark-inverted">Followers</h4>
-            <a href="#" class="action-link">View All</a>
+            <a class="action-link" tabindex="0">View All</a>
           </div>
 
           <div class="people">
@@ -183,7 +183,7 @@ import { popovers } from '/@src/data/users/userPopovers'
         <div class="dashboard-card is-side">
           <div class="subheading-wrap">
             <h4 class="subheading dark-inverted">Popular Coins</h4>
-            <a href="#" class="action-link">View All</a>
+            <a class="action-link" tabindex="0">View All</a>
           </div>
 
           <VBlock title="Monero" subtitle="XMR" center>

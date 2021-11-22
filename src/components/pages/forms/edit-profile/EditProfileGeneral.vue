@@ -68,7 +68,14 @@ const onSave = async () => {
             >
               Go Back
             </VButton>
-            <VButton color="primary" raised :loading="isLoading" @click="onSave">
+            <VButton
+              color="primary"
+              raised
+              :loading="isLoading"
+              tabindex="0"
+              @keydown.space.prevent="onSave"
+              @click="onSave"
+            >
               Save Changes
             </VButton>
           </div>
@@ -116,6 +123,8 @@ const onSave = async () => {
               icon="feather:edit-2"
               class="edit-button is-edit"
               circle
+              tabindex="0"
+              @keydown.space.prevent="isUploading = true"
               @click="isUploading = true"
             />
             <VIconButton
@@ -123,6 +132,8 @@ const onSave = async () => {
               icon="feather:arrow-left"
               class="edit-button is-back"
               circle
+              tabindex="0"
+              @keydown.space.prevent="isUploading = false"
               @click="isUploading = false"
             />
           </template>

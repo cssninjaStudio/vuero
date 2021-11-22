@@ -56,6 +56,8 @@ onUnmounted(() => {
             data-target-section="subsection-1"
             class="tab-item"
             :class="[tab === 'posts' && 'is-active']"
+            tabindex="0"
+            @keydown.space.prevent="tab = 'posts'"
             @click="tab = 'posts'"
           >
             <i aria-hidden="true" class="iconify" data-icon="feather:activity"></i>
@@ -64,6 +66,8 @@ onUnmounted(() => {
             data-target-section="subsection-2"
             class="tab-item"
             :class="[tab === 'projects' && 'is-active']"
+            tabindex="0"
+            @keydown.space.prevent="tab = 'projects'"
             @click="tab = 'projects'"
           >
             <i aria-hidden="true" class="iconify" data-icon="feather:briefcase"></i>
@@ -72,6 +76,8 @@ onUnmounted(() => {
             data-target-section="subsection-3"
             class="tab-item"
             :class="[tab === 'tasks' && 'is-active']"
+            tabindex="0"
+            @keydown.space.prevent="tab = 'tasks'"
             @click="tab = 'tasks'"
           >
             <i aria-hidden="true" class="iconify" data-icon="feather:check-circle"></i>

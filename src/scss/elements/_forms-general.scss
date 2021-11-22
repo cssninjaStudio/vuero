@@ -1609,7 +1609,6 @@ select {
     height: 5px;
     border-radius: 5px;
     background: var(--primary-grey);
-    outline: none;
 
     &:focus {
       &::-webkit-slider-thumb {

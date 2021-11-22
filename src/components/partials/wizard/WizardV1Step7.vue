@@ -58,7 +58,12 @@ watchEffect(async () => {
           <span v-if="wizard.data.name">{{ wizard.data.name }}</span>
           <span v-else>Project Title Goes Here</span>
 
-          <a class="edit-icon" @click="wizard.setStep(2)">
+          <a
+            class="edit-icon"
+            tabindex="0"
+            @keydown.space.prevent="wizard.setStep(2)"
+            @click="wizard.setStep(2)"
+          >
             <i aria-hidden="true" class="lnil lnil-pencil"></i>
           </a>
         </h3>
@@ -70,7 +75,12 @@ watchEffect(async () => {
             <div class="edit-box">
               <h4>Description</h4>
 
-              <a class="edit-icon" @click="wizard.setStep(2)">
+              <a
+                class="edit-icon"
+                tabindex="0"
+                @keydown.space.prevent="wizard.setStep(2)"
+                @click="wizard.setStep(2)"
+              >
                 <i aria-hidden="true" class="lnil lnil-pencil"></i>
               </a>
 
@@ -86,7 +96,12 @@ watchEffect(async () => {
           </div>
           <div class="column is-6 is-tablet-50">
             <div class="edit-box">
-              <a class="edit-icon" @click="wizard.setStep(1)">
+              <a
+                class="edit-icon"
+                tabindex="0"
+                @keydown.space.prevent="wizard.setStep(1)"
+                @click="wizard.setStep(1)"
+              >
                 <i aria-hidden="true" class="lnil lnil-pencil"></i>
               </a>
               <VBlock :title="wizard.data.relatedTo" subtitle="Project Type" center>
@@ -101,7 +116,12 @@ watchEffect(async () => {
 
           <div class="column is-6 is-tablet-50">
             <div class="edit-box">
-              <a class="edit-icon" @click="wizard.setStep(3)">
+              <a
+                class="edit-icon"
+                tabindex="0"
+                @keydown.space.prevent="wizard.setStep(3)"
+                @click="wizard.setStep(3)"
+              >
                 <i aria-hidden="true" class="lnil lnil-pencil"></i>
               </a>
               <VBlock
@@ -122,7 +142,12 @@ watchEffect(async () => {
 
           <div class="column is-4 is-tablet-33">
             <div class="edit-box">
-              <a class="edit-icon" @click="wizard.setStep(3)">
+              <a
+                class="edit-icon"
+                tabindex="0"
+                @keydown.space.prevent="wizard.setStep(3)"
+                @click="wizard.setStep(3)"
+              >
                 <i aria-hidden="true" class="lnil lnil-pencil"></i>
               </a>
               <div class="estimated-budget">
@@ -138,7 +163,12 @@ watchEffect(async () => {
 
           <div class="column is-4 is-tablet-33">
             <div class="edit-box">
-              <a class="edit-icon" @click="wizard.setStep(3)">
+              <a
+                class="edit-icon"
+                tabindex="0"
+                @keydown.space.prevent="wizard.setStep(3)"
+                @click="wizard.setStep(3)"
+              >
                 <i aria-hidden="true" class="lnil lnil-pencil"></i>
               </a>
               <div class="estimated-due-date">
@@ -154,7 +184,12 @@ watchEffect(async () => {
 
           <div class="column is-4 is-tablet-33">
             <div class="edit-box">
-              <a class="edit-icon" @click="wizard.setStep(4)">
+              <a
+                class="edit-icon"
+                tabindex="0"
+                @keydown.space.prevent="wizard.setStep(4)"
+                @click="wizard.setStep(4)"
+              >
                 <i aria-hidden="true" class="lnil lnil-pencil"></i>
               </a>
               <div class="attachments-count">
@@ -175,7 +210,12 @@ watchEffect(async () => {
             <div class="edit-box">
               <h4>Team</h4>
 
-              <a class="edit-icon" @click="wizard.setStep(5)">
+              <a
+                class="edit-icon"
+                tabindex="0"
+                @keydown.space.prevent="wizard.setStep(5)"
+                @click="wizard.setStep(5)"
+              >
                 <i aria-hidden="true" class="lnil lnil-pencil"></i>
               </a>
 
@@ -210,7 +250,12 @@ watchEffect(async () => {
             <div class="edit-box">
               <h4>Tools</h4>
 
-              <a class="edit-icon" @click="wizard.setStep(6)">
+              <a
+                class="edit-icon"
+                tabindex="0"
+                @keydown.space.prevent="wizard.setStep(6)"
+                @click="wizard.setStep(6)"
+              >
                 <i aria-hidden="true" class="lnil lnil-pencil"></i>
               </a>
 

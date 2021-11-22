@@ -27,6 +27,8 @@ const sidebar = useSidebar()
 
       <div
         class="vuero-hamburger nav-trigger push-resize messages-push"
+        tabindex="0"
+        @keydown.space.prevent="sidebar.toggle('messages')"
         @click="sidebar.toggle('messages')"
       >
         <span class="menu-toggle has-chevron">
@@ -56,6 +58,8 @@ const sidebar = useSidebar()
           v-for="conversation in conversations"
           :key="conversation.id"
           :class="[selectedConversationId === conversation.id && 'is-active']"
+          tabindex="0"
+          @keydown.space.prevent="() => emit('selectConversation', conversation.id)"
           @click="() => emit('selectConversation', conversation.id)"
         >
           <div class="recent-user">

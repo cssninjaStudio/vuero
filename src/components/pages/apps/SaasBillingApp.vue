@@ -60,6 +60,8 @@ const randomCard = () => {
                 type="radio"
                 name="plan_selection"
                 :checked="selectedPlanId === plan.id"
+                tabindex="0"
+                @keydown.space.prevent="selectedPlanId = plan.id"
                 @click="selectedPlanId = plan.id"
               />
               <div class="plan-inner">
@@ -227,7 +229,9 @@ const randomCard = () => {
         <div class="payment-form">
           <div class="form-header">
             <h3>Payment information</h3>
-            <span @click="randomCard">Randomize</span>
+            <span tabindex="0" @keydown.space.prevent="randomCard" @click="randomCard">
+              Randomize
+            </span>
           </div>
 
           <VCreditCard
@@ -607,7 +611,6 @@ const randomCard = () => {
               border-radius: var(--radius-rounded);
               border: 1.6px dashed var(--light-text);
               color: var(--light-text);
-              outline: none;
               padding: 0;
               background: none;
               margin-left: 4px;

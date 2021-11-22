@@ -11,10 +11,20 @@ const activeTab = ref<TabId>('interaction')
       <div class="tabs is-centered is-4">
         <ul>
           <li :class="[activeTab === 'interaction' && 'is-active']">
-            <a @click="activeTab = 'interaction'">Interaction</a>
+            <a
+              tabindex="0"
+              @keydown.space.prevent="activeTab = 'interaction'"
+              @click="activeTab = 'interaction'"
+              >Interaction</a
+            >
           </li>
           <li :class="[activeTab === 'advanced' && 'is-active']">
-            <a @click="activeTab = 'advanced'">Advanced</a>
+            <a
+              tabindex="0"
+              @keydown.space.prevent="activeTab = 'advanced'"
+              @click="activeTab = 'advanced'"
+              >Advanced</a
+            >
           </li>
         </ul>
       </div>

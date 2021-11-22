@@ -43,7 +43,12 @@ const localFlagSrc = computed(() => {
       </label>
     </div>
 
-    <a class="toolbar-link right-panel-trigger" @click="panels.setActive('languages')">
+    <a
+      class="toolbar-link right-panel-trigger"
+      tabindex="0"
+      @keydown.space.prevent="panels.setActive('languages')"
+      @click="panels.setActive('languages')"
+    >
       <img :src="localFlagSrc" alt="" />
     </a>
 
@@ -150,7 +155,13 @@ const localFlagSrc = computed(() => {
       </div>
     </div>
 
-    <a id="hide-chat-side" class="toolbar-link" @click="emit('close')">
+    <a
+      id="hide-chat-side"
+      class="toolbar-link"
+      tabindex="0"
+      @keydown.space.prevent="emit('close')"
+      @click="emit('close')"
+    >
       <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right"></i>
     </a>
   </div>

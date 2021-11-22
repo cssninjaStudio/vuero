@@ -40,17 +40,32 @@ watch([() => route.fullPath, dropdownElement], () => {
         </div>
         <div class="category-selector-inner">
           <!-- Interaction Item -->
-          <div class="category-item" @click="selectedCategory = 'interaction'">
+          <div
+            class="category-item"
+            tabindex="0"
+            @keydown.space.prevent="selectedCategory = 'interaction'"
+            @click="selectedCategory = 'interaction'"
+          >
             <i aria-hidden="true" class="lnil lnil-pointer-top"></i>
             <span>Interaction</span>
           </div>
           <!-- Advanced Item -->
-          <div class="category-item" @click="selectedCategory = 'advanced'">
+          <div
+            class="category-item"
+            tabindex="0"
+            @keydown.space.prevent="selectedCategory = 'advanced'"
+            @click="selectedCategory = 'advanced'"
+          >
             <i aria-hidden="true" class="lnil lnil-Website"></i>
             <span>Advanced</span>
           </div>
           <!-- Addons Item -->
-          <div class="category-item" @click="selectedCategory = 'addons'">
+          <div
+            class="category-item"
+            tabindex="0"
+            @keydown.space.prevent="selectedCategory = 'addons'"
+            @click="selectedCategory = 'addons'"
+          >
             <i aria-hidden="true" class="lnil lnil-code"></i>
             <span>Addons</span>
           </div>

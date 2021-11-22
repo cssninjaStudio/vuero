@@ -176,6 +176,8 @@ watchPostEffect(() => {
             <div class="page-title has-text-centered is-hidden">
               <div
                 class="vuero-hamburger nav-trigger push-resize"
+                tabindex="0"
+                @keydown.space.prevent="sidebar.toggle('messages')"
                 @click="sidebar.toggle('messages')"
               >
                 <span class="menu-toggle has-chevron">
@@ -216,7 +218,12 @@ watchPostEffect(() => {
                     <div class="icon">
                       <span>To:</span>
                     </div>
-                    <div class="hide" @click="addConversationOpen = false">
+                    <div
+                      class="hide"
+                      tabindex="0"
+                      @keydown.space.prevent="addConversationOpen = false"
+                      @click="addConversationOpen = false"
+                    >
                       <i aria-hidden="true" class="iconify" data-icon="feather:x"></i>
                     </div>
                   </div>
@@ -608,6 +615,10 @@ watchPostEffect(() => {
         :class="[mobileConversationDetailsOpen && 'is-mobile-active']"
         class="chat-side-fab"
         aria-label="Close convesation details"
+        tabindex="0"
+        @keydown.space.prevent="
+          mobileConversationDetailsOpen = !mobileConversationDetailsOpen
+        "
         @click="mobileConversationDetailsOpen = !mobileConversationDetailsOpen"
       >
         <i aria-hidden="true" class="iconify" data-icon="feather:chevron-left"></i>

@@ -16,6 +16,12 @@ $dayBtn: #ffb62e;
   cursor: pointer;
   transform: translate3d(0, 0, 0);
 
+  &:focus-visible {
+    border-radius: 50px;
+    outline-offset: 20px;
+    outline-width: 2px;
+  }
+
   input {
     display: none;
 

@@ -68,7 +68,14 @@ const onSave = async () => {
             >
               Go Back
             </VButton>
-            <VButton color="primary" raised :loading="isLoading" @click="onSave">
+            <VButton
+              color="primary"
+              raised
+              :loading="isLoading"
+              tabindex="0"
+              @keydown.space.prevent="onSave"
+              @click="onSave"
+            >
               Save Changes
             </VButton>
           </div>
@@ -83,7 +90,14 @@ const onSave = async () => {
           <p>This will help others assess your experience</p>
         </div>
         <div v-else class="fieldset-heading">
-          <a class="action-link" @click="isUploading = false">Cancel</a>
+          <a
+            class="action-link"
+            tabindex="0"
+            @keydown.space.prevent="isUploading = false"
+            @click="isUploading = false"
+          >
+            Cancel
+          </a>
         </div>
 
         <div class="setting-list">
@@ -319,6 +333,8 @@ const onSave = async () => {
                   dark-outlined
                   icon="fas fa-plus"
                   class="add-setting-item"
+                  tabindex="0"
+                  @keydown.space.prevent="isUploading = true"
                   @click="isUploading = true"
                 >
                   Add

@@ -11,10 +11,20 @@ const activeTab = ref<TabId>('display')
       <div class="tabs is-centered is-4">
         <ul>
           <li :class="[activeTab === 'display' && 'is-active']">
-            <a @click="activeTab = 'display'">Display</a>
+            <a
+              tabindex="0"
+              @keydown.space.prevent="activeTab = 'display'"
+              @click="activeTab = 'display'"
+              >Display</a
+            >
           </li>
           <li :class="[activeTab === 'layout' && 'is-active']">
-            <a @click="activeTab = 'layout'">Layout</a>
+            <a
+              tabindex="0"
+              @keydown.space.prevent="activeTab = 'layout'"
+              @click="activeTab = 'layout'"
+              >Layout</a
+            >
           </li>
         </ul>
       </div>

@@ -38,7 +38,7 @@ function switchSidebar(id: string) {
  * watchPostEffect callback will be executed each time dependent reactive values has changed
  */
 watchPostEffect(() => {
-  viewWrapper.setPushed(isDesktopSidebarOpen.value)
+  viewWrapper.setPushed(isDesktopSidebarOpen.value ?? false)
 })
 watch(
   () => route.fullPath,
@@ -109,6 +109,8 @@ watch(
           <a
             :class="[activeMobileSubsidebar === 'dashboard' && 'is-active']"
             data-content="Dashboards"
+            tabindex="0"
+            @keydown.space.prevent="switchSidebar('dashboard')"
             @click="switchSidebar('dashboard')"
           >
             <i
@@ -140,6 +142,8 @@ watch(
             <!-- Sidebar Trigger -->
             <div
               class="vuero-hamburger nav-trigger push-resize"
+              tabindex="0"
+              @keydown.space.prevent="isDesktopSidebarOpen = !isDesktopSidebarOpen"
               @click="isDesktopSidebarOpen = !isDesktopSidebarOpen"
             >
               <span class="menu-toggle has-chevron">

@@ -34,7 +34,7 @@ const democheck = ref(['value_2'])
           <div class="user-action">
             <h3 class="title is-2 is-narrow">3</h3>
             <p class="light-text">Tasks are pending review</p>
-            <a class="action-link">View Tasks</a>
+            <a class="action-link" tabindex="0">View Tasks</a>
           </div>
           <div class="cta h-hidden-tablet-p">
             <div class="media-flex inverted-text">
@@ -50,7 +50,7 @@ const democheck = ref(['value_2'])
         <div class="dashboard-card has-margin-bottom">
           <div class="card-head">
             <h3 class="dark-inverted">Active Projects</h3>
-            <a class="action-link">View All</a>
+            <a class="action-link" tabindex="0">View All</a>
           </div>
           <div class="active-projects">
             <!--Project-->
@@ -122,7 +122,7 @@ const democheck = ref(['value_2'])
         <div class="dashboard-card">
           <div class="card-head">
             <h3 class="dark-inverted">Task Completion</h3>
-            <a class="action-link">Reports</a>
+            <a class="action-link" tabindex="0">Reports</a>
           </div>
           <ApexChart
             id="completion-chart"
@@ -137,7 +137,7 @@ const democheck = ref(['value_2'])
         <div class="dashboard-card">
           <div class="card-head">
             <h3 class="dark-inverted">Team Efficiency</h3>
-            <a class="action-link">Reports</a>
+            <a class="action-link" tabindex="0">Reports</a>
           </div>
           <ApexChart
             id="efficiency-chart"
@@ -154,7 +154,7 @@ const democheck = ref(['value_2'])
         <div class="dashboard-card">
           <div class="card-head">
             <h3 class="dark-inverted">My Team</h3>
-            <a class="action-link">View All</a>
+            <a class="action-link" tabindex="0">View All</a>
           </div>
           <div class="active-team">
             <ul class="user-list">
@@ -229,7 +229,7 @@ const democheck = ref(['value_2'])
         <div class="dashboard-card">
           <div class="card-head">
             <h3 class="dark-inverted">Todo Today</h3>
-            <a class="action-link">View All</a>
+            <a class="action-link" tabindex="0">View All</a>
           </div>
           <div class="active-list">
             <div class="checkboxes-list">

@@ -244,7 +244,6 @@ import {
           margin: 0 0.35rem;
 
           button {
-            outline: none;
             border: none;
             background: var(--primary);
             box-shadow: var(--primary-box-shadow);
@@ -332,7 +331,6 @@ import {
             justify-content: center;
             align-items: center;
             border: none;
-            outline: none;
             border-radius: 0.75rem;
             z-index: 3;
             cursor: pointer;

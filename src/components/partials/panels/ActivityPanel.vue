@@ -15,12 +15,22 @@ const activeTab = ref<TabId>('team')
     :class="[panels.active === 'activity' && 'is-active']"
     class="right-panel-wrapper is-activity"
   >
-    <div class="panel-overlay" @click="panels.close()"></div>
+    <div
+      class="panel-overlay"
+      tabindex="0"
+      @keydown.space.prevent="panels.close()"
+      @click="panels.close()"
+    ></div>
 
     <div class="right-panel">
       <div class="right-panel-head">
         <h3>Activity</h3>
-        <a class="close-panel" @click="panels.close()">
+        <a
+          class="close-panel"
+          tabindex="0"
+          @keydown.space.prevent="panels.close()"
+          @click="panels.close()"
+        >
           <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right"></i>
         </a>
       </div>
@@ -29,13 +39,28 @@ const activeTab = ref<TabId>('team')
           <div class="tabs">
             <ul>
               <li :class="[activeTab === 'team' && 'is-active']">
-                <a @click="activeTab = 'team'"><span>Team</span></a>
+                <a
+                  tabindex="0"
+                  @keydown.space.prevent="activeTab = 'team'"
+                  @click="activeTab = 'team'"
+                  ><span>Team</span></a
+                >
               </li>
               <li :class="[activeTab === 'projects' && 'is-active']">
-                <a @click="activeTab = 'projects'"><span>Projects</span></a>
+                <a
+                  tabindex="0"
+                  @keydown.space.prevent="activeTab = 'projects'"
+                  @click="activeTab = 'projects'"
+                  ><span>Projects</span></a
+                >
               </li>
               <li :class="[activeTab === 'schedule' && 'is-active']">
-                <a @click="activeTab = 'schedule'"><span>Schedule</span></a>
+                <a
+                  tabindex="0"
+                  @keydown.space.prevent="activeTab = 'schedule'"
+                  @click="activeTab = 'schedule'"
+                  ><span>Schedule</span></a
+                >
               </li>
               <li class="tab-naver"></li>
             </ul>

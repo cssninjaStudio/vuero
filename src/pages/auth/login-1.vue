@@ -154,7 +154,12 @@ useHead({
                   </span>
                 </label>
                 <div class="remember-me">Remember Me</div>
-                <a @click="step = 'forgot-password'">Forgot Password?</a>
+                <a
+                  tabindex="0"
+                  @keydown.space.prevent="step = 'forgot-password'"
+                  @click="step = 'forgot-password'"
+                  >Forgot Password?</a
+                >
               </div>
               <div class="button-wrap has-help">
                 <VButton

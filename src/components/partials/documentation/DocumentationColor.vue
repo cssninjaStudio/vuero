@@ -68,7 +68,7 @@ function updateColor({ colors }: any) {
         <span>{{ colorVar }}</span>
       </div>
       <div class="actions">
-        <VAction @click="toggle">
+        <VAction tabindex="0" @keydown.space.prevent="toggle" @click="toggle">
           <span v-if="isOpen">Close</span>
           <span v-else>Customize</span>
         </VAction>

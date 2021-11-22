@@ -317,7 +317,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
               <div class="section-title">
                 <h4>Recommendations</h4>
                 <a><i aria-hidden="true" class="lnil lnil-pencil"></i></a>
-                <a class="action-link">View All</a>
+                <a class="action-link" tabindex="0">View All</a>
               </div>
               <div class="section-content">
                 <div class="recommendations-wrapper">
@@ -395,7 +395,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                 <RouterLink :to="{ name: 'sidebar-layouts-profile-edit-skills' }">
                   <i aria-hidden="true" class="lnil lnil-pencil"></i>
                 </RouterLink>
-                <a class="action-link">View All</a>
+                <a class="action-link" tabindex="0">View All</a>
               </div>
               <div class="section-content">
                 <div class="tools-wrapper">
@@ -471,7 +471,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
             <div class="profile-card-section no-padding">
               <div class="section-title">
                 <h4>Recent Views</h4>
-                <a class="action-link">View All</a>
+                <a class="action-link" tabindex="0">View All</a>
               </div>
               <div class="section-content">
                 <div class="people-wrapper">

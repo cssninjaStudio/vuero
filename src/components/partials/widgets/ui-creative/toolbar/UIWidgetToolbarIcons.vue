@@ -20,6 +20,8 @@ const currentTab = ref(props.activeTab)
       <a
         class="inner-icon"
         :class="{ 'is-active': currentTab === index }"
+        tabindex="0"
+        @keydown.space.prevent="currentTab = index"
         @click="currentTab = index"
       >
         <i aria-hidden="true" class="iconify" :data-icon="tab.icon"></i>

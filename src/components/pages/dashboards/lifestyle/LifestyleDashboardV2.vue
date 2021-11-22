@@ -19,7 +19,7 @@ const topicList = dashboardData.topicList as any[]
         </p>
       </div>
       <div class="right">
-        <a class="action-link">View All</a>
+        <a class="action-link" tabindex="0">View All</a>
       </div>
     </div>
 
@@ -205,7 +205,7 @@ const topicList = dashboardData.topicList as any[]
                   <p class="h-hidden-mobile">Our popular best sellers</p>
                 </div>
                 <div class="right">
-                  <a class="action-link">View All</a>
+                  <a class="action-link" tabindex="0">View All</a>
                 </div>
               </div>
               <div class="inner-list">

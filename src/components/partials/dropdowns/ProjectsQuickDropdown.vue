@@ -43,6 +43,8 @@ const selectedProject = ref(projects[1])
         size="small"
         :color="selectedProject.color"
         :initials="selectedProject.initials"
+        tabindex="0"
+        @keydown.space.prevent="toggle"
         @click="toggle"
       />
     </template>
@@ -53,6 +55,13 @@ const selectedProject = ref(projects[1])
         :key="project.initials"
         class="dropdown-item dropdown-block"
         :class="[project.initials === selectedProject.initials && 'is-active']"
+        tabindex="0"
+        @keydown.space.prevent="
+          () => {
+            selectedProject = project
+            close()
+          }
+        "
         @click="
           () => {
             selectedProject = project

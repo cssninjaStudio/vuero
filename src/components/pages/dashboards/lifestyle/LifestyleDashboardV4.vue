@@ -51,7 +51,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
               <!--Header-->
               <div class="featured-authors-header">
                 <h3 class="dark-inverted">Featured Authors</h3>
-                <a class="action-link">View All</a>
+                <a class="action-link" tabindex="0">View All</a>
               </div>
 
               <div class="featured-authors-list">
@@ -110,7 +110,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
               <!--Header-->
               <div class="updates-header">
                 <h3 class="dark-inverted">Updates</h3>
-                <a class="action-link">View All</a>
+                <a class="action-link" tabindex="0">View All</a>
               </div>
 
               <div class="updates-list">
@@ -151,7 +151,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
           <!--Header-->
           <div class="articles-feed-header">
             <h3 class="dark-inverted">New Articles</h3>
-            <a class="action-link">View All</a>
+            <a class="action-link" tabindex="0">View All</a>
           </div>
           <!--Subheader-->
           <div class="articles-feed-subheader">

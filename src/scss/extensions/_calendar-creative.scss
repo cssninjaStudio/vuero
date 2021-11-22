@@ -261,7 +261,6 @@ $calendar-date-padding: 0.1rem 0 !default;
             color: $calendar-date-color;
             cursor: pointer;
             height: 2.2rem;
-            outline: none;
             padding: 0;
             position: relative;
             text-align: center;
@@ -713,7 +712,6 @@ $calendar-date-padding: 0.1rem 0 !default;
     color: var(--primary);
     cursor: pointer;
     font-weight: $weight-normal;
-    outline: 0;
     transform: rotate(45deg);
     font-size: 1.5rem;
     height: 1.75rem;
@@ -756,7 +754,6 @@ $calendar-date-padding: 0.1rem 0 !default;
 
     input {
       background: transparent;
-      outline: none;
       word-spacing: 0.5rem;
       border: 0;
     }

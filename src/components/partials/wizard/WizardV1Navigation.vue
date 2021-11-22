@@ -49,6 +49,8 @@ const setStep = (target: number) => {
           <a
             :class="[wizard.step < 1 && 'is-disabled']"
             class="dropdown-item kill-drop"
+            tabindex="0"
+            @keydown.space.prevent="setStep(1)"
             @click="setStep(1)"
           >
             Step 1: {{ wizard.stepTitle }}
@@ -56,6 +58,8 @@ const setStep = (target: number) => {
           <a
             :class="[wizard.step < 2 && 'is-disabled']"
             class="dropdown-item kill-drop"
+            tabindex="0"
+            @keydown.space.prevent="setStep(2)"
             @click="setStep(2)"
           >
             Step 2: Project Info
@@ -63,6 +67,8 @@ const setStep = (target: number) => {
           <a
             :class="[wizard.step < 3 && 'is-disabled']"
             class="dropdown-item kill-drop"
+            tabindex="0"
+            @keydown.space.prevent="setStep(3)"
             @click="setStep(3)"
           >
             Step 3: Project Details
@@ -70,6 +76,8 @@ const setStep = (target: number) => {
           <a
             :class="[wizard.step < 4 && 'is-disabled']"
             class="dropdown-item kill-drop"
+            tabindex="0"
+            @keydown.space.prevent="setStep(4)"
             @click="setStep(4)"
           >
             Step 4: Project Files
@@ -77,6 +85,8 @@ const setStep = (target: number) => {
           <a
             :class="[wizard.step < 5 && 'is-disabled']"
             class="dropdown-item kill-drop"
+            tabindex="0"
+            @keydown.space.prevent="setStep(5)"
             @click="setStep(5)"
           >
             Step 5: Team Members
@@ -84,6 +94,8 @@ const setStep = (target: number) => {
           <a
             :class="[wizard.step < 6 && 'is-disabled']"
             class="dropdown-item kill-drop"
+            tabindex="0"
+            @keydown.space.prevent="setStep(6)"
             @click="setStep(6)"
           >
             Step 6: Project Tools
@@ -91,6 +103,8 @@ const setStep = (target: number) => {
           <a
             :class="[wizard.step < 7 && 'is-disabled']"
             class="dropdown-item kill-drop"
+            tabindex="0"
+            @keydown.space.prevent="setStep(7)"
             @click="setStep(7)"
           >
             Step 7: Preview

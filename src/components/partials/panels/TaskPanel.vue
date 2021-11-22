@@ -9,12 +9,22 @@ const panels = usePanels()
     :class="[panels.active === 'task' && 'is-active']"
     class="right-panel-wrapper is-task"
   >
-    <div class="panel-overlay" @click="panels.close()"></div>
+    <div
+      class="panel-overlay"
+      tabindex="0"
+      @keydown.space.prevent="panels.close()"
+      @click="panels.close()"
+    ></div>
 
     <div class="right-panel">
       <div class="right-panel-head">
         <h3>Task Details</h3>
-        <a class="close-panel" @click="panels.close()">
+        <a
+          class="close-panel"
+          tabindex="0"
+          @keydown.space.prevent="panels.close()"
+          @click="panels.close()"
+        >
           <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right"></i>
         </a>
       </div>

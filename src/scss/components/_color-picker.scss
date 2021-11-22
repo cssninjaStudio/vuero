@@ -25,10 +25,6 @@
     }
   }
 
-  :focus {
-    outline: none !important;
-  }
-
   .vacp-format-switch-button {
     border-radius: var(--radius);
   }
@@ -54,23 +50,19 @@
   .vacp-range-input {
     border-color: #ccc !important;
     border-radius: var(--radius);
-    outline: none !important;
 
     &:focus::-moz-range-track {
       border: 1px solid var(--primary-grey);
-      outline: none;
       box-shadow: 0 0 0 2px var(--range-slider-focus);
     }
 
     &:focus::-webkit-slider-runnable-track {
       border: 1px solid var(--primary-grey);
-      outline: none;
       box-shadow: 0 0 0 2px var(--range-slider-focus);
     }
 
     &:focus::-ms-track {
       border: 1px solid var(--primary-grey);
-      outline: none;
       box-shadow: 0 0 0 2px var(--range-slider-focus);
     }
 
@@ -160,7 +152,6 @@
     .vacp-range-input {
       border-color: #ccc !important;
       border-radius: var(--radius);
-      outline: none !important;
 
       &:focus::-moz-range-track {
         border: 1px solid var(--range-slider-focus);

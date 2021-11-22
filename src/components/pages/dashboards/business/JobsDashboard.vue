@@ -283,7 +283,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
           <div class="searched-bar">
             <div class="searched-count">Showing 46 Jobs</div>
             <div class="searched-link">
-              <a class="action-link">View All</a>
+              <a class="action-link" tabindex="0">View All</a>
             </div>
           </div>
 
@@ -405,7 +405,6 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
         color: var(--input-color);
         background-color: transparent;
         border: none;
-        outline: none;
       }
 
       svg {

@@ -28,7 +28,11 @@ const props = withDefaults(defineProps<VAccordionImageProps>(), {
         :style="{ backgroundImage: `url(${item.image})` }"
       >
         <div>
-          <a @click="emit('select', key)">
+          <a
+            tabindex="0"
+            @keydown.space.prevent="emit('select', key)"
+            @click="emit('select', key)"
+          >
             <h2>{{ item.title }}</h2>
             <p>{{ item.content }}</p>
           </a>

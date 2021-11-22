@@ -40,17 +40,32 @@ watch([() => route.fullPath, dropdownElement], () => {
         </div>
         <div class="category-selector-inner">
           <!-- Display Item -->
-          <div class="category-item" @click="selectedCategory = 'display'">
+          <div
+            class="category-item"
+            tabindex="0"
+            @keydown.space.prevent="selectedCategory = 'display'"
+            @click="selectedCategory = 'display'"
+          >
             <i aria-hidden="true" class="lnil lnil-boarding-pass-alt"></i>
             <span>Display</span>
           </div>
           <!-- Layout Item -->
-          <div class="category-item" @click="selectedCategory = 'layout'">
+          <div
+            class="category-item"
+            tabindex="0"
+            @keydown.space.prevent="selectedCategory = 'layout'"
+            @click="selectedCategory = 'layout'"
+          >
             <i aria-hidden="true" class="lnil lnil-scaling"></i>
             <span>Layout</span>
           </div>
           <!-- Plugins Item -->
-          <div class="category-item" @click="selectedCategory = 'plugins'">
+          <div
+            class="category-item"
+            tabindex="0"
+            @keydown.space.prevent="selectedCategory = 'plugins'"
+            @click="selectedCategory = 'plugins'"
+          >
             <i aria-hidden="true" class="lnil lnil-plug"></i>
             <span>Plugins</span>
           </div>

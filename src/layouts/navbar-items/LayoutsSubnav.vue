@@ -11,16 +11,36 @@ const activeTab = ref<TabId>('list')
       <div class="tabs is-centered is-4">
         <ul>
           <li :class="[activeTab === 'list' && 'is-active']">
-            <a @click="activeTab = 'list'">List Views</a>
+            <a
+              tabindex="0"
+              @keydown.space.prevent="activeTab = 'list'"
+              @click="activeTab = 'list'"
+              >List Views</a
+            >
           </li>
           <li :class="[activeTab === 'grid' && 'is-active']">
-            <a @click="activeTab = 'grid'">Grid Views</a>
+            <a
+              tabindex="0"
+              @keydown.space.prevent="activeTab = 'grid'"
+              @click="activeTab = 'grid'"
+              >Grid Views</a
+            >
           </li>
           <li :class="[activeTab === 'app' && 'is-active']">
-            <a @click="activeTab = 'app'">Pages</a>
+            <a
+              tabindex="0"
+              @keydown.space.prevent="activeTab = 'app'"
+              @click="activeTab = 'app'"
+              >Pages</a
+            >
           </li>
           <li :class="[activeTab === 'utility' && 'is-active']">
-            <a @click="activeTab = 'utility'">Utility</a>
+            <a
+              tabindex="0"
+              @keydown.space.prevent="activeTab = 'utility'"
+              @click="activeTab = 'utility'"
+              >Utility</a
+            >
           </li>
         </ul>
       </div>

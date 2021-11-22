@@ -29,6 +29,13 @@ const props = withDefaults(
       :key="conversation.id"
       class="conversation"
       :class="[conversationId === conversation.id && 'active']"
+      tabindex="0"
+      @keydown.space.prevent="
+        () => {
+          emit('update:conversationId', conversation.id)
+          emit('toggleMobileConversation')
+        }
+      "
       @click="
         () => {
           emit('update:conversationId', conversation.id)

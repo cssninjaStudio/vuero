@@ -39,11 +39,21 @@ watch([() => route.fullPath, dropdownElement], () => {
           <h4>Select a category</h4>
         </div>
         <div class="category-selector-inner">
-          <div class="category-item" @click="selectedCategory = 'base'">
+          <div
+            class="category-item"
+            tabindex="0"
+            @keydown.space.prevent="selectedCategory = 'base'"
+            @click="selectedCategory = 'base'"
+          >
             <i aria-hidden="true" class="lnil lnil-layout"></i>
             <span>Dashboards</span>
           </div>
-          <div class="category-item" @click="selectedCategory = 'extras'">
+          <div
+            class="category-item"
+            tabindex="0"
+            @keydown.space.prevent="selectedCategory = 'extras'"
+            @click="selectedCategory = 'extras'"
+          >
             <i aria-hidden="true" class="lnil lnil-grid-alt"></i>
             <span>Templates</span>
           </div>

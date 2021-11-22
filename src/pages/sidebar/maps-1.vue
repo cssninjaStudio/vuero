@@ -33,6 +33,8 @@ useHead({
             <a
               class="toolbar-link right-panel-trigger"
               aria-label="View activity"
+              tabindex="0"
+              @keydown.space.prevent="panels.setActive('activity')"
               @click="panels.setActive('activity')"
             >
               <i aria-hidden="true" class="iconify" data-icon="feather:grid"></i>

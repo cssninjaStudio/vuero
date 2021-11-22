@@ -33,13 +33,25 @@ const participants = [
         <div class="tabs">
           <ul>
             <li :class="[tab === 'project' && 'is-active']">
-              <a @click="tab = 'project'"><span>Project</span></a>
+              <a
+                tabindex="0"
+                @keydown.space.prevent="tab = 'project'"
+                @click="tab = 'project'"
+                ><span>Project</span></a
+              >
             </li>
             <li :class="[tab === 'team' && 'is-active']">
-              <a @click="tab = 'team'"><span>Team</span></a>
+              <a tabindex="0" @keydown.space.prevent="tab = 'team'" @click="tab = 'team'"
+                ><span>Team</span></a
+              >
             </li>
             <li :class="[tab === 'tasks' && 'is-active']">
-              <a @click="tab = 'tasks'"><span>Tasks</span></a>
+              <a
+                tabindex="0"
+                @keydown.space.prevent="tab = 'tasks'"
+                @click="tab = 'tasks'"
+                ><span>Tasks</span></a
+              >
             </li>
             <li class="tab-naver"></li>
           </ul>
@@ -59,6 +71,8 @@ const participants = [
                 <VIconButton
                   size="small"
                   icon="feather:edit-3"
+                  tabindex="0"
+                  @keydown.space.prevent="panels.setActive('task')"
                   @click="panels.setActive('task')"
                 />
               </div>

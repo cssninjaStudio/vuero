@@ -46,7 +46,12 @@ const localFlagSrc = computed(() => {
     :class="[isScrolling && 'is-active', isOpen && 'active']"
     class="circular-menu"
   >
-    <a class="floating-btn" @click="isOpen = !isOpen">
+    <a
+      class="floating-btn"
+      tabindex="0"
+      @keydown.space.prevent="isOpen = !isOpen"
+      @click="isOpen = !isOpen"
+    >
       <i aria-hidden="true" class="fas fa-bars"></i>
       <i aria-hidden="true" class="fas fa-times"></i>
     </a>
@@ -64,6 +69,8 @@ const localFlagSrc = computed(() => {
       </div>
       <a
         class="menu-item is-flex right-panel-trigger"
+        tabindex="0"
+        @keydown.space.prevent="panels.setActive('languages')"
         @click="panels.setActive('languages')"
       >
         <img :src="localFlagSrc" alt="" />
@@ -74,7 +81,12 @@ const localFlagSrc = computed(() => {
       >
         <i aria-hidden="true" class="iconify" data-icon="feather:bell"></i>
       </RouterLink>
-      <a class="menu-item is-flex" @click="panels.setActive('activity')">
+      <a
+        class="menu-item is-flex"
+        tabindex="0"
+        @keydown.space.prevent="panels.setActive('activity')"
+        @click="panels.setActive('activity')"
+      >
         <i aria-hidden="true" class="iconify" data-icon="feather:grid"></i>
       </a>
     </div>

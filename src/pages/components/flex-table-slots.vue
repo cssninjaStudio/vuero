@@ -147,8 +147,8 @@ useHead({
                     is-clickable
                   "
                   tabindex="0"
+                  @keydown.space.prevent="editCompanyIndex = index"
                   @click="editCompanyIndex = index"
-                  @focus="editCompanyIndex = index"
                 >
                   {{ value }}
                   <i

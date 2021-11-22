@@ -12,7 +12,12 @@ const dropdown = useDropdown(dropdownElement)
     ref="dropdownElement"
     class="navbar-item has-dropdown is-notification is-hidden-tablet is-hidden-desktop"
   >
-    <a class="navbar-link is-arrowless" @click="dropdown.toggle">
+    <a
+      class="navbar-link is-arrowless"
+      tabindex="0"
+      @keydown.space.prevent="dropdown.toggle"
+      @click="dropdown.toggle"
+    >
       <i aria-hidden="true" class="iconify" data-icon="feather:bell"></i>
       <span class="new-indicator pulsate"></span>
     </a>

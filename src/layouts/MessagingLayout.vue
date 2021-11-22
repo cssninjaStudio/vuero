@@ -68,7 +68,11 @@ const isDesktopSidebarOpen = ref(false)
 
       <template #bottom-links>
         <li>
-          <a @click="panels.setActive('search')">
+          <a
+            tabindex="0"
+            @keydown.space.prevent="panels.setActive('search')"
+            @click="panels.setActive('search')"
+          >
             <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
           </a>
         </li>
@@ -133,14 +137,24 @@ const isDesktopSidebarOpen = ref(false)
       <template #bottom-links>
         <!-- Search -->
         <li class="right-panel-trigger is-hidden-tablet">
-          <a data-content="Search" @click="panels.setActive('search')">
+          <a
+            data-content="Search"
+            tabindex="0"
+            @keydown.space.prevent="panels.setActive('search')"
+            @click="panels.setActive('search')"
+          >
             <i
               aria-hidden="true"
               class="iconify sidebar-svg"
               data-icon="feather-search"
             />
           </a>
-          <a class="is-hidden is-inactive" @click="panels.close()">
+          <a
+            class="is-hidden is-inactive"
+            tabindex="0"
+            @keydown.space.prevent="panels.close()"
+            @click="panels.close()"
+          >
             <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather-x" />
           </a>
         </li>

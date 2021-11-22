@@ -208,7 +208,7 @@ useHead({
           </div>
 
           <div class="hub-footer">
-            <p><a class="action-link">Online Documentation</a></p>
+            <p><a class="action-link" tabindex="0">Online Documentation</a></p>
           </div>
         </div>
       </div>

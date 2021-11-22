@@ -32,6 +32,8 @@ const sidebar = useSidebar()
           v-for="conversation in conversations"
           :key="conversation.id"
           :class="[selectedConversationId === conversation.id && 'is-active']"
+          tabindex="0"
+          @keydown.space.prevent="() => emit('selectConversation', conversation.id)"
           @click="() => emit('selectConversation', conversation.id)"
         >
           <div class="recent-user">

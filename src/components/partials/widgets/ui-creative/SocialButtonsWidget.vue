@@ -31,6 +31,8 @@ const tab = ref(props.activeTab)
             'is-' + button.network,
             props.rounded && 'is-rounded',
           ]"
+          tabindex="0"
+          @keydown.space.prevent="tab = index"
           @click="tab = index"
         >
           <i aria-hidden="true" :class="button.icon"></i>

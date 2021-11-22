@@ -104,6 +104,8 @@ watch(
         <li>
           <a
             :class="[activeMobileSubsidebar === 'dashboard' && 'is-active']"
+            tabindex="0"
+            @keydown.space.prevent="activeMobileSubsidebar = 'dashboard'"
             @click="activeMobileSubsidebar = 'dashboard'"
           >
             <i aria-hidden="true" class="iconify" data-icon="feather:activity"></i>
@@ -112,6 +114,8 @@ watch(
         <li>
           <a
             :class="[activeMobileSubsidebar === 'layout' && 'is-active']"
+            tabindex="0"
+            @keydown.space.prevent="activeMobileSubsidebar = 'layout'"
             @click="activeMobileSubsidebar = 'layout'"
           >
             <i aria-hidden="true" class="iconify" data-icon="feather:grid"></i>
@@ -119,6 +123,8 @@ watch(
         </li>
         <li
           :class="[activeMobileSubsidebar === 'elements' && 'is-active']"
+          tabindex="0"
+          @keydown.space.prevent="activeMobileSubsidebar = 'elements'"
           @click="activeMobileSubsidebar = 'elements'"
         >
           <a>
@@ -127,6 +133,8 @@ watch(
         </li>
         <li
           :class="[activeMobileSubsidebar === 'components' && 'is-active']"
+          tabindex="0"
+          @keydown.space.prevent="activeMobileSubsidebar = 'components'"
           @click="activeMobileSubsidebar = 'components'"
         >
           <a>
@@ -142,7 +150,11 @@ watch(
 
       <template #bottom-links>
         <li>
-          <a @click="panels.setActive('search')">
+          <a
+            tabindex="0"
+            @keydown.space.prevent="panels.setActive('search')"
+            @click="panels.setActive('search')"
+          >
             <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
           </a>
         </li>
@@ -194,6 +206,8 @@ watch(
 
           <a
             class="toolbar-link right-panel-trigger"
+            tabindex="0"
+            @keydown.space.prevent="panels.setActive('activity')"
             @click="panels.setActive('activity')"
           >
             <i aria-hidden="true" class="iconify" data-icon="feather:grid"></i>
@@ -266,7 +280,13 @@ watch(
               <div class="form-icon">
                 <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
               </div>
-              <div v-if="filter" class="form-icon is-right" @click="filter = ''">
+              <div
+                v-if="filter"
+                class="form-icon is-right"
+                tabindex="0"
+                @keydown.space.prevent="filter = ''"
+                @click="filter = ''"
+              >
                 <i aria-hidden="true" class="iconify" data-icon="feather:x"></i>
               </div>
               <div
@@ -320,6 +340,8 @@ watch(
 
                 <a
                   class="toolbar-link right-panel-trigger"
+                  tabindex="0"
+                  @keydown.space.prevent="panels.setActive('activity')"
                   @click="panels.setActive('activity')"
                 >
                   <i aria-hidden="true" class="iconify" data-icon="feather:grid"></i>

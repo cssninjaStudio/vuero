@@ -441,9 +441,9 @@ import {
               />
             </template>
             <template v-else-if="column.key === 'tracking'">
-              <a v-if="row.tracking" class="action-link is-pushed-mobile">{{
-                row.tracking
-              }}</a>
+              <a v-if="row.tracking" tabindex="0" class="action-link is-pushed-mobile">
+                {{ row.tracking }}
+              </a>
               <span v-else class="light-text is-pushed-mobile">N/A</span>
             </template>
             <template v-else-if="column.key === 'actions'">

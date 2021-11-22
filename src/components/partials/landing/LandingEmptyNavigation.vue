@@ -7,8 +7,9 @@ import { isLargeScreen } from '/@src/utils/responsive'
 import { useDarkmode } from '/@src/stores/darkmode'
 import { useRouter } from 'vue-router'
 
-const isMobileNavOpen = ref(false)
 const router = useRouter()
+const darkmode = useDarkmode()
+const isMobileNavOpen = ref(false)
 const scrollTo = VueScrollTo.scrollTo
 
 const { y } = useWindowScroll()
