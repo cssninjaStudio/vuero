@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
 
-import { pageTitle, sidebarTheme } from '/@src/state/sidebarLayoutState'
+import { sidebarTheme } from '/@src/state/sidebarLayoutState'
+import { useViewWrapper } from '/@src/stores/viewWrapper'
 import { usePanels } from '/@src/stores/panels'
 
 const panels = usePanels()
