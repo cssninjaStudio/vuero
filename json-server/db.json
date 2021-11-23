@@ -1,0 +1,1065 @@
+{
+  "conversations": [
+    {
+      "id": 1,
+      "name": "Henry G.",
+      "lastMessage": "3 minutes ago",
+      "unreadMessages": true,
+      "avatar": "/demo/avatars/10.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Melany W.",
+      "lastMessage": "30 minutes ago",
+      "unreadMessages": false,
+      "avatar": "/demo/avatars/25.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Tara S.",
+      "lastMessage": "1 day ago",
+      "unreadMessages": false,
+      "avatar": "/demo/avatars/13.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Esteban C.",
+      "lastMessage": "1 day ago",
+      "unreadMessages": false,
+      "avatar": "/demo/avatars/18.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Alice C.",
+      "lastMessage": "2 days ago",
+      "unreadMessages": false,
+      "avatar": "/demo/avatars/7.jpg"
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "conversationId": 1,
+      "messageId": 0,
+      "type": "system",
+      "sender": null,
+      "avatar": null,
+      "content": {
+        "text": "Yesterday",
+        "time": null
+      }
+    },
+    {
+      "id": 2,
+      "conversationId": 1,
+      "messageId": 1,
+      "type": "msg",
+      "sender": "other",
+      "avatar": "/demo/avatars/10.jpg",
+      "content": {
+        "text": "Hey Erik, I came accross a new Saas software while doing some research. You should definitely check it out.",
+        "time": "08:17pm"
+      }
+    },
+    {
+      "id": 3,
+      "conversationId": 1,
+      "messageId": 2,
+      "type": "msg",
+      "sender": "self",
+      "avatar": "/images/avatars/svg/vuero-1.svg",
+      "content": {
+        "text": "Sure, I'd Love to learn more about it. Do you have any links or documentation?",
+        "time": "08:18pm"
+      }
+    },
+    {
+      "id": 4,
+      "conversationId": 1,
+      "messageId": 3,
+      "type": "system",
+      "sender": null,
+      "avatar": null,
+      "content": {
+        "text": "just now",
+        "time": null
+      }
+    },
+    {
+      "id": 5,
+      "conversationId": 1,
+      "messageId": 4,
+      "type": "msg",
+      "sender": "other",
+      "avatar": "/demo/avatars/10.jpg",
+      "content": {
+        "text": "Here you go. There's also a full fledged documentation. Just click on the click in the top right corner.",
+        "time": "11:27am"
+      }
+    },
+    {
+      "id": 6,
+      "conversationId": 1,
+      "messageId": 5,
+      "type": "imagelink",
+      "sender": "other",
+      "avatar": "/demo/avatars/10.jpg",
+      "content": {
+        "text": "Manage projects like you never did before with this new app",
+        "subtext": "gettrueprojects.com",
+        "time": null,
+        "link_image": "/demo/photos/demo-apps/1.jpg",
+        "link_badge": "/images/icons/logos/slicer.svg"
+      }
+    },
+    {
+      "id": 7,
+      "conversationId": 1,
+      "messageId": 6,
+      "type": "msg",
+      "sender": "self",
+      "avatar": "/images/avatars/svg/vuero-1.svg",
+      "content": {
+        "text": "Thanks, so do you think this one would be a good fit to manage our projects?",
+        "time": "11:32am"
+      }
+    },
+    {
+      "id": 8,
+      "conversationId": 1,
+      "messageId": 7,
+      "type": "msg",
+      "sender": "other",
+      "avatar": "/demo/avatars/10.jpg",
+      "content": {
+        "text": "You can start by reading the project whitepaper. Eveything you need is in there. You can also try the free demo and start exploring features.",
+        "time": "11:43am"
+      }
+    },
+    {
+      "id": 9,
+      "conversationId": 1,
+      "messageId": 8,
+      "type": "link",
+      "sender": "other",
+      "avatar": "/demo/avatars/10.jpg",
+      "content": {
+        "text": "True Projects Whitepaper",
+        "subtext": "Open Link",
+        "time": "11:47am"
+      }
+    },
+    {
+      "id": 10,
+      "conversationId": 1,
+      "messageId": 9,
+      "type": "image",
+      "sender": "self",
+      "avatar": "/images/avatars/svg/vuero-1.svg",
+      "content": {
+        "time": null,
+        "image_url": "/demo/photos/demo-apps/2.jpg"
+      }
+    },
+    {
+      "id": 11,
+      "conversationId": 1,
+      "messageId": 10,
+      "type": "msg",
+      "sender": "self",
+      "avatar": "/images/avatars/svg/vuero-1.svg",
+      "content": {
+        "text": "Well, I think we might give it a shot. At least, it's worth trying. Don't you think so?",
+        "time": "11:49am"
+      }
+    },
+    {
+      "id": 12,
+      "conversationId": 2,
+      "messageId": 0,
+      "type": "system",
+      "sender": null,
+      "avatar": null,
+      "content": {
+        "text": "Monday 23th",
+        "time": null
+      }
+    },
+    {
+      "id": 13,
+      "conversationId": 2,
+      "messageId": 1,
+      "type": "msg",
+      "sender": "other",
+      "avatar": "/demo/avatars/25.jpg",
+      "content": {
+        "text": "I was wondering why Danny still works on Sketch when Figma is now cheap and accessible. This could really boost our process.",
+        "time": "12:17pm"
+      }
+    },
+    {
+      "id": 14,
+      "conversationId": 2,
+      "messageId": 2,
+      "type": "msg",
+      "sender": "self",
+      "avatar": "/images/avatars/svg/vuero-1.svg",
+      "content": {
+        "text": "Not really sure about why, but he certainly has good reasons. Anyway, why should he switch?",
+        "time": "12:31pm"
+      }
+    },
+    {
+      "id": 15,
+      "conversationId": 2,
+      "messageId": 3,
+      "type": "system",
+      "sender": null,
+      "avatar": null,
+      "content": {
+        "text": "Yesterday",
+        "time": null
+      }
+    },
+    {
+      "id": 45,
+      "conversationId": 2,
+      "messageId": 4,
+      "type": "msg",
+      "sender": "other",
+      "avatar": "/demo/avatars/25.jpg",
+      "content": {
+        "text": "There are plenty of reasons, one of them being awesome UI kits being released every day.",
+        "time": "08:42am"
+      }
+    },
+    {
+      "id": 16,
+      "conversationId": 2,
+      "messageId": 5,
+      "type": "imagelink",
+      "sender": "other",
+      "avatar": "/demo/avatars/2.gif",
+      "content": {
+        "text": "iDesign Pro, iOS premium UI kit",
+        "subtext": "figma-factory.com",
+        "time": null,
+        "link_image": "/demo/photos/demo-apps/5.jpg",
+        "link_badge": "/demo/photos/misc/figma.png"
+      }
+    },
+    {
+      "id": 17,
+      "conversationId": 2,
+      "messageId": 6,
+      "type": "msg",
+      "sender": "self",
+      "avatar": "/images/avatars/svg/vuero-1.svg",
+      "content": {
+        "text": "That really looks awesome! Danny should definitely have a look at this.",
+        "time": "09:23am"
+      }
+    },
+    {
+      "id": 18,
+      "conversationId": 2,
+      "messageId": 7,
+      "type": "msg",
+      "sender": "other",
+      "avatar": "/demo/avatars/25.jpg",
+      "content": {
+        "text": "Yes, this is exactly what I was thinking, do you think that he'll be willing to switch?",
+        "time": "09:32am"
+      }
+    },
+    {
+      "id": 19,
+      "conversationId": 2,
+      "messageId": 8,
+      "type": "msg",
+      "sender": "self",
+      "avatar": "/images/avatars/svg/vuero-1.svg",
+      "content": {
+        "text": "To be honest, I can't tell. But I'd be really glad if he said yes.",
+        "time": "09:44am"
+      }
+    },
+    {
+      "id": 20,
+      "conversationId": 2,
+      "messageId": 9,
+      "type": "msg",
+      "sender": "other",
+      "avatar": "/demo/avatars/25.jpg",
+      "content": {
+        "text": "Well that's worth a try. Maybe we can schedule a meeting to discuss it with a proper presentation.",
+        "time": "09:49am"
+      }
+    },
+    {
+      "id": 21,
+      "conversationId": 3,
+      "messageId": 0,
+      "type": "system",
+      "sender": null,
+      "avatar": null,
+      "content": {
+        "text": "Monday 23th",
+        "time": null
+      }
+    },
+    {
+      "id": 22,
+      "conversationId": 3,
+      "messageId": 1,
+      "type": "msg",
+      "sender": "other",
+      "avatar": "/demo/avatars/13.jpg",
+      "content": {
+        "text": "Hey Erik, I need the Heartman & Sons benchmark document that you mentionned in the meeting yesterday.",
+        "time": "12:17pm"
+      }
+    },
+    {
+      "id": 23,
+      "conversationId": 3,
+      "messageId": 2,
+      "type": "msg",
+      "sender": "self",
+      "avatar": "/images/avatars/svg/vuero-1.svg",
+      "content": {
+        "text": "Oh, sorry I don't really remember, could you be more specific?",
+        "time": "12:31pm"
+      }
+    },
+    {
+      "id": 24,
+      "conversationId": 3,
+      "messageId": 3,
+      "type": "system",
+      "sender": null,
+      "avatar": null,
+      "content": {
+        "text": "Yesterday",
+        "time": null
+      }
+    },
+    {
+      "id": 25,
+      "conversationId": 3,
+      "messageId": 4,
+      "type": "msg",
+      "sender": "other",
+      "avatar": "/demo/avatars/13.jpg",
+      "content": {
+        "text": "Well the one about the webapp, I think it was something about the accounting app built with modern javascript frameworks.",
+        "time": "08:42am"
+      }
+    },
+    {
+      "id": 26,
+      "conversationId": 3,
+      "messageId": 5,
+      "type": "imagelink",
+      "sender": "other",
+      "avatar": "/demo/avatars/2.gif",
+      "content": {
+        "text": "Smart Accounting made easy for everyone",
+        "subtext": "titan-accounting.io",
+        "time": null,
+        "link_image": "/demo/photos/demo-apps/1.png",
+        "link_badge": "/images/icons/stacks/angular.svg"
+      }
+    },
+    {
+      "id": 27,
+      "conversationId": 3,
+      "messageId": 6,
+      "type": "msg",
+      "sender": "self",
+      "avatar": "/images/avatars/svg/vuero-1.svg",
+      "content": {
+        "text": "I see, now I remember. Sure I can send it you real quick. Do you want it on your email inbox or is it fine to post ot here?",
+        "time": "09:23am"
+      }
+    },
+    {
+      "id": 28,
+      "conversationId": 3,
+      "messageId": 7,
+      "type": "msg",
+      "sender": "other",
+      "avatar": "/demo/avatars/13.jpg",
+      "content": {
+        "text": "I guess via email would be better, I'll need it more than once.",
+        "time": "09:32am"
+      }
+    },
+    {
+      "id": 29,
+      "conversationId": 3,
+      "messageId": 8,
+      "type": "msg",
+      "sender": "self",
+      "avatar": "/images/avatars/svg/vuero-1.svg",
+      "content": {
+        "text": "Ok then, I'll shoot you an email in a few minutes.",
+        "time": "09:44am"
+      }
+    },
+    {
+      "id": 30,
+      "conversationId": 3,
+      "messageId": 9,
+      "type": "msg",
+      "sender": "other",
+      "avatar": "/demo/avatars/13.jpg",
+      "content": {
+        "text": "Thank you very much! Much appreciated.",
+        "time": "09:49am"
+      }
+    },
+    {
+      "id": 31,
+      "conversationId": 4,
+      "messageId": 0,
+      "type": "system",
+      "sender": null,
+      "avatar": null,
+      "content": {
+        "text": "Tuesday 24th",
+        "time": null
+      }
+    },
+    {
+      "id": 32,
+      "conversationId": 4,
+      "messageId": 1,
+      "type": "msg",
+      "sender": "other",
+      "avatar": "/demo/avatars/18.jpg",
+      "content": {
+        "text": "Hello Erik, I'd like a detailed report about the crowd funding campaign that was launched yesterday",
+        "time": "08:52am"
+      }
+    },
+    {
+      "id": 33,
+      "conversationId": 4,
+      "messageId": 2,
+      "type": "msg",
+      "sender": "self",
+      "avatar": "/images/avatars/svg/vuero-1.svg",
+      "content": {
+        "text": "Sure, I'll give you everything you need to know",
+        "time": "08:54am"
+      }
+    },
+    {
+      "id": 34,
+      "conversationId": 4,
+      "messageId": 3,
+      "type": "msg",
+      "sender": "self",
+      "avatar": "/images/avatars/svg/vuero-1.svg",
+      "content": {
+        "text": "Would you like some early metrics as well?",
+        "time": "08:58am"
+      }
+    },
+    {
+      "id": 35,
+      "conversationId": 4,
+      "messageId": 4,
+      "type": "msg",
+      "sender": "self",
+      "avatar": "/images/avatars/svg/vuero-1.svg",
+      "content": {
+        "text": "Also, I have it in several formats. Would you prefer web, PDF or something else?",
+        "time": "09:05am"
+      }
+    },
+    {
+      "id": 36,
+      "conversationId": 4,
+      "messageId": 5,
+      "type": "msg",
+      "sender": "other",
+      "avatar": "/demo/avatars/18.jpg",
+      "content": {
+        "text": "I'll go for web.",
+        "time": "09:10am"
+      }
+    },
+    {
+      "id": 37,
+      "conversationId": 4,
+      "messageId": 6,
+      "type": "msg",
+      "sender": "self",
+      "avatar": "/images/avatars/svg/vuero-1.svg",
+      "content": {
+        "text": "Got it Boss, right on the way.",
+        "time": "09:11"
+      }
+    },
+    {
+      "id": 38,
+      "conversationId": 4,
+      "messageId": 7,
+      "type": "msg",
+      "sender": "other",
+      "avatar": "/demo/avatars/18.jpg",
+      "content": {
+        "text": "Great! thank you Erik",
+        "time": "09:11"
+      }
+    },
+    {
+      "id": 39,
+      "conversationId": 5,
+      "messageId": 0,
+      "type": "system",
+      "sender": null,
+      "avatar": null,
+      "content": {
+        "text": "Friday 14th",
+        "time": null
+      }
+    },
+    {
+      "id": 40,
+      "conversationId": 5,
+      "messageId": 1,
+      "type": "msg",
+      "sender": "other",
+      "avatar": "/demo/avatars/7.jpg",
+      "content": {
+        "text": "Hey Erik, we have a reluctant customer who claims he talked to you.",
+        "time": "03:47pm"
+      }
+    },
+    {
+      "id": 41,
+      "conversationId": 5,
+      "messageId": 2,
+      "type": "msg",
+      "sender": "other",
+      "avatar": "/demo/avatars/7.jpg",
+      "content": {
+        "text": "He is making pressing demands. It's someone from Heartman & Sons. Gary Wootten.",
+        "time": "03:47pm"
+      }
+    },
+    {
+      "id": 42,
+      "conversationId": 5,
+      "messageId": 3,
+      "type": "msg",
+      "sender": "self",
+      "avatar": "/images/avatars/svg/vuero-1.svg",
+      "content": {
+        "text": "Yeah, I know him, the guy's a bit the nervous type.",
+        "time": "04:19pm"
+      }
+    },
+    {
+      "id": 43,
+      "conversationId": 5,
+      "messageId": 4,
+      "type": "msg",
+      "sender": "self",
+      "avatar": "/images/avatars/svg/vuero-1.svg",
+      "content": {
+        "text": "You should walk him through the latest features and give him our usual guarantees.",
+        "time": "04:20"
+      }
+    },
+    {
+      "id": 44,
+      "conversationId": 5,
+      "messageId": 5,
+      "type": "msg",
+      "sender": "other",
+      "avatar": "/demo/avatars/7.jpg",
+      "content": {
+        "text": "You think that will be enough?",
+        "time": "06:30pm"
+      }
+    },
+    {
+      "id": 45,
+      "conversationId": 5,
+      "messageId": 6,
+      "type": "msg",
+      "sender": "self",
+      "avatar": "/images/avatars/svg/vuero-1.svg",
+      "content": {
+        "text": "Yes, don't worry, he's going to drop it soon enough.",
+        "time": "06:34pm"
+      }
+    },
+    {
+      "id": 46,
+      "conversationId": 5,
+      "messageId": 7,
+      "type": "msg",
+      "sender": "other",
+      "avatar": "/demo/avatars/7.jpg",
+      "content": {
+        "text": "Ok, thanks for the advice. I'll let you know.",
+        "time": "06:58pm"
+      }
+    }
+  ],
+  "companies": [
+    {
+      "id": 0,
+      "name": "Airbnb",
+      "initials": "A",
+      "location": "Los Angeles, CA",
+      "pic": "/demo/photos/brands/airbnb.svg"
+    },
+    {
+      "id": 1,
+      "name": "Facebook",
+      "initials": "F",
+      "location": "Los Angeles, CA",
+      "pic": "/demo/photos/brands/facebook.svg"
+    },
+    {
+      "id": 2,
+      "name": "GitHub",
+      "initials": "A",
+      "location": "Los Angeles, CA",
+      "pic": "/demo/photos/brands/github.svg"
+    },
+    {
+      "id": 3,
+      "name": "Gitlab",
+      "initials": "A",
+      "location": "Los Angeles, CA",
+      "pic": "/demo/photos/brands/gitlab.svg"
+    },
+    {
+      "id": 4,
+      "name": "Atlassian",
+      "initials": "A",
+      "location": "Los Angeles, CA",
+      "pic": "/demo/photos/brands/atlassian.svg"
+    },
+    {
+      "id": 5,
+      "name": "Google",
+      "initials": "A",
+      "location": "Los Angeles, CA",
+      "pic": "/demo/photos/brands/google.svg"
+    },
+    {
+      "id": 6,
+      "name": "Dribbble",
+      "initials": "A",
+      "location": "Los Angeles, CA",
+      "pic": "/demo/photos/brands/dribbble.svg"
+    },
+    {
+      "id": 7,
+      "name": "Hubspot",
+      "initials": "A",
+      "location": "Los Angeles, CA",
+      "pic": "/demo/photos/brands/hubspot.svg"
+    }
+  ],
+  "users": [
+    {
+      "id": 0,
+      "name": "Alice C.",
+      "initials": "AC",
+      "location": "San Diego, CA",
+      "pic": "/demo/avatars/7.jpg",
+      "badge": "/images/icons/flags/united-states-of-america.svg",
+      "position": "Software Engineer",
+      "bio": "This is a nice user description that we can use as demo content"
+    },
+    {
+      "id": 1,
+      "name": "Anna B.",
+      "initials": "AB",
+      "location": "San Francisco, CA",
+      "pic": "/demo/avatars/9.jpg",
+      "badge": "/images/icons/flags/united-states-of-america.svg",
+      "position": "UX Designer",
+      "bio": "This is a nice user description that we can use as demo content"
+    },
+    {
+      "id": 2,
+      "name": "Joshua S.",
+      "initials": "JS",
+      "location": "Las Vegas, NV",
+      "pic": "/demo/avatars/12.jpg",
+      "badge": "/images/icons/flags/united-states-of-america.svg",
+      "position": "Backend Developer",
+      "bio": "This is a nice user description that we can use as demo content"
+    },
+    {
+      "id": 3,
+      "name": "Erik K.",
+      "initials": "EK",
+      "location": "New York, NY",
+      "pic": "/images/avatars/svg/vuero-1.svg",
+      "badge": "/images/icons/flags/united-states-of-america.svg",
+      "position": "Product Manager",
+      "bio": "This is a nice user description that we can use as demo content"
+    },
+    {
+      "id": 4,
+      "name": "Melany W.",
+      "initials": "MW",
+      "location": "San Jose, CA",
+      "pic": "/demo/avatars/25.jpg",
+      "badge": "/images/icons/flags/united-states-of-america.svg",
+      "position": "Web Developer",
+      "bio": "This is a nice user description that we can use as demo content"
+    },
+    {
+      "id": 5,
+      "name": "Jimmy H.",
+      "initials": "JH",
+      "location": "Los Angeles, CA",
+      "pic": "/demo/avatars/22.jpg",
+      "badge": "/images/icons/flags/united-states-of-america.svg",
+      "position": "Project Manager",
+      "bio": "This is a nice user description that we can use as demo content"
+    },
+    {
+      "id": 6,
+      "name": "Tara S.",
+      "initials": "TS",
+      "location": "New York, NY",
+      "pic": "/demo/avatars/13.jpg",
+      "badge": "/images/icons/flags/united-states-of-america.svg",
+      "position": "UI/UX Designer",
+      "bio": "This is a nice user description that we can use as demo content"
+    },
+    {
+      "id": 7,
+      "name": "Esteban C.",
+      "initials": "EC",
+      "location": "Miami, FL",
+      "pic": "/demo/avatars/18.jpg",
+      "badge": "/images/icons/flags/united-states-of-america.svg",
+      "position": "UI/UX Designer",
+      "bio": "This is a nice user description that we can use as demo content"
+    },
+    {
+      "id": 8,
+      "name": "Henry G.",
+      "initials": "HG",
+      "location": "Miami, FL",
+      "pic": "/demo/avatars/10.jpg",
+      "badge": "/images/icons/flags/united-states-of-america.svg",
+      "position": "Business Analyst",
+      "bio": "This is a nice user description that we can use as demo content"
+    },
+    {
+      "id": 9,
+      "name": "Mary L.",
+      "initials": "ML",
+      "location": "San Diego, CA",
+      "pic": "/demo/avatars/5.jpg",
+      "badge": "/images/icons/flags/united-states-of-america.svg",
+      "position": "Project Manager",
+      "bio": "This is a nice user description that we can use as demo content"
+    },
+    {
+      "id": 10,
+      "name": "Carmen E.",
+      "initials": "CE",
+      "location": "Madrid, Spain",
+      "pic": "/demo/avatars/27.jpg",
+      "badge": "/images/icons/flags/spain.svg",
+      "position": "HR Manager",
+      "bio": "This is a nice user description that we can use as demo content"
+    },
+    {
+      "id": 11,
+      "name": "Jeanne M.",
+      "initials": "JM",
+      "location": "Paris, France",
+      "pic": "/demo/avatars/40.jpg",
+      "badge": "/images/icons/flags/france.svg",
+      "position": "Mobile Developer",
+      "bio": "This is a nice user description that we can use as demo content"
+    },
+    {
+      "id": 12,
+      "name": "Daniel R.",
+      "initials": "DR",
+      "location": "Toronto, Canada",
+      "pic": "/demo/avatars/34.jpg",
+      "badge": "/images/icons/flags/canada.svg",
+      "position": "Web Developer",
+      "bio": "This is a nice user description that we can use as demo content"
+    },
+    {
+      "id": 13,
+      "name": "Kelly M.",
+      "initials": "KM",
+      "location": "London, UK",
+      "pic": "/demo/avatars/11.jpg",
+      "badge": "/images/icons/flags/england.svg",
+      "position": "Product Manager",
+      "bio": "This is a nice user description that we can use as demo content"
+    },
+    {
+      "id": 14,
+      "name": "Ryan B.",
+      "initials": "RB",
+      "location": "London, UK",
+      "pic": "/demo/avatars/14.jpg",
+      "badge": "/images/icons/flags/england.svg",
+      "position": "Web Developer",
+      "bio": "This is a nice user description that we can use as demo content"
+    },
+    {
+      "id": 15,
+      "name": "Hilde V.",
+      "initials": "HV",
+      "location": "Berlin, Germany",
+      "pic": "/demo/avatars/15.jpg",
+      "badge": "/images/icons/flags/germany.svg",
+      "position": "Software Engineer",
+      "bio": "This is a nice user description that we can use as demo content"
+    },
+    {
+      "id": 16,
+      "name": "Jason G.",
+      "initials": "JG",
+      "location": "Houston, TX",
+      "pic": "/demo/avatars/16.jpg",
+      "badge": "/images/icons/flags/united-states-of-america.svg",
+      "position": "Business Analyst",
+      "bio": "This is a nice user description that we can use as demo content"
+    },
+    {
+      "id": 17,
+      "name": "Greta K.",
+      "initials": "GK",
+      "location": "Berlin, Germany",
+      "pic": "/demo/avatars/19.jpg",
+      "badge": "/images/icons/flags/germany.svg",
+      "position": "Sales Manager",
+      "bio": "This is a nice user description that we can use as demo content"
+    },
+    {
+      "id": 18,
+      "name": "George W.",
+      "initials": "GW",
+      "location": "Los Angeles, CA",
+      "pic": "/demo/avatars/41.jpg",
+      "badge": "/images/icons/flags/united-states-of-america.svg",
+      "position": "Software Engineer",
+      "bio": "This is a nice user description that we can use as demo content"
+    },
+    {
+      "id": 19,
+      "name": "Elizabeth F.",
+      "initials": "EF",
+      "location": "London, UK",
+      "pic": "/demo/avatars/21.jpg",
+      "badge": "/images/icons/flags/england.svg",
+      "position": "Mobile Developer",
+      "bio": "This is a nice user description that we can use as demo content"
+    },
+    {
+      "id": 20,
+      "name": "Dwayne H.",
+      "initials": "DH",
+      "location": "Los Angeles, CA",
+      "pic": "/demo/avatars/22.jpg",
+      "badge": "/images/icons/flags/united-states-of-america.svg",
+      "position": "Product Manager",
+      "bio": "This is a nice user description that we can use as demo content"
+    },
+    {
+      "id": 21,
+      "name": "Irina V.",
+      "initials": "IV",
+      "location": "San Diego, CA",
+      "pic": "/demo/avatars/23.jpg",
+      "badge": "/images/icons/flags/united-states-of-america.svg",
+      "position": "Project Manager",
+      "bio": "This is a nice user description that we can use as demo content"
+    },
+    {
+      "id": 22,
+      "name": "Sandrine C.",
+      "initials": "SC",
+      "location": "Lyon, France",
+      "pic": "/demo/avatars/24.jpg",
+      "badge": "/images/icons/flags/france.svg",
+      "position": "HR Manager",
+      "bio": "This is a nice user description that we can use as demo content"
+    },
+    {
+      "id": 23,
+      "name": "Courtney W.",
+      "initials": "CW",
+      "location": "Melbourne, Australia",
+      "pic": "/demo/avatars/26.jpg",
+      "badge": "/images/icons/flags/australia.svg",
+      "position": "Web Developer",
+      "bio": "This is a nice user description that we can use as demo content"
+    },
+    {
+      "id": 24,
+      "name": "Edouard F.",
+      "initials": "EF",
+      "location": "Paris, France",
+      "pic": "/demo/avatars/28.jpg",
+      "badge": "/images/icons/flags/france.svg",
+      "position": "Web Developer",
+      "bio": "This is a nice user description that we can use as demo content"
+    },
+    {
+      "id": 25,
+      "name": "Hakeem C.",
+      "initials": "HC",
+      "location": "Berlin, Germany",
+      "pic": "/demo/avatars/29.jpg",
+      "badge": "/images/icons/flags/germany.svg",
+      "position": "Software Engineer",
+      "bio": "This is a nice user description that we can use as demo content"
+    },
+    {
+      "id": 26,
+      "name": "Clément D.",
+      "initials": "CD",
+      "location": "Toulouse, France",
+      "pic": "/demo/avatars/30.jpg",
+      "badge": "/images/icons/flags/france.svg",
+      "position": "Software Engineer",
+      "bio": "This is a nice user description that we can use as demo content"
+    },
+    {
+      "id": 27,
+      "name": "Yasseen A.",
+      "initials": "YA",
+      "location": "New York, NY",
+      "pic": "/demo/avatars/31.jpg",
+      "badge": "/images/icons/flags/united-states-of-america.svg",
+      "position": "Business Analyst",
+      "bio": "This is a nice user description that we can use as demo content"
+    },
+    {
+      "id": 28,
+      "name": "Jonathan K.",
+      "initials": "JK",
+      "location": "Los Angeles, CA",
+      "pic": "/demo/avatars/32.jpg",
+      "badge": "/images/icons/flags/united-states-of-america.svg",
+      "position": "Product Manager",
+      "bio": "This is a nice user description that we can use as demo content"
+    },
+    {
+      "id": 29,
+      "name": "Harvey M.",
+      "initials": "JK",
+      "location": "Los Angeles, CA",
+      "pic": "/demo/avatars/33.jpg",
+      "badge": "/images/icons/flags/united-states-of-america.svg",
+      "position": "Web Developer",
+      "bio": "This is a nice user description that we can use as demo content"
+    },
+    {
+      "id": 30,
+      "name": "Benoit L.",
+      "initials": "BL",
+      "location": "Paris, France",
+      "pic": "/demo/avatars/36.jpg",
+      "badge": "/images/icons/flags/france.svg",
+      "position": "Software Engineer",
+      "bio": "This is a nice user description that we can use as demo content"
+    },
+    {
+      "id": 31,
+      "name": "Helmut F.",
+      "initials": "HF",
+      "location": "Paris, France",
+      "pic": "/demo/avatars/37.jpg",
+      "badge": "/images/icons/flags/france.svg",
+      "position": "Product Manager",
+      "bio": "This is a nice user description that we can use as demo content"
+    },
+    {
+      "id": 32,
+      "name": "Christie D.",
+      "initials": "CD",
+      "location": "Los Angeles, CA",
+      "pic": "/demo/avatars/38.jpg",
+      "badge": "/images/icons/flags/united-states-of-america.svg",
+      "position": "Web Developer",
+      "bio": "This is a nice user description that we can use as demo content"
+    },
+    {
+      "id": 33,
+      "name": "Alejandro B.",
+      "initials": "AB",
+      "location": "New York, NY",
+      "pic": "/demo/avatars/39.jpg",
+      "badge": "/images/icons/flags/united-states-of-america.svg",
+      "position": "Business Analyst",
+      "bio": "This is a nice user description that we can use as demo content"
+    },
+    {
+      "id": 34,
+      "name": "John D.",
+      "initials": "JD",
+      "location": "New York, NY",
+      "pic": null,
+      "badge": "/images/icons/flags/united-states-of-america.svg",
+      "position": "Web Developer",
+      "bio": "This is a nice user description that we can use as demo content"
+    },
+    {
+      "id": 35,
+      "name": "Sara C.",
+      "initials": "SC",
+      "location": "Los Angeles, CA",
+      "pic": null,
+      "badge": "/images/icons/flags/united-states-of-america.svg",
+      "position": "UI/UX Designer",
+      "bio": "This is a nice user description that we can use as demo content"
+    },
+    {
+      "id": 36,
+      "name": "Betty T.",
+      "initials": "BT",
+      "location": "San Diego, CA",
+      "pic": null,
+      "badge": "/images/icons/flags/united-states-of-america.svg",
+      "position": "Product Manager",
+      "bio": "This is a nice user description that we can use as demo content"
+    },
+    {
+      "id": 37,
+      "name": "Alan T.",
+      "initials": "AT",
+      "location": "San Francisco, CA",
+      "pic": null,
+      "badge": "/images/icons/flags/united-states-of-america.svg",
+      "position": "Software Engineer",
+      "bio": "This is a nice user description that we can use as demo content"
+    },
+    {
+      "id": 38,
+      "name": "Naomi L.",
+      "initials": "NL",
+      "location": "San Francisco, CA",
+      "pic": null,
+      "badge": "/images/icons/flags/united-states-of-america.svg",
+      "position": "Frontend Developer",
+      "bio": "This is a nice user description that we can use as demo content"
+    }
+  ]
+}

@@ -339,7 +339,7 @@ watch(
         <template v-if="props.nowrap">
           <slot></slot>
         </template>
-        <VPageContent v-else>
+        <VPageContent v-else class="is-relative">
           <div class="is-navbar-lg">
             <div class="page-title has-text-centered">
               <!-- Mobile Page Title -->

@@ -335,7 +335,7 @@ watch(
         <template v-if="props.nowrap">
           <slot></slot>
         </template>
-        <VPageContent v-else>
+        <VPageContent v-else class="is-relative">
           <div class="page-title has-text-centered">
             <!-- Sidebar Trigger -->
             <div

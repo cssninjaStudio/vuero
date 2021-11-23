@@ -1,5 +1,5 @@
 <template>
-  <div class="page-content is-relative">
+  <div class="page-content">
     <slot></slot>
   </div>
 </template>
