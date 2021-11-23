@@ -8,46 +8,65 @@ import { useLayoutSwitcher } from '/@src/stores/layoutSwitcher'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 import useNotyf from '/@src/composable/useNotyf'
 
+/**
+ * The chat store keep the chat data across the app
+ * It internaly uses the useChatApi composable to fetch the data (to the json-server)
+ */
 const chat = useChat()
+
+// Those utilities are used to manage the layout
 const layoutSwitcher = useLayoutSwitcher()
 const viewWrapper = useViewWrapper()
 const sidebar = useSidebar()
 const notyf = useNotyf()
 
+// onMounted is a composition hook that is called when the component is mounted
 onMounted(async () => {
   sidebar.setActive('messages')
 
   try {
+    // Ask to the store to load conversations,
+    // - chat.loading will be set to true while loading
+    // - chat.conversations will be populated with the loaded conversations
     await chat.loadConversations()
 
+    // When conversations are loaded, select last unread conversation to load its messages
     const lastReadConversation = chat.conversations.find(
       (conversation) => !conversation.unreadMessages
     )
+
+    // Note that we do not await the messages to be loaded,
+    // we have nothing to do with them here but it will continue to run in background
     if (lastReadConversation) {
       chat.selectConversastion(lastReadConversation.id)
     } else {
       chat.selectConversastion(chat.conversations[0].id)
     }
   } catch (e: any) {
+    // We always catch errors in the components, so we can display messages to the user
+    // Here we just display the error with notyf popins
     notyf.error(e.message)
-    console.error(e)
   }
 })
 
+// Click handler to display the addConversation inputs
 function addConversation() {
   chat.unselectConversation()
   chat.setAddConversationOpen(!chat.addConversationOpen)
 }
 
+// Click handler to toggle the conversations
 function selectConversation(id: number) {
   chat.setAddConversationOpen(false)
   chat.selectConversastion(id)
 }
 
+// We set the page headers
 useHead({
   title: 'Messaging chat - Sidebar - Vuero',
 })
 
+// Here we set the viewWrapper push state to match the active sidebar
 watchPostEffect(() => {
   viewWrapper.setPushed(sidebar.active === 'messages')
 })
