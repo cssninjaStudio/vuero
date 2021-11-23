@@ -207,6 +207,7 @@ export default defineConfig({
      * @see https://github.com/stafyniaksacha/vite-plugin-radar
      */
     ViteRadar({
+      enableDev: true,
       analytics: {
         id: 'G-8PH6FM2JEL',
       },
@@ -219,12 +220,7 @@ export default defineConfig({
      */
     VitePWA({
       base: '/',
-      includeAssets: [
-        'favicon.svg',
-        'favicon.ico',
-        'robots.txt',
-        'apple-touch-icon.png',
-      ],
+      includeAssets: ['favicon.svg', 'favicon.ico', 'robots.txt', 'apple-touch-icon.png'],
       manifest: {
         name: 'Vuero - A complete Vue 3 design system',
         short_name: 'Vuero',
@@ -272,14 +268,8 @@ export default defineConfig({
         ],
       },
       defaultExtractor(content) {
-        const contentWithoutStyleBlocks = content.replace(
-          /<style[^]+?<\/style>/gi,
-          ''
-        )
-        return (
-          contentWithoutStyleBlocks.match(/[A-Za-z0-9-_/:]*[A-Za-z0-9-_/]+/g) ||
-          []
-        )
+        const contentWithoutStyleBlocks = content.replace(/<style[^]+?<\/style>/gi, '')
+        return contentWithoutStyleBlocks.match(/[A-Za-z0-9-_/:]*[A-Za-z0-9-_/]+/g) || []
       },
     }),
 
