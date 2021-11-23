@@ -102,7 +102,7 @@
       <div class="footer-copyright has-text-centered">
         <p>
           <span role="img" aria-label="copyright">&copy;</span> 2020-2021 |
-          <a href="https://cssninja.io">Css Ninja</a> | All Rights Reserved.
+          <a href="https://cssninja.io">cssninjaStudio</a> | All Rights Reserved.
         </p>
       </div>
     </div>

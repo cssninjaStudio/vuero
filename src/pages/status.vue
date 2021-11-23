@@ -256,7 +256,7 @@ useHead({
         </div>
         <div class="copyright">
           <span role="img" aria-label="copyright">&copy;</span>
-          <span>2020-2021 Css Ninja</span>
+          <span>2020-2021 cssninjaStudio</span>
         </div>
       </div>
     </div>

@@ -579,7 +579,7 @@ onMounted(() => {
 </template>
 
 <style lang="scss">
-/*! _board.scss | Vuero | Css ninja 2020-2021 */
+/*! _board.scss | Vuero | cssninjaStudio 2020-2021 */
 
 /*
     1. Kanban Toolbar

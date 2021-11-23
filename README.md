@@ -2,7 +2,7 @@
 
 ## ▶️ Getting started
 
-First of all, Thank you so much for purchasing this template and for being our loyal customer. You are awesome! You are entitled to get free lifetime updates to this product and support from the css ninja team directly. **Vuero** is a product built by [Css Ninja](https://cssninja.io/) and [Digisquad](https://digisquad.io/).
+First of all, Thank you so much for purchasing this template and for being our loyal customer. You are awesome! You are entitled to get free lifetime updates to this product and support from the cssninjaStudio team directly. **Vuero** is a product built by [cssninjaStudio](https://cssninja.io/) and [Digisquad](https://digisquad.io/).
 
 ### Prerequisites
 
