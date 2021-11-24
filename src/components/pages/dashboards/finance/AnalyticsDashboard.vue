@@ -335,7 +335,6 @@ import { notifications } from '/@src/data/widgets/ui/notificationList'
 
 <style lang="scss">
 @import '../../../../scss/abstracts/mixins';
-@import '../../../../scss/pages/generic/widgets-lists';
 
 .analytics-dashboard {
   .text-h-green {

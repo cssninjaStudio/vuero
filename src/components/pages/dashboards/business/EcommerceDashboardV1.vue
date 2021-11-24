@@ -1,15 +1,20 @@
 <script setup lang="ts">
 import ApexChart from 'vue3-apexcharts'
 
-import { customerEngagementChartOptions } from '/@src/data/dashboards/ecommerce/customerEngagementChart'
-import { customersChartOptions } from '/@src/data/dashboards/ecommerce/customersChart'
-import { productReturnsChartOptions } from '/@src/data/dashboards/ecommerce/productReturnsChart'
-import { revenueChartsOptions } from '/@src/data/dashboards/ecommerce/revenueChart'
+import { flexRadialChartCircleOptions } from '/@src/data/widgets/charts/flexRadialChartCircleChart'
+import { flexRadialChartStripesOptions } from '/@src/data/widgets/charts/flexRadialChartStripesChart'
+import { revenueOptions } from '/@src/data/widgets/charts/revenueAreaChart'
+import { lineStatsChartOptions } from '/@src/data/widgets/charts/lineStatsWidgetChart'
 import {
-  activeTicketsChartOptions,
-  escalatedChartOptions,
-  closedTicketsChartOptions,
-} from '/@src/data/dashboards/ecommerce/supportCharts'
+  widgetRadialGroup1Options,
+  widgetRadialGroup2Options,
+  widgetRadialGroup3Options,
+} from '/@src/data/widgets/charts/groupedCircleCharts'
+import {
+  widgetGaugeGroup1Options,
+  widgetGaugeGroup2Options,
+  widgetGaugeGroup3Options,
+} from '/@src/data/widgets/charts/groupedRadialCharts'
 import {
   spark1,
   spark2,
@@ -154,230 +159,153 @@ import {
 
       <!--Line Stats Widget-->
       <div class="column is-6">
-        <div class="stat-widget line-stats-widget is-straight">
-          <div class="widget-head">
-            <h3 class="dark-inverted">Revenue</h3>
-            <!--Dropdown-->
-            <ChartDropdown />
-          </div>
-          <div class="line-stats">
-            <div class="line-stat">
-              <span>This Month</span>
-              <span class="current">$75,648.43</span>
-            </div>
-            <div class="line-stat">
-              <span>Last Month</span>
-              <span class="dark-inverted">$91,512.18</span>
-            </div>
-          </div>
+        <LineStatWidget
+          title="Revenue"
+          current-label="This Month"
+          current-value="$75,648.43"
+          previous-label="Last Month"
+          previous-value="$91,512.18"
+          straight
+        >
           <ApexChart
             id="line-stats-widget-chart"
-            :height="revenueChartsOptions.chart.height"
-            :type="revenueChartsOptions.chart.type"
-            :series="revenueChartsOptions.series"
-            :options="revenueChartsOptions"
+            :height="lineStatsChartOptions.chart.height"
+            :type="lineStatsChartOptions.chart.type"
+            :series="lineStatsChartOptions.series"
+            :options="lineStatsChartOptions"
           >
           </ApexChart>
-        </div>
+        </LineStatWidget>
       </div>
 
       <!--Line Stats Widget-->
       <div class="column is-6">
-        <div class="stat-widget area-stats-widget is-straight">
-          <div class="widget-head">
-            <h3 class="dark-inverted">Customers</h3>
-            <!--Dropdown-->
-            <ChartDropdown />
-          </div>
-          <div class="area-stats">
-            <div class="area-stat">
-              <span>New Customers</span>
-              <span class="current">249</span>
-            </div>
-            <div class="area-stat">
-              <span>Returning</span>
-              <span class="dark-inverted">684</span>
-            </div>
-          </div>
+        <LineStatWidget
+          title="Revenue"
+          current-label="This Month"
+          current-value="$75,648.43"
+          previous-label="Last Month"
+          previous-value="$91,512.18"
+          straight
+        >
           <ApexChart
-            id="area-stats-widget-chart"
-            :height="customersChartOptions.chart.height"
-            :type="customersChartOptions.chart.type"
-            :series="customersChartOptions.series"
-            :options="customersChartOptions"
+            id="line-stats-area-chart"
+            :height="revenueOptions.chart.height"
+            :type="revenueOptions.chart.type"
+            :series="revenueOptions.series"
+            :options="revenueOptions"
           >
           </ApexChart>
-        </div>
+        </LineStatWidget>
       </div>
 
       <!--Flex Stat Widget-->
       <div class="column is-6">
-        <div class="stat-widget flex-stat-widget is-straight">
-          <div class="chart-media">
-            <div class="meta">
-              <h4 class="dark-inverted">Product Returns</h4>
-              <span class="is-dark-primary">Avg. 642</span>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bonum integritas
-                corporis: misera debilitas. Ita ne hoc quidem modo paria.
-              </p>
-            </div>
-            <div class="chart-container">
-              <ApexChart
-                id="flex-stat-circle"
-                :height="productReturnsChartOptions.chart.height"
-                :type="productReturnsChartOptions.chart.type"
-                :series="productReturnsChartOptions.series"
-                :options="productReturnsChartOptions"
-              >
-              </ApexChart>
-            </div>
-          </div>
-        </div>
+        <FlexStatWidget title="Sales Revenue" straight>
+          <ApexChart
+            id="flex-stat-circle"
+            :height="flexRadialChartCircleOptions.chart.height"
+            :type="flexRadialChartCircleOptions.chart.type"
+            :series="flexRadialChartCircleOptions.series"
+            :options="flexRadialChartCircleOptions"
+          >
+          </ApexChart>
+        </FlexStatWidget>
       </div>
 
       <!--Flex Stat Widget-->
       <div class="column is-6">
-        <div class="stat-widget flex-stat-widget is-straight has-fullheight">
-          <div class="chart-media">
-            <div class="meta">
-              <h4 class="dark-inverted">Customer Engagement</h4>
-              <span class="is-dark-primary">+34.2%</span>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bonum integritas
-                corporis: misera debilitas. Ita ne hoc quidem modo paria.
-              </p>
-            </div>
-            <div class="chart-container">
-              <ApexChart
-                id="flex-stat-radial"
-                :height="customerEngagementChartOptions.chart.height"
-                :type="customerEngagementChartOptions.chart.type"
-                :series="customerEngagementChartOptions.series"
-                :options="customerEngagementChartOptions"
-              >
-              </ApexChart>
-            </div>
-          </div>
-        </div>
+        <FlexStatWidget title="Sales Revenue" straight>
+          <ApexChart
+            id="flex-stat-radial"
+            :height="flexRadialChartStripesOptions.chart.height"
+            :type="flexRadialChartStripesOptions.chart.type"
+            :series="flexRadialChartStripesOptions.series"
+            :options="flexRadialChartStripesOptions"
+          >
+          </ApexChart>
+        </FlexStatWidget>
       </div>
 
       <!--Grouped Stat Widget-->
       <div class="column is-6">
-        <div class="stat-widget grouped-stat-widget is-straight">
-          <div class="widget-head">
-            <h3 class="dark-inverted">Shipping Stats</h3>
-          </div>
-          <div class="chart-group">
-            <div class="group">
-              <div class="group-content">
-                <div class="chart-container">
-                  <ApexChart
-                    id="widget-group-radial-1"
-                    :height="freeShippingChartOptions.chart.height"
-                    :type="freeShippingChartOptions.chart.type"
-                    :series="freeShippingChartOptions.series"
-                    :options="freeShippingChartOptions"
-                  >
-                  </ApexChart>
-                </div>
-                <span class="dark-inverted">36.8K</span>
-                <p>Free Shipping</p>
-              </div>
-            </div>
-            <div class="group">
-              <div class="group-content">
-                <div class="chart-container">
-                  <ApexChart
-                    id="widget-group-radial-2"
-                    :height="groundShippingChartOptions.chart.height"
-                    :type="groundShippingChartOptions.chart.type"
-                    :series="groundShippingChartOptions.series"
-                    :options="groundShippingChartOptions"
-                  >
-                  </ApexChart>
-                </div>
-                <span class="dark-inverted">292.3K</span>
-                <p>Ground Shipping</p>
-              </div>
-            </div>
-            <div class="group">
-              <div class="group-content">
-                <div class="chart-container">
-                  <ApexChart
-                    id="widget-group-radial-3"
-                    :height="nextDayAirChartOptions.chart.height"
-                    :type="nextDayAirChartOptions.chart.type"
-                    :series="nextDayAirChartOptions.series"
-                    :options="nextDayAirChartOptions"
-                  >
-                  </ApexChart>
-                </div>
-                <span class="dark-inverted">108.2K</span>
-                <p>Next Day Air</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <GroupedStatWidget
+          title="Additional Stats"
+          :values="['264', '1,203', '3,078']"
+          :labels="['New Deals', 'Proposals', 'Closed Deals']"
+        >
+          <template #chart1>
+            <ApexChart
+              id="group-radial-1"
+              :height="widgetRadialGroup1Options.chart.height"
+              :type="widgetRadialGroup1Options.chart.type"
+              :series="widgetRadialGroup1Options.series"
+              :options="widgetRadialGroup1Options"
+            >
+            </ApexChart>
+          </template>
+          <template #chart2>
+            <ApexChart
+              id="group-radial-2"
+              :height="widgetRadialGroup2Options.chart.height"
+              :type="widgetRadialGroup2Options.chart.type"
+              :series="widgetRadialGroup2Options.series"
+              :options="widgetRadialGroup2Options"
+            >
+            </ApexChart>
+          </template>
+          <template #chart3>
+            <ApexChart
+              id="group-radial-3"
+              :height="widgetRadialGroup3Options.chart.height"
+              :type="widgetRadialGroup3Options.chart.type"
+              :series="widgetRadialGroup3Options.series"
+              :options="widgetRadialGroup3Options"
+            >
+            </ApexChart>
+          </template>
+        </GroupedStatWidget>
       </div>
 
       <!--Grouped Stat Widget-->
       <div class="column is-6">
-        <div class="stat-widget grouped-stat-widget is-straight">
-          <div class="widget-head">
-            <h3 class="dark-inverted">Customer Support</h3>
-          </div>
-          <div class="chart-group">
-            <div class="group">
-              <div class="group-content">
-                <div class="chart-container is-gauge">
-                  <ApexChart
-                    id="widget-group-radial-4"
-                    :height="activeTicketsChartOptions.chart.height"
-                    :type="activeTicketsChartOptions.chart.type"
-                    :series="activeTicketsChartOptions.series"
-                    :options="activeTicketsChartOptions"
-                  >
-                  </ApexChart>
-                </div>
-                <span class="dark-inverted">641</span>
-                <p>Active Tickets</p>
-              </div>
-            </div>
-            <div class="group">
-              <div class="group-content">
-                <div class="chart-container is-gauge">
-                  <ApexChart
-                    id="widget-group-radial-5"
-                    :height="escalatedChartOptions.chart.height"
-                    :type="escalatedChartOptions.chart.type"
-                    :series="escalatedChartOptions.series"
-                    :options="escalatedChartOptions"
-                  >
-                  </ApexChart>
-                </div>
-                <span class="dark-inverted">84</span>
-                <p>Escalated</p>
-              </div>
-            </div>
-            <div class="group">
-              <div class="group-content">
-                <div class="chart-container is-gauge">
-                  <ApexChart
-                    id="widget-group-radial-6"
-                    :height="closedTicketsChartOptions.chart.height"
-                    :type="closedTicketsChartOptions.chart.type"
-                    :series="closedTicketsChartOptions.series"
-                    :options="closedTicketsChartOptions"
-                  >
-                  </ApexChart>
-                </div>
-                <span class="dark-inverted">1,749</span>
-                <p>Closed Tickets</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <GroupedStatWidget
+          title="Additional Stats"
+          :values="['264', '1,203', '3,078']"
+          :labels="['New Deals', 'Proposals', 'Closed Deals']"
+          gauge
+        >
+          <template #chart1>
+            <ApexChart
+              id="group-gauge-1"
+              :height="widgetGaugeGroup1Options.chart.height"
+              :type="widgetGaugeGroup1Options.chart.type"
+              :series="widgetGaugeGroup1Options.series"
+              :options="widgetGaugeGroup1Options"
+            >
+            </ApexChart>
+          </template>
+          <template #chart2>
+            <ApexChart
+              id="group-gauge-2"
+              :height="widgetGaugeGroup2Options.chart.height"
+              :type="widgetGaugeGroup2Options.chart.type"
+              :series="widgetGaugeGroup2Options.series"
+              :options="widgetGaugeGroup2Options"
+            >
+            </ApexChart>
+          </template>
+          <template #chart3>
+            <ApexChart
+              id="group-gauge-3"
+              :height="widgetGaugeGroup3Options.chart.height"
+              :type="widgetGaugeGroup3Options.chart.type"
+              :series="widgetGaugeGroup3Options.series"
+              :options="widgetGaugeGroup3Options"
+            >
+            </ApexChart>
+          </template>
+        </GroupedStatWidget>
       </div>
 
       <!--Table-->
@@ -460,7 +388,6 @@ import {
 
 <style lang="scss">
 @import '../../../../scss/abstracts/mixins';
-@import '../../../../scss/pages/generic/widgets-stats';
 
 .ecommerce-dashboard-v1 {
   .dashboard-header {

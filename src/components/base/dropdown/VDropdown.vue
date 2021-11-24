@@ -75,7 +75,7 @@ defineExpose({
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .dropdown {
   &.is-dots {
     &:hover,
@@ -96,14 +96,11 @@ defineExpose({
       height: 30px;
       width: 30px;
       border-radius: var(--radius-rounded);
-      border: none;
-      background: transparent;
       cursor: pointer;
       transition: all 0.3s; // transition-all test
 
-      > span {
-        height: 20px;
-        width: 20px;
+      .iconify {
+        vertical-align: middle;
       }
 
       svg {
@@ -141,12 +138,8 @@ defineExpose({
         transition: all 0.3s; // transition-all test
         margin-left: 6px;
 
-        > span span {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 16px;
-          width: 16px;
+        .iconify {
+          vertical-align: middle;
         }
 
         svg {
@@ -281,34 +274,20 @@ defineExpose({
         box-shadow: var(--light-box-shadow);
       }
 
-      &:focus:not(:active) {
-        box-shadow: none !important;
+      .base-caret {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 16px;
+        width: 16px;
+
+        .iconify {
+          position: relative;
+          top: -2px;
+          vertical-align: middle;
+          margin-left: 0.25rem;
+        }
       }
-    }
-
-    &:focus-visible {
-      outline-offset: var(--accessibility-focus-outline-offset);
-      outline-width: var(--accessibility-focus-outline-width);
-      outline-style: var(--accessibility-focus-outline-style);
-      outline-color: var(--accessibility-focus-outline-color);
-    }
-  }
-
-  .base-caret {
-    position: relative;
-    margin-left: 0.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 16px;
-    width: 16px;
-
-    > span {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 16px;
-      width: 16px;
     }
   }
 
@@ -316,9 +295,16 @@ defineExpose({
   .dropdown-menu {
     .dropdown-item {
       color: var(--light-text);
+      font-family: var(--font);
 
       &:hover {
         color: var(--dark-text);
+      }
+
+      &.is-active {
+        background: var(--fade-grey-light-3);
+
+        // color: var(--white);
       }
 
       // Child dropdown parent
@@ -399,6 +385,10 @@ defineExpose({
   }
 }
 
+/* ==========================================================================
+2. Dropdown Dark mode
+========================================================================== */
+
 .is-dark {
   .toolbar-link {
     &:hover {
@@ -475,6 +465,23 @@ defineExpose({
               }
             }
 
+            &.is-active {
+              .icon {
+                svg {
+                  color: var(--white) !important;
+                }
+
+                .lnir,
+                .lnil {
+                  color: var(--white);
+                }
+              }
+
+              .meta span {
+                color: var(--white) !important;
+              }
+            }
+
             .icon {
               svg {
                 color: var(--light-text);
@@ -504,7 +511,6 @@ defineExpose({
         border-color: var(--dark-sidebar-light-8) !important;
 
         .dropdown-item {
-          font-family: var(--font);
           color: var(--light-text);
 
           &.is-active {

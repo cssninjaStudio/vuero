@@ -39,3 +39,106 @@ const props = withDefaults(
     />
   </svg>
 </template>
+
+<style lang="scss">
+.circle-chart-wrapper {
+  &.is-success {
+    .circle-chart__circle {
+      color: var(--success) !important;
+      stroke: var(--success) !important;
+    }
+  }
+
+  &.is-info {
+    .circle-chart__circle {
+      color: var(--info) !important;
+      stroke: var(--info) !important;
+    }
+  }
+
+  &.is-warning {
+    .circle-chart__circle {
+      color: var(--warning) !important;
+      stroke: var(--warning) !important;
+    }
+  }
+
+  &.is-danger {
+    .circle-chart__circle {
+      color: var(--danger) !important;
+      stroke: var(--danger) !important;
+    }
+  }
+}
+
+.circle-chart__circle {
+  animation: circle-chart-fill 2.4s reverse;
+  transform: rotate(90deg);
+  transform-origin: center;
+  color: var(--primary);
+  stroke: var(--primary);
+  animation-timing-function: cubic-bezier(0.78, 0.59, 0.19, 0.33);
+}
+
+.circle-chart__circle_2 {
+  animation: circle-chart-fill-3 4s reverse;
+}
+
+.circle-chart__background {
+  color: #efefef;
+  stroke: #efefef;
+}
+
+@keyframes circle-chart-fill {
+  50% {
+    stroke-dasharray: 0 0;
+  }
+
+  100% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+@keyframes circle-chart-fill-2 {
+  from {
+    opacity: 100%;
+  }
+
+  to {
+    stroke-dasharray: 0 100;
+    opacity: 0%;
+  }
+}
+
+@keyframes circle-chart-fill-3 {
+  0% {
+    opacity: 100%;
+  }
+
+  50% {
+    opacity: 100%;
+    stroke-dasharray: 0 100;
+  }
+
+  100% {
+    stroke-dasharray: 0 100;
+    opacity: 0%;
+  }
+}
+
+.is-dark {
+  .circle-chart-wrapper {
+    &:not(.is-success):not(.is-info):not(.is-warning):not(.is-danger) {
+      .circle-chart__circle {
+        color: var(--primary) !important;
+        stroke: var(--primary) !important;
+      }
+    }
+  }
+
+  .circle-chart__background {
+    color: var(--dark-sidebar-dark-2);
+    stroke: var(--dark-sidebar-dark-2);
+  }
+}
+</style>

@@ -265,11 +265,7 @@ useHead({
 
 <style lang="scss">
 @import '../scss/abstracts/mixins';
-@import '../scss/pages/generic/utility';
 
-/* ==========================================================================
-3. Status Page
-========================================================================== */
 .status-page-wrapper {
   max-width: 720px;
   margin: 0 auto;

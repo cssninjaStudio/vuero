@@ -343,7 +343,6 @@ const columns = {
 
 <style lang="scss">
 @import '../../../../scss/abstracts/mixins';
-@import '../../../../scss/pages/generic/widgets-lists';
 
 .hr-dashboard {
   .block-header {

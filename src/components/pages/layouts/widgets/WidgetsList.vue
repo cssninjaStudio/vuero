@@ -118,8 +118,3 @@ import { timeline } from '/@src/data/widgets/list/timeline'
     </div>
   </div>
 </template>
-
-<style lang="scss">
-@import '../../../../scss/abstracts/mixins';
-@import '../../../../scss/pages/generic/widgets-lists';
-</style>

@@ -50,7 +50,6 @@ const activeTab = ref<TabId>('overview')
 
 <style lang="scss">
 @import '../../../../scss/abstracts/mixins';
-@import '../../../../scss/pages/generic/widgets-stats';
 
 .lifestyle-dashboard-bg {
   position: absolute;

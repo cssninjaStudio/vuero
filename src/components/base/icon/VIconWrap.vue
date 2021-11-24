@@ -144,7 +144,6 @@ const isIconify = computed(() => {
 
 .is-dark {
   .icon-wrap {
-    /* background: var(--dark-sidebar); */
     border-color: transparent;
   }
 }

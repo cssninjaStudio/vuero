@@ -341,14 +341,7 @@ onUnmounted(() => {
                           <label for="send-marketing">
                             <span> Send me marketing and transaction emails </span>
                           </label>
-                          <label for="send-marketing" class="form-switch ml-auto">
-                            <input
-                              id="send-marketing"
-                              type="checkbox"
-                              class="is-switch"
-                            />
-                            <i aria-hidden="true"></i>
-                          </label>
+                          <VSwitchBlock color="success" checked />
                         </VControl>
                       </VField>
                     </div>
@@ -424,11 +417,7 @@ onUnmounted(() => {
 
 <style lang="scss">
 @import '../../scss/abstracts/mixins';
-@import '../../scss/pages/profile/user-profile';
 
-/* ==========================================================================
-4. Sign up
-========================================================================== */
 .signup-nav {
   position: fixed;
   top: 0;
@@ -621,6 +610,11 @@ onUnmounted(() => {
           span {
             display: block;
             color: var(--muted-grey);
+          }
+
+          > div {
+            margin-left: auto;
+            transform: scale(0.8);
           }
         }
 

@@ -86,7 +86,7 @@
 2. Navigation
 ========================================================================== */
 
-.landing-page-wrapper {
+/* .landing-page-wrapper {
   .hero {
     .navbar {
       top: 15px;
@@ -324,13 +324,13 @@
       }
     }
   }
-}
+} */
 
 /* ==========================================================================
 3. Navigation Dark mode
 ========================================================================== */
 
-.is-dark {
+/* .is-dark {
   .landing-page-wrapper {
     .navbar {
       &:not(.is-docked) {
@@ -397,7 +397,7 @@
       }
     }
   }
-}
+} */
 
 /* ==========================================================================
 4. Hero
@@ -879,7 +879,7 @@
 13. Demos
 ========================================================================== */
 
-.vuero-demos {
+/* .vuero-demos {
   .demo-section {
     margin-bottom: 100px;
 
@@ -1065,7 +1065,7 @@
       }
     }
   }
-}
+} */
 
 .component-features {
   .media-flex {
@@ -1094,7 +1094,7 @@
   }
 }
 
-.component-box {
+/* .component-box {
   display: block;
   text-align: center;
   background: var(--white);
@@ -1102,7 +1102,7 @@
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 0;
-  transition: coltransformor 0.3s, box-shadow 0.3s, border-color 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
   cursor: pointer;
 
   &:hover {
@@ -1139,7 +1139,7 @@
     color: var(--light-text);
     transition: color 0.3s;
   }
-}
+} */
 
 /* ==========================================================================
 14. Demos Dark mode
@@ -1147,7 +1147,7 @@
 
 .is-dark {
   .landing-page-wrapper {
-    .vuero-demos {
+    /* .vuero-demos {
       .demo-section {
         .demo-section-title {
           .title-meta {
@@ -1169,7 +1169,7 @@
           border-color: var(--primary-light-10);
         }
       }
-    }
+    } */
 
     .component-features {
       .media-flex {
@@ -1213,7 +1213,7 @@
       }
     }
 
-    .component-box {
+    /* .component-box {
       background: var(--landing-yyy-dark-6);
       border-color: var(--landing-yyy-light-2);
 
@@ -1224,7 +1224,7 @@
           color: var(--primary);
         }
       }
-    }
+    } */
   }
 }
 
@@ -1232,7 +1232,7 @@
 15. footer
 ========================================================================== */
 
-.vuero-footer {
+/* .vuero-footer {
   padding-bottom: 0 !important;
   padding-top: 4rem !important;
   background: var(--body-color);
@@ -1347,13 +1347,13 @@
       }
     }
   }
-}
+} */
 
 /* ==========================================================================
 16. Footer Dark mode
 ========================================================================== */
 
-.is-dark {
+/* .is-dark {
   .landing-page-wrapper {
     .vuero-footer {
       background: var(--landing-xxx-light-8);
@@ -1418,7 +1418,7 @@
       }
     }
   }
-}
+} */
 
 /* ==========================================================================
 17. Night Switch
@@ -1694,7 +1694,7 @@
 
 @media (max-width: 767px) {
   .landing-page-wrapper {
-    .navbar {
+    /* .navbar {
       display: flex;
       align-items: center;
       width: calc(100% - 32px);
@@ -1775,7 +1775,7 @@
           }
         }
       }
-    }
+    } */
 
     .rounded-hero {
       min-height: 75vh !important;
@@ -1820,15 +1820,15 @@
     }
   }
 
-  .vuero-demo-wrapper {
+  /* .vuero-demo-wrapper {
     min-height: 184px;
-  }
+  } */
 
   .side-feature {
     margin-bottom: 60px !important;
   }
 
-  .vuero-footer {
+  /* .vuero-footer {
     .footer-head {
       flex-direction: column;
       text-align: center;
@@ -1842,12 +1842,12 @@
       padding-left: 20px;
       padding-right: 20px;
     }
-  }
+  } */
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .landing-page-wrapper {
-    .navbar {
+    /* .navbar {
       display: flex;
       align-items: center;
       width: calc(100% - 32px);
@@ -1932,7 +1932,7 @@
           }
         }
       }
-    }
+    } */
 
     .main-hero {
       .is-hero-title {
@@ -1954,7 +1954,7 @@
       }
     }
 
-    .vuero-demos {
+    /* .vuero-demos {
       .demo-section {
         .columns {
           display: flex;
@@ -1964,7 +1964,7 @@
           }
         }
       }
-    }
+    } */
 
     .side-feature {
       display: flex;
@@ -1999,7 +1999,7 @@
     }
   }
 
-  .vuero-footer {
+  /* .vuero-footer {
     .footer-head,
     .footer-body {
       padding-left: 20px;
@@ -2009,26 +2009,26 @@
     .footer-description {
       max-width: 400px;
     }
-  }
+  } */
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .landing-page-wrapper {
+  /* .landing-page-wrapper {
     .navbar {
       width: calc(100% - 40px);
       margin: 0 20px;
     }
-  }
+  } */
 
-  .vuero-demo-wrapper {
+  /* .vuero-demo-wrapper {
     min-height: 174px;
-  }
+  } */
 
-  .vuero-footer {
+  /* .vuero-footer {
     .footer-head,
     .footer-body {
       padding-left: 20px;
       padding-right: 20px;
     }
-  }
+  } */
 }

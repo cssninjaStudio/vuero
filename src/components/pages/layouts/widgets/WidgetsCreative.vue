@@ -166,8 +166,3 @@ import Widget8 from '/@src/assets/illustrations/widgets/8.svg'
     </div>
   </div>
 </template>
-
-<style lang="scss">
-@import '../../../../scss/abstracts/mixins';
-@import '../../../../scss/pages/generic/widgets-lists';
-</style>

@@ -819,5 +819,5 @@ useHead({
 
 <style lang="scss">
 @import '../scss/abstracts/mixins';
-@import '../scss/pages/demo/landing';
+@import '../scss/_demo/landing';
 </style>
