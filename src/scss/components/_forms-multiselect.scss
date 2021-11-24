@@ -15,7 +15,9 @@
 
 .multiselect {
   font-family: var(--font);
-  min-width: 190px;
+  min-width: initial;
+  width: 100%;
+  max-width: 100%;
 
   input:focus-visible,
   &:focus-visible {
@@ -534,7 +536,7 @@
       &.is-user,
       &.is-image,
       &.is-icon {
-        padding: 5px 8px;
+        padding: 4px 6px;
         border-radius: 22px;
         margin: 3px 3px 8px;
 
