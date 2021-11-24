@@ -1,13 +1,15 @@
 <script setup lang="ts">
 import type { VNode } from 'vue'
-import { toRaw, computed, reactive, isReactive } from 'vue'
+import { toRaw, computed, reactive, isReactive, inject } from 'vue'
 
-export interface VFlexTableColumn {
+import { flewTableWrapperSymbol } from './VFlexTableWrapper.vue'
+
+export interface VFlexTableColumn<T = any> {
   key: string
   label: string
-  format: (value: any, row: any, index: number) => any
+  format: (value: any, row: T, index: number) => any
   renderHeader?: () => VNode
-  renderRow?: (row: any, column: VFlexTableColumn, index: number) => VNode
+  renderRow?: (row: T, column: VFlexTableColumn<T>, index: number) => VNode
   align?: 'start' | 'center' | 'end'
   bold?: boolean
   inverted?: boolean
@@ -17,9 +19,10 @@ export interface VFlexTableColumn {
   media?: boolean
   cellClass?: string
 }
+
 export interface VFlexTableProps<T = any> {
   data?: T[]
-  columns?: Record<string, string | Omit<Partial<VFlexTableColumn>, 'key'>>
+  columns?: Record<string, string | Omit<Partial<VFlexTableColumn<T>>, 'key'>>
   printObjects?: boolean
   reactive?: boolean
   compact?: boolean
@@ -37,20 +40,30 @@ const props = withDefaults(defineProps<VFlexTableProps>(), {
   columns: undefined,
   data: () => [],
 })
-const data = computed(() =>
-  props.reactive
-    ? isReactive(props.data)
-      ? props.data
-      : reactive(props.data)
-    : toRaw(props.data)
-)
+
+const wrapper = inject(flewTableWrapperSymbol, null)
+
+const data = computed(() => {
+  if (wrapper?.data?.value) return wrapper.data.value
+
+  if (props.reactive) {
+    if (isReactive(props.data)) {
+      return props.data
+    } else {
+      return reactive(props.data)
+    }
+  }
+
+  return toRaw(props.data)
+})
 
 const defaultFormatter = (value: any) => value
 const columns = computed(() => {
+  const columnsSrc = wrapper?.columns?.value ?? props.columns
   let columns: VFlexTableColumn[] = []
 
-  if (props.columns) {
-    for (const [key, label] of Object.entries(props.columns)) {
+  if (columnsSrc) {
+    for (const [key, label] of Object.entries(columnsSrc)) {
       if (typeof label === 'string') {
         columns.push({
           format: defaultFormatter,
@@ -123,83 +136,85 @@ const columns = computed(() => {
       </div>
     </slot>
     <slot name="body">
-      <div
-        v-for="(row, index) in data"
-        :key="index"
-        class="flex-table-item has-slimscroll-x"
-        :class="[props.clickable && 'is-clickable']"
-        :tabindex="props.clickable ? 0 : undefined"
-        @keydown.space.prevent="
-          () => {
-            props.clickable && emits('rowClick', row, index)
-          }
-        "
-        @click="
-          () => {
-            props.clickable && emits('rowClick', row, index)
-          }
-        "
-      >
-        <slot name="body-row" :row="row" :columns="columns" :index="index">
-          <template v-for="column in columns" :key="'row' + column.key">
-            <div
-              class="flex-table-cell is-relative"
-              :class="[
-                column.bold && 'is-bold',
-                column.media && 'is-media',
-                column.grow === true && 'is-grow',
-                column.grow === 'lg' && 'is-grow-lg',
-                column.grow === 'xl' && 'is-grow-xl',
-                column.scrollX && !column.scrollY && 'has-slimscroll-x',
-                !column.scrollX && column.scrollY && 'has-slimscroll',
-                column.scrollX && column.scrollY && 'has-slimscroll-all',
-                column.align === 'end' && 'cell-end',
-                column.align === 'center' && 'cell-center',
-                column.cellClass,
-              ]"
-              :data-th="column.label || undefined"
-            >
-              <slot
-                name="body-cell"
-                :row="row"
-                :column="column"
-                :index="index"
-                :value="column.format(row[column.key], row, index)"
+      <div v-for="(row, index) in data" :key="index" class="has-slimscroll-x">
+        <slot name="body-row-pre" :row="row" :columns="columns" :index="index"></slot>
+        <div
+          class="flex-table-item"
+          :class="[props.clickable && 'is-clickable']"
+          :tabindex="props.clickable ? 0 : undefined"
+          @keydown.space.prevent="
+            () => {
+              props.clickable && emits('rowClick', row, index)
+            }
+          "
+          @click="
+            () => {
+              props.clickable && emits('rowClick', row, index)
+            }
+          "
+        >
+          <slot name="body-row" :row="row" :columns="columns" :index="index">
+            <template v-for="column in columns" :key="'row' + column.key">
+              <div
+                class="flex-table-cell is-relative"
+                :class="[
+                  column.bold && 'is-bold',
+                  column.media && 'is-media',
+                  column.grow === true && 'is-grow',
+                  column.grow === 'lg' && 'is-grow-lg',
+                  column.grow === 'xl' && 'is-grow-xl',
+                  column.scrollX && !column.scrollY && 'has-slimscroll-x',
+                  !column.scrollX && column.scrollY && 'has-slimscroll',
+                  column.scrollX && column.scrollY && 'has-slimscroll-all',
+                  column.align === 'end' && 'cell-end',
+                  column.align === 'center' && 'cell-center',
+                  column.cellClass,
+                ]"
+                :data-th="column.label || undefined"
               >
-                <component
-                  :is="{ render: () => column.renderRow?.(row, column, index) }"
-                  v-if="column.renderRow"
-                ></component>
-                <span
-                  v-else-if="
-                    typeof column.format(row[column.key], row, index) === 'object'
-                  "
-                  :class="[
-                    column.cellClass,
-                    column.inverted && 'dark-inverted',
-                    !column.inverted && (column.bold ? 'dark-text' : 'light-text'),
-                  ]"
+                <slot
+                  name="body-cell"
+                  :row="row"
+                  :column="column"
+                  :index="index"
+                  :value="column.format(row[column.key], row, index)"
                 >
-                  <details v-if="printObjects">
-                    <div class="language-json py-4">
-                      <pre><code>{{ column.format(row[column.key], row, index) }}</code></pre>
-                    </div>
-                  </details>
-                </span>
-                <span
-                  v-else
-                  :class="[
-                    column.cellClass,
-                    column.inverted && 'dark-inverted',
-                    !column.inverted && (column.bold ? 'dark-text' : 'light-text'),
-                  ]"
-                >
-                  {{ column.format(row[column.key], row, index) }}
-                </span>
-              </slot>
-            </div>
-          </template>
-        </slot>
+                  <component
+                    :is="{ render: () => column.renderRow?.(row, column, index) }"
+                    v-if="column.renderRow"
+                  ></component>
+                  <span
+                    v-else-if="
+                      typeof column.format(row[column.key], row, index) === 'object'
+                    "
+                    :class="[
+                      column.cellClass,
+                      column.inverted && 'dark-inverted',
+                      !column.inverted && (column.bold ? 'dark-text' : 'light-text'),
+                    ]"
+                  >
+                    <details v-if="printObjects">
+                      <div class="language-json py-4">
+                        <pre><code>{{ column.format(row[column.key], row, index) }}</code></pre>
+                      </div>
+                    </details>
+                  </span>
+                  <span
+                    v-else
+                    :class="[
+                      column.cellClass,
+                      column.inverted && 'dark-inverted',
+                      !column.inverted && (column.bold ? 'dark-text' : 'light-text'),
+                    ]"
+                  >
+                    {{ column.format(row[column.key], row, index) }}
+                  </span>
+                </slot>
+              </div>
+            </template>
+          </slot>
+        </div>
+        <slot name="body-row-post" :row="row" :columns="columns" :index="index"></slot>
       </div>
     </slot>
   </div>
@@ -216,7 +231,8 @@ const columns = computed(() => {
     align-items: center;
     padding: 0 10px;
 
-    span {
+    span,
+    .text {
       flex: 1 1 0;
       display: flex;
       align-items: center;
@@ -400,7 +416,8 @@ const columns = computed(() => {
               margin-right: 4px;
             }
 
-            span {
+            span,
+            .text {
               display: inline-block;
               margin-left: 0;
               font-size: 0.9rem;
@@ -431,7 +448,8 @@ const columns = computed(() => {
 
         .v-avatar {
           .avatar.is-fake {
-            span {
+            span,
+            .text {
               margin: 0;
             }
           }
@@ -476,7 +494,8 @@ const columns = computed(() => {
           margin-left: 6px;
           line-height: 1.3;
 
-          span {
+          span,
+          .text {
             display: block !important;
             font-size: 0.8rem;
             color: var(--light-text);
@@ -508,7 +527,8 @@ const columns = computed(() => {
           transition: opacity 0.3s;
         }
 
-        &:hover {
+        &:hover,
+        &:focus-within {
           color: var(--primary);
 
           .iconify {
@@ -597,7 +617,8 @@ const columns = computed(() => {
 
   &.is-table-clickable {
     .flex-table-item {
-      &:hover {
+      &:hover,
+      &:focus-within {
         background: var(--primary) !important;
 
         .light-text {
@@ -644,7 +665,8 @@ const columns = computed(() => {
         &.cell-end {
           .button {
             &.dark-outlined {
-              &:hover {
+              &:hover,
+              &:focus-within {
                 border-color: var(--primary) !important;
                 color: var(--primary) !important;
               }
@@ -746,7 +768,8 @@ const columns = computed(() => {
         &.is-media {
           padding-left: 10px;
 
-          span {
+          span,
+          .text {
             font-size: 1.2rem;
           }
         }
@@ -761,7 +784,8 @@ const columns = computed(() => {
           > strong,
           > p,
           > div,
-          > .is-pushed-mobile {
+          > .is-pushed-mobile,
+          > .text {
             margin-left: auto;
 
             &.no-push {

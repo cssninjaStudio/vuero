@@ -73,12 +73,14 @@ This will run the `dev` script from the `package.json` file.
 You will notice that two servers are started: one for the frontend (vite) and one for the backend (json-server).
 
 Vite is the build tool that we use to compile the frontend code.
-It replace webpack and vue-cli, used in vue 2 ecosystem.  
+It replace webpack and vue-cli, used in vue 2 ecosystem.
+You can only start vite with `dev:vite`  
 Read more about it [on vitejs.dev](https://vitejs.dev/)
 
 Json-server is a fake REST-API server that we use to simulate the backend.
 The configuration and the database are in the `/json-server` directory.
 You can find how we use it in the `/src/pages/messaging-v1.vue` file and the `/src/composable/useChatApi.ts`  
+You can only start vite with `dev:json-server`  
 Read more about it [on github.com/typicode/json-server](https://github.com/typicode/json-server)
 
 > - Access the Vuero frontend in your browser at [http://localhost:3000/](http://localhost:3000/)
@@ -117,3 +119,4 @@ If you want to contribute, feel free to create or up-vote discussions on the ded
   - https://v3.vuejs.org/guide/typescript-support.html
 - https://vitejs.dev/
 - https://pinia.esm.dev/
+- https://vueuse.org/

@@ -32,6 +32,14 @@
         color: var(--primary);
       }
     }
+
+    &:focus-visible {
+      outline-offset: var(--accessibility-focus-outline-offset);
+      outline-width: var(--accessibility-focus-outline-width);
+      outline-style: var(--accessibility-focus-outline-style);
+      outline-color: var(--accessibility-focus-outline-color);
+      border-color: var(--border);
+    }
   }
 
   .pagination-list {
@@ -45,6 +53,14 @@
           background: var(--primary);
           border-color: var(--primary);
           box-shadow: var(--primary-box-shadow);
+        }
+
+        &:focus-visible {
+          outline-offset: var(--accessibility-focus-outline-offset);
+          outline-width: var(--accessibility-focus-outline-width);
+          outline-style: var(--accessibility-focus-outline-style);
+          outline-color: var(--accessibility-focus-outline-color);
+          border-color: var(--border);
         }
       }
     }
@@ -84,50 +100,6 @@
         }
       }
     }
-  }
-}
-
-/* ==========================================================================
-5. Flex Table advanced wrapper
-========================================================================== */
-
-.flex-table-wrapper {
-  background: var(--white);
-  border: 1px solid var(--fade-grey-dark-3);
-  border-radius: 8px;
-  padding: 20px;
-
-  .flex-table-toolbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 40px;
-  }
-
-  .flex-table {
-    .flex-table-item {
-      margin-bottom: 0;
-      border-radius: 0;
-      border-left: none;
-      border-right: none;
-      border-top: none;
-
-      &:last-child {
-        margin-bottom: 6px;
-        border-bottom: none;
-      }
-    }
-  }
-}
-
-/* ==========================================================================
-6. Flex Table advanced wrapper Dark mode
-========================================================================== */
-
-.is-dark {
-  .flex-table-wrapper {
-    background: var(--dark-sidebar-light-6);
-    border-color: var(--dark-sidebar-light-12);
   }
 }
 
@@ -267,37 +239,6 @@
 ========================================================================== */
 
 @media (max-width: 767px) {
-  .flex-table-wrapper {
-    .flex-table-toolbar {
-      margin-bottom: 10px;
-
-      .left {
-        flex-grow: 2;
-      }
-
-      .right {
-        display: none;
-      }
-    }
-
-    .flex-table {
-      .flex-table-header {
-        .is-checkbox {
-          display: none;
-        }
-      }
-
-      .flex-table-item {
-        padding-left: 0;
-        padding-right: 0;
-
-        .is-checkbox {
-          display: none;
-        }
-      }
-    }
-  }
-
   .pagination-next,
   .pagination-previous {
     &.has-chevron {

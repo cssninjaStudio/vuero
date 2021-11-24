@@ -34,7 +34,11 @@ export default defineComponent({
           onKeydown(e: KeyboardEvent) {
             if (e.code === 'Space') {
               e.preventDefault()
-              toggle()
+              e.stopPropagation()
+
+              if (e.target instanceof HTMLAnchorElement) {
+                e.target.dispatchEvent(new MouseEvent('click', { bubbles: true }))
+              }
             }
           },
         },

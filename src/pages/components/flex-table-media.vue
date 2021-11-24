@@ -57,7 +57,46 @@ useHead({
               </div>
             </template>
             <template #body>
-              <VFlexTableRowMedia :rows="flexRowsAdvanced" />
+              <div v-for="row in flexRowsAdvanced" :key="row.id" class="flex-table-item">
+                <div class="flex-table-cell is-media is-grow">
+                  <VAvatar size="medium" :picture="row.picture" :badge="row.badge" />
+                  <div>
+                    <span class="item-name">{{ row.name }}</span>
+                    <span class="item-meta">
+                      <span>{{ row.position }}</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="flex-table-cell">
+                  <span class="light-text">{{ row.location }}</span>
+                </div>
+                <div class="flex-table-cell">
+                  <span class="light-text">{{ row.industry }}</span>
+                </div>
+                <div class="flex-table-cell">
+                  <span
+                    class="tag is-rounded"
+                    :class="[
+                      row.status === 'Active' && 'is-success',
+                      row.status === 'Disabled' && '',
+                      row.status === 'New' && 'is-info',
+                      row.status === 'Suspended' && 'is-orange',
+                    ]"
+                    >{{ row.status }}</span
+                  >
+                </div>
+                <div class="flex-table-cell">
+                  <VAvatarStack
+                    class="is-pushed-mobile"
+                    size="small"
+                    :avatars="row.contacts"
+                    :limit="3"
+                  />
+                </div>
+                <div class="flex-table-cell cell-end">
+                  <FlexTableDropdown />
+                </div>
+              </div>
             </template>
           </VFlexTable>
 

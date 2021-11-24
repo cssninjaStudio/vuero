@@ -19,8 +19,8 @@ const { t } = useI18n()
 const route = useRoute()
 const lastPage = computed(() => Math.ceil(props.totalItems / props.itemPerPage) || 1)
 const totalPageDisplayed = computed(() =>
-  lastPage.value > props.maxLinksDisplayed - 2
-    ? props.maxLinksDisplayed - 2
+  lastPage.value > props.maxLinksDisplayed + 2
+    ? props.maxLinksDisplayed + 2
     : lastPage.value
 )
 const pages = computed(() => {
@@ -90,63 +90,71 @@ zh-CN:
     aria-label="pagination"
     data-filter-hide
   >
-    <RouterLink
-      v-if="lastPage > 1"
-      :to="paginatedLink(currentPage - 1)"
-      class="pagination-previous has-chevron"
-    >
-      <i aria-hidden="true" class="iconify" data-icon="feather:chevron-left"></i>
-    </RouterLink>
-    <RouterLink
-      v-if="lastPage > 1"
-      :to="paginatedLink(currentPage + 1)"
-      class="pagination-next has-chevron"
-    >
-      <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right"></i>
-    </RouterLink>
-
     <ul class="pagination-list">
       <li>
         <RouterLink
           :to="paginatedLink(1)"
+          tabindex="0"
           class="pagination-link"
           :aria-label="t('goto-page-title', { page: 1 })"
           :class="[currentPage === 1 && 'is-current']"
+          @keydown.space.prevent="(e) => e.target.click()"
         >
           1
         </RouterLink>
       </li>
 
-      <li v-if="pages.length === 0 || pages[0] > 2">
+      <li v-if="lastPage > 1 && (pages.length === 0 || pages[0] > 2)">
         <span class="pagination-ellipsis">…</span>
       </li>
 
       <li v-for="page in pages" :key="page">
         <RouterLink
           :to="paginatedLink(page)"
+          tabindex="0"
           class="pagination-link"
           :aria-label="t('goto-page-title', { page: page })"
           :aria-current="currentPage === page ? 'page' : undefined"
           :class="[currentPage === page && 'is-current']"
+          @keydown.space.prevent="(e) => e.target.click()"
         >
           {{ page }}
         </RouterLink>
       </li>
 
-      <li v-if="pages[pages.length - 1] < lastPage - 1">
+      <li v-if="lastPage > 1 && pages[pages.length - 1] < lastPage - 1">
         <span class="pagination-ellipsis">…</span>
       </li>
 
-      <li>
+      <li v-if="lastPage > 1">
         <RouterLink
           :to="paginatedLink(lastPage)"
+          tabindex="0"
           class="pagination-link"
           :aria-label="t('goto-page-title', { page: lastPage })"
           :class="[currentPage === lastPage && 'is-current']"
+          @keydown.space.prevent="(e) => e.target.click()"
         >
           {{ lastPage }}
         </RouterLink>
       </li>
     </ul>
+
+    <RouterLink
+      :to="paginatedLink(currentPage - 1)"
+      tabindex="0"
+      class="pagination-previous has-chevron"
+      @keydown.space.prevent="(e) => e.target.click()"
+    >
+      <i aria-hidden="true" class="iconify" data-icon="feather:chevron-left"></i>
+    </RouterLink>
+    <RouterLink
+      :to="paginatedLink(currentPage + 1)"
+      tabindex="0"
+      class="pagination-next has-chevron"
+      @keydown.space.prevent="(e) => e.target.click()"
+    >
+      <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right"></i>
+    </RouterLink>
   </nav>
 </template>
