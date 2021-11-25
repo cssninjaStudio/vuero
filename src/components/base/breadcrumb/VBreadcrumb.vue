@@ -99,3 +99,66 @@ const props = withDefaults(defineProps<VBreadcrumbsProps>(), {
     </ul>
   </nav>
 </template>
+
+<style lang="scss">
+.breadcrumb {
+  &.is-narrow {
+    margin-bottom: 10px;
+  }
+
+  ul {
+    li {
+      &:first-child {
+        .breadcrumb-item {
+          padding-left: 0;
+        }
+      }
+
+      .breadcrumb-item {
+        font-family: var(--font);
+        color: var(--light-text);
+        padding: 0 0.75em;
+
+        .icon {
+          &.is-solo {
+            svg {
+              top: 2px;
+            }
+          }
+
+          svg {
+            position: relative;
+            top: 0;
+            height: 16px;
+            min-width: 16px;
+          }
+        }
+      }
+
+      a {
+        &.breadcrumb-item {
+          &:hover {
+            color: var(--primary);
+          }
+        }
+      }
+    }
+  }
+}
+
+.is-dark {
+  .breadcrumb {
+    ul {
+      li {
+        a {
+          &.breadcrumb-item {
+            &:hover {
+              color: var(--primary);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+</style>

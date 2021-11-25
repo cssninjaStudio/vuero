@@ -344,7 +344,6 @@ onUnmounted(() => {
 
 <style lang="scss">
 @import '../../../scss/abstracts/mixins';
-@import '../../../scss/pages/generic/widgets-lists';
 
 .food-delivery-dashboard {
   display: flex;
@@ -372,7 +371,7 @@ onUnmounted(() => {
       align-items: center;
       padding: 10px;
       border-radius: 16px;
-      background: var(--primary-light-32);
+      background: var(--primary-light-30);
       font-family: var(--font);
 
       .header-image {
@@ -914,6 +913,73 @@ onUnmounted(() => {
               &:nth-child(2) {
                 color: var(--dark-dark-text);
               }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Cart widget
+
+.cart-widget {
+  @include vuero-l-card;
+
+  &.is-straight {
+    @include vuero-s-card;
+  }
+
+  .cart-items {
+    .cart-item {
+      display: flex;
+      margin: 8px 0;
+
+      .meta {
+        margin-left: 12px;
+        display: flex;
+        flex-direction: column;
+
+        span {
+          display: block;
+          font-family: var(--font);
+
+          &:first-child {
+            font-size: 0.9rem;
+            color: var(--light-text);
+          }
+
+          &:nth-child(2) {
+            color: var(--dark-text);
+            margin-top: auto;
+            font-weight: 600;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+
+  .cart-button {
+    padding-top: 16px;
+
+    .button {
+      min-height: 50px;
+      border-radius: 10px;
+    }
+  }
+}
+
+.is-dark {
+  .cart-widget {
+    @include vuero-card--dark;
+
+    .cart-items {
+      .cart-item {
+        .meta {
+          span {
+            &:nth-child(2) {
+              color: var(--primary);
             }
           }
         }

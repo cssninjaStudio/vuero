@@ -81,3 +81,138 @@ onBeforeUnmount(() => {
     </video>
   </div>
 </template>
+
+<style lang="scss">
+.video-player-container-wrapper {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.video-player-container {
+  margin: 0 auto;
+  overflow: hidden;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &.is-square {
+    position: relative;
+    height: 440px;
+    width: 480px;
+
+    .plyr {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display: block;
+    }
+  }
+
+  &.is-4by3 {
+    position: relative;
+    padding-top: 75%;
+    width: 100%;
+
+    .plyr {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display: block;
+    }
+  }
+
+  &.is-16by9 {
+    position: relative;
+    padding-top: 56.25%;
+    width: 100%;
+
+    .plyr {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display: block;
+    }
+  }
+
+  &.reversed-play {
+    .plyr--full-ui.plyr--video .plyr__control--overlaid {
+      background: var(--white) !important;
+      border: 1px solid var(--primary);
+      color: var(--primary) !important;
+
+      &:hover {
+        background: var(--primary) !important;
+        border-color: var(--primary) !important;
+        color: var(--white) !important;
+
+        svg {
+          fill: var(--white) !important;
+          stroke: var(--white) !important;
+        }
+      }
+
+      svg {
+        fill: none;
+        stroke: var(--primary);
+        stroke-width: 1.6px;
+      }
+    }
+  }
+
+  video {
+    background-color: transparent !important;
+  }
+}
+
+.plyr__video-wrapper {
+  height: 100%;
+}
+
+.plyr--full-ui.plyr--video .plyr__control--overlaid {
+  background: var(--primary) !important;
+  box-shadow: var(--primary-box-shadow);
+}
+
+.plyr--video .plyr__control.plyr__tab-focus,
+.plyr--video .plyr__control:hover,
+.plyr--video .plyr__control[aria-expanded='true'],
+.plyr__menu__container .plyr__control[role='menuitemradio'][aria-checked='true']::before {
+  background: var(--primary);
+}
+
+.plyr--full-ui input[type='range'] {
+  color: var(--primary);
+}
+
+.plyr__controls {
+  transition: all 0.3s; // transition-all test
+}
+
+.plyr--paused,
+.plyr--stopped {
+  .plyr__controls {
+    opacity: 0%;
+    pointer-events: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .video-player-container {
+    &.is-square {
+      height: 303px;
+      width: 330px;
+    }
+  }
+}
+</style>

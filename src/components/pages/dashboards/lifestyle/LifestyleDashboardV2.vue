@@ -329,7 +329,6 @@ const topicList = dashboardData.topicList as any[]
 
 <style lang="scss">
 @import '../../../../scss/abstracts/mixins';
-@import '../../../../scss/pages/generic/widgets-lists';
 
 .lifestyle-dashboard-v2 {
   .dashboard-title {

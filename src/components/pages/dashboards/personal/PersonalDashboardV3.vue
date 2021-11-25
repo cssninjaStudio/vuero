@@ -420,6 +420,82 @@ const userStack = userData.userStack as VAvatarProps[]
   }
 }
 
+.picker-widget {
+  @include vuero-l-card;
+
+  &.is-straight {
+    @include vuero-s-card;
+  }
+
+  .calendar {
+    color: var(--dark-text);
+    font-size: 12px;
+    font-family: var(--font);
+    width: 100%;
+    margin-bottom: 5px;
+
+    thead,
+    tbody {
+      width: 100%;
+    }
+  }
+
+  .calendar thead,
+  .calendar th {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .calendar td {
+    padding: 0.5em 0;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+
+  .calendar tbody td:hover {
+    background: var(--fade-grey-light-3);
+    color: var(--primary);
+  }
+
+  .current-day {
+    color: var(--primary);
+    font-weight: 600;
+  }
+
+  .prev-month,
+  .next-month {
+    color: #cacaca;
+  }
+}
+
+.is-dark {
+  .picker-widget {
+    @include vuero-card--dark;
+
+    .calendar {
+      color: var(--dark-dark-text);
+
+      thead,
+      th {
+        color: var(--primary);
+      }
+
+      td:hover {
+        background: var(--dark-sidebar-light-3);
+        color: var(--primary);
+      }
+    }
+
+    .current-day {
+      color: var(--primary);
+    }
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .personal-dashboard-v3 {
     .stats-wrapper {

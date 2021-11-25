@@ -58,5 +58,65 @@ const optionsSingle = [
 
 <style lang="scss">
 @import '../../../../scss/abstracts/mixins';
-@import '../../../../scss/pages/lists/tile-grid-v1';
+
+.tile-grid {
+  .columns {
+    margin-left: -0.5rem !important;
+    margin-right: -0.5rem !important;
+    margin-top: -0.5rem !important;
+  }
+
+  .column {
+    padding: 0.5rem !important;
+  }
+}
+
+.is-dark {
+  .tile-grid {
+    .tile-grid-item {
+      @include vuero-card--dark;
+    }
+  }
+}
+
+.tile-grid-v1 {
+  .tile-grid-item {
+    @include vuero-s-card;
+
+    border-radius: 14px;
+    padding: 16px;
+
+    .tile-grid-item-inner {
+      display: flex;
+      align-items: center;
+
+      .meta {
+        margin-left: 10px;
+        line-height: 1.2;
+
+        span {
+          display: block;
+          font-family: var(--font);
+
+          &:first-child {
+            color: var(--dark-text);
+            font-family: var(--font-alt);
+            font-weight: 600;
+            font-size: 1rem;
+          }
+
+          &:nth-child(2) {
+            color: var(--light-text);
+            font-size: 0.9rem;
+          }
+        }
+      }
+
+      .dropdown {
+        position: relative;
+        margin-left: auto;
+      }
+    }
+  }
+}
 </style>

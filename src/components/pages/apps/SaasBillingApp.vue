@@ -46,6 +46,7 @@ const randomCard = () => {
     creditcardInput.number = testCards[randomNumber]
   }
 }
+const selected = ref('value_2')
 </script>
 
 <template>
@@ -208,17 +209,21 @@ const randomCard = () => {
           <div class="block-body">
             <VField>
               <VControl>
-                <label class="radio">
-                  <input type="radio" name="billing_radio" value="monthly" checked />
-                  <span></span>
-                  Monthly
-                </label>
+                <VRadio
+                  v-model="selected"
+                  value="value_1"
+                  label="Monthly"
+                  name="cycle_radio"
+                  color="primary"
+                />
 
-                <label class="radio is-outlined is-primary">
-                  <input type="radio" name="billing_radio" value="yearly" />
-                  <span></span>
-                  Yearly
-                </label>
+                <VRadio
+                  v-model="selected"
+                  value="value_2"
+                  label="Yearly"
+                  name="cycle_radio"
+                  color="primary"
+                />
               </VControl>
             </VField>
           </div>

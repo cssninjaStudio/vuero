@@ -54,3 +54,39 @@ const props = withDefaults(
     </div>
   </div>
 </template>
+
+<style lang="scss">
+.stat-widget {
+  &.grouped-stat-widget {
+    .chart-group {
+      display: flex;
+
+      .group {
+        text-align: center;
+        width: 33.3%;
+
+        .chart-container {
+          margin-top: -5px;
+
+          &.is-gauge {
+            margin-bottom: 30px;
+          }
+        }
+
+        span {
+          display: block;
+          margin-top: -25px;
+          font-family: var(--font);
+          color: var(--dark-text);
+          font-weight: 600;
+          font-size: 1.2rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+</style>

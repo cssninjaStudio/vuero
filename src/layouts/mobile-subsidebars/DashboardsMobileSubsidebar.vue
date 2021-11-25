@@ -316,7 +316,3 @@
     </div>
   </div>
 </template>
-
-<style lang="scss">
-@import '../../scss/layout/sidebar-mobile';
-</style>

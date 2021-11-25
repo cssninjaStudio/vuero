@@ -93,6 +93,7 @@ const records = [
 
 type TabId = 'all' | 'people' | 'records'
 const activeTab = ref<TabId>('all')
+const options = ref(['Newest'])
 </script>
 
 <template>
@@ -148,11 +149,13 @@ const activeTab = ref<TabId>('all')
 
             <VField>
               <VControl>
-                <label class="checkbox is-circle">
-                  <input type="checkbox" />
-                  <span></span>
-                  Newest
-                </label>
+                <VCheckbox
+                  v-model="options"
+                  value="Newest"
+                  label="Newest"
+                  color="primary"
+                  circle
+                />
 
                 <div class="control-end">
                   <VTag label="23" rounded />
@@ -161,11 +164,13 @@ const activeTab = ref<TabId>('all')
             </VField>
             <VField>
               <VControl>
-                <label class="checkbox is-circle">
-                  <input type="checkbox" />
-                  <span></span>
-                  Recently updated
-                </label>
+                <VCheckbox
+                  v-model="options"
+                  value="Recently updated"
+                  label="Recently updated"
+                  color="primary"
+                  circle
+                />
 
                 <div class="control-end">
                   <VTag label="31" rounded />
@@ -174,11 +179,13 @@ const activeTab = ref<TabId>('all')
             </VField>
             <VField>
               <VControl>
-                <label class="checkbox is-circle">
-                  <input type="checkbox" />
-                  <span></span>
-                  Upvoted
-                </label>
+                <VCheckbox
+                  v-model="options"
+                  value="Upvoted"
+                  label="Upvoted"
+                  color="primary"
+                  circle
+                />
 
                 <div class="control-end">
                   <VTag label="12" rounded />
@@ -192,11 +199,13 @@ const activeTab = ref<TabId>('all')
 
             <VField>
               <VControl>
-                <label class="checkbox is-circle">
-                  <input type="checkbox" />
-                  <span></span>
-                  User Profile
-                </label>
+                <VCheckbox
+                  v-model="options"
+                  value="User profile"
+                  label="User profile"
+                  color="primary"
+                  circle
+                />
 
                 <div class="control-end">
                   <VTag label="19" rounded />
@@ -205,11 +214,13 @@ const activeTab = ref<TabId>('all')
             </VField>
             <VField>
               <VControl>
-                <label class="checkbox is-circle">
-                  <input type="checkbox" />
-                  <span></span>
-                  Project
-                </label>
+                <VCheckbox
+                  v-model="options"
+                  value="Project"
+                  label="Project"
+                  color="primary"
+                  circle
+                />
 
                 <div class="control-end">
                   <VTag label="174" rounded />
@@ -218,11 +229,13 @@ const activeTab = ref<TabId>('all')
             </VField>
             <VField>
               <VControl>
-                <label class="checkbox is-circle">
-                  <input type="checkbox" />
-                  <span></span>
-                  Blog Post
-                </label>
+                <VCheckbox
+                  v-model="options"
+                  value="Blog Post"
+                  label="Blog Post"
+                  color="primary"
+                  circle
+                />
 
                 <div class="control-end">
                   <VTag label="71" rounded />
@@ -231,11 +244,13 @@ const activeTab = ref<TabId>('all')
             </VField>
             <VField>
               <VControl>
-                <label class="checkbox is-circle">
-                  <input type="checkbox" />
-                  <span></span>
-                  Wireframes
-                </label>
+                <VCheckbox
+                  v-model="options"
+                  value="Wireframes"
+                  label="Wireframes"
+                  color="primary"
+                  circle
+                />
 
                 <div class="control-end">
                   <VTag label="54" rounded />
@@ -244,11 +259,13 @@ const activeTab = ref<TabId>('all')
             </VField>
             <VField>
               <VControl>
-                <label class="checkbox is-circle">
-                  <input type="checkbox" />
-                  <span></span>
-                  Files
-                </label>
+                <VCheckbox
+                  v-model="options"
+                  value="Files"
+                  label="Files"
+                  color="primary"
+                  circle
+                />
 
                 <div class="control-end">
                   <VTag label="8" rounded />
@@ -262,11 +279,13 @@ const activeTab = ref<TabId>('all')
 
             <VField>
               <VControl>
-                <label class="checkbox is-circle">
-                  <input type="checkbox" />
-                  <span></span>
-                  Engineering
-                </label>
+                <VCheckbox
+                  v-model="options"
+                  value="Engineering"
+                  label="Engineering"
+                  color="primary"
+                  circle
+                />
 
                 <div class="control-end">
                   <VTag label="45" rounded />
@@ -275,11 +294,13 @@ const activeTab = ref<TabId>('all')
             </VField>
             <VField>
               <VControl>
-                <label class="checkbox is-circle">
-                  <input type="checkbox" />
-                  <span></span>
-                  Management
-                </label>
+                <VCheckbox
+                  v-model="options"
+                  value="Management"
+                  label="Management"
+                  color="primary"
+                  circle
+                />
 
                 <div class="control-end">
                   <VTag label="12" rounded />
@@ -288,11 +309,13 @@ const activeTab = ref<TabId>('all')
             </VField>
             <VField>
               <VControl>
-                <label class="checkbox is-circle">
-                  <input type="checkbox" />
-                  <span></span>
-                  Software
-                </label>
+                <VCheckbox
+                  v-model="options"
+                  value="Software"
+                  label="Software"
+                  color="primary"
+                  circle
+                />
 
                 <div class="control-end">
                   <VTag label="36" rounded />
@@ -301,11 +324,13 @@ const activeTab = ref<TabId>('all')
             </VField>
             <VField>
               <VControl>
-                <label class="checkbox is-circle">
-                  <input type="checkbox" />
-                  <span></span>
-                  Human Ressources
-                </label>
+                <VCheckbox
+                  v-model="options"
+                  value="Human Resources"
+                  label="Human Resources"
+                  color="primary"
+                  circle
+                />
 
                 <div class="control-end">
                   <VTag label="3" rounded />
@@ -314,11 +339,13 @@ const activeTab = ref<TabId>('all')
             </VField>
             <VField>
               <VControl>
-                <label class="checkbox is-circle">
-                  <input type="checkbox" />
-                  <span></span>
-                  Finance
-                </label>
+                <VCheckbox
+                  v-model="options"
+                  value="Finance"
+                  label="Finance"
+                  color="primary"
+                  circle
+                />
 
                 <div class="control-end">
                   <VTag label="7" rounded />
@@ -445,5 +472,212 @@ const activeTab = ref<TabId>('all')
 
 <style lang="scss">
 @import '../../../../scss/abstracts/mixins';
-@import '../../../../scss/pages/generic/search';
+
+.is-navbar {
+  .search-results-wrapper {
+    padding-top: 30px;
+  }
+}
+
+.search-results-wrapper {
+  .search-results-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .control {
+      margin-right: 10px;
+    }
+
+    .search-info {
+      span {
+        font-family: var(--font);
+        color: var(--light-text);
+      }
+    }
+
+    .tabs-inner {
+      margin-left: auto;
+
+      .tabs {
+        margin-bottom: 0;
+        min-width: 280px;
+      }
+    }
+  }
+
+  .search-results-body {
+    .filter-box {
+      @include vuero-s-card;
+
+      margin-bottom: 16px;
+
+      h4 {
+        font-family: var(--font-alt);
+        font-weight: 600;
+        color: var(--dark-text);
+        margin-bottom: 10px;
+      }
+
+      .field {
+        margin-bottom: 0;
+
+        .control {
+          display: flex;
+          align-items: center;
+
+          .checkbox {
+            padding: 0.75em 0;
+          }
+
+          .control-end {
+            margin-left: auto;
+          }
+        }
+      }
+    }
+
+    .search-results-group {
+      padding-left: 30px;
+      margin-bottom: 20px;
+
+      .group-header {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid var(--fade-grey-dark-6);
+        padding: 0 0 12px;
+        margin-bottom: 12px;
+
+        .icon-wrap {
+          height: 32px;
+          width: 32px;
+          min-width: 32px;
+          border-radius: var(--radius-rounded);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 6px;
+          background: var(--white);
+          border: 1px solid var(--primary);
+          color: var(--primary);
+
+          svg {
+            height: 14px;
+            width: 14px;
+          }
+        }
+
+        h4 {
+          font-family: var(--font-alt);
+          font-size: 0.8rem;
+          font-weight: 500;
+          text-transform: uppercase;
+          color: var(--light-text);
+        }
+      }
+
+      .search-results-list {
+        padding: 10px 0;
+
+        .search-results-item {
+          @include vuero-s-card;
+
+          margin-bottom: 16px;
+
+          > img {
+            display: block;
+            height: 50px;
+            width: 50px;
+            min-width: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+2. Search Results Page Dark mode
+========================================================================== */
+
+.is-dark {
+  .search-results-wrapper {
+    .search-results-body {
+      .filter-box {
+        @include vuero-card--dark;
+      }
+
+      .search-results-group {
+        .search-results-list {
+          .search-results-item {
+            @include vuero-card--dark;
+          }
+        }
+
+        .group-header {
+          border-color: var(--dark-sidebar-light-20);
+
+          .icon-wrap {
+            background: var(--dark-sidebar-light-2);
+            border-color: var(--primary);
+            color: var(--primary);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+3. Media Queries
+========================================================================== */
+
+@media only screen and (max-width: 767px) {
+  .search-results-wrapper {
+    .search-results-header {
+      flex-direction: column;
+
+      .control,
+      .tabs-inner {
+        margin: 0;
+      }
+
+      .control {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+      }
+
+      .search-info {
+        padding: 10px 0;
+      }
+    }
+
+    .search-results-body {
+      .search-results-group {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .search-results-wrapper {
+    .search-results-body {
+      .search-results-group {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .search-results-wrapper {
+    .search-results-body {
+      .search-results-group {
+        padding-left: 10px;
+      }
+    }
+  }
+}
 </style>

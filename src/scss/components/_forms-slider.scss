@@ -1,0 +1,183 @@
+/*! _forms-slider.scss | Vuero | Css ninja 2020-2021 */
+
+/*
+    1. Vue Slider
+*/
+
+/* ==========================================================================
+1. Vue Slider
+========================================================================== */
+
+.slider-target {
+  .slider-base {
+    .slider-connects {
+      .slider-connect {
+        background: var(--primary);
+      }
+    }
+
+    .slider-tooltip {
+      font-size: 0.9rem;
+      border: 1px solid var(--primary);
+      background: var(--primary);
+    }
+  }
+}
+
+.is-slider-info {
+  .slider-target {
+    .slider-base {
+      .slider-connects {
+        .slider-connect {
+          background: var(--info);
+        }
+      }
+
+      .slider-tooltip {
+        border: 1px solid var(--info);
+        background: var(--info);
+      }
+    }
+  }
+}
+
+.is-slider-success {
+  .slider-target {
+    .slider-base {
+      .slider-connects {
+        .slider-connect {
+          background: var(--success);
+        }
+      }
+
+      .slider-tooltip {
+        border: 1px solid var(--success);
+        background: var(--success);
+      }
+    }
+  }
+}
+
+.is-slider-warning {
+  .slider-target {
+    .slider-base {
+      .slider-connects {
+        .slider-connect {
+          background: var(--warning);
+        }
+      }
+
+      .slider-tooltip {
+        border: 1px solid var(--warning);
+        background: var(--warning);
+      }
+    }
+  }
+}
+
+.is-slider-danger {
+  .slider-target {
+    .slider-base {
+      .slider-connects {
+        .slider-connect {
+          background: var(--danger);
+        }
+      }
+
+      .slider-tooltip {
+        border: 1px solid var(--danger);
+        background: var(--danger);
+      }
+    }
+  }
+}
+
+.has-rounded-tooltip {
+  .slider-target {
+    .slider-base {
+      .slider-handle {
+        &:focus-visible {
+          outline-offset: var(--accessibility-focus-outline-offset);
+          outline-width: var(--accessibility-focus-outline-width);
+          outline-color: var(--accessibility-focus-outline-color);
+          outline-style: var(--accessibility-focus-outline-style);
+        }
+
+        .slider-tooltip {
+          border-radius: 100px;
+          width: 28px;
+          height: 28px;
+          font-size: 0.9rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          line-height: 3;
+        }
+      }
+    }
+  }
+}
+
+.has-curved-tooltip {
+  .slider-target {
+    .slider-base {
+      .slider-handle {
+        &:focus-visible {
+          outline-offset: var(--accessibility-focus-outline-offset);
+          outline-width: var(--accessibility-focus-outline-width);
+          outline-color: var(--accessibility-focus-outline-color);
+          outline-style: var(--accessibility-focus-outline-style);
+        }
+
+        .slider-tooltip {
+          border-radius: 0.75rem;
+          min-width: 28px;
+          padding-left: 0.75rem;
+          padding-right: 0.75rem;
+          height: 28px;
+          font-size: 0.9rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          line-height: 3;
+        }
+      }
+    }
+  }
+}
+
+.has-squared-tooltip {
+  .slider-target {
+    .slider-base {
+      .slider-handle {
+        &:focus-visible {
+          outline-offset: var(--accessibility-focus-outline-offset);
+          outline-width: var(--accessibility-focus-outline-width);
+          outline-color: var(--accessibility-focus-outline-color);
+          outline-style: var(--accessibility-focus-outline-style);
+        }
+
+        .slider-tooltip {
+          border-radius: 0.5rem;
+          min-width: 28px;
+          padding-left: 0.75rem;
+          padding-right: 0.75rem;
+          height: 28px;
+          font-size: 0.9rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          line-height: 3;
+        }
+      }
+    }
+  }
+}
+
+.is-dark {
+  .slider-target {
+    .slider-base {
+      background: var(--dark-sidebar-light-2);
+    }
+  }
+}

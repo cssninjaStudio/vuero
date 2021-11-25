@@ -16,20 +16,17 @@ Responsive styles
 1. Tablet Landscape
 ========================================================================== */
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  // Loaders
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .pageloader,
   .infraloader {
     width: calc(100% - 60px) !important;
     left: 60px !important;
   }
 
-  // Navbars
   .navbar-brand {
     align-items: center;
   }
 
-  // Sidebar
   .main-sidebar {
     width: 60px !important;
 
@@ -37,6 +34,12 @@ Responsive styles
       .sidebar-inner {
         .icon-menu,
         .bottom-menu {
+          overflow-x: hidden;
+
+          ul {
+            overflow-x: hidden;
+          }
+
           li {
             a {
               &::after {
@@ -60,6 +63,12 @@ Responsive styles
         .sidebar-inner {
           .icon-menu,
           .bottom-menu {
+            overflow-x: hidden;
+
+            ul {
+              overflow-x: hidden;
+            }
+
             li {
               width: 56px !important;
             }
@@ -77,6 +86,12 @@ Responsive styles
         .sidebar-inner {
           .icon-menu,
           .bottom-menu {
+            overflow-x: hidden;
+
+            ul {
+              overflow-x: hidden;
+            }
+
             li {
               width: 60px !important;
             }
@@ -103,6 +118,11 @@ Responsive styles
 
       .icon-menu {
         max-height: calc(100vh - 60px - 64px) !important;
+        overflow-x: hidden;
+
+        ul {
+          overflow-x: hidden;
+        }
       }
 
       .profile-dropdown {
@@ -166,15 +186,13 @@ Responsive styles
 2. Tablet portrait
 ========================================================================== */
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  // Loaders
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .infraloader,
   .pageloader {
     width: 100% !important;
     left: 0 !important;
   }
 
-  // Navbars
   .navbar-navbar,
   .circular-menu,
   .navbar-navbar-clean {
@@ -312,7 +330,6 @@ Responsive styles
 ========================================================================== */
 
 @media (max-width: 767px) {
-  // Loaders
   .infraloader,
   .pageloader {
     width: 100% !important;
@@ -375,7 +392,6 @@ Responsive styles
     }
   }
 
-  // Toolbar
   .toolbar {
     .toolbar-notifications {
       display: none;
@@ -386,7 +402,6 @@ Responsive styles
     display: none !important;
   }
 
-  // Sidebar
   .sidebar-panel {
     display: none !important;
     left: 0 !important;
@@ -447,7 +462,7 @@ Responsive styles
 4. Custom
 ========================================================================== */
 
-@media only screen and (min-device-width: 1025px) and (orientation: landscape) {
+@media only screen and (min-width: 1025px) and (orientation: landscape) {
   .panel-close {
     display: none !important;
   }
@@ -573,7 +588,7 @@ Responsive styles
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .mobile-navbar .navbar-item.is-notification .navbar-dropdown {
     width: 280px !important;
     position: absolute !important;
@@ -581,7 +596,7 @@ Responsive styles
   }
 }
 
-@media only screen and (max-device-width: 1024px) and (orientation: portrait) {
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
   .mobile-navbar .navbar-item.is-notification {
     display: flex !important;
   }

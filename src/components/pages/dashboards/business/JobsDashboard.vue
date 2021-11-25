@@ -324,7 +324,9 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/mixins': root {
+@import '../../../../scss/abstracts/mixins';
+
+:root {
   --header-bg-color: #fff;
   --search-border-color: #efefef;
   --subtitle-color: #83838e;

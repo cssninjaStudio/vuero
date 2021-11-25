@@ -12,6 +12,11 @@ import {
 } from '/@src/data/dashboards/lifestyle-v1/groupedSocialCharts'
 import { reputationChartOptions } from '/@src/data/dashboards/lifestyle-v1/reputationChart'
 import { influenceChartOptions } from '/@src/data/dashboards/lifestyle-v1/influenceChart'
+import {
+  widgetRadialGroup1Options,
+  widgetRadialGroup2Options,
+  widgetRadialGroup3Options,
+} from '/@src/data/widgets/charts/groupedCircleCharts'
 </script>
 
 <template>
@@ -259,28 +264,16 @@ import { influenceChartOptions } from '/@src/data/dashboards/lifestyle-v1/influe
         </div>
 
         <!--Flex Stat Widget-->
-        <div class="stat-widget flex-stat-widget is-straight">
-          <div class="chart-media">
-            <div class="meta">
-              <h4 class="dark-inverted">Influence Growth</h4>
-              <span class="is-dark-primary">+ 3,624</span>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bonum integritas
-                corporis: misera debilitas. Ita ne hoc quidem modo paria.
-              </p>
-            </div>
-            <div class="chart-container">
-              <ApexChart
-                id="flex-stat-radial"
-                :height="influenceChartOptions.chart.height"
-                :type="influenceChartOptions.chart.type"
-                :series="influenceChartOptions.series"
-                :options="influenceChartOptions"
-              >
-              </ApexChart>
-            </div>
-          </div>
-        </div>
+        <FlexStatWidget title="Influence Growth" straight>
+          <ApexChart
+            id="flex-stat-radial"
+            :height="influenceChartOptions.chart.height"
+            :type="influenceChartOptions.chart.type"
+            :series="influenceChartOptions.series"
+            :options="influenceChartOptions"
+          >
+          </ApexChart>
+        </FlexStatWidget>
       </div>
 
       <!--Card-->
@@ -295,106 +288,42 @@ import { influenceChartOptions } from '/@src/data/dashboards/lifestyle-v1/influe
       </div>
 
       <div class="column is-12 is-full-tablet-p">
-        <OverviewCard metrics>
-          <div class="columns is-flex-tablet-p">
-            <!--Metric-->
-            <div class="column is-3">
-              <div class="metric">
-                <div class="metric-head">
-                  <h4>Avg. Posts per Day</h4>
-                </div>
-                <div class="metric">
-                  <span>7.2</span>
-                </div>
-                <div class="metric-foot is-up">
-                  <span>
-                    <span>
-                      <i
-                        aria-hidden="true"
-                        class="iconify"
-                        data-icon="feather:arrow-right"
-                      ></i>
-                      +0.4%</span
-                    >
-                    more than usual.
-                  </span>
-                </div>
-              </div>
-            </div>
-            <!--Metric-->
-            <div class="column is-3">
-              <div class="metric">
-                <div class="metric-head">
-                  <h4>Avg. Comments per Post</h4>
-                </div>
-                <div class="metric">
-                  <span>112</span>
-                </div>
-                <div class="metric-foot is-up">
-                  <span>
-                    <span>
-                      <i
-                        aria-hidden="true"
-                        class="iconify"
-                        data-icon="feather:arrow-right"
-                      ></i>
-                      +24.8%</span
-                    >
-                    more than usual.
-                  </span>
-                </div>
-              </div>
-            </div>
-            <!--Metric-->
-            <div class="column is-3">
-              <div class="metric">
-                <div class="metric-head">
-                  <h4>Avg. Likes per Post</h4>
-                </div>
-                <div class="metric">
-                  <span>1.3K</span>
-                </div>
-                <div class="metric-foot is-down">
-                  <span>
-                    <span>
-                      <i
-                        aria-hidden="true"
-                        class="iconify"
-                        data-icon="feather:arrow-right"
-                      ></i>
-                      -1.8%</span
-                    >
-                    less than usual.
-                  </span>
-                </div>
-              </div>
-            </div>
-            <!--Metric-->
-            <div class="column is-3">
-              <div class="metric">
-                <div class="metric-head">
-                  <h4>Avg. Engagement Rate</h4>
-                </div>
-                <div class="metric">
-                  <span>5.68%</span>
-                </div>
-                <div class="metric-foot is-up">
-                  <span>
-                    <span>
-                      <i
-                        aria-hidden="true"
-                        class="iconify"
-                        data-icon="feather:arrow-right"
-                      ></i>
-                      +5.8%</span
-                    >
-                    more than usual.
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </OverviewCard>
+        <GroupedStatWidget
+          title="Additional Stats"
+          :values="['264', '1,203', '3,078']"
+          :labels="['New Deals', 'Proposals', 'Closed Deals']"
+        >
+          <template #chart1>
+            <ApexChart
+              id="group-radial-1"
+              :height="widgetRadialGroup1Options.chart.height"
+              :type="widgetRadialGroup1Options.chart.type"
+              :series="widgetRadialGroup1Options.series"
+              :options="widgetRadialGroup1Options"
+            >
+            </ApexChart>
+          </template>
+          <template #chart2>
+            <ApexChart
+              id="group-radial-2"
+              :height="widgetRadialGroup2Options.chart.height"
+              :type="widgetRadialGroup2Options.chart.type"
+              :series="widgetRadialGroup2Options.series"
+              :options="widgetRadialGroup2Options"
+            >
+            </ApexChart>
+          </template>
+          <template #chart3>
+            <ApexChart
+              id="group-radial-3"
+              :height="widgetRadialGroup3Options.chart.height"
+              :type="widgetRadialGroup3Options.chart.type"
+              :series="widgetRadialGroup3Options.series"
+              :options="widgetRadialGroup3Options"
+            >
+            </ApexChart>
+          </template>
+        </GroupedStatWidget>
       </div>
     </div>
   </div>

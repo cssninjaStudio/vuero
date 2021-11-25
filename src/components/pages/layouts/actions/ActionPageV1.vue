@@ -97,5 +97,156 @@ const accept = async () => {
 
 <style lang="scss">
 @import '../../../../scss/abstracts/mixins';
-@import '../../../../scss/pages/generic/subpages';
+
+.action-page-wrapper {
+  &.action-page-v1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 540px;
+    min-height: 560px;
+    margin: 0 auto;
+
+    .wrapper-inner {
+      .action-box {
+        @include vuero-s-card;
+
+        padding: 40px;
+
+        .box-content {
+          text-align: center;
+          font-family: var(--font);
+
+          .v-avatar {
+            display: block;
+            margin: 0 auto 8px;
+          }
+
+          h3 {
+            font-family: var(--font-alt);
+            font-weight: 600;
+            max-width: 320px;
+            margin: 0 auto 16px;
+
+            span {
+              color: var(--primary);
+            }
+          }
+
+          .sender-message {
+            text-align: left;
+            padding: 20px;
+            border: 1px solid var(--fade-grey-dark-3);
+            max-width: 360px;
+            margin: 0 auto;
+            border-radius: var(--radius-large);
+            box-shadow: var(--light-box-shadow);
+
+            h4 {
+              font-family: var(--font-alt);
+              font-size: 0.7rem;
+              font-weight: 500;
+              color: var(--dark-text);
+              text-transform: uppercase;
+              margin-bottom: 6px;
+            }
+
+            p {
+              font-size: 0.9rem;
+            }
+          }
+
+          .people-wrap {
+            .people {
+              display: flex;
+              justify-content: center;
+              padding: 16px 0 8px;
+
+              .v-avatar {
+                margin: 0 4px;
+              }
+            }
+
+            .people-text {
+              p {
+                font-size: 0.9rem;
+              }
+            }
+          }
+
+          .buttons {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+
+            .button {
+              margin: 0 4px;
+              min-width: 150px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.is-dark {
+  .action-page-wrapper {
+    &.action-page-v1 {
+      .wrapper-inner {
+        .action-box {
+          @include vuero-card--dark;
+        }
+      }
+
+      .wrapper-outer {
+        @include vuero-card--dark;
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+3. Media Queries
+========================================================================== */
+
+@media only screen and (max-width: 767px) {
+  .action-page-wrapper {
+    &.action-page-v1 {
+      .wrapper-inner {
+        .action-box {
+          padding: 20px;
+
+          .box-content {
+            .buttons {
+              .button {
+                min-width: 130px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .action-page-wrapper {
+    &.action-page-v1 {
+      .wrapper-inner {
+        .action-box {
+          .box-content {
+            .buttons {
+              .button {
+                min-width: 130px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 </style>

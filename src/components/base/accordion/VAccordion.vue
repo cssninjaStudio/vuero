@@ -59,3 +59,93 @@ const toggle = (key: number) => {
     </details>
   </div>
 </template>
+
+<style lang="scss">
+.single-accordion {
+  background: var(--white);
+  margin: 0 auto;
+  box-shadow: var(--light-box-shadow);
+  border-radius: var(--radius-large);
+  overflow: hidden;
+
+  .accordion-item {
+    &.is-active {
+      .accordion-header {
+        &::before {
+          background-color: var(--primary);
+        }
+      }
+
+      .accordion-content {
+        display: block;
+      }
+    }
+  }
+
+  .accordion-header {
+    border-bottom: 1px solid #dde0e7;
+    color: var(--dark-text);
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.95rem;
+    font-family: var(--font-alt);
+    padding: 1.5rem;
+    display: block;
+
+    &:hover {
+      background: #f6f7f9;
+    }
+
+    &::before {
+      content: '';
+      vertical-align: middle;
+      display: inline-block;
+      width: 0.75rem;
+      height: 0.75rem;
+      border-radius: var(--radius-rounded);
+      background-color: #b1b5be;
+      margin-right: 0.75rem;
+    }
+  }
+
+  .accordion-content {
+    display: none;
+    border-bottom: 1px solid #dde0e7;
+    background: #f6f7f9;
+    padding: 1.5rem;
+    color: var(--light-text);
+    font-family: var(--font);
+  }
+}
+
+.is-dark {
+  .single-accordion {
+    background: var(--dark-sidebar-light-4);
+    border-color: var(--dark-sidebar-light-12);
+
+    .accordion-header {
+      color: var(--dark-dark-text);
+      border-color: var(--dark-sidebar-light-12);
+
+      &:hover {
+        background: var(--dark-sidebar-light-6);
+      }
+
+      &::before {
+        background: var(--dark-sidebar);
+      }
+
+      &.is-active {
+        &::before {
+          background-color: var(--primary);
+        }
+      }
+    }
+
+    .accordion-content {
+      background: var(--dark-sidebar);
+      border-color: var(--dark-sidebar-light-8);
+    }
+  }
+}
+</style>
