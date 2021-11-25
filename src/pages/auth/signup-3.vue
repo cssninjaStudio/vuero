@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { useHead } from '@vueuse/head'
-import useNotyf from '/@src/composable/useNotyf'
+import { useNotyf } from '/@src/composable/useNotyf'
 
 import { useDarkmode } from '/@src/stores/darkmode'
 import sleep from '/@src/utils/sleep'

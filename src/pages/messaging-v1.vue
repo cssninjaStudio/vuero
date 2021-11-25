@@ -6,7 +6,7 @@ import { useChat } from '/@src/stores/chat'
 import { useSidebar } from '/@src/stores/sidebar'
 import { useLayoutSwitcher } from '/@src/stores/layoutSwitcher'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
-import useNotyf from '/@src/composable/useNotyf'
+import { useNotyf } from '/@src/composable/useNotyf'
 
 /**
  * The chat store keep the chat data across the app

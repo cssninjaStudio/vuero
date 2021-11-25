@@ -2,7 +2,7 @@
 import { useHead } from '@vueuse/head'
 import { onMounted, ref } from 'vue'
 
-import useNotyf from '/@src/composable/useNotyf'
+import { useNotyf } from '/@src/composable/useNotyf'
 import useMarkdownToc from '/@src/composable/useMarkdownToc'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 

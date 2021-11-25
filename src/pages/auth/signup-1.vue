@@ -7,7 +7,7 @@ import { useRouter } from 'vue-router'
 import { onceImageErrored } from '/@src/utils/via-placeholder'
 
 import sleep from '/@src/utils/sleep'
-import useNotyf from '/@src/composable/useNotyf'
+import { useNotyf } from '/@src/composable/useNotyf'
 
 let slider: TinySliderInstance
 const sliderElement = ref<HTMLElement>()

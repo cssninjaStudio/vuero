@@ -3,7 +3,7 @@ import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 
 import sleep from '/@src/utils/sleep'
-import useNotyf from '/@src/composable/useNotyf'
+import { useNotyf } from '/@src/composable/useNotyf'
 
 const notyf = useNotyf()
 const router = useRouter()

@@ -5,7 +5,7 @@ import { useHead } from '@vueuse/head'
 
 import { useDarkmode } from '/@src/stores/darkmode'
 import { useUserSession } from '/@src/stores/userSession'
-import useNotyf from '/@src/composable/useNotyf'
+import { useNotyf } from '/@src/composable/useNotyf'
 import sleep from '/@src/utils/sleep'
 
 type StepId = 'login' | 'forgot-password'

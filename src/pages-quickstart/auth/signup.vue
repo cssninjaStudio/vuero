@@ -7,7 +7,7 @@ import { Form, Field } from 'vee-validate'
 import * as yup from 'yup'
 
 import { useDarkmode } from '/@src/stores/darkmode'
-import useNotyf from '/@src/composable/useNotyf'
+import { useNotyf } from '/@src/composable/useNotyf'
 import sleep from '/@src/utils/sleep'
 
 const darkmode = useDarkmode()

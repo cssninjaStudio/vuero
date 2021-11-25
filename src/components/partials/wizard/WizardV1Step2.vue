@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import useNotyf from '/@src/composable/useNotyf'
+import { useNotyf } from '/@src/composable/useNotyf'
 import { useWizard } from '/@src/stores/wizard'
 
 const notyf = useNotyf()
