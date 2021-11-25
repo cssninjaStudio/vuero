@@ -34,7 +34,7 @@ export function provideApi() {
 export function useApi() {
   const api = inject(apiSymbol)
   if (!api) {
-    throw new Error('Api not properly injected in app')
+    throw new Error('useApi should be used inside component setup')
   }
   return api
 }
