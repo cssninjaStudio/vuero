@@ -351,6 +351,7 @@ onUnmounted(() => {
                     <VButton
                       size="big"
                       color="primary"
+                      type="submit"
                       rounded
                       primary
                       lower
