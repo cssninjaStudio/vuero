@@ -124,7 +124,9 @@ useHead({
               <!-- Submit -->
               <VField>
                 <VControl class="login">
-                  <VButton color="primary" bold fullwidth raised> Sign Up </VButton>
+                  <VButton color="primary" type="submit" bold fullwidth raised>
+                    Sign Up
+                  </VButton>
                 </VControl>
               </VField>
             </div>
