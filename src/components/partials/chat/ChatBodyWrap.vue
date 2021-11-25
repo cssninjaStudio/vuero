@@ -21,7 +21,7 @@
       transform: translateX(100%);
 
       .chat-side-content {
-        opacity: 0%;
+        opacity: 0;
       }
     }
   }

@@ -262,11 +262,7 @@ const hello = ref('world')
                           ><img alt="" src="/images/icons/soccer/teams/arsenal.svg" />
                         </div>
                         <p
-                          class="
-                            score__result
-                            score__result--vertical
-                            score__result--not-started
-                          "
+                          class="score__result score__result--vertical score__result--not-started"
                         >
                           <span class="score-goals">-</span
                           ><span class="score-separator">:</span
@@ -307,11 +303,7 @@ const hello = ref('world')
                           ><img alt="" src="/images/icons/soccer/teams/everton.svg" />
                         </div>
                         <p
-                          class="
-                            score__result
-                            score__result--vertical
-                            score__result--not-started
-                          "
+                          class="score__result score__result--vertical score__result--not-started"
                         >
                           <span class="score-goals">-</span
                           ><span class="score-separator">:</span
@@ -353,11 +345,7 @@ const hello = ref('world')
                           ><img alt="" src="/images/icons/soccer/teams/valladolid.svg" />
                         </div>
                         <p
-                          class="
-                            score__result
-                            score__result--vertical
-                            score__result--not-started
-                          "
+                          class="score__result score__result--vertical score__result--not-started"
                         >
                           <span class="score-goals">-</span
                           ><span class="score-separator">:</span
@@ -398,11 +386,7 @@ const hello = ref('world')
                           ><img alt="" src="/images/icons/soccer/teams/psg.svg" />
                         </div>
                         <p
-                          class="
-                            score__result
-                            score__result--vertical
-                            score__result--not-started
-                          "
+                          class="score__result score__result--vertical score__result--not-started"
                         >
                           <span class="score-goals">-</span
                           ><span class="score-separator">:</span
@@ -618,7 +602,7 @@ const hello = ref('world')
 
       .dashboard-cta-text {
         color: var(--white);
-        opacity: 90%;
+        opacity: 0.9;
         font-family: var(--font);
         line-height: 1.7;
         margin-top: 0;

@@ -397,7 +397,7 @@ if (isReactive(props.options)) {
         }
 
         &.dataTables-empty {
-          opacity: 0%;
+          opacity: 0;
         }
       }
 

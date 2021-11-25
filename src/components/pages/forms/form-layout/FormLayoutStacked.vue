@@ -562,12 +562,12 @@ const options = ref(['All day'])
               margin-right: 10px;
               border: 3px solid var(--light-text);
               cursor: pointer;
-              opacity: 60%;
+              opacity: 0.6;
               transition: color 0.3s, background-color 0.3s, border-color 0.3s,
                 height 0.3s, width 0.3s;
 
               &:hover {
-                opacity: 100%;
+                opacity: 1;
               }
 
               &:focus-visible {

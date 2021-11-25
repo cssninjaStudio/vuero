@@ -110,7 +110,7 @@ const props = withDefaults(
       .component {
         img {
           filter: grayscale(0);
-          opacity: 100%;
+          opacity: 1;
         }
       }
 
@@ -123,7 +123,7 @@ const props = withDefaults(
       img {
         display: block;
         filter: grayscale(1);
-        opacity: 60%;
+        opacity: 0.6;
         max-height: 80px;
         transition: all 0.3s; // transition-all test
       }

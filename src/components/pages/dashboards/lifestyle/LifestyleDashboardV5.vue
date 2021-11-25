@@ -433,7 +433,7 @@ import {
                     font-size: 0.8rem;
 
                     // color: var(--smoke-white-dark-10);
-                    opacity: 60%;
+                    opacity: 0.6;
                     text-align: center;
                     color: var(--smoke-white);
                   }

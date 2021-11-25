@@ -129,7 +129,7 @@ var {
 
 .is-disabled {
   pointer-events: none;
-  opacity: 40%;
+  opacity: 0.4;
   cursor: default !important;
 }
 
@@ -242,7 +242,7 @@ var {
   cursor: pointer;
   padding: 0;
   transition: opacity 0.4s;
-  opacity: 100%;
+  opacity: 1;
   position: relative;
 
   &.has-chevron {
@@ -607,7 +607,7 @@ var {
     transform: scale(1);
 
     .form-switch {
-      opacity: 100% !important;
+      opacity: 1 !important;
       pointer-events: all !important;
     }
   }
@@ -626,7 +626,7 @@ var {
       left: -10px;
       display: block;
       transition: all 0.3s; // transition-all test
-      opacity: 0%;
+      opacity: 0;
       pointer-events: none;
     }
   }
@@ -714,7 +714,7 @@ var {
 #backtotop {
   position: fixed;
   right: 0;
-  opacity: 0%;
+  opacity: 0;
   visibility: hidden;
   bottom: 25px;
   margin: 0 25px 0 0;
@@ -723,12 +723,12 @@ var {
   transition: all 0.5s;
 
   &.visible {
-    opacity: 100%;
+    opacity: 1;
     visibility: visible;
     transform: scale(1);
 
     a:hover {
-      opacity: 90%;
+      opacity: 0.9;
       background: var(--primary);
       color: var(--white);
     }
@@ -743,7 +743,7 @@ var {
     width: 46px;
     height: 46px;
     background-color: var(--medium-grey);
-    opacity: 100%;
+    opacity: 1;
     transition: all 0.3s; // transition-all test
     border-radius: var(--radius-rounded);
     text-align: center;

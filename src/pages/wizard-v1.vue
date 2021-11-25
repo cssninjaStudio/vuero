@@ -277,13 +277,13 @@ watchEffect(() => {
         display: flex;
         justify-content: center;
         background: #f2f2f2;
-        opacity: 0%;
+        opacity: 0;
         pointer-events: none;
         z-index: 2;
         transition: all 0.3s; // transition-all test
 
         &.is-active {
-          opacity: 100%;
+          opacity: 1;
           pointer-events: all;
         }
 
@@ -335,14 +335,14 @@ watchEffect(() => {
         h3 {
           &:hover {
             .edit-icon {
-              opacity: 100%;
+              opacity: 1;
               pointer-events: all;
             }
           }
 
           .edit-icon {
             pointer-events: none;
-            opacity: 0%;
+            opacity: 0;
             font-size: 16px;
             color: var(--light-text);
             transition: all 0.3s; // transition-all test
@@ -371,7 +371,7 @@ watchEffect(() => {
             box-shadow: var(--light-box-shadow);
 
             .edit-icon {
-              opacity: 100%;
+              opacity: 1;
               pointer-events: all;
             }
           }
@@ -404,7 +404,7 @@ watchEffect(() => {
             width: 24px;
             border-radius: var(--radius-rounded);
             background: var(--fade-grey-light-3);
-            opacity: 0%;
+            opacity: 0;
             pointer-events: none;
             cursor: pointer;
             transition: all 0.3s; // transition-all test
@@ -505,7 +505,7 @@ watchEffect(() => {
           left: 0;
           height: 100%;
           width: 100%;
-          opacity: 0%;
+          opacity: 0;
           cursor: pointer;
 
           &:checked + .tool-card-inner {
@@ -513,7 +513,7 @@ watchEffect(() => {
 
             .flex-end {
               .checkmark {
-                opacity: 100%;
+                opacity: 1;
               }
             }
           }
@@ -536,7 +536,7 @@ watchEffect(() => {
                 border: 1px solid var(--fade-grey-dark-3);
                 border-radius: var(--radius-rounded);
                 box-shadow: var(--light-box-shadow);
-                opacity: 0%;
+                opacity: 0;
                 color: var(--primary);
                 transition: color 0.3s, background-color 0.3s, border-color 0.3s,
                   height 0.3s, width 0.3s;
@@ -847,7 +847,7 @@ watchEffect(() => {
         .right {
           .fileupload-process {
             #total-progress {
-              opacity: 0%;
+              opacity: 0;
               transition: opacity 0.3s linear;
             }
           }
@@ -1280,7 +1280,7 @@ watchEffect(() => {
 
           .learn-more-link {
             a {
-              opacity: 100%;
+              opacity: 1;
               pointer-events: all;
             }
           }
@@ -1330,7 +1330,7 @@ watchEffect(() => {
             font-weight: 500;
             font-family: var(--font);
             color: var(--light-text);
-            opacity: 0%;
+            opacity: 0;
             pointer-events: none;
             transition: all 0.3s; // transition-all test
 

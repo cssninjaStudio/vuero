@@ -620,7 +620,7 @@ const filterProjects = ref(0)
 
           .item-title {
             h3 {
-              opacity: 60%;
+              opacity: 0.6;
             }
           }
         }

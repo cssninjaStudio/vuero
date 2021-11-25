@@ -17,12 +17,7 @@ useHead({
 
 <template>
   <div
-    class="
-      page-content
-      is-relative
-      tabs-wrapper
-      is-slider is-squared is-inverted is-navbar-lg
-    "
+    class="page-content is-relative tabs-wrapper is-slider is-squared is-inverted is-navbar-lg"
   >
     <div class="page-content-inner">
       <FlexListV2 class="is-navbar" :active-tab="activeTab" />

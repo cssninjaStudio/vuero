@@ -285,7 +285,7 @@ useHead({
       background: var(--landing-xxx-dark-2);
 
       .hexagon {
-        opacity: 30%;
+        opacity: 0.3;
       }
 
       .hero-body {
@@ -742,7 +742,7 @@ useHead({
     }
 
     .subtitle {
-      opacity: 80%;
+      opacity: 0.8;
     }
 
     .v-button {

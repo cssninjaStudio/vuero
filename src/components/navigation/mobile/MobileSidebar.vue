@@ -82,7 +82,7 @@ const props = defineProps<{
           display: block;
           position: relative;
           transform: rotate(0);
-          opacity: 100%;
+          opacity: 1;
           transition: all 0.3s; // transition-all test
 
           &:hover,
@@ -115,12 +115,12 @@ const props = defineProps<{
 
           &.is-opened {
             transform: rotate(360deg);
-            opacity: 0%;
+            opacity: 0;
           }
 
           &.is-inactive {
             transform: rotate(-360deg);
-            opacity: 0%;
+            opacity: 0;
           }
 
           &.is-selected,
@@ -542,11 +542,11 @@ const props = defineProps<{
       padding: 10px;
       border-left: 2px solid transparent;
       border-bottom: 1px solid var(--fade-grey);
-      opacity: 80%;
+      opacity: 0.8;
       cursor: pointer;
 
       &.is-active {
-        opacity: 100%;
+        opacity: 1;
         background: var(--primary-light-51);
         border-left-color: var(--primary);
 

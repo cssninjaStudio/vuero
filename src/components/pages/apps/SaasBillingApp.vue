@@ -391,7 +391,7 @@ const selected = ref('value_2')
             left: 0;
             height: 100%;
             width: 100%;
-            opacity: 0%;
+            opacity: 0;
             cursor: pointer;
             z-index: 1;
 
@@ -401,7 +401,7 @@ const selected = ref('value_2')
 
               img {
                 filter: grayscale(0);
-                opacity: 100%;
+                opacity: 1;
               }
 
               .checkmark {
@@ -425,7 +425,7 @@ const selected = ref('value_2')
               width: 32px;
               min-width: 32px;
               filter: grayscale(1);
-              opacity: 60%;
+              opacity: 0.6;
               pointer-events: none;
               transition: color 0.3s, background-color 0.3s, border-color 0.3s,
                 height 0.3s, width 0.3s;

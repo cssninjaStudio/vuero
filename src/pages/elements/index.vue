@@ -265,7 +265,7 @@ useHead({
           .hub-card-body {
             img {
               filter: grayscale(0);
-              opacity: 100%;
+              opacity: 1;
             }
           }
         }
@@ -300,7 +300,7 @@ useHead({
             max-width: 100px;
             height: 100px;
             filter: grayscale(1);
-            opacity: 60%;
+            opacity: 0.6;
             transition: all 0.3s; // transition-all test
           }
         }
@@ -312,12 +312,12 @@ useHead({
 
           a {
             color: var(--primary);
-            opacity: 60%;
+            opacity: 0.6;
             font-weight: 500;
             transition: opacity 0.3s;
 
             &:hover {
-              opacity: 100%;
+              opacity: 1;
             }
           }
         }

@@ -89,7 +89,7 @@ $text-offset: $a-height - 90;
           transition: all 200ms ease;
 
           * {
-            opacity: 0%;
+            opacity: 0;
             margin: 0;
             width: 100%;
             text-overflow: ellipsis;
@@ -134,7 +134,7 @@ $text-offset: $a-height - 90;
         background: rgb(0 0 0 / 40%);
 
         * {
-          opacity: 100%;
+          opacity: 1;
           transform: translateX(0);
           transform: translateX(0);
         }
@@ -145,7 +145,7 @@ $text-offset: $a-height - 90;
       width: 8% !important;
 
       a * {
-        opacity: 0% !important;
+        opacity: 0 !important;
       }
     }
 
@@ -156,7 +156,7 @@ $text-offset: $a-height - 90;
         background: rgb(0 0 0 / 40%);
 
         * {
-          opacity: 100% !important;
+          opacity: 1 !important;
           transform: translateX(0);
           transform: translateX(0);
         }

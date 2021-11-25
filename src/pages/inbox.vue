@@ -568,7 +568,7 @@ useHead({
             font-family: var(--font);
 
             &:hover {
-              opacity: 80%;
+              opacity: 0.8;
               box-shadow: var(--primary-box-shadow);
             }
           }
@@ -903,7 +903,7 @@ useHead({
       height: 100%;
       width: 48%;
       z-index: -1;
-      opacity: 0%;
+      opacity: 0;
       background: var(--white);
       transition: opacity 0.4s;
       display: flex;
@@ -911,7 +911,7 @@ useHead({
       align-items: center;
 
       &.is-active {
-        opacity: 100%;
+        opacity: 1;
         z-index: 1;
       }
 

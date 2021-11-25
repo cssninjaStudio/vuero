@@ -180,7 +180,7 @@ label[for] {
         left: 0;
         height: 100%;
         width: 100%;
-        opacity: 0%;
+        opacity: 0;
         cursor: pointer;
 
         &:checked + .k-radio {
@@ -485,7 +485,7 @@ select {
 
       .validation-icon.is-success,
       .form-icon {
-        opacity: 100% !important;
+        opacity: 1 !important;
 
         svg,
         .form-icon svg {
@@ -502,7 +502,7 @@ select {
 
       .validation-icon.is-error,
       .form-icon {
-        opacity: 100% !important;
+        opacity: 1 !important;
 
         svg,
         .form-icon svg {
@@ -534,7 +534,7 @@ select {
       display: flex;
       justify-content: center;
       align-items: center;
-      opacity: 0%;
+      opacity: 0;
       transition: all 0.3s; // transition-all test
 
       svg {
@@ -572,7 +572,7 @@ select {
     max-height: 285px;
     overflow-y: auto;
     background: var(--white);
-    opacity: 0%;
+    opacity: 0;
     border: 1px solid var(--fade-grey-dark-3);
     border-radius: var(--radius);
     pointer-events: none;
@@ -582,7 +582,7 @@ select {
     transition: all 0.3s; // transition-all test
 
     &.is-active {
-      opacity: 100%;
+      opacity: 1;
       pointer-events: all;
       transform: translateY(0);
     }

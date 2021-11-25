@@ -295,7 +295,7 @@ const options = ref(['Option 2'])
                   left: 0;
                   height: 100%;
                   width: 100%;
-                  opacity: 0%;
+                  opacity: 0;
                   cursor: pointer;
 
                   &:checked {

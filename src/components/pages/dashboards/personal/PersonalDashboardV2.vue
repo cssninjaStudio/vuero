@@ -345,7 +345,7 @@ const democheck = ref(['value_2'])
         bottom: 1rem;
         right: 1rem;
         font-size: 4rem;
-        opacity: 30%;
+        opacity: 0.3;
       }
 
       .link {
@@ -356,7 +356,7 @@ const democheck = ref(['value_2'])
 
         &:hover {
           color: var(--smoke-white);
-          opacity: 60%;
+          opacity: 0.6;
         }
       }
     }

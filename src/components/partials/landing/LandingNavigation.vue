@@ -177,7 +177,7 @@ watchEffect(() => {
           .navbar-menu {
             .navbar-item {
               &.is-theme-toggle {
-                opacity: 0%;
+                opacity: 0;
                 pointer-events: none;
                 transition: color 0.3s, background-color 0.3s, border-color 0.3s,
                   height 0.3s, width 0.3s;
@@ -233,7 +233,7 @@ watchEffect(() => {
       .navbar-menu {
         .navbar-item {
           &.is-theme-toggle {
-            opacity: 100%;
+            opacity: 1;
             pointer-events: all;
           }
 
@@ -298,7 +298,7 @@ watchEffect(() => {
 
             input {
               position: absolute;
-              opacity: 0%;
+              opacity: 0;
               cursor: pointer;
 
               &:checked ~ .toggler {
@@ -310,11 +310,11 @@ watchEffect(() => {
                 }
 
                 .dark {
-                  opacity: 100% !important;
+                  opacity: 1 !important;
                 }
 
                 .light {
-                  opacity: 0% !important;
+                  opacity: 0 !important;
                 }
               }
             }
@@ -348,21 +348,21 @@ watchEffect(() => {
                   color: var(--white) !important;
                   height: 14px !important;
                   width: 14px !important;
-                  opacity: 100% !important;
+                  opacity: 1 !important;
                 }
               }
 
               .light {
                 background: var(--primary);
                 border-color: var(--primary);
-                opacity: 100%;
+                opacity: 1;
                 z-index: 1;
               }
 
               .dark {
                 background: var(--primary);
                 border-color: var(--primary);
-                opacity: 0%;
+                opacity: 0;
                 z-index: 0;
 
                 svg {

@@ -290,12 +290,12 @@
     height: 100%;
     background: rgb(255 255 255 / 100%);
     z-index: 9;
-    opacity: 0%;
+    opacity: 0;
     pointer-events: none;
     transition: all 0.4s;
 
     &.is-active {
-      opacity: 100%;
+      opacity: 1;
       pointer-events: all;
       z-index: 9 !important;
     }

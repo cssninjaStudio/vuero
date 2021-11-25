@@ -14,7 +14,7 @@
   width: 100%;
   height: 0;
   background: var(--white);
-  opacity: 0%;
+  opacity: 0;
   pointer-events: none;
   z-index: 99;
   transform: translateY(10px);
@@ -30,7 +30,7 @@
 
   &.is-active {
     height: 320px;
-    opacity: 100%;
+    opacity: 1;
     pointer-events: all;
     transform: translateY(0);
   }
@@ -191,7 +191,7 @@
                   color: var(--primary-dark-14);
 
                   svg {
-                    opacity: 100%;
+                    opacity: 1;
                     fill: var(--primary);
                   }
                 }
@@ -201,7 +201,7 @@
                 color: var(--primary-dark-14);
 
                 svg {
-                  opacity: 100%;
+                  opacity: 1;
                   fill: var(--primary);
                 }
               }
@@ -233,7 +233,7 @@
                 }
 
                 svg {
-                  opacity: 0%;
+                  opacity: 0;
                   position: relative;
                   top: 0;
                   margin-left: 12px;

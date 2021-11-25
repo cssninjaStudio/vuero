@@ -567,7 +567,7 @@ const columns = {
       .button-wrap {
         > div {
           a {
-            opacity: 100%;
+            opacity: 1;
             pointer-events: all;
           }
         }
@@ -610,7 +610,7 @@ const columns = {
         margin: 6px 0 0;
 
         a {
-          opacity: 0%;
+          opacity: 0;
           pointer-events: none;
           color: var(--light-text);
           font-weight: 500;

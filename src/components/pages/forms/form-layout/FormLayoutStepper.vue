@@ -977,7 +977,7 @@ const validateStep = async () => {
             height: 100%;
             width: 100%;
             z-index: 1;
-            opacity: 0%;
+            opacity: 0;
             cursor: pointer;
 
             &:checked {
@@ -1281,12 +1281,12 @@ const validateStep = async () => {
   .steps-segment {
     &.is-active {
       .steps-content {
-        opacity: 100% !important;
+        opacity: 1 !important;
       }
     }
 
     .steps-content {
-      opacity: 0% !important;
+      opacity: 0 !important;
       display: block;
     }
   }

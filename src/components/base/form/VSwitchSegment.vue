@@ -156,7 +156,7 @@ const blockSwitchId = `segment-switch-${++instances}`
 
   input {
     position: absolute;
-    opacity: 0%;
+    opacity: 0;
     pointer-events: none;
 
     &:checked + i {

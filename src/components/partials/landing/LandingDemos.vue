@@ -540,14 +540,14 @@ debouncedWatch(
     }
 
     .demo-title {
-      opacity: 100%;
+      opacity: 1;
       transform: translateY(0);
       transition-delay: 0 !important;
     }
 
     .demo-link {
       color: var(--white);
-      opacity: 100%;
+      opacity: 1;
       transform: translateY(0);
       transition-delay: 0 !important;
     }
@@ -622,7 +622,7 @@ debouncedWatch(
     font-family: var(--font);
     font-size: 1.5rem;
     font-weight: 600;
-    opacity: 0%;
+    opacity: 0;
     margin-bottom: 12px;
     padding-bottom: 12px;
     border-bottom: 1px solid var(--primary-light-20);
@@ -645,7 +645,7 @@ debouncedWatch(
   }
 
   .demo-link {
-    opacity: 0%;
+    opacity: 0;
     transform: translateY(20px);
     transition: transform 0.3s, opacity 0.3s, color 0.3s;
     transition-delay: 0.2s;
@@ -659,13 +659,13 @@ debouncedWatch(
       i {
         position: relative;
         top: 1px;
-        opacity: 0%;
+        opacity: 0;
         transform: translateX(0);
         transition: all 0.3s ease-out;
       }
 
       &:hover i {
-        opacity: 100%;
+        opacity: 1;
         transform: translateX(5px);
       }
     }

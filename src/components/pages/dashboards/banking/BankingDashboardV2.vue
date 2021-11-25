@@ -511,7 +511,7 @@ const goto = (index: number) => {
                     box-shadow: var(--primary-box-shadow);
 
                     .shape {
-                      opacity: 15%;
+                      opacity: 0.15;
                     }
 
                     .top {
@@ -558,7 +558,7 @@ const goto = (index: number) => {
                     width: 70px;
                     background: var(--white);
                     border-radius: var(--radius-rounded);
-                    opacity: 0%;
+                    opacity: 0;
                     transition: opacity 0.3s;
                   }
 

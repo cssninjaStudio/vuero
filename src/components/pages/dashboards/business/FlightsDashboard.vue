@@ -618,7 +618,7 @@ const options = ref(['All Flights'])
           .line {
             &::before,
             &::after {
-              opacity: 100%;
+              opacity: 1;
             }
           }
         }
@@ -684,7 +684,7 @@ const options = ref(['All Flights'])
 
           &::before,
           &::after {
-            opacity: 0%;
+            opacity: 0;
             pointer-events: none;
             transition: all 0.3s; // transition-all test
           }

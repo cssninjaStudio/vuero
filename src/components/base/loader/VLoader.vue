@@ -53,17 +53,17 @@ const props = withDefaults(defineProps<VLoaderProps>(), {
     height: 100%;
     width: 100%;
     background: var(--white);
-    opacity: 0%;
+    opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s;
     z-index: 5;
 
     &.is-active {
-      opacity: 100%;
+      opacity: 1;
       pointer-events: all;
 
       &.is-translucent {
-        opacity: 65%;
+        opacity: 0.65;
       }
     }
 

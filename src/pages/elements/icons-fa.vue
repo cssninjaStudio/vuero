@@ -81,41 +81,14 @@ useHead({
                 v-for="icon in filteredIcons"
                 :id="icon.name"
                 :key="icon.name"
-                class="
-                  icon
-                  w-grid-2
-                  textFilter-target
-                  w-grid-4-l w-grid-6-xl w-grid-8-2x
-                  pr4
-                  pb2
-                  pt2
-                  bb
-                  bw1
-                  b--gray1
-                  hover-black
-                  bw0-pr
-                  db
-                  fl-pr
-                "
+                class="icon w-grid-2 textFilter-target w-grid-4-l w-grid-6-xl w-grid-8-2x pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr"
               >
                 <dl class="dt clpse w-100 ma0 pa0">
                   <dt class="dtc v-top tl w2">
                     <span class="fa-fw select-all fas">{{ icon.char }}</span>
                   </dt>
                   <dd
-                    class="
-                      ma0
-                      pa0
-                      pr2
-                      select-all
-                      word-wrap
-                      dtc
-                      v-top
-                      tl
-                      f2
-                      icon-name
-                      textFilter-match
-                    "
+                    class="ma0 pa0 pr2 select-all word-wrap dtc v-top tl f2 icon-name textFilter-match"
                   >
                     {{ icon.name }}
                   </dd>

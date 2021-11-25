@@ -194,7 +194,7 @@ zh-CN:
 
   .modal-content {
     transform: scale(1) !important;
-    opacity: 100% !important;
+    opacity: 1 !important;
     max-width: 540px;
     overflow-x: hidden;
     animation: fadeInDown 0.5s;

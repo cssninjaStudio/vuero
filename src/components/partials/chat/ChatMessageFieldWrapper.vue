@@ -246,12 +246,12 @@ const dropdown = useDropdown(dropdownElement)
     width: 100px;
     height: 100px;
     z-index: 2;
-    opacity: 0%;
+    opacity: 0;
     transform: translateY(30px);
     transition: all 0.3s; // transition-all test
 
     &.is-active {
-      opacity: 100%;
+      opacity: 1;
       transform: translateY(25px);
     }
 

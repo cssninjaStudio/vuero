@@ -148,12 +148,12 @@ const props = defineProps<{
 
       &:hover {
         .image-overlay {
-          opacity: 45%;
+          opacity: 0.45;
           pointer-events: none;
         }
 
         .image-actions {
-          opacity: 100%;
+          opacity: 1;
 
           .download {
             pointer-events: all;
@@ -175,7 +175,7 @@ const props = defineProps<{
         left: 0;
         width: 100%;
         height: 100%;
-        opacity: 0%;
+        opacity: 0;
         background: var(--primary);
         border: 4px solid var(--white);
         border-radius: 3px;
@@ -189,7 +189,7 @@ const props = defineProps<{
         left: 0;
         width: 100%;
         height: 100%;
-        opacity: 0%;
+        opacity: 0;
         pointer-events: none;
         transition: all 0.3s; // transition-all test
         z-index: 3;

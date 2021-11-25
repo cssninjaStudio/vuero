@@ -362,18 +362,18 @@ const topicList = dashboardData.topicList as any[]
 
     &:hover {
       .long-card-overlay {
-        opacity: 50%;
+        opacity: 0.5;
         pointer-events: all;
       }
 
       .long-card-text-overlay {
-        opacity: 100%;
+        opacity: 1;
         pointer-events: all;
 
         .top,
         .bottom {
           transform: translateY(0);
-          opacity: 100%;
+          opacity: 1;
         }
       }
     }
@@ -385,7 +385,7 @@ const topicList = dashboardData.topicList as any[]
       height: 100%;
       width: 100%;
       background: var(--dark-sidebar);
-      opacity: 0%;
+      opacity: 0;
       pointer-events: none;
       z-index: 1;
       cursor: pointer;
@@ -404,7 +404,7 @@ const topicList = dashboardData.topicList as any[]
       justify-content: space-between;
       padding: 20px;
       font-family: var(--font);
-      opacity: 0%;
+      opacity: 0;
       pointer-events: none;
       z-index: 2;
       overflow: hidden;
@@ -413,7 +413,7 @@ const topicList = dashboardData.topicList as any[]
       .top,
       .bottom {
         transition: all 0.2s;
-        opacity: 0%;
+        opacity: 0;
         transition-delay: 0.15s;
         display: flex;
         align-items: center;
@@ -448,7 +448,7 @@ const topicList = dashboardData.topicList as any[]
         &:hover {
           .flex-end {
             .rating {
-              opacity: 100%;
+              opacity: 1;
             }
           }
         }
@@ -461,7 +461,7 @@ const topicList = dashboardData.topicList as any[]
         .flex-end {
           .rating {
             padding: 0 20px;
-            opacity: 0%;
+            opacity: 0;
             transition: all 0.3s; // transition-all test
 
             i {
@@ -499,19 +499,19 @@ const topicList = dashboardData.topicList as any[]
   .lifestyle-dashboard-v2 {
     .long-card {
       .long-card-overlay {
-        opacity: 50% !important;
+        opacity: 0.5 !important;
         pointer-events: all !important;
       }
 
       .long-card-text-overlay {
-        opacity: 100% !important;
+        opacity: 1 !important;
         pointer-events: all !important;
         padding: 30px;
 
         .top,
         .bottom {
           font-size: 1rem;
-          opacity: 100% !important;
+          opacity: 1 !important;
           transform: translateY(0) !important;
         }
       }
@@ -529,17 +529,17 @@ const topicList = dashboardData.topicList as any[]
 
           .long-card {
             .long-card-overlay {
-              opacity: 50% !important;
+              opacity: 0.5 !important;
               pointer-events: all !important;
             }
 
             .long-card-text-overlay {
-              opacity: 100% !important;
+              opacity: 1 !important;
               pointer-events: all !important;
 
               .top,
               .bottom {
-                opacity: 100% !important;
+                opacity: 1 !important;
                 transform: translateY(0) !important;
               }
 
@@ -566,17 +566,17 @@ const topicList = dashboardData.topicList as any[]
   .lifestyle-dashboard-v2 {
     .long-card {
       .long-card-overlay {
-        opacity: 50% !important;
+        opacity: 0.5 !important;
         pointer-events: all !important;
       }
 
       .long-card-text-overlay {
-        opacity: 100% !important;
+        opacity: 1 !important;
         pointer-events: all !important;
 
         .top,
         .bottom {
-          opacity: 100% !important;
+          opacity: 1 !important;
           transform: translateY(0) !important;
         }
 

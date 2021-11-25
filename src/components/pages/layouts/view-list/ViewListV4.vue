@@ -162,11 +162,7 @@ const filteredData = computed(() => {
                       View Recipe
                     </a>
                     <button
-                      class="
-                        button
-                        is-light is-circle
-                        hint--bubble hint--primary hint--top
-                      "
+                      class="button is-light is-circle hint--bubble hint--primary hint--top"
                       data-hint="Save"
                     >
                       <span class="icon is-small">

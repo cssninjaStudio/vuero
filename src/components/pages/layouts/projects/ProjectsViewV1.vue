@@ -350,7 +350,7 @@ const exampleColumns = {
 
         .project-avatar {
           filter: grayscale(0);
-          opacity: 100%;
+          opacity: 1;
         }
       }
 
@@ -361,7 +361,7 @@ const exampleColumns = {
         border-radius: 10px;
         margin: 0 auto 10px;
         filter: grayscale(1);
-        opacity: 60%;
+        opacity: 0.6;
         transition: all 0.3s; // transition-all test
       }
 

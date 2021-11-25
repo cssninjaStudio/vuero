@@ -51,7 +51,7 @@ useHead({
         margin: 0 auto;
         font-size: 28rem;
         font-weight: 600;
-        opacity: 15%;
+        opacity: 0.15;
         z-index: 0;
       }
 
@@ -100,7 +100,7 @@ useHead({
     .error-wrapper {
       .error-inner {
         .bg-number {
-          opacity: 9%;
+          opacity: 0.09;
         }
       }
     }

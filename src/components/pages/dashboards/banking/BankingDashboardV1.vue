@@ -483,7 +483,7 @@ import {
               width: 46px;
               background: var(--white);
               border-radius: var(--radius-rounded);
-              opacity: 15%;
+              opacity: 0.15;
             }
           }
 

@@ -108,7 +108,7 @@ const layoutSwitcher = useLayoutSwitcher()
 
       &.close {
         display: none !important;
-        opacity: 100% !important;
+        opacity: 1 !important;
       }
     }
   }

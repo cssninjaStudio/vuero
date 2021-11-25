@@ -267,7 +267,7 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
           bottom: 1rem;
           right: 1rem;
           font-size: 4rem;
-          opacity: 30%;
+          opacity: 0.3;
         }
 
         .cta-content {
@@ -290,7 +290,7 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
 
           &:hover {
             color: var(--smoke-white);
-            opacity: 60%;
+            opacity: 0.6;
           }
         }
       }

@@ -101,28 +101,28 @@ const props = withDefaults(
 
 @keyframes circle-chart-fill-2 {
   from {
-    opacity: 100%;
+    opacity: 1;
   }
 
   to {
     stroke-dasharray: 0 100;
-    opacity: 0%;
+    opacity: 0;
   }
 }
 
 @keyframes circle-chart-fill-3 {
   0% {
-    opacity: 100%;
+    opacity: 1;
   }
 
   50% {
-    opacity: 100%;
+    opacity: 1;
     stroke-dasharray: 0 100;
   }
 
   100% {
     stroke-dasharray: 0 100;
-    opacity: 0%;
+    opacity: 0;
   }
 }
 

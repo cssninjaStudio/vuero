@@ -202,7 +202,7 @@ onBeforeUnmount(() => {
 .plyr--paused,
 .plyr--stopped {
   .plyr__controls {
-    opacity: 0%;
+    opacity: 0;
     pointer-events: none;
   }
 }

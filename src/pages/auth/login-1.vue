@@ -254,7 +254,7 @@ useHead({
         width: 100%;
         height: 100%;
         background: #5d4298 !important;
-        opacity: 60%;
+        opacity: 0.6;
       }
     }
   }
@@ -532,7 +532,7 @@ useHead({
 
           &:first-child {
             &:hover {
-              opacity: 80%;
+              opacity: 0.8;
             }
           }
         }
@@ -552,7 +552,7 @@ useHead({
 
   input {
     position: absolute;
-    opacity: 0%;
+    opacity: 0;
     cursor: pointer;
 
     &:checked ~ .toggler {
@@ -564,11 +564,11 @@ useHead({
       }
 
       .active {
-        opacity: 100%;
+        opacity: 1;
       }
 
       .inactive {
-        opacity: 0%;
+        opacity: 0;
       }
     }
   }
@@ -608,14 +608,14 @@ useHead({
     .inactive {
       background: var(--placeholder);
       border-color: var(--placeholder);
-      opacity: 100%;
+      opacity: 1;
       z-index: 1;
     }
 
     .active {
       background: var(--primary);
       border-color: var(--primary);
-      opacity: 0%;
+      opacity: 0;
       z-index: 0;
     }
   }

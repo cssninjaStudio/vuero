@@ -113,7 +113,7 @@ function change() {
   input {
     position: absolute;
     cursor: pointer;
-    opacity: 0%;
+    opacity: 0;
     transition: all 0.3s; // transition-all test
   }
 }

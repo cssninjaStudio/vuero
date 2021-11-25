@@ -328,7 +328,7 @@ defineExpose({
           top: 0;
           width: 280px;
           transition: all 0.3s; // transition-all test
-          opacity: 0%;
+          opacity: 0;
           transform: translateY(10px);
           pointer-events: none;
 
@@ -375,7 +375,7 @@ defineExpose({
         // Hover state
         &:hover {
           .child-dropdown {
-            opacity: 100%;
+            opacity: 1;
             transform: translateY(0);
             pointer-events: all;
           }

@@ -63,7 +63,7 @@
 
   input {
     position: absolute;
-    opacity: 0%;
+    opacity: 0;
     cursor: pointer;
 
     &:checked ~ .toggler {
@@ -76,11 +76,11 @@
       }
 
       .active {
-        opacity: 100%;
+        opacity: 1;
       }
 
       .inactive {
-        opacity: 0%;
+        opacity: 0;
       }
     }
   }
@@ -126,7 +126,7 @@
       background: var(--white);
       border-color: var(--success);
       color: var(--success);
-      opacity: 100%;
+      opacity: 1;
       z-index: 1;
     }
 
@@ -134,7 +134,7 @@
       background: var(--white);
       border-color: var(--light-text);
       color: var(--light-text);
-      opacity: 0%;
+      opacity: 0;
       z-index: 0;
     }
   }

@@ -583,7 +583,7 @@ onUnmounted(() => {
     transition: all 0.3s; // transition-all test
 
     &.faded {
-      opacity: 0%;
+      opacity: 0;
     }
   }
 
@@ -823,7 +823,7 @@ onUnmounted(() => {
 
         &:first-child {
           &:hover {
-            opacity: 95%;
+            opacity: 0.95;
             box-shadow: var(--primary-box-shadow);
           }
         }
@@ -851,7 +851,7 @@ onUnmounted(() => {
           left: 0;
           width: 100%;
           height: 100%;
-          opacity: 0%;
+          opacity: 0;
           cursor: pointer;
 
           &:checked + .signup-box {
@@ -991,7 +991,7 @@ onUnmounted(() => {
   // margin: 0 auto 20px auto;
 
   &:hover .slick-custom {
-    opacity: 100%;
+    opacity: 1;
   }
 
   .carousel-item {
@@ -1021,14 +1021,14 @@ onUnmounted(() => {
     cursor: pointer;
 
     img {
-      opacity: 60%;
+      opacity: 0.6;
       border: 4px solid transparent;
       transform: scale(0.75);
     }
 
     &.active {
       img {
-        opacity: 100%;
+        opacity: 1;
         transform: scale(1);
         border: 2px solid var(--primary);
       }
@@ -1059,7 +1059,7 @@ onUnmounted(() => {
     color: var(--dark-text);
     transition: all 0.3s; // transition-all test
     z-index: 25;
-    opacity: 0%;
+    opacity: 0;
 
     svg {
       height: 16px;
@@ -1131,7 +1131,7 @@ onUnmounted(() => {
 
           .step-label {
             color: var(--primary);
-            opacity: 100%;
+            opacity: 1;
           }
         }
 
@@ -1142,7 +1142,7 @@ onUnmounted(() => {
 
         .step-label {
           color: var(--dark-dark-text);
-          opacity: 60%;
+          opacity: 0.6;
         }
       }
     }

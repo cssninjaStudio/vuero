@@ -204,7 +204,7 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
     left: 0;
     height: 100%;
     width: 100%;
-    opacity: 0%;
+    opacity: 0;
     cursor: pointer;
     z-index: 1;
   }
@@ -223,11 +223,11 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
       border-radius: var(--radius-rounded);
       border: 1px solid var(--placeholder);
       z-index: 0;
-      opacity: 100%;
+      opacity: 1;
       transition: all 0.2s;
 
       &.is-opaque {
-        opacity: 0%;
+        opacity: 0;
       }
     }
 

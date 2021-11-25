@@ -166,7 +166,7 @@
           box-shadow: var(--light-box-shadow);
 
           .edit-icon {
-            opacity: 100%;
+            opacity: 1;
             pointer-events: all;
           }
 
@@ -204,7 +204,7 @@
           width: 18px;
           border-radius: var(--radius-rounded);
           background: var(--fade-grey-light-3);
-          opacity: 0%;
+          opacity: 0;
           pointer-events: none;
           transition: all 0.3s; // transition-all test
 

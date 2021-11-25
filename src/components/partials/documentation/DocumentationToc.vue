@@ -76,11 +76,11 @@ onMounted(() => {
   display: block;
   padding-left: 2rem;
   transition: opacity 0.3s ease;
-  opacity: 60%;
+  opacity: 0.6;
 
   &:hover,
   &:focus-within {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 

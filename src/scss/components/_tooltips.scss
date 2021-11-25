@@ -27,7 +27,7 @@
   position: absolute;
   transform: translate3d(0, 0, 0);
   visibility: hidden;
-  opacity: 0%;
+  opacity: 0;
   z-index: 1000000;
   pointer-events: none;
   transition: 0.3s ease;
@@ -39,7 +39,7 @@
 [class*='hint--']:focus-visible::before,
 [class*='hint--']:focus-visible::after {
   visibility: visible;
-  opacity: 100%;
+  opacity: 1;
 }
 
 [class*='hint--']:focus-visible::before,
@@ -700,7 +700,7 @@
 // Defines a persisted tooltip which shows always.
 .hint--always::after,
 .hint--always::before {
-  opacity: 100%;
+  opacity: 1;
   visibility: visible;
 }
 

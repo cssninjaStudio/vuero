@@ -13,12 +13,7 @@ useHead({
 
 <template>
   <div
-    class="
-      page-content
-      is-relative
-      tabs-wrapper
-      is-triple-slider is-squared is-inverted is-navbar-lg
-    "
+    class="page-content is-relative tabs-wrapper is-triple-slider is-squared is-inverted is-navbar-lg"
   >
     <div class="page-content-inner">
       <EmptySearch />

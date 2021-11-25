@@ -536,7 +536,7 @@ const isScrolling = computed(() => {
                       position: absolute;
                       top: 10px;
                       right: 10px;
-                      opacity: 100%;
+                      opacity: 1;
                     }
 
                     .mega-menus {
@@ -1336,7 +1336,7 @@ const isScrolling = computed(() => {
               border-color: var(--dark-sidebar-light-12);
               background: var(--dark-sidebar-dark-2);
               color: var(--primary);
-              opacity: 100%;
+              opacity: 1;
             }
 
             &:hover {
@@ -1350,7 +1350,7 @@ const isScrolling = computed(() => {
             border-color: var(--dark-sidebar-light-12);
             background: var(--dark-sidebar-dark-2);
             color: var(--primary);
-            opacity: 100%;
+            opacity: 1;
 
             &:hover {
               background: var(--dark-sidebar-dark-2);
@@ -1364,7 +1364,7 @@ const isScrolling = computed(() => {
           }
 
           a {
-            opacity: 60%;
+            opacity: 0.6;
           }
         }
       }
@@ -1398,7 +1398,7 @@ const isScrolling = computed(() => {
               li {
                 &:hover {
                   a {
-                    opacity: 100%;
+                    opacity: 1;
                     color: var(--primary);
                   }
                 }
@@ -1407,13 +1407,13 @@ const isScrolling = computed(() => {
                   border-color: var(--primary);
 
                   a {
-                    opacity: 100%;
+                    opacity: 1;
                     color: var(--primary);
                   }
                 }
 
                 a {
-                  opacity: 60%;
+                  opacity: 0.6;
                 }
               }
             }

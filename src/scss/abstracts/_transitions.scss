@@ -9,7 +9,7 @@
 
 .fade-fast-enter-from,
 .fade-fast-leave-to {
-  opacity: 0%;
+  opacity: 0;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -30,7 +30,7 @@
 
 .fade-slow-enter-from,
 .fade-slow-leave-to {
-  opacity: 0%;
+  opacity: 0;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -52,12 +52,12 @@
 
 .translate-page-y-enter-from {
   transform: translateY(10px);
-  opacity: 0%;
+  opacity: 0;
 }
 
 .translate-page-y-leave-to {
   transform: translateY(-300px);
-  opacity: 0%;
+  opacity: 0;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -82,23 +82,23 @@
 @keyframes translate-page-x-in {
   0% {
     transform: translateX(-200px);
-    opacity: 0%;
+    opacity: 0;
   }
 
   100% {
     transform: translateX(0);
-    opacity: 100%;
+    opacity: 1;
   }
 }
 @keyframes translate-page-x-out {
   0% {
     transform: translateX(0);
-    opacity: 100%;
+    opacity: 1;
   }
 
   100% {
     transform: translateX(500px);
-    opacity: 0%;
+    opacity: 0;
   }
 }
 
@@ -125,7 +125,7 @@
 
 .list-enter-from,
 .list-leave-to {
-  opacity: 0%;
+  opacity: 0;
   transform: translateY(30px);
 }
 
@@ -148,7 +148,7 @@
 
 .list-complete-enter-from,
 .list-complete-leave-to {
-  opacity: 0%;
+  opacity: 0;
   transform: translateY(30px);
 }
 
@@ -205,7 +205,7 @@
 
 .from-bottom-enter-active,
 .from-bottom-leave-active {
-  opacity: 100%;
+  opacity: 1;
   transform: translateY(0);
   transition: opacity 0.2s ease, transform 0.3s ease;
 }
@@ -213,7 +213,7 @@
 .from-bottom-enter-from,
 .from-bottom-leave-to {
   transform: translateY(100%);
-  opacity: 0%;
+  opacity: 0;
 }
 
 @media (prefers-reduced-motion: reduce) {
