@@ -15,6 +15,9 @@ const toc = useMarkdownToc(markdownContainer)
 
 const viewWrapper = useViewWrapper()
 viewWrapper.setPageTitle('VFlexTableWrapper')
+useHead({
+  title: 'VFlexTableWrapper - VFlexTable - Vuero',
+})
 
 type User = typeof users[0]
 
@@ -65,10 +68,6 @@ const columns = {
   },
   role: 'Role',
 } as const
-
-useHead({
-  title: 'VFlexTableWrapper - Components - Vuero',
-})
 </script>
 
 <template>
@@ -92,7 +91,7 @@ useHead({
           to: { name: 'components-flex-table' },
         },
         {
-          label: 'Advanced',
+          label: 'VFlexTableWrapper',
           to: { name: 'components-flex-table-wrapper' },
         },
       ]"

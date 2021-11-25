@@ -9,9 +9,9 @@ import type { VFlexTableWrapperDataResolver } from '/@src/components/base/table/
 import sleep from '/@src/utils/sleep'
 
 const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('VFlexTableWrapper')
+viewWrapper.setPageTitle('Async data (advanced)')
 useHead({
-  title: 'VFlexTableWrapper - Components - Vuero',
+  title: 'Async data (advanced) - VFlexTableWrapper - Vuero',
 })
 
 // the total data will be set by the fetchData function
@@ -268,8 +268,12 @@ function onCallClick(row: any) {
           to: { name: 'components-flex-table' },
         },
         {
-          label: 'Advanced',
+          label: 'VFlexTableWrapper',
           to: { name: 'components-flex-table-wrapper' },
+        },
+        {
+          label: 'Async data (advanced)',
+          to: { name: 'components-flex-table-wrapper-async' },
         },
       ]"
     />

@@ -97,6 +97,13 @@
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             VFlexTableWrapper
           </RouterLink>
+          <RouterLink
+            :to="{ name: 'components-flex-table-wrapper-async' }"
+            class="is-submenu"
+          >
+            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+            Async data
+          </RouterLink>
         </SidebarCollapsableLinks>
 
         <SidebarCollapsableLinks>

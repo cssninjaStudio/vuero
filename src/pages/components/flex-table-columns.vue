@@ -11,10 +11,9 @@ const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
 const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('VFlexTable')
-
+viewWrapper.setPageTitle('Customize columns')
 useHead({
-  title: 'VFlexTable - Components - Vuero',
+  title: 'Customize columns - VFlexTable - Components - Vuero',
 })
 </script>
 

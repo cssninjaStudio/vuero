@@ -10,6 +10,12 @@ import FlexTableDropdown from '/@src/components/partials/dropdowns/FlexTableDrop
 import VFlexTableSortColumn from '/@src/components/base/table/VFlexTableSortColumn.vue'
 import VAvatarStack from '/@src/components/base/avatar/VAvatarStack.vue'
 
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('Render functions (advanced)')
+useHead({
+  title: 'Render functions (advanced) - VFlexTable - Components - Vuero',
+})
+
 const collator = new Intl.Collator('en')
 const numberFormat = new Intl.NumberFormat('en-US', {
   style: 'currency',
@@ -169,13 +175,6 @@ const exampleColumns = {
       }),
   },
 } as const
-
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('VFlexTable')
-
-useHead({
-  title: 'VFlexTable - Components - Vuero',
-})
 </script>
 
 <template>
@@ -197,6 +196,10 @@ useHead({
         {
           label: 'VFlexTable',
           to: { name: 'components-flex-table' },
+        },
+        {
+          label: 'Render functions (advanced)',
+          to: { name: 'components-flex-table-render' },
         },
       ]"
     />
