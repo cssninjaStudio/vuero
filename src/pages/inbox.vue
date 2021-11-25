@@ -3,7 +3,7 @@ import { useHead } from '@vueuse/head'
 import { computed, ref, watch } from 'vue'
 
 import { useDarkmode } from '/@src/stores/darkmode'
-import useDropdown from '/@src/composable/useDropdown'
+import { useDropdown } from '/@src/composable/useDropdown'
 import { onceImageErrored } from '/@src/utils/via-placeholder'
 
 const darkmode = useDarkmode()

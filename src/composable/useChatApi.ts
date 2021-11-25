@@ -11,6 +11,7 @@
  */
 
 import { ref } from 'vue'
+import { createSharedComposable } from '@vueuse/core'
 
 import { useApi } from './useApi'
 
@@ -39,7 +40,7 @@ export interface Message {
   }
 }
 
-export const useChatApi = () => {
+export const useChatApi = createSharedComposable(() => {
   const api = useApi()
   const loading = ref(false)
 
@@ -86,4 +87,4 @@ export const useChatApi = () => {
     fetchConversations,
     fetchMessages,
   } as const
-}
+})

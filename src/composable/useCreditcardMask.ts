@@ -13,7 +13,7 @@ export type VCreditCardColor =
   | 'lightblue'
   | 'cyan'
 
-export default function useCreditcardMask() {
+export function useCreditcardMask() {
   const creditcardIcon = ref('')
   const creditcardLogo = ref('')
   const creditcardColor = ref<VCreditCardColor>('grey')

@@ -4,7 +4,7 @@ import { RouterLink, useRoute } from 'vue-router'
 import { useHead } from '@vueuse/head'
 
 import { flexRowsContacts, flexRowsAdvanced } from '/@src/data/documentation/table'
-import useMarkdownToc from '/@src/composable/useMarkdownToc'
+import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 
 const markdownContainer = ref<HTMLElement>()

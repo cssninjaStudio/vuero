@@ -3,7 +3,7 @@ import { useHead } from '@vueuse/head'
 import { radar } from 'billboard.js'
 
 import { ref } from 'vue'
-import useMarkdownToc from '/@src/composable/useMarkdownToc'
+import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
 import * as splineSimple from '/@src/data/dashboards/billboardjs-demo/splineSimple'
 import { themeColors } from '/@src/utils/theme-colors'
 import { useViewWrapper } from '/@src/stores/viewWrapper'

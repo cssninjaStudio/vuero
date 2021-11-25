@@ -2,7 +2,7 @@
 import { useHead } from '@vueuse/head'
 import { ref } from 'vue'
 
-import useMarkdownToc from '/@src/composable/useMarkdownToc'
+import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 import { onceImageErrored } from '/@src/utils/via-placeholder'
 

@@ -2,7 +2,7 @@
 import { useHead } from '@vueuse/head'
 import { onBeforeUnmount, onMounted, ref } from 'vue'
 
-import useMarkdownToc from '/@src/composable/useMarkdownToc'
+import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
 
 import { optionsBase } from '/@src/data/documentation/v-datatable/simple-datatable'
 import { optionsReactive } from '/@src/data/documentation/v-datatable/reactive-datatable'

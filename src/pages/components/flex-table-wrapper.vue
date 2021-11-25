@@ -8,7 +8,7 @@ import type {
 } from '/@src/components/base/table/VFlexTableWrapper.vue'
 import { users } from '/@src/data/layouts/card-grid-v1'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
-import useMarkdownToc from '/@src/composable/useMarkdownToc'
+import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)

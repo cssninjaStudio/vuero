@@ -4,7 +4,7 @@ import { useI18n } from 'vue-i18n'
 
 import { useDarkmode } from '/@src/stores/darkmode'
 import { usePanels } from '/@src/stores/panels'
-import useDropdown from '/@src/composable/useDropdown'
+import { useDropdown } from '/@src/composable/useDropdown'
 import { onceImageErrored } from '/@src/utils/via-placeholder'
 
 const panels = usePanels()

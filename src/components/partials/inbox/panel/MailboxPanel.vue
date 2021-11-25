@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import useDropdown from '/@src/composable/useDropdown'
+import { useDropdown } from '/@src/composable/useDropdown'
 const dropdownElement = ref<HTMLElement>()
 const dropdown = useDropdown(dropdownElement)
 </script>
