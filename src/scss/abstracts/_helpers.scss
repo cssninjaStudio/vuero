@@ -63,6 +63,18 @@ $sides: top, bottom, left, right;
   margin-left: 0 !important;
 }
 
+.is-block {
+  display: block !important;
+}
+
+.is-inline-block {
+  display: inline-block !important;
+}
+
+.is-rounded {
+  border-radius: var(--radius);
+}
+
 .no-margin-right {
   margin-right: 0 !important;
 }

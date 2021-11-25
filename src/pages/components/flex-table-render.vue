@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { h, computed, defineComponent } from 'vue'
+import { h, computed } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
 import { useHead } from '@vueuse/head'
 
@@ -7,7 +7,14 @@ import { flexRowsAdvanced } from '/@src/data/documentation/table'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 import VTag from '/@src/components/base/tags/VTag.vue'
 import FlexTableDropdown from '/@src/components/partials/dropdowns/FlexTableDropdown.vue'
+import VFlexTableSortColumn from '/@src/components/base/table/VFlexTableSortColumn.vue'
 import VAvatarStack from '/@src/components/base/avatar/VAvatarStack.vue'
+
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('Render functions (advanced)')
+useHead({
+  title: 'Render functions (advanced) - VFlexTable - Components - Vuero',
+})
 
 const collator = new Intl.Collator('en')
 const numberFormat = new Intl.NumberFormat('en-US', {
@@ -69,97 +76,33 @@ const sortedData = computed(() => {
   }
 })
 
-const SortColumnComponent = defineComponent({
-  props: {
-    label: {
-      type: String,
-      required: true,
-    },
-    id: {
-      type: String,
-      required: true,
-    },
-  },
-  setup(props) {
-    const currentRoute = useRoute()
-    return () =>
-      h(
-        RouterLink,
-        {
-          to: {
-            ...currentRoute,
-            query: {
-              sort:
-                currentRoute.query.sort === `${props.id}:asc`
-                  ? `${props.id}:desc`
-                  : currentRoute.query.sort === `${props.id}:desc`
-                  ? undefined
-                  : `${props.id}:asc`,
-            },
-          },
-        },
-        {
-          default() {
-            const icon = h(
-              'span',
-              { key: `${currentRoute.query.sort}`, class: 'is-inline' },
-              h('span', {
-                class: 'iconify is-inline',
-                'data-icon':
-                  currentRoute.query.sort === `${props.id}:asc`
-                    ? 'fa:sort-asc'
-                    : currentRoute.query.sort === `${props.id}:desc`
-                    ? 'fa:sort-desc'
-                    : 'fa:sort',
-              })
-            )
-
-            return [props.label, icon]
-          },
-        }
-      )
-  },
-})
-
 // this is the how rows and columns are rendered
 const exampleColumns = {
   username: {
     bold: true,
     // we can use custom render function for column heading
     renderHeader: () =>
-      h(
-        'span',
-        {},
-        h(SortColumnComponent, {
-          label: 'Name',
-          id: 'username',
-        })
-      ),
+      h(VFlexTableSortColumn, {
+        label: 'Name',
+        id: 'username',
+      }),
   },
   position: {
     renderHeader: () =>
-      h(
-        'span',
-        {},
-        h(SortColumnComponent, {
-          label: 'Position',
-          id: 'position',
-        })
-      ),
+      h(VFlexTableSortColumn, {
+        label: 'Position',
+        id: 'position',
+      }),
   },
   annualEarnings: {
     inverted: true,
     format: (value: any) => numberFormat.format(value),
     // we can use custom render function for column heading
     renderHeader: () =>
-      h(
-        'span',
-        {},
-        h(SortColumnComponent, {
-          label: 'Revenue',
-          id: 'annual-earnings',
-        })
-      ),
+      h(VFlexTableSortColumn, {
+        label: 'Revenue',
+        id: 'annual-earnings',
+      }),
   },
   status: {
     label: 'Status',
@@ -187,21 +130,17 @@ const exampleColumns = {
       ),
     // we can use custom render function for column heading
     renderHeader: () =>
-      h(
-        'span',
-        {},
-        h(SortColumnComponent, {
-          label: 'Status',
-          id: 'status',
-        })
-      ),
+      h(VFlexTableSortColumn, {
+        label: 'Status',
+        id: 'status',
+      }),
   },
   contacts: {
     renderHeader: () =>
       h(
         'span',
         {},
-        h(SortColumnComponent, {
+        h(VFlexTableSortColumn, {
           label: 'Contacts',
           id: 'contacts',
         })
@@ -236,13 +175,6 @@ const exampleColumns = {
       }),
   },
 } as const
-
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('VFlexTable')
-
-useHead({
-  title: 'VFlexTable - Components - Vuero',
-})
 </script>
 
 <template>
@@ -264,6 +196,10 @@ useHead({
         {
           label: 'VFlexTable',
           to: { name: 'components-flex-table' },
+        },
+        {
+          label: 'Render functions (advanced)',
+          to: { name: 'components-flex-table-render' },
         },
       ]"
     />

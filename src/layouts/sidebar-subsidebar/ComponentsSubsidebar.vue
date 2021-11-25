@@ -107,7 +107,7 @@ const emit = defineEmits(['close'])
           </RouterLink>
           <RouterLink :to="{ name: 'components-flex-table-slots' }" class="is-submenu">
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-            Slots usage (advanced)
+            Slots usage
           </RouterLink>
           <RouterLink :to="{ name: 'components-flex-table-render' }" class="is-submenu">
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
@@ -116,6 +116,13 @@ const emit = defineEmits(['close'])
           <RouterLink :to="{ name: 'components-flex-table-wrapper' }" class="is-submenu">
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             VFlexTableWrapper
+          </RouterLink>
+          <RouterLink
+            :to="{ name: 'components-flex-table-wrapper-async' }"
+            class="is-submenu"
+          >
+            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+            Async data (advanced)
           </RouterLink>
         </SidebarCollapsableLinks>
 

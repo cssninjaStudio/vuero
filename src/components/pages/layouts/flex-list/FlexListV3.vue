@@ -112,7 +112,7 @@ const filteredData = computed(() => {
             <transition-group name="list" tag="div" class="flex-list-inner">
               <!--Table item-->
               <div v-for="item in filteredData" :key="item.id" class="flex-table-item">
-                <div class="flex-table-cell is-media is-grow-lg">
+                <VFlexTableCell :column="{ media: true, grow: true }">
                   <img
                     class="media"
                     :src="item.picture"
@@ -130,19 +130,19 @@ const filteredData = computed(() => {
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="flex-table-cell">
+                </VFlexTableCell>
+                <VFlexTableCell>
                   <span class="light-text">{{ item.category }}</span>
-                </div>
-                <div class="flex-table-cell">
+                </VFlexTableCell>
+                <VFlexTableCell>
                   <i
                     aria-hidden="true"
                     class="cell-icon is-pushed-mobile"
                     :class="item.skill.icon"
                   ></i>
                   <span class="light-text no-push">{{ item.skill.name }}</span>
-                </div>
-                <div class="flex-table-cell">
+                </VFlexTableCell>
+                <VFlexTableCell>
                   <span class="dot-levels">
                     <i
                       class="fas fa-circle dot active"
@@ -170,13 +170,13 @@ const filteredData = computed(() => {
                       :class="item.difficulty === 5 ? 'active' : ''"
                     ></i>
                   </span>
-                </div>
-                <div class="flex-table-cell cell-end">
+                </VFlexTableCell>
+                <VFlexTableCell :columns="{ align: end }">
                   <a class="button v-button has-dot dark-outlined is-pushed-mobile">
                     Purchase
                     <i aria-hidden="true" class="fas fa-circle dot"></i> ${{ item.price }}
                   </a>
-                </div>
+                </VFlexTableCell>
               </div>
             </transition-group>
           </template>

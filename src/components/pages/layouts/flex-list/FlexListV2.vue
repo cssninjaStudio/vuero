@@ -139,7 +139,7 @@ const filteredData = computed(() => {
             <transition-group name="list" tag="div" class="flex-list-inner">
               <!--Table item-->
               <div v-for="item in filteredData" :key="item.id" class="flex-table-item">
-                <div class="flex-table-cell is-media is-grow">
+                <VFlexTableCell :column="{ media: true, grow: true }">
                   <VAvatar :picture="item.picture" />
                   <div>
                     <span class="item-name dark-inverted">{{ item.name }}</span>
@@ -151,27 +151,27 @@ const filteredData = computed(() => {
                       >
                     </span>
                   </div>
-                </div>
-                <div class="flex-table-cell">
+                </VFlexTableCell>
+                <VFlexTableCell>
                   <span class="light-text">{{ item.customer }}</span>
-                </div>
-                <div class="flex-table-cell">
+                </VFlexTableCell>
+                <VFlexTableCell>
                   <span class="light-text">{{ item.industry }}</span>
-                </div>
-                <div class="flex-table-cell">
+                </VFlexTableCell>
+                <VFlexTableCell>
                   <VTag rounded>{{ item.status }}</VTag>
-                </div>
-                <div class="flex-table-cell h-hidden-tablet-p">
+                </VFlexTableCell>
+                <VFlexTableCell class="h-hidden-tablet-p">
                   <VAvatarStack
                     :avatars="item.team"
                     size="small"
                     :limit="3"
                     class="is-pushed-mobile"
                   />
-                </div>
-                <div class="flex-table-cell cell-end">
+                </VFlexTableCell>
+                <VFlexTableCell :column="{ align: 'end' }">
                   <ProjectListDropdown />
-                </div>
+                </VFlexTableCell>
               </div>
             </transition-group>
           </template>

@@ -5,6 +5,12 @@ import { useHead } from '@vueuse/head'
 import { flexRowsContacts } from '/@src/data/documentation/table'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('Slots usage')
+useHead({
+  title: 'Slots usage - VFlexTable - Components - Vuero',
+})
+
 // this is a local directive (it begins with V..., usable with v-focus)
 // that is used to force the focus on input when mounted
 const VFocus = {
@@ -53,13 +59,6 @@ function clickOnRow(row: any) {
 function contactUser(row: any) {
   alert(`Contacting "${row.company}" ...`)
 }
-
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('VFlexTable (Compact)')
-
-useHead({
-  title: 'VFlexTable Compact - Components - Vuero',
-})
 </script>
 
 <template>
@@ -83,7 +82,7 @@ useHead({
           to: { name: 'components-flex-table' },
         },
         {
-          label: 'Compact',
+          label: 'Slots usage',
           to: { name: 'components-flex-table-slots' },
         },
       ]"

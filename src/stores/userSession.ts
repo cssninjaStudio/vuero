@@ -5,7 +5,10 @@ import { useStorage } from '@vueuse/core'
 export type UserData = Record<string, any> | null
 
 export const useUserSession = defineStore('userSession', () => {
+  // token will be synced with local storage
+  // @see https://vueuse.org/core/usestorage/
   const token = useStorage('token', '')
+
   const user = ref<Partial<UserData>>()
   const loading = ref(true)
 

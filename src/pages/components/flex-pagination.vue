@@ -2,7 +2,6 @@
 import { useHead } from '@vueuse/head'
 import { computed } from 'vue'
 
-import { flexRowsBasic } from '/@src/data/documentation/table'
 import { useRoute } from 'vue-router'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 
@@ -69,6 +68,8 @@ useHead({
 
         <!--Props-->
         <VFlexPaginationPropsDocumentation />
+        <VFlexPaginationEventsDocumentation />
+        <VFlexPaginationSlotsDocumentation />
       </div>
     </div>
   </div>
