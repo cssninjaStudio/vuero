@@ -53,8 +53,6 @@ router.afterEach(() => {
 </template>
 
 <style lang="scss" scoped>
-@import '../../scss/layout/sidebar';
-
 .right {
   fill: var(--primary-dark-7);
 }

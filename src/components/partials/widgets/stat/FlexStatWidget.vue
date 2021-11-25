@@ -29,3 +29,44 @@ const props = withDefaults(
     </div>
   </div>
 </template>
+
+<style lang="scss">
+.stat-widget {
+  &.flex-stat-widget {
+    .chart-media {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .meta {
+        margin-right: 30px;
+        align-items: center;
+        font-family: var(--font);
+
+        h4 {
+          font-family: var(--font-alt);
+          font-size: 1rem;
+          font-weight: 600;
+          color: var(--dark-text);
+        }
+
+        span {
+          display: block;
+          color: var(--primary);
+          font-size: 1.2rem;
+          font-weight: 600;
+          margin-bottom: 8px;
+        }
+
+        p {
+          font-size: 0.9rem;
+        }
+      }
+
+      .chart-container {
+        min-width: 110px;
+      }
+    }
+  }
+}
+</style>

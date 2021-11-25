@@ -61,3 +61,126 @@ const toggleTabs = () => {
     </div>
   </div>
 </template>
+
+<style lang="scss">
+@import '../../../../scss/abstracts/mixins';
+
+.list-widget {
+  @include vuero-l-card;
+
+  padding: 30px;
+
+  &:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+
+  &.is-straight {
+    @include vuero-s-card;
+  }
+
+  &.tabbed-widget {
+    .widget-head {
+      .tabbed-controls {
+        position: relative;
+        display: flex;
+        min-width: 140px;
+        height: 32px;
+        background: var(--widget-grey-dark-2);
+        font-family: var(--font);
+        border-radius: 8px;
+
+        .tabbed-control {
+          position: relative;
+          width: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 0.9rem;
+          color: var(--light-text);
+          z-index: 1;
+
+          &.is-active {
+            color: var(--smoke-white);
+
+            &:first-child {
+              ~ .tabbed-naver {
+                margin-left: 0;
+              }
+            }
+
+            &:nth-child(2) {
+              ~ .tabbed-naver {
+                margin-left: 50%;
+              }
+            }
+          }
+        }
+
+        .tabbed-naver {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 50%;
+          height: 100%;
+          border-radius: 8px;
+          background: var(--primary);
+          margin-left: 0;
+          transition: all 0.3s; // transition-all test
+          z-index: 0;
+        }
+      }
+    }
+
+    .inner-list-wrapper {
+      display: none;
+      animation: fadeInLeft 0.5s;
+
+      &.is-active {
+        display: block;
+      }
+    }
+  }
+
+  .widget-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 32px;
+    margin-bottom: 10px;
+
+    h3 {
+      color: var(--dark-text);
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+  }
+
+  .inner-list {
+    padding: 10px 0;
+
+    .inner-list-item {
+      + .inner-list-item {
+        margin-top: 24px;
+      }
+    }
+  }
+}
+
+.is-dark {
+  .list-widget {
+    @include vuero-card--dark;
+
+    &.tabbed-widget {
+      .widget-head {
+        .tabbed-controls {
+          background: var(--dark-sidebar-light-3);
+
+          .tabbed-naver {
+            background: var(--primary);
+          }
+        }
+      }
+    }
+  }
+}
+</style>

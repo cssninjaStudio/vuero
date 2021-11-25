@@ -27,3 +27,12 @@ const props = withDefaults(
     </div>
   </div>
 </template>
+
+<style lang="scss">
+.list-widget {
+  .image-icon {
+    height: 40px;
+    width: 40px;
+  }
+}
+</style>

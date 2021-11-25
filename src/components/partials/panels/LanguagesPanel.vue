@@ -157,5 +157,135 @@ watch(locale, () => {
 
 <style lang="scss">
 @import '../../../scss/abstracts/mixins';
-@import '../../../scss/layout/right-panel';
+
+.right-panel-wrapper {
+  &.is-languages {
+    .right-panel-head {
+      padding: 0 30px;
+    }
+
+    .right-panel-body {
+      .languages-boxes {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px 0;
+
+        .language-box {
+          margin: 8px 8px 16px;
+          width: calc(33.3% - 16px);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .language-option {
+            position: relative;
+
+            input {
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 100%;
+              width: 100%;
+              opacity: 0%;
+              cursor: pointer;
+              z-index: 3;
+
+              &:checked {
+                + .language-option-inner {
+                  border-color: var(--primary);
+
+                  .indicator {
+                    display: flex;
+                  }
+                }
+              }
+            }
+
+            .language-option-inner {
+              position: relative;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 55px;
+              width: 55px;
+              border-radius: var(--radius-rounded);
+              border: 1.6px solid var(--fade-grey);
+              background: var(--white);
+              box-shadow: var(--light-box-shadow);
+              transition: color 0.3s, background-color 0.3s, border-color 0.3s,
+                height 0.3s, width 0.3s;
+
+              img {
+                display: block;
+                width: 40px;
+                min-width: 40px;
+                height: 40px;
+                border-radius: var(--radius-rounded);
+              }
+
+              .indicator {
+                position: absolute;
+                top: -4px;
+                right: -4px;
+                height: 26px;
+                width: 26px;
+                border-radius: var(--radius-rounded);
+                display: none;
+                justify-content: center;
+                align-items: center;
+                background: var(--primary);
+                border: 3px solid var(--white);
+
+                svg {
+                  height: 10px;
+                  width: 10px;
+                  stroke-width: 3px;
+                  color: var(--white);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .img-wrap > img {
+        display: block;
+        max-width: 280px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.is-dark {
+  .right-panel-wrapper {
+    &.is-languages {
+      .right-panel-body {
+        .languages-boxes {
+          .language-box {
+            .language-option {
+              input {
+                &:checked {
+                  + .language-option-inner {
+                    border-color: var(--primary);
+                  }
+                }
+              }
+
+              .language-option-inner {
+                border-color: var(--dark-sidebar-light-12);
+                background: var(--dark-sidebar);
+
+                .indicator {
+                  background: var(--primary);
+                  border-color: var(--dark-sidebar);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 </style>

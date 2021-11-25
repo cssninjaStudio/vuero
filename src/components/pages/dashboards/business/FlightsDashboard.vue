@@ -5,6 +5,8 @@ const date = ref({
   start: new Date(),
   end: new Date(),
 })
+
+const options = ref(['All Flights'])
 </script>
 
 <template>
@@ -358,32 +360,40 @@ const date = ref({
             <div class="field">
               <h5 class="dark-inverted">Stops</h5>
               <div class="control">
-                <label class="checkbox">
-                  <input type="radio" name="flight_stops" checked />
-                  <span></span>
-                  All Flights
-                </label>
+                <VCheckbox
+                  v-model="options"
+                  value="All Flights"
+                  label="All Flights"
+                  color="primary"
+                  circle
+                />
               </div>
               <div class="control">
-                <label class="checkbox">
-                  <input type="radio" name="flight_stops" />
-                  <span></span>
-                  No Stops
-                </label>
+                <VCheckbox
+                  v-model="options"
+                  value="No Stops"
+                  label="No Stops"
+                  color="primary"
+                  circle
+                />
               </div>
               <div class="control">
-                <label class="checkbox">
-                  <input type="radio" name="flight_stops" />
-                  <span></span>
-                  1 Stop
-                </label>
+                <VCheckbox
+                  v-model="options"
+                  value="1 Stop"
+                  label="1 Stop"
+                  color="primary"
+                  circle
+                />
               </div>
               <div class="control">
-                <label class="checkbox">
-                  <input type="radio" name="flight_stops" />
-                  <span></span>
-                  2 Stops
-                </label>
+                <VCheckbox
+                  v-model="options"
+                  value="2 Stops"
+                  label="2 Stops"
+                  color="primary"
+                  circle
+                />
               </div>
             </div>
           </div>
@@ -392,32 +402,40 @@ const date = ref({
             <div class="field">
               <h5 class="dark-inverted">Luggage</h5>
               <div class="control">
-                <label class="checkbox">
-                  <input type="radio" name="flight_luggage" checked />
-                  <span></span>
-                  All Options
-                </label>
+                <VCheckbox
+                  v-model="options"
+                  value="All Options"
+                  label="All Options"
+                  color="primary"
+                  circle
+                />
               </div>
               <div class="control">
-                <label class="checkbox">
-                  <input type="radio" name="flight_luggage" />
-                  <span></span>
-                  1 Cabin luggage
-                </label>
+                <VCheckbox
+                  v-model="options"
+                  value="1 Cabine Luggage"
+                  label="1 Cabine Luggage"
+                  color="primary"
+                  circle
+                />
               </div>
               <div class="control">
-                <label class="checkbox">
-                  <input type="radio" name="flight_luggage" />
-                  <span></span>
-                  2 Cabin luggage
-                </label>
+                <VCheckbox
+                  v-model="options"
+                  value="2 Cabin Luggage"
+                  label="2 Cabin Luggage"
+                  color="primary"
+                  circle
+                />
               </div>
               <div class="control">
-                <label class="checkbox">
-                  <input type="radio" name="flight_luggage" />
-                  <span></span>
-                  None
-                </label>
+                <VCheckbox
+                  v-model="options"
+                  value="None"
+                  label="None"
+                  color="primary"
+                  circle
+                />
               </div>
             </div>
           </div>

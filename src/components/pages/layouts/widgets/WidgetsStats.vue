@@ -268,8 +268,3 @@ import { memberList } from '/@src/data/widgets/table/memberList'
     </div>
   </div>
 </template>
-
-<style lang="scss">
-@import '../../../../scss/abstracts/mixins';
-@import '../../../../scss/pages/generic/widgets-stats';
-</style>

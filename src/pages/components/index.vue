@@ -262,5 +262,168 @@ useHead({
 </template>
 
 <style lang="scss">
-@import '../../scss/pages/dashboards/hub';
+.card-hub {
+  max-width: 840px;
+  margin: 0 auto;
+
+  .hub-header {
+    text-align: center;
+
+    > img {
+      display: block;
+      margin: 0 auto;
+      max-width: 300px;
+    }
+
+    .v-avatar {
+      margin: 0 auto 12px;
+    }
+
+    .anim-icon {
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 1.15rem;
+    }
+  }
+
+  .hub-body {
+    padding: 10px 0 20px;
+
+    .body-inner {
+      display: flex;
+      flex-wrap: wrap;
+
+      .hub-card {
+        background-color: var(--white);
+        border-radius: var(--radius-large);
+        border: 1px solid var(--fade-grey-dark-3);
+        width: calc(50% - 20px);
+        max-width: calc(50% - 20px);
+        margin: 10px;
+        transition: all 0.3s; // transition-all test
+
+        &:hover {
+          box-shadow: var(--light-box-shadow);
+
+          .hub-card-body {
+            img {
+              filter: grayscale(0);
+              opacity: 100%;
+            }
+          }
+        }
+
+        .hub-card-body {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          padding: 24px;
+
+          .inner-content {
+            .title {
+              font-size: 1.3rem;
+              margin-bottom: 8px;
+            }
+
+            p {
+              max-width: 220px;
+            }
+
+            .partner-name {
+              span {
+                font-weight: 500;
+                color: var(--dark-text);
+              }
+            }
+          }
+
+          img {
+            display: block;
+            width: 100%;
+            max-width: 100px;
+            height: 100px;
+            filter: grayscale(1);
+            opacity: 60%;
+            transition: all 0.3s; // transition-all test
+          }
+        }
+
+        .hub-card-foot {
+          border-top: 1px dashed var(--fade-grey-dark-4);
+          border-top-width: 1.6px;
+          padding: 18px 24px;
+
+          a {
+            color: var(--primary);
+            opacity: 60%;
+            font-weight: 500;
+            transition: opacity 0.3s;
+
+            &:hover {
+              opacity: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .hub-footer {
+    text-align: center;
+    padding-top: 20px;
+
+    p {
+      font-weight: 500;
+
+      a {
+        position: relative;
+        transition: color 0.3s;
+      }
+    }
+  }
+}
+
+.is-dark {
+  .card-hub {
+    .hub-header {
+      .v-avatar {
+        .badge {
+          border-color: var(--dark-sidebar-light-6) !important;
+        }
+      }
+    }
+
+    .hub-body {
+      .body-inner {
+        .hub-card {
+          background: var(--dark-sidebar-light-6);
+          border-color: var(--dark-sidebar-light-12);
+
+          .hub-card-foot {
+            border-color: var(--muted-grey-dark-25);
+
+            a {
+              color: var(--primary);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .card-hub {
+    .hub-body {
+      .body-inner {
+        .hub-card {
+          width: calc(100% - 20px);
+          max-width: calc(100% - 20px);
+        }
+      }
+    }
+  }
+}
 </style>

@@ -54,6 +54,41 @@ if (mobileHeightValue.match(CssUnitRe) === null) {
   height: v-bind('props.height');
 }
 
+.content-shape {
+  &.is-grow-1 {
+    flex-grow: 1;
+  }
+
+  &.is-grow-2 {
+    flex-grow: 2;
+  }
+
+  &.is-grow-3 {
+    flex-grow: 3;
+  }
+
+  &.is-grow-4 {
+    flex-grow: 4;
+  }
+
+  &.mw-30 {
+    max-width: 30%;
+  }
+
+  &.mw-60 {
+    max-width: 60%;
+  }
+
+  &.mw-80 {
+    max-width: 80%;
+  }
+
+  &.is-centered {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media (max-width: 767px) {
   .content-shape {
     width: v-bind(mobileWidthValue);

@@ -167,5 +167,60 @@ function getAvatarData(user: UserPopover): VAvatarProps {
 
 <style lang="scss">
 @import '../../../scss/abstracts/mixins';
-@import '../../../scss/layout/right-panel';
+
+.right-panel-wrapper {
+  &.is-search {
+    .right-panel {
+      width: 420px;
+
+      .right-panel-head {
+        padding: 0 30px;
+      }
+
+      .right-panel-body {
+        padding: 20px 30px;
+
+        .field {
+          position: relative;
+          margin-bottom: 30px;
+
+          .control {
+            .input {
+              min-height: 48px;
+              padding-left: 48px;
+            }
+
+            .form-icon {
+              height: 48px;
+              width: 48px;
+            }
+          }
+        }
+
+        .recent {
+          font-family: var(--font);
+          margin-bottom: 30px;
+          padding: 0 20px;
+
+          h4 {
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            color: var(--light-text);
+            margin-bottom: 12px;
+          }
+
+          .media-flex-center {
+            .flex-meta {
+              span {
+                &:first-child {
+                  font-weight: 500;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 </style>

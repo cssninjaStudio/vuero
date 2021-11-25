@@ -21,3 +21,50 @@ const props = withDefaults(
     </ul>
   </div>
 </template>
+
+<style lang="scss">
+@import '../../../../../scss/abstracts/mixins';
+
+.list-widget {
+  @include vuero-l-card;
+
+  &.is-straight {
+    @include vuero-s-card;
+  }
+
+  ul {
+    li {
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+
+      a {
+        font-family: var(--font);
+        display: flex;
+        justify-content: space-between;
+        color: var(--light-text);
+
+        &:hover {
+          color: var(--primary);
+        }
+      }
+    }
+  }
+}
+
+.is-dark {
+  .list-widget {
+    @include vuero-card--dark;
+
+    ul {
+      li {
+        a {
+          &:hover {
+            color: var(--primary);
+          }
+        }
+      }
+    }
+  }
+}
+</style>

@@ -9,3 +9,11 @@ const props = defineProps<{
     <slot></slot>
   </div>
 </template>
+
+<style lang="scss">
+.stat-widget {
+  &.spark-tile-widget {
+    padding: 0;
+  }
+}
+</style>

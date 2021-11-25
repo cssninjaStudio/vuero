@@ -325,8 +325,3 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
     </div>
   </div>
 </template>
-
-<style lang="scss">
-@import '../../../../scss/abstracts/mixins';
-@import '../../../../scss/pages/generic/widgets-lists';
-</style>

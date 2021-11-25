@@ -88,3 +88,71 @@ const props = withDefaults(
     </div>
   </div>
 </template>
+
+<style lang="scss">
+.landing-page-wrapper {
+  .component-box {
+    display: block;
+    text-align: center;
+    background: var(--white);
+    border: 1px solid var(--fade-grey-dark-3);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 0;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--light-box-shadow);
+      border-color: var(--primary);
+
+      .component {
+        img {
+          filter: grayscale(0);
+          opacity: 100%;
+        }
+      }
+
+      .component-title {
+        color: var(--dark-text);
+      }
+    }
+
+    .component {
+      img {
+        display: block;
+        filter: grayscale(1);
+        opacity: 60%;
+        max-height: 80px;
+        transition: all 0.3s; // transition-all test
+      }
+    }
+
+    .component-title {
+      font-family: var(--font-alt);
+      font-size: 1rem;
+      padding-top: 6px;
+      color: var(--light-text);
+      transition: color 0.3s;
+    }
+  }
+}
+
+.is-dark {
+  .landing-page-wrapper {
+    .component-box {
+      background: var(--landing-yyy-dark-6);
+      border-color: var(--landing-yyy-light-2);
+
+      &:hover {
+        border-color: var(--primary);
+
+        .component-title {
+          color: var(--primary);
+        }
+      }
+    }
+  }
+}
+</style>

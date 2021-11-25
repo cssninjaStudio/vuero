@@ -22,3 +22,51 @@ const props = withDefaults(
     </div>
   </div>
 </template>
+
+<style lang="scss">
+@import '../../../../scss/abstracts/mixins';
+
+.list-widget {
+  @include vuero-l-card;
+
+  padding: 30px;
+
+  &:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+
+  &.is-straight {
+    @include vuero-s-card;
+  }
+
+  .widget-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 32px;
+    margin-bottom: 10px;
+
+    h3 {
+      color: var(--dark-text);
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+  }
+
+  .inner-list {
+    padding: 10px 0;
+
+    .inner-list-item {
+      + .inner-list-item {
+        margin-top: 24px;
+      }
+    }
+  }
+}
+
+.is-dark {
+  .list-widget {
+    @include vuero-card--dark;
+  }
+}
+</style>
