@@ -8,11 +8,20 @@ export interface VFlexPaginationProps {
   totalItems: number
   currentPage?: number
   maxLinksDisplayed?: number
+  noRouter?: boolean
+  routerQueryKey?: string
 }
 
+export interface VFlexPaginationEmits {
+  (e: 'update:currentPage', currentPage: number): void
+}
+
+const emits = defineEmits<VFlexPaginationEmits>()
 const props = withDefaults(defineProps<VFlexPaginationProps>(), {
   currentPage: 1,
   maxLinksDisplayed: 4,
+  useRouter: true,
+  routerQueryKey: 'page',
 })
 
 const { t } = useI18n()
@@ -50,14 +59,20 @@ const pages = computed(() => {
   return _pages
 })
 
-const showFirstLink = computed(() => pages.value[0] > 1)
-const showLastLink = computed(() => pages.value[pages.value.length - 1] < lastPage.value)
+const showLastLink = computed(() => lastPage.value > 1)
 
 const paginatedLink = (page = 1) => {
-  const _page = Math.min(page, lastPage.value)
-  const query = {
+  if (props.noRouter) {
+    return {}
+  }
+
+  const _page = Math.max(1, Math.min(page, lastPage.value))
+  const query: any = {
     ...route.query,
-    page: _page <= 1 ? undefined : _page,
+  }
+
+  if (props.routerQueryKey) {
+    query[props.routerQueryKey] = _page <= 1 ? undefined : _page
   }
 
   return {
@@ -65,6 +80,17 @@ const paginatedLink = (page = 1) => {
     params: route.params,
     query,
   } as RouteLocationOptions
+}
+const handleLinkClick = (e: MouseEvent, page = 1) => {
+  const _page = Math.max(1, Math.min(page, lastPage.value))
+  emits('update:currentPage', _page)
+
+  if (props.noRouter) {
+    e.preventDefault()
+    e.stopPropagation()
+
+    return false
+  }
 }
 </script>
 
@@ -77,20 +103,21 @@ es-MX:
   goto-page-title: 'Ir a la página {page}'
 es:
   goto-page-title: 'Ir a la página {page}'
-fr:
+fr-FR:
   goto-page-title: 'Aller à la page {page}'
 zh-CN:
   goto-page-title: '转到第{page}页'
 </i18n>
 
 <template>
-  <nav
+  <VFlex
     role="navigation"
     class="flex-pagination pagination is-rounded"
     aria-label="pagination"
-    data-filter-hide
+    justify-content="space-between"
   >
     <ul class="pagination-list">
+      <slot name="before-pagination"></slot>
       <li>
         <RouterLink
           :to="paginatedLink(1)"
@@ -98,13 +125,14 @@ zh-CN:
           class="pagination-link"
           :aria-label="t('goto-page-title', { page: 1 })"
           :class="[currentPage === 1 && 'is-current']"
-          @keydown.space.prevent="(e) => e.target.click()"
+          @keydown.space.prevent="(e) => (e.target as HTMLAnchorElement).click()"
+          @click="(e) => handleLinkClick(e, 1)"
         >
           1
         </RouterLink>
       </li>
 
-      <li v-if="lastPage > 1 && (pages.length === 0 || pages[0] > 2)">
+      <li v-if="showLastLink && (pages.length === 0 || pages[0] > 2)">
         <span class="pagination-ellipsis">…</span>
       </li>
 
@@ -116,35 +144,40 @@ zh-CN:
           :aria-label="t('goto-page-title', { page: page })"
           :aria-current="currentPage === page ? 'page' : undefined"
           :class="[currentPage === page && 'is-current']"
-          @keydown.space.prevent="(e) => e.target.click()"
+          @keydown.space.prevent="(e) => (e.target as HTMLAnchorElement).click()"
+          @click="(e) => handleLinkClick(e, page)"
         >
           {{ page }}
         </RouterLink>
       </li>
 
-      <li v-if="lastPage > 1 && pages[pages.length - 1] < lastPage - 1">
+      <li v-if="showLastLink && pages[pages.length - 1] < lastPage - 1">
         <span class="pagination-ellipsis">…</span>
       </li>
 
-      <li v-if="lastPage > 1">
+      <li v-if="showLastLink">
         <RouterLink
           :to="paginatedLink(lastPage)"
           tabindex="0"
           class="pagination-link"
           :aria-label="t('goto-page-title', { page: lastPage })"
           :class="[currentPage === lastPage && 'is-current']"
-          @keydown.space.prevent="(e) => e.target.click()"
+          @keydown.space.prevent="(e) => (e.target as HTMLAnchorElement).click()"
+          @click="(e) => handleLinkClick(e, lastPage)"
         >
           {{ lastPage }}
         </RouterLink>
       </li>
+      <slot name="after-pagination"></slot>
     </ul>
 
+    <slot name="before-navigation"></slot>
     <RouterLink
       :to="paginatedLink(currentPage - 1)"
       tabindex="0"
       class="pagination-previous has-chevron"
-      @keydown.space.prevent="(e) => e.target.click()"
+      @keydown.space.prevent="(e) => (e.target as HTMLAnchorElement).click()"
+      @click="(e) => handleLinkClick(e, currentPage - 1)"
     >
       <i aria-hidden="true" class="iconify" data-icon="feather:chevron-left"></i>
     </RouterLink>
@@ -152,9 +185,11 @@ zh-CN:
       :to="paginatedLink(currentPage + 1)"
       tabindex="0"
       class="pagination-next has-chevron"
-      @keydown.space.prevent="(e) => e.target.click()"
+      @keydown.space.prevent="(e) => (e.target as HTMLAnchorElement).click()"
+      @click="(e) => handleLinkClick(e, currentPage + 1)"
     >
       <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right"></i>
     </RouterLink>
-  </nav>
+    <slot name="after-navigation"></slot>
+  </VFlex>
 </template>

@@ -10,10 +10,6 @@ import { useViewWrapper } from '/@src/stores/viewWrapper'
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-const rowClick = (row: any) => {
-  console.log(row)
-}
-
 const viewWrapper = useViewWrapper()
 viewWrapper.setPageTitle('VFlexTable')
 

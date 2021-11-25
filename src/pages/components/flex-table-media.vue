@@ -58,7 +58,7 @@ useHead({
             </template>
             <template #body>
               <div v-for="row in flexRowsAdvanced" :key="row.id" class="flex-table-item">
-                <div class="flex-table-cell is-media is-grow">
+                <VFlexTableCell :column="{ media: true, grow: true }">
                   <VAvatar size="medium" :picture="row.picture" :badge="row.badge" />
                   <div>
                     <span class="item-name">{{ row.name }}</span>
@@ -66,14 +66,14 @@ useHead({
                       <span>{{ row.position }}</span>
                     </span>
                   </div>
-                </div>
-                <div class="flex-table-cell">
+                </VFlexTableCell>
+                <VFlexTableCell>
                   <span class="light-text">{{ row.location }}</span>
-                </div>
-                <div class="flex-table-cell">
+                </VFlexTableCell>
+                <VFlexTableCell>
                   <span class="light-text">{{ row.industry }}</span>
-                </div>
-                <div class="flex-table-cell">
+                </VFlexTableCell>
+                <VFlexTableCell>
                   <span
                     class="tag is-rounded"
                     :class="[
@@ -84,18 +84,18 @@ useHead({
                     ]"
                     >{{ row.status }}</span
                   >
-                </div>
-                <div class="flex-table-cell">
+                </VFlexTableCell>
+                <VFlexTableCell>
                   <VAvatarStack
                     class="is-pushed-mobile"
                     size="small"
                     :avatars="row.contacts"
                     :limit="3"
                   />
-                </div>
-                <div class="flex-table-cell cell-end">
+                </VFlexTableCell>
+                <VFlexTableCell :column="{ align: 'end' }">
                   <FlexTableDropdown />
-                </div>
+                </VFlexTableCell>
               </div>
             </template>
           </VFlexTable>

@@ -18,6 +18,12 @@
   padding: 12px 0;
 
   .pagination-next,
+  .pagination-previous,
+  .pagination-list {
+    order: initial;
+  }
+
+  .pagination-next,
   .pagination-previous {
     background: var(--white);
     min-width: 85px;

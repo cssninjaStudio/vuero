@@ -76,39 +76,27 @@ const exampleColumns = {
     bold: true,
     // we can use custom render function for column heading
     renderHeader: () =>
-      h(
-        'span',
-        {},
-        h(VFlexTableSortColumn, {
-          label: 'Name',
-          id: 'username',
-        })
-      ),
+      h(VFlexTableSortColumn, {
+        label: 'Name',
+        id: 'username',
+      }),
   },
   position: {
     renderHeader: () =>
-      h(
-        'span',
-        {},
-        h(VFlexTableSortColumn, {
-          label: 'Position',
-          id: 'position',
-        })
-      ),
+      h(VFlexTableSortColumn, {
+        label: 'Position',
+        id: 'position',
+      }),
   },
   annualEarnings: {
     inverted: true,
     format: (value: any) => numberFormat.format(value),
     // we can use custom render function for column heading
     renderHeader: () =>
-      h(
-        'span',
-        {},
-        h(VFlexTableSortColumn, {
-          label: 'Revenue',
-          id: 'annual-earnings',
-        })
-      ),
+      h(VFlexTableSortColumn, {
+        label: 'Revenue',
+        id: 'annual-earnings',
+      }),
   },
   status: {
     label: 'Status',
@@ -136,14 +124,10 @@ const exampleColumns = {
       ),
     // we can use custom render function for column heading
     renderHeader: () =>
-      h(
-        'span',
-        {},
-        h(VFlexTableSortColumn, {
-          label: 'Status',
-          id: 'status',
-        })
-      ),
+      h(VFlexTableSortColumn, {
+        label: 'Status',
+        id: 'status',
+      }),
   },
   contacts: {
     renderHeader: () =>

@@ -39,7 +39,7 @@ const filters = ref('')
           <div class="flex-list-inner">
             <!--Table item placeload-->
             <div v-for="key in 10" :key="key" class="flex-table-item">
-              <div class="flex-table-cell is-media is-grow">
+              <VFlexTableCell :columns="{ media: true, grow: true }">
                 <VPlaceloadAvatar size="medium" />
 
                 <VPlaceloadText
@@ -48,26 +48,26 @@ const filters = ref('')
                   last-line-width="60%"
                   class="mx-2"
                 />
-              </div>
-              <div class="flex-table-cell">
+              </VFlexTableCell>
+              <VFlexTableCell>
                 <VPlaceload class="mx-1" />
-              </div>
-              <div class="flex-table-cell">
+              </VFlexTableCell>
+              <VFlexTableCell>
                 <VPlaceload class="mx-1" />
-              </div>
-              <div class="flex-table-cell">
+              </VFlexTableCell>
+              <VFlexTableCell>
                 <VPlaceload class="mx-1" />
-              </div>
-              <div class="flex-table-cell">
+              </VFlexTableCell>
+              <VFlexTableCell>
                 <VAvatarStack class="is-pushed-mobile">
                   <VPlaceloadAvatar size="small" class="mx-1" />
                   <VPlaceloadAvatar size="small" class="mx-1" />
                   <VPlaceloadAvatar size="small" class="mx-1" />
                 </VAvatarStack>
-              </div>
-              <div class="flex-table-cell cell-end">
+              </VFlexTableCell>
+              <VFlexTableCell :column="{ align: 'end' }">
                 <VPlaceload class="mx-1" />
-              </div>
+              </VFlexTableCell>
             </div>
           </div>
         </template>
