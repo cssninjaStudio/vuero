@@ -343,12 +343,17 @@ function onCallClick(row: any) {
               </template>
             </VFlexPagination>
 
-            <VFlexTable rounded clickable @row-click="onRowClick">
-              <!--
-                The wrapperState.loading will be update 
-                when the fetchData function is running 
-              -->
+            <VFlexTable
+              rounded
+              clickable
+              :no-header="!wrapperState.loading && wrapperState.data.length === 0"
+              @row-click="onRowClick"
+            >
               <template #body>
+                <!--
+                  The wrapperState.loading will be update 
+                  when the fetchData function is running 
+                -->
                 <div v-if="wrapperState.loading" class="flex-list-inner">
                   <div
                     v-for="key in wrapperState.limit"
@@ -375,6 +380,28 @@ function onCallClick(row: any) {
                       <VPlaceload width="45%" class="mx-1" />
                     </VFlexTableCell>
                   </div>
+                </div>
+
+                <!-- This is the empty state -->
+                <div v-else-if="wrapperState.data.length === 0" class="flex-list-inner">
+                  <VPlaceholderSection
+                    title="No matches"
+                    subtitle="There is no data that match your query."
+                    class="my-6"
+                  >
+                    <template #image>
+                      <img
+                        class="light-image"
+                        src="/@src/assets/illustrations/placeholders/search-4.svg"
+                        alt=""
+                      />
+                      <img
+                        class="dark-image"
+                        src="/@src/assets/illustrations/placeholders/search-4-dark.svg"
+                        alt=""
+                      />
+                    </template>
+                  </VPlaceholderSection>
                 </div>
               </template>
 
