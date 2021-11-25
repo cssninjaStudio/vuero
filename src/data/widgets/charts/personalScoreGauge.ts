@@ -1,4 +1,4 @@
-import { themeColors } from '/@src/utils/themeColors'
+import { themeColors } from '/@src/utils/theme-colors'
 import type { Chart } from 'billboard.js'
 import { gauge } from 'billboard.js'
 import { ref } from 'vue'

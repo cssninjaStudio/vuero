@@ -4,7 +4,7 @@ import mapboxgl from 'mapbox-gl'
 import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.min.js'
 import 'mapbox-gl/src/css/mapbox-gl.css'
 import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css'
-import { themeColors } from '/@src/utils/themeColors'
+import { themeColors } from '/@src/utils/theme-colors'
 import { useDarkmode } from '/@src/stores/darkmode'
 
 // You can set the VITE_MAPBOX_ACCESS_TOKEN inside .env file

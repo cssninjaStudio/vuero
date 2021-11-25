@@ -1,7 +1,7 @@
 import { Notyf, INotyfNotificationOptions, NotyfNotification } from 'notyf'
 import { createSharedComposable } from '@vueuse/core'
 
-import { themeColors } from '/@src/utils/themeColors'
+import { themeColors } from '/@src/utils/theme-colors'
 
 export const useNotyf = createSharedComposable(() => {
   const notyf = new Notyf({

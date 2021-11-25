@@ -1,4 +1,4 @@
-import { themeColors } from '/@src/utils/themeColors'
+import { themeColors } from '/@src/utils/theme-colors'
 import * as formatters from '/@src/utils/apex-formatters'
 
 export const spark1 = {

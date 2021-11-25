@@ -1,4 +1,4 @@
-import { themeColors } from '/@src/utils/themeColors'
+import { themeColors } from '/@src/utils/theme-colors'
 
 export const evolutionRadialOptions = {
   series: [54],

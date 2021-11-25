@@ -1,6 +1,6 @@
 import dayjs from 'dayjs'
 
-import { themeColors } from '/@src/utils/themeColors'
+import { themeColors } from '/@src/utils/theme-colors'
 import * as formatters from '/@src/utils/apex-formatters'
 import { dataSeries } from './data/dataSeries'
 import { series } from './data/series'

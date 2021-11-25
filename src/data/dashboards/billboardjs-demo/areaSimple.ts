@@ -1,5 +1,5 @@
 import type { ChartOptions } from 'billboard.js'
-import { themeColors } from '/@src/utils/themeColors'
+import { themeColors } from '/@src/utils/theme-colors'
 import { area } from 'billboard.js'
 
 export const options: ChartOptions = {
