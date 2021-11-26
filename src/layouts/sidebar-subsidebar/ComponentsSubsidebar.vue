@@ -92,14 +92,14 @@ const emit = defineEmits(['close'])
 
         <SidebarCollapsableLinks>
           <template #header>
-            Datatables
+            VFlexTable
             <VTag label="v2.2" color="primary" outlined curved />
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
           </template>
 
           <RouterLink :to="{ name: 'components-flex-table' }" class="is-submenu">
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-            VFlexTable
+            Basic usage
           </RouterLink>
           <RouterLink :to="{ name: 'components-flex-table-columns' }" class="is-submenu">
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>

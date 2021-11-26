@@ -49,7 +49,12 @@ useHead({
                   aria-label="Toggle dark mode"
                   @change="darkmode.onChange"
                 />
-                <label class="night-toggle--btn" for="night-toggle--daynight">
+                <label
+                  class="night-toggle--btn"
+                  for="night-toggle--daynight"
+                  tabindex="0"
+                  @keydown.space.prevent="(e) => (e.target as HTMLLabelElement).click()"
+                >
                   <span class="night-toggle--feature"></span>
                 </label>
               </div>

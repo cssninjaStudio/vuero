@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 
-import type { VAvatarProps, VAvatarColor } from '/@src/components/base/avatar/VAvatar.vue'
+import type { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
 import * as listData from '/@src/data/layouts/flex-list-v1'
 
 export interface UserData extends VAvatarProps {
@@ -16,6 +16,7 @@ export interface UserData extends VAvatarProps {
   contacts: VAvatarProps[]
 }
 
+const page = ref(42)
 const filters = ref('')
 
 const users = listData.users as UserData[]
@@ -148,7 +149,7 @@ const filteredData = computed(() => {
                     class="is-pushed-mobile"
                   />
                 </VFlexTableCell>
-                <VFlexTableCell :column="{ align: end }">
+                <VFlexTableCell :column="{ align: 'end' }">
                   <FlexTableDropdown />
                 </VFlexTableCell>
               </div>
@@ -159,10 +160,11 @@ const filteredData = computed(() => {
         <!--Table Pagination-->
         <VFlexPagination
           v-if="filteredData.length > 5"
+          v-model:current-page="page"
           :item-per-page="10"
           :total-items="873"
-          :current-page="42"
           :max-links-displayed="7"
+          no-router
         />
       </div>
     </div>

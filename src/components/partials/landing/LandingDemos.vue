@@ -195,7 +195,11 @@ debouncedWatch(
           :key="index"
           class="column is-4 has-text-centered"
         >
-          <figure class="vuero-demo-wrapper loaded" tabindex="0">
+          <figure
+            class="vuero-demo-wrapper loaded"
+            tabindex="0"
+            @keydown.space.prevent="(e) => ((e.target as HTMLElement).querySelector('a[href]') as HTMLAnchorElement)?.click()"
+          >
             <span v-if="item.new" class="new-tag">New</span>
             <img
               class="light-image-block-l"

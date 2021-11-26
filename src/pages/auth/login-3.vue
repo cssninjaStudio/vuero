@@ -54,7 +54,11 @@ useHead({
         </RouterLink>
       </div>
       <div class="right">
-        <label class="dark-mode ml-auto">
+        <label
+          class="dark-mode ml-auto"
+          tabindex="0"
+          @keydown.space.prevent="(e) => (e.target as HTMLLabelElement).click()"
+        >
           <input
             type="checkbox"
             :checked="!darkmode.isDark"

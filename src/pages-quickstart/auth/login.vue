@@ -74,7 +74,11 @@ useHead({
     <div class="column is-4">
       <div class="hero is-fullheight is-white">
         <div class="hero-heading">
-          <label class="dark-mode ml-auto">
+          <label
+            class="dark-mode ml-auto"
+            tabindex="0"
+            @keydown.space.prevent="(e) => (e.target as HTMLLabelElement).click()"
+          >
             <input
               type="checkbox"
               :checked="!darkmode.isDark"

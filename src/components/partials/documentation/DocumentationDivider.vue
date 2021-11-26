@@ -16,12 +16,16 @@ const props = withDefaults(defineProps<DocumentationDividerProps>(), {})
 
 <style lang="scss" scoped>
 .is-divider {
-  --white: var(--background-grey);
+  &:after {
+    background: var(--background-grey);
+  }
 }
 
 .is-dark {
   .is-divider {
-    --dark-sidebar-light-6: var(--dark-sidebar-light-10);
+    &:after {
+      background: var(--dark-sidebar-light-10);
+    }
   }
 }
 </style>

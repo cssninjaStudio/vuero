@@ -72,7 +72,11 @@ useHead({
           <AnimatedLogo width="38px" height="38px" />
         </RouterLink>
 
-        <label class="dark-mode ml-auto">
+        <label
+          class="dark-mode ml-auto"
+          tabindex="0"
+          @keydown.space.prevent="(e) => (e.target as HTMLLabelElement).click()"
+        >
           <input
             type="checkbox"
             :checked="!darkmode.isDark"
@@ -97,10 +101,12 @@ useHead({
             >
               <VMessage color="primary">
                 <div>
-                  <strong class="pr-1">email:</strong><span>john.doe@cssninja.io</span>
+                  <strong class="pr-1">email:</strong>
+                  <span>john.doe@cssninja.io</span>
                 </div>
                 <div>
-                  <strong class="pr-1">password:</strong><span>ada.lovelace</span>
+                  <strong class="pr-1">password:</strong>
+                  <span>ada.lovelace</span>
                 </div>
               </VMessage>
 

@@ -130,6 +130,10 @@ const props = withDefaults(defineProps<VMessageProps>(), {
       }
     }
 
+    span {
+      color: var(--white);
+    }
+
     &.is-primary {
       background: var(--primary);
       border-color: var(--primary);

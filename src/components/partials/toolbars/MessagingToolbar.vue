@@ -38,7 +38,13 @@ const localFlagSrc = computed(() => {
   <div class="toolbar ml-auto">
     <div class="toolbar-link">
       <label class="dark-mode ml-auto">
-        <input type="checkbox" :checked="!darkmode.isDark" @change="darkmode.onChange" />
+        <input
+          type="checkbox"
+          :checked="!darkmode.isDark"
+          tabindex="0"
+          @keydown.space.prevent="(e) => (e.target as HTMLLabelElement).click()"
+          @change="darkmode.onChange"
+        />
         <span></span>
       </label>
     </div>
