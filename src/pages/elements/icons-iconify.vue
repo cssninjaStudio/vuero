@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
-import { useWindowScroll } from '@vueuse/core'
+import { useWindowScroll, useClipboard } from '@vueuse/core'
 import { useHead } from '@vueuse/head'
 
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 import { iconifyFeather } from '/@src/data/icons/iconifyFeather'
 
+const { text, copy, copied } = useClipboard()
 const { y } = useWindowScroll()
 const filter = ref('')
 
@@ -22,9 +23,12 @@ const filteredIcons = computed(() => {
   })
 })
 
+function getSnippet(icon: any) {
+  return `<i class="iconify" data-icon="feather:${icon.name}" aria-hidden="true"></i>`
+}
+
 const viewWrapper = useViewWrapper()
 viewWrapper.setPageTitle('Iconify Icons')
-
 useHead({
   title: 'Iconify Icons - Elements - Vuero',
 })
@@ -61,7 +65,7 @@ useHead({
         <!--Iconify Icons-->
         <IconsIconifyDocumentation />
 
-        <div class="demo-card">
+        <DocumentationDemoCard>
           <div class="card-inner" :class="{ 'is-scrolling': isScrolling }">
             <VFlex justify-content="flex-end" class="demo-icon-search py-4 px-6">
               <VField>
@@ -80,14 +84,23 @@ useHead({
               <li
                 v-for="icon in filteredIcons"
                 :key="icon.name"
-                class="textFilter-target"
+                class="textFilter-target is-copy-trigger"
+                tabindex="0"
+                @keydown.space.prevent="copy(getSnippet(icon))"
+                @click="copy(getSnippet(icon))"
               >
                 <i aria-hidden="true" class="iconify" :data-icon="icon.dataIcon"></i>
                 <p class="textFilter-match">{{ icon.name }}</p>
+
+                <transition name="fade-fast">
+                  <span v-if="copied && text === getSnippet(icon)" class="is-copied">
+                    copied!
+                  </span>
+                </transition>
               </li>
             </ul>
           </div>
-        </div>
+        </DocumentationDemoCard>
       </div>
     </div>
   </div>

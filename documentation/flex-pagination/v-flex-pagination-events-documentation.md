@@ -7,6 +7,6 @@ slimscroll: true
 
 Here is the full events available for `<VFlexPagination />` component:
 
-| Event     | Callback                                              | Description                                                      |
-| --------- | ----------------------------------------------------- | ---------------------------------------------------------------- |
-| @rowClick | <span class="is-function">`(row: any) => void`</span> | Raised when a row is clicked<br />**Requires `clickable` props** |
+| Event               | Callback                                                   | Description                                                           |
+| ------------------- | ---------------------------------------------------------- | --------------------------------------------------------------------- |
+| @update:currentPage | <span class="is-function">`(value: number) => void`</span> | Raised when the page is updated<br />**Requires `currentPage` props** |

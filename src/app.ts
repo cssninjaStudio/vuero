@@ -15,7 +15,7 @@ import { createRouter } from './router'
 import { useUserSession } from '/@src/stores/userSession'
 import { initDarkmode } from '/@src/stores/darkmode'
 import { provideApi } from '/@src/composable/useApi'
-import useNotyf from '/@src/composable/useNotyf'
+import { useNotyf } from '/@src/composable/useNotyf'
 
 import VReloadPrompt from './components/base/modal/VReloadPrompt.vue'
 

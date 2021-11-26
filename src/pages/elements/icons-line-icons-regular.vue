@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
-import { useWindowScroll } from '@vueuse/core'
+import { useWindowScroll, useClipboard } from '@vueuse/core'
 import { useHead } from '@vueuse/head'
 
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 import { lineIconsRegular } from '/@src/data/icons/lineIconsRegular'
 
+const { text, copy, copied } = useClipboard()
 const { y } = useWindowScroll()
 const filter = ref('')
 
@@ -22,9 +23,12 @@ const filteredIcons = computed(() => {
   })
 })
 
+function getSnippet(icon: any) {
+  return ` <i class="lnir ${icon.className}" aria-hidden="true"></i>`
+}
+
 const viewWrapper = useViewWrapper()
 viewWrapper.setPageTitle('Line Icons Regular Icons')
-
 useHead({
   title: 'Line Icons Regular Icons - Elements - Vuero',
 })
@@ -61,7 +65,7 @@ useHead({
         <!--Line Icons-->
         <IconsLineRegularDocumentation />
 
-        <div class="demo-card mt-4">
+        <DocumentationDemoCard class="mt-4">
           <div class="card-inner" :class="{ 'is-scrolling': isScrolling }">
             <VFlex justify-content="flex-end" class="demo-icon-search py-4 px-6">
               <VField>
@@ -80,16 +84,25 @@ useHead({
               <li
                 v-for="icon in filteredIcons"
                 :key="icon.className"
-                class="textFilter-target"
+                class="textFilter-target is-copy-trigger"
+                tabindex="0"
+                @keydown.space.prevent="copy(getSnippet(icon))"
+                @click="copy(getSnippet(icon))"
               >
                 <i aria-hidden="true" class="lnir" :class="icon.className"></i>
                 <p class="textFilter-match">{{ icon.className }}</p>
                 <em>{{ icon.className }}</em>
                 <input type="text" maxlength="1" readonly :value="icon.char" />
+
+                <transition name="fade-fast">
+                  <span v-if="copied && text === getSnippet(icon)" class="is-copied">
+                    copied!
+                  </span>
+                </transition>
               </li>
             </ul>
           </div>
-        </div>
+        </DocumentationDemoCard>
       </div>
     </div>
   </div>

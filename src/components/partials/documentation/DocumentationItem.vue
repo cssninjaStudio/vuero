@@ -23,7 +23,7 @@ const hasSlimscroll = computed(() => props.frontmatter?.slimscroll ?? false)
 </script>
 
 <template>
-  <div class="demo-card">
+  <DocumentationDemoCard>
     <div class="demo-title" :class="[hasSlimscroll && 'has-slimscroll-x']">
       <div class="content">
         <slot></slot>
@@ -56,7 +56,7 @@ const hasSlimscroll = computed(() => props.frontmatter?.slimscroll ?? false)
         </div>
       </div>
     </div>
-  </div>
+  </DocumentationDemoCard>
 </template>
 
 <style lang="scss" scoped>

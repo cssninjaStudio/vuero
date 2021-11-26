@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
-import { useWindowScroll } from '@vueuse/core'
+import { useWindowScroll, useClipboard } from '@vueuse/core'
 import { useHead } from '@vueuse/head'
 
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 import { fontAwesome } from '/@src/data/icons/fontAwesome'
 
+const { text, copy, copied } = useClipboard()
 const { y } = useWindowScroll()
 const filter = ref('')
 
@@ -22,9 +23,12 @@ const filteredIcons = computed(() => {
   })
 })
 
+function getSnippet(icon: any) {
+  return `<i class="fas fa-${icon.name}" aria-hidden="true"></i>`
+}
+
 const viewWrapper = useViewWrapper()
 viewWrapper.setPageTitle('Font Awesome Icons')
-
 useHead({
   title: 'Font Awesome Icons - Elements - Vuero',
 })
@@ -61,7 +65,7 @@ useHead({
         <!--Font Awesome-->
         <IconsFaDocumentation />
 
-        <div class="demo-card">
+        <DocumentationDemoCard>
           <div class="card-inner" :class="{ 'is-scrolling': isScrolling }">
             <VFlex justify-content="flex-end" class="demo-icon-search py-4 px-6">
               <VField>
@@ -81,7 +85,10 @@ useHead({
                 v-for="icon in filteredIcons"
                 :id="icon.name"
                 :key="icon.name"
-                class="icon w-grid-2 textFilter-target w-grid-4-l w-grid-6-xl w-grid-8-2x pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr"
+                class="icon w-grid-2 textFilter-target w-grid-4-l w-grid-6-xl w-grid-8-2x pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr is-copy-trigger"
+                tabindex="0"
+                @keydown.space.prevent="copy(getSnippet(icon))"
+                @click="copy(getSnippet(icon))"
               >
                 <dl class="dt clpse w-100 ma0 pa0">
                   <dt class="dtc v-top tl w2">
@@ -96,10 +103,16 @@ useHead({
                     {{ icon.charCode }}
                   </dd>
                 </dl>
+
+                <transition name="fade-fast">
+                  <span v-if="copied && text === getSnippet(icon)" class="is-copied">
+                    copied!
+                  </span>
+                </transition>
               </li>
             </ul>
           </div>
-        </div>
+        </DocumentationDemoCard>
       </div>
     </div>
   </div>
