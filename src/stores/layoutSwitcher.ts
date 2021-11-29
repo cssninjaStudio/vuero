@@ -11,6 +11,8 @@ export type SidebarTheme =
   | 'labels'
   | 'labels-hover'
 
+export type SideblockTheme = 'default' | 'curved' | 'color' | 'color-curved'
+
 export const useLayoutSwitcher = defineStore('layoutSwitcher', () => {
   const route = useRoute()
   const sidebarTheme = ref<SidebarTheme>('default')

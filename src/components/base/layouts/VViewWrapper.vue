@@ -3,6 +3,7 @@ import { useViewWrapper } from '/@src/stores/viewWrapper'
 
 export interface VViewWrapperProps {
   topNav?: boolean
+  full?: boolean
 }
 
 const viewWrapper = useViewWrapper()
@@ -12,7 +13,12 @@ const props = defineProps<VViewWrapperProps>()
 <template>
   <div
     class="view-wrapper"
-    :class="[props.topNav && 'has-top-nav', viewWrapper.isPushed && 'is-pushed-full']"
+    :class="[
+      props.topNav && 'has-top-nav',
+      props.full && 'view-wrapper-full',
+      viewWrapper.isPushed && 'is-pushed-full',
+      viewWrapper.isPushedBlock && 'is-pushed-block',
+    ]"
   >
     <slot></slot>
   </div>
@@ -67,6 +73,21 @@ const props = defineProps<VViewWrapperProps>()
 
     .is-navbar-xl {
       margin-top: 130px;
+    }
+  }
+
+  &.view-wrapper-full {
+    width: 100%;
+    margin-left: 0;
+
+    &.is-pushed-block {
+      margin-left: 280px;
+      width: calc(100% - 280px);
+
+      .is-stuck {
+        margin-left: 280px;
+        width: calc(100% - 280px);
+      }
     }
   }
 }

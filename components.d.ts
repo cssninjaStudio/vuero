@@ -363,6 +363,8 @@ declare module 'vue' {
     Sidebar: typeof import('./src/components/navigation/desktop/Sidebar.vue')['default']
     SidebarCollapsableLinks: typeof import('./src/components/navigation/desktop/SidebarCollapsableLinks.vue')['default']
     SidebarLayout: typeof import('./src/layouts/SidebarLayout.vue')['default']
+    Sideblock: typeof import('./src/components/navigation/desktop/Sideblock.vue')['default']
+    SideblockLayout: typeof import('./src/layouts/SideblockLayout.vue')['default']
     SliderBaseDocumentation: typeof import('./documentation/plugins/slider/slider-base-documentation.md')['default']
     SliderColorDocumentation: typeof import('./documentation/plugins/slider/slider-color-documentation.md')['default']
     SliderCurvedDocumentation: typeof import('./documentation/plugins/slider/slider-curved-documentation.md')['default']
