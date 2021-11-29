@@ -222,3 +222,34 @@
     transition: none;
   }
 }
+
+/* ==========================================================================
+8. sidebar-collapse-transition
+========================================================================== */
+
+.sidebar-collapse-transition-enter-active,
+.sidebar-collapse-transition-leave-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sidebar-collapse-transition-enter-active {
+  transition: opacity 0.4s ease-out, transform 0.3s ease-out;
+}
+
+.sidebar-collapse-transition-leave-active {
+  transition: opacity 0.2s ease-in, transform 0.3s ease-in;
+}
+
+.sidebar-collapse-transition-enter-from,
+.sidebar-collapse-transition-leave-to {
+  transform: translateY(-40%);
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sidebar-collapse-transition-enter-active,
+  .sidebar-collapse-transition-leave-active {
+    transition: none;
+  }
+}

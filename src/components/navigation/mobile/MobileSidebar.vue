@@ -248,10 +248,6 @@ const props = defineProps<{
                 }
               }
             }
-
-            ul {
-              max-height: 300px;
-            }
           }
 
           &.is-flex {
@@ -299,11 +295,7 @@ const props = defineProps<{
 
           ul {
             padding: 0;
-            max-height: 0;
             overflow: hidden;
-            transition: max-height 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
-
-            // display: none;
 
             li {
               height: 32px;

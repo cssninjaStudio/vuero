@@ -50,7 +50,7 @@ export default defineComponent({
         collapseWrap,
         h(
           Transition,
-          { name: 'fade-slow' },
+          { name: 'sidebar-collapse-transition', mode: 'out-in' },
           {
             default() {
               return isOpen.value ? h('ul', {}, links) : undefined
