@@ -369,17 +369,7 @@ const columns = computed(() => {
     .flex-table-item {
       &:hover,
       &:focus-within {
-        background: var(--primary) !important;
-
-        .light-text {
-          color: var(--white);
-        }
-
-        .flex-table-cell {
-          &::before {
-            color: var(--white);
-          }
-        }
+        background: var(--widget-grey) !important;
       }
     }
   }
@@ -414,6 +404,15 @@ const columns = computed(() => {
           &:not(:first-of-type) {
             border-left: dashed 1px var(--dark-sidebar-light-12);
           }
+        }
+      }
+    }
+
+    &.is-table-clickable {
+      .flex-table-item {
+        &:hover,
+        &:focus-within {
+          background: var(--dark-sidebar-light-12) !important;
         }
       }
     }

@@ -172,11 +172,17 @@ const props = withDefaults(defineProps<VFlexTableCellProps>(), {
     }
 
     .v-avatar {
+      margin-left: 0 !important;
+
       .avatar.is-fake {
         span,
         .text {
           margin: 0;
         }
+      }
+
+      + div {
+        margin-left: 0.5rem !important;
       }
     }
 
@@ -197,6 +203,10 @@ const props = withDefaults(defineProps<VFlexTableCellProps>(), {
       &.is-mini {
         max-width: 40px;
       }
+    }
+
+    &::before {
+      display: none;
     }
   }
 
@@ -248,7 +258,7 @@ const props = withDefaults(defineProps<VFlexTableCellProps>(), {
     color: var(--light-text);
 
     .iconify {
-      opacity: 0;
+      opacity: 0%;
       transition: opacity 0.3s;
     }
 
@@ -257,7 +267,7 @@ const props = withDefaults(defineProps<VFlexTableCellProps>(), {
       color: var(--primary);
 
       .iconify {
-        opacity: 1;
+        opacity: 100%;
       }
     }
   }

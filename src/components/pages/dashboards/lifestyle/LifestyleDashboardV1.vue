@@ -42,8 +42,8 @@ const activeTab = ref<TabId>('overview')
       </div>
 
       <LifestyleOverviewTab v-if="activeTab === 'overview'" />
-      <LifestyleOverviewTab v-else-if="activeTab === 'content'" />
-      <LifestyleOverviewTab v-else-if="activeTab === 'brands'" />
+      <LifestyleContentTab v-else-if="activeTab === 'content'" />
+      <LifestyleBrandsTab v-else-if="activeTab === 'brands'" />
     </div>
   </div>
 </template>

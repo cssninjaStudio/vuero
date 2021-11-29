@@ -2,11 +2,13 @@
 import { reactive, ref, computed } from 'vue'
 import { useHead } from '@vueuse/head'
 import { useRoute, useRouter } from 'vue-router'
+import { useMediaQuery } from '@vueuse/core'
 
 import { useApi } from '/@src/composable/useApi'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 import type { VFlexTableWrapperDataResolver } from '/@src/components/base/table/VFlexTableWrapper.vue'
 import sleep from '/@src/utils/sleep'
+const isMobileScreen = useMediaQuery('(max-width: 767px)')
 
 const viewWrapper = useViewWrapper()
 viewWrapper.setPageTitle('Async data (advanced)')
@@ -303,6 +305,7 @@ function onCallClick(row: any) {
           <template #default="wrapperState">
             <!--Table Pagination-->
             <VFlexPagination
+              v-if="!isMobileScreen"
               v-model:current-page="wrapperState.page"
               :item-per-page="wrapperState.limit"
               :total-items="wrapperState.total"
@@ -423,7 +426,7 @@ function onCallClick(row: any) {
                   />
                   <div>
                     <span class="dark-text">{{ row.name }}</span>
-                    <VTextEllipsis width="280px" class="light-text">
+                    <VTextEllipsis width="280px" mobile-width="180px" class="light-text">
                       {{ row.bio }}
                     </VTextEllipsis>
                   </div>

@@ -1,5 +1,6 @@
 <script lang="ts">
 import type { PropType } from 'vue'
+
 import {
   InjectionKey,
   defineComponent,

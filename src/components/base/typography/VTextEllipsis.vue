@@ -37,7 +37,7 @@ if (mobileWidthValue.match(CssUnitRe) === null) {
 }
 
 @media (max-width: 767px) {
-  .content-shape {
+  .text-ellipsis {
     max-width: v-bind('mobileWidthValue');
   }
 }
