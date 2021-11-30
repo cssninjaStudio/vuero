@@ -413,7 +413,7 @@ useHead({
             <div class="mt-4">
               <VButtons align="centered">
                 <VButton
-                  href="https://discord.gg/v2WR6ZvkQ4"
+                  href="https://discord.cssninja.io/"
                   icon="fa-brands:discord"
                   dark-outlined
                   raised
