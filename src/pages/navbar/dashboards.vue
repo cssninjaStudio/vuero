@@ -13,15 +13,17 @@ const route = useRoute()
 </script>
 
 <template>
-  <component
-    :is="layoutSwitcher.navbarLayoutComponent"
-    :theme="layoutSwitcher.navbarLayoutTheme"
-  >
-    <!-- Content Wrapper -->
-    <RouterView v-slot="{ Component }">
-      <transition name="fade-fast" mode="out-in">
-        <component :is="Component" :key="route.fullPath" />
-      </transition>
-    </RouterView>
-  </component>
+  <div>
+    <component
+      :is="layoutSwitcher.dynamicLayoutComponent"
+      v-bind="layoutSwitcher.dynamicLayoutProps"
+    >
+      <!-- Content Wrapper -->
+      <RouterView v-slot="{ Component }">
+        <transition name="fade-fast" mode="out-in">
+          <component :is="Component" :key="route.fullPath" />
+        </transition>
+      </RouterView>
+    </component>
+  </div>
 </template>

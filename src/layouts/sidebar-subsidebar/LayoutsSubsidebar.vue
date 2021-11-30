@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { ref } from 'vue'
+
+const openSubsidebarLinks = ref('')
 const emit = defineEmits(['close'])
 </script>
 
@@ -19,7 +22,7 @@ const emit = defineEmits(['close'])
     </div>
     <div class="inner" data-simplebar>
       <ul>
-        <SidebarCollapsableLinks>
+        <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="lists">
           <template #header>
             Lists
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -40,9 +43,9 @@ const emit = defineEmits(['close'])
             <i aria-hidden="true" class="lnil lnil-list-alt"></i>
             <span>List View V4</span>
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="flex-lists">
           <template #header>
             Flex Lists
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -60,9 +63,9 @@ const emit = defineEmits(['close'])
             <i aria-hidden="true" class="lnil lnil-list-alt-1"></i>
             <span>Flex List V3</span>
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="datatable">
           <template #header>
             Datatable
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -96,9 +99,9 @@ const emit = defineEmits(['close'])
             <i aria-hidden="true" class="lnil lnil-layout-alt"></i>
             <span>Datatable V4</span>
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="form-layouts">
           <template #header>
             Form Layouts
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -124,9 +127,9 @@ const emit = defineEmits(['close'])
             <i aria-hidden="true" class="lnil lnil-passport"></i>
             <span>Form Layout V5</span>
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="placeload">
           <template #header>
             Placeload
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -152,11 +155,11 @@ const emit = defineEmits(['close'])
             <span>Placeload V4</span>
             <VTag label="v1.2" color="primary" outlined curved />
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
         <li class="divider"></li>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="card-grid">
           <template #header>
             Card Grid
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -178,9 +181,9 @@ const emit = defineEmits(['close'])
             <i aria-hidden="true" class="lnil lnil-grid-alt"></i>
             <span>Card Grid V4</span>
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="tile-grid">
           <template #header>
             Tile Grid
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -198,9 +201,9 @@ const emit = defineEmits(['close'])
             <i aria-hidden="true" class="lnil lnil-layout-alt-2"></i>
             <span>Tile Grid V3</span>
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="user-grid">
           <template #header>
             User Grid
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -222,11 +225,11 @@ const emit = defineEmits(['close'])
             <i aria-hidden="true" class="lnil lnil-users-alt"></i>
             <span>User Grid V4</span>
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
         <li class="divider"></li>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="personal">
           <template #header>
             Personal
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -253,9 +256,9 @@ const emit = defineEmits(['close'])
             <i aria-hidden="true" class="lnil lnil-cog"></i>
             <span>Settings</span>
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="pages">
           <template #header>
             Pages
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -293,9 +296,9 @@ const emit = defineEmits(['close'])
             <i aria-hidden="true" class="lnil lnil-search-alt"></i>
             <span>Empty Search</span>
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="subpages">
           <template #header>
             Subpages
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -313,9 +316,9 @@ const emit = defineEmits(['close'])
             <i aria-hidden="true" class="lnil lnil-thunderbolt"></i>
             <span>Action Page V2</span>
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="projects">
           <template #header>
             Projects
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -353,9 +356,11 @@ const emit = defineEmits(['close'])
             <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
             <span>Kanban Board</span>
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
+
         <li class="divider"></li>
-        <SidebarCollapsableLinks>
+
+        <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="utility">
           <template #header>
             Utility
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -386,8 +391,9 @@ const emit = defineEmits(['close'])
             <i aria-hidden="true" class="lnil lnil-checkmark-circle"></i>
             <span>App Status</span>
           </RouterLink>
-        </SidebarCollapsableLinks>
-        <SidebarCollapsableLinks>
+        </VCollapseLinks>
+
+        <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="onboarding">
           <template #header>
             Onboarding
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -435,8 +441,9 @@ const emit = defineEmits(['close'])
             <i aria-hidden="true" class="lnil lnil-train"></i>
             <span>Onboarding V5</span>
           </RouterLink>
-        </SidebarCollapsableLinks>
-        <SidebarCollapsableLinks>
+        </VCollapseLinks>
+
+        <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="error-pages">
           <template #header>
             Error Pages
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -446,8 +453,9 @@ const emit = defineEmits(['close'])
             <i aria-hidden="true" class="lnil lnil-cross-circle"></i>
             <span>Error 404 V1</span>
           </RouterLink>
-        </SidebarCollapsableLinks>
-        <SidebarCollapsableLinks>
+        </VCollapseLinks>
+
+        <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="subpages">
           <template #header>
             Subpages
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -468,7 +476,7 @@ const emit = defineEmits(['close'])
             <i aria-hidden="true" class="lnil lnil-cross-circle"></i>
             <span>Error 500 V1</span>
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
       </ul>
     </div>
   </div>

@@ -5,7 +5,7 @@ const layoutSwitcher = useLayoutSwitcher()
 
 <template>
   <SidebarLayout
-    :theme="layoutSwitcher.sidebarTheme"
+    :theme="layoutSwitcher.sidebarLayoutTheme"
     open-on-mounted
     default-sidebar="elements"
   >

@@ -6,7 +6,7 @@
       </div>
 
       <ul class="submenu">
-        <SidebarCollapsableLinks>
+        <VCollapseLinks>
           <template #header>
             Lists
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -28,9 +28,9 @@
             <i aria-hidden="true" class="lnil lnil-list-alt"></i>
             <span>List View V4</span>
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks>
           <template #header>
             Flex Lists
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -47,9 +47,9 @@
             <i aria-hidden="true" class="lnil lnil-list-alt-1"></i>
             <span>Flex List V3</span>
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks>
           <template #header>
             Datatable
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -83,9 +83,9 @@
             <i aria-hidden="true" class="lnil lnil-layout-alt"></i>
             <span>Datatable V4</span>
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks>
           <template #header>
             Form Layouts
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -110,9 +110,9 @@
             <i aria-hidden="true" class="lnil lnil-passport"></i>
             <span>Form Layout V5</span>
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks>
           <template #header>
             Placeload
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -133,11 +133,11 @@
             <i aria-hidden="true" class="lnil lnil-reload"></i>
             <span>Placeload V4</span>
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
         <li class="divider"></li>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks>
           <template #header>
             Card Grid
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -158,9 +158,9 @@
             <i aria-hidden="true" class="lnil lnil-grid-alt"></i>
             <span>Card Grid V4</span>
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks>
           <template #header>
             Tile Grid
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -178,9 +178,9 @@
             <i aria-hidden="true" class="lnil lnil-layout-alt-2"></i>
             <span>Tile Grid V3</span>
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks>
           <template #header>
             User Grid
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -202,10 +202,10 @@
             <i aria-hidden="true" class="lnil lnil-users-alt"></i>
             <span>User Grid V4</span>
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
         <li class="divider"></li>
-        <SidebarCollapsableLinks>
+        <VCollapseLinks>
           <template #header>
             Personal
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -233,16 +233,16 @@
             <i aria-hidden="true" class="lnil lnil-cog"></i>
             <span>Settings</span>
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks>
           <template #header>
             Pages
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
           </template>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks>
           <template #header>
             Pages
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -279,9 +279,9 @@
             <i aria-hidden="true" class="lnil lnil-search-alt"></i>
             <span>Empty Search</span>
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks>
           <template #header>
             Subpages
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -299,9 +299,9 @@
             <i aria-hidden="true" class="lnil lnil-thunderbolt"></i>
             <span>Action Page V2</span>
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks>
           <template #header>
             Projects
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -344,10 +344,10 @@
             <span>Kanban Board</span>
             <i aria-hidden="true" class="iconify is-auto" data-icon="feather:map-pin"></i>
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
         <li class="divider"></li>
-        <SidebarCollapsableLinks>
+        <VCollapseLinks>
           <template #header>
             Utility
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -378,8 +378,8 @@
             <i aria-hidden="true" class="lnil lnil-checkmark-circle"></i>
             <span>App Status</span>
           </RouterLink>
-        </SidebarCollapsableLinks>
-        <SidebarCollapsableLinks>
+        </VCollapseLinks>
+        <VCollapseLinks>
           <template #header>
             Onboarding
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -427,9 +427,9 @@
             <i aria-hidden="true" class="lnil lnil-train"></i>
             <span>Onboarding V5</span>
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks>
           <template #header>
             Error Pages
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -455,7 +455,7 @@
             <i aria-hidden="true" class="lnil lnil-cross-circle"></i>
             <span>Error 500 V1</span>
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
       </ul>
     </div>
   </div>

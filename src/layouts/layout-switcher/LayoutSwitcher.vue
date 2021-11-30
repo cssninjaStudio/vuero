@@ -6,11 +6,7 @@ const layoutSwitcher = useLayoutSwitcher()
 const isModalOpen = ref(false)
 
 const selectedSlug = computed(() => {
-  if (layoutSwitcher.isSidebarLayout) {
-    return 'sidebar'
-  }
-
-  switch (layoutSwitcher.navbarLayoutId) {
+  switch (layoutSwitcher.dynamicLayoutId) {
     case 'navbar-dropdown':
     case 'navbar-dropdown-colored':
       return 'dropdown'
@@ -18,8 +14,17 @@ const selectedSlug = computed(() => {
     case 'navbar-clean-center':
     case 'navbar-clean-fade':
       return 'search'
-    default:
+    case 'navbar-default':
+    case 'navbar-fade':
+    case 'navbar-colored':
       return 'navbar'
+    case 'sideblock-default':
+    case 'sideblock-color':
+    case 'sideblock-color-curved':
+    case 'sideblock-curved':
+      return 'sideblock'
+    default:
+      return 'sidebar'
   }
 })
 
@@ -31,6 +36,8 @@ const layoutComponent = (slug: string) => {
       return 'NavbarSearchLayout'
     case 'sidebar':
       return 'SidebarLayout'
+    case 'sideblock':
+      return 'SideblockLayout'
     case 'navbar':
     default:
       return 'NavbarLayout'
@@ -72,6 +79,7 @@ const layoutComponent = (slug: string) => {
               value: 'search',
             },
             { label: 'Sidebar', value: 'sidebar' },
+            { label: 'Sideblock', value: 'sideblock' },
           ]"
         >
           <template #tab="{ activeValue }">
@@ -87,19 +95,18 @@ const layoutComponent = (slug: string) => {
                         :to="layoutSwitcher.navbarLayoutLink"
                         class="layout-item"
                         :class="[
-                          layoutSwitcher.isNavbarLayout &&
-                            layoutSwitcher.navbarLayoutId === 'navbar-default' &&
+                          layoutSwitcher.dynamicLayoutId === 'navbar-default' &&
                             'is-active',
                         ]"
                         @keydown.space.prevent="
                           () => {
-                            layoutSwitcher.setNavbarLayoutId('navbar-default')
+                            layoutSwitcher.setDynamicLayoutId('navbar-default')
                             isModalOpen = false
                           }
                         "
                         @click.passive="
                           () => {
-                            layoutSwitcher.setNavbarLayoutId('navbar-default')
+                            layoutSwitcher.setDynamicLayoutId('navbar-default')
                             isModalOpen = false
                           }
                         "
@@ -130,19 +137,17 @@ const layoutComponent = (slug: string) => {
                         :to="layoutSwitcher.navbarLayoutLink"
                         class="layout-item"
                         :class="[
-                          layoutSwitcher.isNavbarLayout &&
-                            layoutSwitcher.navbarLayoutId === 'navbar-fade' &&
-                            'is-active',
+                          layoutSwitcher.dynamicLayoutId === 'navbar-fade' && 'is-active',
                         ]"
                         @keydown.space.prevent="
                           () => {
-                            layoutSwitcher.setNavbarLayoutId('navbar-fade')
+                            layoutSwitcher.setDynamicLayoutId('navbar-fade')
                             isModalOpen = false
                           }
                         "
                         @click.passive="
                           () => {
-                            layoutSwitcher.setNavbarLayoutId('navbar-fade')
+                            layoutSwitcher.setDynamicLayoutId('navbar-fade')
                             isModalOpen = false
                           }
                         "
@@ -173,19 +178,18 @@ const layoutComponent = (slug: string) => {
                         :to="layoutSwitcher.navbarLayoutLink"
                         class="layout-item"
                         :class="[
-                          layoutSwitcher.isNavbarLayout &&
-                            layoutSwitcher.navbarLayoutId === 'navbar-colored' &&
+                          layoutSwitcher.dynamicLayoutId === 'navbar-colored' &&
                             'is-active',
                         ]"
                         @keydown.space.prevent="
                           () => {
-                            layoutSwitcher.setNavbarLayoutId('navbar-colored')
+                            layoutSwitcher.setDynamicLayoutId('navbar-colored')
                             isModalOpen = false
                           }
                         "
                         @click.passive="
                           () => {
-                            layoutSwitcher.setNavbarLayoutId('navbar-colored')
+                            layoutSwitcher.setDynamicLayoutId('navbar-colored')
                             isModalOpen = false
                           }
                         "
@@ -221,19 +225,18 @@ const layoutComponent = (slug: string) => {
                         :to="layoutSwitcher.navbarLayoutLink"
                         class="layout-item"
                         :class="[
-                          layoutSwitcher.isNavbarLayout &&
-                            layoutSwitcher.navbarLayoutId === 'navbar-dropdown' &&
+                          layoutSwitcher.dynamicLayoutId === 'navbar-dropdown' &&
                             'is-active',
                         ]"
                         @keydown.space.prevent="
                           () => {
-                            layoutSwitcher.setNavbarLayoutId('navbar-dropdown')
+                            layoutSwitcher.setDynamicLayoutId('navbar-dropdown')
                             isModalOpen = false
                           }
                         "
                         @click.passive="
                           () => {
-                            layoutSwitcher.setNavbarLayoutId('navbar-dropdown')
+                            layoutSwitcher.setDynamicLayoutId('navbar-dropdown')
                             isModalOpen = false
                           }
                         "
@@ -264,19 +267,18 @@ const layoutComponent = (slug: string) => {
                         :to="layoutSwitcher.navbarLayoutLink"
                         class="layout-item"
                         :class="[
-                          layoutSwitcher.isNavbarLayout &&
-                            layoutSwitcher.navbarLayoutId === 'navbar-dropdown-colored' &&
+                          layoutSwitcher.dynamicLayoutId === 'navbar-dropdown-colored' &&
                             'is-active',
                         ]"
                         @keydown.space.prevent="
                           () => {
-                            layoutSwitcher.setNavbarLayoutId('navbar-dropdown-colored')
+                            layoutSwitcher.setDynamicLayoutId('navbar-dropdown-colored')
                             isModalOpen = false
                           }
                         "
                         @click.passive="
                           () => {
-                            layoutSwitcher.setNavbarLayoutId('navbar-dropdown-colored')
+                            layoutSwitcher.setDynamicLayoutId('navbar-dropdown-colored')
                             isModalOpen = false
                           }
                         "
@@ -312,19 +314,18 @@ const layoutComponent = (slug: string) => {
                         :to="layoutSwitcher.navbarLayoutLink"
                         class="layout-item"
                         :class="[
-                          layoutSwitcher.isNavbarLayout &&
-                            layoutSwitcher.navbarLayoutId === 'navbar-clean' &&
+                          layoutSwitcher.dynamicLayoutId === 'navbar-clean' &&
                             'is-active',
                         ]"
                         @keydown.space.prevent="
                           () => {
-                            layoutSwitcher.setNavbarLayoutId('navbar-clean')
+                            layoutSwitcher.setDynamicLayoutId('navbar-clean')
                             isModalOpen = false
                           }
                         "
                         @click.passive="
                           () => {
-                            layoutSwitcher.setNavbarLayoutId('navbar-clean')
+                            layoutSwitcher.setDynamicLayoutId('navbar-clean')
                             isModalOpen = false
                           }
                         "
@@ -355,19 +356,18 @@ const layoutComponent = (slug: string) => {
                         :to="layoutSwitcher.navbarLayoutLink"
                         class="layout-item"
                         :class="[
-                          layoutSwitcher.isNavbarLayout &&
-                            layoutSwitcher.navbarLayoutId === 'navbar-clean-center' &&
+                          layoutSwitcher.dynamicLayoutId === 'navbar-clean-center' &&
                             'is-active',
                         ]"
                         @keydown.space.prevent="
                           () => {
-                            layoutSwitcher.setNavbarLayoutId('navbar-clean-center')
+                            layoutSwitcher.setDynamicLayoutId('navbar-clean-center')
                             isModalOpen = false
                           }
                         "
                         @click.passive="
                           () => {
-                            layoutSwitcher.setNavbarLayoutId('navbar-clean-center')
+                            layoutSwitcher.setDynamicLayoutId('navbar-clean-center')
                             isModalOpen = false
                           }
                         "
@@ -398,19 +398,18 @@ const layoutComponent = (slug: string) => {
                         :to="layoutSwitcher.navbarLayoutLink"
                         class="layout-item"
                         :class="[
-                          layoutSwitcher.isNavbarLayout &&
-                            layoutSwitcher.navbarLayoutId === 'navbar-clean-fade' &&
+                          layoutSwitcher.dynamicLayoutId === 'navbar-clean-fade' &&
                             'is-active',
                         ]"
                         @keydown.space.prevent="
                           () => {
-                            layoutSwitcher.setNavbarLayoutId('navbar-clean-fade')
+                            layoutSwitcher.setDynamicLayoutId('navbar-clean-fade')
                             isModalOpen = false
                           }
                         "
                         @click.passive="
                           () => {
-                            layoutSwitcher.setNavbarLayoutId('navbar-clean-fade')
+                            layoutSwitcher.setDynamicLayoutId('navbar-clean-fade')
                             isModalOpen = false
                           }
                         "
@@ -446,19 +445,18 @@ const layoutComponent = (slug: string) => {
                         :to="layoutSwitcher.sidebarLayoutLink"
                         class="layout-item"
                         :class="[
-                          layoutSwitcher.isSidebarLayout &&
-                            layoutSwitcher.sidebarTheme === 'default' &&
+                          layoutSwitcher.dynamicLayoutId === 'sidebar-default' &&
                             'is-active',
                         ]"
                         @keydown.space.prevent="
                           () => {
-                            layoutSwitcher.setSidebarTheme('default')
+                            layoutSwitcher.setDynamicLayoutId('sidebar-default')
                             isModalOpen = false
                           }
                         "
                         @click.passive="
                           () => {
-                            layoutSwitcher.setSidebarTheme('default')
+                            layoutSwitcher.setDynamicLayoutId('sidebar-default')
                             isModalOpen = false
                           }
                         "
@@ -489,19 +487,18 @@ const layoutComponent = (slug: string) => {
                         :to="layoutSwitcher.sidebarLayoutLink"
                         class="layout-item"
                         :class="[
-                          layoutSwitcher.isSidebarLayout &&
-                            layoutSwitcher.sidebarTheme === 'color' &&
+                          layoutSwitcher.dynamicLayoutId === 'sidebar-color' &&
                             'is-active',
                         ]"
                         @keydown.space.prevent="
                           () => {
-                            layoutSwitcher.setSidebarTheme('color')
+                            layoutSwitcher.setDynamicLayoutId('sidebar-color')
                             isModalOpen = false
                           }
                         "
                         @click.passive="
                           () => {
-                            layoutSwitcher.setSidebarTheme('color')
+                            layoutSwitcher.setDynamicLayoutId('sidebar-color')
                             isModalOpen = false
                           }
                         "
@@ -532,19 +529,18 @@ const layoutComponent = (slug: string) => {
                         :to="layoutSwitcher.sidebarLayoutLink"
                         class="layout-item"
                         :class="[
-                          layoutSwitcher.isSidebarLayout &&
-                            layoutSwitcher.sidebarTheme === 'curved' &&
+                          layoutSwitcher.dynamicLayoutId === 'sidebar-curved' &&
                             'is-active',
                         ]"
                         @keydown.space.prevent="
                           () => {
-                            layoutSwitcher.setSidebarTheme('curved')
+                            layoutSwitcher.setDynamicLayoutId('sidebar-curved')
                             isModalOpen = false
                           }
                         "
                         @click.passive="
                           () => {
-                            layoutSwitcher.setSidebarTheme('curved')
+                            layoutSwitcher.setDynamicLayoutId('sidebar-curved')
                             isModalOpen = false
                           }
                         "
@@ -575,19 +571,18 @@ const layoutComponent = (slug: string) => {
                         :to="layoutSwitcher.sidebarLayoutLink"
                         class="layout-item"
                         :class="[
-                          layoutSwitcher.isSidebarLayout &&
-                            layoutSwitcher.sidebarTheme === 'color-curved' &&
+                          layoutSwitcher.dynamicLayoutId === 'sidebar-color-curved' &&
                             'is-active',
                         ]"
                         @keydown.space.prevent="
                           () => {
-                            layoutSwitcher.setSidebarTheme('color-curved')
+                            layoutSwitcher.setDynamicLayoutId('sidebar-color-curved')
                             isModalOpen = false
                           }
                         "
                         @click.passive="
                           () => {
-                            layoutSwitcher.setSidebarTheme('color-curved')
+                            layoutSwitcher.setDynamicLayoutId('sidebar-color-curved')
                             isModalOpen = false
                           }
                         "
@@ -618,19 +613,18 @@ const layoutComponent = (slug: string) => {
                         :to="layoutSwitcher.sidebarLayoutLink"
                         class="layout-item"
                         :class="[
-                          layoutSwitcher.isSidebarLayout &&
-                            layoutSwitcher.sidebarTheme === 'labels' &&
+                          layoutSwitcher.dynamicLayoutId === 'sidebar-labels' &&
                             'is-active',
                         ]"
                         @keydown.space.prevent="
                           () => {
-                            layoutSwitcher.setSidebarTheme('labels')
+                            layoutSwitcher.setDynamicLayoutId('sidebar-labels')
                             isModalOpen = false
                           }
                         "
                         @click.passive="
                           () => {
-                            layoutSwitcher.setSidebarTheme('labels')
+                            layoutSwitcher.setDynamicLayoutId('sidebar-labels')
                             isModalOpen = false
                           }
                         "
@@ -661,19 +655,18 @@ const layoutComponent = (slug: string) => {
                         :to="layoutSwitcher.sidebarLayoutLink"
                         class="layout-item"
                         :class="[
-                          layoutSwitcher.isSidebarLayout &&
-                            layoutSwitcher.sidebarTheme === 'labels-hover' &&
+                          layoutSwitcher.dynamicLayoutId === 'sidebar-labels-hover' &&
                             'is-active',
                         ]"
                         @keydown.space.prevent="
                           () => {
-                            layoutSwitcher.setSidebarTheme('labels-hover')
+                            layoutSwitcher.setDynamicLayoutId('sidebar-labels-hover')
                             isModalOpen = false
                           }
                         "
                         @click.passive="
                           () => {
-                            layoutSwitcher.setSidebarTheme('labels-hover')
+                            layoutSwitcher.setDynamicLayoutId('sidebar-labels-hover')
                             isModalOpen = false
                           }
                         "
@@ -704,19 +697,18 @@ const layoutComponent = (slug: string) => {
                         :to="layoutSwitcher.sidebarLayoutLink"
                         class="layout-item"
                         :class="[
-                          layoutSwitcher.isSidebarLayout &&
-                            layoutSwitcher.sidebarTheme === 'float' &&
+                          layoutSwitcher.dynamicLayoutId === 'sidebar-float' &&
                             'is-active',
                         ]"
                         @keydown.space.prevent="
                           () => {
-                            layoutSwitcher.setSidebarTheme('float')
+                            layoutSwitcher.setDynamicLayoutId('sidebar-float')
                             isModalOpen = false
                           }
                         "
                         @click.passive="
                           () => {
-                            layoutSwitcher.setSidebarTheme('float')
+                            layoutSwitcher.setDynamicLayoutId('sidebar-float')
                             isModalOpen = false
                           }
                         "
@@ -733,6 +725,183 @@ const layoutComponent = (slug: string) => {
                         />
                         <h3>Floating Sidebar</h3>
                         <p>Floating rounded variation</p>
+                        <div class="indicator">
+                          <i
+                            aria-hidden="true"
+                            class="iconify"
+                            data-icon="feather:check"
+                          ></i>
+                        </div>
+                      </RouterLink>
+                    </div>
+                  </div>
+                  <div
+                    v-else-if="activeValue === 'sideblock'"
+                    class="columns is-multiline is-half-mobile-p"
+                  >
+                    <div class="column is-6">
+                      <RouterLink
+                        :to="layoutSwitcher.sidebarLayoutLink"
+                        class="layout-item"
+                        :class="[
+                          layoutSwitcher.isSidebarLayout &&
+                            layoutSwitcher.dynamicLayoutId === 'sideblock-default' &&
+                            'is-active',
+                        ]"
+                        @keydown.space.prevent="
+                          () => {
+                            layoutSwitcher.setDynamicLayoutId('sideblock-default')
+                            isModalOpen = false
+                          }
+                        "
+                        @click.passive="
+                          () => {
+                            layoutSwitcher.setDynamicLayoutId('sideblock-default')
+                            isModalOpen = false
+                          }
+                        "
+                      >
+                        <img
+                          class="light-image-block"
+                          src="/images/icons/layouts/layout-1.svg"
+                          alt=""
+                        />
+                        <img
+                          class="dark-image-block"
+                          src="/images/icons/layouts/layout-1-dark.svg"
+                          alt=""
+                        />
+                        <h3>Default Sideblock</h3>
+                        <p>The good old default sideblock</p>
+                        <div class="indicator">
+                          <i
+                            aria-hidden="true"
+                            class="iconify"
+                            data-icon="feather:check"
+                          ></i>
+                        </div>
+                      </RouterLink>
+                    </div>
+                    <div class="column is-6">
+                      <RouterLink
+                        :to="layoutSwitcher.sidebarLayoutLink"
+                        class="layout-item"
+                        :class="[
+                          layoutSwitcher.isSidebarLayout &&
+                            layoutSwitcher.dynamicLayoutId === 'sideblock-color' &&
+                            'is-active',
+                        ]"
+                        @keydown.space.prevent="
+                          () => {
+                            layoutSwitcher.setDynamicLayoutId('sideblock-color')
+                            isModalOpen = false
+                          }
+                        "
+                        @click.passive="
+                          () => {
+                            layoutSwitcher.setDynamicLayoutId('sideblock-color')
+                            isModalOpen = false
+                          }
+                        "
+                      >
+                        <img
+                          class="light-image-block"
+                          src="/images/icons/layouts/layout-2.svg"
+                          alt=""
+                        />
+                        <img
+                          class="dark-image-block"
+                          src="/images/icons/layouts/layout-2-dark.svg"
+                          alt=""
+                        />
+                        <h3>Colored Sideblock</h3>
+                        <p>Colored variation of sideblock</p>
+                        <div class="indicator">
+                          <i
+                            aria-hidden="true"
+                            class="iconify"
+                            data-icon="feather:check"
+                          ></i>
+                        </div>
+                      </RouterLink>
+                    </div>
+                    <div class="column is-6">
+                      <RouterLink
+                        :to="layoutSwitcher.sidebarLayoutLink"
+                        class="layout-item"
+                        :class="[
+                          layoutSwitcher.isSidebarLayout &&
+                            layoutSwitcher.dynamicLayoutId === 'sideblock-curved' &&
+                            'is-active',
+                        ]"
+                        @keydown.space.prevent="
+                          () => {
+                            layoutSwitcher.setDynamicLayoutId('sideblock-curved')
+                            isModalOpen = false
+                          }
+                        "
+                        @click.passive="
+                          () => {
+                            layoutSwitcher.setDynamicLayoutId('sideblock-curved')
+                            isModalOpen = false
+                          }
+                        "
+                      >
+                        <img
+                          class="light-image-block"
+                          src="/images/icons/layouts/layout-3.svg"
+                          alt=""
+                        />
+                        <img
+                          class="dark-image-block"
+                          src="/images/icons/layouts/layout-3-dark.svg"
+                          alt=""
+                        />
+                        <h3>Curved Sideblock</h3>
+                        <p>Sideblock with curved edges</p>
+                        <div class="indicator">
+                          <i
+                            aria-hidden="true"
+                            class="iconify"
+                            data-icon="feather:check"
+                          ></i>
+                        </div>
+                      </RouterLink>
+                    </div>
+                    <div class="column is-6">
+                      <RouterLink
+                        :to="layoutSwitcher.sidebarLayoutLink"
+                        class="layout-item"
+                        :class="[
+                          layoutSwitcher.isSidebarLayout &&
+                            layoutSwitcher.dynamicLayoutId === 'sideblock-color-curved' &&
+                            'is-active',
+                        ]"
+                        @keydown.space.prevent="
+                          () => {
+                            layoutSwitcher.setDynamicLayoutId('sideblock-color-curved')
+                            isModalOpen = false
+                          }
+                        "
+                        @click.passive="
+                          () => {
+                            layoutSwitcher.setDynamicLayoutId('sideblock-color-curved')
+                            isModalOpen = false
+                          }
+                        "
+                      >
+                        <img
+                          class="light-image-block"
+                          src="/images/icons/layouts/layout-4.svg"
+                          alt=""
+                        />
+                        <img
+                          class="dark-image-block"
+                          src="/images/icons/layouts/layout-4-dark.svg"
+                          alt=""
+                        />
+                        <h3>Curved Colored</h3>
+                        <p>Curved edges with color</p>
                         <div class="indicator">
                           <i
                             aria-hidden="true"

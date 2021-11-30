@@ -15,8 +15,8 @@ useHead({
 
 <template>
   <component
-    :is="layoutSwitcher.navbarLayoutComponent"
-    :theme="layoutSwitcher.navbarLayoutTheme"
+    :is="layoutSwitcher.dynamicLayoutComponent"
+    v-bind="layoutSwitcher.dynamicLayoutProps"
     nowrap
   >
     <MapsDashboard />

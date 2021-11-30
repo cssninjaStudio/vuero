@@ -9,8 +9,8 @@ const route = useRoute()
 
 <template>
   <component
-    :is="layoutSwitcher.navbarLayoutComponent"
-    :theme="layoutSwitcher.navbarLayoutTheme"
+    :is="layoutSwitcher.dynamicLayoutComponent"
+    v-bind="layoutSwitcher.dynamicLayoutProps"
   >
     <!-- Content Wrapper -->
     <RouterView v-slot="{ Component }">

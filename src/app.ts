@@ -4,6 +4,7 @@ import {
   VNode,
   resolveDynamicComponent,
   Transition,
+  Suspense,
   App,
 } from 'vue'
 import { RouterView } from 'vue-router'
@@ -38,7 +39,7 @@ export async function createApp({ enhanceApp }: VueroAppOptions) {
        *
        * @see /@src/composable/useApi
        */
-      provideApi()
+      const api = provideApi()
 
       /**
        * Initialize the darkmode watcher
@@ -55,6 +56,7 @@ export async function createApp({ enhanceApp }: VueroAppOptions) {
       // if (userSession.isLoggedIn) {
       //   try {
       //     // do api request call to retreive its profile
+      //     // note that usage of await require to use Suspense component
       //     const user = await api.get('/users/me')
       //     userSession.user = user
       //   } catch (err) {
@@ -94,12 +96,40 @@ export async function createApp({ enhanceApp }: VueroAppOptions) {
           ]
         }
 
-        return [
-          h(RouterView, null, {
-            default: defaultSlot,
-          }),
-          h(VReloadPrompt, { appName: 'Vuero' }),
-        ]
+        /**
+         * this is the Suspense component needed to use async in setup context
+         * @see https://v3.vuejs.org/guide/migration/suspense.html
+         *
+         * @example
+         * ```ts
+         *   return h(
+         *     Suspense,
+         *     null,
+         *     h('div', null, [
+         *       h(RouterView, null, {
+         *         default: defaultSlot,
+         *       }),
+         *       h(VReloadPrompt, { appName: 'Vuero' }),
+         *     ])
+         *   )
+         * ```
+         */
+        return h(
+          Suspense,
+          null,
+          h('div', null, [
+            h(RouterView, null, {
+              default: defaultSlot,
+            }),
+            h(VReloadPrompt, { appName: 'Vuero' }),
+          ])
+        )
+        // return [
+        //   h(RouterView, null, {
+        //     default: defaultSlot,
+        //   }),
+        //   h(VReloadPrompt, { appName: 'Vuero' }),
+        // ]
       }
     },
   })

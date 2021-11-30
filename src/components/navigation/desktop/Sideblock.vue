@@ -135,7 +135,8 @@ const themeClasses = computed(() => {
       border-left: 2px solid transparent;
       cursor: pointer;
 
-      &.is-active {
+      &.is-active,
+      &.router-link-exact-active {
         a {
           font-weight: 500;
           color: var(--primary);
@@ -251,9 +252,6 @@ const themeClasses = computed(() => {
         }
 
         ul {
-          padding: 0;
-          display: none;
-
           li {
             height: 32px;
             font-family: var(--font);
@@ -276,7 +274,8 @@ const themeClasses = computed(() => {
               padding: 0 2rem 0 3.5rem;
               font-size: 0.9rem;
 
-              &.is-active {
+              &.is-active,
+              &.router-link-exact-active {
                 font-weight: 500;
                 color: var(--primary);
               }

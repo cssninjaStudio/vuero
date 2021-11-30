@@ -12,8 +12,9 @@ const route = useRoute()
 </script>
 
 <template>
-  <SidebarLayout
-    :theme="layoutSwitcher.sidebarTheme"
+  <component
+    :is="layoutSwitcher.dynamicLayoutComponent"
+    v-bind="layoutSwitcher.dynamicLayoutProps"
     close-on-change
     default-sidebar="dashboard"
   >
@@ -23,5 +24,5 @@ const route = useRoute()
         <component :is="Component" :key="route.fullPath" />
       </transition>
     </RouterView>
-  </SidebarLayout>
+  </component>
 </template>

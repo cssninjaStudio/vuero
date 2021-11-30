@@ -70,7 +70,7 @@
           </RouterLink>
         </li>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks>
           <template #header>
             VFlexTable
             <VTag label="v2.2" color="primary" outlined curved />
@@ -104,9 +104,9 @@
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             Async data
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks>
           <template #header>
             Accordions
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -124,9 +124,9 @@
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             VAccordionImage
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks>
           <template #header>
             Cards
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -154,9 +154,9 @@
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             VCardSocial
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks>
           <template #header>
             Placeholders
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -170,11 +170,11 @@
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             VPlaceholderSection
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
         <li class="divider"></li>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks>
           <template #header>
             Plugins
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -184,9 +184,9 @@
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             Notyf
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks>
           <template #header>
             Placeholders
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -221,7 +221,7 @@
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             VSimpleDatatables
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
       </ul>
     </div>
   </div>

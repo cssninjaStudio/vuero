@@ -90,7 +90,7 @@ const emit = defineEmits(['close'])
           </RouterLink>
         </li>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks>
           <template #header>
             VFlexTable
             <VTag label="v2.2" color="primary" outlined curved />
@@ -124,9 +124,9 @@ const emit = defineEmits(['close'])
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             Async data (advanced)
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks>
           <template #header>
             Accordions
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -144,9 +144,9 @@ const emit = defineEmits(['close'])
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             VAccordionImage
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks>
           <template #header>
             Cards
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -175,9 +175,9 @@ const emit = defineEmits(['close'])
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             VCardSocial
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks>
           <template #header>
             Placeholders
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -190,11 +190,11 @@ const emit = defineEmits(['close'])
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             VPlaceholderSection
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
         <li class="divider"></li>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks>
           <template #header>
             Plugins
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -232,7 +232,7 @@ const emit = defineEmits(['close'])
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             VSimpleDatatables
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
       </ul>
     </div>
   </div>

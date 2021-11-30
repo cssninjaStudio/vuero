@@ -23,6 +23,7 @@ const props = withDefaults(
 const viewWrapper = useViewWrapper()
 const panels = usePanels()
 const route = useRoute()
+const openSideblockLinks = ref('')
 const isMobileSideblockOpen = ref(false)
 const isDesktopSideblockOpen = ref(props.openOnMounted)
 const activeMobileSubsidebar = ref(props.defaultSideblock)
@@ -174,117 +175,111 @@ watch(
         </template>
         <template #links>
           <li>
-            <a class="single-link" href="/admin-dashboards-personal-1.html">
+            <RouterLink :to="{ name: 'sidebar-dashboards' }" class="single-link">
               <span class="icon">
-                <i data-feather="grid"></i>
+                <i class="iconify" data-icon="feather:grid"></i>
               </span>
               Dashboard
-            </a>
+            </RouterLink>
           </li>
           <li>
-            <a class="single-link" href="/admin-dashboards-personal-1.html">
+            <RouterLink
+              :to="{ name: 'sidebar-dashboards-personal-2' }"
+              class="single-link"
+            >
               <span class="icon">
-                <i data-feather="briefcase"></i>
+                <i class="iconify" data-icon="feather:briefcase"></i>
               </span>
               Projects
-            </a>
+            </RouterLink>
           </li>
           <li>
-            <a class="single-link" href="/admin-dashboards-personal-1.html">
+            <RouterLink
+              :to="{ name: 'sidebar-dashboards-human-ressources' }"
+              class="single-link"
+            >
               <span class="icon">
-                <i data-feather="message-circle"></i>
+                <i class="iconify" data-icon="feather:message-circle"></i>
               </span>
               Messages
               <span class="badge">3</span>
-            </a>
+            </RouterLink>
           </li>
           <li>
-            <a class="single-link" href="/admin-dashboards-personal-1.html">
+            <RouterLink
+              :to="{ name: 'sidebar-dashboards-personal-3' }"
+              class="single-link"
+            >
               <span class="icon">
-                <i data-feather="book"></i>
+                <i class="iconify" data-icon="feather:book"></i>
               </span>
               Collections
-            </a>
+            </RouterLink>
           </li>
           <li>
-            <a class="single-link" href="/admin-dashboards-personal-1.html">
+            <RouterLink
+              :to="{ name: 'sidebar-layouts-profile-view' }"
+              class="single-link"
+            >
               <span class="icon">
-                <i data-feather="users"></i>
+                <i class="iconify" data-icon="feather:users"></i>
               </span>
               Users
-            </a>
+            </RouterLink>
           </li>
-          <li class="has-children">
-            <div class="collapse-wrap">
-              <a href="javascript:void(0);" class="parent-link">
-                <div class="icon">
-                  <i data-feather="briefcase"></i>
-                </div>
-                Reports
-                <i data-feather="chevron-right"></i
-              ></a>
-            </div>
-            <ul>
-              <li>
-                <a class="is-submenu" href="/admin-dashboards-personal-1.html">
-                  <i class="lnil lnil-analytics-alt-1"></i>
-                  <span>Financial report</span>
-                </a>
-              </li>
-              <li>
-                <a class="is-submenu" href="/admin-dashboards-personal-2.html">
-                  <i class="lnil lnil-pie-chart"></i>
-                  <span>Social report</span>
-                </a>
-              </li>
-              <li>
-                <a class="is-submenu" href="/admin-dashboards-personal-3.html">
-                  <i class="lnil lnil-stats-up"></i>
-                  <span>Growth report</span>
-                </a>
-              </li>
-            </ul>
-          </li>
+
+          <VCollapseLinks v-model:open="openSideblockLinks" collapse-id="reports">
+            <template #header>
+              <div class="icon">
+                <i class="iconify" data-icon="feather:briefcase"></i>
+              </div>
+              Reports
+              <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right"></i>
+            </template>
+            <RouterLink :to="{ name: 'sidebar-dashboards-analytics' }" class="is-submenu">
+              <i class="lnil lnil-analytics-alt-1"></i>
+              <span>Financial report</span>
+            </RouterLink>
+            <RouterLink :to="{ name: 'sidebar-dashboards-analytics' }" class="is-submenu">
+              <i class="lnil lnil-pie-chart"></i>
+              <span>Social report</span>
+            </RouterLink>
+            <RouterLink :to="{ name: 'sidebar-layouts-list-view-3' }" class="is-submenu">
+              <i class="lnil lnil-stats-up"></i>
+              <span>Growth report</span>
+            </RouterLink>
+          </VCollapseLinks>
           <li>
-            <a class="single-link" href="/wizard-v1.html">
+            <RouterLink :to="{ name: 'inbox' }" class="single-link">
               <span class="icon">
-                <i data-feather="mail"></i>
+                <i class="iconify" data-icon="feather:mail"></i>
               </span>
               Inbox
-            </a>
+            </RouterLink>
           </li>
           <li class="divider"></li>
-          <li class="has-children">
-            <div class="collapse-wrap">
-              <a href="javascript:void(0);" class="parent-link">
-                <div class="icon">
-                  <i data-feather="settings"></i>
-                </div>
-                Settings
-                <i data-feather="chevron-right"></i
-              ></a>
-            </div>
-            <ul>
-              <li>
-                <a class="is-submenu" href="/admin-dashboards-personal-1.html">
-                  <i class="lnil lnil-home"></i>
-                  <span>General</span>
-                </a>
-              </li>
-              <li>
-                <a class="is-submenu" href="/admin-dashboards-personal-2.html">
-                  <i class="lnil lnil-lock-alt"></i>
-                  <span>Security</span>
-                </a>
-              </li>
-              <li>
-                <a class="is-submenu" href="/admin-dashboards-personal-3.html">
-                  <i class="lnil lnil-coin"></i>
-                  <span>Transactions</span>
-                </a>
-              </li>
-            </ul>
-          </li>
+
+          <VCollapseLinks v-model:open="openSideblockLinks" collapse-id="settings">
+            <template #header>
+              <div class="icon">
+                <i aria-hidden="true" class="iconify" data-icon="feather:settings"></i>
+              </div>
+              Settings
+              <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right"></i>
+            </template>
+            <RouterLink :to="{ name: 'sidebar-layouts' }" class="is-submenu">
+              <i class="lnil lnil-home"></i>
+              <span>General</span>
+            </RouterLink>
+            <RouterLink :to="{ name: 'sidebar-dashboards-stocks' }" class="is-submenu">
+              <i class="lnil lnil-lock-alt"></i>
+              <span>Security</span>
+            </RouterLink>
+            <RouterLink :to="{ name: 'sidebar-dashboards-sales' }" class="is-submenu">
+              <i class="lnil lnil-coin"></i>
+              <span>Transactions</span>
+            </RouterLink>
+          </VCollapseLinks>
         </template>
 
         <template #bottom-links>
