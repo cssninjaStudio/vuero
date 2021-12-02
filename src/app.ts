@@ -4,7 +4,7 @@ import {
   VNode,
   resolveDynamicComponent,
   Transition,
-  Suspense,
+  watchEffect,
   App,
 } from 'vue'
 import { RouterView } from 'vue-router'
@@ -53,19 +53,20 @@ export async function createApp({ enhanceApp }: VueroAppOptions) {
        * and check with your api if it still valid before your app start
        */
       // const userSession = useUserSession()
-      // if (userSession.isLoggedIn) {
-      //   try {
-      //     // do api request call to retreive its profile
-      //     // note that usage of await require to use Suspense component
-      //     const user = await api.get('/users/me')
-      //     userSession.user = user
-      //   } catch (err) {
-      //     // delete stored token if it fails
-      //     userSession.logoutUser()
-      //     // redirect the user somewhere
-      //     router.replace('/auth/login')
+      // watchEffect(async () => {
+      //   if (userSession.isLoggedIn) {
+      //     try {
+      //       // do api request call to retreive its profile
+      //       const user = await api.get('/users/me')
+      //       userSession.user = user
+      //     } catch (err) {
+      //       // delete stored token if it fails
+      //       userSession.logoutUser()
+      //       // redirect the user somewhere
+      //       router.replace('/auth/login')
+      //     }
       //   }
-      // }
+      // })
 
       /**
        * Here we are creating a render function for our router view with
@@ -114,22 +115,12 @@ export async function createApp({ enhanceApp }: VueroAppOptions) {
          *   )
          * ```
          */
-        return h(
-          Suspense,
-          null,
-          h('div', null, [
-            h(RouterView, null, {
-              default: defaultSlot,
-            }),
-            h(VReloadPrompt, { appName: 'Vuero' }),
-          ])
-        )
-        // return [
-        //   h(RouterView, null, {
-        //     default: defaultSlot,
-        //   }),
-        //   h(VReloadPrompt, { appName: 'Vuero' }),
-        // ]
+        return [
+          h(RouterView, null, {
+            default: defaultSlot,
+          }),
+          h(VReloadPrompt, { appName: 'Vuero' }),
+        ]
       }
     },
   })

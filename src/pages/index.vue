@@ -438,7 +438,7 @@ useHead({
           <div class="video-player-container-wrapper mb-6">
             <VPlyr
               ratio="16by9"
-              source="https://www.youtube.com/embed/lE5VNpP8JqA"
+              source="https://www.youtube.com/embed/lE5VNpP8JqA?modestbranding=1&rel=0&showinfo=0"
               poster="/video/poster-2c.jpg"
               title="VUERO | part 1 - Cleaning the project and getting started"
               embed
