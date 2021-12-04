@@ -1,5 +1,6 @@
 {
   "/api/*": "/$1",
+  "/users/me": "/users/3",
   "/conversations/:cid/messages": "/messages?conversationId=:cid",
   "/conversations/:cid/messages/:mid": "/messages?conversationId=:cid&messageId=:mid"
 }
