@@ -24,8 +24,8 @@ const dropdown2 = useDropdown(dropdownElement2)
   <div
     class="inbox-message-details"
     :class="[
-      mobileMessageOpen && selected && 'mobile-active tablet-active',
-      isMediumScreen && !selected && 'is-hidden',
+      props.mobileMessageOpen && props.selected && 'mobile-active tablet-active',
+      isMediumScreen && !props.selected && 'is-hidden',
     ]"
   >
     <div class="header-area">

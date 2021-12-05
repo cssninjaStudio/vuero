@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { useRoute } from 'vue-router'
 import { useWindowScroll } from '@vueuse/core'
 
 export type NavbarSearchTheme = 'default' | 'center' | 'fade'
@@ -14,12 +13,8 @@ const props = withDefaults(
   }
 )
 
-const route = useRoute()
 const { y } = useWindowScroll()
-
-const isScrolling = computed(() => {
-  return y.value > 30
-})
+const isScrolling = computed(() => y.value > 30)
 </script>
 
 <template>

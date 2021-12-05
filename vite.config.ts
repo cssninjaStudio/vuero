@@ -88,10 +88,6 @@ export default defineConfig({
   resolve: {
     alias: [
       {
-        find: '/~/',
-        replacement: `/src/assets/`,
-      },
-      {
         find: '/@src/',
         replacement: `/src/`,
       },

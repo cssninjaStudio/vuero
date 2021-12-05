@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { useChat } from '/@src/stores/chat'
-import { onceImageErrored } from '/@src/utils/via-placeholder'
 
 const chat = useChat()
 </script>

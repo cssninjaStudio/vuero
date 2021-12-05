@@ -1,5 +1,5 @@
 // Add Icon
-function renderPicture(data: any, cell: any, row: any) {
+function renderPicture(data: any /*, cell:  any, row: any*/) {
   return `
           <div class="v-avatar">
               <img class="avatar" src="${data}" alt="">
@@ -8,17 +8,17 @@ function renderPicture(data: any, cell: any, row: any) {
 }
 
 // Name
-function renderName(data: any, cell: any, row: any) {
+function renderName(data: any /*, cell: any, row: any */) {
   return `<span class="has-dark-text dark-inverted is-font-alt is-weight-600 rem-90">${data}</span>`
 }
 
 // Position
-function renderPosition(data: any, cell: any, row: any) {
+function renderPosition(data: any /*, cell: any, row: any */) {
   return `<span class="light-text">${data}</span>`
 }
 
 // Status
-function renderStatus(data: any, cell: any, row: any) {
+function renderStatus(data: any /*, cell: any, row: any */) {
   return `
           <div class="status is-${data}">
               <i aria-hidden="true" class="fas fa-circle"></i>

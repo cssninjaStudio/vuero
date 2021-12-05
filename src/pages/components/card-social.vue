@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
 
-import { userStack2 } from '/@src/data/users/userStacks'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 
 const viewWrapper = useViewWrapper()

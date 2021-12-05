@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { h, ref, reactive, computed } from 'vue'
-import { RouterLink, useRoute } from 'vue-router'
+import { ref } from 'vue'
 import { useHead } from '@vueuse/head'
 
 import { flexRowsBasic, flexRowsContacts } from '/@src/data/documentation/table'
@@ -91,6 +90,7 @@ useHead({
             rounded
             separators
             clickable
+            @row-click="rowClick"
           />
         </div>
 

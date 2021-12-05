@@ -3,7 +3,7 @@ import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRouter } from 'vue-router'
 import { useHead } from '@vueuse/head'
-import { Form, Field } from 'vee-validate'
+import { Field, useForm } from 'vee-validate'
 import * as yup from 'yup'
 
 import { useDarkmode } from '/@src/stores/darkmode'
@@ -35,7 +35,11 @@ const schema = yup.object({
     .oneOf([yup.ref('password')], t('auth.errors.passwordCheck.match')),
 })
 
-const handleSignup = async (values: typeof schema) => {
+const { handleSubmit } = useForm({
+  validationSchema: schema,
+})
+
+const onSignup = handleSubmit(async (values) => {
   console.log('handleSignup values')
   console.table(values)
 
@@ -50,7 +54,7 @@ const handleSignup = async (values: typeof schema) => {
     router.push({ name: 'sidebar-dashboards' })
     isLoading.value = false
   }
-}
+})
 
 useHead({
   title: 'Auth Signup 2 - Vuero',
@@ -94,7 +98,7 @@ useHead({
                 </div>
                 <div class="auth-form-wrapper">
                   <!-- Login Form -->
-                  <Form :validation-schema="schema" @submit="handleSignup">
+                  <form @submit="onSignup">
                     <div id="signin-form" class="login-form">
                       <!-- Input -->
                       <Field v-slot="{ field, errorMessage }" name="name">
@@ -209,7 +213,7 @@ useHead({
                         </VControl>
                       </VField>
                     </div>
-                  </Form>
+                  </form>
                 </div>
               </div>
             </div>

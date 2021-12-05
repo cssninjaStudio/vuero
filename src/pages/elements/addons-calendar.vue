@@ -7,7 +7,6 @@ import { useViewWrapper } from '/@src/stores/viewWrapper'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
-const date = ref(null)
 
 const viewWrapper = useViewWrapper()
 viewWrapper.setPageTitle('VCalendar')

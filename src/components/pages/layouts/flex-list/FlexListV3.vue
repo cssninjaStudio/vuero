@@ -171,7 +171,7 @@ const filteredData = computed(() => {
                     ></i>
                   </span>
                 </VFlexTableCell>
-                <VFlexTableCell :columns="{ align: end }">
+                <VFlexTableCell :columns="{ align: 'end' }">
                   <a class="button v-button has-dot dark-outlined is-pushed-mobile">
                     Purchase
                     <i aria-hidden="true" class="fas fa-circle dot"></i> ${{ item.price }}

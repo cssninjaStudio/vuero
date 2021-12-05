@@ -7,7 +7,7 @@ import { useSidebar } from '/@src/stores/sidebar'
 const sidebar = useSidebar()
 
 onMounted(() => {
-  sidebar.active = 'components'
+  sidebar.setActive('components')
 })
 
 useHead({

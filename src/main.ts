@@ -61,7 +61,7 @@ async function registerGlobalComponents(app: App) {
  * </template>
  */
 function registerRouterNavigationGuards(router: Router) {
-  router.beforeEach((to, from) => {
+  router.beforeEach((to /*, from*/) => {
     const userSession = useUserSession()
 
     if (to.meta.requiresAuth && !userSession.isLoggedIn) {

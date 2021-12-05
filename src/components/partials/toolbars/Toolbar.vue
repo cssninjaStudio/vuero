@@ -1,16 +1,13 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 import { useDarkmode } from '/@src/stores/darkmode'
 import { usePanels } from '/@src/stores/panels'
-import { useDropdown } from '/@src/composable/useDropdown'
 
 const darkmode = useDarkmode()
 const { locale } = useI18n()
-const dropdownElement = ref<HTMLElement>()
 const panels = usePanels()
-const dropdown = useDropdown(dropdownElement)
 
 const localFlagSrc = computed(() => {
   switch (locale.value) {

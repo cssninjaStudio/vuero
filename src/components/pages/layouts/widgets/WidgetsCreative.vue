@@ -12,7 +12,6 @@ import Widget2 from '/@src/assets/illustrations/widgets/2.svg'
 import Widget3 from '/@src/assets/illustrations/widgets/3.svg'
 import Widget4 from '/@src/assets/illustrations/widgets/4.svg'
 import Widget5 from '/@src/assets/illustrations/widgets/5.svg'
-import Widget6 from '/@src/assets/illustrations/widgets/6.svg'
 import Widget7 from '/@src/assets/illustrations/widgets/7.svg'
 import Widget8 from '/@src/assets/illustrations/widgets/8.svg'
 </script>

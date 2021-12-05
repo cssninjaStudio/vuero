@@ -280,14 +280,14 @@ onMounted(() => {
   }
 })
 
-const rotate = (newAngle: number) => {
-  if (pswpElement.value) {
-    angle.value = angle.value + newAngle
-    pswpElement.value
-      .querySelectorAll('.pswp__img')
-      .forEach((i) => ((i as HTMLElement).style.transform = `rotate(${angle.value}deg)`))
-  }
-}
+// const rotate = (newAngle: number) => {
+//   if (pswpElement.value) {
+//     angle.value = angle.value + newAngle
+//     pswpElement.value
+//       .querySelectorAll('.pswp__img')
+//       .forEach((i) => ((i as HTMLElement).style.transform = `rotate(${angle.value}deg)`))
+//   }
+// }
 
 const resetAngle = () => {
   if (pswpElement.value) {

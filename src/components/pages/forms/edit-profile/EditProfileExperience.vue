@@ -13,11 +13,6 @@ const range = ref()
 const notyf = useNotyf()
 const { y } = useWindowScroll()
 
-const date = ref({
-  start: new Date(),
-  end: new Date(),
-})
-
 const isScrolling = computed(() => {
   return y.value > 30
 })

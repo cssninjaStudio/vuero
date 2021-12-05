@@ -19,16 +19,16 @@ const props = withDefaults(
 
 <template>
   <div
-    :class="[mobileConversationListOpen && 'is-active']"
+    :class="[props.mobileConversationListOpen && 'is-active']"
     class="conversation-area"
     data-simplebar
   >
     <!--Conversation-->
     <div
-      v-for="conversation in conversations"
+      v-for="conversation in props.conversations"
       :key="conversation.id"
       class="conversation"
-      :class="[conversationId === conversation.id && 'active']"
+      :class="[props.conversationId === conversation.id && 'active']"
       tabindex="0"
       @keydown.space.prevent="
         () => {
@@ -44,15 +44,17 @@ const props = withDefaults(
       "
     >
       <VAvatar
-        :picture="conversation.avatar.picture"
-        :color="conversation.avatar.color"
-        :initials="conversation.avatar.initials"
+        :picture="props.conversation.avatar.picture"
+        :color="props.conversation.avatar.color"
+        :initials="props.conversation.avatar.initials"
       />
       <div class="conversation-detail">
-        <div class="conversation-username">{{ conversation.name }}</div>
+        <div class="conversation-username">{{ props.conversation.name }}</div>
         <div class="conversation-content">
-          <span class="conversation-message">{{ conversation.lastMessagePreview }}</span>
-          <span class="conversation-date">{{ conversation.lastMessage }}</span>
+          <span class="conversation-message">{{
+            props.conversation.lastMessagePreview
+          }}</span>
+          <span class="conversation-date">{{ props.conversation.lastMessage }}</span>
         </div>
       </div>
     </div>

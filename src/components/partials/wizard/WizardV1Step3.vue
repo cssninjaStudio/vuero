@@ -23,7 +23,7 @@ const filteredCustomers = computed<WizardCustomer[]>(() => {
     .splice(0, 4)
 })
 
-const selectCustomer = (customer: WizardCustomer) => {
+const selectCustomer = (customer: WizardCustomer | null) => {
   wizard.data.customer = customer
 }
 </script>
@@ -59,7 +59,7 @@ const selectCustomer = (customer: WizardCustomer) => {
             size="small"
             icon="feather:x"
             circle
-            @click="wizard.data.customer = null"
+            @click="selectCustomer(null)"
           />
         </template>
       </VBlock>
@@ -82,7 +82,7 @@ const selectCustomer = (customer: WizardCustomer) => {
                 size="small"
                 icon="feather:plus"
                 circle
-                @click="wizard.data.customer = customer"
+                @click="selectCustomer(customer)"
               />
             </template>
           </VBlock>

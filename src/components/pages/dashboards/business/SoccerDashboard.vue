@@ -1,9 +1,3 @@
-<script setup lang="ts">
-import { ref } from 'vue'
-
-const hello = ref('world')
-</script>
-
 <template>
   <div class="soccer-dashboard">
     <div class="soccer-dashboard-inner">

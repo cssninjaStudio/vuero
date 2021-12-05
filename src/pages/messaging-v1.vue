@@ -73,7 +73,7 @@ watchPostEffect(() => {
 </script>
 
 <template>
-  <MessagingLayout :theme="layoutSwitcher.sidebarTheme">
+  <MessagingLayout :theme="layoutSwitcher.sidebarLayoutTheme">
     <template #default="{ isMobileSidebarOpen }">
       <transition name="slide-x">
         <MessagesSubsidebar

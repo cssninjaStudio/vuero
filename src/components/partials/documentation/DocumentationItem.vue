@@ -25,7 +25,7 @@ const hasSlimscroll = computed(() => props.frontmatter?.slimscroll ?? false)
 <template>
   <DocumentationDemoCard>
     <div class="demo-title" :class="[hasSlimscroll && 'has-slimscroll-x']">
-      <div class="content">
+      <div v-if="hasDefault" class="content">
         <slot></slot>
       </div>
 

@@ -9,7 +9,7 @@
  * @see /src/layouts/layout-switcher/LayoutSwitcher.vue
  */
 
-import { computed, ref, h, defineAsyncComponent, defineComponent } from 'vue'
+import { computed, ref, defineAsyncComponent } from 'vue'
 import { useRoute } from 'vue-router'
 import { acceptHMRUpdate, defineStore } from 'pinia'
 

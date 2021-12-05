@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { h, ref, reactive, computed } from 'vue'
-import { RouterLink, useRoute } from 'vue-router'
+import { ref } from 'vue'
 import { useHead } from '@vueuse/head'
 
 import { flexRowsContacts, flexRowsAdvanced } from '/@src/data/documentation/table'

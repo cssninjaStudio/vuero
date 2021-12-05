@@ -1,8 +1,3 @@
-<script setup lang="ts">
-import { useSidebar } from '/@src/stores/sidebar'
-const sidebar = useSidebar()
-</script>
-
 <template>
   <div class="page-content-inner">
     <!--Edit Profile-->

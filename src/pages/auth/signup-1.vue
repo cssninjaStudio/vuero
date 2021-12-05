@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { TinySliderInstance, TinySliderInfo } from 'tiny-slider/src/tiny-slider'
+import type { TinySliderInstance } from 'tiny-slider/src/tiny-slider'
 import { tns } from 'tiny-slider/src/tiny-slider'
 import { useHead } from '@vueuse/head'
 import { ref, onMounted, onUnmounted } from 'vue'
