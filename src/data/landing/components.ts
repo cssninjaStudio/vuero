@@ -37,7 +37,7 @@ export const elements = [
   },
   {
     id: 5,
-    link: 'elements-icons-fa',
+    link: 'elements-icons-font-awesome',
     name: 'Font Awesome',
     media: {
       light: '/images/icons/components/font-awesome.svg',
@@ -64,7 +64,7 @@ export const elements = [
   },
   {
     id: 8,
-    link: 'elements-icons-line-icons',
+    link: 'elements-icons-line-icons-light',
     name: 'Line Icons Light',
     media: {
       light: '/images/icons/components/line-icons.svg',
@@ -367,7 +367,7 @@ export const components = [
   },
   {
     id: 17,
-    link: 'components-flex-table',
+    link: 'components-flextable',
     name: 'VFlexTable',
     media: {
       light: '/images/icons/components/flex-tables.svg',

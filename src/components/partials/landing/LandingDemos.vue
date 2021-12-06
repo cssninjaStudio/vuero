@@ -6,12 +6,13 @@ import { debouncedWatch } from '@vueuse/core'
 import sidebar from '/@src/data/landing/sidebar.json'
 import auth from '/@src/data/landing/auth.json'
 import minimal from '/@src/data/landing/minimal.json'
-import templates from '/@src/data/landing/templates.json'
+import starters from '/@src/data/landing/starters.json'
 import navbar from '/@src/data/landing/navbar.json'
 
 export interface DemoItem {
   name: string
   category: string
+  keywords: string
   displayOrder: number
   new: boolean
   route: {
@@ -39,7 +40,12 @@ function useFilter(items: DemoItem[], filter: Ref<string>): ComputedRef<DemoItem
     const filterRe = new RegExp(searchValue, 'i')
 
     return items.filter((demo) => {
-      return demo.name.match(filterRe) || demo.category.match(filterRe)
+      return (
+        demo.name.match(filterRe) ||
+        demo.category.match(filterRe) ||
+        demo.keywords?.match(filterRe) ||
+        demo.route.name.replace(/-/g, ' ').match(filterRe)
+      )
     })
   })
 }
@@ -61,7 +67,7 @@ function displayOrder(a: { displayOrder: number }, b: { displayOrder: number }) 
 const sidebarDemos = sidebar.sort(displayOrder) as DemoItem[]
 const authDemos = auth.sort(displayOrder) as DemoItem[]
 const minimalDemos = minimal.sort(displayOrder) as DemoItem[]
-const templatesDemos = templates.sort(displayOrder) as DemoItem[]
+const templatesDemos = starters.sort(displayOrder) as DemoItem[]
 const navbarDemos = navbar.sort(displayOrder) as DemoItem[]
 
 const totalDemos =
@@ -368,7 +374,7 @@ debouncedWatch(
         />
         <div class="title-meta">
           <h3>Auth</h3>
-          <p>Sign-In &amp; Sign-Up templates</p>
+          <p>Sign-In &amp; Sign-Up starters</p>
         </div>
       </div>
 
@@ -428,7 +434,7 @@ debouncedWatch(
         />
         <div class="title-meta">
           <h3>Templates</h3>
-          <p>Blank templates to start fast</p>
+          <p>Blank starters to start fast</p>
         </div>
       </div>
 

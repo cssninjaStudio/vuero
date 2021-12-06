@@ -5,7 +5,7 @@ import {
   auth,
   sidebar,
   navbar,
-  templates,
+  starters,
 } from '../fixtures/routes'
 
 const buildUri = ({ path, query }: { path: string; query?: any }) => {
@@ -29,8 +29,8 @@ describe('Desktop - Viewport (1274*714)', () => {
     cy.clearLocalStorage()
   })
 
-  for (const route of templates) {
-    it(`Desktop - Templates - ${route.name}`, () => {
+  for (const route of starters) {
+    it(`Desktop - Starters - ${route.name}`, () => {
       cy.visit(buildUri(route))
       // cy.get('.default-layout, .navbar-layout')
       cy.get(route.checkVisibleSelector).should('be.exist')
@@ -199,9 +199,7 @@ describe('Desktop - Viewport (1274*714)', () => {
         // should be redirected to /auth/login-1?redirect=
         cy.location('pathname').should('eq', '/auth/login-1')
 
-        cy.get('[name="email"]')
-          .should('be.visible')
-          .type('erik.kovalsky@cssninja.io')
+        cy.get('[name="email"]').should('be.visible').type('erik.kovalsky@cssninja.io')
 
         cy.get('[name="password"]').should('be.visible').type('ada.lovelace')
 
@@ -269,9 +267,7 @@ describe('Desktop - Viewport (1274*714)', () => {
           .location('pathname')
           .should('eq', '/auth/login-1')
 
-        cy.get('[name="email"]')
-          .should('be.visible')
-          .type('erik.kovalsky@cssninja.io')
+        cy.get('[name="email"]').should('be.visible').type('erik.kovalsky@cssninja.io')
 
         cy.get('[name="password"]').should('be.visible').type('ada.lovelace')
 

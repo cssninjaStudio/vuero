@@ -151,7 +151,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                 </RouterLink>
 
                 <RouterLink
-                  :to="{ name: 'elements-icons-line-icons' }"
+                  :to="{ name: 'elements-icons-line-icons-light' }"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -175,7 +175,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                 </RouterLink>
 
                 <RouterLink
-                  :to="{ name: 'elements-icons-fa' }"
+                  :to="{ name: 'elements-icons-font-awesome' }"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">

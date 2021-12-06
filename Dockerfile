@@ -8,9 +8,11 @@ RUN CYPRESS_INSTALL_BINARY=0 yarn --frozen-lockfile
 COPY . .
 RUN SILENT=1 yarn run build
 
-
-FROM bitnami/nginx:1.19 AS prod
+FROM bitnami/node:14-prod AS prod
 WORKDIR /app
 
-COPY --from=build /app/dist .
-COPY ./nginx/vuejs.conf /opt/bitnami/nginx/conf/server_blocks/nginx.conf
+COPY --from=build /app .
+
+EXPOSE 5000 8080
+
+CMD ["yarn", "preview"]

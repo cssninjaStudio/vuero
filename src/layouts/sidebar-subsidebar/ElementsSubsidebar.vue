@@ -37,7 +37,10 @@ const emit = defineEmits(['close'])
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             Iconify
           </RouterLink>
-          <RouterLink :to="{ name: 'elements-icons-line-icons' }" class="is-submenu">
+          <RouterLink
+            :to="{ name: 'elements-icons-line-icons-light' }"
+            class="is-submenu"
+          >
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             Line Icons Light
           </RouterLink>
@@ -48,7 +51,7 @@ const emit = defineEmits(['close'])
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             Line Icons Regular
           </RouterLink>
-          <RouterLink :to="{ name: 'elements-icons-fa' }" class="is-submenu">
+          <RouterLink :to="{ name: 'elements-icons-font-awesome' }" class="is-submenu">
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             Font Awesome 5
           </RouterLink>

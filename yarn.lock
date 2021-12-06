@@ -11836,18 +11836,17 @@ vite-plugin-imagemin@0.4.6:
     imagemin-svgo "^9.0.0"
     imagemin-webp "^6.0.0"
 
-vite-plugin-pages@0.19.0-beta.6:
-  version "0.19.0-beta.6"
-  resolved "https://registry.yarnpkg.com/vite-plugin-pages/-/vite-plugin-pages-0.19.0-beta.6.tgz#19a888fabc35838d8784ae2dedc3cc446181faeb"
-  integrity sha512-FH52XaVdvH8WW+2taNdI6Wh17VdNwWfDB96qnne/UuIxkzKlCQowSvDvbQGyO8X5rK2s+9Qtd2BA2ZRtIACuLA==
+vite-plugin-pages@0.18.2:
+  version "0.18.2"
+  resolved "https://registry.yarnpkg.com/vite-plugin-pages/-/vite-plugin-pages-0.18.2.tgz#b214f7a166e74dd55adc90a5e774c6543c3abdb3"
+  integrity sha512-Z6ylvMKYSiCngtSpWw9pHN4UzjMQvOG7f0RtLMDKm1LrO5iye7V8BS8Rfdvrl9Nz+D2W+i0pi98+vOL5VsmTvQ==
   dependencies:
     "@antfu/utils" "^0.3.0"
     debug "^4.3.2"
     deep-equal "^2.0.5"
     fast-glob "^3.2.7"
     json5 "^2.2.0"
-    local-pkg "^0.4.0"
-    yaml "^2.0.0-9"
+    yaml "^2.0.0-8"
 
 vite-plugin-purge-icons@0.7.0:
   version "0.7.0"
@@ -12478,7 +12477,7 @@ yaml@^1.10.0, yaml@^1.10.2:
   resolved "https://registry.yarnpkg.com/yaml/-/yaml-1.10.2.tgz#2301c5ffbf12b467de8da2333a459e29e7920e4b"
   integrity sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==
 
-yaml@^2.0.0-9:
+yaml@^2.0.0-8:
   version "2.0.0-9"
   resolved "https://registry.yarnpkg.com/yaml/-/yaml-2.0.0-9.tgz#0099f0645d1ffa686a2c5141b6da340f545d3634"
   integrity sha512-Bf2KowHjyVkIIiGMt7+fbhmlvKOaE8DWuD07bnL4+FQ9sPmEl/5IzGpBpoxPqOaHuyasBjJhyXDcISpJWfhCGw==

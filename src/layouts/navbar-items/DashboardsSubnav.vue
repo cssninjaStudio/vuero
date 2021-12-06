@@ -356,7 +356,7 @@ const activeTab = ref<TabId>('dashboards')
                 <h4 class="column-heading">Sidebars</h4>
                 <ul>
                   <li>
-                    <RouterLink :to="{ name: 'sidebar-blank-page-1' }">
+                    <RouterLink :to="{ name: 'starters-sidebar-blank-page-1' }">
                       <i aria-hidden="true" class="lnil lnil-layout"></i>
                       <span>Regular Sidebar</span>
                       <i
@@ -367,7 +367,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'sidebar-blank-page-2' }">
+                    <RouterLink :to="{ name: 'starters-sidebar-blank-page-2' }">
                       <i aria-hidden="true" class="lnil lnil-layout"></i>
                       <span>Curved Sidebar</span>
                       <i
@@ -378,7 +378,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'sidebar-blank-page-3' }">
+                    <RouterLink :to="{ name: 'starters-sidebar-blank-page-3' }">
                       <i aria-hidden="true" class="lnil lnil-layout"></i>
                       <span>Colored Sidebar</span>
                       <i
@@ -389,7 +389,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'sidebar-blank-page-4' }">
+                    <RouterLink :to="{ name: 'starters-sidebar-blank-page-4' }">
                       <i aria-hidden="true" class="lnil lnil-layout"></i>
                       <span>Curved Colored</span>
                       <i
@@ -400,7 +400,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'sidebar-blank-page-5' }">
+                    <RouterLink :to="{ name: 'starters-sidebar-blank-page-5' }">
                       <i aria-hidden="true" class="lnil lnil-layout"></i>
                       <span>Labels Sidebar</span>
                       <i
@@ -411,7 +411,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'sidebar-blank-page-6' }">
+                    <RouterLink :to="{ name: 'starters-sidebar-blank-page-6' }">
                       <i aria-hidden="true" class="lnil lnil-layout"></i>
                       <span>Labels Hover Sidebar</span>
                       <i
@@ -422,7 +422,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'sidebar-blank-page-7' }">
+                    <RouterLink :to="{ name: 'starters-sidebar-blank-page-7' }">
                       <i aria-hidden="true" class="lnil lnil-layout"></i>
                       <span>Float Sidebar</span>
                       <i
@@ -438,7 +438,7 @@ const activeTab = ref<TabId>('dashboards')
                 <h4 class="column-heading">Navbars</h4>
                 <ul class="has-slimscroll" simplebar>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-blank-page-1' }">
+                    <RouterLink :to="{ name: 'starters-navbar-blank-page-1' }">
                       <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
                       <span>Regular Navbar</span>
                       <i
@@ -449,7 +449,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-blank-page-2' }">
+                    <RouterLink :to="{ name: 'starters-navbar-blank-page-2' }">
                       <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
                       <span>Fading Navbar</span>
                       <i
@@ -460,7 +460,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-blank-page-3' }">
+                    <RouterLink :to="{ name: 'starters-navbar-blank-page-3' }">
                       <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
                       <span>Colored Navbar</span>
                       <i
@@ -471,7 +471,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-blank-page-4' }">
+                    <RouterLink :to="{ name: 'starters-navbar-blank-page-4' }">
                       <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
                       <span>Drop Navbar</span>
                       <i
@@ -482,7 +482,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-blank-page-5' }">
+                    <RouterLink :to="{ name: 'starters-navbar-blank-page-5' }">
                       <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
                       <span>Colored Drop</span>
                       <i
@@ -493,7 +493,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-blank-page-6' }">
+                    <RouterLink :to="{ name: 'starters-navbar-blank-page-6' }">
                       <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
                       <span>Clean Navbar</span>
                       <i
@@ -504,7 +504,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-blank-page-7' }">
+                    <RouterLink :to="{ name: 'starters-navbar-blank-page-7' }">
                       <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
                       <span>Clean Center</span>
                       <i
@@ -515,7 +515,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-blank-page-8' }">
+                    <RouterLink :to="{ name: 'starters-navbar-blank-page-8' }">
                       <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
                       <span>Clean Fade</span>
                       <i

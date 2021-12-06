@@ -57,7 +57,7 @@ useHead({
                 title="Icons"
                 content="Get familiar with the Vuero icon libraries. Code examples included."
               >
-                <RouterLink :to="{ name: 'elements-icons-line-icons' }">
+                <RouterLink :to="{ name: 'elements-icons-line-icons-light' }">
                   Get Started
                 </RouterLink>
 

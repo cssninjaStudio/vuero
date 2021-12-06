@@ -8,7 +8,7 @@ quality=100
 width=368
 height=206
 
-for layout in sidebar auth minimal navbar templates; do
+for layout in sidebar auth minimal navbar starters; do
   echo "${layout}"
 
   rm -rf "${output}${layout}/"
