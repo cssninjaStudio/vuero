@@ -360,7 +360,8 @@ const topicList = dashboardData.topicList as any[]
     position: relative;
     min-height: 300px;
 
-    &:hover {
+    &:hover,
+    &:focus {
       .long-card-overlay {
         opacity: 0.5;
         pointer-events: all;
@@ -445,7 +446,8 @@ const topicList = dashboardData.topicList as any[]
         padding: 12px;
         max-height: 66px;
 
-        &:hover {
+        &:hover,
+        &:focus {
           .flex-end {
             .rating {
               opacity: 1;

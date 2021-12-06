@@ -560,7 +560,8 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
       cursor: pointer;
       transition: 0.2s;
 
-      &:hover {
+      &:hover,
+      &:focus {
         transform: translateY(-5px);
       }
 

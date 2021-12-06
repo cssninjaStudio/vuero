@@ -720,7 +720,8 @@
                 color: var(--light-text);
                 transition: background-color 0.3s;
 
-                &:hover {
+                &:hover,
+                &:focus {
                   background: var(--widget-grey);
                 }
               }

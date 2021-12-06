@@ -154,7 +154,8 @@
         padding: 2rem 1rem;
         cursor: pointer;
 
-        &:hover {
+        &:hover,
+        &:focus {
           background-color: var(--fade-grey-light-5);
 
           .lnil,
@@ -332,7 +333,8 @@
       .code-trigger {
         border-color: var(--dark-sidebar-light-14);
 
-        &:hover {
+        &:hover,
+        &:focus {
           svg {
             color: var(--light-text);
           }

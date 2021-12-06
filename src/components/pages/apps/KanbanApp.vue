@@ -803,7 +803,8 @@ onMounted(() => {
   border: 1px solid var(--medium-grey);
   transition: all 0.4s;
 
-  &:hover {
+  &:hover,
+  &:focus {
     box-shadow: 0 5px 43px rgb(0 0 0 / 18%) !important;
   }
 
@@ -976,7 +977,8 @@ onMounted(() => {
         background: var(--dark-sidebar-light-6) !important;
         border-color: var(--dark-sidebar-light-12) !important;
 
-        &:hover {
+        &:hover,
+        &:focus {
           svg {
             color: var(--primary) !important;
           }

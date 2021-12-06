@@ -224,7 +224,8 @@ if (isReactive(props.options)) {
       .button {
         color: var(--light-text);
 
-        &:hover {
+        &:hover,
+        &:focus {
           background: var(--primary);
           border-color: var(--primary);
           color: var(--primary--color-invert);
@@ -251,7 +252,8 @@ if (isReactive(props.options)) {
           background: var(--dark-sidebar) !important;
           color: var(--light-text);
 
-          &:hover {
+          &:hover,
+          &:focus {
             background: var(--primary) !important;
             border-color: var(--primary) !important;
             color: var(--smoke-white) !important;

@@ -238,7 +238,8 @@ zh-CN:
           height: 22px;
           padding: 0;
 
-          &:hover {
+          &:hover,
+          &:focus {
             svg {
               color: var(--primary);
             }

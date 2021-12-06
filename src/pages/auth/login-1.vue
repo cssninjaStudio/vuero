@@ -497,7 +497,8 @@ useHead({
             font-size: 0.9rem;
             transition: color 0.3s;
 
-            &:hover {
+            &:hover,
+            &:focus {
               color: var(--primary);
             }
           }

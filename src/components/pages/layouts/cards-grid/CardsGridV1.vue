@@ -274,7 +274,8 @@ const optionsSingle = [
         .v-button {
           color: var(--light-text);
 
-          &:hover {
+          &:hover,
+          &:focus {
             border-color: var(--primary);
             background: var(--primary);
             color: var(--smoke-white);
@@ -310,7 +311,8 @@ const optionsSingle = [
               border-color: var(--dark-sidebar-light-12);
               color: var(--dark-dark-text);
 
-              &:hover {
+              &:hover,
+              &:focus {
                 border-color: var(--primary) !important;
                 color: var(--primary) !important;
               }

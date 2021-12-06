@@ -135,7 +135,8 @@ const optionsSingle = [
     padding: 16px;
     cursor: pointer;
 
-    &:hover {
+    &:hover,
+    &:focus {
       border-color: var(--primary);
       box-shadow: var(--light-box-shadow);
     }
@@ -205,7 +206,8 @@ const optionsSingle = [
     .tile-grid-item {
       @include vuero-card--dark;
 
-      &:hover {
+      &:hover,
+      &:focus {
         border-color: var(--primary) !important;
       }
     }

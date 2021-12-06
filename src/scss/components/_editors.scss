@@ -82,7 +82,8 @@
           .note-dropdown-item {
             color: var(--light-text);
 
-            &:hover {
+            &:hover,
+            &:focus {
               background: var(--dark-sidebar-light-1);
             }
           }
@@ -209,7 +210,8 @@
                 button {
                   color: var(--dark-dark-text);
 
-                  &:hover {
+                  &:hover,
+                  &:focus {
                     background: var(--dark-sidebar-light-2);
                     border-color: var(--dark-sidebar-light-12);
                   }

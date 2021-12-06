@@ -322,7 +322,8 @@ const themeClasses = computed(() => {
         font-size: 0.95rem;
         color: var(--light-text);
 
-        &:hover {
+        &:hover,
+        &:focus {
           color: var(--dark-text);
         }
       }
@@ -349,6 +350,7 @@ const themeClasses = computed(() => {
       transition: background-color 0.3s;
 
       &:hover,
+      &:focus,
       &.active {
         background: var(--widget-grey);
         color: var(--dark-text);
@@ -505,7 +507,8 @@ const themeClasses = computed(() => {
         align-items: center;
         width: 100% !important;
 
-        &:hover:not(.is-button) {
+        &:hover,
+        &:focus:not(.is-button) {
           background: var(--fade-grey-light-3);
         }
       }
@@ -520,7 +523,8 @@ const themeClasses = computed(() => {
           font-size: 0.8rem;
           color: var(--muted-grey);
 
-          &:hover {
+          &:hover,
+          &:focus {
             background: transparent !important;
           }
         }
@@ -615,7 +619,8 @@ const themeClasses = computed(() => {
       .search-link {
         color: var(--light-text);
 
-        &:hover {
+        &:hover,
+        &:focus {
           background: var(--dark-sidebar-light-8);
           color: var(--accent);
         }
@@ -733,7 +738,8 @@ html:not(.is-dark) {
         .search-link {
           color: var(--light-text) !important;
 
-          &:hover {
+          &:hover,
+          &:focus {
             background: var(--sidebar-dark-7) !important;
             color: var(--primary) !important;
           }

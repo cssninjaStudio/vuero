@@ -292,7 +292,8 @@ const filteredData = computed(() => {
         color: var(--light-text);
         margin-bottom: 0;
 
-        &:hover {
+        &:hover,
+        &:focus {
           border-color: var(--fade-grey-dark-4);
           color: var(--primary);
           box-shadow: var(--light-box-shadow);

@@ -271,7 +271,8 @@ const filteredData = computed(() => {
     margin-bottom: 16px;
     padding: 16px;
 
-    &:hover {
+    &:hover,
+    &:focus {
       box-shadow: var(--light-box-shadow);
     }
 

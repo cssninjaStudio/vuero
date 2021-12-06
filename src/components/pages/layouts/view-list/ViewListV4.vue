@@ -338,7 +338,8 @@ const filteredData = computed(() => {
               transition: color 0.3s, background-color 0.3s, border-color 0.3s,
                 height 0.3s, width 0.3s;
 
-              &:hover {
+              &:hover,
+              &:focus {
                 background: var(--white);
                 border: 1px solid var(--fade-grey-dark-3);
                 box-shadow: var(--light-box-shadow);
@@ -384,7 +385,8 @@ const filteredData = computed(() => {
                 transition: color 0.3s, background-color 0.3s, border-color 0.3s,
                   height 0.3s, width 0.3s;
 
-                &:hover {
+                &:hover,
+                &:focus {
                   border-color: var(--danger);
                   color: var(--danger);
                 }

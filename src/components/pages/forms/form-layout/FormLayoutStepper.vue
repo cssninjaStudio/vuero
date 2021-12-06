@@ -1132,7 +1132,8 @@ const validateStep = async () => {
               border-radius: 0.5rem;
               transition: background-color 0.3s;
 
-              &:hover {
+              &:hover,
+              &:focus {
                 background: var(--widget-grey-dark-1);
               }
 
@@ -1311,7 +1312,8 @@ const validateStep = async () => {
           border-color: var(--dark-sidebar-light-12) !important;
           color: var(--dark-dark-text);
 
-          &:hover {
+          &:hover,
+          &:focus {
             color: var(--primary);
             border: 2px solid var(--primary) !important;
           }

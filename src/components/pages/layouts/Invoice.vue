@@ -370,7 +370,8 @@ const totalColumns = {
           .action {
             border: 1px solid transparent;
 
-            &:hover {
+            &:hover,
+            &:focus {
               background: var(--dark-sidebar-light-2);
               border-color: var(--primary);
               color: var(--primary);

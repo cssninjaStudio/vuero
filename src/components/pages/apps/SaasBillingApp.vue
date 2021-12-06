@@ -591,7 +591,8 @@ const selected = ref('value_2')
             font-family: var(--font);
             color: var(--light-text);
 
-            &:hover {
+            &:hover,
+            &:focus {
               color: var(--primary);
             }
           }
@@ -623,7 +624,8 @@ const selected = ref('value_2')
               transition: color 0.3s, background-color 0.3s, border-color 0.3s,
                 height 0.3s, width 0.3s;
 
-              &:hover {
+              &:hover,
+              &:focus {
                 border: 1.6px solid var(--primary);
                 color: var(--primary);
               }

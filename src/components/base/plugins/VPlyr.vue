@@ -151,7 +151,8 @@ onBeforeUnmount(() => {
       border: 1px solid var(--primary);
       color: var(--primary) !important;
 
-      &:hover {
+      &:hover,
+      &:focus {
         background: var(--primary) !important;
         border-color: var(--primary) !important;
         color: var(--white) !important;

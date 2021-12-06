@@ -146,7 +146,8 @@ const props = defineProps<{
       position: relative;
       border-radius: 3px;
 
-      &:hover {
+      &:hover,
+      &:focus {
         .image-overlay {
           opacity: 0.45;
           pointer-events: none;

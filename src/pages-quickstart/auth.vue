@@ -110,7 +110,8 @@
       color: var(--light-text);
       transition: color 0.3s;
 
-      &:hover {
+      &:hover,
+      &:focus {
         color: var(--primary);
       }
     }

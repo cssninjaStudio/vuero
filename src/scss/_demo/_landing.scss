@@ -664,7 +664,8 @@
     font-size: 1.4em;
     transition: all 350ms ease-in;
 
-    &:hover {
+    &:hover,
+    &:focus {
       cursor: pointer;
     }
   }

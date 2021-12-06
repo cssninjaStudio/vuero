@@ -153,7 +153,8 @@ const isScrolling = computed(() => {
               background: var(--landing-yyy-dark-12);
               border-color: var(--landing-yyy-light-6);
 
-              &:hover {
+              &:hover,
+              &:focus {
                 background: var(--landing-yyy-dark-12);
               }
 
@@ -215,7 +216,8 @@ const isScrolling = computed(() => {
               background: var(--landing-yyy);
               color: var(--light-text);
 
-              &:hover {
+              &:hover,
+              &:focus {
                 background: var(--landing-yyy-dark-6);
                 color: var(--smoke-white);
               }
@@ -287,7 +289,8 @@ const isScrolling = computed(() => {
         .icon-link {
           background: var(--landing-yyy);
 
-          &:hover {
+          &:hover,
+          &:focus {
             background: var(--landing-yyy-dark-12);
           }
 
@@ -363,7 +366,8 @@ const isScrolling = computed(() => {
               align-items: center;
               padding: 16px;
 
-              &:hover {
+              &:hover,
+              &:focus {
                 background: var(--fade-grey-light-4);
               }
 
@@ -428,7 +432,8 @@ const isScrolling = computed(() => {
             border-color: var(--fade-grey-dark-3);
             box-shadow: var(--light-box-shadow);
 
-            &:hover {
+            &:hover,
+            &:focus {
               background: var(--white);
             }
 
@@ -599,7 +604,8 @@ const isScrolling = computed(() => {
                         transition: color 0.3s, background-color 0.3s, border-color 0.3s,
                           height 0.3s, width 0.3s;
 
-                        &:hover {
+                        &:hover,
+                        &:focus {
                           box-shadow: var(--light-box-shadow);
 
                           i {
@@ -955,7 +961,8 @@ const isScrolling = computed(() => {
               .dropdown-block {
                 background: var(--dark-sidebar-light-2) !important;
 
-                &:hover {
+                &:hover,
+                &:focus {
                   background: var(--dark-sidebar-light-5) !important;
                 }
 
@@ -983,7 +990,8 @@ const isScrolling = computed(() => {
               background: var(--dark-sidebar-light-2);
               border-color: var(--dark-sidebar-light-12);
 
-              &:hover {
+              &:hover,
+              &:focus {
                 background: var(--dark-sidebar-light-2);
               }
 
@@ -1036,7 +1044,8 @@ const isScrolling = computed(() => {
                           background: var(--dark-sidebar-light-4);
                           border-color: var(--dark-sidebar-light-12);
 
-                          &:hover {
+                          &:hover,
+                          &:focus {
                             i,
                             span {
                               color: var(--primary);
@@ -1089,7 +1098,8 @@ const isScrolling = computed(() => {
             background: transparent !important;
             border: none;
 
-            &:hover {
+            &:hover,
+            &:focus {
               background: var(--dark-sidebar-light-3) !important;
             }
           }
@@ -1103,7 +1113,8 @@ const isScrolling = computed(() => {
               .dropdown-head {
                 background: var(--dark-sidebar-light-2) !important;
 
-                &:hover {
+                &:hover,
+                &:focus {
                   background: var(--dark-sidebar-light-2) !important;
                 }
 
@@ -1126,7 +1137,8 @@ const isScrolling = computed(() => {
         .icon-link {
           background: var(--dark-sidebar-dark-2);
 
-          &:hover {
+          &:hover,
+          &:focus {
             background: var(--dark-sidebar-light-2);
           }
         }
@@ -1204,7 +1216,8 @@ const isScrolling = computed(() => {
                             background: var(--dark-sidebar-light-4);
                             border-color: var(--dark-sidebar-light-12);
 
-                            &:hover {
+                            &:hover,
+                            &:focus {
                               i,
                               span {
                                 color: var(--primary);
@@ -1352,7 +1365,8 @@ const isScrolling = computed(() => {
             color: var(--primary);
             opacity: 1;
 
-            &:hover {
+            &:hover,
+            &:focus {
               background: var(--dark-sidebar-dark-2);
             }
           }

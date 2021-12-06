@@ -131,7 +131,8 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
     border-radius: 16px;
     min-height: 300px;
 
-    &:hover {
+    &:hover,
+    &:focus {
       box-shadow: var(--light-box-shadow);
     }
 

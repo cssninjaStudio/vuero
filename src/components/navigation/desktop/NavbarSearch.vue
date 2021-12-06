@@ -184,7 +184,8 @@ const isScrolling = computed(() => y.value > 30)
               align-items: center;
               padding: 16px;
 
-              &:hover {
+              &:hover,
+              &:focus {
                 background: var(--fade-grey-light-4);
               }
 
@@ -372,7 +373,8 @@ const isScrolling = computed(() => y.value > 30)
           border: none;
           color: var(--light-text);
 
-          &:hover {
+          &:hover,
+          &:focus {
             background: var(--widget-grey-dark-2);
             color: var(--dark-text);
           }
@@ -470,7 +472,8 @@ const isScrolling = computed(() => y.value > 30)
               .dropdown-block {
                 background: var(--dark-sidebar-light-2) !important;
 
-                &:hover {
+                &:hover,
+                &:focus {
                   background: var(--dark-sidebar-light-5) !important;
                 }
 
@@ -491,7 +494,8 @@ const isScrolling = computed(() => y.value > 30)
         .icon-link {
           background: var(--landing-yyy);
 
-          &:hover {
+          &:hover,
+          &:focus {
             background: var(--landing-yyy-dark-12);
           }
 
@@ -507,7 +511,8 @@ const isScrolling = computed(() => y.value > 30)
               .dropdown-head {
                 background: var(--dark-sidebar-light-2) !important;
 
-                &:hover {
+                &:hover,
+                &:focus {
                   background: var(--dark-sidebar-light-2) !important;
                 }
 
@@ -538,7 +543,8 @@ const isScrolling = computed(() => y.value > 30)
             background: var(--dark-sidebar-dark-2) !important;
             border-color: var(--dark-sidebar-dark-2) !important;
 
-            &:hover {
+            &:hover,
+            &:focus {
               background: var(--dark-sidebar-light-4) !important;
               border-color: var(--dark-sidebar-light-4) !important;
               color: var(--white) !important;

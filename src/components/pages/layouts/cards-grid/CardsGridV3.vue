@@ -229,7 +229,8 @@ function getAvatarData(user: any): VAvatarProps {
         width: calc(50% - 4px);
         color: var(--light-text);
 
-        &:hover {
+        &:hover,
+        &:focus {
           border-color: var(--fade-grey-dark-4);
           color: var(--primary);
           box-shadow: var(--light-box-shadow);

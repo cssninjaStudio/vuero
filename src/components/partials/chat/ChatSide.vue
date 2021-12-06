@@ -206,7 +206,8 @@ const chat = useChat()
       .button {
         color: var(--light-text);
 
-        &:hover {
+        &:hover,
+        &:focus {
           box-shadow: var(--light-box-shadow);
         }
       }

@@ -131,7 +131,8 @@ const optionsSingle = [
 
     text-align: center;
 
-    &:hover {
+    &:hover,
+    &:focus {
       .button-wrap {
         > div {
           a {
@@ -185,7 +186,8 @@ const optionsSingle = [
           font-size: 0.9rem;
           transition: opacity 0.3s, color 0.3s;
 
-          &:hover {
+          &:hover,
+          &:focus {
             color: var(--primary);
           }
         }

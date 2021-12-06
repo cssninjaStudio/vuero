@@ -288,7 +288,8 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
           font-weight: 500;
           margin-top: 0.5rem;
 
-          &:hover {
+          &:hover,
+          &:focus {
             color: var(--smoke-white);
             opacity: 0.6;
           }

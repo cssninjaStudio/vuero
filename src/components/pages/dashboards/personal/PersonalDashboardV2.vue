@@ -354,7 +354,8 @@ const democheck = ref(['value_2'])
         font-weight: 500;
         margin-top: 0.5rem;
 
-        &:hover {
+        &:hover,
+        &:focus {
           color: var(--smoke-white);
           opacity: 0.6;
         }

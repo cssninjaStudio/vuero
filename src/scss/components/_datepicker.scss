@@ -178,7 +178,8 @@
     .vc-day-content {
       color: var(--dark-dark-text);
 
-      &:hover {
+      &:hover,
+      &:focus {
         background: var(--dark-sidebar-light-4) !important;
       }
     }

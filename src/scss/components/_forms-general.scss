@@ -138,7 +138,8 @@ label[for] {
     border-color: var(--dark-sidebar-light-4);
     color: var(--dark-dark-text);
 
-    &:hover {
+    &:hover,
+    &:focus {
       border-color: var(--dark-sidebar-light-12);
     }
 

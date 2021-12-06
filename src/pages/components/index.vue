@@ -361,7 +361,8 @@ useHead({
             font-weight: 500;
             transition: opacity 0.3s;
 
-            &:hover {
+            &:hover,
+            &:focus {
               opacity: 1;
             }
           }

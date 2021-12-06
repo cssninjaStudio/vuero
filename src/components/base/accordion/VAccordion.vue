@@ -100,7 +100,8 @@ const toggle = (key: number) => {
     padding: 1.5rem;
     display: block;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background: #f6f7f9;
     }
 
@@ -135,7 +136,8 @@ const toggle = (key: number) => {
       color: var(--dark-dark-text);
       border-color: var(--dark-sidebar-light-12);
 
-      &:hover {
+      &:hover,
+      &:focus {
         background: var(--dark-sidebar-light-6);
       }
 

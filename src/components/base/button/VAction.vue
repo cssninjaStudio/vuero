@@ -96,7 +96,8 @@ const props = withDefaults(defineProps<VActionProps>(), {
       border-color: var(--dark-sidebar-light-12);
       color: var(--dark-dark-text);
 
-      &:hover {
+      &:hover,
+      &:focus {
         background: var(--primary);
         border-color: var(--primary);
         color: var(--smoke-white);

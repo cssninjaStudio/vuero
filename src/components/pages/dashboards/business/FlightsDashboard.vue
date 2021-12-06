@@ -611,7 +611,8 @@ const options = ref(['All Flights'])
       margin-bottom: 1.5rem;
       box-shadow: none;
 
-      &:hover {
+      &:hover,
+      &:focus {
         box-shadow: var(--light-box-shadow);
 
         .route {
@@ -803,7 +804,8 @@ const options = ref(['All Flights'])
       .flight-summary {
         @include vuero-card--dark;
 
-        &:hover {
+        &:hover,
+        &:focus {
           border-color: var(--primary) !important;
         }
 

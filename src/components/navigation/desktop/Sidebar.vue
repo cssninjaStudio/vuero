@@ -469,7 +469,8 @@ const themeClasses = computed(() => {
             align-items: center;
             width: 100% !important;
 
-            &:hover:not(.is-button) {
+            &:hover,
+            &:focus:not(.is-button) {
               background: var(--fade-grey-light-3);
             }
           }
@@ -484,7 +485,8 @@ const themeClasses = computed(() => {
               font-size: 0.8rem;
               color: var(--muted-grey);
 
-              &:hover {
+              &:hover,
+              &:focus {
                 background: transparent !important;
               }
             }
@@ -564,7 +566,8 @@ const themeClasses = computed(() => {
         .dropdown-head {
           background: var(--dark-sidebar-light-2) !important;
 
-          &:hover {
+          &:hover,
+          &:focus {
             background: var(--dark-sidebar-light-2) !important;
           }
 
@@ -659,7 +662,8 @@ const themeClasses = computed(() => {
             .dropdown-head {
               background: var(--dark-sidebar-light-2) !important;
 
-              &:hover {
+              &:hover,
+              &:focus {
                 background: var(--dark-sidebar-light-2) !important;
               }
 

@@ -606,7 +606,8 @@ import {
           a {
             color: var(--light-text);
 
-            &:hover {
+            &:hover,
+            &:focus {
               color: var(--primary);
             }
 

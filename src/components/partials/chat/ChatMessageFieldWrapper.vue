@@ -111,7 +111,8 @@ const dropdown = useDropdown(dropdownElement)
       left: 0;
       z-index: 11;
 
-      &:hover {
+      &:hover,
+      &:focus {
         > div {
           .button {
             background: var(--fade-grey);
@@ -195,7 +196,8 @@ const dropdown = useDropdown(dropdownElement)
       width: 28px;
       height: 42px;
 
-      &:hover {
+      &:hover,
+      &:focus {
         .button {
           background: var(--fade-grey);
 
