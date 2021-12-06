@@ -35,21 +35,31 @@ const toggle = (key: number) => {
     :open="internalItemOpen === key || undefined"
     class="collapse"
   >
-    <summary
-      class="collapse-header"
-      tabindex="0"
-      @keydown.space.prevent="() => toggle(key)"
-      @click.prevent="() => toggle(key)"
-    >
-      <h3>{{ item.title }}</h3>
-      <div class="collapse-icon">
-        <VIcon v-if="withChevron" icon="feather:chevron-down" />
-        <VIcon v-else-if="!withChevron" icon="feather:plus" />
+    <slot name="collapse-item" :item="item" :index="key" :toggle="toggle">
+      <summary
+        class="collapse-header"
+        tabindex="0"
+        @keydown.space.prevent="() => toggle(key)"
+        @click.prevent="() => toggle(key)"
+      >
+        <h3>
+          <slot name="collapse-item-summary" :item="item" :index="key" :toggle="toggle">
+            {{ item.title }}
+          </slot>
+        </h3>
+        <div class="collapse-icon">
+          <VIcon v-if="withChevron" icon="feather:chevron-down" />
+          <VIcon v-else-if="!withChevron" icon="feather:plus" />
+        </div>
+      </summary>
+      <div class="collapse-content">
+        <p>
+          <slot name="collapse-item-content" :item="item" :index="key" :toggle="toggle">
+            {{ item.content }}
+          </slot>
+        </p>
       </div>
-    </summary>
-    <div class="collapse-content">
-      <p>{{ item.content }}</p>
-    </div>
+    </slot>
   </details>
 </template>
 

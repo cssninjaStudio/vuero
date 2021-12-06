@@ -114,7 +114,10 @@ useHead({
 
         <div class="column is-12 mt-5">
           <!--Props-->
-          <AccordionDefaultPropsDocumentation />
+          <AccordionPropsDocumentation />
+
+          <!--Slots-->
+          <AccordionSlotsDocumentation />
         </div>
       </div>
     </div>

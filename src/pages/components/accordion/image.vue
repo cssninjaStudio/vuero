@@ -82,6 +82,9 @@ useHead({
         <!--Props-->
         <AccordionImagePropsDocumentation />
 
+        <!--Slots-->
+        <AccordionImageSlotsDocumentation />
+
         <!--Events-->
         <AccordionImageEventsDocumentation />
       </div>
