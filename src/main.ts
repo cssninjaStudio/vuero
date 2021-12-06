@@ -10,6 +10,7 @@
  * @see /index.html
  * @see /vite.config.ts
  */
+import { AxiosInstance } from 'axios'
 import { App } from 'vue'
 import { Router } from 'vue-router'
 import { createApp } from './app'
@@ -41,7 +42,7 @@ async function registerGlobalComponents(app: App) {
 }
 
 /**
- * Here we are setting up router navigation guards
+ * Here we are setting up two router navigation guards
  *
  * We can add meta to pages either by declaring them manualy in the
  * routes declaration (see /@src/router.ts)
@@ -60,15 +61,39 @@ async function registerGlobalComponents(app: App) {
  *  // HTML content
  * </template>
  */
-function registerRouterNavigationGuards(router: Router) {
-  router.beforeEach((to /*, from*/) => {
+function registerRouterNavigationGuards(router: Router, api: AxiosInstance) {
+  router.beforeEach(async (to, from) => {
     const userSession = useUserSession()
+    const notyf = useNotyf()
 
-    if (to.meta.requiresAuth && !userSession.isLoggedIn) {
-      // this route requires auth, check if logged in
+    if (!from?.name && userSession.isLoggedIn) {
+      // 1. If the name is not set, it means we are navigating to the first page
+      // and we are logged in, so we should check user information from the server
+      try {
+        // Do api request call to retreive user profile.
+        // Note that the api is provided with json-server
+        const { data: user } = await api.get('/api/users/me')
+        userSession.setUser(user)
+        notyf.success(`Welcome back, ${user.name}`)
+      } catch (err) {
+        // delete stored token if it fails
+        userSession.logoutUser()
+        notyf.error('Your session is invalid')
+
+        if (to.meta.requiresAuth) {
+          // redirect the user somewhere
+          return {
+            // Will follow the redirection set in /@src/pages/auth/index.vue
+            name: 'auth',
+            // save the location we were at to come back later
+            query: { redirect: to.fullPath },
+          }
+        }
+      }
+    } else if (to.meta.requiresAuth && !userSession.isLoggedIn) {
+      // 2. If the requires auth via requiresAuth meta, check if user is logged in
       // if not, redirect to login page.
-      const notif = useNotyf()
-      notif.error({
+      notyf.error({
         message: 'Sorry, you should loggin to access this section (anything will work)',
         duration: 7000,
       })
@@ -88,9 +113,9 @@ function registerRouterNavigationGuards(router: Router) {
  *
  * @see /@src/app.ts for more detailed informations
  */
-createApp().then(async ({ app, router }) => {
+createApp().then(async ({ app, router, api }) => {
   // register router middleware
-  registerRouterNavigationGuards(router)
+  registerRouterNavigationGuards(router, api)
 
   // register global components
   await registerGlobalComponents(app)

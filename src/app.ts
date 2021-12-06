@@ -7,25 +7,18 @@ import { createRouter } from './router'
 import VueroApp from './VueroApp.vue'
 
 import { initDarkmode } from '/@src/stores/darkmode'
-import { provideApi } from '/@src/composable/useApi'
+import { createApi } from '/@src/composable/useApi'
 
 export async function createApp() {
   const head = createHead()
   const i18n = createI18n()
   const router = createRouter()
   const pinia = createPinia()
+  const api = createApi()
 
   const app = createClientApp({
     // This is the global app setup function
     setup() {
-      /**
-       * We provide user state and api to our entire app
-       * We can then inject them later in any component
-       *
-       * @see /@src/composable/useApi
-       */
-      provideApi()
-
       /**
        * Initialize the darkmode watcher
        *
@@ -64,6 +57,7 @@ export async function createApp() {
 
   return {
     app,
+    api,
     router,
     i18n,
     head,
