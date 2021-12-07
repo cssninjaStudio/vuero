@@ -65,7 +65,7 @@ const selectCustomer = (customer: WizardCustomer | null) => {
       </VBlock>
 
       <template v-else-if="filteredCustomers.length > 0">
-        <transition-group name="list" tag="div">
+        <TransitionGroup name="list" tag="div">
           <VBlock
             v-for="customer in filteredCustomers"
             :key="customer.name"
@@ -86,13 +86,13 @@ const selectCustomer = (customer: WizardCustomer | null) => {
               />
             </template>
           </VBlock>
-        </transition-group>
+        </TransitionGroup>
       </template>
     </div>
 
     <div class="project-dates">
       <h4>Project Time Frame</h4>
-      <v-date-picker v-model="wizard.data.timeFrame" is-range color="green" trim-weeks>
+      <VDatePicker v-model="wizard.data.timeFrame" is-range color="green" trim-weeks>
         <template #default="{ inputValue, inputEvents }">
           <div class="project-dates-inner">
             <div class="project-date">
@@ -124,7 +124,7 @@ const selectCustomer = (customer: WizardCustomer | null) => {
             </div>
           </div>
         </template>
-      </v-date-picker>
+      </VDatePicker>
     </div>
 
     <div class="project-budget">

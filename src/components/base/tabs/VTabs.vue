@@ -108,9 +108,9 @@ function toggle(value: string) {
     </div>
 
     <div class="tab-content is-active">
-      <transition :name="props.slow ? 'fade-slow' : 'fade-fast'" mode="out-in">
+      <Transition :name="props.slow ? 'fade-slow' : 'fade-fast'" mode="out-in">
         <slot name="tab" :activeValue="activeValue"></slot>
-      </transition>
+      </Transition>
     </div>
   </div>
 </template>

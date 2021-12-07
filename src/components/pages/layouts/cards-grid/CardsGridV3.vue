@@ -93,7 +93,7 @@ function getAvatarData(user: any): VAvatarProps {
       </VPlaceholderPage>
 
       <!--Card Grid v3-->
-      <transition-group
+      <TransitionGroup
         name="list"
         tag="div"
         class="columns is-multiline is-flex-tablet-p is-half-tablet-p"
@@ -144,7 +144,7 @@ function getAvatarData(user: any): VAvatarProps {
             </div>
           </div>
         </div>
-      </transition-group>
+      </TransitionGroup>
     </div>
   </div>
 </template>

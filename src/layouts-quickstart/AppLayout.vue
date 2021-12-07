@@ -2,7 +2,7 @@
 import { ref, watchPostEffect, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
-import type { SidebarTheme } from '/@src/stores/layoutSwitcher'
+import type { SidebarTheme } from '/@src/components/navigation/desktop/Sidebar.vue'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 
 const props = withDefaults(
@@ -96,11 +96,11 @@ watch(
     </MobileSidebar>
 
     <!-- Mobile subsidebar links -->
-    <transition name="slide-x">
+    <Transition name="slide-x">
       <DashboardsMobileSubsidebar
         v-if="isMobileSidebarOpen && activeMobileSubsidebar === 'dashboard'"
       />
-    </transition>
+    </Transition>
 
     <Sidebar :theme="props.theme" :is-open="isDesktopSidebarOpen">
       <template #links>
@@ -123,12 +123,12 @@ watch(
       </template>
     </Sidebar>
 
-    <transition name="slide-x">
+    <Transition name="slide-x">
       <DashboardsSubsidebar
         v-if="isDesktopSidebarOpen && activeMobileSubsidebar === 'dashboard'"
         @close="isDesktopSidebarOpen = false"
       />
-    </transition>
+    </Transition>
 
     <LanguagesPanel />
 

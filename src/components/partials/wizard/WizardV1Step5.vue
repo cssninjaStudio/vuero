@@ -126,7 +126,7 @@ watchEffect(() => {
       <div class="project-team-body">
         <div class="members-list">
           <template v-if="filteredUsers.length > 0">
-            <transition-group name="list" tag="div">
+            <TransitionGroup name="list" tag="div">
               <VBlock
                 v-for="teammate in filteredUsers"
                 :key="teammate.name"
@@ -149,10 +149,10 @@ watchEffect(() => {
                   </div>
                 </template>
               </VBlock>
-            </transition-group>
+            </TransitionGroup>
           </template>
           <template v-if="wizard.data.teammates.length > 0">
-            <transition-group name="list-complete" tag="div">
+            <TransitionGroup name="list-complete" tag="div">
               <VBlock
                 v-for="teammate in wizard.data.teammates"
                 :key="teammate.name"
@@ -236,7 +236,7 @@ watchEffect(() => {
                   </div>
                 </template>
               </VBlock>
-            </transition-group>
+            </TransitionGroup>
           </template>
           <div v-else class="empty-wrap has-text-centered">
             <span>No team members yet</span>

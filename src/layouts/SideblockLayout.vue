@@ -89,7 +89,7 @@ watch(
         </li>
         <li>
           <a
-            aria-label="Dsiplay layout content"
+            aria-label="Display layout content"
             :class="[activeMobileSubsidebar === 'layout' && 'is-active']"
             tabindex="0"
             @keydown.space.prevent="activeMobileSubsidebar = 'layout'"
@@ -100,7 +100,7 @@ watch(
         </li>
         <li>
           <a
-            aria-label="Dsiplay element content"
+            aria-label="Display element content"
             :class="[activeMobileSubsidebar === 'elements' && 'is-active']"
             tabindex="0"
             @keydown.space.prevent="activeMobileSubsidebar = 'elements'"
@@ -111,7 +111,7 @@ watch(
         </li>
         <li>
           <a
-            aria-label="Dsiplay components content"
+            aria-label="Display components content"
             :class="[activeMobileSubsidebar === 'components' && 'is-active']"
             tabindex="0"
             @keydown.space.prevent="activeMobileSubsidebar = 'components'"
@@ -147,7 +147,7 @@ watch(
     </MobileSidebar>
 
     <!-- Mobile subsidebar links -->
-    <transition name="slide-x">
+    <Transition name="slide-x">
       <LayoutsMobileSubsidebar
         v-if="isMobileSideblockOpen && activeMobileSubsidebar === 'layout'"
       />
@@ -160,12 +160,12 @@ watch(
       <ElementsMobileSubsidebar
         v-else-if="isMobileSideblockOpen && activeMobileSubsidebar === 'elements'"
       />
-    </transition>
+    </Transition>
 
     <!-- Desktop navigation -->
     <CircularMenu />
 
-    <transition name="slide-x">
+    <Transition name="slide-x">
       <Sideblock v-if="isDesktopSideblockOpen" :theme="props.theme">
         <template #header>
           <RouterLink :to="{ name: 'index' }" class="sidebar-block-logo">
@@ -240,9 +240,9 @@ watch(
               <i class="lnil lnil-analytics-alt-1"></i>
               <span>Financial report</span>
             </RouterLink>
-            <RouterLink :to="{ name: 'sidebar-dashboards-analytics' }" class="is-submenu">
+            <RouterLink :to="{ name: 'sidebar-dashboards-company' }" class="is-submenu">
               <i class="lnil lnil-pie-chart"></i>
-              <span>Social report</span>
+              <span>Stocks report</span>
             </RouterLink>
             <RouterLink :to="{ name: 'sidebar-layouts-list-view-3' }" class="is-submenu">
               <i class="lnil lnil-stats-up"></i>
@@ -280,6 +280,171 @@ watch(
               <span>Transactions</span>
             </RouterLink>
           </VCollapseLinks>
+
+          <VCollapseLinks v-model:open="openSideblockLinks" collapse-id="starters">
+            <template #header>
+              <div class="icon">
+                <i aria-hidden="true" class="iconify" data-icon="feather:zap"></i>
+              </div>
+              Starters
+              <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+            </template>
+
+            <RouterLink
+              :to="{ name: 'starters-sidebar-blank-page-1' }"
+              class="is-submenu"
+            >
+              <i aria-hidden="true" class="lnil lnil-layout"></i>
+              <span>Regular Sidebar</span>
+            </RouterLink>
+            <RouterLink
+              :to="{ name: 'starters-sidebar-blank-page-2' }"
+              class="is-submenu"
+            >
+              <i aria-hidden="true" class="lnil lnil-layout"></i>
+              <span>Curved Sidebar</span>
+            </RouterLink>
+            <RouterLink
+              :to="{ name: 'starters-sidebar-blank-page-3' }"
+              class="is-submenu"
+            >
+              <i aria-hidden="true" class="lnil lnil-layout"></i>
+              <span>Colored Sidebar</span>
+            </RouterLink>
+            <RouterLink
+              :to="{ name: 'starters-sidebar-blank-page-4' }"
+              class="is-submenu"
+            >
+              <i aria-hidden="true" class="lnil lnil-layout"></i>
+              <span>Curved Colored</span>
+            </RouterLink>
+            <RouterLink
+              :to="{ name: 'starters-sidebar-blank-page-4' }"
+              class="is-submenu"
+            >
+              <i aria-hidden="true" class="lnil lnil-layout"></i>
+              <span>Curved Colored Sidebar</span>
+            </RouterLink>
+            <RouterLink
+              :to="{ name: 'starters-sidebar-blank-page-5' }"
+              class="is-submenu"
+            >
+              <i aria-hidden="true" class="lnil lnil-layout"></i>
+              <span>Labels Sidebar</span>
+            </RouterLink>
+            <RouterLink
+              :to="{ name: 'starters-sidebar-blank-page-6' }"
+              class="is-submenu"
+            >
+              <i aria-hidden="true" class="lnil lnil-layout"></i>
+              <span>Labels Hover Sidebar</span>
+            </RouterLink>
+            <RouterLink
+              :to="{ name: 'starters-sidebar-blank-page-7' }"
+              class="is-submenu"
+            >
+              <i aria-hidden="true" class="lnil lnil-layout"></i>
+              <span>Float Sidebar</span>
+            </RouterLink>
+
+            <hr class="navbar-divider" />
+
+            <RouterLink
+              :to="{ name: 'starters-sideblock-blank-page-1' }"
+              class="is-submenu"
+            >
+              <i aria-hidden="true" class="lnil lnil-layout"></i>
+              <span>Regular Sideblock</span>
+              <VTag
+                class="ml-2"
+                label="v2.2"
+                color="primary"
+                size="tiny"
+                outlined
+                curved
+              />
+            </RouterLink>
+            <RouterLink
+              :to="{ name: 'starters-sideblock-blank-page-2' }"
+              class="is-submenu"
+            >
+              <i aria-hidden="true" class="lnil lnil-layout"></i>
+              <span>Curved Sideblock</span>
+              <VTag
+                class="ml-2"
+                label="v2.2"
+                color="primary"
+                size="tiny"
+                outlined
+                curved
+              />
+            </RouterLink>
+            <RouterLink
+              :to="{ name: 'starters-sideblock-blank-page-3' }"
+              class="is-submenu"
+            >
+              <i aria-hidden="true" class="lnil lnil-layout"></i>
+              <span>Colored Sideblock</span>
+              <VTag
+                class="ml-2"
+                label="v2.2"
+                color="primary"
+                size="tiny"
+                outlined
+                curved
+              />
+            </RouterLink>
+            <RouterLink
+              :to="{ name: 'starters-sideblock-blank-page-4' }"
+              class="is-submenu"
+            >
+              <i aria-hidden="true" class="lnil lnil-layout"></i>
+              <span>Curved Colored</span>
+              <VTag
+                class="ml-2"
+                label="v2.2"
+                color="primary"
+                size="tiny"
+                outlined
+                curved
+              />
+            </RouterLink>
+
+            <hr class="navbar-divider" />
+
+            <RouterLink :to="{ name: 'starters-navbar-blank-page-1' }" class="is-submenu">
+              <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
+              <span>Regular Navbar</span>
+            </RouterLink>
+            <RouterLink :to="{ name: 'starters-navbar-blank-page-2' }" class="is-submenu">
+              <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
+              <span>Fading Navbar</span>
+            </RouterLink>
+            <RouterLink :to="{ name: 'starters-navbar-blank-page-3' }" class="is-submenu">
+              <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
+              <span>Colored Navbar</span>
+            </RouterLink>
+            <RouterLink :to="{ name: 'starters-navbar-blank-page-4' }" class="is-submenu">
+              <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
+              <span>Dropdown Navbar</span>
+            </RouterLink>
+            <RouterLink :to="{ name: 'starters-navbar-blank-page-5' }" class="is-submenu">
+              <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
+              <span>Colored Dropdown</span>
+            </RouterLink>
+            <RouterLink :to="{ name: 'starters-navbar-blank-page-6' }" class="is-submenu">
+              <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
+              <span>Clean Navbar</span>
+            </RouterLink>
+            <RouterLink :to="{ name: 'starters-navbar-blank-page-7' }" class="is-submenu">
+              <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
+              <span>Clean Center Navbar</span>
+            </RouterLink>
+            <RouterLink :to="{ name: 'starters-navbar-blank-page-8' }" class="is-submenu">
+              <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
+              <span>Clean Fade Navbar</span>
+            </RouterLink>
+          </VCollapseLinks>
         </template>
 
         <template #bottom-links>
@@ -302,7 +467,7 @@ watch(
           </a>
         </template>
       </Sideblock>
-    </transition>
+    </Transition>
 
     <LanguagesPanel />
     <ActivityPanel />

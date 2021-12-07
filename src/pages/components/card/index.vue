@@ -186,7 +186,7 @@ useHead({
                   class="no-margin"
                 >
                   <template #icon>
-                    <tippy
+                    <Tippy
                       class="has-help-cursor"
                       interactive
                       :offset="[0, 10]"
@@ -199,7 +199,7 @@ useHead({
                       <template #content>
                         <UserPopoverContent :user="popovers.user19" />
                       </template>
-                    </tippy>
+                    </Tippy>
                   </template>
                 </VBlock>
 
@@ -224,7 +224,7 @@ useHead({
                   class="no-margin"
                 >
                   <template #icon>
-                    <tippy
+                    <Tippy
                       class="has-help-cursor"
                       interactive
                       :offset="[0, 10]"
@@ -237,7 +237,7 @@ useHead({
                       <template #content>
                         <UserPopoverContent :user="popovers.user19" />
                       </template>
-                    </tippy>
+                    </Tippy>
                   </template>
                 </VBlock>
 
@@ -261,7 +261,7 @@ useHead({
                   class="no-margin"
                 >
                   <template #icon>
-                    <tippy
+                    <Tippy
                       class="has-help-cursor"
                       interactive
                       :offset="[0, 10]"
@@ -274,7 +274,7 @@ useHead({
                       <template #content>
                         <UserPopoverContent :user="popovers.user19" />
                       </template>
-                    </tippy>
+                    </Tippy>
                   </template>
                 </VBlock>
 

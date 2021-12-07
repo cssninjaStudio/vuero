@@ -104,11 +104,11 @@ useHead({
                   </dd>
                 </dl>
 
-                <transition name="fade-fast">
+                <Transition name="fade-fast">
                   <span v-if="copied && text === getSnippet(icon)" class="is-copied">
                     copied!
                   </span>
-                </transition>
+                </Transition>
               </li>
             </ul>
           </div>

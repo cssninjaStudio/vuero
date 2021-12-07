@@ -136,7 +136,7 @@ const filteredData = computed(() => {
           rounded
         >
           <template #body>
-            <transition-group name="list" tag="div" class="flex-list-inner">
+            <TransitionGroup name="list" tag="div" class="flex-list-inner">
               <!--Table item-->
               <div v-for="item in filteredData" :key="item.id" class="flex-table-item">
                 <VFlexTableCell :column="{ media: true, grow: true }">
@@ -173,7 +173,7 @@ const filteredData = computed(() => {
                   <ProjectListDropdown />
                 </VFlexTableCell>
               </div>
-            </transition-group>
+            </TransitionGroup>
           </template>
         </VFlexTable>
 

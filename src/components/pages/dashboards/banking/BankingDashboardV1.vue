@@ -245,7 +245,7 @@ import {
 
               <div class="people-wrap">
                 <div class="people">
-                  <tippy
+                  <Tippy
                     class="has-help-cursor"
                     interactive
                     :offset="[0, 10]"
@@ -255,8 +255,8 @@ import {
                     <template #content>
                       <UserPopoverContent :user="popovers.user122" />
                     </template>
-                  </tippy>
-                  <tippy
+                  </Tippy>
+                  <Tippy
                     class="has-help-cursor"
                     interactive
                     :offset="[0, 10]"
@@ -266,8 +266,8 @@ import {
                     <template #content>
                       <UserPopoverContent :user="popovers.user18" />
                     </template>
-                  </tippy>
-                  <tippy
+                  </Tippy>
+                  <Tippy
                     class="has-help-cursor"
                     interactive
                     :offset="[0, 10]"
@@ -277,8 +277,8 @@ import {
                     <template #content>
                       <UserPopoverContent :user="popovers.user123" />
                     </template>
-                  </tippy>
-                  <tippy
+                  </Tippy>
+                  <Tippy
                     class="has-help-cursor"
                     interactive
                     :offset="[0, 10]"
@@ -288,7 +288,7 @@ import {
                     <template #content>
                       <UserPopoverContent :user="popovers.user7" />
                     </template>
-                  </tippy>
+                  </Tippy>
                 </div>
                 <div class="actions">
                   <span>See all Contacts</span>

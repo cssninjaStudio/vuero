@@ -113,7 +113,7 @@ function getAvatarData(user: UserPopover): VAvatarProps {
           <div class="recent-block">
             <VBlock title="Alice C." subtitle="Software Engineer" center>
               <template #icon>
-                <tippy
+                <Tippy
                   class="has-help-cursor"
                   interactive
                   :offset="[0, 10]"
@@ -123,13 +123,13 @@ function getAvatarData(user: UserPopover): VAvatarProps {
                   <template #content>
                     <UserPopoverContent :user="popovers.user7" />
                   </template>
-                </tippy>
+                </Tippy>
               </template>
             </VBlock>
 
             <VBlock title="Tara S." subtitle="UI/UX Designer" center>
               <template #icon>
-                <tippy
+                <Tippy
                   class="has-help-cursor"
                   interactive
                   :offset="[0, 10]"
@@ -139,13 +139,13 @@ function getAvatarData(user: UserPopover): VAvatarProps {
                   <template #content>
                     <UserPopoverContent :user="popovers.user13" />
                   </template>
-                </tippy>
+                </Tippy>
               </template>
             </VBlock>
 
             <VBlock title="Jimmy H." subtitle="Project Manager" center>
               <template #icon>
-                <tippy
+                <Tippy
                   class="has-help-cursor"
                   interactive
                   :offset="[0, 10]"
@@ -155,7 +155,7 @@ function getAvatarData(user: UserPopover): VAvatarProps {
                   <template #content>
                     <UserPopoverContent :user="popovers.user22" />
                   </template>
-                </tippy>
+                </Tippy>
               </template>
             </VBlock>
           </div>

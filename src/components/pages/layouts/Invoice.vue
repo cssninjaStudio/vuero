@@ -115,12 +115,12 @@ const totalColumns = {
     <div class="invoice-body">
       <div class="invoice-card">
         <div class="invoice-section is-flex is-bordered">
-          <tippy class="has-help-cursor" interactive placement="bottom-start">
+          <Tippy class="has-help-cursor" interactive placement="bottom-start">
             <VAvatar size="large" picture="/demo/avatars/13.jpg" />
             <template #content>
               <UserPopoverContent :user="popovers.user13" />
             </template>
-          </tippy>
+          </Tippy>
 
           <div class="meta">
             <h3>Tara Svenson</h3>

@@ -13,40 +13,13 @@ import { computed, ref, defineAsyncComponent } from 'vue'
 import { useRoute } from 'vue-router'
 import { acceptHMRUpdate, defineStore } from 'pinia'
 
-// import NavbarLayout from '/@src/layouts/NavbarLayout.vue'
-// import NavbarDropdownLayout from '/@src/layouts/NavbarDropdownLayout.vue'
-// import NavbarSearchLayout from '/@src/layouts/NavbarSearchLayout.vue'
-// import SidebarLayout from '/@src/layouts/SidebarLayout.vue'
-// import SideblockLayout from '/@src/layouts/SideblockLayout.vue'
-
-export type SidebarTheme =
-  | 'default'
-  | 'color'
-  | 'color-curved'
-  | 'curved'
-  | 'float'
-  | 'labels'
-  | 'labels-hover'
-
-export type SideblockTheme = 'default' | 'curved' | 'color' | 'color-curved'
+import type { SidebarTheme } from '/@src/components/navigation/desktop/Sidebar.vue'
+import type { SideblockTheme } from '/@src/components/navigation/desktop/Sideblock.vue'
 
 export const useLayoutSwitcher = defineStore('layoutSwitcher', () => {
   const route = useRoute()
 
   // utils
-
-  // const EmptyLayout = defineComponent({
-  //   setup(props, { slots }) {
-  //     return () =>
-  //       h(
-  //         'div',
-  //         {},
-  //         {
-  //           default: () => slots.default?.() ?? '',
-  //         }
-  //       )
-  //   },
-  // })
 
   const isNavbarRoute = computed(() => route?.fullPath?.startsWith?.('/navbar/'))
   const isSidebarRoute = computed(() => route?.fullPath?.startsWith?.('/sidebar/'))
@@ -59,7 +32,6 @@ export const useLayoutSwitcher = defineStore('layoutSwitcher', () => {
   )
 
   // navbar
-
   const NavbarLayout = defineAsyncComponent({
     loader: () => import('/@src/layouts/NavbarLayout.vue'),
     delay: 0,
@@ -112,7 +84,6 @@ export const useLayoutSwitcher = defineStore('layoutSwitcher', () => {
   })
 
   // sidebar
-
   const SidebarLayout = defineAsyncComponent({
     loader: () => import('/@src/layouts/SidebarLayout.vue'),
     delay: 0,
@@ -181,19 +152,15 @@ export const useLayoutSwitcher = defineStore('layoutSwitcher', () => {
       }
     },
     set: (value) => {
-      console.log('dynamicLayoutId set', value)
       if (navbarComponentsIds.includes(value)) {
-        console.log('navbarComponentsIds')
         navbarLayoutId.value = value as NavbarComponentsId
         return
       }
 
       if (sidebarComponentsIds.includes(value)) {
-        console.log('sidebarComponentsIds')
         sidebarLayoutId.value = value as SidebarComponentsId
         return
       }
-      console.log('not found:::')
     },
   })
 
@@ -220,7 +187,6 @@ export const useLayoutSwitcher = defineStore('layoutSwitcher', () => {
   })
 
   function setDynamicLayoutId(theme: NavbarComponentsId | SidebarComponentsId) {
-    console.log('setDynamicLayoutId', theme)
     dynamicLayoutId.value = theme
   }
 
@@ -235,13 +201,11 @@ export const useLayoutSwitcher = defineStore('layoutSwitcher', () => {
     navbarLayoutId,
     navbarLayoutComponent,
     navbarLayoutTheme,
-    isNavbarLayout: isNavbarRoute,
-    isSidebarLayout: isSidebarRoute,
+    isNavbarRoute,
+    isSidebarRoute,
     navbarLayoutLink,
     sidebarLayoutLink,
     hasDynamicLayout,
-    // setNavbarLayoutId,
-    // setSidebarTheme,
   } as const
 })
 

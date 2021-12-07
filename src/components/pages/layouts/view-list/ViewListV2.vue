@@ -95,7 +95,7 @@ const filteredData = computed(() => {
         :class="[activeTab === 'active' && 'is-active']"
       >
         <div class="list-view-inner">
-          <transition-group name="list-complete" tag="div">
+          <TransitionGroup name="list-complete" tag="div">
             <div v-for="item in filteredData" :key="item.id" class="list-view-item">
               <div class="list-view-item-inner">
                 <img :src="item.picture" alt="" />
@@ -216,7 +216,7 @@ const filteredData = computed(() => {
                 </div>
               </div>
             </div>
-          </transition-group>
+          </TransitionGroup>
         </div>
 
         <VFlexPagination

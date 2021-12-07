@@ -51,26 +51,26 @@ const accept = async () => {
           </div>
           <div class="people-wrap">
             <div class="people">
-              <tippy class="has-help-cursor" interactive placement="bottom">
+              <Tippy class="has-help-cursor" interactive placement="bottom">
                 <VAvatar size="small" picture="/demo/avatars/21.jpg" />
                 <template #content>
                   <UserPopoverContent :user="popovers.user21" />
                 </template>
-              </tippy>
+              </Tippy>
 
-              <tippy class="has-help-cursor" interactive placement="bottom">
+              <Tippy class="has-help-cursor" interactive placement="bottom">
                 <VAvatar size="small" color="h-purple" initials="SC" />
                 <template #content>
                   <UserPopoverContent :user="popovers.user120" />
                 </template>
-              </tippy>
+              </Tippy>
 
-              <tippy class="has-help-cursor" interactive placement="bottom">
+              <Tippy class="has-help-cursor" interactive placement="bottom">
                 <VAvatar size="small" picture="/demo/avatars/39.jpg" />
                 <template #content>
                   <UserPopoverContent :user="popovers.user39" />
                 </template>
-              </tippy>
+              </Tippy>
             </div>
             <div class="people-text">
               <p>And 5 others are already members of this project</p>

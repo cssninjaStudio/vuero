@@ -22,7 +22,7 @@ async function registerGlobalComponents(app: App) {
   const VCalendar = (await import('v-calendar')).default
   const VueMultiselect = (await import('@vueform/multiselect')).default
   const VueSlider = (await import('@vueform/slider')).default
-  const VueTippy = (await import('vue-tippy')).default
+  const { default: VueTippy, Tippy } = await import('vue-tippy')
 
   const background = (await import('./directives/background')).default
   const tooltip = (await import('./directives/tooltip')).default
@@ -34,6 +34,7 @@ async function registerGlobalComponents(app: App) {
     },
   })
 
+  app.component('Tippy', Tippy)
   app.component(VueMultiselect.name, VueMultiselect)
   app.component(VueSlider.name, VueSlider)
 

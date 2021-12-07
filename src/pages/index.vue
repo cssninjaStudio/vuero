@@ -88,7 +88,7 @@ useHead({
         <div class="container">
           <!--Stacks-->
           <div class="stacks">
-            <tippy class="has-help-cursor" interactive placement="top">
+            <Tippy class="has-help-cursor" interactive placement="top">
               <div class="stack">
                 <img src="/images/icons/stacks/vuejs.svg" alt="" />
               </div>
@@ -105,9 +105,9 @@ useHead({
                   }"
                 />
               </template>
-            </tippy>
+            </Tippy>
 
-            <tippy class="has-help-cursor" interactive placement="top">
+            <Tippy class="has-help-cursor" interactive placement="top">
               <div class="stack">
                 <img src="/images/icons/stacks/vite.svg" alt="" />
               </div>
@@ -124,9 +124,9 @@ useHead({
                   }"
                 />
               </template>
-            </tippy>
+            </Tippy>
 
-            <tippy class="has-help-cursor" interactive placement="top">
+            <Tippy class="has-help-cursor" interactive placement="top">
               <div class="stack">
                 <img src="/images/icons/stacks/bulma.svg" alt="" />
               </div>
@@ -143,9 +143,9 @@ useHead({
                   }"
                 />
               </template>
-            </tippy>
+            </Tippy>
 
-            <tippy class="has-help-cursor" interactive placement="top">
+            <Tippy class="has-help-cursor" interactive placement="top">
               <div class="stack">
                 <img src="/images/icons/stacks/sass.svg" alt="" />
               </div>
@@ -162,9 +162,9 @@ useHead({
                   }"
                 />
               </template>
-            </tippy>
+            </Tippy>
 
-            <tippy class="has-help-cursor" interactive placement="top">
+            <Tippy class="has-help-cursor" interactive placement="top">
               <div class="stack">
                 <img src="/images/icons/stacks/typescript.svg" alt="" />
               </div>
@@ -181,7 +181,7 @@ useHead({
                   }"
                 />
               </template>
-            </tippy>
+            </Tippy>
           </div>
 
           <!--Title-->

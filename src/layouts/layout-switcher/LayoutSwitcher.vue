@@ -85,7 +85,7 @@ const layoutComponent = (slug: string) => {
           <template #tab="{ activeValue }">
             <div>
               <div class="has-slimscroll layout-selector">
-                <transition name="fade-fast" mode="out-in">
+                <Transition name="fade-fast" mode="out-in">
                   <div
                     v-if="activeValue === 'navbar'"
                     class="columns is-multiline is-half-mobile-p"
@@ -744,7 +744,7 @@ const layoutComponent = (slug: string) => {
                         :to="layoutSwitcher.sidebarLayoutLink"
                         class="layout-item"
                         :class="[
-                          layoutSwitcher.isSidebarLayout &&
+                          layoutSwitcher.isSidebarRoute &&
                             layoutSwitcher.dynamicLayoutId === 'sideblock-default' &&
                             'is-active',
                         ]"
@@ -763,12 +763,12 @@ const layoutComponent = (slug: string) => {
                       >
                         <img
                           class="light-image-block"
-                          src="/images/icons/layouts/layout-1.svg"
+                          src="/images/icons/layouts/layout-13.svg"
                           alt=""
                         />
                         <img
                           class="dark-image-block"
-                          src="/images/icons/layouts/layout-1-dark.svg"
+                          src="/images/icons/layouts/layout-13-dark.svg"
                           alt=""
                         />
                         <h3>Default Sideblock</h3>
@@ -787,7 +787,7 @@ const layoutComponent = (slug: string) => {
                         :to="layoutSwitcher.sidebarLayoutLink"
                         class="layout-item"
                         :class="[
-                          layoutSwitcher.isSidebarLayout &&
+                          layoutSwitcher.isSidebarRoute &&
                             layoutSwitcher.dynamicLayoutId === 'sideblock-color' &&
                             'is-active',
                         ]"
@@ -806,12 +806,12 @@ const layoutComponent = (slug: string) => {
                       >
                         <img
                           class="light-image-block"
-                          src="/images/icons/layouts/layout-2.svg"
+                          src="/images/icons/layouts/layout-15.svg"
                           alt=""
                         />
                         <img
                           class="dark-image-block"
-                          src="/images/icons/layouts/layout-2-dark.svg"
+                          src="/images/icons/layouts/layout-15-dark.svg"
                           alt=""
                         />
                         <h3>Colored Sideblock</h3>
@@ -830,7 +830,7 @@ const layoutComponent = (slug: string) => {
                         :to="layoutSwitcher.sidebarLayoutLink"
                         class="layout-item"
                         :class="[
-                          layoutSwitcher.isSidebarLayout &&
+                          layoutSwitcher.isSidebarRoute &&
                             layoutSwitcher.dynamicLayoutId === 'sideblock-curved' &&
                             'is-active',
                         ]"
@@ -849,12 +849,12 @@ const layoutComponent = (slug: string) => {
                       >
                         <img
                           class="light-image-block"
-                          src="/images/icons/layouts/layout-3.svg"
+                          src="/images/icons/layouts/layout-14.svg"
                           alt=""
                         />
                         <img
                           class="dark-image-block"
-                          src="/images/icons/layouts/layout-3-dark.svg"
+                          src="/images/icons/layouts/layout-14-dark.svg"
                           alt=""
                         />
                         <h3>Curved Sideblock</h3>
@@ -873,7 +873,7 @@ const layoutComponent = (slug: string) => {
                         :to="layoutSwitcher.sidebarLayoutLink"
                         class="layout-item"
                         :class="[
-                          layoutSwitcher.isSidebarLayout &&
+                          layoutSwitcher.isSidebarRoute &&
                             layoutSwitcher.dynamicLayoutId === 'sideblock-color-curved' &&
                             'is-active',
                         ]"
@@ -892,12 +892,12 @@ const layoutComponent = (slug: string) => {
                       >
                         <img
                           class="light-image-block"
-                          src="/images/icons/layouts/layout-4.svg"
+                          src="/images/icons/layouts/layout-16.svg"
                           alt=""
                         />
                         <img
                           class="dark-image-block"
-                          src="/images/icons/layouts/layout-4-dark.svg"
+                          src="/images/icons/layouts/layout-16-dark.svg"
                           alt=""
                         />
                         <h3>Curved Colored</h3>
@@ -912,7 +912,7 @@ const layoutComponent = (slug: string) => {
                       </RouterLink>
                     </div>
                   </div>
-                </transition>
+                </Transition>
               </div>
 
               <VMessage>

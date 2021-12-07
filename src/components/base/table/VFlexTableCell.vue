@@ -258,7 +258,7 @@ const props = withDefaults(defineProps<VFlexTableCellProps>(), {
     color: var(--light-text);
 
     .iconify {
-      opacity: 0%;
+      opacity: 0;
       transition: opacity 0.3s;
     }
 
@@ -267,7 +267,7 @@ const props = withDefaults(defineProps<VFlexTableCellProps>(), {
       color: var(--primary);
 
       .iconify {
-        opacity: 100%;
+        opacity: 1;
       }
     }
   }

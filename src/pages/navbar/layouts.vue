@@ -14,9 +14,9 @@ const route = useRoute()
   >
     <!-- Content Wrapper -->
     <RouterView v-slot="{ Component }">
-      <transition name="translate-page-x" mode="out-in">
+      <Transition name="translate-page-x" mode="out-in">
         <component :is="Component" :key="route.fullPath" />
-      </transition>
+      </Transition>
     </RouterView>
   </component>
 </template>

@@ -20,7 +20,7 @@ const date = ref(null)
 </script>
 
 <template>
-  <v-date-picker v-model="frontmatter.state.date" color="green" trim-weeks>
+  <VDatePicker v-model="frontmatter.state.date" color="green" trim-weeks>
     <template #default="{ inputValue, inputEvents }">
       <VField>
         <VControl>
@@ -28,7 +28,7 @@ const date = ref(null)
         </VControl>
       </VField>
     </template>
-  </v-date-picker>
+  </VDatePicker>
 </template>
 ```
 
@@ -36,7 +36,7 @@ const date = ref(null)
 
 <!--example-->
 
-<v-date-picker v-model="frontmatter.state.date" color="green" trim-weeks>
+<VDatePicker v-model="frontmatter.state.date" color="green" trim-weeks>
   <template #default="{ inputValue, inputEvents }">
     <VField>
       <VControl>
@@ -44,6 +44,6 @@ const date = ref(null)
       </VControl>
     </VField>
   </template>
-</v-date-picker>
+</VDatePicker>
 
 <!--/example-->

@@ -44,12 +44,12 @@ const user = {
 </script>
 
 <template>
-  <tippy class="has-help-cursor" interactive :offset="[0, 30]">
+  <Tippy class="has-help-cursor" interactive :offset="[0, 30]">
     <VAvatar :picture="user.avatar" />
     <template #content>
       <UserPopoverContent :user="user" />
     </template>
-  </tippy>
+  </Tippy>
 </template>
 ```
 
@@ -58,26 +58,26 @@ const user = {
 <!--example-->
 
 <div>
-  <tippy class="mx-1" interactive :offset="[0, 30]">
+  <Tippy class="mx-1" interactive :offset="[0, 30]">
     <VAvatar :picture="frontmatter.user1.avatar" />
     <template #content>
       <UserPopoverContent :user="frontmatter.user1" />
     </template>
-  </tippy>
+  </Tippy>
 
-  <tippy class="mx-1" interactive :offset="[0, 30]">
+  <Tippy class="mx-1" interactive :offset="[0, 30]">
     <VAvatar :picture="frontmatter.user2.avatar" />
     <template #content>
       <UserPopoverContent :user="frontmatter.user2" />
     </template>
-  </tippy>
+  </Tippy>
 
-  <tippy class="mx-1" interactive :offset="[0, 30]">
+  <Tippy class="mx-1" interactive :offset="[0, 30]">
     <VAvatar :picture="frontmatter.user3.avatar" />
     <template #content>
       <UserPopoverContent :user="frontmatter.user3" />
     </template>
-  </tippy>
+  </Tippy>
 </div>
 
 <!--/example-->

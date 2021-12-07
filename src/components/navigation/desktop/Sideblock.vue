@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 
-import type { SidebarTheme } from '/@src/stores/layoutSwitcher'
+export type SideblockTheme = 'default' | 'curved' | 'color' | 'color-curved'
 
 const props = withDefaults(
   defineProps<{
-    theme?: SidebarTheme
+    theme?: SideblockTheme
     isOpen?: boolean
   }>(),
   {
@@ -135,12 +135,20 @@ const themeClasses = computed(() => {
       border-left: 2px solid transparent;
       cursor: pointer;
 
-      &.is-active,
-      &.router-link-exact-active {
+      &.is-active {
         a {
           font-weight: 500;
           color: var(--primary);
         }
+
+        > a {
+          font-weight: 600;
+        }
+      }
+
+      a.router-link-exact-active {
+        font-weight: 500;
+        color: var(--primary);
 
         > a {
           font-weight: 600;

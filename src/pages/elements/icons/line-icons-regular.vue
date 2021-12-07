@@ -94,11 +94,11 @@ useHead({
                 <em>{{ icon.className }}</em>
                 <input type="text" maxlength="1" readonly :value="icon.char" />
 
-                <transition name="fade-fast">
+                <Transition name="fade-fast">
                   <span v-if="copied && text === getSnippet(icon)" class="is-copied">
                     copied!
                   </span>
-                </transition>
+                </Transition>
               </li>
             </ul>
           </div>

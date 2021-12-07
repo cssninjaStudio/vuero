@@ -13,9 +13,9 @@ const route = useRoute()
   <AppLayout>
     <!-- Content Wrapper -->
     <RouterView v-slot="{ Component }">
-      <transition name="fade-fast" mode="out-in">
+      <Transition name="fade-fast" mode="out-in">
         <component :is="Component" :key="route.fullPath" />
-      </transition>
+      </Transition>
     </RouterView>
   </AppLayout>
 </template>

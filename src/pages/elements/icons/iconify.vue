@@ -92,11 +92,11 @@ useHead({
                 <i aria-hidden="true" class="iconify" :data-icon="icon.dataIcon"></i>
                 <p class="textFilter-match">{{ icon.name }}</p>
 
-                <transition name="fade-fast">
+                <Transition name="fade-fast">
                   <span v-if="copied && text === getSnippet(icon)" class="is-copied">
                     copied!
                   </span>
-                </transition>
+                </Transition>
               </li>
             </ul>
           </div>

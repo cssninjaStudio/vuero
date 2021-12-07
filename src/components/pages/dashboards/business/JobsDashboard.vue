@@ -22,8 +22,8 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
       <!--Search toolbar -->
       <div class="search-menu">
         <div class="search-bar">
-          <V-Field class="is-autocomplete-select is-curved-select">
-            <V-Control icon="feather:search">
+          <VField class="is-autocomplete-select is-curved-select">
+            <VControl icon="feather:search">
               <Multiselect
                 v-model="tagsValue"
                 mode="tags"
@@ -32,8 +32,8 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
                 :options="tagsOptions"
                 placeholder=""
               />
-            </V-Control>
-          </V-Field>
+            </VControl>
+          </VField>
         </div>
         <div class="search-location">
           <i class="iconify" data-icon="feather:map-pin"></i>
@@ -57,11 +57,11 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
           <div class="alert">
             <div class="alert-title">Create Job Alert</div>
             <div class="alert-subtitle">Create a job alert now and never miss a job</div>
-            <V-Field>
-              <V-Control icon="feather:briefcase">
+            <VField>
+              <VControl icon="feather:briefcase">
                 <input type="text" class="input" placeholder="Keywords" />
-              </V-Control>
-            </V-Field>
+              </VControl>
+            </VField>
             <VButton color="primary" fullwidth>Create Job Alert</VButton>
           </div>
 
@@ -70,7 +70,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
             <div class="job-time-title">Type of Employment</div>
             <div class="job-wrapper">
               <div class="type-container">
-                <V-Checkbox
+                <VCheckbox
                   v-model="jobType"
                   value="job-type-1"
                   label="Full Time Jobs"
@@ -80,7 +80,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
                 <span class="job-number">56</span>
               </div>
               <div class="type-container">
-                <V-Checkbox
+                <VCheckbox
                   v-model="jobType"
                   value="job-type-2"
                   label="Part Time Jobs"
@@ -90,7 +90,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
                 <span class="job-number">43</span>
               </div>
               <div class="type-container">
-                <V-Checkbox
+                <VCheckbox
                   v-model="jobType"
                   value="job-type-3"
                   label="Remote Jobs"
@@ -100,7 +100,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
                 <span class="job-number">24</span>
               </div>
               <div class="type-container">
-                <V-Checkbox
+                <VCheckbox
                   v-model="jobType"
                   value="job-type-4"
                   label="Internship Jobs"
@@ -110,7 +110,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
                 <span class="job-number">27</span>
               </div>
               <div class="type-container">
-                <V-Checkbox
+                <VCheckbox
                   v-model="jobType"
                   value="job-type-5"
                   label="Contract"
@@ -120,7 +120,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
                 <span class="job-number">76</span>
               </div>
               <div class="type-container">
-                <V-Checkbox
+                <VCheckbox
                   v-model="jobType"
                   value="job-type-6"
                   label="Training Jobs"
@@ -137,7 +137,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
             <div class="job-time-title">Seniority Level</div>
             <div class="job-wrapper">
               <div class="type-container">
-                <V-Checkbox
+                <VCheckbox
                   v-model="jobSeniority"
                   value="job-seniority-1"
                   label="Student Level"
@@ -147,7 +147,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
                 <span class="job-number">98</span>
               </div>
               <div class="type-container">
-                <V-Checkbox
+                <VCheckbox
                   v-model="jobSeniority"
                   value="job-seniority-2"
                   label="Entry Level"
@@ -157,7 +157,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
                 <span class="job-number">44</span>
               </div>
               <div class="type-container">
-                <V-Checkbox
+                <VCheckbox
                   v-model="jobSeniority"
                   value="job-seniority-3"
                   label="Mid Level"
@@ -167,7 +167,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
                 <span class="job-number">35</span>
               </div>
               <div class="type-container">
-                <V-Checkbox
+                <VCheckbox
                   v-model="jobSeniority"
                   value="job-seniority-4"
                   label="Senior Level"
@@ -177,7 +177,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
                 <span class="job-number">29</span>
               </div>
               <div class="type-container">
-                <V-Checkbox
+                <VCheckbox
                   v-model="jobSeniority"
                   value="job-seniority-5"
                   label="Directors"
@@ -187,7 +187,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
                 <span class="job-number">26</span>
               </div>
               <div class="type-container">
-                <V-Checkbox
+                <VCheckbox
                   v-model="jobSeniority"
                   value="job-seniority-6"
                   label="Student Level"
@@ -204,7 +204,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
             <div class="job-time-title">Salary Range</div>
             <div class="job-wrapper">
               <div class="type-container">
-                <V-Checkbox
+                <VCheckbox
                   v-model="jobSalary"
                   value="job-salary-1"
                   label="$700 - $1000"
@@ -214,7 +214,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
                 <span class="job-number">49</span>
               </div>
               <div class="type-container">
-                <V-Checkbox
+                <VCheckbox
                   v-model="jobSalary"
                   value="job-salary-2"
                   label="$1000 - $1200"
@@ -224,7 +224,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
                 <span class="job-number">67</span>
               </div>
               <div class="type-container">
-                <V-Checkbox
+                <VCheckbox
                   v-model="jobSalary"
                   value="job-salary-3"
                   label="$1200 - $1400"
@@ -234,7 +234,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
                 <span class="job-number">24</span>
               </div>
               <div class="type-container">
-                <V-Checkbox
+                <VCheckbox
                   v-model="jobSalary"
                   value="job-salary-4"
                   label="$1500 - $1800"
@@ -244,7 +244,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
                 <span class="job-number">27</span>
               </div>
               <div class="type-container">
-                <V-Checkbox
+                <VCheckbox
                   v-model="jobSalary"
                   value="job-salary-5"
                   label="$2000 - $3000"
@@ -254,7 +254,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
                 <span class="job-number">76</span>
               </div>
               <div class="type-container">
-                <V-Checkbox
+                <VCheckbox
                   v-model="jobSalary"
                   value="job-salary-6"
                   label="$3000 - $4000"
@@ -264,7 +264,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
                 <span class="job-number">22</span>
               </div>
               <div class="type-container">
-                <V-Checkbox
+                <VCheckbox
                   v-model="jobSalary"
                   value="job-salary-7"
                   label="$4000 - $5000"
@@ -299,15 +299,15 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
                 {{ job.description }}
               </div>
               <div class="job-detail-buttons">
-                <V-Tags>
-                  <V-Tag
+                <VTags>
+                  <VTag
                     v-for="(category, catIndex) in job.categories"
                     :key="catIndex"
                     color="solid"
                     :label="category.name"
                     curved
                   />
-                </V-Tags>
+                </VTags>
               </div>
               <div class="job-card-buttons">
                 <VButtons>

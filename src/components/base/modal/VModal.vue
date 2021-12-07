@@ -63,7 +63,7 @@ zh-CN:
 </i18n>
 
 <template>
-  <teleport to="body">
+  <Teleport to="body">
     <div :class="[open && 'is-active', size && `is-${size}`]" class="modal v-modal">
       <div
         class="modal-background v-modal-close"
@@ -113,7 +113,7 @@ zh-CN:
         </div>
       </div>
     </div>
-  </teleport>
+  </Teleport>
 </template>
 
 <style lang="scss">

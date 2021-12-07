@@ -1,7 +1,14 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 
-import type { SidebarTheme } from '/@src/stores/layoutSwitcher'
+export type SidebarTheme =
+  | 'default'
+  | 'color'
+  | 'color-curved'
+  | 'curved'
+  | 'float'
+  | 'labels'
+  | 'labels-hover'
 
 const props = withDefaults(
   defineProps<{

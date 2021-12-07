@@ -85,7 +85,7 @@ const optionsSingle = [
       </VPlaceholderPage>
 
       <!--Card Grid v1-->
-      <transition-group name="list" tag="div" class="columns is-multiline">
+      <TransitionGroup name="list" tag="div" class="columns is-multiline">
         <!--Grid item-->
         <div v-for="(item, index) in filteredData" :key="index" class="column is-6">
           <div class="card-grid-item">
@@ -133,7 +133,7 @@ const optionsSingle = [
             </div>
           </div>
         </div>
-      </transition-group>
+      </TransitionGroup>
     </div>
   </div>
 </template>

@@ -109,7 +109,7 @@ const filteredData = computed(() => {
       <div v-else-if="tab === 'all' && filteredData.length" class="tab-content is-active">
         <VFlexTable :data="filteredData" :columns="columns" rounded>
           <template #body>
-            <transition-group name="list" tag="div" class="flex-list-inner">
+            <TransitionGroup name="list" tag="div" class="flex-list-inner">
               <!--Table item-->
               <div v-for="item in filteredData" :key="item.id" class="flex-table-item">
                 <VFlexTableCell :column="{ media: true, grow: true }">
@@ -178,7 +178,7 @@ const filteredData = computed(() => {
                   </a>
                 </VFlexTableCell>
               </div>
-            </transition-group>
+            </TransitionGroup>
           </template>
         </VFlexTable>
 

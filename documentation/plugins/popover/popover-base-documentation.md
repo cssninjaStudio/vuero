@@ -9,15 +9,15 @@ to be a click event using the `trigger="click"` prop.
 ```vue
 <template>
   <div class="buttons">
-    <tippy>
+    <Tippy>
       <VButton>Hover me!</VButton>
       <template #content> Tooltip content </template>
-    </tippy>
+    </Tippy>
 
-    <tippy trigger="click">
+    <Tippy trigger="click">
       <VButton>Click me!</VButton>
       <template #content> Tooltip content </template>
-    </tippy>
+    </Tippy>
   </div>
 </template>
 ```
@@ -27,7 +27,7 @@ to be a click event using the `trigger="click"` prop.
 <!--example-->
 
 <div class="buttons">
-  <tippy>
+  <Tippy>
     <VButton class="mx-1">Hover me!</VButton>
     <template #content>
       <div class="v-popover-content is-text">
@@ -40,8 +40,8 @@ to be a click event using the `trigger="click"` prop.
           </div>
       </div>
     </template>
-  </tippy>
-  <tippy trigger="click">
+  </Tippy>
+  <Tippy trigger="click">
     <VButton class="mx-1">Click me!</VButton>
     <template #content>
       <div class="v-popover-content is-text">
@@ -54,7 +54,7 @@ to be a click event using the `trigger="click"` prop.
           </div>
       </div>
     </template>
-  </tippy>
+  </Tippy>
 </div>
 
 <!--/example-->

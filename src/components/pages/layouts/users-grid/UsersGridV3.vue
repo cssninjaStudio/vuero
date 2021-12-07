@@ -90,7 +90,7 @@ const filteredData = computed(() => {
         class="tab-content"
         :class="[tab === 'all' && 'is-active']"
       >
-        <transition-group
+        <TransitionGroup
           name="list"
           tag="div"
           class="columns is-multiline is-flex-tablet-p is-half-tablet-p"
@@ -99,7 +99,7 @@ const filteredData = computed(() => {
           <div v-for="item in filteredData" :key="item.id" class="column is-3">
             <TabbedGridItem :user="item" />
           </div>
-        </transition-group>
+        </TransitionGroup>
       </div>
 
       <!--inactive Tab-->

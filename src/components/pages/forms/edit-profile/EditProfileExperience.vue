@@ -120,7 +120,7 @@ const onSave = async () => {
             <div class="field-wrap">
               <div class="columns is-multiline">
                 <div class="column is-12">
-                  <v-date-picker v-model="range" is-range color="green" trim-weeks>
+                  <VDatePicker v-model="range" is-range color="green" trim-weeks>
                     <template #default="{ inputValue, inputEvents }">
                       <VField addons class="has-addons-fullwidth">
                         <VControl>
@@ -148,7 +148,7 @@ const onSave = async () => {
                         </VControl>
                       </VField>
                     </template>
-                  </v-date-picker>
+                  </VDatePicker>
                 </div>
                 <div class="column is-6">
                   <VField>
