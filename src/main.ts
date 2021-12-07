@@ -10,15 +10,14 @@
  * @see /index.html
  * @see /vite.config.ts
  */
-import { AxiosInstance } from 'axios'
-import { App } from 'vue'
-import { Router } from 'vue-router'
 import { createApp } from './app'
 import { useNotyf } from './composable/useNotyf'
 import { useUserSession } from './stores/userSession'
 
+import type { VueroAppContext } from './app'
+
 // Lazy load aditional components
-async function registerGlobalComponents(app: App) {
+async function registerGlobalComponents({ app }: VueroAppContext) {
   const VCalendar = (await import('v-calendar')).default
   const VueMultiselect = (await import('@vueform/multiselect')).default
   const VueSlider = (await import('@vueform/slider')).default
@@ -62,7 +61,7 @@ async function registerGlobalComponents(app: App) {
  *  // HTML content
  * </template>
  */
-function registerRouterNavigationGuards(router: Router, api: AxiosInstance) {
+function registerRouterNavigationGuards({ router, api }: VueroAppContext) {
   router.beforeEach(async (to, from) => {
     const userSession = useUserSession()
     const notyf = useNotyf()
@@ -114,16 +113,16 @@ function registerRouterNavigationGuards(router: Router, api: AxiosInstance) {
  *
  * @see /@src/app.ts for more detailed informations
  */
-createApp().then(async ({ app, router, api }) => {
+createApp().then(async (vuero) => {
   // register router middleware
-  registerRouterNavigationGuards(router, api)
+  registerRouterNavigationGuards(vuero)
 
   // register global components
-  await registerGlobalComponents(app)
+  await registerGlobalComponents(vuero)
 
   // wait for the app to be ready
-  await router.isReady()
+  await vuero.router.isReady()
 
   // finaly mount the app to the DOM
-  app.mount('#app')
+  vuero.app.mount('#app')
 })

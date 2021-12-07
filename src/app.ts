@@ -9,6 +9,8 @@ import VueroApp from './VueroApp.vue'
 import { initDarkmode } from '/@src/stores/darkmode'
 import { createApi } from '/@src/composable/useApi'
 
+export type VueroAppContext = Awaited<ReturnType<typeof createApp>>
+
 export async function createApp() {
   const head = createHead()
   const i18n = createI18n()
