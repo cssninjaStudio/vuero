@@ -264,7 +264,7 @@ const validateStep = async () => {
           </div>
         </div>
 
-        <transition name="fade-slow">
+        <Transition name="fade-slow">
           <div v-if="currentStep >= 1" id="form-step-1" class="form-section is-active">
             <h3 class="form-section-title">
               <span>Shipment Owner</span>
@@ -344,9 +344,9 @@ const validateStep = async () => {
               </div>
             </div>
           </div>
-        </transition>
+        </Transition>
 
-        <transition name="fade-slow">
+        <Transition name="fade-slow">
           <div v-if="currentStep >= 2" id="form-step-2" class="form-section is-active">
             <h3 class="form-section-title">
               <span>Shipment Taxes</span>
@@ -394,9 +394,9 @@ const validateStep = async () => {
               </div>
             </div>
           </div>
-        </transition>
+        </Transition>
 
-        <transition name="fade-slow">
+        <Transition name="fade-slow">
           <div v-if="currentStep >= 3" id="form-step-3" class="form-section is-active">
             <h3 class="form-section-title">
               <span>Options</span>
@@ -487,9 +487,9 @@ const validateStep = async () => {
               </div>
             </div>
           </div>
-        </transition>
+        </Transition>
 
-        <transition name="fade-slow">
+        <Transition name="fade-slow">
           <div v-if="currentStep >= 4" id="form-step-4" class="form-section is-active">
             <h3 class="form-section-title">
               <span>Validation</span>
@@ -519,7 +519,7 @@ const validateStep = async () => {
               </div>
             </div>
           </div>
-        </transition>
+        </Transition>
 
         <div class="navigation-buttons">
           <div class="buttons is-right">
@@ -1132,7 +1132,8 @@ const validateStep = async () => {
               border-radius: 0.5rem;
               transition: background-color 0.3s;
 
-              &:hover {
+              &:hover,
+              &:focus {
                 background: var(--widget-grey-dark-1);
               }
 
@@ -1311,7 +1312,8 @@ const validateStep = async () => {
           border-color: var(--dark-sidebar-light-12) !important;
           color: var(--dark-dark-text);
 
-          &:hover {
+          &:hover,
+          &:focus {
             color: var(--primary);
             border: 2px solid var(--primary) !important;
           }

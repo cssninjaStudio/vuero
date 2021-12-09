@@ -211,7 +211,7 @@ useHead({
                 title="Flex Table"
                 content="Get familiar with the Vuero flex table styles. Code examples included."
               >
-                <RouterLink :to="{ name: 'components-flex-table' }">
+                <RouterLink :to="{ name: 'components-flextable' }">
                   Get Started
                 </RouterLink>
 
@@ -361,7 +361,8 @@ useHead({
             font-weight: 500;
             transition: opacity 0.3s;
 
-            &:hover {
+            &:hover,
+            &:focus {
               opacity: 1;
             }
           }

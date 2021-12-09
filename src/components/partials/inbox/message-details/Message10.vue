@@ -23,8 +23,8 @@ const dropdown2 = useDropdown(dropdownElement2)
 <template>
   <div
     :class="[
-      mobileMessageOpen && selected && 'mobile-active tablet-active',
-      isMediumScreen && !selected && 'is-hidden',
+      props.mobileMessageOpen && props.selected && 'mobile-active tablet-active',
+      isMediumScreen && !props.selected && 'is-hidden',
     ]"
     class="inbox-message-details"
   >

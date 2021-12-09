@@ -73,9 +73,9 @@ watchPostEffect(() => {
 </script>
 
 <template>
-  <MessagingLayout :theme="layoutSwitcher.sidebarTheme">
+  <MessagingLayout :theme="layoutSwitcher.sidebarLayoutTheme">
     <template #default="{ isMobileSidebarOpen }">
-      <transition name="slide-x">
+      <Transition name="slide-x">
         <MessagesSubsidebar
           v-if="sidebar.active === 'messages'"
           :conversations="chat.conversations"
@@ -83,15 +83,15 @@ watchPostEffect(() => {
           @add-conversation="addConversation"
           @select-conversation="selectConversation"
         />
-      </transition>
-      <transition name="slide-x">
+      </Transition>
+      <Transition name="slide-x">
         <MessagesMobileSubsidebar
           v-if="isMobileSidebarOpen"
           :conversations="chat.conversations"
           :selected-conversation-id="chat.selectedConversationId"
           @select-conversation="selectConversation"
         />
-      </transition>
+      </Transition>
 
       <CollapsedMessaging
         :conversations="chat.conversations"

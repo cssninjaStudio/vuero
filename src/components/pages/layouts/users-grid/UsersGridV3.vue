@@ -90,7 +90,7 @@ const filteredData = computed(() => {
         class="tab-content"
         :class="[tab === 'all' && 'is-active']"
       >
-        <transition-group
+        <TransitionGroup
           name="list"
           tag="div"
           class="columns is-multiline is-flex-tablet-p is-half-tablet-p"
@@ -99,7 +99,7 @@ const filteredData = computed(() => {
           <div v-for="item in filteredData" :key="item.id" class="column is-3">
             <TabbedGridItem :user="item" />
           </div>
-        </transition-group>
+        </TransitionGroup>
       </div>
 
       <!--inactive Tab-->
@@ -292,7 +292,8 @@ const filteredData = computed(() => {
         color: var(--light-text);
         margin-bottom: 0;
 
-        &:hover {
+        &:hover,
+        &:focus {
           border-color: var(--fade-grey-dark-4);
           color: var(--primary);
           box-shadow: var(--light-box-shadow);

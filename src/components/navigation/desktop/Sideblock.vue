@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 
-import type { SidebarTheme } from '/@src/stores/layoutSwitcher'
+export type SideblockTheme = 'default' | 'curved' | 'color' | 'color-curved'
 
 const props = withDefaults(
   defineProps<{
-    theme?: SidebarTheme
+    theme?: SideblockTheme
     isOpen?: boolean
   }>(),
   {
@@ -146,6 +146,15 @@ const themeClasses = computed(() => {
         }
       }
 
+      a.router-link-exact-active {
+        font-weight: 500;
+        color: var(--primary);
+
+        > a {
+          font-weight: 600;
+        }
+      }
+
       &.divider {
         cursor: default;
         pointer-events: none;
@@ -251,9 +260,6 @@ const themeClasses = computed(() => {
         }
 
         ul {
-          padding: 0;
-          display: none;
-
           li {
             height: 32px;
             font-family: var(--font);
@@ -276,7 +282,8 @@ const themeClasses = computed(() => {
               padding: 0 2rem 0 3.5rem;
               font-size: 0.9rem;
 
-              &.is-active {
+              &.is-active,
+              &.router-link-exact-active {
                 font-weight: 500;
                 color: var(--primary);
               }
@@ -323,7 +330,8 @@ const themeClasses = computed(() => {
         font-size: 0.95rem;
         color: var(--light-text);
 
-        &:hover {
+        &:hover,
+        &:focus {
           color: var(--dark-text);
         }
       }
@@ -350,6 +358,7 @@ const themeClasses = computed(() => {
       transition: background-color 0.3s;
 
       &:hover,
+      &:focus,
       &.active {
         background: var(--widget-grey);
         color: var(--dark-text);
@@ -506,7 +515,8 @@ const themeClasses = computed(() => {
         align-items: center;
         width: 100% !important;
 
-        &:hover:not(.is-button) {
+        &:hover,
+        &:focus:not(.is-button) {
           background: var(--fade-grey-light-3);
         }
       }
@@ -521,7 +531,8 @@ const themeClasses = computed(() => {
           font-size: 0.8rem;
           color: var(--muted-grey);
 
-          &:hover {
+          &:hover,
+          &:focus {
             background: transparent !important;
           }
         }
@@ -616,7 +627,8 @@ const themeClasses = computed(() => {
       .search-link {
         color: var(--light-text);
 
-        &:hover {
+        &:hover,
+        &:focus {
           background: var(--dark-sidebar-light-8);
           color: var(--accent);
         }
@@ -734,7 +746,8 @@ html:not(.is-dark) {
         .search-link {
           color: var(--light-text) !important;
 
-          &:hover {
+          &:hover,
+          &:focus {
             background: var(--sidebar-dark-7) !important;
             color: var(--primary) !important;
           }

@@ -283,11 +283,15 @@ watchPostEffect(() => {
     return
   }
 
-  const coordinates = selectedFeature.value.geometry.coordinates.slice()
-  const name = selectedFeature.value.properties.name
-  const logo = selectedFeature.value.properties.logo
-  const openingCount = selectedFeature.value.properties.openingCount
-  const description = selectedFeature.value.properties.description
+  const feature = selectedFeature.value
+  const { geometry, properties } = feature
+  const { name } = properties
+  const coordinates = geometry.coordinates.slice()
+  // const logo = selectedFeature.value.properties.logo
+  // const openingCount = selectedFeature.value.properties.openingCount
+  // const description = selectedFeature.value.properties.description
+
+  console.log('zooming at: ', properties, coordinates)
 
   // Ensure that if the map is zoomed out such that multiple
   // copies of the feature are visible, the popup appears

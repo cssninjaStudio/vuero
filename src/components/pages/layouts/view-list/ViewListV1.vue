@@ -91,7 +91,7 @@ const filteredData = computed(() => {
 
         <div class="list-view-inner">
           <!--Item-->
-          <transition-group name="list-complete" tag="div">
+          <TransitionGroup name="list-complete" tag="div">
             <div v-for="(item, key) in filteredData" :key="key" class="list-view-item">
               <div class="list-view-item-inner">
                 <VAvatar
@@ -138,7 +138,7 @@ const filteredData = computed(() => {
                 </div>
               </div>
             </div>
-          </transition-group>
+          </TransitionGroup>
         </div>
       </div>
 

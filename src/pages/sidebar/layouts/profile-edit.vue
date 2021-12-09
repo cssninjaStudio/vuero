@@ -62,9 +62,9 @@
         </div>
         <div class="column is-8">
           <RouterView v-slot="{ Component }">
-            <transition name="translate-page-y" mode="in-out">
+            <Transition name="translate-page-y" mode="in-out">
               <component :is="Component" />
-            </transition>
+            </Transition>
           </RouterView>
         </div>
       </div>

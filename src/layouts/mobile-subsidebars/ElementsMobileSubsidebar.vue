@@ -16,7 +16,7 @@
           <RouterLink :to="{ name: 'elements-helpers' }">Helpers</RouterLink>
         </li>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks>
           <template #header>
             Icons
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -26,7 +26,10 @@
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             Iconify
           </RouterLink>
-          <RouterLink :to="{ name: 'elements-icons-line-icons' }" class="is-submenu">
+          <RouterLink
+            :to="{ name: 'elements-icons-line-icons-light' }"
+            class="is-submenu"
+          >
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             Line Icons Light
           </RouterLink>
@@ -37,11 +40,11 @@
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             Line Icons Regular
           </RouterLink>
-          <RouterLink :to="{ name: 'elements-icons-fa' }" class="is-submenu">
+          <RouterLink :to="{ name: 'elements-icons-font-awesome' }" class="is-submenu">
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             Font Awesome 5
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
         <li class="divider with-label">
           <span class="divider-label">Interaction</span>
@@ -78,7 +81,7 @@
           <RouterLink :to="{ name: 'elements-tooltip' }"> VTootlip </RouterLink>
         </li>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks>
           <template #header>
             Buttons
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -93,9 +96,9 @@
           <RouterLink :to="{ name: 'elements-icon-button' }" class="is-submenu">
             VIconButton
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks>
           <template #header>
             Inputs
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -127,9 +130,9 @@
           <RouterLink :to="{ name: 'elements-field' }" class="is-submenu">
             VField
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks>
           <template #header>
             Switches
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -155,11 +158,11 @@
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             VSwitchSegment
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
         <li class="divider"></li>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks>
           <template #header>
             Addons
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -196,7 +199,7 @@
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             CKEditor 5
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
       </ul>
       <div class="bottom-action"></div>
     </div>

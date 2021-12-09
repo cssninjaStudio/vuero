@@ -238,7 +238,8 @@ const panels = usePanels()
                 transition: color 0.3s, background-color 0.3s, border-color 0.3s,
                   height 0.3s, width 0.3s;
 
-                &:hover {
+                &:hover,
+                &:focus {
                   border: 1.8px solid var(--primary);
                   color: var(--primary);
                 }
@@ -309,7 +310,8 @@ const panels = usePanels()
               transition: color 0.3s, background-color 0.3s, border-color 0.3s,
                 height 0.3s, width 0.3s;
 
-              &:hover {
+              &:hover,
+              &:focus {
                 border-color: var(--fade-grey-dark-3);
                 box-shadow: var(--light-box-shadow);
               }
@@ -374,7 +376,8 @@ const panels = usePanels()
                   transition: color 0.3s, background-color 0.3s, border-color 0.3s,
                     height 0.3s, width 0.3s;
 
-                  &:hover {
+                  &:hover,
+                  &:focus {
                     border-color: var(--fade-grey-dark-4);
                     box-shadow: var(--light-box-shadow);
                     color: var(--primary);

@@ -491,7 +491,8 @@
         cursor: pointer;
         pointer-events: all !important;
 
-        &:hover {
+        &:hover,
+        &:focus {
           background: var(--fade-grey-light-3);
 
           svg {

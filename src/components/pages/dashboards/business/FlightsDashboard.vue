@@ -36,7 +36,7 @@ const options = ref(['All Flights'])
             </div>
           </div>
           <div class="booking-bar">
-            <v-date-picker v-model="date" is-range color="green" trim-weeks>
+            <VDatePicker v-model="date" is-range color="green" trim-weeks>
               <template #default="{ inputValue, inputEvents }">
                 <div class="booking-bar-inputs">
                   <VControl icon="feather:calendar">
@@ -59,7 +59,7 @@ const options = ref(['All Flights'])
                   </VControl>
                 </div>
               </template>
-            </v-date-picker>
+            </VDatePicker>
           </div>
         </div>
 
@@ -611,7 +611,8 @@ const options = ref(['All Flights'])
       margin-bottom: 1.5rem;
       box-shadow: none;
 
-      &:hover {
+      &:hover,
+      &:focus {
         box-shadow: var(--light-box-shadow);
 
         .route {
@@ -803,7 +804,8 @@ const options = ref(['All Flights'])
       .flight-summary {
         @include vuero-card--dark;
 
-        &:hover {
+        &:hover,
+        &:focus {
           border-color: var(--primary) !important;
         }
 

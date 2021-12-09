@@ -1,11 +1,7 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
-import { ref } from 'vue'
 
 import { useViewWrapper } from '/@src/stores/viewWrapper'
-
-type TabId = 'active' | 'inactive'
-const activeTab = ref<TabId>('active')
 
 const viewWrapper = useViewWrapper()
 viewWrapper.setPageTitle('List View 4')

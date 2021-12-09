@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import { onceImageErrored } from '/@src/utils/via-placeholder'
+</script>
+
 <template>
   <div class="is-chat-placeholder animated preFadeInUp fadeInUp is-hidden">
     <div class="caption">

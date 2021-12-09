@@ -330,7 +330,8 @@ import { courses, files, students } from '/@src/data/dashboards/course'
       .action-button {
         border-radius: 0.75rem;
 
-        &:hover {
+        &:hover,
+        &:focus {
           background: var(--primary);
           border-color: var(--primary);
           color: var(--white);
@@ -361,7 +362,8 @@ import { courses, files, students } from '/@src/data/dashboards/course'
     padding: 16px;
     cursor: pointer;
 
-    &:hover {
+    &:hover,
+    &:focus {
       border-color: var(--primary);
       box-shadow: var(--light-box-shadow);
     }
@@ -439,7 +441,8 @@ import { courses, files, students } from '/@src/data/dashboards/course'
     .tile-grid-item {
       @include vuero-card--dark;
 
-      &:hover {
+      &:hover,
+      &:focus {
         border-color: var(--primary) !important;
       }
     }

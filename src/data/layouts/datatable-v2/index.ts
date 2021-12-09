@@ -1,32 +1,32 @@
 // Add Icon
-function renderPicture(data: any, cell: any, row: any) {
+function renderPicture(data: any /*, cell: any, row: any */) {
   return `
         <img class="product-photo" src="${data}" alt="">
     `
 }
 
 // Name
-function renderName(data: any, cell: any, row: any) {
+function renderName(data: any /*, cell: any, row: any */) {
   return `<span class="has-dark-text dark-inverted is-font-alt is-weight-600 rem-90">${data}</span>`
 }
 
 // SKU
-function renderSKU(data: any, cell: any, row: any) {
+function renderSKU(data: any /*, cell: any, row: any */) {
   return `<span class="light-text">${data}</span>`
 }
 
 // Price
-function renderPrice(data: any, cell: any, row: any) {
+function renderPrice(data: any /*, cell: any, row: any */) {
   return `<span class="light-text">$${data}</span>`
 }
 
 // Stock
-function renderStock(data: any, cell: any, row: any) {
+function renderStock(data: any /*, cell: any, row: any */) {
   return `<span class="light-text">${data}</span>`
 }
 
 // Category
-function renderCategory(data: any, cell: any, row: any) {
+function renderCategory(data: any /*, cell: any, row: any */) {
   return `<span class="light-text">${data}</span>`
 }
 

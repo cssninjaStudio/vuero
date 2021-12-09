@@ -88,7 +88,7 @@ useHead({
         <div class="container">
           <!--Stacks-->
           <div class="stacks">
-            <tippy class="has-help-cursor" interactive placement="top">
+            <Tippy class="has-help-cursor" interactive placement="top">
               <div class="stack">
                 <img src="/images/icons/stacks/vuejs.svg" alt="" />
               </div>
@@ -105,9 +105,9 @@ useHead({
                   }"
                 />
               </template>
-            </tippy>
+            </Tippy>
 
-            <tippy class="has-help-cursor" interactive placement="top">
+            <Tippy class="has-help-cursor" interactive placement="top">
               <div class="stack">
                 <img src="/images/icons/stacks/vite.svg" alt="" />
               </div>
@@ -124,9 +124,9 @@ useHead({
                   }"
                 />
               </template>
-            </tippy>
+            </Tippy>
 
-            <tippy class="has-help-cursor" interactive placement="top">
+            <Tippy class="has-help-cursor" interactive placement="top">
               <div class="stack">
                 <img src="/images/icons/stacks/bulma.svg" alt="" />
               </div>
@@ -143,9 +143,9 @@ useHead({
                   }"
                 />
               </template>
-            </tippy>
+            </Tippy>
 
-            <tippy class="has-help-cursor" interactive placement="top">
+            <Tippy class="has-help-cursor" interactive placement="top">
               <div class="stack">
                 <img src="/images/icons/stacks/sass.svg" alt="" />
               </div>
@@ -162,9 +162,9 @@ useHead({
                   }"
                 />
               </template>
-            </tippy>
+            </Tippy>
 
-            <tippy class="has-help-cursor" interactive placement="top">
+            <Tippy class="has-help-cursor" interactive placement="top">
               <div class="stack">
                 <img src="/images/icons/stacks/typescript.svg" alt="" />
               </div>
@@ -181,7 +181,7 @@ useHead({
                   }"
                 />
               </template>
-            </tippy>
+            </Tippy>
           </div>
 
           <!--Title-->
@@ -413,7 +413,7 @@ useHead({
             <div class="mt-4">
               <VButtons align="centered">
                 <VButton
-                  href="https://discord.gg/v2WR6ZvkQ4"
+                  href="https://discord.cssninja.io/"
                   icon="fa-brands:discord"
                   dark-outlined
                   raised
@@ -438,7 +438,7 @@ useHead({
           <div class="video-player-container-wrapper mb-6">
             <VPlyr
               ratio="16by9"
-              source="https://www.youtube.com/embed/lE5VNpP8JqA"
+              source="https://www.youtube.com/embed/lE5VNpP8JqA?modestbranding=1&rel=0&showinfo=0"
               poster="/video/poster-2c.jpg"
               title="VUERO | part 1 - Cleaning the project and getting started"
               embed

@@ -85,7 +85,7 @@ const optionsSingle = [
         </template>
       </VPlaceholderPage>
 
-      <transition-group
+      <TransitionGroup
         name="list"
         tag="div"
         class="columns is-multiline is-flex-tablet-p is-half-tablet-p"
@@ -106,7 +106,7 @@ const optionsSingle = [
             </div>
           </div>
         </div>
-      </transition-group>
+      </TransitionGroup>
     </div>
   </div>
 </template>
@@ -131,7 +131,8 @@ const optionsSingle = [
 
     text-align: center;
 
-    &:hover {
+    &:hover,
+    &:focus {
       .button-wrap {
         > div {
           a {
@@ -185,7 +186,8 @@ const optionsSingle = [
           font-size: 0.9rem;
           transition: opacity 0.3s, color 0.3s;
 
-          &:hover {
+          &:hover,
+          &:focus {
             color: var(--primary);
           }
         }

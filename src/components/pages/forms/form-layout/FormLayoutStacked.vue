@@ -58,7 +58,7 @@ const options = ref(['All day'])
               </VField>
             </div>
 
-            <v-date-picker
+            <VDatePicker
               v-model="date"
               is-range
               color="green"
@@ -97,9 +97,9 @@ const options = ref(['All day'])
                   </div>
                 </div>
               </template>
-            </v-date-picker>
+            </VDatePicker>
 
-            <v-date-picker
+            <VDatePicker
               v-model="date.start"
               class="column is-3"
               color="green"
@@ -118,9 +118,9 @@ const options = ref(['All day'])
                   </VControl>
                 </VField>
               </template>
-            </v-date-picker>
+            </VDatePicker>
 
-            <v-date-picker
+            <VDatePicker
               v-model="date.end"
               class="column is-3"
               color="green"
@@ -139,7 +139,7 @@ const options = ref(['All day'])
                   </VControl>
                 </VField>
               </template>
-            </v-date-picker>
+            </VDatePicker>
 
             <div class="column is-12">
               <VField>
@@ -183,40 +183,40 @@ const options = ref(['All day'])
                 <VField>
                   <VControl>
                     <div class="participants">
-                      <tippy class="has-help-cursor" interactive placement="top-start">
+                      <Tippy class="has-help-cursor" interactive placement="top-start">
                         <VAvatar picture="/images/avatars/svg/vuero-1.svg" />
                         <template #content>
                           <UserPopoverContent :user="popovers.user8" />
                         </template>
-                      </tippy>
+                      </Tippy>
 
-                      <tippy class="has-help-cursor" interactive placement="top-start">
+                      <Tippy class="has-help-cursor" interactive placement="top-start">
                         <VAvatar color="warning" initials="BT" />
                         <template #content>
                           <UserPopoverContent :user="popovers.user122" />
                         </template>
-                      </tippy>
+                      </Tippy>
 
-                      <tippy class="has-help-cursor" interactive placement="top-start">
+                      <Tippy class="has-help-cursor" interactive placement="top-start">
                         <VAvatar picture="/demo/avatars/18.jpg" />
                         <template #content>
                           <UserPopoverContent :user="popovers.user18" />
                         </template>
-                      </tippy>
+                      </Tippy>
 
-                      <tippy class="has-help-cursor" interactive placement="top-start">
+                      <Tippy class="has-help-cursor" interactive placement="top-start">
                         <VAvatar color="info" initials="JD" />
                         <template #content>
                           <UserPopoverContent :user="popovers.user123" />
                         </template>
-                      </tippy>
+                      </Tippy>
 
-                      <tippy class="has-help-cursor" interactive placement="top-start">
+                      <Tippy class="has-help-cursor" interactive placement="top-start">
                         <VAvatar picture="/demo/avatars/7.jpg" />
                         <template #content>
                           <UserPopoverContent :user="popovers.user7" />
                         </template>
-                      </tippy>
+                      </Tippy>
 
                       <button class="add-participant">
                         <i
@@ -530,7 +530,8 @@ const options = ref(['All day'])
               transition: color 0.3s, background-color 0.3s, border-color 0.3s,
                 height 0.3s, width 0.3s;
 
-              &:hover {
+              &:hover,
+              &:focus {
                 border: 1.6px solid var(--primary);
                 color: var(--primary);
               }
@@ -566,7 +567,8 @@ const options = ref(['All day'])
               transition: color 0.3s, background-color 0.3s, border-color 0.3s,
                 height 0.3s, width 0.3s;
 
-              &:hover {
+              &:hover,
+              &:focus {
                 opacity: 1;
               }
 

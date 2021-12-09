@@ -102,7 +102,8 @@ const props = withDefaults(
     transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
     cursor: pointer;
 
-    &:hover {
+    &:hover,
+    &:focus {
       transform: translateY(-5px);
       box-shadow: var(--light-box-shadow);
       border-color: var(--primary);
@@ -145,7 +146,8 @@ const props = withDefaults(
       background: var(--landing-yyy-dark-6);
       border-color: var(--landing-yyy-light-2);
 
-      &:hover {
+      &:hover,
+      &:focus {
         border-color: var(--primary);
 
         .component-title {

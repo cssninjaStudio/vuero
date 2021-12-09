@@ -161,7 +161,8 @@
         transition: all 0.3s; // transition-all test
         cursor: pointer;
 
-        &:hover {
+        &:hover,
+        &:focus {
           border-color: var(--primary);
           box-shadow: var(--light-box-shadow);
 
@@ -266,7 +267,8 @@
           background: var(--dark-sidebar-light-6);
           border-color: var(--dark-sidebar-light-12);
 
-          &:hover {
+          &:hover,
+          &:focus {
             border-color: var(--primary);
 
             h3 {

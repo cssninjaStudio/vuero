@@ -487,7 +487,8 @@ const activeTab = ref<TabId>('team')
               transition: color 0.3s, background-color 0.3s, border-color 0.3s,
                 height 0.3s, width 0.3s;
 
-              &:hover {
+              &:hover,
+              &:focus {
                 border-color: var(--primary);
                 box-shadow: var(--light-box-shadow);
 
@@ -638,7 +639,8 @@ const activeTab = ref<TabId>('team')
             background: var(--dark-sidebar-light-6) !important;
             border-color: var(--dark-sidebar-light-12) !important;
 
-            &:hover {
+            &:hover,
+            &:focus {
               border-color: var(--primary) !important;
 
               svg {

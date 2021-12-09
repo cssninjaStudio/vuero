@@ -131,7 +131,6 @@ export default defineComponent({
 
       const iconWrapper = h('span', { class: 'icon' }, icon)
 
-      let link
       if (props.to) {
         return h(
           resolveComponent('RouterLink'),

@@ -177,12 +177,11 @@ useHead({
                   rounded
                   raised
                   bold
+                  >Confirm</VButton
                 >
-                  Confirm
-                </VButton>
                 <span>
                   Or
-                  <RouterLink :to="{ name: 'auth-signup-1' }"> Create </RouterLink>
+                  <RouterLink :to="{ name: 'auth-signup-1' }">Create</RouterLink>
                   an account.
                 </span>
               </div>
@@ -223,9 +222,8 @@ useHead({
                   rounded
                   solid
                   @click="step = 'login'"
+                  >Confirm</VButton
                 >
-                  Confirm
-                </VButton>
               </div>
             </form>
           </div>
@@ -499,7 +497,8 @@ useHead({
             font-size: 0.9rem;
             transition: color 0.3s;
 
-            &:hover {
+            &:hover,
+            &:focus {
               color: var(--primary);
             }
           }

@@ -14,9 +14,12 @@ export type VTagColor =
   | 'light'
   | 'solid'
 
+export type VTagSize = 'tiny'
+
 export interface VTagProps {
   label?: string | number
   color?: VTagColor
+  size?: VTagSize
   rounded?: boolean
   curved?: boolean
   outlined?: boolean
@@ -27,6 +30,7 @@ export interface VTagProps {
 const props = withDefaults(defineProps<VTagProps>(), {
   label: undefined,
   color: undefined,
+  size: undefined,
 })
 </script>
 
@@ -35,6 +39,7 @@ const props = withDefaults(defineProps<VTagProps>(), {
     class="tag"
     :class="[
       props.color && 'is-' + props.color,
+      props.size && 'is-' + props.size,
       props.rounded && 'is-rounded',
       props.curved && 'is-curved',
       props.outlined && 'is-outlined',
@@ -50,6 +55,7 @@ const props = withDefaults(defineProps<VTagProps>(), {
   display: inline-block;
   line-height: 2.3;
   height: 2.4em;
+  font-size: 0.75rem;
 
   &.is-rounded {
     padding-left: 1em;
@@ -62,6 +68,19 @@ const props = withDefaults(defineProps<VTagProps>(), {
     line-height: 2.5;
     height: 2.6em;
     border-radius: 8px;
+  }
+
+  &.is-tiny {
+    line-height: 1.3;
+    height: 1.6em;
+    font-size: 0.7rem;
+
+    &.is-curved {
+      padding-left: 0.55em;
+      padding-right: 0.55em;
+      line-height: 1.3;
+      height: 1.6em;
+    }
   }
 
   &.is-elevated {

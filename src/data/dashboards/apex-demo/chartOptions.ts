@@ -1196,7 +1196,7 @@ export const options20 = {
         total: {
           show: true,
           label: 'Total',
-          formatter: function (_: string) {
+          formatter: function (/* value: string */) {
             // By default this function returns the average of all series. The below is just an example to show the use of custom formatter function
             return 249
           },

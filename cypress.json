@@ -1,5 +1,5 @@
 {
-  "baseUrl": "http://localhost:8080",
+  "baseUrl": "http://localhost:5000",
   "waitForAnimations": true,
   "chromeWebSecurity": false,
   "video": false,

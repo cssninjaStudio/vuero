@@ -44,7 +44,8 @@ const props = withDefaults(
         justify-content: space-between;
         color: var(--light-text);
 
-        &:hover {
+        &:hover,
+        &:focus {
           color: var(--primary);
         }
       }

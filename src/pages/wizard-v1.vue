@@ -366,7 +366,8 @@ watchEffect(() => {
 
           @include vuero-l-card;
 
-          &:hover {
+          &:hover,
+          &:focus {
             border-color: var(--primary);
             box-shadow: var(--light-box-shadow);
 
@@ -829,7 +830,8 @@ watchEffect(() => {
                 transition: color 0.3s, background-color 0.3s, border-color 0.3s,
                   height 0.3s, width 0.3s;
 
-                &:hover:not(.is-active) {
+                &:hover,
+                &:focus:not(.is-active) {
                   background: var(--fade-grey-light-3);
                   color: var(--light-text);
                 }
@@ -1010,7 +1012,8 @@ watchEffect(() => {
                 transition: color 0.3s, background-color 0.3s, border-color 0.3s,
                   height 0.3s, width 0.3s;
 
-                &:hover:not(.is-active) {
+                &:hover,
+                &:focus:not(.is-active) {
                   background: var(--fade-grey-light-3);
                   color: var(--light-text);
                 }
@@ -1388,7 +1391,8 @@ watchEffect(() => {
         border-color: var(--dark-sidebar-light-12);
         color: var(--dark-dark-text);
 
-        &:hover {
+        &:hover,
+        &:focus {
           color: var(--primary);
           border-color: var(--primary);
         }
@@ -1513,7 +1517,8 @@ watchEffect(() => {
               border-color: var(--dark-sidebar-light-12);
               background: var(--dark-sidebar-light-2);
 
-              &:hover {
+              &:hover,
+              &:focus {
                 border-color: var(--primary);
 
                 .uploader-label {
@@ -1571,7 +1576,8 @@ watchEffect(() => {
           background: none;
           border-color: transparent;
 
-          &:hover {
+          &:hover,
+          &:focus {
             background: var(--dark-sidebar-light-6);
             border-color: var(--dark-sidebar-light-12);
           }

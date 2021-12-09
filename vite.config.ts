@@ -88,22 +88,17 @@ export default defineConfig({
   resolve: {
     alias: [
       {
-        find: '/~/',
-        replacement: `/src/assets/`,
-      },
-      {
         find: '/@src/',
         replacement: `/src/`,
       },
     ],
   },
-
   build: {
     sourcemap: SOURCE_MAP,
     // Turning off brotliSize display can slightly reduce packaging time
     brotliSize: !SILENT,
     chunkSizeWarningLimit: 2000,
-    minify: false,
+    minify: true,
 
     /**
      * Uncomment this section to build the demo with missing images
@@ -138,6 +133,7 @@ export default defineConfig({
      * @see https://github.com/hannoeru/vite-plugin-pages
      */
     Pages({
+      nuxtStyle: false,
       pagesDir: [
         {
           dir: 'src/pages',

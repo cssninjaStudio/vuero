@@ -122,7 +122,8 @@
       border-color: var(--dark-sidebar-light-12) !important;
       color: var(--dark-dark-text);
 
-      &:hover {
+      &:hover,
+      &:focus {
         background-color: var(--dark-sidebar) !important;
       }
     }

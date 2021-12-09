@@ -51,7 +51,7 @@ const sidebar = useSidebar()
         <a
           class="button collapse-add-button is-primary"
           tabindex="0"
-          @keydown.space.prevent="sidebar.toggle('addConversation')"
+          @keydown.space.prevent="emit('addConversation')"
           @click="() => emit('addConversation')"
         >
           <i aria-hidden="true" class="iconify" data-icon="feather:plus"></i>
@@ -59,9 +59,9 @@ const sidebar = useSidebar()
       </div>
       <ul class="collapsed-conversations">
         <li
-          v-for="conversation in conversations"
+          v-for="conversation in props.conversations"
           :key="conversation.id"
-          :class="[selectedConversationId === conversation.id && 'is-active']"
+          :class="[props.selectedConversationId === conversation.id && 'is-active']"
           tabindex="0"
           @keydown.space.prevent="() => emit('selectConversation', conversation.id)"
           @click="() => emit('selectConversation', conversation.id)"

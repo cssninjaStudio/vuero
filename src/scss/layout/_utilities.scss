@@ -400,7 +400,8 @@ var {
   transition: all 0.3s; // transition-all test
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     box-shadow: var(--primary-box-shadow);
   }
 }

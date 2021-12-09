@@ -19,16 +19,16 @@ const props = withDefaults(
 
 <template>
   <div
-    :class="[mobileConversationListOpen && 'is-active']"
+    :class="[props.mobileConversationListOpen && 'is-active']"
     class="conversation-area"
     data-simplebar
   >
     <!--Conversation-->
     <div
-      v-for="conversation in conversations"
+      v-for="conversation in props.conversations"
       :key="conversation.id"
       class="conversation"
-      :class="[conversationId === conversation.id && 'active']"
+      :class="[props.conversationId === conversation.id && 'active']"
       tabindex="0"
       @keydown.space.prevent="
         () => {

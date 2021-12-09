@@ -80,7 +80,7 @@
 
       <!--Stacks-->
       <div class="stacks">
-        <tippy class="has-help-cursor" interactive placement="top">
+        <Tippy class="has-help-cursor" interactive placement="top">
           <div class="stack">
             <img src="/images/icons/stacks/vuejs.svg" alt="" />
           </div>
@@ -97,9 +97,9 @@
               }"
             />
           </template>
-        </tippy>
+        </Tippy>
 
-        <tippy class="has-help-cursor" interactive placement="top">
+        <Tippy class="has-help-cursor" interactive placement="top">
           <div class="stack">
             <img src="/images/icons/stacks/vite.svg" alt="" />
           </div>
@@ -116,9 +116,9 @@
               }"
             />
           </template>
-        </tippy>
+        </Tippy>
 
-        <tippy class="has-help-cursor" interactive placement="top">
+        <Tippy class="has-help-cursor" interactive placement="top">
           <div class="stack">
             <img src="/images/icons/stacks/bulma.svg" alt="" />
           </div>
@@ -135,9 +135,9 @@
               }"
             />
           </template>
-        </tippy>
+        </Tippy>
 
-        <tippy class="has-help-cursor" interactive placement="top">
+        <Tippy class="has-help-cursor" interactive placement="top">
           <div class="stack">
             <img src="/images/icons/stacks/sass.svg" alt="" />
           </div>
@@ -154,9 +154,9 @@
               }"
             />
           </template>
-        </tippy>
+        </Tippy>
 
-        <tippy class="has-help-cursor" interactive placement="top">
+        <Tippy class="has-help-cursor" interactive placement="top">
           <div class="stack">
             <img src="/images/icons/stacks/typescript.svg" alt="" />
           </div>
@@ -173,7 +173,7 @@
               }"
             />
           </template>
-        </tippy>
+        </Tippy>
       </div>
     </div>
   </div>

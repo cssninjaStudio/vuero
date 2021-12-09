@@ -344,7 +344,8 @@ const exampleColumns = {
       text-align: center;
       box-shadow: none;
 
-      &:hover {
+      &:hover,
+      &:focus {
         border-color: var(--fade-grey-dark-6);
         box-shadow: var(--light-box-shadow);
 

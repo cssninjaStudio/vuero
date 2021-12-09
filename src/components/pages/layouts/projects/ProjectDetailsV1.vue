@@ -1002,7 +1002,8 @@ const participants = [
           .file-box {
             background: var(--dark-sidebar-light-3);
 
-            &:hover {
+            &:hover,
+            &:focus {
               border-color: var(--dark-sidebar-light-10);
             }
 

@@ -208,6 +208,23 @@ $shade-variants: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 20, 
   }
 
   /**
+   * sidebar colors
+   */
+  // sidebar - dark shades
+  @each $shade in 7, 12 {
+    --sidebar-dark-#{$shade}: hsl(
+      var(--sidebar-h) var(--sidebar-s) calc(var(--sidebar-l) - #{$shade}%)
+    );
+  }
+
+  // sidebar - light shades
+  @each $shade in 5 {
+    --sidebar-light-#{$shade}: hsl(
+      var(--sidebar-h) var(--sidebar-s) calc(var(--sidebar-l) + #{$shade}%)
+    );
+  }
+
+  /**
    * muted-grey colors
    */
   // muted-grey - dark shades

@@ -335,7 +335,7 @@ onMounted(async () => {
               class="is-dark-bordered-12"
             >
               <template #icon>
-                <tippy
+                <Tippy
                   class="has-help-cursor"
                   interactive
                   :offset="[0, 10]"
@@ -345,7 +345,7 @@ onMounted(async () => {
                   <template #content>
                     <UserPopoverContent :user="popovers.user31" />
                   </template>
-                </tippy>
+                </Tippy>
               </template>
               <template #action>
                 <VButton color="primary" raised>Manage</VButton>
@@ -362,7 +362,7 @@ onMounted(async () => {
               class="is-dark-bordered-12"
             >
               <template #icon>
-                <tippy
+                <Tippy
                   class="has-help-cursor"
                   interactive
                   :offset="[0, 10]"
@@ -372,7 +372,7 @@ onMounted(async () => {
                   <template #content>
                     <UserPopoverContent :user="popovers.user23" />
                   </template>
-                </tippy>
+                </Tippy>
               </template>
               <template #action>
                 <VButton color="primary" raised>Manage</VButton>
@@ -389,7 +389,7 @@ onMounted(async () => {
               class="is-dark-bordered-12"
             >
               <template #icon>
-                <tippy
+                <Tippy
                   class="has-help-cursor"
                   interactive
                   :offset="[0, 10]"
@@ -399,7 +399,7 @@ onMounted(async () => {
                   <template #content>
                     <UserPopoverContent :user="popovers.user32" />
                   </template>
-                </tippy>
+                </Tippy>
               </template>
               <template #action>
                 <VButton color="primary" raised>Manage</VButton>
@@ -416,7 +416,7 @@ onMounted(async () => {
               class="is-dark-bordered-12"
             >
               <template #icon>
-                <tippy
+                <Tippy
                   class="has-help-cursor"
                   interactive
                   :offset="[0, 10]"
@@ -426,7 +426,7 @@ onMounted(async () => {
                   <template #content>
                     <UserPopoverContent :user="popovers.user13" />
                   </template>
-                </tippy>
+                </Tippy>
               </template>
               <template #action>
                 <VButton color="primary" raised>Manage</VButton>

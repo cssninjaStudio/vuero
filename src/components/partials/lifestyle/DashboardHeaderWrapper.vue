@@ -53,7 +53,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
           </p>
         </div>
         <div class="meta-achievements">
-          <tippy>
+          <Tippy>
             <div class="meta-achievement is-danger">
               <i aria-hidden="true" class="fas fa-fire"></i>
             </div>
@@ -70,9 +70,9 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                 </div>
               </div>
             </template>
-          </tippy>
+          </Tippy>
 
-          <tippy>
+          <Tippy>
             <div class="meta-achievement is-primary">
               <i aria-hidden="true" class="fas fa-medal"></i>
             </div>
@@ -89,9 +89,9 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                 </div>
               </div>
             </template>
-          </tippy>
+          </Tippy>
 
-          <tippy>
+          <Tippy>
             <div class="meta-achievement is-yellow">
               <i aria-hidden="true" class="fas fa-trophy"></i>
             </div>
@@ -108,7 +108,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                 </div>
               </div>
             </template>
-          </tippy>
+          </Tippy>
         </div>
       </div>
 

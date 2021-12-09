@@ -21,7 +21,8 @@
     text-align: center;
     cursor: pointer;
 
-    &:hover {
+    &:hover,
+    &:focus {
       img {
         filter: grayscale(0);
         opacity: 1;

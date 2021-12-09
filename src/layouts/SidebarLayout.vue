@@ -2,7 +2,7 @@
 import { ref, watchPostEffect, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
-import type { SidebarTheme } from '/@src/stores/layoutSwitcher'
+import type { SidebarTheme } from '/@src/components/navigation/desktop/Sidebar.vue'
 import { usePanels } from '/@src/stores/panels'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 
@@ -94,7 +94,7 @@ watch(
         </li>
         <li>
           <a
-            aria-label="Dsiplay layout content"
+            aria-label="Display layout content"
             :class="[activeMobileSubsidebar === 'layout' && 'is-active']"
             tabindex="0"
             @keydown.space.prevent="activeMobileSubsidebar = 'layout'"
@@ -105,7 +105,7 @@ watch(
         </li>
         <li>
           <a
-            aria-label="Dsiplay element content"
+            aria-label="Display element content"
             :class="[activeMobileSubsidebar === 'elements' && 'is-active']"
             tabindex="0"
             @keydown.space.prevent="activeMobileSubsidebar = 'elements'"
@@ -116,7 +116,7 @@ watch(
         </li>
         <li>
           <a
-            aria-label="Dsiplay components content"
+            aria-label="Display components content"
             :class="[activeMobileSubsidebar === 'components' && 'is-active']"
             tabindex="0"
             @keydown.space.prevent="activeMobileSubsidebar = 'components'"
@@ -152,20 +152,22 @@ watch(
     </MobileSidebar>
 
     <!-- Mobile subsidebar links -->
-    <transition name="slide-x">
-      <LayoutsMobileSubsidebar
-        v-if="isMobileSidebarOpen && activeMobileSubsidebar === 'layout'"
-      />
-      <DashboardsMobileSubsidebar
-        v-else-if="isMobileSidebarOpen && activeMobileSubsidebar === 'dashboard'"
-      />
-      <ComponentsMobileSubsidebar
-        v-else-if="isMobileSidebarOpen && activeMobileSubsidebar === 'components'"
-      />
-      <ElementsMobileSubsidebar
-        v-else-if="isMobileSidebarOpen && activeMobileSubsidebar === 'elements'"
-      />
-    </transition>
+    <Transition name="slide-x">
+      <KeepAlive>
+        <LayoutsMobileSubsidebar
+          v-if="isMobileSidebarOpen && activeMobileSubsidebar === 'layout'"
+        />
+        <DashboardsMobileSubsidebar
+          v-else-if="isMobileSidebarOpen && activeMobileSubsidebar === 'dashboard'"
+        />
+        <ComponentsMobileSubsidebar
+          v-else-if="isMobileSidebarOpen && activeMobileSubsidebar === 'components'"
+        />
+        <ElementsMobileSubsidebar
+          v-else-if="isMobileSidebarOpen && activeMobileSubsidebar === 'elements'"
+        />
+      </KeepAlive>
+    </Transition>
 
     <!-- Desktop navigation -->
     <CircularMenu />
@@ -306,24 +308,26 @@ watch(
       </template>
     </Sidebar>
 
-    <transition name="slide-x">
-      <ComponentsSubsidebar
-        v-if="isDesktopSidebarOpen && activeMobileSubsidebar === 'components'"
-        @close="isDesktopSidebarOpen = false"
-      />
-      <ElementsSubsidebar
-        v-else-if="isDesktopSidebarOpen && activeMobileSubsidebar === 'elements'"
-        @close="isDesktopSidebarOpen = false"
-      />
-      <DashboardsSubsidebar
-        v-else-if="isDesktopSidebarOpen && activeMobileSubsidebar === 'dashboard'"
-        @close="isDesktopSidebarOpen = false"
-      />
-      <LayoutsSubsidebar
-        v-else-if="isDesktopSidebarOpen && activeMobileSubsidebar === 'layout'"
-        @close="isDesktopSidebarOpen = false"
-      />
-    </transition>
+    <Transition name="slide-x">
+      <KeepAlive>
+        <ComponentsSubsidebar
+          v-if="isDesktopSidebarOpen && activeMobileSubsidebar === 'components'"
+          @close="isDesktopSidebarOpen = false"
+        />
+        <ElementsSubsidebar
+          v-else-if="isDesktopSidebarOpen && activeMobileSubsidebar === 'elements'"
+          @close="isDesktopSidebarOpen = false"
+        />
+        <DashboardsSubsidebar
+          v-else-if="isDesktopSidebarOpen && activeMobileSubsidebar === 'dashboard'"
+          @close="isDesktopSidebarOpen = false"
+        />
+        <LayoutsSubsidebar
+          v-else-if="isDesktopSidebarOpen && activeMobileSubsidebar === 'layout'"
+          @close="isDesktopSidebarOpen = false"
+        />
+      </KeepAlive>
+    </Transition>
 
     <LanguagesPanel />
     <ActivityPanel />

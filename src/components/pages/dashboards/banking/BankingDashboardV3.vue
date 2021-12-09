@@ -121,7 +121,7 @@ import { popovers } from '/@src/data/users/userPopovers'
           </div>
 
           <div class="people">
-            <tippy
+            <Tippy
               class="has-help-cursor"
               interactive
               :offset="[0, 40]"
@@ -131,8 +131,8 @@ import { popovers } from '/@src/data/users/userPopovers'
               <template #content>
                 <UserPopoverContent :user="popovers.user21" />
               </template>
-            </tippy>
-            <tippy
+            </Tippy>
+            <Tippy
               class="has-help-cursor"
               interactive
               :offset="[0, 40]"
@@ -142,8 +142,8 @@ import { popovers } from '/@src/data/users/userPopovers'
               <template #content>
                 <UserPopoverContent :user="popovers.user120" />
               </template>
-            </tippy>
-            <tippy
+            </Tippy>
+            <Tippy
               class="has-help-cursor"
               interactive
               :offset="[0, 40]"
@@ -153,8 +153,8 @@ import { popovers } from '/@src/data/users/userPopovers'
               <template #content>
                 <UserPopoverContent :user="popovers.user7" />
               </template>
-            </tippy>
-            <tippy
+            </Tippy>
+            <Tippy
               class="has-help-cursor"
               interactive
               :offset="[0, 40]"
@@ -164,8 +164,8 @@ import { popovers } from '/@src/data/users/userPopovers'
               <template #content>
                 <UserPopoverContent :user="popovers.user124" />
               </template>
-            </tippy>
-            <tippy
+            </Tippy>
+            <Tippy
               class="has-help-cursor"
               interactive
               :offset="[0, 40]"
@@ -175,7 +175,7 @@ import { popovers } from '/@src/data/users/userPopovers'
               <template #content>
                 <UserPopoverContent :user="popovers.user31" />
               </template>
-            </tippy>
+            </Tippy>
             <VAvatar initials="50K" color="h-yellow" />
           </div>
         </div>

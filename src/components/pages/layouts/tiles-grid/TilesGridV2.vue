@@ -85,7 +85,7 @@ const optionsSingle = [
       </VPlaceholderPage>
 
       <!--Tile Grid v1-->
-      <transition-group name="list" tag="div" class="columns is-multiline">
+      <TransitionGroup name="list" tag="div" class="columns is-multiline">
         <!--Grid item-->
         <div v-for="item in filteredData" :key="item.id" class="column is-4">
           <div class="tile-grid-item">
@@ -107,7 +107,7 @@ const optionsSingle = [
             </div>
           </div>
         </div>
-      </transition-group>
+      </TransitionGroup>
     </div>
   </div>
 </template>
@@ -135,7 +135,8 @@ const optionsSingle = [
     padding: 16px;
     cursor: pointer;
 
-    &:hover {
+    &:hover,
+    &:focus {
       border-color: var(--primary);
       box-shadow: var(--light-box-shadow);
     }
@@ -205,7 +206,8 @@ const optionsSingle = [
     .tile-grid-item {
       @include vuero-card--dark;
 
-      &:hover {
+      &:hover,
+      &:focus {
         border-color: var(--primary) !important;
       }
     }

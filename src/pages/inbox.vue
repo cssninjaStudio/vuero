@@ -567,7 +567,8 @@ useHead({
             font-weight: 500;
             font-family: var(--font);
 
-            &:hover {
+            &:hover,
+            &:focus {
               opacity: 0.8;
               box-shadow: var(--primary-box-shadow);
             }
@@ -693,7 +694,8 @@ useHead({
               justify-content: center;
               align-items: center;
 
-              &:hover {
+              &:hover,
+              &:focus {
                 i {
                   color: var(--dark-text);
                 }
@@ -728,7 +730,8 @@ useHead({
                 height 0.3s, width 0.3s;
               cursor: pointer;
 
-              &:hover {
+              &:hover,
+              &:focus {
                 background: var(--fade-grey-light-3);
               }
 
@@ -1215,7 +1218,8 @@ useHead({
                 color: var(--smoke-white);
                 font-weight: 500;
 
-                &:hover {
+                &:hover,
+                &:focus {
                   box-shadow: var(--secondary-box-shadow);
                 }
               }
@@ -1286,7 +1290,8 @@ useHead({
     background: transparent;
     border: 1px solid transparent;
 
-    &:hover {
+    &:hover,
+    &:focus {
       border-color: var(--fade-grey-dark-4);
       box-shadow: var(--light-box-shadow) !important;
     }
@@ -1425,7 +1430,8 @@ useHead({
             color: var(--smoke-white);
             font-weight: 500;
 
-            &:hover {
+            &:hover,
+            &:focus {
               box-shadow: var(--secondary-box-shadow);
             }
           }
@@ -1491,7 +1497,8 @@ Dark mode
               border-color: var(--primary) !important;
               color: var(--smoke-white) !important;
 
-              &:hover {
+              &:hover,
+              &:focus {
                 box-shadow: var(--primary-box-shadow);
               }
             }

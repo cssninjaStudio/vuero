@@ -7,7 +7,7 @@ can easily add a `<VIconBox />` inside your popover.
 
 ```vue
 <template>
-  <tippy>
+  <Tippy>
     <VButton>Hover me!</VButton>
     <template #content>
       <div class="v-popover-content is-text">
@@ -22,7 +22,7 @@ can easily add a `<VIconBox />` inside your popover.
         </div>
       </div>
     </template>
-  </tippy>
+  </Tippy>
 </template>
 ```
 
@@ -31,7 +31,7 @@ can easily add a `<VIconBox />` inside your popover.
 <!--example-->
 
 <div class="buttons">
-  <tippy>
+  <Tippy>
     <VButton class="mx-1">Hover me!</VButton>
     <template #content>
       <div class="v-popover-content is-text">
@@ -46,8 +46,8 @@ can easily add a `<VIconBox />` inside your popover.
           </div>
       </div>
     </template>
-  </tippy>
-  <tippy>
+  </Tippy>
+  <Tippy>
     <VButton class="mx-1">Hover me!</VButton>
     <template #content>
       <div class="v-popover-content is-text">
@@ -62,8 +62,8 @@ can easily add a `<VIconBox />` inside your popover.
           </div>
       </div>
     </template>
-  </tippy>
-  <tippy>
+  </Tippy>
+  <Tippy>
     <VButton class="mx-1">Hover me!</VButton>
     <template #content>
       <div class="v-popover-content is-text">
@@ -78,8 +78,8 @@ can easily add a `<VIconBox />` inside your popover.
           </div>
       </div>
     </template>
-  </tippy>
-  <tippy>
+  </Tippy>
+  <Tippy>
     <VButton class="mx-1">Hover me!</VButton>
     <template #content>
       <div class="v-popover-content is-text">
@@ -94,7 +94,7 @@ can easily add a `<VIconBox />` inside your popover.
           </div>
       </div>
     </template>
-  </tippy>
+  </Tippy>
 </div>
 
 <!--/example-->

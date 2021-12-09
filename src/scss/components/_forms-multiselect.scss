@@ -493,7 +493,8 @@
         margin-left: 0 !important;
         margin-right: 0 !important;
 
-        &:hover {
+        &:hover,
+        &:focus {
           i::before {
             opacity: 1;
             pointer-events: all;

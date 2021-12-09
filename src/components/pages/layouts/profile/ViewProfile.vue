@@ -1135,7 +1135,8 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
             background: var(--dark-sidebar-light-2);
             border-color: var(--dark-sidebar-light-12);
 
-            &:hover {
+            &:hover,
+            &:focus {
               border-color: var(--primary);
 
               i {

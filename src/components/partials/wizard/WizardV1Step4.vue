@@ -25,32 +25,14 @@ let isInit = false
 
 const wizard = useWizard()
 
-const onAddFile = (error: any, fileInfo: any) => {
-  if (error) {
-    console.error(error)
-    return
-  }
-
-  const _file = fileInfo.file as File
-  if (_file) {
-    wizard.data.logo = _file
-  }
-}
-const onRemoveFile = (error: any, fileInfo: any) => {
-  if (error) {
-    console.error(error)
-    return
-  }
-
-  wizard.data.logo = null
-}
-
 const initDropzone = () => {
   if (isInit) {
     return
   }
   isInit = true
 
+  // We use dropzone library to handle the file upload
+  // https://docs.dropzone.dev/
   dropzone.value = new Dropzone(document.body, {
     // Make the whole body a dropzone
     url: 'https://www.cssninja.io/upload.php', // Set the url

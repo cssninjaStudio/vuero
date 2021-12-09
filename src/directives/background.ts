@@ -24,7 +24,7 @@ const onUpdate: DirectiveHook = (el: HTMLElement, bindings) => {
 }
 
 const background: Directive = {
-  getSSRProps(binding, vnode) {
+  getSSRProps() {
     return {}
   },
   updated: onUpdate,

@@ -91,7 +91,7 @@ Read more about it [on github.com/typicode/json-server](https://github.com/typic
 Our online documentation is a great place to learn how to use Vuero.
 We try to keep it mostly up to date, so you can always find the latest information.
 
-> We also have a great [discord community](https://discord.gg/v2WR6ZvkQ4) where you can ask questions and show your work.
+> We also have a great [discord community](https://discord.cssninja.io/) where you can ask questions and show your work.
 
 ### [Vuero on docs.cssninja.io](https://docs.cssninja.io/vuero?utm_source=readme)
 

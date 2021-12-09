@@ -15,6 +15,10 @@ const emit = defineEmits<VAccordionImageEmits>()
 const props = withDefaults(defineProps<VAccordionImageProps>(), {
   items: () => [],
 })
+
+const toggle = (key: number) => {
+  emit('select', key)
+}
 </script>
 
 <template>
@@ -27,16 +31,32 @@ const props = withDefaults(defineProps<VAccordionImageProps>(), {
         tabindex="0"
         :style="{ backgroundImage: `url(${item.image})` }"
       >
-        <div>
-          <a
-            tabindex="0"
-            @keydown.space.prevent="emit('select', key)"
-            @click="emit('select', key)"
-          >
-            <h2>{{ item.title }}</h2>
-            <p>{{ item.content }}</p>
-          </a>
-        </div>
+        <slot name="accordion-item" :item="item" :index="key" :toggle="toggle">
+          <div>
+            <a tabindex="0" @keydown.space.prevent="toggle(key)" @click="toggle(key)">
+              <h2>
+                <slot
+                  name="accordion-item-summary"
+                  :item="item"
+                  :index="key"
+                  :toggle="toggle"
+                >
+                  {{ item.title }}
+                </slot>
+              </h2>
+              <p>
+                <slot
+                  name="accordion-item-content"
+                  :item="item"
+                  :index="key"
+                  :toggle="toggle"
+                >
+                  {{ item.content }}
+                </slot>
+              </p>
+            </a>
+          </div>
+        </slot>
       </li>
     </ul>
   </div>

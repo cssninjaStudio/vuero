@@ -178,7 +178,8 @@
           font-family: var(--font);
           color: var(--light-text);
 
-          &:hover {
+          &:hover,
+          &:focus {
             color: var(--primary);
           }
         }
@@ -194,7 +195,8 @@
         color: var(--light-text);
         margin: 0 5px;
 
-        &:hover {
+        &:hover,
+        &:focus {
           color: var(--primary);
         }
       }
@@ -221,7 +223,8 @@
     a {
       color: var(--light-text);
 
-      &:hover {
+      &:hover,
+      &:focus {
         color: var(--primary);
       }
     }

@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { useSidebar } from '/@src/stores/sidebar'
 import { onceImageErrored } from '/@src/utils/via-placeholder'
 
 const emit = defineEmits<{
@@ -16,8 +15,6 @@ const props = withDefaults(
     selectedConversationId: 0,
   }
 )
-
-const sidebar = useSidebar()
 </script>
 
 <template>
@@ -29,9 +26,9 @@ const sidebar = useSidebar()
 
       <ul id="mobile-conversations-list" class="animated preFadeInUp fadeInUp">
         <li
-          v-for="conversation in conversations"
+          v-for="conversation in props.conversations"
           :key="conversation.id"
-          :class="[selectedConversationId === conversation.id && 'is-active']"
+          :class="[props.selectedConversationId === conversation.id && 'is-active']"
           tabindex="0"
           @keydown.space.prevent="() => emit('selectConversation', conversation.id)"
           @click="() => emit('selectConversation', conversation.id)"

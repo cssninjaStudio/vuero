@@ -15,7 +15,7 @@ come content. Check the markup for more details about usage.
     <div class="card-head">
       <VBlock title="Greta K." subtitle="Sales Manager" center class="no-margin">
         <template #icon>
-          <tippy
+          <Tippy
             class="has-help-cursor"
             interactive
             :offset="[0, 10]"
@@ -41,7 +41,7 @@ come content. Check the markup for more details about usage.
                 }"
               />
             </template>
-          </tippy>
+          </Tippy>
         </template>
       </VBlock>
 

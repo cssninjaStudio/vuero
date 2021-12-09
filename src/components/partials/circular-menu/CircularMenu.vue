@@ -212,7 +212,8 @@ const localFlagSrc = computed(() => {
     background-color: hsl(0deg 0% 0% / 20%);
     transition: transform 0.3s ease, background-color 0.2s ease;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: hsl(0deg 0% 0% / 30%);
     }
 

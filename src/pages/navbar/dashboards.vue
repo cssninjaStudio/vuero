@@ -14,14 +14,14 @@ const route = useRoute()
 
 <template>
   <component
-    :is="layoutSwitcher.navbarLayoutComponent"
-    :theme="layoutSwitcher.navbarLayoutTheme"
+    :is="layoutSwitcher.dynamicLayoutComponent"
+    v-bind="layoutSwitcher.dynamicLayoutProps"
   >
     <!-- Content Wrapper -->
     <RouterView v-slot="{ Component }">
-      <transition name="fade-fast" mode="out-in">
+      <Transition name="fade-fast" mode="out-in">
         <component :is="Component" :key="route.fullPath" />
-      </transition>
+      </Transition>
     </RouterView>
   </component>
 </template>

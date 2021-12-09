@@ -1,13 +1,12 @@
-import { InjectionKey, inject, provide } from 'vue'
 import axios, { AxiosInstance } from 'axios'
 
 import { useUserSession } from '/@src/stores/userSession'
 
-export const apiSymbol: InjectionKey<AxiosInstance> = Symbol()
+let api: AxiosInstance
 
-export function provideApi() {
+export function createApi() {
   // Here we set the base URL for all requests made to the api
-  const api = axios.create({
+  api = axios.create({
     baseURL: import.meta.env.VITE_API_BASE_URL,
   })
 
@@ -26,15 +25,12 @@ export function provideApi() {
     return config
   })
 
-  provide(apiSymbol, api)
-
   return api
 }
 
 export function useApi() {
-  const api = inject(apiSymbol)
   if (!api) {
-    throw new Error('useApi should be used inside component setup')
+    createApi()
   }
   return api
 }

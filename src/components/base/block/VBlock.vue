@@ -28,9 +28,11 @@ const props = withDefaults(defineProps<VBlockProps>(), {
   >
     <slot name="icon"></slot>
     <div class="flex-meta" :class="[props.lighter && 'is-lighter']">
-      <span>{{ props.title }}</span>
-      <span v-if="props.subtitle">{{ props.subtitle }}</span>
-      <span v-if="props.infratitle">{{ props.infratitle }}</span>
+      <slot name="title">
+        <span>{{ props.title }}</span>
+        <span v-if="props.subtitle">{{ props.subtitle }}</span>
+        <span v-if="props.infratitle">{{ props.infratitle }}</span>
+      </slot>
       <slot></slot>
     </div>
     <div class="flex-end">

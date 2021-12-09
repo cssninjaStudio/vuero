@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { useRoute } from 'vue-router'
 import { useWindowScroll } from '@vueuse/core'
 
 export type NavbarSearchTheme = 'default' | 'center' | 'fade'
@@ -14,12 +13,8 @@ const props = withDefaults(
   }
 )
 
-const route = useRoute()
 const { y } = useWindowScroll()
-
-const isScrolling = computed(() => {
-  return y.value > 30
-})
+const isScrolling = computed(() => y.value > 30)
 </script>
 
 <template>
@@ -189,7 +184,8 @@ const isScrolling = computed(() => {
               align-items: center;
               padding: 16px;
 
-              &:hover {
+              &:hover,
+              &:focus {
                 background: var(--fade-grey-light-4);
               }
 
@@ -377,7 +373,8 @@ const isScrolling = computed(() => {
           border: none;
           color: var(--light-text);
 
-          &:hover {
+          &:hover,
+          &:focus {
             background: var(--widget-grey-dark-2);
             color: var(--dark-text);
           }
@@ -475,7 +472,8 @@ const isScrolling = computed(() => {
               .dropdown-block {
                 background: var(--dark-sidebar-light-2) !important;
 
-                &:hover {
+                &:hover,
+                &:focus {
                   background: var(--dark-sidebar-light-5) !important;
                 }
 
@@ -496,7 +494,8 @@ const isScrolling = computed(() => {
         .icon-link {
           background: var(--landing-yyy);
 
-          &:hover {
+          &:hover,
+          &:focus {
             background: var(--landing-yyy-dark-12);
           }
 
@@ -512,7 +511,8 @@ const isScrolling = computed(() => {
               .dropdown-head {
                 background: var(--dark-sidebar-light-2) !important;
 
-                &:hover {
+                &:hover,
+                &:focus {
                   background: var(--dark-sidebar-light-2) !important;
                 }
 
@@ -543,7 +543,8 @@ const isScrolling = computed(() => {
             background: var(--dark-sidebar-dark-2) !important;
             border-color: var(--dark-sidebar-dark-2) !important;
 
-            &:hover {
+            &:hover,
+            &:focus {
               background: var(--dark-sidebar-light-4) !important;
               border-color: var(--dark-sidebar-light-4) !important;
               color: var(--white) !important;

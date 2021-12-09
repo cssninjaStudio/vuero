@@ -1,5 +1,5 @@
 // Add Icon
-function renderIcon(data: any, cell: any, row: any) {
+function renderIcon(data: any /* , cell: any, row: any */) {
   return `
     <div class="media-flex-center">
       <img class="drinks-icon" src="/images/icons/datatable/${data}.svg" alt="">
@@ -11,14 +11,14 @@ function renderIcon(data: any, cell: any, row: any) {
 }
 
 // Caffeinated column cell manipulation
-function renderYesNo(data: any, cell: any, row: any) {
+function renderYesNo(data: any /* , cell: any, row: any */) {
   return data == 'true'
     ? '<div class="has-text-centered"><span class="positive-icon"><i aria-hidden="true" class="iconify" data-icon="feather:check"></i></span></div>'
     : '<div class="has-text-centered"><span class="negative-icon"><i aria-hidden="true" class="iconify" data-icon="feather:x"></i></span></div>'
 }
 
 // Price
-function renderHighLow(data: any, cell: any, row: any) {
+function renderHighLow(data: any /* , cell: any, row: any */) {
   if (data > 0) {
     return `<span class="price dark-inverted">${data}</span>`
   } else if (data == 0) {
@@ -27,12 +27,12 @@ function renderHighLow(data: any, cell: any, row: any) {
 }
 
 // Stock
-function renderStock(data: any, cell: any, row: any) {
+function renderStock(data: any /* , cell: any, row: any */) {
   return `<span class="light-text">${data}</span>`
 }
 
 // Status
-function renderStatus(data: any, cell: any, row: any) {
+function renderStatus(data: any /* , cell: any, row: any */) {
   if (data === 'available') {
     return `<span class="tag is-primary is-elevated is-curved is-capitalize">${data}</span>`
   } else if (data === 'new') {
@@ -44,7 +44,7 @@ function renderStatus(data: any, cell: any, row: any) {
 }
 
 // profit
-function renderProfit(data: any, cell: any, row: any) {
+function renderProfit(data: any /* , cell: any, row: any */) {
   if (data > 0) {
     return `<div class="has-text-centered"><span class="positive-icon light-text"><i aria-hidden="true" class="iconify" data-icon="feather:trending-up"></i> +${data}%</span></div>`
   } else if (data < 0) {

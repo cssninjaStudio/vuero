@@ -783,7 +783,8 @@ $overlay-bg-dark: linear-gradient(
         transition: 0.2s;
         position: relative;
 
-        &:hover {
+        &:hover,
+        &:focus {
           background-color: $msg-hover-bg;
         }
 
@@ -1194,7 +1195,8 @@ $overlay-bg-dark: linear-gradient(
           width: 28px;
           height: 42px;
 
-          &:hover {
+          &:hover,
+          &:focus {
             .button {
               background: var(--fade-grey);
 
@@ -1394,7 +1396,8 @@ $overlay-bg-dark: linear-gradient(
           .button {
             color: var(--light-text);
 
-            &:hover {
+            &:hover,
+            &:focus {
               box-shadow: var(--light-box-shadow);
             }
           }

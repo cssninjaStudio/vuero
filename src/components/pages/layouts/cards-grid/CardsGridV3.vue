@@ -93,7 +93,7 @@ function getAvatarData(user: any): VAvatarProps {
       </VPlaceholderPage>
 
       <!--Card Grid v3-->
-      <transition-group
+      <TransitionGroup
         name="list"
         tag="div"
         class="columns is-multiline is-flex-tablet-p is-half-tablet-p"
@@ -144,7 +144,7 @@ function getAvatarData(user: any): VAvatarProps {
             </div>
           </div>
         </div>
-      </transition-group>
+      </TransitionGroup>
     </div>
   </div>
 </template>
@@ -229,7 +229,8 @@ function getAvatarData(user: any): VAvatarProps {
         width: calc(50% - 4px);
         color: var(--light-text);
 
-        &:hover {
+        &:hover,
+        &:focus {
           border-color: var(--fade-grey-dark-4);
           color: var(--primary);
           box-shadow: var(--light-box-shadow);

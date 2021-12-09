@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { useRoute } from 'vue-router'
 
-import type { SidebarTheme } from '/@src/stores/layoutSwitcher'
+import type { SidebarTheme } from '/@src/components/navigation/desktop/Sidebar.vue'
 import { usePanels } from '/@src/stores/panels'
 
 const props = withDefaults(
@@ -15,9 +14,7 @@ const props = withDefaults(
 )
 
 const panels = usePanels()
-const route = useRoute()
 const isMobileSidebarOpen = ref(false)
-const isDesktopSidebarOpen = ref(false)
 </script>
 
 <template>

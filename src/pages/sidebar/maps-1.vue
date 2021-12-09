@@ -16,8 +16,9 @@ useHead({
 </script>
 
 <template>
-  <SidebarLayout
-    :theme="layoutSwitcher.sidebarTheme"
+  <component
+    :is="layoutSwitcher.dynamicLayoutComponent"
+    v-bind="layoutSwitcher.dynamicLayoutProps"
     close-on-change
     default-sidebar="dashboard"
     nowrap
@@ -43,5 +44,5 @@ useHead({
         </div>
       </template>
     </MapsDashboard>
-  </SidebarLayout>
+  </component>
 </template>

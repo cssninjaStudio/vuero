@@ -490,7 +490,8 @@
       align-items: center;
       cursor: pointer;
 
-      &:hover {
+      &:hover,
+      &:focus {
         .asset {
           .asset-logo {
             transform: translateY(-5px);

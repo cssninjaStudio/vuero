@@ -394,7 +394,8 @@ export default defineComponent({
       border-color: var(--primary);
       color: var(--smoke-white);
 
-      &:hover {
+      &:hover,
+      &:focus {
         opacity: 0.95;
         box-shadow: var(--primary-box-shadow);
         color: var(--smoke-white) !important;
@@ -434,7 +435,8 @@ export default defineComponent({
       border-color: var(--dark-sidebar-light-12);
       color: var(--dark-dark-text);
 
-      &:hover {
+      &:hover,
+      &:focus {
         border-color: var(--dark-sidebar-light-18);
       }
     }
@@ -456,7 +458,8 @@ export default defineComponent({
         border-color: var(--primary) !important;
         color: var(--primary);
 
-        &:hover {
+        &:hover,
+        &:focus {
           background: var(--primary) !important;
           border-color: var(--primary) !important;
           color: var(--white) !important;
@@ -480,7 +483,8 @@ export default defineComponent({
       border-color: var(--dark-sidebar-light-12);
       color: var(--dark-dark-text);
 
-      &:hover {
+      &:hover,
+      &:focus {
         border-color: var(--primary) !important;
         color: var(--primary) !important;
       }
@@ -493,7 +497,8 @@ export default defineComponent({
       border-color: var(--dark-sidebar-light-12);
       color: var(--dark-dark-text);
 
-      &:hover {
+      &:hover,
+      &:focus {
         border-color: var(--dark-sidebar-light-18);
       }
     }
@@ -514,7 +519,8 @@ export default defineComponent({
       border-color: var(--dark-sidebar-light-12);
       color: var(--dark-dark-text);
 
-      &:hover {
+      &:hover,
+      &:focus {
         border-color: var(--primary) !important;
         color: var(--primary) !important;
       }

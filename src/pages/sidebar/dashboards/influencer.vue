@@ -13,9 +13,9 @@ useHead({
 
 <template>
   <div class="page-content-inner">
-    <teleport to="[data-teleport-bg]">
+    <Teleport to="[data-teleport-bg]">
       <div class="lifestyle-dashboard-bg"></div>
-    </teleport>
+    </Teleport>
 
     <LifestyleDashboardV1 />
   </div>

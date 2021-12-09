@@ -5,15 +5,15 @@ const layoutSwitcher = useLayoutSwitcher()
 
 <template>
   <SidebarLayout
-    :theme="layoutSwitcher.sidebarTheme"
+    :theme="layoutSwitcher.sidebarLayoutTheme"
     open-on-mounted
     default-sidebar="elements"
   >
     <!-- Content Wrapper -->
     <RouterView v-slot="{ Component }">
-      <transition name="translate-page-y" mode="out-in">
+      <Transition name="translate-page-y" mode="out-in">
         <component :is="Component" />
-      </transition>
+      </Transition>
     </RouterView>
   </SidebarLayout>
 </template>

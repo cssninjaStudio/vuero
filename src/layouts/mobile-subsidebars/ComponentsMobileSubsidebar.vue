@@ -65,48 +65,48 @@
           <RouterLink :to="{ name: 'components-tabs' }"> VTabs </RouterLink>
         </li>
         <li>
-          <RouterLink :to="{ name: 'components-flex-pagination' }">
+          <RouterLink :to="{ name: 'components-pagination' }">
             VFlexPagination
           </RouterLink>
         </li>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks>
           <template #header>
             VFlexTable
             <VTag label="v2.2" color="primary" outlined curved />
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
           </template>
 
-          <RouterLink :to="{ name: 'components-flex-table' }" class="is-submenu">
+          <RouterLink :to="{ name: 'components-flextable' }" class="is-submenu">
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             Basic usage
           </RouterLink>
-          <RouterLink :to="{ name: 'components-flex-table-columns' }" class="is-submenu">
+          <RouterLink :to="{ name: 'components-flextable-columns' }" class="is-submenu">
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             Customize columns
           </RouterLink>
-          <RouterLink :to="{ name: 'components-flex-table-slots' }" class="is-submenu">
+          <RouterLink :to="{ name: 'components-flextable-slots' }" class="is-submenu">
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             Slots usage
           </RouterLink>
-          <RouterLink :to="{ name: 'components-flex-table-render' }" class="is-submenu">
+          <RouterLink :to="{ name: 'components-flextable-render' }" class="is-submenu">
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             Render functions
           </RouterLink>
-          <RouterLink :to="{ name: 'components-flex-table-wrapper' }" class="is-submenu">
+          <RouterLink :to="{ name: 'components-flextable-wrapper' }" class="is-submenu">
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             VFlexTableWrapper
           </RouterLink>
           <RouterLink
-            :to="{ name: 'components-flex-table-wrapper-async' }"
+            :to="{ name: 'components-flextable-wrapper-async' }"
             class="is-submenu"
           >
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             Async data
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks>
           <template #header>
             Accordions
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -124,9 +124,9 @@
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             VAccordionImage
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks>
           <template #header>
             Cards
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -154,9 +154,9 @@
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             VCardSocial
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks>
           <template #header>
             Placeholders
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -170,11 +170,11 @@
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             VPlaceholderSection
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
         <li class="divider"></li>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks>
           <template #header>
             Plugins
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -184,9 +184,9 @@
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             Notyf
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
 
-        <SidebarCollapsableLinks>
+        <VCollapseLinks>
           <template #header>
             Placeholders
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -221,7 +221,7 @@
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             VSimpleDatatables
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
       </ul>
     </div>
   </div>

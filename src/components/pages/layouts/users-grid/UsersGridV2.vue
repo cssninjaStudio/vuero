@@ -102,7 +102,7 @@ const optionsSingle = [
         </template>
       </VPlaceholderPage>
 
-      <transition-group name="list" tag="div" class="columns is-multiline">
+      <TransitionGroup name="list" tag="div" class="columns is-multiline">
         <!--Grid item-->
         <div v-for="item in filteredData" :key="item.id" class="column is-3">
           <div class="grid-item-wrap">
@@ -184,7 +184,7 @@ const optionsSingle = [
             </div>
           </div>
         </div>
-      </transition-group>
+      </TransitionGroup>
     </div>
   </div>
 </template>
@@ -242,7 +242,8 @@ const optionsSingle = [
         width: calc(50% - 4px);
         color: var(--light-text);
 
-        &:hover {
+        &:hover,
+        &:focus {
           border-color: var(--fade-grey-dark-4);
           color: var(--primary);
           box-shadow: var(--light-box-shadow);
@@ -330,7 +331,8 @@ const optionsSingle = [
           color: var(--light-text);
           margin-bottom: 0;
 
-          &:hover {
+          &:hover,
+          &:focus {
             border-color: var(--fade-grey-dark-4);
             color: var(--primary);
             box-shadow: var(--light-box-shadow);

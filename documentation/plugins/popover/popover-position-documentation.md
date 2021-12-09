@@ -8,7 +8,7 @@ set your popover placement. Available options are `top`, `top-end`, `bottom`,
 
 ```vue
 <template>
-  <tippy placement="top">
+  <Tippy placement="top">
     <VButton>Top</VButton>
     <template #content>
       <div class="v-popover-content is-text">
@@ -20,7 +20,7 @@ set your popover placement. Available options are `top`, `top-end`, `bottom`,
         </div>
       </div>
     </template>
-  </tippy>
+  </Tippy>
 </template>
 ```
 
@@ -29,7 +29,7 @@ set your popover placement. Available options are `top`, `top-end`, `bottom`,
 <!--example-->
 
 <div class="buttons">
-  <tippy placement="top">
+  <Tippy placement="top">
     <VButton class="mx-1">Top</VButton>
     <template #content>
       <div class="v-popover-content is-text">
@@ -41,8 +41,8 @@ set your popover placement. Available options are `top`, `top-end`, `bottom`,
           </div>
       </div>
     </template>
-  </tippy>
-  <tippy placement="top-end">
+  </Tippy>
+  <Tippy placement="top-end">
     <VButton class="mx-1">Top End</VButton>
     <template #content>
       <div class="v-popover-content is-text">
@@ -54,8 +54,8 @@ set your popover placement. Available options are `top`, `top-end`, `bottom`,
           </div>
       </div>
     </template>
-  </tippy>
-  <tippy placement="bottom">
+  </Tippy>
+  <Tippy placement="bottom">
     <VButton class="mx-1">Bottom</VButton>
     <template #content>
       <div class="v-popover-content is-text">
@@ -67,8 +67,8 @@ set your popover placement. Available options are `top`, `top-end`, `bottom`,
           </div>
       </div>
     </template>
-  </tippy>
-  <tippy placement="bottom-end">
+  </Tippy>
+  <Tippy placement="bottom-end">
     <VButton class="mx-1">Bottom End</VButton>
     <template #content>
       <div class="v-popover-content is-text">
@@ -80,8 +80,8 @@ set your popover placement. Available options are `top`, `top-end`, `bottom`,
           </div>
       </div>
     </template>
-  </tippy>
-  <tippy placement="left">
+  </Tippy>
+  <Tippy placement="left">
     <VButton class="mx-1">Left</VButton>
     <template #content>
       <div class="v-popover-content is-text">
@@ -93,8 +93,8 @@ set your popover placement. Available options are `top`, `top-end`, `bottom`,
           </div>
       </div>
     </template>
-  </tippy>
-  <tippy placement="left-end">
+  </Tippy>
+  <Tippy placement="left-end">
     <VButton class="mx-1">Left End</VButton>
     <template #content>
       <div class="v-popover-content is-text">
@@ -106,8 +106,8 @@ set your popover placement. Available options are `top`, `top-end`, `bottom`,
           </div>
       </div>
     </template>
-  </tippy>
-  <tippy placement="right">
+  </Tippy>
+  <Tippy placement="right">
     <VButton class="mx-1">Right</VButton>
     <template #content>
       <div class="v-popover-content is-text">
@@ -119,8 +119,8 @@ set your popover placement. Available options are `top`, `top-end`, `bottom`,
           </div>
       </div>
     </template>
-  </tippy>
-  <tippy placement="right-end">
+  </Tippy>
+  <Tippy placement="right-end">
     <VButton class="mx-1">Right End</VButton>
     <template #content>
       <div class="v-popover-content is-text">
@@ -132,7 +132,7 @@ set your popover placement. Available options are `top`, `top-end`, `bottom`,
           </div>
       </div>
     </template>
-  </tippy>
+  </Tippy>
 </div>
 
 <!--/example-->

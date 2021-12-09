@@ -59,7 +59,7 @@ const onMounted: DirectiveHook = (el: HTMLElement, bindings) => {
 }
 
 const tooltip: Directive = {
-  getSSRProps(binding, vnode) {
+  getSSRProps() {
     return {}
   },
   updated: onUpdate,

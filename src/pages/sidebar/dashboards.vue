@@ -12,16 +12,17 @@ const route = useRoute()
 </script>
 
 <template>
-  <SidebarLayout
-    :theme="layoutSwitcher.sidebarTheme"
+  <component
+    :is="layoutSwitcher.dynamicLayoutComponent"
+    v-bind="layoutSwitcher.dynamicLayoutProps"
     close-on-change
     default-sidebar="dashboard"
   >
     <!-- Content Wrapper -->
     <RouterView v-slot="{ Component }">
-      <transition name="fade-fast" mode="out-in">
+      <Transition name="fade-fast" mode="out-in">
         <component :is="Component" :key="route.fullPath" />
-      </transition>
+      </Transition>
     </RouterView>
-  </SidebarLayout>
+  </component>
 </template>

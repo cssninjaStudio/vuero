@@ -479,7 +479,8 @@ useHead({
       padding: 0 10px;
       transition: color 0.3s;
 
-      &:hover {
+      &:hover,
+      &:focus {
         font-weight: 500;
         color: var(--primary);
       }

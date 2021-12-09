@@ -327,7 +327,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                 </RouterLink>
 
                 <RouterLink
-                  :to="{ name: 'components-flex-pagination' }"
+                  :to="{ name: 'components-pagination' }"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -339,7 +339,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                 </RouterLink>
 
                 <RouterLink
-                  :to="{ name: 'components-flex-table' }"
+                  :to="{ name: 'components-flextable' }"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">

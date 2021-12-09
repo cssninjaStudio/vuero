@@ -85,7 +85,7 @@ const optionsSingle = [
       </VPlaceholderPage>
 
       <!--Card Grid v1-->
-      <transition-group name="list" tag="div" class="columns is-multiline">
+      <TransitionGroup name="list" tag="div" class="columns is-multiline">
         <!--Grid item-->
         <div v-for="(item, index) in filteredData" :key="index" class="column is-6">
           <div class="card-grid-item">
@@ -133,7 +133,7 @@ const optionsSingle = [
             </div>
           </div>
         </div>
-      </transition-group>
+      </TransitionGroup>
     </div>
   </div>
 </template>
@@ -274,7 +274,8 @@ const optionsSingle = [
         .v-button {
           color: var(--light-text);
 
-          &:hover {
+          &:hover,
+          &:focus {
             border-color: var(--primary);
             background: var(--primary);
             color: var(--smoke-white);
@@ -310,7 +311,8 @@ const optionsSingle = [
               border-color: var(--dark-sidebar-light-12);
               color: var(--dark-dark-text);
 
-              &:hover {
+              &:hover,
+              &:focus {
                 border-color: var(--primary) !important;
                 color: var(--primary) !important;
               }

@@ -150,7 +150,7 @@ watch(
     </MobileSidebar>
 
     <!-- Mobile subsidebar links -->
-    <transition name="slide-x">
+    <Transition name="slide-x">
       <LayoutsMobileSubsidebar
         v-if="isMobileSidebarOpen && activeMobileSubsidebar === 'layout'"
       />
@@ -163,7 +163,7 @@ watch(
       <ElementsMobileSubsidebar
         v-else-if="isMobileSidebarOpen && activeMobileSubsidebar === 'elements'"
       />
-    </transition>
+    </Transition>
 
     <Navbar :theme="props.theme">
       <!-- Custom navbar title -->

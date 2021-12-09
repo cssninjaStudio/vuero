@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { TinySliderInstance, TinySliderInfo } from 'tiny-slider/src/tiny-slider'
+import type { TinySliderInstance } from 'tiny-slider/src/tiny-slider'
 import { tns } from 'tiny-slider/src/tiny-slider'
 import { useHead } from '@vueuse/head'
 import { ref, onMounted, onUnmounted } from 'vue'
@@ -628,7 +628,8 @@ onUnmounted(() => {
               font-weight: 500;
               transition: color 0.3s;
 
-              &:hover {
+              &:hover,
+              &:focus {
                 color: var(--primary);
               }
             }
@@ -773,7 +774,8 @@ onUnmounted(() => {
             font-size: 0.9rem;
             transition: color 0.3s;
 
-            &:hover {
+            &:hover,
+            &:focus {
               color: var(--primary);
             }
           }
@@ -970,7 +972,8 @@ onUnmounted(() => {
         transition: all 0.3s; // transition-all test
         cursor: pointer;
 
-        &:hover {
+        &:hover,
+        &:focus {
           box-shadow: var(--light-box-shadow);
         }
 
@@ -990,7 +993,8 @@ onUnmounted(() => {
   // max-width: 550px;
   // margin: 0 auto 20px auto;
 
-  &:hover .slick-custom {
+  &:hover,
+  &:focus .slick-custom {
     opacity: 1;
   }
 

@@ -25,6 +25,8 @@ const onRemoveFile = (error: any, fileInfo: any) => {
     return
   }
 
+  console.log(fileInfo)
+
   wizard.data.logo = null
 }
 </script>

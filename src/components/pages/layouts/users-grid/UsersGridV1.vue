@@ -94,7 +94,7 @@ function getAvatarData(user: any): VAvatarProps {
         </template>
       </VPlaceholderPage>
 
-      <transition-group name="list" tag="div" class="columns is-multiline">
+      <TransitionGroup name="list" tag="div" class="columns is-multiline">
         <!--Grid item-->
         <div v-for="item in filteredData" :key="item.id" class="column is-3">
           <div class="grid-item">
@@ -129,7 +129,7 @@ function getAvatarData(user: any): VAvatarProps {
             </div>
           </div>
         </div>
-      </transition-group>
+      </TransitionGroup>
     </div>
   </div>
 </template>
@@ -195,7 +195,8 @@ function getAvatarData(user: any): VAvatarProps {
         width: calc(50% - 4px);
         color: var(--light-text);
 
-        &:hover {
+        &:hover,
+        &:focus {
           border-color: var(--fade-grey-dark-4);
           color: var(--primary);
           box-shadow: var(--light-box-shadow);

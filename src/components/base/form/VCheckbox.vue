@@ -123,7 +123,8 @@ function change() {
 
   color: var(--light-text);
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: var(--light-text);
   }
 

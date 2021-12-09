@@ -18,7 +18,7 @@ const date = ref(new Date())
 </script>
 
 <template>
-  <v-date-picker v-model="date" mode="dateTime">
+  <VDatePicker v-model="date" mode="dateTime">
     <template #default="{ inputValue, inputEvents }">
       <VField>
         <VControl>
@@ -26,7 +26,7 @@ const date = ref(new Date())
         </VControl>
       </VField>
     </template>
-  </v-date-picker>
+  </VDatePicker>
 </template>
 ```
 
@@ -34,7 +34,7 @@ const date = ref(new Date())
 
 <!--example-->
 
-<v-date-picker v-model="frontmatter.state.date" color="green" mode="dateTime">
+<VDatePicker v-model="frontmatter.state.date" color="green" mode="dateTime">
   <template #default="{ inputValue, inputEvents }">
     <VField>
       <VControl>
@@ -42,6 +42,6 @@ const date = ref(new Date())
       </VControl>
     </VField>
   </template>
-</v-date-picker>
+</VDatePicker>
 
 <!--/example-->

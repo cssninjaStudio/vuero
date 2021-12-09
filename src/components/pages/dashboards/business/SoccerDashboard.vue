@@ -1,9 +1,3 @@
-<script setup lang="ts">
-import { ref } from 'vue'
-
-const hello = ref('world')
-</script>
-
 <template>
   <div class="soccer-dashboard">
     <div class="soccer-dashboard-inner">
@@ -726,7 +720,8 @@ const hello = ref('world')
                 color: var(--light-text);
                 transition: background-color 0.3s;
 
-                &:hover {
+                &:hover,
+                &:focus {
                   background: var(--widget-grey);
                 }
               }

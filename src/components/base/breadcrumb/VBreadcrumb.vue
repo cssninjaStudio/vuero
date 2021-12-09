@@ -39,62 +39,81 @@ const props = withDefaults(defineProps<VBreadcrumbsProps>(), {
         itemscope
         itemtype="https://schema.org/ListItem"
       >
-        <RouterLink v-if="item.to" class="breadcrumb-item" itemprop="item" :to="item.to">
-          <span
-            v-if="props.withIcons && !!item.icon"
-            class="icon is-small"
-            :class="[item.hideLabel && props.withIcons && !!item.icon && 'is-solo']"
+        <slot name="breadcrumb-item" :item="item" :index="key">
+          <RouterLink
+            v-if="item.to"
+            class="breadcrumb-item"
+            itemprop="item"
+            :to="item.to"
           >
-            <i aria-hidden="true" class="iconify" :data-icon="item.icon"></i>
-          </span>
-          <meta
-            v-if="item.hideLabel && props.withIcons && !!item.icon"
-            itemprop="name"
-            :content="item.label"
-          />
-          <span v-else itemprop="name">{{ item.label }}</span>
+            <span
+              v-if="props.withIcons && !!item.icon"
+              class="icon is-small"
+              :class="[item.hideLabel && props.withIcons && !!item.icon && 'is-solo']"
+            >
+              <i aria-hidden="true" class="iconify" :data-icon="item.icon"></i>
+            </span>
+            <meta
+              v-if="item.hideLabel && props.withIcons && !!item.icon"
+              itemprop="name"
+              :content="item.label"
+            />
+            <span v-else itemprop="name">
+              <slot name="breadcrumb-item-label" :item="item" :index="key">
+                {{ item.label }}
+              </slot>
+            </span>
 
-          <meta itemprop="position" :content="`${key + 1}`" />
-        </RouterLink>
-        <a
-          v-else-if="item.link"
-          class="breadcrumb-item"
-          itemprop="item"
-          :href="item.link"
-        >
-          <span
-            v-if="props.withIcons && !!item.icon"
-            class="icon is-small"
-            :class="[item.hideLabel && props.withIcons && !!item.icon && 'is-solo']"
+            <meta itemprop="position" :content="`${key + 1}`" />
+          </RouterLink>
+          <a
+            v-else-if="item.link"
+            class="breadcrumb-item"
+            itemprop="item"
+            :href="item.link"
           >
-            <i aria-hidden="true" class="iconify" :data-icon="item.icon"></i>
-          </span>
-          <meta
-            v-if="item.hideLabel && props.withIcons && !!item.icon"
-            itemprop="name"
-            :content="item.label"
-          />
-          <span v-else itemprop="name">{{ item.label }}</span>
+            <span
+              v-if="props.withIcons && !!item.icon"
+              class="icon is-small"
+              :class="[item.hideLabel && props.withIcons && !!item.icon && 'is-solo']"
+            >
+              <i aria-hidden="true" class="iconify" :data-icon="item.icon"></i>
+            </span>
+            <meta
+              v-if="item.hideLabel && props.withIcons && !!item.icon"
+              itemprop="name"
+              :content="item.label"
+            />
+            <span v-else itemprop="name">
+              <slot name="breadcrumb-item-label" :item="item" :index="key">
+                {{ item.label }}
+              </slot>
+            </span>
 
-          <meta itemprop="position" :content="`${key + 1}`" />
-        </a>
-        <span v-else class="breadcrumb-item">
-          <span
-            v-if="props.withIcons && !!item.icon"
-            class="icon is-small"
-            :class="[item.hideLabel && props.withIcons && !!item.icon && 'is-solo']"
-          >
-            <i aria-hidden="true" class="iconify" :data-icon="item.icon"></i>
-          </span>
-          <meta
-            v-if="item.hideLabel && props.withIcons && item.icon"
-            itemprop="name"
-            :content="item.label"
-          />
-          <span v-else itemprop="name">{{ item.label }}</span>
+            <meta itemprop="position" :content="`${key + 1}`" />
+          </a>
+          <span v-else class="breadcrumb-item">
+            <span
+              v-if="props.withIcons && !!item.icon"
+              class="icon is-small"
+              :class="[item.hideLabel && props.withIcons && !!item.icon && 'is-solo']"
+            >
+              <i aria-hidden="true" class="iconify" :data-icon="item.icon"></i>
+            </span>
+            <meta
+              v-if="item.hideLabel && props.withIcons && item.icon"
+              itemprop="name"
+              :content="item.label"
+            />
+            <span v-else itemprop="name">
+              <slot name="breadcrumb-item-label" :item="item" :index="key">
+                {{ item.label }}
+              </slot>
+            </span>
 
-          <meta itemprop="position" :content="`${key + 1}`" />
-        </span>
+            <meta itemprop="position" :content="`${key + 1}`" />
+          </span>
+        </slot>
       </li>
     </ul>
   </nav>

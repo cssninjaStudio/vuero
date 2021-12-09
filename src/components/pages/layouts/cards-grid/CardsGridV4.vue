@@ -78,7 +78,7 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
         </template>
       </VPlaceholderPage>
 
-      <transition-group name="list" tag="div" class="columns is-multiline">
+      <TransitionGroup name="list" tag="div" class="columns is-multiline">
         <!--Grid item-->
         <div v-for="item in filteredData" :key="item.id" class="column is-3">
           <a href="#" class="card-grid-item">
@@ -101,7 +101,7 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
             </div>
           </a>
         </div>
-      </transition-group>
+      </TransitionGroup>
     </div>
   </div>
 </template>
@@ -131,7 +131,8 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
     border-radius: 16px;
     min-height: 300px;
 
-    &:hover {
+    &:hover,
+    &:focus {
       box-shadow: var(--light-box-shadow);
     }
 

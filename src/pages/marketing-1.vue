@@ -299,7 +299,8 @@ useHead({
               background: var(--primary) !important;
               border-color: var(--primary) !important;
 
-              &:hover {
+              &:hover,
+              &:focus {
                 box-shadow: var(--primary-box-shadow) !important;
               }
             }
@@ -308,7 +309,8 @@ useHead({
               color: var(--primary) !important;
               border-color: var(--primary) !important;
 
-              &:hover {
+              &:hover,
+              &:focus {
                 background: var(--primary) !important;
                 color: var(--white) !important;
                 box-shadow: var(--primary-box-shadow) !important;
@@ -398,7 +400,8 @@ useHead({
           border-color: var(--primary) !important;
           color: var(--primary) !important;
 
-          &:hover {
+          &:hover,
+          &:focus {
             background: var(--primary) !important;
 
             svg {
@@ -440,7 +443,8 @@ useHead({
     overflow: hidden;
     transition: box-shadow 0.3s;
 
-    &:hover {
+    &:hover,
+    &:focus {
       box-shadow: var(--light-box-shadow);
     }
 
@@ -585,7 +589,8 @@ useHead({
   box-shadow: none;
   transition: box-shadow 0.3s;
 
-  &:hover {
+  &:hover,
+  &:focus {
     box-shadow: var(--light-box-shadow);
   }
 

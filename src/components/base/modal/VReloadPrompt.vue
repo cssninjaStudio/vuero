@@ -59,7 +59,7 @@ zh-CN:
 </i18n>
 
 <template>
-  <transition name="from-bottom">
+  <Transition name="from-bottom">
     <VCard
       v-if="offlineReady || needRefresh"
       class="pwa-toast"
@@ -87,7 +87,7 @@ zh-CN:
         <VButton icon="feather:x" @click="close">{{ t('close-button') }}</VButton>
       </VButtons>
     </VCard>
-  </transition>
+  </Transition>
 </template>
 
 <style lang="scss">

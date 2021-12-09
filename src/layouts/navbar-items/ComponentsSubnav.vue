@@ -286,7 +286,7 @@ const activeTab = ref<TabId>('display')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'components-flex-pagination' }">
+                    <RouterLink :to="{ name: 'components-pagination' }">
                       <span>VFlexPagination</span>
                       <i
                         aria-hidden="true"
@@ -296,7 +296,7 @@ const activeTab = ref<TabId>('display')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'components-flex-table' }">
+                    <RouterLink :to="{ name: 'components-flextable' }">
                       <span>VFlexTable</span>
                       <i
                         aria-hidden="true"

@@ -192,7 +192,8 @@ const props = defineProps<{
           font-size: 0.8rem;
           color: var(--muted-grey);
 
-          &:hover {
+          &:hover,
+          &:focus {
             background: transparent !important;
           }
         }
@@ -402,7 +403,8 @@ const props = defineProps<{
   .navbar-burger {
     margin-left: 0 !important;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: rgb(0 0 0 / 2%);
     }
 

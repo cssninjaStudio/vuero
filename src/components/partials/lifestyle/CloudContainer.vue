@@ -55,7 +55,8 @@
           padding: 6px;
           border-radius: 0.5rem;
 
-          &:hover {
+          &:hover,
+          &:focus {
             background-color: var(--primary);
             box-shadow: var(--primary-box-shadow);
             color: var(--white);
@@ -67,7 +68,8 @@
           padding: 12px;
           border-radius: 0.5rem;
 
-          &:hover {
+          &:hover,
+          &:focus {
             background-color: var(--danger);
             box-shadow: var(--danger-box-shadow);
             color: var(--white);
@@ -80,7 +82,8 @@
           border-radius: 0.75rem;
           color: var(--dark-text-light-18);
 
-          &:hover {
+          &:hover,
+          &:focus {
             background-color: var(--yellow);
             box-shadow: var(--yellow-box-shadow);
             color: var(--white);
@@ -92,7 +95,8 @@
           font-size: 1.75rem;
           border-radius: 0.75rem;
 
-          &:hover {
+          &:hover,
+          &:focus {
             background-color: var(--green);
             box-shadow: var(--green-box-shadow);
             color: var(--white);
@@ -104,7 +108,8 @@
           font-size: 2rem;
           border-radius: 0.75rem;
 
-          &:hover {
+          &:hover,
+          &:focus {
             background-color: var(--info);
             box-shadow: var(--info-box-shadow);
             color: var(--white);
@@ -116,7 +121,8 @@
           font-size: 2.5rem;
           border-radius: 0.75rem;
 
-          &:hover {
+          &:hover,
+          &:focus {
             background-color: var(--purple);
             box-shadow: var(--purple-box-shadow);
             color: var(--white);

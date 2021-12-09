@@ -1,10 +1,4 @@
-import {
-  navbar,
-  auth,
-  minimal,
-  sidebar,
-  templates,
-} from '../cypress/fixtures/routes'
+import { navbar, auth, minimal, sidebar, starters } from '../cypress/fixtures/routes'
 const fs = require('fs')
 const path = require('path')
 
@@ -14,6 +8,7 @@ const outputDir = path.resolve(projectRootDir, 'src/data/landing')
 type Route = {
   name: string
   path: string
+  keywords?: any
   query?: any
   category: string
   displayOrder: number
@@ -38,15 +33,14 @@ function generateData(routes: Route[], prefix: string) {
       .replace(/[\s]+/g, '-')
 
     const routeName =
-      route.path === '/'
-        ? 'index'
-        : route.path.replace(/^\//, '').replace(/\//g, '-')
+      route.path === '/' ? 'index' : route.path.replace(/^\//, '').replace(/\//g, '-')
 
     data.push({
       name: route.name,
       category: route.category,
       displayOrder: route.displayOrder,
       new: !!route.new,
+      keywords: route.keywords,
       route: {
         name: routeName.replace(/-$/, ''),
         path: route.path,
@@ -66,4 +60,4 @@ writeData(`${outputDir}/navbar.json`, generateData(navbar, 'navbar'))
 writeData(`${outputDir}/auth.json`, generateData(auth, 'auth'))
 writeData(`${outputDir}/minimal.json`, generateData(minimal, 'minimal'))
 writeData(`${outputDir}/sidebar.json`, generateData(sidebar, 'sidebar'))
-writeData(`${outputDir}/templates.json`, generateData(templates, 'templates'))
+writeData(`${outputDir}/starters.json`, generateData(starters, 'starters'))

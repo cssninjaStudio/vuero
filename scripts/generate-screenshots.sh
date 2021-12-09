@@ -1,6 +1,6 @@
 #!/bin/bash 
 
-e2ehost="http://localhost:8080"
+e2ehost="http://localhost:5000"
 
 until $(curl --output /dev/null --silent --head --fail ${e2ehost}); do
   echo "Warning: ensure e2e server is runing on ${e2ehost}"

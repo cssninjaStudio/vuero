@@ -1,8 +1,3 @@
-<script setup lang="ts">
-import { useSidebar } from '/@src/stores/sidebar'
-const sidebar = useSidebar()
-</script>
-
 <template>
   <div class="page-content-inner">
     <!--Edit Profile-->
@@ -67,9 +62,9 @@ const sidebar = useSidebar()
         </div>
         <div class="column is-8">
           <RouterView v-slot="{ Component }">
-            <transition name="translate-page-y" mode="in-out">
+            <Transition name="translate-page-y" mode="in-out">
               <component :is="Component" />
-            </transition>
+            </Transition>
           </RouterView>
         </div>
       </div>

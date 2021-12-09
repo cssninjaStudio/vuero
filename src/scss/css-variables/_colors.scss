@@ -1,6 +1,5 @@
 :root {
   // layout colors
-  --sidebar: #344258;
   --body-color: #f9f9f9;
   --title-grey: #a9abac;
   --background-grey: #f0f0f0;
@@ -14,6 +13,9 @@
   --placeload-nuance-to: rgb(0 0 0 / 15%);
   --placeload-dark-nuance-from: rgb(255 255 255 / 15%);
   --placeload-dark-nuance-to: rgb(255 255 255 / 24%);
+
+  // sidebar HSL (#344258) // hsl(217, 26%, 27%)
+  @include colorHsl('sidebar', 217, 26%, 27%);
 
   // primary HSL (#41b883) // hsl(153, 48%, 49%)
   @include colorHsl('primary', 153, 48%, 49%);

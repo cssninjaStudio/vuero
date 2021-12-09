@@ -385,7 +385,8 @@ const props = defineProps<{
         border-left-color: var(--primary);
         background: var(--primary-light-51);
 
-        &:hover {
+        &:hover,
+        &:focus {
           background: var(--primary-light-51);
         }
       }
@@ -632,7 +633,8 @@ const props = defineProps<{
         height: 40px !important;
         padding: 0 26px;
 
-        &:hover {
+        &:hover,
+        &:focus {
           svg {
             fill: var(--white);
           }

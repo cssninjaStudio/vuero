@@ -1,0 +1,268 @@
+[
+  {
+    "name": "Regular Sidebar",
+    "category": "TEMPLATES",
+    "displayOrder": 0,
+    "new": false,
+    "route": {
+      "name": "starters-sidebar-blank-page-1",
+      "path": "/starters/sidebar-blank-page-1"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/starters/regular-sidebar-light.webp",
+      "dark": "/images/screenshots/starters/regular-sidebar-dark.webp"
+    }
+  },
+  {
+    "name": "Curved Sidebar",
+    "category": "TEMPLATES",
+    "displayOrder": 10,
+    "new": false,
+    "route": {
+      "name": "starters-sidebar-blank-page-2",
+      "path": "/starters/sidebar-blank-page-2"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/starters/curved-sidebar-light.webp",
+      "dark": "/images/screenshots/starters/curved-sidebar-dark.webp"
+    }
+  },
+  {
+    "name": "Colored Sidebar",
+    "category": "TEMPLATES",
+    "displayOrder": 20,
+    "new": false,
+    "route": {
+      "name": "starters-sidebar-blank-page-3",
+      "path": "/starters/sidebar-blank-page-3"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/starters/colored-sidebar-light.webp",
+      "dark": "/images/screenshots/starters/colored-sidebar-dark.webp"
+    }
+  },
+  {
+    "name": "Curved Colored Sidebar",
+    "category": "TEMPLATES",
+    "displayOrder": 30,
+    "new": false,
+    "route": {
+      "name": "starters-sidebar-blank-page-4",
+      "path": "/starters/sidebar-blank-page-4"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/starters/curved-colored-sidebar-light.webp",
+      "dark": "/images/screenshots/starters/curved-colored-sidebar-dark.webp"
+    }
+  },
+  {
+    "name": "Sidebar Labels",
+    "category": "TEMPLATES",
+    "displayOrder": 40,
+    "new": false,
+    "route": {
+      "name": "starters-sidebar-blank-page-5",
+      "path": "/starters/sidebar-blank-page-5"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/starters/sidebar-labels-light.webp",
+      "dark": "/images/screenshots/starters/sidebar-labels-dark.webp"
+    }
+  },
+  {
+    "name": "Hover Labels",
+    "category": "TEMPLATES",
+    "displayOrder": 50,
+    "new": false,
+    "route": {
+      "name": "starters-sidebar-blank-page-6",
+      "path": "/starters/sidebar-blank-page-6"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/starters/hover-labels-light.webp",
+      "dark": "/images/screenshots/starters/hover-labels-dark.webp"
+    }
+  },
+  {
+    "name": "Floating Sidebar",
+    "category": "TEMPLATES",
+    "displayOrder": 60,
+    "new": false,
+    "route": {
+      "name": "starters-sidebar-blank-page-7",
+      "path": "/starters/sidebar-blank-page-7"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/starters/floating-sidebar-light.webp",
+      "dark": "/images/screenshots/starters/floating-sidebar-dark.webp"
+    }
+  },
+  {
+    "name": "Standard Navbar",
+    "category": "TEMPLATES",
+    "displayOrder": 70,
+    "new": false,
+    "route": {
+      "name": "starters-navbar-blank-page-1",
+      "path": "/starters/navbar-blank-page-1"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/starters/standard-navbar-light.webp",
+      "dark": "/images/screenshots/starters/standard-navbar-dark.webp"
+    }
+  },
+  {
+    "name": "Fading Navbar",
+    "category": "TEMPLATES",
+    "displayOrder": 80,
+    "new": false,
+    "route": {
+      "name": "starters-navbar-blank-page-2",
+      "path": "/starters/navbar-blank-page-2"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/starters/fading-navbar-light.webp",
+      "dark": "/images/screenshots/starters/fading-navbar-dark.webp"
+    }
+  },
+  {
+    "name": "Colored Navbar",
+    "category": "TEMPLATES",
+    "displayOrder": 90,
+    "new": false,
+    "route": {
+      "name": "starters-navbar-blank-page-3",
+      "path": "/starters/navbar-blank-page-3"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/starters/colored-navbar-light.webp",
+      "dark": "/images/screenshots/starters/colored-navbar-dark.webp"
+    }
+  },
+  {
+    "name": "Dropdown Navbar",
+    "category": "TEMPLATES",
+    "displayOrder": 100,
+    "new": false,
+    "route": {
+      "name": "starters-navbar-blank-page-4",
+      "path": "/starters/navbar-blank-page-4"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/starters/dropdown-navbar-light.webp",
+      "dark": "/images/screenshots/starters/dropdown-navbar-dark.webp"
+    }
+  },
+  {
+    "name": "Colored Dropdown Navbar",
+    "category": "TEMPLATES",
+    "displayOrder": 110,
+    "new": false,
+    "route": {
+      "name": "starters-navbar-blank-page-5",
+      "path": "/starters/navbar-blank-page-5"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/starters/colored-dropdown-navbar-light.webp",
+      "dark": "/images/screenshots/starters/colored-dropdown-navbar-dark.webp"
+    }
+  },
+  {
+    "name": "Clean Navbar",
+    "category": "TEMPLATES",
+    "displayOrder": 120,
+    "new": false,
+    "route": {
+      "name": "starters-navbar-blank-page-6",
+      "path": "/starters/navbar-blank-page-6"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/starters/clean-navbar-light.webp",
+      "dark": "/images/screenshots/starters/clean-navbar-dark.webp"
+    }
+  },
+  {
+    "name": "Clean Centered Navbar",
+    "category": "TEMPLATES",
+    "displayOrder": 130,
+    "new": false,
+    "route": {
+      "name": "starters-navbar-blank-page-7",
+      "path": "/starters/navbar-blank-page-7"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/starters/clean-centered-navbar-light.webp",
+      "dark": "/images/screenshots/starters/clean-centered-navbar-dark.webp"
+    }
+  },
+  {
+    "name": "Clean Transparent",
+    "category": "TEMPLATES",
+    "displayOrder": 140,
+    "new": false,
+    "route": {
+      "name": "starters-navbar-blank-page-8",
+      "path": "/starters/navbar-blank-page-8"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/starters/clean-transparent-light.webp",
+      "dark": "/images/screenshots/starters/clean-transparent-dark.webp"
+    }
+  },
+  {
+    "name": "Regular Sideblock",
+    "category": "TEMPLATES",
+    "displayOrder": 150,
+    "new": true,
+    "route": {
+      "name": "starters-sideblock-blank-page-1",
+      "path": "/starters/sideblock-blank-page-1"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/starters/regular-sideblock-light.webp",
+      "dark": "/images/screenshots/starters/regular-sideblock-dark.webp"
+    }
+  },
+  {
+    "name": "Curved Sideblock",
+    "category": "TEMPLATES",
+    "displayOrder": 150,
+    "new": true,
+    "route": {
+      "name": "starters-sideblock-blank-page-2",
+      "path": "/starters/sideblock-blank-page-2"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/starters/curved-sideblock-light.webp",
+      "dark": "/images/screenshots/starters/curved-sideblock-dark.webp"
+    }
+  },
+  {
+    "name": "Colored Sideblock",
+    "category": "TEMPLATES",
+    "displayOrder": 160,
+    "new": true,
+    "route": {
+      "name": "starters-sideblock-blank-page-3",
+      "path": "/starters/sideblock-blank-page-3"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/starters/colored-sideblock-light.webp",
+      "dark": "/images/screenshots/starters/colored-sideblock-dark.webp"
+    }
+  },
+  {
+    "name": "Curved Colored Sideblock",
+    "category": "TEMPLATES",
+    "displayOrder": 170,
+    "new": true,
+    "route": {
+      "name": "starters-sideblock-blank-page-4",
+      "path": "/starters/sideblock-blank-page-4"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/starters/curved-colored-sideblock-light.webp",
+      "dark": "/images/screenshots/starters/curved-colored-sideblock-dark.webp"
+    }
+  }
+]

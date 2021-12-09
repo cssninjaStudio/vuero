@@ -6,7 +6,7 @@
       </div>
 
       <ul class="submenu" data-simplebar>
-        <SidebarCollapsableLinks>
+        <VCollapseLinks>
           <template #header>
             Personal
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
@@ -16,12 +16,8 @@
             <i aria-hidden="true" class="lnil lnil-home"></i>
             <span>Home</span>
           </RouterLink>
-        </SidebarCollapsableLinks>
+        </VCollapseLinks>
       </ul>
     </div>
   </div>
 </template>
-
-<style lang="scss">
-@import '../../scss/layout/sidebar-mobile';
-</style>

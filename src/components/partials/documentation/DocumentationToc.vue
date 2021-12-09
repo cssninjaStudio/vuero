@@ -86,6 +86,7 @@ onMounted(() => {
   opacity: 0.6;
 
   &:hover,
+  &:focus,
   &:focus-within {
     opacity: 1;
   }

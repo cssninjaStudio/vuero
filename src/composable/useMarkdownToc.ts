@@ -26,7 +26,7 @@ export function useMarkdownToc(container: Ref<HTMLElement | undefined>) {
       anchors.forEach((anchor) => {
         toc.value.push({
           id: anchor.id,
-          level: parseInt(anchor.tagName.replace(/[a-z]+/i, '') || 1),
+          level: parseInt(anchor.tagName.replace(/[a-z]+/i, '') || '1'),
           title: anchor.textContent || '',
         })
       })

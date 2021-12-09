@@ -82,7 +82,7 @@ const activeTab = ref<TabId>('interaction')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'elements-icons-line-icons' }">
+                    <RouterLink :to="{ name: 'elements-icons-line-icons-light' }">
                       <span>Line Icons Light</span>
                       <i
                         aria-hidden="true"
@@ -102,7 +102,7 @@ const activeTab = ref<TabId>('interaction')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'elements-icons-fa' }">
+                    <RouterLink :to="{ name: 'elements-icons-font-awesome' }">
                       <span>Font Awesome 5</span>
                       <i
                         aria-hidden="true"

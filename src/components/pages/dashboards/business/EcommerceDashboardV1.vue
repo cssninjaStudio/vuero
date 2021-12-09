@@ -22,11 +22,6 @@ import {
   spark4,
 } from '/@src/data/dashboards/ecommerce/sparksCharts'
 import {
-  freeShippingChartOptions,
-  groundShippingChartOptions,
-  nextDayAirChartOptions,
-} from '/@src/data/dashboards/ecommerce/shippingCharts'
-import {
   valueSingle,
   optionsSingle,
   flexRowsOrders,

@@ -268,7 +268,8 @@ const props = defineProps<{
         color: var(--light-text);
         font-size: 0.95rem;
 
-        &:hover {
+        &:hover,
+        &:focus {
           color: var(--primary);
         }
       }
@@ -380,7 +381,8 @@ const props = defineProps<{
         .inner-icon {
           color: var(--light-text-dark-12);
 
-          &:hover:not(.is-active) {
+          &:hover,
+          &:focus:not(.is-active) {
             background: var(--dark-sidebar-light-3);
           }
 
@@ -1299,7 +1301,8 @@ const props = defineProps<{
         border: 1px solid var(--dark-sidebar-light-12);
         color: var(--dark-dark-text);
 
-        &:hover {
+        &:hover,
+        &:focus {
           border-color: var(--primary);
           color: var(--primary);
         }

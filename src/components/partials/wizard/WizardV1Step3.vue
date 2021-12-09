@@ -23,7 +23,7 @@ const filteredCustomers = computed<WizardCustomer[]>(() => {
     .splice(0, 4)
 })
 
-const selectCustomer = (customer: WizardCustomer) => {
+const selectCustomer = (customer: WizardCustomer | null) => {
   wizard.data.customer = customer
 }
 </script>
@@ -59,13 +59,13 @@ const selectCustomer = (customer: WizardCustomer) => {
             size="small"
             icon="feather:x"
             circle
-            @click="wizard.data.customer = null"
+            @click="selectCustomer(null)"
           />
         </template>
       </VBlock>
 
       <template v-else-if="filteredCustomers.length > 0">
-        <transition-group name="list" tag="div">
+        <TransitionGroup name="list" tag="div">
           <VBlock
             v-for="customer in filteredCustomers"
             :key="customer.name"
@@ -82,17 +82,17 @@ const selectCustomer = (customer: WizardCustomer) => {
                 size="small"
                 icon="feather:plus"
                 circle
-                @click="wizard.data.customer = customer"
+                @click="selectCustomer(customer)"
               />
             </template>
           </VBlock>
-        </transition-group>
+        </TransitionGroup>
       </template>
     </div>
 
     <div class="project-dates">
       <h4>Project Time Frame</h4>
-      <v-date-picker v-model="wizard.data.timeFrame" is-range color="green" trim-weeks>
+      <VDatePicker v-model="wizard.data.timeFrame" is-range color="green" trim-weeks>
         <template #default="{ inputValue, inputEvents }">
           <div class="project-dates-inner">
             <div class="project-date">
@@ -124,7 +124,7 @@ const selectCustomer = (customer: WizardCustomer) => {
             </div>
           </div>
         </template>
-      </v-date-picker>
+      </VDatePicker>
     </div>
 
     <div class="project-budget">

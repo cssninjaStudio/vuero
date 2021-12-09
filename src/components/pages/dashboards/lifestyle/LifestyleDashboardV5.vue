@@ -336,7 +336,8 @@ import {
             cursor: pointer;
             box-shadow: var(--light-box-shadow);
 
-            &:hover {
+            &:hover,
+            &:focus {
               svg,
               svg * {
                 stroke: var(--primary);

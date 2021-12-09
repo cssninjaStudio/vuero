@@ -3,7 +3,6 @@ import { useHead } from '@vueuse/head'
 
 import { ref } from 'vue'
 import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
-import { popovers } from '/@src/data/users/userPopovers'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 
 const markdownContainer = ref<HTMLElement>()

@@ -51,6 +51,10 @@ const sliderClass = computed(() => {
 
   return ''
 })
+
+function toggle(value: string) {
+  activeValue.value = value
+}
 </script>
 
 <template>
@@ -72,14 +76,31 @@ const sliderClass = computed(() => {
             :key="key"
             :class="[activeValue === tab.value && 'is-active']"
           >
-            <a
-              tabindex="0"
-              @keydown.space.prevent="activeValue = tab.value"
-              @click="activeValue = tab.value"
+            <slot
+              name="tab-link"
+              :activeValue="activeValue"
+              :tab="tab"
+              :index="key"
+              :toggle="toggle"
             >
-              <VIcon v-if="tab.icon" :icon="tab.icon" />
-              <span>{{ tab.label }}</span>
-            </a>
+              <a
+                tabindex="0"
+                @keydown.space.prevent="toggle(tab.value)"
+                @click="toggle(tab.value)"
+              >
+                <VIcon v-if="tab.icon" :icon="tab.icon" />
+                <span>
+                  <slot
+                    name="tab-link-label"
+                    :activeValue="activeValue"
+                    :tab="tab"
+                    :index="key"
+                  >
+                    {{ tab.label }}
+                  </slot>
+                </span>
+              </a>
+            </slot>
           </li>
           <li v-if="sliderClass" class="tab-naver"></li>
         </ul>
@@ -87,9 +108,9 @@ const sliderClass = computed(() => {
     </div>
 
     <div class="tab-content is-active">
-      <transition :name="props.slow ? 'fade-slow' : 'fade-fast'" mode="out-in">
+      <Transition :name="props.slow ? 'fade-slow' : 'fade-fast'" mode="out-in">
         <slot name="tab" :activeValue="activeValue"></slot>
-      </transition>
+      </Transition>
     </div>
   </div>
 </template>

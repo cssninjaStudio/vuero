@@ -196,6 +196,7 @@ defineExpose({
         align-items: center;
 
         &:hover,
+        &:focus,
         &.is-active {
           .icon {
             svg {
@@ -297,7 +298,8 @@ defineExpose({
       color: var(--light-text);
       font-family: var(--font);
 
-      &:hover {
+      &:hover,
+      &:focus {
         color: var(--dark-text);
       }
 
@@ -423,6 +425,7 @@ defineExpose({
             border-color: var(--dark-sidebar-light-8) !important;
 
             &:hover,
+            &:focus,
             *:hover {
               background: var(--dark-sidebar) !important;
             }
@@ -536,7 +539,8 @@ defineExpose({
       background: var(--dark-sidebar) !important;
       border-color: var(--dark-sidebar-light-4) !important;
 
-      &:hover {
+      &:hover,
+      &:focus {
         background: var(--dark-sidebar) !important;
         border-color: var(--dark-sidebar-light-4) !important;
       }
