@@ -27,7 +27,7 @@ const themeClasses = computed(() => {
     case 'labels':
       return 'has-labels'
     case 'labels-hover':
-      return 'has-labels-hover'
+      return 'has-labels has-hover-labels'
     case 'float':
       return !props.isOpen ? 'is-float' : 'is-float is-bordered'
     case 'curved':
@@ -141,7 +141,7 @@ const themeClasses = computed(() => {
             &:hover {
               a {
                 &::after {
-                  opacity: 1;
+                  opacity: 100% !important;
                 }
               }
             }
@@ -150,12 +150,12 @@ const themeClasses = computed(() => {
               &.is-active,
               &.router-link-active {
                 &::after {
-                  opacity: 1 !important;
+                  opacity: 100% !important;
                 }
               }
 
               &::after {
-                opacity: 0;
+                opacity: 0%;
               }
             }
           }
@@ -166,6 +166,8 @@ const themeClasses = computed(() => {
     .sidebar-inner {
       .icon-menu,
       .bottom-menu {
+        overflow-x: hidden;
+
         li {
           a {
             &.router-link-active {
@@ -334,7 +336,7 @@ const themeClasses = computed(() => {
           display: block;
           position: relative;
           transform: rotate(0);
-          opacity: 1;
+          opacity: 100%;
           transition: all 0.3s; // transition-all test
 
           &:hover,
@@ -361,12 +363,12 @@ const themeClasses = computed(() => {
 
           &.is-opened {
             transform: rotate(360deg);
-            opacity: 0;
+            opacity: 0%;
           }
 
           &.is-inactive {
             transform: rotate(-360deg);
-            opacity: 0;
+            opacity: 0%;
           }
         }
       }
@@ -634,7 +636,7 @@ const themeClasses = computed(() => {
 
       .sidebar-inner {
         .naver {
-          opacity: 0.8;
+          opacity: 80%;
         }
 
         .icon-menu,
@@ -646,13 +648,13 @@ const themeClasses = computed(() => {
                 .sidebar-svg {
                   color: var(--smoke-white);
                   stroke: var(--smoke-white);
-                  opacity: 1;
+                  opacity: 100%;
                 }
               }
 
               .sidebar-svg {
                 color: var(--smoke-white-light-2);
-                opacity: 0.5;
+                opacity: 50%;
               }
             }
           }
