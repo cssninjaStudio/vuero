@@ -47,3 +47,9 @@ Stat Widgets
     }
   }
 }
+
+.is-dark {
+  .stat-widget {
+    @include vuero-card--dark;
+  }
+}
