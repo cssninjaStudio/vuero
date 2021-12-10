@@ -141,7 +141,7 @@ const themeClasses = computed(() => {
             &:hover {
               a {
                 &::after {
-                  opacity: 100% !important;
+                  opacity: 1 !important;
                 }
               }
             }
@@ -150,12 +150,12 @@ const themeClasses = computed(() => {
               &.is-active,
               &.router-link-active {
                 &::after {
-                  opacity: 100% !important;
+                  opacity: 1 !important;
                 }
               }
 
               &::after {
-                opacity: 0%;
+                opacity: 0;
               }
             }
           }
@@ -336,7 +336,7 @@ const themeClasses = computed(() => {
           display: block;
           position: relative;
           transform: rotate(0);
-          opacity: 100%;
+          opacity: 1;
           transition: all 0.3s; // transition-all test
 
           &:hover,
@@ -363,12 +363,12 @@ const themeClasses = computed(() => {
 
           &.is-opened {
             transform: rotate(360deg);
-            opacity: 0%;
+            opacity: 0;
           }
 
           &.is-inactive {
             transform: rotate(-360deg);
-            opacity: 0%;
+            opacity: 0;
           }
         }
       }
@@ -636,7 +636,7 @@ const themeClasses = computed(() => {
 
       .sidebar-inner {
         .naver {
-          opacity: 80%;
+          opacity: 0.8;
         }
 
         .icon-menu,
@@ -648,13 +648,13 @@ const themeClasses = computed(() => {
                 .sidebar-svg {
                   color: var(--smoke-white);
                   stroke: var(--smoke-white);
-                  opacity: 100%;
+                  opacity: 1;
                 }
               }
 
               .sidebar-svg {
                 color: var(--smoke-white-light-2);
-                opacity: 50%;
+                opacity: 0.5;
               }
             }
           }
