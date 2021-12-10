@@ -502,6 +502,8 @@ const props = defineProps<{
 
 .is-dark {
   .calendar-widget {
+    @include vuero-card--dark;
+
     .calendar-widget-inner {
       .calendar-square {
         @include vuero-card--dark;
