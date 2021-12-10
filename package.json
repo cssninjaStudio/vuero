@@ -175,6 +175,7 @@
     "vite-plugin-purge-icons": "0.7.0",
     "vite-plugin-pwa": "0.11.10",
     "vite-plugin-radar": "0.3.0",
+    "vite-plugin-vue-type-imports": "^0.1.2",
     "vue-tsc": "0.29.8",
     "yorkie": "2.0.0"
   }

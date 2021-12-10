@@ -11875,6 +11875,11 @@ vite-plugin-radar@0.3.0:
   resolved "https://registry.yarnpkg.com/vite-plugin-radar/-/vite-plugin-radar-0.3.0.tgz#c77abfff22ee1a31e64ce05007e05d6f442ec4e6"
   integrity sha512-RAYmNKubrK93GyfvM7JHsNu9lX8R0Ix4hA9SZIwZx2ClJZ1YcBSuO3YjJB6nZwipZti641GirKkM6iRt4+gtEQ==
 
+vite-plugin-vue-type-imports@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/vite-plugin-vue-type-imports/-/vite-plugin-vue-type-imports-0.1.2.tgz#be0037f7ebce25e160a2bfbfaedd4eab6ae522bd"
+  integrity sha512-uUuDUZnM/3muh4eKm81uYMWB+e+8J920fWe369hIOG8idQpiaki3BrPXvBfuweZEFYrPGyj35ciUEOLRhc5q+g==
+
 vite@2.7.0-beta.10:
   version "2.7.0-beta.10"
   resolved "https://registry.yarnpkg.com/vite/-/vite-2.7.0-beta.10.tgz#268a0e111019918193a7092f888bce01c2e2564b"

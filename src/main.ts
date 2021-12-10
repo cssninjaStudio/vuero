@@ -10,6 +10,10 @@
  * @see /index.html
  * @see /vite.config.ts
  */
+import { defineAsyncComponent } from 'vue'
+import { SetupCalendar } from 'v-calendar'
+import VueTippy from 'vue-tippy'
+
 import { createApp } from './app'
 import { useNotyf } from './composable/useNotyf'
 import { useUserSession } from './stores/userSession'
@@ -18,24 +22,56 @@ import type { VueroAppContext } from './app'
 
 // Lazy load aditional components
 async function registerGlobalComponents({ app }: VueroAppContext) {
-  const VCalendar = (await import('v-calendar')).default
-  const VueMultiselect = (await import('@vueform/multiselect')).default
-  const VueSlider = (await import('@vueform/slider')).default
-  const { default: VueTippy, Tippy } = await import('vue-tippy')
-
   const background = (await import('./directives/background')).default
   const tooltip = (await import('./directives/tooltip')).default
 
-  app.use(VCalendar)
+  app.use(SetupCalendar, {})
   app.use(VueTippy, {
     defaultProps: {
       theme: 'light',
     },
   })
 
-  app.component('Tippy', Tippy)
-  app.component(VueMultiselect.name, VueMultiselect)
-  app.component(VueSlider.name, VueSlider)
+  app.component(
+    'Tippy',
+    defineAsyncComponent({
+      loader: () => import('vue-tippy').then(({ Tippy }) => Tippy),
+      delay: 0,
+      suspensible: false,
+    })
+  )
+  app.component(
+    'Multiselect',
+    defineAsyncComponent({
+      loader: () => import('@vueform/multiselect').then((mod) => mod.default),
+      delay: 0,
+      suspensible: false,
+    })
+  )
+  app.component(
+    'Slider',
+    defineAsyncComponent({
+      loader: () => import('@vueform/slider').then((mod) => mod.default),
+      delay: 0,
+      suspensible: false,
+    })
+  )
+  app.component(
+    'VCalendar',
+    defineAsyncComponent({
+      loader: () => import('v-calendar').then((mod) => mod.Calendar),
+      delay: 0,
+      suspensible: false,
+    })
+  )
+  app.component(
+    'VDatePicker',
+    defineAsyncComponent({
+      loader: () => import('v-calendar').then((mod) => mod.DatePicker),
+      delay: 0,
+      suspensible: false,
+    })
+  )
 
   app.directive('background', background)
   app.directive('tooltip', tooltip)
