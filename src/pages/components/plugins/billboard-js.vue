@@ -5,11 +5,12 @@ import { radar } from 'billboard.js'
 import { ref } from 'vue'
 import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
 import * as splineSimple from '/@src/data/dashboards/billboardjs-demo/splineSimple'
-import { themeColors } from '/@src/utils/theme-colors'
+import { useThemeColors } from '/@src/composable/useThemeColors'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
+const themeColors = useThemeColors()
 
 const viewWrapper = useViewWrapper()
 viewWrapper.setPageTitle('VBillboardJS')

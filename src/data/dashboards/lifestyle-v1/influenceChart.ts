@@ -1,4 +1,5 @@
-import { themeColors } from '/@src/utils/theme-colors'
+import { useThemeColors } from '/@src/composable/useThemeColors'
+const themeColors = useThemeColors()
 import * as formatters from '/@src/utils/apex-formatters'
 
 export const influenceChartOptions = {

@@ -6,7 +6,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <div class="cart-widget" :class="[props.straight && 'is-straight']">
+  <div class="widget cart-widget" :class="[props.straight && 'is-straight']">
     <div class="widget-toolbar">
       <div class="left">
         <h3>Your Cart</h3>

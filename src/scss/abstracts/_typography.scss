@@ -98,7 +98,8 @@ pre {
 }
 
 .is-dark {
-  pre {
+  pre,
+  code {
     background: #1a1a1f;
     color: #c0c0d1;
   }

@@ -1,4 +1,5 @@
-import { themeColors } from '/@src/utils/theme-colors'
+import { useThemeColors } from '/@src/composable/useThemeColors'
+const themeColors = useThemeColors()
 
 export const usersOptions = {
   series: [

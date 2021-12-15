@@ -1,10 +1,14 @@
+<script lang="ts">
+import 'mapbox-gl/src/css/mapbox-gl.css'
+import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css'
+</script>
+
 <script setup lang="ts">
 import { onMounted, ref, watch, watchPostEffect } from 'vue'
 import mapboxgl from 'mapbox-gl'
 import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.min.js'
-import 'mapbox-gl/src/css/mapbox-gl.css'
-import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css'
-import { themeColors } from '/@src/utils/theme-colors'
+import { useThemeColors } from '/@src/composable/useThemeColors'
+const themeColors = useThemeColors()
 import { useDarkmode } from '/@src/stores/darkmode'
 
 // You can set the VITE_MAPBOX_ACCESS_TOKEN inside .env file

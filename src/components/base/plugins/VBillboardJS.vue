@@ -47,10 +47,16 @@ watchEffect(() => {
   color: var(--dark-text);
 }
 
+.bb-legend-background,
+.bb-chart-arcs-background {
+  fill: none;
+}
+
 .bb-axis line,
 .bb-axis .domain {
   color: var(--fade-grey-dark-4);
   stroke: var(--fade-grey-dark-4);
+  fill: none;
 }
 
 .tick {

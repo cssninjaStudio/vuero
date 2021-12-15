@@ -6340,7 +6340,8 @@ body.opened {
   border-color: rgb(65, 185, 131);
 }
 
-.tabs.is-toggle li.is-active a:hover {
+.tabs.is-toggle li.is-active a:hover,
+.tabs.is-toggle li.is-active a:focus {
   color: rgb(255, 255, 255);
 }
 
@@ -6349,7 +6350,8 @@ body.opened {
   color: rgb(65, 185, 131);
 }
 
-.tabs li.is-active a:hover {
+.tabs li.is-active a:hover,
+.tabs li.is-active a:focus {
   border-bottom-color: rgb(65, 185, 131);
   color: rgb(65, 185, 131);
 }

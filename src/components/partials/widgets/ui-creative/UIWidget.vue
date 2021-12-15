@@ -117,24 +117,6 @@ const props = defineProps<{
   }
 }
 
-.is-dark {
-  .widget-toolbar {
-    h3 {
-      color: var(--dark-dark-text);
-    }
-
-    .right {
-      .right-icon {
-        &.has-indicator {
-          &::after {
-            border-color: var(--dark-sidebar-light-6);
-          }
-        }
-      }
-    }
-  }
-}
-
 .picker-widget {
   @include vuero-l-card;
 
@@ -184,30 +166,6 @@ const props = defineProps<{
   .prev-month,
   .next-month {
     color: #cacaca;
-  }
-}
-
-.is-dark {
-  .picker-widget {
-    @include vuero-card--dark;
-
-    .calendar {
-      color: var(--dark-dark-text);
-
-      thead,
-      th {
-        color: var(--primary);
-      }
-
-      td:hover {
-        background: var(--dark-sidebar-light-3);
-        color: var(--primary);
-      }
-    }
-
-    .current-day {
-      color: var(--primary);
-    }
   }
 }
 
@@ -277,31 +235,6 @@ const props = defineProps<{
   }
 }
 
-.is-dark {
-  .search-widget {
-    @include vuero-card--dark;
-
-    .field {
-      .control {
-        .input {
-          background: var(--dark-sidebar-light-3);
-          border-color: var(--dark-sidebar-light-12);
-        }
-
-        .searcv-button {
-          background: var(--primary);
-        }
-      }
-
-      .topics {
-        a:hover {
-          color: var(--primary);
-        }
-      }
-    }
-  }
-}
-
 // Gauge widget
 .gauge-widget {
   @include vuero-l-card;
@@ -314,12 +247,6 @@ const props = defineProps<{
 
   .gauge-wrap {
     padding: 30px 0;
-  }
-}
-
-.is-dark {
-  .gauge-widget {
-    @include vuero-card--dark;
   }
 }
 
@@ -372,29 +299,6 @@ const props = defineProps<{
   }
 }
 
-.is-dark {
-  .icon-toolbar-widget {
-    @include vuero-card--dark;
-
-    .icon-toolbar {
-      .toolbar-icon {
-        .inner-icon {
-          color: var(--light-text-dark-12);
-
-          &:hover,
-          &:focus:not(.is-active) {
-            background: var(--dark-sidebar-light-3);
-          }
-
-          &.is-active {
-            color: var(--primary);
-          }
-        }
-      }
-    }
-  }
-}
-
 // Text widget
 .text-widget {
   @include vuero-l-card;
@@ -425,38 +329,12 @@ const props = defineProps<{
   }
 }
 
-.is-dark {
-  .text-widget {
-    @include vuero-card--dark;
-
-    .widget-content {
-      p {
-        span {
-          color: var(--dark-dark-text);
-        }
-      }
-    }
-
-    .hashtags {
-      a {
-        color: var(--primary);
-      }
-    }
-  }
-}
-
 // Tags widget
 .tags-widget {
   @include vuero-l-card;
 
   &.is-straight {
     @include vuero-s-card;
-  }
-}
-
-.is-dark {
-  .tags-widget {
-    @include vuero-card--dark;
   }
 }
 
@@ -500,26 +378,6 @@ const props = defineProps<{
   }
 }
 
-.is-dark {
-  .calendar-widget {
-    @include vuero-card--dark;
-
-    .calendar-widget-inner {
-      .calendar-square {
-        @include vuero-card--dark;
-
-        .date {
-          span {
-            &:first-child {
-              color: var(--dark-dark-text);
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
 // Calendar widget
 .image-widget {
   @include vuero-l-card;
@@ -550,22 +408,6 @@ const props = defineProps<{
       background-color: #000;
       background-image: linear-gradient(to right, var(--primary) 30%, #000 30%);
       height: 0.15rem !important;
-    }
-  }
-}
-
-.is-dark {
-  .image-widget {
-    @include vuero-card--dark;
-
-    .progress-wrap {
-      .progress {
-        background-image: linear-gradient(
-          to right,
-          var(--primary) 30%,
-          #000 30%
-        ) !important;
-      }
     }
   }
 }
@@ -611,20 +453,6 @@ const props = defineProps<{
   .stat-chart {
     position: relative;
     bottom: -30px;
-  }
-}
-
-.is-dark {
-  .stats-widget {
-    @include vuero-card--dark;
-
-    .stat-number {
-      span {
-        &:first-child {
-          color: var(--dark-dark-text);
-        }
-      }
-    }
   }
 }
 
@@ -705,35 +533,6 @@ const props = defineProps<{
   }
 }
 
-.is-dark {
-  .icon-list-widget {
-    @include vuero-card--dark;
-
-    .icon-list {
-      .icon-list-item {
-        &:hover {
-          .icon-wrap {
-            background: var(--primary) !important;
-            box-shadow: var(--primary-box-shadow);
-            color: var(--smoke-white);
-          }
-
-          .item-meta {
-            span {
-              color: var(--primary) !important;
-            }
-          }
-        }
-
-        .icon-wrap {
-          background: var(--dark-sidebar-light-3);
-          color: var(--light-text-light-2);
-        }
-      }
-    }
-  }
-}
-
 // Video widget
 .video-widget {
   @include vuero-l-card;
@@ -792,22 +591,6 @@ const props = defineProps<{
         span {
           font-size: 0.85rem;
         }
-      }
-    }
-  }
-}
-
-.is-dark {
-  .video-widget {
-    @include vuero-card--dark;
-
-    .widget-meta {
-      > svg {
-        color: var(--primary);
-      }
-
-      h4 {
-        color: var(--dark-dark-text);
       }
     }
   }
@@ -875,35 +658,6 @@ const props = defineProps<{
 
       small {
         color: var(--light-text);
-      }
-    }
-  }
-}
-
-.is-dark {
-  .inbox-widget {
-    @include vuero-card--dark;
-
-    .sender-block {
-      .sender-block-inner {
-        .meta {
-          span {
-            color: var(--dark-dark-text);
-          }
-        }
-      }
-    }
-
-    .exerpt {
-      background: var(--dark-sidebar-light-4);
-      border-color: var(--dark-sidebar-light-12);
-
-      h5 {
-        color: var(--primary);
-      }
-
-      p {
-        color: var(--dark-dark-text);
       }
     }
   }
@@ -1016,20 +770,6 @@ const props = defineProps<{
   }
 }
 
-.is-dark {
-  .illustration-widget {
-    @include vuero-card--dark;
-
-    &.illustration-widget-v1,
-    &.illustration-widget-v2,
-    &.illustration-widget-v3 {
-      h3 {
-        color: var(--dark-dark-text);
-      }
-    }
-  }
-}
-
 // Creative list widget
 .creative-list-widget {
   @include vuero-l-card;
@@ -1065,23 +805,6 @@ const props = defineProps<{
         color: var(--dark-text);
         font-weight: 500;
         margin-left: 10px;
-      }
-    }
-  }
-}
-
-.is-dark {
-  .creative-list-widget {
-    @include vuero-card--dark;
-
-    .creative-list {
-      .creative-list-item {
-        background: var(--dark-sidebar-light-2);
-        border: 1px solid var(--dark-sidebar-light-12);
-
-        .meta {
-          color: var(--smoke-white);
-        }
       }
     }
   }
@@ -1186,23 +909,6 @@ const props = defineProps<{
   }
 }
 
-.is-dark {
-  .social-buttons-widget {
-    @include vuero-card--dark;
-
-    .social-buttons {
-      .social-button {
-        .inner-button {
-          &:hover:not(.is-active) {
-            background: var(--dark-sidebar-light-2);
-            color: var(--light-text);
-          }
-        }
-      }
-    }
-  }
-}
-
 // Call widget
 .call-widget {
   @include vuero-l-card;
@@ -1283,36 +989,6 @@ const props = defineProps<{
   }
 }
 
-.is-dark {
-  .call-widget {
-    @include vuero-card--dark;
-
-    h3 {
-      color: var(--dark-dark-text);
-    }
-
-    .img-container {
-      .badge {
-        border-color: var(--dark-sidebar-light-6);
-      }
-    }
-
-    .actions {
-      .action {
-        background: var(--dark-sidebar-light-2);
-        border: 1px solid var(--dark-sidebar-light-12);
-        color: var(--dark-dark-text);
-
-        &:hover,
-        &:focus {
-          border-color: var(--primary);
-          color: var(--primary);
-        }
-      }
-    }
-  }
-}
-
 // Avatar list widget
 .avatar-list-widget {
   @include vuero-l-card;
@@ -1386,43 +1062,6 @@ const props = defineProps<{
   }
 }
 
-.is-dark {
-  .avatar-list-widget {
-    @include vuero-card--dark;
-
-    .field {
-      .control {
-        .input {
-          background: var(--dark-sidebar-light-3);
-          border-color: var(--dark-sidebar-light-12);
-        }
-
-        .searcv-button {
-          background: var(--primary);
-        }
-      }
-
-      .topics {
-        a:hover {
-          color: var(--primary);
-        }
-      }
-    }
-
-    .avatar-list {
-      .avatar-list-item {
-        &:hover {
-          background: var(--dark-sidebar-light-8);
-        }
-
-        .meta {
-          color: var(--dark-dark-text);
-        }
-      }
-    }
-  }
-}
-
 // Followers widget
 .followers-widget {
   @include vuero-l-card;
@@ -1467,21 +1106,6 @@ const props = defineProps<{
             font-weight: 500;
             color: var(--light-text);
           }
-        }
-      }
-    }
-  }
-}
-
-.is-dark {
-  .followers-widget {
-    @include vuero-card--dark;
-
-    .channels {
-      .channel {
-        .channel-icon {
-          background: var(--dark-sidebar-light-2);
-          border: 1px solid var(--dark-sidebar-light-12);
         }
       }
     }
@@ -1538,15 +1162,315 @@ const props = defineProps<{
 }
 
 .is-dark {
-  .cart-widget {
+  .widget {
     @include vuero-card--dark;
+  }
 
+  .illustration-widget {
+    &.illustration-widget-v1,
+    &.illustration-widget-v2,
+    &.illustration-widget-v3 {
+      h3 {
+        color: var(--dark-dark-text);
+      }
+    }
+  }
+
+  .creative-list-widget {
+    .creative-list {
+      .creative-list-item {
+        background: var(--dark-sidebar-light-2);
+        border: 1px solid var(--dark-sidebar-light-12);
+
+        .meta {
+          color: var(--smoke-white);
+        }
+      }
+    }
+  }
+
+  .avatar-list-widget {
+    .field {
+      .control {
+        .input {
+          background: var(--dark-sidebar-light-3);
+          border-color: var(--dark-sidebar-light-12);
+        }
+
+        .searcv-button {
+          background: var(--primary);
+        }
+      }
+
+      .topics {
+        a:hover {
+          color: var(--primary);
+        }
+      }
+    }
+
+    .avatar-list {
+      .avatar-list-item {
+        &:hover {
+          background: var(--dark-sidebar-light-8);
+        }
+
+        .meta {
+          color: var(--dark-dark-text);
+        }
+      }
+    }
+  }
+
+  .video-widget {
+    .widget-meta {
+      > svg {
+        color: var(--primary);
+      }
+
+      h4 {
+        color: var(--dark-dark-text);
+      }
+    }
+  }
+
+  .inbox-widget {
+    .sender-block {
+      .sender-block-inner {
+        .meta {
+          span {
+            color: var(--dark-dark-text);
+          }
+        }
+      }
+    }
+
+    .exerpt {
+      background: var(--dark-sidebar-light-4);
+      border-color: var(--dark-sidebar-light-12);
+
+      h5 {
+        color: var(--primary);
+      }
+
+      p {
+        color: var(--dark-dark-text);
+      }
+    }
+  }
+
+  .icon-list-widget {
+    .icon-list {
+      .icon-list-item {
+        &:hover {
+          .icon-wrap {
+            background: var(--primary) !important;
+            box-shadow: var(--primary-box-shadow);
+            color: var(--smoke-white);
+          }
+
+          .item-meta {
+            span {
+              color: var(--primary) !important;
+            }
+          }
+        }
+
+        .icon-wrap {
+          background: var(--dark-sidebar-light-3);
+          color: var(--light-text-light-2);
+        }
+      }
+    }
+  }
+
+  .stats-widget {
+    .stat-number {
+      span {
+        &:first-child {
+          color: var(--dark-dark-text);
+        }
+      }
+    }
+  }
+
+  .icon-toolbar-widget {
+    .icon-toolbar {
+      .toolbar-icon {
+        .inner-icon {
+          color: var(--light-text-dark-12);
+
+          &:hover,
+          &:focus:not(.is-active) {
+            background: var(--dark-sidebar-light-3);
+          }
+
+          &.is-active {
+            color: var(--primary);
+          }
+        }
+      }
+    }
+  }
+
+  .image-widget {
+    .progress-wrap {
+      .progress {
+        background-image: linear-gradient(
+          to right,
+          var(--primary) 30%,
+          #000 30%
+        ) !important;
+      }
+    }
+  }
+
+  .search-widget {
+    .field {
+      .control {
+        .input {
+          background: var(--dark-sidebar-light-3);
+          border-color: var(--dark-sidebar-light-12);
+        }
+
+        .searcv-button {
+          background: var(--primary);
+        }
+      }
+
+      .topics {
+        a:hover {
+          color: var(--primary);
+        }
+      }
+    }
+  }
+
+  .widget-toolbar {
+    h3 {
+      color: var(--dark-dark-text);
+    }
+
+    .right {
+      .right-icon {
+        &.has-indicator {
+          &::after {
+            border-color: var(--dark-sidebar-light-6);
+          }
+        }
+      }
+    }
+  }
+
+  .call-widget {
+    h3 {
+      color: var(--dark-dark-text);
+    }
+
+    .img-container {
+      .badge {
+        border-color: var(--dark-sidebar-light-6);
+      }
+    }
+
+    .actions {
+      .action {
+        background: var(--dark-sidebar-light-2);
+        border: 1px solid var(--dark-sidebar-light-12);
+        color: var(--dark-dark-text);
+
+        &:hover,
+        &:focus {
+          border-color: var(--primary);
+          color: var(--primary);
+        }
+      }
+    }
+  }
+
+  .social-buttons-widget {
+    .social-buttons {
+      .social-button {
+        .inner-button {
+          &:hover:not(.is-active) {
+            background: var(--dark-sidebar-light-2);
+            color: var(--light-text);
+          }
+        }
+      }
+    }
+  }
+
+  .picker-widget {
+    .calendar {
+      color: var(--dark-dark-text);
+
+      thead,
+      th {
+        color: var(--primary);
+      }
+
+      td:hover {
+        background: var(--dark-sidebar-light-3);
+        color: var(--primary);
+      }
+    }
+
+    .current-day {
+      color: var(--primary);
+    }
+  }
+
+  .followers-widget {
+    .channels {
+      .channel {
+        .channel-icon {
+          background: var(--dark-sidebar-light-2);
+          border: 1px solid var(--dark-sidebar-light-12);
+        }
+      }
+    }
+  }
+
+  .cart-widget {
     .cart-items {
       .cart-item {
         .meta {
           span {
             &:nth-child(2) {
               color: var(--primary);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .text-widget {
+    .widget-content {
+      p {
+        span {
+          color: var(--dark-dark-text);
+        }
+      }
+    }
+
+    .hashtags {
+      a {
+        color: var(--primary);
+      }
+    }
+  }
+
+  .calendar-widget {
+    .calendar-widget-inner {
+      .calendar-square {
+        @include vuero-card--dark;
+
+        .date {
+          span {
+            &:first-child {
+              color: var(--dark-dark-text);
             }
           }
         }

@@ -1,5 +1,6 @@
 import { reactive } from 'vue'
-import { themeColors } from '/@src/utils/theme-colors'
+import { useThemeColors } from '/@src/composable/useThemeColors'
+const themeColors = useThemeColors()
 
 // Bar Chart
 export const barData = [

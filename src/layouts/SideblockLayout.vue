@@ -2,7 +2,7 @@
 import { ref, watchPostEffect, watch, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 
-import type { SideblockTheme } from '/@src/stores/layoutSwitcher'
+import type { SideblockTheme } from '/@src/components/navigation/desktop/Sideblock.vue'
 import { usePanels } from '/@src/stores/panels'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 

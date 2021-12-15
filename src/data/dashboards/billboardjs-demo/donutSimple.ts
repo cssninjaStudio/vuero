@@ -1,5 +1,6 @@
 import type { Chart, ChartOptions, DataItem } from 'billboard.js'
-import { themeColors } from '/@src/utils/theme-colors'
+import { useThemeColors } from '/@src/composable/useThemeColors'
+const themeColors = useThemeColors()
 import { donut } from 'billboard.js'
 
 export const options: ChartOptions = {

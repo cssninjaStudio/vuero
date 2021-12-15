@@ -225,7 +225,7 @@ onUnmounted(() => {
         </div>
 
         <div
-          class="cart-widget side-section"
+          class="widget cart-widget side-section"
           :class="[activeSection === 'cart' && 'is-active']"
         >
           <div class="widget-toolbar">

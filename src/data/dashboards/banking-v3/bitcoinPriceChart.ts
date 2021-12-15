@@ -1,4 +1,5 @@
-import { themeColors } from '/@src/utils/theme-colors'
+import { useThemeColors } from '/@src/composable/useThemeColors'
+const themeColors = useThemeColors()
 
 function generateDayWiseTimeSeries(s: number, count: number) {
   const values = [

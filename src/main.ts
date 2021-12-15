@@ -12,7 +12,7 @@
  */
 import { defineAsyncComponent } from 'vue'
 import { SetupCalendar } from 'v-calendar'
-import VueTippy from 'vue-tippy'
+import { plugin as VueTippy } from 'vue-tippy'
 
 import { createApp } from './app'
 import { useNotyf } from './composable/useNotyf'
@@ -27,19 +27,12 @@ async function registerGlobalComponents({ app }: VueroAppContext) {
 
   app.use(SetupCalendar, {})
   app.use(VueTippy, {
+    component: 'Tippy',
     defaultProps: {
       theme: 'light',
     },
   })
 
-  app.component(
-    'Tippy',
-    defineAsyncComponent({
-      loader: () => import('vue-tippy').then(({ Tippy }) => Tippy),
-      delay: 0,
-      suspensible: false,
-    })
-  )
   app.component(
     'Multiselect',
     defineAsyncComponent({
