@@ -90,7 +90,7 @@ const tagsSlotOptions = [
       >
         <template #tag="{ option, remove, disabled }">
           <div class="multiselect-tag is-user">
-            <img :src="option.image" />
+            <img :src="option.image" alt="" />
             {{ option.name }}
             <i v-if="!disabled" @click.prevent @mousedown.prevent.stop="remove(option)" />
           </div>
@@ -121,7 +121,7 @@ const tagsSlotOptions = [
         >
           <template v-slot:tag="{ option, remove, disabled }">
             <div class="multiselect-tag is-user">
-              <img :src="option.image" />
+              <img :src="option.image" alt="" />
               <i
                 v-if="!disabled"
                 @click.prevent
@@ -148,7 +148,7 @@ const tagsSlotOptions = [
         >
           <template v-slot:tag="{ option, remove, disabled }">
             <div class="multiselect-tag is-user">
-              <img :src="option.image" />
+              <img :src="option.image" alt="" />
               <i
                 v-if="!disabled"
                 @click.prevent
@@ -175,7 +175,7 @@ const tagsSlotOptions = [
         >
           <template v-slot:tag="{ option, remove, disabled }">
             <div class="multiselect-tag is-user">
-              <img :src="option.image" />
+              <img :src="option.image" alt="" />
               <i
                 v-if="!disabled"
                 @click.prevent

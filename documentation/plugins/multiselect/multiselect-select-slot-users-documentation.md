@@ -34,7 +34,9 @@ images radius: `is-curved` and `is-rounded`.
 
 ```vue
 <script setup lang="ts">
-const selectSlotValue
+import { ref } from 'vue'
+
+const selectSlotValue = ref()
 const selectSlotOptions = [
   {
     value: 'alice',
@@ -86,12 +88,12 @@ const selectSlotOptions = [
   >
     <template #singlelabel="{ value }">
       <div class="multiselect-single-label">
-        <img class="select-label-icon" :src="value.icon" />
+        <img class="select-label-icon" :src="value.icon" alt="" />
         {{ value.name }}
       </div>
     </template>
     <template #option="{ option }">
-      <img class="select-option-icon" :src="option.icon" />
+      <img class="select-option-icon" :src="option.icon" alt="" />
       {{ option.name }}
     </template>
   </Multiselect>

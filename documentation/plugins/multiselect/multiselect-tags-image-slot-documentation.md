@@ -34,7 +34,9 @@ the select class modifier.
 
 ```vue
 <script setup lang="ts">
-const tagsSlotValue = []
+import { ref } from 'vue'
+
+const tagsSlotValue = ref([])
 const tagsSlotOptions = [
   {
     value: 'javascript',
@@ -89,7 +91,7 @@ const tagsSlotOptions = [
       >
         <template #tag="{ option, remove, disabled }">
           <div class="multiselect-tag is-user">
-            <img :src="option.image" />
+            <img :src="option.image" alt="" />
             {{ option.name }}
             <i v-if="!disabled" @click.prevent @mousedown.prevent.stop="remove(option)" />
           </div>
@@ -120,7 +122,7 @@ const tagsSlotOptions = [
         >
           <template v-slot:tag="{ option, remove, disabled }">
             <div class="multiselect-tag is-user">
-              <img :src="option.image" />
+              <img :src="option.image" alt="" />
               {{ option.name }}
               <i
                 v-if="!disabled"
@@ -148,7 +150,7 @@ const tagsSlotOptions = [
         >
           <template v-slot:tag="{ option, remove, disabled }">
             <div class="multiselect-tag is-user">
-              <img :src="option.image" />
+              <img :src="option.image" alt="" />
               {{ option.name }}
               <i
                 v-if="!disabled"
@@ -176,7 +178,7 @@ const tagsSlotOptions = [
         >
           <template v-slot:tag="{ option, remove, disabled }">
             <div class="multiselect-tag is-user">
-              <img :src="option.image" />
+              <img :src="option.image" alt="" />
               {{ option.name }}
               <i
                 v-if="!disabled"

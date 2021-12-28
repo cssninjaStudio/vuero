@@ -11,7 +11,6 @@ import ImageMin from 'vite-plugin-imagemin'
 import VueroDocumentation from './vite-plugin-vuero-doc/index'
 import { vueI18n } from '@intlify/vite-plugin-vue-i18n'
 import { VitePWA } from 'vite-plugin-pwa'
-import VueTypeImports from 'vite-plugin-vue-type-imports'
 import purgecss from 'rollup-plugin-purgecss'
 
 const SILENT = Boolean(process.env.SILENT) ?? false
@@ -95,11 +94,12 @@ export default defineConfig({
     ],
   },
   build: {
+    minify: false,
     sourcemap: SOURCE_MAP,
     // Turning off brotliSize display can slightly reduce packaging time
     brotliSize: !SILENT,
     chunkSizeWarningLimit: 2000,
-    minify: true,
+    // minify: true,
 
     /**
      * Uncomment this section to build the demo with missing images
@@ -118,14 +118,6 @@ export default defineConfig({
     Vue({
       include: [/\.vue$/],
     }),
-
-    /**
-     * vite-plugin-vue-type-imports enables you to import types and use
-     * them in your defineProps and defineEmits
-     *
-     * @see https://github.com/wheatjs/vite-plugin-vue-type-imports
-     */
-    VueTypeImports(),
 
     /**
      * vite-plugin-vue-i18n plugin does i18n resources pre-compilation / optimizations

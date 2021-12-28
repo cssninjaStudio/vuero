@@ -34,6 +34,7 @@ async function registerGlobalComponents({ app }: VueroAppContext) {
   })
 
   app.component(
+    // eslint-disable-next-line vue/multi-word-component-names
     'Multiselect',
     defineAsyncComponent({
       loader: () => import('@vueform/multiselect').then((mod) => mod.default),
@@ -42,6 +43,7 @@ async function registerGlobalComponents({ app }: VueroAppContext) {
     })
   )
   app.component(
+    // eslint-disable-next-line vue/multi-word-component-names
     'Slider',
     defineAsyncComponent({
       loader: () => import('@vueform/slider').then((mod) => mod.default),

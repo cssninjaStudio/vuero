@@ -4,7 +4,6 @@ import { ref } from 'vue'
 
 import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
-import { onceImageErrored } from '/@src/utils/via-placeholder'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
@@ -327,28 +326,25 @@ useHead({
     >
       <template #content>
         <form class="modal-form">
-          <div class="field">
-            <label>Username *</label>
-            <div class="control">
+          <VField label="Username *">
+            <VControl>
               <input type="text" class="input" placeholder="Username" />
-            </div>
-          </div>
-          <div class="field">
-            <label>Email *</label>
-            <div class="control">
+            </VControl>
+          </VField>
+          <VField label="Email *">
+            <VControl>
               <input type="text" class="input" placeholder="Email Address" />
-            </div>
-          </div>
-          <div class="field">
-            <label>Comment *</label>
-            <div class="control">
+            </VControl>
+          </VField>
+          <VField label="Comment *">
+            <VControl>
               <textarea
                 class="textarea"
                 rows="4"
                 placeholder="Your message..."
               ></textarea>
-            </div>
-          </div>
+            </VControl>
+          </VField>
         </form>
       </template>
       <template #action="{ close }">
@@ -364,28 +360,25 @@ useHead({
     >
       <template #content>
         <form class="modal-form">
-          <div class="field">
-            <label>Username *</label>
-            <div class="control">
+          <VField label="Username *">
+            <VControl>
               <input type="text" class="input" placeholder="Username" />
-            </div>
-          </div>
-          <div class="field">
-            <label>Email *</label>
-            <div class="control">
+            </VControl>
+          </VField>
+          <VField label="Email *">
+            <VControl>
               <input type="text" class="input" placeholder="Email Address" />
-            </div>
-          </div>
-          <div class="field">
-            <label>Comment *</label>
-            <div class="control">
+            </VControl>
+          </VField>
+          <VField label="Comment *">
+            <VControl>
               <textarea
                 class="textarea"
                 rows="4"
                 placeholder="Your message..."
               ></textarea>
-            </div>
-          </div>
+            </VControl>
+          </VField>
         </form>
       </template>
       <template #action="{ close }">
@@ -402,46 +395,25 @@ useHead({
     >
       <template #content>
         <form class="modal-form">
-          <div class="field is-horizontal">
-            <div class="field-label is-normal">
-              <label class="label">Username *</label>
-            </div>
-            <div class="field-body">
-              <div class="field">
-                <div class="control">
-                  <input class="input" type="text" placeholder="Username" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="field is-horizontal">
-            <div class="field-label is-normal">
-              <label class="label">Email *</label>
-            </div>
-            <div class="field-body">
-              <div class="field">
-                <div class="control">
-                  <input class="input" type="text" placeholder="Username" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="field is-horizontal">
-            <div class="field-label is-normal">
-              <label class="label">Comment *</label>
-            </div>
-            <div class="field-body">
-              <div class="field">
-                <div class="control">
-                  <textarea
-                    class="textarea"
-                    rows="4"
-                    placeholder="Your message..."
-                  ></textarea>
-                </div>
-              </div>
-            </div>
-          </div>
+          <VField label="Username *" horizontal>
+            <VControl expanded>
+              <input class="input" type="text" placeholder="Username" />
+            </VControl>
+          </VField>
+          <VField label="Email *" horizontal>
+            <VControl expanded>
+              <input class="input" type="text" placeholder="Username" />
+            </VControl>
+          </VField>
+          <VField label="Comment *" horizontal>
+            <VControl expanded>
+              <textarea
+                class="textarea"
+                rows="4"
+                placeholder="Your message..."
+              ></textarea>
+            </VControl>
+          </VField>
         </form>
       </template>
       <template #action="{ close }">
@@ -460,44 +432,40 @@ useHead({
         <div class="modal-form">
           <div class="columns is-multiline">
             <div class="column is-12">
-              <div class="field">
-                <label>Project Name *</label>
-                <div class="control">
+              <VField label="Project Name *">
+                <VControl>
                   <input type="text" class="input" placeholder="Ex: A cool project" />
-                </div>
-              </div>
+                </VControl>
+              </VField>
             </div>
             <div class="column is-6">
-              <div class="field">
-                <label>Project Budget *</label>
-                <div class="control">
+              <VField label="Project Budget *">
+                <VControl>
                   <input type="text" class="input" placeholder="Ex: $3,500" />
-                </div>
-              </div>
+                </VControl>
+              </VField>
             </div>
             <div class="column is-6">
-              <div class="field">
-                <label>Project URL *</label>
-                <div class="control">
+              <VField label="Project URL *">
+                <VControl>
                   <input
                     type="text"
                     class="input"
                     placeholder="Ex: https://project.com"
                   />
-                </div>
-              </div>
+                </VControl>
+              </VField>
             </div>
             <div class="column is-12">
-              <div class="field">
-                <label>Description *</label>
-                <div class="control">
+              <VField label="Description *">
+                <VControl>
                   <textarea
                     class="textarea"
                     rows="3"
                     placeholder="Details about the project..."
                   ></textarea>
-                </div>
-              </div>
+                </VControl>
+              </VField>
             </div>
           </div>
         </div>
@@ -518,218 +486,142 @@ useHead({
         <div class="modal-form">
           <div class="columns is-multiline">
             <div class="column is-12">
-              <div class="field">
-                <label>Project Name *</label>
-                <div class="control">
+              <VField label="Project Name *">
+                <VControl>
                   <input type="text" class="input" placeholder="Ex: A cool project" />
-                </div>
-              </div>
+                </VControl>
+              </VField>
             </div>
             <div class="column is-6">
-              <div class="field">
-                <label>Project Members</label>
-                <div class="control is-combo">
-                  <div class="stacked-combo-box has-rounded-images">
-                    <div class="box-inner">
-                      <div class="combo-item">
-                        <img
-                          src="/images/avatars/placeholder.jpg"
-                          alt=""
-                          @error.once="(event) => onceImageErrored(event, '150x150')"
-                        />
-                        <span class="selected-item">Add people</span>
+              <VField class="is-image-select" label="Project Member">
+                <VControl>
+                  <Multiselect
+                    placeholder="Select employees"
+                    track-by="name"
+                    label="name"
+                    :search="true"
+                    :options="[
+                      {
+                        value: 'alice',
+                        name: 'Alice Carasca',
+                        image: '/demo/avatars/7.jpg',
+                      },
+                      {
+                        value: 'erik',
+                        name: 'Erik Kovalsky',
+                        image: '/images/avatars/svg/vuero-1.svg',
+                      },
+                      {
+                        value: 'melany',
+                        name: 'melany Wallace',
+                        image: '/demo/avatars/25.jpg',
+                      },
+                      {
+                        value: 'tara',
+                        name: 'Tara Svenson',
+                        image: '/demo/avatars/13.jpg',
+                      },
+                      {
+                        value: 'mary',
+                        name: 'Mary Lebowski',
+                        image: '/demo/avatars/5.jpg',
+                      },
+                      {
+                        value: 'irina',
+                        name: 'Irina Vierbovsky',
+                        image: '/demo/avatars/23.jpg',
+                      },
+                      {
+                        value: 'jonathan',
+                        name: 'Jonathan Krugger',
+                        image: '/demo/avatars/32.jpg',
+                      },
+                    ]"
+                    :max-height="145"
+                  >
+                    <template #singlelabel="{ value }">
+                      <div class="multiselect-single-label">
+                        <img class="select-label-icon" :src="value.image" alt="" />
+                        {{ value.name }}
                       </div>
-                    </div>
-                    <div class="box-chevron">
-                      <i
-                        aria-hidden="true"
-                        class="iconify"
-                        data-icon="feather:chevron-down"
-                      ></i>
-                    </div>
-                    <div class="box-dropdown">
-                      <div class="dropdown-inner has-slimscroll">
-                        <ul>
-                          <li>
-                            <span class="item-icon">
-                              <img
-                                src="/demo/avatars/22.jpg"
-                                alt=""
-                                @error.once="
-                                  (event) => onceImageErrored(event, '150x150')
-                                "
-                              />
-                            </span>
-                            <span class="item-name">Jimmy H.</span>
-                            <span class="checkmark">
-                              <i
-                                aria-hidden="true"
-                                class="iconify"
-                                data-icon="feather:check"
-                              ></i>
-                            </span>
-                          </li>
-                          <li>
-                            <span class="item-icon">
-                              <img
-                                src="/images/avatars/svg/vuero-1.svg"
-                                alt=""
-                                @error.once="
-                                  (event) => onceImageErrored(event, '150x150')
-                                "
-                              />
-                            </span>
-                            <span class="item-name">Erik K.</span>
-                            <span class="checkmark">
-                              <i
-                                aria-hidden="true"
-                                class="iconify"
-                                data-icon="feather:check"
-                              ></i>
-                            </span>
-                          </li>
-                          <li>
-                            <span class="item-icon">
-                              <img
-                                src="/demo/avatars/7.jpg"
-                                alt=""
-                                @error.once="
-                                  (event) => onceImageErrored(event, '150x150')
-                                "
-                              />
-                            </span>
-                            <span class="item-name">Alice C.</span>
-                            <span class="checkmark">
-                              <i
-                                aria-hidden="true"
-                                class="iconify"
-                                data-icon="feather:check"
-                              ></i>
-                            </span>
-                          </li>
-                          <li>
-                            <span class="item-icon">
-                              <img
-                                src="/demo/avatars/25.jpg"
-                                alt=""
-                                @error.once="
-                                  (event) => onceImageErrored(event, '150x150')
-                                "
-                              />
-                            </span>
-                            <span class="item-name">Melany W.</span>
-                            <span class="checkmark">
-                              <i
-                                aria-hidden="true"
-                                class="iconify"
-                                data-icon="feather:check"
-                              ></i>
-                            </span>
-                          </li>
-                          <li>
-                            <span class="item-icon">
-                              <img
-                                src="/demo/avatars/12.jpg"
-                                alt=""
-                                @error.once="
-                                  (event) => onceImageErrored(event, '150x150')
-                                "
-                              />
-                            </span>
-                            <span class="item-name">Joshua S.</span>
-                            <span class="checkmark">
-                              <i
-                                aria-hidden="true"
-                                class="iconify"
-                                data-icon="feather:check"
-                              ></i>
-                            </span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                    </template>
+                    <template #option="{ option }">
+                      <img class="select-option-icon" :src="option.image" alt="" />
+                      {{ option.name }}
+                    </template>
+                  </Multiselect>
+                </VControl>
+              </VField>
             </div>
             <div class="column is-6">
-              <div class="field">
-                <label>Project Type *</label>
-                <div class="control">
-                  <div class="h-select">
-                    <div class="select-box">
-                      <span>Select a type</span>
-                    </div>
-                    <div class="select-icon">
-                      <i
-                        aria-hidden="true"
-                        class="iconify"
-                        data-icon="feather:chevron-down"
-                      ></i>
-                    </div>
-                    <div class="select-drop has-slimscroll-sm">
-                      <div class="drop-inner">
-                        <div class="option-row">
-                          <input type="radio" name="project_type" />
-                          <div class="option-meta">
-                            <span>Web development</span>
-                          </div>
-                        </div>
-                        <div class="option-row">
-                          <input type="radio" name="project_type" />
-                          <div class="option-meta">
-                            <span>Design</span>
-                          </div>
-                        </div>
-                        <div class="option-row">
-                          <input type="radio" name="project_type" />
-                          <div class="option-meta">
-                            <span>Marketing</span>
-                          </div>
-                        </div>
-                        <div class="option-row">
-                          <input type="radio" name="project_type" />
-                          <div class="option-meta">
-                            <span>Software</span>
-                          </div>
-                        </div>
+              <VField class="is-image-select" label="Project Type *">
+                <VControl>
+                  <Multiselect
+                    placeholder="Select language"
+                    track-by="name"
+                    label="name"
+                    :search="true"
+                    :options="[
+                      {
+                        value: 'javascript',
+                        name: 'Javascript',
+                        image: '/images/icons/stacks/js.svg',
+                      },
+                      {
+                        value: 'reactjs',
+                        name: 'ReactJS',
+                        image: '/images/icons/stacks/reactjs.svg',
+                      },
+                      {
+                        value: 'vuejs',
+                        name: 'VueJS',
+                        image: '/images/icons/stacks/vuejs.svg',
+                      },
+                    ]"
+                    :max-height="145"
+                  >
+                    <template #singlelabel="{ value }">
+                      <div class="multiselect-single-label">
+                        <img class="select-label-icon" :src="value.image" alt="" />
+                        {{ value.name }}
                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                    </template>
+                    <template #option="{ option }">
+                      <img class="select-option-icon" :src="option.image" alt="" />
+                      {{ option.name }}
+                    </template>
+                  </Multiselect>
+                </VControl>
+              </VField>
             </div>
             <div class="column is-6">
-              <div class="field">
-                <label>Project Budget *</label>
-                <div class="control">
+              <VField label="Project Budget *">
+                <VControl>
                   <input type="text" class="input" placeholder="Ex: $3,500" />
-                </div>
-              </div>
+                </VControl>
+              </VField>
             </div>
             <div class="column is-6">
-              <div class="field">
-                <label>Project URL *</label>
-                <div class="control">
+              <VField label="Project URL *">
+                <VControl>
                   <input
                     type="text"
                     class="input"
                     placeholder="Ex: https://project.com"
                   />
-                </div>
-              </div>
+                </VControl>
+              </VField>
             </div>
             <div class="column is-12">
-              <div class="field">
-                <label>Description *</label>
-                <div class="control">
+              <VField label="Description *">
+                <VControl>
                   <textarea
                     class="textarea"
                     rows="3"
                     placeholder="Details about the project..."
                   ></textarea>
-                </div>
-              </div>
+                </VControl>
+              </VField>
             </div>
           </div>
         </div>
