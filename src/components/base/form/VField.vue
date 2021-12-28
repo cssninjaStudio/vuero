@@ -1,4 +1,8 @@
 <script setup lang="ts">
+import { provide, useSlots, computed } from 'vue'
+
+import { useVField, useVFieldSymbol } from '/@src/composable/useVField'
+
 export type VFieldProps = {
   label?: string
   addons?: boolean
@@ -11,6 +15,12 @@ export type VFieldProps = {
 const props = withDefaults(defineProps<VFieldProps>(), {
   label: undefined,
 })
+
+const vField = useVField()
+const slots = useSlots()
+const hasLabel = computed(() => Boolean(slots?.label?.() || props.label))
+
+provide(useVFieldSymbol, vField)
 </script>
 
 <template>
@@ -24,17 +34,19 @@ const props = withDefaults(defineProps<VFieldProps>(), {
       props.horizontal && 'is-horizontal',
     ]"
   >
-    <template v-if="typeof props.label === 'string' && props.horizontal">
+    <template v-if="hasLabel && props.horizontal">
       <div class="field-label is-normal">
-        <label class="label">{{ props.label }}</label>
+        <label class="label" :for="vField.id">
+          <slot name="label">{{ props.label }}</slot>
+        </label>
       </div>
       <div class="field-body">
         <slot></slot>
       </div>
     </template>
-    <template v-else-if="typeof props.label === 'string'">
-      <label class="label">
-        {{ props.label }}
+    <template v-else-if="hasLabel">
+      <label class="label" :for="vField.id">
+        <slot name="label">{{ props.label }}</slot>
       </label>
 
       <slot></slot>

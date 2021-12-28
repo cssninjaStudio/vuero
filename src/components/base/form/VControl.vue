@@ -1,57 +1,149 @@
-<script setup lang="ts">
-import { computed } from 'vue'
+<script lang="ts">
+import { inject, computed, h, VNode, defineComponent } from 'vue'
 
-export interface VControlProps {
-  icon?: string
-  isValid?: boolean
-  hasError?: boolean
-  loading?: boolean
-  expanded?: boolean
-  textaddon?: boolean
-  nogrow?: boolean
-  subcontrol?: boolean
-}
+import { useVFieldSymbol } from '/@src/composable/useVField'
 
-const props = withDefaults(defineProps<VControlProps>(), {
-  icon: undefined,
-})
+// export interface VControlProps {
+//   icon?: string
+//   isValid?: boolean
+//   hasError?: boolean
+//   loading?: boolean
+//   expanded?: boolean
+//   textaddon?: boolean
+//   nogrow?: boolean
+//   subcontrol?: boolean
+// }
 
-const isIconify = computed(() => {
-  return props.icon && props.icon.indexOf(':') !== -1
+// const props = withDefaults(defineProps<VControlProps>(), {
+//   icon: undefined,
+// })
+
+export default defineComponent({
+  name: 'VControl',
+  props: {
+    icon: {
+      type: String,
+      default: undefined,
+    },
+    isValid: {
+      type: Boolean,
+      default: undefined,
+    },
+    hasError: {
+      type: Boolean,
+      default: undefined,
+    },
+    loading: {
+      type: Boolean,
+      default: undefined,
+    },
+    expanded: {
+      type: Boolean,
+      default: undefined,
+    },
+    fullwidth: {
+      type: Boolean,
+      default: undefined,
+    },
+    textaddon: {
+      type: Boolean,
+      default: undefined,
+    },
+    nogrow: {
+      type: Boolean,
+      default: undefined,
+    },
+    subcontrol: {
+      type: Boolean,
+      default: undefined,
+    },
+  },
+  setup(props, { slots }) {
+    const isIconify = computed(() => {
+      return props.icon && props.icon.indexOf(':') !== -1
+    })
+
+    const vField = inject(useVFieldSymbol)
+
+    const controlClasees = computed(() => [
+      'control',
+      props.icon && 'has-icon',
+      props.loading && 'is-loading',
+      props.expanded && 'is-expanded',
+      props.fullwidth && 'is-fullwidth',
+      props.nogrow && 'is-nogrow',
+      props.textaddon && 'is-textarea-addon',
+      props.isValid && 'has-validation has-success',
+      props.hasError && 'has-validation has-error',
+      props.subcontrol && 'subcontrol',
+    ])
+
+    let formIcon: VNode | null = null
+    if (props.icon) {
+      if (isIconify.value) {
+        formIcon = h(
+          'div',
+          { class: 'form-icon' },
+          h('i', { 'aria-hidden': true, 'data-icon': props.icon, class: 'iconify' })
+        )
+      } else {
+        formIcon = h(
+          'div',
+          { class: 'form-icon' },
+          h('i', { 'aria-hidden': true, class: props.icon })
+        )
+      }
+    }
+
+    let validationIcon: VNode | null = null
+    if (props.isValid) {
+      validationIcon = h(
+        'div',
+        { class: 'validation-icon is-success' },
+        h('i', {
+          'aria-hidden': true,
+          'data-icon': 'feather:check',
+          class: 'iconify',
+        })
+      )
+    } else if (props.hasError) {
+      validationIcon = h(
+        'div',
+        { class: 'validation-icon is-error' },
+        h('i', {
+          'aria-hidden': true,
+          'data-icon': 'feather:x',
+          class: 'iconify',
+        })
+      )
+    }
+
+    return () => {
+      const slotDefault = slots.default?.()
+      const slotExtra = slots.extra?.()
+
+      if (slotDefault?.[0]?.props) {
+        slotDefault[0].props.id = vField?.id
+      }
+
+      return h(
+        'div',
+        {
+          class: controlClasees.value,
+        },
+        [slotDefault, formIcon, validationIcon, slotExtra]
+      )
+    }
+  },
 })
 </script>
-
-<template>
-  <div
-    class="control"
-    :class="[
-      icon && 'has-icon',
-      loading && 'is-loading',
-      expanded && 'is-expanded',
-      nogrow && 'is-nogrow',
-      textaddon && 'is-textarea-addon',
-      isValid && 'has-validation has-success',
-      hasError && 'has-validation has-error',
-      subcontrol && 'subcontrol',
-    ]"
-  >
-    <slot></slot>
-    <div v-if="icon" class="form-icon">
-      <i v-if="isIconify" aria-hidden="true" class="iconify" :data-icon="icon"></i>
-      <i v-else aria-hidden="true" :class="icon"></i>
-    </div>
-    <div v-if="isValid" class="validation-icon is-success">
-      <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
-    </div>
-    <div v-else-if="hasError" class="validation-icon is-error">
-      <i aria-hidden="true" class="iconify" data-icon="feather:x"></i>
-    </div>
-    <slot name="extra"></slot>
-  </div>
-</template>
 
 <style lang="scss" scoped>
 .is-nogrow {
   flex-grow: 0 !important;
+}
+
+.is-fullwidth {
+  width: 100%;
 }
 </style>
