@@ -18,7 +18,7 @@ fi
 
 set -xe
 
-# # enable "rollupOptions.external" in vite.config.ts
+# disable VueroDocumentation
 sed -i "s#import VueroDocumentation from './vite-plugin-vuero-doc/index'#// import VueroDocumentation from './vite-plugin-vuero-doc/index'#g" ./vite.config.ts
 sed -i "s#VueroDocumentation()#// VueroDocumentation()#g" ./vite.config.ts
 

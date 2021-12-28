@@ -3,21 +3,6 @@ import { inject, computed, h, VNode, defineComponent } from 'vue'
 
 import { useVFieldSymbol } from '/@src/composable/useVField'
 
-// export interface VControlProps {
-//   icon?: string
-//   isValid?: boolean
-//   hasError?: boolean
-//   loading?: boolean
-//   expanded?: boolean
-//   textaddon?: boolean
-//   nogrow?: boolean
-//   subcontrol?: boolean
-// }
-
-// const props = withDefaults(defineProps<VControlProps>(), {
-//   icon: undefined,
-// })
-
 export default defineComponent({
   name: 'VControl',
   props: {
@@ -63,7 +48,9 @@ export default defineComponent({
       return props.icon && props.icon.indexOf(':') !== -1
     })
 
-    const vField = inject(useVFieldSymbol)
+    const vField = inject(useVFieldSymbol, {
+      id: '',
+    } as const)
 
     const controlClasees = computed(() => [
       'control',
@@ -122,8 +109,8 @@ export default defineComponent({
       const slotDefault = slots.default?.()
       const slotExtra = slots.extra?.()
 
-      if (slotDefault?.[0]?.props) {
-        slotDefault[0].props.id = vField?.id
+      if (slotDefault?.[0]?.props && vField.id) {
+        slotDefault[0].props.id = vField.id
       }
 
       return h(
