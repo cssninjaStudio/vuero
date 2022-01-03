@@ -55,11 +55,6 @@ export async function createApp() {
     },
   })
 
-  app.use(head)
-  app.use(router)
-  app.use(i18n)
-  app.use(pinia)
-
   const vuero = {
     app,
     api,
@@ -70,7 +65,12 @@ export async function createApp() {
   }
 
   await registerGlobalComponents(vuero)
+  app.use(vuero.pinia)
+  app.use(vuero.head)
+  app.use(vuero.i18n)
+
   registerRouterNavigationGuards(vuero)
+  app.use(vuero.router)
 
   return vuero
 }
