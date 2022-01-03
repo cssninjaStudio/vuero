@@ -56,6 +56,24 @@ rm -rf \
   src/data
 find public -type d -empty -delete
 
+# remove unncecessary composable for the quickstart
+find src/composable -type f -not \( \
+  -name 'useApi.ts' \
+  -or -name 'useDropdown.ts' \
+  -or -name 'useNotyf.ts' \
+  -or -name 'useThemeColors.ts' \
+  -or -name 'useVField.ts' \
+  \) -delete
+
+# remove unncecessary stores for the quickstart
+find src/stores -type f -not \( \
+  -name 'darkmode.ts' \
+  -or -name 'panels.ts' \
+  -or -name 'sidebar.ts' \
+  -or -name 'userSession.ts' \
+  -or -name 'viewWrapper.ts' \
+  \) -delete
+
 # src/components/pages/dashboards/business/FlightsDashboard.vue
 # src/components/partials/dropdowns/FlightResultsDropdown.vue
 # src/components/partials/widgets/ui-creative/UIWidget.vue

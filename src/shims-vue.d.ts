@@ -15,6 +15,7 @@ declare module 'v-calendar' {
 }
 
 declare module 'vue3-apexcharts'
+declare module 'vue-tippy'
 declare module 'simplebar-vue'
 declare module '@vueform/multiselect'
 declare module '@vueform/slider'

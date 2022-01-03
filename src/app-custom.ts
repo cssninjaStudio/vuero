@@ -1,27 +1,15 @@
-/**
- * This is your client vue app entrypoint
- * Its loaded because it is referenced in the vite
- * entrypoint file (index.html located at the root of this project)
- *
- * External css/js files will be loaded as dependencies.
- * You may want to check the vite configuration.
- * Some plugins will register virtual components or lazyload other for us.
- *
- * @see /index.html
- * @see /vite.config.ts
- */
 import { defineAsyncComponent } from 'vue'
 import { SetupCalendar } from 'v-calendar'
 import { plugin as VueTippy } from 'vue-tippy'
+import { START_LOCATION } from 'vue-router'
 
-import { createApp } from './app'
 import { useNotyf } from './composable/useNotyf'
 import { useUserSession } from './stores/userSession'
 
 import type { VueroAppContext } from './app'
 
 // Lazy load aditional components
-async function registerGlobalComponents({ app }: VueroAppContext) {
+export async function registerGlobalComponents({ app }: VueroAppContext) {
   const background = (await import('./directives/background')).default
   const tooltip = (await import('./directives/tooltip')).default
 
@@ -92,12 +80,12 @@ async function registerGlobalComponents({ app }: VueroAppContext) {
  *  // HTML content
  * </template>
  */
-function registerRouterNavigationGuards({ router, api }: VueroAppContext) {
+export function registerRouterNavigationGuards({ router, api }: VueroAppContext) {
   router.beforeEach(async (to, from) => {
     const userSession = useUserSession()
     const notyf = useNotyf()
 
-    if (!from?.name && userSession.isLoggedIn) {
+    if (from === START_LOCATION && userSession.isLoggedIn) {
       // 1. If the name is not set, it means we are navigating to the first page
       // and we are logged in, so we should check user information from the server
       try {
@@ -138,22 +126,3 @@ function registerRouterNavigationGuards({ router, api }: VueroAppContext) {
     }
   })
 }
-
-/**
- * We create our app and mount it when it is ready
- *
- * @see /@src/app.ts for more detailed informations
- */
-createApp().then(async (vuero) => {
-  // register router middleware
-  registerRouterNavigationGuards(vuero)
-
-  // register global components
-  await registerGlobalComponents(vuero)
-
-  // wait for the app to be ready
-  await vuero.router.isReady()
-
-  // finaly mount the app to the DOM
-  vuero.app.mount('#app')
-})

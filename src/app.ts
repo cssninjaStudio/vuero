@@ -5,11 +5,14 @@ import { createPinia } from 'pinia'
 import { createI18n } from './i18n'
 import { createRouter } from './router'
 import VueroApp from './VueroApp.vue'
+import './styles'
 
 import { initDarkmode } from '/@src/stores/darkmode'
 import { createApi } from '/@src/composable/useApi'
 
 export type VueroAppContext = Awaited<ReturnType<typeof createApp>>
+
+import { registerGlobalComponents, registerRouterNavigationGuards } from './app-custom'
 
 export async function createApp() {
   const head = createHead()
@@ -57,7 +60,7 @@ export async function createApp() {
   app.use(i18n)
   app.use(pinia)
 
-  return {
+  const vuero = {
     app,
     api,
     router,
@@ -65,4 +68,9 @@ export async function createApp() {
     head,
     pinia,
   }
+
+  await registerGlobalComponents(vuero)
+  registerRouterNavigationGuards(vuero)
+
+  return vuero
 }

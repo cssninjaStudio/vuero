@@ -1,5 +1,3 @@
-'use-strict'
-
 const hslRe =
   /hsl\(\s*(\d+)((?:deg)|(?:turn)|(?:rad))?\s*,?\s*(\d+(?:\.\d+)?%)\s*,?\s*(\d+(?:\.\d+)?%)\s*\)/
 

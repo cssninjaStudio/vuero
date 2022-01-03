@@ -1,5 +1,4 @@
 import { createRouter as createClientRouter, createWebHistory } from 'vue-router'
-import * as NProgress from 'nprogress'
 
 /**
  * routes are generated using vite-plugin-pages
@@ -53,16 +52,6 @@ export function createRouter() {
     // history: createWebHistory('my-subdirectory'),
     history: createWebHistory(),
     routes,
-  })
-
-  /**
-   * Handle NProgress display on page changes
-   */
-  router.beforeEach(() => {
-    NProgress.start()
-  })
-  router.afterEach(() => {
-    NProgress.done()
   })
 
   return router
