@@ -2,6 +2,50 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/cssninjaStudio/vuero/compare/v2.1.0...v2.2.0) (2022-01-03)
+
+### Features
+
+- **accessibility:** enable click-events-have-key-events eslint rule ([0d55212](https://github.com/cssninjaStudio/vuero/commit/0d55212e778e8268eeecc855a55ecdaf6ccb7353))
+- **accessibility:** improve focus styles and keyboard navigation ([18a62e7](https://github.com/cssninjaStudio/vuero/commit/18a62e7cc973b75e2df49310ce9c88aea8d00846))
+- **accessibility:** improve keyboard navigation on form pages ([3868a72](https://github.com/cssninjaStudio/vuero/commit/3868a72b72518dd7078362be6497a07c5321d5ab))
+- add useThemeColors composable ([a1f84d8](https://github.com/cssninjaStudio/vuero/commit/a1f84d87d4c6c42ef1898726d9adc7c65249425a))
+- **layouts:** add new Sideblock layout ([ff5f774](https://github.com/cssninjaStudio/vuero/commit/ff5f774b070fc6c09f74a712bdfbd03c75226627))
+- **linters:** upgrade to stylelint v14 + other linter minor versions ([b5cbd8c](https://github.com/cssninjaStudio/vuero/commit/b5cbd8ce6627114c0a923fd49cc8c469ef10abe0))
+- **page-icons:** add copy snippets to clipboard on all icons examples ([271acd9](https://github.com/cssninjaStudio/vuero/commit/271acd9406ea794252184aae8333fb6ff17bb3f0))
+- **page-influencer:** split page into smaller and more reusable components ([46307a4](https://github.com/cssninjaStudio/vuero/commit/46307a4503ba352987dda72eb4c4511aad034bd8))
+- **page-messaging-v1:** split page into smaller and more reusable components with api call samples ([0bf5d04](https://github.com/cssninjaStudio/vuero/commit/0bf5d04bec5cb0abf2a6ecacee123dc1590f01c5))
+- **sidebar-collapsable-links:** replace has-nested-router-link directive with a component ([141311c](https://github.com/cssninjaStudio/vuero/commit/141311c00c73687b5fbac40e88e0fdd565a193d5))
+- **stores:** convert activePanelState to pinia ([89c3c6a](https://github.com/cssninjaStudio/vuero/commit/89c3c6ac7166ec383e28f13fc4a02e497ddc90de))
+- **stores:** convert activeSidebarState to pinia ([7a71043](https://github.com/cssninjaStudio/vuero/commit/7a7104343345afc1dfd45bc0db43ebe2416e3046))
+- **stores:** convert darkModeState to pinia ([352b2ee](https://github.com/cssninjaStudio/vuero/commit/352b2eeca95357bd664a41dd611755095fb534f5))
+- **stores:** convert navbarLayoutState and sidebarLayoutState to layoutSwitcher store ([949ed35](https://github.com/cssninjaStudio/vuero/commit/949ed357717d66ae66553d9c7e9aad172a5d516e))
+- **stores:** enable hot module replacement on pinia modules ([37690dc](https://github.com/cssninjaStudio/vuero/commit/37690dcf26e3e5839015e78ccc79014b65fac671))
+- **stores:** use viewWrapper store to handle pageTitle ([87e2766](https://github.com/cssninjaStudio/vuero/commit/87e2766f30bc954f767d0a9f1898227649946ee7))
+- **styles:** Move styles to components to allow reusability ([#126](https://github.com/cssninjaStudio/vuero/issues/126)) ([448b53c](https://github.com/cssninjaStudio/vuero/commit/448b53ce69d97b94ac4054a6bf2b5e8d34f4d862))
+- **v-flex-table-wrapper:** add pagination, sort, filter and async data to v-flex-table ([#127](https://github.com/cssninjaStudio/vuero/issues/127)) ([5a24ac2](https://github.com/cssninjaStudio/vuero/commit/5a24ac2b91216a7d29e34959bd54693a0bba27fe))
+- **v-flex-table:** improve darkmode and responsive + add separators prop ([6aa8f5a](https://github.com/cssninjaStudio/vuero/commit/6aa8f5ad8049597096d95c8f75f9c892cfc68c8f))
+- **v-flex-table:** rewrite component with slots and render functions ([cf67662](https://github.com/cssninjaStudio/vuero/commit/cf67662b0ce26a1618419a87a9d77ff8774986d3))
+- **v-page-content-wrapper:** add base layout component ([47c90e2](https://github.com/cssninjaStudio/vuero/commit/47c90e27615eb1559ce8d3a294d21ac94968742c))
+- **v-page-content:** add base layout component ([5881d07](https://github.com/cssninjaStudio/vuero/commit/5881d07e664c63f391030b404bce8fcd134dc622))
+- **v-placeload:** add mobileWidth and mobileHeight properties ([17050a4](https://github.com/cssninjaStudio/vuero/commit/17050a4e586a113817010adc7227da378972813a))
+- **v-view-wrapper:** add base layout component ([4c8384e](https://github.com/cssninjaStudio/vuero/commit/4c8384e5b4aa37c18ea14fe9b9516a8174fe8d6d))
+- work on sideblock layout ([4aacc70](https://github.com/cssninjaStudio/vuero/commit/4aacc7010b74eeff670d20a54673ba8b7faff7ba))
+
+### Bug Fixes
+
+- add missing slots to base components ([9a64c83](https://github.com/cssninjaStudio/vuero/commit/9a64c83abe098499e4edfebdbe8535aef879fcb0))
+- **composable:** export named composable instead of default ([a911ea4](https://github.com/cssninjaStudio/vuero/commit/a911ea4695a1427a297b0622fb53ac6a97693e1e))
+- **composable:** update useApi error message ([9946588](https://github.com/cssninjaStudio/vuero/commit/994658809507a7746c37cf535badec706f3b5bb5))
+- **composable:** wrap useNotif with createSharedComposable from vueuse ([d7a59cb](https://github.com/cssninjaStudio/vuero/commit/d7a59cbfcc5f91c07626acb68c23ada54ff0c137))
+- **page-signup:** done button now submit the register form ([0ee5486](https://github.com/cssninjaStudio/vuero/commit/0ee5486d37630ac56ad421ef0d4693a1fddf630e)), closes [#124](https://github.com/cssninjaStudio/vuero/issues/124)
+- sidebar hover labels ([1d21728](https://github.com/cssninjaStudio/vuero/commit/1d2172850b8ece264a3c0ecc113fe347ca1ba967))
+- simplify app.ts + main.ts files and create VueroApp.vue ([e8b1132](https://github.com/cssninjaStudio/vuero/commit/e8b1132f2555a357b121a9253b1b43653f7cbae5))
+- update modal form examples ([029dcd2](https://github.com/cssninjaStudio/vuero/commit/029dcd20c84309c2420a4a28c681784a482a7703))
+- **useApi:** remove provide/inject + add initial page router guard async example ([b725be2](https://github.com/cssninjaStudio/vuero/commit/b725be2c5bfbca9b47f6e2f7a86349ec574d1956))
+- **utils:** rename themeColors to theme-colors ([e6168a3](https://github.com/cssninjaStudio/vuero/commit/e6168a32fe0926a038918278ee60719b06864b2f))
+- **v-field:** auto-generate input id binded with label ([bfd7e58](https://github.com/cssninjaStudio/vuero/commit/bfd7e58835ac5b52e1939ba0de90244f54ce2d69))
+
 ## [2.1.0](https://github.com/cssninjaStudio/vuero/compare/v2.0.0...v2.1.0) (2021-10-06)
 
 ### Features
