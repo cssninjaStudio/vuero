@@ -139,7 +139,7 @@ const columns = computed(() => {
       <template v-for="(row, index) in data" :key="index">
         <slot name="body-row-pre" :row="row" :columns="columns" :index="index"></slot>
         <div
-          class="flex-table-item has-slimscroll-x"
+          class="flex-table-item"
           :class="[props.clickable && 'is-clickable']"
           :tabindex="props.clickable ? 0 : undefined"
           @keydown.space.prevent="
