@@ -44,7 +44,7 @@ export const minimal = [
     path: '/messaging-v2',
     prefix: 'minimal',
     pageDelay: 300,
-    checkVisibleSelector: '.chat-app-wrapper',
+    checkVisibleSelector: '.chat-vuero',
     displayOrder: 40,
   },
   {

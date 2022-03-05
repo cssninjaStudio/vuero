@@ -107,8 +107,7 @@ function VitePluginVueroDoc(options: Options = {}): Plugin {
 
     let sfc = markdown.render(content, {})
 
-    if (resolved.wrapperClasses)
-      sfc = `<div class="${resolved.wrapperClasses}">${sfc}</div>`
+    if (wrapperClasses) sfc = `<div class="${wrapperClasses}">${sfc}</div>`
     if (resolved.wrapperComponent)
       sfc = `<${resolved.wrapperComponent} :frontmatter="frontmatter">${sfc}</${resolved.wrapperComponent}>`
     if (resolved.transforms.after) sfc = resolved.transforms.after(sfc, id)
@@ -130,8 +129,7 @@ function VitePluginVueroDoc(options: Options = {}): Plugin {
       console.error(errors)
       console.error('---MARKDOWN---', id)
 
-      if (config.isProduction)
-        throw new Error(`Markdown: file "${id}" have errors`)
+      if (config.isProduction) throw new Error(`Markdown: file "${id}" have errors`)
     }
 
     let result = code.replace('export function render', 'function render')
@@ -139,8 +137,7 @@ function VitePluginVueroDoc(options: Options = {}): Plugin {
     result += '\nconst data = () => ({ frontmatter: __matter });'
     result += '\nconst __script = { render, data };'
 
-    if (!config?.isProduction)
-      result += `\n__script.__hmrId = ${JSON.stringify(path)};`
+    if (!config?.isProduction) result += `\n__script.__hmrId = ${JSON.stringify(path)};`
 
     result += '\nexport default __script;'
 

@@ -1,9 +1,9 @@
 import { navbar, auth, minimal, sidebar, starters } from '../cypress/fixtures/routes'
-const fs = require('fs')
-const path = require('path')
+import { writeFileSync } from 'fs'
+import { resolve } from 'path'
 
-const projectRootDir = path.resolve(__dirname, '../')
-const outputDir = path.resolve(projectRootDir, 'src/data/landing')
+const projectRootDir = resolve(__dirname, '../')
+const outputDir = resolve(projectRootDir, 'src/data/landing')
 
 type Route = {
   name: string
@@ -18,7 +18,7 @@ type Route = {
 function writeData(filename: string, raw: any) {
   const data = JSON.stringify(raw, null, 2)
   if (data) {
-    fs.writeFileSync(filename, data)
+    writeFileSync(filename, data)
   }
 }
 

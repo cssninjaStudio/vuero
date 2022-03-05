@@ -13,12 +13,6 @@ done
 
 set -xe
 
-npx tsc ./cypress/fixtures/routes.ts
-npx tsc ./scripts/create-screenshot-data.ts
-
 yarn cypress run
-node ./scripts/create-screenshot-data.js
+node  -r jiti/register ./scripts/create-screenshot-data.ts
 ./scripts/convert-screenshot-webp.sh
-
-rm -f ./cypress/fixtures/routes.js
-rm -f ./scripts/create-screenshot-data.js

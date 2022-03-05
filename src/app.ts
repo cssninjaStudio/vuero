@@ -71,6 +71,7 @@ export async function createApp() {
 
   registerRouterNavigationGuards(vuero)
   app.use(vuero.router)
+  vuero.app.provide('vuero', vuero)
 
   return vuero
 }
