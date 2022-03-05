@@ -3,13 +3,13 @@ import { computed } from 'vue'
 
 export type VCheckboxColor = 'primary' | 'info' | 'success' | 'warning' | 'danger'
 export interface VCheckboxEmits {
-  (e: 'update:modelValue', value: (string | number)[]): void
+  (e: 'update:modelValue', value: (string | number | boolean)[]): void
 }
 export interface VCheckboxProps {
   value?: string | number
   label?: string
   color?: VCheckboxColor
-  modelValue?: (string | number)[]
+  modelValue?: (string | number | boolean)[]
   circle?: boolean
   solid?: boolean
   paddingless?: boolean
