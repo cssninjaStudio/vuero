@@ -12,6 +12,7 @@ services:
       traefik.http.routers.vuero-demo.entrypoints: 'http'
       traefik.http.routers.vuero-demo.rule: 'Host(`vuero.${HOST:-127.0.0.1.nip.io}`)'
       traefik.http.routers.vuero-demo.middlewares: 'https-redirect@file'
+      traefik.http.routers.vuero-demo.service: 'vuero-demo-https'
       traefik.http.services.vuero-demo-https.loadbalancer.server.port: 5000
       traefik.http.routers.vuero-demo-https.rule: 'Host(`vuero.${HOST:-127.0.0.1.nip.io}`)'
       traefik.http.routers.vuero-demo-https.tls: true
@@ -21,6 +22,7 @@ services:
       traefik.http.routers.vuero-api.entrypoints: 'http'
       traefik.http.routers.vuero-api.rule: 'Host(`api.vuero.${HOST:-127.0.0.1.nip.io}`)'
       traefik.http.routers.vuero-api.middlewares: 'https-redirect@file'
+      traefik.http.routers.vuero-api.service: 'vuero-api-https'
       traefik.http.services.vuero-api-https.loadbalancer.server.port: 8080
       traefik.http.routers.vuero-api-https.rule: 'Host(`api.vuero.${HOST:-127.0.0.1.nip.io}`)'
       traefik.http.routers.vuero-api-https.tls: true

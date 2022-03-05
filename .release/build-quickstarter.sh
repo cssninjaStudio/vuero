@@ -60,6 +60,7 @@ find public -type d -empty -delete
 find src/composable -type f -not \( \
   -name 'useApi.ts' \
   -or -name 'useDropdown.ts' \
+  -or -name 'useCreditcardMask.ts' \
   -or -name 'useNotyf.ts' \
   -or -name 'useThemeColors.ts' \
   -or -name 'useVField.ts' \

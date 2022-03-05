@@ -59,6 +59,13 @@ function toggle(value: string) {
   activeValue.value = value
 }
 
+watch(
+  () => props.selected,
+  (value) => {
+    activeValue.value = value
+  }
+)
+
 watch(activeValue, (value) => {
   emit('update:selected', value)
 })
