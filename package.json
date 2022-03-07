@@ -129,7 +129,6 @@
     "@types/nprogress": "0.2.0",
     "@types/photoswipe": "4.1.2",
     "@types/prismjs": "1.26.0",
-    "@types/simplebar": "5.3.3",
     "@types/vivus": "0.4.4",
     "@typescript-eslint/eslint-plugin": "5.13.0",
     "@typescript-eslint/parser": "5.13.0",
