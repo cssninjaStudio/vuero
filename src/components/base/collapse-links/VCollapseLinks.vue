@@ -1,6 +1,6 @@
 <script lang="ts">
 import type { PropType } from 'vue'
-import { ref, computed, h, defineComponent, Transition } from 'vue'
+import { watch, ref, computed, h, defineComponent, Transition } from 'vue'
 import { useRoute } from 'vue-router'
 
 export default defineComponent({
@@ -53,6 +53,13 @@ export default defineComponent({
 
       return h('li', {}, child)
     })
+
+    watch(
+      () => route.fullPath,
+      () => {
+        hasNestedLinkActive.value = false
+      }
+    )
 
     return () => {
       const parentLink = h(
