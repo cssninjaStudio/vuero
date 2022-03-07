@@ -98,7 +98,7 @@ export default defineConfig({
     sourcemap: SOURCE_MAP,
     // Turning off brotliSize display can slightly reduce packaging time
     brotliSize: !SILENT,
-    chunkSizeWarningLimit: 2000,
+    chunkSizeWarningLimit: Infinity,
     // minify: true,
 
     /**
@@ -134,7 +134,6 @@ export default defineConfig({
      * @see https://github.com/hannoeru/vite-plugin-pages
      */
     Pages({
-      nuxtStyle: false,
       pagesDir: [
         {
           dir: 'src/pages',

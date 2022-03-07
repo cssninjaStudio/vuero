@@ -3,8 +3,10 @@
   --accessibility-focus-outline-offset: 3px;
   --accessibility-focus-outline-width: 1px;
   --accessibility-focus-outline-color: var(--fade-grey-dark-8);
-}
 
-.is-dark {
-  --accessibility-focus-outline-color: var(--dark-sidebar-light-25);
+  &.is-dark {
+    --accessibility-focus-outline-color: var(--dark-sidebar-light-25);
+
+    color-scheme: dark;
+  }
 }

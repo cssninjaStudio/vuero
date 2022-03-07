@@ -98,6 +98,12 @@ const hasSlimscroll = computed(() => props.frontmatter?.slimscroll ?? false)
       color: #c0c0d1;
     }
   }
+
+  .content {
+    &::v-deep(code) {
+      background: var(--background-gray);
+    }
+  }
 }
 
 // Adjustments

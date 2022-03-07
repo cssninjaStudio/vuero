@@ -1,33 +1,16 @@
-name: cssninja / continuous integration
+name: cssninjaStudio / release-and-deploy
 on:
-  workflow_dispatch:
   push:
     tags:
       - 'v*.*.*'
 
 jobs:
-  test:
-    name: Test release
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
-        node-version: [14.x, 16.x]
-
-    steps:
-      - name: Vuero ${{ matrix.os }} - Node.js ${{ matrix.node-version }}
-        uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
-
-      - run: yarn
-      - run: yarn build
+  tests:
+    uses: ./.github/workflows/tests.yml
 
   release:
-    name: Build release package
     runs-on: ubuntu-latest
-    needs: test
+    needs: tests
 
     outputs:
       project: ${{ steps.meta.outputs.project }}
@@ -35,7 +18,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-
       - name: Get the version from tag
         id: meta
         run: |
@@ -72,7 +54,6 @@ jobs:
           discussion_category_name: announcements
 
   deploy:
-    name: Demo deployment
     runs-on: ubuntu-latest
     needs: release
 
