@@ -1,14 +1,16 @@
-FROM bitnami/node:14 AS build
+FROM bitnami/node:16 AS build
 WORKDIR /app
+
+ARG STRAPI_SERVER_URL
 
 COPY package.json ./
 COPY yarn.lock ./
 RUN CYPRESS_INSTALL_BINARY=0 yarn --frozen-lockfile
 
 COPY . .
-RUN SILENT=1 yarn run build
+RUN STRAPI_SERVER_URL=$STRAPI_SERVER_URL SILENT=1 yarn run build
 
-FROM bitnami/node:14-prod AS prod
+FROM bitnami/node:16-prod AS prod
 WORKDIR /app
 
 COPY --from=build /app .
