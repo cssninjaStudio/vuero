@@ -82,9 +82,9 @@ export default defineComponent({
       default: undefined,
       validator: (value: VButtonSize) => {
         // The value must match one of these strings
-        if ([undefined, 'big', 'huge'].indexOf(value) === -1) {
+        if ([undefined, 'medium', 'big', 'huge'].indexOf(value) === -1) {
           console.warn(
-            `VButton: invalid "${value}" size. Should be big, huge or undefined`
+            `VButton: invalid "${value}" size. Should be big, huge, medium or undefined`
           )
           return false
         }
@@ -372,6 +372,11 @@ export default defineComponent({
 
     &.is-big {
       height: 40px;
+    }
+
+    &.is-medium {
+      height: 2.5rem;
+      font-size: 1rem;
     }
 
     &.is-huge {

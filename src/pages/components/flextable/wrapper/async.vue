@@ -328,7 +328,15 @@ function onCallClick(row: any) {
                 </VFlex>
               </template>
               <template #before-navigation>
-                <VFlex class="mr-4">
+                <VFlex class="mr-4" column-gap="1rem">
+                  <VButton
+                    :loading="wrapperState.loading"
+                    size="medium"
+                    rounded
+                    @click="wrapperState.fetchData"
+                  >
+                    Refresh
+                  </VButton>
                   <VField>
                     <VControl>
                       <div class="select is-rounded">
