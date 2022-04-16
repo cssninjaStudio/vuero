@@ -43,14 +43,16 @@ export default defineComponent({
       default: undefined,
     },
   },
-  setup(props, { slots }) {
+  setup(props, { slots, attrs }) {
     const isIconify = computed(() => {
       return props.icon && props.icon.indexOf(':') !== -1
     })
 
     const vField = inject(useVFieldSymbol, {
       id: '',
-    } as const)
+    })
+
+    vField.id = attrs.id ?? vField.id
 
     const controlClasees = computed(() => [
       'control',
@@ -109,8 +111,8 @@ export default defineComponent({
       const slotDefault = slots.default?.()
       const slotExtra = slots.extra?.()
 
-      if (slotDefault?.[0]?.props && vField.id) {
-        slotDefault[0].props.id = vField.id
+      if (slotDefault?.[0]?.props && vField.id.value) {
+        slotDefault[0].props.id = vField.id.value
       }
 
       return h(

@@ -1,4 +1,4 @@
-import { reactive, ref, InjectionKey } from 'vue'
+import { ref, InjectionKey } from 'vue'
 
 let fieldId = 0
 
@@ -9,7 +9,7 @@ export const useVFieldSymbol: InjectionKey<UseVField> = Symbol()
 export function useVField() {
   const id = ref(`field-${fieldId++}`)
 
-  return reactive({
+  return {
     id,
-  } as const)
+  }
 }
