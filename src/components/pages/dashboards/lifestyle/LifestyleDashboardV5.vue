@@ -204,7 +204,7 @@ import {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/mixins';
+@import '/@src/scss/abstracts/all';
 
 .lifestyle-dashboard-v5 {
   .dashboard-title {

@@ -234,8 +234,6 @@ useHead({
 </template>
 
 <style lang="scss" scoped>
-@import '../../scss/abstracts/mixins';
-
 .modern-login {
   position: relative;
   background: var(--white);

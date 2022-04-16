@@ -150,7 +150,7 @@ function getAvatarData(user: any): VAvatarProps {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/mixins';
+@import '/@src/scss/abstracts/all';
 
 .card-grid {
   .columns {

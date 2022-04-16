@@ -112,7 +112,7 @@ const optionsSingle = [
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/mixins';
+@import '/@src/scss/abstracts/all';
 
 .user-grid-v4 {
   .columns {

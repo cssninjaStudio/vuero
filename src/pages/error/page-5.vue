@@ -37,8 +37,6 @@ useHead({
 </template>
 
 <style lang="scss">
-@import '../../scss/abstracts/mixins';
-
 .error-container {
   .error-wrapper {
     max-width: 840px;

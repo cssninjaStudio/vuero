@@ -419,8 +419,6 @@ watch(
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/mixins';
-
 .has-top-nav {
   .dashboard-map-wrapper {
     top: 80px;

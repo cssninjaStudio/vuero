@@ -352,7 +352,7 @@ const selected = ref('value_2')
 </template>
 
 <style lang="scss">
-@import '../../../scss/abstracts/mixins';
+@import '/@src/scss/abstracts/all';
 
 /* ==========================================================================
 1. SaaS Billing

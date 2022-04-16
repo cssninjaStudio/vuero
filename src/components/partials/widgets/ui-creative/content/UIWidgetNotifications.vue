@@ -23,7 +23,7 @@ const props = withDefaults(
 </template>
 
 <style lang="scss">
-@import '../../../../../scss/abstracts/mixins';
+@import '/@src/scss/abstracts/all';
 
 .list-widget {
   @include vuero-l-card;

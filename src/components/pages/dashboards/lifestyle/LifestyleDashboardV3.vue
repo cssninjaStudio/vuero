@@ -395,7 +395,7 @@ import { followersList } from '/@src/data/widgets/ui/followers'
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/mixins';
+@import '/@src/scss/abstracts/all';
 
 .lifestyle-dashboard-v3 {
   .illustration-header {

@@ -223,7 +223,7 @@
 </template>
 
 <style lang="scss" scoped>
-@import '../../../../scss/abstracts/mixins';
+@import '/@src/scss/abstracts/all';
 
 /*
   1. Timeline

@@ -328,7 +328,7 @@ const topicList = dashboardData.topicList as any[]
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/mixins';
+@import '/@src/scss/abstracts/all';
 
 .lifestyle-dashboard-v2 {
   .dashboard-title {

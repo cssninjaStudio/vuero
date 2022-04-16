@@ -76,8 +76,6 @@ onMounted(() => {
 </template>
 
 <style lang="scss" scoped>
-@import '../../../scss/abstracts/mixins';
-
 .toc {
   position: fixed;
   display: block;

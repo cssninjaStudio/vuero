@@ -166,8 +166,6 @@ function getAvatarData(user: UserPopover): VAvatarProps {
 </template>
 
 <style lang="scss">
-@import '../../../scss/abstracts/mixins';
-
 .right-panel-wrapper {
   &.is-search {
     .right-panel {

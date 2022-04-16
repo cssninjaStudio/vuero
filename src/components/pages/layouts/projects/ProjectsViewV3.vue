@@ -433,8 +433,6 @@ const filterProjects = ref(0)
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/mixins';
-
 .is-navbar {
   .all-projects {
     padding-top: 20px;

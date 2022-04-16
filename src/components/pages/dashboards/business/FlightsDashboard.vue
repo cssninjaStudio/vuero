@@ -446,7 +446,7 @@ const options = ref(['All Flights'])
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/mixins';
+@import '/@src/scss/abstracts/all';
 
 .flights-dashboard {
   .booking-bar-wrapper {

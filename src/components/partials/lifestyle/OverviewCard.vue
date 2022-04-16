@@ -15,7 +15,7 @@ const props = defineProps<{
 </template>
 
 <style lang="scss">
-@import '../../../scss/abstracts/mixins';
+@import '/@src/scss/abstracts/all';
 
 .overview-card {
   @include vuero-s-card;

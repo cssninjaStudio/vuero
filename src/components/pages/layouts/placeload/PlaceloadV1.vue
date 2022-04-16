@@ -46,7 +46,7 @@ const filters = ref('')
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/mixins';
+@import '/@src/scss/abstracts/all';
 
 .list-view-v1 {
   .list-view-item {

@@ -382,7 +382,7 @@ import {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/mixins';
+@import '/@src/scss/abstracts/all';
 
 .ecommerce-dashboard-v1 {
   .dashboard-header {

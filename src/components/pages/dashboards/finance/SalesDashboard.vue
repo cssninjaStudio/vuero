@@ -363,7 +363,7 @@ onMounted(() => {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/mixins';
+@import '/@src/scss/abstracts/all';
 
 .sales-dashboard {
   .dashboard-header {

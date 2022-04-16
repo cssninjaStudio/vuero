@@ -264,8 +264,6 @@ useHead({
 </template>
 
 <style lang="scss">
-@import '../scss/abstracts/mixins';
-
 .status-page-wrapper {
   max-width: 720px;
   margin: 0 auto;

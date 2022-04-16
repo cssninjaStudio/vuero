@@ -71,8 +71,8 @@ const isScrolling = computed(() => y.value > 30)
 </template>
 
 <style lang="scss">
-@import '../../../scss/abstracts/mixins';
-@import '../../../scss/layout/responsive';
+@import '/@src/scss/abstracts/all';
+@import '/@src/scss/layout/responsive';
 
 .navbar-navbar-clean {
   position: fixed;

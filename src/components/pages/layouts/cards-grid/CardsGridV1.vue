@@ -139,8 +139,6 @@ const optionsSingle = [
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/mixins';
-
 .card-grid {
   .columns {
     margin-left: -0.5rem !important;

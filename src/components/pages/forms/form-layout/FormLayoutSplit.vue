@@ -181,8 +181,6 @@ const isStuck = computed(() => {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/mixins';
-
 .is-navbar {
   .form-layout {
     margin-top: 30px;

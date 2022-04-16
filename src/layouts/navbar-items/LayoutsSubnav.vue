@@ -872,7 +872,7 @@ const activeTab = ref<TabId>('list')
 </template>
 
 <style lang="scss">
-@import '../../scss/abstracts/mixins';
-@import '../../scss/layout/navbar';
-@import '../../scss/layout/responsive';
+@import '/@src/scss/abstracts/mixins';
+@import '/@src/scss/layout/navbar';
+@import '/@src/scss/layout/responsive';
 </style>

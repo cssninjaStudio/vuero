@@ -1,38 +1,21 @@
 @charset "UTF-8";
 
-/* stylelint-disable scss/at-import-partial-extension */
-/* stylelint-disable scss/at-import-no-partial-leading-underscore */
-
 /*! main.scss | Vuero | Css ninja 2020-2021 */
 
 /* ==========================================================================
 SCSS Imports
 ========================================================================== */
 
-// @import './bulma-generated/generated-fallback.css';
 @import './bulma-generated/generated-vars.sass';
 @import './css-variables/all';
 
-@import './abstracts/variables';
-@import './abstracts/mixins';
+@import './abstracts/all';
 
+// Here we import bulma-css-vars instead of bulma
+// because we want to use the variables defined in the file
 @import './node_modules/bulma-css-vars/bulma-cv-lib';
-@import './node_modules/bulma/sass/base/_all.sass';
-@import './node_modules/bulma/sass/elements/_all.sass';
-@import './node_modules/bulma/sass/form/_all.sass';
-@import './node_modules/bulma/sass/components/_all.sass';
-@import './node_modules/bulma/sass/grid/_all.sass';
-@import './node_modules/bulma/sass/helpers/_all.sass';
-@import './node_modules/bulma/sass/layout/_all.sass';
 
-@import './abstracts/typography';
-@import './abstracts/animations';
-@import './abstracts/transitions';
-@import './abstracts/helpers';
-
-@import './layout/layout';
-@import './layout/right-panel';
-@import './layout/utilities';
+@import './layout/all';
 
 @import './components/cards';
 @import './components/content';
@@ -62,7 +45,3 @@ SCSS Imports
 @import './components/credit-card';
 @import './components/widgets';
 @import './components/layout-selector';
-
-@import './layout/responsive';
-
-@import './abstracts/dark';

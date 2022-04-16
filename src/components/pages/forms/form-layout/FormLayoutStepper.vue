@@ -806,8 +806,6 @@ const validateStep = async () => {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/mixins';
-
 .has-top-nav {
   .stepper-form {
     max-width: 880px;

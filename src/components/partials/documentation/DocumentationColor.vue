@@ -135,7 +135,7 @@ function updateColor({ colors }: any) {
 </template>
 
 <style lang="scss" scoped>
-@import '../../../scss/abstracts/mixins';
+@import '/@src/scss/abstracts/all';
 
 .color-picker {
   margin: 0 auto;

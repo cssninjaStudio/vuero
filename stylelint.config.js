@@ -32,7 +32,7 @@ module.exports = {
     'function-no-unknown': [
       true,
       {
-        ignoreFunctions: ["findColorInvert", "nth"]
+        ignoreFunctions: ["findColorInvert", "nth", "v-bind"],
       },
     ],
 

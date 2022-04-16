@@ -483,5 +483,5 @@ const emit = defineEmits(['close'])
 </template>
 
 <style lang="scss">
-@import '../../scss/layout/sidebar-panel';
+@import '/@src/scss/layout/sidebar-panel';
 </style>

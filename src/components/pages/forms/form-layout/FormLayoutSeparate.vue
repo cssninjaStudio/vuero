@@ -218,7 +218,7 @@ const options = ref(['Option 2'])
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/mixins';
+@import '/@src/scss/abstracts/all';
 
 .is-navbar {
   .form-layout {

@@ -102,7 +102,7 @@ const accept = async () => {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/mixins';
+@import '/@src/scss/abstracts/all';
 
 .action-page-wrapper {
   &.action-page-v1 {

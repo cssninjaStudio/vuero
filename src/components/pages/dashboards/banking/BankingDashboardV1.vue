@@ -400,7 +400,7 @@ import {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/mixins';
+@import '/@src/scss/abstracts/all';
 
 .banking-dashboard-v1 {
   .columns {

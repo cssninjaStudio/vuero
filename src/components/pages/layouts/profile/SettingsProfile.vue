@@ -139,8 +139,6 @@
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/mixins';
-
 .profile-wrapper {
   .profile-body {
     .settings-section {

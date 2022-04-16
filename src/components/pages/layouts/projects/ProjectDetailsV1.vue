@@ -666,7 +666,7 @@ const participants = [
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/mixins';
+@import '/@src/scss/abstracts/all';
 
 .is-navbar {
   .project-details {

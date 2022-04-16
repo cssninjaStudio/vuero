@@ -380,7 +380,7 @@ const goto = (index: number) => {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/mixins';
+@import '/@src/scss/abstracts/all';
 
 .banking-dashboard-v2 {
   .dashboard-card {

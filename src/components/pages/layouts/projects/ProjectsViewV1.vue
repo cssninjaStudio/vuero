@@ -324,7 +324,7 @@ const exampleColumns = {
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/mixins';
+@import '/@src/scss/abstracts/all';
 
 .all-projects {
   .section-heading {

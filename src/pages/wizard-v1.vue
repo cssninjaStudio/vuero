@@ -164,7 +164,7 @@ watchEffect(() => {
 </template>
 
 <style lang="scss">
-@import '../scss/abstracts/mixins';
+@import '/@src/scss/abstracts/all';
 
 /* ==========================================================================
 1. Wizard V1 Navigation

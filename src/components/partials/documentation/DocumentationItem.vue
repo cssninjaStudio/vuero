@@ -60,8 +60,6 @@ const hasSlimscroll = computed(() => props.frontmatter?.slimscroll ?? false)
 </template>
 
 <style lang="scss" scoped>
-@import '../../../scss/abstracts/mixins';
-
 .demo-code-wrapper {
   display: flex;
   flex-direction: column-reverse;

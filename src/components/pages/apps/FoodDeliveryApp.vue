@@ -343,7 +343,7 @@ onUnmounted(() => {
 </template>
 
 <style lang="scss">
-@import '../../../scss/abstracts/mixins';
+@import '/@src/scss/abstracts/all';
 
 .food-delivery-dashboard {
   display: flex;

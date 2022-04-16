@@ -5,8 +5,6 @@
 </template>
 
 <style lang="scss">
-@import '../scss/abstracts/mixins';
-
 .auth-wrapper-inner {
   overflow: hidden !important;
   height: 100%;

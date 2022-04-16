@@ -417,8 +417,6 @@ onUnmounted(() => {
 </template>
 
 <style lang="scss">
-@import '../../scss/abstracts/mixins';
-
 .signup-nav {
   position: fixed;
   top: 0;

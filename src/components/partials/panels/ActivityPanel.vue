@@ -362,7 +362,7 @@ const activeTab = ref<TabId>('team')
 </template>
 
 <style lang="scss">
-@import '../../../scss/abstracts/mixins';
+@import '/@src/scss/abstracts/all';
 
 .right-panel-wrapper {
   &.is-activity {

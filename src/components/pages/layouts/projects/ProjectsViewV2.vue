@@ -408,8 +408,6 @@
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/mixins';
-
 .all-projects {
   .all-projects-header {
     display: flex;

@@ -177,8 +177,6 @@ const setStep = (target: number) => {
 </template>
 
 <style lang="scss" scoped>
-@import '../../../scss/abstracts/mixins';
-
 .wizard-navigation {
   position: fixed;
   width: 100%;

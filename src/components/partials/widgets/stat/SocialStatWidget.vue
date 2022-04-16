@@ -32,7 +32,7 @@ const props = defineProps<{
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/mixins';
+@import '/@src/scss/abstracts/all';
 
 .stat-widget {
   &.followers-stat-widget-v1 {

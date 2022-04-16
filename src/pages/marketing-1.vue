@@ -121,8 +121,8 @@ useHead({
 </template>
 
 <style lang="scss">
-@import '../scss/abstracts/mixins';
-@import '../scss/_demo/landing';
+@import '/@src/scss/abstracts/all';
+@import '/@src/scss/_demo/landing';
 
 .marketing-hero {
   position: relative;

@@ -278,7 +278,7 @@ const userStack = userData.userStack as VAvatarProps[]
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/mixins';
+@import '/@src/scss/abstracts/all';
 
 .is-navbar {
   .personal-dashboard {

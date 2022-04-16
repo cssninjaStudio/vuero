@@ -212,7 +212,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
 </template>
 
 <style lang="scss">
-@import '../../../../scss/abstracts/mixins';
+@import '/@src/scss/abstracts/all';
 
 .lifestyle-dashboard-v4 {
   .illustration-header-2 {
