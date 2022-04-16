@@ -3,6 +3,7 @@ let instances = 0
 </script>
 
 <script setup lang="ts">
+import { watch, ref } from 'vue'
 export type VSwitchBlockColor = 'primary' | 'info' | 'success' | 'warning' | 'danger'
 export interface VSwitchBlockEmits {
   (e: 'update:modelValue', value: boolean): void
@@ -22,9 +23,18 @@ const props = withDefaults(defineProps<VSwitchBlockProps>(), {
 })
 
 const blockSwitchId = `block-switch-${++instances}`
+
+const value = ref(props.modelValue)
+
+watch(value, () => {
+  emit('update:modelValue', value.value)
+})
+watch(props.modelValue, () => {
+  value.value = props.modelValue
+})
 </script>
 
-<template inherit-attrs="false">
+<template>
   <div
     :class="[
       props.label && 'switch-block',
@@ -41,11 +51,11 @@ const blockSwitchId = `block-switch-${++instances}`
       >
         <input
           :id="blockSwitchId"
-          :checked="props.modelValue"
+          :checked="value"
           class="input"
           type="checkbox"
           v-bind="$attrs"
-          @change="emit('update:modelValue', !props.modelValue)"
+          @change="value = !value"
         />
         <div class="slider"></div>
       </label>

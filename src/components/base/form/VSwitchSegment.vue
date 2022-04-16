@@ -3,6 +3,8 @@ let instances = 0
 </script>
 
 <script setup lang="ts">
+import { ref, watch } from 'vue'
+
 export type VSwitchSegmentColor = 'primary' | 'info' | 'success' | 'warning' | 'danger'
 export interface VSwitchSegmentEmits {
   (e: 'update:modelValue', value: boolean): void
@@ -21,10 +23,19 @@ const props = withDefaults(defineProps<VSwitchSegmentProps>(), {
   labelFalse: undefined,
   color: undefined,
 })
-const blockSwitchId = `segment-switch-${++instances}`
+const blockSwitchId = `segment-switch-` + ++instances
+
+const value = ref(props.modelValue)
+
+watch(value, () => {
+  emit('update:modelValue', value.value)
+})
+watch(props.modelValue, () => {
+  value.value = props.modelValue
+})
 </script>
 
-<template inherit-attrs="false">
+<template>
   <div class="switch-segment">
     <label v-if="props.labelFalse" class="is-label" :for="blockSwitchId">
       {{ props.labelFalse }}
@@ -36,11 +47,11 @@ const blockSwitchId = `segment-switch-${++instances}`
     >
       <input
         :id="blockSwitchId"
-        :checked="props.modelValue"
+        :checked="value"
         v-bind="$attrs"
         type="checkbox"
         class="is-switch"
-        @change="emit('update:modelValue', !props.modelValue)"
+        @change="value = !value"
       />
       <i aria-hidden="true"></i>
     </label>
@@ -365,7 +376,7 @@ const blockSwitchId = `segment-switch-${++instances}`
       background: var(--light-grey);
       position: absolute;
       left: -8px;
-      top: (7px - 24px) / 2;
+      top: calc((7px - 24px) / 2);
       display: block;
       width: 24px;
       height: 24px;
