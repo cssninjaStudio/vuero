@@ -29,6 +29,12 @@ module.exports = {
     'function-name-case': null,
     'scss/dollar-variable-pattern': null,
     'no-duplicate-selectors': null, // TODO
+    'function-no-unknown': [
+      true,
+      {
+        ignoreFunctions: ["findColorInvert", "nth"]
+      },
+    ],
 
     /** Vuejs **/
     'value-keyword-case': null,

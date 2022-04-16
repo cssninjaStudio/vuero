@@ -399,7 +399,7 @@ const resetAngle = () => {
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .gallery-thumbnail {
   display: inline;
   margin: 5px;

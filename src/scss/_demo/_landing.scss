@@ -737,8 +737,8 @@
         top: 62%;
         left: $toggleWidth - $toggleBtnRadius - $borderWidth * 2 - 20px;
         z-index: 10;
-        width: $toggleBtnRadius / 5;
-        height: $toggleBtnRadius / 5;
+        width: $toggleBtnRadius * 0.2;
+        height: $toggleBtnRadius * 0.2;
         opacity: 0;
         background-color: $cloud-bgColor;
         border-radius: var(--radius-rounded);
