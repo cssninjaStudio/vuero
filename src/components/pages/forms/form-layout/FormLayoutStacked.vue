@@ -183,40 +183,50 @@ const options = ref(['All day'])
                 <VField>
                   <VControl>
                     <div class="participants">
-                      <Tippy class="has-help-cursor" interactive placement="top-start">
-                        <VAvatar picture="/images/avatars/svg/vuero-1.svg" />
-                        <template #content>
-                          <UserPopoverContent :user="popovers.user8" />
-                        </template>
-                      </Tippy>
+                      <div>
+                        <Tippy class="has-help-cursor" interactive placement="top-start">
+                          <VAvatar picture="/images/avatars/svg/vuero-1.svg" />
+                          <template #content>
+                            <UserPopoverContent :user="popovers.user8" />
+                          </template>
+                        </Tippy>
+                      </div>
 
-                      <Tippy class="has-help-cursor" interactive placement="top-start">
-                        <VAvatar color="warning" initials="BT" />
-                        <template #content>
-                          <UserPopoverContent :user="popovers.user122" />
-                        </template>
-                      </Tippy>
+                      <div>
+                        <Tippy class="has-help-cursor" interactive placement="top-start">
+                          <VAvatar color="warning" initials="BT" />
+                          <template #content>
+                            <UserPopoverContent :user="popovers.user122" />
+                          </template>
+                        </Tippy>
+                      </div>
 
-                      <Tippy class="has-help-cursor" interactive placement="top-start">
-                        <VAvatar picture="/demo/avatars/18.jpg" />
-                        <template #content>
-                          <UserPopoverContent :user="popovers.user18" />
-                        </template>
-                      </Tippy>
+                      <div>
+                        <Tippy class="has-help-cursor" interactive placement="top-start">
+                          <VAvatar picture="/demo/avatars/18.jpg" />
+                          <template #content>
+                            <UserPopoverContent :user="popovers.user18" />
+                          </template>
+                        </Tippy>
+                      </div>
 
-                      <Tippy class="has-help-cursor" interactive placement="top-start">
-                        <VAvatar color="info" initials="JD" />
-                        <template #content>
-                          <UserPopoverContent :user="popovers.user123" />
-                        </template>
-                      </Tippy>
+                      <div>
+                        <Tippy class="has-help-cursor" interactive placement="top-start">
+                          <VAvatar color="info" initials="JD" />
+                          <template #content>
+                            <UserPopoverContent :user="popovers.user123" />
+                          </template>
+                        </Tippy>
+                      </div>
 
-                      <Tippy class="has-help-cursor" interactive placement="top-start">
-                        <VAvatar picture="/demo/avatars/7.jpg" />
-                        <template #content>
-                          <UserPopoverContent :user="popovers.user7" />
-                        </template>
-                      </Tippy>
+                      <div>
+                        <Tippy class="has-help-cursor" interactive placement="top-start">
+                          <VAvatar picture="/demo/avatars/7.jpg" />
+                          <template #content>
+                            <UserPopoverContent :user="popovers.user7" />
+                          </template>
+                        </Tippy>
+                      </div>
 
                       <button class="add-participant">
                         <i

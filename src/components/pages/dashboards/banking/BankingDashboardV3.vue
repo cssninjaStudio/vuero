@@ -121,61 +121,72 @@ import { popovers } from '/@src/data/users/userPopovers'
           </div>
 
           <div class="people">
-            <Tippy
-              class="has-help-cursor"
-              interactive
-              :offset="[0, 40]"
-              placement="top-end"
-            >
-              <VAvatar picture="/demo/avatars/21.jpg" />
-              <template #content>
-                <UserPopoverContent :user="popovers.user21" />
-              </template>
-            </Tippy>
-            <Tippy
-              class="has-help-cursor"
-              interactive
-              :offset="[0, 40]"
-              placement="top-end"
-            >
-              <VAvatar initials="SC" color="h-purple" />
-              <template #content>
-                <UserPopoverContent :user="popovers.user120" />
-              </template>
-            </Tippy>
-            <Tippy
-              class="has-help-cursor"
-              interactive
-              :offset="[0, 40]"
-              placement="top-end"
-            >
-              <VAvatar picture="/demo/avatars/7.jpg" />
-              <template #content>
-                <UserPopoverContent :user="popovers.user7" />
-              </template>
-            </Tippy>
-            <Tippy
-              class="has-help-cursor"
-              interactive
-              :offset="[0, 40]"
-              placement="top-end"
-            >
-              <VAvatar initials="AT" color="success" />
-              <template #content>
-                <UserPopoverContent :user="popovers.user124" />
-              </template>
-            </Tippy>
-            <Tippy
-              class="has-help-cursor"
-              interactive
-              :offset="[0, 40]"
-              placement="top-end"
-            >
-              <VAvatar picture="/demo/avatars/31.jpg" />
-              <template #content>
-                <UserPopoverContent :user="popovers.user31" />
-              </template>
-            </Tippy>
+            <div>
+              <Tippy
+                class="has-help-cursor"
+                interactive
+                :offset="[0, 40]"
+                placement="top-end"
+              >
+                <VAvatar picture="/demo/avatars/21.jpg" />
+                <template #content>
+                  <UserPopoverContent :user="popovers.user21" />
+                </template>
+              </Tippy>
+            </div>
+            <div>
+              <Tippy
+                class="has-help-cursor"
+                interactive
+                :offset="[0, 40]"
+                placement="top-end"
+              >
+                <VAvatar initials="SC" color="h-purple" />
+                <template #content>
+                  <UserPopoverContent :user="popovers.user120" />
+                </template>
+              </Tippy>
+            </div>
+            <div>
+              <Tippy
+                class="has-help-cursor"
+                interactive
+                :offset="[0, 40]"
+                placement="top-end"
+              >
+                <VAvatar picture="/demo/avatars/7.jpg" />
+                <template #content>
+                  <UserPopoverContent :user="popovers.user7" />
+                </template>
+              </Tippy>
+            </div>
+            <div>
+              <Tippy
+                class="has-help-cursor"
+                interactive
+                :offset="[0, 40]"
+                placement="top-end"
+              >
+                <VAvatar initials="AT" color="success" />
+                <template #content>
+                  <UserPopoverContent :user="popovers.user124" />
+                </template>
+              </Tippy>
+            </div>
+
+            <div>
+              <Tippy
+                class="has-help-cursor"
+                interactive
+                :offset="[0, 40]"
+                placement="top-end"
+              >
+                <VAvatar picture="/demo/avatars/31.jpg" />
+                <template #content>
+                  <UserPopoverContent :user="popovers.user31" />
+                </template>
+              </Tippy>
+            </div>
             <VAvatar initials="50K" color="h-yellow" />
           </div>
         </div>

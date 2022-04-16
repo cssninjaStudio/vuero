@@ -52,26 +52,32 @@ const accept = async () => {
 
             <div class="people-wrap">
               <div class="people">
-                <Tippy class="has-help-cursor" interactive placement="bottom">
-                  <VAvatar size="small" picture="/demo/avatars/21.jpg" />
-                  <template #content>
-                    <UserPopoverContent :user="popovers.user21" />
-                  </template>
-                </Tippy>
+                <div>
+                  <Tippy class="has-help-cursor" interactive placement="bottom">
+                    <VAvatar size="small" picture="/demo/avatars/21.jpg" />
+                    <template #content>
+                      <UserPopoverContent :user="popovers.user21" />
+                    </template>
+                  </Tippy>
+                </div>
 
-                <Tippy class="has-help-cursor" interactive placement="bottom">
-                  <VAvatar size="small" color="h-purple" initials="SC" />
-                  <template #content>
-                    <UserPopoverContent :user="popovers.user120" />
-                  </template>
-                </Tippy>
+                <div>
+                  <Tippy class="has-help-cursor" interactive placement="bottom">
+                    <VAvatar size="small" color="h-purple" initials="SC" />
+                    <template #content>
+                      <UserPopoverContent :user="popovers.user120" />
+                    </template>
+                  </Tippy>
+                </div>
 
-                <Tippy class="has-help-cursor" interactive placement="bottom">
-                  <VAvatar size="small" picture="/demo/avatars/39.jpg" />
-                  <template #content>
-                    <UserPopoverContent :user="popovers.user39" />
-                  </template>
-                </Tippy>
+                <div>
+                  <Tippy class="has-help-cursor" interactive placement="bottom">
+                    <VAvatar size="small" picture="/demo/avatars/39.jpg" />
+                    <template #content>
+                      <UserPopoverContent :user="popovers.user39" />
+                    </template>
+                  </Tippy>
+                </div>
               </div>
               <div class="people-text">
                 <p>And 5 others are already members of this project</p>

@@ -159,12 +159,14 @@ const democheck = ref(['value_2'])
           <div class="active-team">
             <ul class="user-list">
               <li>
-                <Tippy class="has-help-cursor" interactive :offset="[0, 10]">
-                  <VAvatar picture="/demo/avatars/18.jpg" />
-                  <template #content>
-                    <UserPopoverContent :user="popovers.user18" />
-                  </template>
-                </Tippy>
+                <div>
+                  <Tippy class="has-help-cursor" interactive :offset="[0, 10]">
+                    <VAvatar picture="/demo/avatars/18.jpg" />
+                    <template #content>
+                      <UserPopoverContent :user="popovers.user18" />
+                    </template>
+                  </Tippy>
+                </div>
                 <div class="user-list-info">
                   <div class="name dark-inverted">Esteban C.</div>
                   <div class="position">UI/UX Designer</div>
@@ -175,12 +177,14 @@ const democheck = ref(['value_2'])
                 </div>
               </li>
               <li>
-                <Tippy class="has-help-cursor" interactive :offset="[0, 10]">
-                  <VAvatar initials="SC" color="h-orange" />
-                  <template #content>
-                    <UserPopoverContent :user="popovers.user120" />
-                  </template>
-                </Tippy>
+                <div>
+                  <Tippy class="has-help-cursor" interactive :offset="[0, 10]">
+                    <VAvatar initials="SC" color="h-orange" />
+                    <template #content>
+                      <UserPopoverContent :user="popovers.user120" />
+                    </template>
+                  </Tippy>
+                </div>
                 <div class="user-list-info">
                   <div class="name dark-inverted">Sara Connor</div>
                   <div class="position">UI/UX Designer</div>
@@ -191,12 +195,14 @@ const democheck = ref(['value_2'])
                 </div>
               </li>
               <li>
-                <Tippy class="has-help-cursor" interactive :offset="[0, 10]">
-                  <VAvatar picture="/demo/avatars/13.jpg" />
-                  <template #content>
-                    <UserPopoverContent :user="popovers.user13" />
-                  </template>
-                </Tippy>
+                <div>
+                  <Tippy class="has-help-cursor" interactive :offset="[0, 10]">
+                    <VAvatar picture="/demo/avatars/13.jpg" />
+                    <template #content>
+                      <UserPopoverContent :user="popovers.user13" />
+                    </template>
+                  </Tippy>
+                </div>
                 <div class="user-list-info">
                   <div class="name dark-inverted">Tara S.</div>
                   <div class="position">UI/UX Designer</div>
@@ -207,12 +213,14 @@ const democheck = ref(['value_2'])
                 </div>
               </li>
               <li>
-                <Tippy class="has-help-cursor" interactive :offset="[0, 10]">
-                  <VAvatar initials="NL" color="success" />
-                  <template #content>
-                    <UserPopoverContent :user="popovers.user121" />
-                  </template>
-                </Tippy>
+                <div>
+                  <Tippy class="has-help-cursor" interactive :offset="[0, 10]">
+                    <VAvatar initials="NL" color="success" />
+                    <template #content>
+                      <UserPopoverContent :user="popovers.user121" />
+                    </template>
+                  </Tippy>
+                </div>
                 <div class="user-list-info">
                   <div class="name dark-inverted">Naomi Liversky</div>
                   <div class="position">Frontend developer</div>

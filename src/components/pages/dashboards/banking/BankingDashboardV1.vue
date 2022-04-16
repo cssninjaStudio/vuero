@@ -245,50 +245,61 @@ import {
 
               <div class="people-wrap">
                 <div class="people">
-                  <Tippy
-                    class="has-help-cursor"
-                    interactive
-                    :offset="[0, 10]"
-                    placement="bottom-end"
-                  >
-                    <VAvatar color="warning" initials="BT" size="small" />
-                    <template #content>
-                      <UserPopoverContent :user="popovers.user122" />
-                    </template>
-                  </Tippy>
-                  <Tippy
-                    class="has-help-cursor"
-                    interactive
-                    :offset="[0, 10]"
-                    placement="bottom-end"
-                  >
-                    <VAvatar picture="/demo/avatars/18.jpg" size="small" />
-                    <template #content>
-                      <UserPopoverContent :user="popovers.user18" />
-                    </template>
-                  </Tippy>
-                  <Tippy
-                    class="has-help-cursor"
-                    interactive
-                    :offset="[0, 10]"
-                    placement="bottom-end"
-                  >
-                    <VAvatar color="info" initials="JD" size="small" />
-                    <template #content>
-                      <UserPopoverContent :user="popovers.user123" />
-                    </template>
-                  </Tippy>
-                  <Tippy
-                    class="has-help-cursor"
-                    interactive
-                    :offset="[0, 10]"
-                    placement="bottom-end"
-                  >
-                    <VAvatar picture="/demo/avatars/7.jpg" size="small" />
-                    <template #content>
-                      <UserPopoverContent :user="popovers.user7" />
-                    </template>
-                  </Tippy>
+                  <div>
+                    <Tippy
+                      class="has-help-cursor"
+                      interactive
+                      :offset="[0, 10]"
+                      placement="bottom-end"
+                    >
+                      <VAvatar color="warning" initials="BT" size="small" />
+                      <template #content>
+                        <UserPopoverContent :user="popovers.user122" />
+                      </template>
+                    </Tippy>
+                  </div>
+
+                  <div>
+                    <Tippy
+                      class="has-help-cursor"
+                      interactive
+                      :offset="[0, 10]"
+                      placement="bottom-end"
+                    >
+                      <VAvatar picture="/demo/avatars/18.jpg" size="small" />
+                      <template #content>
+                        <UserPopoverContent :user="popovers.user18" />
+                      </template>
+                    </Tippy>
+                  </div>
+
+                  <div>
+                    <Tippy
+                      class="has-help-cursor"
+                      interactive
+                      :offset="[0, 10]"
+                      placement="bottom-end"
+                    >
+                      <VAvatar color="info" initials="JD" size="small" />
+                      <template #content>
+                        <UserPopoverContent :user="popovers.user123" />
+                      </template>
+                    </Tippy>
+                  </div>
+
+                  <div>
+                    <Tippy
+                      class="has-help-cursor"
+                      interactive
+                      :offset="[0, 10]"
+                      placement="bottom-end"
+                    >
+                      <VAvatar picture="/demo/avatars/7.jpg" size="small" />
+                      <template #content>
+                        <UserPopoverContent :user="popovers.user7" />
+                      </template>
+                    </Tippy>
+                  </div>
                 </div>
                 <div class="actions">
                   <span>See all Contacts</span>

@@ -53,62 +53,68 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
           </p>
         </div>
         <div class="meta-achievements">
-          <Tippy>
-            <div class="meta-achievement is-danger">
-              <i aria-hidden="true" class="fas fa-fire"></i>
-            </div>
-            <template #content>
-              <div class="v-popover-content is-text">
-                <div class="popover-head">
-                  <VIconBox size="small" color="danger">
-                    <i aria-hidden="true" class="fas fa-fire"></i>
-                  </VIconBox>
-                  <h4 class="dark-inverted">On Fire</h4>
-                </div>
-                <div class="popover-body">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
+          <div>
+            <Tippy>
+              <div class="meta-achievement is-danger">
+                <i aria-hidden="true" class="fas fa-fire"></i>
               </div>
-            </template>
-          </Tippy>
+              <template #content>
+                <div class="v-popover-content is-text">
+                  <div class="popover-head">
+                    <VIconBox size="small" color="danger">
+                      <i aria-hidden="true" class="fas fa-fire"></i>
+                    </VIconBox>
+                    <h4 class="dark-inverted">On Fire</h4>
+                  </div>
+                  <div class="popover-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                </div>
+              </template>
+            </Tippy>
+          </div>
 
-          <Tippy>
-            <div class="meta-achievement is-primary">
-              <i aria-hidden="true" class="fas fa-medal"></i>
-            </div>
-            <template #content>
-              <div class="v-popover-content is-text">
-                <div class="popover-head">
-                  <VIconBox size="small" color="primary">
-                    <i aria-hidden="true" class="fas fa-medal"></i>
-                  </VIconBox>
-                  <h4 class="dark-inverted">Post Veteran</h4>
-                </div>
-                <div class="popover-body">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
+          <div>
+            <Tippy>
+              <div class="meta-achievement is-primary">
+                <i aria-hidden="true" class="fas fa-medal"></i>
               </div>
-            </template>
-          </Tippy>
+              <template #content>
+                <div class="v-popover-content is-text">
+                  <div class="popover-head">
+                    <VIconBox size="small" color="primary">
+                      <i aria-hidden="true" class="fas fa-medal"></i>
+                    </VIconBox>
+                    <h4 class="dark-inverted">Post Veteran</h4>
+                  </div>
+                  <div class="popover-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                </div>
+              </template>
+            </Tippy>
+          </div>
 
-          <Tippy>
-            <div class="meta-achievement is-yellow">
-              <i aria-hidden="true" class="fas fa-trophy"></i>
-            </div>
-            <template #content>
-              <div class="v-popover-content is-text">
-                <div class="popover-head">
-                  <VIconBox size="small" color="yellow">
-                    <i aria-hidden="true" class="fas fa-medal"></i>
-                  </VIconBox>
-                  <h4 class="dark-inverted">Social Champion</h4>
-                </div>
-                <div class="popover-body">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
+          <div>
+            <Tippy>
+              <div class="meta-achievement is-yellow">
+                <i aria-hidden="true" class="fas fa-trophy"></i>
               </div>
-            </template>
-          </Tippy>
+              <template #content>
+                <div class="v-popover-content is-text">
+                  <div class="popover-head">
+                    <VIconBox size="small" color="yellow">
+                      <i aria-hidden="true" class="fas fa-medal"></i>
+                    </VIconBox>
+                    <h4 class="dark-inverted">Social Champion</h4>
+                  </div>
+                  <div class="popover-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                </div>
+              </template>
+            </Tippy>
+          </div>
         </div>
       </div>
 

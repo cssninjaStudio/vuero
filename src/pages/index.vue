@@ -88,100 +88,110 @@ useHead({
         <div class="container">
           <!--Stacks-->
           <div class="stacks">
-            <Tippy class="has-help-cursor" interactive placement="top">
-              <div class="stack">
-                <img src="/images/icons/stacks/vuejs.svg" alt="" />
-              </div>
-              <template #content>
-                <StackPopoverContent
-                  :stack="{
-                    name: 'Vue 3',
-                    subtitle: 'Composition API',
-                    logo: '/images/icons/stacks/vuejs.svg',
-                    description:
-                      'The Progressive JavaScript Framework for building user interfaces.',
-                    homepage: 'https://v3.vuejs.org/',
-                    github: 'https://github.com/vuejs/vue-next',
-                  }"
-                />
-              </template>
-            </Tippy>
+            <div>
+              <Tippy class="has-help-cursor" interactive placement="top">
+                <div class="stack">
+                  <img src="/images/icons/stacks/vuejs.svg" alt="" />
+                </div>
+                <template #content>
+                  <StackPopoverContent
+                    :stack="{
+                      name: 'Vue 3',
+                      subtitle: 'Composition API',
+                      logo: '/images/icons/stacks/vuejs.svg',
+                      description:
+                        'The Progressive JavaScript Framework for building user interfaces.',
+                      homepage: 'https://v3.vuejs.org/',
+                      github: 'https://github.com/vuejs/vue-next',
+                    }"
+                  />
+                </template>
+              </Tippy>
+            </div>
 
-            <Tippy class="has-help-cursor" interactive placement="top">
-              <div class="stack">
-                <img src="/images/icons/stacks/vite.svg" alt="" />
-              </div>
-              <template #content>
-                <StackPopoverContent
-                  :stack="{
-                    name: 'Vite',
-                    subtitle: 'Next Generation Frontend Tooling',
-                    logo: '/images/icons/stacks/vite.svg',
-                    description:
-                      'Vite is a new breed of frontend build tool that significantly improves the frontend development experience.',
-                    homepage: 'https://vitejs.dev/',
-                    github: 'https://github.com/vitejs/vite',
-                  }"
-                />
-              </template>
-            </Tippy>
+            <div>
+              <Tippy class="has-help-cursor" interactive placement="top">
+                <div class="stack">
+                  <img src="/images/icons/stacks/vite.svg" alt="" />
+                </div>
+                <template #content>
+                  <StackPopoverContent
+                    :stack="{
+                      name: 'Vite',
+                      subtitle: 'Next Generation Frontend Tooling',
+                      logo: '/images/icons/stacks/vite.svg',
+                      description:
+                        'Vite is a new breed of frontend build tool that significantly improves the frontend development experience.',
+                      homepage: 'https://vitejs.dev/',
+                      github: 'https://github.com/vitejs/vite',
+                    }"
+                  />
+                </template>
+              </Tippy>
+            </div>
 
-            <Tippy class="has-help-cursor" interactive placement="top">
-              <div class="stack">
-                <img src="/images/icons/stacks/bulma.svg" alt="" />
-              </div>
-              <template #content>
-                <StackPopoverContent
-                  :stack="{
-                    name: 'Bulma',
-                    subtitle: 'The modern CSS framework',
-                    logo: '/images/icons/stacks/bulma.svg',
-                    description:
-                      'Bulma is a free, open source framework that provides ready-to-use frontend components.',
-                    homepage: 'https://bulma.io/',
-                    github: 'https://github.com/jgthms/bulma',
-                  }"
-                />
-              </template>
-            </Tippy>
+            <div>
+              <Tippy class="has-help-cursor" interactive placement="top">
+                <div class="stack">
+                  <img src="/images/icons/stacks/bulma.svg" alt="" />
+                </div>
+                <template #content>
+                  <StackPopoverContent
+                    :stack="{
+                      name: 'Bulma',
+                      subtitle: 'The modern CSS framework',
+                      logo: '/images/icons/stacks/bulma.svg',
+                      description:
+                        'Bulma is a free, open source framework that provides ready-to-use frontend components.',
+                      homepage: 'https://bulma.io/',
+                      github: 'https://github.com/jgthms/bulma',
+                    }"
+                  />
+                </template>
+              </Tippy>
+            </div>
 
-            <Tippy class="has-help-cursor" interactive placement="top">
-              <div class="stack">
-                <img src="/images/icons/stacks/sass.svg" alt="" />
-              </div>
-              <template #content>
-                <StackPopoverContent
-                  :stack="{
-                    name: 'Sass',
-                    subtitle: 'Makes CSS fun again',
-                    logo: '/images/icons/stacks/sass.svg',
-                    description:
-                      'Sass is an extension of CSS, adding nested rules, variables, mixins, selector inheritance, and more.',
-                    homepage: 'https://sass-lang.com/',
-                    github: 'https://github.com/sass/sass',
-                  }"
-                />
-              </template>
-            </Tippy>
+            <div>
+              <Tippy class="has-help-cursor" interactive placement="top">
+                <div class="stack">
+                  <img src="/images/icons/stacks/sass.svg" alt="" />
+                </div>
+                <template #content>
+                  <StackPopoverContent
+                    :stack="{
+                      name: 'Sass',
+                      subtitle: 'Makes CSS fun again',
+                      logo: '/images/icons/stacks/sass.svg',
+                      description:
+                        'Sass is an extension of CSS, adding nested rules, variables, mixins, selector inheritance, and more.',
+                      homepage: 'https://sass-lang.com/',
+                      github: 'https://github.com/sass/sass',
+                    }"
+                  />
+                </template>
+              </Tippy>
+            </div>
 
-            <Tippy class="has-help-cursor" interactive placement="top">
-              <div class="stack">
-                <img src="/images/icons/stacks/typescript.svg" alt="" />
-              </div>
-              <template #content>
-                <StackPopoverContent
-                  :stack="{
-                    name: 'Typescript',
-                    subtitle: 'Javascript enhanced',
-                    logo: '/images/icons/stacks/typescript.svg',
-                    description:
-                      'TypeScript adds optional types to JavaScript that support tools for large-scale JavaScript applications.',
-                    homepage: 'https://www.typescriptlang.org/',
-                    github: 'https://github.com/microsoft/TypeScript',
-                  }"
-                />
-              </template>
-            </Tippy>
+            <div>
+              <Tippy class="has-help-cursor" interactive placement="top">
+                <div class="stack">
+                  <img src="/images/icons/stacks/typescript.svg" alt="" />
+                </div>
+                <template #content>
+                  <StackPopoverContent
+                    :stack="{
+                      name: 'Typescript',
+                      subtitle: 'Javascript enhanced',
+                      logo: '/images/icons/stacks/typescript.svg',
+                      description:
+                        'TypeScript adds optional types to JavaScript that support tools for large-scale JavaScript applications.',
+                      homepage: 'https://www.typescriptlang.org/',
+                      github: 'https://github.com/microsoft/TypeScript',
+                    }"
+                  />
+                </template>
+              </Tippy>
+            </div>
           </div>
 
           <!--Title-->
