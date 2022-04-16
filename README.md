@@ -1,5 +1,7 @@
 # Vuero Vue3 - Multipurpose Admin and Webapp Template
 
+[![cssninja-discord](https://img.shields.io/discord/785473098069311510?label=join%20us%20on%20discord&color=6944EC)](https://discord.cssninja.io/)
+
 ## ▶️ Getting started
 
 First of all, Thank you so much for purchasing this template and for being our loyal customer. You are awesome! You are entitled to get free lifetime updates to this product and support from the cssninjaStudio team directly. **Vuero** is a product built by [cssninjaStudio](https://cssninja.io/) and [Digisquad](https://digisquad.io/).
