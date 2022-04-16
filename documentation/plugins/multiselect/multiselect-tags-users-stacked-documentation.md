@@ -76,9 +76,10 @@ const tagsStackedUsersOptions = [
 </script>
 
 <template>
-  <VField class="is-image-tags">
+  <VField v-slot="{ id }" class="is-image-tags">
     <VControl>
       <Multiselect
+        :id="id"
         v-model="tagsStackedUsersValue"
         mode="tags"
         placeholder="Select members"
@@ -90,7 +91,7 @@ const tagsStackedUsersOptions = [
       >
         <template #tag="{ option, remove, disabled }">
           <div class="multiselect-tag is-user">
-            <img :src="option.image" />
+            <img :src="option.image" alt="" />
             {{ option.name }}
             <i v-if="!disabled" @click.prevent @mousedown.prevent.stop="remove(option)" />
           </div>
@@ -107,9 +108,10 @@ const tagsStackedUsersOptions = [
 
 <div class="columns">
   <div class="column is-4">
-    <VField class="is-image-tags is-stacked">
+    <VField v-slot="{ id }" class="is-image-tags is-stacked">
       <VControl>
         <Multiselect
+          :id="id"
           v-model="frontmatter.tagsStackedUsersValue"
           mode="tags"
           placeholder="Select members"
@@ -121,7 +123,7 @@ const tagsStackedUsersOptions = [
         >
           <template v-slot:tag="{ option, remove, disabled }">
             <div class="multiselect-tag is-user">
-              <img :src="option.image" />
+              <img :src="option.image" alt="" />
               <i
                 v-if="!disabled"
                 @click.prevent
@@ -134,9 +136,10 @@ const tagsStackedUsersOptions = [
     </VField>
   </div>
   <div class="column is-4">
-    <VField class="is-image-tags is-stacked is-curved-select">
+    <VField v-slot="{ id }" class="is-image-tags is-stacked is-curved-select">
       <VControl>
         <Multiselect
+          :id="id"
           v-model="frontmatter.tagsStackedUsersValue"
           mode="tags"
           placeholder="Select members"
@@ -148,7 +151,7 @@ const tagsStackedUsersOptions = [
         >
           <template v-slot:tag="{ option, remove, disabled }">
             <div class="multiselect-tag is-user">
-              <img :src="option.image" />
+              <img :src="option.image" alt="" />
               <i
                 v-if="!disabled"
                 @click.prevent
@@ -161,9 +164,10 @@ const tagsStackedUsersOptions = [
     </VField>
   </div>
   <div class="column is-4">
-    <VField class="is-image-tags is-stacked is-rounded-select">
+    <VField v-slot="{ id }" class="is-image-tags is-stacked is-rounded-select">
       <VControl>
         <Multiselect
+          :id="id"
           v-model="frontmatter.tagsStackedUsersValue"
           mode="tags"
           placeholder="Select members"
@@ -175,7 +179,7 @@ const tagsStackedUsersOptions = [
         >
           <template v-slot:tag="{ option, remove, disabled }">
             <div class="multiselect-tag is-user">
-              <img :src="option.image" />
+              <img :src="option.image" alt="" />
               <i
                 v-if="!disabled"
                 @click.prevent

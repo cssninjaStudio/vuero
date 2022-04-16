@@ -1,6 +1,9 @@
 ---
 state:
-  value: 78
+  value1: 78
+  value2: 24
+  value3: 52
+  value4: 61
 ---
 
 ### Slider colors
@@ -19,9 +22,9 @@ const value = ref(0)
 </script>
 
 <template>
-  <VField class="has-rounded-tooltip is-slider-info">
+  <VField v-slot="{ id }" class="has-rounded-tooltip is-slider-info">
     <VControl>
-      <Slider v-model="value" />
+      <Slider :id="id" v-model="value" />
     </VControl>
   </VField>
 </template>
@@ -33,30 +36,30 @@ const value = ref(0)
 
 <div class="columns is-multiline">
   <div class="column is-6">
-    <VField class="pt-6 px-4 has-rounded-tooltip is-slider-info">
+    <VField v-slot="{ id }" class="pt-6 px-4 has-rounded-tooltip is-slider-info">
       <VControl>
-        <Slider v-model="frontmatter.state.value" />
+        <Slider :id="id" v-model="frontmatter.state.value1" />
       </VControl>
     </VField>
   </div>
   <div class="column is-6">
-    <VField class="pt-6 px-4 has-rounded-tooltip is-slider-success">
+    <VField v-slot="{ id }" class="pt-6 px-4 has-rounded-tooltip is-slider-success">
       <VControl>
-        <Slider v-model="frontmatter.state.value" />
+        <Slider :id="id" v-model="frontmatter.state.value2" />
       </VControl>
     </VField>
   </div>
   <div class="column is-6">
-    <VField class="pt-6 px-4 has-rounded-tooltip is-slider-warning">
+    <VField v-slot="{ id }" class="pt-6 px-4 has-rounded-tooltip is-slider-warning">
       <VControl>
-        <Slider v-model="frontmatter.state.value" />
+        <Slider :id="id" v-model="frontmatter.state.value3" />
       </VControl>
     </VField>
   </div>
   <div class="column is-6">
-    <VField class="pt-6 px-4 has-rounded-tooltip is-slider-danger">
+    <VField v-slot="{ id }" class="pt-6 px-4 has-rounded-tooltip is-slider-danger">
       <VControl>
-        <Slider v-model="frontmatter.state.value" />
+        <Slider :id="id" v-model="frontmatter.state.value4" />
       </VControl>
     </VField>
   </div>

@@ -1,7 +1,13 @@
-### Loading select
+---
+state:
+  input: 'Batman'
+---
 
-vuero selects can be shown in a loading state. To apply that style,
-simply add the is-loading class to the select wrapping element.
+### Loading and Disabled select
+
+vuero `VSelect` can be shown in a loading state. To apply that style,
+simply add the `loading` property to the `VControl` wrapping element.
+The `disabled` property should be set on `VSelect`, like the default behavior.
 Please refer to the code example for more details about usage.
 
 <!--code-->
@@ -15,18 +21,16 @@ const input = ref('')
 
 <template>
   <VField>
-    <VControl loading>
-      <div class="select">
-        <select v-model="input">
-          <option value="">Select a Hero</option>
-          <option value="Superman">Superman</option>
-          <option value="Batman">Batman</option>
-          <option value="Spiderman">Spiderman</option>
-          <option value="Deadpool">Deadpool</option>
-          <option value="Spawn">Spawn</option>
-          <option value="Galactus">Galactus</option>
-        </select>
-      </div>
+    <VControl loading class="has-icons-left" icon="lnil lnil-basketball">
+      <VSelect v-model="input" disabled>
+        <VOption value="">Select a Hero</VOption>
+        <VOption value="Superman">Superman</VOption>
+        <VOption value="Batman">Batman</VOption>
+        <VOption value="Spiderman">Spiderman</VOption>
+        <VOption value="Deadpool">Deadpool</VOption>
+        <VOption value="Spawn">Spawn</VOption>
+        <VOption value="Galactus">Galactus</VOption>
+      </VSelect>
     </VControl>
   </VField>
 </template>
@@ -37,19 +41,17 @@ const input = ref('')
 <!--example-->
 
 <VField>
-    <VControl loading>
-        <div class="select">
-            <select>
-                <option>Select a Hero</option>
-                <option>Superman</option>
-                <option>Batman</option>
-                <option>Spiderman</option>
-                <option>Deadpool</option>
-                <option>Spawn</option>
-                <option>Galactus</option>
-            </select>
-        </div>
-    </VControl>
+  <VControl loading class="has-icons-left" icon="lnil lnil-basketball">
+    <VSelect v-model="frontmatter.state.input" disabled>
+      <VOption value="">Select a Hero</VOption>
+      <VOption value="Superman">Superman</VOption>
+      <VOption value="Batman">Batman</VOption>
+      <VOption value="Spiderman">Spiderman</VOption>
+      <VOption value="Deadpool">Deadpool</VOption>
+      <VOption value="Spawn">Spawn</VOption>
+      <VOption value="Galactus">Galactus</VOption>
+    </VSelect>
+  </VControl>
 </VField>
 
 <!--/example-->

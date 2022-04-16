@@ -11,22 +11,22 @@ Please refer to the markup for more details about usage.
 ```vue
 <template>
   <VField grouped>
-    <VControl>
+    <VControl subcontrol>
       <VSwitchBlock />
     </VControl>
-    <VControl>
+    <VControl subcontrol>
       <VSwitchBlock color="primary" checked />
     </VControl>
-    <VControl>
+    <VControl subcontrol>
       <VSwitchBlock color="success" checked />
     </VControl>
-    <VControl>
+    <VControl subcontrol>
       <VSwitchBlock color="info" checked />
     </VControl>
-    <VControl>
+    <VControl subcontrol>
       <VSwitchBlock color="warning" checked />
     </VControl>
-    <VControl>
+    <VControl subcontrol>
       <VSwitchBlock color="danger" checked />
     </VControl>
   </VField>
@@ -38,22 +38,22 @@ Please refer to the markup for more details about usage.
 <!--example-->
 
 <VField grouped>
-  <VControl>
+  <VControl subcontrol>
     <VSwitchBlock />
   </VControl>
-  <VControl>
+  <VControl subcontrol>
     <VSwitchBlock color="primary" checked />
   </VControl>
-  <VControl>
+  <VControl subcontrol>
     <VSwitchBlock color="success" checked />
   </VControl>
-  <VControl>
+  <VControl subcontrol>
     <VSwitchBlock color="info" checked />
   </VControl>
-  <VControl>
+  <VControl subcontrol>
     <VSwitchBlock color="warning" checked />
   </VControl>
-  <VControl>
+  <VControl subcontrol>
     <VSwitchBlock color="danger" checked />
   </VControl>
 </VField>

@@ -162,24 +162,24 @@ onUnmounted(() => {
                       <div class="column is-6">
                         <VField>
                           <VControl>
-                            <input type="text" class="input" autocomplete="given-name" />
-                            <div class="auth-label">First Name</div>
+                            <VInput type="text" autocomplete="given-name" />
+                            <VLabel raw class="auth-label">First Name</VLabel>
                           </VControl>
                         </VField>
                       </div>
                       <div class="column is-6">
                         <VField>
                           <VControl>
-                            <input type="text" class="input" autocomplete="family-name" />
-                            <div class="auth-label">Last Name</div>
+                            <VInput type="text" autocomplete="family-name" />
+                            <VLabel raw class="auth-label">Last Name</VLabel>
                           </VControl>
                         </VField>
                       </div>
                       <div class="column is-12">
                         <VField>
                           <VControl>
-                            <input type="text" class="input" autocomplete="email" />
-                            <div class="auth-label">Email Address</div>
+                            <VInput type="text" autocomplete="email" />
+                            <VLabel raw class="auth-label">Email Address</VLabel>
                           </VControl>
                         </VField>
                       </div>
@@ -306,41 +306,31 @@ onUnmounted(() => {
                     <div class="column is-12">
                       <VField>
                         <VControl>
-                          <input type="text" class="input" autocomplete="username" />
-                          <div class="auth-label">Username</div>
+                          <VInput type="text" autocomplete="username" />
+                          <VLabel raw class="auth-label">Username</VLabel>
                         </VControl>
                       </VField>
                     </div>
                     <div class="column is-12">
                       <VField>
                         <VControl>
-                          <input
-                            type="password"
-                            class="input"
-                            autocomplete="new-password"
-                          />
-                          <div class="auth-label">Password</div>
+                          <VInput type="password" autocomplete="new-password" />
+                          <VLabel raw class="auth-label">Password</VLabel>
                         </VControl>
                       </VField>
                     </div>
                     <div class="column is-12">
                       <VField>
                         <VControl>
-                          <input
-                            type="password"
-                            class="input"
-                            autocomplete="new-password"
-                          />
-                          <div class="auth-label">Confirm Password</div>
+                          <VInput type="password" autocomplete="new-password" />
+                          <VLabel raw class="auth-label">Confirm Password</VLabel>
                         </VControl>
                       </VField>
                     </div>
                     <div class="column is-12">
                       <VField>
                         <VControl class="has-switch">
-                          <label for="send-marketing">
-                            <span> Send me marketing and transaction emails </span>
-                          </label>
+                          <VLabel>Send me marketing and transaction emails</VLabel>
                           <VSwitchBlock color="success" checked />
                         </VControl>
                       </VField>

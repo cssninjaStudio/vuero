@@ -18,7 +18,7 @@ positioned inside the `VFlex` parent.
 
     <!-- use VFlexItem to have more control --->
     <VFlexItem>
-      <VAvatar initials="J.">
+      <VAvatar initials="J." />
     </VFlexItem>
   </VFlex>
 </template>

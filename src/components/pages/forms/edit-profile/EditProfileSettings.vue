@@ -70,9 +70,8 @@ const onSave = async () => {
           <div class="column is-12">
             <VField>
               <VControl icon="feather:unlock">
-                <input
+                <VInput
                   type="password"
-                  class="input"
                   placeholder="Old Password"
                   autocomplete="current-password"
                 />
@@ -83,9 +82,8 @@ const onSave = async () => {
           <div class="column is-12">
             <VField>
               <VControl icon="feather:lock">
-                <input
+                <VInput
                   type="password"
-                  class="input"
                   placeholder="New Password"
                   autocomplete="new-password"
                 />
@@ -96,9 +94,8 @@ const onSave = async () => {
           <div class="column is-12">
             <VField>
               <VControl icon="feather:lock">
-                <input
+                <VInput
                   type="password"
-                  class="input"
                   placeholder="Repeat New Password"
                   autocomplete="new-password"
                 />
@@ -132,9 +129,8 @@ const onSave = async () => {
           <div v-if="twoFactor" class="column is-12">
             <VField>
               <VControl icon="feather:smartphone">
-                <input
+                <VInput
                   type="text"
-                  class="input"
                   placeholder="Phone Number"
                   autocomplete="tel"
                   inputmode="tel"

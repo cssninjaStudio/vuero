@@ -160,12 +160,7 @@ const totalColumns = {
               <template v-if="column.key === 'quantity'">
                 <VControl>
                   <VField>
-                    <input
-                      v-model="row[column.key]"
-                      class="input"
-                      type="number"
-                      min="0"
-                    />
+                    <VInput v-model="row[column.key]" type="number" min="0" />
                   </VField>
                 </VControl>
               </template>

@@ -124,11 +124,7 @@ const onSave = async () => {
                     <template #default="{ inputValue, inputEvents }">
                       <VField addons class="has-addons-fullwidth">
                         <VControl>
-                          <input
-                            :value="inputValue.start"
-                            class="input"
-                            v-on="inputEvents.start"
-                          />
+                          <VInput :value="inputValue.start" v-on="inputEvents.start" />
                         </VControl>
                         <VControl nogrow>
                           <div class="button">
@@ -139,12 +135,8 @@ const onSave = async () => {
                             ></i>
                           </div>
                         </VControl>
-                        <VControl>
-                          <input
-                            :value="inputValue.end"
-                            class="input"
-                            v-on="inputEvents.end"
-                          />
+                        <VControl subcontrol>
+                          <VInput :value="inputValue.end" v-on="inputEvents.end" />
                         </VControl>
                       </VField>
                     </template>
@@ -153,9 +145,8 @@ const onSave = async () => {
                 <div class="column is-6">
                   <VField>
                     <VControl icon="feather:box">
-                      <input
+                      <VInput
                         type="text"
-                        class="input"
                         placeholder="Company Name"
                         autocomplete="organization"
                       />
@@ -165,9 +156,8 @@ const onSave = async () => {
                 <div class="column is-6">
                   <VField>
                     <VControl icon="feather:briefcase">
-                      <input
+                      <VInput
                         type="text"
-                        class="input"
                         placeholder="Job Title"
                         autocomplete="organization-title"
                       />
@@ -175,13 +165,9 @@ const onSave = async () => {
                   </VField>
                 </div>
                 <div class="column is-12">
-                  <VField>
-                    <VControl>
-                      <VButton color="primary" raised fullwidth>
-                        Add Work Experience
-                      </VButton>
-                    </VControl>
-                  </VField>
+                  <VButton type="submit" color="primary" raised fullwidth>
+                    Add Work Experience
+                  </VButton>
                 </div>
               </div>
             </div>

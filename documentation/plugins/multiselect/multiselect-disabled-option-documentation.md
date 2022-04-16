@@ -29,9 +29,10 @@ const disabledOptions = [
 </script>
 
 <template>
-  <VField>
+  <VField v-slot="{ id }">
     <VControl>
       <Multiselect
+        :id="id"
         v-model="disabledValue"
         mode="multiple"
         :options="disabledOptions"
@@ -48,9 +49,10 @@ const disabledOptions = [
 
 <div class="columns">
   <div class="column is-4">
-    <VField>
+    <VField v-slot="{ id }">
       <VControl>
         <Multiselect
+          :id="id"
           v-model="frontmatter.disabledValue"
           mode="multiple"
           :options="frontmatter.disabledOptions"
@@ -60,9 +62,10 @@ const disabledOptions = [
     </VField>
   </div>
   <div class="column is-4">
-    <VField class="is-curved-select">
+    <VField v-slot="{ id }" class="is-curved-select">
       <VControl>
         <Multiselect
+          :id="id"
           v-model="frontmatter.disabledValue"
           mode="multiple"
           :options="frontmatter.disabledOptions"
@@ -72,9 +75,10 @@ const disabledOptions = [
     </VField>
   </div>
   <div class="column is-4">
-    <VField class="is-rounded-select">
+    <VField v-slot="{ id }" class="is-rounded-select">
       <VControl>
         <Multiselect
+          :id="id"
           v-model="frontmatter.disabledValue"
           mode="multiple"
           :options="frontmatter.disabledOptions"

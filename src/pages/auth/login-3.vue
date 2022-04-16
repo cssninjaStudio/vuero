@@ -87,18 +87,12 @@ useHead({
             <div class="login-form">
               <VField>
                 <VControl icon="feather:user">
-                  <input
-                    class="input"
-                    type="text"
-                    placeholder="Username"
-                    autocomplete="username"
-                  />
+                  <VInput type="text" placeholder="Username" autocomplete="username" />
                 </VControl>
               </VField>
               <VField>
                 <VControl icon="feather:lock">
-                  <input
-                    class="input"
+                  <VInput
                     type="password"
                     placeholder="Password"
                     autocomplete="current-password"
@@ -107,20 +101,14 @@ useHead({
               </VField>
 
               <!-- Switch -->
-              <VControl class="setting-item">
-                <label for="remember-me" class="form-switch is-primary">
-                  <input id="remember-me" type="checkbox" class="is-switch" />
-                  <i aria-hidden="true"></i>
-                </label>
-                <div class="setting-meta">
-                  <label for="remember-me">
-                    <span>Remember Me</span>
-                  </label>
-                </div>
-              </VControl>
+              <VField>
+                <VControl class="setting-item">
+                  <VCheckbox label="Remember me" color="primary" paddingless />
+                </VControl>
+              </VField>
 
               <!-- Submit -->
-              <VControl class="login">
+              <div class="login">
                 <VButton
                   :loading="isLoading"
                   type="submit"
@@ -131,7 +119,7 @@ useHead({
                 >
                   Sign In
                 </VButton>
-              </VControl>
+              </div>
             </div>
           </form>
         </div>

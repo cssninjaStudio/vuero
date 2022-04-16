@@ -3,8 +3,9 @@ import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRouter } from 'vue-router'
 import { useHead } from '@vueuse/head'
-import { Field, useForm } from 'vee-validate'
-import * as yup from 'yup'
+import { toFormValidator } from '@vee-validate/zod'
+import { useForm } from 'vee-validate'
+import { z as zod } from 'zod'
 
 import { useDarkmode } from '/@src/stores/darkmode'
 import { useNotyf } from '/@src/composable/useNotyf'
@@ -18,25 +19,44 @@ const isLoading = ref(false)
 const { t } = useI18n()
 
 // Define a validation schema
-const schema = yup.object({
-  promotional: yup.mixed(),
-  name: yup.string().required(t('auth.errors.name.required')),
-  email: yup
-    .string()
-    .required(t('auth.errors.email.required'))
-    .email(t('auth.errors.email.format')),
-  password: yup
-    .string()
-    .required(t('auth.errors.password.required'))
-    .min(8, t('auth.errors.password.length')),
-  passwordCheck: yup
-    .string()
-    .required(t('auth.errors.passwordCheck.required'))
-    .oneOf([yup.ref('password')], t('auth.errors.passwordCheck.match')),
-})
+const validationSchema = toFormValidator(
+  zod
+    .object({
+      name: zod
+        .string({
+          required_error: t('auth.errors.name.required'),
+        })
+        .min(1, t('auth.errors.name.required')),
+      email: zod
+        .string({
+          required_error: t('auth.errors.email.required'),
+        })
+        .email(t('auth.errors.email.format')),
+      password: zod
+        .string({
+          required_error: t('auth.errors.password.required'),
+        })
+        .min(8, t('auth.errors.password.length')),
+      passwordCheck: zod.string({
+        required_error: t('auth.errors.passwordCheck.required'),
+      }),
+      promotional: zod.boolean(),
+    })
+    .refine((data) => data.password === data.passwordCheck, {
+      message: t('auth.errors.passwordCheck.match'),
+      path: ['passwordCheck'],
+    })
+)
 
 const { handleSubmit } = useForm({
-  validationSchema: schema,
+  validationSchema,
+  initialValues: {
+    name: '',
+    email: '',
+    password: '',
+    passwordCheck: '',
+    promotional: false,
+  },
 })
 
 const onSignup = handleSubmit(async (values) => {
@@ -101,117 +121,77 @@ useHead({
                   <form @submit="onSignup">
                     <div id="signin-form" class="login-form">
                       <!-- Input -->
-                      <Field v-slot="{ field, errorMessage }" name="name">
-                        <VField>
-                          <VControl
-                            icon="feather:user"
-                            :has-error="Boolean(errorMessage)"
-                          >
-                            <input
-                              v-bind="field"
-                              class="input"
-                              type="text"
-                              :placeholder="t('auth.placeholder.name')"
-                              autocomplete="name"
-                            />
-                            <p v-if="errorMessage" class="help is-danger">
-                              {{ errorMessage }}
-                            </p>
-                          </VControl>
-                        </VField>
-                      </Field>
+                      <VField id="name" v-slot="{ field }">
+                        <VControl icon="feather:user">
+                          <VInput
+                            type="text"
+                            :placeholder="t('auth.placeholder.name')"
+                            autocomplete="name"
+                          />
+                          <p v-if="field?.errorMessage" class="help is-danger">
+                            {{ field.errorMessage }}
+                          </p>
+                        </VControl>
+                      </VField>
 
                       <!-- Input -->
-                      <Field v-slot="{ field, errorMessage }" name="email">
-                        <VField>
-                          <VControl
-                            icon="feather:mail"
-                            :has-error="Boolean(errorMessage)"
-                          >
-                            <input
-                              v-bind="field"
-                              class="input"
-                              type="text"
-                              :placeholder="t('auth.placeholder.email')"
-                              autocomplete="email"
-                            />
-                            <p v-if="errorMessage" class="help is-danger">
-                              {{ errorMessage }}
-                            </p>
-                          </VControl>
-                        </VField>
-                      </Field>
+                      <VField id="email" v-slot="{ field }">
+                        <VControl icon="feather:mail">
+                          <VInput
+                            type="text"
+                            :placeholder="t('auth.placeholder.email')"
+                            autocomplete="email"
+                          />
+                          <p v-if="field?.errorMessage" class="help is-danger">
+                            {{ field.errorMessage }}
+                          </p>
+                        </VControl>
+                      </VField>
 
                       <!-- Input -->
-                      <Field v-slot="{ field, errorMessage }" name="password">
-                        <VField>
-                          <VControl
-                            icon="feather:lock"
-                            :has-error="Boolean(errorMessage)"
-                          >
-                            <input
-                              v-bind="field"
-                              class="input"
-                              type="password"
-                              :placeholder="t('auth.placeholder.password')"
-                              autocomplete="new-password"
-                            />
-                            <p v-if="errorMessage" class="help is-danger">
-                              {{ errorMessage }}
-                            </p>
-                          </VControl>
-                        </VField>
-                      </Field>
+                      <VField id="password" v-slot="{ field }">
+                        <VControl icon="feather:lock">
+                          <VInput
+                            type="password"
+                            :placeholder="t('auth.placeholder.password')"
+                            autocomplete="new-password"
+                          />
+                          <p v-if="field?.errorMessage" class="help is-danger">
+                            {{ field.errorMessage }}
+                          </p>
+                        </VControl>
+                      </VField>
 
                       <!-- Input -->
-                      <Field v-slot="{ field, errorMessage }" name="passwordCheck">
-                        <VField>
-                          <VControl
-                            icon="feather:lock"
-                            :has-error="Boolean(errorMessage)"
-                          >
-                            <input
-                              v-bind="field"
-                              class="input"
-                              type="password"
-                              :placeholder="t('auth.placeholder.passwordCheck')"
-                            />
-                            <p v-if="errorMessage" class="help is-danger">
-                              {{ errorMessage }}
-                            </p>
-                          </VControl>
-                        </VField>
-                      </Field>
+                      <VField id="passwordCheck" v-slot="{ field }">
+                        <VControl icon="feather:lock">
+                          <VInput
+                            type="password"
+                            :placeholder="t('auth.placeholder.passwordCheck')"
+                          />
+                          <p v-if="field?.errorMessage" class="help is-danger">
+                            {{ field.errorMessage }}
+                          </p>
+                        </VControl>
+                      </VField>
 
-                      <VField>
+                      <VField id="promitional">
                         <VControl class="setting-item">
-                          <label for="promotional" class="form-switch is-primary">
-                            <Field
-                              id="promotional"
-                              type="checkbox"
-                              name="promotional"
-                              value="yes"
-                            />
-
-                            <i aria-hidden="true"></i>
-                          </label>
-                          <div class="setting-meta">
-                            <label for="promotional">
-                              <span>{{ t('auth.label.promotional') }} </span>
-                            </label>
-                          </div>
+                          <VCheckbox
+                            color="primary"
+                            :label="t('auth.label.promotional')"
+                            paddingless
+                          />
                         </VControl>
                       </VField>
 
                       <!-- Submit -->
 
-                      <VField>
-                        <VControl class="login">
-                          <VButton type="submit" color="primary" bold fullwidth raised>
-                            {{ t('auth.action.signup') }}
-                          </VButton>
-                        </VControl>
-                      </VField>
+                      <div class="login">
+                        <VButton type="submit" color="primary" bold fullwidth raised>
+                          {{ t('auth.action.signup') }}
+                        </VButton>
+                      </div>
                     </div>
                   </form>
                 </div>

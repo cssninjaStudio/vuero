@@ -14,17 +14,17 @@ about usage.
 
 ```vue
 <script setup lang="ts">
-import { ref } from vue
+import { ref } from 'vue'
 
 const date = ref(null)
 </script>
 
 <template>
-  <VDatePicker v-model="frontmatter.state.date" color="green" trim-weeks>
+  <VDatePicker v-model="date" color="green" trim-weeks>
     <template #default="{ inputValue, inputEvents }">
       <VField>
-        <VControl>
-          <input class="input" :value="inputValue" v-on="inputEvents" />
+        <VControl icon="feather:calendar">
+          <VInput :value="inputValue" v-on="inputEvents" />
         </VControl>
       </VField>
     </template>
@@ -39,8 +39,8 @@ const date = ref(null)
 <VDatePicker v-model="frontmatter.state.date" color="green" trim-weeks>
   <template #default="{ inputValue, inputEvents }">
     <VField>
-      <VControl>
-        <input class="input" :value="inputValue" v-on="inputEvents" />
+      <VControl icon="feather:calendar">
+        <VInput :value="inputValue" v-on="inputEvents" />
       </VControl>
     </VField>
   </template>

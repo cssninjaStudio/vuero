@@ -9,10 +9,10 @@ const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
 const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('Inputs')
+viewWrapper.setPageTitle('VInput')
 
 useHead({
-  title: 'Inputs - Forms Elements - Vuero',
+  title: 'VInput - Forms Elements - Vuero',
 })
 </script>
 
@@ -36,7 +36,7 @@ useHead({
           label: 'Forms',
         },
         {
-          label: 'Inputs',
+          label: 'VInput',
           to: { name: 'elements-forms-inputs' },
         },
       ]"
@@ -74,12 +74,6 @@ useHead({
 
         <!--Disabled Input-->
         <InputDisabledDocumentation />
-
-        <!--Validation-->
-        <InputValidationDocumentation />
-
-        <!--Validation rounded-->
-        <InputValidationRoundedDocumentation />
       </div>
 
       <div v-if="toc.length" class="column is-3 toc-column">

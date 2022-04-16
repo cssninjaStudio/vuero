@@ -9,10 +9,10 @@ const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
 const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('Selects')
+viewWrapper.setPageTitle('VSelect')
 
 useHead({
-  title: 'Selects - Forms Elements - Vuero',
+  title: 'VSelect - Forms Elements - Vuero',
 })
 </script>
 
@@ -36,7 +36,7 @@ useHead({
           label: 'Forms',
         },
         {
-          label: 'Selects',
+          label: 'VSelect',
           to: { name: 'elements-forms-selects' },
         },
       ]"
@@ -65,6 +65,9 @@ useHead({
 
         <!--Loading-->
         <SelectLoadingDocumentation />
+
+        <!--Multiple-->
+        <SelectMultipleDocumentation />
       </div>
       <div v-if="toc.length" class="column is-3 toc-column">
         <DocumentationToc :toc="toc" />

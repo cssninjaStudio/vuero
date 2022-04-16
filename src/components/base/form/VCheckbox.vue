@@ -1,47 +1,50 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { ref, reactive, watch } from 'vue'
+import { useVFieldContext } from '/@src/composable/useVFieldContext'
 
 export type VCheckboxColor = 'primary' | 'info' | 'success' | 'warning' | 'danger'
 export interface VCheckboxEmits {
-  (e: 'update:modelValue', value: (string | number | boolean)[]): void
+  (e: 'update:modelValue', value: string | number | boolean): void
 }
 export interface VCheckboxProps {
-  value?: string | number
   label?: string
   color?: VCheckboxColor
-  modelValue?: (string | number | boolean)[]
+  trueValue?: string | number | boolean
+  falseValue?: string | number | boolean
+  modelValue?: string | number | boolean
   circle?: boolean
   solid?: boolean
   paddingless?: boolean
 }
 
-const emit = defineEmits<VCheckboxEmits>()
+const emits = defineEmits<VCheckboxEmits>()
 const props = withDefaults(defineProps<VCheckboxProps>(), {
-  value: undefined,
   label: undefined,
   color: undefined,
-  modelValue: () => [],
+  trueValue: true,
+  falseValue: false,
+  modelValue: false,
   circle: false,
   solid: false,
   paddingless: false,
 })
 
-const checked = computed(() => props.modelValue.includes(props.value))
-
-function change() {
-  const values = [...props.modelValue]
-
-  if (checked.value) {
-    values.splice(values.indexOf(props.value), 1)
-  } else {
-    values.push(props.value)
+const vFieldContext = reactive(useVFieldContext())
+const $value = ref((vFieldContext.field?.value ?? props.modelValue) as any)
+watch($value, () => {
+  emits('update:modelValue', $value.value)
+})
+watch(
+  () => props.modelValue,
+  () => {
+    $value.value = props.modelValue
   }
-  emit('update:modelValue', values)
-}
+)
 </script>
 
 <template>
-  <label
+  <VLabel
+    raw
     class="checkbox"
     :class="[
       props.solid ? 'is-solid' : 'is-outlined',
@@ -51,15 +54,15 @@ function change() {
     ]"
   >
     <input
+      :id="vFieldContext.id"
+      v-model="$value"
+      :true-value="props.trueValue"
+      :false-value="props.falseValue"
       type="checkbox"
-      :checked="checked"
-      :value="props.value"
-      v-bind="$attrs"
-      @change="change"
     />
     <span></span>
-    <slot>{{ props.label }}</slot>
-  </label>
+    <slot v-bind="vFieldContext">{{ props.label }}</slot>
+  </VLabel>
 </template>
 
 <style lang="scss">

@@ -100,35 +100,45 @@
 
         <VCollapseLinks>
           <template #header>
-            Inputs
+            Forms
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
           </template>
 
+          <RouterLink :to="{ name: 'elements-forms-field' }" class="is-submenu">
+            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+            VField
+          </RouterLink>
+          <RouterLink :to="{ name: 'elements-forms-control' }" class="is-submenu">
+            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+            VControl
+          </RouterLink>
           <RouterLink :to="{ name: 'elements-forms-inputs' }" class="is-submenu">
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-            Inputs
-          </RouterLink>
-          <RouterLink :to="{ name: 'elements-forms-addons' }" class="is-submenu">
-            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-            Input Addons
+            VInput
           </RouterLink>
           <RouterLink :to="{ name: 'elements-forms-textarea' }" class="is-submenu">
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-            Textarea
+            VTextarea
           </RouterLink>
           <RouterLink :to="{ name: 'elements-forms-selects' }" class="is-submenu">
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-            Selects
+            VSelect
           </RouterLink>
+          <RouterLink :to="{ name: 'elements-checkbox' }" class="is-submenu">
+            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+            VCheckbox
+          </RouterLink>
+          <RouterLink :to="{ name: 'elements-radio' }" class="is-submenu">
+            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+            VRadio
+          </RouterLink>
+          <!-- <RouterLink :to="{ name: 'elements-forms-addons' }" class="is-submenu">
+            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+            Input Addons
+          </RouterLink> -->
           <RouterLink :to="{ name: 'elements-forms-file' }" class="is-submenu">
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"> </i>
             File Input
-          </RouterLink>
-          <RouterLink :to="{ name: 'elements-control' }" class="is-submenu">
-            VControl
-          </RouterLink>
-          <RouterLink :to="{ name: 'elements-field' }" class="is-submenu">
-            VField
           </RouterLink>
         </VCollapseLinks>
 
@@ -141,14 +151,6 @@
           <RouterLink :to="{ name: 'elements-animated-checkbox' }" class="is-submenu">
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             VAnimatedCheckbox
-          </RouterLink>
-          <RouterLink :to="{ name: 'elements-checkbox' }" class="is-submenu">
-            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-            VCheckbox
-          </RouterLink>
-          <RouterLink :to="{ name: 'elements-radio' }" class="is-submenu">
-            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-            VRadio
           </RouterLink>
           <RouterLink :to="{ name: 'elements-switch-block' }" class="is-submenu">
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>

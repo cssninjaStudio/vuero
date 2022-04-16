@@ -548,6 +548,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
 
 <style lang="scss">
 @import '/@src/scss/abstracts/all';
+@import '/@src/scss/components/profile-stats';
 
 .is-navbar {
   .profile-wrapper {
@@ -585,69 +586,6 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
       max-width: 540px;
       margin: 0 auto;
       line-height: 1.3;
-    }
-
-    .profile-stats {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 12px 0;
-
-      .profile-stat {
-        display: flex;
-        align-items: center;
-        color: var(--light-text);
-        font-family: var(--font);
-
-        span {
-          font-size: 0.9rem;
-        }
-
-        i {
-          font-size: 1.2rem;
-          margin-right: 6px;
-        }
-      }
-
-      .separator {
-        height: 25px;
-        width: 2px;
-        border-right: 1px solid var(--fade-grey-dark-6);
-        margin: 0 10px;
-      }
-
-      .socials {
-        display: flex;
-        justify-content: center;
-
-        a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 28px;
-          width: 28px;
-          background: var(--white);
-          border: 1px solid var(--fade-grey-dark-6);
-          box-shadow: var(--light-box-shadow);
-          border-radius: var(--radius-rounded);
-          margin: 0 2px;
-          transition: all 0.3s; // transition-all test
-
-          &:hover {
-            border-color: var(--primary);
-
-            i {
-              color: var(--primary);
-            }
-          }
-
-          i {
-            font-size: 0.9rem;
-            color: var(--light-text);
-            transition: color 0.3s;
-          }
-        }
-      }
     }
   }
 
@@ -1122,28 +1060,6 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
       .v-avatar {
         .badge {
           border-color: var(--dark-sidebar-light-6);
-        }
-      }
-
-      .profile-stats {
-        .separator {
-          border-color: var(--dark-sidebar-light-20);
-        }
-
-        .socials {
-          a {
-            background: var(--dark-sidebar-light-2);
-            border-color: var(--dark-sidebar-light-12);
-
-            &:hover,
-            &:focus {
-              border-color: var(--primary);
-
-              i {
-                color: var(--primary);
-              }
-            }
-          }
         }
       }
     }

@@ -10,10 +10,13 @@ const { y } = useWindowScroll()
 const isStuck = computed(() => {
   return y.value > 30
 })
+const onSubmit = () => {
+  console.log('Form submitted!')
+}
 </script>
 
 <template>
-  <form class="form-layout is-split" @submit.prevent>
+  <form class="form-layout is-split" @submit.prevent="onSubmit">
     <div class="form-outer">
       <div :class="[isStuck && 'is-stuck']" class="form-header stuck-header">
         <div class="form-header-inner">
@@ -30,7 +33,7 @@ const isStuck = computed(() => {
               >
                 Cancel
               </VButton>
-              <VButton color="primary" raised> Request Payout </VButton>
+              <VButton type="submit" color="primary" raised> Request Payout </VButton>
             </div>
           </div>
         </div>
@@ -77,13 +80,7 @@ const isStuck = computed(() => {
             <h3 class="has-text-centered">Enter your own</h3>
             <VField>
               <VControl icon="feather:dollar-sign">
-                <input
-                  class="input"
-                  type="number"
-                  min="0"
-                  step="10"
-                  placeholder="Amount..."
-                />
+                <VInput type="number" min="0" step="10" placeholder="Amount..." />
               </VControl>
             </VField>
           </div>
@@ -93,9 +90,8 @@ const isStuck = computed(() => {
             <h3>Personal Info</h3>
             <VField>
               <VControl icon="feather:user">
-                <input
+                <VInput
                   type="text"
-                  class="input"
                   placeholder="First Name *"
                   autocomplete="given-name"
                 />
@@ -103,9 +99,8 @@ const isStuck = computed(() => {
             </VField>
             <VField>
               <VControl icon="feather:user">
-                <input
+                <VInput
                   type="text"
-                  class="input"
                   placeholder="Last Name *"
                   autocomplete="family-name"
                 />
@@ -113,9 +108,8 @@ const isStuck = computed(() => {
             </VField>
             <VField>
               <VControl icon="feather:mail">
-                <input
+                <VInput
                   type="email"
-                  class="input"
                   placeholder="Email Address *"
                   autocomplete="email"
                   inputmode="email"
@@ -124,9 +118,8 @@ const isStuck = computed(() => {
             </VField>
             <VField>
               <VControl icon="feather:phone">
-                <input
+                <VInput
                   type="tel"
-                  class="input"
                   placeholder="Phone Number *"
                   autocomplete="tel"
                   inputmode="tel"
@@ -137,9 +130,10 @@ const isStuck = computed(() => {
           <div class="right">
             <h3>Payout Details</h3>
 
-            <VField>
+            <VField v-slot="{ id }">
               <VControl>
                 <Multiselect
+                  :id="id"
                   v-model="bankAccount"
                   placeholder="Bank Account"
                   :options="['AMEX **** 42', 'HSBC **** 29']"
@@ -147,9 +141,10 @@ const isStuck = computed(() => {
               </VControl>
             </VField>
 
-            <VField>
+            <VField v-slot="{ id }">
               <VControl>
                 <Multiselect
+                  :id="id"
                   v-model="transferFees"
                   placeholder="Bank Account"
                   :options="['Super Fast - $3.00', 'Regular - $0.50']"
@@ -157,20 +152,11 @@ const isStuck = computed(() => {
               </VControl>
             </VField>
 
-            <VField>
-              <label>Notify me when funds are ready?</label>
+            <VField v-slot="{ id }">
+              <VLabel>Notify me when funds are ready?</VLabel>
               <VControl>
-                <label class="radio">
-                  <input type="radio" name="notification_selection" checked />
-                  <span></span>
-                  Yes
-                </label>
-
-                <label class="radio is-outlined is-primary">
-                  <input type="radio" name="notification_selection" />
-                  <span></span>
-                  No
-                </label>
+                <VRadio :id="id" name="notify-me" color="primary" value="yes">Yes</VRadio>
+                <VRadio name="notify-me" value="no">No</VRadio>
               </VControl>
             </VField>
           </div>
@@ -181,6 +167,9 @@ const isStuck = computed(() => {
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/all';
+@import '/@src/scss/components/forms-outer';
+
 .is-navbar {
   .form-layout {
     margin-top: 30px;

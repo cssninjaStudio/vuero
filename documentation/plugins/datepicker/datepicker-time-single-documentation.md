@@ -13,7 +13,7 @@ Check the code example for more details about usage.
 
 ```vue
 <script setup lang="ts">
-import { ref } from vue
+import { ref } from 'vue'
 
 const date = ref(null)
 </script>
@@ -22,8 +22,8 @@ const date = ref(null)
   <VDatePicker v-model="date" mode="dateTime" is24hr>
     <template #default="{ inputValue, inputEvents }">
       <VField>
-        <VControl>
-          <input class="input" :value="inputValue" v-on="inputEvents" />
+        <VControl icon="feather:clock">
+          <VInput :value="inputValue" v-on="inputEvents" />
         </VControl>
       </VField>
     </template>
@@ -38,8 +38,8 @@ const date = ref(null)
 <VDatePicker v-model="frontmatter.state.date" color="green" mode="time" is24hr>
   <template #default="{ inputValue, inputEvents }">
     <VField>
-      <VControl>
-        <input class="input" :value="inputValue" v-on="inputEvents" />
+      <VControl icon="feather:clock">
+        <VInput :value="inputValue" v-on="inputEvents" />
       </VControl>
     </VField>
   </template>

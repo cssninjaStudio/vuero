@@ -1,6 +1,6 @@
 ### Rounded input
 
-You can easily change the shape of the input inside the field.
+You can easily change the shape of the `VInput` inside the field.
 Simply add the `is-rounded` class to the Html `input` element.
 
 <!--code-->
@@ -9,7 +9,7 @@ Simply add the `is-rounded` class to the Html `input` element.
 <template>
   <VField>
     <VControl>
-      <input type="text" class="input is-rounded" placeholder="Username" />
+      <VInput type="text" class="is-rounded" placeholder="Username" />
     </VControl>
   </VField>
 </template>
@@ -21,11 +21,11 @@ Simply add the `is-rounded` class to the Html `input` element.
 
 <VField>
   <VControl>
-    <input
-        type="text"
-        class="input is-rounded"
-        placeholder="Username"
-      />
+    <VInput
+      type="text"
+      class="is-rounded"
+      placeholder="Username"
+    />
   </VControl>
 </VField>
 

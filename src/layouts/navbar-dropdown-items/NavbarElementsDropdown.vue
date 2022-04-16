@@ -365,6 +365,30 @@ watch([() => route.fullPath, dropdownElement], () => {
 
               <div class="column-content" data-simplebar>
                 <RouterLink
+                  :to="{ name: 'elements-forms-field' }"
+                  class="dropdown-item is-media"
+                >
+                  <div class="icon">
+                    <i aria-hidden="true" class="lnil lnil-stop"></i>
+                  </div>
+                  <div class="meta">
+                    <span>VField</span>
+                    <VTag label="v2.3" color="primary" outlined curved class="ml-3" />
+                  </div>
+                </RouterLink>
+                <RouterLink
+                  :to="{ name: 'elements-forms-control' }"
+                  class="dropdown-item is-media"
+                >
+                  <div class="icon">
+                    <i aria-hidden="true" class="lnil lnil-stop"></i>
+                  </div>
+                  <div class="meta">
+                    <span>VControl</span>
+                    <VTag label="v2.3" color="primary" outlined curved class="ml-3" />
+                  </div>
+                </RouterLink>
+                <RouterLink
                   :to="{ name: 'elements-forms-inputs' }"
                   class="dropdown-item is-media"
                 >
@@ -372,19 +396,8 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-font"></i>
                   </div>
                   <div class="meta">
-                    <span>Text inputs</span>
-                  </div>
-                </RouterLink>
-
-                <RouterLink
-                  :to="{ name: 'elements-forms-addons' }"
-                  class="dropdown-item is-media"
-                >
-                  <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-font"></i>
-                  </div>
-                  <div class="meta">
-                    <span>Input Addons</span>
+                    <span>VInput</span>
+                    <VTag label="v2.3" color="primary" outlined curved class="ml-3" />
                   </div>
                 </RouterLink>
 
@@ -396,7 +409,8 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-font"></i>
                   </div>
                   <div class="meta">
-                    <span>Textarea</span>
+                    <span>VTextarea</span>
+                    <VTag label="v2.3" color="primary" outlined curved class="ml-3" />
                   </div>
                 </RouterLink>
 
@@ -408,68 +422,8 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-font"></i>
                   </div>
                   <div class="meta">
-                    <span>Selects</span>
-                  </div>
-                </RouterLink>
-
-                <RouterLink
-                  :to="{ name: 'elements-forms-file' }"
-                  class="dropdown-item is-media"
-                >
-                  <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-upload"></i>
-                  </div>
-                  <div class="meta">
-                    <span>File Input</span>
-                  </div>
-                </RouterLink>
-
-                <RouterLink
-                  :to="{ name: 'elements-control' }"
-                  class="dropdown-item is-media"
-                >
-                  <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-stop"></i>
-                  </div>
-                  <div class="meta">
-                    <span>VControl</span>
-                  </div>
-                </RouterLink>
-
-                <RouterLink
-                  :to="{ name: 'elements-field' }"
-                  class="dropdown-item is-media"
-                >
-                  <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-stop"></i>
-                  </div>
-                  <div class="meta">
-                    <span>VField</span>
-                  </div>
-                </RouterLink>
-              </div>
-            </div>
-          </div>
-
-          <!--Advanced/Switches-->
-          <div class="column is-6">
-            <div class="dropdown-item-group">
-              <h4 class="column-heading is-green">
-                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-                <span>Switches</span>
-              </h4>
-
-              <div class="column-content" data-simplebar>
-                <RouterLink
-                  :to="{ name: 'elements-animated-checkbox' }"
-                  class="dropdown-item is-media"
-                >
-                  <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-round-box-check"></i>
-                  </div>
-                  <div class="meta">
-                    <span>VAnimatedCheckbox</span>
-                    <VTag label="v1.1" color="primary" outlined curved class="ml-3" />
+                    <span>VSelect</span>
+                    <VTag label="v2.3" color="primary" outlined curved class="ml-3" />
                   </div>
                 </RouterLink>
 
@@ -495,6 +449,55 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                   <div class="meta">
                     <span>VRadio</span>
+                    <VTag label="v1.1" color="primary" outlined curved class="ml-3" />
+                  </div>
+                </RouterLink>
+
+                <!-- <RouterLink
+                  :to="{ name: 'elements-forms-addons' }"
+                  class="dropdown-item is-media"
+                >
+                  <div class="icon">
+                    <i aria-hidden="true" class="lnil lnil-font"></i>
+                  </div>
+                  <div class="meta">
+                    <span>Input Addons</span>
+                  </div>
+                </RouterLink> -->
+
+                <RouterLink
+                  :to="{ name: 'elements-forms-file' }"
+                  class="dropdown-item is-media"
+                >
+                  <div class="icon">
+                    <i aria-hidden="true" class="lnil lnil-upload"></i>
+                  </div>
+                  <div class="meta">
+                    <span>File Input</span>
+                  </div>
+                </RouterLink>
+              </div>
+            </div>
+          </div>
+
+          <!--Advanced/Switches-->
+          <div class="column is-6">
+            <div class="dropdown-item-group">
+              <h4 class="column-heading is-green">
+                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+                <span>Switches</span>
+              </h4>
+
+              <div class="column-content" data-simplebar>
+                <RouterLink
+                  :to="{ name: 'elements-animated-checkbox' }"
+                  class="dropdown-item is-media"
+                >
+                  <div class="icon">
+                    <i aria-hidden="true" class="lnil lnil-round-box-check"></i>
+                  </div>
+                  <div class="meta">
+                    <span>VAnimatedCheckbox</span>
                     <VTag label="v1.1" color="primary" outlined curved class="ml-3" />
                   </div>
                 </RouterLink>

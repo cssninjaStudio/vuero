@@ -1,7 +1,7 @@
 ### Rounded addons
 
 Since input addons are button elements, usual modifier classes apply to them.
-You can use the `is-rounded` on both the input and the button inside the addon
+You can use the `rounded` on both the input and the button inside the addon
 element to create a rounded field with addons.
 
 <!--code-->
@@ -10,10 +10,10 @@ element to create a rounded field with addons.
 <template>
   <VField addons>
     <VControl expanded>
-      <input type="text" class="input is-rounded" placeholder="Find a repository" />
+      <VInput type="text" class="input is-rounded" placeholder="Find a repository" />
     </VControl>
     <VControl>
-      <a class="button is-primary is-rounded">Search</a>
+      <VButton color="primary" rounded>Search</VButton>
     </VControl>
   </VField>
 </template>
@@ -25,14 +25,10 @@ element to create a rounded field with addons.
 
 <VField addons>
   <VControl expanded>
-    <input
-        type="text"
-        class="input is-rounded"
-        placeholder="Find a repository"
-      />
+    <VInput type="text" class="input is-rounded" placeholder="Find a repository" />
   </VControl>
   <VControl>
-    <a class="button is-primary is-rounded">Search</a>
+    <VButton color="primary" rounded>Search</VButton>
   </VControl>
 </VField>
 

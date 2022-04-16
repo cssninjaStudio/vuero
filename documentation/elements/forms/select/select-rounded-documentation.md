@@ -1,6 +1,11 @@
+---
+state:
+  input: ''
+---
+
 ### Select rounded
 
-The Vuero select can have rounded edges. Like other controls,
+The Vuero `VSelect` can have rounded edges. Like other controls,
 simply add the is-rounded class to the select wrapper element.
 Please refer to the code example for more details about usage.
 
@@ -16,17 +21,15 @@ const input = ref('')
 <template>
   <VField>
     <VControl>
-      <div class="select is-rounded">
-        <select v-model="input">
-          <option value="">Select a Hero</option>
-          <option value="Superman">Superman</option>
-          <option value="Batman">Batman</option>
-          <option value="Spiderman">Spiderman</option>
-          <option value="Deadpool">Deadpool</option>
-          <option value="Spawn">Spawn</option>
-          <option value="Galactus">Galactus</option>
-        </select>
-      </div>
+      <VSelect v-model="input" class="is-rounded">
+        <VOption value="">Select a Hero</VOption>
+        <VOption value="Superman">Superman</VOption>
+        <VOption value="Batman">Batman</VOption>
+        <VOption value="Spiderman">Spiderman</VOption>
+        <VOption value="Deadpool">Deadpool</VOption>
+        <VOption value="Spawn">Spawn</VOption>
+        <VOption value="Galactus">Galactus</VOption>
+      </VSelect>
     </VControl>
   </VField>
 </template>
@@ -37,19 +40,17 @@ const input = ref('')
 <!--example-->
 
 <VField>
-    <VControl>
-        <div class="select is-rounded">
-            <select>
-                <option>Select a Hero</option>
-                <option>Superman</option>
-                <option>Batman</option>
-                <option>Spiderman</option>
-                <option>Deadpool</option>
-                <option>Spawn</option>
-                <option>Galactus</option>
-            </select>
-        </div>
-    </VControl>
+  <VControl>
+    <VSelect v-model="frontmatter.state.input" class="is-rounded">
+      <VOption value="">Select a Hero</VOption>
+      <VOption value="Superman">Superman</VOption>
+      <VOption value="Batman">Batman</VOption>
+      <VOption value="Spiderman">Spiderman</VOption>
+      <VOption value="Deadpool">Deadpool</VOption>
+      <VOption value="Spawn">Spawn</VOption>
+      <VOption value="Galactus">Galactus</VOption>
+    </VSelect>
+  </VControl>
 </VField>
 
 <!--/example-->

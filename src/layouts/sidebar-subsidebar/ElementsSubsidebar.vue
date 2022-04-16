@@ -122,35 +122,52 @@ const emit = defineEmits(['close'])
 
         <VCollapseLinks>
           <template #header>
-            Inputs
+            Forms
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
           </template>
 
+          <RouterLink :to="{ name: 'elements-forms-field' }" class="is-submenu">
+            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+            VField
+            <VTag label="v2.3" color="primary" outlined curved />
+          </RouterLink>
+          <RouterLink :to="{ name: 'elements-forms-control' }" class="is-submenu">
+            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+            VControl
+            <VTag label="v2.3" color="primary" outlined curved />
+          </RouterLink>
           <RouterLink :to="{ name: 'elements-forms-inputs' }" class="is-submenu">
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-            Inputs
-          </RouterLink>
-          <RouterLink :to="{ name: 'elements-forms-addons' }" class="is-submenu">
-            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-            Input Addons
+            VInput
+            <VTag label="v2.3" color="primary" outlined curved />
           </RouterLink>
           <RouterLink :to="{ name: 'elements-forms-textarea' }" class="is-submenu">
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-            Textarea
+            VTextarea
+            <VTag label="v2.3" color="primary" outlined curved />
           </RouterLink>
           <RouterLink :to="{ name: 'elements-forms-selects' }" class="is-submenu">
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-            Selects
+            VSelect
+            <VTag label="v2.3" color="primary" outlined curved />
           </RouterLink>
+          <RouterLink :to="{ name: 'elements-checkbox' }" class="is-submenu">
+            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+            VCheckbox
+            <VTag label="v1.1" color="primary" outlined curved />
+          </RouterLink>
+          <RouterLink :to="{ name: 'elements-radio' }" class="is-submenu">
+            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+            VRadio
+            <VTag label="v1.1" color="primary" outlined curved />
+          </RouterLink>
+          <!-- <RouterLink :to="{ name: 'elements-forms-addons' }" class="is-submenu">
+            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+            Input Addons
+          </RouterLink> -->
           <RouterLink :to="{ name: 'elements-forms-file' }" class="is-submenu">
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"> </i>
             File Input
-          </RouterLink>
-          <RouterLink :to="{ name: 'elements-control' }" class="is-submenu">
-            VControl
-          </RouterLink>
-          <RouterLink :to="{ name: 'elements-field' }" class="is-submenu">
-            VField
           </RouterLink>
         </VCollapseLinks>
 
@@ -163,16 +180,6 @@ const emit = defineEmits(['close'])
           <RouterLink :to="{ name: 'elements-animated-checkbox' }" class="is-submenu">
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             VAnimatedCheckbox
-          </RouterLink>
-          <RouterLink :to="{ name: 'elements-checkbox' }" class="is-submenu">
-            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-            VCheckbox
-            <VTag label="v1.1" color="primary" outlined curved />
-          </RouterLink>
-          <RouterLink :to="{ name: 'elements-radio' }" class="is-submenu">
-            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-            VRadio
-            <VTag label="v1.1" color="primary" outlined curved />
           </RouterLink>
           <RouterLink :to="{ name: 'elements-switch-block' }" class="is-submenu">
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>

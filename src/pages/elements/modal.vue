@@ -328,21 +328,17 @@ useHead({
         <form class="modal-form">
           <VField label="Username *">
             <VControl>
-              <input type="text" class="input" placeholder="Username" />
+              <VInput type="text" placeholder="Username" />
             </VControl>
           </VField>
           <VField label="Email *">
             <VControl>
-              <input type="text" class="input" placeholder="Email Address" />
+              <VInput type="text" placeholder="Email Address" />
             </VControl>
           </VField>
           <VField label="Comment *">
             <VControl>
-              <textarea
-                class="textarea"
-                rows="4"
-                placeholder="Your message..."
-              ></textarea>
+              <VTextarea rows="4" placeholder="Your message..." />
             </VControl>
           </VField>
         </form>
@@ -362,21 +358,17 @@ useHead({
         <form class="modal-form">
           <VField label="Username *">
             <VControl>
-              <input type="text" class="input" placeholder="Username" />
+              <VInput type="text" placeholder="Username" />
             </VControl>
           </VField>
           <VField label="Email *">
             <VControl>
-              <input type="text" class="input" placeholder="Email Address" />
+              <VInput type="text" placeholder="Email Address" />
             </VControl>
           </VField>
           <VField label="Comment *">
             <VControl>
-              <textarea
-                class="textarea"
-                rows="4"
-                placeholder="Your message..."
-              ></textarea>
+              <VTextarea rows="4" placeholder="Your message..." />
             </VControl>
           </VField>
         </form>
@@ -397,21 +389,17 @@ useHead({
         <form class="modal-form">
           <VField label="Username *" horizontal>
             <VControl expanded>
-              <input class="input" type="text" placeholder="Username" />
+              <VInput type="text" placeholder="Username" />
             </VControl>
           </VField>
           <VField label="Email *" horizontal>
             <VControl expanded>
-              <input class="input" type="text" placeholder="Username" />
+              <VInput type="text" placeholder="Username" />
             </VControl>
           </VField>
           <VField label="Comment *" horizontal>
             <VControl expanded>
-              <textarea
-                class="textarea"
-                rows="4"
-                placeholder="Your message..."
-              ></textarea>
+              <VTextarea rows="4" placeholder="Your message..." />
             </VControl>
           </VField>
         </form>
@@ -434,23 +422,23 @@ useHead({
             <div class="column is-12">
               <VField label="Project Name *">
                 <VControl>
-                  <input type="text" class="input" placeholder="Ex: A cool project" />
+                  <VInput type="text" placeholder="Ex: A cool project" />
                 </VControl>
               </VField>
             </div>
             <div class="column is-6">
               <VField label="Project Budget *">
                 <VControl>
-                  <input type="text" class="input" placeholder="Ex: $3,500" />
+                  <VInput type="text" placeholder="Ex: $3,500" />
                 </VControl>
               </VField>
             </div>
             <div class="column is-6">
               <VField label="Project URL *">
                 <VControl>
-                  <input
+                  <VInput
                     type="text"
-                    class="input"
+                    class="VInput"
                     placeholder="Ex: https://project.com"
                   />
                 </VControl>
@@ -459,11 +447,7 @@ useHead({
             <div class="column is-12">
               <VField label="Description *">
                 <VControl>
-                  <textarea
-                    class="textarea"
-                    rows="3"
-                    placeholder="Details about the project..."
-                  ></textarea>
+                  <VTextarea rows="3" placeholder="Details about the project..." />
                 </VControl>
               </VField>
             </div>
@@ -488,7 +472,7 @@ useHead({
             <div class="column is-12">
               <VField label="Project Name *">
                 <VControl>
-                  <input type="text" class="input" placeholder="Ex: A cool project" />
+                  <VInput type="text" placeholder="Ex: A cool project" />
                 </VControl>
               </VField>
             </div>
@@ -597,16 +581,16 @@ useHead({
             <div class="column is-6">
               <VField label="Project Budget *">
                 <VControl>
-                  <input type="text" class="input" placeholder="Ex: $3,500" />
+                  <VInput type="text" placeholder="Ex: $3,500" />
                 </VControl>
               </VField>
             </div>
             <div class="column is-6">
               <VField label="Project URL *">
                 <VControl>
-                  <input
+                  <VInput
                     type="text"
-                    class="input"
+                    class="VInput"
                     placeholder="Ex: https://project.com"
                   />
                 </VControl>
@@ -615,11 +599,7 @@ useHead({
             <div class="column is-12">
               <VField label="Description *">
                 <VControl>
-                  <textarea
-                    class="textarea"
-                    rows="3"
-                    placeholder="Details about the project..."
-                  ></textarea>
+                  <VTextarea rows="3" placeholder="Details about the project..." />
                 </VControl>
               </VField>
             </div>

@@ -110,63 +110,52 @@ useHead({
                 </div>
               </VMessage>
 
-              <div class="control has-validation">
-                <input
-                  type="text"
-                  name="email"
-                  class="input"
-                  placeholder=""
-                  autocomplete="email"
-                />
-                <small class="error-text">This is a required field</small>
-                <div class="auth-label">Email Address</div>
-                <div class="autv-icon">
-                  <i aria-hidden="true" class="lnil lnil-envelope"></i>
-                </div>
-                <div class="validation-icon is-success">
-                  <VIconWrap icon="feather:check" />
-                </div>
-                <div class="validation-icon is-error">
-                  <VIconWrap icon="feather:x" />
-                </div>
-              </div>
-              <div class="control has-validation">
-                <input
-                  name="password"
-                  type="password"
-                  class="input"
-                  autocomplete="current-password"
-                />
-                <div class="auth-label">Password</div>
-                <div class="autv-icon">
-                  <i aria-hidden="true" class="lnil lnil-lock-alt"></i>
-                </div>
-              </div>
+              <VField>
+                <VControl icon="lnil lnil-envelope autv-icon">
+                  <VLabel class="auth-label">Email Address</VLabel>
+                  <VInput type="email" autocomplete="current-password" />
+                </VControl>
+              </VField>
+              <VField>
+                <VControl icon="lnil lnil-lock-alt autv-icon">
+                  <VLabel class="auth-label">Password</VLabel>
+                  <VInput type="password" autocomplete="current-password" />
+                </VControl>
+              </VField>
 
-              <div class="control is-flex">
-                <label class="remember-toggle">
-                  <input type="checkbox" />
-                  <span class="toggler">
-                    <span class="active">
-                      <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
+              <VField>
+                <VControl class="is-flex">
+                  <VLabel raw class="remember-toggle">
+                    <VInput raw type="checkbox" />
+
+                    <span class="toggler">
+                      <span class="active">
+                        <i
+                          aria-hidden="true"
+                          class="iconify"
+                          data-icon="feather:check"
+                        ></i>
+                      </span>
+                      <span class="inactive">
+                        <i
+                          aria-hidden="true"
+                          class="iconify"
+                          data-icon="feather:circle"
+                        ></i>
+                      </span>
                     </span>
-                    <span class="inactive">
-                      <i
-                        aria-hidden="true"
-                        class="iconify"
-                        data-icon="feather:circle"
-                      ></i>
-                    </span>
-                  </span>
-                </label>
-                <div class="remember-me">Remember Me</div>
-                <a
-                  tabindex="0"
-                  @keydown.space.prevent="step = 'forgot-password'"
-                  @click="step = 'forgot-password'"
-                  >Forgot Password?</a
-                >
-              </div>
+                  </VLabel>
+                  <VLabel raw class="remember-me">Remember Me</VLabel>
+                  <a
+                    tabindex="0"
+                    @keydown.space.prevent="step = 'forgot-password'"
+                    @click="step = 'forgot-password'"
+                  >
+                    Forgot Password?
+                  </a>
+                </VControl>
+              </VField>
+
               <div class="button-wrap has-help">
                 <VButton
                   id="login-button"
@@ -177,8 +166,9 @@ useHead({
                   rounded
                   raised
                   bold
-                  >Confirm</VButton
                 >
+                  Confirm
+                </VButton>
                 <span>
                   Or
                   <RouterLink :to="{ name: 'auth-signup-1' }">Create</RouterLink>
@@ -196,20 +186,13 @@ useHead({
                 Enter your email and click on the confirm button to reset your password.
                 We'll send you an email detailing the steps to complete the procedure.
               </p>
-              <div class="control has-validation">
-                <input type="text" class="input" autocomplete="email" />
-                <small class="error-text">This is a required field</small>
-                <div class="auth-label">Email Address</div>
-                <div class="autv-icon">
-                  <i aria-hidden="true" class="lnil lnil-envelope"></i>
-                </div>
-                <div class="validation-icon is-success">
-                  <VIconWrap icon="feather:check" />
-                </div>
-                <div class="validation-icon is-error">
-                  <VIconWrap icon="feather:x" />
-                </div>
-              </div>
+
+              <VField>
+                <VControl icon="lnil lnil-envelope autv-icon">
+                  <VLabel class="auth-label">Email Address</VLabel>
+                  <VInput type="email" autocomplete="current-password" />
+                </VControl>
+              </VField>
               <div class="button-wrap">
                 <VButton color="white" size="big" lower rounded @click="step = 'login'">
                   Cancel
@@ -222,8 +205,9 @@ useHead({
                   rounded
                   solid
                   @click="step = 'login'"
-                  >Confirm</VButton
                 >
+                  Confirm
+                </VButton>
               </div>
             </form>
           </div>
@@ -393,7 +377,8 @@ useHead({
           transition: all 0.3s; // transition-all test
         }
 
-        .autv-icon {
+        .autv-icon,
+        :deep(.autv-icon) {
           position: absolute;
           top: 0;
           left: 0;
@@ -402,12 +387,9 @@ useHead({
           display: flex;
           justify-content: center;
           align-items: center;
-
-          i {
-            font-size: 24px;
-            color: var(--placeholder);
-            transition: all 0.3s; // transition-all test
-          }
+          font-size: 24px;
+          color: var(--placeholder);
+          transition: all 0.3s;
         }
 
         &.has-validation {

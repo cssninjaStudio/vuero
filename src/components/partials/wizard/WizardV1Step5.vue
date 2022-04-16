@@ -118,7 +118,7 @@ watchEffect(() => {
 
         <VField class="mt-4">
           <VControl icon="feather:search">
-            <input v-model="search" class="input" placeholder="Search teammates..." />
+            <VInput v-model="search" placeholder="Search teammates..." />
           </VControl>
         </VField>
       </div>

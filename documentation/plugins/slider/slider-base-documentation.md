@@ -20,9 +20,9 @@ const value = ref(0)
 </script>
 
 <template>
-  <VField class="has-rounded-tooltip">
+  <VField v-slot="{ id }" class="has-rounded-tooltip">
     <VControl>
-      <Slider v-model="value" />
+      <Slider :id="id" v-model="value" />
     </VControl>
   </VField>
 </template>
@@ -34,10 +34,10 @@ const value = ref(0)
 
 <div class="columns mt-2">
   <div class="column is-6">
-    <VField class="pt-5 px-4 has-rounded-tooltip">
-        <VControl>
-            <Slider v-model="frontmatter.state.value" />
-        </VControl>
+    <VField v-slot="{ id }" class="pt-5 px-4 has-rounded-tooltip">
+      <VControl>
+        <Slider :id="id" v-model="frontmatter.state.value" />
+      </VControl>
     </VField>
   </div>
 </div>

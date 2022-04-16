@@ -26,3 +26,4 @@ Here is the full props available for `<VButton />` component:
 | placeload    | <span class="is-boolean">`false`</span>       | boolean                                                    |
 | lower        | <span class="is-boolean">`false`</span>       | boolean                                                    |
 | disabled     | <span class="is-boolean">`false`</span>       | boolean                                                    |
+| static       | <span class="is-boolean">`false`</span>       | boolean                                                    |

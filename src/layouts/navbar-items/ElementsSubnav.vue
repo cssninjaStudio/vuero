@@ -265,21 +265,12 @@ const activeTab = ref<TabId>('interaction')
           <div class="center">
             <div class="columns">
               <div class="column is-3">
-                <h4 class="column-heading">Inputs</h4>
+                <h4 class="column-heading">Forms</h4>
                 <ul>
                   <li>
                     <RouterLink :to="{ name: 'elements-forms-inputs' }">
-                      <span>Text inputs</span>
-                      <i
-                        aria-hidden="true"
-                        class="iconify"
-                        data-icon="feather:circle"
-                      ></i>
-                    </RouterLink>
-                  </li>
-                  <li>
-                    <RouterLink :to="{ name: 'elements-forms-addons' }">
-                      <span>Input Addons</span>
+                      <span>VInput</span>
+                      <VTag label="v2.3" color="primary" outlined curved />
                       <i
                         aria-hidden="true"
                         class="iconify"
@@ -289,7 +280,8 @@ const activeTab = ref<TabId>('interaction')
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-forms-textarea' }">
-                      <span>Textarea</span>
+                      <span>VTextarea</span>
+                      <VTag label="v2.3" color="primary" outlined curved />
                       <i
                         aria-hidden="true"
                         class="iconify"
@@ -299,7 +291,8 @@ const activeTab = ref<TabId>('interaction')
                   </li>
                   <li>
                     <RouterLink :to="{ name: 'elements-forms-selects' }">
-                      <span>Selects</span>
+                      <span>VSelect</span>
+                      <VTag label="v2.3" color="primary" outlined curved />
                       <i
                         aria-hidden="true"
                         class="iconify"
@@ -307,6 +300,16 @@ const activeTab = ref<TabId>('interaction')
                       ></i>
                     </RouterLink>
                   </li>
+                  <!-- <li>
+                    <RouterLink :to="{ name: 'elements-forms-addons' }">
+                      <span>Input Addons</span>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
+                    </RouterLink>
+                  </li> -->
                   <li>
                     <RouterLink :to="{ name: 'elements-forms-file' }">
                       <span>File Input</span>
@@ -324,18 +327,9 @@ const activeTab = ref<TabId>('interaction')
                 <h4 class="column-heading">Forms</h4>
                 <ul>
                   <li>
-                    <RouterLink :to="{ name: 'elements-control' }">
-                      <span>VControl</span>
-                      <i
-                        aria-hidden="true"
-                        class="iconify"
-                        data-icon="feather:circle"
-                      ></i>
-                    </RouterLink>
-                  </li>
-                  <li>
-                    <RouterLink :to="{ name: 'elements-field' }">
+                    <RouterLink :to="{ name: 'elements-forms-field' }">
                       <span>VField</span>
+                      <VTag label="v2.3" color="primary" outlined curved />
                       <i
                         aria-hidden="true"
                         class="iconify"
@@ -343,15 +337,10 @@ const activeTab = ref<TabId>('interaction')
                       ></i>
                     </RouterLink>
                   </li>
-                </ul>
-              </div>
-
-              <div class="column is-3">
-                <h4 class="column-heading">Switches</h4>
-                <ul>
                   <li>
-                    <RouterLink :to="{ name: 'elements-animated-checkbox' }">
-                      <span>VAnimatedCheckbox</span>
+                    <RouterLink :to="{ name: 'elements-forms-control' }">
+                      <span>VControl</span>
+                      <VTag label="v2.3" color="primary" outlined curved />
                       <i
                         aria-hidden="true"
                         class="iconify"
@@ -374,6 +363,22 @@ const activeTab = ref<TabId>('interaction')
                     <RouterLink :to="{ name: 'elements-radio' }">
                       <span>VRadio</span>
                       <VTag label="v1.1" color="primary" outlined curved />
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
+                    </RouterLink>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="column is-3">
+                <h4 class="column-heading">Switches</h4>
+                <ul>
+                  <li>
+                    <RouterLink :to="{ name: 'elements-animated-checkbox' }">
+                      <span>VAnimatedCheckbox</span>
                       <i
                         aria-hidden="true"
                         class="iconify"

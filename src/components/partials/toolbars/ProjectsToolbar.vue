@@ -1,20 +1,19 @@
 <template>
   <div class="projects-toolbar">
-    <div class="control has-icon">
-      <input class="input" placeholder="Search..." />
-      <div class="form-icon">
-        <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
-      </div>
-    </div>
+    <VField raw>
+      <VControl icon="feather:search">
+        <VInput placeholder="Search again..." />
+      </VControl>
+    </VField>
 
-    <div class="avatar-stack">
+    <VAvatarStack>
       <VAvatar size="small" picture="/demo/avatars/7.jpg" />
       <VAvatar size="small" picture="/demo/avatars/9.jpg" />
       <VAvatar size="small" picture="/demo/avatars/12.jpg" />
       <VAvatar size="small" picture="/images/avatars/svg/vuero-1.svg" />
       <VAvatar size="small" picture="/demo/avatars/25.jpg" />
       <VAvatar size="small" picture="/demo/avatars/22.jpg" />
-    </div>
+    </VAvatarStack>
 
     <a class="button v-button is-primary is-raised is-bold">
       <span>New Project</span>

@@ -453,13 +453,6 @@ const emit = defineEmits(['close'])
             <i aria-hidden="true" class="lnil lnil-cross-circle"></i>
             <span>Error 404 V1</span>
           </RouterLink>
-        </VCollapseLinks>
-
-        <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="subpages">
-          <template #header>
-            Subpages
-            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
-          </template>
           <RouterLink :to="{ name: 'error-page-2' }" class="is-submenu">
             <i aria-hidden="true" class="lnil lnil-cross-circle"></i>
             <span>Error 404 V2</span>

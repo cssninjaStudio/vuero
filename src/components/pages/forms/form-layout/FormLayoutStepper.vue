@@ -45,7 +45,7 @@ const validateStep = async () => {
 </script>
 
 <template>
-  <div>
+  <form @submit.prevent="validateStep">
     <div class="mobile-steps is-active">
       <ul class="steps has-content-centered is-thin is-horizontal is-short">
         <li :class="[currentStep === 0 && 'is-active']" class="steps-segment">
@@ -120,6 +120,7 @@ const validateStep = async () => {
           <h3 class="form-section-title">
             <span>General Information</span>
             <button
+              type="button"
               class="help-button"
               tabindex="0"
               @keydown.space.prevent="
@@ -134,17 +135,13 @@ const validateStep = async () => {
           <div class="form-section-inner">
             <VField>
               <VControl>
-                <input
-                  type="text"
-                  class="input"
-                  placeholder="What is this shipment about?"
-                />
+                <VInput type="text" placeholder="What is this shipment about?" />
               </VControl>
             </VField>
 
             <VField>
               <VControl>
-                <button class="input-button">
+                <button type="button" class="input-button">
                   <i aria-hidden="true" class="iconify" data-icon="feather:plus"></i>
                   <span>Add shipment group</span>
                 </button>
@@ -154,7 +151,7 @@ const validateStep = async () => {
             <div class="fieldset">
               <VField grouped>
                 <VControl expanded>
-                  <input type="text" class="input" placeholder="Group name" />
+                  <VInput type="text" placeholder="Group name" />
                 </VControl>
                 <VControl subcontrol>
                   <VSwitchSegment
@@ -167,14 +164,14 @@ const validateStep = async () => {
 
               <VField grouped>
                 <VControl expanded>
-                  <input type="text" class="input" placeholder="Group description" />
+                  <VInput type="text" placeholder="Group description" />
                 </VControl>
                 <VControl subcontrol>
-                  <label class="checkbox">
-                    <input type="checkbox" checked />
+                  <VLabel class="checkbox">
+                    <VInput type="checkbox" checked />
                     <span></span>
                     Fragile
-                  </label>
+                  </VLabel>
                 </VControl>
               </VField>
 
@@ -192,7 +189,7 @@ const validateStep = async () => {
               </VField>
 
               <VField>
-                <label>Type</label>
+                <VLabel>Type</VLabel>
                 <VControl>
                   <Multiselect
                     v-model="controlType"
@@ -203,20 +200,17 @@ const validateStep = async () => {
               </VField>
 
               <VField>
-                <label>Additional Notes</label>
+                <VLabel>Additional Notes</VLabel>
                 <VControl>
-                  <input
-                    type="text"
-                    class="input"
-                    placeholder="Add some additional notes"
-                  />
+                  <VInput type="text" placeholder="Add some additional notes" />
                 </VControl>
               </VField>
 
-              <VField>
-                <label>Method</label>
+              <VField v-slot="{ id }">
+                <VLabel>Method</VLabel>
                 <VControl>
                   <Multiselect
+                    :id="id"
                     v-model="storageType"
                     :options="[
                       'LVL 1 Security warehouse',
@@ -229,20 +223,16 @@ const validateStep = async () => {
               </VField>
 
               <VField>
-                <label>Quantity (units)</label>
+                <VLabel>Quantity (units)</VLabel>
                 <VControl>
-                  <input type="number" class="input" placeholder="Enter a quantity" />
+                  <VInput type="number" placeholder="Enter a quantity" />
                 </VControl>
               </VField>
 
               <VField>
-                <label>Duration (days)</label>
+                <VLabel>Duration (days)</VLabel>
                 <VControl>
-                  <input
-                    type="number"
-                    class="input"
-                    placeholder="Enter a storage duration"
-                  />
+                  <VInput type="number" placeholder="Enter a storage duration" />
                 </VControl>
               </VField>
 
@@ -269,6 +259,7 @@ const validateStep = async () => {
             <h3 class="form-section-title">
               <span>Shipment Owner</span>
               <button
+                type="button"
                 class="help-button"
                 @keydown.space.prevent="
                   currentHelp === 1 ? (currentHelp = -1) : (currentHelp = 1)
@@ -282,13 +273,13 @@ const validateStep = async () => {
             <div class="form-section-inner">
               <VField>
                 <VControl>
-                  <input type="text" class="input" placeholder="Owning company name" />
+                  <VInput type="text" placeholder="Owning company name" />
                 </VControl>
               </VField>
 
               <VField>
                 <VControl>
-                  <button class="input-button">
+                  <button type="button" class="input-button">
                     <i aria-hidden="true" class="iconify" data-icon="feather:plus"></i>
                     <span>Add contact</span>
                   </button>
@@ -298,7 +289,7 @@ const validateStep = async () => {
               <div class="fieldset">
                 <VField grouped>
                   <VControl expanded>
-                    <input type="text" class="input" placeholder="Full name" />
+                    <VInput type="text" placeholder="Full name" />
                   </VControl>
                   <VControl subcontrol>
                     <VSwitchSegment label-true="Ground" label-false="Other" />
@@ -307,20 +298,20 @@ const validateStep = async () => {
 
                 <VField grouped>
                   <VControl expanded>
-                    <input type="text" class="input" placeholder="Email address" />
+                    <VInput type="text" placeholder="Email address" />
                   </VControl>
                   <VControl subcontrol>
-                    <label class="checkbox">
-                      <input type="checkbox" checked />
+                    <VLabel class="checkbox">
+                      <VInput type="checkbox" checked />
                       <span></span>
                       Primary
-                    </label>
+                    </VLabel>
                   </VControl>
                 </VField>
 
                 <VField grouped>
                   <VControl expanded>
-                    <input type="text" class="input" placeholder="Phone number" />
+                    <VInput type="text" placeholder="Phone number" />
                   </VControl>
                   <VControl subcontrol></VControl>
                 </VField>
@@ -351,6 +342,7 @@ const validateStep = async () => {
             <h3 class="form-section-title">
               <span>Shipment Taxes</span>
               <button
+                type="button"
                 class="help-button"
                 @keydown.space.prevent="
                   currentHelp === 2 ? (currentHelp = -1) : (currentHelp = 2)
@@ -364,7 +356,7 @@ const validateStep = async () => {
             <div class="form-section-inner">
               <VField>
                 <VControl>
-                  <input type="text" class="input" placeholder="Company Tax ID" />
+                  <VInput type="text" placeholder="Company Tax ID" />
                 </VControl>
               </VField>
 
@@ -401,6 +393,7 @@ const validateStep = async () => {
             <h3 class="form-section-title">
               <span>Options</span>
               <button
+                type="button"
                 class="help-button"
                 @keydown.space.prevent="
                   currentHelp === 3 ? (currentHelp = -1) : (currentHelp = 3)
@@ -413,8 +406,8 @@ const validateStep = async () => {
 
             <div class="form-section-inner">
               <div class="options">
-                <div class="option">
-                  <input type="checkbox" />
+                <VField class="option">
+                  <VInput type="checkbox" />
                   <div class="indicator">
                     <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                   </div>
@@ -423,10 +416,10 @@ const validateStep = async () => {
                     <h4>Double check</h4>
                     <p>Second control pass</p>
                   </div>
-                </div>
+                </VField>
 
-                <div class="option">
-                  <input type="checkbox" />
+                <VField class="option">
+                  <VInput type="checkbox" />
                   <div class="indicator">
                     <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                   </div>
@@ -435,10 +428,10 @@ const validateStep = async () => {
                     <h4>Agent</h4>
                     <p>Dedicated agent</p>
                   </div>
-                </div>
+                </VField>
 
-                <div class="option">
-                  <input type="checkbox" />
+                <VField class="option">
+                  <VInput type="checkbox" />
                   <div class="indicator">
                     <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                   </div>
@@ -447,10 +440,10 @@ const validateStep = async () => {
                     <h4>Insurance</h4>
                     <p>Level 1-3 goods</p>
                   </div>
-                </div>
+                </VField>
 
-                <div class="option">
-                  <input type="checkbox" />
+                <VField class="option">
+                  <VInput type="checkbox" />
                   <div class="indicator">
                     <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                   </div>
@@ -459,10 +452,10 @@ const validateStep = async () => {
                     <h4>Extension</h4>
                     <p>License extension</p>
                   </div>
-                </div>
+                </VField>
 
-                <div class="option">
-                  <input type="checkbox" />
+                <VField class="option">
+                  <VInput type="checkbox" />
                   <div class="indicator">
                     <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                   </div>
@@ -471,10 +464,10 @@ const validateStep = async () => {
                     <h4>BI Reports</h4>
                     <p>Custom made reports</p>
                   </div>
-                </div>
+                </VField>
 
-                <div class="option">
-                  <input type="checkbox" />
+                <VField class="option">
+                  <VInput type="checkbox" />
                   <div class="indicator">
                     <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                   </div>
@@ -483,7 +476,7 @@ const validateStep = async () => {
                     <h4>Metrics</h4>
                     <p>Setup live metrics</p>
                   </div>
-                </div>
+                </VField>
               </div>
             </div>
           </div>
@@ -494,6 +487,7 @@ const validateStep = async () => {
             <h3 class="form-section-title">
               <span>Validation</span>
               <button
+                type="button"
                 class="help-button"
                 @keydown.space.prevent="
                   currentHelp === 4 ? (currentHelp = -1) : (currentHelp = 4)
@@ -523,14 +517,7 @@ const validateStep = async () => {
 
         <div class="navigation-buttons">
           <div class="buttons is-right">
-            <VButton
-              color="primary"
-              bold
-              :loading="isLoading"
-              tabindex="0"
-              @keydown.space.prevent="validateStep"
-              @click="validateStep"
-            >
+            <VButton type="submit" color="primary" bold :loading="isLoading" tabindex="0">
               Continue
             </VButton>
           </div>
@@ -802,7 +789,7 @@ const validateStep = async () => {
         </div>
       </div>
     </div>
-  </div>
+  </form>
 </template>
 
 <style lang="scss">

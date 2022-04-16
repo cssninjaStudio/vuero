@@ -5,7 +5,7 @@ state:
 
 ### Focus Colors
 
-Like other form controls, textareas can have different border colors
+Like other form controls, `VTextarea` can have different border colors
 when focused. Simply add the appropriate color modifier class.
 Available classes are `is-primary-focus`, `is-success-focus`,
 `is-info-focus`, `is-warning-focus`, `is-danger-focus`.
@@ -23,60 +23,60 @@ const textarea = ref('')
   <!-- is-primary-focus -->
   <VField>
     <VControl>
-      <textarea
+      <VTextarea
         v-model="textarea"
-        class="textarea is-primary-focus"
+        class="is-primary-focus"
         rows="2"
         placeholder="Primary..."
-      ></textarea>
+      ></VTextarea>
     </VControl>
   </VField>
 
   <!-- is-success-focus -->
   <VField>
     <VControl>
-      <textarea
+      <VTextarea
         v-model="textarea"
-        class="textarea is-success-focus"
+        class="is-success-focus"
         rows="2"
         placeholder="Success..."
-      ></textarea>
+      ></VTextarea>
     </VControl>
   </VField>
 
   <!-- is-info-focus -->
   <VField>
     <VControl>
-      <textarea
+      <VTextarea
         v-model="textarea"
         class="textarea is-info-focus"
         rows="2"
         placeholder="Info..."
-      ></textarea>
+      ></VTextarea>
     </VControl>
   </VField>
 
   <!-- is-warning-focus -->
   <VField>
     <VControl>
-      <textarea
+      <VTextarea
         v-model="textarea"
         class="textarea is-warning-focus"
         rows="2"
         placeholder="Warning..."
-      ></textarea>
+      ></VTextarea>
     </VControl>
   </VField>
 
   <!-- is-danger-focus -->
   <VField>
     <VControl>
-      <textarea
+      <VTextarea
         v-model="textarea"
         class="textarea is-danger-focus"
         rows="2"
         placeholder="Danger..."
-      ></textarea>
+      ></VTextarea>
     </VControl>
   </VField>
 </template>
@@ -89,52 +89,52 @@ const textarea = ref('')
 <div>
   <VField>
     <VControl>
-      <textarea
+      <VTextarea
         v-model="frontmatter.state.textarea"
         class="textarea is-primary-focus"
         rows="2"
         placeholder="Primary..."
-      ></textarea>
+      ></VTextarea>
     </VControl>
   </VField>
   <VField>
     <VControl>
-      <textarea
+      <VTextarea
         v-model="frontmatter.state.textarea"
         class="textarea is-success-focus"
         rows="2"
         placeholder="Success..."
-      ></textarea>
+      ></VTextarea>
     </VControl>
   </VField>
   <VField>
     <VControl>
-      <textarea
+      <VTextarea
         v-model="frontmatter.state.textarea"
         class="textarea is-info-focus"
         rows="2"
         placeholder="Info..."
-      ></textarea>
+      ></VTextarea>
     </VControl>
   </VField>
   <VField>
     <VControl>
-      <textarea
+      <VTextarea
         v-model="frontmatter.state.textarea"
         class="textarea is-warning-focus"
         rows="2"
         placeholder="Warning..."
-      ></textarea>
+      ></VTextarea>
     </VControl>
   </VField>
   <VField>
     <VControl>
-      <textarea
+      <VTextarea
         v-model="frontmatter.state.textarea"
         class="textarea is-danger-focus"
         rows="2"
         placeholder="Danger..."
-      ></textarea>
+      ></VTextarea>
     </VControl>
   </VField>
 </div>

@@ -18,7 +18,7 @@
     },
     "errors": {
       "name": {
-        "required": "Your name first name is required"
+        "required": "Your first name is required"
       },
       "email": {
         "required": "Enter your email, it will be required to login",

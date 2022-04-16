@@ -1,16 +1,12 @@
-<script lang="ts">
-let instances = 0
-</script>
-
 <script setup lang="ts">
-import { ref, watch } from 'vue'
+import { ref, watch, useAttrs } from 'vue'
 
 export type VSwitchSegmentColor = 'primary' | 'info' | 'success' | 'warning' | 'danger'
 export interface VSwitchSegmentEmits {
-  (e: 'update:modelValue', value: boolean): void
+  (e: 'update:modelValue', value: any): void
 }
 export interface VSwitchSegmentProps {
-  modelValue?: boolean
+  modelValue?: any
   labelTrue?: string
   labelFalse?: string
   color?: VSwitchSegmentColor
@@ -23,41 +19,34 @@ const props = withDefaults(defineProps<VSwitchSegmentProps>(), {
   labelFalse: undefined,
   color: undefined,
 })
-const blockSwitchId = `segment-switch-` + ++instances
 
 const value = ref(props.modelValue)
+
+const attrs = useAttrs()
 
 watch(value, () => {
   emit('update:modelValue', value.value)
 })
-watch(props.modelValue, () => {
-  value.value = props.modelValue
-})
+watch(
+  () => props.modelValue,
+  () => {
+    value.value = props.modelValue
+  }
+)
 </script>
 
 <template>
   <div class="switch-segment">
-    <label v-if="props.labelFalse" class="is-label" :for="blockSwitchId">
+    <VLabel v-if="props.labelFalse" raw class="is-label">
       {{ props.labelFalse }}
-    </label>
-    <label
-      :for="blockSwitchId"
-      class="form-switch"
-      :class="[props.color && `is-${props.color}`]"
-    >
-      <input
-        :id="blockSwitchId"
-        :checked="value"
-        v-bind="$attrs"
-        type="checkbox"
-        class="is-switch"
-        @change="value = !value"
-      />
+    </VLabel>
+    <VLabel raw class="form-switch" :class="[props.color && `is-${props.color}`]">
+      <VInput v-model="value" raw :v-bind="attrs" type="checkbox" class="is-switch" />
       <i aria-hidden="true"></i>
-    </label>
-    <label v-if="props.labelTrue" class="is-label" :for="blockSwitchId">
+    </VLabel>
+    <VLabel v-if="props.labelTrue" raw class="is-label">
       {{ props.labelTrue }}
-    </label>
+    </VLabel>
   </div>
 </template>
 

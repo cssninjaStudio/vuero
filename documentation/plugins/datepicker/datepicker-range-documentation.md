@@ -14,9 +14,9 @@ code example for more details about usage.
 
 ```vue
 <script setup lang="ts">
-import { reactive } from vue
+import { reactive } from 'vue'
 
-const date = reactive({
+const range = reactive({
   start: new Date(),
   end: new Date(),
 })
@@ -27,15 +27,13 @@ const date = reactive({
     <template #default="{ inputValue, inputEvents }">
       <VField addons>
         <VControl>
-          <input :value="inputValue.start" class="input" v-on="inputEvents.start" />
+          <VInput :value="inputValue.start" v-on="inputEvents.start" />
         </VControl>
         <VControl>
-          <a class="button is-static"
-            ><i class="iconify" data-icon="feather:arrow-right"></i
-          ></a>
+          <VButton static icon="feather:arrow-right" />
         </VControl>
-        <VControl>
-          <input :value="inputValue.end" class="input" v-on="inputEvents.end" />
+        <VControl subcontrol>
+          <VInput :value="inputValue.end" v-on="inputEvents.end" />
         </VControl>
       </VField>
     </template>
@@ -50,22 +48,14 @@ const date = reactive({
 <VDatePicker v-model="frontmatter.state.range" is-range color="green" trim-weeks>
   <template v-slot="{ inputValue, inputEvents }">
     <VField addons>
-      <VControl>
-        <input
-          :value="inputValue.start"
-          v-on="inputEvents.start"
-          class="input"
-        />
+      <VControl expanded icon="feather:corner-down-right">
+        <VInput :value="inputValue.start" v-on="inputEvents.start" />
       </VControl>
       <VControl>
-        <a class="button is-static"><i class="iconify" data-icon="feather:arrow-right"></i></a>
+        <VButton static>to</VButton>
       </VControl>
-      <VControl>
-        <input
-          :value="inputValue.end"
-          v-on="inputEvents.end"
-          class="input"
-        />
+      <VControl expanded icon="feather:corner-right-up" subcontrol>
+        <VInput :value="inputValue.end" v-on="inputEvents.end" />
       </VControl>
     </VField>
   </template>

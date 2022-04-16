@@ -1,6 +1,6 @@
 ### Feather Icons
 
-Vuero inputs are fully compatible with Feather Icons.
+Vuero `VInput` are fully compatible with any icons from [icones.js](https://icones.js.org/).
 Use the `icon` or `iconify` propson the `<VControl />`
 component to show an icon.
 
@@ -10,7 +10,7 @@ component to show an icon.
 <template>
   <VField>
     <VControl icon="feather:github">
-      <input type="text" class="input is-rounded" placeholder="GitHub URL" />
+      <VInput type="text" class="is-rounded" placeholder="GitHub URL" />
     </VControl>
   </VField>
 </template>
@@ -22,11 +22,11 @@ component to show an icon.
 
 <VField>
   <VControl icon="feather:github">
-    <input
-        type="text"
-        class="input is-rounded"
-        placeholder="GitHub URL"
-      />
+    <VInput
+      type="text"
+      class="is-rounded"
+      placeholder="GitHub URL"
+    />
   </VControl>
 </VField>
 

@@ -1,14 +1,16 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { ref, watch, reactive } from 'vue'
+import { useVFieldContext } from '/@src/composable/useVFieldContext'
 
 export type VRadioColor = 'primary' | 'info' | 'success' | 'warning' | 'danger'
 export interface VRadioEmits {
-  (e: 'update:modelValue', value: string | number): void
+  (e: 'update:modelValue', value: any): void
 }
 export interface VRadioProps {
-  value: string | number
-  modelValue?: string | number
-  name: string
+  id?: string
+  value: any
+  modelValue?: any
+  name?: string
   label?: string
   color?: VRadioColor
   square?: boolean
@@ -18,21 +20,35 @@ export interface VRadioProps {
 
 const emit = defineEmits<VRadioEmits>()
 const props = withDefaults(defineProps<VRadioProps>(), {
+  id: undefined,
   modelValue: undefined,
   label: undefined,
   color: undefined,
   paddingless: false,
 })
 
-const checked = computed(() => props.value === props.modelValue)
+const vFieldContext = reactive(
+  useVFieldContext({
+    id: props.id,
+    inherit: false,
+  })
+)
+const value = ref(vFieldContext?.field?.value ?? props.modelValue)
 
-function change() {
-  emit('update:modelValue', props.value)
-}
+watch(value, () => {
+  emit('update:modelValue', value.value)
+})
+watch(
+  () => props.modelValue,
+  () => {
+    value.value = props.modelValue
+  }
+)
 </script>
 
 <template>
-  <label
+  <VLabel
+    raw
     class="radio"
     :class="[
       props.solid ? 'is-solid' : 'is-outlined',
@@ -42,16 +58,16 @@ function change() {
     ]"
   >
     <input
+      :id="vFieldContext.id"
+      v-model="value"
       type="radio"
-      :checked="checked"
       :value="props.value"
       :name="props.name"
       v-bind="$attrs"
-      @change="change"
     />
     <span></span>
-    <slot>{{ props.label }}</slot>
-  </label>
+    <slot v-bind="vFieldContext">{{ props.label }}</slot>
+  </VLabel>
 </template>
 
 <style lang="scss">

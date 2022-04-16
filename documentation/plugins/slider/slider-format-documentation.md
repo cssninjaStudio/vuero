@@ -21,9 +21,9 @@ const format = (value) => {
 </script>
 
 <template>
-  <VField class="has-curved-tooltip">
+  <VField v-slot="{ id }" class="has-curved-tooltip">
     <VControl>
-      <Slider v-model="value" :format="(value) => `${value}%`" />
+      <Slider :id="id" v-model="value" :format="format" />
     </VControl>
   </VField>
 </template>
@@ -35,9 +35,10 @@ const format = (value) => {
 
 <div class="columns mt-2">
   <div class="column is-6">
-    <VField class="pt-5 px-4 has-curved-tooltip">
+    <VField v-slot="{ id }" class="pt-5 px-4 has-curved-tooltip">
       <VControl>
-        <Slider 
+        <Slider
+          :id="id" 
           v-model="frontmatter.state.value" 
           :format="(value) => value + '%'" 
         />

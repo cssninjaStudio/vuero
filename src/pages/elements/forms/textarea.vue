@@ -9,10 +9,10 @@ const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
 const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('Textarea')
+viewWrapper.setPageTitle('VTextarea')
 
 useHead({
-  title: 'Textarea - Forms Elements - Vuero',
+  title: 'VTextarea - Forms Elements - Vuero',
 })
 </script>
 
@@ -36,7 +36,7 @@ useHead({
           label: 'Forms',
         },
         {
-          label: 'Textarea',
+          label: 'VTextarea',
           to: { name: 'elements-forms-textarea' },
         },
       ]"

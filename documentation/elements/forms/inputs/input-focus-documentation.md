@@ -1,6 +1,6 @@
 ### Focus Colors
 
-An input can have different border colors when focused.
+An `VInput` can have different border colors when focused.
 Simply add the appropriate color modifier class.
 Available classes are `is-primary-focus`, `is-success-focus`,
 `is-info-focus`, `is-warning-focus`, `is-danger-focus`.
@@ -11,27 +11,27 @@ Available classes are `is-primary-focus`, `is-success-focus`,
 <template>
   <VField>
     <VControl>
-      <input type="text" class="input is-primary-focus" placeholder="Primary" />
+      <VInput type="text" class="is-primary-focus" placeholder="Primary" />
     </VControl>
   </VField>
   <VField>
     <VControl>
-      <input type="text" class="input is-info-focus" placeholder="Info" />
+      <VInput type="text" class="is-info-focus" placeholder="Info" />
     </VControl>
   </VField>
   <VField>
     <VControl>
-      <input type="text" class="input is-success-focus" placeholder="Success" />
+      <VInput type="text" class="is-success-focus" placeholder="Success" />
     </VControl>
   </VField>
   <VField>
     <VControl>
-      <input type="text" class="input is-warning-focus" placeholder="Warning" />
+      <VInput type="text" class="is-warning-focus" placeholder="Warning" />
     </VControl>
   </VField>
   <VField>
     <VControl>
-      <input type="text" class="input is-danger-focus" placeholder="Danger" />
+      <VInput type="text" class="is-danger-focus" placeholder="Danger" />
     </VControl>
   </VField>
 </template>
@@ -43,47 +43,47 @@ Available classes are `is-primary-focus`, `is-success-focus`,
 
 <VField>
   <VControl>
-    <input
-        type="text"
-        class="input is-primary-focus"
-        placeholder="Primary"
-      />
+    <VInput
+      type="text"
+      class="is-primary-focus"
+      placeholder="Primary"
+    />
   </VControl>
 </VField>
 <VField>
   <VControl>
-    <input
-        type="text"
-        class="input is-info-focus"
-        placeholder="Info"
-      />
+    <VInput
+      type="text"
+      class="is-info-focus"
+      placeholder="Info"
+    />
   </VControl>
 </VField>
 <VField>
   <VControl>
-    <input
-        type="text"
-        class="input is-success-focus"
-        placeholder="Success"
-      />
+    <VInput
+      type="text"
+      class="is-success-focus"
+      placeholder="Success"
+    />
   </VControl>
 </VField>
 <VField>
   <VControl>
-    <input
-        type="text"
-        class="input is-warning-focus"
-        placeholder="Warning"
-      />
+    <VInput
+      type="text"
+      class="is-warning-focus"
+      placeholder="Warning"
+    />
   </VControl>
 </VField>
 <VField>
   <VControl>
-    <input
-        type="text"
-        class="input is-danger-focus"
-        placeholder="Danger"
-      />
+    <VInput
+      type="text"
+      class="is-danger-focus"
+      placeholder="Danger"
+    />
   </VControl>
 </VField>
 

@@ -13,15 +13,16 @@ Check the code for more details.
 
 ```vue
 <script setup lang="ts">
-import { ref } from vue
+import { ref } from 'vue'
 
 const value = ref('')
 </script>
 
 <template>
-  <VField>
+  <VField v-slot="{ id }">
     <VControl>
       <VIMaskInput
+        :id="id"
         v-model="value"
         autocomplete="cc-csc"
         class="input"
@@ -39,17 +40,18 @@ const value = ref('')
 
 <!--example-->
 
-<VField>
+<VField v-slot="{ id }">
   <VControl>
-  <VIMaskInput
-    v-model="frontmatter.state.value"
-    autocomplete="cc-csc"
-    class="input"
-    :options="{
-      mask: '000',
-    }"
-    placeholder="3 digits code"
-  />
+    <VIMaskInput
+      :id="id"
+      v-model="frontmatter.state.value"
+      autocomplete="cc-csc"
+      class="input"
+      :options="{
+        mask: '000',
+      }"
+      placeholder="3 digits code"
+    />
   </VControl>
 </VField>
 

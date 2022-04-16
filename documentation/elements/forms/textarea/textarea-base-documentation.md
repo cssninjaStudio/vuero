@@ -3,11 +3,13 @@ state:
   textarea: ''
 ---
 
-### Textarea
+### VTextarea
 
-A standard Html5 text box to use in your applications. You can control
-the box text length with the `rows="*"` attribute. Like other form controls,
-textarea natively supports dark mode.
+Vuero provides elegant form controls with minimum styling.
+`VTextarea` accept all attributes that `<textarea>` accepts.
+You can control the box text length with the `rows="*"` attribute.
+Always wrap your inputs inside a `<VField />` and a `<VControl />`
+to build forms quickly and efficiently.
 
 <!--code-->
 
@@ -21,12 +23,11 @@ const textarea = ref('')
 <template>
   <VField>
     <VControl>
-      <textarea
+      <VTextarea
         v-model="textarea"
-        class="textarea"
         rows="4"
         placeholder="A longer message..."
-      ></textarea>
+      ></VTextarea>
     </VControl>
   </VField>
 </template>
@@ -38,10 +39,11 @@ const textarea = ref('')
 
 <VField>
   <VControl>
-    <textarea class="textarea" 
-        rows="4" 
-        placeholder="A longer message..." 
-        v-model="frontmatter.state.textarea"></textarea>
+    <VTextarea 
+      rows="4" 
+      placeholder="A longer message..." 
+      v-model="frontmatter.state.textarea"
+    ></VTextarea>
   </VControl>
 </VField>
 

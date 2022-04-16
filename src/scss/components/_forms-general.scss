@@ -396,6 +396,7 @@ select {
     font-family: var(--font);
     font-size: 0.9rem;
     color: var(--light-text) !important;
+    font-weight: 400;
   }
 }
 
@@ -496,7 +497,8 @@ select {
     }
 
     &.has-error {
-      input {
+      input,
+      select {
         border-color: var(--danger) !important;
         box-shadow: var(--light-box-shadow);
       }

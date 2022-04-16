@@ -69,11 +69,7 @@ const onRemoveFile = (error: any, fileInfo: any) => {
           <div class="project-name">
             <VField>
               <VControl>
-                <input
-                  v-model="wizard.data.name"
-                  class="input"
-                  placeholder="Project Name"
-                />
+                <VInput v-model="wizard.data.name" placeholder="Project Name" />
               </VControl>
             </VField>
           </div>

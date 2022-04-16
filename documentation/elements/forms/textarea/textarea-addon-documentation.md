@@ -3,9 +3,9 @@ state:
   textarea: ''
 ---
 
-### Textarea addon
+### VTextarea addon
 
-Textareas that are wrapped by a control and a field can have a single
+`VTextarea` that are wrapped by a control and a field can have a single
 bottom addon. You can use it to display a toolbar or any type of user actions.
 Use the `textaddon` prop on the `<VField />` and the second `<VControl />`
 component. Please refer to the code example for more details about usage.
@@ -22,12 +22,11 @@ const textarea = ref('')
 <template>
   <VField textaddon>
     <VControl>
-      <textarea
+      <VTextarea
         v-model="textarea"
-        class="textarea"
         rows="4"
         placeholder="A longer message..."
-      ></textarea>
+      ></VTextarea>
     </VControl>
 
     <VControl textaddon>
@@ -52,12 +51,11 @@ const textarea = ref('')
 
 <VField textaddon>
   <VControl>
-    <textarea
+    <VTextarea
       v-model="frontmatter.state.textarea"
-      class="textarea"
       rows="4"
       placeholder="A longer message..."
-    ></textarea>
+    ></VTextarea>
   </VControl>
   <VControl textaddon>
     <div class="start">

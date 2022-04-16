@@ -1,4 +1,4 @@
-### Start Addon
+### Start addons
 
 Inputs can have addons if you need to show contextual information.
 You can attach an addon at the start of a `<VField />` with the `addons`
@@ -10,10 +10,10 @@ prop. See markup for more details about usage.
 <template>
   <VField addons>
     <VControl>
-      <a class="button is-static">+1</a>
+      <VButton static>+1</VButton>
     </VControl>
     <VControl expanded>
-      <input type="text" class="input" placeholder="Username" />
+      <VInput type="text" class="input" placeholder="Username" />
     </VControl>
   </VField>
 </template>
@@ -24,16 +24,12 @@ prop. See markup for more details about usage.
 <!--example-->
 
 <VField addons>
-    <VControl>
-        <a class="button is-static">+1</a>
-    </VControl>
-    <VControl expanded>
-        <input
-            type="text"
-            class="input"
-            placeholder="Username"
-        />
-    </VControl>
+  <VControl>
+    <VButton static>+1</VButton>
+  </VControl>
+  <VControl expanded>
+    <VInput type="text" class="input" placeholder="Username" />
+  </VControl>
 </VField>
 
 <!--/example-->

@@ -59,7 +59,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
             <div class="alert-subtitle">Create a job alert now and never miss a job</div>
             <VField>
               <VControl icon="feather:briefcase">
-                <input type="text" class="input" placeholder="Keywords" />
+                <VInput type="text" placeholder="Keywords" />
               </VControl>
             </VField>
             <VButton color="primary" fullwidth>Create Job Alert</VButton>

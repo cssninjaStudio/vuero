@@ -1,6 +1,6 @@
 ### Line Icons
 
-Vuero inputs are fully compatible with Line Icons.
+Vuero `VInput` are fully compatible with Line Icons.
 Use the `icon` or `iconify` props on the `<VControl />`
 component to show an icon.
 
@@ -10,7 +10,7 @@ component to show an icon.
 <template>
   <VField>
     <VControl icon="lnil lnil-briefcase">
-      <input type="text" class="input" placeholder="Company" />
+      <VInput type="text" placeholder="Company" />
     </VControl>
   </VField>
 </template>
@@ -22,11 +22,10 @@ component to show an icon.
 
 <VField>
   <VControl icon="lnil lnil-briefcase">
-    <input
-        type="text"
-        class="input"
-        placeholder="Company"
-      />
+    <VInput
+      type="text"
+      placeholder="Company"
+    />
   </VControl>
 </VField>
 

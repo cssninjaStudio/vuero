@@ -19,7 +19,11 @@ const value = ref(true)
 </script>
 
 <template>
-  <VSwitchBlock v-model="value" label="Some option" thin />
+  <VField>
+    <VControl>
+      <VSwitchBlock v-model="value" label="Some option" thin />
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -28,11 +32,15 @@ const value = ref(true)
 <!--example-->
 
 <div>
-  <VSwitchBlock 
-    v-model="frontmatter.state.value" 
-    label="Some option" 
-    thin 
-  />
+  <VField>
+    <VControl>
+      <VSwitchBlock 
+        v-model="frontmatter.state.value" 
+        label="Some option" 
+        thin 
+      />
+    </VControl>
+  </VField>
 </div>
 
 <!--/example-->

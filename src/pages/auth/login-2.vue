@@ -110,8 +110,7 @@ useHead({
                       <!-- Username -->
                       <VField>
                         <VControl icon="feather:user">
-                          <input
-                            class="input"
+                          <VInput
                             type="text"
                             placeholder="Username"
                             autocomplete="username"
@@ -122,8 +121,7 @@ useHead({
                       <!-- Password -->
                       <VField>
                         <VControl icon="feather:lock">
-                          <input
-                            class="input"
+                          <VInput
                             type="password"
                             placeholder="Password"
                             autocomplete="current-password"
@@ -132,20 +130,14 @@ useHead({
                       </VField>
 
                       <!-- Switch -->
-                      <VControl class="setting-item">
-                        <label for="remember-me" class="form-switch is-primary">
-                          <input id="remember-me" type="checkbox" class="is-switch" />
-                          <i aria-hidden="true"></i>
-                        </label>
-                        <div class="setting-meta">
-                          <label for="remember-me">
-                            <span>Remember Me</span>
-                          </label>
-                        </div>
-                      </VControl>
+                      <VField>
+                        <VControl class="setting-item">
+                          <VCheckbox label="Remember me" paddingless />
+                        </VControl>
+                      </VField>
 
                       <!-- Submit -->
-                      <VControl class="login">
+                      <div class="login">
                         <VButton
                           :loading="isLoading"
                           color="primary"
@@ -156,7 +148,7 @@ useHead({
                         >
                           Sign In
                         </VButton>
-                      </VControl>
+                      </div>
 
                       <div class="forgot-link has-text-centered">
                         <a>Forgot Password?</a>

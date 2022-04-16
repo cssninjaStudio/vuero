@@ -152,12 +152,7 @@ const onSave = async () => {
           <div class="column is-6">
             <VField>
               <VControl icon="feather:user">
-                <input
-                  type="text"
-                  class="input"
-                  placeholder="First Name"
-                  autocomplete="given-name"
-                />
+                <VInput type="text" placeholder="First Name" autocomplete="given-name" />
               </VControl>
             </VField>
           </div>
@@ -165,12 +160,7 @@ const onSave = async () => {
           <div class="column is-6">
             <VField>
               <VControl icon="feather:user">
-                <input
-                  type="text"
-                  class="input"
-                  placeholder="Last Name"
-                  autocomplete="family-name"
-                />
+                <VInput type="text" placeholder="Last Name" autocomplete="family-name" />
               </VControl>
             </VField>
           </div>
@@ -178,9 +168,8 @@ const onSave = async () => {
           <div class="column is-12">
             <VField>
               <VControl icon="feather:briefcase">
-                <input
+                <VInput
                   type="text"
-                  class="input"
                   placeholder="Job Title"
                   autocomplete="organization-title"
                 />
@@ -191,12 +180,7 @@ const onSave = async () => {
           <div class="column is-12">
             <VField>
               <VControl icon="feather:map-pin">
-                <input
-                  type="text"
-                  class="input"
-                  placeholder="Location"
-                  autocomplete="country-name"
-                />
+                <VInput type="text" placeholder="Location" autocomplete="country-name" />
               </VControl>
             </VField>
           </div>
@@ -204,14 +188,13 @@ const onSave = async () => {
           <div class="column is-12">
             <VField>
               <VControl>
-                <textarea
-                  class="textarea"
+                <VTextarea
                   rows="4"
                   placeholder="About / Bio"
                   autocomplete="off"
                   autocapitalize="off"
                   spellcheck="true"
-                ></textarea>
+                />
               </VControl>
             </VField>
           </div>
@@ -227,9 +210,10 @@ const onSave = async () => {
         <div class="columns is-multiline">
           <!--Field-->
           <div class="column is-6">
-            <VField>
+            <VField v-slot="{ id }">
               <VControl>
                 <Multiselect
+                  :id="id"
                   v-model="experience"
                   placeholder="Experience"
                   :options="['0-2 years', '2-5 years', '5-10 years', '10+ years']"
@@ -239,9 +223,10 @@ const onSave = async () => {
           </div>
           <!--Field-->
           <div class="column is-6">
-            <VField>
+            <VField v-slot="{ id }">
               <VControl>
                 <Multiselect
+                  :id="id"
                   v-model="firstJob"
                   placeholder="Is this your first job?"
                   :options="['Yes', 'No']"
@@ -251,9 +236,10 @@ const onSave = async () => {
           </div>
           <!--Field-->
           <div class="column is-6">
-            <VField>
+            <VField v-slot="{ id }">
               <VControl>
                 <Multiselect
+                  :id="id"
                   v-model="flexibility"
                   placeholder="Are you flexible?"
                   :options="['Yes', 'No']"
@@ -263,9 +249,10 @@ const onSave = async () => {
           </div>
           <!--Field-->
           <div class="column is-6">
-            <VField>
+            <VField v-slot="{ id }">
               <VControl>
                 <Multiselect
+                  :id="id"
                   v-model="remote"
                   placeholder="Do you work remotely?"
                   :options="['Yes', 'No']"
@@ -275,9 +262,10 @@ const onSave = async () => {
           </div>
           <!--Field-->
           <div class="column is-12">
-            <VField>
+            <VField v-slot="{ id }">
               <VControl>
                 <Multiselect
+                  :id="id"
                   v-model="skills"
                   mode="tags"
                   :searchable="true"
@@ -302,12 +290,7 @@ const onSave = async () => {
           <div class="column is-6">
             <VField>
               <VControl icon="fab fa-facebook-f">
-                <input
-                  type="text"
-                  class="input"
-                  placeholder="Facebook URL"
-                  inputmode="url"
-                />
+                <VInput type="text" placeholder="Facebook URL" inputmode="url" />
               </VControl>
             </VField>
           </div>
@@ -315,12 +298,7 @@ const onSave = async () => {
           <div class="column is-6">
             <VField>
               <VControl icon="fab fa-twitter">
-                <input
-                  type="text"
-                  class="input"
-                  placeholder="Twitter URL"
-                  inputmode="url"
-                />
+                <VInput type="text" placeholder="Twitter URL" inputmode="url" />
               </VControl>
             </VField>
           </div>
@@ -328,12 +306,7 @@ const onSave = async () => {
           <div class="column is-6">
             <VField>
               <VControl icon="fab fa-dribbble">
-                <input
-                  type="text"
-                  class="input"
-                  placeholder="Dribbble URL"
-                  inputmode="url"
-                />
+                <VInput type="text" placeholder="Dribbble URL" inputmode="url" />
               </VControl>
             </VField>
           </div>
@@ -341,12 +314,7 @@ const onSave = async () => {
           <div class="column is-6">
             <VField>
               <VControl icon="fab fa-instagram">
-                <input
-                  type="text"
-                  class="input"
-                  placeholder="Instagram URL"
-                  inputmode="url"
-                />
+                <VInput type="text" placeholder="Instagram URL" inputmode="url" />
               </VControl>
             </VField>
           </div>
@@ -354,12 +322,7 @@ const onSave = async () => {
           <div class="column is-6">
             <VField>
               <VControl icon="fab fa-github">
-                <input
-                  type="text"
-                  class="input"
-                  placeholder="Github URL"
-                  inputmode="url"
-                />
+                <VInput type="text" placeholder="Github URL" inputmode="url" />
               </VControl>
             </VField>
           </div>
@@ -367,12 +330,7 @@ const onSave = async () => {
           <div class="column is-6">
             <VField>
               <VControl icon="fab fa-gitlab">
-                <input
-                  type="text"
-                  class="input"
-                  placeholder="Gitlab URL"
-                  inputmode="url"
-                />
+                <VInput type="text" placeholder="Gitlab URL" inputmode="url" />
               </VControl>
             </VField>
           </div>

@@ -18,10 +18,14 @@ const isStuck = computed(() => {
 })
 
 const options = ref(['All day'])
+
+const onSubmit = () => {
+  console.log('Form submitted!')
+}
 </script>
 
 <template>
-  <div class="form-layout is-stacked">
+  <form class="form-layout is-stacked" @submit.prevent="onSubmit">
     <div class="form-outer">
       <div :class="[isStuck && 'is-stuck']" class="form-header stuck-header">
         <div class="form-header-inner">
@@ -38,7 +42,7 @@ const options = ref(['All day'])
               >
                 Cancel
               </VButton>
-              <VButton color="primary" raised> Schedule </VButton>
+              <VButton type="submit" color="primary" raised> Schedule </VButton>
             </div>
           </div>
         </div>
@@ -49,11 +53,7 @@ const options = ref(['All day'])
             <div class="column is-12">
               <VField>
                 <VControl icon="feather:slack">
-                  <input
-                    type="text"
-                    class="input"
-                    placeholder="What is this meeting about?"
-                  />
+                  <VInput type="text" placeholder="What is this meeting about?" />
                 </VControl>
               </VField>
             </div>
@@ -69,10 +69,10 @@ const options = ref(['All day'])
                 <div class="columns v-calendar-combo">
                   <div class="column is-6">
                     <VField>
-                      <label>Meeting date</label>
+                      <VLabel>Meeting start date</VLabel>
 
                       <VControl icon="feather:calendar">
-                        <input
+                        <VInput
                           placeholder="Start Date"
                           :value="inputValue.start"
                           class="input form-datepicker"
@@ -83,10 +83,10 @@ const options = ref(['All day'])
                   </div>
                   <div class="column is-6">
                     <VField>
-                      <label class="is-vhidden">Meeting date</label>
+                      <VLabel class="is-vhidden">Meeting end date</VLabel>
 
                       <VControl icon="feather:calendar">
-                        <input
+                        <VInput
                           placeholder="End Date"
                           :value="inputValue.end"
                           class="input form-datepicker"
@@ -108,9 +108,9 @@ const options = ref(['All day'])
             >
               <template #default="{ inputValue, inputEvents }">
                 <VField>
-                  <label>Meeting time</label>
+                  <VLabel>Meeting start time</VLabel>
                   <VControl>
-                    <input
+                    <VInput
                       class="input form-timepicker"
                       :value="inputValue"
                       v-on="inputEvents"
@@ -129,9 +129,9 @@ const options = ref(['All day'])
             >
               <template #default="{ inputValue, inputEvents }">
                 <VField>
-                  <label class="is-vhidden">Meeting time</label>
+                  <VLabel class="is-vhidden">Meeting end time</VLabel>
                   <VControl>
-                    <input
+                    <VInput
                       class="input form-timepicker"
                       :value="inputValue"
                       v-on="inputEvents"
@@ -144,19 +144,17 @@ const options = ref(['All day'])
             <div class="column is-12">
               <VField>
                 <VControl>
-                  <VCheckbox
+                  <VRadio
                     v-model="options"
                     value="All day"
                     label="All day"
                     color="primary"
-                    circle
                   />
-                  <VCheckbox
+                  <VRadio
                     v-model="options"
                     value="Repeat every week"
                     label="Repeat every week"
                     color="primary"
-                    circle
                   />
                 </VControl>
               </VField>
@@ -175,274 +173,227 @@ const options = ref(['All day'])
           </div>
 
           <div class="form-section-inner is-horizontal">
-            <div class="field is-horizontal">
-              <div class="field-label is-normal">
-                <label class="label">Participants</label>
-              </div>
-              <div class="field-body">
-                <VField>
-                  <VControl>
-                    <div class="participants">
-                      <div>
-                        <Tippy class="has-help-cursor" interactive placement="top-start">
-                          <VAvatar picture="/images/avatars/svg/vuero-1.svg" />
-                          <template #content>
-                            <UserPopoverContent :user="popovers.user8" />
-                          </template>
-                        </Tippy>
-                      </div>
+            <VField v-slot="{ id }" horizontal label="Participants">
+              <VControl>
+                <div class="participants">
+                  <div>
+                    <Tippy class="has-help-cursor" interactive placement="top-start">
+                      <VAvatar picture="/images/avatars/svg/vuero-1.svg" />
+                      <template #content>
+                        <UserPopoverContent :user="popovers.user8" />
+                      </template>
+                    </Tippy>
+                  </div>
 
-                      <div>
-                        <Tippy class="has-help-cursor" interactive placement="top-start">
-                          <VAvatar color="warning" initials="BT" />
-                          <template #content>
-                            <UserPopoverContent :user="popovers.user122" />
-                          </template>
-                        </Tippy>
-                      </div>
+                  <div>
+                    <Tippy class="has-help-cursor" interactive placement="top-start">
+                      <VAvatar color="warning" initials="BT" />
+                      <template #content>
+                        <UserPopoverContent :user="popovers.user122" />
+                      </template>
+                    </Tippy>
+                  </div>
 
-                      <div>
-                        <Tippy class="has-help-cursor" interactive placement="top-start">
-                          <VAvatar picture="/demo/avatars/18.jpg" />
-                          <template #content>
-                            <UserPopoverContent :user="popovers.user18" />
-                          </template>
-                        </Tippy>
-                      </div>
+                  <div>
+                    <Tippy class="has-help-cursor" interactive placement="top-start">
+                      <VAvatar picture="/demo/avatars/18.jpg" />
+                      <template #content>
+                        <UserPopoverContent :user="popovers.user18" />
+                      </template>
+                    </Tippy>
+                  </div>
 
-                      <div>
-                        <Tippy class="has-help-cursor" interactive placement="top-start">
-                          <VAvatar color="info" initials="JD" />
-                          <template #content>
-                            <UserPopoverContent :user="popovers.user123" />
-                          </template>
-                        </Tippy>
-                      </div>
+                  <div>
+                    <Tippy class="has-help-cursor" interactive placement="top-start">
+                      <VAvatar color="info" initials="JD" />
+                      <template #content>
+                        <UserPopoverContent :user="popovers.user123" />
+                      </template>
+                    </Tippy>
+                  </div>
 
-                      <div>
-                        <Tippy class="has-help-cursor" interactive placement="top-start">
-                          <VAvatar picture="/demo/avatars/7.jpg" />
-                          <template #content>
-                            <UserPopoverContent :user="popovers.user7" />
-                          </template>
-                        </Tippy>
-                      </div>
+                  <div>
+                    <Tippy class="has-help-cursor" interactive placement="top-start">
+                      <VAvatar picture="/demo/avatars/7.jpg" />
+                      <template #content>
+                        <UserPopoverContent :user="popovers.user7" />
+                      </template>
+                    </Tippy>
+                  </div>
 
-                      <button class="add-participant">
-                        <i
-                          aria-hidden="true"
-                          class="iconify"
-                          data-icon="feather:plus"
-                        ></i>
-                      </button>
-                    </div>
-                  </VControl>
-                </VField>
-              </div>
-            </div>
+                  <button :id="id" type="button" class="add-participant">
+                    <i aria-hidden="true" class="iconify" data-icon="feather:plus"></i>
+                  </button>
+                </div>
+              </VControl>
+            </VField>
 
-            <div class="field is-horizontal">
-              <div class="field-label is-normal">
-                <label class="label">Where</label>
-              </div>
-              <div class="field-body">
-                <VField>
-                  <VControl icon="feather:map-pin">
-                    <input class="input" type="text" placeholder="e.g. Conference room" />
-                  </VControl>
-                </VField>
-              </div>
-            </div>
-            <div class="field is-horizontal">
-              <div class="field-label is-normal">
-                <label class="label">Meeting URL</label>
-              </div>
-              <div class="field-body">
-                <VField>
-                  <VControl icon="feather:map-pin">
-                    <input
-                      class="input"
-                      type="url"
-                      placeholder="https://zoom.com/m/156546"
-                      inputmode="url"
-                    />
-                  </VControl>
-                </VField>
-              </div>
-            </div>
-            <div class="field is-horizontal">
-              <div class="field-label is-normal">
-                <label class="label">Calendar</label>
-              </div>
-              <div class="field-body">
-                <VField>
-                  <VControl>
-                    <Multiselect
-                      v-model="calendarTarget"
-                      placeholder="Pick a calendar"
-                      :options="['My Calendar', 'Team Calendar', 'Company Calendar']"
-                    />
-                  </VControl>
-                </VField>
-              </div>
-            </div>
-            <div class="field is-horizontal">
-              <div class="field-label is-normal">
-                <label class="label">Description</label>
-              </div>
-              <div class="field-body">
-                <VField>
-                  <VControl>
-                    <textarea
-                      class="textarea"
-                      rows="4"
-                      placeholder="Tell us about any details you'd like us to know..."
-                      autocomplete="off"
-                      autocapitalize="off"
-                      spellcheck="true"
-                    ></textarea>
-                    <a class="add-link">Add Attachments</a>
-                  </VControl>
-                </VField>
-              </div>
-            </div>
+            <VField horizontal label="Where">
+              <VControl icon="feather:map-pin" fullwidth>
+                <VInput type="text" placeholder="e.g. Conference room" />
+              </VControl>
+            </VField>
+            <VField horizontal label="Meeting URL">
+              <VControl icon="feather:map-pin" fullwidth>
+                <VInput
+                  type="url"
+                  placeholder="https://zoom.com/m/156546"
+                  inputmode="url"
+                />
+              </VControl>
+            </VField>
+            <VField v-slot="{ id }" horizontal label="Clendar">
+              <VControl fullwidth>
+                <Multiselect
+                  :id="id"
+                  v-model="calendarTarget"
+                  placeholder="Pick a calendar"
+                  :options="['My Calendar', 'Team Calendar', 'Company Calendar']"
+                />
+              </VControl>
+            </VField>
+
+            <VField horizontal label="Description">
+              <VControl fullwidth>
+                <VTextarea
+                  class="textarea"
+                  rows="4"
+                  placeholder="Tell us about any details you'd like us to know..."
+                  autocomplete="off"
+                  autocapitalize="off"
+                  spellcheck="true"
+                />
+                <a class="add-link">Add Attachments</a>
+              </VControl>
+            </VField>
           </div>
         </div>
 
         <div class="form-section is-grey">
           <div class="form-section-inner is-horizontal">
-            <div class="field is-horizontal">
-              <div class="field-label is-normal">
-                <label class="label">Color Code</label>
-              </div>
-              <div class="field-body">
-                <VField>
-                  <VControl>
-                    <div class="color-codes">
-                      <div
-                        :class="[selectedColor === 'primary' && 'is-active']"
-                        tabindex="0"
-                        class="color-code is-primary"
-                        @click="selectedColor = 'primary'"
-                        @keydown.space.prevent="selectedColor = 'primary'"
-                      ></div>
-                      <div
-                        :class="[selectedColor === 'secondary' && 'is-active']"
-                        tabindex="0"
-                        class="color-code is-secondary"
-                        @click="selectedColor = 'secondary'"
-                        @keydown.space.prevent="selectedColor = 'secondary'"
-                      ></div>
-                      <div
-                        :class="[selectedColor === 'info' && 'is-active']"
-                        tabindex="0"
-                        class="color-code is-info"
-                        @click="selectedColor = 'info'"
-                        @keydown.space.prevent="selectedColor = 'info'"
-                      ></div>
-                      <div
-                        :class="[selectedColor === 'success' && 'is-active']"
-                        tabindex="0"
-                        class="color-code is-success"
-                        @click="selectedColor = 'success'"
-                        @keydown.space.prevent="selectedColor = 'success'"
-                      ></div>
-                      <div
-                        :class="[selectedColor === 'purple' && 'is-active']"
-                        tabindex="0"
-                        class="color-code is-purple"
-                        @click="selectedColor = 'purple'"
-                        @keydown.space.prevent="selectedColor = 'purple'"
-                      ></div>
-                    </div>
-                  </VControl>
-                </VField>
-              </div>
-            </div>
-            <div class="field is-horizontal">
-              <div class="field-label is-normal">
-                <label class="label">Notifications</label>
-              </div>
-              <div class="field-body">
-                <VField>
-                  <VControl>
-                    <Multiselect
-                      v-model="notificationMedium"
-                      placeholder="Select a channel"
-                      :options="['Email', 'SMS', 'Slack', 'Project Board']"
-                    />
-                    <a class="add-link">Add Notification</a>
-                  </VControl>
-                </VField>
+            <VField horizontal label="Color Code">
+              <VControl fullwidth>
+                <div class="color-codes">
+                  <div
+                    :class="[selectedColor === 'primary' && 'is-active']"
+                    tabindex="0"
+                    class="color-code is-primary"
+                    @click="selectedColor = 'primary'"
+                    @keydown.space.prevent="selectedColor = 'primary'"
+                  ></div>
+                  <div
+                    :class="[selectedColor === 'secondary' && 'is-active']"
+                    tabindex="0"
+                    class="color-code is-secondary"
+                    @click="selectedColor = 'secondary'"
+                    @keydown.space.prevent="selectedColor = 'secondary'"
+                  ></div>
+                  <div
+                    :class="[selectedColor === 'info' && 'is-active']"
+                    tabindex="0"
+                    class="color-code is-info"
+                    @click="selectedColor = 'info'"
+                    @keydown.space.prevent="selectedColor = 'info'"
+                  ></div>
+                  <div
+                    :class="[selectedColor === 'success' && 'is-active']"
+                    tabindex="0"
+                    class="color-code is-success"
+                    @click="selectedColor = 'success'"
+                    @keydown.space.prevent="selectedColor = 'success'"
+                  ></div>
+                  <div
+                    :class="[selectedColor === 'purple' && 'is-active']"
+                    tabindex="0"
+                    class="color-code is-purple"
+                    @click="selectedColor = 'purple'"
+                    @keydown.space.prevent="selectedColor = 'purple'"
+                  ></div>
+                </div>
+              </VControl>
+            </VField>
 
-                <VField class="is-image-select">
-                  <VControl>
-                    <Multiselect
-                      v-model="notificationTarget"
-                      placeholder="Select a target"
-                      label="name"
-                      value="name"
-                      :options="[
-                        {
-                          name: 'All',
-                          value: '',
-                          icon: '/images/avatars/placeholder.jpg',
-                        },
-                        {
-                          name: 'Erik K.',
-                          value: 'eric',
-                          icon: '/images/avatars/svg/vuero-1.svg',
-                        },
-                        {
-                          name: 'Joshua S.',
-                          value: 'joshua',
-                          icon: '/demo/avatars/12.jpg',
-                        },
-                        {
-                          name: 'Melany W.',
-                          value: 'melany',
-                          icon: '/demo/avatars/25.jpg',
-                        },
-                        {
-                          name: 'Alice C.',
-                          value: 'alice',
-                          icon: '/demo/avatars/7.jpg',
-                        },
-                        {
-                          name: 'Esteban C.',
-                          value: 'esteban',
-                          icon: '/demo/avatars/18.jpg',
-                        },
-                      ]"
-                    >
-                      <template #singlelabel="{ value }">
-                        <div class="multiselect-single-label">
-                          <img class="select-label-icon" :src="value.icon" alt="" />
-                          <span class="select-label-text">
-                            {{ value.name }}
-                          </span>
-                        </div>
-                      </template>
-                      <template #option="{ option }">
-                        <img class="select-option-icon" :src="option.icon" alt="" />
+            <VField horizontal label="Notifications">
+              <VField v-slot="{ id }">
+                <VControl>
+                  <Multiselect
+                    :id="id"
+                    v-model="notificationMedium"
+                    placeholder="Select a channel"
+                    :options="['Email', 'SMS', 'Slack', 'Project Board']"
+                  />
+                  <a class="add-link">Add Notification</a>
+                </VControl>
+              </VField>
+              <VField v-slot="{ id }" subcontrol>
+                <VControl class="is-image-select">
+                  <Multiselect
+                    :id="id"
+                    v-model="notificationTarget"
+                    placeholder="Select a target"
+                    label="name"
+                    value="name"
+                    :options="[
+                      {
+                        name: 'All',
+                        value: '',
+                        icon: '/images/avatars/placeholder.jpg',
+                      },
+                      {
+                        name: 'Erik K.',
+                        value: 'eric',
+                        icon: '/images/avatars/svg/vuero-1.svg',
+                      },
+                      {
+                        name: 'Joshua S.',
+                        value: 'joshua',
+                        icon: '/demo/avatars/12.jpg',
+                      },
+                      {
+                        name: 'Melany W.',
+                        value: 'melany',
+                        icon: '/demo/avatars/25.jpg',
+                      },
+                      {
+                        name: 'Alice C.',
+                        value: 'alice',
+                        icon: '/demo/avatars/7.jpg',
+                      },
+                      {
+                        name: 'Esteban C.',
+                        value: 'esteban',
+                        icon: '/demo/avatars/18.jpg',
+                      },
+                    ]"
+                  >
+                    <template #singlelabel="{ value }">
+                      <div class="multiselect-single-label">
+                        <img class="select-label-icon" :src="value.icon" alt="" />
                         <span class="select-label-text">
-                          {{ option.name }}
+                          {{ value.name }}
                         </span>
-                      </template>
-                    </Multiselect>
-                  </VControl>
-                </VField>
-              </div>
-            </div>
+                      </div>
+                    </template>
+                    <template #option="{ option }">
+                      <img class="select-option-icon" :src="option.icon" alt="" />
+                      <span class="select-label-text">
+                        {{ option.name }}
+                      </span>
+                    </template>
+                  </Multiselect>
+                </VControl>
+              </VField>
+            </VField>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </form>
 </template>
 
 <style lang="scss">
 @import '/@src/scss/abstracts/all';
+@import '/@src/scss/components/forms-outer';
 
 .is-navbar {
   .form-layout {
@@ -643,47 +594,6 @@ const options = ref(['All day'])
       }
     }
   }
-
-  .form-outer {
-    @include vuero-s-card;
-
-    padding: 0;
-
-    .form-header {
-      padding: 12px 20px;
-      border-bottom: 1px solid var(--fade-grey-dark-3);
-      transition: all 0.3s; // transition-all test
-
-      &.is-stuck {
-        background: var(--white);
-        padding-right: 80px;
-        border-left: 1px solid var(--fade-grey-dark-3);
-      }
-
-      .form-header-inner {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-
-      .left {
-        h3 {
-          font-family: var(--font-alt);
-          font-size: 1.2rem;
-          font-weight: 600;
-          line-height: 1.3;
-        }
-
-        p {
-          font-size: 0.95rem;
-        }
-      }
-    }
-
-    .form-body {
-      padding: 20px 40px 40px;
-    }
-  }
 }
 
 .is-dark {
@@ -736,38 +646,6 @@ const options = ref(['All day'])
         }
       }
     }
-
-    .form-outer {
-      @include vuero-card--dark;
-
-      .form-header {
-        border-color: var(--dark-sidebar-light-12);
-
-        &.is-stuck {
-          background: var(--dark-sidebar);
-          border-color: var(--dark-sidebar-light-6);
-        }
-
-        .left {
-          h3 {
-            color: var(--dark-dark-text);
-          }
-        }
-      }
-
-      .form-body {
-        .field {
-          .control {
-            .input,
-            .textarea {
-              &:focus {
-                border-color: var(--primary);
-              }
-            }
-          }
-        }
-      }
-    }
   }
 }
 
@@ -795,34 +673,6 @@ const options = ref(['All day'])
 
           &:last-child {
             padding-right: 0 !important;
-          }
-        }
-      }
-    }
-
-    .form-outer {
-      .form-header {
-        .form-header-inner {
-          flex-direction: column;
-
-          .left {
-            text-align: center;
-            margin-bottom: 12px;
-          }
-
-          .right {
-            width: 100%;
-
-            .buttons {
-              display: flex;
-              justify-content: space-between;
-              margin: 0;
-
-              .button {
-                margin: 0;
-                width: 49%;
-              }
-            }
           }
         }
       }

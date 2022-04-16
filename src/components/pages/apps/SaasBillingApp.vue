@@ -55,9 +55,9 @@ const selected = ref('value_2')
       <div class="left">
         <div class="inner-wrap">
           <h3>Select a Plan</h3>
-          <div class="plans">
-            <div v-for="plan in plans" :key="plan.id" class="plan">
-              <input
+          <VField class="plans">
+            <VControl v-for="plan in plans" :key="plan.id" class="plan" subcontrol>
+              <VInput
                 type="radio"
                 name="plan_selection"
                 :checked="selectedPlanId === plan.id"
@@ -65,7 +65,7 @@ const selected = ref('value_2')
                 @keydown.space.prevent="selectedPlanId = plan.id"
                 @click="selectedPlanId = plan.id"
               />
-              <div class="plan-inner">
+              <VLabel raw class="plan-inner">
                 <img :src="plan.icon" alt="" />
                 <div class="meta">
                   <span>{{ plan.name }}</span>
@@ -74,9 +74,9 @@ const selected = ref('value_2')
                 <div class="checkmark">
                   <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                 </div>
-              </div>
-            </div>
-          </div>
+              </VLabel>
+            </VControl>
+          </VField>
         </div>
       </div>
       <div class="right">
@@ -191,23 +191,27 @@ const selected = ref('value_2')
           </div>
         </div>
 
-        <div class="option-block">
+        <VField class="option-block">
           <div class="block-header">
             <h3>Options</h3>
           </div>
           <div class="block-body">
-            <VSwitchBlock
-              v-model="invoces"
-              label="Send new invoices to my inbox"
-              color="primary"
-            />
-            <VSwitchBlock
-              v-model="warnBilling"
-              label="Warn me before the end of the billing period"
-              color="primary"
-            />
+            <VControl>
+              <VSwitchBlock
+                v-model="invoces"
+                label="Send new invoices to my inbox"
+                color="primary"
+              />
+            </VControl>
+            <VControl subcontrol>
+              <VSwitchBlock
+                v-model="warnBilling"
+                label="Warn me before the end of the billing period"
+                color="primary"
+              />
+            </VControl>
           </div>
-        </div>
+        </VField>
 
         <div class="option-block">
           <div class="block-header">
@@ -264,14 +268,11 @@ const selected = ref('value_2')
           <div class="form-container">
             <div class="columns is-multiline">
               <div class="column is-12">
-                <VField>
-                  <label for="name">Name</label>
+                <VField id="name" label="Name">
                   <VControl>
-                    <input
-                      id="name"
+                    <VInput
                       v-model="creditcardInput.name"
                       autocomplete="cc-given-name"
-                      class="input"
                       maxlength="20"
                       type="text"
                       placeholder="The name on the card"
@@ -281,14 +282,13 @@ const selected = ref('value_2')
                 </VField>
               </div>
               <div class="column is-12">
-                <VField>
-                  <label for="cardnumber">Card Number</label>
+                <VField id="cardnumber" v-slot="{ id }" label="Card Number">
                   <VControl>
                     <VIMaskInput
-                      id="cardnumber"
+                      :id="id"
                       v-model="creditcardInput.number"
-                      autocomplete="cc-number"
                       class="input"
+                      autocomplete="cc-number"
                       :options="creditcardMaskNumber"
                       placeholder="Credit card number"
                       @focus="isCardFlipped = false"
@@ -305,11 +305,10 @@ const selected = ref('value_2')
                 </VField>
               </div>
               <div class="column is-6">
-                <VField>
-                  <label for="expirationdate">Expiration</label>
+                <VField id="expirationdate" v-slot="{ id }" label="Expiration">
                   <VControl>
                     <VIMaskInput
-                      id="expirationdate"
+                      :id="id"
                       v-model="creditcardInput.expiry"
                       autocomplete="cc-exp"
                       class="input"
@@ -321,11 +320,10 @@ const selected = ref('value_2')
                 </VField>
               </div>
               <div class="column is-6">
-                <VField>
-                  <label for="securitycode">CVC</label>
+                <VField id="securitycode" v-slot="{ id }" label="CVC">
                   <VControl>
                     <VIMaskInput
-                      id="securitycode"
+                      :id="id"
                       v-model="creditcardInput.cvc"
                       autocomplete="cc-csc"
                       class="input"
@@ -338,7 +336,7 @@ const selected = ref('value_2')
               </div>
               <div class="column is-12">
                 <div class="button-wrap">
-                  <VButton color="primary" raised fullwidth>
+                  <VButton type="submit" color="primary" raised fullwidth>
                     Save Payment Method
                   </VButton>
                 </div>

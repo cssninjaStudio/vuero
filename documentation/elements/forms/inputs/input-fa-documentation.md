@@ -1,6 +1,6 @@
 ### Font Awesome
 
-Vuero inputs are fully compatible with Font Awesome 5 icons.
+Vuero `VInput` are fully compatible with Font Awesome 5 icons.
 Use the `iconed` prop on the `<VControl />` component to show an icon.
 You also have to provide an icon type using the `icon` or `iconify` props.
 
@@ -10,7 +10,7 @@ You also have to provide an icon type using the `icon` or `iconify` props.
 <template>
   <VField>
     <VControl icon="fab fa-twitter">
-      <input type="text" class="input is-rounded" placeholder="Username" />
+      <VInput type="text" class="is-rounded" placeholder="Username" />
     </VControl>
   </VField>
 </template>
@@ -22,11 +22,11 @@ You also have to provide an icon type using the `icon` or `iconify` props.
 
 <VField>
   <VControl icon="fab fa-twitter">
-    <input
-        type="text"
-        class="input is-rounded"
-        placeholder="Username"
-      />
+    <VInput
+      type="text"
+      class="is-rounded"
+      placeholder="Username"
+    />
   </VControl>
 </VField>
 

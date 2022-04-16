@@ -28,9 +28,10 @@ const optionMultipleObject = ref({
 </script>
 
 <template>
-  <VField class="demo-field mb-6">
+  <VField v-slot="{ id }" class="demo-field mb-6">
     <VControl>
       <Multiselect
+        :id="id"
         v-model="valueMultipleObject"
         mode="multiple"
         placeholder="Select your characters"
@@ -53,9 +54,10 @@ const optionMultipleObject = ref({
 
 <div class="columns">
   <div class="column is-4">
-    <VField>
+    <VField v-slot="{ id }">
       <VControl>
         <Multiselect
+          :id="id"
           v-model="frontmatter.valueMultipleObject"
           mode="multiple"
           placeholder="Select your characters"
@@ -71,9 +73,10 @@ const optionMultipleObject = ref({
     </VField>
   </div>
   <div class="column is-4">
-    <VField class="is-curved-select">
+    <VField v-slot="{ id }" class="is-curved-select">
       <VControl>
         <Multiselect
+          :id="id"
           v-model="frontmatter.valueMultipleObject"
           mode="multiple"
           placeholder="Select your characters"
@@ -89,9 +92,10 @@ const optionMultipleObject = ref({
     </VField>
   </div>
   <div class="column is-4">
-    <VField class="is-rounded-select">
+    <VField v-slot="{ id }" class="is-rounded-select">
       <VControl>
         <Multiselect
+          :id="id"
           v-model="frontmatter.valueMultipleObject"
           mode="multiple"
           placeholder="Select your characters"

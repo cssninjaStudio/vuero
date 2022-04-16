@@ -6,7 +6,7 @@ state:
 
 ### Disabled
 
-A textarea can be shown in a disabled state. For that, you need to wrap it
+A `VTextarea` can be shown in a disabled state. For that, you need to wrap it
 inside a `<VControl />` component. Simply add the `disabled` attribute
 to the target textarea element.
 
@@ -23,13 +23,12 @@ const disabled = ref(true)
 <template>
   <VField>
     <VControl>
-      <textarea
+      <VTextarea
         v-model="textarea"
-        class="textarea"
         rows="4"
         placeholder="A longer message..."
         :disabled="disabled"
-      ></textarea>
+      ></VTextarea>
     </VControl>
   </VField>
 </template>
@@ -41,13 +40,12 @@ const disabled = ref(true)
 
 <VField>
   <VControl>
-    <textarea
+    <VTextarea
       v-model="frontmatter.state.textarea"
-      class="textarea"
       rows="4"
       placeholder="A longer message..."
       :disabled="frontmatter.state.disabled"
-    ></textarea>
+    ></VTextarea>
   </VControl>
 </VField>
 

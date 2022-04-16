@@ -41,7 +41,7 @@
     "build:update-bulma-colors": "bulma-css-vars",
     "build:vite": "vite build",
     "preview": "run-p preview:vite preview:json-server",
-    "preview:vite": "vite preview --host 0.0.0.0",
+    "preview:vite": "vite preview --host 0.0.0.0 --port 5000",
     "preview:json-server": "json-server --read-only --routes ./json-server/routes.json --host 0.0.0.0 --port 8080 ./json-server/db.json",
     "lint": "run-s lint:doc:fix lint:eslint:fix lint:stylelint:fix lint:prettier:fix",
     "lint:prettier": "prettier --check \"./src/**/*.(ts|vue|css|scss)\"",
@@ -69,6 +69,7 @@
     "@iconify/iconify": "2.2.1",
     "@mapbox/mapbox-gl-geocoder": "5.0.0",
     "@popperjs/core": "2.11.5",
+    "@vee-validate/zod": "^4.5.11",
     "@vueform/multiselect": "2.3.3",
     "@vueform/slider": "2.0.9",
     "@vueuse/core": "8.2.6",
@@ -77,8 +78,9 @@
     "axios": "0.26.1",
     "billboard.js": "3.4.1",
     "bulma": "0.9.3",
-    "bulma-css-vars": "0.8.0",
+    "bulma-css-vars": "0.7.0",
     "dayjs": "1.11.1",
+    "defu": "^6.0.0",
     "dragula": "3.7.3",
     "dropzone": "6.0.0-beta.2",
     "filepond": "4.30.3",
@@ -113,7 +115,7 @@
     "vue-scrollto": "2.20.0",
     "vue-tippy": "6.0.0-alpha.57",
     "vue3-apexcharts": "1.4.1",
-    "yup": "0.32.11"
+    "zod": "^3.14.4"
   },
   "devDependencies": {
     "@commitlint/cli": "16.2.3",

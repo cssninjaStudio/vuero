@@ -2,11 +2,15 @@
 import { ref } from 'vue'
 
 const country = ref('')
-const options = ref(['Option 2'])
+const createAccount = ref(true)
+const subscribe = ref(false)
+const onSubmit = () => {
+  console.log('Form submitted!')
+}
 </script>
 
 <template>
-  <form class="form-layout is-separate" @submit.prevent>
+  <form class="form-layout is-separate" @submit.prevent="onSubmit">
     <div class="form-outer">
       <div class="form-body">
         <div class="form-section">
@@ -15,37 +19,26 @@ const options = ref(['Option 2'])
             <div class="columns is-multiline">
               <div class="column is-6">
                 <VField>
-                  <label>First Name</label>
+                  <VLabel>First Name</VLabel>
                   <VControl icon="feather:user">
-                    <input
-                      type="text"
-                      class="input"
-                      placeholder=""
-                      autocomplete="given-name"
-                    />
+                    <VInput type="text" placeholder="" autocomplete="given-name" />
                   </VControl>
                 </VField>
               </div>
               <div class="column is-6">
                 <VField>
-                  <label>Last Name</label>
+                  <VLabel>Last Name</VLabel>
                   <VControl icon="feather:user">
-                    <input
-                      type="text"
-                      class="input"
-                      placeholder=""
-                      autocomplete="family-name"
-                    />
+                    <VInput type="text" placeholder="" autocomplete="family-name" />
                   </VControl>
                 </VField>
               </div>
               <div class="column is-12">
                 <VField>
-                  <label>Email Address</label>
+                  <VLabel>Email Address</VLabel>
                   <VControl icon="feather:mail">
-                    <input
+                    <VInput
                       type="email"
-                      class="input"
                       placeholder=""
                       autocomplete="email"
                       inputmode="email"
@@ -55,35 +48,26 @@ const options = ref(['Option 2'])
               </div>
               <div class="column is-12">
                 <VField>
-                  <label>Street</label>
+                  <VLabel>Street</VLabel>
                   <VControl icon="feather:map-pin">
-                    <input
-                      type="text"
-                      class="input"
-                      placeholder=""
-                      autocomplete="street-address"
-                    />
+                    <VInput type="text" placeholder="" autocomplete="street-address" />
                   </VControl>
                 </VField>
               </div>
               <div class="column is-6">
                 <VField>
-                  <label>City</label>
+                  <VLabel>City</VLabel>
                   <VControl icon="feather:map-pin">
-                    <input
-                      type="text"
-                      class="input"
-                      placeholder=""
-                      autocomplete="address-level2"
-                    />
+                    <VInput type="text" placeholder="" autocomplete="address-level2" />
                   </VControl>
                 </VField>
               </div>
               <div class="column is-6">
-                <VField class="is-image-select">
-                  <label>Country</label>
+                <VField v-slot="{ id }" class="is-image-select">
+                  <VLabel>Country</VLabel>
                   <VControl>
                     <Multiselect
+                      :id="id"
                       v-model="country"
                       placeholder="Select a country"
                       autocomplete="country"
@@ -131,11 +115,10 @@ const options = ref(['Option 2'])
               </div>
               <div class="column is-12">
                 <VField>
-                  <label>Phone</label>
+                  <VLabel>Phone</VLabel>
                   <VControl icon="feather:phone">
-                    <input
+                    <VInput
                       type="tel"
-                      class="input"
                       placeholder=""
                       autocomplete="tel"
                       inputmode="tel"
@@ -152,27 +135,27 @@ const options = ref(['Option 2'])
             <div class="columns is-multiline">
               <div class="column is-12">
                 <VField>
-                  <label>Delivery Fee</label>
+                  <VLabel>Delivery Fee</VLabel>
                   <VControl>
                     <div class="radio-boxes">
-                      <div class="radio-box">
-                        <input type="radio" name="delivery_type" />
+                      <VControl class="radio-box" subcontrol>
+                        <VInput type="radio" name="delivery_type" />
                         <div class="radio-box-inner">
                           <div class="fee">
                             <span>0</span>
                           </div>
                           <p>3-4 weeks</p>
                         </div>
-                      </div>
-                      <div class="radio-box">
-                        <input type="radio" name="delivery_type" checked />
+                      </VControl>
+                      <VControl class="radio-box">
+                        <VInput type="radio" name="delivery_type" checked />
                         <div class="radio-box-inner">
                           <div class="fee">
                             <span>5</span>
                           </div>
                           <p>2-5 days</p>
                         </div>
-                      </div>
+                      </VControl>
                     </div>
 
                     <p>
@@ -188,27 +171,30 @@ const options = ref(['Option 2'])
           <div class="form-section-outer">
             <div class="checkboxes">
               <VField>
-                <VControl>
-                  <VCheckbox
-                    v-model="options"
-                    value="Option 2"
-                    label="Create an account"
-                    color="primary"
-                    circle
-                  />
-                  <span class="px-2"></span>
-                  <VCheckbox
-                    v-model="options"
-                    value="Option 1"
-                    label="Subscribe to our Newsletter"
-                    color="primary"
-                    circle
-                  />
-                </VControl>
+                <VFlex column-gap="1rem">
+                  <VControl>
+                    <VCheckbox
+                      v-model="createAccount"
+                      label="Create an account"
+                      color="primary"
+                      circle
+                    />
+                  </VControl>
+                  <VControl subcontrol>
+                    <VCheckbox
+                      v-model="subscribe"
+                      label="Subscribe to our Newsletter"
+                      color="primary"
+                      circle
+                    />
+                  </VControl>
+                </VFlex>
               </VField>
             </div>
             <div class="button-wrap">
-              <VButton color="primary" bold raised fullwidth> Confirm My Order </VButton>
+              <VButton type="submit" color="primary" bold raised fullwidth>
+                Confirm My Order
+              </VButton>
             </div>
           </div>
         </div>

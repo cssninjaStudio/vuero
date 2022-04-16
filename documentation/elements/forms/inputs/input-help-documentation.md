@@ -11,7 +11,7 @@ for more details about usage.
 <template>
   <VField>
     <VControl>
-      <input type="text" class="input" placeholder="Username" />
+      <VInput type="text" placeholder="Username" />
       <p class="help">Choose a nice username</p>
     </VControl>
   </VField>
@@ -24,9 +24,8 @@ for more details about usage.
 
 <VField>
   <VControl>
-    <input
+    <VInput
       type="text"
-      class="input"
       placeholder="Username"
     />
     <p class="help">Choose a nice username</p>

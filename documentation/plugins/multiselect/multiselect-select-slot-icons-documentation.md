@@ -74,13 +74,14 @@ const selectSlotIconOptions = [
 </script>
 
 <template>
-  <VField class="is-icon-select">
+  <VField v-slot="{ id }" class="is-icon-select">
     <VControl>
       <Multiselect
-        v-model="frontmatter.selectSlotIconValue"
+        :id="id"
+        v-model="selectSlotIconValue"
         placeholder="Select a member"
         label="name"
-        :options="frontmatter.selectSlotIconOptions"
+        :options="selectSlotIconOptions"
         :searchable="true"
         track-by="name"
         :max-height="145"
@@ -115,9 +116,10 @@ const selectSlotIconOptions = [
 
 <div class="columns">
   <div class="column is-4">
-    <VField class="is-icon-select">
+    <VField v-slot="{ id }" class="is-icon-select">
       <VControl>
         <Multiselect
+          :id="id"
           v-model="frontmatter.selectSlotIconValue"
           placeholder="Select a member"
           label="name"
@@ -149,9 +151,10 @@ const selectSlotIconOptions = [
     </VField>
   </div>
   <div class="column is-4">
-    <VField class="is-icon-select is-curved-select">
+    <VField v-slot="{ id }" class="is-icon-select is-curved-select">
       <VControl>
         <Multiselect
+          :id="id"
           v-model="frontmatter.selectSlotIconValue"
           placeholder="Select a member"
           label="name"
@@ -183,9 +186,10 @@ const selectSlotIconOptions = [
     </VField>
   </div>
   <div class="column is-4">
-    <VField class="is-icon-select is-rounded-select">
+    <VField v-slot="{ id }" class="is-icon-select is-rounded-select">
       <VControl>
         <Multiselect
+          :id="id"
           v-model="frontmatter.selectSlotIconValue"
           placeholder="Select a member"
           label="name"

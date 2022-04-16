@@ -81,7 +81,6 @@ export default defineConfig({
       'simple-datatables',
       'tiny-slider/src/tiny-slider',
       'vue-accessible-color-picker',
-      'yup',
     ],
   },
   // Will be passed to @rollup/plugin-alias as its entries option.

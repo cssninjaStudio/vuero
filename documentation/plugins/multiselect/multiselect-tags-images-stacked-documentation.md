@@ -76,9 +76,10 @@ const tagsSlotOptions = [
 </script>
 
 <template>
-  <VField class="is-image-tags is-stacked">
+  <VField v-slot="{ id }" class="is-image-tags is-stacked">
     <VControl>
       <Multiselect
+        :id="id"
         v-model="tagsSlotValue"
         mode="tags"
         placeholder="Select language"
@@ -107,9 +108,10 @@ const tagsSlotOptions = [
 
 <div class="columns">
   <div class="column is-4">
-    <VField class="is-image-tags is-stacked">
+    <VField v-slot="{ id }" class="is-image-tags is-stacked">
       <VControl>
         <Multiselect
+          :id="id"
           v-model="frontmatter.tagsSlotValue"
           mode="tags"
           placeholder="Select language"
@@ -134,9 +136,10 @@ const tagsSlotOptions = [
     </VField>
   </div>
   <div class="column is-4">
-    <VField class="is-image-tags is-stacked is-curved-select">
+    <VField v-slot="{ id }" class="is-image-tags is-stacked is-curved-select">
       <VControl>
         <Multiselect
+          :id="id"
           v-model="frontmatter.tagsSlotValue"
           mode="tags"
           placeholder="Select language"
@@ -161,9 +164,10 @@ const tagsSlotOptions = [
     </VField>
   </div>
   <div class="column is-4">
-    <VField class="is-image-tags is-stacked is-rounded-select">
+    <VField v-slot="{ id }" class="is-image-tags is-stacked is-rounded-select">
       <VControl>
         <Multiselect
+          :id="id"
           v-model="frontmatter.tagsSlotValue"
           mode="tags"
           placeholder="Select language"

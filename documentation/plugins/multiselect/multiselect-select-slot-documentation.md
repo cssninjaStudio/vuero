@@ -44,9 +44,10 @@ const selectSlotOptions = [
 </script>
 
 <template>
-  <VField class="is-image-select">
+  <VField v-slot="{ id }" class="is-image-select">
     <VControl>
       <Multiselect
+        :id="id"
         v-model="selectSlotValue"
         placeholder="Select a language"
         label="name"
@@ -54,14 +55,14 @@ const selectSlotOptions = [
       >
         <template #singlelabel="{ value }">
           <div class="multiselect-single-label">
-            <img class="select-label-icon" :src="value.icon" />
+            <img class="select-label-icon" :src="value.icon" alt="" />
             <span class="select-label-text">
               {{ value.name }}
             </span>
           </div>
         </template>
         <template #option="{ option }">
-          <img class="select-option-icon" :src="option.icon" />
+          <img class="select-option-icon" :src="option.icon" alt="" />
           <span class="select-label-text">
             {{ option.name }}
           </span>
@@ -78,9 +79,10 @@ const selectSlotOptions = [
 
 <div class="columns">
   <div class="column is-4">
-    <VField class="is-image-select">
+    <VField v-slot="{ id }" class="is-image-select">
       <VControl>
         <Multiselect
+          :id="id"
           v-model="frontmatter.selectSlotValue"
           placeholder="Select a language"
           label="name"
@@ -88,14 +90,14 @@ const selectSlotOptions = [
         >
           <template v-slot:singlelabel="{ value }">
             <div class="multiselect-single-label">
-              <img class="select-label-icon" :src="value.icon" /> 
+              <img class="select-label-icon" :src="value.icon" alt="" /> 
               <span class="select-label-text">
                 {{ value.name }}
               </span>
             </div>
           </template>
           <template v-slot:option="{ option }">
-            <img class="select-option-icon" :src="option.icon" /> 
+            <img class="select-option-icon" :src="option.icon" alt="" /> 
             <span class="select-option-text">
               {{ option.name }}
             </span>  
@@ -105,9 +107,10 @@ const selectSlotOptions = [
     </VField>
   </div>
   <div class="column is-4">
-    <VField class="is-image-select is-curved-select">
+    <VField v-slot="{ id }" class="is-image-select is-curved-select">
       <VControl>
         <Multiselect
+          :id="id"
           v-model="frontmatter.selectSlotValue"
           placeholder="Select a language"
           label="name"
@@ -115,14 +118,14 @@ const selectSlotOptions = [
         >
           <template v-slot:singlelabel="{ value }">
             <div class="multiselect-single-label">
-              <img class="select-label-icon is-curved" :src="value.icon" /> 
+              <img class="select-label-icon is-curved" :src="value.icon" alt="" /> 
               <span class="select-label-text">
                 {{ value.name }}
               </span>
             </div>
           </template>
           <template v-slot:option="{ option }">
-            <img class="select-option-icon is-curved" :src="option.icon" /> 
+            <img class="select-option-icon is-curved" :src="option.icon" alt="" /> 
             <span class="select-option-text">
               {{ option.name }}
             </span>  
@@ -132,9 +135,10 @@ const selectSlotOptions = [
     </VField>
   </div>
   <div class="column is-4">
-    <VField class="is-image-select is-rounded-select">
+    <VField v-slot="{ id }" class="is-image-select is-rounded-select">
       <VControl>
         <Multiselect
+          :id="id"
           v-model="frontmatter.selectSlotValue"
           placeholder="Select a language"
           label="name"
@@ -142,14 +146,14 @@ const selectSlotOptions = [
         >
           <template v-slot:singlelabel="{ value }">
             <div class="multiselect-single-label">
-              <img class="select-label-icon is-rounded" :src="value.icon" />
+              <img class="select-label-icon is-rounded" :src="value.icon" alt="" />
               <span class="select-label-text">
                 {{ value.name }}
               </span>
             </div>
           </template>
           <template v-slot:option="{ option }">
-            <img class="select-option-icon is-rounded" :src="option.icon" />
+            <img class="select-option-icon is-rounded" :src="option.icon" alt="" />
             <span class="select-option-text">
               {{ option.name }}
             </span>  

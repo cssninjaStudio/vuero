@@ -74,30 +74,19 @@ useHead({
               <!-- Input -->
               <VField>
                 <VControl icon="feather:user">
-                  <input
-                    class="input"
-                    type="text"
-                    placeholder="Name"
-                    autocomplete="name"
-                  />
+                  <VInput type="text" placeholder="Name" autocomplete="name" />
                 </VControl>
               </VField>
               <!-- Input -->
               <VField>
                 <VControl icon="feather:mail">
-                  <input
-                    class="input"
-                    type="text"
-                    placeholder="Email Address"
-                    autocomplete="email"
-                  />
+                  <VInput type="text" placeholder="Email Address" autocomplete="email" />
                 </VControl>
               </VField>
               <!-- Input -->
               <VField>
                 <VControl icon="feather:lock">
-                  <input
-                    class="input"
+                  <VInput
                     type="password"
                     placeholder="Password"
                     autocomplete="new-password"
@@ -107,32 +96,26 @@ useHead({
               <!-- Input -->
               <VField>
                 <VControl icon="feather:lock">
-                  <input class="input" type="password" placeholder="Repeat Password" />
+                  <VInput type="password" placeholder="Repeat Password" />
                 </VControl>
               </VField>
 
               <VField>
                 <VControl class="setting-item">
-                  <label for="send-promotional" class="form-switch is-primary">
-                    <input id="send-promotional" type="checkbox" class="is-switch" />
-                    <i aria-hidden="true"></i>
-                  </label>
-                  <div class="setting-meta">
-                    <label for="send-promotional">
-                      <span>Receive promotional offers</span>
-                    </label>
-                  </div>
+                  <VCheckbox
+                    label="Receive promotional offers"
+                    color="primary"
+                    paddingless
+                  />
                 </VControl>
               </VField>
 
               <!-- Submit -->
-              <VField>
-                <VControl class="login">
-                  <VButton color="primary" type="submit" bold fullwidth raised>
-                    Sign Up
-                  </VButton>
-                </VControl>
-              </VField>
+              <div class="login">
+                <VButton color="primary" type="submit" bold fullwidth raised>
+                  Sign Up
+                </VButton>
+              </div>
             </div>
           </form>
         </div>

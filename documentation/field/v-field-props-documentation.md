@@ -14,3 +14,4 @@ Here is the full props available for `<VField />` component:
 | textaddon  | <span class="is-boolean">`false`</span>       | boolean |
 | multiline  | <span class="is-boolean">`false`</span>       | boolean |
 | horizontal | <span class="is-boolean">`false`</span>       | boolean |
+| subcontrol | <span class="is-boolean">`false`</span>       | boolean |

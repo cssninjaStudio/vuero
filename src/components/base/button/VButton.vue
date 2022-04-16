@@ -151,6 +151,10 @@ export default defineComponent({
       type: Boolean,
       default: false,
     },
+    static: {
+      type: Boolean,
+      default: false,
+    },
   },
   setup(props, { slots, attrs }) {
     const classes = computed(() => {
@@ -173,6 +177,7 @@ export default defineComponent({
         props.loading && !props.placeload && 'is-loading',
         props.color && `is-${props.color}`,
         props.light && 'is-light',
+        props.static && 'is-static',
       ]
     })
     const isIconify = computed(() => props.icon && props.icon.indexOf(':') !== -1)

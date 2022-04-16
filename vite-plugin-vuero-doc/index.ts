@@ -70,10 +70,10 @@ function VitePluginVueroDoc(options: Options = {}): Plugin {
       transforms: {
         after(sfc: string) {
           return sfc
-            .replace('<!--code-->', '<template #code>')
-            .replace('<!--/code-->', '</template>')
-            .replace('<!--example-->', '<template #example>')
-            .replace('<!--/example-->', '</template>')
+            .replace('<!--code-->', '<template #code>\n<slot name="code">')
+            .replace('<!--/code-->', '</slot>\n</template>')
+            .replace('<!--example-->', '<template #example>\n<slot name="example">')
+            .replace('<!--/example-->', '</slot>\n</template>')
         },
       },
     },

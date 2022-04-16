@@ -110,9 +110,10 @@ const onSave = async () => {
             <div class="field-wrap">
               <div class="columns is-multiline">
                 <div class="column is-6">
-                  <VField class="is-image-select">
+                  <VField v-slot="{ id }" class="is-image-select">
                     <VControl>
                       <Multiselect
+                        :id="id"
                         v-model="selectedLanguage"
                         placeholder="Select a language"
                         label="name"
@@ -158,9 +159,10 @@ const onSave = async () => {
                   </VField>
                 </div>
                 <div class="column is-6">
-                  <VField>
+                  <VField v-slot="{ id }">
                     <VControl>
                       <Multiselect
+                        :id="id"
                         v-model="selectedLanguageLevel"
                         placeholder="Select your level"
                         :options="[
@@ -189,9 +191,8 @@ const onSave = async () => {
                 <div class="column is-12">
                   <VField>
                     <VControl icon="feather:message-circle">
-                      <input
+                      <VInput
                         type="text"
-                        class="input"
                         placeholder="Write a quick comment..."
                         autocomplete="off"
                       />
@@ -199,13 +200,15 @@ const onSave = async () => {
                   </VField>
                 </div>
                 <div class="column is-12">
-                  <VField>
-                    <VControl>
-                      <VButton color="primary" icon="fas fa-plus" raised fullwidth>
-                        Add Language
-                      </VButton>
-                    </VControl>
-                  </VField>
+                  <VButton
+                    type="submit"
+                    color="primary"
+                    icon="fas fa-plus"
+                    raised
+                    fullwidth
+                  >
+                    Add Language
+                  </VButton>
                 </div>
               </div>
             </div>
@@ -313,9 +316,10 @@ const onSave = async () => {
             <div class="field-wrap">
               <div class="columns is-multiline">
                 <div class="column is-6">
-                  <VField class="is-image-select">
+                  <VField v-slot="{ id }" class="is-image-select">
                     <VControl>
                       <Multiselect
+                        :id="id"
                         v-model="selectedSkill"
                         placeholder="Select a Skill"
                         label="name"
@@ -381,9 +385,10 @@ const onSave = async () => {
                   </VField>
                 </div>
                 <div class="column is-6">
-                  <VField>
+                  <VField v-slot="{ id }">
                     <VControl>
                       <Multiselect
+                        :id="id"
                         v-model="selectedSkillLevel"
                         placeholder="Years of Exp."
                         :options="[
@@ -434,13 +439,15 @@ const onSave = async () => {
                   </VField>
                 </div>
                 <div class="column is-12">
-                  <VField>
-                    <VControl>
-                      <VButton color="primary" icon="fas fa-plus" raised fullwidth>
-                        Add Skill
-                      </VButton>
-                    </VControl>
-                  </VField>
+                  <VButton
+                    type="submit"
+                    color="primary"
+                    icon="fas fa-plus"
+                    raised
+                    fullwidth
+                  >
+                    Add Skill
+                  </VButton>
                 </div>
               </div>
             </div>
@@ -534,9 +541,10 @@ const onSave = async () => {
             <div class="field-wrap">
               <div class="columns is-multiline">
                 <div class="column is-6">
-                  <VField class="is-image-select">
+                  <VField v-slot="{ id }" class="is-image-select">
                     <VControl>
                       <Multiselect
+                        :id="id"
                         v-model="selectedTool"
                         placeholder="Select a Tool"
                         label="name"
@@ -582,9 +590,10 @@ const onSave = async () => {
                   </VField>
                 </div>
                 <div class="column is-6">
-                  <VField>
+                  <VField v-slot="{ id }">
                     <VControl>
                       <Multiselect
+                        :id="id"
                         v-model="selectedToolLevel"
                         placeholder="Select your level"
                         :options="[
@@ -615,13 +624,15 @@ const onSave = async () => {
                   </VField>
                 </div>
                 <div class="column is-12">
-                  <VField>
-                    <VControl>
-                      <VButton color="primary" icon="fas fa-plus" raised fullwidth>
-                        Add Tool
-                      </VButton>
-                    </VControl>
-                  </VField>
+                  <VButton
+                    type="submit"
+                    color="primary"
+                    icon="fas fa-plus"
+                    raised
+                    fullwidth
+                  >
+                    Add Tool
+                  </VButton>
                 </div>
               </div>
             </div>

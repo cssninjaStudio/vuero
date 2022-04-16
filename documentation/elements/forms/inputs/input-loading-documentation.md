@@ -1,6 +1,6 @@
 ### Input Loading
 
-An input can be shown in a loading state. To apply that style,
+An `VInput` can be shown in a loading state. To apply that style,
 simply add the `loading` prop to the wrapping `<VControl />` component.
 
 <!--code-->
@@ -9,7 +9,7 @@ simply add the `loading` prop to the wrapping `<VControl />` component.
 <template>
   <VField>
     <VControl loading>
-      <input type="text" class="input" placeholder="Username" />
+      <VInput type="text" placeholder="Username" />
     </VControl>
   </VField>
 </template>
@@ -21,11 +21,10 @@ simply add the `loading` prop to the wrapping `<VControl />` component.
 
 <VField>
   <VControl loading>
-    <input
-        type="text"
-        class="input"
-        placeholder="Username"
-      />
+    <VInput
+      type="text"
+      placeholder="Username"
+    />
   </VControl>
 </VField>
 

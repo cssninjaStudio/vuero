@@ -1,7 +1,6 @@
 ---
 state:
-  options:
-    - 'Option 2'
+  options: 'Option 2'
 ---
 
 ### VCheckbox
@@ -17,18 +16,48 @@ The available colors are `primary`, `success`, `info`,
 <script setup lang="ts">
 import { ref } from 'vue'
 
-const options = ref(['Option 2'])
+const options = ref('Option 2')
 </script>
 
 <template>
-  <VField>
-    <VControl>
-      <VCheckbox v-model="options" value="Option 1" label="Option 1" solid />
-      <VCheckbox v-model="options" value="Option 2" label="Option 2" color="primary" />
-      <VCheckbox v-model="options" value="Option 3" label="Option 3" color="info" />
-      <VCheckbox v-model="options" value="Option 4" label="Option 4" color="success" />
-      <VCheckbox v-model="options" value="Option 5" label="Option 5" color="warning" />
-      <VCheckbox v-model="options" value="Option 6" label="Option 6" color="danger" />
+  <VField class="is-flex">
+    <VControl raw subcontrol>
+      <VCheckbox v-model="options" true-value="Option 1" label="Option 1" />
+    </VControl>
+    <VControl raw subcontrol>
+      <VCheckbox
+        v-model="options"
+        true-value="Option 2"
+        label="Option 2"
+        color="primary"
+      />
+    </VControl>
+    <VControl raw subcontrol>
+      <VCheckbox v-model="options" true-value="Option 3" label="Option 3" color="info" />
+    </VControl>
+    <VControl raw subcontrol>
+      <VCheckbox
+        v-model="options"
+        true-value="Option 4"
+        label="Option 4"
+        color="success"
+      />
+    </VControl>
+    <VControl raw subcontrol>
+      <VCheckbox
+        v-model="options"
+        true-value="Option 5"
+        label="Option 5"
+        color="warning"
+      />
+    </VControl>
+    <VControl raw subcontrol>
+      <VCheckbox
+        v-model="options"
+        true-value="Option 6"
+        label="Option 6"
+        color="danger"
+      />
     </VControl>
   </VField>
 </template>
@@ -38,40 +67,50 @@ const options = ref(['Option 2'])
 
 <!--example-->
 
-<VField>
-  <VControl>
+<VField class="is-flex">
+  <VControl raw subcontrol>
     <VCheckbox
       v-model="frontmatter.state.options"
-      value="Option 1"
+      trueValue="Option 1"
       label="Option 1"
     />
+  </VControl>
+  <VControl raw subcontrol>
     <VCheckbox
       v-model="frontmatter.state.options"
-      value="Option 2"
+      trueValue="Option 2"
       label="Option 2"
       color="primary"
     />
+  </VControl>
+  <VControl raw subcontrol>
     <VCheckbox
       v-model="frontmatter.state.options"
-      value="Option 3"
+      trueValue="Option 3"
       label="Option 3"
       color="info"
     />
+  </VControl>
+  <VControl raw subcontrol>
     <VCheckbox
       v-model="frontmatter.state.options"
-      value="Option 4"
+      trueValue="Option 4"
       label="Option 4"
       color="success"
     />
+  </VControl>
+  <VControl raw subcontrol>
     <VCheckbox
       v-model="frontmatter.state.options"
-      value="Option 5"
+      trueValue="Option 5"
       label="Option 5"
       color="warning"
     />
+  </VControl>
+  <VControl raw subcontrol>
     <VCheckbox
       v-model="frontmatter.state.options"
-      value="Option 6"
+      trueValue="Option 6"
       label="Option 6"
       color="danger"
     />

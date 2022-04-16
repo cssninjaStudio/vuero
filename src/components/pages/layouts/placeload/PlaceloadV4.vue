@@ -15,14 +15,17 @@ const optionsSingle = [
 <template>
   <div>
     <div class="user-grid-toolbar">
-      <VControl icon="feather:search">
-        <input v-model="filters" class="input" placeholder="Search..." />
-      </VControl>
+      <VField raw>
+        <VControl icon="feather:search">
+          <VInput v-model="filters" placeholder="Search..." />
+        </VControl>
+      </VField>
 
       <VButtons>
-        <VField class="v-hidden-mobile">
+        <VField v-slot="{ id }" class="v-hidden-mobile">
           <VControl>
             <Multiselect
+              :id="id"
               v-model="valueSingle"
               :options="optionsSingle"
               :max-height="145"

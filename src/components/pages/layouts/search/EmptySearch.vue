@@ -8,9 +8,11 @@ const activeTab = ref<TabId>('all')
 <template>
   <div class="search-results-wrapper">
     <div class="search-results-header">
-      <VControl icon="feather:search">
-        <input class="input" placeholder="Search again..." />
-      </VControl>
+      <VField raw>
+        <VControl icon="feather:search">
+          <VInput placeholder="Search again..." />
+        </VControl>
+      </VField>
 
       <div class="search-info">
         <span>0 results found</span>

@@ -1,6 +1,6 @@
 ### Disabled input
 
-An input can be shown in a disabled state. To apply that style,
+An `VInput` can be shown in a disabled state. To apply that style,
 simply add the `disabled` atribute to the target input element.
 
 <!--code-->
@@ -9,7 +9,7 @@ simply add the `disabled` atribute to the target input element.
 <template>
   <VField>
     <VControl>
-      <input type="text" class="input" placeholder="Username" disabled />
+      <VInput type="text" placeholder="Username" disabled />
     </VControl>
   </VField>
 </template>
@@ -21,12 +21,11 @@ simply add the `disabled` atribute to the target input element.
 
 <VField>
   <VControl>
-    <input
-        type="text"
-        class="input"
-        placeholder="Username"
-        disabled
-      />
+    <VInput
+      type="text"
+      placeholder="Username"
+      disabled
+    />
   </VControl>
 </VField>
 

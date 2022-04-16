@@ -57,26 +57,31 @@ const selectSlotOptions = [
 </script>
 
 <template>
-  <Multiselect
-    v-model="selectSlotValue"
-    placeholder="Select a language"
-    label="name"
-    :options="selectSlotOptions"
-    :searchable="true"
-    track-by="name"
-    :max-height="145"
-  >
-    <template #singlelabel="{ value }">
-      <div class="multiselect-single-label">
-        <img class="select-label-icon" :src="value.icon" alt="" />
-        {{ value.name }}
-      </div>
-    </template>
-    <template #option="{ option }">
-      <img class="select-option-icon" :src="option.icon" alt="" />
-      {{ option.name }}
-    </template>
-  </Multiselect>
+  <VField v-slot="{ id }">
+    <VControl>
+      <Multiselect
+        :id="id"
+        v-model="selectSlotValue"
+        placeholder="Select a language"
+        label="name"
+        :options="selectSlotOptions"
+        :searchable="true"
+        track-by="name"
+        :max-height="145"
+      >
+        <template #singlelabel="{ value }">
+          <div class="multiselect-single-label">
+            <img class="select-label-icon" :src="value.icon" alt="" />
+            {{ value.name }}
+          </div>
+        </template>
+        <template #option="{ option }">
+          <img class="select-option-icon" :src="option.icon" alt="" />
+          {{ option.name }}
+        </template>
+      </Multiselect>
+    </VControl>
+  </VField>
 </template>
 ```
 
@@ -86,9 +91,10 @@ const selectSlotOptions = [
 
 <div class="columns">
   <div class="column is-4">
-    <VField class="is-image-select">
+    <VField v-slot="{ id }" class="is-image-select">
       <VControl>
         <Multiselect
+          :id="id"
           v-model="frontmatter.selectSlotValue"
           placeholder="Select a language"
           label="name"
@@ -116,9 +122,10 @@ const selectSlotOptions = [
     </VField>
   </div>
   <div class="column is-4">
-    <VField class="is-image-select is-curved-select">
+    <VField v-slot="{ id }" class="is-image-select is-curved-select">
       <VControl>
         <Multiselect
+          :id="id"
           v-model="frontmatter.selectSlotValue"
           placeholder="Select a language"
           label="name"
@@ -146,9 +153,10 @@ const selectSlotOptions = [
     </VField>
   </div>
   <div class="column is-4">
-    <VField class="is-image-select is-rounded-select">
+    <VField v-slot="{ id }" class="is-image-select is-rounded-select">
       <VControl>
         <Multiselect
+          :id="id"
           v-model="frontmatter.selectSlotValue"
           placeholder="Select a language"
           label="name"

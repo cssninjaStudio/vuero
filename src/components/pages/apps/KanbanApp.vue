@@ -143,9 +143,11 @@ onMounted(() => {
 <template>
   <VPageContent class="kanban-content">
     <div class="kanban-toolbar">
-      <VControl icon="feather:search">
-        <input v-model="search" class="input" placeholder="Search..." />
-      </VControl>
+      <VField raw>
+        <VControl icon="feather:search">
+          <VInput v-model="search" placeholder="Search..." />
+        </VControl>
+      </VField>
 
       <VAvatarStack :avatars="participants" size="small" />
 
