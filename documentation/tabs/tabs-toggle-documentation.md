@@ -35,7 +35,7 @@ Check the markup for more details.
         interrete.
       </p>
       <p v-else-if="activeValue === 'tasks'">
-        aLorem ipsum dolor sit amet, consectetur adipiscing elit. Quid iudicant sensus?
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid iudicant sensus?
         Primum quid tu dicis breve? Etiam beatissimum? Ne discipulum abducam, times. Quae
         diligentissime contra Aristonem dicuntur a Chryippo. Duo Reges: constructio
         interrete.

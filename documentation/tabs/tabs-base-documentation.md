@@ -30,7 +30,7 @@ Check the markup for more details.
         interrete.
       </p>
       <p v-else-if="activeValue === 'tasks'">
-        aLorem ipsum dolor sit amet, consectetur adipiscing elit. Quid iudicant sensus?
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid iudicant sensus?
         Primum quid tu dicis breve? Etiam beatissimum? Ne discipulum abducam, times. Quae
         diligentissime contra Aristonem dicuntur a Chryippo. Duo Reges: constructio
         interrete.
@@ -46,22 +46,22 @@ Check the markup for more details.
 
 <VTabs selected="team" :tabs="[{ label: 'Team', value: 'team' },{ label: 'Projects', value: 'projects' },{ label: 'Tasks', value: 'tasks' }]">
   <template #tab="{ activeValue }">
-    <p v-if="activeValue === 'team'">
+    <p v-show="activeValue === 'team'">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       Quid iudicant sensus? Primum quid tu dicis breve? Etiam
       beatissimum? Ne discipulum abducam, times. Quae
       diligentissime contra Aristonem dicuntur a Chryippo. Duo
       Reges: constructio interrete.
     </p>
-    <p v-else-if="activeValue === 'projects'">
+    <p v-show="activeValue === 'projects'">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       Quid iudicant sensus? Primum quid tu dicis breve? Etiam
       beatissimum? Ne discipulum abducam, times. Quae
       diligentissime contra Aristonem dicuntur a Chryippo. Duo
       Reges: constructio interrete.
     </p>
-    <p v-else-if="activeValue === 'tasks'">
-      aLorem ipsum dolor sit amet, consectetur adipiscing elit.
+    <p v-show="activeValue === 'tasks'">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       Quid iudicant sensus? Primum quid tu dicis breve? Etiam
       beatissimum? Ne discipulum abducam, times. Quae
       diligentissime contra Aristonem dicuntur a Chryippo. Duo
