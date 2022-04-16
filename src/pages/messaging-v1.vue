@@ -10,7 +10,7 @@ import { useNotyf } from '/@src/composable/useNotyf'
 
 /**
  * The chat store keep the chat data across the app
- * It internaly uses the useChatApi composable to fetch the data (to the json-server)
+ * It internaly uses the useApi composable to fetch the data (to the json-server)
  */
 const chat = useChat()
 

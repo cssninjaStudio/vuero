@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Message } from '/@src/composable/useChatApi'
+import type { Message } from '/@src/utils/api/chat/messages'
 
 const props = defineProps<{
   message: Message

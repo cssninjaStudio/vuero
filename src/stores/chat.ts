@@ -1,17 +1,19 @@
 /**
  * This is a store that hold the messaging-v1 state
- * It uses the useChatApi composition component to make the api calls
+ * It uses the useApi composition component to make the api calls
  *
  * @see /src/pages/messaging-v1.vue
- * @see /src/composable/useChatApi.ts
+ * @see /src/composable/useApi.ts
  * @see /src/components/partials/chat/*.vue
+ * @see /src/utils/api/chat
  */
 
 import { ref, computed } from 'vue'
 import { acceptHMRUpdate, defineStore } from 'pinia'
 
-import type { Conversation, Message } from '/@src/composable/useChatApi'
-import { useChatApi } from '/@src/composable/useChatApi'
+import type { Conversation, Message } from '/@src/utils/api/chat'
+import { fetchConversations, fetchMessages } from '/@src/utils/api/chat'
+import { useApi } from '/@src/composable/useApi'
 
 const defaultConversation: Conversation = {
   id: 0,
@@ -22,12 +24,13 @@ const defaultConversation: Conversation = {
 }
 
 export const useChat = defineStore('chat', () => {
-  const api = useChatApi()
+  const api = useApi()
   const conversations = ref<Conversation[]>([])
   const messages = ref<Message[]>([])
   const selectedConversationId = ref(0)
   const addConversationOpen = ref(false)
   const mobileConversationDetailsOpen = ref(false)
+  const loading = ref(false)
 
   const selectedConversation = computed(() => {
     const conversation = conversations.value.find(
@@ -42,14 +45,30 @@ export const useChat = defineStore('chat', () => {
   })
 
   async function loadConversations(start = 0, limit = 10) {
-    const response = await api.fetchConversations(start, limit)
-    conversations.value = response.conversations
+    if (loading.value) return
+
+    loading.value = true
+
+    try {
+      const response = await fetchConversations(api, start, limit)
+      conversations.value = response.conversations
+    } finally {
+      loading.value = false
+    }
   }
 
   async function selectConversastion(conversationId: number) {
-    const response = await api.fetchMessages(conversationId)
-    selectedConversationId.value = conversationId
-    messages.value = response.messages
+    if (loading.value) return
+
+    loading.value = true
+
+    try {
+      const response = await fetchMessages(api, conversationId)
+      selectedConversationId.value = conversationId
+      messages.value = response.messages
+    } finally {
+      loading.value = false
+    }
   }
 
   function unselectConversation() {
@@ -72,7 +91,7 @@ export const useChat = defineStore('chat', () => {
     selectedConversationId,
     addConversationOpen,
     mobileConversationDetailsOpen,
-    loading: api.loading,
+    loading,
     loadConversations,
     setAddConversationOpen,
     setMobileConversationDetailsOpen,
