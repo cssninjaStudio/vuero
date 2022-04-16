@@ -23,12 +23,10 @@ const onUpdate: DirectiveHook = (el: HTMLElement, bindings) => {
   }
 }
 
-const background: Directive = {
+export const vBackground: Directive = {
   getSSRProps() {
     return {}
   },
   updated: onUpdate,
   mounted: onUpdate,
 }
-
-export default background

@@ -10,10 +10,9 @@
  * @see /index.html
  * @see /vite.config.ts
  * @see /app.ts
- * @see /app-custom.ts
+ * @see /plugins/*.ts
  */
 import { createApp } from './app'
-import * as NProgress from 'nprogress'
 
 /**
  * We create our app and mount it when it is ready
@@ -21,16 +20,6 @@ import * as NProgress from 'nprogress'
  * @see /@src/app.ts for more detailed informations
  */
 createApp().then(async (vuero) => {
-  /**
-   * Handle NProgress display on page changes
-   */
-  vuero.router.beforeEach(() => {
-    NProgress.start()
-  })
-  vuero.router.afterEach(() => {
-    NProgress.done()
-  })
-
   // wait for the app to be ready
   await vuero.router.isReady()
 

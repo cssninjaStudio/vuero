@@ -1,67 +1,11 @@
-import { defineAsyncComponent } from 'vue'
-import { SetupCalendar } from 'v-calendar'
-import { plugin as VueTippy } from 'vue-tippy'
 import { START_LOCATION } from 'vue-router'
-
-import { useNotyf } from './composable/useNotyf'
-import { useUserSession } from './stores/userSession'
-
-import type { VueroAppContext } from './app'
-
-// Lazy load aditional components
-export async function registerGlobalComponents({ app }: VueroAppContext) {
-  const background = (await import('./directives/background')).default
-  const tooltip = (await import('./directives/tooltip')).default
-
-  app.use(SetupCalendar, {})
-  app.use(VueTippy, {
-    component: 'Tippy',
-    defaultProps: {
-      theme: 'light',
-    },
-  })
-
-  app.component(
-    // eslint-disable-next-line vue/multi-word-component-names
-    'Multiselect',
-    defineAsyncComponent({
-      loader: () => import('@vueform/multiselect').then((mod) => mod.default),
-      delay: 0,
-      suspensible: false,
-    })
-  )
-  app.component(
-    // eslint-disable-next-line vue/multi-word-component-names
-    'Slider',
-    defineAsyncComponent({
-      loader: () => import('@vueform/slider').then((mod) => mod.default),
-      delay: 0,
-      suspensible: false,
-    })
-  )
-  app.component(
-    'VCalendar',
-    defineAsyncComponent({
-      loader: () => import('v-calendar').then((mod) => mod.Calendar),
-      delay: 0,
-      suspensible: false,
-    })
-  )
-  app.component(
-    'VDatePicker',
-    defineAsyncComponent({
-      loader: () => import('v-calendar').then((mod) => mod.DatePicker),
-      delay: 0,
-      suspensible: false,
-    })
-  )
-
-  app.directive('background', background)
-  app.directive('tooltip', tooltip)
-}
+import { definePlugin } from '/@src/app'
+import { useUserSession } from '/@src/stores/userSession'
+import { useNotyf } from '/@src/composable/useNotyf'
 
 /**
  * Here we are setting up two router navigation guards
+ * (note that we can have multiple guards in multiple plugins)
  *
  * We can add meta to pages either by declaring them manualy in the
  * routes declaration (see /@src/router.ts)
@@ -80,9 +24,9 @@ export async function registerGlobalComponents({ app }: VueroAppContext) {
  *  // HTML content
  * </template>
  */
-export function registerRouterNavigationGuards({ router, api }: VueroAppContext) {
+export default definePlugin(({ router, api, pinia }) => {
   router.beforeEach(async (to, from) => {
-    const userSession = useUserSession()
+    const userSession = useUserSession(pinia)
     const notyf = useNotyf()
 
     if (from === START_LOCATION && userSession.isLoggedIn) {
@@ -125,4 +69,4 @@ export function registerRouterNavigationGuards({ router, api }: VueroAppContext)
       }
     }
   })
-}
+})

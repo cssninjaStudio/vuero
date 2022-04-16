@@ -58,12 +58,10 @@ const onMounted: DirectiveHook = (el: HTMLElement, bindings) => {
   }
 }
 
-const tooltip: Directive = {
+export const vTooltip: Directive = {
   getSSRProps() {
     return {}
   },
   updated: onUpdate,
   mounted: onMounted,
 }
-
-export default tooltip

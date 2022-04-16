@@ -1,77 +1,56 @@
-import { createApp as createClientApp, h, Suspense } from 'vue'
+import { createApp as createClientApp } from 'vue'
 
 import { createHead } from '@vueuse/head'
 import { createPinia } from 'pinia'
-import { createI18n } from './i18n'
 import { createRouter } from './router'
 import VueroApp from './VueroApp.vue'
 import './styles'
 
-import { initDarkmode } from '/@src/stores/darkmode'
 import { createApi } from '/@src/composable/useApi'
 
-export type VueroAppContext = Awaited<ReturnType<typeof createApp>>
+const plugins = import.meta.glob('./plugins/*.ts')
 
-import { registerGlobalComponents, registerRouterNavigationGuards } from './app-custom'
+export type VueroAppContext = Awaited<ReturnType<typeof createApp>>
+export type VueroPlugin = (vuero: VueroAppContext) => void | Promise<void>
+
+// this is a helper function to define plugins with autocompletion
+export function definePlugin(plugin: VueroPlugin) {
+  return plugin
+}
 
 export async function createApp() {
-  const head = createHead()
-  const i18n = createI18n()
+  const app = createClientApp(VueroApp)
   const router = createRouter()
-  const pinia = createPinia()
   const api = createApi()
 
-  const app = createClientApp({
-    // This is the global app setup function
-    setup() {
-      /**
-       * Initialize the darkmode watcher
-       *
-       * @see /@src/stores/darkmode
-       */
-      initDarkmode()
+  const head = createHead()
+  app.use(head)
 
-      /**
-       * Here we are creating a render function for our main app with
-       * the main VueroApp component, wrapped in a Suspense component
-       * to handle async loading of the app.
-       * Template equivalent would be:
-       *
-       * <template>
-       *   <Susupense>
-       *     <VueroApp />
-       *   </Susupense>
-       * </template>
-       */
-      return () => {
-        /**
-         * The Suspense component is needed to use async in child components setup
-         * @see https://v3.vuejs.org/guide/migration/suspense.html
-         */
-        return h(Suspense, null, {
-          default: () => h(VueroApp),
-        })
-      }
-    },
-  })
+  const pinia = createPinia()
+  app.use(pinia)
 
   const vuero = {
     app,
     api,
     router,
-    i18n,
     head,
     pinia,
   }
 
-  await registerGlobalComponents(vuero)
-  app.use(vuero.pinia)
-  app.use(vuero.head)
-  app.use(vuero.i18n)
+  app.provide('vuero', vuero)
 
-  registerRouterNavigationGuards(vuero)
+  for (const path in plugins) {
+    try {
+      const { default: plugin } = await plugins[path]()
+      await plugin(vuero)
+    } catch (error) {
+      console.error(`Error while loading plugin "${path}".`)
+      console.error(error)
+    }
+  }
+
+  // use router after plugin registration, so we can register navigation guards
   app.use(vuero.router)
-  vuero.app.provide('vuero', vuero)
 
   return vuero
 }
