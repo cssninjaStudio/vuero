@@ -596,12 +596,14 @@ const themeClasses = computed(() => {
         .dropdown-item {
           color: var(--white);
 
-          &:not(.is-button):hover {
+          &:hover,
+          &:focus:not(.is-button) {
             background: var(--dark-sidebar-light-5);
           }
 
           &.is-button {
-            &:hover {
+            &:hover,
+            &:focus {
               background: var(--dark-sidebar-light-2) !important;
             }
           }
