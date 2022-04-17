@@ -7,7 +7,7 @@ import { RouterLink } from 'vue-router'
 
 import VPlaceload from '../loader/VPlaceload.vue'
 
-export type VButtonSize = 'big' | 'huge'
+export type VButtonSize = 'medium' | 'big' | 'huge'
 export type VButtonColor =
   | 'primary'
   | 'info'

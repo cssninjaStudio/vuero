@@ -11,7 +11,7 @@ export interface VCheckboxProps {
   color?: VCheckboxColor
   trueValue?: string | number | boolean
   falseValue?: string | number | boolean
-  modelValue?: string | number | boolean
+  modelValue?: any
   circle?: boolean
   solid?: boolean
   paddingless?: boolean

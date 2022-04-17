@@ -73,7 +73,7 @@
         <VCollapseLinks>
           <template #header>
             VFlexTable
-            <VTag label="v2.2" color="primary" outlined curved />
+            <VTag label="v2.2" size="tiny" class="ml-2" color="primary" outlined curved />
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
           </template>
 

@@ -182,6 +182,6 @@ const isMobileSidebarOpen = ref(false)
     <ActivityPanel />
     <SearchPanel />
 
-    <slot :isMobileSidebarOpen="isMobileSidebarOpen"></slot>
+    <slot :is-mobile-sidebar-open="isMobileSidebarOpen"></slot>
   </div>
 </template>

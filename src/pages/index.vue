@@ -260,7 +260,7 @@ useHead({
                 >
                   Buy Now
                 </a>
-                <a href="https://cssninja.io" class="button chat-button">
+                <a href="https://discord.cssninja.io" class="button chat-button">
                   Chat with us
                 </a>
               </div>
@@ -574,7 +574,10 @@ useHead({
                 >
                   Read the Docs
                 </a>
-                <a href="https://cssninja.io" class="button chat-button is-secondary">
+                <a
+                  href="https://discord.cssninja.io"
+                  class="button chat-button is-secondary"
+                >
                   Chat with us
                 </a>
               </div>

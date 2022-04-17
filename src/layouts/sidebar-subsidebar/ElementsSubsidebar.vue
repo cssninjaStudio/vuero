@@ -123,43 +123,37 @@ const emit = defineEmits(['close'])
         <VCollapseLinks>
           <template #header>
             Forms
+            <VTag label="v2.3" color="primary" outlined curved />
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
           </template>
 
           <RouterLink :to="{ name: 'elements-forms-field' }" class="is-submenu">
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             VField
-            <VTag label="v2.3" color="primary" outlined curved />
           </RouterLink>
           <RouterLink :to="{ name: 'elements-forms-control' }" class="is-submenu">
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             VControl
-            <VTag label="v2.3" color="primary" outlined curved />
           </RouterLink>
           <RouterLink :to="{ name: 'elements-forms-inputs' }" class="is-submenu">
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             VInput
-            <VTag label="v2.3" color="primary" outlined curved />
           </RouterLink>
           <RouterLink :to="{ name: 'elements-forms-textarea' }" class="is-submenu">
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             VTextarea
-            <VTag label="v2.3" color="primary" outlined curved />
           </RouterLink>
           <RouterLink :to="{ name: 'elements-forms-selects' }" class="is-submenu">
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             VSelect
-            <VTag label="v2.3" color="primary" outlined curved />
           </RouterLink>
           <RouterLink :to="{ name: 'elements-checkbox' }" class="is-submenu">
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             VCheckbox
-            <VTag label="v1.1" color="primary" outlined curved />
           </RouterLink>
           <RouterLink :to="{ name: 'elements-radio' }" class="is-submenu">
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             VRadio
-            <VTag label="v1.1" color="primary" outlined curved />
           </RouterLink>
           <!-- <RouterLink :to="{ name: 'elements-forms-addons' }" class="is-submenu">
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>

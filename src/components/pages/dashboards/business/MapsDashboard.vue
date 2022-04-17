@@ -8,8 +8,9 @@ import { onMounted, ref, watch, watchPostEffect } from 'vue'
 import mapboxgl from 'mapbox-gl'
 import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.min.js'
 import { useThemeColors } from '/@src/composable/useThemeColors'
-const themeColors = useThemeColors()
 import { useDarkmode } from '/@src/stores/darkmode'
+
+const themeColors = useThemeColors()
 
 // You can set the VITE_MAPBOX_ACCESS_TOKEN inside .env file
 mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN as string

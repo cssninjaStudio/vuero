@@ -111,27 +111,36 @@ export const elements = [
 
 export const forms = [
   {
-    id: 1,
-    link: 'elements-forms-inputs',
-    name: 'Inputs',
-    media: {
-      light: '/images/icons/components/inputs.svg',
-      dark: '/images/icons/components/inputs-dark.svg',
-    },
-  },
-  {
-    id: 2,
-    link: 'elements-forms-addons',
-    name: 'Input Addons',
+    id: 20,
+    link: 'elements-forms-field',
+    name: 'VField',
     media: {
       light: '/images/icons/components/inputs-addons.svg',
       dark: '/images/icons/components/inputs-addons-dark.svg',
     },
   },
   {
+    id: 2,
+    link: 'elements-forms-control',
+    name: 'VControl',
+    media: {
+      light: '/images/icons/components/inputs-addons.svg',
+      dark: '/images/icons/components/inputs-addons-dark.svg',
+    },
+  },
+  {
+    id: 1,
+    link: 'elements-forms-inputs',
+    name: 'VInput',
+    media: {
+      light: '/images/icons/components/inputs.svg',
+      dark: '/images/icons/components/inputs-dark.svg',
+    },
+  },
+  {
     id: 3,
     link: 'elements-forms-textarea',
-    name: 'Textarea',
+    name: 'VTextarea',
     media: {
       light: '/images/icons/components/textarea.svg',
       dark: '/images/icons/components/textarea-dark.svg',
@@ -140,7 +149,7 @@ export const forms = [
   {
     id: 4,
     link: 'elements-forms-selects',
-    name: 'Select',
+    name: 'VSelect',
     media: {
       light: '/images/icons/components/selects.svg',
       dark: '/images/icons/components/selects-dark.svg',

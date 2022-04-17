@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import path from 'path'
 import Vue from '@vitejs/plugin-vue'
 import Pages from 'vite-plugin-pages'
+import generateSitemap from 'vite-plugin-pages-sitemap'
 import Components from 'unplugin-vue-components/vite'
 import ViteFonts from 'vite-plugin-fonts'
 import ViteRadar from 'vite-plugin-radar'
@@ -15,6 +16,7 @@ import purgecss from 'rollup-plugin-purgecss'
 
 const SILENT = Boolean(process.env.SILENT) ?? false
 const SOURCE_MAP = Boolean(process.env.SOURCE_MAP) ?? false
+const SITEMAP_HOST = process.env.SITEMAP_HOST || 'http://localhost:3000/'
 
 /**
  * This is the main configuration file for vitejs
@@ -139,6 +141,11 @@ export default defineConfig({
           baseRoute: '',
         },
       ],
+      onRoutesGenerated: (routes) =>
+        generateSitemap({
+          routes,
+          hostname: SITEMAP_HOST,
+        }),
     }),
 
     /**
@@ -203,8 +210,8 @@ export default defineConfig({
      */
     ViteRadar({
       enableDev: true,
-      analytics: {
-        id: 'G-8PH6FM2JEL',
+      gtm: {
+        id: 'GTM-N9P6H6B',
       },
     }),
 

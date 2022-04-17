@@ -23,14 +23,6 @@
   animation-name: placeload;
   animation-timing-function: linear;
   background: var(--placeload-nuance-from);
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    color-stop(8%, var(--placeload-nuance-from)),
-    color-stop(18%, var(--placeload-nuance-to)),
-    color-stop(33%, var(--placeload-nuance-from))
-  );
   background: linear-gradient(
     to right,
     var(--placeload-nuance-from) 8%,
@@ -59,14 +51,6 @@
 .is-dark {
   .loads {
     background: var(--placeload-dark-nuance-from);
-    background: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      color-stop(8%, var(--placeload-dark-nuance-from)),
-      color-stop(18%, var(--placeload-dark-nuance-to)),
-      color-stop(33%, var(--placeload-dark-nuance-from))
-    );
     background: linear-gradient(
       to right,
       var(--placeload-dark-nuance-from) 8%,

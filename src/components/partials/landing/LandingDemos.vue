@@ -114,12 +114,13 @@ debouncedWatch(
       return
     }
 
-    // gtag and is injected via vite-plugin-radar
-    if (window && window.gtag) {
-      window.gtag('event', 'search', {
+    // dataLayer and is injected via vite-plugin-radar
+    if (window) {
+      window.dataLayer = window.dataLayer || []
+      window.dataLayer.push({
+        event: 'search',
         search_term: filterInput.value,
       })
-      console.log(window.dataLayer)
     }
   },
   { debounce: 300 }
@@ -127,15 +128,15 @@ debouncedWatch(
 </script>
 
 <template>
-  <div class="vuero-demos">
+  <form class="vuero-demos" @submit.prevent>
     <div class="demo-search-section">
       <VFlex justify-content="center">
         <VField :label="searchLabel">
           <VControl icon="feather:search">
-            <input
-              v-model="filterInput"
+            <VInput
+              v-model.trim="filterInput"
               type="search"
-              class="input is-rounded"
+              class="is-rounded"
               placeholder="Soccer, flights, e-commerce, app ..."
             />
           </VControl>
@@ -478,7 +479,7 @@ debouncedWatch(
         </div>
       </div>
     </div>
-  </div>
+  </form>
 </template>
 
 <style lang="scss" scoped>

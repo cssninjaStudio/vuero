@@ -101,6 +101,7 @@
         <VCollapseLinks>
           <template #header>
             Forms
+            <VTag label="v2.3" size="tiny" class="ml-2" color="primary" outlined curved />
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
           </template>
 

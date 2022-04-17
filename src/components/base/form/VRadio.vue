@@ -24,6 +24,7 @@ const props = withDefaults(defineProps<VRadioProps>(), {
   modelValue: undefined,
   label: undefined,
   color: undefined,
+  name: undefined,
   paddingless: false,
 })
 

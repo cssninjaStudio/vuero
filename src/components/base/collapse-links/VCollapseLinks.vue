@@ -1,6 +1,6 @@
 <script lang="ts">
 import type { PropType } from 'vue'
-import { watch, ref, computed, h, defineComponent, Transition } from 'vue'
+import { watch, ref, h, defineComponent, Transition, unref } from 'vue'
 import { useRoute } from 'vue-router'
 
 export default defineComponent({
@@ -17,51 +17,50 @@ export default defineComponent({
   emits: ['update:open'],
   setup(props, { slots, emit }) {
     const route = useRoute()
-    const isOpenDefault = ref(props.open === true)
     const hasNestedLinkActive = ref(false)
-    const isOpen = computed({
-      get: () => {
-        if (props.collapseId === undefined) {
-          return isOpenDefault.value
-        }
 
-        return props.collapseId === props.open
-      },
-      set: (value) => {
-        if (props.collapseId === undefined) {
-          isOpenDefault.value = value
-        }
+    const slotContent = slots.default?.() ?? []
+    const currentRoute = route.name
+    slotContent.forEach((child) => {
+      if (child.props?.to?.name && currentRoute === child.props.to.name) {
+        hasNestedLinkActive.value = true
+      }
+    })
+    const isOpen = ref(
+      Boolean(
+        hasNestedLinkActive.value ||
+          (typeof props.collapseId === 'string' && props.open === props.collapseId) ||
+          (typeof props.collapseId === 'undefined' && props.open === true)
+      )
+    )
 
+    function toggle() {
+      if (typeof props.collapseId === 'string') {
         if (props.collapseId === props.open) {
           emit('update:open')
         } else {
           emit('update:open', props.collapseId)
         }
-      },
-    })
-
-    function toggle() {
-      isOpen.value = !isOpen.value
-    }
-    const header = slots.header?.()
-    const slotContent = slots.default?.() ?? []
-    const currentRoute = route.name
-    const links = slotContent.map((child) => {
-      if (child.props?.to?.name && currentRoute === child.props.to.name) {
-        hasNestedLinkActive.value = true
+      } else {
+        isOpen.value = !isOpen.value
       }
-
-      return h('li', {}, child)
-    })
+    }
 
     watch(
-      () => route.fullPath,
-      () => {
-        hasNestedLinkActive.value = false
+      () => props.open,
+      (val) => {
+        isOpen.value = Boolean(
+          (typeof props.collapseId === 'string' && unref(val) === props.collapseId) ||
+            (typeof props.collapseId === 'undefined' && unref(val) === true)
+        )
       }
     )
 
     return () => {
+      const header = slots.header?.()
+      const slotContent = slots.default?.() ?? []
+      const links = slotContent.map((child) => h('li', {}, child))
+
       const parentLink = h(
         'a',
         {
@@ -69,6 +68,7 @@ export default defineComponent({
           class: 'parent-link',
           onClick: (e: MouseEvent) => {
             e.preventDefault()
+
             toggle()
           },
           onKeydown(e: KeyboardEvent) {
@@ -83,16 +83,12 @@ export default defineComponent({
         header
       )
       const collapseWrap = h('div', { class: 'collapse-wrap' }, parentLink)
-      const content =
-        hasNestedLinkActive.value || isOpen.value ? h('ul', {}, links) : undefined
+      const content = isOpen.value ? h('ul', {}, links) : undefined
 
       return h(
         'li',
         {
-          class: [
-            'collapse-links has-children',
-            (hasNestedLinkActive.value || isOpen.value) && 'active',
-          ],
+          class: ['collapse-links has-children', isOpen.value && 'active'],
         },
         [
           collapseWrap,

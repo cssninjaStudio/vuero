@@ -155,6 +155,8 @@ cypress/videos
 
 # ignoring vuero releases files
 
+public/sitemap.xml
+public/robots.txt
 *.pdf
 *.zip
 

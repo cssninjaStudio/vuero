@@ -22,7 +22,7 @@ export type VFlexTableWrapperDataResolver<T = any> = (parameters: {
   start: number
   limit: number
   sort?: string
-  controller: AbortController
+  controller?: AbortController
 }) => T[] | Promise<T[]>
 
 export type VFlexTableWrapperSortFunction<T = any> = (parameters: {

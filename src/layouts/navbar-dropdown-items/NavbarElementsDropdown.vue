@@ -436,7 +436,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                   <div class="meta">
                     <span>VCheckbox</span>
-                    <VTag label="v1.1" color="primary" outlined curved class="ml-3" />
+                    <VTag label="v2.3" color="primary" outlined curved class="ml-3" />
                   </div>
                 </RouterLink>
 
@@ -449,7 +449,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                   <div class="meta">
                     <span>VRadio</span>
-                    <VTag label="v1.1" color="primary" outlined curved class="ml-3" />
+                    <VTag label="v2.3" color="primary" outlined curved class="ml-3" />
                   </div>
                 </RouterLink>
 

@@ -153,7 +153,7 @@ const options = ref(['Newest'])
               <VControl>
                 <VCheckbox
                   v-model="options"
-                  value="Newest"
+                  value-true="Newest"
                   label="Newest"
                   color="primary"
                   circle
@@ -168,7 +168,7 @@ const options = ref(['Newest'])
               <VControl>
                 <VCheckbox
                   v-model="options"
-                  value="Recently updated"
+                  value-true="Recently updated"
                   label="Recently updated"
                   color="primary"
                   circle
@@ -183,7 +183,7 @@ const options = ref(['Newest'])
               <VControl>
                 <VCheckbox
                   v-model="options"
-                  value="Upvoted"
+                  value-true="Upvoted"
                   label="Upvoted"
                   color="primary"
                   circle
@@ -203,7 +203,7 @@ const options = ref(['Newest'])
               <VControl>
                 <VCheckbox
                   v-model="options"
-                  value="User profile"
+                  value-true="User profile"
                   label="User profile"
                   color="primary"
                   circle
@@ -218,7 +218,7 @@ const options = ref(['Newest'])
               <VControl>
                 <VCheckbox
                   v-model="options"
-                  value="Project"
+                  value-true="Project"
                   label="Project"
                   color="primary"
                   circle
@@ -233,7 +233,7 @@ const options = ref(['Newest'])
               <VControl>
                 <VCheckbox
                   v-model="options"
-                  value="Blog Post"
+                  value-true="Blog Post"
                   label="Blog Post"
                   color="primary"
                   circle
@@ -248,7 +248,7 @@ const options = ref(['Newest'])
               <VControl>
                 <VCheckbox
                   v-model="options"
-                  value="Wireframes"
+                  value-true="Wireframes"
                   label="Wireframes"
                   color="primary"
                   circle
@@ -263,7 +263,7 @@ const options = ref(['Newest'])
               <VControl>
                 <VCheckbox
                   v-model="options"
-                  value="Files"
+                  value-true="Files"
                   label="Files"
                   color="primary"
                   circle
@@ -283,7 +283,7 @@ const options = ref(['Newest'])
               <VControl>
                 <VCheckbox
                   v-model="options"
-                  value="Engineering"
+                  value-true="Engineering"
                   label="Engineering"
                   color="primary"
                   circle
@@ -298,7 +298,7 @@ const options = ref(['Newest'])
               <VControl>
                 <VCheckbox
                   v-model="options"
-                  value="Management"
+                  value-true="Management"
                   label="Management"
                   color="primary"
                   circle
@@ -328,7 +328,7 @@ const options = ref(['Newest'])
               <VControl>
                 <VCheckbox
                   v-model="options"
-                  value="Human Resources"
+                  value-true="Human Resources"
                   label="Human Resources"
                   color="primary"
                   circle
@@ -343,7 +343,7 @@ const options = ref(['Newest'])
               <VControl>
                 <VCheckbox
                   v-model="options"
-                  value="Finance"
+                  value-true="Finance"
                   label="Finance"
                   color="primary"
                   circle

@@ -119,7 +119,7 @@ function contactUser(row: any) {
               <VCheckbox
                 v-if="column.key === 'select'"
                 v-model="selectedRows"
-                :value="row.id"
+                :value-true="row.id"
                 name="selection"
                 square
               />
@@ -206,7 +206,7 @@ function contactUser(row: any) {
               <VCheckbox
                 v-if="column.key === 'select'"
                 v-model="selectedRows"
-                :value="row.id"
+                :value-true="row.id"
                 name="selection"
                 square
               />
@@ -255,7 +255,7 @@ function contactUser(row: any) {
               <VCheckbox
                 v-if="column.key === 'select'"
                 v-model="selectedRows"
-                :value="row.id"
+                :value-true="row.id"
                 name="selection"
                 square
               />
@@ -312,7 +312,7 @@ function contactUser(row: any) {
               <VCheckbox
                 v-if="column.key === 'select'"
                 v-model="selectedRows"
-                :value="row.id"
+                :value-true="row.id"
                 name="selection"
                 square
               />

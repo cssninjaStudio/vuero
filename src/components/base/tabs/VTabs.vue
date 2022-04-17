@@ -92,7 +92,7 @@ watch(activeValue, (value) => {
           >
             <slot
               name="tab-link"
-              :activeValue="activeValue"
+              :active-value="activeValue"
               :tab="tab"
               :index="key"
               :toggle="toggle"
@@ -106,7 +106,7 @@ watch(activeValue, (value) => {
                 <span>
                   <slot
                     name="tab-link-label"
-                    :activeValue="activeValue"
+                    :active-value="activeValue"
                     :tab="tab"
                     :index="key"
                   >
@@ -123,7 +123,7 @@ watch(activeValue, (value) => {
 
     <div class="tab-content is-active">
       <Transition :name="props.slow ? 'fade-slow' : 'fade-fast'" mode="out-in">
-        <slot name="tab" :activeValue="activeValue"></slot>
+        <slot name="tab" :active-value="activeValue"></slot>
       </Transition>
     </div>
   </div>

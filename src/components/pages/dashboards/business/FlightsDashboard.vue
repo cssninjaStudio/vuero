@@ -362,7 +362,7 @@ const options = ref(['All Flights'])
               <div class="control">
                 <VCheckbox
                   v-model="options"
-                  value="All Flights"
+                  value-true="All Flights"
                   label="All Flights"
                   color="primary"
                   circle
@@ -371,7 +371,7 @@ const options = ref(['All Flights'])
               <div class="control">
                 <VCheckbox
                   v-model="options"
-                  value="No Stops"
+                  value-true="No Stops"
                   label="No Stops"
                   color="primary"
                   circle
@@ -380,7 +380,7 @@ const options = ref(['All Flights'])
               <div class="control">
                 <VCheckbox
                   v-model="options"
-                  value="1 Stop"
+                  value-true="1 Stop"
                   label="1 Stop"
                   color="primary"
                   circle
@@ -389,7 +389,7 @@ const options = ref(['All Flights'])
               <div class="control">
                 <VCheckbox
                   v-model="options"
-                  value="2 Stops"
+                  value-true="2 Stops"
                   label="2 Stops"
                   color="primary"
                   circle
@@ -404,7 +404,7 @@ const options = ref(['All Flights'])
               <div class="control">
                 <VCheckbox
                   v-model="options"
-                  value="All Options"
+                  value-true="All Options"
                   label="All Options"
                   color="primary"
                   circle
@@ -413,7 +413,7 @@ const options = ref(['All Flights'])
               <div class="control">
                 <VCheckbox
                   v-model="options"
-                  value="1 Cabine Luggage"
+                  value-true="1 Cabine Luggage"
                   label="1 Cabine Luggage"
                   color="primary"
                   circle
@@ -422,7 +422,7 @@ const options = ref(['All Flights'])
               <div class="control">
                 <VCheckbox
                   v-model="options"
-                  value="2 Cabin Luggage"
+                  value-true="2 Cabin Luggage"
                   label="2 Cabin Luggage"
                   color="primary"
                   circle
@@ -431,7 +431,7 @@ const options = ref(['All Flights'])
               <div class="control">
                 <VCheckbox
                   v-model="options"
-                  value="None"
+                  value-true="None"
                   label="None"
                   color="primary"
                   circle
