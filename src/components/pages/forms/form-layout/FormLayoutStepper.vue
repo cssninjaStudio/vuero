@@ -167,11 +167,7 @@ const validateStep = async () => {
                   <VInput type="text" placeholder="Group description" />
                 </VControl>
                 <VControl subcontrol>
-                  <VLabel class="checkbox">
-                    <VInput type="checkbox" checked />
-                    <span></span>
-                    Fragile
-                  </VLabel>
+                  <VCheckbox> Fragile </VCheckbox>
                 </VControl>
               </VField>
 
@@ -301,11 +297,7 @@ const validateStep = async () => {
                     <VInput type="text" placeholder="Email address" />
                   </VControl>
                   <VControl subcontrol>
-                    <VLabel class="checkbox">
-                      <VInput type="checkbox" checked />
-                      <span></span>
-                      Primary
-                    </VLabel>
+                    <VCheckbox> Primary </VCheckbox>
                   </VControl>
                 </VField>
 
@@ -407,7 +399,7 @@ const validateStep = async () => {
             <div class="form-section-inner">
               <div class="options">
                 <VField class="option">
-                  <VInput type="checkbox" />
+                  <VInput raw type="checkbox" />
                   <div class="indicator">
                     <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                   </div>
@@ -419,7 +411,7 @@ const validateStep = async () => {
                 </VField>
 
                 <VField class="option">
-                  <VInput type="checkbox" />
+                  <VInput raw type="checkbox" />
                   <div class="indicator">
                     <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                   </div>
@@ -431,7 +423,7 @@ const validateStep = async () => {
                 </VField>
 
                 <VField class="option">
-                  <VInput type="checkbox" />
+                  <VInput raw type="checkbox" />
                   <div class="indicator">
                     <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                   </div>
@@ -443,7 +435,7 @@ const validateStep = async () => {
                 </VField>
 
                 <VField class="option">
-                  <VInput type="checkbox" />
+                  <VInput raw type="checkbox" />
                   <div class="indicator">
                     <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                   </div>
@@ -455,7 +447,7 @@ const validateStep = async () => {
                 </VField>
 
                 <VField class="option">
-                  <VInput type="checkbox" />
+                  <VInput raw type="checkbox" />
                   <div class="indicator">
                     <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                   </div>
@@ -467,7 +459,7 @@ const validateStep = async () => {
                 </VField>
 
                 <VField class="option">
-                  <VInput type="checkbox" />
+                  <VInput raw type="checkbox" />
                   <div class="indicator">
                     <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                   </div>

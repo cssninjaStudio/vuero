@@ -18,9 +18,12 @@
   min-width: initial;
   width: 100%;
   max-width: 100%;
+  border-color: var(--border);
+  outline-offset: 0;
+  transition: all 0.3s; // transition-all test
 
-  input:focus-visible,
-  &:focus-visible {
+  &:focus,
+  &:focus-within {
     outline-offset: var(--accessibility-focus-outline-offset);
     outline-width: var(--accessibility-focus-outline-width);
     outline-color: var(--accessibility-focus-outline-color);
@@ -37,6 +40,7 @@
 
   .multiselect-dropdown {
     overflow: hidden;
+    border-color: var(--border);
   }
 
   .multiselect-clear {
@@ -193,7 +197,7 @@
 
   .multiselect {
     background-color: var(--dark-sidebar-light-2);
-    border: 1px solid var(--dark-sidebar-light-10);
+    border-color: var(--dark-sidebar-light-4);
     color: var(--dark-dark-text);
 
     .multiselect-clear {
@@ -231,7 +235,7 @@
 
     .multiselect-dropdown {
       background-color: var(--dark-sidebar-dark-2);
-      border-color: var(--dark-sidebar-light-10);
+      border-color: var(--dark-sidebar-light-4);
 
       .multiselect-option {
         color: var(--light-text);

@@ -7,12 +7,11 @@ import { datatableV4 } from '/@src/data/layouts/datatable-v4'
     <thead>
       <tr>
         <th scope="col" data-sortable="false">
-          <VControl>
-            <label class="checkbox is-primary is-outlined is-circle">
-              <input id="head-checkbox" type="checkbox" />
-              <span></span>
-            </label>
-          </VControl>
+          <VField>
+            <VControl>
+              <VCheckbox color="primary" circle outlined />
+            </VControl>
+          </VField>
         </th>
         <th scope="col" data-sortable="false">Type</th>
         <th scope="col">Name</th>
