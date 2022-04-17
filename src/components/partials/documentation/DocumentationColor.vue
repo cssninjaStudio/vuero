@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 import { ColorPicker } from 'vue-accessible-color-picker'
-import { useCssVar } from '@vueuse/core'
+import { useClipboard, useCssVar } from '@vueuse/core'
 
 export type AvailableColors =
   // states
@@ -46,6 +46,12 @@ const colorHslCss = computed(
   () =>
     `hsl(${colorHueVar.value}, ${colorSaturationVar.value}, ${colorLuminanceVar.value})`
 )
+const colorSnippet = computed(
+  () =>
+    `@include colorHsl('${props.color}', ${colorHueVar.value}, ${colorSaturationVar.value}, ${colorLuminanceVar.value});`
+)
+
+const { text, copy, copied } = useClipboard()
 
 const isOpen = ref(false)
 const toggle = () => {
@@ -90,13 +96,6 @@ function updateColor({ colors }: any) {
           <template #alpha-range-input-label>
             <span class="sr-only">Alpha</span>
           </template>
-
-          <template #copy-button>
-            <span class="sr-only">Copy color</span>
-
-            <i class="iconify is-clickable" aria-hidden="true" data-icon="feather:copy" />
-          </template>
-
           <template #format-switch-button>
             <span class="sr-only">Switch format</span>
 
@@ -130,6 +129,21 @@ function updateColor({ colors }: any) {
         </dt>
         <dd>{{ colorLuminanceVar }}</dd>
       </dl>
+      <div>
+        <VButton
+          fullwidth
+          tabindex="0"
+          @keydown.space.prevent="copy(colorSnippet)"
+          @click="copy(colorSnippet)"
+        >
+          <Transition name="fade-fast" mode="out-in">
+            <span v-if="copied && text === colorSnippet" class="is-copied">
+              Copied!
+            </span>
+            <span v-else> Copy snippet color </span>
+          </Transition>
+        </VButton>
+      </div>
     </div>
   </div>
 </template>
