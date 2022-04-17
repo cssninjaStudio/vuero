@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, reactive, watch } from 'vue'
+import { ref, reactive, watch, computed } from 'vue'
 import { useVFieldContext } from '/@src/composable/useVFieldContext'
 
 export type VCheckboxColor = 'primary' | 'info' | 'success' | 'warning' | 'danger'
@@ -7,6 +7,7 @@ export interface VCheckboxEmits {
   (e: 'update:modelValue', value: string | number | boolean): void
 }
 export interface VCheckboxProps {
+  raw?: boolean
   label?: string
   color?: VCheckboxColor
   trueValue?: string | number | boolean
@@ -15,6 +16,7 @@ export interface VCheckboxProps {
   circle?: boolean
   solid?: boolean
   paddingless?: boolean
+  wrapperClass?: string
 }
 
 const emits = defineEmits<VCheckboxEmits>()
@@ -27,10 +29,25 @@ const props = withDefaults(defineProps<VCheckboxProps>(), {
   circle: false,
   solid: false,
   paddingless: false,
+  wrapperClass: undefined,
 })
 
 const vFieldContext = reactive(useVFieldContext())
 const $value = ref((vFieldContext.field?.value ?? props.modelValue) as any)
+
+const classes = computed(() => {
+  if (props.raw) return [props.wrapperClass]
+
+  return [
+    'checkbox',
+    props.wrapperClass,
+    props.solid ? 'is-solid' : 'is-outlined',
+    props.circle && 'is-circle',
+    props.color && `is-${props.color}`,
+    props.paddingless && 'is-paddingless',
+  ]
+})
+
 watch($value, () => {
   emits('update:modelValue', $value.value)
 })
@@ -43,19 +60,11 @@ watch(
 </script>
 
 <template>
-  <VLabel
-    raw
-    class="checkbox"
-    :class="[
-      props.solid ? 'is-solid' : 'is-outlined',
-      props.circle && 'is-circle',
-      props.color && `is-${props.color}`,
-      props.paddingless && 'is-paddingless',
-    ]"
-  >
+  <VLabel raw :class="classes">
     <input
       :id="vFieldContext.id"
       v-model="$value"
+      v-bind="$attrs"
       :true-value="props.trueValue"
       :false-value="props.falseValue"
       type="checkbox"

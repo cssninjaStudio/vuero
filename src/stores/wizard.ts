@@ -1,5 +1,5 @@
 import { acceptHMRUpdate, defineStore } from 'pinia'
-import { reactive, ref, computed } from 'vue'
+import { reactive, ref, shallowRef, computed } from 'vue'
 
 /**
  * Using typescript types allow better developer experience
@@ -8,9 +8,19 @@ import { reactive, ref, computed } from 'vue'
 import type { WizardData } from '/@src/models/wizard'
 import sleep from '/@src/utils/sleep'
 
+interface WizardStepOptions {
+  number: number
+  canNavigate?: boolean
+  previousStepFn?: () => Promise<void>
+  validateStepFn?: () => Promise<void>
+}
+
 export const useWizard = defineStore('wizard', () => {
   const step = ref(1)
   const loading = ref(false)
+  const canNavigate = ref(false)
+  const previousStepFn = shallowRef<WizardStepOptions['previousStepFn']>()
+  const validateStepFn = shallowRef<WizardStepOptions['validateStepFn']>()
   const data = reactive<WizardData>({
     name: '',
     description: '',
@@ -52,8 +62,11 @@ export const useWizard = defineStore('wizard', () => {
   function setLoading(value: boolean) {
     loading.value = value
   }
-  function setStep(value: number) {
-    step.value = value
+  function setStep(options?: WizardStepOptions) {
+    step.value = options.number
+    canNavigate.value = options.canNavigate ?? false
+    previousStepFn.value = options.previousStepFn ?? null
+    validateStepFn.value = options.validateStepFn ?? null
   }
 
   async function save() {
@@ -82,6 +95,9 @@ export const useWizard = defineStore('wizard', () => {
   }
 
   return {
+    canNavigate,
+    previousStepFn,
+    validateStepFn,
     step,
     loading,
     stepTitle,

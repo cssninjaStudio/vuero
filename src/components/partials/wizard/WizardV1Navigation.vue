@@ -7,20 +7,11 @@ import { useDarkmode } from '/@src/stores/darkmode'
 import { onceImageErrored } from '/@src/utils/via-placeholder'
 
 const darkmode = useDarkmode()
-const dropdownElement1 = ref<HTMLElement>()
-const dropdown1 = useDropdown(dropdownElement1)
 
-const dropdownElement2 = ref<HTMLElement>()
-const dropdown2 = useDropdown(dropdownElement2)
+const dropdownElement = ref<HTMLElement>()
+const dropdown = useDropdown(dropdownElement)
 
 const wizard = useWizard()
-
-const setStep = (target: number) => {
-  if (wizard.step >= target) {
-    wizard.setStep(target)
-    dropdown1.close()
-  }
-}
 </script>
 
 <template>
@@ -29,89 +20,89 @@ const setStep = (target: number) => {
       <AnimatedLogo width="38px" height="38px" />
     </RouterLink>
 
-    <div class="navbar-item is-wizard-title" @click="dropdown1.toggle">
+    <div class="navbar-item is-wizard-title">
       <span class="title-wrap">
         Step {{ wizard.step }}: <span>{{ wizard.stepTitle }}</span>
       </span>
     </div>
 
-    <div ref="dropdownElement1" class="dropdown wizard-dropdown dropdown-trigger">
-      <div
-        tabindex="0"
-        class="is-trigger"
-        @click="dropdown1.toggle"
-        @keydown.space.prevent="dropdown1.toggle"
-      >
-        <i aria-hidden="true" class="iconify" data-icon="feather:chevron-down"></i>
-      </div>
-      <div id="wizard-navigation-dropdown" class="dropdown-menu" role="menu">
-        <div class="dropdown-content">
-          <a
-            :class="[wizard.step < 1 && 'is-disabled']"
-            class="dropdown-item kill-drop"
-            tabindex="0"
-            @keydown.space.prevent="setStep(1)"
-            @click="setStep(1)"
-          >
-            Step 1: {{ wizard.stepTitle }}
-          </a>
-          <a
-            :class="[wizard.step < 2 && 'is-disabled']"
-            class="dropdown-item kill-drop"
-            tabindex="0"
-            @keydown.space.prevent="setStep(2)"
-            @click="setStep(2)"
-          >
-            Step 2: Project Info
-          </a>
-          <a
-            :class="[wizard.step < 3 && 'is-disabled']"
-            class="dropdown-item kill-drop"
-            tabindex="0"
-            @keydown.space.prevent="setStep(3)"
-            @click="setStep(3)"
-          >
-            Step 3: Project Details
-          </a>
-          <a
-            :class="[wizard.step < 4 && 'is-disabled']"
-            class="dropdown-item kill-drop"
-            tabindex="0"
-            @keydown.space.prevent="setStep(4)"
-            @click="setStep(4)"
-          >
-            Step 4: Project Files
-          </a>
-          <a
-            :class="[wizard.step < 5 && 'is-disabled']"
-            class="dropdown-item kill-drop"
-            tabindex="0"
-            @keydown.space.prevent="setStep(5)"
-            @click="setStep(5)"
-          >
-            Step 5: Team Members
-          </a>
-          <a
-            :class="[wizard.step < 6 && 'is-disabled']"
-            class="dropdown-item kill-drop"
-            tabindex="0"
-            @keydown.space.prevent="setStep(6)"
-            @click="setStep(6)"
-          >
-            Step 6: Project Tools
-          </a>
-          <a
-            :class="[wizard.step < 7 && 'is-disabled']"
-            class="dropdown-item kill-drop"
-            tabindex="0"
-            @keydown.space.prevent="setStep(7)"
-            @click="setStep(7)"
-          >
-            Step 7: Preview
-          </a>
+    <VDropdown class="wizard-dropdown">
+      <template #button="{ toggle }">
+        <div
+          tabindex="0"
+          class="is-trigger"
+          @click="toggle"
+          @keydown.space.prevent="toggle"
+        >
+          <i aria-hidden="true" class="iconify" data-icon="feather:chevron-down"></i>
         </div>
-      </div>
-    </div>
+      </template>
+      <template #content="{ close }">
+        <RouterLink
+          :class="[wizard.step < 1 && 'is-disabled']"
+          class="dropdown-item kill-drop"
+          tabindex="0"
+          :to="{ name: 'wizard-v1' }"
+          @click.passive="close"
+        >
+          Step 1: Project Type
+        </RouterLink>
+        <RouterLink
+          :class="[wizard.step < 2 && 'is-disabled']"
+          class="dropdown-item kill-drop"
+          tabindex="0"
+          :to="{ name: 'wizard-v1-project-info' }"
+          @click.passive="close"
+        >
+          Step 2: Project Info
+        </RouterLink>
+        <RouterLink
+          :class="[wizard.step < 3 && 'is-disabled']"
+          class="dropdown-item kill-drop"
+          tabindex="0"
+          :to="{ name: 'wizard-v1-project-details' }"
+          @click.passive="close"
+        >
+          Step 3: Project Details
+        </RouterLink>
+        <RouterLink
+          :class="[wizard.step < 4 && 'is-disabled']"
+          class="dropdown-item kill-drop"
+          tabindex="0"
+          :to="{ name: 'wizard-v1-project-files' }"
+          @click.passive="close"
+        >
+          Step 4: Project Files
+        </RouterLink>
+        <RouterLink
+          :class="[wizard.step < 5 && 'is-disabled']"
+          class="dropdown-item kill-drop"
+          tabindex="0"
+          :to="{ name: 'wizard-v1-project-team' }"
+          @click.passive="close"
+        >
+          Step 5: Team Members
+        </RouterLink>
+        <RouterLink
+          :class="[wizard.step < 6 && 'is-disabled']"
+          class="dropdown-item kill-drop"
+          tabindex="0"
+          :to="{ name: 'wizard-v1-project-tools' }"
+          @click.passive="close"
+        >
+          Step 6: Project Tools
+        </RouterLink>
+        <RouterLink
+          :class="[wizard.step < 7 && 'is-disabled']"
+          class="dropdown-item kill-drop"
+          tabindex="0"
+          :to="{ name: 'wizard-v1-project-review' }"
+          @click.passive="close"
+        >
+          Step 7: Preview
+        </RouterLink>
+      </template>
+    </VDropdown>
 
     <div class="navbar-item is-dark-mode">
       <div class="navbar-icon">
@@ -131,8 +122,8 @@ const setStep = (target: number) => {
         tabindex="0"
         class="is-trigger"
         aria-haspopup="true"
-        @click="dropdown2.toggle"
-        @keydown.space.prevent="dropdown2.toggle"
+        @click="dropdown.toggle"
+        @keydown.space.prevent="dropdown.toggle"
       >
         <div class="profile-avatar">
           <img
@@ -236,7 +227,8 @@ const setStep = (target: number) => {
       }
     }
 
-    .dropdown-menu {
+    .dropdown-menu,
+    :deep(.dropdown-menu) {
       border: 1px solid var(--fade-grey-dark-3);
       box-shadow: var(--light-box-shadow);
       border-radius: 8px;

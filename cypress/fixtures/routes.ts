@@ -68,10 +68,7 @@ export const minimal = [
   {
     name: 'Wizard V1 (step 2)',
     category: 'APP',
-    path: '/wizard-v1',
-    query: {
-      step: 2,
-    },
+    path: '/wizard-v1/project-info',
     prefix: 'minimal',
     pageDelay: 300,
     checkVisibleSelector: '.wizard-v1-wrapper',
@@ -80,10 +77,7 @@ export const minimal = [
   {
     name: 'Wizard V1 (step 3)',
     category: 'APP',
-    path: '/wizard-v1',
-    query: {
-      step: 3,
-    },
+    path: '/wizard-v1/project-details',
     prefix: 'minimal',
     pageDelay: 300,
     checkVisibleSelector: '.wizard-v1-wrapper',
@@ -92,10 +86,7 @@ export const minimal = [
   {
     name: 'Wizard V1 (step 4)',
     category: 'APP',
-    path: '/wizard-v1',
-    query: {
-      step: 4,
-    },
+    path: '/wizard-v1/project-files',
     prefix: 'minimal',
     pageDelay: 300,
     checkVisibleSelector: '.wizard-v1-wrapper',
@@ -104,10 +95,7 @@ export const minimal = [
   {
     name: 'Wizard V1 (step 5)',
     category: 'APP',
-    path: '/wizard-v1',
-    query: {
-      step: 5,
-    },
+    path: '/wizard-v1/project-team',
     prefix: 'minimal',
     pageDelay: 300,
     checkVisibleSelector: '.wizard-v1-wrapper',
@@ -116,10 +104,7 @@ export const minimal = [
   {
     name: 'Wizard V1 (step 6)',
     category: 'APP',
-    path: '/wizard-v1',
-    query: {
-      step: 6,
-    },
+    path: '/wizard-v1/project-tools',
     prefix: 'minimal',
     pageDelay: 300,
     checkVisibleSelector: '.wizard-v1-wrapper',
@@ -128,10 +113,7 @@ export const minimal = [
   {
     name: 'Wizard V1 (step 7)',
     category: 'APP',
-    path: '/wizard-v1',
-    query: {
-      step: 7,
-    },
+    path: '/wizard-v1/project-review',
     prefix: 'minimal',
     pageDelay: 300,
     checkVisibleSelector: '.wizard-v1-wrapper',

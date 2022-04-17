@@ -1,52 +1,13 @@
 <script setup lang="ts">
+import { computed } from 'vue'
 import { useHead } from '@vueuse/head'
-import { watch, watchEffect } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
 
 import { useWizard } from '/@src/stores/wizard'
 
-const route = useRoute()
-const router = useRouter()
 const wizard = useWizard()
 
-const previousStep = () => {
-  if (wizard.step > 1) {
-    wizard.setStep(wizard.step - 1)
-  }
-}
-
-const validateStep = async () => {
-  if (wizard.step < 7) {
-    wizard.setStep(wizard.step + 1)
-  } else if (wizard.step === 7) {
-    await wizard.save()
-    wizard.setStep(wizard.step + 1)
-  } else {
-    router.push({
-      name: 'navbar-layouts-projects-details',
-    })
-    wizard.reset()
-  }
-}
-
 useHead({
-  title: `${wizard.stepTitle} - Wizard V1 - Vuero`,
-})
-watch(
-  () => wizard.step,
-  () => {
-    router.push({
-      query: {
-        step: wizard.step,
-      },
-    })
-  }
-)
-watchEffect(() => {
-  const step = route.query.step as string
-  if (step) {
-    wizard.setStep(parseInt(step))
-  }
+  title: computed(() => `${wizard.stepTitle} - Wizard V1 - Vuero`),
 })
 </script>
 
@@ -56,110 +17,45 @@ watchEffect(() => {
     <WizardV1Navigation v-model:step="wizard.step" :title="wizard.stepTitle" />
 
     <!--Wizard Progress Bar-->
-    <progress
+    <VProgress
       id="wizard-progress"
-      class="progress is-smaller is-primary wizard-progress"
+      class="wizard-progress"
+      color="primary"
+      size="smaller"
       :value="(wizard.step / 8) * 100"
-      max="100"
-    ></progress>
+      :max="100"
+    />
 
     <!--Main Wrapper-->
-    <div class="wizard-v1-wrapper">
-      <div
-        id="wizard-step-0"
-        class="inner-wrapper"
-        :class="[wizard.step === 1 && 'is-active']"
-      >
-        <WizardV1Step1 @next="wizard.setStep(2)" />
-      </div>
-
-      <div
-        id="wizard-step-1"
-        class="inner-wrapper"
-        :class="[wizard.step === 2 && 'is-active']"
-      >
-        <WizardV1Step2 @next="wizard.setStep(3)" @prev="wizard.setStep(1)" />
-      </div>
-
-      <div
-        id="wizard-step-2"
-        class="inner-wrapper"
-        :class="[wizard.step === 3 && 'is-active']"
-      >
-        <WizardV1Step3 @next="wizard.setStep(4)" @prev="wizard.setStep(2)" />
-      </div>
-
-      <div
-        id="wizard-step-3"
-        class="inner-wrapper"
-        :class="[wizard.step === 4 && 'is-active']"
-      >
-        <WizardV1Step4 @next="wizard.setStep(5)" @prev="wizard.setStep(3)" />
-      </div>
-
-      <div
-        id="wizard-step-4"
-        class="inner-wrapper"
-        :class="[wizard.step === 5 && 'is-active']"
-      >
-        <WizardV1Step5 @next="wizard.setStep(6)" @prev="wizard.setStep(4)" />
-      </div>
-
-      <div
-        id="wizard-step-5"
-        class="inner-wrapper"
-        :class="[wizard.step === 6 && 'is-active']"
-      >
-        <WizardV1Step6 @next="wizard.setStep(7)" @prev="wizard.setStep(5)" />
-      </div>
-
-      <div
-        id="wizard-step-6"
-        :class="[wizard.step === 7 && 'is-active']"
-        class="inner-wrapper"
-        data-step-title="Preview"
-      >
-        <WizardV1Step7 @next="wizard.setStep(8)" @prev="wizard.setStep(6)" />
-      </div>
-
-      <div
-        id="wizard-step-7"
-        :class="[wizard.step === 8 && 'is-active']"
-        class="inner-wrapper"
-        data-step-title="Finish"
-      >
-        <WizardV1Step8 />
-      </div>
+    <form class="wizard-v1-wrapper" @submit.prevent="wizard.validateStepFn">
+      <RouterView />
 
       <!--Wizard Navigation Buttons-->
-      <div
-        class="wizard-buttons"
-        :class="[wizard.step > 1 && wizard.step < 8 && 'is-active']"
-      >
+      <div class="wizard-buttons" :class="[wizard.canNavigate && 'is-active']">
         <div class="wizard-buttons-inner">
-          <button
-            :class="[
-              wizard.step === 2 && 'is-light',
-              wizard.step > 2 && 'is-primary is-elevated',
-            ]"
-            class="button v-button is-bold wizard-button-previous"
-            @click="previousStep"
+          <VButton
+            class="wizard-button-previous"
+            :disabled="wizard.previousStepFn === null"
+            :color="wizard.previousStepFn === null ? 'light' : 'primary'"
+            bold
+            elevated
+            @click="wizard.previousStepFn"
           >
             Previous
-          </button>
-          <button
-            :class="[
-              wizard.step === 8 && 'is-light',
-              wizard.step < 8 && 'is-primary is-elevated',
-            ]"
-            class="button v-button is-bold wizard-button-next"
-            @click="validateStep"
+          </VButton>
+          <VButton
+            type="submit"
+            class="wizard-button-previous"
+            :disabled="wizard.validateStepFn === null"
+            :color="wizard.validateStepFn === null ? 'light' : 'primary'"
+            bold
+            elevated
           >
-            {{ wizard.step === 7 ? 'Validate' : 'Next' }}
-          </button>
+            Validate
+          </VButton>
         </div>
       </div>
-    </div>
+    </form>
   </MinimalLayout>
 </template>
 

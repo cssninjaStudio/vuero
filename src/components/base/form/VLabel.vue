@@ -20,10 +20,16 @@ const classes = computed(() => {
 
   return ['label']
 })
+
+const onEnter = () => {
+  if (vFieldContext.id) {
+    document.getElementById(vFieldContext.id)?.click()
+  }
+}
 </script>
 
 <template>
-  <label :class="classes" :for="vFieldContext.id">
+  <label :class="classes" :for="vFieldContext.id" @keydown.enter.prevent="onEnter">
     <slot v-bind="vFieldContext" />
   </label>
 </template>
