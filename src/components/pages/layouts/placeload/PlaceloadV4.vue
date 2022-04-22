@@ -25,8 +25,8 @@ const optionsSingle = [
         <VField v-slot="{ id }" class="v-hidden-mobile">
           <VControl>
             <Multiselect
-              :id="id"
               v-model="valueSingle"
+              :attrs="{ id }"
               :options="optionsSingle"
               :max-height="145"
               placeholder="Select an option"

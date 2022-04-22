@@ -27,8 +27,8 @@ const optionsSingle = ['Batman', 'Robin', 'Joker']
   <VField v-slot="{ id }" class="is-curved-select">
     <VControl>
       <Multiselect
-        :id="id"
         v-model="valueSingle"
+        :attrs="{ id }"
         :options="optionsSingle"
         placeholder="Select an option"
       />
@@ -46,7 +46,7 @@ const optionsSingle = ['Batman', 'Robin', 'Joker']
     <VField v-slot="{ id }">
       <VControl>
         <Multiselect
-          :id="id"
+          :attrs="{ id }"
           v-model="frontmatter.state.valueSingle"
           :options="frontmatter.optionsSingle"
           placeholder="Select an option"
@@ -58,7 +58,7 @@ const optionsSingle = ['Batman', 'Robin', 'Joker']
     <VField v-slot="{ id }" class="is-curved-select">
       <VControl>
         <Multiselect
-          :id="id"
+          :attrs="{ id }"
           v-model="frontmatter.state.valueSingle"
           :options="frontmatter.optionsSingle"
           placeholder="Select an option"
@@ -70,7 +70,7 @@ const optionsSingle = ['Batman', 'Robin', 'Joker']
     <VField v-slot="{ id }" class="is-rounded-select">
       <VControl>
         <Multiselect
-          :id="id"
+          :attrs="{ id }"
           v-model="frontmatter.state.valueSingle"
           :options="frontmatter.optionsSingle"
           placeholder="Select an option"

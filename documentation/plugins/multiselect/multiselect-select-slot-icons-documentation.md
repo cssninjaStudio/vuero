@@ -77,8 +77,8 @@ const selectSlotIconOptions = [
   <VField v-slot="{ id }" class="is-icon-select">
     <VControl>
       <Multiselect
-        :id="id"
         v-model="selectSlotIconValue"
+        :attrs="{ id }"
         placeholder="Select a member"
         label="name"
         :options="selectSlotIconOptions"
@@ -119,7 +119,7 @@ const selectSlotIconOptions = [
     <VField v-slot="{ id }" class="is-icon-select">
       <VControl>
         <Multiselect
-          :id="id"
+          :attrs="{ id }"
           v-model="frontmatter.selectSlotIconValue"
           placeholder="Select a member"
           label="name"
@@ -154,7 +154,7 @@ const selectSlotIconOptions = [
     <VField v-slot="{ id }" class="is-icon-select is-curved-select">
       <VControl>
         <Multiselect
-          :id="id"
+          :attrs="{ id }"
           v-model="frontmatter.selectSlotIconValue"
           placeholder="Select a member"
           label="name"
@@ -189,7 +189,7 @@ const selectSlotIconOptions = [
     <VField v-slot="{ id }" class="is-icon-select is-rounded-select">
       <VControl>
         <Multiselect
-          :id="id"
+          :attrs="{ id }"
           v-model="frontmatter.selectSlotIconValue"
           placeholder="Select a member"
           label="name"

@@ -80,8 +80,8 @@ const tagsSlotOptions = [
   <VField v-slot="{ id }" class="is-image-tags">
     <VControl>
       <Multiselect
-        :id="id"
         v-model="tagsSlotValue"
+        :attrs="{ id }"
         mode="tags"
         placeholder="Select employees"
         track-by="name"
@@ -112,7 +112,7 @@ const tagsSlotOptions = [
     <VField v-slot="{ id }" class="is-image-tags">
       <VControl>
         <Multiselect
-          :id="id"
+          :attrs="{ id }"
           v-model="frontmatter.tagsSlotValue"
           mode="tags"
           placeholder="Select employees"
@@ -141,7 +141,7 @@ const tagsSlotOptions = [
     <VField v-slot="{ id }" class="is-image-tags is-curved-select">
       <VControl>
         <Multiselect
-          :id="id"
+          :attrs="{ id }"
           v-model="frontmatter.tagsSlotValue"
           mode="tags"
           placeholder="Select employees"
@@ -170,7 +170,7 @@ const tagsSlotOptions = [
     <VField v-slot="{ id }" class="is-image-tags is-rounded-select">
       <VControl>
         <Multiselect
-          :id="id"
+          :attrs="{ id }"
           v-model="frontmatter.tagsSlotValue"
           mode="tags"
           placeholder="Select employees"

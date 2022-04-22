@@ -32,8 +32,8 @@ const disabledOptions = [
   <VField v-slot="{ id }">
     <VControl>
       <Multiselect
-        :id="id"
         v-model="disabledValue"
+        :attrs="{ id }"
         mode="multiple"
         :options="disabledOptions"
         placeholder="Select options"
@@ -52,7 +52,7 @@ const disabledOptions = [
     <VField v-slot="{ id }">
       <VControl>
         <Multiselect
-          :id="id"
+          :attrs="{ id }"
           v-model="frontmatter.disabledValue"
           mode="multiple"
           :options="frontmatter.disabledOptions"
@@ -65,7 +65,7 @@ const disabledOptions = [
     <VField v-slot="{ id }" class="is-curved-select">
       <VControl>
         <Multiselect
-          :id="id"
+          :attrs="{ id }"
           v-model="frontmatter.disabledValue"
           mode="multiple"
           :options="frontmatter.disabledOptions"
@@ -78,7 +78,7 @@ const disabledOptions = [
     <VField v-slot="{ id }" class="is-rounded-select">
       <VControl>
         <Multiselect
-          :id="id"
+          :attrs="{ id }"
           v-model="frontmatter.disabledValue"
           mode="multiple"
           :options="frontmatter.disabledOptions"

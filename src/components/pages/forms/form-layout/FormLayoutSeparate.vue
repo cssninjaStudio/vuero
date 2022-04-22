@@ -67,8 +67,8 @@ const onSubmit = () => {
                   <VLabel>Country</VLabel>
                   <VControl>
                     <Multiselect
-                      :id="id"
                       v-model="country"
+                      :attrs="{ id }"
                       placeholder="Select a country"
                       autocomplete="country"
                       label="name"

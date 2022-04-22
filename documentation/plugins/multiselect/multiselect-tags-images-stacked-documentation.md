@@ -79,8 +79,8 @@ const tagsSlotOptions = [
   <VField v-slot="{ id }" class="is-image-tags is-stacked">
     <VControl>
       <Multiselect
-        :id="id"
         v-model="tagsSlotValue"
+        :attrs="{ id }"
         mode="tags"
         placeholder="Select language"
         track-by="name"
@@ -111,7 +111,7 @@ const tagsSlotOptions = [
     <VField v-slot="{ id }" class="is-image-tags is-stacked">
       <VControl>
         <Multiselect
-          :id="id"
+          :attrs="{ id }"
           v-model="frontmatter.tagsSlotValue"
           mode="tags"
           placeholder="Select language"
@@ -139,7 +139,7 @@ const tagsSlotOptions = [
     <VField v-slot="{ id }" class="is-image-tags is-stacked is-curved-select">
       <VControl>
         <Multiselect
-          :id="id"
+          :attrs="{ id }"
           v-model="frontmatter.tagsSlotValue"
           mode="tags"
           placeholder="Select language"
@@ -167,7 +167,7 @@ const tagsSlotOptions = [
     <VField v-slot="{ id }" class="is-image-tags is-stacked is-rounded-select">
       <VControl>
         <Multiselect
-          :id="id"
+          :attrs="{ id }"
           v-model="frontmatter.tagsSlotValue"
           mode="tags"
           placeholder="Select language"

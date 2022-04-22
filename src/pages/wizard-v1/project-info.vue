@@ -113,8 +113,8 @@ const onRemoveFile = (error: any, fileInfo: any) => {
                 <label>Related Industries</label>
                 <VControl>
                   <Multiselect
-                    :id="id"
                     v-model="wizard.data.relatedTo"
+                    :attrs="{ id }"
                     label="value"
                     placeholder="Enter something"
                     :options="[

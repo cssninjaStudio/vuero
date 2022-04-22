@@ -33,8 +33,8 @@ const tagsOptions = [
   <VField v-slot="{ id }">
     <VControl>
       <Multiselect
-        :id="id"
         v-model="tagsValue"
+        :attrs="{ id }"
         mode="tags"
         :searchable="true"
         :create-tag="true"
@@ -55,7 +55,7 @@ const tagsOptions = [
     <VField v-slot="{ id }">
       <VControl>
         <Multiselect
-          :id="id"
+          :attrs="{ id }"
           v-model="frontmatter.tagsValue"
           mode="tags"
           :searchable="true"
@@ -70,7 +70,7 @@ const tagsOptions = [
     <VField v-slot="{ id }" class="is-curved-select">
       <VControl>
         <Multiselect
-          :id="id"
+          :attrs="{ id }"
           v-model="frontmatter.tagsValue"
           mode="tags"
           :searchable="true"
@@ -85,7 +85,7 @@ const tagsOptions = [
     <VField v-slot="{ id }" class="is-rounded-select">
       <VControl>
         <Multiselect
-          :id="id"
+          :attrs="{ id }"
           v-model="frontmatter.tagsValue"
           mode="tags"
           :searchable="true"

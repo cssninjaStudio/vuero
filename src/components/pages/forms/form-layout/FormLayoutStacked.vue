@@ -245,8 +245,8 @@ const onSubmit = () => {
             <VField v-slot="{ id }" horizontal label="Clendar">
               <VControl fullwidth>
                 <Multiselect
-                  :id="id"
                   v-model="calendarTarget"
+                  :attrs="{ id }"
                   placeholder="Pick a calendar"
                   :options="['My Calendar', 'Team Calendar', 'Company Calendar']"
                 />
@@ -317,8 +317,8 @@ const onSubmit = () => {
               <VField v-slot="{ id }">
                 <VControl>
                   <Multiselect
-                    :id="id"
                     v-model="notificationMedium"
+                    :attrs="{ id }"
                     placeholder="Select a channel"
                     :options="['Email', 'SMS', 'Slack', 'Project Board']"
                   />
@@ -328,8 +328,8 @@ const onSubmit = () => {
               <VField v-slot="{ id }" subcontrol>
                 <VControl class="is-image-select">
                   <Multiselect
-                    :id="id"
                     v-model="notificationTarget"
+                    :attrs="{ id }"
                     placeholder="Select a target"
                     label="name"
                     value="name"

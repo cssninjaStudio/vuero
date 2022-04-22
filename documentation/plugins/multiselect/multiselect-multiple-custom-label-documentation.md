@@ -31,8 +31,8 @@ const optionMultipleObject = ref({
   <VField v-slot="{ id }" class="demo-field mb-6">
     <VControl>
       <Multiselect
-        :id="id"
         v-model="valueMultipleObject"
+        :attrs="{ id }"
         mode="multiple"
         placeholder="Select your characters"
         :options="optionMultipleObject"
@@ -57,7 +57,7 @@ const optionMultipleObject = ref({
     <VField v-slot="{ id }">
       <VControl>
         <Multiselect
-          :id="id"
+          :attrs="{ id }"
           v-model="frontmatter.valueMultipleObject"
           mode="multiple"
           placeholder="Select your characters"
@@ -76,7 +76,7 @@ const optionMultipleObject = ref({
     <VField v-slot="{ id }" class="is-curved-select">
       <VControl>
         <Multiselect
-          :id="id"
+          :attrs="{ id }"
           v-model="frontmatter.valueMultipleObject"
           mode="multiple"
           placeholder="Select your characters"
@@ -95,7 +95,7 @@ const optionMultipleObject = ref({
     <VField v-slot="{ id }" class="is-rounded-select">
       <VControl>
         <Multiselect
-          :id="id"
+          :attrs="{ id }"
           v-model="frontmatter.valueMultipleObject"
           mode="multiple"
           placeholder="Select your characters"

@@ -60,8 +60,8 @@ const selectSlotOptions = [
   <VField v-slot="{ id }">
     <VControl>
       <Multiselect
-        :id="id"
         v-model="selectSlotValue"
+        :attrs="{ id }"
         placeholder="Select a language"
         label="name"
         :options="selectSlotOptions"
@@ -94,7 +94,7 @@ const selectSlotOptions = [
     <VField v-slot="{ id }" class="is-image-select">
       <VControl>
         <Multiselect
-          :id="id"
+          :attrs="{ id }"
           v-model="frontmatter.selectSlotValue"
           placeholder="Select a language"
           label="name"
@@ -125,7 +125,7 @@ const selectSlotOptions = [
     <VField v-slot="{ id }" class="is-image-select is-curved-select">
       <VControl>
         <Multiselect
-          :id="id"
+          :attrs="{ id }"
           v-model="frontmatter.selectSlotValue"
           placeholder="Select a language"
           label="name"
@@ -156,7 +156,7 @@ const selectSlotOptions = [
     <VField v-slot="{ id }" class="is-image-select is-rounded-select">
       <VControl>
         <Multiselect
-          :id="id"
+          :attrs="{ id }"
           v-model="frontmatter.selectSlotValue"
           placeholder="Select a language"
           label="name"

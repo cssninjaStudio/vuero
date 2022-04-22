@@ -213,8 +213,8 @@ const onSave = async () => {
             <VField v-slot="{ id }">
               <VControl>
                 <Multiselect
-                  :id="id"
                   v-model="experience"
+                  :attrs="{ id }"
                   placeholder="Experience"
                   :options="['0-2 years', '2-5 years', '5-10 years', '10+ years']"
                 />
@@ -226,8 +226,8 @@ const onSave = async () => {
             <VField v-slot="{ id }">
               <VControl>
                 <Multiselect
-                  :id="id"
                   v-model="firstJob"
+                  :attrs="{ id }"
                   placeholder="Is this your first job?"
                   :options="['Yes', 'No']"
                 />
@@ -239,8 +239,8 @@ const onSave = async () => {
             <VField v-slot="{ id }">
               <VControl>
                 <Multiselect
-                  :id="id"
                   v-model="flexibility"
+                  :attrs="{ id }"
                   placeholder="Are you flexible?"
                   :options="['Yes', 'No']"
                 />
@@ -252,8 +252,8 @@ const onSave = async () => {
             <VField v-slot="{ id }">
               <VControl>
                 <Multiselect
-                  :id="id"
                   v-model="remote"
+                  :attrs="{ id }"
                   placeholder="Do you work remotely?"
                   :options="['Yes', 'No']"
                 />
@@ -265,8 +265,8 @@ const onSave = async () => {
             <VField v-slot="{ id }">
               <VControl>
                 <Multiselect
-                  :id="id"
                   v-model="skills"
+                  :attrs="{ id }"
                   mode="tags"
                   :searchable="true"
                   :create-tag="true"

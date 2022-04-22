@@ -109,8 +109,8 @@ const onSubmit = () => {
                 <VLabel>Company Size</VLabel>
                 <VControl>
                   <Multiselect
-                    :id="id"
                     v-model="companySize"
+                    :attrs="{ id }"
                     placeholder="Select a size"
                     :options="[
                       '1-5 Employees',
@@ -128,8 +128,8 @@ const onSubmit = () => {
                 <VLabel>Business Type</VLabel>
                 <VControl>
                   <Multiselect
-                    :id="id"
                     v-model="businessType"
+                    :attrs="{ id }"
                     placeholder="Select a type"
                     :options="[
                       'Government',
@@ -170,8 +170,8 @@ const onSubmit = () => {
                 <VLabel>Product to demo</VLabel>
                 <VControl>
                   <Multiselect
-                    :id="id"
                     v-model="productToDemo"
+                    :attrs="{ id }"
                     placeholder="Select a product"
                     :options="['Vuero Starter', 'Vuero Pro', 'Vuero Business']"
                   />

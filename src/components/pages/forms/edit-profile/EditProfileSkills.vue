@@ -113,8 +113,8 @@ const onSave = async () => {
                   <VField v-slot="{ id }" class="is-image-select">
                     <VControl>
                       <Multiselect
-                        :id="id"
                         v-model="selectedLanguage"
+                        :attrs="{ id }"
                         placeholder="Select a language"
                         label="name"
                         :options="[
@@ -162,8 +162,8 @@ const onSave = async () => {
                   <VField v-slot="{ id }">
                     <VControl>
                       <Multiselect
-                        :id="id"
                         v-model="selectedLanguageLevel"
+                        :attrs="{ id }"
                         placeholder="Select your level"
                         :options="[
                           {
@@ -319,8 +319,8 @@ const onSave = async () => {
                   <VField v-slot="{ id }" class="is-image-select">
                     <VControl>
                       <Multiselect
-                        :id="id"
                         v-model="selectedSkill"
+                        :attrs="{ id }"
                         placeholder="Select a Skill"
                         label="name"
                         :options="[
@@ -388,8 +388,8 @@ const onSave = async () => {
                   <VField v-slot="{ id }">
                     <VControl>
                       <Multiselect
-                        :id="id"
                         v-model="selectedSkillLevel"
+                        :attrs="{ id }"
                         placeholder="Years of Exp."
                         :options="[
                           {
@@ -544,8 +544,8 @@ const onSave = async () => {
                   <VField v-slot="{ id }" class="is-image-select">
                     <VControl>
                       <Multiselect
-                        :id="id"
                         v-model="selectedTool"
+                        :attrs="{ id }"
                         placeholder="Select a Tool"
                         label="name"
                         :options="[
@@ -593,8 +593,8 @@ const onSave = async () => {
                   <VField v-slot="{ id }">
                     <VControl>
                       <Multiselect
-                        :id="id"
                         v-model="selectedToolLevel"
+                        :attrs="{ id }"
                         placeholder="Select your level"
                         :options="[
                           {

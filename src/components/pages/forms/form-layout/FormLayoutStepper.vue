@@ -206,8 +206,8 @@ const validateStep = async () => {
                 <VLabel>Method</VLabel>
                 <VControl>
                   <Multiselect
-                    :id="id"
                     v-model="storageType"
+                    :attrs="{ id }"
                     :options="[
                       'LVL 1 Security warehouse',
                       'LVL 2 Security warehouse',

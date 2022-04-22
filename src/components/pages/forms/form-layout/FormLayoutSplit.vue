@@ -133,8 +133,8 @@ const onSubmit = () => {
             <VField v-slot="{ id }">
               <VControl>
                 <Multiselect
-                  :id="id"
                   v-model="bankAccount"
+                  :attrs="{ id }"
                   placeholder="Bank Account"
                   :options="['AMEX **** 42', 'HSBC **** 29']"
                 />
@@ -144,8 +144,8 @@ const onSubmit = () => {
             <VField v-slot="{ id }">
               <VControl>
                 <Multiselect
-                  :id="id"
                   v-model="transferFees"
+                  :attrs="{ id }"
                   placeholder="Bank Account"
                   :options="['Super Fast - $3.00', 'Regular - $0.50']"
                 />

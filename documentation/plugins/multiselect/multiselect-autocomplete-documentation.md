@@ -27,8 +27,8 @@ const optionsSingle = ['Batman', 'Robin', 'Joker']
   <VField v-slot="{ id }" class="is-autocomplete-select">
     <VControl icon="feather:search">
       <Multiselect
-        :id="id"
         v-model="valueSingle"
+        :attrs="{ id }"
         :options="optionsSingle"
         placeholder="Search heroes..."
         :searchable="true"
@@ -47,7 +47,7 @@ const optionsSingle = ['Batman', 'Robin', 'Joker']
     <VField v-slot="{ id }" class="is-autocomplete-select">
       <VControl icon="feather:search">
         <Multiselect
-          :id="id"
+          :attrs="{ id }"
           v-model="frontmatter.state.valueSingle"
           :options="frontmatter.optionsSingle"
           placeholder="Search heroes..."
@@ -60,7 +60,7 @@ const optionsSingle = ['Batman', 'Robin', 'Joker']
     <VField v-slot="{ id }" class="is-curved-select is-autocomplete-select">
       <VControl icon="feather:search">
         <Multiselect
-          :id="id"
+          :attrs="{ id }"
           v-model="frontmatter.state.valueSingle"
           :options="frontmatter.optionsSingle"
           placeholder="Search heroes..."
@@ -73,7 +73,7 @@ const optionsSingle = ['Batman', 'Robin', 'Joker']
     <VField v-slot="{ id }" class="is-rounded-select is-autocomplete-select">
       <VControl icon="feather:search">
         <Multiselect
-          :id="id"
+          :attrs="{ id }"
           v-model="frontmatter.state.valueSingle"
           :options="frontmatter.optionsSingle"
           placeholder="Search heroes..."
