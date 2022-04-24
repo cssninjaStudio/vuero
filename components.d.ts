@@ -684,14 +684,6 @@ declare module '@vue/runtime-core' {
     WidgetsStats: typeof import('./src/components/pages/layouts/widgets/WidgetsStats.vue')['default']
     WidgetsUI: typeof import('./src/components/pages/layouts/widgets/WidgetsUI.vue')['default']
     WizardV1Navigation: typeof import('./src/components/partials/wizard/WizardV1Navigation.vue')['default']
-    WizardV1Step1: typeof import('./src/components/partials/wizard/WizardV1Step1.vue')['default']
-    WizardV1Step2: typeof import('./src/components/partials/wizard/WizardV1Step2.vue')['default']
-    WizardV1Step3: typeof import('./src/components/partials/wizard/WizardV1Step3.vue')['default']
-    WizardV1Step4: typeof import('./src/components/partials/wizard/WizardV1Step4.vue')['default']
-    WizardV1Step5: typeof import('./src/components/partials/wizard/WizardV1Step5.vue')['default']
-    WizardV1Step6: typeof import('./src/components/partials/wizard/WizardV1Step6.vue')['default']
-    WizardV1Step7: typeof import('./src/components/partials/wizard/WizardV1Step7.vue')['default']
-    WizardV1Step8: typeof import('./src/components/partials/wizard/WizardV1Step8.vue')['default']
   }
 }
 
