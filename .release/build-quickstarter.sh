@@ -63,7 +63,7 @@ find src/composable -type f -not \( \
   -or -name 'useCreditcardMask.ts' \
   -or -name 'useNotyf.ts' \
   -or -name 'useThemeColors.ts' \
-  -or -name 'useVField.ts' \
+  -or -name 'useVFieldContext.ts' \
   \) -delete
 
 # remove unncecessary stores for the quickstart

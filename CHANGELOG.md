@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://github.com/cssninjaStudio/vuero/compare/v2.2.0...v2.3.0) (2022-04-24)
+
+### Features
+
+- add plugin system ([8e0acf2](https://github.com/cssninjaStudio/vuero/commit/8e0acf2d03e69f8f026e3c6ca68a2fa1a96b61be))
+- **docs:** add copy color snippet button ([56e4774](https://github.com/cssninjaStudio/vuero/commit/56e4774f258030ced4d85cb695d5d41932a1c90e))
+- **forms:** refactor and add components with validation ([84407a2](https://github.com/cssninjaStudio/vuero/commit/84407a28dc6656dcf94ffdef63f53a30f0b88de6))
+- **v-checkbox:** allow to use boolean as value ([b15bc05](https://github.com/cssninjaStudio/vuero/commit/b15bc05e07fe532fd9ab92a618f6c02f3fd662f9))
+- **v-flex-table-wrapper:** expose fetchData method in default v-slot ([740ebb5](https://github.com/cssninjaStudio/vuero/commit/740ebb5f5f17e342da093d5e342211de66bd1201))
+- **v-tabs:** allow v-model on selected props ([34ea2c3](https://github.com/cssninjaStudio/vuero/commit/34ea2c34622dd35fef8da2b41901e2b31332336e))
+- **wizard:** refactor wizard v1 with nested routes ([3c4e2a7](https://github.com/cssninjaStudio/vuero/commit/3c4e2a7b6b85e4fb89f4d8f52c7b3b060ee0ff73))
+
+### Bug Fixes
+
+- **multiselect:** make searchable multiselect focusable with labels ([b2edaed](https://github.com/cssninjaStudio/vuero/commit/b2edaed3ec031bfac0f987b458138d6ace95e9a8))
+- **multiselect:** uniformize border style ([fbf2273](https://github.com/cssninjaStudio/vuero/commit/fbf22733532f7a387e9f8463f1952799f3550cf6)), closes [#120](https://github.com/cssninjaStudio/vuero/issues/120)
+- **scss:** improve loading and reduce end bundle size ([e08cff0](https://github.com/cssninjaStudio/vuero/commit/e08cff01f39eb841f251a7d3ee75b8bd505535ce))
+- **sidebar:** invalid focus style on dropdown items ([a13a162](https://github.com/cssninjaStudio/vuero/commit/a13a162b883a52a8c1517d56732090f94be996d6)), closes [#142](https://github.com/cssninjaStudio/vuero/issues/142)
+- **typing:** remove simplebar types (built-in) ([a1c3f34](https://github.com/cssninjaStudio/vuero/commit/a1c3f34169f03ab3bfbbde13ff3ad0182c38d933)), closes [#133](https://github.com/cssninjaStudio/vuero/issues/133)
+- update all major dependencies ([6fc0da7](https://github.com/cssninjaStudio/vuero/commit/6fc0da7bd7d903bfb77b1367d0dd940eb511b8d5))
+- **v-collapse-link:** default active item always open ([e0047b7](https://github.com/cssninjaStudio/vuero/commit/e0047b7a902577be2aa6fdb900abbd5a50c21655)), closes [#140](https://github.com/cssninjaStudio/vuero/issues/140)
+- **v-control:** allow overriding input id ([77e7e64](https://github.com/cssninjaStudio/vuero/commit/77e7e640314feaf1de3ecad18eaec98efbb0454c))
+- **v-switch:** allow to be used without vmodel ([d1a139c](https://github.com/cssninjaStudio/vuero/commit/d1a139cbf461a88437dd09031f9e625de0d82163))
+- **v-tippy:** add wrapper to tippy component for accessibility ([796813f](https://github.com/cssninjaStudio/vuero/commit/796813f50f3267d174f75670e47513fa4a1ccc93))
+
 ## [2.2.0](https://github.com/cssninjaStudio/vuero/compare/v2.1.0...v2.2.0) (2022-01-03)
 
 ### Features
