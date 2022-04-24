@@ -19,8 +19,8 @@ export const useWizard = defineStore('wizard', () => {
   const step = ref(1)
   const loading = ref(false)
   const canNavigate = ref(false)
-  const previousStepFn = shallowRef<WizardStepOptions['previousStepFn']>()
-  const validateStepFn = shallowRef<WizardStepOptions['validateStepFn']>()
+  const previousStepFn = shallowRef<WizardStepOptions['previousStepFn'] | null>()
+  const validateStepFn = shallowRef<WizardStepOptions['validateStepFn'] | null>()
   const data = reactive<WizardData>({
     name: '',
     description: '',
@@ -63,10 +63,10 @@ export const useWizard = defineStore('wizard', () => {
     loading.value = value
   }
   function setStep(options?: WizardStepOptions) {
-    step.value = options.number
-    canNavigate.value = options.canNavigate ?? false
-    previousStepFn.value = options.previousStepFn ?? null
-    validateStepFn.value = options.validateStepFn ?? null
+    step.value = options?.number || 1
+    canNavigate.value = options?.canNavigate ?? false
+    previousStepFn.value = options?.previousStepFn ?? null
+    validateStepFn.value = options?.validateStepFn ?? null
   }
 
   async function save() {

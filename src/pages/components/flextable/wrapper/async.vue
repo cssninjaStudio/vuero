@@ -212,7 +212,7 @@ const fetchData: VFlexTableWrapperDataResolver = async ({
       // controller is an instance of AbortController,
       // this allow to abort the request when the state
       // is invalidated (before fetchData will be retriggered)
-      signal: controller.signal,
+      signal: controller?.signal,
     }
   )
 

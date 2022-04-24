@@ -27,7 +27,7 @@ useHead({
     />
 
     <!--Main Wrapper-->
-    <form class="wizard-v1-wrapper" @submit.prevent="wizard.validateStepFn">
+    <form class="wizard-v1-wrapper" @submit.prevent="() => wizard?.validateStepFn()">
       <RouterView />
 
       <!--Wizard Navigation Buttons-->
@@ -39,7 +39,7 @@ useHead({
             :color="wizard.previousStepFn === null ? 'light' : 'primary'"
             bold
             elevated
-            @click="wizard.previousStepFn"
+            @click="() => wizard?.previousStepFn()"
           >
             Previous
           </VButton>
