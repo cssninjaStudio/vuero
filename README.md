@@ -114,11 +114,11 @@ If you want to contribute, feel free to create or up-vote discussions on the ded
 
 ### Useful links
 
-- http://v3.vuejs.org/
-  - https://v3.vuejs.org/guide/composition-api-introduction.html
-  - https://v3.vuejs.org/api/composition-api.html
-  - https://v3.vuejs.org/api/sfc-script-setup.html
-  - https://v3.vuejs.org/guide/typescript-support.html
+- http://vuejs.org/
+  - https://vuejs.org/guide/extras/composition-api-faq.html
+  - https://vuejs.org/api/#composition-api
+  - https://vuejs.org/api/sfc-script-setup.html
+  - https://vuejs.org/guide/typescript/overview.html
 - https://vitejs.dev/
 - https://pinia.esm.dev/
 - https://vueuse.org/
