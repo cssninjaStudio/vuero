@@ -161,5 +161,7 @@ public/robots.txt
 *.zip
 
 # sonarqube
-
 .scannerwork
+
+# zone identifier
+*:Zone.Identifier
