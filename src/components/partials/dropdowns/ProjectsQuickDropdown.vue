@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { VAvatarColor } from '/@src/components/base/avatar/VAvatar.vue'
+import type { VAvatarColor } from '/@src/components/base/avatar/VAvatar.vue'
 
 const projects: {
   initials: string

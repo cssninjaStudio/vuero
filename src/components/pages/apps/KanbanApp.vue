@@ -6,7 +6,7 @@ import 'dragula/dist/dragula.css'
 import { computed, onMounted, ref } from 'vue'
 import dragula from 'dragula'
 
-import { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
+import type { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
 
 import { tasks } from '/@src/data/apps/kanban'
 import { onceImageErrored } from '/@src/utils/via-placeholder'

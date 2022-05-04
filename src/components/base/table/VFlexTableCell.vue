@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { VFlexTableColumn } from './VFlexTable.vue'
+import type { VFlexTableColumn } from './VFlexTable.vue'
 
 export interface VFlexTableCellProps {
   column?: Partial<VFlexTableColumn>
