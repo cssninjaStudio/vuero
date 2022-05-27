@@ -158,7 +158,7 @@ export default defineComponent({
   },
   setup(props, { slots, attrs }) {
     const classes = computed(() => {
-      const defaultClasses = (attrs?.class ?? []) as string[]
+      const defaultClasses: string[] = []
       return [
         ...defaultClasses,
         'button',
