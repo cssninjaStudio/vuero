@@ -258,7 +258,7 @@ useHead({
 
   .dark-mode {
     position: absolute;
-    top: -64px;
+    top: -25px;
     right: 38px;
     transform: scale(0.6);
     z-index: 2;
@@ -266,7 +266,7 @@ useHead({
 
   .top-logo {
     position: absolute;
-    top: -70px;
+    top: -30px;
     left: 0;
     right: 0;
     margin: 0 auto;
