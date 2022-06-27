@@ -17,7 +17,7 @@ jobs:
       tag: ${{ steps.meta.outputs.tag }}
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Get the version from tag
         id: meta
         run: |
