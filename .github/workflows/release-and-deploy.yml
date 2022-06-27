@@ -24,7 +24,7 @@ jobs:
           echo ::set-output name=project::${GITHUB_REPOSITORY#*/}
           echo ::set-output name=tag::${GITHUB_REF#refs/tags/}
 
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v3
         with:
           node-version: '14.x'
 
