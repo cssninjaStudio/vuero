@@ -136,7 +136,7 @@
     "@vitejs/plugin-vue": "2.3.1",
     "commitlint": "16.2.3",
     "cross-env": "7.0.3",
-    "cypress": "9.5.4",
+    "cypress": "10.3.1",
     "eslint": "8.14.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-md": "1.0.19",
