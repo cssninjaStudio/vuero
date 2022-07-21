@@ -1,7 +1,7 @@
 <script lang="ts">
 import type { InputMask, AnyMaskedOptions } from 'imask'
 import type { PropType } from 'vue'
-import { ref, watch, onUnmounted, h, defineComponent } from 'vue'
+import { ref, shallowRef, watch, onUnmounted, h, defineComponent } from 'vue'
 import IMask from 'imask'
 
 export default defineComponent({
@@ -16,37 +16,37 @@ export default defineComponent({
     },
   },
   emits: ['update:modelValue', 'complete', 'accept'],
-  setup(props, { emit }) {
+  setup(props, { emit, expose }) {
     const inputElement = ref<HTMLElement>()
-    let inputMask: InputMask<any> | undefined
+    const inputMask = shallowRef<InputMask<any>>()
 
     watch([inputElement, () => props.options, () => props.modelValue], () => {
       if (inputElement.value && props.options) {
         try {
-          if (inputMask) {
-            inputMask.updateOptions(props.options)
-            inputMask.unmaskedValue = props.modelValue
+          if (inputMask.value) {
+            inputMask.value.updateOptions(props.options)
+            inputMask.value.unmaskedValue = props.modelValue
 
             return
           }
 
-          inputMask = IMask(inputElement.value, props.options ?? {})
+          inputMask.value = IMask(inputElement.value, props.options ?? {})
 
           if (props.modelValue) {
-            inputMask.unmaskedValue = props.modelValue
-            inputMask.updateValue()
-            emit('accept', inputMask, undefined)
+            inputMask.value.unmaskedValue = props.modelValue
+            inputMask.value.updateValue()
+            emit('accept', inputMask.value, undefined)
           }
 
-          inputMask.on('accept', (inputEvent: InputEvent) => {
-            if (!inputMask) return
-            emit('update:modelValue', inputMask?.value || '')
-            emit('accept', inputMask, inputEvent)
+          inputMask.value.on('accept', (inputEvent: InputEvent) => {
+            if (!inputMask.value) return
+            emit('update:modelValue', inputMask.value?.value || '')
+            emit('accept', inputMask.value, inputEvent)
           })
 
-          inputMask.on('complete', (inputEvent: InputEvent) => {
-            if (!inputMask) return
-            emit('complete', inputMask, inputEvent)
+          inputMask.value.on('complete', (inputEvent: InputEvent) => {
+            if (!inputMask.value) return
+            emit('complete', inputMask.value, inputEvent)
           })
         } catch (error) {
           console.error(
@@ -58,10 +58,14 @@ export default defineComponent({
     })
 
     onUnmounted(() => {
-      if (inputMask) {
-        inputMask.destroy()
-        inputMask = undefined
+      if (inputMask.value) {
+        inputMask.value.destroy()
+        inputMask.value = undefined
       }
+    })
+
+    expose({
+      inputMask,
     })
 
     return () => h('input', { ref: inputElement, type: 'text', value: props.modelValue })
