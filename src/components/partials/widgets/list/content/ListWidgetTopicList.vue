@@ -12,21 +12,24 @@ const props = withDefaults(
 
 <template>
   <div>
-    <div
+    <VBlock
       v-for="topic in props.topics"
       :key="topic.id"
-      class="inner-list-item media-flex-center"
+      center
+      lighter
+      class="inner-list-item"
     >
-      <VIconBox :rounded="props.rounded" :color="topic.color">
-        <i aria-hidden="true" class="iconify" :data-icon="topic.icon"></i>
-      </VIconBox>
-      <div class="flex-meta is-light">
-        <a href="#">{{ topic.name }}</a>
-        <span>{{ topic.category }}</span>
-      </div>
-      <div v-if="topic.users" class="flex-end">
-        <VAvatarStack :avatars="topic.users" size="small" :limit="3" />
-      </div>
-    </div>
+      <template #icon>
+        <VIconBox :rounded="props.rounded" :color="topic.color">
+          <i aria-hidden="true" class="iconify" :data-icon="topic.icon"></i>
+        </VIconBox>
+      </template>
+      <template #action>
+        <VAvatarStack v-if="topic.users" :avatars="topic.users" size="small" :limit="3" />
+      </template>
+
+      <a href="#">{{ topic.name }}</a>
+      <span>{{ topic.category }}</span>
+    </VBlock>
   </div>
 </template>

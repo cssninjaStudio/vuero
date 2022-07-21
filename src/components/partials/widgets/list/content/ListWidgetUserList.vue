@@ -12,17 +12,17 @@ const props = withDefaults(
 
 <template>
   <div>
-    <div
+    <VBlock
       v-for="user in props.users"
       :key="user.id"
-      class="inner-list-item media-flex-center"
+      center
+      lighter
+      class="inner-list-item"
     >
-      <VAvatar :picture="user.picture" :squared="props.squared" />
-      <div class="flex-meta is-light">
-        <a href="#">{{ user.name }}</a>
-        <span>{{ user.position }}</span>
-      </div>
-      <div class="flex-end">
+      <template #icon>
+        <VAvatar :picture="user.picture" :squared="props.squared" />
+      </template>
+      <template #action>
         <a
           v-if="user.progress < 0"
           href="#"
@@ -39,8 +39,11 @@ const props = withDefaults(
         >
           <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right"></i>
         </a>
-      </div>
-    </div>
+      </template>
+
+      <a href="#">{{ user.name }}</a>
+      <span>{{ user.position }}</span>
+    </VBlock>
   </div>
 </template>
 

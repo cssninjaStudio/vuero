@@ -11,20 +11,23 @@ const props = withDefaults(
 
 <template>
   <div>
-    <div
+    <VBlock
       v-for="file in props.files"
       :key="file.id"
-      class="inner-list-item media-flex-center"
+      center
+      lighter
+      class="inner-list-item"
     >
-      <img class="image-icon" :src="file.icon" alt="" />
-      <div class="flex-meta is-light">
-        <a href="#">{{ file.name }}</a>
-        <span>{{ file.type }}</span>
-      </div>
-      <div class="flex-end">
+      <template #icon>
+        <img class="image-icon" :src="file.icon" alt="" />
+      </template>
+      <template #action>
         <ListWidgetFileDropdown />
-      </div>
-    </div>
+      </template>
+
+      <a href="#">{{ file.name }}</a>
+      <span>{{ file.type }}</span>
+    </VBlock>
   </div>
 </template>
 
