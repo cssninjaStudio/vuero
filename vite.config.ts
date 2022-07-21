@@ -35,6 +35,11 @@ export default defineConfig({
   publicDir: 'public',
   // Adjust console output verbosity.
   logLevel: SILENT ? 'error' : 'info',
+  // development server configuration
+  server: {
+    // Vite 3 now defaults to 5173, but you can override it with the port option.
+    port: 3000,
+  },
   /**
    * By default, Vite will crawl your index.html to detect dependencies that
    * need to be pre-bundled. If build.rollupOptions.input is specified,
@@ -95,12 +100,15 @@ export default defineConfig({
     ],
   },
   build: {
-    minify: false,
+    minify: true,
     sourcemap: SOURCE_MAP,
     // Turning off brotliSize display can slightly reduce packaging time
     brotliSize: !SILENT,
+    // Do not warn about large chunks
     chunkSizeWarningLimit: Infinity,
-    // minify: true,
+    // Double the default size threshold for inlined assets
+    // https://vitejs.dev/config/build-options.html#build-assetsinlinelimit
+    assetsInlineLimit: 4096 * 2,
 
     /**
      * Uncomment this section to build the demo with missing images

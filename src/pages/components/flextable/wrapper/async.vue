@@ -123,7 +123,7 @@ function useQueryParam() {
         limitQuery = parseInt(route.query.limit ?? `${defaultLimit}`)
       }
 
-      if (limitQuery === NaN) {
+      if (Object.is(limitQuery, NaN)) {
         limitQuery = defaultLimit
       }
 
@@ -155,7 +155,7 @@ function useQueryParam() {
       }
 
       // read "page" from the query params
-      if (pageQuery === NaN) {
+      if (Object.is(pageQuery, NaN)) {
         pageQuery = defaultPage
       }
 

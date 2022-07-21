@@ -292,7 +292,7 @@ useHead({
                 <img src="/images/icons/stacks/vite.svg" alt="" />
                 <h3>Vite JS</h3>
                 <p>
-                  Vite 2 is blazing fast, does HOT reloading and parses all your
+                  Vite 3 is blazing fast, does HOT reloading and parses all your
                   components.
                 </p>
               </div>
