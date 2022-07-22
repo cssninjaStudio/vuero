@@ -76,10 +76,7 @@ const localFlagSrc = computed(() => {
       >
         <img :src="localFlagSrc" alt="" />
       </a>
-      <RouterLink
-        :to="{ name: 'sidebar-layouts-profile-notifications' }"
-        class="menu-item is-flex"
-      >
+      <RouterLink to="/sidebar/layouts/profile-notifications" class="menu-item is-flex">
         <i aria-hidden="true" class="iconify" data-icon="feather:bell"></i>
       </RouterLink>
       <a

@@ -72,7 +72,7 @@ zh-CN:
             {{ t('page-body') }}
           </p>
           <div class="button-wrap">
-            <VButton color="primary" elevated :to="{ name: 'index' }">
+            <VButton color="primary" elevated to="/">
               {{ t('back-button') }}
             </VButton>
           </div>

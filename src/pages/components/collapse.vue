@@ -36,18 +36,18 @@ useHead({
           label: 'Vuero',
           hideLabel: true,
           icon: 'feather:home',
-          to: { name: 'index' },
+          to: { name: '/' },
         },
         {
           label: 'Components',
-          to: { name: 'components' },
+          to: { name: '/components/' },
         },
         {
           label: 'Accordions',
         },
         {
           label: 'VCollapse',
-          to: { name: 'components-collapse' },
+          to: { name: '/components/collapse' },
         },
       ]"
     />

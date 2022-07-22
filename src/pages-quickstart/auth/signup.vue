@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { useRouter } from 'vue-router'
+import { useRouter } from '@vue-router'
 import { useHead } from '@vueuse/head'
 import { toFormValidator } from '@vee-validate/zod'
 import { useForm } from 'vee-validate'
@@ -100,7 +100,7 @@ useHead({
             <span></span>
           </label>
           <div class="auth-logo">
-            <RouterLink :to="{ name: 'index' }">
+            <RouterLink to="/">
               <AnimatedLogo class="top-logo" width="36px" height="36px" />
             </RouterLink>
           </div>
@@ -112,7 +112,7 @@ useHead({
                 <div class="auth-content">
                   <h2>{{ t('auth.title') }}</h2>
                   <p>{{ t('auth.subtitle') }}</p>
-                  <RouterLink :to="{ name: 'auth-login-2' }">
+                  <RouterLink to="/auth/login-2">
                     {{ t('auth.action.login') }}
                   </RouterLink>
                 </div>

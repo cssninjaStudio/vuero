@@ -33,7 +33,7 @@ const dropdown = useDropdown(dropdownElement)
             <div class="heading-right">
               <RouterLink
                 class="notification-link"
-                :to="{ name: 'sidebar-layouts-profile-notifications' }"
+                to="/sidebar/layouts/profile-notifications"
               >
                 See all
               </RouterLink>

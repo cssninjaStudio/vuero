@@ -26,15 +26,15 @@ useHead({
           label: 'Vuero',
           hideLabel: true,
           icon: 'feather:home',
-          to: { name: 'index' },
+          to: { name: '/' },
         },
         {
           label: 'Components',
-          to: { name: 'components' },
+          to: { name: '/components/' },
         },
         {
           label: 'VPlaceholderPage',
-          to: { name: 'components-placeholder-page' },
+          to: { name: '/components/placeholder-page' },
         },
       ]"
     />

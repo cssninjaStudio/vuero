@@ -28,15 +28,15 @@ useHead({
           label: 'Vuero',
           hideLabel: true,
           icon: 'feather:home',
-          to: { name: 'index' },
+          to: { name: '/' },
         },
         {
           label: 'Elements',
-          to: { name: 'elements' },
+          to: { name: '/elements/' },
         },
         {
           label: 'VLoader',
-          to: { name: 'elements-loader' },
+          to: { name: '/elements/loader' },
         },
       ]"
     />

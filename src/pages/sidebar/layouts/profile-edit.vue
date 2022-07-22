@@ -17,10 +17,7 @@
             </VBlock>
 
             <div class="account-menu">
-              <RouterLink
-                :to="{ name: 'sidebar-layouts-profile-edit' }"
-                class="account-menu-item"
-              >
+              <RouterLink to="/sidebar/layouts/profile-edit" class="account-menu-item">
                 <i aria-hidden="true" class="lnil lnil-user-alt"></i>
                 <span>General</span>
                 <span class="end">
@@ -28,7 +25,7 @@
                 </span>
               </RouterLink>
               <RouterLink
-                :to="{ name: 'sidebar-layouts-profile-edit-experience' }"
+                to="/sidebar/layouts/profile-edit-experience"
                 class="account-menu-item"
               >
                 <i aria-hidden="true" class="lnil lnil-crown-alt"></i>
@@ -38,7 +35,7 @@
                 </span>
               </RouterLink>
               <RouterLink
-                :to="{ name: 'sidebar-layouts-profile-edit-skills' }"
+                to="/sidebar/layouts/profile-edit-skills"
                 class="account-menu-item"
               >
                 <i aria-hidden="true" class="lnil lnil-quill"></i>
@@ -48,7 +45,7 @@
                 </span>
               </RouterLink>
               <RouterLink
-                :to="{ name: 'sidebar-layouts-profile-edit-settings' }"
+                to="/sidebar/layouts/profile-edit-settings"
                 class="account-menu-item"
               >
                 <i aria-hidden="true" class="lnil lnil-cog"></i>

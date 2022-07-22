@@ -37,27 +37,27 @@ const isMobileSidebarOpen = ref(false)
     >
       <template #links>
         <li>
-          <RouterLink :to="{ name: 'sidebar-dashboards' }">
+          <RouterLink to="/sidebar/dashboards">
             <i aria-hidden="true" class="iconify" data-icon="feather:activity"></i>
           </RouterLink>
         </li>
         <li>
-          <RouterLink :to="{ name: 'sidebar-layouts' }">
+          <RouterLink to="/sidebar/layouts">
             <i aria-hidden="true" class="iconify" data-icon="feather:grid"></i>
           </RouterLink>
         </li>
         <li>
-          <RouterLink :to="{ name: 'elements' }">
+          <RouterLink to="/elements/">
             <i aria-hidden="true" class="iconify" data-icon="feather:box"></i>
           </RouterLink>
         </li>
         <li>
-          <RouterLink :to="{ name: 'components' }">
+          <RouterLink to="/components/">
             <i aria-hidden="true" class="iconify" data-icon="feather:cpu"></i>
           </RouterLink>
         </li>
         <li>
-          <RouterLink :to="{ name: 'messaging-v1' }">
+          <RouterLink to="/messaging-v1">
             <i aria-hidden="true" class="iconify" data-icon="feather:message-circle"></i>
           </RouterLink>
         </li>
@@ -85,7 +85,7 @@ const isMobileSidebarOpen = ref(false)
       <template #links>
         <!-- Dashboards -->
         <li>
-          <RouterLink :to="{ name: 'sidebar-dashboards' }">
+          <RouterLink to="/sidebar/dashboards">
             <i
               aria-hidden="true"
               class="iconify sidebar-svg"
@@ -96,7 +96,7 @@ const isMobileSidebarOpen = ref(false)
 
         <!-- Layouts -->
         <li>
-          <RouterLink :to="{ name: 'sidebar-layouts' }">
+          <RouterLink to="/sidebar/layouts">
             <i
               aria-hidden="true"
               class="iconify sidebar-svg"
@@ -107,21 +107,21 @@ const isMobileSidebarOpen = ref(false)
 
         <!-- Elements -->
         <li>
-          <RouterLink :to="{ name: 'elements' }">
+          <RouterLink to="/elements/">
             <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather:box"></i>
           </RouterLink>
         </li>
 
         <!-- Components -->
         <li>
-          <RouterLink :to="{ name: 'components' }">
+          <RouterLink to="/components/">
             <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather:cpu"></i>
           </RouterLink>
         </li>
 
         <!-- Messaging -->
         <li>
-          <RouterLink :to="{ name: 'messaging-v1' }">
+          <RouterLink to="/messaging-v1">
             <i
               aria-hidden="true"
               class="iconify sidebar-svg"
@@ -160,7 +160,7 @@ const isMobileSidebarOpen = ref(false)
         <li class="is-hidden-tablet">
           <RouterLink
             id="open-settings"
-            :to="{ name: 'sidebar-layouts-profile-settings' }"
+            to="/sidebar/layouts/profile-settings"
             data-content="Settings"
           >
             <i

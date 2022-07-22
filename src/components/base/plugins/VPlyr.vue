@@ -14,8 +14,8 @@ export type VPlyrCaptions = {
 export type VPlyrFormat = '4by3' | '16by9' | 'square'
 export interface VPlyrProps {
   source: string
-  title: string
-  poster: string
+  title?: string
+  poster?: string
   captions?: VPlyrCaptions[]
   reversed?: boolean
   embed?: boolean

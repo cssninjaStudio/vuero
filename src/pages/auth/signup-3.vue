@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { useRouter } from 'vue-router'
+import { useRouter } from '@vue-router'
 import { useHead } from '@vueuse/head'
 import { useNotyf } from '/@src/composable/useNotyf'
 
@@ -19,7 +19,7 @@ const handleSignup = async () => {
 
     notif.dismissAll()
     notif.success('Welcome, Erik Kovalsky')
-    router.push({ name: 'sidebar-dashboards' })
+    router.push({ name: '/sidebar/dashboards' })
     isLoading.value = false
   }
 }
@@ -35,7 +35,7 @@ useHead({
     <div class="auth-nav">
       <div class="left"></div>
       <div class="center">
-        <RouterLink :to="{ name: 'index' }" class="header-item">
+        <RouterLink to="/" class="header-item">
           <AnimatedLogo width="38px" height="38px" />
         </RouterLink>
       </div>
@@ -63,9 +63,7 @@ useHead({
         <div class="auth-head">
           <h2>Join Us Now.</h2>
           <p>Start by creating your account</p>
-          <RouterLink :to="{ name: 'auth-login-3' }">
-            I already have an account
-          </RouterLink>
+          <RouterLink to="/auth/login-3"> I already have an account </RouterLink>
         </div>
 
         <!--Form-->

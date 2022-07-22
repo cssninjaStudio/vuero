@@ -66,7 +66,7 @@ watchEffect(() => {
         <div class="navbar-item">
           <RouterLink
             :to="{
-              name: 'index',
+              name: '/',
               hash: '#vuero-demos',
             }"
             class="nav-link is-scroll"
@@ -84,7 +84,7 @@ watchEffect(() => {
         <div class="navbar-item">
           <RouterLink
             :to="{
-              name: 'index',
+              name: '/',
               hash: '#vuero-components',
             }"
             class="nav-link is-scroll"
@@ -128,10 +128,10 @@ watchEffect(() => {
           </label>
         </div>
         <div class="navbar-item">
-          <RouterLink :to="{ name: 'auth-login-1' }" class="nav-link"> Login </RouterLink>
+          <RouterLink to="/auth/login" class="nav-link"> Login </RouterLink>
         </div>
         <div class="navbar-item">
-          <VButton :to="{ name: 'auth-signup-1' }" color="primary" rounded raised>
+          <VButton to="/auth/signup-1" color="primary" rounded raised>
             <strong>Sign up</strong>
           </VButton>
         </div>

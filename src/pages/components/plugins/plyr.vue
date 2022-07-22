@@ -26,18 +26,18 @@ useHead({
           label: 'Vuero',
           hideLabel: true,
           icon: 'feather:home',
-          to: { name: 'index' },
+          to: { name: '/' },
         },
         {
           label: 'Components',
-          to: { name: 'components' },
+          to: { name: '/components/' },
         },
         {
           label: 'Plugins',
         },
         {
           label: 'VPlyr',
-          to: { name: 'components-plugins-plyr' },
+          to: { name: '/components/plugins/plyr' },
         },
       ]"
     />

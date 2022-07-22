@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, watchPostEffect, watch, onMounted } from 'vue'
-import { useRoute } from 'vue-router'
+import { useRoute } from '@vue-router'
 
 import type { SideblockTheme } from '/@src/components/navigation/desktop/Sideblock.vue'
 import { usePanels } from '/@src/stores/panels'
@@ -59,7 +59,7 @@ watch(
       @toggle="isMobileSideblockOpen = !isMobileSideblockOpen"
     >
       <template #brand>
-        <RouterLink :to="{ name: 'index' }" class="navbar-item is-brand">
+        <RouterLink to="/" class="navbar-item is-brand">
           <AnimatedLogo width="38px" height="38px" />
         </RouterLink>
 
@@ -121,7 +121,7 @@ watch(
           </a>
         </li>
         <li>
-          <RouterLink :to="{ name: 'messaging-v1' }">
+          <RouterLink to="/messaging-v1">
             <i aria-hidden="true" class="iconify" data-icon="feather:message-circle"></i>
           </RouterLink>
         </li>
@@ -168,14 +168,14 @@ watch(
     <Transition name="slide-x">
       <Sideblock v-if="isDesktopSideblockOpen" :theme="props.theme">
         <template #header>
-          <RouterLink :to="{ name: 'index' }" class="sidebar-block-logo">
+          <RouterLink to="/" class="sidebar-block-logo">
             <AnimatedLogo width="36px" />
           </RouterLink>
           <h3>Vuero</h3>
         </template>
         <template #links>
           <li>
-            <RouterLink :to="{ name: 'sidebar-dashboards' }" class="single-link">
+            <RouterLink to="/sidebar/dashboards" class="single-link">
               <span class="icon">
                 <i class="iconify" data-icon="feather:grid"></i>
               </span>
@@ -183,10 +183,7 @@ watch(
             </RouterLink>
           </li>
           <li>
-            <RouterLink
-              :to="{ name: 'sidebar-dashboards-personal-2' }"
-              class="single-link"
-            >
+            <RouterLink to="/sidebar/dashboards/personal-2" class="single-link">
               <span class="icon">
                 <i class="iconify" data-icon="feather:briefcase"></i>
               </span>
@@ -194,10 +191,7 @@ watch(
             </RouterLink>
           </li>
           <li>
-            <RouterLink
-              :to="{ name: 'sidebar-dashboards-human-ressources' }"
-              class="single-link"
-            >
+            <RouterLink to="/sidebar/dashboards/human-ressources" class="single-link">
               <span class="icon">
                 <i class="iconify" data-icon="feather:message-circle"></i>
               </span>
@@ -206,10 +200,7 @@ watch(
             </RouterLink>
           </li>
           <li>
-            <RouterLink
-              :to="{ name: 'sidebar-dashboards-personal-3' }"
-              class="single-link"
-            >
+            <RouterLink to="/sidebar/dashboards/personal-3" class="single-link">
               <span class="icon">
                 <i class="iconify" data-icon="feather:book"></i>
               </span>
@@ -217,10 +208,7 @@ watch(
             </RouterLink>
           </li>
           <li>
-            <RouterLink
-              :to="{ name: 'sidebar-layouts-profile-view' }"
-              class="single-link"
-            >
+            <RouterLink to="/sidebar/layouts/profile-view" class="single-link">
               <span class="icon">
                 <i class="iconify" data-icon="feather:users"></i>
               </span>
@@ -236,21 +224,21 @@ watch(
               Reports
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right"></i>
             </template>
-            <RouterLink :to="{ name: 'sidebar-dashboards-analytics' }" class="is-submenu">
+            <RouterLink to="/sidebar/dashboards/analytics" class="is-submenu">
               <i class="lnil lnil-analytics-alt-1"></i>
               <span>Financial report</span>
             </RouterLink>
-            <RouterLink :to="{ name: 'sidebar-dashboards-company' }" class="is-submenu">
+            <RouterLink to="/sidebar/dashboards/company" class="is-submenu">
               <i class="lnil lnil-pie-chart"></i>
               <span>Stocks report</span>
             </RouterLink>
-            <RouterLink :to="{ name: 'sidebar-layouts-list-view-3' }" class="is-submenu">
+            <RouterLink to="/sidebar/layouts/list-view-3" class="is-submenu">
               <i class="lnil lnil-stats-up"></i>
               <span>Growth report</span>
             </RouterLink>
           </VCollapseLinks>
           <li>
-            <RouterLink :to="{ name: 'inbox' }" class="single-link">
+            <RouterLink to="/inbox" class="single-link">
               <span class="icon">
                 <i class="iconify" data-icon="feather:mail"></i>
               </span>
@@ -267,15 +255,15 @@ watch(
               Settings
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right"></i>
             </template>
-            <RouterLink :to="{ name: 'sidebar-layouts' }" class="is-submenu">
+            <RouterLink to="/sidebar/layouts" class="is-submenu">
               <i class="lnil lnil-home"></i>
               <span>General</span>
             </RouterLink>
-            <RouterLink :to="{ name: 'sidebar-dashboards-stocks' }" class="is-submenu">
+            <RouterLink to="/sidebar/dashboards/stocks" class="is-submenu">
               <i class="lnil lnil-lock-alt"></i>
               <span>Security</span>
             </RouterLink>
-            <RouterLink :to="{ name: 'sidebar-dashboards-sales' }" class="is-submenu">
+            <RouterLink to="/sidebar/dashboards/sales" class="is-submenu">
               <i class="lnil lnil-coin"></i>
               <span>Transactions</span>
             </RouterLink>
@@ -290,69 +278,42 @@ watch(
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
             </template>
 
-            <RouterLink
-              :to="{ name: 'starters-sidebar-blank-page-1' }"
-              class="is-submenu"
-            >
+            <RouterLink to="/starters/sidebar-blank-page-1" class="is-submenu">
               <i aria-hidden="true" class="lnil lnil-layout"></i>
               <span>Regular Sidebar</span>
             </RouterLink>
-            <RouterLink
-              :to="{ name: 'starters-sidebar-blank-page-2' }"
-              class="is-submenu"
-            >
+            <RouterLink to="/starters/sidebar-blank-page-2" class="is-submenu">
               <i aria-hidden="true" class="lnil lnil-layout"></i>
               <span>Curved Sidebar</span>
             </RouterLink>
-            <RouterLink
-              :to="{ name: 'starters-sidebar-blank-page-3' }"
-              class="is-submenu"
-            >
+            <RouterLink to="/starters/sidebar-blank-page-3" class="is-submenu">
               <i aria-hidden="true" class="lnil lnil-layout"></i>
               <span>Colored Sidebar</span>
             </RouterLink>
-            <RouterLink
-              :to="{ name: 'starters-sidebar-blank-page-4' }"
-              class="is-submenu"
-            >
+            <RouterLink to="/starters/sidebar-blank-page-4" class="is-submenu">
               <i aria-hidden="true" class="lnil lnil-layout"></i>
               <span>Curved Colored</span>
             </RouterLink>
-            <RouterLink
-              :to="{ name: 'starters-sidebar-blank-page-4' }"
-              class="is-submenu"
-            >
+            <RouterLink to="/starters/sidebar-blank-page-4" class="is-submenu">
               <i aria-hidden="true" class="lnil lnil-layout"></i>
               <span>Curved Colored Sidebar</span>
             </RouterLink>
-            <RouterLink
-              :to="{ name: 'starters-sidebar-blank-page-5' }"
-              class="is-submenu"
-            >
+            <RouterLink to="/starters/sidebar-blank-page-5" class="is-submenu">
               <i aria-hidden="true" class="lnil lnil-layout"></i>
               <span>Labels Sidebar</span>
             </RouterLink>
-            <RouterLink
-              :to="{ name: 'starters-sidebar-blank-page-6' }"
-              class="is-submenu"
-            >
+            <RouterLink to="/starters/sidebar-blank-page-6" class="is-submenu">
               <i aria-hidden="true" class="lnil lnil-layout"></i>
               <span>Labels Hover Sidebar</span>
             </RouterLink>
-            <RouterLink
-              :to="{ name: 'starters-sidebar-blank-page-7' }"
-              class="is-submenu"
-            >
+            <RouterLink to="/starters/sidebar-blank-page-7" class="is-submenu">
               <i aria-hidden="true" class="lnil lnil-layout"></i>
               <span>Float Sidebar</span>
             </RouterLink>
 
             <hr class="navbar-divider" />
 
-            <RouterLink
-              :to="{ name: 'starters-sideblock-blank-page-1' }"
-              class="is-submenu"
-            >
+            <RouterLink to="/starters/sideblock-blank-page-1" class="is-submenu">
               <i aria-hidden="true" class="lnil lnil-layout"></i>
               <span>Regular Sideblock</span>
               <VTag
@@ -364,10 +325,7 @@ watch(
                 curved
               />
             </RouterLink>
-            <RouterLink
-              :to="{ name: 'starters-sideblock-blank-page-2' }"
-              class="is-submenu"
-            >
+            <RouterLink to="/starters/sideblock-blank-page-2" class="is-submenu">
               <i aria-hidden="true" class="lnil lnil-layout"></i>
               <span>Curved Sideblock</span>
               <VTag
@@ -379,10 +337,7 @@ watch(
                 curved
               />
             </RouterLink>
-            <RouterLink
-              :to="{ name: 'starters-sideblock-blank-page-3' }"
-              class="is-submenu"
-            >
+            <RouterLink to="/starters/sideblock-blank-page-3" class="is-submenu">
               <i aria-hidden="true" class="lnil lnil-layout"></i>
               <span>Colored Sideblock</span>
               <VTag
@@ -394,10 +349,7 @@ watch(
                 curved
               />
             </RouterLink>
-            <RouterLink
-              :to="{ name: 'starters-sideblock-blank-page-4' }"
-              class="is-submenu"
-            >
+            <RouterLink to="/starters/sideblock-blank-page-4" class="is-submenu">
               <i aria-hidden="true" class="lnil lnil-layout"></i>
               <span>Curved Colored</span>
               <VTag
@@ -412,35 +364,35 @@ watch(
 
             <hr class="navbar-divider" />
 
-            <RouterLink :to="{ name: 'starters-navbar-blank-page-1' }" class="is-submenu">
+            <RouterLink to="/starters/navbar-blank-page-1" class="is-submenu">
               <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
               <span>Regular Navbar</span>
             </RouterLink>
-            <RouterLink :to="{ name: 'starters-navbar-blank-page-2' }" class="is-submenu">
+            <RouterLink to="/starters/navbar-blank-page-2" class="is-submenu">
               <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
               <span>Fading Navbar</span>
             </RouterLink>
-            <RouterLink :to="{ name: 'starters-navbar-blank-page-3' }" class="is-submenu">
+            <RouterLink to="/starters/navbar-blank-page-3" class="is-submenu">
               <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
               <span>Colored Navbar</span>
             </RouterLink>
-            <RouterLink :to="{ name: 'starters-navbar-blank-page-4' }" class="is-submenu">
+            <RouterLink to="/starters/navbar-blank-page-4" class="is-submenu">
               <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
               <span>Dropdown Navbar</span>
             </RouterLink>
-            <RouterLink :to="{ name: 'starters-navbar-blank-page-5' }" class="is-submenu">
+            <RouterLink to="/starters/navbar-blank-page-5" class="is-submenu">
               <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
               <span>Colored Dropdown</span>
             </RouterLink>
-            <RouterLink :to="{ name: 'starters-navbar-blank-page-6' }" class="is-submenu">
+            <RouterLink to="/starters/navbar-blank-page-6" class="is-submenu">
               <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
               <span>Clean Navbar</span>
             </RouterLink>
-            <RouterLink :to="{ name: 'starters-navbar-blank-page-7' }" class="is-submenu">
+            <RouterLink to="/starters/navbar-blank-page-7" class="is-submenu">
               <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
               <span>Clean Center Navbar</span>
             </RouterLink>
-            <RouterLink :to="{ name: 'starters-navbar-blank-page-8' }" class="is-submenu">
+            <RouterLink to="/starters/navbar-blank-page-8" class="is-submenu">
               <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
               <span>Clean Fade Navbar</span>
             </RouterLink>

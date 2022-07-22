@@ -11,7 +11,7 @@ Check the markup for more details about usage.
 ```vue
 <script setup lang="ts">
 import { reactive, ref, computed } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
+import { useRoute, useRouter } from '@vue-router'
 
 import type { VFlexTableWrapperDataResolver } from '/@src/components/base/table/VFlexTableWrapper.vue'
 import { useApi } from '/@src/composable/useApi'

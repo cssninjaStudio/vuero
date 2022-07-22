@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { elements, components, forms, plugins } from '/@src/data/landing/components'
+import { elements, components, forms, plugins } from '/@src/data/landing/components/'
 
 const props = withDefaults(
   defineProps<{

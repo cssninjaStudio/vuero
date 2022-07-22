@@ -44,18 +44,18 @@ useHead({
           label: 'Vuero',
           hideLabel: true,
           icon: 'feather:home',
-          to: { name: 'index' },
+          to: { name: '/' },
         },
         {
           label: 'Elements',
-          to: { name: 'elements' },
+          to: { name: '/elements/' },
         },
         {
           label: 'Icons',
         },
         {
           label: 'Font Awesome',
-          to: { name: 'elements-icons-font-awesome' },
+          to: { name: '/elements/icons/font-awesome' },
         },
       ]"
     />

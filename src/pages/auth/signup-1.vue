@@ -3,7 +3,7 @@ import type { TinySliderInstance } from 'tiny-slider/src/tiny-slider'
 import { tns } from 'tiny-slider/src/tiny-slider'
 import { useHead } from '@vueuse/head'
 import { ref, onMounted, onUnmounted } from 'vue'
-import { useRouter } from 'vue-router'
+import { useRouter } from '@vue-router'
 import { onceImageErrored } from '/@src/utils/via-placeholder'
 
 import sleep from '/@src/utils/sleep'
@@ -43,7 +43,7 @@ const handleSignup = async () => {
 
     notif.dismissAll()
     notif.success('Welcome, Erik Kovalsky')
-    router.push({ name: 'sidebar-dashboards' })
+    router.push({ name: '/sidebar/dashboards' })
     isLoading.value = false
   }
 }
@@ -99,7 +99,7 @@ onUnmounted(() => {
   <div>
     <div class="signup-nav">
       <div class="signup-nav-inner">
-        <RouterLink :to="{ name: 'index' }" class="logo">
+        <RouterLink to="/" class="logo">
           <AnimatedLogo width="36px" height="36px" />
         </RouterLink>
       </div>
@@ -231,7 +231,7 @@ onUnmounted(() => {
                       </VButton>
                       <span>
                         Or
-                        <RouterLink :to="{ name: 'auth-login-1' }"> Sign In </RouterLink>
+                        <RouterLink to="/auth/login"> Sign In </RouterLink>
                         to your account.
                       </span>
                     </div>

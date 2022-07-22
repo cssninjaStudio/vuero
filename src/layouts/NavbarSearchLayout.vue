@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, computed, watch } from 'vue'
-import { useRoute } from 'vue-router'
+import { useRoute } from '@vue-router'
 
 import type { VAvatarProps, VAvatarColor } from '/@src/components/base/avatar/VAvatar.vue'
 import type { UserPopover } from '/@src/models/users'
@@ -84,7 +84,7 @@ watch(
       @toggle="isMobileSidebarOpen = !isMobileSidebarOpen"
     >
       <template #brand>
-        <RouterLink :to="{ name: 'index' }" class="navbar-item is-brand">
+        <RouterLink to="/" class="navbar-item is-brand">
           <AnimatedLogo width="38px" height="38px" />
         </RouterLink>
 
@@ -142,7 +142,7 @@ watch(
           </a>
         </li>
         <li>
-          <RouterLink :to="{ name: 'messaging-v1' }">
+          <RouterLink to="/messaging-v1">
             <i aria-hidden="true" class="iconify" data-icon="feather:message-circle"></i>
           </RouterLink>
         </li>
@@ -186,7 +186,7 @@ watch(
     <NavbarSearch :theme="props.theme">
       <!-- Custom navbar title -->
       <template #title>
-        <RouterLink :to="{ name: 'index' }" class="brand">
+        <RouterLink to="/" class="brand">
           <AnimatedLogo width="38px" height="38px" />
         </RouterLink>
         <div class="separator"></div>

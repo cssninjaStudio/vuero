@@ -1,8 +1,7 @@
 import { defineConfig } from 'vite'
 import path from 'path'
 import Vue from '@vitejs/plugin-vue'
-import Pages from 'vite-plugin-pages'
-import generateSitemap from 'vite-plugin-pages-sitemap'
+import VueRouter from 'unplugin-vue-router/vite'
 import Components from 'unplugin-vue-components/vite'
 import ViteFonts from 'vite-plugin-fonts'
 import ViteRadar from 'vite-plugin-radar'
@@ -17,7 +16,7 @@ import purgecss from 'rollup-plugin-purgecss'
 const MINIFY = process.env.MINIFY ? process.env.MINIFY === 'true' : true
 const SILENT = process.env.SILENT ? process.env.SILENT === 'true' : false
 const SOURCE_MAP = process.env.SOURCE_MAP ? process.env.SOURCE_MAP === 'true' : false
-const SITEMAP_HOST = process.env.SITEMAP_HOST || 'http://localhost:3000/'
+// const SITEMAP_HOST = process.env.SITEMAP_HOST || 'http://localhost:3000/'
 const GTM_ID = process.env.GTM_ID ?? ''
 
 /**
@@ -142,23 +141,34 @@ export default defineConfig({
     }),
 
     /**
-     * vite-plugin-pages plugin generate routes based on file system
+     * unplugin-vue-router plugin generate routes based on file system
+     * allow to use typed routes and usage of defineLoader
      *
-     * @see https://github.com/hannoeru/vite-plugin-pages
+     * @see https://github.com/posva/unplugin-vue-router
+     * @see https://github.com/vuejs/rfcs/blob/ad69da2aee9242ef88f036713db68f3ef274bb1b/active-rfcs/0000-router-use-loader.md
      */
-    Pages({
-      pagesDir: [
-        {
-          dir: 'src/pages',
-          baseRoute: '',
-        },
-      ],
-      onRoutesGenerated: (routes) =>
-        generateSitemap({
-          routes,
-          hostname: SITEMAP_HOST,
-        }),
+    VueRouter({
+      routesFolder: 'src/pages',
     }),
+
+    // /**
+    //  * vite-plugin-pages plugin generate routes based on file system
+    //  *
+    //  * @see https://github.com/hannoeru/vite-plugin-pages
+    //  */
+    // Pages({
+    //   pagesDir: [
+    //     {
+    //       dir: 'src/pages',
+    //       baseRoute: '',
+    //     },
+    //   ],
+    //   onRoutesGenerated: (routes) =>
+    //     generateSitemap({
+    //       routes,
+    //       hostname: SITEMAP_HOST,
+    //     }),
+    // }),
 
     /**
      * This is an internal vite plugin that load markdown files as vue components.

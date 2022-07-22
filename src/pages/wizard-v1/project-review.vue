@@ -2,7 +2,7 @@
 import { computed, ref, watchEffect } from 'vue'
 import dayjs from 'dayjs'
 
-import { useRouter } from 'vue-router'
+import { useRouter } from '@vue-router'
 import { useWizard } from '/@src/stores/wizard'
 
 const wizard = useWizard()
@@ -12,12 +12,12 @@ wizard.setStep({
   canNavigate: true,
   previousStepFn: async () => {
     router.push({
-      name: 'wizard-v1-project-tools',
+      name: '/wizard-v1/project-tools',
     })
   },
   validateStepFn: async () => {
     router.push({
-      name: 'wizard-v1-success',
+      name: '/wizard-v1/success',
     })
   },
 })
@@ -75,7 +75,7 @@ watchEffect(async () => {
             <span v-if="wizard.data.name">{{ wizard.data.name }}</span>
             <span v-else>Project Title Goes Here</span>
 
-            <RouterLink class="edit-icon" :to="{ name: 'wizard-v1-project-info' }">
+            <RouterLink class="edit-icon" to="/wizard-v1/project-info">
               <i aria-hidden="true" class="lnil lnil-pencil"></i>
             </RouterLink>
           </h3>
@@ -87,7 +87,7 @@ watchEffect(async () => {
               <div class="edit-box">
                 <h4>Description</h4>
 
-                <RouterLink class="edit-icon" :to="{ name: 'wizard-v1-project-info' }">
+                <RouterLink class="edit-icon" to="/wizard-v1/project-info">
                   <i aria-hidden="true" class="lnil lnil-pencil"></i>
                 </RouterLink>
 
@@ -103,7 +103,7 @@ watchEffect(async () => {
             </div>
             <div class="column is-6 is-tablet-50">
               <div class="edit-box">
-                <RouterLink class="edit-icon" :to="{ name: 'wizard-v1' }">
+                <RouterLink class="edit-icon" to="/wizard-v1">
                   <i aria-hidden="true" class="lnil lnil-pencil"></i>
                 </RouterLink>
                 <VBlock :title="wizard.data.relatedTo" subtitle="Project Type" center>
@@ -118,7 +118,7 @@ watchEffect(async () => {
 
             <div class="column is-6 is-tablet-50">
               <div class="edit-box">
-                <RouterLink class="edit-icon" :to="{ name: 'wizard-v1-project-details' }">
+                <RouterLink class="edit-icon" to="/wizard-v1/project-details">
                   <i aria-hidden="true" class="lnil lnil-pencil"></i>
                 </RouterLink>
                 <VBlock
@@ -139,7 +139,7 @@ watchEffect(async () => {
 
             <div class="column is-4 is-tablet-33">
               <div class="edit-box">
-                <RouterLink class="edit-icon" :to="{ name: 'wizard-v1-project-details' }">
+                <RouterLink class="edit-icon" to="/wizard-v1/project-details">
                   <i aria-hidden="true" class="lnil lnil-pencil"></i>
                 </RouterLink>
                 <div class="estimated-budget">
@@ -155,7 +155,7 @@ watchEffect(async () => {
 
             <div class="column is-4 is-tablet-33">
               <div class="edit-box">
-                <RouterLink class="edit-icon" :to="{ name: 'wizard-v1-project-details' }">
+                <RouterLink class="edit-icon" to="/wizard-v1/project-details">
                   <i aria-hidden="true" class="lnil lnil-pencil"></i>
                 </RouterLink>
                 <div class="estimated-due-date">
@@ -171,7 +171,7 @@ watchEffect(async () => {
 
             <div class="column is-4 is-tablet-33">
               <div class="edit-box">
-                <RouterLink class="edit-icon" :to="{ name: 'wizard-v1-project-files' }">
+                <RouterLink class="edit-icon" to="/wizard-v1/project-files">
                   <i aria-hidden="true" class="lnil lnil-pencil"></i>
                 </RouterLink>
                 <div class="attachments-count">
@@ -192,7 +192,7 @@ watchEffect(async () => {
               <div class="edit-box">
                 <h4>Team</h4>
 
-                <RouterLink class="edit-icon" :to="{ name: 'wizard-v1-project-team' }">
+                <RouterLink class="edit-icon" to="/wizard-v1/project-team">
                   <i aria-hidden="true" class="lnil lnil-pencil"></i>
                 </RouterLink>
 
@@ -227,7 +227,7 @@ watchEffect(async () => {
               <div class="edit-box">
                 <h4>Tools</h4>
 
-                <RouterLink class="edit-icon" :to="{ name: 'wizard-v1-project-tools' }">
+                <RouterLink class="edit-icon" to="/wizard-v1/project-tools">
                   <i aria-hidden="true" class="lnil lnil-pencil"></i>
                 </RouterLink>
 

@@ -26,18 +26,18 @@ useHead({
           label: 'Vuero',
           hideLabel: true,
           icon: 'feather:home',
-          to: { name: 'index' },
+          to: { name: '/' },
         },
         {
           label: 'Elements',
-          to: { name: 'elements' },
+          to: { name: '/elements/' },
         },
         {
           label: 'Addons',
         },
         {
           label: 'vueform/multiselect',
-          to: { name: 'elements-addons-vueform-multiselect' },
+          to: { name: '/elements/addons/vueform-multiselect' },
         },
       ]"
     />

@@ -26,6 +26,7 @@
   },
   "include": [
     "types/**/*.d.ts",
+    "typed-router.d.ts",
     "components.d.ts",
     "components-global.d.ts",
     "src/**/*.js",

@@ -1,15 +1,8 @@
-import { createRouter as createClientRouter, createWebHistory } from 'vue-router'
-
-/**
- * routes are generated using vite-plugin-pages
- * each .vue files located in the ./src/pages are registered as a route
- * @see https://github.com/hannoeru/vite-plugin-pages
- */
-import routes from 'pages-generated'
+import { createRouter as createClientRouter, createWebHistory } from '@vue-router'
 
 /**
  * Here is how a simple route is generated:
- * import { RouteRecordRaw } from 'vue-router'
+ * import { RouteRecordRaw } from '@vue-router'
  *
  * const routes: RouteRecordRaw = [{
  *    component: () => import('/src/pages/wizard-1.vue'),
@@ -22,7 +15,7 @@ import routes from 'pages-generated'
  * }]
  *
  * Here is how nested routes are generated:
- * import { RouteRecordRaw } from 'vue-router'
+ * import { RouteRecordRaw } from '@vue-router'
  *
  * const routes: RouteRecordRaw = [{
  *    component: () => import('/src/pages/auth.vue'),
@@ -51,7 +44,6 @@ export function createRouter() {
      */
     // history: createWebHistory('my-subdirectory'),
     history: createWebHistory(),
-    routes,
   })
 
   return router

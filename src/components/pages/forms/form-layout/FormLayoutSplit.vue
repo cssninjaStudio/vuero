@@ -27,7 +27,7 @@ const onSubmit = () => {
             <div class="buttons">
               <VButton
                 icon="lnir lnir-arrow-left rem-100"
-                :to="{ name: 'sidebar-layouts-profile-view' }"
+                to="/sidebar/layouts/profile-view"
                 light
                 dark-outlined
               >

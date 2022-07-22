@@ -1,6 +1,6 @@
 ---
 state:
-  input: ''
+  input: []
 ---
 
 ### Multiple selection
@@ -14,7 +14,7 @@ Please refer to the code example for more details about usage.
 <script setup lang="ts">
 import { ref } from 'vue'
 
-const input = ref('')
+const input = ref<string[]>([])
 </script>
 
 <template>

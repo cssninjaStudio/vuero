@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { useRoute, RouteLocationOptions } from 'vue-router'
+import { useRoute, RouteLocationOptions } from '@vue-router'
 import { useI18n } from 'vue-i18n'
 
 export interface VFlexPaginationProps {
@@ -103,7 +103,7 @@ es-MX:
   goto-page-title: 'Ir a la página {page}'
 es:
   goto-page-title: 'Ir a la página {page}'
-fr-FR:
+fr:
   goto-page-title: 'Aller à la page {page}'
 zh-CN:
   goto-page-title: '转到第{page}页'

@@ -39,7 +39,7 @@ wizard.setStep({
               rounded
               bold
               elevated
-              :to="{ name: 'sidebar-layouts-projects-details' }"
+              to="/sidebar/layouts/projects-details"
             >
               View Project
             </VButton>

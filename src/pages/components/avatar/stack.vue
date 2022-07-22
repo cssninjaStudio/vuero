@@ -26,15 +26,15 @@ useHead({
           label: 'Vuero',
           hideLabel: true,
           icon: 'feather:home',
-          to: { name: 'index' },
+          to: { name: '/' },
         },
         {
           label: 'Components',
-          to: { name: 'components' },
+          to: { name: '/components/' },
         },
         {
           label: 'VAvatarStack',
-          to: { name: 'components-avatar-stack' },
+          to: { name: '/components/avatar/stack' },
         },
       ]"
     />

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { reactive, ref, computed } from 'vue'
 import { useHead } from '@vueuse/head'
-import { useRoute, useRouter } from 'vue-router'
+import { useRoute, useRouter } from '@vue-router'
 import { useMediaQuery } from '@vueuse/core'
 
 import { useApi } from '/@src/composable/useApi'
@@ -259,23 +259,23 @@ function onCallClick(row: any) {
           label: 'Vuero',
           hideLabel: true,
           icon: 'feather:home',
-          to: { name: 'index' },
+          to: { name: '/' },
         },
         {
           label: 'Components',
-          to: { name: 'components' },
+          to: { name: '/components/' },
         },
         {
           label: 'VFlexTable',
-          to: { name: 'components-flextable' },
+          to: { name: '/components/flextable/' },
         },
         {
           label: 'VFlexTableWrapper',
-          to: { name: 'components-flextable-wrapper' },
+          to: { name: '/components/flextable/wrapper/' },
         },
         {
           label: 'Async data (advanced)',
-          to: { name: 'components-flextable-wrapper-async' },
+          to: { name: '/components/flextable/wrapper/async' },
         },
       ]"
     />

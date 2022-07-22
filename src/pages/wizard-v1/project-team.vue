@@ -3,7 +3,7 @@ import { ref, watchEffect } from 'vue'
 
 import type { WizardTeammate, WizardTeammateRole } from '/@src/models/wizard'
 import { users } from '/@src/data/wizard'
-import { useRouter } from 'vue-router'
+import { useRouter } from '@vue-router'
 import { useWizard } from '/@src/stores/wizard'
 
 const search = ref('')
@@ -17,14 +17,14 @@ wizard.setStep({
   canNavigate: true,
   previousStepFn: async () => {
     router.push({
-      name: 'wizard-v1-project-files',
+      name: '/wizard-v1/project-files',
     })
   },
   validateStepFn: async () => {
     if (search.value) return
 
     router.push({
-      name: 'wizard-v1-project-tools',
+      name: '/wizard-v1/project-tools',
     })
   },
 })

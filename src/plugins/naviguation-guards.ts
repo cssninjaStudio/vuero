@@ -1,4 +1,4 @@
-import { START_LOCATION } from 'vue-router'
+import { START_LOCATION } from '@vue-router'
 import { definePlugin } from '/@src/app'
 import { useUserSession } from '/@src/stores/userSession'
 import { useNotyf } from '/@src/composable/useNotyf'
@@ -46,8 +46,7 @@ export default definePlugin(({ router, api, pinia }) => {
         if (to.meta.requiresAuth) {
           // redirect the user somewhere
           return {
-            // Will follow the redirection set in /@src/pages/auth/index.vue
-            name: 'auth',
+            name: '/auth/login',
             // save the location we were at to come back later
             query: { redirect: to.fullPath },
           }
@@ -62,8 +61,7 @@ export default definePlugin(({ router, api, pinia }) => {
       })
 
       return {
-        // Will follow the redirection set in /@src/pages/auth/index.vue
-        name: 'auth',
+        name: '/auth/login',
         // save the location we were at to come back later
         query: { redirect: to.fullPath },
       }

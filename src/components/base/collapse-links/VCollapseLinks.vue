@@ -1,7 +1,7 @@
 <script lang="ts">
 import type { PropType } from 'vue'
 import { watch, ref, h, defineComponent, Transition, unref } from 'vue'
-import { useRoute } from 'vue-router'
+import { useRoute } from '@vue-router'
 
 export default defineComponent({
   props: {

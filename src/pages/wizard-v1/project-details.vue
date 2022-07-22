@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
-import { useRouter } from 'vue-router'
+import { useRouter } from '@vue-router'
 
 import type { WizardCustomer } from '/@src/models/wizard'
 import { customers } from '/@src/data/wizard'
@@ -14,12 +14,12 @@ wizard.setStep({
   canNavigate: true,
   previousStepFn: async () => {
     router.push({
-      name: 'wizard-v1-project-info',
+      name: '/wizard-v1/project-info',
     })
   },
   validateStepFn: async () => {
     router.push({
-      name: 'wizard-v1-project-files',
+      name: '/wizard-v1/project-files',
     })
   },
 })

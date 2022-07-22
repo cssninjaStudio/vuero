@@ -27,15 +27,15 @@ useHead({
           label: 'Vuero',
           hideLabel: true,
           icon: 'feather:home',
-          to: { name: 'index' },
+          to: { name: '/' },
         },
         {
           label: 'Components',
-          to: { name: 'components' },
+          to: { name: '/components/' },
         },
         {
           label: 'VCard',
-          to: { name: 'components-card' },
+          to: { name: '/components/card/' },
         },
       ]"
     />

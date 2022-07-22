@@ -71,19 +71,19 @@ function contactUser(row: any) {
           label: 'Vuero',
           hideLabel: true,
           icon: 'feather:home',
-          to: { name: 'index' },
+          to: { name: '/' },
         },
         {
           label: 'Components',
-          to: { name: 'components' },
+          to: { name: '/components/' },
         },
         {
           label: 'VFlexTable',
-          to: { name: 'components-flextable' },
+          to: { name: '/components/flextable/' },
         },
         {
           label: 'Slots usage',
-          to: { name: 'components-flextable-slots' },
+          to: { name: '/components/flextable/slots' },
         },
       ]"
     />

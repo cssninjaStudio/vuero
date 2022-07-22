@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { h, computed } from 'vue'
-import { useRoute } from 'vue-router'
+import { useRoute } from '@vue-router'
 import { useHead } from '@vueuse/head'
 
 import { flexRowsAdvanced } from '/@src/data/documentation/table'
@@ -187,19 +187,19 @@ const exampleColumns = {
           label: 'Vuero',
           hideLabel: true,
           icon: 'feather:home',
-          to: { name: 'index' },
+          to: { name: '/' },
         },
         {
           label: 'Components',
-          to: { name: 'components' },
+          to: { name: '/components/' },
         },
         {
           label: 'VFlexTable',
-          to: { name: 'components-flextable' },
+          to: { name: '/components/flextable/' },
         },
         {
           label: 'Render functions (advanced)',
-          to: { name: 'components-flextable-render' },
+          to: { name: '/components/flextable/render' },
         },
       ]"
     />

@@ -50,7 +50,7 @@
               <h3 class="title is-5">Available leagues</h3>
             </div>
             <div class="leagues-list">
-              <RouterLink :to="{ name: 'sidebar-dashboards-soccer' }" class="league-item">
+              <RouterLink to="/sidebar/dashboards/soccer" class="league-item">
                 <img
                   class="league-logo"
                   src="/images/icons/soccer/leagues/ligue-1.svg"
@@ -64,7 +64,7 @@
                   <span>8 matches</span>
                 </div>
               </RouterLink>
-              <RouterLink :to="{ name: 'sidebar-dashboards-soccer' }" class="league-item">
+              <RouterLink to="/sidebar/dashboards/soccer" class="league-item">
                 <img
                   class="league-logo"
                   src="/images/icons/soccer/leagues/laliga.svg"
@@ -78,7 +78,7 @@
                   <span>8 matches</span>
                 </div>
               </RouterLink>
-              <RouterLink :to="{ name: 'sidebar-dashboards-soccer' }" class="league-item">
+              <RouterLink to="/sidebar/dashboards/soccer" class="league-item">
                 <img
                   class="league-logo"
                   src="/images/icons/soccer/leagues/liga.svg"
@@ -92,7 +92,7 @@
                   <span>8 matches</span>
                 </div>
               </RouterLink>
-              <RouterLink :to="{ name: 'sidebar-dashboards-soccer' }" class="league-item">
+              <RouterLink to="/sidebar/dashboards/soccer" class="league-item">
                 <img
                   class="league-logo"
                   src="/images/icons/soccer/leagues/bundesliga.svg"

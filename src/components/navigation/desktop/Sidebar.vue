@@ -43,7 +43,7 @@ const themeClasses = computed(() => {
 <template>
   <div class="main-sidebar" :class="[themeClasses]">
     <div class="sidebar-brand">
-      <RouterLink :to="{ name: 'index' }">
+      <RouterLink to="/">
         <AnimatedLogo width="36px" />
       </RouterLink>
     </div>

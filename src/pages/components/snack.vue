@@ -26,15 +26,15 @@ useHead({
           label: 'Vuero',
           hideLabel: true,
           icon: 'feather:home',
-          to: { name: 'index' },
+          to: { name: '/' },
         },
         {
           label: 'Components',
-          to: { name: 'components' },
+          to: { name: '/components/' },
         },
         {
           label: 'VSnack',
-          to: { name: 'components-snack' },
+          to: { name: '/components/snack' },
         },
       ]"
     />
@@ -79,7 +79,7 @@ useHead({
         <VSnackPropsDocumentation />
 
         <!--Snack-->
-        <VSnackSnackDocumentation />
+        <VSnackSlotsDocumentation />
       </div>
       <div v-if="toc.length" class="column is-3 toc-column">
         <DocumentationToc :toc="toc" />

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { useRouter, useRoute } from 'vue-router'
+import { useRouter, useRoute } from '@vue-router'
 import { useHead } from '@vueuse/head'
 
 import { useDarkmode } from '/@src/stores/darkmode'
@@ -49,7 +49,7 @@ useHead({
     <div class="auth-nav">
       <div class="left"></div>
       <div class="center">
-        <RouterLink :to="{ name: 'index' }" class="header-item">
+        <RouterLink to="/" class="header-item">
           <AnimatedLogo width="38px" height="38px" />
         </RouterLink>
       </div>
@@ -77,9 +77,7 @@ useHead({
         <div class="auth-head">
           <h2>Welcome Back.</h2>
           <p>Please sign in to your account</p>
-          <RouterLink :to="{ name: 'auth-signup-3' }">
-            I do not have an account yet
-          </RouterLink>
+          <RouterLink to="/auth/signup-3"> I do not have an account yet </RouterLink>
         </div>
 
         <!--Form-->

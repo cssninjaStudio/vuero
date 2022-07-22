@@ -24,18 +24,18 @@ useHead({
           label: 'Vuero',
           hideLabel: true,
           icon: 'feather:home',
-          to: { name: 'index' },
+          to: { name: '/' },
         },
         {
           label: 'Components',
-          to: { name: 'components' },
+          to: { name: '/components/' },
         },
         {
           label: 'Cards',
         },
         {
           label: 'VCardAdvanced',
-          to: { name: 'components-card-advanced' },
+          to: { name: '/components/card/advanced' },
         },
       ]"
     />

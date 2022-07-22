@@ -7,7 +7,7 @@ Check the markup for more details about usage.
 
 ```vue
 <script setup lang="ts">
-import { useRoute } from 'vue-router'
+import { useRoute } from '@vue-router'
 
 const route = useRoute()
 const currentPage = computed(() => {

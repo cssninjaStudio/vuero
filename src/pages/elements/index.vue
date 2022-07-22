@@ -36,7 +36,7 @@ useHead({
                 title="Buttons"
                 content="Get familiar with the Vuero button styles. Code examples included."
               >
-                <RouterLink :to="{ name: 'elements-button' }"> Get Started </RouterLink>
+                <RouterLink to="/elements/button"> Get Started </RouterLink>
 
                 <template #icon>
                   <img
@@ -57,7 +57,7 @@ useHead({
                 title="Icons"
                 content="Get familiar with the Vuero icon libraries. Code examples included."
               >
-                <RouterLink :to="{ name: 'elements-icons-line-icons-light' }">
+                <RouterLink to="/elements/icons/line-icons-light">
                   Get Started
                 </RouterLink>
 
@@ -80,7 +80,7 @@ useHead({
                 title="Dropdowns"
                 content="Get familiar with the Vuero dropdown styles. Code examples included."
               >
-                <RouterLink :to="{ name: 'elements-dropdown' }"> Get Started </RouterLink>
+                <RouterLink to="/elements/dropdown"> Get Started </RouterLink>
 
                 <template #icon>
                   <img
@@ -101,7 +101,7 @@ useHead({
                 title="Modals"
                 content="Get familiar with the Vuero modal styles. Code examples included."
               >
-                <RouterLink :to="{ name: 'elements-modal' }"> Get Started </RouterLink>
+                <RouterLink to="/elements/modal"> Get Started </RouterLink>
 
                 <template #icon>
                   <img
@@ -122,7 +122,7 @@ useHead({
                 title="Progress"
                 content="Get familiar with the Vuero progress bar styles. Code examples included."
               >
-                <RouterLink :to="{ name: 'elements-progress' }"> Get Started </RouterLink>
+                <RouterLink to="/elements/progress"> Get Started </RouterLink>
 
                 <template #icon>
                   <img
@@ -143,9 +143,7 @@ useHead({
                 title="Forms"
                 content="Get familiar with the Vuero form elements. Code examples included."
               >
-                <RouterLink :to="{ name: 'elements-forms-inputs' }">
-                  Get Started
-                </RouterLink>
+                <RouterLink to="/elements/forms/inputs"> Get Started </RouterLink>
 
                 <template #icon>
                   <img
@@ -166,7 +164,7 @@ useHead({
                 title="Checkboxes"
                 content="Get familiar with the Vuero checkboxes styles. Code examples included."
               >
-                <RouterLink :to="{ name: 'elements-checkbox' }"> Get Started </RouterLink>
+                <RouterLink to="/elements/checkbox"> Get Started </RouterLink>
 
                 <template #icon>
                   <img
@@ -187,9 +185,7 @@ useHead({
                 title="Switches"
                 content="Get familiar with the Vuero switches styles. Code examples included."
               >
-                <RouterLink :to="{ name: 'elements-switch-block' }">
-                  Get Started
-                </RouterLink>
+                <RouterLink to="/elements/switch-block"> Get Started </RouterLink>
 
                 <template #icon>
                   <img

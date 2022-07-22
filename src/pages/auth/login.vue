@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { useRouter, useRoute } from 'vue-router'
+import { useRouter, useRoute } from '@vue-router'
 import { useHead } from '@vueuse/head'
 
 import { useDarkmode } from '/@src/stores/darkmode'
@@ -68,7 +68,7 @@ useHead({
         </div>
       </div>
       <div class="column is-4 is-relative">
-        <RouterLink :to="{ name: 'index' }" class="top-logo">
+        <RouterLink to="/" class="top-logo">
           <AnimatedLogo width="38px" height="38px" />
         </RouterLink>
 
@@ -181,7 +181,7 @@ useHead({
                 </VButton>
                 <span>
                   Or
-                  <RouterLink :to="{ name: 'auth-signup-1' }">Create</RouterLink>
+                  <RouterLink to="/auth/signup-1">Create</RouterLink>
                   an account.
                 </span>
               </div>

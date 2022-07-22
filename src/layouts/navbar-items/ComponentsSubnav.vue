@@ -39,7 +39,7 @@ const activeTab = ref<TabId>('display')
                 <h4 class="column-heading">General</h4>
                 <ul>
                   <li>
-                    <RouterLink :to="{ name: 'components' }">
+                    <RouterLink to="/components/">
                       <i aria-hidden="true" class="lnil lnil-home"></i>
                       <span>Components Hub</span>
                       <i
@@ -50,7 +50,7 @@ const activeTab = ref<TabId>('display')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'components-content' }">
+                    <RouterLink to="/components/content">
                       <i aria-hidden="true" class="lnil lnil-text-format"></i>
                       <span>Content</span>
                       <i
@@ -61,7 +61,7 @@ const activeTab = ref<TabId>('display')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'components-table' }">
+                    <RouterLink to="/components/table">
                       <i aria-hidden="true" class="lnil lnil-table"></i>
                       <span>Table</span>
                       <i
@@ -78,7 +78,7 @@ const activeTab = ref<TabId>('display')
                 <h4 class="column-heading">Display</h4>
                 <ul>
                   <li>
-                    <RouterLink :to="{ name: 'components-avatar' }">
+                    <RouterLink to="/components/avatar/">
                       <span>VAvatar</span>
                       <i
                         aria-hidden="true"
@@ -88,7 +88,7 @@ const activeTab = ref<TabId>('display')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'components-avatar-stack' }">
+                    <RouterLink to="/components/avatar/stack">
                       <span>VAvatarStack</span>
                       <i
                         aria-hidden="true"
@@ -98,7 +98,7 @@ const activeTab = ref<TabId>('display')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'components-block' }">
+                    <RouterLink to="/components/block">
                       <span>VBlock</span>
                       <i
                         aria-hidden="true"
@@ -108,7 +108,7 @@ const activeTab = ref<TabId>('display')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'components-icon-box' }">
+                    <RouterLink to="/components/icon-box">
                       <span>VIconBox</span>
                       <i
                         aria-hidden="true"
@@ -118,7 +118,7 @@ const activeTab = ref<TabId>('display')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'components-icon-wrap' }">
+                    <RouterLink to="/components/icon-wrap">
                       <span>VIconWrap</span>
                       <VTag label="v1.1" color="primary" outlined curved />
                       <i
@@ -129,7 +129,7 @@ const activeTab = ref<TabId>('display')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'components-snack' }">
+                    <RouterLink to="/components/snack">
                       <span>VSnack</span>
                       <VTag label="v1.1" color="primary" outlined curved />
                       <i
@@ -140,7 +140,7 @@ const activeTab = ref<TabId>('display')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'components-tag' }">
+                    <RouterLink to="/components/tag">
                       <span>VTag</span>
                       <i
                         aria-hidden="true"
@@ -156,7 +156,7 @@ const activeTab = ref<TabId>('display')
                 <h4 class="column-heading">Plugins</h4>
                 <ul>
                   <li>
-                    <RouterLink :to="{ name: 'components-plugins-notif' }">
+                    <RouterLink to="/components/plugins/notif">
                       <span>Notif</span>
                       <i
                         aria-hidden="true"
@@ -166,7 +166,7 @@ const activeTab = ref<TabId>('display')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'components-plugins-tippy' }">
+                    <RouterLink to="/components/plugins/tippy">
                       <span>Tippy</span>
                       <i
                         aria-hidden="true"
@@ -176,7 +176,7 @@ const activeTab = ref<TabId>('display')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'components-plugins-billboard-js' }">
+                    <RouterLink to="/components/plugins/billboard-js">
                       <span>VBillboardJS</span>
                       <i
                         aria-hidden="true"
@@ -186,7 +186,7 @@ const activeTab = ref<TabId>('display')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'components-plugins-photos-swipe' }">
+                    <RouterLink to="/components/plugins/photos-swipe">
                       <span>VPhotosSwipe</span>
                       <i
                         aria-hidden="true"
@@ -196,7 +196,7 @@ const activeTab = ref<TabId>('display')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'components-plugins-plyr' }">
+                    <RouterLink to="/components/plugins/plyr">
                       <span>VPlyr</span>
                       <i
                         aria-hidden="true"
@@ -206,7 +206,7 @@ const activeTab = ref<TabId>('display')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'components-plugins-simple-datatables' }">
+                    <RouterLink to="/components/plugins/simple-datatables">
                       <span>VSimpleDatatables</span>
                       <i
                         aria-hidden="true"
@@ -243,7 +243,7 @@ const activeTab = ref<TabId>('display')
                 <h4 class="column-heading">General</h4>
                 <ul>
                   <li>
-                    <RouterLink :to="{ name: 'components-flex' }">
+                    <RouterLink to="/components/flex">
                       <span>VFlex <small>& VFlexItem</small></span>
                       <VTag label="v2.0" color="primary" outlined curved />
                       <i
@@ -254,7 +254,7 @@ const activeTab = ref<TabId>('display')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'components-grid' }">
+                    <RouterLink to="/components/grid">
                       <span>VGrid <small>& VGridItem</small></span>
                       <VTag label="v2.0" color="primary" outlined curved />
                       <i
@@ -265,7 +265,7 @@ const activeTab = ref<TabId>('display')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'components-breadcrumb' }">
+                    <RouterLink to="/components/breadcrumb">
                       <span>VBreadcrumb</span>
                       <i
                         aria-hidden="true"
@@ -275,7 +275,7 @@ const activeTab = ref<TabId>('display')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'components-tabs' }">
+                    <RouterLink to="/components/tabs">
                       <span>VTabs</span>
                       <VTag label="v1.1" color="primary" outlined curved />
                       <i
@@ -286,7 +286,7 @@ const activeTab = ref<TabId>('display')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'components-pagination' }">
+                    <RouterLink to="/components/pagination">
                       <span>VFlexPagination</span>
                       <i
                         aria-hidden="true"
@@ -296,7 +296,7 @@ const activeTab = ref<TabId>('display')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'components-flextable' }">
+                    <RouterLink to="/components/flextable/">
                       <span>VFlexTable</span>
                       <i
                         aria-hidden="true"
@@ -312,7 +312,7 @@ const activeTab = ref<TabId>('display')
                 <h4 class="column-heading">Accordions</h4>
                 <ul>
                   <li>
-                    <RouterLink :to="{ name: 'components-accordion' }">
+                    <RouterLink to="/components/accordion/">
                       <span>VAccordion</span>
                       <i
                         aria-hidden="true"
@@ -322,7 +322,7 @@ const activeTab = ref<TabId>('display')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'components-collapse' }">
+                    <RouterLink to="/components/collapse">
                       <span>VCollapse</span>
                       <i
                         aria-hidden="true"
@@ -332,7 +332,7 @@ const activeTab = ref<TabId>('display')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'components-accordion-image' }">
+                    <RouterLink to="/components/accordion/image">
                       <span>VAccordionImage</span>
                       <i
                         aria-hidden="true"
@@ -348,7 +348,7 @@ const activeTab = ref<TabId>('display')
                 <h4 class="column-heading">Cards</h4>
                 <ul>
                   <li>
-                    <RouterLink :to="{ name: 'components-card' }">
+                    <RouterLink to="/components/card/">
                       <span>VCard</span>
                       <VTag label="v1.1" color="primary" outlined curved />
                       <i
@@ -359,7 +359,7 @@ const activeTab = ref<TabId>('display')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'components-card-action' }">
+                    <RouterLink to="/components/card/action">
                       <span>VCardAction</span>
                       <VTag label="v1.1" color="primary" outlined curved />
                       <i
@@ -370,7 +370,7 @@ const activeTab = ref<TabId>('display')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'components-card-advanced' }">
+                    <RouterLink to="/components/card/advanced">
                       <span>VCardAdvanced</span>
                       <i
                         aria-hidden="true"
@@ -380,7 +380,7 @@ const activeTab = ref<TabId>('display')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'components-card-media' }">
+                    <RouterLink to="/components/card/media">
                       <span>VCardMedia</span>
                       <VTag label="v1.1" color="primary" outlined curved />
                       <i
@@ -391,7 +391,7 @@ const activeTab = ref<TabId>('display')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'components-card-social' }">
+                    <RouterLink to="/components/card/social">
                       <span>VCardSocial</span>
                       <i
                         aria-hidden="true"
@@ -407,7 +407,7 @@ const activeTab = ref<TabId>('display')
                 <h4 class="column-heading">Placeholders</h4>
                 <ul>
                   <li>
-                    <RouterLink :to="{ name: 'components-placeholder-page' }">
+                    <RouterLink to="/components/placeholder-page">
                       <span>VPlaceholderPage</span>
                       <i
                         aria-hidden="true"
@@ -417,7 +417,7 @@ const activeTab = ref<TabId>('display')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'components-placeholder-section' }">
+                    <RouterLink to="/components/placeholder-section">
                       <span>VPlaceholderSection</span>
                       <i
                         aria-hidden="true"

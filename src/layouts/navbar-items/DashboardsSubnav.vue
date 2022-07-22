@@ -39,7 +39,7 @@ const activeTab = ref<TabId>('dashboards')
                 <h4 class="column-heading">Personal</h4>
                 <ul>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-dashboards' }">
+                    <RouterLink to="/navbar/dashboards">
                       <i aria-hidden="true" class="lnil lnil-analytics-alt-1"></i>
                       <span>Personal V1</span>
                       <i
@@ -50,7 +50,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-dashboards-personal-2' }">
+                    <RouterLink to="/navbar/dashboards/personal-2">
                       <i aria-hidden="true" class="lnil lnil-pie-chart"></i>
                       <span>Personal V2</span>
                       <i
@@ -61,7 +61,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-dashboards-personal-3' }">
+                    <RouterLink to="/navbar/dashboards/personal-3">
                       <i aria-hidden="true" class="lnil lnil-stats-up"></i>
                       <span>Personal V3</span>
                       <i
@@ -72,7 +72,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-dashboards-hobbies' }">
+                    <RouterLink to="/navbar/dashboards/hobbies">
                       <i aria-hidden="true" class="lnil lnil-cloud-sun"></i>
                       <span>Hobbies</span>
                       <i
@@ -83,7 +83,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-dashboards-health' }">
+                    <RouterLink to="/navbar/dashboards/health">
                       <i aria-hidden="true" class="lnil lnil-hospital-alt-3"></i>
                       <span>Health</span>
                       <i
@@ -94,7 +94,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-dashboards-writer' }">
+                    <RouterLink to="/navbar/dashboards/writer">
                       <i aria-hidden="true" class="lnil lnil-books"></i>
                       <span>Writer</span>
                       <i
@@ -105,7 +105,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-dashboards-soccer' }">
+                    <RouterLink to="/navbar/dashboards/soccer">
                       <i aria-hidden="true" class="lnil lnil-tshirt"></i>
                       <span>Soccer</span>
                       <i
@@ -121,7 +121,7 @@ const activeTab = ref<TabId>('dashboards')
                 <h4 class="column-heading">Finance</h4>
                 <ul>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-dashboards-analytics' }">
+                    <RouterLink to="/navbar/dashboards/analytics">
                       <i aria-hidden="true" class="lnil lnil-analytics-alt-1"></i>
                       <span>Analytics</span>
                       <i
@@ -132,7 +132,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-dashboards-stocks' }">
+                    <RouterLink to="/navbar/dashboards/stocks">
                       <i aria-hidden="true" class="lnil lnil-stats-up"></i>
                       <span>Stocks</span>
                       <i
@@ -143,7 +143,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-dashboards-sales' }">
+                    <RouterLink to="/navbar/dashboards/sales">
                       <i aria-hidden="true" class="lnil lnil-credit-card"></i>
                       <span>Sales</span>
                       <i
@@ -154,7 +154,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-dashboards-banking-1' }">
+                    <RouterLink to="/navbar/dashboards/banking-1">
                       <i aria-hidden="true" class="lnil lnil-bank"></i>
                       <span>Banking V1</span>
                       <i
@@ -165,7 +165,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-dashboards-banking-2' }">
+                    <RouterLink to="/navbar/dashboards/banking-2">
                       <i aria-hidden="true" class="lnil lnil-bank"></i>
                       <span>Banking V2</span>
                       <i
@@ -176,7 +176,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-dashboards-banking-3' }">
+                    <RouterLink to="/navbar/dashboards/banking-3">
                       <i aria-hidden="true" class="lnil lnil-bank"></i>
                       <span>Banking V3</span>
                       <i
@@ -192,7 +192,7 @@ const activeTab = ref<TabId>('dashboards')
                 <h4 class="column-heading">Business</h4>
                 <ul>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-dashboards-influencer' }">
+                    <RouterLink to="/navbar/dashboards/influencer">
                       <i aria-hidden="true" class="lnil lnil-cardiology"></i>
                       <span>Influencer</span>
                       <i
@@ -203,7 +203,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-dashboards-flights' }">
+                    <RouterLink to="/navbar/dashboards/flights">
                       <i aria-hidden="true" class="lnil lnil-plane-alt"></i>
                       <span>Flights Booking</span>
                       <i
@@ -214,7 +214,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-dashboards-company' }">
+                    <RouterLink to="/navbar/dashboards/company">
                       <i aria-hidden="true" class="lnil lnil-apartment"></i>
                       <span>Company Board</span>
                       <i
@@ -225,7 +225,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-dashboards-human-ressources' }">
+                    <RouterLink to="/navbar/dashboards/human-ressources">
                       <i aria-hidden="true" class="lnil lnil-users-alt"></i>
                       <span>HR Board</span>
                       <i
@@ -236,7 +236,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-dashboards-course' }">
+                    <RouterLink to="/navbar/dashboards/course">
                       <i aria-hidden="true" class="lnil lnil-graduate"></i>
                       <span>Course Board</span>
                       <i
@@ -247,7 +247,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-dashboards-ecommerce-1' }">
+                    <RouterLink to="/navbar/dashboards/ecommerce-1">
                       <i aria-hidden="true" class="lnil lnil-cart"></i>
                       <span>Ecommerce V1</span>
                       <i
@@ -258,7 +258,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-dashboards-jobs' }">
+                    <RouterLink to="/navbar/dashboards/jobs">
                       <i aria-hidden="true" class="lnil lnil-briefcase"></i>
                       <span>Jobs</span>
                       <i
@@ -274,7 +274,7 @@ const activeTab = ref<TabId>('dashboards')
                 <h4 class="column-heading">Apps</h4>
                 <ul>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-dashboards-food-delivery' }">
+                    <RouterLink to="/navbar/dashboards/food-delivery">
                       <i aria-hidden="true" class="lnil lnil-pizza"></i>
                       <span>Food Delivery</span>
                       <i
@@ -285,7 +285,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-maps-1' }">
+                    <RouterLink to="navbar-maps-1">
                       <i aria-hidden="true" class="lnil lnil-map"></i>
                       <span>Maps V1</span>
                       <VTag label="v1.2" color="primary" outlined curved />
@@ -297,7 +297,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-maps-2' }">
+                    <RouterLink to="navbar-maps-2">
                       <i aria-hidden="true" class="lnil lnil-map"></i>
                       <span>Maps V2</span>
                       <VTag label="v1.2" color="primary" outlined curved />
@@ -309,7 +309,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'inbox' }">
+                    <RouterLink to="/inbox">
                       <i aria-hidden="true" class="lnil lnil-envelope"></i>
                       <span>Inbox</span>
                       <i
@@ -320,7 +320,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'messaging-v1' }">
+                    <RouterLink to="/messaging-v1">
                       <i aria-hidden="true" class="lnil lnil-bubble"></i>
                       <span>Messaging V1</span>
                       <i
@@ -331,7 +331,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'messaging-v2' }">
+                    <RouterLink to="/messaging-v2">
                       <i aria-hidden="true" class="lnil lnil-bubble"></i>
                       <span>Messaging V2</span>
                       <i
@@ -356,7 +356,7 @@ const activeTab = ref<TabId>('dashboards')
                 <h4 class="column-heading">Sidebars</h4>
                 <ul>
                   <li>
-                    <RouterLink :to="{ name: 'starters-sidebar-blank-page-1' }">
+                    <RouterLink to="/starters/sidebar-blank-page-1">
                       <i aria-hidden="true" class="lnil lnil-layout"></i>
                       <span>Regular Sidebar</span>
                       <i
@@ -367,7 +367,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'starters-sidebar-blank-page-2' }">
+                    <RouterLink to="/starters/sidebar-blank-page-2">
                       <i aria-hidden="true" class="lnil lnil-layout"></i>
                       <span>Curved Sidebar</span>
                       <i
@@ -378,7 +378,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'starters-sidebar-blank-page-3' }">
+                    <RouterLink to="/starters/sidebar-blank-page-3">
                       <i aria-hidden="true" class="lnil lnil-layout"></i>
                       <span>Colored Sidebar</span>
                       <i
@@ -389,7 +389,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'starters-sidebar-blank-page-4' }">
+                    <RouterLink to="/starters/sidebar-blank-page-4">
                       <i aria-hidden="true" class="lnil lnil-layout"></i>
                       <span>Curved Colored</span>
                       <i
@@ -400,7 +400,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'starters-sidebar-blank-page-5' }">
+                    <RouterLink to="/starters/sidebar-blank-page-5">
                       <i aria-hidden="true" class="lnil lnil-layout"></i>
                       <span>Labels Sidebar</span>
                       <i
@@ -411,7 +411,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'starters-sidebar-blank-page-6' }">
+                    <RouterLink to="/starters/sidebar-blank-page-6">
                       <i aria-hidden="true" class="lnil lnil-layout"></i>
                       <span>Labels Hover Sidebar</span>
                       <i
@@ -422,7 +422,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'starters-sidebar-blank-page-7' }">
+                    <RouterLink to="/starters/sidebar-blank-page-7">
                       <i aria-hidden="true" class="lnil lnil-layout"></i>
                       <span>Float Sidebar</span>
                       <i
@@ -438,7 +438,7 @@ const activeTab = ref<TabId>('dashboards')
                 <h4 class="column-heading">Navbars</h4>
                 <ul class="has-slimscroll" simplebar>
                   <li>
-                    <RouterLink :to="{ name: 'starters-navbar-blank-page-1' }">
+                    <RouterLink to="/starters/navbar-blank-page-1">
                       <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
                       <span>Regular Navbar</span>
                       <i
@@ -449,7 +449,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'starters-navbar-blank-page-2' }">
+                    <RouterLink to="/starters/navbar-blank-page-2">
                       <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
                       <span>Fading Navbar</span>
                       <i
@@ -460,7 +460,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'starters-navbar-blank-page-3' }">
+                    <RouterLink to="/starters/navbar-blank-page-3">
                       <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
                       <span>Colored Navbar</span>
                       <i
@@ -471,7 +471,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'starters-navbar-blank-page-4' }">
+                    <RouterLink to="/starters/navbar-blank-page-4">
                       <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
                       <span>Drop Navbar</span>
                       <i
@@ -482,7 +482,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'starters-navbar-blank-page-5' }">
+                    <RouterLink to="/starters/navbar-blank-page-5">
                       <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
                       <span>Colored Drop</span>
                       <i
@@ -493,7 +493,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'starters-navbar-blank-page-6' }">
+                    <RouterLink to="/starters/navbar-blank-page-6">
                       <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
                       <span>Clean Navbar</span>
                       <i
@@ -504,7 +504,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'starters-navbar-blank-page-7' }">
+                    <RouterLink to="/starters/navbar-blank-page-7">
                       <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
                       <span>Clean Center</span>
                       <i
@@ -515,7 +515,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'starters-navbar-blank-page-8' }">
+                    <RouterLink to="/starters/navbar-blank-page-8">
                       <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
                       <span>Clean Fade</span>
                       <i
@@ -531,7 +531,7 @@ const activeTab = ref<TabId>('dashboards')
                 <h4 class="column-heading">Widgets</h4>
                 <ul>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-dashboards-charts-apex' }">
+                    <RouterLink to="/navbar/dashboards/charts-apex">
                       <i aria-hidden="true" class="lnil lnil-pie-chart-alt"></i>
                       <span>Apex Charts</span>
                       <i
@@ -542,7 +542,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-dashboards-charts-billboardsjs' }">
+                    <RouterLink to="/navbar/dashboards/charts-billboardsjs">
                       <i aria-hidden="true" class="lnil lnil-bar-chart"></i>
                       <span>Billboard JS</span>
                       <i
@@ -553,7 +553,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-dashboards-widgets-sample-ui' }">
+                    <RouterLink to="/navbar/dashboards/widgets-sample-ui">
                       <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
                       <span>UI Widgets</span>
                       <i
@@ -566,7 +566,7 @@ const activeTab = ref<TabId>('dashboards')
                   <li>
                     <RouterLink
                       :to="{
-                        name: 'navbar-dashboards-widgets-sample-creative',
+                        name: '/navbar/dashboards/widgets-sample-creative',
                       }"
                     >
                       <i aria-hidden="true" class="lnil lnil-layout-alt-2"></i>
@@ -579,7 +579,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-dashboards-widgets-sample-list' }">
+                    <RouterLink to="/navbar/dashboards/widgets-sample-list">
                       <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
                       <span>List Widgets</span>
                       <i
@@ -590,7 +590,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-dashboards-widgets-sample-stats' }">
+                    <RouterLink to="/navbar/dashboards/widgets-sample-stats">
                       <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
                       <span>Stat Widgets</span>
                       <i
@@ -606,7 +606,7 @@ const activeTab = ref<TabId>('dashboards')
                 <h4 class="column-heading">Wizard</h4>
                 <ul>
                   <li>
-                    <RouterLink :to="{ name: 'wizard-v1' }">
+                    <RouterLink to="/wizard-v1">
                       <span>Wizard V1</span>
                       <i
                         aria-hidden="true"
@@ -616,7 +616,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-layouts-form-layouts-1' }">
+                    <RouterLink to="/navbar/layouts/form-layouts-1">
                       <span>Form V1</span>
                       <i
                         aria-hidden="true"
@@ -626,7 +626,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-layouts-form-layouts-2' }">
+                    <RouterLink to="/navbar/layouts/form-layouts-2">
                       <span>Form V2</span>
                       <i
                         aria-hidden="true"
@@ -636,7 +636,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-layouts-form-layouts-3' }">
+                    <RouterLink to="/navbar/layouts/form-layouts-3">
                       <span>Form V3</span>
                       <i
                         aria-hidden="true"
@@ -646,7 +646,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink :to="{ name: 'navbar-layouts-form-layouts-4' }">
+                    <RouterLink to="/navbar/layouts/form-layouts-4">
                       <span>Form V4</span>
                       <i
                         aria-hidden="true"

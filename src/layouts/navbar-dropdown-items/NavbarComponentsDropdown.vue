@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, watch } from 'vue'
-import { useRoute } from 'vue-router'
+import { useRoute } from '@vue-router'
 
 const dropdownElement = ref()
 const selectedCategory = ref('')
@@ -105,7 +105,7 @@ watch([() => route.fullPath, dropdownElement], () => {
               </h4>
 
               <div class="column-content" data-simplebar>
-                <RouterLink :to="{ name: 'components' }" class="dropdown-item is-media">
+                <RouterLink to="/components/" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-home"></i>
                   </div>
@@ -114,10 +114,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
 
-                <RouterLink
-                  :to="{ name: 'components-content' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/components/content" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-layout"></i>
                   </div>
@@ -126,10 +123,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
 
-                <RouterLink
-                  :to="{ name: 'components-table' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/components/table" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-layout-alt"></i>
                   </div>
@@ -150,10 +144,7 @@ watch([() => route.fullPath, dropdownElement], () => {
               </h4>
 
               <div class="column-content" data-simplebar>
-                <RouterLink
-                  :to="{ name: 'components-avatar' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/components/avatar/" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-user-alt"></i>
                   </div>
@@ -161,10 +152,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <span>VAvatar</span>
                   </div>
                 </RouterLink>
-                <RouterLink
-                  :to="{ name: 'components-avatar-stack' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/components/avatar/stack" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-users-alt"></i>
                   </div>
@@ -173,10 +161,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
 
-                <RouterLink
-                  :to="{ name: 'components-block' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/components/block" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-keyboard"></i>
                   </div>
@@ -185,10 +170,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
 
-                <RouterLink
-                  :to="{ name: 'components-icon-box' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/components/icon-box" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-round-box-minus"></i>
                   </div>
@@ -197,10 +179,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
 
-                <RouterLink
-                  :to="{ name: 'components-icon-wrap' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/components/icon-wrap" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-circle-minus"></i>
                   </div>
@@ -209,10 +188,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
 
-                <RouterLink
-                  :to="{ name: 'components-snack' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/components/snack" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-bookmark-alt"></i>
                   </div>
@@ -222,10 +198,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
 
-                <RouterLink
-                  :to="{ name: 'components-tag' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/components/tag" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-tag"></i>
                   </div>
@@ -252,10 +225,7 @@ watch([() => route.fullPath, dropdownElement], () => {
               </h4>
 
               <div class="column-content" data-simplebar>
-                <RouterLink
-                  :to="{ name: 'components-flex' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/components/flex" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-layout-alt-2"></i>
                   </div>
@@ -265,10 +235,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <VTag label="v2.0" color="primary" outlined curved class="ml-3" />
                   </div>
                 </RouterLink>
-                <RouterLink
-                  :to="{ name: 'components-grid' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/components/grid" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-grid-alt"></i>
                   </div>
@@ -278,10 +245,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <VTag label="v2.0" color="primary" outlined curved class="ml-3" />
                   </div>
                 </RouterLink>
-                <RouterLink
-                  :to="{ name: 'components-accordion' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/components/accordion/" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-slideshow"></i>
                   </div>
@@ -291,7 +255,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                 </RouterLink>
 
                 <RouterLink
-                  :to="{ name: 'components-accordion-image' }"
+                  to="/components/accordion/image"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -302,10 +266,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
 
-                <RouterLink
-                  :to="{ name: 'components-breadcrumb' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/components/breadcrumb" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-more"></i>
                   </div>
@@ -314,10 +275,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
 
-                <RouterLink
-                  :to="{ name: 'components-collapse' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/components/collapse" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-slideshow"></i>
                   </div>
@@ -326,10 +284,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
 
-                <RouterLink
-                  :to="{ name: 'components-pagination' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/components/pagination" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-more"></i>
                   </div>
@@ -338,10 +293,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
 
-                <RouterLink
-                  :to="{ name: 'components-flextable' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/components/flextable/" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-table"></i>
                   </div>
@@ -351,7 +303,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                 </RouterLink>
 
                 <RouterLink
-                  :to="{ name: 'components-placeholder-page' }"
+                  to="/components/placeholder-page"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -363,7 +315,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                 </RouterLink>
 
                 <RouterLink
-                  :to="{ name: 'components-placeholder-section' }"
+                  to="/components/placeholder-section"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -374,10 +326,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
 
-                <RouterLink
-                  :to="{ name: 'components-tabs' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/components/tabs" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-list-alt-1"></i>
                   </div>
@@ -400,10 +349,7 @@ watch([() => route.fullPath, dropdownElement], () => {
               </h4>
 
               <div class="column-content" data-simplebar>
-                <RouterLink
-                  :to="{ name: 'components-card' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/components/card/" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-layout-alt"></i>
                   </div>
@@ -413,10 +359,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
 
-                <RouterLink
-                  :to="{ name: 'components-card-action' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/components/card/action" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-layout-alt-2"></i>
                   </div>
@@ -426,10 +369,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
 
-                <RouterLink
-                  :to="{ name: 'components-card-advanced' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/components/card/advanced" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-layout"></i>
                   </div>
@@ -438,10 +378,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
 
-                <RouterLink
-                  :to="{ name: 'components-card-media' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/components/card/media" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-image"></i>
                   </div>
@@ -450,10 +387,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <VTag label="v1.1" color="primary" outlined curved class="ml-3" />
                   </div>
                 </RouterLink>
-                <RouterLink
-                  :to="{ name: 'components-card-social' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/components/card/social" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
                   </div>
@@ -480,10 +414,7 @@ watch([() => route.fullPath, dropdownElement], () => {
               </h4>
 
               <div class="column-content" data-simplebar>
-                <RouterLink
-                  :to="{ name: 'components-plugins-notif' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/components/plugins/notif" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-plug"></i>
                   </div>
@@ -492,10 +423,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
 
-                <RouterLink
-                  :to="{ name: 'components-plugins-tippy' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/components/plugins/tippy" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-plug"></i>
                   </div>
@@ -505,7 +433,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                 </RouterLink>
 
                 <RouterLink
-                  :to="{ name: 'components-plugins-billboard-js' }"
+                  to="/components/plugins/billboard-js"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -517,7 +445,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                 </RouterLink>
 
                 <RouterLink
-                  :to="{ name: 'components-plugins-photos-swipe' }"
+                  to="/components/plugins/photos-swipe"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -528,10 +456,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
 
-                <RouterLink
-                  :to="{ name: 'components-plugins-plyr' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/components/plugins/plyr" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-plug"></i>
                   </div>
@@ -541,7 +466,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                 </RouterLink>
 
                 <RouterLink
-                  :to="{ name: 'components-plugins-simple-datatables' }"
+                  to="/components/plugins/simple-datatables"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">

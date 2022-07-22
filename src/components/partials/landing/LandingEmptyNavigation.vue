@@ -56,9 +56,7 @@ watchEffect(() => {
       <div class="navbar-start">
         <div class="navbar-item">
           <RouterLink
-            :to="{
-              name: 'index',
-            }"
+            to="/"
             class="nav-link"
             @click.passive="
               () => {
@@ -92,10 +90,10 @@ watchEffect(() => {
           </label>
         </div>
         <div class="navbar-item">
-          <RouterLink :to="{ name: 'auth-login' }" class="nav-link"> Login </RouterLink>
+          <RouterLink to="/auth/login" class="nav-link"> Login </RouterLink>
         </div>
         <div class="navbar-item">
-          <VButton :to="{ name: 'auth-signup' }" color="primary" rounded raised>
+          <VButton to="/auth/signup" color="primary" rounded raised>
             <strong>Sign up</strong>
           </VButton>
         </div>

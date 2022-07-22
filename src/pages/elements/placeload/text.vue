@@ -26,15 +26,15 @@ useHead({
           label: 'Vuero',
           hideLabel: true,
           icon: 'feather:home',
-          to: { name: 'index' },
+          to: { name: '/' },
         },
         {
           label: 'Elements',
-          to: { name: 'elements' },
+          to: { name: '/elements/' },
         },
         {
           label: 'VPlaceloadText',
-          to: { name: 'elements-placeload-text' },
+          to: { name: '/elements/placeload/text' },
         },
       ]"
     />

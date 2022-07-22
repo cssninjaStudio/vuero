@@ -4,7 +4,7 @@ describe(`Authentification - Navigation Guards`, () => {
   it(`Should redirect to login page when not logged in`, () => {
     // register fakes timers
     // if you are performing a REST call, you should register a request intercepter insetead
-    //   cy.intercept({ method: 'POST', url: '/auth/login', }, []).as('apiLogin')
+    //   cy.intercept({ method: 'POST', url: '/api/auth/login', }, []).as('apiLogin')
     cy.clock()
 
     cy.visit(routeWithLogin, {

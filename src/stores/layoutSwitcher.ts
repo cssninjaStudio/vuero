@@ -10,7 +10,7 @@
  */
 
 import { computed, ref, defineAsyncComponent } from 'vue'
-import { useRoute } from 'vue-router'
+import { useRoute } from '@vue-router'
 import { acceptHMRUpdate, defineStore } from 'pinia'
 
 import type { SidebarTheme } from '/@src/components/navigation/desktop/Sidebar.vue'

@@ -4,7 +4,7 @@ meta:
 </route>
 
 <script setup lang="ts">
-import { useRoute } from 'vue-router'
+import { useRoute } from '@vue-router'
 
 import { useLayoutSwitcher } from '/@src/stores/layoutSwitcher'
 

@@ -1,9 +1,9 @@
 <script lang="ts">
 import type { PropType } from 'vue'
-import type { RouteLocationRaw } from 'vue-router'
+import type { RouteLocationRaw } from '@vue-router'
 import { CssUnitRe } from '/@src/utils/regex'
 import { computed, defineComponent, h } from 'vue'
-import { RouterLink } from 'vue-router'
+import { RouterLink } from '@vue-router'
 
 import VPlaceload from '../loader/VPlaceload.vue'
 

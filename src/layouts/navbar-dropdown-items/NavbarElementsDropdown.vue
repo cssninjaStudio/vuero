@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, watch } from 'vue'
-import { useRoute } from 'vue-router'
+import { useRoute } from '@vue-router'
 
 const dropdownElement = ref()
 const selectedCategory = ref('')
@@ -105,7 +105,7 @@ watch([() => route.fullPath, dropdownElement], () => {
               </h4>
 
               <div class="column-content" data-simplebar>
-                <RouterLink :to="{ name: 'elements' }" class="dropdown-item is-media">
+                <RouterLink to="/elements/" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-home"></i>
                   </div>
@@ -114,10 +114,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
 
-                <RouterLink
-                  :to="{ name: 'elements-colors' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/elements/colors" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-color-palette"></i>
                   </div>
@@ -126,10 +123,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
 
-                <RouterLink
-                  :to="{ name: 'elements-helpers' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/elements/helpers" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-help"></i>
                   </div>
@@ -138,10 +132,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
 
-                <RouterLink
-                  :to="{ name: 'elements-icons-iconify' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/elements/icons/iconify" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-minus"></i>
                   </div>
@@ -151,7 +142,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                 </RouterLink>
 
                 <RouterLink
-                  :to="{ name: 'elements-icons-line-icons-light' }"
+                  to="/elements/icons/line-icons-light"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -163,7 +154,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                 </RouterLink>
 
                 <RouterLink
-                  :to="{ name: 'elements-icons-line-icons-regular' }"
+                  to="/elements/icons/line-icons-regular"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -175,7 +166,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                 </RouterLink>
 
                 <RouterLink
-                  :to="{ name: 'elements-icons-font-awesome' }"
+                  to="/elements/icons/font-awesome"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -198,10 +189,7 @@ watch([() => route.fullPath, dropdownElement], () => {
               </h4>
 
               <div class="column-content" data-simplebar>
-                <RouterLink
-                  :to="{ name: 'elements-action' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/elements/action" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-pointer-top"></i>
                   </div>
@@ -210,10 +198,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
 
-                <RouterLink
-                  :to="{ name: 'elements-button' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/elements/button" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-pointer-top"></i>
                   </div>
@@ -222,10 +207,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
 
-                <RouterLink
-                  :to="{ name: 'elements-dropdown' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/elements/dropdown" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-chevron-down"></i>
                   </div>
@@ -234,10 +216,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
 
-                <RouterLink
-                  :to="{ name: 'elements-icon-button' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/elements/icon-button" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-pointer-top"></i>
                   </div>
@@ -246,10 +225,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
 
-                <RouterLink
-                  :to="{ name: 'elements-loader' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/elements/loader" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-spinner-3"></i>
                   </div>
@@ -258,10 +234,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
 
-                <RouterLink
-                  :to="{ name: 'elements-placeload' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/elements/placeload/" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-reload"></i>
                   </div>
@@ -271,10 +244,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
 
-                <RouterLink
-                  :to="{ name: 'elements-placeload-text' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/elements/placeload/text" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-reload"></i>
                   </div>
@@ -285,7 +255,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                 </RouterLink>
 
                 <RouterLink
-                  :to="{ name: 'elements-placeload-avatar' }"
+                  to="/elements/placeload/avatar"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -297,10 +267,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
 
-                <RouterLink
-                  :to="{ name: 'elements-message' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/elements/message" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-capital-letter"></i>
                   </div>
@@ -310,10 +277,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
 
-                <RouterLink
-                  :to="{ name: 'elements-modal' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/elements/modal" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-top-right-arrow-box"></i>
                   </div>
@@ -322,10 +286,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
 
-                <RouterLink
-                  :to="{ name: 'elements-progress' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/elements/progress" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-half-battery"></i>
                   </div>
@@ -334,10 +295,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
 
-                <RouterLink
-                  :to="{ name: 'elements-tooltip' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/elements/tooltip" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-comments-alt"></i>
                   </div>
@@ -364,10 +322,7 @@ watch([() => route.fullPath, dropdownElement], () => {
               </h4>
 
               <div class="column-content" data-simplebar>
-                <RouterLink
-                  :to="{ name: 'elements-forms-field' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/elements/forms/field" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-stop"></i>
                   </div>
@@ -376,10 +331,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <VTag label="v2.3" color="primary" outlined curved class="ml-3" />
                   </div>
                 </RouterLink>
-                <RouterLink
-                  :to="{ name: 'elements-forms-control' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/elements/forms/control" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-stop"></i>
                   </div>
@@ -388,10 +340,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <VTag label="v2.3" color="primary" outlined curved class="ml-3" />
                   </div>
                 </RouterLink>
-                <RouterLink
-                  :to="{ name: 'elements-forms-inputs' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/elements/forms/inputs" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-font"></i>
                   </div>
@@ -401,10 +350,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
 
-                <RouterLink
-                  :to="{ name: 'elements-forms-textarea' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/elements/forms/textarea" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-font"></i>
                   </div>
@@ -414,10 +360,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
 
-                <RouterLink
-                  :to="{ name: 'elements-forms-selects' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/elements/forms/selects" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-font"></i>
                   </div>
@@ -427,10 +370,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
 
-                <RouterLink
-                  :to="{ name: 'elements-checkbox' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/elements/checkbox" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-round-box-check"></i>
                   </div>
@@ -440,10 +380,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
 
-                <RouterLink
-                  :to="{ name: 'elements-radio' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/elements/radio" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-checkmark-circle"></i>
                   </div>
@@ -454,7 +391,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                 </RouterLink>
 
                 <!-- <RouterLink
-                  :to="{ name: 'elements-forms-addons' }"
+                  to="/elements/forms/addons"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -465,10 +402,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink> -->
 
-                <RouterLink
-                  :to="{ name: 'elements-forms-file' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/elements/forms/file" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-upload"></i>
                   </div>
@@ -490,7 +424,7 @@ watch([() => route.fullPath, dropdownElement], () => {
 
               <div class="column-content" data-simplebar>
                 <RouterLink
-                  :to="{ name: 'elements-animated-checkbox' }"
+                  to="/elements/animated-checkbox"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -502,10 +436,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
 
-                <RouterLink
-                  :to="{ name: 'elements-switch-block' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/elements/switch-block" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-switch"></i>
                   </div>
@@ -513,10 +444,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <span>VSwitchBlock</span>
                   </div>
                 </RouterLink>
-                <RouterLink
-                  :to="{ name: 'elements-switch-segment' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/elements/switch-segment" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-switch"></i>
                   </div>
@@ -543,10 +471,7 @@ watch([() => route.fullPath, dropdownElement], () => {
               </h4>
 
               <div class="column-content" data-simplebar>
-                <RouterLink
-                  :to="{ name: 'elements-addons-calendar' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/elements/addons/calendar" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-code"></i>
                   </div>
@@ -556,7 +481,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                 </RouterLink>
 
                 <RouterLink
-                  :to="{ name: 'elements-addons-imask-input' }"
+                  to="/elements/addons/imask-input"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -567,10 +492,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
 
-                <RouterLink
-                  :to="{ name: 'elements-addons-filepond' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/elements/addons/filepond" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-code"></i>
                   </div>
@@ -580,7 +502,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                 </RouterLink>
 
                 <RouterLink
-                  :to="{ name: 'elements-addons-vueform-multiselect' }"
+                  to="/elements/addons/vueform-multiselect"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -592,7 +514,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                 </RouterLink>
 
                 <RouterLink
-                  :to="{ name: 'elements-addons-vueform-slider' }"
+                  to="/elements/addons/vueform-slider"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -603,10 +525,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
 
-                <RouterLink
-                  :to="{ name: 'elements-addons-ckeditor' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/elements/addons/ckeditor" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-code"></i>
                   </div>

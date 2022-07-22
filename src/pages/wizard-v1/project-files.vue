@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Dropzone from 'dropzone'
 import { nextTick, onUnmounted, ref, watch } from 'vue'
-import { useRouter } from 'vue-router'
+import { useRouter } from '@vue-router'
 import { useWizard } from '/@src/stores/wizard'
 import { onceImageErrored } from '/@src/utils/via-placeholder'
 import sleep from '/@src/utils/sleep'
@@ -25,12 +25,12 @@ wizard.setStep({
   canNavigate: true,
   previousStepFn: async () => {
     router.push({
-      name: 'wizard-v1-project-details',
+      name: '/wizard-v1/project-details',
     })
   },
   validateStepFn: async () => {
     router.push({
-      name: 'wizard-v1-project-team',
+      name: '/wizard-v1/project-team',
     })
   },
 })

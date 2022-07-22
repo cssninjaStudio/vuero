@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, watchPostEffect, watch } from 'vue'
-import { useRoute } from 'vue-router'
+import { useRoute } from '@vue-router'
 
 import type { SidebarTheme } from '/@src/components/navigation/desktop/Sidebar.vue'
 import { usePanels } from '/@src/stores/panels'
@@ -64,7 +64,7 @@ watch(
       @toggle="isMobileSidebarOpen = !isMobileSidebarOpen"
     >
       <template #brand>
-        <RouterLink :to="{ name: 'index' }" class="navbar-item is-brand">
+        <RouterLink to="/" class="navbar-item is-brand">
           <AnimatedLogo width="38px" height="38px" />
         </RouterLink>
 
@@ -126,7 +126,7 @@ watch(
           </a>
         </li>
         <li>
-          <RouterLink :to="{ name: 'messaging-v1' }">
+          <RouterLink to="/messaging-v1">
             <i aria-hidden="true" class="iconify" data-icon="feather:message-circle"></i>
           </RouterLink>
         </li>
@@ -240,11 +240,7 @@ watch(
 
         <!-- Messaging -->
         <li>
-          <RouterLink
-            id="open-messages"
-            :to="{ name: 'messaging-v1' }"
-            data-content="Messaging"
-          >
+          <RouterLink id="open-messages" to="/messaging-v1" data-content="Messaging">
             <i
               aria-hidden="true"
               class="iconify sidebar-svg"
@@ -290,7 +286,7 @@ watch(
         <li class="is-hidden-touch">
           <RouterLink
             id="open-settings"
-            :to="{ name: 'sidebar-layouts-profile-settings' }"
+            to="/sidebar/layouts/profile-settings"
             data-content="Settings"
           >
             <i

@@ -42,7 +42,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
             <div class="profile-card-section">
               <div class="section-title">
                 <h4>About Me</h4>
-                <RouterLink :to="{ name: 'sidebar-layouts-profile-edit' }">
+                <RouterLink to="/sidebar/layouts/profile-edit">
                   <i aria-hidden="true" class="lnil lnil-pencil"></i>
                 </RouterLink>
               </div>
@@ -59,7 +59,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
             <div class="profile-card-section">
               <div class="section-title">
                 <h4>Experience</h4>
-                <RouterLink :to="{ name: 'sidebar-layouts-profile-edit-experience' }">
+                <RouterLink to="/sidebar/layouts/profile-edit-experience">
                   <i aria-hidden="true" class="lnil lnil-pencil"></i>
                 </RouterLink>
               </div>
@@ -138,7 +138,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
             <div class="profile-card-section">
               <div class="section-title">
                 <h4>Languages</h4>
-                <RouterLink :to="{ name: 'sidebar-layouts-profile-edit-skills' }">
+                <RouterLink to="/sidebar/layouts/profile-edit-skills">
                   <i aria-hidden="true" class="lnil lnil-pencil"></i>
                 </RouterLink>
               </div>
@@ -229,7 +229,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
             <div class="profile-card-section">
               <div class="section-title">
                 <h4>Skills</h4>
-                <RouterLink :to="{ name: 'sidebar-layouts-profile-edit-skills' }">
+                <RouterLink to="/sidebar/layouts/profile-edit-skills">
                   <i aria-hidden="true" class="lnil lnil-pencil"></i>
                 </RouterLink>
               </div>
@@ -389,7 +389,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
             <div class="profile-card-section no-padding">
               <div class="section-title">
                 <h4>Tools</h4>
-                <RouterLink :to="{ name: 'sidebar-layouts-profile-edit-skills' }">
+                <RouterLink to="/sidebar/layouts/profile-edit-skills">
                   <i aria-hidden="true" class="lnil lnil-pencil"></i>
                 </RouterLink>
                 <a class="action-link" tabindex="0">View All</a>

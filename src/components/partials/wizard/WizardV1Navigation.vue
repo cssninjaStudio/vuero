@@ -16,7 +16,7 @@ const wizard = useWizard()
 
 <template>
   <nav class="wizard-navigation">
-    <RouterLink :to="{ name: 'index' }" class="wizard-brand">
+    <RouterLink to="/" class="wizard-brand">
       <AnimatedLogo width="38px" height="38px" />
     </RouterLink>
 
@@ -42,7 +42,7 @@ const wizard = useWizard()
           :class="[wizard.step < 1 && 'is-disabled']"
           class="dropdown-item kill-drop"
           tabindex="0"
-          :to="{ name: 'wizard-v1' }"
+          to="/wizard-v1"
           @click.passive="close"
         >
           Step 1: Project Type
@@ -51,7 +51,7 @@ const wizard = useWizard()
           :class="[wizard.step < 2 && 'is-disabled']"
           class="dropdown-item kill-drop"
           tabindex="0"
-          :to="{ name: 'wizard-v1-project-info' }"
+          to="/wizard-v1/project-info"
           @click.passive="close"
         >
           Step 2: Project Info
@@ -60,7 +60,7 @@ const wizard = useWizard()
           :class="[wizard.step < 3 && 'is-disabled']"
           class="dropdown-item kill-drop"
           tabindex="0"
-          :to="{ name: 'wizard-v1-project-details' }"
+          to="/wizard-v1/project-details"
           @click.passive="close"
         >
           Step 3: Project Details
@@ -69,7 +69,7 @@ const wizard = useWizard()
           :class="[wizard.step < 4 && 'is-disabled']"
           class="dropdown-item kill-drop"
           tabindex="0"
-          :to="{ name: 'wizard-v1-project-files' }"
+          to="/wizard-v1/project-files"
           @click.passive="close"
         >
           Step 4: Project Files
@@ -78,7 +78,7 @@ const wizard = useWizard()
           :class="[wizard.step < 5 && 'is-disabled']"
           class="dropdown-item kill-drop"
           tabindex="0"
-          :to="{ name: 'wizard-v1-project-team' }"
+          to="/wizard-v1/project-team"
           @click.passive="close"
         >
           Step 5: Team Members
@@ -87,7 +87,7 @@ const wizard = useWizard()
           :class="[wizard.step < 6 && 'is-disabled']"
           class="dropdown-item kill-drop"
           tabindex="0"
-          :to="{ name: 'wizard-v1-project-tools' }"
+          to="/wizard-v1/project-tools"
           @click.passive="close"
         >
           Step 6: Project Tools
@@ -96,7 +96,7 @@ const wizard = useWizard()
           :class="[wizard.step < 7 && 'is-disabled']"
           class="dropdown-item kill-drop"
           tabindex="0"
-          :to="{ name: 'wizard-v1-project-review' }"
+          to="/wizard-v1/project-review"
           @click.passive="close"
         >
           Step 7: Preview

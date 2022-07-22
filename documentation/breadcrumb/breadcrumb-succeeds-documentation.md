@@ -7,7 +7,7 @@ breadcrumb:
   - label: Components
     icon: feather:cpu
     to:
-      name: components
+      name: /components/
   - label: VBreadcrumb
 ---
 
@@ -34,7 +34,7 @@ const breadcrumb = [
     icon: 'feather:cpu',
     // or generate a router link with 'to' props
     to: {
-      name: 'components',
+      name: '/components/',
     },
   },
   {

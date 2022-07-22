@@ -9,8 +9,8 @@ a standard `<a>` tag. If none is used a `<button>` is rendered insted.
 ```vue
 <template>
   <VButtons>
-    <VButton :to="{ name: 'index' }"> Home </VButton>
-    <VButton bold :to="{ name: 'index' }"> Home </VButton>
+    <VButton :to="{ name: '/' }"> Home </VButton>
+    <VButton bold :to="{ name: '/' }"> Home </VButton>
     <VButton rounded href="https://vuero.cssninja.io"> Home </VButton>
     <VButton bold rounded href="https://vuero.cssninja.io"> Home </VButton>
   </VButtons>
@@ -22,10 +22,10 @@ a standard `<a>` tag. If none is used a `<button>` is rendered insted.
 <!--example-->
 
 <VButtons>
-  <VButton :to="{ name: 'index' }">
+  <VButton :to="{ name: '/' }">
     Home
   </VButton>
-  <VButton bold :to="{ name: 'index' }">
+  <VButton bold :to="{ name: '/' }">
     Home
   </VButton>
   <VButton rounded href="https://vuero.cssninja.io">

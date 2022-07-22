@@ -176,7 +176,7 @@ export const auth = [
   {
     name: 'Login 1',
     category: 'AUTHENTICATION',
-    path: '/auth/login-1',
+    path: '/auth/login',
     prefix: 'auth',
     pageDelay: 0,
     checkVisibleSelector: '.modern-login',

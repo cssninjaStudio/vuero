@@ -51,7 +51,7 @@ useHead({
           <!-- Header -->
           <div class="header-area">
             <div class="inbox-title">
-              <RouterLink :to="{ name: 'index' }" class="inbox-brand">
+              <RouterLink to="/" class="inbox-brand">
                 <AnimatedLogo width="36px" height="36px" />
               </RouterLink>
               <span>Inbox</span>

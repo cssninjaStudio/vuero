@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { h, computed, defineComponent } from 'vue'
-import { RouterLink, useRoute } from 'vue-router'
+import { RouterLink, useRoute } from '@vue-router'
 
 import VTag from '/@src/components/base/tags/VTag.vue'
 import FlexTableDropdown from '/@src/components/partials/dropdowns/FlexTableDropdown.vue'

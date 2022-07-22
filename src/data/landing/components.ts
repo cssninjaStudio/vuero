@@ -1,7 +1,7 @@
 export const elements = [
   {
     id: 1,
-    link: 'elements-colors',
+    link: '/elements/colors',
     name: 'Colors',
     media: {
       light: '/images/icons/components/colors.svg',
@@ -10,7 +10,7 @@ export const elements = [
   },
   {
     id: 2,
-    link: 'components-tag',
+    link: '/components/tag',
     name: 'VTag',
     media: {
       light: '/images/icons/components/badges.svg',
@@ -19,7 +19,7 @@ export const elements = [
   },
   {
     id: 3,
-    link: 'elements-button',
+    link: '/elements/button',
     name: 'VButton',
     media: {
       light: '/images/icons/components/buttons.svg',
@@ -28,7 +28,7 @@ export const elements = [
   },
   {
     id: 4,
-    link: 'components-content',
+    link: '/components/content',
     name: 'Content',
     media: {
       light: '/images/icons/components/content.svg',
@@ -37,7 +37,7 @@ export const elements = [
   },
   {
     id: 5,
-    link: 'elements-icons-font-awesome',
+    link: '/elements/icons/font-awesome',
     name: 'Font Awesome',
     media: {
       light: '/images/icons/components/font-awesome.svg',
@@ -46,7 +46,7 @@ export const elements = [
   },
   {
     id: 6,
-    link: 'elements-icons-iconify',
+    link: '/elements/icons/iconify',
     name: 'Feather Icons',
     media: {
       light: '/images/icons/components/feather-icons.svg',
@@ -55,7 +55,7 @@ export const elements = [
   },
   {
     id: 7,
-    link: 'elements-icons-line-icons-regular',
+    link: '/elements/icons/line-icons-regular',
     name: 'Line Icons',
     media: {
       light: '/images/icons/components/line-icons.svg',
@@ -64,7 +64,7 @@ export const elements = [
   },
   {
     id: 8,
-    link: 'elements-icons-line-icons-light',
+    link: '/elements/icons/line-icons-light',
     name: 'Line Icons Light',
     media: {
       light: '/images/icons/components/line-icons.svg',
@@ -73,7 +73,7 @@ export const elements = [
   },
   {
     id: 9,
-    link: 'components-card',
+    link: '/components/card/',
     name: 'VCard',
     media: {
       light: '/images/icons/components/cards.svg',
@@ -82,7 +82,7 @@ export const elements = [
   },
   {
     id: 10,
-    link: 'components-table',
+    link: '/components/table',
     name: 'Tables',
     media: {
       light: '/images/icons/components/tables.svg',
@@ -91,7 +91,7 @@ export const elements = [
   },
   {
     id: 11,
-    link: 'components-tabs',
+    link: '/components/tabs',
     name: 'VTabs',
     media: {
       light: '/images/icons/components/tabs.svg',
@@ -100,7 +100,7 @@ export const elements = [
   },
   {
     id: 13,
-    link: 'elements-tooltip',
+    link: '/elements/tooltip',
     name: 'VTooltip',
     media: {
       light: '/images/icons/components/tooltip.svg',
@@ -112,7 +112,7 @@ export const elements = [
 export const forms = [
   {
     id: 20,
-    link: 'elements-forms-field',
+    link: '/elements/forms/field',
     name: 'VField',
     media: {
       light: '/images/icons/components/inputs-addons.svg',
@@ -121,7 +121,7 @@ export const forms = [
   },
   {
     id: 2,
-    link: 'elements-forms-control',
+    link: '/elements/forms/control',
     name: 'VControl',
     media: {
       light: '/images/icons/components/inputs-addons.svg',
@@ -130,7 +130,7 @@ export const forms = [
   },
   {
     id: 1,
-    link: 'elements-forms-inputs',
+    link: '/elements/forms/inputs',
     name: 'VInput',
     media: {
       light: '/images/icons/components/inputs.svg',
@@ -139,7 +139,7 @@ export const forms = [
   },
   {
     id: 3,
-    link: 'elements-forms-textarea',
+    link: '/elements/forms/textarea',
     name: 'VTextarea',
     media: {
       light: '/images/icons/components/textarea.svg',
@@ -148,7 +148,7 @@ export const forms = [
   },
   {
     id: 4,
-    link: 'elements-forms-selects',
+    link: '/elements/forms/selects',
     name: 'VSelect',
     media: {
       light: '/images/icons/components/selects.svg',
@@ -157,7 +157,7 @@ export const forms = [
   },
   {
     id: 5,
-    link: 'elements-forms-file',
+    link: '/elements/forms/file',
     name: 'File Input',
     media: {
       light: '/images/icons/components/file-input.svg',
@@ -166,7 +166,7 @@ export const forms = [
   },
   {
     id: 6,
-    link: 'elements-checkbox',
+    link: '/elements/checkbox',
     name: 'VCheckbox',
     media: {
       light: '/images/icons/components/toggles.svg',
@@ -175,7 +175,7 @@ export const forms = [
   },
   {
     id: 7,
-    link: 'elements-radio',
+    link: '/elements/radio',
     name: 'VRadio',
     media: {
       light: '/images/icons/components/toggles.svg',
@@ -184,7 +184,7 @@ export const forms = [
   },
   {
     id: 8,
-    link: 'elements-switch-block',
+    link: '/elements/switch-block',
     name: 'VSwitchBlock',
     media: {
       light: '/images/icons/components/switch.svg',
@@ -193,7 +193,7 @@ export const forms = [
   },
   {
     id: 9,
-    link: 'sidebar-layouts-form-layouts-1',
+    link: '/sidebar/layouts/form-layouts-1',
     name: 'Form Layout V1',
     media: {
       light: '/images/icons/components/forms.svg',
@@ -202,7 +202,7 @@ export const forms = [
   },
   {
     id: 10,
-    link: 'sidebar-layouts-form-layouts-2',
+    link: '/sidebar/layouts/form-layouts-2',
     name: 'Form Layout V2',
     media: {
       light: '/images/icons/components/forms.svg',
@@ -211,7 +211,7 @@ export const forms = [
   },
   {
     id: 11,
-    link: 'sidebar-layouts-form-layouts-3',
+    link: '/sidebar/layouts/form-layouts-3',
     name: 'Form Layout V3',
     media: {
       light: '/images/icons/components/forms.svg',
@@ -220,7 +220,7 @@ export const forms = [
   },
   {
     id: 12,
-    link: 'sidebar-layouts-form-layouts-4',
+    link: '/sidebar/layouts/form-layouts-4',
     name: 'Form Layout V4',
     media: {
       light: '/images/icons/components/forms.svg',
@@ -232,7 +232,7 @@ export const forms = [
 export const components = [
   {
     id: 1,
-    link: 'components-avatar',
+    link: '/components/avatar/',
     name: 'VAvatar',
     media: {
       light: '/images/icons/components/avatar.svg',
@@ -241,7 +241,7 @@ export const components = [
   },
   {
     id: 2,
-    link: 'components-avatar-stack',
+    link: '/components/avatar/stack',
     name: 'VAvatarStack',
     media: {
       light: '/images/icons/components/avatar.svg',
@@ -250,7 +250,7 @@ export const components = [
   },
   {
     id: 3,
-    link: 'components-accordion',
+    link: '/components/accordion/',
     name: 'VAccordion',
     media: {
       light: '/images/icons/components/accordion.svg',
@@ -259,7 +259,7 @@ export const components = [
   },
   {
     id: 4,
-    link: 'components-collapse',
+    link: '/components/collapse',
     name: 'VCollapse',
     media: {
       light: '/images/icons/components/accordion.svg',
@@ -268,7 +268,7 @@ export const components = [
   },
   {
     id: 5,
-    link: 'components-accordion-image',
+    link: '/components/accordion/image',
     name: 'VAccordionImages',
     media: {
       light: '/images/icons/components/accordion.svg',
@@ -277,7 +277,7 @@ export const components = [
   },
   {
     id: 6,
-    link: 'components-block',
+    link: '/components/block',
     name: 'VBlock',
     media: {
       light: '/images/icons/components/blocks.svg',
@@ -286,7 +286,7 @@ export const components = [
   },
   {
     id: 7,
-    link: 'components-breadcrumb',
+    link: '/components/breadcrumb',
     name: 'VBreadcrumb',
     media: {
       light: '/images/icons/components/breadcrumb.svg',
@@ -295,7 +295,7 @@ export const components = [
   },
   {
     id: 8,
-    link: 'elements-button',
+    link: '/elements/button',
     name: 'VButton',
     media: {
       light: '/images/icons/components/buttons.svg',
@@ -304,7 +304,7 @@ export const components = [
   },
   {
     id: 9,
-    link: 'components-card-advanced',
+    link: '/components/card/advanced',
     name: 'VCardAdvanced',
     media: {
       light: '/images/icons/components/cards.svg',
@@ -313,7 +313,7 @@ export const components = [
   },
   {
     id: 10,
-    link: 'components-card-media',
+    link: '/components/card/media',
     name: 'VCardMedia',
     media: {
       light: '/images/icons/components/cards.svg',
@@ -322,7 +322,7 @@ export const components = [
   },
   {
     id: 11,
-    link: 'components-card-social',
+    link: '/components/card/social',
     name: 'VCardSocial',
     media: {
       light: '/images/icons/components/cards.svg',
@@ -331,7 +331,7 @@ export const components = [
   },
   {
     id: 12,
-    link: 'elements-dropdown',
+    link: '/elements/dropdown',
     name: 'VDropdown',
     media: {
       light: '/images/icons/components/dropdowns.svg',
@@ -340,7 +340,7 @@ export const components = [
   },
   {
     id: 13,
-    link: 'components-icon-box',
+    link: '/components/icon-box',
     name: 'VIconBox',
     media: {
       light: '/images/icons/components/icon-box.svg',
@@ -349,7 +349,7 @@ export const components = [
   },
   {
     id: 14,
-    link: 'elements-message',
+    link: '/elements/message',
     name: 'VMessage',
     media: {
       light: '/images/icons/components/messages.svg',
@@ -358,7 +358,7 @@ export const components = [
   },
   {
     id: 15,
-    link: 'elements-modal',
+    link: '/elements/modal',
     name: 'VModal',
     media: {
       light: '/images/icons/components/modals.svg',
@@ -367,7 +367,7 @@ export const components = [
   },
   {
     id: 16,
-    link: 'elements-progress',
+    link: '/elements/progress',
     name: 'VProgress',
     media: {
       light: '/images/icons/components/progress.svg',
@@ -376,7 +376,7 @@ export const components = [
   },
   {
     id: 17,
-    link: 'components-flextable',
+    link: '/components/flextable/',
     name: 'VFlexTable',
     media: {
       light: '/images/icons/components/flex-tables.svg',
@@ -385,7 +385,7 @@ export const components = [
   },
   {
     id: 18,
-    link: 'components-tag',
+    link: '/components/tag',
     name: 'VTag',
     media: {
       light: '/images/icons/components/badges.svg',
@@ -394,7 +394,7 @@ export const components = [
   },
   {
     id: 19,
-    link: 'components-snack',
+    link: '/components/snack',
     name: 'VSnack',
     media: {
       light: '/images/icons/components/snacks.svg',
@@ -406,7 +406,7 @@ export const components = [
 export const plugins = [
   {
     id: 1,
-    link: 'components-plugins-notif',
+    link: '/components/plugins/notif',
     name: 'Notyf',
     media: {
       light: '/images/icons/components/toasts.svg',
@@ -415,7 +415,7 @@ export const plugins = [
   },
   {
     id: 2,
-    link: 'components-plugins-photos-swipe',
+    link: '/components/plugins/photos-swipe',
     name: 'Photo Swipe',
     media: {
       light: '/images/icons/components/lightbox.svg',
@@ -424,7 +424,7 @@ export const plugins = [
   },
   {
     id: 3,
-    link: 'components-plugins-simple-datatables',
+    link: '/components/plugins/simple-datatables',
     name: 'VDatatable',
     media: {
       light: '/images/icons/components/tables.svg',
@@ -433,7 +433,7 @@ export const plugins = [
   },
   {
     id: 3,
-    link: 'elements-addons-calendar',
+    link: '/elements/addons/calendar',
     name: 'VCalendar',
     media: {
       light: '/images/icons/components/datepicker.svg',
@@ -442,7 +442,7 @@ export const plugins = [
   },
   {
     id: 4,
-    link: 'components-plugins-plyr',
+    link: '/components/plugins/plyr',
     name: 'VPlyr',
     media: {
       light: '/images/icons/components/video.svg',
@@ -451,7 +451,7 @@ export const plugins = [
   },
   {
     id: 5,
-    link: 'elements-addons-vueform-multiselect',
+    link: '/elements/addons/vueform-multiselect',
     name: 'VMultiselect',
     media: {
       light: '/images/icons/components/selects.svg',
@@ -460,7 +460,7 @@ export const plugins = [
   },
   {
     id: 6,
-    link: 'elements-addons-vueform-slider',
+    link: '/elements/addons/vueform-slider',
     name: 'VSlider',
     media: {
       light: '/images/icons/components/slider.svg',
@@ -469,7 +469,7 @@ export const plugins = [
   },
   {
     id: 7,
-    link: 'components-plugins-tippy',
+    link: '/components/plugins/tippy',
     name: 'VTippy',
     media: {
       light: '/images/icons/components/popover.svg',
@@ -478,7 +478,7 @@ export const plugins = [
   },
   {
     id: 8,
-    link: 'elements-addons-ckeditor',
+    link: '/elements/addons/ckeditor',
     name: 'CKEditor 5',
     media: {
       light: '/images/icons/components/textarea.svg',

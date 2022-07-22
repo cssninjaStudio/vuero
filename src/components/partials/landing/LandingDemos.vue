@@ -228,7 +228,7 @@ debouncedWatch(
                   <span>{{ item.name }}</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="item.route" tabindex="-1">
+                  <RouterLink :to="item.route.path" tabindex="-1">
                     Go to demo
                     <i aria-hidden="true" class="fas fa-angle-right"></i>
                   </RouterLink>
@@ -288,7 +288,7 @@ debouncedWatch(
                   <span>{{ item.name }}</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="item.route" tabindex="-1">
+                  <RouterLink :to="item.route.path" tabindex="-1">
                     Go to demo
                     <i aria-hidden="true" class="fas fa-angle-right"></i>
                   </RouterLink>
@@ -348,7 +348,7 @@ debouncedWatch(
                   <span>{{ item.name }}</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="item.route" tabindex="-1">
+                  <RouterLink :to="item.route.path" tabindex="-1">
                     Go to demo
                     <i aria-hidden="true" class="fas fa-angle-right"></i>
                   </RouterLink>
@@ -408,7 +408,7 @@ debouncedWatch(
                   <span>{{ item.name }}</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="item.route" tabindex="-1">
+                  <RouterLink :to="item.route.path" tabindex="-1">
                     Go to demo
                     <i aria-hidden="true" class="fas fa-angle-right"></i>
                   </RouterLink>
@@ -468,7 +468,7 @@ debouncedWatch(
                   <span>{{ item.name }}</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="item.route" tabindex="-1">
+                  <RouterLink :to="item.route.path" tabindex="-1">
                     Go to demo
                     <i aria-hidden="true" class="fas fa-angle-right"></i>
                   </RouterLink>

@@ -12,7 +12,7 @@
             <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
           </template>
 
-          <RouterLink :to="{ name: 'app' }" class="is-submenu">
+          <RouterLink to="app" class="is-submenu">
             <i aria-hidden="true" class="lnil lnil-home"></i>
             <span>Home</span>
           </RouterLink>

@@ -26,18 +26,18 @@ useHead({
           label: 'Vuero',
           hideLabel: true,
           icon: 'feather:home',
-          to: { name: 'index' },
+          to: { name: '/' },
         },
         {
           label: 'Elements',
-          to: { name: 'elements' },
+          to: { name: '/elements/' },
         },
         {
           label: 'Switches',
         },
         {
           label: 'VAnimatedCheckbox',
-          to: { name: 'elements-animated-checkbox' },
+          to: { name: '/elements/animated-checkbox' },
         },
       ]"
     />

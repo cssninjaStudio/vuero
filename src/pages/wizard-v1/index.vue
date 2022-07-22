@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useRouter } from 'vue-router'
+import { useRouter } from '@vue-router'
 import { useWizard } from '/@src/stores/wizard'
 import type { WizardRelatedTo } from '/@src/models/wizard'
 
@@ -13,7 +13,7 @@ const validateStep = (relatedTo: WizardRelatedTo) => {
   wizard.data.relatedTo = relatedTo
 
   router.push({
-    name: 'wizard-v1-project-info',
+    name: '/wizard-v1/project-info',
   })
 }
 </script>

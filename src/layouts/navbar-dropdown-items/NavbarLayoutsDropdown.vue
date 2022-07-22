@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, watch } from 'vue'
-import { useRoute } from 'vue-router'
+import { useRoute } from '@vue-router'
 
 const dropdownElement = ref()
 const selectedCategory = ref('')
@@ -108,10 +108,7 @@ watch([() => route.fullPath, dropdownElement], () => {
               </h4>
 
               <div class="column-content" data-simplebar>
-                <RouterLink
-                  :to="{ name: 'navbar-layouts' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/navbar/layouts" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-list-alt"></i>
                   </div>
@@ -120,7 +117,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-list-view-2' }"
+                  to="/navbar/layouts/list-view-2"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -131,7 +128,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-list-view-3' }"
+                  to="/navbar/layouts/list-view-3"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -142,7 +139,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-list-view-4' }"
+                  to="/navbar/layouts/list-view-4"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -165,7 +162,7 @@ watch([() => route.fullPath, dropdownElement], () => {
 
               <div class="column-content" data-simplebar>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-list-flex-2' }"
+                  to="/navbar/layouts/list-flex-2"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -176,7 +173,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-list-flex-2' }"
+                  to="/navbar/layouts/list-flex-2"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -187,7 +184,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-list-flex-3' }"
+                  to="/navbar/layouts/list-flex-3"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -210,7 +207,7 @@ watch([() => route.fullPath, dropdownElement], () => {
 
               <div class="column-content" data-simplebar>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-list-datatable-1' }"
+                  to="/navbar/layouts/list-datatable-1"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -221,7 +218,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-list-datatable-2' }"
+                  to="/navbar/layouts/list-datatable-2"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -232,7 +229,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-list-datatable-3' }"
+                  to="/navbar/layouts/list-datatable-3"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -243,7 +240,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-list-datatable-4' }"
+                  to="/navbar/layouts/list-datatable-4"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -273,7 +270,7 @@ watch([() => route.fullPath, dropdownElement], () => {
 
               <div class="column-content">
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-grid-cards-1' }"
+                  to="/navbar/layouts/grid-cards-1"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -284,7 +281,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-grid-cards-2' }"
+                  to="/navbar/layouts/grid-cards-2"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -295,7 +292,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-grid-cards-3' }"
+                  to="/navbar/layouts/grid-cards-3"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -306,7 +303,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-grid-cards-4' }"
+                  to="/navbar/layouts/grid-cards-4"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -330,7 +327,7 @@ watch([() => route.fullPath, dropdownElement], () => {
 
               <div class="column-content">
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-grid-tiles-1' }"
+                  to="/navbar/layouts/grid-tiles-1"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -341,7 +338,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-grid-tiles-2' }"
+                  to="/navbar/layouts/grid-tiles-2"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -352,7 +349,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-grid-tiles-3' }"
+                  to="/navbar/layouts/grid-tiles-3"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -376,7 +373,7 @@ watch([() => route.fullPath, dropdownElement], () => {
 
               <div class="column-content">
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-grid-users-1' }"
+                  to="/navbar/layouts/grid-users-1"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -387,7 +384,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-grid-users-2' }"
+                  to="/navbar/layouts/grid-users-2"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -398,7 +395,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-grid-users-3' }"
+                  to="/navbar/layouts/grid-users-3"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -409,7 +406,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-grid-users-4' }"
+                  to="/navbar/layouts/grid-users-4"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -439,7 +436,7 @@ watch([() => route.fullPath, dropdownElement], () => {
 
               <div class="column-content" data-simplebar>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-profile-view' }"
+                  to="/navbar/layouts/profile-view"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -450,7 +447,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-profile-edit' }"
+                  to="/navbar/layouts/profile-edit"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -461,7 +458,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-profile-notifications' }"
+                  to="/navbar/layouts/profile-notifications"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -472,7 +469,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-profile-settings' }"
+                  to="/navbar/layouts/profile-settings"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -495,7 +492,7 @@ watch([() => route.fullPath, dropdownElement], () => {
               </h4>
 
               <div class="column-content" data-simplebar>
-                <RouterLink :to="{ name: 'auth-login-1' }" class="dropdown-item is-media">
+                <RouterLink to="/auth/login" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-pointer-right"></i>
                   </div>
@@ -503,7 +500,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <span>Login v1</span>
                   </div>
                 </RouterLink>
-                <RouterLink :to="{ name: 'auth-login-2' }" class="dropdown-item is-media">
+                <RouterLink to="/auth/login-2" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-pointer-right"></i>
                   </div>
@@ -511,7 +508,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <span>Login v2</span>
                   </div>
                 </RouterLink>
-                <RouterLink :to="{ name: 'auth-login-3' }" class="dropdown-item is-media">
+                <RouterLink to="/auth/login-3" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-pointer-right"></i>
                   </div>
@@ -519,10 +516,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <span>Login v3</span>
                   </div>
                 </RouterLink>
-                <RouterLink
-                  :to="{ name: 'auth-signup-2' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/auth/signup-2" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-crown"></i>
                   </div>
@@ -530,10 +524,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <span>Signup v1</span>
                   </div>
                 </RouterLink>
-                <RouterLink
-                  :to="{ name: 'auth-signup-3' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/auth/signup-3" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-crown"></i>
                   </div>
@@ -541,10 +532,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <span>Signup v2</span>
                   </div>
                 </RouterLink>
-                <RouterLink
-                  :to="{ name: 'auth-signup-1' }"
-                  class="dropdown-item is-media"
-                >
+                <RouterLink to="/auth/signup-1" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-crown"></i>
                   </div>
@@ -553,7 +541,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-search-results' }"
+                  to="/navbar/layouts/search-results"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -564,7 +552,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-search-empty' }"
+                  to="/navbar/layouts/search-empty"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -588,7 +576,7 @@ watch([() => route.fullPath, dropdownElement], () => {
 
               <div class="column-content" data-simplebar>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-projects-projects-1' }"
+                  to="/navbar/layouts/projects-projects-1"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -599,7 +587,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-projects-projects-2' }"
+                  to="/navbar/layouts/projects-projects-2"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -610,7 +598,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-projects-projects-3' }"
+                  to="/navbar/layouts/projects-projects-3"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -621,7 +609,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-projects-details' }"
+                  to="/navbar/layouts/projects-details"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -632,7 +620,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-kanban-board' }"
+                  to="/navbar/layouts/kanban-board"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -662,7 +650,7 @@ watch([() => route.fullPath, dropdownElement], () => {
 
               <div class="column-content" data-simplebar>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-saas-billing' }"
+                  to="/navbar/layouts/saas-billing"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -672,7 +660,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <span>SaaS Billing</span>
                   </div>
                 </RouterLink>
-                <RouterLink :to="{ name: 'navbar' }" class="dropdown-item is-media">
+                <RouterLink to="navbar" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-door-alt"></i>
                   </div>
@@ -681,7 +669,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-action-page-1' }"
+                  to="/navbar/layouts/action-page-1"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -692,7 +680,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-action-page-2' }"
+                  to="/navbar/layouts/action-page-2"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -715,7 +703,7 @@ watch([() => route.fullPath, dropdownElement], () => {
 
               <div class="column-content" data-simplebar>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-utility-account-confirm' }"
+                  to="/navbar/layouts/utility-account-confirm"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -726,7 +714,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-utility-promotion' }"
+                  to="/navbar/layouts/utility-promotion"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -737,7 +725,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-utility-invoice' }"
+                  to="/navbar/layouts/utility-invoice"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -747,7 +735,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <span>Invoice</span>
                   </div>
                 </RouterLink>
-                <RouterLink :to="{ name: 'status' }" class="dropdown-item is-media">
+                <RouterLink to="status" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-checkmark-circle"></i>
                   </div>
@@ -768,7 +756,7 @@ watch([() => route.fullPath, dropdownElement], () => {
 
               <div class="column-content">
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-onboarding-page-1' }"
+                  to="/navbar/layouts/onboarding-page-1"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -779,7 +767,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-onboarding-page-2' }"
+                  to="/navbar/layouts/onboarding-page-2"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -790,7 +778,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-onboarding-page-3' }"
+                  to="/navbar/layouts/onboarding-page-3"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -801,7 +789,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-onboarding-page-4' }"
+                  to="/navbar/layouts/onboarding-page-4"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -812,7 +800,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-onboarding-page-5' }"
+                  to="/navbar/layouts/onboarding-page-5"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -841,7 +829,7 @@ watch([() => route.fullPath, dropdownElement], () => {
               </h4>
 
               <div class="column-content" data-simplebar>
-                <RouterLink :to="{ name: 'error-page-1' }" class="dropdown-item is-media">
+                <RouterLink to="/error/page-1" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-cross-circle"></i>
                   </div>
@@ -849,7 +837,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <span>Error Page V1</span>
                   </div>
                 </RouterLink>
-                <RouterLink :to="{ name: 'error-page-2' }" class="dropdown-item is-media">
+                <RouterLink to="/error/page-2" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-cross-circle"></i>
                   </div>
@@ -857,7 +845,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <span>Error Page V2</span>
                   </div>
                 </RouterLink>
-                <RouterLink :to="{ name: 'error-page-3' }" class="dropdown-item is-media">
+                <RouterLink to="/error/page-3" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-cross-circle"></i>
                   </div>
@@ -865,7 +853,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <span>Error Page V3</span>
                   </div>
                 </RouterLink>
-                <RouterLink :to="{ name: 'error-page-4' }" class="dropdown-item is-media">
+                <RouterLink to="/error/page-4" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-cross-circle"></i>
                   </div>
@@ -873,7 +861,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <span>Error Page V4</span>
                   </div>
                 </RouterLink>
-                <RouterLink :to="{ name: 'error-page-5' }" class="dropdown-item is-media">
+                <RouterLink to="/error/page-5" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-cross-circle"></i>
                   </div>
@@ -894,7 +882,7 @@ watch([() => route.fullPath, dropdownElement], () => {
 
               <div class="column-content" data-simplebar>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-placeload-1' }"
+                  to="/navbar/layouts/placeload-1"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -906,7 +894,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-placeload-2' }"
+                  to="/navbar/layouts/placeload-2"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -918,7 +906,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-placeload-3' }"
+                  to="/navbar/layouts/placeload-3"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -930,7 +918,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  :to="{ name: 'navbar-layouts-placeload-4' }"
+                  to="/navbar/layouts/placeload-4"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">

@@ -2,7 +2,7 @@
 import { useHead } from '@vueuse/head'
 import { computed } from 'vue'
 
-import { useRoute } from 'vue-router'
+import { useRoute } from '@vue-router'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 
 const route = useRoute()
@@ -31,15 +31,15 @@ useHead({
           label: 'Vuero',
           hideLabel: true,
           icon: 'feather:home',
-          to: { name: 'index' },
+          to: { name: '/' },
         },
         {
           label: 'Components',
-          to: { name: 'components' },
+          to: { name: '/components/' },
         },
         {
           label: 'VFlexPagination',
-          to: { name: 'components-pagination' },
+          to: { name: '/components/pagination' },
         },
       ]"
     />
