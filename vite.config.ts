@@ -18,7 +18,6 @@ import purgecss from 'rollup-plugin-purgecss'
 const MINIFY = process.env.MINIFY ? process.env.MINIFY === 'true' : true
 const SILENT = process.env.SILENT ? process.env.SILENT === 'true' : false
 const SOURCE_MAP = process.env.SOURCE_MAP ? process.env.SOURCE_MAP === 'true' : false
-// const SITEMAP_HOST = process.env.SITEMAP_HOST || 'http://localhost:3000/'
 const GTM_ID = process.env.GTM_ID ?? ''
 
 /**
