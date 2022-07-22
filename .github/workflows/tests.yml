@@ -2,21 +2,8 @@ name: cssninjaStudio / tests
 
 on:
   workflow_call:
-  pull_request:
-    branches: [main]
-    paths:
-      - ".github/**"
-      - "cypress/**"
-      - "documentation/**"
-      - "json-server/**"
-      - "public/**"
-      - "src/**"
-      - "vite-plugin-vuero-doc/**"
-      - "cypress.json"
-      - "package.json"
-      - "tsconfig.json"
-      - "vite.config.ts"
-      - "yarn.lock"
+  pull_request_review:
+    types: [submitted]
 
 jobs:
   linters:
