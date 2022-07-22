@@ -94,7 +94,7 @@ const onSave = async () => {
               class="avatar"
               src="/images/avatars/svg/vuero-1.svg"
               alt=""
-              @error.once="(event) => onceImageErrored(event, '150x150')"
+              @error.once="onceImageErrored(150)"
             />
             <VFilePond
               v-else

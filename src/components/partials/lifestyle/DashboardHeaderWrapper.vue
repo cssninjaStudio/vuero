@@ -9,7 +9,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
         <img
           src="/demo/photos/faces/girl1.jpg"
           alt=""
-          @error.once="(event) => onceImageErrored(event, '150x150')"
+          @error.once="onceImageErrored(150)"
         />
         <button class="button is-circle">
           <span class="icon is-small">

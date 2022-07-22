@@ -71,7 +71,7 @@ const sidebar = useSidebar()
               class="is-user"
               :src="conversation.avatar"
               alt=""
-              @error.once="(event) => onceImageErrored(event, '150x150')"
+              @error.once="onceImageErrored(150)"
             />
           </div>
         </li>

@@ -39,7 +39,7 @@ const props = withDefaults(
                 class="is-user"
                 :src="conversation.avatar"
                 alt=""
-                @error.once="(event) => onceImageErrored(event, '150x150')"
+                @error.once="onceImageErrored(150)"
               />
             </div>
             <div class="recipient-meta">

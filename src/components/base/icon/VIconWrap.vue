@@ -62,7 +62,7 @@ const isIconify = computed(() => {
       v-if="props.picture"
       :src="props.picture"
       alt=""
-      @error.once="(event) => onceImageErrored(event, '32x32')"
+      @error.once="onceImageErrored(32)"
     />
     <i
       v-else-if="isIconify"

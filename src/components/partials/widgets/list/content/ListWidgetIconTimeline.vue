@@ -25,7 +25,7 @@ const props = withDefaults(
           class="avatar"
           :src="item.picture"
           alt=""
-          @error.once="(event) => onceImageErrored(event, '150x150')"
+          @error.once="onceImageErrored(150)"
         />
         <i v-else aria-hidden="true" class="iconify" :data-icon="item.icon"></i>
       </div>

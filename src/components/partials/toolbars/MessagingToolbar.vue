@@ -90,7 +90,7 @@ const localFlagSrc = computed(() => {
                       class="user-photo"
                       alt=""
                       src="/demo/avatars/7.jpg"
-                      @error.once="(event) => onceImageErrored(event, '150x150')"
+                      @error.once="onceImageErrored(150)"
                     />
                   </div>
                   <div class="user-content">
@@ -108,7 +108,7 @@ const localFlagSrc = computed(() => {
                       class="user-photo"
                       alt=""
                       src="/demo/avatars/12.jpg"
-                      @error.once="(event) => onceImageErrored(event, '150x150')"
+                      @error.once="onceImageErrored(150)"
                     />
                   </div>
                   <div class="user-content">
@@ -126,7 +126,7 @@ const localFlagSrc = computed(() => {
                       class="user-photo"
                       alt=""
                       src="/demo/avatars/13.jpg"
-                      @error.once="(event) => onceImageErrored(event, '150x150')"
+                      @error.once="onceImageErrored(150)"
                     />
                   </div>
                   <div class="user-content">
@@ -144,7 +144,7 @@ const localFlagSrc = computed(() => {
                       class="user-photo"
                       alt=""
                       src="/demo/avatars/25.jpg"
-                      @error.once="(event) => onceImageErrored(event, '150x150')"
+                      @error.once="onceImageErrored(150)"
                     />
                   </div>
                   <div class="user-content">

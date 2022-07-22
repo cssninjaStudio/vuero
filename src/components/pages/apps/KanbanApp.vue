@@ -233,7 +233,7 @@ onMounted(() => {
                         class="task-owner"
                         :src="task.participants[0].picture"
                         alt=""
-                        @error.once="(event) => onceImageErrored(event, '62x62')"
+                        @error.once="onceImageErrored(62)"
                       />
                     </div>
                   </div>

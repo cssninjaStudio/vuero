@@ -128,7 +128,7 @@ onUnmounted(() => {
                     <img
                       :src="restaurant.picture"
                       alt=""
-                      @error.once="(event) => onceImageErrored(event, '800x450')"
+                      @error.once="onceImageErrored(800, 450)"
                     />
                     <div class="timer">
                       <div>
@@ -142,7 +142,7 @@ onUnmounted(() => {
                       <img
                         :src="restaurant.icon"
                         alt=""
-                        @error.once="(event) => onceImageErrored(event, '800x450')"
+                        @error.once="onceImageErrored(800, 450)"
                       />
                     </div>
                     <div class="meta-content">

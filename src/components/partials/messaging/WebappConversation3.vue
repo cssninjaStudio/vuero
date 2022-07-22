@@ -20,21 +20,21 @@ const emit = defineEmits(['toggleMobileConversation'])
           src="/images/avatars/svg/vuero-1.svg"
           alt=""
           data-user-popover="3"
-          @error.once="(event) => onceImageErrored(event, '150x150')"
+          @error.once="onceImageErrored(150)"
         />
         <img
           class="chat-area-profile"
           src="/demo/avatars/13.jpg"
           alt=""
           data-user-popover="6"
-          @error.once="(event) => onceImageErrored(event, '150x150')"
+          @error.once="onceImageErrored(150)"
         />
         <img
           class="chat-area-profile"
           src="/demo/avatars/19.jpg"
           alt=""
           data-user-popover="17"
-          @error.once="(event) => onceImageErrored(event, '150x150')"
+          @error.once="onceImageErrored(150)"
         />
         <span>
           <span>4</span>
@@ -49,7 +49,7 @@ const emit = defineEmits(['toggleMobileConversation'])
             src="/demo/avatars/13.jpg"
             alt=""
             data-user-popover="6"
-            @error.once="(event) => onceImageErrored(event, '150x150')"
+            @error.once="onceImageErrored(150)"
           />
           <div class="chat-msg-date">Sent at 4:15pm</div>
         </div>
@@ -59,7 +59,7 @@ const emit = defineEmits(['toggleMobileConversation'])
             <img
               src="/demo/photos/demo-apps/1.jpg"
               alt=""
-              @error.once="(event) => onceImageErrored(event, '400x300')"
+              @error.once="onceImageErrored(400, 300)"
             />
           </div>
           <div class="chat-msg-text">
@@ -74,7 +74,7 @@ const emit = defineEmits(['toggleMobileConversation'])
             src="/images/avatars/svg/vuero-1.svg"
             alt=""
             data-user-popover="3"
-            @error.once="(event) => onceImageErrored(event, '150x150')"
+            @error.once="onceImageErrored(150)"
           />
           <div class="chat-msg-date">Sent at 4:15pm</div>
         </div>
@@ -90,7 +90,7 @@ const emit = defineEmits(['toggleMobileConversation'])
             src="/demo/avatars/19.jpg"
             alt=""
             data-user-popover="17"
-            @error.once="(event) => onceImageErrored(event, '150x150')"
+            @error.once="onceImageErrored(150)"
           />
           <div class="chat-msg-date">Sent at 4:27pm</div>
         </div>
@@ -112,7 +112,7 @@ const emit = defineEmits(['toggleMobileConversation'])
             src="/images/avatars/svg/vuero-1.svg"
             alt=""
             data-user-popover="3"
-            @error.once="(event) => onceImageErrored(event, '150x150')"
+            @error.once="onceImageErrored(150)"
           />
           <div class="chat-msg-date">Sent at 4:31pm</div>
         </div>
@@ -128,7 +128,7 @@ const emit = defineEmits(['toggleMobileConversation'])
             src="/demo/avatars/12.jpg"
             alt=""
             data-user-popover="2"
-            @error.once="(event) => onceImageErrored(event, '150x150')"
+            @error.once="onceImageErrored(150)"
           />
           <div class="chat-msg-date">Sent at 4:32pm</div>
         </div>
@@ -143,7 +143,7 @@ const emit = defineEmits(['toggleMobileConversation'])
             src="/demo/avatars/7.jpg"
             alt=""
             data-user-popover="0"
-            @error.once="(event) => onceImageErrored(event, '150x150')"
+            @error.once="onceImageErrored(150)"
           />
           <div class="chat-msg-date">Sent at 4:32pm</div>
         </div>
@@ -161,7 +161,7 @@ const emit = defineEmits(['toggleMobileConversation'])
             src="/images/avatars/svg/vuero-1.svg"
             alt=""
             data-user-popover="3"
-            @error.once="(event) => onceImageErrored(event, '150x150')"
+            @error.once="onceImageErrored(150)"
           />
           <div class="chat-msg-date">Sent at 4:33pm</div>
         </div>
@@ -179,7 +179,7 @@ const emit = defineEmits(['toggleMobileConversation'])
             src="/demo/avatars/32.jpg"
             alt=""
             data-user-popover="28"
-            @error.once="(event) => onceImageErrored(event, '150x150')"
+            @error.once="onceImageErrored(150)"
           />
           <div class="chat-msg-date">Sent at 4:39pm</div>
         </div>

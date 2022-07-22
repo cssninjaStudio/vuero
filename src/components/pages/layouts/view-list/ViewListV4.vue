@@ -123,7 +123,7 @@ const filteredData = computed(() => {
                   class="avatar"
                   :src="item.icon"
                   alt=""
-                  @error.once="(event) => onceImageErrored(event, '150x150')"
+                  @error.once="onceImageErrored(150)"
                 />
                 <div class="meta-left">
                   <h3>
@@ -131,7 +131,7 @@ const filteredData = computed(() => {
                       class="avatar"
                       :src="item.author.avatar"
                       alt=""
-                      @error.once="(event) => onceImageErrored(event, '150x150')"
+                      @error.once="onceImageErrored(150)"
                     />
                     <span>{{ item.author.name }}</span>
                   </h3>

@@ -38,7 +38,7 @@ const dropdown = useDropdown(dropdownElement)
                   class="user-photo"
                   alt=""
                   src="/images/avatars/svg/vuero-4.svg"
-                  @error.once="(event) => onceImageErrored(event, '150x150')"
+                  @error.once="onceImageErrored(150)"
                 />
               </div>
               <div class="user-content">
@@ -56,7 +56,7 @@ const dropdown = useDropdown(dropdownElement)
                   class="user-photo"
                   alt=""
                   src="/images/avatars/svg/vuero-2.svg"
-                  @error.once="(event) => onceImageErrored(event, '150x150')"
+                  @error.once="onceImageErrored(150)"
                 />
               </div>
               <div class="user-content">
@@ -74,7 +74,7 @@ const dropdown = useDropdown(dropdownElement)
                   class="user-photo"
                   alt=""
                   src="/images/avatars/svg/vuero-5.svg"
-                  @error.once="(event) => onceImageErrored(event, '150x150')"
+                  @error.once="onceImageErrored(150)"
                 />
               </div>
               <div class="user-content">
@@ -92,7 +92,7 @@ const dropdown = useDropdown(dropdownElement)
                   class="user-photo"
                   alt=""
                   src="/images/avatars/svg/vuero-9.svg"
-                  @error.once="(event) => onceImageErrored(event, '150x150')"
+                  @error.once="onceImageErrored(150)"
                 />
               </div>
               <div class="user-content">

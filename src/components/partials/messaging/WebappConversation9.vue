@@ -20,7 +20,7 @@ const emit = defineEmits(['toggleMobileConversation'])
           src="/demo/avatars/22.jpg"
           alt=""
           data-user-popover="5"
-          @error.once="(event) => onceImageErrored(event, '150x150')"
+          @error.once="onceImageErrored(150)"
         />
       </div>
     </div>
@@ -32,7 +32,7 @@ const emit = defineEmits(['toggleMobileConversation'])
             src="/demo/avatars/22.jpg"
             alt=""
             data-user-popover="5"
-            @error.once="(event) => onceImageErrored(event, '150x150')"
+            @error.once="onceImageErrored(150)"
           />
           <div class="chat-msg-date">Sent at 9:12am</div>
         </div>
@@ -48,7 +48,7 @@ const emit = defineEmits(['toggleMobileConversation'])
             src="/images/avatars/svg/vuero-1.svg"
             alt=""
             data-user-popover="3"
-            @error.once="(event) => onceImageErrored(event, '150x150')"
+            @error.once="onceImageErrored(150)"
           />
           <div class="chat-msg-date">Sent at 9:13am</div>
         </div>

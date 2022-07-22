@@ -115,7 +115,7 @@ const filteredData = computed(() => {
                     class="media"
                     :src="item.picture"
                     alt=""
-                    @error.once="(event) => onceImageErrored(event, '150x110')"
+                    @error.once="onceImageErrored(150, 110)"
                   />
                   <div>
                     <span class="item-name dark-inverted">{{ item.name }}</span>

@@ -1219,7 +1219,7 @@ fieldset[disabled] .button {
   border-color: rgb(230, 41, 100);
 }
 
-.select:not(.is-multiple, .is-loading)::after {
+.select:not(.is-multiple):not(.is-loading)::after {
   border-color: rgb(72, 95, 199);
 }
 

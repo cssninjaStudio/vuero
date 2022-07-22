@@ -80,7 +80,7 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
               <img
                 src="/demo/photos/11.jpg"
                 alt=""
-                @error.once="(event) => onceImageErrored(event, '400x300')"
+                @error.once="onceImageErrored(400, 300)"
               />
               <div class="meta">
                 <div class="tile-title">
@@ -109,7 +109,7 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
               <img
                 src="/demo/photos/12.jpg"
                 alt=""
-                @error.once="(event) => onceImageErrored(event, '400x300')"
+                @error.once="onceImageErrored(400, 300)"
               />
               <div class="meta">
                 <div class="tile-title">
@@ -138,7 +138,7 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
               <img
                 src="/demo/photos/13.jpg"
                 alt=""
-                @error.once="(event) => onceImageErrored(event, '400x300')"
+                @error.once="onceImageErrored(400, 300)"
               />
               <div class="meta">
                 <div class="tile-title">
@@ -172,7 +172,7 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
                   <img
                     src="/demo/photos/14.jpg"
                     alt=""
-                    @error.once="(event) => onceImageErrored(event, '400x300')"
+                    @error.once="onceImageErrored(400, 300)"
                   />
                   <div class="meta">
                     <div class="tile-title">
@@ -199,7 +199,7 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
                   <img
                     src="/demo/photos/15.jpg"
                     alt=""
-                    @error.once="(event) => onceImageErrored(event, '400x300')"
+                    @error.once="onceImageErrored(400, 300)"
                   />
                   <div class="meta">
                     <div class="tile-title">
@@ -228,7 +228,7 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
                   <img
                     src="/demo/photos/16.jpg"
                     alt=""
-                    @error.once="(event) => onceImageErrored(event, '400x300')"
+                    @error.once="onceImageErrored(400, 300)"
                   />
                   <div class="meta">
                     <div class="tile-title">
@@ -258,7 +258,7 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
                 <img
                   src="/demo/photos/18.jpg"
                   alt=""
-                  @error.once="(event) => onceImageErrored(event, '400x300')"
+                  @error.once="onceImageErrored(400, 300)"
                 />
                 <div class="meta">
                   <div class="tile-title">
@@ -292,7 +292,7 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
               <img
                 src="/demo/photos/19.jpg"
                 alt=""
-                @error.once="(event) => onceImageErrored(event, '400x300')"
+                @error.once="onceImageErrored(400, 300)"
               />
               <div class="meta">
                 <div class="tile-title">
@@ -328,7 +328,7 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
               <img
                 src="/demo/photos/20.jpg"
                 alt=""
-                @error.once="(event) => onceImageErrored(event, '400x300')"
+                @error.once="onceImageErrored(400, 300)"
               />
               <div class="meta">
                 <div class="tile-title">
@@ -357,7 +357,7 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
               <img
                 src="/demo/photos/23.jpg"
                 alt=""
-                @error.once="(event) => onceImageErrored(event, '400x300')"
+                @error.once="onceImageErrored(400, 300)"
               />
               <div class="meta">
                 <div class="tile-title">
@@ -389,7 +389,7 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
               <img
                 src="/demo/photos/22.jpg"
                 alt=""
-                @error.once="(event) => onceImageErrored(event, '400x300')"
+                @error.once="onceImageErrored(400, 300)"
               />
               <div class="meta">
                 <div class="tile-title">
@@ -418,7 +418,7 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
               <img
                 src="/demo/photos/24.jpg"
                 alt=""
-                @error.once="(event) => onceImageErrored(event, '400x300')"
+                @error.once="onceImageErrored(400, 300)"
               />
               <div class="meta">
                 <div class="tile-title">
@@ -447,7 +447,7 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
               <img
                 src="/demo/photos/27.jpg"
                 alt=""
-                @error.once="(event) => onceImageErrored(event, '400x300')"
+                @error.once="onceImageErrored(400, 300)"
               />
               <div class="meta">
                 <div class="tile-title">

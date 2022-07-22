@@ -69,7 +69,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                     <img
                       src="/demo/photos/brands/airbnb.svg"
                       alt=""
-                      @error.once="(event) => onceImageErrored(event, '150x150')"
+                      @error.once="onceImageErrored(150)"
                     />
                     <div class="meta">
                       <span class="dark-inverted">Airbnb HQ</span>
@@ -85,7 +85,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                     <img
                       src="/demo/photos/brands/facebook.svg"
                       alt=""
-                      @error.once="(event) => onceImageErrored(event, '150x150')"
+                      @error.once="onceImageErrored(150)"
                     />
                     <div class="meta">
                       <span class="dark-inverted">Facebook</span>
@@ -101,7 +101,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                     <img
                       src="/demo/photos/brands/atlassian.svg"
                       alt=""
-                      @error.once="(event) => onceImageErrored(event, '150x150')"
+                      @error.once="onceImageErrored(150)"
                     />
                     <div class="meta">
                       <span class="dark-inverted">Atlassian</span>
@@ -117,7 +117,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                     <img
                       src="/demo/photos/brands/github.svg"
                       alt=""
-                      @error.once="(event) => onceImageErrored(event, '150x150')"
+                      @error.once="onceImageErrored(150)"
                     />
                     <div class="meta">
                       <span class="dark-inverted">Github</span>

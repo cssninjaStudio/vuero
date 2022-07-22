@@ -42,7 +42,7 @@ useHead({
               <img
                 src="/demo/photos/animaticons/lightbulb.gif"
                 alt=""
-                @error.once="(event) => onceImageErrored(event, '150x150')"
+                @error.once="onceImageErrored(150)"
               />
             </div>
             <div class="progress-wrap">
@@ -66,7 +66,7 @@ useHead({
               <img
                 src="/demo/photos/animaticons/image.gif"
                 alt=""
-                @error.once="(event) => onceImageErrored(event, '150x150')"
+                @error.once="onceImageErrored(150)"
               />
             </div>
             <div class="progress-wrap">
@@ -90,7 +90,7 @@ useHead({
               <img
                 src="/demo/photos/animaticons/search.gif"
                 alt=""
-                @error.once="(event) => onceImageErrored(event, '150x150')"
+                @error.once="onceImageErrored(150)"
               />
             </div>
             <div class="progress-wrap">
@@ -114,7 +114,7 @@ useHead({
               <img
                 src="/demo/photos/animaticons/diamond.gif"
                 alt=""
-                @error.once="(event) => onceImageErrored(event, '150x150')"
+                @error.once="onceImageErrored(150)"
               />
             </div>
             <div class="progress-wrap">
@@ -138,7 +138,7 @@ useHead({
               <img
                 src="/demo/photos/animaticons/chart.gif"
                 alt=""
-                @error.once="(event) => onceImageErrored(event, '150x150')"
+                @error.once="onceImageErrored(150)"
               />
             </div>
             <div class="progress-wrap">
@@ -162,7 +162,7 @@ useHead({
               <img
                 src="/demo/photos/animaticons/rocket.gif"
                 alt=""
-                @error.once="(event) => onceImageErrored(event, '150x150')"
+                @error.once="onceImageErrored(150)"
               />
             </div>
             <div class="progress-wrap">
@@ -186,7 +186,7 @@ useHead({
               <img
                 src="/demo/photos/animaticons/check.gif"
                 alt=""
-                @error.once="(event) => onceImageErrored(event, '150x150')"
+                @error.once="onceImageErrored(150)"
               />
             </div>
             <div class="progress-wrap">

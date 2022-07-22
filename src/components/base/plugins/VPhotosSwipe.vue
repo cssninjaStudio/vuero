@@ -327,9 +327,7 @@ const resetAngle = () => {
           :src="item.thumbnail"
           :alt="item.alt"
           itemprop="thumbnail"
-          @error.once="
-            (event) => onceImageErrored(event, `${item.w || '100'}x${item.h || '100'}`)
-          "
+          @error.once="onceImageErrored(item.w, item.h)"
         />
       </a>
     </figure>

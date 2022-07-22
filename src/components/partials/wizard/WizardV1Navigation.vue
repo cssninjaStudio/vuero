@@ -129,7 +129,7 @@ const wizard = useWizard()
             class="avatar"
             src="/images/avatars/svg/vuero-1.svg"
             alt=""
-            @error.once="(event) => onceImageErrored(event, '150x150')"
+            @error.once="onceImageErrored(150)"
           />
         </div>
         <i aria-hidden="true" class="iconify" data-icon="feather:chevron-down"></i>

@@ -278,11 +278,7 @@ onUnmounted(() => {
                 <div ref="sliderElement" class="avatar-carousel resized-mobile">
                   <div v-for="(avatar, key) in avatars" :key="key" class="carousel-item">
                     <div class="image-wrapper">
-                      <img
-                        :src="avatar"
-                        alt=""
-                        @error.once="(event) => onceImageErrored(event, '150x150')"
-                      />
+                      <img :src="avatar" alt="" @error.once="onceImageErrored(150)" />
                     </div>
                   </div>
                 </div>

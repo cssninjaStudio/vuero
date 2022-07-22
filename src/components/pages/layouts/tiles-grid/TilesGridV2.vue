@@ -88,11 +88,7 @@ const optionsSingle = [
         <div v-for="item in filteredData" :key="item.id" class="column is-4">
           <div class="tile-grid-item">
             <div class="tile-grid-item-inner">
-              <img
-                :src="item.icon"
-                alt=""
-                @error.once="(event) => onceImageErrored(event, '150x150')"
-              />
+              <img :src="item.icon" alt="" @error.once="onceImageErrored(150)" />
               <div class="meta">
                 <span class="dark-inverted">{{ item.name }}</span>
                 <span>

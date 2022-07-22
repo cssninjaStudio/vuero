@@ -121,7 +121,7 @@ const optionsSingle = [
                   <img
                     :src="item.image"
                     alt=""
-                    @error.once="(event) => onceImageErrored(event, '1280x960')"
+                    @error.once="onceImageErrored(1280, 960)"
                   />
                 </figure>
               </div>

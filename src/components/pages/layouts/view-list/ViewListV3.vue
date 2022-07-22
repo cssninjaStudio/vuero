@@ -104,7 +104,7 @@ const filteredData = computed(() => {
                     class="avatar"
                     :src="item.logo"
                     alt=""
-                    @error.once="(event) => onceImageErrored(event, '150x150')"
+                    @error.once="onceImageErrored(150)"
                   />
                   <div class="meta-left">
                     <h3>

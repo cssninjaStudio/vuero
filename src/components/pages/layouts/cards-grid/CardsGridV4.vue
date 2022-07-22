@@ -80,11 +80,7 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
         <!--Grid item-->
         <div v-for="item in filteredData" :key="item.id" class="column is-3">
           <a href="#" class="card-grid-item">
-            <img
-              :src="item.image"
-              alt=""
-              @error.once="(event) => onceImageErrored(event, '400x300')"
-            />
+            <img :src="item.image" alt="" @error.once="onceImageErrored(400, 300)" />
             <div class="card-grid-item-content">
               <h3 class="dark-inverted">
                 {{ item.title }}

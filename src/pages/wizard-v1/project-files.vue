@@ -304,11 +304,7 @@ watch(previewTemplate, () => {
             <div class="preview-box">
               <!-- This is used as the file preview template -->
               <div class="preview">
-                <img
-                  data-dz-thumbnail
-                  alt=""
-                  @error.once="(event) => onceImageErrored(event, '150x150')"
-                />
+                <img data-dz-thumbnail alt="" @error.once="onceImageErrored(150)" />
               </div>
               <div class="list-item-meta">
                 <p class="name" data-dz-name></p>

@@ -20,7 +20,7 @@ const emit = defineEmits(['toggleMobileConversation'])
           src="/demo/avatars/13.jpg"
           alt=""
           data-user-popover="6"
-          @error.once="(event) => onceImageErrored(event, '150x150')"
+          @error.once="onceImageErrored(150)"
         />
       </div>
     </div>
@@ -32,7 +32,7 @@ const emit = defineEmits(['toggleMobileConversation'])
             src="/demo/avatars/13.jpg"
             alt=""
             data-user-popover="6"
-            @error.once="(event) => onceImageErrored(event, '150x150')"
+            @error.once="onceImageErrored(150)"
           />
           <div class="chat-msg-date">Sent at 7:48pm</div>
         </div>
@@ -42,21 +42,21 @@ const emit = defineEmits(['toggleMobileConversation'])
             <img
               src="/demo/photos/apps/15.png"
               alt=""
-              @error.once="(event) => onceImageErrored(event, '400x300')"
+              @error.once="onceImageErrored(400, 300)"
             />
           </div>
           <div class="chat-msg-text">
             <img
               src="/demo/photos/apps/9.png"
               alt=""
-              @error.once="(event) => onceImageErrored(event, '400x300')"
+              @error.once="onceImageErrored(400, 300)"
             />
           </div>
           <div class="chat-msg-text">
             <img
               src="/demo/photos/apps/7.png"
               alt=""
-              @error.once="(event) => onceImageErrored(event, '400x300')"
+              @error.once="onceImageErrored(400, 300)"
             />
           </div>
           <div class="chat-msg-text">Hope you like them.</div>
@@ -69,7 +69,7 @@ const emit = defineEmits(['toggleMobileConversation'])
             src="/images/avatars/svg/vuero-1.svg"
             alt=""
             data-user-popover="3"
-            @error.once="(event) => onceImageErrored(event, '150x150')"
+            @error.once="onceImageErrored(150)"
           />
           <div class="chat-msg-date">Sent at 10:21pm</div>
         </div>

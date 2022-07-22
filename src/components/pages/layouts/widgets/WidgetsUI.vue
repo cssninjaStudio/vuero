@@ -233,7 +233,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
           <img
             src="/demo/photos/widgets/2.jpg"
             alt=""
-            @error.once="(event) => onceImageErrored(event, '400x300')"
+            @error.once="onceImageErrored(400, 300)"
           />
           <div class="progress-wrap">
             <progress class="progress is-primary is-tiny" max="100">55%</progress>

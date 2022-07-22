@@ -20,14 +20,14 @@ const chat = useChat()
           id="user-details-image"
           :src="chat.selectedConversation.avatar"
           alt=""
-          @error="(event) => onceImageErrored(event, '150x150')"
+          @error="onceImageErrored(150)"
         />
         <img
           id="user-details-badge"
           class="is-badge"
           src="/images/icons/flags/united-states-of-america.svg"
           alt=""
-          @error.once="(event) => onceImageErrored(event, '150x150')"
+          @error.once="onceImageErrored(150)"
         />
       </div>
       <h4 v-if="chat.selectedConversation.name" class="user-name">
@@ -74,62 +74,62 @@ const chat = useChat()
           <img
             src="/demo/photos/demo-apps/1.jpg"
             alt=""
-            @error.once="(event) => onceImageErrored(event, '1600x900')"
+            @error.once="onceImageErrored(1600, 900)"
           />
           <img
             src="/demo/photos/demo-apps/2.jpg"
             alt=""
-            @error.once="(event) => onceImageErrored(event, '1600x900')"
+            @error.once="onceImageErrored(1600, 900)"
           />
           <img
             src="/demo/photos/demo-apps/3.jpg"
             alt=""
-            @error.once="(event) => onceImageErrored(event, '1600x900')"
+            @error.once="onceImageErrored(1600, 900)"
           />
           <img
             src="/demo/photos/demo-apps/4.jpg"
             alt=""
-            @error.once="(event) => onceImageErrored(event, '1600x900')"
+            @error.once="onceImageErrored(1600, 900)"
           />
           <img
             src="/demo/photos/demo-apps/5.jpg"
             alt=""
-            @error.once="(event) => onceImageErrored(event, '1600x900')"
+            @error.once="onceImageErrored(1600, 900)"
           />
           <img
             src="/demo/photos/demo-apps/6.jpg"
             alt=""
-            @error.once="(event) => onceImageErrored(event, '1600x900')"
+            @error.once="onceImageErrored(1600, 900)"
           />
           <img
             src="/demo/photos/demo-apps/7.jpg"
             alt=""
-            @error.once="(event) => onceImageErrored(event, '1600x900')"
+            @error.once="onceImageErrored(1600, 900)"
           />
           <img
             src="/demo/photos/demo-apps/8.jpg"
             alt=""
-            @error.once="(event) => onceImageErrored(event, '1600x900')"
+            @error.once="onceImageErrored(1600, 900)"
           />
           <img
             src="/demo/photos/demo-apps/9.jpg"
             alt=""
-            @error.once="(event) => onceImageErrored(event, '1600x900')"
+            @error.once="onceImageErrored(1600, 900)"
           />
           <img
             src="/demo/photos/demo-apps/10.jpg"
             alt=""
-            @error.once="(event) => onceImageErrored(event, '1600x900')"
+            @error.once="onceImageErrored(1600, 900)"
           />
           <img
             src="/demo/photos/demo-apps/11.jpg"
             alt=""
-            @error.once="(event) => onceImageErrored(event, '1600x900')"
+            @error.once="onceImageErrored(1600, 900)"
           />
           <img
             src="/demo/photos/demo-apps/12.jpg"
             alt=""
-            @error.once="(event) => onceImageErrored(event, '1600x900')"
+            @error.once="onceImageErrored(1600, 900)"
           />
         </div>
         <a class="view-more">View More</a>

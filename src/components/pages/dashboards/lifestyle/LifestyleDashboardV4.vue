@@ -169,7 +169,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                   <img
                     src="/demo/photos/38.jpg"
                     alt=""
-                    @error.once="(event) => onceImageErrored(event, '800x600')"
+                    @error.once="onceImageErrored(800, 600)"
                   />
                 </div>
                 <div class="featured-content">
@@ -189,7 +189,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                   <img
                     src="/demo/photos/37.jpg"
                     alt=""
-                    @error.once="(event) => onceImageErrored(event, '800x600')"
+                    @error.once="onceImageErrored(800, 600)"
                   />
                 </div>
                 <div class="featured-content">

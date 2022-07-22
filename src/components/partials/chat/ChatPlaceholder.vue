@@ -8,7 +8,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
       <img
         src="/@src/assets/illustrations/placeholders/having-coffee.svg"
         alt=""
-        @error.once="(event) => onceImageErrored(event, '150x150')"
+        @error.once="onceImageErrored(150)"
       />
       <div class="text">
         <h3>Nothing to show</h3>

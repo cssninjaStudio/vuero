@@ -13,12 +13,7 @@ const props = defineProps<{
   <div class="widget call-widget" :class="[props.straight && 'is-straight']">
     <div class="img-container">
       <img class="main" :src="props.picture" alt="" />
-      <img
-        class="badge"
-        :src="props.badge"
-        alt=""
-        @error.once="(event) => onceImageErrored(event, '150x150')"
-      />
+      <img class="badge" :src="props.badge" alt="" @error.once="onceImageErrored(150)" />
     </div>
     <h3>Call {{ props.username }}?</h3>
     <div class="actions">

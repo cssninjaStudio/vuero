@@ -58,7 +58,7 @@ const props = withDefaults(defineProps<VAvatarProps>(), {
         :class="[props.squared && 'is-squared', props.pictureDark && 'light-image']"
         :src="props.picture"
         alt=""
-        @error.once="(event) => onceImageErrored(event, '150x150')"
+        @error.once="onceImageErrored(150)"
       />
       <span
         v-else
@@ -73,7 +73,7 @@ const props = withDefaults(defineProps<VAvatarProps>(), {
         :class="[props.squared && 'is-squared']"
         :src="props.pictureDark"
         alt=""
-        @error.once="(event) => onceImageErrored(event, '150x150')"
+        @error.once="onceImageErrored(150)"
       />
     </slot>
 
@@ -83,7 +83,7 @@ const props = withDefaults(defineProps<VAvatarProps>(), {
         class="badge"
         :src="props.badge"
         alt=""
-        @error.once="(event) => onceImageErrored(event, '150x150')"
+        @error.once="onceImageErrored(150)"
       />
     </slot>
   </div>

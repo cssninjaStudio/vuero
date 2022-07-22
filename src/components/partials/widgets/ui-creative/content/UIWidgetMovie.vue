@@ -17,11 +17,7 @@ const props = withDefaults(
 
 <template>
   <div class="widget-content">
-    <img
-      :src="props.picture"
-      alt=""
-      @error.once="(event) => onceImageErrored(event, '400x300')"
-    />
+    <img :src="props.picture" alt="" @error.once="onceImageErrored(400, 300)" />
     <div class="widget-meta">
       <i aria-hidden="true" class="iconify" data-icon="feather:play-circle"></i>
       <h4>{{ props.title }}</h4>
