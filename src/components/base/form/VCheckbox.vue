@@ -11,6 +11,7 @@ export interface VCheckboxProps {
   color?: VCheckboxColor
   trueValue?: any
   falseValue?: any
+  value?: any
   modelValue?: any
   circle?: boolean
   solid?: boolean
@@ -24,6 +25,7 @@ const props = withDefaults(defineProps<VCheckboxProps>(), {
   color: undefined,
   trueValue: true,
   falseValue: false,
+  value: undefined,
   modelValue: false,
   circle: false,
   solid: false,
@@ -66,6 +68,7 @@ watch(
       v-bind="$attrs"
       :true-value="props.trueValue"
       :false-value="props.falseValue"
+      :value="props.value"
       type="checkbox"
     />
     <span></span>

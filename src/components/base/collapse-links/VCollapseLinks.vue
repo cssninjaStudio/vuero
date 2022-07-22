@@ -1,4 +1,6 @@
 <script lang="ts">
+import { Transition } from 'vue'
+
 export default defineComponent({
   props: {
     open: {

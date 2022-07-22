@@ -146,12 +146,10 @@ const VFocus = {
 
         <a
           v-else
-          class="
-          is-overlay m-3 is-flex is-align-items-center
-          is-clickable edit-icon-link"
+          class="is-overlay m-3 is-flex is-align-items-center is-clickable edit-icon-link"
           tabindex="0"
           @click="editCompanyIndex = index"
-          @focus="editCompanyIndex = index"
+          @keydown.enter="editCompanyIndex = index"
         >
           {{ value }}
           <i

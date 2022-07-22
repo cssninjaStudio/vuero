@@ -45,7 +45,7 @@ function toggleSelection() {
   if (isAllSelected.value) {
     selectedRows.value = []
   } else {
-    selectedRows.value = flexRowsContacts.map((_, index) => index)
+    selectedRows.value = flexRowsContacts.map((item) => item.id)
   }
 }
 function clickOnRow(row: any) {
@@ -118,7 +118,7 @@ function contactUser(row: any) {
               <VCheckbox
                 v-if="column.key === 'select'"
                 v-model="selectedRows"
-                :value-true="row.id"
+                :value="row.id"
                 name="selection"
                 square
               />
@@ -205,7 +205,7 @@ function contactUser(row: any) {
               <VCheckbox
                 v-if="column.key === 'select'"
                 v-model="selectedRows"
-                :value-true="row.id"
+                :value="row.id"
                 name="selection"
                 square
               />
@@ -254,7 +254,7 @@ function contactUser(row: any) {
               <VCheckbox
                 v-if="column.key === 'select'"
                 v-model="selectedRows"
-                :value-true="row.id"
+                :value="row.id"
                 name="selection"
                 square
               />
@@ -311,7 +311,7 @@ function contactUser(row: any) {
               <VCheckbox
                 v-if="column.key === 'select'"
                 v-model="selectedRows"
-                :value-true="row.id"
+                :value="row.id"
                 name="selection"
                 square
               />
