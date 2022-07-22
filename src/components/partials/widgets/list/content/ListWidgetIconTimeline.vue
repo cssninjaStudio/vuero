@@ -177,7 +177,7 @@ const props = withDefaults(
           border-color: var(--dark-sidebar-light-12) !important;
         }
 
-        .timeline-icon:not(.is-primary):not(.is-info):not(.is-success):not(.is-orange):not(.is-yellow) {
+        .timeline-icon:not(.is-primary, .is-info, .is-success, .is-orange, .is-yellow) {
           background: var(--dark-sidebar-light-3) !important;
           border-color: var(--dark-sidebar-light-12) !important;
         }

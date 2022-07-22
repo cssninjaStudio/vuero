@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { onMounted } from 'vue'
 import ApexChart from 'vue3-apexcharts'
 
 import { sharingOptions } from '/@src/data/dashboards/company/sharingChart'

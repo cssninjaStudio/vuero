@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { computed, reactive } from 'vue'
 import { useVFieldContext } from '/@src/composable/useVFieldContext'
 
 export interface VLabelProps {

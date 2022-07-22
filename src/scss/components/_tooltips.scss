@@ -832,7 +832,7 @@
 ========================================================================== */
 
 .is-dark {
-  .hint--top-left:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
+  .hint--top-left:not(.hint--light, .hint--info, .hint--success, .hint--warning, .hint--error, .hint--bubble, .hint--primary) {
     &::after {
       background: var(--dark-sidebar-dark-4) !important;
     }
@@ -842,7 +842,7 @@
     }
   }
 
-  .hint--top-right:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
+  .hint--top-right:not(.hint--light, .hint--info, .hint--success, .hint--warning, .hint--error, .hint--bubble, .hint--primary) {
     &::after {
       background: var(--dark-sidebar-dark-4) !important;
     }
@@ -852,7 +852,7 @@
     }
   }
 
-  .hint--top:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
+  .hint--top:not(.hint--light, .hint--info, .hint--success, .hint--warning, .hint--error, .hint--bubble, .hint--primary) {
     &::after {
       background: var(--dark-sidebar-dark-4) !important;
     }
@@ -862,7 +862,7 @@
     }
   }
 
-  .hint--bottom-left:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
+  .hint--bottom-left:not(.hint--light, .hint--info, .hint--success, .hint--warning, .hint--error, .hint--bubble, .hint--primary) {
     &::after {
       background: var(--dark-sidebar-dark-4) !important;
     }
@@ -872,7 +872,7 @@
     }
   }
 
-  .hint--bottom-right:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
+  .hint--bottom-right:not(.hint--light, .hint--info, .hint--success, .hint--warning, .hint--error, .hint--bubble, .hint--primary) {
     &::after {
       background: var(--dark-sidebar-dark-4) !important;
     }
@@ -882,7 +882,7 @@
     }
   }
 
-  .hint--bottom:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
+  .hint--bottom:not(.hint--light, .hint--info, .hint--success, .hint--warning, .hint--error, .hint--bubble, .hint--primary) {
     &::after {
       background: var(--dark-sidebar-dark-4) !important;
     }
@@ -892,7 +892,7 @@
     }
   }
 
-  .hint--left:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
+  .hint--left:not(.hint--light, .hint--info, .hint--success, .hint--warning, .hint--error, .hint--bubble, .hint--primary) {
     &::after {
       background: var(--dark-sidebar-dark-4) !important;
     }
@@ -902,7 +902,7 @@
     }
   }
 
-  .hint--right:not(.hint--light):not(.hint--info):not(.hint--success):not(.hint--warning):not(.hint--error):not(.hint--bubble):not(.hint--primary) {
+  .hint--right:not(.hint--light, .hint--info, .hint--success, .hint--warning, .hint--error, .hint--bubble, .hint--primary) {
     &::after {
       background: var(--dark-sidebar-dark-4) !important;
     }

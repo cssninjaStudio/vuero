@@ -1,7 +1,6 @@
 <script lang="ts">
-import type { PropType, ComponentPropsOptions, EmitsOptions } from 'vue'
 import type { FilePondEvent, FilePondOptions } from 'filepond'
-import { onMounted, onUnmounted, ref, defineComponent, h } from 'vue'
+
 import * as FilePond from 'filepond'
 import FilePondPluginFileValidateSize from 'filepond-plugin-file-validate-size'
 import FilePondPluginFileValidateType from 'filepond-plugin-file-validate-type'

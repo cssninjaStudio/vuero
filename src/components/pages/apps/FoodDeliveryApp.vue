@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import type { TinySliderInstance } from 'tiny-slider/src/tiny-slider'
 import { tns } from 'tiny-slider/src/tiny-slider'
-import { ref, onMounted, onUnmounted } from 'vue'
 
 import FoodWidget from '/@src/assets/illustrations/dashboards/food/widget.svg'
 

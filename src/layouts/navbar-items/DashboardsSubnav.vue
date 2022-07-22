@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-
 type TabId = 'dashboards' | 'templates'
 const activeTab = ref<TabId>('dashboards')
 </script>

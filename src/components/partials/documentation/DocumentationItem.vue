@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { ref, useSlots, computed } from 'vue'
-
 const slots = useSlots()
 
 const hasCodeSample = computed(() => !!slots.code?.())

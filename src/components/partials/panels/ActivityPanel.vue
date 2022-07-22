@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue'
 import { usePanels } from '/@src/stores/panels'
 import { onceImageErrored } from '/@src/utils/via-placeholder'
 

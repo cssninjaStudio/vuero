@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { ref, onUpdated, useSlots } from 'vue'
-
 export type VCardMediaFormat = '4by3' | '16by9'
 export interface VCardMediaProps {
   title: string

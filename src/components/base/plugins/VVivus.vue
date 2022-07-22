@@ -1,6 +1,5 @@
 <script lang="ts">
 import Vivus from 'vivus'
-import { defineComponent, h, ref, watchEffect } from 'vue'
 
 export default defineComponent({
   props: {

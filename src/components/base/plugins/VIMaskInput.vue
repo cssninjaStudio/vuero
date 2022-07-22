@@ -1,7 +1,6 @@
 <script lang="ts">
 import type { InputMask, AnyMaskedOptions } from 'imask'
-import type { PropType } from 'vue'
-import { ref, shallowRef, watch, onUnmounted, h, defineComponent } from 'vue'
+
 import IMask from 'imask'
 
 export default defineComponent({

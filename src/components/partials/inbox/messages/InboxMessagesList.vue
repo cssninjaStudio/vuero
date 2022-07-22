@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { ref, watchEffect } from 'vue'
-
 const emit = defineEmits<{
   (e: 'update:conversationId', value: number): void
   (e: 'update:selectedConversationList', value: number[]): void

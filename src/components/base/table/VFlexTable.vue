@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import type { VNode } from 'vue'
-import { toRaw, computed, reactive, isReactive, inject } from 'vue'
-
 import { flewTableWrapperSymbol } from './VFlexTableWrapper.vue'
 
 export interface VFlexTableColumn {

@@ -3,8 +3,6 @@ let instances = 0
 </script>
 
 <script setup lang="ts">
-import { computed, ref, watchEffect } from 'vue'
-
 export type VAnimatedCheckboxColor =
   | 'primary'
   | 'info'

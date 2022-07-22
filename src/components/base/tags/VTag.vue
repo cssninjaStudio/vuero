@@ -246,7 +246,7 @@ const props = withDefaults(defineProps<VTagProps>(), {
 
 .is-dark {
   .tag {
-    &:not(.is-primary):not(.is-secondary):not(.is-success):not(.is-info):not(.is-warning):not(.is-danger):not(.is-orange):not(.is-green):not(.is-blue):not(.is-purple) {
+    &:not(.is-primary, .is-secondary, .is-success, .is-info, .is-warning, .is-danger, .is-orange, .is-green, .is-blue, .is-purple) {
       background: var(--dark-sidebar-light-10);
       border-color: var(--dark-sidebar-light-10);
       color: var(--dark-dark-text);

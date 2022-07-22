@@ -128,7 +128,7 @@ const props = withDefaults(
 
 .is-dark {
   .circle-chart-wrapper {
-    &:not(.is-success):not(.is-info):not(.is-warning):not(.is-danger) {
+    &:not(.is-success, .is-info, .is-warning, .is-danger) {
       .circle-chart__circle {
         color: var(--primary) !important;
         stroke: var(--primary) !important;

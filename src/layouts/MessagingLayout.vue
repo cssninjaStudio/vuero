@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-
 import type { SidebarTheme } from '/@src/components/navigation/desktop/Sidebar.vue'
 import { usePanels } from '/@src/stores/panels'
 

@@ -4,7 +4,6 @@ import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css'
 </script>
 
 <script setup lang="ts">
-import { onMounted, ref, shallowRef, watch, watchPostEffect } from 'vue'
 import mapboxgl from 'mapbox-gl'
 import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.min.js'
 import { useThemeColors } from '/@src/composable/useThemeColors'

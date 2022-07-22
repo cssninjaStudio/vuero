@@ -3,7 +3,6 @@ import 'plyr/dist/plyr.css'
 </script>
 
 <script setup lang="ts">
-import { onBeforeUnmount, onMounted, ref } from 'vue'
 import Plyr from 'plyr'
 
 export type VPlyrCaptions = {
@@ -25,6 +24,8 @@ export interface VPlyrProps {
 
 const props = withDefaults(defineProps<VPlyrProps>(), {
   ratio: '16by9',
+  title: '',
+  poster: '',
   options: () => ({}),
   captions: () => [],
 })

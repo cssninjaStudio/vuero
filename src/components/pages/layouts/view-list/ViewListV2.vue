@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue'
-
 import { retails } from '/@src/data/layouts/view-list-v2'
 
 type TabId = 'active' | 'inactive'

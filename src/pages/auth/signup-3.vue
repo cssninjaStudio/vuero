@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import { useRouter } from '@vue-router'
 import { useHead } from '@vueuse/head'
 import { useNotyf } from '/@src/composable/useNotyf'
 

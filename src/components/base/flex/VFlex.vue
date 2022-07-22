@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { computed } from 'vue'
-
 export type VFlexDirection = 'row' | 'row-reverse' | 'column' | 'column-reverse'
 export type VFlexWrap = 'nowrap' | 'wrap' | 'wrap-reverse'
 export type VFlexJustifyContent =

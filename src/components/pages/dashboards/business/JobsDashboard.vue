@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue'
 import { jobs } from '/@src/data/dashboards/jobs'
 
 export type Job = 'web-developer' | 'uiux-designer' | 'backend-developer'

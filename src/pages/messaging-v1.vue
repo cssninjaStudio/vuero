@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
-import { onMounted, watchPostEffect } from 'vue'
 
 import { useChat } from '/@src/stores/chat'
 import { useSidebar } from '/@src/stores/sidebar'

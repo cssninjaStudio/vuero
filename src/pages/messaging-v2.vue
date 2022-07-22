@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
 import { usePanels } from '/@src/stores/panels'
-import { computed, ref } from 'vue'
 
 import type { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
 import { useDropdown } from '/@src/composable/useDropdown'

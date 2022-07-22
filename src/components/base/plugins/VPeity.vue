@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { watchPostEffect, computed, ref } from 'vue'
-
 import type { PeityOptions, PeityType } from '/@src/utils/peity'
 import { drawBar, drawLine, drawPie } from '/@src/utils/peity'
 

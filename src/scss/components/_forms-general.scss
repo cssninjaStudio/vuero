@@ -269,7 +269,7 @@ label[for] {
   }
 }
 
-.select:not(.is-multiple):not(.is-loading)::after {
+.select:not(.is-multiple, .is-loading)::after {
   border-color: var(--muted-grey-light-14);
   border-width: 1.4px;
 }
@@ -728,7 +728,7 @@ select {
   }
 
   .select {
-    &:not(.is-multiple):not(.is-loading) {
+    &:not(.is-multiple, .is-loading) {
       &:hover {
         &::after {
           border-color: var(--dark-dark-text) !important;
@@ -789,7 +789,7 @@ select {
 
 .is-dark {
   .file {
-    &:not(.is-primary):not(.is-success):not(.is-info):not(.is-warning):not(.is-danger) {
+    &:not(.is-primary, .is-success, .is-info, .is-warning, .is-danger) {
       .file-cta {
         background: var(--dark-sidebar-light-10);
         border-color: var(--dark-sidebar-light-12);

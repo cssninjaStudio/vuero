@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { toRefs } from 'vue'
-
 export interface VCollapseItem {
   title: string
   content: string

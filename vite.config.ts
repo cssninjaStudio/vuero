@@ -2,7 +2,9 @@ import { defineConfig } from 'vite'
 import path from 'path'
 import Vue from '@vitejs/plugin-vue'
 import VueRouter from 'unplugin-vue-router/vite'
+import { VueRouterExports } from 'unplugin-vue-router'
 import Components from 'unplugin-vue-components/vite'
+import AutoImport from 'unplugin-auto-import/vite'
 import ViteFonts from 'vite-plugin-fonts'
 import ViteRadar from 'vite-plugin-radar'
 import PurgeIcons from 'vite-plugin-purge-icons'
@@ -151,24 +153,20 @@ export default defineConfig({
       routesFolder: 'src/pages',
     }),
 
-    // /**
-    //  * vite-plugin-pages plugin generate routes based on file system
-    //  *
-    //  * @see https://github.com/hannoeru/vite-plugin-pages
-    //  */
-    // Pages({
-    //   pagesDir: [
-    //     {
-    //       dir: 'src/pages',
-    //       baseRoute: '',
-    //     },
-    //   ],
-    //   onRoutesGenerated: (routes) =>
-    //     generateSitemap({
-    //       routes,
-    //       hostname: SITEMAP_HOST,
-    //     }),
-    // }),
+    /**
+     * unplugin-auto-import allow to automaticaly import modules/components
+     *
+     * @see https://github.com/antfu/unplugin-auto-import
+     */
+    AutoImport({
+      dts: true,
+      imports: [
+        'vue',
+        '@vueuse/core',
+        { 'vue-router': ['RouterView', 'RouterLink'] },
+        { '@vue-router': VueRouterExports },
+      ],
+    }),
 
     /**
      * This is an internal vite plugin that load markdown files as vue components.

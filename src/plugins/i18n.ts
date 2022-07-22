@@ -1,5 +1,4 @@
 import { definePlugin } from '/@src/app'
-import { useStorage } from '@vueuse/core'
 import { createI18n } from 'vue-i18n'
 
 /**

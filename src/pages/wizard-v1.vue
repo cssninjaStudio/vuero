@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { computed } from 'vue'
 import { useHead } from '@vueuse/head'
 
 import { useWizard } from '/@src/stores/wizard'

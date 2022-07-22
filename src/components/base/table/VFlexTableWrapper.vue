@@ -1,19 +1,4 @@
 <script lang="ts">
-import type { PropType } from 'vue'
-
-import {
-  InjectionKey,
-  defineComponent,
-  computed,
-  reactive,
-  ref,
-  h,
-  watch,
-  provide,
-  watchEffect,
-} from 'vue'
-import { useDebounce } from '@vueuse/core'
-
 import type { VFlexTableColumn } from './VFlexTable.vue'
 import VFlexTableSortColumn from './VFlexTableSortColumn.vue'
 

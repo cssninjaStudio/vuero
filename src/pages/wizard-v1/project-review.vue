@@ -1,8 +1,6 @@
 <script setup lang="ts">
-import { computed, ref, watchEffect } from 'vue'
 import dayjs from 'dayjs'
 
-import { useRouter } from '@vue-router'
 import { useWizard } from '/@src/stores/wizard'
 
 const wizard = useWizard()

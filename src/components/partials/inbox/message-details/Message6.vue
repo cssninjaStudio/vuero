@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-
 import { useDropdown } from '/@src/composable/useDropdown'
 import { onceImageErrored } from '/@src/utils/via-placeholder'
 import { isMediumScreen } from '/@src/utils/responsive'

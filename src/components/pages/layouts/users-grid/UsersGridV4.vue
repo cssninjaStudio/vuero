@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
-
 import { users } from '/@src/data/layouts/user-grid-v4'
 
 const filters = ref('')

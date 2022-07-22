@@ -1,8 +1,4 @@
 <script setup lang="ts">
-import type { Ref, ComputedRef } from 'vue'
-import { ref, computed } from 'vue'
-import { debouncedWatch } from '@vueuse/core'
-
 import sidebar from '/@src/data/landing/sidebar.json'
 import auth from '/@src/data/landing/auth.json'
 import minimal from '/@src/data/landing/minimal.json'

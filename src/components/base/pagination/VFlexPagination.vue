@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { computed } from 'vue'
-import { useRoute, RouteLocationOptions } from '@vue-router'
+import type { RouteLocationOptions } from '@vue-router'
+
 import { useI18n } from 'vue-i18n'
 
 export interface VFlexPaginationProps {

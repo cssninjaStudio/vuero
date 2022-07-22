@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
-
 import type { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
 import * as gridData from '/@src/data/layouts/user-grid-v2'
 

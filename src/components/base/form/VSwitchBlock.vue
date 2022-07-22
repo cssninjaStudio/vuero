@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { watch, ref, useAttrs } from 'vue'
-
 export type VSwitchBlockColor = 'primary' | 'info' | 'success' | 'warning' | 'danger'
 export interface VSwitchBlockEmits {
   (e: 'update:modelValue', value: any): void

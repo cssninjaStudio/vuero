@@ -1,9 +1,7 @@
 <script setup lang="ts">
-import { ref, watchEffect } from 'vue'
-
 import type { WizardTeammate, WizardTeammateRole } from '/@src/models/wizard'
 import { users } from '/@src/data/wizard'
-import { useRouter } from '@vue-router'
+
 import { useWizard } from '/@src/stores/wizard'
 
 const search = ref('')

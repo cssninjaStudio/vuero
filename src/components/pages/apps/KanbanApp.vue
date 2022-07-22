@@ -3,7 +3,6 @@ import 'dragula/dist/dragula.css'
 </script>
 
 <script setup lang="ts">
-import { computed, onMounted, ref } from 'vue'
 import dragula from 'dragula'
 
 import type { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'

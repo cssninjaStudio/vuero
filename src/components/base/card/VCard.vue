@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { computed } from 'vue'
-
 export type VCardRadius = 'regular' | 'smooth' | 'rounded'
 export type VCardColor =
   | 'primary'

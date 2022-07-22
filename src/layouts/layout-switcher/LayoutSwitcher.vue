@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue'
 import { useLayoutSwitcher } from '/@src/stores/layoutSwitcher'
 
 const layoutSwitcher = useLayoutSwitcher()

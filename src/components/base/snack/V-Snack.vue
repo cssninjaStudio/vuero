@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { computed } from 'vue'
-
 export type VSnackColor = 'primary' | 'success' | 'info' | 'warning' | 'danger'
 export type VSnackSize = 'small'
 export interface VSnackProps {

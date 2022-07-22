@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useWindowScroll } from '@vueuse/core'
-import { computed, ref } from 'vue'
 import { popovers } from '/@src/data/users/userPopovers'
 
 const selectedColor = ref('')

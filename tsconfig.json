@@ -17,7 +17,6 @@
     "types": [
       "vite/client",
       "vite-plugin-pwa/client",
-      "vite-plugin-pages/client",
       "@intlify/vite-plugin-vue-i18n/client"
     ],
     "paths": {
@@ -26,6 +25,7 @@
   },
   "include": [
     "types/**/*.d.ts",
+    "auto-imports.d.ts",
     "typed-router.d.ts",
     "components.d.ts",
     "components-global.d.ts",

@@ -72,7 +72,7 @@
     blockquote {
       background: var(--dark-sidebar-light-10);
 
-      &:not(.is-primary):not(.is-success):not(.is-info):not(.is-warning):not(.is-danger) {
+      &:not(.is-primary, .is-success, .is-info, .is-warning, .is-danger) {
         border-color: var(--dark-sidebar-light-2);
       }
 

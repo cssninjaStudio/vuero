@@ -1,8 +1,5 @@
 <script setup lang="ts">
-import { reactive, ref, computed } from 'vue'
 import { useHead } from '@vueuse/head'
-import { useRoute, useRouter } from '@vue-router'
-import { useMediaQuery } from '@vueuse/core'
 
 import { useApi } from '/@src/composable/useApi'
 import { useViewWrapper } from '/@src/stores/viewWrapper'

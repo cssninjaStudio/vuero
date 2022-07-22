@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { h, computed } from 'vue'
-import { useRoute } from '@vue-router'
 import { useHead } from '@vueuse/head'
 
 import { flexRowsAdvanced } from '/@src/data/documentation/table'

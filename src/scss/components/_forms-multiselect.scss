@@ -427,7 +427,7 @@
 ========================================================================== */
 
 .is-image-tags {
-  &:not(.is-curved-select):not(.is-rounded-select) {
+  &:not(.is-curved-select, .is-rounded-select) {
     .multiselect {
       .multiselect-tag {
         &.is-user,

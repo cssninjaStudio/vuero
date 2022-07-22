@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-
 const country = ref('')
 const createAccount = ref(true)
 const subscribe = ref(false)

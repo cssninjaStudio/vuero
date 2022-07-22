@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
-
 import { posts } from '/@src/data/layouts/tile-grid-v3'
 import { onceImageErrored } from '/@src/utils/via-placeholder'
 

@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { ref, watch } from 'vue'
 import type { VAnimatedCheckboxColor } from '/@src/components/base/form/VAnimatedCheckbox.vue'
 
 const emit = defineEmits<{

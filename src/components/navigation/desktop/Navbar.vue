@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import { computed } from 'vue'
-import { useWindowScroll } from '@vueuse/core'
-
 export type NavbarTheme = 'default' | 'colored' | 'fade'
 
 const props = withDefaults(

@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue'
 import { usePanels } from '/@src/stores/panels'
 
 const panels = usePanels()

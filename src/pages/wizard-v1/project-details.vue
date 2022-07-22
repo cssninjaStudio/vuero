@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
-import { useRouter } from '@vue-router'
-
 import type { WizardCustomer } from '/@src/models/wizard'
 import { customers } from '/@src/data/wizard'
 import { useWizard } from '/@src/stores/wizard'

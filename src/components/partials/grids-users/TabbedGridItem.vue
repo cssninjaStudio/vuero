@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue'
-
 export type UserItem = {
   avatar?: string
   badge?: string

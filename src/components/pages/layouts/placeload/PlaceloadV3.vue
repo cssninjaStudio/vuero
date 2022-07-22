@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-
 const filters = ref('')
 const valueSingle = ref(0)
 const optionsSingle = [

@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import { useWindowScroll } from '@vueuse/core'
-import { computed, ref } from 'vue'
-
 const bankAccount = ref('')
 const transferFees = ref('')
 

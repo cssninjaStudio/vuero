@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { TinySliderInstance } from 'tiny-slider/src/tiny-slider'
 import { tns } from 'tiny-slider/src/tiny-slider'
-import { ref, onMounted } from 'vue'
+
 import ApexChart from 'vue3-apexcharts'
 
 import { expensesOptions } from '/@src/data/dashboards/banking-v2/expensesAreaChart'

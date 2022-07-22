@@ -11,6 +11,7 @@ export interface VBlockProps {
 }
 
 const props = withDefaults(defineProps<VBlockProps>(), {
+  title: undefined,
   subtitle: undefined,
   infratitle: undefined,
 })

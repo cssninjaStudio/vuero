@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useWindowScroll } from '@vueuse/core'
-import { computed, ref, watchEffect } from 'vue'
 import VueScrollTo from 'vue-scrollto'
 
 import { isLargeScreen } from '/@src/utils/responsive'

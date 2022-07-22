@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { computed } from 'vue'
 import { onceImageErrored } from '/@src/utils/via-placeholder'
 
 export type VIconWrapDark = '1' | '2' | '3' | '4' | '5' | '6'

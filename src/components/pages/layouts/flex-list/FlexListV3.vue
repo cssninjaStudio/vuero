@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
-
 import { classes } from '/@src/data/layouts/flex-list-v3'
 import { onceImageErrored } from '/@src/utils/via-placeholder'
 

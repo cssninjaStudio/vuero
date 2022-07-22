@@ -121,7 +121,7 @@ const props = withDefaults(defineProps<VMessageProps>(), {
 
 .is-dark {
   .message {
-    &:not(.is-primary):not(.is-info):not(.is-success):not(.is-warning):not(.is-danger) {
+    &:not(.is-primary, .is-info, .is-success, .is-warning, .is-danger) {
       background-color: var(--dark-sidebar);
       border-color: var(--dark-sidebar-light-3);
 

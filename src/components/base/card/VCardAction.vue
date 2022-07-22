@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { onUpdated, ref, useSlots } from 'vue'
-
 export type VCardActionRadius = 'regular' | 'smooth' | 'rounded'
 export interface VCardActionProps {
   title: string

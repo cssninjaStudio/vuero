@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { ref, watch } from 'vue'
-
 export type VSwitchSegmentColor = 'primary' | 'info' | 'success' | 'warning' | 'danger'
 export interface VSwitchSegmentEmits {
   (e: 'update:modelValue', value: any): void

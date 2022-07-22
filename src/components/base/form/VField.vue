@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useSlots, computed, reactive } from 'vue'
-
 import { useVFieldContext } from '/@src/composable/useVFieldContext'
 
 export type VFieldProps = {

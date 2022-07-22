@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
-
 import type { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
 import { onceImageErrored } from '/@src/utils/via-placeholder'
 import * as gridData from '/@src/data/layouts/card-grid-v2'

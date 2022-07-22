@@ -1,9 +1,6 @@
 <script lang="ts">
-import type { PropType } from 'vue'
 import type { RouteLocationRaw } from '@vue-router'
 import { CssUnitRe } from '/@src/utils/regex'
-import { computed, defineComponent, h } from 'vue'
-import { RouterLink } from '@vue-router'
 
 import VPlaceload from '../loader/VPlaceload.vue'
 
@@ -440,7 +437,7 @@ export default defineComponent({
 
 .is-dark {
   .v-button {
-    &:not(.is-primary):not(.is-success):not(.is-info):not(.is-warning):not(.is-danger):not(.is-light):not(.is-white) {
+    &:not(.is-primary, .is-success, .is-info, .is-warning, .is-danger, .is-light, .is-white) {
       background: var(--dark-sidebar-light-10);
       border-color: var(--dark-sidebar-light-12);
       color: var(--dark-dark-text);
@@ -502,7 +499,7 @@ export default defineComponent({
   }
 
   .button {
-    &:not(.is-primary):not(.is-success):not(.is-info):not(.is-warning):not(.is-danger):not(.is-light):not(.is-white) {
+    &:not(.is-primary, .is-success, .is-info, .is-warning, .is-danger, .is-light, .is-white) {
       background: var(--dark-sidebar-light-10);
       border-color: var(--dark-sidebar-light-12);
       color: var(--dark-dark-text);

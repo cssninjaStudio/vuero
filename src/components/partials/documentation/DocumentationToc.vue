@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { computed, onMounted } from 'vue'
-import { useRoute, useRouter } from '@vue-router'
 import VueScrollTo from 'vue-scrollto'
 
 export type TocItem = {

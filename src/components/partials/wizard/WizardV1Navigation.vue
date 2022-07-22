@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-
 import { useDropdown } from '/@src/composable/useDropdown'
 import { useWizard } from '/@src/stores/wizard'
 import { useDarkmode } from '/@src/stores/darkmode'

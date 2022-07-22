@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue'
 import { useDropdown } from '/@src/composable/useDropdown'
 
 export type VDropdownColor = 'primary' | 'info' | 'success' | 'warning' | 'danger'

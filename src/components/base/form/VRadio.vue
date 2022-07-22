@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { ref, watch, reactive } from 'vue'
 import { useVFieldContext } from '/@src/composable/useVFieldContext'
 
 export type VRadioColor = 'primary' | 'info' | 'success' | 'warning' | 'danger'

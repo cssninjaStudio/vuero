@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue'
 import { ColorPicker } from 'vue-accessible-color-picker'
-import { useClipboard, useCssVar } from '@vueuse/core'
 
 export type AvailableColors =
   // states

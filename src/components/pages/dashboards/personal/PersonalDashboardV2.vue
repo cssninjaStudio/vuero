@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue'
 import ApexChart from 'vue3-apexcharts'
 
 import type { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'

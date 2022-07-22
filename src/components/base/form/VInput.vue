@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { watch, ref, reactive, computed } from 'vue'
 import { useVFieldContext } from '/@src/composable/useVFieldContext'
 
 export interface VInputEmits {

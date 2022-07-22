@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
-import { computed, ref, watch } from 'vue'
 
 import { useDarkmode } from '/@src/stores/darkmode'
 import { useDropdown } from '/@src/composable/useDropdown'

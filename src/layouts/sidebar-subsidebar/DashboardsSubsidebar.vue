@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-
 const openSubsidebarLinks = ref('')
 const emit = defineEmits(['close'])
 </script>

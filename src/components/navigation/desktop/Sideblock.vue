@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { computed } from 'vue'
-
 export type SideblockTheme = 'default' | 'curved' | 'color' | 'color-curved'
 
 const props = withDefaults(

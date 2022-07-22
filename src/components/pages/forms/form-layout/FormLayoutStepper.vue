@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { nextTick, ref } from 'vue'
-import { useRouter } from '@vue-router'
 import VueScrollTo from 'vue-scrollto'
 import { useNotyf } from '/@src/composable/useNotyf'
 import sleep from '/@src/utils/sleep'

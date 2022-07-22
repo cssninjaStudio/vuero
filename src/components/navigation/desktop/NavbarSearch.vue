@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import { computed } from 'vue'
-import { useWindowScroll } from '@vueuse/core'
-
 export type NavbarSearchTheme = 'default' | 'center' | 'fade'
 
 const props = withDefaults(

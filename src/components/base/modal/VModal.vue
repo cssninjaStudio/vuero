@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { computed, ref, watchEffect, onUnmounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 export type VModalSize = 'small' | 'medium' | 'large' | 'big'

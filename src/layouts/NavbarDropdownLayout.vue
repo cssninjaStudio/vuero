@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import { computed, ref, watch } from 'vue'
-import { useRoute } from '@vue-router'
-
 import type { UserPopover } from '/@src/models/users'
 import type { VAvatarColor, VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
 import { popovers } from '/@src/data/users/userPopovers'

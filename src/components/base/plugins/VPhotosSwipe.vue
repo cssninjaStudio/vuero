@@ -6,7 +6,6 @@ let instances = 0
 </script>
 
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
 import PhotoSwipe from 'photoswipe'
 import PhotoSwipeUI_Default from 'photoswipe/dist/photoswipe-ui-default'
 import { onceImageErrored } from '/@src/utils/via-placeholder'

@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
-import { onBeforeUnmount, onMounted, ref } from 'vue'
 
 import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
 

@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue'
 import { useHead } from '@vueuse/head'
 
 import { flexRowsContacts, flexRowsAdvanced } from '/@src/data/documentation/table'

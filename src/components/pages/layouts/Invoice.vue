@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
 import { popovers } from '/@src/data/users/userPopovers'
 
 const data = ref([
