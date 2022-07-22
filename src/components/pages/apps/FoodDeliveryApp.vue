@@ -143,10 +143,7 @@ onUnmounted(() => {
                       <img
                         :src="restaurant.icon"
                         alt=""
-                        @error.once="
-                          (event) =>
-                            onceImageErrored(event, '                            ')
-                        "
+                        @error.once="(event) => onceImageErrored(event, '800x450')"
                       />
                     </div>
                     <div class="meta-content">

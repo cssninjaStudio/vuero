@@ -4,7 +4,7 @@ import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css'
 </script>
 
 <script setup lang="ts">
-import { onMounted, ref, watch, watchPostEffect } from 'vue'
+import { onMounted, ref, shallowRef, watch, watchPostEffect } from 'vue'
 import mapboxgl from 'mapbox-gl'
 import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.min.js'
 import { useThemeColors } from '/@src/composable/useThemeColors'
@@ -20,15 +20,15 @@ const props = defineProps<{
 }>()
 
 const darkmode = useDarkmode()
-const mapElement = ref<HTMLElement>()
-const geocoderElement = ref<HTMLElement>()
-const popupElement = ref<HTMLElement>()
 const selectedFeature = ref()
 const selectedFeatureLatLng = ref()
 const selectedFeatureName = ref('')
-let map: mapboxgl.Map | undefined
-let popup: mapboxgl.Popup | undefined
-let geocoder: any
+const mapElement = shallowRef<HTMLElement>()
+const geocoderElement = shallowRef<HTMLElement>()
+const popupElement = shallowRef<HTMLElement>()
+const map = shallowRef<mapboxgl.Map>()
+const popup = shallowRef<mapboxgl.Popup>()
+const geocoder = shallowRef<any>()
 
 const locations = {
   type: 'FeatureCollection',
@@ -190,22 +190,23 @@ const locations = {
 }
 
 function loadLayers() {
-  if (!map) {
+  if (!map.value) {
     return
   }
 
   // Do nothing if source already added
-  if (map.getSource('places')) {
+  if (map.value.getSource('places')) {
     return
   }
 
-  map.addSource('places', {
+  console.log('loadLayers?')
+  map.value.addSource('places', {
     type: 'geojson',
     data: locations as any,
   })
 
   // Add a layer showing the places.
-  map.addLayer({
+  map.value.addLayer({
     id: 'places',
     type: 'circle',
     source: 'places',
@@ -219,27 +220,27 @@ function loadLayers() {
     },
   })
 
-  map.on('click', 'places', (e: any) => {
+  map.value.on('click', 'places', (e: any) => {
     selectedFeature.value = e.features[0]
     selectedFeatureLatLng.value = e.lngLat
   })
 
   // Change the cursor to a pointer when the mouse is over the places layer.
-  map.on('mouseenter', 'places', () => {
-    if (!map) {
+  map.value.on('mouseenter', 'places', () => {
+    if (!map.value) {
       return
     }
 
-    map.getCanvas().style.cursor = 'pointer'
+    map.value.getCanvas().style.cursor = 'pointer'
   })
 
   // Change it back to a pointer when it leaves.
-  map.on('mouseleave', 'places', () => {
-    if (!map) {
+  map.value.on('mouseleave', 'places', () => {
+    if (!map.value) {
       return
     }
 
-    map.getCanvas().style.cursor = ''
+    map.value.getCanvas().style.cursor = ''
   })
 }
 
@@ -253,7 +254,7 @@ onMounted(() => {
     return
   }
 
-  map = new mapboxgl.Map({
+  map.value = new mapboxgl.Map({
     container: mapElement.value,
     style: darkmode.isDark
       ? 'mapbox://styles/mapbox/dark-v10'
@@ -262,15 +263,15 @@ onMounted(() => {
     zoom: 12,
   })
 
-  geocoder = new MapboxGeocoder({
+  geocoder.value = new MapboxGeocoder({
     accessToken: mapboxgl.accessToken,
-    mapboxgl: mapboxgl,
+    mapboxgl,
     marker: true,
   })
 
-  map.on('styledata', () => {
+  map.value.on('style.load', () => {
     const loadingStyles = () => {
-      if (!map?.isStyleLoaded()) {
+      if (!map.value?.isStyleLoaded()) {
         setTimeout(loadingStyles, 1500)
         return
       }
@@ -280,11 +281,11 @@ onMounted(() => {
     loadingStyles()
   })
 
-  geocoderElement.value.appendChild(geocoder.onAdd(map))
+  geocoderElement.value.appendChild(geocoder.value.onAdd(map.value))
 })
 
 watchPostEffect(() => {
-  if (!selectedFeature.value || !popupElement.value || !map) {
+  if (!selectedFeature.value || !popupElement.value || !map.value) {
     return
   }
 
@@ -307,18 +308,18 @@ watchPostEffect(() => {
     }
   }
 
-  map.flyTo({
+  map.value.flyTo({
     center: coordinates,
     zoom: 15,
     bearing: 0,
     essential: true, // this animation is considered essential with respect to prefers-reduced-motion
   })
 
-  if (popup) {
-    popup.remove()
+  if (popup.value) {
+    popup.value.remove()
   }
 
-  popup = new mapboxgl.Popup()
+  popup.value = new mapboxgl.Popup()
     .on('open', () => {
       selectedFeatureName.value = name
     })
@@ -327,20 +328,20 @@ watchPostEffect(() => {
     })
     .setLngLat(coordinates)
     .setHTML(popupElement.value.innerHTML)
-    .addTo(map)
+    .addTo(map.value)
 })
 
 watch(
   () => darkmode.isDark,
   () => {
-    if (!map) {
+    if (!map.value) {
       return
     }
 
     if (darkmode.isDark) {
-      map.setStyle('mapbox://styles/mapbox/dark-v10')
+      map.value.setStyle('mapbox://styles/mapbox/dark-v10')
     } else {
-      map.setStyle('mapbox://styles/mapbox/light-v10')
+      map.value.setStyle('mapbox://styles/mapbox/light-v10')
     }
   }
 )
@@ -349,17 +350,16 @@ watch(
 <template>
   <div class="dashboard-map-wrapper">
     <div class="dashboard-map-wrapper-inner" :class="[props.reversed && 'is-reversed']">
-      <div ref="mapElement" class="map-section">
-        <div ref="geocoderElement" class="geocoder"></div>
-        <div ref="popupElement" style="display: none; visibility: hidden">
-          <MapMarker
-            v-if="selectedFeature"
-            :logo="selectedFeature.properties.logo"
-            :name="selectedFeature.properties.name"
-            :opening-count="selectedFeature.properties.openingCount"
-            :description="selectedFeature.properties.description"
-          />
-        </div>
+      <div ref="mapElement" class="map-section"></div>
+      <div ref="geocoderElement" class="geocoder"></div>
+      <div ref="popupElement" style="display: none; visibility: hidden">
+        <MapMarker
+          v-if="selectedFeature"
+          :logo="selectedFeature.properties.logo"
+          :name="selectedFeature.properties.name"
+          :opening-count="selectedFeature.properties.openingCount"
+          :description="selectedFeature.properties.description"
+        />
       </div>
       <div class="content-section">
         <slot name="header"></slot>

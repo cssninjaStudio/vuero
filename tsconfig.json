@@ -25,14 +25,12 @@
     }
   },
   "include": [
+    "types/**/*.d.ts",
     "components.d.ts",
     "components-global.d.ts",
     "src/**/*.js",
     "src/**/*.ts",
-    "src/**/*.d.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
-    "documentation/**/*.md"
+    "src/**/*.vue"
   ],
   "exclude": ["bulma-colors.ts"]
 }

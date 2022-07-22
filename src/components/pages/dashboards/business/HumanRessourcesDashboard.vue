@@ -232,7 +232,7 @@ const columns = {
         </UIWidget>
 
         <!--Widget-->
-        <ListWidgetTabbed title="Todo" :labels="['All', 'Mine']" class="list-widget-v2">
+        <ListWidgetTabbed title="Todo" :labels="['All', 'Mine']">
           <template #tab1>
             <ListWidgetTodoList :todos="todoList3" />
           </template>

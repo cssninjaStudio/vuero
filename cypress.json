@@ -1,7 +1,0 @@
-{
-  "baseUrl": "http://localhost:5000",
-  "waitForAnimations": true,
-  "chromeWebSecurity": false,
-  "video": false,
-  "retries": { "runMode": 4, "openMode": 4 }
-}

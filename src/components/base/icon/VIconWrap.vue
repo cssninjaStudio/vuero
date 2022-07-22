@@ -10,6 +10,7 @@ export type VIconWrapColor =
   | 'light'
   | 'dark'
   | 'primary'
+  | 'secondary'
   | 'link'
   | 'info'
   | 'success'

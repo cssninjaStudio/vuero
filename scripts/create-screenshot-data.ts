@@ -30,6 +30,7 @@ function generateData(routes: Route[], prefix: string) {
       .replace('-', ' ')
       .replace('(', ' ')
       .replace(')', ' ')
+      .trim()
       .replace(/[\s]+/g, '-')
 
     const routeName =

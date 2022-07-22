@@ -60,6 +60,7 @@ const localFlagSrc = computed(() => {
       <div class="menu-item is-flex">
         <label class="dark-mode">
           <input
+            data-cy="dark-mode-toggle"
             type="checkbox"
             :checked="!darkmode.isDark"
             @change="darkmode.onChange"

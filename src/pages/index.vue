@@ -43,6 +43,7 @@ useHead({
               <div class="night-toggle night-toggle--daynight">
                 <input
                   id="night-toggle--daynight"
+                  data-cy="dark-mode-toggle"
                   type="checkbox"
                   class="night-toggle--checkbox"
                   :checked="!darkmode.isDark"

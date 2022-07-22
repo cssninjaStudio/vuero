@@ -8,11 +8,13 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
 
 import sleep from '/@src/utils/sleep'
 import { useNotyf } from '/@src/composable/useNotyf'
+import { useDarkmode } from '/@src/stores/darkmode'
 
 let slider: TinySliderInstance
 const sliderElement = ref<HTMLElement>()
 const router = useRouter()
 const notif = useNotyf()
+const darkmode = useDarkmode()
 const step = ref(0)
 const selectedAvatar = ref(2)
 const isLoading = ref(false)
@@ -358,6 +360,28 @@ onUnmounted(() => {
       </div>
     </div>
 
+    <div class="signup-footer">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-4 is-offset-1">
+            <label
+              class="dark-mode"
+              tabindex="0"
+              @keydown.space.prevent="(e) => (e.target as HTMLLabelElement).click()"
+            >
+              <input
+                data-cy="dark-mode-toggle"
+                type="checkbox"
+                :checked="!darkmode.isDark"
+                @change="darkmode.onChange"
+              />
+              <span></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- upload modal -->
     <VModal
       :open="uploadModalOpen"
@@ -430,6 +454,17 @@ onUnmounted(() => {
         max-width: 48px;
       }
     }
+  }
+}
+
+.signup-footer {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+
+  .dark-mode input + span {
+    transform: scale(0.4);
   }
 }
 

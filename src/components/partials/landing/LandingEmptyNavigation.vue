@@ -78,6 +78,7 @@ watchEffect(() => {
             <input
               id="navbar-night-toggle--daynight"
               v-model="darkmode.isDark"
+              data-cy="dark-mode-toggle"
               type="checkbox"
             />
             <span class="toggler">

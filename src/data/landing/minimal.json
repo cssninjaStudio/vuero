@@ -93,8 +93,8 @@
       "path": "/wizard-v1"
     },
     "screenshot": {
-      "light": "/images/screenshots/minimal/wizard-v1-step-1--light.webp",
-      "dark": "/images/screenshots/minimal/wizard-v1-step-1--dark.webp"
+      "light": "/images/screenshots/minimal/wizard-v1-step-1-light.webp",
+      "dark": "/images/screenshots/minimal/wizard-v1-step-1-dark.webp"
     }
   },
   {
@@ -103,15 +103,12 @@
     "displayOrder": 51,
     "new": false,
     "route": {
-      "name": "wizard-v1",
-      "path": "/wizard-v1",
-      "query": {
-        "step": 2
-      }
+      "name": "wizard-v1-project-info",
+      "path": "/wizard-v1/project-info"
     },
     "screenshot": {
-      "light": "/images/screenshots/minimal/wizard-v1-step-2--light.webp",
-      "dark": "/images/screenshots/minimal/wizard-v1-step-2--dark.webp"
+      "light": "/images/screenshots/minimal/wizard-v1-step-2-light.webp",
+      "dark": "/images/screenshots/minimal/wizard-v1-step-2-dark.webp"
     }
   },
   {
@@ -120,15 +117,12 @@
     "displayOrder": 52,
     "new": false,
     "route": {
-      "name": "wizard-v1",
-      "path": "/wizard-v1",
-      "query": {
-        "step": 3
-      }
+      "name": "wizard-v1-project-details",
+      "path": "/wizard-v1/project-details"
     },
     "screenshot": {
-      "light": "/images/screenshots/minimal/wizard-v1-step-3--light.webp",
-      "dark": "/images/screenshots/minimal/wizard-v1-step-3--dark.webp"
+      "light": "/images/screenshots/minimal/wizard-v1-step-3-light.webp",
+      "dark": "/images/screenshots/minimal/wizard-v1-step-3-dark.webp"
     }
   },
   {
@@ -137,15 +131,12 @@
     "displayOrder": 53,
     "new": false,
     "route": {
-      "name": "wizard-v1",
-      "path": "/wizard-v1",
-      "query": {
-        "step": 4
-      }
+      "name": "wizard-v1-project-files",
+      "path": "/wizard-v1/project-files"
     },
     "screenshot": {
-      "light": "/images/screenshots/minimal/wizard-v1-step-4--light.webp",
-      "dark": "/images/screenshots/minimal/wizard-v1-step-4--dark.webp"
+      "light": "/images/screenshots/minimal/wizard-v1-step-4-light.webp",
+      "dark": "/images/screenshots/minimal/wizard-v1-step-4-dark.webp"
     }
   },
   {
@@ -154,15 +145,12 @@
     "displayOrder": 54,
     "new": false,
     "route": {
-      "name": "wizard-v1",
-      "path": "/wizard-v1",
-      "query": {
-        "step": 5
-      }
+      "name": "wizard-v1-project-team",
+      "path": "/wizard-v1/project-team"
     },
     "screenshot": {
-      "light": "/images/screenshots/minimal/wizard-v1-step-5--light.webp",
-      "dark": "/images/screenshots/minimal/wizard-v1-step-5--dark.webp"
+      "light": "/images/screenshots/minimal/wizard-v1-step-5-light.webp",
+      "dark": "/images/screenshots/minimal/wizard-v1-step-5-dark.webp"
     }
   },
   {
@@ -171,15 +159,12 @@
     "displayOrder": 55,
     "new": false,
     "route": {
-      "name": "wizard-v1",
-      "path": "/wizard-v1",
-      "query": {
-        "step": 6
-      }
+      "name": "wizard-v1-project-tools",
+      "path": "/wizard-v1/project-tools"
     },
     "screenshot": {
-      "light": "/images/screenshots/minimal/wizard-v1-step-6--light.webp",
-      "dark": "/images/screenshots/minimal/wizard-v1-step-6--dark.webp"
+      "light": "/images/screenshots/minimal/wizard-v1-step-6-light.webp",
+      "dark": "/images/screenshots/minimal/wizard-v1-step-6-dark.webp"
     }
   },
   {
@@ -188,15 +173,12 @@
     "displayOrder": 56,
     "new": false,
     "route": {
-      "name": "wizard-v1",
-      "path": "/wizard-v1",
-      "query": {
-        "step": 7
-      }
+      "name": "wizard-v1-project-review",
+      "path": "/wizard-v1/project-review"
     },
     "screenshot": {
-      "light": "/images/screenshots/minimal/wizard-v1-step-7--light.webp",
-      "dark": "/images/screenshots/minimal/wizard-v1-step-7--dark.webp"
+      "light": "/images/screenshots/minimal/wizard-v1-step-7-light.webp",
+      "dark": "/images/screenshots/minimal/wizard-v1-step-7-dark.webp"
     }
   },
   {

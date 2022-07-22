@@ -4,14 +4,14 @@ import { useVFieldContext } from '/@src/composable/useVFieldContext'
 
 export type VCheckboxColor = 'primary' | 'info' | 'success' | 'warning' | 'danger'
 export interface VCheckboxEmits {
-  (e: 'update:modelValue', value: string | number | boolean): void
+  (e: 'update:modelValue', value: any): void
 }
 export interface VCheckboxProps {
   raw?: boolean
   label?: string
   color?: VCheckboxColor
-  trueValue?: string | number | boolean
-  falseValue?: string | number | boolean
+  trueValue?: any
+  falseValue?: any
   modelValue?: any
   circle?: boolean
   solid?: boolean

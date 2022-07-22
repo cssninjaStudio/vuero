@@ -429,8 +429,8 @@
       "path": "/sidebar/layouts/"
     },
     "screenshot": {
-      "light": "/images/screenshots/sidebar/homepage-list-view-v1--light.webp",
-      "dark": "/images/screenshots/sidebar/homepage-list-view-v1--dark.webp"
+      "light": "/images/screenshots/sidebar/homepage-list-view-v1-light.webp",
+      "dark": "/images/screenshots/sidebar/homepage-list-view-v1-dark.webp"
     }
   },
   {
@@ -1143,8 +1143,8 @@
       "path": "/sidebar/dashboards/"
     },
     "screenshot": {
-      "light": "/images/screenshots/sidebar/homepage-personal-v1--light.webp",
-      "dark": "/images/screenshots/sidebar/homepage-personal-v1--dark.webp"
+      "light": "/images/screenshots/sidebar/homepage-personal-v1-light.webp",
+      "dark": "/images/screenshots/sidebar/homepage-personal-v1-dark.webp"
     }
   },
   {

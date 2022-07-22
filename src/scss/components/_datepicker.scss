@@ -178,10 +178,10 @@
     .vc-day-content {
       color: var(--dark-dark-text);
 
-      &:hover,
-      &:focus {
-        background: var(--dark-sidebar-light-4) !important;
-      }
+      // &:hover,
+      // &:focus {
+      //   background: var(--dark-sidebar-light-4) !important;
+      // }
     }
 
     .vc-arrows-container {
@@ -194,6 +194,12 @@
   }
 
   .vc-popover-content-wrapper {
+    .vc-highlight-base-start,
+    .vc-highlight-base-middle,
+    .vc-highlight-base-end {
+      background-color: var(--primary-light-1) !important;
+    }
+
     .vc-nav-popover-container {
       background: var(--dark-sidebar-dark-4) !important;
       border-color: var(--dark-sidebar-light-4) !important;

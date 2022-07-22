@@ -80,6 +80,7 @@ useHead({
             @keydown.space.prevent="(e) => (e.target as HTMLLabelElement).click()"
           >
             <input
+              data-cy="dark-mode-toggle"
               type="checkbox"
               :checked="!darkmode.isDark"
               @change="darkmode.onChange"

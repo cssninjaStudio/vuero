@@ -360,8 +360,8 @@ watch(
 <style lang="scss" scoped>
 .navbar-layout-search {
   ::v-deep(.view-wrapper.has-top-nav) {
-    margin-top: 20px;
-    min-height: calc(100vh - 20px);
+    // margin-top: 20px;
+    // min-height: calc(100vh - 20px);
 
     .is-stuck {
       top: 100px;

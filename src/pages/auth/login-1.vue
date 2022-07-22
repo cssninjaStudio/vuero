@@ -78,6 +78,7 @@ useHead({
           @keydown.space.prevent="(e) => (e.target as HTMLLabelElement).click()"
         >
           <input
+            data-cy="dark-mode-toggle"
             type="checkbox"
             :checked="!darkmode.isDark"
             @change="darkmode.onChange"
@@ -95,6 +96,7 @@ useHead({
               <p>Reset your account password.</p>
             </div>
             <form
+              data-cy="login-form"
               :class="[step !== 'login' && 'is-hidden']"
               class="login-wrapper"
               @submit.prevent="handleLogin"
@@ -113,13 +115,21 @@ useHead({
               <VField>
                 <VControl icon="lnil lnil-envelope autv-icon">
                   <VLabel class="auth-label">Email Address</VLabel>
-                  <VInput type="email" autocomplete="current-password" />
+                  <VInput
+                    data-cy="email-input"
+                    type="email"
+                    autocomplete="current-password"
+                  />
                 </VControl>
               </VField>
               <VField>
                 <VControl icon="lnil lnil-lock-alt autv-icon">
                   <VLabel class="auth-label">Password</VLabel>
-                  <VInput type="password" autocomplete="current-password" />
+                  <VInput
+                    data-cy="password-input"
+                    type="password"
+                    autocomplete="current-password"
+                  />
                 </VControl>
               </VField>
 

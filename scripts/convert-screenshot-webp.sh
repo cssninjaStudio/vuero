@@ -1,7 +1,13 @@
 #!/bin/bash 
 
+if ! command -v cwebp &> /dev/null
+then
+  echo "cwebp could not be found, you may want to install it with 'sudo apt install webp'"
+  exit
+fi
+
 base="./"
-path="${base}cypress/screenshots/vuero.ts/"
+path="${base}cypress/screenshots/"
 output="${base}public/images/screenshots/"
 
 quality=100
@@ -14,9 +20,9 @@ for layout in sidebar auth minimal navbar starters; do
   rm -rf "${output}${layout}/"
   mkdir -p "${output}${layout}/"
     
-  for d in ${path}${layout}/*; do
+  for d in ${path}${layout}.cy.ts/${layout}/*; do
     src=$d
-    filename=${src/$path/}
+    filename=${src/$path${layout}.cy.ts/}
     filename=${filename/".png"/}
 
     echo "$src"; 

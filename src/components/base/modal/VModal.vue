@@ -47,21 +47,6 @@ onUnmounted(() => {
 })
 </script>
 
-<i18n lang="yaml">
-de:
-  cancel-label: 'Abbrechen'
-en:
-  cancel-label: 'Cancel'
-es-MX:
-  cancel-label: 'Cancelar'
-es:
-  cancel-label: 'Cancelar'
-fr:
-  cancel-label: 'Annuler'
-zh-CN:
-  cancel-label: '取消'
-</i18n>
-
 <template>
   <Teleport to="body">
     <div :class="[open && 'is-active', size && `is-${size}`]" class="modal v-modal">

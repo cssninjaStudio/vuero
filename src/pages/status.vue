@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
 import { onceImageErrored } from '/@src/utils/via-placeholder'
+import { useDarkmode } from '/@src/stores/darkmode'
+
+const darkmode = useDarkmode()
 
 useHead({
   title: 'Utility Status - Sidebar - Vuero',
@@ -249,6 +252,19 @@ useHead({
         </div>
       </div>
       <div class="status-footer">
+        <label
+          class="dark-mode"
+          tabindex="0"
+          @keydown.space.prevent="(e) => (e.target as HTMLLabelElement).click()"
+        >
+          <input
+            data-cy="dark-mode-toggle"
+            type="checkbox"
+            :checked="!darkmode.isDark"
+            @change="darkmode.onChange"
+          />
+          <span></span>
+        </label>
         <div>
           <a href="#">Legal</a>
           <a href="#">About</a>
@@ -470,6 +486,12 @@ useHead({
   .status-footer {
     display: flex;
     padding: 20px;
+    align-items: center;
+
+    .dark-mode {
+      display: inline-block;
+      transform: scale(0.5);
+    }
 
     a {
       font-family: var(--font);

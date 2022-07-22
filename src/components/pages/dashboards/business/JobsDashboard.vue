@@ -4,7 +4,7 @@ import { jobs } from '/@src/data/dashboards/jobs'
 
 export type Job = 'web-developer' | 'uiux-designer' | 'backend-developer'
 
-const tagsValue: Job[] = []
+const tagsValue = ref<Job[]>([])
 const tagsOptions = [
   { value: 'web-developer', label: 'Frontend' },
   { value: 'uiux-designer', label: 'UI/UX' },

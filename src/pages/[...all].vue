@@ -12,6 +12,9 @@
 
 import { useHead } from '@vueuse/head'
 import { useI18n } from 'vue-i18n'
+import { useDarkmode } from '/@src/stores/darkmode'
+
+const darkmode = useDarkmode()
 
 const { t } = useI18n()
 
@@ -62,6 +65,22 @@ zh-CN:
 <template>
   <MinimalLayout>
     <div class="error-container">
+      <div class="error-nav">
+        <label
+          class="dark-mode"
+          tabindex="0"
+          @keydown.space.prevent="(e) => (e.target as HTMLLabelElement).click()"
+        >
+          <input
+            data-cy="dark-mode-toggle"
+            type="checkbox"
+            :checked="!darkmode.isDark"
+            @change="darkmode.onChange"
+          />
+          <span></span>
+        </label>
+      </div>
+
       <div class="error-wrapper">
         <div class="error-inner has-text-centered">
           <div class="bg-number">404</div>
@@ -84,6 +103,19 @@ zh-CN:
 
 <style lang="scss">
 .error-container {
+  width: 100vw;
+  min-height: 100vh;
+
+  .error-nav {
+    .dark-mode {
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: inline-block;
+      transform: scale(0.5);
+    }
+  }
+
   .error-wrapper {
     max-width: 840px;
     margin: 0 auto;

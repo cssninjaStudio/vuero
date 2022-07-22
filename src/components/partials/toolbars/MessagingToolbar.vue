@@ -39,6 +39,7 @@ const localFlagSrc = computed(() => {
     <div class="toolbar-link">
       <label class="dark-mode ml-auto">
         <input
+          data-cy="dark-mode-toggle"
           type="checkbox"
           :checked="!darkmode.isDark"
           tabindex="0"

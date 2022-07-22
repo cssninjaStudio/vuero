@@ -36,7 +36,12 @@ const localFlagSrc = computed(() => {
         class="dark-mode ml-auto"
         @keydown.space.prevent="(e) => (e.target as HTMLLabelElement).click()"
       >
-        <input type="checkbox" :checked="!darkmode.isDark" @change="darkmode.onChange" />
+        <input
+          data-cy="dark-mode-toggle"
+          type="checkbox"
+          :checked="!darkmode.isDark"
+          @change="darkmode.onChange"
+        />
         <span></span>
       </label>
     </div>

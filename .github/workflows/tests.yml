@@ -46,7 +46,7 @@ jobs:
       # install dependencies if the cache did not hit
       - name: Install dependencies
         if: steps.yarn-cache.outputs.cache-hit != 'true'
-        run: yarn --frozen-lockfile
+        run: yarn --frozen-lockfile --silent
 
       - run: yarn test:lint
 
@@ -77,9 +77,9 @@ jobs:
       # install dependencies if the cache did not hit
       - name: Install dependencies
         if: steps.yarn-cache.outputs.cache-hit != 'true'
-        run: yarn --frozen-lockfile
+        run: yarn --frozen-lockfile --silent
 
-      - run: yarn build
+      - run: SOURCE_MAP=false SILENT=true MINIFY=false yarn build
 
   build-npm:
     runs-on: ${{ matrix.os }}
@@ -110,4 +110,4 @@ jobs:
         if: steps.npm-cache.outputs.cache-hit != 'true'
         run: npm install --legacy-peer-deps
 
-      - run: npm run build
+      - run: SOURCE_MAP=false SILENT=true MINIFY=false npm run build

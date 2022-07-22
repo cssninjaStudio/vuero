@@ -1,6 +1,6 @@
 <script setup lang="ts">
 export interface VBlockProps {
-  title: string
+  title?: string
   subtitle?: string
   infratitle?: string
   center?: boolean

@@ -108,6 +108,7 @@ const wizard = useWizard()
       <div class="navbar-icon">
         <label class="dark-mode">
           <input
+            data-cy="dark-mode-toggle"
             type="checkbox"
             :checked="!darkmode.isDark"
             @change="darkmode.onChange"

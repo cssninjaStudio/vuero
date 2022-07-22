@@ -1,0 +1,53 @@
+name: cssninjaStudio / tests e2e
+
+on:
+  workflow_call:
+
+jobs:
+  tests-e2e:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node-version: [16.x]
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      
+      # cache node_modules
+      - name: Cache dependencies
+        uses: actions/cache@v3
+        id: yarn-cache
+        with:
+          path: |
+            **/node_modules
+          key: ${{ matrix.os }}-${{ matrix.node-version }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ matrix.os }}-${{ matrix.node-version }}-yarn-
+
+      # install dependencies if the cache did not hit
+      - name: Install dependencies
+        if: steps.yarn-cache.outputs.cache-hit != 'true'
+        run: yarn --frozen-lockfile --silent
+
+      - uses: cypress-io/github-action@v4
+        with:
+          # record: true
+          # parallel: true
+          install: false
+          build: SILENT=true MINIFY=false yarn build
+          start: yarn preview
+          command: yarn test:e2e
+          wait-on: 'http://localhost:5000'
+          cache-key: node-v${{ matrix.node-version }}-on-${{ runner.os }}-hash-${{ hashFiles('**/yarn.lock') }}
+        # env:
+        #   CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+        #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/upload-artifact@v3
+        if: failure()
+        with:
+          name: cypress-screenshots
+          path: cypress/screenshots

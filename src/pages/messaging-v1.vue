@@ -46,6 +46,7 @@ onMounted(async () => {
     // We always catch errors in the components, so we can display messages to the user
     // Here we just display the error with notyf popins
     notyf.error(e.message)
+    console.error(e)
   }
 })
 

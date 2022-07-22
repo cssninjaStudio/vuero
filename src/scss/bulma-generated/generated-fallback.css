@@ -47,6 +47,7 @@ a {
 .button.is-white[disabled],
 fieldset[disabled] .button.is-white {
   background-color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
 }
 
 .button.is-white.is-inverted {
@@ -167,6 +168,7 @@ fieldset[disabled] .button.is-black.is-inverted.is-outlined {
 .button.is-dark[disabled],
 fieldset[disabled] .button.is-dark {
   background-color: rgb(40, 50, 82);
+  border-color: rgb(40, 50, 82);
 }
 
 .button.is-dark.is-inverted {
@@ -249,6 +251,7 @@ fieldset[disabled] .button.is-dark.is-inverted.is-outlined {
 .button.is-primary[disabled],
 fieldset[disabled] .button.is-primary {
   background-color: rgb(65, 185, 131);
+  border-color: rgb(65, 185, 131);
 }
 
 .button.is-primary.is-inverted {
@@ -348,6 +351,7 @@ fieldset[disabled] .button.is-primary.is-inverted.is-outlined {
 .button.is-link[disabled],
 fieldset[disabled] .button.is-link {
   background-color: rgb(72, 95, 199);
+  border-color: rgb(72, 95, 199);
 }
 
 .button.is-link.is-inverted {
@@ -447,6 +451,7 @@ fieldset[disabled] .button.is-link.is-inverted.is-outlined {
 .button.is-info[disabled],
 fieldset[disabled] .button.is-info {
   background-color: rgb(3, 152, 226);
+  border-color: rgb(3, 152, 226);
 }
 
 .button.is-info.is-inverted {
@@ -546,6 +551,7 @@ fieldset[disabled] .button.is-info.is-inverted.is-outlined {
 .button.is-success[disabled],
 fieldset[disabled] .button.is-success {
   background-color: rgb(6, 214, 158);
+  border-color: rgb(6, 214, 158);
 }
 
 .button.is-success.is-inverted {
@@ -645,6 +651,7 @@ fieldset[disabled] .button.is-success.is-inverted.is-outlined {
 .button.is-warning[disabled],
 fieldset[disabled] .button.is-warning {
   background-color: rgb(250, 173, 66);
+  border-color: rgb(250, 173, 66);
 }
 
 .button.is-warning.is-inverted {
@@ -744,6 +751,7 @@ fieldset[disabled] .button.is-warning.is-inverted.is-outlined {
 .button.is-danger[disabled],
 fieldset[disabled] .button.is-danger {
   background-color: rgb(230, 41, 100);
+  border-color: rgb(230, 41, 100);
 }
 
 .button.is-danger.is-inverted {

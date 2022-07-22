@@ -5,6 +5,8 @@ e2ehost="http://localhost:5000"
 until $(curl --output /dev/null --silent --head --fail ${e2ehost}); do
   echo "Warning: ensure e2e server is runing on ${e2ehost}"
   echo " $ docker-compose -f docker-compose.e2e.yml up --build"
+  echo "or"
+  echo " $ SILENT=true MINIFY=false yarn build && yarn preview"
   echo ""
   echo "(retrying in 5 seconds)"
 
@@ -13,6 +15,6 @@ done
 
 set -xe
 
-yarn cypress run
-node  -r jiti/register ./scripts/create-screenshot-data.ts
+# CYPRESS_SCREENSHOTS=true yarn cypress run --e2e --browser chrome
+node -r jiti/register ./scripts/create-screenshot-data.ts
 ./scripts/convert-screenshot-webp.sh

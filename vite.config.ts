@@ -14,9 +14,11 @@ import { vueI18n } from '@intlify/vite-plugin-vue-i18n'
 import { VitePWA } from 'vite-plugin-pwa'
 import purgecss from 'rollup-plugin-purgecss'
 
-const SILENT = Boolean(process.env.SILENT) ?? false
-const SOURCE_MAP = Boolean(process.env.SOURCE_MAP) ?? false
+const MINIFY = process.env.MINIFY ? process.env.MINIFY === 'true' : true
+const SILENT = process.env.SILENT ? process.env.SILENT === 'true' : false
+const SOURCE_MAP = process.env.SOURCE_MAP ? process.env.SOURCE_MAP === 'true' : false
 const SITEMAP_HOST = process.env.SITEMAP_HOST || 'http://localhost:3000/'
+const GTM_ID = process.env.GTM_ID ?? ''
 
 /**
  * This is the main configuration file for vitejs
@@ -53,6 +55,7 @@ export default defineConfig({
       '@ckeditor/ckeditor5-build-classic',
       '@iconify/iconify',
       '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.min.js',
+      '@vee-validate/zod',
       '@vueuse/core',
       '@vueuse/head',
       '@vueform/multiselect',
@@ -62,6 +65,7 @@ export default defineConfig({
       'dayjs',
       'dropzone',
       'dragula',
+      'defu',
       'filepond',
       'filepond-plugin-file-validate-size',
       'filepond-plugin-file-validate-type',
@@ -84,10 +88,12 @@ export default defineConfig({
       'vue-scrollto',
       'vue3-apexcharts',
       'vue-tippy',
+      'vue-i18n',
       'simplebar',
       'simple-datatables',
       'tiny-slider/src/tiny-slider',
       'vue-accessible-color-picker',
+      'zod',
     ],
   },
   // Will be passed to @rollup/plugin-alias as its entries option.
@@ -100,10 +106,8 @@ export default defineConfig({
     ],
   },
   build: {
-    minify: true,
+    minify: MINIFY,
     sourcemap: SOURCE_MAP,
-    // Turning off brotliSize display can slightly reduce packaging time
-    brotliSize: !SILENT,
     // Do not warn about large chunks
     chunkSizeWarningLimit: Infinity,
     // Double the default size threshold for inlined assets
@@ -216,12 +220,13 @@ export default defineConfig({
      *
      * @see https://github.com/stafyniaksacha/vite-plugin-radar
      */
-    ViteRadar({
-      enableDev: true,
-      gtm: {
-        id: 'GTM-N9P6H6B',
-      },
-    }),
+    !GTM_ID
+      ? undefined
+      : ViteRadar({
+          gtm: {
+            id: GTM_ID,
+          },
+        }),
 
     /**
      * vite-plugin-pwa generate manifest.json and register services worker to enable PWA
@@ -298,34 +303,36 @@ export default defineConfig({
      *
      * @see https://github.com/anncwb/vite-plugin-imagemin
      */
-    ImageMin({
-      verbose: !SILENT,
-      gifsicle: {
-        optimizationLevel: 7,
-        interlaced: false,
-      },
-      optipng: {
-        optimizationLevel: 7,
-      },
-      mozjpeg: {
-        quality: 60,
-      },
-      pngquant: {
-        quality: [0.8, 0.9],
-        speed: 4,
-      },
-      svgo: {
-        plugins: [
-          {
-            name: 'removeViewBox',
-            active: false,
+    !MINIFY
+      ? undefined
+      : ImageMin({
+          verbose: !SILENT,
+          gifsicle: {
+            optimizationLevel: 7,
+            interlaced: false,
           },
-          {
-            name: 'removeEmptyAttrs',
-            active: false,
+          optipng: {
+            optimizationLevel: 7,
           },
-        ],
-      },
-    }),
+          mozjpeg: {
+            quality: 60,
+          },
+          pngquant: {
+            quality: [0.8, 0.9],
+            speed: 4,
+          },
+          svgo: {
+            plugins: [
+              {
+                name: 'removeViewBox',
+                active: false,
+              },
+              {
+                name: 'removeEmptyAttrs',
+                active: false,
+              },
+            ],
+          },
+        }),
   ],
 })
