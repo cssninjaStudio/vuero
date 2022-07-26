@@ -14,8 +14,8 @@ describe(`Authentification - Navigation Guards`, () => {
       },
     })
 
-    // auth required: should be redirected to /auth/login-1?redirect=
-    cy.log(`Check auth redirection`).location('pathname').should('eq', '/auth/login-1')
+    // auth required: should be redirected to /auth/login?redirect=
+    cy.log(`Check auth redirection`).location('pathname').should('eq', '/auth/login')
 
     // perform login
     cy.get('[data-cy="email-input"]')
