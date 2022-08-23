@@ -71,7 +71,7 @@
     "@vee-validate/zod": "4.6.2",
     "@vueform/multiselect": "2.5.2",
     "@vueform/slider": "2.1.2",
-    "@vueuse/core": "8.9.4",
+    "@vueuse/core": "9.1.1",
     "@vueuse/head": "0.7.6",
     "apexcharts": "3.35.3",
     "axios": "0.27.2",
