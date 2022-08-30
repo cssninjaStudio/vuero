@@ -1,4 +1,5 @@
 <script lang="ts">
+import type { InjectionKey, PropType } from 'vue'
 import type { VFlexTableColumn } from './VFlexTable.vue'
 import VFlexTableSortColumn from './VFlexTableSortColumn.vue'
 
@@ -376,6 +377,7 @@ export default defineComponent({
     }) as VFlexTableWrapperInjection
 
     provide(flewTableWrapperSymbol, wrapperState)
+    context.expose(wrapperState)
 
     return () => {
       const slotContent = context.slots.default?.(wrapperState)
