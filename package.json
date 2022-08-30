@@ -121,7 +121,7 @@
     "@commitlint/config-conventional": "17.0.3",
     "@commitlint/prompt-cli": "17.0.3",
     "@iconify/json": "2.1.81",
-    "@intlify/vite-plugin-vue-i18n": "5.0.0",
+    "@intlify/vite-plugin-vue-i18n": "6.0.1",
     "@types/dragula": "3.7.1",
     "@types/mapbox-gl": "2.7.3",
     "@types/mapbox__mapbox-gl-geocoder": "4.7.2",
