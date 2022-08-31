@@ -63,7 +63,7 @@
     "release:standard-version": "standard-version"
   },
   "dependencies": {
-    "@ckeditor/ckeditor5-build-classic": "34.2.0",
+    "@ckeditor/ckeditor5-build-classic": "35.1.0",
     "@ckeditor/ckeditor5-vue": "4.0.1",
     "@iconify/iconify": "2.2.1",
     "@mapbox/mapbox-gl-geocoder": "5.0.1",
