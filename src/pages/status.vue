@@ -19,7 +19,12 @@ useHead({
         <RouterLink to="/" class="logo">
           <AnimatedLogo width="38px" height="38px" />
         </RouterLink>
-        <RouterLink class="action-link" to="/sidebar/layouts"> Take me Back </RouterLink>
+        <div>
+          <RouterLink class="action-link mx-4" to="/sidebar/dashboards">
+            Home
+          </RouterLink>
+          <RouterLink class="action-link mx-4" to="/roadmap"> Roadmap </RouterLink>
+        </div>
       </div>
 
       <!--Status body-->
