@@ -1,4 +1,4 @@
-import { START_LOCATION } from '@vue-router'
+import { START_LOCATION } from 'vue-router'
 import { definePlugin } from '/@src/app'
 import { useUserSession } from '/@src/stores/userSession'
 import { useNotyf } from '/@src/composable/useNotyf'

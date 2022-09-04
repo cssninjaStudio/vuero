@@ -9,8 +9,6 @@
  * @see /src/layouts/layout-switcher/LayoutSwitcher.vue
  */
 
-import { computed, ref, defineAsyncComponent } from 'vue'
-import { useRoute } from '@vue-router'
 import { acceptHMRUpdate, defineStore } from 'pinia'
 
 import type { SidebarTheme } from '/@src/components/navigation/desktop/Sidebar.vue'

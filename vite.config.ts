@@ -1,8 +1,9 @@
+import { resolve, dirname } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'vite'
-import path from 'path'
 import Vue from '@vitejs/plugin-vue'
 import VueRouter from 'unplugin-vue-router/vite'
-import { VueRouterExports } from 'unplugin-vue-router'
+import { VueRouterAutoImports } from 'unplugin-vue-router'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import ViteFonts from 'vite-plugin-fonts'
@@ -11,7 +12,7 @@ import PurgeIcons from 'vite-plugin-purge-icons'
 import { imagetools } from 'vite-imagetools'
 import ImageMin from 'vite-plugin-imagemin'
 import VueroDocumentation from './vite-plugin-vuero-doc/index'
-import { vueI18n } from '@intlify/vite-plugin-vue-i18n'
+import vueI18n from '@intlify/vite-plugin-vue-i18n'
 import { VitePWA } from 'vite-plugin-pwa'
 import purgecss from 'rollup-plugin-purgecss'
 
@@ -106,21 +107,13 @@ export default defineConfig({
     ],
   },
   build: {
-    minify: MINIFY,
+    // minify: 'terser',
     sourcemap: SOURCE_MAP,
     // Do not warn about large chunks
     chunkSizeWarningLimit: Infinity,
     // Double the default size threshold for inlined assets
     // https://vitejs.dev/config/build-options.html#build-assetsinlinelimit
     assetsInlineLimit: 4096 * 2,
-
-    /**
-     * Uncomment this section to build the demo with missing images
-     * Don't forget to remove this section when you replaced assets with yours
-     */
-    /// rollupOptions: {
-    ///   external: [/\/demo\/.*/],
-    /// },
   },
   plugins: [
     /**
@@ -138,7 +131,7 @@ export default defineConfig({
      * @see https://github.com/intlify/bundle-tools/tree/main/packages/vite-plugin-vue-i18n
      */
     vueI18n({
-      include: path.resolve(__dirname, './src/locales/**'),
+      include: resolve(dirname(fileURLToPath(import.meta.url)), './src/locales/**'),
     }),
 
     /**
@@ -159,12 +152,7 @@ export default defineConfig({
      */
     AutoImport({
       dts: true,
-      imports: [
-        'vue',
-        '@vueuse/core',
-        { 'vue-router': ['RouterView', 'RouterLink'] },
-        { '@vue-router': VueRouterExports },
-      ],
+      imports: ['vue', '@vueuse/core', VueRouterAutoImports],
     }),
 
     /**

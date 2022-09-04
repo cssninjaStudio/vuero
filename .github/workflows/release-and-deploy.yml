@@ -31,21 +31,28 @@ jobs:
         with:
           node-version: '16.x'
 
-      # cache node_modules
-      - name: Cache dependencies
-        uses: actions/cache@v3
-        id: yarn-cache
+      - uses: pnpm/action-setup@v2.0.1
+        name: Install pnpm
+        id: pnpm-install
         with:
-          path: |
-            **/node_modules
-          key: ${{ matrix.os }}-${{ matrix.node-version }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ matrix.os }}-${{ matrix.node-version }}-yarn-
+          version: 7
+          run_install: false
 
-      # install dependencies if the cache did not hit
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        run: |
+          echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
+
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
+          key: ${{ matrix.node-version }}-${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
       - name: Install dependencies
-        if: steps.yarn-cache.outputs.cache-hit != 'true'
-        run: yarn --frozen-lockfile
+        run: pnpm instal
 
       - name: Build release zip archive
         timeout-minutes: 60

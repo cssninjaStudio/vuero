@@ -11,13 +11,6 @@ Check the markup for more details about usage.
 
 ```vue
 <script setup lang="ts">
-import { h } from 'vue'
-import { RouterLink } from '@vue-router'
-
-import VTag from '/@src/components/base/tags/VTag.vue'
-import FlexTableDropdown from '/@src/components/partials/dropdowns/FlexTableDropdown.vue'
-import VAvatarStack from '/@src/components/base/avatar/VAvatarStack.vue'
-
 // this is our data
 const data = [
   {

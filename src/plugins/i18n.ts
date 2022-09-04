@@ -13,8 +13,6 @@ export default definePlugin(({ app }) => {
   const i18n = createI18n({
     locale: defaultLocale.value,
     messages,
-    legacy: false,
-    fallbackWarn: false,
   })
 
   app.use(i18n)

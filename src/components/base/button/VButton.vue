@@ -1,5 +1,5 @@
 <script lang="ts">
-import type { RouteLocationRaw } from '@vue-router'
+import { type RouteLocationRaw, RouterLink } from 'vue-router'
 import { CssUnitRe } from '/@src/utils/regex'
 
 import VPlaceload from '../loader/VPlaceload.vue'

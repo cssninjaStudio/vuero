@@ -17,7 +17,8 @@
     "types": [
       "vite/client",
       "vite-plugin-pwa/client",
-      "@intlify/vite-plugin-vue-i18n/client"
+      "@intlify/vite-plugin-vue-i18n/client",
+      "typed-router.d.ts"
     ],
     "paths": {
       "/@src/*": ["./src/*"]

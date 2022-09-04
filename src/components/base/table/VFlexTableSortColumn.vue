@@ -1,5 +1,5 @@
 <script lang="ts">
-import type { RouteLocationOptions } from '@vue-router'
+import type { RouteLocationOptions } from 'vue-router'
 
 export default defineComponent({
   props: {

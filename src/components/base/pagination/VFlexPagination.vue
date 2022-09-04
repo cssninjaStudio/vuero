@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { RouteLocationOptions } from '@vue-router'
+import type { RouteLocationOptions } from 'vue-router'
 
 import { useI18n } from 'vue-i18n'
 

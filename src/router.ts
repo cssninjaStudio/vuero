@@ -1,40 +1,29 @@
-import { createRouter as createClientRouter, createWebHistory } from '@vue-router'
+import { createRouter as createClientRouter, createWebHistory } from 'vue-router/auto'
 
-/**
- * Here is how a simple route is generated:
- * import { RouteRecordRaw } from '@vue-router'
+/*
+ * By default, this plugins checks the folder at src/pages for any .vue files
+ * and generates the corresponding routing structure basing itself in the file name.
+ * This way, you no longer need to maintain a routes array when adding routes to your application,
+ * instead just add the new .vue component to the routes folder and let this plugin do the rest!
  *
- * const routes: RouteRecordRaw = [{
- *    component: () => import('/src/pages/wizard-1.vue'),
- *    name: 'wizard-v1',
- *    path: '/wizard-v1',
- *    props: true,
- *    meta: {
- *      requiresAuth: true
- *    },
- * }]
+ * Let's take a look at a simple example:
  *
- * Here is how nested routes are generated:
- * import { RouteRecordRaw } from '@vue-router'
+ * src/pages/
+ * ├── index.vue
+ * ├── about.vue
+ * └── users/
+ *     ├── index.vue
+ *     └── [id].vue
+ * This will generate the following routes:
  *
- * const routes: RouteRecordRaw = [{
- *    component: () => import('/src/pages/auth.vue'),
- *    path: '/auth',
- *    props: true,
- *    children: [
- *      {
- *        component: () => import('/src/pages/auth/login-1.vue'),
- *        name: 'auth-login-1',
- *        path: 'login-1',
- *        props: true
- *      },
- *    ],
- * }]
+ * /: -> renders the index.vue component
+ * /about: -> renders the about.vue component
+ * /users: -> renders the users/index.vue component
+ * /users/:id: -> renders the users/[id].vue component. id becomes a route param.
  *
- * Uncomment the line below to view the generated routes
+ * View more examples:
+ * @see https://github.com/posva/unplugin-vue-router#routes-folder-structure
  */
-// console.log(routes)
-
 export function createRouter() {
   const router = createClientRouter({
     /**
@@ -44,6 +33,19 @@ export function createRouter() {
      */
     // history: createWebHistory('my-subdirectory'),
     history: createWebHistory(),
+
+    /**
+     * You can extend existing routes:
+     */
+    // extendRoutes: (routes) => {
+    //   const adminRoute = routes.find((r) => r.name === '/admin')
+    //   if (!adminRoute) {
+    //     adminRoute.meta ??= {}
+    //     adminRoute.meta.requiresAuth = true
+    //   }
+    //   // completely optional since we are modifying the routes in place
+    //   return routes
+    // },
 
     // handle scroll behavior between routes
     scrollBehavior: (to, _, savedPosition) => {

@@ -19,23 +19,28 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      # cache node_modules
-      - name: Cache dependencies
-        uses: actions/cache@v3
-        id: yarn-cache
+      - uses: pnpm/action-setup@v2.0.1
+        name: Install pnpm
+        id: pnpm-install
         with:
-          path: |
-            **/node_modules
-          key: ${{ matrix.os }}-${{ matrix.node-version }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          version: 7
+          run_install: false
+
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        run: |
+          echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
+
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
+          key: ${{ matrix.node-version }}-${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
-            ${{ matrix.os }}-${{ matrix.node-version }}-yarn-
+            ${{ runner.os }}-pnpm-store-
 
-      # install dependencies if the cache did not hit
-      - name: Install dependencies
-        if: steps.yarn-cache.outputs.cache-hit != 'true'
-        run: yarn --frozen-lockfile --silent
-
-      - run: yarn test:lint
+      - name: Lint
+        run: pnpm test:lint
 
   build:
     runs-on: ${{ matrix.os }}
@@ -50,23 +55,31 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      # cache node_modules
-      - name: Cache dependencies
-        uses: actions/cache@v3
-        id: yarn-cache
+      - uses: pnpm/action-setup@v2.0.1
+        name: Install pnpm
+        id: pnpm-install
         with:
-          path: |
-            **/node_modules
-          key: ${{ matrix.os }}-${{ matrix.node-version }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          version: 7
+          run_install: false
+
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        run: |
+          echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
+
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
+          key: ${{ matrix.node-version }}-${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
-            ${{ matrix.os }}-${{ matrix.node-version }}-yarn-
+            ${{ runner.os }}-pnpm-store-
 
-      # install dependencies if the cache did not hit
       - name: Install dependencies
-        if: steps.yarn-cache.outputs.cache-hit != 'true'
-        run: yarn --frozen-lockfile --silent
+        run: pnpm instal
 
-      - run: SOURCE_MAP=false SILENT=true MINIFY=false yarn build
+      - name: Build (pnpm)
+        run: SOURCE_MAP=false SILENT=true MINIFY=false pnpm build
 
   build-npm:
     runs-on: ${{ matrix.os }}
@@ -95,6 +108,7 @@ jobs:
       # install dependencies if the cache did not hit
       - name: Install dependencies
         if: steps.npm-cache.outputs.cache-hit != 'true'
-        run: npm install --legacy-peer-deps
+        run: npm install
 
-      - run: SOURCE_MAP=false SILENT=true MINIFY=false npm run build
+      - bame: Build (npm)
+        run: SOURCE_MAP=false SILENT=true MINIFY=false npm run build
