@@ -3,7 +3,7 @@ const emit = defineEmits(['rename', 'collapse'])
 </script>
 
 <template>
-  <VDropdown icon="feather:more-vertical" right>
+  <VDropdown icon="feather:more-vertical" right :options="{ clickOutside: false }">
     <template #content>
       <a
         class="dropdown-item kanban-rename kill-drop"
@@ -31,10 +31,9 @@ const emit = defineEmits(['rename', 'collapse'])
             <ul>
               <li>
                 <div class="column-setting">
-                  <label class="form-switch">
-                    <input type="checkbox" class="is-switch" />
-                    <i aria-hidden="true"></i>
-                  </label>
+                  <VField>
+                    <VSwitchSegment />
+                  </VField>
                   <div class="text">
                     <span>Lock</span>
                     <span>Locks the column</span>
@@ -43,10 +42,9 @@ const emit = defineEmits(['rename', 'collapse'])
               </li>
               <li>
                 <div class="column-setting">
-                  <label class="form-switch">
-                    <input type="checkbox" class="is-switch" checked />
-                    <i aria-hidden="true"></i>
-                  </label>
+                  <VField>
+                    <VSwitchSegment />
+                  </VField>
                   <div class="text">
                     <span>Notifications</span>
                     <span>Enables or disables notifications</span>
@@ -55,10 +53,9 @@ const emit = defineEmits(['rename', 'collapse'])
               </li>
               <li>
                 <div class="column-setting">
-                  <label class="form-switch">
-                    <input type="checkbox" class="is-switch" />
-                    <i aria-hidden="true"></i>
-                  </label>
+                  <VField>
+                    <VSwitchSegment />
+                  </VField>
                   <div class="text">
                     <span>Sorting</span>
                     <span>Enables or disables sorting</span>

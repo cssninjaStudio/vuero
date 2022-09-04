@@ -6,15 +6,24 @@ import type { Ref } from 'vue'
 import { reactive, ref, watchEffect } from 'vue'
 import { onClickOutside } from '@vueuse/core'
 
+export interface DropdownOptions {
+  clickOutside?: boolean
+}
+
 /**
  * Generate refs to handle a dropdown state
  */
-export function useDropdown(container: Ref<HTMLElement | undefined>) {
+export function useDropdown(
+  container: Ref<HTMLElement | undefined>,
+  options: DropdownOptions = { clickOutside: true }
+) {
   const isOpen = ref(false)
 
-  onClickOutside(container, () => {
-    isOpen.value = false
-  })
+  if (options.clickOutside) {
+    onClickOutside(container, () => {
+      isOpen.value = false
+    })
+  }
 
   const open = () => {
     isOpen.value = true
