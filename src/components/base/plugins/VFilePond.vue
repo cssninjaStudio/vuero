@@ -97,10 +97,15 @@ export default defineComponent({
     },
   },
   emits: ['input', ...eventNames],
-  setup(props, { emit }) {
+  setup(props, { emit, expose }) {
     const pond = ref<FilePond.FilePond>()
     const inputElement = ref<HTMLInputElement>()
     const pondOptions = Object.assign({}, { ...props }) as FilePondOptions
+
+    expose({
+      pond,
+      inputElement,
+    })
 
     onMounted(() => {
       if (inputElement.value && FilePond.supported()) {
