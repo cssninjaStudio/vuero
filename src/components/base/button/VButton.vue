@@ -301,6 +301,15 @@ export default defineComponent({
       border-color: var(--fade-grey-dark-2);
     }
 
+    &:not(.is-primary, .is-success, .is-info, .is-warning, .is-danger, .is-light, .is-white) {
+      &.is-active {
+        background: var(--primary) !important;
+        border-color: var(--primary) !important;
+        color: var(--white) !important;
+        box-shadow: var(--primary-box-shadow) !important;
+      }
+    }
+
     &:focus-visible {
       outline-offset: var(--accessibility-focus-outline-offset);
       outline-width: var(--accessibility-focus-outline-width);
