@@ -1,10 +1,5 @@
-<script lang="ts">
-import 'dragula/dist/dragula.css'
-</script>
-
 <script setup lang="ts">
-import dragula from 'dragula'
-
+import 'dragula/dist/dragula.css'
 import type { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
 
 import { tasks } from '/@src/data/apps/kanban'
@@ -73,69 +68,71 @@ const completedTasks = computed(() => {
   return filteredTasks.value.filter((task) => task.state === 'completed')
 })
 
+function onDragInvalid(el?: Element): boolean {
+  if (el) {
+    if (el.classList.contains('kanban-card')) {
+      const id = (el as HTMLElement).dataset.id
+
+      if (id) {
+        const task = tasks.find((task) => {
+          return task.id === id
+        })
+
+        if (task) {
+          return task.state === 'completed' || task.state === 'new'
+        }
+      }
+    }
+
+    return el.classList.contains('kanban-empty')
+  }
+
+  return true
+}
+function onDrop(el: Element, target: Element) {
+  if (el && target) {
+    const id = (el as HTMLElement).dataset.id
+    const state = (el as HTMLElement).dataset.state
+
+    if (id && state) {
+      const task = tasks.find((task) => {
+        return task.id === id
+      })
+
+      if (task) {
+        task.state = state
+      }
+    }
+  }
+}
+
 onMounted(() => {
-  if (
-    newContainer.value &&
-    progressContainer.value &&
-    readyContainer.value &&
-    reviewContainer.value &&
-    completedContainer.value
-  ) {
-    const drake = dragula(
-      [
+  // this is a hack for dragula
+  ;(window as any).global = window
+
+  import('dragula').then((module) => {
+    if (
+      newContainer.value &&
+      progressContainer.value &&
+      readyContainer.value &&
+      reviewContainer.value &&
+      completedContainer.value
+    ) {
+      const dragula = module.default
+      const containers: Element[] = [
         newContainer.value,
         progressContainer.value,
         readyContainer.value,
         reviewContainer.value,
         completedContainer.value,
-      ],
-      {
-        invalid: (el) => {
-          const _el = el as HTMLElement
+      ]
+      const drake = dragula(containers, {
+        invalid: onDragInvalid,
+      })
 
-          if (_el) {
-            if (_el.classList.contains('kanban-card')) {
-              const id = _el.dataset.id
-
-              if (id) {
-                const task = tasks.find((task) => {
-                  return task.id === id
-                })
-
-                if (task) {
-                  return task.state === 'completed' || task.state === 'new'
-                }
-              }
-            }
-
-            return _el.classList.contains('kanban-empty')
-          }
-
-          return true
-        },
-      }
-    )
-
-    drake.on('drop', (el, target) => {
-      const _target = target as HTMLElement
-      const _el = el as HTMLElement
-
-      if (_el && _target) {
-        const id = _el.dataset.id
-        const state = _target.dataset.state
-
-        if (id && state) {
-          const task = tasks.find((task) => {
-            return task.id === id
-          })
-
-          if (task) {
-            task.state = state
-          }
-        }
-      }
-    })
-  }
+      drake.on('drop', onDrop)
+    }
+  })
 })
 </script>
 
