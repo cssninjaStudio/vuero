@@ -9,51 +9,43 @@ First of all, Thank you so much for purchasing this template and for being our l
 ### Prerequisites
 
 1. A recent web browser (Chrome, Edge, Firefox, ...)
-2. [Nodejs LTS](https://nodejs.org/en/) _(> 14.x with npm >7)_ installed
+2. [Nodejs LTS](https://nodejs.org/en/) _(> 16.x with npm >8)_ installed
 3. Knowledge with [Typescript](https://github.com/microsoft/typescript) _(> 4.x)_ (should not be installed globally)
-4. (recommended) [VSCode](https://code.visualstudio.com/ with [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+4. (recommended) [VSCode](https://code.visualstudio.com/ with [Volar](https://marketplace.visualstudio.com/items?itemName=vue.volar)
 
 #### Install nodejs
 
-First, check if you already have node and npm installed. To check if you have Node.js installed, run this command in your terminal:
+1. Check if you already have Node.js installed. Run this command in your terminal:
 
 ```bash
 node -v
-```
-
-To confirm that you have npm installed you can run this command in your terminal:
-
-```bash
-npm -v
 ```
 
 If node is not installed on your machine, you can go to the official nodejs.org website, and choose the version depending on your operating system:
 
 - <a href="https://nodejs.org/en/download/" target="_blank">Install node.js and npm on Windows, Linux or Mac OSX</a>
 
-#### Check the npm version
-
-npm is a separate project from Node.js, and tends to update more frequently. As a result, even if you’ve just downloaded Node.js (and therefore npm), you’ll probably need to update your npm. Luckily, npm knows how to update itself! To update your npm, type this into your terminal:
+2. Enable pnpm with corepack
 
 ```bash
-npm install --global npm@latest
+corepack enable
+corepack prepare pnpm@latest --activate
 ```
 
-#### Installing Yarn (recommended)
-
-We personally recommend Yarn as we think it is a better package manager than npm. If you want to use Yarn, keep in mind that you should not mix the 2. You either use Yarn or Npm in a project, never both.
-
-```bash
-npm install --global yarn
-```
-
-## 📦 Dependencies installation
+> _corepack is installed with node from **v16.13.x**, if your version is below, install it with: `npm install -g corepack`_
 
 To setup the template and start installing project dependencies, run one of the following commands:
 
 ```bash
-# using npm v7
-npm install --legacy-peer-deps
+# using pnpm (recommended)
+pnpm install
+```
+
+Note that you can also use other package manager (npm or yarn) but we recommend using pnpm:
+
+```bash
+# using npm
+npm install
 
 # using yarn
 yarn install
@@ -64,7 +56,14 @@ yarn install
 To start the development server, run one of the following commands:
 
 ```bash
-# using npm v7
+# using pnpm (recommended)
+pnpm dev
+```
+
+Using npm or yarn
+
+```bash
+# using npm
 npm run dev
 
 # using yarn
