@@ -1,33 +1,76 @@
+<script lang="ts">
+import { defineLoader } from 'vue-router/auto'
+
+/**
+ * This is an example of data loader (experimental feature)
+ * Name the loader however you want **and export it**
+ *
+ * Note that it should be defined outside of script setup
+ *
+ * @see https://github.com/vuejs/rfcs/discussions/460
+ * @see https://github.com/posva/unplugin-vue-router/tree/main/src/data-fetching
+ */
+export const useRoadmapData = defineLoader(async (route) => {
+  console.log('useRoadmapData defineLoader', route)
+
+  // this is a fake loader, you may want to load data with fetch
+  const [roadmap, releases] = await Promise.all([
+    import('/@src/data/apps/roadmap').then((module) => module.roadmap),
+    import('/@src/data/apps/changelog').then((module) => module.changelog),
+  ])
+
+  // we use the query params to filters the data,
+  // they are executed each time router path change
+  const releaseWithBugFixes = releases.filter((release) => {
+    if (route.query.type) {
+      const firstBugFix = release.changelog.find((item) => item.type === route.query.type)
+      return firstBugFix !== undefined
+    }
+
+    return true
+  })
+
+  const releasesByMonth = releaseWithBugFixes.reduce((accumulator, item) => {
+    const month = item.date.split(' ')[0]
+    accumulator[month] = accumulator[month] ?? { month: `${month} 2022`, releases: [] }
+    accumulator[month].releases.push(item)
+
+    return accumulator
+  }, {})
+
+  // return anything you want to expose
+  return {
+    roadmap,
+    changelog: releasesByMonth,
+  }
+})
+</script>
+
 <script setup lang="ts">
+import { useRouteQuery } from '@vueuse/router'
 import { useHead } from '@vueuse/head'
 import { useDarkmode } from '/@src/stores/darkmode'
 
-import { roadmap } from '/@src/data/apps/roadmap'
-import { changelog } from '/@src/data/apps/changelog'
-
 const darkmode = useDarkmode()
+
+const { data, pending } = useRoadmapData()
+const years = ['2022', '2021', '2020', '2019']
+const changeTypes = ['All', 'Enhancements', 'Features', 'Bug fixes']
+
+const selectedYear = useRouteQuery('year', '2022')
+const selectedQuarter = useRouteQuery('quarter', '3')
+const activeTab = useRouteQuery('tab', 'roadmap')
+const selectedChangeType = useRouteQuery('type', 'All')
+
+const activeYearProgress = computed(
+  () => data.value?.roadmap?.find((x) => x.year === selectedYear.value)?.progress
+)
 
 useHead({
   title: 'Utility Roadmap - Sidebar - Vuero',
 })
-
-const selectedYear: any = ref(['2022'])
-const years = ref(['2022', '2021', '2020', '2019'])
-const selectedQuarter = ref(3)
-
-const activeYear = ref(selectedYear.value[0].toString())
-const activeProgress = ref(roadmap.find((x) => x.year === activeYear.value))
-
-console.log('Year: ', activeYear.value)
-console.log('Progress: ', activeProgress.value?.progress)
-
-const selectedChangeType: any = ref(['All'])
-const changeTypes = ref(['All', 'Enhancements', 'Features', 'Bug fixes'])
-
-const activeChangeType = ref(selectedChangeType.value[0].toString())
-console.log('Change type: ', activeChangeType.value)
 </script>
-  
+
 <template>
   <MinimalLayout>
     <!-- Roadmap -->
@@ -48,15 +91,23 @@ console.log('Change type: ', activeChangeType.value)
       <VTabs
         slider
         align="centered"
-        selected="roadmap"
+        :selected="activeTab"
         :tabs="[
-          { label: 'Roadmap', value: 'roadmap' },
-          { label: 'Changelog', value: 'changelog' },
+          {
+            label: 'Roadmap',
+            value: 'roadmap',
+            to: { name: '/roadmap', query: { tab: 'roadmap' } },
+          },
+          {
+            label: 'Changelog',
+            value: 'changelog',
+            to: { name: '/roadmap', query: { tab: 'changelog' } },
+          },
         ]"
       >
         <template #tab="{ activeValue }">
           <div v-if="activeValue === 'roadmap'">
-            <div class="roadmap-outer">
+            <div id="roadmap" class="roadmap-outer">
               <div class="roadmap-header has-text-centered">
                 <h2 class="title is-2 is-bold">Our Roadmap</h2>
                 <p>
@@ -67,10 +118,10 @@ console.log('Change type: ', activeChangeType.value)
 
                 <div class="currently-planned">
                   <div>
-                    <span
-                      >Q{{ selectedQuarter }} {{ activeYear }} Planned:
-                      <span class="count">22 features</span></span
-                    >
+                    <span>
+                      Q{{ selectedQuarter }} {{ selectedYear }} Planned:
+                      <span class="count">22 features</span>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -87,7 +138,7 @@ console.log('Change type: ', activeChangeType.value)
                           :options="years"
                           placeholder="Select a Year..."
                           :searchable="true"
-                          @select="selectedQuarter = 1"
+                          :loading="pending"
                         />
                       </VControl>
                     </VField>
@@ -97,32 +148,32 @@ console.log('Change type: ', activeChangeType.value)
                       <VField addons>
                         <VControl>
                           <VButton
-                            :class="selectedQuarter === 1 && 'is-active'"
-                            @click="selectedQuarter = 1"
+                            :class="selectedQuarter === '1' && 'is-active'"
+                            @click="selectedQuarter = '1'"
                           >
                             Q1
                           </VButton>
                         </VControl>
                         <VControl>
                           <VButton
-                            :class="selectedQuarter === 2 && 'is-active'"
-                            @click="selectedQuarter = 2"
+                            :class="selectedQuarter === '2' && 'is-active'"
+                            @click="selectedQuarter = '2'"
                           >
                             Q2
                           </VButton>
                         </VControl>
                         <VControl>
                           <VButton
-                            :class="selectedQuarter === 3 && 'is-active'"
-                            @click="selectedQuarter = 3"
+                            :class="selectedQuarter === '3' && 'is-active'"
+                            @click="selectedQuarter = '3'"
                           >
                             Q3
                           </VButton>
                         </VControl>
                         <VControl>
                           <VButton
-                            :class="selectedQuarter === 4 && 'is-active'"
-                            @click="selectedQuarter = 4"
+                            :class="selectedQuarter === '4' && 'is-active'"
+                            @click="selectedQuarter = '4'"
                           >
                             Q4
                           </VButton>
@@ -133,24 +184,24 @@ console.log('Change type: ', activeChangeType.value)
                   <div class="end">
                     <VField>
                       <div class="progress-meta">
-                        <VLabel>Overview</VLabel>
-                        <span class="title is-6 is-bold"
-                          >{{ activeProgress?.progress }}%</span
-                        >
+                        <VLabel>Year milestone</VLabel>
+                        <span class="title is-6 is-bold">
+                          {{ activeYearProgress }}%
+                        </span>
                       </div>
-                      <VProgress size="smaller" :value="activeProgress?.progress" />
+                      <VProgress size="smaller" :value="activeYearProgress" />
                     </VField>
                   </div>
                 </div>
 
                 <div class="roadmap-list">
                   <!--Item-->
-                  <template v-for="(year, index) in roadmap" :key="index">
+                  <template v-for="(year, index) in data.roadmap" :key="index">
                     <template v-for="quarter in year.quarters" :key="quarter.id">
                       <div
                         v-if="
                           selectedYear.includes(quarter.year) &&
-                          quarter.quarter === selectedQuarter
+                          String(quarter.quarter) === String(selectedQuarter)
                         "
                         class="roadmap-item"
                       >
@@ -181,7 +232,7 @@ console.log('Change type: ', activeChangeType.value)
             </div>
           </div>
           <div v-else-if="activeValue === 'changelog'">
-            <div class="roadmap-outer">
+            <div id="changelog" class="roadmap-outer">
               <div class="roadmap-header has-text-centered">
                 <h2 class="title is-2 is-bold">Changelog</h2>
                 <p>
@@ -217,7 +268,7 @@ console.log('Change type: ', activeChangeType.value)
 
                 <div class="roadmap-list">
                   <div
-                    v-for="(block, index) in changelog"
+                    v-for="(block, index) in data.changelog"
                     :key="index"
                     class="changelog-items-outer"
                   >
@@ -232,12 +283,21 @@ console.log('Change type: ', activeChangeType.value)
                             <template #header-left>
                               <h3 class="title is-6 py-2">{{ item.date }}</h3>
                             </template>
-                            <template #header-right> </template>
+                            <template #header-right>
+                              <VTag :label="item.tag" curved />
+                            </template>
                             <template #content>
                               <div
-                                v-for="(line, i) in item.items"
+                                v-for="(line, i) in item.changelog"
                                 :key="i"
                                 class="changelog-line"
+                                :style="{
+                                  opacity:
+                                    selectedChangeType === 'All' ||
+                                    selectedChangeType === line.type
+                                      ? 1
+                                      : 0.3,
+                                }"
                               >
                                 <VTag
                                   v-if="line.type === 'Enhancements'"

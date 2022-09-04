@@ -28,6 +28,7 @@ specifiers:
   '@vueform/slider': 2.1.2
   '@vueuse/core': 9.1.1
   '@vueuse/head': 0.7.9
+  '@vueuse/router': ^9.1.1
   apexcharts: 3.35.5
   axios: 0.27.2
   billboard.js: 3.5.1
@@ -129,6 +130,7 @@ dependencies:
   '@vueform/slider': 2.1.2
   '@vueuse/core': 9.1.1_vue@3.2.38
   '@vueuse/head': 0.7.9_vue@3.2.38
+  '@vueuse/router': 9.1.1_4n526fuacxb7krhzh75jg7hrn4
   apexcharts: 3.35.5
   axios: 0.27.2
   billboard.js: 3.5.1
@@ -2908,6 +2910,19 @@ packages:
 
   /@vueuse/metadata/9.1.1:
     resolution: {integrity: sha512-XZ2KtSW+85LLHB/IdGILPAtbIVHasPsAW7aqz3BRMzJdAQWRiM/FGa1OKBwLbXtUw/AmjKYFlZJo7eOFIBXRog==}
+
+  /@vueuse/router/9.1.1_4n526fuacxb7krhzh75jg7hrn4:
+    resolution: {integrity: sha512-1HE09QYoHEUF2vWJqGEV1GgoFy6ti7gxzahiN9o/GJpyWM11koQd03BhP4RjVbUx3ua2wTYNSmaCKvLJGCnNGg==}
+    peerDependencies:
+      vue-router: '>=4.0.0-rc.1'
+    dependencies:
+      '@vueuse/shared': 9.1.1_vue@3.2.38
+      vue-demi: 0.13.11_vue@3.2.38
+      vue-router: 4.1.5_vue@3.2.38
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - vue
+    dev: false
 
   /@vueuse/shared/9.1.1_vue@3.2.38:
     resolution: {integrity: sha512-c+IfcOYmHiHqoEa3ED1Tbpue5GHmoUmTp8PtO4YbczthtY155Rt6DmWhjxMLXBF1Bcidagxljmp/7xtAzEHXLw==}

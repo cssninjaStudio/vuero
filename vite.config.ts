@@ -107,7 +107,7 @@ export default defineConfig({
     ],
   },
   build: {
-    // minify: 'terser',
+    minify: 'terser',
     sourcemap: SOURCE_MAP,
     // Do not warn about large chunks
     chunkSizeWarningLimit: Infinity,
@@ -143,6 +143,14 @@ export default defineConfig({
      */
     VueRouter({
       routesFolder: 'src/pages',
+
+      /**
+       * Data Fetching is an experimental feature from vue & vue-router
+       *
+       * @see https://github.com/vuejs/rfcs/discussions/460
+       * @see https://github.com/posva/unplugin-vue-router/tree/main/src/data-fetching
+       */
+      dataFetching: true,
     }),
 
     /**

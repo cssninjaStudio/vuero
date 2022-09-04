@@ -1,10 +1,13 @@
 <script setup lang="ts">
+import { type RouteLocationRaw } from 'vue-router'
+
 export type VTabsType = 'boxed' | 'toggle' | 'rounded'
 export type VTabsAlign = 'centered' | 'right'
 export interface VTabsItem {
   label: string
   value: string
   icon?: string
+  to?: RouteLocationRaw
 }
 export interface VTabsProps {
   tabs: VTabsItem[]
@@ -97,10 +100,11 @@ watch(activeValue, (value) => {
                 toggle,
               }"
             >
-              <a
+              <RouterLink
                 tabindex="0"
-                @keydown.space.prevent="toggle(tab.value)"
-                @click.prevent="toggle(tab.value)"
+                :to="tab.to ?? '#'"
+                @keydown.enter="toggle(tab.value)"
+                @click="toggle(tab.value)"
               >
                 <VIcon v-if="tab.icon" :icon="tab.icon" />
                 <span>
@@ -116,7 +120,7 @@ watch(activeValue, (value) => {
                     {{ tab.label }}
                   </slot>
                 </span>
-              </a>
+              </RouterLink>
             </slot>
           </li>
           <li v-if="sliderClass" class="tab-naver"></li>

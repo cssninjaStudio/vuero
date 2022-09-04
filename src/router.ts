@@ -1,4 +1,8 @@
-import { createRouter as createClientRouter, createWebHistory } from 'vue-router/auto'
+import {
+  createRouter as createClientRouter,
+  createWebHistory,
+  setupDataFetchingGuard,
+} from 'vue-router/auto'
 
 /*
  * By default, this plugins checks the folder at src/pages for any .vue files
@@ -48,7 +52,7 @@ export function createRouter() {
     // },
 
     // handle scroll behavior between routes
-    scrollBehavior: (to, _, savedPosition) => {
+    scrollBehavior: (to, from, savedPosition) => {
       // Scroll to heading on click
       if (to.hash) {
         if (to.hash === '#') {
@@ -83,11 +87,19 @@ export function createRouter() {
       // Scroll to top of window
       if (savedPosition) {
         return savedPosition
-      } else {
+      } else if (to.path !== from.path) {
         return { top: 0 }
       }
     },
   })
+
+  /**
+   * Data Fetching is an experimental feature from vue & vue-router
+   *
+   * @see https://github.com/vuejs/rfcs/discussions/460
+   * @see https://github.com/posva/unplugin-vue-router/tree/main/src/data-fetching
+   */
+  setupDataFetchingGuard(router)
 
   return router
 }
