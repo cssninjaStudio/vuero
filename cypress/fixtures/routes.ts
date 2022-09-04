@@ -54,6 +54,16 @@ export const minimal = [
     displayOrder: 60,
   },
   {
+    name: 'Roadmap',
+    category: 'UTILITY',
+    path: '/roadmap',
+    prefix: 'minimal',
+    pageDelay: 0,
+    checkVisibleSelector: '.roadmap-wrapper',
+    displayOrder: 65,
+    new: true,
+  },
+  {
     name: 'Wizard V1 (step 1)',
     category: 'APP',
     path: '/wizard-v1',
