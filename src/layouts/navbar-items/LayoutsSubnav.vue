@@ -676,9 +676,21 @@ const activeTab = ref<TabId>('list')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink to="status">
+                    <RouterLink to="/status">
                       <i aria-hidden="true" class="lnil lnil-checkmark-circle"></i>
                       <span>App Status</span>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink to="/roadmap">
+                      <i aria-hidden="true" class="lnil lnil-pyramids"></i>
+                      <span>Roadmap</span>
+                      <VTag label="v2.4" color="primary" outlined curved />
                       <i
                         aria-hidden="true"
                         class="iconify"

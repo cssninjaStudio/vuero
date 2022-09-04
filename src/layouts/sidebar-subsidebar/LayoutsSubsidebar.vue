@@ -346,9 +346,14 @@ const emit = defineEmits(['close'])
             <i aria-hidden="true" class="lnil lnil-calculator-alt"></i>
             <span>Invoice</span>
           </RouterLink>
-          <RouterLink to="status" class="is-submenu">
+          <RouterLink to="/status" class="is-submenu">
             <i aria-hidden="true" class="lnil lnil-checkmark-circle"></i>
             <span>App Status</span>
+          </RouterLink>
+          <RouterLink to="/roadmap" class="is-submenu">
+            <i aria-hidden="true" class="lnil lnil-pyramids"></i>
+            <span>Roadmap</span>
+            <VTag label="v2.4" color="primary" outlined curved />
           </RouterLink>
         </VCollapseLinks>
 

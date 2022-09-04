@@ -732,12 +732,21 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <span>Invoice</span>
                   </div>
                 </RouterLink>
-                <RouterLink to="status" class="dropdown-item is-media">
+                <RouterLink to="/status" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-checkmark-circle"></i>
                   </div>
                   <div class="meta">
                     <span>App Status</span>
+                  </div>
+                </RouterLink>
+                <RouterLink to="/roadmap" class="dropdown-item is-media">
+                  <div class="icon">
+                    <i aria-hidden="true" class="lnil lnil-pyramids"></i>
+                  </div>
+                  <div class="meta">
+                    <span>Roadmap</span>
+                    <VTag label="v2.4" color="primary" outlined curved class="ml-3" />
                   </div>
                 </RouterLink>
               </div>

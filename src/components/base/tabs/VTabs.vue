@@ -90,23 +90,28 @@ watch(activeValue, (value) => {
           >
             <slot
               name="tab-link"
-              :active-value="activeValue"
-              :tab="tab"
-              :index="key"
-              :toggle="toggle"
+              v-bind="{
+                activeValue,
+                tab,
+                key,
+                toggle,
+              }"
             >
               <a
                 tabindex="0"
                 @keydown.space.prevent="toggle(tab.value)"
-                @click="toggle(tab.value)"
+                @click.prevent="toggle(tab.value)"
               >
                 <VIcon v-if="tab.icon" :icon="tab.icon" />
                 <span>
                   <slot
                     name="tab-link-label"
-                    :active-value="activeValue"
-                    :tab="tab"
-                    :index="key"
+                    v-bind="{
+                      activeValue,
+                      tab,
+                      key,
+                      toggle,
+                    }"
                   >
                     {{ tab.label }}
                   </slot>
@@ -121,7 +126,12 @@ watch(activeValue, (value) => {
 
     <div class="tab-content is-active">
       <Transition :name="props.slow ? 'fade-slow' : 'fade-fast'" mode="out-in">
-        <slot name="tab" :active-value="activeValue"></slot>
+        <slot
+          name="tab"
+          v-bind="{
+            activeValue,
+          }"
+        ></slot>
       </Transition>
     </div>
   </div>
