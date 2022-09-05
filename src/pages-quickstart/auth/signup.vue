@@ -70,7 +70,7 @@ const onSignup = handleSubmit(async (values) => {
     notif.dismissAll()
     notif.success('Welcome, Erik Kovalsky')
 
-    router.push({ name: 'app' })
+    router.push({ name: '/app' })
     isLoading.value = false
   }
 })
