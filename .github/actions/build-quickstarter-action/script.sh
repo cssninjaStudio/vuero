@@ -1,26 +1,31 @@
 #!/bin/bash
-PROJECT=$1
-TAG=$2
 
-if [ -z $PROJECT ] 
+DIRECTORY=`dirname $0`
+INPUT_PROJECT=$1
+INPUT_TAG=$2
+
+if [ -z $INPUT_PROJECT ] 
 then
   echo "<project> missing"
   echo "Usage: ${0} <project> <tag>"
   exit 1
 fi
 
-if [ -z $TAG ] 
+if [ -z $INPUT_TAG ] 
 then
   echo "<tag> missing"
   echo "Usage: ${0} <project> <tag>"
   exit 1
 fi
 
-set -xe
+ARCHIVE=quickstarter-${INPUT_PROJECT}-${INPUT_TAG}.zip
+
+echo "::group::building ${ARCHIVE}"
+echo "::debug::${ARCHIVE}"
 
 # disable VueroDocumentation
-sed -i "s#import VueroDocumentation from './vite-plugin-vuero-doc/index'#// import VueroDocumentation from './vite-plugin-vuero-doc/index'#g" ./vite.config.ts
-sed -i "s#VueroDocumentation()#// VueroDocumentation()#g" ./vite.config.ts
+sed -i "s#import VueroDocumentation from './vite-plugin-vuero-doc/index'#// import VueroDocumentation from './vite-plugin-vuero-doc/index'#g" vite.config.ts
+sed -i "s#VueroDocumentation()#// VueroDocumentation()#g" vite.config.ts
 
 # remove build artifacts and pages/layouts
 rm -rf \
@@ -154,26 +159,22 @@ find src/assets -type f -not \( \
 
 find src/assets -type d -empty -delete
 
-## build without artifacts and with quickstarter content
-yarn build
+# ## build without artifacts and with quickstarter content
+# yarn build
 
-# zip sources quickstarter-${PROJECT}-${TAG}.zip
-zip -r .release/quickstarter-${PROJECT}-${TAG}.zip . \
+# top level zip release-${INPUT_PROJECT}-${INPUT_TAG}.zip 
+zip -r $ARCHIVE . \
+  -x "public/demo/*" \
   -x "*.zip" \
   -x "node_modules/*" \
   -x "vite-plugin-vuero-doc/*" \
-  -x ".release/*" \
-  -x ".scannerwork/*" \
   -x ".git/*" \
   -x ".github/*" \
   -x "cypress/*" \
   -x "scripts/*" \
-  -x "sonar-project.properties" \
   -x "cypress.json" \
-  -x "docker-compose.sonarqube.yml"\
   -x "docker-compose.e2e.yml"\
   -x "docker-compose.yml"
-
 
 # remove build artifacts and pages/layouts
 rm -rf \
@@ -187,3 +188,15 @@ git checkout \
   public \
   documentation \
   vite.config.ts
+
+echo "$PWD"
+echo "$DIRECTORY"
+echo "$GITHUB_WORKSPACE"
+
+ls -lh $ARCHIVE
+
+echo "::endgroup::"
+
+echo "- ${INPUT_PROJECT^} ${INPUT_TAG} quickstarter built :rocket:" >> $GITHUB_STEP_SUMMARY
+
+echo "::set-output name=filepath::${ARCHIVE}"

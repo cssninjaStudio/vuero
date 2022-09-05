@@ -47,7 +47,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node-version: [14.x, 16.x, 18.x]
+        node-version: [16, 18]
 
     steps:
       - uses: actions/checkout@v3
@@ -76,7 +76,7 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies
-        run: pnpm instal
+        run: pnpm install
 
       - name: Build (pnpm)
         run: SOURCE_MAP=false SILENT=true MINIFY=false pnpm build
@@ -86,7 +86,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node-version: [14.x, 16.x, 18.x]
+        node-version: [16, 18]
 
     steps:
       - uses: actions/checkout@v3

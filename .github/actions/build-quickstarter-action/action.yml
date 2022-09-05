@@ -1,0 +1,21 @@
+name: 'build quickstarter'
+description: 'build quickstarter archive'
+inputs:
+  project:
+    description: 'Project'
+    required: true
+  tag:
+    description: 'Tag'
+    required: true
+outputs:
+  filepath:
+    description: 'quickstarter archive path'
+    value: ${{ steps.build.outputs.filepath }}
+runs:
+  using: 'composite'
+  steps:
+    - run: sudo apt-get install zip
+      shell: bash
+    - id: build
+      run: ${{ github.action_path }}/script.sh ${{inputs.project}} ${{inputs.tag}}
+      shell: bash

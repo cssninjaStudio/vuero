@@ -1,0 +1,34 @@
+name: standard-version
+on:
+  workflow_dispatch:
+    inputs:
+      options:
+        description: 'standard-version options'
+  repository_dispatch:
+    types: [standard-version]
+
+jobs:
+  standard-version: 
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # needed for git history
+          token: ${{ secrets.APP_GITHUB_TOKEN }}
+        
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 7
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'pnpm'
+
+      - run: | 
+          git config user.name digisquad-bot
+          git config user.email admin@digisquad.io
+          pnpm dlx standard-version ${{ github.event.inputs.options }}
+          git push --follow-tags origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.APP_GITHUB_TOKEN }}

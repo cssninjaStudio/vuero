@@ -1,0 +1,139 @@
+name: release
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  tests:
+    uses: ./.github/workflows/tests.yml
+
+  tests-e2e:
+    uses: ./.github/workflows/tests-e2e.yml
+
+  release: 
+    runs-on: ubuntu-latest
+    needs: [tests, tests-e2e]
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # needed for git history
+
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 7
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'pnpm'
+
+      - id: meta
+        name: release meta
+        run: |
+          project=${GITHUB_REPOSITORY#*/}
+          echo ::set-output name=project::${project}
+          echo ::set-output name=project-capitalized::${project^}
+          echo ::set-output name=tag::${GITHUB_REF#refs/tags/}
+
+      - id: build_template
+        name: build release template
+        uses: ./.github/actions/build-template-action
+        with:
+          tag: ${{ steps.meta.outputs.tag }}
+          project: ${{ steps.meta.outputs.project }}
+
+      - id: build_quickstarter
+        name: build release quickstarter
+        uses: ./.github/actions/build-quickstarter-action
+        with:
+          tag: ${{ steps.meta.outputs.tag }}
+          project: ${{ steps.meta.outputs.project }}
+
+      - id: changelog
+        name: release changelog
+        run: |
+          pnpm dlx conventional-changelog-cli -p conventionalcommits -r 2 -o ${{ github.workspace }}/CHANGELOG_RELEASE.md
+          cat ${{ github.workspace }}/CHANGELOG_RELEASE.md
+
+      - id: create_release
+        name: create github draft release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ steps.meta.outputs.tag }}
+          name: ${{ steps.meta.outputs.project-capitalized }} ${{ steps.meta.outputs.tag }}
+          body_path: ${{ github.workspace }}/CHANGELOG_RELEASE.md
+          draft: true
+          prerelease: false
+          fail_on_unmatched_files: true
+          files: |
+            ${{ github.workspace }}/${{ steps.build_template.outputs.filepath }}
+            ${{ github.workspace }}/${{ steps.build_quickstarter.outputs.filepath }}
+       
+      - name: publish github draft release
+        uses: eregon/publish-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.APP_GITHUB_TOKEN }}
+        with:
+          release_id: ${{ steps.create_release.outputs.id }}
+
+  release:
+    runs-on: ubuntu-latest
+    needs: [tests, tests-e2e]
+
+    outputs:
+      project: ${{ steps.meta.outputs.project }}
+      tag: ${{ steps.meta.outputs.tag }}
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Get the version from tag
+        id: meta
+        run: |
+          echo ::set-output name=project::${GITHUB_REPOSITORY#*/}
+          echo ::set-output name=tag::${GITHUB_REF#refs/tags/}
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - uses: pnpm/action-setup@v2.0.1
+        name: Install pnpm
+        id: pnpm-install
+        with:
+          version: 7
+          run_install: false
+
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        run: |
+          echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
+
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
+          key: ${{ matrix.node-version }}-${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build release zip archive
+        timeout-minutes: 60
+        run: |
+          sudo apt-get install zip
+          ./.release/build-envato-archive.sh ${{ steps.meta.outputs.project }} ${{ steps.meta.outputs.tag }}
+
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ steps.meta.outputs.tag }}
+          name: Vuero ${{ steps.meta.outputs.tag }}
+          body: View [CHANGELOG.md](https://github.com/cssninjaStudio/vuero/blob/main/CHANGELOG.md) for details
+          draft: false
+          prerelease: false
+          files: ./.release/release-${{ steps.meta.outputs.project }}-${{ steps.meta.outputs.tag }}.zip
