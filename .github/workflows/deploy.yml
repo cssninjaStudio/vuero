@@ -45,8 +45,6 @@ jobs:
           build-args: |
             VITE_API_BASE_URL=https://api.vuero.cssninja.io
             GTM_ID=GTM-N9P6H6B
-            SOURCE_MAP=false
-            MINIFY=true
 
       - name: Publish
         uses: appleboy/scp-action@master
