@@ -15,10 +15,7 @@ import vueI18n from '@intlify/vite-plugin-vue-i18n'
 import { VitePWA } from 'vite-plugin-pwa'
 import purgecss from 'rollup-plugin-purgecss'
 
-const MINIFY = process.env.MINIFY ? process.env.MINIFY === 'true' : false
-const VERBOSE = process.env.VERBOSE ? process.env.VERBOSE === 'true' : false
-const SOURCE_MAP = process.env.SOURCE_MAP ? process.env.SOURCE_MAP === 'true' : false
-const GTM_ID = process.env.GTM_ID ?? ''
+const MINIFY_IMAGES = process.env.MINIFY ? process.env.MINIFY === 'true' : false
 
 /**
  * This is the main configuration file for vitejs
@@ -36,7 +33,7 @@ export default defineConfig({
   // Directory to serve as plain static assets.
   publicDir: 'public',
   // Adjust console output verbosity.
-  logLevel: VERBOSE ? 'info' : 'error',
+  logLevel: 'info',
   // development server configuration
   server: {
     // Vite 3 now defaults to 5173, but you can override it with the port option.
@@ -107,7 +104,7 @@ export default defineConfig({
     ],
   },
   build: {
-    minify: MINIFY ? 'terser' : false,
+    minify: 'terser',
     sourcemap: SOURCE_MAP,
     // Do not warn about large chunks
     chunkSizeWarningLimit: Infinity,
@@ -225,11 +222,11 @@ export default defineConfig({
      *
      * @see https://github.com/stafyniaksacha/vite-plugin-radar
      */
-    !GTM_ID
+    !process.env.GTM_ID
       ? undefined
       : ViteRadar({
           gtm: {
-            id: GTM_ID,
+            id: process.env.GTM_ID,
           },
         }),
 
@@ -275,37 +272,30 @@ export default defineConfig({
      *
      * @see https://github.com/FullHuman/purgecss/tree/main/packages/rollup-plugin-purgecss
      */
-    !MINIFY
-      ? undefined
-      : purgecss({
-          content: [`./src/**/*.vue`],
-          variables: false,
-          safelist: {
-            standard: [
-              /(autv|lnil|lnir|fas?)/,
-              /-(leave|enter|appear)(|-(to|from|active))$/,
-              /^(?!(|.*?:)cursor-move).+-move$/,
-              /^router-link(|-exact)-active$/,
-              /data-v-.*/,
-            ],
-          },
-          defaultExtractor(content) {
-            const contentWithoutStyleBlocks = content.replace(
-              /<style[^]+?<\/style>/gi,
-              ''
-            )
-            return (
-              contentWithoutStyleBlocks.match(/[A-Za-z0-9-_/:]*[A-Za-z0-9-_/]+/g) || []
-            )
-          },
-        }),
+    purgecss({
+      content: [`./src/**/*.vue`],
+      variables: false,
+      safelist: {
+        standard: [
+          /(autv|lnil|lnir|fas?)/,
+          /-(leave|enter|appear)(|-(to|from|active))$/,
+          /^(?!(|.*?:)cursor-move).+-move$/,
+          /^router-link(|-exact)-active$/,
+          /data-v-.*/,
+        ],
+      },
+      defaultExtractor(content) {
+        const contentWithoutStyleBlocks = content.replace(/<style[^]+?<\/style>/gi, '')
+        return contentWithoutStyleBlocks.match(/[A-Za-z0-9-_/:]*[A-Za-z0-9-_/]+/g) || []
+      },
+    }),
 
     /**
      * vite-plugin-imagemin optimize all images sizes from public or asset folder
      *
      * @see https://github.com/anncwb/vite-plugin-imagemin
      */
-    !MINIFY
+    !MINIFY_IMAGES
       ? undefined
       : ImageMin({
           verbose: VERBOSE,

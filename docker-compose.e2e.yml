@@ -6,7 +6,6 @@ services:
       context: .
       args:
         - VITE_MAPBOX_ACCESS_TOKEN=pk.eyJ1IjoiY3NzbmluamEiLCJhIjoiY2toZW1nYm0zMDAxODJycXFzZ3g4cnZ6diJ9.9ebfrGREuwkauRr_afDTgA
-        - MINIFY=false
     ports:
       - '8080:8080'
       - '5000:5000'
