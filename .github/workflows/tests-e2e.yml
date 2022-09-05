@@ -37,14 +37,14 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies
-        run: pnpm instal
+        run: pnpm install
 
       - uses: cypress-io/github-action@v4
         with:
           # record: true
           # parallel: true
           install: false
-          build: SILENT=true MINIFY=false pnpm build
+          build: NODE_OPTIONS=--max-old-space-size=4096 pnpm build
           start: pnpm preview
           command: pnpm test:e2e
           wait-on: 'http://localhost:5000'

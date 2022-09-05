@@ -9,3 +9,5 @@ components.d.ts
 bulma-colors.js
 generated-vars.sass
 generated-fallback.css
+typed-router.d.ts
+auto-imports.d.ts
