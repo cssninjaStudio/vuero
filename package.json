@@ -169,7 +169,6 @@
     "unplugin-vue-components": "0.22.4",
     "unplugin-vue-router": "0.2.1",
     "vite": "3.1.0",
-    "vite-imagetools": "4.0.8",
     "vite-plugin-fonts": "0.6.0",
     "vite-plugin-imagemin": "0.6.1",
     "vite-plugin-purge-icons": "0.9.0",

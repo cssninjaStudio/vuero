@@ -44,12 +44,12 @@
           <!--Mockup-->
           <img
             class="light-image-l centered-mockup"
-            src="/@src/assets/illustrations/landing/app-1.png"
+            src="/@src/assets/illustrations/landing/app-1.webp"
             alt=""
           />
           <img
             class="dark-image-l centered-mockup"
-            src="/@src/assets/illustrations/landing/app-1-dark.png"
+            src="/@src/assets/illustrations/landing/app-1-dark.webp"
             alt=""
           />
         </div>

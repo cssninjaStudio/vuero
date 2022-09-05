@@ -12,12 +12,12 @@
         <div class="column is-6 has-text-centered">
           <img
             class="light-image-l featured-image"
-            src="/@src/assets/illustrations/landing/feature-1.png"
+            src="/@src/assets/illustrations/landing/feature-1.webp"
             alt=""
           />
           <img
             class="dark-image-l featured-image"
-            src="/@src/assets/illustrations/landing/feature-1-dark.png"
+            src="/@src/assets/illustrations/landing/feature-1-dark.webp"
             alt=""
           />
         </div>

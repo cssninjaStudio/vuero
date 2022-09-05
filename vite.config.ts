@@ -9,15 +9,14 @@ import AutoImport from 'unplugin-auto-import/vite'
 import ViteFonts from 'vite-plugin-fonts'
 import ViteRadar from 'vite-plugin-radar'
 import PurgeIcons from 'vite-plugin-purge-icons'
-import { imagetools } from 'vite-imagetools'
 import ImageMin from 'vite-plugin-imagemin'
 import VueroDocumentation from './vite-plugin-vuero-doc/index'
 import vueI18n from '@intlify/vite-plugin-vue-i18n'
 import { VitePWA } from 'vite-plugin-pwa'
 import purgecss from 'rollup-plugin-purgecss'
 
-const MINIFY = process.env.MINIFY ? process.env.MINIFY === 'true' : true
-const SILENT = process.env.SILENT ? process.env.SILENT === 'true' : false
+const MINIFY = process.env.MINIFY ? process.env.MINIFY === 'true' : false
+const VERBOSE = process.env.VERBOSE ? process.env.VERBOSE === 'true' : false
 const SOURCE_MAP = process.env.SOURCE_MAP ? process.env.SOURCE_MAP === 'true' : false
 const GTM_ID = process.env.GTM_ID ?? ''
 
@@ -37,7 +36,7 @@ export default defineConfig({
   // Directory to serve as plain static assets.
   publicDir: 'public',
   // Adjust console output verbosity.
-  logLevel: SILENT ? 'error' : 'info',
+  logLevel: VERBOSE ? 'info' : 'error',
   // development server configuration
   server: {
     // Vite 3 now defaults to 5173, but you can override it with the port option.
@@ -96,6 +95,7 @@ export default defineConfig({
       'vue-accessible-color-picker',
       'zod',
     ],
+    disabled: false,
   },
   // Will be passed to @rollup/plugin-alias as its entries option.
   resolve: {
@@ -107,13 +107,14 @@ export default defineConfig({
     ],
   },
   build: {
-    minify: 'terser',
+    minify: MINIFY ? 'terser' : false,
     sourcemap: SOURCE_MAP,
     // Do not warn about large chunks
     chunkSizeWarningLimit: Infinity,
     // Double the default size threshold for inlined assets
     // https://vitejs.dev/config/build-options.html#build-assetsinlinelimit
     assetsInlineLimit: 4096 * 2,
+    commonjsOptions: { include: [] },
   },
   plugins: [
     /**
@@ -131,6 +132,7 @@ export default defineConfig({
      * @see https://github.com/intlify/bundle-tools/tree/main/packages/vite-plugin-vue-i18n
      */
     vueI18n({
+      // @ts-ignore
       include: resolve(dirname(fileURLToPath(import.meta.url)), './src/locales/**'),
     }),
 
@@ -273,33 +275,30 @@ export default defineConfig({
      *
      * @see https://github.com/FullHuman/purgecss/tree/main/packages/rollup-plugin-purgecss
      */
-    purgecss({
-      content: [`./src/**/*.vue`],
-      variables: false,
-      safelist: {
-        standard: [
-          /(autv|lnil|lnir|fas?)/,
-          /-(leave|enter|appear)(|-(to|from|active))$/,
-          /^(?!(|.*?:)cursor-move).+-move$/,
-          /^router-link(|-exact)-active$/,
-          /data-v-.*/,
-        ],
-      },
-      defaultExtractor(content) {
-        const contentWithoutStyleBlocks = content.replace(/<style[^]+?<\/style>/gi, '')
-        return contentWithoutStyleBlocks.match(/[A-Za-z0-9-_/:]*[A-Za-z0-9-_/]+/g) || []
-      },
-    }),
-
-    /**
-     * vite-imagetools plugin allow to perform transformation (blur, resize, crop, etc)
-     * on images at build time
-     *
-     * @see https://github.com/JonasKruckenberg/vite-imagetools
-     */
-    imagetools({
-      silent: SILENT,
-    }),
+    !MINIFY
+      ? undefined
+      : purgecss({
+          content: [`./src/**/*.vue`],
+          variables: false,
+          safelist: {
+            standard: [
+              /(autv|lnil|lnir|fas?)/,
+              /-(leave|enter|appear)(|-(to|from|active))$/,
+              /^(?!(|.*?:)cursor-move).+-move$/,
+              /^router-link(|-exact)-active$/,
+              /data-v-.*/,
+            ],
+          },
+          defaultExtractor(content) {
+            const contentWithoutStyleBlocks = content.replace(
+              /<style[^]+?<\/style>/gi,
+              ''
+            )
+            return (
+              contentWithoutStyleBlocks.match(/[A-Za-z0-9-_/:]*[A-Za-z0-9-_/]+/g) || []
+            )
+          },
+        }),
 
     /**
      * vite-plugin-imagemin optimize all images sizes from public or asset folder
@@ -309,7 +308,7 @@ export default defineConfig({
     !MINIFY
       ? undefined
       : ImageMin({
-          verbose: !SILENT,
+          verbose: VERBOSE,
           gifsicle: {
             optimizationLevel: 7,
             interlaced: false,

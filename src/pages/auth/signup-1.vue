@@ -141,7 +141,7 @@ onUnmounted(() => {
       <img
         :class="[step > 0 && 'is-hidden']"
         class="card-bg"
-        src="/@src/assets/backgrounds/signup/vuero-signup.png?format=webp"
+        src="/@src/assets/backgrounds/signup/vuero-signup.webp"
         alt=""
       />
 

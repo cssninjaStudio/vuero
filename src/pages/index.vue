@@ -69,12 +69,12 @@ useHead({
 
             <img
               class="light-image-l hero-mockup"
-              src="/@src/assets/illustrations/landing/app-1.png?width=740&height=490&format=webp"
+              src="/@src/assets/illustrations/landing/app-1.webp"
               alt=""
             />
             <img
               class="dark-image-l hero-mockup"
-              src="/@src/assets/illustrations/landing/app-1-dark.png?width=740&height=490&format=webp"
+              src="/@src/assets/illustrations/landing/app-1-dark.webp"
               alt=""
             />
           </div>
@@ -484,12 +484,12 @@ useHead({
             <div class="column is-6 has-text-centered">
               <img
                 class="light-image-l featured-image"
-                src="/@src/assets/illustrations/landing/feature-1.png?width=560&height=406&format=webp"
+                src="/@src/assets/illustrations/landing/feature-1.webp"
                 alt=""
               />
               <img
                 class="dark-image-l featured-image"
-                src="/@src/assets/illustrations/landing/feature-1-dark.png?width=560&height=406&format=webp"
+                src="/@src/assets/illustrations/landing/feature-1-dark.webp"
                 alt=""
               />
             </div>
