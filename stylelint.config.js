@@ -23,6 +23,7 @@ module.exports = {
     'keyframes-name-pattern': null,
     'selector-class-pattern': null,
     'custom-property-pattern': null,
+    'annotation-no-unknown': null,
     'declaration-block-no-redundant-longhand-properties': null,
 
     /** Bulma **/
@@ -32,7 +33,7 @@ module.exports = {
     'function-no-unknown': [
       true,
       {
-        ignoreFunctions: ["findColorInvert", "nth", "v-bind"],
+        ignoreFunctions: ['findColorInvert', 'nth', 'v-bind'],
       },
     ],
 

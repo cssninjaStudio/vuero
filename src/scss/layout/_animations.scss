@@ -290,8 +290,8 @@
 ========================================================================== */
 
 @keyframes gelatine {
-  from,
-  to {
+  0%,
+  100% {
     transform: scale(1, 1);
   }
 
@@ -309,8 +309,8 @@
 }
 
 @keyframes gelatine {
-  from,
-  to {
+  0%,
+  100% {
     transform: scale(1, 1);
   }
 
@@ -359,7 +359,7 @@
 ========================================================================== */
 
 @keyframes levitate {
-  from {
+  0% {
     transform: translate(0, 0);
   }
 
@@ -367,13 +367,13 @@
     transform: translate(0, 10px);
   }
 
-  to {
+  100% {
     transform: translate(0, 0);
   }
 }
 
 @keyframes levitate {
-  from {
+  0% {
     transform: translate(0, 0);
   }
 
@@ -381,7 +381,7 @@
     transform: translate(0, 10px);
   }
 
-  to {
+  100% {
     transform: translate(0, 0);
   }
 }
