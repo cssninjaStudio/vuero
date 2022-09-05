@@ -21,7 +21,7 @@ jobs:
       - name: Set up dockertags
         id: get_meta
         run: |
-          echo ::set-output name=dockertags::digisquad/cssninja.vuero-demo:latest,digisquad/cssninja.vuero-demo:${GITHUB_REF#refs/tags/}
+          echo ::set-output name=dockertags::digisquad/cssninja.vuero-demo:latest
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2

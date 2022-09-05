@@ -110,5 +110,5 @@ jobs:
         if: steps.npm-cache.outputs.cache-hit != 'true'
         run: npm install
 
-      - bame: Build (npm)
+      - name: Build (npm)
         run: SOURCE_MAP=false SILENT=true MINIFY=false npm run build
