@@ -1,4 +1,4 @@
-name: cssninjaStudio / tests e2e
+name: tests-e2e
 
 on:
   workflow_call:

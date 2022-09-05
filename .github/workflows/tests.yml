@@ -1,4 +1,4 @@
-name: cssninjaStudio / tests
+name: tests
 
 on:
   workflow_call:
