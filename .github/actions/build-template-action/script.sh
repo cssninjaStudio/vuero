@@ -18,7 +18,7 @@ then
   exit 1
 fi
 
-ARCHIVE=release-${INPUT_PROJECT}-${INPUT_TAG}.zip
+ARCHIVE=template-${INPUT_PROJECT}-${INPUT_TAG}.zip
 
 echo "::group::building ${ARCHIVE}"
 echo "::debug::${ARCHIVE}"
@@ -39,8 +39,8 @@ zip -r $ARCHIVE . \
   -x "node_modules/*" \
   -x ".git/*" \
   -x ".github/*" \
-  -x "pages-quickstart/*" \
-  -x "layouts-quickstart/*" \
+  -x "src/pages-quickstart/*" \
+  -x "src/layouts-quickstart/*" \
   -x "cypress/downloads/*" \
   -x "cypress/screenshots/*" \
   -x "cypress/videos/*" \
