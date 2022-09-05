@@ -11,7 +11,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node-version: [16.x]
+        node-version: [16]
 
     steps:
       - uses: actions/checkout@v3
@@ -38,6 +38,9 @@ jobs:
           key: ${{ matrix.node-version }}-${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
+
+      - name: Install dependencies
+        run: pnpm install
 
       - name: Lint
         run: pnpm test:lint

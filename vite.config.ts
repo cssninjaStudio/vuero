@@ -105,7 +105,6 @@ export default defineConfig({
   },
   build: {
     minify: 'terser',
-    sourcemap: SOURCE_MAP,
     // Do not warn about large chunks
     chunkSizeWarningLimit: Infinity,
     // Double the default size threshold for inlined assets
