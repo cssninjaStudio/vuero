@@ -22,6 +22,7 @@ jobs:
     needs: [tests]
 
     steps:
+      - uses: actions/checkout@v3
       - name: Set up dockertags
         id: get_meta
         run: |
