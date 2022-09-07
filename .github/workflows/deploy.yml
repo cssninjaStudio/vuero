@@ -2,8 +2,12 @@ name: deploy
 on:
   workflow_dispatch:
   push:
-    branch:
-      - 'main'
+    paths-ignore:
+      - '.vscode/**'
+      - 'cypress/**'
+      - 'scripts/**'
+    branches:
+      - main
 
 concurrency:
   group: ${{ github.workflow }}
