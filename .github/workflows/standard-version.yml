@@ -8,15 +8,22 @@ on:
     types: [standard-version]
 
 jobs:
-  standard-version: 
+  tests:
+    uses: ./.github/workflows/tests.yml
+
+  tests-e2e:
+    uses: ./.github/workflows/tests-e2e.yml
+
+  standard-version:
     runs-on: ubuntu-latest
+    needs: [tests, tests-e2e]
 
     steps:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0 # needed for git history
           token: ${{ secrets.APP_GITHUB_TOKEN }}
-        
+
       - uses: pnpm/action-setup@v2
         with:
           version: 7
@@ -25,7 +32,7 @@ jobs:
           node-version: 18
           cache: 'pnpm'
 
-      - run: | 
+      - run: |
           git config user.name digisquad-bot
           git config user.email admin@digisquad.io
           pnpm dlx standard-version ${{ github.event.inputs.options }}

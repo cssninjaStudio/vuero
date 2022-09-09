@@ -44,12 +44,13 @@ jobs:
           # record: true
           # parallel: true
           install: false
-          build: NODE_OPTIONS=--max-old-space-size=4096 pnpm build
+          build: pnpm build
           start: pnpm preview
           command: pnpm test:e2e
           wait-on: 'http://localhost:5000'
           cache-key: ${{ matrix.node-version }}-${{ runner.os }}-cypress-cache-${{ hashFiles('**/pnpm-lock.yaml') }}
-        # env:
+        env:
+          NODE_OPTIONS: '--max-old-space-size=4096'
         #   CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
         #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
