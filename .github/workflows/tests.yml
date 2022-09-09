@@ -51,7 +51,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node-version: [16, 18]
+        node-version: [16]
 
     steps:
       - uses: actions/checkout@v3
@@ -84,35 +84,3 @@ jobs:
 
       - name: Build (pnpm)
         run: NODE_OPTIONS=--max-old-space-size=4096 pnpm build
-
-  build-npm:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
-        node-version: [16, 18]
-
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-
-      # cache node_modules
-      - name: Cache dependencies
-        uses: actions/cache@v3
-        id: npm-cache
-        with:
-          path: |
-            **/node_modules
-          key: ${{ matrix.os }}-${{ matrix.node-version }}-npm-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ matrix.os }}-${{ matrix.node-version }}-npm-
-
-      # install dependencies if the cache did not hit
-      - name: Install dependencies
-        if: steps.npm-cache.outputs.cache-hit != 'true'
-        run: npm install
-
-      - name: Build (npm)
-        run: NODE_OPTIONS=--max-old-space-size=4096 npm run build

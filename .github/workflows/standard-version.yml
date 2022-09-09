@@ -11,12 +11,15 @@ jobs:
   tests:
     uses: ./.github/workflows/tests.yml
 
+  tests-npm:
+    uses: ./.github/workflows/tests-npm.yml
+
   tests-e2e:
     uses: ./.github/workflows/tests-e2e.yml
 
   standard-version:
     runs-on: ubuntu-latest
-    needs: [tests, tests-e2e]
+    needs: [tests, tests-npm, tests-e2e]
 
     steps:
       - uses: actions/checkout@v3
