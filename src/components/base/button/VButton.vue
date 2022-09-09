@@ -1,5 +1,7 @@
 <script lang="ts">
-import { type RouteLocationRaw, RouterLink } from 'vue-router'
+import type { RouteLocationAsString } from 'unplugin-vue-router'
+import type { PropType } from 'vue'
+import { RouterLink } from 'vue-router/auto'
 import { CssUnitRe } from '/@src/utils/regex'
 
 import VPlaceload from '../loader/VPlaceload.vue'
@@ -19,7 +21,7 @@ export type VButtonDark = '1' | '2' | '3' | '4' | '5' | '6'
 export default defineComponent({
   props: {
     to: {
-      type: [Object, String] as PropType<RouteLocationRaw>,
+      type: [Object, String] as PropType<RouteLocationAsString>,
       default: undefined,
     },
     href: {

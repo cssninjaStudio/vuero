@@ -4,6 +4,7 @@ import FlexTableDropdown from '/@src/components/partials/dropdowns/FlexTableDrop
 import VAvatarStack from '/@src/components/base/avatar/VAvatarStack.vue'
 import { flexRowsAdvanced } from '/@src/data/documentation/table'
 import { onceImageErrored } from '/@src/utils/via-placeholder'
+import { RouterLink } from 'vue-router/auto'
 
 const collator = new Intl.Collator('en')
 const numberFormat = new Intl.NumberFormat('en-US', {
