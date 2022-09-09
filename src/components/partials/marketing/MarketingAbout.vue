@@ -14,7 +14,7 @@
             <VPlyr
               ratio="square"
               title="Lorem ipsum dolor sit amet"
-              source="/video/hands.mp4"
+              source="https://www.youtube.com/embed/lE5VNpP8JqA?modestbranding=1&rel=0&showinfo=0"
               poster="/video/poster-1c.jpg"
               reversed
             />
