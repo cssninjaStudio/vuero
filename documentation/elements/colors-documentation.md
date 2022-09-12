@@ -6,7 +6,7 @@ disable_example: true
 ### Theme Colors
 
 While Vuero was previously using predefined SCSS color variables that could be
-used for customization before the Sass compilation. With Vuero 1.4, this is now
+used for customization before the Sass compilation. With Vuero 2.0, this is now
 over. We completely switched to a new native `CSS Variables` setup. First it
 means that you can dynamically change any color at runtime. It also means that
 you can scope those changes to one or several components. However each change

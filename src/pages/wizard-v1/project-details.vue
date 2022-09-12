@@ -106,39 +106,41 @@ const selectCustomer = (customer: WizardCustomer | null) => {
 
       <div class="project-dates">
         <h4>Project Time Frame</h4>
-        <VDatePicker v-model="wizard.data.timeFrame" is-range color="green" trim-weeks>
-          <template #default="{ inputValue, inputEvents }">
-            <div class="project-dates-inner">
-              <div class="project-date">
-                <div class="date-icon">
-                  <i aria-hidden="true" class="iconify" data-icon="feather:map-pin"></i>
+        <ClientOnly>
+          <VDatePicker v-model="wizard.data.timeFrame" is-range color="green" trim-weeks>
+            <template #default="{ inputValue, inputEvents }">
+              <div class="project-dates-inner">
+                <div class="project-date">
+                  <div class="date-icon">
+                    <i aria-hidden="true" class="iconify" data-icon="feather:map-pin"></i>
+                  </div>
+                  <VControl>
+                    <input
+                      :value="inputValue.start"
+                      class="input form-datepicker"
+                      placeholder="Start Date"
+                      v-on="inputEvents.start"
+                    />
+                  </VControl>
                 </div>
-                <VControl>
-                  <input
-                    :value="inputValue.start"
-                    class="input form-datepicker"
-                    placeholder="Start Date"
-                    v-on="inputEvents.start"
-                  />
-                </VControl>
-              </div>
-              <div class="separator"></div>
-              <div class="project-date">
-                <div class="date-icon">
-                  <i aria-hidden="true" class="iconify" data-icon="feather:flag"></i>
+                <div class="separator"></div>
+                <div class="project-date">
+                  <div class="date-icon">
+                    <i aria-hidden="true" class="iconify" data-icon="feather:flag"></i>
+                  </div>
+                  <VControl>
+                    <input
+                      :value="inputValue.end"
+                      class="input form-datepicker"
+                      placeholder="End Date"
+                      v-on="inputEvents.end"
+                    />
+                  </VControl>
                 </div>
-                <VControl>
-                  <input
-                    :value="inputValue.end"
-                    class="input form-datepicker"
-                    placeholder="End Date"
-                    v-on="inputEvents.end"
-                  />
-                </VControl>
               </div>
-            </div>
-          </template>
-        </VDatePicker>
+            </template>
+          </VDatePicker>
+        </ClientOnly>
       </div>
 
       <div class="project-budget">

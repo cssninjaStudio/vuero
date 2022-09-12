@@ -5,6 +5,9 @@ export function HSLToHex(hslCss?: string) {
   if (!hslCss) {
     return '#fff'
   }
+  if (hslCss === 'transparent') {
+    return hslCss
+  }
 
   const res = hslRe.exec(hslCss)
   if (res === null) {

@@ -1,18 +1,38 @@
 import { computed, reactive } from 'vue'
-import { createSharedComposable, useCssVar } from '@vueuse/core'
+import { useCssVar } from '@vueuse/core'
 import { HSLToHex } from '/@src/utils/color-converter'
 
-export const useThemeColors = createSharedComposable(() => {
-  const primary = useCssVar('--primary', document.documentElement)
-  const success = useCssVar('--success', document.documentElement)
-  const info = useCssVar('--info', document.documentElement)
-  const warning = useCssVar('--warning', document.documentElement)
-  const danger = useCssVar('--danger', document.documentElement)
-  const purple = useCssVar('--purple', document.documentElement)
-  const blue = useCssVar('--blue', document.documentElement)
-  const green = useCssVar('--green', document.documentElement)
-  const yellow = useCssVar('--yellow', document.documentElement)
-  const orange = useCssVar('--orange', document.documentElement)
+export const useThemeColors = () => {
+  const primary = import.meta.env.SSR
+    ? ref('transparent')
+    : useCssVar('--primary', document.documentElement)
+  const success = import.meta.env.SSR
+    ? ref('transparent')
+    : useCssVar('--success', document.documentElement)
+  const info = import.meta.env.SSR
+    ? ref('transparent')
+    : useCssVar('--info', document.documentElement)
+  const warning = import.meta.env.SSR
+    ? ref('transparent')
+    : useCssVar('--warning', document.documentElement)
+  const danger = import.meta.env.SSR
+    ? ref('transparent')
+    : useCssVar('--danger', document.documentElement)
+  const purple = import.meta.env.SSR
+    ? ref('transparent')
+    : useCssVar('--purple', document.documentElement)
+  const blue = import.meta.env.SSR
+    ? ref('transparent')
+    : useCssVar('--blue', document.documentElement)
+  const green = import.meta.env.SSR
+    ? ref('transparent')
+    : useCssVar('--green', document.documentElement)
+  const yellow = import.meta.env.SSR
+    ? ref('transparent')
+    : useCssVar('--yellow', document.documentElement)
+  const orange = import.meta.env.SSR
+    ? ref('transparent')
+    : useCssVar('--orange', document.documentElement)
 
   const themeColors = reactive({
     primary: computed(() => HSLToHex(primary.value)),
@@ -36,4 +56,4 @@ export const useThemeColors = createSharedComposable(() => {
   } as const)
 
   return themeColors
-})
+}

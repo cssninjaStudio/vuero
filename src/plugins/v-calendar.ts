@@ -1,10 +1,22 @@
 import { definePlugin } from '/@src/app'
-import { SetupCalendar, Calendar, DatePicker } from 'v-calendar'
 import 'v-calendar/dist/style.css'
 
 export default definePlugin(({ app }) => {
-  app.use(SetupCalendar, {})
+  app.component(
+    'VCalendar',
+    defineAsyncComponent({
+      loader: () => import('v-calendar').then((mod) => mod.Calendar),
+      delay: 0,
+      suspensible: false,
+    })
+  )
 
-  app.component('VCalendar', Calendar)
-  app.component('VDatePicker', DatePicker)
+  app.component(
+    'VDatePicker',
+    defineAsyncComponent({
+      loader: () => import('v-calendar').then((mod) => mod.DatePicker),
+      delay: 0,
+      suspensible: false,
+    })
+  )
 })

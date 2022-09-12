@@ -34,30 +34,32 @@ const options = ref(['All Flights'])
             </div>
           </div>
           <div class="booking-bar">
-            <VDatePicker v-model="date" is-range color="green" trim-weeks>
-              <template #default="{ inputValue, inputEvents }">
-                <div class="booking-bar-inputs">
-                  <VControl icon="feather:calendar">
-                    <input
-                      type="text"
-                      class="input flight-datepicker"
-                      placeholder="Departure"
-                      :value="inputValue.start"
-                      v-on="inputEvents.start"
-                    />
-                  </VControl>
-                  <VControl icon="feather:calendar">
-                    <input
-                      type="text"
-                      class="input flight-datepicker"
-                      placeholder="Return"
-                      :value="inputValue.end"
-                      v-on="inputEvents.end"
-                    />
-                  </VControl>
-                </div>
-              </template>
-            </VDatePicker>
+            <ClientOnly>
+              <VDatePicker v-model="date" is-range color="green" trim-weeks>
+                <template #default="{ inputValue, inputEvents }">
+                  <div class="booking-bar-inputs">
+                    <VControl icon="feather:calendar">
+                      <input
+                        type="text"
+                        class="input flight-datepicker"
+                        placeholder="Departure"
+                        :value="inputValue.start"
+                        v-on="inputEvents.start"
+                      />
+                    </VControl>
+                    <VControl icon="feather:calendar">
+                      <input
+                        type="text"
+                        class="input flight-datepicker"
+                        placeholder="Return"
+                        :value="inputValue.end"
+                        v-on="inputEvents.end"
+                      />
+                    </VControl>
+                  </div>
+                </template>
+              </VDatePicker>
+            </ClientOnly>
           </div>
         </div>
 

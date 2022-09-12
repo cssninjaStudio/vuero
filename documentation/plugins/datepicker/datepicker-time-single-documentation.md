@@ -19,7 +19,26 @@ const date = ref(null)
 </script>
 
 <template>
-  <VDatePicker v-model="date" mode="dateTime" is24hr>
+  <ClientOnly>
+    <VDatePicker v-model="date" mode="dateTime" is24hr>
+      <template #default="{ inputValue, inputEvents }">
+        <VField>
+          <VControl icon="feather:clock">
+            <VInput :value="inputValue" v-on="inputEvents" />
+          </VControl>
+        </VField>
+      </template>
+    </VDatePicker>
+  </ClientOnly>
+</template>
+```
+
+<!--/code-->
+
+<!--example-->
+
+<ClientOnly>
+  <VDatePicker v-model="frontmatter.state.date" color="green" mode="time" is24hr>
     <template #default="{ inputValue, inputEvents }">
       <VField>
         <VControl icon="feather:clock">
@@ -28,21 +47,6 @@ const date = ref(null)
       </VField>
     </template>
   </VDatePicker>
-</template>
-```
-
-<!--/code-->
-
-<!--example-->
-
-<VDatePicker v-model="frontmatter.state.date" color="green" mode="time" is24hr>
-  <template #default="{ inputValue, inputEvents }">
-    <VField>
-      <VControl icon="feather:clock">
-        <VInput :value="inputValue" v-on="inputEvents" />
-      </VControl>
-    </VField>
-  </template>
-</VDatePicker>
+</ClientOnly>
 
 <!--/example-->

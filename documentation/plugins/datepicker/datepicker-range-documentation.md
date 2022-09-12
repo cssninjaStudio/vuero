@@ -23,21 +23,23 @@ const range = reactive({
 </script>
 
 <template>
-  <VDatePicker v-model="range" is-range color="green" trim-weeks>
-    <template #default="{ inputValue, inputEvents }">
-      <VField addons>
-        <VControl>
-          <VInput :value="inputValue.start" v-on="inputEvents.start" />
-        </VControl>
-        <VControl>
-          <VButton static icon="feather:arrow-right" />
-        </VControl>
-        <VControl subcontrol>
-          <VInput :value="inputValue.end" v-on="inputEvents.end" />
-        </VControl>
-      </VField>
-    </template>
-  </VDatePicker>
+  <ClientOnly>
+    <VDatePicker v-model="range" is-range color="green" trim-weeks>
+      <template #default="{ inputValue, inputEvents }">
+        <VField addons>
+          <VControl>
+            <VInput :value="inputValue.start" v-on="inputEvents.start" />
+          </VControl>
+          <VControl>
+            <VButton static icon="feather:arrow-right" />
+          </VControl>
+          <VControl subcontrol>
+            <VInput :value="inputValue.end" v-on="inputEvents.end" />
+          </VControl>
+        </VField>
+      </template>
+    </VDatePicker>
+  </ClientOnly>
 </template>
 ```
 
@@ -45,20 +47,22 @@ const range = reactive({
 
 <!--example-->
 
-<VDatePicker v-model="frontmatter.state.range" is-range color="green" trim-weeks>
-  <template v-slot="{ inputValue, inputEvents }">
-    <VField addons>
-      <VControl expanded icon="feather:corner-down-right">
-        <VInput :value="inputValue.start" v-on="inputEvents.start" />
-      </VControl>
-      <VControl>
-        <VButton static>to</VButton>
-      </VControl>
-      <VControl expanded icon="feather:corner-right-up" subcontrol>
-        <VInput :value="inputValue.end" v-on="inputEvents.end" />
-      </VControl>
-    </VField>
-  </template>
-</VDatePicker>
+<ClientOnly>
+  <VDatePicker v-model="frontmatter.state.range" is-range color="green" trim-weeks>
+    <template v-slot="{ inputValue, inputEvents }">
+      <VField addons>
+        <VControl expanded icon="feather:corner-down-right">
+          <VInput :value="inputValue.start" v-on="inputEvents.start" />
+        </VControl>
+        <VControl>
+          <VButton static>to</VButton>
+        </VControl>
+        <VControl expanded icon="feather:corner-right-up" subcontrol>
+          <VInput :value="inputValue.end" v-on="inputEvents.end" />
+        </VControl>
+      </VField>
+    </template>
+  </VDatePicker>
+</ClientOnly>
 
 <!--/example-->

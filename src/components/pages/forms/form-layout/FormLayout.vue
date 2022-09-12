@@ -176,21 +176,23 @@ const onSubmit = () => {
               </VField>
             </div>
             <div class="column is-6">
-              <VDatePicker v-model="date" color="green" trim-weeks>
-                <template #default="{ inputValue, inputEvents }">
-                  <VField>
-                    <VLabel>Prefered Date</VLabel>
-                    <VControl icon="feather:calendar">
-                      <VInput
-                        type="text"
-                        placeholder="Select a date"
-                        :value="inputValue"
-                        v-on="inputEvents"
-                      />
-                    </VControl>
-                  </VField>
-                </template>
-              </VDatePicker>
+              <ClientOnly>
+                <VDatePicker v-model="date" color="green" trim-weeks>
+                  <template #default="{ inputValue, inputEvents }">
+                    <VField>
+                      <VLabel>Prefered Date</VLabel>
+                      <VControl icon="feather:calendar">
+                        <VInput
+                          type="text"
+                          placeholder="Select a date"
+                          :value="inputValue"
+                          v-on="inputEvents"
+                        />
+                      </VControl>
+                    </VField>
+                  </template>
+                </VDatePicker>
+              </ClientOnly>
             </div>
             <div class="column is-12">
               <VField>

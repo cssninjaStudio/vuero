@@ -20,6 +20,12 @@ import { createApp } from './app'
  * @see /@src/app.ts for more detailed informations
  */
 createApp().then(async (vuero) => {
+  // restore pinia state from SSR if any
+  const initialState = window.__vuero__
+  if (typeof initialState?.pinia === 'object') {
+    vuero.pinia.state.value = initialState.pinia
+  }
+
   // wait for the app to be ready
   await vuero.router.isReady()
 

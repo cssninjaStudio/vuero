@@ -20,7 +20,26 @@ const date = ref(null)
 </script>
 
 <template>
-  <VDatePicker v-model="date" color="green" trim-weeks>
+  <ClientOnly>
+    <VDatePicker v-model="date" color="green" trim-weeks>
+      <template #default="{ inputValue, inputEvents }">
+        <VField>
+          <VControl icon="feather:calendar">
+            <VInput :value="inputValue" v-on="inputEvents" />
+          </VControl>
+        </VField>
+      </template>
+    </VDatePicker>
+  </ClientOnly>
+</template>
+```
+
+<!--/code-->
+
+<!--example-->
+
+<ClientOnly>
+  <VDatePicker v-model="frontmatter.state.date" color="green" trim-weeks>
     <template #default="{ inputValue, inputEvents }">
       <VField>
         <VControl icon="feather:calendar">
@@ -29,21 +48,6 @@ const date = ref(null)
       </VField>
     </template>
   </VDatePicker>
-</template>
-```
-
-<!--/code-->
-
-<!--example-->
-
-<VDatePicker v-model="frontmatter.state.date" color="green" trim-weeks>
-  <template #default="{ inputValue, inputEvents }">
-    <VField>
-      <VControl icon="feather:calendar">
-        <VInput :value="inputValue" v-on="inputEvents" />
-      </VControl>
-    </VField>
-  </template>
-</VDatePicker>
+</ClientOnly>
 
 <!--/example-->

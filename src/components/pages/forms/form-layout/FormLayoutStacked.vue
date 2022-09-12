@@ -56,88 +56,90 @@ const onSubmit = () => {
               </VField>
             </div>
 
-            <VDatePicker
-              v-model="date"
-              is-range
-              color="green"
-              trim-weeks
-              class="column is-6"
-            >
-              <template #default="{ inputValue, inputEvents }">
-                <div class="columns v-calendar-combo">
-                  <div class="column is-6">
-                    <VField>
-                      <VLabel>Meeting start date</VLabel>
+            <ClientOnly>
+              <VDatePicker
+                v-model="date"
+                is-range
+                color="green"
+                trim-weeks
+                class="column is-6"
+              >
+                <template #default="{ inputValue, inputEvents }">
+                  <div class="columns v-calendar-combo">
+                    <div class="column is-6">
+                      <VField>
+                        <VLabel>Meeting start date</VLabel>
 
-                      <VControl icon="feather:calendar">
-                        <VInput
-                          placeholder="Start Date"
-                          :value="inputValue.start"
-                          class="input form-datepicker"
-                          v-on="inputEvents.start"
-                        />
-                      </VControl>
-                    </VField>
+                        <VControl icon="feather:calendar">
+                          <VInput
+                            placeholder="Start Date"
+                            :value="inputValue.start"
+                            class="input form-datepicker"
+                            v-on="inputEvents.start"
+                          />
+                        </VControl>
+                      </VField>
+                    </div>
+                    <div class="column is-6">
+                      <VField>
+                        <VLabel class="is-vhidden">Meeting end date</VLabel>
+
+                        <VControl icon="feather:calendar">
+                          <VInput
+                            placeholder="End Date"
+                            :value="inputValue.end"
+                            class="input form-datepicker"
+                            v-on="inputEvents.end"
+                          />
+                        </VControl>
+                      </VField>
+                    </div>
                   </div>
-                  <div class="column is-6">
-                    <VField>
-                      <VLabel class="is-vhidden">Meeting end date</VLabel>
+                </template>
+              </VDatePicker>
 
-                      <VControl icon="feather:calendar">
-                        <VInput
-                          placeholder="End Date"
-                          :value="inputValue.end"
-                          class="input form-datepicker"
-                          v-on="inputEvents.end"
-                        />
-                      </VControl>
-                    </VField>
-                  </div>
-                </div>
-              </template>
-            </VDatePicker>
+              <VDatePicker
+                v-model="date.start"
+                class="column is-3"
+                color="green"
+                mode="time"
+                is24hr
+              >
+                <template #default="{ inputValue, inputEvents }">
+                  <VField>
+                    <VLabel>Meeting start time</VLabel>
+                    <VControl>
+                      <VInput
+                        class="input form-timepicker"
+                        :value="inputValue"
+                        v-on="inputEvents"
+                      />
+                    </VControl>
+                  </VField>
+                </template>
+              </VDatePicker>
 
-            <VDatePicker
-              v-model="date.start"
-              class="column is-3"
-              color="green"
-              mode="time"
-              is24hr
-            >
-              <template #default="{ inputValue, inputEvents }">
-                <VField>
-                  <VLabel>Meeting start time</VLabel>
-                  <VControl>
-                    <VInput
-                      class="input form-timepicker"
-                      :value="inputValue"
-                      v-on="inputEvents"
-                    />
-                  </VControl>
-                </VField>
-              </template>
-            </VDatePicker>
-
-            <VDatePicker
-              v-model="date.end"
-              class="column is-3"
-              color="green"
-              mode="time"
-              is24hr
-            >
-              <template #default="{ inputValue, inputEvents }">
-                <VField>
-                  <VLabel class="is-vhidden">Meeting end time</VLabel>
-                  <VControl>
-                    <VInput
-                      class="input form-timepicker"
-                      :value="inputValue"
-                      v-on="inputEvents"
-                    />
-                  </VControl>
-                </VField>
-              </template>
-            </VDatePicker>
+              <VDatePicker
+                v-model="date.end"
+                class="column is-3"
+                color="green"
+                mode="time"
+                is24hr
+              >
+                <template #default="{ inputValue, inputEvents }">
+                  <VField>
+                    <VLabel class="is-vhidden">Meeting end time</VLabel>
+                    <VControl>
+                      <VInput
+                        class="input form-timepicker"
+                        :value="inputValue"
+                        v-on="inputEvents"
+                      />
+                    </VControl>
+                  </VField>
+                </template>
+              </VDatePicker>
+            </ClientOnly>
 
             <div class="column is-12">
               <VField>

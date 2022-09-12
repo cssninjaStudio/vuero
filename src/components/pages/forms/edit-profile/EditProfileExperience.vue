@@ -117,27 +117,29 @@ const onSave = async () => {
             <div class="field-wrap">
               <div class="columns is-multiline">
                 <div class="column is-12">
-                  <VDatePicker v-model="range" is-range color="green" trim-weeks>
-                    <template #default="{ inputValue, inputEvents }">
-                      <VField addons class="has-addons-fullwidth">
-                        <VControl>
-                          <VInput :value="inputValue.start" v-on="inputEvents.start" />
-                        </VControl>
-                        <VControl nogrow>
-                          <div class="button">
-                            <i
-                              aria-hidden="true"
-                              class="iconify"
-                              data-icon="feather:arrow-right"
-                            ></i>
-                          </div>
-                        </VControl>
-                        <VControl subcontrol>
-                          <VInput :value="inputValue.end" v-on="inputEvents.end" />
-                        </VControl>
-                      </VField>
-                    </template>
-                  </VDatePicker>
+                  <ClientOnly>
+                    <VDatePicker v-model="range" is-range color="green" trim-weeks>
+                      <template #default="{ inputValue, inputEvents }">
+                        <VField addons class="has-addons-fullwidth">
+                          <VControl>
+                            <VInput :value="inputValue.start" v-on="inputEvents.start" />
+                          </VControl>
+                          <VControl nogrow>
+                            <div class="button">
+                              <i
+                                aria-hidden="true"
+                                class="iconify"
+                                data-icon="feather:arrow-right"
+                              ></i>
+                            </div>
+                          </VControl>
+                          <VControl subcontrol>
+                            <VInput :value="inputValue.end" v-on="inputEvents.end" />
+                          </VControl>
+                        </VField>
+                      </template>
+                    </VDatePicker>
+                  </ClientOnly>
                 </div>
                 <div class="column is-6">
                   <VField>

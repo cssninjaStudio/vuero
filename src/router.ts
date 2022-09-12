@@ -1,6 +1,7 @@
 import {
   createRouter as createClientRouter,
   createWebHistory,
+  createMemoryHistory,
   setupDataFetchingGuard,
 } from 'vue-router/auto'
 
@@ -36,7 +37,7 @@ export function createRouter() {
      * and update "base" config in vite.config.ts
      */
     // history: createWebHistory('my-subdirectory'),
-    history: createWebHistory(),
+    history: import.meta.env.SSR ? createMemoryHistory() : createWebHistory(),
 
     /**
      * You can extend existing routes:

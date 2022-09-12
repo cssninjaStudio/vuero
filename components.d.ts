@@ -88,6 +88,7 @@ declare module '@vue/runtime-core' {
     CircleChart: typeof import('./src/components/partials/widgets/misc/CircleChart.vue')['default']
     CircularMenu: typeof import('./src/components/partials/circular-menu/CircularMenu.vue')['default']
     CKEditorBasicDocumentation: typeof import('./documentation/plugins/ckeditor/CKEditor-basic-documentation.md')['default']
+    ClientOnly: typeof import('./src/components/ClientOnly.vue')['default']
     CloudContainer: typeof import('./src/components/partials/lifestyle/CloudContainer.vue')['default']
     CollapsedMessaging: typeof import('./src/components/partials/messaging/CollapsedMessaging.vue')['default']
     ColorsDocumentation: typeof import('./documentation/elements/colors-documentation.md')['default']
