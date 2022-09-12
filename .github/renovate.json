@@ -3,13 +3,13 @@
   "extends": ["config:base"],
   "schedule": ["before 3am on the first day of the month"],
   "assigneesFromCodeOwners": true,
-  "ignoreDeps": ["bulma-css-vars"],
   "packageRules": [
     {
       "matchPackagePatterns": ["*"],
       "matchUpdateTypes": ["minor", "patch"],
       "groupName": "all non-major dependencies",
       "groupSlug": "all-minor-patch",
+      "ignoreDeps": ["bulma-css-vars"],
       "labels": ["dependencies"]
     },
     {
