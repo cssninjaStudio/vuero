@@ -2,6 +2,43 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.4.0](https://github.com/cssninjaStudio/vuero/compare/v2.3.0...v2.4.0) (2022-09-12)
+
+
+### Features
+
+* add example of router data loader (experimental feature) ([ea78856](https://github.com/cssninjaStudio/vuero/commit/ea78856d55574a3c32f22f495f8b31b248e9bbad))
+* Add roadmap UI ([72e8a05](https://github.com/cssninjaStudio/vuero/commit/72e8a057248c9889f8a0b21d626106a65c351992))
+* add vite auto-import plugin ([6f5beea](https://github.com/cssninjaStudio/vuero/commit/6f5beeaf1ef86dae0e7315866f89b3b5942b8603))
+* **cypress:** create tests suites examples, with CI, upgrade to v10 ([05fb5af](https://github.com/cssninjaStudio/vuero/commit/05fb5af1d4d70b6c0c74946bac7c4bfc0c35d154))
+* fix login page top logo ([d93a10d](https://github.com/cssninjaStudio/vuero/commit/d93a10dcc4d3788a18d8763fc8050afb61bf1bd9))
+* improve user session plugin / router guard ([eb1a9b9](https://github.com/cssninjaStudio/vuero/commit/eb1a9b93236d0a2ffbc9e66f4625401f5ee870b8))
+* pre compress images, add optin MINIFY_IMAGES build option ([0e8d577](https://github.com/cssninjaStudio/vuero/commit/0e8d577271dff9c4df8a2825be64cafe11d636db)), closes [#151](https://github.com/cssninjaStudio/vuero/issues/151)
+* **router:** add scroll behavior between routes ([918dae5](https://github.com/cssninjaStudio/vuero/commit/918dae5ebf0592c1ebebb2990a28c3a15037ee0b))
+* **router:** replace vite-plugin-pages with official unplugin-vue-route (typed router) ([607aee2](https://github.com/cssninjaStudio/vuero/commit/607aee2b6e0384b9f7f66ace2d6e731955fad68b))
+* **ssr:** add experimental server side rendering support ([a45bc16](https://github.com/cssninjaStudio/vuero/commit/a45bc1665bab2b0c56906909fce34849162525e7))
+* upgrade vite to v3.x ([e184240](https://github.com/cssninjaStudio/vuero/commit/e184240bccef19ed180e2f20a2b1977fa35ecea2))
+* use pnpm as default package manager, add npmrc so npm and yarn are iso ([7fe8ebf](https://github.com/cssninjaStudio/vuero/commit/7fe8ebfa729dfc612ac85aaf62bbdca4de250232))
+* **v-checkbox:** add value property to match native behaviour ([3d08006](https://github.com/cssninjaStudio/vuero/commit/3d08006e8f68be9def5bf6d9f8657c32c405de10)), closes [#154](https://github.com/cssninjaStudio/vuero/issues/154)
+* **v-dropdown:** add option parameters for useDropdown composable, can disable clickOuside ([053e97a](https://github.com/cssninjaStudio/vuero/commit/053e97aa68a6346b7174c96aa29427de3d55eff3))
+* **v-i-mask-input:** expose inputMask instance ([1b398a0](https://github.com/cssninjaStudio/vuero/commit/1b398a08184728bde80121cb53c03d263d306150))
+
+
+### Bug Fixes
+
+* **flex-table-wrapper:** expose wrapperState to be used in parent scope ([c42fd25](https://github.com/cssninjaStudio/vuero/commit/c42fd254990db5e00f2eaa568559945f59f3e818))
+* ignore zone.identifier files ([98f1a61](https://github.com/cssninjaStudio/vuero/commit/98f1a61077f1228dd166e64217e91fa0837dbe1a)), closes [#148](https://github.com/cssninjaStudio/vuero/issues/148)
+* remove 404 slug added in url on page not found ([00eee8f](https://github.com/cssninjaStudio/vuero/commit/00eee8fa32345e72a350ce33741f7cb821d8d7c3))
+* remove 404 slug added in url on page not found in quickstarer ([248c2e2](https://github.com/cssninjaStudio/vuero/commit/248c2e21be56d96b6d5092e23f0fe2ea6b8321f3))
+* remove global dragula hack on kanban app and lazy load lib ([aa2cbcc](https://github.com/cssninjaStudio/vuero/commit/aa2cbccd796e9a8725827cbf084bfc8ae0b81330))
+* remove vite-imagetools to speedup build, pre optimize images instead ([fd833b0](https://github.com/cssninjaStudio/vuero/commit/fd833b02b82347bc96626ca38a8107f9c5756990))
+* use RouteLocationAsString instead of RouteLocationRaw ([ec7fbc8](https://github.com/cssninjaStudio/vuero/commit/ec7fbc80ae07b8ec2657b2c1dc5b11691f5ec089))
+* use VBlock to load styles ([eaf9bf2](https://github.com/cssninjaStudio/vuero/commit/eaf9bf26730da603162e82428c2b5b47f795ea89))
+* **v-button:** inherit class string attributes ([a8be6cf](https://github.com/cssninjaStudio/vuero/commit/a8be6cfa05d8fbd299a09ce9b57f153a05539f0a))
+* **v-file-pond:** expose FilePond and HTMLInputFile to be used in parent scope ([bf56d9e](https://github.com/cssninjaStudio/vuero/commit/bf56d9e761810e869a351267d708121c52c4697d)), closes [#178](https://github.com/cssninjaStudio/vuero/issues/178)
+* **v-input:** allow to use bulma size modifiers ([f1f1bf2](https://github.com/cssninjaStudio/vuero/commit/f1f1bf233fe32b1a814c6107b156ed86ae3291ca))
+* **v-switch-segment:** emit value from internal VInput component ([845e44a](https://github.com/cssninjaStudio/vuero/commit/845e44a5d8ff98fff4d5a176f1de83011168d1ae))
+
 ## [2.3.0](https://github.com/cssninjaStudio/vuero/compare/v2.2.0...v2.3.0) (2022-04-24)
 
 ### Features
