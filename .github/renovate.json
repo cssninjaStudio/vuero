@@ -3,6 +3,7 @@
   "extends": ["config:base"],
   "schedule": ["before 3am on the first day of the month"],
   "assigneesFromCodeOwners": true,
+  "ignoreDeps": ["bulma-css-vars"],
   "packageRules": [
     {
       "matchPackagePatterns": ["*"],
