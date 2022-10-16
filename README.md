@@ -1,6 +1,6 @@
 # Vuero Vue3 - Multipurpose Admin and Webapp Template
 
-[![cssninja-discord](https://img.shields.io/discord/785473098069311510?label=join%20us%20on%20discord&color=6944EC)](https://discord.cssninja.io/)
+[![cssninja-discord](https://img.shields.io/discord/785473098069311510?label=join%20us%20on%20discord&color=6944EC)](https://go.cssninja.io/discord)
 
 ## ▶️ Getting started
 
@@ -92,7 +92,7 @@ Read more about it [on github.com/typicode/json-server](https://github.com/typic
 Our online documentation is a great place to learn how to use Vuero.
 We try to keep it mostly up to date, so you can always find the latest information.
 
-> We also have a great [discord community](https://discord.cssninja.io/) where you can ask questions and show your work.
+> We also have a great [discord community](https://go.cssninja.io/discord) where you can ask questions and show your work.
 
 ### [Vuero on docs.cssninja.io](https://docs.cssninja.io/vuero?utm_source=readme)
 
