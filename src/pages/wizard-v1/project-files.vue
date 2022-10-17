@@ -205,8 +205,14 @@ watch(previewTemplate, () => {
       </div>
 
       <!--List Empty Search Placeholder -->
-      <div v-if="!isUploading" class="page-placeholder is-files">
-        <div class="placeholder-content">
+      <VPlaceholderPage
+        v-if="!isUploading"
+        class="is-files"
+        title="Upload project files"
+        subtitle="You can already start adding files to your project if you have them handy. But don't worry, you'll be able to add and manage files later."
+        larger
+      >
+        <template #image>
           <img
             class="light-image is-rounded"
             src="/@src/assets/illustrations/wizard/upload-placeholder.svg"
@@ -217,11 +223,8 @@ watch(previewTemplate, () => {
             src="/@src/assets/illustrations/wizard/upload-placeholder.svg"
             alt=""
           />
-          <h3>Upload project files</h3>
-          <p class="is-larger">
-            You can already start adding files to your project if you have them handy. But
-            don't worry, you'll be able to add and manage files later.
-          </p>
+        </template>
+        <template #action>
           <a
             class="action-link toggle-uploader-link"
             tabindex="0"
@@ -230,8 +233,8 @@ watch(previewTemplate, () => {
           >
             Add Files
           </a>
-        </div>
-      </div>
+        </template>
+      </VPlaceholderPage>
 
       <div v-else class="uploader">
         <div class="uploader-toolbar">

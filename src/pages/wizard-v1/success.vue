@@ -16,8 +16,13 @@ wizard.setStep({
         <p>Awesome, you just finished creating this project.</p>
       </div>
 
-      <div class="page-placeholder end-placeholder">
-        <div class="placeholder-content">
+      <VPlaceholderPage
+        class="end-placeholder"
+        title="Get ready for next steps."
+        subtitle="You, and the team members you've added can already start working and creating tasks."
+        larger
+      >
+        <template #image>
           <img
             class="light-image"
             src="/@src/assets/illustrations/wizard/finish.svg"
@@ -28,24 +33,19 @@ wizard.setStep({
             src="/@src/assets/illustrations/wizard/finish-dark.svg"
             alt=""
           />
-          <h3>Get ready for next steps.</h3>
-          <p>
-            You, and the team members you've added can already start working and creating
-            tasks.
-          </p>
-          <div class="button-wrap">
-            <VButton
-              color="primary"
-              rounded
-              bold
-              elevated
-              to="/sidebar/layouts/projects-details"
-            >
-              View Project
-            </VButton>
-          </div>
-        </div>
-      </div>
+        </template>
+        <template #action>
+          <VButton
+            color="primary"
+            rounded
+            bold
+            elevated
+            to="/sidebar/layouts/projects-details"
+          >
+            View Project
+          </VButton>
+        </template>
+      </VPlaceholderPage>
     </div>
   </div>
 </template>

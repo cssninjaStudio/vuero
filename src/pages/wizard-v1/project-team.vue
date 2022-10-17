@@ -96,8 +96,15 @@ watchEffect(() => {
       </div>
 
       <!--List Empty Search Placeholder -->
-      <div v-if="!isAddingMembers" class="page-placeholder is-people">
-        <div class="placeholder-content">
+      <VPlaceholderPage
+        v-if="!isAddingMembers"
+        class="is-people"
+        title="Invite People"
+        subtitle="You can already start adding files to your project if you have them handy. But
+            don't worry, you'll be able to add and manage files later."
+        larger
+      >
+        <template #image>
           <img
             class="light-image is-rounded"
             src="/@src/assets/illustrations/wizard/team-placeholder.svg"
@@ -108,11 +115,8 @@ watchEffect(() => {
             src="/@src/assets/illustrations/wizard/team-placeholder.svg"
             alt=""
           />
-          <h3>Invite People</h3>
-          <p class="is-larger">
-            You can already start adding files to your project if you have them handy. But
-            don't worry, you'll be able to add and manage files later.
-          </p>
+        </template>
+        <template #action>
           <a
             class="action-link toggle-members-link"
             tabindex="0"
@@ -121,8 +125,8 @@ watchEffect(() => {
           >
             Add Members
           </a>
-        </div>
-      </div>
+        </template>
+      </VPlaceholderPage>
 
       <div v-if="isAddingMembers" class="project-team-wrapper">
         <div class="project-team-header">
