@@ -23,14 +23,6 @@ ARCHIVE=template-${INPUT_PROJECT}-${INPUT_TAG}.zip
 echo "::group::building ${ARCHIVE}"
 echo "::debug::${ARCHIVE}"
 
-# # enable "rollupOptions.external" in vite.config.ts
-# sed -i "s#/// ##g" ./vite.config.ts
-
-# ## remove demo assets
-# rm -rf public/demo
-
-# ## build without artifacts
-# yarn build
 
 # top level zip release-${INPUT_PROJECT}-${INPUT_TAG}.zip 
 zip -r $ARCHIVE . \
