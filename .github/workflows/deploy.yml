@@ -17,16 +17,15 @@ jobs:
   tests:
     uses: ./.github/workflows/tests.yml
 
-  deploy:
+  docker-build:
     runs-on: ubuntu-latest
     needs: [tests]
 
     steps:
       - uses: actions/checkout@v3
       - name: Set up dockertags
-        id: get_meta
         run: |
-          echo ::set-output name=dockertags::digisquad/cssninja.vuero-demo:latest
+          echo "dockertags=digisquad/cssninja.vuero-demo:latest" >> $GITHUB_ENV
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
@@ -46,25 +45,31 @@ jobs:
         timeout-minutes: 60
         with:
           push: true
-          tags: ${{ steps.get_meta.outputs.dockertags }}
+          tags: ${{ env.dockertags }}
           build-args: |
             VITE_API_BASE_URL=https://api.vuero.cssninja.io
             GTM_ID=GTM-N9P6H6B
 
+  deploy:
+    runs-on: ubuntu-latest
+    needs: [docker-build]
+
+    steps:
+      - uses: actions/checkout@v3
       - name: Publish
         uses: appleboy/scp-action@master
         with:
-          host: cssninja.io
-          username: ci
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           source: docker-compose.yml
           target: ${{ secrets.HOST_DIRECTORY }}
 
-      - name: Deploy to cssninja.io
+      - name: Deploy
         uses: appleboy/ssh-action@master
         with:
-          host: cssninja.io
-          username: ci
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script_stop: true
           script: |
