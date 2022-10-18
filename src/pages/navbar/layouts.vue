@@ -2,7 +2,6 @@
 import { useLayoutSwitcher } from '/@src/stores/layoutSwitcher'
 
 const layoutSwitcher = useLayoutSwitcher()
-const route = useRoute()
 </script>
 
 <template>
@@ -13,7 +12,7 @@ const route = useRoute()
     <!-- Content Wrapper -->
     <RouterView v-slot="{ Component }">
       <Transition name="translate-page-x" mode="out-in">
-        <component :is="Component" :key="route.fullPath" />
+        <component :is="Component" />
       </Transition>
     </RouterView>
   </component>
