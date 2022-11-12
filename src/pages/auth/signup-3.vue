@@ -7,7 +7,7 @@ import sleep from '/@src/utils/sleep'
 
 const darkmode = useDarkmode()
 const router = useRouter()
-const notif = useNotyf()
+const notyf = useNotyf()
 const isLoading = ref(false)
 
 const handleSignup = async () => {
@@ -15,8 +15,8 @@ const handleSignup = async () => {
     isLoading.value = true
     sleep(2000)
 
-    notif.dismissAll()
-    notif.success('Welcome, Erik Kovalsky')
+    notyf.dismissAll()
+    notyf.success('Welcome, Erik Kovalsky')
     router.push({ name: '/sidebar/dashboards' })
     isLoading.value = false
   }

@@ -10,7 +10,7 @@ const isLoading = ref(false)
 const darkmode = useDarkmode()
 const router = useRouter()
 const route = useRoute()
-const notif = useNotyf()
+const notyf = useNotyf()
 const userSession = useUserSession()
 const redirect = route.query.redirect as string
 
@@ -21,8 +21,8 @@ const handleLogin = async () => {
     await sleep(2000)
     userSession.setToken('logged-in')
 
-    notif.dismissAll()
-    notif.success('Welcome back, Erik Kovalsky')
+    notyf.dismissAll()
+    notyf.success('Welcome back, Erik Kovalsky')
 
     if (redirect) {
       router.push(redirect)

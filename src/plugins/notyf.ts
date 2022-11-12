@@ -1,9 +1,13 @@
-import type { INotyfNotificationOptions, NotyfNotification } from 'notyf'
+import type { INotyfNotificationOptions, Notyf, NotyfNotification } from 'notyf'
+import { InjectionKey } from 'vue'
 
 import { definePlugin } from '/@src/app'
 import { useThemeColors } from '/@src/composable/useThemeColors'
 
-export default definePlugin(async ({ app }) => {
+export const notyfSymbol: InjectionKey<Awaited<ReturnType<typeof initNotyfService>>> =
+  Symbol('notyf')
+
+async function initNotyfService() {
   const themeColors = useThemeColors()
   let notyf: Notyf
 
@@ -92,7 +96,7 @@ export default definePlugin(async ({ app }) => {
     })
   }
 
-  app.provide('notyf', {
+  return {
     dismiss: (notification: NotyfNotification) => {
       notyf?.dismiss(notification)
     },
@@ -196,5 +200,10 @@ export default definePlugin(async ({ app }) => {
 
       return notyf?.open(options)
     },
-  })
+  }
+}
+
+export default definePlugin(async ({ app }) => {
+  const notyf = await initNotyfService()
+  app.provide(notyfSymbol, notyf)
 })

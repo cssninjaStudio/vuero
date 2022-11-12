@@ -12,7 +12,7 @@ import sleep from '/@src/utils/sleep'
 
 const darkmode = useDarkmode()
 const router = useRouter()
-const notif = useNotyf()
+const notyf = useNotyf()
 
 const isLoading = ref(false)
 const { t } = useI18n()
@@ -67,8 +67,8 @@ const onSignup = handleSubmit(async (values) => {
 
     await sleep(800)
 
-    notif.dismissAll()
-    notif.success('Welcome, Erik Kovalsky')
+    notyf.dismissAll()
+    notyf.success('Welcome, Erik Kovalsky')
 
     router.push({ name: '/app' })
     isLoading.value = false

@@ -7,7 +7,7 @@ import VueScrollTo from 'vue-scrollto'
 import { useNotyf } from '/@src/composable/useNotyf'
 import sleep from '/@src/utils/sleep'
 
-const notif = useNotyf()
+const notyf = useNotyf()
 const { scrollTo } = VueScrollTo
 
 // we need to declare the schema for the form
@@ -72,7 +72,7 @@ const handleSignup = handleSubmit(async (values) => {
     return
   }
 
-  notif.success('You have successfully signed up!')
+  notyf.success('You have successfully signed up!')
   loading.value = false
 })
 </script>

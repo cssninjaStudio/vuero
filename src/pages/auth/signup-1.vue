@@ -12,7 +12,7 @@ import { useDarkmode } from '/@src/stores/darkmode'
 let slider: TinySliderInstance
 const sliderElement = ref<HTMLElement>()
 const router = useRouter()
-const notif = useNotyf()
+const notyf = useNotyf()
 const darkmode = useDarkmode()
 const step = ref(0)
 const selectedAvatar = ref(2)
@@ -40,8 +40,8 @@ const handleSignup = async () => {
     isLoading.value = true
     sleep(2000)
 
-    notif.dismissAll()
-    notif.success('Welcome, Erik Kovalsky')
+    notyf.dismissAll()
+    notyf.success('Welcome, Erik Kovalsky')
     router.push({ name: '/sidebar/dashboards' })
     isLoading.value = false
   }
