@@ -37,6 +37,13 @@ const validationSchema = toFormValidator(
         })
         .min(8, 'Your password should contains at least 8 characters'),
       passwordCheck: zod.string(),
+      birthdate: zod
+        .date({
+          invalid_type_error: 'Please enter a valid date',
+          required_error: 'Please enter a date',
+        })
+        .max(new Date(), 'You cannot be born in the future')
+        .nullable(),
       agreeTerms: zod
         .boolean()
         .refine((value) => value, 'You must agree our terms of service'),
@@ -61,6 +68,7 @@ const { handleSubmit, setFieldError, handleReset } = useForm({
     email: '',
     password: '',
     passwordCheck: '',
+    birthdate: null,
     interests: [],
     agreeTerms: false,
     emailOptin: false,
@@ -93,26 +101,48 @@ const handleSignup = handleSubmit(async (values) => {
   <form @submit.prevent="handleSignup">
     <VField id="email" v-slot="{ field }" label="Your email">
       <VControl icon="feather:user">
-        <VInput type="email" placeholder="john.doe@gmail.com" />
-        <p v-if="field?.errorMessage" class="help is-danger">
-          {{ field.errorMessage }}
+        <VInput type="email" placeholder="john.doe@gmail.com" autocomplete="username" />
+        <p v-if="field?.errors?.value?.length" class="help is-danger">
+          {{ field.errors?.value?.join(', ') }}
         </p>
       </VControl>
     </VField>
     <VField id="password" v-slot="{ field }" label="Choose a password">
       <VControl icon="feather:lock">
-        <VInput type="password" placeholder="Not$3cret" />
-        <p v-if="field?.errorMessage" class="help is-danger">
-          {{ field.errorMessage }}
+        <VInput type="password" placeholder="Not$3cret" autocomplete="new-password" />
+        <p v-if="field?.errors?.value?.length" class="help is-danger">
+          {{ field.errors?.value?.join(', ') }}
         </p>
       </VControl>
     </VField>
     <VField id="passwordCheck" v-slot="{ field }" label="Confirm your new password">
       <VControl icon="feather:check">
-        <VInput type="password" placeholder="Not$3cret" />
-        <p v-if="field?.errorMessage" class="help is-danger">
-          {{ field.errorMessage }}
+        <VInput type="password" placeholder="Not$3cret" autocomplete="new-password" />
+        <p v-if="field?.errors?.value?.length" class="help is-danger">
+          {{ field.errors?.value?.join(', ') }}
         </p>
+      </VControl>
+    </VField>
+    <VField id="birthdate" v-slot="{ field }" label="Birthdate">
+      <VControl icon="feather:calendar">
+        <VDatePicker
+          :model-value="field!.value"
+          color="green"
+          trim-weeks
+          @update:modelValue="field?.handleChange"
+        >
+          <template #default="{ inputValue, inputEvents }">
+            <input
+              class="input"
+              :value="inputValue"
+              placeholder="Select your birthdate"
+              v-on="inputEvents"
+            />
+            <p v-if="field?.errors?.value?.length" class="help is-danger">
+              {{ field.errors?.value?.join(', ') }}
+            </p>
+          </template>
+        </VDatePicker>
       </VControl>
     </VField>
     <VField
@@ -133,8 +163,8 @@ const handleSignup = handleSubmit(async (values) => {
           <VOption value="Security & Protection">Security & Protection</VOption>
           <VOption value="Lights & Lighting">Lights & Lighting</VOption>
         </VSelect>
-        <p v-if="field?.errorMessage" class="help is-danger">
-          {{ field.errorMessage }}
+        <p v-if="field?.errors?.value?.length" class="help is-danger">
+          {{ field.errors?.value?.join(', ') }}
         </p>
         <p class="help">
           Hold down the <kbd>Ctrl</kbd> (windows) / <kbd>Command</kbd> (Mac) button to
@@ -148,8 +178,8 @@ const handleSignup = handleSubmit(async (values) => {
           I agree to the <a href="#">terms and conditions</a>
         </VCheckbox>
 
-        <p v-if="field?.errorMessage" class="help is-danger">
-          {{ field.errorMessage }}
+        <p v-if="field?.errors?.value?.length" class="help is-danger">
+          {{ field.errors?.value?.join(', ') }}
         </p>
       </VControl>
     </VField>

@@ -128,8 +128,8 @@ useHead({
                             :placeholder="t('auth.placeholder.name')"
                             autocomplete="name"
                           />
-                          <p v-if="field?.errorMessage" class="help is-danger">
-                            {{ field.errorMessage }}
+                          <p v-if="field?.errors?.value?.length" class="help is-danger">
+                            {{ field.errors?.value?.join(', ') }}
                           </p>
                         </VControl>
                       </VField>
@@ -142,8 +142,8 @@ useHead({
                             :placeholder="t('auth.placeholder.email')"
                             autocomplete="email"
                           />
-                          <p v-if="field?.errorMessage" class="help is-danger">
-                            {{ field.errorMessage }}
+                          <p v-if="field?.errors?.value?.length" class="help is-danger">
+                            {{ field.errors?.value?.join(', ') }}
                           </p>
                         </VControl>
                       </VField>
@@ -156,8 +156,8 @@ useHead({
                             :placeholder="t('auth.placeholder.password')"
                             autocomplete="new-password"
                           />
-                          <p v-if="field?.errorMessage" class="help is-danger">
-                            {{ field.errorMessage }}
+                          <p v-if="field?.errors?.value?.length" class="help is-danger">
+                            {{ field.errors?.value?.join(', ') }}
                           </p>
                         </VControl>
                       </VField>
@@ -169,8 +169,8 @@ useHead({
                             type="password"
                             :placeholder="t('auth.placeholder.passwordCheck')"
                           />
-                          <p v-if="field?.errorMessage" class="help is-danger">
-                            {{ field.errorMessage }}
+                          <p v-if="field?.errors?.value?.length" class="help is-danger">
+                            {{ field.errors?.value?.join(', ') }}
                           </p>
                         </VControl>
                       </VField>
