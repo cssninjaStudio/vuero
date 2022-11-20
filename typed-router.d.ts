@@ -10,6 +10,9 @@ import type {
   RouteLocationResolvedTypedList,
   RouteLocationNormalizedTypedList,
   RouteLocationNormalizedLoadedTypedList,
+  RouteLocationAsString,
+  RouteLocationAsRelativeTypedList,
+  RouteLocationAsPathTypedList,
 
   // helper types
   // route definitions
@@ -42,14 +45,14 @@ declare module 'vue-router/auto/routes' {
     '/auth/signup-2': RouteRecordInfo<'/auth/signup-2', '/auth/signup-2', Record<never, never>, Record<never, never>>,
     '/auth/signup-3': RouteRecordInfo<'/auth/signup-3', '/auth/signup-3', Record<never, never>, Record<never, never>>,
     '/components': RouteRecordInfo<'/components', '/components', Record<never, never>, Record<never, never>>,
-    '/components/': RouteRecordInfo<'/components/', '/components/', Record<never, never>, Record<never, never>>,
-    '/components/accordion/': RouteRecordInfo<'/components/accordion/', '/components/accordion/', Record<never, never>, Record<never, never>>,
+    '/components/': RouteRecordInfo<'/components/', '/components', Record<never, never>, Record<never, never>>,
+    '/components/accordion/': RouteRecordInfo<'/components/accordion/', '/components/accordion', Record<never, never>, Record<never, never>>,
     '/components/accordion/image': RouteRecordInfo<'/components/accordion/image', '/components/accordion/image', Record<never, never>, Record<never, never>>,
-    '/components/avatar/': RouteRecordInfo<'/components/avatar/', '/components/avatar/', Record<never, never>, Record<never, never>>,
+    '/components/avatar/': RouteRecordInfo<'/components/avatar/', '/components/avatar', Record<never, never>, Record<never, never>>,
     '/components/avatar/stack': RouteRecordInfo<'/components/avatar/stack', '/components/avatar/stack', Record<never, never>, Record<never, never>>,
     '/components/block': RouteRecordInfo<'/components/block', '/components/block', Record<never, never>, Record<never, never>>,
     '/components/breadcrumb': RouteRecordInfo<'/components/breadcrumb', '/components/breadcrumb', Record<never, never>, Record<never, never>>,
-    '/components/card/': RouteRecordInfo<'/components/card/', '/components/card/', Record<never, never>, Record<never, never>>,
+    '/components/card/': RouteRecordInfo<'/components/card/', '/components/card', Record<never, never>, Record<never, never>>,
     '/components/card/action': RouteRecordInfo<'/components/card/action', '/components/card/action', Record<never, never>, Record<never, never>>,
     '/components/card/advanced': RouteRecordInfo<'/components/card/advanced', '/components/card/advanced', Record<never, never>, Record<never, never>>,
     '/components/card/media': RouteRecordInfo<'/components/card/media', '/components/card/media', Record<never, never>, Record<never, never>>,
@@ -57,11 +60,11 @@ declare module 'vue-router/auto/routes' {
     '/components/collapse': RouteRecordInfo<'/components/collapse', '/components/collapse', Record<never, never>, Record<never, never>>,
     '/components/content': RouteRecordInfo<'/components/content', '/components/content', Record<never, never>, Record<never, never>>,
     '/components/flex': RouteRecordInfo<'/components/flex', '/components/flex', Record<never, never>, Record<never, never>>,
-    '/components/flextable/': RouteRecordInfo<'/components/flextable/', '/components/flextable/', Record<never, never>, Record<never, never>>,
+    '/components/flextable/': RouteRecordInfo<'/components/flextable/', '/components/flextable', Record<never, never>, Record<never, never>>,
     '/components/flextable/columns': RouteRecordInfo<'/components/flextable/columns', '/components/flextable/columns', Record<never, never>, Record<never, never>>,
     '/components/flextable/render': RouteRecordInfo<'/components/flextable/render', '/components/flextable/render', Record<never, never>, Record<never, never>>,
     '/components/flextable/slots': RouteRecordInfo<'/components/flextable/slots', '/components/flextable/slots', Record<never, never>, Record<never, never>>,
-    '/components/flextable/wrapper/': RouteRecordInfo<'/components/flextable/wrapper/', '/components/flextable/wrapper/', Record<never, never>, Record<never, never>>,
+    '/components/flextable/wrapper/': RouteRecordInfo<'/components/flextable/wrapper/', '/components/flextable/wrapper', Record<never, never>, Record<never, never>>,
     '/components/flextable/wrapper/async': RouteRecordInfo<'/components/flextable/wrapper/async', '/components/flextable/wrapper/async', Record<never, never>, Record<never, never>>,
     '/components/grid': RouteRecordInfo<'/components/grid', '/components/grid', Record<never, never>, Record<never, never>>,
     '/components/icon-box': RouteRecordInfo<'/components/icon-box', '/components/icon-box', Record<never, never>, Record<never, never>>,
@@ -80,7 +83,7 @@ declare module 'vue-router/auto/routes' {
     '/components/tabs': RouteRecordInfo<'/components/tabs', '/components/tabs', Record<never, never>, Record<never, never>>,
     '/components/tag': RouteRecordInfo<'/components/tag', '/components/tag', Record<never, never>, Record<never, never>>,
     '/elements': RouteRecordInfo<'/elements', '/elements', Record<never, never>, Record<never, never>>,
-    '/elements/': RouteRecordInfo<'/elements/', '/elements/', Record<never, never>, Record<never, never>>,
+    '/elements/': RouteRecordInfo<'/elements/', '/elements', Record<never, never>, Record<never, never>>,
     '/elements/action': RouteRecordInfo<'/elements/action', '/elements/action', Record<never, never>, Record<never, never>>,
     '/elements/addons/calendar': RouteRecordInfo<'/elements/addons/calendar', '/elements/addons/calendar', Record<never, never>, Record<never, never>>,
     '/elements/addons/ckeditor': RouteRecordInfo<'/elements/addons/ckeditor', '/elements/addons/ckeditor', Record<never, never>, Record<never, never>>,
@@ -110,7 +113,7 @@ declare module 'vue-router/auto/routes' {
     '/elements/loader': RouteRecordInfo<'/elements/loader', '/elements/loader', Record<never, never>, Record<never, never>>,
     '/elements/message': RouteRecordInfo<'/elements/message', '/elements/message', Record<never, never>, Record<never, never>>,
     '/elements/modal': RouteRecordInfo<'/elements/modal', '/elements/modal', Record<never, never>, Record<never, never>>,
-    '/elements/placeload/': RouteRecordInfo<'/elements/placeload/', '/elements/placeload/', Record<never, never>, Record<never, never>>,
+    '/elements/placeload/': RouteRecordInfo<'/elements/placeload/', '/elements/placeload', Record<never, never>, Record<never, never>>,
     '/elements/placeload/avatar': RouteRecordInfo<'/elements/placeload/avatar', '/elements/placeload/avatar', Record<never, never>, Record<never, never>>,
     '/elements/placeload/text': RouteRecordInfo<'/elements/placeload/text', '/elements/placeload/text', Record<never, never>, Record<never, never>>,
     '/elements/progress': RouteRecordInfo<'/elements/progress', '/elements/progress', Record<never, never>, Record<never, never>>,
@@ -131,9 +134,9 @@ declare module 'vue-router/auto/routes' {
     '/messaging-v1': RouteRecordInfo<'/messaging-v1', '/messaging-v1', Record<never, never>, Record<never, never>>,
     '/messaging-v2': RouteRecordInfo<'/messaging-v2', '/messaging-v2', Record<never, never>, Record<never, never>>,
     '/navbar': RouteRecordInfo<'/navbar', '/navbar', Record<never, never>, Record<never, never>>,
-    '/navbar/': RouteRecordInfo<'/navbar/', '/navbar/', Record<never, never>, Record<never, never>>,
+    '/navbar/': RouteRecordInfo<'/navbar/', '/navbar', Record<never, never>, Record<never, never>>,
     '/navbar/dashboards': RouteRecordInfo<'/navbar/dashboards', '/navbar/dashboards', Record<never, never>, Record<never, never>>,
-    '/navbar/dashboards/': RouteRecordInfo<'/navbar/dashboards/', '/navbar/dashboards/', Record<never, never>, Record<never, never>>,
+    '/navbar/dashboards/': RouteRecordInfo<'/navbar/dashboards/', '/navbar/dashboards', Record<never, never>, Record<never, never>>,
     '/navbar/dashboards/analytics': RouteRecordInfo<'/navbar/dashboards/analytics', '/navbar/dashboards/analytics', Record<never, never>, Record<never, never>>,
     '/navbar/dashboards/banking-1': RouteRecordInfo<'/navbar/dashboards/banking-1', '/navbar/dashboards/banking-1', Record<never, never>, Record<never, never>>,
     '/navbar/dashboards/banking-2': RouteRecordInfo<'/navbar/dashboards/banking-2', '/navbar/dashboards/banking-2', Record<never, never>, Record<never, never>>,
@@ -162,7 +165,7 @@ declare module 'vue-router/auto/routes' {
     '/navbar/dashboards/widgets-sample-ui': RouteRecordInfo<'/navbar/dashboards/widgets-sample-ui', '/navbar/dashboards/widgets-sample-ui', Record<never, never>, Record<never, never>>,
     '/navbar/dashboards/writer': RouteRecordInfo<'/navbar/dashboards/writer', '/navbar/dashboards/writer', Record<never, never>, Record<never, never>>,
     '/navbar/layouts': RouteRecordInfo<'/navbar/layouts', '/navbar/layouts', Record<never, never>, Record<never, never>>,
-    '/navbar/layouts/': RouteRecordInfo<'/navbar/layouts/', '/navbar/layouts/', Record<never, never>, Record<never, never>>,
+    '/navbar/layouts/': RouteRecordInfo<'/navbar/layouts/', '/navbar/layouts', Record<never, never>, Record<never, never>>,
     '/navbar/layouts/action-page-1': RouteRecordInfo<'/navbar/layouts/action-page-1', '/navbar/layouts/action-page-1', Record<never, never>, Record<never, never>>,
     '/navbar/layouts/action-page-2': RouteRecordInfo<'/navbar/layouts/action-page-2', '/navbar/layouts/action-page-2', Record<never, never>, Record<never, never>>,
     '/navbar/layouts/form-layouts-1': RouteRecordInfo<'/navbar/layouts/form-layouts-1', '/navbar/layouts/form-layouts-1', Record<never, never>, Record<never, never>>,
@@ -203,7 +206,7 @@ declare module 'vue-router/auto/routes' {
     '/navbar/layouts/placeload-3': RouteRecordInfo<'/navbar/layouts/placeload-3', '/navbar/layouts/placeload-3', Record<never, never>, Record<never, never>>,
     '/navbar/layouts/placeload-4': RouteRecordInfo<'/navbar/layouts/placeload-4', '/navbar/layouts/placeload-4', Record<never, never>, Record<never, never>>,
     '/navbar/layouts/profile-edit': RouteRecordInfo<'/navbar/layouts/profile-edit', '/navbar/layouts/profile-edit', Record<never, never>, Record<never, never>>,
-    '/navbar/layouts/profile-edit/': RouteRecordInfo<'/navbar/layouts/profile-edit/', '/navbar/layouts/profile-edit/', Record<never, never>, Record<never, never>>,
+    '/navbar/layouts/profile-edit/': RouteRecordInfo<'/navbar/layouts/profile-edit/', '/navbar/layouts/profile-edit', Record<never, never>, Record<never, never>>,
     '/navbar/layouts/profile-edit/experience': RouteRecordInfo<'/navbar/layouts/profile-edit/experience', '/navbar/layouts/profile-edit/experience', Record<never, never>, Record<never, never>>,
     '/navbar/layouts/profile-edit/settings': RouteRecordInfo<'/navbar/layouts/profile-edit/settings', '/navbar/layouts/profile-edit/settings', Record<never, never>, Record<never, never>>,
     '/navbar/layouts/profile-edit/skills': RouteRecordInfo<'/navbar/layouts/profile-edit/skills', '/navbar/layouts/profile-edit/skills', Record<never, never>, Record<never, never>>,
@@ -224,9 +227,9 @@ declare module 'vue-router/auto/routes' {
     '/navbar/maps-2': RouteRecordInfo<'/navbar/maps-2', '/navbar/maps-2', Record<never, never>, Record<never, never>>,
     '/roadmap': RouteRecordInfo<'/roadmap', '/roadmap', Record<never, never>, Record<never, never>>,
     '/sidebar': RouteRecordInfo<'/sidebar', '/sidebar', Record<never, never>, Record<never, never>>,
-    '/sidebar/': RouteRecordInfo<'/sidebar/', '/sidebar/', Record<never, never>, Record<never, never>>,
+    '/sidebar/': RouteRecordInfo<'/sidebar/', '/sidebar', Record<never, never>, Record<never, never>>,
     '/sidebar/dashboards': RouteRecordInfo<'/sidebar/dashboards', '/sidebar/dashboards', Record<never, never>, Record<never, never>>,
-    '/sidebar/dashboards/': RouteRecordInfo<'/sidebar/dashboards/', '/sidebar/dashboards/', Record<never, never>, Record<never, never>>,
+    '/sidebar/dashboards/': RouteRecordInfo<'/sidebar/dashboards/', '/sidebar/dashboards', Record<never, never>, Record<never, never>>,
     '/sidebar/dashboards/analytics': RouteRecordInfo<'/sidebar/dashboards/analytics', '/sidebar/dashboards/analytics', Record<never, never>, Record<never, never>>,
     '/sidebar/dashboards/banking-1': RouteRecordInfo<'/sidebar/dashboards/banking-1', '/sidebar/dashboards/banking-1', Record<never, never>, Record<never, never>>,
     '/sidebar/dashboards/banking-2': RouteRecordInfo<'/sidebar/dashboards/banking-2', '/sidebar/dashboards/banking-2', Record<never, never>, Record<never, never>>,
@@ -255,7 +258,7 @@ declare module 'vue-router/auto/routes' {
     '/sidebar/dashboards/widgets-sample-ui': RouteRecordInfo<'/sidebar/dashboards/widgets-sample-ui', '/sidebar/dashboards/widgets-sample-ui', Record<never, never>, Record<never, never>>,
     '/sidebar/dashboards/writer': RouteRecordInfo<'/sidebar/dashboards/writer', '/sidebar/dashboards/writer', Record<never, never>, Record<never, never>>,
     '/sidebar/layouts': RouteRecordInfo<'/sidebar/layouts', '/sidebar/layouts', Record<never, never>, Record<never, never>>,
-    '/sidebar/layouts/': RouteRecordInfo<'/sidebar/layouts/', '/sidebar/layouts/', Record<never, never>, Record<never, never>>,
+    '/sidebar/layouts/': RouteRecordInfo<'/sidebar/layouts/', '/sidebar/layouts', Record<never, never>, Record<never, never>>,
     '/sidebar/layouts/action-page-1': RouteRecordInfo<'/sidebar/layouts/action-page-1', '/sidebar/layouts/action-page-1', Record<never, never>, Record<never, never>>,
     '/sidebar/layouts/action-page-2': RouteRecordInfo<'/sidebar/layouts/action-page-2', '/sidebar/layouts/action-page-2', Record<never, never>, Record<never, never>>,
     '/sidebar/layouts/form-layouts-1': RouteRecordInfo<'/sidebar/layouts/form-layouts-1', '/sidebar/layouts/form-layouts-1', Record<never, never>, Record<never, never>>,
@@ -296,7 +299,7 @@ declare module 'vue-router/auto/routes' {
     '/sidebar/layouts/placeload-3': RouteRecordInfo<'/sidebar/layouts/placeload-3', '/sidebar/layouts/placeload-3', Record<never, never>, Record<never, never>>,
     '/sidebar/layouts/placeload-4': RouteRecordInfo<'/sidebar/layouts/placeload-4', '/sidebar/layouts/placeload-4', Record<never, never>, Record<never, never>>,
     '/sidebar/layouts/profile-edit': RouteRecordInfo<'/sidebar/layouts/profile-edit', '/sidebar/layouts/profile-edit', Record<never, never>, Record<never, never>>,
-    '/sidebar/layouts/profile-edit/': RouteRecordInfo<'/sidebar/layouts/profile-edit/', '/sidebar/layouts/profile-edit/', Record<never, never>, Record<never, never>>,
+    '/sidebar/layouts/profile-edit/': RouteRecordInfo<'/sidebar/layouts/profile-edit/', '/sidebar/layouts/profile-edit', Record<never, never>, Record<never, never>>,
     '/sidebar/layouts/profile-edit/experience': RouteRecordInfo<'/sidebar/layouts/profile-edit/experience', '/sidebar/layouts/profile-edit/experience', Record<never, never>, Record<never, never>>,
     '/sidebar/layouts/profile-edit/settings': RouteRecordInfo<'/sidebar/layouts/profile-edit/settings', '/sidebar/layouts/profile-edit/settings', Record<never, never>, Record<never, never>>,
     '/sidebar/layouts/profile-edit/skills': RouteRecordInfo<'/sidebar/layouts/profile-edit/skills', '/sidebar/layouts/profile-edit/skills', Record<never, never>, Record<never, never>>,
@@ -336,7 +339,7 @@ declare module 'vue-router/auto/routes' {
     '/starters/sideblock-blank-page-4': RouteRecordInfo<'/starters/sideblock-blank-page-4', '/starters/sideblock-blank-page-4', Record<never, never>, Record<never, never>>,
     '/status': RouteRecordInfo<'/status', '/status', Record<never, never>, Record<never, never>>,
     '/wizard-v1': RouteRecordInfo<'/wizard-v1', '/wizard-v1', Record<never, never>, Record<never, never>>,
-    '/wizard-v1/': RouteRecordInfo<'/wizard-v1/', '/wizard-v1/', Record<never, never>, Record<never, never>>,
+    '/wizard-v1/': RouteRecordInfo<'/wizard-v1/', '/wizard-v1', Record<never, never>, Record<never, never>>,
     '/wizard-v1/project-details': RouteRecordInfo<'/wizard-v1/project-details', '/wizard-v1/project-details', Record<never, never>, Record<never, never>>,
     '/wizard-v1/project-files': RouteRecordInfo<'/wizard-v1/project-files', '/wizard-v1/project-files', Record<never, never>, Record<never, never>>,
     '/wizard-v1/project-info': RouteRecordInfo<'/wizard-v1/project-info', '/wizard-v1/project-info', Record<never, never>, Record<never, never>>,
@@ -374,6 +377,14 @@ declare module 'vue-router/auto' {
    * Type safe version of `RouteLocation` . Allows passing the name of the route to be passed as a generic.
    */
   export type RouteLocation<Name extends keyof RouteNamedMap = keyof RouteNamedMap> = RouteLocationTypedList<RouteNamedMap>[Name]
+
+  /**
+   * Type safe version of `RouteLocationRaw` . Allows passing the name of the route to be passed as a generic.
+   */
+  export type RouteLocationRaw<Name extends keyof RouteNamedMap = keyof RouteNamedMap> =
+    | RouteLocationAsString<RouteNamedMap>
+    | RouteLocationAsRelativeTypedList<RouteNamedMap>[Name]
+    | RouteLocationAsPathTypedList<RouteNamedMap>[Name]
 
   /**
    * Generate a type safe params for a route location. Requires the name of the route to be passed as a generic.

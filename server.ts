@@ -1,6 +1,6 @@
 import path from 'node:path'
 import { readFileSync } from 'node:fs'
-import { createApp } from 'h3'
+import { createApp, fromNodeMiddleware, toNodeListener } from 'h3'
 import { listen } from 'listhen'
 import type { ViteDevServer } from 'vite'
 
@@ -34,108 +34,114 @@ async function createServer() {
       },
     })
     // use vite's connect instance as middleware
-    app.use(vite.middlewares)
+    app.use(fromNodeMiddleware(vite.middlewares))
   } else {
-    app.use(require('compression')())
+    app.use(fromNodeMiddleware(require('compression')()))
     app.use(
-      require('serve-static')(resolve('dist/client'), {
-        index: false,
-        fallthrough: true,
-      })
+      fromNodeMiddleware(
+        require('serve-static')(resolve('dist/client'), {
+          index: false,
+          fallthrough: true,
+        })
+      )
     )
   }
 
-  app.use('*', async (req, res) => {
-    try {
-      const url = req.url
+  app.use(
+    '*',
+    fromNodeMiddleware(async (req, res) => {
+      try {
+        const url = req.url
 
-      // send empty error 404 if it's a static file
-      const [pathname] = url.split('?')
-      const ext = pathname.split('.')
-      if (ext.length > 1) {
-        if (!res.headersSent) {
-          res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate')
+        // send empty error 404 if it's a static file
+        const [pathname] = url.split('?')
+        const ext = pathname.split('.')
+        if (ext.length > 1) {
+          if (!res.headersSent) {
+            res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate')
+          }
+          return null
         }
-        return null
-      }
 
-      let template, render, init
-      if (!isProd) {
-        // always read fresh template in dev
-        template = readFileSync(resolve('index.html'), 'utf-8')
-        template = await vite.transformIndexHtml(url, template)
-        render = (await vite.ssrLoadModule('/src/entry-server.ts')).render
-        init = (await vite.ssrLoadModule('/src/entry-server.ts')).init
-      } else {
-        template = indexProd
-        render = require('./dist/server/entry-server.mjs').render
-        init = require('./dist/server/entry-server.mjs').init
-      }
-
-      init(req, res)
-      const {
-        found,
-        appHtml,
-        headTags,
-        htmlAttrs,
-        bodyAttrs,
-        preloadLinks,
-        initialState,
-      } = await render(url, manifest)
-
-      const html = template
-        .replace(`<html>`, `<html${htmlAttrs}>`)
-        .replace(`<head>`, `<head><meta charset="UTF-8" />${headTags}`)
-        .replace(`</head>`, `${preloadLinks}</head>`)
-        .replace(`<body>`, `<body${bodyAttrs}>`)
-        .replace(
-          /<div id="app"([\s\w\-"'=[\]]*)><\/div>/,
-          `<div id="app" data-server-rendered="true"$1>${appHtml}</div><script>window.__vuero__=${initialState}</script>`
-        )
-
-      // send error 404 page
-      if (!found) {
-        if (!res.headersSent) {
-          res.setHeader('Content-Type', 'text/html')
-          res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate')
-          res.writeHead(404)
+        let template, render, init
+        if (!isProd) {
+          // always read fresh template in dev
+          template = readFileSync(resolve('index.html'), 'utf-8')
+          template = await vite.transformIndexHtml(url, template)
+          render = (await vite.ssrLoadModule('/src/entry-server.ts')).render
+          init = (await vite.ssrLoadModule('/src/entry-server.ts')).init
+        } else {
+          template = indexProd
+          render = require('./dist/server/entry-server.mjs').render
+          init = require('./dist/server/entry-server.mjs').init
         }
+
+        init(req, res)
+        const {
+          found,
+          appHtml,
+          headTags,
+          htmlAttrs,
+          bodyAttrs,
+          preloadLinks,
+          initialState,
+        } = await render(url, manifest)
+
+        const html = template
+          .replace(`<html>`, `<html${htmlAttrs}>`)
+          .replace(`<head>`, `<head><meta charset="UTF-8" />${headTags}`)
+          .replace(`</head>`, `${preloadLinks}</head>`)
+          .replace(`<body>`, `<body${bodyAttrs}>`)
+          .replace(
+            /<div id="app"([\s\w\-"'=[\]]*)><\/div>/,
+            `<div id="app" data-server-rendered="true"$1>${appHtml}</div><script>window.__vuero__=${initialState}</script>`
+          )
+
+        // send error 404 page
+        if (!found) {
+          if (!res.headersSent) {
+            res.setHeader('Content-Type', 'text/html')
+            res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate')
+            res.writeHead(404)
+          }
+          return html
+        }
+
+        // return send(res, html)
+        // send page
         return html
-      }
+      } catch (e) {
+        // send error 500 page
+        vite?.ssrFixStacktrace(e)
+        console.error(e)
 
-      // return send(res, html)
-      // send page
-      return html
-    } catch (e) {
-      // send error 500 page
-      vite?.ssrFixStacktrace(e)
-      console.error(e)
-
-      if (!isProd) {
-        if (!res.headersSent) {
-          res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate')
-          res.writeHead(500)
-          res.end(e.message)
+        if (!isProd) {
+          if (!res.headersSent) {
+            res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate')
+            res.writeHead(500)
+            res.end(e.message)
+          }
+          return
+        } else {
+          if (!res.headersSent) {
+            res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate')
+            res.writeHead(500)
+            res.end('Internal Server Error')
+          }
+          return
         }
-        return
-      } else {
-        if (!res.headersSent) {
-          res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate')
-          res.writeHead(500)
-          res.end('Internal Server Error')
-        }
-        return
       }
-    }
-  })
+    })
+  )
 
   return { app, vite }
 }
 
 if (!isTest) {
   createServer()
-    .then(({ app }) => listen(app))
+    .then(({ app }) => listen(toNodeListener(app), { port: process.env.PORT || 3000 }))
     .catch((error) => {
       console.error(error)
+      process.exit(1)
     })
 }
