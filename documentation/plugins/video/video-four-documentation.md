@@ -12,6 +12,7 @@ Available ratios are `square`, `4by3` and `16by9`.
     ratio="4by3"
     source="https://www.youtube.com/embed/lE5VNpP8JqA?modestbranding=1&rel=0&showinfo=0"
     poster="/video/poster-3.jpg"
+    embed
   />
 </template>
 ```
@@ -25,6 +26,7 @@ Available ratios are `square`, `4by3` and `16by9`.
     ratio="4by3"
     source="https://www.youtube.com/embed/lE5VNpP8JqA?modestbranding=1&rel=0&showinfo=0"
     poster="/video/poster-3.jpg"
+    embed
   />
 </div>
 
