@@ -156,7 +156,6 @@ $text-offset: $a-height - 90;
         * {
           opacity: 1;
           transform: translateX(0);
-          transform: translateX(0);
         }
       }
     }
@@ -177,7 +176,6 @@ $text-offset: $a-height - 90;
 
         * {
           opacity: 1 !important;
-          transform: translateX(0);
           transform: translateX(0);
         }
       }

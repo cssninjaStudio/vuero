@@ -25,6 +25,7 @@ module.exports = {
     'custom-property-pattern': null,
     'annotation-no-unknown': null,
     'declaration-block-no-redundant-longhand-properties': null,
+    'import-notation': 'string',
 
     /** Bulma **/
     'function-name-case': null,
