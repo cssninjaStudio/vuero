@@ -48,7 +48,7 @@ useHead({
         <VControlValidationDocumentation />
         <VControlValidationRoundedDocumentation />
         <VControlValidationVeeZodDocumentation>
-          <template>
+          <template #example>
             <DocumentationDemoFormValidation />
           </template>
         </VControlValidationVeeZodDocumentation>

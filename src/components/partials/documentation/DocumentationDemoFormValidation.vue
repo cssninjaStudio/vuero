@@ -127,7 +127,6 @@ const handleSignup = handleSubmit(async (values) => {
               placeholder="Select your birthdate"
               v-on="inputEvents"
             />
-            {{ { inputValue } }}
             <p v-if="field?.errors?.value?.length" class="help is-danger">
               {{ field.errors?.value?.join(', ') }}
             </p>
