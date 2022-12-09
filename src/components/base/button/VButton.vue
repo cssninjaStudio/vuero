@@ -303,7 +303,15 @@ export default defineComponent({
       border-color: var(--fade-grey-dark-2);
     }
 
-    &:not(.is-primary, .is-success, .is-info, .is-warning, .is-danger, .is-light, .is-white) {
+    &:not(
+        .is-primary,
+        .is-success,
+        .is-info,
+        .is-warning,
+        .is-danger,
+        .is-light,
+        .is-white
+      ) {
       &.is-active {
         background: var(--primary) !important;
         border-color: var(--primary) !important;
@@ -448,7 +456,15 @@ export default defineComponent({
 
 .is-dark {
   .v-button {
-    &:not(.is-primary, .is-success, .is-info, .is-warning, .is-danger, .is-light, .is-white) {
+    &:not(
+        .is-primary,
+        .is-success,
+        .is-info,
+        .is-warning,
+        .is-danger,
+        .is-light,
+        .is-white
+      ) {
       background: var(--dark-sidebar-light-10);
       border-color: var(--dark-sidebar-light-12);
       color: var(--dark-dark-text);
@@ -510,7 +526,15 @@ export default defineComponent({
   }
 
   .button {
-    &:not(.is-primary, .is-success, .is-info, .is-warning, .is-danger, .is-light, .is-white) {
+    &:not(
+        .is-primary,
+        .is-success,
+        .is-info,
+        .is-warning,
+        .is-danger,
+        .is-light,
+        .is-white
+      ) {
       background: var(--dark-sidebar-light-10);
       border-color: var(--dark-sidebar-light-12);
       color: var(--dark-dark-text);

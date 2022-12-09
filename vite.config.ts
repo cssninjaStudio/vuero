@@ -36,7 +36,7 @@ export default defineConfig({
   logLevel: 'info',
   // development server configuration
   server: {
-    // Vite 3 now defaults to 5173, but you can override it with the port option.
+    // Vite 4 defaults to 5173, but you can override it with the port option.
     port: 3000,
   },
   /**
@@ -272,6 +272,7 @@ export default defineConfig({
      * @see https://github.com/FullHuman/purgecss/tree/main/packages/rollup-plugin-purgecss
      */
     purgecss({
+      output: false,
       content: [`./src/**/*.vue`],
       variables: false,
       safelist: {
@@ -297,7 +298,6 @@ export default defineConfig({
     !MINIFY_IMAGES
       ? undefined
       : ImageMin({
-          verbose: VERBOSE,
           gifsicle: {
             optimizationLevel: 7,
             interlaced: false,
