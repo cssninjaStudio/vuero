@@ -53,10 +53,7 @@ watchEffect(() => {
     <div class="navbar-menu" :class="[isMobileNavOpen && 'is-active']">
       <div class="navbar-start">
         <div class="navbar-item">
-          <a
-            href="https://themeforest.net/item/vuero-vuejs-3-admin-and-webapp-ui-kit/31053035"
-            class="nav-link is-active"
-          >
+          <a href="http://go.cssninja.io/buy-vuero" class="nav-link is-active">
             Buy Now
           </a>
         </div>

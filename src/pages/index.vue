@@ -255,12 +255,16 @@ useHead({
             <div class="head-action">
               <div class="buttons">
                 <a
-                  href="https://themeforest.net/item/vuero-vuejs-3-admin-and-webapp-ui-kit/31053035"
+                  href="http://go.cssninja.io/buy-vuero"
                   class="button v-button is-primary is-rounded is-elevated action-button"
                 >
                   Buy Now
                 </a>
-                <a href="https://discord.cssninja.io" class="button chat-button">
+                <a
+                  target="_blank"
+                  href="https://go.cssninja.io/discord"
+                  class="button chat-button"
+                >
                   Chat with us
                 </a>
               </div>
@@ -573,10 +577,12 @@ useHead({
                   Read the Docs
                 </a>
                 <a
-                  href="https://discord.cssninja.io"
+                  target="_blank"
+                  href="https://go.cssninja.io/discord"
                   class="button chat-button is-secondary"
                 >
-                  Chat with us
+                  <span>Join us on Discord</span>
+                  <i class="iconify ml-1" data-icon="feather:external-link"></i>
                 </a>
               </div>
             </div>
@@ -647,7 +653,7 @@ useHead({
           <!--CTA-->
           <p class="p-t-40 p-b-40 has-text-centered">
             <a
-              href="https://themeforest.net/item/vuero-vuejs-3-admin-and-webapp-ui-kit/31053035"
+              href="http://go.cssninja.io/buy-vuero"
               class="button v-button is-rounded is-primary is-elevated is-bold is-huge"
             >
               Buy Now
@@ -808,10 +814,7 @@ useHead({
           <div class="cta-wrapper">
             <div class="cta-title">
               <h3>Exclusively on Envato Market</h3>
-              <a
-                href="https://themeforest.net/item/vuero-vuejs-3-admin-and-webapp-ui-kit/31053035"
-                class="custom-button"
-              >
+              <a href="http://go.cssninja.io/buy-vuero" class="custom-button">
                 <img src="/images/icons/logos/envato.svg" alt="" />
                 <span>Get It Now</span>
               </a>

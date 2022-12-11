@@ -9,12 +9,19 @@
         <div class="head-action">
           <div class="buttons">
             <a
-              href="https://themeforest.net/item/vuero-vuejs-3-admin-and-webapp-ui-kit/31053035"
+              href="http://go.cssninja.io/buy-vuero"
               class="button v-button is-primary is-rounded raised action-button"
             >
               Buy Vuero
             </a>
-            <a href="https://cssninja.io" class="button chat-button"> Chat with us </a>
+            <a
+              target="_blank"
+              href="https://go.cssninja.io/discord"
+              class="button chat-button"
+            >
+              <span>Join us on Discord</span>
+              <i class="iconify ml-1" data-icon="feather:external-link"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -32,31 +39,33 @@
           <div>
             <span class="moto">
               Designed and coded with
-              <i aria-hidden="true" class="fas fa-heart text-danger"></i> by CSS
-              Ninja.</span
-            >
+              <i aria-hidden="true" class="fas fa-heart text-danger"></i> by
+              <a href="https://cssninja.io" target="_blank" class="has-text-primary">
+                CSS Ninja.
+              </a>
+            </span>
             <div class="social-links p-t-10 p-b-10">
-              <a href="#">
+              <a href="https://www.facebook.com/cssninjaStudio/" target="_blank">
                 <span class="icon">
                   <i aria-hidden="true" class="fab fa-facebook"></i>
                 </span>
               </a>
-              <a href="#">
+              <a href="https://twitter.com/cssninjaStudio" target="_blank">
                 <span class="icon">
                   <i aria-hidden="true" class="fab fa-twitter"></i>
                 </span>
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/company/digisquad-io/" target="_blank">
                 <span class="icon">
                   <i aria-hidden="true" class="fab fa-linkedin"></i>
                 </span>
               </a>
-              <a href="#">
+              <a href="https://dribbble.com/DrissChelouati" target="_blank">
                 <span class="icon">
                   <i aria-hidden="true" class="fab fa-dribbble"></i>
                 </span>
               </a>
-              <a href="#">
+              <a href="https://github.com/cssninjaStudio" target="_blank">
                 <span class="icon">
                   <i aria-hidden="true" class="fab fa-github"></i>
                 </span>
@@ -71,29 +80,53 @@
             <div class="column">
               <ul class="footer-column">
                 <li class="column-header">Vuero</li>
-                <li class="column-item"><a href="#">Home</a></li>
-                <li class="column-item"><a href="#">Pricing</a></li>
-                <li class="column-item"><a href="#">Get started</a></li>
-                <li class="column-item"><a href="#">Help</a></li>
+                <li class="column-item">
+                  <a href="https://cssninja.io/faq/quality" target="_blank">Quality</a>
+                </li>
+                <li class="column-item">
+                  <a href="https://cssninja.io/faq/github-access" target="_blank">
+                    GitHub Access
+                  </a>
+                </li>
+                <li class="column-item">
+                  <a href="https://cssninja.io/faq/licenses">Our licenses</a>
+                </li>
               </ul>
             </div>
             <!-- Column -->
             <div class="column">
               <ul class="footer-column">
                 <li class="column-header">Resources</li>
-                <li class="column-item"><a href="#">Learning</a></li>
-                <li class="column-item"><a href="#">Support center</a></li>
-                <li class="column-item"><a href="#">Frequent questions</a></li>
-                <li class="column-item"><a href="#">Schedule a demo</a></li>
+                <li class="column-item">
+                  <a href="https://cssninja.io/faq" target="_blank">Frequent questions</a>
+                </li>
+                <li class="column-item">
+                  <a href="https://support.cssninja.io" target="_blank">Support center</a>
+                </li>
+                <li class="column-item">
+                  <a href="https://docs.cssninja.io" target="_blank">Learning</a>
+                </li>
               </ul>
             </div>
             <!-- Column -->
             <div class="column">
               <ul class="footer-column">
                 <li class="column-header">Terms</li>
-                <li class="column-item"><a href="#">Terms of Service</a></li>
-                <li class="column-item"><a href="#">Privacy policy</a></li>
-                <li class="column-item"><a href="#">SaaS services</a></li>
+                <li class="column-item">
+                  <a href="https://cssninja.io/about/terms-of-service" target="_blank"
+                    >Terms of Service</a
+                  >
+                </li>
+                <li class="column-item">
+                  <a href="https://cssninja.io/about/privacy-policy" target="_blank"
+                    >Privacy policy</a
+                  >
+                </li>
+                <li class="column-item">
+                  <a href="https://cssninja.io/company/contact" target="_blank">
+                    Contact us
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -101,7 +134,7 @@
       </div>
       <div class="footer-copyright has-text-centered">
         <p>
-          <span role="img" aria-label="copyright">&copy;</span> 2020-2021 |
+          <span role="img" aria-label="copyright">&copy;</span> 2020-2022 |
           <a href="https://cssninja.io">cssninjaStudio</a> | All Rights Reserved.
         </p>
       </div>
