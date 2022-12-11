@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.5.0](https://github.com/cssninjaStudio/vuero/compare/v2.4.0...v2.5.0) (2022-12-11)
+
+
+### Features
+
+* upgrate to vite v4 ([a8f322e](https://github.com/cssninjaStudio/vuero/commit/a8f322ed5bb543ea37d0550ec3605597991142eb))
+
+
+### Bug Fixes
+
+* add vdatepicker example with vee validate ([3e7f1da](https://github.com/cssninjaStudio/vuero/commit/3e7f1da8989def7aaca45c47c55e56bdd0cd7eae))
+* improve useNotyf typings ([3220abc](https://github.com/cssninjaStudio/vuero/commit/3220abcbaa7f6d1ac2f08b660290d5f3ab4b82ff))
+* **profile-edit:** navigation links between tabs ([6ad84c2](https://github.com/cssninjaStudio/vuero/commit/6ad84c29a2916ebacfd626b3d0c78bc04dc6165d))
+* remove keys from transition ([e59c2cb](https://github.com/cssninjaStudio/vuero/commit/e59c2cbe1b667d7068ace968472d8e46dd748c94))
+* **v-plyr:** embed youtube source to avoid CORS issue ([94a5aa2](https://github.com/cssninjaStudio/vuero/commit/94a5aa285c08c71c3f0997d04efb8bb3b438c612))
+* **wizard-v1:** placeholder pages styles on page refresh ([f90dafb](https://github.com/cssninjaStudio/vuero/commit/f90dafb0324041fa0db248dc3e139306769d9615))
+
 ## [2.4.0](https://github.com/cssninjaStudio/vuero/compare/v2.3.0...v2.4.0) (2022-09-12)
 
 
