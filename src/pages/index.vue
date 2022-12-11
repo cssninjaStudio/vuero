@@ -431,11 +431,9 @@ useHead({
                   Discord Access
                 </VButton>
                 <VButton
-                  v-tooltip.top.rounded="
-                    'Send us your GitHub username at https://support.cssninja.io'
-                  "
+                  href="https://cssninja.io/faq/github-access"
+                  target="_blank"
                   icon="fa-brands:github"
-                  style="cursor: help"
                   dark-outlined
                   raised
                 >
