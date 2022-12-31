@@ -21,15 +21,15 @@ useHead({
           label: 'Vuero',
           hideLabel: true,
           icon: 'feather:home',
-          to: { name: '/' },
+          to: '/',
         },
         {
           label: 'Elements',
-          to: { name: '/elements/' },
+          to: '/elements/',
         },
         {
           label: 'Colors',
-          to: { name: '/elements/colors' },
+          to: '/elements/colors',
         },
       ]"
     />

@@ -25,9 +25,7 @@ const validateStep = async () => {
     notyf.success('Your shipment is successfully stored!')
     await sleep(1000)
 
-    router.push({
-      name: '/sidebar/dashboards',
-    })
+    router.push('/sidebar/dashboards')
     return
   }
 

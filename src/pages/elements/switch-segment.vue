@@ -25,18 +25,18 @@ useHead({
           label: 'Vuero',
           hideLabel: true,
           icon: 'feather:home',
-          to: { name: '/' },
+          to: '/',
         },
         {
           label: 'Elements',
-          to: { name: '/elements/' },
+          to: '/elements/',
         },
         {
           label: 'Switches',
         },
         {
           label: 'VSwitchSegment',
-          to: { name: '/elements/switch-segment' },
+          to: '/elements/switch-segment',
         },
       ]"
     />

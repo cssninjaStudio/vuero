@@ -42,7 +42,7 @@ const handleSignup = async () => {
 
     notyf.dismissAll()
     notyf.success('Welcome, Erik Kovalsky')
-    router.push({ name: '/sidebar/dashboards' })
+    router.push('/sidebar/dashboards')
     isLoading.value = false
   }
 }

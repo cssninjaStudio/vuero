@@ -11,9 +11,7 @@ wizard.setStep({
 const validateStep = (relatedTo: WizardRelatedTo) => {
   wizard.data.relatedTo = relatedTo
 
-  router.push({
-    name: '/wizard-v1/project-info',
-  })
+  router.push('/wizard-v1/project-info')
 }
 </script>
 

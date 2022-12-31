@@ -29,18 +29,18 @@ useHead({
           label: 'Vuero',
           hideLabel: true,
           icon: 'feather:home',
-          to: { name: '/' },
+          to: '/',
         },
         {
           label: 'Components',
-          to: { name: '/components/' },
+          to: '/components/',
         },
         {
           label: 'Plugins',
         },
         {
           label: 'VBillboardJS',
-          to: { name: '/components/plugins/billboard-js' },
+          to: '/components/plugins/billboard-js',
         },
       ]"
     />

@@ -25,18 +25,18 @@ useHead({
           label: 'Vuero',
           hideLabel: true,
           icon: 'feather:home',
-          to: { name: '/' },
+          to: '/',
         },
         {
           label: 'Elements',
-          to: { name: '/elements/' },
+          to: '/elements/',
         },
         {
           label: 'Addons',
         },
         {
           label: 'VCalendar',
-          to: { name: '/elements/addons/calendar' },
+          to: '/elements/addons/calendar',
         },
       ]"
     />

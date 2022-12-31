@@ -12,9 +12,7 @@ const confirm = async () => {
   notyf.success('Your account is confirmed Erik !')
 
   await sleep()
-  router.push({
-    name: '/sidebar/dashboards',
-  })
+  router.push('/sidebar/dashboards')
 
   await sleep()
   isLoading.value = false

@@ -32,18 +32,18 @@ useHead({
           label: 'Vuero',
           hideLabel: true,
           icon: 'feather:home',
-          to: { name: '/' },
+          to: '/',
         },
         {
           label: 'Components',
-          to: { name: '/components/' },
+          to: '/components/',
         },
         {
           label: 'Plugins',
         },
         {
           label: 'Notif',
-          to: { name: '/components/plugins/notif' },
+          to: '/components/plugins/notif',
         },
       ]"
     />

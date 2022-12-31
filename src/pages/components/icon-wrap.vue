@@ -25,15 +25,15 @@ useHead({
           label: 'Vuero',
           hideLabel: true,
           icon: 'feather:home',
-          to: { name: '/' },
+          to: '/',
         },
         {
           label: 'Components',
-          to: { name: '/components/' },
+          to: '/components/',
         },
         {
           label: 'VIconWrap',
-          to: { name: '/components/icon-wrap' },
+          to: '/components/icon-wrap',
         },
       ]"
     />

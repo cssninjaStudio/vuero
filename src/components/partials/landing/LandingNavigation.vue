@@ -60,10 +60,7 @@ watchEffect(() => {
 
         <div class="navbar-item">
           <RouterLink
-            :to="{
-              name: '/',
-              hash: '#vuero-demos',
-            }"
+            to="/#vuero-demos"
             class="nav-link is-scroll"
             @click.passive="
               () => {
@@ -78,10 +75,7 @@ watchEffect(() => {
 
         <div class="navbar-item">
           <RouterLink
-            :to="{
-              name: '/',
-              hash: '#vuero-components',
-            }"
+            to="/#vuero-components"
             class="nav-link is-scroll"
             @click.passive="
               () => {

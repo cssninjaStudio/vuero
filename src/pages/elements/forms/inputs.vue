@@ -25,18 +25,18 @@ useHead({
           label: 'Vuero',
           hideLabel: true,
           icon: 'feather:home',
-          to: { name: '/' },
+          to: '/',
         },
         {
           label: 'Elements',
-          to: { name: '/elements/' },
+          to: '/elements/',
         },
         {
           label: 'Forms',
         },
         {
           label: 'VInput',
-          to: { name: '/elements/forms/inputs' },
+          to: '/elements/forms/inputs',
         },
       ]"
     />

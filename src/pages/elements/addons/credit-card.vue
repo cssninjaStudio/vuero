@@ -25,18 +25,18 @@ useHead({
           label: 'Vuero',
           hideLabel: true,
           icon: 'feather:home',
-          to: { name: '/' },
+          to: '/',
         },
         {
           label: 'Elements',
-          to: { name: '/elements/' },
+          to: '/elements/',
         },
         {
           label: 'Addons',
         },
         {
           label: 'VCreditCard',
-          to: { name: '/elements/addons/credit-card' },
+          to: '/elements/addons/credit-card',
         },
       ]"
     />

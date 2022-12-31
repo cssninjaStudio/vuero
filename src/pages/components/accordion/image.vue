@@ -54,18 +54,18 @@ useHead({
           label: 'Vuero',
           hideLabel: true,
           icon: 'feather:home',
-          to: { name: '/' },
+          to: '/',
         },
         {
           label: 'Components',
-          to: { name: '/components/' },
+          to: '/components/',
         },
         {
           label: 'Accordions',
         },
         {
           label: 'VAccordionImage',
-          to: { name: '/components/accordion/image' },
+          to: '/components/accordion/image',
         },
       ]"
     />

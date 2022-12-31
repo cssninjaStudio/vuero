@@ -14,16 +14,12 @@ wizard.setStep({
   number: 5,
   canNavigate: true,
   previousStepFn: async () => {
-    router.push({
-      name: '/wizard-v1/project-files',
-    })
+    router.push('/wizard-v1/project-files')
   },
   validateStepFn: async () => {
     if (search.value) return
 
-    router.push({
-      name: '/wizard-v1/project-tools',
-    })
+    router.push('/wizard-v1/project-tools')
   },
 })
 

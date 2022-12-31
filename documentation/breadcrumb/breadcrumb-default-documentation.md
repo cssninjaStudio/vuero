@@ -36,9 +36,7 @@ const breadcrumb = [
     label: 'Components',
     icon: 'feather:cpu',
     // or generate a router link with 'to' props
-    to: {
-      name: '/components/',
-    },
+    to: '/components/',
   },
   {
     label: 'VBreadcrumb',

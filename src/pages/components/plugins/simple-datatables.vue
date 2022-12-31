@@ -52,18 +52,18 @@ useHead({
           label: 'Vuero',
           hideLabel: true,
           icon: 'feather:home',
-          to: { name: '/' },
+          to: '/',
         },
         {
           label: 'Components',
-          to: { name: '/components/' },
+          to: '/components/',
         },
         {
           label: 'Plugins',
         },
         {
           label: 'VSimpleDatatables',
-          to: { name: '/components/plugins/simple-datatables' },
+          to: '/components/plugins/simple-datatables',
         },
       ]"
     />

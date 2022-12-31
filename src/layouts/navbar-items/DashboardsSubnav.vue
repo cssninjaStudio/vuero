@@ -562,11 +562,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink
-                      :to="{
-                        name: '/navbar/dashboards/widgets-sample-creative',
-                      }"
-                    >
+                    <RouterLink to="/navbar/dashboards/widgets-sample-creative">
                       <i aria-hidden="true" class="lnil lnil-layout-alt-2"></i>
                       <span>Creative Widgets</span>
                       <i

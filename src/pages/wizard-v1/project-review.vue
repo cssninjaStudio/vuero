@@ -9,14 +9,10 @@ wizard.setStep({
   number: 7,
   canNavigate: true,
   previousStepFn: async () => {
-    router.push({
-      name: '/wizard-v1/project-tools',
-    })
+    router.push('/wizard-v1/project-tools')
   },
   validateStepFn: async () => {
-    router.push({
-      name: '/wizard-v1/success',
-    })
+    router.push('/wizard-v1/success')
   },
 })
 

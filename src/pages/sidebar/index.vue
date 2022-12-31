@@ -2,9 +2,7 @@
 const router = useRouter()
 
 onMounted(() => {
-  router.push({
-    name: '/sidebar/dashboards',
-  })
+  router.push('/sidebar/dashboards')
 })
 </script>
 

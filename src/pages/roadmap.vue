@@ -36,7 +36,7 @@ export const useRoadmapData = defineLoader(async (route) => {
     accumulator[month].releases.push(item)
 
     return accumulator
-  }, {})
+  }, {} as Record<string, any>)
 
   // return anything you want to expose
   return {
@@ -57,10 +57,10 @@ const { data, pending } = useRoadmapData()
 const years = ['2022', '2021', '2020', '2019']
 const changeTypes = ['All', 'Enhancements', 'Features', 'Bug fixes']
 
-const selectedYear = useRouteQuery('year', '2022')
-const selectedQuarter = useRouteQuery('quarter', '3')
-const activeTab = useRouteQuery('tab', 'roadmap')
-const selectedChangeType = useRouteQuery('type', 'All')
+const selectedYear = useRouteQuery<string>('year', '2022')
+const selectedQuarter = useRouteQuery<string>('quarter', '3')
+const activeTab = useRouteQuery<string>('tab', 'roadmap')
+const selectedChangeType = useRouteQuery<string>('type', 'All')
 
 const activeYearProgress = computed(
   () => data.value?.roadmap?.find((x) => x.year === selectedYear.value)?.progress
@@ -96,12 +96,12 @@ useHead({
           {
             label: 'Roadmap',
             value: 'roadmap',
-            to: { name: '/roadmap', query: { tab: 'roadmap' } },
+            to: '/roadmap?tab=roadmap',
           },
           {
             label: 'Changelog',
             value: 'changelog',
-            to: { name: '/roadmap', query: { tab: 'changelog' } },
+            to: '/roadmap?tab=changelog',
           },
         ]"
       >

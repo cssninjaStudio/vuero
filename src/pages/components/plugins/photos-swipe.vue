@@ -25,18 +25,18 @@ useHead({
           label: 'Vuero',
           hideLabel: true,
           icon: 'feather:home',
-          to: { name: '/' },
+          to: '/',
         },
         {
           label: 'Components',
-          to: { name: '/components/' },
+          to: '/components/',
         },
         {
           label: 'Plugins',
         },
         {
           label: 'VPhotosSwipe',
-          to: { name: '/components/plugins/photos-swipe' },
+          to: '/components/plugins/photos-swipe',
         },
       ]"
     />

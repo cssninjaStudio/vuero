@@ -27,9 +27,7 @@ const handleLogin = async () => {
     if (redirect) {
       router.push(redirect)
     } else {
-      router.push({
-        name: 'app',
-      })
+      router.push('/app')
     }
 
     isLoading.value = false

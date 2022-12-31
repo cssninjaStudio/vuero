@@ -29,9 +29,7 @@ const handleLogin = async () => {
     if (redirect) {
       router.push(redirect)
     } else {
-      router.push({
-        name: '/sidebar/dashboards',
-      })
+      router.push('/sidebar/dashboards')
     }
 
     isLoading.value = false

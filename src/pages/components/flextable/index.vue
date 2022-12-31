@@ -30,15 +30,15 @@ useHead({
           label: 'Vuero',
           hideLabel: true,
           icon: 'feather:home',
-          to: { name: '/' },
+          to: '/',
         },
         {
           label: 'Components',
-          to: { name: '/components/' },
+          to: '/components/',
         },
         {
           label: 'VFlexTable',
-          to: { name: '/components/flextable/' },
+          to: '/components/flextable/',
         },
       ]"
     />
