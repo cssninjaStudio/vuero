@@ -1,16 +1,16 @@
 ---
 items:
   - src: http://via.placeholder.com/600x400
-    thumbnail: http://via.placeholder.com/64x64
+    thumbnail: http://via.placeholder.com/60x40
     w: 600
     h: 400
     alt: 'optional alt attribute for thumbnail image'
   - src: http://via.placeholder.com/1200x900
-    thumbnail: http://via.placeholder.com/64x64
+    thumbnail: http://via.placeholder.com/120x90
     w: 1200
     h: 900
   - src: http://via.placeholder.com/800x600
-    thumbnail: http://via.placeholder.com/64x64
+    thumbnail: http://via.placeholder.com/80x60
     w: 800
     h: 600
 ---
@@ -29,20 +29,20 @@ borders.
 const items = [
   {
     src: 'http://via.placeholder.com/600x400',
-    thumbnail: 'http://via.placeholder.com/64x64',
+    thumbnail: 'http://via.placeholder.com/60x40',
     w: 600,
     h: 400,
     alt: 'optional alt attribute for thumbnail image',
   },
   {
     src: 'http://via.placeholder.com/1200x900',
-    thumbnail: 'http://via.placeholder.com/64x64',
+    thumbnail: 'http://via.placeholder.com/120x90',
     w: 1200,
     h: 900,
   },
   {
     src: 'http://via.placeholder.com/800x600',
-    thumbnail: 'http://via.placeholder.com/64x64',
+    thumbnail: 'http://via.placeholder.com/80x60',
     w: 800,
     h: 600,
   },

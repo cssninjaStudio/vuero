@@ -21,6 +21,9 @@
       "typed-router.d.ts"
     ],
     "paths": {
+      "photoswipe/lightbox": [
+        "./node_modules/photoswipe/dist/types/lightbox/lightbox.d.ts"
+      ],
       "/@src/*": ["./src/*"]
     }
   },
