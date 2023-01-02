@@ -16,5 +16,11 @@
   "eslint.alwaysShowStatus": true,
   "eslint.validate": ["javascript", "javascriptreact", "markdown", "vue"],
   "i18n-ally.localesPaths": "src/locales",
-  "stylelint.validate": ["scss", "vue"]
+  "i18n-ally.enabledParsers": ["yaml", "json", "json5"],
+  "i18n-ally.sortKeys": true,
+  "stylelint.validate": ["scss", "vue"],
+  "i18n-ally.keystyle": "nested",
+  "files.associations": {
+    "*.json": "jsonc"
+  }
 }

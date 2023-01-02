@@ -1,38 +1,35 @@
 {
   "select-language": "Select Language",
   "cancel-label": "Cancel",
-  "auth": {
-    "title": "Join Us Now.",
-    "subtitle": "Start by creating your account",
-    "label": {
-      "promotional": "Receive promotional offers"
-    },
-    "action": {
-      "login": "I already have an account",
-      "signup": "Sign Up"
-    },
-    "placeholder": {
-      "name": "Name",
-      "email": "Email Address",
-      "password": "Password",
-      "passwordCheck": "Password Verification"
-    },
-    "errors": {
-      "name": {
-        "required": "Your first name is required"
-      },
-      "email": {
-        "required": "Enter your email, it will be required to login",
-        "format": "Please, enter a valid email"
-      },
-      "password": {
-        "required": "Enter your password with at least 8 characters, it will be required to login",
-        "length": "The password should contains at leat 8 characters"
-      },
-      "passwordCheck": {
-        "required": "Please, confirm your password",
-        "match": "The password does not match"
-      }
-    }
-  }
+  "auth.title": "Join Us Now.",
+  "auth.subtitle": "Start by creating your account",
+  "auth.label.promotional": "Receive promotional offers",
+  "auth.action.login": "I already have an account",
+  "auth.action.signup": "Sign Up",
+  "auth.placeholder.name": "Name",
+  "auth.placeholder.email": "Email Address",
+  "auth.placeholder.password": "Password",
+  "auth.placeholder.passwordCheck": "Password Verification",
+  "auth.errors.name.required": "Your first name is required",
+  "auth.errors.email.required": "Enter your email, it will be required to login",
+  "auth.errors.email.format": "Please, enter a valid email",
+  "auth.errors.password.required": "Enter your password with at least 8 characters, it will be required to login",
+  "auth.errors.password.length": "The password should contains at leat 8 characters",
+  "auth.errors.passwordCheck.required": "Please, confirm your password",
+  "auth.errors.passwordCheck.match": "The password does not match",
+  "pages.not-found.page-title": "Page not found",
+  "pages.not-found.page-heading": "We couldn't find that page",
+  "pages.not-found.page-body": "Looks like we couldn't find that page. Please try again or contact an administrator if the problem persists.",
+  "pages.not-found.page-button": "Take me Back",
+  "components.v-reload-prompt.offline-ready": "{appName} is ready to work offline",
+  "components.v-reload-prompt.need-refresh": "A new version of {appName} is available, click on reload button to update.",
+  "components.v-reload-prompt.reload-button": "Reload",
+  "components.v-reload-prompt.close-button": "Close",
+  "components.v-flex-pagination.goto-page-title": "Goto page {page}",
+  "components.v-credit-card.holder-label": "cardholder name",
+  "components.v-credit-card.number-label": "card number",
+  "components.v-credit-card.expiration-label": "expiration",
+  "components.v-credit-card.cvc-label": "security code",
+  "components.v-credit-card.valid-label": "VALID",
+  "components.v-credit-card.valid-thru-label": "THRU"
 }

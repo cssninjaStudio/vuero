@@ -20,7 +20,7 @@ export async function fetchConversations(
   )
 
   if ('X-Total-Count' in headers) {
-    count = parseInt(headers['X-Total-Count'])
+    count = parseInt(headers['X-Total-Count'] ?? '0')
   }
 
   return { conversations, count }

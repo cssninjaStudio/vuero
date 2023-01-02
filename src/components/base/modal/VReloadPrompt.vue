@@ -25,39 +25,6 @@ const update = async () => {
 }
 </script>
 
-<i18n lang="yaml">
-de:
-  offline-ready: '{appName} ist bereit, offline zu arbeiten'
-  need-refresh: 'Eine neue Version von {appName} ist verfügbar, klicken Sie auf die Schaltfläche Neu laden, um sie zu aktualisieren.'
-  reload-button: 'Neu laden'
-  close-button: 'Schließen'
-en:
-  offline-ready: '{appName} is ready to work offline'
-  need-refresh: 'A new version of {appName} is available, click on reload button to update.'
-  reload-button: 'Reload'
-  close-button: 'Close'
-es-MX:
-  offline-ready: '{appName} está listo para trabajar sin conexión'
-  need-refresh: 'Una nueva versión de {appName} está disponible, haga clic en el botón Recarga para actualizar.'
-  reload-button: 'Recarga'
-  close-button: 'Cerrar'
-es:
-  offline-ready: '{appName} está listo para trabajar sin conexión'
-  need-refresh: 'Una nueva versión de {appName} está disponible, haga clic en el botón Recarga para actualizar.'
-  reload-button: 'Recarga'
-  close-button: 'Cerrar'
-fr:
-  offline-ready: '{appName} est prêt à être utilisé hors ligne'
-  need-refresh: 'Une nouvelle version de {appName} est disponible, cliquez sur le bouton Recharger pour la mettre à jour.'
-  reload-button: 'Recharger'
-  close-button: 'Fermer'
-zh-CN:
-  offline-ready: '{appName}已准备好脱机工作'
-  need-refresh: '新版本的{appName}已经可用，点击重新加载按钮来更新。'
-  reload-button: '重新加载'
-  close-button: '关闭'
-</i18n>
-
 <template>
   <Transition name="from-bottom">
     <VCard
@@ -68,10 +35,10 @@ zh-CN:
     >
       <div class="pwa-message">
         <span v-if="offlineReady">
-          {{ t('offline-ready', { appName: props.appName }) }}
+          {{ t('components.v-reload-prompt.offline-ready', { appName: props.appName }) }}
         </span>
         <span v-else>
-          {{ t('need-refresh', { appName: props.appName }) }}
+          {{ t('components.v-reload-prompt.need-refresh', { appName: props.appName }) }}
         </span>
       </div>
       <VButtons align="right">
@@ -82,9 +49,11 @@ zh-CN:
           :loading="loading"
           @click="() => update()"
         >
-          {{ t('reload-button') }}
+          {{ t('components.v-reload-prompt.reload-button') }}
         </VButton>
-        <VButton icon="feather:x" @click="close">{{ t('close-button') }}</VButton>
+        <VButton icon="feather:x" @click="close">{{
+          t('components.v-reload-prompt.close-button')
+        }}</VButton>
       </VButtons>
     </VCard>
   </Transition>

@@ -29,39 +29,6 @@ useHead({
 })
 </script>
 
-<i18n lang="yaml">
-de:
-  page-title: 'Seite nicht gefunden'
-  page-heading: 'Wir konnten diese Seite nicht finden'
-  page-body: 'Die Seite konnte nicht gefunden werden. Bitte versuchen Sie es erneut oder wenden Sie sich an einen Administrator, wenn das Problem weiterhin besteht.'
-  back-button: 'Bringen Sie mich zurück'
-en:
-  page-title: 'Page not found'
-  page-heading: "We couldn't find that page"
-  page-body: "Looks like we couldn't find that page. Please try again or contact an administrator if the problem persists."
-  back-button: 'Take me Back'
-es-MX:
-  page-title: 'Página no encontrada'
-  page-heading: 'No hemos podido encontrar esa página'
-  page-body: 'Parece que no hemos podido encontrar esa página. Por favor, inténtalo de nuevo o contacta con un administrador si el problema persiste.'
-  back-button: 'Llévame de vuelta'
-es:
-  page-title: 'Página no encontrada'
-  page-heading: 'No hemos podido encontrar esa página'
-  page-body: 'Parece que no hemos podido encontrar esa página. Por favor, inténtalo de nuevo o contacta con un administrador si el problema persiste.'
-  back-button: 'Llévame de vuelta'
-fr:
-  page-title: 'Page introuvable'
-  page-heading: "Cette page n'a pas été trouvée"
-  page-body: "Il semble que nous n'ayons pas trouvé cette page. Veuillez réessayer ou contacter un administrateur si le problème persiste."
-  back-button: 'Ramenez-moi en arrière'
-zh-CN:
-  page-title: '未找到页面'
-  page-heading: '我们找不到这个页面'
-  page-body: '看起来我们找不到这个页面。如果问题仍然存在，请再试一次或联系管理员。'
-  back-button: '带我回去'
-</i18n>
-
 <template>
   <MinimalLayout>
     <div class="error-container">
@@ -86,13 +53,13 @@ zh-CN:
           <div class="bg-number">404</div>
           <SVGErrorPlaceholder />
 
-          <h3>{{ t('page-heading') }}</h3>
+          <h3>{{ t('pages.not-found.page-heading') }}</h3>
           <p>
-            {{ t('page-body') }}
+            {{ t('pages.not-found.page-body') }}
           </p>
           <div class="button-wrap">
             <VButton color="primary" elevated to="/">
-              {{ t('back-button') }}
+              {{ t('pages.not-found.back-button') }}
             </VButton>
           </div>
         </div>

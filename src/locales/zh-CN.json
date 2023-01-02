@@ -1,38 +1,35 @@
 {
   "select-language": "选择语言",
   "cancel-label": "取消",
-  "auth": {
-    "title": "现在就加入我们",
-    "subtitle": "从创建你的账户开始",
-    "label": {
-      "promotional": "接收促销优惠"
-    },
-    "action": {
-      "login": "我已经有一个账户",
-      "signup": "注册"
-    },
-    "placeholder": {
-      "name": "姓名",
-      "email": "电子邮件地址",
-      "password": "密码",
-      "passwordCheck": "密码验证"
-    },
-    "errors": {
-      "name": {
-        "required": "您的姓名是必填的"
-      },
-      "email": {
-        "required": "输入你的电子邮件，它将是登录的必要条件",
-        "format": "请输入一个有效的电子邮件"
-      },
-      "password": {
-        "required": "请输入你的密码，至少有8个字符，登录时必须输入",
-        "length": "密码应至少包含8个字符"
-      },
-      "passwordCheck": {
-        "required": "请确认您的密码",
-        "match": "该密码不匹配"
-      }
-    }
-  }
+  "auth.title": "现在就加入我们",
+  "auth.subtitle": "从创建你的账户开始",
+  "auth.label.promotional": "接收促销优惠",
+  "auth.action.login": "我已经有一个账户",
+  "auth.action.signup": "注册",
+  "auth.placeholder.name": "姓名",
+  "auth.placeholder.email": "电子邮件地址",
+  "auth.placeholder.password": "密码",
+  "auth.placeholder.passwordCheck": "密码验证",
+  "auth.errors.name.required": "您的姓名是必填的",
+  "auth.errors.email.required": "输入你的电子邮件，它将是登录的必要条件",
+  "auth.errors.email.format": "请输入一个有效的电子邮件",
+  "auth.errors.password.required": "请输入你的密码，至少有8个字符，登录时必须输入",
+  "auth.errors.password.length": "密码应至少包含8个字符",
+  "auth.errors.passwordCheck.required": "请确认您的密码",
+  "auth.errors.passwordCheck.match": "该密码不匹配",
+  "pages.not-found.page-title": "未找到页面",
+  "pages.not-found.page-heading": "我们找不到这个页面",
+  "pages.not-found.page-body": "看起来我们找不到这个页面。如果问题仍然存在，请再试一次或联系管理员。",
+  "pages.not-found.page-button": "带我回去",
+  "components.v-reload-prompt.offline-ready": "{appName}已准备好脱机工作",
+  "components.v-reload-prompt.need-refresh": "新版本的{appName}已经可用，点击重新加载按钮来更新。",
+  "components.v-reload-prompt.reload-button": "重新加载",
+  "components.v-reload-prompt.close-button": "关闭",
+  "components.v-flex-pagination.goto-page-title": "转到第{page}页",
+  "components.v-credit-card.holder-label": "持卡人姓名",
+  "components.v-credit-card.number-label": "卡号",
+  "components.v-credit-card.expiration-label": "到期",
+  "components.v-credit-card.cvc-label": "安全代码",
+  "components.v-credit-card.valid-label": "有效",
+  "components.v-credit-card.valid-thru-label": "突破"
 }

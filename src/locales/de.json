@@ -1,38 +1,35 @@
 {
   "select-language": "Sprache auswählen",
   "cancel-label": "Abbrechen",
-  "auth": {
-    "title": "Jetzt mitmachen",
-    "subtitle": "Beginnen Sie mit der Erstellung Ihres Kontos",
-    "label": {
-      "promotional": "Erhalten Sie Werbeangebote"
-    },
-    "action": {
-      "login": "Ich habe bereits ein Konto",
-      "signup": "Registrieren"
-    },
-    "placeholder": {
-      "name": "Name",
-      "email": "Mailadresse",
-      "password": "Passwort",
-      "passwordCheck": "Passwortüberprüfung"
-    },
-    "errors": {
-      "name": {
-        "required": "Ihr Name, Vorname ist erforderlich"
-      },
-      "email": {
-        "required": "Geben Sie Ihre E-Mail ein, sie wird für die Anmeldung benötigt",
-        "format": "Bitte geben Sie eine gültige E-Mail ein"
-      },
-      "password": {
-        "required": "Geben Sie Ihr Passwort mit mindestens 8 Zeichen ein, es wird für die Anmeldung benötigt",
-        "length": "Das Passwort sollte mindestens 8 Zeichen enthalten"
-      },
-      "passwordCheck": {
-        "required": "Bitte bestätigen Sie Ihr Passwort",
-        "match": "Das Passwort stimmt nicht überein"
-      }
-    }
-  }
+  "auth.title": "Jetzt mitmachen",
+  "auth.subtitle": "Beginnen Sie mit der Erstellung Ihres Kontos",
+  "auth.label.promotional": "Erhalten Sie Werbeangebote",
+  "auth.action.login": "Ich habe bereits ein Konto",
+  "auth.action.signup": "Registrieren",
+  "auth.placeholder.name": "Name",
+  "auth.placeholder.email": "Mailadresse",
+  "auth.placeholder.password": "Passwort",
+  "auth.placeholder.passwordCheck": "Passwortüberprüfung",
+  "auth.errors.name.required": "Ihr Name, Vorname ist erforderlich",
+  "auth.errors.email.required": "Geben Sie Ihre E-Mail ein, sie wird für die Anmeldung benötigt",
+  "auth.errors.email.format": "Bitte geben Sie eine gültige E-Mail ein",
+  "auth.errors.password.required": "Geben Sie Ihr Passwort mit mindestens 8 Zeichen ein, es wird für die Anmeldung benötigt",
+  "auth.errors.password.length": "Das Passwort sollte mindestens 8 Zeichen enthalten",
+  "auth.errors.passwordCheck.required": "Bitte bestätigen Sie Ihr Passwort",
+  "auth.errors.passwordCheck.match": "Das Passwort stimmt nicht überein",
+  "pages.not-found.page-title": "Seite nicht gefunden",
+  "pages.not-found.page-heading": "Wir konnten diese Seite nicht finden",
+  "pages.not-found.page-body": "Die Seite konnte nicht gefunden werden. Bitte versuchen Sie es erneut oder wenden Sie sich an einen Administrator, wenn das Problem weiterhin besteht.",
+  "pages.not-found.page-button": "Bringen Sie mich zurück",
+  "components.v-reload-prompt.offline-ready": "{appName} ist bereit, offline zu arbeiten",
+  "components.v-reload-prompt.need-refresh": "Eine neue Version von {appName} ist verfügbar, klicken Sie auf die Schaltfläche Neu laden, um sie zu aktualisieren.",
+  "components.v-reload-prompt.reload-button": "Neu laden",
+  "components.v-reload-prompt.close-button": "Schließen",
+  "components.v-flex-pagination.goto-page-title": "Gehe zu Seite {page}",
+  "components.v-credit-card.holder-label": "Karteninhabername",
+  "components.v-credit-card.number-label": "Kartennummer",
+  "components.v-credit-card.expiration-label": "Ablauf",
+  "components.v-credit-card.cvc-label": "Sicherheitscode",
+  "components.v-credit-card.valid-label": "GÜLTIG",
+  "components.v-credit-card.valid-thru-label": "BIS"
 }

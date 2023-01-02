@@ -1,38 +1,35 @@
 {
   "select-language": "Seleccione el idioma",
   "cancel-label": "Cancelar",
-  "auth": {
-    "title": "Únete a nosotros ahora",
-    "subtitle": "Empieza creando tu cuenta",
-    "label": {
-      "promotional": "Recibe ofertas promocionales"
-    },
-    "action": {
-      "login": "Ya tengo una cuenta",
-      "signup": "Registrarse"
-    },
-    "placeholder": {
-      "name": "Nombre",
-      "email": "Dirección de correo electrónico",
-      "password": "Contraseña",
-      "passwordCheck": "Verificación de contraseña"
-    },
-    "errors": {
-      "name": {
-        "required": "Su nombre es obligatorio"
-      },
-      "email": {
-        "required": "Introduzca su correo electrónico, será necesario para iniciar la sesión",
-        "format": "Por favor, introduzca un correo electrónico válido"
-      },
-      "password": {
-        "required": "Introduzca su contraseña con al menos 8 caracteres, será necesaria para iniciar la sesión",
-        "length": "La contraseña debe contener al menos 8 caracteres"
-      },
-      "passwordCheck": {
-        "required": "Por favor, confirme su contraseña",
-        "match": "La contraseña no coincide"
-      }
-    }
-  }
+  "auth.title": "Únete a nosotros ahora",
+  "auth.subtitle": "Empieza creando tu cuenta",
+  "auth.label.promotional": "Recibe ofertas promocionales",
+  "auth.action.login": "Ya tengo una cuenta",
+  "auth.action.signup": "Registrarse",
+  "auth.placeholder.name": "Nombre",
+  "auth.placeholder.email": "Dirección de correo electrónico",
+  "auth.placeholder.password": "Contraseña",
+  "auth.placeholder.passwordCheck": "Verificación de contraseña",
+  "auth.errors.name.required": "Su nombre es obligatorio",
+  "auth.errors.email.required": "Introduzca su correo electrónico, será necesario para iniciar la sesión",
+  "auth.errors.email.format": "Por favor, introduzca un correo electrónico válido",
+  "auth.errors.password.required": "Introduzca su contraseña con al menos 8 caracteres, será necesaria para iniciar la sesión",
+  "auth.errors.password.length": "La contraseña debe contener al menos 8 caracteres",
+  "auth.errors.passwordCheck.required": "Por favor, confirme su contraseña",
+  "auth.errors.passwordCheck.match": "La contraseña no coincide",
+  "pages.not-found.page-title": "Página no encontrada",
+  "pages.not-found.page-heading": "No hemos podido encontrar esa página",
+  "pages.not-found.page-body": "Parece que no hemos podido encontrar esa página. Por favor, inténtalo de nuevo o contacta con un administrador si el problema persiste.",
+  "pages.not-found.page-button": "Llévame de vuelta",
+  "components.v-reload-prompt.offline-ready": "{appName} está listo para trabajar sin conexión",
+  "components.v-reload-prompt.need-refresh": "Una nueva versión de {appName} está disponible, haga clic en el botón Recarga para actualizar.",
+  "components.v-reload-prompt.reload-button": "Recarga",
+  "components.v-reload-prompt.close-button": "Cerrar",
+  "components.v-flex-pagination.goto-page-title": "Ir a la página {page}",
+  "components.v-credit-card.holder-label": "nombre del titular",
+  "components.v-credit-card.number-label": "número de tarjeta",
+  "components.v-credit-card.expiration-label": "caducidad",
+  "components.v-credit-card.cvc-label": "código de seguridad",
+  "components.v-credit-card.valid-label": "VÁLIDO",
+  "components.v-credit-card.valid-thru-label": "HASTA"
 }

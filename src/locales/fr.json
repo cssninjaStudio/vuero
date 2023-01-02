@@ -1,38 +1,35 @@
 {
   "select-language": "Sélectionnez une langue",
   "cancel-label": "Annuler",
-  "auth": {
-    "title": "Rejoignez-nous maintenant",
-    "subtitle": "Commencez par créer votre compte",
-    "label": {
-      "promotional": "Recevez des offres promotionnelles"
-    },
-    "action": {
-      "login": "J'ai déjà un compte",
-      "signup": "Créer un compte"
-    },
-    "placeholder": {
-      "name": "Nom",
-      "email": "Adresse électronique",
-      "password": "Mot de passe",
-      "passwordCheck": "Vérification du mot de passe"
-    },
-    "errors": {
-      "name": {
-        "required": "Votre nom, prénom est obligatoire"
-      },
-      "email": {
-        "required": "Entrez votre email, il sera nécessaire pour vous connecter",
-        "format": "Veuillez entrer une adresse électronique valide"
-      },
-      "password": {
-        "required": "Entrez votre mot de passe avec au moins 8 caractères, il vous sera demandé pour vous connecter",
-        "length": "Le mot de passe doit contenir au moins 8 caractères"
-      },
-      "passwordCheck": {
-        "required": "Veuillez confirmer votre mot de passe",
-        "match": "Le mot de passe ne correspond pas"
-      }
-    }
-  }
+  "auth.title": "Rejoignez-nous maintenant",
+  "auth.subtitle": "Commencez par créer votre compte",
+  "auth.label.promotional": "Recevez des offres promotionnelles",
+  "auth.action.login": "J'ai déjà un compte",
+  "auth.action.signup": "Créer un compte",
+  "auth.placeholder.name": "Nom",
+  "auth.placeholder.email": "Adresse électronique",
+  "auth.placeholder.password": "Mot de passe",
+  "auth.placeholder.passwordCheck": "Vérification du mot de passe",
+  "auth.errors.name.required": "Votre nom, prénom est obligatoire",
+  "auth.errors.email.required": "Entrez votre email, il sera nécessaire pour vous connecter",
+  "auth.errors.email.format": "Veuillez entrer une adresse électronique valide",
+  "auth.errors.password.required": "Entrez votre mot de passe avec au moins 8 caractères, il vous sera demandé pour vous connecter",
+  "auth.errors.password.length": "Le mot de passe doit contenir au moins 8 caractères",
+  "auth.errors.passwordCheck.required": "Veuillez confirmer votre mot de passe",
+  "auth.errors.passwordCheck.match": "Le mot de passe ne correspond pas",
+  "pages.not-found.page-title": "Page introuvable",
+  "pages.not-found.page-heading": "Cette page n'a pas été trouvée",
+  "pages.not-found.page-body": "Il semble que nous n'ayons pas trouvé cette page. Veuillez réessayer ou contacter un administrateur si le problème persiste.",
+  "pages.not-found.page-button": "Ramenez-moi en arrière",
+  "components.v-reload-prompt.offline-ready": "{appName} est prêt à être utilisé hors ligne",
+  "components.v-reload-prompt.need-refresh": "Une nouvelle version de {appName} est disponible, cliquez sur le bouton Recharger pour la mettre à jour.",
+  "components.v-reload-prompt.reload-button": "Recharger",
+  "components.v-reload-prompt.close-button": "Fermer",
+  "components.v-flex-pagination.goto-page-title": "Aller à la page {page}",
+  "components.v-credit-card.holder-label": "titulaire de la carte",
+  "components.v-credit-card.number-label": "numéro de carte",
+  "components.v-credit-card.expiration-label": "expiration",
+  "components.v-credit-card.cvc-label": "code de sécurité",
+  "components.v-credit-card.valid-label": "VALABLE",
+  "components.v-credit-card.valid-thru-label": "JUSQU'À"
 }
