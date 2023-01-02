@@ -294,6 +294,17 @@ const activeTab = ref<TabId>('display')
                     </RouterLink>
                   </li>
                   <li>
+                    <RouterLink to="/components/markdown-preview">
+                      <span>VMarkdownPreview</span>
+                      <VTag label="v2.6" color="primary" outlined curved />
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
+                    </RouterLink>
+                  </li>
+                  <li>
                     <RouterLink to="/components/flextable/">
                       <span>VFlexTable</span>
                       <i

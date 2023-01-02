@@ -15,7 +15,7 @@ module.exports = {
     'plugin:vuejs-accessibility/recommended',
     'prettier',
   ],
-  plugins: ['@typescript-eslint', 'prettier-vue'],
+  plugins: ['frontmatter', '@typescript-eslint', 'prettier-vue'],
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
@@ -26,7 +26,10 @@ module.exports = {
     {
       files: ['*.md'],
       parser: 'markdown-eslint-parser',
-      extends: ['plugin:md/recommended', 'prettier'],
+      extends: ['plugin:prettier/recommended', 'plugin:md/recommended'],
+      rules: {
+        'prettier/prettier': ['error', { parser: 'markdown' }],
+      },
     },
     {
       files: ['*.vue'],

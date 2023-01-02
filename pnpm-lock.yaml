@@ -45,7 +45,9 @@ specifiers:
   dropzone: 6.0.0-beta.2
   eslint: 8.31.0
   eslint-config-prettier: 8.5.0
+  eslint-plugin-frontmatter: ^0.0.8
   eslint-plugin-md: 1.0.19
+  eslint-plugin-prettier: ^4.2.1
   eslint-plugin-prettier-vue: 4.2.0
   eslint-plugin-vue: 9.8.0
   eslint-plugin-vuejs-accessibility: 2.0.0
@@ -212,7 +214,9 @@ devDependencies:
   cypress: 11.1.0
   eslint: 8.31.0
   eslint-config-prettier: 8.5.0_eslint@8.31.0
+  eslint-plugin-frontmatter: 0.0.8
   eslint-plugin-md: 1.0.19
+  eslint-plugin-prettier: 4.2.1_xtjuwoibeoaqavcvkna3ocxxbu
   eslint-plugin-prettier-vue: 4.2.0
   eslint-plugin-vue: 9.8.0_eslint@8.31.0
   eslint-plugin-vuejs-accessibility: 2.0.0_eslint@8.31.0
@@ -5503,6 +5507,14 @@ packages:
       eslint: 8.31.0
     dev: true
 
+  /eslint-plugin-frontmatter/0.0.8:
+    resolution: {integrity: sha512-VdjESuZjdQs11/N0cdwClMHjUS25kwmFMx3rnQLPPvqGgmsdlPZblLJhjT8YGfUsAuKG1TwvRx5Re7oe9btgPg==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      lodash: 4.17.21
+      requireindex: 1.1.0
+    dev: true
+
   /eslint-plugin-md/1.0.19:
     resolution: {integrity: sha512-HyiCjr/V/DDmEP6ZGDMHR445AOjehqCZulmfoHtlP3J8MZuNNOTZHUQ9zuOBED5+hpzNDZAxw8RMZPlNAK0viQ==}
     engines: {node: '>=0.10.0'}
@@ -5524,6 +5536,23 @@ packages:
     dependencies:
       '@vue/compiler-sfc': 3.2.45
       chalk: 4.1.2
+      prettier: 2.8.1
+      prettier-linter-helpers: 1.0.0
+    dev: true
+
+  /eslint-plugin-prettier/4.2.1_xtjuwoibeoaqavcvkna3ocxxbu:
+    resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==}
+    engines: {node: '>=12.0.0'}
+    peerDependencies:
+      eslint: '>=7.28.0'
+      eslint-config-prettier: '*'
+      prettier: '>=2.0.0'
+    peerDependenciesMeta:
+      eslint-config-prettier:
+        optional: true
+    dependencies:
+      eslint: 8.31.0
+      eslint-config-prettier: 8.5.0_eslint@8.31.0
       prettier: 2.8.1
       prettier-linter-helpers: 1.0.0
     dev: true

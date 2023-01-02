@@ -69,6 +69,7 @@ declare module 'vue-router/auto/routes' {
     '/components/grid': RouteRecordInfo<'/components/grid', '/components/grid', Record<never, never>, Record<never, never>>,
     '/components/icon-box': RouteRecordInfo<'/components/icon-box', '/components/icon-box', Record<never, never>, Record<never, never>>,
     '/components/icon-wrap': RouteRecordInfo<'/components/icon-wrap', '/components/icon-wrap', Record<never, never>, Record<never, never>>,
+    '/components/markdown-preview': RouteRecordInfo<'/components/markdown-preview', '/components/markdown-preview', Record<never, never>, Record<never, never>>,
     '/components/pagination': RouteRecordInfo<'/components/pagination', '/components/pagination', Record<never, never>, Record<never, never>>,
     '/components/placeholder-page': RouteRecordInfo<'/components/placeholder-page', '/components/placeholder-page', Record<never, never>, Record<never, never>>,
     '/components/placeholder-section': RouteRecordInfo<'/components/placeholder-section', '/components/placeholder-section', Record<never, never>, Record<never, never>>,

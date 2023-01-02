@@ -12,12 +12,16 @@
 .content {
   ol,
   ul {
-    color: var(--dark-text);
+    color: var(--light-text);
     font-family: var(--font);
 
     &.is-light {
       color: var(--light-text);
     }
+  }
+
+  hr {
+    background-color: var(--background-grey);
   }
 
   blockquote {
@@ -67,6 +71,10 @@
       &:not(.is-light) {
         color: var(--dark-dark-text);
       }
+    }
+
+    hr {
+      background-color: var(--dark-sidebar-light-10);
     }
 
     blockquote {
