@@ -1,14 +1,6 @@
 import type { Directive, DirectiveHook } from 'vue'
 
-const onUpdate: DirectiveHook = (el: HTMLElement, bindings) => {
-  const value = bindings.value
-  if (typeof value === 'string') {
-    el.dataset.hint = value
-  } else {
-    el.dataset.hint = ''
-  }
-}
-const onMounted: DirectiveHook = (el: HTMLElement, bindings) => {
+const updateVTooltip: DirectiveHook = (el: HTMLElement, bindings) => {
   const value = bindings.value
   let placement = 'top'
   let color = ''
@@ -44,24 +36,51 @@ const onMounted: DirectiveHook = (el: HTMLElement, bindings) => {
     shape = 'hint--bubble'
   }
 
+  const previousClasses: string[] = []
+  const nextClasses: string[] = []
+
+  el.classList.forEach((className) => {
+    if (className.startsWith('hint--')) {
+      previousClasses.push(className)
+    }
+  })
+
   if (typeof value === 'string') {
     el.dataset.hint = value
-    el.tabIndex = 0
-    el.classList.add(`hint--${placement}`)
+    el.ariaLabel = value
+    el.tabIndex ??= 0
+
+    nextClasses.push(`hint--${placement}`)
 
     if (color) {
-      el.classList.add(color)
+      nextClasses.push(color)
     }
     if (shape) {
-      el.classList.add(shape)
+      nextClasses.push(shape)
     }
+  } else {
+    el.dataset.hint = undefined
   }
+
+  // add new classes
+  nextClasses.forEach((className) => {
+    if (!previousClasses.includes(className)) {
+      el.classList.add(className)
+    }
+  })
+
+  // remove old classes
+  previousClasses.forEach((className) => {
+    if (!nextClasses.includes(className)) {
+      el.classList.remove(className)
+    }
+  })
 }
 
-export const vTooltip: Directive = {
+export const vTooltip = {
   getSSRProps() {
     return {}
   },
-  updated: onUpdate,
-  mounted: onMounted,
-}
+  updated: updateVTooltip,
+  mounted: updateVTooltip,
+} satisfies Directive
