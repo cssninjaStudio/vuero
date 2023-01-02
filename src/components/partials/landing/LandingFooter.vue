@@ -101,7 +101,14 @@
                   <a href="https://cssninja.io/faq" target="_blank">Frequent questions</a>
                 </li>
                 <li class="column-item">
-                  <a href="https://support.cssninja.io" target="_blank">Support center</a>
+                  <a href="https://cssninja.io/faq/github-access" target="_blank">
+                    GitHub access
+                  </a>
+                </li>
+                <li class="column-item">
+                  <a href="https://cssninja.io/faq/support" target="_blank">
+                    Support center
+                  </a>
                 </li>
                 <li class="column-item">
                   <a href="https://docs.cssninja.io" target="_blank">Learning</a>

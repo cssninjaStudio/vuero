@@ -11,7 +11,7 @@ First of all, Thank you so much for purchasing this template and for being our l
 1. A recent web browser (Chrome, Edge, Firefox, ...)
 2. [Nodejs LTS](https://nodejs.org/en/) _(> 16.x with npm >8)_ installed
 3. Knowledge with [Typescript](https://github.com/microsoft/typescript) _(> 4.x)_ (should not be installed globally)
-4. (recommended) [VSCode](https://code.visualstudio.com/ with [Volar](https://marketplace.visualstudio.com/items?itemName=vue.volar)
+4. (recommended) [VSCode](https://code.visualstudio.com/) with [Volar](https://marketplace.visualstudio.com/items?itemName=vue.volar)
 
 #### Install nodejs
 
@@ -103,13 +103,9 @@ We try to keep it mostly up to date, so you can always find the latest informati
 - [Customer support](https://docs.cssninja.io/vuero/documentation/customer-support.html?utm_source=readme)
 - [Changelog](https://docs.cssninja.io/vuero/documentation/changelog.html?utm_source=readme)
 
-### [cssninjaStudio on youtube.com](https://www.youtube.com/channel/UCySf97KnXg9IvVeSeEvF-wQ)
-
-- [Cleaning the project and getting started](https://www.youtube.com/watch?v=lE5VNpP8JqA)
-
 We try to keep Vuero dependencies and best practices up to dates. We also take care of user requests, either by implementing requested features, fixing bugs or improving the documentation.
 
-If you want to contribute, feel free to create or up-vote discussions on the dedicated [public github repository](https://github.com/cssninjaStudio/vuero-public/discussions). You can also have access to the private github access, so you can view the source code history and submit issues. To do so, open a ticket on the [support portal](https://support.cssninja.io) with your github username.
+You can also have [access to the private github access](https://cssninja.io/faq/github-access), so you can view the source code history and submit issues. To do so, create an account and verify your envato purchase on [https://cssninja.io/](https://cssninja.io/faq/github-access).
 
 ### Useful links
 
