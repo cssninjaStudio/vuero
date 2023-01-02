@@ -7,7 +7,7 @@ import { VueRouterAutoImports } from 'unplugin-vue-router'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import { VitePluginFonts } from 'vite-plugin-fonts'
-import ViteRadar from 'vite-plugin-radar'
+import { VitePluginRadar } from 'vite-plugin-radar'
 import PurgeIcons from 'vite-plugin-purge-icons'
 import ImageMin from 'vite-plugin-imagemin'
 import vueI18n from '@intlify/vite-plugin-vue-i18n'
@@ -239,7 +239,7 @@ export default defineConfig({
      */
     !process.env.GTM_ID
       ? undefined
-      : ViteRadar({
+      : VitePluginRadar({
           gtm: {
             id: process.env.GTM_ID,
           },
