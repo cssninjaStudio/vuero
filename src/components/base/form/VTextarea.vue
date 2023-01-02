@@ -7,6 +7,7 @@ export interface VTextareaEmits {
 export interface VTextareaProps {
   raw?: boolean
   modelValue?: any
+  autogrow?: boolean
 }
 const vFieldContext = reactive(
   useVFieldContext({
@@ -17,6 +18,7 @@ const vFieldContext = reactive(
 
 const emits = defineEmits<VTextareaEmits>()
 const props = withDefaults(defineProps<VTextareaProps>(), { modelValue: '' })
+const textareaRef = ref<HTMLTextAreaElement>()
 const value = ref(vFieldContext?.field?.value ?? props.modelValue)
 
 watch(value, () => {
@@ -29,6 +31,17 @@ watch(
   }
 )
 
+function fitSize() {
+  if (!textareaRef.value) {
+    return
+  }
+
+  if (props.autogrow) {
+    textareaRef.value.style.height = 'auto'
+    textareaRef.value.style.height = textareaRef.value.scrollHeight + 'px'
+  }
+}
+
 const classes = computed(() => {
   if (props.raw) return []
 
@@ -39,10 +52,12 @@ const classes = computed(() => {
 <template>
   <textarea
     :id="vFieldContext.id"
+    ref="textareaRef"
     v-model="value"
     :class="classes"
     :name="vFieldContext.id"
     @change="vFieldContext.field?.handleChange"
     @blur="vFieldContext.field?.handleBlur"
+    @input="fitSize"
   ></textarea>
 </template>
