@@ -123,7 +123,7 @@
     "@commitlint/cli": "17.3.0",
     "@commitlint/config-conventional": "17.3.0",
     "@iconify/json": "2.1.159",
-    "@intlify/vite-plugin-vue-i18n": "7.0.0",
+    "@intlify/unplugin-vue-i18n": "^0.8.1",
     "@nuxt/devalue": "2.0.0",
     "@stefanprobst/remark-shiki": "^2.2.0",
     "@types/dragula": "3.7.1",

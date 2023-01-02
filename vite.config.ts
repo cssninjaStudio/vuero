@@ -10,7 +10,7 @@ import { VitePluginFonts } from 'vite-plugin-fonts'
 import { VitePluginRadar } from 'vite-plugin-radar'
 import PurgeIcons from 'vite-plugin-purge-icons'
 import ImageMin from 'vite-plugin-imagemin'
-import vueI18n from '@intlify/vite-plugin-vue-i18n'
+import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 import purgecss from 'rollup-plugin-purgecss'
 
@@ -142,7 +142,7 @@ export default defineConfig({
      *
      * @see https://github.com/intlify/bundle-tools/tree/main/packages/vite-plugin-vue-i18n
      */
-    vueI18n({
+    VueI18nPlugin({
       // @ts-ignore
       include: resolve(dirname(fileURLToPath(import.meta.url)), './src/locales/**'),
     }),
