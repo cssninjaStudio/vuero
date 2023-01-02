@@ -26,7 +26,7 @@ module.exports = {
     {
       files: ['*.md'],
       parser: 'markdown-eslint-parser',
-      extends: ['plugin:md/recommended', 'prettier']
+      extends: ['plugin:md/recommended', 'prettier'],
     },
     {
       files: ['*.vue'],

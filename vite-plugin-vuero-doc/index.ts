@@ -1,53 +1,12 @@
 import type { Plugin, ResolvedConfig } from 'vite'
-import MarkdownIt from 'markdown-it'
-import matter from 'gray-matter'
-import { compileTemplate, parse, SFCTemplateBlock } from '@vue/compiler-sfc'
-import MarkdownPrismVue from './markdown-it-prism-vue'
+import type { Processor } from 'unified'
+import type { Theme } from 'shiki-es'
 
-interface Options {
-  /**
-   * Options passed to Markdown It
-   */
-  markdownItOptions?: MarkdownIt.Options
-  /**
-   * Plugins for Markdown It
-   */
-  markdownItUses?: (
-    | MarkdownIt.PluginSimple
-    | [MarkdownIt.PluginSimple | MarkdownIt.PluginWithOptions<any>, any]
-    | any
-  )[]
-  /**
-   * A function providing the Markdown It instance gets the ability to apply custom settings/plugins
-   */
-  markdownItSetup?: (MarkdownIt: MarkdownIt) => void
-  /**
-   * Class names for wrapper div
-   *
-   * @default 'markdown-body'
-   */
-  wrapperClasses?: string | string[]
-  /**
-   * Component name to wrapper with
-   *
-   * @default undefined
-   */
-  wrapperComponent?: string | undefined | null
-  /**
-   * Custom tranformations apply before and after the markdown transformation.
-   */
-  transforms?: {
-    before?: (code: string, id: string) => string
-    after?: (code: string, id: string) => string
-  }
-}
+import { join, basename } from 'pathe'
+import { compileTemplate, parse } from '@vue/compiler-sfc'
 
-type ResolvedOptions = Required<Options>
-
-function toArray<T>(n: T | T[]): T[] {
-  if (!Array.isArray(n)) return [n]
-  return n
-}
+import { createProcessors } from './markdown'
+import { transformExampleMarkup, transformSlots } from './transform'
 
 function parseId(id: string) {
   const index = id.indexOf('?')
@@ -55,93 +14,121 @@ function parseId(id: string) {
   else return id.slice(0, index)
 }
 
-function VitePluginVueroDoc(options: Options = {}): Plugin {
-  const resolved: ResolvedOptions = Object.assign(
-    {
-      markdownItUses: [require('markdown-it-anchor'), MarkdownPrismVue],
-      markdownItSetup: () => {},
-      markdownItOptions: {
-        html: true,
-        linkify: true,
-        typographer: true,
-      },
-      wrapperClasses: '',
-      wrapperComponent: 'DocumentationItem',
-      transforms: {
-        after(sfc: string) {
-          return sfc
-            .replace('<!--code-->', '<template #code>\n<slot name="code">')
-            .replace('<!--/code-->', '</slot>\n</template>')
-            .replace('<!--example-->', '<template #example>\n<slot name="example">')
-            .replace('<!--/example-->', '</slot>\n</template>')
-        },
-      },
-    },
-    options
-  )
+export interface PluginOptions {
+  pathPrefix?: string
+  wrapperComponent: string
+  shiki: {
+    theme:
+      | Theme
+      | {
+          light: Theme
+          dark: Theme
+        }
+  }
+  sourceMeta?: {
+    enabled?: boolean
+    editProtocol?: string
+  }
+}
 
-  const markdown = new MarkdownIt({
-    ...resolved.markdownItOptions,
-  })
-
-  resolved.markdownItUses.forEach((e) => {
-    const [plugin, options] = toArray(e)
-
-    markdown.use(plugin, options)
-  })
-
-  resolved.markdownItSetup(markdown)
-
-  const wrapperClasses = toArray(resolved.wrapperClasses)
-    .filter((i) => i)
-    .join(' ')
-
+export function VitePluginVueroDoc(options: PluginOptions) {
   let config: ResolvedConfig | undefined
-  let vuePlugin: Plugin
+  let processors: { light: Processor; dark: Processor } | undefined
 
-  function markdownToVue(id: string, raw: string) {
-    if (resolved.transforms.before) raw = resolved.transforms.before(raw, id)
+  const cwd = process.cwd()
+  const pathPrefix = options.pathPrefix ? join(cwd, options.pathPrefix) : cwd
 
+  async function markdownToVue(id: string, raw: string) {
     const path = parseId(id)
-    const { content, data: frontmatter } = matter(raw)
 
-    let sfc = markdown.render(content, {})
+    // transform example markup to use kebab-case without self-closing elements.
+    // this is needed because rehype-raw requires valid html (only some tags are self-closable)
+    const input = transformExampleMarkup(raw)
 
-    if (wrapperClasses) sfc = `<div class="${wrapperClasses}">${sfc}</div>`
-    if (resolved.wrapperComponent)
-      sfc = `<${resolved.wrapperComponent} :frontmatter="frontmatter">${sfc}</${resolved.wrapperComponent}>`
-    if (resolved.transforms.after) sfc = resolved.transforms.after(sfc, id)
+    // process markdown with remark
+    if (!processors) processors = await createProcessors(options.shiki.theme)
 
-    const template = parse(`<template>${sfc}</template>`, {
+    const [vFileLight, vFileDark] = await Promise.all([
+      processors.light.process(input),
+      processors.dark.process(input),
+    ])
+
+    const contentLight = vFileLight.toString()
+    const contentDark = vFileDark.toString()
+    const frontmatter = vFileLight.data?.frontmatter ?? {}
+
+    // replace code/example slots placeholders
+    const slotLight = transformSlots(contentLight, 'v-if="!darkmode.isDark"')
+    const slotDark = transformSlots(contentDark, 'v-if="darkmode.isDark"')
+
+    // wrap content in wrapper component default slot
+    const sfc = [
+      `<template>`,
+      `  <${options.wrapperComponent} :frontmatter="frontmatter" :source-meta="sourceMeta">`,
+      `    ${slotLight}`,
+      `    ${slotDark}`,
+      `  </${options.wrapperComponent}>`,
+      `</template>`,
+    ].join('\n')
+
+    // parse template with vue sfc compiler
+    const result = parse(sfc, {
       filename: path,
       sourceMap: true,
-    }).descriptor.template as SFCTemplateBlock
+    })
 
+    if (result.errors.length || result.descriptor.template === null) {
+      console.error(result.errors)
+
+      throw new Error(`Markdown: unable to parse virtual file generated for "${id}"`)
+    }
+
+    // compile template with vue sfc compiler
     const { code, errors } = compileTemplate({
       filename: path,
       id: path,
-      source: template.content,
-      preprocessLang: template.lang,
+      source: result.descriptor.template.content,
+      preprocessLang: result.descriptor.template.lang,
       transformAssetUrls: false,
     })
 
     if (errors.length) {
       console.error(errors)
-      console.error('---MARKDOWN---', id)
 
-      if (config.isProduction) throw new Error(`Markdown: file "${id}" have errors`)
+      throw new Error(`Markdown: unable to compile virtual file "${id}"`)
     }
 
-    let result = code.replace('export function render', 'function render')
-    result += `\nconst __matter = ${JSON.stringify(frontmatter)};`
-    result += '\nconst data = () => ({ frontmatter: __matter });'
-    result += '\nconst __script = { render, data };'
+    // source is used to display edit source link in the docs
+    let sourceMeta = 'undefined'
+    if (options.sourceMeta?.enabled) {
+      sourceMeta = JSON.stringify({
+        relativePath: path.substring(cwd.length),
+        basename: basename(path),
+        path: config?.isProduction ? '' : path,
+        editProtocol: config?.isProduction ? '' : options.sourceMeta.editProtocol,
+      })
+    }
 
-    if (!config?.isProduction) result += `\n__script.__hmrId = ${JSON.stringify(path)};`
+    // inject frontmatter/darkmode and hmrId into the compiled render function
+    const output = [
+      `import { reactive } from 'vue'`,
+      `import { useDarkmode } from '/@src/stores/darkmode'`,
 
-    result += '\nexport default __script;'
+      code.replace('export function render', 'function render'),
 
-    return result
+      `const __frontmatter = ${JSON.stringify(frontmatter)};`,
+      `const setup = () => ({`,
+      `  frontmatter: reactive(__frontmatter),`,
+      `  darkmode: useDarkmode(),`,
+      `  sourceMeta: ${sourceMeta},`,
+      `});`,
+      `const __script = { render, setup };`,
+
+      config?.isProduction ? '' : `__script.__hmrId = ${JSON.stringify(path)};`,
+      `export default __script;`,
+    ].join('\n')
+
+    return output
   }
 
   return {
@@ -149,23 +136,13 @@ function VitePluginVueroDoc(options: Options = {}): Plugin {
     enforce: 'pre',
     configResolved(_config) {
       config = _config
-      vuePlugin = config.plugins.find((p) => p.name === 'vite:vue')
     },
-    transform(raw, id) {
-      if (id.endsWith('.md')) return markdownToVue(id, raw)
-    },
-    async handleHotUpdate(ctx) {
-      // hot reload .md files as .vue files
-      if (ctx.file.endsWith('.md')) {
-        return vuePlugin.handleHotUpdate!({
-          ...ctx,
-          async read() {
-            return markdownToVue(ctx.file, await ctx.read())
-          },
-        })
+    async transform(raw, id) {
+      if (id.endsWith('.md') && id.startsWith(pathPrefix)) {
+        return await markdownToVue(id, raw)
       }
     },
-  }
+  } satisfies Plugin
 }
 
 export default VitePluginVueroDoc

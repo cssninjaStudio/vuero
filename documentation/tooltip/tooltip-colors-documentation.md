@@ -40,7 +40,7 @@ CSS class. Available color classes are: `.light`, `.primary`,
 
 <!--/code-->
 
-<!--Example-->
+<!--example-->
 
 <VTags>
   <VTag
@@ -80,4 +80,4 @@ CSS class. Available color classes are: `.light`, `.primary`,
   />
 </VTags>
 
-<!--/Example-->
+<!--/example-->

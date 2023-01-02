@@ -50,12 +50,12 @@ const columns = {
 </script>
 
 <template>
-  <VFlexTable rounded :data="flexRowsAdvanced" :columns="columns">
+  <VFlexTable rounded :data="data" :columns="columns">
     <template #body-cell="{ row, column, value }">
       <template v-if="column.key === 'username'">
         <VAvatar size="medium" :picture="row.picture" :badge="row.badge" />
         <div>
-          <span class="item-name">{{ row.name }}</span>
+          <span class="item-name">{{ row?.name }}</span>
           <span class="item-meta">
             <strong>{{ value }}</strong>
           </span>

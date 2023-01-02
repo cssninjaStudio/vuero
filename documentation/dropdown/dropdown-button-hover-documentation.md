@@ -14,6 +14,7 @@ Please refer to the markup for more details about usage.
         icon="feather:help-circle"
         class="is-trigger"
         @mouseenter="open"
+        @focusin="open"
         @click="toggle"
       >
         Hover me!
@@ -21,7 +22,7 @@ Please refer to the markup for more details about usage.
     </template>
 
     <template #content="{ close }">
-      <div @mouseleave="close">
+      <div @mouseleave="close" @focusout="close">
         <a href="#" class="dropdown-item"> Dropdown item </a>
         <a href="#" class="dropdown-item"> Other dropdown item </a>
         <a href="#" class="dropdown-item is-active"> Active dropdown item </a>
@@ -47,13 +48,14 @@ Please refer to the markup for more details about usage.
           class="is-trigger"
           color="warning"
           @mouseenter="open"
+          @focusin="open"
           @click="toggle"
         >
           Hover me!
         </VButton>
       </template>
       <template #content="{ close }">
-        <div @mouseleave="close">
+        <div @mouseleave="close" @focusout="close">
           <a href="#" class="dropdown-item"> Dropdown item </a>
           <a href="#" class="dropdown-item"> Other dropdown item </a>
           <a href="#" class="dropdown-item is-active"> Active dropdown item </a>
@@ -72,13 +74,14 @@ Please refer to the markup for more details about usage.
           icon="feather:help-circle"
           class="is-trigger"
           @mouseenter="open"
+          @focusin="open"
           @click="toggle"
         >
           Hover me!
         </VButton>
       </template>
       <template #content="{ close }">
-        <div @mouseleave="close">
+        <div @mouseleave="close" @focusout="close">
           <a href="#" class="dropdown-item"> Dropdown item </a>
           <a href="#" class="dropdown-item"> Other dropdown item </a>
           <a href="#" class="dropdown-item is-active"> Active dropdown item </a>

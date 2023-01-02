@@ -35,6 +35,19 @@
       line-height: 1.125;
     }
 
+    .toc-link-anchor {
+      color: var(--light-text);
+      margin-left: 0.5rem;
+      font-size: 0.8rem;
+      transition: color 0.2s;
+      outline: none;
+
+      &:hover,
+      &:focus {
+        color: var(--primary);
+      }
+    }
+
     p {
       max-width: 540px;
 
@@ -45,10 +58,19 @@
     }
   }
 
-  .code-trigger {
+  .demo-actions {
     position: absolute;
     top: 16px;
     right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .code-trigger,
+  .report-issue,
+  .code-edit {
     height: 36px;
     width: 36px;
     display: flex;
@@ -330,7 +352,9 @@
         color: var(--dark-dark-text);
       }
 
-      .code-trigger {
+      .code-trigger,
+      .report-issue,
+      .code-edit {
         border-color: var(--dark-sidebar-light-14);
 
         &:hover,
@@ -385,7 +409,7 @@
 @media only screen and (max-width: 767px) {
   .demo-card {
     .demo-title {
-      .code-trigger {
+      .demo-actions {
         top: 10px;
         right: 12px;
       }

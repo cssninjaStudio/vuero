@@ -132,10 +132,10 @@ const columns = {
             />
             <div>
               <span class="dark-text" :title="row.name">
-                {{ row.shortname }}
+                {{ row?.shortname }}
               </span>
               <VTextEllipsis width="280px" class="light-text" :title="row.bio">
-                <small>{{ row.bio }}</small>
+                <small>{{ row?.bio }}</small>
               </VTextEllipsis>
             </div>
           </template>

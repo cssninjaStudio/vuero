@@ -39,7 +39,7 @@ There are 6 default positions accessible with modifiers: `.top-left`,
 
 <!--/code-->
 
-<!--Example-->
+<!--example-->
 
 <VTags>
   <VTag
@@ -74,4 +74,4 @@ There are 6 default positions accessible with modifiers: `.top-left`,
   />
 </VTags>
 
-<!--/Example-->
+<!--/example-->

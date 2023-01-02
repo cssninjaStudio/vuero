@@ -199,6 +199,3 @@ const handleSignup = handleSubmit(async (values) => {
 ```
 
 <!--/code-->
-
-<!--example-->
-<!--/example-->

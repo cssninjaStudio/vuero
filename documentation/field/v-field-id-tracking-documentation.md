@@ -1,8 +1,3 @@
----
-state:
-  input: ''
----
-
 ### Id Tracking
 
 The main purpose of the `VField` component is to keep track of an unique input.

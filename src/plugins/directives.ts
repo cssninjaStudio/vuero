@@ -3,6 +3,8 @@ import { vPreloadLink } from '/@src/directives/preload-link'
 import { vTooltip } from '/@src/directives/tooltip'
 import { vBackground } from '/@src/directives/background'
 
+console.log('definePlugin', definePlugin)
+
 export default definePlugin(({ app }) => {
   // register global v-preload-link directive
   app.directive('preload-link', vPreloadLink)

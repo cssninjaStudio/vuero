@@ -16,7 +16,7 @@ Use the props shown in the code examples to handle validation.
   </VField>
   <VField>
     <VControl icon="feather:lock" has-error>
-      <VInput type="password" placeholder="Password" value="passwd" />
+      <VInput type="text" placeholder="Password" value="passwd" />
       <p class="help has-text-danger">The password must contains 8 characters</p>
     </VControl>
   </VField>
@@ -42,7 +42,7 @@ Use the props shown in the code examples to handle validation.
   <VField>
     <VControl icon="feather:lock" has-error>
       <VInput
-        type="password"
+        type="text"
         placeholder="Password"
         value="passwd"
         autocomplete="current-password"

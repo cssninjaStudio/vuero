@@ -6,15 +6,18 @@ import VueRouter from 'unplugin-vue-router/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
-import ViteFonts from 'vite-plugin-fonts'
+import { VitePluginFonts } from 'vite-plugin-fonts'
 import ViteRadar from 'vite-plugin-radar'
 import PurgeIcons from 'vite-plugin-purge-icons'
 import ImageMin from 'vite-plugin-imagemin'
-import VueroDocumentation from './vite-plugin-vuero-doc/index'
 import vueI18n from '@intlify/vite-plugin-vue-i18n'
 import { VitePWA } from 'vite-plugin-pwa'
 import purgecss from 'rollup-plugin-purgecss'
 
+// local vite plugin
+import { VitePluginVueroDoc } from './vite-plugin-vuero-doc'
+
+// options via env variables
 const MINIFY_IMAGES = process.env.MINIFY ? process.env.MINIFY === 'true' : false
 
 /**
@@ -169,7 +172,20 @@ export default defineConfig({
      * @see /src/components/partials/documentation/DocumentationItem.vue
      * @see /src/composable/useMarkdownToc.ts
      */
-    VueroDocumentation(),
+    VitePluginVueroDoc({
+      pathPrefix: 'documentation',
+      wrapperComponent: 'DocumentationItem',
+      shiki: {
+        theme: {
+          light: 'min-light',
+          dark: 'github-dark',
+        },
+      },
+      sourceMeta: {
+        enabled: true,
+        editProtocol: 'vscode://vscode-remote/wsl+Ubuntu', // or 'vscode://file'
+      },
+    }),
 
     /**
      * unplugin-vue-components plugin is responsible of autoloading components
@@ -197,7 +213,7 @@ export default defineConfig({
      *
      * @see https://github.com/stafyniaksacha/vite-plugin-fonts
      */
-    ViteFonts({
+    VitePluginFonts({
       google: {
         families: [
           {

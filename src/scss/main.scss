@@ -13,7 +13,7 @@ SCSS Imports
 
 // Here we import bulma-css-vars instead of bulma
 // because we want to use the variables defined in the file
-@import './node_modules/bulma-css-vars/bulma-cv-lib';
+@import '../../node_modules/@cssninja/bulma-css-vars/bulma-cv-lib.sass';
 
 @import './layout/all';
 

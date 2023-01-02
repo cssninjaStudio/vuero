@@ -12,8 +12,6 @@ previewer. Check the code for more details.
 
 ```vue
 <script setup lang="ts">
-import { ref } from vue
-
 const onAddFile = (error: any, fileInfo: any) => {
   if (error) {
     console.error(error)
@@ -31,6 +29,8 @@ const onRemoveFile = (error: any, fileInfo: any) => {
     console.error(error)
     return
   }
+
+  console.log(fileInfo)
 
   wizardData.logo = null
 }

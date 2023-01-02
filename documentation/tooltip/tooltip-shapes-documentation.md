@@ -11,31 +11,21 @@ and doesn't have a tooltip arrow.
 ```vue {4,10,16}
 <template>
   <VTags>
-    <VTag v-tooltip.primary="'Iam a default tooltip'" color="solid" label="Rounded" />
-
-    <VTag
-      v-tooltip.primary.rounded="'Iam a rounded tooltip'"
-      color="solid"
-      label="Default"
-    />
-
-    <VTag
-      v-tooltip.primary.bubble="'Iam a bubble tooltip'"
-      color="solid"
-      label="Bubble"
-    />
+    <VTag v-tooltip="'Iam a default tooltip'" color="solid" label="Default" />
+    <VTag v-tooltip.rounded="'Iam a rounded tooltip'" color="solid" label="Rounded" />
+    <VTag v-tooltip.bubble="'Iam a bubble tooltip'" color="solid" label="Bubble" />
   </VTags>
 </template>
 ```
 
 <!--/code-->
 
-<!--Example-->
+<!--example-->
 
 <VTags>
-  <VTag v-tooltip.primary="'Iam a default tooltip'" color="solid" label="Rounded" />
-  <VTag v-tooltip.primary.rounded="'Iam a rounded tooltip'" color="solid" label="Default" />
-  <VTag v-tooltip.primary.bubble="'Iam a bubble tooltip'" color="solid" label="Bubble" />
+  <VTag v-tooltip="'Iam a default tooltip'" color="solid" label="Default" />
+  <VTag v-tooltip.rounded="'Iam a rounded tooltip'" color="solid" label="Rounded" />
+  <VTag v-tooltip.bubble="'Iam a bubble tooltip'" color="solid" label="Bubble" />
 </VTags>
 
-<!--/Example-->
+<!--/example-->

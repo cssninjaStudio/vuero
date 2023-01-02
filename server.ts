@@ -19,6 +19,7 @@ async function createServer() {
   const indexProd = isProd ? readFileSync(resolve('dist/client/index.html'), 'utf-8') : ''
 
   if (!isProd) {
+    console.log('creating...')
     vite = await require('vite').createServer({
       root,
       logLevel: isTest ? 'error' : 'info',
@@ -33,6 +34,7 @@ async function createServer() {
         },
       },
     })
+    console.log('created')
     // use vite's connect instance as middleware
     app.use(fromNodeMiddleware(vite.middlewares))
   } else {
@@ -66,10 +68,12 @@ async function createServer() {
         let template, render, init
         if (!isProd) {
           // always read fresh template in dev
+          console.log('transforming...')
           template = readFileSync(resolve('index.html'), 'utf-8')
           template = await vite.transformIndexHtml(url, template)
           render = (await vite.ssrLoadModule('/src/entry-server.ts')).render
           init = (await vite.ssrLoadModule('/src/entry-server.ts')).init
+          console.log('transform done')
         } else {
           template = indexProd
           render = require('./dist/server/entry-server.mjs').render

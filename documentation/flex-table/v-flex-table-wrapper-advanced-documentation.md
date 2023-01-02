@@ -378,23 +378,23 @@ function onCallClick(row: any) {
               :initials="row.initials"
             />
             <div>
-              <span class="dark-text">{{ row.name }}</span>
+              <span class="dark-text">{{ row?.name }}</span>
               <VTextEllipsis width="280px" class="light-text">
-                {{ row.bio }}
+                {{ row?.bio }}
               </VTextEllipsis>
             </div>
           </template>
 
           <template v-if="column.key === 'actions'">
             <VAction>
-              {{ row.id === openedRowId ? 'Hide details' : 'View details' }}
+              {{ row?.id === openedRowId ? 'Hide details' : 'View details' }}
             </VAction>
           </template>
         </template>
 
         <!-- We can also inject content after rows -->
         <template #body-row-post="{ row }">
-          <template v-if="row.id === incomingCallerId">
+          <template v-if="row?.id === incomingCallerId">
             <VTags class="mt-2 mb-0">
               <VTag color="primary" outlined>
                 <i class="iconify is-inline mr-2" data-icon="feather:send"></i>
@@ -403,9 +403,9 @@ function onCallClick(row: any) {
             </VTags>
           </template>
 
-          <template v-if="row.id === openedRowId">
+          <template v-if="row?.id === openedRowId">
             <div class="is-block p-4 my-2 is-rounded">
-              <div class="dark-text mb-4 is-size-4">{{ row.name }}'s details</div>
+              <div class="dark-text mb-4 is-size-4">{{ row?.name }}'s details</div>
               <VFlex justify-content="space-between">
                 <VFlexItem>
                   <VCard>
@@ -416,7 +416,7 @@ function onCallClick(row: any) {
                 <VFlexItem align-self="flex-end">
                   <VFlex flex-direction="column">
                     <VButton
-                      v-if="row.id === incomingCallerId"
+                      v-if="row?.id === incomingCallerId"
                       class="mb-2"
                       color="danger"
                       @click="() => onCallClick(row)"
@@ -432,7 +432,7 @@ function onCallClick(row: any) {
                       @click="() => onCallClick(row)"
                     >
                       <i class="iconify is-inline mr-2" data-icon="feather:phone"></i>
-                      Call {{ row.name }}
+                      Call {{ row?.name }}
                     </VButton>
                   </VFlex>
                 </VFlexItem>

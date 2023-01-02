@@ -121,6 +121,10 @@ $sides: top, bottom, left, right;
   color: var(--secondary) !important;
 }
 
+.has-text-light {
+  color: var(--light-text) !important;
+}
+
 .has-background-secondary {
   background-color: var(--secondary) !important;
 }
