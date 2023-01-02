@@ -1,5 +1,9 @@
+<script setup lang="ts">
+const stayFocus = useLocalStorage('disable-stay-focus', '')
+</script>
+
 <template>
-  <div class="demo-card">
+  <div class="demo-card" :class="stayFocus !== 'disabled' && 'stay-focus-element'">
     <slot></slot>
   </div>
 </template>
@@ -422,6 +426,16 @@
         }
       }
     }
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .toc-column {
+    display: none !important;
+  }
+
+  .doc-column {
+    width: 100% !important;
   }
 }
 </style>

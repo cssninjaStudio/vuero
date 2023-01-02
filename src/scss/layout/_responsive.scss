@@ -578,16 +578,6 @@ Responsive styles
   }
 }
 
-@media only screen and (max-width: 1023px) {
-  .toc-column {
-    display: none !important;
-  }
-
-  .doc-column {
-    width: 100% !important;
-  }
-}
-
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .mobile-navbar .navbar-item.is-notification .navbar-dropdown {
     width: 280px !important;

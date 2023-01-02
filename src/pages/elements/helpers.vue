@@ -239,6 +239,23 @@ useHead({
                       where <code>*</code> is a value between 70 and 100. Increments by 5.
                     </td>
                   </tr>
+
+                  <tr>
+                    <th scope="rowgroup" rowspan="2" class="category">
+                      <strong>Stay Focus</strong>
+                    </th>
+                    <td class="name">Container (<code>.stay-focus-container</code>)</td>
+                    <td class="description">
+                      Sets the stay focus container. Will blur all child
+                      <code>.stay-focus-element</code> except the hovered one.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="name">Element (<code>.stay-focus-element</code>)</td>
+                    <td class="description">
+                      Element that will be blured when user hover over the container.
+                    </td>
+                  </tr>
                 </tbody>
               </table>
             </div>

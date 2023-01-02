@@ -7,6 +7,17 @@ export type TocItem = {
   level: number
 }
 
+const stayFocus = useLocalStorage('disable-stay-focus', '')
+
+const stayFocusEnabled = computed({
+  get() {
+    return stayFocus.value !== 'disabled'
+  },
+  set(value) {
+    stayFocus.value = value ? '' : 'disabled'
+  },
+})
+
 const props = withDefaults(
   defineProps<{
     toc?: TocItem[]
@@ -68,6 +79,21 @@ onMounted(() => {
         >
           <span>Back To Top</span>
         </a>
+      </li>
+      <li>
+        <div class="stay-focus-mode">
+          <label
+            v-tooltip.rounded="'Blur the content when the mouse is over'"
+            for="toggle-stay-focus"
+            >Stay focus mode</label
+          >
+
+          <VField id="toggle-stay-focus" grouped>
+            <VControl>
+              <VSwitchSegment v-model="stayFocusEnabled" />
+            </VControl>
+          </VField>
+        </div>
       </li>
     </ul>
   </div>
@@ -147,6 +173,15 @@ a {
 .back-to-top {
   font-size: 0.75rem;
   text-transform: uppercase;
+}
+
+.stay-focus-mode {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1.25rem;
 }
 
 .is-dark {
