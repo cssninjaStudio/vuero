@@ -19,7 +19,7 @@ export interface VTabsProps {
 }
 
 const emit = defineEmits<{
-  (e: 'update:selected', value: string): void
+  (e: 'update:selected', value: any): void
 }>()
 const props = withDefaults(defineProps<VTabsProps>(), {
   selected: undefined,
