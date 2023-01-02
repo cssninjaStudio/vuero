@@ -117,7 +117,7 @@ const handleSignup = handleSubmit(async (values) => {
           :model-value="field?.value"
           color="green"
           trim-weeks
-          @update:modelValue="field?.handleChange"
+          @update:model-value="field?.handleChange"
         >
           <template #default="{ inputValue, inputEvents }">
             <input

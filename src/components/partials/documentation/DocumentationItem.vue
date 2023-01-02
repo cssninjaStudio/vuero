@@ -21,6 +21,7 @@ const props = withDefaults(
   }>(),
   {
     frontmatter: () => ({}),
+    sourceMeta: undefined,
   }
 )
 
