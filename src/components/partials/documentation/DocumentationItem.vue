@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import { version } from '../../../../package.json'
+import { useDarkmode } from '/@src/stores/darkmode'
 const slots = useSlots()
 const route = useRoute()
 
+const darkmode = useDarkmode()
 const hasCodeSample = computed(() => !!slots.code?.())
 const hasExample = computed(() => !!slots.example?.())
 const hasDefault = computed(() => !!slots.default?.())
@@ -49,6 +51,7 @@ const githubIssueUrl = computed(() => {
     `* Demo url:      https://vuero.cssninja.io${route.fullPath}`,
     `* Demo source:   [\`${props.sourceMeta.relativePath}\`](${sourceUrl})`,
     `* Version:       \`${version}\``,
+    `* Theme:         \`${darkmode.isDark ? 'dark' : 'light'}\``,
     ``,
   ].join('\n')
 
