@@ -100,11 +100,10 @@ watch(activeValue, (value) => {
                 toggle,
               }"
             >
-              <RouterLink
-                tabindex="0"
-                :to="tab.to ?? '#'"
-                @keydown.enter="toggle(tab.value)"
-                @click="toggle(tab.value)"
+              <a
+                :href="tab.to ?? '#'"
+                @keydown.prevent.enter="() => toggle(tab.value)"
+                @click.prevent="() => toggle(tab.value)"
               >
                 <VIcon v-if="tab.icon" :icon="tab.icon" />
                 <span>
@@ -120,7 +119,7 @@ watch(activeValue, (value) => {
                     {{ tab.label }}
                   </slot>
                 </span>
-              </RouterLink>
+              </a>
             </slot>
           </li>
           <li v-if="sliderClass" class="tab-naver"></li>
