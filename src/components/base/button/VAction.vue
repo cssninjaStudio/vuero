@@ -7,7 +7,6 @@ export interface VActionProps {
   dark?: VActionDark
   active?: boolean
   rounded?: boolean
-  hoverable?: boolean
   grey?: boolean
 }
 
@@ -25,7 +24,6 @@ const props = withDefaults(defineProps<VActionProps>(), {
       props.active && 'is-active',
       props.rounded && 'is-rounded',
       props.dark && `is-dark-bg-${props.dark}`,
-      props.hoverable && 'is-hoverable',
       props.grey && 'is-grey',
     ]"
   >
@@ -38,7 +36,6 @@ const props = withDefaults(defineProps<VActionProps>(), {
       props.active && 'is-active',
       props.rounded && 'is-rounded',
       props.dark && `is-dark-bg-${props.dark}`,
-      props.hoverable && 'is-hoverable',
       props.grey && 'is-grey',
     ]"
   >
@@ -60,9 +57,13 @@ const props = withDefaults(defineProps<VActionProps>(), {
     background: var(--white);
     color: var(--dark-text);
     border: 1px solid var(--placeholder);
-    transition: all 0.3s; // transition-all test
+    transition: border-color 0.3s; // transition-all test
     cursor: pointer;
     box-shadow: none !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
 
     &.is-rounded {
       border-radius: 500px;
@@ -75,21 +76,24 @@ const props = withDefaults(defineProps<VActionProps>(), {
       outline-color: var(--accessibility-focus-outline-color);
     }
 
+    &:hover,
     &:focus {
-      color: var(--dark-text) !important;
+      border-color: var(--primary);
+      box-shadow: var(--primary-box-shadow);
     }
 
-    &.is-hoverable {
-      &:hover {
-        border-color: var(--primary);
-        background: var(--primary);
-        color: var(--white);
-        box-shadow: var(--primary-box-shadow);
+    &:not(.is-active) {
+      &:focus {
+        color: var(--dark-text) !important;
       }
 
-      &:focus-visible {
-        outline-color: var(--primary);
+      &:active {
+        background: var(--smoke-white);
       }
+    }
+
+    &:focus-visible {
+      outline-color: var(--primary);
     }
 
     &.is-grey {
@@ -119,27 +123,19 @@ const props = withDefaults(defineProps<VActionProps>(), {
         background: var(--primary);
         border-color: var(--primary);
         color: var(--smoke-white);
+        text-shadow: 0 0 1px rgb(0 0 0 / 70%);
       }
 
       &:focus {
         color: var(--smoke-white) !important;
       }
 
-      &.is-hoverable {
-        &:hover {
-          border-color: var(--primary) !important;
-          background: var(--primary) !important;
-          box-shadow: var(--primary-box-shadow) !important;
-          color: var(--smoke-white) !important;
-          text-shadow: 0 0 1px rgb(0 0 0 / 70%) !important;
-        }
-      }
-
       &.is-active {
         background: var(--primary) !important;
         border-color: var(--primary) !important;
         box-shadow: var(--primary-box-shadow) !important;
-        color: var(--smoke-white) !important;
+        color: var(--dark-sidebar-dark-2) !important;
+        text-shadow: none;
       }
     }
   }
