@@ -53,7 +53,12 @@ useHead({
         <VMarkdownPreviewBaseDocumentation />
         <DocumentationDemoCard class="mt-4">
           <div class="card-inner" :class="{ 'is-scrolling': isScrolling }">
-            <VMarkdownPreview size="small" :source="demoMarkdown" />
+            <VMarkdownPreview
+              size="medium"
+              max-width="small"
+              :placeholder="{ height: '500px' }"
+              :source="demoMarkdown"
+            />
           </div>
         </DocumentationDemoCard>
 

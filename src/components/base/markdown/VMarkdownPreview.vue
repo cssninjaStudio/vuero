@@ -1,8 +1,11 @@
 <script lang="ts">
 import type { Lang, Theme } from 'shiki-es'
 import type { Processor } from 'unified'
-import type { PropType } from 'vue'
+import { h, type PropType } from 'vue'
 import { useDarkmode } from '/@src/stores/darkmode'
+import VPlaceload, {
+  type VPlaceloadProps,
+} from '/@src/components/base/loader/VPlaceload.vue'
 
 async function loadModules() {
   const [
@@ -58,8 +61,12 @@ export default defineComponent({
       default: '',
     },
     size: {
-      type: String as PropType<'full' | 'medium' | 'small'>,
-      default: 'full',
+      type: String as PropType<undefined | 'large' | 'medium' | 'small'>,
+      default: undefined,
+    },
+    maxWidth: {
+      type: String as PropType<undefined | 'fullwidth' | 'medium' | 'small'>,
+      default: undefined,
     },
     shiki: {
       type: Object as PropType<{
@@ -79,10 +86,18 @@ export default defineComponent({
         langs: ['vue', 'vue-html', 'typescript', 'bash', 'scss'],
       }),
     },
+    placeholder: {
+      type: Object as PropType<VPlaceloadProps>,
+      default: () => ({
+        height: '100px',
+      }),
+    },
   },
   setup(props) {
     const processor = ref<Processor>()
     const darkmode = useDarkmode()
+    const rendered = ref(false)
+    const html = ref('')
 
     watchEffect(async () => {
       const isDark = darkmode.isDark
@@ -156,45 +171,64 @@ export default defineComponent({
         .use(rehypeStringify)
     })
 
-    const html = computed(() => {
-      if (!processor.value) return ''
-      if (!props.source) return ''
+    watchEffect(() => {
+      const _source = unref(props.source)
+      const _processor = unref(processor)
+      if (!_processor) return
+      if (!_source) return
 
-      return processor.value.processSync(props.source).toString()
+      const result = _processor.processSync(_source).toString()
+      rendered.value = true
+
+      html.value = result
     })
 
     const classes = computed(() => {
       return {
         'markdown content': true,
-        'is-markdown-full': props.size === 'full',
-        'is-markdown-medium': props.size === 'medium',
-        'is-markdown-small': props.size === 'small',
+        'is-max-width-fullwidth': props.maxWidth === 'fullwidth',
+        'is-max-width-medium': props.maxWidth === 'medium',
+        'is-max-width-small': props.maxWidth === 'small',
+        'is-small': props.size === 'small',
+        'is-medium': props.size === 'medium',
+        'is-large': props.size === 'large',
       }
     })
 
-    return () =>
-      h('div', {
+    return () => {
+      if (!rendered.value) {
+        return h(VPlaceload, {
+          ...props.placeholder,
+          class: {
+            'is-max-width-fullwidth': props.maxWidth === 'fullwidth',
+            'is-max-width-medium': props.maxWidth === 'medium',
+            'is-max-width-small': props.maxWidth === 'small',
+          },
+        })
+      }
+      return h('div', {
         class: classes.value,
         innerHTML: html.value,
       })
+    }
   },
 })
 </script>
 
 <style lang="scss" scoped>
+.is-max-width-full {
+  max-width: 100%;
+}
+
+.is-max-width-medium {
+  max-width: 48rem;
+}
+
+.is-max-width-small {
+  max-width: 42rem;
+}
+
 .markdown {
-  &.is-markdown-full {
-    max-width: 100%;
-  }
-
-  &.is-markdown-medium {
-    max-width: 48rem;
-  }
-
-  &.is-markdown-small {
-    max-width: 42rem;
-  }
-
   :deep(a) {
     color: var(--primary);
   }
