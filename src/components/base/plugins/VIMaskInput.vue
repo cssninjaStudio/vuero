@@ -2,6 +2,7 @@
 import type { InputMask, AnyMaskedOptions } from 'imask'
 
 import IMask from 'imask'
+import { type PropType } from 'vue'
 
 export default defineComponent({
   props: {

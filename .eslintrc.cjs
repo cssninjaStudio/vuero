@@ -21,6 +21,10 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': ['error'],
+    '@typescript-eslint/consistent-type-imports': [
+      'error',
+      { prefer: 'type-imports', fixStyle: 'inline-type-imports' },
+    ],
   },
   overrides: [
     {

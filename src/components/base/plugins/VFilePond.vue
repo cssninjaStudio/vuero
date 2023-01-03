@@ -14,6 +14,7 @@ import FilePondPluginImageTransform from 'filepond-plugin-image-transform'
 import 'filepond/dist/filepond.min.css'
 import 'filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css'
 import 'filepond-plugin-image-edit/dist/filepond-plugin-image-edit.min.css'
+import { type PropType, type ComponentObjectPropsOptions, type EmitsOptions } from 'vue'
 
 type FilePondSize = undefined | 'small' | 'tiny'
 
@@ -55,7 +56,7 @@ const getNativeConstructorFromType = (type: keyof typeof types) => {
 const _OptionTypes = FilePond.OptionTypes as Record<string, keyof typeof types>
 
 // Activated props
-const propsOptions: ComponentPropsOptions = {}
+const propsOptions: ComponentObjectPropsOptions = {}
 
 // Events that need to be mapped to emitters
 const eventNames: EmitsOptions = []

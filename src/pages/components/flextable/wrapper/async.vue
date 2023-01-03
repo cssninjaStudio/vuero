@@ -219,7 +219,7 @@ const fetchData: VFlexTableWrapperDataResolver = async ({
   // our backend send us the count in the headers,
   // but we can also get it from another request
   if ('x-total-count' in headers) {
-    total.value = parseInt(headers['x-total-count'])
+    total.value = parseInt(headers['x-total-count'] ?? '0')
   }
 
   // the return of the function must be an array

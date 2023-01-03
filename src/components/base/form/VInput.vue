@@ -54,3 +54,9 @@ const classes = computed(() => {
     @blur="vFieldContext.field?.handleBlur"
   />
 </template>
+
+<style lang="scss" scoped>
+.input {
+  height: 38px;
+}
+</style>

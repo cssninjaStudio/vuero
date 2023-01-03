@@ -34,7 +34,7 @@ onMounted(() => {
   interval = setInterval(() => {
     values.value.shift()
     values.value.push(getRandom())
-  }, 1000)
+  }, 1000) as unknown as number
 })
 
 onUnmounted(() => {

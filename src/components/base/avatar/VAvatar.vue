@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { onceImageErrored } from '/@src/utils/via-placeholder'
-
 export type VAvatarSize = 'small' | 'medium' | 'large' | 'big' | 'xl'
 export type VAvatarColor =
   | 'primary'
@@ -39,6 +37,10 @@ const props = withDefaults(defineProps<VAvatarProps>(), {
   color: undefined,
   dotColor: undefined,
 })
+const onceImageErroredHandler = (event: Event) => {
+  const target = event.target as HTMLImageElement
+  target.src = props.placeholder
+}
 </script>
 
 <template>
@@ -58,7 +60,7 @@ const props = withDefaults(defineProps<VAvatarProps>(), {
         :class="[props.squared && 'is-squared', props.pictureDark && 'light-image']"
         :src="props.picture"
         alt=""
-        @error.once="onceImageErrored(150)"
+        @error.once="onceImageErroredHandler"
       />
       <span
         v-else
@@ -73,7 +75,7 @@ const props = withDefaults(defineProps<VAvatarProps>(), {
         :class="[props.squared && 'is-squared']"
         :src="props.pictureDark"
         alt=""
-        @error.once="onceImageErrored(150)"
+        @error.once="onceImageErroredHandler"
       />
     </slot>
 
@@ -83,7 +85,7 @@ const props = withDefaults(defineProps<VAvatarProps>(), {
         class="badge"
         :src="props.badge"
         alt=""
-        @error.once="onceImageErrored(150)"
+        @error.once="onceImageErroredHandler"
       />
     </slot>
   </div>
@@ -576,6 +578,70 @@ const props = withDefaults(defineProps<VAvatarProps>(), {
   }
 }
 
+.avatar-stack {
+  display: flex;
+
+  .v-avatar {
+    border-radius: var(--radius-rounded);
+
+    &.is-small {
+      border-radius: var(--radius-rounded);
+
+      &:not(:first-child) {
+        $var: 12;
+
+        @for $i from 1 through 99 {
+          &:nth-child(#{$i}) {
+            margin-left: -#{$var}px;
+          }
+        }
+      }
+
+      img,
+      .is-fake,
+      .is-more .inner {
+        border: 2px solid var(--white);
+      }
+    }
+
+    &.is-medium {
+      border-radius: var(--radius-rounded);
+
+      &:not(:first-child) {
+        $var: 16;
+
+        @for $i from 1 through 99 {
+          &:nth-child(#{$i}) {
+            margin-left: -#{$var}px;
+          }
+        }
+      }
+
+      img,
+      .is-fake,
+      .is-more .inner {
+        border: 4px solid var(--white);
+      }
+    }
+
+    &:not(:first-child) {
+      $var: 14;
+
+      @for $i from 1 through 99 {
+        &:nth-child(#{$i}) {
+          margin-left: -#{$var}px;
+        }
+      }
+    }
+
+    img,
+    .is-fake,
+    .is-more .inner {
+      border: 2px solid var(--white);
+    }
+  }
+}
+
 .is-dark {
   .v-avatar {
     .avatar {
@@ -689,70 +755,6 @@ const props = withDefaults(defineProps<VAvatarProps>(), {
       &.is-fake {
         border-color: var(--dark-sidebar-light-6);
       }
-    }
-  }
-}
-
-.avatar-stack {
-  display: flex;
-
-  .v-avatar {
-    border-radius: var(--radius-rounded);
-
-    &.is-small {
-      border-radius: var(--radius-rounded);
-
-      &:not(:first-child) {
-        $var: 12;
-
-        @for $i from 1 through 99 {
-          &:nth-child(#{$i}) {
-            margin-left: -#{$var}px;
-          }
-        }
-      }
-
-      img,
-      .is-fake,
-      .is-more .inner {
-        border: 2px solid var(--white);
-      }
-    }
-
-    &.is-medium {
-      border-radius: var(--radius-rounded);
-
-      &:not(:first-child) {
-        $var: 16;
-
-        @for $i from 1 through 99 {
-          &:nth-child(#{$i}) {
-            margin-left: -#{$var}px;
-          }
-        }
-      }
-
-      img,
-      .is-fake,
-      .is-more .inner {
-        border: 4px solid var(--white);
-      }
-    }
-
-    &:not(:first-child) {
-      $var: 14;
-
-      @for $i from 1 through 99 {
-        &:nth-child(#{$i}) {
-          margin-left: -#{$var}px;
-        }
-      }
-    }
-
-    img,
-    .is-fake,
-    .is-more .inner {
-      border: 2px solid var(--white);
     }
   }
 }

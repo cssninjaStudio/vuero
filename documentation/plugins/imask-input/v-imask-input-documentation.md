@@ -42,7 +42,7 @@ const value = ref('')
 
 <VField v-slot="{ id }">
   <VControl>
-    <VIMaskInput
+    <v-i-mask-input
       :id="id"
       v-model="frontmatter.state.value"
       autocomplete="cc-csc"

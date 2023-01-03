@@ -1,5 +1,5 @@
 import { definePlugin } from '/@src/app'
-import * as NProgress from 'nprogress'
+import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
 
 export default definePlugin(({ router }) => {

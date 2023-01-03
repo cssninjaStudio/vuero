@@ -1,4 +1,6 @@
 <script lang="ts">
+import { type PropType } from 'vue'
+
 export type VIconButtonDark = '1' | '2' | '3' | '4' | '5' | '6'
 export type VIconButtonColor =
   | 'primary'

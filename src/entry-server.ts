@@ -3,7 +3,7 @@ import { renderToString } from 'vue/server-renderer'
 import { renderHeadToString } from '@vueuse/head'
 
 import { createApp } from '/@src/app'
-import { IncomingMessage, ServerResponse } from 'node:http'
+import { type IncomingMessage, type ServerResponse } from 'node:http'
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export async function init(req: IncomingMessage, res: ServerResponse) {
@@ -25,7 +25,7 @@ export async function render(url: string, manifest: any, initialState: any = {})
     found: true,
   }
   const appHtml = await renderToString(app, ctx)
-  const { headTags, htmlAttrs, bodyAttrs } = renderHeadToString(head)
+  const { headTags, htmlAttrs, bodyAttrs } = await renderHeadToString(head)
 
   initialState.pinia = pinia?.state.value
 

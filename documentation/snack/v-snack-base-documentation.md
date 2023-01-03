@@ -31,21 +31,21 @@ an image inside the component.
 <!--example-->
 
 <div class="snacks">
-    <VSnack title="Support" image="/demo/photos/misc/buoy.jpg">
-        <i class="iconify" data-icon="feather:x"></i>
-    </VSnack>
-    <VSnack title="Metamovies" image="/images/icons/logos/metamovies.svg">
-        <i class="iconify" data-icon="feather:x"></i>
-    </VSnack>
-    <VSnack title="Corporate" image="/demo/avatars/7.jpg">
-        <i class="iconify" data-icon="feather:x"></i>
-    </VSnack>
-    <VSnack title="English" image="/images/icons/flags/united-states-of-america.svg">
-        <i class="iconify" data-icon="feather:x"></i>
-    </VSnack>
-    <VSnack title="Slicer" image="/images/icons/logos/slicer.svg">
-        <i class="iconify" data-icon="feather:x"></i>
-    </VSnack>
+  <VSnack title="Support" image="/demo/photos/misc/buoy.jpg">
+    <i class="iconify" data-icon="feather:x"></i>
+  </VSnack>
+  <VSnack title="Metamovies" image="/images/icons/logos/metamovies.svg">
+    <i class="iconify" data-icon="feather:x"></i>
+  </VSnack>
+  <VSnack title="Corporate" image="/demo/avatars/7.jpg">
+    <i class="iconify" data-icon="feather:x"></i>
+  </VSnack>
+  <VSnack title="English" image="/images/icons/flags/united-states-of-america.svg">
+    <i class="iconify" data-icon="feather:x"></i>
+  </VSnack>
+  <VSnack title="Slicer" image="/images/icons/logos/slicer.svg">
+    <i class="iconify" data-icon="feather:x"></i>
+  </VSnack>
 </div>
 
 <!--/example-->

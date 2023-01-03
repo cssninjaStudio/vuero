@@ -27,7 +27,7 @@ const selectedSlug = computed(() => {
   }
 })
 
-const layoutComponent = (slug: string) => {
+const layoutComponent = (slug?: string) => {
   switch (slug) {
     case 'dropdown':
       return 'NavbarDropdownLayout'

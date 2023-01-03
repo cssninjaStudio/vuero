@@ -1,5 +1,5 @@
 <script lang="ts">
-import { Transition } from 'vue'
+import { type PropType, Transition } from 'vue'
 
 export default defineComponent({
   props: {

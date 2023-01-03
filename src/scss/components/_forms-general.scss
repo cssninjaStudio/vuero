@@ -277,6 +277,14 @@ label[for] {
 .select {
   width: 100%;
 
+  &:not(.is-multiple) {
+    &:not(.is-loading) {
+      &::after {
+        border-color: var(--primary);
+      }
+    }
+  }
+
   &.is-loading {
     &::after {
       right: 0.75em;

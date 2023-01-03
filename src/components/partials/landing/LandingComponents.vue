@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { elements, components, forms, plugins } from '/@src/data/landing/components/'
+import { elements, components, forms, plugins } from '/@src/data/landing/components'
 
 const props = withDefaults(
   defineProps<{
@@ -19,7 +19,7 @@ const props = withDefaults(
   >
     <div class="columns is-multiline">
       <div v-for="item in elements" :key="item.id" class="column is-3">
-        <RouterLink :to="{ name: item.link }" class="component-box">
+        <RouterLink :to="item.link" class="component-box">
           <div class="component">
             <img class="light-image-l" :src="item.media.light" alt="" loading="lazy" />
             <img class="dark-image-l" :src="item.media.dark" alt="" loading="lazy" />
@@ -39,7 +39,7 @@ const props = withDefaults(
     <div class="columns is-multiline">
       <!--Item-->
       <div v-for="item in components" :key="item.id" class="column is-3">
-        <RouterLink :to="{ name: item.link }" class="component-box">
+        <RouterLink :to="item.link" class="component-box">
           <div class="component">
             <img class="light-image-l" :src="item.media.light" alt="" loading="lazy" />
             <img class="dark-image-l" :src="item.media.dark" alt="" loading="lazy" />
@@ -58,7 +58,7 @@ const props = withDefaults(
   >
     <div class="columns is-multiline">
       <div v-for="item in forms" :key="item.id" class="column is-3">
-        <RouterLink :to="{ name: item.link }" class="component-box">
+        <RouterLink :to="item.link" class="component-box">
           <div class="component">
             <img class="light-image-l" :src="item.media.light" alt="" loading="lazy" />
             <img class="dark-image-l" :src="item.media.dark" alt="" loading="lazy" />
@@ -77,7 +77,7 @@ const props = withDefaults(
   >
     <div class="columns is-multiline">
       <div v-for="item in plugins" :key="item.id" class="column is-3">
-        <RouterLink :to="{ name: item.link }" class="component-box">
+        <RouterLink :to="item.link" class="component-box">
           <div class="component">
             <img class="light-image-l" :src="item.media.light" alt="" loading="lazy" />
             <img class="dark-image-l" :src="item.media.dark" alt="" loading="lazy" />

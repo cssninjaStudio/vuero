@@ -4,6 +4,7 @@ import auth from '/@src/data/landing/auth.json'
 import minimal from '/@src/data/landing/minimal.json'
 import starters from '/@src/data/landing/starters.json'
 import navbar from '/@src/data/landing/navbar.json'
+import { type ComputedRef, type Ref } from 'vue'
 
 export interface DemoItem {
   name: string

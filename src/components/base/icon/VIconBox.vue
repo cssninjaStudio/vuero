@@ -461,6 +461,8 @@ const props = withDefaults(defineProps<VIconProps>(), {
 
 .is-dark {
   .v-icon {
+    background-color: var(--dark-sidebar-light-2);
+
     &.is-primary {
       background: var(--primary);
 

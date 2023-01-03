@@ -12,12 +12,12 @@ export type VAnimatedCheckboxColor =
   | 'purple'
 
 export interface VAnimatedCheckboxEmits {
-  (e: 'update:modelValue', value: (string | number)[]): void
+  (e: 'update:modelValue', value: any[]): void
 }
 export interface VAnimatedCheckboxProps {
-  value?: string | number
+  value?: any
   color?: VAnimatedCheckboxColor
-  modelValue?: (string | number)[]
+  modelValue?: any[]
 }
 
 const emit = defineEmits<VAnimatedCheckboxEmits>()
