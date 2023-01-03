@@ -43,9 +43,9 @@ const markdown = ref('## Hello Vuero\n\nThis is a **Markdown** preview content.'
   <VFlex column-gap="1rem">
     <VFlexItem flex-grow="1">
       <VField>
-        <VController>
+        <VControl>
           <VTextarea v-model="markdown" autogrow />
-        </VController>
+        </VControl>
       </VField>
     </VFlexItem>
 
@@ -63,9 +63,9 @@ const markdown = ref('## Hello Vuero\n\nThis is a **Markdown** preview content.'
 <VFlex column-gap="1rem">
   <VFlexItem flex-grow="1">
     <VField>
-      <VController>
+      <VControl>
         <VTextarea v-model="frontmatter.state.markdown" autogrow />
-      </VController>
+      </VControl>
     </VField>
   </VFlexItem>
   <VFlexItem flex-grow="1">

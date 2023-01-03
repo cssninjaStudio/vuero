@@ -84,6 +84,20 @@
     }
   },
   {
+    "name": "Roadmap",
+    "category": "UTILITY",
+    "displayOrder": 65,
+    "new": true,
+    "route": {
+      "name": "roadmap",
+      "path": "/roadmap"
+    },
+    "screenshot": {
+      "light": "/images/screenshots/minimal/roadmap-light.webp",
+      "dark": "/images/screenshots/minimal/roadmap-dark.webp"
+    }
+  },
+  {
     "name": "Wizard V1 (step 1)",
     "category": "APP",
     "displayOrder": 50,

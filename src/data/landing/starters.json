@@ -213,7 +213,7 @@
     "name": "Regular Sideblock",
     "category": "TEMPLATES",
     "displayOrder": 150,
-    "new": true,
+    "new": false,
     "route": {
       "name": "starters-sideblock-blank-page-1",
       "path": "/starters/sideblock-blank-page-1"
@@ -227,7 +227,7 @@
     "name": "Curved Sideblock",
     "category": "TEMPLATES",
     "displayOrder": 150,
-    "new": true,
+    "new": false,
     "route": {
       "name": "starters-sideblock-blank-page-2",
       "path": "/starters/sideblock-blank-page-2"
@@ -241,7 +241,7 @@
     "name": "Colored Sideblock",
     "category": "TEMPLATES",
     "displayOrder": 160,
-    "new": true,
+    "new": false,
     "route": {
       "name": "starters-sideblock-blank-page-3",
       "path": "/starters/sideblock-blank-page-3"
@@ -255,7 +255,7 @@
     "name": "Curved Colored Sideblock",
     "category": "TEMPLATES",
     "displayOrder": 170,
-    "new": true,
+    "new": false,
     "route": {
       "name": "starters-sideblock-blank-page-4",
       "path": "/starters/sideblock-blank-page-4"

@@ -11,8 +11,8 @@ path="${base}cypress/screenshots/"
 output="${base}public/images/screenshots/"
 
 quality=100
-width=368
-height=206
+width=736
+height=412
 
 for layout in sidebar auth minimal navbar starters; do
   echo "${layout}"

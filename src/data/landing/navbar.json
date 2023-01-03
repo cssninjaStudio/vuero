@@ -3,7 +3,7 @@
     "name": "Maps V1",
     "category": "APP",
     "displayOrder": 211,
-    "new": true,
+    "new": false,
     "route": {
       "name": "navbar-maps-1",
       "path": "/navbar/maps-1"
@@ -17,7 +17,7 @@
     "name": "Maps V2",
     "category": "APP",
     "displayOrder": 212,
-    "new": true,
+    "new": false,
     "route": {
       "name": "navbar-maps-2",
       "path": "/navbar/maps-2"
@@ -773,7 +773,7 @@
     "name": "Placeload List",
     "category": "UTILITY",
     "displayOrder": 750,
-    "new": true,
+    "new": false,
     "route": {
       "name": "navbar-layouts-placeload-1",
       "path": "/navbar/layouts/placeload-1"
@@ -787,7 +787,7 @@
     "name": "Placeload Table",
     "category": "UTILITY",
     "displayOrder": 760,
-    "new": true,
+    "new": false,
     "route": {
       "name": "navbar-layouts-placeload-2",
       "path": "/navbar/layouts/placeload-2"
@@ -801,7 +801,7 @@
     "name": "Placeload Grid",
     "category": "UTILITY",
     "displayOrder": 770,
-    "new": true,
+    "new": false,
     "route": {
       "name": "navbar-layouts-placeload-3",
       "path": "/navbar/layouts/placeload-3"
@@ -815,7 +815,7 @@
     "name": "Placeload Tiles",
     "category": "UTILITY",
     "displayOrder": 780,
-    "new": true,
+    "new": false,
     "route": {
       "name": "navbar-layouts-placeload-4",
       "path": "/navbar/layouts/placeload-4"
@@ -1109,7 +1109,7 @@
     "name": "Soccer league",
     "category": "DASHBOARD",
     "displayOrder": 181,
-    "new": true,
+    "new": false,
     "route": {
       "name": "navbar-dashboards-soccer",
       "path": "/navbar/dashboards/soccer"

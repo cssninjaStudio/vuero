@@ -33,7 +33,7 @@ export const useChat = defineStore('chat', () => {
   const loading = ref(false)
 
   const selectedConversation = computed(() => {
-    const conversation = conversations.value.find(
+    const conversation = conversations.value?.find(
       (item) => item.id === selectedConversationId.value
     )
 
@@ -51,7 +51,7 @@ export const useChat = defineStore('chat', () => {
 
     try {
       const response = await fetchConversations(api, start, limit)
-      conversations.value = response.conversations
+      conversations.value = response.conversations ?? []
     } finally {
       loading.value = false
     }
