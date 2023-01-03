@@ -1,5 +1,5 @@
 // line.ts
-import { PeityOptions } from './types'
+import { type PeityOptions } from './types'
 import { createSvgElement } from './createSvgElement'
 
 export function drawLine(el: HTMLElement, data: number[], opts: PeityOptions) {

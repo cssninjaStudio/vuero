@@ -2,7 +2,7 @@
 import type { VAvatarProps, VAvatarColor } from '/@src/components/base/avatar/VAvatar.vue'
 import { usePanels } from '/@src/stores/panels'
 import { popovers } from '/@src/data/users/userPopovers'
-import { UserPopover } from '/@src/models/users'
+import { type UserPopover } from '/@src/models/users'
 
 const panels = usePanels()
 const filter = ref('')

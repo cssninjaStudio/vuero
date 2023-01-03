@@ -3194,6 +3194,10 @@ code {
   background: rgb(65, 185, 131);
 }
 
+.select:not(.is-multiple):not(.is-loading)::after {
+  border-color: rgb(65, 185, 131);
+}
+
 .field.has-textarea-addon .is-textarea-addon {
   background: rgb(255, 255, 255);
 }
@@ -3857,6 +3861,7 @@ code {
 
 .ck-editor {
   --ck-color-base-active: rgb(65, 185, 131);
+  --ck-color-button-on-color: rgb(65, 185, 131);
   --ck-color-focus-border: rgb(65, 185, 131);
 }
 

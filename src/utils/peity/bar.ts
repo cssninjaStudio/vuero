@@ -1,5 +1,5 @@
 // bar.ts
-import { PeityOptions } from './types'
+import { type PeityOptions } from './types'
 import { createSvgElement } from './createSvgElement'
 
 export function drawBar(el: HTMLElement, data: number[], opts: PeityOptions) {

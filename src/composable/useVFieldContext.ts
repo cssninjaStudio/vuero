@@ -1,6 +1,6 @@
 import type { MaybeRef } from '@vueuse/core'
-import { ref, unref, provide, inject, InjectionKey } from 'vue'
-import { useField, FieldContext } from 'vee-validate'
+import { ref, unref, provide, inject, type InjectionKey } from 'vue'
+import { useField, type FieldContext } from 'vee-validate'
 import { defu } from 'defu'
 
 export type VFieldContext = ReturnType<typeof createVFieldContext>
