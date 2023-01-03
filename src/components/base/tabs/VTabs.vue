@@ -27,7 +27,7 @@ const props = withDefaults(defineProps<VTabsProps>(), {
   align: undefined,
 })
 
-const activeValue = ref(props.selected)
+const activeValue = ref(props.selected || props.tabs?.[0]?.value)
 const sliderClass = computed(() => {
   if (!props.slider) {
     return ''
@@ -63,7 +63,7 @@ function toggle(value: string) {
 watch(
   () => props.selected,
   (value) => {
-    activeValue.value = value
+    activeValue.value = value ?? ''
   }
 )
 
