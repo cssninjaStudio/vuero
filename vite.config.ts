@@ -89,6 +89,8 @@ export default defineConfig({
       'vue3-apexcharts',
       'vue-tippy',
       'vue-i18n',
+      'vue-router',
+      'unplugin-vue-router/runtime',
       'simplebar',
       'simple-datatables',
       'tiny-slider/src/tiny-slider',
@@ -143,8 +145,8 @@ export default defineConfig({
      * @see https://github.com/intlify/bundle-tools/tree/main/packages/vite-plugin-vue-i18n
      */
     VueI18nPlugin({
-      // @ts-ignore
       include: resolve(dirname(fileURLToPath(import.meta.url)), './src/locales/**'),
+      fullInstall: false,
     }),
 
     /**

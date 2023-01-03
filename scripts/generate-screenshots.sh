@@ -15,6 +15,6 @@ done
 
 set -xe
 
-# CYPRESS_SCREENSHOTS=true pnpm cypress run --e2e --browser chrome
-node -r jiti/register ./scripts/create-screenshot-data.ts
+CYPRESS_SCREENSHOTS=true pnpm cypress run --e2e --browser chrome
+npx jiti ./scripts/create-screenshot-data.ts
 ./scripts/convert-screenshot-webp.sh

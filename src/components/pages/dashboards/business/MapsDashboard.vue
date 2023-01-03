@@ -1,18 +1,11 @@
-<script lang="ts">
-import 'mapbox-gl/src/css/mapbox-gl.css'
-import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css'
-</script>
-
 <script setup lang="ts">
-import mapboxgl from 'mapbox-gl'
-import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.min.js'
+import { type Map, Popup } from 'mapbox-gl'
 import { useThemeColors } from '/@src/composable/useThemeColors'
 import { useDarkmode } from '/@src/stores/darkmode'
+import 'mapbox-gl/src/css/mapbox-gl.css'
+import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css'
 
 const themeColors = useThemeColors()
-
-// You can set the VITE_MAPBOX_ACCESS_TOKEN inside .env file
-mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN as string
 
 const props = defineProps<{
   reversed?: boolean
@@ -25,8 +18,8 @@ const selectedFeatureName = ref('')
 const mapElement = shallowRef<HTMLElement>()
 const geocoderElement = shallowRef<HTMLElement>()
 const popupElement = shallowRef<HTMLElement>()
-const map = shallowRef<mapboxgl.Map>()
-const popup = shallowRef<mapboxgl.Popup>()
+const map = shallowRef<Map>()
+const popup = shallowRef<Popup>()
 const geocoder = shallowRef<any>()
 
 const locations = {
@@ -186,7 +179,7 @@ const locations = {
       },
     },
   ],
-}
+} as const
 
 function loadLayers() {
   if (!map.value) {
@@ -198,7 +191,6 @@ function loadLayers() {
     return
   }
 
-  console.log('loadLayers?')
   map.value.addSource('places', {
     type: 'geojson',
     data: locations as any,
@@ -249,38 +241,47 @@ function selectFeature(feature: any) {
 }
 
 onMounted(() => {
-  if (!mapElement.value || !geocoderElement.value) {
-    return
-  }
-
-  map.value = new mapboxgl.Map({
-    container: mapElement.value,
-    style: darkmode.isDark
-      ? 'mapbox://styles/mapbox/dark-v10'
-      : 'mapbox://styles/mapbox/light-v10',
-    center: [-77.04, 38.907],
-    zoom: 12,
-  })
-
-  geocoder.value = new MapboxGeocoder({
-    accessToken: mapboxgl.accessToken,
-    mapboxgl,
-    marker: true,
-  })
-
-  map.value.on('style.load', () => {
-    const loadingStyles = () => {
-      if (!map.value?.isStyleLoaded()) {
-        setTimeout(loadingStyles, 1500)
-        return
-      }
-
-      loadLayers()
+  Promise.all([
+    import('mapbox-gl').then((m) => m.default),
+    import('@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.min.js').then(
+      (m) => m.default
+    ),
+  ]).then(([mapboxgl, MapboxGeocoder]) => {
+    if (!mapElement.value || !geocoderElement.value) {
+      return
     }
-    loadingStyles()
-  })
+    // You can set the VITE_MAPBOX_ACCESS_TOKEN inside .env file
+    mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN as string
 
-  geocoderElement.value.appendChild(geocoder.value.onAdd(map.value))
+    map.value = new mapboxgl.Map({
+      container: mapElement.value,
+      style: darkmode.isDark
+        ? 'mapbox://styles/mapbox/dark-v10'
+        : 'mapbox://styles/mapbox/light-v10',
+      center: [-77.04, 38.907],
+      zoom: 12,
+    })
+
+    geocoder.value = new MapboxGeocoder({
+      accessToken: mapboxgl.accessToken,
+      mapboxgl,
+      marker: true,
+    })
+
+    map.value.on('style.load', () => {
+      const loadingStyles = () => {
+        if (!map.value?.isStyleLoaded()) {
+          setTimeout(loadingStyles, 1500)
+          return
+        }
+
+        loadLayers()
+      }
+      loadingStyles()
+    })
+
+    geocoderElement.value.appendChild(geocoder.value.onAdd(map.value))
+  })
 })
 
 watchPostEffect(() => {
@@ -318,7 +319,7 @@ watchPostEffect(() => {
     popup.value.remove()
   }
 
-  popup.value = new mapboxgl.Popup()
+  popup.value = new Popup()
     .on('open', () => {
       selectedFeatureName.value = name
     })

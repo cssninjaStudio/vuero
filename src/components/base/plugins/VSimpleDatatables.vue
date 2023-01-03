@@ -1,9 +1,6 @@
-<script lang="ts">
-import 'simple-datatables/src/style.css'
-</script>
-
 <script setup lang="ts">
 import { DataTable } from 'simple-datatables'
+import 'simple-datatables/dist/style.css'
 
 export interface VSimpleDatatablesProps {
   options?: any
@@ -33,13 +30,13 @@ const emit = defineEmits([
   'search',
 ])
 
-const onFocus = (event: Event) => {
+const onFocus = () => {
   if (!hasFocus.value) {
     hasFocus.value = true
   }
 }
 
-const onBlur = (event: Event) => {
+const onBlur = () => {
   if (hasFocus.value) {
     hasFocus.value = false
   }

@@ -35,7 +35,8 @@
     "components-global.d.ts",
     "src/**/*.js",
     "src/**/*.ts",
-    "src/**/*.vue"
+    "src/**/*.vue",
+    "*.config.ts"
   ],
   "exclude": ["bulma-colors.ts"]
 }

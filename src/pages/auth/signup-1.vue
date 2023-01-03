@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { TinySliderInstance } from 'tiny-slider/src/tiny-slider'
-import { tns } from 'tiny-slider/src/tiny-slider'
 import { useHead } from '@vueuse/head'
 
 import { onceImageErrored } from '/@src/utils/via-placeholder'
@@ -67,22 +66,24 @@ useHead({
 
 onMounted(() => {
   if (sliderElement.value) {
-    slider = tns({
-      container: sliderElement.value,
-      controls: false,
-      nav: false,
-      mouseDrag: true,
-      startIndex: 2,
-      fixedWidth: 100,
-      gutter: 40,
-      slideBy: 1,
-      swipeAngle: false,
-      center: false,
-      loop: true,
-      edgePadding: 325,
+    import('tiny-slider/src/tiny-slider').then(({ tns }) => {
+      slider = tns({
+        container: sliderElement.value,
+        controls: false,
+        nav: false,
+        mouseDrag: true,
+        startIndex: 2,
+        fixedWidth: 100,
+        gutter: 40,
+        slideBy: 1,
+        swipeAngle: false,
+        center: false,
+        loop: true,
+        edgePadding: 325,
+      })
+      slider.events.on('indexChanged', onAvatarChanged)
+      onAvatarChanged(slider.getInfo())
     })
-    slider.events.on('indexChanged', onAvatarChanged)
-    onAvatarChanged(slider.getInfo())
   }
 })
 

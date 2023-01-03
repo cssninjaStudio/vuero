@@ -8,6 +8,9 @@ const root = process.cwd()
 const isTest = process.env.NODE_ENV === 'test' || !!process.env.VITE_TEST_BUILD
 const isProd = process.env.NODE_ENV === 'production'
 
+// prevent non-ready SSR dependencies from throwing errors
+globalThis.__VUE_PROD_DEVTOOLS__ = false
+
 async function createServer() {
   let vite: ViteDevServer
   const app = createApp({
@@ -76,8 +79,8 @@ async function createServer() {
           console.log('transform done')
         } else {
           template = indexProd
-          render = require('./dist/server/entry-server.mjs').render
-          init = require('./dist/server/entry-server.mjs').init
+          render = require('./dist/server/entry-server.js').render
+          init = require('./dist/server/entry-server.js').init
         }
 
         init(req, res)
@@ -148,4 +151,18 @@ if (!isTest) {
       console.error(error)
       process.exit(1)
     })
+
+  if (!isProd) {
+    process.on('unhandledRejection', (err) =>
+      console.error('[dev] [unhandledRejection]', err)
+    )
+    process.on('uncaughtException', (err) =>
+      console.error('[dev] [uncaughtException]', err)
+    )
+  } else {
+    process.on('unhandledRejection', (err) =>
+      console.error('[unhandledRejection] ' + err)
+    )
+    process.on('uncaughtException', (err) => console.error('[uncaughtException] ' + err))
+  }
 }

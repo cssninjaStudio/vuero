@@ -1,12 +1,12 @@
 declare module '*.md' {
-  import { defineComponent } from 'vue'
+  import type { defineComponent } from 'vue'
   const Component: ReturnType<typeof defineComponent>
   export default Component
 }
 
 // this is a temporary fix for the alpha.6 v-calendar version
 declare module 'v-calendar' {
-  import { DefineComponent } from 'vue'
+  import type { DefineComponent } from 'vue'
   export const SetupCalendar: any
   export const Calendar: DefineComponent
   export const DatePicker: DefineComponent
@@ -15,7 +15,6 @@ declare module 'v-calendar' {
 }
 
 declare module 'vue3-apexcharts'
-declare module 'vue-tippy'
 declare module 'simplebar-vue'
 declare module '@vueform/multiselect'
 declare module '@vueform/slider'

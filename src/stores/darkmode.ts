@@ -23,12 +23,14 @@ export const initDarkmode = () => {
    * watchEffect callbacks will be executed each time used reactives value has changed
    */
   watchEffect(() => {
-    const body = document.documentElement
+    if (!import.meta.env.SSR) {
+      const body = document.documentElement
 
-    if (darkmode.isDark) {
-      body.classList.add(DARK_MODE_BODY_CLASS)
-    } else {
-      body.classList.remove(DARK_MODE_BODY_CLASS)
+      if (darkmode.isDark) {
+        body.classList.add(DARK_MODE_BODY_CLASS)
+      } else {
+        body.classList.remove(DARK_MODE_BODY_CLASS)
+      }
     }
   })
 }

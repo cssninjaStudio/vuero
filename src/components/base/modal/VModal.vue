@@ -32,17 +32,23 @@ const cancelLabel = computed(() => props.cancelLabel || t('cancel-label'))
 
 const checkScroll = () => {
   if (props.noscroll && props.open) {
-    document.documentElement.classList.add('no-scroll')
+    if (!import.meta.env.SSR) {
+      document.documentElement.classList.add('no-scroll')
+    }
     wasOpen.value = true
   } else if (wasOpen.value && props.noscroll && !props.open) {
-    document.documentElement.classList.remove('no-scroll')
+    if (!import.meta.env.SSR) {
+      document.documentElement.classList.remove('no-scroll')
+    }
     wasOpen.value = false
   }
 }
 
 watchEffect(checkScroll)
 onUnmounted(() => {
-  document.documentElement.classList.remove('no-scroll')
+  if (!import.meta.env.SSR) {
+    document.documentElement.classList.remove('no-scroll')
+  }
 })
 </script>
 
