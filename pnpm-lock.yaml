@@ -107,6 +107,7 @@ specifiers:
   stylelint-config-standard-scss: 6.1.0
   stylelint-prettier: 2.0.0
   stylelint-scss: 4.3.0
+  textarea-markdown-editor: 1.0.5-rc.4
   tiny-slider: 2.9.4
   tippy.js: 6.3.7
   tslib: 2.4.1
@@ -174,6 +175,7 @@ dependencies:
   simple-datatables: 5.0.2
   simplebar: 6.0.0-beta.10
   simplebar-vue: 2.0.0-beta.10_vue@3.2.45
+  textarea-markdown-editor: 1.0.5-rc.4
   tiny-slider: 2.9.4
   tippy.js: 6.3.7
   tslib: 2.4.1
@@ -9001,6 +9003,10 @@ packages:
       - supports-color
     dev: true
 
+  /mousetrap/1.6.5:
+    resolution: {integrity: sha512-QNo4kEepaIBwiT8CDhP98umTetp+JNfQYBWvC1pc6/OAibuXtRcxZ58Qz8skvEHYvURne/7R8T5VoOI7rDsEUA==}
+    dev: false
+
   /mozjpeg/7.1.1:
     resolution: {integrity: sha512-iIDxWvzhWvLC9mcRJ1uSkiKaj4drF58oCqK2bITm5c2Jt6cJ8qQjSSru2PCaysG+hLIinryj8mgz5ZJzOYTv1A==}
     engines: {node: '>=10'}
@@ -11911,6 +11917,20 @@ packages:
   /text-table/0.2.0:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
     dev: true
+
+  /textarea-markdown-editor/1.0.5-rc.4:
+    resolution: {integrity: sha512-2f85Uvvk/bFOFHENa4S8GVF3T6MS+0V+bj0MpR/5D+c6VJ9pnCienWVMR6v5unwdHfnTYVIjFvWhK1cCza8XXg==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+    peerDependenciesMeta:
+      react:
+        optional: true
+      react-dom:
+        optional: true
+    dependencies:
+      mousetrap: 1.6.5
+    dev: false
 
   /throttleit/1.0.0:
     resolution: {integrity: sha512-rkTVqu6IjfQ/6+uNuuc3sZek4CEYxTJom3IktzgdSxcZqdARuebbA/f4QmAxMQIxqq9ZLEUkSYqvuk1I6VKq4g==}

@@ -71,6 +71,12 @@
             <VTag label="v2.6" size="tiny" class="ml-2" color="primary" outlined curved />
           </RouterLink>
         </li>
+        <li>
+          <RouterLink to="/components/markdown-editor">
+            VMarkdownEditor
+            <VTag label="v2.6" size="tiny" class="ml-2" color="primary" outlined curved />
+          </RouterLink>
+        </li>
 
         <VCollapseLinks>
           <template #header>

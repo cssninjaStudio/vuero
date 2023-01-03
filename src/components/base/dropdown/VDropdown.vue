@@ -11,6 +11,10 @@ export interface VDropdownProps {
   modern?: boolean
   spaced?: boolean
   options?: DropdownOptions
+  classes?: {
+    wrapper?: string | string[]
+    content?: string | string[]
+  }
 }
 
 const props = withDefaults(defineProps<VDropdownProps>(), {
@@ -37,6 +41,9 @@ defineExpose({
       props.icon && 'is-dots',
       props.modern && 'is-modern',
       props.spaced && 'is-spaced',
+      ...(typeof props.classes?.wrapper === 'string'
+        ? [props.classes?.wrapper]
+        : props.classes?.wrapper ?? ''),
     ]"
     class="dropdown"
   >
@@ -69,7 +76,7 @@ defineExpose({
     </slot>
 
     <div class="dropdown-menu" role="menu">
-      <div class="dropdown-content">
+      <div class="dropdown-content" :class="props.classes?.content">
         <slot name="content" v-bind="dropdown"></slot>
       </div>
     </div>

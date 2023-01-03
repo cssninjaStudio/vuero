@@ -90,6 +90,11 @@ const emit = defineEmits(['close'])
             VMarkdownPreview <VTag label="v2.6" color="primary" outlined curved />
           </RouterLink>
         </li>
+        <li>
+          <RouterLink to="/components/markdown-editor">
+            VMarkdownEditor <VTag label="v2.6" color="primary" outlined curved />
+          </RouterLink>
+        </li>
 
         <VCollapseLinks>
           <template #header>

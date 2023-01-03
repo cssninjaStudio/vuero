@@ -105,6 +105,7 @@
     "simple-datatables": "5.0.2",
     "simplebar": "6.0.0-beta.10",
     "simplebar-vue": "2.0.0-beta.10",
+    "textarea-markdown-editor": "1.0.5-rc.4",
     "tiny-slider": "2.9.4",
     "tippy.js": "6.3.7",
     "tslib": "2.4.1",
@@ -207,7 +208,9 @@
     "peerDependencyRules": {
       "ignoreMissing": [
         "postcss",
-        "shiki"
+        "shiki",
+        "react-dom",
+        "react"
       ]
     }
   }

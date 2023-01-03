@@ -303,6 +303,19 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <VTag label="v2.6" color="primary" outlined curved class="ml-3" />
                   </div>
                 </RouterLink>
+                <RouterLink
+                  to="/components/markdown-editor"
+                  class="dropdown-item is-media"
+                >
+                  <div class="icon">
+                    <i aria-hidden="true" class="lnil lnil-grid-alt"></i>
+                  </div>
+                  <div class="meta">
+                    <span>VMarkdownEditor</span>
+
+                    <VTag label="v2.6" color="primary" outlined curved class="ml-3" />
+                  </div>
+                </RouterLink>
 
                 <RouterLink to="/components/flextable/" class="dropdown-item is-media">
                   <div class="icon">
