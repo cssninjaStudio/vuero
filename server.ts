@@ -47,6 +47,7 @@ async function createServer() {
         require('serve-static')(resolve('dist/client'), {
           index: false,
           fallthrough: true,
+          maxAge: '1w',
         })
       )
     )
