@@ -47,7 +47,7 @@ jobs:
           push: true
           tags: ${{ env.dockertags }}
           build-args: |
-            VITE_API_BASE_URL=https://api.vuero.cssninja.io
+            VITE_API_BASE_URL=https://vuero-api.cssninja.io
             GTM_ID=GTM-N9P6H6B
 
   deploy:

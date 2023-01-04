@@ -32,11 +32,11 @@ services:
       traefik.enable: true
       traefik.docker.network: 'cssninja-services'
       traefik.http.routers.vuero-api.entrypoints: 'http'
-      traefik.http.routers.vuero-api.rule: 'Host(`api.vuero.${HOST:-127.0.0.1.nip.io}`)'
+      traefik.http.routers.vuero-api.rule: 'Host(`vuero-api.${HOST:-127.0.0.1.nip.io}`)'
       traefik.http.routers.vuero-api.middlewares: 'https-redirect@docker'
       traefik.http.routers.vuero-api.service: 'vuero-api-https'
       traefik.http.services.vuero-api-https.loadbalancer.server.port: 8080
-      traefik.http.routers.vuero-api-https.rule: 'Host(`api.vuero.${HOST:-127.0.0.1.nip.io}`)'
+      traefik.http.routers.vuero-api-https.rule: 'Host(`vuero-api.${HOST:-127.0.0.1.nip.io}`)'
       traefik.http.routers.vuero-api-https.tls: true
       traefik.http.routers.vuero-api-https.entrypoints: 'https'
       traefik.http.routers.vuero-api-https.tls.certresolver: 'http'
