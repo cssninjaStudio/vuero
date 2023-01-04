@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import ApexChart from 'vue3-apexcharts'
 
-import { incomeOptions } from '/@src/data/dashboards/banking-v1/incomeHistoryChart'
+import { useIncomeHistoryChart } from '/@src/data/dashboards/banking-v1/incomeHistoryChart'
 import { popovers } from '/@src/data/users/userPopovers'
 
 const selectSlotValue = ['default']
@@ -28,6 +28,7 @@ const selectSlotOptions = [
   },
 ]
 
+const { incomeOptions } = useIncomeHistoryChart()
 const valueSingle = ref(0)
 const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 months']
 </script>

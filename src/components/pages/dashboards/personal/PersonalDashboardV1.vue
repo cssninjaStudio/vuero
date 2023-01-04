@@ -1,9 +1,13 @@
 <script setup lang="ts">
 import ApexChart from 'vue3-apexcharts'
 
-import { customersOptions } from '/@src/data/dashboards/personal-v1/customersChart'
-import { teamGaugeOptions } from '/@src/data/dashboards/personal-v1/teamGaugeChart'
-import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChart'
+import { useCustomersCharts } from '/@src/data/dashboards/personal-v1/customersChart'
+import { useTeamGaugeChart } from '/@src/data/dashboards/personal-v1/teamGaugeChart'
+import { useProfitChart } from '/@src/data/dashboards/personal-v1/profitChart'
+
+const { customersOptions } = useCustomersCharts()
+const { teamGaugeOptions } = useTeamGaugeChart()
+const { profitChartOptions } = useProfitChart()
 </script>
 
 <template>

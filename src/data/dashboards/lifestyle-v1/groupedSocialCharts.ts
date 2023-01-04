@@ -1,74 +1,83 @@
 import { useThemeColors } from '/@src/composable/useThemeColors'
-const themeColors = useThemeColors()
 
-export const creativityRadialOptions = {
-  series: [31],
-  chart: {
-    height: 100,
-    type: 'radialBar',
-    offsetY: -10,
-    toolbar: {
-      show: false,
-    },
-  },
-  colors: [themeColors.info],
-  plotOptions: {
-    radialBar: {
-      hollow: {
-        size: '35%',
-      },
-      dataLabels: {
+export function useGroupedSocialChart() {
+  const themeColors = useThemeColors()
+
+  const creativityRadialOptions = ref({
+    series: [31],
+    chart: {
+      height: 100,
+      type: 'radialBar',
+      offsetY: -10,
+      toolbar: {
         show: false,
       },
     },
-  },
-  labels: [''],
-}
-
-export const engagmentRadialOptions = {
-  series: [53],
-  chart: {
-    height: 100,
-    type: 'radialBar',
-    offsetY: -10,
-    toolbar: {
-      show: false,
-    },
-  },
-  colors: [themeColors.primary],
-  plotOptions: {
-    radialBar: {
-      hollow: {
-        size: '35%',
+    colors: [themeColors.info],
+    plotOptions: {
+      radialBar: {
+        hollow: {
+          size: '35%',
+        },
+        dataLabels: {
+          show: false,
+        },
       },
-      dataLabels: {
+    },
+    labels: [''],
+  })
+
+  const engagmentRadialOptions = ref({
+    series: [53],
+    chart: {
+      height: 100,
+      type: 'radialBar',
+      offsetY: -10,
+      toolbar: {
         show: false,
       },
     },
-  },
-  labels: [''],
-}
-
-export const popularityRadialOptions = {
-  series: [84],
-  chart: {
-    height: 100,
-    type: 'radialBar',
-    offsetY: -10,
-    toolbar: {
-      show: false,
-    },
-  },
-  colors: [themeColors.green],
-  plotOptions: {
-    radialBar: {
-      hollow: {
-        size: '35%',
+    colors: [themeColors.primary],
+    plotOptions: {
+      radialBar: {
+        hollow: {
+          size: '35%',
+        },
+        dataLabels: {
+          show: false,
+        },
       },
-      dataLabels: {
+    },
+    labels: [''],
+  })
+
+  const popularityRadialOptions = ref({
+    series: [84],
+    chart: {
+      height: 100,
+      type: 'radialBar',
+      offsetY: -10,
+      toolbar: {
         show: false,
       },
     },
-  },
-  labels: [''],
+    colors: [themeColors.green],
+    plotOptions: {
+      radialBar: {
+        hollow: {
+          size: '35%',
+        },
+        dataLabels: {
+          show: false,
+        },
+      },
+    },
+    labels: [''],
+  })
+
+  return {
+    creativityRadialOptions,
+    engagmentRadialOptions,
+    popularityRadialOptions,
+  }
 }

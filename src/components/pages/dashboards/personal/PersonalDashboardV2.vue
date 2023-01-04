@@ -2,11 +2,13 @@
 import ApexChart from 'vue3-apexcharts'
 
 import type { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
-import { completionOptions } from '/@src/data/dashboards/personal-v2/taskCompletionChart'
-import { barOptions } from '/@src/data/dashboards/personal-v2/teamEfficiencyChart'
+import { useTaskCompletionChart } from '/@src/data/dashboards/personal-v2/taskCompletionChart'
+import { useTeamEfficiencyChart } from '/@src/data/dashboards/personal-v2/teamEfficiencyChart'
 import { popovers } from '/@src/data/users/userPopovers'
 import * as usersData from '/@src/data/dashboards/personal-v2/users'
 
+const { completionOptions } = useTaskCompletionChart()
+const { barOptions } = useTeamEfficiencyChart()
 const avatarStack1 = usersData.avatarStack1 as VAvatarProps[]
 const avatarStack2 = usersData.avatarStack1 as VAvatarProps[]
 const avatarStack3 = usersData.avatarStack1 as VAvatarProps[]

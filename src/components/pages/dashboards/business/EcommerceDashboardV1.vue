@@ -1,31 +1,31 @@
 <script setup lang="ts">
 import ApexChart from 'vue3-apexcharts'
 
-import { flexRadialChartCircleOptions } from '/@src/data/widgets/charts/flexRadialChartCircleChart'
-import { flexRadialChartStripesOptions } from '/@src/data/widgets/charts/flexRadialChartStripesChart'
-import { revenueOptions } from '/@src/data/widgets/charts/revenueAreaChart'
-import { lineStatsChartOptions } from '/@src/data/widgets/charts/lineStatsWidgetChart'
-import {
-  widgetRadialGroup1Options,
-  widgetRadialGroup2Options,
-  widgetRadialGroup3Options,
-} from '/@src/data/widgets/charts/groupedCircleCharts'
-import {
-  widgetGaugeGroup1Options,
-  widgetGaugeGroup2Options,
-  widgetGaugeGroup3Options,
-} from '/@src/data/widgets/charts/groupedRadialCharts'
-import {
-  spark1,
-  spark2,
-  spark3,
-  spark4,
-} from '/@src/data/dashboards/ecommerce/sparksCharts'
+import { useFlexRadialChartCircle } from '/@src/data/widgets/charts/flexRadialChartCircleChart'
+import { useFlexRadialChartStripes } from '/@src/data/widgets/charts/flexRadialChartStripesChart'
+import { useRevenueAreaChart } from '/@src/data/widgets/charts/revenueAreaChart'
+import { useLineStatsWidgetCharts } from '/@src/data/widgets/charts/lineStatsWidgetChart'
+import { useGroupedCircleCharts } from '/@src/data/widgets/charts/groupedCircleCharts'
+import { useGroupedRadialCharts } from '/@src/data/widgets/charts/groupedRadialCharts'
+import { useSparksCharts } from '/@src/data/dashboards/ecommerce/sparksCharts'
 import {
   valueSingle,
   optionsSingle,
   flexRowsOrders,
 } from '/@src/data/dashboards/ecommerce/dashboardData'
+
+const { flexRadialChartCircleOptions } = useFlexRadialChartCircle()
+const { flexRadialChartStripesOptions } = useFlexRadialChartStripes()
+const { revenueOptions } = useRevenueAreaChart()
+const { lineStatsChartOptions } = useLineStatsWidgetCharts()
+const { spark1, spark2, spark3, spark4 } = useSparksCharts()
+const { widgetGaugeGroup1Options, widgetGaugeGroup2Options, widgetGaugeGroup3Options } =
+  useGroupedRadialCharts()
+const {
+  widgetRadialGroup1Options,
+  widgetRadialGroup2Options,
+  widgetRadialGroup3Options,
+} = useGroupedCircleCharts()
 </script>
 
 <template>

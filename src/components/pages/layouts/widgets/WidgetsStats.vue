@@ -1,27 +1,27 @@
 <script setup lang="ts">
 import ApexChart from 'vue3-apexcharts'
 
-import {
-  spark1,
-  spark2,
-  spark3,
-  spark4,
-} from '/@src/data/widgets/charts/salesSparksChart'
-import { revenueOptions } from '/@src/data/widgets/charts/revenueAreaChart'
-import { lineStatsChartOptions } from '/@src/data/widgets/charts/lineStatsWidgetChart'
-import { flexRadialChartCircleOptions } from '/@src/data/widgets/charts/flexRadialChartCircleChart'
-import { flexRadialChartStripesOptions } from '/@src/data/widgets/charts/flexRadialChartStripesChart'
-import {
+import { useSalesSparksCharts } from '/@src/data/widgets/charts/salesSparksChart'
+import { useRevenueAreaChart } from '/@src/data/widgets/charts/revenueAreaChart'
+import { useLineStatsWidgetCharts } from '/@src/data/widgets/charts/lineStatsWidgetChart'
+import { useFlexRadialChartCircle } from '/@src/data/widgets/charts/flexRadialChartCircleChart'
+import { useFlexRadialChartStripes } from '/@src/data/widgets/charts/flexRadialChartStripesChart'
+import { useGroupedCircleCharts } from '/@src/data/widgets/charts/groupedCircleCharts'
+import { useGroupedRadialCharts } from '/@src/data/widgets/charts/groupedRadialCharts'
+import { memberList } from '/@src/data/widgets/table/memberList'
+
+const { spark1, spark2, spark3, spark4 } = useSalesSparksCharts()
+const { revenueOptions } = useRevenueAreaChart()
+const { lineStatsChartOptions } = useLineStatsWidgetCharts()
+const { flexRadialChartCircleOptions } = useFlexRadialChartCircle()
+const { flexRadialChartStripesOptions } = useFlexRadialChartStripes()
+const { widgetGaugeGroup1Options, widgetGaugeGroup2Options, widgetGaugeGroup3Options } =
+  useGroupedRadialCharts()
+const {
   widgetRadialGroup1Options,
   widgetRadialGroup2Options,
   widgetRadialGroup3Options,
-} from '/@src/data/widgets/charts/groupedCircleCharts'
-import {
-  widgetGaugeGroup1Options,
-  widgetGaugeGroup2Options,
-  widgetGaugeGroup3Options,
-} from '/@src/data/widgets/charts/groupedRadialCharts'
-import { memberList } from '/@src/data/widgets/table/memberList'
+} = useGroupedCircleCharts()
 </script>
 
 <template>

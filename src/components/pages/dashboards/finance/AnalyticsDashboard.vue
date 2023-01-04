@@ -1,12 +1,17 @@
 <script setup lang="ts">
 import ApexChart from 'vue3-apexcharts'
 
-import { revenueOptions } from '/@src/data/dashboards/analytics/revenueChart'
-import { gaugeOptions } from '/@src/data/dashboards/analytics/goalChart'
-import { barOptions } from '/@src/data/dashboards/analytics/profitBarChart'
-import { optionsCircle } from '/@src/data/dashboards/analytics/growthRadialChart'
+import { useRevenueChart } from '/@src/data/dashboards/analytics/revenueChart'
+import { useGoalCharts } from '/@src/data/dashboards/analytics/goalChart'
+import { useProfitBarChart } from '/@src/data/dashboards/analytics/profitBarChart'
+import { useGrowthRadialChart } from '/@src/data/dashboards/analytics/growthRadialChart'
 import { followersList } from '/@src/data/widgets/ui/followers'
 import { notifications } from '/@src/data/widgets/ui/notificationList'
+
+const { revenueOptions } = useRevenueChart()
+const { gaugeOptions } = useGoalCharts()
+const { barOptions } = useProfitBarChart()
+const { optionsCircle } = useGrowthRadialChart()
 </script>
 
 <template>

@@ -1,6 +1,8 @@
 <script setup lang="ts">
-import * as chartOptions from '/@src/data/dashboards/apex-demo/chartOptions'
+import { useChartOptions } from '/@src/data/dashboards/apex-demo/chartOptions'
 import ApexChart from 'vue3-apexcharts'
+
+const chartOptions = reactive(useChartOptions())
 </script>
 
 <template>

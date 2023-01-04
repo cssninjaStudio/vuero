@@ -3,13 +3,14 @@ import { useHead } from '@vueuse/head'
 import { radar } from 'billboard.js'
 
 import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
-import * as splineSimple from '/@src/data/dashboards/billboardjs-demo/splineSimple'
+import { useSplineSimple } from '/@src/data/dashboards/billboardjs-demo/splineSimple'
 import { useThemeColors } from '/@src/composable/useThemeColors'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 const themeColors = useThemeColors()
+const { options } = useSplineSimple()
 
 const viewWrapper = useViewWrapper()
 viewWrapper.setPageTitle('VBillboardJS')
@@ -111,7 +112,7 @@ useHead({
           </div>
           <div class="column is-6">
             <VCard type="smooth">
-              <VBillboardJS :options="splineSimple.options" />
+              <VBillboardJS :options="options" />
             </VCard>
           </div>
         </div>

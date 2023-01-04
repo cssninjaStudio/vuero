@@ -1,14 +1,18 @@
 <script setup lang="ts">
 import ApexChart from 'vue3-apexcharts'
 
-import { energyChartOptions } from '/@src/data/dashboards/lifestyle-v3/energyChart'
-import { overallChartOptions } from '/@src/data/dashboards/lifestyle-v3/overallChart'
-import { oxygenChartOptions } from '/@src/data/dashboards/lifestyle-v3/oxygenChart'
-import { progressChartOptions } from '/@src/data/dashboards/lifestyle-v3/progressChart'
+import { useEnergyChart } from '/@src/data/dashboards/lifestyle-v3/energyChart'
+import { useOverallChart } from '/@src/data/dashboards/lifestyle-v3/overallChart'
+import { useOxygenChart } from '/@src/data/dashboards/lifestyle-v3/oxygenChart'
+import { useProgressChart } from '/@src/data/dashboards/lifestyle-v3/progressChart'
 import { followersList } from '/@src/data/widgets/ui/followers'
 import { usePersonalScoreGauge } from '/@src/data/widgets/charts/personalScoreGauge'
 
 const { personalScoreGaugeOptions, onPersonalScoreGaugeReady } = usePersonalScoreGauge()
+const { energyChartOptions } = useEnergyChart()
+const { overallChartOptions } = useOverallChart()
+const { oxygenChartOptions } = useOxygenChart()
+const { progressChartOptions } = useProgressChart()
 </script>
 
 <template>

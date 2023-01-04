@@ -4,13 +4,15 @@ import { tns } from 'tiny-slider/src/tiny-slider'
 
 import ApexChart from 'vue3-apexcharts'
 
-import { expensesOptions } from '/@src/data/dashboards/banking-v2/expensesAreaChart'
+import { useExpensesAreaChart } from '/@src/data/dashboards/banking-v2/expensesAreaChart'
 import {
   valueSingle,
   optionsSingle,
 } from '/@src/data/dashboards/banking-v2/dashboardData'
 
 let slider: TinySliderInstance
+
+const { expensesOptions } = useExpensesAreaChart()
 
 const sliderElement = ref<HTMLElement>()
 onMounted(() => {

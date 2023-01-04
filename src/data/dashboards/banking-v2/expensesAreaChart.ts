@@ -1,5 +1,4 @@
 import { useThemeColors } from '/@src/composable/useThemeColors'
-const themeColors = useThemeColors()
 
 function generateDayWiseTimeSeries(s: number, count: number) {
   const values = [
@@ -17,92 +16,99 @@ function generateDayWiseTimeSeries(s: number, count: number) {
   return series
 }
 
-export const expensesOptions = {
-  chart: {
-    type: 'area',
-    height: 220,
-    foreColor: '#999',
-    stacked: true,
-    toolbar: {
+export function useExpensesAreaChart() {
+  const themeColors = useThemeColors()
+  const expensesOptions = {
+    chart: {
+      type: 'area',
+      height: 220,
+      foreColor: '#999',
+      stacked: true,
+      toolbar: {
+        show: false,
+      },
+      dropShadow: {
+        enabled: true,
+        enabledSeries: [0],
+        top: -2,
+        left: 2,
+        blur: 5,
+        opacity: 0.06,
+      },
+    },
+    colors: [themeColors.green, themeColors.accent, themeColors.orange],
+    stroke: {
+      curve: 'smooth',
+      width: 3,
+    },
+    title: {
+      text: '',
+      align: 'left',
+    },
+    dataLabels: {
+      enabled: false,
+    },
+    series: [
+      {
+        name: 'Cash Expenses',
+        data: generateDayWiseTimeSeries(0, 18),
+      },
+      {
+        name: 'Card Expenses',
+        data: generateDayWiseTimeSeries(1, 18),
+      },
+    ],
+    markers: {
+      size: 0,
+      strokeColor: '#fff',
+      strokeWidth: 3,
+      strokeOpacity: 1,
+      fillOpacity: 1,
+      hover: {
+        size: 6,
+      },
+    },
+    xaxis: {
+      type: 'datetime',
+      axisBorder: {
+        show: false,
+      },
+      axisTicks: {
+        show: false,
+      },
+    },
+    yaxis: {
+      labels: {
+        offsetX: 0,
+        offsetY: -5,
+      },
+      tooltip: {
+        enabled: true,
+      },
+    },
+    grid: {
       show: false,
-    },
-    dropShadow: {
-      enabled: true,
-      enabledSeries: [0],
-      top: -2,
-      left: 2,
-      blur: 5,
-      opacity: 0.06,
-    },
-  },
-  colors: [themeColors.green, themeColors.accent, themeColors.orange],
-  stroke: {
-    curve: 'smooth',
-    width: 3,
-  },
-  title: {
-    text: '',
-    align: 'left',
-  },
-  dataLabels: {
-    enabled: false,
-  },
-  series: [
-    {
-      name: 'Cash Expenses',
-      data: generateDayWiseTimeSeries(0, 18),
-    },
-    {
-      name: 'Card Expenses',
-      data: generateDayWiseTimeSeries(1, 18),
-    },
-  ],
-  markers: {
-    size: 0,
-    strokeColor: '#fff',
-    strokeWidth: 3,
-    strokeOpacity: 1,
-    fillOpacity: 1,
-    hover: {
-      size: 6,
-    },
-  },
-  xaxis: {
-    type: 'datetime',
-    axisBorder: {
-      show: false,
-    },
-    axisTicks: {
-      show: false,
-    },
-  },
-  yaxis: {
-    labels: {
-      offsetX: 0,
-      offsetY: -5,
+      padding: {
+        left: -5,
+        right: 5,
+      },
     },
     tooltip: {
-      enabled: true,
+      x: {
+        format: 'dd MMM yyyy',
+      },
     },
-  },
-  grid: {
-    show: false,
-    padding: {
-      left: -5,
-      right: 5,
+    legend: {
+      position: 'top',
+      horizontalAlign: 'left',
     },
-  },
-  tooltip: {
-    x: {
-      format: 'dd MMM yyyy',
+    fill: {
+      type: 'solid',
+      fillOpacity: 0.7,
     },
-  },
-  legend: {
-    position: 'top',
-    horizontalAlign: 'left',
-  },
-  fill: {
-    type: 'solid',
-    fillOpacity: 0.7,
-  },
+  }
+
+  return {
+    expensesOptions,
+  }
 }

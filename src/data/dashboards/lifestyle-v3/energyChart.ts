@@ -1,5 +1,4 @@
 import { useThemeColors } from '/@src/composable/useThemeColors'
-const themeColors = useThemeColors()
 
 function generateDayWiseTimeSeries(
   baseval: number,
@@ -18,69 +17,76 @@ function generateDayWiseTimeSeries(
   return series
 }
 
-export const energyChartOptions = {
-  series: [
-    {
-      name: 'Tonic',
-      data: generateDayWiseTimeSeries(new Date('Oct 11 2020 GMT').getTime(), 20, {
-        min: 10,
-        max: 60,
-      }),
+export function useEnergyChart() {
+  const themeColors = useThemeColors()
+  const energyChartOptions = ref({
+    series: [
+      {
+        name: 'Tonic',
+        data: generateDayWiseTimeSeries(new Date('Oct 11 2020 GMT').getTime(), 20, {
+          min: 10,
+          max: 60,
+        }),
+      },
+      {
+        name: 'Tantra',
+        data: generateDayWiseTimeSeries(new Date('Oct 11 2020 GMT').getTime(), 20, {
+          min: 10,
+          max: 60,
+        }),
+      },
+      {
+        name: 'Vital',
+        data: generateDayWiseTimeSeries(new Date('Oct 11 2020 GMT').getTime(), 30, {
+          min: 10,
+          max: 60,
+        }),
+      },
+    ],
+    chart: {
+      height: 280,
+      type: 'scatter',
+      zoom: {
+        type: 'xy',
+      },
+      toolbar: {
+        show: false,
+      },
     },
-    {
-      name: 'Tantra',
-      data: generateDayWiseTimeSeries(new Date('Oct 11 2020 GMT').getTime(), 20, {
-        min: 10,
-        max: 60,
-      }),
-    },
-    {
-      name: 'Vital',
-      data: generateDayWiseTimeSeries(new Date('Oct 11 2020 GMT').getTime(), 30, {
-        min: 10,
-        max: 60,
-      }),
-    },
-  ],
-  chart: {
-    height: 280,
-    type: 'scatter',
-    zoom: {
-      type: 'xy',
-    },
-    toolbar: {
+    colors: [themeColors.accent, themeColors.primary, themeColors.purple],
+    dataLabels: {
+      enabled: false,
       show: false,
     },
-  },
-  colors: [themeColors.accent, themeColors.primary, themeColors.purple],
-  dataLabels: {
-    enabled: false,
-    show: false,
-  },
-  grid: {
-    show: false,
-    xaxis: {
-      lines: {
-        show: false,
+    grid: {
+      show: false,
+      xaxis: {
+        lines: {
+          show: false,
+        },
       },
+      yaxis: {
+        lines: {
+          show: false,
+        },
+      },
+    },
+    xaxis: {
+      show: false,
+      type: 'datetime',
     },
     yaxis: {
-      lines: {
-        show: false,
-      },
+      show: false,
+      max: 70,
     },
-  },
-  xaxis: {
-    show: false,
-    type: 'datetime',
-  },
-  yaxis: {
-    show: false,
-    max: 70,
-  },
-  legend: {
-    show: false,
-    position: 'top',
-    horizontalAlign: 'center',
-  },
+    legend: {
+      show: false,
+      position: 'top',
+      horizontalAlign: 'center',
+    },
+  })
+
+  return {
+    energyChartOptions,
+  }
 }

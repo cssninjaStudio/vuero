@@ -5,18 +5,20 @@ import {
   valueSingle,
   optionsSingle,
 } from '/@src/data/dashboards/lifestyle-v1/dashboardData'
-import {
-  creativityRadialOptions,
-  engagmentRadialOptions,
-  popularityRadialOptions,
-} from '/@src/data/dashboards/lifestyle-v1/groupedSocialCharts'
-import { reputationChartOptions } from '/@src/data/dashboards/lifestyle-v1/reputationChart'
-import { influenceChartOptions } from '/@src/data/dashboards/lifestyle-v1/influenceChart'
-import {
+import { useGroupedSocialChart } from '/@src/data/dashboards/lifestyle-v1/groupedSocialCharts'
+import { useReputationChart } from '/@src/data/dashboards/lifestyle-v1/reputationChart'
+import { useInfluenceChart } from '/@src/data/dashboards/lifestyle-v1/influenceChart'
+import { useGroupedCircleCharts } from '/@src/data/widgets/charts/groupedCircleCharts'
+
+const { reputationChartOptions } = useReputationChart()
+const { influenceChartOptions } = useInfluenceChart()
+const { creativityRadialOptions, engagmentRadialOptions, popularityRadialOptions } =
+  useGroupedSocialChart()
+const {
   widgetRadialGroup1Options,
   widgetRadialGroup2Options,
   widgetRadialGroup3Options,
-} from '/@src/data/widgets/charts/groupedCircleCharts'
+} = useGroupedCircleCharts()
 </script>
 
 <template>

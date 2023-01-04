@@ -1,40 +1,47 @@
 import { useThemeColors } from '/@src/composable/useThemeColors'
-const themeColors = useThemeColors()
 
-export const salesRevenuesRadialOptions = {
-  series: [65],
-  chart: {
-    height: 155,
-    type: 'radialBar',
-    toolbar: {
-      show: false,
-    },
-  },
-  colors: [themeColors.info],
-  plotOptions: {
-    radialBar: {
-      hollow: {
-        size: '75%',
+export function useSalesRevenueRadialChart() {
+  const themeColors = useThemeColors()
+
+  const salesRevenuesRadialOptions = ref({
+    series: [65],
+    chart: {
+      height: 155,
+      type: 'radialBar',
+      toolbar: {
+        show: false,
       },
-      dataLabels: {
-        show: true,
-        name: {
-          show: false,
-          fontSize: '12px',
-          fontWeight: 400,
-          offsetY: 5,
-          color: themeColors.lightText,
+    },
+    colors: [themeColors.info],
+    plotOptions: {
+      radialBar: {
+        hollow: {
+          size: '75%',
         },
-        value: {
+        dataLabels: {
           show: true,
-          fontWeight: 600,
-          fontFamily: 'Roboto, sans-serif',
-          color: themeColors.info,
-          fontSize: '16px',
-          offsetY: 5,
+          name: {
+            show: false,
+            fontSize: '12px',
+            fontWeight: 400,
+            offsetY: 5,
+            color: themeColors.lightText,
+          },
+          value: {
+            show: true,
+            fontWeight: 600,
+            fontFamily: 'Roboto, sans-serif',
+            color: themeColors.info,
+            fontSize: '16px',
+            offsetY: 5,
+          },
         },
       },
     },
-  },
-  labels: ['Progress'],
+    labels: ['Progress'],
+  })
+
+  return {
+    salesRevenuesRadialOptions,
+  }
 }

@@ -1,5 +1,4 @@
 import { useThemeColors } from '/@src/composable/useThemeColors'
-const themeColors = useThemeColors()
 
 function generateDayWiseTimeSeries(s: number, count: number) {
   const values = [
@@ -23,97 +22,104 @@ function generateDayWiseTimeSeries(s: number, count: number) {
   return series
 }
 
-export const bitcoinChartOptions = {
-  chart: {
-    type: 'area',
-    height: 350,
-    foreColor: '#999',
-    stacked: true,
-    toolbar: {
-      show: false,
-    },
-    dropShadow: {
-      enabled: true,
-      enabledSeries: [0],
-      top: -2,
-      left: 2,
-      blur: 5,
-      opacity: 0.06,
-    },
-  },
-  colors: [themeColors.green, themeColors.accent, themeColors.green],
-  stroke: {
-    curve: 'smooth',
-    width: 3,
-  },
-  title: {
-    text: 'Bitcoin (BTC) Price Chart',
-    align: 'left',
-  },
-  dataLabels: {
-    enabled: false,
-  },
-  series: [
-    {
-      name: 'Expected',
-      data: generateDayWiseTimeSeries(0, 18),
-    },
-    {
-      name: 'Real',
-      data: generateDayWiseTimeSeries(1, 18),
-    },
-  ],
-  markers: {
-    size: 0,
-    strokeColor: '#fff',
-    strokeWidth: 3,
-    strokeOpacity: 1,
-    fillOpacity: 1,
-    hover: {
-      size: 6,
-    },
-  },
-  xaxis: {
-    type: 'datetime',
-    axisBorder: {
-      show: false,
-    },
-    axisTicks: {
-      show: false,
-    },
-  },
-  yaxis: {
-    labels: {
-      offsetX: 0,
-      offsetY: -5,
-    },
-    tooltip: {
-      enabled: true,
-    },
-  },
-  grid: {
-    show: false,
-    padding: {
-      left: -5,
-      right: 5,
-    },
-  },
-  tooltip: {
-    x: {
-      format: 'dd MMM yyyy',
-    },
-    y: {
-      formatter: function (val: number) {
-        return val + '%'
+export function useBitcoinPriceChart() {
+  const themeColors = useThemeColors()
+  const bitcoinChartOptions = {
+    chart: {
+      type: 'area',
+      height: 350,
+      foreColor: '#999',
+      stacked: true,
+      toolbar: {
+        show: false,
+      },
+      dropShadow: {
+        enabled: true,
+        enabledSeries: [0],
+        top: -2,
+        left: 2,
+        blur: 5,
+        opacity: 0.06,
       },
     },
-  },
-  legend: {
-    position: 'top',
-    horizontalAlign: 'center',
-  },
-  fill: {
-    type: 'solid',
-    fillOpacity: 0.7,
-  },
+    colors: [themeColors.green, themeColors.accent, themeColors.green],
+    stroke: {
+      curve: 'smooth',
+      width: 3,
+    },
+    title: {
+      text: 'Bitcoin (BTC) Price Chart',
+      align: 'left',
+    },
+    dataLabels: {
+      enabled: false,
+    },
+    series: [
+      {
+        name: 'Expected',
+        data: generateDayWiseTimeSeries(0, 18),
+      },
+      {
+        name: 'Real',
+        data: generateDayWiseTimeSeries(1, 18),
+      },
+    ],
+    markers: {
+      size: 0,
+      strokeColor: '#fff',
+      strokeWidth: 3,
+      strokeOpacity: 1,
+      fillOpacity: 1,
+      hover: {
+        size: 6,
+      },
+    },
+    xaxis: {
+      type: 'datetime',
+      axisBorder: {
+        show: false,
+      },
+      axisTicks: {
+        show: false,
+      },
+    },
+    yaxis: {
+      labels: {
+        offsetX: 0,
+        offsetY: -5,
+      },
+      tooltip: {
+        enabled: true,
+      },
+    },
+    grid: {
+      show: false,
+      padding: {
+        left: -5,
+        right: 5,
+      },
+    },
+    tooltip: {
+      x: {
+        format: 'dd MMM yyyy',
+      },
+      y: {
+        formatter: function (val: number) {
+          return val + '%'
+        },
+      },
+    },
+    legend: {
+      position: 'top',
+      horizontalAlign: 'center',
+    },
+    fill: {
+      type: 'solid',
+      fillOpacity: 0.7,
+    },
+  }
+
+  return {
+    bitcoinChartOptions,
+  }
 }

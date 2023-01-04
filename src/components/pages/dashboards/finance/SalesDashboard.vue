@@ -1,24 +1,20 @@
 <script setup lang="ts">
 import ApexChart from 'vue3-apexcharts'
 
-import {
-  spark1,
-  spark2,
-  spark3,
-  spark4,
-} from '/@src/data/widgets/charts/salesSparksChart'
-import { revenueOptions } from '/@src/data/widgets/charts/revenueAreaChart'
-import { salesRevenuesRadialOptions } from '/@src/data/dashboards/sales/salesRevenueRadialChart'
-import {
-  radialGroup1Options,
-  radialGroup2Options,
-  radialGroup3Options,
-} from '/@src/data/dashboards/sales/salesRadialGroupChart'
+import { useSalesSparksCharts } from '/@src/data/widgets/charts/salesSparksChart'
+import { useRevenueAreaChart } from '/@src/data/widgets/charts/revenueAreaChart'
+import { useSalesRevenueRadialChart } from '/@src/data/dashboards/sales/salesRevenueRadialChart'
+import { useSalesRadialGroupChart } from '/@src/data/dashboards/sales/salesRadialGroupChart'
 import { useSalesBarChart } from '/@src/data/dashboards/sales/salesBarChart'
 import { usePersonalScoreGauge } from '/@src/data/widgets/charts/personalScoreGauge'
 
 const { personalScoreGaugeOptions, onPersonalScoreGaugeReady } = usePersonalScoreGauge()
 const { barData, barData2, salesBarOptions } = useSalesBarChart()
+const { spark1, spark2, spark3, spark4 } = useSalesSparksCharts()
+const { revenueOptions } = useRevenueAreaChart()
+const { salesRevenuesRadialOptions } = useSalesRevenueRadialChart()
+const { radialGroup1Options, radialGroup2Options, radialGroup3Options } =
+  useSalesRadialGroupChart()
 
 onMounted(() => {
   setTimeout(() => {

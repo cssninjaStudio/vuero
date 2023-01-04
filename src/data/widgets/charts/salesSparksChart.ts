@@ -1,5 +1,4 @@
 import { useThemeColors } from '/@src/composable/useThemeColors'
-const themeColors = useThemeColors()
 
 const randomizeArray = function (arg: number[]) {
   const array = arg.slice()
@@ -19,223 +18,232 @@ const randomizeArray = function (arg: number[]) {
   return array
 }
 
-const sparklineData = [
-  472, 454, 547, 385, 562, 247, 652, 318, 379, 391, 622, 515, 355, 415, 358, 271, 932,
-  534, 615, 278, 546, 435, 192, 465,
-]
+export function useSalesSparksCharts() {
+  const themeColors = useThemeColors()
+  const sparklineData = [
+    472, 454, 547, 385, 562, 247, 652, 318, 379, 391, 622, 515, 355, 415, 358, 271, 932,
+    534, 615, 278, 546, 435, 192, 465,
+  ]
 
-export const spark1 = {
-  chart: {
-    id: 'sparkline1',
-    group: 'sparklines',
-    type: 'area',
-    height: 130,
-    sparkline: {
-      enabled: true,
+  const spark1 = ref({
+    chart: {
+      id: 'sparkline1',
+      group: 'sparklines',
+      type: 'area',
+      height: 130,
+      sparkline: {
+        enabled: true,
+      },
     },
-  },
-  colors: [themeColors.primary],
-  stroke: {
-    width: [2],
-    curve: 'straight',
-  },
-  fill: {
-    opacity: 1,
-  },
-  series: [
-    {
-      name: 'Total Sales',
-      data: randomizeArray(sparklineData),
+    colors: [themeColors.primary],
+    stroke: {
+      width: [2],
+      curve: 'straight',
     },
-  ],
-  labels: [...Array(24).keys()].map((n) => `2020-10-0${n + 1}`),
-  yaxis: {
-    min: 0,
-    labels: {
-      minWidth: 100,
+    fill: {
+      opacity: 1,
     },
-  },
-  xaxis: {
-    type: 'datetime',
-  },
-  title: {
-    text: 'Total Sales',
-    offsetX: 5,
-    style: {
-      fontSize: '24px',
-      cssClass: 'apexcharts-yaxis-title',
-      color: themeColors.lightText,
+    series: [
+      {
+        name: 'Total Sales',
+        data: randomizeArray(sparklineData),
+      },
+    ],
+    labels: [...Array(24).keys()].map((n) => `2020-10-0${n + 1}`),
+    yaxis: {
+      min: 0,
+      labels: {
+        minWidth: 100,
+      },
     },
-  },
-  subtitle: {
-    text: '9,374',
-    offsetX: 5,
-    style: {
-      fontSize: '24px',
-      fontWeight: '600',
-      cssClass: 'apexcharts-yaxis-title',
+    xaxis: {
+      type: 'datetime',
     },
-  },
-}
+    title: {
+      text: 'Total Sales',
+      offsetX: 5,
+      style: {
+        fontSize: '24px',
+        cssClass: 'apexcharts-yaxis-title',
+        color: themeColors.lightText,
+      },
+    },
+    subtitle: {
+      text: '9,374',
+      offsetX: 5,
+      style: {
+        fontSize: '24px',
+        fontWeight: '600',
+        cssClass: 'apexcharts-yaxis-title',
+      },
+    },
+  })
 
-export const spark2 = {
-  chart: {
-    id: 'sparkline2',
-    group: 'sparklines',
-    type: 'area',
-    height: 130,
-    sparkline: {
-      enabled: true,
+  const spark2 = ref({
+    chart: {
+      id: 'sparkline2',
+      group: 'sparklines',
+      type: 'area',
+      height: 130,
+      sparkline: {
+        enabled: true,
+      },
     },
-  },
-  colors: [themeColors.info],
-  stroke: {
-    width: [2],
-    curve: 'straight',
-  },
-  fill: {
-    opacity: 1,
-  },
-  series: [
-    {
-      name: 'Total Profit',
-      data: randomizeArray(sparklineData),
+    colors: [themeColors.info],
+    stroke: {
+      width: [2],
+      curve: 'straight',
     },
-  ],
-  labels: [...Array(24).keys()].map((n) => `2020-10-0${n + 1}`),
-  yaxis: {
-    min: 0,
-    labels: {
-      minWidth: 100,
+    fill: {
+      opacity: 1,
     },
-  },
-  xaxis: {
-    type: 'datetime',
-  },
-  title: {
-    text: 'Total Profit',
-    offsetX: 5,
-    style: {
-      fontSize: '24px',
-      cssClass: 'apexcharts-yaxis-title',
-      color: themeColors.lightText,
+    series: [
+      {
+        name: 'Total Profit',
+        data: randomizeArray(sparklineData),
+      },
+    ],
+    labels: [...Array(24).keys()].map((n) => `2020-10-0${n + 1}`),
+    yaxis: {
+      min: 0,
+      labels: {
+        minWidth: 100,
+      },
     },
-  },
-  subtitle: {
-    text: '$24,273.31',
-    offsetX: 5,
-    style: {
-      fontSize: '24px',
-      fontWeight: '600',
-      cssClass: 'apexcharts-yaxis-title',
+    xaxis: {
+      type: 'datetime',
     },
-  },
-}
+    title: {
+      text: 'Total Profit',
+      offsetX: 5,
+      style: {
+        fontSize: '24px',
+        cssClass: 'apexcharts-yaxis-title',
+        color: themeColors.lightText,
+      },
+    },
+    subtitle: {
+      text: '$24,273.31',
+      offsetX: 5,
+      style: {
+        fontSize: '24px',
+        fontWeight: '600',
+        cssClass: 'apexcharts-yaxis-title',
+      },
+    },
+  })
 
-export const spark3 = {
-  chart: {
-    id: 'sparkline3',
-    group: 'sparklines',
-    type: 'area',
-    height: 130,
-    sparkline: {
-      enabled: true,
+  const spark3 = ref({
+    chart: {
+      id: 'sparkline3',
+      group: 'sparklines',
+      type: 'area',
+      height: 130,
+      sparkline: {
+        enabled: true,
+      },
     },
-  },
-  colors: [themeColors.accent],
-  stroke: {
-    width: [2],
-    curve: 'straight',
-  },
-  fill: {
-    opacity: 1,
-  },
-  series: [
-    {
-      name: 'Total Orders',
-      data: randomizeArray(sparklineData),
+    colors: [themeColors.accent],
+    stroke: {
+      width: [2],
+      curve: 'straight',
     },
-  ],
-  labels: [...Array(24).keys()].map((n) => `2020-10-0${n + 1}`),
-  xaxis: {
-    type: 'datetime',
-  },
-  yaxis: {
-    min: 0,
-    labels: {
-      minWidth: 100,
+    fill: {
+      opacity: 1,
     },
-  },
-  title: {
-    text: 'Total Orders',
-    offsetX: 5,
-    style: {
-      fontSize: '24px',
-      cssClass: 'apexcharts-yaxis-title',
-      color: themeColors.lightText,
+    series: [
+      {
+        name: 'Total Orders',
+        data: randomizeArray(sparklineData),
+      },
+    ],
+    labels: [...Array(24).keys()].map((n) => `2020-10-0${n + 1}`),
+    xaxis: {
+      type: 'datetime',
     },
-  },
-  subtitle: {
-    text: '4,361',
-    offsetX: 5,
-    style: {
-      fontSize: '24px',
-      fontWeight: '600',
-      cssClass: 'apexcharts-yaxis-title',
+    yaxis: {
+      min: 0,
+      labels: {
+        minWidth: 100,
+      },
     },
-  },
-}
+    title: {
+      text: 'Total Orders',
+      offsetX: 5,
+      style: {
+        fontSize: '24px',
+        cssClass: 'apexcharts-yaxis-title',
+        color: themeColors.lightText,
+      },
+    },
+    subtitle: {
+      text: '4,361',
+      offsetX: 5,
+      style: {
+        fontSize: '24px',
+        fontWeight: '600',
+        cssClass: 'apexcharts-yaxis-title',
+      },
+    },
+  })
 
-export const spark4 = {
-  chart: {
-    id: 'sparkline3',
-    group: 'sparklines',
-    type: 'area',
-    height: 130,
-    sparkline: {
-      enabled: true,
+  const spark4 = ref({
+    chart: {
+      id: 'sparkline3',
+      group: 'sparklines',
+      type: 'area',
+      height: 130,
+      sparkline: {
+        enabled: true,
+      },
     },
-  },
-  colors: [themeColors.purple],
-  stroke: {
-    width: [2],
-    curve: 'straight',
-  },
-  fill: {
-    opacity: 1,
-  },
-  series: [
-    {
-      name: 'Consolidated Profit',
-      data: randomizeArray(sparklineData),
+    colors: [themeColors.purple],
+    stroke: {
+      width: [2],
+      curve: 'straight',
     },
-  ],
-  labels: [...Array(24).keys()].map((n) => `2020-10-0${n + 1}`),
-  xaxis: {
-    type: 'datetime',
-  },
-  yaxis: {
-    min: 0,
-    labels: {
-      minWidth: 100,
+    fill: {
+      opacity: 1,
     },
-  },
-  title: {
-    text: 'Consolidated Profit',
-    offsetX: 5,
-    style: {
-      fontSize: '24px',
-      cssClass: 'apexcharts-yaxis-title',
-      color: themeColors.lightText,
+    series: [
+      {
+        name: 'Consolidated Profit',
+        data: randomizeArray(sparklineData),
+      },
+    ],
+    labels: [...Array(24).keys()].map((n) => `2020-10-0${n + 1}`),
+    xaxis: {
+      type: 'datetime',
     },
-  },
-  subtitle: {
-    text: '$16,264.37',
-    offsetX: 5,
-    style: {
-      fontSize: '24px',
-      fontWeight: '600',
-      cssClass: 'apexcharts-yaxis-title',
+    yaxis: {
+      min: 0,
+      labels: {
+        minWidth: 100,
+      },
     },
-  },
+    title: {
+      text: 'Consolidated Profit',
+      offsetX: 5,
+      style: {
+        fontSize: '24px',
+        cssClass: 'apexcharts-yaxis-title',
+        color: themeColors.lightText,
+      },
+    },
+    subtitle: {
+      text: '$16,264.37',
+      offsetX: 5,
+      style: {
+        fontSize: '24px',
+        fontWeight: '600',
+        cssClass: 'apexcharts-yaxis-title',
+      },
+    },
+  })
+  return {
+    spark1,
+    spark2,
+    spark3,
+    spark4,
+  }
 }

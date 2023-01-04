@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import ApexChart from 'vue3-apexcharts'
 
-import { sharingOptions } from '/@src/data/dashboards/company/sharingChart'
-import { usersOptions } from '/@src/data/dashboards/company/usersChart'
+import { useSharingChart } from '/@src/data/dashboards/company/sharingChart'
+import { useUsersChart } from '/@src/data/dashboards/company/usersChart'
 import { useUsersBarChart } from '/@src/data/dashboards/company/usersBarChart'
 import { usePersonalScoreGauge } from '/@src/data/widgets/charts/personalScoreGauge'
 import { optionsCompany } from '/@src/data/dashboards/company/datatable'
@@ -10,6 +10,8 @@ import { popovers } from '/@src/data/users/userPopovers'
 
 const { personalScoreGaugeOptions, onPersonalScoreGaugeReady } = usePersonalScoreGauge()
 const { barData, barData2, usersBarOptions } = useUsersBarChart()
+const { sharingOptions } = useSharingChart()
+const { usersOptions } = useUsersChart()
 
 onMounted(async () => {
   setTimeout(() => {
