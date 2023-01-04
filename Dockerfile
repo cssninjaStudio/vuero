@@ -28,4 +28,4 @@ COPY --from=build /app .
 
 EXPOSE 3000 8080
 
-CMD ["pnpm", "ssr:preview"]
+CMD ["pnpm", "ssr:serve"]
