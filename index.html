@@ -12,8 +12,11 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>Vuero - Vue 3 Admin and Webapp UI Kit</title>
 
+    <!--
+      Here is basic SEO meta tags to enable social sharing and search engine indexing.
+    -->
+    <title>Vuero - Vue 3 Admin and Webapp UI Kit</title>
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <meta property="og:title" content="Vuero - Vue 3 Admin and Webapp UI Kit" />
     <meta
@@ -37,6 +40,23 @@
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@cssninjaStudio" />
+
+    <!-- 
+      this enables dark mode before the app is loaded when the user 
+      has dark mode enabled in their OS but only if the user 
+      hasn't set a preference in the app
+
+      @see /src/stores/darkmode.ts
+    -->
+    <script>
+      ;(function () {
+        const prefersDark =
+          window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        const setting = localStorage.getItem('color-schema') || 'auto'
+        if (setting === 'dark' || (prefersDark && setting !== 'light'))
+          document.documentElement.classList.toggle('is-dark', true)
+      })()
+    </script>
   </head>
   <body>
     <!-- 
