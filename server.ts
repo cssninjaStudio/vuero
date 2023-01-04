@@ -10,6 +10,8 @@ const isProd = process.env.NODE_ENV === 'production'
 
 // prevent non-ready SSR dependencies from throwing errors
 globalThis.__VUE_PROD_DEVTOOLS__ = false
+globalThis.__VUE_I18N_FULL_INSTALL__ = false
+globalThis.__VUE_I18N_LEGACY_API__ = false
 
 async function createServer() {
   let vite: ViteDevServer
@@ -22,7 +24,6 @@ async function createServer() {
   const indexProd = isProd ? readFileSync(resolve('dist/client/index.html'), 'utf-8') : ''
 
   if (!isProd) {
-    console.log('creating...')
     vite = await require('vite').createServer({
       root,
       logLevel: isTest ? 'error' : 'info',
@@ -37,7 +38,6 @@ async function createServer() {
         },
       },
     })
-    console.log('created')
     // use vite's connect instance as middleware
     app.use(fromNodeMiddleware(vite.middlewares))
   } else {
@@ -114,19 +114,22 @@ async function createServer() {
           return html
         }
 
-        // return send(res, html)
         // send page
         return html
-      } catch (e) {
+      } catch (error) {
         // send error 500 page
-        vite?.ssrFixStacktrace(e)
-        console.error(e)
+        vite?.ssrFixStacktrace(error)
+        if (!isProd) {
+          console.error('[pageError] ', error)
+        } else {
+          console.error('[pageError] ' + error)
+        }
 
         if (!isProd) {
           if (!res.headersSent) {
             res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate')
             res.writeHead(500)
-            res.end(e.message)
+            res.end(error.message)
           }
           return
         } else {
@@ -148,21 +151,27 @@ if (!isTest) {
   createServer()
     .then(({ app }) => listen(toNodeListener(app), { port: process.env.PORT || 3000 }))
     .catch((error) => {
-      console.error(error)
+      if (!isProd) {
+        console.error('[serverError] ', error)
+      } else {
+        console.error('[serverError] ' + error)
+      }
       process.exit(1)
     })
 
   if (!isProd) {
-    process.on('unhandledRejection', (err) =>
-      console.error('[dev] [unhandledRejection]', err)
+    process.on('unhandledRejection', (error) =>
+      console.error('[dev] [unhandledRejection]', error)
     )
-    process.on('uncaughtException', (err) =>
-      console.error('[dev] [uncaughtException]', err)
+    process.on('uncaughtException', (error) =>
+      console.error('[dev] [uncaughtException]', error)
     )
   } else {
-    process.on('unhandledRejection', (err) =>
-      console.error('[unhandledRejection] ' + err)
+    process.on('unhandledRejection', (error) =>
+      console.error('[unhandledRejection] ' + error)
     )
-    process.on('uncaughtException', (err) => console.error('[uncaughtException] ' + err))
+    process.on('uncaughtException', (error) =>
+      console.error('[uncaughtException] ' + error)
+    )
   }
 }

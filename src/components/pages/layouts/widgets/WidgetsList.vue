@@ -1,14 +1,11 @@
 <script setup lang="ts">
-import {
-  todoList1,
-  todoList2,
-  todoList3,
-  todoList4,
-} from '/@src/data/widgets/list/todoList'
+import { useTodoList } from '/@src/data/widgets/list/todoList'
 import { fileList1, fileList2 } from '/@src/data/widgets/list/fileList'
 import { userList } from '/@src/data/widgets/list/userList'
 import { topicList } from '/@src/data/widgets/list/topicList'
 import { timeline } from '/@src/data/widgets/list/timeline'
+
+const { todoList1, todoList2, todoList3, todoList4 } = useTodoList()
 </script>
 
 <template>

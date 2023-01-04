@@ -14,22 +14,18 @@ import {
   radialGroup2Options,
   radialGroup3Options,
 } from '/@src/data/dashboards/sales/salesRadialGroupChart'
-import {
-  barData,
-  barData2,
-  salesBarOptions,
-} from '/@src/data/dashboards/sales/salesBarChart'
-import {
-  personalScoreGaugeOptions,
-  onPersonalScoreGaugeReady,
-} from '/@src/data/widgets/charts/personalScoreGauge'
+import { useSalesBarChart } from '/@src/data/dashboards/sales/salesBarChart'
+import { usePersonalScoreGauge } from '/@src/data/widgets/charts/personalScoreGauge'
+
+const { personalScoreGaugeOptions, onPersonalScoreGaugeReady } = usePersonalScoreGauge()
+const { barData, barData2, salesBarOptions } = useSalesBarChart()
 
 onMounted(() => {
   setTimeout(() => {
     salesBarOptions.series = [
       {
         name: 'Orders',
-        data: barData,
+        data: barData.value,
       },
     ]
   }, 1000)
@@ -39,7 +35,7 @@ onMounted(() => {
       ...salesBarOptions.series,
       {
         name: 'Abandonned',
-        data: barData2,
+        data: barData2.value,
       },
     ]
   }, 2500)

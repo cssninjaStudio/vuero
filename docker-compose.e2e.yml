@@ -9,4 +9,4 @@ services:
         - VITE_MAPBOX_ACCESS_TOKEN=pk.eyJ1IjoiY3NzbmluamEiLCJhIjoiY2toZW1nYm0zMDAxODJycXFzZ3g4cnZ6diJ9.9ebfrGREuwkauRr_afDTgA
     ports:
       - '8080:8080'
-      - '5000:5000'
+      - '3000:3000'

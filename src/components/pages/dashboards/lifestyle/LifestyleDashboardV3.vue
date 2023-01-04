@@ -5,11 +5,10 @@ import { energyChartOptions } from '/@src/data/dashboards/lifestyle-v3/energyCha
 import { overallChartOptions } from '/@src/data/dashboards/lifestyle-v3/overallChart'
 import { oxygenChartOptions } from '/@src/data/dashboards/lifestyle-v3/oxygenChart'
 import { progressChartOptions } from '/@src/data/dashboards/lifestyle-v3/progressChart'
-import {
-  personalScoreGaugeOptions,
-  onPersonalScoreGaugeReady,
-} from '/@src/data/widgets/charts/personalScoreGauge'
 import { followersList } from '/@src/data/widgets/ui/followers'
+import { usePersonalScoreGauge } from '/@src/data/widgets/charts/personalScoreGauge'
+
+const { personalScoreGaugeOptions, onPersonalScoreGaugeReady } = usePersonalScoreGauge()
 </script>
 
 <template>

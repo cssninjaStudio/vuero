@@ -9,7 +9,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node-version: [16]
+        node-version: [18]
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -28,10 +28,10 @@ jobs:
           # record: true
           # parallel: true
           install: true
-          build: pnpm build
-          start: pnpm preview
+          build: pnpm ssr:build
+          start: pnpm ssr:preview
           command: pnpm test:e2e
-          wait-on: 'http://localhost:5000'
+          wait-on: 'http://localhost:3000'
           cache-key: ${{ matrix.node-version }}-${{ runner.os }}-cypress-cache-${{ hashFiles('**/pnpm-lock.yaml') }}
         env:
           NODE_OPTIONS: '--max-old-space-size=4096'

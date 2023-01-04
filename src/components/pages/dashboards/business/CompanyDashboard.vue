@@ -3,24 +3,20 @@ import ApexChart from 'vue3-apexcharts'
 
 import { sharingOptions } from '/@src/data/dashboards/company/sharingChart'
 import { usersOptions } from '/@src/data/dashboards/company/usersChart'
-import {
-  barData,
-  barData2,
-  usersBarOptions,
-} from '/@src/data/dashboards/company/usersBarChart'
-import {
-  personalScoreGaugeOptions,
-  onPersonalScoreGaugeReady,
-} from '/@src/data/widgets/charts/personalScoreGauge'
+import { useUsersBarChart } from '/@src/data/dashboards/company/usersBarChart'
+import { usePersonalScoreGauge } from '/@src/data/widgets/charts/personalScoreGauge'
 import { optionsCompany } from '/@src/data/dashboards/company/datatable'
 import { popovers } from '/@src/data/users/userPopovers'
+
+const { personalScoreGaugeOptions, onPersonalScoreGaugeReady } = usePersonalScoreGauge()
+const { barData, barData2, usersBarOptions } = useUsersBarChart()
 
 onMounted(async () => {
   setTimeout(() => {
     usersBarOptions.series = [
       {
         name: 'Orders',
-        data: barData,
+        data: barData.value,
       },
     ]
   }, 1000)
@@ -30,7 +26,7 @@ onMounted(async () => {
       ...usersBarOptions.series,
       {
         name: 'Abandonned',
-        data: barData2,
+        data: barData2.value,
       },
     ]
   }, 2500)

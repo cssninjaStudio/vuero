@@ -3,7 +3,7 @@ import { defineConfig } from 'cypress'
 export default defineConfig({
   projectId: 'seeui4',
   e2e: {
-    baseUrl: 'http://localhost:5000',
+    baseUrl: 'http://localhost:3000',
     video: false,
     chromeWebSecurity: false,
     retries: {

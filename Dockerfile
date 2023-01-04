@@ -17,7 +17,7 @@ RUN VITE_API_BASE_URL=$VITE_API_BASE_URL \
   VITE_MAPBOX_ACCESS_TOKEN=$VITE_MAPBOX_ACCESS_TOKEN \
   GTM_ID=$GTM_ID \
   NODE_OPTIONS=--max-old-space-size=4096 \
-  pnpm build
+  pnpm ssr:build
 
 FROM bitnami/node:18 AS prod
 WORKDIR /app
@@ -26,6 +26,6 @@ RUN corepack enable && corepack prepare pnpm@latest --activate
 
 COPY --from=build /app .
 
-EXPOSE 5000 8080
+EXPOSE 3000 8080
 
-CMD ["pnpm", "preview"]
+CMD ["pnpm", "ssr:preview"]

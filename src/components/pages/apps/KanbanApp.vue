@@ -1,17 +1,19 @@
 <script setup lang="ts">
 import 'dragula/dist/dragula.css'
-import type { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
 
-import { tasks } from '/@src/data/apps/kanban'
+import { useKanban } from '/@src/data/apps/kanban'
 import { onceImageErrored } from '/@src/utils/via-placeholder'
 
-export interface KanbanTask {
-  id: string
-  title: string
-  state: string
-  dueDate: string
-  participants: VAvatarProps[]
-}
+const {
+  tasks,
+  participants,
+  newTasks,
+  progressTasks,
+  readyTasks,
+  reviewTasks,
+  completedTasks,
+  search,
+} = useKanban()
 
 const newContainer = ref<HTMLElement>()
 const progressContainer = ref<HTMLElement>()
@@ -19,54 +21,11 @@ const readyContainer = ref<HTMLElement>()
 const reviewContainer = ref<HTMLElement>()
 const completedContainer = ref<HTMLElement>()
 
-const search = ref('')
 const isColumnNewCollapsed = ref(false)
 const isColumnProgressCollapsed = ref(false)
 const isColumnReadyCollapsed = ref(false)
 const isColumnReviewCollapsed = ref(false)
 const isColumnCompletedCollapsed = ref(false)
-
-const filteredTasks = computed(() => {
-  if (!search.value) {
-    return tasks as KanbanTask[]
-  } else {
-    return tasks.filter((item) => {
-      return item.title.match(new RegExp(search.value, 'i'))
-    }) as KanbanTask[]
-  }
-})
-
-const participants = computed(() => {
-  return tasks.reduce<VAvatarProps[]>((accumulator, task) => {
-    for (const participant of task.participants) {
-      const exists = accumulator.find((value) => {
-        return value.picture === participant.picture
-      })
-
-      if (!exists) {
-        accumulator.push(participant as VAvatarProps)
-      }
-    }
-
-    return accumulator
-  }, [])
-})
-
-const newTasks = computed(() => {
-  return filteredTasks.value.filter((task) => task.state === 'new')
-})
-const progressTasks = computed(() => {
-  return filteredTasks.value.filter((task) => task.state === 'progress')
-})
-const readyTasks = computed(() => {
-  return filteredTasks.value.filter((task) => task.state === 'ready')
-})
-const reviewTasks = computed(() => {
-  return filteredTasks.value.filter((task) => task.state === 'review')
-})
-const completedTasks = computed(() => {
-  return filteredTasks.value.filter((task) => task.state === 'completed')
-})
 
 function onDragInvalid(el?: Element): boolean {
   if (el) {

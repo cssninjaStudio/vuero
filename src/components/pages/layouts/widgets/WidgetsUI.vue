@@ -1,10 +1,6 @@
 <script setup lang="ts">
 import ApexChart from 'vue3-apexcharts'
 
-import {
-  personalScoreGaugeOptions,
-  onPersonalScoreGaugeReady,
-} from '/@src/data/widgets/charts/personalScoreGauge'
 import { followersList } from '/@src/data/widgets/ui/followers'
 import { tagList1, tagList2 } from '/@src/data/widgets/ui/tagList'
 import { tabs } from '/@src/data/widgets/ui/tabList'
@@ -13,6 +9,9 @@ import { iconList } from '/@src/data/widgets/ui/menuList'
 import { notifications } from '/@src/data/widgets/ui/notificationList'
 import { trendWidgetChartOptions } from '/@src/data/widgets/charts/trendWidgetChart'
 import { onceImageErrored } from '/@src/utils/via-placeholder'
+import { usePersonalScoreGauge } from '/@src/data/widgets/charts/personalScoreGauge'
+
+const { personalScoreGaugeOptions, onPersonalScoreGaugeReady } = usePersonalScoreGauge()
 </script>
 
 <template>

@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
+import { useTodoList } from '/@src/data/widgets/list/todoList'
+
+const { todoList3, todoList4 } = useTodoList()
 
 const data = [
   {

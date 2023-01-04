@@ -108,6 +108,8 @@ export default defineConfig({
       'remark-rehype',
       'shiki-es',
       'unified',
+      'workbox-window',
+      'textarea-markdown-editor/dist/esm/bootstrap',
     ],
     disabled: false,
   },
@@ -123,7 +125,7 @@ export default defineConfig({
   build: {
     minify: 'terser',
     // Do not warn about large chunks
-    chunkSizeWarningLimit: Infinity,
+    // chunkSizeWarningLimit: Infinity,
     // Double the default size threshold for inlined assets
     // https://vitejs.dev/config/build-options.html#build-assetsinlinelimit
     assetsInlineLimit: 4096 * 2,
@@ -147,6 +149,7 @@ export default defineConfig({
     VueI18nPlugin({
       include: resolve(dirname(fileURLToPath(import.meta.url)), './src/locales/**'),
       fullInstall: false,
+      compositionOnly: true,
     }),
 
     /**

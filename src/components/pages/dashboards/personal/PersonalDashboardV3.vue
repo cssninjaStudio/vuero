@@ -3,11 +3,10 @@ import ApexChart from 'vue3-apexcharts'
 
 import type { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
 import { interviewsOptions } from '/@src/data/dashboards/personal-v3/interviewsChart'
-import {
-  progressGaugeOptions,
-  onprogressGaugeReady,
-} from '/@src/data/dashboards/personal-v3/progressChart'
+import { useProgressChart } from '/@src/data/dashboards/personal-v3/progressChart'
 import * as userData from '/@src/data/dashboards/personal-v3/users'
+
+const { progressGaugeOptions, onprogressGaugeReady } = useProgressChart()
 
 const userStack = userData.userStack as VAvatarProps[]
 </script>
