@@ -1,5 +1,4 @@
-import { acceptHMRUpdate, defineStore } from 'pinia'
-import { reactive, ref, shallowRef, computed } from 'vue'
+import type { InjectionKey } from 'vue'
 
 /**
  * Using typescript types allow better developer experience
@@ -15,7 +14,10 @@ interface WizardStepOptions {
   validateStepFn?: () => Promise<void>
 }
 
-export const useWizard = defineStore('wizard', () => {
+export type WizardContext = ReturnType<typeof createWizardContext>
+export const useWizardSymbolContext = Symbol('wizard') as InjectionKey<WizardContext>
+
+function createWizardContext() {
   const step = ref(1)
   const loading = ref(false)
   const canNavigate = ref(false)
@@ -94,7 +96,7 @@ export const useWizard = defineStore('wizard', () => {
     data.customer = null
   }
 
-  return {
+  return reactive({
     canNavigate,
     previousStepFn,
     validateStepFn,
@@ -106,16 +108,14 @@ export const useWizard = defineStore('wizard', () => {
     setStep,
     save,
     reset,
-  } as const
-})
+  })
+}
 
-/**
- * Pinia supports Hot Module replacement so you can edit your stores and
- * interact with them directly in your app without reloading the page.
- *
- * @see https://pinia.esm.dev/cookbook/hot-module-replacement.html
- * @see https://vitejs.dev/guide/api-hmr.html
- */
-if (import.meta.hot) {
-  import.meta.hot.accept(acceptHMRUpdate(useWizard, import.meta.hot))
+export function useWizard() {
+  let context = inject(useWizardSymbolContext, undefined)
+  if (!context) {
+    context = createWizardContext()
+    provide(useWizardSymbolContext, context)
+  }
+  return context
 }

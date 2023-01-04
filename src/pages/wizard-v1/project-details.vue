@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { WizardCustomer } from '/@src/models/wizard'
 import { customers } from '/@src/data/wizard'
-import { useWizard } from '/@src/stores/wizard'
+import { useWizard } from '/@src/composable/useWizard'
 
 const search = ref('')
 const wizard = useWizard()

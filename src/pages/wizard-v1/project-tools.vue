@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useWizard } from '/@src/stores/wizard'
+import { useWizard } from '/@src/composable/useWizard'
 import { tools } from '/@src/data/wizard'
 
 const wizard = useWizard()

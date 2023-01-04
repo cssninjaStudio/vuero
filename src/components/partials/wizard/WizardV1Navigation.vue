@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useDropdown } from '/@src/composable/useDropdown'
-import { useWizard } from '/@src/stores/wizard'
+import { useWizard } from '/@src/composable/useWizard'
 import { useDarkmode } from '/@src/stores/darkmode'
 import { onceImageErrored } from '/@src/utils/via-placeholder'
 

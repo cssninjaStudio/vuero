@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import dayjs from 'dayjs'
 
-import { useWizard } from '/@src/stores/wizard'
+import { useWizard } from '/@src/composable/useWizard'
 
 const wizard = useWizard()
 const router = useRouter()

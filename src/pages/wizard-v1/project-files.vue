@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Dropzone from 'dropzone'
 
-import { useWizard } from '/@src/stores/wizard'
+import { useWizard } from '/@src/composable/useWizard'
 import { onceImageErrored } from '/@src/utils/via-placeholder'
 import sleep from '/@src/utils/sleep'
 Dropzone.autoDiscover = false
