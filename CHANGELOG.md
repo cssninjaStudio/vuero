@@ -2,6 +2,37 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.6.0](https://github.com/cssninjaStudio/vuero/compare/v2.5.0...v2.6.0) (2023-01-05)
+
+
+### Features
+
+* add stay-focus helper and enable it on documentation ([2192a45](https://github.com/cssninjaStudio/vuero/commit/2192a4576a003669bde8d94a12f241281ea6c006))
+* convert project to module + migrate doc to rehype and shiki ([e5643cd](https://github.com/cssninjaStudio/vuero/commit/e5643cde962a2efc93d4e0f1f20b9cdd9e563147))
+* **i18:** extract translations from components to file, better i18n-ally integration ([bea3bc1](https://github.com/cssninjaStudio/vuero/commit/bea3bc1227c77ee388e83418952fc8404375cddc))
+* **i18n:** migrate to unplugin-vue-i18n ([936451a](https://github.com/cssninjaStudio/vuero/commit/936451a4ab439bdf90a50c1fcceaee5b7dbad619))
+* **ssr:** improve server rendering compatibility ([102bfcc](https://github.com/cssninjaStudio/vuero/commit/102bfcc1cd9ab89b09364f77e78f629accd6ffb1))
+* **v-action:** add to props so component can be used as router link ([dabe2bb](https://github.com/cssninjaStudio/vuero/commit/dabe2bb53d86cfdcf535a03c3bdb35b39ed554ba))
+* **v-markdown-editor:** add accessible component to edit markdown ([e74a71a](https://github.com/cssninjaStudio/vuero/commit/e74a71ada697a3931dc1faa6a9ecb56fc2b8fbd8))
+* **v-markdown-preview:** add component to render markdown with remark and shiki ([f717687](https://github.com/cssninjaStudio/vuero/commit/f71768794a27c7ade1ce30f615b9682f20222d63))
+* **v-photos-swipe:** upgrade to photoswipe v5 ([b516666](https://github.com/cssninjaStudio/vuero/commit/b5166660626b69200e2e6aadfb4f258bd676a15a))
+* **v-textarea:** add autogrow property ([1f2914d](https://github.com/cssninjaStudio/vuero/commit/1f2914d4893474ec71b0ce1ee14b70750b668b69))
+
+
+### Bug Fixes
+
+* **darkmode:** detect color scheme before app start ([59e957e](https://github.com/cssninjaStudio/vuero/commit/59e957e4924d54d7fabe6bb8a693223130892924))
+* **demo-data:** convert to demo data to composable to avoid cross state pollution ([2a001ef](https://github.com/cssninjaStudio/vuero/commit/2a001ef12b992b3dabb091663d37d892477b8aab))
+* **router:** blank pages on redirect" ([a1002a7](https://github.com/cssninjaStudio/vuero/commit/a1002a7e53700f51f5eeb19153c870820e043bc9))
+* **styles:** global styles regressions ([32d1a6c](https://github.com/cssninjaStudio/vuero/commit/32d1a6c0563c30830ef6d43bf96d7c169baeaf64))
+* **use-wizard:** move store to composable using provide/inject ([029326f](https://github.com/cssninjaStudio/vuero/commit/029326f6d6c22ac634f8e916ccf2dd286ca99849))
+* **v-action:** improve interactivity styles ([f2e13ed](https://github.com/cssninjaStudio/vuero/commit/f2e13ed274e3348089043df514fce28a3715f011))
+* **v-snack:** remove nested v-tabs ([4b15b12](https://github.com/cssninjaStudio/vuero/commit/4b15b12c33c9fc57542afa6e385fabca58cf4ad0))
+* **v-tabs:** display first tab if none selected by default ([db0e13b](https://github.com/cssninjaStudio/vuero/commit/db0e13bc9607471ae3966645a16312fd5de170f8))
+* **v-tabs:** emited value typing to any ([6dedf11](https://github.com/cssninjaStudio/vuero/commit/6dedf11ae2ec4aca15df84c27feed45df1f1457a))
+* **v-tabs:** prevent tab link action ([ae927db](https://github.com/cssninjaStudio/vuero/commit/ae927db3e58261f565327248d01d06c60c545724))
+* **v-tooltip:** update tooltip when bindings changes ([5e00a61](https://github.com/cssninjaStudio/vuero/commit/5e00a6192c469da1f148236d7c1e4e9956f38651))
+
 ## [2.5.0](https://github.com/cssninjaStudio/vuero/compare/v2.4.0...v2.5.0) (2022-12-11)
 
 
