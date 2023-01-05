@@ -11,6 +11,7 @@ export interface VActionProps {
 }
 
 const props = withDefaults(defineProps<VActionProps>(), {
+  to: undefined,
   dark: undefined,
 })
 </script>

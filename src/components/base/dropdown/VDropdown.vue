@@ -22,6 +22,7 @@ const props = withDefaults(defineProps<VDropdownProps>(), {
   color: undefined,
   icon: undefined,
   options: undefined,
+  classes: undefined,
 })
 
 const dropdownElement = ref<HTMLElement>()

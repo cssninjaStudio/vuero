@@ -242,7 +242,6 @@ watchEffect((cleanup) => {
           <div v-for="(command, key) in props.toolbar" :key="key" class="toolbar-item">
             <VAction
               v-if="'action' in command"
-              :key="`action-${key}`"
               v-tooltip.rounded="command.tooltip"
               dark="2"
               class="toolbar-action"
@@ -253,7 +252,6 @@ watchEffect((cleanup) => {
             </VAction>
             <VDropdown
               v-else
-              :key="`dropdown-${key}`"
               class="toolbar-dropdown"
               :class="[command.vertical && 'is-vertical']"
             >
