@@ -42,6 +42,22 @@
     <meta name="twitter:site" content="@cssninjaStudio" />
 
     <!-- 
+      preloading fonts vendors
+    -->
+    <link
+      rel="preload"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="/vendors/font-awesome-v5.css"
+    />
+    <link
+      rel="preload"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="/vendors/line-icons-pro.css"
+    />
+
+    <!-- 
       this enables dark mode before the app is loaded when the user 
       has dark mode enabled in their OS but only if the user 
       hasn't set a preference in the app

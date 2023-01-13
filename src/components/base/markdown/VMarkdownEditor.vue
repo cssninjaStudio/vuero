@@ -272,8 +272,8 @@ watchEffect((cleanup) => {
               <template #content>
                 <VButtons class="mt-1" addons>
                   <VAction
-                    v-for="(sub, key) in command.children"
-                    :key="`action-${key}`"
+                    v-for="(sub, subkey) in command.children"
+                    :key="`action-${subkey}`"
                     v-tooltip.rounded="sub.tooltip"
                     class="toolbar-dropdown-action"
                     dark="2"
