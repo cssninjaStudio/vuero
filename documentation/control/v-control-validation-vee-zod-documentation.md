@@ -125,24 +125,26 @@ const handleSignup = handleSubmit(async (values) => {
     </VField>
     <VField id="birthdate" v-slot="{ field }" label="Birthdate">
       <VControl icon="feather:calendar">
-        <VDatePicker
-          :model-value="field!.value"
-          color="green"
-          trim-weeks
-          @update:modelValue="field?.handleChange"
-        >
-          <template #default="{ inputValue, inputEvents }">
-            <input
-              class="input"
-              :value="inputValue"
-              placeholder="Select your birthdate"
-              v-on="inputEvents"
-            />
-            <p v-if="field?.errors?.value?.length" class="help is-danger">
-              {{ field.errors?.value?.join(', ') }}
-            </p>
-          </template>
-        </VDatePicker>
+        <ClientOnly>
+          <VDatePicker
+            :model-value="field!.value"
+            color="green"
+            trim-weeks
+            @update:modelValue="field?.handleChange"
+          >
+            <template #default="{ inputValue, inputEvents }">
+              <input
+                class="input"
+                :value="inputValue"
+                placeholder="Select your birthdate"
+                v-on="inputEvents"
+              />
+              <p v-if="field?.errors?.value?.length" class="help is-danger">
+                {{ field.errors?.value?.join(', ') }}
+              </p>
+            </template>
+          </VDatePicker>
+        </ClientOnly>
       </VControl>
     </VField>
     <VField
