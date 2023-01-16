@@ -266,6 +266,7 @@ const stayFocus = useLocalStorage('disable-stay-focus', '')
         &.is-grouped {
           .control {
             margin-bottom: 0.75rem;
+            margin-right: 0;
           }
         }
 

@@ -8,7 +8,7 @@ See markup for more details about usage.
 
 ```vue
 <template>
-  <VField addons>
+  <VField label="Gmail account" addons>
     <VControl expanded>
       <VInput type="text" class="input" placeholder="Username" />
     </VControl>
@@ -23,7 +23,7 @@ See markup for more details about usage.
 
 <!--example-->
 
-<VField addons>
+<VField label="Gmail account" addons>
   <VControl expanded>
     <VInput
       type="text"

@@ -354,23 +354,39 @@ select {
 
   &.has-addons,
   &.is-grouped {
-    .control {
-      .button {
-        height: 38px;
+    display: block;
+
+    .field-addon-label {
+      .label {
+        font-family: var(--font);
+        font-size: 0.9rem;
+        color: var(--light-text) !important;
+        font-weight: 400;
+        margin-bottom: 0.5em;
       }
+    }
 
-      .select {
-        height: 38px;
+    .field-addon-body {
+      display: flex;
 
-        &.currency-select {
-          select {
-            font-family: var(--font);
-            font-weight: 600;
-          }
+      .control {
+        .button {
+          height: 38px;
         }
 
-        select {
+        .select {
           height: 38px;
+
+          &.currency-select {
+            select {
+              font-family: var(--font);
+              font-weight: 600;
+            }
+          }
+
+          select {
+            height: 38px;
+          }
         }
       }
     }

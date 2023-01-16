@@ -15,7 +15,7 @@ on `VControl` and `VField` components.
       <VInput type="text" placeholder="will not receive focus" />
       <p class="help">field id: {{ id }}</p>
     </VControl>
-    <VControl v-slot="{ id }">
+    <VControl v-slot="{ id }" subcontrol>
       <VInput type="text" placeholder="will receive focus" />
       <p class="help">field id: {{ id }}</p>
     </VControl>
@@ -33,7 +33,7 @@ on `VControl` and `VField` components.
     <VInput type="text" placeholder="will not receive focus" />
     <p class="help">field id: {{ id }}</p>
   </VControl>
-  <VControl v-slot="{ id }">
+  <VControl v-slot="{ id }" subcontrol>
     <VInput type="text" placeholder="will receive focus" />
     <p class="help">field id: {{ id }}</p>
   </VControl>

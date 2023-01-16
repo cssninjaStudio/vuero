@@ -41,7 +41,17 @@ defineExpose(vFieldContext)
 
 <template>
   <div :class="classes">
-    <template v-if="hasLabel && props.horizontal">
+    <template v-if="props.addons">
+      <div v-if="hasLabel" class="field-addon-label is-normal">
+        <slot v-bind="vFieldContext" name="label">
+          <VLabel>{{ props.label }}</VLabel>
+        </slot>
+      </div>
+      <div class="field-addon-body">
+        <slot v-bind="vFieldContext"></slot>
+      </div>
+    </template>
+    <template v-else-if="hasLabel && props.horizontal">
       <div class="field-label is-normal">
         <slot v-bind="vFieldContext" name="label">
           <VLabel>{{ props.label }}</VLabel>
