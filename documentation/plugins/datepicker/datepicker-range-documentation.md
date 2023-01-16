@@ -28,13 +28,23 @@ const range = reactive({
       <template #default="{ inputValue, inputEvents }">
         <VField addons>
           <VControl>
-            <VInput :value="inputValue.start" v-on="inputEvents.start" />
+            <input
+              class="input v-input"
+              type="text"
+              :value="inputValue.start"
+              v-on="inputEvents.start"
+            />
           </VControl>
           <VControl>
             <VButton static icon="feather:arrow-right" />
           </VControl>
           <VControl subcontrol>
-            <VInput :value="inputValue.end" v-on="inputEvents.end" />
+            <input
+              class="input v-input"
+              type="text"
+              :value="inputValue.end"
+              v-on="inputEvents.end"
+            />
           </VControl>
         </VField>
       </template>
@@ -52,13 +62,13 @@ const range = reactive({
     <template v-slot="{ inputValue, inputEvents }">
       <VField addons>
         <VControl expanded icon="feather:corner-down-right">
-          <VInput :value="inputValue.start" v-on="inputEvents.start" />
+          <input class="input v-input" type="text" :value="inputValue.start" v-on="inputEvents.start" />
         </VControl>
         <VControl>
           <VButton static>to</VButton>
         </VControl>
         <VControl expanded icon="feather:corner-right-up" subcontrol>
-          <VInput :value="inputValue.end" v-on="inputEvents.end" />
+          <input class="input v-input" type="text" :value="inputValue.end" v-on="inputEvents.end" />
         </VControl>
       </VField>
     </template>

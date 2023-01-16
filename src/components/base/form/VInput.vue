@@ -38,7 +38,7 @@ watch(
 const classes = computed(() => {
   if (props.raw) return []
 
-  return ['input']
+  return ['input', 'v-input']
 })
 </script>
 
@@ -54,9 +54,3 @@ const classes = computed(() => {
     @blur="vFieldContext.field?.handleBlur"
   />
 </template>
-
-<style lang="scss" scoped>
-.input {
-  height: 38px;
-}
-</style>

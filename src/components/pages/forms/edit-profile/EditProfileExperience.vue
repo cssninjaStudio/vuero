@@ -122,7 +122,12 @@ const onSave = async () => {
                       <template #default="{ inputValue, inputEvents }">
                         <VField addons class="has-addons-fullwidth">
                           <VControl>
-                            <VInput :value="inputValue.start" v-on="inputEvents.start" />
+                            <input
+                              class="input v-input"
+                              type="text"
+                              :value="inputValue.start"
+                              v-on="inputEvents.start"
+                            />
                           </VControl>
                           <VControl nogrow>
                             <div class="button">
@@ -134,7 +139,12 @@ const onSave = async () => {
                             </div>
                           </VControl>
                           <VControl subcontrol>
-                            <VInput :value="inputValue.end" v-on="inputEvents.end" />
+                            <input
+                              class="input v-input"
+                              type="text"
+                              :value="inputValue.end"
+                              v-on="inputEvents.end"
+                            />
                           </VControl>
                         </VField>
                       </template>

@@ -71,7 +71,8 @@ const onSubmit = () => {
                         <VLabel>Meeting start date</VLabel>
 
                         <VControl icon="feather:calendar">
-                          <VInput
+                          <input
+                            type="text"
                             placeholder="Start Date"
                             :value="inputValue.start"
                             class="input form-datepicker"
@@ -109,7 +110,8 @@ const onSubmit = () => {
                   <VField>
                     <VLabel>Meeting start time</VLabel>
                     <VControl>
-                      <VInput
+                      <input
+                        type="text"
                         class="input form-timepicker"
                         :value="inputValue"
                         v-on="inputEvents"
@@ -130,7 +132,8 @@ const onSubmit = () => {
                   <VField>
                     <VLabel class="is-vhidden">Meeting end time</VLabel>
                     <VControl>
-                      <VInput
+                      <input
+                        type="text"
                         class="input form-timepicker"
                         :value="inputValue"
                         v-on="inputEvents"

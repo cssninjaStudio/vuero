@@ -25,7 +25,12 @@ const date = ref(null)
       <template #default="{ inputValue, inputEvents }">
         <VField>
           <VControl icon="feather:calendar">
-            <VInput :value="inputValue" v-on="inputEvents" />
+            <input
+              class="input v-input"
+              type="text"
+              :value="inputValue"
+              v-on="inputEvents"
+            />
           </VControl>
         </VField>
       </template>
@@ -43,7 +48,7 @@ const date = ref(null)
     <template #default="{ inputValue, inputEvents }">
       <VField>
         <VControl icon="feather:calendar">
-          <VInput :value="inputValue" v-on="inputEvents" />
+          <input class="input v-input" type="text" :value="inputValue" v-on="inputEvents" />
         </VControl>
       </VField>
     </template>

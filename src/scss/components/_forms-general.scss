@@ -88,6 +88,10 @@ label[for] {
       border-color: var(--danger) !important;
     }
   }
+
+  &.v-input {
+    height: 38px;
+  }
 }
 
 .textarea {

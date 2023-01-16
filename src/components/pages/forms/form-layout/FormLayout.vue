@@ -182,7 +182,8 @@ const onSubmit = () => {
                     <VField>
                       <VLabel>Prefered Date</VLabel>
                       <VControl icon="feather:calendar">
-                        <VInput
+                        <input
+                          class="input v-input"
                           type="text"
                           placeholder="Select a date"
                           :value="inputValue"
