@@ -47,7 +47,10 @@ export function transformSlots(source: string, condition: string = '') {
         `<!--code-->`,
         `</template><template ${condition} #code>\n<slot name="code"><div v-pre>`
       )
-      .replace(`<!--/code-->`, `</div></slot>\n</template>`)
+      .replace(
+        `<!--/code-->`,
+        `</div></slot>\n</template>\n<template ${condition} #example><slot name="example"></slot></template>`
+      )
   }
 
   if (source.includes('<!--example-->')) {
@@ -56,8 +59,15 @@ export function transformSlots(source: string, condition: string = '') {
         `<!--example-->`,
         `</template><template ${condition} #example>\n<slot name="example">`
       )
-      .replace(`<!--/example-->`, `</slot>\n</template>`)
+      .replace(
+        `<!--/example-->`,
+        `</slot>\n</template>\n<template ${condition} #code><slot name="code"></slot></template>`
+      )
   }
 
-  return `<template ${condition} #default>${source}</template>`
+  return (
+    `<template ${condition} #default>${source}</template>` +
+    `<template ${condition} #example><slot name="example"></slot></template>` +
+    `<template ${condition} #code><slot name="code"></slot></template>`
+  )
 }
