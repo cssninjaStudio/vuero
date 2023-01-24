@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.6.1](https://github.com/cssninjaStudio/vuero/compare/v2.6.0...v2.6.1) (2023-01-24)
+
+
+### Bug Fixes
+
+* **doc:** non displayed slots ([4277e08](https://github.com/cssninjaStudio/vuero/commit/4277e08d98076cf3f57b1e1885fcb842cb2f8b15))
+* import icons vendors ([a80d11e](https://github.com/cssninjaStudio/vuero/commit/a80d11e4a7b8737cf7a2371516cb820aa9b57f26))
+* **v-datepicker:** add missing client-only ([cdf4c82](https://github.com/cssninjaStudio/vuero/commit/cdf4c82e3d36cd872134b6bad65ad31a8e101f3b))
+* **v-datepicker:** use native input in slot in order to bind events ([688643e](https://github.com/cssninjaStudio/vuero/commit/688643e587a628d154305f4a361c194bdc249857)), closes [#186](https://github.com/cssninjaStudio/vuero/issues/186)
+* **v-field:** correctly display label when using addons ([b6ede0f](https://github.com/cssninjaStudio/vuero/commit/b6ede0fe1c7176d3782e49b08ec2cbb187878c50)), closes [#152](https://github.com/cssninjaStudio/vuero/issues/152)
+
 ## [2.6.0](https://github.com/cssninjaStudio/vuero/compare/v2.5.0...v2.6.0) (2023-01-05)
 
 
