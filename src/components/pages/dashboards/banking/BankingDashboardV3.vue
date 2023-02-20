@@ -332,10 +332,8 @@ const { popularityGaugeOptions } = usePopularityGaugeChart()
       padding: 30px;
 
       .people {
-        .v-avatar {
-          margin-right: 0.5rem;
-          margin-bottom: 0.5rem;
-        }
+        display: flex;
+        gap: 0.5rem;
       }
     }
 
