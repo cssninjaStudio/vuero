@@ -141,7 +141,7 @@
       </div>
       <div class="footer-copyright has-text-centered">
         <p>
-          <span role="img" aria-label="copyright">&copy;</span> 2020-2022 |
+          <span role="img" aria-label="copyright">&copy;</span> 2020-2023 |
           <a href="https://cssninja.io">cssninjaStudio</a> | All Rights Reserved.
         </p>
       </div>

@@ -142,9 +142,9 @@ export default defineConfig({
     }),
 
     /**
-     * vite-plugin-vue-i18n plugin does i18n resources pre-compilation / optimizations
+     * unplugin-vue-i18n plugin does i18n resources pre-compilation / optimizations
      *
-     * @see https://github.com/intlify/bundle-tools/tree/main/packages/vite-plugin-vue-i18n
+     * @see https://github.com/intlify/bundle-tools/blob/main/packages/unplugin-vue-i18n/README.md
      */
     VueI18nPlugin({
       include: resolve(dirname(fileURLToPath(import.meta.url)), './src/locales/**'),
