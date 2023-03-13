@@ -211,6 +211,7 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
     position: relative;
     height: 32px;
     width: 32px;
+    display: inline-block;
 
     .shadow-circle {
       position: absolute;
