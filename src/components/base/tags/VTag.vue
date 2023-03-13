@@ -198,21 +198,6 @@ const props = withDefaults(defineProps<VTagProps>(), {
     }
   }
 
-  &.is-green {
-    background: var(--green);
-    color: var(--white);
-
-    &.is-elevated {
-      box-shadow: var(--green-box-shadow);
-    }
-
-    &.is-outlined {
-      background: none !important;
-      color: var(--green);
-      border: 1px solid var(--green);
-    }
-  }
-
   &.is-purple {
     background: var(--purple);
     color: var(--white);
