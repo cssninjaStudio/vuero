@@ -176,7 +176,7 @@
     "remark-gfm": "3.0.1",
     "remark-parse": "10.0.1",
     "remark-rehype": "10.1.0",
-    "rimraf": "3.0.2",
+    "rimraf": "4.4.1",
     "rollup": "3.9.1",
     "rollup-plugin-purgecss": "5.0.0",
     "sass": "1.57.1",
