@@ -1,5 +1,5 @@
 <script lang="ts">
-import type { Lang, Theme } from 'shiki-es'
+import type { Lang, Theme } from 'shiki'
 import type { Processor } from 'unified'
 import { h, type PropType } from 'vue'
 import { useDarkmode } from '/@src/stores/darkmode'
@@ -32,7 +32,7 @@ async function loadModules() {
     import('remark-gfm').then((m) => m.default),
     import('remark-parse').then((m) => m.default),
     import('remark-rehype').then((m) => m.default),
-    import('shiki-es').then((m) => m.getHighlighter),
+    import('shiki').then((m) => m.getHighlighter),
     import('unified').then((m) => m.unified),
   ])
 

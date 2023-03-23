@@ -1,6 +1,6 @@
 import type { Plugin, ResolvedConfig } from 'vite'
 import type { Processor } from 'unified'
-import type { Theme } from 'shiki-es'
+import type { Theme } from 'shiki'
 
 import { join, basename } from 'pathe'
 import { compileTemplate, parse } from '@vue/compiler-sfc'

@@ -9,7 +9,7 @@ import remarkParse from 'remark-parse'
 import remarkGfm from 'remark-gfm'
 import remarkRehype from 'remark-rehype'
 import remarkFrontmatter from 'remark-frontmatter'
-import { getHighlighter, type IThemeRegistration, type Lang, type Theme } from 'shiki-es'
+import { getHighlighter, type IThemeRegistration, type Lang, type Theme } from 'shiki'
 import { unified, type Processor } from 'unified'
 
 const langs = ['vue', 'vue-html', 'typescript', 'bash', 'scss'] satisfies Lang[]

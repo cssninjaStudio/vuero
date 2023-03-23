@@ -6,7 +6,7 @@ import VueRouter from 'unplugin-vue-router/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
-import { VitePluginFonts } from 'vite-plugin-fonts'
+import Unfonts from 'unplugin-fonts/vite'
 import { VitePluginRadar } from 'vite-plugin-radar'
 import PurgeIcons from 'vite-plugin-purge-icons'
 import ImageMin from 'vite-plugin-imagemin'
@@ -106,7 +106,7 @@ export default defineConfig({
       'remark-gfm',
       'remark-parse',
       'remark-rehype',
-      'shiki-es',
+      'shiki',
       'unified',
       'workbox-window',
       'textarea-markdown-editor/dist/esm/bootstrap',
@@ -230,7 +230,7 @@ export default defineConfig({
      *
      * @see https://github.com/stafyniaksacha/vite-plugin-fonts
      */
-    VitePluginFonts({
+    Unfonts({
       google: {
         families: [
           {
