@@ -40,6 +40,7 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div
             class="category-item"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="selectedCategory = 'interaction'"
             @click="selectedCategory = 'interaction'"
           >
@@ -50,6 +51,7 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div
             class="category-item"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="selectedCategory = 'advanced'"
             @click="selectedCategory = 'advanced'"
           >
@@ -60,6 +62,7 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div
             class="category-item"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="selectedCategory = 'addons'"
             @click="selectedCategory = 'addons'"
           >

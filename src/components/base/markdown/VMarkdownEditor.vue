@@ -9,7 +9,7 @@ import type { Cursor } from 'textarea-markdown-editor/dist/esm/Cursor.new'
 import { bootstrapTextareaMarkdown } from 'textarea-markdown-editor/dist/esm/bootstrap'
 import { useVFieldContext } from '/@src/composable/useVFieldContext'
 
-type VMarkdownEditorAction = typeof BUILT_IN_COMMANDS[number]
+type VMarkdownEditorAction = (typeof BUILT_IN_COMMANDS)[number]
 type VMarkdownEditorContext = {
   textarea: HTMLTextAreaElement
   cursor: Cursor

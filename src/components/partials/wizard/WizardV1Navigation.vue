@@ -28,6 +28,7 @@ const wizard = useWizard()
       <template #button="{ toggle }">
         <div
           tabindex="0"
+          role="button"
           class="is-trigger"
           @click="toggle"
           @keydown.space.prevent="toggle"

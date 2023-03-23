@@ -77,6 +77,7 @@ const dropdown2 = useDropdown(dropdownElement2)
       </div>
       <a
         class="inbox-action inbox-close-details-mobile"
+        role="button"
         tabindex="0"
         @keydown.space.prevent="emit('update:mobileMessageOpen', false)"
         @click="emit('update:mobileMessageOpen', false)"

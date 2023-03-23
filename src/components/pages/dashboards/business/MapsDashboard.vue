@@ -374,6 +374,7 @@ watch(
             class="box map-box"
             :class="[selectedFeatureName === feature.properties.name && 'is-active']"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="selectFeature(feature)"
             @click="selectFeature(feature)"
           >

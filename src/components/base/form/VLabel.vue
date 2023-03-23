@@ -28,7 +28,13 @@ const onEnter = () => {
 </script>
 
 <template>
-  <label :class="classes" :for="vFieldContext.id" @keydown.enter.prevent="onEnter">
+  <label
+    :class="classes"
+    :for="vFieldContext.id"
+    role="button"
+    tabindex="0"
+    @keydown.enter.prevent="onEnter"
+  >
     <slot v-bind="vFieldContext" />
   </label>
 </template>

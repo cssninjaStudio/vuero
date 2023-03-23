@@ -10,6 +10,7 @@ const chat = useChat()
     class="chat-side-fab"
     aria-label="Close convesation details"
     tabindex="0"
+    role="button"
     @keydown.space.prevent="
       chat.setMobileConversationDetailsOpen(!chat.mobileConversationDetailsOpen)
     "

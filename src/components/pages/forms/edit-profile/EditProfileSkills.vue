@@ -91,6 +91,7 @@ const onSave = async () => {
           <a
             class="action-link"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="isEditingLanguages = false"
             @click="isEditingLanguages = false"
           >
@@ -301,6 +302,7 @@ const onSave = async () => {
           <a
             class="action-link"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="isEditingSkills = false"
             @click="isEditingSkills = false"
           >
@@ -526,6 +528,7 @@ const onSave = async () => {
           <a
             class="action-link"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="isEditingTools = false"
             @click="isEditingTools = false"
           >

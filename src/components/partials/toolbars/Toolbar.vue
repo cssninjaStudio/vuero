@@ -33,6 +33,7 @@ const localFlagSrc = computed(() => {
       <label
         tabindex="0"
         class="dark-mode ml-auto"
+        role="button"
         @keydown.space.prevent="(e) => (e.target as HTMLLabelElement).click()"
       >
         <input
@@ -47,6 +48,7 @@ const localFlagSrc = computed(() => {
 
     <a
       tabindex="0"
+      role="button"
       class="toolbar-link right-panel-trigger"
       @keydown.space.prevent="panels.setActive('languages')"
       @click="panels.setActive('languages')"

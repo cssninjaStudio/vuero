@@ -116,6 +116,7 @@ useHead({
             <a
               class="inbox-action inbox-close-sidebar-mobile"
               aria-label="Close"
+              role="button"
               tabindex="0"
               @keydown.space.prevent="mobileSidebarOpen = false"
               @click="mobileSidebarOpen = false"
@@ -134,6 +135,7 @@ useHead({
                     <a
                       :class="[activeTab === 'inbox' && 'is-active']"
                       tabindex="0"
+                      role="button"
                       @keydown.space.prevent="activeTab = 'inbox'"
                       @click="activeTab = 'inbox'"
                     >
@@ -146,6 +148,7 @@ useHead({
                     <a
                       :class="[activeTab === 'drafts' && 'is-active']"
                       tabindex="0"
+                      role="button"
                       @keydown.space.prevent="activeTab = 'drafts'"
                       @click="activeTab = 'drafts'"
                     >
@@ -162,6 +165,7 @@ useHead({
                     <a
                       :class="[activeTab === 'sent' && 'is-active']"
                       tabindex="0"
+                      role="button"
                       @keydown.space.prevent="activeTab = 'sent'"
                       @click="activeTab = 'sent'"
                     >
@@ -174,6 +178,7 @@ useHead({
                     <a
                       :class="[activeTab === 'trash' && 'is-active']"
                       tabindex="0"
+                      role="button"
                       @keydown.space.prevent="activeTab = 'trash'"
                       @click="activeTab = 'trash'"
                     >
@@ -190,6 +195,7 @@ useHead({
                     <a
                       :class="[activeTab === 'span' && 'is-active']"
                       tabindex="0"
+                      role="button"
                       @keydown.space.prevent="activeTab = 'span'"
                       @click="activeTab = 'span'"
                     >
@@ -226,6 +232,7 @@ useHead({
                   <span
                     class="icon is-small"
                     tabindex="0"
+                    role="button"
                     @keydown.space.prevent="contactSearchOpen = true"
                     @click="contactSearchOpen = true"
                   >
@@ -240,6 +247,7 @@ useHead({
                   <span
                     class="icon is-small"
                     tabindex="0"
+                    role="button"
                     @keydown.space.prevent="contactSearchOpen = true"
                     @click="contactSearchOpen = false"
                   >
@@ -321,6 +329,7 @@ useHead({
                 class="inbox-action mobile-menu-action"
                 aria-label="Open messages list"
                 tabindex="0"
+                role="button"
                 @keydown.space.prevent="mobileSidebarOpen = true"
                 @click="mobileSidebarOpen = true"
               >
@@ -335,6 +344,7 @@ useHead({
                 :class="[isAllChecked && 'is-checked']"
                 aria-label="Toggle selection"
                 tabindex="0"
+                role="button"
                 @keydown.space.prevent="toggleSelection"
                 @click="toggleSelection"
               >

@@ -107,6 +107,7 @@ watch(
             :class="[activeMobileSubsidebar === 'dashboard' && 'is-active']"
             data-content="Dashboards"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="switchSidebar('dashboard')"
             @click="switchSidebar('dashboard')"
           >
@@ -140,6 +141,7 @@ watch(
             <div
               class="vuero-hamburger nav-trigger push-resize"
               tabindex="0"
+              role="button"
               @keydown.space.prevent="isDesktopSidebarOpen = !isDesktopSidebarOpen"
               @click="isDesktopSidebarOpen = !isDesktopSidebarOpen"
             >

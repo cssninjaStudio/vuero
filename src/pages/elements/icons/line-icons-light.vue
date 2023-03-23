@@ -81,6 +81,7 @@ useHead({
               <li
                 v-for="icon in filteredIcons"
                 :key="icon.className"
+                role="button"
                 class="textFilter-target is-copy-trigger"
                 tabindex="0"
                 @keydown.space.prevent="copy(getSnippet(icon))"

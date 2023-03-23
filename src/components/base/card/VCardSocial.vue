@@ -80,6 +80,7 @@ const icon = computed(() => {
         :class="[props.network && `text-${props.network}`]"
         :aria-label="`View on ${props.network}`"
         tabindex="0"
+        role="button"
         @keydown.space.prevent="emit('iconClick')"
         @click="emit('iconClick')"
       >
@@ -99,6 +100,7 @@ const icon = computed(() => {
             class="px-1"
             :class="[network && `text-${network}`]"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="emit('hashtagClick', hashtag)"
             @click="emit('hashtagClick', hashtag)"
           >
@@ -114,6 +116,7 @@ const icon = computed(() => {
         :class="[network && `hover-bg-${network}`]"
         class="card-footer-item"
         tabindex="0"
+        role="button"
         @keydown.space.prevent="emit('share')"
         @click="emit('share')"
       >
@@ -124,6 +127,7 @@ const icon = computed(() => {
         :class="[network && `hover-text-${network}`]"
         class="card-footer-item"
         tabindex="0"
+        role="button"
         @keydown.space.prevent="emit('like')"
         @click="emit('like')"
       >

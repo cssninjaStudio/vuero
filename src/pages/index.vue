@@ -53,6 +53,7 @@ useHead({
                   class="night-toggle--btn"
                   for="night-toggle--daynight"
                   tabindex="0"
+                  role="button"
                   @keydown.space.prevent="(e) => (e.target as HTMLLabelElement).click()"
                 >
                   <span class="night-toggle--feature"></span>
@@ -668,6 +669,7 @@ useHead({
                   <li :class="[activeTab === 'elements' && 'is-active']">
                     <a
                       tabindex="0"
+                      role="button"
                       @keydown.space.prevent="activeTab = 'elements'"
                       @click="activeTab = 'elements'"
                     >
@@ -677,6 +679,7 @@ useHead({
                   <li :class="[activeTab === 'components' && 'is-active']">
                     <a
                       tabindex="0"
+                      role="button"
                       @keydown.space.prevent="activeTab = 'components'"
                       @click="activeTab = 'components'"
                     >
@@ -686,6 +689,7 @@ useHead({
                   <li :class="[activeTab === 'forms' && 'is-active']">
                     <a
                       tabindex="0"
+                      role="button"
                       @keydown.space.prevent="activeTab = 'forms'"
                       @click="activeTab = 'forms'"
                     >
@@ -695,6 +699,7 @@ useHead({
                   <li :class="[activeTab === 'plugins' && 'is-active']">
                     <a
                       tabindex="0"
+                      role="button"
                       @keydown.space.prevent="activeTab = 'plugins'"
                       @click="activeTab = 'plugins'"
                     >

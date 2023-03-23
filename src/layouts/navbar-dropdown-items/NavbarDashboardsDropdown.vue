@@ -39,6 +39,7 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div
             class="category-item"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="selectedCategory = 'base'"
             @click="selectedCategory = 'base'"
           >
@@ -48,6 +49,7 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div
             class="category-item"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="selectedCategory = 'extras'"
             @click="selectedCategory = 'extras'"
           >

@@ -39,6 +39,7 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div
             class="category-item"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="selectedCategory = 'lists'"
             @click="selectedCategory = 'lists'"
           >
@@ -48,6 +49,7 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div
             class="category-item"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="selectedCategory = 'grids'"
             @click="selectedCategory = 'grids'"
           >
@@ -57,6 +59,7 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div
             class="category-item"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="selectedCategory = 'pages'"
             @click="selectedCategory = 'pages'"
           >
@@ -66,6 +69,7 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div
             class="category-item"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="selectedCategory = 'subpages'"
             @click="selectedCategory = 'subpages'"
           >
@@ -75,6 +79,7 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div
             class="category-item"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="selectedCategory = 'utility'"
             @click="selectedCategory = 'utility'"
           >

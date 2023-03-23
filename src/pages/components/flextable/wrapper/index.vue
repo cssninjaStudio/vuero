@@ -18,7 +18,7 @@ useHead({
   title: 'VFlexTableWrapper - VFlexTable - Vuero',
 })
 
-type User = typeof users[0]
+type User = (typeof users)[0]
 
 // duplicate user data to grow data array
 const data: User[] = []

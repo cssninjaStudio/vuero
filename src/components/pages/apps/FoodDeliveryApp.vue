@@ -104,6 +104,7 @@ onUnmounted(() => {
                 :key="item.id"
                 class="food-pill"
                 tabindex="0"
+                role="button"
                 @keydown.space.prevent="goTo(index)"
                 @click="goTo(index)"
               >
@@ -174,6 +175,7 @@ onUnmounted(() => {
                 class="inner-icon"
                 :class="[activeSection === 'cart' && 'is-active']"
                 tabindex="0"
+                role="button"
                 @keydown.space.prevent="activeSection = 'cart'"
                 @click="activeSection = 'cart'"
               >
@@ -189,6 +191,7 @@ onUnmounted(() => {
                 class="inner-icon"
                 :class="[activeSection === 'activity' && 'is-active']"
                 tabindex="0"
+                role="button"
                 @keydown.space.prevent="activeSection = 'activity'"
                 @click="activeSection = 'activity'"
               >
@@ -200,6 +203,7 @@ onUnmounted(() => {
                 class="inner-icon"
                 :class="[activeSection === 'address' && 'is-active']"
                 tabindex="0"
+                role="button"
                 @keydown.space.prevent="activeSection = 'address'"
                 @click="activeSection = 'address'"
               >
@@ -211,6 +215,7 @@ onUnmounted(() => {
                 class="inner-icon"
                 :class="[activeSection === 'settings' && 'is-active']"
                 tabindex="0"
+                role="button"
                 @keydown.space.prevent="activeSection = 'settings'"
                 @click="activeSection = 'settings'"
               >

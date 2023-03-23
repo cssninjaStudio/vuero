@@ -84,6 +84,7 @@ useHead({
                 :key="icon.name"
                 class="textFilter-target is-copy-trigger"
                 tabindex="0"
+                role="button"
                 @keydown.space.prevent="copy(getSnippet(icon))"
                 @click="copy(getSnippet(icon))"
               >

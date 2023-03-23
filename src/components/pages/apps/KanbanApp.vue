@@ -131,6 +131,7 @@ onMounted(() => {
             <div
               class="expand-button"
               tabindex="0"
+              role="button"
               @keydown.space.prevent="isColumnNewCollapsed = false"
               @click="isColumnNewCollapsed = false"
             >
@@ -199,6 +200,7 @@ onMounted(() => {
                   <a
                     class="card-footer-item"
                     tabindex="0"
+                    role="button"
                     @keydown.space.prevent="task.state = 'progress'"
                     @click="task.state = 'progress'"
                   >
@@ -230,6 +232,7 @@ onMounted(() => {
             <div
               class="expand-button"
               tabindex="0"
+              role="button"
               @keydown.space.prevent="isColumnProgressCollapsed = false"
               @click="isColumnProgressCollapsed = false"
             >
@@ -309,6 +312,7 @@ onMounted(() => {
             <div
               class="expand-button"
               tabindex="0"
+              role="button"
               @keydown.space.prevent="isColumnReadyCollapsed = false"
               @click="isColumnReadyCollapsed = false"
             >
@@ -393,6 +397,7 @@ onMounted(() => {
             <div
               class="expand-button"
               tabindex="0"
+              role="button"
               @keydown.space.prevent="isColumnReviewCollapsed = false"
               @click="isColumnReviewCollapsed = false"
             >
@@ -472,6 +477,7 @@ onMounted(() => {
             <div
               class="expand-button"
               tabindex="0"
+              role="button"
               @keydown.space.prevent="isColumnCompletedCollapsed = false"
               @click="isColumnCompletedCollapsed = false"
             >

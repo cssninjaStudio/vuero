@@ -33,7 +33,12 @@ const toggle = (key: number) => {
       >
         <slot name="accordion-item" :item="item" :index="key" :toggle="toggle">
           <div>
-            <a tabindex="0" @keydown.space.prevent="toggle(key)" @click="toggle(key)">
+            <a
+              tabindex="0"
+              role="button"
+              @keydown.space.prevent="toggle(key)"
+              @click="toggle(key)"
+            >
               <h2>
                 <slot
                   name="accordion-item-summary"

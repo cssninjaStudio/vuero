@@ -54,6 +54,7 @@ const selectedProject = ref(projects[1])
         :key="project.initials"
         class="dropdown-item dropdown-block"
         :class="[project.initials === selectedProject.initials && 'is-active']"
+        role="button"
         tabindex="0"
         @keydown.space.prevent="
           () => {

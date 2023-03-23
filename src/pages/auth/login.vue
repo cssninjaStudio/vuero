@@ -71,6 +71,7 @@ useHead({
         <label
           class="dark-mode ml-auto"
           tabindex="0"
+          role="button"
           @keydown.space.prevent="(e) => (e.target as HTMLLabelElement).click()"
         >
           <input
@@ -154,6 +155,7 @@ useHead({
                   <VLabel raw class="remember-me">Remember Me</VLabel>
                   <a
                     tabindex="0"
+                    role="button"
                     @keydown.space.prevent="step = 'forgot-password'"
                     @click="step = 'forgot-password'"
                   >

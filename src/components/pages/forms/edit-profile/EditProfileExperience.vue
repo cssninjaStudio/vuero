@@ -84,6 +84,7 @@ const onSave = async () => {
         <div v-else class="fieldset-heading">
           <a
             class="action-link"
+            role="button"
             tabindex="0"
             @keydown.space.prevent="isUploading = false"
             @click="isUploading = false"

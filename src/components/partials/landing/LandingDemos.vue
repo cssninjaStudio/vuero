@@ -202,6 +202,7 @@ debouncedWatch(
           <figure
             class="vuero-demo-wrapper loaded"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="(e) => ((e.target as HTMLElement).querySelector('a[href]') as HTMLAnchorElement)?.click()"
           >
             <span v-if="item.new" class="new-tag">New</span>

@@ -89,6 +89,7 @@ useHead({
           <label
             class="dark-mode ml-auto"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="(e) => (e.target as HTMLLabelElement).click()"
           >
             <input

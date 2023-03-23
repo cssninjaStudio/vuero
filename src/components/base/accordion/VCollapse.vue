@@ -39,6 +39,7 @@ const toggle = (key: number) => {
       <summary
         class="collapse-header"
         tabindex="0"
+        role="button"
         @keydown.space.prevent="() => toggle(key)"
         @click.prevent="() => toggle(key)"
       >

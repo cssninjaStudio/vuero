@@ -30,6 +30,7 @@ const tab = ref(props.activeTab)
             props.rounded && 'is-rounded',
           ]"
           tabindex="0"
+          role="button"
           @keydown.space.prevent="tab = index"
           @click="tab = index"
         >

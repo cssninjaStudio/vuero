@@ -147,6 +147,7 @@ const selectCustomer = (customer: WizardCustomer | null) => {
               class="budget-item-inner"
               :class="[wizard.data.budget === '< 5K' && 'is-active']"
               tabindex="0"
+              role="button"
               @keydown.space.prevent="wizard.data.budget = '< 5K'"
               @click="wizard.data.budget = '< 5K'"
             >
@@ -156,6 +157,7 @@ const selectCustomer = (customer: WizardCustomer | null) => {
               class="budget-item-inner"
               :class="[wizard.data.budget === '< 30K' && 'is-active']"
               tabindex="0"
+              role="button"
               @keydown.space.prevent="wizard.data.budget = '< 30K'"
               @click="wizard.data.budget = '< 30K'"
             >
@@ -165,6 +167,7 @@ const selectCustomer = (customer: WizardCustomer | null) => {
               class="budget-item-inner"
               :class="[wizard.data.budget === '< 100K' && 'is-active']"
               tabindex="0"
+              role="button"
               @keydown.space.prevent="wizard.data.budget = '< 100K'"
               @click="wizard.data.budget = '< 100K'"
             >
@@ -174,6 +177,7 @@ const selectCustomer = (customer: WizardCustomer | null) => {
               class="budget-item-inner"
               :class="[wizard.data.budget === '100K+' && 'is-active']"
               tabindex="0"
+              role="button"
               @click="wizard.data.budget = '100K+'"
               @keydown.space.prevent="wizard.data.budget = '100K+'"
             >

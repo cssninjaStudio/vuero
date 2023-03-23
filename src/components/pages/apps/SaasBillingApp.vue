@@ -244,7 +244,12 @@ const selected = ref('value_2')
         <div class="payment-form">
           <div class="form-header">
             <h3>Payment information</h3>
-            <span tabindex="0" @keydown.space.prevent="randomCard" @click="randomCard">
+            <span
+              tabindex="0"
+              role="button"
+              @keydown.space.prevent="randomCard"
+              @click="randomCard"
+            >
               Randomize
             </span>
           </div>

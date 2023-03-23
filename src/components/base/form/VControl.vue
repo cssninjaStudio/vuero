@@ -104,6 +104,8 @@ const controlClasees = computed(() => {
     <a
       v-else-if="hasError"
       class="validation-icon is-error"
+      role="button"
+      tabindex="0"
       @click.prevent="() => vFieldContext.field?.resetField?.()"
       @keyup.enter.prevent="() => vFieldContext.field?.resetField?.()"
     >

@@ -113,6 +113,7 @@ const options = ref(['Newest'])
             <li :class="[activeTab === 'all' && 'is-active']">
               <a
                 tabindex="0"
+                role="button"
                 @keydown.space.prevent="activeTab = 'all'"
                 @click="activeTab = 'all'"
                 ><span>All</span></a
@@ -121,6 +122,7 @@ const options = ref(['Newest'])
             <li :class="[activeTab === 'people' && 'is-active']">
               <a
                 tabindex="0"
+                role="button"
                 @keydown.space.prevent="activeTab = 'people'"
                 @click="activeTab = 'people'"
                 ><span>People</span></a
@@ -129,6 +131,7 @@ const options = ref(['Newest'])
             <li :class="[activeTab === 'records' && 'is-active']">
               <a
                 tabindex="0"
+                role="button"
                 @keydown.space.prevent="activeTab = 'records'"
                 @click="activeTab = 'records'"
                 ><span>Records</span></a

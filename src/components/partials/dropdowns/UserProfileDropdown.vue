@@ -2,6 +2,7 @@
   <VDropdown right spaced class="user-dropdown profile-dropdown">
     <template #button="{ toggle }">
       <a
+        role="button"
         tabindex="0"
         class="is-trigger dropdown-trigger"
         aria-haspopup="true"

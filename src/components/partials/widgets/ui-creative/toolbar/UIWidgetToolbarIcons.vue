@@ -19,6 +19,7 @@ const currentTab = ref(props.activeTab)
         class="inner-icon"
         :class="{ 'is-active': currentTab === index }"
         tabindex="0"
+        role="button"
         @keydown.space.prevent="currentTab = index"
         @click="currentTab = index"
       >

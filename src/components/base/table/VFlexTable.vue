@@ -136,10 +136,12 @@ const columns = computed(() => {
     <slot name="body">
       <template v-for="(row, index) in data" :key="index">
         <slot name="body-row-pre" :row="row" :columns="columns" :index="index"></slot>
+        <!-- eslint-disable-next-line vuejs-accessibility/no-static-element-interactions -->
         <div
           class="flex-table-item"
           :class="[props.clickable && 'is-clickable']"
           :tabindex="props.clickable ? 0 : undefined"
+          :role="props.clickable ? 'button' : undefined"
           @keydown.space.prevent="
             () => {
               props.clickable && emits('rowClick', row, index)

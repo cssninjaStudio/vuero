@@ -516,6 +516,7 @@ const validateStep = async () => {
         <ul v-if="currentHelp === -1" class="steps is-vertical is-thin is-short">
           <li
             id="step-segment-0"
+            role="button"
             :class="[currentStep === 0 && 'is-active']"
             class="steps-segment"
             tabindex="0"
@@ -537,6 +538,7 @@ const validateStep = async () => {
             :class="[currentStep === 1 && 'is-active']"
             class="steps-segment"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="
               currentStep >= 1 && scrollTo('#form-step-1', 800, { offset: -20 })
             "
@@ -555,6 +557,7 @@ const validateStep = async () => {
             :class="[currentStep === 2 && 'is-active']"
             class="steps-segment"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="
               currentStep >= 2 && scrollTo('#form-step-2', 800, { offset: -20 })
             "
@@ -573,6 +576,7 @@ const validateStep = async () => {
             :class="[currentStep === 3 && 'is-active']"
             class="steps-segment"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="
               currentStep >= 3 && scrollTo('#form-step-3', 800, { offset: -20 })
             "
@@ -591,6 +595,7 @@ const validateStep = async () => {
             :class="[currentStep === 4 && 'is-active']"
             class="steps-segment"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="
               currentStep >= 4 && scrollTo('#form-step-4', 800, { offset: -20 })
             "

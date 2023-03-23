@@ -28,6 +28,7 @@ const props = withDefaults(
       v-for="conversation in props.conversations"
       :key="conversation.id"
       class="conversation"
+      role="button"
       :class="[props.conversationId === conversation.id && 'active']"
       tabindex="0"
       @keydown.space.prevent="

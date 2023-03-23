@@ -34,19 +34,25 @@ const participants = [
             <li :class="[tab === 'project' && 'is-active']">
               <a
                 tabindex="0"
+                role="button"
                 @keydown.space.prevent="tab = 'project'"
                 @click="tab = 'project'"
                 ><span>Project</span></a
               >
             </li>
             <li :class="[tab === 'team' && 'is-active']">
-              <a tabindex="0" @keydown.space.prevent="tab = 'team'" @click="tab = 'team'"
+              <a
+                tabindex="0"
+                role="button"
+                @keydown.space.prevent="tab = 'team'"
+                @click="tab = 'team'"
                 ><span>Team</span></a
               >
             </li>
             <li :class="[tab === 'tasks' && 'is-active']">
               <a
                 tabindex="0"
+                role="button"
                 @keydown.space.prevent="tab = 'tasks'"
                 @click="tab = 'tasks'"
                 ><span>Tasks</span></a

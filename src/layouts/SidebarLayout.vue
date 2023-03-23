@@ -83,6 +83,7 @@ watch(
             :class="[activeMobileSubsidebar === 'dashboard' && 'is-active']"
             aria-label="Display dashboard content"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="activeMobileSubsidebar = 'dashboard'"
             @click="activeMobileSubsidebar = 'dashboard'"
           >
@@ -94,6 +95,7 @@ watch(
             aria-label="Display layout content"
             :class="[activeMobileSubsidebar === 'layout' && 'is-active']"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="activeMobileSubsidebar = 'layout'"
             @click="activeMobileSubsidebar = 'layout'"
           >
@@ -105,6 +107,7 @@ watch(
             aria-label="Display element content"
             :class="[activeMobileSubsidebar === 'elements' && 'is-active']"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="activeMobileSubsidebar = 'elements'"
             @click="activeMobileSubsidebar = 'elements'"
           >
@@ -116,6 +119,7 @@ watch(
             aria-label="Display components content"
             :class="[activeMobileSubsidebar === 'components' && 'is-active']"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="activeMobileSubsidebar = 'components'"
             @click="activeMobileSubsidebar = 'components'"
           >
@@ -134,6 +138,7 @@ watch(
           <a
             aria-label="Display search panel"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="panels.setActive('search')"
             @click="panels.setActive('search')"
           >
@@ -178,6 +183,7 @@ watch(
             data-content="Dashboards"
             aria-label="View dashboards"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="switchSidebar('dashboard')"
             @click="switchSidebar('dashboard')"
           >
@@ -196,6 +202,7 @@ watch(
             data-content="Layouts"
             aria-label="View layouts"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="switchSidebar('layout')"
             @click="switchSidebar('layout')"
           >
@@ -214,6 +221,7 @@ watch(
             data-content="Elements"
             aria-label="View elements"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="switchSidebar('elements')"
             @click="switchSidebar('elements')"
           >
@@ -228,6 +236,7 @@ watch(
             data-content="Components"
             aria-label="View components"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="switchSidebar('components')"
             @click="switchSidebar('components')"
           >
@@ -259,6 +268,7 @@ watch(
             aria-label="Display search panel"
             data-content="Search"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="panels.setActive('search')"
             @click="panels.setActive('search')"
           >
@@ -272,6 +282,7 @@ watch(
             aria-label="Close all panels"
             class="is-hidden is-inactive"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="panels.close()"
             @click="panels.close()"
           >
@@ -338,6 +349,7 @@ watch(
             <div
               class="vuero-hamburger nav-trigger push-resize"
               tabindex="0"
+              role="button"
               @keydown.space.prevent="isDesktopSidebarOpen = !isDesktopSidebarOpen"
               @click="isDesktopSidebarOpen = !isDesktopSidebarOpen"
             >
@@ -363,6 +375,7 @@ watch(
                 class="toolbar-link right-panel-trigger"
                 aria-label="View activity panel"
                 tabindex="0"
+                role="button"
                 @keydown.space.prevent="panels.setActive('activity')"
                 @click="panels.setActive('activity')"
               >

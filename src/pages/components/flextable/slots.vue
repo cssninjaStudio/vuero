@@ -140,6 +140,7 @@ function contactUser(row: any) {
                   v-else
                   class="is-overlay-desktop is-flex is-pushed-mobile is-align-items-center mx-3-desktop edit-icon-link is-clickable"
                   tabindex="0"
+                  role="button"
                   @keydown.space.prevent="editCompanyIndex = index"
                   @click="editCompanyIndex = index"
                 >

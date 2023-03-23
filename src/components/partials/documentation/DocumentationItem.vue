@@ -93,6 +93,7 @@ const githubIssueUrl = computed(() => {
           v-tooltip.rounded="displayCode ? 'Hide source code' : `View source code`"
           ><a
             class="code-trigger"
+            role="button"
             tabindex="0"
             :class="[displayCode && 'is-active']"
             @keydown.space.prevent="displayCode = !displayCode"

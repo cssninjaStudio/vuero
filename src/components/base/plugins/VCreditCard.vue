@@ -33,6 +33,7 @@ const nameUppercase = computed(() => props.name?.toUpperCase() ?? '')
     <div
       :class="[props.flipped && 'flipped']"
       class="creditcard"
+      role="button"
       tabindex="0"
       @keydown.space.prevent="emit('flip')"
       @click="emit('flip')"

@@ -29,6 +29,7 @@ watch(locale, () => {
     <div
       class="panel-overlay"
       tabindex="0"
+      role="button"
       @keydown.space.prevent="panels.close()"
       @click="panels.close()"
     ></div>
@@ -39,6 +40,7 @@ watch(locale, () => {
         <a
           class="close-panel"
           tabindex="0"
+          role="button"
           @keydown.space.prevent="panels.close()"
           @click="panels.close()"
         >

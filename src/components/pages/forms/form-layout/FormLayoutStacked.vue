@@ -280,6 +280,7 @@ const onSubmit = () => {
                   <div
                     :class="[selectedColor === 'primary' && 'is-active']"
                     tabindex="0"
+                    role="button"
                     class="color-code is-primary"
                     @click="selectedColor = 'primary'"
                     @keydown.space.prevent="selectedColor = 'primary'"
@@ -287,6 +288,7 @@ const onSubmit = () => {
                   <div
                     :class="[selectedColor === 'secondary' && 'is-active']"
                     tabindex="0"
+                    role="button"
                     class="color-code is-secondary"
                     @click="selectedColor = 'secondary'"
                     @keydown.space.prevent="selectedColor = 'secondary'"
@@ -294,6 +296,7 @@ const onSubmit = () => {
                   <div
                     :class="[selectedColor === 'info' && 'is-active']"
                     tabindex="0"
+                    role="button"
                     class="color-code is-info"
                     @click="selectedColor = 'info'"
                     @keydown.space.prevent="selectedColor = 'info'"
@@ -301,6 +304,7 @@ const onSubmit = () => {
                   <div
                     :class="[selectedColor === 'success' && 'is-active']"
                     tabindex="0"
+                    role="button"
                     class="color-code is-success"
                     @click="selectedColor = 'success'"
                     @keydown.space.prevent="selectedColor = 'success'"
@@ -308,6 +312,7 @@ const onSubmit = () => {
                   <div
                     :class="[selectedColor === 'purple' && 'is-active']"
                     tabindex="0"
+                    role="button"
                     class="color-code is-purple"
                     @click="selectedColor = 'purple'"
                     @keydown.space.prevent="selectedColor = 'purple'"

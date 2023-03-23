@@ -21,6 +21,7 @@ const props = defineProps<{
             class="navbar-burger"
             :class="[props.isOpen && 'is-active']"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="emit('toggle')"
             @click="emit('toggle')"
           >

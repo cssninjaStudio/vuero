@@ -12,6 +12,7 @@ const emit = defineEmits(['close'])
       <div
         class="panel-close"
         tabindex="0"
+        role="button"
         @keydown.space.prevent="emit('close')"
         @click="emit('close')"
       >

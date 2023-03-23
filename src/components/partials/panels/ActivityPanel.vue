@@ -17,6 +17,7 @@ const activeTab = ref<TabId>('team')
     <div
       class="panel-overlay"
       tabindex="0"
+      role="button"
       @keydown.space.prevent="panels.close()"
       @click="panels.close()"
     ></div>
@@ -27,6 +28,7 @@ const activeTab = ref<TabId>('team')
         <a
           class="close-panel"
           tabindex="0"
+          role="button"
           @keydown.space.prevent="panels.close()"
           @click="panels.close()"
         >
@@ -40,6 +42,7 @@ const activeTab = ref<TabId>('team')
               <li :class="[activeTab === 'team' && 'is-active']">
                 <a
                   tabindex="0"
+                  role="button"
                   @keydown.space.prevent="activeTab = 'team'"
                   @click="activeTab = 'team'"
                   ><span>Team</span></a
@@ -48,6 +51,7 @@ const activeTab = ref<TabId>('team')
               <li :class="[activeTab === 'projects' && 'is-active']">
                 <a
                   tabindex="0"
+                  role="button"
                   @keydown.space.prevent="activeTab = 'projects'"
                   @click="activeTab = 'projects'"
                   ><span>Projects</span></a
@@ -56,6 +60,7 @@ const activeTab = ref<TabId>('team')
               <li :class="[activeTab === 'schedule' && 'is-active']">
                 <a
                   tabindex="0"
+                  role="button"
                   @keydown.space.prevent="activeTab = 'schedule'"
                   @click="activeTab = 'schedule'"
                   ><span>Schedule</span></a

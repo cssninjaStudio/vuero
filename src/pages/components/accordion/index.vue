@@ -21,6 +21,7 @@ useHead({
       <div
         class="vuero-hamburger nav-trigger push-resize"
         tabindex="0"
+        role="button"
         @keydown.space.prevent="sidebar.toggle('components')"
         @click="sidebar.toggle('components')"
       >

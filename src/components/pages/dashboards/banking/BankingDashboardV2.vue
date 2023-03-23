@@ -75,6 +75,7 @@ const goto = (index: number) => {
                   <div
                     class="cards-carousel-item"
                     tabindex="0"
+                    role="button"
                     @keydown.space.prevent="goto(0)"
                     @click="goto(0)"
                   >
@@ -107,6 +108,7 @@ const goto = (index: number) => {
                   <div
                     class="cards-carousel-item"
                     tabindex="0"
+                    role="button"
                     @keydown.space.prevent="goto(1)"
                     @click="goto(1)"
                   >
@@ -139,6 +141,7 @@ const goto = (index: number) => {
                   <div
                     class="cards-carousel-item"
                     tabindex="0"
+                    role="button"
                     @keydown.space.prevent="goto(2)"
                     @click="goto(2)"
                   >
@@ -171,6 +174,7 @@ const goto = (index: number) => {
                   <div
                     class="cards-carousel-item"
                     tabindex="0"
+                    role="button"
                     @keydown.space.prevent="goto(3)"
                     @click="goto(3)"
                   >

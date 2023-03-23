@@ -114,6 +114,7 @@ watchEffect(() => {
         </template>
         <template #action>
           <a
+            role="button"
             class="action-link toggle-members-link"
             tabindex="0"
             @keydown.space.prevent="isAddingMembers = true"
@@ -188,6 +189,7 @@ watchEffect(() => {
                           <div
                             class="permission-level hint--bubble hint--primary hint--top"
                             aria-label="Reader"
+                            role="button"
                             tabindex="0"
                             @keydown.space.prevent="setTeammateRole(teammate, 'reader')"
                             @click="setTeammateRole(teammate, 'reader')"
@@ -200,6 +202,7 @@ watchEffect(() => {
                           <div
                             class="permission-level hint--bubble hint--primary hint--top"
                             aria-label="Collaborator"
+                            role="button"
                             tabindex="0"
                             @keydown.space.prevent="
                               setTeammateRole(teammate, 'collaborator')
@@ -214,6 +217,7 @@ watchEffect(() => {
                           <div
                             class="permission-level hint--bubble hint--primary hint--top"
                             aria-label="Manager"
+                            role="button"
                             tabindex="0"
                             @keydown.space.prevent="setTeammateRole(teammate, 'manager')"
                             @click="setTeammateRole(teammate, 'manager')"
@@ -226,6 +230,7 @@ watchEffect(() => {
                           <div
                             class="permission-level hint--bubble hint--primary hint--top"
                             aria-label="Owner"
+                            role="button"
                             tabindex="0"
                             @keydown.space.prevent="setTeammateRole(teammate, 'owner')"
                             @click="setTeammateRole(teammate, 'owner')"

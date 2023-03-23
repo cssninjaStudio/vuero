@@ -30,6 +30,7 @@ const sidebar = useSidebar()
         <div
           class="vuero-hamburger nav-trigger push-resize messages-push"
           tabindex="0"
+          role="button"
           @keydown.space.prevent="sidebar.toggle('messages')"
           @click="sidebar.toggle('messages')"
         >
@@ -51,6 +52,7 @@ const sidebar = useSidebar()
         <a
           class="button collapse-add-button is-primary"
           tabindex="0"
+          role="button"
           @keydown.space.prevent="emit('addConversation')"
           @click="() => emit('addConversation')"
         >
@@ -63,6 +65,7 @@ const sidebar = useSidebar()
           :key="conversation.id"
           :class="[props.selectedConversationId === conversation.id && 'is-active']"
           tabindex="0"
+          role="button"
           @keydown.space.prevent="() => emit('selectConversation', conversation.id)"
           @click="() => emit('selectConversation', conversation.id)"
         >

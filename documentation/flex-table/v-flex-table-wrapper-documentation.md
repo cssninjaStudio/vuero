@@ -24,7 +24,7 @@ import type {
 } from '/@src/components/base/table/VFlexTableWrapper.vue'
 import { users } from '/@src/data/layouts/card-grid-v1'
 
-type User = typeof users[0]
+type User = (typeof users)[0]
 
 // duplicate user data to grow the array
 const data: User[] = []

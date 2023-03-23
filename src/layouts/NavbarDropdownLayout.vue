@@ -85,6 +85,7 @@ watch(
           <a
             :class="[activeMobileSubsidebar === 'dashboard' && 'is-active']"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="activeMobileSubsidebar = 'dashboard'"
             @click="activeMobileSubsidebar = 'dashboard'"
           >
@@ -95,6 +96,7 @@ watch(
           <a
             :class="[activeMobileSubsidebar === 'layout' && 'is-active']"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="activeMobileSubsidebar = 'layout'"
             @click="activeMobileSubsidebar = 'layout'"
           >
@@ -104,6 +106,7 @@ watch(
         <li
           :class="[activeMobileSubsidebar === 'elements' && 'is-active']"
           tabindex="0"
+          role="button"
           @keydown.space.prevent="activeMobileSubsidebar = 'elements'"
           @click="activeMobileSubsidebar = 'elements'"
         >
@@ -114,6 +117,7 @@ watch(
         <li
           :class="[activeMobileSubsidebar === 'components' && 'is-active']"
           tabindex="0"
+          role="button"
           @keydown.space.prevent="activeMobileSubsidebar = 'components'"
           @click="activeMobileSubsidebar = 'components'"
         >
@@ -132,6 +136,7 @@ watch(
         <li>
           <a
             tabindex="0"
+            role="button"
             @keydown.space.prevent="panels.setActive('search')"
             @click="panels.setActive('search')"
           >
@@ -183,6 +188,7 @@ watch(
           <a
             class="toolbar-link right-panel-trigger"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="panels.setActive('activity')"
             @click="panels.setActive('activity')"
           >
@@ -233,6 +239,7 @@ watch(
                 id="navbar-navbar-search-close"
                 class="form-icon is-right"
                 tabindex="0"
+                role="button"
                 @keydown.space.prevent="displaySearch = false"
                 @click="displaySearch = false"
               >
@@ -279,6 +286,7 @@ watch(
                 <a
                   class="toolbar-link right-panel-trigger"
                   tabindex="0"
+                  role="button"
                   @keydown.space.prevent="panels.setActive('activity')"
                   @click="panels.setActive('activity')"
                 >

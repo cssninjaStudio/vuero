@@ -12,6 +12,7 @@ const panels = usePanels()
     <div
       class="panel-overlay"
       tabindex="0"
+      role="button"
       @keydown.space.prevent="panels.close()"
       @click="panels.close()"
     ></div>
@@ -22,6 +23,7 @@ const panels = usePanels()
         <a
           class="close-panel"
           tabindex="0"
+          role="button"
           @keydown.space.prevent="panels.close()"
           @click="panels.close()"
         >

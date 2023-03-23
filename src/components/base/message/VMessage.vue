@@ -27,6 +27,7 @@ const props = withDefaults(defineProps<VMessageProps>(), {
       aria-label="Dismiss"
       class="delete"
       tabindex="0"
+      role="button"
       @keydown.space.prevent="emit('close')"
       @click.prevent="emit('close')"
     ></a>

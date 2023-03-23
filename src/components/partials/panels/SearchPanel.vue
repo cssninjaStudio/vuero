@@ -37,6 +37,7 @@ function getAvatarData(user: UserPopover): VAvatarProps {
     <div
       class="panel-overlay"
       tabindex="0"
+      role="button"
       @keydown.space.prevent="panels.close()"
       @click="panels.close()"
     ></div>
@@ -47,6 +48,7 @@ function getAvatarData(user: UserPopover): VAvatarProps {
         <a
           class="close-panel"
           tabindex="0"
+          role="button"
           @keydown.space.prevent="panels.close()"
           @click="panels.close()"
         >

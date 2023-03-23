@@ -26,6 +26,8 @@ watchEffect(() => {
   <div
     class="inbox-message"
     :class="[conversationId === 2 && 'is-selected', unread && 'is-unread']"
+    role="button"
+    tabindex="0"
     @keydown.space.prevent="
       () => {
         unread = false
@@ -58,6 +60,7 @@ watchEffect(() => {
   <div
     class="inbox-message"
     :class="[conversationId === 1 && 'is-selected']"
+    role="button"
     tabindex="0"
     @keydown.space.prevent="() => emit('update:conversationId', 1)"
     @click="() => emit('update:conversationId', 1)"
@@ -79,6 +82,7 @@ watchEffect(() => {
   <div
     class="inbox-message"
     :class="[conversationId === 3 && 'is-selected']"
+    role="button"
     tabindex="0"
     @keydown.space.prevent="() => emit('update:conversationId', 3)"
     @click="() => emit('update:conversationId', 3)"
@@ -100,6 +104,7 @@ watchEffect(() => {
   <div
     class="inbox-message"
     :class="[conversationId === 4 && 'is-selected']"
+    role="button"
     tabindex="0"
     @keydown.space.prevent="() => emit('update:conversationId', 4)"
     @click="() => emit('update:conversationId', 4)"
@@ -121,6 +126,7 @@ watchEffect(() => {
   <div
     class="inbox-message"
     :class="[conversationId === 5 && 'is-selected']"
+    role="button"
     tabindex="0"
     @keydown.space.prevent="() => emit('update:conversationId', 5)"
     @click="() => emit('update:conversationId', 5)"
@@ -144,6 +150,7 @@ watchEffect(() => {
   <div
     class="inbox-message"
     :class="[conversationId === 6 && 'is-selected']"
+    role="button"
     tabindex="0"
     @keydown.space.prevent="() => emit('update:conversationId', 6)"
     @click="() => emit('update:conversationId', 6)"
@@ -165,6 +172,7 @@ watchEffect(() => {
   <div
     class="inbox-message"
     :class="[conversationId === 7 && 'is-selected']"
+    role="button"
     tabindex="0"
     @keydown.space.prevent="() => emit('update:conversationId', 7)"
     @click="() => emit('update:conversationId', 7)"
@@ -186,6 +194,7 @@ watchEffect(() => {
   <div
     class="inbox-message"
     :class="[conversationId === 8 && 'is-selected']"
+    role="button"
     tabindex="0"
     @keydown.space.prevent="() => emit('update:conversationId', 8)"
     @click="() => emit('update:conversationId', 8)"
@@ -207,6 +216,7 @@ watchEffect(() => {
   <div
     class="inbox-message"
     :class="[conversationId === 9 && 'is-selected']"
+    role="button"
     tabindex="0"
     @keydown.space.prevent="() => emit('update:conversationId', 9)"
     @click="() => emit('update:conversationId', 9)"
@@ -228,6 +238,7 @@ watchEffect(() => {
   <div
     class="inbox-message"
     :class="[conversationId === 10 && 'is-selected']"
+    role="button"
     tabindex="0"
     @keydown.space.prevent="() => emit('update:conversationId', 10)"
     @click="() => emit('update:conversationId', 10)"

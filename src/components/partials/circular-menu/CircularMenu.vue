@@ -46,6 +46,7 @@ const localFlagSrc = computed(() => {
   >
     <a
       class="floating-btn"
+      role="button"
       tabindex="0"
       @keydown.space.prevent="isOpen = !isOpen"
       @click="isOpen = !isOpen"
@@ -68,6 +69,7 @@ const localFlagSrc = computed(() => {
       </div>
       <a
         class="menu-item is-flex right-panel-trigger"
+        role="button"
         tabindex="0"
         @keydown.space.prevent="panels.setActive('languages')"
         @click="panels.setActive('languages')"
@@ -79,6 +81,7 @@ const localFlagSrc = computed(() => {
       </RouterLink>
       <a
         class="menu-item is-flex"
+        role="button"
         tabindex="0"
         @keydown.space.prevent="panels.setActive('activity')"
         @click="panels.setActive('activity')"

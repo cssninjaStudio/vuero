@@ -11,6 +11,7 @@ const activeTab = ref<TabId>('list')
           <li :class="[activeTab === 'list' && 'is-active']">
             <a
               tabindex="0"
+              role="button"
               @keydown.space.prevent="activeTab = 'list'"
               @click="activeTab = 'list'"
               >List Views</a
@@ -19,6 +20,7 @@ const activeTab = ref<TabId>('list')
           <li :class="[activeTab === 'grid' && 'is-active']">
             <a
               tabindex="0"
+              role="button"
               @keydown.space.prevent="activeTab = 'grid'"
               @click="activeTab = 'grid'"
               >Grid Views</a
@@ -27,6 +29,7 @@ const activeTab = ref<TabId>('list')
           <li :class="[activeTab === 'app' && 'is-active']">
             <a
               tabindex="0"
+              role="button"
               @keydown.space.prevent="activeTab = 'app'"
               @click="activeTab = 'app'"
               >Pages</a
@@ -35,6 +38,7 @@ const activeTab = ref<TabId>('list')
           <li :class="[activeTab === 'utility' && 'is-active']">
             <a
               tabindex="0"
+              role="button"
               @keydown.space.prevent="activeTab = 'utility'"
               @click="activeTab = 'utility'"
               >Utility</a

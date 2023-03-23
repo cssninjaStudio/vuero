@@ -7,6 +7,7 @@ const emit = defineEmits(['rename', 'collapse'])
     <template #content>
       <a
         class="dropdown-item kanban-rename kill-drop"
+        role="button"
         tabindex="0"
         @keydown.space.prevent="emit('rename')"
         @click="emit('rename')"
@@ -15,6 +16,7 @@ const emit = defineEmits(['rename', 'collapse'])
       </a>
       <a
         class="dropdown-item kanban-collapse kill-drop"
+        role="button"
         tabindex="0"
         @keydown.space.prevent="emit('collapse')"
         @click="emit('collapse')"

@@ -50,6 +50,7 @@ const layoutComponent = (slug?: string) => {
       aria-label="Open layout switcher"
       class="icon-link"
       tabindex="0"
+      role="button"
       @keydown.space.prevent="isModalOpen = true"
       @click.passive="isModalOpen = true"
     >

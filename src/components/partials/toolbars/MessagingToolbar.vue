@@ -52,6 +52,7 @@ const localFlagSrc = computed(() => {
     <a
       class="toolbar-link right-panel-trigger"
       tabindex="0"
+      role="button"
       @keydown.space.prevent="panels.setActive('languages')"
       @click="panels.setActive('languages')"
     >
@@ -165,6 +166,7 @@ const localFlagSrc = computed(() => {
       id="hide-chat-side"
       class="toolbar-link"
       tabindex="0"
+      role="button"
       @keydown.space.prevent="emit('close')"
       @click="emit('close')"
     >

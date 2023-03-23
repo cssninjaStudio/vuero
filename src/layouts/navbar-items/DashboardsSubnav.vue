@@ -11,6 +11,7 @@ const activeTab = ref<TabId>('dashboards')
           <li :class="[activeTab === 'dashboards' && 'is-active']">
             <a
               tabindex="0"
+              role="button"
               @keydown.space.prevent="activeTab = 'dashboards'"
               @click="activeTab = 'dashboards'"
               >Dashboards</a
@@ -19,6 +20,7 @@ const activeTab = ref<TabId>('dashboards')
           <li :class="[activeTab === 'templates' && 'is-active']">
             <a
               tabindex="0"
+              role="button"
               @keydown.space.prevent="activeTab = 'templates'"
               @click="activeTab = 'templates'"
               >Templates</a

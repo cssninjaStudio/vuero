@@ -65,6 +65,7 @@ const isMobileSidebarOpen = ref(false)
         <li>
           <a
             tabindex="0"
+            role="button"
             @keydown.space.prevent="panels.setActive('search')"
             @click="panels.setActive('search')"
           >
@@ -135,6 +136,7 @@ const isMobileSidebarOpen = ref(false)
           <a
             data-content="Search"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="panels.setActive('search')"
             @click="panels.setActive('search')"
           >
@@ -147,6 +149,7 @@ const isMobileSidebarOpen = ref(false)
           <a
             class="is-hidden is-inactive"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="panels.close()"
             @click="panels.close()"
           >

@@ -194,6 +194,7 @@ useHead({
               class="toolbar-link right-panel-trigger"
               aria-label="View activity"
               tabindex="0"
+              role="button"
               @keydown.space.prevent="panels.setActive('activity')"
               @click="panels.setActive('activity')"
             >

@@ -58,6 +58,7 @@ onUnmounted(() => {
       <div
         class="modal-background v-modal-close"
         tabindex="0"
+        role="button"
         @keydown.space.prevent="() => noclose === false && emit('close')"
         @click="() => noclose === false && emit('close')"
       ></div>
@@ -90,6 +91,7 @@ onUnmounted(() => {
             <slot name="cancel" :close="() => emit('close')">
               <a
                 tabindex="0"
+                role="button"
                 class="button v-button v-modal-close"
                 :class="[rounded && 'is-rounded']"
                 @keydown.space.prevent="emit('close')"

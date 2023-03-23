@@ -30,6 +30,7 @@ const props = defineProps<{
     v-if="props.isOpen"
     class="mobile-overlay"
     tabindex="0"
+    role="button"
     @keydown.space.prevent="emit('toggle')"
     @click="emit('toggle')"
   ></div>

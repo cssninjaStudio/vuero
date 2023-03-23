@@ -115,6 +115,7 @@ watchPostEffect(() => {
               <div
                 class="vuero-hamburger nav-trigger push-resize"
                 tabindex="0"
+                role="button"
                 @keydown.space.prevent="sidebar.toggle('messages')"
                 @click="sidebar.toggle('messages')"
               >
@@ -158,6 +159,7 @@ watchPostEffect(() => {
                     <div
                       class="hide"
                       tabindex="0"
+                      role="button"
                       @keydown.space.prevent="chat.setAddConversationOpen(false)"
                       @click="chat.setAddConversationOpen(false)"
                     >

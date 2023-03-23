@@ -224,6 +224,7 @@ watch(previewTemplate, () => {
           <a
             class="action-link toggle-uploader-link"
             tabindex="0"
+            role="button"
             @keydown.space.prevent="isUploading = true"
             @click="isUploading = true"
           >

@@ -26,6 +26,7 @@ const toggleTabs = () => {
       <div class="tabbed-controls">
         <a
           class="tabbed-control"
+          role="button"
           :class="[!state && 'is-active']"
           tabindex="0"
           @keydown.space.prevent="toggleTabs"
@@ -35,6 +36,7 @@ const toggleTabs = () => {
         </a>
         <a
           class="tabbed-control"
+          role="button"
           :class="[state && 'is-active']"
           tabindex="0"
           @keydown.space.prevent="toggleTabs"
