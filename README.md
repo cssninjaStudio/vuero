@@ -98,7 +98,6 @@ We try to keep it mostly up to date, so you can always find the latest informati
 
 - [Setup your project](https://docs.cssninja.io/vuero/guide/setup-your-project.html?utm_source=readme)
 - [Customizing Vuero](https://docs.cssninja.io/vuero/guide/customizing-vuero.html?utm_source=readme)
-- [Going further](https://docs.cssninja.io/vuero/guide/going-further.html?utm_source=readme)
 - [Common Issues](https://docs.cssninja.io/vuero/help/common-issues.html?utm_source=readme)
 - [Customer support](https://docs.cssninja.io/vuero/help/customer-support.html?utm_source=readme)
 - [Changelog](https://docs.cssninja.io/vuero/guide/changelog?utm_source=readme)
