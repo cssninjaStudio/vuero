@@ -2,9 +2,6 @@ name: tests-npm
 
 on:
   workflow_call:
-  pull_request:
-    branches:
-      - main
 
 jobs:
   build-npm:
