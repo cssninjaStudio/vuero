@@ -16,8 +16,10 @@ const filteredIcons = computed(() => {
     return lineIcons
   }
 
+  const filterRe = new RegExp(filter.value, 'i')
+
   return lineIcons.filter((icon) => {
-    return icon.className.match(new RegExp(filter.value, 'i'))
+    return icon.className.match(filterRe)
   })
 })
 
@@ -87,7 +89,7 @@ useHead({
                 @keydown.space.prevent="copy(getSnippet(icon))"
                 @click="copy(getSnippet(icon))"
               >
-                <i aria-hidden="true" class="lnir" :class="icon.className"></i>
+                <i aria-hidden="true" class="lnil" :class="icon.className"></i>
                 <p class="textFilter-match">{{ icon.className }}</p>
                 <em>{{ icon.className }}</em>
                 <input type="text" maxlength="1" readonly :value="icon.char" />

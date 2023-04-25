@@ -16,8 +16,10 @@ const filteredIcons = computed(() => {
     return lineIconsRegular
   }
 
+  const filterRe = new RegExp(filter.value, 'i')
+
   return lineIconsRegular.filter((icon) => {
-    return icon.className.match(new RegExp(filter.value, 'i'))
+    return icon.className.match(filterRe)
   })
 })
 
