@@ -365,7 +365,7 @@ const { profitChartOptions } = useProfitChart()
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (width <= 767px) {
   .personal-dashboard-v1 {
     .dashboard-header {
       text-align: center;
@@ -404,7 +404,7 @@ const { profitChartOptions } = useProfitChart()
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: landscape) {
   .personal-dashboard-v1 {
     .dashboard-body {
       .dashboard-card {

@@ -635,7 +635,7 @@ const options = ref(['Newest'])
 3. Media Queries
 ========================================================================== */
 
-@media only screen and (max-width: 767px) {
+@media only screen and (width <= 767px) {
   .search-results-wrapper {
     .search-results-header {
       flex-direction: column;
@@ -664,7 +664,7 @@ const options = ref(['Newest'])
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
   .search-results-wrapper {
     .search-results-body {
       .search-results-group {
@@ -674,7 +674,7 @@ const options = ref(['Newest'])
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: landscape) {
   .search-results-wrapper {
     .search-results-body {
       .search-results-group {

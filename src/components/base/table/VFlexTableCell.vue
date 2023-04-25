@@ -324,7 +324,7 @@ const props = withDefaults(defineProps<VFlexTableCellProps>(), {
   }
 }
 
-@media (max-width: 767px) {
+@media (width <= 767px) {
   .flex-table-cell {
     position: relative;
     margin-bottom: 12px;
@@ -354,7 +354,7 @@ const props = withDefaults(defineProps<VFlexTableCellProps>(), {
     }
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
   .flex-table-cell {
     &.is-user {
       img {

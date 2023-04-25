@@ -462,7 +462,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
     }
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
   .heatmap-wrapper {
     .heatmap-inner {
       .heatmap-row {
@@ -494,7 +494,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: landscape) {
   .heatmap-wrapper {
     .heatmap-inner {
       .heatmap-row {

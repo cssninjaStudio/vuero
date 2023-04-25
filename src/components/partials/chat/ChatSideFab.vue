@@ -61,7 +61,7 @@ const chat = useChat()
   }
 }
 
-@media (max-width: 767px) {
+@media (width <= 767px) {
   .chat-side-fab {
     top: 75px;
     right: 16px;

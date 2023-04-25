@@ -271,7 +271,7 @@
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (width <= 767px) {
   .promotion-page-wrapper {
     .wrapper-outer {
       flex-direction: column;

@@ -134,7 +134,7 @@ const props = defineProps<VViewWrapperProps>()
   }
 }
 
-@media (max-width: 767px) {
+@media (width <= 767px) {
   .view-wrapper {
     &.has-top-nav {
       .is-navbar-md,
@@ -191,7 +191,7 @@ const props = defineProps<VViewWrapperProps>()
     }
   }
 }
-@media (max-width: 767px) {
+@media (width <= 767px) {
   // Layout
   .view-wrapper {
     width: 100% !important;

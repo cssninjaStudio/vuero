@@ -306,7 +306,7 @@ const filteredData = computed(() => {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (width <= 767px) {
   .list-view-v3 {
     .list-view-item {
       position: relative;

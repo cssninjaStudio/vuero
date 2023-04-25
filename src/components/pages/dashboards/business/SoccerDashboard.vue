@@ -887,7 +887,7 @@
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (width <= 767px) {
   .soccer-dashboard {
     .soccer-dashboard-inner {
       .dashboard-cta {
@@ -904,7 +904,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
   .soccer-dashboard {
     .soccer-dashboard-inner {
       .dashboard-cta {

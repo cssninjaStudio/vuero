@@ -347,7 +347,7 @@ onUnmounted(() => {
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (width >= 769px) {
   .modal.modal-lg {
     .modal-card,
     .modal-content {

@@ -437,7 +437,7 @@ export default defineComponent({
 9. Media Queries
 ========================================================================== */
 
-@media (max-width: 767px) {
+@media (width <= 767px) {
   .flex-table-wrapper {
     .flex-table {
       .flex-table-header {

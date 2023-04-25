@@ -111,7 +111,7 @@ const props = withDefaults(
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
   .stat-widget {
     &.table-widget-v1 {
       .table {

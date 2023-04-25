@@ -286,7 +286,7 @@ const dropdown = useDropdown(dropdownElement)
   }
 }
 
-@media (max-width: 767px) {
+@media (width <= 767px) {
   .message-field-wrapper {
     width: 100% !important;
   }

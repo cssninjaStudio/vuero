@@ -399,7 +399,7 @@
     }
   }
 }
-@media (max-width: 767px) {
+@media (width <= 767px) {
   .chat-body {
     width: 100% !important;
     padding: 0 10px 40px;

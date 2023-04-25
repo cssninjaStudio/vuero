@@ -756,7 +756,7 @@ watch(
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (width <= 767px) {
   .has-top-nav {
     .dashboard-map-wrapper {
       top: 0;
@@ -790,7 +790,7 @@ watch(
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
   .has-top-nav {
     .dashboard-map-wrapper {
       top: 0;

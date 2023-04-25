@@ -246,7 +246,7 @@ function getAvatarData(user: any): VAvatarProps {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: landscape) {
   .card-grid-v3 .card-grid-item > h3 {
     font-size: 1rem;
   }

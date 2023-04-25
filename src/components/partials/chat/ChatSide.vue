@@ -282,7 +282,7 @@ const chat = useChat()
   }
 }
 
-@media (max-width: 767px) {
+@media (width <= 767px) {
   .chat-side {
     position: fixed;
     top: 0;

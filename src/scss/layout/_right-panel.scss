@@ -146,7 +146,7 @@
 3. Media Queries
 ========================================================================== */
 
-@media only screen and (max-width: 767px) {
+@media only screen and (width <= 767px) {
   .right-panel-wrapper {
     .right-panel {
       width: 100%;

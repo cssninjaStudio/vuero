@@ -88,7 +88,7 @@ const props = withDefaults(defineProps<VPlaceholderPageProps>(), {
   }
 }
 
-@media (max-width: 767px) {
+@media (width <= 767px) {
   .page-placeholder {
     .placeholder-content {
       img {

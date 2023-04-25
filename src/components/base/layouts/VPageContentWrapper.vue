@@ -44,7 +44,7 @@
 }
 
 // Enable this setting if you want the dashboard to be larger
-@media only screen and (min-width: 1408px) {
+@media only screen and (width >= 1408px) {
   .page-content-wrapper {
     // max-width: 1380px;
   }

@@ -686,7 +686,7 @@ const columns = {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (width <= 767px) {
   .hr-dashboard {
     .block-header {
       flex-direction: column;
@@ -721,7 +721,7 @@ const columns = {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
   .hr-dashboard {
     .block-header {
       padding: 40px;
@@ -733,7 +733,7 @@ const columns = {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: landscape) {
   .hr-dashboard {
     .block-header {
       padding: 40px;

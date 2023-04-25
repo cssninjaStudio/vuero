@@ -411,7 +411,7 @@ const stayFocus = useLocalStorage('disable-stay-focus', '')
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (width <= 767px) {
   .demo-card {
     .demo-title {
       .demo-actions {
@@ -430,7 +430,7 @@ const stayFocus = useLocalStorage('disable-stay-focus', '')
   }
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (width <= 1023px) {
   .toc-column {
     display: none !important;
   }

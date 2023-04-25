@@ -400,7 +400,7 @@ const totalColumns = {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (width <= 767px) {
   .invoice-wrapper {
     .invoice-section {
       &.is-flex {

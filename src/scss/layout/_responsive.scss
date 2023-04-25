@@ -16,7 +16,7 @@ Responsive styles
 1. Tablet Landscape
 ========================================================================== */
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: landscape) {
   .pageloader,
   .infraloader {
     width: calc(100% - 60px) !important;
@@ -186,7 +186,7 @@ Responsive styles
 2. Tablet portrait
 ========================================================================== */
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
   .infraloader,
   .pageloader {
     width: 100% !important;
@@ -329,7 +329,7 @@ Responsive styles
 3. Mobile Only
 ========================================================================== */
 
-@media (max-width: 767px) {
+@media (width <= 767px) {
   .infraloader,
   .pageloader {
     width: 100% !important;
@@ -462,7 +462,7 @@ Responsive styles
 4. Custom
 ========================================================================== */
 
-@media only screen and (min-width: 1025px) and (orientation: landscape) {
+@media only screen and (width >= 1025px) and (orientation: landscape) {
   .panel-close {
     display: none !important;
   }
@@ -478,7 +478,7 @@ Responsive styles
 5. Responsive Helpers
 ========================================================================== */
 
-@media only screen and (max-width: 767px) {
+@media only screen and (width <= 767px) {
   .h-hidden-mobile {
     display: none !important;
   }
@@ -502,7 +502,7 @@ Responsive styles
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
   .h-hidden-tablet-p {
     display: none !important;
   }
@@ -527,7 +527,7 @@ Responsive styles
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: landscape) {
   .h-hidden-tablet-l {
     display: none !important;
   }
@@ -541,7 +541,7 @@ Responsive styles
   }
 }
 
-@media only screen and (min-width: 768px) and (orientation: landscape) {
+@media only screen and (width >= 768px) and (orientation: landscape) {
   .h-only-mobile {
     display: block !important;
   }
@@ -559,7 +559,7 @@ Responsive styles
   }
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (width >= 1025px) {
   .h-hidden-desktop {
     display: none !important;
   }
@@ -578,7 +578,7 @@ Responsive styles
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
   .mobile-navbar .navbar-item.is-notification .navbar-dropdown {
     width: 280px !important;
     position: absolute !important;
@@ -586,7 +586,7 @@ Responsive styles
   }
 }
 
-@media only screen and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (width <= 1024px) and (orientation: portrait) {
   .mobile-navbar .navbar-item.is-notification {
     display: flex !important;
   }

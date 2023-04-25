@@ -561,7 +561,7 @@ useHead({
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (width <= 767px) {
   .roadmap-wrapper {
     .roadmap-outer {
       .roadmap-inner {

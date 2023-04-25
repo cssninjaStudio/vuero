@@ -104,7 +104,7 @@ watch(
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (width >= 768px) {
     &:hover input + span {
       box-shadow: 0 2px 4px rgba(#000, 0.15);
     }

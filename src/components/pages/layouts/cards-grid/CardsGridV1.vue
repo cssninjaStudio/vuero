@@ -328,7 +328,7 @@ const optionsSingle = [
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (width <= 767px) {
   .card-grid-v1 {
     .card-grid-item {
       .card-grid-item-body {

@@ -855,7 +855,7 @@ const options = ref(['All Flights'])
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (width <= 767px) {
   .flights-dashboard {
     .booking-bar-wrapper {
       .travel-illustration {
@@ -925,7 +925,7 @@ const options = ref(['All Flights'])
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
   .flights-dashboard {
     .booking-bar-wrapper {
       .travel-illustration {
@@ -947,7 +947,7 @@ const options = ref(['All Flights'])
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: landscape) {
   .flights-dashboard {
     .booking-bar-wrapper {
       .travel-illustration {
@@ -967,7 +967,7 @@ const options = ref(['All Flights'])
   }
 }
 
-@media only screen and (max-width: 1300px) and (orientation: landscape) {
+@media only screen and (width <= 1300px) and (orientation: landscape) {
   .flights-dashboard {
     .flights-summary-wrapper {
       .flight-summary {

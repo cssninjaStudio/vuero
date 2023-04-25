@@ -1289,7 +1289,7 @@ onUnmounted(() => {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (width <= 767px) {
   .steps-container {
     padding: 0 1rem;
   }
@@ -1326,7 +1326,7 @@ onUnmounted(() => {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
   .signup-wrapper {
     .card-bg {
       bottom: -75px;

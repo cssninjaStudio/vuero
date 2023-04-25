@@ -1069,7 +1069,7 @@ const participants = [
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (width <= 767px) {
   .project-details {
     .project-details-inner {
       .project-details-card {
@@ -1110,7 +1110,7 @@ const participants = [
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
   .project-details {
     .project-details-inner {
       .project-details-card {

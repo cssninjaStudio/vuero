@@ -338,7 +338,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (width <= 767px) {
   .vuero-footer {
     .footer-head {
       flex-direction: column;
@@ -356,7 +356,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
   .vuero-footer {
     .footer-head,
     .footer-body {
@@ -370,7 +370,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: landscape) {
   .vuero-footer {
     .footer-head,
     .footer-body {

@@ -245,7 +245,7 @@ watchPostEffect(() => {
 8. Media Queries
 ========================================================================== */
 
-@media (max-width: 767px) {
+@media (width <= 767px) {
   .chat-content {
     padding: 0 5px !important;
   }

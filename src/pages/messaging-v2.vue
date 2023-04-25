@@ -1482,7 +1482,7 @@ $overlay-bg-dark: linear-gradient(
 9. Media Queries
 ========================================================================== */
 
-@media (max-width: 767px) {
+@media (width <= 767px) {
   .chat-app-wrapper {
     .chat-app-header {
       .search-bar {

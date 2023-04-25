@@ -137,7 +137,7 @@ useHead({
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (width <= 767px) {
   .error-container {
     .error-wrapper {
       padding-top: 60px;

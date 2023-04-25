@@ -449,7 +449,7 @@ import { courses, files, students } from '/@src/data/dashboards/course'
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (width <= 767px) {
   .course-dashboard {
     .dashboard-title {
       flex-direction: column;

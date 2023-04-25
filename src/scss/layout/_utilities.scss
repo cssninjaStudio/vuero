@@ -100,7 +100,7 @@ var {
   }
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .divider span::before,
   .divider span::after {
     width: 22% !important;

@@ -359,13 +359,13 @@ const props = defineProps<{
 }
 
 // Message queries
-@media screen and (max-width: 800px) {
+@media screen and (width <= 800px) {
   .msg img {
     width: 300px;
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (width <= 550px) {
   .msg img {
     width: 200px;
   }

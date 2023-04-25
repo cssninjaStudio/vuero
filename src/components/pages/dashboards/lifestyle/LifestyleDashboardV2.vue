@@ -497,7 +497,7 @@ const topicList = dashboardData.topicList as any[]
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (width <= 767px) {
   .lifestyle-dashboard-v2 {
     .long-card {
       .long-card-overlay {
@@ -521,7 +521,7 @@ const topicList = dashboardData.topicList as any[]
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
   .lifestyle-dashboard-v2 {
     .is-flex-tablet-p {
       .column {
@@ -564,7 +564,7 @@ const topicList = dashboardData.topicList as any[]
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: landscape) {
   .lifestyle-dashboard-v2 {
     .long-card {
       .long-card-overlay {

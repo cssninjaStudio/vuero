@@ -141,7 +141,7 @@ const confirm = async () => {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (width <= 767px) {
   .confirm-account-wrapper {
     .wrapper-inner {
       .action-box {

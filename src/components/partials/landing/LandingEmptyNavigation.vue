@@ -410,7 +410,7 @@ watchEffect(() => {
   }
 }
 
-@media (max-width: 767px) {
+@media (width <= 767px) {
   .landing-page-wrapper {
     .navbar {
       display: flex;
@@ -497,7 +497,7 @@ watchEffect(() => {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
   .landing-page-wrapper {
     .navbar {
       display: flex;
@@ -588,7 +588,7 @@ watchEffect(() => {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: landscape) {
   .landing-page-wrapper {
     .navbar {
       width: calc(100% - 40px);

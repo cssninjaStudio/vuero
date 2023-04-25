@@ -608,7 +608,7 @@ const props = defineProps<{
   }
 }
 
-@media (max-width: 767px) {
+@media (width <= 767px) {
   .mobile-navbar {
     display: flex;
   }

@@ -146,7 +146,7 @@ const optionsSingle = [
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
   .user-grid-v1 {
     .columns {
       display: flex;
@@ -158,7 +158,7 @@ const optionsSingle = [
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: landscape) {
   .user-grid-v1 {
     .columns {
       .column {

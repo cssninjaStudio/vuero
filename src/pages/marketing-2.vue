@@ -780,7 +780,7 @@ useHead({
   }
 }
 
-@media (max-width: 767px) {
+@media (width <= 767px) {
   .marketing-hero {
     &.is-left,
     &.is-right,
@@ -909,7 +909,7 @@ useHead({
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
   .marketing-hero {
     &.is-centered {
       text-align: center;

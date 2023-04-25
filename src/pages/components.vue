@@ -68,7 +68,7 @@ const layoutSwitcher = useLayoutSwitcher()
   max-width: 340px;
 }
 
-@media only screen and (min-width: 1024px) and (orientation: portrait) {
+@media only screen and (width >= 1024px) and (orientation: portrait) {
   .landing-page-wrapper .hero .navbar {
     &:not(.is-docked) {
       .navbar-menu {

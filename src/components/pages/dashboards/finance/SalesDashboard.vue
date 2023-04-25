@@ -523,7 +523,7 @@ onMounted(() => {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (width <= 767px) {
   .sales-dashboard {
     .dashboard-header {
       text-align: center;

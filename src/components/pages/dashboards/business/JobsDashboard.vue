@@ -545,10 +545,10 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
       grid-column-gap: 1.5rem;
       grid-row-gap: 1.5rem;
 
-      @media screen and (max-width: 1212px) {
+      @media screen and (width <= 1212px) {
         grid-template-columns: repeat(2, 1fr);
       }
-      @media screen and (max-width: 930px) {
+      @media screen and (width <= 930px) {
         grid-template-columns: repeat(1, 1fr);
       }
     }
@@ -624,19 +624,19 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
   }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (width <= 620px) {
   .job-cards {
     grid-template-columns: repeat(1, 1fr);
   }
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (width <= 730px) {
   .job-cards {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (width <= 767px) {
   .jobs-dashboard {
     .search-menu {
       flex-direction: column;

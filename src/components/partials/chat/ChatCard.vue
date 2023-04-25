@@ -53,7 +53,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (width <= 767px) {
   .is-chat {
     position: absolute;
     top: 0 !important;

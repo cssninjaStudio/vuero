@@ -549,7 +549,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (width <= 767px) {
   .lifestyle-dashboard-v4 {
     .illustration-header-2 {
       flex-direction: column;
@@ -589,7 +589,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
   .lifestyle-dashboard-v4 {
     .articles-feed {
       .articles-feed-list {
@@ -609,7 +609,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: landscape) {
   .lifestyle-dashboard-v4 {
     .updates {
       .updates-list {

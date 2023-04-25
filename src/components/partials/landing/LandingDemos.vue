@@ -709,7 +709,7 @@ debouncedWatch(
   }
 }
 
-@media (max-width: 767px) {
+@media (width <= 767px) {
   .landing-page-wrapper {
     .vuero-demo-wrapper {
       min-height: 184px;
@@ -717,7 +717,7 @@ debouncedWatch(
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
   .landing-page-wrapper {
     .vuero-demos {
       .demo-section {
@@ -733,7 +733,7 @@ debouncedWatch(
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: landscape) {
   .landing-page-wrapper {
     .vuero-demo-wrapper {
       min-height: 174px;

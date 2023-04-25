@@ -420,7 +420,7 @@ const democheck = ref(['value_2'])
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (width <= 767px) {
   .personal-dashboard-v2 {
     .dashboard-header {
       flex-direction: column;

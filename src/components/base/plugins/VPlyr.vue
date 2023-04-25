@@ -209,7 +209,7 @@ onBeforeUnmount(() => {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (width <= 767px) {
   .video-player-container {
     &.is-square {
       height: 303px;

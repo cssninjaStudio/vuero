@@ -188,7 +188,7 @@ $text-offset: $a-height - 90;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (width <= 600px) {
   .image-accordion {
     height: auto;
 

@@ -36,7 +36,7 @@ if (mobileWidthValue.match(CssUnitRe) === null) {
   text-overflow: ellipsis;
 }
 
-@media (max-width: 767px) {
+@media (width <= 767px) {
   .text-ellipsis {
     max-width: v-bind('mobileWidthValue');
   }

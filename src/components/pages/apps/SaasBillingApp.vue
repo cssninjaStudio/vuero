@@ -841,7 +841,7 @@ const selected = ref('value_2')
 3. SaaS Billing Media Queries
 ========================================================================== */
 
-@media only screen and (max-width: 767px) {
+@media only screen and (width <= 767px) {
   .saas-billing-wrapper {
     .plans-wrapper {
       flex-direction: column;
@@ -897,7 +897,7 @@ const selected = ref('value_2')
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
   .saas-billing-wrapper {
     max-width: 690px;
 
@@ -955,7 +955,7 @@ const selected = ref('value_2')
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: landscape) {
   .saas-billing-wrapper {
     .plans-wrapper {
       .left {

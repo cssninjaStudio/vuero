@@ -393,7 +393,7 @@ const exampleColumns = {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (width <= 767px) {
   .all-projects {
     .all-projects-header {
       flex-direction: column;
@@ -469,7 +469,7 @@ const exampleColumns = {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
   .all-projects {
     .illustration-header {
       > img {
@@ -499,7 +499,7 @@ const exampleColumns = {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: landscape) {
   .all-projects {
     .illustration-header {
       .header-stats {

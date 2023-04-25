@@ -496,7 +496,7 @@ const userStack = userData.userStack as VAvatarProps[]
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (width <= 767px) {
   .personal-dashboard-v3 {
     .stats-wrapper {
       height: auto;

@@ -1418,7 +1418,7 @@ const validateStep = async () => {
   }
 }
 
-@media (max-width: 767px) {
+@media (width <= 767px) {
   .mobile-steps {
     display: flex;
   }
@@ -1466,7 +1466,7 @@ const validateStep = async () => {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
   .stepper-form {
     padding-top: 0;
 
@@ -1480,7 +1480,7 @@ const validateStep = async () => {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: landscape) {
   .stepper-form {
     padding-top: 0;
 

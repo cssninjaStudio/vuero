@@ -745,7 +745,7 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: landscape) {
   .banking-dashboard-v1 {
     .dashboard-card {
       &.is-credit-cards {

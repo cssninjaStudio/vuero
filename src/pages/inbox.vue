@@ -1724,7 +1724,7 @@ Dark mode
 ========================================================================== */
 
 // Media queries
-@media (max-width: 767px) {
+@media (width <= 767px) {
   .inbox-hidden-mobile {
     display: none !important;
   }

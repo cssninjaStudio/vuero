@@ -577,7 +577,7 @@ useHead({
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (width <= 767px) {
   .status-page-wrapper {
     padding-top: 20px;
 

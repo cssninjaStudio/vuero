@@ -493,7 +493,7 @@ const {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (width <= 767px) {
   .ecommerce-dashboard-v1 {
     .dashboard-header {
       text-align: center;

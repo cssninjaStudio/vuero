@@ -12,7 +12,7 @@
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (width <= 767px) {
   .placeload-wrap {
     &.is-flex {
       flex-direction: column;

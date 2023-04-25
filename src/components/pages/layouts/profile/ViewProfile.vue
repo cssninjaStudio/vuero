@@ -1163,7 +1163,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (width <= 767px) {
   .profile-wrapper {
     .profile-body {
       .profile-card {

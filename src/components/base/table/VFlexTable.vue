@@ -423,7 +423,7 @@ const columns = computed(() => {
 3. Media Queries
 ========================================================================== */
 
-@media (max-width: 767px) {
+@media (width <= 767px) {
   .flex-table {
     .flex-table-header {
       display: none;
@@ -477,7 +477,7 @@ const columns = computed(() => {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (width <= 767px) {
   .flex-table {
     &.sub-table {
       padding-top: 16px;

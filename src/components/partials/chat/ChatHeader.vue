@@ -264,7 +264,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (width <= 767px) {
   .chat-header {
     border-radius: 16px 16px 0 0 !important;
   }

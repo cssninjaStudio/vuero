@@ -669,7 +669,7 @@ onMounted(async () => {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (width <= 767px) {
   .company-dashboard {
     .company-header {
       flex-wrap: wrap;

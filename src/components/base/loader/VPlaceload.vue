@@ -89,7 +89,7 @@ if (mobileHeightValue.match(CssUnitRe) === null) {
   }
 }
 
-@media (max-width: 767px) {
+@media (width <= 767px) {
   .content-shape {
     width: v-bind(mobileWidthValue);
     height: v-bind(mobileHeightValue);
