@@ -205,16 +205,6 @@ const activeTab = ref<TabId>('display')
                       ></i>
                     </RouterLink>
                   </li>
-                  <li>
-                    <RouterLink to="/components/plugins/simple-datatables">
-                      <span>VSimpleDatatables</span>
-                      <i
-                        aria-hidden="true"
-                        class="iconify"
-                        data-icon="feather:circle"
-                      ></i>
-                    </RouterLink>
-                  </li>
                 </ul>
               </div>
 

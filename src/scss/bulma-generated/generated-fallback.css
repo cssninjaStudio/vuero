@@ -3013,13 +3013,13 @@ body.opened {
   fill: rgb(65, 185, 131);
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
   .navbar-brand .is-notification .navbar-dropdown {
     background: rgb(255, 255, 255);
   }
 }
 
-@media (max-width: 767px) {
+@media (width <= 767px) {
   .navbar-brand .is-notification .navbar-dropdown {
     background: rgb(255, 255, 255);
   }
@@ -3564,14 +3564,14 @@ code {
   color: rgb(255, 255, 255);
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (width <= 767px) {
   .vertical-tabs-wrapper .tabs ul li.is-active a {
     color: rgb(65, 185, 131);
     border-bottom-color: rgb(65, 185, 131);
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (width >= 768px) {
   .vertical-tabs-wrapper .tabs ul li.is-active a {
     color: rgb(65, 185, 131);
     border-right-color: rgb(65, 185, 131);

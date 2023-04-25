@@ -491,18 +491,6 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <span>VPlyr</span>
                   </div>
                 </RouterLink>
-
-                <RouterLink
-                  to="/components/plugins/simple-datatables"
-                  class="dropdown-item is-media"
-                >
-                  <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-plug"></i>
-                  </div>
-                  <div class="meta">
-                    <span>VSimpleDatatables</span>
-                  </div>
-                </RouterLink>
               </div>
             </div>
           </div>

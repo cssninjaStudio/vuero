@@ -78,7 +78,6 @@ declare module 'vue-router/auto/routes' {
     '/components/plugins/notif': RouteRecordInfo<'/components/plugins/notif', '/components/plugins/notif', Record<never, never>, Record<never, never>>,
     '/components/plugins/photos-swipe': RouteRecordInfo<'/components/plugins/photos-swipe', '/components/plugins/photos-swipe', Record<never, never>, Record<never, never>>,
     '/components/plugins/plyr': RouteRecordInfo<'/components/plugins/plyr', '/components/plugins/plyr', Record<never, never>, Record<never, never>>,
-    '/components/plugins/simple-datatables': RouteRecordInfo<'/components/plugins/simple-datatables', '/components/plugins/simple-datatables', Record<never, never>, Record<never, never>>,
     '/components/plugins/tippy': RouteRecordInfo<'/components/plugins/tippy', '/components/plugins/tippy', Record<never, never>, Record<never, never>>,
     '/components/snack': RouteRecordInfo<'/components/snack', '/components/snack', Record<never, never>, Record<never, never>>,
     '/components/table': RouteRecordInfo<'/components/table', '/components/table', Record<never, never>, Record<never, never>>,

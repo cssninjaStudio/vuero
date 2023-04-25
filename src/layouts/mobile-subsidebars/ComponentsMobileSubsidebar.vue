@@ -213,10 +213,6 @@
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             VPlyr
           </RouterLink>
-          <RouterLink to="/components/plugins/simple-datatables" class="is-submenu">
-            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
-            VSimpleDatatables
-          </RouterLink>
         </VCollapseLinks>
       </ul>
     </div>
