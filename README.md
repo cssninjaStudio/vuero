@@ -96,12 +96,11 @@ We try to keep it mostly up to date, so you can always find the latest informati
 
 ### [Vuero on docs.cssninja.io](https://docs.cssninja.io/vuero?utm_source=readme)
 
-- [Setup your project](https://docs.cssninja.io/vuero/documentation/setup-your-project.html?utm_source=readme)
-- [Customizing Vuero](https://docs.cssninja.io/vuero/documentation/customizing-vuero.html?utm_source=readme)
-- [Going further](https://docs.cssninja.io/vuero/documentation/going-further.html?utm_source=readme)
-- [Common Issues](https://docs.cssninja.io/vuero/documentation/common-issues.html?utm_source=readme)
-- [Customer support](https://docs.cssninja.io/vuero/documentation/customer-support.html?utm_source=readme)
-- [Changelog](https://docs.cssninja.io/vuero/documentation/changelog.html?utm_source=readme)
+- [Setup your project](https://docs.cssninja.io/vuero/guide/setup-your-project.html?utm_source=readme)
+- [Customizing Vuero](https://docs.cssninja.io/vuero/guide/customizing-vuero.html?utm_source=readme)
+- [Common Issues](https://docs.cssninja.io/vuero/help/common-issues.html?utm_source=readme)
+- [Customer support](https://docs.cssninja.io/vuero/help/customer-support.html?utm_source=readme)
+- [Changelog](https://docs.cssninja.io/vuero/guide/changelog?utm_source=readme)
 
 We try to keep Vuero dependencies and best practices up to dates. We also take care of user requests, either by implementing requested features, fixing bugs or improving the documentation.
 
