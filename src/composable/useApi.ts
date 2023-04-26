@@ -1,4 +1,8 @@
-import axios, { type RawAxiosRequestHeaders, type AxiosInstance } from 'axios'
+import axios, {
+  type RawAxiosRequestHeaders,
+  type AxiosInstance,
+  type AxiosRequestHeaders,
+} from 'axios'
 
 import { useUserSession } from '/@src/stores/userSession'
 
@@ -19,7 +23,7 @@ export function createApi() {
       config.headers = {
         ...((config.headers as RawAxiosRequestHeaders) ?? {}),
         Authorization: `Bearer ${userSession.token}`,
-      }
+      } as AxiosRequestHeaders
     }
 
     return config
