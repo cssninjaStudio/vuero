@@ -536,7 +536,6 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
 
           .tile-title {
             h3 {
-              font-family: var(--font);
               font-family: var(--font-alt);
               font-size: 1rem;
               font-weight: 600;
