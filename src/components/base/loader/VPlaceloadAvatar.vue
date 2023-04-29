@@ -27,6 +27,8 @@ const props = withDefaults(defineProps<VPlaceloadAvatarProps>(), {
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
+
 .placeload-avatar {
   display: block;
   width: 40px;
@@ -64,8 +66,8 @@ const props = withDefaults(defineProps<VPlaceloadAvatarProps>(), {
   }
 
   &.is-centered {
-    margin-left: auto;
-    margin-right: auto;
+    margin-#{$start-direction}: auto;
+    margin-#{$end-direction}: auto;
   }
 
   &.is-rounded-xs {

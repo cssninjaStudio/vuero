@@ -214,9 +214,7 @@ watchPostEffect(() => {
 </template>
 
 <style lang="scss">
-/* ==========================================================================
-7. Chat Dark mode
-========================================================================== */
+@import '/@src/scss/abstracts/ltr';
 
 .is-dark {
   .collapsed-messaging {
@@ -268,8 +266,8 @@ watchPostEffect(() => {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .collapsed-messaging {
     &.is-active {
-      left: 60px !important;
-      border-left: 1px var(--fade-grey-dark-3);
+      #{$start-direction}: 60px !important;
+      border-#{$start-direction}: 1px var(--fade-grey-dark-3);
     }
   }
 }

@@ -94,6 +94,7 @@ declare module '@vue/runtime-core' {
     CloudContainer: typeof import('./src/components/partials/lifestyle/CloudContainer.vue')['default']
     CollapsedMessaging: typeof import('./src/components/partials/messaging/CollapsedMessaging.vue')['default']
     ColorsDocumentation: typeof import('./documentation/elements/colors-documentation.md')['default']
+    CompanyDashboard: typeof import('./src/components/pages/dashboards/business/CompanyDashboard.vue')['default']
     ComponentsMobileSubsidebar: typeof import('./src/layouts/mobile-subsidebars/ComponentsMobileSubsidebar.vue')['default']
     ComponentsSubnav: typeof import('./src/layouts/navbar-items/ComponentsSubnav.vue')['default']
     ComponentsSubsidebar: typeof import('./src/layouts/sidebar-subsidebar/ComponentsSubsidebar.vue')['default']

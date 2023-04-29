@@ -263,9 +263,14 @@ const options = ref(['All Flights'])
                 <a class="action-icon">
                   <i
                     aria-hidden="true"
-                    class="iconify"
+                    class="iconify ltr-hidden"
+                    data-icon="feather:chevron-right"
+                  />
+                  <i
+                    aria-hidden="true"
+                    class="iconify rtl-hidden"
                     data-icon="feather:chevron-left"
-                  ></i>
+                  />
                 </a>
               </div>
               <div class="center">
@@ -275,9 +280,14 @@ const options = ref(['All Flights'])
                 <a class="action-icon">
                   <i
                     aria-hidden="true"
-                    class="iconify"
+                    class="iconify rtl-hidden"
                     data-icon="feather:chevron-right"
-                  ></i>
+                  />
+                  <i
+                    aria-hidden="true"
+                    class="iconify ltr-hidden"
+                    data-icon="feather:chevron-left"
+                  />
                 </a>
               </div>
             </div>
@@ -446,6 +456,7 @@ const options = ref(['All Flights'])
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .flights-dashboard {
@@ -463,7 +474,7 @@ const options = ref(['All Flights'])
     .travel-illustration {
       position: absolute;
       bottom: 30px;
-      right: 30px;
+      #{$end-direction}: 30px;
       max-width: 260px;
     }
 
@@ -478,7 +489,7 @@ const options = ref(['All Flights'])
       }
 
       .inner {
-        margin-left: 16px;
+        margin-#{$start-direction}: 16px;
 
         .booking-bar-heading {
           font-family: var(--font-alt);
@@ -507,7 +518,7 @@ const options = ref(['All Flights'])
         align-items: center;
 
         .control:not(:last-of-type) {
-          margin-right: 2rem;
+          margin-#{$end-direction}: 2rem;
         }
 
         .input {
@@ -569,14 +580,14 @@ const options = ref(['All Flights'])
         &::before {
           content: '$';
           position: relative;
-          right: 0;
+          #{$end-direction}: 0;
           font-size: 1.2rem;
           font-weight: 700;
         }
       }
 
       .meta {
-        margin-left: 16px;
+        margin-#{$start-direction}: 16px;
         line-height: 1.3;
 
         span {
@@ -654,12 +665,12 @@ const options = ref(['All Flights'])
       }
 
       .start {
-        margin-left: 1rem;
+        margin-#{$start-direction}: 1rem;
       }
 
       .end {
-        margin-left: auto;
-        margin-right: 1.5rem;
+        margin-#{$start-direction}: auto;
+        margin-#{$end-direction}: 1.5rem;
       }
 
       .route {
@@ -694,18 +705,18 @@ const options = ref(['All Flights'])
             content: '';
             position: absolute;
             top: -14px;
-            left: 50%;
-            right: 50%;
+            #{$start-direction}: 50%;
+            #{$end-direction}: 50%;
             height: 10px;
             width: 1px;
-            border-right: 1px solid var(--light-text);
+            border-#{$end-direction}: 1px solid var(--light-text);
           }
 
           &::after {
             content: attr(data-content);
             position: absolute;
             top: -32px;
-            left: 23%;
+            #{$start-direction}: 23%;
             width: 130px;
             font-size: 0.8rem;
             text-align: center;
@@ -715,7 +726,7 @@ const options = ref(['All Flights'])
 
         .arrival {
           font-size: 1.8rem;
-          transform: rotate(90deg);
+          transform: rotate($transform-direction * 90deg);
           height: 26px;
           width: 26px;
           display: flex;
@@ -725,9 +736,9 @@ const options = ref(['All Flights'])
           .lnil {
             position: relative;
             top: -4px;
-            right: 5px;
+            #{$end-direction}: 5px;
             color: var(--light-text);
-            margin-left: 0.75rem;
+            margin-#{$start-direction}: 0.75rem;
           }
         }
       }
@@ -742,7 +753,7 @@ const options = ref(['All Flights'])
           content: '$';
           position: relative;
           top: -8px;
-          right: 0;
+          #{$end-direction}: 0;
           font-size: 1.1rem;
           font-weight: 700;
         }
@@ -930,7 +941,7 @@ const options = ref(['All Flights'])
     .booking-bar-wrapper {
       .travel-illustration {
         bottom: 30px;
-        right: -25px;
+        #{$end-direction}: -25px;
         max-width: 215px;
       }
     }
@@ -952,7 +963,7 @@ const options = ref(['All Flights'])
     .booking-bar-wrapper {
       .travel-illustration {
         bottom: 30px;
-        right: -12px;
+        #{$end-direction}: -12px;
         max-width: 200px;
       }
     }

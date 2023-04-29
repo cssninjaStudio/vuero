@@ -153,10 +153,12 @@ const optionsSingle = [
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
+
 .card-grid {
   .columns {
-    margin-left: -0.5rem !important;
-    margin-right: -0.5rem !important;
+    margin-#{$start-direction}: -0.5rem !important;
+    margin-#{$end-direction}: -0.5rem !important;
     margin-top: -0.5rem !important;
   }
 
@@ -181,7 +183,7 @@ const optionsSingle = [
           align-items: center;
 
           .meta {
-            margin-left: 10px;
+            margin-#{$start-direction}: 10px;
             line-height: 1.2;
 
             span {
@@ -235,7 +237,7 @@ const optionsSingle = [
                 top: 0;
                 height: 14px;
                 width: 14px;
-                margin-right: 4px;
+                margin-#{$end-direction}: 4px;
               }
             }
           }

@@ -264,6 +264,6 @@
   }
 
   .pagination-next {
-    margin-right: auto;
+    margin-#{$end-direction}: auto;
   }
 }

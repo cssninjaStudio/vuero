@@ -186,6 +186,7 @@ const totalColumns = {
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 /* ==========================================================================
@@ -261,7 +262,7 @@ const totalColumns = {
           align-items: center;
 
           .meta {
-            margin-left: 16px;
+            margin-#{$start-direction}: 16px;
             font-family: var(--font);
 
             h3 {
@@ -280,11 +281,11 @@ const totalColumns = {
           }
 
           .end {
-            margin-left: auto;
-            text-align: right;
+            margin-#{$start-direction}: auto;
+            text-align: #{$end-direction};
 
             &.is-left {
-              text-align: left;
+              text-align: #{$start-direction};
               max-width: 300px;
 
               p {
@@ -412,7 +413,7 @@ const totalColumns = {
         }
 
         .meta {
-          margin-left: 0 !important;
+          margin-#{$start-direction}: 0 !important;
         }
 
         .end {
@@ -426,7 +427,7 @@ const totalColumns = {
           .flex-table-cell {
             &.is-grow {
               > span {
-                margin-left: 0;
+                margin-#{$start-direction}: 0;
               }
             }
           }

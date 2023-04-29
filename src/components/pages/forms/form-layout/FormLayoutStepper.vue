@@ -786,6 +786,8 @@ const validateStep = async () => {
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
+
 .has-top-nav {
   .stepper-form {
     max-width: 880px;
@@ -803,7 +805,7 @@ const validateStep = async () => {
   .form-sections {
     flex-grow: 2;
     max-width: 640px;
-    padding-right: 4rem;
+    padding-#{$end-direction}: 4rem;
 
     .form-section {
       display: none;
@@ -831,7 +833,7 @@ const validateStep = async () => {
           border: none;
           background: none;
           cursor: pointer;
-          margin-left: 0.25rem;
+          margin-#{$start-direction}: 0.25rem;
 
           svg {
             height: 18px;
@@ -881,7 +883,7 @@ const validateStep = async () => {
         align-items: center;
         justify-content: flex-end;
         min-width: 175px;
-        padding-right: 1rem;
+        padding-#{$end-direction}: 1rem;
 
         .checkbox {
           padding: 0;
@@ -896,8 +898,8 @@ const validateStep = async () => {
         background: var(--widget-grey-dark-3);
         display: flex;
         align-items: center;
-        padding-left: calc(0.75em - 1px);
-        padding-right: calc(0.75em - 1px);
+        padding-#{$start-direction}: calc(0.75em - 1px);
+        padding-#{$end-direction}: calc(0.75em - 1px);
         padding-top: 0;
         padding-bottom: 0;
         color: var(--dark-text);
@@ -925,15 +927,15 @@ const validateStep = async () => {
 
         span {
           font-family: var(--font);
-          margin-left: 0.75rem;
+          margin-#{$start-direction}: 0.75rem;
         }
       }
 
       .options {
         display: flex;
         flex-wrap: wrap;
-        margin-left: -0.5rem;
-        margin-right: -0.5rem;
+        margin-#{$start-direction}: -0.5rem;
+        margin-#{$end-direction}: -0.5rem;
 
         .option {
           position: relative;
@@ -951,7 +953,7 @@ const validateStep = async () => {
           input {
             position: absolute;
             top: 0;
-            left: 0;
+            #{$start-direction}: 0;
             height: 100%;
             width: 100%;
             z-index: 1;
@@ -977,7 +979,7 @@ const validateStep = async () => {
           .indicator {
             position: absolute;
             top: 1rem;
-            right: 1rem;
+            #{$end-direction}: 1rem;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -1050,7 +1052,7 @@ const validateStep = async () => {
 
           img {
             position: absolute;
-            right: 0;
+            #{$end-direction}: 0;
             bottom: 0;
             max-height: 180px;
           }
@@ -1068,8 +1070,8 @@ const validateStep = async () => {
           background: var(--white);
           display: flex;
           align-items: center;
-          padding-left: calc(1em - 1px);
-          padding-right: calc(1em - 1px);
+          padding-#{$start-direction}: calc(1em - 1px);
+          padding-#{$end-direction}: calc(1em - 1px);
           padding-top: 0;
           padding-bottom: 0;
           color: var(--dark-text);
@@ -1083,7 +1085,7 @@ const validateStep = async () => {
           > svg {
             height: 18px;
             width: 18px;
-            margin-right: 0.75rem;
+            margin-#{$end-direction}: 0.75rem;
             color: var(--light-text);
           }
 
@@ -1094,7 +1096,7 @@ const validateStep = async () => {
           }
 
           .action {
-            margin-left: auto;
+            margin-#{$start-direction}: auto;
 
             button {
               display: flex;
@@ -1167,14 +1169,14 @@ const validateStep = async () => {
       button {
         position: absolute;
         top: 1rem;
-        right: 1rem;
+        #{$end-direction}: 1rem;
         padding: 0;
         height: 18px;
         width: 18px;
         border: none;
         background: none;
         cursor: pointer;
-        margin-left: 0.25rem;
+        margin-#{$start-direction}: 0.25rem;
 
         svg {
           height: 18px;
@@ -1201,7 +1203,7 @@ const validateStep = async () => {
             height: 14px;
             width: 14px;
             stroke-width: 3px;
-            margin-right: 0.45rem;
+            margin-#{$end-direction}: 0.45rem;
             color: var(--primary);
           }
         }
@@ -1239,7 +1241,7 @@ const validateStep = async () => {
   justify-content: center;
   position: fixed;
   top: 60px;
-  left: 0;
+  #{$start-direction}: 0;
   height: 65px;
   width: 100%;
   background: var(--white);
@@ -1427,7 +1429,7 @@ const validateStep = async () => {
     padding-top: 0;
 
     .form-sections {
-      padding-right: 0;
+      padding-#{$end-direction}: 0;
       overflow: hidden;
 
       .form-section {
@@ -1452,7 +1454,7 @@ const validateStep = async () => {
             min-width: 30%;
 
             img {
-              right: -34px;
+              #{$end-direction}: -34px;
               bottom: -28px;
             }
           }
@@ -1486,7 +1488,7 @@ const validateStep = async () => {
 
     .form-stepper {
       .form-help {
-        right: 2rem;
+        #{$end-direction}: 2rem;
       }
     }
   }

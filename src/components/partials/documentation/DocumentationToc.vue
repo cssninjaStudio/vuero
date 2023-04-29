@@ -100,10 +100,12 @@ onMounted(() => {
 </template>
 
 <style lang="scss" scoped>
+@import '/@src/scss/abstracts/ltr';
+
 .toc {
   position: fixed;
   display: block;
-  padding-left: 2rem;
+  padding-#{$start-direction}: 2rem;
   transition: opacity 0.3s ease;
   opacity: 0.6;
 
@@ -125,16 +127,16 @@ onMounted(() => {
 }
 
 ul {
-  border-left: 1px solid var(--fade-grey-dark-6);
+  border-#{$start-direction}: 1px solid var(--fade-grey-dark-6);
 
   li {
     padding: 0.25rem 0;
 
     a {
       position: relative;
-      left: -2px;
+      #{$start-direction}: -2px;
       font-family: var(--font);
-      border-left: 3px solid transparent;
+      border-#{$start-direction}: 3px solid transparent;
       padding: 0.5rem 1.25rem;
 
       &.is-active {
@@ -146,7 +148,7 @@ ul {
 }
 
 .toc-level-4 {
-  padding-left: 14px;
+  padding-#{$start-direction}: 14px;
 
   + .toc-level-3 {
     padding-top: 4px;
@@ -154,7 +156,7 @@ ul {
 }
 
 .toc-level-5 {
-  padding-left: 24px;
+  padding-#{$start-direction}: 24px;
 }
 
 a {

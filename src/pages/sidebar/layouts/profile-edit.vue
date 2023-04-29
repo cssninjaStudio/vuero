@@ -20,7 +20,7 @@
               <RouterLink to="/sidebar/layouts/profile-edit" class="account-menu-item">
                 <i aria-hidden="true" class="lnil lnil-user-alt"></i>
                 <span>General</span>
-                <span class="end">
+                <span class="end rtl-reflect">
                   <i aria-hidden="true" class="fas fa-arrow-right"></i>
                 </span>
               </RouterLink>
@@ -30,7 +30,7 @@
               >
                 <i aria-hidden="true" class="lnil lnil-crown-alt"></i>
                 <span>Experience</span>
-                <span class="end">
+                <span class="end rtl-reflect">
                   <i aria-hidden="true" class="fas fa-arrow-right"></i>
                 </span>
               </RouterLink>
@@ -40,7 +40,7 @@
               >
                 <i aria-hidden="true" class="lnil lnil-quill"></i>
                 <span>Skills</span>
-                <span class="end">
+                <span class="end rtl-reflect">
                   <i aria-hidden="true" class="fas fa-arrow-right"></i>
                 </span>
               </RouterLink>
@@ -50,7 +50,7 @@
               >
                 <i aria-hidden="true" class="lnil lnil-cog"></i>
                 <span>Settings</span>
-                <span class="end">
+                <span class="end rtl-reflect">
                   <i aria-hidden="true" class="fas fa-arrow-right"></i>
                 </span>
               </RouterLink>
@@ -70,6 +70,7 @@
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .is-navbar {
@@ -128,7 +129,7 @@
           }
 
           i {
-            margin-right: 8px;
+            margin-#{$end-direction}: 8px;
             font-size: 1.1rem;
             color: var(--light-text);
 
@@ -146,7 +147,7 @@
           }
 
           .end {
-            margin-left: auto;
+            margin-#{$start-direction}: auto;
             display: none;
           }
         }
@@ -178,8 +179,8 @@
 
         &.is-stuck {
           background: var(--white);
-          padding-right: 80px;
-          border-left: 1px solid var(--fade-grey-dark-3);
+          padding-#{$end-direction}: 80px;
+          border-#{$start-direction}: 1px solid var(--fade-grey-dark-3);
         }
 
         .left {
@@ -229,7 +230,7 @@
             .edit-button {
               position: absolute;
               bottom: 0;
-              right: 0;
+              #{$end-direction}: 0;
             }
           }
 
@@ -285,7 +286,7 @@
               }
 
               .meta {
-                margin-left: 10px;
+                margin-#{$start-direction}: 10px;
 
                 > span {
                   font-family: var(--font);
@@ -322,7 +323,7 @@
               }
 
               .end {
-                margin-left: auto;
+                margin-#{$start-direction}: auto;
               }
             }
           }

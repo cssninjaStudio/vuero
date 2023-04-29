@@ -160,6 +160,8 @@ const panels = usePanels()
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
+
 .right-panel-wrapper {
   &.is-task {
     .right-panel {
@@ -225,7 +227,7 @@ const panels = usePanels()
               button {
                 height: 40px;
                 width: 40px;
-                border-right: 50%;
+                border-#{$end-direction}: 50%;
                 background: none;
                 border: 1.8px dashed var(--light-text);
                 border-radius: var(--radius-rounded);
@@ -256,7 +258,7 @@ const panels = usePanels()
             display: flex;
 
             *:last-child {
-              margin-left: auto;
+              margin-#{$start-direction}: auto;
             }
 
             .task-stat,
@@ -266,7 +268,7 @@ const panels = usePanels()
               color: var(--light-text);
 
               span {
-                margin-left: 3px;
+                margin-#{$start-direction}: 3px;
               }
 
               svg {
@@ -276,7 +278,7 @@ const panels = usePanels()
             }
 
             .task-stat {
-              margin-right: 15px;
+              margin-#{$end-direction}: 15px;
             }
 
             a {
@@ -287,7 +289,7 @@ const panels = usePanels()
               color: var(--primary);
 
               span {
-                margin-left: 5px;
+                margin-#{$start-direction}: 5px;
               }
 
               svg {
@@ -324,7 +326,7 @@ const panels = usePanels()
               }
 
               .meta {
-                margin-left: 12px;
+                margin-#{$start-direction}: 12px;
                 line-height: 1.3;
 
                 span {
@@ -353,7 +355,7 @@ const panels = usePanels()
               }
 
               .dropdown {
-                margin-left: auto;
+                margin-#{$start-direction}: auto;
               }
             }
           }
@@ -390,7 +392,7 @@ const panels = usePanels()
                 }
 
                 .button {
-                  margin-left: 10px;
+                  margin-#{$start-direction}: 10px;
                 }
               }
             }

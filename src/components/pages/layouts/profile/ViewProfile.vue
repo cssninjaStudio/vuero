@@ -547,6 +547,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 @import '/@src/scss/components/profile-stats';
 
@@ -624,7 +625,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
             font-size: 0.8rem;
             text-transform: uppercase;
             color: var(--dark-text);
-            margin-right: 6px;
+            margin-#{$end-direction}: 6px;
           }
 
           i {
@@ -634,13 +635,13 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
           .action-link {
             position: relative;
             top: -2px;
-            margin-left: auto;
+            margin-#{$start-direction}: auto;
             text-transform: uppercase;
             font-size: 0.8rem;
           }
 
           .control {
-            margin-left: auto;
+            margin-#{$start-direction}: auto;
 
             .form-switch {
               transform: scale(0.8);
@@ -656,8 +657,8 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
           .experience-wrapper {
             display: flex;
             flex-wrap: wrap;
-            margin-left: -8px;
-            margin-right: -8px;
+            margin-#{$start-direction}: -8px;
+            margin-#{$end-direction}: -8px;
 
             .experience-item {
               display: flex;
@@ -675,7 +676,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
               }
 
               .meta {
-                margin-left: 10px;
+                margin-#{$start-direction}: 10px;
 
                 > span {
                   font-family: var(--font);
@@ -716,8 +717,8 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
           .languages-wrapper {
             display: flex;
             flex-wrap: wrap;
-            margin-left: -8px;
-            margin-right: -8px;
+            margin-#{$start-direction}: -8px;
+            margin-#{$end-direction}: -8px;
 
             .languages-item {
               display: flex;
@@ -737,7 +738,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                 img {
                   position: absolute;
                   top: 50%;
-                  left: 50%;
+                  #{$start-direction}: 50%;
                   transform: translate(-50%, -50%);
                   display: block;
                   width: 32px;
@@ -749,7 +750,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
               }
 
               .meta {
-                margin-left: 10px;
+                margin-#{$start-direction}: 10px;
 
                 > span {
                   display: block;
@@ -817,7 +818,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                 .count {
                   position: absolute;
                   bottom: 0;
-                  right: -4px;
+                  #{$end-direction}: -4px;
                   display: flex;
                   justify-content: center;
                   align-items: center;
@@ -837,7 +838,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
 
               .skill-info {
                 font-family: var(--font);
-                margin-left: 12px;
+                margin-#{$start-direction}: 12px;
                 line-height: 1.3;
 
                 span {
@@ -858,7 +859,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
               }
 
               .people {
-                margin-left: auto;
+                margin-#{$start-direction}: auto;
                 display: flex;
                 justify-content: flex-end;
 
@@ -872,8 +873,8 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
           .recommendations-wrapper {
             display: flex;
             flex-wrap: wrap;
-            margin-left: -8px;
-            margin-right: -8px;
+            margin-#{$start-direction}: -8px;
+            margin-#{$end-direction}: -8px;
 
             .recommendations-item {
               width: calc(50% - 16px);
@@ -958,8 +959,8 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                 img {
                   position: absolute;
                   top: 50%;
-                  left: 50%;
-                  transform: translate(-50%, -50%);
+                  #{$start-direction}: 50%;
+                  transform: translate($transform-direction * -50%, -50%);
                   display: block;
                   width: 32px;
                   min-width: 32px;
@@ -970,7 +971,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
               }
 
               .meta {
-                margin-left: 10px;
+                margin-#{$start-direction}: 10px;
 
                 > span {
                   display: block;
@@ -1009,7 +1010,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
               }
 
               .meta {
-                margin-left: 10px;
+                margin-#{$start-direction}: 10px;
 
                 > span {
                   display: block;

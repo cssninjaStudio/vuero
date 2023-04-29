@@ -192,6 +192,7 @@ const filteredData = computed(() => {
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .list-view-v3 {
@@ -216,7 +217,7 @@ const filteredData = computed(() => {
       }
 
       .meta-left {
-        margin-left: 16px;
+        margin-#{$start-direction}: 16px;
 
         h3 {
           font-family: var(--font-alt);
@@ -246,20 +247,20 @@ const filteredData = computed(() => {
           }
 
           .iconify {
-            margin-right: 0.25rem;
+            margin-#{$end-direction}: 0.25rem;
           }
         }
       }
 
       .meta-right {
-        margin-left: auto;
+        margin-#{$start-direction}: auto;
         display: flex;
         align-items: center;
         justify-content: flex-end;
 
         .buttons {
           margin-bottom: 0;
-          margin-right: 10px;
+          margin-#{$end-direction}: 10px;
         }
       }
     }
@@ -320,7 +321,7 @@ const filteredData = computed(() => {
         }
 
         .meta-left {
-          margin-left: 0;
+          margin-#{$start-direction}: 0;
 
           h3 {
             text-align: center;
@@ -370,7 +371,7 @@ const filteredData = computed(() => {
               &:nth-child(2) {
                 position: absolute;
                 top: 10px;
-                right: 10px;
+                #{$end-direction}: 10px;
                 max-width: 35px;
               }
             }

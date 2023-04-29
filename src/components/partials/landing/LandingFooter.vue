@@ -151,6 +151,8 @@
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
+
 .vuero-footer {
   padding-bottom: 0 !important;
   padding-top: 4rem !important;
@@ -350,8 +352,8 @@
     }
 
     .footer-body {
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-#{$start-direction}: 20px;
+      padding-#{$end-direction}: 20px;
     }
   }
 }
@@ -360,8 +362,8 @@
   .vuero-footer {
     .footer-head,
     .footer-body {
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-#{$start-direction}: 20px;
+      padding-#{$end-direction}: 20px;
     }
 
     .footer-description {
@@ -374,8 +376,8 @@
   .vuero-footer {
     .footer-head,
     .footer-body {
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-#{$start-direction}: 20px;
+      padding-#{$end-direction}: 20px;
     }
   }
 }

@@ -32,6 +32,7 @@ const props = defineProps<{
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .stat-widget {
@@ -75,7 +76,7 @@ const props = defineProps<{
       }
 
       .follow-count {
-        margin-left: 12px;
+        margin-#{$start-direction}: 12px;
 
         span {
           display: block;
@@ -104,7 +105,7 @@ const props = defineProps<{
         border-radius: var(--radius-rounded);
         background: var(--widget-grey);
         color: var(--light-text);
-        margin-left: auto;
+        margin-#{$start-direction}: auto;
 
         &.is-squared {
           border-radius: 10px;

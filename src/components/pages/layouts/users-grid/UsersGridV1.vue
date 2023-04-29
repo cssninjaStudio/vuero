@@ -133,6 +133,7 @@ function getAvatarData(user: any): VAvatarProps {
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .is-dark {
@@ -145,8 +146,8 @@ function getAvatarData(user: any): VAvatarProps {
 
 .user-grid-v1 {
   .columns {
-    margin-left: -0.5rem !important;
-    margin-right: -0.5rem !important;
+    margin-#{$start-direction}: -0.5rem !important;
+    margin-#{$end-direction}: -0.5rem !important;
     margin-top: -0.5rem !important;
   }
 

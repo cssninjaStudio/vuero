@@ -22,9 +22,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
 </template>
 
 <style lang="scss">
-/* ==========================================================================
-6. Chat body placeholder
-========================================================================== */
+@import '/@src/scss/abstracts/ltr';
 
 .is-chat-placeholder {
   position: absolute;
@@ -38,8 +36,8 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
     height: 50%;
     position: absolute;
     top: 50%;
-    left: 0;
-    right: 0;
+    #{$start-direction}: 0;
+    #{$end-direction}: 0;
     bottom: 0;
     margin: 0 auto;
     transform: translateY(-70%);

@@ -54,8 +54,13 @@ const activeTab = ref<TabId>('all')
 
     <div class="search-results-body">
       <!--Search Placeholder -->
-      <div class="page-placeholder">
-        <div class="placeholder-content">
+      <VPlaceholderPage
+        title="We couldn't find any matching results."
+        subtitle="Too bad. Looks like we couldn't find any matching results for the search terms
+            you've entered. Please try different search terms or criteria."
+        larger
+      >
+        <template #image>
           <img
             class="light-image"
             src="/@src/assets/illustrations/placeholders/search-7.svg"
@@ -66,18 +71,14 @@ const activeTab = ref<TabId>('all')
             src="/@src/assets/illustrations/placeholders/search-7-dark.svg"
             alt=""
           />
-          <h3>We couldn't find any matching results.</h3>
-          <p class="is-larger">
-            Too bad. Looks like we couldn't find any matching results for the search terms
-            you've entered. Please try different search terms or criteria.
-          </p>
-        </div>
-      </div>
+        </template>
+      </VPlaceholderPage>
     </div>
   </div>
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .is-navbar {
@@ -93,7 +94,7 @@ const activeTab = ref<TabId>('all')
     margin-bottom: 20px;
 
     .control {
-      margin-right: 10px;
+      margin-#{$end-direction}: 10px;
     }
 
     .search-info {
@@ -104,7 +105,7 @@ const activeTab = ref<TabId>('all')
     }
 
     .tabs-inner {
-      margin-left: auto;
+      margin-#{$start-direction}: auto;
 
       .tabs {
         margin-bottom: 0;
@@ -138,14 +139,14 @@ const activeTab = ref<TabId>('all')
           }
 
           .control-end {
-            margin-left: auto;
+            margin-#{$start-direction}: auto;
           }
         }
       }
     }
 
     .search-results-group {
-      padding-left: 30px;
+      padding-#{$start-direction}: 30px;
       margin-bottom: 20px;
 
       .group-header {
@@ -163,7 +164,7 @@ const activeTab = ref<TabId>('all')
           display: flex;
           justify-content: center;
           align-items: center;
-          margin-right: 6px;
+          margin-#{$end-direction}: 6px;
           background: var(--white);
           border: 1px solid var(--primary);
           color: var(--primary);
@@ -262,7 +263,7 @@ const activeTab = ref<TabId>('all')
 
     .search-results-body {
       .search-results-group {
-        padding-left: 0;
+        padding-#{$start-direction}: 0;
       }
     }
   }
@@ -272,7 +273,7 @@ const activeTab = ref<TabId>('all')
   .search-results-wrapper {
     .search-results-body {
       .search-results-group {
-        padding-left: 0;
+        padding-#{$start-direction}: 0;
       }
     }
   }
@@ -282,7 +283,7 @@ const activeTab = ref<TabId>('all')
   .search-results-wrapper {
     .search-results-body {
       .search-results-group {
-        padding-left: 10px;
+        padding-#{$start-direction}: 10px;
       }
     }
   }

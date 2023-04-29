@@ -671,6 +671,7 @@ const participants = [
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .is-navbar {
@@ -733,7 +734,7 @@ const participants = [
         border-bottom: 1px solid var(--fade-grey-dark-3);
 
         .project-feature {
-          margin-right: 20px;
+          margin-#{$end-direction}: 20px;
           width: calc(25% - 20px);
 
           i {
@@ -793,7 +794,7 @@ const participants = [
           }
 
           .meta {
-            margin-left: 12px;
+            margin-#{$start-direction}: 12px;
             line-height: 1.3;
 
             span {
@@ -822,7 +823,7 @@ const participants = [
           }
 
           .dropdown {
-            margin-left: auto;
+            margin-#{$start-direction}: auto;
           }
         }
       }
@@ -856,7 +857,7 @@ const participants = [
         padding: 1.5rem;
 
         &:nth-child(odd) {
-          border-right: 1px solid var(--fade-grey-dark-3);
+          border-#{$end-direction}: 1px solid var(--fade-grey-dark-3);
         }
 
         &.has-border-bottom {
@@ -892,15 +893,12 @@ const participants = [
             font-size: 0.85rem;
             font-weight: 600;
             color: var(--dark-text);
-            margin-right: 20px;
+            margin-#{$end-direction}: 20px;
           }
 
           .multiselect {
             min-width: 140px;
-
-            .multiselect-input {
-              border: none;
-            }
+            border: none;
           }
         }
       }
@@ -958,7 +956,7 @@ const participants = [
               }
 
               span {
-                margin-left: 2px;
+                margin-#{$start-direction}: 2px;
                 font-size: 0.9rem;
                 font-family: var(--font);
                 color: var(--light-text);
@@ -1103,7 +1101,7 @@ const participants = [
         padding: 30px;
 
         .column {
-          border-right: none !important;
+          border-#{$end-direction}: none !important;
         }
       }
     }

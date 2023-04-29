@@ -164,6 +164,7 @@ const onSubmit = () => {
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 @import '/@src/scss/components/forms-outer';
 
@@ -208,12 +209,12 @@ const onSubmit = () => {
 
           .left {
             position: relative;
-            border-right: 1px solid var(--fade-grey-dark-3);
+            border-#{$end-direction}: 1px solid var(--fade-grey-dark-3);
 
             .operator {
               position: absolute;
               top: 17px;
-              right: -10px;
+              #{$end-direction}: -10px;
               text-transform: uppercase;
               font-family: var(--font);
               font-weight: 500;
@@ -233,7 +234,7 @@ const onSubmit = () => {
               input {
                 position: absolute;
                 top: 0;
-                left: 0;
+                #{$start-direction}: 0;
                 height: 100%;
                 width: 100%;
                 opacity: 0;
@@ -327,26 +328,26 @@ const onSubmit = () => {
         .form-body {
           .form-section {
             flex-direction: column;
-            padding-right: 0;
-            padding-left: 0;
+            padding-#{$end-direction}: 0;
+            padding-#{$start-direction}: 0;
 
             .left,
             .right {
               width: 100%;
-              padding-right: 30px;
-              padding-left: 30px;
+              padding-#{$end-direction}: 30px;
+              padding-#{$start-direction}: 30px;
             }
 
             .left {
-              border-right: none;
+              border-#{$end-direction}: none;
               border-bottom: 1px solid var(--fade-grey-dark-3);
               padding-bottom: 40px;
 
               .operator {
                 top: unset;
                 bottom: -14px;
-                left: 0;
-                right: 0;
+                #{$start-direction}: 0;
+                #{$end-direction}: 0;
                 margin: 0 auto;
                 text-align: center;
                 max-width: 60px;
@@ -369,8 +370,8 @@ const onSubmit = () => {
       .form-outer {
         .form-body {
           .form-section {
-            padding-right: 0;
-            padding-left: 0;
+            padding-#{$end-direction}: 0;
+            padding-#{$start-direction}: 0;
           }
         }
       }

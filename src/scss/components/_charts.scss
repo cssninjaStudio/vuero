@@ -38,6 +38,24 @@
   }
 }
 
+[dir='rtl'] {
+  .apexcharts-legend-text {
+    padding-right: 4px !important;
+  }
+
+  .apexcharts-title-text,
+  .apexcharts-subtitle-text {
+    transform: translateX(calc(100% - 20px));
+  }
+
+  div[class*='apexchartssparkline'] {
+    .apexcharts-title-text,
+    .apexcharts-subtitle-text {
+      transform: translateX(calc(100% - 40px));
+    }
+  }
+}
+
 .is-dark {
   .apexcharts-ycrosshairs {
     stroke: var(--dark-sidebar-light-12) !important;

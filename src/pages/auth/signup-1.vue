@@ -23,14 +23,6 @@ const avatars = [
   '/images/avatars/svg/vuero-2.svg',
   '/images/avatars/svg/vuero-3.svg',
   '/images/avatars/svg/vuero-4.svg',
-  '/images/avatars/svg/vuero-5.svg',
-  '/images/avatars/svg/vuero-6.svg',
-  '/images/avatars/svg/vuero-7.svg',
-  '/images/avatars/svg/vuero-8.svg',
-  '/images/avatars/svg/vuero-9.svg',
-  '/images/avatars/svg/vuero-10.svg',
-  '/images/avatars/svg/vuero-11.svg',
-  '/images/avatars/svg/vuero-12.svg',
 ]
 
 const handleSignup = async () => {
@@ -45,6 +37,8 @@ const handleSignup = async () => {
     isLoading.value = false
   }
 }
+
+const currentAvatar = ref('/images/avatars/svg/vuero-1.svg')
 
 const onAvatarChanged = (info: any) => {
   // direct access to info object
@@ -252,7 +246,7 @@ onUnmounted(() => {
                   </h2>
                   <div class="picture-selector">
                     <div class="image-container">
-                      <img :src="avatars[selectedAvatar]" alt="" />
+                      <img :src="currentAvatar" alt="" />
                       <div
                         class="upload-button"
                         role="button"
@@ -276,8 +270,17 @@ onUnmounted(() => {
                   </div>
                 </div>
 
-                <div ref="sliderElement" class="avatar-carousel resized-mobile">
-                  <div v-for="(avatar, key) in avatars" :key="key" class="carousel-item">
+                <div class="avatar-carousel avatar-selector">
+                  <div
+                    v-for="(avatar, key) in avatars"
+                    :key="key"
+                    class="carousel-item"
+                    :class="currentAvatar === avatar ? 'active' : ''"
+                    role="button"
+                    tabindex="0"
+                    @click="currentAvatar = avatar"
+                    @keydown.space.prevent="currentAvatar = avatar"
+                  >
                     <div class="image-wrapper">
                       <img :src="avatar" alt="" @error.once="onceImageErrored(150)" />
                     </div>
@@ -358,23 +361,21 @@ onUnmounted(() => {
 
     <div class="signup-footer">
       <div class="container">
-        <div class="columns">
-          <div class="column is-4 is-offset-1">
-            <label
-              class="dark-mode"
-              tabindex="0"
-              role="button"
-              @keydown.space.prevent="(e) => (e.target as HTMLLabelElement).click()"
-            >
-              <input
-                data-cy="dark-mode-toggle"
-                type="checkbox"
-                :checked="!darkmode.isDark"
-                @change="darkmode.onChange"
-              />
-              <span></span>
-            </label>
-          </div>
+        <div class="footer-inner">
+          <label
+            class="dark-mode"
+            tabindex="0"
+            role="button"
+            @keydown.space.prevent="(e) => (e.target as HTMLLabelElement).click()"
+          >
+            <input
+              data-cy="dark-mode-toggle"
+              type="checkbox"
+              :checked="!darkmode.isDark"
+              @change="darkmode.onChange"
+            />
+            <span></span>
+          </label>
         </div>
       </div>
     </div>
@@ -428,10 +429,12 @@ onUnmounted(() => {
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
+
 .signup-nav {
   position: fixed;
   top: 0;
-  left: 0;
+  #{$start-direction}: 0;
   width: 100%;
   height: 65px;
   z-index: 99;
@@ -457,8 +460,14 @@ onUnmounted(() => {
 .signup-footer {
   position: absolute;
   bottom: 10px;
-  left: 0;
-  right: 0;
+  #{$start-direction}: 0;
+  #{$end-direction}: 0;
+
+  .footer-inner {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+  }
 
   .dark-mode input + span {
     transform: scale(0.4);
@@ -467,9 +476,9 @@ onUnmounted(() => {
 
 .signup-steps {
   position: absolute;
-  top: 80px;
-  left: 0;
-  right: 0;
+  top: 60px;
+  #{$start-direction}: 0;
+  #{$end-direction}: 0;
   margin: 0 auto;
   max-width: 380px;
 
@@ -483,8 +492,8 @@ onUnmounted(() => {
     .progress {
       position: absolute;
       top: 50%;
-      left: 0;
-      right: 0;
+      #{$start-direction}: 0;
+      #{$end-direction}: 0;
       transform: translateY(-50%);
       width: calc(100% - 80px);
       margin: 0 auto;
@@ -561,12 +570,12 @@ onUnmounted(() => {
       .step-label {
         position: absolute;
         top: 45px;
-        left: 0;
-        right: 0;
+        #{$start-direction}: 0;
+        #{$end-direction}: 0;
         margin: 0 auto;
         text-align: center;
         min-width: 100px;
-        transform: translateX(-25%);
+        transform: translateX($transform-direction * -25%);
         font-size: 0.8rem;
         font-weight: 500;
         color: var(--dark-text);
@@ -596,8 +605,9 @@ onUnmounted(() => {
 
   .card-bg {
     position: absolute;
-    right: 0;
+    #{$end-direction}: 0;
     bottom: 0;
+    transform: scaleX($transform-direction * 1);
     display: block;
     width: 90%;
     transition: all 0.3s; // transition-all test
@@ -619,6 +629,10 @@ onUnmounted(() => {
   }
 
   .hero {
+    .hero-body {
+      overflow-x: hidden;
+    }
+
     .signup-form {
       .control {
         position: relative;
@@ -634,7 +648,7 @@ onUnmounted(() => {
           }
 
           > div {
-            margin-left: auto;
+            margin-#{$start-direction}: auto;
             transform: scale(0.8);
           }
         }
@@ -659,7 +673,7 @@ onUnmounted(() => {
         .input {
           padding-top: 10px;
           height: 60px;
-          padding-left: 10px;
+          padding-#{$start-direction}: 10px;
           border-radius: 8px;
           transition: all 0.3s; // transition-all test
 
@@ -684,7 +698,7 @@ onUnmounted(() => {
         .auth-label {
           position: absolute;
           top: 6px;
-          left: 10px;
+          #{$start-direction}: 10px;
           font-size: 0.8rem;
           color: var(--dark-text);
           font-weight: 500;
@@ -695,7 +709,7 @@ onUnmounted(() => {
         .autv-icon {
           position: absolute;
           top: 0;
-          left: 0;
+          #{$start-direction}: 0;
           height: 60px;
           width: 60px;
           display: flex;
@@ -713,7 +727,7 @@ onUnmounted(() => {
           .validation-icon {
             position: absolute;
             top: 0;
-            right: 0;
+            #{$end-direction}: 0;
             height: 60px;
             width: 60px;
             display: none;
@@ -788,7 +802,7 @@ onUnmounted(() => {
 
           a {
             display: block;
-            margin-left: auto;
+            margin-#{$start-direction}: auto;
             color: var(--muted-grey);
             font-weight: 500;
             font-size: 0.9rem;
@@ -817,7 +831,7 @@ onUnmounted(() => {
         align-items: center;
 
         > span {
-          margin-left: 12px;
+          margin-#{$start-direction}: 12px;
           font-family: var(--font);
 
           a {
@@ -834,14 +848,14 @@ onUnmounted(() => {
 
         .button {
           min-width: 180px;
-          margin-left: 0 !important;
+          margin-#{$start-direction}: 0 !important;
         }
       }
 
       .button {
         height: 46px;
         width: 190px;
-        margin-left: 6px;
+        margin-#{$start-direction}: 6px;
 
         &:first-child {
           &:hover {
@@ -870,7 +884,7 @@ onUnmounted(() => {
         input {
           position: absolute;
           top: 0;
-          left: 0;
+          #{$start-direction}: 0;
           width: 100%;
           height: 100%;
           opacity: 0;
@@ -906,7 +920,7 @@ onUnmounted(() => {
           }
 
           .meta {
-            margin-left: 10px;
+            margin-#{$start-direction}: 10px;
 
             span {
               display: block;
@@ -926,11 +940,11 @@ onUnmounted(() => {
         }
 
         &:first-child {
-          margin-right: 6px;
+          margin-#{$end-direction}: 6px;
         }
 
         &:nth-child(2) {
-          margin-left: 6px;
+          margin-#{$start-direction}: 6px;
         }
       }
     }
@@ -973,13 +987,13 @@ onUnmounted(() => {
         border-radius: var(--radius-rounded);
         display: block;
         border: 4px solid #e8e8e8;
-        margin-left: -1px;
+        margin-#{$start-direction}: -1px;
       }
 
       .upload-button {
         position: absolute;
         bottom: 18px;
-        right: 0;
+        #{$end-direction}: 0;
         width: 36px;
         height: 36px;
         display: flex;
@@ -1007,34 +1021,55 @@ onUnmounted(() => {
   }
 }
 
-.avatar-carousel {
+.avatar-carousel,
+.avatar-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   text-align: center;
 
-  // max-width: 550px;
-  // margin: 0 auto 20px auto;
-
-  &:hover,
-  &:focus .slick-custom {
-    opacity: 1;
-  }
-
   .carousel-item {
-    margin: 0 10px;
+    position: relative;
+    flex-shrink: 0;
+    cursor: pointer;
+    margin: 2rem 0;
+    width: 25%;
+
+    &:hover {
+      img {
+        opacity: 0.9;
+      }
+    }
+
+    &.active {
+      img {
+        transform: scale(1);
+        border: 3px solid var(--primary);
+        opacity: 1;
+        filter: grayscale(0);
+      }
+    }
   }
 
   .image-wrapper {
     position: relative;
+    height: 80px;
+    width: 80px;
+    margin: 0 auto;
 
     &.is-smaller img {
-      height: 70px;
-      width: 70px;
+      height: 80px;
+      width: 80px;
     }
 
     img {
-      height: 70px;
-      width: 70px;
+      height: 80px;
+      width: 80px;
       border-radius: var(--radius-rounded);
       margin: 0 auto;
+      filter: grayscale(1);
+      opacity: 0.6;
       transition: all 0.3s; // transition-all test
     }
   }
@@ -1099,11 +1134,11 @@ onUnmounted(() => {
     }
 
     &.is-prev {
-      left: -6px;
+      #{$start-direction}: -6px;
     }
 
     &.is-next {
-      right: -6px;
+      #{$end-direction}: -6px;
     }
   }
 }
@@ -1290,8 +1325,16 @@ onUnmounted(() => {
 }
 
 @media only screen and (width <= 767px) {
-  .steps-container {
-    padding: 0 1rem;
+  .signup-steps {
+    .steps-container {
+      padding: 0 1rem;
+
+      .step-icon {
+        .step-label {
+          display: none;
+        }
+      }
+    }
   }
 
   .signup-wrapper {
@@ -1310,15 +1353,19 @@ onUnmounted(() => {
 
     .signup-subtitle {
       max-width: 330px;
-      margin-left: auto;
-      margin-right: auto;
+      margin-#{$start-direction}: auto;
+      margin-#{$end-direction}: auto;
     }
 
-    .avatar-carousel .carousel-item {
-      margin: 0;
+    .avatar-selector {
+      .carousel-item {
+        width: 50%;
+      }
     }
 
     .button-wrap {
+      margin-top: 10px !important;
+
       &.has-help {
         justify-content: center;
       }
@@ -1343,8 +1390,8 @@ onUnmounted(() => {
 
     .signup-subtitle {
       max-width: 330px;
-      margin-left: auto;
-      margin-right: auto;
+      margin-#{$start-direction}: auto;
+      margin-#{$end-direction}: auto;
     }
 
     .button-wrap {

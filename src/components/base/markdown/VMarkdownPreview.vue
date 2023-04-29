@@ -216,6 +216,8 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@import '/@src/scss/abstracts/ltr';
+
 .is-max-width-full {
   max-width: 100%;
 }
@@ -235,7 +237,7 @@ export default defineComponent({
 
   :deep(.toc-link-anchor) {
     color: var(--light-text);
-    margin-left: 0.5rem;
+    margin-#{$start-direction}: 0.5rem;
     font-size: 1rem;
     transition: color 0.2s;
     outline: none;
@@ -258,9 +260,9 @@ export default defineComponent({
       content: counter(step);
       counter-increment: step;
       width: 1rem;
-      margin-right: 1.5rem;
+      margin-#{$end-direction}: 1.5rem;
       display: inline-block;
-      text-align: right;
+      text-align: #{$end-direction};
       color: #898d98;
     }
   }

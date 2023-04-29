@@ -68,6 +68,8 @@ const toggle = (key: number) => {
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
+
 .single-accordion {
   background: var(--white);
   margin: 0 auto;
@@ -112,7 +114,7 @@ const toggle = (key: number) => {
       height: 0.75rem;
       border-radius: var(--radius-rounded);
       background-color: #b1b5be;
-      margin-right: 0.75rem;
+      margin-#{$end-direction}: 0.75rem;
     }
   }
 

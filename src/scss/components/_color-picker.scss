@@ -76,7 +76,7 @@
       border-radius: 50%;
       background-color: transparent;
       box-shadow: 0 0 0 2px #0002;
-      transform: rotate(0);
+      transform: rotate($transform-direction * 0);
     }
 
     &::-webkit-slider-thumb {
@@ -89,7 +89,7 @@
       border-radius: 50%;
       background-color: transparent;
       box-shadow: 0 0 0 2px #0002;
-      transform: rotate(0);
+      transform: rotate($transform-direction * 0);
     }
 
     &::-ms-thumb {
@@ -100,7 +100,7 @@
       border-radius: 50%;
       background-color: transparent;
       box-shadow: 0 0 0 2px #0002;
-      transform: rotate(0);
+      transform: rotate($transform-direction * 0);
     }
   }
 }

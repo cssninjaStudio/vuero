@@ -223,6 +223,7 @@
 </template>
 
 <style lang="scss" scoped>
+@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 /*
@@ -252,7 +253,7 @@
           content: '';
           position: absolute;
           top: 46px;
-          left: 111px;
+          #{$start-direction}: 111px;
           height: 100%;
           width: 2px;
           background: var(--placeholder);
@@ -278,7 +279,7 @@
         .date {
           width: 80px;
           font-family: var(--font);
-          text-align: right;
+          text-align: #{$end-direction};
 
           span {
             font-size: 0.9rem;
@@ -338,7 +339,7 @@
               display: flex;
               align-items: center;
               justify-content: space-between;
-              margin-left: 12px;
+              margin-#{$start-direction}: 12px;
               flex-grow: 2;
 
               .meta-text {
@@ -375,7 +376,7 @@
             }
 
             .box-end {
-              margin-left: auto;
+              margin-#{$start-direction}: auto;
 
               .v-avatar {
                 margin: 0 2px;
@@ -384,7 +385,7 @@
           }
 
           .meta-content {
-            padding-left: 78px;
+            padding-#{$start-direction}: 78px;
           }
         }
       }

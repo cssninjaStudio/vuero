@@ -353,11 +353,9 @@ const selected = ref('value_2')
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
-/* ==========================================================================
-1. SaaS Billing
-========================================================================== */
 .saas-billing-wrapper {
   max-width: 980px;
   margin: 0 auto;
@@ -385,8 +383,8 @@ const selected = ref('value_2')
       .plans {
         display: flex;
         flex-wrap: wrap;
-        margin-left: -8px;
-        margin-right: -8px;
+        margin-#{$start-direction}: -8px;
+        margin-#{$end-direction}: -8px;
 
         .plan {
           position: relative;
@@ -397,7 +395,7 @@ const selected = ref('value_2')
           input {
             position: absolute;
             top: 0;
-            left: 0;
+            #{$start-direction}: 0;
             height: 100%;
             width: 100%;
             opacity: 0;
@@ -441,7 +439,7 @@ const selected = ref('value_2')
             }
 
             .meta {
-              margin-left: 12px;
+              margin-#{$start-direction}: 12px;
               line-height: 1.3;
 
               span {
@@ -463,7 +461,7 @@ const selected = ref('value_2')
             }
 
             .checkmark {
-              margin-left: auto;
+              margin-#{$start-direction}: auto;
               display: none;
               justify-content: center;
               align-items: center;
@@ -490,7 +488,7 @@ const selected = ref('value_2')
     .right {
       width: 45%;
       padding: 20px 0;
-      margin-left: auto;
+      margin-#{$start-direction}: auto;
 
       .plan-details {
         > h3 {
@@ -613,7 +611,7 @@ const selected = ref('value_2')
             padding-bottom: 10px;
 
             .v-avatar {
-              margin-right: 8px;
+              margin-#{$end-direction}: 8px;
             }
 
             .add-seat {
@@ -628,7 +626,7 @@ const selected = ref('value_2')
               color: var(--light-text);
               padding: 0;
               background: none;
-              margin-left: 4px;
+              margin-#{$start-direction}: 4px;
               cursor: pointer;
               transition: color 0.3s, background-color 0.3s, border-color 0.3s,
                 height 0.3s, width 0.3s;
@@ -651,7 +649,7 @@ const selected = ref('value_2')
 
     .right {
       width: 45%;
-      margin-left: auto;
+      margin-#{$start-direction}: auto;
 
       .payment-form {
         padding: 20px 30px;
@@ -698,7 +696,7 @@ const selected = ref('value_2')
                 svg {
                   height: 30px;
                   position: absolute;
-                  right: -2px;
+                  #{$end-direction}: -2px;
                   top: 4px;
                   width: 60px;
                 }
@@ -718,10 +716,6 @@ const selected = ref('value_2')
     }
   }
 }
-
-/* ==========================================================================
-2. SaaS Billing Dark mode
-========================================================================== */
 
 .is-dark {
   .saas-billing-wrapper {
@@ -837,10 +831,6 @@ const selected = ref('value_2')
   }
 }
 
-/* ==========================================================================
-3. SaaS Billing Media Queries
-========================================================================== */
-
 @media only screen and (width <= 767px) {
   .saas-billing-wrapper {
     .plans-wrapper {
@@ -863,7 +853,7 @@ const selected = ref('value_2')
               .checkmark {
                 position: absolute;
                 top: 10px;
-                right: 10px;
+                #{$end-direction}: 10px;
               }
             }
           }
@@ -921,7 +911,7 @@ const selected = ref('value_2')
               .checkmark {
                 position: absolute;
                 top: 10px;
-                right: 10px;
+                #{$end-direction}: 10px;
               }
             }
           }
@@ -965,7 +955,7 @@ const selected = ref('value_2')
               .checkmark {
                 position: absolute;
                 top: 10px;
-                right: 10px;
+                #{$end-direction}: 10px;
               }
             }
           }

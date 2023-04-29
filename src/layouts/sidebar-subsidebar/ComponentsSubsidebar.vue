@@ -101,7 +101,16 @@ const emit = defineEmits(['close'])
           <template #header>
             VFlexTable
             <VTag label="v2.2" class="ml-2" color="primary" outlined curved />
-            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+            <i
+              aria-hidden="true"
+              class="iconify rtl-hidden"
+              data-icon="feather:chevron-right"
+            />
+            <i
+              aria-hidden="true"
+              class="iconify ltr-hidden"
+              data-icon="feather:chevron-left"
+            />
           </template>
 
           <RouterLink to="/components/flextable/" class="is-submenu">
@@ -133,7 +142,16 @@ const emit = defineEmits(['close'])
         <VCollapseLinks>
           <template #header>
             Accordions
-            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+            <i
+              aria-hidden="true"
+              class="iconify rtl-hidden"
+              data-icon="feather:chevron-right"
+            />
+            <i
+              aria-hidden="true"
+              class="iconify ltr-hidden"
+              data-icon="feather:chevron-left"
+            />
           </template>
 
           <RouterLink to="/components/accordion/" class="is-submenu">
@@ -153,7 +171,16 @@ const emit = defineEmits(['close'])
         <VCollapseLinks>
           <template #header>
             Cards
-            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+            <i
+              aria-hidden="true"
+              class="iconify rtl-hidden"
+              data-icon="feather:chevron-right"
+            />
+            <i
+              aria-hidden="true"
+              class="iconify ltr-hidden"
+              data-icon="feather:chevron-left"
+            />
           </template>
 
           <RouterLink to="/components/card/" class="is-submenu">
@@ -184,7 +211,16 @@ const emit = defineEmits(['close'])
         <VCollapseLinks>
           <template #header>
             Placeholders
-            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+            <i
+              aria-hidden="true"
+              class="iconify rtl-hidden"
+              data-icon="feather:chevron-right"
+            />
+            <i
+              aria-hidden="true"
+              class="iconify ltr-hidden"
+              data-icon="feather:chevron-left"
+            />
           </template>
           <RouterLink to="/components/placeholder-page" class="is-submenu">
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
@@ -201,7 +237,16 @@ const emit = defineEmits(['close'])
         <VCollapseLinks>
           <template #header>
             Plugins
-            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+            <i
+              aria-hidden="true"
+              class="iconify rtl-hidden"
+              data-icon="feather:chevron-right"
+            />
+            <i
+              aria-hidden="true"
+              class="iconify ltr-hidden"
+              data-icon="feather:chevron-left"
+            />
           </template>
           <RouterLink to="/components/plugins/notif" class="is-submenu">
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
@@ -230,5 +275,6 @@ const emit = defineEmits(['close'])
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/layout/sidebar-panel';
 </style>

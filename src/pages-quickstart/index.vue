@@ -119,6 +119,7 @@ useHead({
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 @import '/@src/scss/_demo/landing';
 
@@ -149,8 +150,8 @@ useHead({
       .title,
       .subtitle,
       .switch-wrapper {
-        margin-left: auto;
-        margin-right: auto;
+        margin-#{$start-direction}: auto;
+        margin-#{$end-direction}: auto;
       }
 
       h1 {
@@ -179,36 +180,36 @@ useHead({
 
       &.hexagon-1 {
         top: -180px;
-        left: -180px;
+        #{$start-direction}: -180px;
         height: 450px;
         width: 450px;
-        transform: rotate(39deg);
+        transform: rotate($transform-direction * 39deg);
       }
 
       &.hexagon-2 {
         bottom: 80px;
-        right: 80px;
+        #{$end-direction}: 80px;
         height: 360px;
         width: 360px;
-        transform: rotate(75deg);
+        transform: rotate($transform-direction * 75deg);
         animation-delay: 2s;
       }
 
       &.hexagon-3 {
         bottom: 40px;
-        left: 40px;
+        #{$start-direction}: 40px;
         height: 190px;
         width: 190px;
-        transform: rotate(95deg);
+        transform: rotate($transform-direction * 95deg);
         animation-delay: 0.5s;
       }
 
       &.hexagon-4 {
         top: -155px;
-        left: 50%;
+        #{$start-direction}: 50%;
         height: 230px;
         width: 230px;
-        transform: rotate(135deg);
+        transform: rotate($transform-direction * 135deg);
         animation-delay: 1s;
       }
     }
@@ -224,36 +225,36 @@ useHead({
 
       &.hexagon-1 {
         top: -180px;
-        right: -180px;
+        #{$end-direction}: -180px;
         height: 450px;
         width: 450px;
-        transform: rotate(39deg);
+        transform: rotate($transform-direction * 39deg);
       }
 
       &.hexagon-2 {
         bottom: 80px;
-        left: 80px;
+        #{$start-direction}: 80px;
         height: 360px;
         width: 360px;
-        transform: rotate(75deg);
+        transform: rotate($transform-direction * 75deg);
         animation-delay: 2s;
       }
 
       &.hexagon-3 {
         bottom: 40px;
-        right: 40px;
+        #{$end-direction}: 40px;
         height: 190px;
         width: 190px;
-        transform: rotate(95deg);
+        transform: rotate($transform-direction * 95deg);
         animation-delay: 0.5s;
       }
 
       &.hexagon-4 {
         top: -155px;
-        left: 50%;
+        #{$start-direction}: 50%;
         height: 230px;
         width: 230px;
-        transform: rotate(135deg);
+        transform: rotate($transform-direction * 135deg);
         animation-delay: 1s;
       }
     }
@@ -334,29 +335,29 @@ useHead({
 
       &.hexagon-1 {
         top: -110px;
-        left: -110px;
+        #{$start-direction}: -110px;
         height: 230px;
         width: 230px;
-        transform: rotate(39deg);
+        transform: rotate($transform-direction * 39deg);
         animation-delay: 2s;
       }
 
       &.hexagon-2 {
         bottom: 160px;
-        right: -80px;
+        #{$end-direction}: -80px;
         height: 160px;
         width: 160px;
-        transform: rotate(75deg);
+        transform: rotate($transform-direction * 75deg);
         z-index: 2;
         animation-delay: 0.5s;
       }
 
       &.hexagon-3 {
         bottom: 60px;
-        left: -180px;
+        #{$start-direction}: -180px;
         height: 100px;
         width: 100px;
-        transform: rotate(125deg);
+        transform: rotate($transform-direction * 125deg);
         z-index: 2;
         animation-delay: 1s;
       }
@@ -456,7 +457,7 @@ useHead({
         border-width: 64px 64px 0 0;
         border-color: var(--primary) transparent transparent transparent;
         position: absolute;
-        left: 0;
+        #{$start-direction}: 0;
         top: 0;
         content: '';
       }
@@ -467,7 +468,7 @@ useHead({
         content: '\f00c';
         color: var(--white);
         position: absolute;
-        left: 11px;
+        #{$start-direction}: 11px;
         top: 11px;
         text-shadow: 0 0 2px var(--primary);
         font-size: 1rem;
@@ -519,7 +520,7 @@ useHead({
     ul {
       list-style: none;
       padding: 0;
-      text-align: left;
+      text-align: #{$start-direction};
       margin-top: 29px;
     }
 
@@ -532,7 +533,7 @@ useHead({
         content: '\f00c';
         font-size: 0.9rem;
         color: var(--success);
-        margin-right: 6px;
+        margin-#{$end-direction}: 6px;
       }
     }
   }
@@ -653,82 +654,82 @@ useHead({
 
     &.v-avatar-1 {
       top: -7%;
-      left: 4%;
+      #{$start-direction}: 4%;
     }
 
     &.v-avatar-2 {
       top: 5%;
-      right: 5%;
+      #{$end-direction}: 5%;
     }
 
     &.v-avatar-3 {
       bottom: -9%;
-      left: 5%;
+      #{$start-direction}: 5%;
     }
 
     &.v-avatar-4 {
       bottom: -9%;
-      right: 5%;
+      #{$end-direction}: 5%;
     }
 
     &.v-avatar-5 {
       top: -7%;
-      left: 50%;
+      #{$start-direction}: 50%;
     }
 
     &.v-avatar-6 {
       top: 40%;
-      right: -3%;
+      #{$end-direction}: -3%;
     }
 
     &.v-avatar-7 {
       top: 30%;
-      right: 12%;
+      #{$end-direction}: 12%;
     }
 
     &.v-avatar-8 {
       bottom: 30%;
-      right: 16%;
+      #{$end-direction}: 16%;
     }
 
     &.v-avatar-9 {
       top: 9%;
-      right: 21%;
+      #{$end-direction}: 21%;
     }
 
     &.v-avatar-10 {
       top: 40%;
-      left: -3%;
+      #{$start-direction}: -3%;
     }
 
     &.v-avatar-11 {
       top: 30%;
-      left: 12%;
+      #{$start-direction}: 12%;
     }
 
     &.v-avatar-12 {
       bottom: 17%;
-      left: 16%;
+      #{$start-direction}: 16%;
     }
 
     &.v-avatar-13 {
       top: 9%;
-      left: 21%;
+      #{$start-direction}: 21%;
     }
 
     &.v-avatar-14 {
       bottom: 20%;
-      left: 1%;
+      #{$start-direction}: 1%;
     }
 
     &.v-avatar-15 {
       bottom: -7%;
-      left: 39%;
+      #{$start-direction}: 39%;
     }
 
     &.v-avatar-16 {
       bottom: 12%;
-      right: 30%;
+      #{$end-direction}: 30%;
     }
 
     .avatar {
@@ -788,26 +789,26 @@ useHead({
       .hexagon {
         &.hexagon-1 {
           top: -110px;
-          left: -80px;
+          #{$start-direction}: -80px;
           height: 230px;
           width: 230px;
         }
 
         &.hexagon-2 {
           bottom: 45px;
-          right: -80px;
+          #{$end-direction}: -80px;
           height: 220px;
           width: 220px;
         }
 
         &.hexagon-3 {
           bottom: 50%;
-          left: -110px;
+          #{$start-direction}: -110px;
         }
 
         &.hexagon-4 {
           top: -165px;
-          left: 70%;
+          #{$start-direction}: 70%;
           height: 230px;
           width: 230px;
         }
@@ -817,8 +818,8 @@ useHead({
     .hero-body {
       .title,
       .subtitle {
-        margin-left: auto;
-        margin-right: auto;
+        margin-#{$start-direction}: auto;
+        margin-#{$end-direction}: auto;
       }
 
       .title {
@@ -845,7 +846,7 @@ useHead({
     .hexagon {
       &.hexagon-2 {
         bottom: 120px !important;
-        right: -40px !important;
+        #{$end-direction}: -40px !important;
         height: 80px !important;
         width: 80px !important;
       }
@@ -877,25 +878,25 @@ useHead({
       }
 
       &.v-avatar-7 {
-        right: -6%;
+        #{$end-direction}: -6%;
       }
 
       &.v-avatar-13 {
         top: 3%;
-        left: -4%;
+        #{$start-direction}: -4%;
       }
 
       &.v-avatar-14 {
-        left: -13%;
+        #{$start-direction}: -13%;
       }
 
       &.v-avatar-15 {
         bottom: -4%;
-        left: 48%;
+        #{$start-direction}: 48%;
       }
 
       &.v-avatar-16 {
-        right: -7%;
+        #{$end-direction}: -7%;
       }
     }
 
@@ -915,12 +916,12 @@ useHead({
       .hexagon {
         &.hexagon-2 {
           bottom: 45px;
-          right: -80px;
+          #{$end-direction}: -80px;
         }
 
         &.hexagon-3 {
           bottom: 50%;
-          left: -110px;
+          #{$start-direction}: -110px;
         }
       }
     }
@@ -931,12 +932,12 @@ useHead({
       .hexagon {
         &.hexagon-2 {
           bottom: 45px;
-          right: -80px;
+          #{$end-direction}: -80px;
         }
 
         &.hexagon-3 {
           bottom: 50%;
-          left: -110px;
+          #{$start-direction}: -110px;
         }
       }
     }
@@ -947,12 +948,12 @@ useHead({
       .hexagon {
         &.hexagon-2 {
           bottom: 45px;
-          right: -80px;
+          #{$end-direction}: -80px;
         }
 
         &.hexagon-3 {
           bottom: 50%;
-          left: -110px;
+          #{$start-direction}: -110px;
         }
       }
     }
@@ -960,8 +961,8 @@ useHead({
     .hero-body {
       .title,
       .subtitle {
-        margin-left: auto;
-        margin-right: auto;
+        margin-#{$start-direction}: auto;
+        margin-#{$end-direction}: auto;
       }
 
       .buttons {

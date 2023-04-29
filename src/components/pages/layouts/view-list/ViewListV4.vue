@@ -227,6 +227,7 @@ const filteredData = computed(() => {
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .list-view-v4 {
@@ -241,7 +242,7 @@ const filteredData = computed(() => {
       align-items: center;
 
       .pre-meta {
-        margin-right: 16px;
+        margin-#{$end-direction}: 16px;
         width: 160px;
 
         h3 {
@@ -267,7 +268,7 @@ const filteredData = computed(() => {
       }
 
       .meta-left {
-        margin-left: 16px;
+        margin-#{$start-direction}: 16px;
 
         h3 {
           display: flex;
@@ -283,7 +284,7 @@ const filteredData = computed(() => {
             height: 18px;
             width: 18px;
             border-radius: var(--radius-rounded);
-            margin-right: 6px;
+            margin-#{$end-direction}: 6px;
           }
         }
 
@@ -296,7 +297,7 @@ const filteredData = computed(() => {
             top: 1px;
             height: 12px;
             width: 12px;
-            margin-right: 0.25rem;
+            margin-#{$end-direction}: 0.25rem;
           }
 
           .icon-separator {
@@ -310,7 +311,7 @@ const filteredData = computed(() => {
       }
 
       .meta-right {
-        margin-left: auto;
+        margin-#{$start-direction}: auto;
         display: flex;
         align-items: center;
         justify-content: flex-end;
@@ -320,19 +321,19 @@ const filteredData = computed(() => {
           justify-content: flex-end;
           align-items: center;
           min-width: 145px;
-          margin-right: 30px;
+          margin-#{$end-direction}: 30px;
 
           > span {
             font-family: var(--font);
             font-size: 0.9rem;
             color: var(--light-text);
-            margin-left: 6px;
+            margin-#{$start-direction}: 6px;
           }
         }
 
         .buttons {
           margin-bottom: 0;
-          margin-right: 10px;
+          margin-#{$end-direction}: 10px;
 
           .button {
             margin-bottom: 0;
@@ -428,7 +429,7 @@ const filteredData = computed(() => {
         }
 
         .meta-left {
-          margin-left: 0;
+          margin-#{$start-direction}: 0;
 
           h3 {
             justify-content: center;
@@ -482,7 +483,7 @@ const filteredData = computed(() => {
               &:nth-child(2) {
                 position: absolute;
                 top: 0;
-                right: 10px;
+                #{$end-direction}: 10px;
                 max-width: 35px;
               }
             }
@@ -513,7 +514,7 @@ const filteredData = computed(() => {
           margin: 0 0 16px;
 
           h3 {
-            margin-right: 0;
+            margin-#{$end-direction}: 0;
             text-align: center;
           }
         }
@@ -527,7 +528,7 @@ const filteredData = computed(() => {
         }
 
         .meta-left {
-          margin-left: 0;
+          margin-#{$start-direction}: 0;
 
           h3 {
             justify-content: center;
@@ -582,7 +583,7 @@ const filteredData = computed(() => {
               &:nth-child(2) {
                 position: absolute;
                 top: 10px;
-                right: 10px;
+                #{$end-direction}: 10px;
                 max-width: 35px;
               }
             }

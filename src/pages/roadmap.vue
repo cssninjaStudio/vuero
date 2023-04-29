@@ -365,6 +365,8 @@ useHead({
 </template>
 
 <style lang="scss" scoped>
+@import '/@src/scss/abstracts/ltr';
+
 .roadmap-wrapper {
   max-width: 940px;
   margin: 0 auto;
@@ -427,7 +429,7 @@ useHead({
             margin-bottom: 0;
 
             &:first-child {
-              margin-right: 2rem;
+              margin-#{$end-direction}: 2rem;
             }
           }
         }
@@ -461,13 +463,13 @@ useHead({
           .head-info {
             .head-progress {
               font-family: var(--font);
-              border-right: 1px solid var(--border);
-              padding-right: 1rem;
-              margin-right: 1rem;
+              border-#{$end-direction}: 1px solid var(--border);
+              padding-#{$end-direction}: 1rem;
+              margin-#{$end-direction}: 1rem;
 
               .text {
                 color: var(--light-text);
-                margin-right: 0.75rem;
+                margin-#{$end-direction}: 0.75rem;
               }
 
               .value {
@@ -488,7 +490,7 @@ useHead({
           :deep(.progress) {
             position: absolute !important;
             bottom: 0;
-            left: 0;
+            #{$start-direction}: 0;
             width: 100%;
           }
         }
@@ -503,7 +505,7 @@ useHead({
 
                   .tag {
                     border-width: 2px;
-                    margin-right: 1rem;
+                    margin-#{$end-direction}: 1rem;
                   }
 
                   + .changelog-line {
@@ -554,7 +556,7 @@ useHead({
     }
 
     .copyright {
-      margin-left: auto;
+      margin-#{$start-direction}: auto;
       font-family: var(--font);
       color: var(--light-text);
     }
@@ -579,8 +581,8 @@ useHead({
             :deep(.field) {
               max-width: 100%;
               width: 100%;
-              margin-left: 0 !important;
-              margin-right: 0 !important;
+              margin-#{$start-direction}: 0 !important;
+              margin-#{$end-direction}: 0 !important;
               margin-bottom: 1rem !important;
 
               .control {

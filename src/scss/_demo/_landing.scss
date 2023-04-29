@@ -23,6 +23,8 @@
     20. Media Queries
 */
 
+@import '/@src/scss/abstracts/ltr';
+
 /* ==========================================================================
 1. Defaults
 ========================================================================== */
@@ -313,7 +315,7 @@
 
     .flex-cell {
       width: 25%;
-      border-right: 1px solid var(--fade-grey-dark-3);
+      border-#{$end-direction}: 1px solid var(--fade-grey-dark-3);
       text-align: center;
       padding: 24px 16px;
 
@@ -322,7 +324,7 @@
       }
 
       &.no-border-edge {
-        border-right: none;
+        border-#{$end-direction}: none;
       }
 
       i {
@@ -565,7 +567,7 @@
 .component-features {
   .media-flex {
     .left-icon {
-      margin-right: 10px;
+      margin-#{$end-direction}: 10px;
 
       i {
         color: var(--primary);
@@ -853,7 +855,7 @@
 
           &::before {
             left: 25px;
-            transform: rotate(70deg);
+            transform: rotate($transform-direction * 70deg);
           }
         }
       }
@@ -901,7 +903,7 @@
         font-weight: 600;
         font-size: 1rem;
         color: var(--lime-dark-18);
-        margin-left: 22px;
+        margin-#{$start-direction}: 22px;
         transition: color 0.3s;
       }
     }
@@ -937,7 +939,7 @@
       .flex-card {
         .flex-cell {
           width: 100%;
-          border-right: none;
+          border-#{$end-direction}: none;
           border-bottom: 1px solid var(--fade-grey-dark-3);
 
           &:last-child {

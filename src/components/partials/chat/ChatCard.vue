@@ -20,15 +20,13 @@
 </template>
 
 <style lang="scss">
-/* ==========================================================================
-2. Chat Wrapper
-========================================================================== */
+@import '/@src/scss/abstracts/ltr';
 
 .is-chat {
   position: absolute;
   height: 100%;
   top: 0;
-  left: 0;
+  #{$start-direction}: 0;
   width: 100%;
   border-radius: 16px 6px 6px 16px;
 }
@@ -57,7 +55,7 @@
   .is-chat {
     position: absolute;
     top: 0 !important;
-    left: 0;
+    #{$start-direction}: 0;
     max-height: calc(100% - 60px) !important;
   }
 }
@@ -66,7 +64,7 @@
   .is-chat {
     position: absolute;
     top: 0 !important;
-    left: 0;
+    #{$start-direction}: 0;
     max-height: calc(100% - 60px) !important;
   }
 }

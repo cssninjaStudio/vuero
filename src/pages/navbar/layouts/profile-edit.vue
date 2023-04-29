@@ -128,7 +128,7 @@
           }
 
           i {
-            margin-right: 8px;
+            margin-#{$end-direction}: 8px;
             font-size: 1.1rem;
             color: var(--light-text);
 
@@ -146,7 +146,7 @@
           }
 
           .end {
-            margin-left: auto;
+            margin-#{$start-direction}: auto;
             display: none;
           }
         }
@@ -178,8 +178,8 @@
 
         &.is-stuck {
           background: var(--white);
-          padding-right: 80px;
-          border-left: 1px solid var(--fade-grey-dark-3);
+          padding-#{$end-direction}: 80px;
+          border-#{$start-direction}: 1px solid var(--fade-grey-dark-3);
         }
 
         .left {
@@ -229,7 +229,7 @@
             .edit-button {
               position: absolute;
               bottom: 0;
-              right: 0;
+              #{$end-direction}: 0;
             }
           }
 
@@ -285,7 +285,7 @@
               }
 
               .meta {
-                margin-left: 10px;
+                margin-#{$start-direction}: 10px;
 
                 > span {
                   font-family: var(--font);
@@ -322,7 +322,7 @@
               }
 
               .end {
-                margin-left: auto;
+                margin-#{$start-direction}: auto;
               }
             }
           }

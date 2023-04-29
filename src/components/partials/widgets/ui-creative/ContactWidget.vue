@@ -57,6 +57,7 @@ const props = withDefaults(
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .contact-widget {
@@ -123,7 +124,7 @@ const props = withDefaults(
           svg {
             height: 14px;
             width: 14px;
-            margin-right: 4px;
+            margin-#{$end-direction}: 4px;
             stroke-width: 1.4px;
             color: var(--light-text);
           }

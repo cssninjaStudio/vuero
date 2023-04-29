@@ -9,6 +9,7 @@ const stayFocus = useLocalStorage('disable-stay-focus', '')
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .demo-card {
@@ -41,7 +42,7 @@ const stayFocus = useLocalStorage('disable-stay-focus', '')
 
     .toc-link-anchor {
       color: var(--light-text);
-      margin-left: 0.5rem;
+      margin-#{$start-direction}: 0.5rem;
       font-size: 0.8rem;
       transition: color 0.2s;
       outline: none;
@@ -65,7 +66,7 @@ const stayFocus = useLocalStorage('disable-stay-focus', '')
   .demo-actions {
     position: absolute;
     top: 16px;
-    right: 20px;
+    #{$end-direction}: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,7 +94,7 @@ const stayFocus = useLocalStorage('disable-stay-focus', '')
 
     &.is-active {
       border-color: var(--fade-grey-dark-6);
-      transform: rotate(180deg);
+      transform: rotate($transform-direction * 180deg);
 
       svg {
         color: var(--primary);
@@ -160,7 +161,7 @@ const stayFocus = useLocalStorage('disable-stay-focus', '')
         z-index: 10;
         position: sticky;
         top: 0;
-        left: 0;
+        #{$start-direction}: 0;
       }
     }
 
@@ -244,7 +245,7 @@ const stayFocus = useLocalStorage('disable-stay-focus', '')
         .is-copied {
           position: absolute;
           top: 4px;
-          right: 4px;
+          #{$end-direction}: 4px;
           font-size: 0.8rem;
           padding: 0.25rem 0.5rem;
           border-radius: var(--radius);
@@ -266,7 +267,7 @@ const stayFocus = useLocalStorage('disable-stay-focus', '')
         &.is-grouped {
           .control {
             margin-bottom: 0.75rem;
-            margin-right: 0;
+            margin-#{$end-direction}: 0;
           }
         }
 
@@ -308,7 +309,7 @@ const stayFocus = useLocalStorage('disable-stay-focus', '')
           font-family: var(--font-monospace);
 
           &:first-child {
-            padding-left: 0 !important;
+            padding-#{$start-direction}: 0 !important;
           }
         }
 
@@ -416,7 +417,7 @@ const stayFocus = useLocalStorage('disable-stay-focus', '')
     .demo-title {
       .demo-actions {
         top: 10px;
-        right: 12px;
+        #{$end-direction}: 12px;
       }
     }
 

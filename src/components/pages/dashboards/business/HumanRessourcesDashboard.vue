@@ -251,9 +251,14 @@ const columns = {
                 <a class="action-icon">
                   <i
                     aria-hidden="true"
-                    class="iconify"
+                    class="iconify ltr-hidden"
+                    data-icon="feather:chevron-right"
+                  />
+                  <i
+                    aria-hidden="true"
+                    class="iconify rtl-hidden"
                     data-icon="feather:chevron-left"
-                  ></i>
+                  />
                 </a>
               </div>
               <div class="center">
@@ -263,9 +268,14 @@ const columns = {
                 <a class="action-icon">
                   <i
                     aria-hidden="true"
-                    class="iconify"
+                    class="iconify rtl-hidden"
                     data-icon="feather:chevron-right"
-                  ></i>
+                  />
+                  <i
+                    aria-hidden="true"
+                    class="iconify ltr-hidden"
+                    data-icon="feather:chevron-left"
+                  />
                 </a>
               </div>
             </div>
@@ -344,6 +354,7 @@ const columns = {
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .hr-dashboard {
@@ -364,9 +375,9 @@ const columns = {
       display: flex;
       flex-direction: column;
       width: 40%;
-      padding-right: 30px;
-      margin-right: 30px;
-      border-right: 1px solid var(--primary-light-10);
+      padding-#{$end-direction}: 30px;
+      margin-#{$end-direction}: 30px;
+      border-#{$end-direction}: 1px solid var(--primary-light-10);
 
       .block-text {
         margin-bottom: 16px;
@@ -376,7 +387,7 @@ const columns = {
         margin-top: auto;
 
         > .v-avatar {
-          margin-right: 10px;
+          margin-#{$end-direction}: 10px;
         }
 
         button {
@@ -445,8 +456,8 @@ const columns = {
     }
 
     .header-meta {
-      margin-left: 0;
-      padding-right: 30px;
+      margin-#{$start-direction}: 0;
+      padding-#{$end-direction}: 30px;
 
       h3 {
         color: var(--smoke-white);
@@ -467,7 +478,7 @@ const columns = {
         span {
           font-size: 0.8rem;
           text-transform: uppercase;
-          margin-right: 6px;
+          margin-#{$end-direction}: 6px;
         }
 
         i {
@@ -493,7 +504,7 @@ const columns = {
     .button {
       font-size: 0.8rem;
       border-radius: 8px;
-      margin-right: 4px;
+      margin-#{$end-direction}: 4px;
 
       &.is-selected {
         background: var(--primary);
@@ -550,8 +561,8 @@ const columns = {
 
 .user-grid {
   .columns {
-    margin-left: -0.5rem !important;
-    margin-right: -0.5rem !important;
+    margin-#{$start-direction}: -0.5rem !important;
+    margin-#{$end-direction}: -0.5rem !important;
     margin-top: -0.5rem !important;
   }
 
@@ -580,7 +591,7 @@ const columns = {
     .dropdown {
       position: absolute;
       top: 10px;
-      right: 10px;
+      #{$end-direction}: 10px;
       text-align: left;
     }
 
@@ -704,9 +715,9 @@ const columns = {
       }
 
       .center {
-        padding-right: 0;
-        margin-right: 0;
-        border-right: none;
+        padding-#{$end-direction}: 0;
+        margin-#{$end-direction}: 0;
+        border-#{$end-direction}: none;
         margin-bottom: 20px;
       }
     }
@@ -760,7 +771,7 @@ const columns = {
     .column {
       &.is-7 {
         &.is-offset-1 {
-          margin-left: 2% !important;
+          margin-#{$start-direction}: 2% !important;
           width: 64.3333% !important;
         }
       }

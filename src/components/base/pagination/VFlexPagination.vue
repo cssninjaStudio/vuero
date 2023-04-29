@@ -166,7 +166,16 @@ const handleLinkClick = (e: MouseEvent, page = 1) => {
       @keydown.space.prevent="(e: MouseEvent) => (e.target as HTMLAnchorElement).click()"
       @click="(e: MouseEvent) => handleLinkClick(e, currentPage - 1)"
     >
-      <i aria-hidden="true" class="iconify" data-icon="feather:chevron-left"></i>
+      <i
+        aria-hidden="true"
+        class="iconify rtl-hidden"
+        data-icon="feather:chevron-left"
+      ></i>
+      <i
+        aria-hidden="true"
+        class="iconify ltr-hidden"
+        data-icon="feather:chevron-right"
+      ></i>
     </RouterLink>
     <RouterLink
       :to="paginatedLink(currentPage + 1)"
@@ -175,7 +184,16 @@ const handleLinkClick = (e: MouseEvent, page = 1) => {
       @keydown.space.prevent="(e: MouseEvent) => (e.target as HTMLAnchorElement).click()"
       @click="(e: MouseEvent) => handleLinkClick(e, currentPage + 1)"
     >
-      <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right"></i>
+      <i
+        aria-hidden="true"
+        class="iconify rtl-hidden"
+        data-icon="feather:chevron-right"
+      ></i>
+      <i
+        aria-hidden="true"
+        class="iconify ltr-hidden"
+        data-icon="feather:chevron-left"
+      ></i>
     </RouterLink>
     <slot name="after-navigation"></slot>
   </VFlex>

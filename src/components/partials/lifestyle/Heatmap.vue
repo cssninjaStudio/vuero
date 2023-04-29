@@ -329,6 +329,8 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
+
 .heatmap-wrapper {
   .heatmap-title {
     display: flex;
@@ -351,7 +353,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
     }
 
     .title-meta {
-      margin-left: 16px;
+      margin-#{$start-direction}: 16px;
 
       p {
         span {
