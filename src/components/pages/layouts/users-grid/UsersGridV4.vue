@@ -110,12 +110,13 @@ const optionsSingle = [
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .user-grid-v4 {
   .columns {
-    margin-left: -0.5rem !important;
-    margin-right: -0.5rem !important;
+    margin-#{$start-direction}: -0.5rem !important;
+    margin-#{$end-direction}: -0.5rem !important;
     margin-top: -0.5rem !important;
   }
 
@@ -144,8 +145,8 @@ const optionsSingle = [
     .dropdown {
       position: absolute;
       top: 10px;
-      right: 10px;
-      text-align: left;
+      #{$end-direction}: 10px;
+      text-align: #{$start-direction};
     }
 
     > .v-avatar {

@@ -408,6 +408,8 @@
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
+
 .all-projects {
   .all-projects-header {
     display: flex;
@@ -419,10 +421,10 @@
 
     .header-item {
       width: 25%;
-      border-right: 1px solid var(--fade-grey-dark-3);
+      border-#{$end-direction}: 1px solid var(--fade-grey-dark-3);
 
       &:last-child {
-        border-right: none;
+        border-#{$end-direction}: none;
       }
 
       .item-inner {
@@ -488,7 +490,7 @@
         display: flex;
 
         .foot-block {
-          margin-right: 30px;
+          margin-#{$end-direction}: 30px;
 
           .heading {
             font-family: var(--font-alt);
@@ -504,7 +506,7 @@
             display: flex;
 
             .v-avatar {
-              margin-right: 6px;
+              margin-#{$end-direction}: 6px;
             }
           }
         }

@@ -148,12 +148,13 @@ function getAvatarData(user: any): VAvatarProps {
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .card-grid {
   .columns {
-    margin-left: -0.5rem !important;
-    margin-right: -0.5rem !important;
+    margin-#{$start-direction}: -0.5rem !important;
+    margin-#{$end-direction}: -0.5rem !important;
     margin-top: -0.5rem !important;
   }
 
@@ -173,7 +174,7 @@ function getAvatarData(user: any): VAvatarProps {
     .h-toggle {
       position: absolute;
       top: 28px;
-      right: 10px;
+      #{$end-direction}: 10px;
       transform: scale(0.85);
     }
 
@@ -190,7 +191,7 @@ function getAvatarData(user: any): VAvatarProps {
 
       .badge {
         bottom: 22px;
-        right: -12px;
+        #{$end-direction}: -12px;
       }
     }
 

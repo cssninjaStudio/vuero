@@ -45,8 +45,8 @@
     width: 10px;
     border-radius: 100px;
     background: var(--fade-grey);
-    margin-left: auto;
-    margin-right: 1rem;
+    margin-#{$start-direction}: auto;
+    margin-#{$end-direction}: 1rem;
 
     &.is-offline {
       background: var(--fade-grey);
@@ -64,7 +64,7 @@
   .user-list-icons {
     display: flex;
     justify-content: flex-end;
-    margin-left: auto;
+    margin-#{$start-direction}: auto;
 
     a {
       display: flex;

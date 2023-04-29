@@ -68,6 +68,7 @@ const toggle = (key: number) => {
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .collapse {
@@ -80,7 +81,7 @@ const toggle = (key: number) => {
     &[open] {
       .collapse-header {
         .collapse-icon {
-          transform: rotate(45deg);
+          transform: rotate($transform-direction * 45deg);
         }
       }
 
@@ -94,7 +95,7 @@ const toggle = (key: number) => {
     &[open] {
       .collapse-header {
         .collapse-icon {
-          transform: rotate(180deg);
+          transform: rotate($transform-direction * 180deg);
         }
       }
 

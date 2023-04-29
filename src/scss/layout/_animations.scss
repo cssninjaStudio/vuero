@@ -58,21 +58,21 @@
 
 @keyframes rotating {
   from {
-    transform: rotate(0deg);
+    transform: rotate($transform-direction * 0deg);
   }
 
   to {
-    transform: rotate(360deg);
+    transform: rotate($transform-direction * 360deg);
   }
 }
 
 @keyframes rotating {
   from {
-    transform: rotate(0deg);
+    transform: rotate($transform-direction * 0deg);
   }
 
   to {
-    transform: rotate(360deg);
+    transform: rotate($transform-direction * 360deg);
   }
 }
 

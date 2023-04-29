@@ -60,9 +60,11 @@ const update = async () => {
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
+
 .pwa-toast {
   position: fixed;
-  right: 0;
+  #{$end-direction}: 0;
   bottom: 0;
   max-width: 350px;
   margin: 16px;
@@ -70,7 +72,7 @@ const update = async () => {
   border: 1px solid #8885;
   border-radius: 4px;
   z-index: 10;
-  text-align: left;
+  text-align: #{$start-direction};
   box-shadow: 3px 4px 5px 0 #8885;
 }
 

@@ -21,13 +21,13 @@
     flex-direction: row-reverse;
 
     .control {
-      margin-right: 0;
-      margin-left: auto;
+      margin-#{$end-direction}: 0;
+      margin-#{$start-direction}: auto;
     }
 
     .tabs-inner {
-      margin-right: 10px;
-      margin-left: 0;
+      margin-#{$end-direction}: 10px;
+      margin-#{$start-direction}: 0;
     }
   }
 
@@ -36,7 +36,7 @@
   }
 
   .control {
-    margin-right: 10px;
+    margin-#{$end-direction}: 10px;
   }
 
   .list-info {
@@ -47,7 +47,7 @@
   }
 
   .buttons {
-    margin-left: auto;
+    margin-#{$start-direction}: auto;
     margin-bottom: 0;
 
     .v-button {
@@ -56,7 +56,7 @@
   }
 
   .tabs-inner {
-    margin-left: auto;
+    margin-#{$start-direction}: auto;
 
     .tabs {
       margin-bottom: 0;
@@ -92,13 +92,13 @@
     flex-direction: row-reverse;
 
     .control {
-      margin-right: 0;
-      margin-left: auto;
+      margin-#{$end-direction}: 0;
+      margin-#{$start-direction}: auto;
     }
 
     .tabs-inner {
-      margin-right: 10px;
-      margin-left: 0;
+      margin-#{$end-direction}: 10px;
+      margin-#{$start-direction}: 0;
     }
   }
 
@@ -107,7 +107,7 @@
   }
 
   .control {
-    margin-right: 10px;
+    margin-#{$end-direction}: 10px;
   }
 
   .list-info {
@@ -118,7 +118,7 @@
   }
 
   .buttons {
-    margin-left: auto;
+    margin-#{$start-direction}: auto;
     margin-bottom: 0;
 
     .v-button {
@@ -127,7 +127,7 @@
   }
 
   .tabs-inner {
-    margin-left: auto;
+    margin-#{$start-direction}: auto;
 
     .tabs {
       margin-bottom: 0;
@@ -149,13 +149,13 @@
     flex-direction: row-reverse;
 
     .control {
-      margin-right: 0;
-      margin-left: auto;
+      margin-#{$end-direction}: 0;
+      margin-#{$start-direction}: auto;
     }
 
     .tabs-inner {
-      margin-right: 10px;
-      margin-left: 0;
+      margin-#{$end-direction}: 10px;
+      margin-#{$start-direction}: 0;
     }
   }
 
@@ -164,7 +164,7 @@
   }
 
   .control {
-    margin-right: 10px;
+    margin-#{$end-direction}: 10px;
   }
 
   .list-info {
@@ -175,7 +175,7 @@
   }
 
   .buttons {
-    margin-left: auto;
+    margin-#{$start-direction}: auto;
     margin-bottom: 0;
 
     .field {
@@ -193,7 +193,7 @@
   }
 
   .tabs-inner {
-    margin-left: auto;
+    margin-#{$start-direction}: auto;
 
     .tabs {
       margin-bottom: 0;
@@ -215,13 +215,13 @@
     flex-direction: row-reverse;
 
     .control {
-      margin-right: 0;
-      margin-left: auto;
+      margin-#{$end-direction}: 0;
+      margin-#{$start-direction}: auto;
     }
 
     .tabs-inner {
-      margin-right: 10px;
-      margin-left: 0;
+      margin-#{$end-direction}: 10px;
+      margin-#{$start-direction}: 0;
     }
   }
 
@@ -230,7 +230,7 @@
   }
 
   .control {
-    margin-right: 10px;
+    margin-#{$end-direction}: 10px;
   }
 
   .list-info {
@@ -241,7 +241,7 @@
   }
 
   .buttons {
-    margin-left: auto;
+    margin-#{$start-direction}: auto;
     margin-bottom: 0;
 
     .field {
@@ -259,7 +259,7 @@
   }
 
   .tabs-inner {
-    margin-left: auto;
+    margin-#{$start-direction}: auto;
 
     .tabs {
       margin-bottom: 0;
@@ -281,13 +281,13 @@
     flex-direction: row-reverse;
 
     .control {
-      margin-right: 0;
-      margin-left: auto;
+      margin-#{$end-direction}: 0;
+      margin-#{$start-direction}: auto;
     }
 
     .tabs-inner {
-      margin-right: 10px;
-      margin-left: 0;
+      margin-#{$end-direction}: 10px;
+      margin-#{$start-direction}: 0;
     }
   }
 
@@ -296,7 +296,7 @@
   }
 
   .control {
-    margin-right: 10px;
+    margin-#{$end-direction}: 10px;
   }
 
   .list-info {
@@ -307,7 +307,7 @@
   }
 
   .buttons {
-    margin-left: auto;
+    margin-#{$start-direction}: auto;
     margin-bottom: 0;
 
     .field {
@@ -325,7 +325,7 @@
   }
 
   .tabs-inner {
-    margin-left: auto;
+    margin-#{$start-direction}: auto;
 
     .tabs {
       margin-bottom: 0;

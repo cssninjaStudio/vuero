@@ -49,10 +49,10 @@ const props = withDefaults(
         content: '';
         position: absolute;
         top: 36px;
-        left: 18px;
+        #{$start-direction}: 18px;
         width: 1px;
         height: calc(100% - 36px);
-        border-left: 1px solid var(--fade-grey-dark-3);
+        border-#{$start-direction}: 1px solid var(--fade-grey-dark-3);
       }
 
       .timeline-icon {
@@ -72,7 +72,7 @@ const props = withDefaults(
           content: '';
           position: absolute;
           top: 17px;
-          left: 40px;
+          #{$start-direction}: 40px;
           width: 20px;
           height: 1px;
           border-top: 1px solid var(--fade-grey-dark-3);
@@ -150,7 +150,7 @@ const props = withDefaults(
       }
 
       .timeline-content {
-        margin-left: 34px;
+        margin-#{$start-direction}: 34px;
         line-height: 1.2;
 
         span {

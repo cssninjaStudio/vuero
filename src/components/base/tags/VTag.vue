@@ -51,6 +51,8 @@ const props = withDefaults(defineProps<VTagProps>(), {
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
+
 .tag:not(body) {
   display: inline-block;
   line-height: 2.3;
@@ -58,13 +60,13 @@ const props = withDefaults(defineProps<VTagProps>(), {
   font-size: 0.75rem;
 
   &.is-rounded {
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-#{$start-direction}: 1em;
+    padding-#{$end-direction}: 1em;
   }
 
   &.is-curved {
-    padding-left: 0.85em;
-    padding-right: 0.85em;
+    padding-#{$start-direction}: 0.85em;
+    padding-#{$end-direction}: 0.85em;
     line-height: 2.5;
     height: 2.6em;
     border-radius: 8px;
@@ -76,8 +78,8 @@ const props = withDefaults(defineProps<VTagProps>(), {
     font-size: 0.7rem;
 
     &.is-curved {
-      padding-left: 0.55em;
-      padding-right: 0.55em;
+      padding-#{$start-direction}: 0.55em;
+      padding-#{$end-direction}: 0.55em;
       line-height: 1.3;
       height: 1.6em;
     }

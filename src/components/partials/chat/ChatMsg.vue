@@ -133,9 +133,7 @@ const props = defineProps<{
 </template>
 
 <style lang="scss">
-/* ==========================================================================
-4. Messages globals and variations
-========================================================================== */
+@import '/@src/scss/abstracts/ltr';
 
 .msg {
   min-width: 50px;
@@ -173,7 +171,7 @@ const props = defineProps<{
       .image-overlay {
         position: absolute;
         top: 0;
-        left: 0;
+        #{$start-direction}: 0;
         width: 100%;
         height: 100%;
         opacity: 0;
@@ -187,7 +185,7 @@ const props = defineProps<{
       .image-actions {
         position: absolute;
         top: 0;
-        left: 0;
+        #{$start-direction}: 0;
         width: 100%;
         height: 100%;
         opacity: 0;
@@ -253,7 +251,7 @@ const props = defineProps<{
         height: 40px;
         width: 40px;
         position: absolute;
-        right: 15px;
+        #{$end-direction}: 15px;
         bottom: 15px;
 
         img {
@@ -299,7 +297,7 @@ const props = defineProps<{
     .icon-wrapper {
       position: absolute;
       top: calc(50% - 18px);
-      left: -18px;
+      #{$start-direction}: -18px;
       width: 36px;
       height: 36px;
       min-width: 36px !important;
@@ -319,7 +317,7 @@ const props = defineProps<{
     }
 
     .link-meta {
-      margin-left: 10px;
+      margin-#{$start-direction}: 10px;
 
       span {
         color: var(--dark-text);

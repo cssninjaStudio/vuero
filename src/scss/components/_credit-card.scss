@@ -156,7 +156,7 @@
 
     #ccsingle {
       position: absolute;
-      right: 15px;
+      #{$end-direction}: 15px;
       top: 20px;
 
       svg {

@@ -262,6 +262,7 @@ const filteredData = computed(() => {
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .list-view-v2 {
@@ -292,7 +293,7 @@ const filteredData = computed(() => {
       .meta-left {
         display: flex;
         flex-direction: column;
-        margin-left: 16px;
+        margin-#{$start-direction}: 16px;
 
         h3 {
           font-family: var(--font-alt);
@@ -302,7 +303,7 @@ const filteredData = computed(() => {
           line-height: 1.5;
 
           .rating {
-            margin-left: 12px;
+            margin-#{$start-direction}: 12px;
 
             i {
               position: relative;
@@ -349,7 +350,7 @@ const filteredData = computed(() => {
           > span {
             display: flex;
             align-items: center;
-            margin-right: 15px;
+            margin-#{$end-direction}: 15px;
 
             span {
               font-size: 0.85rem;
@@ -359,7 +360,7 @@ const filteredData = computed(() => {
 
             i {
               font-size: 1.2rem;
-              margin-right: 6px;
+              margin-#{$end-direction}: 6px;
               color: var(--light-text);
             }
           }
@@ -367,14 +368,14 @@ const filteredData = computed(() => {
       }
 
       .meta-right {
-        margin-left: auto;
+        margin-#{$start-direction}: auto;
         display: flex;
         align-items: center;
         justify-content: flex-end;
 
         .buttons {
           margin-bottom: 0;
-          margin-right: 10px;
+          margin-#{$end-direction}: 10px;
         }
       }
     }
@@ -444,7 +445,7 @@ const filteredData = computed(() => {
         }
 
         .meta-left {
-          margin-left: 0;
+          margin-#{$start-direction}: 0;
 
           > span {
             margin-bottom: 16px;
@@ -510,7 +511,7 @@ const filteredData = computed(() => {
           }
 
           .meta-left {
-            margin-left: 0;
+            margin-#{$start-direction}: 0;
 
             > span {
               margin-bottom: 16px;

@@ -59,6 +59,7 @@ useHead({
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 /* ==========================================================================
@@ -68,26 +69,26 @@ useHead({
 .wizard-progress {
   position: fixed;
   top: 60px;
-  left: 0;
+  #{$start-direction}: 0;
   z-index: 19;
   width: 100%;
   height: 0.5rem;
 
   &::-webkit-progress-value {
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-top-#{$end-direction}-radius: 50px;
+    border-bottom-#{$end-direction}-radius: 50px;
     transition: width 0.5s ease;
   }
 
   &::-moz-progress-bar {
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-top-#{$end-direction}-radius: 50px;
+    border-bottom-#{$end-direction}-radius: 50px;
     transition: width 0.5s ease;
   }
 
   &::-ms-fill {
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-top-#{$end-direction}-radius: 50px;
+    border-bottom-#{$end-direction}-radius: 50px;
     transition: width 0.5s ease;
   }
 }
@@ -95,8 +96,8 @@ useHead({
 .wizard-buttons {
   position: fixed;
   bottom: 20px;
-  left: 0;
-  right: 0;
+  #{$start-direction}: 0;
+  #{$end-direction}: 0;
   margin: 0 auto;
   max-width: 306px;
   background: var(--white);
@@ -166,7 +167,7 @@ useHead({
       .project-preview-loader {
         position: absolute;
         top: 0;
-        left: 0;
+        #{$start-direction}: 0;
         width: 100%;
         height: 100%;
         display: flex;
@@ -208,7 +209,7 @@ useHead({
           .edit-icon {
             position: absolute;
             bottom: 2px;
-            right: 0;
+            #{$end-direction}: 0;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -292,7 +293,7 @@ useHead({
           .edit-icon {
             position: absolute;
             top: 10px;
-            right: 10px;
+            #{$end-direction}: 10px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -398,7 +399,7 @@ useHead({
         input {
           position: absolute;
           top: 0;
-          left: 0;
+          #{$start-direction}: 0;
           height: 100%;
           width: 100%;
           opacity: 0;
@@ -509,7 +510,7 @@ useHead({
             border: 1px solid var(--fade-grey-dark-3);
             border-radius: 12px;
             margin-bottom: 12px;
-            text-align: left;
+            text-align: #{$start-direction};
 
             > img {
               display: block;
@@ -520,7 +521,7 @@ useHead({
             }
 
             .meta {
-              margin-left: 12px;
+              margin-#{$start-direction}: 12px;
               line-height: 1.1;
 
               > span {
@@ -541,12 +542,12 @@ useHead({
             }
 
             .actions {
-              margin-left: auto;
+              margin-#{$start-direction}: auto;
               display: flex;
               align-items: center;
 
               .permissions {
-                margin-right: 30px;
+                margin-#{$end-direction}: 30px;
                 width: 180px;
 
                 .permission-levels {
@@ -863,7 +864,7 @@ useHead({
             }
 
             .list-item-meta {
-              margin-left: 12px;
+              margin-#{$start-direction}: 12px;
 
               p {
                 font-family: var(--font);
@@ -877,8 +878,8 @@ useHead({
             }
 
             .list-item-progress {
-              margin-left: auto;
-              margin-right: 30px;
+              margin-#{$start-direction}: auto;
+              margin-#{$end-direction}: 30px;
               min-width: 120px;
 
               .progress {
@@ -1022,7 +1023,7 @@ useHead({
         .separator {
           height: 25px;
           width: 2px;
-          border-right: 1px solid var(--fade-grey-dark-3);
+          border-#{$end-direction}: 1px solid var(--fade-grey-dark-3);
           margin: 0 12px;
         }
 
@@ -1053,7 +1054,7 @@ useHead({
               border: none;
               background: none;
               box-shadow: none;
-              padding-left: 4px;
+              padding-#{$start-direction}: 4px;
               font-family: var(--font);
             }
           }
@@ -1575,7 +1576,7 @@ useHead({
               .list-item-progress {
                 min-width: 80px;
                 max-width: 80px;
-                margin-right: 20px;
+                margin-#{$end-direction}: 20px;
               }
             }
           }
@@ -1609,7 +1610,7 @@ useHead({
                   &.is-circle {
                     position: absolute;
                     top: 10px;
-                    right: 10px;
+                    #{$end-direction}: 10px;
                   }
                 }
               }

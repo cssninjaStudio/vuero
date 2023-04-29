@@ -120,6 +120,8 @@ const props = withDefaults(defineProps<VBreadcrumbsProps>(), {
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
+
 .breadcrumb {
   &.is-narrow {
     margin-bottom: 10px;
@@ -129,7 +131,7 @@ const props = withDefaults(defineProps<VBreadcrumbsProps>(), {
     li {
       &:first-child {
         .breadcrumb-item {
-          padding-left: 0;
+          padding-#{$start-direction}: 0;
         }
       }
 

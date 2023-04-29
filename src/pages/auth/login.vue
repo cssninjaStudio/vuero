@@ -226,6 +226,8 @@ useHead({
 </template>
 
 <style lang="scss" scoped>
+@import '/@src/scss/abstracts/ltr';
+
 .modern-login {
   position: relative;
   background: var(--white);
@@ -244,7 +246,7 @@ useHead({
       .hero-overlay {
         position: absolute;
         top: 0;
-        left: 0;
+        #{$start-direction}: 0;
         width: 100%;
         height: 100%;
         background: #5d4298 !important;
@@ -257,7 +259,7 @@ useHead({
     display: block;
     position: absolute;
     top: 0;
-    left: 0;
+    #{$start-direction}: 0;
     width: 66.6%;
     height: 100%;
     background: #fdfdfd;
@@ -267,7 +269,7 @@ useHead({
   .dark-mode {
     position: absolute;
     top: -25px;
-    right: 38px;
+    #{$end-direction}: 38px;
     transform: scale(0.6);
     z-index: 2;
   }
@@ -275,8 +277,8 @@ useHead({
   .top-logo {
     position: absolute;
     top: -30px;
-    left: 0;
-    right: 0;
+    #{$start-direction}: 0;
+    #{$end-direction}: 0;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -298,7 +300,7 @@ useHead({
 
   .is-image {
     position: relative;
-    border-right: 1px solid var(--fade-grey);
+    border-#{$end-direction}: 1px solid var(--fade-grey);
 
     .hero-image {
       position: relative;
@@ -353,7 +355,7 @@ useHead({
           padding-top: 14px;
           height: 60px;
           border-radius: 10px;
-          padding-left: 55px;
+          padding-#{$start-direction}: 55px;
           transition: all 0.3s; // transition-all test
 
           &:focus {
@@ -377,7 +379,7 @@ useHead({
         .auth-label {
           position: absolute;
           top: 6px;
-          left: 55px;
+          #{$start-direction}: 55px;
           font-size: 0.8rem;
           color: var(--dark-text);
           font-weight: 500;
@@ -389,7 +391,7 @@ useHead({
         :deep(.autv-icon) {
           position: absolute;
           top: 0;
-          left: 0;
+          #{$start-direction}: 0;
           height: 60px;
           width: 60px;
           display: flex;
@@ -404,7 +406,7 @@ useHead({
           .validation-icon {
             position: absolute;
             top: 0;
-            right: 0;
+            #{$end-direction}: 0;
             height: 60px;
             width: 60px;
             display: none;
@@ -479,7 +481,7 @@ useHead({
 
           a {
             display: block;
-            margin-left: auto;
+            margin-#{$start-direction}: auto;
             color: var(--muted-grey);
             font-weight: 500;
             font-size: 0.9rem;
@@ -507,7 +509,7 @@ useHead({
           align-items: center;
 
           > span {
-            margin-left: 12px;
+            margin-#{$start-direction}: 12px;
             font-family: var(--font);
 
             a {
@@ -521,7 +523,7 @@ useHead({
         .button {
           height: 46px;
           width: 140px;
-          margin-left: 6px;
+          margin-#{$start-direction}: 6px;
 
           &:first-child {
             &:hover {
@@ -553,7 +555,7 @@ useHead({
 
       .active,
       .inactive {
-        transform: translateX(100%) rotate(360deg);
+        transform: translateX($transform-direction * 100%) rotate(360deg);
       }
 
       .active {
@@ -579,7 +581,7 @@ useHead({
     .inactive {
       position: absolute;
       top: 2px;
-      left: 2px;
+      #{$start-direction}: 2px;
       height: 26px;
       width: 26px;
       border-radius: var(--radius-rounded);
@@ -587,7 +589,7 @@ useHead({
       display: flex;
       justify-content: center;
       align-items: center;
-      transform: translateX(0) rotate(0);
+      transform: translateX($transform-direction * 0) rotate($transform-direction * 0);
       transition: all 0.3s ease;
 
       svg {
@@ -622,7 +624,7 @@ useHead({
 
     .dark-mode {
       top: 36px;
-      right: 44px;
+      #{$end-direction}: 44px;
     }
 
     .is-form {
@@ -642,7 +644,7 @@ useHead({
 
     .dark-mode {
       top: -58px;
-      right: 30%;
+      #{$end-direction}: 30%;
     }
 
     .columns {

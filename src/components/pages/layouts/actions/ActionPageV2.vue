@@ -149,6 +149,7 @@ const accept = async () => {
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .action-page-wrapper {
@@ -172,7 +173,7 @@ const accept = async () => {
           border: none;
           background: none;
           border-radius: 0;
-          border-right: 1px solid var(--fade-grey-dark-3);
+          border-#{$end-direction}: 1px solid var(--fade-grey-dark-3);
         }
       }
 
@@ -262,7 +263,7 @@ const accept = async () => {
           }
 
           .sender-message {
-            text-align: left;
+            text-align: #{$start-direction};
             padding: 20px;
             border: 1px solid var(--fade-grey-dark-3);
             max-width: 360px;
@@ -348,7 +349,7 @@ const accept = async () => {
         .wrapper-inner {
           .action-box {
             padding: 20px 20px 40px;
-            border-right: none;
+            border-#{$end-direction}: none;
             border-bottom: 1px solid var(--fade-grey-dark-3);
 
             .box-content {

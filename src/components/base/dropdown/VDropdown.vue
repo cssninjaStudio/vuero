@@ -85,7 +85,22 @@ defineExpose({
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
+
 .dropdown {
+  &:not(.is-right) {
+    .dropdown-menu {
+      #{$start-direction}: 0;
+    }
+  }
+
+  &.is-right {
+    .dropdown-menu {
+      #{$start-direction}: initial;
+      #{$end-direction}: 0;
+    }
+  }
+
   &.is-dots {
     &:hover,
     &.is-active {
@@ -124,19 +139,19 @@ defineExpose({
     .dropdown-menu {
       margin-top: 6px;
       padding-bottom: 0;
-      text-align: left;
+      text-align: #{$start-direction};
     }
   }
 
   &.is-modern {
     &.is-active {
       .caret {
-        transform: rotate(180deg);
+        transform: rotate($transform-direction * 180deg);
       }
     }
 
     .is-trigger {
-      padding-right: 0.75em;
+      padding-#{$end-direction}: 0.75em;
 
       .caret {
         height: 22px;
@@ -145,7 +160,7 @@ defineExpose({
         justify-content: center;
         align-items: center;
         transition: all 0.3s; // transition-all test
-        margin-left: 6px;
+        margin-#{$start-direction}: 6px;
 
         .iconify {
           vertical-align: middle;
@@ -251,7 +266,7 @@ defineExpose({
         }
 
         .meta {
-          margin-left: 10px;
+          margin-#{$start-direction}: 10px;
 
           span {
             display: block;
@@ -295,7 +310,7 @@ defineExpose({
           position: relative;
           top: -2px;
           vertical-align: middle;
-          margin-left: 0.25rem;
+          margin-#{$start-direction}: 0.25rem;
         }
       }
     }
@@ -324,7 +339,7 @@ defineExpose({
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-right: 1rem;
+        padding-#{$end-direction}: 1rem;
 
         svg {
           height: 16px;
@@ -335,7 +350,7 @@ defineExpose({
         // Child hover dropdown
         .child-dropdown {
           position: absolute;
-          right: -282px;
+          #{$end-direction}: -282px;
           top: 0;
           width: 280px;
           transition: all 0.3s; // transition-all test

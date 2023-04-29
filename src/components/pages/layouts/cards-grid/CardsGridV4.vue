@@ -101,12 +101,13 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .card-grid {
   .columns {
-    margin-left: -0.5rem !important;
-    margin-right: -0.5rem !important;
+    margin-#{$start-direction}: -0.5rem !important;
+    margin-#{$end-direction}: -0.5rem !important;
     margin-top: -0.5rem !important;
   }
 
@@ -157,7 +158,7 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
       padding: 0 5px 10px;
 
       .meta {
-        margin-left: 8px;
+        margin-#{$start-direction}: 8px;
         line-height: 1.2;
 
         span {

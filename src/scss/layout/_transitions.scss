@@ -81,23 +81,23 @@
 
 @keyframes translate-page-x-in {
   0% {
-    transform: translateX(-200px);
+    transform: translateX($transform-direction * -200px);
     opacity: 0;
   }
 
   100% {
-    transform: translateX(0);
+    transform: translateX($transform-direction * 0);
     opacity: 1;
   }
 }
 @keyframes translate-page-x-out {
   0% {
-    transform: translateX(0);
+    transform: translateX($transform-direction * 0);
     opacity: 1;
   }
 
   100% {
-    transform: translateX(500px);
+    transform: translateX($transform-direction * 500px);
     opacity: 0;
   }
 }
@@ -115,7 +115,7 @@
 
 .list-item {
   display: inline-block;
-  margin-right: 10px;
+  margin-#{$end-direction}: 10px;
 }
 
 .list-enter-active,
@@ -143,7 +143,7 @@
 .list-complete-item {
   transition: all 0.8s ease;
   display: inline-block;
-  margin-right: 10px;
+  margin-#{$end-direction}: 10px;
 }
 
 .list-complete-enter-from,
@@ -176,26 +176,26 @@
 }
 
 .slide-x-enter-from {
-  transform: translateX(-100%);
+  transform: translateX($transform-direction * -100%);
 }
 
 .slide-x-enter-to {
-  transform: translateX(0);
+  transform: translateX($transform-direction * 0);
 }
 
 .slide-x-leave-from {
-  transform: translateX(0);
+  transform: translateX($transform-direction * 0);
 }
 
 .slide-x-leave-to {
-  transform: translateX(-100%);
+  transform: translateX($transform-direction * -100%);
 }
 
 @media (prefers-reduced-motion: reduce) {
   .slide-x-enter-active,
   .slide-x-leave-active {
     transition: none;
-    transform: translateX(0);
+    transform: translateX($transform-direction * 0);
   }
 }
 

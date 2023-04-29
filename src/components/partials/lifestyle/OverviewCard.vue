@@ -15,6 +15,7 @@ const props = defineProps<{
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .overview-card {
@@ -68,7 +69,7 @@ const props = defineProps<{
         color: var(--green);
 
         svg {
-          transform: rotate(-45deg);
+          transform: rotate($transform-direction * -45deg);
         }
       }
     }
@@ -78,7 +79,7 @@ const props = defineProps<{
         color: var(--red);
 
         svg {
-          transform: rotate(45deg);
+          transform: rotate($transform-direction * 45deg);
         }
       }
     }
@@ -88,7 +89,7 @@ const props = defineProps<{
       color: var(--light-text);
 
       span {
-        margin-right: 8px;
+        margin-#{$end-direction}: 8px;
         font-weight: 500;
 
         svg {
@@ -131,7 +132,7 @@ const props = defineProps<{
           color: var(--green);
 
           svg {
-            transform: rotate(-45deg);
+            transform: rotate($transform-direction * -45deg);
           }
         }
       }
@@ -141,7 +142,7 @@ const props = defineProps<{
           color: var(--red);
 
           svg {
-            transform: rotate(45deg);
+            transform: rotate($transform-direction * 45deg);
           }
         }
       }
@@ -151,7 +152,7 @@ const props = defineProps<{
         color: var(--light-text);
 
         span {
-          margin-right: 8px;
+          margin-#{$end-direction}: 8px;
           font-weight: 500;
 
           svg {
@@ -172,6 +173,14 @@ const props = defineProps<{
     .card-metric,
     .metric .metric {
       color: var(--dark-dark-text);
+    }
+  }
+}
+
+[dir='rtl'] {
+  .overview-card {
+    .card-head {
+      flex-direction: row-reverse;
     }
   }
 }

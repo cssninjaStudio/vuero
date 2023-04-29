@@ -20,13 +20,13 @@
     li {
       &:first-child {
         a {
-          border-right: none;
+          border-#{$end-direction}: none;
         }
       }
 
       &:last-child {
         a {
-          border-left: none;
+          border-#{$start-direction}: none;
         }
       }
 
@@ -81,7 +81,7 @@
       svg {
         height: 16px;
         width: 16px;
-        margin-right: 6px;
+        margin-#{$end-direction}: 6px;
       }
 
       .fas,
@@ -89,17 +89,17 @@
       .far,
       .fad,
       .fab {
-        margin-right: 6px;
+        margin-#{$end-direction}: 6px;
       }
 
       .lnil,
       .lnir {
         font-size: 20px;
-        margin-right: 6px;
+        margin-#{$end-direction}: 6px;
       }
 
       small {
-        margin-left: 5px;
+        margin-#{$start-direction}: 5px;
       }
     }
   }
@@ -264,25 +264,25 @@
 
         &:first-child {
           &.is-active ~ .tab-naver {
-            margin-left: 0;
+            margin-#{$start-direction}: 0;
           }
         }
 
         &:nth-child(2) {
           &.is-active ~ .tab-naver {
-            margin-left: 50% !important;
+            margin-#{$start-direction}: 50% !important;
           }
         }
       }
 
       &.is-centered {
-        margin-left: auto;
-        margin-right: auto;
+        margin-#{$start-direction}: auto;
+        margin-#{$end-direction}: auto;
       }
     }
 
     .tab-naver {
-      left: 0;
+      #{$start-direction}: 0;
       background: var(--primary);
       position: absolute;
       top: 0.5px;
@@ -297,7 +297,7 @@
       }
 
       &.is-active {
-        margin-left: 50%;
+        margin-#{$start-direction}: 50%;
       }
     }
   }
@@ -374,19 +374,19 @@
 
         &:first-child {
           &.is-active ~ .tab-naver {
-            margin-left: 0;
+            margin-#{$start-direction}: 0;
           }
         }
 
         &:nth-child(2) {
           &.is-active ~ .tab-naver {
-            margin-left: 33% !important;
+            margin-#{$start-direction}: 33% !important;
           }
         }
 
         &:nth-child(3) {
           &.is-active ~ .tab-naver {
-            margin-left: 66.6%;
+            margin-#{$start-direction}: 66.6%;
           }
         }
       }
@@ -395,7 +395,7 @@
     .tab-naver {
       position: absolute;
       top: 0.5px;
-      left: 0;
+      #{$start-direction}: 0;
       display: block;
       width: 33.3% !important;
       background: var(--primary);
@@ -409,7 +409,7 @@
       }
 
       &.is-active {
-        margin-left: 48%;
+        margin-#{$start-direction}: 48%;
       }
     }
   }
@@ -498,11 +498,11 @@
     .tabs {
       min-width: 25%;
       max-width: 25%;
-      margin-right: 30px;
+      margin-#{$end-direction}: 30px;
 
       ul {
         display: block;
-        text-align: left;
+        text-align: #{$start-direction};
         border-bottom-color: transparent !important;
 
         li {
@@ -511,14 +511,14 @@
           &.is-active {
             a {
               color: var(--primary);
-              border-right-color: var(--primary);
+              border-#{$end-direction}-color: var(--primary);
             }
           }
 
           a {
             display: block;
             border-bottom-color: transparent !important;
-            border-right: 2px solid #dbdbdb;
+            border-#{$end-direction}: 2px solid #dbdbdb;
             color: var(--light-text);
           }
         }

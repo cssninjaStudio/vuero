@@ -243,6 +243,7 @@ const { popularityGaugeOptions } = usePopularityGaugeChart()
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .banking-dashboard-v3 {
@@ -281,7 +282,7 @@ const { popularityGaugeOptions } = usePopularityGaugeChart()
             content: '+3.4%';
             position: relative;
             top: -8px;
-            right: -8px;
+            #{$end-direction}: $transform-direction * -8px;
             font-size: 1.1rem;
           }
         }
@@ -291,8 +292,8 @@ const { popularityGaugeOptions } = usePopularityGaugeChart()
 
   .dashboard-tiles {
     display: flex;
-    margin-left: -8px;
-    margin-right: -8px;
+    margin-#{$start-direction}: -8px;
+    margin-#{$end-direction}: -8px;
     margin-top: -8px;
     margin-bottom: 1rem;
 

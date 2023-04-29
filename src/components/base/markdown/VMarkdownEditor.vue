@@ -313,6 +313,8 @@ watchEffect((cleanup) => {
 </template>
 
 <style lang="scss" scoped>
+@import '/@src/scss/abstracts/ltr';
+
 .markdown-editor {
   margin-top: 2.5rem;
   margin-bottom: 1.5rem;
@@ -369,51 +371,51 @@ watchEffect((cleanup) => {
 
   .toolbar-dropdown-action.button {
     &:first-of-type {
-      border-top-left-radius: 3px;
-      border-top-right-radius: 0;
-      border-bottom-left-radius: 3px;
-      border-bottom-right-radius: 0;
+      border-top-#{$start-direction}-radius: 3px;
+      border-top-#{$end-direction}-radius: 0;
+      border-bottom-#{$start-direction}-radius: 3px;
+      border-bottom-#{$end-direction}-radius: 0;
     }
 
     &:last-of-type {
-      border-top-left-radius: 0;
-      border-top-right-radius: 3px;
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 3px;
+      border-top-#{$start-direction}-radius: 0;
+      border-top-#{$end-direction}-radius: 3px;
+      border-bottom-#{$start-direction}-radius: 0;
+      border-bottom-#{$end-direction}-radius: 3px;
     }
   }
 
   .toolbar-item {
     &:first-of-type {
       .toolbar-action {
-        border-top-left-radius: 3px;
-        border-bottom-left-radius: 3px;
+        border-top-#{$start-direction}-radius: 3px;
+        border-bottom-#{$start-direction}-radius: 3px;
       }
 
       .toolbar-dropdown-trigger {
-        border-top-left-radius: 3px;
-        border-bottom-left-radius: 3px;
+        border-top-#{$start-direction}-radius: 3px;
+        border-bottom-#{$start-direction}-radius: 3px;
       }
     }
 
     &:last-of-type {
       .toolbar-action {
-        border-top-right-radius: 3px;
-        border-bottom-right-radius: 3px;
+        border-top-#{$end-direction}-radius: 3px;
+        border-bottom-#{$end-direction}-radius: 3px;
       }
 
       .toolbar-dropdown-trigger {
-        border-top-right-radius: 3px;
-        border-bottom-right-radius: 3px;
+        border-top-#{$end-direction}-radius: 3px;
+        border-bottom-#{$end-direction}-radius: 3px;
       }
     }
 
     // &:not(:last-of-type) {
-    //   margin-left: -1px;
+    //   margin-#{$start-direction}: -1px;
     // }
 
     ~ .toolbar-item {
-      margin-left: -1px;
+      margin-#{$start-direction}: -1px;
     }
   }
 
@@ -429,17 +431,17 @@ watchEffect((cleanup) => {
 
       .toolbar-dropdown-action.button {
         &:first-of-type {
-          border-top-left-radius: 3px;
-          border-top-right-radius: 3px;
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
+          border-top-#{$start-direction}-radius: 3px;
+          border-top-#{$end-direction}-radius: 3px;
+          border-bottom-#{$start-direction}-radius: 0;
+          border-bottom-#{$end-direction}-radius: 0;
         }
 
         &:last-of-type {
-          border-top-left-radius: 0;
-          border-top-right-radius: 0;
-          border-bottom-left-radius: 3px;
-          border-bottom-right-radius: 3px;
+          border-top-#{$start-direction}-radius: 0;
+          border-top-#{$end-direction}-radius: 0;
+          border-bottom-#{$start-direction}-radius: 3px;
+          border-bottom-#{$end-direction}-radius: 3px;
         }
       }
 
@@ -448,7 +450,7 @@ watchEffect((cleanup) => {
 
         .toolbar-dropdown-action {
           margin-bottom: -1px;
-          margin-right: 0;
+          margin-#{$end-direction}: 0;
         }
       }
     }

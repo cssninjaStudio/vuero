@@ -58,12 +58,13 @@ const optionsSingle = [
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .tile-grid {
   .columns {
-    margin-left: -0.5rem !important;
-    margin-right: -0.5rem !important;
+    margin-#{$start-direction}: -0.5rem !important;
+    margin-#{$end-direction}: -0.5rem !important;
     margin-top: -0.5rem !important;
   }
 
@@ -92,7 +93,7 @@ const optionsSingle = [
       align-items: center;
 
       .meta {
-        margin-left: 10px;
+        margin-#{$start-direction}: 10px;
         line-height: 1.2;
 
         span {
@@ -115,7 +116,7 @@ const optionsSingle = [
 
       .dropdown {
         position: relative;
-        margin-left: auto;
+        margin-#{$start-direction}: auto;
       }
     }
   }

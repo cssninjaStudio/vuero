@@ -284,6 +284,8 @@ useHead({
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
+
 .status-page-wrapper {
   max-width: 720px;
   margin: 0 auto;
@@ -317,7 +319,7 @@ useHead({
         width: 15px;
         height: 15px;
         border-radius: 100%;
-        margin-right: 20px;
+        margin-#{$end-direction}: 20px;
         background: var(--success);
       }
 
@@ -330,7 +332,7 @@ useHead({
 
       .subtitle {
         display: block;
-        margin-left: 35px;
+        margin-#{$start-direction}: 35px;
         color: var(--light-text);
       }
     }
@@ -352,7 +354,7 @@ useHead({
 
       .uptime {
         display: inline-block;
-        margin-left: 60px;
+        margin-#{$start-direction}: 60px;
         font-size: 14px;
         color: var(--light-text);
       }
@@ -377,7 +379,7 @@ useHead({
           border: 1px solid var(--fade-grey-dark-3);
           box-shadow: var(--light-box-shadow);
           color: var(--primary);
-          margin-right: 12px;
+          margin-#{$end-direction}: 12px;
 
           img {
             display: block;
@@ -418,7 +420,7 @@ useHead({
         align-items: center;
         font-size: 16px;
         color: var(--light-text);
-        margin-left: auto;
+        margin-#{$start-direction}: auto;
         height: 40px;
         width: 40px;
         border-radius: 12px;
@@ -447,7 +449,7 @@ useHead({
     }
 
     .username {
-      margin-left: 10px;
+      margin-#{$start-direction}: 10px;
       font-family: var(--font-alt);
       font-size: 0.95rem;
       font-weight: 600;
@@ -455,7 +457,7 @@ useHead({
     }
 
     .action-link {
-      margin-left: auto;
+      margin-#{$start-direction}: auto;
     }
   }
 
@@ -472,7 +474,7 @@ useHead({
         }
 
         .update-content {
-          margin-left: 12px;
+          margin-#{$start-direction}: 12px;
 
           .timestamp {
             color: var(--light-text);
@@ -511,7 +513,7 @@ useHead({
     }
 
     .copyright {
-      margin-left: auto;
+      margin-#{$start-direction}: auto;
       font-family: var(--font);
       color: var(--light-text);
     }
@@ -619,7 +621,7 @@ useHead({
           }
 
           .update-content {
-            margin-left: 0;
+            margin-#{$start-direction}: 0;
           }
         }
       }

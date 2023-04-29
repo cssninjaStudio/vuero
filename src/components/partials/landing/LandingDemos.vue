@@ -228,7 +228,16 @@ debouncedWatch(
                 <div class="demo-link">
                   <RouterLink :to="item.route.path" tabindex="-1">
                     Go to demo
-                    <i aria-hidden="true" class="fas fa-angle-right"></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify rtl-hidden"
+                      data-icon="feather:chevron-right"
+                    />
+                    <i
+                      aria-hidden="true"
+                      class="iconify ltr-hidden"
+                      data-icon="feather:chevron-left"
+                    />
                   </RouterLink>
                 </div>
               </div>
@@ -481,6 +490,8 @@ debouncedWatch(
 </template>
 
 <style lang="scss" scoped>
+@import '/@src/scss/abstracts/ltr';
+
 .demo-search-section {
   margin-bottom: 2rem;
 
@@ -509,7 +520,7 @@ debouncedWatch(
       }
 
       .title-meta {
-        margin-left: 12px;
+        margin-#{$start-direction}: 12px;
         line-height: 1.2;
 
         h3 {
@@ -567,7 +578,7 @@ debouncedWatch(
 
     position: absolute !important;
     top: 40%;
-    left: 42%;
+    #{$start-direction}: 42%;
     height: 3.5rem;
     width: 3.5rem;
     transform: translate(-50%, -50%);
@@ -589,7 +600,7 @@ debouncedWatch(
   .new-tag {
     position: absolute;
     bottom: 10px;
-    right: 10px;
+    #{$end-direction}: 10px;
     background: red;
     color: var(--white);
     font-family: var(--font);
@@ -603,7 +614,7 @@ debouncedWatch(
   .circle-overlay {
     position: absolute;
     top: -60px;
-    left: -60px;
+    #{$start-direction}: -60px;
     width: 60px;
     height: 60px;
     border-radius: var(--radius-rounded);
@@ -617,8 +628,8 @@ debouncedWatch(
     position: absolute;
     margin: 0 auto;
     top: 26%;
-    left: 0;
-    right: 0;
+    #{$start-direction}: 0;
+    #{$end-direction}: 0;
     z-index: 2;
     color: var(--white);
     display: flex;
@@ -660,22 +671,23 @@ debouncedWatch(
     transition-delay: 0.2s;
 
     a {
+      display: inline-flex;
+      align-items: center;
       font-family: var(--font);
       color: var(--white);
       font-size: 1rem;
-      margin-left: 8px;
+      margin-#{$start-direction}: 8px;
 
-      i {
+      .iconify {
         position: relative;
-        top: 1px;
         opacity: 0;
-        transform: translateX(0);
+        transform: translateX($transform-direction * 0);
         transition: all 0.3s ease-out;
       }
 
-      &:hover i {
+      &:hover .iconify {
         opacity: 1;
-        transform: translateX(5px);
+        transform: translateX($transform-direction * 5px);
       }
     }
   }

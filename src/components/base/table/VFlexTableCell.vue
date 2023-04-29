@@ -33,6 +33,8 @@ const props = withDefaults(defineProps<VFlexTableCellProps>(), {
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
+
 .flex-table-cell {
   flex: 1 1 0;
   display: flex;
@@ -41,6 +43,7 @@ const props = withDefaults(defineProps<VFlexTableCellProps>(), {
   font-family: var(--font);
   word-break: keep-all;
   white-space: nowrap;
+  text-align: #{$start-direction};
 
   &.is-scrollable-x {
     overflow-x: auto;
@@ -94,7 +97,7 @@ const props = withDefaults(defineProps<VFlexTableCellProps>(), {
 
     .checkbox {
       padding: 0;
-      margin-left: 4px;
+      margin-#{$start-direction}: 4px;
     }
   }
 
@@ -112,11 +115,11 @@ const props = withDefaults(defineProps<VFlexTableCellProps>(), {
 
   &.is-user,
   &.is-media {
-    padding-left: 0;
+    padding-#{$start-direction}: 0;
 
     > div span:not(.avatar) {
       display: block;
-      margin-left: 10px;
+      margin-#{$start-direction}: 10px;
     }
 
     > div {
@@ -138,18 +141,18 @@ const props = withDefaults(defineProps<VFlexTableCellProps>(), {
           height: 14px;
           width: 14px;
           stroke-width: 1.6px;
-          margin-right: 4px;
+          margin-#{$end-direction}: 4px;
         }
 
         span,
         .text {
           display: inline-block;
-          margin-left: 0;
+          margin-#{$start-direction}: 0;
           font-size: 0.9rem;
         }
 
         .flex-media {
-          margin-left: 10px;
+          margin-#{$start-direction}: 10px;
           margin-top: 4px;
 
           .v-avatar {
@@ -172,7 +175,7 @@ const props = withDefaults(defineProps<VFlexTableCellProps>(), {
     }
 
     .v-avatar {
-      margin-left: 0 !important;
+      margin-#{$start-direction}: 0 !important;
 
       .avatar.is-fake {
         span,
@@ -182,7 +185,7 @@ const props = withDefaults(defineProps<VFlexTableCellProps>(), {
       }
 
       + div {
-        margin-left: 0.5rem !important;
+        margin-#{$start-direction}: 0.5rem !important;
       }
     }
 
@@ -211,7 +214,7 @@ const props = withDefaults(defineProps<VFlexTableCellProps>(), {
   }
 
   .cell-icon {
-    margin-right: 4px;
+    margin-#{$end-direction}: 4px;
     color: var(--light-text);
   }
 
@@ -226,7 +229,7 @@ const props = withDefaults(defineProps<VFlexTableCellProps>(), {
     align-items: center;
 
     .meta {
-      margin-left: 6px;
+      margin-#{$start-direction}: 6px;
       line-height: 1.3;
 
       span,
@@ -339,17 +342,34 @@ const props = withDefaults(defineProps<VFlexTableCellProps>(), {
       justify-content: flex-start !important;
 
       .btn-group {
-        margin-left: auto;
+        margin-#{$start-direction}: auto;
       }
     }
 
     &.is-user,
     &.is-media {
-      padding-left: 10px;
+      padding-#{$start-direction}: 10px;
 
       span,
       .text {
         font-size: 1.2rem;
+      }
+
+      .media {
+        max-width: 80px;
+        min-height: 80px;
+
+        + div {
+          margin-#{$start-direction}: 10px !important;
+
+          .item-name {
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 205px;
+          }
+        }
       }
     }
   }
@@ -359,6 +379,48 @@ const props = withDefaults(defineProps<VFlexTableCellProps>(), {
     &.is-user {
       img {
         min-width: 50px;
+      }
+    }
+
+    &.is-media {
+      .media {
+        max-width: 60px;
+        min-height: 60px;
+
+        + div {
+          margin-#{$start-direction}: 10px !important;
+
+          .item-name {
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 150px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: landscape) {
+  .flex-table-cell {
+    &.is-media {
+      .media {
+        max-width: 60px;
+        min-height: 60px;
+
+        + div {
+          margin-#{$start-direction}: 10px !important;
+
+          .item-name {
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 150px;
+          }
+        }
       }
     }
   }

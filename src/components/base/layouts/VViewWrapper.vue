@@ -25,27 +25,25 @@ const props = defineProps<VViewWrapperProps>()
 </template>
 
 <style lang="scss">
-/* ==========================================================================
-2. View Wrapper
-========================================================================== */
+@import '/@src/scss/abstracts/ltr';
 
 .view-wrapper {
   &.has-top-nav {
-    margin-left: 0 !important;
+    margin-#{$start-direction}: 0 !important;
     width: 100% !important;
     padding-top: 1px;
 
     .is-stuck {
       position: fixed;
       top: 78px;
-      left: 0;
-      margin-left: 0;
-      border-left: 0 !important;
+      #{$start-direction}: 0;
+      margin-#{$start-direction}: 0;
+      border-#{$start-direction}: 0 !important;
       width: 100%;
       z-index: 14;
 
       &.stuck-header {
-        padding-right: 20px !important;
+        padding-#{$end-direction}: 20px !important;
 
         .form-head-inner,
         .form-header-inner {
@@ -78,14 +76,14 @@ const props = defineProps<VViewWrapperProps>()
 
   &.view-wrapper-full {
     width: 100%;
-    margin-left: 0;
+    margin-#{$start-direction}: 0;
 
     &.is-pushed-block {
-      margin-left: 280px;
+      margin-#{$start-direction}: 280px;
       width: calc(100% - 280px);
 
       .is-stuck {
-        margin-left: 280px;
+        margin-#{$start-direction}: 280px;
         width: calc(100% - 280px);
       }
     }
@@ -98,30 +96,30 @@ const props = defineProps<VViewWrapperProps>()
   min-height: 100vh;
   width: calc(100% - 80px);
   padding: 0 0 60px;
-  margin-left: 80px;
+  margin-#{$start-direction}: 80px;
   background: var(--background-grey);
   transition: all 0.3s; // transition-all test
 
   &.is-pushed-full {
-    margin-left: 320px;
+    margin-#{$start-direction}: 320px;
     width: calc(100% - 320px);
 
     .is-stuck {
-      margin-left: 320px;
+      margin-#{$start-direction}: 320px;
       width: calc(100% - 320px);
     }
   }
 
   &.is-pushed-messages {
-    margin-left: 160px !important;
+    margin-#{$start-direction}: 160px !important;
     width: calc(100% - 160px) !important;
   }
 
   .is-stuck {
     position: fixed;
     top: 0;
-    left: 0;
-    margin-left: 80px;
+    #{$start-direction}: 0;
+    margin-#{$start-direction}: 80px;
     width: calc(100% - 80px);
     z-index: 14;
   }
@@ -168,10 +166,10 @@ const props = defineProps<VViewWrapperProps>()
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .view-wrapper {
     width: calc(100% - 60px) !important;
-    margin-left: 60px !important;
+    margin-#{$start-direction}: 60px !important;
 
     &.is-pushed-messages {
-      margin-left: 140px !important;
+      margin-#{$start-direction}: 140px !important;
       width: calc(100% - 140px) !important;
     }
   }
@@ -180,14 +178,14 @@ const props = defineProps<VViewWrapperProps>()
   // Layout
   .view-wrapper {
     width: 100% !important;
-    margin-left: 0 !important;
+    margin-#{$start-direction}: 0 !important;
     margin-top: 60px !important;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-#{$start-direction}: 40px;
+    padding-#{$end-direction}: 40px;
 
     &.is-explore {
-      padding-left: 0 !important;
-      padding-right: 0 !important;
+      padding-#{$start-direction}: 0 !important;
+      padding-#{$end-direction}: 0 !important;
     }
   }
 }
@@ -195,7 +193,7 @@ const props = defineProps<VViewWrapperProps>()
   // Layout
   .view-wrapper {
     width: 100% !important;
-    margin-left: 0 !important;
+    margin-#{$start-direction}: 0 !important;
     margin-top: 60px !important;
   }
 }

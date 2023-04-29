@@ -61,6 +61,8 @@ const isIconify = computed(() => {
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
+
 .snacks {
   display: flex;
   flex-wrap: wrap;
@@ -93,7 +95,7 @@ const isIconify = computed(() => {
     .snack-media {
       height: 32px;
       width: 32px;
-      margin-right: 4px;
+      margin-#{$end-direction}: 4px;
 
       &.is-icon {
         height: 30px;
@@ -141,11 +143,11 @@ const isIconify = computed(() => {
     height: 40px;
     width: 40px;
     display: inline-block;
-    margin-right: 6px;
+    margin-#{$end-direction}: 6px;
 
     &.is-icon {
       position: relative;
-      left: -1px;
+      #{$start-direction}: -1px;
       height: 38px;
       width: 38px;
       background: var(--white);
@@ -297,7 +299,7 @@ const isIconify = computed(() => {
       .snack-icon {
         position: absolute;
         top: 50%;
-        left: 50%;
+        #{$start-direction}: 50%;
         transform: translate(-50%, -50%);
       }
 
@@ -307,7 +309,7 @@ const isIconify = computed(() => {
         stroke-width: 1.6px;
         color: var(--light-text);
         vertical-align: 0 !important;
-        transform: rotate(0) translate(-50%, -50%) !important;
+        transform: rotate($transform-direction * 0) translate(-50%, -50%) !important;
       }
 
       .fas,

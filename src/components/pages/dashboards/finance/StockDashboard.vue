@@ -350,6 +350,7 @@
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .stock-dashboard {
@@ -366,14 +367,14 @@
       position: relative;
       display: flex;
       justify-content: center;
+      align-items: center;
       flex: 0;
-      margin-right: 10px;
 
       &::before {
         content: '';
         width: 36px;
         height: 36px;
-        transform: rotate(0);
+        transform: rotate($transform-direction * 0);
         border-radius: 7px;
       }
 
@@ -417,13 +418,13 @@
       i {
         position: absolute;
         top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        #{$start-direction}: 50%;
+        transform: translate($transform-direction * -50%, -50%);
       }
     }
 
     .stock-info {
-      margin-left: 5px;
+      margin-#{$start-direction}: 10px;
       flex: 1;
       line-height: 1.2;
 
@@ -444,7 +445,7 @@
       flex: 1;
       font-weight: bold;
       color: var(--light-text);
-      text-align: right;
+      text-align: #{$end-direction};
     }
   }
 
@@ -461,7 +462,7 @@
     .dropdown {
       position: absolute;
       top: 10px;
-      right: 10px;
+      #{$end-direction}: 10px;
     }
 
     > svg {
@@ -531,7 +532,7 @@
             height: 46px;
             background-color: var(--white);
             border: 1px solid var(--fade-grey);
-            transform: rotate(45deg);
+            transform: rotate($transform-direction * 45deg);
             border-radius: 10px;
             transition: all 0.3s; // transition-all test
           }
@@ -539,8 +540,8 @@
           i {
             position: absolute;
             top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            #{$start-direction}: 50%;
+            transform: translate($transform-direction * -50%, -50%);
             color: var(--light-text);
             font-size: 18px;
             transition: color 0.3s;

@@ -35,7 +35,7 @@
   }
 
   .multiselect-caret {
-    margin-right: 0.85rem;
+    margin-#{$end-direction}: 0.85rem;
   }
 
   .multiselect-dropdown {
@@ -77,7 +77,7 @@
   .multiselect-multiple-label {
     font-size: 0.9rem;
     color: var(--light-text);
-    padding-left: 1rem;
+    padding-#{$start-direction}: 1rem;
   }
 
   .multiselect-tags {
@@ -90,7 +90,7 @@
       color: var(--dark-text);
 
       i {
-        padding-right: 4px;
+        padding-#{$end-direction}: 4px;
 
         &::before {
           color: var(--light-text);
@@ -142,7 +142,7 @@
         &::after {
           position: absolute;
           top: 12px;
-          right: 15px;
+          #{$end-direction}: 15px;
           content: '\f00c';
           font-family: 'Font Awesome 5 Free';
           font-weight: 900;
@@ -274,7 +274,7 @@
       border-radius: 500px;
 
       &::before {
-        right: 20px;
+        #{$end-direction}: 20px;
       }
 
       .multiselect-tags {
@@ -354,19 +354,19 @@
   .multiselect {
     .multiselect-input {
       .multiselect-single-label {
-        padding-left: 6px;
+        padding-#{$start-direction}: 6px;
       }
     }
 
     .select-option-icon {
-      margin: 0 6px 0 0;
+      margin-#{$end-direction}: 6px;
       height: 22px;
       min-width: 22px;
       border-radius: 0.15rem;
     }
 
     .select-option-icon-wrap {
-      margin: 0 6px 0 0;
+      margin-#{$end-direction}: 6px;
       height: 22px;
       min-width: 22px;
       border-radius: 0.15rem;
@@ -387,14 +387,14 @@
     }
 
     .select-label-icon {
-      margin: 0 6px 0 0;
+      margin-#{$end-direction}: 6px;
       height: 26px;
       min-width: 26px;
       border-radius: 0.15rem;
     }
 
     .select-label-icon-wrap {
-      margin: 0 6px 0 0;
+      margin-#{$end-direction}: 6px;
       height: 26px;
       min-width: 26px;
       display: flex;
@@ -435,7 +435,7 @@
         &.is-icon {
           border-radius: var(--radius);
 
-          // padding-left: 4px;
+          // padding-#{$start-direction}: 4px;
 
           img {
             border-radius: 0.25rem;
@@ -453,7 +453,7 @@
         &.is-icon {
           border-radius: 0.45rem;
 
-          // padding-left: 4px;
+          // padding-#{$start-direction}: 4px;
 
           img {
             border-radius: 0.5rem;
@@ -473,7 +473,7 @@
         &.is-user,
         &.is-image,
         &.is-icon {
-          // padding-left: 4px;
+          // padding-#{$start-direction}: 4px;
         }
       }
     }
@@ -484,7 +484,7 @@
       .multiselect {
         .multiselect-tags > span {
           &:not(:first-child) {
-            margin-left: -12px !important;
+            margin-#{$start-direction}: -12px !important;
           }
         }
       }
@@ -494,8 +494,8 @@
       .multiselect-tag {
         padding: 0 !important;
         background: none !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
+        margin-#{$start-direction}: 0 !important;
+        margin-#{$end-direction}: 0 !important;
 
         &:hover,
         &:focus {
@@ -513,7 +513,7 @@
         i::before {
           position: absolute;
           top: -2px;
-          right: 0;
+          #{$end-direction}: 0;
           background: var(--white);
           height: 14px;
           width: 14px;
@@ -532,7 +532,7 @@
 
   .multiselect {
     .multiselect-tags {
-      padding-left: 4px;
+      padding-#{$start-direction}: 4px;
     }
 
     .multiselect-tag {
@@ -549,7 +549,7 @@
           min-width: 26px;
           border-radius: var(--radius-rounded);
           height: 26px;
-          margin-right: 8px;
+          margin-#{$end-direction}: 8px;
           margin-top: 2px;
           margin-bottom: 2px;
         }
@@ -557,7 +557,7 @@
         i::before {
           color: var(--light-text);
           border-radius: var(--radius-rounded);
-          margin-left: 0.5rem;
+          margin-#{$start-direction}: 0.5rem;
           padding: 0;
           display: flex;
           justify-content: center;
@@ -578,11 +578,11 @@
   .multiselect {
     .multiselect-single-label,
     .multiselect-placeholder {
-      padding-left: 40px !important;
+      padding-#{$start-direction}: 40px !important;
     }
 
     .multiselect-search {
-      padding-left: 40px !important;
+      padding-#{$start-direction}: 40px !important;
     }
   }
 }

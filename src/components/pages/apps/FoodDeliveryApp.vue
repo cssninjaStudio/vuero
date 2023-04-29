@@ -92,10 +92,12 @@ onUnmounted(() => {
 
           <div class="food-pills">
             <div ref="prevButtonElement" class="slick-custom is-prev slick-arrow">
-              <i aria-hidden="true" class="fas fa-angle-left"></i>
+              <i aria-hidden="true" class="fas fa-angle-left rtl-hidden"></i>
+              <i aria-hidden="true" class="fas fa-angle-right ltr-hidden"></i>
             </div>
             <div ref="nextButtonElement" class="slick-custom is-next slick-arrow">
-              <i aria-hidden="true" class="fas fa-angle-right"></i>
+              <i aria-hidden="true" class="fas fa-angle-right rtl-hidden"></i>
+              <i aria-hidden="true" class="fas fa-angle-left ltr-hidden"></i>
             </div>
             <div ref="sliderElement" class="food-pills-inner pill-carousel">
               <!--Pills Loop-->
@@ -344,6 +346,7 @@ onUnmounted(() => {
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .food-delivery-dashboard {
@@ -383,13 +386,13 @@ onUnmounted(() => {
         img {
           position: absolute;
           top: -40px;
-          left: -30px;
+          #{$start-direction}: -30px;
           display: block;
         }
       }
 
       .header-meta {
-        margin-left: 0;
+        margin-#{$start-direction}: 0;
         margin-bottom: 20px;
 
         h3 {
@@ -408,7 +411,7 @@ onUnmounted(() => {
           span {
             font-size: 0.8rem;
             text-transform: uppercase;
-            margin-right: 6px;
+            margin-#{$end-direction}: 6px;
           }
 
           i {
@@ -537,20 +540,20 @@ onUnmounted(() => {
           z-index: 25;
 
           &.is-prev {
-            right: 30px;
+            #{$end-direction}: 30px;
 
             i {
               position: relative;
-              left: -1px;
+              #{$start-direction}: -1px;
             }
           }
 
           &.is-next {
-            right: 0;
+            #{$end-direction}: 0;
 
             i {
               position: relative;
-              right: -1px;
+              #{$end-direction}: -1px;
             }
           }
 
@@ -595,7 +598,7 @@ onUnmounted(() => {
             .timer {
               position: absolute;
               bottom: 10px;
-              left: 10px;
+              #{$start-direction}: 10px;
               display: flex;
               justify-content: center;
               align-items: center;
@@ -651,7 +654,7 @@ onUnmounted(() => {
             }
 
             .meta-content {
-              margin-left: 8px;
+              margin-#{$start-direction}: 8px;
               font-family: var(--font);
               line-height: 1.3;
 
@@ -691,7 +694,7 @@ onUnmounted(() => {
 
   > .right {
     width: 30%;
-    padding: 0 0 0 20px;
+    padding-#{$start-direction}: 20px;
 
     .sticky-panel {
       position: fixed;
@@ -937,7 +940,7 @@ onUnmounted(() => {
       margin: 8px 0;
 
       .meta {
-        margin-left: 12px;
+        margin-#{$start-direction}: 12px;
         display: flex;
         flex-direction: column;
 
@@ -1006,7 +1009,7 @@ onUnmounted(() => {
 
         .header-image {
           img {
-            left: 0;
+            #{$start-direction}: 0;
           }
         }
       }

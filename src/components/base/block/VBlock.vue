@@ -43,6 +43,8 @@ const props = withDefaults(defineProps<VBlockProps>(), {
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
+
 .media-flex {
   display: flex;
   margin-bottom: 1rem;
@@ -54,7 +56,7 @@ const props = withDefaults(defineProps<VBlockProps>(), {
   }
 
   .flex-meta {
-    margin-left: 12px;
+    margin-#{$start-direction}: 12px;
     line-height: 1.3;
 
     &.is-lighter {
@@ -98,12 +100,12 @@ const props = withDefaults(defineProps<VBlockProps>(), {
   }
 
   .flex-end {
-    margin-left: auto;
+    margin-#{$start-direction}: auto;
     display: flex;
     justify-content: flex-end;
 
     .end-action {
-      margin-left: 1rem;
+      margin-#{$start-direction}: 1rem;
     }
   }
 }
@@ -120,7 +122,7 @@ const props = withDefaults(defineProps<VBlockProps>(), {
   }
 
   .flex-meta {
-    margin-left: 12px;
+    margin-#{$start-direction}: 12px;
     line-height: 1.4;
 
     &.is-lighter {
@@ -165,13 +167,13 @@ const props = withDefaults(defineProps<VBlockProps>(), {
   }
 
   .flex-end {
-    margin-left: auto;
+    margin-#{$start-direction}: auto;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 
     .end-action {
-      margin-left: 1rem;
+      margin-#{$start-direction}: 1rem;
     }
   }
 }
@@ -214,7 +216,7 @@ const props = withDefaults(defineProps<VBlockProps>(), {
         margin: 10px auto;
 
         .end-action {
-          margin-left: 0;
+          margin-#{$start-direction}: 0;
         }
 
         .button {
@@ -245,7 +247,7 @@ const props = withDefaults(defineProps<VBlockProps>(), {
         margin: 10px auto;
 
         .end-action {
-          margin-left: 0;
+          margin-#{$start-direction}: 0;
         }
 
         .button {
@@ -276,7 +278,7 @@ const props = withDefaults(defineProps<VBlockProps>(), {
         margin: 10px auto;
 
         .end-action {
-          margin-left: 0;
+          margin-#{$start-direction}: 0;
         }
 
         .button {

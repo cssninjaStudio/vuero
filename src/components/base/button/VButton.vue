@@ -197,7 +197,7 @@ export default defineComponent({
         iconWrapper = h('span', { class: 'icon' }, icon)
       } else if (props.icon) {
         const icon = h('i', { 'aria-hidden': true, class: props.icon })
-        iconWrapper = h('span', { class: 'icon' }, icon)
+        iconWrapper = h('span', { class: 'icon rtl-reflect' }, icon)
       }
 
       let caretWrapper

@@ -5,9 +5,7 @@
 </template>
 
 <style lang="scss">
-/* ==========================================================================
-3. Chat body
-========================================================================== */
+@import '/@src/scss/abstracts/ltr';
 
 .chat-body {
   position: relative;
@@ -138,7 +136,7 @@
       order: 1;
       min-width: 230px;
       max-width: 40%;
-      margin-left: 20px;
+      margin-#{$start-direction}: 20px;
 
       p {
         font-size: 0.9rem;
@@ -148,14 +146,15 @@
       .msg-inner {
         background: var(--white);
         color: var(--dark-text);
-        border-radius: 0 12px 12px;
+        border-radius: 12px;
+        border-top-#{$start-direction}-radius: 0;
         padding: 16px;
         position: relative;
       }
 
       time {
         display: block;
-        text-align: right;
+        text-align: #{$end-direction};
         font-size: 0.8rem;
         color: var(--light-text);
         margin-top: 3px;
@@ -169,7 +168,7 @@
           height: 10px;
           width: 10px;
           color: var(--white);
-          margin-left: 3px;
+          margin-#{$start-direction}: 3px;
         }
       }
 
@@ -190,7 +189,7 @@
 
     .msg {
       order: 1;
-      margin-right: 20px;
+      margin-#{$end-direction}: 20px;
       min-width: 230px;
       max-width: 40%;
       position: relative;
@@ -198,7 +197,8 @@
       .msg-inner {
         background: #e6e5ed;
         color: var(--dark-text);
-        border-radius: 12px 0 12px 12px;
+        border-radius: 12px;
+        border-top-#{$end-direction}-radius: 0;
         padding: 12px;
       }
 
@@ -208,7 +208,7 @@
 
       time {
         display: block;
-        text-align: left;
+        text-align: #{$start-direction};
         font-size: 0.8rem;
         color: var(--light-text);
         margin-top: 3px;
@@ -222,7 +222,7 @@
           height: 10px;
           width: 10px;
           color: var(--dark-text);
-          margin-right: 3px;
+          margin-#{$end-direction}: 3px;
         }
       }
 
@@ -251,8 +251,8 @@
     height: 50%;
     position: absolute;
     top: 50%;
-    left: 0;
-    right: 0;
+    #{$start-direction}: 0;
+    #{$end-direction}: 0;
     bottom: 0;
     margin: 0 auto;
     text-align: center;
@@ -279,8 +279,8 @@
 
   .chat-loader {
     position: fixed;
-    left: 0;
-    right: 0;
+    #{$start-direction}: 0;
+    #{$end-direction}: 0;
     bottom: 0;
     margin: 0 auto;
     display: flex;

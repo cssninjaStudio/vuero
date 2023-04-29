@@ -32,7 +32,16 @@ const activeTab = ref<TabId>('team')
           @keydown.space.prevent="panels.close()"
           @click="panels.close()"
         >
-          <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right"></i>
+          <i
+            aria-hidden="true"
+            class="iconify rtl-hidden"
+            data-icon="feather:chevron-right"
+          />
+          <i
+            aria-hidden="true"
+            class="iconify ltr-hidden"
+            data-icon="feather:chevron-left"
+          />
         </a>
       </div>
       <div class="tabs-wrapper is-triple-slider is-squared">
@@ -92,7 +101,16 @@ const activeTab = ref<TabId>('team')
                 </span>
               </div>
               <a class="link">
-                <i aria-hidden="true" class="iconify" data-icon="feather:arrow-right"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify rtl-hidden"
+                  data-icon="feather:arrow-right"
+                ></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify ltr-hidden"
+                  data-icon="feather:arrow-left"
+                ></i>
               </a>
             </div>
 
@@ -111,7 +129,16 @@ const activeTab = ref<TabId>('team')
                 </span>
               </div>
               <a class="link">
-                <i aria-hidden="true" class="iconify" data-icon="feather:arrow-right"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify rtl-hidden"
+                  data-icon="feather:arrow-right"
+                ></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify ltr-hidden"
+                  data-icon="feather:arrow-left"
+                ></i>
               </a>
             </div>
 
@@ -130,7 +157,16 @@ const activeTab = ref<TabId>('team')
                 </span>
               </div>
               <a class="link">
-                <i aria-hidden="true" class="iconify" data-icon="feather:arrow-right"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify rtl-hidden"
+                  data-icon="feather:arrow-right"
+                ></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify ltr-hidden"
+                  data-icon="feather:arrow-left"
+                ></i>
               </a>
             </div>
 
@@ -149,7 +185,16 @@ const activeTab = ref<TabId>('team')
                 </span>
               </div>
               <a class="link">
-                <i aria-hidden="true" class="iconify" data-icon="feather:arrow-right"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify rtl-hidden"
+                  data-icon="feather:arrow-right"
+                ></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify ltr-hidden"
+                  data-icon="feather:arrow-left"
+                ></i>
               </a>
             </div>
           </div>
@@ -175,8 +220,13 @@ const activeTab = ref<TabId>('team')
                 <a class="link">
                   <i
                     aria-hidden="true"
-                    class="iconify"
+                    class="iconify rtl-hidden"
                     data-icon="feather:arrow-right"
+                  ></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify ltr-hidden"
+                    data-icon="feather:arrow-left"
                   ></i>
                 </a>
               </div>
@@ -210,8 +260,13 @@ const activeTab = ref<TabId>('team')
                 <a class="link">
                   <i
                     aria-hidden="true"
-                    class="iconify"
+                    class="iconify rtl-hidden"
                     data-icon="feather:arrow-right"
+                  ></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify ltr-hidden"
+                    data-icon="feather:arrow-left"
                   ></i>
                 </a>
               </div>
@@ -244,8 +299,13 @@ const activeTab = ref<TabId>('team')
                 <a class="link">
                   <i
                     aria-hidden="true"
-                    class="iconify"
+                    class="iconify rtl-hidden"
                     data-icon="feather:arrow-right"
+                  ></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify ltr-hidden"
+                    data-icon="feather:arrow-left"
                   ></i>
                 </a>
               </div>
@@ -366,6 +426,7 @@ const activeTab = ref<TabId>('team')
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .right-panel-wrapper {
@@ -388,7 +449,7 @@ const activeTab = ref<TabId>('team')
           margin-bottom: 16px;
 
           .meta {
-            margin-left: 12px;
+            margin-#{$start-direction}: 12px;
 
             span {
               display: block;
@@ -415,7 +476,7 @@ const activeTab = ref<TabId>('team')
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-left: auto;
+            margin-#{$start-direction}: auto;
             height: 34px;
             width: 34px;
             background: var(--white);
@@ -458,7 +519,7 @@ const activeTab = ref<TabId>('team')
             }
 
             .meta {
-              margin-left: 12px;
+              margin-#{$start-direction}: 12px;
 
               span {
                 display: block;
@@ -482,7 +543,7 @@ const activeTab = ref<TabId>('team')
               display: flex;
               justify-content: center;
               align-items: center;
-              margin-left: auto;
+              margin-#{$start-direction}: auto;
               height: 34px;
               width: 34px;
               background: var(--white);
@@ -542,10 +603,10 @@ const activeTab = ref<TabId>('team')
               content: '';
               position: absolute;
               top: 36px;
-              left: 18px;
+              #{$start-direction}: 18px;
               width: 1px;
               height: calc(100% - 36px);
-              border-left: 1px solid var(--fade-grey-dark-3);
+              border-#{$start-direction}: 1px solid var(--fade-grey-dark-3);
             }
 
             .timeline-icon {
@@ -565,7 +626,7 @@ const activeTab = ref<TabId>('team')
                 content: '';
                 position: absolute;
                 top: 17px;
-                left: 40px;
+                #{$start-direction}: 40px;
                 width: 20px;
                 height: 1px;
                 border-top: 1px solid var(--fade-grey-dark-3);
@@ -586,7 +647,7 @@ const activeTab = ref<TabId>('team')
             }
 
             .timeline-content {
-              margin-left: 34px;
+              margin-#{$start-direction}: 34px;
               line-height: 1.2;
 
               p {
@@ -608,8 +669,8 @@ const activeTab = ref<TabId>('team')
 
         .tabs-inner {
           .tabs {
-            margin-left: auto;
-            margin-right: auto;
+            margin-#{$start-direction}: auto;
+            margin-#{$end-direction}: auto;
           }
         }
       }

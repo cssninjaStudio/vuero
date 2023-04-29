@@ -27,7 +27,8 @@
 
       .dark,
       .light {
-        transform: translateX(100%) rotate(360deg);
+        transform: translateX($transform-direction * 100%)
+          rotate($transform-direction * 360deg);
       }
 
       .dark {
@@ -53,7 +54,7 @@
     .light {
       position: absolute;
       top: 2px;
-      left: 2px;
+      #{$start-direction}: 2px;
       height: 22px;
       width: 22px;
       border-radius: var(--radius-rounded);
@@ -61,7 +62,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      transform: translateX(0) rotate(0);
+      transform: translateX($transform-direction * 0) rotate($transform-direction * 0);
       transition: all 0.3s ease;
 
       svg {
@@ -105,7 +106,7 @@
     border-radius: var(--radius-rounded);
     cursor: pointer;
     height: 28px;
-    left: 0;
+    #{$start-direction}: 0;
     position: absolute;
     top: 0;
     width: 28px;
@@ -113,14 +114,14 @@
     &::after {
       border: 2px solid var(--white);
       border-top: none;
-      border-right: none;
+      border-#{$end-direction}: none;
       content: '';
       height: 6px;
-      left: 7px;
+      #{$start-direction}: 7px;
       opacity: 0;
       position: absolute;
       top: 8px;
-      transform: rotate(-45deg);
+      transform: rotate($transform-direction * -45deg);
       width: 12px;
     }
   }
@@ -145,11 +146,11 @@
       width: 20px;
 
       &::after {
-        left: 4px;
+        #{$start-direction}: 4px;
         top: 5px;
         width: 11px;
         height: 6px;
-        transform: rotate(-45deg) scale(0.8);
+        transform: rotate($transform-direction * -45deg) scale(0.8);
       }
     }
 

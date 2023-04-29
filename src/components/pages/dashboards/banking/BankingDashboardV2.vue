@@ -240,7 +240,7 @@ const goto = (index: number) => {
                     <div class="stat-icon is-up">
                       <i
                         aria-hidden="true"
-                        class="iconify"
+                        class="iconify rtl-reflect"
                         data-icon="feather:arrow-right"
                       ></i>
                     </div>
@@ -257,7 +257,7 @@ const goto = (index: number) => {
                     <div class="stat-icon is-down">
                       <i
                         aria-hidden="true"
-                        class="iconify"
+                        class="iconify rtl-reflect"
                         data-icon="feather:arrow-right"
                       ></i>
                     </div>
@@ -386,6 +386,7 @@ const goto = (index: number) => {
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .banking-dashboard-v2 {
@@ -406,7 +407,7 @@ const goto = (index: number) => {
         .column {
           &:first-child {
             .inner-box {
-              border-right: 1px solid var(--fade-grey-dark-3);
+              border-#{$end-direction}: 1px solid var(--fade-grey-dark-3);
             }
           }
         }
@@ -437,9 +438,9 @@ const goto = (index: number) => {
           .field {
             position: absolute;
             top: -7px;
-            right: 0;
+            #{$end-direction}: 0;
             z-index: 5;
-            min-width: 135px;
+            min-width: 160px;
 
             .multiselect {
               .multiselect-input {
@@ -449,7 +450,7 @@ const goto = (index: number) => {
               }
 
               .multiselect-options {
-                left: unset !important;
+                #{$start-direction}: unset !important;
                 min-width: 180px;
               }
             }
@@ -460,7 +461,7 @@ const goto = (index: number) => {
           display: flex;
 
           .controls {
-            margin-right: 1.5rem;
+            margin-#{$end-direction}: 1.5rem;
 
             .button {
               .icon {
@@ -476,10 +477,10 @@ const goto = (index: number) => {
             max-width: 520px;
 
             .tns-nav {
-              text-align: right;
+              text-align: #{$end-direction};
               position: absolute;
               top: 0;
-              right: 15px;
+              #{$end-direction}: 15px;
               height: auto;
               max-height: 30px;
               width: auto;
@@ -559,7 +560,7 @@ const goto = (index: number) => {
                   .shape {
                     position: absolute;
                     bottom: -10px;
-                    right: -10px;
+                    #{$end-direction}: -10px;
                     height: 70px;
                     width: 70px;
                     background: var(--white);
@@ -614,7 +615,7 @@ const goto = (index: number) => {
           .card-balance {
             span {
               display: block;
-              color: var(--primary);
+              color: var(--title-text);
 
               &:first-child {
                 font-weight: 700;
@@ -655,7 +656,7 @@ const goto = (index: number) => {
                   background: var(--fade-grey-light-2);
 
                   &.is-up {
-                    transform: rotate(-45deg);
+                    transform: rotate($transform-direction * -45deg);
 
                     svg {
                       color: var(--green);
@@ -663,7 +664,7 @@ const goto = (index: number) => {
                   }
 
                   &.is-down {
-                    transform: rotate(45deg);
+                    transform: rotate($transform-direction * 45deg);
 
                     svg {
                       color: var(--red);
@@ -678,7 +679,7 @@ const goto = (index: number) => {
                 }
 
                 .stat-text {
-                  margin-left: 12px;
+                  margin-#{$start-direction}: 12px;
                   font-family: var(--font);
                   font-weight: 600;
                   font-size: 1.1rem;
@@ -730,12 +731,12 @@ const goto = (index: number) => {
 
         .chart-wrapper {
           position: relative;
-          padding-right: 30px;
+          padding-#{$end-direction}: 30px;
 
           .action-link {
             position: absolute;
             top: -42px;
-            right: 45px;
+            #{$end-direction}: 45px;
           }
         }
 
@@ -840,7 +841,7 @@ const goto = (index: number) => {
           .card-balance-wrap {
             .card-balance {
               span {
-                color: var(--primary);
+                color: var(--white);
               }
             }
 
@@ -883,7 +884,7 @@ const goto = (index: number) => {
         padding: 10px;
 
         .inner-box {
-          border-right: none !important;
+          border-#{$end-direction}: none !important;
 
           .cards-wrapper {
             position: relative;
@@ -892,8 +893,8 @@ const goto = (index: number) => {
             .controls {
               position: absolute;
               top: -68px;
-              right: -8px;
-              margin-right: 0;
+              #{$end-direction}: -8px;
+              margin-#{$end-direction}: 0;
             }
           }
 
@@ -908,11 +909,11 @@ const goto = (index: number) => {
           }
 
           .chart-wrapper {
-            padding-right: 0;
+            padding-#{$end-direction}: 0;
 
             .action-link {
               top: -45px;
-              right: 0;
+              #{$end-direction}: 0;
             }
           }
         }
@@ -932,7 +933,7 @@ const goto = (index: number) => {
     .dashboard-card {
       &.is-card-panel {
         .inner-box {
-          border-right: none !important;
+          border-#{$end-direction}: none !important;
 
           .card-balance-wrap {
             .card-balance {
@@ -945,11 +946,11 @@ const goto = (index: number) => {
           }
 
           .chart-wrapper {
-            padding-right: 0;
+            padding-#{$end-direction}: 0;
 
             .action-link {
               top: -45px;
-              right: 0;
+              #{$end-direction}: 0;
             }
           }
         }
@@ -964,7 +965,7 @@ const goto = (index: number) => {
       &.is-card-panel {
         .inner-box {
           .cards-carousel {
-            margin-left: 30px;
+            margin-#{$start-direction}: 30px;
             max-width: 400px !important;
 
             .cards-carousel-inner {

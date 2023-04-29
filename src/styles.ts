@@ -17,3 +17,4 @@ import 'tippy.js/dist/backdrop.css'
 import 'tippy.js/themes/light.css'
 
 import './scss/main.scss'
+// import './scss/main-rtl.scss' // import this stylesheet for RTL support, comment out the line above

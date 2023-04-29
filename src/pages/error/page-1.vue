@@ -48,6 +48,8 @@ useHead({
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
+
 .error-container {
   width: 100vw;
   min-height: 100vh;
@@ -55,7 +57,7 @@ useHead({
   .error-nav {
     .dark-mode {
       position: absolute;
-      right: 0;
+      #{$end-direction}: 0;
       top: 0;
       display: inline-block;
       transform: scale(0.5);
@@ -76,8 +78,8 @@ useHead({
         font-family: var(--font);
         position: absolute;
         top: -58px;
-        left: -50px;
-        right: 0;
+        #{$start-direction}: -50px;
+        #{$end-direction}: 0;
         margin: 0 auto;
         font-size: 28rem;
         font-weight: 600;
@@ -147,8 +149,8 @@ useHead({
 
         .bg-number {
           top: -35px;
-          left: -18px;
-          right: 0;
+          #{$start-direction}: -18px;
+          #{$end-direction}: 0;
           font-size: 13rem;
         }
 

@@ -40,6 +40,8 @@ const props = withDefaults(
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
+
 .stat-widget {
   &.table-widget-v1 {
     .table {
@@ -85,7 +87,7 @@ const props = withDefaults(
           }
 
           .rating-wrap {
-            text-align: right;
+            text-align: #{$end-direction};
 
             span {
               color: var(--light-text);
@@ -103,7 +105,7 @@ const props = withDefaults(
           }
 
           .tag-wrap {
-            text-align: right;
+            text-align: #{$end-direction};
           }
         }
       }

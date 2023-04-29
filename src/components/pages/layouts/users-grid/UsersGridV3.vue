@@ -140,12 +140,13 @@ const filteredData = computed(() => {
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .user-grid-v3 {
   .columns {
-    margin-left: -0.5rem !important;
-    margin-right: -0.5rem !important;
+    margin-#{$start-direction}: -0.5rem !important;
+    margin-#{$end-direction}: -0.5rem !important;
     margin-top: -0.5rem !important;
   }
 
@@ -208,22 +209,22 @@ const filteredData = computed(() => {
 
             &:first-child {
               &.is-active ~ .icon-tabs-naver {
-                margin-left: 0;
+                margin-#{$start-direction}: 0;
               }
             }
 
             &:nth-child(2) {
-              border-left: 1px solid var(--fade-grey-dark-4);
-              border-right: 1px solid var(--fade-grey-dark-4);
+              border-#{$start-direction}: 1px solid var(--fade-grey-dark-4);
+              border-#{$end-direction}: 1px solid var(--fade-grey-dark-4);
 
               &.is-active ~ .icon-tabs-naver {
-                margin-left: 33% !important;
+                margin-#{$start-direction}: 33% !important;
               }
             }
 
             &:nth-child(3) {
               &.is-active ~ .icon-tabs-naver {
-                margin-left: 66.6%;
+                margin-#{$start-direction}: 66.6%;
               }
             }
 
@@ -238,7 +239,7 @@ const filteredData = computed(() => {
           .icon-tabs-naver {
             position: absolute;
             bottom: -1px;
-            left: 0;
+            #{$start-direction}: 0;
             display: block;
             width: 33.3% !important;
             height: 2px;

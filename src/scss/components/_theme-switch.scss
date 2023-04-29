@@ -32,7 +32,7 @@ $dayBtn: #ffb62e;
       height: 36px;
       position: relative;
       box-shadow: inset 16px -16px 0 0 $nightBtn;
-      transform: scale(1) rotate(-2deg);
+      transform: scaleY(1) rotate(-2deg);
       transition: box-shadow 0.5s ease 0s, transform 0.4s ease 0.1s;
 
       &::before {
@@ -41,7 +41,7 @@ $dayBtn: #ffb62e;
         height: inherit;
         border-radius: inherit;
         position: absolute;
-        left: 0;
+        #{$start-direction}: 0;
         top: 0;
         backface-visibility: hidden;
         transition: background-color 0.3s ease;
@@ -52,10 +52,11 @@ $dayBtn: #ffb62e;
         width: 8px;
         height: 8px;
         border-radius: var(--radius-rounded);
-        margin: -4px 0 0 -4px;
+        margin-top: -4px;
+        margin-#{$start-direction}: -4px;
         position: absolute;
         top: 50%;
-        left: 50%;
+        #{$start-direction}: 50%;
         box-shadow: 0 -23px 0 $dayBtn, 0 23px 0 $dayBtn, 23px 0 0 $dayBtn,
           -23px 0 0 $dayBtn, 15px 15px 0 $dayBtn, -15px 15px 0 $dayBtn,
           15px -15px 0 $dayBtn, -15px -15px 0 $dayBtn;

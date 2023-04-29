@@ -19,6 +19,8 @@ const layoutSwitcher = useLayoutSwitcher()
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
+
 .demo-s-card,
 .demo-r-card,
 .demo-l-card {
@@ -95,7 +97,7 @@ const layoutSwitcher = useLayoutSwitcher()
       position: static;
 
       .navbar-end {
-        margin-right: -28px;
+        margin-#{$end-direction}: -28px;
       }
     }
   }

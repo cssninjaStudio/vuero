@@ -75,6 +75,7 @@ const filters = ref('')
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .list-view-v1 {
@@ -89,7 +90,7 @@ const filters = ref('')
       align-items: center;
 
       .meta-left {
-        margin-left: 16px;
+        margin-#{$start-direction}: 16px;
 
         h3 {
           font-family: var(--font-alt);
@@ -111,13 +112,13 @@ const filters = ref('')
       }
 
       .meta-right {
-        margin-left: auto;
+        margin-#{$start-direction}: auto;
         display: flex;
         justify-content: flex-end;
         align-items: center;
 
         .tags {
-          margin-right: 30px;
+          margin-#{$end-direction}: 30px;
           margin-bottom: 0;
 
           .tag {
@@ -128,7 +129,7 @@ const filters = ref('')
         .stats {
           display: flex;
           align-items: center;
-          margin-right: 30px;
+          margin-#{$end-direction}: 30px;
 
           .stat {
             display: flex;
@@ -167,7 +168,7 @@ const filters = ref('')
           .separator {
             height: 25px;
             width: 2px;
-            border-right: 1px solid var(--fade-grey-dark-3);
+            border-#{$end-direction}: 1px solid var(--fade-grey-dark-3);
             margin: 0 16px;
           }
         }
@@ -182,12 +183,12 @@ const filters = ref('')
             font-family: var(--font);
             font-size: 0.9rem;
             color: var(--light-text);
-            margin-left: 6px;
+            margin-#{$start-direction}: 6px;
           }
         }
 
         .dropdown {
-          margin-left: 30px;
+          margin-#{$start-direction}: 30px;
         }
       }
     }
@@ -238,12 +239,12 @@ const filters = ref('')
         }
 
         .meta-left {
-          margin-left: 0;
+          margin-#{$start-direction}: 0;
         }
 
         .meta-right {
           flex-direction: column;
-          margin-left: 0;
+          margin-#{$start-direction}: 0;
 
           .tags {
             margin: 10px 0;
@@ -265,8 +266,8 @@ const filters = ref('')
           .dropdown {
             position: absolute;
             top: 0;
-            right: 0;
-            margin-left: 0;
+            #{$end-direction}: 0;
+            margin-#{$start-direction}: 0;
           }
         }
       }
@@ -292,12 +293,12 @@ const filters = ref('')
         }
 
         .meta-left {
-          margin-left: 0;
+          margin-#{$start-direction}: 0;
         }
 
         .meta-right {
           flex-direction: column;
-          margin-left: 0;
+          margin-#{$start-direction}: 0;
 
           .tags {
             margin: 10px 0;
@@ -319,8 +320,8 @@ const filters = ref('')
           .dropdown {
             position: absolute;
             top: 0;
-            right: 0;
-            margin-left: 0;
+            #{$end-direction}: 0;
+            margin-#{$start-direction}: 0;
           }
         }
       }

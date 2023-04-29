@@ -25,7 +25,7 @@
     }
 
     .item-meta {
-      margin-left: 1rem;
+      margin-#{$start-direction}: 1rem;
 
       span {
         display: block;
@@ -72,7 +72,8 @@
 
       .active,
       .inactive {
-        transform: translateX(80%) rotate(360deg);
+        transform: translateX($transform-direction * 80%)
+          rotate($transform-direction * 360deg);
       }
 
       .active {
@@ -98,7 +99,7 @@
     .inactive {
       position: absolute;
       top: -14px;
-      left: -10px;
+      #{$start-direction}: -10px;
       height: 40px;
       width: 40px;
       border-radius: var(--radius-rounded);
@@ -108,7 +109,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      transform: translateX(0) rotate(0);
+      transform: translateX($transform-direction * 0) rotate($transform-direction * 0);
       transition: all 0.3s ease;
 
       i {

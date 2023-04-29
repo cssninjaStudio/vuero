@@ -224,7 +224,16 @@ watch(
                 <i class="iconify" data-icon="feather:briefcase"></i>
               </div>
               Reports
-              <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right"></i>
+              <i
+                aria-hidden="true"
+                class="iconify rtl-hidden"
+                data-icon="feather:chevron-right"
+              />
+              <i
+                aria-hidden="true"
+                class="iconify ltr-hidden"
+                data-icon="feather:chevron-left"
+              />
             </template>
             <RouterLink to="/sidebar/dashboards/analytics" class="is-submenu">
               <i class="lnil lnil-analytics-alt-1"></i>
@@ -255,7 +264,16 @@ watch(
                 <i aria-hidden="true" class="iconify" data-icon="feather:settings"></i>
               </div>
               Settings
-              <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right"></i>
+              <i
+                aria-hidden="true"
+                class="iconify rtl-hidden"
+                data-icon="feather:chevron-right"
+              />
+              <i
+                aria-hidden="true"
+                class="iconify ltr-hidden"
+                data-icon="feather:chevron-left"
+              />
             </template>
             <RouterLink to="/sidebar/layouts" class="is-submenu">
               <i class="lnil lnil-home"></i>
@@ -277,7 +295,16 @@ watch(
                 <i aria-hidden="true" class="iconify" data-icon="feather:zap"></i>
               </div>
               Starters
-              <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+              <i
+                aria-hidden="true"
+                class="iconify rtl-hidden"
+                data-icon="feather:chevron-right"
+              />
+              <i
+                aria-hidden="true"
+                class="iconify ltr-hidden"
+                data-icon="feather:chevron-left"
+              />
             </template>
 
             <RouterLink to="/starters/sidebar-blank-page-1" class="is-submenu">

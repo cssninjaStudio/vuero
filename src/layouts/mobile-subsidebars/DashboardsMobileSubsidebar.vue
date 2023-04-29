@@ -9,7 +9,16 @@
         <VCollapseLinks>
           <template #header>
             Personal
-            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+            <i
+              aria-hidden="true"
+              class="iconify rtl-hidden"
+              data-icon="feather:chevron-right"
+            />
+            <i
+              aria-hidden="true"
+              class="iconify ltr-hidden"
+              data-icon="feather:chevron-left"
+            />
           </template>
 
           <RouterLink to="/sidebar/dashboards" class="is-submenu">
@@ -29,7 +38,16 @@
         <VCollapseLinks>
           <template #header>
             Finance
-            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+            <i
+              aria-hidden="true"
+              class="iconify rtl-hidden"
+              data-icon="feather:chevron-right"
+            />
+            <i
+              aria-hidden="true"
+              class="iconify ltr-hidden"
+              data-icon="feather:chevron-left"
+            />
           </template>
 
           <RouterLink to="/sidebar/dashboards/analytics" class="is-submenu">
@@ -49,7 +67,16 @@
         <VCollapseLinks>
           <template #header>
             Banking
-            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+            <i
+              aria-hidden="true"
+              class="iconify rtl-hidden"
+              data-icon="feather:chevron-right"
+            />
+            <i
+              aria-hidden="true"
+              class="iconify ltr-hidden"
+              data-icon="feather:chevron-left"
+            />
           </template>
 
           <RouterLink to="/sidebar/dashboards/banking-1" class="is-submenu">
@@ -73,7 +100,16 @@
         <VCollapseLinks>
           <template #header>
             Business
-            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+            <i
+              aria-hidden="true"
+              class="iconify rtl-hidden"
+              data-icon="feather:chevron-right"
+            />
+            <i
+              aria-hidden="true"
+              class="iconify ltr-hidden"
+              data-icon="feather:chevron-left"
+            />
           </template>
 
           <RouterLink to="/sidebar/dashboards/flights" class="is-submenu">
@@ -101,7 +137,16 @@
         <VCollapseLinks>
           <template #header>
             Lifestyle
-            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+            <i
+              aria-hidden="true"
+              class="iconify rtl-hidden"
+              data-icon="feather:chevron-right"
+            />
+            <i
+              aria-hidden="true"
+              class="iconify ltr-hidden"
+              data-icon="feather:chevron-left"
+            />
           </template>
 
           <RouterLink to="/sidebar/dashboards/influencer" class="is-submenu">
@@ -132,7 +177,16 @@
         <VCollapseLinks>
           <template #header>
             Ecommerce
-            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+            <i
+              aria-hidden="true"
+              class="iconify rtl-hidden"
+              data-icon="feather:chevron-right"
+            />
+            <i
+              aria-hidden="true"
+              class="iconify ltr-hidden"
+              data-icon="feather:chevron-left"
+            />
           </template>
 
           <RouterLink to="/sidebar/dashboards/ecommerce-1" class="is-submenu">
@@ -144,7 +198,16 @@
         <VCollapseLinks>
           <template #header>
             Apps
-            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+            <i
+              aria-hidden="true"
+              class="iconify rtl-hidden"
+              data-icon="feather:chevron-right"
+            />
+            <i
+              aria-hidden="true"
+              class="iconify ltr-hidden"
+              data-icon="feather:chevron-left"
+            />
           </template>
 
           <RouterLink to="/sidebar/dashboards/food-delivery" class="is-submenu">
@@ -184,7 +247,16 @@
         <VCollapseLinks>
           <template #header>
             Charts
-            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+            <i
+              aria-hidden="true"
+              class="iconify rtl-hidden"
+              data-icon="feather:chevron-right"
+            />
+            <i
+              aria-hidden="true"
+              class="iconify ltr-hidden"
+              data-icon="feather:chevron-left"
+            />
           </template>
 
           <RouterLink to="/sidebar/dashboards/charts-apex" class="is-submenu">
@@ -199,7 +271,16 @@
         <VCollapseLinks>
           <template #header>
             Widgets
-            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+            <i
+              aria-hidden="true"
+              class="iconify rtl-hidden"
+              data-icon="feather:chevron-right"
+            />
+            <i
+              aria-hidden="true"
+              class="iconify ltr-hidden"
+              data-icon="feather:chevron-left"
+            />
           </template>
 
           <RouterLink to="/sidebar/dashboards/widgets-sample-ui" class="is-submenu">
@@ -222,7 +303,16 @@
         <VCollapseLinks>
           <template #header>
             Starters
-            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+            <i
+              aria-hidden="true"
+              class="iconify rtl-hidden"
+              data-icon="feather:chevron-right"
+            />
+            <i
+              aria-hidden="true"
+              class="iconify ltr-hidden"
+              data-icon="feather:chevron-left"
+            />
           </template>
 
           <RouterLink to="/starters/sidebar-blank-page-1" class="is-submenu">

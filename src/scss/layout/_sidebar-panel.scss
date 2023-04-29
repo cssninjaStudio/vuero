@@ -10,6 +10,14 @@
     7. Collapsed Messaging
 */
 
+@import '../abstracts/ltr';
+
+[dir='rtl'] {
+  .vuero-hamburger {
+    margin-left: 1rem;
+  }
+}
+
 /* ==========================================================================
 1. Sidebar Panel
 ========================================================================== */
@@ -17,7 +25,7 @@
 .sidebar-panel {
   position: fixed;
   top: 0;
-  left: 80px;
+  #{$start-direction}: 80px;
   height: 100%;
   width: 240px;
   background: var(--white);
@@ -88,7 +96,7 @@
       padding: 0 20px;
 
       .project-dropdown {
-        margin-right: 12px;
+        margin-#{$end-direction}: 12px;
         cursor: pointer !important;
 
         > img {
@@ -116,7 +124,7 @@
               }
 
               .meta {
-                margin-left: 12px;
+                margin-#{$start-direction}: 12px;
                 font-family: var(--font);
 
                 span {
@@ -152,7 +160,7 @@
       }
 
       .panel-close {
-        margin-left: auto;
+        margin-#{$start-direction}: auto;
         display: block;
         width: 18px;
         height: 18px;
@@ -174,7 +182,7 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        border-left: 2px solid transparent;
+        border-#{$start-direction}: 2px solid transparent;
         cursor: pointer;
 
         &.is-active {
@@ -217,7 +225,6 @@
             }
 
             .divider-label {
-              // padding: 1rem;
               font-size: 0.7rem;
             }
           }
@@ -235,7 +242,7 @@
               font-weight: 600;
 
               svg {
-                transform: rotate(90deg) !important;
+                transform: rotate($transform-direction * 90deg) !important;
               }
             }
           }
@@ -252,8 +259,8 @@
             align-items: center;
 
             .tag {
-              margin-left: auto;
-              margin-right: 20px;
+              margin-#{$start-direction}: auto;
+              margin-#{$end-direction}: 20px;
               border-radius: 100px;
               background: var(--danger);
               color: var(--white);
@@ -281,11 +288,11 @@
                 top: 1px;
                 height: 18px;
                 width: 18px;
-                margin-left: auto;
+                margin-#{$start-direction}: auto;
                 transform: rotate(0);
                 color: var(--light-text);
                 transition: color 0.3s, background-color 0.3s, border-color 0.3s,
-                  height 0.3s, width 0.3s;
+                  height 0.3s, width 0.3s, transform 0.3s;
               }
             }
           }
@@ -314,7 +321,7 @@
                 font-weight: 400;
                 font-family: var(--font);
                 align-items: center;
-                padding-left: 32px;
+                padding-#{$start-direction}: 32px;
                 font-size: 0.9rem;
 
                 &.is-active,
@@ -326,7 +333,7 @@
                 .lnil,
                 .lnir {
                   font-size: 1.2rem;
-                  margin-right: 10px;
+                  margin-#{$end-direction}: 10px;
                 }
 
                 > span {
@@ -340,16 +347,16 @@
                   max-width: 8px;
                   min-width: 8px;
                   stroke-width: 2px;
-                  margin-right: 8px;
+                  margin-#{$end-direction}: 8px;
 
                   &.is-auto {
-                    margin-left: auto;
+                    margin-#{$start-direction}: auto;
                     height: 15px;
                     width: 15px;
                     max-width: 15px;
                     min-width: 15px;
                     stroke-width: 2px;
-                    margin-right: 4px;
+                    margin-#{$end-direction}: 4px;
                   }
                 }
               }
@@ -374,7 +381,7 @@
             line-height: 1.8;
             height: 1.8em;
             font-size: 0.7rem;
-            margin-left: 0.25rem;
+            margin-#{$start-direction}: 0.25rem;
           }
         }
 
@@ -389,8 +396,8 @@
       .docked-action {
         position: absolute;
         bottom: 0;
-        left: 0;
-        right: 0;
+        #{$start-direction}: 0;
+        #{$end-direction}: 0;
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -410,8 +417,8 @@
             svg {
               height: 16px;
               width: 16px;
-              margin-right: 2px;
-              margin-left: -2px;
+              margin-#{$end-direction}: 2px;
+              margin-#{$start-direction}: -2px;
             }
           }
         }
@@ -575,8 +582,8 @@
           svg {
             height: 16px;
             width: 16px;
-            margin-right: 10px;
-            margin-left: -10px;
+            margin-#{$end-direction}: 10px;
+            margin-#{$start-direction}: -10px;
           }
         }
       }
@@ -603,7 +610,7 @@
             .icon {
               position: absolute;
               top: 7px;
-              left: 7px;
+              #{$start-direction}: 7px;
               color: var(--placeholder);
 
               svg {
@@ -619,7 +626,7 @@
               width: 100% !important;
 
               input {
-                padding-left: 40px;
+                padding-#{$start-direction}: 40px;
                 background: var(--fade-grey);
                 border: none;
                 box-shadow: none;
@@ -657,7 +664,7 @@
                   .avatar-badge {
                     position: absolute;
                     bottom: 0;
-                    right: -5px;
+                    #{$end-direction}: -5px;
                     width: 18px;
                     height: 18px;
                     border: 2px solid var(--white);
@@ -667,7 +674,7 @@
 
                 // text
                 .entry-text {
-                  margin-left: 15px;
+                  margin-#{$start-direction}: 15px;
 
                   span {
                     font-size: 0.8rem;
@@ -683,8 +690,8 @@
             height: auto !important;
             padding-top: 8px;
             padding-bottom: 8px;
-            border-left: none !important;
-            border-right: none !important;
+            border-#{$start-direction}: none !important;
+            border-#{$end-direction}: none !important;
           }
 
           // Container
@@ -728,12 +735,12 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        border-left: 2px solid transparent;
+        border-#{$start-direction}: 2px solid transparent;
         border-bottom: 1px solid rgb(0 0 0 / 5%);
         cursor: pointer;
 
         &.is-active {
-          border-left-color: var(--primary);
+          border-#{$start-direction}-color: var(--primary);
           background: var(--primary-light-51);
 
           &:hover,
@@ -749,7 +756,7 @@
           display: flex;
           justify-content: flex-start;
           align-items: center;
-          padding-left: 20px;
+          padding-#{$start-direction}: 20px;
           cursor: pointer;
 
           // Avatar
@@ -769,7 +776,7 @@
               &.is-badge {
                 display: block;
                 position: absolute;
-                right: -5px;
+                #{$end-direction}: -5px;
                 bottom: 0;
                 border: 2px solid var(--white);
                 height: 16px;
@@ -780,7 +787,7 @@
           }
 
           .recipient-meta {
-            margin-left: 10px;
+            margin-#{$start-direction}: 10px;
 
             span {
               display: block;
@@ -810,7 +817,7 @@
 
                             // top: 2px;
                             top: -14px;
-                            right: 20px;
+                            #{$end-direction}: 20px;
                             font-size: .75rem;
                             color: var(--muted-grey);
                         } */
@@ -824,7 +831,7 @@
           display: flex;
           justify-content: flex-start;
           align-items: center;
-          margin-left: 20px;
+          margin-#{$start-direction}: 20px;
           cursor: pointer;
 
           img {
@@ -841,7 +848,7 @@
             &:nth-child(2),
             &:nth-child(3),
             &:nth-child(4) {
-              margin-left: -15px;
+              margin-#{$start-direction}: -15px;
             }
           }
 
@@ -855,7 +862,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-left: -15px;
+            margin-#{$start-direction}: -15px;
             border: 2px solid var(--white);
 
             span {
@@ -872,7 +879,7 @@
           display: block;
           position: absolute;
           top: 2px;
-          right: 20px;
+          #{$end-direction}: 20px;
           font-size: 0.75rem;
           color: var(--muted-grey);
         }
@@ -962,18 +969,18 @@
 .collapsed-messaging {
   position: fixed;
   top: 0;
-  left: 80px;
+  #{$start-direction}: 80px;
   height: 100%;
   width: 80px;
   background-color: var(--body-color);
   box-shadow: none;
   z-index: 34;
-  border-left: 1px solid var(--fade-grey);
-  transform: translateX(-100%);
+  border-#{$start-direction}: 1px solid var(--fade-grey);
+  transform: translateX($transform-direction * -100%);
   transition: all 0.3s; // transition-all test
 
   &.is-active {
-    transform: translateX(0);
+    transform: translateX($transform-direction * 0);
   }
 
   .inner {
@@ -1022,12 +1029,12 @@
         justify-content: center;
         align-items: center;
         height: 64px;
-        border-left: 2px solid transparent;
+        border-#{$start-direction}: 2px solid transparent;
         transition: all 0.3s; // transition-all test
         cursor: pointer;
 
         &.is-active {
-          border-left-color: var(--primary);
+          border-#{$start-direction}-color: var(--primary);
           background: var(--primary-light-51);
 
           &:hover,
@@ -1053,7 +1060,7 @@
             &.is-badge {
               display: block;
               position: absolute;
-              right: -5px;
+              #{$end-direction}: -5px;
               bottom: 0;
               border: 2px solid var(--white);
               height: 16px;
@@ -1064,7 +1071,7 @@
 
           .is-count {
             position: absolute;
-            right: -12px;
+            #{$end-direction}: -12px;
             bottom: -5px;
             border-radius: var(--radius-rounded);
             border: 2px solid var(--white);

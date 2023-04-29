@@ -188,12 +188,13 @@ const optionsSingle = [
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .user-grid-v2 {
   .columns {
-    margin-left: -0.5rem !important;
-    margin-right: -0.5rem !important;
+    margin-#{$start-direction}: -0.5rem !important;
+    margin-#{$end-direction}: -0.5rem !important;
     margin-top: -0.5rem !important;
   }
 
@@ -340,8 +341,8 @@ const optionsSingle = [
     }
 
     .grid-item {
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
+      border-top-#{$start-direction}-radius: 0;
+      border-top-#{$end-direction}-radius: 0;
       border: none;
     }
   }

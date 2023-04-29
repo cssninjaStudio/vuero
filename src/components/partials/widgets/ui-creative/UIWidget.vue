@@ -12,6 +12,7 @@ const props = defineProps<{
 </template>
 
 <style lang="scss">
+@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .widget {
@@ -69,7 +70,7 @@ const props = defineProps<{
           content: '';
           position: absolute;
           top: 3px;
-          right: 4px;
+          #{$end-direction}: 4px;
           height: 10px;
           width: 10px;
           border-radius: var(--radius-rounded);
@@ -196,7 +197,7 @@ const props = defineProps<{
       .searcv-button {
         position: absolute;
         top: 0;
-        right: 0;
+        #{$end-direction}: 0;
         height: 42px;
         width: 42px;
         border-radius: 8px;
@@ -344,8 +345,8 @@ const props = defineProps<{
     display: flex;
     flex-wrap: wrap;
     margin-top: -6px;
-    margin-left: -6px;
-    margin-right: -6px;
+    margin-#{$start-direction}: -6px;
+    margin-#{$end-direction}: -6px;
 
     .calendar-square {
       @include vuero-l-card;
@@ -400,8 +401,8 @@ const props = defineProps<{
   .progress-wrap {
     position: absolute;
     bottom: 30px;
-    left: 0;
-    right: 0;
+    #{$start-direction}: 0;
+    #{$end-direction}: 0;
     padding: 0 30px;
 
     .progress {
@@ -522,7 +523,7 @@ const props = defineProps<{
       }
 
       .item-meta {
-        margin-left: 12px;
+        margin-#{$start-direction}: 12px;
 
         span {
           font-family: var(--font);
@@ -554,7 +555,7 @@ const props = defineProps<{
     }
 
     .widget-meta {
-      margin-left: 10px;
+      margin-#{$start-direction}: 10px;
       display: flex;
       flex-direction: column;
       font-family: var(--font);
@@ -585,7 +586,7 @@ const props = defineProps<{
           height: 14px;
           width: 14px;
           stroke-width: 1.4px;
-          margin-right: 6px;
+          margin-#{$end-direction}: 6px;
         }
 
         span {
@@ -618,7 +619,7 @@ const props = defineProps<{
       padding: 16px 0;
 
       .meta {
-        margin-left: 10px;
+        margin-#{$start-direction}: 10px;
         line-height: 1.2;
 
         span {
@@ -646,7 +647,7 @@ const props = defineProps<{
 
         i {
           font-size: 6px;
-          margin-right: 6px;
+          margin-#{$end-direction}: 6px;
         }
       }
 
@@ -692,14 +693,14 @@ const props = defineProps<{
           height: 70px;
           width: 70px;
           top: 0;
-          right: 0;
+          #{$end-direction}: 0;
         }
 
         &.badge-2 {
           height: 50px;
           width: 50px;
           top: 0;
-          left: 0;
+          #{$start-direction}: 0;
         }
       }
     }
@@ -804,7 +805,7 @@ const props = defineProps<{
         font-size: 0.95rem;
         color: var(--dark-text);
         font-weight: 500;
-        margin-left: 10px;
+        margin-#{$start-direction}: 10px;
       }
     }
   }
@@ -936,7 +937,7 @@ const props = defineProps<{
       height: 60px;
       width: 60px;
       bottom: 0;
-      right: 2px;
+      #{$end-direction}: 2px;
       border-radius: var(--radius-rounded);
       border: 6px solid var(--white);
     }
@@ -1018,7 +1019,7 @@ const props = defineProps<{
       .searcv-button {
         position: absolute;
         top: 0;
-        right: 0;
+        #{$end-direction}: 0;
         height: 42px;
         width: 42px;
         border-radius: 8px;
@@ -1056,7 +1057,7 @@ const props = defineProps<{
         font-size: 0.95rem;
         color: var(--dark-text);
         font-weight: 600;
-        margin-left: 10px;
+        margin-#{$start-direction}: 10px;
       }
     }
   }
@@ -1072,8 +1073,8 @@ const props = defineProps<{
 
   .channels {
     display: flex;
-    margin-left: -8px;
-    margin-right: -8px;
+    margin-#{$start-direction}: -8px;
+    margin-#{$end-direction}: -8px;
     width: 100%;
 
     .channel {
@@ -1127,7 +1128,7 @@ const props = defineProps<{
       margin: 8px 0;
 
       .meta {
-        margin-left: 12px;
+        margin-#{$start-direction}: 12px;
         display: flex;
         flex-direction: column;
 

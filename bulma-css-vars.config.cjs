@@ -2,12 +2,13 @@ const { hsl } = require('@cssninja/bulma-css-vars')
 
 module.exports = {
   sassEntryFile: 'src/scss/main.scss',
+  // sassEntryFile: 'src/scss/main-rtl.scss', // uncomment to generate RTL (comment out the line above)
   jsOutputFile: 'src/scss/bulma-generated/bulma-colors.ts',
   sassOutputFile: 'src/scss/bulma-generated/generated-vars.sass',
   cssFallbackOutputFile: 'src/scss/bulma-generated/generated-fallback.css',
   colorDefs: {
     white: '#fff',
-    primary: hsl(153, 48, 49), // '#41b883',
+    primary: hsl(166, 61, 42), // '#29ab8d',
     dark: hsl(226, 34, 24), // '#283252',
     link: hsl(229, 53, 53), // '#485fc7',
     info: hsl(200, 97, 45), // '#039be5',
