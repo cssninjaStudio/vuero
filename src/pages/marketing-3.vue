@@ -71,16 +71,18 @@ useHead({
                     14-day Trial
                   </VButton>
                 </div>
-                <img
-                  class="light-image-l hero-mockup"
-                  src="/@src/assets/illustrations/landing/app-2.png"
-                  alt=""
-                />
-                <img
-                  class="dark-image-l hero-mockup"
-                  src="/@src/assets/illustrations/landing/app-2-dark.png"
-                  alt=""
-                />
+                <div class="hero-mockup">
+                  <img
+                    class="light-image-block-l"
+                    src="/@src/assets/illustrations/landing/app-1.webp"
+                    alt=""
+                  />
+                  <img
+                    class="dark-image-block-l"
+                    src="/@src/assets/illustrations/landing/app-1.webp"
+                    alt=""
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -126,30 +128,18 @@ useHead({
 .marketing-hero {
   position: relative;
 
-  &.is-left,
-  &.is-right {
-    .hero-body {
-      h1 {
-        max-width: 480px;
-      }
-
-      h3 {
-        max-width: 520px;
-      }
-    }
-  }
-
   &.is-centered {
-    background: var(--widget-grey);
-
     .hero-body {
       .columns {
         padding-top: 6rem;
       }
 
+      .title {
+        margin-top: 0;
+      }
+
       .title,
-      .subtitle,
-      .switch-wrapper {
+      .subtitle {
         margin-#{$start-direction}: auto;
         margin-#{$end-direction}: auto;
       }
@@ -167,11 +157,6 @@ useHead({
         margin: 0 auto;
       }
     }
-  }
-
-  &.is-left,
-  &.is-centered {
-    background: var(--widget-grey);
 
     .hexagon {
       position: absolute;
@@ -215,51 +200,6 @@ useHead({
     }
   }
 
-  &.is-right {
-    background: var(--widget-grey);
-
-    .hexagon {
-      position: absolute;
-      animation: rotating 15s infinite;
-      animation-timing-function: linear;
-
-      &.hexagon-1 {
-        top: -180px;
-        #{$end-direction}: -180px;
-        height: 450px;
-        width: 450px;
-        transform: rotate($transform-direction * 39deg);
-      }
-
-      &.hexagon-2 {
-        bottom: 80px;
-        #{$start-direction}: 80px;
-        height: 360px;
-        width: 360px;
-        transform: rotate($transform-direction * 75deg);
-        animation-delay: 2s;
-      }
-
-      &.hexagon-3 {
-        bottom: 40px;
-        #{$end-direction}: 40px;
-        height: 190px;
-        width: 190px;
-        transform: rotate($transform-direction * 95deg);
-        animation-delay: 0.5s;
-      }
-
-      &.hexagon-4 {
-        top: -155px;
-        #{$start-direction}: 50%;
-        height: 230px;
-        width: 230px;
-        transform: rotate($transform-direction * 135deg);
-        animation-delay: 1s;
-      }
-    }
-  }
-
   .hero-body {
     .buttons {
       .button {
@@ -272,6 +212,8 @@ useHead({
       box-shadow: var(--light-box-shadow);
       border: 1px solid var(--border);
       border-radius: 0.75rem;
+      width: 100%;
+      max-width: 840px !important;
     }
   }
 }

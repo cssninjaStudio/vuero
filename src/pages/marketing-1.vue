@@ -72,17 +72,19 @@ useHead({
                   </VButton>
                 </div>
               </div>
-              <div class="column is-7">
-                <img
-                  class="light-image-l hero-mockup"
-                  src="/@src/assets/illustrations/landing/app-2.png"
-                  alt=""
-                />
-                <img
-                  class="dark-image-l hero-mockup"
-                  src="/@src/assets/illustrations/landing/app-2-dark.png"
-                  alt=""
-                />
+              <div class="column is-6 is-offset-1">
+                <div class="hero-mockup">
+                  <img
+                    class="light-image-block-l"
+                    src="/@src/assets/illustrations/landing/app-1.webp"
+                    alt=""
+                  />
+                  <img
+                    class="dark-image-block-l"
+                    src="/@src/assets/illustrations/landing/app-1.webp"
+                    alt=""
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -127,6 +129,14 @@ useHead({
 
 .marketing-hero {
   position: relative;
+
+  &.is-left {
+    .hero-body {
+      .buttons {
+        justify-content: flex-start;
+      }
+    }
+  }
 
   &.is-left,
   &.is-right {
@@ -173,8 +183,6 @@ useHead({
 
   &.is-left,
   &.is-centered {
-    background: var(--widget-grey);
-
     .hexagon {
       position: absolute;
       animation: rotating 15s infinite;
