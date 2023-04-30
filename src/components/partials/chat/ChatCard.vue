@@ -57,15 +57,18 @@
     top: 0 !important;
     #{$start-direction}: 0;
     max-height: calc(100% - 60px) !important;
+    overflow: hidden;
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .is-chat {
     position: absolute;
     top: 0 !important;
     #{$start-direction}: 0;
+    height: 100%;
     max-height: calc(100% - 60px) !important;
+    overflow: hidden;
   }
 }
 </style>

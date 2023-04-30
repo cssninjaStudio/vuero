@@ -120,12 +120,7 @@ watchEffect(() => {
           <RouterLink to="/auth/login" class="nav-link"> Login </RouterLink>
         </div>
         <div class="navbar-item">
-          <VButton
-            to="https://themeforest.net/item/vuero-vuejs-3-admin-and-webapp-ui-kit/31053035"
-            color="primary"
-            rounded
-            raised
-          >
+          <VButton to="https://go.cssninja.io/buy-vuero" color="primary" rounded raised>
             <strong>Buy Vuero</strong>
           </VButton>
         </div>

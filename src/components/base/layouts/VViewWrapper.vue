@@ -148,7 +148,7 @@ const props = defineProps<VViewWrapperProps>()
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .view-wrapper {
     &.has-top-nav {
       .is-navbar-md,
@@ -163,7 +163,7 @@ const props = defineProps<VViewWrapperProps>()
     }
   }
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .view-wrapper {
     width: calc(100% - 60px) !important;
     margin-#{$start-direction}: 60px !important;
@@ -174,7 +174,7 @@ const props = defineProps<VViewWrapperProps>()
     }
   }
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   // Layout
   .view-wrapper {
     width: 100% !important;
@@ -187,6 +187,11 @@ const props = defineProps<VViewWrapperProps>()
       padding-#{$start-direction}: 0 !important;
       padding-#{$end-direction}: 0 !important;
     }
+
+    &.is-pushed-messages {
+      margin-#{$start-direction}: 0 !important;
+      width: 100% !important;
+    }
   }
 }
 @media (width <= 767px) {
@@ -195,6 +200,11 @@ const props = defineProps<VViewWrapperProps>()
     width: 100% !important;
     margin-#{$start-direction}: 0 !important;
     margin-top: 60px !important;
+
+    &.is-pushed-messages {
+      margin-#{$start-direction}: 0 !important;
+      width: 100% !important;
+    }
   }
 }
 </style>

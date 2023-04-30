@@ -1098,3 +1098,10 @@
     }
   }
 }
+
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: landscape) {
+  .collapsed-messaging {
+    width: 60px;
+    left: 60px;
+  }
+}

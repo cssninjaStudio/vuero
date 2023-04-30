@@ -159,6 +159,7 @@ const chat = useChat()
 
     #hide-chat-side {
       transform: scaleX(-1);
+      display: none;
     }
   }
 
@@ -299,13 +300,19 @@ const chat = useChat()
     transition: all 0.3s; // transition-all test
     z-index: 20;
 
+    .chat-side-header {
+      #hide-chat-side {
+        display: flex;
+      }
+    }
+
     &.is-mobile-active {
       transform: translateX($transform-direction * 0);
     }
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .chat-side {
     position: fixed;
     top: 0;
@@ -315,6 +322,12 @@ const chat = useChat()
     transform: translateX($transform-direction * 100%);
     transition: all 0.3s; // transition-all test
     z-index: 20;
+
+    .chat-side-header {
+      #hide-chat-side {
+        display: flex;
+      }
+    }
 
     &.is-mobile-active {
       transform: translateX($transform-direction * 0);

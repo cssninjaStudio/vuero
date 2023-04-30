@@ -231,13 +231,13 @@ debouncedWatch(
                     <i
                       aria-hidden="true"
                       class="iconify rtl-hidden"
-                      data-icon="feather:chevron-right"
-                    />
+                      data-icon="lucide:arrow-right"
+                    ></i>
                     <i
                       aria-hidden="true"
                       class="iconify ltr-hidden"
-                      data-icon="feather:chevron-left"
-                    />
+                      data-icon="lucide:arrow-left"
+                    ></i>
                   </RouterLink>
                 </div>
               </div>
@@ -297,7 +297,16 @@ debouncedWatch(
                 <div class="demo-link">
                   <RouterLink :to="item.route.path" tabindex="-1">
                     Go to demo
-                    <i aria-hidden="true" class="fas fa-angle-right"></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify rtl-hidden"
+                      data-icon="lucide:arrow-right"
+                    ></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify ltr-hidden"
+                      data-icon="lucide:arrow-left"
+                    ></i>
                   </RouterLink>
                 </div>
               </div>
@@ -357,7 +366,16 @@ debouncedWatch(
                 <div class="demo-link">
                   <RouterLink :to="item.route.path" tabindex="-1">
                     Go to demo
-                    <i aria-hidden="true" class="fas fa-angle-right"></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify rtl-hidden"
+                      data-icon="lucide:arrow-right"
+                    ></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify ltr-hidden"
+                      data-icon="lucide:arrow-left"
+                    ></i>
                   </RouterLink>
                 </div>
               </div>
@@ -417,7 +435,16 @@ debouncedWatch(
                 <div class="demo-link">
                   <RouterLink :to="item.route.path" tabindex="-1">
                     Go to demo
-                    <i aria-hidden="true" class="fas fa-angle-right"></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify rtl-hidden"
+                      data-icon="lucide:arrow-right"
+                    ></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify ltr-hidden"
+                      data-icon="lucide:arrow-left"
+                    ></i>
                   </RouterLink>
                 </div>
               </div>
@@ -477,7 +504,16 @@ debouncedWatch(
                 <div class="demo-link">
                   <RouterLink :to="item.route.path" tabindex="-1">
                     Go to demo
-                    <i aria-hidden="true" class="fas fa-angle-right"></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify rtl-hidden"
+                      data-icon="lucide:arrow-right"
+                    ></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify ltr-hidden"
+                      data-icon="lucide:arrow-left"
+                    ></i>
                   </RouterLink>
                 </div>
               </div>
@@ -680,6 +716,7 @@ debouncedWatch(
 
       .iconify {
         position: relative;
+        top: 1px;
         opacity: 0;
         transform: translateX($transform-direction * 0);
         transition: all 0.3s ease-out;

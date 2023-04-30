@@ -13,6 +13,7 @@ useHead({
 
 <template>
   <div class="page-content-inner">
-    <DatatableV1 />
+    <TableListV1 />
   </div>
 </template>
+

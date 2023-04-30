@@ -1,116 +1,364 @@
-// Add Icon
-function renderPicture(data: any /*, cell:  any, row: any*/) {
-  return `
-          <div class="v-avatar">
-              <img class="avatar" src="${data}" alt="">
-          </div>
-      `
-}
-
-// Name
-function renderName(data: any /*, cell: any, row: any */) {
-  return `<span class="has-dark-text dark-inverted is-font-alt is-weight-600 rem-90">${data}</span>`
-}
-
-// Position
-function renderPosition(data: any /*, cell: any, row: any */) {
-  return `<span class="light-text">${data}</span>`
-}
-
-// Status
-function renderStatus(data: any /*, cell: any, row: any */) {
-  return `
-          <div class="status is-${data}">
-              <i aria-hidden="true" class="fas fa-circle"></i>
-              <span class="is-capitalize">${data}</span>
-          </div>
-      `
-}
-
-// Button
-function renderButton(data: any, cell: any, row: any) {
-  return `<div class="has-text-right"><button class="button v-button is-dark-outlined" data-row="${row.dataIndex}">Manage</button></div>`
-}
-
-export const datatableV1 = {
-  perPageSelect: [5, 10, 20, 25, 50, 100],
-  perPage: 10,
-  columns: [
-    { select: 0, hidden: true },
-    { select: 1, render: renderPicture, sortable: false },
-    { select: 2, render: renderName },
-    { select: 3, render: renderPosition },
-    { select: 4, render: renderStatus },
-    { select: 5, render: renderButton, sortable: false },
-  ],
-  data: {
-    headings: ['ID', 'Picture', 'Name', 'Position', 'Status', 'Actions'],
-    data: [
-      [
-        0,
-        '/images/avatars/svg/vuero-1.svg',
-        'Erik Kovalsky',
-        'Product Manager',
-        'busy',
-        true,
-      ],
-      [1, '/demo/avatars/7.jpg', 'Alice Carasca', 'Software Engineer', 'offline', true],
-      [2, '/demo/avatars/13.jpg', 'Tara Svenson', 'UI/UX Designer', 'offline', true],
-      [3, '/demo/avatars/5.jpg', 'Mary Lebowski', 'Project Manager', 'available', true],
-      [
-        4,
-        '/images/avatars/placeholder-f.jpg',
-        'Kaylee Jennings',
-        'Web Developer',
-        'available',
-        true,
-      ],
-      [5, '/demo/avatars/27.jpg', 'Carmen Escudero', 'HR Manager', 'offline', true],
-      [6, '/demo/avatars/22.jpg', 'Dwayne Hicks', 'Product Manager', 'offline', true],
-      [
-        7,
-        '/images/avatars/placeholder-m.jpg',
-        'Paul Morris',
-        'Backend Developer',
-        'available',
-        true,
-      ],
-      [
-        8,
-        '/demo/avatars/23.jpg',
-        'Irina Vierbovsky',
-        'Project Manager',
-        'available',
-        true,
-      ],
-      [9, '/demo/avatars/28.jpg', 'Edouard Falant', 'Web Developer', 'busy', true],
-      [
-        10,
-        '/images/avatars/placeholder-f.jpg',
-        'Shana Williams',
-        'Sales Manager',
-        'offline',
-        true,
-      ],
-      [
-        11,
-        '/images/avatars/placeholder-m.jpg',
-        'Benjamin Hoffman',
-        'Product Manager',
-        'offline',
-        true,
-      ],
-      [12, '/demo/avatars/39.jpg', 'Alejandro Badajoz', 'Web Developer', 'busy', true],
-      [
-        13,
-        '/demo/avatars/21.jpg',
-        'Elizabeth Fisher',
-        'Mobile Developer',
-        'available',
-        true,
-      ],
-      [14, '/demo/avatars/37.jpg', 'Helmut Fritz', 'Product Manager', 'available', true],
-      [15, '/demo/avatars/31.jpg', 'Yasseen Amzi', 'Business Analyst', 'offline', true],
+export const userList = [
+  {
+    id: 0,
+    username: 'Erik K.',
+    position: 'Product Manager',
+    picture: '/images/avatars/svg/vuero-1.svg',
+    badge: '/images/icons/flags/united-states-of-america.svg',
+    location: 'Las Vegas, NV',
+    industry: 'Software',
+    status: 'Online',
+    contacts: [
+      {
+        id: 0,
+        picture: '/demo/avatars/25.jpg',
+        initials: 'AC',
+        color: 'info',
+      },
+      {
+        id: 1,
+        picture: undefined,
+        initials: 'JP',
+        color: 'info',
+      },
+      {
+        id: 2,
+        picture: '/images/avatars/svg/vuero-1.svg',
+        initials: 'EK',
+        color: 'h-purple',
+      },
+      {
+        id: 3,
+        picture: '/demo/avatars/5.jpg',
+        initials: 'ML',
+        color: 'danger',
+      },
+      {
+        id: 4,
+        picture: undefined,
+        initials: 'SC',
+        color: 'success',
+      },
     ],
   },
-}
+  {
+    id: 1,
+    username: 'Jimmy H.',
+    position: 'Project Manager',
+    picture: '/demo/avatars/22.jpg',
+    badge: '/images/icons/flags/united-states-of-america.svg',
+    location: 'Los Angeles, CA',
+    industry: 'Business',
+    status: 'Working',
+    contacts: [
+      {
+        id: 148,
+        picture: undefined,
+        initials: 'SC',
+        color: 'h-purple',
+      },
+    ],
+  },
+  {
+    id: 2,
+    username: 'Melany W.',
+    position: 'Web Developer',
+    picture: '/demo/avatars/25.jpg',
+    badge: '/images/icons/flags/united-states-of-america.svg',
+    location: 'San Jose, CA',
+    industry: 'Design',
+    status: 'Online',
+    contacts: [
+      {
+        id: 127,
+        picture: undefined,
+        initials: 'BT',
+        color: 'success',
+      },
+      {
+        id: 7,
+        picture: '/demo/avatars/7.jpg',
+        initials: 'AC',
+        color: 'h-purple',
+      },
+      {
+        id: 19,
+        picture: '/demo/avatars/19.jpg',
+        initials: 'GK',
+        color: 'h-yellow',
+      },
+      {
+        id: 148,
+        picture: undefined,
+        initials: 'SC',
+        color: 'h-purple',
+      },
+      {
+        id: 149,
+        picture: undefined,
+        initials: 'SC',
+        color: 'h-purple',
+      },
+      {
+        id: 150,
+        picture: undefined,
+        initials: 'SC',
+        color: 'h-purple',
+      },
+    ],
+  },
+  {
+    id: 3,
+    username: 'Joshua S.',
+    position: 'Backend Developer',
+    picture: '/demo/avatars/12.jpg',
+    badge: '/images/icons/flags/united-states-of-america.svg',
+    location: 'Las Vegas, NV',
+    industry: 'Accounting',
+    status: 'Suspended',
+    contacts: [
+      {
+        id: 7,
+        picture: '/demo/avatars/13.jpg',
+        initials: 'TS',
+        color: 'info',
+      },
+    ],
+  },
+  {
+    id: 4,
+    username: 'Tara S.',
+    position: 'UI/UX Designer',
+    picture: '/demo/avatars/13.jpg',
+    badge: '/images/icons/flags/united-states-of-america.svg',
+    location: 'Los Angeles, CA',
+    industry: 'Finance',
+    status: 'Working',
+    contacts: [
+      {
+        id: 0,
+        picture: '/demo/avatars/25.jpg',
+        initials: 'AC',
+        color: 'info',
+      },
+      {
+        id: 14,
+        picture: '/demo/avatars/11.jpg',
+        initials: 'KL',
+        color: 'danger',
+      },
+      {
+        id: 17,
+        picture: '/demo/avatars/5.jpg',
+        initials: 'ML',
+        color: 'warning',
+      },
+      {
+        id: 150,
+        picture: undefined,
+        initials: 'SC',
+        color: 'h-purple',
+      },
+      {
+        id: 151,
+        picture: undefined,
+        initials: 'SC',
+        color: 'h-purple',
+      },
+      {
+        id: 152,
+        picture: undefined,
+        initials: 'SC',
+        color: 'h-purple',
+      },
+      {
+        id: 154,
+        picture: undefined,
+        initials: 'SC',
+        color: 'h-purple',
+      },
+    ],
+  },
+  {
+    id: 5,
+    username: 'Greta K.',
+    position: 'Sales Manager',
+    picture: '/demo/avatars/19.jpg',
+    badge: '/images/icons/flags/germany.svg',
+    location: 'Berlin, Germany',
+    industry: 'Business',
+    status: 'Online',
+    contacts: [
+      {
+        id: 0,
+        picture: '/demo/avatars/25.jpg',
+        initials: 'AC',
+        color: 'info',
+      },
+      {
+        id: 14,
+        picture: undefined,
+        initials: 'AT',
+        color: 'h-yellow',
+      },
+      {
+        id: 17,
+        picture: '/demo/avatars/5.jpg',
+        initials: 'ML',
+        color: 'warning',
+      },
+      {
+        id: 150,
+        picture: undefined,
+        initials: 'SC',
+        color: 'h-purple',
+      },
+      {
+        id: 151,
+        picture: undefined,
+        initials: 'SC',
+        color: 'h-purple',
+      },
+      {
+        id: 152,
+        picture: undefined,
+        initials: 'SC',
+        color: 'h-purple',
+      },
+    ],
+  },
+  {
+    id: 6,
+    username: 'Clément D.',
+    position: 'Software Engineer',
+    picture: '/demo/avatars/30.jpg',
+    badge: '/images/icons/flags/france.svg',
+    location: 'Toulouse, France',
+    industry: 'Software',
+    status: 'Offline',
+    contacts: [
+      {
+        id: 0,
+        picture: '/demo/avatars/25.jpg',
+        initials: 'AC',
+        color: 'info',
+      },
+      {
+        id: 14,
+        picture: undefined,
+        initials: 'BV',
+        color: 'h-purple',
+      },
+      {
+        id: 8,
+        picture: '/images/avatars/svg/vuero-1.svg',
+        initials: 'ML',
+        color: 'warning',
+      },
+      {
+        id: 150,
+        picture: undefined,
+        initials: 'SC',
+        color: 'h-purple',
+      },
+      {
+        id: 151,
+        picture: undefined,
+        initials: 'SC',
+        color: 'h-purple',
+      },
+    ],
+  },
+  {
+    id: 7,
+    username: 'Kelly M.',
+    position: 'Product Manager',
+    picture: '/demo/avatars/11.jpg',
+    badge: '/images/icons/flags/england.svg',
+    location: 'London, UK',
+    industry: 'Software',
+    status: 'Online',
+    contacts: [
+      {
+        id: 25,
+        picture: '/demo/avatars/25.jpg',
+        initials: 'AC',
+        color: 'info',
+      },
+      {
+        id: 13,
+        picture: '/demo/avatars/13.jpg',
+        initials: 'TS',
+        color: 'info',
+      },
+      {
+        id: 17,
+        picture: '/demo/avatars/5.jpg',
+        initials: 'ML',
+        color: 'warning',
+      },
+    ],
+  },
+  {
+    id: 8,
+    username: 'Alan T.',
+    position: 'Software Engineer',
+    picture: undefined,
+    badge: '/images/icons/flags/united-states-of-america.svg',
+    color: 'h-yellow',
+    initials: 'AT',
+    location: 'San Francisco, CA',
+    industry: 'Software',
+    status: 'Offline',
+    contacts: [
+      {
+        id: 25,
+        picture: '/demo/avatars/25.jpg',
+        initials: 'MW',
+        color: 'info',
+      },
+    ],
+  },
+  {
+    id: 9,
+    username: 'Courtney W.',
+    position: 'Web Developer',
+    picture: '/demo/avatars/26.jpg',
+    badge: '/images/icons/flags/australia.svg',
+    location: 'Melbourne, Australia',
+    industry: 'Software',
+    status: 'Offline',
+    contacts: [
+      {
+        id: 7,
+        picture: '/demo/avatars/7.jpg',
+        initials: 'AC',
+        color: 'info',
+      },
+      {
+        id: 165,
+        picture: undefined,
+        initials: 'JD',
+        color: 'info',
+      },
+      {
+        id: 27,
+        picture: '/demo/avatars/27.jpg',
+        initials: 'CE',
+        color: 'warning',
+      },
+      {
+        id: 150,
+        picture: undefined,
+        initials: 'SC',
+        color: 'h-purple',
+      },
+      {
+        id: 151,
+        picture: undefined,
+        initials: 'SC',
+        color: 'h-purple',
+      },
+    ],
+  },
+]

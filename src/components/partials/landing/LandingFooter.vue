@@ -146,6 +146,7 @@
         </p>
       </div>
     </div>
+    <div class="grids gridlines"></div>
   </footer>
   <!-- /Simple light footer -->
 </template>
@@ -154,9 +155,18 @@
 @import '/@src/scss/abstracts/ltr';
 
 .vuero-footer {
+  position: relative;
   padding-bottom: 0 !important;
   padding-top: 4rem !important;
   background: var(--body-color);
+
+  .grids {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 8rem;
+  }
 
   .footer-head {
     padding-bottom: 3rem;

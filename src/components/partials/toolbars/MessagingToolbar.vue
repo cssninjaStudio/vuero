@@ -170,7 +170,16 @@ const localFlagSrc = computed(() => {
       @keydown.space.prevent="emit('close')"
       @click="emit('close')"
     >
-      <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right"></i>
+      <i
+        aria-hidden="true"
+        class="iconify rtl-hidden"
+        data-icon="feather:chevron-left"
+      ></i>
+      <i
+        aria-hidden="true"
+        class="iconify ltr-hidden"
+        data-icon="feather:chevron-right"
+      ></i>
     </a>
   </div>
 </template>

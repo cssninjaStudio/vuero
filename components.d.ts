@@ -387,6 +387,7 @@ declare module '@vue/runtime-core' {
     SwitchSegmentPropsDocumentation: typeof import('./documentation/switch-segment/switch-segment-props-documentation.md')['default']
     TabbedGridItem: typeof import('./src/components/partials/grids-users/TabbedGridItem.vue')['default']
     TableBaseDocumentation: typeof import('./documentation/elements/table/table-base-documentation.md')['default']
+    TableListV1: typeof import('./src/components/pages/layouts/table-list/TableListV1.vue')['default']
     TableMediaDocumentation: typeof import('./documentation/elements/table/table-media-documentation.md')['default']
     TableStripedDocumentation: typeof import('./documentation/elements/table/table-striped-documentation.md')['default']
     TableWidget: typeof import('./src/components/partials/widgets/table/TableWidget.vue')['default']

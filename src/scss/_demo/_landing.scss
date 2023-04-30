@@ -372,6 +372,12 @@
     }
   }
 
+  &:not(.is-flat) {
+    .flex-card {
+      box-shadow: var(--light-box-shadow);
+    }
+  }
+
   .flex-card {
     @include vuero-l-card;
 

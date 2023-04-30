@@ -30,10 +30,7 @@ useHead({
             </h3>
 
             <div class="buttons mb-2">
-              <VButton
-                to="https://themeforest.net/item/vuero-vuejs-3-admin-and-webapp-ui-kit/31053035"
-                color="primary"
-                rounded
+              <VButton to="https://go.cssninja.io/buy-vuero" color="primary" rounded
                 >Buy Vuero Today</VButton
               >
             </div>
@@ -53,12 +50,12 @@ useHead({
               <div class="hero-mockup">
                 <img
                   class="light-image-block-l"
-                  src="/@src/assets/illustrations/landing/app-1.webp"
+                  src="/@src/assets/illustrations/landing/app-1.png"
                   alt=""
                 />
                 <img
                   class="dark-image-block-l"
-                  src="/@src/assets/illustrations/landing/app-1-dark.webp"
+                  src="/@src/assets/illustrations/landing/app-1-dark.png"
                   alt=""
                 />
               </div>
@@ -221,9 +218,9 @@ useHead({
                 <p>Vuero ships with the premium Line Icons set ($30 value).</p>
               </div>
               <div class="flex-cell">
-                <i aria-hidden="true" class="lnil lnil-mobile-alt-2"></i>
-                <h3>Fully Responsive</h3>
-                <p>Vuero is built with Bulma 0.9, a mobile first framework</p>
+                <i class="lnil lnil-switch" aria-hidden="true"></i>
+                <h3>RTL Support</h3>
+                <p>Vuero supports RTL layouts. Configure it in less than a minute.</p>
               </div>
               <div class="flex-cell no-border-edge">
                 <i aria-hidden="true" class="lnil lnil-file-name"></i>
