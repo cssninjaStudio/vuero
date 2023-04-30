@@ -1,5 +1,5 @@
 <template>
-  <div class="section has-bg-dots">
+  <div class="section">
     <div class="container">
       <!--Title-->
       <div class="section-title has-text-centered py-6">

@@ -59,19 +59,21 @@ useHead({
         <div class="hero-body">
           <div class="container">
             <div class="columns is-vcentered">
-              <div class="column is-7">
-                <img
-                  class="light-image-l hero-mockup"
-                  src="/@src/assets/illustrations/landing/app-2.png"
-                  alt=""
-                />
-                <img
-                  class="dark-image-l hero-mockup"
-                  src="/@src/assets/illustrations/landing/app-2-dark.png"
-                  alt=""
-                />
+              <div class="column is-6">
+                <div class="hero-mockup">
+                  <img
+                    class="light-image-block-l"
+                    src="/@src/assets/illustrations/landing/app-1.webp"
+                    alt=""
+                  />
+                  <img
+                    class="dark-image-block-l"
+                    src="/@src/assets/illustrations/landing/app-1.webp"
+                    alt=""
+                  />
+                </div>
               </div>
-              <div class="column is-5">
+              <div class="column is-5 is-offset-1">
                 <h1 class="title is-1 is-bold">Easier development. Beautiful projects</h1>
                 <h3 class="subtitle is-4 pt-2 light-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Isto modo ne
@@ -128,7 +130,6 @@ useHead({
 .marketing-hero {
   position: relative;
 
-  &.is-left,
   &.is-right {
     .hero-body {
       h1 {
@@ -138,12 +139,14 @@ useHead({
       h3 {
         max-width: 520px;
       }
+
+      .buttons {
+        justify-content: flex-start;
+      }
     }
   }
 
   &.is-centered {
-    background: var(--widget-grey);
-
     .hero-body {
       .columns {
         padding-top: 6rem;
@@ -173,8 +176,6 @@ useHead({
 
   &.is-left,
   &.is-centered {
-    background: var(--widget-grey);
-
     .hexagon {
       position: absolute;
       animation: rotating 15s infinite;
@@ -218,8 +219,6 @@ useHead({
   }
 
   &.is-right {
-    background: var(--widget-grey);
-
     .hexagon {
       position: absolute;
       animation: rotating 15s infinite;

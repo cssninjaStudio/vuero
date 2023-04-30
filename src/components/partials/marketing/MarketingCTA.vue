@@ -1,5 +1,5 @@
 <template>
-  <div class="section has-bg-dots">
+  <div class="section">
     <div class="container">
       <div class="">
         <div class="boxed-cta">

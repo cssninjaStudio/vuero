@@ -120,8 +120,13 @@ watchEffect(() => {
           <RouterLink to="/auth/login" class="nav-link"> Login </RouterLink>
         </div>
         <div class="navbar-item">
-          <VButton to="/auth/signup-1" color="primary" rounded raised>
-            <strong>Sign up</strong>
+          <VButton
+            to="https://themeforest.net/item/vuero-vuejs-3-admin-and-webapp-ui-kit/31053035"
+            color="primary"
+            rounded
+            raised
+          >
+            <strong>Buy Vuero</strong>
           </VButton>
         </div>
       </div>
@@ -163,17 +168,6 @@ watchEffect(() => {
               border-color: var(--fade-grey-dark-3);
             }
           }
-
-          .navbar-menu {
-            .navbar-item {
-              &.is-theme-toggle {
-                opacity: 0;
-                pointer-events: none;
-                transition: color 0.3s, background-color 0.3s, border-color 0.3s,
-                  height 0.3s, width 0.3s;
-              }
-            }
-          }
         }
 
         &.is-solid {
@@ -187,7 +181,8 @@ watchEffect(() => {
       }
 
       .navbar-brand {
-        img {
+        img,
+        svg {
           position: relative;
           display: block;
           width: 100%;
@@ -206,7 +201,8 @@ watchEffect(() => {
           border: 1px solid transparent;
           transition: all 0.3s; // transition-all test
 
-          img {
+          img,
+          svg {
             position: relative;
             top: -2px;
             margin-#{$start-direction}: 0;
@@ -364,6 +360,7 @@ watchEffect(() => {
           }
 
           .button {
+            font-weight: 400 !important;
             height: 44px;
             min-width: 110px;
           }

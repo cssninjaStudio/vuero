@@ -2,11 +2,9 @@
 import { useHead } from '@vueuse/head'
 
 import packageJson from '../../package.json'
-import { useDarkmode } from '/@src/stores/darkmode'
 
 type TabId = 'elements' | 'components' | 'forms' | 'plugins'
 const activeTab = ref<TabId>('elements')
-const darkmode = useDarkmode()
 
 useHead({
   title: 'Vuero - A complete Vue 3 design system',
@@ -17,67 +15,55 @@ useHead({
   <MinimalLayout theme="light">
     <div class="landing-page-wrapper">
       <!-- Hero and Navbar -->
-      <div id="vuero-landing" class="hero is-fullheight rounded-hero is-active">
+      <div id="vuero-landing" class="hero is-fullheight is-active">
         <!-- Navbar partial -->
         <LandingNavigation />
-
-        <div class="absolute-header">
-          <div class="header-inner">
-            <img
-              class="cut-circle light-image-l"
-              src="/@src/assets/shapes/cut-circle.svg"
-              alt=""
-            />
-            <img
-              class="cut-circle dark-image-l"
-              src="/@src/assets/shapes/cut-circle-dark.svg"
-              alt=""
-            />
-          </div>
-        </div>
-
+        <div class="grids gridlines"></div>
         <div class="hero-body has-text-centered">
           <div class="container">
-            <div class="switch-wrapper">
-              <div class="night-toggle night-toggle--daynight">
-                <input
-                  id="night-toggle--daynight"
-                  data-cy="dark-mode-toggle"
-                  type="checkbox"
-                  class="night-toggle--checkbox"
-                  :checked="!darkmode.isDark"
-                  aria-label="Toggle dark mode"
-                  @change="darkmode.onChange"
-                />
-                <label
-                  class="night-toggle--btn"
-                  for="night-toggle--daynight"
-                  tabindex="0"
-                  role="button"
-                  @keydown.space.prevent="(e) => (e.target as HTMLLabelElement).click()"
-                >
-                  <span class="night-toggle--feature"></span>
-                </label>
-              </div>
-            </div>
-            <h1 class="title is-1 is-bold is-light is-bold">
-              The World Needs a <span>Vuero</span>.
+            <h1 class="title is-1 is-bold dark-white is-leading">
+              Build fast & beautiful web apps with <span>Vuero</span>
             </h1>
-            <h3 class="subtitle is-4 is-light">
-              Premium Webapp UI Kit.
+            <h3 class="subtitle is-4">
+              Premium Vue Dashboard & Webapp UI Kit
               <span class="tag is-primary is-rounded">{{ packageJson.version }}</span>
             </h3>
 
-            <img
-              class="light-image-l hero-mockup"
-              src="/@src/assets/illustrations/landing/app-1.webp"
-              alt=""
-            />
-            <img
-              class="dark-image-l hero-mockup"
-              src="/@src/assets/illustrations/landing/app-1-dark.webp"
-              alt=""
-            />
+            <div class="buttons mb-2">
+              <VButton
+                to="https://themeforest.net/item/vuero-vuejs-3-admin-and-webapp-ui-kit/31053035"
+                color="primary"
+                rounded
+                >Buy Vuero Today</VButton
+              >
+            </div>
+
+            <div class="trusted-by mb-4">
+              <span>Trusted by <span>2000+ customers</span></span>
+              <div class="rating">
+                <i class="iconify" data-icon="uiw:star-on"></i>
+                <i class="iconify" data-icon="uiw:star-on"></i>
+                <i class="iconify" data-icon="uiw:star-on"></i>
+                <i class="iconify" data-icon="uiw:star-on"></i>
+                <i class="iconify" data-icon="uiw:star-on"></i>
+              </div>
+            </div>
+
+            <div class="hero-mockup-wrap">
+              <div class="hero-mockup">
+                <img
+                  class="light-image-block-l"
+                  src="/@src/assets/illustrations/landing/app-1.webp"
+                  alt=""
+                />
+                <img
+                  class="dark-image-block-l"
+                  src="/@src/assets/illustrations/landing/app-1-dark.webp"
+                  alt=""
+                />
+              </div>
+              <div class="hero-mockup-gradient"></div>
+            </div>
           </div>
         </div>
 
@@ -282,19 +268,25 @@ useHead({
           <div class="boxed-features is-flat pb-6">
             <div class="flex-card light-bordered hover-inset">
               <div class="flex-cell is-bordered">
-                <img src="/images/icons/stacks/vuejs-solo.svg" alt="" />
+                <div class="icon-holder">
+                  <i class="iconify" data-icon="mdi:vuejs"></i>
+                </div>
                 <h3>Vue 3</h3>
                 <p>
                   Vue 3 and its powerful composition API makes your experience pleasant.
                 </p>
               </div>
               <div class="flex-cell">
-                <img src="/images/icons/stacks/typescript-square.svg" alt="" />
+                <div class="icon-holder">
+                  <i class="iconify" data-icon="bxl:typescript"></i>
+                </div>
                 <h3>Typescript</h3>
                 <p>Typescript makes things much more simpler but remains optional.</p>
               </div>
               <div class="flex-cell is-bordered">
-                <img src="/images/icons/stacks/vite.svg" alt="" />
+                <div class="icon-holder">
+                  <i class="iconify smaller" data-icon="simple-icons:vite"></i>
+                </div>
                 <h3>Vite JS</h3>
                 <p>
                   Vite 4 is blazing fast, does HOT reloading and parses all your
@@ -302,7 +294,9 @@ useHead({
                 </p>
               </div>
               <div class="flex-cell">
-                <img src="/images/icons/stacks/vscode.svg" alt="" />
+                <div class="icon-holder">
+                  <i class="iconify smaller" data-icon="akar-icons:vscode-fill"></i>
+                </div>
                 <h3>VS Code Integration</h3>
                 <p>
                   Vuero is fully integrated with VS Code to help you produce quality
@@ -310,7 +304,9 @@ useHead({
                 </p>
               </div>
               <div class="flex-cell is-bordered">
-                <img src="/images/icons/stacks/eslint.svg" alt="" />
+                <div class="icon-holder">
+                  <i class="iconify smaller" data-icon="file-icons:eslint"></i>
+                </div>
                 <h3>ES Lint</h3>
                 <p>
                   ES Lint watches your javascript code and makes sure it matches the best
@@ -318,7 +314,9 @@ useHead({
                 </p>
               </div>
               <div class="flex-cell is-bordered">
-                <img src="/images/icons/stacks/prettier.svg" alt="" />
+                <div class="icon-holder">
+                  <i class="iconify smaller" data-icon="file-icons:prettier"></i>
+                </div>
                 <h3>Prettier</h3>
                 <p>
                   Prettier tidies your code and makes it look much more cleaner and easier
@@ -326,16 +324,9 @@ useHead({
                 </p>
               </div>
               <div class="flex-cell">
-                <img
-                  class="light-image-block-l"
-                  src="/images/icons/stacks/stylelint.svg"
-                  alt=""
-                />
-                <img
-                  class="dark-image-block-l"
-                  src="/images/icons/stacks/stylelint-reverse.svg"
-                  alt=""
-                />
+                <div class="icon-holder">
+                  <i class="iconify smaller" data-icon="file-icons:stylelint"></i>
+                </div>
                 <h3>Stylelint</h3>
                 <p>
                   Stylelint looks for poorly formatted styles and fixes everything for
@@ -343,7 +334,9 @@ useHead({
                 </p>
               </div>
               <div class="flex-cell">
-                <img src="/images/icons/stacks/iconify.svg" alt="" />
+                <div class="icon-holder">
+                  <i class="iconify smaller" data-icon="simple-icons:iconify"></i>
+                </div>
                 <h3>Iconify</h3>
                 <p>
                   Iconify displays icons inside your code editor so you always know what
@@ -351,7 +344,9 @@ useHead({
                 </p>
               </div>
               <div class="flex-cell">
-                <img src="/images/icons/stacks/cypress.svg" alt="" />
+                <div class="icon-holder">
+                  <i class="iconify smaller" data-icon="simple-icons:cypress"></i>
+                </div>
                 <h3>Cypress</h3>
                 <p>
                   Cypress handles end to end testing to make sure everything works as
@@ -359,7 +354,9 @@ useHead({
                 </p>
               </div>
               <div class="flex-cell">
-                <img src="/images/icons/stacks/pnpm-yarn.svg" alt="" />
+                <div class="icon-holder">
+                  <i class="iconify smaller" data-icon="file-icons:pnpm"></i>
+                </div>
                 <h3>Pnpm + Yarn</h3>
                 <p>
                   Vuero works very well with Pnpm or Yarn for efficient dependency
@@ -367,7 +364,9 @@ useHead({
                 </p>
               </div>
               <div class="flex-cell">
-                <img src="/images/icons/stacks/docker-whale.svg" alt="" />
+                <div class="icon-holder">
+                  <i class="iconify smaller" data-icon="simple-icons:docker"></i>
+                </div>
                 <h3>Docker</h3>
                 <p>
                   Vuero ships with a Docker file to make your test deployments faster and
@@ -375,7 +374,9 @@ useHead({
                 </p>
               </div>
               <div class="flex-cell">
-                <img src="/images/icons/stacks/robot.svg" alt="" />
+                <div class="icon-holder">
+                  <i class="iconify smaller" data-icon="mdi:robot"></i>
+                </div>
                 <h3>Robot Friendly</h3>
                 <p>
                   Fully featured with structured data. Help your site display in richer
@@ -383,7 +384,9 @@ useHead({
                 </p>
               </div>
               <div class="flex-cell">
-                <img src="/images/icons/misc/success.svg" alt="" />
+                <div class="icon-holder">
+                  <i class="iconify smaller" data-icon="ic:twotone-check-circle"></i>
+                </div>
                 <h3>Props Validation</h3>
                 <p>
                   Vuero base components ship with props validation to prevent unexpected
@@ -391,7 +394,9 @@ useHead({
                 </p>
               </div>
               <div class="flex-cell">
-                <img src="/images/icons/misc/error.svg" alt="" />
+                <div class="icon-holder">
+                  <i class="iconify smaller" data-icon="solar:folder-error-bold"></i>
+                </div>
                 <h3>Error Handling</h3>
                 <p>
                   While developping Vuero, we focused on providing an up to standards
@@ -399,7 +404,12 @@ useHead({
                 </p>
               </div>
               <div class="flex-cell">
-                <img src="/images/icons/misc/folder.svg" alt="" />
+                <div class="icon-holder">
+                  <i
+                    class="iconify smaller"
+                    data-icon="solar:sidebar-minimalistic-bold"
+                  ></i>
+                </div>
                 <h3>Project Structure</h3>
                 <p>
                   A clean and organized project structure lets you find any file or
@@ -407,7 +417,9 @@ useHead({
                 </p>
               </div>
               <div class="flex-cell">
-                <img src="/images/icons/misc/documentation.svg" alt="" />
+                <div class="icon-holder">
+                  <i class="iconify smaller" data-icon="ic:round-menu-book"></i>
+                </div>
                 <h3>Component Guide</h3>
                 <p>
                   A full component / plugin documentation with a lot of code examples
@@ -416,51 +428,10 @@ useHead({
               </div>
             </div>
           </div>
-
-          <!--Title-->
-          <div class="section-title has-text-centered">
-            <h2 class="title is-2">Get started with Vuero</h2>
-            <h4>
-              Watch the quickstart tutorial and access our private Discord and GitHub
-              repo.
-            </h4>
-
-            <div class="mt-4">
-              <VButtons align="centered">
-                <VButton
-                  href="https://go.cssninja.io/discord"
-                  icon="fa-brands:discord"
-                  dark-outlined
-                  raised
-                >
-                  Discord Access
-                </VButton>
-                <VButton
-                  href="https://cssninja.io/faq/github-access"
-                  target="_blank"
-                  icon="fa-brands:github"
-                  dark-outlined
-                  raised
-                >
-                  GitHub Access
-                </VButton>
-              </VButtons>
-            </div>
-          </div>
-
-          <div class="video-player-container-wrapper mb-6">
-            <VPlyr
-              ratio="16by9"
-              source="https://www.youtube.com/embed/lE5VNpP8JqA?modestbranding=1&rel=0&showinfo=0"
-              poster="/video/poster-2c.jpg"
-              title="VUERO | part 1 - Cleaning the project and getting started"
-              embed
-            />
-          </div>
         </div>
       </div>
 
-      <div id="vuero-demos" class="section section-focus">
+      <div id="vuero-demos" class="section">
         <div class="container">
           <!--Title-->
           <div class="section-title has-text-centered">
@@ -484,7 +455,7 @@ useHead({
 
           <!-- Feature -->
           <div class="columns is-vcentered side-feature">
-            <div class="column is-6 has-text-centered">
+            <div class="column is-6 has-text-centered gridlines">
               <img
                 class="light-image-l featured-image"
                 src="/@src/assets/illustrations/landing/feature-1.webp"
@@ -496,7 +467,7 @@ useHead({
                 alt=""
               />
             </div>
-            <div class="column is-5">
+            <div class="column is-5 is-offset-1">
               <h2 class="title m-b-10 is-centered-tablet-portrait">Incredible UI</h2>
               <p class="section-feature-description is-centered-tablet-portrait">
                 Vuero's UI has been carefully thought and designed, and is simply one of
@@ -541,7 +512,7 @@ useHead({
           </div>
           <!-- Feature -->
           <div class="columns is-vcentered side-feature">
-            <div class="column is-6 has-text-centered">
+            <div class="column is-6 has-text-centered gridlines">
               <img
                 class="light-image-l featured-image"
                 src="/@src/assets/illustrations/landing/feature-3.svg"
@@ -553,7 +524,7 @@ useHead({
                 alt=""
               />
             </div>
-            <div class="column is-5">
+            <div class="column is-5 is-offset-1">
               <h2 class="title m-b-10 is-centered-tablet-portrait">Handcrafted UI</h2>
               <p class="section-feature-description is-centered-tablet-portrait">
                 Vuero ships with it's own component library based on the Bulma.io CSS
@@ -591,7 +562,7 @@ useHead({
         </div>
       </div>
 
-      <div id="vuero-components" class="section section-focus">
+      <div id="vuero-components" class="section">
         <div class="container">
           <div class="columns is-vcentered">
             <div class="column is-6 is-offset-3 has-text-centered">
