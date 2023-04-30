@@ -114,7 +114,7 @@ const { trendWidgetChartOptions } = useTrendWidgetChart()
               <a class="action-icon">
                 <i
                   aria-hidden="true"
-                  class="iconify"
+                  class="iconify rtl-reflect"
                   data-icon="feather:chevron-left"
                 ></i>
               </a>
@@ -126,7 +126,7 @@ const { trendWidgetChartOptions } = useTrendWidgetChart()
               <a class="action-icon">
                 <i
                   aria-hidden="true"
-                  class="iconify"
+                  class="iconify rtl-reflect"
                   data-icon="feather:chevron-right"
                 ></i>
               </a>

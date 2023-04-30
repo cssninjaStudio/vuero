@@ -2,7 +2,7 @@
 import { useI18n } from 'vue-i18n'
 
 import { useHead } from '@vueuse/head'
-import { toFormValidator } from '@vee-validate/zod'
+import { toTypedSchema } from '@vee-validate/zod'
 import { useForm } from 'vee-validate'
 import { z as zod } from 'zod'
 
@@ -18,7 +18,7 @@ const isLoading = ref(false)
 const { t } = useI18n()
 
 // Define a validation schema
-const validationSchema = toFormValidator(
+const validationSchema = toTypedSchema(
   zod
     .object({
       name: zod
@@ -100,6 +100,7 @@ useHead({
             />
             <span></span>
           </label>
+          <LanguageDropdown />
           <div class="auth-logo">
             <RouterLink to="/">
               <AnimatedLogo class="top-logo" width="36px" height="36px" />

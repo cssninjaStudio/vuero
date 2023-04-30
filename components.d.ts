@@ -212,6 +212,7 @@ declare module '@vue/runtime-core' {
     LandingEmptyNavigation: typeof import('./src/components/partials/landing/LandingEmptyNavigation.vue')['default']
     LandingFooter: typeof import('./src/components/partials/landing/LandingFooter.vue')['default']
     LandingNavigation: typeof import('./src/components/partials/landing/LandingNavigation.vue')['default']
+    LanguageDropdown: typeof import('./src/components/LanguageDropdown.vue')['default']
     LanguagesPanel: typeof import('./src/components/partials/panels/LanguagesPanel.vue')['default']
     LayoutsMobileSubsidebar: typeof import('./src/layouts/mobile-subsidebars/LayoutsMobileSubsidebar.vue')['default']
     LayoutsSubnav: typeof import('./src/layouts/navbar-items/LayoutsSubnav.vue')['default']
