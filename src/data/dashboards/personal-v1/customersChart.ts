@@ -25,7 +25,7 @@ export function useCustomersCharts() {
         show: false,
       },
     },
-    colors: [themeColors.accent, themeColors.info, themeColors.green],
+    colors: [themeColors.accent, themeColors.info, themeColors.primary],
     title: {
       text: 'Customers',
       align: 'left',
