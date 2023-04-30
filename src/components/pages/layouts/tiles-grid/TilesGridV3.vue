@@ -476,13 +476,12 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .tile-grid {
   .columns {
-    margin-#{$start-direction}: -0.5rem !important;
-    margin-#{$end-direction}: -0.5rem !important;
+    margin-inline-start: -0.5rem !important;
+    margin-inline-end: -0.5rem !important;
     margin-top: -0.5rem !important;
   }
 
@@ -494,8 +493,8 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
 .tile-grid-v3 {
   .tile {
     &.is-ancestor {
-      margin-#{$start-direction}: -0.5rem;
-      margin-#{$end-direction}: -0.5rem;
+      margin-inline-start: -0.5rem;
+      margin-inline-end: -0.5rem;
       margin-top: -0.5rem;
     }
 
@@ -530,7 +529,7 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
         }
 
         .meta {
-          margin-#{$start-direction}: 12px;
+          margin-inline-start: 12px;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
@@ -564,7 +563,7 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
             }
 
             .meta-inner {
-              margin-#{$start-direction}: 8px;
+              margin-inline-start: 8px;
               line-height: 1.2;
 
               span {
@@ -642,7 +641,7 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
             }
 
             .meta-inner {
-              margin-#{$start-direction}: 8px;
+              margin-inline-start: 8px;
               line-height: 1.2;
 
               span {
@@ -682,7 +681,7 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
         }
 
         .meta {
-          margin-#{$start-direction}: 12px;
+          margin-inline-start: 12px;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
@@ -724,7 +723,7 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
             }
 
             .meta-inner {
-              margin-#{$start-direction}: 8px;
+              margin-inline-start: 8px;
               line-height: 1.2;
 
               span {
@@ -808,7 +807,7 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
             }
 
             .meta-inner {
-              margin-#{$start-direction}: 8px;
+              margin-inline-start: 8px;
               line-height: 1.2;
 
               span {
@@ -871,7 +870,7 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
         }
 
         .meta {
-          margin-#{$start-direction}: 12px !important;
+          margin-inline-start: 12px !important;
           display: flex !important;
           flex-direction: column !important;
           justify-content: space-between !important;
@@ -909,7 +908,7 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
             }
 
             .meta-inner {
-              margin-#{$start-direction}: 8px !important;
+              margin-inline-start: 8px !important;
               line-height: 1.2 !important;
 
               span {
@@ -958,7 +957,7 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
         }
 
         .meta {
-          margin-#{$start-direction}: 12px !important;
+          margin-inline-start: 12px !important;
           display: flex !important;
           flex-direction: column !important;
           justify-content: space-between !important;
@@ -997,7 +996,7 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
             }
 
             .meta-inner {
-              margin-#{$start-direction}: 8px !important;
+              margin-inline-start: 8px !important;
               line-height: 1.2 !important;
 
               span {

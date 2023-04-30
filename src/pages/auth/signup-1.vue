@@ -429,12 +429,10 @@ onUnmounted(() => {
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 .signup-nav {
   position: fixed;
   top: 0;
-  #{$start-direction}: 0;
+  inset-inline-start: 0;
   width: 100%;
   height: 65px;
   z-index: 99;
@@ -460,8 +458,8 @@ onUnmounted(() => {
 .signup-footer {
   position: absolute;
   bottom: 10px;
-  #{$start-direction}: 0;
-  #{$end-direction}: 0;
+  inset-inline-start: 0;
+  inset-inline-end: 0;
 
   .footer-inner {
     display: flex;
@@ -477,8 +475,8 @@ onUnmounted(() => {
 .signup-steps {
   position: absolute;
   top: 60px;
-  #{$start-direction}: 0;
-  #{$end-direction}: 0;
+  inset-inline-start: 0;
+  inset-inline-end: 0;
   margin: 0 auto;
   max-width: 380px;
 
@@ -492,8 +490,8 @@ onUnmounted(() => {
     .progress {
       position: absolute;
       top: 50%;
-      #{$start-direction}: 0;
-      #{$end-direction}: 0;
+      inset-inline-start: 0;
+      inset-inline-end: 0;
       transform: translateY(-50%);
       width: calc(100% - 80px);
       margin: 0 auto;
@@ -570,12 +568,12 @@ onUnmounted(() => {
       .step-label {
         position: absolute;
         top: 45px;
-        #{$start-direction}: 0;
-        #{$end-direction}: 0;
+        inset-inline-start: 0;
+        inset-inline-end: 0;
         margin: 0 auto;
         text-align: center;
         min-width: 100px;
-        transform: translateX($transform-direction * -25%);
+        transform: translateX(calc(var(--transform-direction) * -25%));
         font-size: 0.8rem;
         font-weight: 500;
         color: var(--dark-text);
@@ -605,9 +603,9 @@ onUnmounted(() => {
 
   .card-bg {
     position: absolute;
-    #{$end-direction}: 0;
+    inset-inline-end: 0;
     bottom: 0;
-    transform: scaleX($transform-direction * 1);
+    transform: scaleX(calc(var(--transform-direction) * 1));
     display: block;
     width: 90%;
     transition: all 0.3s; // transition-all test
@@ -648,7 +646,7 @@ onUnmounted(() => {
           }
 
           > div {
-            margin-#{$start-direction}: auto;
+            margin-inline-start: auto;
             transform: scale(0.8);
           }
         }
@@ -673,7 +671,7 @@ onUnmounted(() => {
         .input {
           padding-top: 10px;
           height: 60px;
-          padding-#{$start-direction}: 10px;
+          padding-inline-start: 10px;
           border-radius: 8px;
           transition: all 0.3s; // transition-all test
 
@@ -698,7 +696,7 @@ onUnmounted(() => {
         .auth-label {
           position: absolute;
           top: 6px;
-          #{$start-direction}: 10px;
+          inset-inline-start: 10px;
           font-size: 0.8rem;
           color: var(--dark-text);
           font-weight: 500;
@@ -709,7 +707,7 @@ onUnmounted(() => {
         .autv-icon {
           position: absolute;
           top: 0;
-          #{$start-direction}: 0;
+          inset-inline-start: 0;
           height: 60px;
           width: 60px;
           display: flex;
@@ -727,7 +725,7 @@ onUnmounted(() => {
           .validation-icon {
             position: absolute;
             top: 0;
-            #{$end-direction}: 0;
+            inset-inline-end: 0;
             height: 60px;
             width: 60px;
             display: none;
@@ -802,7 +800,7 @@ onUnmounted(() => {
 
           a {
             display: block;
-            margin-#{$start-direction}: auto;
+            margin-inline-start: auto;
             color: var(--muted-grey);
             font-weight: 500;
             font-size: 0.9rem;
@@ -831,7 +829,7 @@ onUnmounted(() => {
         align-items: center;
 
         > span {
-          margin-#{$start-direction}: 12px;
+          margin-inline-start: 12px;
           font-family: var(--font);
 
           a {
@@ -848,14 +846,14 @@ onUnmounted(() => {
 
         .button {
           min-width: 180px;
-          margin-#{$start-direction}: 0 !important;
+          margin-inline-start: 0 !important;
         }
       }
 
       .button {
         height: 46px;
         width: 190px;
-        margin-#{$start-direction}: 6px;
+        margin-inline-start: 6px;
 
         &:first-child {
           &:hover {
@@ -884,7 +882,7 @@ onUnmounted(() => {
         input {
           position: absolute;
           top: 0;
-          #{$start-direction}: 0;
+          inset-inline-start: 0;
           width: 100%;
           height: 100%;
           opacity: 0;
@@ -920,7 +918,7 @@ onUnmounted(() => {
           }
 
           .meta {
-            margin-#{$start-direction}: 10px;
+            margin-inline-start: 10px;
 
             span {
               display: block;
@@ -940,11 +938,11 @@ onUnmounted(() => {
         }
 
         &:first-child {
-          margin-#{$end-direction}: 6px;
+          margin-inline-end: 6px;
         }
 
         &:nth-child(2) {
-          margin-#{$start-direction}: 6px;
+          margin-inline-start: 6px;
         }
       }
     }
@@ -987,13 +985,13 @@ onUnmounted(() => {
         border-radius: var(--radius-rounded);
         display: block;
         border: 4px solid #e8e8e8;
-        margin-#{$start-direction}: -1px;
+        margin-inline-start: -1px;
       }
 
       .upload-button {
         position: absolute;
         bottom: 18px;
-        #{$end-direction}: 0;
+        inset-inline-end: 0;
         width: 36px;
         height: 36px;
         display: flex;
@@ -1134,11 +1132,11 @@ onUnmounted(() => {
     }
 
     &.is-prev {
-      #{$start-direction}: -6px;
+      inset-inline-start: -6px;
     }
 
     &.is-next {
-      #{$end-direction}: -6px;
+      inset-inline-end: -6px;
     }
   }
 }
@@ -1353,8 +1351,8 @@ onUnmounted(() => {
 
     .signup-subtitle {
       max-width: 330px;
-      margin-#{$start-direction}: auto;
-      margin-#{$end-direction}: auto;
+      margin-inline-start: auto;
+      margin-inline-end: auto;
     }
 
     .avatar-selector {
@@ -1390,8 +1388,8 @@ onUnmounted(() => {
 
     .signup-subtitle {
       max-width: 330px;
-      margin-#{$start-direction}: auto;
-      margin-#{$end-direction}: auto;
+      margin-inline-start: auto;
+      margin-inline-end: auto;
     }
 
     .button-wrap {

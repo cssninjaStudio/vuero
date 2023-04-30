@@ -368,7 +368,6 @@ const topicList = dashboardData.topicList as any[]
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .lifestyle-dashboard-v2 {
@@ -423,7 +422,7 @@ const topicList = dashboardData.topicList as any[]
     .long-card-overlay {
       position: absolute;
       top: 0;
-      #{$start-direction}: 0;
+      inset-inline-start: 0;
       height: 100%;
       width: 100%;
       background: var(--dark-sidebar);
@@ -438,7 +437,7 @@ const topicList = dashboardData.topicList as any[]
     .long-card-text-overlay {
       position: absolute;
       top: 0;
-      #{$start-direction}: 0;
+      inset-inline-start: 0;
       height: 100%;
       width: 100%;
       display: flex;

@@ -426,7 +426,6 @@ const activeTab = ref<TabId>('team')
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .right-panel-wrapper {
@@ -449,7 +448,7 @@ const activeTab = ref<TabId>('team')
           margin-bottom: 16px;
 
           .meta {
-            margin-#{$start-direction}: 12px;
+            margin-inline-start: 12px;
 
             span {
               display: block;
@@ -476,7 +475,7 @@ const activeTab = ref<TabId>('team')
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-#{$start-direction}: auto;
+            margin-inline-start: auto;
             height: 34px;
             width: 34px;
             background: var(--white);
@@ -519,7 +518,7 @@ const activeTab = ref<TabId>('team')
             }
 
             .meta {
-              margin-#{$start-direction}: 12px;
+              margin-inline-start: 12px;
 
               span {
                 display: block;
@@ -543,7 +542,7 @@ const activeTab = ref<TabId>('team')
               display: flex;
               justify-content: center;
               align-items: center;
-              margin-#{$start-direction}: auto;
+              margin-inline-start: auto;
               height: 34px;
               width: 34px;
               background: var(--white);
@@ -603,10 +602,10 @@ const activeTab = ref<TabId>('team')
               content: '';
               position: absolute;
               top: 36px;
-              #{$start-direction}: 18px;
+              inset-inline-start: 18px;
               width: 1px;
               height: calc(100% - 36px);
-              border-#{$start-direction}: 1px solid var(--fade-grey-dark-3);
+              border-inline-start: 1px solid var(--fade-grey-dark-3);
             }
 
             .timeline-icon {
@@ -626,7 +625,7 @@ const activeTab = ref<TabId>('team')
                 content: '';
                 position: absolute;
                 top: 17px;
-                #{$start-direction}: 40px;
+                inset-inline-start: 40px;
                 width: 20px;
                 height: 1px;
                 border-top: 1px solid var(--fade-grey-dark-3);
@@ -647,7 +646,7 @@ const activeTab = ref<TabId>('team')
             }
 
             .timeline-content {
-              margin-#{$start-direction}: 34px;
+              margin-inline-start: 34px;
               line-height: 1.2;
 
               p {
@@ -669,8 +668,8 @@ const activeTab = ref<TabId>('team')
 
         .tabs-inner {
           .tabs {
-            margin-#{$start-direction}: auto;
-            margin-#{$end-direction}: auto;
+            margin-inline-start: auto;
+            margin-inline-end: auto;
           }
         }
       }

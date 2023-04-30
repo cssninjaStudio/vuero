@@ -212,7 +212,6 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .lifestyle-dashboard-v4 {
@@ -233,15 +232,15 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
       img {
         position: absolute;
         top: 0;
-        #{$start-direction}: -40px;
+        inset-inline-start: -40px;
         display: block;
         pointer-events: none;
       }
     }
 
     .header-meta {
-      margin-#{$start-direction}: 0;
-      padding-#{$end-direction}: 30px;
+      margin-inline-start: 0;
+      padding-inline-end: 30px;
 
       h3 {
         color: var(--smoke-white);
@@ -262,7 +261,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
         span {
           font-size: 0.8rem;
           text-transform: uppercase;
-          margin-#{$end-direction}: 6px;
+          margin-inline-end: 6px;
         }
 
         i {
@@ -275,8 +274,8 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
   .writing-stats {
     display: flex;
     margin-bottom: 1rem;
-    margin-#{$start-direction}: -8px;
-    margin-#{$end-direction}: -8px;
+    margin-inline-start: -8px;
+    margin-inline-end: -8px;
 
     .writing-stat {
       @include vuero-l-card;
@@ -394,7 +393,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
         span {
           display: block;
           min-width: 60px;
-          text-align: #{$end-direction};
+          text-align: inset-inline-end;
           font-family: var(--font);
           font-weight: 600;
           font-size: 0.8rem;
@@ -434,7 +433,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
         .button {
           font-size: 0.8rem;
           border-radius: 50px;
-          margin-#{$end-direction}: 4px;
+          margin-inline-end: 4px;
 
           &.is-selected {
             background: var(--primary);
@@ -458,8 +457,8 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
           .featured-image {
             height: 180px;
             overflow: hidden;
-            border-top-#{$start-direction}-radius: 18px;
-            border-top-#{$end-direction}-radius: 18px;
+            border-start-start-radius: 18px;
+            border-start-end-radius: 18px;
 
             img {
               display: block;
@@ -566,7 +565,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
           max-width: 260px;
           margin: 0 auto;
           top: 0;
-          #{$start-direction}: 0;
+          inset-inline-start: 0;
           margin-top: -34px;
         }
       }
@@ -576,8 +575,8 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
 
         > p {
           max-width: 280px;
-          margin-#{$start-direction}: auto;
-          margin-#{$end-direction}: auto;
+          margin-inline-start: auto;
+          margin-inline-end: auto;
         }
       }
     }
@@ -597,8 +596,8 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
         .articles-feed-list-inner {
           display: flex;
           flex-wrap: wrap;
-          margin-#{$start-direction}: -12px;
-          margin-#{$end-direction}: -12px;
+          margin-inline-start: -12px;
+          margin-inline-end: -12px;
 
           .articles-feed-item {
             width: calc(50% - 24px);

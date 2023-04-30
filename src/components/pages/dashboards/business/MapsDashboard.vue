@@ -421,8 +421,6 @@ watch(
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 .has-top-nav {
   .dashboard-map-wrapper {
     top: 80px;
@@ -433,7 +431,7 @@ watch(
 .dashboard-map-wrapper {
   position: absolute;
   top: 0;
-  #{$start-direction}: 0;
+  inset-inline-start: 0;
   width: 100%;
   height: 100%;
 
@@ -536,7 +534,7 @@ watch(
               svg {
                 height: 16px;
                 width: 16px;
-                margin-#{$end-direction}: 0.25rem;
+                margin-inline-end: 0.25rem;
                 color: var(--light-text);
               }
             }
@@ -568,7 +566,7 @@ watch(
     .mapboxgl-popup-tip {
       z-index: 30;
       position: relative;
-      #{$start-direction}: -2px;
+      inset-inline-start: -2px;
     }
   }
 
@@ -576,7 +574,7 @@ watch(
     .mapboxgl-popup-tip {
       z-index: 30;
       position: relative;
-      #{$end-direction}: -2px;
+      inset-inline-end: -2px;
     }
   }
 
@@ -604,8 +602,8 @@ watch(
   width: 100%;
   max-width: 380px;
   top: 1rem;
-  #{$start-direction}: 0;
-  #{$end-direction}: 0;
+  inset-inline-start: 0;
+  inset-inline-end: 0;
   margin: 0 auto;
 }
 
@@ -635,14 +633,14 @@ watch(
 
   .mapboxgl-ctrl-geocoder--icon-search {
     top: 13px;
-    #{$start-direction}: 12px;
+    inset-inline-start: 12px;
     transition: stroke 0.3s;
     fill: var(--light-text);
   }
 
   .mapboxgl-ctrl-geocoder--pin-right > * {
     top: 11px !important;
-    #{$end-direction}: 11px !important;
+    inset-inline-end: 11px !important;
   }
 
   .mapboxgl-ctrl-geocoder--button {
@@ -651,7 +649,7 @@ watch(
 
   input {
     height: 44px;
-    padding-#{$start-direction}: 3rem;
+    padding-inline-start: 3rem;
     border-radius: 0.75rem;
     background: var(--white);
     transition: all 0.3s; // transition-all test
@@ -699,13 +697,13 @@ watch(
 
     &.mapboxgl-popup-anchor-left {
       .mapboxgl-popup-tip {
-        border-#{$end-direction}-color: var(--dark-sidebar-dark-3);
+        border-inline-end-color: var(--dark-sidebar-dark-3);
       }
     }
 
     &.mapboxgl-popup-anchor-right {
       .mapboxgl-popup-tip {
-        border-#{$start-direction}-color: var(--dark-sidebar-dark-3);
+        border-inline-start-color: var(--dark-sidebar-dark-3);
       }
     }
 

@@ -40,11 +40,11 @@ $sides: top, bottom, left, right;
 }
 
 .no-padding-left {
-  padding-#{$start-direction}: 0 !important;
+  padding-inline-start: 0 !important;
 }
 
 .no-padding-right {
-  padding-#{$end-direction}: 0 !important;
+  padding-inline-end: 0 !important;
 }
 
 .no-margin-all {
@@ -60,7 +60,7 @@ $sides: top, bottom, left, right;
 }
 
 .no-margin-left {
-  margin-#{$start-direction}: 0 !important;
+  margin-inline-start: 0 !important;
 }
 
 .is-block {
@@ -76,7 +76,7 @@ $sides: top, bottom, left, right;
 }
 
 .no-margin-right {
-  margin-#{$end-direction}: 0 !important;
+  margin-inline-end: 0 !important;
 }
 
 .has-fullheight {

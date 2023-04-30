@@ -214,8 +214,6 @@ watchPostEffect(() => {
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 .is-dark {
   .collapsed-messaging {
     background: var(--dark-sidebar-light-5);
@@ -266,8 +264,8 @@ watchPostEffect(() => {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .collapsed-messaging {
     &.is-active {
-      #{$start-direction}: 60px !important;
-      border-#{$start-direction}: 1px var(--fade-grey-dark-3);
+      inset-inline-start: 60px !important;
+      border-inline-start: 1px var(--fade-grey-dark-3);
     }
   }
 }

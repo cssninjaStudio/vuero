@@ -127,8 +127,6 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 .dashboard-header-wrapper {
   position: relative;
   display: flex;
@@ -158,13 +156,13 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
       .button {
         position: absolute;
         bottom: 5px;
-        #{$end-direction}: 5px;
+        inset-inline-end: 5px;
       }
     }
 
     .header-meta {
       font-family: var(--font);
-      margin-#{$start-direction}: 16px;
+      margin-inline-start: 16px;
 
       .username-wrap {
         display: flex;
@@ -178,7 +176,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
 
             i {
               font-size: 1.2rem;
-              margin-#{$start-direction}: 5px;
+              margin-inline-start: 5px;
               color: var(--yellow);
             }
           }
@@ -189,10 +187,10 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
         }
 
         .badges {
-          margin-#{$start-direction}: 16px;
+          margin-inline-start: 16px;
 
           .tag {
-            margin-#{$end-direction}: 0.5rem;
+            margin-inline-end: 0.5rem;
           }
         }
       }
@@ -202,14 +200,14 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
         padding: 16px 0;
 
         .meta-stat {
-          margin-#{$end-direction}: 30px;
+          margin-inline-end: 30px;
 
           span {
             &:first-child {
               color: var(--dark-text);
               font-size: 1.3rem;
               font-weight: 600;
-              margin-#{$end-direction}: 0.25rem;
+              margin-inline-end: 0.25rem;
             }
 
             &:nth-child(2) {
@@ -241,7 +239,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
           border: 3px solid var(--white);
           background: var(--fade-grey);
           border-radius: var(--radius-rounded);
-          margin-#{$end-direction}: 10px;
+          margin-inline-end: 10px;
           box-shadow: var(--light-box-shadow);
 
           &.is-primary {
@@ -263,7 +261,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
     }
 
     .end {
-      margin-#{$start-direction}: auto;
+      margin-inline-start: auto;
     }
   }
 }
@@ -305,7 +303,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
       }
 
       .header-meta {
-        margin-#{$start-direction}: 0;
+        margin-inline-start: 0;
         text-align: center;
 
         .username-wrap {
@@ -332,7 +330,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
 
       .end {
         position: absolute;
-        #{$end-direction}: 0;
+        inset-inline-end: 0;
       }
     }
   }

@@ -365,8 +365,6 @@ useHead({
 </template>
 
 <style lang="scss" scoped>
-@import '/@src/scss/abstracts/ltr';
-
 .roadmap-wrapper {
   max-width: 940px;
   margin: 0 auto;
@@ -429,7 +427,7 @@ useHead({
             margin-bottom: 0;
 
             &:first-child {
-              margin-#{$end-direction}: 2rem;
+              margin-inline-end: 2rem;
             }
           }
         }
@@ -463,13 +461,13 @@ useHead({
           .head-info {
             .head-progress {
               font-family: var(--font);
-              border-#{$end-direction}: 1px solid var(--border);
-              padding-#{$end-direction}: 1rem;
-              margin-#{$end-direction}: 1rem;
+              border-inline-end: 1px solid var(--border);
+              padding-inline-end: 1rem;
+              margin-inline-end: 1rem;
 
               .text {
                 color: var(--light-text);
-                margin-#{$end-direction}: 0.75rem;
+                margin-inline-end: 0.75rem;
               }
 
               .value {
@@ -490,7 +488,7 @@ useHead({
           :deep(.progress) {
             position: absolute !important;
             bottom: 0;
-            #{$start-direction}: 0;
+            inset-inline-start: 0;
             width: 100%;
           }
         }
@@ -505,7 +503,7 @@ useHead({
 
                   .tag {
                     border-width: 2px;
-                    margin-#{$end-direction}: 1rem;
+                    margin-inline-end: 1rem;
                   }
 
                   + .changelog-line {
@@ -556,7 +554,7 @@ useHead({
     }
 
     .copyright {
-      margin-#{$start-direction}: auto;
+      margin-inline-start: auto;
       font-family: var(--font);
       color: var(--light-text);
     }
@@ -581,8 +579,8 @@ useHead({
             :deep(.field) {
               max-width: 100%;
               width: 100%;
-              margin-#{$start-direction}: 0 !important;
-              margin-#{$end-direction}: 0 !important;
+              margin-inline-start: 0 !important;
+              margin-inline-end: 0 !important;
               margin-bottom: 1rem !important;
 
               .control {

@@ -164,7 +164,6 @@ const onSubmit = () => {
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 @import '/@src/scss/components/forms-outer';
 
@@ -209,12 +208,12 @@ const onSubmit = () => {
 
           .left {
             position: relative;
-            border-#{$end-direction}: 1px solid var(--fade-grey-dark-3);
+            border-inline-end: 1px solid var(--fade-grey-dark-3);
 
             .operator {
               position: absolute;
               top: 17px;
-              #{$end-direction}: -10px;
+              inset-inline-end: -10px;
               text-transform: uppercase;
               font-family: var(--font);
               font-weight: 500;
@@ -234,7 +233,7 @@ const onSubmit = () => {
               input {
                 position: absolute;
                 top: 0;
-                #{$start-direction}: 0;
+                inset-inline-start: 0;
                 height: 100%;
                 width: 100%;
                 opacity: 0;
@@ -328,26 +327,26 @@ const onSubmit = () => {
         .form-body {
           .form-section {
             flex-direction: column;
-            padding-#{$end-direction}: 0;
-            padding-#{$start-direction}: 0;
+            padding-inline-end: 0;
+            padding-inline-start: 0;
 
             .left,
             .right {
               width: 100%;
-              padding-#{$end-direction}: 30px;
-              padding-#{$start-direction}: 30px;
+              padding-inline-end: 30px;
+              padding-inline-start: 30px;
             }
 
             .left {
-              border-#{$end-direction}: none;
+              border-inline-end: none;
               border-bottom: 1px solid var(--fade-grey-dark-3);
               padding-bottom: 40px;
 
               .operator {
                 top: unset;
                 bottom: -14px;
-                #{$start-direction}: 0;
-                #{$end-direction}: 0;
+                inset-inline-start: 0;
+                inset-inline-end: 0;
                 margin: 0 auto;
                 text-align: center;
                 max-width: 60px;
@@ -370,8 +369,8 @@ const onSubmit = () => {
       .form-outer {
         .form-body {
           .form-section {
-            padding-#{$end-direction}: 0;
-            padding-#{$start-direction}: 0;
+            padding-inline-end: 0;
+            padding-inline-start: 0;
           }
         }
       }

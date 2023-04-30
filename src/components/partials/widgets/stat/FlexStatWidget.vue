@@ -31,8 +31,6 @@ const props = withDefaults(
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 .stat-widget {
   &.flex-stat-widget {
     .chart-media {
@@ -41,7 +39,7 @@ const props = withDefaults(
       justify-content: space-between;
 
       .meta {
-        margin-#{$end-direction}: 30px;
+        margin-inline-end: 30px;
         align-items: center;
         font-family: var(--font);
 

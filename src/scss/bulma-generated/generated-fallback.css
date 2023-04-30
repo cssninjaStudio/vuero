@@ -3574,7 +3574,7 @@ code {
 @media only screen and (width >= 768px) {
   .vertical-tabs-wrapper .tabs ul li.is-active a {
     color: rgb(42, 172, 142);
-    border-right-color: rgb(42, 172, 142);
+    border-inline-end-color: rgb(42, 172, 142);
   }
 }
 
@@ -3636,11 +3636,11 @@ code {
 }
 
 .hint--primary.hint--left::before {
-  border-left-color: rgb(42, 172, 142);
+  border-inline-start-color: rgb(42, 172, 142);
 }
 
 .hint--primary.hint--right::before {
-  border-right-color: rgb(42, 172, 142);
+  border-inline-end-color: rgb(42, 172, 142);
 }
 
 .hint--error::after {
@@ -3672,11 +3672,11 @@ code {
 }
 
 .hint--error.hint--left::before {
-  border-left-color: rgb(230, 41, 100);
+  border-inline-start-color: rgb(230, 41, 100);
 }
 
 .hint--error.hint--right::before {
-  border-right-color: rgb(230, 41, 100);
+  border-inline-end-color: rgb(230, 41, 100);
 }
 
 .hint--warning::after {
@@ -3708,11 +3708,11 @@ code {
 }
 
 .hint--warning.hint--left::before {
-  border-left-color: rgb(250, 173, 66);
+  border-inline-start-color: rgb(250, 173, 66);
 }
 
 .hint--warning.hint--right::before {
-  border-right-color: rgb(250, 173, 66);
+  border-inline-end-color: rgb(250, 173, 66);
 }
 
 .hint--info::after {
@@ -3744,11 +3744,11 @@ code {
 }
 
 .hint--info.hint--left::before {
-  border-left-color: rgb(3, 152, 226);
+  border-inline-start-color: rgb(3, 152, 226);
 }
 
 .hint--info.hint--right::before {
-  border-right-color: rgb(3, 152, 226);
+  border-inline-end-color: rgb(3, 152, 226);
 }
 
 .hint--success::after {
@@ -3780,11 +3780,11 @@ code {
 }
 
 .hint--success.hint--left::before {
-  border-left-color: rgb(6, 214, 158);
+  border-inline-start-color: rgb(6, 214, 158);
 }
 
 .hint--success.hint--right::before {
-  border-right-color: rgb(6, 214, 158);
+  border-inline-end-color: rgb(6, 214, 158);
 }
 
 .hint--light::after {
@@ -3816,11 +3816,11 @@ code {
 }
 
 .hint--light.hint--left::before {
-  border-left-color: rgb(255, 255, 255);
+  border-inline-start-color: rgb(255, 255, 255);
 }
 
 .hint--light.hint--right::before {
-  border-right-color: rgb(255, 255, 255);
+  border-inline-end-color: rgb(255, 255, 255);
 }
 
 .is-dark .hint--primary::after {
@@ -3852,11 +3852,11 @@ code {
 }
 
 .is-dark .hint--primary.hint--left::before {
-  border-left-color: rgb(42, 172, 142);
+  border-inline-start-color: rgb(42, 172, 142);
 }
 
 .is-dark .hint--primary.hint--right::before {
-  border-right-color: rgb(42, 172, 142);
+  border-inline-end-color: rgb(42, 172, 142);
 }
 
 .ck-editor {

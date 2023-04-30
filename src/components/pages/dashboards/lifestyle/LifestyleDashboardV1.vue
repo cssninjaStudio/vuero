@@ -50,12 +50,10 @@ const activeTab = ref<TabId>('overview')
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 .lifestyle-dashboard-bg {
   position: absolute;
   top: 0;
-  #{$start-direction}: 0;
+  inset-inline-start: 0;
   width: 100%;
   height: 355px;
   background: var(--white);
@@ -114,7 +112,7 @@ const activeTab = ref<TabId>('overview')
         }
 
         .multiselect-options {
-          #{$start-direction}: unset !important;
+          inset-inline-start: unset !important;
           min-width: 180px;
         }
       }
@@ -146,7 +144,7 @@ const activeTab = ref<TabId>('overview')
 
       i {
         font-size: 1.2rem;
-        margin-#{$end-direction}: 6px;
+        margin-inline-end: 6px;
       }
 
       .count {
@@ -162,8 +160,8 @@ const activeTab = ref<TabId>('overview')
 
     .post-group {
       display: flex;
-      margin-#{$start-direction}: -6px;
-      margin-#{$end-direction}: -6px;
+      margin-inline-start: -6px;
+      margin-inline-end: -6px;
 
       a {
         display: block;

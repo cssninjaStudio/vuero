@@ -165,8 +165,6 @@ watch(locale, () => {
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 .right-panel-wrapper {
   &.is-languages {
     .right-panel-head {
@@ -192,7 +190,7 @@ watch(locale, () => {
             input {
               position: absolute;
               top: 0;
-              #{$start-direction}: 0;
+              inset-inline-start: 0;
               height: 100%;
               width: 100%;
               opacity: 0;
@@ -235,7 +233,7 @@ watch(locale, () => {
               .indicator {
                 position: absolute;
                 top: -4px;
-                #{$end-direction}: -4px;
+                inset-inline-end: -4px;
                 height: 26px;
                 width: 26px;
                 border-radius: var(--radius-rounded);

@@ -12,7 +12,6 @@ const props = defineProps<{
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .widget {
@@ -70,7 +69,7 @@ const props = defineProps<{
           content: '';
           position: absolute;
           top: 3px;
-          #{$end-direction}: 4px;
+          inset-inline-end: 4px;
           height: 10px;
           width: 10px;
           border-radius: var(--radius-rounded);
@@ -197,7 +196,7 @@ const props = defineProps<{
       .searcv-button {
         position: absolute;
         top: 0;
-        #{$end-direction}: 0;
+        inset-inline-end: 0;
         height: 42px;
         width: 42px;
         border-radius: 8px;
@@ -345,8 +344,8 @@ const props = defineProps<{
     display: flex;
     flex-wrap: wrap;
     margin-top: -6px;
-    margin-#{$start-direction}: -6px;
-    margin-#{$end-direction}: -6px;
+    margin-inline-start: -6px;
+    margin-inline-end: -6px;
 
     .calendar-square {
       @include vuero-l-card;
@@ -401,8 +400,8 @@ const props = defineProps<{
   .progress-wrap {
     position: absolute;
     bottom: 30px;
-    #{$start-direction}: 0;
-    #{$end-direction}: 0;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
     padding: 0 30px;
 
     .progress {
@@ -523,7 +522,7 @@ const props = defineProps<{
       }
 
       .item-meta {
-        margin-#{$start-direction}: 12px;
+        margin-inline-start: 12px;
 
         span {
           font-family: var(--font);
@@ -555,7 +554,7 @@ const props = defineProps<{
     }
 
     .widget-meta {
-      margin-#{$start-direction}: 10px;
+      margin-inline-start: 10px;
       display: flex;
       flex-direction: column;
       font-family: var(--font);
@@ -586,7 +585,7 @@ const props = defineProps<{
           height: 14px;
           width: 14px;
           stroke-width: 1.4px;
-          margin-#{$end-direction}: 6px;
+          margin-inline-end: 6px;
         }
 
         span {
@@ -619,7 +618,7 @@ const props = defineProps<{
       padding: 16px 0;
 
       .meta {
-        margin-#{$start-direction}: 10px;
+        margin-inline-start: 10px;
         line-height: 1.2;
 
         span {
@@ -647,7 +646,7 @@ const props = defineProps<{
 
         i {
           font-size: 6px;
-          margin-#{$end-direction}: 6px;
+          margin-inline-end: 6px;
         }
       }
 
@@ -693,14 +692,14 @@ const props = defineProps<{
           height: 70px;
           width: 70px;
           top: 0;
-          #{$end-direction}: 0;
+          inset-inline-end: 0;
         }
 
         &.badge-2 {
           height: 50px;
           width: 50px;
           top: 0;
-          #{$start-direction}: 0;
+          inset-inline-start: 0;
         }
       }
     }
@@ -805,7 +804,7 @@ const props = defineProps<{
         font-size: 0.95rem;
         color: var(--dark-text);
         font-weight: 500;
-        margin-#{$start-direction}: 10px;
+        margin-inline-start: 10px;
       }
     }
   }
@@ -937,7 +936,7 @@ const props = defineProps<{
       height: 60px;
       width: 60px;
       bottom: 0;
-      #{$end-direction}: 2px;
+      inset-inline-end: 2px;
       border-radius: var(--radius-rounded);
       border: 6px solid var(--white);
     }
@@ -1019,7 +1018,7 @@ const props = defineProps<{
       .searcv-button {
         position: absolute;
         top: 0;
-        #{$end-direction}: 0;
+        inset-inline-end: 0;
         height: 42px;
         width: 42px;
         border-radius: 8px;
@@ -1057,7 +1056,7 @@ const props = defineProps<{
         font-size: 0.95rem;
         color: var(--dark-text);
         font-weight: 600;
-        margin-#{$start-direction}: 10px;
+        margin-inline-start: 10px;
       }
     }
   }
@@ -1073,8 +1072,8 @@ const props = defineProps<{
 
   .channels {
     display: flex;
-    margin-#{$start-direction}: -8px;
-    margin-#{$end-direction}: -8px;
+    margin-inline-start: -8px;
+    margin-inline-end: -8px;
     width: 100%;
 
     .channel {
@@ -1128,7 +1127,7 @@ const props = defineProps<{
       margin: 8px 0;
 
       .meta {
-        margin-#{$start-direction}: 12px;
+        margin-inline-start: 12px;
         display: flex;
         flex-direction: column;
 

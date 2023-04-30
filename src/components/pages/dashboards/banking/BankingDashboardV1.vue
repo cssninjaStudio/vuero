@@ -429,7 +429,6 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .banking-dashboard-v1 {
@@ -519,7 +518,7 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
             .shape {
               position: absolute;
               bottom: -10px;
-              #{$end-direction}: -10px;
+              inset-inline-end: -10px;
               height: 46px;
               width: 46px;
               background: var(--white);
@@ -529,7 +528,7 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
           }
 
           .credit-card-meta {
-            margin-#{$start-direction}: 16px;
+            margin-inline-start: 16px;
 
             span {
               display: block;
@@ -550,7 +549,7 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
           }
 
           .credit-card-end {
-            margin-#{$start-direction}: auto;
+            margin-inline-start: auto;
           }
         }
 
@@ -601,7 +600,7 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
 
                 img {
                   max-width: 28px;
-                  margin-#{$end-direction}: 6px;
+                  margin-inline-end: 6px;
                 }
               }
 
@@ -609,7 +608,7 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
                 position: relative;
                 top: 0;
                 font-size: 10px;
-                margin-#{$end-direction}: 8px;
+                margin-inline-end: 8px;
               }
             }
           }
@@ -694,7 +693,7 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
       .field {
         position: absolute;
         top: 12px;
-        #{$end-direction}: 16px;
+        inset-inline-end: 16px;
         z-index: 5;
         min-width: 160px;
 
@@ -706,7 +705,7 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
           }
 
           .multiselect-options {
-            #{$start-direction}: unset !important;
+            inset-inline-start: unset !important;
             min-width: 180px;
           }
         }

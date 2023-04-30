@@ -25,7 +25,7 @@
 .sidebar-panel {
   position: fixed;
   top: 0;
-  #{$start-direction}: 80px;
+  inset-inline-start: 80px;
   height: 100%;
   width: 240px;
   background: var(--white);
@@ -96,7 +96,7 @@
       padding: 0 20px;
 
       .project-dropdown {
-        margin-#{$end-direction}: 12px;
+        margin-inline-end: 12px;
         cursor: pointer !important;
 
         > img {
@@ -124,7 +124,7 @@
               }
 
               .meta {
-                margin-#{$start-direction}: 12px;
+                margin-inline-start: 12px;
                 font-family: var(--font);
 
                 span {
@@ -160,7 +160,7 @@
       }
 
       .panel-close {
-        margin-#{$start-direction}: auto;
+        margin-inline-start: auto;
         display: block;
         width: 18px;
         height: 18px;
@@ -182,7 +182,7 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        border-#{$start-direction}: 2px solid transparent;
+        border-inline-start: 2px solid transparent;
         cursor: pointer;
 
         &.is-active {
@@ -242,7 +242,7 @@
               font-weight: 600;
 
               svg {
-                transform: rotate($transform-direction * 90deg) !important;
+                transform: rotate(calc(var(--transform-direction) * 90deg)) !important;
               }
             }
           }
@@ -259,8 +259,8 @@
             align-items: center;
 
             .tag {
-              margin-#{$start-direction}: auto;
-              margin-#{$end-direction}: 20px;
+              margin-inline-start: auto;
+              margin-inline-end: 20px;
               border-radius: 100px;
               background: var(--danger);
               color: var(--white);
@@ -288,7 +288,7 @@
                 top: 1px;
                 height: 18px;
                 width: 18px;
-                margin-#{$start-direction}: auto;
+                margin-inline-start: auto;
                 transform: rotate(0);
                 color: var(--light-text);
                 transition: color 0.3s, background-color 0.3s, border-color 0.3s,
@@ -321,7 +321,7 @@
                 font-weight: 400;
                 font-family: var(--font);
                 align-items: center;
-                padding-#{$start-direction}: 32px;
+                padding-inline-start: 32px;
                 font-size: 0.9rem;
 
                 &.is-active,
@@ -333,7 +333,7 @@
                 .lnil,
                 .lnir {
                   font-size: 1.2rem;
-                  margin-#{$end-direction}: 10px;
+                  margin-inline-end: 10px;
                 }
 
                 > span {
@@ -347,16 +347,16 @@
                   max-width: 8px;
                   min-width: 8px;
                   stroke-width: 2px;
-                  margin-#{$end-direction}: 8px;
+                  margin-inline-end: 8px;
 
                   &.is-auto {
-                    margin-#{$start-direction}: auto;
+                    margin-inline-start: auto;
                     height: 15px;
                     width: 15px;
                     max-width: 15px;
                     min-width: 15px;
                     stroke-width: 2px;
-                    margin-#{$end-direction}: 4px;
+                    margin-inline-end: 4px;
                   }
                 }
               }
@@ -381,7 +381,7 @@
             line-height: 1.8;
             height: 1.8em;
             font-size: 0.7rem;
-            margin-#{$start-direction}: 0.25rem;
+            margin-inline-start: 0.25rem;
           }
         }
 
@@ -396,8 +396,8 @@
       .docked-action {
         position: absolute;
         bottom: 0;
-        #{$start-direction}: 0;
-        #{$end-direction}: 0;
+        inset-inline-start: 0;
+        inset-inline-end: 0;
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -417,8 +417,8 @@
             svg {
               height: 16px;
               width: 16px;
-              margin-#{$end-direction}: 2px;
-              margin-#{$start-direction}: -2px;
+              margin-inline-end: 2px;
+              margin-inline-start: -2px;
             }
           }
         }
@@ -582,8 +582,8 @@
           svg {
             height: 16px;
             width: 16px;
-            margin-#{$end-direction}: 10px;
-            margin-#{$start-direction}: -10px;
+            margin-inline-end: 10px;
+            margin-inline-start: -10px;
           }
         }
       }
@@ -610,7 +610,7 @@
             .icon {
               position: absolute;
               top: 7px;
-              #{$start-direction}: 7px;
+              inset-inline-start: 7px;
               color: var(--placeholder);
 
               svg {
@@ -626,7 +626,7 @@
               width: 100% !important;
 
               input {
-                padding-#{$start-direction}: 40px;
+                padding-inline-start: 40px;
                 background: var(--fade-grey);
                 border: none;
                 box-shadow: none;
@@ -664,7 +664,7 @@
                   .avatar-badge {
                     position: absolute;
                     bottom: 0;
-                    #{$end-direction}: -5px;
+                    inset-inline-end: -5px;
                     width: 18px;
                     height: 18px;
                     border: 2px solid var(--white);
@@ -674,7 +674,7 @@
 
                 // text
                 .entry-text {
-                  margin-#{$start-direction}: 15px;
+                  margin-inline-start: 15px;
 
                   span {
                     font-size: 0.8rem;
@@ -690,8 +690,8 @@
             height: auto !important;
             padding-top: 8px;
             padding-bottom: 8px;
-            border-#{$start-direction}: none !important;
-            border-#{$end-direction}: none !important;
+            border-inline-start: none !important;
+            border-inline-end: none !important;
           }
 
           // Container
@@ -735,12 +735,12 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        border-#{$start-direction}: 2px solid transparent;
+        border-inline-start: 2px solid transparent;
         border-bottom: 1px solid rgb(0 0 0 / 5%);
         cursor: pointer;
 
         &.is-active {
-          border-#{$start-direction}-color: var(--primary);
+          border-inline-start-color: var(--primary);
           background: var(--primary-light-51);
 
           &:hover,
@@ -756,7 +756,7 @@
           display: flex;
           justify-content: flex-start;
           align-items: center;
-          padding-#{$start-direction}: 20px;
+          padding-inline-start: 20px;
           cursor: pointer;
 
           // Avatar
@@ -776,7 +776,7 @@
               &.is-badge {
                 display: block;
                 position: absolute;
-                #{$end-direction}: -5px;
+                inset-inline-end: -5px;
                 bottom: 0;
                 border: 2px solid var(--white);
                 height: 16px;
@@ -787,7 +787,7 @@
           }
 
           .recipient-meta {
-            margin-#{$start-direction}: 10px;
+            margin-inline-start: 10px;
 
             span {
               display: block;
@@ -817,7 +817,7 @@
 
                             // top: 2px;
                             top: -14px;
-                            #{$end-direction}: 20px;
+                            inset-inline-end: 20px;
                             font-size: .75rem;
                             color: var(--muted-grey);
                         } */
@@ -831,7 +831,7 @@
           display: flex;
           justify-content: flex-start;
           align-items: center;
-          margin-#{$start-direction}: 20px;
+          margin-inline-start: 20px;
           cursor: pointer;
 
           img {
@@ -848,7 +848,7 @@
             &:nth-child(2),
             &:nth-child(3),
             &:nth-child(4) {
-              margin-#{$start-direction}: -15px;
+              margin-inline-start: -15px;
             }
           }
 
@@ -862,7 +862,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-#{$start-direction}: -15px;
+            margin-inline-start: -15px;
             border: 2px solid var(--white);
 
             span {
@@ -879,7 +879,7 @@
           display: block;
           position: absolute;
           top: 2px;
-          #{$end-direction}: 20px;
+          inset-inline-end: 20px;
           font-size: 0.75rem;
           color: var(--muted-grey);
         }
@@ -969,18 +969,18 @@
 .collapsed-messaging {
   position: fixed;
   top: 0;
-  #{$start-direction}: 80px;
+  inset-inline-start: 80px;
   height: 100%;
   width: 80px;
   background-color: var(--body-color);
   box-shadow: none;
   z-index: 34;
-  border-#{$start-direction}: 1px solid var(--fade-grey);
-  transform: translateX($transform-direction * -100%);
+  border-inline-start: 1px solid var(--fade-grey);
+  transform: translateX(calc(var(--transform-direction) * -100%));
   transition: all 0.3s; // transition-all test
 
   &.is-active {
-    transform: translateX($transform-direction * 0);
+    transform: translateX(calc(var(--transform-direction) * 0));
   }
 
   .inner {
@@ -1029,12 +1029,12 @@
         justify-content: center;
         align-items: center;
         height: 64px;
-        border-#{$start-direction}: 2px solid transparent;
+        border-inline-start: 2px solid transparent;
         transition: all 0.3s; // transition-all test
         cursor: pointer;
 
         &.is-active {
-          border-#{$start-direction}-color: var(--primary);
+          border-inline-start-color: var(--primary);
           background: var(--primary-light-51);
 
           &:hover,
@@ -1060,7 +1060,7 @@
             &.is-badge {
               display: block;
               position: absolute;
-              #{$end-direction}: -5px;
+              inset-inline-end: -5px;
               bottom: 0;
               border: 2px solid var(--white);
               height: 16px;
@@ -1071,7 +1071,7 @@
 
           .is-count {
             position: absolute;
-            #{$end-direction}: -12px;
+            inset-inline-end: -12px;
             bottom: -5px;
             border-radius: var(--radius-rounded);
             border: 2px solid var(--white);

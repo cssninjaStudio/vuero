@@ -315,7 +315,6 @@ const userStack = userData.userStack as VAvatarProps[]
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .is-navbar {
@@ -364,7 +363,7 @@ const userStack = userData.userStack as VAvatarProps[]
         padding: 10px 0;
 
         .meta {
-          margin-#{$start-direction}: 16px;
+          margin-inline-start: 16px;
 
           span {
             display: block;

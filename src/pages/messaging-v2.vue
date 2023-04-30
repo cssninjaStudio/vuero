@@ -534,8 +534,6 @@ useHead({
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 $theme-bg-color: var(--white);
 $input-bg: #f8f8fa;
 $input-chat-color: #a2a2a2;
@@ -590,7 +588,7 @@ $overlay-bg-dark: linear-gradient(
       flex-grow: 2;
       z-index: 3;
       position: relative;
-      margin-#{$start-direction}: 280px;
+      margin-inline-start: 280px;
 
       .field {
         height: 100%;
@@ -620,8 +618,8 @@ $overlay-bg-dark: linear-gradient(
             font-family: var(--font);
             font-weight: 500;
             font-size: 15px;
-            padding-#{$start-direction}: 80px;
-            padding-#{$end-direction}: 80px;
+            padding-inline-start: 80px;
+            padding-inline-end: 80px;
 
             &:focus {
               box-shadow: none;
@@ -635,11 +633,11 @@ $overlay-bg-dark: linear-gradient(
       display: flex;
       align-items: center;
       cursor: pointer;
-      margin-#{$start-direction}: auto;
+      margin-inline-start: auto;
       flex-shrink: 0;
 
       & > * + * {
-        margin-#{$start-direction}: 14px;
+        margin-inline-start: 14px;
       }
 
       .user-dropdown {
@@ -661,7 +659,7 @@ $overlay-bg-dark: linear-gradient(
 
             .badge {
               position: absolute;
-              #{$end-direction}: -8px;
+              inset-inline-end: -8px;
               bottom: 0;
               width: 20px;
               height: 20px;
@@ -671,7 +669,7 @@ $overlay-bg-dark: linear-gradient(
           }
 
           svg {
-            margin-#{$start-direction}: 3px;
+            margin-inline-start: 3px;
             width: 18px;
             height: 18px;
             color: var(--light-text);
@@ -697,7 +695,7 @@ $overlay-bg-dark: linear-gradient(
             color: var(--light-text);
 
             svg {
-              margin-#{$end-direction}: 8px;
+              margin-inline-end: 8px;
               height: 16px;
               width: 16px;
               color: var(--light-text);
@@ -752,7 +750,7 @@ $overlay-bg-dark: linear-gradient(
     overflow: hidden;
 
     .conversation-area {
-      border-#{$end-direction}: 1px solid $border-color;
+      border-inline-end: 1px solid $border-color;
       overflow-y: auto;
       overflow-x: hidden;
       display: flex;
@@ -764,7 +762,7 @@ $overlay-bg-dark: linear-gradient(
       .overlay {
         position: absolute;
         bottom: 0;
-        #{$start-direction}: 0;
+        inset-inline-start: 0;
         width: 100%;
         flex-shrink: 0;
         background: $overlay-bg;
@@ -787,7 +785,7 @@ $overlay-bg-dark: linear-gradient(
 
         &.active {
           background: $active-conversation-bg;
-          border-#{$start-direction}: 4px solid var(--primary);
+          border-inline-start: 4px solid var(--primary);
 
           .conversation-detail {
             .conversation-username {
@@ -797,7 +795,7 @@ $overlay-bg-dark: linear-gradient(
         }
 
         .v-avatar {
-          margin-#{$end-direction}: 12px;
+          margin-inline-end: 12px;
         }
 
         .conversation-detail {
@@ -827,11 +825,11 @@ $overlay-bg-dark: linear-gradient(
             .conversation-date {
               font-size: 0.9rem;
               color: var(--light-text);
-              margin-#{$start-direction}: 4px;
+              margin-inline-start: 4px;
 
               &::before {
                 content: '•';
-                margin-#{$end-direction}: 2px;
+                margin-inline-end: 2px;
               }
             }
           }
@@ -895,7 +893,7 @@ $overlay-bg-dark: linear-gradient(
       .overlay {
         position: absolute;
         top: 0;
-        #{$start-direction}: 0;
+        inset-inline-start: 0;
         width: 100%;
         flex-shrink: 0;
         background: $overlay-bg;
@@ -916,7 +914,7 @@ $overlay-bg-dark: linear-gradient(
         display: flex;
         position: sticky;
         top: 0;
-        #{$start-direction}: 0;
+        inset-inline-start: 0;
         z-index: 2;
         width: 100%;
         align-items: center;
@@ -925,7 +923,7 @@ $overlay-bg-dark: linear-gradient(
 
         .trigger {
           padding: 8px;
-          margin-#{$end-direction}: 6px;
+          margin-inline-end: 6px;
           border: none;
           background: none;
 
@@ -938,14 +936,14 @@ $overlay-bg-dark: linear-gradient(
         .chat-area-group {
           flex-shrink: 0;
           display: flex;
-          margin-#{$start-direction}: auto;
+          margin-inline-start: auto;
 
           * {
             border: 2px solid var(--white);
           }
 
           * + * {
-            margin-#{$start-direction}: -5px;
+            margin-inline-start: -5px;
           }
 
           > span {
@@ -963,7 +961,7 @@ $overlay-bg-dark: linear-gradient(
             span {
               position: relative;
               top: -1px;
-              #{$start-direction}: -1px;
+              inset-inline-start: -1px;
               line-height: 1;
               display: block;
               text-align: center;
@@ -1006,7 +1004,7 @@ $overlay-bg-dark: linear-gradient(
 
         .chat-msg-date {
           position: absolute;
-          #{$start-direction}: calc(100% + 12px);
+          inset-inline-start: calc(100% + 12px);
           bottom: 0;
           font-size: 12px;
           font-family: var(--font);
@@ -1020,7 +1018,7 @@ $overlay-bg-dark: linear-gradient(
           padding: 0 20px 45px;
 
           .chat-msg-content {
-            margin-#{$start-direction}: 12px;
+            margin-inline-start: 12px;
             max-width: 50%;
             display: flex;
             flex-direction: column;
@@ -1031,7 +1029,7 @@ $overlay-bg-dark: linear-gradient(
             background-color: $chat-text-bg;
             padding: 15px;
             border-radius: 20px;
-            border-bottom-#{$start-direction}-radius: 0;
+            border-end-start-radius: 0;
             line-height: 1.5;
             font-family: var(--font);
             font-size: 0.95rem;
@@ -1051,8 +1049,8 @@ $overlay-bg-dark: linear-gradient(
           flex-direction: row-reverse;
 
           .chat-msg-content {
-            margin-#{$start-direction}: 0;
-            margin-#{$end-direction}: 12px;
+            margin-inline-start: 0;
+            margin-inline-end: 12px;
             align-items: flex-end;
           }
 
@@ -1060,12 +1058,12 @@ $overlay-bg-dark: linear-gradient(
             background-color: var(--primary);
             color: var(--white);
             border-radius: 20px;
-            border-bottom-#{$end-direction}-radius: 0;
+            border-end-end-radius: 0;
           }
 
           .chat-msg-date {
-            #{$start-direction}: auto;
-            #{$end-direction}: calc(100% + 12px);
+            inset-inline-start: auto;
+            inset-inline-end: calc(100% + 12px);
           }
         }
 
@@ -1083,12 +1081,12 @@ $overlay-bg-dark: linear-gradient(
         align-items: center;
         background-color: $theme-bg-color;
         position: fixed;
-        #{$end-direction}: 0;
+        inset-inline-end: 0;
         margin: 0 auto;
         width: calc(100% - 680px);
         overflow-x: hidden;
         bottom: 0;
-        #{$start-direction}: 0;
+        inset-inline-start: 0;
 
         input {
           border: 1px solid transparent;
@@ -1166,7 +1164,7 @@ $overlay-bg-dark: linear-gradient(
               }
 
               .meta {
-                margin-#{$start-direction}: 12px;
+                margin-inline-start: 12px;
 
                 span {
                   display: block;
@@ -1357,8 +1355,8 @@ $overlay-bg-dark: linear-gradient(
     .detail-area {
       width: 340px;
       flex-shrink: 0;
-      border-#{$start-direction}: 1px solid $border-color;
-      margin-#{$start-direction}: auto;
+      border-inline-start: 1px solid $border-color;
+      margin-inline-start: auto;
       padding: 30px 30px 0;
       display: flex;
       flex-direction: column;
@@ -1417,7 +1415,7 @@ $overlay-bg-dark: linear-gradient(
 
             svg {
               width: 16px;
-              margin-#{$end-direction}: 8px;
+              margin-inline-end: 8px;
             }
           }
 
@@ -1493,15 +1491,15 @@ $overlay-bg-dark: linear-gradient(
       .conversation-area {
         position: fixed;
         top: 0;
-        #{$start-direction}: 0;
+        inset-inline-start: 0;
         height: 100%;
         background: var(--white);
         z-index: 10;
-        transform: translateX($transform-direction * -100%);
+        transform: translateX(calc(var(--transform-direction) * -100%));
         transition: all 0.3s; // transition-all test
 
         &.is-active {
-          transform: translateX($transform-direction * 0);
+          transform: translateX(calc(var(--transform-direction) * 0));
         }
       }
 
@@ -1539,15 +1537,15 @@ $overlay-bg-dark: linear-gradient(
       .conversation-area {
         position: fixed;
         top: 0;
-        #{$start-direction}: 0;
+        inset-inline-start: 0;
         height: 100%;
         background: var(--white);
         z-index: 10;
-        transform: translateX($transform-direction * -100%);
+        transform: translateX(calc(var(--transform-direction) * -100%));
         transition: all 0.3s; // transition-all test
 
         &.is-active {
-          transform: translateX($transform-direction * 0);
+          transform: translateX(calc(var(--transform-direction) * 0));
         }
       }
 
@@ -1575,7 +1573,7 @@ $overlay-bg-dark: linear-gradient(
       .chat-area {
         .chat-area-footer {
           width: calc(100% - 340px);
-          margin-#{$start-direction}: 340px;
+          margin-inline-start: 340px;
         }
       }
     }

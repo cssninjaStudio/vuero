@@ -311,7 +311,6 @@ const democheck = ref(['value_2'])
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .is-navbar {
@@ -330,7 +329,7 @@ const democheck = ref(['value_2'])
 
     .user-meta {
       padding: 0 3rem;
-      border-#{$end-direction}: 1px solid var(--fade-grey-dark-3);
+      border-inline-end: 1px solid var(--fade-grey-dark-3);
 
       h3 {
         max-width: 180px;
@@ -345,7 +344,7 @@ const democheck = ref(['value_2'])
       position: relative;
       flex-grow: 2;
       max-width: 275px;
-      margin-#{$start-direction}: auto;
+      margin-inline-start: auto;
       background: var(--primary-light-8);
       padding: 20px;
       border-radius: var(--radius-large);
@@ -355,7 +354,7 @@ const democheck = ref(['value_2'])
       .lnir {
         position: absolute;
         bottom: 1rem;
-        #{$end-direction}: 1rem;
+        inset-inline-end: 1rem;
         font-size: 4rem;
         opacity: 0.3;
       }
@@ -444,7 +443,7 @@ const democheck = ref(['value_2'])
       }
 
       .cta {
-        margin-#{$start-direction}: 0;
+        margin-inline-start: 0;
       }
     }
 

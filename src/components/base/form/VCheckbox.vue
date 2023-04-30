@@ -77,8 +77,6 @@ watch(
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 %controller {
   position: relative;
   font-family: var(--font);
@@ -95,7 +93,7 @@ watch(
     background: var(--white);
     content: '';
     display: inline-block;
-    margin-#{$end-direction}: 0.5rem;
+    margin-inline-end: 0.5rem;
     padding: 0;
     vertical-align: middle;
     width: 1.4em;
@@ -123,7 +121,7 @@ watch(
   }
 
   input:checked + span::after {
-    transform: translate($transform-direction * -50%, -50%) scale(1) !important;
+    transform: translate(calc(var(--transform-direction) * -50%), -50%) scale(1) !important;
   }
 
   input {
@@ -285,7 +283,7 @@ watch(
       background-size: contain;
       position: absolute;
       top: 48%;
-      #{$start-direction}: 50%;
+      inset-inline-start: 50%;
       transform: translate(-50%, -50%) scale(0);
       content: '\f00c';
       font-family: 'Font Awesome\ 5 Free';

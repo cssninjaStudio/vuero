@@ -63,7 +63,6 @@ const toggleTabs = () => {
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .list-widget {
@@ -105,13 +104,13 @@ const toggleTabs = () => {
 
             &:first-child {
               ~ .tabbed-naver {
-                margin-#{$start-direction}: 0;
+                margin-inline-start: 0;
               }
             }
 
             &:nth-child(2) {
               ~ .tabbed-naver {
-                margin-#{$start-direction}: 50%;
+                margin-inline-start: 50%;
               }
             }
           }
@@ -120,12 +119,12 @@ const toggleTabs = () => {
         .tabbed-naver {
           position: absolute;
           top: 0;
-          #{$start-direction}: 0;
+          inset-inline-start: 0;
           width: 50%;
           height: 100%;
           border-radius: 8px;
           background: var(--primary);
-          margin-#{$start-direction}: 0;
+          margin-inline-start: 0;
           transition: all 0.3s; // transition-all test
           z-index: 0;
         }

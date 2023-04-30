@@ -78,7 +78,6 @@ const activeTab = ref<TabId>('all')
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .is-navbar {
@@ -94,7 +93,7 @@ const activeTab = ref<TabId>('all')
     margin-bottom: 20px;
 
     .control {
-      margin-#{$end-direction}: 10px;
+      margin-inline-end: 10px;
     }
 
     .search-info {
@@ -105,7 +104,7 @@ const activeTab = ref<TabId>('all')
     }
 
     .tabs-inner {
-      margin-#{$start-direction}: auto;
+      margin-inline-start: auto;
 
       .tabs {
         margin-bottom: 0;
@@ -139,14 +138,14 @@ const activeTab = ref<TabId>('all')
           }
 
           .control-end {
-            margin-#{$start-direction}: auto;
+            margin-inline-start: auto;
           }
         }
       }
     }
 
     .search-results-group {
-      padding-#{$start-direction}: 30px;
+      padding-inline-start: 30px;
       margin-bottom: 20px;
 
       .group-header {
@@ -164,7 +163,7 @@ const activeTab = ref<TabId>('all')
           display: flex;
           justify-content: center;
           align-items: center;
-          margin-#{$end-direction}: 6px;
+          margin-inline-end: 6px;
           background: var(--white);
           border: 1px solid var(--primary);
           color: var(--primary);
@@ -263,7 +262,7 @@ const activeTab = ref<TabId>('all')
 
     .search-results-body {
       .search-results-group {
-        padding-#{$start-direction}: 0;
+        padding-inline-start: 0;
       }
     }
   }
@@ -273,7 +272,7 @@ const activeTab = ref<TabId>('all')
   .search-results-wrapper {
     .search-results-body {
       .search-results-group {
-        padding-#{$start-direction}: 0;
+        padding-inline-start: 0;
       }
     }
   }
@@ -283,7 +282,7 @@ const activeTab = ref<TabId>('all')
   .search-results-wrapper {
     .search-results-body {
       .search-results-group {
-        padding-#{$start-direction}: 10px;
+        padding-inline-start: 10px;
       }
     }
   }

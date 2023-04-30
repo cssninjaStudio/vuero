@@ -81,7 +81,6 @@ const isScrolling = computed(() => {
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 @import '/@src/scss/layout/navbar';
 @import '/@src/scss/layout/responsive';
@@ -89,7 +88,7 @@ const isScrolling = computed(() => {
 .navbar-navbar {
   position: fixed;
   top: 0;
-  #{$start-direction}: 0;
+  inset-inline-start: 0;
   width: 100%;
   height: 80px;
   background: var(--white);
@@ -202,7 +201,7 @@ const isScrolling = computed(() => {
                   color: var(--light-text);
 
                   .caret {
-                    margin-#{$start-direction}: 0;
+                    margin-inline-start: 0;
                   }
                 }
               }
@@ -330,19 +329,19 @@ const isScrolling = computed(() => {
           letter-spacing: 1px;
           max-width: 50px;
           line-height: 1.2;
-          margin-#{$start-direction}: 8px;
+          margin-inline-start: 8px;
         }
       }
 
       .separator {
         height: 38px;
         width: 2px;
-        border-#{$end-direction}: 1px solid var(--fade-grey-dark-4);
+        border-inline-end: 1px solid var(--fade-grey-dark-4);
         margin: 0 20px 0 16px;
       }
 
       .project-dropdown {
-        margin-#{$end-direction}: 12px;
+        margin-inline-end: 12px;
         cursor: pointer !important;
 
         > img {
@@ -370,7 +369,7 @@ const isScrolling = computed(() => {
               }
 
               .meta {
-                margin-#{$start-direction}: 12px;
+                margin-inline-start: 12px;
                 font-family: var(--font);
 
                 span {
@@ -538,7 +537,7 @@ const isScrolling = computed(() => {
                     .back-button {
                       position: absolute;
                       top: 10px;
-                      #{$end-direction}: 10px;
+                      inset-inline-end: 10px;
                       opacity: 1;
                     }
 
@@ -560,7 +559,7 @@ const isScrolling = computed(() => {
                             line-height: 1.8;
                             height: 1.8em;
                             font-size: 0.65rem;
-                            margin-#{$start-direction}: 0.2rem;
+                            margin-inline-start: 0.2rem;
                           }
                         }
                       }
@@ -587,8 +586,8 @@ const isScrolling = computed(() => {
                     .category-selector-inner {
                       display: flex;
                       flex-wrap: wrap;
-                      margin-#{$start-direction}: -8px;
-                      margin-#{$end-direction}: -8px;
+                      margin-inline-start: -8px;
+                      margin-inline-end: -8px;
 
                       .category-item {
                         width: calc(20% - 16px);
@@ -631,7 +630,7 @@ const isScrolling = computed(() => {
                       }
 
                       .placeholder-image {
-                        margin-#{$start-direction}: auto;
+                        margin-inline-start: auto;
                         max-width: 140px;
                         max-height: 100px;
                       }
@@ -645,8 +644,8 @@ const isScrolling = computed(() => {
                   .column {
                     padding-top: 0;
                     padding-bottom: 0;
-                    padding-#{$start-direction}: 1.5rem;
-                    padding-#{$end-direction}: 1.5rem;
+                    padding-inline-start: 1.5rem;
+                    padding-inline-end: 1.5rem;
                     height: 100%;
                   }
 
@@ -730,7 +729,7 @@ const isScrolling = computed(() => {
                         stroke-width: 3px;
                         height: 12px;
                         width: 12px;
-                        margin-#{$end-direction}: 6px;
+                        margin-inline-end: 6px;
                       }
                     }
 
@@ -765,7 +764,7 @@ const isScrolling = computed(() => {
                       }
 
                       .meta {
-                        margin-#{$start-direction}: 6px;
+                        margin-inline-start: 6px;
 
                         span {
                           font-weight: 500;
@@ -780,15 +779,15 @@ const isScrolling = computed(() => {
             }
 
             .is-trigger {
-              padding-#{$end-direction}: 0 !important;
+              padding-inline-end: 0 !important;
 
               .button {
                 font-family: var(--font-alt);
                 font-size: 0.9rem;
                 color: var(--dark-text);
                 min-height: 40px;
-                padding-#{$start-direction}: 0.75rem !important;
-                padding-#{$end-direction}: 0.75rem !important;
+                padding-inline-start: 0.75rem !important;
+                padding-inline-end: 0.75rem !important;
                 border-color: transparent;
                 transition: color 0.3s, background-color 0.3s, border-color 0.3s,
                   height 0.3s, width 0.3s;
@@ -797,7 +796,7 @@ const isScrolling = computed(() => {
 
             .dropdown-menu {
               margin-top: 28px;
-              text-align: #{$start-direction};
+              text-align: inset-inline-start;
             }
           }
         }
@@ -817,8 +816,8 @@ const isScrolling = computed(() => {
           .control {
             .form-icon {
               &.is-right {
-                #{$start-direction}: unset !important;
-                #{$end-direction}: 6px;
+                inset-inline-start: unset !important;
+                inset-inline-end: 6px;
                 cursor: pointer;
               }
             }
@@ -892,7 +891,7 @@ const isScrolling = computed(() => {
               background: #fafafa;
 
               .meta {
-                margin-#{$start-direction}: 12px;
+                margin-inline-start: 12px;
                 font-family: var(--font);
 
                 span {

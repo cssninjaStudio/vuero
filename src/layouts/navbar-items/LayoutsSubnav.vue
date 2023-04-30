@@ -886,7 +886,6 @@ const activeTab = ref<TabId>('list')
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/mixins';
 @import '/@src/scss/layout/navbar';
 @import '/@src/scss/layout/responsive';

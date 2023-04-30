@@ -41,8 +41,6 @@ const props = withDefaults(
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 .circle-chart-wrapper {
   &.is-success {
     .circle-chart__circle {
@@ -75,7 +73,7 @@ const props = withDefaults(
 
 .circle-chart__circle {
   animation: circle-chart-fill 2.4s reverse;
-  transform: rotate($transform-direction * 90deg);
+  transform: rotate(calc(var(--transform-direction) * 90deg));
   transform-origin: center;
   color: var(--primary);
   stroke: var(--primary);

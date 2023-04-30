@@ -84,8 +84,6 @@ onBeforeUnmount(() => {
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 .video-player-container-wrapper {
   max-width: 840px;
   margin: 0 auto;
@@ -98,7 +96,7 @@ onBeforeUnmount(() => {
   iframe {
     position: absolute;
     top: 0;
-    #{$start-direction}: 0;
+    inset-inline-start: 0;
     width: 100%;
     height: 100%;
   }
@@ -111,7 +109,7 @@ onBeforeUnmount(() => {
     .plyr {
       position: absolute;
       top: 0;
-      #{$start-direction}: 0;
+      inset-inline-start: 0;
       height: 100%;
       width: 100%;
       display: block;
@@ -126,7 +124,7 @@ onBeforeUnmount(() => {
     .plyr {
       position: absolute;
       top: 0;
-      #{$start-direction}: 0;
+      inset-inline-start: 0;
       height: 100%;
       width: 100%;
       display: block;
@@ -141,7 +139,7 @@ onBeforeUnmount(() => {
     .plyr {
       position: absolute;
       top: 0;
-      #{$start-direction}: 0;
+      inset-inline-start: 0;
       height: 100%;
       width: 100%;
       display: block;

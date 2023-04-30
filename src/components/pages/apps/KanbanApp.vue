@@ -542,8 +542,6 @@ onMounted(() => {
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 .kanban-toolbar {
   display: flex;
   align-items: center;
@@ -554,11 +552,11 @@ onMounted(() => {
   }
 
   .avatar-stack {
-    margin-#{$start-direction}: 16px;
+    margin-inline-start: 16px;
   }
 
   .button {
-    margin-#{$start-direction}: auto;
+    margin-inline-start: auto;
   }
 }
 
@@ -588,7 +586,7 @@ onMounted(() => {
       }
 
       .input {
-        margin-#{$end-direction}: 20px;
+        margin-inline-end: 20px;
       }
 
       svg {
@@ -598,7 +596,7 @@ onMounted(() => {
       }
 
       .task-count {
-        padding-#{$start-direction}: 4px;
+        padding-inline-start: 4px;
 
         &::before {
           content: '(';
@@ -729,8 +727,8 @@ onMounted(() => {
           font-size: 1rem;
           color: var(--dark-text);
           font-weight: 600;
-          margin-#{$start-direction}: -3px;
-          transform: rotate($transform-direction * -90deg);
+          margin-inline-start: -3px;
+          transform: rotate(calc(var(--transform-direction) * -90deg));
         }
       }
     }
@@ -769,7 +767,7 @@ onMounted(() => {
           content: '';
           position: absolute;
           top: calc(50% - 12px);
-          #{$start-direction}: calc(50% - 12px);
+          inset-inline-start: calc(50% - 12px);
           height: 24px;
           width: 24px;
           border-radius: var(--radius-rounded);

@@ -168,8 +168,6 @@ const wizard = useWizard()
 </template>
 
 <style lang="scss" scoped>
-@import '/@src/scss/abstracts/ltr';
-
 .wizard-navigation {
   position: fixed;
   width: 100%;
@@ -192,8 +190,8 @@ const wizard = useWizard()
 
   .navbar-item {
     &.is-wizard-title {
-      margin-#{$start-direction}: 15px;
-      border-#{$start-direction}: 1px solid var(--muted-grey-light-15);
+      margin-inline-start: 15px;
+      border-inline-start: 1px solid var(--muted-grey-light-15);
       padding-bottom: 6px;
       padding-top: 6px;
       font-family: var(--font);
@@ -246,7 +244,7 @@ const wizard = useWizard()
   }
 
   .is-dark-mode {
-    margin-#{$start-direction}: auto;
+    margin-inline-start: auto;
     background: transparent !important;
 
     .navbar-icon {
@@ -286,7 +284,7 @@ const wizard = useWizard()
 
         .badge {
           position: absolute;
-          #{$end-direction}: -8px;
+          inset-inline-end: -8px;
           bottom: 0;
           width: 20px;
           height: 20px;
@@ -296,7 +294,7 @@ const wizard = useWizard()
       }
 
       svg {
-        margin-#{$start-direction}: 3px;
+        margin-inline-start: 3px;
         width: 18px;
         height: 18px;
         color: var(--light-text);
@@ -329,7 +327,7 @@ const wizard = useWizard()
         }
 
         svg {
-          margin-#{$end-direction}: 8px;
+          margin-inline-end: 8px;
           height: 16px;
           width: 16px;
           color: var(--light-text);

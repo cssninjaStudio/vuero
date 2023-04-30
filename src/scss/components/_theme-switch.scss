@@ -41,7 +41,7 @@ $dayBtn: #ffb62e;
         height: inherit;
         border-radius: inherit;
         position: absolute;
-        #{$start-direction}: 0;
+        inset-inline-start: 0;
         top: 0;
         backface-visibility: hidden;
         transition: background-color 0.3s ease;
@@ -53,10 +53,10 @@ $dayBtn: #ffb62e;
         height: 8px;
         border-radius: var(--radius-rounded);
         margin-top: -4px;
-        margin-#{$start-direction}: -4px;
+        margin-inline-start: -4px;
         position: absolute;
         top: 50%;
-        #{$start-direction}: 50%;
+        inset-inline-start: 50%;
         box-shadow: 0 -23px 0 $dayBtn, 0 23px 0 $dayBtn, 23px 0 0 $dayBtn,
           -23px 0 0 $dayBtn, 15px 15px 0 $dayBtn, -15px 15px 0 $dayBtn,
           15px -15px 0 $dayBtn, -15px -15px 0 $dayBtn;

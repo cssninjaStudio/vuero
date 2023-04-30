@@ -121,7 +121,6 @@ useHead({
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 @import '/@src/scss/_demo/landing';
 
@@ -140,8 +139,8 @@ useHead({
 
       .title,
       .subtitle {
-        margin-#{$start-direction}: auto;
-        margin-#{$end-direction}: auto;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
       }
 
       h1 {
@@ -165,36 +164,36 @@ useHead({
 
       &.hexagon-1 {
         top: -180px;
-        #{$start-direction}: -180px;
+        inset-inline-start: -180px;
         height: 450px;
         width: 450px;
-        transform: rotate($transform-direction * 39deg);
+        transform: rotate(calc(var(--transform-direction) * 39deg));
       }
 
       &.hexagon-2 {
         bottom: 80px;
-        #{$end-direction}: 80px;
+        inset-inline-end: 80px;
         height: 360px;
         width: 360px;
-        transform: rotate($transform-direction * 75deg);
+        transform: rotate(calc(var(--transform-direction) * 75deg));
         animation-delay: 2s;
       }
 
       &.hexagon-3 {
         bottom: 40px;
-        #{$start-direction}: 40px;
+        inset-inline-start: 40px;
         height: 190px;
         width: 190px;
-        transform: rotate($transform-direction * 95deg);
+        transform: rotate(calc(var(--transform-direction) * 95deg));
         animation-delay: 0.5s;
       }
 
       &.hexagon-4 {
         top: -155px;
-        #{$start-direction}: 50%;
+        inset-inline-start: 50%;
         height: 230px;
         width: 230px;
-        transform: rotate($transform-direction * 135deg);
+        transform: rotate(calc(var(--transform-direction) * 135deg));
         animation-delay: 1s;
       }
     }
@@ -277,29 +276,29 @@ useHead({
 
       &.hexagon-1 {
         top: -110px;
-        #{$start-direction}: -110px;
+        inset-inline-start: -110px;
         height: 230px;
         width: 230px;
-        transform: rotate($transform-direction * 39deg);
+        transform: rotate(calc(var(--transform-direction) * 39deg));
         animation-delay: 2s;
       }
 
       &.hexagon-2 {
         bottom: 160px;
-        #{$end-direction}: -80px;
+        inset-inline-end: -80px;
         height: 160px;
         width: 160px;
-        transform: rotate($transform-direction * 75deg);
+        transform: rotate(calc(var(--transform-direction) * 75deg));
         z-index: 2;
         animation-delay: 0.5s;
       }
 
       &.hexagon-3 {
         bottom: 60px;
-        #{$start-direction}: -180px;
+        inset-inline-start: -180px;
         height: 100px;
         width: 100px;
-        transform: rotate($transform-direction * 125deg);
+        transform: rotate(calc(var(--transform-direction) * 125deg));
         z-index: 2;
         animation-delay: 1s;
       }
@@ -399,7 +398,7 @@ useHead({
         border-width: 64px 64px 0 0;
         border-color: var(--primary) transparent transparent transparent;
         position: absolute;
-        #{$start-direction}: 0;
+        inset-inline-start: 0;
         top: 0;
         content: '';
       }
@@ -410,7 +409,7 @@ useHead({
         content: '\f00c';
         color: var(--white);
         position: absolute;
-        #{$start-direction}: 11px;
+        inset-inline-start: 11px;
         top: 11px;
         text-shadow: 0 0 2px var(--primary);
         font-size: 1rem;
@@ -462,7 +461,7 @@ useHead({
     ul {
       list-style: none;
       padding: 0;
-      text-align: #{$start-direction};
+      text-align: inset-inline-start;
       margin-top: 29px;
     }
 
@@ -475,7 +474,7 @@ useHead({
         content: '\f00c';
         font-size: 0.9rem;
         color: var(--success);
-        margin-#{$end-direction}: 6px;
+        margin-inline-end: 6px;
       }
     }
   }
@@ -596,82 +595,82 @@ useHead({
 
     &.v-avatar-1 {
       top: -7%;
-      #{$start-direction}: 4%;
+      inset-inline-start: 4%;
     }
 
     &.v-avatar-2 {
       top: 5%;
-      #{$end-direction}: 5%;
+      inset-inline-end: 5%;
     }
 
     &.v-avatar-3 {
       bottom: -9%;
-      #{$start-direction}: 5%;
+      inset-inline-start: 5%;
     }
 
     &.v-avatar-4 {
       bottom: -9%;
-      #{$end-direction}: 5%;
+      inset-inline-end: 5%;
     }
 
     &.v-avatar-5 {
       top: -7%;
-      #{$start-direction}: 50%;
+      inset-inline-start: 50%;
     }
 
     &.v-avatar-6 {
       top: 40%;
-      #{$end-direction}: -3%;
+      inset-inline-end: -3%;
     }
 
     &.v-avatar-7 {
       top: 30%;
-      #{$end-direction}: 12%;
+      inset-inline-end: 12%;
     }
 
     &.v-avatar-8 {
       bottom: 30%;
-      #{$end-direction}: 16%;
+      inset-inline-end: 16%;
     }
 
     &.v-avatar-9 {
       top: 9%;
-      #{$end-direction}: 21%;
+      inset-inline-end: 21%;
     }
 
     &.v-avatar-10 {
       top: 40%;
-      #{$start-direction}: -3%;
+      inset-inline-start: -3%;
     }
 
     &.v-avatar-11 {
       top: 30%;
-      #{$start-direction}: 12%;
+      inset-inline-start: 12%;
     }
 
     &.v-avatar-12 {
       bottom: 17%;
-      #{$start-direction}: 16%;
+      inset-inline-start: 16%;
     }
 
     &.v-avatar-13 {
       top: 9%;
-      #{$start-direction}: 21%;
+      inset-inline-start: 21%;
     }
 
     &.v-avatar-14 {
       bottom: 20%;
-      #{$start-direction}: 1%;
+      inset-inline-start: 1%;
     }
 
     &.v-avatar-15 {
       bottom: -7%;
-      #{$start-direction}: 39%;
+      inset-inline-start: 39%;
     }
 
     &.v-avatar-16 {
       bottom: 12%;
-      #{$end-direction}: 30%;
+      inset-inline-end: 30%;
     }
 
     .avatar {
@@ -731,26 +730,26 @@ useHead({
       .hexagon {
         &.hexagon-1 {
           top: -110px;
-          #{$start-direction}: -80px;
+          inset-inline-start: -80px;
           height: 230px;
           width: 230px;
         }
 
         &.hexagon-2 {
           bottom: 45px;
-          #{$end-direction}: -80px;
+          inset-inline-end: -80px;
           height: 220px;
           width: 220px;
         }
 
         &.hexagon-3 {
           bottom: 50%;
-          #{$start-direction}: -110px;
+          inset-inline-start: -110px;
         }
 
         &.hexagon-4 {
           top: -165px;
-          #{$start-direction}: 70%;
+          inset-inline-start: 70%;
           height: 230px;
           width: 230px;
         }
@@ -760,8 +759,8 @@ useHead({
     .hero-body {
       .title,
       .subtitle {
-        margin-#{$start-direction}: auto;
-        margin-#{$end-direction}: auto;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
       }
 
       .title {
@@ -788,7 +787,7 @@ useHead({
     .hexagon {
       &.hexagon-2 {
         bottom: 120px !important;
-        #{$end-direction}: -40px !important;
+        inset-inline-end: -40px !important;
         height: 80px !important;
         width: 80px !important;
       }
@@ -820,25 +819,25 @@ useHead({
       }
 
       &.v-avatar-7 {
-        #{$end-direction}: -6%;
+        inset-inline-end: -6%;
       }
 
       &.v-avatar-13 {
         top: 3%;
-        #{$start-direction}: -4%;
+        inset-inline-start: -4%;
       }
 
       &.v-avatar-14 {
-        #{$start-direction}: -13%;
+        inset-inline-start: -13%;
       }
 
       &.v-avatar-15 {
         bottom: -4%;
-        #{$start-direction}: 48%;
+        inset-inline-start: 48%;
       }
 
       &.v-avatar-16 {
-        #{$end-direction}: -7%;
+        inset-inline-end: -7%;
       }
     }
 
@@ -858,12 +857,12 @@ useHead({
       .hexagon {
         &.hexagon-2 {
           bottom: 45px;
-          #{$end-direction}: -80px;
+          inset-inline-end: -80px;
         }
 
         &.hexagon-3 {
           bottom: 50%;
-          #{$start-direction}: -110px;
+          inset-inline-start: -110px;
         }
       }
     }
@@ -874,12 +873,12 @@ useHead({
       .hexagon {
         &.hexagon-2 {
           bottom: 45px;
-          #{$end-direction}: -80px;
+          inset-inline-end: -80px;
         }
 
         &.hexagon-3 {
           bottom: 50%;
-          #{$start-direction}: -110px;
+          inset-inline-start: -110px;
         }
       }
     }
@@ -890,12 +889,12 @@ useHead({
       .hexagon {
         &.hexagon-2 {
           bottom: 45px;
-          #{$end-direction}: -80px;
+          inset-inline-end: -80px;
         }
 
         &.hexagon-3 {
           bottom: 50%;
-          #{$start-direction}: -110px;
+          inset-inline-start: -110px;
         }
       }
     }
@@ -903,8 +902,8 @@ useHead({
     .hero-body {
       .title,
       .subtitle {
-        margin-#{$start-direction}: auto;
-        margin-#{$end-direction}: auto;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
       }
 
       .buttons {

@@ -2,7 +2,6 @@ const { hsl } = require('@cssninja/bulma-css-vars')
 
 module.exports = {
   sassEntryFile: 'src/scss/main.scss',
-  // sassEntryFile: 'src/scss/main-rtl.scss', // uncomment to generate RTL (comment out the line above)
   jsOutputFile: 'src/scss/bulma-generated/bulma-colors.ts',
   sassOutputFile: 'src/scss/bulma-generated/generated-vars.sass',
   cssFallbackOutputFile: 'src/scss/bulma-generated/generated-fallback.css',

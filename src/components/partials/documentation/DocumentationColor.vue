@@ -147,7 +147,6 @@ function updateColor({ colors }: any) {
 </template>
 
 <style lang="scss" scoped>
-@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .color-picker {
@@ -196,7 +195,7 @@ function updateColor({ colors }: any) {
   }
 
   .meta {
-    margin-#{$start-direction}: 12px;
+    margin-inline-start: 12px;
     flex-grow: 1;
 
     span {

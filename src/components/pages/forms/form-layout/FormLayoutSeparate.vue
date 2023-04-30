@@ -202,7 +202,6 @@ const onSubmit = () => {
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .is-navbar {
@@ -258,8 +257,8 @@ const onSubmit = () => {
             .radio-boxes {
               display: flex;
               justify-content: space-between;
-              margin-#{$start-direction}: -8px;
-              margin-#{$end-direction}: -8px;
+              margin-inline-start: -8px;
+              margin-inline-end: -8px;
 
               .radio-box {
                 position: relative;
@@ -277,7 +276,7 @@ const onSubmit = () => {
                 input {
                   position: absolute;
                   top: 0;
-                  #{$start-direction}: 0;
+                  inset-inline-start: 0;
                   height: 100%;
                   width: 100%;
                   opacity: 0;
@@ -426,8 +425,8 @@ const onSubmit = () => {
     &.is-separate {
       .form-outer {
         .form-body {
-          padding-#{$start-direction}: 0;
-          padding-#{$end-direction}: 0;
+          padding-inline-start: 0;
+          padding-inline-end: 0;
           flex-direction: column;
 
           .form-section {
@@ -448,8 +447,8 @@ const onSubmit = () => {
     &.is-separate {
       .form-outer {
         .form-body {
-          padding-#{$start-direction}: 0;
-          padding-#{$end-direction}: 0;
+          padding-inline-start: 0;
+          padding-inline-end: 0;
 
           // flex-direction: column;
 

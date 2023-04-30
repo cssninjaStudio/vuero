@@ -139,13 +139,11 @@ const chat = useChat()
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 .chat-side {
   position: relative;
   width: 320px;
   height: 100%;
-  border-#{$start-direction}: 1px solid var(--fade-grey);
+  border-inline-start: 1px solid var(--fade-grey);
   background: var(--white);
   z-index: 3;
   transition: all 0.3s; // transition-all test
@@ -186,7 +184,7 @@ const chat = useChat()
         &.is-badge {
           display: block;
           position: absolute;
-          #{$end-direction}: -6px;
+          inset-inline-end: -6px;
           bottom: 0;
           border: 3px solid var(--white);
           height: 34px;
@@ -235,7 +233,7 @@ const chat = useChat()
 
         svg {
           width: 16px;
-          margin-#{$end-direction}: 8px;
+          margin-inline-end: 8px;
         }
       }
 
@@ -293,10 +291,10 @@ const chat = useChat()
   .chat-side {
     position: fixed;
     top: 0;
-    #{$end-direction}: 0;
+    inset-inline-end: 0;
     height: 100%;
     width: 100%;
-    transform: translateX($transform-direction * 100%);
+    transform: translateX(calc(var(--transform-direction) * 100%));
     transition: all 0.3s; // transition-all test
     z-index: 20;
 
@@ -307,7 +305,7 @@ const chat = useChat()
     }
 
     &.is-mobile-active {
-      transform: translateX($transform-direction * 0);
+      transform: translateX(calc(var(--transform-direction) * 0));
     }
   }
 }
@@ -316,10 +314,10 @@ const chat = useChat()
   .chat-side {
     position: fixed;
     top: 0;
-    #{$end-direction}: 0;
+    inset-inline-end: 0;
     height: 100%;
     width: 340px;
-    transform: translateX($transform-direction * 100%);
+    transform: translateX(calc(var(--transform-direction) * 100%));
     transition: all 0.3s; // transition-all test
     z-index: 20;
 
@@ -330,7 +328,7 @@ const chat = useChat()
     }
 
     &.is-mobile-active {
-      transform: translateX($transform-direction * 0);
+      transform: translateX(calc(var(--transform-direction) * 0));
     }
   }
 }

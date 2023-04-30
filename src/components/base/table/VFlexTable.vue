@@ -205,8 +205,6 @@ const columns = computed(() => {
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 .flex-table {
   .flex-table-header {
     display: flex;
@@ -380,7 +378,7 @@ const columns = computed(() => {
     .flex-table-item {
       .flex-table-cell {
         &:not(:first-of-type) {
-          border-#{$start-direction}: dashed 1px var(--fade-grey-dark-3);
+          border-inline-start: dashed 1px var(--fade-grey-dark-3);
         }
       }
     }
@@ -404,7 +402,7 @@ const columns = computed(() => {
       .flex-table-item {
         .flex-table-cell {
           &:not(:first-of-type) {
-            border-#{$start-direction}: dashed 1px var(--dark-sidebar-light-12);
+            border-inline-start: dashed 1px var(--dark-sidebar-light-12);
           }
         }
       }
@@ -457,10 +455,10 @@ const columns = computed(() => {
           > div,
           > .is-pushed-mobile,
           > .text {
-            margin-#{$start-direction}: auto;
+            margin-inline-start: auto;
 
             &.no-push {
-              margin-#{$start-direction}: 0 !important;
+              margin-inline-start: 0 !important;
             }
           }
         }

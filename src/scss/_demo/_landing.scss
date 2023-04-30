@@ -23,8 +23,6 @@
     20. Media Queries
 */
 
-@import '/@src/scss/abstracts/ltr';
-
 /* ==========================================================================
 1. Defaults
 ========================================================================== */
@@ -144,8 +142,8 @@
 
       .title {
         margin-top: 80px;
-        margin-#{$start-direction}: auto;
-        margin-#{$end-direction}: auto;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
         color: var(--title-color);
         max-width: 640px;
 
@@ -387,7 +385,7 @@
 
     .flex-cell {
       width: 25%;
-      border-#{$end-direction}: 1px solid var(--fade-grey-dark-3);
+      border-inline-end: 1px solid var(--fade-grey-dark-3);
       text-align: center;
       padding: 24px 16px;
 
@@ -396,7 +394,7 @@
       }
 
       &.no-border-edge {
-        border-#{$end-direction}: none;
+        border-inline-end: none;
       }
 
       i {
@@ -657,7 +655,7 @@
 .component-features {
   .media-flex {
     .left-icon {
-      margin-#{$end-direction}: 10px;
+      margin-inline-end: 10px;
 
       i {
         color: var(--primary);
@@ -945,7 +943,7 @@
 
           &::before {
             left: 25px;
-            transform: rotate($transform-direction * 70deg);
+            transform: rotate(calc(var(--transform-direction) * 70deg));
           }
         }
       }
@@ -993,7 +991,7 @@
         font-weight: 600;
         font-size: 1rem;
         color: var(--lime-dark-18);
-        margin-#{$start-direction}: 22px;
+        margin-inline-start: 22px;
         transition: color 0.3s;
       }
     }
@@ -1027,7 +1025,7 @@
       .flex-card {
         .flex-cell {
           width: 100%;
-          border-#{$end-direction}: none;
+          border-inline-end: none;
           border-bottom: 1px solid var(--fade-grey-dark-3);
 
           &:last-child {

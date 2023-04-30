@@ -66,8 +66,6 @@ const toggle = (key: number) => {
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 .collapse {
   @include vuero-s-card;
 
@@ -78,7 +76,7 @@ const toggle = (key: number) => {
     &[open] {
       .collapse-header {
         .collapse-icon {
-          transform: rotate($transform-direction * 45deg);
+          transform: rotate(calc(var(--transform-direction) * 45deg));
         }
       }
 
@@ -92,7 +90,7 @@ const toggle = (key: number) => {
     &[open] {
       .collapse-header {
         .collapse-icon {
-          transform: rotate($transform-direction * 180deg);
+          transform: rotate(calc(var(--transform-direction) * 180deg));
         }
       }
 

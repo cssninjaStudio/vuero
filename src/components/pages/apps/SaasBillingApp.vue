@@ -353,7 +353,6 @@ const selected = ref('value_2')
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .saas-billing-wrapper {
@@ -383,8 +382,8 @@ const selected = ref('value_2')
       .plans {
         display: flex;
         flex-wrap: wrap;
-        margin-#{$start-direction}: -8px;
-        margin-#{$end-direction}: -8px;
+        margin-inline-start: -8px;
+        margin-inline-end: -8px;
 
         .plan {
           position: relative;
@@ -395,7 +394,7 @@ const selected = ref('value_2')
           input {
             position: absolute;
             top: 0;
-            #{$start-direction}: 0;
+            inset-inline-start: 0;
             height: 100%;
             width: 100%;
             opacity: 0;
@@ -439,7 +438,7 @@ const selected = ref('value_2')
             }
 
             .meta {
-              margin-#{$start-direction}: 12px;
+              margin-inline-start: 12px;
               line-height: 1.3;
 
               span {
@@ -461,7 +460,7 @@ const selected = ref('value_2')
             }
 
             .checkmark {
-              margin-#{$start-direction}: auto;
+              margin-inline-start: auto;
               display: none;
               justify-content: center;
               align-items: center;
@@ -488,7 +487,7 @@ const selected = ref('value_2')
     .right {
       width: 45%;
       padding: 20px 0;
-      margin-#{$start-direction}: auto;
+      margin-inline-start: auto;
 
       .plan-details {
         > h3 {
@@ -611,7 +610,7 @@ const selected = ref('value_2')
             padding-bottom: 10px;
 
             .v-avatar {
-              margin-#{$end-direction}: 8px;
+              margin-inline-end: 8px;
             }
 
             .add-seat {
@@ -626,7 +625,7 @@ const selected = ref('value_2')
               color: var(--light-text);
               padding: 0;
               background: none;
-              margin-#{$start-direction}: 4px;
+              margin-inline-start: 4px;
               cursor: pointer;
               transition: color 0.3s, background-color 0.3s, border-color 0.3s,
                 height 0.3s, width 0.3s;
@@ -649,7 +648,7 @@ const selected = ref('value_2')
 
     .right {
       width: 45%;
-      margin-#{$start-direction}: auto;
+      margin-inline-start: auto;
 
       .payment-form {
         padding: 20px 30px;
@@ -696,7 +695,7 @@ const selected = ref('value_2')
                 svg {
                   height: 30px;
                   position: absolute;
-                  #{$end-direction}: -2px;
+                  inset-inline-end: -2px;
                   top: 4px;
                   width: 60px;
                 }
@@ -853,7 +852,7 @@ const selected = ref('value_2')
               .checkmark {
                 position: absolute;
                 top: 10px;
-                #{$end-direction}: 10px;
+                inset-inline-end: 10px;
               }
             }
           }
@@ -911,7 +910,7 @@ const selected = ref('value_2')
               .checkmark {
                 position: absolute;
                 top: 10px;
-                #{$end-direction}: 10px;
+                inset-inline-end: 10px;
               }
             }
           }
@@ -955,7 +954,7 @@ const selected = ref('value_2')
               .checkmark {
                 position: absolute;
                 top: 10px;
-                #{$end-direction}: 10px;
+                inset-inline-end: 10px;
               }
             }
           }

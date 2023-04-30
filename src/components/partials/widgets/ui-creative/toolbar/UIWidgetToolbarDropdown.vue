@@ -21,8 +21,6 @@ const props = withDefaults(
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 .widget-toolbar {
   display: flex;
   align-items: center;
@@ -66,7 +64,7 @@ const props = withDefaults(
           content: '';
           position: absolute;
           top: 3px;
-          #{$end-direction}: 4px;
+          inset-inline-end: 4px;
           height: 10px;
           width: 10px;
           border-radius: var(--radius-rounded);

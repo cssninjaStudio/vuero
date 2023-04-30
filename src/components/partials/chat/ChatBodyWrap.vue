@@ -5,8 +5,6 @@
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 .chat-body-wrap {
   position: relative;
   display: flex;
@@ -20,7 +18,7 @@
 
     .chat-side {
       width: 0 !important;
-      transform: translateX($transform-direction * 100%);
+      transform: translateX(calc(var(--transform-direction) * 100%));
 
       .chat-side-content {
         opacity: 0;

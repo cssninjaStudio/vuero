@@ -38,8 +38,6 @@ const props = withDefaults(
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 .stat-widget {
   &.line-stats-widget {
     .line-stats,
@@ -48,7 +46,7 @@ const props = withDefaults(
 
       .line-stat,
       .area-stat {
-        margin-#{$end-direction}: 30px;
+        margin-inline-end: 30px;
         font-family: var(--font);
 
         span {

@@ -1,0 +1,9 @@
+/*! rtl.scss | Vuero | Css ninja 2020-2023 */
+
+:root {
+  --transform-direction: 1;
+}
+
+[dir='rtl'] {
+  --transform-direction: -1;
+}

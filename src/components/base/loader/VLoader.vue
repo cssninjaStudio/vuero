@@ -36,8 +36,6 @@ const props = withDefaults(defineProps<VLoaderProps>(), {
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 .has-loader {
   position: relative;
 
@@ -48,7 +46,7 @@ const props = withDefaults(defineProps<VLoaderProps>(), {
   .v-loader-wrapper {
     position: absolute;
     top: 0;
-    #{$start-direction}: 0;
+    inset-inline-start: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,11 +110,11 @@ $radius-rounded: 290486px !default;
 
 @keyframes spinAroundLoader {
   from {
-    transform: rotate($transform-direction * 0deg);
+    transform: rotate(calc(var(--transform-direction) * 0deg));
   }
 
   to {
-    transform: rotate($transform-direction * 359deg);
+    transform: rotate(calc(var(--transform-direction) * 359deg));
   }
 }
 
@@ -124,7 +122,7 @@ $radius-rounded: 290486px !default;
   animation: spinAroundLoader 500ms infinite linear;
   border: 2px solid $grey-lighter;
   border-radius: var(--radius-rounded);
-  border-#{$end-direction}-color: transparent;
+  border-inline-end-color: transparent;
   border-top-color: transparent;
   content: '';
   display: block;

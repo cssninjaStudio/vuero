@@ -60,7 +60,6 @@ const confirm = async () => {
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 /* ==========================================================================

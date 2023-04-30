@@ -73,8 +73,6 @@ watch(
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 .form-switch {
   position: relative;
   display: inline-block;
@@ -142,25 +140,26 @@ watch(
     &::before {
       content: '';
       position: absolute;
-      #{$start-direction}: 0;
+      inset-inline-start: 0;
       width: 42px;
       height: 22px;
       background-color: var(--white);
       border-radius: 11px;
-      transform: translate3d($transform-direction * 2px, 2px, 0) scale3d(1, 1, 1);
+      transform: translate3d(calc(var(--transform-direction) * 2px), 2px, 0)
+        scale3d(1, 1, 1);
       transition: all 0.25s linear;
     }
 
     &::after {
       content: '';
       position: absolute;
-      #{$start-direction}: 0;
+      inset-inline-start: 0;
       width: 22px;
       height: 22px;
       background-color: var(--white);
       border-radius: 11px;
       box-shadow: 0 2px 2px rgb(0 0 0 / 24%);
-      transform: translate3d($transform-direction * 2px, 2px, 0);
+      transform: translate3d(calc(var(--transform-direction) * 2px), 2px, 0);
       transition: all 0.2s ease-in-out;
     }
   }
@@ -168,12 +167,12 @@ watch(
   &:active {
     i::after {
       width: 28px;
-      transform: translate3d($transform-direction * 2px, 2px, 0);
+      transform: translate3d(calc(var(--transform-direction) * 2px), 2px, 0);
     }
 
     input {
       &:checked + i::after {
-        transform: translate3d($transform-direction * 16px, 2px, 0);
+        transform: translate3d(calc(var(--transform-direction) * 16px), 2px, 0);
       }
     }
   }
@@ -187,11 +186,12 @@ watch(
       background-color: var(--light-text);
 
       &::before {
-        transform: translate3d($transform-direction * 18px, 2px, 0) scale3d(0, 0, 0);
+        transform: translate3d(calc(var(--transform-direction) * 18px), 2px, 0)
+          scale3d(0, 0, 0);
       }
 
       &::after {
-        transform: translate3d($transform-direction * 22px, 2px, 0);
+        transform: translate3d(calc(var(--transform-direction) * 22px), 2px, 0);
       }
     }
   }
@@ -209,7 +209,7 @@ watch(
   align-items: center;
 
   .text {
-    margin-#{$start-direction}: 6px;
+    margin-inline-start: 6px;
 
     span {
       display: block;
@@ -306,7 +306,7 @@ watch(
 
 .thin-switch {
   display: block;
-  margin-#{$start-direction}: 8px;
+  margin-inline-start: 8px;
 
   &:focus-visible .slider::after {
     border-radius: 50px;
@@ -388,7 +388,7 @@ watch(
     &::after {
       background: var(--light-grey);
       position: absolute;
-      #{$start-direction}: -8px;
+      inset-inline-start: -8px;
       top: -8.5px;
       display: block;
       width: 24px;
@@ -402,19 +402,19 @@ watch(
   }
 
   label {
-    margin-#{$end-direction}: 7px;
+    margin-inline-end: 7px;
   }
 
   .input {
     display: none;
 
     ~ .label {
-      margin-#{$start-direction}: 8px;
+      margin-inline-start: 8px;
     }
 
     &:checked ~ .slider {
       &::after {
-        #{$start-direction}: 32px - 24px + 8px;
+        inset-inline-start: 32px - 24px + 8px;
       }
     }
   }
@@ -433,7 +433,7 @@ watch(
   align-items: center;
 
   .text {
-    margin-#{$start-direction}: 16px;
+    margin-inline-start: 16px;
 
     span {
       display: block;

@@ -101,8 +101,6 @@ watchEffect(() => {
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 .landing-page-wrapper {
   .hero {
     .navbar {
@@ -164,7 +162,7 @@ watchEffect(() => {
           width: 100%;
           max-width: 34px;
           max-height: 34px;
-          margin-#{$start-direction}: 10px;
+          margin-inline-start: 10px;
         }
 
         .brand-icon {
@@ -180,7 +178,7 @@ watchEffect(() => {
           img {
             position: relative;
             top: -2px;
-            margin-#{$start-direction}: 0;
+            margin-inline-start: 0;
           }
         }
       }
@@ -209,7 +207,7 @@ watchEffect(() => {
               content: '';
               position: absolute;
               top: -4px;
-              #{$start-direction}: 2px;
+              inset-inline-start: 2px;
               width: 50%;
               transform-origin: right center;
               height: 3px;
@@ -267,8 +265,8 @@ watchEffect(() => {
 
                 .dark,
                 .light {
-                  transform: translateX($transform-direction * 100%)
-                    rotate($transform-direction * 360deg);
+                  transform: translateX(calc(var(--transform-direction) * 100%))
+                    rotate(calc(var(--transform-direction) * 360deg));
                 }
 
                 .dark {
@@ -295,7 +293,7 @@ watchEffect(() => {
               .light {
                 position: absolute;
                 top: 2px;
-                #{$start-direction}: 2px;
+                inset-inline-start: 2px;
                 height: 22px;
                 width: 22px;
                 border-radius: var(--radius-rounded);
@@ -303,8 +301,8 @@ watchEffect(() => {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                transform: translateX($transform-direction * 0)
-                  rotate($transform-direction * 0);
+                transform: translateX(calc(var(--transform-direction) * 0))
+                  rotate(calc(var(--transform-direction) * 0));
                 transition: all 0.3s ease;
 
                 svg {
@@ -468,7 +466,7 @@ watchEffect(() => {
 
         .navbar-burger {
           border-radius: var(--radius-rounded);
-          margin-#{$end-direction}: 12px;
+          margin-inline-end: 12px;
         }
       }
 
@@ -476,8 +474,8 @@ watchEffect(() => {
         width: calc(100% - 32px);
         position: fixed;
         top: 78px;
-        #{$start-direction}: 0;
-        #{$end-direction}: 0;
+        inset-inline-start: 0;
+        inset-inline-end: 0;
         margin: 0 auto;
         border-radius: 0 0 10px 10px;
         padding: 30px;
@@ -559,7 +557,7 @@ watchEffect(() => {
           height: 40px;
           width: 40px;
           border-radius: var(--radius-rounded);
-          margin-#{$end-direction}: 12px;
+          margin-inline-end: 12px;
         }
       }
 
@@ -567,8 +565,8 @@ watchEffect(() => {
         width: calc(100% - 32px);
         position: fixed;
         top: 78px;
-        #{$start-direction}: 0;
-        #{$end-direction}: 0;
+        inset-inline-start: 0;
+        inset-inline-end: 0;
         margin: 0 auto;
         border-radius: 0 0 10px 10px;
         padding: 30px;

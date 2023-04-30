@@ -322,7 +322,6 @@ const exampleColumns = {
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .all-projects {
@@ -401,7 +400,7 @@ const exampleColumns = {
 
       .header-item {
         width: 100%;
-        border-#{$end-direction}: none;
+        border-inline-end: none;
         border-bottom: 1px solid var(--fade-grey-dark-3);
         padding: 16px 0;
 

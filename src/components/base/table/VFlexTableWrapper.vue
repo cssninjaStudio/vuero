@@ -388,8 +388,6 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 .flex-table-wrapper {
   background: var(--white);
   border: 1px solid var(--fade-grey-dark-3);
@@ -400,8 +398,8 @@ export default defineComponent({
     .flex-table-item {
       margin-bottom: 0;
       border-radius: 0;
-      border-#{$start-direction}: none;
-      border-#{$end-direction}: none;
+      border-inline-start: none;
+      border-inline-end: none;
       border-top: none;
 
       &:last-child {
@@ -445,8 +443,8 @@ export default defineComponent({
       }
 
       .flex-table-item {
-        padding-#{$start-direction}: 0;
-        padding-#{$end-direction}: 0;
+        padding-inline-start: 0;
+        padding-inline-end: 0;
 
         .is-checkbox {
           display: none;

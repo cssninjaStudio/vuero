@@ -262,7 +262,6 @@ const filteredData = computed(() => {
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .list-view-v2 {
@@ -293,7 +292,7 @@ const filteredData = computed(() => {
       .meta-left {
         display: flex;
         flex-direction: column;
-        margin-#{$start-direction}: 16px;
+        margin-inline-start: 16px;
 
         h3 {
           font-family: var(--font-alt);
@@ -303,7 +302,7 @@ const filteredData = computed(() => {
           line-height: 1.5;
 
           .rating {
-            margin-#{$start-direction}: 12px;
+            margin-inline-start: 12px;
 
             i {
               position: relative;
@@ -350,7 +349,7 @@ const filteredData = computed(() => {
           > span {
             display: flex;
             align-items: center;
-            margin-#{$end-direction}: 15px;
+            margin-inline-end: 15px;
 
             span {
               font-size: 0.85rem;
@@ -360,7 +359,7 @@ const filteredData = computed(() => {
 
             i {
               font-size: 1.2rem;
-              margin-#{$end-direction}: 6px;
+              margin-inline-end: 6px;
               color: var(--light-text);
             }
           }
@@ -368,14 +367,14 @@ const filteredData = computed(() => {
       }
 
       .meta-right {
-        margin-#{$start-direction}: auto;
+        margin-inline-start: auto;
         display: flex;
         align-items: center;
         justify-content: flex-end;
 
         .buttons {
           margin-bottom: 0;
-          margin-#{$end-direction}: 10px;
+          margin-inline-end: 10px;
         }
       }
     }
@@ -445,7 +444,7 @@ const filteredData = computed(() => {
         }
 
         .meta-left {
-          margin-#{$start-direction}: 0;
+          margin-inline-start: 0;
 
           > span {
             margin-bottom: 16px;
@@ -511,7 +510,7 @@ const filteredData = computed(() => {
           }
 
           .meta-left {
-            margin-#{$start-direction}: 0;
+            margin-inline-start: 0;
 
             > span {
               margin-bottom: 16px;

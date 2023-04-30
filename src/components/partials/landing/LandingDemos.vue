@@ -526,8 +526,6 @@ debouncedWatch(
 </template>
 
 <style lang="scss" scoped>
-@import '/@src/scss/abstracts/ltr';
-
 .demo-search-section {
   margin-bottom: 2rem;
 
@@ -556,7 +554,7 @@ debouncedWatch(
       }
 
       .title-meta {
-        margin-#{$start-direction}: 12px;
+        margin-inline-start: 12px;
         line-height: 1.2;
 
         h3 {
@@ -614,7 +612,7 @@ debouncedWatch(
 
     position: absolute !important;
     top: 40%;
-    #{$start-direction}: 42%;
+    inset-inline-start: 42%;
     height: 3.5rem;
     width: 3.5rem;
     transform: translate(-50%, -50%);
@@ -636,7 +634,7 @@ debouncedWatch(
   .new-tag {
     position: absolute;
     bottom: 10px;
-    #{$end-direction}: 10px;
+    inset-inline-end: 10px;
     background: red;
     color: var(--white);
     font-family: var(--font);
@@ -650,7 +648,7 @@ debouncedWatch(
   .circle-overlay {
     position: absolute;
     top: -60px;
-    #{$start-direction}: -60px;
+    inset-inline-start: -60px;
     width: 60px;
     height: 60px;
     border-radius: var(--radius-rounded);
@@ -664,8 +662,8 @@ debouncedWatch(
     position: absolute;
     margin: 0 auto;
     top: 26%;
-    #{$start-direction}: 0;
-    #{$end-direction}: 0;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
     z-index: 2;
     color: var(--white);
     display: flex;
@@ -712,19 +710,19 @@ debouncedWatch(
       font-family: var(--font);
       color: var(--white);
       font-size: 1rem;
-      margin-#{$start-direction}: 8px;
+      margin-inline-start: 8px;
 
       .iconify {
         position: relative;
         top: 1px;
         opacity: 0;
-        transform: translateX($transform-direction * 0);
+        transform: translateX(calc(var(--transform-direction) * 0));
         transition: all 0.3s ease-out;
       }
 
       &:hover .iconify {
         opacity: 1;
-        transform: translateX($transform-direction * 5px);
+        transform: translateX(calc(var(--transform-direction) * 5px));
       }
     }
   }

@@ -85,7 +85,7 @@ var {
         width: 36%;
         display: block;
         position: absolute;
-        #{$start-direction}: 0;
+        inset-inline-start: 0;
         top: 0.9em;
         height: 1px;
         content: ' ';
@@ -93,8 +93,8 @@ var {
       }
 
       &::after {
-        #{$end-direction}: 0;
-        #{$start-direction}: auto;
+        inset-inline-end: 0;
+        inset-inline-start: auto;
       }
     }
   }
@@ -134,11 +134,11 @@ var {
 }
 
 .ml-auto {
-  margin-#{$start-direction}: auto !important;
+  margin-inline-start: auto !important;
 }
 
 .mr-auto {
-  margin-#{$end-direction}: auto !important;
+  margin-inline-end: auto !important;
 }
 
 .no-padding {
@@ -273,40 +273,40 @@ var {
     height: 30px;
 
     &.active > span.rotate {
-      transform: rotate($transform-direction * 90deg);
-      transform: translate(0, 0) rotate($transform-direction * 90deg);
-      transform: translate(0, 0) rotate($transform-direction * 90deg);
-      transform: translate(0, 0) rotate($transform-direction * 90deg);
-      transform: translate(0, 0) rotate($transform-direction * 90deg);
+      transform: rotate(calc(var(--transform-direction) * 90deg));
+      transform: translate(0, 0) rotate(calc(var(--transform-direction) * 90deg));
+      transform: translate(0, 0) rotate(calc(var(--transform-direction) * 90deg));
+      transform: translate(0, 0) rotate(calc(var(--transform-direction) * 90deg));
+      transform: translate(0, 0) rotate(calc(var(--transform-direction) * 90deg));
     }
 
     &.active > span > i.icon-line-center {
       visibility: hidden;
       width: 1px;
       height: 3px;
-      #{$start-direction}: 70%;
+      inset-inline-start: 70%;
     }
 
     &.active > span > i.icon-line-bottom {
       margin: -2px 0 0 -10px;
-      #{$start-direction}: 50%;
+      inset-inline-start: 50%;
       top: 12px;
-      transform: rotate($transform-direction * 135deg);
-      transform: translate(0, 0) rotate($transform-direction * 135deg);
-      transform: translate(0, 0) rotate($transform-direction * 135deg);
-      transform: translate(0, 0) rotate($transform-direction * 135deg);
-      transform: translate(0, 0) rotate($transform-direction * 135deg);
+      transform: rotate(calc(var(--transform-direction) * 135deg));
+      transform: translate(0, 0) rotate(calc(var(--transform-direction) * 135deg));
+      transform: translate(0, 0) rotate(calc(var(--transform-direction) * 135deg));
+      transform: translate(0, 0) rotate(calc(var(--transform-direction) * 135deg));
+      transform: translate(0, 0) rotate(calc(var(--transform-direction) * 135deg));
     }
 
     &.active > span > i.icon-line-top {
       margin: -2px 0 0 -10px;
-      #{$start-direction}: 50%;
+      inset-inline-start: 50%;
       top: 12px;
-      transform: rotate($transform-direction * 45deg);
-      transform: translate(0, 0) rotate($transform-direction * 45deg);
-      transform: translate(0, 0) rotate($transform-direction * 45deg);
-      transform: translate(0, 0) rotate($transform-direction * 45deg);
-      transform: translate(0, 0) rotate($transform-direction * 45deg);
+      transform: rotate(calc(var(--transform-direction) * 45deg));
+      transform: translate(0, 0) rotate(calc(var(--transform-direction) * 45deg));
+      transform: translate(0, 0) rotate(calc(var(--transform-direction) * 45deg));
+      transform: translate(0, 0) rotate(calc(var(--transform-direction) * 45deg));
+      transform: translate(0, 0) rotate(calc(var(--transform-direction) * 45deg));
     }
   }
 
@@ -316,7 +316,7 @@ var {
     height: 2px;
     background: var(--primary);
     margin: -1px 0 0 -10px;
-    #{$start-direction}: 50%;
+    inset-inline-start: 50%;
     top: 12px;
     transition: all 0.3s; // transition-all test
   }
@@ -327,7 +327,7 @@ var {
     height: 2px;
     background: var(--primary);
     margin: -3px 0 0 -10px;
-    #{$start-direction}: 50%;
+    inset-inline-start: 50%;
     top: 6px;
     transition: all 0.3s; // transition-all test
   }
@@ -338,7 +338,7 @@ var {
     height: 2px;
     background: var(--primary);
     margin: 2px 0 0 -10px;
-    #{$start-direction}: 50%;
+    inset-inline-start: 50%;
     top: 17px;
     transition: all 0.3s; // transition-all test
   }
@@ -515,7 +515,7 @@ var {
 .text-tooltip {
   position: absolute;
   top: 100%;
-  #{$start-direction}: 0;
+  inset-inline-start: 0;
   width: 100%;
   z-index: 999;
 
@@ -595,7 +595,7 @@ var {
 .demo-wrapper {
   position: fixed;
   bottom: -50px;
-  #{$end-direction}: -50px;
+  inset-inline-end: -50px;
   height: 140px;
   width: 140px;
   background: transparent;
@@ -624,7 +624,7 @@ var {
     .form-switch {
       position: relative;
       top: -10px;
-      #{$start-direction}: -10px;
+      inset-inline-start: -10px;
       display: block;
       transition: all 0.3s; // transition-all test
       opacity: 0;
@@ -714,7 +714,7 @@ var {
 
 #backtotop {
   position: fixed;
-  #{$end-direction}: 0;
+  inset-inline-end: 0;
   opacity: 0;
   visibility: hidden;
   bottom: 25px;

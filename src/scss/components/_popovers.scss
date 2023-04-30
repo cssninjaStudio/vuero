@@ -35,12 +35,12 @@
   }
 
   &.bottom-right > .webui-arrow {
-    border-#{$end-direction}-color: transparent !important;
+    border-inline-end-color: transparent !important;
     border-bottom-color: transparent !important;
   }
 
   &.top-right > .webui-arrow {
-    border-#{$end-direction}-color: transparent !important;
+    border-inline-end-color: transparent !important;
 
     &::after {
       border-top-color: var(--white) !important;
@@ -52,12 +52,12 @@
   }
 
   &.left > .webui-arrow {
-    border-#{$start-direction}-color: transparent !important;
+    border-inline-start-color: transparent !important;
   }
 
   .webui-arrow {
     border-top-color: transparent !important;
-    border-#{$end-direction}-color: transparent !important;
+    border-inline-end-color: transparent !important;
 
     &::after {
       border-top-color: transparent !important;
@@ -87,7 +87,7 @@
 
     .v-avatar,
     .v-icon {
-      margin-#{$end-direction}: 10px;
+      margin-inline-end: 10px;
     }
 
     h4 {
@@ -126,7 +126,7 @@
     }
 
     .content-block {
-      margin-#{$start-direction}: 10px;
+      margin-inline-start: 10px;
 
       label,
       span {
@@ -185,10 +185,10 @@
     &.right {
       .webui-arrow {
         border-top-color: transparent !important;
-        border-#{$end-direction}-color: var(--dark-sidebar) !important;
+        border-inline-end-color: var(--dark-sidebar) !important;
 
         &::after {
-          border-#{$end-direction}-color: var(--dark-sidebar) !important;
+          border-inline-end-color: var(--dark-sidebar) !important;
         }
       }
     }
@@ -196,7 +196,7 @@
     &.left {
       .webui-arrow {
         &::after {
-          border-#{$start-direction}-color: var(--dark-sidebar) !important;
+          border-inline-start-color: var(--dark-sidebar) !important;
         }
       }
     }
@@ -274,7 +274,7 @@
   .profile-popover-block,
   .skill-popover-block {
     max-width: 260px;
-    text-align: #{$start-direction};
+    text-align: inset-inline-start;
 
     .profile-popover-wrapper,
     .skill-popover-wrapper {
@@ -303,7 +303,7 @@
 
         .badge {
           position: absolute;
-          #{$end-direction}: -2px;
+          inset-inline-end: -2px;
           bottom: 0;
           width: 20px;
           height: 20px;
@@ -425,7 +425,7 @@
       }
 
       .popover-meta {
-        margin-#{$start-direction}: 16px;
+        margin-inline-start: 16px;
 
         span {
           display: block;
@@ -513,8 +513,8 @@
       width: 100%;
       height: 100%;
       top: 0;
-      #{$start-direction}: 0;
-      #{$end-direction}: 0;
+      inset-inline-start: 0;
+      inset-inline-end: 0;
       margin: 0 auto;
       display: flex;
       border-radius: 8px;
@@ -563,11 +563,11 @@
   }
 
   .tippy-box[data-theme~='light'][data-placement^='left'] > .tippy-arrow::before {
-    border-#{$start-direction}-color: var(--dark-sidebar) !important;
+    border-inline-start-color: var(--dark-sidebar) !important;
   }
 
   .tippy-box[data-theme~='light'][data-placement^='right'] > .tippy-arrow::before {
-    border-#{$end-direction}-color: var(--dark-sidebar) !important;
+    border-inline-end-color: var(--dark-sidebar) !important;
   }
 
   .tippy-profile {

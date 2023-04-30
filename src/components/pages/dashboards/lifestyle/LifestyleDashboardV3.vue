@@ -408,7 +408,6 @@ const { progressChartOptions } = useProgressChart()
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .lifestyle-dashboard-v3 {
@@ -429,14 +428,14 @@ const { progressChartOptions } = useProgressChart()
       img {
         position: absolute;
         top: -76px;
-        #{$start-direction}: -30px;
+        inset-inline-start: -30px;
         display: block;
         pointer-events: none;
       }
     }
 
     .header-meta {
-      margin-#{$start-direction}: 0;
+      margin-inline-start: 0;
 
       h3 {
         color: var(--smoke-white);
@@ -455,7 +454,7 @@ const { progressChartOptions } = useProgressChart()
         display: flex;
 
         .summary-stat {
-          margin-#{$end-direction}: 30px;
+          margin-inline-end: 30px;
 
           span {
             font-family: var(--font);
@@ -479,7 +478,7 @@ const { progressChartOptions } = useProgressChart()
         span {
           font-size: 0.8rem;
           text-transform: uppercase;
-          margin-#{$end-direction}: 6px;
+          margin-inline-end: 6px;
         }
 
         i {
@@ -498,7 +497,7 @@ const { progressChartOptions } = useProgressChart()
       margin-bottom: 10px;
 
       .v-icon {
-        margin-#{$end-direction}: 10px;
+        margin-inline-end: 10px;
       }
 
       h4 {
@@ -507,7 +506,7 @@ const { progressChartOptions } = useProgressChart()
             font-size: 1.2rem;
             font-weight: 600;
             color: var(--dark-text);
-            margin-#{$end-direction}: 0.25rem;
+            margin-inline-end: 0.25rem;
           }
 
           &:nth-child(2) {
@@ -601,8 +600,8 @@ const { progressChartOptions } = useProgressChart()
 
         > p {
           max-width: 280px;
-          margin-#{$start-direction}: auto;
-          margin-#{$end-direction}: auto;
+          margin-inline-start: auto;
+          margin-inline-end: auto;
         }
 
         .summary-stats {

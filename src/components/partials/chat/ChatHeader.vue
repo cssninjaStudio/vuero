@@ -5,16 +5,14 @@
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 .chat-header {
   position: absolute;
   display: flex;
   min-height: 55px;
   align-items: center;
   top: 0;
-  #{$start-direction}: 0;
-  #{$end-direction}: 0;
+  inset-inline-start: 0;
+  inset-inline-end: 0;
   width: 100%;
   padding: 5px 10px;
   z-index: 2;
@@ -24,7 +22,7 @@
   .is-autocomplete {
     flex-grow: 2;
     max-width: 320px;
-    margin-#{$start-direction}: 20px;
+    margin-inline-start: 20px;
 
     &.is-active,
     &:hover {
@@ -37,7 +35,7 @@
       .icon {
         position: absolute;
         top: 9px;
-        #{$start-direction}: 9px;
+        inset-inline-start: 9px;
         color: var(--placeholder);
 
         span {
@@ -55,7 +53,7 @@
       .hide {
         position: absolute;
         top: 2px;
-        #{$end-direction}: 0;
+        inset-inline-end: 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -74,7 +72,7 @@
         width: 100% !important;
 
         input {
-          padding-#{$start-direction}: 40px;
+          padding-inline-start: 40px;
           border: none;
           box-shadow: none;
           color: var(--muted-grey);
@@ -106,7 +104,7 @@
             .avatar-badge {
               position: absolute;
               bottom: 0;
-              #{$end-direction}: -5px;
+              inset-inline-end: -5px;
               width: 18px;
               height: 18px;
               border: 2px solid var(--white);
@@ -115,7 +113,7 @@
           }
 
           .entry-text {
-            margin-#{$start-direction}: 15px;
+            margin-inline-start: 15px;
 
             span {
               font-size: 0.8rem;
@@ -130,8 +128,8 @@
       height: auto !important;
       padding-top: 8px;
       padding-bottom: 8px;
-      border-#{$start-direction}: none !important;
-      border-#{$end-direction}: none !important;
+      border-inline-start: none !important;
+      border-inline-end: none !important;
     }
 
     .easy-autocomplete-container {
@@ -151,7 +149,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-#{$start-direction}: 20px;
+    margin-inline-start: 20px;
     cursor: pointer;
 
     img {
@@ -164,7 +162,7 @@
       &:nth-child(2),
       &:nth-child(3),
       &:nth-child(4) {
-        margin-#{$start-direction}: -15px;
+        margin-inline-start: -15px;
       }
     }
 
@@ -176,7 +174,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-#{$start-direction}: -15px;
+      margin-inline-start: -15px;
       border: 2px solid var(--white);
 
       span {

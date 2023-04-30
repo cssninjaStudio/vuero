@@ -194,8 +194,6 @@ const handleSignup = handleSubmit(async (values) => {
 </template>
 
 <style lang="scss" scoped>
-@import '/@src/scss/abstracts/ltr';
-
 .demo-code-wrapper {
   display: flex;
   flex-direction: column-reverse;
@@ -215,7 +213,7 @@ const handleSignup = handleSubmit(async (values) => {
     &::before {
       position: absolute;
       top: 0.6em;
-      #{$end-direction}: 1em;
+      inset-inline-end: 1em;
       z-index: 2;
       font-size: 0.8rem;
       color: #888;

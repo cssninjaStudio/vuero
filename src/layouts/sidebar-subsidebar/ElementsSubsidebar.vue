@@ -265,6 +265,5 @@ const emit = defineEmits(['close'])
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/layout/sidebar-panel';
 </style>

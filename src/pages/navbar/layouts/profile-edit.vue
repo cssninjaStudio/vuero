@@ -128,7 +128,7 @@
           }
 
           i {
-            margin-#{$end-direction}: 8px;
+            margin-inline-end: 8px;
             font-size: 1.1rem;
             color: var(--light-text);
 
@@ -146,7 +146,7 @@
           }
 
           .end {
-            margin-#{$start-direction}: auto;
+            margin-inline-start: auto;
             display: none;
           }
         }
@@ -178,8 +178,8 @@
 
         &.is-stuck {
           background: var(--white);
-          padding-#{$end-direction}: 80px;
-          border-#{$start-direction}: 1px solid var(--fade-grey-dark-3);
+          padding-inline-end: 80px;
+          border-inline-start: 1px solid var(--fade-grey-dark-3);
         }
 
         .left {
@@ -229,7 +229,7 @@
             .edit-button {
               position: absolute;
               bottom: 0;
-              #{$end-direction}: 0;
+              inset-inline-end: 0;
             }
           }
 
@@ -285,7 +285,7 @@
               }
 
               .meta {
-                margin-#{$start-direction}: 10px;
+                margin-inline-start: 10px;
 
                 > span {
                   font-family: var(--font);
@@ -322,7 +322,7 @@
               }
 
               .end {
-                margin-#{$start-direction}: auto;
+                margin-inline-start: auto;
               }
             }
           }

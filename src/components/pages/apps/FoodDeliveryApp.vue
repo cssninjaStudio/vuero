@@ -346,7 +346,6 @@ onUnmounted(() => {
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .food-delivery-dashboard {
@@ -386,13 +385,13 @@ onUnmounted(() => {
         img {
           position: absolute;
           top: -40px;
-          #{$start-direction}: -30px;
+          inset-inline-start: -30px;
           display: block;
         }
       }
 
       .header-meta {
-        margin-#{$start-direction}: 0;
+        margin-inline-start: 0;
         margin-bottom: 20px;
 
         h3 {
@@ -411,7 +410,7 @@ onUnmounted(() => {
           span {
             font-size: 0.8rem;
             text-transform: uppercase;
-            margin-#{$end-direction}: 6px;
+            margin-inline-end: 6px;
           }
 
           i {
@@ -540,20 +539,20 @@ onUnmounted(() => {
           z-index: 25;
 
           &.is-prev {
-            #{$end-direction}: 30px;
+            inset-inline-end: 30px;
 
             i {
               position: relative;
-              #{$start-direction}: -1px;
+              inset-inline-start: -1px;
             }
           }
 
           &.is-next {
-            #{$end-direction}: 0;
+            inset-inline-end: 0;
 
             i {
               position: relative;
-              #{$end-direction}: -1px;
+              inset-inline-end: -1px;
             }
           }
 
@@ -598,7 +597,7 @@ onUnmounted(() => {
             .timer {
               position: absolute;
               bottom: 10px;
-              #{$start-direction}: 10px;
+              inset-inline-start: 10px;
               display: flex;
               justify-content: center;
               align-items: center;
@@ -654,7 +653,7 @@ onUnmounted(() => {
             }
 
             .meta-content {
-              margin-#{$start-direction}: 8px;
+              margin-inline-start: 8px;
               font-family: var(--font);
               line-height: 1.3;
 
@@ -694,7 +693,7 @@ onUnmounted(() => {
 
   > .right {
     width: 30%;
-    padding-#{$start-direction}: 20px;
+    padding-inline-start: 20px;
 
     .sticky-panel {
       position: fixed;
@@ -940,7 +939,7 @@ onUnmounted(() => {
       margin: 8px 0;
 
       .meta {
-        margin-#{$start-direction}: 12px;
+        margin-inline-start: 12px;
         display: flex;
         flex-direction: column;
 
@@ -1009,7 +1008,7 @@ onUnmounted(() => {
 
         .header-image {
           img {
-            #{$start-direction}: 0;
+            inset-inline-start: 0;
           }
         }
       }

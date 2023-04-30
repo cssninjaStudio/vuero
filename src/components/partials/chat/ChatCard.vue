@@ -20,13 +20,11 @@
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 .is-chat {
   position: absolute;
   height: 100%;
   top: 0;
-  #{$start-direction}: 0;
+  inset-inline-start: 0;
   width: 100%;
   border-radius: 16px 6px 6px 16px;
 }
@@ -55,7 +53,7 @@
   .is-chat {
     position: absolute;
     top: 0 !important;
-    #{$start-direction}: 0;
+    inset-inline-start: 0;
     max-height: calc(100% - 60px) !important;
     overflow: hidden;
   }
@@ -65,7 +63,7 @@
   .is-chat {
     position: absolute;
     top: 0 !important;
-    #{$start-direction}: 0;
+    inset-inline-start: 0;
     height: 100%;
     max-height: calc(100% - 60px) !important;
     overflow: hidden;

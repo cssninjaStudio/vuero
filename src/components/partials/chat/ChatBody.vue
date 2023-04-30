@@ -5,8 +5,6 @@
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 .chat-body {
   position: relative;
   width: calc(100% - 320px);
@@ -136,7 +134,7 @@
       order: 1;
       min-width: 230px;
       max-width: 40%;
-      margin-#{$start-direction}: 20px;
+      margin-inline-start: 20px;
 
       p {
         font-size: 0.9rem;
@@ -147,14 +145,14 @@
         background: var(--white);
         color: var(--dark-text);
         border-radius: 12px;
-        border-top-#{$start-direction}-radius: 0;
+        border-start-start-radius: 0;
         padding: 16px;
         position: relative;
       }
 
       time {
         display: block;
-        text-align: #{$end-direction};
+        text-align: inset-inline-end;
         font-size: 0.8rem;
         color: var(--light-text);
         margin-top: 3px;
@@ -168,7 +166,7 @@
           height: 10px;
           width: 10px;
           color: var(--white);
-          margin-#{$start-direction}: 3px;
+          margin-inline-start: 3px;
         }
       }
 
@@ -189,7 +187,7 @@
 
     .msg {
       order: 1;
-      margin-#{$end-direction}: 20px;
+      margin-inline-end: 20px;
       min-width: 230px;
       max-width: 40%;
       position: relative;
@@ -198,7 +196,7 @@
         background: #e6e5ed;
         color: var(--dark-text);
         border-radius: 12px;
-        border-top-#{$end-direction}-radius: 0;
+        border-start-end-radius: 0;
         padding: 12px;
       }
 
@@ -208,7 +206,7 @@
 
       time {
         display: block;
-        text-align: #{$start-direction};
+        text-align: inset-inline-start;
         font-size: 0.8rem;
         color: var(--light-text);
         margin-top: 3px;
@@ -222,7 +220,7 @@
           height: 10px;
           width: 10px;
           color: var(--dark-text);
-          margin-#{$end-direction}: 3px;
+          margin-inline-end: 3px;
         }
       }
 
@@ -251,8 +249,8 @@
     height: 50%;
     position: absolute;
     top: 50%;
-    #{$start-direction}: 0;
-    #{$end-direction}: 0;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
     bottom: 0;
     margin: 0 auto;
     text-align: center;
@@ -279,8 +277,8 @@
 
   .chat-loader {
     position: fixed;
-    #{$start-direction}: 0;
-    #{$end-direction}: 0;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
     bottom: 0;
     margin: 0 auto;
     display: flex;

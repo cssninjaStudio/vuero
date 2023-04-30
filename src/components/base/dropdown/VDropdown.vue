@@ -85,19 +85,17 @@ defineExpose({
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 .dropdown {
   &:not(.is-right) {
     .dropdown-menu {
-      #{$start-direction}: 0;
+      inset-inline-start: 0;
     }
   }
 
   &.is-right {
     .dropdown-menu {
-      #{$start-direction}: initial;
-      #{$end-direction}: 0;
+      inset-inline-start: initial;
+      inset-inline-end: 0;
     }
   }
 
@@ -139,19 +137,19 @@ defineExpose({
     .dropdown-menu {
       margin-top: 6px;
       padding-bottom: 0;
-      text-align: #{$start-direction};
+      text-align: inset-inline-start;
     }
   }
 
   &.is-modern {
     &.is-active {
       .caret {
-        transform: rotate($transform-direction * 180deg);
+        transform: rotate(calc(var(--transform-direction) * 180deg));
       }
     }
 
     .is-trigger {
-      padding-#{$end-direction}: 0.75em;
+      padding-inline-end: 0.75em;
 
       .caret {
         height: 22px;
@@ -160,7 +158,7 @@ defineExpose({
         justify-content: center;
         align-items: center;
         transition: all 0.3s; // transition-all test
-        margin-#{$start-direction}: 6px;
+        margin-inline-start: 6px;
 
         .iconify {
           vertical-align: middle;
@@ -266,7 +264,7 @@ defineExpose({
         }
 
         .meta {
-          margin-#{$start-direction}: 10px;
+          margin-inline-start: 10px;
 
           span {
             display: block;
@@ -310,7 +308,7 @@ defineExpose({
           position: relative;
           top: -2px;
           vertical-align: middle;
-          margin-#{$start-direction}: 0.25rem;
+          margin-inline-start: 0.25rem;
         }
       }
     }
@@ -339,7 +337,7 @@ defineExpose({
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-#{$end-direction}: 1rem;
+        padding-inline-end: 1rem;
 
         svg {
           height: 16px;
@@ -350,7 +348,7 @@ defineExpose({
         // Child hover dropdown
         .child-dropdown {
           position: absolute;
-          #{$end-direction}: -282px;
+          inset-inline-end: -282px;
           top: 0;
           width: 280px;
           transition: all 0.3s; // transition-all test

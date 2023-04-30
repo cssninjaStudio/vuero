@@ -456,7 +456,6 @@ const options = ref(['All Flights'])
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .flights-dashboard {
@@ -474,7 +473,7 @@ const options = ref(['All Flights'])
     .travel-illustration {
       position: absolute;
       bottom: 30px;
-      #{$end-direction}: 30px;
+      inset-inline-end: 30px;
       max-width: 260px;
     }
 
@@ -489,7 +488,7 @@ const options = ref(['All Flights'])
       }
 
       .inner {
-        margin-#{$start-direction}: 16px;
+        margin-inline-start: 16px;
 
         .booking-bar-heading {
           font-family: var(--font-alt);
@@ -518,7 +517,7 @@ const options = ref(['All Flights'])
         align-items: center;
 
         .control:not(:last-of-type) {
-          margin-#{$end-direction}: 2rem;
+          margin-inline-end: 2rem;
         }
 
         .input {
@@ -580,14 +579,14 @@ const options = ref(['All Flights'])
         &::before {
           content: '$';
           position: relative;
-          #{$end-direction}: 0;
+          inset-inline-end: 0;
           font-size: 1.2rem;
           font-weight: 700;
         }
       }
 
       .meta {
-        margin-#{$start-direction}: 16px;
+        margin-inline-start: 16px;
         line-height: 1.3;
 
         span {
@@ -665,12 +664,12 @@ const options = ref(['All Flights'])
       }
 
       .start {
-        margin-#{$start-direction}: 1rem;
+        margin-inline-start: 1rem;
       }
 
       .end {
-        margin-#{$start-direction}: auto;
-        margin-#{$end-direction}: 1.5rem;
+        margin-inline-start: auto;
+        margin-inline-end: 1.5rem;
       }
 
       .route {
@@ -705,18 +704,18 @@ const options = ref(['All Flights'])
             content: '';
             position: absolute;
             top: -14px;
-            #{$start-direction}: 50%;
-            #{$end-direction}: 50%;
+            inset-inline-start: 50%;
+            inset-inline-end: 50%;
             height: 10px;
             width: 1px;
-            border-#{$end-direction}: 1px solid var(--light-text);
+            border-inline-end: 1px solid var(--light-text);
           }
 
           &::after {
             content: attr(data-content);
             position: absolute;
             top: -32px;
-            #{$start-direction}: 23%;
+            inset-inline-start: 23%;
             width: 130px;
             font-size: 0.8rem;
             text-align: center;
@@ -726,7 +725,7 @@ const options = ref(['All Flights'])
 
         .arrival {
           font-size: 1.8rem;
-          transform: rotate($transform-direction * 90deg);
+          transform: rotate(calc(var(--transform-direction) * 90deg));
           height: 26px;
           width: 26px;
           display: flex;
@@ -736,9 +735,9 @@ const options = ref(['All Flights'])
           .lnil {
             position: relative;
             top: -4px;
-            #{$end-direction}: 5px;
+            inset-inline-end: 5px;
             color: var(--light-text);
-            margin-#{$start-direction}: 0.75rem;
+            margin-inline-start: 0.75rem;
           }
         }
       }
@@ -753,7 +752,7 @@ const options = ref(['All Flights'])
           content: '$';
           position: relative;
           top: -8px;
-          #{$end-direction}: 0;
+          inset-inline-end: 0;
           font-size: 1.1rem;
           font-weight: 700;
         }
@@ -941,7 +940,7 @@ const options = ref(['All Flights'])
     .booking-bar-wrapper {
       .travel-illustration {
         bottom: 30px;
-        #{$end-direction}: -25px;
+        inset-inline-end: -25px;
         max-width: 215px;
       }
     }
@@ -963,7 +962,7 @@ const options = ref(['All Flights'])
     .booking-bar-wrapper {
       .travel-illustration {
         bottom: 30px;
-        #{$end-direction}: -12px;
+        inset-inline-end: -12px;
         max-width: 200px;
       }
     }

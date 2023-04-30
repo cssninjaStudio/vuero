@@ -132,8 +132,8 @@
         .slider-tooltip {
           border-radius: 0.75rem;
           min-width: 28px;
-          padding-#{$start-direction}: 0.75rem;
-          padding-#{$end-direction}: 0.75rem;
+          padding-inline-start: 0.75rem;
+          padding-inline-end: 0.75rem;
           height: 28px;
           font-size: 0.9rem;
           display: flex;
@@ -160,8 +160,8 @@
         .slider-tooltip {
           border-radius: 0.5rem;
           min-width: 28px;
-          padding-#{$start-direction}: 0.75rem;
-          padding-#{$end-direction}: 0.75rem;
+          padding-inline-start: 0.75rem;
+          padding-inline-end: 0.75rem;
           height: 28px;
           font-size: 0.9rem;
           display: flex;

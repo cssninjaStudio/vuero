@@ -39,8 +39,6 @@ if (props.lastLineWidth.match(CssUnitRe) === null) {
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 .content-shape-group {
   width: 100%;
   max-width: 100%;
@@ -80,8 +78,8 @@ if (props.lastLineWidth.match(CssUnitRe) === null) {
   }
 
   &.is-centered {
-    margin-#{$start-direction}: auto;
-    margin-#{$end-direction}: auto;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
   }
 }
 </style>

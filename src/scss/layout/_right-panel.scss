@@ -19,28 +19,28 @@
     }
 
     .right-panel {
-      transform: translateX($transform-direction * 0);
+      transform: translateX(calc(var(--transform-direction) * 0));
     }
   }
 
   &.is-left {
     &.is-active {
       .right-panel {
-        transform: translateX($transform-direction * 0) !important;
+        transform: translateX(calc(var(--transform-direction) * 0)) !important;
       }
     }
 
     .right-panel {
-      #{$end-direction}: unset;
-      #{$start-direction}: 0;
-      transform: translateX($transform-direction * -100%);
+      inset-inline-end: unset;
+      inset-inline-start: 0;
+      transform: translateX(calc(var(--transform-direction) * -100%));
     }
   }
 
   .panel-overlay {
     position: fixed;
     top: 0;
-    #{$start-direction}: 0;
+    inset-inline-start: 0;
     width: 100%;
     height: 100%;
     background-color: var(--dark-sidebar);
@@ -53,11 +53,11 @@
   .right-panel {
     position: fixed;
     top: 0;
-    #{$end-direction}: 0;
+    inset-inline-end: 0;
     width: 360px;
     height: 100%;
     background: var(--white);
-    transform: translateX($transform-direction * 100%);
+    transform: translateX(calc(var(--transform-direction) * 100%));
     z-index: 102;
     transition: all 0.3s; // transition-all test
 

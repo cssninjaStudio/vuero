@@ -90,8 +90,6 @@ const props = withDefaults(
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 .landing-page-wrapper {
   .component-box {
     display: block;

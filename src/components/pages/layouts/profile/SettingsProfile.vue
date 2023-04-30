@@ -139,7 +139,6 @@
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 @import '/@src/scss/components/profile-stats';
 
@@ -199,7 +198,7 @@
         .edit-icon {
           position: absolute;
           top: 6px;
-          #{$start-direction}: 6px;
+          inset-inline-start: 6px;
           display: flex;
           justify-content: center;
           align-items: center;

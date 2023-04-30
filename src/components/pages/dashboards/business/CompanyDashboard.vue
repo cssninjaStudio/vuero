@@ -4,7 +4,6 @@ import { useSharingChart } from '/@src/data/dashboards/company/sharingChart'
 import { useUsersChart } from '/@src/data/dashboards/company/usersChart'
 import { useUsersBarChart } from '/@src/data/dashboards/company/usersBarChart'
 import { usePersonalScoreGauge } from '/@src/data/widgets/charts/personalScoreGauge'
-import { optionsCompany } from '/@src/data/dashboards/company/datatable'
 import { popovers } from '/@src/data/users/userPopovers'
 const { personalScoreGaugeOptions, onPersonalScoreGaugeReady } = usePersonalScoreGauge()
 const { barData, barData2, usersBarOptions } = useUsersBarChart()
@@ -443,7 +442,6 @@ onMounted(async () => {
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .company-dashboard {
@@ -457,10 +455,10 @@ onMounted(async () => {
 
     .header-item {
       width: 25%;
-      border-#{$end-direction}: 1px solid var(--fade-grey-dark-3);
+      border-inline-end: 1px solid var(--fade-grey-dark-3);
 
       &:last-child {
-        border-#{$end-direction}: none;
+        border-inline-end: none;
       }
 
       .item-inner {
@@ -509,7 +507,7 @@ onMounted(async () => {
         .button {
           position: absolute;
           bottom: 0;
-          #{$end-direction}: 0;
+          inset-inline-end: 0;
           max-width: 35px;
         }
       }
@@ -577,7 +575,7 @@ onMounted(async () => {
           border-bottom: 1px solid var(--fade-grey-dark-3);
 
           .revenue-stat {
-            margin-#{$end-direction}: 30px;
+            margin-inline-end: 30px;
             font-family: var(--font);
 
             span {
@@ -683,7 +681,7 @@ onMounted(async () => {
 
       .header-item {
         width: 50%;
-        border-#{$end-direction}: none;
+        border-inline-end: none;
         border: none;
         padding: 16px 0;
       }

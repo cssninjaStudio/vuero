@@ -349,7 +349,6 @@ const { optionsCircle } = useGrowthRadialChart()
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .analytics-dashboard {
@@ -400,7 +399,7 @@ const { optionsCircle } = useGrowthRadialChart()
           svg {
             height: 16px;
             width: 16px;
-            margin-#{$end-direction}: 6px;
+            margin-inline-end: 6px;
             stroke-width: 3px;
           }
         }
@@ -437,7 +436,7 @@ const { optionsCircle } = useGrowthRadialChart()
       display: flex;
 
       .revenue-stat {
-        margin-#{$end-direction}: 30px;
+        margin-inline-end: 30px;
         font-family: var(--font);
 
         span {
@@ -477,7 +476,7 @@ const { optionsCircle } = useGrowthRadialChart()
           text-align: center;
 
           &:first-child {
-            border-#{$end-direction}: 1px solid var(--fade-grey-dark-3);
+            border-inline-end: 1px solid var(--fade-grey-dark-3);
           }
 
           span {
@@ -525,7 +524,7 @@ const { optionsCircle } = useGrowthRadialChart()
             svg {
               height: 16px;
               width: 16px;
-              margin-#{$end-direction}: 6px;
+              margin-inline-end: 6px;
               stroke-width: 3px;
             }
           }

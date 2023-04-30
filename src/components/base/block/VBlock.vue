@@ -43,8 +43,6 @@ const props = withDefaults(defineProps<VBlockProps>(), {
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 .media-flex {
   display: flex;
   margin-bottom: 1rem;
@@ -56,7 +54,7 @@ const props = withDefaults(defineProps<VBlockProps>(), {
   }
 
   .flex-meta {
-    margin-#{$start-direction}: 12px;
+    margin-inline-start: 12px;
     line-height: 1.3;
 
     &.is-lighter {
@@ -100,12 +98,12 @@ const props = withDefaults(defineProps<VBlockProps>(), {
   }
 
   .flex-end {
-    margin-#{$start-direction}: auto;
+    margin-inline-start: auto;
     display: flex;
     justify-content: flex-end;
 
     .end-action {
-      margin-#{$start-direction}: 1rem;
+      margin-inline-start: 1rem;
     }
   }
 }
@@ -122,7 +120,7 @@ const props = withDefaults(defineProps<VBlockProps>(), {
   }
 
   .flex-meta {
-    margin-#{$start-direction}: 12px;
+    margin-inline-start: 12px;
     line-height: 1.4;
 
     &.is-lighter {
@@ -167,13 +165,13 @@ const props = withDefaults(defineProps<VBlockProps>(), {
   }
 
   .flex-end {
-    margin-#{$start-direction}: auto;
+    margin-inline-start: auto;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 
     .end-action {
-      margin-#{$start-direction}: 1rem;
+      margin-inline-start: 1rem;
     }
   }
 }
@@ -216,7 +214,7 @@ const props = withDefaults(defineProps<VBlockProps>(), {
         margin: 10px auto;
 
         .end-action {
-          margin-#{$start-direction}: 0;
+          margin-inline-start: 0;
         }
 
         .button {
@@ -247,7 +245,7 @@ const props = withDefaults(defineProps<VBlockProps>(), {
         margin: 10px auto;
 
         .end-action {
-          margin-#{$start-direction}: 0;
+          margin-inline-start: 0;
         }
 
         .button {
@@ -278,7 +276,7 @@ const props = withDefaults(defineProps<VBlockProps>(), {
         margin: 10px auto;
 
         .end-action {
-          margin-#{$start-direction}: 0;
+          margin-inline-start: 0;
         }
 
         .button {

@@ -160,8 +160,6 @@ const panels = usePanels()
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 .right-panel-wrapper {
   &.is-task {
     .right-panel {
@@ -227,7 +225,7 @@ const panels = usePanels()
               button {
                 height: 40px;
                 width: 40px;
-                border-#{$end-direction}: 50%;
+                border-inline-end: 50%;
                 background: none;
                 border: 1.8px dashed var(--light-text);
                 border-radius: var(--radius-rounded);
@@ -258,7 +256,7 @@ const panels = usePanels()
             display: flex;
 
             *:last-child {
-              margin-#{$start-direction}: auto;
+              margin-inline-start: auto;
             }
 
             .task-stat,
@@ -268,7 +266,7 @@ const panels = usePanels()
               color: var(--light-text);
 
               span {
-                margin-#{$start-direction}: 3px;
+                margin-inline-start: 3px;
               }
 
               svg {
@@ -278,7 +276,7 @@ const panels = usePanels()
             }
 
             .task-stat {
-              margin-#{$end-direction}: 15px;
+              margin-inline-end: 15px;
             }
 
             a {
@@ -289,7 +287,7 @@ const panels = usePanels()
               color: var(--primary);
 
               span {
-                margin-#{$start-direction}: 5px;
+                margin-inline-start: 5px;
               }
 
               svg {
@@ -326,7 +324,7 @@ const panels = usePanels()
               }
 
               .meta {
-                margin-#{$start-direction}: 12px;
+                margin-inline-start: 12px;
                 line-height: 1.3;
 
                 span {
@@ -355,7 +353,7 @@ const panels = usePanels()
               }
 
               .dropdown {
-                margin-#{$start-direction}: auto;
+                margin-inline-start: auto;
               }
             }
           }
@@ -392,7 +390,7 @@ const panels = usePanels()
                 }
 
                 .button {
-                  margin-#{$start-direction}: 10px;
+                  margin-inline-start: 10px;
                 }
               }
             }

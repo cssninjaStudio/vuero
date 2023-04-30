@@ -225,14 +225,12 @@ const filteredData = computed(() => {
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 .has-top-nav {
   .flex-list-wrapper,
   .list-flex-toolbar {
     max-width: 880px;
-    margin-#{$end-direction}: auto;
-    margin-#{$start-direction}: auto;
+    margin-inline-end: auto;
+    margin-inline-start: auto;
   }
 }
 

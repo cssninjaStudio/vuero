@@ -49,8 +49,6 @@ if (mobileHeightValue.match(CssUnitRe) === null) {
 </template>
 
 <style lang="scss" scoped>
-@import '/@src/scss/abstracts/ltr';
-
 .content-shape {
   width: v-bind('props.width');
   height: v-bind('props.height');
@@ -86,8 +84,8 @@ if (mobileHeightValue.match(CssUnitRe) === null) {
   }
 
   &.is-centered {
-    margin-#{$start-direction}: auto;
-    margin-#{$end-direction}: auto;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
   }
 }
 

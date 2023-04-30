@@ -15,7 +15,6 @@ const props = defineProps<{
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .overview-card {
@@ -69,7 +68,7 @@ const props = defineProps<{
         color: var(--green);
 
         svg {
-          transform: rotate($transform-direction * -45deg);
+          transform: rotate(calc(var(--transform-direction) * -45deg));
         }
       }
     }
@@ -79,7 +78,7 @@ const props = defineProps<{
         color: var(--red);
 
         svg {
-          transform: rotate($transform-direction * 45deg);
+          transform: rotate(calc(var(--transform-direction) * 45deg));
         }
       }
     }
@@ -89,7 +88,7 @@ const props = defineProps<{
       color: var(--light-text);
 
       span {
-        margin-#{$end-direction}: 8px;
+        margin-inline-end: 8px;
         font-weight: 500;
 
         svg {
@@ -132,7 +131,7 @@ const props = defineProps<{
           color: var(--green);
 
           svg {
-            transform: rotate($transform-direction * -45deg);
+            transform: rotate(calc(var(--transform-direction) * -45deg));
           }
         }
       }
@@ -142,7 +141,7 @@ const props = defineProps<{
           color: var(--red);
 
           svg {
-            transform: rotate($transform-direction * 45deg);
+            transform: rotate(calc(var(--transform-direction) * 45deg));
           }
         }
       }
@@ -152,7 +151,7 @@ const props = defineProps<{
         color: var(--light-text);
 
         span {
-          margin-#{$end-direction}: 8px;
+          margin-inline-end: 8px;
           font-weight: 500;
 
           svg {

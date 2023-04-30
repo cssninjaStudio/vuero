@@ -75,7 +75,6 @@ const filters = ref('')
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .list-view-v1 {
@@ -90,7 +89,7 @@ const filters = ref('')
       align-items: center;
 
       .meta-left {
-        margin-#{$start-direction}: 16px;
+        margin-inline-start: 16px;
 
         h3 {
           font-family: var(--font-alt);
@@ -112,13 +111,13 @@ const filters = ref('')
       }
 
       .meta-right {
-        margin-#{$start-direction}: auto;
+        margin-inline-start: auto;
         display: flex;
         justify-content: flex-end;
         align-items: center;
 
         .tags {
-          margin-#{$end-direction}: 30px;
+          margin-inline-end: 30px;
           margin-bottom: 0;
 
           .tag {
@@ -129,7 +128,7 @@ const filters = ref('')
         .stats {
           display: flex;
           align-items: center;
-          margin-#{$end-direction}: 30px;
+          margin-inline-end: 30px;
 
           .stat {
             display: flex;
@@ -168,7 +167,7 @@ const filters = ref('')
           .separator {
             height: 25px;
             width: 2px;
-            border-#{$end-direction}: 1px solid var(--fade-grey-dark-3);
+            border-inline-end: 1px solid var(--fade-grey-dark-3);
             margin: 0 16px;
           }
         }
@@ -183,12 +182,12 @@ const filters = ref('')
             font-family: var(--font);
             font-size: 0.9rem;
             color: var(--light-text);
-            margin-#{$start-direction}: 6px;
+            margin-inline-start: 6px;
           }
         }
 
         .dropdown {
-          margin-#{$start-direction}: 30px;
+          margin-inline-start: 30px;
         }
       }
     }
@@ -239,12 +238,12 @@ const filters = ref('')
         }
 
         .meta-left {
-          margin-#{$start-direction}: 0;
+          margin-inline-start: 0;
         }
 
         .meta-right {
           flex-direction: column;
-          margin-#{$start-direction}: 0;
+          margin-inline-start: 0;
 
           .tags {
             margin: 10px 0;
@@ -266,8 +265,8 @@ const filters = ref('')
           .dropdown {
             position: absolute;
             top: 0;
-            #{$end-direction}: 0;
-            margin-#{$start-direction}: 0;
+            inset-inline-end: 0;
+            margin-inline-start: 0;
           }
         }
       }
@@ -293,12 +292,12 @@ const filters = ref('')
         }
 
         .meta-left {
-          margin-#{$start-direction}: 0;
+          margin-inline-start: 0;
         }
 
         .meta-right {
           flex-direction: column;
-          margin-#{$start-direction}: 0;
+          margin-inline-start: 0;
 
           .tags {
             margin: 10px 0;
@@ -320,8 +319,8 @@ const filters = ref('')
           .dropdown {
             position: absolute;
             top: 0;
-            #{$end-direction}: 0;
-            margin-#{$start-direction}: 0;
+            inset-inline-end: 0;
+            margin-inline-start: 0;
           }
         }
       }

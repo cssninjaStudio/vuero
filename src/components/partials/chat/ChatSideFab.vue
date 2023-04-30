@@ -21,12 +21,10 @@ const chat = useChat()
 </template>
 
 <style lang="scss" scoped>
-@import '/@src/scss/abstracts/ltr';
-
 .chat-side-fab {
   position: fixed;
   top: 10px;
-  #{$end-direction}: 10px;
+  inset-inline-end: 10px;
   height: 40px;
   width: 40px;
   display: flex;
@@ -36,16 +34,18 @@ const chat = useChat()
   border-radius: var(--radius-rounded);
   border: 1px solid var(--fade-grey-dark-3);
   box-shadow: var(--light-box-shadow);
-  transform: translateX($transform-direction * 60px) rotate($transform-direction * 360deg);
+  transform: translateX(calc(var(--transform-direction) * 60px))
+    rotate(calc(var(--transform-direction) * 360deg));
   transition: all 0.3s; // transition-all test
 
   &.is-active {
-    transform: translateX($transform-direction * 0) rotate($transform-direction * 0);
+    transform: translateX(calc(var(--transform-direction) * 0))
+      rotate(calc(var(--transform-direction) * 0));
   }
 
   svg {
     position: relative;
-    #{$start-direction}: -1px;
+    inset-inline-start: -1px;
     height: 20px;
     width: 20px;
     color: var(--light-text);
@@ -62,16 +62,18 @@ const chat = useChat()
 @media (width <= 767px) {
   .chat-side-fab {
     top: 75px;
-    #{$end-direction}: 16px;
-    transform: translateX($transform-direction * 0) rotate($transform-direction * 0);
+    inset-inline-end: 16px;
+    transform: translateX(calc(var(--transform-direction) * 0))
+      rotate(calc(var(--transform-direction) * 0));
 
     &.is-active {
-      transform: translateX($transform-direction * 0) rotate($transform-direction * 0);
+      transform: translateX(calc(var(--transform-direction) * 0))
+        rotate(calc(var(--transform-direction) * 0));
     }
 
     &.is-mobile-active {
-      transform: translateX($transform-direction * 60px)
-        rotate($transform-direction * 360deg) !important;
+      transform: translateX(calc(var(--transform-direction) * 60px))
+        rotate(calc(var(--transform-direction) * 360deg)) !important;
     }
   }
 }
@@ -79,16 +81,18 @@ const chat = useChat()
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .chat-side-fab {
     top: 75px;
-    #{$end-direction}: 16px;
-    transform: translateX($transform-direction * 0) rotate($transform-direction * 0);
+    inset-inline-end: 16px;
+    transform: translateX(calc(var(--transform-direction) * 0))
+      rotate(calc(var(--transform-direction) * 0));
 
     &.is-active {
-      transform: translateX($transform-direction * 0) rotate($transform-direction * 0);
+      transform: translateX(calc(var(--transform-direction) * 0))
+        rotate(calc(var(--transform-direction) * 0));
     }
 
     &.is-mobile-active {
-      transform: translateX($transform-direction * 60px)
-        rotate($transform-direction * 360deg) !important;
+      transform: translateX(calc(var(--transform-direction) * 60px))
+        rotate(calc(var(--transform-direction) * 360deg)) !important;
     }
   }
 }

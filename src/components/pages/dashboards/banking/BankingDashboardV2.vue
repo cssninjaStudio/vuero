@@ -386,7 +386,6 @@ const goto = (index: number) => {
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .banking-dashboard-v2 {
@@ -407,7 +406,7 @@ const goto = (index: number) => {
         .column {
           &:first-child {
             .inner-box {
-              border-#{$end-direction}: 1px solid var(--fade-grey-dark-3);
+              border-inline-end: 1px solid var(--fade-grey-dark-3);
             }
           }
         }
@@ -438,7 +437,7 @@ const goto = (index: number) => {
           .field {
             position: absolute;
             top: -7px;
-            #{$end-direction}: 0;
+            inset-inline-end: 0;
             z-index: 5;
             min-width: 160px;
 
@@ -450,7 +449,7 @@ const goto = (index: number) => {
               }
 
               .multiselect-options {
-                #{$start-direction}: unset !important;
+                inset-inline-start: unset !important;
                 min-width: 180px;
               }
             }
@@ -461,7 +460,7 @@ const goto = (index: number) => {
           display: flex;
 
           .controls {
-            margin-#{$end-direction}: 1.5rem;
+            margin-inline-end: 1.5rem;
 
             .button {
               .icon {
@@ -477,10 +476,10 @@ const goto = (index: number) => {
             max-width: 520px;
 
             .tns-nav {
-              text-align: #{$end-direction};
+              text-align: inset-inline-end;
               position: absolute;
               top: 0;
-              #{$end-direction}: 15px;
+              inset-inline-end: 15px;
               height: auto;
               max-height: 30px;
               width: auto;
@@ -560,7 +559,7 @@ const goto = (index: number) => {
                   .shape {
                     position: absolute;
                     bottom: -10px;
-                    #{$end-direction}: -10px;
+                    inset-inline-end: -10px;
                     height: 70px;
                     width: 70px;
                     background: var(--white);
@@ -656,7 +655,7 @@ const goto = (index: number) => {
                   background: var(--fade-grey-light-2);
 
                   &.is-up {
-                    transform: rotate($transform-direction * -45deg);
+                    transform: rotate(calc(var(--transform-direction) * -45deg));
 
                     svg {
                       color: var(--green);
@@ -664,7 +663,7 @@ const goto = (index: number) => {
                   }
 
                   &.is-down {
-                    transform: rotate($transform-direction * 45deg);
+                    transform: rotate(calc(var(--transform-direction) * 45deg));
 
                     svg {
                       color: var(--red);
@@ -679,7 +678,7 @@ const goto = (index: number) => {
                 }
 
                 .stat-text {
-                  margin-#{$start-direction}: 12px;
+                  margin-inline-start: 12px;
                   font-family: var(--font);
                   font-weight: 600;
                   font-size: 1.1rem;
@@ -731,12 +730,12 @@ const goto = (index: number) => {
 
         .chart-wrapper {
           position: relative;
-          padding-#{$end-direction}: 30px;
+          padding-inline-end: 30px;
 
           .action-link {
             position: absolute;
             top: -42px;
-            #{$end-direction}: 45px;
+            inset-inline-end: 45px;
           }
         }
 
@@ -884,7 +883,7 @@ const goto = (index: number) => {
         padding: 10px;
 
         .inner-box {
-          border-#{$end-direction}: none !important;
+          border-inline-end: none !important;
 
           .cards-wrapper {
             position: relative;
@@ -893,8 +892,8 @@ const goto = (index: number) => {
             .controls {
               position: absolute;
               top: -68px;
-              #{$end-direction}: -8px;
-              margin-#{$end-direction}: 0;
+              inset-inline-end: -8px;
+              margin-inline-end: 0;
             }
           }
 
@@ -909,11 +908,11 @@ const goto = (index: number) => {
           }
 
           .chart-wrapper {
-            padding-#{$end-direction}: 0;
+            padding-inline-end: 0;
 
             .action-link {
               top: -45px;
-              #{$end-direction}: 0;
+              inset-inline-end: 0;
             }
           }
         }
@@ -933,7 +932,7 @@ const goto = (index: number) => {
     .dashboard-card {
       &.is-card-panel {
         .inner-box {
-          border-#{$end-direction}: none !important;
+          border-inline-end: none !important;
 
           .card-balance-wrap {
             .card-balance {
@@ -946,11 +945,11 @@ const goto = (index: number) => {
           }
 
           .chart-wrapper {
-            padding-#{$end-direction}: 0;
+            padding-inline-end: 0;
 
             .action-link {
               top: -45px;
-              #{$end-direction}: 0;
+              inset-inline-end: 0;
             }
           }
         }
@@ -965,7 +964,7 @@ const goto = (index: number) => {
       &.is-card-panel {
         .inner-box {
           .cards-carousel {
-            margin-#{$start-direction}: 30px;
+            margin-inline-start: 30px;
             max-width: 400px !important;
 
             .cards-carousel-inner {

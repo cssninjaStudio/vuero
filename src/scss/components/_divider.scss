@@ -40,19 +40,19 @@ $divider-color: $grey-light !default;
     min-height: 2rem;
 
     &::before {
-      border-#{$start-direction}: $divider-thickness solid $divider-background-color;
+      border-inline-start: $divider-thickness solid $divider-background-color;
       bottom: 1rem;
       content: '';
       display: block;
-      #{$start-direction}: 50%;
+      inset-inline-start: 50%;
       position: absolute;
       top: 1rem;
-      transform: translateX($transform-direction * -50%);
+      transform: translateX(calc(var(--transform-direction) * -50%));
     }
 
     &[data-content]::after {
       position: absolute;
-      #{$start-direction}: 50%;
+      inset-inline-start: 50%;
       top: 50%;
       padding: 0.1rem;
       transform: translateY(-50%) translateX(-50%);

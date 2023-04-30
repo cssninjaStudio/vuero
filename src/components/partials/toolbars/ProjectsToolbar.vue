@@ -22,19 +22,17 @@
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 .projects-toolbar {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 
   .avatar-stack {
-    margin-#{$start-direction}: 16px;
+    margin-inline-start: 16px;
   }
 
   .button {
-    margin-#{$start-direction}: auto;
+    margin-inline-start: auto;
     min-width: 140px;
   }
 }

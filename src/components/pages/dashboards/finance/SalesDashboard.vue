@@ -364,7 +364,6 @@ onMounted(() => {
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .sales-dashboard {
@@ -375,7 +374,7 @@ onMounted(() => {
     margin-bottom: 30px;
 
     .start {
-      margin-#{$start-direction}: 12px;
+      margin-inline-start: 12px;
 
       h3 {
         font-family: var(--font-alt);
@@ -386,12 +385,12 @@ onMounted(() => {
     }
 
     .end {
-      margin-#{$start-direction}: auto;
+      margin-inline-start: auto;
       display: flex;
       justify-content: flex-end;
 
       .button {
-        margin-#{$start-direction}: 10px;
+        margin-inline-start: 10px;
       }
     }
   }
@@ -434,7 +433,7 @@ onMounted(() => {
       margin-bottom: 10px;
 
       .revenue-stat {
-        margin-#{$end-direction}: 30px;
+        margin-inline-end: 30px;
         font-family: var(--font);
 
         span {
@@ -464,7 +463,7 @@ onMounted(() => {
       justify-content: space-between;
 
       .meta {
-        margin-#{$end-direction}: 30px;
+        margin-inline-end: 30px;
         align-items: center;
         font-family: var(--font);
 

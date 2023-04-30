@@ -33,8 +33,6 @@ const props = withDefaults(defineProps<VFlexTableCellProps>(), {
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 .flex-table-cell {
   flex: 1 1 0;
   display: flex;
@@ -43,7 +41,7 @@ const props = withDefaults(defineProps<VFlexTableCellProps>(), {
   font-family: var(--font);
   word-break: keep-all;
   white-space: nowrap;
-  text-align: #{$start-direction};
+  text-align: inset-inline-start;
 
   &.is-scrollable-x {
     overflow-x: auto;
@@ -97,7 +95,7 @@ const props = withDefaults(defineProps<VFlexTableCellProps>(), {
 
     .checkbox {
       padding: 0;
-      margin-#{$start-direction}: 4px;
+      margin-inline-start: 4px;
     }
   }
 
@@ -115,11 +113,11 @@ const props = withDefaults(defineProps<VFlexTableCellProps>(), {
 
   &.is-user,
   &.is-media {
-    padding-#{$start-direction}: 0;
+    padding-inline-start: 0;
 
     > div span:not(.avatar) {
       display: block;
-      margin-#{$start-direction}: 10px;
+      margin-inline-start: 10px;
     }
 
     > div {
@@ -141,18 +139,18 @@ const props = withDefaults(defineProps<VFlexTableCellProps>(), {
           height: 14px;
           width: 14px;
           stroke-width: 1.6px;
-          margin-#{$end-direction}: 4px;
+          margin-inline-end: 4px;
         }
 
         span,
         .text {
           display: inline-block;
-          margin-#{$start-direction}: 0;
+          margin-inline-start: 0;
           font-size: 0.9rem;
         }
 
         .flex-media {
-          margin-#{$start-direction}: 10px;
+          margin-inline-start: 10px;
           margin-top: 4px;
 
           .v-avatar {
@@ -175,7 +173,7 @@ const props = withDefaults(defineProps<VFlexTableCellProps>(), {
     }
 
     .v-avatar {
-      margin-#{$start-direction}: 0 !important;
+      margin-inline-start: 0 !important;
 
       .avatar.is-fake {
         span,
@@ -185,7 +183,7 @@ const props = withDefaults(defineProps<VFlexTableCellProps>(), {
       }
 
       + div {
-        margin-#{$start-direction}: 0.5rem !important;
+        margin-inline-start: 0.5rem !important;
       }
     }
 
@@ -214,7 +212,7 @@ const props = withDefaults(defineProps<VFlexTableCellProps>(), {
   }
 
   .cell-icon {
-    margin-#{$end-direction}: 4px;
+    margin-inline-end: 4px;
     color: var(--light-text);
   }
 
@@ -229,7 +227,7 @@ const props = withDefaults(defineProps<VFlexTableCellProps>(), {
     align-items: center;
 
     .meta {
-      margin-#{$start-direction}: 6px;
+      margin-inline-start: 6px;
       line-height: 1.3;
 
       span,
@@ -342,13 +340,13 @@ const props = withDefaults(defineProps<VFlexTableCellProps>(), {
       justify-content: flex-start !important;
 
       .btn-group {
-        margin-#{$start-direction}: auto;
+        margin-inline-start: auto;
       }
     }
 
     &.is-user,
     &.is-media {
-      padding-#{$start-direction}: 10px;
+      padding-inline-start: 10px;
 
       span,
       .text {
@@ -360,7 +358,7 @@ const props = withDefaults(defineProps<VFlexTableCellProps>(), {
         min-height: 80px;
 
         + div {
-          margin-#{$start-direction}: 10px !important;
+          margin-inline-start: 10px !important;
 
           .item-name {
             display: block;
@@ -388,7 +386,7 @@ const props = withDefaults(defineProps<VFlexTableCellProps>(), {
         min-height: 60px;
 
         + div {
-          margin-#{$start-direction}: 10px !important;
+          margin-inline-start: 10px !important;
 
           .item-name {
             display: block;
@@ -411,7 +409,7 @@ const props = withDefaults(defineProps<VFlexTableCellProps>(), {
         min-height: 60px;
 
         + div {
-          margin-#{$start-direction}: 10px !important;
+          margin-inline-start: 10px !important;
 
           .item-name {
             display: block;

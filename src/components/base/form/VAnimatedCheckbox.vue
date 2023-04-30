@@ -85,8 +85,6 @@ watchEffect(updateCheckbox)
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 $curve: cubic-bezier(0.65, 0, 0.45, 1);
 
 .animated-checkbox {
@@ -201,7 +199,7 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
   input {
     position: absolute;
     top: 0;
-    #{$start-direction}: 0;
+    inset-inline-start: 0;
     height: 100%;
     width: 100%;
     opacity: 0;
@@ -218,7 +216,7 @@ $curve: cubic-bezier(0.65, 0, 0.45, 1);
     .shadow-circle {
       position: absolute;
       top: 0;
-      #{$start-direction}: 0;
+      inset-inline-start: 0;
       height: 32px;
       width: 32px;
       border-radius: var(--radius-rounded);

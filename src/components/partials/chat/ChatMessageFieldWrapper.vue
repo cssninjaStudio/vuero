@@ -74,12 +74,10 @@ const dropdown = useDropdown(dropdownElement)
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 .message-field-wrapper {
   position: absolute;
   bottom: 0;
-  #{$start-direction}: 0;
+  inset-inline-start: 0;
   display: flex;
   align-items: center;
   height: 60px;
@@ -98,13 +96,13 @@ const dropdown = useDropdown(dropdownElement)
 
     input {
       height: 42px;
-      padding-#{$start-direction}: 70px;
+      padding-inline-start: 70px;
     }
 
     .add-content {
       position: absolute;
       top: 0;
-      #{$start-direction}: 0;
+      inset-inline-start: 0;
       z-index: 11;
 
       &:hover,
@@ -160,7 +158,7 @@ const dropdown = useDropdown(dropdownElement)
           }
 
           .meta {
-            margin-#{$start-direction}: 12px;
+            margin-inline-start: 12px;
 
             span {
               display: block;
@@ -184,7 +182,7 @@ const dropdown = useDropdown(dropdownElement)
     .add-emoji {
       position: absolute;
       top: 0;
-      #{$start-direction}: 34px;
+      inset-inline-start: 34px;
       z-index: 11;
       display: flex;
       justify-content: center;
@@ -227,7 +225,7 @@ const dropdown = useDropdown(dropdownElement)
     .send-message {
       position: absolute;
       top: 3px;
-      #{$end-direction}: 3px;
+      inset-inline-end: 3px;
       z-index: 11;
 
       .button {
@@ -240,7 +238,7 @@ const dropdown = useDropdown(dropdownElement)
   .typing-indicator {
     position: absolute;
     bottom: 50px;
-    #{$start-direction}: 10px;
+    inset-inline-start: 10px;
     width: 100px;
     height: 100px;
     z-index: 2;
@@ -279,7 +277,7 @@ const dropdown = useDropdown(dropdownElement)
     }
 
     .add-emoji {
-      #{$start-direction}: 38px;
+      inset-inline-start: 38px;
     }
   }
 }

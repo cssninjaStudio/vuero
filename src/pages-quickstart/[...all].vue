@@ -50,8 +50,6 @@ useHead({
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 .error-container {
   .error-wrapper {
     max-width: 840px;
@@ -67,8 +65,8 @@ useHead({
         font-family: var(--font);
         position: absolute;
         top: -58px;
-        #{$start-direction}: -50px;
-        #{$end-direction}: 0;
+        inset-inline-start: -50px;
+        inset-inline-end: 0;
         margin: 0 auto;
         font-size: 28rem;
         font-weight: 600;
@@ -138,8 +136,8 @@ useHead({
 
         .bg-number {
           top: -35px;
-          #{$start-direction}: -18px;
-          #{$end-direction}: 0;
+          inset-inline-start: -18px;
+          inset-inline-end: 0;
           font-size: 13rem;
         }
 

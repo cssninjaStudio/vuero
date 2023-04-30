@@ -175,8 +175,6 @@ function getAvatarData(user: UserPopover): VAvatarProps {
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 .right-panel-wrapper {
   &.is-search {
     .right-panel {
@@ -196,7 +194,7 @@ function getAvatarData(user: UserPopover): VAvatarProps {
           .control {
             .input {
               min-height: 48px;
-              padding-#{$start-direction}: 48px;
+              padding-inline-start: 48px;
             }
 
             .form-icon {

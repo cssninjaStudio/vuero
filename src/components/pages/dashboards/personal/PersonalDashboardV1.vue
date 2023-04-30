@@ -169,7 +169,6 @@ const { profitChartOptions } = useProfitChart()
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .is-navbar {
@@ -186,7 +185,7 @@ const { profitChartOptions } = useProfitChart()
     margin-bottom: 30px;
 
     .start {
-      margin-#{$start-direction}: 12px;
+      margin-inline-start: 12px;
 
       h3 {
         font-family: var(--font-alt);
@@ -197,12 +196,12 @@ const { profitChartOptions } = useProfitChart()
     }
 
     .end {
-      margin-#{$start-direction}: auto;
+      margin-inline-start: auto;
       display: flex;
       justify-content: flex-end;
 
       .button {
-        margin-#{$start-direction}: 10px;
+        margin-inline-start: 10px;
       }
     }
   }
@@ -226,8 +225,8 @@ const { profitChartOptions } = useProfitChart()
         .quick-stats-inner {
           display: flex;
           flex-wrap: wrap;
-          margin-#{$start-direction}: -8px;
-          margin-#{$end-direction}: -8px;
+          margin-inline-start: -8px;
+          margin-inline-end: -8px;
 
           .quick-stat {
             width: calc(50% - 16px);
@@ -270,7 +269,7 @@ const { profitChartOptions } = useProfitChart()
         .lnir {
           position: absolute;
           bottom: 1rem;
-          #{$end-direction}: 1rem;
+          inset-inline-end: 1rem;
           font-size: 4rem;
           opacity: 0.3;
         }
@@ -307,8 +306,8 @@ const { profitChartOptions } = useProfitChart()
         .people {
           position: absolute;
           top: 80px;
-          #{$start-direction}: 0;
-          #{$end-direction}: 0;
+          inset-inline-start: 0;
+          inset-inline-end: 0;
           margin: 0 auto;
           display: flex;
           justify-content: center;

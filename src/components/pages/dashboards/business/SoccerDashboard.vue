@@ -413,7 +413,6 @@
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .soccer-dashboard {
@@ -462,7 +461,7 @@
                 display: inline-block;
                 font-family: var(--font);
                 font-size: 0.85rem;
-                margin-#{$start-direction}: 0.25rem;
+                margin-inline-start: 0.25rem;
               }
             }
           }
@@ -551,7 +550,7 @@
           }
 
           .meta {
-            margin-#{$start-direction}: 0.5rem;
+            margin-inline-start: 0.5rem;
             line-height: 1.2;
 
             .league-name {
@@ -571,7 +570,7 @@
           }
 
           .end {
-            margin-#{$start-direction}: auto;
+            margin-inline-start: auto;
             font-family: var(--font);
             font-size: 0.9rem;
             color: var(--light-text);
@@ -612,7 +611,7 @@
         overflow: hidden;
         height: calc(110%);
         top: -10%;
-        #{$end-direction}: 2rem;
+        inset-inline-end: 2rem;
 
         img {
           width: 100%;
@@ -640,7 +639,7 @@
           .nav-item {
             .nav-link {
               font-family: var(--font);
-              margin-#{$end-direction}: 1rem;
+              margin-inline-end: 1rem;
               border-bottom: 3px solid transparent;
               padding-bottom: 1rem;
               color: var(--light-text);
@@ -665,18 +664,18 @@
             font-family: var(--font);
             font-size: 0.8rem;
             text-transform: uppercase;
-            text-align: #{$start-direction};
+            text-align: inset-inline-start;
           }
 
           tr {
             th:first-child,
             td:first-child {
-              padding-#{$start-direction}: 2rem;
+              padding-inline-start: 2rem;
             }
 
             th:last-child,
             td:last-child {
-              padding-#{$end-direction}: 2rem;
+              padding-inline-end: 2rem;
             }
 
             td {
@@ -694,7 +693,7 @@
                 .match-time {
                   font-family: var(--font);
                   color: var(--light-text);
-                  margin-#{$end-direction}: 0.75rem;
+                  margin-inline-end: 0.75rem;
                 }
 
                 .tag {
@@ -802,7 +801,7 @@
       .nav-item {
         &:first-child {
           .nav-link {
-            padding-#{$start-direction}: 0;
+            padding-inline-start: 0;
           }
         }
 
@@ -898,7 +897,7 @@
         }
 
         .dashboard-cta-img {
-          #{$end-direction}: -0.25rem;
+          inset-inline-end: -0.25rem;
           width: 36%;
         }
       }
@@ -915,7 +914,7 @@
         }
 
         .dashboard-cta-img {
-          #{$end-direction}: 1rem;
+          inset-inline-end: 1rem;
           width: 36%;
         }
       }

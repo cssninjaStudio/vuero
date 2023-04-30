@@ -13,8 +13,8 @@
 
       &.is-stuck {
         background: var(--white);
-        padding-#{$end-direction}: 80px;
-        border-#{$start-direction}: 1px solid var(--fade-grey-dark-3);
+        padding-inline-end: 80px;
+        border-inline-start: 1px solid var(--fade-grey-dark-3);
       }
 
       .form-header-inner {

@@ -68,14 +68,13 @@ const isScrolling = computed(() => y.value > 30)
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 @import '/@src/scss/layout/responsive';
 
 .navbar-navbar-clean {
   position: fixed;
   top: 0;
-  #{$start-direction}: 0;
+  inset-inline-start: 0;
   width: 100%;
   background: var(--white);
   z-index: 15;
@@ -148,19 +147,19 @@ const isScrolling = computed(() => y.value > 30)
           letter-spacing: 1px;
           max-width: 50px;
           line-height: 1.2;
-          margin-#{$start-direction}: 8px;
+          margin-inline-start: 8px;
         }
       }
 
       .separator {
         height: 38px;
         width: 2px;
-        border-#{$end-direction}: 1px solid var(--fade-grey-dark-4);
+        border-inline-end: 1px solid var(--fade-grey-dark-4);
         margin: 0 20px 0 16px;
       }
 
       .project-dropdown {
-        margin-#{$end-direction}: 12px;
+        margin-inline-end: 12px;
         cursor: pointer !important;
 
         > img {
@@ -188,7 +187,7 @@ const isScrolling = computed(() => y.value > 30)
               }
 
               .meta {
-                margin-#{$start-direction}: 12px;
+                margin-inline-start: 12px;
                 font-family: var(--font);
 
                 span {
@@ -236,8 +235,8 @@ const isScrolling = computed(() => y.value > 30)
 
             .form-icon {
               &.is-right {
-                #{$start-direction}: unset !important;
-                #{$end-direction}: 6px;
+                inset-inline-start: unset !important;
+                inset-inline-end: 6px;
                 cursor: pointer;
               }
             }
@@ -255,7 +254,7 @@ const isScrolling = computed(() => y.value > 30)
       align-items: center;
       justify-content: flex-end;
       width: 25%;
-      margin-#{$start-direction}: auto;
+      margin-inline-start: auto;
 
       .toolbar {
         .dropdown {
@@ -316,7 +315,7 @@ const isScrolling = computed(() => y.value > 30)
               background: #fafafa;
 
               .meta {
-                margin-#{$start-direction}: 12px;
+                margin-inline-start: 12px;
                 font-family: var(--font);
 
                 span {
@@ -392,7 +391,7 @@ const isScrolling = computed(() => y.value > 30)
         justify-content: flex-end;
 
         .avatar-stack {
-          margin-#{$end-direction}: 1rem;
+          margin-inline-end: 1rem;
         }
 
         .dropdown {

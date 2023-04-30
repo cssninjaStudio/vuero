@@ -85,7 +85,6 @@
 </template>
 
 <style lang="scss" scoped>
-@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 /* ==========================================================================
@@ -111,7 +110,7 @@
         border: none;
         background: none;
         border-radius: 0;
-        border-#{$end-direction}: 1px solid var(--fade-grey-dark-3);
+        border-inline-end: 1px solid var(--fade-grey-dark-3);
 
         .price {
           text-align: center;
@@ -280,7 +279,7 @@
       .wrapper-inner {
         .action-box {
           padding: 20px 20px 40px;
-          border-#{$end-direction}: none;
+          border-inline-end: none;
           border-bottom: 1px solid var(--fade-grey-dark-3);
 
           .box-content {

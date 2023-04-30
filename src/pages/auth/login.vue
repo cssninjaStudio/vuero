@@ -226,8 +226,6 @@ useHead({
 </template>
 
 <style lang="scss" scoped>
-@import '/@src/scss/abstracts/ltr';
-
 .modern-login {
   position: relative;
   background: var(--white);
@@ -246,7 +244,7 @@ useHead({
       .hero-overlay {
         position: absolute;
         top: 0;
-        #{$start-direction}: 0;
+        inset-inline-start: 0;
         width: 100%;
         height: 100%;
         background: #5d4298 !important;
@@ -259,7 +257,7 @@ useHead({
     display: block;
     position: absolute;
     top: 0;
-    #{$start-direction}: 0;
+    inset-inline-start: 0;
     width: 66.6%;
     height: 100%;
     background: #fdfdfd;
@@ -269,7 +267,7 @@ useHead({
   .dark-mode {
     position: absolute;
     top: -25px;
-    #{$end-direction}: 38px;
+    inset-inline-end: 38px;
     transform: scale(0.6);
     z-index: 2;
   }
@@ -277,8 +275,8 @@ useHead({
   .top-logo {
     position: absolute;
     top: -30px;
-    #{$start-direction}: 0;
-    #{$end-direction}: 0;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -300,7 +298,7 @@ useHead({
 
   .is-image {
     position: relative;
-    border-#{$end-direction}: 1px solid var(--fade-grey);
+    border-inline-end: 1px solid var(--fade-grey);
 
     .hero-image {
       position: relative;
@@ -355,7 +353,7 @@ useHead({
           padding-top: 14px;
           height: 60px;
           border-radius: 10px;
-          padding-#{$start-direction}: 55px;
+          padding-inline-start: 55px;
           transition: all 0.3s; // transition-all test
 
           &:focus {
@@ -379,7 +377,7 @@ useHead({
         .auth-label {
           position: absolute;
           top: 6px;
-          #{$start-direction}: 55px;
+          inset-inline-start: 55px;
           font-size: 0.8rem;
           color: var(--dark-text);
           font-weight: 500;
@@ -391,7 +389,7 @@ useHead({
         :deep(.autv-icon) {
           position: absolute;
           top: 0;
-          #{$start-direction}: 0;
+          inset-inline-start: 0;
           height: 60px;
           width: 60px;
           display: flex;
@@ -406,7 +404,7 @@ useHead({
           .validation-icon {
             position: absolute;
             top: 0;
-            #{$end-direction}: 0;
+            inset-inline-end: 0;
             height: 60px;
             width: 60px;
             display: none;
@@ -481,7 +479,7 @@ useHead({
 
           a {
             display: block;
-            margin-#{$start-direction}: auto;
+            margin-inline-start: auto;
             color: var(--muted-grey);
             font-weight: 500;
             font-size: 0.9rem;
@@ -509,7 +507,7 @@ useHead({
           align-items: center;
 
           > span {
-            margin-#{$start-direction}: 12px;
+            margin-inline-start: 12px;
             font-family: var(--font);
 
             a {
@@ -523,7 +521,7 @@ useHead({
         .button {
           height: 46px;
           width: 140px;
-          margin-#{$start-direction}: 6px;
+          margin-inline-start: 6px;
 
           &:first-child {
             &:hover {
@@ -555,7 +553,7 @@ useHead({
 
       .active,
       .inactive {
-        transform: translateX($transform-direction * 100%) rotate(360deg);
+        transform: translateX(calc(var(--transform-direction) * 100%)) rotate(360deg);
       }
 
       .active {
@@ -581,7 +579,7 @@ useHead({
     .inactive {
       position: absolute;
       top: 2px;
-      #{$start-direction}: 2px;
+      inset-inline-start: 2px;
       height: 26px;
       width: 26px;
       border-radius: var(--radius-rounded);
@@ -589,7 +587,8 @@ useHead({
       display: flex;
       justify-content: center;
       align-items: center;
-      transform: translateX($transform-direction * 0) rotate($transform-direction * 0);
+      transform: translateX(calc(var(--transform-direction) * 0))
+        rotate(calc(var(--transform-direction) * 0));
       transition: all 0.3s ease;
 
       svg {
@@ -624,7 +623,7 @@ useHead({
 
     .dark-mode {
       top: 36px;
-      #{$end-direction}: 44px;
+      inset-inline-end: 44px;
     }
 
     .is-form {
@@ -644,7 +643,7 @@ useHead({
 
     .dark-mode {
       top: -58px;
-      #{$end-direction}: 30%;
+      inset-inline-end: 30%;
     }
 
     .columns {

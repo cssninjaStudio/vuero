@@ -68,8 +68,6 @@ const toggle = (key: number) => {
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 $a-height: 250px;
 $text-offset: $a-height - 90;
 
@@ -124,7 +122,7 @@ $text-offset: $a-height - 90;
             z-index: 5;
             white-space: nowrap;
             overflow: hidden;
-            transform: translateX($transform-direction * -20px);
+            transform: translateX(calc(var(--transform-direction) * -20px));
             transition: all 400ms ease;
           }
 
@@ -162,7 +160,7 @@ $text-offset: $a-height - 90;
 
         * {
           opacity: 1;
-          transform: translateX($transform-direction * 0);
+          transform: translateX(calc(var(--transform-direction) * 0));
         }
       }
     }
@@ -183,7 +181,7 @@ $text-offset: $a-height - 90;
 
         * {
           opacity: 1 !important;
-          transform: translateX($transform-direction * 0);
+          transform: translateX(calc(var(--transform-direction) * 0));
         }
       }
     }

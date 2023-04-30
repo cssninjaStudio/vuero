@@ -5,8 +5,6 @@
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 .placeload-wrap {
   &.is-flex {
     display: flex;
@@ -23,20 +21,20 @@
       .content-shape-group {
         margin-top: 0.5rem;
         max-width: 70%;
-        margin-#{$start-direction}: auto;
-        margin-#{$end-direction}: auto;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
 
         .content-shape {
-          margin-#{$start-direction}: auto;
-          margin-#{$end-direction}: auto;
+          margin-inline-start: auto;
+          margin-inline-end: auto;
         }
       }
 
       > .content-shape {
         margin-top: 0.5rem;
         max-width: 70%;
-        margin-#{$start-direction}: auto;
-        margin-#{$end-direction}: auto;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
       }
     }
   }

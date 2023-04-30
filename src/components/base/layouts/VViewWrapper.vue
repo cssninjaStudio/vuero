@@ -25,25 +25,23 @@ const props = defineProps<VViewWrapperProps>()
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 .view-wrapper {
   &.has-top-nav {
-    margin-#{$start-direction}: 0 !important;
+    margin-inline-start: 0 !important;
     width: 100% !important;
     padding-top: 1px;
 
     .is-stuck {
       position: fixed;
       top: 78px;
-      #{$start-direction}: 0;
-      margin-#{$start-direction}: 0;
-      border-#{$start-direction}: 0 !important;
+      inset-inline-start: 0;
+      margin-inline-start: 0;
+      border-inline-start: 0 !important;
       width: 100%;
       z-index: 14;
 
       &.stuck-header {
-        padding-#{$end-direction}: 20px !important;
+        padding-inline-end: 20px !important;
 
         .form-head-inner,
         .form-header-inner {
@@ -76,14 +74,14 @@ const props = defineProps<VViewWrapperProps>()
 
   &.view-wrapper-full {
     width: 100%;
-    margin-#{$start-direction}: 0;
+    margin-inline-start: 0;
 
     &.is-pushed-block {
-      margin-#{$start-direction}: 280px;
+      margin-inline-start: 280px;
       width: calc(100% - 280px);
 
       .is-stuck {
-        margin-#{$start-direction}: 280px;
+        margin-inline-start: 280px;
         width: calc(100% - 280px);
       }
     }
@@ -96,30 +94,30 @@ const props = defineProps<VViewWrapperProps>()
   min-height: 100vh;
   width: calc(100% - 80px);
   padding: 0 0 60px;
-  margin-#{$start-direction}: 80px;
+  margin-inline-start: 80px;
   background: var(--background-grey);
   transition: all 0.3s; // transition-all test
 
   &.is-pushed-full {
-    margin-#{$start-direction}: 320px;
+    margin-inline-start: 320px;
     width: calc(100% - 320px);
 
     .is-stuck {
-      margin-#{$start-direction}: 320px;
+      margin-inline-start: 320px;
       width: calc(100% - 320px);
     }
   }
 
   &.is-pushed-messages {
-    margin-#{$start-direction}: 160px !important;
+    margin-inline-start: 160px !important;
     width: calc(100% - 160px) !important;
   }
 
   .is-stuck {
     position: fixed;
     top: 0;
-    #{$start-direction}: 0;
-    margin-#{$start-direction}: 80px;
+    inset-inline-start: 0;
+    margin-inline-start: 80px;
     width: calc(100% - 80px);
     z-index: 14;
   }
@@ -166,10 +164,10 @@ const props = defineProps<VViewWrapperProps>()
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .view-wrapper {
     width: calc(100% - 60px) !important;
-    margin-#{$start-direction}: 60px !important;
+    margin-inline-start: 60px !important;
 
     &.is-pushed-messages {
-      margin-#{$start-direction}: 140px !important;
+      margin-inline-start: 140px !important;
       width: calc(100% - 140px) !important;
     }
   }
@@ -178,18 +176,18 @@ const props = defineProps<VViewWrapperProps>()
   // Layout
   .view-wrapper {
     width: 100% !important;
-    margin-#{$start-direction}: 0 !important;
+    margin-inline-start: 0 !important;
     margin-top: 60px !important;
-    padding-#{$start-direction}: 40px;
-    padding-#{$end-direction}: 40px;
+    padding-inline-start: 40px;
+    padding-inline-end: 40px;
 
     &.is-explore {
-      padding-#{$start-direction}: 0 !important;
-      padding-#{$end-direction}: 0 !important;
+      padding-inline-start: 0 !important;
+      padding-inline-end: 0 !important;
     }
 
     &.is-pushed-messages {
-      margin-#{$start-direction}: 0 !important;
+      margin-inline-start: 0 !important;
       width: 100% !important;
     }
   }
@@ -198,11 +196,11 @@ const props = defineProps<VViewWrapperProps>()
   // Layout
   .view-wrapper {
     width: 100% !important;
-    margin-#{$start-direction}: 0 !important;
+    margin-inline-start: 0 !important;
     margin-top: 60px !important;
 
     &.is-pushed-messages {
-      margin-#{$start-direction}: 0 !important;
+      margin-inline-start: 0 !important;
       width: 100% !important;
     }
   }

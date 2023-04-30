@@ -5,8 +5,6 @@
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
-
 .auth-wrapper-inner {
   overflow: hidden !important;
   height: 100%;
@@ -36,7 +34,7 @@
     .dark-mode {
       position: absolute;
       top: 24px;
-      #{$end-direction}: 24px;
+      inset-inline-end: 24px;
       transform: scale(0.6);
       z-index: 2;
     }
@@ -125,7 +123,7 @@
     .setting-meta {
       font-family: var(--font);
       color: var(--light-text);
-      margin-#{$start-direction}: 8px;
+      margin-inline-start: 8px;
     }
   }
 
@@ -169,7 +167,7 @@
 .auth-nav {
   position: absolute;
   top: 0;
-  #{$start-direction}: 0;
+  inset-inline-start: 0;
   height: 80px;
   width: 100%;
   display: flex;
@@ -336,7 +334,7 @@
 
     .dark-mode {
       top: -58px;
-      #{$end-direction}: 30%;
+      inset-inline-end: 30%;
     }
 
     .columns {

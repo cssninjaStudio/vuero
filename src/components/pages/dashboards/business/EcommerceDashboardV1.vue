@@ -382,7 +382,6 @@ const {
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .ecommerce-dashboard-v1 {
@@ -393,7 +392,7 @@ const {
     margin-bottom: 30px;
 
     .start {
-      margin-#{$start-direction}: 12px;
+      margin-inline-start: 12px;
 
       h3 {
         font-family: var(--font-alt);
@@ -404,12 +403,12 @@ const {
     }
 
     .end {
-      margin-#{$start-direction}: auto;
+      margin-inline-start: auto;
       display: flex;
       justify-content: flex-end;
 
       .button {
-        margin-#{$start-direction}: 10px;
+        margin-inline-start: 10px;
       }
     }
   }
@@ -438,7 +437,7 @@ const {
       align-items: center;
 
       .left {
-        margin-#{$end-direction}: 20px;
+        margin-inline-end: 20px;
 
         span {
           font-size: 1.5rem;
@@ -479,7 +478,7 @@ const {
         }
 
         .multiselect-options {
-          #{$start-direction}: unset !important;
+          inset-inline-start: unset !important;
           min-width: 180px;
         }
       }

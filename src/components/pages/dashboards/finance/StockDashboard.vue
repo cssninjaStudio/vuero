@@ -350,7 +350,6 @@
 </template>
 
 <style lang="scss">
-@import '/@src/scss/abstracts/ltr';
 @import '/@src/scss/abstracts/all';
 
 .stock-dashboard {
@@ -374,7 +373,7 @@
         content: '';
         width: 36px;
         height: 36px;
-        transform: rotate($transform-direction * 0);
+        transform: rotate(calc(var(--transform-direction) * 0));
         border-radius: 7px;
       }
 
@@ -418,13 +417,13 @@
       i {
         position: absolute;
         top: 50%;
-        #{$start-direction}: 50%;
-        transform: translate($transform-direction * -50%, -50%);
+        inset-inline-start: 50%;
+        transform: translate(calc(var(--transform-direction) * -50%), -50%);
       }
     }
 
     .stock-info {
-      margin-#{$start-direction}: 10px;
+      margin-inline-start: 10px;
       flex: 1;
       line-height: 1.2;
 
@@ -445,7 +444,7 @@
       flex: 1;
       font-weight: bold;
       color: var(--light-text);
-      text-align: #{$end-direction};
+      text-align: inset-inline-end;
     }
   }
 
@@ -462,7 +461,7 @@
     .dropdown {
       position: absolute;
       top: 10px;
-      #{$end-direction}: 10px;
+      inset-inline-end: 10px;
     }
 
     > svg {
@@ -532,7 +531,7 @@
             height: 46px;
             background-color: var(--white);
             border: 1px solid var(--fade-grey);
-            transform: rotate($transform-direction * 45deg);
+            transform: rotate(calc(var(--transform-direction) * 45deg));
             border-radius: 10px;
             transition: all 0.3s; // transition-all test
           }
@@ -540,8 +539,8 @@
           i {
             position: absolute;
             top: 50%;
-            #{$start-direction}: 50%;
-            transform: translate($transform-direction * -50%, -50%);
+            inset-inline-start: 50%;
+            transform: translate(calc(var(--transform-direction) * -50%), -50%);
             color: var(--light-text);
             font-size: 18px;
             transition: color 0.3s;
