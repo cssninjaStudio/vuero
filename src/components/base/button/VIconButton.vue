@@ -166,3 +166,10 @@ export default defineComponent({
   },
 })
 </script>
+
+<style lang="scss" scoped>
+.button {
+  height: 38px;
+  width: 38px;
+}
+</style>
