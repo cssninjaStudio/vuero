@@ -475,6 +475,16 @@ export default defineComponent({
       }
     }
 
+    &.is-light {
+      border: none;
+      background: var(--dark-sidebar-light-10) !important;
+      color: var(--smoke-white) !important;
+
+      &:hover {
+        background: var(--dark-sidebar-light-16) !important;
+      }
+    }
+
     &.is-primary {
       border-color: var(--primary);
       background: var(--primary);
@@ -501,8 +511,57 @@ export default defineComponent({
       }
 
       &.is-light {
-        background: var(--primary-light-25) !important;
-        color: var(--primary-dark-15);
+        border: none;
+        background: var(--dark-sidebar-light-10) !important;
+        color: var(--primary-light-20) !important;
+
+        &:hover {
+          background: var(--dark-sidebar-light-16) !important;
+        }
+      }
+    }
+
+    &.is-info {
+      &.is-light {
+        background: var(--dark-sidebar-light-10) !important;
+        color: var(--info-light-20) !important;
+
+        &:hover {
+          background: var(--dark-sidebar-light-16) !important;
+        }
+      }
+    }
+
+    &.is-success {
+      &.is-light {
+        background: var(--dark-sidebar-light-10) !important;
+        color: var(--success-light-20) !important;
+
+        &:hover {
+          background: var(--dark-sidebar-light-16) !important;
+        }
+      }
+    }
+
+    &.is-warning {
+      &.is-light {
+        background: var(--dark-sidebar-light-10) !important;
+        color: var(--warning-light-20) !important;
+
+        &:hover {
+          background: var(--dark-sidebar-light-16) !important;
+        }
+      }
+    }
+
+    &.is-danger {
+      &.is-light {
+        background: var(--dark-sidebar-light-10) !important;
+        color: var(--danger-light-20) !important;
+
+        &:hover {
+          background: var(--dark-sidebar-light-16) !important;
+        }
       }
     }
 
