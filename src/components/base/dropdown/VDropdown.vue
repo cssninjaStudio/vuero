@@ -317,6 +317,7 @@ defineExpose({
   // Dropdown menu
   .dropdown-menu {
     .dropdown-item {
+      text-align: start;
       color: var(--light-text);
       font-family: var(--font);
 

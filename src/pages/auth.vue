@@ -22,6 +22,11 @@
 
   .hero-banner {
     background: var(--widget-grey);
+
+    img {
+      max-width: 550px;
+      margin: 0 auto;
+    }
   }
 
   .hero-heading {
@@ -31,17 +36,16 @@
     margin: 0 auto;
     padding: 20px 0 0;
 
-    .dark-mode {
-      position: absolute;
-      top: 24px;
-      inset-inline-end: 24px;
-      transform: scale(0.6);
-      z-index: 2;
-    }
-
     .auth-logo {
       display: flex;
-      justify-content: center;
+      align-items: center;
+      justify-content: space-between;
+
+      .dark-mode {
+        transform: scale(0.6);
+        z-index: 2;
+        margin-inline-start: 0 !important;
+      }
 
       svg {
         height: 42px;

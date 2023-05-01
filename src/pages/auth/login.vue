@@ -64,26 +64,28 @@ useHead({
         </div>
       </div>
       <div class="column is-4 is-relative">
-        <RouterLink to="/" class="top-logo">
-          <AnimatedLogo width="38px" height="38px" />
-        </RouterLink>
+        <div class="top-tools">
+          <RouterLink to="/" class="top-logo">
+            <AnimatedLogo width="38px" height="38px" />
+          </RouterLink>
 
-        <label
-          class="dark-mode ml-auto"
-          tabindex="0"
-          role="button"
-          @keydown.space.prevent="(e) => (e.target as HTMLLabelElement).click()"
-        >
-          <input
-            data-cy="dark-mode-toggle"
-            type="checkbox"
-            :checked="!darkmode.isDark"
-            @change="darkmode.onChange"
-          />
-          <span></span>
-        </label>
+          <label
+            class="dark-mode"
+            tabindex="0"
+            role="button"
+            @keydown.space.prevent="(e) => (e.target as HTMLLabelElement).click()"
+          >
+            <input
+              data-cy="dark-mode-toggle"
+              type="checkbox"
+              :checked="!darkmode.isDark"
+              @change="darkmode.onChange"
+            />
+            <span></span>
+          </label>
+        </div>
         <div class="is-form">
-          <div class="hero-body">
+          <div class="is-form-inner">
             <div class="form-text" :class="[step !== 'login' && 'is-hidden']">
               <h2>Sign In</h2>
               <p>Welcome back to your account.</p>
@@ -264,35 +266,37 @@ useHead({
     z-index: 0;
   }
 
-  .dark-mode {
-    position: absolute;
-    top: -25px;
-    inset-inline-end: 38px;
-    transform: scale(0.6);
-    z-index: 2;
-  }
-
-  .top-logo {
-    position: absolute;
-    top: -30px;
-    inset-inline-start: 0;
-    inset-inline-end: 0;
-    margin: 0 auto;
+  .top-tools {
     display: flex;
-    justify-content: center;
     align-items: center;
-    z-index: 1;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    margin-bottom: 5rem;
 
-    img {
-      display: block;
-      width: 100%;
-      max-width: 50px;
-      margin: 0 auto;
+    .dark-mode {
+      transform: scale(0.6);
+      z-index: 2;
     }
 
-    svg {
-      height: 50px;
-      width: 50px;
+    .top-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+
+      img {
+        display: block;
+        width: 100%;
+        max-width: 50px;
+        margin: 0 auto;
+      }
+
+      svg {
+        height: 50px;
+        width: 50px;
+      }
     }
   }
 
@@ -312,7 +316,7 @@ useHead({
 
   .is-form {
     position: relative;
-    max-width: 420px;
+    max-width: 400px;
     margin: 0 auto;
 
     form {

@@ -99,19 +99,15 @@ const emit = defineEmits(['close'])
 
           <RouterLink to="/sidebar/layouts/list-datatable-1" class="is-submenu">
             <i aria-hidden="true" class="lnil lnil-layout-alt"></i>
-            <span>Datatable V1</span>
+            <span>Table List V1</span>
           </RouterLink>
           <RouterLink to="/sidebar/layouts/list-datatable-2" class="is-submenu">
             <i aria-hidden="true" class="lnil lnil-layout-alt"></i>
-            <span>Datatable V2</span>
+            <span>Table List V2</span>
           </RouterLink>
           <RouterLink to="/sidebar/layouts/list-datatable-3" class="is-submenu">
             <i aria-hidden="true" class="lnil lnil-layout-alt"></i>
-            <span>Datatable V3</span>
-          </RouterLink>
-          <RouterLink to="/sidebar/layouts/list-datatable-4" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-layout-alt"></i>
-            <span>Datatable V4</span>
+            <span>Table List V3</span>
           </RouterLink>
         </VCollapseLinks>
 

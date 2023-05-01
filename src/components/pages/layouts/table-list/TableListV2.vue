@@ -1,36 +1,35 @@
 <script setup lang="ts">
-import { userList } from '/@src/data/layouts/datatable-v1'
+import * as listData from '/@src/data/layouts/flex-list-v2'
 
 import type { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
 
-export interface UserData extends VAvatarProps {
+export interface ProjectData {
   id: number
-  username: string
-  position: string
+  name: string
+  customer: string
+  duration: string
   picture: string
-  badge: string
-  location: string
   industry: string
   status: string
-  contacts: VAvatarProps[]
+  team: VAvatarProps[]
 }
 
 const page = ref(42)
 const filters = ref('')
 
-const users = userList as UserData[]
+const projects = listData.projects as ProjectData[]
 const filteredData = computed(() => {
   if (!filters.value) {
-    return users
+    return projects
   } else {
     const filterRe = new RegExp(filters.value, 'i')
-    return users.filter((item) => {
+    return projects.filter((item) => {
       return (
-        item.username.match(filterRe) ||
-        item.position.match(filterRe) ||
+        item.name.match(filterRe) ||
+        item.customer.match(filterRe) ||
         item.industry.match(filterRe) ||
         item.status.match(filterRe) ||
-        item.location.match(filterRe)
+        item.duration.match(filterRe)
       )
     })
   }
@@ -51,7 +50,7 @@ const filteredData = computed(() => {
       </VField>
 
       <VButtons>
-        <VButton color="primary" icon="fas fa-plus" elevated> Add User </VButton>
+        <VButton color="primary" icon="fas fa-plus" elevated> New Project </VButton>
       </VButtons>
     </div>
     <div class="datatable-wrapper">
@@ -59,29 +58,31 @@ const filteredData = computed(() => {
         <table class="table datatable-table is-fullwidth">
           <thead>
             <th>Id</th>
-            <th>Name</th>
-            <th>Location</th>
+            <th>Project</th>
+            <th>Customer</th>
             <th>Industry</th>
-            <th>Contacts</th>
+            <th>Status</th>
+            <th>Team</th>
             <th>Actions</th>
           </thead>
           <tbody>
-            <tr v-for="user in filteredData" :key="user.id">
-              <td>{{ user.id }}</td>
+            <tr v-for="project in filteredData" :key="project.id">
+              <td>{{ project.id }}</td>
               <td>
                 <div class="flex-media">
-                  <VAvatar :picture="user.picture" alt="Avatar" />
+                  <VAvatar :picture="project.picture" alt="Avatar" />
                   <div class="meta">
-                    <h3>{{ user.username }}</h3>
-                    <span>{{ user.position }}</span>
+                    <h3>{{ project.name }}</h3>
+                    <span>{{ project.duration }}</span>
                   </div>
                 </div>
               </td>
-              <td>{{ user.location }}</td>
-              <td>{{ user.industry }}</td>
+              <td>{{ project.customer }}</td>
+              <td>{{ project.industry }}</td>
+              <td><VTag :label="project.status" /></td>
               <td>
                 <div>
-                  <VAvatarStack :avatars="user.contacts" size="small" :limit="3" />
+                  <VAvatarStack :avatars="project.team" size="small" :limit="3" />
                 </div>
               </td>
               <td>

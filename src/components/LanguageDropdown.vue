@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { onClickOutside } from '@vueuse/core'
 import { useI18n } from 'vue-i18n'
 
 const { locale } = useI18n()
@@ -28,68 +29,93 @@ const localFlagSrc = computed(() => {
       return '/images/icons/flags/germany.svg'
     case 'zh-CN':
       return '/images/icons/flags/china.svg'
+    case 'ar':
+      return '/images/icons/flags/saudi-arabia.svg'
     case 'en':
     default:
       return '/images/icons/flags/united-states-of-america.svg'
   }
 })
+
+const open = ref(false)
+const target = ref(null)
+
+onClickOutside(target, () => (open.value = false))
 </script>
 
 <template>
-  <div class="navbar-item has-dropdown is-hoverable lang-dropdown">
-    <a class="navbar-link is-arrowless">
+  <div ref="target" class="dropdown lang-dropdown" :class="open ? 'is-active' : ''">
+    <a href="#" class="dropdown-trigger" @click.prevent="open = true">
       <img :src="localFlagSrc" :alt="locale" />
     </a>
 
-    <div class="navbar-dropdown is-boxed is-right">
-      <a href="#" role="button" class="navbar-item" @click="locale = 'en'">
-        <img src="/images/icons/flags/united-states-of-america.svg" alt="" />
-        <span>English</span>
-      </a>
-      <a href="#" role="button" class="navbar-item" @click="locale = 'fr'">
-        <img src="/images/icons/flags/france.svg" alt="" />
-        <span>Français</span>
-      </a>
-      <a href="#" role="button" class="navbar-item" @click="locale = 'es'">
-        <img src="/images/icons/flags/spain.svg" alt="" />
-        <span>Español</span>
-      </a>
-      <a href="#" role="button" class="navbar-item" @click="locale = 'de'">
-        <img src="/images/icons/flags/germany.svg" alt="" />
-        <span>Deutch</span>
-      </a>
-      <a href="#" role="button" class="navbar-item" @click="locale = 'es-MX'">
-        <img src="/images/icons/flags/mexico.svg" alt="" />
-        <span>Español mexicano</span>
-      </a>
-      <a href="#" role="button" class="navbar-item" @click="locale = 'zh-CN'">
-        <img src="/images/icons/flags/china.svg" alt="" />
-        <span>中国人</span>
-      </a>
-      <a href="#" role="button" class="navbar-item" @click="locale = 'ar'">
-        <img src="/images/icons/flags/china.svg" alt="" />
-        <span>ar</span>
-      </a>
-      <hr class="navbar-divider" />
-      <a class="navbar-item">
-        <small>Suggest Others</small>
-      </a>
+    <div class="dropdown-menu">
+      <div class="dropdown-content">
+        <a href="#" role="button" class="dropdown-item" @click="locale = 'en'">
+          <img src="/images/icons/flags/united-states-of-america.svg" alt="" />
+          <span>English</span>
+        </a>
+        <a href="#" role="button" class="dropdown-item" @click="locale = 'fr'">
+          <img src="/images/icons/flags/france.svg" alt="" />
+          <span>Français</span>
+        </a>
+        <a href="#" role="button" class="dropdown-item" @click="locale = 'es'">
+          <img src="/images/icons/flags/spain.svg" alt="" />
+          <span>Español</span>
+        </a>
+        <a href="#" role="button" class="dropdown-item" @click="locale = 'de'">
+          <img src="/images/icons/flags/germany.svg" alt="" />
+          <span>Deutch</span>
+        </a>
+        <a href="#" role="button" class="dropdown-item" @click="locale = 'es-MX'">
+          <img src="/images/icons/flags/mexico.svg" alt="" />
+          <span>Español mexicano</span>
+        </a>
+        <a href="#" role="button" class="dropdown-item" @click="locale = 'zh-CN'">
+          <img src="/images/icons/flags/china.svg" alt="" />
+          <span>中国人</span>
+        </a>
+        <a href="#" role="button" class="dropdown-item" @click="locale = 'ar'">
+          <img src="/images/icons/flags/saudi-arabia.svg" alt="" />
+          <span>عربي</span>
+        </a>
+        <hr class="dropdown-divider" />
+        <a class="dropdown-item">
+          <small>Suggest Others</small>
+        </a>
+      </div>
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
 .lang-dropdown {
-  .navbar-link img {
-    width: 30px;
+  .dropdown-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+
+    img {
+      width: 2rem;
+      height: 2rem;
+    }
   }
 
-  .navbar-dropdown {
-    width: 180px;
+  .dropdown-menu {
+    width: 220px;
+    max-width: 220px;
 
-    .navbar-item {
+    .dropdown-content {
+      padding: 0.75rem;
+    }
+
+    .dropdown-item {
       display: flex;
       align-items: center;
+      padding-inline-start: 0.75rem;
+      padding-inline-end: 0.75rem;
 
       img {
         display: block;
@@ -101,9 +127,37 @@ const localFlagSrc = computed(() => {
 
       span {
         display: block;
-        margin-left: 10px;
+        margin-inline-start: 10px;
       }
     }
   }
+}
+
+.is-dark {
+  .lang-dropdown {
+    .dropdown-menu {
+      .dropdown-content {
+        background: var(--dark-sidebar) !important;
+        border-color: var(--dark-sidebar-light-8) !important;
+
+        .dropdown-item {
+          color: var(--light-text);
+
+          &:hover {
+            background: var(--dark-sidebar-light-10) !important;
+          }
+        }
+
+        .dropdown-divider {
+          background-color: var(--dark-sidebar-light-12);
+        }
+      }
+    }
+  }
+}
+
+[dir='rtl'] .lang-dropdown .dropdown-menu {
+  left: auto;
+  right: 0;
 }
 </style>

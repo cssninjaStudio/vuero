@@ -1,36 +1,30 @@
 <script setup lang="ts">
-import { userList } from '/@src/data/layouts/datatable-v1'
+import { offers } from '/@src/data/layouts/view-list-v3'
 
-import type { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
-
-export interface UserData extends VAvatarProps {
-  id: number
-  username: string
-  position: string
-  picture: string
-  badge: string
+export interface OfferData {
+  id: string
+  logo: string
+  title: string
   location: string
-  industry: string
-  status: string
-  contacts: VAvatarProps[]
+  duration: string
+  requirements: string
 }
 
 const page = ref(42)
 const filters = ref('')
 
-const users = userList as UserData[]
+const offersList = offers as OfferData[]
 const filteredData = computed(() => {
   if (!filters.value) {
-    return users
+    return offersList
   } else {
     const filterRe = new RegExp(filters.value, 'i')
-    return users.filter((item) => {
+    return offersList.filter((item) => {
       return (
-        item.username.match(filterRe) ||
-        item.position.match(filterRe) ||
-        item.industry.match(filterRe) ||
-        item.status.match(filterRe) ||
-        item.location.match(filterRe)
+        item.title.match(filterRe) ||
+        item.duration.match(filterRe) ||
+        item.location.match(filterRe) ||
+        item.requirements.match(filterRe)
       )
     })
   }
@@ -51,7 +45,7 @@ const filteredData = computed(() => {
       </VField>
 
       <VButtons>
-        <VButton color="primary" icon="fas fa-plus" elevated> Add User </VButton>
+        <VButton color="primary" icon="fas fa-plus" elevated> New Offer </VButton>
       </VButtons>
     </div>
     <div class="datatable-wrapper">
@@ -59,33 +53,28 @@ const filteredData = computed(() => {
         <table class="table datatable-table is-fullwidth">
           <thead>
             <th>Id</th>
-            <th>Name</th>
+            <th>Offer</th>
             <th>Location</th>
-            <th>Industry</th>
-            <th>Contacts</th>
+            <th>Duration</th>
+            <th>Requirements</th>
             <th>Actions</th>
           </thead>
           <tbody>
-            <tr v-for="user in filteredData" :key="user.id">
-              <td>{{ user.id }}</td>
+            <tr v-for="offer in filteredData" :key="offer.id">
+              <td>{{ offer.id }}</td>
               <td>
                 <div class="flex-media">
-                  <VAvatar :picture="user.picture" alt="Avatar" />
+                  <VAvatar :picture="offer.logo" alt="Avatar" />
                   <div class="meta">
-                    <h3>{{ user.username }}</h3>
-                    <span>{{ user.position }}</span>
+                    <h3>{{ offer.title }}</h3>
                   </div>
                 </div>
               </td>
-              <td>{{ user.location }}</td>
-              <td>{{ user.industry }}</td>
+              <td>{{ offer.location }}</td>
+              <td>{{ offer.duration }}</td>
+              <td>{{ offer.requirements }}</td>
               <td>
-                <div>
-                  <VAvatarStack :avatars="user.contacts" size="small" :limit="3" />
-                </div>
-              </td>
-              <td>
-                <FlexTableDropdown />
+                <VAction>Apply Now</VAction>
               </td>
             </tr>
           </tbody>

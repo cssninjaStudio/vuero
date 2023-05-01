@@ -308,7 +308,7 @@
     }
   },
   {
-    "name": "List Datatable V1",
+    "name": "Table List V1",
     "category": "LAYOUTS",
     "displayOrder": 320,
     "new": false,
@@ -322,7 +322,7 @@
     }
   },
   {
-    "name": "List Datatable V2",
+    "name": "Table List V2",
     "category": "LAYOUTS",
     "displayOrder": 330,
     "new": false,
@@ -336,7 +336,7 @@
     }
   },
   {
-    "name": "List Datatable V3",
+    "name": "Table List V3",
     "category": "LAYOUTS",
     "displayOrder": 340,
     "new": false,
@@ -347,20 +347,6 @@
     "screenshot": {
       "light": "/images/screenshots/navbar/list-datatable-v3-light.webp",
       "dark": "/images/screenshots/navbar/list-datatable-v3-dark.webp"
-    }
-  },
-  {
-    "name": "List Datatable V4",
-    "category": "LAYOUTS",
-    "displayOrder": 350,
-    "new": false,
-    "route": {
-      "name": "navbar-layouts-list-datatable-4",
-      "path": "/navbar/layouts/list-datatable-4"
-    },
-    "screenshot": {
-      "light": "/images/screenshots/navbar/list-datatable-v4-light.webp",
-      "dark": "/images/screenshots/navbar/list-datatable-v4-dark.webp"
     }
   },
   {

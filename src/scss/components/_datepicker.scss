@@ -10,7 +10,10 @@
 ========================================================================== */
 
 .vc-pane-container {
+  border-radius: 0.65 (rem);
+
   .vc-pane-layout {
+    border-radius: 0.65 (rem);
     font-family: var(--font);
 
     .vc-pane {
@@ -18,9 +21,14 @@
     }
 
     .vc-header {
+      margin-top: 0;
+
       .vc-title {
+        position: relative;
+        top: -4px;
         font-size: 1rem;
         font-weight: 500;
+        background: transparent;
       }
     }
 
@@ -31,14 +39,21 @@
         font-weight: 400;
         font-size: 0.9rem;
       }
+    }
+  }
 
-      .vc-day {
-        .vc-day-layer {
-          .vc-day-content {
-            // font-size: .9rem !important;
-          }
-        }
-      }
+  .vc-arrow {
+    background: transparent;
+    border-radius: var(--radius-rounded);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s ease;
+
+    svg {
+      position: relative;
+      height: 20px;
+      width: 20px;
     }
   }
 
@@ -46,29 +61,12 @@
     font-size: 0.9rem !important;
     font-weight: 500;
   }
-
-  .vc-arrows-container {
-    top: 1.3rem;
-    padding: 8px 24px;
-
-    .vc-arrow {
-      border-radius: var(--radius-rounded);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      svg {
-        position: relative;
-        top: -1px;
-        height: 20px;
-        width: 20px;
-      }
-    }
-  }
 }
 
 .vc-popover-content-wrapper {
   .vc-nav-popover-container {
+    background: var(--sidebar);
+
     .vc-nav-container {
       padding: 0.75rem;
 
@@ -77,10 +75,16 @@
 
         .vc-nav-title,
         .vc-nav-arrow {
+          background-color: transparent !important;
+
           &:active,
           &:focus {
             border-color: transparent !important;
           }
+        }
+
+        .vc-nav-title {
+          color: var(--white);
         }
 
         .vc-nav-arrow {
@@ -108,6 +112,7 @@
       .vc-nav-items {
         .vc-nav-item {
           color: var(--white);
+          background: var(--sidebar);
           font-family: var(--font);
           font-weight: 400;
           font-size: 0.75rem;
@@ -124,28 +129,23 @@
   }
 }
 
-.vc-time-content {
-  .vc-time-date {
-    > span {
-      font-size: 0.9rem;
-    }
-  }
-
-  .vc-am-pm {
-    > button {
-      font-family: var(--font);
-      font-size: 0.85rem;
-    }
-  }
-}
-
 .vc-time-picker {
-  .vc-date-time {
-    .vc-date {
-      > span {
-        font-family: var(--font);
-        font-size: 0.9rem;
-      }
+  .vc-time-header {
+    .vc-time-weekday,
+    .vc-time-year {
+      color: var(--dark-text);
+    }
+  }
+
+  .vc-time-select-group {
+    background: transparent !important;
+    border-color: transparent !important;
+  }
+
+  .vc-base-select {
+    select {
+      background: transparent !important;
+      border-color: transparent !important;
     }
   }
 }
@@ -155,15 +155,15 @@
 ========================================================================== */
 
 .is-dark {
-  .vc-popover-content-wrapper {
-    .vc-popover-caret {
-      border-color: var(--dark-sidebar) !important;
-    }
+  --vc-border: var(--dark-sidebar-light-8) !important;
+
+  .vc-popover-content {
+    background: var(--dark-sidebar) !important;
+    border-color: var(--dark-sidebar-light-8) !important;
   }
 
   .vc-container {
     background: var(--dark-sidebar) !important;
-    border: 1px solid var(--dark-sidebar-light-8) !important;
   }
 
   .vc-pane-container {
@@ -177,18 +177,11 @@
 
     .vc-day-content {
       color: var(--dark-dark-text);
-
-      // &:hover,
-      // &:focus {
-      //   background: var(--dark-sidebar-light-4) !important;
-      // }
     }
 
-    .vc-arrows-container {
-      .vc-arrow {
-        &:hover {
-          background: var(--dark-sidebar-light-4) !important;
-        }
+    .vc-arrow {
+      &:hover {
+        background: var(--dark-sidebar-light-4) !important;
       }
     }
   }
@@ -217,6 +210,7 @@
         .vc-nav-items {
           .vc-nav-item {
             color: var(--white);
+            background: var(--dark-sidebar-dark-4) !important;
 
             &:not(.is-active):hover {
               background: var(--dark-sidebar-light-2) !important;
@@ -232,40 +226,37 @@
   }
 
   .vc-time-picker {
-    &.vc-bordered {
+    .vc-time-header {
+      .vc-time-weekday,
+      .vc-time-year {
+        color: var(--light-text);
+      }
+    }
+
+    .vc-time-select-group {
+      background: transparent !important;
+      border-color: transparent !important;
+      color: var(--white);
+    }
+
+    .vc-base-select {
+      select {
+        background: transparent !important;
+        border-color: transparent !important;
+        color: var(--dark-dark-text) !important;
+      }
+    }
+
+    .vc-am-pm {
+      background: var(--dark-sidebar-dark-4) !important;
+
+      > button {
+        color: var(--white) !important;
+      }
+    }
+
+    &.vc-attached {
       border-color: var(--dark-sidebar-light-12) !important;
-    }
-
-    .vc-date-time {
-      .vc-date {
-        .vc-time-weekday {
-          color: var(--light-text) !important;
-        }
-      }
-    }
-
-    .vc-time-content {
-      .vc-time-date {
-        .vc-time-weekday {
-          color: var(--light-text) !important;
-        }
-      }
-
-      .vc-select {
-        select {
-          background: var(--dark-sidebar-dark-4) !important;
-          border-color: var(--dark-sidebar-dark-4) !important;
-          color: var(--dark-dark-text) !important;
-        }
-      }
-
-      .vc-am-pm {
-        background: var(--dark-sidebar-dark-4) !important;
-
-        > button {
-          color: var(--white) !important;
-        }
-      }
     }
   }
 }
