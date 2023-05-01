@@ -391,7 +391,6 @@ declare module '@vue/runtime-core' {
     TableListV1: typeof import('./src/components/pages/layouts/table-list/TableListV1.vue')['default']
     TableListV2: typeof import('./src/components/pages/layouts/table-list/TableListV2.vue')['default']
     TableListV3: typeof import('./src/components/pages/layouts/table-list/TableListV3.vue')['default']
-    TableListV4: typeof import('./src/components/pages/layouts/table-list/TableListV4.vue')['default']
     TableMediaDocumentation: typeof import('./documentation/elements/table/table-media-documentation.md')['default']
     TableStripedDocumentation: typeof import('./documentation/elements/table/table-striped-documentation.md')['default']
     TableWidget: typeof import('./src/components/partials/widgets/table/TableWidget.vue')['default']

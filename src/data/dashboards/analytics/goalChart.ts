@@ -9,7 +9,7 @@ export function useGoalCharts() {
       type: 'radialBar',
       offsetY: -10,
     },
-    colors: [themeColors.accent, themeColors.green],
+    colors: [themeColors.accent, themeColors.primary],
     plotOptions: {
       radialBar: {
         startAngle: -135,

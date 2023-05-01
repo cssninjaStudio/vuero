@@ -33,7 +33,7 @@ export function useTeamEfficiencyChart() {
         show: false,
       },
     },
-    colors: [themeColors.accent, themeColors.purple, themeColors.green],
+    colors: [themeColors.accent, themeColors.purple, themeColors.primary],
     legend: {
       position: 'top',
     },

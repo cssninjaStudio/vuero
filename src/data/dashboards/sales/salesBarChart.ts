@@ -114,7 +114,7 @@ export function useSalesBarChart() {
         show: false,
       },
     },
-    colors: [themeColors.accent, themeColors.green],
+    colors: [themeColors.accent, themeColors.primary],
     dataLabels: {
       enabled: false,
     },

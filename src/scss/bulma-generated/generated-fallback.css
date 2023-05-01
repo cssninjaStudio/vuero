@@ -3379,6 +3379,10 @@ code {
   background: rgb(42, 172, 142);
 }
 
+.vc-popover-content-wrapper .vc-nav-popover-container .vc-nav-container .vc-nav-header .vc-nav-title {
+  color: rgb(255, 255, 255);
+}
+
 .vc-popover-content-wrapper .vc-nav-popover-container .vc-nav-container .vc-nav-header .vc-nav-arrow {
   color: rgb(255, 255, 255);
 }
@@ -3392,6 +3396,10 @@ code {
 }
 
 .is-dark .vc-popover-content-wrapper .vc-nav-popover-container .vc-nav-container .vc-nav-items .vc-nav-item {
+  color: rgb(255, 255, 255);
+}
+
+.is-dark .vc-time-picker .vc-time-select-group {
   color: rgb(255, 255, 255);
 }
 

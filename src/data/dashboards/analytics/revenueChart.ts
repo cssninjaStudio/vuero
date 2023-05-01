@@ -20,7 +20,7 @@ export function useRevenueChart() {
         show: false,
       },
     },
-    colors: [themeColors.green],
+    colors: [themeColors.primary],
     dataLabels: {
       enabled: false,
     },

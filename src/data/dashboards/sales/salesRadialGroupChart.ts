@@ -61,7 +61,7 @@ export function useSalesRadialGroupChart() {
         show: false,
       },
     },
-    colors: [themeColors.green],
+    colors: [themeColors.primary],
     plotOptions: {
       radialBar: {
         hollow: {

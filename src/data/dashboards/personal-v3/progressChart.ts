@@ -21,7 +21,7 @@ export function useProgressChart() {
         themeColors.accent,
         themeColors.info,
         themeColors.orange,
-        themeColors.green,
+        themeColors.primary,
       ],
       threshold: {
         values: [30, 60, 90, 100],

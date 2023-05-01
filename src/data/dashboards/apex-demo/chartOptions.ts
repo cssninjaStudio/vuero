@@ -61,7 +61,7 @@ export function useChartOptions() {
         show: false,
       },
     },
-    colors: [themeColors.green],
+    colors: [themeColors.primary],
     dataLabels: {
       enabled: false,
     },
@@ -109,7 +109,7 @@ export function useChartOptions() {
         show: false,
       },
     },
-    colors: [themeColors.accent, themeColors.info, themeColors.green],
+    colors: [themeColors.accent, themeColors.info, themeColors.primary],
     dataLabels: {
       enabled: false,
     },
@@ -194,7 +194,7 @@ export function useChartOptions() {
       width: [2, 2, 2],
       curve: 'stepline',
     },
-    colors: [themeColors.green],
+    colors: [themeColors.primary],
     dataLabels: {
       enabled: false,
     },
@@ -249,7 +249,7 @@ export function useChartOptions() {
       width: [2, 2, 2],
       curve: 'straight',
     },
-    colors: [themeColors.green],
+    colors: [themeColors.primary],
     title: {
       text: 'Area Chart',
       align: 'left',
@@ -284,7 +284,7 @@ export function useChartOptions() {
         show: false,
       },
     },
-    colors: [themeColors.green, themeColors.info, themeColors.purple],
+    colors: [themeColors.primary, themeColors.info, themeColors.purple],
     title: {
       text: 'Multiple Area',
       align: 'left',
@@ -408,7 +408,7 @@ export function useChartOptions() {
         formatter: formatters.toDate('DD MMM YYYY'),
       },
     },
-    colors: [themeColors.accent, themeColors.info, themeColors.green],
+    colors: [themeColors.accent, themeColors.info, themeColors.primary],
     title: {
       text: 'Multiple Areas',
       align: 'left',
@@ -506,7 +506,7 @@ export function useChartOptions() {
         formatter: formatters.asPercent,
       },
     },
-    colors: [themeColors.green, themeColors.secondary, themeColors.orange],
+    colors: [themeColors.primary, themeColors.secondary, themeColors.orange],
     title: {
       text: 'Bar Chart',
       align: 'left',
@@ -542,7 +542,12 @@ export function useChartOptions() {
         endingShape: 'rounded',
       },
     },
-    colors: [themeColors.accent, themeColors.info, themeColors.green, themeColors.purple],
+    colors: [
+      themeColors.accent,
+      themeColors.info,
+      themeColors.primary,
+      themeColors.purple,
+    ],
     dataLabels: {
       enabled: false,
     },
@@ -610,7 +615,7 @@ export function useChartOptions() {
     colors: [
       themeColors.accent,
       themeColors.info,
-      themeColors.green,
+      themeColors.primary,
       themeColors.purple,
       themeColors.orange,
     ],
@@ -707,10 +712,10 @@ export function useChartOptions() {
     },
     colors: [
       themeColors.accent,
-      themeColors.green,
+      themeColors.primary,
       themeColors.orange,
       themeColors.purple,
-      themeColors.green,
+      themeColors.primary,
     ],
     title: {
       text: 'Range Column',
@@ -744,7 +749,7 @@ export function useChartOptions() {
         show: false,
       },
     },
-    colors: [themeColors.green],
+    colors: [themeColors.primary],
     plotOptions: {
       bar: {
         horizontal: true,
@@ -791,7 +796,7 @@ export function useChartOptions() {
         show: false,
       },
     },
-    colors: [themeColors.info, themeColors.green],
+    colors: [themeColors.info, themeColors.primary],
     title: {
       text: 'Horizontal Bar Multiple',
       align: 'left',
@@ -843,7 +848,7 @@ export function useChartOptions() {
           {
             x: 'Coding',
             y: [new Date('2019-03-07').getTime(), new Date('2019-03-10').getTime()],
-            fillColor: themeColors.green,
+            fillColor: themeColors.primary,
           },
           {
             x: 'Testing',
@@ -872,7 +877,7 @@ export function useChartOptions() {
     colors: [
       themeColors.accent,
       themeColors.info,
-      themeColors.green,
+      themeColors.primary,
       themeColors.purple,
       themeColors.orange,
     ],
@@ -953,7 +958,7 @@ export function useChartOptions() {
     colors: [
       themeColors.accent,
       themeColors.info,
-      themeColors.green,
+      themeColors.primary,
       themeColors.purple,
       themeColors.orange,
     ],
@@ -1033,7 +1038,7 @@ export function useChartOptions() {
     colors: [
       themeColors.accent,
       themeColors.info,
-      themeColors.green,
+      themeColors.primary,
       themeColors.purple,
       themeColors.orange,
     ],
@@ -1073,7 +1078,7 @@ export function useChartOptions() {
     colors: [
       themeColors.accent,
       themeColors.info,
-      themeColors.green,
+      themeColors.primary,
       themeColors.purple,
       themeColors.orange,
     ],
@@ -1113,7 +1118,7 @@ export function useChartOptions() {
     colors: [
       themeColors.accent,
       themeColors.info,
-      themeColors.green,
+      themeColors.primary,
       themeColors.purple,
       themeColors.orange,
     ],
@@ -1154,7 +1159,7 @@ export function useChartOptions() {
     colors: [
       themeColors.accent,
       themeColors.info,
-      themeColors.green,
+      themeColors.primary,
       themeColors.purple,
       themeColors.orange,
     ],
@@ -1183,7 +1188,7 @@ export function useChartOptions() {
     colors: [
       themeColors.accent,
       themeColors.info,
-      themeColors.green,
+      themeColors.primary,
       themeColors.purple,
       themeColors.orange,
     ],
@@ -1226,7 +1231,7 @@ export function useChartOptions() {
     colors: [
       themeColors.accent,
       themeColors.info,
-      themeColors.green,
+      themeColors.primary,
       themeColors.purple,
       themeColors.orange,
     ],
@@ -1285,7 +1290,7 @@ export function useChartOptions() {
     colors: [
       themeColors.accent,
       themeColors.info,
-      themeColors.green,
+      themeColors.primary,
       themeColors.purple,
       themeColors.orange,
     ],
@@ -1353,7 +1358,7 @@ export function useChartOptions() {
     colors: [
       themeColors.accent,
       themeColors.info,
-      themeColors.green,
+      themeColors.primary,
       themeColors.purple,
       themeColors.orange,
     ],
