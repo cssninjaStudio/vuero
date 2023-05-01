@@ -75,10 +75,6 @@ export default defineComponent({
       type: Boolean,
       default: false,
     },
-    elevated: {
-      type: Boolean,
-      default: false,
-    },
     outlined: {
       type: Boolean,
       default: false,
@@ -108,7 +104,6 @@ export default defineComponent({
         props.raised && 'is-raised',
         props.dark && `is-dark-bg-${props.dark}`,
         props.darkOutlined && 'is-dark-outlined',
-        props.elevated && 'is-elevated',
         props.loading && 'is-loading',
         props.color && `is-${props.color}`,
         props.light && 'is-light',
