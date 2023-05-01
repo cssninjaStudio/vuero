@@ -76,7 +76,7 @@ async function initNotyfService() {
         },
         {
           type: 'green',
-          background: themeColors.green,
+          background: themeColors.primary,
           icon: {
             className: 'fas fa-check',
             tagName: 'i',
