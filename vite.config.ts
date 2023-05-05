@@ -111,7 +111,7 @@ export default defineConfig({
       'workbox-window',
       'textarea-markdown-editor/dist/esm/bootstrap',
     ],
-    disabled: false,
+    // disabled: false,
   },
   // Will be passed to @rollup/plugin-alias as its entries option.
   resolve: {
@@ -129,7 +129,7 @@ export default defineConfig({
     // Double the default size threshold for inlined assets
     // https://vitejs.dev/config/build-options.html#build-assetsinlinelimit
     assetsInlineLimit: 4096 * 2,
-    commonjsOptions: { include: [] },
+    // commonjsOptions: { include: [] },
   },
   plugins: [
     /**

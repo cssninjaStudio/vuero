@@ -70,8 +70,8 @@ defineExpose({
       >
         <span v-if="props.title">{{ props.title }}</span>
         <span :class="[!props.modern && 'base-caret', props.modern && 'base-caret']">
-          <VIcon v-if="!dropdown.isOpen" icon="fa:angle-down" />
-          <VIcon v-else icon="fa:angle-up" />
+          <VIcon v-if="!dropdown.isOpen" icon="fa6-solid:angle-down" />
+          <VIcon v-else icon="fa6-solid:angle-up" />
         </span>
       </a>
     </slot>

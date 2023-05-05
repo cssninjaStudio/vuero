@@ -104,10 +104,10 @@ const SortColumnComponent = defineComponent({
                 class: 'iconify is-inline',
                 'data-icon':
                   currentRoute.query.sort === `${props.id}:asc`
-                    ? 'fa:sort-asc'
+                    ? 'fa6-solid:sort-up'
                     : currentRoute.query.sort === `${props.id}:desc`
-                    ? 'fa:sort-desc'
-                    : 'fa:sort',
+                    ? 'fa6-solid:sort-down'
+                    : 'fa6-solid:sort',
               })
             )
 
