@@ -21,7 +21,7 @@ export function useIncomeHistoryChart() {
         show: false,
       },
     },
-    colors: [themeColors.green, themeColors.info, themeColors.orange],
+    colors: [themeColors.primary, themeColors.info, themeColors.orange],
     title: {
       text: 'History',
       align: 'left',

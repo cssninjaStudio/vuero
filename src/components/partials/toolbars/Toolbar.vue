@@ -28,11 +28,11 @@ const localFlagSrc = computed(() => {
 </script>
 
 <template>
-  <div class="toolbar ml-auto">
+  <div class="toolbar">
     <div class="toolbar-link">
       <label
         tabindex="0"
-        class="dark-mode ml-auto"
+        class="dark-mode"
         role="button"
         @keydown.space.prevent="(e) => (e.target as HTMLLabelElement).click()"
       >

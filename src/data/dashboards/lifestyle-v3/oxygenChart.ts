@@ -3,7 +3,7 @@ import * as formatters from '/@src/utils/apex-formatters'
 
 export function useOxygenChart() {
   const themeColors = useThemeColors()
-  const oxygenChartOptions = ref({
+  const oxygenChartOptions = shallowRef({
     series: [
       {
         name: 'Variation (pt)',

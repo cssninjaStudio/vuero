@@ -39,7 +39,7 @@ const props = withDefaults(
       justify-content: space-between;
 
       .meta {
-        margin-right: 30px;
+        margin-inline-end: 30px;
         align-items: center;
         font-family: var(--font);
 
@@ -65,6 +65,8 @@ const props = withDefaults(
 
       .chart-container {
         min-width: 110px;
+        flex-shrink: 0;
+        max-width: 120px;
       }
     }
   }

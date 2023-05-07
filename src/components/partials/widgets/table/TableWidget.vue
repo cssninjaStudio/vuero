@@ -85,7 +85,7 @@ const props = withDefaults(
           }
 
           .rating-wrap {
-            text-align: right;
+            text-align: inset-inline-end;
 
             span {
               color: var(--light-text);
@@ -103,7 +103,7 @@ const props = withDefaults(
           }
 
           .tag-wrap {
-            text-align: right;
+            text-align: inset-inline-end;
           }
         }
       }

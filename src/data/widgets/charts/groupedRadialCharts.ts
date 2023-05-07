@@ -3,7 +3,7 @@ import { useThemeColors } from '/@src/composable/useThemeColors'
 export function useGroupedRadialCharts() {
   const themeColors = useThemeColors()
 
-  const widgetGaugeGroup1Options = ref({
+  const widgetGaugeGroup1Options = shallowRef({
     series: [57],
     chart: {
       height: 100,
@@ -63,7 +63,7 @@ export function useGroupedRadialCharts() {
     labels: ['Average Results'],
   })
 
-  const widgetGaugeGroup2Options = ref({
+  const widgetGaugeGroup2Options = shallowRef({
     series: [36],
     chart: {
       height: 100,
@@ -123,7 +123,7 @@ export function useGroupedRadialCharts() {
     labels: ['Average Results'],
   })
 
-  const widgetGaugeGroup3Options = ref({
+  const widgetGaugeGroup3Options = shallowRef({
     series: [88],
     chart: {
       height: 100,
@@ -136,7 +136,7 @@ export function useGroupedRadialCharts() {
         show: false,
       },
     },
-    colors: [themeColors.green],
+    colors: [themeColors.primary],
     plotOptions: {
       radialBar: {
         startAngle: -90,

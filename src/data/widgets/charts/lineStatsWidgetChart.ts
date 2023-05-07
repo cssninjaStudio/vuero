@@ -3,7 +3,7 @@ import { useThemeColors } from '/@src/composable/useThemeColors'
 export function useLineStatsWidgetCharts() {
   const themeColors = useThemeColors()
 
-  const lineStatsChartOptions = ref({
+  const lineStatsChartOptions = shallowRef({
     series: [
       {
         name: 'Revenue',

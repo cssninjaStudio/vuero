@@ -42,8 +42,8 @@ const props = defineProps<{
   position: fixed;
   top: 0;
   bottom: 0;
-  left: 0;
-  right: 0;
+  inset-inline-start: 0;
+  inset-inline-end: 0;
   z-index: 20;
   backdrop-filter: blur(1px);
 }
@@ -51,18 +51,18 @@ const props = defineProps<{
 .mobile-main-sidebar {
   position: fixed;
   top: 60px;
-  left: 0;
+  inset-inline-start: 0;
   height: calc(100% - 60px);
   width: 60px;
   background: var(--white);
   border-top: 1px solid var(--fade-grey);
-  border-right: 1px solid var(--fade-grey);
+  border-inline-end: 1px solid var(--fade-grey);
   z-index: 100;
-  transform: translateX(-100%);
+  transform: translateX(calc(var(--transform-direction) * -100%));
   transition: all 0.3s; // transition-all test
 
   &.is-active {
-    transform: translateX(0);
+    transform: translateX(calc(var(--transform-direction) * 0));
   }
 
   .inner {
@@ -82,7 +82,7 @@ const props = defineProps<{
         a {
           display: block;
           position: relative;
-          transform: rotate(0);
+          transform: rotate(calc(var(--transform-direction) * 0));
           opacity: 1;
           transition: all 0.3s; // transition-all test
 
@@ -115,12 +115,12 @@ const props = defineProps<{
           }
 
           &.is-opened {
-            transform: rotate(360deg);
+            transform: rotate(calc(var(--transform-direction) * 360deg));
             opacity: 0;
           }
 
           &.is-inactive {
-            transform: rotate(-360deg);
+            transform: rotate(calc(var(--transform-direction) * -360deg));
             opacity: 0;
           }
 
@@ -134,13 +134,13 @@ const props = defineProps<{
 
         #open-filters {
           svg {
-            transform: rotate(0);
+            transform: rotate(calc(var(--transform-direction) * 0));
             transition: all 0.3s; // transition-all test
           }
 
           &:hover {
             svg {
-              transform: rotate(145deg);
+              transform: rotate(calc(var(--transform-direction) * 145deg));
             }
           }
         }
@@ -156,7 +156,7 @@ const props = defineProps<{
     .bottom-icon-side-menu {
       position: absolute;
       bottom: 0;
-      left: 0;
+      inset-inline-start: 0;
     }
   }
 }
@@ -185,12 +185,12 @@ const props = defineProps<{
 .mobile-subsidebar {
   position: fixed;
   top: 60px;
-  left: 0;
+  inset-inline-start: 0;
   height: calc(100% - 60px);
   width: 280px;
   background: var(--white);
   border-top: 1px solid var(--fade-grey);
-  border-right: 1px solid var(--fade-grey);
+  border-inline-end: 1px solid var(--fade-grey);
   z-index: 99;
 
   .navbar-divider {
@@ -203,7 +203,7 @@ const props = defineProps<{
     position: relative;
     height: 100%;
     width: calc(100% - 60px);
-    margin-left: 60px;
+    margin-inline-start: 60px;
 
     .sidebar-title {
       height: 60px;
@@ -257,8 +257,8 @@ const props = defineProps<{
             align-items: center;
 
             .tag {
-              margin-left: auto;
-              margin-right: 20px;
+              margin-inline-start: auto;
+              margin-inline-end: 20px;
               border-radius: 100px;
               background: var(--danger);
               color: var(--white);
@@ -286,8 +286,8 @@ const props = defineProps<{
                 top: 1px;
                 height: 18px;
                 width: 18px;
-                margin-left: auto;
-                transform: rotate(0);
+                margin-inline-start: auto;
+                transform: rotate(calc(var(--transform-direction) * 0));
                 transition: color 0.3s, background-color 0.3s, border-color 0.3s,
                   height 0.3s, width 0.3s;
               }
@@ -308,7 +308,7 @@ const props = defineProps<{
               .is-submenu {
                 display: flex;
                 align-items: center;
-                padding-left: 16px;
+                padding-inline-start: 16px;
                 font-size: 0.95rem;
 
                 &.is-active {
@@ -317,7 +317,7 @@ const props = defineProps<{
                 }
 
                 i {
-                  margin-right: 8px;
+                  margin-inline-end: 8px;
                 }
 
                 svg {
@@ -326,7 +326,7 @@ const props = defineProps<{
                   max-width: 8px;
                   min-width: 8px;
                   stroke-width: 2px;
-                  margin-right: 8px;
+                  margin-inline-end: 8px;
                 }
               }
             }
@@ -353,7 +353,7 @@ const props = defineProps<{
     .bottom-action {
       position: absolute;
       bottom: 0;
-      left: 0;
+      inset-inline-start: 0;
       width: 100%;
       padding: 10px;
 
@@ -378,12 +378,12 @@ const props = defineProps<{
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      border-left: 2px solid transparent;
+      border-inline-start: 2px solid transparent;
       border-bottom: 1px solid rgb(0 0 0 / 5%);
       cursor: pointer;
 
       &.is-active {
-        border-left-color: var(--primary);
+        border-inline-start-color: var(--primary);
         background: var(--primary-light-51);
 
         &:hover,
@@ -398,7 +398,7 @@ const props = defineProps<{
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        margin-left: 8px;
+        margin-inline-start: 8px;
         cursor: pointer;
 
         .user-container {
@@ -417,7 +417,7 @@ const props = defineProps<{
             &.is-badge {
               display: block;
               position: absolute;
-              right: -5px;
+              inset-inline-end: -5px;
               bottom: 0;
               border: 2px solid var(--white);
               height: 16px;
@@ -453,7 +453,7 @@ const props = defineProps<{
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        margin-left: 8px;
+        margin-inline-start: 8px;
         cursor: pointer;
 
         img {
@@ -470,7 +470,7 @@ const props = defineProps<{
           &:nth-child(2),
           &:nth-child(3),
           &:nth-child(4) {
-            margin-left: -15px;
+            margin-inline-start: -15px;
           }
         }
 
@@ -483,7 +483,7 @@ const props = defineProps<{
           display: flex;
           justify-content: center;
           align-items: center;
-          margin-left: -15px;
+          margin-inline-start: -15px;
           border: 2px solid var(--white);
 
           span {
@@ -499,7 +499,7 @@ const props = defineProps<{
         display: block;
         position: absolute;
         top: 2px;
-        right: 20px;
+        inset-inline-end: 20px;
         font-size: 0.75rem;
         color: var(--muted-grey);
       }
@@ -534,7 +534,7 @@ const props = defineProps<{
       height: 80px;
       width: 100%;
       padding: 10px;
-      border-left: 2px solid transparent;
+      border-inline-start: 2px solid transparent;
       border-bottom: 1px solid var(--fade-grey);
       opacity: 0.8;
       cursor: pointer;
@@ -542,7 +542,7 @@ const props = defineProps<{
       &.is-active {
         opacity: 1;
         background: var(--primary-light-51);
-        border-left-color: var(--primary);
+        border-inline-start-color: var(--primary);
 
         &.is-eth {
           .wallet-meta {
@@ -579,7 +579,7 @@ const props = defineProps<{
       }
 
       .wallet-meta {
-        margin-left: 10px;
+        margin-inline-start: 10px;
 
         span {
           display: block;
@@ -617,8 +617,8 @@ const props = defineProps<{
         .kodr-coin-fill {
           height: 24px;
           width: 24px;
-          margin-right: 5px;
-          margin-left: -5px;
+          margin-inline-end: 5px;
+          margin-inline-start: -5px;
 
           .path {
             fill: var(--smoke-white);
@@ -645,8 +645,8 @@ const props = defineProps<{
           height: 24px;
           width: 24px;
           fill: var(--primary);
-          margin-right: 5px;
-          margin-left: -12px;
+          margin-inline-end: 5px;
+          margin-inline-start: -12px;
           transition: all 0.3s; // transition-all test
         }
       }
@@ -683,7 +683,7 @@ const props = defineProps<{
       ul li {
         &.is-active {
           background: var(--dark-sidebar-dark-4);
-          border-left-color: var(--primary) !important;
+          border-inline-start-color: var(--primary) !important;
         }
 
         .recipient-meta {

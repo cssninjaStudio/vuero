@@ -3,7 +3,7 @@ import { useThemeColors } from '/@src/composable/useThemeColors'
 export function useSalesRadialGroupChart() {
   const themeColors = useThemeColors()
 
-  const radialGroup1Options = ref({
+  const radialGroup1Options = shallowRef({
     series: [31],
     chart: {
       height: 100,
@@ -27,7 +27,7 @@ export function useSalesRadialGroupChart() {
     labels: [''],
   })
 
-  const radialGroup2Options = ref({
+  const radialGroup2Options = shallowRef({
     series: [53],
     chart: {
       height: 100,
@@ -51,7 +51,7 @@ export function useSalesRadialGroupChart() {
     labels: [''],
   })
 
-  const radialGroup3Options = ref({
+  const radialGroup3Options = shallowRef({
     series: [84],
     chart: {
       height: 100,
@@ -61,7 +61,7 @@ export function useSalesRadialGroupChart() {
         show: false,
       },
     },
-    colors: [themeColors.green],
+    colors: [themeColors.primary],
     plotOptions: {
       radialBar: {
         hollow: {

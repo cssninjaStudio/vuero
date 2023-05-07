@@ -542,21 +542,6 @@ onMounted(() => {
 </template>
 
 <style lang="scss">
-/*! _board.scss | Vuero | cssninjaStudio 2020-2023 */
-
-/*
-    1. Kanban Toolbar
-    2. Kanban Layout
-    3. Kanban Card
-    4. Dragula
-    5. Kanban Board Dark mode
-    6. Media Queries
-*/
-
-/* ==========================================================================
-1. Kanban Toolbar
-========================================================================== */
-
 .kanban-toolbar {
   display: flex;
   align-items: center;
@@ -567,17 +552,13 @@ onMounted(() => {
   }
 
   .avatar-stack {
-    margin-left: 16px;
+    margin-inline-start: 16px;
   }
 
   .button {
-    margin-left: auto;
+    margin-inline-start: auto;
   }
 }
-
-/* ==========================================================================
-2. Kanban Layout
-========================================================================== */
 
 .is-kanban-wrapper {
   .column {
@@ -605,7 +586,7 @@ onMounted(() => {
       }
 
       .input {
-        margin-right: 20px;
+        margin-inline-end: 20px;
       }
 
       svg {
@@ -615,7 +596,7 @@ onMounted(() => {
       }
 
       .task-count {
-        padding-left: 4px;
+        padding-inline-start: 4px;
 
         &::before {
           content: '(';
@@ -746,17 +727,13 @@ onMounted(() => {
           font-size: 1rem;
           color: var(--dark-text);
           font-weight: 600;
-          margin-left: -3px;
-          transform: rotate(-90deg);
+          margin-inline-start: -3px;
+          transform: rotate(calc(var(--transform-direction) * -90deg));
         }
       }
     }
   }
 }
-
-/* ==========================================================================
-3. Kanban Card
-========================================================================== */
 
 .kanban-card {
   width: 100%;
@@ -790,7 +767,7 @@ onMounted(() => {
           content: '';
           position: absolute;
           top: calc(50% - 12px);
-          left: calc(50% - 12px);
+          inset-inline-start: calc(50% - 12px);
           height: 24px;
           width: 24px;
           border-radius: var(--radius-rounded);
@@ -899,10 +876,6 @@ onMounted(() => {
   }
 }
 
-/* ==========================================================================
-4. Dragula
-========================================================================== */
-
 .can-drag {
   .kanban-card {
     // fallback if grab cursor is unsupported
@@ -925,10 +898,6 @@ onMounted(() => {
 .gu-mirror {
   position: fixed;
 }
-
-/* ==========================================================================
-5. Kanban Board Dark mode
-========================================================================== */
 
 .is-dark {
   .kanban-column {
@@ -1019,10 +988,6 @@ onMounted(() => {
     }
   }
 }
-
-/* ==========================================================================
-6. Media Queries
-========================================================================== */
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .kanban-column {

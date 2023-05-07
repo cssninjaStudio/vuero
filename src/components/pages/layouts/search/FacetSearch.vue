@@ -489,7 +489,7 @@ const options = ref(['Newest'])
     margin-bottom: 20px;
 
     .control {
-      margin-right: 10px;
+      margin-inline-end: 10px;
     }
 
     .search-info {
@@ -500,7 +500,7 @@ const options = ref(['Newest'])
     }
 
     .tabs-inner {
-      margin-left: auto;
+      margin-inline-start: auto;
 
       .tabs {
         margin-bottom: 0;
@@ -534,14 +534,14 @@ const options = ref(['Newest'])
           }
 
           .control-end {
-            margin-left: auto;
+            margin-inline-start: auto;
           }
         }
       }
     }
 
     .search-results-group {
-      padding-left: 30px;
+      padding-inline-start: 30px;
       margin-bottom: 20px;
 
       .group-header {
@@ -559,7 +559,7 @@ const options = ref(['Newest'])
           display: flex;
           justify-content: center;
           align-items: center;
-          margin-right: 6px;
+          margin-inline-end: 6px;
           background: var(--white);
           border: 1px solid var(--primary);
           color: var(--primary);
@@ -658,7 +658,7 @@ const options = ref(['Newest'])
 
     .search-results-body {
       .search-results-group {
-        padding-left: 0;
+        padding-inline-start: 0;
       }
     }
   }
@@ -668,7 +668,7 @@ const options = ref(['Newest'])
   .search-results-wrapper {
     .search-results-body {
       .search-results-group {
-        padding-left: 0;
+        padding-inline-start: 0;
       }
     }
   }
@@ -678,7 +678,7 @@ const options = ref(['Newest'])
   .search-results-wrapper {
     .search-results-body {
       .search-results-group {
-        padding-left: 10px;
+        padding-inline-start: 10px;
       }
     }
   }

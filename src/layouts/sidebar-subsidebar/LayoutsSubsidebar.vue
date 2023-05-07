@@ -24,7 +24,16 @@ const emit = defineEmits(['close'])
         <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="lists">
           <template #header>
             Lists
-            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+            <i
+              aria-hidden="true"
+              class="iconify rtl-hidden"
+              data-icon="feather:chevron-right"
+            />
+            <i
+              aria-hidden="true"
+              class="iconify ltr-hidden"
+              data-icon="feather:chevron-left"
+            />
           </template>
           <RouterLink to="/sidebar/layouts" class="is-submenu">
             <i aria-hidden="true" class="lnil lnil-list-alt"></i>
@@ -47,7 +56,16 @@ const emit = defineEmits(['close'])
         <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="flex-lists">
           <template #header>
             Flex Lists
-            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+            <i
+              aria-hidden="true"
+              class="iconify rtl-hidden"
+              data-icon="feather:chevron-right"
+            />
+            <i
+              aria-hidden="true"
+              class="iconify ltr-hidden"
+              data-icon="feather:chevron-left"
+            />
           </template>
 
           <RouterLink to="/sidebar/layouts/list-flex-1" class="is-submenu">
@@ -67,31 +85,45 @@ const emit = defineEmits(['close'])
         <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="datatable">
           <template #header>
             Datatable
-            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+            <i
+              aria-hidden="true"
+              class="iconify rtl-hidden"
+              data-icon="feather:chevron-right"
+            />
+            <i
+              aria-hidden="true"
+              class="iconify ltr-hidden"
+              data-icon="feather:chevron-left"
+            />
           </template>
 
           <RouterLink to="/sidebar/layouts/list-datatable-1" class="is-submenu">
             <i aria-hidden="true" class="lnil lnil-layout-alt"></i>
-            <span>Datatable V1</span>
+            <span>Table List V1</span>
           </RouterLink>
           <RouterLink to="/sidebar/layouts/list-datatable-2" class="is-submenu">
             <i aria-hidden="true" class="lnil lnil-layout-alt"></i>
-            <span>Datatable V2</span>
+            <span>Table List V2</span>
           </RouterLink>
           <RouterLink to="/sidebar/layouts/list-datatable-3" class="is-submenu">
             <i aria-hidden="true" class="lnil lnil-layout-alt"></i>
-            <span>Datatable V3</span>
-          </RouterLink>
-          <RouterLink to="/sidebar/layouts/list-datatable-4" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-layout-alt"></i>
-            <span>Datatable V4</span>
+            <span>Table List V3</span>
           </RouterLink>
         </VCollapseLinks>
 
         <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="form-layouts">
           <template #header>
             Form Layouts
-            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+            <i
+              aria-hidden="true"
+              class="iconify rtl-hidden"
+              data-icon="feather:chevron-right"
+            />
+            <i
+              aria-hidden="true"
+              class="iconify ltr-hidden"
+              data-icon="feather:chevron-left"
+            />
           </template>
 
           <RouterLink to="/sidebar/layouts/form-layouts-1" class="is-submenu">
@@ -119,7 +151,16 @@ const emit = defineEmits(['close'])
         <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="placeload">
           <template #header>
             Placeload
-            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+            <i
+              aria-hidden="true"
+              class="iconify rtl-hidden"
+              data-icon="feather:chevron-right"
+            />
+            <i
+              aria-hidden="true"
+              class="iconify ltr-hidden"
+              data-icon="feather:chevron-left"
+            />
           </template>
 
           <RouterLink to="/sidebar/layouts/placeload-1" class="is-submenu">
@@ -149,7 +190,16 @@ const emit = defineEmits(['close'])
         <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="card-grid">
           <template #header>
             Card Grid
-            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+            <i
+              aria-hidden="true"
+              class="iconify rtl-hidden"
+              data-icon="feather:chevron-right"
+            />
+            <i
+              aria-hidden="true"
+              class="iconify ltr-hidden"
+              data-icon="feather:chevron-left"
+            />
           </template>
 
           <RouterLink to="/sidebar/layouts/grid-cards-1" class="is-submenu">
@@ -173,7 +223,16 @@ const emit = defineEmits(['close'])
         <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="tile-grid">
           <template #header>
             Tile Grid
-            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+            <i
+              aria-hidden="true"
+              class="iconify rtl-hidden"
+              data-icon="feather:chevron-right"
+            />
+            <i
+              aria-hidden="true"
+              class="iconify ltr-hidden"
+              data-icon="feather:chevron-left"
+            />
           </template>
 
           <RouterLink to="/sidebar/layouts/grid-tiles-1" class="is-submenu">
@@ -193,7 +252,16 @@ const emit = defineEmits(['close'])
         <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="user-grid">
           <template #header>
             User Grid
-            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+            <i
+              aria-hidden="true"
+              class="iconify rtl-hidden"
+              data-icon="feather:chevron-right"
+            />
+            <i
+              aria-hidden="true"
+              class="iconify ltr-hidden"
+              data-icon="feather:chevron-left"
+            />
           </template>
 
           <RouterLink to="/sidebar/layouts/grid-users-1" class="is-submenu">
@@ -219,7 +287,16 @@ const emit = defineEmits(['close'])
         <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="personal">
           <template #header>
             Personal
-            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+            <i
+              aria-hidden="true"
+              class="iconify rtl-hidden"
+              data-icon="feather:chevron-right"
+            />
+            <i
+              aria-hidden="true"
+              class="iconify ltr-hidden"
+              data-icon="feather:chevron-left"
+            />
           </template>
           <RouterLink to="/sidebar/layouts/profile-view" class="is-submenu">
             <i aria-hidden="true" class="lnil lnil-user-alt"></i>
@@ -242,7 +319,16 @@ const emit = defineEmits(['close'])
         <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="pages">
           <template #header>
             Pages
-            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+            <i
+              aria-hidden="true"
+              class="iconify rtl-hidden"
+              data-icon="feather:chevron-right"
+            />
+            <i
+              aria-hidden="true"
+              class="iconify ltr-hidden"
+              data-icon="feather:chevron-left"
+            />
           </template>
 
           <RouterLink to="/auth/login" class="is-submenu">
@@ -282,7 +368,16 @@ const emit = defineEmits(['close'])
         <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="subpages">
           <template #header>
             Subpages
-            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+            <i
+              aria-hidden="true"
+              class="iconify rtl-hidden"
+              data-icon="feather:chevron-right"
+            />
+            <i
+              aria-hidden="true"
+              class="iconify ltr-hidden"
+              data-icon="feather:chevron-left"
+            />
           </template>
 
           <RouterLink to="/sidebar/layouts/saas-billing" class="is-submenu">
@@ -302,7 +397,16 @@ const emit = defineEmits(['close'])
         <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="projects">
           <template #header>
             Projects
-            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+            <i
+              aria-hidden="true"
+              class="iconify rtl-hidden"
+              data-icon="feather:chevron-right"
+            />
+            <i
+              aria-hidden="true"
+              class="iconify ltr-hidden"
+              data-icon="feather:chevron-left"
+            />
           </template>
 
           <RouterLink to="/sidebar/layouts/projects-projects-1" class="is-submenu">
@@ -332,7 +436,16 @@ const emit = defineEmits(['close'])
         <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="utility">
           <template #header>
             Utility
-            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+            <i
+              aria-hidden="true"
+              class="iconify rtl-hidden"
+              data-icon="feather:chevron-right"
+            />
+            <i
+              aria-hidden="true"
+              class="iconify ltr-hidden"
+              data-icon="feather:chevron-left"
+            />
           </template>
 
           <RouterLink to="/sidebar/layouts/utility-account-confirm" class="is-submenu">
@@ -361,7 +474,16 @@ const emit = defineEmits(['close'])
         <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="onboarding">
           <template #header>
             Onboarding
-            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+            <i
+              aria-hidden="true"
+              class="iconify rtl-hidden"
+              data-icon="feather:chevron-right"
+            />
+            <i
+              aria-hidden="true"
+              class="iconify ltr-hidden"
+              data-icon="feather:chevron-left"
+            />
           </template>
 
           <RouterLink to="/sidebar/layouts/onboarding-welcome" class="is-submenu">
@@ -393,7 +515,16 @@ const emit = defineEmits(['close'])
         <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="error-pages">
           <template #header>
             Error Pages
-            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+            <i
+              aria-hidden="true"
+              class="iconify rtl-hidden"
+              data-icon="feather:chevron-right"
+            />
+            <i
+              aria-hidden="true"
+              class="iconify ltr-hidden"
+              data-icon="feather:chevron-left"
+            />
           </template>
 
           <RouterLink to="/error/page-1" class="is-submenu">

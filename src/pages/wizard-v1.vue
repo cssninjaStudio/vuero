@@ -68,26 +68,26 @@ useHead({
 .wizard-progress {
   position: fixed;
   top: 60px;
-  left: 0;
+  inset-inline-start: 0;
   z-index: 19;
   width: 100%;
   height: 0.5rem;
 
   &::-webkit-progress-value {
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-start-end-radius: 50px;
+    border-end-end-radius: 50px;
     transition: width 0.5s ease;
   }
 
   &::-moz-progress-bar {
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-start-end-radius: 50px;
+    border-end-end-radius: 50px;
     transition: width 0.5s ease;
   }
 
   &::-ms-fill {
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-start-end-radius: 50px;
+    border-end-end-radius: 50px;
     transition: width 0.5s ease;
   }
 }
@@ -95,8 +95,8 @@ useHead({
 .wizard-buttons {
   position: fixed;
   bottom: 20px;
-  left: 0;
-  right: 0;
+  inset-inline-start: 0;
+  inset-inline-end: 0;
   margin: 0 auto;
   max-width: 306px;
   background: var(--white);
@@ -166,7 +166,7 @@ useHead({
       .project-preview-loader {
         position: absolute;
         top: 0;
-        left: 0;
+        inset-inline-start: 0;
         width: 100%;
         height: 100%;
         display: flex;
@@ -208,7 +208,7 @@ useHead({
           .edit-icon {
             position: absolute;
             bottom: 2px;
-            right: 0;
+            inset-inline-end: 0;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -292,7 +292,7 @@ useHead({
           .edit-icon {
             position: absolute;
             top: 10px;
-            right: 10px;
+            inset-inline-end: 10px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -398,7 +398,7 @@ useHead({
         input {
           position: absolute;
           top: 0;
-          left: 0;
+          inset-inline-start: 0;
           height: 100%;
           width: 100%;
           opacity: 0;
@@ -509,7 +509,7 @@ useHead({
             border: 1px solid var(--fade-grey-dark-3);
             border-radius: 12px;
             margin-bottom: 12px;
-            text-align: left;
+            text-align: inset-inline-start;
 
             > img {
               display: block;
@@ -520,7 +520,7 @@ useHead({
             }
 
             .meta {
-              margin-left: 12px;
+              margin-inline-start: 12px;
               line-height: 1.1;
 
               > span {
@@ -541,12 +541,12 @@ useHead({
             }
 
             .actions {
-              margin-left: auto;
+              margin-inline-start: auto;
               display: flex;
               align-items: center;
 
               .permissions {
-                margin-right: 30px;
+                margin-inline-end: 30px;
                 width: 180px;
 
                 .permission-levels {
@@ -863,7 +863,7 @@ useHead({
             }
 
             .list-item-meta {
-              margin-left: 12px;
+              margin-inline-start: 12px;
 
               p {
                 font-family: var(--font);
@@ -877,8 +877,8 @@ useHead({
             }
 
             .list-item-progress {
-              margin-left: auto;
-              margin-right: 30px;
+              margin-inline-start: auto;
+              margin-inline-end: 30px;
               min-width: 120px;
 
               .progress {
@@ -1022,7 +1022,7 @@ useHead({
         .separator {
           height: 25px;
           width: 2px;
-          border-right: 1px solid var(--fade-grey-dark-3);
+          border-inline-end: 1px solid var(--fade-grey-dark-3);
           margin: 0 12px;
         }
 
@@ -1053,7 +1053,7 @@ useHead({
               border: none;
               background: none;
               box-shadow: none;
-              padding-left: 4px;
+              padding-inline-start: 4px;
               font-family: var(--font);
             }
           }
@@ -1575,7 +1575,7 @@ useHead({
               .list-item-progress {
                 min-width: 80px;
                 max-width: 80px;
-                margin-right: 20px;
+                margin-inline-end: 20px;
               }
             }
           }
@@ -1609,7 +1609,7 @@ useHead({
                   &.is-circle {
                     position: absolute;
                     top: 10px;
-                    right: 10px;
+                    inset-inline-end: 10px;
                   }
                 }
               }

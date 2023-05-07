@@ -322,7 +322,7 @@
     }
   },
   {
-    "name": "List Datatable V1",
+    "name": "Table List V1",
     "category": "LAYOUTS",
     "displayOrder": 320,
     "new": false,
@@ -331,12 +331,12 @@
       "path": "/sidebar/layouts/list-datatable-1"
     },
     "screenshot": {
-      "light": "/images/screenshots/sidebar/list-datatable-v1-light.webp",
-      "dark": "/images/screenshots/sidebar/list-datatable-v1-dark.webp"
+      "light": "/images/screenshots/sidebar/table-list-v1-light.webp",
+      "dark": "/images/screenshots/sidebar/table-list-v1-dark.webp"
     }
   },
   {
-    "name": "List Datatable V2",
+    "name": "Table List V2",
     "category": "LAYOUTS",
     "displayOrder": 330,
     "new": false,
@@ -345,12 +345,12 @@
       "path": "/sidebar/layouts/list-datatable-2"
     },
     "screenshot": {
-      "light": "/images/screenshots/sidebar/list-datatable-v2-light.webp",
-      "dark": "/images/screenshots/sidebar/list-datatable-v2-dark.webp"
+      "light": "/images/screenshots/sidebar/table-list-v2-light.webp",
+      "dark": "/images/screenshots/sidebar/table-list-v2-dark.webp"
     }
   },
   {
-    "name": "List Datatable V3",
+    "name": "Table List V3",
     "category": "LAYOUTS",
     "displayOrder": 340,
     "new": false,
@@ -359,22 +359,8 @@
       "path": "/sidebar/layouts/list-datatable-3"
     },
     "screenshot": {
-      "light": "/images/screenshots/sidebar/list-datatable-v3-light.webp",
-      "dark": "/images/screenshots/sidebar/list-datatable-v3-dark.webp"
-    }
-  },
-  {
-    "name": "List Datatable V4",
-    "category": "LAYOUTS",
-    "displayOrder": 350,
-    "new": false,
-    "route": {
-      "name": "sidebar-layouts-list-datatable-4",
-      "path": "/sidebar/layouts/list-datatable-4"
-    },
-    "screenshot": {
-      "light": "/images/screenshots/sidebar/list-datatable-v4-light.webp",
-      "dark": "/images/screenshots/sidebar/list-datatable-v4-dark.webp"
+      "light": "/images/screenshots/sidebar/table-list-v3-light.webp",
+      "dark": "/images/screenshots/sidebar/table-list-v3-dark.webp"
     }
   },
   {

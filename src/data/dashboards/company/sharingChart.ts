@@ -3,7 +3,7 @@ import { useThemeColors } from '/@src/composable/useThemeColors'
 export function useSharingChart() {
   const themeColors = useThemeColors()
 
-  const sharingOptions = ref({
+  const sharingOptions = shallowRef({
     series: [
       {
         data: [21, 22, 10, 28, 16, 21, 13, 30, 35, 41, 36, 26],

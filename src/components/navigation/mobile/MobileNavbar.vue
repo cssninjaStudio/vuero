@@ -38,13 +38,10 @@ const props = defineProps<{
 </template>
 
 <style lang="scss">
-/* ==========================================================================
-1. Mobile Navbar
-========================================================================== */
 .mobile-navbar {
   position: fixed;
   top: 0;
-  left: 0;
+  inset-inline-start: 0;
   display: none;
   width: 100%;
   z-index: 100;
@@ -74,7 +71,7 @@ const props = defineProps<{
     }
 
     .user-dropdown {
-      margin-left: auto;
+      margin-inline-start: auto;
       width: 32px;
       height: 32px;
 
@@ -107,7 +104,7 @@ const props = defineProps<{
           .badge {
             position: absolute;
             top: unset !important;
-            right: -6px;
+            inset-inline-end: -6px;
             bottom: -2px;
             width: 18px;
             min-width: 18px;
@@ -119,7 +116,7 @@ const props = defineProps<{
         }
 
         svg {
-          margin-left: 3px;
+          margin-inline-start: 3px;
           width: 22px;
           height: 22px;
           color: var(--dark-sidebar);
@@ -128,7 +125,7 @@ const props = defineProps<{
       }
 
       .dropdown-menu {
-        right: -12px;
+        inset-inline-end: -12px;
         margin-top: 20px;
 
         .dropdown-content {
@@ -143,7 +140,7 @@ const props = defineProps<{
             background: #fafafa;
 
             .meta {
-              margin-left: 12px;
+              margin-inline-start: 12px;
               font-family: var(--font);
 
               span {
@@ -262,7 +259,7 @@ const props = defineProps<{
       width: 38px;
       transition: all 0.3s; // transition-all test
       border-radius: var(--radius-rounded);
-      margin-right: 12px;
+      margin-inline-end: 12px;
 
       .navbar-link {
         padding: 0;
@@ -281,7 +278,7 @@ const props = defineProps<{
       .new-indicator {
         position: absolute;
         top: -9px;
-        right: -9px;
+        inset-inline-end: -9px;
         display: block;
         width: 8px;
         height: 8px;
@@ -302,8 +299,8 @@ const props = defineProps<{
         position: fixed;
         padding-bottom: 15px;
         top: 68px;
-        left: 0;
-        right: 0;
+        inset-inline-start: 0;
+        inset-inline-end: 0;
         margin: 0 auto;
         width: 96%;
 
@@ -369,14 +366,14 @@ const props = defineProps<{
                   height: 3rem;
                   max-height: 3rem;
                   width: 3rem;
-                  margin: 0 0.5rem 0 0;
+                  margin-inline-end: 0.75rem;
                   border-radius: var(--radius-rounded);
                   max-width: 100%;
                 }
               }
 
               .user-content {
-                text-align: left;
+                text-align: inset-inline-start;
 
                 .user-info {
                   color: var(--dark-text);
@@ -400,7 +397,7 @@ const props = defineProps<{
   }
 
   .navbar-burger {
-    margin-left: 0 !important;
+    margin-inline-start: 0 !important;
 
     &:hover,
     &:focus {
@@ -424,11 +421,11 @@ const props = defineProps<{
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      padding-right: 10px !important;
+      padding-inline-end: 10px !important;
 
       &.is-active {
         .link-chevron {
-          transform: rotate(90deg) !important;
+          transform: rotate(calc(var(--transform-direction) * 90deg)) !important;
         }
       }
 
@@ -469,14 +466,14 @@ const props = defineProps<{
         }
 
         &.link-chevron {
-          margin-left: auto;
+          margin-inline-start: auto;
           height: 30px;
           width: 30px;
           display: flex;
           justify-content: center;
           align-items: center;
           transition: all 0.3s; // transition-all test
-          transform: rotate(0);
+          transform: rotate(calc(var(--transform-direction) * 0));
 
           svg {
             height: 18px;

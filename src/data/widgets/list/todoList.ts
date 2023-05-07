@@ -1,5 +1,5 @@
 export function useTodoList() {
-  const todoList1 = ref([
+  const todoList1 = shallowRef([
     {
       id: 0,
       completed: true,
@@ -37,7 +37,7 @@ export function useTodoList() {
     },
   ])
 
-  const todoList2 = ref([
+  const todoList2 = shallowRef([
     {
       id: 0,
       completed: true,
@@ -75,7 +75,7 @@ export function useTodoList() {
     },
   ])
 
-  const todoList3 = ref([
+  const todoList3 = shallowRef([
     {
       id: 0,
       completed: true,
@@ -113,7 +113,7 @@ export function useTodoList() {
     },
   ])
 
-  const todoList4 = ref([
+  const todoList4 = shallowRef([
     {
       id: 0,
       completed: true,

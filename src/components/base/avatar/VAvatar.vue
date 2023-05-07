@@ -102,7 +102,7 @@ const onceImageErroredHandler = (event: Event) => {
       content: '';
       position: absolute;
       top: 1px;
-      right: 1px;
+      inset-inline-end: 1px;
       height: 12px;
       width: 12px;
       border-radius: var(--radius-rounded);
@@ -113,7 +113,7 @@ const onceImageErroredHandler = (event: Event) => {
     &.has-dot-squared {
       &::after {
         top: -3px;
-        right: -3px;
+        inset-inline-end: -3px;
       }
     }
 
@@ -293,7 +293,7 @@ const onceImageErroredHandler = (event: Event) => {
           position: relative;
 
           // top: -1px;
-          left: -3px;
+          inset-inline-start: -3px;
           display: block;
           font-size: 0.9rem;
           font-weight: 500;
@@ -306,7 +306,7 @@ const onceImageErroredHandler = (event: Event) => {
   .badge {
     position: absolute;
     bottom: 0;
-    right: 0;
+    inset-inline-end: 0;
     height: 16px;
     width: 16px;
     border: 1px solid var(--white);
@@ -326,7 +326,7 @@ const onceImageErroredHandler = (event: Event) => {
       &::after {
         content: '';
         top: 0;
-        right: 0;
+        inset-inline-end: 0;
         height: 8px;
         width: 8px;
         border-width: 1.4px;
@@ -335,7 +335,7 @@ const onceImageErroredHandler = (event: Event) => {
       &.has-dot-squared {
         &::after {
           top: -2px;
-          right: -2px;
+          inset-inline-end: -2px;
         }
       }
     }
@@ -382,7 +382,7 @@ const onceImageErroredHandler = (event: Event) => {
       &::after {
         content: '';
         top: 1px;
-        right: 1px;
+        inset-inline-end: 1px;
         height: 12px;
         width: 12px;
         border-width: 2px;
@@ -391,7 +391,7 @@ const onceImageErroredHandler = (event: Event) => {
       &.has-dot-squared {
         &::after {
           top: -3px;
-          right: -3px;
+          inset-inline-end: -3px;
         }
       }
     }
@@ -438,7 +438,7 @@ const onceImageErroredHandler = (event: Event) => {
       &::after {
         content: '';
         top: 4px;
-        right: 4px;
+        inset-inline-end: 4px;
         height: 14px;
         width: 14px;
         border-width: 2.6px;
@@ -447,7 +447,7 @@ const onceImageErroredHandler = (event: Event) => {
       &.has-dot-squared {
         &::after {
           top: -4px;
-          right: -1px;
+          inset-inline-end: -1px;
         }
       }
     }
@@ -487,7 +487,7 @@ const onceImageErroredHandler = (event: Event) => {
       &::after {
         content: '';
         top: 4px;
-        right: 4px;
+        inset-inline-end: 4px;
         height: 16px;
         width: 16px;
         border-width: 2.8px;
@@ -496,7 +496,7 @@ const onceImageErroredHandler = (event: Event) => {
       &.has-dot-squared {
         &::after {
           top: -4px;
-          right: -1px;
+          inset-inline-end: -1px;
         }
       }
     }
@@ -536,7 +536,7 @@ const onceImageErroredHandler = (event: Event) => {
       &::after {
         content: '';
         top: 6px;
-        right: 5px;
+        inset-inline-end: 5px;
         height: 18px;
         width: 18px;
         border-width: 2.8px;
@@ -545,7 +545,7 @@ const onceImageErroredHandler = (event: Event) => {
       &.has-dot-squared {
         &::after {
           top: -3px;
-          right: -3px;
+          inset-inline-end: -3px;
         }
       }
     }
@@ -592,7 +592,7 @@ const onceImageErroredHandler = (event: Event) => {
 
         @for $i from 1 through 99 {
           &:nth-child(#{$i}) {
-            margin-left: -#{$var}px;
+            margin-inline-start: -#{$var}px;
           }
         }
       }
@@ -612,7 +612,7 @@ const onceImageErroredHandler = (event: Event) => {
 
         @for $i from 1 through 99 {
           &:nth-child(#{$i}) {
-            margin-left: -#{$var}px;
+            margin-inline-start: -#{$var}px;
           }
         }
       }
@@ -629,7 +629,7 @@ const onceImageErroredHandler = (event: Event) => {
 
       @for $i from 1 through 99 {
         &:nth-child(#{$i}) {
-          margin-left: -#{$var}px;
+          margin-inline-start: -#{$var}px;
         }
       }
     }

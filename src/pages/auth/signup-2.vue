@@ -2,7 +2,7 @@
 import { useI18n } from 'vue-i18n'
 
 import { useHead } from '@vueuse/head'
-import { toFormValidator } from '@vee-validate/zod'
+import { toTypedSchema } from '@vee-validate/zod'
 import { useForm } from 'vee-validate'
 import { z as zod } from 'zod'
 
@@ -18,7 +18,7 @@ const isLoading = ref(false)
 const { t } = useI18n()
 
 // Define a validation schema
-const validationSchema = toFormValidator(
+const validationSchema = toTypedSchema(
   zod
     .object({
       name: zod
@@ -86,24 +86,25 @@ useHead({
     <div class="column is-5">
       <div class="hero is-fullheight is-white">
         <div class="hero-heading">
-          <label
-            class="dark-mode ml-auto"
-            tabindex="0"
-            role="button"
-            @keydown.space.prevent="(e) => (e.target as HTMLLabelElement).click()"
-          >
-            <input
-              data-cy="dark-mode-toggle"
-              type="checkbox"
-              :checked="!darkmode.isDark"
-              @change="darkmode.onChange"
-            />
-            <span></span>
-          </label>
           <div class="auth-logo">
+            <LanguageDropdown />
             <RouterLink to="/">
               <AnimatedLogo class="top-logo" width="36px" height="36px" />
             </RouterLink>
+            <label
+              class="dark-mode"
+              tabindex="0"
+              role="button"
+              @keydown.space.prevent="(e) => (e.target as HTMLLabelElement).click()"
+            >
+              <input
+                data-cy="dark-mode-toggle"
+                type="checkbox"
+                :checked="!darkmode.isDark"
+                @change="darkmode.onChange"
+              />
+              <span></span>
+            </label>
           </div>
         </div>
         <div class="hero-body">
@@ -206,24 +207,19 @@ useHead({
     <!-- Image section (hidden on mobile) -->
     <div class="column login-column is-7 is-hidden-mobile hero-banner">
       <div class="hero login-hero is-fullheight is-app-grey">
-        <div class="hero-body">
-          <div class="columns">
-            <div class="column is-10 is-offset-1">
-              <img
-                class="light-image has-light-shadow has-light-border"
-                src="/@src/assets/illustrations/apps/vuero-banking-light.webp"
-                alt=""
-              />
-              <img
-                class="dark-image has-light-shadow"
-                src="/@src/assets/illustrations/apps/vuero-banking-dark.webp"
-                alt=""
-              />
-            </div>
+        <div class="hero-body is-justify-content-center is-fullwidth">
+          <div class="is-flex is-justify-content-center is-fullwidth">
+            <img
+              class="light-image has-light-shadow has-light-border"
+              src="/@src/assets/illustrations/apps/vuero-banking-light.webp"
+              alt=""
+            />
+            <img
+              class="dark-image has-light-shadow"
+              src="/@src/assets/illustrations/apps/vuero-banking-dark.webp"
+              alt=""
+            />
           </div>
-        </div>
-        <div class="hero-footer">
-          <p class="has-text-centered"></p>
         </div>
       </div>
     </div>

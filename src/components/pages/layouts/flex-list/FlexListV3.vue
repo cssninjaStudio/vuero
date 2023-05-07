@@ -17,7 +17,7 @@ const tab = ref(props.activeTab)
 const columns = {
   picture: {
     label: 'Course',
-    grow: 'lg',
+    grow: true,
   },
   category: 'Category',
   skill: 'Main Skill',
@@ -174,10 +174,9 @@ const filteredData = computed(() => {
                     ></i>
                   </span>
                 </VFlexTableCell>
-                <VFlexTableCell :columns="{ align: 'end' }">
+                <VFlexTableCell :columns="{ align: 'end' }" class="h-hidden-tablet-p">
                   <a class="button v-button has-dot dark-outlined is-pushed-mobile">
-                    Purchase
-                    <i aria-hidden="true" class="fas fa-circle dot"></i> ${{ item.price }}
+                    Purchase &middot; ${{ item.price }}
                   </a>
                 </VFlexTableCell>
               </div>
@@ -230,8 +229,18 @@ const filteredData = computed(() => {
   .flex-list-wrapper,
   .list-flex-toolbar {
     max-width: 880px;
-    margin-right: auto;
-    margin-left: auto;
+    margin-inline-end: auto;
+    margin-inline-start: auto;
+  }
+}
+
+.flex-table-item .media {
+  width: 130px;
+}
+
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
+  .flex-table .flex-table-header > span:last-child {
+    display: none !important;
   }
 }
 </style>

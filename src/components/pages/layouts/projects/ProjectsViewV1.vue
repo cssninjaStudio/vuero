@@ -104,10 +104,10 @@ const SortColumnComponent = defineComponent({
                 class: 'iconify is-inline',
                 'data-icon':
                   currentRoute.query.sort === `${props.id}:asc`
-                    ? 'fa:sort-asc'
+                    ? 'fa6-solid:sort-up'
                     : currentRoute.query.sort === `${props.id}:desc`
-                    ? 'fa:sort-desc'
-                    : 'fa:sort',
+                    ? 'fa6-solid:sort-down'
+                    : 'fa6-solid:sort',
               })
             )
 
@@ -400,7 +400,7 @@ const exampleColumns = {
 
       .header-item {
         width: 100%;
-        border-right: none;
+        border-inline-end: none;
         border-bottom: 1px solid var(--fade-grey-dark-3);
         padding: 16px 0;
 

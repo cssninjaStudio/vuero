@@ -401,7 +401,7 @@ const layouts = [
     displayOrder: 650,
   },
   {
-    name: 'List Datatable V1',
+    name: 'Table List V1',
     category: 'LAYOUTS',
     path: '/list-datatable-1',
     pageDelay: 0,
@@ -409,7 +409,7 @@ const layouts = [
     displayOrder: 320,
   },
   {
-    name: 'List Datatable V2',
+    name: 'Table List V2',
     category: 'LAYOUTS',
     path: '/list-datatable-2',
     pageDelay: 0,
@@ -417,20 +417,12 @@ const layouts = [
     displayOrder: 330,
   },
   {
-    name: 'List Datatable V3',
+    name: 'Table List V3',
     category: 'LAYOUTS',
     path: '/list-datatable-3',
     pageDelay: 0,
     checkVisibleSelector: '.page-content-inner',
     displayOrder: 340,
-  },
-  {
-    name: 'List Datatable V4',
-    category: 'LAYOUTS',
-    path: '/list-datatable-4',
-    pageDelay: 0,
-    checkVisibleSelector: '.page-content-inner',
-    displayOrder: 350,
   },
   {
     name: 'List Flex V1',

@@ -68,7 +68,7 @@ const props = withDefaults(
           content: '';
           position: absolute;
           top: 3px;
-          right: 4px;
+          inset-inline-end: 4px;
           height: 10px;
           width: 10px;
           border-radius: var(--radius-rounded);

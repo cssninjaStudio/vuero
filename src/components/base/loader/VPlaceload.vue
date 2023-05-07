@@ -84,8 +84,8 @@ if (mobileHeightValue.match(CssUnitRe) === null) {
   }
 
   &.is-centered {
-    margin-left: auto;
-    margin-right: auto;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
   }
 }
 

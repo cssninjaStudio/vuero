@@ -36,7 +36,7 @@ export function useExpensesAreaChart() {
         opacity: 0.06,
       },
     },
-    colors: [themeColors.green, themeColors.accent, themeColors.orange],
+    colors: [themeColors.primary, themeColors.accent, themeColors.orange],
     stroke: {
       curve: 'smooth',
       width: 3,

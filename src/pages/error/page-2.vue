@@ -64,7 +64,7 @@ useHead({
   .error-nav {
     .dark-mode {
       position: absolute;
-      right: 0;
+      inset-inline-end: 0;
       top: 0;
       display: inline-block;
       transform: scale(0.5);
@@ -85,8 +85,8 @@ useHead({
         font-family: var(--font);
         position: absolute;
         top: -58px;
-        left: -50px;
-        right: 0;
+        inset-inline-start: -50px;
+        inset-inline-end: 0;
         margin: 0 auto;
         font-size: 28rem;
         font-weight: 600;
@@ -156,8 +156,8 @@ useHead({
 
         .bg-number {
           top: -35px;
-          left: -18px;
-          right: 0;
+          inset-inline-start: -18px;
+          inset-inline-end: 0;
           font-size: 13rem;
         }
 

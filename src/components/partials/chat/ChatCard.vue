@@ -20,15 +20,11 @@
 </template>
 
 <style lang="scss">
-/* ==========================================================================
-2. Chat Wrapper
-========================================================================== */
-
 .is-chat {
   position: absolute;
   height: 100%;
   top: 0;
-  left: 0;
+  inset-inline-start: 0;
   width: 100%;
   border-radius: 16px 6px 6px 16px;
 }
@@ -57,17 +53,20 @@
   .is-chat {
     position: absolute;
     top: 0 !important;
-    left: 0;
+    inset-inline-start: 0;
     max-height: calc(100% - 60px) !important;
+    overflow: hidden;
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .is-chat {
     position: absolute;
     top: 0 !important;
-    left: 0;
+    inset-inline-start: 0;
+    height: 100%;
     max-height: calc(100% - 60px) !important;
+    overflow: hidden;
   }
 }
 </style>

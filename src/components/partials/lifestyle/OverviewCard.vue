@@ -68,7 +68,7 @@ const props = defineProps<{
         color: var(--green);
 
         svg {
-          transform: rotate(-45deg);
+          transform: rotate(calc(var(--transform-direction) * -45deg));
         }
       }
     }
@@ -78,7 +78,7 @@ const props = defineProps<{
         color: var(--red);
 
         svg {
-          transform: rotate(45deg);
+          transform: rotate(calc(var(--transform-direction) * 45deg));
         }
       }
     }
@@ -88,7 +88,7 @@ const props = defineProps<{
       color: var(--light-text);
 
       span {
-        margin-right: 8px;
+        margin-inline-end: 8px;
         font-weight: 500;
 
         svg {
@@ -131,7 +131,7 @@ const props = defineProps<{
           color: var(--green);
 
           svg {
-            transform: rotate(-45deg);
+            transform: rotate(calc(var(--transform-direction) * -45deg));
           }
         }
       }
@@ -141,7 +141,7 @@ const props = defineProps<{
           color: var(--red);
 
           svg {
-            transform: rotate(45deg);
+            transform: rotate(calc(var(--transform-direction) * 45deg));
           }
         }
       }
@@ -151,7 +151,7 @@ const props = defineProps<{
         color: var(--light-text);
 
         span {
-          margin-right: 8px;
+          margin-inline-end: 8px;
           font-weight: 500;
 
           svg {
@@ -172,6 +172,14 @@ const props = defineProps<{
     .card-metric,
     .metric .metric {
       color: var(--dark-dark-text);
+    }
+  }
+}
+
+[dir='rtl'] {
+  .overview-card {
+    .card-head {
+      flex-direction: row-reverse;
     }
   }
 }

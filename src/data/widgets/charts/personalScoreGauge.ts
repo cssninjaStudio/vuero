@@ -5,7 +5,7 @@ import { gauge } from 'billboard.js'
 export function usePersonalScoreGauge() {
   const themeColors = useThemeColors()
 
-  const personalScoreGaugeOptions = ref({
+  const personalScoreGaugeOptions = shallowRef({
     data: {
       columns: [['data', 91.4]],
       type: gauge(),
@@ -27,7 +27,7 @@ export function usePersonalScoreGauge() {
         themeColors.accent,
         themeColors.info,
         themeColors.orange,
-        themeColors.green,
+        themeColors.primary,
       ],
       threshold: {
         values: [30, 60, 90, 100],

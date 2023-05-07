@@ -195,16 +195,18 @@ $steps-thin-marker-size: 0.8em !default;
     .steps-segment:not(:last-child)::after {
       // top and bottom position is almost touching the inner side of a hollow border marker
       bottom: -$steps-gap-size * 0.8;
-      left: calc(#{$size * ($steps-marker-size * 0.5)} - (#{$steps-divider-size * 0.5}));
+      inset-inline-start: calc(
+        #{$size * ($steps-marker-size * 0.5)} - (#{$steps-divider-size * 0.5})
+      );
       top: ($size * $steps-marker-size) - ($steps-gap-size * 0.8);
       width: $steps-divider-size;
     }
 
     // Align the content with the marker
     .steps-content {
-      margin-left: calc(#{$size * $steps-marker-size * 0.5} + 0.5em);
+      margin-inline-start: calc(#{$size * $steps-marker-size * 0.5} + 0.5em);
       margin-top: -$size * $steps-marker-size;
-      padding-left: 1em;
+      padding-inline-start: 1em;
       padding-bottom: 1em;
     }
 
@@ -235,8 +237,8 @@ $steps-thin-marker-size: 0.8em !default;
       height: $steps-divider-size;
 
       // top and bottom position is almost touching the inner side of a hollow border marker
-      left: ($size * $steps-marker-size) - ($steps-gap-size * 0.8);
-      right: -$steps-gap-size * 0.8;
+      inset-inline-start: ($size * $steps-marker-size) - ($steps-gap-size * 0.8);
+      inset-inline-end: -$steps-gap-size * 0.8;
       top: calc(#{$size * ($steps-marker-size * 0.5)} - (#{$steps-divider-size * 0.5}));
     }
 
@@ -247,14 +249,18 @@ $steps-thin-marker-size: 0.8em !default;
 
     // extra data
     .extra-data {
-      left: calc(50% + #{($size * $steps-marker-size * 0.5) + $steps-gap-size});
-      right: calc(-50% + #{($size * $steps-marker-size * 0.5) + $steps-gap-size});
+      inset-inline-start: calc(
+        50% + #{($size * $steps-marker-size * 0.5) + $steps-gap-size}
+      );
+      inset-inline-end: calc(
+        -50% + #{($size * $steps-marker-size * 0.5) + $steps-gap-size}
+      );
       bottom: 100%;
       position: absolute;
 
       &.has-overflow-right {
         overflow: visible;
-        right: auto;
+        inset-inline-end: auto;
         white-space: nowrap;
         min-width: calc(
           100% - #{$size * $steps-marker-size * 0.5} - (#{$steps-divider-size * 0.5})
@@ -263,7 +269,7 @@ $steps-thin-marker-size: 0.8em !default;
 
       &.has-overflow-left {
         overflow: visible;
-        left: auto;
+        inset-inline-start: auto;
         white-space: nowrap;
         min-width: calc(
           100% - #{$size * $steps-marker-size * 0.5} - (#{$steps-divider-size * 0.5})
@@ -272,7 +278,7 @@ $steps-thin-marker-size: 0.8em !default;
 
       &.has-overflow-centered {
         overflow: visible;
-        left: auto;
+        inset-inline-start: auto;
         white-space: nowrap;
         min-width: calc(
           100% - #{$size * $steps-marker-size * 0.5} - (#{$steps-divider-size * 0.5})
@@ -287,34 +293,34 @@ $steps-thin-marker-size: 0.8em !default;
 
     // Align the content with the marker
     .steps-content {
-      margin-left: $size * $steps-marker-size * 0.5;
+      margin-inline-start: $size * $steps-marker-size * 0.5;
 
       &:not(:last-child) {
-        margin-right: -$size * $steps-marker-size * 0.5;
+        margin-inline-end: -$size * $steps-marker-size * 0.5;
       }
 
       &.is-divider-content {
-        margin-right: -$size * $steps-marker-size * 0.5;
-        padding-left: 2em;
-        padding-right: 2em;
+        margin-inline-end: -$size * $steps-marker-size * 0.5;
+        padding-inline-start: 2em;
+        padding-inline-end: 2em;
       }
     }
 
     &.has-content-centered {
       .steps-segment:not(:last-child)::after {
-        left: 50%;
-        right: -50%;
+        inset-inline-start: 50%;
+        inset-inline-end: -50%;
       }
 
       .steps-marker {
         position: absolute;
-        left: calc(50% - #{$size * $steps-marker-size * 0.5});
+        inset-inline-start: calc(50% - #{$size * $steps-marker-size * 0.5});
       }
 
       .steps-content {
         margin-top: $size * $steps-marker-size;
-        margin-left: 0.5em;
-        margin-right: 0.5em;
+        margin-inline-start: 0.5em;
+        margin-inline-end: 0.5em;
         padding-top: 0.2em;
       }
     }
@@ -328,8 +334,8 @@ $steps-thin-marker-size: 0.8em !default;
       &.has-gaps .steps-segment,
       .steps-segment.has-gaps {
         &:not(:last-child)::after {
-          left: ($size * $steps-marker-size) + $steps-gap-size;
-          right: $steps-gap-size;
+          inset-inline-start: ($size * $steps-marker-size) + $steps-gap-size;
+          inset-inline-end: $steps-gap-size;
         }
       }
 
@@ -337,8 +343,12 @@ $steps-thin-marker-size: 0.8em !default;
         &.has-gaps .steps-segment,
         .steps-segment.has-gaps {
           &:not(:last-child)::after {
-            left: calc(50% + #{($size * $steps-marker-size * 0.5) + $steps-gap-size});
-            right: calc(-50% + #{($size * $steps-marker-size * 0.5) + $steps-gap-size});
+            inset-inline-start: calc(
+              50% + #{($size * $steps-marker-size * 0.5) + $steps-gap-size}
+            );
+            inset-inline-end: calc(
+              -50% + #{($size * $steps-marker-size * 0.5) + $steps-gap-size}
+            );
           }
         }
       }
@@ -509,7 +519,9 @@ $steps-thin-marker-size: 0.8em !default;
     .steps-segment {
       &:not(:last-child)::after {
         bottom: 0;
-        left: calc(#{$steps-thin-marker-size * 0.5} - #{$steps-thin-divider-size * 0.5});
+        inset-inline-start: calc(
+          #{$steps-thin-marker-size * 0.5} - #{$steps-thin-divider-size * 0.5}
+        );
         top: $steps-thin-marker-size;
         width: $steps-thin-divider-size;
       }
@@ -517,7 +529,7 @@ $steps-thin-marker-size: 0.8em !default;
 
     .steps-content {
       margin-top: -$steps-thin-marker-size * 1.5;
-      margin-left: $steps-thin-marker-size;
+      margin-inline-start: $steps-thin-marker-size;
     }
 
     &.has-gaps .steps-segment,
@@ -537,8 +549,8 @@ $steps-thin-marker-size: 0.8em !default;
   @include steps-horizontal {
     .steps-segment {
       &:not(:last-child)::after {
-        left: $steps-thin-marker-size;
-        right: 0;
+        inset-inline-start: $steps-thin-marker-size;
+        inset-inline-end: 0;
         top: calc(#{$steps-thin-marker-size * 0.5} - #{$steps-thin-divider-size * 0.5});
         height: $steps-thin-divider-size;
       }
@@ -556,32 +568,32 @@ $steps-thin-marker-size: 0.8em !default;
     &.has-content-centered {
       .steps-segment {
         &:not(:last-child)::after {
-          left: calc(50% + #{$steps-thin-marker-size * 0.5});
-          right: calc(-50% + #{$steps-thin-marker-size * 0.5});
+          inset-inline-start: calc(50% + #{$steps-thin-marker-size * 0.5});
+          inset-inline-end: calc(-50% + #{$steps-thin-marker-size * 0.5});
         }
       }
 
       .steps-marker {
         position: absolute;
-        left: calc(50% - #{$steps-thin-marker-size * 0.5});
+        inset-inline-start: calc(50% - #{$steps-thin-marker-size * 0.5});
       }
     }
 
     &.has-gaps .steps-segment,
     .steps-segment.has-gaps {
       &:not(:last-child)::after {
-        left: $steps-thin-marker-size * 1.5;
-        right: $steps-thin-marker-size * 0.5;
+        inset-inline-start: $steps-thin-marker-size * 1.5;
+        inset-inline-end: $steps-thin-marker-size * 0.5;
       }
     }
 
     &.has-content-centered.has-gaps .steps-segment,
     &.has-content-centered .steps-segment.has-gaps {
       &:not(:last-child)::after {
-        left: calc(
+        inset-inline-start: calc(
           50% + #{($steps-thin-marker-size * 0.5) + ($steps-thin-marker-size * 0.5)}
         );
-        right: calc(
+        inset-inline-end: calc(
           -50% + #{($steps-thin-marker-size * 0.5) + ($steps-thin-marker-size * 0.5)}
         );
       }

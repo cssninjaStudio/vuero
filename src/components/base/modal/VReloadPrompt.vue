@@ -62,7 +62,7 @@ const update = async () => {
 <style lang="scss">
 .pwa-toast {
   position: fixed;
-  right: 0;
+  inset-inline-end: 0;
   bottom: 0;
   max-width: 350px;
   margin: 16px;
@@ -70,7 +70,7 @@ const update = async () => {
   border: 1px solid #8885;
   border-radius: 4px;
   z-index: 10;
-  text-align: left;
+  text-align: inset-inline-start;
   box-shadow: 3px 4px 5px 0 #8885;
 }
 

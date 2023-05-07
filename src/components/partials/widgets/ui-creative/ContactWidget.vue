@@ -123,7 +123,7 @@ const props = withDefaults(
           svg {
             height: 14px;
             width: 14px;
-            margin-right: 4px;
+            margin-inline-end: 4px;
             stroke-width: 1.4px;
             color: var(--light-text);
           }

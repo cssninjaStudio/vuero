@@ -468,7 +468,7 @@ const onSubmit = () => {
             .control {
               .checkbox {
                 padding: 0;
-                padding-right: 10px;
+                padding-inline-end: 10px;
                 font-size: 0.9rem;
               }
             }
@@ -479,7 +479,7 @@ const onSubmit = () => {
             padding-bottom: 10px;
 
             .v-avatar {
-              margin-right: 8px;
+              margin-inline-end: 8px;
             }
 
             .add-participant {
@@ -494,7 +494,7 @@ const onSubmit = () => {
               color: var(--light-text);
               padding: 0;
               background: none;
-              margin-left: 4px;
+              margin-inline-start: 4px;
               cursor: pointer;
               transition: color 0.3s, background-color 0.3s, border-color 0.3s,
                 height 0.3s, width 0.3s;
@@ -529,7 +529,7 @@ const onSubmit = () => {
               width: 14px;
               border-radius: var(--radius-rounded);
               background: var(--white);
-              margin-right: 10px;
+              margin-inline-end: 10px;
               border: 3px solid var(--light-text);
               cursor: pointer;
               opacity: 0.6;
@@ -676,11 +676,11 @@ const onSubmit = () => {
           padding-bottom: 0 !important;
 
           &:first-child {
-            padding-left: 0 !important;
+            padding-inline-start: 0 !important;
           }
 
           &:last-child {
-            padding-right: 0 !important;
+            padding-inline-end: 0 !important;
           }
         }
       }

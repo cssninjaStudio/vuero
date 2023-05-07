@@ -96,7 +96,7 @@ const localFlagSrc = computed(() => {
 .circular-menu {
   position: fixed;
   top: 0.6em;
-  right: 1em;
+  inset-inline-end: 1em;
   z-index: 70;
   transform: translateY(-80px);
   pointer-events: none;
@@ -131,19 +131,19 @@ const localFlagSrc = computed(() => {
       transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
       &:nth-child(1) {
-        transform: translate3d(-7em, -0.5em, 0);
+        transform: translate3d(calc(var(--transform-direction) * -7em), -0.5em, 0);
       }
 
       &:nth-child(2) {
-        transform: translate3d(-6.25em, 3.25em, 0);
+        transform: translate3d(calc(var(--transform-direction) * -6.25em), 3.25em, 0);
       }
 
       &:nth-child(3) {
-        transform: translate3d(-3.45em, 6.25em, 0);
+        transform: translate3d(calc(var(--transform-direction) * -3.45em), 6.25em, 0);
       }
 
       &:nth-child(4) {
-        transform: translate3d(0.5em, 7em, 0);
+        transform: translate3d(calc(var(--transform-direction) * 0.5em), 7em, 0);
       }
     }
   }
@@ -156,7 +156,7 @@ const localFlagSrc = computed(() => {
     border-radius: var(--radius-rounded);
     position: absolute;
     top: 0;
-    right: 0;
+    inset-inline-end: 0;
     z-index: -2;
     background-color: var(--primary-dark-5);
     box-shadow: var(--primary-box-shadow);
@@ -197,7 +197,7 @@ const localFlagSrc = computed(() => {
   .menu-item {
     position: absolute;
     top: 0.2em;
-    right: 0.2em;
+    inset-inline-end: 0.2em;
     z-index: -1;
     display: block;
     text-decoration: none;

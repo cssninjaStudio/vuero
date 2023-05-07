@@ -45,7 +45,7 @@
     .indicator {
       position: absolute;
       top: 0;
-      right: 36px;
+      inset-inline-end: 36px;
       background: var(--primary);
       border: 4px solid var(--white);
       display: flex;

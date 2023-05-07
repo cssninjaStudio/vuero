@@ -192,8 +192,8 @@ const optionsSingle = [
 
 .user-grid-v2 {
   .columns {
-    margin-left: -0.5rem !important;
-    margin-right: -0.5rem !important;
+    margin-inline-start: -0.5rem !important;
+    margin-inline-end: -0.5rem !important;
     margin-top: -0.5rem !important;
   }
 
@@ -340,8 +340,8 @@ const optionsSingle = [
     }
 
     .grid-item {
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
+      border-start-start-radius: 0;
+      border-start-end-radius: 0;
       border: none;
     }
   }

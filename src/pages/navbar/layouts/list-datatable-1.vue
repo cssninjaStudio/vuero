@@ -4,15 +4,15 @@ import { useHead } from '@vueuse/head'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 
 const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('List Datatable 1')
+viewWrapper.setPageTitle('Table List 1')
 
 useHead({
-  title: 'List Datatable 1 - Navbar - Vuero',
+  title: 'Table List 1 - Navbar - Vuero',
 })
 </script>
 
 <template>
   <div class="page-content-inner">
-    <DatatableV1 />
+    <TableListV1 />
   </div>
 </template>

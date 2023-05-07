@@ -64,26 +64,28 @@ useHead({
         </div>
       </div>
       <div class="column is-4 is-relative">
-        <RouterLink to="/" class="top-logo">
-          <AnimatedLogo width="38px" height="38px" />
-        </RouterLink>
+        <div class="top-tools">
+          <RouterLink to="/" class="top-logo">
+            <AnimatedLogo width="38px" height="38px" />
+          </RouterLink>
 
-        <label
-          class="dark-mode ml-auto"
-          tabindex="0"
-          role="button"
-          @keydown.space.prevent="(e) => (e.target as HTMLLabelElement).click()"
-        >
-          <input
-            data-cy="dark-mode-toggle"
-            type="checkbox"
-            :checked="!darkmode.isDark"
-            @change="darkmode.onChange"
-          />
-          <span></span>
-        </label>
+          <label
+            class="dark-mode"
+            tabindex="0"
+            role="button"
+            @keydown.space.prevent="(e) => (e.target as HTMLLabelElement).click()"
+          >
+            <input
+              data-cy="dark-mode-toggle"
+              type="checkbox"
+              :checked="!darkmode.isDark"
+              @change="darkmode.onChange"
+            />
+            <span></span>
+          </label>
+        </div>
         <div class="is-form">
-          <div class="hero-body">
+          <div class="is-form-inner">
             <div class="form-text" :class="[step !== 'login' && 'is-hidden']">
               <h2>Sign In</h2>
               <p>Welcome back to your account.</p>
@@ -244,7 +246,7 @@ useHead({
       .hero-overlay {
         position: absolute;
         top: 0;
-        left: 0;
+        inset-inline-start: 0;
         width: 100%;
         height: 100%;
         background: #5d4298 !important;
@@ -257,48 +259,50 @@ useHead({
     display: block;
     position: absolute;
     top: 0;
-    left: 0;
+    inset-inline-start: 0;
     width: 66.6%;
     height: 100%;
     background: #fdfdfd;
     z-index: 0;
   }
 
-  .dark-mode {
-    position: absolute;
-    top: -25px;
-    right: 38px;
-    transform: scale(0.6);
-    z-index: 2;
-  }
-
-  .top-logo {
-    position: absolute;
-    top: -30px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
+  .top-tools {
     display: flex;
-    justify-content: center;
     align-items: center;
-    z-index: 1;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    margin-bottom: 5rem;
 
-    img {
-      display: block;
-      width: 100%;
-      max-width: 50px;
-      margin: 0 auto;
+    .dark-mode {
+      transform: scale(0.6);
+      z-index: 2;
     }
 
-    svg {
-      height: 50px;
-      width: 50px;
+    .top-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+
+      img {
+        display: block;
+        width: 100%;
+        max-width: 50px;
+        margin: 0 auto;
+      }
+
+      svg {
+        height: 50px;
+        width: 50px;
+      }
     }
   }
 
   .is-image {
     position: relative;
-    border-right: 1px solid var(--fade-grey);
+    border-inline-end: 1px solid var(--fade-grey);
 
     .hero-image {
       position: relative;
@@ -312,7 +316,7 @@ useHead({
 
   .is-form {
     position: relative;
-    max-width: 420px;
+    max-width: 400px;
     margin: 0 auto;
 
     form {
@@ -353,7 +357,7 @@ useHead({
           padding-top: 14px;
           height: 60px;
           border-radius: 10px;
-          padding-left: 55px;
+          padding-inline-start: 55px;
           transition: all 0.3s; // transition-all test
 
           &:focus {
@@ -377,7 +381,7 @@ useHead({
         .auth-label {
           position: absolute;
           top: 6px;
-          left: 55px;
+          inset-inline-start: 55px;
           font-size: 0.8rem;
           color: var(--dark-text);
           font-weight: 500;
@@ -389,7 +393,7 @@ useHead({
         :deep(.autv-icon) {
           position: absolute;
           top: 0;
-          left: 0;
+          inset-inline-start: 0;
           height: 60px;
           width: 60px;
           display: flex;
@@ -404,7 +408,7 @@ useHead({
           .validation-icon {
             position: absolute;
             top: 0;
-            right: 0;
+            inset-inline-end: 0;
             height: 60px;
             width: 60px;
             display: none;
@@ -479,7 +483,7 @@ useHead({
 
           a {
             display: block;
-            margin-left: auto;
+            margin-inline-start: auto;
             color: var(--muted-grey);
             font-weight: 500;
             font-size: 0.9rem;
@@ -507,7 +511,7 @@ useHead({
           align-items: center;
 
           > span {
-            margin-left: 12px;
+            margin-inline-start: 12px;
             font-family: var(--font);
 
             a {
@@ -521,7 +525,7 @@ useHead({
         .button {
           height: 46px;
           width: 140px;
-          margin-left: 6px;
+          margin-inline-start: 6px;
 
           &:first-child {
             &:hover {
@@ -553,7 +557,7 @@ useHead({
 
       .active,
       .inactive {
-        transform: translateX(100%) rotate(360deg);
+        transform: translateX(calc(var(--transform-direction) * 100%)) rotate(360deg);
       }
 
       .active {
@@ -579,7 +583,7 @@ useHead({
     .inactive {
       position: absolute;
       top: 2px;
-      left: 2px;
+      inset-inline-start: 2px;
       height: 26px;
       width: 26px;
       border-radius: var(--radius-rounded);
@@ -587,7 +591,8 @@ useHead({
       display: flex;
       justify-content: center;
       align-items: center;
-      transform: translateX(0) rotate(0);
+      transform: translateX(calc(var(--transform-direction) * 0))
+        rotate(calc(var(--transform-direction) * 0));
       transition: all 0.3s ease;
 
       svg {
@@ -622,7 +627,7 @@ useHead({
 
     .dark-mode {
       top: 36px;
-      right: 44px;
+      inset-inline-end: 44px;
     }
 
     .is-form {
@@ -642,7 +647,7 @@ useHead({
 
     .dark-mode {
       top: -58px;
-      right: 30%;
+      inset-inline-end: 30%;
     }
 
     .columns {

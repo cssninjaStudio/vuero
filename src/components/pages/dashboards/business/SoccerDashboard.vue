@@ -152,7 +152,7 @@
                 <thead>
                   <tr>
                     <th>Time</th>
-                    <th>Match</th>
+                    <th class="has-text-centered">Match</th>
                     <th>Stadium</th>
                     <th>Details</th>
                   </tr>
@@ -461,7 +461,7 @@
                 display: inline-block;
                 font-family: var(--font);
                 font-size: 0.85rem;
-                margin-left: 0.25rem;
+                margin-inline-start: 0.25rem;
               }
             }
           }
@@ -550,7 +550,7 @@
           }
 
           .meta {
-            margin-left: 0.5rem;
+            margin-inline-start: 0.5rem;
             line-height: 1.2;
 
             .league-name {
@@ -570,7 +570,7 @@
           }
 
           .end {
-            margin-left: auto;
+            margin-inline-start: auto;
             font-family: var(--font);
             font-size: 0.9rem;
             color: var(--light-text);
@@ -611,7 +611,7 @@
         overflow: hidden;
         height: calc(110%);
         top: -10%;
-        right: 2rem;
+        inset-inline-end: 2rem;
 
         img {
           width: 100%;
@@ -639,7 +639,7 @@
           .nav-item {
             .nav-link {
               font-family: var(--font);
-              margin-right: 1rem;
+              margin-inline-end: 1rem;
               border-bottom: 3px solid transparent;
               padding-bottom: 1rem;
               color: var(--light-text);
@@ -664,17 +664,18 @@
             font-family: var(--font);
             font-size: 0.8rem;
             text-transform: uppercase;
+            text-align: inset-inline-start;
           }
 
           tr {
             th:first-child,
             td:first-child {
-              padding-left: 2rem;
+              padding-inline-start: 2rem;
             }
 
             th:last-child,
             td:last-child {
-              padding-right: 2rem;
+              padding-inline-end: 2rem;
             }
 
             td {
@@ -692,7 +693,7 @@
                 .match-time {
                   font-family: var(--font);
                   color: var(--light-text);
-                  margin-right: 0.75rem;
+                  margin-inline-end: 0.75rem;
                 }
 
                 .tag {
@@ -800,7 +801,7 @@
       .nav-item {
         &:first-child {
           .nav-link {
-            padding-left: 0;
+            padding-inline-start: 0;
           }
         }
 
@@ -896,7 +897,7 @@
         }
 
         .dashboard-cta-img {
-          right: -0.25rem;
+          inset-inline-end: -0.25rem;
           width: 36%;
         }
       }
@@ -913,7 +914,7 @@
         }
 
         .dashboard-cta-img {
-          right: 1rem;
+          inset-inline-end: 1rem;
           width: 36%;
         }
       }

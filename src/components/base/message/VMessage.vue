@@ -40,7 +40,7 @@ const props = withDefaults(defineProps<VMessageProps>(), {
   position: relative;
   border: 1px solid var(--fade-grey-dark-3);
   box-shadow: var(--light-box-shadow);
-  padding-right: 20px;
+  padding-inline-end: 20px;
 
   &.is-primary {
     border-color: var(--primary-light-24);
@@ -101,7 +101,7 @@ const props = withDefaults(defineProps<VMessageProps>(), {
     position: absolute;
     background-color: transparent;
     top: 6px;
-    right: 6px;
+    inset-inline-end: 6px;
 
     &::before {
       height: 1px;

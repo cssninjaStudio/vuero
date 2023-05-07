@@ -106,7 +106,7 @@ const filteredData = computed(() => {
             <TransitionGroup name="list" tag="div" class="flex-list-inner">
               <!--Table item-->
               <div v-for="item in filteredData" :key="item.id" class="flex-table-item">
-                <VFlexTableCell :column="{ media: true, grow: true }">
+                <VFlexTableCell :column="{ media: true, grow: true }" data-th="Label">
                   <VAvatar
                     :picture="item.picture"
                     :badge="item.badge"
@@ -174,8 +174,8 @@ const filteredData = computed(() => {
   .flex-list-wrapper,
   .list-flex-toolbar {
     max-width: 880px;
-    margin-right: auto;
-    margin-left: auto;
+    margin-inline-end: auto;
+    margin-inline-start: auto;
   }
 }
 </style>

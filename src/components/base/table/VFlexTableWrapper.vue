@@ -388,10 +388,6 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
-/* ==========================================================================
-5. Flex Table advanced wrapper
-========================================================================== */
-
 .flex-table-wrapper {
   background: var(--white);
   border: 1px solid var(--fade-grey-dark-3);
@@ -402,8 +398,8 @@ export default defineComponent({
     .flex-table-item {
       margin-bottom: 0;
       border-radius: 0;
-      border-left: none;
-      border-right: none;
+      border-inline-start: none;
+      border-inline-end: none;
       border-top: none;
 
       &:last-child {
@@ -447,8 +443,8 @@ export default defineComponent({
       }
 
       .flex-table-item {
-        padding-left: 0;
-        padding-right: 0;
+        padding-inline-start: 0;
+        padding-inline-end: 0;
 
         .is-checkbox {
           display: none;

@@ -18,14 +18,14 @@
 
     i {
       font-size: 1.2rem;
-      margin-right: 6px;
+      margin-inline-end: 6px;
     }
   }
 
   .separator {
     height: 25px;
     width: 2px;
-    border-right: 1px solid var(--fade-grey-dark-6);
+    border-inline-end: 1px solid var(--fade-grey-dark-6);
     margin: 0 10px;
   }
 

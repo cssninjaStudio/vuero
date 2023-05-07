@@ -369,51 +369,51 @@ watchEffect((cleanup) => {
 
   .toolbar-dropdown-action.button {
     &:first-of-type {
-      border-top-left-radius: 3px;
-      border-top-right-radius: 0;
-      border-bottom-left-radius: 3px;
-      border-bottom-right-radius: 0;
+      border-start-start-radius: 3px;
+      border-start-end-radius: 0;
+      border-end-start-radius: 3px;
+      border-end-end-radius: 0;
     }
 
     &:last-of-type {
-      border-top-left-radius: 0;
-      border-top-right-radius: 3px;
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 3px;
+      border-start-start-radius: 0;
+      border-start-end-radius: 3px;
+      border-end-start-radius: 0;
+      border-end-end-radius: 3px;
     }
   }
 
   .toolbar-item {
     &:first-of-type {
       .toolbar-action {
-        border-top-left-radius: 3px;
-        border-bottom-left-radius: 3px;
+        border-start-start-radius: 3px;
+        border-end-start-radius: 3px;
       }
 
       .toolbar-dropdown-trigger {
-        border-top-left-radius: 3px;
-        border-bottom-left-radius: 3px;
+        border-start-start-radius: 3px;
+        border-end-start-radius: 3px;
       }
     }
 
     &:last-of-type {
       .toolbar-action {
-        border-top-right-radius: 3px;
-        border-bottom-right-radius: 3px;
+        border-start-end-radius: 3px;
+        border-end-end-radius: 3px;
       }
 
       .toolbar-dropdown-trigger {
-        border-top-right-radius: 3px;
-        border-bottom-right-radius: 3px;
+        border-start-end-radius: 3px;
+        border-end-end-radius: 3px;
       }
     }
 
     // &:not(:last-of-type) {
-    //   margin-left: -1px;
+    //   margin-inline-start: -1px;
     // }
 
     ~ .toolbar-item {
-      margin-left: -1px;
+      margin-inline-start: -1px;
     }
   }
 
@@ -429,17 +429,17 @@ watchEffect((cleanup) => {
 
       .toolbar-dropdown-action.button {
         &:first-of-type {
-          border-top-left-radius: 3px;
-          border-top-right-radius: 3px;
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
+          border-start-start-radius: 3px;
+          border-start-end-radius: 3px;
+          border-end-start-radius: 0;
+          border-end-end-radius: 0;
         }
 
         &:last-of-type {
-          border-top-left-radius: 0;
-          border-top-right-radius: 0;
-          border-bottom-left-radius: 3px;
-          border-bottom-right-radius: 3px;
+          border-start-start-radius: 0;
+          border-start-end-radius: 0;
+          border-end-start-radius: 3px;
+          border-end-end-radius: 3px;
         }
       }
 
@@ -448,7 +448,7 @@ watchEffect((cleanup) => {
 
         .toolbar-dropdown-action {
           margin-bottom: -1px;
-          margin-right: 0;
+          margin-inline-end: 0;
         }
       }
     }

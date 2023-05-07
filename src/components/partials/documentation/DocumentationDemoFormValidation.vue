@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { toFormValidator } from '@vee-validate/zod'
+import { toTypedSchema } from '@vee-validate/zod'
 import { useForm } from 'vee-validate'
 import { z as zod } from 'zod'
 import VueScrollTo from 'vue-scrollto'
@@ -11,7 +11,7 @@ const notyf = useNotyf()
 const { scrollTo } = VueScrollTo
 
 // we need to declare the schema for the form
-const validationSchema = toFormValidator(
+const validationSchema = toTypedSchema(
   zod
     .object({
       email: zod
@@ -213,7 +213,7 @@ const handleSignup = handleSubmit(async (values) => {
     &::before {
       position: absolute;
       top: 0.6em;
-      right: 1em;
+      inset-inline-end: 1em;
       z-index: 2;
       font-size: 0.8rem;
       color: #888;

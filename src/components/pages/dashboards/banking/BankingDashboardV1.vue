@@ -262,7 +262,7 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
           <div class="column is-6">
             <div class="dashboard-card is-contacts">
               <div class="title-wrap">
-                <h3 class="dark-inverted">Send Money To</h3>
+                <h3 class="dark-inverted">Send money to</h3>
               </div>
 
               <div class="people-wrap">
@@ -328,8 +328,13 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
                   <a class="is-dark-primary-hover">
                     <i
                       aria-hidden="true"
-                      class="iconify"
+                      class="iconify rtl-hidden"
                       data-icon="feather:arrow-right"
+                    />
+                    <i
+                      aria-hidden="true"
+                      class="iconify ltr-hidden"
+                      data-icon="feather:arrow-left"
                     />
                   </a>
                 </div>
@@ -366,17 +371,19 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
                 <div class="field">
                   <label>Amount</label>
                   <div class="field has-addons">
-                    <div class="control">
-                      <span class="select currency-select">
-                        <select>
-                          <option>$</option>
-                          <option>£</option>
-                          <option>€</option>
-                        </select>
-                      </span>
-                    </div>
-                    <div class="control is-expanded">
-                      <input class="input" type="text" placeholder="Amount of money" />
+                    <div class="field-addon-body">
+                      <div class="control">
+                        <span class="select currency-select">
+                          <select>
+                            <option>$</option>
+                            <option>£</option>
+                            <option>€</option>
+                          </select>
+                        </span>
+                      </div>
+                      <div class="control is-expanded">
+                        <input class="input" type="text" placeholder="Amount of money" />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -511,7 +518,7 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
             .shape {
               position: absolute;
               bottom: -10px;
-              right: -10px;
+              inset-inline-end: -10px;
               height: 46px;
               width: 46px;
               background: var(--white);
@@ -521,7 +528,7 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
           }
 
           .credit-card-meta {
-            margin-left: 16px;
+            margin-inline-start: 16px;
 
             span {
               display: block;
@@ -542,7 +549,7 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
           }
 
           .credit-card-end {
-            margin-left: auto;
+            margin-inline-start: auto;
           }
         }
 
@@ -593,7 +600,7 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
 
                 img {
                   max-width: 28px;
-                  margin-right: 6px;
+                  margin-inline-end: 6px;
                 }
               }
 
@@ -601,7 +608,7 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
                 position: relative;
                 top: 0;
                 font-size: 10px;
-                margin-right: 8px;
+                margin-inline-end: 8px;
               }
             }
           }
@@ -686,9 +693,9 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
       .field {
         position: absolute;
         top: 12px;
-        right: 16px;
+        inset-inline-end: 16px;
         z-index: 5;
-        min-width: 135px;
+        min-width: 160px;
 
         .multiselect {
           .multiselect-input {
@@ -698,7 +705,7 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
           }
 
           .multiselect-options {
-            left: unset !important;
+            inset-inline-start: unset !important;
             min-width: 180px;
           }
         }

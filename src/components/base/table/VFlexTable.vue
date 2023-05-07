@@ -378,7 +378,7 @@ const columns = computed(() => {
     .flex-table-item {
       .flex-table-cell {
         &:not(:first-of-type) {
-          border-left: dashed 1px var(--fade-grey-dark-3);
+          border-inline-start: dashed 1px var(--fade-grey-dark-3);
         }
       }
     }
@@ -402,7 +402,7 @@ const columns = computed(() => {
       .flex-table-item {
         .flex-table-cell {
           &:not(:first-of-type) {
-            border-left: dashed 1px var(--dark-sidebar-light-12);
+            border-inline-start: dashed 1px var(--dark-sidebar-light-12);
           }
         }
       }
@@ -455,20 +455,24 @@ const columns = computed(() => {
           > div,
           > .is-pushed-mobile,
           > .text {
-            margin-left: auto;
+            margin-inline-start: auto;
 
             &.no-push {
-              margin-left: 0 !important;
+              margin-inline-start: 0 !important;
             }
           }
+        }
 
-          &[data-th] {
-            &::before {
-              content: attr(data-th);
-              font-size: 0.9rem;
-              text-transform: uppercase;
-              font-weight: 500;
-              color: var(--muted-grey);
+        &:not(:first-child) {
+          .flex-table-cell {
+            &[data-th] {
+              &::before {
+                content: attr(data-th);
+                font-size: 0.9rem;
+                text-transform: uppercase;
+                font-weight: 500;
+                color: var(--muted-grey);
+              }
             }
           }
         }

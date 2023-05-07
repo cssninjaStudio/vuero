@@ -219,8 +219,8 @@ import { courses, files, students } from '/@src/data/dashboards/course'
 
       .tag {
         height: 2.75em;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-inline-start: 1rem;
+        padding-inline-end: 1rem;
         border-radius: 0.5rem;
         line-height: 2.7;
         margin-bottom: 2rem;
@@ -246,7 +246,7 @@ import { courses, files, students } from '/@src/data/dashboards/course'
             &.is-fake {
               span {
                 position: relative;
-                left: -2px;
+                inset-inline-start: -2px;
               }
             }
           }
@@ -256,7 +256,7 @@ import { courses, files, students } from '/@src/data/dashboards/course'
           font-family: var(--font);
           font-weight: 500;
           color: var(--primary);
-          margin-left: 1rem;
+          margin-inline-start: 1rem;
         }
       }
 
@@ -284,13 +284,13 @@ import { courses, files, students } from '/@src/data/dashboards/course'
             font-family: var(--font);
             display: flex;
             align-items: center;
-            margin-right: 0.75rem;
+            margin-inline-end: 0.75rem;
 
             svg {
               height: 15px;
               width: 15px;
               stroke-width: 1px;
-              margin-right: 0.25rem;
+              margin-inline-end: 0.25rem;
             }
           }
         }
@@ -321,8 +321,8 @@ import { courses, files, students } from '/@src/data/dashboards/course'
 
       .tag {
         height: 2.75em;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-inline-start: 1rem;
+        padding-inline-end: 1rem;
         border-radius: 0.5rem;
         line-height: 2.7;
       }
@@ -344,8 +344,8 @@ import { courses, files, students } from '/@src/data/dashboards/course'
 
 .tile-grid {
   .columns {
-    margin-left: -0.5rem !important;
-    margin-right: -0.5rem !important;
+    margin-inline-start: -0.5rem !important;
+    margin-inline-end: -0.5rem !important;
     margin-top: -0.5rem !important;
   }
 
@@ -380,7 +380,7 @@ import { courses, files, students } from '/@src/data/dashboards/course'
       }
 
       .meta {
-        margin-left: 10px;
+        margin-inline-start: 10px;
         line-height: 1.4;
 
         span {
@@ -416,7 +416,7 @@ import { courses, files, students } from '/@src/data/dashboards/course'
       }
 
       .dropdown {
-        margin-left: auto;
+        margin-inline-start: auto;
       }
     }
   }

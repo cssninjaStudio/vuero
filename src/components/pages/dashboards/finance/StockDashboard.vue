@@ -366,14 +366,14 @@
       position: relative;
       display: flex;
       justify-content: center;
+      align-items: center;
       flex: 0;
-      margin-right: 10px;
 
       &::before {
         content: '';
         width: 36px;
         height: 36px;
-        transform: rotate(0);
+        transform: rotate(calc(var(--transform-direction) * 0));
         border-radius: 7px;
       }
 
@@ -417,13 +417,13 @@
       i {
         position: absolute;
         top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        inset-inline-start: 50%;
+        transform: translate(calc(var(--transform-direction) * -50%), -50%);
       }
     }
 
     .stock-info {
-      margin-left: 5px;
+      margin-inline-start: 10px;
       flex: 1;
       line-height: 1.2;
 
@@ -444,7 +444,7 @@
       flex: 1;
       font-weight: bold;
       color: var(--light-text);
-      text-align: right;
+      text-align: inset-inline-end;
     }
   }
 
@@ -461,7 +461,7 @@
     .dropdown {
       position: absolute;
       top: 10px;
-      right: 10px;
+      inset-inline-end: 10px;
     }
 
     > svg {
@@ -531,7 +531,7 @@
             height: 46px;
             background-color: var(--white);
             border: 1px solid var(--fade-grey);
-            transform: rotate(45deg);
+            transform: rotate(calc(var(--transform-direction) * 45deg));
             border-radius: 10px;
             transition: all 0.3s; // transition-all test
           }
@@ -539,8 +539,8 @@
           i {
             position: absolute;
             top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            inset-inline-start: 50%;
+            transform: translate(calc(var(--transform-direction) * -50%), -50%);
             color: var(--light-text);
             font-size: 18px;
             transition: color 0.3s;

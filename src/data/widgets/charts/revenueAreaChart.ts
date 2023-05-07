@@ -3,7 +3,7 @@ import { useThemeColors } from '/@src/composable/useThemeColors'
 export function useRevenueAreaChart() {
   const themeColors = useThemeColors()
 
-  const revenueOptions = ref({
+  const revenueOptions = shallowRef({
     series: [
       {
         name: 'Returning',
@@ -26,7 +26,7 @@ export function useRevenueAreaChart() {
         show: false,
       },
     },
-    colors: [themeColors.accent, themeColors.info, themeColors.green],
+    colors: [themeColors.accent, themeColors.info, themeColors.primary],
     legend: {
       position: 'bottom',
       horizontalAlign: 'center',

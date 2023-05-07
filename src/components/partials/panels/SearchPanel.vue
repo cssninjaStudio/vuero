@@ -52,7 +52,16 @@ function getAvatarData(user: UserPopover): VAvatarProps {
           @keydown.space.prevent="panels.close()"
           @click="panels.close()"
         >
-          <i aria-hidden="true" class="iconify" data-icon="feather:chevron-left"></i>
+          <i
+            aria-hidden="true"
+            class="iconify ltr-hidden"
+            data-icon="feather:chevron-right"
+          />
+          <i
+            aria-hidden="true"
+            class="iconify rtl-hidden"
+            data-icon="feather:chevron-left"
+          />
         </a>
       </div>
       <div class="right-panel-body has-slimscroll">
@@ -185,7 +194,7 @@ function getAvatarData(user: UserPopover): VAvatarProps {
           .control {
             .input {
               min-height: 48px;
-              padding-left: 48px;
+              padding-inline-start: 48px;
             }
 
             .form-icon {

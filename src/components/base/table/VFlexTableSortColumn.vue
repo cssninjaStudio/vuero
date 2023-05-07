@@ -105,10 +105,10 @@ export default defineComponent({
               h('span', {
                 class: 'ml-3 iconify is-inline',
                 'data-icon': isAsc.value
-                  ? 'fa:sort-asc'
+                  ? 'fa6-solid:sort-up'
                   : isDesc.value
-                  ? 'fa:sort-desc'
-                  : 'fa:sort',
+                  ? 'fa6-solid:sort-down'
+                  : 'fa6-solid:sort',
               })
             )
 

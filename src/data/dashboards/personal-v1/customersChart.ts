@@ -3,7 +3,7 @@ import { useThemeColors } from '/@src/composable/useThemeColors'
 export function useCustomersCharts() {
   const themeColors = useThemeColors()
 
-  const customersOptions = ref({
+  const customersOptions = shallowRef({
     series: [
       {
         name: 'Returning',
@@ -25,7 +25,7 @@ export function useCustomersCharts() {
         show: false,
       },
     },
-    colors: [themeColors.accent, themeColors.info, themeColors.green],
+    colors: [themeColors.accent, themeColors.info, themeColors.primary],
     title: {
       text: 'Customers',
       align: 'left',

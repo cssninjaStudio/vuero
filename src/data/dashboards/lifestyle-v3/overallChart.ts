@@ -2,7 +2,7 @@ import { useThemeColors } from '/@src/composable/useThemeColors'
 
 export function useOverallChart() {
   const themeColors = useThemeColors()
-  const overallChartOptions = ref({
+  const overallChartOptions = shallowRef({
     series: [
       {
         name: 'Condition (pt)',

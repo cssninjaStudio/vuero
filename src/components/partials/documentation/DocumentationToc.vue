@@ -103,7 +103,7 @@ onMounted(() => {
 .toc {
   position: fixed;
   display: block;
-  padding-left: 2rem;
+  padding-inline-start: 2rem;
   transition: opacity 0.3s ease;
   opacity: 0.6;
 
@@ -125,16 +125,16 @@ onMounted(() => {
 }
 
 ul {
-  border-left: 1px solid var(--fade-grey-dark-6);
+  border-inline-start: 1px solid var(--fade-grey-dark-6);
 
   li {
     padding: 0.25rem 0;
 
     a {
       position: relative;
-      left: -2px;
+      inset-inline-start: -2px;
       font-family: var(--font);
-      border-left: 3px solid transparent;
+      border-inline-start: 3px solid transparent;
       padding: 0.5rem 1.25rem;
 
       &.is-active {
@@ -146,7 +146,7 @@ ul {
 }
 
 .toc-level-4 {
-  padding-left: 14px;
+  padding-inline-start: 14px;
 
   + .toc-level-3 {
     padding-top: 4px;
@@ -154,7 +154,7 @@ ul {
 }
 
 .toc-level-5 {
-  padding-left: 24px;
+  padding-inline-start: 24px;
 }
 
 a {

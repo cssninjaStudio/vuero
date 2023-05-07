@@ -2,14 +2,14 @@ import { useThemeColors } from '/@src/composable/useThemeColors'
 
 export function useGoalCharts() {
   const themeColors = useThemeColors()
-  const gaugeOptions = ref({
+  const gaugeOptions = shallowRef({
     series: [57, 86],
     chart: {
       height: 220,
       type: 'radialBar',
       offsetY: -10,
     },
-    colors: [themeColors.accent, themeColors.green],
+    colors: [themeColors.accent, themeColors.primary],
     plotOptions: {
       radialBar: {
         startAngle: -135,

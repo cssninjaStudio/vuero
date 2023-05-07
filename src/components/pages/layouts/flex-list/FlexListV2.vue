@@ -218,8 +218,8 @@ const filteredData = computed(() => {
   .flex-list-wrapper,
   .list-flex-toolbar {
     max-width: 880px;
-    margin-right: auto;
-    margin-left: auto;
+    margin-inline-end: auto;
+    margin-inline-start: auto;
   }
 }
 </style>

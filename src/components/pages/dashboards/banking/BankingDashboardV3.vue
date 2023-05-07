@@ -281,7 +281,7 @@ const { popularityGaugeOptions } = usePopularityGaugeChart()
             content: '+3.4%';
             position: relative;
             top: -8px;
-            right: -8px;
+            inset-inline-end: calc(var(--transform-direction) * -8px);
             font-size: 1.1rem;
           }
         }
@@ -291,8 +291,8 @@ const { popularityGaugeOptions } = usePopularityGaugeChart()
 
   .dashboard-tiles {
     display: flex;
-    margin-left: -8px;
-    margin-right: -8px;
+    margin-inline-start: -8px;
+    margin-inline-end: -8px;
     margin-top: -8px;
     margin-bottom: 1rem;
 

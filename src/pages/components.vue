@@ -95,7 +95,7 @@ const layoutSwitcher = useLayoutSwitcher()
       position: static;
 
       .navbar-end {
-        margin-right: -28px;
+        margin-inline-end: -28px;
       }
     }
   }

@@ -3,7 +3,7 @@ import * as formatters from '/@src/utils/apex-formatters'
 
 export function useCustomerEngagementChart() {
   const themeColors = useThemeColors()
-  const customerEngagementChartOptions = ref({
+  const customerEngagementChartOptions = shallowRef({
     series: [65],
     chart: {
       height: 160,

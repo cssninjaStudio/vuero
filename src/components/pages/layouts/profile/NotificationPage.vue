@@ -252,7 +252,7 @@
           content: '';
           position: absolute;
           top: 46px;
-          left: 111px;
+          inset-inline-start: 111px;
           height: 100%;
           width: 2px;
           background: var(--placeholder);
@@ -278,7 +278,7 @@
         .date {
           width: 80px;
           font-family: var(--font);
-          text-align: right;
+          text-align: inset-inline-end;
 
           span {
             font-size: 0.9rem;
@@ -338,7 +338,7 @@
               display: flex;
               align-items: center;
               justify-content: space-between;
-              margin-left: 12px;
+              margin-inline-start: 12px;
               flex-grow: 2;
 
               .meta-text {
@@ -375,7 +375,7 @@
             }
 
             .box-end {
-              margin-left: auto;
+              margin-inline-start: auto;
 
               .v-avatar {
                 margin: 0 2px;
@@ -384,7 +384,7 @@
           }
 
           .meta-content {
-            padding-left: 78px;
+            padding-inline-start: 78px;
           }
         }
       }

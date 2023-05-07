@@ -733,7 +733,7 @@ const participants = [
         border-bottom: 1px solid var(--fade-grey-dark-3);
 
         .project-feature {
-          margin-right: 20px;
+          margin-inline-end: 20px;
           width: calc(25% - 20px);
 
           i {
@@ -793,7 +793,7 @@ const participants = [
           }
 
           .meta {
-            margin-left: 12px;
+            margin-inline-start: 12px;
             line-height: 1.3;
 
             span {
@@ -822,7 +822,7 @@ const participants = [
           }
 
           .dropdown {
-            margin-left: auto;
+            margin-inline-start: auto;
           }
         }
       }
@@ -856,7 +856,7 @@ const participants = [
         padding: 1.5rem;
 
         &:nth-child(odd) {
-          border-right: 1px solid var(--fade-grey-dark-3);
+          border-inline-end: 1px solid var(--fade-grey-dark-3);
         }
 
         &.has-border-bottom {
@@ -892,15 +892,12 @@ const participants = [
             font-size: 0.85rem;
             font-weight: 600;
             color: var(--dark-text);
-            margin-right: 20px;
+            margin-inline-end: 20px;
           }
 
           .multiselect {
             min-width: 140px;
-
-            .multiselect-input {
-              border: none;
-            }
+            border: none;
           }
         }
       }
@@ -958,7 +955,7 @@ const participants = [
               }
 
               span {
-                margin-left: 2px;
+                margin-inline-start: 2px;
                 font-size: 0.9rem;
                 font-family: var(--font);
                 color: var(--light-text);
@@ -1103,7 +1100,7 @@ const participants = [
         padding: 30px;
 
         .column {
-          border-right: none !important;
+          border-inline-end: none !important;
         }
       }
     }

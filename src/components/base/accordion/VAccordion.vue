@@ -112,7 +112,7 @@ const toggle = (key: number) => {
       height: 0.75rem;
       border-radius: var(--radius-rounded);
       background-color: #b1b5be;
-      margin-right: 0.75rem;
+      margin-inline-end: 0.75rem;
     }
   }
 

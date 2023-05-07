@@ -46,7 +46,7 @@ const props = withDefaults(
 
       .line-stat,
       .area-stat {
-        margin-right: 30px;
+        margin-inline-end: 30px;
         font-family: var(--font);
 
         span {

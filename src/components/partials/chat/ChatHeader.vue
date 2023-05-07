@@ -11,8 +11,8 @@
   min-height: 55px;
   align-items: center;
   top: 0;
-  left: 0;
-  right: 0;
+  inset-inline-start: 0;
+  inset-inline-end: 0;
   width: 100%;
   padding: 5px 10px;
   z-index: 2;
@@ -22,7 +22,7 @@
   .is-autocomplete {
     flex-grow: 2;
     max-width: 320px;
-    margin-left: 20px;
+    margin-inline-start: 20px;
 
     &.is-active,
     &:hover {
@@ -35,7 +35,7 @@
       .icon {
         position: absolute;
         top: 9px;
-        left: 9px;
+        inset-inline-start: 9px;
         color: var(--placeholder);
 
         span {
@@ -53,7 +53,7 @@
       .hide {
         position: absolute;
         top: 2px;
-        right: 0;
+        inset-inline-end: 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -72,7 +72,7 @@
         width: 100% !important;
 
         input {
-          padding-left: 40px;
+          padding-inline-start: 40px;
           border: none;
           box-shadow: none;
           color: var(--muted-grey);
@@ -104,7 +104,7 @@
             .avatar-badge {
               position: absolute;
               bottom: 0;
-              right: -5px;
+              inset-inline-end: -5px;
               width: 18px;
               height: 18px;
               border: 2px solid var(--white);
@@ -113,7 +113,7 @@
           }
 
           .entry-text {
-            margin-left: 15px;
+            margin-inline-start: 15px;
 
             span {
               font-size: 0.8rem;
@@ -128,8 +128,8 @@
       height: auto !important;
       padding-top: 8px;
       padding-bottom: 8px;
-      border-left: none !important;
-      border-right: none !important;
+      border-inline-start: none !important;
+      border-inline-end: none !important;
     }
 
     .easy-autocomplete-container {
@@ -149,7 +149,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 20px;
+    margin-inline-start: 20px;
     cursor: pointer;
 
     img {
@@ -162,7 +162,7 @@
       &:nth-child(2),
       &:nth-child(3),
       &:nth-child(4) {
-        margin-left: -15px;
+        margin-inline-start: -15px;
       }
     }
 
@@ -174,7 +174,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-left: -15px;
+      margin-inline-start: -15px;
       border: 2px solid var(--white);
 
       span {

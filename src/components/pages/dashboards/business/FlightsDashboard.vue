@@ -4,7 +4,7 @@ const date = ref({
   end: new Date(),
 })
 
-const options = ref(['All Flights'])
+const options = ref(['All Flights', 'All Options'])
 </script>
 
 <template>
@@ -263,9 +263,14 @@ const options = ref(['All Flights'])
                 <a class="action-icon">
                   <i
                     aria-hidden="true"
-                    class="iconify"
+                    class="iconify ltr-hidden"
+                    data-icon="feather:chevron-right"
+                  />
+                  <i
+                    aria-hidden="true"
+                    class="iconify rtl-hidden"
                     data-icon="feather:chevron-left"
-                  ></i>
+                  />
                 </a>
               </div>
               <div class="center">
@@ -275,9 +280,14 @@ const options = ref(['All Flights'])
                 <a class="action-icon">
                   <i
                     aria-hidden="true"
-                    class="iconify"
+                    class="iconify rtl-hidden"
                     data-icon="feather:chevron-right"
-                  ></i>
+                  />
+                  <i
+                    aria-hidden="true"
+                    class="iconify ltr-hidden"
+                    data-icon="feather:chevron-left"
+                  />
                 </a>
               </div>
             </div>
@@ -362,7 +372,7 @@ const options = ref(['All Flights'])
               <div class="control">
                 <VCheckbox
                   v-model="options"
-                  value-true="All Flights"
+                  value="All Flights"
                   label="All Flights"
                   color="primary"
                   circle
@@ -371,7 +381,7 @@ const options = ref(['All Flights'])
               <div class="control">
                 <VCheckbox
                   v-model="options"
-                  value-true="No Stops"
+                  value="No Stops"
                   label="No Stops"
                   color="primary"
                   circle
@@ -380,7 +390,7 @@ const options = ref(['All Flights'])
               <div class="control">
                 <VCheckbox
                   v-model="options"
-                  value-true="1 Stop"
+                  value="1 Stop"
                   label="1 Stop"
                   color="primary"
                   circle
@@ -389,7 +399,7 @@ const options = ref(['All Flights'])
               <div class="control">
                 <VCheckbox
                   v-model="options"
-                  value-true="2 Stops"
+                  value="2 Stops"
                   label="2 Stops"
                   color="primary"
                   circle
@@ -404,7 +414,7 @@ const options = ref(['All Flights'])
               <div class="control">
                 <VCheckbox
                   v-model="options"
-                  value-true="All Options"
+                  value="All Options"
                   label="All Options"
                   color="primary"
                   circle
@@ -413,7 +423,7 @@ const options = ref(['All Flights'])
               <div class="control">
                 <VCheckbox
                   v-model="options"
-                  value-true="1 Cabine Luggage"
+                  value="1 Cabine Luggage"
                   label="1 Cabine Luggage"
                   color="primary"
                   circle
@@ -422,7 +432,7 @@ const options = ref(['All Flights'])
               <div class="control">
                 <VCheckbox
                   v-model="options"
-                  value-true="2 Cabin Luggage"
+                  value="2 Cabin Luggage"
                   label="2 Cabin Luggage"
                   color="primary"
                   circle
@@ -431,7 +441,7 @@ const options = ref(['All Flights'])
               <div class="control">
                 <VCheckbox
                   v-model="options"
-                  value-true="None"
+                  value="None"
                   label="None"
                   color="primary"
                   circle
@@ -463,7 +473,7 @@ const options = ref(['All Flights'])
     .travel-illustration {
       position: absolute;
       bottom: 30px;
-      right: 30px;
+      inset-inline-end: 30px;
       max-width: 260px;
     }
 
@@ -478,7 +488,7 @@ const options = ref(['All Flights'])
       }
 
       .inner {
-        margin-left: 16px;
+        margin-inline-start: 16px;
 
         .booking-bar-heading {
           font-family: var(--font-alt);
@@ -507,7 +517,7 @@ const options = ref(['All Flights'])
         align-items: center;
 
         .control:not(:last-of-type) {
-          margin-right: 2rem;
+          margin-inline-end: 2rem;
         }
 
         .input {
@@ -569,14 +579,14 @@ const options = ref(['All Flights'])
         &::before {
           content: '$';
           position: relative;
-          right: 0;
+          inset-inline-end: 0;
           font-size: 1.2rem;
           font-weight: 700;
         }
       }
 
       .meta {
-        margin-left: 16px;
+        margin-inline-start: 16px;
         line-height: 1.3;
 
         span {
@@ -654,12 +664,12 @@ const options = ref(['All Flights'])
       }
 
       .start {
-        margin-left: 1rem;
+        margin-inline-start: 1rem;
       }
 
       .end {
-        margin-left: auto;
-        margin-right: 1.5rem;
+        margin-inline-start: auto;
+        margin-inline-end: 1.5rem;
       }
 
       .route {
@@ -694,18 +704,18 @@ const options = ref(['All Flights'])
             content: '';
             position: absolute;
             top: -14px;
-            left: 50%;
-            right: 50%;
+            inset-inline-start: 50%;
+            inset-inline-end: 50%;
             height: 10px;
             width: 1px;
-            border-right: 1px solid var(--light-text);
+            border-inline-end: 1px solid var(--light-text);
           }
 
           &::after {
             content: attr(data-content);
             position: absolute;
             top: -32px;
-            left: 23%;
+            inset-inline-start: 23%;
             width: 130px;
             font-size: 0.8rem;
             text-align: center;
@@ -715,7 +725,7 @@ const options = ref(['All Flights'])
 
         .arrival {
           font-size: 1.8rem;
-          transform: rotate(90deg);
+          transform: rotate(calc(var(--transform-direction) * 90deg));
           height: 26px;
           width: 26px;
           display: flex;
@@ -725,9 +735,9 @@ const options = ref(['All Flights'])
           .lnil {
             position: relative;
             top: -4px;
-            right: 5px;
+            inset-inline-end: 5px;
             color: var(--light-text);
-            margin-left: 0.75rem;
+            margin-inline-start: 0.75rem;
           }
         }
       }
@@ -742,7 +752,7 @@ const options = ref(['All Flights'])
           content: '$';
           position: relative;
           top: -8px;
-          right: 0;
+          inset-inline-end: 0;
           font-size: 1.1rem;
           font-weight: 700;
         }
@@ -930,7 +940,7 @@ const options = ref(['All Flights'])
     .booking-bar-wrapper {
       .travel-illustration {
         bottom: 30px;
-        right: -25px;
+        inset-inline-end: -25px;
         max-width: 215px;
       }
     }
@@ -952,7 +962,7 @@ const options = ref(['All Flights'])
     .booking-bar-wrapper {
       .travel-illustration {
         bottom: 30px;
-        right: -12px;
+        inset-inline-end: -12px;
         max-width: 200px;
       }
     }

@@ -24,7 +24,7 @@ body {
     position: fixed;
     width: 100%;
     height: 100%;
-    left: 0;
+    inset-inline-start: 0;
     top: 0;
     overflow: hidden;
   }
@@ -37,7 +37,7 @@ body {
 .app-overlay {
   position: fixed;
   top: 0;
-  left: 0;
+  inset-inline-start: 0;
   height: 100%;
   width: 100%;
   background: rgb(0 0 0);
@@ -77,10 +77,10 @@ body {
   z-index: 10;
 
   .title-wrap {
-    margin-left: 1rem;
+    margin-inline-start: 1rem;
 
     h1 {
-      text-align: left;
+      text-align: inset-inline-start;
       margin-bottom: 0;
     }
 
@@ -97,14 +97,16 @@ body {
   display: flex;
   align-items: center;
   z-index: 1;
+  margin-inline-start: auto;
 
   .control {
     min-width: 280px;
-    margin-right: 1rem;
+    margin-inline-end: 1rem;
   }
 
   .dark-mode {
     transform: scale(0.55);
+    margin-inline-start: auto;
   }
 
   .toolbar-notifications {
@@ -128,7 +130,7 @@ body {
         .new-indicator {
           position: absolute;
           top: 1px;
-          right: 1px;
+          inset-inline-end: 1px;
           display: block;
           width: 8px;
           height: 8px;
@@ -189,14 +191,14 @@ body {
                   vertical-align: middle;
                   height: 2.25rem;
                   width: 2.25rem;
-                  margin: 0 0.5rem 0 0;
+                  margin-inline-end: 0.5rem;
                   border-radius: var(--radius-rounded);
                   max-width: 100%;
                 }
               }
 
               .user-content {
-                text-align: left;
+                text-align: inset-inline-start;
                 font-family: var(--font);
 
                 .user-info {
@@ -307,7 +309,7 @@ body {
 @media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
   .page-title {
     .title-wrap {
-      margin-left: 0;
+      margin-inline-start: 0;
     }
   }
 }

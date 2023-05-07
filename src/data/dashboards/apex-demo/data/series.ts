@@ -197,4 +197,4 @@ export const series = {
       '28 Nov 2017',
     ],
   },
-}
+} as const

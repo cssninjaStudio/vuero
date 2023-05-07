@@ -70,8 +70,8 @@ defineExpose({
       >
         <span v-if="props.title">{{ props.title }}</span>
         <span :class="[!props.modern && 'base-caret', props.modern && 'base-caret']">
-          <VIcon v-if="!dropdown.isOpen" icon="fa:angle-down" />
-          <VIcon v-else icon="fa:angle-up" />
+          <VIcon v-if="!dropdown.isOpen" icon="fa6-solid:angle-down" />
+          <VIcon v-else icon="fa6-solid:angle-up" />
         </span>
       </a>
     </slot>
@@ -86,6 +86,19 @@ defineExpose({
 
 <style lang="scss">
 .dropdown {
+  &:not(.is-right) {
+    .dropdown-menu {
+      inset-inline-start: 0;
+    }
+  }
+
+  &.is-right {
+    .dropdown-menu {
+      inset-inline-start: initial;
+      inset-inline-end: 0;
+    }
+  }
+
   &.is-dots {
     &:hover,
     &.is-active {
@@ -124,19 +137,19 @@ defineExpose({
     .dropdown-menu {
       margin-top: 6px;
       padding-bottom: 0;
-      text-align: left;
+      text-align: inset-inline-start;
     }
   }
 
   &.is-modern {
     &.is-active {
       .caret {
-        transform: rotate(180deg);
+        transform: rotate(calc(var(--transform-direction) * 180deg));
       }
     }
 
     .is-trigger {
-      padding-right: 0.75em;
+      padding-inline-end: 0.75em;
 
       .caret {
         height: 22px;
@@ -145,7 +158,7 @@ defineExpose({
         justify-content: center;
         align-items: center;
         transition: all 0.3s; // transition-all test
-        margin-left: 6px;
+        margin-inline-start: 6px;
 
         .iconify {
           vertical-align: middle;
@@ -251,7 +264,7 @@ defineExpose({
         }
 
         .meta {
-          margin-left: 10px;
+          margin-inline-start: 10px;
 
           span {
             display: block;
@@ -295,7 +308,7 @@ defineExpose({
           position: relative;
           top: -2px;
           vertical-align: middle;
-          margin-left: 0.25rem;
+          margin-inline-start: 0.25rem;
         }
       }
     }
@@ -304,6 +317,7 @@ defineExpose({
   // Dropdown menu
   .dropdown-menu {
     .dropdown-item {
+      text-align: start;
       color: var(--light-text);
       font-family: var(--font);
 
@@ -324,7 +338,7 @@ defineExpose({
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-right: 1rem;
+        padding-inline-end: 1rem;
 
         svg {
           height: 16px;
@@ -335,7 +349,7 @@ defineExpose({
         // Child hover dropdown
         .child-dropdown {
           position: absolute;
-          right: -282px;
+          inset-inline-end: -282px;
           top: 0;
           width: 280px;
           transition: all 0.3s; // transition-all test

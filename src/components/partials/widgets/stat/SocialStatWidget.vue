@@ -75,7 +75,7 @@ const props = defineProps<{
       }
 
       .follow-count {
-        margin-left: 12px;
+        margin-inline-start: 12px;
 
         span {
           display: block;
@@ -104,7 +104,7 @@ const props = defineProps<{
         border-radius: var(--radius-rounded);
         background: var(--widget-grey);
         color: var(--light-text);
-        margin-left: auto;
+        margin-inline-start: auto;
 
         &.is-squared {
           border-radius: 10px;

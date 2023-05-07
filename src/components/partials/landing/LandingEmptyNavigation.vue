@@ -162,7 +162,7 @@ watchEffect(() => {
           width: 100%;
           max-width: 34px;
           max-height: 34px;
-          margin-left: 10px;
+          margin-inline-start: 10px;
         }
 
         .brand-icon {
@@ -178,7 +178,7 @@ watchEffect(() => {
           img {
             position: relative;
             top: -2px;
-            margin-left: 0;
+            margin-inline-start: 0;
           }
         }
       }
@@ -207,7 +207,7 @@ watchEffect(() => {
               content: '';
               position: absolute;
               top: -4px;
-              left: 2px;
+              inset-inline-start: 2px;
               width: 50%;
               transform-origin: right center;
               height: 3px;
@@ -265,7 +265,8 @@ watchEffect(() => {
 
                 .dark,
                 .light {
-                  transform: translateX(100%) rotate(360deg);
+                  transform: translateX(calc(var(--transform-direction) * 100%))
+                    rotate(calc(var(--transform-direction) * 360deg));
                 }
 
                 .dark {
@@ -292,7 +293,7 @@ watchEffect(() => {
               .light {
                 position: absolute;
                 top: 2px;
-                left: 2px;
+                inset-inline-start: 2px;
                 height: 22px;
                 width: 22px;
                 border-radius: var(--radius-rounded);
@@ -300,7 +301,8 @@ watchEffect(() => {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                transform: translateX(0) rotate(0);
+                transform: translateX(calc(var(--transform-direction) * 0))
+                  rotate(calc(var(--transform-direction) * 0));
                 transition: all 0.3s ease;
 
                 svg {
@@ -464,7 +466,7 @@ watchEffect(() => {
 
         .navbar-burger {
           border-radius: var(--radius-rounded);
-          margin-right: 12px;
+          margin-inline-end: 12px;
         }
       }
 
@@ -472,8 +474,8 @@ watchEffect(() => {
         width: calc(100% - 32px);
         position: fixed;
         top: 78px;
-        left: 0;
-        right: 0;
+        inset-inline-start: 0;
+        inset-inline-end: 0;
         margin: 0 auto;
         border-radius: 0 0 10px 10px;
         padding: 30px;
@@ -555,7 +557,7 @@ watchEffect(() => {
           height: 40px;
           width: 40px;
           border-radius: var(--radius-rounded);
-          margin-right: 12px;
+          margin-inline-end: 12px;
         }
       }
 
@@ -563,8 +565,8 @@ watchEffect(() => {
         width: calc(100% - 32px);
         position: fixed;
         top: 78px;
-        left: 0;
-        right: 0;
+        inset-inline-start: 0;
+        inset-inline-end: 0;
         margin: 0 auto;
         border-radius: 0 0 10px 10px;
         padding: 30px;

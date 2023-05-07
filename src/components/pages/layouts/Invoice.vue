@@ -261,7 +261,7 @@ const totalColumns = {
           align-items: center;
 
           .meta {
-            margin-left: 16px;
+            margin-inline-start: 16px;
             font-family: var(--font);
 
             h3 {
@@ -280,11 +280,11 @@ const totalColumns = {
           }
 
           .end {
-            margin-left: auto;
-            text-align: right;
+            margin-inline-start: auto;
+            text-align: inset-inline-end;
 
             &.is-left {
-              text-align: left;
+              text-align: inset-inline-start;
               max-width: 300px;
 
               p {
@@ -412,7 +412,7 @@ const totalColumns = {
         }
 
         .meta {
-          margin-left: 0 !important;
+          margin-inline-start: 0 !important;
         }
 
         .end {
@@ -426,7 +426,7 @@ const totalColumns = {
           .flex-table-cell {
             &.is-grow {
               > span {
-                margin-left: 0;
+                margin-inline-start: 0;
               }
             }
           }

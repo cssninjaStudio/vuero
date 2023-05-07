@@ -144,9 +144,9 @@ const githubIssueUrl = computed(() => {
       content: counter(step);
       counter-increment: step;
       width: 1rem;
-      margin-right: 1.5rem;
+      margin-inline-end: 1.5rem;
       display: inline-block;
-      text-align: right;
+      text-align: inset-inline-end;
       color: #898d98;
     }
   }
@@ -160,7 +160,7 @@ const githubIssueUrl = computed(() => {
     &::before {
       position: absolute;
       top: 0.6em;
-      right: 1em;
+      inset-inline-end: 1em;
       z-index: 2;
       font-size: 0.8rem;
       color: #888;

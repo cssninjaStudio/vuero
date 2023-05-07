@@ -87,7 +87,7 @@ watch(
     background: var(--white);
     content: '';
     display: inline-block;
-    margin: 0 0.5em 0 0;
+    margin-inline-end: 0.5rem;
     padding: 0;
     vertical-align: middle;
     width: 1.4em;
@@ -115,7 +115,8 @@ watch(
   }
 
   input:checked + span::after {
-    transform: translate(-50%, -50%) scale(1) !important;
+    transform: translate(calc(var(--transform-direction) * -50%), -50%) scaleY(1)
+      scaleX(calc(var(--transform-direction) * 1)) !important;
   }
 
   input {
@@ -132,7 +133,7 @@ watch(
   color: var(--light-text);
 
   + .radio {
-    margin-left: 0 !important;
+    margin-inline-start: 0 !important;
   }
 
   &:hover {
@@ -279,7 +280,7 @@ watch(
       background-size: contain;
       position: absolute;
       top: 49%;
-      left: 50%;
+      inset-inline-start: 50%;
       transform: translate(-50%, -50%) scale(0);
       content: '\f111';
       font-family: 'Font Awesome\ 5 Free';

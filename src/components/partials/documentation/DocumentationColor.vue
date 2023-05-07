@@ -195,7 +195,7 @@ function updateColor({ colors }: any) {
   }
 
   .meta {
-    margin-left: 12px;
+    margin-inline-start: 12px;
     flex-grow: 1;
 
     span {

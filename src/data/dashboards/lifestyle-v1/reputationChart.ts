@@ -2,7 +2,7 @@ import { useThemeColors } from '/@src/composable/useThemeColors'
 
 export function useReputationChart() {
   const themeColors = useThemeColors()
-  const reputationChartOptions = ref({
+  const reputationChartOptions = shallowRef({
     series: [65],
     chart: {
       height: 140,

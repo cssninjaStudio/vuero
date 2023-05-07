@@ -76,7 +76,7 @@ const toggle = (key: number) => {
     &[open] {
       .collapse-header {
         .collapse-icon {
-          transform: rotate(45deg);
+          transform: rotate(calc(var(--transform-direction) * 45deg));
         }
       }
 
@@ -90,7 +90,7 @@ const toggle = (key: number) => {
     &[open] {
       .collapse-header {
         .collapse-icon {
-          transform: rotate(180deg);
+          transform: rotate(calc(var(--transform-direction) * 180deg));
         }
       }
 

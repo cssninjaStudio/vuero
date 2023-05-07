@@ -44,7 +44,16 @@ watch(locale, () => {
           @keydown.space.prevent="panels.close()"
           @click="panels.close()"
         >
-          <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right"></i>
+          <i
+            aria-hidden="true"
+            class="iconify rtl-hidden"
+            data-icon="feather:chevron-right"
+          />
+          <i
+            aria-hidden="true"
+            class="iconify ltr-hidden"
+            data-icon="feather:chevron-left"
+          />
         </a>
       </div>
       <div class="right-panel-body has-slimscroll">
@@ -181,7 +190,7 @@ watch(locale, () => {
             input {
               position: absolute;
               top: 0;
-              left: 0;
+              inset-inline-start: 0;
               height: 100%;
               width: 100%;
               opacity: 0;
@@ -224,7 +233,7 @@ watch(locale, () => {
               .indicator {
                 position: absolute;
                 top: -4px;
-                right: -4px;
+                inset-inline-end: -4px;
                 height: 26px;
                 width: 26px;
                 border-radius: var(--radius-rounded);

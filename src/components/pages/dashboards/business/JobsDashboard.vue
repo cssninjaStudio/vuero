@@ -363,10 +363,10 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
     background-color: var(--header-bg-color);
     border-radius: 8px;
     width: 100%;
-    padding-left: 0.75rem;
+    padding-inline-start: 0.75rem;
 
     > div:not(:last-of-type) {
-      border-right: 1px solid var(--search-border-color);
+      border-inline-end: 1px solid var(--search-border-color);
     }
 
     .search-bar {
@@ -375,14 +375,14 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
       position: relative;
       display: flex;
       align-items: center;
-      padding-right: 1.5rem;
+      padding-inline-end: 1.5rem;
 
       .field {
         width: 100%;
       }
 
       .multiselect-tags {
-        padding-left: 2.5rem;
+        padding-inline-start: 2.5rem;
       }
     }
 
@@ -409,7 +409,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
       }
 
       svg {
-        margin-right: 0.5rem;
+        margin-inline-end: 0.5rem;
         width: 18px;
         color: var(--primary);
         flex-shrink: 0;
@@ -424,10 +424,11 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
       font-weight: 500;
       font-family: var(--font);
       padding: 0 1rem;
-      border-radius: 0 0.75rem 0.75rem 0;
+      border-start-end-radius: 0.75rem;
+      border-end-end-radius: 0.75rem;
       color: var(--button-color);
       cursor: pointer;
-      margin-left: auto;
+      margin-inline-start: auto;
     }
   }
 
@@ -490,7 +491,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
         font-size: 13px;
 
         label {
-          margin-left: 2px;
+          margin-inline-start: 2px;
           display: flex;
           align-items: center;
           cursor: pointer;
@@ -501,7 +502,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
         }
 
         .job-number {
-          margin-left: auto;
+          margin-inline-start: auto;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -522,7 +523,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
       display: flex;
       flex-direction: column;
       flex-grow: 1;
-      padding-left: 2.5rem;
+      padding-inline-start: 2.5rem;
     }
 
     .searched-bar {
@@ -644,7 +645,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
       padding: 1rem;
 
       > div:not(:last-of-type) {
-        border-right: none;
+        border-inline-end: none;
       }
 
       .search-bar {
@@ -671,7 +672,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
       }
 
       .searched-jobs {
-        padding-left: 0;
+        padding-inline-start: 0;
       }
     }
   }

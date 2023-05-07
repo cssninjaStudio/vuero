@@ -23,8 +23,8 @@
   transition: all 0.3s; // transition-all test
   max-width: 800px;
   top: 85px;
-  left: 0;
-  right: 0;
+  inset-inline-start: 0;
+  inset-inline-end: 0;
   margin: 0 auto;
   border-radius: var(--radius-large);
 
@@ -126,7 +126,7 @@
 
           .column {
             &:not(:last-child) {
-              border-right: 1px solid var(--fade-grey-dark-3);
+              border-inline-end: 1px solid var(--fade-grey-dark-3);
             }
           }
 
@@ -224,21 +224,21 @@
                 .fal,
                 .fab,
                 .far {
-                  margin-right: 10px;
+                  margin-inline-end: 10px;
                 }
 
                 .tag {
                   line-height: 1.6;
                   height: 1.7em;
                   font-size: 0.65rem;
-                  margin-left: 0.25rem;
+                  margin-inline-start: 0.25rem;
                 }
 
                 svg {
                   opacity: 0;
                   position: relative;
                   top: 0;
-                  margin-left: 12px;
+                  margin-inline-start: 12px;
                   height: 6px;
                   width: 6px;
                   stroke-width: 2px;
@@ -267,7 +267,7 @@
           .center {
             .column {
               &:not(:last-child) {
-                border-right: 1px solid var(--dark-sidebar-light-12) !important;
+                border-inline-end: 1px solid var(--dark-sidebar-light-12) !important;
               }
             }
 

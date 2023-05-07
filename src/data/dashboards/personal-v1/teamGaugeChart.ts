@@ -3,7 +3,7 @@ import { useThemeColors } from '/@src/composable/useThemeColors'
 export function useTeamGaugeChart() {
   const themeColors = useThemeColors()
 
-  const teamGaugeOptions = ref({
+  const teamGaugeOptions = shallowRef({
     series: [76],
     title: {
       text: 'Team Efficiency',

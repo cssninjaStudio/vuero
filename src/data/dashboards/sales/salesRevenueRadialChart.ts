@@ -3,7 +3,7 @@ import { useThemeColors } from '/@src/composable/useThemeColors'
 export function useSalesRevenueRadialChart() {
   const themeColors = useThemeColors()
 
-  const salesRevenuesRadialOptions = ref({
+  const salesRevenuesRadialOptions = shallowRef({
     series: [65],
     chart: {
       height: 155,

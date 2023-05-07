@@ -22,6 +22,11 @@
 
   .hero-banner {
     background: var(--widget-grey);
+
+    img {
+      max-width: 550px;
+      margin: 0 auto;
+    }
   }
 
   .hero-heading {
@@ -31,17 +36,16 @@
     margin: 0 auto;
     padding: 20px 0 0;
 
-    .dark-mode {
-      position: absolute;
-      top: 24px;
-      right: 24px;
-      transform: scale(0.6);
-      z-index: 2;
-    }
-
     .auth-logo {
       display: flex;
-      justify-content: center;
+      align-items: center;
+      justify-content: space-between;
+
+      .dark-mode {
+        transform: scale(0.6);
+        z-index: 2;
+        margin-inline-start: 0 !important;
+      }
 
       svg {
         height: 42px;
@@ -123,7 +127,7 @@
     .setting-meta {
       font-family: var(--font);
       color: var(--light-text);
-      margin-left: 8px;
+      margin-inline-start: 8px;
     }
   }
 
@@ -167,7 +171,7 @@
 .auth-nav {
   position: absolute;
   top: 0;
-  left: 0;
+  inset-inline-start: 0;
   height: 80px;
   width: 100%;
   display: flex;
@@ -334,7 +338,7 @@
 
     .dark-mode {
       top: -58px;
-      right: 30%;
+      inset-inline-end: 30%;
     }
 
     .columns {

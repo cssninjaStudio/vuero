@@ -208,12 +208,12 @@ const onSubmit = () => {
 
           .left {
             position: relative;
-            border-right: 1px solid var(--fade-grey-dark-3);
+            border-inline-end: 1px solid var(--fade-grey-dark-3);
 
             .operator {
               position: absolute;
               top: 17px;
-              right: -10px;
+              inset-inline-end: -10px;
               text-transform: uppercase;
               font-family: var(--font);
               font-weight: 500;
@@ -233,7 +233,7 @@ const onSubmit = () => {
               input {
                 position: absolute;
                 top: 0;
-                left: 0;
+                inset-inline-start: 0;
                 height: 100%;
                 width: 100%;
                 opacity: 0;
@@ -327,26 +327,26 @@ const onSubmit = () => {
         .form-body {
           .form-section {
             flex-direction: column;
-            padding-right: 0;
-            padding-left: 0;
+            padding-inline-end: 0;
+            padding-inline-start: 0;
 
             .left,
             .right {
               width: 100%;
-              padding-right: 30px;
-              padding-left: 30px;
+              padding-inline-end: 30px;
+              padding-inline-start: 30px;
             }
 
             .left {
-              border-right: none;
+              border-inline-end: none;
               border-bottom: 1px solid var(--fade-grey-dark-3);
               padding-bottom: 40px;
 
               .operator {
                 top: unset;
                 bottom: -14px;
-                left: 0;
-                right: 0;
+                inset-inline-start: 0;
+                inset-inline-end: 0;
                 margin: 0 auto;
                 text-align: center;
                 max-width: 60px;
@@ -369,8 +369,8 @@ const onSubmit = () => {
       .form-outer {
         .form-body {
           .form-section {
-            padding-right: 0;
-            padding-left: 0;
+            padding-inline-end: 0;
+            padding-inline-start: 0;
           }
         }
       }

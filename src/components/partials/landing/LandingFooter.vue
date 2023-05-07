@@ -146,15 +146,25 @@
         </p>
       </div>
     </div>
+    <div class="grids gridlines"></div>
   </footer>
   <!-- /Simple light footer -->
 </template>
 
 <style lang="scss">
 .vuero-footer {
+  position: relative;
   padding-bottom: 0 !important;
   padding-top: 4rem !important;
   background: var(--body-color);
+
+  .grids {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 8rem;
+  }
 
   .footer-head {
     padding-bottom: 3rem;
@@ -350,8 +360,8 @@
     }
 
     .footer-body {
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-inline-start: 20px;
+      padding-inline-end: 20px;
     }
   }
 }
@@ -360,8 +370,8 @@
   .vuero-footer {
     .footer-head,
     .footer-body {
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-inline-start: 20px;
+      padding-inline-end: 20px;
     }
 
     .footer-description {
@@ -374,8 +384,8 @@
   .vuero-footer {
     .footer-head,
     .footer-body {
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-inline-start: 20px;
+      padding-inline-end: 20px;
     }
   }
 }

@@ -219,9 +219,14 @@ const { optionsCircle } = useGrowthRadialChart()
                 <a class="action-icon">
                   <i
                     aria-hidden="true"
-                    class="iconify"
+                    class="iconify ltr-hidden"
+                    data-icon="feather:chevron-right"
+                  />
+                  <i
+                    aria-hidden="true"
+                    class="iconify rtl-hidden"
                     data-icon="feather:chevron-left"
-                  ></i>
+                  />
                 </a>
               </div>
               <div class="center">
@@ -231,9 +236,14 @@ const { optionsCircle } = useGrowthRadialChart()
                 <a class="action-icon">
                   <i
                     aria-hidden="true"
-                    class="iconify"
+                    class="iconify rtl-hidden"
                     data-icon="feather:chevron-right"
-                  ></i>
+                  />
+                  <i
+                    aria-hidden="true"
+                    class="iconify ltr-hidden"
+                    data-icon="feather:chevron-left"
+                  />
                 </a>
               </div>
             </div>
@@ -389,7 +399,7 @@ const { optionsCircle } = useGrowthRadialChart()
           svg {
             height: 16px;
             width: 16px;
-            margin-right: 6px;
+            margin-inline-end: 6px;
             stroke-width: 3px;
           }
         }
@@ -426,7 +436,7 @@ const { optionsCircle } = useGrowthRadialChart()
       display: flex;
 
       .revenue-stat {
-        margin-right: 30px;
+        margin-inline-end: 30px;
         font-family: var(--font);
 
         span {
@@ -466,7 +476,7 @@ const { optionsCircle } = useGrowthRadialChart()
           text-align: center;
 
           &:first-child {
-            border-right: 1px solid var(--fade-grey-dark-3);
+            border-inline-end: 1px solid var(--fade-grey-dark-3);
           }
 
           span {
@@ -514,7 +524,7 @@ const { optionsCircle } = useGrowthRadialChart()
             svg {
               height: 16px;
               width: 16px;
-              margin-right: 6px;
+              margin-inline-end: 6px;
               stroke-width: 3px;
             }
           }

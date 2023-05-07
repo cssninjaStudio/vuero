@@ -73,7 +73,7 @@ const props = withDefaults(
 
 .circle-chart__circle {
   animation: circle-chart-fill 2.4s reverse;
-  transform: rotate(90deg);
+  transform: rotate(calc(var(--transform-direction) * 90deg));
   transform-origin: center;
   color: var(--primary);
   stroke: var(--primary);

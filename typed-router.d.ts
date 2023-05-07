@@ -25,6 +25,7 @@ import type {
   // vue-router extensions
   _RouterTyped,
   RouterLinkTyped,
+  RouterLinkPropsTyped,
   NavigationGuard,
   UseLinkFnTyped,
 
@@ -189,7 +190,6 @@ declare module 'vue-router/auto/routes' {
     '/navbar/layouts/list-datatable-1': RouteRecordInfo<'/navbar/layouts/list-datatable-1', '/navbar/layouts/list-datatable-1', Record<never, never>, Record<never, never>>,
     '/navbar/layouts/list-datatable-2': RouteRecordInfo<'/navbar/layouts/list-datatable-2', '/navbar/layouts/list-datatable-2', Record<never, never>, Record<never, never>>,
     '/navbar/layouts/list-datatable-3': RouteRecordInfo<'/navbar/layouts/list-datatable-3', '/navbar/layouts/list-datatable-3', Record<never, never>, Record<never, never>>,
-    '/navbar/layouts/list-datatable-4': RouteRecordInfo<'/navbar/layouts/list-datatable-4', '/navbar/layouts/list-datatable-4', Record<never, never>, Record<never, never>>,
     '/navbar/layouts/list-flex-1': RouteRecordInfo<'/navbar/layouts/list-flex-1', '/navbar/layouts/list-flex-1', Record<never, never>, Record<never, never>>,
     '/navbar/layouts/list-flex-2': RouteRecordInfo<'/navbar/layouts/list-flex-2', '/navbar/layouts/list-flex-2', Record<never, never>, Record<never, never>>,
     '/navbar/layouts/list-flex-3': RouteRecordInfo<'/navbar/layouts/list-flex-3', '/navbar/layouts/list-flex-3', Record<never, never>, Record<never, never>>,
@@ -282,7 +282,6 @@ declare module 'vue-router/auto/routes' {
     '/sidebar/layouts/list-datatable-1': RouteRecordInfo<'/sidebar/layouts/list-datatable-1', '/sidebar/layouts/list-datatable-1', Record<never, never>, Record<never, never>>,
     '/sidebar/layouts/list-datatable-2': RouteRecordInfo<'/sidebar/layouts/list-datatable-2', '/sidebar/layouts/list-datatable-2', Record<never, never>, Record<never, never>>,
     '/sidebar/layouts/list-datatable-3': RouteRecordInfo<'/sidebar/layouts/list-datatable-3', '/sidebar/layouts/list-datatable-3', Record<never, never>, Record<never, never>>,
-    '/sidebar/layouts/list-datatable-4': RouteRecordInfo<'/sidebar/layouts/list-datatable-4', '/sidebar/layouts/list-datatable-4', Record<never, never>, Record<never, never>>,
     '/sidebar/layouts/list-flex-1': RouteRecordInfo<'/sidebar/layouts/list-flex-1', '/sidebar/layouts/list-flex-1', Record<never, never>, Record<never, never>>,
     '/sidebar/layouts/list-flex-2': RouteRecordInfo<'/sidebar/layouts/list-flex-2', '/sidebar/layouts/list-flex-2', Record<never, never>, Record<never, never>>,
     '/sidebar/layouts/list-flex-3': RouteRecordInfo<'/sidebar/layouts/list-flex-3', '/sidebar/layouts/list-flex-3', Record<never, never>, Record<never, never>>,
@@ -405,6 +404,7 @@ declare module 'vue-router/auto' {
   export function onBeforeRouteUpdate(guard: NavigationGuard<RouteNamedMap>): void
 
   export const RouterLink: RouterLinkTyped<RouteNamedMap>
+  export const RouterLinkProps: RouterLinkPropsTyped<RouteNamedMap>
 
   // Experimental Data Fetching
 

@@ -419,10 +419,10 @@
 
     .header-item {
       width: 25%;
-      border-right: 1px solid var(--fade-grey-dark-3);
+      border-inline-end: 1px solid var(--fade-grey-dark-3);
 
       &:last-child {
-        border-right: none;
+        border-inline-end: none;
       }
 
       .item-inner {
@@ -488,7 +488,7 @@
         display: flex;
 
         .foot-block {
-          margin-right: 30px;
+          margin-inline-end: 30px;
 
           .heading {
             font-family: var(--font-alt);
@@ -504,7 +504,7 @@
             display: flex;
 
             .v-avatar {
-              margin-right: 6px;
+              margin-inline-end: 6px;
             }
           }
         }

@@ -141,7 +141,12 @@ const topicList = dashboardData.topicList as any[]
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                     </div>
-                    <VIconButton icon="feather:arrow-right" circle dark-outlined />
+                    <VIconButton
+                      icon="feather:arrow-right"
+                      circle
+                      dark-outlined
+                      class="rtl-reflect"
+                    />
                   </template>
                 </VBlock>
 
@@ -157,7 +162,12 @@ const topicList = dashboardData.topicList as any[]
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                       <i aria-hidden="true" class="fas fa-star"></i>
                     </div>
-                    <VIconButton icon="feather:arrow-right" circle dark-outlined />
+                    <VIconButton
+                      icon="feather:arrow-right"
+                      circle
+                      dark-outlined
+                      class="rtl-reflect"
+                    />
                   </template>
                 </VBlock>
 
@@ -173,7 +183,12 @@ const topicList = dashboardData.topicList as any[]
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                     </div>
-                    <VIconButton icon="feather:arrow-right" circle dark-outlined />
+                    <VIconButton
+                      icon="feather:arrow-right"
+                      circle
+                      dark-outlined
+                      class="rtl-reflect"
+                    />
                   </template>
                 </VBlock>
 
@@ -189,7 +204,12 @@ const topicList = dashboardData.topicList as any[]
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                     </div>
-                    <VIconButton icon="feather:arrow-right" circle dark-outlined />
+                    <VIconButton
+                      icon="feather:arrow-right"
+                      circle
+                      dark-outlined
+                      class="rtl-reflect"
+                    />
                   </template>
                 </VBlock>
               </div>
@@ -221,7 +241,12 @@ const topicList = dashboardData.topicList as any[]
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                     </div>
-                    <VIconButton icon="feather:arrow-right" circle dark-outlined />
+                    <VIconButton
+                      icon="feather:arrow-right"
+                      circle
+                      dark-outlined
+                      class="rtl-reflect"
+                    />
                   </template>
                 </VBlock>
 
@@ -237,7 +262,12 @@ const topicList = dashboardData.topicList as any[]
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                       <i aria-hidden="true" class="fas fa-star"></i>
                     </div>
-                    <VIconButton icon="feather:arrow-right" circle dark-outlined />
+                    <VIconButton
+                      icon="feather:arrow-right"
+                      circle
+                      dark-outlined
+                      class="rtl-reflect"
+                    />
                   </template>
                 </VBlock>
 
@@ -253,7 +283,12 @@ const topicList = dashboardData.topicList as any[]
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                     </div>
-                    <VIconButton icon="feather:arrow-right" circle dark-outlined />
+                    <VIconButton
+                      icon="feather:arrow-right"
+                      circle
+                      dark-outlined
+                      class="rtl-reflect"
+                    />
                   </template>
                 </VBlock>
 
@@ -269,7 +304,12 @@ const topicList = dashboardData.topicList as any[]
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                       <i aria-hidden="true" class="fas fa-star selected"></i>
                     </div>
-                    <VIconButton icon="feather:arrow-right" circle dark-outlined />
+                    <VIconButton
+                      icon="feather:arrow-right"
+                      circle
+                      dark-outlined
+                      class="rtl-reflect"
+                    />
                   </template>
                 </VBlock>
               </div>
@@ -382,7 +422,7 @@ const topicList = dashboardData.topicList as any[]
     .long-card-overlay {
       position: absolute;
       top: 0;
-      left: 0;
+      inset-inline-start: 0;
       height: 100%;
       width: 100%;
       background: var(--dark-sidebar);
@@ -397,7 +437,7 @@ const topicList = dashboardData.topicList as any[]
     .long-card-text-overlay {
       position: absolute;
       top: 0;
-      left: 0;
+      inset-inline-start: 0;
       height: 100%;
       width: 100%;
       display: flex;

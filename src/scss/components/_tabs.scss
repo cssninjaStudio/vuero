@@ -20,13 +20,13 @@
     li {
       &:first-child {
         a {
-          border-right: none;
+          border-inline-end: none;
         }
       }
 
       &:last-child {
         a {
-          border-left: none;
+          border-inline-start: none;
         }
       }
 
@@ -81,7 +81,7 @@
       svg {
         height: 16px;
         width: 16px;
-        margin-right: 6px;
+        margin-inline-end: 6px;
       }
 
       .fas,
@@ -89,17 +89,17 @@
       .far,
       .fad,
       .fab {
-        margin-right: 6px;
+        margin-inline-end: 6px;
       }
 
       .lnil,
       .lnir {
         font-size: 20px;
-        margin-right: 6px;
+        margin-inline-end: 6px;
       }
 
       small {
-        margin-left: 5px;
+        margin-inline-start: 5px;
       }
     }
   }
@@ -264,25 +264,25 @@
 
         &:first-child {
           &.is-active ~ .tab-naver {
-            margin-left: 0;
+            margin-inline-start: 0;
           }
         }
 
         &:nth-child(2) {
           &.is-active ~ .tab-naver {
-            margin-left: 50% !important;
+            margin-inline-start: 50% !important;
           }
         }
       }
 
       &.is-centered {
-        margin-left: auto;
-        margin-right: auto;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
       }
     }
 
     .tab-naver {
-      left: 0;
+      inset-inline-start: 0;
       background: var(--primary);
       position: absolute;
       top: 0.5px;
@@ -297,7 +297,7 @@
       }
 
       &.is-active {
-        margin-left: 50%;
+        margin-inline-start: 50%;
       }
     }
   }
@@ -374,19 +374,19 @@
 
         &:first-child {
           &.is-active ~ .tab-naver {
-            margin-left: 0;
+            margin-inline-start: 0;
           }
         }
 
         &:nth-child(2) {
           &.is-active ~ .tab-naver {
-            margin-left: 33% !important;
+            margin-inline-start: 33% !important;
           }
         }
 
         &:nth-child(3) {
           &.is-active ~ .tab-naver {
-            margin-left: 66.6%;
+            margin-inline-start: 66.6%;
           }
         }
       }
@@ -395,7 +395,7 @@
     .tab-naver {
       position: absolute;
       top: 0.5px;
-      left: 0;
+      inset-inline-start: 0;
       display: block;
       width: 33.3% !important;
       background: var(--primary);
@@ -409,7 +409,7 @@
       }
 
       &.is-active {
-        margin-left: 48%;
+        margin-inline-start: 48%;
       }
     }
   }
@@ -498,11 +498,11 @@
     .tabs {
       min-width: 25%;
       max-width: 25%;
-      margin-right: 30px;
+      margin-inline-end: 30px;
 
       ul {
         display: block;
-        text-align: left;
+        text-align: inset-inline-start;
         border-bottom-color: transparent !important;
 
         li {
@@ -511,14 +511,14 @@
           &.is-active {
             a {
               color: var(--primary);
-              border-right-color: var(--primary);
+              border-inline-end-color: var(--primary);
             }
           }
 
           a {
             display: block;
             border-bottom-color: transparent !important;
-            border-right: 2px solid #dbdbdb;
+            border-inline-end: 2px solid #dbdbdb;
             color: var(--light-text);
           }
         }

@@ -11,7 +11,7 @@ let api: AxiosInstance
 export function createApi() {
   // Here we set the base URL for all requests made to the api
   api = axios.create({
-    baseURL: import.meta.env.VITE_API_BASE_URL,
+    baseURL: import.meta.env.VITE_API_BASE_URL ?? 'http://localhost:8080',
   })
 
   // We set an interceptor for each request to

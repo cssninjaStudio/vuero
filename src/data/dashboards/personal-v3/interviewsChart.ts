@@ -3,7 +3,7 @@ import { useThemeColors } from '/@src/composable/useThemeColors'
 export function useInterviewsChart() {
   const themeColors = useThemeColors()
 
-  const interviewsOptions = ref({
+  const interviewsOptions = shallowRef({
     series: [
       {
         name: 'Interviews',

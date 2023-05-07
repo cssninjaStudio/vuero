@@ -2,9 +2,9 @@
 
 :root {
   // layout colors
-  --body-color: #f9f9f9;
+  --body-color: #f4f4f5;
   --title-grey: #a9abac;
-  --background-grey: #f0f0f0;
+  --background-grey: #fafafa;
   --medium-grey: #ddd;
   --light-grey: #eee;
   --white: #fff;
@@ -19,8 +19,8 @@
   // sidebar HSL (#344258) // hsl(217, 26%, 27%)
   @include colorHsl('sidebar', 217, 26%, 27%);
 
-  // primary HSL (#41b883) // hsl(153, 48%, 49%)
-  @include colorHsl('primary', 153, 48%, 49%);
+  // primary HSL (#29ab8d) // hsl(166, 61%, 42%)
+  @include colorHsl('primary', 166, 61%, 42%);
 
   // primary-grey HSL (#ccc) // hsl(0, 0%, 80%)
   @include colorHsl('primary-grey', 0, 0%, 80%);

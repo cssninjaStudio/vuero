@@ -392,7 +392,7 @@ const {
     margin-bottom: 30px;
 
     .start {
-      margin-left: 12px;
+      margin-inline-start: 12px;
 
       h3 {
         font-family: var(--font-alt);
@@ -403,12 +403,12 @@ const {
     }
 
     .end {
-      margin-left: auto;
+      margin-inline-start: auto;
       display: flex;
       justify-content: flex-end;
 
       .button {
-        margin-left: 10px;
+        margin-inline-start: 10px;
       }
     }
   }
@@ -422,6 +422,7 @@ const {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      margin-bottom: 1rem;
 
       h3 {
         font-family: var(--font-alt);
@@ -436,7 +437,7 @@ const {
       align-items: center;
 
       .left {
-        margin-right: 20px;
+        margin-inline-end: 20px;
 
         span {
           font-size: 1.5rem;
@@ -467,7 +468,7 @@ const {
 
     .field {
       z-index: 5;
-      min-width: 135px;
+      min-width: 160px;
 
       .multiselect {
         .multiselect-input {
@@ -477,7 +478,7 @@ const {
         }
 
         .multiselect-options {
-          left: unset !important;
+          inset-inline-start: unset !important;
           min-width: 180px;
         }
       }

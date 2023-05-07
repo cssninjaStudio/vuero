@@ -165,3 +165,6 @@ public/robots.txt
 
 # zone identifier
 *:Zone.Identifier
+
+# dotenv
+.env

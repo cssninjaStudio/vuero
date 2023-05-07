@@ -15,7 +15,7 @@ export function usePopularityGaugeChart() {
         show: false,
       },
     },
-    colors: [themeColors.green, themeColors.secondary],
+    colors: [themeColors.primary, themeColors.secondary],
     plotOptions: {
       radialBar: {
         startAngle: -135,

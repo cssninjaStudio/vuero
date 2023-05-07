@@ -64,18 +64,18 @@ const themeClasses = computed(() => {
 .main-sidebar {
   position: fixed;
   top: 0;
-  left: 0;
-  margin-left: 0;
+  inset-inline-start: 0;
+  margin-inline-start: 0;
   height: 100vh;
   width: 80px;
   background-color: var(--body-color);
   box-shadow: none;
   z-index: 35;
   transition: border-radius 0.3s ease-in, background-color 0.3s ease-in, top 0.3s ease-in,
-    margin-left 0.3s ease-in, height 0.3s ease-in;
+    margin-inline-start 0.3s ease-in, height 0.3s ease-in;
 
   &.is-bordered {
-    border-right: 1px solid var(--fade-grey) !important;
+    border-inline-end: 1px solid var(--fade-grey) !important;
   }
 
   &.is-open {
@@ -84,12 +84,12 @@ const themeClasses = computed(() => {
 
   &.is-curved {
     &:not(.is-bordered) {
-      border-top-right-radius: 20px;
-      border-bottom-right-radius: 20px;
-      border-right: 1px solid var(--fade-grey-dark-4) !important;
+      border-start-end-radius: 20px;
+      border-end-end-radius: 20px;
+      border-inline-end: 1px solid var(--fade-grey-dark-4) !important;
 
       .sidebar-brand {
-        border-top-right-radius: 20px;
+        border-start-end-radius: 20px;
       }
     }
   }
@@ -178,8 +178,8 @@ const themeClasses = computed(() => {
               content: attr(data-content);
               position: absolute;
               bottom: -8px;
-              left: -29px;
-              right: 0;
+              inset-inline-start: -29px;
+              inset-inline-end: 0;
               margin: 0 auto;
               font-family: var(--font);
               font-size: 0.5rem;
@@ -205,7 +205,7 @@ const themeClasses = computed(() => {
     border-radius: 1000px;
     overflow: hidden;
     width: 74px;
-    margin-left: 6px;
+    margin-inline-start: 6px;
     top: 6px;
     height: calc(100vh - 12px);
     border: none !important;
@@ -216,7 +216,7 @@ const themeClasses = computed(() => {
 
     &.is-bordered {
       width: 80px;
-      margin-left: 0;
+      margin-inline-start: 0;
       top: 0;
       height: 100vh;
       border-radius: 0;
@@ -275,7 +275,7 @@ const themeClasses = computed(() => {
     .naver {
       position: absolute;
       top: -150px;
-      left: 0;
+      inset-inline-start: 0;
       height: 64px;
       width: 4px;
       border-radius: 100px;
@@ -295,6 +295,7 @@ const themeClasses = computed(() => {
 
     .icon-menu {
       overflow-y: auto;
+      overflow-x: hidden;
       max-height: 400px;
     }
 
@@ -318,7 +319,7 @@ const themeClasses = computed(() => {
         .is-messages-counter {
           position: absolute;
           top: 6px;
-          right: 16px;
+          inset-inline-end: 16px;
           display: block;
           line-height: 17px;
           background: var(--danger);
@@ -333,7 +334,7 @@ const themeClasses = computed(() => {
         a {
           display: block;
           position: relative;
-          transform: rotate(0);
+          transform: rotate(calc(var(--transform-direction) * 0));
           opacity: 1;
           transition: all 0.3s; // transition-all test
 
@@ -360,12 +361,12 @@ const themeClasses = computed(() => {
           }
 
           &.is-opened {
-            transform: rotate(360deg);
+            transform: rotate(calc(var(--transform-direction) * 360deg));
             opacity: 0;
           }
 
           &.is-inactive {
-            transform: rotate(-360deg);
+            transform: rotate(calc(var(--transform-direction) * -360deg));
             opacity: 0;
           }
         }
@@ -413,7 +414,7 @@ const themeClasses = computed(() => {
             display: block;
             position: absolute;
             top: 0;
-            right: 0;
+            inset-inline-end: 0;
             width: 14px;
             height: 14px;
             border-radius: var(--radius-rounded);
@@ -427,7 +428,7 @@ const themeClasses = computed(() => {
       .profile-dropdown {
         .dropdown-menu {
           bottom: 0;
-          left: 145%;
+          inset-inline-start: 145%;
 
           .dropdown-content {
             padding-top: 0;
@@ -441,7 +442,7 @@ const themeClasses = computed(() => {
               background: #fafafa;
 
               .meta {
-                margin-left: 12px;
+                margin-inline-start: 12px;
                 font-family: var(--font);
 
                 span {
@@ -513,7 +514,7 @@ const themeClasses = computed(() => {
     background: var(--dark-sidebar);
 
     &.is-bordered {
-      border-right: 1px solid var(--dark-sidebar) !important;
+      border-inline-end: 1px solid var(--dark-sidebar) !important;
     }
 
     &.is-curved {

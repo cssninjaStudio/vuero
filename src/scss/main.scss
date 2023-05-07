@@ -9,6 +9,7 @@ SCSS Imports
 @import './bulma-generated/generated-vars.sass';
 @import './css-variables/all';
 
+@import './abstracts/ltr';
 @import './abstracts/all';
 
 // Here we import bulma-css-vars instead of bulma

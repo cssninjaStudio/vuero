@@ -150,7 +150,7 @@ const activeTab = ref<TabId>('list')
                   <li>
                     <RouterLink to="/navbar/layouts/list-datatable-1">
                       <i aria-hidden="true" class="lnil lnil-layout-alt"></i>
-                      <span>Datatable V1</span>
+                      <span>Table List V1</span>
                       <i
                         aria-hidden="true"
                         class="iconify"
@@ -161,7 +161,7 @@ const activeTab = ref<TabId>('list')
                   <li>
                     <RouterLink to="/navbar/layouts/list-datatable-2">
                       <i aria-hidden="true" class="lnil lnil-layout-alt"></i>
-                      <span>Datatable V2</span>
+                      <span>Table List V2</span>
                       <i
                         aria-hidden="true"
                         class="iconify"
@@ -172,18 +172,7 @@ const activeTab = ref<TabId>('list')
                   <li>
                     <RouterLink to="/navbar/layouts/list-datatable-3">
                       <i aria-hidden="true" class="lnil lnil-layout-alt"></i>
-                      <span>Datatable V3</span>
-                      <i
-                        aria-hidden="true"
-                        class="iconify"
-                        data-icon="feather:circle"
-                      ></i>
-                    </RouterLink>
-                  </li>
-                  <li>
-                    <RouterLink to="/navbar/layouts/list-datatable-4">
-                      <i aria-hidden="true" class="lnil lnil-layout-alt"></i>
-                      <span>Datatable V4</span>
+                      <span>Table List V3</span>
                       <i
                         aria-hidden="true"
                         class="iconify"

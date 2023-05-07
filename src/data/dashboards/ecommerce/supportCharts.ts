@@ -2,7 +2,7 @@ import { useThemeColors } from '/@src/composable/useThemeColors'
 
 export function useSupportCharts() {
   const themeColors = useThemeColors()
-  const activeTicketsChartOptions = ref({
+  const activeTicketsChartOptions = shallowRef({
     series: [57],
     chart: {
       height: 100,
@@ -62,7 +62,7 @@ export function useSupportCharts() {
     labels: ['Average Results'],
   })
 
-  const escalatedChartOptions = ref({
+  const escalatedChartOptions = shallowRef({
     series: [36],
     chart: {
       height: 100,
@@ -122,7 +122,7 @@ export function useSupportCharts() {
     labels: ['Average Results'],
   })
 
-  const closedTicketsChartOptions = ref({
+  const closedTicketsChartOptions = shallowRef({
     series: [88],
     chart: {
       height: 100,

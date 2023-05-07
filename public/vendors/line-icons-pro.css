@@ -70,7 +70,7 @@ Generated using nucleoapp.com
   use icons as list item markers
 ------------------------------------- */
 .lnil-ul {
-  padding-left: 0;
+  padding-inline-start: 0;
   list-style-type: none;
 }
 .lnil-ul > li {
@@ -4045,7 +4045,7 @@ Author: lineicons.com
   use icons as list item markers
 ------------------------------------- */
 .lnir-ul {
-  padding-left: 0;
+  padding-inline-start: 0;
   list-style-type: none;
 }
 .lnir-ul > li {

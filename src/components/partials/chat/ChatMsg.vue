@@ -133,10 +133,6 @@ const props = defineProps<{
 </template>
 
 <style lang="scss">
-/* ==========================================================================
-4. Messages globals and variations
-========================================================================== */
-
 .msg {
   min-width: 50px;
   max-width: 40%;
@@ -173,7 +169,7 @@ const props = defineProps<{
       .image-overlay {
         position: absolute;
         top: 0;
-        left: 0;
+        inset-inline-start: 0;
         width: 100%;
         height: 100%;
         opacity: 0;
@@ -187,7 +183,7 @@ const props = defineProps<{
       .image-actions {
         position: absolute;
         top: 0;
-        left: 0;
+        inset-inline-start: 0;
         width: 100%;
         height: 100%;
         opacity: 0;
@@ -253,7 +249,7 @@ const props = defineProps<{
         height: 40px;
         width: 40px;
         position: absolute;
-        right: 15px;
+        inset-inline-end: 15px;
         bottom: 15px;
 
         img {
@@ -299,7 +295,7 @@ const props = defineProps<{
     .icon-wrapper {
       position: absolute;
       top: calc(50% - 18px);
-      left: -18px;
+      inset-inline-start: -18px;
       width: 36px;
       height: 36px;
       min-width: 36px !important;
@@ -319,7 +315,7 @@ const props = defineProps<{
     }
 
     .link-meta {
-      margin-left: 10px;
+      margin-inline-start: 10px;
 
       span {
         color: var(--dark-text);

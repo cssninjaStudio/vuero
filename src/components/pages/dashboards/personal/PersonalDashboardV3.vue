@@ -154,9 +154,14 @@ const userStack = userData.userStack as VAvatarProps[]
                 <a class="action-icon">
                   <i
                     aria-hidden="true"
-                    class="iconify"
+                    class="iconify ltr-hidden"
+                    data-icon="feather:chevron-right"
+                  />
+                  <i
+                    aria-hidden="true"
+                    class="iconify rtl-hidden"
                     data-icon="feather:chevron-left"
-                  ></i>
+                  />
                 </a>
               </div>
               <div class="center">
@@ -166,9 +171,14 @@ const userStack = userData.userStack as VAvatarProps[]
                 <a class="action-icon">
                   <i
                     aria-hidden="true"
-                    class="iconify"
+                    class="iconify rtl-hidden"
                     data-icon="feather:chevron-right"
-                  ></i>
+                  />
+                  <i
+                    aria-hidden="true"
+                    class="iconify ltr-hidden"
+                    data-icon="feather:chevron-left"
+                  />
                 </a>
               </div>
             </div>
@@ -248,7 +258,16 @@ const userStack = userData.userStack as VAvatarProps[]
               <VAvatar picture="/demo/avatars/32.jpg" />
             </template>
             <template #action>
-              <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right"></i>
+              <i
+                aria-hidden="true"
+                class="iconify rtl-hidden"
+                data-icon="feather:chevron-right"
+              />
+              <i
+                aria-hidden="true"
+                class="iconify ltr-hidden"
+                data-icon="feather:chevron-left"
+              />
             </template>
           </VBlock>
         </a>
@@ -258,7 +277,16 @@ const userStack = userData.userStack as VAvatarProps[]
               <VAvatar picture="/demo/avatars/19.jpg" />
             </template>
             <template #action>
-              <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right"></i>
+              <i
+                aria-hidden="true"
+                class="iconify rtl-hidden"
+                data-icon="feather:chevron-right"
+              />
+              <i
+                aria-hidden="true"
+                class="iconify ltr-hidden"
+                data-icon="feather:chevron-left"
+              />
             </template>
           </VBlock>
         </a>
@@ -268,7 +296,16 @@ const userStack = userData.userStack as VAvatarProps[]
               <VAvatar picture="/demo/avatars/12.jpg" />
             </template>
             <template #action>
-              <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right"></i>
+              <i
+                aria-hidden="true"
+                class="iconify rtl-hidden"
+                data-icon="feather:chevron-right"
+              />
+              <i
+                aria-hidden="true"
+                class="iconify ltr-hidden"
+                data-icon="feather:chevron-left"
+              />
             </template>
           </VBlock>
         </a>
@@ -326,7 +363,7 @@ const userStack = userData.userStack as VAvatarProps[]
         padding: 10px 0;
 
         .meta {
-          margin-left: 16px;
+          margin-inline-start: 16px;
 
           span {
             display: block;

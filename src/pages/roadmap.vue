@@ -427,7 +427,7 @@ useHead({
             margin-bottom: 0;
 
             &:first-child {
-              margin-right: 2rem;
+              margin-inline-end: 2rem;
             }
           }
         }
@@ -461,13 +461,13 @@ useHead({
           .head-info {
             .head-progress {
               font-family: var(--font);
-              border-right: 1px solid var(--border);
-              padding-right: 1rem;
-              margin-right: 1rem;
+              border-inline-end: 1px solid var(--border);
+              padding-inline-end: 1rem;
+              margin-inline-end: 1rem;
 
               .text {
                 color: var(--light-text);
-                margin-right: 0.75rem;
+                margin-inline-end: 0.75rem;
               }
 
               .value {
@@ -488,7 +488,7 @@ useHead({
           :deep(.progress) {
             position: absolute !important;
             bottom: 0;
-            left: 0;
+            inset-inline-start: 0;
             width: 100%;
           }
         }
@@ -503,7 +503,7 @@ useHead({
 
                   .tag {
                     border-width: 2px;
-                    margin-right: 1rem;
+                    margin-inline-end: 1rem;
                   }
 
                   + .changelog-line {
@@ -554,7 +554,7 @@ useHead({
     }
 
     .copyright {
-      margin-left: auto;
+      margin-inline-start: auto;
       font-family: var(--font);
       color: var(--light-text);
     }
@@ -579,8 +579,8 @@ useHead({
             :deep(.field) {
               max-width: 100%;
               width: 100%;
-              margin-left: 0 !important;
-              margin-right: 0 !important;
+              margin-inline-start: 0 !important;
+              margin-inline-end: 0 !important;
               margin-bottom: 1rem !important;
 
               .control {

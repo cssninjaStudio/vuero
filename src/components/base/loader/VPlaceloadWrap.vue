@@ -21,20 +21,20 @@
       .content-shape-group {
         margin-top: 0.5rem;
         max-width: 70%;
-        margin-left: auto;
-        margin-right: auto;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
 
         .content-shape {
-          margin-left: auto;
-          margin-right: auto;
+          margin-inline-start: auto;
+          margin-inline-end: auto;
         }
       }
 
       > .content-shape {
         margin-top: 0.5rem;
         max-width: 70%;
-        margin-left: auto;
-        margin-right: auto;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
       }
     }
   }

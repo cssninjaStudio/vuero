@@ -129,7 +129,7 @@ const props = withDefaults(defineProps<VBreadcrumbsProps>(), {
     li {
       &:first-child {
         .breadcrumb-item {
-          padding-left: 0;
+          padding-inline-start: 0;
         }
       }
 

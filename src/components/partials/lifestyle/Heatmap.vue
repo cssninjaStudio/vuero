@@ -351,7 +351,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
     }
 
     .title-meta {
-      margin-left: 16px;
+      margin-inline-start: 16px;
 
       p {
         span {

@@ -481,7 +481,7 @@ const filterProjects = ref(0)
               content: '';
               position: absolute;
               top: 0;
-              right: 6px;
+              inset-inline-end: 6px;
               height: 8px;
               width: 8px;
               border-radius: var(--radius-rounded);
@@ -552,7 +552,7 @@ const filterProjects = ref(0)
         font-size: 1.1rem;
         font-weight: 600;
         color: var(--dark-text);
-        margin-left: 16px;
+        margin-inline-start: 16px;
         line-height: 1.2;
       }
     }
@@ -569,7 +569,7 @@ const filterProjects = ref(0)
         font-size: 1.5rem;
         font-weight: 700;
         color: var(--dark-text);
-        margin-left: 16px;
+        margin-inline-start: 16px;
         line-height: 1.2;
       }
 
@@ -585,15 +585,12 @@ const filterProjects = ref(0)
           font-size: 0.85rem;
           font-weight: 600;
           color: var(--dark-text);
-          margin-right: 20px;
+          margin-inline-end: 20px;
         }
 
         .multiselect {
           min-width: 170px;
-
-          .multiselect-input {
-            border: none;
-          }
+          border: none;
         }
       }
     }

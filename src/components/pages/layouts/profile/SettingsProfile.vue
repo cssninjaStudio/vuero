@@ -198,7 +198,7 @@
         .edit-icon {
           position: absolute;
           top: 6px;
-          left: 6px;
+          inset-inline-start: 6px;
           display: flex;
           justify-content: center;
           align-items: center;

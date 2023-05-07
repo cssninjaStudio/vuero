@@ -235,7 +235,7 @@ export default defineComponent({
 
   :deep(.toc-link-anchor) {
     color: var(--light-text);
-    margin-left: 0.5rem;
+    margin-inline-start: 0.5rem;
     font-size: 1rem;
     transition: color 0.2s;
     outline: none;
@@ -258,9 +258,9 @@ export default defineComponent({
       content: counter(step);
       counter-increment: step;
       width: 1rem;
-      margin-right: 1.5rem;
+      margin-inline-end: 1.5rem;
       display: inline-block;
-      text-align: right;
+      text-align: inset-inline-end;
       color: #898d98;
     }
   }

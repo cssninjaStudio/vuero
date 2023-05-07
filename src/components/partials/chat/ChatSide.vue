@@ -143,7 +143,7 @@ const chat = useChat()
   position: relative;
   width: 320px;
   height: 100%;
-  border-left: 1px solid var(--fade-grey);
+  border-inline-start: 1px solid var(--fade-grey);
   background: var(--white);
   z-index: 3;
   transition: all 0.3s; // transition-all test
@@ -154,6 +154,11 @@ const chat = useChat()
     display: flex;
     align-items: center;
     padding: 0 20px;
+
+    #hide-chat-side {
+      transform: scaleX(-1);
+      display: none;
+    }
   }
 
   .chat-side-content {
@@ -179,7 +184,7 @@ const chat = useChat()
         &.is-badge {
           display: block;
           position: absolute;
-          right: -6px;
+          inset-inline-end: -6px;
           bottom: 0;
           border: 3px solid var(--white);
           height: 34px;
@@ -228,7 +233,7 @@ const chat = useChat()
 
         svg {
           width: 16px;
-          margin-right: 8px;
+          margin-inline-end: 8px;
         }
       }
 
@@ -286,32 +291,44 @@ const chat = useChat()
   .chat-side {
     position: fixed;
     top: 0;
-    right: 0;
+    inset-inline-end: 0;
     height: 100%;
     width: 100%;
-    transform: translateX(100%);
+    transform: translateX(calc(var(--transform-direction) * 100%));
     transition: all 0.3s; // transition-all test
     z-index: 20;
 
+    .chat-side-header {
+      #hide-chat-side {
+        display: flex;
+      }
+    }
+
     &.is-mobile-active {
-      transform: translateX(0);
+      transform: translateX(calc(var(--transform-direction) * 0));
     }
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .chat-side {
     position: fixed;
     top: 0;
-    right: 0;
+    inset-inline-end: 0;
     height: 100%;
     width: 340px;
-    transform: translateX(100%);
+    transform: translateX(calc(var(--transform-direction) * 100%));
     transition: all 0.3s; // transition-all test
     z-index: 20;
 
+    .chat-side-header {
+      #hide-chat-side {
+        display: flex;
+      }
+    }
+
     &.is-mobile-active {
-      transform: translateX(0);
+      transform: translateX(calc(var(--transform-direction) * 0));
     }
   }
 }

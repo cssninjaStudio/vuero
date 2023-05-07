@@ -74,14 +74,10 @@ const dropdown = useDropdown(dropdownElement)
 </template>
 
 <style lang="scss">
-/* ==========================================================================
-5. Compose message area
-========================================================================== */
-
 .message-field-wrapper {
   position: absolute;
   bottom: 0;
-  left: 0;
+  inset-inline-start: 0;
   display: flex;
   align-items: center;
   height: 60px;
@@ -100,13 +96,13 @@ const dropdown = useDropdown(dropdownElement)
 
     input {
       height: 42px;
-      padding-left: 70px;
+      padding-inline-start: 70px;
     }
 
     .add-content {
       position: absolute;
       top: 0;
-      left: 0;
+      inset-inline-start: 0;
       z-index: 11;
 
       &:hover,
@@ -162,7 +158,7 @@ const dropdown = useDropdown(dropdownElement)
           }
 
           .meta {
-            margin-left: 12px;
+            margin-inline-start: 12px;
 
             span {
               display: block;
@@ -186,7 +182,7 @@ const dropdown = useDropdown(dropdownElement)
     .add-emoji {
       position: absolute;
       top: 0;
-      left: 34px;
+      inset-inline-start: 34px;
       z-index: 11;
       display: flex;
       justify-content: center;
@@ -229,7 +225,7 @@ const dropdown = useDropdown(dropdownElement)
     .send-message {
       position: absolute;
       top: 3px;
-      right: 3px;
+      inset-inline-end: 3px;
       z-index: 11;
 
       .button {
@@ -242,7 +238,7 @@ const dropdown = useDropdown(dropdownElement)
   .typing-indicator {
     position: absolute;
     bottom: 50px;
-    left: 10px;
+    inset-inline-start: 10px;
     width: 100px;
     height: 100px;
     z-index: 2;
@@ -281,7 +277,7 @@ const dropdown = useDropdown(dropdownElement)
     }
 
     .add-emoji {
-      left: 38px;
+      inset-inline-start: 38px;
     }
   }
 }

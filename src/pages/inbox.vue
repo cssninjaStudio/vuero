@@ -490,14 +490,10 @@ useHead({
 </template>
 
 <style lang="scss">
-/* ==========================================================================
-1. Inbox V1 Layout
-========================================================================== */
-
 .inbox-wrapper {
   position: absolute;
   top: 0;
-  left: 0;
+  inset-inline-start: 0;
   height: 100%;
   width: 100%;
 
@@ -509,11 +505,11 @@ useHead({
     .inbox-sidebar {
       position: absolute;
       top: 0;
-      left: 0;
+      inset-inline-start: 0;
       height: 100%;
       width: 20%;
       background: var(--white);
-      border-right: 1px solid var(--fade-grey-dark-3);
+      border-inline-end: 1px solid var(--fade-grey-dark-3);
 
       .header-area {
         height: 80px;
@@ -535,7 +531,7 @@ useHead({
           max-width: 100%;
 
           .inbox-brand {
-            margin-right: 16px;
+            margin-inline-end: 16px;
 
             img {
               height: 40px;
@@ -546,7 +542,7 @@ useHead({
 
           label {
             display: block;
-            margin-left: auto;
+            margin-inline-start: auto;
             transform: scale(0.65);
           }
         }
@@ -564,7 +560,7 @@ useHead({
         .inner-menu {
           position: absolute;
           top: 0;
-          left: 0;
+          inset-inline-start: 0;
           padding: 20px;
           width: 100%;
 
@@ -632,7 +628,7 @@ useHead({
 
                   .tag {
                     display: none;
-                    margin-left: auto;
+                    margin-inline-start: auto;
                     margin-bottom: 0;
                     font-size: 0.85rem;
                     height: 22px;
@@ -651,7 +647,7 @@ useHead({
         .scroll-menu {
           position: absolute;
           bottom: 0;
-          left: 0;
+          inset-inline-start: 0;
           height: calc(100% - 304px);
           width: 100%;
           border-top: 1px solid var(--fade-grey);
@@ -676,13 +672,13 @@ useHead({
 
               input {
                 height: 32px;
-                padding-left: 32px;
+                padding-inline-start: 32px;
               }
 
               .form-icon {
                 position: absolute;
                 top: 0;
-                left: 0;
+                inset-inline-start: 0;
                 height: 32px;
                 width: 32px;
                 display: flex;
@@ -754,7 +750,7 @@ useHead({
               }
 
               .contact-meta {
-                margin-left: 12px;
+                margin-inline-start: 12px;
 
                 span {
                   display: block;
@@ -781,11 +777,11 @@ useHead({
     .inbox-messages {
       position: absolute;
       top: 0;
-      left: 20%;
+      inset-inline-start: 20%;
       height: 100%;
       width: 32%;
       background: var(--white);
-      border-right: 1px solid var(--fade-grey-dark-3);
+      border-inline-end: 1px solid var(--fade-grey-dark-3);
 
       .header-area {
         height: 80px;
@@ -802,12 +798,12 @@ useHead({
 
           .inbox-search {
             position: relative;
-            margin-right: 6px;
+            margin-inline-end: 6px;
 
             input {
               height: 38px;
               min-width: 220px;
-              padding-left: 42px;
+              padding-inline-start: 42px;
 
               &:focus + .form-icon i {
                 color: var(--dark-text);
@@ -817,7 +813,7 @@ useHead({
             .form-icon {
               position: absolute;
               top: 1px;
-              left: 4px;
+              inset-inline-start: 4px;
               height: 38px;
               width: 38px;
               display: flex;
@@ -872,7 +868,7 @@ useHead({
           }
 
           .message-meta {
-            margin-left: 16px;
+            margin-inline-start: 16px;
 
             span {
               display: block;
@@ -901,7 +897,7 @@ useHead({
           }
 
           .pushed {
-            margin-left: auto;
+            margin-inline-start: auto;
             color: var(--muted-grey);
             font-size: 0.9rem;
           }
@@ -912,7 +908,7 @@ useHead({
     .inbox-message-overlay {
       position: absolute;
       top: 0;
-      left: 52%;
+      inset-inline-start: 52%;
       height: 100%;
       width: 48%;
       z-index: -1;
@@ -938,7 +934,7 @@ useHead({
     .inbox-message-details {
       position: absolute;
       top: 0;
-      left: 52%;
+      inset-inline-start: 52%;
       height: 100%;
       width: 48%;
       transition: all 0.3s; // transition-all test
@@ -961,7 +957,7 @@ useHead({
         }
 
         .message-meta {
-          margin-left: 12px;
+          margin-inline-start: 12px;
           line-height: 1.3;
 
           span {
@@ -986,8 +982,8 @@ useHead({
           display: flex;
           justify-content: center;
           align-items: center;
-          margin-left: auto;
-          margin-right: 12px;
+          margin-inline-start: auto;
+          margin-inline-end: 12px;
           font-size: 1.2rem;
 
           i {
@@ -1004,7 +1000,7 @@ useHead({
             font-family: var(--font);
             font-weight: 600;
             display: block;
-            margin-left: 4px;
+            margin-inline-start: 4px;
           }
         }
 
@@ -1051,7 +1047,7 @@ useHead({
             }
 
             .message-actions {
-              margin-left: auto;
+              margin-inline-start: auto;
               display: flex;
               align-items: center;
             }
@@ -1086,7 +1082,7 @@ useHead({
               box-shadow: var(--light-box-shadow);
 
               .download-icon {
-                transform: rotate(360deg);
+                transform: rotate(calc(var(--transform-direction) * 360deg));
                 background: var(--secondary);
                 border-color: var(--secondary);
                 box-shadow: var(--secondary-box-shadow);
@@ -1103,7 +1099,7 @@ useHead({
 
             span {
               display: block;
-              margin-right: 8px;
+              margin-inline-end: 8px;
               font-size: 0.95rem;
               font-weight: 500;
               color: var(--dark-text);
@@ -1150,7 +1146,7 @@ useHead({
             &::after,
             &::before {
               bottom: 100%;
-              left: 6%;
+              inset-inline-start: 6%;
               border: solid transparent;
               content: ' ';
               height: 0;
@@ -1163,14 +1159,14 @@ useHead({
               border-color: rgb(255 255 255 / 0%);
               border-bottom-color: var(--white);
               border-width: 16px;
-              margin-left: -16px;
+              margin-inline-start: -16px;
             }
 
             &::before {
               border-color: rgb(237 237 237 / 0%);
               border-bottom-color: #e0e0e0;
               border-width: 17px;
-              margin-left: -17px;
+              margin-inline-start: -17px;
             }
 
             .reply-as {
@@ -1185,7 +1181,7 @@ useHead({
               }
 
               .reply-details {
-                margin-left: 12px;
+                margin-inline-start: 12px;
 
                 span {
                   display: block;
@@ -1204,7 +1200,7 @@ useHead({
               }
 
               .dropdown {
-                margin-left: auto;
+                margin-inline-start: auto;
               }
             }
 
@@ -1222,7 +1218,7 @@ useHead({
                 position: absolute;
                 height: 38px;
                 bottom: 8px;
-                right: 8px;
+                inset-inline-end: 8px;
                 background: var(--secondary);
                 border-color: var(--secondary);
                 color: var(--smoke-white);
@@ -1340,7 +1336,7 @@ useHead({
       }
 
       span {
-        margin-left: 12px;
+        margin-inline-start: 12px;
       }
     }
   }
@@ -1353,17 +1349,17 @@ useHead({
 .compose-panel {
   position: fixed;
   top: 65px;
-  right: 0;
+  inset-inline-end: 0;
   height: calc(100% - 65px);
   width: calc(48% - 40px);
   background: var(--white);
-  border-left: 1px solid var(--fade-grey);
+  border-inline-start: 1px solid var(--fade-grey);
   z-index: 10;
-  transform: translateX(100%);
+  transform: translateX(calc(var(--transform-direction) * 100%));
   transition: all 0.3s; // transition-all test
 
   &.is-active {
-    transform: translateX(0);
+    transform: translateX(calc(var(--transform-direction) * 0));
   }
 
   .header-area {
@@ -1381,11 +1377,11 @@ useHead({
     }
 
     .dropdown {
-      margin-left: 6px;
+      margin-inline-start: 6px;
     }
 
     .inbox-action {
-      margin-left: auto;
+      margin-inline-start: auto;
     }
   }
 
@@ -1409,9 +1405,9 @@ useHead({
           display: block;
           font-weight: 600;
           font-size: 1.1rem;
-          text-align: right;
+          text-align: inset-inline-end;
           color: var(--dark-text);
-          margin-right: 20px;
+          margin-inline-end: 20px;
           min-width: 60px;
         }
 
@@ -1434,7 +1430,7 @@ useHead({
             position: absolute;
             height: 38px;
             bottom: 8px;
-            right: 8px;
+            inset-inline-end: 8px;
             background: var(--secondary);
             border-color: var(--secondary);
             color: var(--smoke-white);
@@ -1451,7 +1447,7 @@ useHead({
             height: 38px;
             width: 38px;
             bottom: 8px;
-            left: 16px;
+            inset-inline-start: 16px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -1484,7 +1480,7 @@ Dark mode
   .inbox-wrapper {
     .wrapper-inner {
       .inbox-sidebar {
-        border-right: none;
+        border-inline-end: none;
 
         .header-area {
           background: var(--dark-sidebar);
@@ -1569,7 +1565,7 @@ Dark mode
 
       .inbox-messages {
         border-color: var(--dark-sidebar-light-12);
-        border-left: 1px solid var(--dark-sidebar-light-12) !important;
+        border-inline-start: 1px solid var(--dark-sidebar-light-12) !important;
 
         .header-area {
           background: var(--dark-sidebar);
@@ -1739,16 +1735,16 @@ Dark mode
   .inbox-messages,
   .inbox-sidebar,
   .inbox-message-overlay {
-    left: 0 !important;
+    inset-inline-start: 0 !important;
   }
 
   .inbox-sidebar {
-    transform: translateX(-100%);
+    transform: translateX(calc(var(--transform-direction) * -100%));
     z-index: 1 !important;
     transition: all 0.3s !important;
 
     &.mobile-active {
-      transform: translateX(0) !important;
+      transform: translateX(calc(var(--transform-direction) * 0)) !important;
     }
 
     .dropdown {
@@ -1771,7 +1767,7 @@ Dark mode
     }
 
     .check-all-action {
-      margin-right: 16px;
+      margin-inline-end: 16px;
     }
 
     .inbox-message {
@@ -1782,11 +1778,11 @@ Dark mode
   }
 
   .inbox-message-details {
-    left: 0 !important;
-    transform: translateX(100%);
+    inset-inline-start: 0 !important;
+    transform: translateX(calc(var(--transform-direction) * 100%));
 
     &.mobile-active {
-      transform: translateX(0);
+      transform: translateX(calc(var(--transform-direction) * 0));
     }
 
     .header-area {
@@ -1811,7 +1807,7 @@ Dark mode
       }
 
       .dropdown {
-        margin-left: auto !important;
+        margin-inline-start: auto !important;
       }
 
       .inbox-close-details-mobile {
@@ -1835,20 +1831,20 @@ Dark mode
           width: 100%;
 
           .download-icon {
-            margin-left: auto !important;
+            margin-inline-start: auto !important;
           }
         }
       }
     }
 
     .reply-box-wrap {
-      padding-left: 10px !important;
-      padding-right: 10px !important;
+      padding-inline-start: 10px !important;
+      padding-inline-end: 10px !important;
 
       .reply-bubble {
         &::after,
         &::before {
-          left: 16% !important;
+          inset-inline-start: 16% !important;
         }
       }
     }
@@ -1867,7 +1863,7 @@ Dark mode
           display: block;
 
           label {
-            text-align: left;
+            text-align: inset-inline-start;
           }
 
           .textarea {
@@ -1895,16 +1891,16 @@ Dark mode
   .inbox-messages,
   .inbox-sidebar,
   .inbox-message-overlay {
-    left: 0 !important;
+    inset-inline-start: 0 !important;
   }
 
   .inbox-sidebar {
-    transform: translateX(-100%);
+    transform: translateX(calc(var(--transform-direction) * -100%));
     z-index: 1 !important;
     transition: all 0.3s !important;
 
     &.mobile-active {
-      transform: translateX(0) !important;
+      transform: translateX(calc(var(--transform-direction) * 0)) !important;
     }
 
     .dropdown {
@@ -1923,11 +1919,11 @@ Dark mode
   }
 
   .inbox-message-details {
-    left: 0 !important;
-    transform: translateX(100%);
+    inset-inline-start: 0 !important;
+    transform: translateX(calc(var(--transform-direction) * 100%));
 
     &.mobile-active {
-      transform: translateX(0);
+      transform: translateX(calc(var(--transform-direction) * 0));
     }
 
     .header-area {
@@ -1938,7 +1934,7 @@ Dark mode
       }
 
       .dropdown {
-        margin-left: auto !important;
+        margin-inline-start: auto !important;
       }
 
       .inbox-close-details-mobile {
@@ -1962,20 +1958,20 @@ Dark mode
           width: 100%;
 
           .download-icon {
-            margin-left: auto !important;
+            margin-inline-start: auto !important;
           }
         }
       }
     }
 
     .reply-box-wrap {
-      padding-left: 10px !important;
-      padding-right: 10px !important;
+      padding-inline-start: 10px !important;
+      padding-inline-end: 10px !important;
 
       .reply-bubble {
         &::after,
         &::before {
-          left: 5% !important;
+          inset-inline-start: 5% !important;
         }
       }
     }
@@ -1994,7 +1990,7 @@ Dark mode
           display: block;
 
           label {
-            text-align: left;
+            text-align: inset-inline-start;
           }
 
           .textarea {
@@ -2019,26 +2015,26 @@ Dark mode
 
   .inbox-messages {
     width: 68% !important;
-    left: 32% !important;
+    inset-inline-start: 32% !important;
   }
 
   .inbox-message-details,
   .inbox-message-overlay {
-    right: 0 !important;
-    left: unset !important;
+    inset-inline-end: 0 !important;
+    inset-inline-start: unset !important;
     width: 68% !important;
-    transform: translateX(100%);
+    transform: translateX(calc(var(--transform-direction) * 100%));
     transition: all 0.3s; // transition-all test
 
     &.tablet-active {
-      transform: translateX(0) !important;
+      transform: translateX(calc(var(--transform-direction) * 0)) !important;
     }
   }
 
   .inbox-message-details {
     .header-area {
       .dropdown {
-        margin-left: auto !important;
+        margin-inline-start: auto !important;
       }
 
       .inbox-close-details-mobile {

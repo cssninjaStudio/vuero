@@ -53,7 +53,7 @@ const activeTab = ref<TabId>('overview')
 .lifestyle-dashboard-bg {
   position: absolute;
   top: 0;
-  left: 0;
+  inset-inline-start: 0;
   width: 100%;
   height: 355px;
   background: var(--white);
@@ -102,7 +102,7 @@ const activeTab = ref<TabId>('overview')
 
     .field {
       z-index: 5;
-      min-width: 135px;
+      min-width: 160px;
 
       .multiselect {
         .multiselect-input {
@@ -112,7 +112,7 @@ const activeTab = ref<TabId>('overview')
         }
 
         .multiselect-options {
-          left: unset !important;
+          inset-inline-start: unset !important;
           min-width: 180px;
         }
       }
@@ -144,7 +144,7 @@ const activeTab = ref<TabId>('overview')
 
       i {
         font-size: 1.2rem;
-        margin-right: 6px;
+        margin-inline-end: 6px;
       }
 
       .count {
@@ -160,8 +160,8 @@ const activeTab = ref<TabId>('overview')
 
     .post-group {
       display: flex;
-      margin-left: -6px;
-      margin-right: -6px;
+      margin-inline-start: -6px;
+      margin-inline-end: -6px;
 
       a {
         display: block;

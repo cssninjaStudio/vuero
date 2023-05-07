@@ -31,7 +31,16 @@ const emit = defineEmits(['close'])
         <VCollapseLinks>
           <template #header>
             Icons
-            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+            <i
+              aria-hidden="true"
+              class="iconify rtl-hidden"
+              data-icon="feather:chevron-right"
+            />
+            <i
+              aria-hidden="true"
+              class="iconify ltr-hidden"
+              data-icon="feather:chevron-left"
+            />
           </template>
 
           <RouterLink to="/elements/icons/iconify" class="is-submenu">
@@ -101,7 +110,16 @@ const emit = defineEmits(['close'])
         <VCollapseLinks>
           <template #header>
             Buttons
-            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+            <i
+              aria-hidden="true"
+              class="iconify rtl-hidden"
+              data-icon="feather:chevron-right"
+            />
+            <i
+              aria-hidden="true"
+              class="iconify ltr-hidden"
+              data-icon="feather:chevron-left"
+            />
           </template>
 
           <RouterLink to="/elements/button" class="is-submenu"> VButton </RouterLink>
@@ -115,7 +133,16 @@ const emit = defineEmits(['close'])
           <template #header>
             Forms
             <VTag label="v2.3" class="ml-2" color="primary" outlined curved />
-            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+            <i
+              aria-hidden="true"
+              class="iconify rtl-hidden"
+              data-icon="feather:chevron-right"
+            />
+            <i
+              aria-hidden="true"
+              class="iconify ltr-hidden"
+              data-icon="feather:chevron-left"
+            />
           </template>
 
           <RouterLink to="/elements/forms/field" class="is-submenu">
@@ -159,7 +186,16 @@ const emit = defineEmits(['close'])
         <VCollapseLinks>
           <template #header>
             Switches
-            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+            <i
+              aria-hidden="true"
+              class="iconify rtl-hidden"
+              data-icon="feather:chevron-right"
+            />
+            <i
+              aria-hidden="true"
+              class="iconify ltr-hidden"
+              data-icon="feather:chevron-left"
+            />
           </template>
 
           <RouterLink to="/elements/animated-checkbox" class="is-submenu">
@@ -182,7 +218,16 @@ const emit = defineEmits(['close'])
         <VCollapseLinks>
           <template #header>
             Addons
-            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+            <i
+              aria-hidden="true"
+              class="iconify rtl-hidden"
+              data-icon="feather:chevron-right"
+            />
+            <i
+              aria-hidden="true"
+              class="iconify ltr-hidden"
+              data-icon="feather:chevron-left"
+            />
           </template>
 
           <RouterLink to="/elements/addons/calendar" class="is-submenu">

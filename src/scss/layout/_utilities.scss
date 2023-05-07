@@ -85,7 +85,7 @@ var {
         width: 36%;
         display: block;
         position: absolute;
-        left: 0;
+        inset-inline-start: 0;
         top: 0.9em;
         height: 1px;
         content: ' ';
@@ -93,8 +93,8 @@ var {
       }
 
       &::after {
-        right: 0;
-        left: auto;
+        inset-inline-end: 0;
+        inset-inline-start: auto;
       }
     }
   }
@@ -134,7 +134,11 @@ var {
 }
 
 .ml-auto {
-  margin-left: auto !important;
+  margin-inline-start: auto !important;
+}
+
+.mr-auto {
+  margin-inline-end: auto !important;
 }
 
 .no-padding {
@@ -269,40 +273,40 @@ var {
     height: 30px;
 
     &.active > span.rotate {
-      transform: rotate(90deg);
-      transform: translate(0, 0) rotate(90deg);
-      transform: translate(0, 0) rotate(90deg);
-      transform: translate(0, 0) rotate(90deg);
-      transform: translate(0, 0) rotate(90deg);
+      transform: rotate(calc(var(--transform-direction) * 90deg));
+      transform: translate(0, 0) rotate(calc(var(--transform-direction) * 90deg));
+      transform: translate(0, 0) rotate(calc(var(--transform-direction) * 90deg));
+      transform: translate(0, 0) rotate(calc(var(--transform-direction) * 90deg));
+      transform: translate(0, 0) rotate(calc(var(--transform-direction) * 90deg));
     }
 
     &.active > span > i.icon-line-center {
       visibility: hidden;
       width: 1px;
       height: 3px;
-      left: 70%;
+      inset-inline-start: 70%;
     }
 
     &.active > span > i.icon-line-bottom {
       margin: -2px 0 0 -10px;
-      left: 50%;
+      inset-inline-start: 50%;
       top: 12px;
-      transform: rotate(135deg);
-      transform: translate(0, 0) rotate(135deg);
-      transform: translate(0, 0) rotate(135deg);
-      transform: translate(0, 0) rotate(135deg);
-      transform: translate(0, 0) rotate(135deg);
+      transform: rotate(calc(var(--transform-direction) * 135deg));
+      transform: translate(0, 0) rotate(calc(var(--transform-direction) * 135deg));
+      transform: translate(0, 0) rotate(calc(var(--transform-direction) * 135deg));
+      transform: translate(0, 0) rotate(calc(var(--transform-direction) * 135deg));
+      transform: translate(0, 0) rotate(calc(var(--transform-direction) * 135deg));
     }
 
     &.active > span > i.icon-line-top {
       margin: -2px 0 0 -10px;
-      left: 50%;
+      inset-inline-start: 50%;
       top: 12px;
-      transform: rotate(45deg);
-      transform: translate(0, 0) rotate(45deg);
-      transform: translate(0, 0) rotate(45deg);
-      transform: translate(0, 0) rotate(45deg);
-      transform: translate(0, 0) rotate(45deg);
+      transform: rotate(calc(var(--transform-direction) * 45deg));
+      transform: translate(0, 0) rotate(calc(var(--transform-direction) * 45deg));
+      transform: translate(0, 0) rotate(calc(var(--transform-direction) * 45deg));
+      transform: translate(0, 0) rotate(calc(var(--transform-direction) * 45deg));
+      transform: translate(0, 0) rotate(calc(var(--transform-direction) * 45deg));
     }
   }
 
@@ -312,7 +316,7 @@ var {
     height: 2px;
     background: var(--primary);
     margin: -1px 0 0 -10px;
-    left: 50%;
+    inset-inline-start: 50%;
     top: 12px;
     transition: all 0.3s; // transition-all test
   }
@@ -323,7 +327,7 @@ var {
     height: 2px;
     background: var(--primary);
     margin: -3px 0 0 -10px;
-    left: 50%;
+    inset-inline-start: 50%;
     top: 6px;
     transition: all 0.3s; // transition-all test
   }
@@ -334,15 +338,11 @@ var {
     height: 2px;
     background: var(--primary);
     margin: 2px 0 0 -10px;
-    left: 50%;
+    inset-inline-start: 50%;
     top: 17px;
     transition: all 0.3s; // transition-all test
   }
 }
-
-/* ==========================================================================
-5. Tooltips
-========================================================================== */
 
 /* ==========================================================================
 6. Alertify js
@@ -515,7 +515,7 @@ var {
 .text-tooltip {
   position: absolute;
   top: 100%;
-  left: 0;
+  inset-inline-start: 0;
   width: 100%;
   z-index: 999;
 
@@ -595,7 +595,7 @@ var {
 .demo-wrapper {
   position: fixed;
   bottom: -50px;
-  right: -50px;
+  inset-inline-end: -50px;
   height: 140px;
   width: 140px;
   background: transparent;
@@ -624,7 +624,7 @@ var {
     .form-switch {
       position: relative;
       top: -10px;
-      left: -10px;
+      inset-inline-start: -10px;
       display: block;
       transition: all 0.3s; // transition-all test
       opacity: 0;
@@ -714,7 +714,7 @@ var {
 
 #backtotop {
   position: fixed;
-  right: 0;
+  inset-inline-end: 0;
   opacity: 0;
   visibility: hidden;
   bottom: 25px;
@@ -755,5 +755,49 @@ var {
       position: relative;
       top: 6px;
     }
+  }
+}
+
+/* ==========================================================================
+18. LTR / RTL
+========================================================================== */
+
+[dir='ltr'] {
+  .rtl-hidden {
+    display: block !important;
+  }
+
+  .ltr-hidden {
+    display: none !important;
+  }
+
+  .rtl-hidden-flex {
+    display: flex !important;
+  }
+
+  .ltr-hidden-flex {
+    display: none !important;
+  }
+}
+
+[dir='rtl'] {
+  .ltr-hidden {
+    display: block !important;
+  }
+
+  .rtl-hidden {
+    display: none !important;
+  }
+
+  .ltr-hidden-flex {
+    display: flex !important;
+  }
+
+  .rtl-hidden-flex {
+    display: none !important;
+  }
+
+  .rtl-reflect {
+    transform: scaleX(-1);
   }
 }

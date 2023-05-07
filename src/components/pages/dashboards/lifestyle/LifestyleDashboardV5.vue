@@ -290,12 +290,12 @@ import {
 
             .item-duration {
               top: 40px;
-              right: 40px;
+              inset-inline-end: 40px;
             }
 
             .play-button {
               top: 40px;
-              left: 40px;
+              inset-inline-start: 40px;
               height: 60px;
               width: 60px;
               border-radius: 1rem;
@@ -323,7 +323,7 @@ import {
           .play-button {
             position: absolute;
             top: 20px;
-            left: 20px;
+            inset-inline-start: 20px;
             background: var(--white);
             height: 40px;
             width: 40px;
@@ -348,7 +348,7 @@ import {
             svg,
             svg * {
               position: relative;
-              left: 2px;
+              inset-inline-start: 2px;
               height: 15px;
               width: 15px;
               fill: var(--dark-text);
@@ -361,15 +361,15 @@ import {
           .item-duration {
             position: absolute;
             top: 20px;
-            right: 20px;
+            inset-inline-end: 20px;
             background: var(--primary);
             box-shadow: var(--primary-box-shadow);
             font-family: var(--font);
             font-weight: 500;
             color: var(--white);
             height: 2.75em;
-            padding-left: 1rem;
-            padding-right: 1rem;
+            padding-inline-start: 1rem;
+            padding-inline-end: 1rem;
             border-radius: 0.5rem;
             line-height: 2.7;
             z-index: 3;
@@ -378,7 +378,7 @@ import {
           .overlay-layer {
             position: absolute;
             top: 0;
-            left: 0;
+            inset-inline-start: 0;
             height: 100%;
             width: 100%;
             z-index: 2;
@@ -414,7 +414,7 @@ import {
                     width: 30px;
                     min-width: 30px;
                     border-radius: 50%;
-                    margin-right: 6px;
+                    margin-inline-end: 6px;
                   }
 
                   .meta-item {
@@ -446,7 +446,7 @@ import {
           .item-overlay {
             position: absolute;
             top: 0;
-            left: 0;
+            inset-inline-start: 0;
             height: 100%;
             width: 100%;
             background: linear-gradient(to top, #161616, rgb(255 0 0 / 0%));

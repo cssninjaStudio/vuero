@@ -216,7 +216,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-layout-alt"></i>
                   </div>
                   <div class="meta">
-                    <span>Datatable V1</span>
+                    <span>Table List V1</span>
                   </div>
                 </RouterLink>
                 <RouterLink
@@ -227,7 +227,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-layout-alt"></i>
                   </div>
                   <div class="meta">
-                    <span>Datatable V2</span>
+                    <span>Table List V2</span>
                   </div>
                 </RouterLink>
                 <RouterLink
@@ -238,18 +238,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                     <i aria-hidden="true" class="lnil lnil-layout-alt"></i>
                   </div>
                   <div class="meta">
-                    <span>Datatable V3</span>
-                  </div>
-                </RouterLink>
-                <RouterLink
-                  to="/navbar/layouts/list-datatable-4"
-                  class="dropdown-item is-media"
-                >
-                  <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-layout-alt"></i>
-                  </div>
-                  <div class="meta">
-                    <span>Datatable V4</span>
+                    <span>Table List V3</span>
                   </div>
                 </RouterLink>
               </div>

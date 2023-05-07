@@ -257,8 +257,8 @@ const onSubmit = () => {
             .radio-boxes {
               display: flex;
               justify-content: space-between;
-              margin-left: -8px;
-              margin-right: -8px;
+              margin-inline-start: -8px;
+              margin-inline-end: -8px;
 
               .radio-box {
                 position: relative;
@@ -276,7 +276,7 @@ const onSubmit = () => {
                 input {
                   position: absolute;
                   top: 0;
-                  left: 0;
+                  inset-inline-start: 0;
                   height: 100%;
                   width: 100%;
                   opacity: 0;
@@ -425,8 +425,8 @@ const onSubmit = () => {
     &.is-separate {
       .form-outer {
         .form-body {
-          padding-left: 0;
-          padding-right: 0;
+          padding-inline-start: 0;
+          padding-inline-end: 0;
           flex-direction: column;
 
           .form-section {
@@ -447,8 +447,8 @@ const onSubmit = () => {
     &.is-separate {
       .form-outer {
         .form-body {
-          padding-left: 0;
-          padding-right: 0;
+          padding-inline-start: 0;
+          padding-inline-end: 0;
 
           // flex-direction: column;
 

@@ -225,7 +225,7 @@ const panels = usePanels()
               button {
                 height: 40px;
                 width: 40px;
-                border-right: 50%;
+                border-inline-end: 50%;
                 background: none;
                 border: 1.8px dashed var(--light-text);
                 border-radius: var(--radius-rounded);
@@ -256,7 +256,7 @@ const panels = usePanels()
             display: flex;
 
             *:last-child {
-              margin-left: auto;
+              margin-inline-start: auto;
             }
 
             .task-stat,
@@ -266,7 +266,7 @@ const panels = usePanels()
               color: var(--light-text);
 
               span {
-                margin-left: 3px;
+                margin-inline-start: 3px;
               }
 
               svg {
@@ -276,7 +276,7 @@ const panels = usePanels()
             }
 
             .task-stat {
-              margin-right: 15px;
+              margin-inline-end: 15px;
             }
 
             a {
@@ -287,7 +287,7 @@ const panels = usePanels()
               color: var(--primary);
 
               span {
-                margin-left: 5px;
+                margin-inline-start: 5px;
               }
 
               svg {
@@ -324,7 +324,7 @@ const panels = usePanels()
               }
 
               .meta {
-                margin-left: 12px;
+                margin-inline-start: 12px;
                 line-height: 1.3;
 
                 span {
@@ -353,7 +353,7 @@ const panels = usePanels()
               }
 
               .dropdown {
-                margin-left: auto;
+                margin-inline-start: auto;
               }
             }
           }
@@ -390,7 +390,7 @@ const panels = usePanels()
                 }
 
                 .button {
-                  margin-left: 10px;
+                  margin-inline-start: 10px;
                 }
               }
             }

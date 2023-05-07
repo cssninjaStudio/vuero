@@ -227,13 +227,13 @@ fieldset[disabled] .button.is-dark.is-inverted.is-outlined {
 }
 
 .button.is-primary {
-  background-color: rgb(65, 185, 131);
+  background-color: rgb(42, 172, 142);
   color: rgb(255, 255, 255);
 }
 
 .button.is-primary:hover,
 .button.is-primary.is-hovered {
-  background-color: rgb(65, 185, 131);
+  background-color: rgb(42, 172, 142);
   color: rgb(255, 255, 255);
 }
 
@@ -244,19 +244,19 @@ fieldset[disabled] .button.is-dark.is-inverted.is-outlined {
 
 .button.is-primary:active,
 .button.is-primary.is-active {
-  background-color: rgb(65, 185, 131);
+  background-color: rgb(42, 172, 142);
   color: rgb(255, 255, 255);
 }
 
 .button.is-primary[disabled],
 fieldset[disabled] .button.is-primary {
-  background-color: rgb(65, 185, 131);
-  border-color: rgb(65, 185, 131);
+  background-color: rgb(42, 172, 142);
+  border-color: rgb(42, 172, 142);
 }
 
 .button.is-primary.is-inverted {
   background-color: rgb(255, 255, 255);
-  color: rgb(65, 185, 131);
+  color: rgb(42, 172, 142);
 }
 
 .button.is-primary.is-inverted:hover,
@@ -267,27 +267,27 @@ fieldset[disabled] .button.is-primary {
 .button.is-primary.is-inverted[disabled],
 fieldset[disabled] .button.is-primary.is-inverted {
   background-color: rgb(255, 255, 255);
-  color: rgb(65, 185, 131);
+  color: rgb(42, 172, 142);
 }
 
 .button.is-primary.is-outlined {
-  border-color: rgb(65, 185, 131);
-  color: rgb(65, 185, 131);
+  border-color: rgb(42, 172, 142);
+  color: rgb(42, 172, 142);
 }
 
 .button.is-primary.is-outlined:hover,
 .button.is-primary.is-outlined.is-hovered,
 .button.is-primary.is-outlined:focus,
 .button.is-primary.is-outlined.is-focused {
-  background-color: rgb(65, 185, 131);
-  border-color: rgb(65, 185, 131);
+  background-color: rgb(42, 172, 142);
+  border-color: rgb(42, 172, 142);
   color: rgb(255, 255, 255);
 }
 
 .button.is-primary.is-outlined[disabled],
 fieldset[disabled] .button.is-primary.is-outlined {
-  border-color: rgb(65, 185, 131);
-  color: rgb(65, 185, 131);
+  border-color: rgb(42, 172, 142);
+  color: rgb(42, 172, 142);
 }
 
 .button.is-primary.is-inverted.is-outlined {
@@ -300,7 +300,7 @@ fieldset[disabled] .button.is-primary.is-outlined {
 .button.is-primary.is-inverted.is-outlined:focus,
 .button.is-primary.is-inverted.is-outlined.is-focused {
   background-color: rgb(255, 255, 255);
-  color: rgb(65, 185, 131);
+  color: rgb(42, 172, 142);
 }
 
 .button.is-primary.is-inverted.is-outlined[disabled],
@@ -310,20 +310,20 @@ fieldset[disabled] .button.is-primary.is-inverted.is-outlined {
 }
 
 .button.is-primary.is-light {
-  background-color: rgb(240, 250, 245);
-  color: rgb(45, 128, 91);
+  background-color: rgb(239, 251, 248);
+  color: rgb(37, 152, 125);
 }
 
 .button.is-primary.is-light:hover,
 .button.is-primary.is-light.is-hovered {
-  background-color: rgb(240, 250, 245);
-  color: rgb(45, 128, 91);
+  background-color: rgb(239, 251, 248);
+  color: rgb(37, 152, 125);
 }
 
 .button.is-primary.is-light:active,
 .button.is-primary.is-light.is-active {
-  background-color: rgb(240, 250, 245);
-  color: rgb(45, 128, 91);
+  background-color: rgb(239, 251, 248);
+  color: rgb(37, 152, 125);
 }
 
 .button.is-link {
@@ -850,13 +850,13 @@ fieldset[disabled] .button {
 }
 
 .notification.is-primary {
-  background-color: rgb(65, 185, 131);
+  background-color: rgb(42, 172, 142);
   color: rgb(255, 255, 255);
 }
 
 .notification.is-primary.is-light {
-  background-color: rgb(240, 250, 245);
-  color: rgb(45, 128, 91);
+  background-color: rgb(239, 251, 248);
+  color: rgb(37, 152, 125);
 }
 
 .notification.is-link {
@@ -934,15 +934,15 @@ fieldset[disabled] .button {
 }
 
 .progress.is-primary::-webkit-progress-value {
-  background-color: rgb(65, 185, 131);
+  background-color: rgb(42, 172, 142);
 }
 
 .progress.is-primary::-moz-progress-bar {
-  background-color: rgb(65, 185, 131);
+  background-color: rgb(42, 172, 142);
 }
 
 .progress.is-primary::-ms-fill {
-  background-color: rgb(65, 185, 131);
+  background-color: rgb(42, 172, 142);
 }
 
 .progress.is-link::-webkit-progress-value {
@@ -1029,8 +1029,8 @@ fieldset[disabled] .button {
 
 .table td.is-primary,
 .table th.is-primary {
-  background-color: rgb(65, 185, 131);
-  border-color: rgb(65, 185, 131);
+  background-color: rgb(42, 172, 142);
+  border-color: rgb(42, 172, 142);
   color: rgb(255, 255, 255);
 }
 
@@ -1071,12 +1071,12 @@ fieldset[disabled] .button {
 
 .table td.is-selected,
 .table th.is-selected {
-  background-color: rgb(65, 185, 131);
+  background-color: rgb(42, 172, 142);
   color: rgb(255, 255, 255);
 }
 
 .table tr.is-selected {
-  background-color: rgb(65, 185, 131);
+  background-color: rgb(42, 172, 142);
   color: rgb(255, 255, 255);
 }
 
@@ -1099,13 +1099,13 @@ fieldset[disabled] .button {
 }
 
 .tag:not(body).is-primary {
-  background-color: rgb(65, 185, 131);
+  background-color: rgb(42, 172, 142);
   color: rgb(255, 255, 255);
 }
 
 .tag:not(body).is-primary.is-light {
-  background-color: rgb(240, 250, 245);
-  color: rgb(45, 128, 91);
+  background-color: rgb(239, 251, 248);
+  color: rgb(37, 152, 125);
 }
 
 .tag:not(body).is-link {
@@ -1191,7 +1191,7 @@ fieldset[disabled] .button {
 
 .is-primary.textarea,
 .is-primary.input {
-  border-color: rgb(65, 185, 131);
+  border-color: rgb(42, 172, 142);
 }
 
 .is-link.textarea,
@@ -1250,16 +1250,16 @@ fieldset[disabled] .button {
 }
 
 .select.is-primary:not(:hover)::after {
-  border-color: rgb(65, 185, 131);
+  border-color: rgb(42, 172, 142);
 }
 
 .select.is-primary select {
-  border-color: rgb(65, 185, 131);
+  border-color: rgb(42, 172, 142);
 }
 
 .select.is-primary select:hover,
 .select.is-primary select.is-hovered {
-  border-color: rgb(65, 185, 131);
+  border-color: rgb(42, 172, 142);
 }
 
 .select.is-link:not(:hover)::after {
@@ -1383,13 +1383,13 @@ fieldset[disabled] .button {
 }
 
 .file.is-primary .file-cta {
-  background-color: rgb(65, 185, 131);
+  background-color: rgb(42, 172, 142);
   color: rgb(255, 255, 255);
 }
 
 .file.is-primary:hover .file-cta,
 .file.is-primary.is-hovered .file-cta {
-  background-color: rgb(65, 185, 131);
+  background-color: rgb(42, 172, 142);
   color: rgb(255, 255, 255);
 }
 
@@ -1400,7 +1400,7 @@ fieldset[disabled] .button {
 
 .file.is-primary:active .file-cta,
 .file.is-primary.is-active .file-cta {
-  background-color: rgb(65, 185, 131);
+  background-color: rgb(42, 172, 142);
   color: rgb(255, 255, 255);
 }
 
@@ -1523,7 +1523,7 @@ fieldset[disabled] .button {
 }
 
 .help.is-primary {
-  color: rgb(65, 185, 131);
+  color: rgb(42, 172, 142);
 }
 
 .help.is-link {
@@ -1599,17 +1599,17 @@ button.dropdown-item.is-active {
 }
 
 .message.is-primary {
-  background-color: rgb(240, 250, 245);
+  background-color: rgb(239, 251, 248);
 }
 
 .message.is-primary .message-header {
-  background-color: rgb(65, 185, 131);
+  background-color: rgb(42, 172, 142);
   color: rgb(255, 255, 255);
 }
 
 .message.is-primary .message-body {
-  border-color: rgb(65, 185, 131);
-  color: rgb(45, 128, 91);
+  border-color: rgb(42, 172, 142);
+  color: rgb(37, 152, 125);
 }
 
 .message.is-link {
@@ -1871,7 +1871,7 @@ button.dropdown-item.is-active {
 }
 
 .navbar.is-primary {
-  background-color: rgb(65, 185, 131);
+  background-color: rgb(42, 172, 142);
   color: rgb(255, 255, 255);
 }
 
@@ -1886,7 +1886,7 @@ button.dropdown-item.is-active {
 .navbar.is-primary .navbar-brand .navbar-link:focus,
 .navbar.is-primary .navbar-brand .navbar-link:hover,
 .navbar.is-primary .navbar-brand .navbar-link.is-active {
-  background-color: rgb(65, 185, 131);
+  background-color: rgb(42, 172, 142);
   color: rgb(255, 255, 255);
 }
 
@@ -1918,7 +1918,7 @@ button.dropdown-item.is-active {
   .navbar.is-primary .navbar-end .navbar-link:focus,
   .navbar.is-primary .navbar-end .navbar-link:hover,
   .navbar.is-primary .navbar-end .navbar-link.is-active {
-    background-color: rgb(65, 185, 131);
+    background-color: rgb(42, 172, 142);
     color: rgb(255, 255, 255);
   }
 
@@ -1930,12 +1930,12 @@ button.dropdown-item.is-active {
   .navbar.is-primary .navbar-item.has-dropdown:focus .navbar-link,
   .navbar.is-primary .navbar-item.has-dropdown:hover .navbar-link,
   .navbar.is-primary .navbar-item.has-dropdown.is-active .navbar-link {
-    background-color: rgb(65, 185, 131);
+    background-color: rgb(42, 172, 142);
     color: rgb(255, 255, 255);
   }
 
   .navbar.is-primary .navbar-dropdown a.navbar-item.is-active {
-    background-color: rgb(65, 185, 131);
+    background-color: rgb(42, 172, 142);
     color: rgb(255, 255, 255);
   }
 }
@@ -2371,16 +2371,16 @@ a.navbar-item.is-active,
 }
 
 .panel.is-primary .panel-heading {
-  background-color: rgb(65, 185, 131);
+  background-color: rgb(42, 172, 142);
   color: rgb(255, 255, 255);
 }
 
 .panel.is-primary .panel-tabs a.is-active {
-  border-bottom-color: rgb(65, 185, 131);
+  border-bottom-color: rgb(42, 172, 142);
 }
 
 .panel.is-primary .panel-block.is-active .panel-icon {
-  color: rgb(65, 185, 131);
+  color: rgb(42, 172, 142);
 }
 
 .panel.is-link .panel-heading {
@@ -2601,7 +2601,7 @@ a.navbar-item.is-active,
 }
 
 .hero.is-primary {
-  background-color: rgb(65, 185, 131);
+  background-color: rgb(42, 172, 142);
   color: rgb(255, 255, 255);
 }
 
@@ -2620,7 +2620,7 @@ a.navbar-item.is-active,
 
 @media screen and (max-width: 1023px) {
   .hero.is-primary .navbar-menu {
-    background-color: rgb(65, 185, 131);
+    background-color: rgb(42, 172, 142);
   }
 }
 
@@ -2633,7 +2633,7 @@ a.navbar-item.is-active,
 .hero.is-primary a.navbar-item.is-active,
 .hero.is-primary .navbar-link:hover,
 .hero.is-primary .navbar-link.is-active {
-  background-color: rgb(65, 185, 131);
+  background-color: rgb(42, 172, 142);
   color: rgb(255, 255, 255);
 }
 
@@ -2652,7 +2652,7 @@ a.navbar-item.is-active,
 .hero.is-primary .tabs.is-toggle li.is-active a:hover {
   background-color: rgb(255, 255, 255);
   border-color: rgb(255, 255, 255);
-  color: rgb(65, 185, 131);
+  color: rgb(42, 172, 142);
 }
 
 .hero.is-link {
@@ -2931,7 +2931,7 @@ a.navbar-item.is-active,
 }
 
 .is-dark .menu-toggle i {
-  background: rgb(65, 185, 131);
+  background: rgb(42, 172, 142);
   color: rgb(255, 255, 255);
 }
 
@@ -2952,7 +2952,7 @@ body.opened {
 }
 
 .toolbar .toolbar-notifications .dropdown .dropdown-menu .dropdown-content .heading .heading-right .notification-link {
-  color: rgb(65, 185, 131);
+  color: rgb(42, 172, 142);
 }
 
 .toolbar .toolbar-link:hover {
@@ -2968,7 +2968,7 @@ body.opened {
 }
 
 .navbar-subnavbar .navbar-subnavbar-inner .tabs ul li.is-active a {
-  color: rgb(65, 185, 131);
+  color: rgb(42, 172, 142);
   background: rgb(255, 255, 255);
 }
 
@@ -2981,36 +2981,36 @@ body.opened {
 }
 
 .navbar-subnavbar .navbar-subnavbar-inner .tab-content .tab-content-inner .center .column-placeholder.is-primary {
-  background: rgb(65, 185, 131);
-  border-color: rgb(65, 185, 131);
+  background: rgb(42, 172, 142);
+  border-color: rgb(42, 172, 142);
   color: rgb(255, 255, 255);
 }
 
 .navbar-subnavbar .navbar-subnavbar-inner .tab-content .tab-content-inner .center .column-placeholder:hover,
 .navbar-subnavbar .navbar-subnavbar-inner .tab-content .tab-content-inner .center .column-placeholder:focus {
-  border-color: rgb(65, 185, 131);
+  border-color: rgb(42, 172, 142);
 }
 
 .navbar-subnavbar .navbar-subnavbar-inner .tab-content .tab-content-inner .center .column-placeholder:hover h3,
 .navbar-subnavbar .navbar-subnavbar-inner .tab-content .tab-content-inner .center .column-placeholder:focus h3 {
-  color: rgb(65, 185, 131);
+  color: rgb(42, 172, 142);
 }
 
 .navbar-subnavbar .navbar-subnavbar-inner .tab-content .tab-content-inner .center ul li:hover a,
 .navbar-subnavbar .navbar-subnavbar-inner .tab-content .tab-content-inner .center ul li:focus a {
-  color: rgb(65, 185, 131);
+  color: rgb(42, 172, 142);
 }
 
 .navbar-subnavbar .navbar-subnavbar-inner .tab-content .tab-content-inner .center ul li.is-active a svg {
-  fill: rgb(65, 185, 131);
+  fill: rgb(42, 172, 142);
 }
 
 .navbar-subnavbar .navbar-subnavbar-inner .tab-content .tab-content-inner .center ul li .router-link-exact-active svg {
-  fill: rgb(65, 185, 131);
+  fill: rgb(42, 172, 142);
 }
 
 .navbar-subnavbar .navbar-subnavbar-inner .tab-content .tab-content-inner .center ul li a svg {
-  fill: rgb(65, 185, 131);
+  fill: rgb(42, 172, 142);
 }
 
 @media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
@@ -3030,11 +3030,11 @@ body.opened {
 }
 
 .right-panel-wrapper .right-panel .right-panel-head .close-panel:hover svg {
-  color: rgb(65, 185, 131);
+  color: rgb(42, 172, 142);
 }
 
 .is-dark .right-panel-wrapper .right-panel .right-panel-head .close-panel:hover svg {
-  color: rgb(65, 185, 131);
+  color: rgb(42, 172, 142);
 }
 
 p.white-text {
@@ -3042,11 +3042,11 @@ p.white-text {
 }
 
 code {
-  color: rgb(65, 185, 131);
+  color: rgb(42, 172, 142);
 }
 
 .is-dark code {
-  color: rgb(65, 185, 131);
+  color: rgb(42, 172, 142);
 }
 
 .is-dark strong {
@@ -3055,7 +3055,7 @@ code {
 
 .title.is-purple,
 .subtitle.is-purple {
-  color: rgb(65, 185, 131);
+  color: rgb(42, 172, 142);
 }
 
 .title.is-light,
@@ -3068,7 +3068,7 @@ code {
 }
 
 .is-purple {
-  color: rgb(65, 185, 131);
+  color: rgb(42, 172, 142);
 }
 
 .success-text {
@@ -3088,15 +3088,15 @@ code {
 }
 
 .menu-toggle .icon-line-center {
-  background: rgb(65, 185, 131);
+  background: rgb(42, 172, 142);
 }
 
 .menu-toggle .icon-line-top {
-  background: rgb(65, 185, 131);
+  background: rgb(42, 172, 142);
 }
 
 .menu-toggle .icon-line-bottom {
-  background: rgb(65, 185, 131);
+  background: rgb(42, 172, 142);
 }
 
 .text-tooltip .tooltip-content {
@@ -3104,17 +3104,17 @@ code {
 }
 
 .hopscotch-bubble .hopscotch-bubble-container .hopscotch-bubble-number {
-  background: rgb(65, 185, 131);
+  background: rgb(42, 172, 142);
 }
 
 .hopscotch-bubble .hopscotch-bubble-container .hopscotcv-actions .hopscotch-nav-button {
   background: rgb(255, 255, 255);
-  color: rgb(65, 185, 131);
-  border-color: rgb(65, 185, 131);
+  color: rgb(42, 172, 142);
+  border-color: rgb(42, 172, 142);
 }
 
 .hopscotch-bubble .hopscotch-bubble-container .hopscotcv-actions .hopscotch-nav-button:hover {
-  background: rgb(65, 185, 131);
+  background: rgb(42, 172, 142);
 }
 
 .demo-wrapper:hover {
@@ -3122,7 +3122,7 @@ code {
 }
 
 #backtotop.visible a:hover {
-  background: rgb(65, 185, 131);
+  background: rgb(42, 172, 142);
   color: rgb(255, 255, 255);
 }
 
@@ -3131,8 +3131,8 @@ code {
 }
 
 .r-card.is-primary {
-  background: rgb(65, 185, 131);
-  border-color: rgb(65, 185, 131);
+  background: rgb(42, 172, 142);
+  border-color: rgb(42, 172, 142);
   color: rgb(255, 255, 255);
 }
 
@@ -3141,8 +3141,8 @@ code {
 }
 
 .s-card.is-primary {
-  background: rgb(65, 185, 131);
-  border-color: rgb(65, 185, 131);
+  background: rgb(42, 172, 142);
+  border-color: rgb(42, 172, 142);
   color: rgb(255, 255, 255);
 }
 
@@ -3151,8 +3151,8 @@ code {
 }
 
 .l-card.is-primary {
-  background: rgb(65, 185, 131);
-  border-color: rgb(65, 185, 131);
+  background: rgb(42, 172, 142);
+  border-color: rgb(42, 172, 142);
   color: rgb(255, 255, 255);
 }
 
@@ -3163,7 +3163,7 @@ code {
 }
 
 .content blockquote.is-primary {
-  border-color: rgb(65, 185, 131);
+  border-color: rgb(42, 172, 142);
 }
 
 .content blockquote.is-success {
@@ -3183,19 +3183,19 @@ code {
 }
 
 .is-dark .content blockquote.is-primary {
-  border-color: rgb(65, 185, 131);
+  border-color: rgb(42, 172, 142);
 }
 
 .radio-list li label input:checked + .k-radio .radio-knob {
-  border-color: rgb(65, 185, 131);
+  border-color: rgb(42, 172, 142);
 }
 
 .radio-list li label .k-radio .radio-knob .knob-inner {
-  background: rgb(65, 185, 131);
+  background: rgb(42, 172, 142);
 }
 
 .select:not(.is-multiple):not(.is-loading)::after {
-  border-color: rgb(65, 185, 131);
+  border-color: rgb(42, 172, 142);
 }
 
 .field.has-textarea-addon .is-textarea-addon {
@@ -3203,19 +3203,19 @@ code {
 }
 
 .control.has-icon .input:focus + .form-icon svg {
-  color: rgb(65, 185, 131);
+  color: rgb(42, 172, 142);
 }
 
 .control.has-icon .input:focus + .form-icon .fas,
 .control.has-icon .input:focus + .form-icon .far,
 .control.has-icon .input:focus + .form-icon .fal,
 .control.has-icon .input:focus + .form-icon .fab {
-  color: rgb(65, 185, 131);
+  color: rgb(42, 172, 142);
 }
 
 .control.has-icon .input:focus + .form-icon .lnil,
 .control.has-icon .input:focus + .form-icon .lnir {
-  color: rgb(65, 185, 131);
+  color: rgb(42, 172, 142);
 }
 
 .control .help-text span.error {
@@ -3227,7 +3227,7 @@ code {
 }
 
 .is-dark .control.has-icon .input:focus ~ .form-icon svg {
-  color: rgb(65, 185, 131);
+  color: rgb(42, 172, 142);
 }
 
 .is-dark .control.has-icon .input:focus ~ .form-icon .fas,
@@ -3236,7 +3236,7 @@ code {
 .is-dark .control.has-icon .input:focus ~ .form-icon .fab,
 .is-dark .control.has-icon .input:focus ~ .form-icon .lnir,
 .is-dark .control.has-icon .input:focus ~ .form-icon .lnil {
-  color: rgb(65, 185, 131);
+  color: rgb(42, 172, 142);
 }
 
 .file.is-default .file-cta {
@@ -3245,13 +3245,13 @@ code {
 
 .filepond-profile-wrap:hover .lnil,
 .filepond-square-wrap:hover .lnil {
-  color: rgb(65, 185, 131);
+  color: rgb(42, 172, 142);
 }
 
 .is-dark .filepond-uploader:hover .lnil,
 .is-dark .filepond-profile-wrap:hover .lnil,
 .is-dark .filepond-square-wrap:hover .lnil {
-  color: rgb(65, 185, 131);
+  color: rgb(42, 172, 142);
 }
 
 .h-toggle .toggler .active,
@@ -3275,11 +3275,11 @@ code {
 }
 
 .slider-target .slider-base .slider-connects .slider-connect {
-  background: rgb(65, 185, 131);
+  background: rgb(42, 172, 142);
 }
 
 .slider-target .slider-base .slider-tooltip {
-  background: rgb(65, 185, 131);
+  background: rgb(42, 172, 142);
 }
 
 .is-slider-info .slider-target .slider-base .slider-connects .slider-connect {
@@ -3335,36 +3335,36 @@ code {
 }
 
 .steps-segment::after {
-  background-color: rgb(65, 185, 131);
+  background-color: rgb(42, 172, 142);
 }
 
 .steps:not(.is-hollow) .steps-marker:not(.is-hollow) {
-  background-color: rgb(65, 185, 131);
+  background-color: rgb(42, 172, 142);
 }
 
 .steps:not(.is-hollow) .steps-segment.is-active .steps-marker:not(.is-hollow) {
-  background-color: rgb(65, 185, 131);
+  background-color: rgb(42, 172, 142);
 }
 
 .steps.is-hollow .is-active .steps-marker,
 .steps .is-active .steps-marker.is-hollow {
-  border-color: rgb(65, 185, 131);
+  border-color: rgb(42, 172, 142);
 }
 
 .action-link {
-  color: rgb(65, 185, 131);
+  color: rgb(42, 172, 142);
 }
 
 .action-link:hover {
-  color: rgb(65, 185, 131);
+  color: rgb(42, 172, 142);
 }
 
 .is-dark .action-link {
-  color: rgb(65, 185, 131);
+  color: rgb(42, 172, 142);
 }
 
 .is-dark .action-link::after {
-  border-bottom-color: rgb(65, 185, 131);
+  border-bottom-color: rgb(42, 172, 142);
 }
 
 .user-list .user-list-status.is-online {
@@ -3376,7 +3376,11 @@ code {
 }
 
 #nprogress .bar {
-  background: rgb(65, 185, 131);
+  background: rgb(42, 172, 142);
+}
+
+.vc-popover-content-wrapper .vc-nav-popover-container .vc-nav-container .vc-nav-header .vc-nav-title {
+  color: rgb(255, 255, 255);
 }
 
 .vc-popover-content-wrapper .vc-nav-popover-container .vc-nav-container .vc-nav-header .vc-nav-arrow {
@@ -3395,36 +3399,40 @@ code {
   color: rgb(255, 255, 255);
 }
 
+.is-dark .vc-time-picker .vc-time-select-group {
+  color: rgb(255, 255, 255);
+}
+
 .is-divider[data-content]::after,
 .is-divider-vertical[data-content]::after {
   background: rgb(255, 255, 255);
 }
 
 .note-modal .note-modal-content .note-modal-footer .btn-primary {
-  background: rgb(65, 185, 131);
+  background: rgb(42, 172, 142);
 }
 
 .note-modal .note-modal-content .note-modal-footer .btn-primary {
-  background: rgb(65, 185, 131);
-  border-color: rgb(65, 185, 131);
+  background: rgb(42, 172, 142);
+  border-color: rgb(42, 172, 142);
 }
 
 .is-dark .apexcharts-subtitle-text {
-  fill: rgb(65, 185, 131);
+  fill: rgb(42, 172, 142);
 }
 
 .sliding-toggle input:checked ~ .toggler {
-  border-color: rgb(65, 185, 131);
+  border-color: rgb(42, 172, 142);
 }
 
 .sliding-toggle .toggler .light {
-  background: rgb(65, 185, 131);
-  border-color: rgb(65, 185, 131);
+  background: rgb(42, 172, 142);
+  border-color: rgb(42, 172, 142);
 }
 
 .sliding-toggle .toggler .dark {
-  background: rgb(65, 185, 131);
-  border-color: rgb(65, 185, 131);
+  background: rgb(42, 172, 142);
+  border-color: rgb(42, 172, 142);
 }
 
 .special-checkbox label {
@@ -3432,8 +3440,8 @@ code {
 }
 
 .special-checkbox input[type=checkbox]:checked + label {
-  background-color: rgb(65, 185, 131);
-  border-color: rgb(65, 185, 131);
+  background-color: rgb(42, 172, 142);
+  border-color: rgb(42, 172, 142);
 }
 
 .v-popover-content .popover-head h4 {
@@ -3444,14 +3452,14 @@ code {
 .v-popover-profile .profile-popover-block .skill-popover-wrapper .popover-fake-avatar.is-primary span,
 .v-popover-profile .skill-popover-block .profile-popover-wrapper .popover-fake-avatar.is-primary span,
 .v-popover-profile .skill-popover-block .skill-popover-wrapper .popover-fake-avatar.is-primary span {
-  color: rgb(65, 185, 131);
+  color: rgb(42, 172, 142);
 }
 
 .v-popover-profile .profile-popover-block .profile-popover-wrapper .popover-fake-avatar.is-accent span,
 .v-popover-profile .profile-popover-block .skill-popover-wrapper .popover-fake-avatar.is-accent span,
 .v-popover-profile .skill-popover-block .profile-popover-wrapper .popover-fake-avatar.is-accent span,
 .v-popover-profile .skill-popover-block .skill-popover-wrapper .popover-fake-avatar.is-accent span {
-  color: rgb(65, 185, 131);
+  color: rgb(42, 172, 142);
 }
 
 .v-popover-profile .profile-popover-block .profile-popover-wrapper .popover-fake-avatar.is-success span,
@@ -3490,16 +3498,16 @@ code {
 .v-popover-profile .skill-popover-block .profile-popover-wrapper .popover-meta span.skill-type,
 .v-popover-profile .skill-popover-block .skill-popover-wrapper .popover-meta span.job-title,
 .v-popover-profile .skill-popover-block .skill-popover-wrapper .popover-meta span.skill-type {
-  color: rgb(65, 185, 131);
+  color: rgb(42, 172, 142);
 }
 
 .is-dark .v-popover-profile .profile-popover-block .popover-actions .popover-icon:hover svg {
-  color: rgb(65, 185, 131);
+  color: rgb(42, 172, 142);
 }
 
 .tabs.is-toggle li.is-active a {
-  background: rgb(65, 185, 131);
-  border-color: rgb(65, 185, 131);
+  background: rgb(42, 172, 142);
+  border-color: rgb(42, 172, 142);
 }
 
 .tabs.is-toggle li.is-active a:hover,
@@ -3508,25 +3516,25 @@ code {
 }
 
 .tabs li.is-active a {
-  border-bottom-color: rgb(65, 185, 131);
-  color: rgb(65, 185, 131);
+  border-bottom-color: rgb(42, 172, 142);
+  color: rgb(42, 172, 142);
 }
 
 .tabs li.is-active a:hover,
 .tabs li.is-active a:focus {
-  border-bottom-color: rgb(65, 185, 131);
-  color: rgb(65, 185, 131);
+  border-bottom-color: rgb(42, 172, 142);
+  color: rgb(42, 172, 142);
 }
 
 .is-dark .tabs.is-toggle li.is-active a,
 .is-dark .tabs.is-toggle li.is-active a:hover {
-  border-color: rgb(65, 185, 131);
+  border-color: rgb(42, 172, 142);
   color: rgb(255, 255, 255);
 }
 
 .is-dark .tabs li.is-active a {
-  border-bottom-color: rgb(65, 185, 131);
-  color: rgb(65, 185, 131);
+  border-bottom-color: rgb(42, 172, 142);
+  color: rgb(42, 172, 142);
 }
 
 .tabs-wrapper.is-slider.is-inverted .tabs,
@@ -3541,7 +3549,7 @@ code {
 
 .tabs-wrapper.is-slider .tab-naver,
 .tabs-wrapper-alt.is-slider .tab-naver {
-  background: rgb(65, 185, 131);
+  background: rgb(42, 172, 142);
 }
 
 .tabs-wrapper.is-triple-slider.is-inverted .tabs,
@@ -3556,7 +3564,7 @@ code {
 
 .tabs-wrapper.is-triple-slider .tab-naver,
 .tabs-wrapper-alt.is-triple-slider .tab-naver {
-  background: rgb(65, 185, 131);
+  background: rgb(42, 172, 142);
 }
 
 .is-dark .tabs-wrapper.is-slider .tabs li.is-active a,
@@ -3566,15 +3574,15 @@ code {
 
 @media only screen and (width <= 767px) {
   .vertical-tabs-wrapper .tabs ul li.is-active a {
-    color: rgb(65, 185, 131);
-    border-bottom-color: rgb(65, 185, 131);
+    color: rgb(42, 172, 142);
+    border-bottom-color: rgb(42, 172, 142);
   }
 }
 
 @media only screen and (width >= 768px) {
   .vertical-tabs-wrapper .tabs ul li.is-active a {
-    color: rgb(65, 185, 131);
-    border-right-color: rgb(65, 185, 131);
+    color: rgb(42, 172, 142);
+    border-inline-end-color: rgb(42, 172, 142);
   }
 }
 
@@ -3585,7 +3593,7 @@ code {
 
 .flex-pagination .pagination-next.has-chevron svg,
 .flex-pagination .pagination-previous.has-chevron svg {
-  color: rgb(65, 185, 131);
+  color: rgb(42, 172, 142);
 }
 
 .flex-pagination .pagination-list li .pagination-link {
@@ -3593,54 +3601,54 @@ code {
 }
 
 .flex-pagination .pagination-list li .pagination-link.is-current {
-  background: rgb(65, 185, 131);
-  border-color: rgb(65, 185, 131);
+  background: rgb(42, 172, 142);
+  border-color: rgb(42, 172, 142);
 }
 
 .is-dark .flex-pagination .pagination-next svg,
 .is-dark .flex-pagination .pagination-previous svg {
-  color: rgb(65, 185, 131);
+  color: rgb(42, 172, 142);
 }
 
 .is-dark .flex-pagination .pagination-list li .pagination-link.is-current {
-  background: rgb(65, 185, 131);
-  border-color: rgb(65, 185, 131);
+  background: rgb(42, 172, 142);
+  border-color: rgb(42, 172, 142);
 }
 
 .hint--primary::after {
-  background-color: rgb(65, 185, 131);
+  background-color: rgb(42, 172, 142);
 }
 
 .hint--primary.hint--top-left::before {
-  border-top-color: rgb(65, 185, 131);
+  border-top-color: rgb(42, 172, 142);
 }
 
 .hint--primary.hint--top-right::before {
-  border-top-color: rgb(65, 185, 131);
+  border-top-color: rgb(42, 172, 142);
 }
 
 .hint--primary.hint--top::before {
-  border-top-color: rgb(65, 185, 131);
+  border-top-color: rgb(42, 172, 142);
 }
 
 .hint--primary.hint--bottom-left::before {
-  border-bottom-color: rgb(65, 185, 131);
+  border-bottom-color: rgb(42, 172, 142);
 }
 
 .hint--primary.hint--bottom-right::before {
-  border-bottom-color: rgb(65, 185, 131);
+  border-bottom-color: rgb(42, 172, 142);
 }
 
 .hint--primary.hint--bottom::before {
-  border-bottom-color: rgb(65, 185, 131);
+  border-bottom-color: rgb(42, 172, 142);
 }
 
 .hint--primary.hint--left::before {
-  border-left-color: rgb(65, 185, 131);
+  border-inline-start-color: rgb(42, 172, 142);
 }
 
 .hint--primary.hint--right::before {
-  border-right-color: rgb(65, 185, 131);
+  border-inline-end-color: rgb(42, 172, 142);
 }
 
 .hint--error::after {
@@ -3672,11 +3680,11 @@ code {
 }
 
 .hint--error.hint--left::before {
-  border-left-color: rgb(230, 41, 100);
+  border-inline-start-color: rgb(230, 41, 100);
 }
 
 .hint--error.hint--right::before {
-  border-right-color: rgb(230, 41, 100);
+  border-inline-end-color: rgb(230, 41, 100);
 }
 
 .hint--warning::after {
@@ -3708,11 +3716,11 @@ code {
 }
 
 .hint--warning.hint--left::before {
-  border-left-color: rgb(250, 173, 66);
+  border-inline-start-color: rgb(250, 173, 66);
 }
 
 .hint--warning.hint--right::before {
-  border-right-color: rgb(250, 173, 66);
+  border-inline-end-color: rgb(250, 173, 66);
 }
 
 .hint--info::after {
@@ -3744,11 +3752,11 @@ code {
 }
 
 .hint--info.hint--left::before {
-  border-left-color: rgb(3, 152, 226);
+  border-inline-start-color: rgb(3, 152, 226);
 }
 
 .hint--info.hint--right::before {
-  border-right-color: rgb(3, 152, 226);
+  border-inline-end-color: rgb(3, 152, 226);
 }
 
 .hint--success::after {
@@ -3780,11 +3788,11 @@ code {
 }
 
 .hint--success.hint--left::before {
-  border-left-color: rgb(6, 214, 158);
+  border-inline-start-color: rgb(6, 214, 158);
 }
 
 .hint--success.hint--right::before {
-  border-right-color: rgb(6, 214, 158);
+  border-inline-end-color: rgb(6, 214, 158);
 }
 
 .hint--light::after {
@@ -3816,53 +3824,53 @@ code {
 }
 
 .hint--light.hint--left::before {
-  border-left-color: rgb(255, 255, 255);
+  border-inline-start-color: rgb(255, 255, 255);
 }
 
 .hint--light.hint--right::before {
-  border-right-color: rgb(255, 255, 255);
+  border-inline-end-color: rgb(255, 255, 255);
 }
 
 .is-dark .hint--primary::after {
-  background-color: rgb(65, 185, 131);
+  background-color: rgb(42, 172, 142);
 }
 
 .is-dark .hint--primary.hint--top-left::before {
-  border-top-color: rgb(65, 185, 131);
+  border-top-color: rgb(42, 172, 142);
 }
 
 .is-dark .hint--primary.hint--top-right::before {
-  border-top-color: rgb(65, 185, 131);
+  border-top-color: rgb(42, 172, 142);
 }
 
 .is-dark .hint--primary.hint--top::before {
-  border-top-color: rgb(65, 185, 131);
+  border-top-color: rgb(42, 172, 142);
 }
 
 .is-dark .hint--primary.hint--bottom-left::before {
-  border-bottom-color: rgb(65, 185, 131);
+  border-bottom-color: rgb(42, 172, 142);
 }
 
 .is-dark .hint--primary.hint--bottom-right::before {
-  border-bottom-color: rgb(65, 185, 131);
+  border-bottom-color: rgb(42, 172, 142);
 }
 
 .is-dark .hint--primary.hint--bottom::before {
-  border-bottom-color: rgb(65, 185, 131);
+  border-bottom-color: rgb(42, 172, 142);
 }
 
 .is-dark .hint--primary.hint--left::before {
-  border-left-color: rgb(65, 185, 131);
+  border-inline-start-color: rgb(42, 172, 142);
 }
 
 .is-dark .hint--primary.hint--right::before {
-  border-right-color: rgb(65, 185, 131);
+  border-inline-end-color: rgb(42, 172, 142);
 }
 
 .ck-editor {
-  --ck-color-base-active: rgb(65, 185, 131);
-  --ck-color-button-on-color: rgb(65, 185, 131);
-  --ck-color-focus-border: rgb(65, 185, 131);
+  --ck-color-base-active: rgb(42, 172, 142);
+  --ck-color-button-on-color: rgb(42, 172, 142);
+  --ck-color-focus-border: rgb(42, 172, 142);
 }
 
 .card-container .creditcard #cardfront .st2 {
@@ -3882,8 +3890,8 @@ code {
 }
 
 .stat-widget.is-primary {
-  background: rgb(65, 185, 131);
-  border-color: rgb(65, 185, 131);
+  background: rgb(42, 172, 142);
+  border-color: rgb(42, 172, 142);
   color: rgb(255, 255, 255);
 }
 
@@ -3892,13 +3900,13 @@ code {
 }
 
 .stat-widget.is-straight.is-primary {
-  background: rgb(65, 185, 131);
-  border-color: rgb(65, 185, 131);
+  background: rgb(42, 172, 142);
+  border-color: rgb(42, 172, 142);
   color: rgb(255, 255, 255);
 }
 
 .layout-selector .layout-item .indicator {
-  background: rgb(65, 185, 131);
+  background: rgb(42, 172, 142);
   color: rgb(255, 255, 255);
 }
 

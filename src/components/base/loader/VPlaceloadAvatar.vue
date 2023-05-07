@@ -64,8 +64,8 @@ const props = withDefaults(defineProps<VPlaceloadAvatarProps>(), {
   }
 
   &.is-centered {
-    margin-left: auto;
-    margin-right: auto;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
   }
 
   &.is-rounded-xs {

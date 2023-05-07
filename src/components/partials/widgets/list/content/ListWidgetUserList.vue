@@ -63,7 +63,7 @@ const props = withDefaults(
     &::before {
       content: attr(data-content);
       position: absolute;
-      left: -45px;
+      inset-inline-start: -45px;
       font-family: var(--font);
       font-size: 0.95rem;
       font-weight: 500;

@@ -25,7 +25,7 @@ export function useProfitBarChart() {
     }
   })
 
-  const barOptions = ref({
+  const barOptions = shallowRef({
     chart: {
       height: 250,
       type: 'bar',
@@ -33,7 +33,7 @@ export function useProfitBarChart() {
         show: false,
       },
     },
-    colors: [themeColors.accent, themeColors.purple, themeColors.green],
+    colors: [themeColors.accent, themeColors.purple, themeColors.primary],
     legend: {
       position: 'top',
     },

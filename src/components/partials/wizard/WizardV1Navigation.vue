@@ -190,8 +190,8 @@ const wizard = useWizard()
 
   .navbar-item {
     &.is-wizard-title {
-      margin-left: 15px;
-      border-left: 1px solid var(--muted-grey-light-15);
+      margin-inline-start: 15px;
+      border-inline-start: 1px solid var(--muted-grey-light-15);
       padding-bottom: 6px;
       padding-top: 6px;
       font-family: var(--font);
@@ -244,7 +244,7 @@ const wizard = useWizard()
   }
 
   .is-dark-mode {
-    margin-left: auto;
+    margin-inline-start: auto;
     background: transparent !important;
 
     .navbar-icon {
@@ -284,7 +284,7 @@ const wizard = useWizard()
 
         .badge {
           position: absolute;
-          right: -8px;
+          inset-inline-end: -8px;
           bottom: 0;
           width: 20px;
           height: 20px;
@@ -294,7 +294,7 @@ const wizard = useWizard()
       }
 
       svg {
-        margin-left: 3px;
+        margin-inline-start: 3px;
         width: 18px;
         height: 18px;
         color: var(--light-text);
@@ -327,7 +327,7 @@ const wizard = useWizard()
         }
 
         svg {
-          margin-right: 8px;
+          margin-inline-end: 8px;
           height: 16px;
           width: 16px;
           color: var(--light-text);

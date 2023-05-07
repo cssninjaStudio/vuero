@@ -139,8 +139,8 @@ const optionsSingle = [
 <style lang="scss">
 .card-grid {
   .columns {
-    margin-left: -0.5rem !important;
-    margin-right: -0.5rem !important;
+    margin-inline-start: -0.5rem !important;
+    margin-inline-end: -0.5rem !important;
     margin-top: -0.5rem !important;
   }
 
@@ -171,7 +171,7 @@ const optionsSingle = [
         align-items: center;
 
         .meta {
-          margin-left: 12px;
+          margin-inline-start: 12px;
           line-height: 1.3;
 
           span {

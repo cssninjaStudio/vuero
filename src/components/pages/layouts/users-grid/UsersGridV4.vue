@@ -114,8 +114,8 @@ const optionsSingle = [
 
 .user-grid-v4 {
   .columns {
-    margin-left: -0.5rem !important;
-    margin-right: -0.5rem !important;
+    margin-inline-start: -0.5rem !important;
+    margin-inline-end: -0.5rem !important;
     margin-top: -0.5rem !important;
   }
 
@@ -144,8 +144,8 @@ const optionsSingle = [
     .dropdown {
       position: absolute;
       top: 10px;
-      right: 10px;
-      text-align: left;
+      inset-inline-end: 10px;
+      text-align: inset-inline-start;
     }
 
     > .v-avatar {

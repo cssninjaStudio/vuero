@@ -43,14 +43,10 @@ const themeClasses = computed(() => {
 </template>
 
 <style lang="scss">
-/* ==========================================================================
-1. Sidebar Block
-========================================================================== */
-
 .sidebar-block {
   position: fixed;
   top: 0;
-  left: 0;
+  inset-inline-start: 0;
   height: 100vh;
   width: 280px;
   background-color: var(--white);
@@ -59,9 +55,9 @@ const themeClasses = computed(() => {
   transition: border-radius 0.3s, transform 0.3s;
 
   &.is-curved {
-    border-top-right-radius: 2rem;
-    border-bottom-right-radius: 2rem;
-    border-right: 1px solid var(--border) !important;
+    border-start-end-radius: 2rem;
+    border-end-end-radius: 2rem;
+    border-inline-end: 1px solid var(--border) !important;
     box-shadow: none;
   }
 
@@ -78,7 +74,7 @@ const themeClasses = computed(() => {
       align-items: center;
       height: 40px;
       width: 40px;
-      margin-right: 0.5rem;
+      margin-inline-end: 0.5rem;
 
       img {
         height: 38px;
@@ -92,7 +88,7 @@ const themeClasses = computed(() => {
     }
 
     .sidebar-block-close {
-      margin-left: auto;
+      margin-inline-start: auto;
       display: block;
       width: 18px;
       height: 18px;
@@ -130,7 +126,7 @@ const themeClasses = computed(() => {
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      border-left: 2px solid transparent;
+      border-inline-start: 2px solid transparent;
       cursor: pointer;
 
       &.is-active {
@@ -182,7 +178,7 @@ const themeClasses = computed(() => {
               }
 
               > svg {
-                transform: rotate(90deg);
+                transform: rotate(calc(var(--transform-direction) * 90deg));
               }
             }
           }
@@ -204,8 +200,8 @@ const themeClasses = computed(() => {
           align-items: center;
 
           .tag {
-            margin-left: auto;
-            margin-right: 20px;
+            margin-inline-start: auto;
+            margin-inline-end: 20px;
             border-radius: 100px;
             background: var(--danger);
             color: var(--white);
@@ -233,7 +229,7 @@ const themeClasses = computed(() => {
             .icon {
               color: var(--light-text);
               font-size: 1.25rem;
-              margin-right: 1rem;
+              margin-inline-end: 1rem;
 
               i {
                 font-size: 1.25rem;
@@ -249,8 +245,8 @@ const themeClasses = computed(() => {
               top: 1px;
               height: 18px;
               width: 18px;
-              margin-left: auto;
-              transform: rotate(0);
+              margin-inline-start: auto;
+              transform: rotate(calc(var(--transform-direction) * 0));
               stroke: var(--light-text);
               transition: all 0.3s;
             }
@@ -289,7 +285,7 @@ const themeClasses = computed(() => {
               .lnil,
               .lnir {
                 font-size: 1.2rem;
-                margin-right: 10px;
+                margin-inline-end: 10px;
               }
 
               > span {
@@ -303,16 +299,16 @@ const themeClasses = computed(() => {
                 max-width: 8px;
                 min-width: 8px;
                 stroke-width: 2px;
-                margin-right: 8px;
+                margin-inline-end: 8px;
 
                 &.is-auto {
-                  margin-left: auto;
+                  margin-inline-start: auto;
                   height: 15px;
                   width: 15px;
                   max-width: 15px;
                   min-width: 15px;
                   stroke-width: 2px;
-                  margin-right: 4px;
+                  margin-inline-end: 4px;
                 }
               }
             }
@@ -374,7 +370,7 @@ const themeClasses = computed(() => {
 
       .icon {
         font-size: 1.25rem;
-        margin-right: 1rem;
+        margin-inline-end: 1rem;
 
         i {
           font-size: 1.25rem;
@@ -386,7 +382,7 @@ const themeClasses = computed(() => {
       }
 
       .badge {
-        margin-left: auto;
+        margin-inline-start: auto;
         color: var(--white);
         background: var(--primary);
         height: 1.5rem;
@@ -413,7 +409,8 @@ const themeClasses = computed(() => {
       align-items: center;
     }
 
-    .search-link {
+    .search-link,
+    .icon-link {
       height: 48px;
       width: 48px;
       color: var(--light-text);
@@ -450,7 +447,7 @@ const themeClasses = computed(() => {
         display: block;
         position: absolute;
         top: 0;
-        right: 0;
+        inset-inline-end: 0;
         width: 14px;
         height: 14px;
         border-radius: 50%;
@@ -464,7 +461,7 @@ const themeClasses = computed(() => {
   .profile-dropdown {
     .dropdown-menu {
       bottom: 0;
-      left: 145%;
+      inset-inline-start: 145%;
 
       .dropdown-content {
         padding-top: 0;
@@ -478,7 +475,7 @@ const themeClasses = computed(() => {
           background: #fafafa;
 
           .meta {
-            margin-left: 12px;
+            margin-inline-start: 12px;
             font-family: var(--font);
 
             span {

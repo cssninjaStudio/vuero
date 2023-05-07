@@ -260,9 +260,14 @@ onMounted(() => {
                   <a class="action-icon">
                     <i
                       aria-hidden="true"
-                      class="iconify"
+                      class="iconify ltr-hidden"
+                      data-icon="feather:chevron-right"
+                    />
+                    <i
+                      aria-hidden="true"
+                      class="iconify rtl-hidden"
                       data-icon="feather:chevron-left"
-                    ></i>
+                    />
                   </a>
                 </div>
                 <div class="center">
@@ -272,9 +277,14 @@ onMounted(() => {
                   <a class="action-icon">
                     <i
                       aria-hidden="true"
-                      class="iconify"
+                      class="iconify rtl-hidden"
                       data-icon="feather:chevron-right"
-                    ></i>
+                    />
+                    <i
+                      aria-hidden="true"
+                      class="iconify ltr-hidden"
+                      data-icon="feather:chevron-left"
+                    />
                   </a>
                 </div>
               </div>
@@ -364,7 +374,7 @@ onMounted(() => {
     margin-bottom: 30px;
 
     .start {
-      margin-left: 12px;
+      margin-inline-start: 12px;
 
       h3 {
         font-family: var(--font-alt);
@@ -375,12 +385,12 @@ onMounted(() => {
     }
 
     .end {
-      margin-left: auto;
+      margin-inline-start: auto;
       display: flex;
       justify-content: flex-end;
 
       .button {
-        margin-left: 10px;
+        margin-inline-start: 10px;
       }
     }
   }
@@ -423,7 +433,7 @@ onMounted(() => {
       margin-bottom: 10px;
 
       .revenue-stat {
-        margin-right: 30px;
+        margin-inline-end: 30px;
         font-family: var(--font);
 
         span {
@@ -453,7 +463,7 @@ onMounted(() => {
       justify-content: space-between;
 
       .meta {
-        margin-right: 30px;
+        margin-inline-end: 30px;
         align-items: center;
         font-family: var(--font);
 
@@ -479,6 +489,8 @@ onMounted(() => {
 
       .chart-container {
         min-width: 110px;
+        flex-shrink: 0;
+        max-width: 120px;
       }
     }
 

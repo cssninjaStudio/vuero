@@ -22,5 +22,6 @@
   "i18n-ally.keystyle": "nested",
   "files.associations": {
     "*.json": "jsonc"
-  }
+  },
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
