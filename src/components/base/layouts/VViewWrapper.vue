@@ -146,7 +146,7 @@ const props = defineProps<VViewWrapperProps>()
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
   .view-wrapper {
     &.has-top-nav {
       .is-navbar-md,
@@ -161,7 +161,7 @@ const props = defineProps<VViewWrapperProps>()
     }
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: landscape) {
   .view-wrapper {
     width: calc(100% - 60px) !important;
     margin-inline-start: 60px !important;
@@ -172,7 +172,7 @@ const props = defineProps<VViewWrapperProps>()
     }
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
   // Layout
   .view-wrapper {
     width: 100% !important;
