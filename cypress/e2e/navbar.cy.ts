@@ -33,6 +33,7 @@ describe(`Navbar Layout${screenshotsString}`, () => {
       cy.title().should('not.contain', 'Page not found')
 
       if (screenshots) {
+        cy.wait(route.pageDelay)
         // wait external resources to load (e.g. images, maps, graphs, etc.)
         if (route.pageDelay) {
           cy.wait(route.pageDelay)

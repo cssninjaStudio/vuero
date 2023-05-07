@@ -32,6 +32,7 @@ describe(`Auth Layout${screenshotsString}`, () => {
       cy.title().should('not.contain', 'Page not found')
 
       if (screenshots) {
+        cy.wait(route.pageDelay)
         // take screenshot in light mode
         cy.screenshot(buildScreenshotName(route, `light`), {
           capture: 'viewport',
