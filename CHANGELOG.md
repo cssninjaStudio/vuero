@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.7.0](https://github.com/cssninjaStudio/vuero/compare/v2.6.1...v2.7.0) (2023-05-07)
+
+
+### Features
+
+* add datatables, fix v-calendar latest styles, close [#209](https://github.com/cssninjaStudio/vuero/issues/209) ([ceb6e75](https://github.com/cssninjaStudio/vuero/commit/ceb6e758fa99e8cfaaf04f5ce043eb2eb0b3bb7f))
+* add RTL support ([854122e](https://github.com/cssninjaStudio/vuero/commit/854122e4d531b92307c8984d124678bb4491b32e))
+* add RTL support ([#211](https://github.com/cssninjaStudio/vuero/issues/211)) ([9b4d71c](https://github.com/cssninjaStudio/vuero/commit/9b4d71c01a0e3b33aa9deb115350208561a06c2b))
+* add RTL support ([#212](https://github.com/cssninjaStudio/vuero/issues/212)) ([f2c2091](https://github.com/cssninjaStudio/vuero/commit/f2c2091f0bf9d957ae772b0d529831194c2a5c18))
+* add RTL support ([#215](https://github.com/cssninjaStudio/vuero/issues/215)) ([c444582](https://github.com/cssninjaStudio/vuero/commit/c444582ff1e58abff5613e0dde61fba717e5a6b1))
+* **i18n:** set lang and dir attributes ([adb7f2f](https://github.com/cssninjaStudio/vuero/commit/adb7f2ff2c10666016000c0d68b0a831f0e01b42))
+* rework landing page ([138db17](https://github.com/cssninjaStudio/vuero/commit/138db17836664fc1fe411523349e0cbab370b725))
+
+
+### Bug Fixes
+
+* add elevated prop to vbutton docs, remove elevated prop from icon button, close [#207](https://github.com/cssninjaStudio/vuero/issues/207) ([5dc5da1](https://github.com/cssninjaStudio/vuero/commit/5dc5da1820164b4a82b795bfb91051094e663d36))
+* **animated-checkbox:** display inner circle as inline-block ([069f074](https://github.com/cssninjaStudio/vuero/commit/069f074b8278d4f8645359ee8ec8e8cd96fb8f55)), closes [#204](https://github.com/cssninjaStudio/vuero/issues/204)
+* banking dashboard followers display ([f5abf09](https://github.com/cssninjaStudio/vuero/commit/f5abf09f6833fba6c5e933e661ecd6132ab5fe93)), closes [#190](https://github.com/cssninjaStudio/vuero/issues/190)
+* chart colors ([e136f54](https://github.com/cssninjaStudio/vuero/commit/e136f5443771ecb8c7acfdeb19cc1c31308ee6f2))
+* charts and illustration colors ([fc0faa6](https://github.com/cssninjaStudio/vuero/commit/fc0faa6dd95cd8c25e74fd72f0904321d7dcc2c4))
+* chat, datatable, layout bugs ([8a3b45d](https://github.com/cssninjaStudio/vuero/commit/8a3b45d7350f5a3963cad2be5769c1e117705323))
+* flight dashboard checkboxes close [#191](https://github.com/cssninjaStudio/vuero/issues/191) ([7bd5cbf](https://github.com/cssninjaStudio/vuero/commit/7bd5cbf49a1efcc70476fcae3248400011365077))
+* icon button size, close [#206](https://github.com/cssninjaStudio/vuero/issues/206) ([50e548f](https://github.com/cssninjaStudio/vuero/commit/50e548f7f50f5d3c65b66342976deeeb92894f54))
+* **icons:** line icons element playground ([b681f96](https://github.com/cssninjaStudio/vuero/commit/b681f96a0e70c5d12209d613950b6ba0a7b8038c)), closes [#208](https://github.com/cssninjaStudio/vuero/issues/208)
+* light button colors in dark mode ([fd93e17](https://github.com/cssninjaStudio/vuero/commit/fd93e1757198748909bc052570e84309ddad1e31))
+* notyf green color ([83845f3](https://github.com/cssninjaStudio/vuero/commit/83845f3c547b991cc7f5074e237f9b7a185c2964))
+
 ### [2.6.1](https://github.com/cssninjaStudio/vuero/compare/v2.6.0...v2.6.1) (2023-01-24)
 
 
