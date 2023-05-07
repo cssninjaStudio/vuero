@@ -1,4 +1,3 @@
-
 export type ColorFn =
   | 'rgba'
   | 'adjusthue'
@@ -18,145 +17,145 @@ export interface ColorFnCall {
 
 export interface ColorCallSet {
   [color: string]: {
-    calls: ColorFnCall[],
+    calls: ColorFnCall[]
   }
 }
 export const bulmaCssVariablesDefs: ColorCallSet = {
-  "danger": {
-    "calls": [
+  danger: {
+    calls: [
       {
-        "fn": "color-invert",
-        "fnArg": null,
-        "composeArg": null
+        fn: 'color-invert',
+        fnArg: null,
+        composeArg: null,
       },
       {
-        "fn": "dark-color",
-        "fnArg": null,
-        "composeArg": null
+        fn: 'dark-color',
+        fnArg: null,
+        composeArg: null,
       },
       {
-        "fn": "light-color",
-        "fnArg": null,
-        "composeArg": null
-      }
-    ]
+        fn: 'light-color',
+        fnArg: null,
+        composeArg: null,
+      },
+    ],
   },
-  "dark": {
-    "calls": [
+  dark: {
+    calls: [
       {
-        "fn": "lighten",
-        "fnArg": "800",
-        "composeArg": null
+        fn: 'lighten',
+        fnArg: '800',
+        composeArg: null,
       },
       {
-        "fn": "color-invert",
-        "fnArg": null,
-        "composeArg": null
-      }
-    ]
+        fn: 'color-invert',
+        fnArg: null,
+        composeArg: null,
+      },
+    ],
   },
-  "info": {
-    "calls": [
+  info: {
+    calls: [
       {
-        "fn": "color-invert",
-        "fnArg": null,
-        "composeArg": null
+        fn: 'color-invert',
+        fnArg: null,
+        composeArg: null,
       },
       {
-        "fn": "dark-color",
-        "fnArg": null,
-        "composeArg": null
+        fn: 'dark-color',
+        fnArg: null,
+        composeArg: null,
       },
       {
-        "fn": "light-color",
-        "fnArg": null,
-        "composeArg": null
-      }
-    ]
+        fn: 'light-color',
+        fnArg: null,
+        composeArg: null,
+      },
+    ],
   },
-  "link": {
-    "calls": [
+  link: {
+    calls: [
       {
-        "fn": "color-invert",
-        "fnArg": null,
-        "composeArg": null
+        fn: 'color-invert',
+        fnArg: null,
+        composeArg: null,
       },
       {
-        "fn": "dark-color",
-        "fnArg": null,
-        "composeArg": null
+        fn: 'dark-color',
+        fnArg: null,
+        composeArg: null,
       },
       {
-        "fn": "light-color",
-        "fnArg": null,
-        "composeArg": null
-      }
-    ]
+        fn: 'light-color',
+        fnArg: null,
+        composeArg: null,
+      },
+    ],
   },
-  "primary": {
-    "calls": [
+  primary: {
+    calls: [
       {
-        "fn": "color-invert",
-        "fnArg": null,
-        "composeArg": null
+        fn: 'color-invert',
+        fnArg: null,
+        composeArg: null,
       },
       {
-        "fn": "dark-color",
-        "fnArg": null,
-        "composeArg": null
+        fn: 'dark-color',
+        fnArg: null,
+        composeArg: null,
       },
       {
-        "fn": "light-color",
-        "fnArg": null,
-        "composeArg": null
-      }
-    ]
+        fn: 'light-color',
+        fnArg: null,
+        composeArg: null,
+      },
+    ],
   },
-  "success": {
-    "calls": [
+  success: {
+    calls: [
       {
-        "fn": "color-invert",
-        "fnArg": null,
-        "composeArg": null
+        fn: 'color-invert',
+        fnArg: null,
+        composeArg: null,
       },
       {
-        "fn": "dark-color",
-        "fnArg": null,
-        "composeArg": null
+        fn: 'dark-color',
+        fnArg: null,
+        composeArg: null,
       },
       {
-        "fn": "light-color",
-        "fnArg": null,
-        "composeArg": null
-      }
-    ]
+        fn: 'light-color',
+        fnArg: null,
+        composeArg: null,
+      },
+    ],
   },
-  "warning": {
-    "calls": [
+  warning: {
+    calls: [
       {
-        "fn": "color-invert",
-        "fnArg": null,
-        "composeArg": null
+        fn: 'color-invert',
+        fnArg: null,
+        composeArg: null,
       },
       {
-        "fn": "dark-color",
-        "fnArg": null,
-        "composeArg": null
+        fn: 'dark-color',
+        fnArg: null,
+        composeArg: null,
       },
       {
-        "fn": "light-color",
-        "fnArg": null,
-        "composeArg": null
-      }
-    ]
+        fn: 'light-color',
+        fnArg: null,
+        composeArg: null,
+      },
+    ],
   },
-  "white": {
-    "calls": [
+  white: {
+    calls: [
       {
-        "fn": "lighten",
-        "fnArg": "800",
-        "composeArg": null
-      }
-    ]
-  }
+        fn: 'lighten',
+        fnArg: '800',
+        composeArg: null,
+      },
+    ],
+  },
 }
