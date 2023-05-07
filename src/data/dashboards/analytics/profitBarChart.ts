@@ -25,7 +25,7 @@ export function useProfitBarChart() {
     }
   })
 
-  const barOptions = ref({
+  const barOptions = shallowRef({
     chart: {
       height: 250,
       type: 'bar',

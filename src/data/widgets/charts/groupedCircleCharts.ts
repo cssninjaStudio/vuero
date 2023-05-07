@@ -3,7 +3,7 @@ import { useThemeColors } from '/@src/composable/useThemeColors'
 export function useGroupedCircleCharts() {
   const themeColors = useThemeColors()
 
-  const widgetRadialGroup1Options = ref({
+  const widgetRadialGroup1Options = shallowRef({
     series: [31],
     chart: {
       height: 102,
@@ -27,7 +27,7 @@ export function useGroupedCircleCharts() {
     labels: [''],
   })
 
-  const widgetRadialGroup2Options = ref({
+  const widgetRadialGroup2Options = shallowRef({
     series: [53],
     chart: {
       height: 102,
@@ -51,7 +51,7 @@ export function useGroupedCircleCharts() {
     labels: [''],
   })
 
-  const widgetRadialGroup3Options = ref({
+  const widgetRadialGroup3Options = shallowRef({
     series: [84],
     chart: {
       height: 102,

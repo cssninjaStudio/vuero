@@ -142,7 +142,7 @@ export function useKanban() {
     },
   ])
 
-  const search = ref('')
+  const search = shallowRef('')
 
   const filteredTasks = computed(() => {
     if (!search.value) {

@@ -3,7 +3,7 @@ import { useThemeColors } from '/@src/composable/useThemeColors'
 export function useTrendWidgetChart() {
   const themeColors = useThemeColors()
 
-  const trendWidgetChartOptions = ref({
+  const trendWidgetChartOptions = shallowRef({
     series: [
       {
         name: 'series1',

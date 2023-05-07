@@ -25,7 +25,7 @@ export function useSalesSparksCharts() {
     534, 615, 278, 546, 435, 192, 465,
   ]
 
-  const spark1 = ref({
+  const spark1 = shallowRef({
     chart: {
       id: 'sparkline1',
       group: 'sparklines',
@@ -79,7 +79,7 @@ export function useSalesSparksCharts() {
     },
   })
 
-  const spark2 = ref({
+  const spark2 = shallowRef({
     chart: {
       id: 'sparkline2',
       group: 'sparklines',
@@ -133,7 +133,7 @@ export function useSalesSparksCharts() {
     },
   })
 
-  const spark3 = ref({
+  const spark3 = shallowRef({
     chart: {
       id: 'sparkline3',
       group: 'sparklines',
@@ -187,7 +187,7 @@ export function useSalesSparksCharts() {
     },
   })
 
-  const spark4 = ref({
+  const spark4 = shallowRef({
     chart: {
       id: 'sparkline3',
       group: 'sparklines',

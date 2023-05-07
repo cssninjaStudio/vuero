@@ -3,7 +3,7 @@ import { useThemeColors } from '/@src/composable/useThemeColors'
 export function useTaskCompletionChart() {
   const themeColors = useThemeColors()
 
-  const completionOptions = ref({
+  const completionOptions = shallowRef({
     series: [
       {
         name: 'Pending',

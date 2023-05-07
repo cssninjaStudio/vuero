@@ -3,7 +3,7 @@ import * as formatters from '/@src/utils/apex-formatters'
 
 export function useInfluenceChart() {
   const themeColors = useThemeColors()
-  const influenceChartOptions = ref({
+  const influenceChartOptions = shallowRef({
     series: [65],
     chart: {
       height: 170,

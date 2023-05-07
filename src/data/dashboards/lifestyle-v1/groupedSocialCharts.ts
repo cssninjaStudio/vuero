@@ -3,7 +3,7 @@ import { useThemeColors } from '/@src/composable/useThemeColors'
 export function useGroupedSocialChart() {
   const themeColors = useThemeColors()
 
-  const creativityRadialOptions = ref({
+  const creativityRadialOptions = shallowRef({
     series: [31],
     chart: {
       height: 100,
@@ -27,7 +27,7 @@ export function useGroupedSocialChart() {
     labels: [''],
   })
 
-  const engagmentRadialOptions = ref({
+  const engagmentRadialOptions = shallowRef({
     series: [53],
     chart: {
       height: 100,
@@ -51,7 +51,7 @@ export function useGroupedSocialChart() {
     labels: [''],
   })
 
-  const popularityRadialOptions = ref({
+  const popularityRadialOptions = shallowRef({
     series: [84],
     chart: {
       height: 100,

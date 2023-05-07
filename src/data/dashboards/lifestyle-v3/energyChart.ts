@@ -19,7 +19,7 @@ function generateDayWiseTimeSeries(
 
 export function useEnergyChart() {
   const themeColors = useThemeColors()
-  const energyChartOptions = ref({
+  const energyChartOptions = shallowRef({
     series: [
       {
         name: 'Tonic',

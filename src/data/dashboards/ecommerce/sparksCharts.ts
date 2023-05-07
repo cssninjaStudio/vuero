@@ -3,7 +3,7 @@ import * as formatters from '/@src/utils/apex-formatters'
 
 export function useSparksCharts() {
   const themeColors = useThemeColors()
-  const spark1 = ref({
+  const spark1 = shallowRef({
     chart: {
       id: 'sparkline1',
       type: 'line',
@@ -44,7 +44,7 @@ export function useSparksCharts() {
     colors: [themeColors.info],
   })
 
-  const spark2 = ref({
+  const spark2 = shallowRef({
     chart: {
       id: 'sparkline2',
       type: 'line',
@@ -88,7 +88,7 @@ export function useSparksCharts() {
     colors: [themeColors.purple],
   })
 
-  const spark3 = ref({
+  const spark3 = shallowRef({
     chart: {
       id: 'sparkline3',
       type: 'line',
@@ -134,7 +134,7 @@ export function useSparksCharts() {
     },
   })
 
-  const spark4 = ref({
+  const spark4 = shallowRef({
     chart: {
       id: 'sparkline4',
       type: 'line',

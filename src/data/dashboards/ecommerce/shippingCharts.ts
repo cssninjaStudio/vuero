@@ -2,7 +2,7 @@ import { useThemeColors } from '/@src/composable/useThemeColors'
 
 export function useShippingCharts() {
   const themeColors = useThemeColors()
-  const freeShippingChartOptions = ref({
+  const freeShippingChartOptions = shallowRef({
     series: [31],
     chart: {
       height: 102,
@@ -26,7 +26,7 @@ export function useShippingCharts() {
     labels: [''],
   })
 
-  const groundShippingChartOptions = ref({
+  const groundShippingChartOptions = shallowRef({
     series: [53],
     chart: {
       height: 102,
@@ -50,7 +50,7 @@ export function useShippingCharts() {
     labels: [''],
   })
 
-  const nextDayAirChartOptions = ref({
+  const nextDayAirChartOptions = shallowRef({
     series: [84],
     chart: {
       height: 102,

@@ -331,8 +331,8 @@
       "path": "/sidebar/layouts/list-datatable-1"
     },
     "screenshot": {
-      "light": "/images/screenshots/sidebar/list-datatable-v1-light.webp",
-      "dark": "/images/screenshots/sidebar/list-datatable-v1-dark.webp"
+      "light": "/images/screenshots/sidebar/table-list-v1-light.webp",
+      "dark": "/images/screenshots/sidebar/table-list-v1-dark.webp"
     }
   },
   {
@@ -345,8 +345,8 @@
       "path": "/sidebar/layouts/list-datatable-2"
     },
     "screenshot": {
-      "light": "/images/screenshots/sidebar/list-datatable-v2-light.webp",
-      "dark": "/images/screenshots/sidebar/list-datatable-v2-dark.webp"
+      "light": "/images/screenshots/sidebar/table-list-v2-light.webp",
+      "dark": "/images/screenshots/sidebar/table-list-v2-dark.webp"
     }
   },
   {
@@ -359,8 +359,8 @@
       "path": "/sidebar/layouts/list-datatable-3"
     },
     "screenshot": {
-      "light": "/images/screenshots/sidebar/list-datatable-v3-light.webp",
-      "dark": "/images/screenshots/sidebar/list-datatable-v3-dark.webp"
+      "light": "/images/screenshots/sidebar/table-list-v3-light.webp",
+      "dark": "/images/screenshots/sidebar/table-list-v3-dark.webp"
     }
   },
   {

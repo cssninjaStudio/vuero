@@ -5,7 +5,7 @@ import { gauge } from 'billboard.js'
 export function usePersonalScoreGauge() {
   const themeColors = useThemeColors()
 
-  const personalScoreGaugeOptions = ref({
+  const personalScoreGaugeOptions = shallowRef({
     data: {
       columns: [['data', 91.4]],
       type: gauge(),

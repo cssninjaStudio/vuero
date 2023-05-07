@@ -3,7 +3,7 @@ import { useThemeColors } from '/@src/composable/useThemeColors'
 export function useFlexRadialChartStripes() {
   const themeColors = useThemeColors()
 
-  const flexRadialChartStripesOptions = ref({
+  const flexRadialChartStripesOptions = shallowRef({
     series: [65],
     chart: {
       height: 180,

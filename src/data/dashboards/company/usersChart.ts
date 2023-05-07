@@ -3,7 +3,7 @@ import { useThemeColors } from '/@src/composable/useThemeColors'
 export function useUsersChart() {
   const themeColors = useThemeColors()
 
-  const usersOptions = ref({
+  const usersOptions = shallowRef({
     series: [
       {
         name: 'New Users',

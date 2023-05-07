@@ -3,7 +3,7 @@ import { useThemeColors } from '/@src/composable/useThemeColors'
 export function useUsersBarChart() {
   const themeColors = useThemeColors()
 
-  const barData = ref([
+  const barData = shallowRef([
     {
       x: 'Jan',
       y: 322,
@@ -54,7 +54,7 @@ export function useUsersBarChart() {
     },
   ])
 
-  const barData2 = ref([
+  const barData2 = shallowRef([
     {
       x: 'Jan',
       y: 25,

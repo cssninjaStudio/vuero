@@ -3,7 +3,7 @@ import { useThemeColors } from '/@src/composable/useThemeColors'
 export function useGrowthRadialChart() {
   const themeColors = useThemeColors()
 
-  const optionsCircle = ref({
+  const optionsCircle = shallowRef({
     series: [65],
     chart: {
       height: 160,

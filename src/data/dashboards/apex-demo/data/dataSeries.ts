@@ -1445,4 +1445,4 @@ export const dataSeries = [
       value: 67956992,
     },
   ],
-]
+] as const

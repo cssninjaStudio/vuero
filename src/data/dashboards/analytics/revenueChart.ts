@@ -3,7 +3,7 @@ import { useThemeColors } from '/@src/composable/useThemeColors'
 export function useRevenueChart() {
   const themeColors = useThemeColors()
 
-  const revenueOptions = ref({
+  const revenueOptions = shallowRef({
     series: [
       {
         name: 'Revenue',

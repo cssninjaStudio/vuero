@@ -3,7 +3,7 @@ import { useThemeColors } from '/@src/composable/useThemeColors'
 export function useProgressChart() {
   const themeColors = useThemeColors()
 
-  const progressChartOptions = ref({
+  const progressChartOptions = shallowRef({
     series: [
       {
         name: 'Progress (pt)',

@@ -2,7 +2,7 @@ import { useThemeColors } from '/@src/composable/useThemeColors'
 
 export function useGoalCharts() {
   const themeColors = useThemeColors()
-  const gaugeOptions = ref({
+  const gaugeOptions = shallowRef({
     series: [57, 86],
     chart: {
       height: 220,
