@@ -168,3 +168,5 @@ public/robots.txt
 
 # dotenv
 .env
+.DS_Store
+.pnpm-debug.log
