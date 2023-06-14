@@ -1,8 +1,17 @@
-lockfileVersion: '6.0'
+lockfileVersion: '6.1'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
 
 overrides:
   sass: npm:sass-embedded@1.62.0
   bulma: npm:@cssninja/bulma@0.9.4
+
+patchedDependencies:
+  '@purge-icons/core@0.9.1':
+    hash: wmqtjwi4xmsirxokshnd2jzgcq
+    path: patches/@purge-icons__core@0.9.1.patch
 
 dependencies:
   '@ckeditor/ckeditor5-build-classic':
@@ -2712,7 +2721,7 @@ packages:
     resolution: {integrity: sha512-Cr4OjIkipTtcXKjAsm8agyleBuDHvxzeBoa1v543lbv1YaIwQjESsVcmjiWiPEbC1FIeHOG/Op9kdCmAmiS3Kw==}
     dev: false
 
-  /@purge-icons/core@0.9.1:
+  /@purge-icons/core@0.9.1(patch_hash=wmqtjwi4xmsirxokshnd2jzgcq):
     resolution: {integrity: sha512-sx8/a30MbbqQVEqhuMPE1wJpdVRRbEmwEPZpFzVkcDixzX4p+R2A0WVxqkb0xfHUBAVQwrSE2SeAyniIQLqbLw==}
     dependencies:
       '@iconify/iconify': 2.1.2
@@ -2724,6 +2733,7 @@ packages:
       - encoding
       - supports-color
     dev: true
+    patched: true
 
   /@purge-icons/generated@0.9.0:
     resolution: {integrity: sha512-s2t+1oVtGDV6KtqfCXtUOhxfeYvOdDF90IVm+nMs/6bUP0HeGZLslguuL/AibpwtfL4FA/oCsIu/RhwapgAdJw==}
@@ -11698,7 +11708,7 @@ packages:
     resolution: {integrity: sha512-hRDKBsPUz47UMdBufki2feTmBF2ClEJlYqL7N6vpVAHSLd7V2BJUaNKOF7YYbLMofVVF+9hm44YSkYO6k9hUgg==}
     engines: {node: '>= 12'}
     dependencies:
-      '@purge-icons/core': 0.9.1
+      '@purge-icons/core': 0.9.1(patch_hash=wmqtjwi4xmsirxokshnd2jzgcq)
       '@purge-icons/generated': 0.9.0
     transitivePeerDependencies:
       - encoding
@@ -13749,7 +13759,7 @@ packages:
     peerDependencies:
       vite: ^2.0.0 || ^3.0.0 || ^4.0.0
     dependencies:
-      '@purge-icons/core': 0.9.1
+      '@purge-icons/core': 0.9.1(patch_hash=wmqtjwi4xmsirxokshnd2jzgcq)
       '@purge-icons/generated': 0.9.0
       rollup-plugin-purge-icons: 0.9.1
       vite: 4.3.5(@types/node@18.16.3)(sass-embedded@1.62.0)

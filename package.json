@@ -215,6 +215,9 @@
     "overrides": {
       "sass": "npm:sass-embedded@1.62.0",
       "bulma": "npm:@cssninja/bulma@0.9.4"
+    },
+    "patchedDependencies": {
+      "@purge-icons/core@0.9.1": "patches/@purge-icons__core@0.9.1.patch"
     }
   }
 }
