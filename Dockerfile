@@ -10,6 +10,7 @@ RUN corepack enable && corepack prepare pnpm@latest --activate
 COPY package.json ./
 COPY pnpm-lock.yaml ./
 COPY .npmrc ./
+COPY patches ./patches
 RUN CYPRESS_INSTALL_BINARY=0 pnpm install
 
 COPY . .
