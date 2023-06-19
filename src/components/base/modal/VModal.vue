@@ -1,5 +1,7 @@
 <script setup lang="ts">
+import type { Component } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { FocusTrap } from 'focus-trap-vue'
 
 export type VModalSize = 'small' | 'medium' | 'large' | 'big'
 export type VModalAction = 'center' | 'right'
@@ -9,6 +11,7 @@ export interface VModalEmits {
 }
 export interface VModalProps {
   title: string
+  is?: string | Component
   size?: VModalSize
   actions?: VModalAction
   open?: boolean
@@ -19,8 +22,13 @@ export interface VModalProps {
   cancelLabel?: string
 }
 
+defineOptions({
+  inheritAttrs: false,
+})
+
 const emit = defineEmits<VModalEmits>()
 const props = withDefaults(defineProps<VModalProps>(), {
+  is: 'div',
   size: undefined,
   actions: undefined,
   cancelLabel: undefined,
@@ -54,57 +62,67 @@ onUnmounted(() => {
 
 <template>
   <Teleport to="body">
-    <div :class="[open && 'is-active', size && `is-${size}`]" class="modal v-modal">
-      <div
-        class="modal-background v-modal-close"
-        tabindex="0"
-        role="button"
-        @keydown.space.prevent="() => noclose === false && emit('close')"
-        @click="() => noclose === false && emit('close')"
-      ></div>
-      <div class="modal-content">
-        <div class="modal-card">
-          <header class="modal-card-head">
-            <h3>{{ title }}</h3>
-            <button
-              class="v-modal-close ml-auto"
-              aria-label="close"
-              tabindex="0"
-              @keydown.space.prevent="emit('close')"
-              @click="emit('close')"
-            >
-              <i aria-hidden="true" class="iconify" data-icon="feather:x"></i>
-            </button>
-          </header>
-          <div class="modal-card-body" :class="[props.tabs && 'has-tabs']">
-            <div class="inner-content">
-              <slot name="content"></slot>
-            </div>
-          </div>
-          <div
-            class="modal-card-foot"
-            :class="[
-              actions === 'center' && 'is-centered',
-              actions === 'right' && 'is-end',
-            ]"
-          >
-            <slot name="cancel" :close="() => emit('close')">
-              <a
+    <FocusTrap v-if="open" :initial-focus="() => ($refs.closeButton as any)?.el">
+      <component
+        :is="is"
+        role="dialog"
+        aria-modal="true"
+        :class="[open && 'is-active', size && `is-${size}`]"
+        class="modal v-modal"
+        v-bind="$attrs"
+      >
+        <div
+          class="modal-background v-modal-close"
+          tabindex="-1"
+          role="button"
+          @keydown.space.prevent="() => noclose === false && emit('close')"
+          @click="() => noclose === false && emit('close')"
+        ></div>
+        <div class="modal-content">
+          <div class="modal-card">
+            <header class="modal-card-head">
+              <h3>{{ title }}</h3>
+              <button
+                ref="closeButton"
+                class="v-modal-close ml-auto"
+                aria-label="close"
                 tabindex="0"
-                role="button"
-                class="button v-button v-modal-close"
-                :class="[rounded && 'is-rounded']"
                 @keydown.space.prevent="emit('close')"
                 @click="emit('close')"
               >
-                {{ cancelLabel }}
-              </a>
-            </slot>
-            <slot name="action" :close="() => emit('close')"></slot>
+                <i aria-hidden="true" class="iconify" data-icon="feather:x"></i>
+              </button>
+            </header>
+            <div class="modal-card-body" :class="[props.tabs && 'has-tabs']">
+              <div class="inner-content">
+                <slot name="content"></slot>
+              </div>
+            </div>
+            <div
+              class="modal-card-foot"
+              :class="[
+                actions === 'center' && 'is-centered',
+                actions === 'right' && 'is-end',
+              ]"
+            >
+              <slot name="cancel" :close="() => emit('close')">
+                <a
+                  tabindex="0"
+                  role="button"
+                  class="button v-button v-modal-close"
+                  :class="[rounded && 'is-rounded']"
+                  @keydown.space.prevent="emit('close')"
+                  @click="emit('close')"
+                >
+                  {{ cancelLabel }}
+                </a>
+              </slot>
+              <slot name="action" :close="() => emit('close')"></slot>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+      </component>
+    </FocusTrap>
   </Teleport>
 </template>
 
@@ -162,6 +180,9 @@ onUnmounted(() => {
 }
 
 .v-modal {
+  background: transparent;
+  border: transparent;
+
   &.is-active {
     z-index: 200 !important;
 
@@ -178,10 +199,8 @@ onUnmounted(() => {
     padding: 40px;
   }
 
-  .modal-background {
-    background-color: hsl(
-      var(--dark-sidebar-h) var(--dark-sidebar-s) var(--dark-sidebar-l) / 80%
-    );
+  &::backdrop {
+    background: hsl(var(--dark-sidebar-h) var(--dark-sidebar-s) var(--dark-sidebar-l));
   }
 
   .modal-content {

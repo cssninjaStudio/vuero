@@ -315,10 +315,12 @@ useHead({
     </VModal>
 
     <VModal
+      is="form"
       :open="smallFormOpen"
       title="Leave a Comment"
       size="small"
       actions="right"
+      @submit.prevent="smallFormOpen = false"
       @close="smallFormOpen = false"
     >
       <template #content>
@@ -340,15 +342,17 @@ useHead({
           </VField>
         </form>
       </template>
-      <template #action="{ close }">
-        <VButton color="primary" raised @click="close()">Publish</VButton>
+      <template #action>
+        <VButton type="submit" color="primary" raised>Publish</VButton>
       </template>
     </VModal>
 
     <VModal
+      is="form"
       :open="standardFormOpen"
       title="Leave a Comment"
       actions="right"
+      @submit.prevent="standardFormOpen = false"
       @close="standardFormOpen = false"
     >
       <template #content>
@@ -370,16 +374,18 @@ useHead({
           </VField>
         </form>
       </template>
-      <template #action="{ close }">
-        <VButton color="primary" raised @click="close()">Publish</VButton>
+      <template #action>
+        <VButton type="submit" color="primary" raised>Publish</VButton>
       </template>
     </VModal>
 
     <VModal
+      is="form"
       :open="mediumFormOpen"
       size="medium"
       title="Horizontal Form"
       actions="right"
+      @submit.prevent="mediumFormOpen = false"
       @close="mediumFormOpen = false"
     >
       <template #content>
@@ -401,16 +407,18 @@ useHead({
           </VField>
         </form>
       </template>
-      <template #action="{ close }">
-        <VButton color="primary" raised @click="close()">Publish</VButton>
+      <template #action>
+        <VButton type="submit" color="primary" raised>Publish</VButton>
       </template>
     </VModal>
 
     <VModal
+      is="form"
       :open="largeFormOpen"
       size="large"
       title="Create Project"
       actions="right"
+      @submit.prevent="largeFormOpen = false"
       @close="largeFormOpen = false"
     >
       <template #content>
@@ -451,16 +459,18 @@ useHead({
           </div>
         </div>
       </template>
-      <template #action="{ close }">
-        <VButton color="primary" raised @click="close()">Save Changes</VButton>
+      <template #action>
+        <VButton type="submit" color="primary" raised>Save Changes</VButton>
       </template>
     </VModal>
 
     <VModal
+      is="form"
       :open="bigFormOpen"
       size="large"
       title="Create Project"
       actions="right"
+      @submit.prevent="bigFormOpen = false"
       @close="bigFormOpen = false"
     >
       <template #content>
@@ -603,8 +613,8 @@ useHead({
           </div>
         </div>
       </template>
-      <template #action="{ close }">
-        <VButton color="primary" raised @click="close()">Save Changes</VButton>
+      <template #action>
+        <VButton type="submit" color="primary" raised>Save Changes</VButton>
       </template>
     </VModal>
 

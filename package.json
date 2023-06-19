@@ -98,6 +98,8 @@
     "filepond-plugin-image-preview": "4.6.11",
     "filepond-plugin-image-resize": "2.0.10",
     "filepond-plugin-image-transform": "3.8.7",
+    "focus-trap": "^7.4.3",
+    "focus-trap-vue": "^4.0.2",
     "imask": "7.0.0",
     "mapbox-gl": "2.15.0",
     "notyf": "3.10.0",

@@ -1,7 +1,8 @@
 ### Modal Forms
 
 Vuero `<VModal />` component can be used for anything, including displaying
-and handling forms. Use the `content` slot `<template #content></template>`
+and handling forms, set the `is` property to change the element used to render
+the modal tag. Use the `content` slot `<template #content></template>`
 to inject any kind of content inside the modal.
 
 <!--code-->
@@ -16,14 +17,16 @@ const smallFormOpen = ref(false)
   <VButton bold @click="smallFormOpen = true"> Open Modal </VButton>
 
   <VModal
+    is="form"
     :open="smallFormOpen"
     title="Leave a Comment"
     size="small"
     actions="right"
+    @submit.prevent="smallFormOpen = false"
     @close="smallFormOpen = false"
   >
     <template #content>
-      <form class="modal-form">
+      <div class="modal-form">
         <div class="field">
           <label>Username *</label>
           <div class="control">
@@ -42,10 +45,10 @@ const smallFormOpen = ref(false)
             <textarea class="textarea" rows="4" placeholder="Your message..."></textarea>
           </div>
         </div>
-      </form>
+      </div>
     </template>
     <template #action>
-      <VButton color="primary" raised>Publish</VButton>
+      <VButton type="submit" color="primary" raised>Publish</VButton>
     </template>
   </VModal>
 </template>
