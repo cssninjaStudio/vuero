@@ -1,5 +1,5 @@
 <script lang="ts">
-import type { InputMask, AnyMaskedOptions } from 'imask'
+import type { InputMask, FactoryArg } from 'imask'
 
 import IMask from 'imask'
 import { type PropType } from 'vue'
@@ -11,7 +11,7 @@ export default defineComponent({
       required: true,
     },
     options: {
-      type: Object as PropType<AnyMaskedOptions>,
+      type: Object as PropType<FactoryArg>,
       required: true,
     },
   },
@@ -38,13 +38,13 @@ export default defineComponent({
             emit('accept', inputMask.value, undefined)
           }
 
-          inputMask.value.on('accept', (inputEvent: InputEvent) => {
+          inputMask.value.on('accept', (inputEvent) => {
             if (!inputMask.value) return
             emit('update:modelValue', inputMask.value?.value || '')
             emit('accept', inputMask.value, inputEvent)
           })
 
-          inputMask.value.on('complete', (inputEvent: InputEvent) => {
+          inputMask.value.on('complete', (inputEvent) => {
             if (!inputMask.value) return
             emit('complete', inputMask.value, inputEvent)
           })

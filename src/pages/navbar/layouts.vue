@@ -6,7 +6,7 @@ const layoutSwitcher = useLayoutSwitcher()
 
 <template>
   <component
-    :is="layoutSwitcher.dynamicLayoutComponent"
+    :is="(layoutSwitcher.dynamicLayoutComponent as any)"
     v-bind="layoutSwitcher.dynamicLayoutProps"
   >
     <!-- Content Wrapper -->
