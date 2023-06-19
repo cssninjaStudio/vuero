@@ -51,7 +51,7 @@
 
   .vacp-range-input {
     border-color: #ccc !important;
-    border-radius: var(--radius);
+    // border-radius: var(--radius);
 
     &:focus::-moz-range-track {
       border: 1px solid var(--primary-grey);
@@ -69,9 +69,9 @@
     }
 
     &::-moz-range-thumb {
-      box-sizing: border-box;
-      width: var(--vacp-slider-thumb-size);
-      height: var(--vacp-slider-thumb-size);
+      width: var(--vacp-slider-track-height);
+      height: var(--vacp-slider-track-height);
+      margin-top: calc(-1 * (var(--vacp-spacing) / 2));
       border: 3px solid #fff;
       border-radius: 50%;
       background-color: transparent;
@@ -80,16 +80,16 @@
     }
 
     &::-webkit-slider-thumb {
-      width: var(--vacp-slider-thumb-size);
-      height: var(--vacp-slider-thumb-size);
-      margin-top: calc(
-        (var(--vacp-slider-track-height) - var(--vacp-slider-thumb-size)) / 2
-      );
+      width: var(--vacp-slider-track-height);
+      height: var(--vacp-slider-track-height);
+      margin-top: calc(-1 * (var(--vacp-spacing) / 2));
       border: 3px solid #fff;
       border-radius: 50%;
       background-color: transparent;
-      box-shadow: 0 0 0 2px #0002;
+      box-shadow: 0 0 0 var(--vacp-border-width) #0002;
       transform: rotate(calc(var(--transform-direction) * 0));
+      /* stylelint-disable-next-line property-no-vendor-prefix */
+      // -webkit-appearance: slider-horizontal;
     }
 
     &::-ms-thumb {
