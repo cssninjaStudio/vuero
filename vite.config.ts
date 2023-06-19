@@ -13,6 +13,7 @@ import ImageMin from 'vite-plugin-imagemin'
 import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 import purgecss from 'rollup-plugin-purgecss'
+import UnheadVite from '@unhead/addons/vite'
 import { unheadVueComposablesImports } from '@unhead/vue'
 
 // local vite plugin
@@ -170,6 +171,13 @@ export default defineConfig({
        */
       dataFetching: true,
     }),
+
+    /**
+     * Unhead provides a Vite plugin to optimise your builds, by removing composables that aren't needed and simplifying your code.
+     *
+     * @see https://unhead.harlanzw.com/guide/getting-started/vite-plugin
+     */
+    UnheadVite(),
 
     /**
      * unplugin-auto-import allow to automaticaly import modules/components
