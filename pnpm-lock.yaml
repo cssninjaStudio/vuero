@@ -39,8 +39,8 @@ dependencies:
     specifier: ^1.1.27
     version: 1.1.27(vue@3.3.4)
   '@vee-validate/zod':
-    specifier: 4.9.6
-    version: 4.9.6(vue@3.3.4)
+    specifier: 4.8.6
+    version: 4.8.6(vue@3.3.4)
   '@vueform/multiselect':
     specifier: 2.6.2
     version: 2.6.2
@@ -156,8 +156,8 @@ dependencies:
     specifier: 3.0.3
     version: 3.0.3(@popperjs/core@2.11.8)(vue@3.3.4)
   vee-validate:
-    specifier: 4.9.6
-    version: 4.9.6(vue@3.3.4)
+    specifier: 4.8.6
+    version: 4.8.6(vue@3.3.4)
   vivus:
     specifier: 0.4.6
     version: 0.4.6
@@ -3382,11 +3382,11 @@ packages:
       vue: 3.3.4
     dev: false
 
-  /@vee-validate/zod@4.9.6(vue@3.3.4):
-    resolution: {integrity: sha512-YFpJDtsFDdM47HQSGKRQvA5nxEYZW1RjTWe1MPSpgo8uEWBOtxEwgiiPWoxnQtwc2c8qYpYMIwUbm2mUAHhpaw==}
+  /@vee-validate/zod@4.8.6(vue@3.3.4):
+    resolution: {integrity: sha512-BG9UI0XleYXVphD462unkwwWsKiNqPwzoWaZh3YMU7VeZhcIbOQt3+derqhDdoIn5+C+Yj6o6n3NUtsKOrjOlQ==}
     dependencies:
       type-fest: 3.12.0
-      vee-validate: 4.9.6(vue@3.3.4)
+      vee-validate: 4.8.6(vue@3.3.4)
       zod: 3.21.4
     transitivePeerDependencies:
       - vue
@@ -13633,13 +13633,12 @@ packages:
     engines: {node: '>= 0.8'}
     dev: true
 
-  /vee-validate@4.9.6(vue@3.3.4):
-    resolution: {integrity: sha512-2WYuetx76nH1UXUNM/OBvh9W0kGrr37xo9PgroHcDEbfpxum4MMMb4TjIkYdmrosE2YU54SoUnJrchYegmV2Kg==}
+  /vee-validate@4.8.6(vue@3.3.4):
+    resolution: {integrity: sha512-d8SS1mfFn3qv/QRwy9BQ/0ZmoxQT37zG7zERUSK5NvmI7gx7IbQxOIXtyYVEPaDJNI4QWopBe48q91pAQqwetA==}
     peerDependencies:
-      vue: ^3.3.0
+      vue: ^3.2.0
     dependencies:
       '@vue/devtools-api': 6.5.0
-      type-fest: 3.12.0
       vue: 3.3.4
     dev: false
 
