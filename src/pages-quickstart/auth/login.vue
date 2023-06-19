@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useHead } from '@vueuse/head'
-
 import { useDarkmode } from '/@src/stores/darkmode'
 import { useUserSession } from '/@src/stores/userSession'
 import { useNotyf } from '/@src/composable/useNotyf'

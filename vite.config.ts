@@ -13,6 +13,7 @@ import ImageMin from 'vite-plugin-imagemin'
 import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 import purgecss from 'rollup-plugin-purgecss'
+import { unheadVueComposablesImports } from '@unhead/vue'
 
 // local vite plugin
 import { VitePluginVueroDoc } from './vite-plugin-vuero-doc'
@@ -57,7 +58,6 @@ export default defineConfig({
       '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.min.js',
       '@vee-validate/zod',
       '@vueuse/core',
-      '@vueuse/head',
       '@vueform/multiselect',
       '@vueform/slider',
       'axios',
@@ -178,7 +178,7 @@ export default defineConfig({
      */
     AutoImport({
       dts: true,
-      imports: ['vue', '@vueuse/core', VueRouterAutoImports],
+      imports: ['vue', '@vueuse/core', VueRouterAutoImports, unheadVueComposablesImports],
     }),
 
     /**

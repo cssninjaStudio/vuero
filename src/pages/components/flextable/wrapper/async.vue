@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useHead } from '@vueuse/head'
-
 import { useApi } from '/@src/composable/useApi'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 import type { VFlexTableWrapperDataResolver } from '/@src/components/base/table/VFlexTableWrapper.vue'

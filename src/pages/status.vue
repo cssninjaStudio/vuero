@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { useHead } from '@vueuse/head'
 import { onceImageErrored } from '/@src/utils/via-placeholder'
 import { useDarkmode } from '/@src/stores/darkmode'
 

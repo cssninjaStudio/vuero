@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { TinySliderInstance } from 'tiny-slider/src/tiny-slider'
-import { useHead } from '@vueuse/head'
 
 import { onceImageErrored } from '/@src/utils/via-placeholder'
 

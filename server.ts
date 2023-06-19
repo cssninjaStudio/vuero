@@ -91,6 +91,8 @@ async function createServer() {
           headTags,
           htmlAttrs,
           bodyAttrs,
+          bodyTags,
+          bodyTagsOpen,
           preloadLinks,
           initialState,
         } = await render(url, manifest)
@@ -99,7 +101,8 @@ async function createServer() {
           .replace(`<html>`, `<html${htmlAttrs}>`)
           .replace(`<head>`, `<head><meta charset="UTF-8" />${headTags}`)
           .replace(`</head>`, `${preloadLinks}</head>`)
-          .replace(`<body>`, `<body${bodyAttrs}>`)
+          .replace(`<body>`, `<body${bodyAttrs}>${bodyTagsOpen}`)
+          .replace(`</body>`, `${bodyTags}</body>`)
           .replace(
             /<div id="app"([\s\w\-"'=[\]]*)><\/div>/,
             `<div id="app" data-server-rendered="true"$1>${appHtml}</div><script>window.__vuero__=${initialState}</script>`

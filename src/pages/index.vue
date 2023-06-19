@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useHead } from '@vueuse/head'
-
 import packageJson from '../../package.json'
 
 type TabId = 'elements' | 'components' | 'forms' | 'plugins'

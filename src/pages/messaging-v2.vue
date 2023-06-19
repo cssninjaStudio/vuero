@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { useHead } from '@vueuse/head'
 import { usePanels } from '/@src/stores/panels'
 
 import type { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'

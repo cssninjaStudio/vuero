@@ -1,6 +1,7 @@
 import { createApp as createClientApp } from 'vue'
 
-import { createHead } from '@vueuse/head'
+import { createHead } from '@unhead/vue'
+import { InferSeoMetaPlugin } from '@unhead/addons'
 import { createPinia } from 'pinia'
 import { createRouter } from './router'
 import VueroApp from './VueroApp.vue'
@@ -25,7 +26,9 @@ export async function createApp() {
   const router = createRouter()
   const api = createApi()
 
-  const head = createHead()
+  const head = createHead({
+    plugins: [InferSeoMetaPlugin()],
+  })
   app.use(head)
 
   const pinia = createPinia()

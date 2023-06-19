@@ -1,6 +1,6 @@
 import devalue from '@nuxt/devalue'
 import { renderToString } from 'vue/server-renderer'
-import { renderHeadToString } from '@vueuse/head'
+import { renderSSRHead } from '@unhead/ssr'
 
 import { createApp } from '/@src/app'
 import { type IncomingMessage, type ServerResponse } from 'node:http'
@@ -25,7 +25,9 @@ export async function render(url: string, manifest: any, initialState: any = {})
     found: true,
   }
   const appHtml = await renderToString(app, ctx)
-  const { headTags, htmlAttrs, bodyAttrs } = await renderHeadToString(head)
+  const { headTags, htmlAttrs, bodyAttrs, bodyTags, bodyTagsOpen } = await renderSSRHead(
+    head
+  )
 
   initialState.pinia = pinia?.state.value
 
@@ -39,6 +41,8 @@ export async function render(url: string, manifest: any, initialState: any = {})
     headTags,
     htmlAttrs,
     bodyAttrs,
+    bodyTags,
+    bodyTagsOpen,
     preloadLinks,
     initialState: devalue(initialState),
   }

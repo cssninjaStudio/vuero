@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useHead } from '@vueuse/head'
-
 import { flexRowsContacts } from '/@src/data/documentation/table'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 

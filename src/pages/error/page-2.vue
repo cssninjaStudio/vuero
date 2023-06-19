@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { useHead } from '@vueuse/head'
 import { useDarkmode } from '/@src/stores/darkmode'
 
 const darkmode = useDarkmode()

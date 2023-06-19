@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { useHead } from '@vueuse/head'
 import { radar } from 'billboard.js'
 
 import { useMarkdownToc } from '/@src/composable/useMarkdownToc'

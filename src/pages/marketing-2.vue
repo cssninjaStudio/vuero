@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useHead } from '@vueuse/head'
-
 useHead({
   title: 'Vuero - A complete Vue 3 design system',
 })

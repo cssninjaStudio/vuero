@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useHead } from '@vueuse/head'
-
 import { useChat } from '/@src/stores/chat'
 import { useSidebar } from '/@src/stores/sidebar'
 import { useLayoutSwitcher } from '/@src/stores/layoutSwitcher'

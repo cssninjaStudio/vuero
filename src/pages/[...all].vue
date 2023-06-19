@@ -10,7 +10,6 @@
  * @see /src/router.ts
  */
 
-import { useHead } from '@vueuse/head'
 import { useI18n } from 'vue-i18n'
 import { useDarkmode } from '/@src/stores/darkmode'
 

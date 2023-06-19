@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useHead } from '@vueuse/head'
-
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 import { lineIconsRegular } from '/@src/data/icons/lineIconsRegular'
 

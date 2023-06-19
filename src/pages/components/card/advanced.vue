@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useHead } from '@vueuse/head'
-
 import type { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 import * as userStacks from '/@src/data/users/userStacks'

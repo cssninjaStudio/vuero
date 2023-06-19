@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useHead } from '@vueuse/head'
-
 import { useSidebar } from '/@src/stores/sidebar'
 
 const sidebar = useSidebar()
