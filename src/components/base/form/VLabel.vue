@@ -19,22 +19,10 @@ const classes = computed(() => {
 
   return ['label']
 })
-
-const onEnter = () => {
-  if (vFieldContext.id) {
-    document.getElementById(vFieldContext.id)?.click()
-  }
-}
 </script>
 
 <template>
-  <label
-    :class="classes"
-    :for="vFieldContext.id"
-    role="button"
-    tabindex="0"
-    @keydown.enter.prevent="onEnter"
-  >
+  <label :class="classes" :for="vFieldContext.id">
     <slot v-bind="vFieldContext" />
   </label>
 </template>
