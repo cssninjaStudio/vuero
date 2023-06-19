@@ -17,6 +17,7 @@
   "auth.errors.password.length": "Le mot de passe doit contenir au moins 8 caractères",
   "auth.errors.passwordCheck.required": "Veuillez confirmer votre mot de passe",
   "auth.errors.passwordCheck.match": "Le mot de passe ne correspond pas",
+  "pages.dashboard-personnal-1.page-title": "Personnel 1",
   "pages.not-found.page-title": "Page introuvable",
   "pages.not-found.page-heading": "Cette page n'a pas été trouvée",
   "pages.not-found.page-body": "Il semble que nous n'ayons pas trouvé cette page. Veuillez réessayer ou contacter un administrateur si le problème persiste.",

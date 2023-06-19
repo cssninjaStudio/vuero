@@ -1,10 +1,11 @@
-import { ref } from 'vue'
+import type { MaybeRefOrGetter, WatchStopHandle } from 'vue'
 import { acceptHMRUpdate, defineStore } from 'pinia'
 
 export const useViewWrapper = defineStore('viewWrapper', () => {
   const isPushed = ref(false)
   const isPushedBlock = ref(false)
   const pageTitle = ref('Welcome')
+  let pageTitleEffect: WatchStopHandle | undefined
 
   function setPushed(value: boolean) {
     isPushed.value = value
@@ -12,8 +13,19 @@ export const useViewWrapper = defineStore('viewWrapper', () => {
   function setPushedBlock(value: boolean) {
     isPushedBlock.value = value
   }
-  function setPageTitle(value: string) {
-    pageTitle.value = value
+  function setPageTitle(value: MaybeRefOrGetter<string>) {
+    if (pageTitleEffect) {
+      pageTitleEffect()
+      pageTitleEffect = undefined
+    }
+
+    if (isRef(value) || typeof value === 'function') {
+      pageTitleEffect = watchEffect(() => {
+        pageTitle.value = toValue(value)
+      })
+    } else {
+      pageTitle.value = value
+    }
   }
 
   return {

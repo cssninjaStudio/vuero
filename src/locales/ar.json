@@ -17,6 +17,7 @@
   "auth.errors.password.length": "يجب أن تحتوي كلمة المرور على 8 أحرف على الأقل",
   "auth.errors.passwordCheck.required": "يرجى التأكد من صحة كلمة المرور الخاصة بك",
   "auth.errors.passwordCheck.match": "كلمة المرور غير متطابقة",
+  "pages.dashboard-personnal-1.page-title": "الشخصية 1",
   "pages.not-found.page-title": "الصفحة غير موجودة",
   "pages.not-found.page-heading": "لم نتمكن من العثور على تلك الصفحة",
   "pages.not-found.page-body": "يبدو أننا لم نتمكن من العثور على تلك الصفحة. يرجى المحاولة مرة أخرى أو الاتصال بالمسؤول إذا استمرت المشكلة.",

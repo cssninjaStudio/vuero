@@ -17,6 +17,7 @@
   "auth.errors.password.length": "密码应至少包含8个字符",
   "auth.errors.passwordCheck.required": "请确认您的密码",
   "auth.errors.passwordCheck.match": "该密码不匹配",
+  "pages.dashboard-personnal-1.page-title": "個人 1",
   "pages.not-found.page-title": "未找到页面",
   "pages.not-found.page-heading": "我们找不到这个页面",
   "pages.not-found.page-body": "看起来我们找不到这个页面。如果问题仍然存在，请再试一次或联系管理员。",

@@ -17,6 +17,7 @@
   "auth.errors.password.length": "La contraseña debe contener al menos 8 caracteres",
   "auth.errors.passwordCheck.required": "Por favor, confirme su contraseña",
   "auth.errors.passwordCheck.match": "La contraseña no coincide",
+  "pages.dashboard-personnal-1.page-title": "Personal 1",
   "pages.not-found.page-title": "Página no encontrada",
   "pages.not-found.page-heading": "No hemos podido encontrar esa página",
   "pages.not-found.page-body": "Parece que no hemos podido encontrar esa página. Por favor, inténtalo de nuevo o contacta con un administrador si el problema persiste.",

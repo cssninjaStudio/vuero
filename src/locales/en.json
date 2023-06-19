@@ -17,6 +17,7 @@
   "auth.errors.password.length": "The password should contains at leat 8 characters",
   "auth.errors.passwordCheck.required": "Please, confirm your password",
   "auth.errors.passwordCheck.match": "The password does not match",
+  "pages.dashboard-personnal-1.page-title": "Personal 1",
   "pages.not-found.page-title": "Page not found",
   "pages.not-found.page-heading": "We couldn't find that page",
   "pages.not-found.page-body": "Looks like we couldn't find that page. Please try again or contact an administrator if the problem persists.",
