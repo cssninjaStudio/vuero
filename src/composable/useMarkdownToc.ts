@@ -24,6 +24,8 @@ export function useMarkdownToc(container: Ref<HTMLElement | undefined>) {
     if (container.value) {
       const anchors = container.value.querySelectorAll(HEADER_SELECTORS.join(', '))
       anchors.forEach((anchor) => {
+        if (anchor.classList.contains('toc-ignore')) return
+
         toc.value.push({
           id: anchor.id,
           level: parseInt(anchor.tagName.replace(/[a-z]+/i, '') || '1'),

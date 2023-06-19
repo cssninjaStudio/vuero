@@ -46,6 +46,15 @@ export async function createProcessor(theme: IThemeRegistration): Promise<Proces
         },
         children: [],
       },
+      test: (node) => {
+        if (
+          Array.isArray(node.properties?.className) &&
+          node.properties?.className?.includes('toc-ignore')
+        ) {
+          return false
+        }
+        return Boolean(node.properties?.id)
+      },
     })
     .use(rehypeStringify)
 }
