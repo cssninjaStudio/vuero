@@ -108,7 +108,7 @@ const columns = computed(() => {
         <template v-for="column in columns" :key="'col' + column.key">
           <slot name="header-column" :column="column">
             <component
-              :is="{ render: column.renderHeader }"
+              :is="({ render: column.renderHeader } as any)"
               v-if="column.renderHeader"
               :class="[
                 column.grow === true && 'is-grow',
@@ -164,7 +164,9 @@ const columns = computed(() => {
                   :value="column.format(row[column.key], row, index)"
                 >
                   <component
-                    :is="{ render: () => column.renderRow?.(row, column, index) }"
+                    :is="({ 
+                      render: () => column.renderRow?.(row, column, index), 
+                    } as any)"
                     v-if="column.renderRow"
                   ></component>
                   <span
