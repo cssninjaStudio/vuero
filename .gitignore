@@ -6,6 +6,7 @@ npm-debug.log_
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log\*
+.pnpm-debug.log*
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 
@@ -165,6 +166,7 @@ public/robots.txt
 
 # zone identifier
 *:Zone.Identifier
+.DS_Store
 
 # dotenv
 .env
