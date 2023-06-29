@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Dropzone from 'dropzone'
+import 'dropzone/dist/dropzone.css'
 
 import { useWizard } from '/@src/composable/useWizard'
 import { onceImageErrored } from '/@src/utils/via-placeholder'
@@ -356,7 +357,3 @@ watch(previewTemplate, () => {
     </div>
   </div>
 </template>
-
-<style lang="scss">
-@import 'dropzone/dist/dropzone.css';
-</style>
