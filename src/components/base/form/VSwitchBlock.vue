@@ -18,7 +18,6 @@ const props = withDefaults(defineProps<VSwitchBlockProps>(), {
 })
 
 const value = ref(props.modelValue)
-const attrs = useAttrs()
 
 watch(value, () => {
   emit('update:modelValue', value.value)
@@ -46,7 +45,7 @@ watch(
         :class="[props.color && `is-${props.color}`]"
         @keydown.space.prevent="() => emit('update:modelValue', !props.modelValue)"
       >
-        <VInput v-model="value" type="checkbox" v-bind="attrs" />
+        <VInput v-model="value" type="checkbox" v-bind="$attrs" />
         <div class="slider"></div>
       </VLabel>
     </template>

@@ -17,7 +17,7 @@ export interface VRadioProps {
   paddingless?: boolean
 }
 
-const emit = defineEmits<VRadioEmits>()
+const emits = defineEmits<VRadioEmits>()
 const props = withDefaults(defineProps<VRadioProps>(), {
   id: undefined,
   modelValue: undefined,
@@ -33,17 +33,22 @@ const vFieldContext = reactive(
     inherit: false,
   })
 )
-const value = ref(vFieldContext?.field?.value ?? props.modelValue)
 
-watch(value, () => {
-  emit('update:modelValue', value.value)
+const value = computed({
+  get() {
+    if (vFieldContext.field?.value) {
+      return vFieldContext.field.value.value
+    } else {
+      return props.modelValue
+    }
+  },
+  set(value: any) {
+    if (vFieldContext.field?.value) {
+      vFieldContext.field.value.value = value
+    }
+    emits('update:modelValue', value)
+  },
 })
-watch(
-  () => props.modelValue,
-  () => {
-    value.value = props.modelValue
-  }
-)
 </script>
 
 <template>

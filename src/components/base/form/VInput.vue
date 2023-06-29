@@ -23,17 +23,21 @@ const props = withDefaults(defineProps<VInputProps>(), {
   trueValue: true,
   falseValue: false,
 })
-const value = ref(vFieldContext.field?.value ?? props.modelValue)
-
-watch(value, () => {
-  emits('update:modelValue', value.value)
+const value = computed({
+  get() {
+    if (vFieldContext.field?.value) {
+      return vFieldContext.field.value.value
+    } else {
+      return props.modelValue
+    }
+  },
+  set(value: any) {
+    if (vFieldContext.field?.value) {
+      vFieldContext.field.value.value = value
+    }
+    emits('update:modelValue', value)
+  },
 })
-watch(
-  () => props.modelValue,
-  () => {
-    value.value = props.modelValue
-  }
-)
 
 const classes = computed(() => {
   if (props.raw) return []

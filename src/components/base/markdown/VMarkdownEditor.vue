@@ -161,17 +161,22 @@ const textareaRef = ref<HTMLTextAreaElement>()
 const mode = ref<'write' | 'preview'>('write')
 const trigger = shallowRef<CommandTrigger>()
 const cursor = shallowRef<Cursor>()
-const value = ref((vFieldContext?.field?.value as undefined | string) ?? props.modelValue)
 
-watch(value, () => {
-  emits('update:modelValue', value.value)
+const value = computed({
+  get() {
+    if (vFieldContext.field?.value) {
+      return String(vFieldContext.field.value.value)
+    } else {
+      return props.modelValue
+    }
+  },
+  set(value: string) {
+    if (vFieldContext.field?.value) {
+      vFieldContext.field.value.value = value
+    }
+    emits('update:modelValue', value)
+  },
 })
-watch(
-  () => props.modelValue,
-  () => {
-    value.value = props.modelValue
-  }
-)
 
 function fitSize() {
   if (!textareaRef.value) {
