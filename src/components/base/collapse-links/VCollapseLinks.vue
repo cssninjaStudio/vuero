@@ -1,5 +1,5 @@
 <script lang="ts">
-import { type PropType, Transition } from 'vue'
+import { type PropType, Transition, Fragment } from 'vue'
 
 export default defineComponent({
   props: {
@@ -57,7 +57,18 @@ export default defineComponent({
     return () => {
       const header = slots.header?.()
       const slotContent = slots.default?.() ?? []
-      const links = slotContent.map((child) => h('li', {}, child))
+      const links = [] as VNode[]
+
+      for (const child of slotContent) {
+        if (child.type === Fragment) {
+          const children = child.children as VNode[]
+          for (const child of children) {
+            links.push(h('li', {}, child))
+          }
+        } else {
+          links.push(h('li', {}, child))
+        }
+      }
 
       const parentLink = h(
         'a',
