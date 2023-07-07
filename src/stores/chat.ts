@@ -1,9 +1,9 @@
 /**
  * This is a store that hold the messaging-v1 state
- * It uses the useApi composition component to make the api calls
+ * It uses the useFetch composition component to make the api calls
  *
  * @see /src/pages/messaging-v1.vue
- * @see /src/composable/useApi.ts
+ * @see /src/composable/useFetch.ts
  * @see /src/components/partials/chat/*.vue
  * @see /src/utils/api/chat
  */
@@ -13,7 +13,7 @@ import { acceptHMRUpdate, defineStore } from 'pinia'
 
 import type { Conversation, Message } from '/@src/utils/api/chat'
 import { fetchConversations, fetchMessages } from '/@src/utils/api/chat'
-import { useApi } from '/@src/composable/useApi'
+import { useFetch } from '/@src/composable/useFetch'
 
 const defaultConversation: Conversation = {
   id: 0,
@@ -24,7 +24,7 @@ const defaultConversation: Conversation = {
 }
 
 export const useChat = defineStore('chat', () => {
-  const api = useApi()
+  const $fetch = useFetch()
   const conversations = ref<Conversation[]>([])
   const messages = ref<Message[]>([])
   const selectedConversationId = ref(0)
@@ -50,7 +50,7 @@ export const useChat = defineStore('chat', () => {
     loading.value = true
 
     try {
-      const response = await fetchConversations(api, start, limit)
+      const response = await fetchConversations($fetch, start, limit)
       conversations.value = response.conversations ?? []
     } finally {
       loading.value = false
@@ -63,7 +63,7 @@ export const useChat = defineStore('chat', () => {
     loading.value = true
 
     try {
-      const response = await fetchMessages(api, conversationId)
+      const response = await fetchMessages($fetch, conversationId)
       selectedConversationId.value = conversationId
       messages.value = response.messages
     } finally {

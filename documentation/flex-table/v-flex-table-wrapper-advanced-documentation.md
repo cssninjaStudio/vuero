@@ -11,7 +11,7 @@ Check the markup for more details about usage.
 ```vue
 <script setup lang="ts">
 import type { VFlexTableWrapperDataResolver } from '/@src/components/base/table/VFlexTableWrapper.vue'
-import { useApi } from '/@src/composable/useApi'
+import { useFetch } from '/@src/composable/useFetch'
 
 // the total data will be set by the fetchData function
 const total = ref(0)
@@ -183,7 +183,7 @@ function useQueryParam() {
 const queryParam = useQueryParam()
 
 // the fetchData function will be called each time one of the parameter changes
-const api = useApi()
+const $fetch = useFetch()
 const fetchData: VFlexTableWrapperDataResolver = async ({
   searchTerm,
   start,
@@ -191,35 +191,34 @@ const fetchData: VFlexTableWrapperDataResolver = async ({
   sort,
   controller,
 }) => {
-  // searchTerm will contains the value of the wrapperState.searchInput
-  // the update will be debounced to avoid to much requests
-  const searchQuery = searchTerm ? `&q=${searchTerm}` : ''
-  let sortQuery = ''
-
   // sort will be a string like "name:asc"
-  if (sort && sort.includes(':')) {
-    let [sortField, sortOrder] = sort.split(':')
-    sortQuery = `&_sort=${sortField}&_order=${sortOrder}`
-  }
+  let [sortField, sortOrder] =
+    sort && sort.includes(':') ? sort.split(':') : [undefined, undefined]
 
   // async fetch data to our server
-  const { data: users, headers } = await api.get(
-    `/api/users?_start=${start}&_limit=${limit}${searchQuery}${sortQuery}`,
-    {
-      // controller is an instance of AbortController,
-      // this allow to abort the request when the state
-      // is invalidated (before fetchData will be retriggered)
-      signal: controller.signal,
-    }
-  )
+  const { _data: users, headers } = await $fetch.raw(`/api/users`, {
+    query: {
+      // searchTerm will contains the value of the wrapperState.searchInput
+      // the update will be debounced to avoid to much requests
+      q: searchTerm,
+      _start: start,
+      _limit: limit,
+      _sort: sortField,
+      _order: sortOrder,
+    },
+    // controller is an instance of AbortController,
+    // this allow to abort the request when the state
+    // is invalidated (before fetchData will be retriggered)
+    signal: controller?.signal,
+  })
 
   // wait more time
   await sleep(1000)
 
   // our backend send us the count in the headers,
   // but we can also get it from another request
-  if ('x-total-count' in headers) {
-    total.value = parseInt(headers['x-total-count'])
+  if (headers.has('X-Total-Count')) {
+    total.value = parseInt(headers.get('X-Total-Count') ?? '0')
   }
 
   // the return of the function must be an array
