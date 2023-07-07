@@ -71,6 +71,8 @@ useHead({
 
         <!--Disabled Input-->
         <InputDisabledDocumentation />
+
+        <InputDatasetDocumentation />
       </div>
 
       <div v-if="toc.length" class="column is-3 toc-column">
