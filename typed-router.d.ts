@@ -107,6 +107,7 @@ declare module 'vue-router/auto/routes' {
     '/elements/forms/field': RouteRecordInfo<'/elements/forms/field', '/elements/forms/field', Record<never, never>, Record<never, never>>,
     '/elements/forms/file': RouteRecordInfo<'/elements/forms/file', '/elements/forms/file', Record<never, never>, Record<never, never>>,
     '/elements/forms/inputs': RouteRecordInfo<'/elements/forms/inputs', '/elements/forms/inputs', Record<never, never>, Record<never, never>>,
+    '/elements/forms/range-rating': RouteRecordInfo<'/elements/forms/range-rating', '/elements/forms/range-rating', Record<never, never>, Record<never, never>>,
     '/elements/forms/selects': RouteRecordInfo<'/elements/forms/selects', '/elements/forms/selects', Record<never, never>, Record<never, never>>,
     '/elements/forms/textarea': RouteRecordInfo<'/elements/forms/textarea', '/elements/forms/textarea', Record<never, never>, Record<never, never>>,
     '/elements/helpers': RouteRecordInfo<'/elements/helpers', '/elements/helpers', Record<never, never>, Record<never, never>>,

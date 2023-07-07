@@ -19,6 +19,11 @@ const validationSchema = toTypedSchema(
           required_error: 'Enter your email first',
         })
         .email('A valid email address should be provided'),
+      rating: zod
+        .number({
+          required_error: 'Enter a valid rating first',
+        })
+        .gte(1, 'The rating should be at least 1'),
       password: zod
         .string({
           required_error: 'Enter your password to sign in',
@@ -55,6 +60,7 @@ const { handleSubmit, setFieldError, handleReset, values } = useForm({
   initialValues: {
     email: '',
     password: '',
+    rating: 1,
     passwordCheck: '',
     birthdate: null,
     interests: [],
@@ -134,6 +140,14 @@ const handleSignup = handleSubmit(async (values) => {
             </template>
           </VDatePicker>
         </ClientOnly>
+      </VControl>
+    </VField>
+    <VField id="rating" v-slot="{ field }" label="Confirm your new password">
+      <VControl icon="feather:check">
+        <VRangeRating />
+        <p v-if="field?.errorMessage" class="help is-danger">
+          {{ field.errorMessage }}
+        </p>
       </VControl>
     </VField>
     <VField

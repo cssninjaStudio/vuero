@@ -396,13 +396,9 @@ watch(
                 </p>
               </div>
               <div class="map-box-actions">
-                <div class="rating">
-                  <i aria-hidden="true" class="fas fa-star highlighted"></i>
-                  <i aria-hidden="true" class="fas fa-star highlighted"></i>
-                  <i aria-hidden="true" class="fas fa-star highlighted"></i>
-                  <i aria-hidden="true" class="fas fa-star highlighted"></i>
-                  <i aria-hidden="true" class="fas fa-star highlighted"></i>
-                </div>
+                <VRangeRating :model-value="5" readonly>
+                  <i class="fas fa-star" aria-hidden="true"></i>
+                </VRangeRating>
                 <div class="actions">
                   <div class="action">
                     <i aria-hidden="true" class="iconify" data-icon="feather:flag"></i>
@@ -516,11 +512,6 @@ watch(
             .rating {
               i {
                 font-size: 0.9rem;
-                color: var(--widget-grey);
-
-                &.highlighted {
-                  color: var(--yellow);
-                }
               }
             }
 

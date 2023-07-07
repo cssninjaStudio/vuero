@@ -40,18 +40,10 @@ const props = defineProps<{
       </div>
     </td>
     <td>
-      <div class="rating-wrap">
-        <span>Rating</span>
-        <div class="rating">
-          <i
-            v-for="(star, index) in 5"
-            :key="index"
-            class="fas fa-star"
-            aria-hidden="true"
-            :class="row.rating - index > 0 && 'selected'"
-          ></i>
-        </div>
-      </div>
+      <VRangeRating v-slot="{ isSelected }" v-model="row.rating" label="Rating" readonly>
+        <VIcon v-if="isSelected" icon="ph:star-fill" class="is-size-5" />
+        <VIcon v-else icon="ph:star" class="is-size-5" />
+      </VRangeRating>
     </td>
     <td>
       <div class="tag-wrap">

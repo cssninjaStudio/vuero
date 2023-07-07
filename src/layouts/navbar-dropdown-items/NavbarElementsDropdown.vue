@@ -402,6 +402,19 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink> -->
 
+                <RouterLink
+                  to="/elements/forms/range-rating"
+                  class="dropdown-item is-media"
+                >
+                  <div class="icon">
+                    <i class="lnil lnil-star" aria-hidden="true"></i>
+                  </div>
+                  <div class="meta">
+                    <span>VRangeRating</span>
+                    <VTag label="v2.8" color="primary" outlined curved class="ml-3" />
+                  </div>
+                </RouterLink>
+
                 <RouterLink to="/elements/forms/file" class="dropdown-item is-media">
                   <div class="icon">
                     <i aria-hidden="true" class="lnil lnil-upload"></i>

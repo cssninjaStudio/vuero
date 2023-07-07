@@ -10,7 +10,6 @@ if you already are familiar with it.
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
 import { toTypedSchema } from '@vee-validate/zod'
 import { useForm } from 'vee-validate'
 import { z as zod } from 'zod'
@@ -31,6 +30,11 @@ const validationSchema = toTypedSchema(
           required_error: 'Enter your email first',
         })
         .email('A valid email address should be provided'),
+      rating: zod
+        .number({
+          required_error: 'Enter a valid rating first',
+        })
+        .gte(1, 'The rating should be at least 1'),
       password: zod
         .string({
           required_error: 'Enter your password to sign in',
@@ -67,6 +71,7 @@ const { handleSubmit, setFieldError, handleReset } = useForm({
   initialValues: {
     email: '',
     password: '',
+    rating: 1,
     passwordCheck: '',
     birthdate: null,
     interests: [],
@@ -127,14 +132,15 @@ const handleSignup = handleSubmit(async (values) => {
       <VControl icon="feather:calendar">
         <ClientOnly>
           <VDatePicker
-            :model-value="field!.value"
+            :model-value="field?.value"
             color="green"
             trim-weeks
-            @update:modelValue="field?.handleChange"
+            @update:model-value="field?.handleChange"
           >
             <template #default="{ inputValue, inputEvents }">
               <input
                 class="input"
+                type="text"
                 :value="inputValue"
                 placeholder="Select your birthdate"
                 v-on="inputEvents"
@@ -145,6 +151,14 @@ const handleSignup = handleSubmit(async (values) => {
             </template>
           </VDatePicker>
         </ClientOnly>
+      </VControl>
+    </VField>
+    <VField id="rating" v-slot="{ field }" label="Confirm your new password">
+      <VControl icon="feather:check">
+        <VRangeRating />
+        <p v-if="field?.errorMessage" class="help is-danger">
+          {{ field.errorMessage }}
+        </p>
       </VControl>
     </VField>
     <VField
