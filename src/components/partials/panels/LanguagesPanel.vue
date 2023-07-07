@@ -114,14 +114,9 @@ watch(locale, () => {
 
           <div class="language-box">
             <div class="language-option">
-              <input
-                v-model="locale"
-                type="radio"
-                name="language_selection"
-                value="es-MX"
-              />
+              <input v-model="locale" type="radio" name="language_selection" value="ar" />
               <div class="language-option-inner">
-                <img src="/images/icons/flags/mexico.svg" alt="" />
+                <img src="/images/icons/flags/saudi-arabia.svg" alt="" />
                 <div class="indicator">
                   <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                 </div>
