@@ -151,11 +151,9 @@ const props = withDefaults(
   }
 )
 
-const vFieldContext = reactive(
-  useVFieldContext({
-    help: 'VMarkdownEditor',
-  })
-)
+const { field, id } = useVFieldContext({
+  help: 'VMarkdownEditor',
+})
 
 const textareaRef = ref<HTMLTextAreaElement>()
 const mode = ref<'write' | 'preview'>('write')
@@ -164,15 +162,15 @@ const cursor = shallowRef<Cursor>()
 
 const value = computed({
   get() {
-    if (vFieldContext.field?.value) {
-      return String(vFieldContext.field.value.value)
+    if (field?.value) {
+      return String(field.value.value)
     } else {
       return props.modelValue
     }
   },
   set(value: string) {
-    if (vFieldContext.field?.value) {
-      vFieldContext.field.value.value = value
+    if (field?.value) {
+      field.value.setValue(value)
     }
     emits('update:modelValue', value)
   },
@@ -299,6 +297,7 @@ watchEffect((cleanup) => {
     <slot v-if="mode === 'write'" name="before-textarea"></slot>
     <textarea
       v-show="mode === 'write'"
+      :id="id"
       ref="textareaRef"
       v-model="value"
       v-bind="$attrs"

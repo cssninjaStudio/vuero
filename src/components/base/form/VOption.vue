@@ -1,17 +1,15 @@
 <script setup lang="ts">
 import { useVFieldContext } from '/@src/composable/useVFieldContext'
 
-const vFieldContext = reactive(
-  useVFieldContext({
-    create: false,
-    help: 'VOption',
-  })
-)
+const { field, id } = useVFieldContext({
+  create: false,
+  help: 'VOption',
+})
 </script>
 
 <template>
   <option>
-    <slot v-bind="vFieldContext" />
+    <slot v-bind="{ field, id }" />
   </option>
 </template>
 

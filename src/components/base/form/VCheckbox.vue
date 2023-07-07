@@ -33,8 +33,23 @@ const props = withDefaults(defineProps<VCheckboxProps>(), {
   wrapperClass: undefined,
 })
 
-const vFieldContext = reactive(useVFieldContext())
-const $value = ref((vFieldContext.field?.value ?? props.modelValue) as any)
+const { field, id } = useVFieldContext()
+
+const value = computed({
+  get() {
+    if (field?.value) {
+      return field.value.value
+    } else {
+      return props.modelValue
+    }
+  },
+  set(value: any) {
+    if (field?.value) {
+      field.value.setValue(value)
+    }
+    emits('update:modelValue', value)
+  },
+})
 
 const classes = computed(() => {
   if (props.raw) return [props.wrapperClass]
@@ -48,23 +63,13 @@ const classes = computed(() => {
     props.paddingless && 'is-paddingless',
   ]
 })
-
-watch($value, () => {
-  emits('update:modelValue', $value.value)
-})
-watch(
-  () => props.modelValue,
-  () => {
-    $value.value = props.modelValue
-  }
-)
 </script>
 
 <template>
   <VLabel raw :class="classes">
     <input
-      :id="vFieldContext.id"
-      v-model="$value"
+      :id="id"
+      v-model="value"
       v-bind="$attrs"
       :true-value="props.trueValue"
       :false-value="props.falseValue"
@@ -72,7 +77,7 @@ watch(
       type="checkbox"
     />
     <span></span>
-    <slot v-bind="vFieldContext">{{ props.label }}</slot>
+    <slot v-bind="{ field, id }">{{ props.label }}</slot>
   </VLabel>
 </template>
 

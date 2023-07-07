@@ -96,7 +96,7 @@ useHead({
                 </div>
                 <div class="auth-form-wrapper">
                   <!-- Login Form -->
-                  <form @submit.prevent="handleLogin">
+                  <form method="post" novalidate @submit.prevent="handleLogin">
                     <div class="login-form">
                       <!-- Username -->
                       <VField>

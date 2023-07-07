@@ -103,6 +103,8 @@ const onSave = async () => {
           <!--Inner Form-->
           <form
             v-if="isEditingLanguages"
+            method="post"
+            novalidate
             class="setting-form"
             @submit.prevent="addLanguage"
           >
@@ -312,7 +314,13 @@ const onSave = async () => {
 
         <div class="setting-list">
           <!--Inner Form-->
-          <form v-if="isEditingSkills" class="setting-form" @submit.prevent="addSkill">
+          <form
+            v-if="isEditingSkills"
+            method="post"
+            novalidate
+            class="setting-form"
+            @submit.prevent="addSkill"
+          >
             <div class="field-wrap">
               <div class="columns is-multiline">
                 <div class="column is-6">
@@ -538,7 +546,12 @@ const onSave = async () => {
 
         <div class="setting-list">
           <!--Inner Form-->
-          <form v-if="isEditingTools" class="setting-form" @submit.prevent="addTool">
+          <form
+            v-if="isEditingTools"
+            method="post"
+            novalidateclass="setting-form"
+            @submit.prevent="addTool"
+          >
             <div class="field-wrap">
               <div class="columns is-multiline">
                 <div class="column is-6">

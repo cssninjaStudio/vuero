@@ -9,12 +9,10 @@ export interface VSelectProps {
   modelValue?: any
   multiple?: boolean
 }
-const vFieldContext = reactive(
-  useVFieldContext({
-    create: false,
-    help: 'VSelect',
-  })
-)
+const { field, id } = useVFieldContext({
+  create: false,
+  help: 'VSelect',
+})
 
 defineOptions({
   inheritAttrs: false,
@@ -25,15 +23,15 @@ const attrs = useAttrs()
 
 const value = computed({
   get() {
-    if (vFieldContext.field?.value) {
-      return vFieldContext.field.value.value
+    if (field?.value) {
+      return field.value.value
     } else {
       return props.modelValue
     }
   },
   set(value: any) {
-    if (vFieldContext.field?.value) {
-      vFieldContext.field.value.value = value
+    if (field?.value) {
+      field.value.setValue(value)
     }
     emits('update:modelValue', value)
   },
@@ -49,15 +47,15 @@ const classes = computed(() => {
 <template>
   <div :class="classes">
     <select
-      :id="vFieldContext.id"
+      :id="id"
       v-bind="attrs"
       v-model="value"
-      :name="vFieldContext.id"
+      :name="id"
       :multiple="props.multiple"
-      @change="vFieldContext.field?.handleChange"
-      @blur="vFieldContext.field?.handleBlur"
+      @change="field?.handleChange"
+      @blur="field?.handleBlur"
     >
-      <slot v-bind="{ selected: value, id: vFieldContext.id }"></slot>
+      <slot v-bind="{ selected: value, id }"></slot>
     </select>
   </div>
 </template>

@@ -55,7 +55,7 @@ const onSave = async () => {
         </div>
       </div>
     </div>
-    <form class="form-body" @submit.prevent="onSave">
+    <form method="post" novalidate class="form-body" @submit.prevent="onSave">
       <!--Fieldset-->
       <div class="fieldset">
         <div class="fieldset-heading">

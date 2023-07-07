@@ -152,7 +152,12 @@ onUnmounted(() => {
                   And simply join an unmatched design experience.
                 </h2>
                 <div class="signup-card">
-                  <form class="signup-form is-mobile-spaced" @submit.prevent>
+                  <form
+                    method="post"
+                    novalidate
+                    class="signup-form is-mobile-spaced"
+                    @submit.prevent
+                  >
                     <div class="columns is-multiline">
                       <div class="column is-6">
                         <VField>
@@ -235,7 +240,7 @@ onUnmounted(() => {
 
             <!-- Step 2 -->
             <div class="columns signup-columns" :class="[step !== 1 && 'is-hidden']">
-              <form class="column is-8" @submit.prevent>
+              <form method="post" novalidate class="column is-8" @submit.prevent>
                 <div class="signup-profile-wrapper">
                   <h1 class="title is-5 signup-title has-text-centered">
                     Add a profile picture
@@ -301,7 +306,12 @@ onUnmounted(() => {
                   Your username is how others will find you on Vuero so pick a good one.
                   You can change it later.
                 </h2>
-                <form class="signup-form" @submit.prevent="handleSignup">
+                <form
+                  method="post"
+                  novalidate
+                  class="signup-form"
+                  @submit.prevent="handleSignup"
+                >
                   <div class="columns is-multiline">
                     <div class="column is-12">
                       <VField>

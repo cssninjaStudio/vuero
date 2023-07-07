@@ -316,6 +316,8 @@ useHead({
 
     <VModal
       is="form"
+      method="post"
+      novalidate
       :open="smallFormOpen"
       title="Leave a Comment"
       size="small"
@@ -324,7 +326,7 @@ useHead({
       @close="smallFormOpen = false"
     >
       <template #content>
-        <form class="modal-form">
+        <div class="modal-form">
           <VField label="Username *">
             <VControl>
               <VInput type="text" placeholder="Username" />
@@ -340,7 +342,7 @@ useHead({
               <VTextarea rows="4" placeholder="Your message..." />
             </VControl>
           </VField>
-        </form>
+        </div>
       </template>
       <template #action>
         <VButton type="submit" color="primary" raised>Publish</VButton>
@@ -349,6 +351,8 @@ useHead({
 
     <VModal
       is="form"
+      method="post"
+      novalidate
       :open="standardFormOpen"
       title="Leave a Comment"
       actions="right"
@@ -356,7 +360,7 @@ useHead({
       @close="standardFormOpen = false"
     >
       <template #content>
-        <form class="modal-form">
+        <div class="modal-form">
           <VField label="Username *">
             <VControl>
               <VInput type="text" placeholder="Username" />
@@ -372,7 +376,7 @@ useHead({
               <VTextarea rows="4" placeholder="Your message..." />
             </VControl>
           </VField>
-        </form>
+        </div>
       </template>
       <template #action>
         <VButton type="submit" color="primary" raised>Publish</VButton>
@@ -381,6 +385,8 @@ useHead({
 
     <VModal
       is="form"
+      method="post"
+      novalidate
       :open="mediumFormOpen"
       size="medium"
       title="Horizontal Form"
@@ -389,7 +395,7 @@ useHead({
       @close="mediumFormOpen = false"
     >
       <template #content>
-        <form class="modal-form">
+        <div class="modal-form">
           <VField label="Username *" horizontal>
             <VControl expanded>
               <VInput type="text" placeholder="Username" />
@@ -405,7 +411,7 @@ useHead({
               <VTextarea rows="4" placeholder="Your message..." />
             </VControl>
           </VField>
-        </form>
+        </div>
       </template>
       <template #action>
         <VButton type="submit" color="primary" raised>Publish</VButton>
@@ -414,6 +420,8 @@ useHead({
 
     <VModal
       is="form"
+      method="post"
+      novalidate
       :open="largeFormOpen"
       size="large"
       title="Create Project"

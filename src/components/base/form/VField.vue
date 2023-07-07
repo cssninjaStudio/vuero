@@ -17,9 +17,7 @@ const props = withDefaults(defineProps<VFieldProps>(), {
   id: undefined,
   label: undefined,
 })
-const vFieldContext = reactive(
-  useVFieldContext({ id: props.id, inherit: !props.subcontrol })
-)
+const { field, id } = useVFieldContext({ id: props.id, inherit: !props.subcontrol })
 
 const slots = useSlots()
 const hasLabel = computed(() => Boolean(slots?.label?.() || props.label))
@@ -36,40 +34,40 @@ const classes = computed(() => {
   ]
 })
 
-defineExpose(vFieldContext)
+defineExpose({ field, id })
 </script>
 
 <template>
   <div :class="classes">
     <template v-if="props.addons">
       <div v-if="hasLabel" class="field-addon-label is-normal">
-        <slot v-bind="vFieldContext" name="label">
+        <slot v-bind="{ field, id }" name="label">
           <VLabel>{{ props.label }}</VLabel>
         </slot>
       </div>
       <div class="field-addon-body">
-        <slot v-bind="vFieldContext"></slot>
+        <slot v-bind="{ field, id }"></slot>
       </div>
     </template>
     <template v-else-if="hasLabel && props.horizontal">
       <div class="field-label is-normal">
-        <slot v-bind="vFieldContext" name="label">
+        <slot v-bind="{ field, id }" name="label">
           <VLabel>{{ props.label }}</VLabel>
         </slot>
       </div>
       <div class="field-body">
-        <slot v-bind="vFieldContext"></slot>
+        <slot v-bind="{ field, id }"></slot>
       </div>
     </template>
     <template v-else-if="hasLabel">
-      <slot v-bind="vFieldContext" name="label">
+      <slot v-bind="{ field, id }" name="label">
         <VLabel>{{ props.label }}</VLabel>
       </slot>
 
-      <slot v-bind="vFieldContext"></slot>
+      <slot v-bind="{ field, id }"></slot>
     </template>
     <template v-else>
-      <slot v-bind="vFieldContext"></slot>
+      <slot v-bind="{ field, id }"></slot>
     </template>
   </div>
 </template>

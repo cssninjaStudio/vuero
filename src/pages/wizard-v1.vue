@@ -24,7 +24,12 @@ useHead({
     />
 
     <!--Main Wrapper-->
-    <form class="wizard-v1-wrapper" @submit.prevent="() => wizard?.validateStepFn?.()">
+    <form
+      method="post"
+      novalidate
+      class="wizard-v1-wrapper"
+      @submit.prevent="() => wizard?.validateStepFn?.()"
+    >
       <RouterView />
 
       <!--Wizard Navigation Buttons-->

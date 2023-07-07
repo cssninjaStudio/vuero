@@ -11,12 +11,11 @@ export interface VInputProps {
   falseValue?: boolean
 }
 
-const vFieldContext = reactive(
-  useVFieldContext({
-    create: false,
-    help: 'VInput',
-  })
-)
+const { field, id } = useVFieldContext({
+  create: false,
+  help: 'VInput',
+})
+
 const emits = defineEmits<VInputEmits>()
 const props = withDefaults(defineProps<VInputProps>(), {
   modelValue: '',
@@ -25,15 +24,15 @@ const props = withDefaults(defineProps<VInputProps>(), {
 })
 const value = computed({
   get() {
-    if (vFieldContext.field?.value) {
-      return vFieldContext.field.value.value
+    if (field?.value) {
+      return field.value.value
     } else {
       return props.modelValue
     }
   },
   set(value: any) {
-    if (vFieldContext.field?.value) {
-      vFieldContext.field.value.value = value
+    if (field?.value) {
+      field.value.setValue(value)
     }
     emits('update:modelValue', value)
   },
@@ -48,13 +47,13 @@ const classes = computed(() => {
 
 <template>
   <input
-    :id="vFieldContext.id"
+    :id="id"
     v-model="value"
     :class="classes"
-    :name="vFieldContext.id"
+    :name="id"
     :true-value="props.trueValue"
     :false-value="props.falseValue"
-    @change="vFieldContext.field?.handleChange"
-    @blur="vFieldContext.field?.handleBlur"
+    @change="field?.handleChange"
+    @blur="field?.handleBlur"
   />
 </template>

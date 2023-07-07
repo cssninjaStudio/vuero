@@ -27,24 +27,22 @@ const props = withDefaults(defineProps<VRadioProps>(), {
   paddingless: false,
 })
 
-const vFieldContext = reactive(
-  useVFieldContext({
-    id: props.id,
-    inherit: false,
-  })
-)
+const { field, id } = useVFieldContext({
+  id: props.id,
+  inherit: false,
+})
 
 const value = computed({
   get() {
-    if (vFieldContext.field?.value) {
-      return vFieldContext.field.value.value
+    if (field?.value) {
+      return field.value.value
     } else {
       return props.modelValue
     }
   },
   set(value: any) {
-    if (vFieldContext.field?.value) {
-      vFieldContext.field.value.value = value
+    if (field?.value) {
+      field.value.setValue(value)
     }
     emits('update:modelValue', value)
   },
@@ -63,7 +61,7 @@ const value = computed({
     ]"
   >
     <input
-      :id="vFieldContext.id"
+      :id="id"
       v-model="value"
       type="radio"
       :value="props.value"
@@ -71,7 +69,7 @@ const value = computed({
       v-bind="$attrs"
     />
     <span></span>
-    <slot v-bind="vFieldContext">{{ props.label }}</slot>
+    <slot v-bind="{ field, id }">{{ props.label }}</slot>
   </VLabel>
 </template>
 

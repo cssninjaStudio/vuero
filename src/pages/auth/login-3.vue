@@ -77,7 +77,7 @@ useHead({
 
         <!--Form-->
         <div class="form-card">
-          <form @submit.prevent="handleLogin">
+          <form method="post" novalidate @submit.prevent="handleLogin">
             <div class="login-form">
               <VField>
                 <VControl icon="feather:user">

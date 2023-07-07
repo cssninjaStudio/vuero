@@ -7,12 +7,10 @@ export interface VLabelProps {
 
 const props = defineProps<VLabelProps>()
 
-const vFieldContext = reactive(
-  useVFieldContext({
-    create: false,
-    help: 'VLabel',
-  })
-)
+const { field, id } = useVFieldContext({
+  create: false,
+  help: 'VLabel',
+})
 
 const classes = computed(() => {
   if (props.raw) return []
@@ -22,7 +20,7 @@ const classes = computed(() => {
 </script>
 
 <template>
-  <label :class="classes" :for="vFieldContext.id">
-    <slot v-bind="vFieldContext" />
+  <label :class="classes" :for="id">
+    <slot v-bind="{ field, id }" />
   </label>
 </template>

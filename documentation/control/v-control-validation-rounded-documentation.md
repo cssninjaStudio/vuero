@@ -27,7 +27,7 @@ Use the props shown in the code examples to handle validation.
 
 <!--example-->
 
-<form @submit.prevent>
+<form method="post" novalidate @submit.prevent>
   <VField>
     <VControl icon="feather:user" is-valid>
       <VInput
