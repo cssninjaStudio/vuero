@@ -11,8 +11,8 @@ if you already are familiar with it.
 ```vue
 <script setup lang="ts">
 import { toTypedSchema } from '@vee-validate/zod'
-import { useForm } from 'vee-validate'
-import { z as zod } from 'zod'
+import { useField, useFieldArray, useForm } from 'vee-validate'
+import { z } from 'zod'
 import VueScrollTo from 'vue-scrollto'
 
 import { useNotyf } from '/@src/composable/useNotyf'
@@ -21,64 +21,88 @@ import sleep from '/@src/utils/sleep'
 const notyf = useNotyf()
 const { scrollTo } = VueScrollTo
 
+// This is the Zod schema for the form input
+// It's used to define the shape that the form data will have
+const zodSchema = z
+  .object({
+    email: z
+      .string({
+        required_error: 'Enter your email first',
+      })
+      .email('A valid email address should be provided'),
+    rating: z
+      .number({
+        required_error: 'Enter a valid rating first',
+      })
+      .gte(1, 'The rating should be at least 1'),
+    password: z
+      .string({
+        required_error: 'Enter your password to sign in',
+      })
+      .min(8, 'Your password should contains at least 8 characters'),
+    passwordCheck: z.string(),
+    birthdate: z
+      .date({
+        invalid_type_error: 'Please enter a valid date',
+        required_error: 'Please enter a date',
+      })
+      .max(new Date(), 'You cannot be born in the future')
+      .nullable(),
+    agreeTerms: z
+      .boolean()
+      .refine((value) => value, 'You must agree our terms of service'),
+    interests: z
+      .string()
+      .array()
+      .min(2, 'You must select at least 2 terms of service')
+      .max(3, 'You can select up to 3 terms of service'),
+    feedback: z
+      .array(
+        z.object({
+          title: z
+            .string()
+            .min(10, 'Your experience title should be at least 10 characters'),
+          rating: z.number().gte(1, 'The rating should be at least 1'),
+        })
+      )
+      .min(1, 'You must send at least 1 feedback')
+      .max(3, 'You can send up to 3 feedbacks'),
+    emailOptin: z.boolean(),
+  })
+  .refine((data) => data.password === data.passwordCheck, {
+    message: 'The confirmation does not match the password',
+    path: ['passwordCheck'],
+  })
+
+// Zod has a great infer method that will
+// infer the shape of the schema into a TypeScript type
+type FormInput = z.infer<typeof zodSchema>
+
 // we need to declare the schema for the form
-const validationSchema = toTypedSchema(
-  zod
-    .object({
-      email: zod
-        .string({
-          required_error: 'Enter your email first',
-        })
-        .email('A valid email address should be provided'),
-      rating: zod
-        .number({
-          required_error: 'Enter a valid rating first',
-        })
-        .gte(1, 'The rating should be at least 1'),
-      password: zod
-        .string({
-          required_error: 'Enter your password to sign in',
-        })
-        .min(8, 'Your password should contains at least 8 characters'),
-      passwordCheck: zod.string(),
-      birthdate: zod
-        .date({
-          invalid_type_error: 'Please enter a valid date',
-          required_error: 'Please enter a date',
-        })
-        .max(new Date(), 'You cannot be born in the future')
-        .nullable(),
-      agreeTerms: zod
-        .boolean()
-        .refine((value) => value, 'You must agree our terms of service'),
-      interests: zod
-        .string()
-        .array()
-        .min(2, 'You must select at least 2 terms of service')
-        .max(3, 'You can select up to 3 terms of service'),
-      emailOptin: zod.boolean(),
-    })
-    .refine((data) => data.password === data.passwordCheck, {
-      message: 'The confirmation does not match the password',
-      path: ['passwordCheck'],
-    })
-)
+const validationSchema = toTypedSchema(zodSchema)
+
+// Set initial values for the form
+const initialValues = computed<FormInput>(() => ({
+  email: '',
+  password: '',
+  rating: 1,
+  passwordCheck: '',
+  birthdate: null,
+  interests: [],
+  feedback: [],
+  agreeTerms: false,
+  emailOptin: false,
+}))
 
 // here we create a vee-validate form context that
-// swill be used in all vuero form components
-const { handleSubmit, setFieldError, handleReset } = useForm({
+// will be used in all vuero form components
+const { handleSubmit, setFieldError, handleReset, values, errors } = useForm({
   validationSchema,
-  initialValues: {
-    email: '',
-    password: '',
-    rating: 1,
-    passwordCheck: '',
-    birthdate: null,
-    interests: [],
-    agreeTerms: false,
-    emailOptin: false,
-  },
+  initialValues,
 })
+
+const { remove, push, fields } = useFieldArray<FormInput['feedback'][0]>('feedback')
+const { errorMessage } = useField<FormInput['feedback'][0]>('feedback')
 
 const loading = ref(false)
 
@@ -153,14 +177,6 @@ const handleSignup = handleSubmit(async (values) => {
         </ClientOnly>
       </VControl>
     </VField>
-    <VField id="rating" v-slot="{ field }" label="Confirm your new password">
-      <VControl icon="feather:check">
-        <VRangeRating />
-        <p v-if="field?.errorMessage" class="help is-danger">
-          {{ field.errorMessage }}
-        </p>
-      </VControl>
-    </VField>
     <VField
       id="interests"
       v-slot="{ field }"
@@ -188,6 +204,59 @@ const handleSignup = handleSubmit(async (values) => {
         </p>
       </VControl>
     </VField>
+    <div class="py-4">
+      <!-- eslint-disable-next-line vue/require-v-for-key -->
+      <div v-for="(element, index) in fields" class="my-3">
+        <div class="columns">
+          <VField
+            :id="`feedback[${index}].title`"
+            v-slot="{ field }"
+            label="Name your experience"
+            class="column is-two-fifths"
+          >
+            <VControl>
+              <VInput
+                type="email"
+                placeholder="john.doe@gmail.com"
+                autocomplete="username"
+              />
+              <p v-if="field?.errorMessage" class="help is-danger">
+                {{ field.errorMessage }}
+              </p>
+            </VControl>
+          </VField>
+          <VField
+            :id="`feedback[${index}].rating`"
+            v-slot="{ field }"
+            class="ml-4"
+            label="Give a rating"
+          >
+            <VControl>
+              <VRangeRating class="mt-5" size="medium" />
+              <p v-if="field?.errorMessage" class="help is-danger">
+                {{ field.errorMessage }}
+              </p>
+            </VControl>
+          </VField>
+          <VIconButton
+            class="is-remove"
+            :style="{}"
+            light
+            raised
+            circle
+            color="danger"
+            icon="feather:trash-2"
+            @click="() => remove(index)"
+          />
+        </div>
+      </div>
+      <div class="mb-5">
+        <VButton @click="() => push({ rating: 3, title: '' })"> Add feedback </VButton>
+        <p v-if="errorMessage" class="help is-danger">
+          {{ errorMessage }}
+        </p>
+      </div>
+    </div>
     <VField id="agreeTerms" v-slot="{ field }">
       <VControl>
         <VCheckbox paddingless>
@@ -210,8 +279,59 @@ const handleSignup = handleSubmit(async (values) => {
       <VButton :loading="loading" type="submit" color="primary">Submit</VButton>
       <VButton type="reset" @click="handleReset">Reset</VButton>
     </VButtons>
+    <div class="demo-code-wrapper">
+      <div class="demo-state">
+        <pre>{{ values }}</pre>
+      </div>
+      <div class="demo-state">
+        <pre>{{ errors }}</pre>
+      </div>
+    </div>
   </form>
 </template>
+
+<style lang="scss" scoped>
+.is-remove {
+  margin-inline-start: 1.5rem;
+  margin-top: 2.25rem;
+}
+
+.demo-code-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 2rem;
+  overflow-x: auto;
+
+  .demo-code {
+    flex-grow: 1;
+  }
+
+  .demo-state {
+    // flex-grow: 1;
+    position: relative;
+    margin-bottom: 1.5rem;
+    max-width: 100%;
+
+    &::before {
+      position: absolute;
+      top: 0.6em;
+      inset-inline-end: 1em;
+      z-index: 2;
+      font-size: 0.8rem;
+      color: #888;
+      content: 'values';
+    }
+  }
+}
+
+@media only screen and (width <= 767px) {
+  .is-remove {
+    margin-inline-start: 1rem;
+    margin-top: 1em;
+    margin-bottom: 2.25rem;
+  }
+}
+</style>
 ```
 
 <!--/code-->
