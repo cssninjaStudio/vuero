@@ -67,7 +67,7 @@
     "cypress": "cypress"
   },
   "dependencies": {
-    "@ckeditor/ckeditor5-build-classic": "37.1.0",
+    "@ckeditor/ckeditor5-build-classic": "38.1.1",
     "@ckeditor/ckeditor5-vue": "5.1.0",
     "@cssninja/bulma-css-vars": "0.9.2",
     "@iconify/iconify": "3.1.0",
