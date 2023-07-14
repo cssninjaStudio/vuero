@@ -2,9 +2,7 @@
 import { useVFieldContext } from '/@src/composable/useVFieldContext'
 
 export type VCheckboxColor = 'primary' | 'info' | 'success' | 'warning' | 'danger'
-export interface VCheckboxEmits {
-  (e: 'update:modelValue', value: any): void
-}
+
 export interface VCheckboxProps {
   raw?: boolean
   label?: string
@@ -12,21 +10,22 @@ export interface VCheckboxProps {
   trueValue?: any
   falseValue?: any
   value?: any
-  modelValue?: any
   circle?: boolean
   solid?: boolean
   paddingless?: boolean
   wrapperClass?: string
 }
 
-const emits = defineEmits<VCheckboxEmits>()
+const modelValue = defineModel<any>({
+  default: false,
+  local: true,
+})
 const props = withDefaults(defineProps<VCheckboxProps>(), {
   label: undefined,
   color: undefined,
   trueValue: true,
   falseValue: false,
   value: undefined,
-  modelValue: false,
   circle: false,
   solid: false,
   paddingless: false,
@@ -35,19 +34,19 @@ const props = withDefaults(defineProps<VCheckboxProps>(), {
 
 const { field, id } = useVFieldContext()
 
-const value = computed({
+const internal = computed({
   get() {
     if (field?.value) {
       return field.value.value
     } else {
-      return props.modelValue
+      return modelValue.value
     }
   },
   set(value: any) {
     if (field?.value) {
       field.value.setValue(value)
     }
-    emits('update:modelValue', value)
+    modelValue.value = value
   },
 })
 
@@ -69,7 +68,7 @@ const classes = computed(() => {
   <VLabel raw :class="classes">
     <input
       :id="id"
-      v-model="value"
+      v-model="internal"
       v-bind="$attrs"
       :true-value="props.trueValue"
       :false-value="props.falseValue"

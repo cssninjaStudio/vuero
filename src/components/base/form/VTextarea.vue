@@ -1,36 +1,40 @@
 <script setup lang="ts">
 import { useVFieldContext } from '/@src/composable/useVFieldContext'
 
-export interface VTextareaEmits {
-  (event: 'update:modelValue', value?: any): void
-}
 export interface VTextareaProps {
   raw?: boolean
-  modelValue?: any
   autogrow?: boolean
 }
+
+const modelValue = defineModel<string>({
+  default: '',
+  local: true,
+})
+const props = defineProps<{
+  raw?: boolean
+  autogrow?: boolean
+}>()
+
 const { field, id } = useVFieldContext({
   create: false,
   help: 'VTextarea',
 })
 
-const emits = defineEmits<VTextareaEmits>()
-const props = withDefaults(defineProps<VTextareaProps>(), { modelValue: '' })
 const textareaRef = ref<HTMLTextAreaElement>()
 
-const value = computed({
+const internal = computed({
   get() {
     if (field?.value) {
       return field.value.value
     } else {
-      return props.modelValue
+      return modelValue.value
     }
   },
   set(value: any) {
     if (field?.value) {
       field.value.setValue(value)
     }
-    emits('update:modelValue', value)
+    modelValue.value = value
   },
 })
 
@@ -56,7 +60,7 @@ const classes = computed(() => {
   <textarea
     :id="id"
     ref="textareaRef"
-    v-model="value"
+    v-model="internal"
     :class="classes"
     :name="id"
     @change="field?.handleChange"

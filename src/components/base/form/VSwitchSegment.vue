@@ -1,34 +1,22 @@
 <script setup lang="ts">
 export type VSwitchSegmentColor = 'primary' | 'info' | 'success' | 'warning' | 'danger'
-export interface VSwitchSegmentEmits {
-  (e: 'update:modelValue', value: any): void
-}
+
 export interface VSwitchSegmentProps {
-  modelValue?: any
   labelTrue?: string
   labelFalse?: string
   color?: VSwitchSegmentColor
 }
 
-const emit = defineEmits<VSwitchSegmentEmits>()
+const modelValue = defineModel({
+  default: false,
+  local: true,
+})
+
 const props = withDefaults(defineProps<VSwitchSegmentProps>(), {
-  modelValue: false,
   labelTrue: undefined,
   labelFalse: undefined,
   color: undefined,
 })
-
-const value = ref(props.modelValue)
-
-watch(value, () => {
-  emit('update:modelValue', value.value)
-})
-watch(
-  () => props.modelValue,
-  () => {
-    value.value = props.modelValue
-  }
-)
 </script>
 
 <template>
@@ -38,12 +26,12 @@ watch(
     </VLabel>
     <VLabel raw class="form-switch" :class="[props.color && `is-${props.color}`]">
       <VInput
-        :checked="props.modelValue"
+        :checked="modelValue"
         raw
         v-bind="$attrs"
         type="checkbox"
         class="is-switch"
-        @change="emit('update:modelValue', !props.modelValue)"
+        @change="() => (modelValue = !modelValue)"
       />
       <i aria-hidden="true"></i>
     </VLabel>

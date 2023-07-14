@@ -32,7 +32,7 @@ const hasValue = computed(
 )
 const active = computed(() => !props.readonly && hasValue.value)
 
-const value = computed({
+const internal = computed({
   get() {
     if (field?.value) {
       return field.value.value ?? 0
@@ -80,8 +80,8 @@ onKeyStroke('ArrowLeft', (e) => {
 
   e.preventDefault()
 
-  if (value.value > 0) {
-    value.value = value.value - 1
+  if (internal.value > 0) {
+    internal.value = internal.value - 1
   }
 })
 onKeyStroke('ArrowRight', (e) => {
@@ -90,8 +90,8 @@ onKeyStroke('ArrowRight', (e) => {
 
   e.preventDefault()
 
-  if (value.value < props.max) {
-    value.value = value.value + 1
+  if (internal.value < props.max) {
+    internal.value = internal.value + 1
   }
 })
 
@@ -107,7 +107,7 @@ function unhighlight() {
 function selectIndex(index: number) {
   if (props.readonly) return
   if (props.disabled) return
-  value.value = index + 1
+  internal.value = index + 1
 }
 
 function isStarSelected(index: number) {
@@ -117,7 +117,7 @@ function isStarSelected(index: number) {
     return highlighted.value - index > 0
   }
 
-  return value.value - index > 0
+  return internal.value - index > 0
 }
 </script>
 
@@ -151,7 +151,7 @@ function isStarSelected(index: number) {
         :key="index"
         :role="active ? 'radio' : undefined"
         :aria-label="String(index + 1)"
-        :aria-checked="active ? value - index > 0 : undefined"
+        :aria-checked="active ? internal - index > 0 : undefined"
         aria-hidden="true"
         class="rating-star"
         :class="{

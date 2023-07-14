@@ -6,6 +6,15 @@ import { topicList } from '/@src/data/widgets/list/topicList'
 import { timeline } from '/@src/data/widgets/list/timeline'
 
 const { todoList1, todoList2, todoList3, todoList4 } = useTodoList()
+
+const todoList1Selection = ref([todoList1.value[1]])
+const todoList2Selection = ref([todoList2.value[0], todoList2.value[3]])
+const todoList3Selection = ref([todoList3.value[0], todoList3.value[2]])
+const todoList4Selection = ref([
+  todoList4.value[1],
+  todoList4.value[3],
+  todoList4.value[4],
+])
 </script>
 
 <template>
@@ -39,14 +48,22 @@ const { todoList1, todoList2, todoList3, todoList4 } = useTodoList()
     <!--List Widget V1a-->
     <div class="column is-4">
       <ListWidgetSingle title="Todo" straight class="list-widget-v1">
-        <ListWidgetTodoList :todos="todoList1" color="warning" />
+        <ListWidgetTodoList
+          v-model="todoList1Selection"
+          :todos="todoList1"
+          color="warning"
+        />
       </ListWidgetSingle>
     </div>
 
     <!--List Widget V1a-->
     <div class="column is-4">
       <ListWidgetSingle title="Todo" straight class="list-widget-v1">
-        <ListWidgetTodoList :todos="todoList2" color="info" />
+        <ListWidgetTodoList
+          v-model="todoList2Selection"
+          :todos="todoList2"
+          color="info"
+        />
       </ListWidgetSingle>
     </div>
 
@@ -59,10 +76,10 @@ const { todoList1, todoList2, todoList3, todoList4 } = useTodoList()
         class="list-widget-v2"
       >
         <template #tab1>
-          <ListWidgetTodoList :todos="todoList3" />
+          <ListWidgetTodoList v-model="todoList3Selection" :todos="todoList3" />
         </template>
         <template #tab2>
-          <ListWidgetTodoList :todos="todoList4" />
+          <ListWidgetTodoList v-model="todoList4Selection" :todos="todoList4" />
         </template>
       </ListWidgetTabbed>
     </div>

@@ -1,40 +1,40 @@
 <script setup lang="ts">
 import { useVFieldContext } from '/@src/composable/useVFieldContext'
 
-export interface VInputEmits {
-  (event: 'update:modelValue', value?: any): void
-}
 export interface VInputProps {
   raw?: boolean
-  modelValue?: any
   trueValue?: boolean
   falseValue?: boolean
 }
+
+const modelValue = defineModel<any>({
+  default: '',
+  local: true,
+})
+const props = withDefaults(defineProps<VInputProps>(), {
+  modelValue: '',
+  trueValue: true,
+  falseValue: false,
+})
 
 const { field, id } = useVFieldContext({
   create: false,
   help: 'VInput',
 })
 
-const emits = defineEmits<VInputEmits>()
-const props = withDefaults(defineProps<VInputProps>(), {
-  modelValue: '',
-  trueValue: true,
-  falseValue: false,
-})
-const value = computed({
+const internal = computed({
   get() {
     if (field?.value) {
       return field.value.value
     } else {
-      return props.modelValue
+      return modelValue.value
     }
   },
   set(value: any) {
     if (field?.value) {
       field.value.setValue(value)
     }
-    emits('update:modelValue', value)
+    modelValue.value = value
   },
 })
 
@@ -48,7 +48,7 @@ const classes = computed(() => {
 <template>
   <input
     :id="id"
-    v-model="value"
+    v-model="internal"
     :class="classes"
     :name="id"
     :true-value="props.trueValue"

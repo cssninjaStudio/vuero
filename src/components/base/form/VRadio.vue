@@ -2,13 +2,10 @@
 import { useVFieldContext } from '/@src/composable/useVFieldContext'
 
 export type VRadioColor = 'primary' | 'info' | 'success' | 'warning' | 'danger'
-export interface VRadioEmits {
-  (e: 'update:modelValue', value: any): void
-}
+
 export interface VRadioProps {
   id?: string
   value: any
-  modelValue?: any
   name?: string
   label?: string
   color?: VRadioColor
@@ -17,10 +14,13 @@ export interface VRadioProps {
   paddingless?: boolean
 }
 
-const emits = defineEmits<VRadioEmits>()
+const modelValue = defineModel<any>({
+  default: undefined,
+  local: true,
+})
+
 const props = withDefaults(defineProps<VRadioProps>(), {
   id: undefined,
-  modelValue: undefined,
   label: undefined,
   color: undefined,
   name: undefined,
@@ -32,19 +32,19 @@ const { field, id } = useVFieldContext({
   inherit: false,
 })
 
-const value = computed({
+const internal = computed({
   get() {
     if (field?.value) {
       return field.value.value
     } else {
-      return props.modelValue
+      return modelValue.value
     }
   },
   set(value: any) {
     if (field?.value) {
       field.value.setValue(value)
     }
-    emits('update:modelValue', value)
+    modelValue.value = value
   },
 })
 </script>
@@ -62,7 +62,7 @@ const value = computed({
   >
     <input
       :id="id"
-      v-model="value"
+      v-model="internal"
       type="radio"
       :value="props.value"
       :name="props.name"

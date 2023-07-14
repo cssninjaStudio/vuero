@@ -3,36 +3,32 @@ export interface VCollapseItem {
   title: string
   content: string
 }
-export interface VCollapseEmits {
-  (e: 'update:modelValue', index?: number): void
-}
-export interface VCollapseProps {
+interface VCollapseProps {
   items: VCollapseItem[]
-  modelValue?: number
   withChevron?: boolean
 }
 
-const emit = defineEmits<VCollapseEmits>()
-const props = withDefaults(defineProps<VCollapseProps>(), {
-  modelValue: undefined,
+const modelValue = defineModel<number | undefined>({
+  default: undefined,
+  local: true,
 })
-const { modelValue } = toRefs(props)
+const props = defineProps<VCollapseProps>()
 
 const toggle = (key: number) => {
   if (modelValue.value === key) {
-    emit('update:modelValue')
+    modelValue.value = undefined
     return
   }
 
-  emit('update:modelValue', key)
+  modelValue.value = key
 }
 </script>
 
 <template>
   <details
-    v-for="(item, key) in items"
+    v-for="(item, key) in props.items"
     :key="key"
-    :class="[withChevron && 'has-chevron', !withChevron && 'has-plus']"
+    :class="[props.withChevron && 'has-chevron', !props.withChevron && 'has-plus']"
     :open="modelValue === key || undefined"
     class="collapse"
   >
@@ -50,8 +46,8 @@ const toggle = (key: number) => {
           </slot>
         </h3>
         <div class="collapse-icon">
-          <VIcon v-if="withChevron" icon="feather:chevron-down" />
-          <VIcon v-else-if="!withChevron" icon="feather:plus" />
+          <VIcon v-if="props.withChevron" icon="feather:chevron-down" />
+          <VIcon v-else-if="!props.withChevron" icon="feather:plus" />
         </div>
       </summary>
       <div class="collapse-content">
