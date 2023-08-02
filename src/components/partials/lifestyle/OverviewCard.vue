@@ -10,7 +10,7 @@ const props = defineProps<{
     class="overview-card"
     :class="[props.metrics && 'is-metrics', props.heatmap && 'is-heatmap']"
   >
-    <slot></slot>
+    <slot />
   </div>
 </template>
 

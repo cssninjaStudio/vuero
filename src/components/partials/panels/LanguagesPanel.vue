@@ -32,7 +32,7 @@ watch(locale, () => {
       role="button"
       @keydown.space.prevent="panels.close()"
       @click="panels.close()"
-    ></div>
+    />
 
     <div class="right-panel">
       <div class="right-panel-head">
@@ -66,11 +66,18 @@ watch(locale, () => {
                 name="language_selection"
                 value="en"
                 checked
-              />
+              >
               <div class="language-option-inner">
-                <img src="/images/icons/flags/united-states-of-america.svg" alt="" />
+                <img
+                  src="/images/icons/flags/united-states-of-america.svg"
+                  alt=""
+                >
                 <div class="indicator">
-                  <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:check"
+                  />
                 </div>
               </div>
             </div>
@@ -78,11 +85,23 @@ watch(locale, () => {
 
           <div class="language-box">
             <div class="language-option">
-              <input v-model="locale" type="radio" name="language_selection" value="fr" />
+              <input
+                v-model="locale"
+                type="radio"
+                name="language_selection"
+                value="fr"
+              >
               <div class="language-option-inner">
-                <img src="/images/icons/flags/france.svg" alt="" />
+                <img
+                  src="/images/icons/flags/france.svg"
+                  alt=""
+                >
                 <div class="indicator">
-                  <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:check"
+                  />
                 </div>
               </div>
             </div>
@@ -90,11 +109,23 @@ watch(locale, () => {
 
           <div class="language-box">
             <div class="language-option">
-              <input v-model="locale" type="radio" name="language_selection" value="es" />
+              <input
+                v-model="locale"
+                type="radio"
+                name="language_selection"
+                value="es"
+              >
               <div class="language-option-inner">
-                <img src="/images/icons/flags/spain.svg" alt="" />
+                <img
+                  src="/images/icons/flags/spain.svg"
+                  alt=""
+                >
                 <div class="indicator">
-                  <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:check"
+                  />
                 </div>
               </div>
             </div>
@@ -102,11 +133,23 @@ watch(locale, () => {
 
           <div class="language-box">
             <div class="language-option">
-              <input v-model="locale" type="radio" name="language_selection" value="de" />
+              <input
+                v-model="locale"
+                type="radio"
+                name="language_selection"
+                value="de"
+              >
               <div class="language-option-inner">
-                <img src="/images/icons/flags/germany.svg" alt="" />
+                <img
+                  src="/images/icons/flags/germany.svg"
+                  alt=""
+                >
                 <div class="indicator">
-                  <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:check"
+                  />
                 </div>
               </div>
             </div>
@@ -114,11 +157,23 @@ watch(locale, () => {
 
           <div class="language-box">
             <div class="language-option">
-              <input v-model="locale" type="radio" name="language_selection" value="ar" />
+              <input
+                v-model="locale"
+                type="radio"
+                name="language_selection"
+                value="ar"
+              >
               <div class="language-option-inner">
-                <img src="/images/icons/flags/saudi-arabia.svg" alt="" />
+                <img
+                  src="/images/icons/flags/saudi-arabia.svg"
+                  alt=""
+                >
                 <div class="indicator">
-                  <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:check"
+                  />
                 </div>
               </div>
             </div>
@@ -131,11 +186,18 @@ watch(locale, () => {
                 type="radio"
                 name="language_selection"
                 value="zh-CN"
-              />
+              >
               <div class="language-option-inner">
-                <img src="/images/icons/flags/china.svg" alt="" />
+                <img
+                  src="/images/icons/flags/china.svg"
+                  alt=""
+                >
                 <div class="indicator">
-                  <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:check"
+                  />
                 </div>
               </div>
             </div>
@@ -147,12 +209,12 @@ watch(locale, () => {
             class="light-image"
             src="/@src/assets/illustrations/right-panel/languages.svg"
             alt=""
-          />
+          >
           <img
             class="dark-image"
             src="/@src/assets/illustrations/right-panel/languages-dark.svg"
             alt=""
-          />
+          >
         </div>
       </div>
     </div>
@@ -214,8 +276,12 @@ watch(locale, () => {
               border: 1.6px solid var(--fade-grey);
               background: var(--white);
               box-shadow: var(--light-box-shadow);
-              transition: color 0.3s, background-color 0.3s, border-color 0.3s,
-                height 0.3s, width 0.3s;
+              transition:
+                color 0.3s,
+                background-color 0.3s,
+                border-color 0.3s,
+                height 0.3s,
+                width 0.3s;
 
               img {
                 display: block;

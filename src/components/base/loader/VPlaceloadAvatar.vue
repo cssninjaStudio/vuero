@@ -23,7 +23,7 @@ const props = withDefaults(defineProps<VPlaceloadAvatarProps>(), {
       props.centered && `is-centered`,
       props.rounded && `is-rounded-${props.rounded}`,
     ]"
-  ></div>
+  />
 </template>
 
 <style lang="scss">

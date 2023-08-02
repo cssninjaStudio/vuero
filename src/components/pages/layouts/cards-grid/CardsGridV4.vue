@@ -29,7 +29,7 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
           v-model="filters"
           class="input custom-text-filter"
           placeholder="Search..."
-        />
+        >
       </VControl>
 
       <div class="buttons">
@@ -43,9 +43,15 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
             />
           </VControl>
         </VField>
-        <VButton color="primary" raised>
+        <VButton
+          color="primary"
+          raised
+        >
           <span class="icon">
-            <i aria-hidden="true" class="fas fa-plus"></i>
+            <i
+              aria-hidden="true"
+              class="fas fa-plus"
+            />
           </span>
           <span>New Post</span>
         </VButton>
@@ -67,27 +73,45 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
             class="light-image"
             src="/@src/assets/illustrations/placeholders/search-4.svg"
             alt=""
-          />
+          >
           <img
             class="dark-image"
             src="/@src/assets/illustrations/placeholders/search-4-dark.svg"
             alt=""
-          />
+          >
         </template>
       </VPlaceholderPage>
 
-      <TransitionGroup name="list" tag="div" class="columns is-multiline">
+      <TransitionGroup
+        name="list"
+        tag="div"
+        class="columns is-multiline"
+      >
         <!--Grid item-->
-        <div v-for="item in filteredData" :key="item.id" class="column is-3">
-          <a href="#" class="card-grid-item">
-            <img :src="item.image" alt="" @error.once="onceImageErrored(400, 300)" />
+        <div
+          v-for="item in filteredData"
+          :key="item.id"
+          class="column is-3"
+        >
+          <a
+            href="#"
+            class="card-grid-item"
+          >
+            <img
+              :src="item.image"
+              alt=""
+              @error.once="onceImageErrored(400, 300)"
+            >
             <div class="card-grid-item-content">
               <h3 class="dark-inverted">
                 {{ item.title }}
               </h3>
             </div>
             <div class="card-grid-item-footer">
-              <VAvatar :picture="item.author.avatar" size="small" />
+              <VAvatar
+                :picture="item.author.avatar"
+                size="small"
+              />
               <div class="meta">
                 <span class="dark-inverted">{{ item.author.name }}</span>
                 <span>{{ item.published }}</span>

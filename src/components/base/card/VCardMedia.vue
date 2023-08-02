@@ -34,13 +34,28 @@ onUpdated(() => {
 
 <template>
   <div class="card v-card">
-    <div v-if="props.image" class="card-image">
-      <figure class="image is-4by3" :class="[props.format && `is-${props.format}`]">
-        <img :src="image" alt="" @error.once="placeholderHandler" />
+    <div
+      v-if="props.image"
+      class="card-image"
+    >
+      <figure
+        class="image is-4by3"
+        :class="[props.format && `is-${props.format}`]"
+      >
+        <img
+          :src="image"
+          alt=""
+          @error.once="placeholderHandler"
+        >
       </figure>
     </div>
     <div class="card-content">
-      <VBlock :title="props.title" :subtitle="props.subtitle" center narrow>
+      <VBlock
+        :title="props.title"
+        :subtitle="props.subtitle"
+        center
+        narrow
+      >
         <template #icon>
           <VAvatar
             v-if="props.avatar"
@@ -51,8 +66,11 @@ onUpdated(() => {
         </template>
       </VBlock>
 
-      <div v-if="hasDefaultSlot" class="inner-content pt-5">
-        <slot></slot>
+      <div
+        v-if="hasDefaultSlot"
+        class="inner-content pt-5"
+      >
+        <slot />
       </div>
     </div>
   </div>

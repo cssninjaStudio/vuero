@@ -11,7 +11,7 @@ const filters = ref('')
             v-model="filters"
             class="input custom-text-filter"
             placeholder="Search..."
-          />
+          >
         </VControl>
       </VField>
 
@@ -20,19 +20,36 @@ const filters = ref('')
       </div>
 
       <div class="buttons">
-        <VButton color="primary" icon="fas fa-check" elevated disabled> Approve </VButton>
+        <VButton
+          color="primary"
+          icon="fas fa-check"
+          elevated
+          disabled
+        >
+          Approve
+        </VButton>
       </div>
     </div>
 
     <div class="list-view list-view-v1">
       <div class="list-view-inner">
         <!--Item-->
-        <div v-for="key in 10" :key="key" class="list-view-item">
+        <div
+          v-for="key in 10"
+          :key="key"
+          class="list-view-item"
+        >
           <VPlaceloadWrap>
             <VPlaceloadAvatar size="medium" />
 
-            <VPlaceloadText last-line-width="60%" class="mx-2" />
-            <VPlaceload class="mx-2" disabled />
+            <VPlaceloadText
+              last-line-width="60%"
+              class="mx-2"
+            />
+            <VPlaceload
+              class="mx-2"
+              disabled
+            />
             <VPlaceload class="mx-2 h-hidden-tablet-p" />
             <VPlaceload class="mx-2 h-hidden-tablet-p" />
             <VPlaceload class="mx-2" />

@@ -11,7 +11,10 @@ useHead({
 <template>
   <MinimalLayout>
     <!--Wizard Navbar-->
-    <WizardV1Navigation v-model:step="wizard.step" :title="wizard.stepTitle" />
+    <WizardV1Navigation
+      v-model:step="wizard.step"
+      :title="wizard.stepTitle"
+    />
 
     <!--Wizard Progress Bar-->
     <VProgress
@@ -33,7 +36,10 @@ useHead({
       <RouterView />
 
       <!--Wizard Navigation Buttons-->
-      <div class="wizard-buttons" :class="[wizard.canNavigate && 'is-active']">
+      <div
+        class="wizard-buttons"
+        :class="[wizard.canNavigate && 'is-active']"
+      >
         <div class="wizard-buttons-inner">
           <VButton
             class="wizard-button-previous"
@@ -437,8 +443,12 @@ useHead({
                 box-shadow: var(--light-box-shadow);
                 opacity: 0;
                 color: var(--primary);
-                transition: color 0.3s, background-color 0.3s, border-color 0.3s,
-                  height 0.3s, width 0.3s;
+                transition:
+                  color 0.3s,
+                  background-color 0.3s,
+                  border-color 0.3s,
+                  height 0.3s,
+                  width 0.3s;
 
                 svg {
                   height: 14px;
@@ -567,8 +577,12 @@ useHead({
                       width: 11px;
                       border-radius: var(--radius-rounded);
                       background: var(--placeholder);
-                      transition: color 0.3s, background-color 0.3s, border-color 0.3s,
-                        height 0.3s, width 0.3s;
+                      transition:
+                        color 0.3s,
+                        background-color 0.3s,
+                        border-color 0.3s,
+                        height 0.3s,
+                        width 0.3s;
 
                       &.is-active {
                         background: var(--primary);
@@ -609,8 +623,12 @@ useHead({
                 box-shadow: var(--light-box-shadow);
                 background: var(--white);
                 padding: 0;
-                transition: color 0.3s, background-color 0.3s, border-color 0.3s,
-                  height 0.3s, width 0.3s;
+                transition:
+                  color 0.3s,
+                  background-color 0.3s,
+                  border-color 0.3s,
+                  height 0.3s,
+                  width 0.3s;
 
                 i {
                   font-size: 12px;
@@ -725,8 +743,12 @@ useHead({
                 border: none;
                 background: none;
                 cursor: pointer;
-                transition: color 0.3s, background-color 0.3s, border-color 0.3s,
-                  height 0.3s, width 0.3s;
+                transition:
+                  color 0.3s,
+                  background-color 0.3s,
+                  border-color 0.3s,
+                  height 0.3s,
+                  width 0.3s;
 
                 &:hover,
                 &:focus:not(.is-active) {
@@ -795,8 +817,12 @@ useHead({
               .lnil {
                 font-size: 2.4rem;
                 color: var(--placeholder);
-                transition: color 0.3s, background-color 0.3s, border-color 0.3s,
-                  height 0.3s, width 0.3s;
+                transition:
+                  color 0.3s,
+                  background-color 0.3s,
+                  border-color 0.3s,
+                  height 0.3s,
+                  width 0.3s;
               }
             }
           }
@@ -907,8 +933,12 @@ useHead({
                 border: none;
                 background: none;
                 cursor: pointer;
-                transition: color 0.3s, background-color 0.3s, border-color 0.3s,
-                  height 0.3s, width 0.3s;
+                transition:
+                  color 0.3s,
+                  background-color 0.3s,
+                  border-color 0.3s,
+                  height 0.3s,
+                  width 0.3s;
 
                 &:hover,
                 &:focus:not(.is-active) {

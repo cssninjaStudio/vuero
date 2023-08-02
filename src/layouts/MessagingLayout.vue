@@ -17,7 +17,7 @@ const isMobileSidebarOpen = ref(false)
 
 <template>
   <div class="sidebar-layout">
-    <div class="app-overlay"></div>
+    <div class="app-overlay" />
 
     <!-- Mobile navigation -->
     <MobileNavbar
@@ -36,27 +36,47 @@ const isMobileSidebarOpen = ref(false)
       <template #links>
         <li>
           <RouterLink to="/sidebar/dashboards">
-            <i aria-hidden="true" class="iconify" data-icon="feather:activity"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:activity"
+            />
           </RouterLink>
         </li>
         <li>
           <RouterLink to="/sidebar/layouts">
-            <i aria-hidden="true" class="iconify" data-icon="feather:grid"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:grid"
+            />
           </RouterLink>
         </li>
         <li>
           <RouterLink to="/elements/">
-            <i aria-hidden="true" class="iconify" data-icon="feather:box"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:box"
+            />
           </RouterLink>
         </li>
         <li>
           <RouterLink to="/components/">
-            <i aria-hidden="true" class="iconify" data-icon="feather:cpu"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:cpu"
+            />
           </RouterLink>
         </li>
         <li>
           <RouterLink to="/messaging-v1">
-            <i aria-hidden="true" class="iconify" data-icon="feather:message-circle"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:message-circle"
+            />
           </RouterLink>
         </li>
       </template>
@@ -69,12 +89,20 @@ const isMobileSidebarOpen = ref(false)
             @keydown.space.prevent="panels.setActive('search')"
             @click="panels.setActive('search')"
           >
-            <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:search"
+            />
           </a>
         </li>
         <li>
           <a href="#">
-            <i aria-hidden="true" class="iconify" data-icon="feather:settings"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:settings"
+            />
           </a>
         </li>
       </template>
@@ -89,7 +117,7 @@ const isMobileSidebarOpen = ref(false)
               aria-hidden="true"
               class="iconify sidebar-svg"
               data-icon="feather:activity"
-            ></i>
+            />
           </RouterLink>
         </li>
 
@@ -100,21 +128,29 @@ const isMobileSidebarOpen = ref(false)
               aria-hidden="true"
               class="iconify sidebar-svg"
               data-icon="feather:grid"
-            ></i>
+            />
           </RouterLink>
         </li>
 
         <!-- Elements -->
         <li>
           <RouterLink to="/elements/">
-            <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather:box"></i>
+            <i
+              aria-hidden="true"
+              class="iconify sidebar-svg"
+              data-icon="feather:box"
+            />
           </RouterLink>
         </li>
 
         <!-- Components -->
         <li>
           <RouterLink to="/components/">
-            <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather:cpu"></i>
+            <i
+              aria-hidden="true"
+              class="iconify sidebar-svg"
+              data-icon="feather:cpu"
+            />
           </RouterLink>
         </li>
 
@@ -125,7 +161,7 @@ const isMobileSidebarOpen = ref(false)
               aria-hidden="true"
               class="iconify sidebar-svg"
               data-icon="feather:message-circle"
-            ></i>
+            />
           </RouterLink>
         </li>
       </template>
@@ -153,7 +189,11 @@ const isMobileSidebarOpen = ref(false)
             @keydown.space.prevent="panels.close()"
             @click="panels.close()"
           >
-            <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather-x" />
+            <i
+              aria-hidden="true"
+              class="iconify sidebar-svg"
+              data-icon="feather-x"
+            />
           </a>
         </li>
 
@@ -168,7 +208,7 @@ const isMobileSidebarOpen = ref(false)
               aria-hidden="true"
               class="iconify sidebar-svg"
               data-icon="feather:settings"
-            ></i>
+            />
           </RouterLink>
         </li>
 
@@ -183,6 +223,6 @@ const isMobileSidebarOpen = ref(false)
     <ActivityPanel />
     <SearchPanel />
 
-    <slot :is-mobile-sidebar-open="isMobileSidebarOpen"></slot>
+    <slot :is-mobile-sidebar-open="isMobileSidebarOpen" />
   </div>
 </template>

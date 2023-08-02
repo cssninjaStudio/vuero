@@ -17,16 +17,25 @@ const dropdown = useDropdown(dropdownElement)
       @keydown.space.prevent="dropdown.toggle"
       @click="dropdown.toggle"
     >
-      <i aria-hidden="true" class="iconify" data-icon="feather:bell"></i>
-      <span class="new-indicator pulsate"></span>
+      <i
+        aria-hidden="true"
+        class="iconify"
+        data-icon="feather:bell"
+      />
+      <span class="new-indicator pulsate" />
     </a>
     <div class="navbar-dropdown is-boxed is-right">
       <div class="heading">
         <div class="heading-left">
-          <h6 class="heading-title">Notifications</h6>
+          <h6 class="heading-title">
+            Notifications
+          </h6>
         </div>
         <div class="heading-right">
-          <a class="notification-link" href="#">See all</a>
+          <a
+            class="notification-link"
+            href="#"
+          >See all</a>
         </div>
       </div>
       <div class="inner has-slimscroll">
@@ -39,7 +48,7 @@ const dropdown = useDropdown(dropdownElement)
                   alt=""
                   src="/images/avatars/svg/vuero-4.svg"
                   @error.once="onceImageErrored(150)"
-                />
+                >
               </div>
               <div class="user-content">
                 <p class="user-info">
@@ -57,7 +66,7 @@ const dropdown = useDropdown(dropdownElement)
                   alt=""
                   src="/images/avatars/svg/vuero-2.svg"
                   @error.once="onceImageErrored(150)"
-                />
+                >
               </div>
               <div class="user-content">
                 <p class="user-info">
@@ -75,7 +84,7 @@ const dropdown = useDropdown(dropdownElement)
                   alt=""
                   src="/images/avatars/svg/vuero-5.svg"
                   @error.once="onceImageErrored(150)"
-                />
+                >
               </div>
               <div class="user-content">
                 <p class="user-info">
@@ -93,7 +102,7 @@ const dropdown = useDropdown(dropdownElement)
                   alt=""
                   src="/images/avatars/svg/vuero-9.svg"
                   @error.once="onceImageErrored(150)"
-                />
+                >
               </div>
               <div class="user-content">
                 <p class="user-info">

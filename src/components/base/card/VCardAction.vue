@@ -35,15 +35,27 @@ onUpdated(() => {
     ]"
   >
     <div class="card-head">
-      <VBlock :title="props.title" :subtitle="props.subtitle" center>
+      <VBlock
+        :title="props.title"
+        :subtitle="props.subtitle"
+        center
+      >
         <template #icon>
-          <VAvatar :picture="props.avatar" :badge="props.badge" />
+          <VAvatar
+            :picture="props.avatar"
+            :badge="props.badge"
+          />
         </template>
-        <template #action><slot name="action"></slot></template>
+        <template #action>
+          <slot name="action" />
+        </template>
       </VBlock>
     </div>
-    <div v-if="hasDefaultSlot" class="card-inner">
-      <slot></slot>
+    <div
+      v-if="hasDefaultSlot"
+      class="card-inner"
+    >
+      <slot />
     </div>
   </div>
 </template>

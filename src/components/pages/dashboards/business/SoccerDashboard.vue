@@ -6,7 +6,9 @@
           <!--Live match card-->
           <div class="live-match">
             <div class="head">
-              <h3 class="title is-5">UEFA Champions League</h3>
+              <h3 class="title is-5">
+                UEFA Champions League
+              </h3>
               <div class="league">
                 <div class="left">
                   <span>Group C</span>
@@ -14,7 +16,10 @@
                 </div>
                 <div class="right">
                   <div class="live-block">
-                    <i class="iconify" data-icon="feather:video"></i>
+                    <i
+                      class="iconify"
+                      data-icon="feather:video"
+                    />
                     <span>Live Now</span>
                   </div>
                 </div>
@@ -26,7 +31,7 @@
                   class="team-logo"
                   src="/images/icons/soccer/teams/barcelona.svg"
                   alt=""
-                />
+                >
                 <span class="team-name">Barcelona</span>
               </div>
               <div class="center">
@@ -35,27 +40,42 @@
                 <span class="score">0</span>
               </div>
               <div class="right">
-                <img class="team-logo" src="/images/icons/soccer/teams/psg.svg" alt="" />
+                <img
+                  class="team-logo"
+                  src="/images/icons/soccer/teams/psg.svg"
+                  alt=""
+                >
                 <span class="team-name">PSG</span>
               </div>
             </div>
             <div class="action">
-              <VButton color="primary" fullwidth raised>Watch Now</VButton>
+              <VButton
+                color="primary"
+                fullwidth
+                raised
+              >
+                Watch Now
+              </VButton>
             </div>
           </div>
 
           <!--Leagues-->
           <div class="leagues">
             <div class="head">
-              <h3 class="title is-5">Available leagues</h3>
+              <h3 class="title is-5">
+                Available leagues
+              </h3>
             </div>
             <div class="leagues-list">
-              <RouterLink to="/sidebar/dashboards/soccer" class="league-item">
+              <RouterLink
+                to="/sidebar/dashboards/soccer"
+                class="league-item"
+              >
                 <img
                   class="league-logo"
                   src="/images/icons/soccer/leagues/ligue-1.svg"
                   alt=""
-                />
+                >
                 <div class="meta">
                   <span class="league-name">Ligue 1</span>
                   <span class="league-country">France</span>
@@ -64,12 +84,15 @@
                   <span>8 matches</span>
                 </div>
               </RouterLink>
-              <RouterLink to="/sidebar/dashboards/soccer" class="league-item">
+              <RouterLink
+                to="/sidebar/dashboards/soccer"
+                class="league-item"
+              >
                 <img
                   class="league-logo"
                   src="/images/icons/soccer/leagues/laliga.svg"
                   alt=""
-                />
+                >
                 <div class="meta">
                   <span class="league-name">La Liga</span>
                   <span class="league-country">Spain</span>
@@ -78,12 +101,15 @@
                   <span>8 matches</span>
                 </div>
               </RouterLink>
-              <RouterLink to="/sidebar/dashboards/soccer" class="league-item">
+              <RouterLink
+                to="/sidebar/dashboards/soccer"
+                class="league-item"
+              >
                 <img
                   class="league-logo"
                   src="/images/icons/soccer/leagues/liga.svg"
                   alt=""
-                />
+                >
                 <div class="meta">
                   <span class="league-name">Liga</span>
                   <span class="league-country">Portugal</span>
@@ -92,12 +118,15 @@
                   <span>8 matches</span>
                 </div>
               </RouterLink>
-              <RouterLink to="/sidebar/dashboards/soccer" class="league-item">
+              <RouterLink
+                to="/sidebar/dashboards/soccer"
+                class="league-item"
+              >
                 <img
                   class="league-logo"
                   src="/images/icons/soccer/leagues/bundesliga.svg"
                   alt=""
-                />
+                >
                 <div class="meta">
                   <span class="league-name">Bundesliga</span>
                   <span class="league-country">Germany</span>
@@ -115,14 +144,25 @@
           <!--Colored CTA-->
           <div class="dashboard-cta">
             <div class="dashboard-cta-img">
-              <img alt="" src="/demo/photos/soccer/player.png" />
+              <img
+                alt=""
+                src="/demo/photos/soccer/player.png"
+              >
             </div>
-            <h2 class="dashboard-cta-title">Win awesome prizes in our contest</h2>
+            <h2 class="dashboard-cta-title">
+              Win awesome prizes in our contest
+            </h2>
             <p class="dashboard-cta-text">
               Predict who will win and how a match will end and get a chance to win
               incredible cash prizes.
             </p>
-            <VButton color="light" bold raised>Learn More</VButton>
+            <VButton
+              color="light"
+              bold
+              raised
+            >
+              Learn More
+            </VButton>
           </div>
 
           <!--Matches table-->
@@ -152,7 +192,9 @@
                 <thead>
                   <tr>
                     <th>Time</th>
-                    <th class="has-text-centered">Match</th>
+                    <th class="has-text-centered">
+                      Match
+                    </th>
                     <th>Stadium</th>
                     <th>Details</th>
                   </tr>
@@ -163,8 +205,17 @@
                       <div class="match-time-row">
                         <span class="match-time">-- : --</span>
                         <span class="tag is-live">
-                          <svg width="6" height="6" viewBox="0 0 8 8">
-                            <circle fill="currentColor" cx="4" cy="4" r="4" />
+                          <svg
+                            width="6"
+                            height="6"
+                            viewBox="0 0 8 8"
+                          >
+                            <circle
+                              fill="currentColor"
+                              cx="4"
+                              cy="4"
+                              r="4"
+                            />
                           </svg>
                           Live
                         </span>
@@ -173,18 +224,19 @@
                     <td class="score-cell">
                       <div class="score score-vertical">
                         <div class="score-team score-team-vertical">
-                          <span>Barcelona</span
-                          ><img alt="" src="/images/icons/soccer/teams/barcelona.svg" />
+                          <span>Barcelona</span><img
+                            alt=""
+                            src="/images/icons/soccer/teams/barcelona.svg"
+                          >
                         </div>
                         <p class="score-result score-result-vertical">
-                          <span class="score-goals">4</span
-                          ><span class="score-separator">:</span
-                          ><span class="score-goals">0</span>
+                          <span class="score-goals">4</span><span class="score-separator">:</span><span class="score-goals">0</span>
                         </p>
                         <div class="score-team score-team-vertical">
-                          <img alt="" src="/images/icons/soccer/teams/psg.svg" /><span
-                            >PSG</span
-                          >
+                          <img
+                            alt=""
+                            src="/images/icons/soccer/teams/psg.svg"
+                          ><span>PSG</span>
                         </div>
                       </div>
                     </td>
@@ -193,7 +245,10 @@
                     </td>
                     <td>
                       <a class="table-action">
-                        <i class="iconify" data-icon="feather:align-right"></i>
+                        <i
+                          class="iconify"
+                          data-icon="feather:align-right"
+                        />
                       </a>
                     </td>
                   </tr>
@@ -202,8 +257,17 @@
                       <div class="match-time-row">
                         <span class="match-time">10:30</span>
                         <span class="tag">
-                          <svg width="6" height="6" viewBox="0 0 8 8">
-                            <circle fill="currentColor" cx="4" cy="4" r="4" />
+                          <svg
+                            width="6"
+                            height="6"
+                            viewBox="0 0 8 8"
+                          >
+                            <circle
+                              fill="currentColor"
+                              cx="4"
+                              cy="4"
+                              r="4"
+                            />
                           </svg>
                           Scheduled
                         </span>
@@ -212,19 +276,19 @@
                     <td class="score-cell">
                       <div class="score score-vertical">
                         <div class="score-team score-team-vertical">
-                          <span>Real Madrid</span
-                          ><img alt="" src="/images/icons/soccer/teams/madrid.svg" />
+                          <span>Real Madrid</span><img
+                            alt=""
+                            src="/images/icons/soccer/teams/madrid.svg"
+                          >
                         </div>
                         <p class="score-result score-result-vertical">
-                          <span class="score-goals">1</span
-                          ><span class="score-separator">:</span
-                          ><span class="score-goals">0</span>
+                          <span class="score-goals">1</span><span class="score-separator">:</span><span class="score-goals">0</span>
                         </p>
                         <div class="score-team score-team-vertical">
                           <img
                             alt=""
                             src="/images/icons/soccer/teams/liverpool.svg"
-                          /><span>Liverpool</span>
+                          ><span>Liverpool</span>
                         </div>
                       </div>
                     </td>
@@ -233,7 +297,10 @@
                     </td>
                     <td>
                       <a class="table-action">
-                        <i class="iconify" data-icon="feather:align-right"></i>
+                        <i
+                          class="iconify"
+                          data-icon="feather:align-right"
+                        />
                       </a>
                     </td>
                   </tr>
@@ -242,8 +309,17 @@
                       <div class="match-time-row">
                         <span class="match-time">12:00</span>
                         <span class="tag">
-                          <svg width="6" height="6" viewBox="0 0 8 8">
-                            <circle fill="currentColor" cx="4" cy="4" r="4" />
+                          <svg
+                            width="6"
+                            height="6"
+                            viewBox="0 0 8 8"
+                          >
+                            <circle
+                              fill="currentColor"
+                              cx="4"
+                              cy="4"
+                              r="4"
+                            />
                           </svg>
                           Scheduled
                         </span>
@@ -252,20 +328,21 @@
                     <td class="score-cell">
                       <div class="score score-vertical">
                         <div class="score-team score-team-vertical">
-                          <span>Arsenal</span
-                          ><img alt="" src="/images/icons/soccer/teams/arsenal.svg" />
+                          <span>Arsenal</span><img
+                            alt=""
+                            src="/images/icons/soccer/teams/arsenal.svg"
+                          >
                         </div>
                         <p
                           class="score__result score__result--vertical score__result--not-started"
                         >
-                          <span class="score-goals">-</span
-                          ><span class="score-separator">:</span
-                          ><span class="score-goals">-</span>
+                          <span class="score-goals">-</span><span class="score-separator">:</span><span class="score-goals">-</span>
                         </p>
                         <div class="score-team score-team-vertical">
-                          <img alt="" src="/images/icons/soccer/teams/chelsea.svg" /><span
-                            >Chelsea</span
-                          >
+                          <img
+                            alt=""
+                            src="/images/icons/soccer/teams/chelsea.svg"
+                          ><span>Chelsea</span>
                         </div>
                       </div>
                     </td>
@@ -274,7 +351,10 @@
                     </td>
                     <td>
                       <a class="table-action">
-                        <i class="iconify" data-icon="feather:align-right"></i>
+                        <i
+                          class="iconify"
+                          data-icon="feather:align-right"
+                        />
                       </a>
                     </td>
                   </tr>
@@ -283,8 +363,17 @@
                       <div class="match-time-row">
                         <span class="match-time">14:00</span>
                         <span class="tag">
-                          <svg width="6" height="6" viewBox="0 0 8 8">
-                            <circle fill="currentColor" cx="4" cy="4" r="4" />
+                          <svg
+                            width="6"
+                            height="6"
+                            viewBox="0 0 8 8"
+                          >
+                            <circle
+                              fill="currentColor"
+                              cx="4"
+                              cy="4"
+                              r="4"
+                            />
                           </svg>
                           Scheduled
                         </span>
@@ -293,21 +382,21 @@
                     <td class="score-cell">
                       <div class="score score-vertical">
                         <div class="score-team score-team-vertical">
-                          <span>Everton</span
-                          ><img alt="" src="/images/icons/soccer/teams/everton.svg" />
+                          <span>Everton</span><img
+                            alt=""
+                            src="/images/icons/soccer/teams/everton.svg"
+                          >
                         </div>
                         <p
                           class="score__result score__result--vertical score__result--not-started"
                         >
-                          <span class="score-goals">-</span
-                          ><span class="score-separator">:</span
-                          ><span class="score-goals">-</span>
+                          <span class="score-goals">-</span><span class="score-separator">:</span><span class="score-goals">-</span>
                         </p>
                         <div class="score-team score-team-vertical">
                           <img
                             alt=""
                             src="/images/icons/soccer/teams/liverpool.svg"
-                          /><span>Liverpool</span>
+                          ><span>Liverpool</span>
                         </div>
                       </div>
                     </td>
@@ -316,7 +405,10 @@
                     </td>
                     <td>
                       <a class="table-action">
-                        <i class="iconify" data-icon="feather:align-right"></i>
+                        <i
+                          class="iconify"
+                          data-icon="feather:align-right"
+                        />
                       </a>
                     </td>
                   </tr>
@@ -325,8 +417,17 @@
                       <div class="match-time-row">
                         <span class="match-time">16:00</span>
                         <span class="tag">
-                          <svg width="6" height="6" viewBox="0 0 8 8">
-                            <circle fill="currentColor" cx="4" cy="4" r="4" />
+                          <svg
+                            width="6"
+                            height="6"
+                            viewBox="0 0 8 8"
+                          >
+                            <circle
+                              fill="currentColor"
+                              cx="4"
+                              cy="4"
+                              r="4"
+                            />
                           </svg>
                           Scheduled
                         </span>
@@ -335,20 +436,21 @@
                     <td class="score-cell">
                       <div class="score score-vertical">
                         <div class="score-team score-team-vertical">
-                          <span>Valladolid</span
-                          ><img alt="" src="/images/icons/soccer/teams/valladolid.svg" />
+                          <span>Valladolid</span><img
+                            alt=""
+                            src="/images/icons/soccer/teams/valladolid.svg"
+                          >
                         </div>
                         <p
                           class="score__result score__result--vertical score__result--not-started"
                         >
-                          <span class="score-goals">-</span
-                          ><span class="score-separator">:</span
-                          ><span class="score-goals">-</span>
+                          <span class="score-goals">-</span><span class="score-separator">:</span><span class="score-goals">-</span>
                         </p>
                         <div class="score-team score-team-vertical">
-                          <img alt="" src="/images/icons/soccer/teams/zagreb.svg" /><span
-                            >Zagreb</span
-                          >
+                          <img
+                            alt=""
+                            src="/images/icons/soccer/teams/zagreb.svg"
+                          ><span>Zagreb</span>
                         </div>
                       </div>
                     </td>
@@ -357,7 +459,10 @@
                     </td>
                     <td>
                       <a class="table-action">
-                        <i class="iconify" data-icon="feather:align-right"></i>
+                        <i
+                          class="iconify"
+                          data-icon="feather:align-right"
+                        />
                       </a>
                     </td>
                   </tr>
@@ -366,8 +471,17 @@
                       <div class="match-time-row">
                         <span class="match-time">18:00</span>
                         <span class="tag">
-                          <svg width="6" height="6" viewBox="0 0 8 8">
-                            <circle fill="currentColor" cx="4" cy="4" r="4" />
+                          <svg
+                            width="6"
+                            height="6"
+                            viewBox="0 0 8 8"
+                          >
+                            <circle
+                              fill="currentColor"
+                              cx="4"
+                              cy="4"
+                              r="4"
+                            />
                           </svg>
                           Scheduled
                         </span>
@@ -376,20 +490,21 @@
                     <td class="score-cell">
                       <div class="score score-vertical">
                         <div class="score-team score-team-vertical">
-                          <span>PSG</span
-                          ><img alt="" src="/images/icons/soccer/teams/psg.svg" />
+                          <span>PSG</span><img
+                            alt=""
+                            src="/images/icons/soccer/teams/psg.svg"
+                          >
                         </div>
                         <p
                           class="score__result score__result--vertical score__result--not-started"
                         >
-                          <span class="score-goals">-</span
-                          ><span class="score-separator">:</span
-                          ><span class="score-goals">-</span>
+                          <span class="score-goals">-</span><span class="score-separator">:</span><span class="score-goals">-</span>
                         </p>
                         <div class="score-team score-team-vertical">
-                          <img alt="" src="/images/icons/soccer/teams/chelsea.svg" /><span
-                            >Chelsea</span
-                          >
+                          <img
+                            alt=""
+                            src="/images/icons/soccer/teams/chelsea.svg"
+                          ><span>Chelsea</span>
                         </div>
                       </div>
                     </td>
@@ -398,7 +513,10 @@
                     </td>
                     <td>
                       <a class="table-action">
-                        <i class="iconify" data-icon="feather:align-right"></i>
+                        <i
+                          class="iconify"
+                          data-icon="feather:align-right"
+                        />
                       </a>
                     </td>
                   </tr>

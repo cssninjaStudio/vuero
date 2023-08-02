@@ -32,6 +32,6 @@ const cardRadius = computed(() => {
 
 <template>
   <div :class="[cardRadius, elevated && 'is-raised', props.color && `is-${props.color}`]">
-    <slot></slot>
+    <slot />
   </div>
 </template>

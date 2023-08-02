@@ -50,7 +50,10 @@ useHead({
       >
         <VMarkdownPreviewBaseDocumentation />
         <DocumentationDemoCard class="mt-4">
-          <div class="card-inner" :class="{ 'is-scrolling': isScrolling }">
+          <div
+            class="card-inner"
+            :class="{ 'is-scrolling': isScrolling }"
+          >
             <VMarkdownPreview
               size="medium"
               max-width="small"
@@ -62,7 +65,10 @@ useHead({
 
         <VMarkdownPreviewPropsDocumentation />
       </div>
-      <div v-if="toc.length" class="column is-3 toc-column">
+      <div
+        v-if="toc.length"
+        class="column is-3 toc-column"
+      >
         <DocumentationToc :toc="toc" />
       </div>
     </div>

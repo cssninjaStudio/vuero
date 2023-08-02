@@ -51,7 +51,7 @@ watch(
 
 <template>
   <div class="sidebar-layout">
-    <div class="app-overlay"></div>
+    <div class="app-overlay" />
 
     <!-- Mobile navigation -->
     <MobileNavbar
@@ -59,8 +59,14 @@ watch(
       @toggle="isMobileSidebarOpen = !isMobileSidebarOpen"
     >
       <template #brand>
-        <RouterLink to="/" class="navbar-item is-brand">
-          <AnimatedLogo width="38px" height="38px" />
+        <RouterLink
+          to="/"
+          class="navbar-item is-brand"
+        >
+          <AnimatedLogo
+            width="38px"
+            height="38px"
+          />
         </RouterLink>
 
         <div class="brand-end">
@@ -78,7 +84,11 @@ watch(
       <template #links>
         <li>
           <RouterLink to="app">
-            <i aria-hidden="true" class="iconify" data-icon="feather:home"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:home"
+            />
           </RouterLink>
         </li>
       </template>
@@ -86,7 +96,11 @@ watch(
       <template #bottom-links>
         <li>
           <a href="#">
-            <i aria-hidden="true" class="iconify" data-icon="feather:settings"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:settings"
+            />
           </a>
         </li>
       </template>
@@ -99,7 +113,10 @@ watch(
       />
     </Transition>
 
-    <Sidebar :theme="props.theme" :is-open="isDesktopSidebarOpen">
+    <Sidebar
+      :theme="props.theme"
+      :is-open="isDesktopSidebarOpen"
+    >
       <template #links>
         <!-- Dashboards -->
         <li>
@@ -115,7 +132,7 @@ watch(
               aria-hidden="true"
               class="iconify sidebar-svg"
               data-icon="feather:home"
-            ></i>
+            />
           </a>
         </li>
       </template>
@@ -133,9 +150,12 @@ watch(
     <VViewWrapper>
       <VPageContentWrapper>
         <template v-if="props.nowrap">
-          <slot></slot>
+          <slot />
         </template>
-        <VPageContent v-else class="is-relative">
+        <VPageContent
+          v-else
+          class="is-relative"
+        >
           <div class="page-title has-text-centered">
             <!-- Sidebar Trigger -->
             <div
@@ -146,24 +166,38 @@ watch(
               @click="isDesktopSidebarOpen = !isDesktopSidebarOpen"
             >
               <span class="menu-toggle has-chevron">
-                <span :class="[isDesktopSidebarOpen && 'active']" class="icon-box-toggle">
+                <span
+                  :class="[isDesktopSidebarOpen && 'active']"
+                  class="icon-box-toggle"
+                >
                   <span class="rotate">
-                    <i aria-hidden="true" class="icon-line-top"></i>
-                    <i aria-hidden="true" class="icon-line-center"></i>
-                    <i aria-hidden="true" class="icon-line-bottom"></i>
+                    <i
+                      aria-hidden="true"
+                      class="icon-line-top"
+                    />
+                    <i
+                      aria-hidden="true"
+                      class="icon-line-center"
+                    />
+                    <i
+                      aria-hidden="true"
+                      class="icon-line-bottom"
+                    />
                   </span>
                 </span>
               </span>
             </div>
 
             <div class="title-wrap">
-              <h1 class="title is-4">{{ viewWrapper.pageTitle }}</h1>
+              <h1 class="title is-4">
+                {{ viewWrapper.pageTitle }}
+              </h1>
             </div>
 
             <Toolbar class="desktop-toolbar" />
           </div>
 
-          <slot></slot>
+          <slot />
         </VPageContent>
       </VPageContentWrapper>
     </VViewWrapper>

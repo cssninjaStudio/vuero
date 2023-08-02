@@ -99,9 +99,11 @@ useHead({
               v-model="editorData"
               :editor="editor"
               :config="editorConfig"
-            >
-            </CKEditor>
-            <VPlaceload v-else height="500px" />
+            />
+            <VPlaceload
+              v-else
+              height="500px"
+            />
           </div>
         </div>
       </div>

@@ -316,13 +316,16 @@ function onCallClick(row: any) {
                         type="text"
                         class="input is-rounded"
                         placeholder="Filter..."
-                      />
+                      >
                     </VControl>
                   </VField>
                 </VFlex>
               </template>
               <template #before-navigation>
-                <VFlex class="mr-4" column-gap="1rem">
+                <VFlex
+                  class="mr-4"
+                  column-gap="1rem"
+                >
                   <VButton
                     :loading="wrapperState.loading"
                     size="medium"
@@ -335,11 +338,21 @@ function onCallClick(row: any) {
                     <VControl>
                       <div class="select is-rounded">
                         <select v-model="wrapperState.limit">
-                          <option :value="1">1 results per page</option>
-                          <option :value="10">10 results per page</option>
-                          <option :value="15">15 results per page</option>
-                          <option :value="25">25 results per page</option>
-                          <option :value="50">50 results per page</option>
+                          <option :value="1">
+                            1 results per page
+                          </option>
+                          <option :value="10">
+                            10 results per page
+                          </option>
+                          <option :value="15">
+                            15 results per page
+                          </option>
+                          <option :value="25">
+                            25 results per page
+                          </option>
+                          <option :value="50">
+                            50 results per page
+                          </option>
                         </select>
                       </div>
                     </VControl>
@@ -359,7 +372,10 @@ function onCallClick(row: any) {
                   The wrapperState.loading will be update 
                   when the fetchData function is running 
                 -->
-                <div v-if="wrapperState.loading" class="flex-list-inner">
+                <div
+                  v-if="wrapperState.loading"
+                  class="flex-list-inner"
+                >
                   <div
                     v-for="key in wrapperState.limit"
                     :key="key"
@@ -376,19 +392,31 @@ function onCallClick(row: any) {
                       />
                     </VFlexTableCell>
                     <VFlexTableCell>
-                      <VPlaceload width="60%" class="mx-1" />
+                      <VPlaceload
+                        width="60%"
+                        class="mx-1"
+                      />
                     </VFlexTableCell>
                     <VFlexTableCell>
-                      <VPlaceload width="60%" class="mx-1" />
+                      <VPlaceload
+                        width="60%"
+                        class="mx-1"
+                      />
                     </VFlexTableCell>
                     <VFlexTableCell :column="{ align: 'end' }">
-                      <VPlaceload width="45%" class="mx-1" />
+                      <VPlaceload
+                        width="45%"
+                        class="mx-1"
+                      />
                     </VFlexTableCell>
                   </div>
                 </div>
 
                 <!-- This is the empty state -->
-                <div v-else-if="wrapperState.data.length === 0" class="flex-list-inner">
+                <div
+                  v-else-if="wrapperState.data.length === 0"
+                  class="flex-list-inner"
+                >
                   <VPlaceholderSection
                     title="No matches"
                     subtitle="There is no data that match your query."
@@ -399,12 +427,12 @@ function onCallClick(row: any) {
                         class="light-image"
                         src="/@src/assets/illustrations/placeholders/search-4.svg"
                         alt=""
-                      />
+                      >
                       <img
                         class="dark-image"
                         src="/@src/assets/illustrations/placeholders/search-4-dark.svg"
                         alt=""
-                      />
+                      >
                     </template>
                   </VPlaceholderSection>
                 </div>
@@ -413,7 +441,10 @@ function onCallClick(row: any) {
               <!-- We can inject content before any rows -->
               <template #body-row-pre="{ row }">
                 <template v-if="row.id === incomingCallerId">
-                  <VProgress size="tiny" class="m-0 mb-1" />
+                  <VProgress
+                    size="tiny"
+                    class="m-0 mb-1"
+                  />
                 </template>
               </template>
 
@@ -428,7 +459,11 @@ function onCallClick(row: any) {
                   />
                   <div>
                     <span class="dark-text">{{ row.name }}</span>
-                    <VTextEllipsis width="280px" mobile-width="180px" class="light-text">
+                    <VTextEllipsis
+                      width="280px"
+                      mobile-width="180px"
+                      class="light-text"
+                    >
                       {{ row.bio }}
                     </VTextEllipsis>
                   </div>
@@ -444,15 +479,23 @@ function onCallClick(row: any) {
               <template #body-row-post="{ row }">
                 <template v-if="row.id === incomingCallerId">
                   <VTags class="mt-2 mb-0">
-                    <VTag color="primary" outlined>
-                      <i class="iconify is-inline mr-2" data-icon="feather:send"></i>
+                    <VTag
+                      color="primary"
+                      outlined
+                    >
+                      <i
+                        class="iconify is-inline mr-2"
+                        data-icon="feather:send"
+                      />
                       Calling...
                     </VTag>
                   </VTags>
                 </template>
                 <template v-if="row.id === openedRowId">
                   <div class="is-block p-4 my-2 is-rounded">
-                    <div class="dark-text mb-4 is-size-4">{{ row.name }}'s details</div>
+                    <div class="dark-text mb-4 is-size-4">
+                      {{ row.name }}'s details
+                    </div>
                     <VFlex justify-content="space-between">
                       <VFlexItem>
                         <VCard>
@@ -470,7 +513,7 @@ function onCallClick(row: any) {
                             <i
                               class="iconify is-inline mr-2"
                               data-icon="feather:phone-off"
-                            ></i>
+                            />
                             Cancel call
                           </VButton>
                           <VButton
@@ -483,7 +526,7 @@ function onCallClick(row: any) {
                             <i
                               class="iconify is-inline mr-2"
                               data-icon="feather:phone"
-                            ></i>
+                            />
                             Call {{ row.name }}
                           </VButton>
                         </VFlex>

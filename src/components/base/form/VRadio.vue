@@ -67,9 +67,11 @@ const internal = computed({
       :value="props.value"
       :name="props.name"
       v-bind="$attrs"
-    />
-    <span></span>
-    <slot v-bind="{ field, id }">{{ props.label }}</slot>
+    >
+    <span />
+    <slot v-bind="{ field, id }">
+      {{ props.label }}
+    </slot>
   </VLabel>
 </template>
 

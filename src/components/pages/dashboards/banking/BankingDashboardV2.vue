@@ -63,14 +63,21 @@ const goto = (index: number) => {
               <div class="controls">
                 <button class="button is-large">
                   <span class="icon is-medium">
-                    <i aria-hidden="true" class="iconify" data-icon="feather:plus"></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:plus"
+                    />
                   </span>
                 </button>
               </div>
 
               <!--Carousel-->
               <div class="cards-carousel">
-                <div ref="sliderElement" class="cards-carousel-inner">
+                <div
+                  ref="sliderElement"
+                  class="cards-carousel-inner"
+                >
                   <!--Carousel Item-->
                   <div
                     class="cards-carousel-item"
@@ -80,23 +87,23 @@ const goto = (index: number) => {
                     @click="goto(0)"
                   >
                     <div class="ccard">
-                      <div class="shape"></div>
+                      <div class="shape" />
                       <div class="top">
                         <img
                           class="active"
                           src="/images/icons/dashboards/banking/visa-text-white.svg"
                           alt=""
-                        />
+                        >
                         <img
                           class="light-image inactive"
                           src="/images/icons/dashboards/banking/visa-text-dark.svg"
                           alt=""
-                        />
+                        >
                         <img
                           class="dark-image inactive"
                           src="/images/icons/dashboards/banking/visa-text-white.svg"
                           alt=""
-                        />
+                        >
                       </div>
                       <div class="bottom">
                         <span>$6,341.14</span>
@@ -113,23 +120,23 @@ const goto = (index: number) => {
                     @click="goto(1)"
                   >
                     <div class="ccard">
-                      <div class="shape"></div>
+                      <div class="shape" />
                       <div class="top">
                         <img
                           class="active"
                           src="/images/icons/dashboards/banking/visa-text-white.svg"
                           alt=""
-                        />
+                        >
                         <img
                           class="light-image inactive"
                           src="/images/icons/dashboards/banking/visa-text-dark.svg"
                           alt=""
-                        />
+                        >
                         <img
                           class="dark-image inactive"
                           src="/images/icons/dashboards/banking/visa-text-white.svg"
                           alt=""
-                        />
+                        >
                       </div>
                       <div class="bottom">
                         <span>$2,211.27</span>
@@ -146,23 +153,23 @@ const goto = (index: number) => {
                     @click="goto(2)"
                   >
                     <div class="ccard">
-                      <div class="shape"></div>
+                      <div class="shape" />
                       <div class="top">
                         <img
                           class="active"
                           src="/images/icons/dashboards/banking/visa-text-white.svg"
                           alt=""
-                        />
+                        >
                         <img
                           class="light-image inactive"
                           src="/images/icons/dashboards/banking/visa-text-dark.svg"
                           alt=""
-                        />
+                        >
                         <img
                           class="dark-image inactive"
                           src="/images/icons/dashboards/banking/visa-text-white.svg"
                           alt=""
-                        />
+                        >
                       </div>
                       <div class="bottom">
                         <span>$1,228.49</span>
@@ -179,23 +186,23 @@ const goto = (index: number) => {
                     @click="goto(3)"
                   >
                     <div class="ccard">
-                      <div class="shape"></div>
+                      <div class="shape" />
                       <div class="top">
                         <img
                           class="active"
                           src="/images/icons/dashboards/banking/visa-text-white.svg"
                           alt=""
-                        />
+                        >
                         <img
                           class="light-image inactive"
                           src="/images/icons/dashboards/banking/visa-text-dark.svg"
                           alt=""
-                        />
+                        >
                         <img
                           class="dark-image inactive"
                           src="/images/icons/dashboards/banking/visa-text-white.svg"
                           alt=""
-                        />
+                        >
                       </div>
                       <div class="bottom">
                         <span>$3,412,16</span>
@@ -242,7 +249,7 @@ const goto = (index: number) => {
                         aria-hidden="true"
                         class="iconify rtl-reflect"
                         data-icon="feather:arrow-right"
-                      ></i>
+                      />
                     </div>
                     <div class="stat-text">
                       <span>+ 2,324.12</span>
@@ -259,7 +266,7 @@ const goto = (index: number) => {
                         aria-hidden="true"
                         class="iconify rtl-reflect"
                         data-icon="feather:arrow-right"
-                      ></i>
+                      />
                     </div>
                     <div class="stat-text">
                       <span>+ 518.41</span>
@@ -301,15 +308,17 @@ const goto = (index: number) => {
               <!--Chart-->
               <div class="column is-8">
                 <div class="chart-wrapper">
-                  <a class="action-link" tabindex="0">All Reports</a>
+                  <a
+                    class="action-link"
+                    tabindex="0"
+                  >All Reports</a>
                   <ApexChart
                     id="timeline-chart"
                     :height="expensesOptions.chart.height"
                     :type="expensesOptions.chart.type"
                     :series="expensesOptions.series"
                     :options="expensesOptions"
-                  >
-                  </ApexChart>
+                  />
                 </div>
               </div>
             </div>
@@ -321,7 +330,10 @@ const goto = (index: number) => {
           <div class="inner-box">
             <div class="box-title">
               <h3>Transactions</h3>
-              <a class="action-link" tabindex="0">View All</a>
+              <a
+                class="action-link"
+                tabindex="0"
+              >View All</a>
             </div>
             <!--Transactions-->
             <div class="transactions">
@@ -333,8 +345,14 @@ const goto = (index: number) => {
                 lighter
               >
                 <template #icon>
-                  <VIconBox color="green" rounded>
-                    <i aria-hidden="true" class="lnil lnil-service"></i>
+                  <VIconBox
+                    color="green"
+                    rounded
+                  >
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-service"
+                    />
                   </VIconBox>
                 </template>
                 <template #action>
@@ -349,8 +367,14 @@ const goto = (index: number) => {
                 lighter
               >
                 <template #icon>
-                  <VIconBox color="orange" rounded>
-                    <i aria-hidden="true" class="lnil lnil-analytics-alt-1"></i>
+                  <VIconBox
+                    color="orange"
+                    rounded
+                  >
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-analytics-alt-1"
+                    />
                   </VIconBox>
                 </template>
                 <template #action>
@@ -365,8 +389,14 @@ const goto = (index: number) => {
                 lighter
               >
                 <template #icon>
-                  <VIconBox color="purple" rounded>
-                    <i aria-hidden="true" class="lnil lnil-cart-alt"></i>
+                  <VIconBox
+                    color="purple"
+                    rounded
+                  >
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-cart-alt"
+                    />
                   </VIconBox>
                 </template>
                 <template #action>
@@ -375,8 +405,16 @@ const goto = (index: number) => {
               </VBlock>
             </div>
             <div class="button-wrap">
-              <VButton color="primary" fullwidth elevated>New</VButton>
-              <VButton fullwidth>Settings</VButton>
+              <VButton
+                color="primary"
+                fullwidth
+                elevated
+              >
+                New
+              </VButton>
+              <VButton fullwidth>
+                Settings
+              </VButton>
             </div>
           </div>
         </div>
@@ -553,8 +591,12 @@ const goto = (index: number) => {
                   padding: 18px;
                   margin: 0 auto;
                   overflow: hidden;
-                  transition: color 0.3s, background-color 0.3s, border-color 0.3s,
-                    height 0.3s, width 0.3s;
+                  transition:
+                    color 0.3s,
+                    background-color 0.3s,
+                    border-color 0.3s,
+                    height 0.3s,
+                    width 0.3s;
 
                   .shape {
                     position: absolute;

@@ -1,9 +1,20 @@
 <template>
-  <VDropdown icon="feather:more-vertical" right spaced>
+  <VDropdown
+    icon="feather:more-vertical"
+    right
+    spaced
+  >
     <template #content>
-      <a href="#" role="menuitem" class="dropdown-item is-media">
+      <a
+        href="#"
+        role="menuitem"
+        class="dropdown-item is-media"
+      >
         <div class="icon">
-          <i aria-hidden="true" class="lnil lnil-reload"></i>
+          <i
+            aria-hidden="true"
+            class="lnil lnil-reload"
+          />
         </div>
         <div class="meta">
           <span>Reload</span>
@@ -11,9 +22,16 @@
         </div>
       </a>
 
-      <a href="#" role="menuitem" class="dropdown-item is-media">
+      <a
+        href="#"
+        role="menuitem"
+        class="dropdown-item is-media"
+      >
         <div class="icon">
-          <i aria-hidden="true" class="lnil lnil-cogs"></i>
+          <i
+            aria-hidden="true"
+            class="lnil lnil-cogs"
+          />
         </div>
         <div class="meta">
           <span>Configure</span>
@@ -21,9 +39,16 @@
         </div>
       </a>
 
-      <a href="#" role="menuitem" class="dropdown-item is-media">
+      <a
+        href="#"
+        role="menuitem"
+        class="dropdown-item is-media"
+      >
         <div class="icon">
-          <i aria-hidden="true" class="lnil lnil-cog"></i>
+          <i
+            aria-hidden="true"
+            class="lnil lnil-cog"
+          />
         </div>
         <div class="meta">
           <span>Settings</span>
@@ -31,11 +56,18 @@
         </div>
       </a>
 
-      <hr class="dropdown-divider" />
+      <hr class="dropdown-divider">
 
-      <a href="#" role="menuitem" class="dropdown-item is-media">
+      <a
+        href="#"
+        role="menuitem"
+        class="dropdown-item is-media"
+      >
         <div class="icon">
-          <i aria-hidden="true" class="lnil lnil-trash-can-alt"></i>
+          <i
+            aria-hidden="true"
+            class="lnil lnil-trash-can-alt"
+          />
         </div>
         <div class="meta">
           <span>Remove</span>

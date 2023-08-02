@@ -53,8 +53,14 @@ const localFlagSrc = computed(() => {
       @keydown.space.prevent="isOpen = !isOpen"
       @click="isOpen = !isOpen"
     >
-      <i aria-hidden="true" class="fas fa-bars"></i>
-      <i aria-hidden="true" class="fas fa-times"></i>
+      <i
+        aria-hidden="true"
+        class="fas fa-bars"
+      />
+      <i
+        aria-hidden="true"
+        class="fas fa-times"
+      />
     </a>
 
     <div class="items-wrapper">
@@ -65,8 +71,8 @@ const localFlagSrc = computed(() => {
             type="checkbox"
             :checked="!darkmode.isDark"
             @change="darkmode.onChange"
-          />
-          <span></span>
+          >
+          <span />
         </label>
       </div>
       <a
@@ -76,10 +82,20 @@ const localFlagSrc = computed(() => {
         @keydown.space.prevent="panels.setActive('languages')"
         @click="panels.setActive('languages')"
       >
-        <img :src="localFlagSrc" alt="" />
+        <img
+          :src="localFlagSrc"
+          alt=""
+        >
       </a>
-      <RouterLink to="/sidebar/layouts/profile-notifications" class="menu-item is-flex">
-        <i aria-hidden="true" class="iconify" data-icon="feather:bell"></i>
+      <RouterLink
+        to="/sidebar/layouts/profile-notifications"
+        class="menu-item is-flex"
+      >
+        <i
+          aria-hidden="true"
+          class="iconify"
+          data-icon="feather:bell"
+        />
       </RouterLink>
       <a
         class="menu-item is-flex"
@@ -88,7 +104,11 @@ const localFlagSrc = computed(() => {
         @keydown.space.prevent="panels.setActive('activity')"
         @click="panels.setActive('activity')"
       >
-        <i aria-hidden="true" class="iconify" data-icon="feather:grid"></i>
+        <i
+          aria-hidden="true"
+          class="iconify"
+          data-icon="feather:grid"
+        />
       </a>
     </div>
   </div>
@@ -211,7 +231,9 @@ const localFlagSrc = computed(() => {
     text-align: center;
     line-height: 3;
     background-color: hsl(0deg 0% 0% / 20%);
-    transition: transform 0.3s ease, background-color 0.2s ease;
+    transition:
+      transform 0.3s ease,
+      background-color 0.2s ease;
 
     &:hover,
     &:focus {

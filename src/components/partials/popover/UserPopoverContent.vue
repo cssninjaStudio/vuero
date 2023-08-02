@@ -10,9 +10,21 @@ const props = defineProps<{
   <div class="v-popover-profile has-loader">
     <div class="profile-popover-block">
       <div class="profile-popover-wrapper">
-        <div v-if="props.user.avatar" class="popover-avatar">
-          <img class="avatar" :src="props.user.avatar" alt="" />
-          <img v-if="props.user.badge" class="badge" :src="props.user.badge" alt="" />
+        <div
+          v-if="props.user.avatar"
+          class="popover-avatar"
+        >
+          <img
+            class="avatar"
+            :src="props.user.avatar"
+            alt=""
+          >
+          <img
+            v-if="props.user.badge"
+            class="badge"
+            :src="props.user.badge"
+            alt=""
+          >
         </div>
         <div
           v-else
@@ -22,7 +34,12 @@ const props = defineProps<{
           <div class="fake-avatar">
             <span>{{ props.user.initials }}</span>
           </div>
-          <img v-if="props.user.badge" class="badge" :src="props.user.badge" alt="" />
+          <img
+            v-if="props.user.badge"
+            class="badge"
+            :src="props.user.badge"
+            alt=""
+          >
         </div>
         <div class="popover-meta">
           <span class="user-meta">
@@ -35,13 +52,25 @@ const props = defineProps<{
       </div>
       <div class="popover-actions">
         <a class="popover-icon">
-          <i aria-hidden="true" class="iconify" data-icon="feather:phone"></i>
+          <i
+            aria-hidden="true"
+            class="iconify"
+            data-icon="feather:phone"
+          />
         </a>
         <a class="popover-icon">
-          <i aria-hidden="true" class="iconify" data-icon="feather:mail"></i>
+          <i
+            aria-hidden="true"
+            class="iconify"
+            data-icon="feather:mail"
+          />
         </a>
         <a class="popover-icon">
-          <i aria-hidden="true" class="iconify" data-icon="feather:user"></i>
+          <i
+            aria-hidden="true"
+            class="iconify"
+            data-icon="feather:user"
+          />
         </a>
       </div>
     </div>

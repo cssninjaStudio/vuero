@@ -61,7 +61,10 @@ useHead({
       </div>
 
       <div class="column is-6">
-        <VCollapse :items="data" with-chevron />
+        <VCollapse
+          :items="data"
+          with-chevron
+        />
       </div>
 
       <div class="column is-12">

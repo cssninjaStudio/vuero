@@ -53,7 +53,7 @@ const optionsSingle = [
           v-model="filters"
           class="input custom-text-filter"
           placeholder="Search..."
-        />
+        >
       </VControl>
 
       <div class="buttons">
@@ -67,9 +67,15 @@ const optionsSingle = [
             />
           </VControl>
         </VField>
-        <VButton color="primary" raised>
+        <VButton
+          color="primary"
+          raised
+        >
           <span class="icon">
-            <i aria-hidden="true" class="fas fa-plus"></i>
+            <i
+              aria-hidden="true"
+              class="fas fa-plus"
+            />
           </span>
           <span>Add User</span>
         </VButton>
@@ -91,41 +97,76 @@ const optionsSingle = [
             class="light-image"
             src="/@src/assets/illustrations/placeholders/search-4.svg"
             alt=""
-          />
+          >
           <img
             class="dark-image"
             src="/@src/assets/illustrations/placeholders/search-4-dark.svg"
             alt=""
-          />
+          >
         </template>
       </VPlaceholderPage>
 
-      <TransitionGroup name="list" tag="div" class="columns is-multiline">
+      <TransitionGroup
+        name="list"
+        tag="div"
+        class="columns is-multiline"
+      >
         <!--Grid item-->
-        <div v-for="item in filteredData" :key="item.id" class="column is-3">
+        <div
+          v-for="item in filteredData"
+          :key="item.id"
+          class="column is-3"
+        >
           <div class="grid-item-wrap">
             <div class="grid-item-head">
               <div class="flex-head">
                 <div class="meta">
-                  <span v-if="item.status === 'synced'" class="dark-inverted">
+                  <span
+                    v-if="item.status === 'synced'"
+                    class="dark-inverted"
+                  >
                     In Sync
                   </span>
-                  <span v-if="item.status === 'overdue'" class="dark-inverted">
+                  <span
+                    v-if="item.status === 'overdue'"
+                    class="dark-inverted"
+                  >
                     Overdue
                   </span>
-                  <span v-if="item.status === 'blocked'" class="dark-inverted">
+                  <span
+                    v-if="item.status === 'blocked'"
+                    class="dark-inverted"
+                  >
                     Blocked
                   </span>
                   <span>37 tasks remaining</span>
                 </div>
-                <div v-if="item.status === 'synced'" class="status-icon is-success">
-                  <i aria-hidden="true" class="fas fa-check"></i>
+                <div
+                  v-if="item.status === 'synced'"
+                  class="status-icon is-success"
+                >
+                  <i
+                    aria-hidden="true"
+                    class="fas fa-check"
+                  />
                 </div>
-                <div v-if="item.status === 'overdue'" class="status-icon is-warning">
-                  <i aria-hidden="true" class="fas fa-exclamation"></i>
+                <div
+                  v-if="item.status === 'overdue'"
+                  class="status-icon is-warning"
+                >
+                  <i
+                    aria-hidden="true"
+                    class="fas fa-exclamation"
+                  />
                 </div>
-                <div v-if="item.status === 'blocked'" class="status-icon is-danger">
-                  <i aria-hidden="true" class="fas fa-times"></i>
+                <div
+                  v-if="item.status === 'blocked'"
+                  class="status-icon is-danger"
+                >
+                  <i
+                    aria-hidden="true"
+                    class="fas fa-times"
+                  />
                 </div>
               </div>
               <div class="buttons">
@@ -135,21 +176,31 @@ const optionsSingle = [
                       aria-hidden="true"
                       class="iconify"
                       data-icon="feather:check-circle"
-                    ></i>
+                    />
                   </span>
                   <span>Tasks</span>
                 </button>
                 <button class="button v-button is-dark-outlined">
                   <span class="icon">
-                    <i aria-hidden="true" class="iconify" data-icon="feather:file"></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:file"
+                    />
                   </span>
                   <span>Files</span>
                 </button>
               </div>
             </div>
             <div class="grid-item">
-              <VAvatar :picture="item.picture" :badge="item.badge" size="big" />
-              <h3 class="dark-inverted">{{ item.fullName }}</h3>
+              <VAvatar
+                :picture="item.picture"
+                :badge="item.badge"
+                size="big"
+              />
+              <h3 class="dark-inverted">
+                {{ item.fullName }}
+              </h3>
               <p>{{ item.position }}</p>
               <div class="people">
                 <VAvatar
@@ -164,7 +215,11 @@ const optionsSingle = [
               <div class="buttons">
                 <button class="button v-button is-dark-outlined">
                   <span class="icon">
-                    <i aria-hidden="true" class="iconify" data-icon="feather:user"></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:user"
+                    />
                   </span>
                   <span>Profile</span>
                 </button>
@@ -174,7 +229,7 @@ const optionsSingle = [
                       aria-hidden="true"
                       class="iconify"
                       data-icon="feather:message-circle"
-                    ></i>
+                    />
                   </span>
                   <span>Talk</span>
                 </button>

@@ -36,7 +36,7 @@ watchEffect(() => {
 </script>
 
 <template>
-  <div ref="element"></div>
+  <div ref="element" />
 </template>
 
 <style lang="scss">

@@ -118,32 +118,73 @@ const handleSignup = handleSubmit(async (values) => {
 </script>
 
 <template>
-  <form method="post" novalidate @submit.prevent="handleSignup">
-    <VField id="email" v-slot="{ field }" label="Your email">
+  <form
+    method="post"
+    novalidate
+    @submit.prevent="handleSignup"
+  >
+    <VField
+      id="email"
+      v-slot="{ field }"
+      label="Your email"
+    >
       <VControl icon="feather:user">
-        <VInput type="email" placeholder="john.doe@gmail.com" autocomplete="username" />
-        <p v-if="field?.errorMessage" class="help is-danger">
+        <VInput
+          type="email"
+          placeholder="john.doe@gmail.com"
+          autocomplete="username"
+        />
+        <p
+          v-if="field?.errorMessage"
+          class="help is-danger"
+        >
           {{ field.errorMessage }}
         </p>
       </VControl>
     </VField>
-    <VField id="password" v-slot="{ field }" label="Choose a password">
+    <VField
+      id="password"
+      v-slot="{ field }"
+      label="Choose a password"
+    >
       <VControl icon="feather:lock">
-        <VInput type="password" placeholder="Not$3cret" autocomplete="new-password" />
-        <p v-if="field?.errorMessage" class="help is-danger">
+        <VInput
+          type="password"
+          placeholder="Not$3cret"
+          autocomplete="new-password"
+        />
+        <p
+          v-if="field?.errorMessage"
+          class="help is-danger"
+        >
           {{ field.errorMessage }}
         </p>
       </VControl>
     </VField>
-    <VField id="passwordCheck" v-slot="{ field }" label="Confirm your new password">
+    <VField
+      id="passwordCheck"
+      v-slot="{ field }"
+      label="Confirm your new password"
+    >
       <VControl icon="feather:check">
-        <VInput type="password" placeholder="Not$3cret" autocomplete="new-password" />
-        <p v-if="field?.errorMessage" class="help is-danger">
+        <VInput
+          type="password"
+          placeholder="Not$3cret"
+          autocomplete="new-password"
+        />
+        <p
+          v-if="field?.errorMessage"
+          class="help is-danger"
+        >
           {{ field.errorMessage }}
         </p>
       </VControl>
     </VField>
-    <VField id="birthdate" v-slot="{ field }" label="Birthdate">
+    <VField
+      id="birthdate"
+      v-slot="{ field }"
+      label="Birthdate"
+    >
       <VControl icon="feather:calendar">
         <ClientOnly>
           <VDatePicker
@@ -159,8 +200,11 @@ const handleSignup = handleSubmit(async (values) => {
                 :value="inputValue"
                 placeholder="Select your birthdate"
                 v-on="inputEvents"
-              />
-              <p v-if="field?.errorMessage" class="help is-danger">
+              >
+              <p
+                v-if="field?.errorMessage"
+                class="help is-danger"
+              >
                 {{ field.errorMessage }}
               </p>
             </template>
@@ -175,18 +219,42 @@ const handleSignup = handleSubmit(async (values) => {
       label="Choose 2 or 3 center of interests"
     >
       <VControl>
-        <VSelect multiple size="9">
-          <VOption value="Food">Food</VOption>
-          <VOption value="Home Appliances">Home Appliances</VOption>
-          <VOption value="Computer & Office">Computer & Office</VOption>
-          <VOption value="Home Improvement">Home Improvement</VOption>
-          <VOption value="Home & Garden">Home & Garden</VOption>
-          <VOption value="Sports & Entertainment">Sports & Entertainment</VOption>
-          <VOption value="Toys & Hobbies">Education & Office Supplies</VOption>
-          <VOption value="Security & Protection">Security & Protection</VOption>
-          <VOption value="Lights & Lighting">Lights & Lighting</VOption>
+        <VSelect
+          multiple
+          size="9"
+        >
+          <VOption value="Food">
+            Food
+          </VOption>
+          <VOption value="Home Appliances">
+            Home Appliances
+          </VOption>
+          <VOption value="Computer & Office">
+            Computer & Office
+          </VOption>
+          <VOption value="Home Improvement">
+            Home Improvement
+          </VOption>
+          <VOption value="Home & Garden">
+            Home & Garden
+          </VOption>
+          <VOption value="Sports & Entertainment">
+            Sports & Entertainment
+          </VOption>
+          <VOption value="Toys & Hobbies">
+            Education & Office Supplies
+          </VOption>
+          <VOption value="Security & Protection">
+            Security & Protection
+          </VOption>
+          <VOption value="Lights & Lighting">
+            Lights & Lighting
+          </VOption>
         </VSelect>
-        <p v-if="field?.errorMessage" class="help is-danger">
+        <p
+          v-if="field?.errorMessage"
+          class="help is-danger"
+        >
           {{ field.errorMessage }}
         </p>
         <p class="help">
@@ -195,23 +263,61 @@ const handleSignup = handleSubmit(async (values) => {
         </p>
       </VControl>
     </VField>
-    <VField id="allergens" v-slot="{ field }" label="Pick your allergens">
+    <VField
+      id="allergens"
+      v-slot="{ field }"
+      label="Pick your allergens"
+    >
       <VControl>
-        <VCheckbox class="pl-0" color="primary" value="peanuts"> Peanuts </VCheckbox>
-        <VCheckbox id="allergens-milk" color="primary" value="milk"> Milk </VCheckbox>
-        <VCheckbox id="allergens-egg" color="primary" value="egg"> Egg </VCheckbox>
-        <VCheckbox id="allergens-fish" color="primary" value="fish"> Fish </VCheckbox>
-        <VCheckbox id="allergens-soybeans" color="primary" value="soybeans">
+        <VCheckbox
+          class="pl-0"
+          color="primary"
+          value="peanuts"
+        >
+          Peanuts
+        </VCheckbox>
+        <VCheckbox
+          id="allergens-milk"
+          color="primary"
+          value="milk"
+        >
+          Milk
+        </VCheckbox>
+        <VCheckbox
+          id="allergens-egg"
+          color="primary"
+          value="egg"
+        >
+          Egg
+        </VCheckbox>
+        <VCheckbox
+          id="allergens-fish"
+          color="primary"
+          value="fish"
+        >
+          Fish
+        </VCheckbox>
+        <VCheckbox
+          id="allergens-soybeans"
+          color="primary"
+          value="soybeans"
+        >
           Soybeans
         </VCheckbox>
       </VControl>
-      <p v-if="field?.errorMessage" class="help is-danger">
+      <p
+        v-if="field?.errorMessage"
+        class="help is-danger"
+      >
         {{ field.errorMessage }}
       </p>
     </VField>
     <div class="py-4">
       <!-- eslint-disable-next-line vue/require-v-for-key -->
-      <div v-for="(element, index) in fields" class="my-3">
+      <div
+        v-for="(element, index) in fields"
+        class="my-3"
+      >
         <div class="columns">
           <VField
             :id="`feedback[${index}].title`"
@@ -225,7 +331,10 @@ const handleSignup = handleSubmit(async (values) => {
                 placeholder="john.doe@gmail.com"
                 autocomplete="username"
               />
-              <p v-if="field?.errorMessage" class="help is-danger">
+              <p
+                v-if="field?.errorMessage"
+                class="help is-danger"
+              >
                 {{ field.errorMessage }}
               </p>
             </VControl>
@@ -237,8 +346,14 @@ const handleSignup = handleSubmit(async (values) => {
             label="Give a rating"
           >
             <VControl>
-              <VRangeRating class="mt-5" size="medium" />
-              <p v-if="field?.errorMessage" class="help is-danger">
+              <VRangeRating
+                class="mt-5"
+                size="medium"
+              />
+              <p
+                v-if="field?.errorMessage"
+                class="help is-danger"
+              >
                 {{ field.errorMessage }}
               </p>
             </VControl>
@@ -256,33 +371,58 @@ const handleSignup = handleSubmit(async (values) => {
         </div>
       </div>
       <div class="mb-5">
-        <VButton @click="() => push({ rating: 3, title: '' })"> Add feedback </VButton>
-        <p v-if="errorMessage" class="help is-danger">
+        <VButton @click="() => push({ rating: 3, title: '' })">
+          Add feedback
+        </VButton>
+        <p
+          v-if="errorMessage"
+          class="help is-danger"
+        >
           {{ errorMessage }}
         </p>
       </div>
     </div>
-    <VField id="agreeTerms" v-slot="{ field }">
+    <VField
+      id="agreeTerms"
+      v-slot="{ field }"
+    >
       <VControl>
         <VCheckbox paddingless>
           I agree to the <a href="#">terms and conditions</a>
         </VCheckbox>
 
-        <p v-if="field?.errorMessage" class="help is-danger">
+        <p
+          v-if="field?.errorMessage"
+          class="help is-danger"
+        >
           {{ field.errorMessage }}
         </p>
       </VControl>
     </VField>
     <VField id="emailOptin">
       <VControl>
-        <VCheckbox color="primary" paddingless>
+        <VCheckbox
+          color="primary"
+          paddingless
+        >
           I want to receive exclusive news and updates
         </VCheckbox>
       </VControl>
     </VField>
     <VButtons class="pt-4">
-      <VButton :loading="loading" type="submit" color="primary">Submit</VButton>
-      <VButton type="reset" @click="handleReset">Reset</VButton>
+      <VButton
+        :loading="loading"
+        type="submit"
+        color="primary"
+      >
+        Submit
+      </VButton>
+      <VButton
+        type="reset"
+        @click="handleReset"
+      >
+        Reset
+      </VButton>
     </VButtons>
     <div class="demo-code-wrapper">
       <div class="demo-state">

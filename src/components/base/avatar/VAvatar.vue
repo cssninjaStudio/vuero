@@ -61,7 +61,7 @@ const onceImageErroredHandler = (event: Event) => {
         :src="props.picture"
         alt=""
         @error.once="onceImageErroredHandler"
-      />
+      >
       <span
         v-else
         class="avatar is-fake"
@@ -76,7 +76,7 @@ const onceImageErroredHandler = (event: Event) => {
         :src="props.pictureDark"
         alt=""
         @error.once="onceImageErroredHandler"
-      />
+      >
     </slot>
 
     <slot name="badge">
@@ -86,7 +86,7 @@ const onceImageErroredHandler = (event: Event) => {
         :src="props.badge"
         alt=""
         @error.once="onceImageErroredHandler"
-      />
+      >
     </slot>
   </div>
 </template>

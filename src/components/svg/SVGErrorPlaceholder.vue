@@ -7,7 +7,10 @@
     viewBox="0 0 342.04 297.16"
   >
     <defs>
-      <clipPath id="a" transform="translate(-85.82 -40.9)">
+      <clipPath
+        id="a"
+        transform="translate(-85.82 -40.9)"
+      >
         <polygon
           points="114.2 81 411.7 145.4 407.6 167.6 185.4 124.3 91.3 158.5 88.3 147.9 169 118.8 108.1 105.2 114.2 81"
           style="fill: none"

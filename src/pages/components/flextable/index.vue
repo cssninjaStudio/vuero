@@ -53,31 +53,58 @@ useHead({
           <VFlexTable :data="flexRowsBasic" />
         </div>
 
-        <DocumentationDivider id="no-header" title="Without header" />
+        <DocumentationDivider
+          id="no-header"
+          title="Without header"
+        />
 
         <div class="mt-4">
-          <VFlexTable :data="flexRowsBasic" no-header />
+          <VFlexTable
+            :data="flexRowsBasic"
+            no-header
+          />
         </div>
 
-        <DocumentationDivider id="separators" title="With separators" />
+        <DocumentationDivider
+          id="separators"
+          title="With separators"
+        />
 
         <div class="mt-4">
-          <VFlexTable :data="flexRowsBasic" separators />
+          <VFlexTable
+            :data="flexRowsBasic"
+            separators
+          />
         </div>
 
-        <DocumentationDivider id="rounded" title="Rounded" />
+        <DocumentationDivider
+          id="rounded"
+          title="Rounded"
+        />
 
         <div class="mt-4">
-          <VFlexTable :data="flexRowsBasic" rounded />
+          <VFlexTable
+            :data="flexRowsBasic"
+            rounded
+          />
         </div>
 
-        <DocumentationDivider id="compact" title="Compact" />
+        <DocumentationDivider
+          id="compact"
+          title="Compact"
+        />
 
         <div class="mt-4 mb-4">
-          <VFlexTable :data="flexRowsBasic" compact />
+          <VFlexTable
+            :data="flexRowsBasic"
+            compact
+          />
         </div>
 
-        <DocumentationDivider id="all-options" title="All options together" />
+        <DocumentationDivider
+          id="all-options"
+          title="All options together"
+        />
 
         <div class="mt-4">
           <VFlexTable
@@ -91,22 +118,38 @@ useHead({
           />
         </div>
 
-        <DocumentationDivider id="subtable" title="SubTable" />
+        <DocumentationDivider
+          id="subtable"
+          title="SubTable"
+        />
 
         <div class="mt-4">
-          <VFlexTable :data="flexRowsBasic" subtable />
+          <VFlexTable
+            :data="flexRowsBasic"
+            subtable
+          />
         </div>
 
         <VFlexTablePrintObjectsDocumentation class="mt-6" />
 
         <div class="mt-4">
-          <VFlexTable rounded :data="flexRowsContacts" print-objects />
+          <VFlexTable
+            rounded
+            :data="flexRowsContacts"
+            print-objects
+          />
         </div>
 
-        <DocumentationDivider id="without-print-object" title="Without print-objects" />
+        <DocumentationDivider
+          id="without-print-object"
+          title="Without print-objects"
+        />
 
         <div class="mt-4">
-          <VFlexTable rounded :data="flexRowsContacts" />
+          <VFlexTable
+            rounded
+            :data="flexRowsContacts"
+          />
         </div>
 
         <VFlexTablePropsDocumentation class="mt-6" />
@@ -115,7 +158,10 @@ useHead({
 
         <VFlexTableSlotsDocumentation class="mt-6" />
       </div>
-      <div v-if="toc.length" class="column is-3 toc-column">
+      <div
+        v-if="toc.length"
+        class="column is-3 toc-column"
+      >
         <DocumentationToc :toc="toc" />
       </div>
     </div>

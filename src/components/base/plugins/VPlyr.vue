@@ -60,7 +60,7 @@ onBeforeUnmount(() => {
       allowfullscreen
       allowtransparency
       allow="autoplay"
-    ></iframe>
+    />
 
     <video
       v-else
@@ -70,7 +70,10 @@ onBeforeUnmount(() => {
       playsinline
       :data-poster="poster"
     >
-      <source :src="source" type="video/mp4" />
+      <source
+        :src="source"
+        type="video/mp4"
+      >
       <track
         v-for="(caption, key) in props.captions"
         :key="key"
@@ -78,7 +81,7 @@ onBeforeUnmount(() => {
         kind="captions"
         :srclang="caption.srclang"
         :src="caption.src"
-      />
+      >
     </video>
   </div>
 </template>

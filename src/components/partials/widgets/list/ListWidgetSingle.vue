@@ -11,14 +11,19 @@ const props = withDefaults(
 </script>
 
 <template>
-  <div class="list-widget" :class="[props.straight && 'is-straight']">
+  <div
+    class="list-widget"
+    :class="[props.straight && 'is-straight']"
+  >
     <div class="widget-head">
-      <h3 class="dark-inverted">{{ props.title }}</h3>
+      <h3 class="dark-inverted">
+        {{ props.title }}
+      </h3>
       <ListWidgetMainDropdown />
     </div>
 
     <div class="inner-list">
-      <slot></slot>
+      <slot />
     </div>
   </div>
 </template>

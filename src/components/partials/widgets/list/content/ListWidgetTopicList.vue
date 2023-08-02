@@ -20,12 +20,24 @@ const props = withDefaults(
       class="inner-list-item"
     >
       <template #icon>
-        <VIconBox :rounded="props.rounded" :color="topic.color">
-          <i aria-hidden="true" class="iconify" :data-icon="topic.icon"></i>
+        <VIconBox
+          :rounded="props.rounded"
+          :color="topic.color"
+        >
+          <i
+            aria-hidden="true"
+            class="iconify"
+            :data-icon="topic.icon"
+          />
         </VIconBox>
       </template>
       <template #action>
-        <VAvatarStack v-if="topic.users" :avatars="topic.users" size="small" :limit="3" />
+        <VAvatarStack
+          v-if="topic.users"
+          :avatars="topic.users"
+          size="small"
+          :limit="3"
+        />
       </template>
 
       <a href="#">{{ topic.name }}</a>

@@ -53,7 +53,11 @@ useHead({
               subtitle="Sales Manager"
             >
               <template #action>
-                <VTag color="green" label="trending" rounded />
+                <VTag
+                  color="green"
+                  label="trending"
+                  rounded
+                />
               </template>
             </VCardAction>
           </div>
@@ -65,7 +69,10 @@ useHead({
               subtitle="Software Engineer"
             >
               <template #action>
-                <VIconButton icon="feather:heart" circle />
+                <VIconButton
+                  icon="feather:heart"
+                  circle
+                />
               </template>
             </VCardAction>
           </div>
@@ -95,7 +102,11 @@ useHead({
               subtitle="Sales Manager"
             >
               <template #action>
-                <VTag color="green" label="trending" rounded />
+                <VTag
+                  color="green"
+                  label="trending"
+                  rounded
+                />
               </template>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quibusnam
@@ -145,7 +156,10 @@ useHead({
         <!--Slots-->
         <VCardActionSlotsDocumentation />
       </div>
-      <div v-if="toc.length" class="column is-3 toc-column">
+      <div
+        v-if="toc.length"
+        class="column is-3 toc-column"
+      >
         <DocumentationToc :toc="toc" />
       </div>
     </div>

@@ -31,7 +31,12 @@ const toggle = (key: number) => {
         tabindex="0"
         :style="{ backgroundImage: `url(${item.image})` }"
       >
-        <slot name="accordion-item" :item="item" :index="key" :toggle="toggle">
+        <slot
+          name="accordion-item"
+          :item="item"
+          :index="key"
+          :toggle="toggle"
+        >
           <div>
             <a
               tabindex="0"

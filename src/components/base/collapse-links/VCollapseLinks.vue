@@ -135,11 +135,15 @@ export default defineComponent({
 }
 
 .collapse-links-transition-enter-active {
-  transition: opacity 0.2s ease-in, transform 0.1s ease-in;
+  transition:
+    opacity 0.2s ease-in,
+    transform 0.1s ease-in;
 }
 
 .collapse-links-transition-leave-active {
-  transition: opacity 0.2s ease-out, transform 0.1s ease-out;
+  transition:
+    opacity 0.2s ease-out,
+    transform 0.1s ease-out;
 }
 
 .collapse-links-transition-enter-from,

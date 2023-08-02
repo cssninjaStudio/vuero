@@ -29,18 +29,34 @@ const democheck = ref(['value_2'])
             size="xl"
           />
           <div class="user-meta is-dark-bordered-12">
-            <h3 class="title is-4 is-narrow is-bold">Welcome back, Erik K.</h3>
-            <p class="light-text">It's really nice to see you again</p>
+            <h3 class="title is-4 is-narrow is-bold">
+              Welcome back, Erik K.
+            </h3>
+            <p class="light-text">
+              It's really nice to see you again
+            </p>
           </div>
           <div class="user-action">
-            <h3 class="title is-2 is-narrow">3</h3>
-            <p class="light-text">Tasks are pending review</p>
-            <a class="action-link" tabindex="0">View Tasks</a>
+            <h3 class="title is-2 is-narrow">
+              3
+            </h3>
+            <p class="light-text">
+              Tasks are pending review
+            </p>
+            <a
+              class="action-link"
+              tabindex="0"
+            >View Tasks</a>
           </div>
           <div class="cta h-hidden-tablet-p">
             <div class="media-flex inverted-text">
-              <i aria-hidden="true" class="lnil lnil-crown-alt-1"></i>
-              <p class="white-text">Start using our team and project management tools</p>
+              <i
+                aria-hidden="true"
+                class="lnil lnil-crown-alt-1"
+              />
+              <p class="white-text">
+                Start using our team and project management tools
+              </p>
             </div>
             <a class="link inverted-text">Learn More</a>
           </div>
@@ -50,12 +66,21 @@ const democheck = ref(['value_2'])
       <div class="column is-8">
         <div class="dashboard-card has-margin-bottom">
           <div class="card-head">
-            <h3 class="dark-inverted">Active Projects</h3>
-            <a class="action-link" tabindex="0">View All</a>
+            <h3 class="dark-inverted">
+              Active Projects
+            </h3>
+            <a
+              class="action-link"
+              tabindex="0"
+            >View All</a>
           </div>
           <div class="active-projects">
             <!--Project-->
-            <VBlock title="Delivery App Project" subtitle="Updated 30m ago" center>
+            <VBlock
+              title="Delivery App Project"
+              subtitle="Updated 30m ago"
+              center
+            >
               <template #icon>
                 <VAvatar
                   picture="/demo/photos/apps/1.jpg"
@@ -65,13 +90,20 @@ const democheck = ref(['value_2'])
                 />
               </template>
               <template #action>
-                <VAvatarStack :avatars="avatarStack1" size="small" />
+                <VAvatarStack
+                  :avatars="avatarStack1"
+                  size="small"
+                />
                 <ProjectWidgetDropdown />
               </template>
             </VBlock>
 
             <!--Project-->
-            <VBlock title="Health and Fitness Dashboard" subtitle="Updated 5h ago" center>
+            <VBlock
+              title="Health and Fitness Dashboard"
+              subtitle="Updated 5h ago"
+              center
+            >
               <template #icon>
                 <VAvatar
                   picture="/demo/photos/apps/2.png"
@@ -81,13 +113,20 @@ const democheck = ref(['value_2'])
                 />
               </template>
               <template #action>
-                <VAvatarStack :avatars="avatarStack2" size="small" />
+                <VAvatarStack
+                  :avatars="avatarStack2"
+                  size="small"
+                />
                 <ProjectWidgetDropdown />
               </template>
             </VBlock>
 
             <!--Project-->
-            <VBlock title="Learning Tracker Dashboard" subtitle="Updated 7h ago" center>
+            <VBlock
+              title="Learning Tracker Dashboard"
+              subtitle="Updated 7h ago"
+              center
+            >
               <template #icon>
                 <VAvatar
                   picture="/demo/photos/apps/3.png"
@@ -97,13 +136,20 @@ const democheck = ref(['value_2'])
                 />
               </template>
               <template #action>
-                <VAvatarStack :avatars="avatarStack3" size="small" />
+                <VAvatarStack
+                  :avatars="avatarStack3"
+                  size="small"
+                />
                 <ProjectWidgetDropdown />
               </template>
             </VBlock>
 
             <!--Project-->
-            <VBlock title="Banking App Dashboard" subtitle="Updated 10h ago" center>
+            <VBlock
+              title="Banking App Dashboard"
+              subtitle="Updated 10h ago"
+              center
+            >
               <template #icon>
                 <VAvatar
                   picture="/demo/photos/apps/4.png"
@@ -113,7 +159,10 @@ const democheck = ref(['value_2'])
                 />
               </template>
               <template #action>
-                <VAvatarStack :avatars="avatarStack4" size="small" />
+                <VAvatarStack
+                  :avatars="avatarStack4"
+                  size="small"
+                />
                 <ProjectWidgetDropdown />
               </template>
             </VBlock>
@@ -122,8 +171,13 @@ const democheck = ref(['value_2'])
 
         <div class="dashboard-card">
           <div class="card-head">
-            <h3 class="dark-inverted">Task Completion</h3>
-            <a class="action-link" tabindex="0">Reports</a>
+            <h3 class="dark-inverted">
+              Task Completion
+            </h3>
+            <a
+              class="action-link"
+              tabindex="0"
+            >Reports</a>
           </div>
           <ApexChart
             id="completion-chart"
@@ -131,14 +185,18 @@ const democheck = ref(['value_2'])
             :type="completionOptions.chart.type"
             :series="completionOptions.series"
             :options="completionOptions"
-          >
-          </ApexChart>
+          />
         </div>
 
         <div class="dashboard-card">
           <div class="card-head">
-            <h3 class="dark-inverted">Team Efficiency</h3>
-            <a class="action-link" tabindex="0">Reports</a>
+            <h3 class="dark-inverted">
+              Team Efficiency
+            </h3>
+            <a
+              class="action-link"
+              tabindex="0"
+            >Reports</a>
           </div>
           <ApexChart
             id="efficiency-chart"
@@ -146,22 +204,30 @@ const democheck = ref(['value_2'])
             :type="barOptions.chart.type"
             :series="barOptions.series"
             :options="barOptions"
-          >
-          </ApexChart>
+          />
         </div>
       </div>
 
       <div class="column is-4">
         <div class="dashboard-card">
           <div class="card-head">
-            <h3 class="dark-inverted">My Team</h3>
-            <a class="action-link" tabindex="0">View All</a>
+            <h3 class="dark-inverted">
+              My Team
+            </h3>
+            <a
+              class="action-link"
+              tabindex="0"
+            >View All</a>
           </div>
           <div class="active-team">
             <ul class="user-list">
               <li>
                 <div>
-                  <Tippy class="has-help-cursor" interactive :offset="[0, 10]">
+                  <Tippy
+                    class="has-help-cursor"
+                    interactive
+                    :offset="[0, 10]"
+                  >
                     <VAvatar picture="/demo/avatars/18.jpg" />
                     <template #content>
                       <UserPopoverContent :user="popovers.user18" />
@@ -169,35 +235,66 @@ const democheck = ref(['value_2'])
                   </Tippy>
                 </div>
                 <div class="user-list-info">
-                  <div class="name dark-inverted">Esteban C.</div>
-                  <div class="position">UI/UX Designer</div>
+                  <div class="name dark-inverted">
+                    Esteban C.
+                  </div>
+                  <div class="position">
+                    UI/UX Designer
+                  </div>
                 </div>
                 <div class="user-list-icons">
-                  <a><i aria-hidden="true" class="fas fa-phone"></i></a>
-                  <a><i aria-hidden="true" class="fas fa-video"></i></a>
+                  <a><i
+                    aria-hidden="true"
+                    class="fas fa-phone"
+                  /></a>
+                  <a><i
+                    aria-hidden="true"
+                    class="fas fa-video"
+                  /></a>
                 </div>
               </li>
               <li>
                 <div>
-                  <Tippy class="has-help-cursor" interactive :offset="[0, 10]">
-                    <VAvatar initials="SC" color="h-orange" />
+                  <Tippy
+                    class="has-help-cursor"
+                    interactive
+                    :offset="[0, 10]"
+                  >
+                    <VAvatar
+                      initials="SC"
+                      color="h-orange"
+                    />
                     <template #content>
                       <UserPopoverContent :user="popovers.user120" />
                     </template>
                   </Tippy>
                 </div>
                 <div class="user-list-info">
-                  <div class="name dark-inverted">Sara Connor</div>
-                  <div class="position">UI/UX Designer</div>
+                  <div class="name dark-inverted">
+                    Sara Connor
+                  </div>
+                  <div class="position">
+                    UI/UX Designer
+                  </div>
                 </div>
                 <div class="user-list-icons">
-                  <a><i aria-hidden="true" class="fas fa-phone"></i></a>
-                  <a><i aria-hidden="true" class="fas fa-video"></i></a>
+                  <a><i
+                    aria-hidden="true"
+                    class="fas fa-phone"
+                  /></a>
+                  <a><i
+                    aria-hidden="true"
+                    class="fas fa-video"
+                  /></a>
                 </div>
               </li>
               <li>
                 <div>
-                  <Tippy class="has-help-cursor" interactive :offset="[0, 10]">
+                  <Tippy
+                    class="has-help-cursor"
+                    interactive
+                    :offset="[0, 10]"
+                  >
                     <VAvatar picture="/demo/avatars/13.jpg" />
                     <template #content>
                       <UserPopoverContent :user="popovers.user13" />
@@ -205,30 +302,57 @@ const democheck = ref(['value_2'])
                   </Tippy>
                 </div>
                 <div class="user-list-info">
-                  <div class="name dark-inverted">Tara S.</div>
-                  <div class="position">UI/UX Designer</div>
+                  <div class="name dark-inverted">
+                    Tara S.
+                  </div>
+                  <div class="position">
+                    UI/UX Designer
+                  </div>
                 </div>
                 <div class="user-list-icons">
-                  <a><i aria-hidden="true" class="fas fa-phone"></i></a>
-                  <a><i aria-hidden="true" class="fas fa-video"></i></a>
+                  <a><i
+                    aria-hidden="true"
+                    class="fas fa-phone"
+                  /></a>
+                  <a><i
+                    aria-hidden="true"
+                    class="fas fa-video"
+                  /></a>
                 </div>
               </li>
               <li>
                 <div>
-                  <Tippy class="has-help-cursor" interactive :offset="[0, 10]">
-                    <VAvatar initials="NL" color="success" />
+                  <Tippy
+                    class="has-help-cursor"
+                    interactive
+                    :offset="[0, 10]"
+                  >
+                    <VAvatar
+                      initials="NL"
+                      color="success"
+                    />
                     <template #content>
                       <UserPopoverContent :user="popovers.user121" />
                     </template>
                   </Tippy>
                 </div>
                 <div class="user-list-info">
-                  <div class="name dark-inverted">Naomi Liversky</div>
-                  <div class="position">Frontend developer</div>
+                  <div class="name dark-inverted">
+                    Naomi Liversky
+                  </div>
+                  <div class="position">
+                    Frontend developer
+                  </div>
                 </div>
                 <div class="user-list-icons">
-                  <a><i aria-hidden="true" class="fas fa-phone"></i></a>
-                  <a><i aria-hidden="true" class="fas fa-video"></i></a>
+                  <a><i
+                    aria-hidden="true"
+                    class="fas fa-phone"
+                  /></a>
+                  <a><i
+                    aria-hidden="true"
+                    class="fas fa-video"
+                  /></a>
                 </div>
               </li>
             </ul>
@@ -237,15 +361,23 @@ const democheck = ref(['value_2'])
 
         <div class="dashboard-card">
           <div class="card-head">
-            <h3 class="dark-inverted">Todo Today</h3>
-            <a class="action-link" tabindex="0">View All</a>
+            <h3 class="dark-inverted">
+              Todo Today
+            </h3>
+            <a
+              class="action-link"
+              tabindex="0"
+            >View All</a>
           </div>
           <div class="active-list">
             <div class="checkboxes-list">
               <!-- List item -->
               <div class="list-item">
                 <!-- Animated checkbox-->
-                <VAnimatedCheckbox v-model="democheck" value="value_1" />
+                <VAnimatedCheckbox
+                  v-model="democheck"
+                  value="value_1"
+                />
                 <div class="item-meta">
                   <span class="dark-inverted">Call Mr. Markstrom</span>
                   <span>Review the project initial wireframes</span>
@@ -254,7 +386,10 @@ const democheck = ref(['value_2'])
               <!-- List item -->
               <div class="list-item">
                 <!-- Animated checkbox-->
-                <VAnimatedCheckbox v-model="democheck" value="value_2" />
+                <VAnimatedCheckbox
+                  v-model="democheck"
+                  value="value_2"
+                />
                 <div class="item-meta">
                   <span class="dark-inverted">Finish wireframes</span>
                   <span>Make all requested changes and publish</span>
@@ -263,7 +398,10 @@ const democheck = ref(['value_2'])
               <!-- List item -->
               <div class="list-item">
                 <!-- Animated checkbox-->
-                <VAnimatedCheckbox v-model="democheck" value="value_3" />
+                <VAnimatedCheckbox
+                  v-model="democheck"
+                  value="value_3"
+                />
                 <div class="item-meta">
                   <span class="dark-inverted">Update timesheets</span>
                   <span>Update all the team timesheets</span>
@@ -272,7 +410,10 @@ const democheck = ref(['value_2'])
               <!-- List item -->
               <div class="list-item">
                 <!-- Animated checkbox-->
-                <VAnimatedCheckbox v-model="democheck" value="value_4" />
+                <VAnimatedCheckbox
+                  v-model="democheck"
+                  value="value_4"
+                />
                 <div class="item-meta">
                   <span class="dark-inverted">Request payout</span>
                   <span>send project invoice to client</span>
@@ -292,16 +433,21 @@ const democheck = ref(['value_2'])
                 class="light-image"
                 src="/@src/assets/illustrations/placeholders/chart-guy.svg"
                 alt=""
-              />
+              >
               <img
                 class="dark-image"
                 src="/@src/assets/illustrations/placeholders/chart-guy-dark.svg"
                 alt=""
-              />
+              >
             </template>
 
             <template #action>
-              <VButton color="primary" elevated> Go Premium </VButton>
+              <VButton
+                color="primary"
+                elevated
+              >
+                Go Premium
+              </VButton>
             </template>
           </VPlaceholderSection>
         </div>

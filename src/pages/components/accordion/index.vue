@@ -24,18 +24,23 @@ useHead({
         @click="sidebar.toggle('components')"
       >
         <span class="menu-toggle has-chevron">
-          <span :class="[sidebar.active !== 'none' && 'active']" class="icon-box-toggle">
+          <span
+            :class="[sidebar.active !== 'none' && 'active']"
+            class="icon-box-toggle"
+          >
             <span class="rotate">
-              <i class="icon-line-top"></i>
-              <i class="icon-line-center"></i>
-              <i class="icon-line-bottom"></i>
+              <i class="icon-line-top" />
+              <i class="icon-line-center" />
+              <i class="icon-line-bottom" />
             </span>
           </span>
         </span>
       </div>
 
       <div class="title-wrap">
-        <h1 class="title is-4">VAccordion</h1>
+        <h1 class="title is-4">
+          VAccordion
+        </h1>
       </div>
 
       <Toolbar />

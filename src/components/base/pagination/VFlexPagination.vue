@@ -102,7 +102,7 @@ const handleLinkClick = (e: MouseEvent, page = 1) => {
     justify-content="space-between"
   >
     <ul class="pagination-list">
-      <slot name="before-pagination"></slot>
+      <slot name="before-pagination" />
       <li>
         <RouterLink
           :to="paginatedLink(1)"
@@ -110,7 +110,9 @@ const handleLinkClick = (e: MouseEvent, page = 1) => {
           class="pagination-link"
           :aria-label="t('components.v-flex-pagination.goto-page-title', { page: 1 })"
           :class="[currentPage === 1 && 'is-current']"
-          @keydown.space.prevent="(e: MouseEvent) => (e.target as HTMLAnchorElement).click()"
+          @keydown.space.prevent="
+            (e: MouseEvent) => (e.target as HTMLAnchorElement).click()
+          "
           @click="(e: MouseEvent) => handleLinkClick(e, 1)"
         >
           1
@@ -121,7 +123,10 @@ const handleLinkClick = (e: MouseEvent, page = 1) => {
         <span class="pagination-ellipsis">…</span>
       </li>
 
-      <li v-for="page in pages" :key="page">
+      <li
+        v-for="page in pages"
+        :key="page"
+      >
         <RouterLink
           :to="paginatedLink(page)"
           tabindex="0"
@@ -129,7 +134,9 @@ const handleLinkClick = (e: MouseEvent, page = 1) => {
           :aria-label="t('components.v-flex-pagination.goto-page-title', { page: page })"
           :aria-current="currentPage === page ? 'page' : undefined"
           :class="[currentPage === page && 'is-current']"
-          @keydown.space.prevent="(e: MouseEvent) => (e.target as HTMLAnchorElement).click()"
+          @keydown.space.prevent="
+            (e: MouseEvent) => (e.target as HTMLAnchorElement).click()
+          "
           @click="(e: MouseEvent) => handleLinkClick(e, page)"
         >
           {{ page }}
@@ -149,16 +156,18 @@ const handleLinkClick = (e: MouseEvent, page = 1) => {
             t('components.v-flex-pagination.goto-page-title', { page: lastPage })
           "
           :class="[currentPage === lastPage && 'is-current']"
-          @keydown.space.prevent="(e: MouseEvent) => (e.target as HTMLAnchorElement).click()"
+          @keydown.space.prevent="
+            (e: MouseEvent) => (e.target as HTMLAnchorElement).click()
+          "
           @click="(e: MouseEvent) => handleLinkClick(e, lastPage)"
         >
           {{ lastPage }}
         </RouterLink>
       </li>
-      <slot name="after-pagination"></slot>
+      <slot name="after-pagination" />
     </ul>
 
-    <slot name="before-navigation"></slot>
+    <slot name="before-navigation" />
     <RouterLink
       :to="paginatedLink(currentPage - 1)"
       tabindex="0"
@@ -170,12 +179,12 @@ const handleLinkClick = (e: MouseEvent, page = 1) => {
         aria-hidden="true"
         class="iconify rtl-hidden"
         data-icon="feather:chevron-left"
-      ></i>
+      />
       <i
         aria-hidden="true"
         class="iconify ltr-hidden"
         data-icon="feather:chevron-right"
-      ></i>
+      />
     </RouterLink>
     <RouterLink
       :to="paginatedLink(currentPage + 1)"
@@ -188,13 +197,13 @@ const handleLinkClick = (e: MouseEvent, page = 1) => {
         aria-hidden="true"
         class="iconify rtl-hidden"
         data-icon="feather:chevron-right"
-      ></i>
+      />
       <i
         aria-hidden="true"
         class="iconify ltr-hidden"
         data-icon="feather:chevron-left"
-      ></i>
+      />
     </RouterLink>
-    <slot name="after-navigation"></slot>
+    <slot name="after-navigation" />
   </VFlex>
 </template>

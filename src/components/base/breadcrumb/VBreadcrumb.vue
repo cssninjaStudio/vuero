@@ -39,7 +39,11 @@ const props = withDefaults(defineProps<VBreadcrumbsProps>(), {
         itemscope
         itemtype="https://schema.org/ListItem"
       >
-        <slot name="breadcrumb-item" :item="item" :index="key">
+        <slot
+          name="breadcrumb-item"
+          :item="item"
+          :index="key"
+        >
           <RouterLink
             v-if="item.to"
             class="breadcrumb-item"
@@ -51,20 +55,34 @@ const props = withDefaults(defineProps<VBreadcrumbsProps>(), {
               class="icon is-small"
               :class="[item.hideLabel && props.withIcons && !!item.icon && 'is-solo']"
             >
-              <i aria-hidden="true" class="iconify" :data-icon="item.icon"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                :data-icon="item.icon"
+              />
             </span>
             <meta
               v-if="item.hideLabel && props.withIcons && !!item.icon"
               itemprop="name"
               :content="item.label"
-            />
-            <span v-else itemprop="name">
-              <slot name="breadcrumb-item-label" :item="item" :index="key">
+            >
+            <span
+              v-else
+              itemprop="name"
+            >
+              <slot
+                name="breadcrumb-item-label"
+                :item="item"
+                :index="key"
+              >
                 {{ item.label }}
               </slot>
             </span>
 
-            <meta itemprop="position" :content="`${key + 1}`" />
+            <meta
+              itemprop="position"
+              :content="`${key + 1}`"
+            >
           </RouterLink>
           <a
             v-else-if="item.link"
@@ -77,41 +95,72 @@ const props = withDefaults(defineProps<VBreadcrumbsProps>(), {
               class="icon is-small"
               :class="[item.hideLabel && props.withIcons && !!item.icon && 'is-solo']"
             >
-              <i aria-hidden="true" class="iconify" :data-icon="item.icon"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                :data-icon="item.icon"
+              />
             </span>
             <meta
               v-if="item.hideLabel && props.withIcons && !!item.icon"
               itemprop="name"
               :content="item.label"
-            />
-            <span v-else itemprop="name">
-              <slot name="breadcrumb-item-label" :item="item" :index="key">
+            >
+            <span
+              v-else
+              itemprop="name"
+            >
+              <slot
+                name="breadcrumb-item-label"
+                :item="item"
+                :index="key"
+              >
                 {{ item.label }}
               </slot>
             </span>
 
-            <meta itemprop="position" :content="`${key + 1}`" />
+            <meta
+              itemprop="position"
+              :content="`${key + 1}`"
+            >
           </a>
-          <span v-else class="breadcrumb-item">
+          <span
+            v-else
+            class="breadcrumb-item"
+          >
             <span
               v-if="props.withIcons && !!item.icon"
               class="icon is-small"
               :class="[item.hideLabel && props.withIcons && !!item.icon && 'is-solo']"
             >
-              <i aria-hidden="true" class="iconify" :data-icon="item.icon"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                :data-icon="item.icon"
+              />
             </span>
             <meta
               v-if="item.hideLabel && props.withIcons && item.icon"
               itemprop="name"
               :content="item.label"
-            />
-            <span v-else itemprop="name">
-              <slot name="breadcrumb-item-label" :item="item" :index="key">
+            >
+            <span
+              v-else
+              itemprop="name"
+            >
+              <slot
+                name="breadcrumb-item-label"
+                :item="item"
+                :index="key"
+              >
                 {{ item.label }}
               </slot>
             </span>
 
-            <meta itemprop="position" :content="`${key + 1}`" />
+            <meta
+              itemprop="position"
+              :content="`${key + 1}`"
+            >
           </span>
         </slot>
       </li>

@@ -45,17 +45,30 @@ const isIconify = computed(() => {
         aria-hidden="true"
         class="iconify snack-icon"
         :data-icon="icon"
-      ></i>
-      <i v-else aria-hidden="true" class="snack-icon" :class="props.icon"></i>
+      />
+      <i
+        v-else
+        aria-hidden="true"
+        class="snack-icon"
+        :class="props.icon"
+      />
     </div>
-    <div v-else-if="props.image" class="snack-media">
-      <img class="avatar" :src="props.image" alt="" @error.once="placeholderHandler" />
+    <div
+      v-else-if="props.image"
+      class="snack-media"
+    >
+      <img
+        class="avatar"
+        :src="props.image"
+        alt=""
+        @error.once="placeholderHandler"
+      >
     </div>
     <span class="snack-text">
       <slot name="title">{{ props.title }}</slot>
     </span>
     <span class="snack-action">
-      <slot></slot>
+      <slot />
     </span>
   </div>
 </template>

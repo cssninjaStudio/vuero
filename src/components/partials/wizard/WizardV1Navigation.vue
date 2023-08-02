@@ -14,8 +14,14 @@ const wizard = useWizard()
 
 <template>
   <nav class="wizard-navigation">
-    <RouterLink to="/" class="wizard-brand">
-      <AnimatedLogo width="38px" height="38px" />
+    <RouterLink
+      to="/"
+      class="wizard-brand"
+    >
+      <AnimatedLogo
+        width="38px"
+        height="38px"
+      />
     </RouterLink>
 
     <div class="navbar-item is-wizard-title">
@@ -33,7 +39,11 @@ const wizard = useWizard()
           @click="toggle"
           @keydown.space.prevent="toggle"
         >
-          <i aria-hidden="true" class="iconify" data-icon="feather:chevron-down"></i>
+          <i
+            aria-hidden="true"
+            class="iconify"
+            data-icon="feather:chevron-down"
+          />
         </div>
       </template>
       <template #content="{ close }">
@@ -111,13 +121,16 @@ const wizard = useWizard()
             type="checkbox"
             :checked="!darkmode.isDark"
             @change="darkmode.onChange"
-          />
-          <span></span>
+          >
+          <span />
         </label>
       </div>
     </div>
 
-    <div ref="dropdownElement2" class="dropdown is-right dropdown-trigger user-dropdown">
+    <div
+      ref="dropdownElement2"
+      class="dropdown is-right dropdown-trigger user-dropdown"
+    >
       <div
         tabindex="0"
         class="is-trigger"
@@ -131,34 +144,69 @@ const wizard = useWizard()
             src="/images/avatars/svg/vuero-1.svg"
             alt=""
             @error.once="onceImageErrored(150)"
-          />
+          >
         </div>
-        <i aria-hidden="true" class="iconify" data-icon="feather:chevron-down"></i>
+        <i
+          aria-hidden="true"
+          class="iconify"
+          data-icon="feather:chevron-down"
+        />
       </div>
-      <div class="dropdown-menu" role="menu">
+      <div
+        class="dropdown-menu"
+        role="menu"
+      >
         <div class="dropdown-content">
           <div class="dropdown-item">
-            <p class="is-size-7 dark-inverted">Erik Kovalsky</p>
+            <p class="is-size-7 dark-inverted">
+              Erik Kovalsky
+            </p>
           </div>
-          <a href="#" class="dropdown-item">
-            <i aria-hidden="true" class="iconify" data-icon="feather:user"></i>
+          <a
+            href="#"
+            class="dropdown-item"
+          >
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:user"
+            />
             <span>Profile</span>
           </a>
           <a class="dropdown-item">
-            <i aria-hidden="true" class="iconify" data-icon="feather:edit-2"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:edit-2"
+            />
             <span>Edit Profile</span>
           </a>
           <a class="dropdown-item">
-            <i aria-hidden="true" class="iconify" data-icon="feather:box"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:box"
+            />
             <span>Projects</span>
           </a>
           <a class="dropdown-item">
-            <i aria-hidden="true" class="iconify" data-icon="feather:settings"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:settings"
+            />
             <span>Settings</span>
           </a>
-          <hr class="dropdown-divider" />
-          <a href="#" class="dropdown-item">
-            <i aria-hidden="true" class="iconify" data-icon="feather:log-out"></i>
+          <hr class="dropdown-divider">
+          <a
+            href="#"
+            class="dropdown-item"
+          >
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:log-out"
+            />
             <span>Sign Out</span>
           </a>
         </div>

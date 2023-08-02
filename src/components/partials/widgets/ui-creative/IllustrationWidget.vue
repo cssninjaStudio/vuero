@@ -19,11 +19,28 @@ const props = withDefaults(
 </script>
 
 <template>
-  <div class="widget illustration-widget" :class="[props.straight && 'is-straight']">
+  <div
+    class="widget illustration-widget"
+    :class="[props.straight && 'is-straight']"
+  >
     <div class="img-container">
-      <img class="main" :src="props.picture" alt="" />
-      <img v-if="props.badgeLeft" class="badge badge-1" :src="props.badgeLeft" alt="" />
-      <img v-if="props.badgeRight" class="badge badge-2" :src="props.badgeRight" alt="" />
+      <img
+        class="main"
+        :src="props.picture"
+        alt=""
+      >
+      <img
+        v-if="props.badgeLeft"
+        class="badge badge-1"
+        :src="props.badgeLeft"
+        alt=""
+      >
+      <img
+        v-if="props.badgeRight"
+        class="badge badge-2"
+        :src="props.badgeRight"
+        alt=""
+      >
     </div>
     <h3>{{ props.title }}</h3>
     <p>{{ props.text }}</p>

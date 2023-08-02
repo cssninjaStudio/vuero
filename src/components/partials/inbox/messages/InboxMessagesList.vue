@@ -43,8 +43,12 @@ watchEffect(() => {
   >
     <div class="message-checkbox">
       <label class="checkbox is-outlined is-primary">
-        <input v-model="internalSelection" type="checkbox" :value="2" />
-        <span></span>
+        <input
+          v-model="internalSelection"
+          type="checkbox"
+          :value="2"
+        >
+        <span />
       </label>
     </div>
     <div class="message-meta">
@@ -54,7 +58,9 @@ watchEffect(() => {
         <strong>I couldn't catch up on last time's dinner</strong>
       </span>
     </div>
-    <div class="pushed">Oct 22</div>
+    <div class="pushed">
+      Oct 22
+    </div>
   </div>
   <!--Message-->
   <div
@@ -67,8 +73,12 @@ watchEffect(() => {
   >
     <div class="message-checkbox">
       <label class="checkbox is-outlined is-primary">
-        <input v-model="internalSelection" type="checkbox" :value="1" />
-        <span></span>
+        <input
+          v-model="internalSelection"
+          type="checkbox"
+          :value="1"
+        >
+        <span />
       </label>
     </div>
     <div class="message-meta">
@@ -76,7 +86,9 @@ watchEffect(() => {
       <span class="email">&lt;melany@vuero.io&gt;</span>
       <span class="subject">Important project review next thursday</span>
     </div>
-    <div class="pushed">Oct 21</div>
+    <div class="pushed">
+      Oct 21
+    </div>
   </div>
   <!--Message-->
   <div
@@ -89,8 +101,12 @@ watchEffect(() => {
   >
     <div class="message-checkbox">
       <label class="checkbox is-outlined is-primary">
-        <input v-model="internalSelection" type="checkbox" :value="3" />
-        <span></span>
+        <input
+          v-model="internalSelection"
+          type="checkbox"
+          :value="3"
+        >
+        <span />
       </label>
     </div>
     <div class="message-meta">
@@ -98,7 +114,9 @@ watchEffect(() => {
       <span class="email">&lt;greta@vuero.io&gt;</span>
       <span class="subject">Don't forget to send me those budget notes</span>
     </div>
-    <div class="pushed">Oct 20</div>
+    <div class="pushed">
+      Oct 20
+    </div>
   </div>
   <!--Message-->
   <div
@@ -111,8 +129,12 @@ watchEffect(() => {
   >
     <div class="message-checkbox">
       <label class="checkbox is-outlined is-primary">
-        <input v-model="internalSelection" type="checkbox" :value="4" />
-        <span></span>
+        <input
+          v-model="internalSelection"
+          type="checkbox"
+          :value="4"
+        >
+        <span />
       </label>
     </div>
     <div class="message-meta">
@@ -120,7 +142,9 @@ watchEffect(() => {
       <span class="email">&lt;elizabeth@vuero.io&gt;</span>
       <span class="subject">Meeting with the new customer on Monday</span>
     </div>
-    <div class="pushed">Oct 19</div>
+    <div class="pushed">
+      Oct 19
+    </div>
   </div>
   <!--Message-->
   <div
@@ -133,8 +157,12 @@ watchEffect(() => {
   >
     <div class="message-checkbox">
       <label class="checkbox is-outlined is-primary">
-        <input v-model="internalSelection" type="checkbox" :value="5" />
-        <span></span>
+        <input
+          v-model="internalSelection"
+          type="checkbox"
+          :value="5"
+        >
+        <span />
       </label>
     </div>
     <div class="message-meta">
@@ -144,7 +172,9 @@ watchEffect(() => {
         I got some new delightful stuff that you absolutely must see
       </span>
     </div>
-    <div class="pushed">Oct 19</div>
+    <div class="pushed">
+      Oct 19
+    </div>
   </div>
   <!--Message-->
   <div
@@ -157,8 +187,12 @@ watchEffect(() => {
   >
     <div class="message-checkbox">
       <label class="checkbox is-outlined is-primary">
-        <input v-model="internalSelection" type="checkbox" :value="6" />
-        <span></span>
+        <input
+          v-model="internalSelection"
+          type="checkbox"
+          :value="6"
+        >
+        <span />
       </label>
     </div>
     <div class="message-meta">
@@ -166,7 +200,9 @@ watchEffect(() => {
       <span class="email">&lt;irina@vuero.io&gt;</span>
       <span class="subject">This month's lead generation report</span>
     </div>
-    <div class="pushed">Oct 18</div>
+    <div class="pushed">
+      Oct 18
+    </div>
   </div>
   <!--Message-->
   <div
@@ -179,8 +215,12 @@ watchEffect(() => {
   >
     <div class="message-checkbox">
       <label class="checkbox is-outlined is-primary">
-        <input v-model="internalSelection" type="checkbox" :value="7" />
-        <span></span>
+        <input
+          v-model="internalSelection"
+          type="checkbox"
+          :value="7"
+        >
+        <span />
       </label>
     </div>
     <div class="message-meta">
@@ -188,7 +228,9 @@ watchEffect(() => {
       <span class="email">&lt;alejandro@vuero.io&gt;</span>
       <span class="subject"> New design ideas from the user experience team </span>
     </div>
-    <div class="pushed">Oct 18</div>
+    <div class="pushed">
+      Oct 18
+    </div>
   </div>
   <!--Message-->
   <div
@@ -201,8 +243,12 @@ watchEffect(() => {
   >
     <div class="message-checkbox">
       <label class="checkbox is-outlined is-primary">
-        <input v-model="internalSelection" type="checkbox" :value="8" />
-        <span></span>
+        <input
+          v-model="internalSelection"
+          type="checkbox"
+          :value="8"
+        >
+        <span />
       </label>
     </div>
     <div class="message-meta">
@@ -210,7 +256,9 @@ watchEffect(() => {
       <span class="email">&lt;edouard@vuero.io&gt;</span>
       <span class="subject">Customer dashboard february bug report</span>
     </div>
-    <div class="pushed">Oct 17</div>
+    <div class="pushed">
+      Oct 17
+    </div>
   </div>
   <!--Message-->
   <div
@@ -223,8 +271,12 @@ watchEffect(() => {
   >
     <div class="message-checkbox">
       <label class="checkbox is-outlined is-primary">
-        <input v-model="internalSelection" type="checkbox" :value="9" />
-        <span></span>
+        <input
+          v-model="internalSelection"
+          type="checkbox"
+          :value="9"
+        >
+        <span />
       </label>
     </div>
     <div class="message-meta">
@@ -232,7 +284,9 @@ watchEffect(() => {
       <span class="email">&lt;sandrine@vuero.io&gt;</span>
       <span class="subject">You didn't answer my last email !</span>
     </div>
-    <div class="pushed">Oct 17</div>
+    <div class="pushed">
+      Oct 17
+    </div>
   </div>
   <!--Message-->
   <div
@@ -245,8 +299,12 @@ watchEffect(() => {
   >
     <div class="message-checkbox">
       <label class="checkbox is-outlined is-primary">
-        <input v-model="internalSelection" type="checkbox" :value="10" />
-        <span></span>
+        <input
+          v-model="internalSelection"
+          type="checkbox"
+          :value="10"
+        >
+        <span />
       </label>
     </div>
     <div class="message-meta">
@@ -254,6 +312,8 @@ watchEffect(() => {
       <span class="email">&lt;kelly@vuero.io&gt;</span>
       <span class="subject">Hop in for the next project review</span>
     </div>
-    <div class="pushed">Oct 16</div>
+    <div class="pushed">
+      Oct 16
+    </div>
   </div>
 </template>

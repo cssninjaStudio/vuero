@@ -15,7 +15,7 @@ useHead({
 
 <template>
   <component
-    :is="(layoutSwitcher.dynamicLayoutComponent as any)"
+    :is="layoutSwitcher.dynamicLayoutComponent as any"
     v-bind="layoutSwitcher.dynamicLayoutProps"
     close-on-change
     default-sidebar="dashboard"
@@ -24,7 +24,9 @@ useHead({
     <MapsDashboard>
       <template #header>
         <div class="content-section-header">
-          <h2 class="title is-4 is-narrow">Maps 1</h2>
+          <h2 class="title is-4 is-narrow">
+            Maps 1
+          </h2>
 
           <Toolbar class="desktop-toolbar">
             <ToolbarNotification />
@@ -37,7 +39,11 @@ useHead({
               @keydown.space.prevent="panels.setActive('activity')"
               @click="panels.setActive('activity')"
             >
-              <i aria-hidden="true" class="iconify" data-icon="feather:grid"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:grid"
+              />
             </a>
           </Toolbar>
         </div>

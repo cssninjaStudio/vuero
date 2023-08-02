@@ -9,10 +9,16 @@ wizard.setStep({
 </script>
 
 <template>
-  <div id="wizard-step-7" class="inner-wrapper is-active" data-step-title="Finish">
+  <div
+    id="wizard-step-7"
+    class="inner-wrapper is-active"
+    data-step-title="Finish"
+  >
     <div class="step-content">
       <div class="step-title">
-        <h2 class="dark-inverted">Congrats! You're all set.</h2>
+        <h2 class="dark-inverted">
+          Congrats! You're all set.
+        </h2>
         <p>Awesome, you just finished creating this project.</p>
       </div>
 
@@ -27,12 +33,12 @@ wizard.setStep({
             class="light-image"
             src="/@src/assets/illustrations/wizard/finish.svg"
             alt=""
-          />
+          >
           <img
             class="dark-image"
             src="/@src/assets/illustrations/wizard/finish-dark.svg"
             alt=""
-          />
+          >
         </template>
         <template #action>
           <VButton

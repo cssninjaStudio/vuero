@@ -244,7 +244,9 @@ Responsive styles
         background: var(--white);
         border-radius: var(--radius-large);
         border: 1px solid var(--fade-grey);
-        box-shadow: 0 8px 8px rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 10%);
+        box-shadow:
+          0 8px 8px rgb(10 10 10 / 10%),
+          0 0 0 1px rgb(10 10 10 / 10%);
       }
     }
   }
@@ -387,7 +389,9 @@ Responsive styles
         background: var(--white);
         border-radius: var(--radius-large);
         border: 1px solid var(--fade-grey);
-        box-shadow: 0 8px 8px rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 10%);
+        box-shadow:
+          0 8px 8px rgb(10 10 10 / 10%),
+          0 0 0 1px rgb(10 10 10 / 10%);
       }
     }
   }

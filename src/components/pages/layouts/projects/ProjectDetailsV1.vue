@@ -37,8 +37,7 @@ const participants = [
                 role="button"
                 @keydown.space.prevent="tab = 'project'"
                 @click="tab = 'project'"
-                ><span>Project</span></a
-              >
+              ><span>Project</span></a>
             </li>
             <li :class="[tab === 'team' && 'is-active']">
               <a
@@ -46,8 +45,7 @@ const participants = [
                 role="button"
                 @keydown.space.prevent="tab = 'team'"
                 @click="tab = 'team'"
-                ><span>Team</span></a
-              >
+              ><span>Team</span></a>
             </li>
             <li :class="[tab === 'tasks' && 'is-active']">
               <a
@@ -55,15 +53,17 @@ const participants = [
                 role="button"
                 @keydown.space.prevent="tab = 'tasks'"
                 @click="tab = 'tasks'"
-                ><span>Tasks</span></a
-              >
+              ><span>Tasks</span></a>
             </li>
-            <li class="tab-naver"></li>
+            <li class="tab-naver" />
           </ul>
         </div>
       </div>
 
-      <div v-if="tab === 'project'" class="tab-content is-active">
+      <div
+        v-if="tab === 'project'"
+        class="tab-content is-active"
+      >
         <div class="columns project-details-inner">
           <div class="column is-8">
             <div class="project-details-card">
@@ -93,28 +93,40 @@ const participants = [
 
               <div class="project-features">
                 <div class="project-feature">
-                  <i aria-hidden="true" class="lnil lnil-vector-pen"></i>
+                  <i
+                    aria-hidden="true"
+                    class="lnil lnil-vector-pen"
+                  />
                   <h4>UI/UX Design</h4>
                   <p>
                     Designing a perfect user experience is in the scope of this project.
                   </p>
                 </div>
                 <div class="project-feature">
-                  <i aria-hidden="true" class="lnil lnil-alarm-clock"></i>
+                  <i
+                    aria-hidden="true"
+                    class="lnil lnil-alarm-clock"
+                  />
                   <h4>1 Week Sprints</h4>
                   <p>
                     This project development iterations follow a 1 week sprint pattern.
                   </p>
                 </div>
                 <div class="project-feature">
-                  <i aria-hidden="true" class="lnil lnil-calendar"></i>
+                  <i
+                    aria-hidden="true"
+                    class="lnil lnil-calendar"
+                  />
                   <h4>3 Months</h4>
                   <p>
                     This project and all related tasks should completed within 3 months.
                   </p>
                 </div>
                 <div class="project-feature">
-                  <i aria-hidden="true" class="lnil lnil-diamond-alt"></i>
+                  <i
+                    aria-hidden="true"
+                    class="lnil lnil-diamond-alt"
+                  />
                   <h4>Fixed</h4>
                   <p>This project's budget planning is based on an imutable fixed bid.</p>
                 </div>
@@ -125,11 +137,17 @@ const participants = [
                 <div class="columns is-multiline">
                   <div class="column is-6">
                     <div class="file-box">
-                      <img src="/images/icons/files/zip-format.svg" alt="" />
+                      <img
+                        src="/images/icons/files/zip-format.svg"
+                        alt=""
+                      >
                       <div class="meta">
                         <span>Preliminary Sketches</span>
                         <span>
-                          3MB <i aria-hidden="true" class="fas fa-circle"></i> 5 days ago
+                          3MB <i
+                            aria-hidden="true"
+                            class="fas fa-circle"
+                          /> 5 days ago
                         </span>
                       </div>
                       <FileCardDropdown />
@@ -137,12 +155,18 @@ const participants = [
                   </div>
                   <div class="column is-6">
                     <div class="file-box">
-                      <img src="/images/icons/files/pdf.svg" alt="" />
+                      <img
+                        src="/images/icons/files/pdf.svg"
+                        alt=""
+                      >
                       <div class="meta">
                         <span>Project Scope</span>
                         <span>
                           0.8MB
-                          <i aria-hidden="true" class="fas fa-circle"></i> 7 days ago
+                          <i
+                            aria-hidden="true"
+                            class="fas fa-circle"
+                          /> 7 days ago
                         </span>
                       </div>
                       <FileCardDropdown />
@@ -150,12 +174,18 @@ const participants = [
                   </div>
                   <div class="column is-6">
                     <div class="file-box">
-                      <img src="/images/icons/files/presentation.svg" alt="" />
+                      <img
+                        src="/images/icons/files/presentation.svg"
+                        alt=""
+                      >
                       <div class="meta">
                         <span>Project Presentation</span>
                         <span>
                           2.4MB
-                          <i aria-hidden="true" class="fas fa-circle"></i> 7 days ago
+                          <i
+                            aria-hidden="true"
+                            class="fas fa-circle"
+                          /> 7 days ago
                         </span>
                       </div>
                       <FileCardDropdown />
@@ -163,12 +193,18 @@ const participants = [
                   </div>
                   <div class="column is-6">
                     <div class="file-box">
-                      <img src="/images/icons/files/sheet.svg" alt="" />
+                      <img
+                        src="/images/icons/files/sheet.svg"
+                        alt=""
+                      >
                       <div class="meta">
                         <span>Project Budget</span>
                         <span>
                           0.6MB
-                          <i aria-hidden="true" class="fas fa-circle"></i> 8 days ago
+                          <i
+                            aria-hidden="true"
+                            class="fas fa-circle"
+                          /> 8 days ago
                         </span>
                       </div>
                       <FileCardDropdown />
@@ -176,12 +212,18 @@ const participants = [
                   </div>
                   <div class="column is-6">
                     <div class="file-box">
-                      <img src="/images/icons/files/doc.svg" alt="" />
+                      <img
+                        src="/images/icons/files/doc.svg"
+                        alt=""
+                      >
                       <div class="meta">
                         <span>Project Notes</span>
                         <span>
                           0.4MB
-                          <i aria-hidden="true" class="fas fa-circle"></i> 8 days ago
+                          <i
+                            aria-hidden="true"
+                            class="fas fa-circle"
+                          /> 8 days ago
                         </span>
                       </div>
                       <FileCardDropdown />
@@ -189,12 +231,18 @@ const participants = [
                   </div>
                   <div class="column is-6">
                     <div class="file-box">
-                      <img src="/images/icons/files/video.svg" alt="" />
+                      <img
+                        src="/images/icons/files/video.svg"
+                        alt=""
+                      >
                       <div class="meta">
                         <span>POC Demo</span>
                         <span>
                           8.75MB
-                          <i aria-hidden="true" class="fas fa-circle"></i> 8 days ago
+                          <i
+                            aria-hidden="true"
+                            class="fas fa-circle"
+                          /> 8 days ago
                         </span>
                       </div>
                       <FileCardDropdown />
@@ -209,21 +257,42 @@ const participants = [
             <div class="side-card">
               <h4>Project Tools</h4>
 
-              <VBlock center title="Sketch" subtitle="Design Software">
+              <VBlock
+                center
+                title="Sketch"
+                subtitle="Design Software"
+              >
                 <template #icon>
-                  <VAvatar size="small" picture="/images/icons/stacks/sketch.svg" />
+                  <VAvatar
+                    size="small"
+                    picture="/images/icons/stacks/sketch.svg"
+                  />
                 </template>
               </VBlock>
 
-              <VBlock center title="Illustrator" subtitle="Design Software">
+              <VBlock
+                center
+                title="Illustrator"
+                subtitle="Design Software"
+              >
                 <template #icon>
-                  <VAvatar size="small" picture="/images/icons/stacks/illustrator.svg" />
+                  <VAvatar
+                    size="small"
+                    picture="/images/icons/stacks/illustrator.svg"
+                  />
                 </template>
               </VBlock>
 
-              <VBlock center title="Photoshop" subtitle="Design Software">
+              <VBlock
+                center
+                title="Photoshop"
+                subtitle="Design Software"
+              >
                 <template #icon>
-                  <VAvatar size="small" picture="/images/icons/stacks/photoshop.svg" />
+                  <VAvatar
+                    size="small"
+                    picture="/images/icons/stacks/photoshop.svg"
+                  />
                 </template>
               </VBlock>
             </div>
@@ -231,21 +300,42 @@ const participants = [
             <div class="side-card">
               <h4>Project Stacks</h4>
 
-              <VBlock center title="Html5" subtitle="Hypertext Markup">
+              <VBlock
+                center
+                title="Html5"
+                subtitle="Hypertext Markup"
+              >
                 <template #icon>
-                  <VAvatar size="small" picture="/images/icons/stacks/html5.svg" />
+                  <VAvatar
+                    size="small"
+                    picture="/images/icons/stacks/html5.svg"
+                  />
                 </template>
               </VBlock>
 
-              <VBlock center title="CSS3" subtitle="Cascading Stylesheets">
+              <VBlock
+                center
+                title="CSS3"
+                subtitle="Cascading Stylesheets"
+              >
                 <template #icon>
-                  <VAvatar size="small" picture="/images/icons/stacks/css3.svg" />
+                  <VAvatar
+                    size="small"
+                    picture="/images/icons/stacks/css3.svg"
+                  />
                 </template>
               </VBlock>
 
-              <VBlock center title="VueJS" subtitle="Javascript Framework">
+              <VBlock
+                center
+                title="VueJS"
+                subtitle="Javascript Framework"
+              >
                 <template #icon>
-                  <VAvatar size="small" picture="/images/icons/stacks/vuejs.svg" />
+                  <VAvatar
+                    size="small"
+                    picture="/images/icons/stacks/vuejs.svg"
+                  />
                 </template>
               </VBlock>
             </div>
@@ -253,7 +343,11 @@ const participants = [
             <div class="side-card">
               <h4>Customer</h4>
 
-              <VBlock center title="VFlights" subtitle="Transportation company">
+              <VBlock
+                center
+                title="VFlights"
+                subtitle="Transportation company"
+              >
                 <template #icon>
                   <VAvatar
                     size="small"
@@ -267,15 +361,25 @@ const participants = [
       </div>
 
       <!--Project Team-->
-      <div v-if="tab === 'team'" class="tab-content is-active">
+      <div
+        v-if="tab === 'team'"
+        class="tab-content is-active"
+      >
         <div class="project-details-inner">
           <div class="project-team-card">
             <div class="columns is-multiline">
               <!--Team Member-->
               <div class="column is-6 has-border-bottom">
-                <VBlock center title="Alice C." subtitle="Software Engineer">
+                <VBlock
+                  center
+                  title="Alice C."
+                  subtitle="Software Engineer"
+                >
                   <template #icon>
-                    <VAvatar size="medium" picture="/demo/avatars/7.jpg" />
+                    <VAvatar
+                      size="medium"
+                      picture="/demo/avatars/7.jpg"
+                    />
                   </template>
 
                   <template #action>
@@ -291,9 +395,16 @@ const participants = [
               </div>
               <!--Team Member-->
               <div class="column is-6 has-border-bottom">
-                <VBlock center title="Anna B." subtitle="UX Designer">
+                <VBlock
+                  center
+                  title="Anna B."
+                  subtitle="UX Designer"
+                >
                   <template #icon>
-                    <VAvatar size="medium" picture="/demo/avatars/9.jpg" />
+                    <VAvatar
+                      size="medium"
+                      picture="/demo/avatars/9.jpg"
+                    />
                   </template>
 
                   <template #action>
@@ -309,9 +420,16 @@ const participants = [
               </div>
               <!--Team Member-->
               <div class="column is-6 has-border-bottom">
-                <VBlock center title="Joshua S." subtitle="Backend Developer">
+                <VBlock
+                  center
+                  title="Joshua S."
+                  subtitle="Backend Developer"
+                >
                   <template #icon>
-                    <VAvatar size="medium" picture="/demo/avatars/12.jpg" />
+                    <VAvatar
+                      size="medium"
+                      picture="/demo/avatars/12.jpg"
+                    />
                   </template>
 
                   <template #action>
@@ -327,9 +445,16 @@ const participants = [
               </div>
               <!--Team Member-->
               <div class="column is-6 has-border-bottom">
-                <VBlock center title="Erik K." subtitle="Product Manager">
+                <VBlock
+                  center
+                  title="Erik K."
+                  subtitle="Product Manager"
+                >
                   <template #icon>
-                    <VAvatar size="medium" picture="/images/avatars/svg/vuero-1.svg" />
+                    <VAvatar
+                      size="medium"
+                      picture="/images/avatars/svg/vuero-1.svg"
+                    />
                   </template>
 
                   <template #action>
@@ -345,9 +470,16 @@ const participants = [
               </div>
               <!--Team Member-->
               <div class="column is-6 has-border-bottom">
-                <VBlock center title="Melany W." subtitle="Web Developer">
+                <VBlock
+                  center
+                  title="Melany W."
+                  subtitle="Web Developer"
+                >
                   <template #icon>
-                    <VAvatar size="medium" picture="/demo/avatars/25.jpg" />
+                    <VAvatar
+                      size="medium"
+                      picture="/demo/avatars/25.jpg"
+                    />
                   </template>
 
                   <template #action>
@@ -363,9 +495,16 @@ const participants = [
               </div>
               <!--Team Member-->
               <div class="column is-6 has-border-bottom">
-                <VBlock center title="Tara S." subtitle="UI/UX Designer">
+                <VBlock
+                  center
+                  title="Tara S."
+                  subtitle="UI/UX Designer"
+                >
                   <template #icon>
-                    <VAvatar size="medium" picture="/demo/avatars/13.jpg" />
+                    <VAvatar
+                      size="medium"
+                      picture="/demo/avatars/13.jpg"
+                    />
                   </template>
 
                   <template #action>
@@ -381,9 +520,16 @@ const participants = [
               </div>
               <!--Team Member-->
               <div class="column is-6">
-                <VBlock center title="Esteban C." subtitle="UI/UX Designer">
+                <VBlock
+                  center
+                  title="Esteban C."
+                  subtitle="UI/UX Designer"
+                >
                   <template #icon>
-                    <VAvatar size="medium" picture="/demo/avatars/18.jpg" />
+                    <VAvatar
+                      size="medium"
+                      picture="/demo/avatars/18.jpg"
+                    />
                   </template>
 
                   <template #action>
@@ -399,9 +545,16 @@ const participants = [
               </div>
               <!--Team Member-->
               <div class="column is-6">
-                <VBlock center title="Mary L." subtitle="Project Manager">
+                <VBlock
+                  center
+                  title="Mary L."
+                  subtitle="Project Manager"
+                >
                   <template #icon>
-                    <VAvatar size="medium" picture="/demo/avatars/5.jpg" />
+                    <VAvatar
+                      size="medium"
+                      picture="/demo/avatars/5.jpg"
+                    />
                   </template>
 
                   <template #action>
@@ -420,7 +573,10 @@ const participants = [
         </div>
       </div>
 
-      <div v-if="tab === 'tasks'" class="tab-content is-active">
+      <div
+        v-if="tab === 'tasks'"
+        class="tab-content is-active"
+      >
         <div class="project-details-inner">
           <div class="task-grid">
             <div class="grid-header">
@@ -456,7 +612,10 @@ const participants = [
                         ]"
                       />
                       <div class="attachments">
-                        <i aria-hidden="true" class="lnil lnil-paperclip"></i>
+                        <i
+                          aria-hidden="true"
+                          class="lnil lnil-paperclip"
+                        />
                         <span>3 attachments</span>
                       </div>
                     </div>
@@ -482,7 +641,10 @@ const participants = [
                         :avatars="[{ picture: '/demo/avatars/12.jpg' }]"
                       />
                       <div class="attachments">
-                        <i aria-hidden="true" class="lnil lnil-paperclip"></i>
+                        <i
+                          aria-hidden="true"
+                          class="lnil lnil-paperclip"
+                        />
                         <span>1 attachment</span>
                       </div>
                     </div>
@@ -508,7 +670,10 @@ const participants = [
                         :avatars="[{ picture: '/demo/avatars/12.jpg' }]"
                       />
                       <div class="attachments">
-                        <i aria-hidden="true" class="lnil lnil-paperclip"></i>
+                        <i
+                          aria-hidden="true"
+                          class="lnil lnil-paperclip"
+                        />
                         <span>1 attachment</span>
                       </div>
                     </div>
@@ -537,7 +702,10 @@ const participants = [
                         ]"
                       />
                       <div class="attachments">
-                        <i aria-hidden="true" class="lnil lnil-paperclip"></i>
+                        <i
+                          aria-hidden="true"
+                          class="lnil lnil-paperclip"
+                        />
                         <span>1 attachment</span>
                       </div>
                     </div>
@@ -563,7 +731,10 @@ const participants = [
                         :avatars="[{ picture: '/demo/avatars/25.jpg' }]"
                       />
                       <div class="attachments">
-                        <i aria-hidden="true" class="lnil lnil-paperclip"></i>
+                        <i
+                          aria-hidden="true"
+                          class="lnil lnil-paperclip"
+                        />
                         <span>2 attachments</span>
                       </div>
                     </div>
@@ -592,7 +763,10 @@ const participants = [
                         ]"
                       />
                       <div class="attachments">
-                        <i aria-hidden="true" class="lnil lnil-paperclip"></i>
+                        <i
+                          aria-hidden="true"
+                          class="lnil lnil-paperclip"
+                        />
                         <span>3 attachments</span>
                       </div>
                     </div>
@@ -621,7 +795,10 @@ const participants = [
                         ]"
                       />
                       <div class="attachments">
-                        <i aria-hidden="true" class="lnil lnil-paperclip"></i>
+                        <i
+                          aria-hidden="true"
+                          class="lnil lnil-paperclip"
+                        />
                         <span>3 attachments</span>
                       </div>
                     </div>
@@ -650,7 +827,10 @@ const participants = [
                         ]"
                       />
                       <div class="attachments">
-                        <i aria-hidden="true" class="lnil lnil-paperclip"></i>
+                        <i
+                          aria-hidden="true"
+                          class="lnil lnil-paperclip"
+                        />
                         <span>2 attachments</span>
                       </div>
                     </div>

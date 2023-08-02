@@ -46,8 +46,8 @@ const localFlagSrc = computed(() => {
           tabindex="0"
           @keydown.space.prevent="(e) => (e.target as HTMLLabelElement).click()"
           @change="darkmode.onChange"
-        />
-        <span></span>
+        >
+        <span />
       </label>
     </div>
 
@@ -58,7 +58,10 @@ const localFlagSrc = computed(() => {
       @keydown.space.prevent="panels.setActive('languages')"
       @click="panels.setActive('languages')"
     >
-      <img :src="localFlagSrc" alt="" />
+      <img
+        :src="localFlagSrc"
+        alt=""
+      >
     </a>
 
     <div class="toolbar-notifications is-hidden-mobile">
@@ -66,15 +69,28 @@ const localFlagSrc = computed(() => {
         ref="dropdownElement"
         class="dropdown is-spaced is-dots is-right dropdown-trigger"
       >
-        <div class="is-trigger" aria-haspopup="true" @click="dropdown.toggle">
-          <i aria-hidden="true" class="iconify" data-icon="feather:bell"></i>
-          <span class="new-indicator pulsate"></span>
+        <div
+          class="is-trigger"
+          aria-haspopup="true"
+          @click="dropdown.toggle"
+        >
+          <i
+            aria-hidden="true"
+            class="iconify"
+            data-icon="feather:bell"
+          />
+          <span class="new-indicator pulsate" />
         </div>
-        <div class="dropdown-menu" role="menu">
+        <div
+          class="dropdown-menu"
+          role="menu"
+        >
           <div class="dropdown-content">
             <div class="heading">
               <div class="heading-left">
-                <h6 class="heading-title">Notifications</h6>
+                <h6 class="heading-title">
+                  Notifications
+                </h6>
               </div>
               <div class="heading-right">
                 <RouterLink
@@ -94,7 +110,7 @@ const localFlagSrc = computed(() => {
                       alt=""
                       src="/demo/avatars/7.jpg"
                       @error.once="onceImageErrored(150)"
-                    />
+                    >
                   </div>
                   <div class="user-content">
                     <p class="user-info">
@@ -112,7 +128,7 @@ const localFlagSrc = computed(() => {
                       alt=""
                       src="/demo/avatars/12.jpg"
                       @error.once="onceImageErrored(150)"
-                    />
+                    >
                   </div>
                   <div class="user-content">
                     <p class="user-info">
@@ -130,7 +146,7 @@ const localFlagSrc = computed(() => {
                       alt=""
                       src="/demo/avatars/13.jpg"
                       @error.once="onceImageErrored(150)"
-                    />
+                    >
                   </div>
                   <div class="user-content">
                     <p class="user-info">
@@ -148,7 +164,7 @@ const localFlagSrc = computed(() => {
                       alt=""
                       src="/demo/avatars/25.jpg"
                       @error.once="onceImageErrored(150)"
-                    />
+                    >
                   </div>
                   <div class="user-content">
                     <p class="user-info">
@@ -176,12 +192,12 @@ const localFlagSrc = computed(() => {
         aria-hidden="true"
         class="iconify rtl-hidden"
         data-icon="feather:chevron-left"
-      ></i>
+      />
       <i
         aria-hidden="true"
         class="iconify ltr-hidden"
         data-icon="feather:chevron-right"
-      ></i>
+      />
     </a>
   </div>
 </template>

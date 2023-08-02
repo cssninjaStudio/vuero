@@ -6,18 +6,31 @@ import { courses, files, students } from '/@src/data/dashboards/course'
   <div class="business-dashboard course-dashboard">
     <div class="dashboard-title is-main">
       <div class="left">
-        <h2 class="dark-inverted">Week 6 Classes</h2>
-        <p class="h-hidden-mobile">Classes from January 6 to 10</p>
+        <h2 class="dark-inverted">
+          Week 6 Classes
+        </h2>
+        <p class="h-hidden-mobile">
+          Classes from January 6 to 10
+        </p>
       </div>
       <div class="right">
-        <VButton color="primary" elevated>Open Schedule</VButton>
+        <VButton
+          color="primary"
+          elevated
+        >
+          Open Schedule
+        </VButton>
       </div>
     </div>
 
     <div class="course-grid">
       <div class="columns is-multiline">
         <!--Course card-->
-        <div v-for="course in courses" :key="course.id" class="column is-4">
+        <div
+          v-for="course in courses"
+          :key="course.id"
+          class="column is-4"
+        >
           <div class="course-card">
             <span
               class="tag is-elevated"
@@ -26,9 +39,10 @@ import { courses, files, students } from '/@src/data/dashboards/course'
                 course.category === 'Immunology' && 'is-purple',
                 course.category === 'Cardiology' && 'is-danger',
               ]"
-              >{{ course.category }}</span
-            >
-            <h3 class="dark-inverted">{{ course.title }}</h3>
+            >{{ course.category }}</span>
+            <h3 class="dark-inverted">
+              {{ course.title }}
+            </h3>
             <p>{{ course.summary }}</p>
             <div class="students">
               <VAvatar
@@ -37,14 +51,21 @@ import { courses, files, students } from '/@src/data/dashboards/course'
                 :picture="student.picture"
                 size="small"
               />
-              <VAvatar size="small" :initials="`+${course.participants - 3}`" />
+              <VAvatar
+                size="small"
+                :initials="`+${course.participants - 3}`"
+              />
               <a class="link is-dark-primary">Class discussion</a>
             </div>
             <div class="attached-block">
               <a class="is-dark-primary">Week 6 lecture recording</a>
               <div class="block-stats">
                 <span>
-                  <i aria-hidden="true" class="iconify" data-icon="feather:clock"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:clock"
+                  />
                   <small>{{ course.duration }}</small>
                 </span>
                 <span>
@@ -52,7 +73,7 @@ import { courses, files, students } from '/@src/data/dashboards/course'
                     aria-hidden="true"
                     class="iconify"
                     data-icon="feather:message-circle"
-                  ></i>
+                  />
                   <small>{{ course.comments }}</small>
                 </span>
               </div>
@@ -61,7 +82,11 @@ import { courses, files, students } from '/@src/data/dashboards/course'
               <a class="is-dark-primary">{{ course.actionLabel }}</a>
               <div class="block-stats">
                 <span>
-                  <i aria-hidden="true" class="iconify" data-icon="feather:calendar"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:calendar"
+                  />
                   <small>{{ course.actionText }}</small>
                 </span>
               </div>
@@ -82,19 +107,33 @@ import { courses, files, students } from '/@src/data/dashboards/course'
       <div class="column is-4">
         <div class="dashboard-title">
           <div class="left">
-            <h2 class="dark-inverted">Week 6 Files</h2>
-            <p class="h-hidden-mobile">Files you will need for this week</p>
+            <h2 class="dark-inverted">
+              Week 6 Files
+            </h2>
+            <p class="h-hidden-mobile">
+              Files you will need for this week
+            </p>
           </div>
         </div>
 
-        <div v-for="file in files" :key="file.id" class="tile-grid-item">
+        <div
+          v-for="file in files"
+          :key="file.id"
+          class="tile-grid-item"
+        >
           <div class="tile-grid-item-inner">
-            <img :src="file.icon" alt="" />
+            <img
+              :src="file.icon"
+              alt=""
+            >
             <div class="meta">
               <span class="dark-inverted">{{ file.name }}</span>
               <span>
                 <span>{{ file.size }}</span>
-                <i aria-hidden="true" class="fas fa-circle icon-separator"></i>
+                <i
+                  aria-hidden="true"
+                  class="fas fa-circle icon-separator"
+                />
                 <span>Uploaded {{ file.uploaded }}</span>
               </span>
             </div>
@@ -107,8 +146,12 @@ import { courses, files, students } from '/@src/data/dashboards/course'
       <div class="column is-8">
         <div class="dashboard-title">
           <div class="left">
-            <h2 class="dark-inverted">Students</h2>
-            <p class="h-hidden-mobile">Summary of attending students</p>
+            <h2 class="dark-inverted">
+              Students
+            </h2>
+            <p class="h-hidden-mobile">
+              Summary of attending students
+            </p>
           </div>
           <div class="right">
             <div class="field">
@@ -117,9 +160,13 @@ import { courses, files, students } from '/@src/data/dashboards/course'
                   type="text"
                   class="input is-rounded"
                   placeholder="Search students..."
-                />
+                >
                 <div class="form-icon">
-                  <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:search"
+                  />
                 </div>
               </div>
             </div>
@@ -144,11 +191,16 @@ import { courses, files, students } from '/@src/data/dashboards/course'
             },
           }"
         >
-          <template #header><div /></template>
+          <template #header>
+            <div />
+          </template>
 
           <template #body-cell="{ row, column, value }">
             <template v-if="column.key === 'picture'">
-              <VAvatar :picture="row.picture" size="medium" />
+              <VAvatar
+                :picture="row.picture"
+                size="medium"
+              />
               <div>
                 <span class="item-name dark-inverted">{{ row.username }}</span>
                 <span class="item-meta">
@@ -163,20 +215,23 @@ import { courses, files, students } from '/@src/data/dashboards/course'
                   row.status === 'Online'
                     ? 'green'
                     : row.status === 'Busy'
-                    ? 'orange'
-                    : undefined
+                      ? 'orange'
+                      : undefined
                 "
               >
                 {{ row.status }}
               </VTag>
             </template>
             <template v-else-if="column.key === 'actions'">
-              <VAction class="action-button is-dark-outlined is-pushed-mobile"
-                >Chat</VAction
-              >
+              <VAction class="action-button is-dark-outlined is-pushed-mobile">
+                Chat
+              </VAction>
             </template>
 
-            <span v-else class="light-text">{{ value }}</span>
+            <span
+              v-else
+              class="light-text"
+            >{{ value }}</span>
           </template>
         </VFlexTable>
       </div>

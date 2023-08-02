@@ -23,7 +23,9 @@ const sidebar = useSidebar()
 <template>
   <div class="sidebar-panel is-messages">
     <div class="messages-header">
-      <h3 class="no-mb">Chat</h3>
+      <h3 class="no-mb">
+        Chat
+      </h3>
 
       <div
         class="vuero-hamburger nav-trigger push-resize messages-push"
@@ -33,11 +35,23 @@ const sidebar = useSidebar()
         @click="sidebar.toggle('messages')"
       >
         <span class="menu-toggle has-chevron">
-          <span :class="[sidebar.active !== 'none' && 'active']" class="icon-box-toggle">
+          <span
+            :class="[sidebar.active !== 'none' && 'active']"
+            class="icon-box-toggle"
+          >
             <span class="rotate">
-              <i aria-hidden="true" class="icon-line-top"></i>
-              <i aria-hidden="true" class="icon-line-center"></i>
-              <i aria-hidden="true" class="icon-line-bottom"></i>
+              <i
+                aria-hidden="true"
+                class="icon-line-top"
+              />
+              <i
+                aria-hidden="true"
+                class="icon-line-center"
+              />
+              <i
+                aria-hidden="true"
+                class="icon-line-bottom"
+              />
             </span>
           </span>
         </span>
@@ -50,11 +64,18 @@ const sidebar = useSidebar()
           class="button v-button is-primary is-raised is-rounded is-fullwidth"
           @click="() => emit('addConversation')"
         >
-          <i aria-hidden="true" class="iconify" data-icon="feather:plus"></i>
+          <i
+            aria-hidden="true"
+            class="iconify"
+            data-icon="feather:plus"
+          />
           <span>New Conversation</span>
         </button>
       </div>
-      <ul id="conversations-list" class="animated preFadeInUp fadeInUp">
+      <ul
+        id="conversations-list"
+        class="animated preFadeInUp fadeInUp"
+      >
         <li
           v-for="conversation in props.conversations"
           :key="conversation.id"
@@ -71,7 +92,7 @@ const sidebar = useSidebar()
                 :src="conversation.avatar"
                 alt=""
                 @error.once="onceImageErrored(150)"
-              />
+              >
             </div>
             <div class="recipient-meta">
               <span>{{ conversation.name }}</span>

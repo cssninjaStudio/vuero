@@ -3,7 +3,9 @@
     <div class="container">
       <!--Title-->
       <div class="section-title has-text-centered">
-        <h2 class="title is-2">Comprehensive Pricing</h2>
+        <h2 class="title is-2">
+          Comprehensive Pricing
+        </h2>
         <h4>There's a right plan for everyone out there.</h4>
       </div>
 
@@ -11,11 +13,20 @@
       <div class="pricing-wrapper">
         <!--Pricing plan-->
         <div class="pricing-plan">
-          <div class="name">Free</div>
-          <img src="/images/logos/logo/logo-platinum.svg" alt="" />
-          <div class="price">$0</div>
-          <div class="trial">Forever free</div>
-          <hr />
+          <div class="name">
+            Free
+          </div>
+          <img
+            src="/images/logos/logo/logo-platinum.svg"
+            alt=""
+          >
+          <div class="price">
+            $0
+          </div>
+          <div class="trial">
+            Forever free
+          </div>
+          <hr>
           <ul>
             <li>
               <strong>2</strong>
@@ -34,11 +45,20 @@
 
         <!--Pricing plan-->
         <div class="pricing-plan">
-          <div class="name">Business</div>
-          <img src="/images/logos/logo/logo-accent.svg" alt="" />
-          <div class="price">$49</div>
-          <div class="trial">Free 14 day trial</div>
-          <hr />
+          <div class="name">
+            Business
+          </div>
+          <img
+            src="/images/logos/logo/logo-accent.svg"
+            alt=""
+          >
+          <div class="price">
+            $49
+          </div>
+          <div class="trial">
+            Free 14 day trial
+          </div>
+          <hr>
           <ul>
             <li>
               <strong>10</strong>
@@ -57,11 +77,20 @@
 
         <!--Pricing plan-->
         <div class="pricing-plan is-featured">
-          <div class="name">Pro</div>
-          <img src="/images/logos/logo/logo.svg" alt="" />
-          <div class="price">$119</div>
-          <div class="trial">Free 14 day trial</div>
-          <hr />
+          <div class="name">
+            Pro
+          </div>
+          <img
+            src="/images/logos/logo/logo.svg"
+            alt=""
+          >
+          <div class="price">
+            $119
+          </div>
+          <div class="trial">
+            Free 14 day trial
+          </div>
+          <hr>
           <ul>
             <li>
               <strong>Unlimited</strong>

@@ -5,15 +5,24 @@ const emit = defineEmits(['toggleMobileConversation'])
 </script>
 
 <template>
-  <div id="navbar-conversation-1" class="chat-area-content">
+  <div
+    id="navbar-conversation-1"
+    class="chat-area-content"
+  >
     <div class="chat-area-header">
       <button
         class="trigger conversations-mobile-trigger h-only-mobile h-only-tablet-p h-only-tablet-l"
         @click="emit('toggleMobileConversation')"
       >
-        <i aria-hidden="true" class="iconify" data-icon="feather:menu"></i>
+        <i
+          aria-hidden="true"
+          class="iconify"
+          data-icon="feather:menu"
+        />
       </button>
-      <div class="chat-area-title">Kelly M.</div>
+      <div class="chat-area-title">
+        Kelly M.
+      </div>
       <div class="chat-area-group">
         <img
           class="chat-area-profile"
@@ -21,7 +30,7 @@ const emit = defineEmits(['toggleMobileConversation'])
           alt=""
           data-user-popover="13"
           @error.once="onceImageErrored(150)"
-        />
+        >
       </div>
     </div>
     <div class="chat-area-main">
@@ -33,17 +42,21 @@ const emit = defineEmits(['toggleMobileConversation'])
             alt=""
             data-user-popover="13"
             @error.once="onceImageErrored(150)"
-          />
-          <div class="chat-msg-date">Sent at 1:03pm</div>
+          >
+          <div class="chat-msg-date">
+            Sent at 1:03pm
+          </div>
         </div>
         <div class="chat-msg-content">
-          <div class="chat-msg-text">hey Erik, what's up?</div>
+          <div class="chat-msg-text">
+            hey Erik, what's up?
+          </div>
           <div class="chat-msg-text">
             <img
               src="/demo/photos/apps/7.png"
               alt=""
               @error.once="onceImageErrored(400, 300)"
-            />
+            >
           </div>
           <div class="chat-msg-text">
             I think it's time to review those slides we talked about.
@@ -58,15 +71,22 @@ const emit = defineEmits(['toggleMobileConversation'])
             alt=""
             data-user-popover="3"
             @error.once="onceImageErrored(150)"
-          />
-          <div class="chat-msg-date">Sent at 1:22pm</div>
+          >
+          <div class="chat-msg-date">
+            Sent at 1:22pm
+          </div>
         </div>
         <div class="chat-msg-content">
           <div class="chat-msg-text">
             Yeah I know, well I feel a bit miserable about that
-            <span role="img" aria-label="Faces with Tears of Joy">😂</span>.
+            <span
+              role="img"
+              aria-label="Faces with Tears of Joy"
+            >😂</span>.
           </div>
-          <div class="chat-msg-text">I was working on that till 4:00 am.</div>
+          <div class="chat-msg-text">
+            I was working on that till 4:00 am.
+          </div>
         </div>
       </div>
       <div class="chat-msg">
@@ -77,13 +97,21 @@ const emit = defineEmits(['toggleMobileConversation'])
             alt=""
             data-user-popover="13"
             @error.once="onceImageErrored(150)"
-          />
-          <div class="chat-msg-date">Sent at 1:22pm</div>
+          >
+          <div class="chat-msg-date">
+            Sent at 1:22pm
+          </div>
         </div>
         <div class="chat-msg-content">
-          <div class="chat-msg-text">Oh my god! Don't push youself that much!</div>
-          <div class="chat-msg-text">You got to take some rest tomorrow.</div>
-          <div class="chat-msg-text">What time was our meeting scheduled for?</div>
+          <div class="chat-msg-text">
+            Oh my god! Don't push youself that much!
+          </div>
+          <div class="chat-msg-text">
+            You got to take some rest tomorrow.
+          </div>
+          <div class="chat-msg-text">
+            What time was our meeting scheduled for?
+          </div>
         </div>
       </div>
       <div class="chat-msg owner">
@@ -94,12 +122,18 @@ const emit = defineEmits(['toggleMobileConversation'])
             alt=""
             data-user-popover="3"
             @error.once="onceImageErrored(150)"
-          />
-          <div class="chat-msg-date">Sent at 1:23pm</div>
+          >
+          <div class="chat-msg-date">
+            Sent at 1:23pm
+          </div>
         </div>
         <div class="chat-msg-content">
-          <div class="chat-msg-text">3:15 pm I believe.</div>
-          <div class="chat-msg-text">Let me check the schedule</div>
+          <div class="chat-msg-text">
+            3:15 pm I believe.
+          </div>
+          <div class="chat-msg-text">
+            Let me check the schedule
+          </div>
         </div>
       </div>
     </div>

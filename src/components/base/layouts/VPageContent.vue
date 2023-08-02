@@ -1,6 +1,6 @@
 <template>
   <div class="page-content">
-    <slot></slot>
+    <slot />
   </div>
 </template>
 
@@ -36,7 +36,7 @@
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media only screen and (device-width >= 768px) and (device-width <= 1024px) and (orientation: portrait) {
   .page-content {
     padding: 0 10px;
 

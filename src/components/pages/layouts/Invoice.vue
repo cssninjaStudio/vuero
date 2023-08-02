@@ -97,16 +97,32 @@ const totalColumns = {
       <div class="right">
         <div class="controls">
           <a class="action">
-            <i aria-hidden="true" class="iconify" data-icon="feather:printer"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:printer"
+            />
           </a>
           <a class="action">
-            <i aria-hidden="true" class="iconify" data-icon="feather:download-cloud"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:download-cloud"
+            />
           </a>
           <a class="action">
-            <i aria-hidden="true" class="iconify" data-icon="feather:mail"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:mail"
+            />
           </a>
           <a class="action">
-            <i aria-hidden="true" class="iconify" data-icon="feather:arrow-left"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:arrow-left"
+            />
           </a>
         </div>
       </div>
@@ -114,8 +130,15 @@ const totalColumns = {
     <div class="invoice-body">
       <div class="invoice-card">
         <div class="invoice-section is-flex is-bordered">
-          <Tippy class="has-help-cursor" interactive placement="bottom-start">
-            <VAvatar size="large" picture="/demo/avatars/13.jpg" />
+          <Tippy
+            class="has-help-cursor"
+            interactive
+            placement="bottom-start"
+          >
+            <VAvatar
+              size="large"
+              picture="/demo/avatars/13.jpg"
+            />
             <template #content>
               <UserPopoverContent :user="popovers.user13" />
             </template>
@@ -154,19 +177,32 @@ const totalColumns = {
           </div>
         </div>
         <div class="invoice-section">
-          <VFlexTable :data="data" :columns="columns" rounded reactive>
+          <VFlexTable
+            :data="data"
+            :columns="columns"
+            rounded
+            reactive
+          >
             <template #body-cell="{ column, row }">
               <template v-if="column.key === 'quantity'">
                 <VControl>
                   <VField>
-                    <VInput v-model="row[column.key]" type="number" min="0" />
+                    <VInput
+                      v-model="row[column.key]"
+                      type="number"
+                      min="0"
+                    />
                   </VField>
                 </VControl>
               </template>
             </template>
           </VFlexTable>
 
-          <VFlexTable subtable :data="totalData" :columns="totalColumns">
+          <VFlexTable
+            subtable
+            :data="totalData"
+            :columns="totalColumns"
+          >
             <template #body-cell="{ column, value, row }">
               <template v-if="column.key === 'label'">
                 <span class="table-label">{{ value }}</span>

@@ -50,7 +50,9 @@ const props = withDefaults(
         :initials="conversation.avatar.initials"
       />
       <div class="conversation-detail">
-        <div class="conversation-username">{{ conversation.name }}</div>
+        <div class="conversation-username">
+          {{ conversation.name }}
+        </div>
         <div class="conversation-content">
           <span class="conversation-message">{{ conversation.lastMessagePreview }}</span>
           <span class="conversation-date">{{ conversation.lastMessage }}</span>

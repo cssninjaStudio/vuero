@@ -32,14 +32,26 @@ const {
   <div class="ecommerce-dashboard ecommerce-dashboard-v1">
     <!--Header-->
     <div class="dashboard-header">
-      <VAvatar picture="/images/avatars/svg/vuero-1.svg" size="large" />
+      <VAvatar
+        picture="/images/avatars/svg/vuero-1.svg"
+        size="large"
+      />
       <div class="start">
-        <h3 class="dark-inverted">Welcome back, Erik Kovalsky</h3>
+        <h3 class="dark-inverted">
+          Welcome back, Erik Kovalsky
+        </h3>
         <p>We're very happy to see you again on your dashboard.</p>
       </div>
       <div class="end">
-        <VButton dark="3">View Reports</VButton>
-        <VButton color="primary" elevated>Manage Shop</VButton>
+        <VButton dark="3">
+          View Reports
+        </VButton>
+        <VButton
+          color="primary"
+          elevated
+        >
+          Manage Shop
+        </VButton>
       </div>
     </div>
 
@@ -49,8 +61,15 @@ const {
         <div class="dashboard-tile">
           <div class="tile-head">
             <h3>Total Sales</h3>
-            <VIconBox color="info" rounded>
-              <i aria-hidden="true" class="iconify" data-icon="feather:gift"></i>
+            <VIconBox
+              color="info"
+              rounded
+            >
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:gift"
+              />
             </VIconBox>
           </div>
           <div class="dashboard-tile-inner">
@@ -64,8 +83,7 @@ const {
                 :type="spark1.chart.type"
                 :series="spark1.series"
                 :options="spark1"
-              >
-              </ApexChart>
+              />
             </div>
           </div>
         </div>
@@ -76,8 +94,15 @@ const {
         <div class="dashboard-tile">
           <div class="tile-head">
             <h3>Total Income</h3>
-            <VIconBox color="purple" rounded>
-              <i aria-hidden="true" class="iconify" data-icon="feather:dollar-sign"></i>
+            <VIconBox
+              color="purple"
+              rounded
+            >
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:dollar-sign"
+              />
             </VIconBox>
           </div>
           <div class="dashboard-tile-inner">
@@ -91,8 +116,7 @@ const {
                 :type="spark2.chart.type"
                 :series="spark2.series"
                 :options="spark2"
-              >
-              </ApexChart>
+              />
             </div>
           </div>
         </div>
@@ -103,8 +127,15 @@ const {
         <div class="dashboard-tile">
           <div class="tile-head">
             <h3>New Orders</h3>
-            <VIconBox color="green" rounded>
-              <i aria-hidden="true" class="iconify" data-icon="feather:box"></i>
+            <VIconBox
+              color="green"
+              rounded
+            >
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:box"
+              />
             </VIconBox>
           </div>
           <div class="dashboard-tile-inner">
@@ -118,8 +149,7 @@ const {
                 :type="spark3.chart.type"
                 :series="spark3.series"
                 :options="spark3"
-              >
-              </ApexChart>
+              />
             </div>
           </div>
         </div>
@@ -130,8 +160,15 @@ const {
         <div class="dashboard-tile">
           <div class="tile-head">
             <h3>Abandonned</h3>
-            <VIconBox color="orange" rounded>
-              <i aria-hidden="true" class="iconify" data-icon="feather:shopping-cart"></i>
+            <VIconBox
+              color="orange"
+              rounded
+            >
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:shopping-cart"
+              />
             </VIconBox>
           </div>
           <div class="dashboard-tile-inner">
@@ -145,8 +182,7 @@ const {
                 :type="spark4.chart.type"
                 :series="spark4.series"
                 :options="spark4"
-              >
-              </ApexChart>
+              />
             </div>
           </div>
         </div>
@@ -168,8 +204,7 @@ const {
             :type="lineStatsChartOptions.chart.type"
             :series="lineStatsChartOptions.series"
             :options="lineStatsChartOptions"
-          >
-          </ApexChart>
+          />
         </LineStatWidget>
       </div>
 
@@ -189,36 +224,39 @@ const {
             :type="revenueOptions.chart.type"
             :series="revenueOptions.series"
             :options="revenueOptions"
-          >
-          </ApexChart>
+          />
         </LineStatWidget>
       </div>
 
       <!--Flex Stat Widget-->
       <div class="column is-6">
-        <FlexStatWidget title="Sales Revenue" straight>
+        <FlexStatWidget
+          title="Sales Revenue"
+          straight
+        >
           <ApexChart
             id="flex-stat-circle"
             :height="flexRadialChartCircleOptions.chart.height"
             :type="flexRadialChartCircleOptions.chart.type"
             :series="flexRadialChartCircleOptions.series"
             :options="flexRadialChartCircleOptions"
-          >
-          </ApexChart>
+          />
         </FlexStatWidget>
       </div>
 
       <!--Flex Stat Widget-->
       <div class="column is-6">
-        <FlexStatWidget title="Sales Revenue" straight>
+        <FlexStatWidget
+          title="Sales Revenue"
+          straight
+        >
           <ApexChart
             id="flex-stat-radial"
             :height="flexRadialChartStripesOptions.chart.height"
             :type="flexRadialChartStripesOptions.chart.type"
             :series="flexRadialChartStripesOptions.series"
             :options="flexRadialChartStripesOptions"
-          >
-          </ApexChart>
+          />
         </FlexStatWidget>
       </div>
 
@@ -236,8 +274,7 @@ const {
               :type="widgetRadialGroup1Options.chart.type"
               :series="widgetRadialGroup1Options.series"
               :options="widgetRadialGroup1Options"
-            >
-            </ApexChart>
+            />
           </template>
           <template #chart2>
             <ApexChart
@@ -246,8 +283,7 @@ const {
               :type="widgetRadialGroup2Options.chart.type"
               :series="widgetRadialGroup2Options.series"
               :options="widgetRadialGroup2Options"
-            >
-            </ApexChart>
+            />
           </template>
           <template #chart3>
             <ApexChart
@@ -256,8 +292,7 @@ const {
               :type="widgetRadialGroup3Options.chart.type"
               :series="widgetRadialGroup3Options.series"
               :options="widgetRadialGroup3Options"
-            >
-            </ApexChart>
+            />
           </template>
         </GroupedStatWidget>
       </div>
@@ -277,8 +312,7 @@ const {
               :type="widgetGaugeGroup1Options.chart.type"
               :series="widgetGaugeGroup1Options.series"
               :options="widgetGaugeGroup1Options"
-            >
-            </ApexChart>
+            />
           </template>
           <template #chart2>
             <ApexChart
@@ -287,8 +321,7 @@ const {
               :type="widgetGaugeGroup2Options.chart.type"
               :series="widgetGaugeGroup2Options.series"
               :options="widgetGaugeGroup2Options"
-            >
-            </ApexChart>
+            />
           </template>
           <template #chart3>
             <ApexChart
@@ -297,8 +330,7 @@ const {
               :type="widgetGaugeGroup3Options.chart.type"
               :series="widgetGaugeGroup3Options.series"
               :options="widgetGaugeGroup3Options"
-            >
-            </ApexChart>
+            />
           </template>
         </GroupedStatWidget>
       </div>
@@ -307,7 +339,9 @@ const {
       <div class="column is-12">
         <!--Header-->
         <div class="table-header">
-          <h3 class="dark-inverted">Recent Orders</h3>
+          <h3 class="dark-inverted">
+            Recent Orders
+          </h3>
           <VField class="is-minimal-select">
             <VControl>
               <Multiselect
@@ -341,7 +375,11 @@ const {
         >
           <template #body-cell="{ row, column, value }">
             <template v-if="column.key === 'picture'">
-              <VAvatar :picture="row.picture" size="medium" squared />
+              <VAvatar
+                :picture="row.picture"
+                size="medium"
+                squared
+              />
               <div>
                 <span class="item-name dark-inverted is-font-alt is-weight-600">{{
                   row.username
@@ -355,7 +393,12 @@ const {
               <span class="dark-inverted is-weight-600">${{ row.amount }}</span>
             </template>
             <template v-else-if="column.key === 'status'">
-              <VTag v-if="row.status === 'paid'" color="green" rounded label="Paid" />
+              <VTag
+                v-if="row.status === 'paid'"
+                color="green"
+                rounded
+                label="Paid"
+              />
               <VTag
                 v-if="row.status === 'pending'"
                 color="orange"
@@ -364,16 +407,31 @@ const {
               />
             </template>
             <template v-else-if="column.key === 'tracking'">
-              <a v-if="row.tracking" tabindex="0" class="action-link is-pushed-mobile">
+              <a
+                v-if="row.tracking"
+                tabindex="0"
+                class="action-link is-pushed-mobile"
+              >
                 {{ row.tracking }}
               </a>
-              <span v-else class="light-text is-pushed-mobile">N/A</span>
+              <span
+                v-else
+                class="light-text is-pushed-mobile"
+              >N/A</span>
             </template>
             <template v-else-if="column.key === 'actions'">
-              <VButton class="is-pushed-mobile" dark-outlined>View Order</VButton>
+              <VButton
+                class="is-pushed-mobile"
+                dark-outlined
+              >
+                View Order
+              </VButton>
             </template>
 
-            <span v-else class="light-text">{{ value }}</span>
+            <span
+              v-else
+              class="light-text"
+            >{{ value }}</span>
           </template>
         </VFlexTable>
       </div>

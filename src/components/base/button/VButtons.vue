@@ -15,6 +15,6 @@ const props = withDefaults(defineProps<VButtonsProps>(), {
     class="buttons"
     :class="[props.addons && 'has-addons', props.align && `is-${props.align}`]"
   >
-    <slot></slot>
+    <slot />
   </div>
 </template>

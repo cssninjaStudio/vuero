@@ -3,7 +3,9 @@
     <div class="container">
       <!--Title-->
       <div class="section-title has-text-centered py-6">
-        <h2 class="title is-2">Awesome Features</h2>
+        <h2 class="title is-2">
+          Awesome Features
+        </h2>
         <h4>Vuero has been carefully handcrafted.</h4>
       </div>
 
@@ -14,11 +16,19 @@
           <div class="column is-3">
             <div class="card card-icon-box">
               <div class="card-content">
-                <VIconBox size="medium" color="blue">
-                  <i aria-hidden="true" class="lnil lnil-layout-alt-2"></i>
+                <VIconBox
+                  size="medium"
+                  color="blue"
+                >
+                  <i
+                    aria-hidden="true"
+                    class="lnil lnil-layout-alt-2"
+                  />
                 </VIconBox>
 
-                <h4 class="title is-5">Nice Vectors</h4>
+                <h4 class="title is-5">
+                  Nice Vectors
+                </h4>
                 <p class="subtitle is-6 light-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
@@ -29,11 +39,19 @@
           <div class="column is-3">
             <div class="card card-icon-box">
               <div class="card-content">
-                <VIconBox size="medium" color="warning">
-                  <i aria-hidden="true" class="lnil lnil-layers"></i>
+                <VIconBox
+                  size="medium"
+                  color="warning"
+                >
+                  <i
+                    aria-hidden="true"
+                    class="lnil lnil-layers"
+                  />
                 </VIconBox>
 
-                <h4 class="title is-5">Icon title</h4>
+                <h4 class="title is-5">
+                  Icon title
+                </h4>
                 <p class="subtitle is-6 light-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
@@ -44,11 +62,19 @@
           <div class="column is-3">
             <div class="card card-icon-box">
               <div class="card-content">
-                <VIconBox size="medium" color="success">
-                  <i aria-hidden="true" class="lnil lnil-grid-alt"></i>
+                <VIconBox
+                  size="medium"
+                  color="success"
+                >
+                  <i
+                    aria-hidden="true"
+                    class="lnil lnil-grid-alt"
+                  />
                 </VIconBox>
 
-                <h4 class="title is-5">Icon title</h4>
+                <h4 class="title is-5">
+                  Icon title
+                </h4>
                 <p class="subtitle is-6 light-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
@@ -59,11 +85,19 @@
           <div class="column is-3">
             <div class="card card-icon-box">
               <div class="card-content">
-                <VIconBox size="medium" color="purple">
-                  <i aria-hidden="true" class="lnil lnil-bulb"></i>
+                <VIconBox
+                  size="medium"
+                  color="purple"
+                >
+                  <i
+                    aria-hidden="true"
+                    class="lnil lnil-bulb"
+                  />
                 </VIconBox>
 
-                <h4 class="title is-5">Icon title</h4>
+                <h4 class="title is-5">
+                  Icon title
+                </h4>
                 <p class="subtitle is-6 light-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
@@ -74,11 +108,19 @@
           <div class="column is-3">
             <div class="card card-icon-box">
               <div class="card-content">
-                <VIconBox size="medium" color="green">
-                  <i aria-hidden="true" class="lnil lnil-cog"></i>
+                <VIconBox
+                  size="medium"
+                  color="green"
+                >
+                  <i
+                    aria-hidden="true"
+                    class="lnil lnil-cog"
+                  />
                 </VIconBox>
 
-                <h4 class="title is-5">Icon title</h4>
+                <h4 class="title is-5">
+                  Icon title
+                </h4>
                 <p class="subtitle is-6 light-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
@@ -89,11 +131,19 @@
           <div class="column is-3">
             <div class="card card-icon-box">
               <div class="card-content">
-                <VIconBox size="medium" color="yellow">
-                  <i aria-hidden="true" class="lnil lnil-plug"></i>
+                <VIconBox
+                  size="medium"
+                  color="yellow"
+                >
+                  <i
+                    aria-hidden="true"
+                    class="lnil lnil-plug"
+                  />
                 </VIconBox>
 
-                <h4 class="title is-5">Icon title</h4>
+                <h4 class="title is-5">
+                  Icon title
+                </h4>
                 <p class="subtitle is-6 light-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
@@ -104,11 +154,19 @@
           <div class="column is-3">
             <div class="card card-icon-box">
               <div class="card-content">
-                <VIconBox size="medium" color="orange">
-                  <i aria-hidden="true" class="lnil lnil-folder-alt"></i>
+                <VIconBox
+                  size="medium"
+                  color="orange"
+                >
+                  <i
+                    aria-hidden="true"
+                    class="lnil lnil-folder-alt"
+                  />
                 </VIconBox>
 
-                <h4 class="title is-5">Icon title</h4>
+                <h4 class="title is-5">
+                  Icon title
+                </h4>
                 <p class="subtitle is-6 light-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
@@ -119,11 +177,19 @@
           <div class="column is-3">
             <div class="card card-icon-box">
               <div class="card-content">
-                <VIconBox size="medium" color="info">
-                  <i aria-hidden="true" class="lnil lnil-timer"></i>
+                <VIconBox
+                  size="medium"
+                  color="info"
+                >
+                  <i
+                    aria-hidden="true"
+                    class="lnil lnil-timer"
+                  />
                 </VIconBox>
 
-                <h4 class="title is-5">Icon title</h4>
+                <h4 class="title is-5">
+                  Icon title
+                </h4>
                 <p class="subtitle is-6 light-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
@@ -134,11 +200,19 @@
           <div class="column is-3">
             <div class="card card-icon-box">
               <div class="card-content">
-                <VIconBox size="medium" color="blue">
-                  <i aria-hidden="true" class="lnil lnil-pie-chart-alt"></i>
+                <VIconBox
+                  size="medium"
+                  color="blue"
+                >
+                  <i
+                    aria-hidden="true"
+                    class="lnil lnil-pie-chart-alt"
+                  />
                 </VIconBox>
 
-                <h4 class="title is-5">Icon title</h4>
+                <h4 class="title is-5">
+                  Icon title
+                </h4>
                 <p class="subtitle is-6 light-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
@@ -149,11 +223,19 @@
           <div class="column is-3">
             <div class="card card-icon-box">
               <div class="card-content">
-                <VIconBox size="medium" color="purple">
-                  <i aria-hidden="true" class="lnil lnil-licencse"></i>
+                <VIconBox
+                  size="medium"
+                  color="purple"
+                >
+                  <i
+                    aria-hidden="true"
+                    class="lnil lnil-licencse"
+                  />
                 </VIconBox>
 
-                <h4 class="title is-5">Icon title</h4>
+                <h4 class="title is-5">
+                  Icon title
+                </h4>
                 <p class="subtitle is-6 light-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
@@ -164,11 +246,19 @@
           <div class="column is-3">
             <div class="card card-icon-box">
               <div class="card-content">
-                <VIconBox size="medium" color="green">
-                  <i aria-hidden="true" class="lnil lnil-grow"></i>
+                <VIconBox
+                  size="medium"
+                  color="green"
+                >
+                  <i
+                    aria-hidden="true"
+                    class="lnil lnil-grow"
+                  />
                 </VIconBox>
 
-                <h4 class="title is-5">Icon title</h4>
+                <h4 class="title is-5">
+                  Icon title
+                </h4>
                 <p class="subtitle is-6 light-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
@@ -179,11 +269,19 @@
           <div class="column is-3">
             <div class="card card-icon-box">
               <div class="card-content">
-                <VIconBox size="medium" color="yellow">
-                  <i aria-hidden="true" class="lnil lnil-bank"></i>
+                <VIconBox
+                  size="medium"
+                  color="yellow"
+                >
+                  <i
+                    aria-hidden="true"
+                    class="lnil lnil-bank"
+                  />
                 </VIconBox>
 
-                <h4 class="title is-5">Icon title</h4>
+                <h4 class="title is-5">
+                  Icon title
+                </h4>
                 <p class="subtitle is-6 light-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>

@@ -40,9 +40,18 @@ const sidebar = useSidebar()
               class="icon-box-toggle"
             >
               <span class="rotate">
-                <i aria-hidden="true" class="icon-line-top"></i>
-                <i aria-hidden="true" class="icon-line-center"></i>
-                <i aria-hidden="true" class="icon-line-bottom"></i>
+                <i
+                  aria-hidden="true"
+                  class="icon-line-top"
+                />
+                <i
+                  aria-hidden="true"
+                  class="icon-line-center"
+                />
+                <i
+                  aria-hidden="true"
+                  class="icon-line-bottom"
+                />
               </span>
             </span>
           </span>
@@ -56,7 +65,11 @@ const sidebar = useSidebar()
           @keydown.space.prevent="emit('addConversation')"
           @click="() => emit('addConversation')"
         >
-          <i aria-hidden="true" class="iconify" data-icon="feather:plus"></i>
+          <i
+            aria-hidden="true"
+            class="iconify"
+            data-icon="feather:plus"
+          />
         </a>
       </div>
       <ul class="collapsed-conversations">
@@ -75,7 +88,7 @@ const sidebar = useSidebar()
               :src="conversation.avatar"
               alt=""
               @error.once="onceImageErrored(150)"
-            />
+            >
           </div>
         </li>
       </ul>

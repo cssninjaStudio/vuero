@@ -21,10 +21,18 @@ const props = withDefaults(defineProps<VSwitchSegmentProps>(), {
 
 <template>
   <div class="switch-segment">
-    <VLabel v-if="props.labelFalse" raw class="is-label">
+    <VLabel
+      v-if="props.labelFalse"
+      raw
+      class="is-label"
+    >
       {{ props.labelFalse }}
     </VLabel>
-    <VLabel raw class="form-switch" :class="[props.color && `is-${props.color}`]">
+    <VLabel
+      raw
+      class="form-switch"
+      :class="[props.color && `is-${props.color}`]"
+    >
       <VInput
         :checked="modelValue"
         raw
@@ -33,9 +41,13 @@ const props = withDefaults(defineProps<VSwitchSegmentProps>(), {
         class="is-switch"
         @change="() => (modelValue = !modelValue)"
       />
-      <i aria-hidden="true"></i>
+      <i aria-hidden="true" />
     </VLabel>
-    <VLabel v-if="props.labelTrue" raw class="is-label">
+    <VLabel
+      v-if="props.labelTrue"
+      raw
+      class="is-label"
+    >
       {{ props.labelTrue }}
     </VLabel>
   </div>

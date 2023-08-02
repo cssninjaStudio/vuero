@@ -1,6 +1,6 @@
 <template>
   <div class="chat-body-wrap">
-    <slot></slot>
+    <slot />
   </div>
 </template>
 

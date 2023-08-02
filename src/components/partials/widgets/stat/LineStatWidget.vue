@@ -19,9 +19,14 @@ const props = withDefaults(
 </script>
 
 <template>
-  <div class="stat-widget line-stats-widget" :class="[props.straight && 'is-straight']">
+  <div
+    class="stat-widget line-stats-widget"
+    :class="[props.straight && 'is-straight']"
+  >
     <div class="widget-head">
-      <h3 class="dark-inverted">{{ props.title }}</h3>
+      <h3 class="dark-inverted">
+        {{ props.title }}
+      </h3>
     </div>
     <div class="line-stats">
       <div class="line-stat">
@@ -33,7 +38,7 @@ const props = withDefaults(
         <span class="dark-inverted">{{ props.previousValue }}</span>
       </div>
     </div>
-    <slot></slot>
+    <slot />
   </div>
 </template>
 

@@ -25,13 +25,13 @@ const props = defineProps<{
             @keydown.space.prevent="emit('toggle')"
             @click="emit('toggle')"
           >
-            <span></span>
-            <span></span>
-            <span></span>
+            <span />
+            <span />
+            <span />
           </div>
         </div>
 
-        <slot name="brand"></slot>
+        <slot name="brand" />
       </div>
     </div>
   </nav>
@@ -599,7 +599,7 @@ const props = defineProps<{
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media only screen and (device-width >= 768px) and (device-width <= 1024px) and (orientation: portrait) {
   .mobile-navbar {
     display: flex;
   }

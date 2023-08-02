@@ -30,7 +30,10 @@ const onSubmit = () => {
     @submit.prevent="onSubmit"
   >
     <div class="form-outer">
-      <div :class="[isStuck && 'is-stuck']" class="form-header stuck-header">
+      <div
+        :class="[isStuck && 'is-stuck']"
+        class="form-header stuck-header"
+      >
         <div class="form-header-inner">
           <div class="left">
             <h3>Schedule a meeting</h3>
@@ -45,7 +48,13 @@ const onSubmit = () => {
               >
                 Cancel
               </VButton>
-              <VButton type="submit" color="primary" raised> Schedule </VButton>
+              <VButton
+                type="submit"
+                color="primary"
+                raised
+              >
+                Schedule
+              </VButton>
             </div>
           </div>
         </div>
@@ -56,7 +65,10 @@ const onSubmit = () => {
             <div class="column is-12">
               <VField>
                 <VControl icon="feather:slack">
-                  <VInput type="text" placeholder="What is this meeting about?" />
+                  <VInput
+                    type="text"
+                    placeholder="What is this meeting about?"
+                  />
                 </VControl>
               </VField>
             </div>
@@ -82,13 +94,15 @@ const onSubmit = () => {
                             :value="inputValue.start"
                             class="input form-datepicker"
                             v-on="inputEvents.start"
-                          />
+                          >
                         </VControl>
                       </VField>
                     </div>
                     <div class="column is-6">
                       <VField>
-                        <VLabel class="is-vhidden">Meeting end date</VLabel>
+                        <VLabel class="is-vhidden">
+                          Meeting end date
+                        </VLabel>
 
                         <VControl icon="feather:calendar">
                           <VInput
@@ -120,7 +134,7 @@ const onSubmit = () => {
                         class="input form-timepicker"
                         :value="inputValue"
                         v-on="inputEvents"
-                      />
+                      >
                     </VControl>
                   </VField>
                 </template>
@@ -135,14 +149,16 @@ const onSubmit = () => {
               >
                 <template #default="{ inputValue, inputEvents }">
                   <VField>
-                    <VLabel class="is-vhidden">Meeting end time</VLabel>
+                    <VLabel class="is-vhidden">
+                      Meeting end time
+                    </VLabel>
                     <VControl>
                       <input
                         type="text"
                         class="input form-timepicker"
                         :value="inputValue"
                         v-on="inputEvents"
-                      />
+                      >
                     </VControl>
                   </VField>
                 </template>
@@ -176,16 +192,26 @@ const onSubmit = () => {
               <h3>Meeting details</h3>
             </div>
             <div class="right">
-              <VButton dark-outlined> Add People </VButton>
+              <VButton dark-outlined>
+                Add People
+              </VButton>
             </div>
           </div>
 
           <div class="form-section-inner is-horizontal">
-            <VField v-slot="{ id }" horizontal label="Participants">
+            <VField
+              v-slot="{ id }"
+              horizontal
+              label="Participants"
+            >
               <VControl>
                 <div class="participants">
                   <div>
-                    <Tippy class="has-help-cursor" interactive placement="top-start">
+                    <Tippy
+                      class="has-help-cursor"
+                      interactive
+                      placement="top-start"
+                    >
                       <VAvatar picture="/images/avatars/svg/vuero-1.svg" />
                       <template #content>
                         <UserPopoverContent :user="popovers.user8" />
@@ -194,8 +220,15 @@ const onSubmit = () => {
                   </div>
 
                   <div>
-                    <Tippy class="has-help-cursor" interactive placement="top-start">
-                      <VAvatar color="warning" initials="BT" />
+                    <Tippy
+                      class="has-help-cursor"
+                      interactive
+                      placement="top-start"
+                    >
+                      <VAvatar
+                        color="warning"
+                        initials="BT"
+                      />
                       <template #content>
                         <UserPopoverContent :user="popovers.user122" />
                       </template>
@@ -203,7 +236,11 @@ const onSubmit = () => {
                   </div>
 
                   <div>
-                    <Tippy class="has-help-cursor" interactive placement="top-start">
+                    <Tippy
+                      class="has-help-cursor"
+                      interactive
+                      placement="top-start"
+                    >
                       <VAvatar picture="/demo/avatars/18.jpg" />
                       <template #content>
                         <UserPopoverContent :user="popovers.user18" />
@@ -212,8 +249,15 @@ const onSubmit = () => {
                   </div>
 
                   <div>
-                    <Tippy class="has-help-cursor" interactive placement="top-start">
-                      <VAvatar color="info" initials="JD" />
+                    <Tippy
+                      class="has-help-cursor"
+                      interactive
+                      placement="top-start"
+                    >
+                      <VAvatar
+                        color="info"
+                        initials="JD"
+                      />
                       <template #content>
                         <UserPopoverContent :user="popovers.user123" />
                       </template>
@@ -221,7 +265,11 @@ const onSubmit = () => {
                   </div>
 
                   <div>
-                    <Tippy class="has-help-cursor" interactive placement="top-start">
+                    <Tippy
+                      class="has-help-cursor"
+                      interactive
+                      placement="top-start"
+                    >
                       <VAvatar picture="/demo/avatars/7.jpg" />
                       <template #content>
                         <UserPopoverContent :user="popovers.user7" />
@@ -229,20 +277,43 @@ const onSubmit = () => {
                     </Tippy>
                   </div>
 
-                  <button :id="id" type="button" class="add-participant">
-                    <i aria-hidden="true" class="iconify" data-icon="feather:plus"></i>
+                  <button
+                    :id="id"
+                    type="button"
+                    class="add-participant"
+                  >
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:plus"
+                    />
                   </button>
                 </div>
               </VControl>
             </VField>
 
-            <VField horizontal label="Where">
-              <VControl icon="feather:map-pin" fullwidth>
-                <VInput type="text" placeholder="e.g. Conference room" />
+            <VField
+              horizontal
+              label="Where"
+            >
+              <VControl
+                icon="feather:map-pin"
+                fullwidth
+              >
+                <VInput
+                  type="text"
+                  placeholder="e.g. Conference room"
+                />
               </VControl>
             </VField>
-            <VField horizontal label="Meeting URL">
-              <VControl icon="feather:map-pin" fullwidth>
+            <VField
+              horizontal
+              label="Meeting URL"
+            >
+              <VControl
+                icon="feather:map-pin"
+                fullwidth
+              >
                 <VInput
                   type="url"
                   placeholder="https://zoom.com/m/156546"
@@ -250,7 +321,11 @@ const onSubmit = () => {
                 />
               </VControl>
             </VField>
-            <VField v-slot="{ id }" horizontal label="Clendar">
+            <VField
+              v-slot="{ id }"
+              horizontal
+              label="Clendar"
+            >
               <VControl fullwidth>
                 <Multiselect
                   v-model="calendarTarget"
@@ -261,7 +336,10 @@ const onSubmit = () => {
               </VControl>
             </VField>
 
-            <VField horizontal label="Description">
+            <VField
+              horizontal
+              label="Description"
+            >
               <VControl fullwidth>
                 <VTextarea
                   class="textarea"
@@ -279,7 +357,10 @@ const onSubmit = () => {
 
         <div class="form-section is-grey">
           <div class="form-section-inner is-horizontal">
-            <VField horizontal label="Color Code">
+            <VField
+              horizontal
+              label="Color Code"
+            >
               <VControl fullwidth>
                 <div class="color-codes">
                   <div
@@ -289,7 +370,7 @@ const onSubmit = () => {
                     class="color-code is-primary"
                     @click="selectedColor = 'primary'"
                     @keydown.space.prevent="selectedColor = 'primary'"
-                  ></div>
+                  />
                   <div
                     :class="[selectedColor === 'secondary' && 'is-active']"
                     tabindex="0"
@@ -297,7 +378,7 @@ const onSubmit = () => {
                     class="color-code is-secondary"
                     @click="selectedColor = 'secondary'"
                     @keydown.space.prevent="selectedColor = 'secondary'"
-                  ></div>
+                  />
                   <div
                     :class="[selectedColor === 'info' && 'is-active']"
                     tabindex="0"
@@ -305,7 +386,7 @@ const onSubmit = () => {
                     class="color-code is-info"
                     @click="selectedColor = 'info'"
                     @keydown.space.prevent="selectedColor = 'info'"
-                  ></div>
+                  />
                   <div
                     :class="[selectedColor === 'success' && 'is-active']"
                     tabindex="0"
@@ -313,7 +394,7 @@ const onSubmit = () => {
                     class="color-code is-success"
                     @click="selectedColor = 'success'"
                     @keydown.space.prevent="selectedColor = 'success'"
-                  ></div>
+                  />
                   <div
                     :class="[selectedColor === 'purple' && 'is-active']"
                     tabindex="0"
@@ -321,12 +402,15 @@ const onSubmit = () => {
                     class="color-code is-purple"
                     @click="selectedColor = 'purple'"
                     @keydown.space.prevent="selectedColor = 'purple'"
-                  ></div>
+                  />
                 </div>
               </VControl>
             </VField>
 
-            <VField horizontal label="Notifications">
+            <VField
+              horizontal
+              label="Notifications"
+            >
               <VField v-slot="{ id }">
                 <VControl>
                   <Multiselect
@@ -338,7 +422,10 @@ const onSubmit = () => {
                   <a class="add-link">Add Notification</a>
                 </VControl>
               </VField>
-              <VField v-slot="{ id }" subcontrol>
+              <VField
+                v-slot="{ id }"
+                subcontrol
+              >
                 <VControl class="is-image-select">
                   <Multiselect
                     v-model="notificationTarget"
@@ -381,14 +468,22 @@ const onSubmit = () => {
                   >
                     <template #singlelabel="{ value }">
                       <div class="multiselect-single-label">
-                        <img class="select-label-icon" :src="value.icon" alt="" />
+                        <img
+                          class="select-label-icon"
+                          :src="value.icon"
+                          alt=""
+                        >
                         <span class="select-label-text">
                           {{ value.name }}
                         </span>
                       </div>
                     </template>
                     <template #option="{ option }">
-                      <img class="select-option-icon" :src="option.icon" alt="" />
+                      <img
+                        class="select-option-icon"
+                        :src="option.icon"
+                        alt=""
+                      >
                       <span class="select-label-text">
                         {{ option.name }}
                       </span>
@@ -501,8 +596,12 @@ const onSubmit = () => {
               background: none;
               margin-inline-start: 4px;
               cursor: pointer;
-              transition: color 0.3s, background-color 0.3s, border-color 0.3s,
-                height 0.3s, width 0.3s;
+              transition:
+                color 0.3s,
+                background-color 0.3s,
+                border-color 0.3s,
+                height 0.3s,
+                width 0.3s;
 
               &:hover,
               &:focus {
@@ -538,8 +637,12 @@ const onSubmit = () => {
               border: 3px solid var(--light-text);
               cursor: pointer;
               opacity: 0.6;
-              transition: color 0.3s, background-color 0.3s, border-color 0.3s,
-                height 0.3s, width 0.3s;
+              transition:
+                color 0.3s,
+                background-color 0.3s,
+                border-color 0.3s,
+                height 0.3s,
+                width 0.3s;
 
               &:hover,
               &:focus {

@@ -8,7 +8,9 @@ const emit = defineEmits(['close'])
     <div class="subpanel-header">
       <ProjectsQuickDropdown />
 
-      <h3 class="no-mb">Dashboards</h3>
+      <h3 class="no-mb">
+        Dashboards
+      </h3>
       <div
         class="panel-close"
         tabindex="0"
@@ -16,12 +18,22 @@ const emit = defineEmits(['close'])
         @keydown.space.prevent="emit('close')"
         @click="emit('close')"
       >
-        <i aria-hidden="true" class="iconify" data-icon="feather:x"></i>
+        <i
+          aria-hidden="true"
+          class="iconify"
+          data-icon="feather:x"
+        />
       </div>
     </div>
-    <div class="inner" data-simplebar>
+    <div
+      class="inner"
+      data-simplebar
+    >
       <ul>
-        <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="personal">
+        <VCollapseLinks
+          v-model:open="openSubsidebarLinks"
+          collapse-id="personal"
+        >
           <template #header>
             Personal
             <i
@@ -36,21 +48,42 @@ const emit = defineEmits(['close'])
             />
           </template>
 
-          <RouterLink to="/sidebar/dashboards" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-analytics-alt-1"></i>
+          <RouterLink
+            to="/sidebar/dashboards"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-analytics-alt-1"
+            />
             <span>Personal V1</span>
           </RouterLink>
-          <RouterLink to="/sidebar/dashboards/personal-2" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-pie-chart"></i>
+          <RouterLink
+            to="/sidebar/dashboards/personal-2"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-pie-chart"
+            />
             <span>Personal V2</span>
           </RouterLink>
-          <RouterLink to="/sidebar/dashboards/personal-3" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-stats-up"></i>
+          <RouterLink
+            to="/sidebar/dashboards/personal-3"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-stats-up"
+            />
             <span>Personal V3</span>
           </RouterLink>
         </VCollapseLinks>
 
-        <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="finance">
+        <VCollapseLinks
+          v-model:open="openSubsidebarLinks"
+          collapse-id="finance"
+        >
           <template #header>
             Finance
             <i
@@ -65,21 +98,42 @@ const emit = defineEmits(['close'])
             />
           </template>
 
-          <RouterLink to="/sidebar/dashboards/analytics" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-analytics-alt-1"></i>
+          <RouterLink
+            to="/sidebar/dashboards/analytics"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-analytics-alt-1"
+            />
             <span>Analytics Dashboard</span>
           </RouterLink>
-          <RouterLink to="/sidebar/dashboards/stocks" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-stats-up"></i>
+          <RouterLink
+            to="/sidebar/dashboards/stocks"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-stats-up"
+            />
             <span>Stocks Dashboard</span>
           </RouterLink>
-          <RouterLink to="/sidebar/dashboards/sales" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-credit-card"></i>
+          <RouterLink
+            to="/sidebar/dashboards/sales"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-credit-card"
+            />
             <span>Sales Dashboard</span>
           </RouterLink>
         </VCollapseLinks>
 
-        <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="banking">
+        <VCollapseLinks
+          v-model:open="openSubsidebarLinks"
+          collapse-id="banking"
+        >
           <template #header>
             Banking
             <i
@@ -94,21 +148,42 @@ const emit = defineEmits(['close'])
             />
           </template>
 
-          <RouterLink to="/sidebar/dashboards/banking-1" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-bank"></i>
+          <RouterLink
+            to="/sidebar/dashboards/banking-1"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-bank"
+            />
             <span>Banking V1</span>
           </RouterLink>
-          <RouterLink to="/sidebar/dashboards/banking-2" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-bank"></i>
+          <RouterLink
+            to="/sidebar/dashboards/banking-2"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-bank"
+            />
             <span>Banking V2</span>
           </RouterLink>
-          <RouterLink to="/sidebar/dashboards/banking-3" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-bank"></i>
+          <RouterLink
+            to="/sidebar/dashboards/banking-3"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-bank"
+            />
             <span>Banking V3</span>
           </RouterLink>
         </VCollapseLinks>
 
-        <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="business">
+        <VCollapseLinks
+          v-model:open="openSubsidebarLinks"
+          collapse-id="business"
+        >
           <template #header>
             Business
             <i
@@ -123,29 +198,62 @@ const emit = defineEmits(['close'])
             />
           </template>
 
-          <RouterLink to="/sidebar/dashboards/flights" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-plane-alt"></i>
+          <RouterLink
+            to="/sidebar/dashboards/flights"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-plane-alt"
+            />
             <span>Flights Booking</span>
           </RouterLink>
-          <RouterLink to="/sidebar/dashboards/company" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-apartment"></i>
+          <RouterLink
+            to="/sidebar/dashboards/company"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-apartment"
+            />
             <span>Company Board</span>
           </RouterLink>
-          <RouterLink to="/sidebar/dashboards/human-ressources" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-users-alt"></i>
+          <RouterLink
+            to="/sidebar/dashboards/human-ressources"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-users-alt"
+            />
             <span>HR Board</span>
           </RouterLink>
-          <RouterLink to="/sidebar/dashboards/course" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-graduate"></i>
+          <RouterLink
+            to="/sidebar/dashboards/course"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-graduate"
+            />
             <span>Course Dashboard</span>
           </RouterLink>
-          <RouterLink to="/sidebar/dashboards/jobs" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-briefcase"></i>
+          <RouterLink
+            to="/sidebar/dashboards/jobs"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-briefcase"
+            />
             <span>Jobs Dashboard</span>
           </RouterLink>
         </VCollapseLinks>
 
-        <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="lifestyle">
+        <VCollapseLinks
+          v-model:open="openSubsidebarLinks"
+          collapse-id="lifestyle"
+        >
           <template #header>
             Lifestyle
             <i
@@ -160,33 +268,72 @@ const emit = defineEmits(['close'])
             />
           </template>
 
-          <RouterLink to="/sidebar/dashboards/influencer" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-cardiology"></i>
+          <RouterLink
+            to="/sidebar/dashboards/influencer"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-cardiology"
+            />
             <span>Influencer</span>
           </RouterLink>
-          <RouterLink to="/sidebar/dashboards/hobbies" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-cloud-sun"></i>
+          <RouterLink
+            to="/sidebar/dashboards/hobbies"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-cloud-sun"
+            />
             <span>Hobbies</span>
           </RouterLink>
-          <RouterLink to="/sidebar/dashboards/health" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-hospital-alt-3"></i>
+          <RouterLink
+            to="/sidebar/dashboards/health"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-hospital-alt-3"
+            />
             <span>Health</span>
           </RouterLink>
-          <RouterLink to="/sidebar/dashboards/writer" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-books"></i>
+          <RouterLink
+            to="/sidebar/dashboards/writer"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-books"
+            />
             <span>Writer</span>
           </RouterLink>
-          <RouterLink to="/sidebar/dashboards/video" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-video-alt-1"></i>
+          <RouterLink
+            to="/sidebar/dashboards/video"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-video-alt-1"
+            />
             <span>Video</span>
           </RouterLink>
-          <RouterLink to="/sidebar/dashboards/soccer" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-tshirt"></i>
+          <RouterLink
+            to="/sidebar/dashboards/soccer"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-tshirt"
+            />
             <span>Soccer Dashboard</span>
           </RouterLink>
         </VCollapseLinks>
 
-        <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="ecommerce">
+        <VCollapseLinks
+          v-model:open="openSubsidebarLinks"
+          collapse-id="ecommerce"
+        >
           <template #header>
             Ecommerce
             <i
@@ -201,13 +348,22 @@ const emit = defineEmits(['close'])
             />
           </template>
 
-          <RouterLink to="/sidebar/dashboards/ecommerce-1" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-cart"></i>
+          <RouterLink
+            to="/sidebar/dashboards/ecommerce-1"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-cart"
+            />
             <span>Ecommerce V1</span>
           </RouterLink>
         </VCollapseLinks>
 
-        <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="apps">
+        <VCollapseLinks
+          v-model:open="openSubsidebarLinks"
+          collapse-id="apps"
+        >
           <template #header>
             Apps
             <i
@@ -222,43 +378,94 @@ const emit = defineEmits(['close'])
             />
           </template>
 
-          <RouterLink to="/sidebar/dashboards/food-delivery" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-pizza"></i>
+          <RouterLink
+            to="/sidebar/dashboards/food-delivery"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-pizza"
+            />
             <span>Food Delivery</span>
           </RouterLink>
-          <RouterLink to="/sidebar/maps-1" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-map"></i>
+          <RouterLink
+            to="/sidebar/maps-1"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-map"
+            />
             <span>Maps V1</span>
-            <VTag label="v1.2" color="primary" outlined curved />
+            <VTag
+              label="v1.2"
+              color="primary"
+              outlined
+              curved
+            />
           </RouterLink>
-          <RouterLink to="/sidebar/maps-2" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-map"></i>
+          <RouterLink
+            to="/sidebar/maps-2"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-map"
+            />
             <span>Mapp V2</span>
-            <VTag label="v1.2" color="primary" outlined curved />
+            <VTag
+              label="v1.2"
+              color="primary"
+              outlined
+              curved
+            />
           </RouterLink>
-          <RouterLink to="/inbox" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-envelope"></i>
+          <RouterLink
+            to="/inbox"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-envelope"
+            />
             <span>Inbox</span>
           </RouterLink>
-          <RouterLink to="/messaging-v1" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-bubble"></i>
+          <RouterLink
+            to="/messaging-v1"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-bubble"
+            />
             <span>Messaging V1</span>
           </RouterLink>
-          <RouterLink to="/messaging-v2" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-bubble"></i>
+          <RouterLink
+            to="/messaging-v2"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-bubble"
+            />
             <span>Messaging V2</span>
           </RouterLink>
         </VCollapseLinks>
 
-        <li class="divider"></li>
+        <li class="divider" />
 
         <li>
-          <RouterLink to="/wizard-v1">Wizard</RouterLink>
+          <RouterLink to="/wizard-v1">
+            Wizard
+          </RouterLink>
         </li>
 
-        <li class="divider"></li>
+        <li class="divider" />
 
-        <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="charts">
+        <VCollapseLinks
+          v-model:open="openSubsidebarLinks"
+          collapse-id="charts"
+        >
           <template #header>
             Charts
             <i
@@ -273,17 +480,32 @@ const emit = defineEmits(['close'])
             />
           </template>
 
-          <RouterLink to="/sidebar/dashboards/charts-apex" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-pie-chart-alt"></i>
+          <RouterLink
+            to="/sidebar/dashboards/charts-apex"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-pie-chart-alt"
+            />
             <span>Apex Charts</span>
           </RouterLink>
-          <RouterLink class="is-submenu" to="/sidebar/dashboards/charts-billboardsjs">
-            <i aria-hidden="true" class="lnil lnil-bar-chart"></i>
+          <RouterLink
+            class="is-submenu"
+            to="/sidebar/dashboards/charts-billboardsjs"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-bar-chart"
+            />
             <span>Billboard JS</span>
           </RouterLink>
         </VCollapseLinks>
 
-        <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="widgets">
+        <VCollapseLinks
+          v-model:open="openSubsidebarLinks"
+          collapse-id="widgets"
+        >
           <template #header>
             Widgets
             <i
@@ -298,25 +520,52 @@ const emit = defineEmits(['close'])
             />
           </template>
 
-          <RouterLink to="/sidebar/dashboards/widgets-sample-ui" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
+          <RouterLink
+            to="/sidebar/dashboards/widgets-sample-ui"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-layout-alt-1"
+            />
             <span>UI Widgets</span>
           </RouterLink>
-          <RouterLink class="is-submenu" to="/sidebar/dashboards/widgets-sample-creative">
-            <i aria-hidden="true" class="lnil lnil-layout-alt-2"></i>
+          <RouterLink
+            class="is-submenu"
+            to="/sidebar/dashboards/widgets-sample-creative"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-layout-alt-2"
+            />
             <span>Creative Widgets</span>
           </RouterLink>
-          <RouterLink to="/sidebar/dashboards/widgets-sample-list" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
+          <RouterLink
+            to="/sidebar/dashboards/widgets-sample-list"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-layout-alt-1"
+            />
             <span>List Widgets</span>
           </RouterLink>
-          <RouterLink to="/sidebar/dashboards/widgets-sample-stats" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-layout-alt-2"></i>
+          <RouterLink
+            to="/sidebar/dashboards/widgets-sample-stats"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-layout-alt-2"
+            />
             <span>Stat Widgets</span>
           </RouterLink>
         </VCollapseLinks>
 
-        <VCollapseLinks v-model:open="openSubsidebarLinks" collapse-id="starters">
+        <VCollapseLinks
+          v-model:open="openSubsidebarLinks"
+          collapse-id="starters"
+        >
           <template #header>
             Starters
             <i
@@ -331,86 +580,220 @@ const emit = defineEmits(['close'])
             />
           </template>
 
-          <RouterLink to="/starters/sidebar-blank-page-1" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-layout"></i>
+          <RouterLink
+            to="/starters/sidebar-blank-page-1"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-layout"
+            />
             <span>Regular Sidebar</span>
           </RouterLink>
-          <RouterLink to="/starters/sidebar-blank-page-2" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-layout"></i>
+          <RouterLink
+            to="/starters/sidebar-blank-page-2"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-layout"
+            />
             <span>Curved Sidebar</span>
           </RouterLink>
-          <RouterLink to="/starters/sidebar-blank-page-3" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-layout"></i>
+          <RouterLink
+            to="/starters/sidebar-blank-page-3"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-layout"
+            />
             <span>Colored Sidebar</span>
           </RouterLink>
-          <RouterLink to="/starters/sidebar-blank-page-4" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-layout"></i>
+          <RouterLink
+            to="/starters/sidebar-blank-page-4"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-layout"
+            />
             <span>Curved Colored Sidebar</span>
           </RouterLink>
-          <RouterLink to="/starters/sidebar-blank-page-5" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-layout"></i>
+          <RouterLink
+            to="/starters/sidebar-blank-page-5"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-layout"
+            />
             <span>Labels Sidebar</span>
           </RouterLink>
-          <RouterLink to="/starters/sidebar-blank-page-6" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-layout"></i>
+          <RouterLink
+            to="/starters/sidebar-blank-page-6"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-layout"
+            />
             <span>Labels Hover Sidebar</span>
           </RouterLink>
-          <RouterLink to="/starters/sidebar-blank-page-7" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-layout"></i>
+          <RouterLink
+            to="/starters/sidebar-blank-page-7"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-layout"
+            />
             <span>Float Sidebar</span>
           </RouterLink>
-          <hr class="navbar-divider" />
-          <RouterLink to="/starters/sideblock-blank-page-1" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-layout"></i>
+          <hr class="navbar-divider">
+          <RouterLink
+            to="/starters/sideblock-blank-page-1"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-layout"
+            />
             <span>Regular Sideblock</span>
-            <VTag label="v2.2" color="primary" outlined curved />
+            <VTag
+              label="v2.2"
+              color="primary"
+              outlined
+              curved
+            />
           </RouterLink>
-          <RouterLink to="/starters/sideblock-blank-page-2" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-layout"></i>
+          <RouterLink
+            to="/starters/sideblock-blank-page-2"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-layout"
+            />
             <span>Curved Sideblock</span>
-            <VTag label="v2.2" color="primary" outlined curved />
+            <VTag
+              label="v2.2"
+              color="primary"
+              outlined
+              curved
+            />
           </RouterLink>
-          <RouterLink to="/starters/sideblock-blank-page-3" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-layout"></i>
+          <RouterLink
+            to="/starters/sideblock-blank-page-3"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-layout"
+            />
             <span>Colored Sideblock</span>
-            <VTag label="v2.2" color="primary" outlined curved />
+            <VTag
+              label="v2.2"
+              color="primary"
+              outlined
+              curved
+            />
           </RouterLink>
-          <RouterLink to="/starters/sideblock-blank-page-4" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-layout"></i>
+          <RouterLink
+            to="/starters/sideblock-blank-page-4"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-layout"
+            />
             <span>Curved Colored</span>
-            <VTag label="v2.2" color="primary" outlined curved />
+            <VTag
+              label="v2.2"
+              color="primary"
+              outlined
+              curved
+            />
           </RouterLink>
-          <hr class="navbar-divider" />
-          <RouterLink to="/starters/navbar-blank-page-1" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
+          <hr class="navbar-divider">
+          <RouterLink
+            to="/starters/navbar-blank-page-1"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-layout-alt-1"
+            />
             <span>Regular Navbar</span>
           </RouterLink>
-          <RouterLink to="/starters/navbar-blank-page-2" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
+          <RouterLink
+            to="/starters/navbar-blank-page-2"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-layout-alt-1"
+            />
             <span>Fading Navbar</span>
           </RouterLink>
-          <RouterLink to="/starters/navbar-blank-page-3" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
+          <RouterLink
+            to="/starters/navbar-blank-page-3"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-layout-alt-1"
+            />
             <span>Colored Navbar</span>
           </RouterLink>
-          <RouterLink to="/starters/navbar-blank-page-4" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
+          <RouterLink
+            to="/starters/navbar-blank-page-4"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-layout-alt-1"
+            />
             <span>Dropdown Navbar</span>
           </RouterLink>
-          <RouterLink to="/starters/navbar-blank-page-5" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
+          <RouterLink
+            to="/starters/navbar-blank-page-5"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-layout-alt-1"
+            />
             <span>Colored Dropdown</span>
           </RouterLink>
-          <RouterLink to="/starters/navbar-blank-page-6" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
+          <RouterLink
+            to="/starters/navbar-blank-page-6"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-layout-alt-1"
+            />
             <span>Clean Navbar</span>
           </RouterLink>
-          <RouterLink to="/starters/navbar-blank-page-7" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
+          <RouterLink
+            to="/starters/navbar-blank-page-7"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-layout-alt-1"
+            />
             <span>Clean Center Navbar</span>
           </RouterLink>
-          <RouterLink to="/starters/navbar-blank-page-8" class="is-submenu">
-            <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
+          <RouterLink
+            to="/starters/navbar-blank-page-8"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="lnil lnil-layout-alt-1"
+            />
             <span>Clean Fade Navbar</span>
           </RouterLink>
         </VCollapseLinks>

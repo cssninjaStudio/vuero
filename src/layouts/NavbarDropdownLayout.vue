@@ -56,7 +56,7 @@ watch(
 
 <template>
   <div class="navbar-layout">
-    <div class="app-overlay"></div>
+    <div class="app-overlay" />
 
     <!-- Mobile navigation -->
     <MobileNavbar
@@ -64,8 +64,14 @@ watch(
       @toggle="isMobileSidebarOpen = !isMobileSidebarOpen"
     >
       <template #brand>
-        <RouterLink to="/" class="navbar-item is-brand">
-          <AnimatedLogo width="38px" height="38px" />
+        <RouterLink
+          to="/"
+          class="navbar-item is-brand"
+        >
+          <AnimatedLogo
+            width="38px"
+            height="38px"
+          />
         </RouterLink>
 
         <div class="brand-end">
@@ -89,7 +95,11 @@ watch(
             @keydown.space.prevent="activeMobileSubsidebar = 'dashboard'"
             @click="activeMobileSubsidebar = 'dashboard'"
           >
-            <i aria-hidden="true" class="iconify" data-icon="feather:activity"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:activity"
+            />
           </a>
         </li>
         <li>
@@ -100,7 +110,11 @@ watch(
             @keydown.space.prevent="activeMobileSubsidebar = 'layout'"
             @click="activeMobileSubsidebar = 'layout'"
           >
-            <i aria-hidden="true" class="iconify" data-icon="feather:grid"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:grid"
+            />
           </a>
         </li>
         <li
@@ -111,7 +125,11 @@ watch(
           @click="activeMobileSubsidebar = 'elements'"
         >
           <a>
-            <i aria-hidden="true" class="iconify" data-icon="feather:box"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:box"
+            />
           </a>
         </li>
         <li
@@ -122,12 +140,20 @@ watch(
           @click="activeMobileSubsidebar = 'components'"
         >
           <a>
-            <i aria-hidden="true" class="iconify" data-icon="feather:cpu"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:cpu"
+            />
           </a>
         </li>
         <li>
           <RouterLink to="/messaging-v1">
-            <i aria-hidden="true" class="iconify" data-icon="feather:message-circle"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:message-circle"
+            />
           </RouterLink>
         </li>
       </template>
@@ -140,12 +166,20 @@ watch(
             @keydown.space.prevent="panels.setActive('search')"
             @click="panels.setActive('search')"
           >
-            <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:search"
+            />
           </a>
         </li>
         <li>
           <a href="#">
-            <i aria-hidden="true" class="iconify" data-icon="feather:settings"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:settings"
+            />
           </a>
         </li>
       </template>
@@ -170,14 +204,22 @@ watch(
     <Navbar :theme="props.theme">
       <!-- Custom navbar title -->
       <template #title>
-        <RouterLink to="/" class="brand">
-          <AnimatedLogo width="38px" height="38px" />
+        <RouterLink
+          to="/"
+          class="brand"
+        >
+          <AnimatedLogo
+            width="38px"
+            height="38px"
+          />
         </RouterLink>
 
-        <div class="separator"></div>
+        <div class="separator" />
 
         <ProjectsQuickDropdown />
-        <h1 class="title is-5">{{ viewWrapper.pageTitle }}</h1>
+        <h1 class="title is-5">
+          {{ viewWrapper.pageTitle }}
+        </h1>
       </template>
 
       <!-- Custom navbar toolbar -->
@@ -192,7 +234,11 @@ watch(
             @keydown.space.prevent="panels.setActive('activity')"
             @click="panels.setActive('activity')"
           >
-            <i aria-hidden="true" class="iconify" data-icon="feather:grid"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:grid"
+            />
           </a>
         </Toolbar>
         <LayoutSwitcher />
@@ -202,7 +248,10 @@ watch(
 
       <!-- Custom navbar links -->
       <template #links>
-        <div class="centered-drops" :class="[displaySearch && 'is-hidden']">
+        <div
+          class="centered-drops"
+          :class="[displaySearch && 'is-hidden']"
+        >
           <div class="centered-drop">
             <NavbarDashboardsDropdown />
           </div>
@@ -216,14 +265,24 @@ watch(
             <NavbarComponentsDropdown />
           </div>
           <div class="centered-button centered-link-search">
-            <button class="button" @click="displaySearch = true">
+            <button
+              class="button"
+              @click="displaySearch = true"
+            >
               <span class="icon is-small">
-                <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:search"
+                />
               </span>
             </button>
           </div>
         </div>
-        <div class="centered-search" :class="[!displaySearch && 'is-hidden']">
+        <div
+          class="centered-search"
+          :class="[!displaySearch && 'is-hidden']"
+        >
           <div class="field">
             <div class="control has-icon">
               <input
@@ -231,9 +290,13 @@ watch(
                 type="text"
                 class="input is-rounded search-input"
                 placeholder="Search records..."
-              />
+              >
               <div class="form-icon">
-                <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:search"
+                />
               </div>
               <div
                 id="navbar-navbar-search-close"
@@ -243,13 +306,21 @@ watch(
                 @keydown.space.prevent="displaySearch = false"
                 @click="displaySearch = false"
               >
-                <i aria-hidden="true" class="iconify" data-icon="feather:x"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:x"
+                />
               </div>
               <div
                 v-if="filteredUsers.length > 0"
                 class="search-results has-slimscroll is-active"
               >
-                <div v-for="user in filteredUsers" :key="user.id" class="search-result">
+                <div
+                  v-for="user in filteredUsers"
+                  :key="user.id"
+                  class="search-result"
+                >
                   <VAvatar v-bind="getAvatarData(user)" />
                   <div class="meta">
                     <span>{{ user.username }}</span>
@@ -270,14 +341,19 @@ watch(
     <VViewWrapper top-nav>
       <VPageContentWrapper>
         <template v-if="props.nowrap">
-          <slot></slot>
+          <slot />
         </template>
-        <VPageContent v-else class="is-relative">
+        <VPageContent
+          v-else
+          class="is-relative"
+        >
           <div class="is-navbar-lg">
             <div class="page-title has-text-centered">
               <!-- Mobile Page Title -->
               <div class="title-wrap">
-                <h1 class="title is-4">{{ viewWrapper.pageTitle }}</h1>
+                <h1 class="title is-4">
+                  {{ viewWrapper.pageTitle }}
+                </h1>
               </div>
 
               <Toolbar class="mobile-toolbar">
@@ -290,12 +366,16 @@ watch(
                   @keydown.space.prevent="panels.setActive('activity')"
                   @click="panels.setActive('activity')"
                 >
-                  <i aria-hidden="true" class="iconify" data-icon="feather:grid"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:grid"
+                  />
                 </a>
               </Toolbar>
             </div>
 
-            <slot></slot>
+            <slot />
           </div>
         </VPageContent>
       </VPageContentWrapper>

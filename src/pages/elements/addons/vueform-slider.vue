@@ -66,9 +66,12 @@ useHead({
         <!--Slider Mergin-->
         <SliderMergingDocumentation />
 
-        <div class="pb-6 mb-6"></div>
+        <div class="pb-6 mb-6" />
       </div>
-      <div v-if="toc.length" class="column is-3 toc-column">
+      <div
+        v-if="toc.length"
+        class="column is-3 toc-column"
+      >
         <DocumentationToc :toc="toc" />
       </div>
     </div>

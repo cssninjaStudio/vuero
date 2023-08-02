@@ -9,12 +9,12 @@ const filterProjects = ref(0)
         class="light-image"
         src="/@src/assets/illustrations/projects/header.svg"
         alt=""
-      />
+      >
       <img
         class="dark-image"
         src="/@src/assets/illustrations/projects/header-dark.svg"
         alt=""
-      />
+      >
       <div class="header-stats">
         <div class="stats-inner">
           <div class="stat-item">
@@ -38,7 +38,9 @@ const filterProjects = ref(0)
     </div>
 
     <div class="recent-projects">
-      <h3 class="recent-heading">Recent Projects</h3>
+      <h3 class="recent-heading">
+        Recent Projects
+      </h3>
 
       <div class="columns">
         <div class="column is-4">
@@ -95,9 +97,21 @@ const filterProjects = ref(0)
             <div class="item-title">
               <h3>Finance App Onboarding Revamp</h3>
               <div class="tags">
-                <VTag label="Finance" color="solid" rounded />
-                <VTag label="Marketing" color="solid" rounded />
-                <VTag label="Payments" color="solid" rounded />
+                <VTag
+                  label="Finance"
+                  color="solid"
+                  rounded
+                />
+                <VTag
+                  label="Marketing"
+                  color="solid"
+                  rounded
+                />
+                <VTag
+                  label="Payments"
+                  color="solid"
+                  rounded
+                />
               </div>
             </div>
             <div class="item-description">
@@ -132,8 +146,16 @@ const filterProjects = ref(0)
             <div class="item-title">
               <h3>Ecommerce Website for Sunset Surfers</h3>
               <div class="tags">
-                <VTag label="Sports" color="solid" rounded />
-                <VTag label="Surf" color="solid" rounded />
+                <VTag
+                  label="Sports"
+                  color="solid"
+                  rounded
+                />
+                <VTag
+                  label="Surf"
+                  color="solid"
+                  rounded
+                />
               </div>
             </div>
             <div class="item-description">
@@ -175,9 +197,21 @@ const filterProjects = ref(0)
             <div class="item-title">
               <h3>Business Model for Growing Startup</h3>
               <div class="tags">
-                <VTag label="Business" color="solid" rounded />
-                <VTag label="Startups" color="solid" rounded />
-                <VTag label="Management" color="solid" rounded />
+                <VTag
+                  label="Business"
+                  color="solid"
+                  rounded
+                />
+                <VTag
+                  label="Startups"
+                  color="solid"
+                  rounded
+                />
+                <VTag
+                  label="Management"
+                  color="solid"
+                  rounded
+                />
               </div>
             </div>
             <div class="item-description">
@@ -209,8 +243,16 @@ const filterProjects = ref(0)
             <div class="item-title">
               <h3>Build a Document Parser with React Hooks</h3>
               <div class="tags">
-                <VTag label="Javascript" color="solid" rounded />
-                <VTag label="Tesseract" color="solid" rounded />
+                <VTag
+                  label="Javascript"
+                  color="solid"
+                  rounded
+                />
+                <VTag
+                  label="Tesseract"
+                  color="solid"
+                  rounded
+                />
               </div>
             </div>
             <div class="item-description">
@@ -248,8 +290,16 @@ const filterProjects = ref(0)
             <div class="item-title">
               <h3>Stabilize AI Project and Consolidate Features</h3>
               <div class="tags">
-                <VTag label="AI" color="solid" rounded />
-                <VTag label="Machine Learning" color="solid" rounded />
+                <VTag
+                  label="AI"
+                  color="solid"
+                  rounded
+                />
+                <VTag
+                  label="Machine Learning"
+                  color="solid"
+                  rounded
+                />
               </div>
             </div>
             <div class="item-description">
@@ -286,9 +336,21 @@ const filterProjects = ref(0)
             <div class="item-title">
               <h3>Rework BigBro Branding and Identity</h3>
               <div class="tags">
-                <VTag label="Music" color="solid" rounded />
-                <VTag label="Venue" color="solid" rounded />
-                <VTag label="Urban" color="solid" rounded />
+                <VTag
+                  label="Music"
+                  color="solid"
+                  rounded
+                />
+                <VTag
+                  label="Venue"
+                  color="solid"
+                  rounded
+                />
+                <VTag
+                  label="Urban"
+                  color="solid"
+                  rounded
+                />
               </div>
             </div>
             <div class="item-description">
@@ -323,8 +385,16 @@ const filterProjects = ref(0)
             <div class="item-title">
               <h3>Customer Management Dashboard</h3>
               <div class="tags">
-                <VTag label="Business" color="solid" rounded />
-                <VTag label="Customers" color="solid" rounded />
+                <VTag
+                  label="Business"
+                  color="solid"
+                  rounded
+                />
+                <VTag
+                  label="Customers"
+                  color="solid"
+                  rounded
+                />
               </div>
             </div>
             <div class="item-description">
@@ -361,8 +431,16 @@ const filterProjects = ref(0)
             <div class="item-title">
               <h3>CandyBar Website and App Redesign</h3>
               <div class="tags">
-                <VTag label="Mobile" color="solid" rounded />
-                <VTag label="Hybrid" color="solid" rounded />
+                <VTag
+                  label="Mobile"
+                  color="solid"
+                  rounded
+                />
+                <VTag
+                  label="Hybrid"
+                  color="solid"
+                  rounded
+                />
               </div>
             </div>
             <div class="item-description">
@@ -398,8 +476,16 @@ const filterProjects = ref(0)
             <div class="item-title">
               <h3>Marketing and Investment Platform</h3>
               <div class="tags">
-                <VTag label="Business" color="solid" rounded />
-                <VTag label="Finance" color="solid" rounded />
+                <VTag
+                  label="Business"
+                  color="solid"
+                  rounded
+                />
+                <VTag
+                  label="Finance"
+                  color="solid"
+                  rounded
+                />
               </div>
             </div>
             <div class="item-description">

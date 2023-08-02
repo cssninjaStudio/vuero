@@ -44,7 +44,10 @@ const onSave = async () => {
 
 <template>
   <div class="account-box is-form is-footerless">
-    <div class="form-head stuck-header" :class="[isScrolling && 'is-stuck']">
+    <div
+      class="form-head stuck-header"
+      :class="[isScrolling && 'is-stuck']"
+    >
       <div class="form-head-inner">
         <div class="left">
           <h3>Work Experience</h3>
@@ -77,11 +80,17 @@ const onSave = async () => {
     <div class="form-body">
       <!--Fieldset-->
       <div class="fieldset">
-        <div v-if="!isUploading" class="fieldset-heading">
+        <div
+          v-if="!isUploading"
+          class="fieldset-heading"
+        >
           <h4>Previous Experiences</h4>
           <p>This will help others assess your experience</p>
         </div>
-        <div v-else class="fieldset-heading">
+        <div
+          v-else
+          class="fieldset-heading"
+        >
           <a
             class="action-link"
             role="button"
@@ -125,16 +134,24 @@ const onSave = async () => {
               <div class="columns is-multiline">
                 <div class="column is-12">
                   <ClientOnly>
-                    <VDatePicker v-model="range" is-range color="green" trim-weeks>
+                    <VDatePicker
+                      v-model="range"
+                      is-range
+                      color="green"
+                      trim-weeks
+                    >
                       <template #default="{ inputValue, inputEvents }">
-                        <VField addons class="has-addons-fullwidth">
+                        <VField
+                          addons
+                          class="has-addons-fullwidth"
+                        >
                           <VControl>
                             <input
                               class="input v-input"
                               type="text"
                               :value="inputValue.start"
                               v-on="inputEvents.start"
-                            />
+                            >
                           </VControl>
                           <VControl nogrow>
                             <div class="button">
@@ -142,7 +159,7 @@ const onSave = async () => {
                                 aria-hidden="true"
                                 class="iconify"
                                 data-icon="feather:arrow-right"
-                              ></i>
+                              />
                             </div>
                           </VControl>
                           <VControl subcontrol>
@@ -151,7 +168,7 @@ const onSave = async () => {
                               type="text"
                               :value="inputValue.end"
                               v-on="inputEvents.end"
-                            />
+                            >
                           </VControl>
                         </VField>
                       </template>
@@ -181,7 +198,12 @@ const onSave = async () => {
                   </VField>
                 </div>
                 <div class="column is-12">
-                  <VButton type="submit" color="primary" raised fullwidth>
+                  <VButton
+                    type="submit"
+                    color="primary"
+                    raised
+                    fullwidth
+                  >
                     Add Work Experience
                   </VButton>
                 </div>
@@ -196,12 +218,15 @@ const onSave = async () => {
                 src="/demo/photos/brands/airbnb.svg"
                 alt=""
                 @error.once="onceImageErrored(50)"
-              />
+              >
               <div class="meta">
                 <span class="dark-inverted">Airbnb HQ</span>
                 <span>
                   <span>January 2018</span>
-                  <i aria-hidden="true" class="fas fa-circle"></i>
+                  <i
+                    aria-hidden="true"
+                    class="fas fa-circle"
+                  />
                   <span>October 2020</span>
                 </span>
                 <span>Product Manager</span>
@@ -217,12 +242,15 @@ const onSave = async () => {
                 src="/demo/photos/brands/facebook.svg"
                 alt=""
                 @error.once="onceImageErrored(50)"
-              />
+              >
               <div class="meta">
                 <span class="dark-inverted">Facebook</span>
                 <span>
                   <span>January 2018</span>
-                  <i aria-hidden="true" class="fas fa-circle"></i>
+                  <i
+                    aria-hidden="true"
+                    class="fas fa-circle"
+                  />
                   <span>October 2020</span>
                 </span>
                 <span>Product Manager</span>
@@ -238,12 +266,15 @@ const onSave = async () => {
                 src="/demo/photos/brands/atlassian.svg"
                 alt=""
                 @error.once="onceImageErrored(50)"
-              />
+              >
               <div class="meta">
                 <span class="dark-inverted">Atlassian</span>
                 <span>
                   <span>January 2018</span>
-                  <i aria-hidden="true" class="fas fa-circle"></i>
+                  <i
+                    aria-hidden="true"
+                    class="fas fa-circle"
+                  />
                   <span>October 2020</span>
                 </span>
                 <span>Web Developer</span>
@@ -259,12 +290,15 @@ const onSave = async () => {
                 src="/demo/photos/brands/github.svg"
                 alt=""
                 @error.once="onceImageErrored(50)"
-              />
+              >
               <div class="meta">
                 <span class="dark-inverted">Github</span>
                 <span>
                   <span>January 2018</span>
-                  <i aria-hidden="true" class="fas fa-circle"></i>
+                  <i
+                    aria-hidden="true"
+                    class="fas fa-circle"
+                  />
                   <span>October 2020</span>
                 </span>
                 <span>Web Developer</span>
@@ -280,12 +314,15 @@ const onSave = async () => {
                 src="/demo/photos/brands/slack.svg"
                 alt=""
                 @error.once="onceImageErrored(50)"
-              />
+              >
               <div class="meta">
                 <span class="dark-inverted">Slack</span>
                 <span>
                   <span>January 2018</span>
-                  <i aria-hidden="true" class="fas fa-circle"></i>
+                  <i
+                    aria-hidden="true"
+                    class="fas fa-circle"
+                  />
                   <span>October 2020</span>
                 </span>
                 <span>Web Developer</span>
@@ -301,12 +338,15 @@ const onSave = async () => {
                 src="/demo/photos/brands/gitlab.svg"
                 alt=""
                 @error.once="onceImageErrored(50)"
-              />
+              >
               <div class="meta">
                 <span class="dark-inverted">Gitlab</span>
                 <span>
                   <span>January 2018</span>
-                  <i aria-hidden="true" class="fas fa-circle"></i>
+                  <i
+                    aria-hidden="true"
+                    class="fas fa-circle"
+                  />
                   <span>October 2020</span>
                 </span>
                 <span>Web Developer</span>

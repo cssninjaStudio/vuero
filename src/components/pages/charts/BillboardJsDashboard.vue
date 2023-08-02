@@ -34,7 +34,10 @@ const radarSimple = reactive(useRadarSimple())
   <div class="columns is-multiline">
     <div class="column is-6">
       <div class="s-card">
-        <VBillboardJS :options="genericLine.options" @ready="genericLine.onReady" />
+        <VBillboardJS
+          :options="genericLine.options"
+          @ready="genericLine.onReady"
+        />
       </div>
     </div>
     <div class="column is-6">
@@ -49,17 +52,26 @@ const radarSimple = reactive(useRadarSimple())
     </div>
     <div class="column is-6">
       <div class="s-card">
-        <VBillboardJS :options="areaLineRange.options" @ready="areaLineRange.onReady" />
+        <VBillboardJS
+          :options="areaLineRange.options"
+          @ready="areaLineRange.onReady"
+        />
       </div>
     </div>
     <div class="column is-6">
       <div class="s-card">
-        <VBillboardJS :options="barSimple.options" @ready="barSimple.onReady" />
+        <VBillboardJS
+          :options="barSimple.options"
+          @ready="barSimple.onReady"
+        />
       </div>
     </div>
     <div class="column is-6">
       <div class="s-card">
-        <VBillboardJS :options="barStacked.options" @ready="barStacked.onReady" />
+        <VBillboardJS
+          :options="barStacked.options"
+          @ready="barStacked.onReady"
+        />
       </div>
     </div>
     <div class="column is-6">
@@ -74,27 +86,42 @@ const radarSimple = reactive(useRadarSimple())
     </div>
     <div class="column is-6">
       <div class="s-card">
-        <VBillboardJS :options="bubbleSimple.options" @ready="bubbleSimple.onReady" />
+        <VBillboardJS
+          :options="bubbleSimple.options"
+          @ready="bubbleSimple.onReady"
+        />
       </div>
     </div>
     <div class="column is-6">
       <div class="s-card">
-        <VBillboardJS :options="scatterSimple.options" @ready="scatterSimple.onReady" />
+        <VBillboardJS
+          :options="scatterSimple.options"
+          @ready="scatterSimple.onReady"
+        />
       </div>
     </div>
     <div class="column is-6">
       <div class="s-card">
-        <VBillboardJS :options="pieSimple.options" @ready="pieSimple.onReady" />
+        <VBillboardJS
+          :options="pieSimple.options"
+          @ready="pieSimple.onReady"
+        />
       </div>
     </div>
     <div class="column is-6">
       <div class="s-card">
-        <VBillboardJS :options="donutSimple.options" @ready="donutSimple.onReady" />
+        <VBillboardJS
+          :options="donutSimple.options"
+          @ready="donutSimple.onReady"
+        />
       </div>
     </div>
     <div class="column is-6">
       <div class="s-card">
-        <VBillboardJS :options="gaugeSimple.options" @ready="gaugeSimple.onReady" />
+        <VBillboardJS
+          :options="gaugeSimple.options"
+          @ready="gaugeSimple.onReady"
+        />
       </div>
     </div>
     <div class="column is-6">

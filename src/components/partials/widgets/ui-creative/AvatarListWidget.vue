@@ -7,15 +7,25 @@ const props = defineProps<{
 </script>
 
 <template>
-  <div class="widget avatar-list-widget" :class="[props.straight && 'is-straight']">
+  <div
+    class="widget avatar-list-widget"
+    :class="[props.straight && 'is-straight']"
+  >
     <VField raw>
       <VControl icon="feather:search">
         <VInput placeholder="Search again..." />
       </VControl>
     </VField>
     <div class="avatar-list">
-      <div v-for="avatar in props.avatars" :key="avatar.id" class="avatar-list-item">
-        <VAvatar :picture="avatar.picture" :squared="props.squared" />
+      <div
+        v-for="avatar in props.avatars"
+        :key="avatar.id"
+        class="avatar-list-item"
+      >
+        <VAvatar
+          :picture="avatar.picture"
+          :squared="props.squared"
+        />
         <div class="meta">
           <span>{{ avatar.name }}</span>
         </div>

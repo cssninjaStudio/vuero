@@ -1,6 +1,9 @@
 <template>
-  <ol id="chat-body" class="chat-body">
-    <slot></slot>
+  <ol
+    id="chat-body"
+    class="chat-body"
+  >
+    <slot />
   </ol>
 </template>
 
@@ -81,15 +84,26 @@
     text-align: center;
     color: #c0c0c0;
     height: 20px;
-    text-shadow: 7px 0 0 var(--lighter-grey), 6px 0 0 var(--lighter-grey),
-      5px 0 0 var(--lighter-grey), 4px 0 0 var(--lighter-grey),
-      3px 0 0 var(--lighter-grey), 2px 0 0 var(--lighter-grey),
-      1px 0 0 var(--lighter-grey), 1px 0 0 var(--lighter-grey), 0 0 0 var(--lighter-grey),
-      -1px 0 0 var(--lighter-grey), -2px 0 0 var(--lighter-grey),
-      -3px 0 0 var(--lighter-grey), -4px 0 0 var(--lighter-grey),
-      -5px 0 0 var(--lighter-grey), -6px 0 0 var(--lighter-grey),
+    text-shadow:
+      7px 0 0 var(--lighter-grey),
+      6px 0 0 var(--lighter-grey),
+      5px 0 0 var(--lighter-grey),
+      4px 0 0 var(--lighter-grey),
+      3px 0 0 var(--lighter-grey),
+      2px 0 0 var(--lighter-grey),
+      1px 0 0 var(--lighter-grey),
+      1px 0 0 var(--lighter-grey),
+      0 0 0 var(--lighter-grey),
+      -1px 0 0 var(--lighter-grey),
+      -2px 0 0 var(--lighter-grey),
+      -3px 0 0 var(--lighter-grey),
+      -4px 0 0 var(--lighter-grey),
+      -5px 0 0 var(--lighter-grey),
+      -6px 0 0 var(--lighter-grey),
       -7px 0 0 var(--lighter-grey);
-    box-shadow: inset 20px 0 0 var(--lighter-grey), inset -20px 0 0 var(--lighter-grey),
+    box-shadow:
+      inset 20px 0 0 var(--lighter-grey),
+      inset -20px 0 0 var(--lighter-grey),
       inset 0 -2px 0 #d7d7d7;
     line-height: 38px;
     margin-top: 5px;
@@ -421,7 +435,7 @@
     }
   }
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media only screen and (device-width >= 768px) and (device-width <= 1024px) and (orientation: portrait) {
   .chat-body {
     width: 100% !important;
     padding: 0 10px 40px;

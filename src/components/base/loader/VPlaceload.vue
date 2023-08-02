@@ -45,7 +45,7 @@ if (mobileHeightValue.match(CssUnitRe) === null) {
   <div
     class="content-shape"
     :class="[props.centered && 'is-centered', !props.disabled && 'loads']"
-  ></div>
+  />
 </template>
 
 <style lang="scss" scoped>

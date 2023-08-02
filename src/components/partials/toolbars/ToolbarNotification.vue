@@ -19,14 +19,23 @@ const dropdown = useDropdown(dropdownElement)
         @click="dropdown.toggle"
         @keydown.space.prevent="dropdown.toggle"
       >
-        <i aria-hidden="true" class="iconify" data-icon="feather:bell"></i>
-        <span class="new-indicator pulsate"></span>
+        <i
+          aria-hidden="true"
+          class="iconify"
+          data-icon="feather:bell"
+        />
+        <span class="new-indicator pulsate" />
       </div>
-      <div class="dropdown-menu" role="menu">
+      <div
+        class="dropdown-menu"
+        role="menu"
+      >
         <div class="dropdown-content">
           <div class="heading">
             <div class="heading-left">
-              <h6 class="heading-title">Notifications</h6>
+              <h6 class="heading-title">
+                Notifications
+              </h6>
             </div>
             <div class="heading-right">
               <RouterLink
@@ -46,7 +55,7 @@ const dropdown = useDropdown(dropdownElement)
                     alt=""
                     src="/demo/avatars/7.jpg"
                     @error.once="onceImageErrored(150)"
-                  />
+                  >
                 </div>
                 <div class="user-content">
                   <p class="user-info">
@@ -64,7 +73,7 @@ const dropdown = useDropdown(dropdownElement)
                     alt=""
                     src="/demo/avatars/12.jpg"
                     @error.once="onceImageErrored(150)"
-                  />
+                  >
                 </div>
                 <div class="user-content">
                   <p class="user-info">
@@ -82,7 +91,7 @@ const dropdown = useDropdown(dropdownElement)
                     alt=""
                     src="/demo/avatars/13.jpg"
                     @error.once="onceImageErrored(150)"
-                  />
+                  >
                 </div>
                 <div class="user-content">
                   <p class="user-info">
@@ -100,7 +109,7 @@ const dropdown = useDropdown(dropdownElement)
                     alt=""
                     src="/demo/avatars/25.jpg"
                     @error.once="onceImageErrored(150)"
-                  />
+                  >
                 </div>
                 <div class="user-content">
                   <p class="user-info">

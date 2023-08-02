@@ -1,5 +1,8 @@
 <template>
-  <div id="brands-tab" class="tab-content is-active">
+  <div
+    id="brands-tab"
+    class="tab-content is-active"
+  >
     <!--Empty Placeholder -->
     <VPlaceholderPage
       title="No brands to show."
@@ -11,12 +14,12 @@
           class="light-image"
           src="/@src/assets/illustrations/placeholders/having-coffee.svg"
           alt=""
-        />
+        >
         <img
           class="dark-image"
           src="/@src/assets/illustrations/placeholders/having-coffee-dark.svg"
           alt=""
-        />
+        >
       </template>
     </VPlaceholderPage>
   </div>

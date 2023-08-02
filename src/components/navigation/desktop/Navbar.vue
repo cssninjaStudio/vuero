@@ -30,15 +30,24 @@ const isScrolling = computed(() => {
       <div class="left">
         <!-- Title slot -->
         <slot name="title">
-          <h1 class="title is-5">Page Title</h1>
+          <h1 class="title is-5">
+            Page Title
+          </h1>
         </slot>
       </div>
       <div class="center">
         <!-- Links slot -->
         <slot name="links">
           <div class="centered-links">
-            <a href="/" class="centered-link centered-link-toggle">
-              <i aria-hidden="true" class="iconify" data-icon="feather:activity"></i>
+            <a
+              href="/"
+              class="centered-link centered-link-toggle"
+            >
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:activity"
+              />
               <span>Homepage</span>
             </a>
           </div>
@@ -71,13 +80,13 @@ const isScrolling = computed(() => {
       </div>
       <div class="right">
         <!-- Toolbar slot -->
-        <slot name="toolbar"></slot>
+        <slot name="toolbar" />
       </div>
     </div>
   </div>
 
   <!-- Subnav slot -->
-  <slot name="subnav"></slot>
+  <slot name="subnav" />
 </template>
 
 <style lang="scss">
@@ -598,8 +607,12 @@ const isScrolling = computed(() => {
                         border: 1px solid var(--fade-grey-dark-3);
                         border-radius: 10px;
                         cursor: pointer;
-                        transition: color 0.3s, background-color 0.3s, border-color 0.3s,
-                          height 0.3s, width 0.3s;
+                        transition:
+                          color 0.3s,
+                          background-color 0.3s,
+                          border-color 0.3s,
+                          height 0.3s,
+                          width 0.3s;
 
                         &:hover,
                         &:focus {
@@ -789,8 +802,12 @@ const isScrolling = computed(() => {
                 padding-inline-start: 0.75rem !important;
                 padding-inline-end: 0.75rem !important;
                 border-color: transparent;
-                transition: color 0.3s, background-color 0.3s, border-color 0.3s,
-                  height 0.3s, width 0.3s;
+                transition:
+                  color 0.3s,
+                  background-color 0.3s,
+                  border-color 0.3s,
+                  height 0.3s,
+                  width 0.3s;
               }
             }
 

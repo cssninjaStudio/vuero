@@ -46,8 +46,7 @@ const props = withDefaults(defineProps<VTagProps>(), {
       props.elevated && 'is-elevated',
       props.remove && 'is-delete',
     ]"
-    ><slot>{{ props.label }}</slot></small
-  >
+  ><slot>{{ props.label }}</slot></small>
 </template>
 
 <style lang="scss">

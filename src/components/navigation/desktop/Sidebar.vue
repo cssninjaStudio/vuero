@@ -39,22 +39,25 @@ const themeClasses = computed(() => {
 </script>
 
 <template>
-  <div class="main-sidebar" :class="[themeClasses]">
+  <div
+    class="main-sidebar"
+    :class="[themeClasses]"
+  >
     <div class="sidebar-brand">
       <RouterLink to="/">
         <AnimatedLogo width="36px" />
       </RouterLink>
     </div>
     <div class="sidebar-inner">
-      <div class="naver"></div>
+      <div class="naver" />
 
       <ul class="icon-menu has-slimscroll">
-        <slot name="links"></slot>
+        <slot name="links" />
       </ul>
 
       <!-- User account -->
       <ul class="bottom-menu">
-        <slot name="bottom-links"></slot>
+        <slot name="bottom-links" />
       </ul>
     </div>
   </div>
@@ -71,8 +74,12 @@ const themeClasses = computed(() => {
   background-color: var(--body-color);
   box-shadow: none;
   z-index: 35;
-  transition: border-radius 0.3s ease-in, background-color 0.3s ease-in, top 0.3s ease-in,
-    margin-inline-start 0.3s ease-in, height 0.3s ease-in;
+  transition:
+    border-radius 0.3s ease-in,
+    background-color 0.3s ease-in,
+    top 0.3s ease-in,
+    margin-inline-start 0.3s ease-in,
+    height 0.3s ease-in;
 
   &.is-bordered {
     border-inline-end: 1px solid var(--fade-grey) !important;

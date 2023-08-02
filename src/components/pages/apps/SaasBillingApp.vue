@@ -54,7 +54,12 @@ const selected = ref('value_2')
         <div class="inner-wrap">
           <h3>Select a Plan</h3>
           <VField class="plans">
-            <VControl v-for="plan in plans" :key="plan.id" class="plan" subcontrol>
+            <VControl
+              v-for="plan in plans"
+              :key="plan.id"
+              class="plan"
+              subcontrol
+            >
               <VInput
                 type="radio"
                 name="plan_selection"
@@ -63,14 +68,24 @@ const selected = ref('value_2')
                 @keydown.space.prevent="selectedPlanId = plan.id"
                 @click="selectedPlanId = plan.id"
               />
-              <VLabel raw class="plan-inner">
-                <img :src="plan.icon" alt="" />
+              <VLabel
+                raw
+                class="plan-inner"
+              >
+                <img
+                  :src="plan.icon"
+                  alt=""
+                >
                 <div class="meta">
                   <span>{{ plan.name }}</span>
                   <span>{{ plan.slogan }}</span>
                 </div>
                 <div class="checkmark">
-                  <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:check"
+                  />
                 </div>
               </VLabel>
             </VControl>
@@ -79,11 +94,22 @@ const selected = ref('value_2')
       </div>
       <div class="right">
         <div class="plan-details">
-          <div v-if="selectedPlan" class="plan-details-inner">
+          <div
+            v-if="selectedPlan"
+            class="plan-details-inner"
+          >
             <div class="plan-description">
               <div class="left">
-                <img class="light-image" :src="selectedPlan.logo.light" alt="" />
-                <img class="dark-image" :src="selectedPlan.logo.dark" alt="" />
+                <img
+                  class="light-image"
+                  :src="selectedPlan.logo.light"
+                  alt=""
+                >
+                <img
+                  class="dark-image"
+                  :src="selectedPlan.logo.dark"
+                  alt=""
+                >
               </div>
               <div class="right">
                 <div class="plan-pricing">
@@ -141,7 +167,11 @@ const selected = ref('value_2')
           </div>
           <div class="block-body is-seats">
             <div>
-              <Tippy class="has-help-cursor" interactive placement="bottom-start">
+              <Tippy
+                class="has-help-cursor"
+                interactive
+                placement="bottom-start"
+              >
                 <VAvatar picture="/images/avatars/svg/vuero-1.svg" />
                 <template #content>
                   <UserPopoverContent :user="popovers.user8" />
@@ -150,8 +180,15 @@ const selected = ref('value_2')
             </div>
 
             <div>
-              <Tippy class="has-help-cursor" interactive placement="bottom-start">
-                <VAvatar color="warning" initials="BT" />
+              <Tippy
+                class="has-help-cursor"
+                interactive
+                placement="bottom-start"
+              >
+                <VAvatar
+                  color="warning"
+                  initials="BT"
+                />
                 <template #content>
                   <UserPopoverContent :user="popovers.user122" />
                 </template>
@@ -159,7 +196,11 @@ const selected = ref('value_2')
             </div>
 
             <div>
-              <Tippy class="has-help-cursor" interactive placement="bottom">
+              <Tippy
+                class="has-help-cursor"
+                interactive
+                placement="bottom"
+              >
                 <VAvatar picture="/demo/avatars/18.jpg" />
                 <template #content>
                   <UserPopoverContent :user="popovers.user18" />
@@ -167,15 +208,26 @@ const selected = ref('value_2')
               </Tippy>
             </div>
             <div>
-              <Tippy class="has-help-cursor" interactive placement="bottom">
-                <VAvatar color="info" initials="JD" />
+              <Tippy
+                class="has-help-cursor"
+                interactive
+                placement="bottom"
+              >
+                <VAvatar
+                  color="info"
+                  initials="JD"
+                />
                 <template #content>
                   <UserPopoverContent :user="popovers.user123" />
                 </template>
               </Tippy>
             </div>
             <div>
-              <Tippy class="has-help-cursor" interactive placement="bottom">
+              <Tippy
+                class="has-help-cursor"
+                interactive
+                placement="bottom"
+              >
                 <VAvatar picture="/demo/avatars/7.jpg" />
                 <template #content>
                   <UserPopoverContent :user="popovers.user7" />
@@ -184,7 +236,11 @@ const selected = ref('value_2')
             </div>
 
             <button class="add-seat">
-              <i aria-hidden="true" class="iconify" data-icon="feather:plus"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:plus"
+              />
             </button>
           </div>
         </div>
@@ -264,14 +320,21 @@ const selected = ref('value_2')
             @flip="isCardFlipped = !isCardFlipped"
           >
             <!-- eslint-disable vue/no-v-html -->
-            <div v-if="creditcardLogo" id="ccsingle" v-html="creditcardLogo"></div>
+            <div
+              v-if="creditcardLogo"
+              id="ccsingle"
+              v-html="creditcardLogo"
+            />
             <!-- eslint-enable vue/no-v-html -->
           </VCreditCard>
 
           <div class="form-container">
             <div class="columns is-multiline">
               <div class="column is-12">
-                <VField id="name" label="Name">
+                <VField
+                  id="name"
+                  label="Name"
+                >
                   <VControl>
                     <VInput
                       v-model="creditcardInput.name"
@@ -285,7 +348,11 @@ const selected = ref('value_2')
                 </VField>
               </div>
               <div class="column is-12">
-                <VField id="cardnumber" v-slot="{ id }" label="Card Number">
+                <VField
+                  id="cardnumber"
+                  v-slot="{ id }"
+                  label="Card Number"
+                >
                   <VControl>
                     <VIMaskInput
                       :id="id"
@@ -302,13 +369,17 @@ const selected = ref('value_2')
                       id="creditcardIcon"
                       class="creditcardIcon"
                       v-html="creditcardIcon"
-                    ></div>
+                    />
                     <!-- eslint-enable vue/no-v-html -->
                   </VControl>
                 </VField>
               </div>
               <div class="column is-6">
-                <VField id="expirationdate" v-slot="{ id }" label="Expiration">
+                <VField
+                  id="expirationdate"
+                  v-slot="{ id }"
+                  label="Expiration"
+                >
                   <VControl>
                     <VIMaskInput
                       :id="id"
@@ -323,7 +394,11 @@ const selected = ref('value_2')
                 </VField>
               </div>
               <div class="column is-6">
-                <VField id="securitycode" v-slot="{ id }" label="CVC">
+                <VField
+                  id="securitycode"
+                  v-slot="{ id }"
+                  label="CVC"
+                >
                   <VControl>
                     <VIMaskInput
                       :id="id"
@@ -339,7 +414,12 @@ const selected = ref('value_2')
               </div>
               <div class="column is-12">
                 <div class="button-wrap">
-                  <VButton type="submit" color="primary" raised fullwidth>
+                  <VButton
+                    type="submit"
+                    color="primary"
+                    raised
+                    fullwidth
+                  >
                     Save Payment Method
                   </VButton>
                 </div>
@@ -433,8 +513,12 @@ const selected = ref('value_2')
               filter: grayscale(1);
               opacity: 0.6;
               pointer-events: none;
-              transition: color 0.3s, background-color 0.3s, border-color 0.3s,
-                height 0.3s, width 0.3s;
+              transition:
+                color 0.3s,
+                background-color 0.3s,
+                border-color 0.3s,
+                height 0.3s,
+                width 0.3s;
             }
 
             .meta {
@@ -627,8 +711,12 @@ const selected = ref('value_2')
               background: none;
               margin-inline-start: 4px;
               cursor: pointer;
-              transition: color 0.3s, background-color 0.3s, border-color 0.3s,
-                height 0.3s, width 0.3s;
+              transition:
+                color 0.3s,
+                background-color 0.3s,
+                border-color 0.3s,
+                height 0.3s,
+                width 0.3s;
 
               &:hover,
               &:focus {

@@ -1,6 +1,6 @@
 <template>
   <div class="placeload-wrap is-flex">
-    <slot></slot>
+    <slot />
   </div>
 </template>
 

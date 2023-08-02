@@ -834,13 +834,23 @@
         border-radius: var(--radius-rounded);
 
         // crazy ass box-shadow to make the cloud
-        box-shadow: $cloud-bgColor 0 0, $cloud-bgColor 3px 0, $cloud-bgColor 6px 0,
-          $cloud-bgColor 9px 0, $cloud-bgColor 11px 0, $cloud-bgColor 14px 0,
-          $cloud-bgColor 16px 0, $cloud-bgColor 21px -1px 0 1px,
-          $cloud-bgColor 16px -7px 0 -2px, $cloud-bgColor 7px -7px 0 1px,
-          $cloud-borderColor 0 0 0 4px, $cloud-borderColor 6px 0 0 4px,
-          $cloud-borderColor 11px 0 0 4px, $cloud-borderColor 16px 0 0 4px,
-          $cloud-borderColor 21px -1px 0 5px, $cloud-borderColor 16px -7px 0 1px,
+        box-shadow:
+          $cloud-bgColor 0 0,
+          $cloud-bgColor 3px 0,
+          $cloud-bgColor 6px 0,
+          $cloud-bgColor 9px 0,
+          $cloud-bgColor 11px 0,
+          $cloud-bgColor 14px 0,
+          $cloud-bgColor 16px 0,
+          $cloud-bgColor 21px -1px 0 1px,
+          $cloud-bgColor 16px -7px 0 -2px,
+          $cloud-bgColor 7px -7px 0 1px,
+          $cloud-borderColor 0 0 0 4px,
+          $cloud-borderColor 6px 0 0 4px,
+          $cloud-borderColor 11px 0 0 4px,
+          $cloud-borderColor 16px 0 0 4px,
+          $cloud-borderColor 21px -1px 0 5px,
+          $cloud-borderColor 16px -7px 0 1px,
           $cloud-borderColor 7px -7px 0 5px;
         transition: opacity 100ms ease-in;
       }
@@ -849,9 +859,13 @@
     @keyframes starry_star {
       50% {
         background-color: rgb(255 255 255 / 10%);
-        box-shadow: var(--white) 30px -3px 0 0, var(--white) 12px 10px 0 -1px,
-          rgb(255 255 255 / 10%) 38px 18px 0 1px, var(--white) 32px 34px 0 0,
-          rgb(255 255 255 / 10%) 20px 24px 0 -1.5px, var(--white) 5px 38px 0 1px;
+        box-shadow:
+          var(--white) 30px -3px 0 0,
+          var(--white) 12px 10px 0 -1px,
+          rgb(255 255 255 / 10%) 38px 18px 0 1px,
+          var(--white) 32px 34px 0 0,
+          rgb(255 255 255 / 10%) 20px 24px 0 -1.5px,
+          var(--white) 5px 38px 0 1px;
       }
     }
 
@@ -891,9 +905,12 @@
       height: 4px;
       border-radius: var(--radius-rounded);
       background-color: var(--white);
-      box-shadow: rgb(255 255 255 / 10%) 30px -3px 0 0,
-        rgb(255 255 255 / 10%) 12px 10px 0 -1px, var(--white) 38px 18px 0 1px,
-        rgb(255 255 255 / 10%) 32px 34px 0 0, var(--white) 20px 24px 0 -1.5px,
+      box-shadow:
+        rgb(255 255 255 / 10%) 30px -3px 0 0,
+        rgb(255 255 255 / 10%) 12px 10px 0 -1px,
+        var(--white) 38px 18px 0 1px,
+        rgb(255 255 255 / 10%) 32px 34px 0 0,
+        var(--white) 20px 24px 0 -1.5px,
         rgb(255 255 255 / 10%) 5px 38px 0 1px;
       animation: starry_star 5s ease-in-out infinite;
 
@@ -906,7 +923,8 @@
         background-color: $toggleBtn-bgColor--night;
         border-radius: var(--radius-rounded);
         border: 5px solid $toggleBtn-borderColor--night;
-        box-shadow: $toggleBtn-borderColor--night -28px 0 0 -3px,
+        box-shadow:
+          $toggleBtn-borderColor--night -28px 0 0 -3px,
           $toggleBtn-borderColor--night -8px 24px 0 -2px;
         transform-origin: -6px 130%;
       }
@@ -935,9 +953,12 @@
 
         > .night-toggle--feature {
           opacity: 0;
-          box-shadow: rgb(255 255 255 / 10%) 30px -3px 0 -4px,
-            rgb(255 255 255 / 10%) 12px 10px 0 -5px, var(--white) 38px 18px 0 -3px,
-            rgb(255 255 255 / 10%) 32px 34px 0 -4px, var(--white) 20px 24px 0 -5.5px,
+          box-shadow:
+            rgb(255 255 255 / 10%) 30px -3px 0 -4px,
+            rgb(255 255 255 / 10%) 12px 10px 0 -5px,
+            var(--white) 38px 18px 0 -3px,
+            rgb(255 255 255 / 10%) 32px 34px 0 -4px,
+            var(--white) 20px 24px 0 -5.5px,
             rgb(255 255 255 / 10%) 5px 38px 0 -3px;
           animation: none;
 

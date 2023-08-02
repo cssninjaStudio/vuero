@@ -12,7 +12,7 @@ useHead({
 <template>
   <div class="page-content-inner">
     <Teleport to="[data-teleport-bg]">
-      <div class="lifestyle-dashboard-bg has-top-nav"></div>
+      <div class="lifestyle-dashboard-bg has-top-nav" />
     </Teleport>
 
     <LifestyleDashboardV1 class="has-navbar-spacing" />

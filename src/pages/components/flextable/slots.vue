@@ -130,7 +130,7 @@ function contactUser(row: any) {
                       class="input is-primary-focus"
                       @blur="editCompanyIndex = undefined"
                       @keydown.space.prevent="editCompanyIndex = undefined"
-                    />
+                    >
                   </VField>
                 </VControl>
 
@@ -148,7 +148,7 @@ function contactUser(row: any) {
                     data-icon="feather:edit-3"
                     role="img"
                     aria-label="edit"
-                  ></i>
+                  />
                 </a>
               </template>
 
@@ -159,10 +159,10 @@ function contactUser(row: any) {
                   value === 'Suspended'
                     ? 'orange'
                     : value === 'New'
-                    ? 'info'
-                    : value === 'Active'
-                    ? 'primary'
-                    : undefined
+                      ? 'info'
+                      : value === 'Active'
+                        ? 'primary'
+                        : undefined
                 "
               >
                 {{ value }}
@@ -179,7 +179,10 @@ function contactUser(row: any) {
           </VFlexTable>
         </div>
 
-        <DocumentationDivider id="with-reactive" title="With reactive props" />
+        <DocumentationDivider
+          id="with-reactive"
+          title="With reactive props"
+        />
 
         <div class="mt-4">
           <VFlexTable
@@ -215,10 +218,10 @@ function contactUser(row: any) {
                   value === 'Suspended'
                     ? 'orange'
                     : value === 'New'
-                    ? 'info'
-                    : value === 'Active'
-                    ? 'primary'
-                    : undefined
+                      ? 'info'
+                      : value === 'Active'
+                        ? 'primary'
+                        : undefined
                 "
               >
                 {{ value }}
@@ -234,10 +237,18 @@ function contactUser(row: any) {
           </VFlexTable>
         </div>
 
-        <DocumentationDivider id="without-reactive" title="Without reactive props" />
+        <DocumentationDivider
+          id="without-reactive"
+          title="Without reactive props"
+        />
 
         <div class="mt-4">
-          <VFlexTable :data="flexRowsContacts" :columns="columns" compact rounded>
+          <VFlexTable
+            :data="flexRowsContacts"
+            :columns="columns"
+            compact
+            rounded
+          >
             <template #header-column="{ column }">
               <VCheckbox
                 v-if="column.key === 'select'"
@@ -265,10 +276,10 @@ function contactUser(row: any) {
                   value === 'Suspended'
                     ? 'orange'
                     : value === 'New'
-                    ? 'info'
-                    : value === 'Active'
-                    ? 'primary'
-                    : undefined
+                      ? 'info'
+                      : value === 'Active'
+                        ? 'primary'
+                        : undefined
                 "
               >
                 {{ value }}
@@ -284,7 +295,10 @@ function contactUser(row: any) {
           </VFlexTable>
         </div>
 
-        <DocumentationDivider id="with-clickable" title="With clickable props" />
+        <DocumentationDivider
+          id="with-clickable"
+          title="With clickable props"
+        />
 
         <div class="mt-4">
           <VFlexTable
@@ -322,10 +336,10 @@ function contactUser(row: any) {
                   value === 'Suspended'
                     ? 'orange'
                     : value === 'New'
-                    ? 'info'
-                    : value === 'Active'
-                    ? 'primary'
-                    : undefined
+                      ? 'info'
+                      : value === 'Active'
+                        ? 'primary'
+                        : undefined
                 "
               >
                 {{ value }}

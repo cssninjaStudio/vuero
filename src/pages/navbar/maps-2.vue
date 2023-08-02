@@ -13,7 +13,7 @@ useHead({
 
 <template>
   <component
-    :is="(layoutSwitcher.dynamicLayoutComponent as any)"
+    :is="layoutSwitcher.dynamicLayoutComponent as any"
     v-bind="layoutSwitcher.dynamicLayoutProps"
     nowrap
   >

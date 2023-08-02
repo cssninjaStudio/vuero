@@ -20,7 +20,7 @@ const props = defineProps<VViewWrapperProps>()
       viewWrapper.isPushedBlock && 'is-pushed-block',
     ]"
   >
-    <slot></slot>
+    <slot />
   </div>
 </template>
 

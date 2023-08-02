@@ -26,18 +26,21 @@ const themeClasses = computed(() => {
 </script>
 
 <template>
-  <div class="sidebar-block is-active" :class="[themeClasses]">
+  <div
+    class="sidebar-block is-active"
+    :class="[themeClasses]"
+  >
     <div class="sidebar-block-header">
-      <slot name="header"> </slot>
+      <slot name="header" />
     </div>
     <div class="sidebar-block-inner">
       <ul>
-        <slot name="links"></slot>
+        <slot name="links" />
       </ul>
     </div>
     <!-- User account -->
     <div class="sidebar-block-footer">
-      <slot name="bottom-links"></slot>
+      <slot name="bottom-links" />
     </div>
   </div>
 </template>
@@ -52,7 +55,9 @@ const themeClasses = computed(() => {
   background-color: var(--white);
   box-shadow: none;
   z-index: 35;
-  transition: border-radius 0.3s, transform 0.3s;
+  transition:
+    border-radius 0.3s,
+    transform 0.3s;
 
   &.is-curved {
     border-start-end-radius: 2rem;

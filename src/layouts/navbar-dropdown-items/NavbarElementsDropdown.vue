@@ -11,7 +11,12 @@ watch([() => route.fullPath, dropdownElement], () => {
 </script>
 
 <template>
-  <VDropdown ref="dropdownElement" class="has-mega-dropdown" modern spaced>
+  <VDropdown
+    ref="dropdownElement"
+    class="has-mega-dropdown"
+    modern
+    spaced
+  >
     <template #button="{ toggle }">
       <div
         class="dropdown-trigger is-trigger"
@@ -31,7 +36,10 @@ watch([() => route.fullPath, dropdownElement], () => {
     </template>
 
     <template #content>
-      <div class="category-selector" :class="[selectedCategory !== '' && 'is-hidden']">
+      <div
+        class="category-selector"
+        :class="[selectedCategory !== '' && 'is-hidden']"
+      >
         <div class="title-wrap">
           <h4>Select a category</h4>
         </div>
@@ -44,7 +52,10 @@ watch([() => route.fullPath, dropdownElement], () => {
             @keydown.space.prevent="selectedCategory = 'interaction'"
             @click="selectedCategory = 'interaction'"
           >
-            <i aria-hidden="true" class="lnil lnil-pointer-top"></i>
+            <i
+              aria-hidden="true"
+              class="lnil lnil-pointer-top"
+            />
             <span>Interaction</span>
           </div>
           <!-- Advanced Item -->
@@ -55,7 +66,10 @@ watch([() => route.fullPath, dropdownElement], () => {
             @keydown.space.prevent="selectedCategory = 'advanced'"
             @click="selectedCategory = 'advanced'"
           >
-            <i aria-hidden="true" class="lnil lnil-Website"></i>
+            <i
+              aria-hidden="true"
+              class="lnil lnil-Website"
+            />
             <span>Advanced</span>
           </div>
           <!-- Addons Item -->
@@ -66,7 +80,10 @@ watch([() => route.fullPath, dropdownElement], () => {
             @keydown.space.prevent="selectedCategory = 'addons'"
             @click="selectedCategory = 'addons'"
           >
-            <i aria-hidden="true" class="lnil lnil-code"></i>
+            <i
+              aria-hidden="true"
+              class="lnil lnil-code"
+            />
             <span>Addons</span>
           </div>
 
@@ -74,20 +91,30 @@ watch([() => route.fullPath, dropdownElement], () => {
             class="placeholder-image light-image"
             src="/@src/assets/illustrations/components/buttons.svg"
             alt=""
-          />
+          >
           <img
             class="placeholder-image dark-image"
             src="/@src/assets/illustrations/components/buttons-dark.svg"
             alt=""
-          />
+          >
         </div>
       </div>
 
-      <div class="content-wrap" :class="[selectedCategory === '' && 'is-hidden']">
+      <div
+        class="content-wrap"
+        :class="[selectedCategory === '' && 'is-hidden']"
+      >
         <!--Back button-->
-        <button class="button is-circle back-button" @click="selectedCategory = ''">
+        <button
+          class="button is-circle back-button"
+          @click="selectedCategory = ''"
+        >
           <span class="icon is-small">
-            <i aria-hidden="true" class="iconify" data-icon="feather:arrow-left"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:arrow-left"
+            />
           </span>
         </button>
 
@@ -100,41 +127,72 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div class="column is-6">
             <div class="dropdown-item-group">
               <h4 class="column-heading is-info">
-                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                />
                 <span>General</span>
               </h4>
 
-              <div class="column-content" data-simplebar>
-                <RouterLink to="/elements/" class="dropdown-item is-media">
+              <div
+                class="column-content"
+                data-simplebar
+              >
+                <RouterLink
+                  to="/elements/"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-home"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-home"
+                    />
                   </div>
                   <div class="meta">
                     <span>Elements Hub</span>
                   </div>
                 </RouterLink>
 
-                <RouterLink to="/elements/colors" class="dropdown-item is-media">
+                <RouterLink
+                  to="/elements/colors"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-color-palette"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-color-palette"
+                    />
                   </div>
                   <div class="meta">
                     <span>Colors</span>
                   </div>
                 </RouterLink>
 
-                <RouterLink to="/elements/helpers" class="dropdown-item is-media">
+                <RouterLink
+                  to="/elements/helpers"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-help"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-help"
+                    />
                   </div>
                   <div class="meta">
                     <span>Helpers</span>
                   </div>
                 </RouterLink>
 
-                <RouterLink to="/elements/icons/iconify" class="dropdown-item is-media">
+                <RouterLink
+                  to="/elements/icons/iconify"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-minus"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-minus"
+                    />
                   </div>
                   <div class="meta">
                     <span>Iconify</span>
@@ -146,7 +204,10 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-minus"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-minus"
+                    />
                   </div>
                   <div class="meta">
                     <span>Line Icons Light</span>
@@ -158,7 +219,10 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-minus"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-minus"
+                    />
                   </div>
                   <div class="meta">
                     <span>Line Icons Regular</span>
@@ -170,7 +234,10 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-minus"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-minus"
+                    />
                   </div>
                   <div class="meta">
                     <span>Font Awesome 5</span>
@@ -184,73 +251,134 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div class="column is-6">
             <div class="dropdown-item-group">
               <h4 class="column-heading is-orange">
-                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                />
                 <span>Interaction</span>
               </h4>
 
-              <div class="column-content" data-simplebar>
-                <RouterLink to="/elements/action" class="dropdown-item is-media">
+              <div
+                class="column-content"
+                data-simplebar
+              >
+                <RouterLink
+                  to="/elements/action"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-pointer-top"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-pointer-top"
+                    />
                   </div>
                   <div class="meta">
                     <span>VAction</span>
                   </div>
                 </RouterLink>
 
-                <RouterLink to="/elements/button" class="dropdown-item is-media">
+                <RouterLink
+                  to="/elements/button"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-pointer-top"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-pointer-top"
+                    />
                   </div>
                   <div class="meta">
                     <span>VButton</span>
                   </div>
                 </RouterLink>
 
-                <RouterLink to="/elements/dropdown" class="dropdown-item is-media">
+                <RouterLink
+                  to="/elements/dropdown"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-chevron-down"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-chevron-down"
+                    />
                   </div>
                   <div class="meta">
                     <span>VDropdown</span>
                   </div>
                 </RouterLink>
 
-                <RouterLink to="/elements/icon-button" class="dropdown-item is-media">
+                <RouterLink
+                  to="/elements/icon-button"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-pointer-top"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-pointer-top"
+                    />
                   </div>
                   <div class="meta">
                     <span>VIconButton</span>
                   </div>
                 </RouterLink>
 
-                <RouterLink to="/elements/loader" class="dropdown-item is-media">
+                <RouterLink
+                  to="/elements/loader"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-spinner-3"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-spinner-3"
+                    />
                   </div>
                   <div class="meta">
                     <span>VLoader</span>
                   </div>
                 </RouterLink>
 
-                <RouterLink to="/elements/placeload/" class="dropdown-item is-media">
+                <RouterLink
+                  to="/elements/placeload/"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-reload"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-reload"
+                    />
                   </div>
                   <div class="meta">
                     <span>VPlaceload</span>
-                    <VTag label="v1.2" color="primary" outlined curved class="ml-3" />
+                    <VTag
+                      label="v1.2"
+                      color="primary"
+                      outlined
+                      curved
+                      class="ml-3"
+                    />
                   </div>
                 </RouterLink>
 
-                <RouterLink to="/elements/placeload/text" class="dropdown-item is-media">
+                <RouterLink
+                  to="/elements/placeload/text"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-reload"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-reload"
+                    />
                   </div>
                   <div class="meta">
                     <span>VPlaceloadText</span>
-                    <VTag label="v1.2" color="primary" outlined curved class="ml-3" />
+                    <VTag
+                      label="v1.2"
+                      color="primary"
+                      outlined
+                      curved
+                      class="ml-3"
+                    />
                   </div>
                 </RouterLink>
 
@@ -259,45 +387,84 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-reload"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-reload"
+                    />
                   </div>
                   <div class="meta">
                     <span>VPlaceloadAvatar</span>
-                    <VTag label="v1.2" color="primary" outlined curved class="ml-3" />
+                    <VTag
+                      label="v1.2"
+                      color="primary"
+                      outlined
+                      curved
+                      class="ml-3"
+                    />
                   </div>
                 </RouterLink>
 
-                <RouterLink to="/elements/message" class="dropdown-item is-media">
+                <RouterLink
+                  to="/elements/message"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-capital-letter"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-capital-letter"
+                    />
                   </div>
                   <div class="meta">
                     <span>VMessage</span>
-                    <VTag label="v1.1" color="primary" outlined curved class="ml-3" />
+                    <VTag
+                      label="v1.1"
+                      color="primary"
+                      outlined
+                      curved
+                      class="ml-3"
+                    />
                   </div>
                 </RouterLink>
 
-                <RouterLink to="/elements/modal" class="dropdown-item is-media">
+                <RouterLink
+                  to="/elements/modal"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-top-right-arrow-box"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-top-right-arrow-box"
+                    />
                   </div>
                   <div class="meta">
                     <span>VModal</span>
                   </div>
                 </RouterLink>
 
-                <RouterLink to="/elements/progress" class="dropdown-item is-media">
+                <RouterLink
+                  to="/elements/progress"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-half-battery"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-half-battery"
+                    />
                   </div>
                   <div class="meta">
                     <span>VProgress</span>
                   </div>
                 </RouterLink>
 
-                <RouterLink to="/elements/tooltip" class="dropdown-item is-media">
+                <RouterLink
+                  to="/elements/tooltip"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-comments-alt"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-comments-alt"
+                    />
                   </div>
                   <div class="meta">
                     <span>VTooltip</span>
@@ -317,76 +484,167 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div class="column is-6">
             <div class="dropdown-item-group">
               <h4 class="column-heading is-info">
-                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                />
                 <span>Forms</span>
               </h4>
 
-              <div class="column-content" data-simplebar>
-                <RouterLink to="/elements/forms/field" class="dropdown-item is-media">
+              <div
+                class="column-content"
+                data-simplebar
+              >
+                <RouterLink
+                  to="/elements/forms/field"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-stop"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-stop"
+                    />
                   </div>
                   <div class="meta">
                     <span>VField</span>
-                    <VTag label="v2.3" color="primary" outlined curved class="ml-3" />
+                    <VTag
+                      label="v2.3"
+                      color="primary"
+                      outlined
+                      curved
+                      class="ml-3"
+                    />
                   </div>
                 </RouterLink>
-                <RouterLink to="/elements/forms/control" class="dropdown-item is-media">
+                <RouterLink
+                  to="/elements/forms/control"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-stop"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-stop"
+                    />
                   </div>
                   <div class="meta">
                     <span>VControl</span>
-                    <VTag label="v2.3" color="primary" outlined curved class="ml-3" />
+                    <VTag
+                      label="v2.3"
+                      color="primary"
+                      outlined
+                      curved
+                      class="ml-3"
+                    />
                   </div>
                 </RouterLink>
-                <RouterLink to="/elements/forms/inputs" class="dropdown-item is-media">
+                <RouterLink
+                  to="/elements/forms/inputs"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-font"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-font"
+                    />
                   </div>
                   <div class="meta">
                     <span>VInput</span>
-                    <VTag label="v2.3" color="primary" outlined curved class="ml-3" />
+                    <VTag
+                      label="v2.3"
+                      color="primary"
+                      outlined
+                      curved
+                      class="ml-3"
+                    />
                   </div>
                 </RouterLink>
 
-                <RouterLink to="/elements/forms/textarea" class="dropdown-item is-media">
+                <RouterLink
+                  to="/elements/forms/textarea"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-font"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-font"
+                    />
                   </div>
                   <div class="meta">
                     <span>VTextarea</span>
-                    <VTag label="v2.3" color="primary" outlined curved class="ml-3" />
+                    <VTag
+                      label="v2.3"
+                      color="primary"
+                      outlined
+                      curved
+                      class="ml-3"
+                    />
                   </div>
                 </RouterLink>
 
-                <RouterLink to="/elements/forms/selects" class="dropdown-item is-media">
+                <RouterLink
+                  to="/elements/forms/selects"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-font"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-font"
+                    />
                   </div>
                   <div class="meta">
                     <span>VSelect</span>
-                    <VTag label="v2.3" color="primary" outlined curved class="ml-3" />
+                    <VTag
+                      label="v2.3"
+                      color="primary"
+                      outlined
+                      curved
+                      class="ml-3"
+                    />
                   </div>
                 </RouterLink>
 
-                <RouterLink to="/elements/checkbox" class="dropdown-item is-media">
+                <RouterLink
+                  to="/elements/checkbox"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-round-box-check"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-round-box-check"
+                    />
                   </div>
                   <div class="meta">
                     <span>VCheckbox</span>
-                    <VTag label="v2.3" color="primary" outlined curved class="ml-3" />
+                    <VTag
+                      label="v2.3"
+                      color="primary"
+                      outlined
+                      curved
+                      class="ml-3"
+                    />
                   </div>
                 </RouterLink>
 
-                <RouterLink to="/elements/radio" class="dropdown-item is-media">
+                <RouterLink
+                  to="/elements/radio"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-checkmark-circle"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-checkmark-circle"
+                    />
                   </div>
                   <div class="meta">
                     <span>VRadio</span>
-                    <VTag label="v2.3" color="primary" outlined curved class="ml-3" />
+                    <VTag
+                      label="v2.3"
+                      color="primary"
+                      outlined
+                      curved
+                      class="ml-3"
+                    />
                   </div>
                 </RouterLink>
 
@@ -407,17 +665,32 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i class="lnil lnil-star" aria-hidden="true"></i>
+                    <i
+                      class="lnil lnil-star"
+                      aria-hidden="true"
+                    />
                   </div>
                   <div class="meta">
                     <span>VRangeRating</span>
-                    <VTag label="v2.8" color="primary" outlined curved class="ml-3" />
+                    <VTag
+                      label="v2.8"
+                      color="primary"
+                      outlined
+                      curved
+                      class="ml-3"
+                    />
                   </div>
                 </RouterLink>
 
-                <RouterLink to="/elements/forms/file" class="dropdown-item is-media">
+                <RouterLink
+                  to="/elements/forms/file"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-upload"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-upload"
+                    />
                   </div>
                   <div class="meta">
                     <span>File Input</span>
@@ -431,35 +704,63 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div class="column is-6">
             <div class="dropdown-item-group">
               <h4 class="column-heading is-green">
-                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                />
                 <span>Switches</span>
               </h4>
 
-              <div class="column-content" data-simplebar>
+              <div
+                class="column-content"
+                data-simplebar
+              >
                 <RouterLink
                   to="/elements/animated-checkbox"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-round-box-check"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-round-box-check"
+                    />
                   </div>
                   <div class="meta">
                     <span>VAnimatedCheckbox</span>
-                    <VTag label="v1.1" color="primary" outlined curved class="ml-3" />
+                    <VTag
+                      label="v1.1"
+                      color="primary"
+                      outlined
+                      curved
+                      class="ml-3"
+                    />
                   </div>
                 </RouterLink>
 
-                <RouterLink to="/elements/switch-block" class="dropdown-item is-media">
+                <RouterLink
+                  to="/elements/switch-block"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-switch"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-switch"
+                    />
                   </div>
                   <div class="meta">
                     <span>VSwitchBlock</span>
                   </div>
                 </RouterLink>
-                <RouterLink to="/elements/switch-segment" class="dropdown-item is-media">
+                <RouterLink
+                  to="/elements/switch-segment"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-switch"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-switch"
+                    />
                   </div>
                   <div class="meta">
                     <span>VSwitchSegment</span>
@@ -479,14 +780,27 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div class="column is-12">
             <div class="dropdown-item-group">
               <h4 class="column-heading is-green">
-                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                />
                 <span>Addons</span>
               </h4>
 
-              <div class="column-content" data-simplebar>
-                <RouterLink to="/elements/addons/calendar" class="dropdown-item is-media">
+              <div
+                class="column-content"
+                data-simplebar
+              >
+                <RouterLink
+                  to="/elements/addons/calendar"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-code"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-code"
+                    />
                   </div>
                   <div class="meta">
                     <span>VCalendar</span>
@@ -498,16 +812,25 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-code"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-code"
+                    />
                   </div>
                   <div class="meta">
                     <span>VIMaskInput</span>
                   </div>
                 </RouterLink>
 
-                <RouterLink to="/elements/addons/filepond" class="dropdown-item is-media">
+                <RouterLink
+                  to="/elements/addons/filepond"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-code"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-code"
+                    />
                   </div>
                   <div class="meta">
                     <span>VFilePond</span>
@@ -519,7 +842,10 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-code"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-code"
+                    />
                   </div>
                   <div class="meta">
                     <span>@vueform/multiselect</span>
@@ -531,16 +857,25 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-code"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-code"
+                    />
                   </div>
                   <div class="meta">
                     <span>@vueform/slider</span>
                   </div>
                 </RouterLink>
 
-                <RouterLink to="/elements/addons/ckeditor" class="dropdown-item is-media">
+                <RouterLink
+                  to="/elements/addons/ckeditor"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-code"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-code"
+                    />
                   </div>
                   <div class="meta">
                     <span>CKEditor 5</span>

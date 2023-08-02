@@ -1,6 +1,6 @@
 <template>
   <div class="timeline-wrapper">
-    <div class="timeline-header"></div>
+    <div class="timeline-header" />
     <div class="timeline-wrapper-inner">
       <div class="timeline-container">
         <!--Timeline item-->
@@ -8,10 +8,10 @@
           <div class="date">
             <span>Sep 23, 2020</span>
           </div>
-          <div class="dot is-info"></div>
+          <div class="dot is-info" />
           <div class="content-wrap">
             <div class="content-box">
-              <div class="status"></div>
+              <div class="status" />
               <VAvatar picture="/demo/avatars/13.jpg" />
 
               <div class="box-text">
@@ -24,7 +24,10 @@
                 </div>
               </div>
               <div class="box-end">
-                <VAvatar size="small" picture="/images/avatars/svg/vuero-1.svg" />
+                <VAvatar
+                  size="small"
+                  picture="/images/avatars/svg/vuero-1.svg"
+                />
               </div>
             </div>
           </div>
@@ -35,10 +38,10 @@
           <div class="date">
             <span>Sep 23, 2020</span>
           </div>
-          <div class="dot is-danger"></div>
+          <div class="dot is-danger" />
           <div class="content-wrap">
             <div class="content-box">
-              <div class="status"></div>
+              <div class="status" />
               <VAvatar picture="/demo/avatars/23.jpg" />
 
               <div class="box-text">
@@ -59,10 +62,10 @@
           <div class="date">
             <span>Sep 22, 2020</span>
           </div>
-          <div class="dot is-success"></div>
+          <div class="dot is-success" />
           <div class="content-wrap">
             <div class="content-box">
-              <div class="status"></div>
+              <div class="status" />
               <VAvatar picture="/demo/avatars/5.jpg" />
 
               <div class="box-text">
@@ -75,9 +78,20 @@
                 </div>
               </div>
               <div class="box-end">
-                <VAvatar size="small" color="warning" initials="BT" />
-                <VAvatar size="small" picture="/demo/avatars/18.jpg" />
-                <VAvatar size="small" color="info" initials="JD" />
+                <VAvatar
+                  size="small"
+                  color="warning"
+                  initials="BT"
+                />
+                <VAvatar
+                  size="small"
+                  picture="/demo/avatars/18.jpg"
+                />
+                <VAvatar
+                  size="small"
+                  color="info"
+                  initials="JD"
+                />
               </div>
             </div>
           </div>
@@ -88,19 +102,27 @@
           <div class="date">
             <span>Sep 23, 2020</span>
           </div>
-          <div class="dot is-purple"></div>
+          <div class="dot is-purple" />
           <div class="content-wrap">
             <div class="content-box">
-              <div class="status"></div>
+              <div class="status" />
               <VAvatar picture="/demo/avatars/12.jpg" />
 
               <div class="box-text">
                 <div class="meta-text">
                   <p>
                     <span>Joshua S.</span> changed the status of a <a>Task</a> from
-                    <VTag label="Pending" color="purple" rounded />
+                    <VTag
+                      label="Pending"
+                      color="purple"
+                      rounded
+                    />
                     to
-                    <VTag label="Completed" color="green" rounded />
+                    <VTag
+                      label="Completed"
+                      color="green"
+                      rounded
+                    />
                   </p>
                   <span>9:18 am</span>
                 </div>
@@ -114,10 +136,10 @@
           <div class="date">
             <span>Sep 22, 2020</span>
           </div>
-          <div class="dot is-warning"></div>
+          <div class="dot is-warning" />
           <div class="content-wrap">
             <div class="content-box">
-              <div class="status"></div>
+              <div class="status" />
               <VAvatar picture="/demo/avatars/26.jpg" />
 
               <div class="box-text">
@@ -130,8 +152,16 @@
                 </div>
               </div>
               <div class="box-end">
-                <VAvatar size="small" squared picture="/demo/photos/apps/5.png" />
-                <VAvatar size="small" squared picture="/demo/photos/apps/8.png" />
+                <VAvatar
+                  size="small"
+                  squared
+                  picture="/demo/photos/apps/5.png"
+                />
+                <VAvatar
+                  size="small"
+                  squared
+                  picture="/demo/photos/apps/8.png"
+                />
               </div>
             </div>
           </div>
@@ -142,10 +172,10 @@
           <div class="date">
             <span>Sep 23, 2020</span>
           </div>
-          <div class="dot is-info"></div>
+          <div class="dot is-info" />
           <div class="content-wrap">
             <div class="content-box">
-              <div class="status"></div>
+              <div class="status" />
               <VAvatar picture="/demo/avatars/31.jpg" />
 
               <div class="box-text">
@@ -158,7 +188,10 @@
                 </div>
               </div>
               <div class="box-end">
-                <VAvatar size="small" picture="/images/avatars/svg/vuero-1.svg" />
+                <VAvatar
+                  size="small"
+                  picture="/images/avatars/svg/vuero-1.svg"
+                />
               </div>
             </div>
           </div>
@@ -169,10 +202,10 @@
           <div class="date">
             <span>Sep 23, 2020</span>
           </div>
-          <div class="dot is-danger"></div>
+          <div class="dot is-danger" />
           <div class="content-wrap">
             <div class="content-box">
-              <div class="status"></div>
+              <div class="status" />
               <VAvatar picture="/demo/avatars/13.jpg" />
 
               <div class="box-text">
@@ -193,19 +226,27 @@
           <div class="date">
             <span>Sep 23, 2020</span>
           </div>
-          <div class="dot is-purple"></div>
+          <div class="dot is-purple" />
           <div class="content-wrap">
             <div class="content-box">
-              <div class="status"></div>
+              <div class="status" />
               <VAvatar picture="/demo/avatars/25.jpg" />
 
               <div class="box-text">
                 <div class="meta-text">
                   <p>
                     <span>Melany W.</span> changed the status of a <a>Task</a> from
-                    <VTag label="Overdue" color="danger" rounded />
+                    <VTag
+                      label="Overdue"
+                      color="danger"
+                      rounded
+                    />
                     to
-                    <VTag label="Completed" color="green" rounded />
+                    <VTag
+                      label="Completed"
+                      color="green"
+                      rounded
+                    />
                   </p>
                   <span>9:18 am</span>
                 </div>
@@ -216,7 +257,9 @@
       </div>
 
       <div class="load-more-wrap has-text-centered">
-        <VButton dark-outlined>Load More</VButton>
+        <VButton dark-outlined>
+          Load More
+        </VButton>
       </div>
     </div>
   </div>

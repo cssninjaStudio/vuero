@@ -62,8 +62,14 @@ useHead({
         <IconsIconifyDocumentation />
 
         <DocumentationDemoCard>
-          <div class="card-inner" :class="{ 'is-scrolling': isScrolling }">
-            <VFlex justify-content="flex-end" class="demo-icon-search py-4 px-6">
+          <div
+            class="card-inner"
+            :class="{ 'is-scrolling': isScrolling }"
+          >
+            <VFlex
+              justify-content="flex-end"
+              class="demo-icon-search py-4 px-6"
+            >
               <VField>
                 <VControl icon="feather:search">
                   <input
@@ -71,7 +77,7 @@ useHead({
                     type="search"
                     class="input is-rounded"
                     placeholder="Search feather icons ..."
-                  />
+                  >
                 </VControl>
               </VField>
             </VFlex>
@@ -86,11 +92,20 @@ useHead({
                 @keydown.space.prevent="copy(getSnippet(icon))"
                 @click="copy(getSnippet(icon))"
               >
-                <i aria-hidden="true" class="iconify" :data-icon="icon.dataIcon"></i>
-                <p class="textFilter-match">{{ icon.name }}</p>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  :data-icon="icon.dataIcon"
+                />
+                <p class="textFilter-match">
+                  {{ icon.name }}
+                </p>
 
                 <Transition name="fade-fast">
-                  <span v-if="copied && text === getSnippet(icon)" class="is-copied">
+                  <span
+                    v-if="copied && text === getSnippet(icon)"
+                    class="is-copied"
+                  >
                     copied!
                   </span>
                 </Transition>

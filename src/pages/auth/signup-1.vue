@@ -55,21 +55,37 @@ useHead({
   <div>
     <div class="signup-nav">
       <div class="signup-nav-inner">
-        <RouterLink to="/" class="logo">
-          <AnimatedLogo width="36px" height="36px" />
+        <RouterLink
+          to="/"
+          class="logo"
+        >
+          <AnimatedLogo
+            width="36px"
+            height="36px"
+          />
         </RouterLink>
       </div>
     </div>
 
-    <div id="vuero-signup" class="signup-wrapper">
-      <div class="signup-steps" :class="[step === 0 && 'is-hidden']">
+    <div
+      id="vuero-signup"
+      class="signup-wrapper"
+    >
+      <div
+        class="signup-steps"
+        :class="[step === 0 && 'is-hidden']"
+      >
         <div class="steps-container">
           <div
             class="step-icon is-active"
             :class="[step >= 1 && 'is-active', step < 1 && 'is-inactive']"
           >
             <div class="inner">
-              <i aria-hidden="true" class="iconify" data-icon="feather:user"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:user"
+              />
             </div>
             <span class="step-label">Profile Pic</span>
           </div>
@@ -78,7 +94,11 @@ useHead({
             :class="[step >= 2 && 'is-active', step < 2 && 'is-inactive']"
           >
             <div class="inner">
-              <i aria-hidden="true" class="iconify" data-icon="feather:shield"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:shield"
+              />
             </div>
             <span class="step-label">Account</span>
           </div>
@@ -87,11 +107,21 @@ useHead({
             :class="[step >= 3 && 'is-active', step < 3 && 'is-inactive']"
           >
             <div class="inner">
-              <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:check"
+              />
             </div>
             <span class="step-label">Done</span>
           </div>
-          <progress class="progress" :value="step - 1" :max="2">25%</progress>
+          <progress
+            class="progress"
+            :value="step - 1"
+            :max="2"
+          >
+            25%
+          </progress>
         </div>
       </div>
 
@@ -100,18 +130,27 @@ useHead({
         class="card-bg"
         src="/@src/assets/backgrounds/signup/vuero-signup.webp"
         alt=""
-      />
+      >
 
       <div class="hero is-fullheight">
         <div class="hero-body">
           <div class="container">
             <!-- Step 1 -->
-            <div class="columns signup-columns" :class="[step !== 0 && 'is-hidden']">
+            <div
+              class="columns signup-columns"
+              :class="[step !== 0 && 'is-hidden']"
+            >
               <div class="column is-4 is-offset-1">
-                <h1 id="main-signup-title" class="title is-3 signup-title">
+                <h1
+                  id="main-signup-title"
+                  class="title is-3 signup-title"
+                >
                   Become a Vuero
                 </h1>
-                <h2 id="main-signup-subtitle" class="subtitle signup-subtitle">
+                <h2
+                  id="main-signup-subtitle"
+                  class="subtitle signup-subtitle"
+                >
                   And simply join an unmatched design experience.
                 </h2>
                 <div class="signup-card">
@@ -125,33 +164,64 @@ useHead({
                       <div class="column is-6">
                         <VField>
                           <VControl>
-                            <VInput type="text" autocomplete="given-name" />
-                            <VLabel raw class="auth-label">First Name</VLabel>
+                            <VInput
+                              type="text"
+                              autocomplete="given-name"
+                            />
+                            <VLabel
+                              raw
+                              class="auth-label"
+                            >
+                              First Name
+                            </VLabel>
                           </VControl>
                         </VField>
                       </div>
                       <div class="column is-6">
                         <VField>
                           <VControl>
-                            <VInput type="text" autocomplete="family-name" />
-                            <VLabel raw class="auth-label">Last Name</VLabel>
+                            <VInput
+                              type="text"
+                              autocomplete="family-name"
+                            />
+                            <VLabel
+                              raw
+                              class="auth-label"
+                            >
+                              Last Name
+                            </VLabel>
                           </VControl>
                         </VField>
                       </div>
                       <div class="column is-12">
                         <VField>
                           <VControl>
-                            <VInput type="text" autocomplete="email" />
-                            <VLabel raw class="auth-label">Email Address</VLabel>
+                            <VInput
+                              type="text"
+                              autocomplete="email"
+                            />
+                            <VLabel
+                              raw
+                              class="auth-label"
+                            >
+                              Email Address
+                            </VLabel>
                           </VControl>
                         </VField>
                       </div>
                       <div class="column is-12">
                         <div class="signup-type">
                           <div class="box-wrap">
-                            <input type="radio" name="signup_type" checked />
+                            <input
+                              type="radio"
+                              name="signup_type"
+                              checked
+                            >
                             <div class="signup-box">
-                              <i aria-hidden="true" class="lnil lnil-coffee-cup"></i>
+                              <i
+                                aria-hidden="true"
+                                class="lnil lnil-coffee-cup"
+                              />
                               <div class="meta">
                                 <span>Free</span>
                                 <span>Nice to get started</span>
@@ -159,9 +229,15 @@ useHead({
                             </div>
                           </div>
                           <div class="box-wrap">
-                            <input type="radio" name="signup_type" />
+                            <input
+                              type="radio"
+                              name="signup_type"
+                            >
                             <div class="signup-box">
-                              <i aria-hidden="true" class="lnil lnil-crown-alt-1"></i>
+                              <i
+                                aria-hidden="true"
+                                class="lnil lnil-crown-alt-1"
+                              />
                               <div class="meta">
                                 <span>Paid</span>
                                 <span>Get a lot more features</span>
@@ -202,8 +278,16 @@ useHead({
             </div>
 
             <!-- Step 2 -->
-            <div class="columns signup-columns" :class="[step !== 1 && 'is-hidden']">
-              <form method="post" novalidate class="column is-8" @submit.prevent>
+            <div
+              class="columns signup-columns"
+              :class="[step !== 1 && 'is-hidden']"
+            >
+              <form
+                method="post"
+                novalidate
+                class="column is-8"
+                @submit.prevent
+              >
                 <div class="signup-profile-wrapper">
                   <h1 class="title is-5 signup-title has-text-centered">
                     Add a profile picture
@@ -213,7 +297,10 @@ useHead({
                   </h2>
                   <div class="picture-selector">
                     <div class="image-container">
-                      <img :src="currentAvatar" alt="" />
+                      <img
+                        :src="currentAvatar"
+                        alt=""
+                      >
                       <div
                         class="upload-button"
                         role="button"
@@ -225,7 +312,7 @@ useHead({
                           aria-hidden="true"
                           class="iconify"
                           data-icon="feather:plus"
-                        ></i>
+                        />
                       </div>
                     </div>
                   </div>
@@ -249,12 +336,22 @@ useHead({
                     @keydown.space.prevent="currentAvatar = avatar"
                   >
                     <div class="image-wrapper">
-                      <img :src="avatar" alt="" @error.once="onceImageErrored(150)" />
+                      <img
+                        :src="avatar"
+                        alt=""
+                        @error.once="onceImageErrored(150)"
+                      >
                     </div>
                   </div>
                 </div>
                 <div class="button-wrap is-centered has-text-centered">
-                  <VButton color="primary" size="big" rounded lower @click="step++">
+                  <VButton
+                    color="primary"
+                    size="big"
+                    rounded
+                    lower
+                    @click="step++"
+                  >
                     Continue
                   </VButton>
                 </div>
@@ -262,9 +359,14 @@ useHead({
             </div>
 
             <!-- Step 3 -->
-            <div class="columns signup-columns" :class="[step !== 2 && 'is-hidden']">
+            <div
+              class="columns signup-columns"
+              :class="[step !== 2 && 'is-hidden']"
+            >
               <div class="column is-4 is-offset-4 username-form">
-                <h1 class="title is-5 signup-title has-text-centered">Pick a username</h1>
+                <h1 class="title is-5 signup-title has-text-centered">
+                  Pick a username
+                </h1>
                 <h2 class="subtitle signup-subtitle has-text-centered">
                   Your username is how others will find you on Vuero so pick a good one.
                   You can change it later.
@@ -279,24 +381,48 @@ useHead({
                     <div class="column is-12">
                       <VField>
                         <VControl>
-                          <VInput type="text" autocomplete="username" />
-                          <VLabel raw class="auth-label">Username</VLabel>
+                          <VInput
+                            type="text"
+                            autocomplete="username"
+                          />
+                          <VLabel
+                            raw
+                            class="auth-label"
+                          >
+                            Username
+                          </VLabel>
                         </VControl>
                       </VField>
                     </div>
                     <div class="column is-12">
                       <VField>
                         <VControl>
-                          <VInput type="password" autocomplete="new-password" />
-                          <VLabel raw class="auth-label">Password</VLabel>
+                          <VInput
+                            type="password"
+                            autocomplete="new-password"
+                          />
+                          <VLabel
+                            raw
+                            class="auth-label"
+                          >
+                            Password
+                          </VLabel>
                         </VControl>
                       </VField>
                     </div>
                     <div class="column is-12">
                       <VField>
                         <VControl>
-                          <VInput type="password" autocomplete="new-password" />
-                          <VLabel raw class="auth-label">Confirm Password</VLabel>
+                          <VInput
+                            type="password"
+                            autocomplete="new-password"
+                          />
+                          <VLabel
+                            raw
+                            class="auth-label"
+                          >
+                            Confirm Password
+                          </VLabel>
                         </VControl>
                       </VField>
                     </div>
@@ -304,7 +430,10 @@ useHead({
                       <VField>
                         <VControl class="has-switch">
                           <VLabel>Send me marketing and transaction emails</VLabel>
-                          <VSwitchBlock color="success" checked />
+                          <VSwitchBlock
+                            color="success"
+                            checked
+                          />
                         </VControl>
                       </VField>
                     </div>
@@ -345,8 +474,8 @@ useHead({
               type="checkbox"
               :checked="!darkmode.isDark"
               @change="darkmode.onChange"
-            />
-            <span></span>
+            >
+            <span />
           </label>
         </div>
       </div>
@@ -373,7 +502,10 @@ useHead({
       <template #content>
         <div class="has-text-centered">
           <div class="upload-demo-wrap">
-            <VAvatar size="big" :picture="uploadAvatarSrc" />
+            <VAvatar
+              size="big"
+              :picture="uploadAvatarSrc"
+            />
           </div>
           <VField>
             <VControl>
@@ -385,10 +517,13 @@ useHead({
                     name="resume"
                     accept="image/*"
                     @change="onFileinputChange"
-                  />
+                  >
                   <span class="file-cta">
                     <span class="file-icon">
-                      <i aria-hidden="true" class="fas fa-cloud-upload-alt"></i>
+                      <i
+                        aria-hidden="true"
+                        class="fas fa-cloud-upload-alt"
+                      />
                     </span>
                     <span> Choose a file… </span>
                   </span>
@@ -398,7 +533,9 @@ useHead({
           </VField>
         </div>
       </template>
-      <template #cancel><wbr /></template>
+      <template #cancel>
+        <wbr>
+      </template>
       <template #action>
         <VField horizontal>
           <VControl>

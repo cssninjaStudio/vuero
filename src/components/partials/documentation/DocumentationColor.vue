@@ -66,20 +66,24 @@ function updateColor({ colors }: any) {
 <template>
   <div class="color-card">
     <div class="color-card-header">
-      <div class="color-dot is-primary"></div>
+      <div class="color-dot is-primary" />
       <div class="meta">
         <span>var({{ colorVarName }})</span>
         <span>{{ colorVar }}</span>
       </div>
       <div class="actions">
-        <VAction tabindex="0" @keydown.space.prevent="toggle" @click="toggle">
+        <VAction
+          tabindex="0"
+          @keydown.space.prevent="toggle"
+          @click="toggle"
+        >
           <span v-if="isOpen">Close</span>
           <span v-else>Customize</span>
         </VAction>
       </div>
     </div>
     <div v-if="isOpen">
-      <div class="is-divider"></div>
+      <div class="is-divider" />
       <div class="color-picker">
         <ColorPicker
           :id="props.color"
@@ -105,7 +109,7 @@ function updateColor({ colors }: any) {
           </template>
         </ColorPicker>
       </div>
-      <div class="is-divider"></div>
+      <div class="is-divider" />
       <dl>
         <dt>
           <span>Hue</span>
@@ -134,8 +138,14 @@ function updateColor({ colors }: any) {
           @keydown.space.prevent="copy(colorSnippet)"
           @click="copy(colorSnippet)"
         >
-          <Transition name="fade-fast" mode="out-in">
-            <span v-if="copied && text === colorSnippet" class="is-copied">
+          <Transition
+            name="fade-fast"
+            mode="out-in"
+          >
+            <span
+              v-if="copied && text === colorSnippet"
+              class="is-copied"
+            >
               Copied!
             </span>
             <span v-else> Copy snippet color </span>

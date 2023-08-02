@@ -1,7 +1,11 @@
 <template>
   <div class="flex-table-toolbar">
-    <div class="left"><slot name="left"></slot></div>
-    <div class="right"><slot name="right"></slot></div>
+    <div class="left">
+      <slot name="left" />
+    </div>
+    <div class="right">
+      <slot name="right" />
+    </div>
   </div>
 </template>
 

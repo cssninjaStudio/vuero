@@ -8,12 +8,12 @@
               class="light-image is-larger"
               src="/@src/assets/illustrations/placeholders/promotion.svg"
               alt=""
-            />
+            >
             <img
               class="dark-image is-larger"
               src="/@src/assets/illustrations/placeholders/promotion-dark.svg"
               alt=""
-            />
+            >
             <h3 class="dark-inverted">
               Empower your team to do greater things collaboratively
             </h3>
@@ -22,8 +22,15 @@
               <span>Per Month</span>
             </div>
             <div class="buttons">
-              <VButton dark-outlined> Skip </VButton>
-              <VButton color="primary" raised> Upgrade </VButton>
+              <VButton dark-outlined>
+                Skip
+              </VButton>
+              <VButton
+                color="primary"
+                raised
+              >
+                Upgrade
+              </VButton>
             </div>
           </div>
         </div>
@@ -32,7 +39,9 @@
       <div class="side-wrapper">
         <div class="side-inner">
           <div class="side-title">
-            <h3 class="dark-inverted">Features to make it better</h3>
+            <h3 class="dark-inverted">
+              Features to make it better
+            </h3>
             <p>Take a look at some incredible features</p>
           </div>
 

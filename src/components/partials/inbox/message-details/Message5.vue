@@ -32,7 +32,7 @@ const dropdown2 = useDropdown(dropdownElement2)
         src="/demo/avatars/27.jpg"
         alt=""
         @error.once="onceImageErrored(150)"
-      />
+      >
       <div class="message-meta">
         <span class="message-title">
           I got some new delightful stuff that you absolutely must see
@@ -40,7 +40,11 @@ const dropdown2 = useDropdown(dropdownElement2)
         <span class="sender-email">&lt;carmen@vuero.io&gt;</span>
       </div>
       <div class="attachments inbox-hidden-mobile">
-        <i aria-hidden="true" class="iconify" data-icon="feather:paperclip"></i>
+        <i
+          aria-hidden="true"
+          class="iconify"
+          data-icon="feather:paperclip"
+        />
         <span>2</span>
       </div>
       <div
@@ -48,25 +52,44 @@ const dropdown2 = useDropdown(dropdownElement2)
         class="dropdown inbox-dropdown dropdown-trigger is-right"
       >
         <div>
-          <button class="button" @click="dropdown1.toggle">
+          <button
+            class="button"
+            @click="dropdown1.toggle"
+          >
             <span class="icon is-small">
-              <i aria-hidden="true" class="iconify" data-icon="feather:more-vertical"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:more-vertical"
+              />
             </span>
           </button>
         </div>
         <div class="dropdown-menu">
           <div class="dropdown-content">
             <a class="dropdown-item">
-              <i aria-hidden="true" class="iconify" data-icon="feather:bookmark"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:bookmark"
+              />
               <span>Bookmark</span>
             </a>
             <a class="dropdown-item">
-              <i aria-hidden="true" class="iconify" data-icon="feather:share-2"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:share-2"
+              />
               <span>Share message</span>
             </a>
-            <hr class="dropdown-divider" />
+            <hr class="dropdown-divider">
             <a class="dropdown-item">
-              <i aria-hidden="true" class="iconify" data-icon="feather:thumbs-down"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:thumbs-down"
+              />
               <span>Mark as spam</span>
             </a>
           </div>
@@ -79,7 +102,11 @@ const dropdown2 = useDropdown(dropdownElement2)
         @keydown.space.prevent="emit('update:mobileMessageOpen', false)"
         @click="emit('update:mobileMessageOpen', false)"
       >
-        <i aria-hidden="true" class="iconify" data-icon="feather:x"></i>
+        <i
+          aria-hidden="true"
+          class="iconify"
+          data-icon="feather:x"
+        />
       </a>
     </div>
     <!--Message-->
@@ -96,23 +123,35 @@ const dropdown2 = useDropdown(dropdownElement2)
                 aria-hidden="true"
                 class="iconify"
                 data-icon="feather:corner-up-left"
-              ></i>
+              />
             </a>
             <a class="inbox-action">
-              <i aria-hidden="true" class="iconify" data-icon="feather:file-text"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:file-text"
+              />
             </a>
             <a class="inbox-action">
-              <i aria-hidden="true" class="iconify" data-icon="feather:tag"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:tag"
+              />
             </a>
             <a class="inbox-action">
               <i
                 aria-hidden="true"
                 class="iconify"
                 data-icon="feather:message-circle"
-              ></i>
+              />
             </a>
             <a class="inbox-action">
-              <i aria-hidden="true" class="iconify" data-icon="feather:lock"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:lock"
+              />
             </a>
           </div>
         </div>
@@ -123,8 +162,7 @@ const dropdown2 = useDropdown(dropdownElement2)
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nos commodius agimus.
             Si longus, levis;
             <a href="http://loripsum.net/">
-              Summum ením bonum exposuit vacuitatem doloris;</a
-            >
+              Summum ením bonum exposuit vacuitatem doloris;</a>
             Eadem fortitudinis ratio reperietur. Duo Reges: constructio interrete. Facile
             est hoc cernere in primis puerorum aetatulis.
           </p>
@@ -143,13 +181,21 @@ const dropdown2 = useDropdown(dropdownElement2)
           <div class="attachment">
             <span>stuff.png</span>
             <div class="download-icon">
-              <i aria-hidden="true" class="iconify" data-icon="feather:arrow-down"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:arrow-down"
+              />
             </div>
           </div>
           <div class="attachment">
             <span>cool_stuff.png</span>
             <div class="download-icon">
-              <i aria-hidden="true" class="iconify" data-icon="feather:arrow-down"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:arrow-down"
+              />
             </div>
           </div>
         </div>
@@ -163,7 +209,7 @@ const dropdown2 = useDropdown(dropdownElement2)
               src="/images/avatars/svg/vuero-1.svg"
               alt=""
               @error.once="onceImageErrored(150)"
-            />
+            >
             <div class="reply-details">
               <span>Reply as</span>
               <span>erik@vuero.io</span>
@@ -173,13 +219,16 @@ const dropdown2 = useDropdown(dropdownElement2)
               class="dropdown inbox-dropdown dropdown-trigger is-right"
             >
               <div>
-                <button class="button" @click="dropdown2.toggle">
+                <button
+                  class="button"
+                  @click="dropdown2.toggle"
+                >
                   <span class="icon is-small">
                     <i
                       aria-hidden="true"
                       class="iconify"
                       data-icon="feather:more-vertical"
-                    ></i>
+                    />
                   </span>
                 </button>
               </div>
@@ -190,7 +239,7 @@ const dropdown2 = useDropdown(dropdownElement2)
                       aria-hidden="true"
                       class="iconify"
                       data-icon="feather:refresh-cw"
-                    ></i>
+                    />
                     <span>Reset</span>
                   </a>
                   <a class="dropdown-item">
@@ -198,11 +247,15 @@ const dropdown2 = useDropdown(dropdownElement2)
                       aria-hidden="true"
                       class="iconify"
                       data-icon="feather:align-left"
-                    ></i>
+                    />
                     <span>Spelling</span>
                   </a>
                   <a class="dropdown-item">
-                    <i aria-hidden="true" class="iconify" data-icon="feather:at-sign"></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:at-sign"
+                    />
                     <span>Mention</span>
                   </a>
                 </div>
@@ -215,8 +268,13 @@ const dropdown2 = useDropdown(dropdownElement2)
               class="textarea"
               rows="6"
               placeholder="Type your message..."
-            ></textarea>
-            <button type="button" class="button">Send Message</button>
+            />
+            <button
+              type="button"
+              class="button"
+            >
+              Send Message
+            </button>
           </div>
         </div>
       </div>

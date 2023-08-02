@@ -291,8 +291,13 @@
                 margin-inline-start: auto;
                 transform: rotate(0);
                 color: var(--light-text);
-                transition: color 0.3s, background-color 0.3s, border-color 0.3s,
-                  height 0.3s, width 0.3s, transform 0.3s;
+                transition:
+                  color 0.3s,
+                  background-color 0.3s,
+                  border-color 0.3s,
+                  height 0.3s,
+                  width 0.3s,
+                  transform 0.3s;
               }
             }
           }
@@ -616,8 +621,12 @@
               svg {
                 width: 20px;
                 height: 20px;
-                transition: color 0.3s, background-color 0.3s, border-color 0.3s,
-                  height 0.3s, width 0.3s;
+                transition:
+                  color 0.3s,
+                  background-color 0.3s,
+                  border-color 0.3s,
+                  height 0.3s,
+                  width 0.3s;
               }
             }
 
@@ -631,8 +640,12 @@
                 border: none;
                 box-shadow: none;
                 color: var(--muted-grey);
-                transition: color 0.3s, background-color 0.3s, border-color 0.3s,
-                  height 0.3s, width 0.3s;
+                transition:
+                  color 0.3s,
+                  background-color 0.3s,
+                  border-color 0.3s,
+                  height 0.3s,
+                  width 0.3s;
 
                 &:focus {
                   background: var(--body-color);

@@ -30,10 +30,16 @@ useHead({
   <div class="auth-wrapper-inner is-single">
     <!--Fake navigation-->
     <div class="auth-nav">
-      <div class="left"></div>
+      <div class="left" />
       <div class="center">
-        <RouterLink to="/" class="header-item">
-          <AnimatedLogo width="38px" height="38px" />
+        <RouterLink
+          to="/"
+          class="header-item"
+        >
+          <AnimatedLogo
+            width="38px"
+            height="38px"
+          />
         </RouterLink>
       </div>
       <div class="right">
@@ -48,8 +54,8 @@ useHead({
             type="checkbox"
             :checked="!darkmode.isDark"
             @change="darkmode.onChange"
-          />
-          <span></span>
+          >
+          <span />
         </label>
       </div>
     </div>
@@ -61,23 +67,37 @@ useHead({
         <div class="auth-head">
           <h2>Join Us Now.</h2>
           <p>Start by creating your account</p>
-          <RouterLink to="/auth/login-3"> I already have an account </RouterLink>
+          <RouterLink to="/auth/login-3">
+            I already have an account
+          </RouterLink>
         </div>
 
         <!--Form-->
         <div class="form-card">
-          <form method="post" novalidate @submit.prevent="handleSignup">
+          <form
+            method="post"
+            novalidate
+            @submit.prevent="handleSignup"
+          >
             <div class="login-form">
               <!-- Input -->
               <VField>
                 <VControl icon="feather:user">
-                  <VInput type="text" placeholder="Name" autocomplete="name" />
+                  <VInput
+                    type="text"
+                    placeholder="Name"
+                    autocomplete="name"
+                  />
                 </VControl>
               </VField>
               <!-- Input -->
               <VField>
                 <VControl icon="feather:mail">
-                  <VInput type="text" placeholder="Email Address" autocomplete="email" />
+                  <VInput
+                    type="text"
+                    placeholder="Email Address"
+                    autocomplete="email"
+                  />
                 </VControl>
               </VField>
               <!-- Input -->
@@ -93,7 +113,10 @@ useHead({
               <!-- Input -->
               <VField>
                 <VControl icon="feather:lock">
-                  <VInput type="password" placeholder="Repeat Password" />
+                  <VInput
+                    type="password"
+                    placeholder="Repeat Password"
+                  />
                 </VControl>
               </VField>
 
@@ -109,7 +132,13 @@ useHead({
 
               <!-- Submit -->
               <div class="login">
-                <VButton color="primary" type="submit" bold fullwidth raised>
+                <VButton
+                  color="primary"
+                  type="submit"
+                  bold
+                  fullwidth
+                  raised
+                >
                   Sign Up
                 </VButton>
               </div>

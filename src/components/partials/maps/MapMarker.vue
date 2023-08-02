@@ -18,9 +18,16 @@ const props = withDefaults(
 <template>
   <div class="map-box-location">
     <div class="map-box-header">
-      <VBlock :title="props.name" :subtitle="`Open until ${props.openingCount}`" center>
+      <VBlock
+        :title="props.name"
+        :subtitle="`Open until ${props.openingCount}`"
+        center
+      >
         <template #icon>
-          <VAvatar size="small" :picture="props.logo" />
+          <VAvatar
+            size="small"
+            :picture="props.logo"
+          />
         </template>
       </VBlock>
     </div>

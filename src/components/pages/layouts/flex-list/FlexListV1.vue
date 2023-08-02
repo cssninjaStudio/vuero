@@ -62,12 +62,18 @@ const filteredData = computed(() => {
             v-model="filters"
             class="input custom-text-filter"
             placeholder="Search..."
-          />
+          >
         </VControl>
       </VField>
 
       <VButtons>
-        <VButton color="primary" icon="fas fa-plus" elevated> Add User </VButton>
+        <VButton
+          color="primary"
+          icon="fas fa-plus"
+          elevated
+        >
+          Add User
+        </VButton>
       </VButtons>
     </div>
 
@@ -87,12 +93,12 @@ const filteredData = computed(() => {
               class="light-image"
               src="/@src/assets/illustrations/placeholders/search-4.svg"
               alt=""
-            />
+            >
             <img
               class="dark-image"
               src="/@src/assets/illustrations/placeholders/search-4-dark.svg"
               alt=""
-            />
+            >
           </template>
         </VPlaceholderPage>
 
@@ -103,10 +109,21 @@ const filteredData = computed(() => {
           compact
         >
           <template #body>
-            <TransitionGroup name="list" tag="div" class="flex-list-inner">
+            <TransitionGroup
+              name="list"
+              tag="div"
+              class="flex-list-inner"
+            >
               <!--Table item-->
-              <div v-for="item in filteredData" :key="item.id" class="flex-table-item">
-                <VFlexTableCell :column="{ media: true, grow: true }" data-th="Label">
+              <div
+                v-for="item in filteredData"
+                :key="item.id"
+                class="flex-table-item"
+              >
+                <VFlexTableCell
+                  :column="{ media: true, grow: true }"
+                  data-th="Label"
+                >
                   <VAvatar
                     :picture="item.picture"
                     :badge="item.badge"
@@ -128,16 +145,33 @@ const filteredData = computed(() => {
                   <span class="light-text">{{ item.industry }}</span>
                 </VFlexTableCell>
                 <VFlexTableCell>
-                  <VTag v-if="item.status === 'Online'" color="success" rounded>{{
-                    item.status
-                  }}</VTag>
-                  <VTag v-if="item.status === 'Working'" color="info" rounded>{{
-                    item.status
-                  }}</VTag>
-                  <VTag v-if="item.status === 'Suspended'" color="danger" rounded>{{
-                    item.status
-                  }}</VTag>
-                  <VTag v-if="item.status === 'Offline'" rounded>{{ item.status }}</VTag>
+                  <VTag
+                    v-if="item.status === 'Online'"
+                    color="success"
+                    rounded
+                  >
+                    {{ item.status }}
+                  </VTag>
+                  <VTag
+                    v-if="item.status === 'Working'"
+                    color="info"
+                    rounded
+                  >
+                    {{ item.status }}
+                  </VTag>
+                  <VTag
+                    v-if="item.status === 'Suspended'"
+                    color="danger"
+                    rounded
+                  >
+                    {{ item.status }}
+                  </VTag>
+                  <VTag
+                    v-if="item.status === 'Offline'"
+                    rounded
+                  >
+                    {{ item.status }}
+                  </VTag>
                 </VFlexTableCell>
                 <VFlexTableCell>
                   <VAvatarStack

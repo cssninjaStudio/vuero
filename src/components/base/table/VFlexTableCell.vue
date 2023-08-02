@@ -28,7 +28,7 @@ const props = withDefaults(defineProps<VFlexTableCellProps>(), {
     ]"
     :data-th="props.column.label || undefined"
   >
-    <slot></slot>
+    <slot />
   </div>
 </template>
 

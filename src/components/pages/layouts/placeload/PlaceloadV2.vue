@@ -11,19 +11,28 @@ const filters = ref('')
             v-model="filters"
             class="input custom-text-filter"
             placeholder="Search..."
-          />
+          >
         </VControl>
       </VField>
 
       <VButtons>
-        <VButton color="primary" icon="fas fa-plus" elevated> Add User </VButton>
+        <VButton
+          color="primary"
+          icon="fas fa-plus"
+          elevated
+        >
+          Add User
+        </VButton>
       </VButtons>
     </div>
 
     <div class="flex-list-wrapper flex-list-v1">
       <VFlexTable rounded>
         <template #header>
-          <div class="flex-table-header" data-filter-hide>
+          <div
+            class="flex-table-header"
+            data-filter-hide
+          >
             <span class="is-grow">User</span>
             <span>Location</span>
             <span>Industry</span>
@@ -36,7 +45,11 @@ const filters = ref('')
         <template #body>
           <div class="flex-list-inner">
             <!--Table item placeload-->
-            <div v-for="key in 10" :key="key" class="flex-table-item">
+            <div
+              v-for="key in 10"
+              :key="key"
+              class="flex-table-item"
+            >
               <VFlexTableCell :columns="{ media: true, grow: true }">
                 <VPlaceloadAvatar size="medium" />
 
@@ -58,9 +71,18 @@ const filters = ref('')
               </VFlexTableCell>
               <VFlexTableCell>
                 <VAvatarStack class="is-pushed-mobile">
-                  <VPlaceloadAvatar size="small" class="mx-1" />
-                  <VPlaceloadAvatar size="small" class="mx-1" />
-                  <VPlaceloadAvatar size="small" class="mx-1" />
+                  <VPlaceloadAvatar
+                    size="small"
+                    class="mx-1"
+                  />
+                  <VPlaceloadAvatar
+                    size="small"
+                    class="mx-1"
+                  />
+                  <VPlaceloadAvatar
+                    size="small"
+                    class="mx-1"
+                  />
                 </VAvatarStack>
               </VFlexTableCell>
               <VFlexTableCell :column="{ align: 'end' }">

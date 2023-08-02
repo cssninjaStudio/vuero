@@ -1,9 +1,21 @@
 <template>
-  <VDropdown icon="feather:more-vertical" class="end-action" spaced right>
+  <VDropdown
+    icon="feather:more-vertical"
+    class="end-action"
+    spaced
+    right
+  >
     <template #content>
-      <a role="menuitem" href="#" class="dropdown-item is-media">
+      <a
+        role="menuitem"
+        href="#"
+        class="dropdown-item is-media"
+      >
         <div class="icon">
-          <i aria-hidden="true" class="lnil lnil-cloud-download"></i>
+          <i
+            aria-hidden="true"
+            class="lnil lnil-cloud-download"
+          />
         </div>
         <div class="meta">
           <span>Download</span>
@@ -11,9 +23,16 @@
         </div>
       </a>
 
-      <a role="menuitem" href="#" class="dropdown-item is-media">
+      <a
+        role="menuitem"
+        href="#"
+        class="dropdown-item is-media"
+      >
         <div class="icon">
-          <i aria-hidden="true" class="lnil lnil-checkmark-circle"></i>
+          <i
+            aria-hidden="true"
+            class="lnil lnil-checkmark-circle"
+          />
         </div>
         <div class="meta">
           <span>View Task</span>
@@ -21,11 +40,18 @@
         </div>
       </a>
 
-      <hr class="dropdown-divider" />
+      <hr class="dropdown-divider">
 
-      <a role="menuitem" href="#" class="dropdown-item is-media">
+      <a
+        role="menuitem"
+        href="#"
+        class="dropdown-item is-media"
+      >
         <div class="icon">
-          <i aria-hidden="true" class="lnil lnil-cloud-upload"></i>
+          <i
+            aria-hidden="true"
+            class="lnil lnil-cloud-upload"
+          />
         </div>
         <div class="meta">
           <span>Update</span>
@@ -33,9 +59,16 @@
         </div>
       </a>
 
-      <a role="menuitem" href="#" class="dropdown-item is-media">
+      <a
+        role="menuitem"
+        href="#"
+        class="dropdown-item is-media"
+      >
         <div class="icon">
-          <i aria-hidden="true" class="lnil lnil-trash-can-alt-1"></i>
+          <i
+            aria-hidden="true"
+            class="lnil lnil-trash-can-alt-1"
+          />
         </div>
         <div class="meta">
           <span>Delete</span>

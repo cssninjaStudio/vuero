@@ -123,15 +123,26 @@ watchPostEffect(() => {
                     class="icon-box-toggle"
                   >
                     <span class="rotate">
-                      <i aria-hidden="true" class="icon-line-top"></i>
-                      <i aria-hidden="true" class="icon-line-center"></i>
-                      <i aria-hidden="true" class="icon-line-bottom"></i>
+                      <i
+                        aria-hidden="true"
+                        class="icon-line-top"
+                      />
+                      <i
+                        aria-hidden="true"
+                        class="icon-line-center"
+                      />
+                      <i
+                        aria-hidden="true"
+                        class="icon-line-bottom"
+                      />
                     </span>
                   </span>
                 </span>
               </div>
 
-              <h1 class="title is-5">Messages</h1>
+              <h1 class="title is-5">
+                Messages
+              </h1>
             </div>
 
             <!-- Chat Card -->
@@ -149,7 +160,7 @@ watchPostEffect(() => {
                         class="input"
                         aria-label="To"
                         placeholder="Start typing a name"
-                      />
+                      >
                     </div>
                     <div class="icon">
                       <span>To:</span>
@@ -161,24 +172,31 @@ watchPostEffect(() => {
                       @keydown.space.prevent="chat.setAddConversationOpen(false)"
                       @click="chat.setAddConversationOpen(false)"
                     >
-                      <i aria-hidden="true" class="iconify" data-icon="feather:x"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:x"
+                      />
                     </div>
                   </div>
                 </div>
               </template>
 
               <template #body>
-                <li v-if="chat.messages.length === 0" class="no-messages">
+                <li
+                  v-if="chat.messages.length === 0"
+                  class="no-messages"
+                >
                   <img
                     class="light-image"
                     src="/@src/assets/illustrations/placeholders/search-4.svg"
                     alt=""
-                  />
+                  >
                   <img
                     class="dark-image"
                     src="/@src/assets/illustrations/placeholders/search-4-dark.svg"
                     alt=""
-                  />
+                  >
                   <div class="text">
                     <h3>No messages yet</h3>
                     <p>Start the conversation by typing a message</p>
@@ -191,8 +209,11 @@ watchPostEffect(() => {
                   :message="message"
                 />
 
-                <li class="chat-loader" :class="[chat.loading && 'is-active']">
-                  <div class="loader is-loading"></div>
+                <li
+                  class="chat-loader"
+                  :class="[chat.loading && 'is-active']"
+                >
+                  <div class="loader is-loading" />
                 </li>
               </template>
 

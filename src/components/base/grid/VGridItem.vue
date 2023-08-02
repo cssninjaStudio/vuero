@@ -25,7 +25,7 @@ const props = withDefaults(defineProps<VGridItemProps>(), {
 
 <template>
   <div class="v-grid-item">
-    <slot></slot>
+    <slot />
   </div>
 </template>
 

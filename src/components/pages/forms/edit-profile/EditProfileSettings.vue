@@ -25,7 +25,10 @@ const onSave = async () => {
 
 <template>
   <div class="account-box is-form is-footerless">
-    <div class="form-head stuck-header" :class="[isScrolling && 'is-stuck']">
+    <div
+      class="form-head stuck-header"
+      :class="[isScrolling && 'is-stuck']"
+    >
       <div class="form-head-inner">
         <div class="left">
           <h3>Settings</h3>
@@ -55,7 +58,12 @@ const onSave = async () => {
         </div>
       </div>
     </div>
-    <form method="post" novalidate class="form-body" @submit.prevent="onSave">
+    <form
+      method="post"
+      novalidate
+      class="form-body"
+      @submit.prevent="onSave"
+    >
       <!--Fieldset-->
       <div class="fieldset">
         <div class="fieldset-heading">
@@ -124,7 +132,10 @@ const onSave = async () => {
             </VField>
           </div>
           <!--Field-->
-          <div v-if="twoFactor" class="column is-12">
+          <div
+            v-if="twoFactor"
+            class="column is-12"
+          >
             <VField>
               <VControl icon="feather:smartphone">
                 <VInput

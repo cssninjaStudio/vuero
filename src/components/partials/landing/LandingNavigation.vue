@@ -28,9 +28,16 @@ watchEffect(() => {
     aria-label="main navigation"
   >
     <div class="navbar-brand">
-      <a href="/" class="navbar-item" @click.prevent="scrollTo('#app', 800)">
+      <a
+        href="/"
+        class="navbar-item"
+        @click.prevent="scrollTo('#app', 800)"
+      >
         <div class="brand-icon">
-          <AnimatedLogo width="34px" height="34px" />
+          <AnimatedLogo
+            width="34px"
+            height="34px"
+          />
         </div>
       </a>
 
@@ -44,16 +51,22 @@ watchEffect(() => {
         @keydown.space.prevent="isMobileNavOpen = !isMobileNavOpen"
         @click="isMobileNavOpen = !isMobileNavOpen"
       >
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
+        <span aria-hidden="true" />
+        <span aria-hidden="true" />
+        <span aria-hidden="true" />
       </a>
     </div>
 
-    <div class="navbar-menu" :class="[isMobileNavOpen && 'is-active']">
+    <div
+      class="navbar-menu"
+      :class="[isMobileNavOpen && 'is-active']"
+    >
       <div class="navbar-start">
         <div class="navbar-item">
-          <a href="http://go.cssninja.io/buy-vuero" class="nav-link is-active">
+          <a
+            href="http://go.cssninja.io/buy-vuero"
+            class="nav-link is-active"
+          >
             Buy Now
           </a>
         </div>
@@ -89,11 +102,17 @@ watchEffect(() => {
         </div>
 
         <div class="navbar-item">
-          <a href="https://docs.cssninja.io/vuero" class="nav-link">Docs</a>
+          <a
+            href="https://docs.cssninja.io/vuero"
+            class="nav-link"
+          >Docs</a>
         </div>
 
         <div class="navbar-item">
-          <a href="https://cssninja.io" class="nav-link">Support</a>
+          <a
+            href="https://cssninja.io"
+            class="nav-link"
+          >Support</a>
         </div>
       </div>
 
@@ -105,22 +124,40 @@ watchEffect(() => {
               v-model="darkmode.isDark"
               data-cy="dark-mode-toggle"
               type="checkbox"
-            />
+            >
             <span class="toggler">
               <span class="dark">
-                <i aria-hidden="true" class="iconify" data-icon="feather:moon"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:moon"
+                />
               </span>
               <span class="light">
-                <i aria-hidden="true" class="iconify" data-icon="feather:sun"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:sun"
+                />
               </span>
             </span>
           </label>
         </div>
         <div class="navbar-item">
-          <RouterLink to="/auth/login" class="nav-link"> Login </RouterLink>
+          <RouterLink
+            to="/auth/login"
+            class="nav-link"
+          >
+            Login
+          </RouterLink>
         </div>
         <div class="navbar-item">
-          <VButton to="https://go.cssninja.io/buy-vuero" color="primary" rounded raised>
+          <VButton
+            to="https://go.cssninja.io/buy-vuero"
+            color="primary"
+            rounded
+            raised
+          >
             <strong>Buy Vuero</strong>
           </VButton>
         </div>
@@ -236,7 +273,8 @@ watchEffect(() => {
               transform: scale(0, 1);
               transition: -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
               transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-              transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+              transition:
+                transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
                 -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             }
 
@@ -306,8 +344,12 @@ watchEffect(() => {
               width: 53px;
               border: 2px solid var(--primary);
               border-radius: 100px;
-              transition: color 0.3s, background-color 0.3s, border-color 0.3s,
-                height 0.3s, width 0.3s;
+              transition:
+                color 0.3s,
+                background-color 0.3s,
+                border-color 0.3s,
+                height 0.3s,
+                width 0.3s;
 
               .dark,
               .light {

@@ -8,7 +8,7 @@
     "name": "cssninjaStudio <hello@cssninja.io> (https://cssninja.io)"
   },
   "engines": {
-    "node": ">=14.18.0",
+    "node": ">=16.15.0",
     "npm": ">=8"
   },
   "gitHooks": {
@@ -17,20 +17,20 @@
   },
   "lint-staged": {
     "*.ts": [
-      "eslint --fix",
-      "prettier --write"
+      "prettier --write",
+      "eslint --fix"
     ],
     "*.scss": [
-      "stylelint",
-      "prettier --write"
+      "prettier --write",
+      "stylelint"
     ],
     "*.md": [
-      "eslint --fix",
-      "prettier --write"
+      "prettier --write",
+      "eslint --fix"
     ],
     "*.vue": [
-      "eslint --fix",
-      "prettier --write"
+      "prettier --write",
+      "eslint --fix"
     ]
   },
   "scripts": {
@@ -51,7 +51,7 @@
     "preview": "run-p preview:vite preview:json-server",
     "preview:vite": "http-server dist -s --proxy http://localhost:5000? -p 5000",
     "preview:json-server": "json-server -q --read-only --routes ./json-server/routes.json --host 0.0.0.0 --port 8080 ./json-server/db.json",
-    "lint": "run-s lint:doc:fix lint:eslint:fix lint:stylelint:fix lint:prettier:fix",
+    "lint": "run-s lint:doc:fix lint:prettier:fix lint:eslint:fix lint:stylelint:fix ",
     "lint:prettier": "prettier --check \"./src/**/*.(ts|vue|css|scss)\"",
     "lint:prettier:fix": "prettier --write \"./src/**/*.(ts|vue|css|scss)\"",
     "lint:eslint": "eslint --ext .ts,.vue ./src",
@@ -59,8 +59,8 @@
     "lint:stylelint": "stylelint ./src/**/*.{vue,css,scss}",
     "lint:stylelint:fix": "stylelint ./src/**/*.{vue,css,scss} --fix",
     "lint:doc:fix": "run-s lint:doc:fix:*",
-    "lint:doc:fix:eslint": "eslint --fix --ext .md ./documentation",
     "lint:doc:fix:prettier": "prettier --write \"./documentation/**/*.(md)\"",
+    "lint:doc:fix:eslint": "eslint --fix --ext .md ./documentation",
     "test": "run-p test:lint test:tsc test:e2e",
     "test:tsc": "vue-tsc --noEmit",
     "test:lint": "run-p lint:eslint lint:stylelint lint:prettier",
@@ -153,11 +153,10 @@
     "cross-env": "7.0.3",
     "cypress": "12.17.3",
     "eslint": "8.46.0",
-    "eslint-config-prettier": "8.8.0",
+    "eslint-config-prettier": "8.9.0",
     "eslint-plugin-frontmatter": "0.0.8",
     "eslint-plugin-md": "1.0.19",
-    "eslint-plugin-prettier": "4.2.1",
-    "eslint-plugin-prettier-vue": "4.2.0",
+    "eslint-plugin-prettier": "5.0.0",
     "eslint-plugin-vue": "9.16.1",
     "eslint-plugin-vuejs-accessibility": "2.1.0",
     "esno": "^0.17.0",
@@ -174,7 +173,7 @@
     "plyr": "3.7.8",
     "postcss-html": "1.5.0",
     "postcss-scss": "4.0.6",
-    "prettier": "2.8.8",
+    "prettier": "3.0.0",
     "prismjs": "1.29.0",
     "rehype-autolink-headings": "6.1.1",
     "rehype-external-links": "2.1.0",
@@ -197,7 +196,7 @@
     "stylelint-config-recommended-vue": "1.5.0",
     "stylelint-config-standard": "34.0.0",
     "stylelint-config-standard-scss": "10.0.0",
-    "stylelint-prettier": "3.0.0",
+    "stylelint-prettier": "4.0.2",
     "stylelint-scss": "5.0.1",
     "typescript": "5.1.6",
     "unified": "10.1.2",

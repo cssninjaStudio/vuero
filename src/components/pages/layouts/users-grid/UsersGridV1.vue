@@ -45,7 +45,7 @@ function getAvatarData(user: any): VAvatarProps {
           v-model="filters"
           class="input custom-text-filter"
           placeholder="Search..."
-        />
+        >
       </VControl>
 
       <VButtons>
@@ -59,9 +59,15 @@ function getAvatarData(user: any): VAvatarProps {
             />
           </VControl>
         </VField>
-        <VButton color="primary" raised>
+        <VButton
+          color="primary"
+          raised
+        >
           <span class="icon">
-            <i aria-hidden="true" class="fas fa-plus"></i>
+            <i
+              aria-hidden="true"
+              class="fas fa-plus"
+            />
           </span>
           <span>Add User</span>
         </VButton>
@@ -83,21 +89,35 @@ function getAvatarData(user: any): VAvatarProps {
             class="light-image"
             src="/@src/assets/illustrations/placeholders/search-4.svg"
             alt=""
-          />
+          >
           <img
             class="dark-image"
             src="/@src/assets/illustrations/placeholders/search-4-dark.svg"
             alt=""
-          />
+          >
         </template>
       </VPlaceholderPage>
 
-      <TransitionGroup name="list" tag="div" class="columns is-multiline">
+      <TransitionGroup
+        name="list"
+        tag="div"
+        class="columns is-multiline"
+      >
         <!--Grid item-->
-        <div v-for="item in filteredData" :key="item.id" class="column is-3">
+        <div
+          v-for="item in filteredData"
+          :key="item.id"
+          class="column is-3"
+        >
           <div class="grid-item">
-            <VAvatar :picture="item.avatar" :badge="item.badge" size="big" />
-            <h3 class="dark-inverted">{{ item.fullName }}</h3>
+            <VAvatar
+              :picture="item.avatar"
+              :badge="item.badge"
+              size="big"
+            />
+            <h3 class="dark-inverted">
+              {{ item.fullName }}
+            </h3>
             <p>{{ item.position }}</p>
             <div class="people">
               <VAvatar
@@ -110,7 +130,11 @@ function getAvatarData(user: any): VAvatarProps {
             <div class="buttons">
               <button class="button v-button is-dark-outlined">
                 <span class="icon">
-                  <i aria-hidden="true" class="iconify" data-icon="feather:user"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:user"
+                  />
                 </span>
                 <span>Profile</span>
               </button>
@@ -120,7 +144,7 @@ function getAvatarData(user: any): VAvatarProps {
                     aria-hidden="true"
                     class="iconify"
                     data-icon="feather:message-circle"
-                  ></i>
+                  />
                 </span>
                 <span>Talk</span>
               </button>

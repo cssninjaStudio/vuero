@@ -125,7 +125,12 @@ debouncedWatch(
 </script>
 
 <template>
-  <form method="post" novalidate class="vuero-demos" @submit.prevent>
+  <form
+    method="post"
+    novalidate
+    class="vuero-demos"
+    @submit.prevent
+  >
     <div class="demo-search-section">
       <VFlex justify-content="center">
         <VField :label="searchLabel">
@@ -153,12 +158,12 @@ debouncedWatch(
             class="light-image"
             src="/@src/assets/illustrations/placeholders/search-4.svg"
             alt=""
-          />
+          >
           <img
             class="dark-image"
             src="/@src/assets/illustrations/placeholders/search-4-dark.svg"
             alt=""
-          />
+          >
         </template>
 
         <template #action>
@@ -174,18 +179,21 @@ debouncedWatch(
     </div>
 
     <!--ADMIN-->
-    <div v-if="sidebarDemosFiltered.length > 0" class="demo-section">
+    <div
+      v-if="sidebarDemosFiltered.length > 0"
+      class="demo-section"
+    >
       <div class="demo-section-title">
         <img
           class="light-image-block-l"
           src="/images/icons/components/layout-1.svg"
           alt=""
-        />
+        >
         <img
           class="dark-image-block-l"
           src="/images/icons/components/layout-1-dark.svg"
           alt=""
-        />
+        >
         <div class="title-meta">
           <h3>Sidebar Layout</h3>
           <p>With a side navigation</p>
@@ -210,20 +218,23 @@ debouncedWatch(
                 )?.click()
             "
           >
-            <span v-if="item.new" class="new-tag">New</span>
+            <span
+              v-if="item.new"
+              class="new-tag"
+            >New</span>
             <img
               class="light-image-block-l"
               :src="item.screenshot.light"
               alt=""
               loading="lazy"
-            />
+            >
             <img
               class="dark-image-block-l"
               :src="item.screenshot.dark"
               alt=""
               loading="lazy"
-            />
-            <div class="circle-overlay"></div>
+            >
+            <div class="circle-overlay" />
             <div class="demo-info has-text-centered">
               <div class="wrapper">
                 <div class="demo-title">
@@ -231,18 +242,21 @@ debouncedWatch(
                   <span>{{ item.name }}</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="item.route.path" tabindex="-1">
+                  <RouterLink
+                    :to="item.route.path"
+                    tabindex="-1"
+                  >
                     Go to demo
                     <i
                       aria-hidden="true"
                       class="iconify rtl-hidden"
                       data-icon="lucide:arrow-right"
-                    ></i>
+                    />
                     <i
                       aria-hidden="true"
                       class="iconify ltr-hidden"
                       data-icon="lucide:arrow-left"
-                    ></i>
+                    />
                   </RouterLink>
                 </div>
               </div>
@@ -253,18 +267,21 @@ debouncedWatch(
     </div>
 
     <!--WEBAPP-->
-    <div v-if="navbarDemosFiltered.length > 0" class="demo-section">
+    <div
+      v-if="navbarDemosFiltered.length > 0"
+      class="demo-section"
+    >
       <div class="demo-section-title">
         <img
           class="light-image-block-l"
           src="/images/icons/components/layout-2.svg"
           alt=""
-        />
+        >
         <img
           class="dark-image-block-l"
           src="/images/icons/components/layout-2-dark.svg"
           alt=""
-        />
+        >
         <div class="title-meta">
           <h3>Navbar Layout</h3>
           <p>With a top navigation</p>
@@ -278,21 +295,27 @@ debouncedWatch(
           :key="index"
           class="column is-4 has-text-centered"
         >
-          <figure class="vuero-demo-wrapper loaded" tabindex="0">
-            <span v-if="item.new" class="new-tag">New</span>
+          <figure
+            class="vuero-demo-wrapper loaded"
+            tabindex="0"
+          >
+            <span
+              v-if="item.new"
+              class="new-tag"
+            >New</span>
             <img
               class="light-image-block-l"
               :src="item.screenshot.light"
               alt=""
               loading="lazy"
-            />
+            >
             <img
               class="dark-image-block-l"
               :src="item.screenshot.dark"
               alt=""
               loading="lazy"
-            />
-            <div class="circle-overlay"></div>
+            >
+            <div class="circle-overlay" />
             <div class="demo-info has-text-centered">
               <div class="wrapper">
                 <div class="demo-title">
@@ -300,18 +323,21 @@ debouncedWatch(
                   <span>{{ item.name }}</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="item.route.path" tabindex="-1">
+                  <RouterLink
+                    :to="item.route.path"
+                    tabindex="-1"
+                  >
                     Go to demo
                     <i
                       aria-hidden="true"
                       class="iconify rtl-hidden"
                       data-icon="lucide:arrow-right"
-                    ></i>
+                    />
                     <i
                       aria-hidden="true"
                       class="iconify ltr-hidden"
                       data-icon="lucide:arrow-left"
-                    ></i>
+                    />
                   </RouterLink>
                 </div>
               </div>
@@ -322,18 +348,21 @@ debouncedWatch(
     </div>
 
     <!--MINIMAL-->
-    <div v-if="minimalDemosFiltered.length > 0" class="demo-section">
+    <div
+      v-if="minimalDemosFiltered.length > 0"
+      class="demo-section"
+    >
       <div class="demo-section-title">
         <img
           class="light-image-block-l"
           src="/images/icons/components/layout-3.svg"
           alt=""
-        />
+        >
         <img
           class="dark-image-block-l"
           src="/images/icons/components/layout-3-dark.svg"
           alt=""
-        />
+        >
         <div class="title-meta">
           <h3>Minimal Layout</h3>
           <p>Without any navigation</p>
@@ -347,21 +376,27 @@ debouncedWatch(
           :key="index"
           class="column is-4 has-text-centered"
         >
-          <figure class="vuero-demo-wrapper loaded" tabindex="0">
-            <span v-if="item.new" class="new-tag">New</span>
+          <figure
+            class="vuero-demo-wrapper loaded"
+            tabindex="0"
+          >
+            <span
+              v-if="item.new"
+              class="new-tag"
+            >New</span>
             <img
               class="light-image-block-l"
               :src="item.screenshot.light"
               alt=""
               loading="lazy"
-            />
+            >
             <img
               class="dark-image-block-l"
               :src="item.screenshot.dark"
               alt=""
               loading="lazy"
-            />
-            <div class="circle-overlay"></div>
+            >
+            <div class="circle-overlay" />
             <div class="demo-info has-text-centered">
               <div class="wrapper">
                 <div class="demo-title">
@@ -369,18 +404,21 @@ debouncedWatch(
                   <span>{{ item.name }}</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="item.route.path" tabindex="-1">
+                  <RouterLink
+                    :to="item.route.path"
+                    tabindex="-1"
+                  >
                     Go to demo
                     <i
                       aria-hidden="true"
                       class="iconify rtl-hidden"
                       data-icon="lucide:arrow-right"
-                    ></i>
+                    />
                     <i
                       aria-hidden="true"
                       class="iconify ltr-hidden"
                       data-icon="lucide:arrow-left"
-                    ></i>
+                    />
                   </RouterLink>
                 </div>
               </div>
@@ -391,18 +429,21 @@ debouncedWatch(
     </div>
 
     <!--AUTH-->
-    <div v-if="authDemosFiltered.length > 0" class="demo-section">
+    <div
+      v-if="authDemosFiltered.length > 0"
+      class="demo-section"
+    >
       <div class="demo-section-title">
         <img
           class="light-image-block-l"
           src="/images/icons/components/layout-3.svg"
           alt=""
-        />
+        >
         <img
           class="dark-image-block-l"
           src="/images/icons/components/layout-3-dark.svg"
           alt=""
-        />
+        >
         <div class="title-meta">
           <h3>Auth</h3>
           <p>Sign-In &amp; Sign-Up starters</p>
@@ -416,21 +457,27 @@ debouncedWatch(
           :key="index"
           class="column is-4 has-text-centered"
         >
-          <figure class="vuero-demo-wrapper loaded" tabindex="0">
-            <span v-if="item.new" class="new-tag">New</span>
+          <figure
+            class="vuero-demo-wrapper loaded"
+            tabindex="0"
+          >
+            <span
+              v-if="item.new"
+              class="new-tag"
+            >New</span>
             <img
               class="light-image-block-l"
               :src="item.screenshot.light"
               alt=""
               loading="lazy"
-            />
+            >
             <img
               class="dark-image-block-l"
               :src="item.screenshot.dark"
               alt=""
               loading="lazy"
-            />
-            <div class="circle-overlay"></div>
+            >
+            <div class="circle-overlay" />
             <div class="demo-info has-text-centered">
               <div class="wrapper">
                 <div class="demo-title">
@@ -438,18 +485,21 @@ debouncedWatch(
                   <span>{{ item.name }}</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="item.route.path" tabindex="-1">
+                  <RouterLink
+                    :to="item.route.path"
+                    tabindex="-1"
+                  >
                     Go to demo
                     <i
                       aria-hidden="true"
                       class="iconify rtl-hidden"
                       data-icon="lucide:arrow-right"
-                    ></i>
+                    />
                     <i
                       aria-hidden="true"
                       class="iconify ltr-hidden"
                       data-icon="lucide:arrow-left"
-                    ></i>
+                    />
                   </RouterLink>
                 </div>
               </div>
@@ -460,18 +510,21 @@ debouncedWatch(
     </div>
 
     <!--TEMPLATES-->
-    <div v-if="templatesDemosFiltered.length > 0" class="demo-section">
+    <div
+      v-if="templatesDemosFiltered.length > 0"
+      class="demo-section"
+    >
       <div class="demo-section-title">
         <img
           class="light-image-block-l"
           src="/images/icons/components/layout-3.svg"
           alt=""
-        />
+        >
         <img
           class="dark-image-block-l"
           src="/images/icons/components/layout-3-dark.svg"
           alt=""
-        />
+        >
         <div class="title-meta">
           <h3>Templates</h3>
           <p>Blank starters to start fast</p>
@@ -485,21 +538,27 @@ debouncedWatch(
           :key="index"
           class="column is-4 has-text-centered"
         >
-          <figure class="vuero-demo-wrapper loaded" tabindex="0">
-            <span v-if="item.new" class="new-tag">New</span>
+          <figure
+            class="vuero-demo-wrapper loaded"
+            tabindex="0"
+          >
+            <span
+              v-if="item.new"
+              class="new-tag"
+            >New</span>
             <img
               class="light-image-block-l"
               :src="item.screenshot.light"
               alt=""
               loading="lazy"
-            />
+            >
             <img
               class="dark-image-block-l"
               :src="item.screenshot.dark"
               alt=""
               loading="lazy"
-            />
-            <div class="circle-overlay"></div>
+            >
+            <div class="circle-overlay" />
             <div class="demo-info has-text-centered">
               <div class="wrapper">
                 <div class="demo-title">
@@ -507,18 +566,21 @@ debouncedWatch(
                   <span>{{ item.name }}</span>
                 </div>
                 <div class="demo-link">
-                  <RouterLink :to="item.route.path" tabindex="-1">
+                  <RouterLink
+                    :to="item.route.path"
+                    tabindex="-1"
+                  >
                     Go to demo
                     <i
                       aria-hidden="true"
                       class="iconify rtl-hidden"
                       data-icon="lucide:arrow-right"
-                    ></i>
+                    />
                     <i
                       aria-hidden="true"
                       class="iconify ltr-hidden"
                       data-icon="lucide:arrow-left"
-                    ></i>
+                    />
                   </RouterLink>
                 </div>
               </div>
@@ -706,7 +768,10 @@ debouncedWatch(
   .demo-link {
     opacity: 0;
     transform: translateY(20px);
-    transition: transform 0.3s, opacity 0.3s, color 0.3s;
+    transition:
+      transform 0.3s,
+      opacity 0.3s,
+      color 0.3s;
     transition-delay: 0.2s;
 
     a {

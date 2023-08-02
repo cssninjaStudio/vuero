@@ -62,7 +62,10 @@ onUnmounted(() => {
 
 <template>
   <Teleport to="body">
-    <FocusTrap v-if="open" :initial-focus="() => ($refs.closeButton as any)?.el">
+    <FocusTrap
+      v-if="open"
+      :initial-focus="() => ($refs.closeButton as any)?.el"
+    >
       <component
         :is="is"
         role="dialog"
@@ -77,7 +80,7 @@ onUnmounted(() => {
           role="button"
           @keydown.space.prevent="() => noclose === false && emit('close')"
           @click="() => noclose === false && emit('close')"
-        ></div>
+        />
         <div class="modal-content">
           <div class="modal-card">
             <header class="modal-card-head">
@@ -90,12 +93,19 @@ onUnmounted(() => {
                 @keydown.space.prevent="emit('close')"
                 @click="emit('close')"
               >
-                <i aria-hidden="true" class="iconify" data-icon="feather:x"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:x"
+                />
               </button>
             </header>
-            <div class="modal-card-body" :class="[props.tabs && 'has-tabs']">
+            <div
+              class="modal-card-body"
+              :class="[props.tabs && 'has-tabs']"
+            >
               <div class="inner-content">
-                <slot name="content"></slot>
+                <slot name="content" />
               </div>
             </div>
             <div
@@ -105,7 +115,10 @@ onUnmounted(() => {
                 actions === 'right' && 'is-end',
               ]"
             >
-              <slot name="cancel" :close="() => emit('close')">
+              <slot
+                name="cancel"
+                :close="() => emit('close')"
+              >
                 <a
                   tabindex="0"
                   role="button"
@@ -117,7 +130,10 @@ onUnmounted(() => {
                   {{ cancelLabel }}
                 </a>
               </slot>
-              <slot name="action" :close="() => emit('close')"></slot>
+              <slot
+                name="action"
+                :close="() => emit('close')"
+              />
             </div>
           </div>
         </div>

@@ -20,7 +20,7 @@ const activeTab = ref<TabId>('team')
       role="button"
       @keydown.space.prevent="panels.close()"
       @click="panels.close()"
-    ></div>
+    />
 
     <div class="right-panel">
       <div class="right-panel-head">
@@ -54,8 +54,7 @@ const activeTab = ref<TabId>('team')
                   role="button"
                   @keydown.space.prevent="activeTab = 'team'"
                   @click="activeTab = 'team'"
-                  ><span>Team</span></a
-                >
+                ><span>Team</span></a>
               </li>
               <li :class="[activeTab === 'projects' && 'is-active']">
                 <a
@@ -63,8 +62,7 @@ const activeTab = ref<TabId>('team')
                   role="button"
                   @keydown.space.prevent="activeTab = 'projects'"
                   @click="activeTab = 'projects'"
-                  ><span>Projects</span></a
-                >
+                ><span>Projects</span></a>
               </li>
               <li :class="[activeTab === 'schedule' && 'is-active']">
                 <a
@@ -72,10 +70,9 @@ const activeTab = ref<TabId>('team')
                   role="button"
                   @keydown.space.prevent="activeTab = 'schedule'"
                   @click="activeTab = 'schedule'"
-                  ><span>Schedule</span></a
-                >
+                ><span>Schedule</span></a>
               </li>
-              <li class="tab-naver"></li>
+              <li class="tab-naver" />
             </ul>
           </div>
         </div>
@@ -96,7 +93,11 @@ const activeTab = ref<TabId>('team')
               <div class="meta">
                 <span>Joshua S.</span>
                 <span>
-                  <i aria-hidden="true" class="iconify" data-icon="feather:map-pin"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:map-pin"
+                  />
                   Las Vegas, NV
                 </span>
               </div>
@@ -105,12 +106,12 @@ const activeTab = ref<TabId>('team')
                   aria-hidden="true"
                   class="iconify rtl-hidden"
                   data-icon="feather:arrow-right"
-                ></i>
+                />
                 <i
                   aria-hidden="true"
                   class="iconify ltr-hidden"
                   data-icon="feather:arrow-left"
-                ></i>
+                />
               </a>
             </div>
 
@@ -124,7 +125,11 @@ const activeTab = ref<TabId>('team')
               <div class="meta">
                 <span>Melany W.</span>
                 <span>
-                  <i aria-hidden="true" class="iconify" data-icon="feather:map-pin"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:map-pin"
+                  />
                   San Jose, CA
                 </span>
               </div>
@@ -133,12 +138,12 @@ const activeTab = ref<TabId>('team')
                   aria-hidden="true"
                   class="iconify rtl-hidden"
                   data-icon="feather:arrow-right"
-                ></i>
+                />
                 <i
                   aria-hidden="true"
                   class="iconify ltr-hidden"
                   data-icon="feather:arrow-left"
-                ></i>
+                />
               </a>
             </div>
 
@@ -152,7 +157,11 @@ const activeTab = ref<TabId>('team')
               <div class="meta">
                 <span>Esteban C.</span>
                 <span>
-                  <i aria-hidden="true" class="iconify" data-icon="feather:map-pin"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:map-pin"
+                  />
                   Miami, FL
                 </span>
               </div>
@@ -161,12 +170,12 @@ const activeTab = ref<TabId>('team')
                   aria-hidden="true"
                   class="iconify rtl-hidden"
                   data-icon="feather:arrow-right"
-                ></i>
+                />
                 <i
                   aria-hidden="true"
                   class="iconify ltr-hidden"
                   data-icon="feather:arrow-left"
-                ></i>
+                />
               </a>
             </div>
 
@@ -180,7 +189,11 @@ const activeTab = ref<TabId>('team')
               <div class="meta">
                 <span>Tara S.</span>
                 <span>
-                  <i aria-hidden="true" class="iconify" data-icon="feather:map-pin"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:map-pin"
+                  />
                   New York, NY
                 </span>
               </div>
@@ -189,12 +202,12 @@ const activeTab = ref<TabId>('team')
                   aria-hidden="true"
                   class="iconify rtl-hidden"
                   data-icon="feather:arrow-right"
-                ></i>
+                />
                 <i
                   aria-hidden="true"
                   class="iconify ltr-hidden"
                   data-icon="feather:arrow-left"
-                ></i>
+                />
               </a>
             </div>
           </div>
@@ -212,7 +225,7 @@ const activeTab = ref<TabId>('team')
                   src="/images/icons/logos/slicer.svg"
                   alt=""
                   @error.once="onceImageErrored(150)"
-                />
+                >
                 <div class="meta">
                   <span>The slicer project</span>
                   <span>getslicer.io</span>
@@ -222,23 +235,35 @@ const activeTab = ref<TabId>('team')
                     aria-hidden="true"
                     class="iconify rtl-hidden"
                     data-icon="feather:arrow-right"
-                  ></i>
+                  />
                   <i
                     aria-hidden="true"
                     class="iconify ltr-hidden"
                     data-icon="feather:arrow-left"
-                  ></i>
+                  />
                 </a>
               </div>
               <div class="project-foot">
-                <VProgress size="tiny" :value="31" />
+                <VProgress
+                  size="tiny"
+                  :value="31"
+                />
                 <div class="foot-stats">
                   <span>5 / 24</span>
 
                   <div class="avatar-stack">
-                    <VAvatar size="small" picture="/demo/avatars/5.jpg" />
-                    <VAvatar size="small" picture="/demo/avatars/7.jpg" />
-                    <VAvatar size="small" picture="/images/avatars/svg/vuero-1.svg" />
+                    <VAvatar
+                      size="small"
+                      picture="/demo/avatars/5.jpg"
+                    />
+                    <VAvatar
+                      size="small"
+                      picture="/demo/avatars/7.jpg"
+                    />
+                    <VAvatar
+                      size="small"
+                      picture="/images/avatars/svg/vuero-1.svg"
+                    />
                   </div>
                 </div>
               </div>
@@ -252,7 +277,7 @@ const activeTab = ref<TabId>('team')
                   src="/images/icons/logos/metamovies.svg"
                   alt=""
                   @error.once="onceImageErrored(150)"
-                />
+                >
                 <div class="meta">
                   <span>Metamovies reworked</span>
                   <span>metamovies.co</span>
@@ -262,22 +287,31 @@ const activeTab = ref<TabId>('team')
                     aria-hidden="true"
                     class="iconify rtl-hidden"
                     data-icon="feather:arrow-right"
-                  ></i>
+                  />
                   <i
                     aria-hidden="true"
                     class="iconify ltr-hidden"
                     data-icon="feather:arrow-left"
-                  ></i>
+                  />
                 </a>
               </div>
               <div class="project-foot">
-                <VProgress size="tiny" :value="84" />
+                <VProgress
+                  size="tiny"
+                  :value="84"
+                />
                 <div class="foot-stats">
                   <span>28 / 31</span>
 
                   <div class="avatar-stack">
-                    <VAvatar size="small" picture="/demo/avatars/13.jpg" />
-                    <VAvatar size="small" picture="/demo/avatars/18.jpg" />
+                    <VAvatar
+                      size="small"
+                      picture="/demo/avatars/13.jpg"
+                    />
+                    <VAvatar
+                      size="small"
+                      picture="/demo/avatars/18.jpg"
+                    />
                   </div>
                 </div>
               </div>
@@ -291,7 +325,7 @@ const activeTab = ref<TabId>('team')
                   src="/images/icons/logos/fastpizza.svg"
                   alt=""
                   @error.once="onceImageErrored(150)"
-                />
+                >
                 <div class="meta">
                   <span>Fast Pizza redesign</span>
                   <span>fastpizza.com</span>
@@ -301,22 +335,31 @@ const activeTab = ref<TabId>('team')
                     aria-hidden="true"
                     class="iconify rtl-hidden"
                     data-icon="feather:arrow-right"
-                  ></i>
+                  />
                   <i
                     aria-hidden="true"
                     class="iconify ltr-hidden"
                     data-icon="feather:arrow-left"
-                  ></i>
+                  />
                 </a>
               </div>
               <div class="project-foot">
-                <VProgress size="tiny" :value="60" />
+                <VProgress
+                  size="tiny"
+                  :value="60"
+                />
                 <div class="foot-stats">
                   <span>25 / 39</span>
 
                   <div class="avatar-stack">
-                    <VAvatar size="small" picture="/demo/avatars/7.jpg" />
-                    <VAvatar size="small" picture="/demo/avatars/25.jpg" />
+                    <VAvatar
+                      size="small"
+                      picture="/demo/avatars/7.jpg"
+                    />
+                    <VAvatar
+                      size="small"
+                      picture="/demo/avatars/25.jpg"
+                    />
                   </div>
                 </div>
               </div>
@@ -337,7 +380,7 @@ const activeTab = ref<TabId>('team')
                     aria-hidden="true"
                     class="iconify"
                     data-icon="feather:phone-call"
-                  ></i>
+                  />
                 </div>
                 <div class="timeline-content">
                   <p>Call Danny at Colby's</p>
@@ -352,7 +395,7 @@ const activeTab = ref<TabId>('team')
                     src="/demo/avatars/7.jpg"
                     alt=""
                     @error.once="onceImageErrored(150)"
-                  />
+                  >
                 </div>
                 <div class="timeline-content">
                   <p>Meeting with Alice</p>
@@ -366,7 +409,7 @@ const activeTab = ref<TabId>('team')
                     aria-hidden="true"
                     class="iconify"
                     data-icon="feather:message-circle"
-                  ></i>
+                  />
                 </div>
                 <div class="timeline-content">
                   <p>Answer Annie's message</p>
@@ -376,7 +419,11 @@ const activeTab = ref<TabId>('team')
               <!--Timeline item-->
               <div class="timeline-item">
                 <div class="timeline-icon">
-                  <i aria-hidden="true" class="iconify" data-icon="feather:mail"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:mail"
+                  />
                 </div>
                 <div class="timeline-content">
                   <p>Send new campaign</p>
@@ -386,7 +433,11 @@ const activeTab = ref<TabId>('team')
               <!--Timeline item-->
               <div class="timeline-item">
                 <div class="timeline-icon">
-                  <i aria-hidden="true" class="iconify" data-icon="feather:smile"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:smile"
+                  />
                 </div>
                 <div class="timeline-content">
                   <p>Project review</p>
@@ -400,7 +451,7 @@ const activeTab = ref<TabId>('team')
                     aria-hidden="true"
                     class="iconify"
                     data-icon="feather:phone-call"
-                  ></i>
+                  />
                 </div>
                 <div class="timeline-content">
                   <p>Call Trisha Jackson</p>
@@ -410,7 +461,11 @@ const activeTab = ref<TabId>('team')
               <!--Timeline item-->
               <div class="timeline-item">
                 <div class="timeline-icon">
-                  <i aria-hidden="true" class="iconify" data-icon="feather:feather"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:feather"
+                  />
                 </div>
                 <div class="timeline-content">
                   <p>Write proposal for Don</p>
@@ -548,8 +603,12 @@ const activeTab = ref<TabId>('team')
               background: var(--white);
               border: 1px solid var(--fade-grey-dark-3);
               border-radius: var(--radius-rounded);
-              transition: color 0.3s, background-color 0.3s, border-color 0.3s,
-                height 0.3s, width 0.3s;
+              transition:
+                color 0.3s,
+                background-color 0.3s,
+                border-color 0.3s,
+                height 0.3s,
+                width 0.3s;
 
               &:hover,
               &:focus {

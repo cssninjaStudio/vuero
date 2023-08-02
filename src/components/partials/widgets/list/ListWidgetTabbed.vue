@@ -20,9 +20,14 @@ const toggleTabs = () => {
 </script>
 
 <template>
-  <div class="list-widget tabbed-widget" :class="[straight && 'is-straight']">
+  <div
+    class="list-widget tabbed-widget"
+    :class="[straight && 'is-straight']"
+  >
     <div class="widget-head">
-      <h3 class="dark-inverted">{{ title }}</h3>
+      <h3 class="dark-inverted">
+        {{ title }}
+      </h3>
       <div class="tabbed-controls">
         <a
           class="tabbed-control"
@@ -44,19 +49,25 @@ const toggleTabs = () => {
         >
           <span>{{ labels[1] }}</span>
         </a>
-        <div class="tabbed-naver"></div>
+        <div class="tabbed-naver" />
       </div>
     </div>
 
-    <div class="inner-list-wrapper" :class="[!state && 'is-active']">
+    <div
+      class="inner-list-wrapper"
+      :class="[!state && 'is-active']"
+    >
       <div class="inner-list">
-        <slot name="tab1"></slot>
+        <slot name="tab1" />
       </div>
     </div>
 
-    <div class="inner-list-wrapper" :class="[state && 'is-active']">
+    <div
+      class="inner-list-wrapper"
+      :class="[state && 'is-active']"
+    >
       <div class="inner-list">
-        <slot name="tab2"></slot>
+        <slot name="tab2" />
       </div>
     </div>
   </div>

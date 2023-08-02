@@ -7,7 +7,10 @@ import {
 </script>
 
 <template>
-  <div id="content-tab" class="tab-content is-active">
+  <div
+    id="content-tab"
+    class="tab-content is-active"
+  >
     <div class="body-title">
       <h3>Content Stats</h3>
       <VField class="is-minimal-select">
@@ -28,7 +31,9 @@ import {
       <div class="column is-12 h-hidden-mobile">
         <OverviewCard heatmap>
           <div class="card-head">
-            <h3 class="dark-inverted">Posting Habits</h3>
+            <h3 class="dark-inverted">
+              Posting Habits
+            </h3>
           </div>
 
           <Heatmap />
@@ -40,8 +45,14 @@ import {
         <OverviewCard>
           <div class="card-head">
             <h4>Post Day</h4>
-            <VIconBox color="green" rounded>
-              <i aria-hidden="true" class="fas fa-calendar-day"></i>
+            <VIconBox
+              color="green"
+              rounded
+            >
+              <i
+                aria-hidden="true"
+                class="fas fa-calendar-day"
+              />
             </VIconBox>
           </div>
           <div class="card-metric is-smaller">
@@ -58,8 +69,14 @@ import {
         <OverviewCard>
           <div class="card-head">
             <h4>hashtags</h4>
-            <VIconBox color="info" rounded>
-              <i aria-hidden="true" class="fab fa-slack-hash"></i>
+            <VIconBox
+              color="info"
+              rounded
+            >
+              <i
+                aria-hidden="true"
+                class="fab fa-slack-hash"
+              />
             </VIconBox>
           </div>
           <div class="card-metric is-smaller">
@@ -76,8 +93,14 @@ import {
         <OverviewCard>
           <div class="card-head">
             <h4>Filters</h4>
-            <VIconBox color="orange" rounded>
-              <i aria-hidden="true" class="fas fa-camera"></i>
+            <VIconBox
+              color="orange"
+              rounded
+            >
+              <i
+                aria-hidden="true"
+                class="fas fa-camera"
+              />
             </VIconBox>
           </div>
           <div class="card-metric is-smaller">
@@ -108,9 +131,8 @@ import {
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:arrow-right"
-                      ></i>
-                      +0.8%</span
-                    >
+                      />
+                      +0.8%</span>
                     more than usual.
                   </span>
                 </div>
@@ -132,9 +154,8 @@ import {
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:arrow-right"
-                      ></i>
-                      -0.2%</span
-                    >
+                      />
+                      -0.2%</span>
                     less than ususal.
                   </span>
                 </div>
@@ -156,9 +177,8 @@ import {
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:arrow-right"
-                      ></i>
-                      +1.2%</span
-                    >
+                      />
+                      +1.2%</span>
                     more than ususal.
                   </span>
                 </div>
@@ -180,9 +200,8 @@ import {
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:arrow-right"
-                      ></i>
-                      +4.2%</span
-                    >
+                      />
+                      +4.2%</span>
                     more than ususal.
                   </span>
                 </div>
@@ -199,7 +218,10 @@ import {
             <div class="post-stats">
               <span>Most Liked Posts</span>
               <div class="post-stat">
-                <i aria-hidden="true" class="fas fa-heart text-h-red"></i>
+                <i
+                  aria-hidden="true"
+                  class="fas fa-heart text-h-red"
+                />
                 <span class="count dark-inverted">15.9K</span>
               </div>
             </div>
@@ -210,7 +232,7 @@ import {
                 src="/demo/photos/30.jpg"
                 alt=""
                 @error.once="onceImageErrored(1280, 960)"
-              />
+              >
             </figure>
           </div>
           <div class="card-content post-group-wrap">
@@ -220,28 +242,28 @@ import {
                   src="/demo/photos/33.jpg"
                   alt=""
                   @error.once="onceImageErrored(1280, 960)"
-                />
+                >
               </a>
               <a>
                 <img
                   src="/demo/photos/34.jpg"
                   alt=""
                   @error.once="onceImageErrored(1280, 960)"
-                />
+                >
               </a>
               <a>
                 <img
                   src="/demo/photos/35.jpeg"
                   alt=""
                   @error.once="onceImageErrored(1280, 960)"
-                />
+                >
               </a>
               <a>
                 <img
                   src="/demo/photos/36.jpg"
                   alt=""
                   @error.once="onceImageErrored(1280, 960)"
-                />
+                >
               </a>
             </div>
           </div>
@@ -255,7 +277,10 @@ import {
             <div class="post-stats">
               <span>Most Commented Posts</span>
               <div class="post-stat">
-                <i aria-hidden="true" class="fas fa-comment text-h-yellow"></i>
+                <i
+                  aria-hidden="true"
+                  class="fas fa-comment text-h-yellow"
+                />
                 <span class="count dark-inverted">2.3K</span>
               </div>
             </div>
@@ -266,7 +291,7 @@ import {
                 src="/demo/photos/31.png"
                 alt=""
                 @error.once="onceImageErrored(1280, 960)"
-              />
+              >
             </figure>
           </div>
           <div class="card-content post-group-wrap">
@@ -276,28 +301,28 @@ import {
                   src="/demo/photos/33.jpg"
                   alt=""
                   @error.once="onceImageErrored(1280, 960)"
-                />
+                >
               </a>
               <a>
                 <img
                   src="/demo/photos/34.jpg"
                   alt=""
                   @error.once="onceImageErrored(1280, 960)"
-                />
+                >
               </a>
               <a>
                 <img
                   src="/demo/photos/35.jpeg"
                   alt=""
                   @error.once="onceImageErrored(1280, 960)"
-                />
+                >
               </a>
               <a>
                 <img
                   src="/demo/photos/36.jpg"
                   alt=""
                   @error.once="onceImageErrored(1280, 960)"
-                />
+                >
               </a>
             </div>
           </div>
@@ -311,7 +336,10 @@ import {
             <div class="post-stats">
               <span>Most Engaging Posts</span>
               <div class="post-stat">
-                <i aria-hidden="true" class="fas fa-hand-paper text-h-green"></i>
+                <i
+                  aria-hidden="true"
+                  class="fas fa-hand-paper text-h-green"
+                />
                 <span class="count dark-inverted">51.6%</span>
               </div>
             </div>
@@ -322,7 +350,7 @@ import {
                 src="/demo/photos/32.jpg"
                 alt=""
                 @error.once="onceImageErrored(1280, 960)"
-              />
+              >
             </figure>
           </div>
           <div class="card-content post-group-wrap">
@@ -332,28 +360,28 @@ import {
                   src="/demo/photos/33.jpg"
                   alt=""
                   @error.once="onceImageErrored(1280, 960)"
-                />
+                >
               </a>
               <a>
                 <img
                   src="/demo/photos/34.jpg"
                   alt=""
                   @error.once="onceImageErrored(1280, 960)"
-                />
+                >
               </a>
               <a>
                 <img
                   src="/demo/photos/35.jpeg"
                   alt=""
                   @error.once="onceImageErrored(1280, 960)"
-                />
+                >
               </a>
               <a>
                 <img
                   src="/demo/photos/36.jpg"
                   alt=""
                   @error.once="onceImageErrored(1280, 960)"
-                />
+                >
               </a>
             </div>
           </div>

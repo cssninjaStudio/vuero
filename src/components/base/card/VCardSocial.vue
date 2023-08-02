@@ -73,7 +73,9 @@ const icon = computed(() => {
 <template>
   <div class="card v-card">
     <header class="card-header">
-      <div class="card-header-title">{{ props.title }}</div>
+      <div class="card-header-title">
+        {{ props.title }}
+      </div>
       <a
         v-if="icon"
         class="card-header-icon"
@@ -88,11 +90,19 @@ const icon = computed(() => {
       </a>
     </header>
     <div class="card-content">
-      <VBlock :title="props.username" class="pb-3">
+      <VBlock
+        :title="props.username"
+        class="pb-3"
+      >
         <template #icon>
-          <VAvatar v-if="props.avatar" size="medium" :picture="props.avatar" squared />
+          <VAvatar
+            v-if="props.avatar"
+            size="medium"
+            :picture="props.avatar"
+            squared
+          />
         </template>
-        <slot></slot>
+        <slot />
         <span v-if="props.hashtags.length">
           <a
             v-for="(hashtag, index) in props.hashtags"

@@ -35,10 +35,17 @@ const props = withDefaults(
       class="inner-list-item"
     >
       <template #icon>
-        <VAnimatedCheckbox v-model="modelValue" :value="todo" :color="props.color" />
+        <VAnimatedCheckbox
+          v-model="modelValue"
+          :value="todo"
+          :color="props.color"
+        />
       </template>
       <template #action>
-        <span v-if="todo.status" class="tag is-rounded">{{ todo.status }}</span>
+        <span
+          v-if="todo.status"
+          class="tag is-rounded"
+        >{{ todo.status }}</span>
       </template>
 
       <a href="#">{{ todo.title }}</a>

@@ -122,11 +122,22 @@ function isStarSelected(index: number) {
 </script>
 
 <template>
-  <div ref="wrapper" class="rating-wrap">
-    <div v-if="props.label || 'label' in $slots" class="rating-label">
+  <div
+    ref="wrapper"
+    class="rating-wrap"
+  >
+    <div
+      v-if="props.label || 'label' in $slots"
+      class="rating-label"
+    >
       <slot name="label">
         <!-- eslint-disable-next-line vuejs-accessibility/no-static-element-interactions -->
-        <label :id="`${id}-label`" :for="id" @click="focus" @keydown.enter="focus">
+        <label
+          :id="`${id}-label`"
+          :for="id"
+          @click="focus"
+          @keydown.enter="focus"
+        >
           {{ props.label }}
         </label>
       </slot>

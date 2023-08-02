@@ -76,7 +76,11 @@ const charts = [
 <template>
   <div class="apex-dashboard">
     <div class="columns is-multiline">
-      <div v-for="(chart, idx) in charts" :key="idx" class="column is-6">
+      <div
+        v-for="(chart, idx) in charts"
+        :key="idx"
+        class="column is-6"
+      >
         <div class="s-card">
           <ApexChart v-bind="chart" />
         </div>

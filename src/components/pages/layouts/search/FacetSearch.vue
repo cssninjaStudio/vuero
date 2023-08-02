@@ -116,8 +116,7 @@ const options = ref(['Newest'])
                 role="button"
                 @keydown.space.prevent="activeTab = 'all'"
                 @click="activeTab = 'all'"
-                ><span>All</span></a
-              >
+              ><span>All</span></a>
             </li>
             <li :class="[activeTab === 'people' && 'is-active']">
               <a
@@ -125,8 +124,7 @@ const options = ref(['Newest'])
                 role="button"
                 @keydown.space.prevent="activeTab = 'people'"
                 @click="activeTab = 'people'"
-                ><span>People</span></a
-              >
+              ><span>People</span></a>
             </li>
             <li :class="[activeTab === 'records' && 'is-active']">
               <a
@@ -134,10 +132,9 @@ const options = ref(['Newest'])
                 role="button"
                 @keydown.space.prevent="activeTab = 'records'"
                 @click="activeTab = 'records'"
-                ><span>Records</span></a
-              >
+              ><span>Records</span></a>
             </li>
-            <li class="tab-naver"></li>
+            <li class="tab-naver" />
           </ul>
         </div>
       </div>
@@ -148,7 +145,9 @@ const options = ref(['Newest'])
         <!--Filters-->
         <div class="column is-4">
           <div class="filter-box">
-            <h4 class="dark-inverted">Publication</h4>
+            <h4 class="dark-inverted">
+              Publication
+            </h4>
 
             <VField>
               <VControl>
@@ -161,7 +160,10 @@ const options = ref(['Newest'])
                 />
 
                 <div class="control-end">
-                  <VTag label="23" rounded />
+                  <VTag
+                    label="23"
+                    rounded
+                  />
                 </div>
               </VControl>
             </VField>
@@ -176,7 +178,10 @@ const options = ref(['Newest'])
                 />
 
                 <div class="control-end">
-                  <VTag label="31" rounded />
+                  <VTag
+                    label="31"
+                    rounded
+                  />
                 </div>
               </VControl>
             </VField>
@@ -191,14 +196,19 @@ const options = ref(['Newest'])
                 />
 
                 <div class="control-end">
-                  <VTag label="12" rounded />
+                  <VTag
+                    label="12"
+                    rounded
+                  />
                 </div>
               </VControl>
             </VField>
           </div>
 
           <div class="filter-box">
-            <h4 class="dark-inverted">Type</h4>
+            <h4 class="dark-inverted">
+              Type
+            </h4>
 
             <VField>
               <VControl>
@@ -211,7 +221,10 @@ const options = ref(['Newest'])
                 />
 
                 <div class="control-end">
-                  <VTag label="19" rounded />
+                  <VTag
+                    label="19"
+                    rounded
+                  />
                 </div>
               </VControl>
             </VField>
@@ -226,7 +239,10 @@ const options = ref(['Newest'])
                 />
 
                 <div class="control-end">
-                  <VTag label="174" rounded />
+                  <VTag
+                    label="174"
+                    rounded
+                  />
                 </div>
               </VControl>
             </VField>
@@ -241,7 +257,10 @@ const options = ref(['Newest'])
                 />
 
                 <div class="control-end">
-                  <VTag label="71" rounded />
+                  <VTag
+                    label="71"
+                    rounded
+                  />
                 </div>
               </VControl>
             </VField>
@@ -256,7 +275,10 @@ const options = ref(['Newest'])
                 />
 
                 <div class="control-end">
-                  <VTag label="54" rounded />
+                  <VTag
+                    label="54"
+                    rounded
+                  />
                 </div>
               </VControl>
             </VField>
@@ -271,14 +293,19 @@ const options = ref(['Newest'])
                 />
 
                 <div class="control-end">
-                  <VTag label="8" rounded />
+                  <VTag
+                    label="8"
+                    rounded
+                  />
                 </div>
               </VControl>
             </VField>
           </div>
 
           <div class="filter-box">
-            <h4 class="dark-inverted">Topics</h4>
+            <h4 class="dark-inverted">
+              Topics
+            </h4>
 
             <VField>
               <VControl>
@@ -291,7 +318,10 @@ const options = ref(['Newest'])
                 />
 
                 <div class="control-end">
-                  <VTag label="45" rounded />
+                  <VTag
+                    label="45"
+                    rounded
+                  />
                 </div>
               </VControl>
             </VField>
@@ -306,7 +336,10 @@ const options = ref(['Newest'])
                 />
 
                 <div class="control-end">
-                  <VTag label="12" rounded />
+                  <VTag
+                    label="12"
+                    rounded
+                  />
                 </div>
               </VControl>
             </VField>
@@ -321,7 +354,10 @@ const options = ref(['Newest'])
                 />
 
                 <div class="control-end">
-                  <VTag label="36" rounded />
+                  <VTag
+                    label="36"
+                    rounded
+                  />
                 </div>
               </VControl>
             </VField>
@@ -336,7 +372,10 @@ const options = ref(['Newest'])
                 />
 
                 <div class="control-end">
-                  <VTag label="3" rounded />
+                  <VTag
+                    label="3"
+                    rounded
+                  />
                 </div>
               </VControl>
             </VField>
@@ -351,7 +390,10 @@ const options = ref(['Newest'])
                 />
 
                 <div class="control-end">
-                  <VTag label="7" rounded />
+                  <VTag
+                    label="7"
+                    rounded
+                  />
                 </div>
               </VControl>
             </VField>
@@ -360,7 +402,10 @@ const options = ref(['Newest'])
 
         <!--Results-->
         <div class="column is-8">
-          <div class="tab-content" :class="[activeTab === 'all' && 'is-active']">
+          <div
+            class="tab-content"
+            :class="[activeTab === 'all' && 'is-active']"
+          >
             <!--Search Results Group-->
             <div class="search-results-group">
               <div class="group-header">
@@ -375,12 +420,21 @@ const options = ref(['Newest'])
                   :key="index"
                   class="search-results-item"
                 >
-                  <VBlock :title="person.name" :subtitle="person.role" center>
+                  <VBlock
+                    :title="person.name"
+                    :subtitle="person.role"
+                    center
+                  >
                     <template #icon>
-                      <VAvatar size="medium" :picture="person.avatar" />
+                      <VAvatar
+                        size="medium"
+                        :picture="person.avatar"
+                      />
                     </template>
                     <template #action>
-                      <VButton dark-outlined> Profile </VButton>
+                      <VButton dark-outlined>
+                        Profile
+                      </VButton>
                     </template>
                   </VBlock>
                 </div>
@@ -402,7 +456,11 @@ const options = ref(['Newest'])
                   :key="index"
                   class="search-results-item"
                 >
-                  <VBlock :title="record.name" :subtitle="record.date" center>
+                  <VBlock
+                    :title="record.name"
+                    :subtitle="record.date"
+                    center
+                  >
                     <template #icon>
                       <VAvatar
                         size="medium"
@@ -411,7 +469,9 @@ const options = ref(['Newest'])
                       />
                     </template>
                     <template #action>
-                      <VButton dark-outlined> Details </VButton>
+                      <VButton dark-outlined>
+                        Details
+                      </VButton>
                     </template>
                   </VBlock>
                 </div>
@@ -419,7 +479,10 @@ const options = ref(['Newest'])
             </div>
           </div>
 
-          <div class="tab-content" :class="[activeTab === 'people' && 'is-active']">
+          <div
+            class="tab-content"
+            :class="[activeTab === 'people' && 'is-active']"
+          >
             <!--Search Results Group-->
             <div class="search-results-group">
               <div class="search-results-list">
@@ -428,12 +491,21 @@ const options = ref(['Newest'])
                   :key="index"
                   class="search-results-item"
                 >
-                  <VBlock :title="person.name" :subtitle="person.role" center>
+                  <VBlock
+                    :title="person.name"
+                    :subtitle="person.role"
+                    center
+                  >
                     <template #icon>
-                      <VAvatar size="medium" :picture="person.avatar" />
+                      <VAvatar
+                        size="medium"
+                        :picture="person.avatar"
+                      />
                     </template>
                     <template #action>
-                      <VButton dark-outlined> Profile </VButton>
+                      <VButton dark-outlined>
+                        Profile
+                      </VButton>
                     </template>
                   </VBlock>
                 </div>
@@ -441,7 +513,10 @@ const options = ref(['Newest'])
             </div>
           </div>
 
-          <div class="tab-content" :class="[activeTab === 'records' && 'is-active']">
+          <div
+            class="tab-content"
+            :class="[activeTab === 'records' && 'is-active']"
+          >
             <!--Search Results Group-->
             <div class="search-results-group">
               <div class="search-results-list">
@@ -451,7 +526,11 @@ const options = ref(['Newest'])
                   :key="index"
                   class="search-results-item"
                 >
-                  <VBlock :title="record.name" :subtitle="record.date" center>
+                  <VBlock
+                    :title="record.name"
+                    :subtitle="record.date"
+                    center
+                  >
                     <template #icon>
                       <VAvatar
                         size="medium"
@@ -460,7 +539,9 @@ const options = ref(['Newest'])
                       />
                     </template>
                     <template #action>
-                      <VButton dark-outlined> Details </VButton>
+                      <VButton dark-outlined>
+                        Details
+                      </VButton>
                     </template>
                   </VBlock>
                 </div>

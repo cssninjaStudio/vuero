@@ -84,10 +84,15 @@ watchEffect(() => {
 </script>
 
 <template>
-  <div id="wizard-step-4" class="inner-wrapper is-active">
+  <div
+    id="wizard-step-4"
+    class="inner-wrapper is-active"
+  >
     <div class="step-content">
       <div class="step-title">
-        <h2 class="dark-inverted">Who will be working on this project?</h2>
+        <h2 class="dark-inverted">
+          Who will be working on this project?
+        </h2>
         <p>Start by adding members to your team</p>
       </div>
 
@@ -105,12 +110,12 @@ watchEffect(() => {
             class="light-image is-rounded"
             src="/@src/assets/illustrations/wizard/team-placeholder.svg"
             alt=""
-          />
+          >
           <img
             class="dark-image is-rounded"
             src="/@src/assets/illustrations/wizard/team-placeholder.svg"
             alt=""
-          />
+          >
         </template>
         <template #action>
           <a
@@ -125,19 +130,30 @@ watchEffect(() => {
         </template>
       </VPlaceholderPage>
 
-      <div v-if="isAddingMembers" class="project-team-wrapper">
+      <div
+        v-if="isAddingMembers"
+        class="project-team-wrapper"
+      >
         <div class="project-team-header">
           <VAvatar
             size="big"
             picture="/images/avatars/svg/vuero-1.svg"
             badge="/images/icons/flags/united-states-of-america.svg"
           />
-          <h3 class="title is-4 is-narrow is-thin">Erik Kovalsky</h3>
-          <p class="light-text">You are the project owner</p>
+          <h3 class="title is-4 is-narrow is-thin">
+            Erik Kovalsky
+          </h3>
+          <p class="light-text">
+            You are the project owner
+          </p>
 
           <VField class="mt-4">
             <VControl icon="feather:search">
-              <VInput v-model="search" type="search" placeholder="Search teammates..." />
+              <VInput
+                v-model="search"
+                type="search"
+                placeholder="Search teammates..."
+              />
             </VControl>
           </VField>
         </div>
@@ -145,7 +161,10 @@ watchEffect(() => {
         <div class="project-team-body">
           <div class="members-list">
             <template v-if="filteredUsers.length > 0">
-              <TransitionGroup name="list" tag="div">
+              <TransitionGroup
+                name="list"
+                tag="div"
+              >
                 <VBlock
                   v-for="teammate in filteredUsers"
                   :key="teammate.name"
@@ -154,7 +173,10 @@ watchEffect(() => {
                   :subtitle="teammate.name"
                 >
                   <template #icon>
-                    <VAvatar size="medium" :picture="teammate.picture" />
+                    <VAvatar
+                      size="medium"
+                      :picture="teammate.picture"
+                    />
                   </template>
                   <template #action>
                     <div class="actions">
@@ -171,7 +193,10 @@ watchEffect(() => {
               </TransitionGroup>
             </template>
             <template v-if="wizard.data.teammates.length > 0">
-              <TransitionGroup name="list-complete" tag="div">
+              <TransitionGroup
+                name="list-complete"
+                tag="div"
+              >
                 <VBlock
                   v-for="teammate in wizard.data.teammates"
                   :key="teammate.name"
@@ -180,7 +205,10 @@ watchEffect(() => {
                   :subtitle="teammate.name"
                 >
                   <template #icon>
-                    <VAvatar size="medium" :picture="teammate.picture" />
+                    <VAvatar
+                      size="medium"
+                      :picture="teammate.picture"
+                    />
                   </template>
                   <template #action>
                     <div class="actions">
@@ -197,7 +225,7 @@ watchEffect(() => {
                             <div
                               class="permission-level-inner"
                               :class="[getRoleLevel(teammate) >= 0 && 'is-active']"
-                            ></div>
+                            />
                           </div>
                           <div
                             class="permission-level hint--bubble hint--primary hint--top"
@@ -212,7 +240,7 @@ watchEffect(() => {
                             <div
                               class="permission-level-inner"
                               :class="[getRoleLevel(teammate) >= 1 && 'is-active']"
-                            ></div>
+                            />
                           </div>
                           <div
                             class="permission-level hint--bubble hint--primary hint--top"
@@ -225,7 +253,7 @@ watchEffect(() => {
                             <div
                               class="permission-level-inner"
                               :class="[getRoleLevel(teammate) >= 2 && 'is-active']"
-                            ></div>
+                            />
                           </div>
                           <div
                             class="permission-level hint--bubble hint--primary hint--top"
@@ -238,7 +266,7 @@ watchEffect(() => {
                             <div
                               class="permission-level-inner"
                               :class="[getRoleLevel(teammate) >= 3 && 'is-active']"
-                            ></div>
+                            />
                           </div>
                           <progress
                             class="progress permissions-progress is-primary is-tiny"
@@ -261,7 +289,10 @@ watchEffect(() => {
                 </VBlock>
               </TransitionGroup>
             </template>
-            <div v-else class="empty-wrap has-text-centered">
+            <div
+              v-else
+              class="empty-wrap has-text-centered"
+            >
               <span>No team members yet</span>
             </div>
           </div>

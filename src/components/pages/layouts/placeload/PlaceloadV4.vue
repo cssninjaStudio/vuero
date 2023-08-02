@@ -15,12 +15,18 @@ const optionsSingle = [
     <div class="user-grid-toolbar">
       <VField raw>
         <VControl icon="feather:search">
-          <VInput v-model="filters" placeholder="Search..." />
+          <VInput
+            v-model="filters"
+            placeholder="Search..."
+          />
         </VControl>
       </VField>
 
       <VButtons>
-        <VField v-slot="{ id }" class="v-hidden-mobile">
+        <VField
+          v-slot="{ id }"
+          class="v-hidden-mobile"
+        >
           <VControl>
             <Multiselect
               v-model="valueSingle"
@@ -31,9 +37,15 @@ const optionsSingle = [
             />
           </VControl>
         </VField>
-        <VButton color="primary" raised>
+        <VButton
+          color="primary"
+          raised
+        >
           <span class="icon">
-            <i aria-hidden="true" class="fas fa-plus"></i>
+            <i
+              aria-hidden="true"
+              class="fas fa-plus"
+            />
           </span>
           <span>Add User</span>
         </VButton>
@@ -44,11 +56,19 @@ const optionsSingle = [
       <!--Tile Grid v1-->
       <div class="columns is-multiline">
         <!--Grid item-->
-        <div v-for="key in 30" :key="key" class="column is-4">
+        <div
+          v-for="key in 30"
+          :key="key"
+          class="column is-4"
+        >
           <div class="tile-grid-item">
             <div class="tile-grid-item-inner placeload-wrap is-flex">
               <VPlaceloadAvatar size="medium" />
-              <VPlaceloadText width="80%" last-line-width="60%" class="mx-2" />
+              <VPlaceloadText
+                width="80%"
+                last-line-width="60%"
+                class="mx-2"
+              />
             </div>
           </div>
         </div>

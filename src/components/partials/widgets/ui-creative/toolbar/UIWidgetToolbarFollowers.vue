@@ -17,7 +17,11 @@ const props = withDefaults(
       <h3>{{ props.title }}</h3>
     </div>
     <div class="right">
-      <VAvatarStack :avatars="props.avatars" :limit="3" size="small" />
+      <VAvatarStack
+        :avatars="props.avatars"
+        :limit="3"
+        size="small"
+      />
     </div>
   </div>
 </template>
