@@ -19,7 +19,7 @@ async function loadModules() {
     remarkGfm,
     remarkParse,
     remarkRehype,
-    getHighlighter,
+    [getHighlighter, setCDN],
     unified,
   ] = await Promise.all([
     import('@stefanprobst/remark-shiki').then((m) => m.default),
@@ -32,9 +32,14 @@ async function loadModules() {
     import('remark-gfm').then((m) => m.default),
     import('remark-parse').then((m) => m.default),
     import('remark-rehype').then((m) => m.default),
-    import('shiki').then((m) => m.getHighlighter),
+    import('shiki').then((m) => [m.getHighlighter, m.setCDN] as const),
     import('unified').then((m) => m.unified),
   ])
+
+  // this allow to load shiki from /public/shiki/ folder instead of cdn
+  // we need to first copy the shiki folder from node_modules to public
+  // this is done with prepare pnpm script (see /scripts/prepare-shiki.ts)
+  setCDN('/shiki/')
 
   return {
     remarkShiki,
@@ -128,6 +133,7 @@ export default defineComponent({
         getHighlighter,
         unified,
       } = await loadModules()
+
       const highlighter = await getHighlighter({
         theme: isDark ? theme.dark : theme.light,
         langs,

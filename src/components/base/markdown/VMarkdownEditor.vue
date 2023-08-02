@@ -308,7 +308,7 @@ watchEffect((cleanup) => {
     ></textarea>
     <slot v-if="mode === 'write'" name="after-textarea"></slot>
 
-    <slot v-if="mode === 'preview'" name="preview" v-bind="{ internal }">
+    <slot v-if="mode === 'preview'" name="preview" v-bind="{ value: internal }">
       <VCard radius="smooth">
         <VMarkdownPreview :source="internal" />
       </VCard>
