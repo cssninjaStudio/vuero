@@ -4,6 +4,7 @@ import { useVFieldContext } from '/@src/composable/useVFieldContext'
 export type VCheckboxColor = 'primary' | 'info' | 'success' | 'warning' | 'danger'
 
 export interface VCheckboxProps {
+  id?: string
   raw?: boolean
   label?: string
   color?: VCheckboxColor
@@ -21,6 +22,7 @@ const modelValue = defineModel<any>({
   local: true,
 })
 const props = withDefaults(defineProps<VCheckboxProps>(), {
+  id: undefined,
   label: undefined,
   color: undefined,
   trueValue: true,
@@ -32,19 +34,20 @@ const props = withDefaults(defineProps<VCheckboxProps>(), {
   wrapperClass: undefined,
 })
 
-const { field, id } = useVFieldContext()
+const context = useVFieldContext()
 
 const internal = computed({
   get() {
-    if (field?.value) {
-      return field.value.value
+    if (context.field?.value) {
+      return context.field.value.value
     } else {
       return modelValue.value
     }
   },
   set(value: any) {
-    if (field?.value) {
-      field.value.setValue(value)
+    console.log('checkbox set', value)
+    if (context.field?.value) {
+      context.field.value.setValue(value)
     }
     modelValue.value = value
   },
@@ -65,9 +68,9 @@ const classes = computed(() => {
 </script>
 
 <template>
-  <VLabel raw :class="classes">
+  <VLabel :id="props.id || context.id.value" raw :class="classes">
     <input
-      :id="id"
+      :id="props.id || context.id.value"
       v-model="internal"
       v-bind="$attrs"
       :true-value="props.trueValue"
@@ -76,7 +79,7 @@ const classes = computed(() => {
       type="checkbox"
     />
     <span></span>
-    <slot v-bind="{ field, id }">{{ props.label }}</slot>
+    <slot v-bind="context">{{ props.label }}</slot>
   </VLabel>
 </template>
 

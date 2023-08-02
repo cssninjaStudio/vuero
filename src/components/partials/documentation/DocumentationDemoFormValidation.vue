@@ -43,8 +43,9 @@ const zodSchema = z
     interests: z
       .string()
       .array()
-      .min(2, 'You must select at least 2 terms of service')
-      .max(3, 'You can select up to 3 terms of service'),
+      .min(2, 'You must select at least 2 center of interest')
+      .max(3, 'You can select up to 3 center of interest'),
+    allergens: z.string().array().max(4, 'You can select up to 4 allergen'),
     feedback: z
       .array(
         z.object({
@@ -79,6 +80,7 @@ const initialValues = computed<FormInput>(() => ({
   birthdate: null,
   interests: [],
   feedback: [],
+  allergens: [],
   agreeTerms: false,
   emailOptin: false,
 }))
@@ -192,6 +194,20 @@ const handleSignup = handleSubmit(async (values) => {
           select multiple options.
         </p>
       </VControl>
+    </VField>
+    <VField id="allergens" v-slot="{ field }" label="Pick your allergens">
+      <VControl>
+        <VCheckbox class="pl-0" color="primary" value="peanuts"> Peanuts </VCheckbox>
+        <VCheckbox id="allergens-milk" color="primary" value="milk"> Milk </VCheckbox>
+        <VCheckbox id="allergens-egg" color="primary" value="egg"> Egg </VCheckbox>
+        <VCheckbox id="allergens-fish" color="primary" value="fish"> Fish </VCheckbox>
+        <VCheckbox id="allergens-soybeans" color="primary" value="soybeans">
+          Soybeans
+        </VCheckbox>
+      </VControl>
+      <p v-if="field?.errorMessage" class="help is-danger">
+        {{ field.errorMessage }}
+      </p>
     </VField>
     <div class="py-4">
       <!-- eslint-disable-next-line vue/require-v-for-key -->

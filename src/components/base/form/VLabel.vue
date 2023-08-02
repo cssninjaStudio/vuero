@@ -2,12 +2,15 @@
 import { useVFieldContext } from '/@src/composable/useVFieldContext'
 
 export interface VLabelProps {
+  id?: string
   raw?: boolean
 }
 
-const props = defineProps<VLabelProps>()
+const props = withDefaults(defineProps<VLabelProps>(), {
+  id: undefined,
+})
 
-const { field, id } = useVFieldContext({
+const context = useVFieldContext({
   create: false,
   help: 'VLabel',
 })
@@ -20,7 +23,7 @@ const classes = computed(() => {
 </script>
 
 <template>
-  <label :class="classes" :for="id">
-    <slot v-bind="{ field, id }" />
+  <label :class="classes" :for="props.id || context.id.value">
+    <slot v-bind="context" />
   </label>
 </template>
