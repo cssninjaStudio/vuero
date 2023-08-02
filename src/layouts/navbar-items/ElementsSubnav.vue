@@ -318,6 +318,16 @@ const activeTab = ref<TabId>('interaction')
                     </RouterLink>
                   </li> -->
                   <li>
+                    <RouterLink to="/elements/forms/range-rating">
+                      <span>VRangeRating</span>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:circle"
+                      ></i>
+                    </RouterLink>
+                  </li>
+                  <li>
                     <RouterLink to="/elements/forms/file">
                       <span>File Input</span>
                       <i

@@ -53,18 +53,14 @@ const isIconify = computed(() => {
   return props.icon && props.icon.indexOf(':') !== -1
 })
 
-const vFieldContext = reactive(
-  useVFieldContext({
-    id: props.id,
-    inherit: !props.subcontrol,
-  })
-)
+const { field, id } = useVFieldContext({
+  id: props.id,
+  inherit: !props.subcontrol,
+})
 
 const isValid = computed(() => props.isValid)
 const hasError = computed(() =>
-  vFieldContext?.field
-    ? Boolean(vFieldContext?.field?.errorMessage?.value)
-    : props.hasError
+  field?.value ? Boolean(field?.value?.errorMessage?.value) : props.hasError
 )
 
 const controlClasees = computed(() => {
@@ -87,7 +83,7 @@ const controlClasees = computed(() => {
 
 <template>
   <div :class="controlClasees">
-    <slot v-bind="vFieldContext"></slot>
+    <slot v-bind="{ field, id }"></slot>
 
     <template v-if="props.icon">
       <VLabel v-if="isIconify" class="form-icon">
@@ -106,13 +102,13 @@ const controlClasees = computed(() => {
       class="validation-icon is-error"
       role="button"
       tabindex="0"
-      @click.prevent="() => vFieldContext.field?.resetField?.()"
-      @keyup.enter.prevent="() => vFieldContext.field?.resetField?.()"
+      @click.prevent="() => field?.resetField?.()"
+      @keyup.enter.prevent="() => field?.resetField?.()"
     >
       <i aria-hidden="true" data-icon="feather:x" class="iconify"></i>
     </a>
 
-    <slot v-bind="vFieldContext" name="extra"></slot>
+    <slot v-bind="{ field, id }" name="extra"></slot>
   </div>
 </template>
 

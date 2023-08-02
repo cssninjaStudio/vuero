@@ -10,23 +10,23 @@ Please refer to the markup for more details about usage.
 
 ```vue
 <template>
-  <VField grouped>
-    <VControl subcontrol>
+  <VField horizontal>
+    <VControl subcontrol class="mr-2">
       <VSwitchBlock />
     </VControl>
-    <VControl subcontrol>
+    <VControl subcontrol class="mr-2">
       <VSwitchBlock color="primary" checked />
     </VControl>
-    <VControl subcontrol>
+    <VControl subcontrol class="mr-2">
       <VSwitchBlock color="success" checked />
     </VControl>
-    <VControl subcontrol>
+    <VControl subcontrol class="mr-2">
       <VSwitchBlock color="info" checked />
     </VControl>
-    <VControl subcontrol>
+    <VControl subcontrol class="mr-2">
       <VSwitchBlock color="warning" checked />
     </VControl>
-    <VControl subcontrol>
+    <VControl subcontrol class="mr-2">
       <VSwitchBlock color="danger" checked />
     </VControl>
   </VField>
@@ -37,23 +37,23 @@ Please refer to the markup for more details about usage.
 
 <!--example-->
 
-<VField grouped>
-  <VControl subcontrol>
+<VField horizontal>
+  <VControl subcontrol class="mr-2">
     <VSwitchBlock />
   </VControl>
-  <VControl subcontrol>
+  <VControl subcontrol class="mr-2">
     <VSwitchBlock color="primary" checked />
   </VControl>
-  <VControl subcontrol>
+  <VControl subcontrol class="mr-2">
     <VSwitchBlock color="success" checked />
   </VControl>
-  <VControl subcontrol>
+  <VControl subcontrol class="mr-2">
     <VSwitchBlock color="info" checked />
   </VControl>
-  <VControl subcontrol>
+  <VControl subcontrol class="mr-2">
     <VSwitchBlock color="warning" checked />
   </VControl>
-  <VControl subcontrol>
+  <VControl subcontrol class="mr-2">
     <VSwitchBlock color="danger" checked />
   </VControl>
 </VField>

@@ -8,7 +8,12 @@ const onSubmit = () => {
 </script>
 
 <template>
-  <form class="form-layout is-separate" @submit.prevent="onSubmit">
+  <form
+    method="post"
+    novalidate
+    class="form-layout is-separate"
+    @submit.prevent="onSubmit"
+  >
     <div class="form-outer">
       <div class="form-body">
         <div class="form-section">

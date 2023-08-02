@@ -93,6 +93,8 @@ useHead({
               <p>Reset your account password.</p>
             </div>
             <form
+              method="post"
+              novalidate
               data-cy="login-form"
               :class="[step !== 'login' && 'is-hidden']"
               class="login-wrapper"
@@ -186,6 +188,8 @@ useHead({
             </form>
 
             <form
+              method="post"
+              novalidate
               :class="[step !== 'forgot-password' && 'is-hidden']"
               class="login-wrapper"
               @submit.prevent

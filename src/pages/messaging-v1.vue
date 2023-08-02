@@ -7,7 +7,7 @@ import { useNotyf } from '/@src/composable/useNotyf'
 
 /**
  * The chat store keep the chat data across the app
- * It internaly uses the useApi composable to fetch the data (to the json-server)
+ * It internaly uses the useFetch composable to fetch the data (to the json-server)
  */
 const chat = useChat()
 
@@ -249,7 +249,7 @@ watchPostEffect(() => {
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media only screen and (device-width >= 768px) and (device-width <= 1024px) and (orientation: portrait) {
   .chat-content {
     padding: 0 5px !important;
   }
@@ -259,7 +259,7 @@ watchPostEffect(() => {
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (device-width >= 768px) and (device-width <= 1024px) and (orientation: landscape) {
   .collapsed-messaging {
     &.is-active {
       inset-inline-start: 60px !important;

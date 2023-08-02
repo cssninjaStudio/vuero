@@ -1,33 +1,24 @@
 <script setup lang="ts">
 export type VSwitchBlockColor = 'primary' | 'info' | 'success' | 'warning' | 'danger'
-export interface VSwitchBlockEmits {
-  (e: 'update:modelValue', value: any): void
-}
+
 export interface VSwitchBlockProps {
-  modelValue?: any
   label?: string
   color?: VSwitchBlockColor
   thin?: boolean
 }
 
-const emit = defineEmits<VSwitchBlockEmits>()
+defineOptions({
+  inheritAttrs: false,
+})
+
+const modelValue = defineModel({
+  default: false,
+  local: true,
+})
 const props = withDefaults(defineProps<VSwitchBlockProps>(), {
-  modelValue: false,
   label: undefined,
   color: undefined,
 })
-
-const value = ref(props.modelValue)
-
-watch(value, () => {
-  emit('update:modelValue', value.value)
-})
-watch(
-  () => props.modelValue,
-  () => {
-    value.value = props.modelValue
-  }
-)
 </script>
 
 <template>
@@ -43,9 +34,9 @@ watch(
         class="thin-switch"
         tabindex="0"
         :class="[props.color && `is-${props.color}`]"
-        @keydown.space.prevent="() => emit('update:modelValue', !props.modelValue)"
+        @keydown.space.prevent="() => (modelValue = !modelValue)"
       >
-        <VInput v-model="value" type="checkbox" v-bind="$attrs" />
+        <VInput v-model="modelValue" type="checkbox" v-bind="$attrs" />
         <div class="slider"></div>
       </VLabel>
     </template>
@@ -53,11 +44,11 @@ watch(
       <VLabel raw class="form-switch" :class="[props.color && `is-${props.color}`]">
         <VInput
           raw
-          :checked="props.modelValue"
+          :checked="modelValue"
           type="checkbox"
           class="is-switch"
           v-bind="$attrs"
-          @change="emit('update:modelValue', !props.modelValue)"
+          @change="() => (modelValue = !modelValue)"
         />
         <i aria-hidden="true"></i>
       </VLabel>

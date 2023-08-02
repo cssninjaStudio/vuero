@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { TinySliderInstance } from 'tiny-slider/src/tiny-slider'
+// import type { TinySliderInstance } from 'tiny-slider/src/tiny-slider'
 
 import { onceImageErrored } from '/@src/utils/via-placeholder'
 
@@ -7,15 +7,16 @@ import sleep from '/@src/utils/sleep'
 import { useNotyf } from '/@src/composable/useNotyf'
 import { useDarkmode } from '/@src/stores/darkmode'
 
-let slider: TinySliderInstance
-const sliderElement = ref<HTMLElement>()
+// let slider: TinySliderInstance
+// const sliderElement = ref<HTMLElement>()
 const router = useRouter()
 const notyf = useNotyf()
 const darkmode = useDarkmode()
 const step = ref(0)
-const selectedAvatar = ref(2)
+// const selectedAvatar = ref(2)
 const isLoading = ref(false)
-const resizeValue = ref(70)
+const fileInput = ref<File>()
+const uploadAvatarSrc = ref<string>()
 const uploadModalOpen = ref(false)
 const avatars = [
   '/images/avatars/svg/vuero-1.svg',
@@ -39,52 +40,14 @@ const handleSignup = async () => {
 
 const currentAvatar = ref('/images/avatars/svg/vuero-1.svg')
 
-const onAvatarChanged = (info: any) => {
-  // direct access to info object
-  const indexPrev = info.indexCached
-  const indexCurrent = info.index
+function onFileinputChange(event: Event) {
+  fileInput.value = (event.target as HTMLInputElement)?.files?.[0]
 
-  // update style based on index
-  info.slideItems[indexPrev].classList.remove('active')
-  info.slideItems[indexCurrent].classList.add('active')
-
-  if (info.displayIndex) {
-    selectedAvatar.value = info.displayIndex - 1
-  }
+  uploadAvatarSrc.value = URL.createObjectURL(fileInput.value!)
 }
 
 useHead({
   title: 'Auth Signup 1 - Vuero',
-})
-
-onMounted(() => {
-  if (sliderElement.value) {
-    import('tiny-slider/src/tiny-slider').then(({ tns }) => {
-      slider = tns({
-        container: sliderElement.value,
-        controls: false,
-        nav: false,
-        mouseDrag: true,
-        startIndex: 2,
-        fixedWidth: 100,
-        gutter: 40,
-        slideBy: 1,
-        swipeAngle: false,
-        center: false,
-        loop: true,
-        edgePadding: 325,
-      })
-      slider.events.on('indexChanged', onAvatarChanged)
-      onAvatarChanged(slider.getInfo())
-    })
-  }
-})
-
-onUnmounted(() => {
-  if (slider) {
-    slider.events.off('indexChanged', onAvatarChanged)
-    slider.destroy()
-  }
 })
 </script>
 
@@ -152,7 +115,12 @@ onUnmounted(() => {
                   And simply join an unmatched design experience.
                 </h2>
                 <div class="signup-card">
-                  <form class="signup-form is-mobile-spaced" @submit.prevent>
+                  <form
+                    method="post"
+                    novalidate
+                    class="signup-form is-mobile-spaced"
+                    @submit.prevent
+                  >
                     <div class="columns is-multiline">
                       <div class="column is-6">
                         <VField>
@@ -235,7 +203,7 @@ onUnmounted(() => {
 
             <!-- Step 2 -->
             <div class="columns signup-columns" :class="[step !== 1 && 'is-hidden']">
-              <form class="column is-8" @submit.prevent>
+              <form method="post" novalidate class="column is-8" @submit.prevent>
                 <div class="signup-profile-wrapper">
                   <h1 class="title is-5 signup-title has-text-centered">
                     Add a profile picture
@@ -301,7 +269,12 @@ onUnmounted(() => {
                   Your username is how others will find you on Vuero so pick a good one.
                   You can change it later.
                 </h2>
-                <form class="signup-form" @submit.prevent="handleSignup">
+                <form
+                  method="post"
+                  novalidate
+                  class="signup-form"
+                  @submit.prevent="handleSignup"
+                >
                   <div class="columns is-multiline">
                     <div class="column is-12">
                       <VField>
@@ -381,43 +354,61 @@ onUnmounted(() => {
 
     <!-- upload modal -->
     <VModal
+      is="form"
       :open="uploadModalOpen"
       title="Upload and crop your picture"
       actions="center"
       size="small"
       @close="uploadModalOpen = false"
+      @submit.prevent="
+        () => {
+          if (!uploadAvatarSrc) {
+            return
+          }
+          uploadModalOpen = false
+          currentAvatar = uploadAvatarSrc
+        }
+      "
     >
       <template #content>
         <div class="has-text-centered">
-          <div class="upload-demo-wrap"><VAvatar size="big" /></div>
-
-          <small class="help-text">Use the slider to resize the image</small>
-
-          <VField class="resize-handler">
+          <div class="upload-demo-wrap">
+            <VAvatar size="big" :picture="uploadAvatarSrc" />
+          </div>
+          <VField>
             <VControl>
-              <Slider v-model="resizeValue" :tooltips="false" />
+              <div class="file">
+                <label class="file-label">
+                  <input
+                    class="file-input"
+                    type="file"
+                    name="resume"
+                    accept="image/*"
+                    @change="onFileinputChange"
+                  />
+                  <span class="file-cta">
+                    <span class="file-icon">
+                      <i aria-hidden="true" class="fas fa-cloud-upload-alt"></i>
+                    </span>
+                    <span> Choose a file… </span>
+                  </span>
+                </label>
+              </div>
             </VControl>
           </VField>
         </div>
       </template>
       <template #cancel><wbr /></template>
       <template #action>
-        <VField grouped>
+        <VField horizontal>
           <VControl>
-            <div class="file">
-              <label class="file-label">
-                <input class="file-input" type="file" name="resume" />
-                <span class="file-cta">
-                  <span class="file-icon">
-                    <i aria-hidden="true" class="fas fa-cloud-upload-alt"></i>
-                  </span>
-                  <span class="file-label"> Choose a file… </span>
-                </span>
-              </label>
-            </div>
-          </VControl>
-          <VControl>
-            <VButton class="upload-result" size="big" outlined disabled>
+            <VButton
+              type="submit"
+              class="upload-result"
+              size="medium"
+              outlined
+              :disabled="!fileInput"
+            >
               Confirm
             </VButton>
           </VControl>
@@ -428,6 +419,10 @@ onUnmounted(() => {
 </template>
 
 <style lang="scss">
+.file-label {
+  margin: 1rem auto 0;
+}
+
 .signup-nav {
   position: fixed;
   top: 0;

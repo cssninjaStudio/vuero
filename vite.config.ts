@@ -45,6 +45,13 @@ export default defineConfig({
     port: 3000,
   },
   /**
+   * Define allow to replace string in the code at build time.
+   */
+  define: {
+    // VSCODE_TEXTMATE_DEBUG is used in shiki, but it's not defined in the browser
+    'process.env.VSCODE_TEXTMATE_DEBUG': 'false',
+  },
+  /**
    * By default, Vite will crawl your index.html to detect dependencies that
    * need to be pre-bundled. If build.rollupOptions.input is specified,
    * Vite will crawl those entry points instead.
@@ -61,7 +68,6 @@ export default defineConfig({
       '@vueuse/core',
       '@vueform/multiselect',
       '@vueform/slider',
-      'axios',
       'billboard.js',
       'dayjs',
       'dropzone',
@@ -76,6 +82,7 @@ export default defineConfig({
       'filepond-plugin-image-preview',
       'filepond-plugin-image-resize',
       'filepond-plugin-image-transform',
+      'focus-trap-vue',
       'imask',
       'nprogress',
       'notyf',
@@ -140,6 +147,10 @@ export default defineConfig({
      */
     Vue({
       include: [/\.vue$/],
+      script: {
+        defineModel: true,
+        propsDestructure: true,
+      },
     }),
 
     /**

@@ -19,7 +19,7 @@ const value = ref(true)
 </script>
 
 <template>
-  <VField grouped>
+  <VField horizontal>
     <VControl>
       <VSwitchSegment v-model="value" label-true="ON" label-false="OFF" color="primary" />
     </VControl>
@@ -31,7 +31,7 @@ const value = ref(true)
 
 <!--example-->
 
-<VField grouped>
+<VField horizontal>
   <VControl>
     <VSwitchSegment
       v-model="frontmatter.state.value"

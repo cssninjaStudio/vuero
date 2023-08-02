@@ -1,4 +1,4 @@
-import type { MaybeRef } from '@vueuse/core'
+import type { MaybeRefOrGetter } from 'vue'
 import { ref, unref, provide, inject, type InjectionKey } from 'vue'
 import { useField, type FieldContext } from 'vee-validate'
 import { defu } from 'defu'
@@ -8,13 +8,12 @@ export const useVFieldSymbolContext = Symbol() as InjectionKey<VFieldContext>
 
 let fieldId = 0
 
-function createVFieldContext<TValue = unknown>(id?: MaybeRef<string | undefined>) {
-  const _id = unref(id)
-  const $id = ref(id ?? `v-field-${++fieldId}`)
+function createVFieldContext<TValue = unknown>(id?: MaybeRefOrGetter<string>) {
+  const $id = toRef(id ?? `v-field-${++fieldId}`)
   const field = ref<FieldContext<TValue>>()
 
-  if (_id) {
-    field.value = useField(_id)
+  if (id) {
+    field.value = useField(id)
   }
 
   const vFieldContext = {
@@ -28,10 +27,10 @@ function createVFieldContext<TValue = unknown>(id?: MaybeRef<string | undefined>
 }
 
 interface VFieldContextOption {
-  id?: MaybeRef<string | undefined>
-  create?: MaybeRef<boolean>
-  inherit?: MaybeRef<boolean>
-  help?: MaybeRef<string>
+  id?: MaybeRefOrGetter<string>
+  create?: MaybeRefOrGetter<boolean>
+  inherit?: MaybeRefOrGetter<boolean>
+  help?: MaybeRefOrGetter<string>
 }
 
 export function useVFieldContext(options = {} as VFieldContextOption) {

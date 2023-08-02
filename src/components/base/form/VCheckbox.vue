@@ -2,39 +2,56 @@
 import { useVFieldContext } from '/@src/composable/useVFieldContext'
 
 export type VCheckboxColor = 'primary' | 'info' | 'success' | 'warning' | 'danger'
-export interface VCheckboxEmits {
-  (e: 'update:modelValue', value: any): void
-}
+
 export interface VCheckboxProps {
+  id?: string
   raw?: boolean
   label?: string
   color?: VCheckboxColor
   trueValue?: any
   falseValue?: any
   value?: any
-  modelValue?: any
   circle?: boolean
   solid?: boolean
   paddingless?: boolean
   wrapperClass?: string
 }
 
-const emits = defineEmits<VCheckboxEmits>()
+const modelValue = defineModel<any>({
+  default: false,
+  local: true,
+})
 const props = withDefaults(defineProps<VCheckboxProps>(), {
+  id: undefined,
   label: undefined,
   color: undefined,
   trueValue: true,
   falseValue: false,
   value: undefined,
-  modelValue: false,
   circle: false,
   solid: false,
   paddingless: false,
   wrapperClass: undefined,
 })
 
-const vFieldContext = reactive(useVFieldContext())
-const $value = ref((vFieldContext.field?.value ?? props.modelValue) as any)
+const context = useVFieldContext()
+
+const internal = computed({
+  get() {
+    if (context.field?.value) {
+      return context.field.value.value
+    } else {
+      return modelValue.value
+    }
+  },
+  set(value: any) {
+    console.log('checkbox set', value)
+    if (context.field?.value) {
+      context.field.value.setValue(value)
+    }
+    modelValue.value = value
+  },
+})
 
 const classes = computed(() => {
   if (props.raw) return [props.wrapperClass]
@@ -48,23 +65,13 @@ const classes = computed(() => {
     props.paddingless && 'is-paddingless',
   ]
 })
-
-watch($value, () => {
-  emits('update:modelValue', $value.value)
-})
-watch(
-  () => props.modelValue,
-  () => {
-    $value.value = props.modelValue
-  }
-)
 </script>
 
 <template>
-  <VLabel raw :class="classes">
+  <VLabel :id="props.id || context.id.value" raw :class="classes">
     <input
-      :id="vFieldContext.id"
-      v-model="$value"
+      :id="props.id || context.id.value"
+      v-model="internal"
       v-bind="$attrs"
       :true-value="props.trueValue"
       :false-value="props.falseValue"
@@ -72,7 +79,7 @@ watch(
       type="checkbox"
     />
     <span></span>
-    <slot v-bind="vFieldContext">{{ props.label }}</slot>
+    <slot v-bind="context">{{ props.label }}</slot>
   </VLabel>
 </template>
 

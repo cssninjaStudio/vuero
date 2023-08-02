@@ -134,13 +134,10 @@ const topicList = dashboardData.topicList as any[]
                     <VAvatar picture="/demo/photos/dashboards/lifestyle/1.jpg" squared />
                   </template>
                   <template #action>
-                    <div class="rating">
-                      <i aria-hidden="true" class="fas fa-star selected"></i>
-                      <i aria-hidden="true" class="fas fa-star selected"></i>
-                      <i aria-hidden="true" class="fas fa-star selected"></i>
-                      <i aria-hidden="true" class="fas fa-star selected"></i>
-                      <i aria-hidden="true" class="fas fa-star selected"></i>
-                    </div>
+                    <VRangeRating :model-value="5" readonly>
+                      <i class="fas fa-star" aria-hidden="true"></i>
+                    </VRangeRating>
+
                     <VIconButton
                       icon="feather:arrow-right"
                       circle
@@ -155,13 +152,9 @@ const topicList = dashboardData.topicList as any[]
                     <VAvatar picture="/demo/photos/dashboards/lifestyle/2.jpg" squared />
                   </template>
                   <template #action>
-                    <div class="rating">
-                      <i aria-hidden="true" class="fas fa-star selected"></i>
-                      <i aria-hidden="true" class="fas fa-star selected"></i>
-                      <i aria-hidden="true" class="fas fa-star selected"></i>
-                      <i aria-hidden="true" class="fas fa-star selected"></i>
-                      <i aria-hidden="true" class="fas fa-star"></i>
-                    </div>
+                    <VRangeRating :model-value="4" readonly>
+                      <i class="fas fa-star" aria-hidden="true"></i>
+                    </VRangeRating>
                     <VIconButton
                       icon="feather:arrow-right"
                       circle
@@ -176,13 +169,9 @@ const topicList = dashboardData.topicList as any[]
                     <VAvatar picture="/demo/photos/dashboards/lifestyle/3.jpg" squared />
                   </template>
                   <template #action>
-                    <div class="rating">
-                      <i aria-hidden="true" class="fas fa-star selected"></i>
-                      <i aria-hidden="true" class="fas fa-star selected"></i>
-                      <i aria-hidden="true" class="fas fa-star selected"></i>
-                      <i aria-hidden="true" class="fas fa-star selected"></i>
-                      <i aria-hidden="true" class="fas fa-star selected"></i>
-                    </div>
+                    <VRangeRating :model-value="5" readonly>
+                      <i class="fas fa-star" aria-hidden="true"></i>
+                    </VRangeRating>
                     <VIconButton
                       icon="feather:arrow-right"
                       circle
@@ -197,13 +186,9 @@ const topicList = dashboardData.topicList as any[]
                     <VAvatar picture="/demo/photos/dashboards/lifestyle/4.jpg" squared />
                   </template>
                   <template #action>
-                    <div class="rating">
-                      <i aria-hidden="true" class="fas fa-star selected"></i>
-                      <i aria-hidden="true" class="fas fa-star selected"></i>
-                      <i aria-hidden="true" class="fas fa-star selected"></i>
-                      <i aria-hidden="true" class="fas fa-star selected"></i>
-                      <i aria-hidden="true" class="fas fa-star selected"></i>
-                    </div>
+                    <VRangeRating :model-value="5" readonly>
+                      <i class="fas fa-star" aria-hidden="true"></i>
+                    </VRangeRating>
                     <VIconButton
                       icon="feather:arrow-right"
                       circle
@@ -234,13 +219,9 @@ const topicList = dashboardData.topicList as any[]
                     <VAvatar picture="/demo/photos/dashboards/lifestyle/5.jpg" squared />
                   </template>
                   <template #action>
-                    <div class="rating">
-                      <i aria-hidden="true" class="fas fa-star selected"></i>
-                      <i aria-hidden="true" class="fas fa-star selected"></i>
-                      <i aria-hidden="true" class="fas fa-star selected"></i>
-                      <i aria-hidden="true" class="fas fa-star selected"></i>
-                      <i aria-hidden="true" class="fas fa-star selected"></i>
-                    </div>
+                    <VRangeRating :model-value="5" readonly>
+                      <i class="fas fa-star" aria-hidden="true"></i>
+                    </VRangeRating>
                     <VIconButton
                       icon="feather:arrow-right"
                       circle
@@ -255,13 +236,9 @@ const topicList = dashboardData.topicList as any[]
                     <VAvatar picture="/demo/photos/dashboards/lifestyle/6.jpg" squared />
                   </template>
                   <template #action>
-                    <div class="rating">
-                      <i aria-hidden="true" class="fas fa-star selected"></i>
-                      <i aria-hidden="true" class="fas fa-star selected"></i>
-                      <i aria-hidden="true" class="fas fa-star selected"></i>
-                      <i aria-hidden="true" class="fas fa-star selected"></i>
-                      <i aria-hidden="true" class="fas fa-star"></i>
-                    </div>
+                    <VRangeRating :model-value="4" readonly>
+                      <i class="fas fa-star" aria-hidden="true"></i>
+                    </VRangeRating>
                     <VIconButton
                       icon="feather:arrow-right"
                       circle
@@ -276,13 +253,9 @@ const topicList = dashboardData.topicList as any[]
                     <VAvatar picture="/demo/photos/dashboards/lifestyle/7.jpg" squared />
                   </template>
                   <template #action>
-                    <div class="rating">
-                      <i aria-hidden="true" class="fas fa-star selected"></i>
-                      <i aria-hidden="true" class="fas fa-star selected"></i>
-                      <i aria-hidden="true" class="fas fa-star selected"></i>
-                      <i aria-hidden="true" class="fas fa-star selected"></i>
-                      <i aria-hidden="true" class="fas fa-star selected"></i>
-                    </div>
+                    <VRangeRating :model-value="5" readonly>
+                      <i class="fas fa-star" aria-hidden="true"></i>
+                    </VRangeRating>
                     <VIconButton
                       icon="feather:arrow-right"
                       circle
@@ -297,13 +270,9 @@ const topicList = dashboardData.topicList as any[]
                     <VAvatar picture="/demo/photos/dashboards/lifestyle/7.jpg" squared />
                   </template>
                   <template #action>
-                    <div class="rating">
-                      <i aria-hidden="true" class="fas fa-star selected"></i>
-                      <i aria-hidden="true" class="fas fa-star selected"></i>
-                      <i aria-hidden="true" class="fas fa-star selected"></i>
-                      <i aria-hidden="true" class="fas fa-star selected"></i>
-                      <i aria-hidden="true" class="fas fa-star selected"></i>
-                    </div>
+                    <VRangeRating :model-value="5" readonly>
+                      <i class="fas fa-star" aria-hidden="true"></i>
+                    </VRangeRating>
                     <VIconButton
                       icon="feather:arrow-right"
                       circle
@@ -508,11 +477,6 @@ const topicList = dashboardData.topicList as any[]
 
             i {
               font-size: 12px;
-              color: var(--widget-grey-dark-12);
-
-              &.selected {
-                color: var(--yellow);
-              }
             }
           }
         }

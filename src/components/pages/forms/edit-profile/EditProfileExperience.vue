@@ -95,7 +95,13 @@ const onSave = async () => {
 
         <div class="setting-list">
           <!--Inner Form-->
-          <form v-if="isUploading" class="setting-form" @submit.prevent="addExperience">
+          <form
+            v-if="isUploading"
+            method="post"
+            novalidate
+            class="setting-form"
+            @submit.prevent="addExperience"
+          >
             <VFilePond
               size="tiny"
               class="profile-filepond"

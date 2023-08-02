@@ -7,8 +7,6 @@ import { createRouter } from './router'
 import VueroApp from './VueroApp.vue'
 import './styles'
 
-import { createApi } from '/@src/composable/useApi'
-
 export type VueroAppContext = Awaited<ReturnType<typeof createApp>>
 export type VueroPlugin = (vuero: VueroAppContext) => void | Promise<void>
 
@@ -24,7 +22,6 @@ export function definePlugin(plugin: VueroPlugin) {
 export async function createApp() {
   const app = createClientApp(VueroApp)
   const router = createRouter()
-  const api = createApi()
 
   const head = createHead({
     plugins: [InferSeoMetaPlugin()],
@@ -36,7 +33,6 @@ export async function createApp() {
 
   const vuero = {
     app,
-    api,
     router,
     head,
     pinia,

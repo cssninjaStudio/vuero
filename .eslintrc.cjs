@@ -55,6 +55,9 @@ module.exports = {
         'vuejs-accessibility/form-control-has-label': 'off',
         'vuejs-accessibility/label-has-for': 'off',
         'vuejs-accessibility/anchor-has-content': 'off',
+
+        // vue 3.3 allows setup props destructuring
+        'vue/no-setup-props-destructure': 'off',
       },
     },
   ],

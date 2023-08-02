@@ -41,7 +41,7 @@ const validateStep = async () => {
 </script>
 
 <template>
-  <form @submit.prevent="validateStep">
+  <form method="post" novalidate @submit.prevent="validateStep">
     <div class="mobile-steps is-active">
       <ul class="steps has-content-centered is-thin is-horizontal is-short">
         <li :class="[currentStep === 0 && 'is-active']" class="steps-segment">

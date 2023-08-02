@@ -125,7 +125,7 @@ debouncedWatch(
 </script>
 
 <template>
-  <form class="vuero-demos" @submit.prevent>
+  <form method="post" novalidate class="vuero-demos" @submit.prevent>
     <div class="demo-search-section">
       <VFlex justify-content="center">
         <VField :label="searchLabel">
@@ -203,7 +203,12 @@ debouncedWatch(
             class="vuero-demo-wrapper loaded"
             tabindex="0"
             role="button"
-            @keydown.space.prevent="(e) => ((e.target as HTMLElement).querySelector('a[href]') as HTMLAnchorElement)?.click()"
+            @keydown.space.prevent="
+              (e) =>
+                (
+                  (e.target as HTMLElement).querySelector('a[href]') as HTMLAnchorElement
+                )?.click()
+            "
           >
             <span v-if="item.new" class="new-tag">New</span>
             <img

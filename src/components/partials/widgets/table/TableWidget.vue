@@ -84,23 +84,23 @@ const props = withDefaults(
             }
           }
 
-          .rating-wrap {
-            text-align: inset-inline-end;
+          // .rating-wrap {
+          //   text-align: inset-inline-end;
 
-            span {
-              color: var(--light-text);
-            }
+          //   span {
+          //     color: var(--light-text);
+          //   }
 
-            .rating {
-              i {
-                color: var(--widget-grey-dark-8);
+          //   .rating {
+          //     i {
+          //       color: var(--widget-grey-dark-8);
 
-                &.selected {
-                  color: var(--yellow) !important;
-                }
-              }
-            }
-          }
+          //       &.selected {
+          //         color: var(--yellow) !important;
+          //       }
+          //     }
+          //   }
+          // }
 
           .tag-wrap {
             text-align: inset-inline-end;

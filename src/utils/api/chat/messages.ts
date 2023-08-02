@@ -1,4 +1,4 @@
-import type { AxiosInstance } from 'axios'
+import type { $Fetch } from 'ofetch'
 
 export interface Message {
   id: number
@@ -18,19 +18,19 @@ export interface Message {
 }
 
 export async function fetchMessages(
-  api: AxiosInstance,
+  $fetch: $Fetch,
   conversationId: number,
   start = 0,
   limit = 20
 ): Promise<{ messages: Message[]; count: number }> {
   let count = 0
 
-  const { data: messages, headers } = await api.get<Message[]>(
+  const { _data: messages = [], headers } = await $fetch.raw<Message[]>(
     `/api/conversations/${conversationId}/messages?_start=${start}&_limit=${limit}`
   )
 
-  if ('X-Total-Count' in headers) {
-    count = parseInt(headers['X-Total-Count'] ?? '0')
+  if (headers.has('X-Total-Count')) {
+    count = parseInt(headers.get('X-Total-Count') ?? '0')
   }
 
   return { messages, count }

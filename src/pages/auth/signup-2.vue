@@ -3,7 +3,7 @@ import { useI18n } from 'vue-i18n'
 
 import { toTypedSchema } from '@vee-validate/zod'
 import { useForm } from 'vee-validate'
-import { z as zod } from 'zod'
+import { z } from 'zod'
 
 import { useDarkmode } from '/@src/stores/darkmode'
 import { useNotyf } from '/@src/composable/useNotyf'
@@ -16,45 +16,57 @@ const notyf = useNotyf()
 const isLoading = ref(false)
 const { t } = useI18n()
 
-// Define a validation schema
-const validationSchema = toTypedSchema(
-  zod
-    .object({
-      name: zod
-        .string({
-          required_error: t('auth.errors.name.required'),
-        })
-        .min(1, t('auth.errors.name.required')),
-      email: zod
-        .string({
-          required_error: t('auth.errors.email.required'),
-        })
-        .email(t('auth.errors.email.format')),
-      password: zod
-        .string({
-          required_error: t('auth.errors.password.required'),
-        })
-        .min(8, t('auth.errors.password.length')),
-      passwordCheck: zod.string({
-        required_error: t('auth.errors.passwordCheck.required'),
-      }),
-      promotional: zod.boolean(),
-    })
-    .refine((data) => data.password === data.passwordCheck, {
-      message: t('auth.errors.passwordCheck.match'),
-      path: ['passwordCheck'],
-    })
-)
+// This is the Zod schema for the form input
+// It's used to define the shape that the form data will have
+const zodSchema = z
+  .object({
+    name: z
+      .string({
+        required_error: t('auth.errors.name.required'),
+      })
+      .min(1, t('auth.errors.name.required')),
+    email: z
+      .string({
+        required_error: t('auth.errors.email.required'),
+      })
+      .email(t('auth.errors.email.format')),
+    password: z
+      .string({
+        required_error: t('auth.errors.password.required'),
+      })
+      .min(8, t('auth.errors.password.length')),
+    passwordCheck: z.string({
+      required_error: t('auth.errors.passwordCheck.required'),
+    }),
+    promotional: z.boolean(),
+  })
+  // Refine is used to add custom validation rules to the schema
+  .refine((data) => data.password === data.passwordCheck, {
+    message: t('auth.errors.passwordCheck.match'),
+    path: ['passwordCheck'],
+  })
 
+// Zod has a great infer method that will
+// infer the shape of the schema into a TypeScript type
+type FormInput = z.infer<typeof zodSchema>
+
+// Define a validation schema
+const validationSchema = toTypedSchema(zodSchema)
+
+// Set initial values for the form
+const initialValues = computed<FormInput>(() => ({
+  name: '',
+  email: '',
+  password: '',
+  passwordCheck: '',
+  promotional: false,
+}))
+
+// here we create a vee-validate form context that
+// will be used in all vuero form components
 const { handleSubmit } = useForm({
   validationSchema,
-  initialValues: {
-    name: '',
-    email: '',
-    password: '',
-    passwordCheck: '',
-    promotional: false,
-  },
+  initialValues,
 })
 
 const onSignup = handleSubmit(async (values) => {
@@ -119,7 +131,7 @@ useHead({
                 </div>
                 <div class="auth-form-wrapper">
                   <!-- Login Form -->
-                  <form @submit="onSignup">
+                  <form method="post" novalidate @submit="onSignup">
                     <div id="signin-form" class="login-form">
                       <!-- Input -->
                       <VField id="name" v-slot="{ field }">
@@ -129,8 +141,8 @@ useHead({
                             :placeholder="t('auth.placeholder.name')"
                             autocomplete="name"
                           />
-                          <p v-if="field?.errors?.value?.length" class="help is-danger">
-                            {{ field.errors?.value?.join(', ') }}
+                          <p v-if="field?.errorMessage" class="help is-danger">
+                            {{ field.errorMessage }}
                           </p>
                         </VControl>
                       </VField>
@@ -143,8 +155,8 @@ useHead({
                             :placeholder="t('auth.placeholder.email')"
                             autocomplete="email"
                           />
-                          <p v-if="field?.errors?.value?.length" class="help is-danger">
-                            {{ field.errors?.value?.join(', ') }}
+                          <p v-if="field?.errorMessage" class="help is-danger">
+                            {{ field.errorMessage }}
                           </p>
                         </VControl>
                       </VField>
@@ -157,8 +169,8 @@ useHead({
                             :placeholder="t('auth.placeholder.password')"
                             autocomplete="new-password"
                           />
-                          <p v-if="field?.errors?.value?.length" class="help is-danger">
-                            {{ field.errors?.value?.join(', ') }}
+                          <p v-if="field?.errorMessage" class="help is-danger">
+                            {{ field.errorMessage }}
                           </p>
                         </VControl>
                       </VField>
@@ -170,8 +182,8 @@ useHead({
                             type="password"
                             :placeholder="t('auth.placeholder.passwordCheck')"
                           />
-                          <p v-if="field?.errors?.value?.length" class="help is-danger">
-                            {{ field.errors?.value?.join(', ') }}
+                          <p v-if="field?.errorMessage" class="help is-danger">
+                            {{ field.errorMessage }}
                           </p>
                         </VControl>
                       </VField>

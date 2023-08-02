@@ -23,7 +23,12 @@ const onSubmit = () => {
 </script>
 
 <template>
-  <form class="form-layout is-stacked" @submit.prevent="onSubmit">
+  <form
+    method="post"
+    novalidate
+    class="form-layout is-stacked"
+    @submit.prevent="onSubmit"
+  >
     <div class="form-outer">
       <div :class="[isStuck && 'is-stuck']" class="form-header stuck-header">
         <div class="form-header-inner">

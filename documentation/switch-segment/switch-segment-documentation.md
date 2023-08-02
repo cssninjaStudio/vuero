@@ -10,7 +10,7 @@ Please refer to the markup for more details about usage.
 
 ```vue
 <template>
-  <VField grouped>
+  <VField horizontal>
     <VControl subcontrol>
       <VSwitchSegment />
     </VControl>
@@ -37,7 +37,7 @@ Please refer to the markup for more details about usage.
 
 <!--example-->
 
-<VField grouped>
+<VField horizontal>
   <VControl subcontrol>
     <VSwitchSegment />
   </VControl>

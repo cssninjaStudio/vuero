@@ -66,7 +66,7 @@ useHead({
 
         <!--Form-->
         <div class="form-card">
-          <form @submit.prevent="handleSignup">
+          <form method="post" novalidate @submit.prevent="handleSignup">
             <div class="login-form">
               <!-- Input -->
               <VField>

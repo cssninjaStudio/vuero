@@ -1,3 +1,4 @@
+import { useFetch } from '/@src/composable/useFetch'
 import { definePlugin } from '/@src/app'
 import { useUserSession } from '/@src/stores/userSession'
 
@@ -22,15 +23,16 @@ import { useUserSession } from '/@src/stores/userSession'
  *  // HTML content
  * </template>
  */
-export default definePlugin(async ({ router, api, pinia }) => {
+export default definePlugin(async ({ router, pinia }) => {
   const userSession = useUserSession(pinia)
+  const $fetch = useFetch()
 
   // 1. Check token validity at app startup
   if (userSession.isLoggedIn) {
     try {
       // Do api request call to retreive user profile.
       // Note that the api is provided with json-server
-      const { data: user } = await api.get('/api/users/me')
+      const user = await $fetch('/api/users/me')
       userSession.setUser(user)
     } catch (err) {
       // delete stored token if it fails

@@ -102,33 +102,9 @@ const filteredData = computed(() => {
                 <div class="meta-left">
                   <h3>
                     <span>{{ item.name }}</span>
-                    <span class="rating">
-                      <i
-                        class="fas fa-star"
-                        aria-hidden="true"
-                        :class="[item.rating >= 1 && 'active']"
-                      ></i>
-                      <i
-                        class="fas fa-star"
-                        aria-hidden="true"
-                        :class="[item.rating >= 2 && 'active']"
-                      ></i>
-                      <i
-                        class="fas fa-star"
-                        aria-hidden="true"
-                        :class="[item.rating >= 3 && 'active']"
-                      ></i>
-                      <i
-                        class="fas fa-star"
-                        aria-hidden="true"
-                        :class="[item.rating >= 4 && 'active']"
-                      ></i>
-                      <i
-                        class="fas fa-star"
-                        aria-hidden="true"
-                        :class="[item.rating >= 5 && 'active']"
-                      ></i>
-                    </span>
+                    <VRangeRating v-model="item.rating" class="is-inline">
+                      <i class="fas fa-star" aria-hidden="true"></i>
+                    </VRangeRating>
                   </h3>
                   <p>
                     <i aria-hidden="true" class="iconify" data-icon="feather:map-pin"></i>
@@ -305,14 +281,7 @@ const filteredData = computed(() => {
             margin-inline-start: 12px;
 
             i {
-              position: relative;
-              top: -2px;
               font-size: 12px;
-              color: var(--fade-grey-dark-4);
-
-              &.active {
-                color: #ffc43b;
-              }
             }
           }
         }
@@ -390,12 +359,6 @@ const filteredData = computed(() => {
         .meta-left {
           h3 {
             color: var(--dark-dark-text) !important;
-
-            .rating {
-              i:not(.active) {
-                color: var(--dark-sidebar-dark-2);
-              }
-            }
           }
 
           > span {

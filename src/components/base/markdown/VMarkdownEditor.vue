@@ -35,19 +35,19 @@ type VMarkdownEditorToolbar = Record<
   VMarkdownEditorCommandAction | VMarkdownEditorCommandGroup
 >
 
-const emits = defineEmits<{
-  (event: 'update:modelValue', value?: any): void
-}>()
+const modelValue = defineModel<string>({
+  default: '',
+  local: true,
+})
+
 const props = withDefaults(
   defineProps<{
-    modelValue?: string
     autogrow?: boolean
     options?: Partial<TextareaMarkdownOptions>
     commands?: Command[]
     toolbar?: VMarkdownEditorToolbar
   }>(),
   {
-    modelValue: '',
     options: () => ({
       enableIndentExtension: true,
       enableLinkPasteExtension: true,
@@ -151,30 +151,28 @@ const props = withDefaults(
   }
 )
 
-const vFieldContext = reactive(
-  useVFieldContext({
-    help: 'VMarkdownEditor',
-  })
-)
+const { field, id } = useVFieldContext({
+  help: 'VMarkdownEditor',
+})
 
 const textareaRef = ref<HTMLTextAreaElement>()
 const mode = ref<'write' | 'preview'>('write')
 const trigger = shallowRef<CommandTrigger>()
 const cursor = shallowRef<Cursor>()
 
-const value = computed({
+const internal = computed({
   get() {
-    if (vFieldContext.field?.value) {
-      return String(vFieldContext.field.value.value)
+    if (field?.value) {
+      return String(field.value.value)
     } else {
-      return props.modelValue
+      return modelValue.value
     }
   },
   set(value: string) {
-    if (vFieldContext.field?.value) {
-      vFieldContext.field.value.value = value
+    if (field?.value) {
+      field.value.setValue(value)
     }
-    emits('update:modelValue', value)
+    modelValue.value = value
   },
 })
 
@@ -197,7 +195,7 @@ function triggerAction(
       textarea: textareaRef.value!,
       cursor: cursor.value!,
       trigger: trigger.value!,
-      value: value.value,
+      value: internal.value,
     })
   } else {
     trigger.value?.(action)
@@ -232,7 +230,7 @@ watchEffect((cleanup) => {
           </VAction>
           <VAction
             dark="2"
-            :disabled="!value"
+            :disabled="!internal"
             :active="mode === 'preview'"
             @click="mode = 'preview'"
           >
@@ -299,8 +297,9 @@ watchEffect((cleanup) => {
     <slot v-if="mode === 'write'" name="before-textarea"></slot>
     <textarea
       v-show="mode === 'write'"
+      :id="id"
       ref="textareaRef"
-      v-model="value"
+      v-model="internal"
       v-bind="$attrs"
       class="textarea mt-0"
       autocomplete="no"
@@ -309,9 +308,9 @@ watchEffect((cleanup) => {
     ></textarea>
     <slot v-if="mode === 'write'" name="after-textarea"></slot>
 
-    <slot v-if="mode === 'preview'" name="preview" v-bind="{ value }">
+    <slot v-if="mode === 'preview'" name="preview" v-bind="{ value: internal }">
       <VCard radius="smooth">
-        <VMarkdownPreview :source="value" />
+        <VMarkdownPreview :source="internal" />
       </VCard>
     </slot>
   </div>

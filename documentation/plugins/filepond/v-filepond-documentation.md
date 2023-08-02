@@ -5,8 +5,9 @@ state:
 
 ### VFilePond
 
-Vuero ships with the `<VFilePond />` component, a custom credit card
-previewer. Check the code for more details.
+Vuero ships with the `<VFilePond />` component, a custom file upload component.
+It is based on the [FilePond](https://pqina.nl/filepond/) library.
+Check the code for more details.
 
 <!--code-->
 

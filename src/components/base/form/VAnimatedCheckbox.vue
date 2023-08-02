@@ -2,7 +2,7 @@
 let instances = 0
 </script>
 
-<script setup lang="ts">
+<script setup lang="ts" generic="T extends { id: string | number }">
 export type VAnimatedCheckboxColor =
   | 'primary'
   | 'info'
@@ -11,26 +11,31 @@ export type VAnimatedCheckboxColor =
   | 'danger'
   | 'purple'
 
-export interface VAnimatedCheckboxEmits {
-  (e: 'update:modelValue', value: any[]): void
-}
-export interface VAnimatedCheckboxProps {
-  value?: any
-  color?: VAnimatedCheckboxColor
-  modelValue?: any[]
-}
-
-const emit = defineEmits<VAnimatedCheckboxEmits>()
-const props = withDefaults(defineProps<VAnimatedCheckboxProps>(), {
-  value: undefined,
-  color: undefined,
-  modelValue: () => [],
+defineOptions({
+  inheritAttrs: false,
 })
+
+const modelValue = defineModel<T[]>({
+  default: () => [],
+  local: true,
+})
+
+const props = withDefaults(
+  defineProps<{
+    value: T
+    color?: VAnimatedCheckboxColor
+  }>(),
+  {
+    color: undefined,
+  }
+)
 
 const animatedCheckboxId = `animated-checkbox-${++instances}`
 const element = ref<HTMLElement>()
 const innerElement = ref<HTMLElement>()
-const checked = computed(() => props.modelValue.includes(props.value))
+const checked = computed(() =>
+  Boolean(modelValue.value.find((item) => item.id === props.value.id))
+)
 
 const updateCheckbox = () => {
   if (element.value && innerElement.value) {
@@ -51,14 +56,16 @@ const updateCheckbox = () => {
 }
 
 function change() {
-  const values = [...props.modelValue]
+  const values = [...modelValue.value]
+  const index = values.findIndex((item) => item.id === props.value.id)
 
-  if (checked.value) {
-    values.splice(values.indexOf(props.value), 1)
+  if (index > -1) {
+    values.splice(index, 1)
   } else {
-    values.push(props.value)
+    values.push(unref(props.value))
   }
-  emit('update:modelValue', values)
+
+  modelValue.value = values
 }
 
 watchEffect(updateCheckbox)
@@ -69,8 +76,7 @@ watchEffect(updateCheckbox)
     <input
       :id="animatedCheckboxId"
       type="checkbox"
-      :checked="checked"
-      :value="props.value"
+      :value="value"
       v-bind="$attrs"
       @change="change"
     />

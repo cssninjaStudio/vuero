@@ -177,6 +177,10 @@ const emit = defineEmits(['close'])
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             Input Addons
           </RouterLink> -->
+          <RouterLink to="/elements/forms/range-rating" class="is-submenu">
+            <i aria-hidden="true" class="iconify" data-icon="feather:circle"> </i>
+            VRangeRating
+          </RouterLink>
           <RouterLink to="/elements/forms/file" class="is-submenu">
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"> </i>
             File Input
