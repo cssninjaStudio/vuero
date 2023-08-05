@@ -15,28 +15,50 @@ useHead({
     <div class="status-page-wrapper">
       <!--Status header-->
       <div class="head">
-        <RouterLink to="/" class="logo">
-          <AnimatedLogo width="38px" height="38px" />
+        <RouterLink
+          to="/"
+          class="logo"
+        >
+          <AnimatedLogo
+            width="38px"
+            height="38px"
+          />
         </RouterLink>
         <div>
-          <RouterLink class="action-link mx-4" to="/sidebar/dashboards">
+          <RouterLink
+            class="action-link mx-4"
+            to="/sidebar/dashboards"
+          >
             Home
           </RouterLink>
-          <RouterLink class="action-link mx-4" to="/roadmap"> Roadmap </RouterLink>
+          <RouterLink
+            class="action-link mx-4"
+            to="/roadmap"
+          >
+            Roadmap
+          </RouterLink>
         </div>
       </div>
 
       <!--Status body-->
       <div class="status-block">
         <div class="status-header">
-          <div class="indicator"></div>
-          <div class="title is-4">All services are online.</div>
-          <div class="subtitle is-6">As of September 20, 2020 at 11:08 PM PST.</div>
+          <div class="indicator" />
+          <div class="title is-4">
+            All services are online.
+          </div>
+          <div class="subtitle is-6">
+            As of September 20, 2020 at 11:08 PM PST.
+          </div>
         </div>
 
         <div class="status-uptime">
-          <div class="title">Services</div>
-          <div class="uptime">Uptime of the past 90 days</div>
+          <div class="title">
+            Services
+          </div>
+          <div class="uptime">
+            Uptime of the past 90 days
+          </div>
         </div>
 
         <div class="status-list">
@@ -47,163 +69,205 @@ useHead({
                 src="/demo/photos/animaticons/lightbulb.gif"
                 alt=""
                 @error.once="onceImageErrored(150)"
-              />
+              >
             </div>
             <div class="progress-wrap">
               <div class="progress-wrap-inner">
                 <div>
-                  <div class="label">REST API</div>
+                  <div class="label">
+                    REST API
+                  </div>
                   <p>Including replicated servers</p>
                 </div>
                 <div class="amount has-text-centered">
                   <span>99%</span>
                 </div>
               </div>
-              <progress class="progress is-primary is-smaller" value="99" max="100">
+              <progress
+                class="progress is-primary is-smaller"
+                value="99"
+                max="100"
+              >
                 99%
               </progress>
             </div>
           </div>
-          <hr />
+          <hr>
           <div class="list-block api">
             <div class="icon-wrap">
               <img
                 src="/demo/photos/animaticons/image.gif"
                 alt=""
                 @error.once="onceImageErrored(150)"
-              />
+              >
             </div>
             <div class="progress-wrap">
               <div class="progress-wrap-inner">
                 <div>
-                  <div class="label">CDN Assets</div>
+                  <div class="label">
+                    CDN Assets
+                  </div>
                   <p>Assets delivered from our CDN</p>
                 </div>
                 <div class="amount has-text-centered">
                   <span>100%</span>
                 </div>
               </div>
-              <progress class="progress is-success is-smaller" value="100" max="100">
+              <progress
+                class="progress is-success is-smaller"
+                value="100"
+                max="100"
+              >
                 100%
               </progress>
             </div>
           </div>
-          <hr />
+          <hr>
           <div class="list-block">
             <div class="icon-wrap">
               <img
                 src="/demo/photos/animaticons/search.gif"
                 alt=""
                 @error.once="onceImageErrored(150)"
-              />
+              >
             </div>
             <div class="progress-wrap">
               <div class="progress-wrap-inner">
                 <div>
-                  <div class="label">Search Indexes</div>
+                  <div class="label">
+                    Search Indexes
+                  </div>
                   <p>Including replicated search</p>
                 </div>
                 <div class="amount has-text-centered">
                   <span>99%</span>
                 </div>
               </div>
-              <progress class="progress is-primary is-smaller" value="99" max="100">
+              <progress
+                class="progress is-primary is-smaller"
+                value="99"
+                max="100"
+              >
                 99%
               </progress>
             </div>
           </div>
-          <hr />
+          <hr>
           <div class="list-block">
             <div class="icon-wrap">
               <img
                 src="/demo/photos/animaticons/diamond.gif"
                 alt=""
                 @error.once="onceImageErrored(150)"
-              />
+              >
             </div>
             <div class="progress-wrap">
               <div class="progress-wrap-inner">
                 <div>
-                  <div class="label">Integrations</div>
+                  <div class="label">
+                    Integrations
+                  </div>
                   <p>We are experiencing some issues</p>
                 </div>
                 <div class="amount has-text-centered">
                   <span>72%</span>
                 </div>
               </div>
-              <progress class="progress is-warning is-smaller" value="72" max="100">
+              <progress
+                class="progress is-warning is-smaller"
+                value="72"
+                max="100"
+              >
                 72%
               </progress>
             </div>
           </div>
-          <hr />
+          <hr>
           <div class="list-block api">
             <div class="icon-wrap">
               <img
                 src="/demo/photos/animaticons/chart.gif"
                 alt=""
                 @error.once="onceImageErrored(150)"
-              />
+              >
             </div>
             <div class="progress-wrap">
               <div class="progress-wrap-inner">
                 <div>
-                  <div class="label">Load Balancing</div>
+                  <div class="label">
+                    Load Balancing
+                  </div>
                   <p>Everything is working fine</p>
                 </div>
                 <div class="amount has-text-centered">
                   <span>100%</span>
                 </div>
               </div>
-              <progress class="progress is-success is-smaller" value="100" max="100">
+              <progress
+                class="progress is-success is-smaller"
+                value="100"
+                max="100"
+              >
                 100%
               </progress>
             </div>
           </div>
-          <hr />
+          <hr>
           <div class="list-block api">
             <div class="icon-wrap">
               <img
                 src="/demo/photos/animaticons/rocket.gif"
                 alt=""
                 @error.once="onceImageErrored(150)"
-              />
+              >
             </div>
             <div class="progress-wrap">
               <div class="progress-wrap-inner">
                 <div>
-                  <div class="label">Load Booster</div>
+                  <div class="label">
+                    Load Booster
+                  </div>
                   <p>Everything is working fine</p>
                 </div>
                 <div class="amount has-text-centered">
                   <span>100%</span>
                 </div>
               </div>
-              <progress class="progress is-success is-smaller" value="100" max="100">
+              <progress
+                class="progress is-success is-smaller"
+                value="100"
+                max="100"
+              >
                 100%
               </progress>
             </div>
           </div>
-          <hr />
+          <hr>
           <div class="list-block">
             <div class="icon-wrap">
               <img
                 src="/demo/photos/animaticons/check.gif"
                 alt=""
                 @error.once="onceImageErrored(150)"
-              />
+              >
             </div>
             <div class="progress-wrap">
               <div class="progress-wrap-inner">
                 <div>
-                  <div class="label">Security</div>
+                  <div class="label">
+                    Security
+                  </div>
                   <p>Everything is working fine</p>
                 </div>
                 <div class="amount has-text-centered">
                   <span>100%</span>
                 </div>
               </div>
-              <progress class="progress is-primary is-smaller" value="100" max="100">
+              <progress
+                class="progress is-primary is-smaller"
+                value="100"
+                max="100"
+              >
                 100%
               </progress>
             </div>
@@ -213,12 +277,18 @@ useHead({
       <div class="status-block">
         <div class="tweets-header">
           <div class="icon">
-            <i aria-hidden="true" class="fab fa-twitter"></i>
+            <i
+              aria-hidden="true"
+              class="fab fa-twitter"
+            />
           </div>
           <div class="username">
             <span class="dark-inverted">&commat;cssninjaStudio</span>
           </div>
-          <a class="action-link" tabindex="0">View on Twitter</a>
+          <a
+            class="action-link"
+            tabindex="0"
+          >View on Twitter</a>
         </div>
         <div class="status-tweets">
           <div class="updates">
@@ -229,7 +299,9 @@ useHead({
               />
 
               <div class="update-content">
-                <div class="timestamp">July 29 at 5:39pm</div>
+                <div class="timestamp">
+                  July 29 at 5:39pm
+                </div>
                 <div class="tweet">
                   We're experiencing higher than normal load on our batch infrastructure.
                   Webhooks are about an hour delayed. API calls are not impacted
@@ -243,7 +315,9 @@ useHead({
               />
 
               <div class="update-content">
-                <div class="timestamp">July 23 at 9:21pm</div>
+                <div class="timestamp">
+                  July 23 at 9:21pm
+                </div>
                 <div class="tweet">
                   Sorry about that! Our systems are showing everything as caught up now.
                   Let us know if you're still seeing problems!
@@ -265,8 +339,8 @@ useHead({
             type="checkbox"
             :checked="!darkmode.isDark"
             @change="darkmode.onChange"
-          />
-          <span></span>
+          >
+          <span />
         </label>
         <div>
           <a href="#">Legal</a>
@@ -274,7 +348,10 @@ useHead({
           <a href="#">Jobs</a>
         </div>
         <div class="copyright">
-          <span role="img" aria-label="copyright">&copy;</span>
+          <span
+            role="img"
+            aria-label="copyright"
+          >&copy;</span>
           <span>2020-2023 cssninjaStudio</span>
         </div>
       </div>

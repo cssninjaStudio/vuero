@@ -55,7 +55,7 @@ const filteredData = computed(() => {
           v-model="filters"
           class="input custom-text-filter"
           placeholder="Search..."
-        />
+        >
       </VControl>
 
       <div class="tabs-inner">
@@ -67,8 +67,7 @@ const filteredData = computed(() => {
                 role="button"
                 @keydown.space.prevent="tab = 'all'"
                 @click="tab = 'all'"
-                ><span>All</span></a
-              >
+              ><span>All</span></a>
             </li>
             <li :class="[tab === 'saved' && 'is-active']">
               <a
@@ -76,10 +75,9 @@ const filteredData = computed(() => {
                 role="button"
                 @keydown.space.prevent="tab = 'saved'"
                 @click="tab = 'saved'"
-                ><span>Saved</span></a
-              >
+              ><span>Saved</span></a>
             </li>
-            <li class="tab-naver"></li>
+            <li class="tab-naver" />
           </ul>
         </div>
       </div>
@@ -101,12 +99,12 @@ const filteredData = computed(() => {
             class="light-image"
             src="/@src/assets/illustrations/placeholders/search-3.svg"
             alt=""
-          />
+          >
           <img
             class="dark-image"
             src="/@src/assets/illustrations/placeholders/search-3-dark.svg"
             alt=""
-          />
+          >
         </template>
       </VPlaceholderPage>
 
@@ -117,9 +115,16 @@ const filteredData = computed(() => {
         :class="[tab === 'all' && 'is-active']"
       >
         <div class="list-view-inner">
-          <TransitionGroup name="list-complete" tag="div">
+          <TransitionGroup
+            name="list-complete"
+            tag="div"
+          >
             <!--Item-->
-            <div v-for="(item, key) in filteredData" :key="key" class="list-view-item">
+            <div
+              v-for="(item, key) in filteredData"
+              :key="key"
+              class="list-view-item"
+            >
               <div class="list-view-item-inner">
                 <div class="pre-meta">
                   <h3>{{ item.name }}</h3>
@@ -129,7 +134,7 @@ const filteredData = computed(() => {
                   :src="item.icon"
                   alt=""
                   @error.once="onceImageErrored(150)"
-                />
+                >
                 <div class="meta-left">
                   <h3>
                     <img
@@ -137,27 +142,45 @@ const filteredData = computed(() => {
                       :src="item.author.avatar"
                       alt=""
                       @error.once="onceImageErrored(150)"
-                    />
+                    >
                     <span>{{ item.author.name }}</span>
                   </h3>
                   <span>
-                    <i aria-hidden="true" class="iconify" data-icon="feather:archive"></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:archive"
+                    />
                     <span>{{ item.category }}</span>
-                    <i aria-hidden="true" class="fas fa-circle icon-separator"></i>
-                    <i aria-hidden="true" class="iconify" data-icon="feather:clock"></i>
+                    <i
+                      aria-hidden="true"
+                      class="fas fa-circle icon-separator"
+                    />
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:clock"
+                    />
                     <span>{{ item.duration }}</span>
-                    <i aria-hidden="true" class="fas fa-circle icon-separator"></i>
+                    <i
+                      aria-hidden="true"
+                      class="fas fa-circle icon-separator"
+                    />
                     <i
                       aria-hidden="true"
                       class="iconify"
                       data-icon="feather:paperclip"
-                    ></i>
+                    />
                     <span>{{ item.attachments }} files</span>
                   </span>
                 </div>
                 <div class="meta-right">
                   <div class="network">
-                    <VAvatarStack :avatars="item.followers" size="small" :limit="3" />
+                    <VAvatarStack
+                      :avatars="item.followers"
+                      size="small"
+                      :limit="3"
+                    />
                     <span>Like this</span>
                   </div>
                   <div class="buttons">
@@ -173,7 +196,7 @@ const filteredData = computed(() => {
                           aria-hidden="true"
                           class="iconify"
                           data-icon="feather:heart"
-                        ></i>
+                        />
                       </span>
                     </button>
                   </div>
@@ -212,12 +235,12 @@ const filteredData = computed(() => {
                 class="light-image"
                 src="/@src/assets/illustrations/placeholders/cooking.svg"
                 alt=""
-              />
+              >
               <img
                 class="dark-image"
                 src="/@src/assets/illustrations/placeholders/cooking-dark.svg"
                 alt=""
-              />
+              >
             </template>
           </VPlaceholderPage>
         </div>
@@ -338,8 +361,12 @@ const filteredData = computed(() => {
             margin-bottom: 0;
 
             &:nth-child(2) {
-              transition: color 0.3s, background-color 0.3s, border-color 0.3s,
-                height 0.3s, width 0.3s;
+              transition:
+                color 0.3s,
+                background-color 0.3s,
+                border-color 0.3s,
+                height 0.3s,
+                width 0.3s;
 
               &:hover,
               &:focus {
@@ -385,8 +412,12 @@ const filteredData = computed(() => {
                 background: var(--dark-sidebar-light-2);
                 border-color: var(--dark-sidebar-light-8);
                 color: var(--dark-dark-text);
-                transition: color 0.3s, background-color 0.3s, border-color 0.3s,
-                  height 0.3s, width 0.3s;
+                transition:
+                  color 0.3s,
+                  background-color 0.3s,
+                  border-color 0.3s,
+                  height 0.3s,
+                  width 0.3s;
 
                 &:hover,
                 &:focus {

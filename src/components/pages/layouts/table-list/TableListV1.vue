@@ -46,12 +46,18 @@ const filteredData = computed(() => {
             v-model="filters"
             class="input custom-text-filter"
             placeholder="Search..."
-          />
+          >
         </VControl>
       </VField>
 
       <VButtons>
-        <VButton color="primary" icon="fas fa-plus" elevated> Add User </VButton>
+        <VButton
+          color="primary"
+          icon="fas fa-plus"
+          elevated
+        >
+          Add User
+        </VButton>
       </VButtons>
     </div>
     <div class="datatable-wrapper">
@@ -66,11 +72,17 @@ const filteredData = computed(() => {
             <th>Actions</th>
           </thead>
           <tbody>
-            <tr v-for="user in filteredData" :key="user.id">
+            <tr
+              v-for="user in filteredData"
+              :key="user.id"
+            >
               <td>{{ user.id }}</td>
               <td>
                 <div class="flex-media">
-                  <VAvatar :picture="user.picture" alt="Avatar" />
+                  <VAvatar
+                    :picture="user.picture"
+                    alt="Avatar"
+                  />
                   <div class="meta">
                     <h3>{{ user.username }}</h3>
                     <span>{{ user.position }}</span>
@@ -81,7 +93,11 @@ const filteredData = computed(() => {
               <td>{{ user.industry }}</td>
               <td>
                 <div>
-                  <VAvatarStack :avatars="user.contacts" size="small" :limit="3" />
+                  <VAvatarStack
+                    :avatars="user.contacts"
+                    size="small"
+                    :limit="3"
+                  />
                 </div>
               </td>
               <td>
@@ -103,12 +119,12 @@ const filteredData = computed(() => {
             class="light-image"
             src="/@src/assets/illustrations/placeholders/search-7.svg"
             alt=""
-          />
+          >
           <img
             class="dark-image"
             src="/@src/assets/illustrations/placeholders/search-7-dark.svg"
             alt=""
-          />
+          >
         </template>
       </VPlaceholderPage>
     </div>

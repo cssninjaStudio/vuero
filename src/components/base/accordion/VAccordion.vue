@@ -37,7 +37,10 @@ const toggle = (key: number) => {
 </script>
 
 <template>
-  <div class="single-accordion" :class="[exclusive && 'is-exclusive']">
+  <div
+    class="single-accordion"
+    :class="[exclusive && 'is-exclusive']"
+  >
     <details
       v-for="(item, key) in items"
       :key="key"
@@ -45,7 +48,12 @@ const toggle = (key: number) => {
       :open="internalOpenItems?.includes(key) ?? undefined"
       :class="[internalOpenItems?.includes(key) && 'is-active']"
     >
-      <slot name="accordion-item" :item="item" :index="key" :toggle="toggle">
+      <slot
+        name="accordion-item"
+        :item="item"
+        :index="key"
+        :toggle="toggle"
+      >
         <summary
           class="accordion-header"
           tabindex="0"
@@ -53,12 +61,22 @@ const toggle = (key: number) => {
           @keydown.space.prevent="() => toggle(key)"
           @click.prevent="() => toggle(key)"
         >
-          <slot name="accordion-item-summary" :item="item" :index="key" :toggle="toggle">
+          <slot
+            name="accordion-item-summary"
+            :item="item"
+            :index="key"
+            :toggle="toggle"
+          >
             {{ item.title }}
           </slot>
         </summary>
         <div class="accordion-content">
-          <slot name="accordion-item-content" :item="item" :index="key" :toggle="toggle">
+          <slot
+            name="accordion-item-content"
+            :item="item"
+            :index="key"
+            :toggle="toggle"
+          >
             {{ item.content }}
           </slot>
         </div>

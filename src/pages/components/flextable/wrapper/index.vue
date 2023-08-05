@@ -103,7 +103,11 @@ const columns = {
         <!--Flex Table Wrapper base documentation-->
         <VFlexTableWrapperDocumentation />
 
-        <VFlexTableWrapper :columns="columns" :data="data" class="mt-4">
+        <VFlexTableWrapper
+          :columns="columns"
+          :data="data"
+          class="mt-4"
+        >
           <!-- 
             Here we retrieve the internal wrapperState. 
             Note that we can not destructure it 
@@ -120,7 +124,7 @@ const columns = {
                       type="text"
                       class="input is-rounded"
                       placeholder="Filter..."
-                    />
+                    >
                   </VControl>
                 </VField>
               </template>
@@ -131,11 +135,21 @@ const columns = {
                   <VControl>
                     <div class="select is-rounded">
                       <select v-model="wrapperState.limit">
-                        <option :value="1">1 results per page</option>
-                        <option :value="10">10 results per page</option>
-                        <option :value="15">15 results per page</option>
-                        <option :value="25">25 results per page</option>
-                        <option :value="50">50 results per page</option>
+                        <option :value="1">
+                          1 results per page
+                        </option>
+                        <option :value="10">
+                          10 results per page
+                        </option>
+                        <option :value="15">
+                          15 results per page
+                        </option>
+                        <option :value="25">
+                          25 results per page
+                        </option>
+                        <option :value="50">
+                          50 results per page
+                        </option>
                       </select>
                     </div>
                   </VControl>
@@ -158,8 +172,15 @@ const columns = {
                     :initials="row.initials"
                   />
                   <div>
-                    <span class="dark-text" :title="row.name">{{ row.shortname }}</span>
-                    <VTextEllipsis width="240px" class="light-text" :title="row.bio">
+                    <span
+                      class="dark-text"
+                      :title="row.name"
+                    >{{ row.shortname }}</span>
+                    <VTextEllipsis
+                      width="240px"
+                      class="light-text"
+                      :title="row.bio"
+                    >
                       <small>{{ row.bio }}</small>
                     </VTextEllipsis>
                   </div>
@@ -188,7 +209,10 @@ const columns = {
         <!--Flex Table Wrapper slots documentation-->
         <VFlexTableWrapperSlotsDocumentation class="mt-6" />
       </div>
-      <div v-if="toc.length" class="column is-3 toc-column">
+      <div
+        v-if="toc.length"
+        class="column is-3 toc-column"
+      >
         <DocumentationToc :toc="toc" />
       </div>
     </div>

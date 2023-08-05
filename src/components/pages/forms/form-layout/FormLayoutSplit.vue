@@ -13,9 +13,17 @@ const onSubmit = () => {
 </script>
 
 <template>
-  <form method="post" novalidate class="form-layout is-split" @submit.prevent="onSubmit">
+  <form
+    method="post"
+    novalidate
+    class="form-layout is-split"
+    @submit.prevent="onSubmit"
+  >
     <div class="form-outer">
-      <div :class="[isStuck && 'is-stuck']" class="form-header stuck-header">
+      <div
+        :class="[isStuck && 'is-stuck']"
+        class="form-header stuck-header"
+      >
         <div class="form-header-inner">
           <div class="left">
             <h3>Request Payout</h3>
@@ -30,7 +38,13 @@ const onSubmit = () => {
               >
                 Cancel
               </VButton>
-              <VButton type="submit" color="primary" raised> Request Payout </VButton>
+              <VButton
+                type="submit"
+                color="primary"
+                raised
+              >
+                Request Payout
+              </VButton>
             </div>
           </div>
         </div>
@@ -38,7 +52,9 @@ const onSubmit = () => {
       <div class="form-body">
         <div class="form-section">
           <div class="left">
-            <h3 class="has-text-centered">Choose an amount</h3>
+            <h3 class="has-text-centered">
+              Choose an amount
+            </h3>
             <div class="operator">
               <span>Or</span>
             </div>
@@ -46,25 +62,41 @@ const onSubmit = () => {
               <VControl>
                 <div class="radio-pills">
                   <div class="radio-pill">
-                    <input type="radio" name="amount_selection" :value="20" />
+                    <input
+                      type="radio"
+                      name="amount_selection"
+                      :value="20"
+                    >
                     <div class="radio-pill-inner">
                       <span>$20</span>
                     </div>
                   </div>
                   <div class="radio-pill">
-                    <input type="radio" name="amount_selection" :value="40" />
+                    <input
+                      type="radio"
+                      name="amount_selection"
+                      :value="40"
+                    >
                     <div class="radio-pill-inner">
                       <span>$40</span>
                     </div>
                   </div>
                   <div class="radio-pill">
-                    <input type="radio" name="amount_selection" :value="60" />
+                    <input
+                      type="radio"
+                      name="amount_selection"
+                      :value="60"
+                    >
                     <div class="radio-pill-inner">
                       <span>$60</span>
                     </div>
                   </div>
                   <div class="radio-pill">
-                    <input type="radio" name="amount_selection" :value="100" />
+                    <input
+                      type="radio"
+                      name="amount_selection"
+                      :value="100"
+                    >
                     <div class="radio-pill-inner">
                       <span>$100</span>
                     </div>
@@ -74,10 +106,17 @@ const onSubmit = () => {
             </VField>
           </div>
           <div class="right">
-            <h3 class="has-text-centered">Enter your own</h3>
+            <h3 class="has-text-centered">
+              Enter your own
+            </h3>
             <VField>
               <VControl icon="feather:dollar-sign">
-                <VInput type="number" min="0" step="10" placeholder="Amount..." />
+                <VInput
+                  type="number"
+                  min="0"
+                  step="10"
+                  placeholder="Amount..."
+                />
               </VControl>
             </VField>
           </div>
@@ -152,8 +191,20 @@ const onSubmit = () => {
             <VField v-slot="{ id }">
               <VLabel>Notify me when funds are ready?</VLabel>
               <VControl>
-                <VRadio :id="id" name="notify-me" color="primary" value="yes">Yes</VRadio>
-                <VRadio name="notify-me" value="no">No</VRadio>
+                <VRadio
+                  :id="id"
+                  name="notify-me"
+                  color="primary"
+                  value="yes"
+                >
+                  Yes
+                </VRadio>
+                <VRadio
+                  name="notify-me"
+                  value="no"
+                >
+                  No
+                </VRadio>
               </VControl>
             </VField>
           </div>
@@ -261,8 +312,12 @@ const onSubmit = () => {
                 font-family: var(--font);
                 font-weight: 600;
                 font-size: 0.9rem;
-                transition: color 0.3s, background-color 0.3s, border-color 0.3s,
-                  height 0.3s, width 0.3s;
+                transition:
+                  color 0.3s,
+                  background-color 0.3s,
+                  border-color 0.3s,
+                  height 0.3s,
+                  width 0.3s;
               }
             }
           }

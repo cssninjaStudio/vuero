@@ -1,5 +1,5 @@
 <template>
   <div class="auth-wrapper">
-    <slot></slot>
+    <slot />
   </div>
 </template>

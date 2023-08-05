@@ -34,7 +34,10 @@ if (props.lastLineWidth.match(CssUnitRe) === null) {
       :width="props.width"
       :centered="props.centered"
     />
-    <VPlaceload :width="props.lastLineWidth" :centered="props.centered" />
+    <VPlaceload
+      :width="props.lastLineWidth"
+      :centered="props.centered"
+    />
   </div>
 </template>
 

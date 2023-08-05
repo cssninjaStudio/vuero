@@ -47,7 +47,11 @@ useHead({
       <div class="column is-4">
         <VCardAdvanced>
           <template #header-left>
-            <VBlock title="Anna B." subtitle="UX Designer" center>
+            <VBlock
+              title="Anna B."
+              subtitle="UX Designer"
+              center
+            >
               <template #icon>
                 <VAvatar
                   picture="/demo/avatars/19.jpg"
@@ -57,7 +61,11 @@ useHead({
             </VBlock>
           </template>
           <template #header-right>
-            <VAvatarStack :avatars="userStack2" :limit="1" size="small" />
+            <VAvatarStack
+              :avatars="userStack2"
+              :limit="1"
+              size="small"
+            />
           </template>
           <template #content>
             <p>
@@ -68,11 +76,20 @@ useHead({
           </template>
           <template #footer-left>
             <div class="tags">
-              <VTag label="Business" color="solid" rounded />
+              <VTag
+                label="Business"
+                color="solid"
+                rounded
+              />
             </div>
           </template>
           <template #footer-right>
-            <VButton color="primary" raised>Action</VButton>
+            <VButton
+              color="primary"
+              raised
+            >
+              Action
+            </VButton>
           </template>
         </VCardAdvanced>
       </div>
@@ -81,11 +98,20 @@ useHead({
         <VCardAdvanced radius="smooth">
           <template #header-left>
             <div class="tags">
-              <VTag label="Business" color="solid" rounded />
+              <VTag
+                label="Business"
+                color="solid"
+                rounded
+              />
             </div>
           </template>
           <template #header-right>
-            <VButton color="primary" raised>Action</VButton>
+            <VButton
+              color="primary"
+              raised
+            >
+              Action
+            </VButton>
           </template>
           <template #content>
             <p>
@@ -95,7 +121,11 @@ useHead({
             </p>
           </template>
           <template #footer-left>
-            <VBlock title="Anna B." subtitle="UX Designer" center>
+            <VBlock
+              title="Anna B."
+              subtitle="UX Designer"
+              center
+            >
               <template #icon>
                 <VAvatar
                   picture="/demo/avatars/19.jpg"
@@ -105,7 +135,11 @@ useHead({
             </VBlock>
           </template>
           <template #footer-right>
-            <VAvatarStack :avatars="userStack2" :limit="1" size="small" />
+            <VAvatarStack
+              :avatars="userStack2"
+              :limit="1"
+              size="small"
+            />
           </template>
         </VCardAdvanced>
       </div>
@@ -113,7 +147,9 @@ useHead({
       <div class="column is-4">
         <VCardAdvanced radius="rounded">
           <template #header-left>
-            <h3 class="title is-6">A Card Title</h3>
+            <h3 class="title is-6">
+              A Card Title
+            </h3>
           </template>
           <template #header-right>
             <WidgetDropdown />
@@ -126,7 +162,11 @@ useHead({
             </p>
           </template>
           <template #footer-left>
-            <VBlock title="Anna B." subtitle="UX Designer" center>
+            <VBlock
+              title="Anna B."
+              subtitle="UX Designer"
+              center
+            >
               <template #icon>
                 <VAvatar
                   picture="/demo/avatars/19.jpg"
@@ -136,7 +176,11 @@ useHead({
             </VBlock>
           </template>
           <template #footer-right>
-            <VAvatarStack :avatars="userStack2" :limit="1" size="small" />
+            <VAvatarStack
+              :avatars="userStack2"
+              :limit="1"
+              size="small"
+            />
           </template>
         </VCardAdvanced>
       </div>

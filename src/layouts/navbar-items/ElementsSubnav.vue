@@ -14,8 +14,7 @@ const activeTab = ref<TabId>('interaction')
               role="button"
               @keydown.space.prevent="activeTab = 'interaction'"
               @click="activeTab = 'interaction'"
-              >Interaction</a
-            >
+            >Interaction</a>
           </li>
           <li :class="[activeTab === 'advanced' && 'is-active']">
             <a
@@ -23,52 +22,65 @@ const activeTab = ref<TabId>('interaction')
               role="button"
               @keydown.space.prevent="activeTab = 'advanced'"
               @click="activeTab = 'advanced'"
-              >Advanced</a
-            >
+            >Advanced</a>
           </li>
         </ul>
       </div>
     </div>
 
     <div class="container">
-      <div v-if="activeTab === 'interaction'" class="tab-content is-active">
+      <div
+        v-if="activeTab === 'interaction'"
+        class="tab-content is-active"
+      >
         <div class="tab-content-inner">
           <div class="center">
             <div class="columns">
               <div class="column is-3">
-                <h4 class="column-heading">General</h4>
+                <h4 class="column-heading">
+                  General
+                </h4>
                 <ul>
                   <li>
                     <RouterLink to="/elements/">
-                      <i aria-hidden="true" class="lnil lnil-home"></i>
+                      <i
+                        aria-hidden="true"
+                        class="lnil lnil-home"
+                      />
                       <span>Elements Hub</span>
                       <i
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:circle"
-                      ></i>
+                      />
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink to="/elements/colors">
-                      <i aria-hidden="true" class="lnil lnil-color-palette"></i>
+                      <i
+                        aria-hidden="true"
+                        class="lnil lnil-color-palette"
+                      />
                       <span>Colors</span>
                       <i
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:circle"
-                      ></i>
+                      />
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink to="/elements/helpers">
-                      <i aria-hidden="true" class="lnil lnil-help"></i>
+                      <i
+                        aria-hidden="true"
+                        class="lnil lnil-help"
+                      />
                       <span>Helpers</span>
                       <i
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:circle"
-                      ></i>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -78,7 +90,7 @@ const activeTab = ref<TabId>('interaction')
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:circle"
-                      ></i>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -88,7 +100,7 @@ const activeTab = ref<TabId>('interaction')
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:circle"
-                      ></i>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -98,7 +110,7 @@ const activeTab = ref<TabId>('interaction')
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:circle"
-                      ></i>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -108,14 +120,16 @@ const activeTab = ref<TabId>('interaction')
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:circle"
-                      ></i>
+                      />
                     </RouterLink>
                   </li>
                 </ul>
               </div>
 
               <div class="column is-3">
-                <h4 class="column-heading">Loading</h4>
+                <h4 class="column-heading">
+                  Loading
+                </h4>
                 <ul>
                   <li>
                     <RouterLink to="/elements/loader">
@@ -124,47 +138,64 @@ const activeTab = ref<TabId>('interaction')
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:circle"
-                      ></i>
+                      />
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink to="/elements/placeload/">
                       <span>VPlaceload</span>
-                      <VTag label="v1.2" color="primary" outlined curved />
+                      <VTag
+                        label="v1.2"
+                        color="primary"
+                        outlined
+                        curved
+                      />
                       <i
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:circle"
-                      ></i>
+                      />
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink to="/elements/placeload/text">
                       <span>VPlaceloadText</span>
-                      <VTag label="v1.2" color="primary" outlined curved />
+                      <VTag
+                        label="v1.2"
+                        color="primary"
+                        outlined
+                        curved
+                      />
                       <i
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:circle"
-                      ></i>
+                      />
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink to="/elements/placeload/avatar">
                       <span>VPlaceloadAvatar</span>
-                      <VTag label="v1.2" color="primary" outlined curved />
+                      <VTag
+                        label="v1.2"
+                        color="primary"
+                        outlined
+                        curved
+                      />
                       <i
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:circle"
-                      ></i>
+                      />
                     </RouterLink>
                   </li>
                 </ul>
               </div>
 
               <div class="column is-3">
-                <h4 class="column-heading">Basic interaction</h4>
+                <h4 class="column-heading">
+                  Basic interaction
+                </h4>
                 <ul>
                   <li>
                     <RouterLink to="/elements/dropdown">
@@ -173,7 +204,7 @@ const activeTab = ref<TabId>('interaction')
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:circle"
-                      ></i>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -183,7 +214,7 @@ const activeTab = ref<TabId>('interaction')
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:circle"
-                      ></i>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -193,7 +224,7 @@ const activeTab = ref<TabId>('interaction')
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:circle"
-                      ></i>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -203,25 +234,32 @@ const activeTab = ref<TabId>('interaction')
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:circle"
-                      ></i>
+                      />
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink to="/elements/tooltip">
                       <span>VTooltip</span>
-                      <VTag label="v1.1" color="primary" outlined curved />
+                      <VTag
+                        label="v1.1"
+                        color="primary"
+                        outlined
+                        curved
+                      />
                       <i
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:circle"
-                      ></i>
+                      />
                     </RouterLink>
                   </li>
                 </ul>
               </div>
 
               <div class="column is-3">
-                <h4 class="column-heading">Buttons</h4>
+                <h4 class="column-heading">
+                  Buttons
+                </h4>
                 <ul>
                   <li>
                     <RouterLink to="/elements/button">
@@ -230,7 +268,7 @@ const activeTab = ref<TabId>('interaction')
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:circle"
-                      ></i>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -240,7 +278,7 @@ const activeTab = ref<TabId>('interaction')
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:circle"
-                      ></i>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -250,7 +288,7 @@ const activeTab = ref<TabId>('interaction')
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:circle"
-                      ></i>
+                      />
                     </RouterLink>
                   </li>
                 </ul>
@@ -260,7 +298,10 @@ const activeTab = ref<TabId>('interaction')
         </div>
       </div>
 
-      <div v-if="activeTab === 'advanced'" class="tab-content is-active">
+      <div
+        v-if="activeTab === 'advanced'"
+        class="tab-content is-active"
+      >
         <div class="tab-content-inner">
           <div class="center">
             <div class="columns">
@@ -284,7 +325,7 @@ const activeTab = ref<TabId>('interaction')
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:circle"
-                      ></i>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -294,7 +335,7 @@ const activeTab = ref<TabId>('interaction')
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:circle"
-                      ></i>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -304,7 +345,7 @@ const activeTab = ref<TabId>('interaction')
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:circle"
-                      ></i>
+                      />
                     </RouterLink>
                   </li>
                   <!-- <li>
@@ -324,7 +365,7 @@ const activeTab = ref<TabId>('interaction')
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:circle"
-                      ></i>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -334,14 +375,16 @@ const activeTab = ref<TabId>('interaction')
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:circle"
-                      ></i>
+                      />
                     </RouterLink>
                   </li>
                 </ul>
               </div>
 
               <div class="column is-3">
-                <div class="column-heading">&nbsp;</div>
+                <div class="column-heading">
+&nbsp;
+                </div>
                 <ul>
                   <li>
                     <RouterLink to="/elements/forms/field">
@@ -350,7 +393,7 @@ const activeTab = ref<TabId>('interaction')
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:circle"
-                      ></i>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -360,7 +403,7 @@ const activeTab = ref<TabId>('interaction')
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:circle"
-                      ></i>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -370,7 +413,7 @@ const activeTab = ref<TabId>('interaction')
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:circle"
-                      ></i>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -380,14 +423,16 @@ const activeTab = ref<TabId>('interaction')
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:circle"
-                      ></i>
+                      />
                     </RouterLink>
                   </li>
                 </ul>
               </div>
 
               <div class="column is-3">
-                <h4 class="column-heading">Switches</h4>
+                <h4 class="column-heading">
+                  Switches
+                </h4>
                 <ul>
                   <li>
                     <RouterLink to="/elements/animated-checkbox">
@@ -396,7 +441,7 @@ const activeTab = ref<TabId>('interaction')
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:circle"
-                      ></i>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -406,25 +451,32 @@ const activeTab = ref<TabId>('interaction')
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:circle"
-                      ></i>
+                      />
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink to="/elements/switch-segment">
                       <span>VSwitchSegment</span>
-                      <VTag label="v1.1" color="primary" outlined curved />
+                      <VTag
+                        label="v1.1"
+                        color="primary"
+                        outlined
+                        curved
+                      />
                       <i
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:circle"
-                      ></i>
+                      />
                     </RouterLink>
                   </li>
                 </ul>
               </div>
 
               <div class="column is-3">
-                <h4 class="column-heading">Addons</h4>
+                <h4 class="column-heading">
+                  Addons
+                </h4>
                 <ul>
                   <li>
                     <RouterLink to="/elements/addons/calendar">
@@ -433,7 +485,7 @@ const activeTab = ref<TabId>('interaction')
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:circle"
-                      ></i>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -443,7 +495,7 @@ const activeTab = ref<TabId>('interaction')
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:circle"
-                      ></i>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -453,7 +505,7 @@ const activeTab = ref<TabId>('interaction')
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:circle"
-                      ></i>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -463,7 +515,7 @@ const activeTab = ref<TabId>('interaction')
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:circle"
-                      ></i>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -473,7 +525,7 @@ const activeTab = ref<TabId>('interaction')
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:circle"
-                      ></i>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -483,7 +535,7 @@ const activeTab = ref<TabId>('interaction')
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:circle"
-                      ></i>
+                      />
                     </RouterLink>
                   </li>
                 </ul>

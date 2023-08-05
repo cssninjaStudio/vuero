@@ -26,7 +26,10 @@ const props = withDefaults(
       </div>
       <div class="exerpt">
         <h5>
-          <i aria-hidden="true" class="fas fa-circle"></i>
+          <i
+            aria-hidden="true"
+            class="fas fa-circle"
+          />
           <span>{{ props.title }}</span>
         </h5>
         <p>Where are we in terms of design? We need to review the new screens.</p>

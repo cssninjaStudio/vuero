@@ -17,14 +17,16 @@ const props = withDefaults(
   <div class="stat-widget flex-stat-widget is-straight">
     <div class="chart-media">
       <div class="meta">
-        <h4 class="dark-inverted">{{ props.title }}</h4>
+        <h4 class="dark-inverted">
+          {{ props.title }}
+        </h4>
         <span class="is-dark-primary">${{ props.value }}</span>
         <p>
           {{ props.text }}
         </p>
       </div>
       <div class="chart-container">
-        <slot></slot>
+        <slot />
       </div>
     </div>
   </div>

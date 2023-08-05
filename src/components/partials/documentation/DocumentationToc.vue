@@ -60,7 +60,11 @@ onMounted(() => {
   <div class="toc">
     <strong class="toc-title">Contents</strong>
     <ul>
-      <li v-for="item of props.toc" :key="item.id" :class="[`toc-level-${item.level}`]">
+      <li
+        v-for="item of props.toc"
+        :key="item.id"
+        :class="[`toc-level-${item.level}`]"
+      >
         <a
           :href="`#${item.id}`"
           :class="[isActiveAnchor(item.id) && 'is-active']"
@@ -85,10 +89,12 @@ onMounted(() => {
           <label
             v-tooltip.rounded="'Blur the content when the mouse is over'"
             for="toggle-stay-focus"
-            >Stay focus mode</label
-          >
+          >Stay focus mode</label>
 
-          <VField id="toggle-stay-focus" grouped>
+          <VField
+            id="toggle-stay-focus"
+            grouped
+          >
             <VControl>
               <VSwitchSegment v-model="stayFocusEnabled" />
             </VControl>

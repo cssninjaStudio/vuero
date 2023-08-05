@@ -15,7 +15,7 @@ module.exports = {
     'plugin:vuejs-accessibility/recommended',
     'prettier',
   ],
-  plugins: ['frontmatter', '@typescript-eslint', 'prettier-vue'],
+  plugins: ['frontmatter', '@typescript-eslint', 'prettier'],
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
@@ -41,8 +41,8 @@ module.exports = {
         'plugin:@typescript-eslint/eslint-recommended',
         'plugin:vue/vue3-recommended',
         'plugin:vuejs-accessibility/recommended',
-        'plugin:prettier-vue/recommended',
-        'prettier',
+        // 'plugin:prettier-vue/recommended',
+        // 'prettier',
       ],
       rules: {
         'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',

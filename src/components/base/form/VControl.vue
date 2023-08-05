@@ -83,19 +83,39 @@ const controlClasees = computed(() => {
 
 <template>
   <div :class="controlClasees">
-    <slot v-bind="{ field, id }"></slot>
+    <slot v-bind="{ field, id }" />
 
     <template v-if="props.icon">
-      <VLabel v-if="isIconify" class="form-icon">
-        <i aria-hidden="true" :data-icon="props.icon" class="iconify"></i>
+      <VLabel
+        v-if="isIconify"
+        class="form-icon"
+      >
+        <i
+          aria-hidden="true"
+          :data-icon="props.icon"
+          class="iconify"
+        />
       </VLabel>
-      <VLabel v-else class="form-icon">
-        <i aria-hidden="true" :class="props.icon"></i>
+      <VLabel
+        v-else
+        class="form-icon"
+      >
+        <i
+          aria-hidden="true"
+          :class="props.icon"
+        />
       </VLabel>
     </template>
 
-    <VLabel v-if="isValid" class="validation-icon is-success">
-      <i aria-hidden="true" data-icon="feather:check" class="iconify"></i>
+    <VLabel
+      v-if="isValid"
+      class="validation-icon is-success"
+    >
+      <i
+        aria-hidden="true"
+        data-icon="feather:check"
+        class="iconify"
+      />
     </VLabel>
     <a
       v-else-if="hasError"
@@ -105,10 +125,17 @@ const controlClasees = computed(() => {
       @click.prevent="() => field?.resetField?.()"
       @keyup.enter.prevent="() => field?.resetField?.()"
     >
-      <i aria-hidden="true" data-icon="feather:x" class="iconify"></i>
+      <i
+        aria-hidden="true"
+        data-icon="feather:x"
+        class="iconify"
+      />
     </a>
 
-    <slot v-bind="{ field, id }" name="extra"></slot>
+    <slot
+      v-bind="{ field, id }"
+      name="extra"
+    />
   </div>
 </template>
 

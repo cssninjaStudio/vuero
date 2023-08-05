@@ -18,7 +18,7 @@ const optionsSingle = [
           v-model="filters"
           class="input custom-text-filter"
           placeholder="Search..."
-        />
+        >
       </VControl>
 
       <VButtons>
@@ -32,9 +32,15 @@ const optionsSingle = [
             />
           </VControl>
         </VField>
-        <VButton color="primary" raised>
+        <VButton
+          color="primary"
+          raised
+        >
           <span class="icon">
-            <i aria-hidden="true" class="fas fa-plus"></i>
+            <i
+              aria-hidden="true"
+              class="fas fa-plus"
+            />
           </span>
           <span>Add User</span>
         </VButton>
@@ -44,9 +50,17 @@ const optionsSingle = [
     <div class="user-grid user-grid-v1">
       <div class="columns is-multiline">
         <!--Grid item-->
-        <div v-for="key in 20" :key="key" class="column is-3">
+        <div
+          v-for="key in 20"
+          :key="key"
+          class="column is-3"
+        >
           <div class="grid-item">
-            <VPlaceloadAvatar size="big" centered class="mb-2" />
+            <VPlaceloadAvatar
+              size="big"
+              centered
+              class="mb-2"
+            />
 
             <VPlaceloadText
               class="mb-4"
@@ -57,15 +71,37 @@ const optionsSingle = [
             />
 
             <div class="people">
-              <VPlaceloadAvatar size="small" class="mx-1" />
-              <VPlaceloadAvatar size="small" class="mx-1" />
-              <VPlaceloadAvatar size="small" class="mx-1" />
-              <VPlaceloadAvatar size="small" class="mx-1" />
+              <VPlaceloadAvatar
+                size="small"
+                class="mx-1"
+              />
+              <VPlaceloadAvatar
+                size="small"
+                class="mx-1"
+              />
+              <VPlaceloadAvatar
+                size="small"
+                class="mx-1"
+              />
+              <VPlaceloadAvatar
+                size="small"
+                class="mx-1"
+              />
             </div>
 
             <VButtons>
-              <VButton placeload="100%" dark-outlined>loading ...</VButton>
-              <VButton placeload="100%" dark-outlined>loading ...</VButton>
+              <VButton
+                placeload="100%"
+                dark-outlined
+              >
+                loading ...
+              </VButton>
+              <VButton
+                placeload="100%"
+                dark-outlined
+              >
+                loading ...
+              </VButton>
             </VButtons>
           </div>
         </div>

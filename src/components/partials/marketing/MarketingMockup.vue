@@ -3,7 +3,9 @@
     <div class="container">
       <!--Title-->
       <div class="section-title has-text-centered">
-        <h2 class="title is-2">Impecable UI/UX</h2>
+        <h2 class="title is-2">
+          Impecable UI/UX
+        </h2>
         <h4>Vuero has been carefully handcrafted.</h4>
       </div>
 
@@ -14,62 +16,68 @@
             class="hexagon hexagon-1 light-image-l"
             src="/images/icons/hexagons/green.svg"
             alt=""
-          />
+          >
           <img
             class="hexagon hexagon-1 dark-image-l"
             src="/images/icons/hexagons/green-heavy.svg"
             alt=""
-          />
+          >
           <img
             class="hexagon hexagon-2 light-image-l"
             src="/images/icons/hexagons/orange.svg"
             alt=""
-          />
+          >
           <img
             class="hexagon hexagon-2 dark-image-l"
             src="/images/icons/hexagons/orange-heavy.svg"
             alt=""
-          />
+          >
           <img
             class="hexagon hexagon-3 light-image-l"
             src="/images/icons/hexagons/accent.svg"
             alt=""
-          />
+          >
           <img
             class="hexagon hexagon-3 dark-image-l"
             src="/images/icons/hexagons/accent-heavy.svg"
             alt=""
-          />
+          >
 
           <!--Mockup-->
           <img
             class="light-image-l centered-mockup"
             src="/@src/assets/illustrations/landing/app-1.webp"
             alt=""
-          />
+          >
           <img
             class="dark-image-l centered-mockup"
             src="/@src/assets/illustrations/landing/app-1-dark.webp"
             alt=""
-          />
+          >
         </div>
         <div class="columns">
           <div class="column is-4">
-            <h3 class="title is-4">Bulma 0.9.1</h3>
+            <h3 class="title is-4">
+              Bulma 0.9.1
+            </h3>
             <p class="subtitle is-6 light-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Summum ením bonum
               exposuit vacuitatem.
             </p>
           </div>
           <div class="column is-4">
-            <h3 class="title is-4">Clean Code</h3>
+            <h3 class="title is-4">
+              Clean Code
+            </h3>
             <p class="subtitle is-6 light-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Summum ením bonum
               exposuit vacuitatem.
             </p>
           </div>
           <div class="column is-4">
-            <h3 class="title is-4">Modern UI</h3>
+            <h3 class="title is-4">
+              Modern UI
+            </h3>
             <p class="subtitle is-6 light-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Summum ením bonum
               exposuit vacuitatem.
@@ -81,9 +89,16 @@
       <!--Stacks-->
       <div class="stacks">
         <div>
-          <Tippy class="has-help-cursor" interactive placement="top">
+          <Tippy
+            class="has-help-cursor"
+            interactive
+            placement="top"
+          >
             <div class="stack">
-              <img src="/images/icons/stacks/vuejs.svg" alt="" />
+              <img
+                src="/images/icons/stacks/vuejs.svg"
+                alt=""
+              >
             </div>
             <template #content>
               <StackPopoverContent
@@ -102,9 +117,16 @@
         </div>
 
         <div>
-          <Tippy class="has-help-cursor" interactive placement="top">
+          <Tippy
+            class="has-help-cursor"
+            interactive
+            placement="top"
+          >
             <div class="stack">
-              <img src="/images/icons/stacks/vite.svg" alt="" />
+              <img
+                src="/images/icons/stacks/vite.svg"
+                alt=""
+              >
             </div>
             <template #content>
               <StackPopoverContent
@@ -123,9 +145,16 @@
         </div>
 
         <div>
-          <Tippy class="has-help-cursor" interactive placement="top">
+          <Tippy
+            class="has-help-cursor"
+            interactive
+            placement="top"
+          >
             <div class="stack">
-              <img src="/images/icons/stacks/bulma.svg" alt="" />
+              <img
+                src="/images/icons/stacks/bulma.svg"
+                alt=""
+              >
             </div>
             <template #content>
               <StackPopoverContent
@@ -144,9 +173,16 @@
         </div>
 
         <div>
-          <Tippy class="has-help-cursor" interactive placement="top">
+          <Tippy
+            class="has-help-cursor"
+            interactive
+            placement="top"
+          >
             <div class="stack">
-              <img src="/images/icons/stacks/sass.svg" alt="" />
+              <img
+                src="/images/icons/stacks/sass.svg"
+                alt=""
+              >
             </div>
             <template #content>
               <StackPopoverContent
@@ -165,9 +201,16 @@
         </div>
 
         <div>
-          <Tippy class="has-help-cursor" interactive placement="top">
+          <Tippy
+            class="has-help-cursor"
+            interactive
+            placement="top"
+          >
             <div class="stack">
-              <img src="/images/icons/stacks/typescript.svg" alt="" />
+              <img
+                src="/images/icons/stacks/typescript.svg"
+                alt=""
+              >
             </div>
             <template #content>
               <StackPopoverContent

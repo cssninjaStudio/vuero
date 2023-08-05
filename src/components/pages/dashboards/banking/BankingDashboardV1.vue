@@ -40,10 +40,16 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
       <div class="column is-4">
         <div class="dashboard-card is-credit-cards">
           <div class="title-wrap">
-            <h3 class="dark-inverted">My Cards</h3>
+            <h3 class="dark-inverted">
+              My Cards
+            </h3>
             <button class="button is-circle is-dark-outlined">
               <span class="icon is-small">
-                <i aria-hidden="true" class="iconify" data-icon="feather:plus"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:plus"
+                />
               </span>
             </button>
           </div>
@@ -51,14 +57,14 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
           <div class="card-block">
             <div class="card-block-inner is-dark-bordered-12">
               <div class="credit-card is-theme-1">
-                <div class="shape"></div>
+                <div class="shape" />
                 <div class="top">
                   <div class="card-number">
                     <span>** 4628</span>
                     <img
                       src="/images/icons/dashboards/banking/visa-squared-white.svg"
                       alt=""
-                    />
+                    >
                   </div>
                 </div>
                 <div class="bottom">
@@ -76,41 +82,55 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
             </div>
             <div class="info-block-inner">
               <div class="title-wrap">
-                <h3 class="dark-inverted">Information</h3>
-                <a class="action-link" tabindex="0">Edit</a>
+                <h3 class="dark-inverted">
+                  Information
+                </h3>
+                <a
+                  class="action-link"
+                  tabindex="0"
+                >Edit</a>
               </div>
               <div class="info-block-line">
-                <h4 class="dark-inverted">Status</h4>
+                <h4 class="dark-inverted">
+                  Status
+                </h4>
                 <span>
-                  <i aria-hidden="true" class="fas fa-circle text-success"></i>
+                  <i
+                    aria-hidden="true"
+                    class="fas fa-circle text-success"
+                  />
                   Active
                 </span>
               </div>
               <div class="info-block-line">
-                <h4 class="dark-inverted">Expires in</h4>
+                <h4 class="dark-inverted">
+                  Expires in
+                </h4>
                 <span>134 days</span>
               </div>
               <div class="info-block-line">
-                <h4 class="dark-inverted">Type</h4>
+                <h4 class="dark-inverted">
+                  Type
+                </h4>
                 <span class="has-image">
                   <img
                     src="/images/icons/dashboards/banking/visa-squared-color.svg"
                     alt=""
-                  />
+                  >
                   Credit card
                 </span>
               </div>
             </div>
             <div class="card-block-inner is-dark-bordered-12">
               <div class="credit-card is-theme-2">
-                <div class="shape"></div>
+                <div class="shape" />
                 <div class="top">
                   <div class="card-number">
                     <span>** 2649</span>
                     <img
                       src="/images/icons/dashboards/banking/visa-squared-white.svg"
                       alt=""
-                    />
+                    >
                   </div>
                 </div>
                 <div class="bottom">
@@ -131,15 +151,31 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
 
         <div class="dashboard-card is-transactions">
           <div class="title-wrap">
-            <h3 class="dark-inverted">Transactions</h3>
-            <a class="action-link" tabindex="0">View All</a>
+            <h3 class="dark-inverted">
+              Transactions
+            </h3>
+            <a
+              class="action-link"
+              tabindex="0"
+            >View All</a>
           </div>
 
           <div class="transactions">
-            <VBlock title="Food Delivery" subtitle="Oct 23, 2020 - 8:46pm" center lighter>
+            <VBlock
+              title="Food Delivery"
+              subtitle="Oct 23, 2020 - 8:46pm"
+              center
+              lighter
+            >
               <template #icon>
-                <VIconBox color="green" rounded>
-                  <i aria-hidden="true" class="lnil lnil-service"></i>
+                <VIconBox
+                  color="green"
+                  rounded
+                >
+                  <i
+                    aria-hidden="true"
+                    class="lnil lnil-service"
+                  />
                 </VIconBox>
               </template>
               <template #action>
@@ -154,8 +190,14 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
               lighter
             >
               <template #icon>
-                <VIconBox color="orange" rounded>
-                  <i aria-hidden="true" class="lnil lnil-analytics-alt-1"></i>
+                <VIconBox
+                  color="orange"
+                  rounded
+                >
+                  <i
+                    aria-hidden="true"
+                    class="lnil lnil-analytics-alt-1"
+                  />
                 </VIconBox>
               </template>
               <template #action>
@@ -163,10 +205,21 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
               </template>
             </VBlock>
 
-            <VBlock title="Online Order" subtitle="Oct 16, 2020 - 2:13pm" center lighter>
+            <VBlock
+              title="Online Order"
+              subtitle="Oct 16, 2020 - 2:13pm"
+              center
+              lighter
+            >
               <template #icon>
-                <VIconBox color="purple" rounded>
-                  <i aria-hidden="true" class="lnil lnil-cart-alt"></i>
+                <VIconBox
+                  color="purple"
+                  rounded
+                >
+                  <i
+                    aria-hidden="true"
+                    class="lnil lnil-cart-alt"
+                  />
                 </VIconBox>
               </template>
               <template #action>
@@ -182,7 +235,9 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
           <div class="column is-6">
             <div class="dashboard-card">
               <div class="title-wrap">
-                <h3 class="dark-inverted">Quick Transfer</h3>
+                <h3 class="dark-inverted">
+                  Quick Transfer
+                </h3>
               </div>
               <VField class="is-image-select has-curved-images">
                 <VControl>
@@ -195,14 +250,22 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
                   >
                     <template #singlelabel="{ value }">
                       <div class="multiselect-single-label">
-                        <img class="select-label-icon" :src="value.icon" alt="" />
+                        <img
+                          class="select-label-icon"
+                          :src="value.icon"
+                          alt=""
+                        >
                         <span class="select-label-text">
                           {{ value.name }}
                         </span>
                       </div>
                     </template>
                     <template #option="{ option }">
-                      <img class="select-option-icon" :src="option.icon" alt="" />
+                      <img
+                        class="select-option-icon"
+                        :src="option.icon"
+                        alt=""
+                      >
                       <span class="select-label-text">
                         {{ option.name }}
                       </span>
@@ -216,10 +279,13 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
                 cannot exceed 20% of your balance.
               </p>
               <div class="level is-mobile">
-                <div class="level-left"></div>
+                <div class="level-left" />
                 <div class="level-right">
                   <div class="level-item">
-                    <a class="action-link" tabindex="0">Confirm</a>
+                    <a
+                      class="action-link"
+                      tabindex="0"
+                    >Confirm</a>
                   </div>
                 </div>
               </div>
@@ -237,22 +303,30 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
               data-pop-iconbg="green"
             >
               <div class="title-wrap">
-                <h3 class="dark-inverted">Overall Progress</h3>
+                <h3 class="dark-inverted">
+                  Overall Progress
+                </h3>
                 <span class="title-meta dark-inverted">Lvl 3</span>
               </div>
 
               <div class="progress-wrap m-b-10 m-t-10">
-                <VProgress size="tiny" :value="65" />
+                <VProgress
+                  size="tiny"
+                  :value="65"
+                />
               </div>
               <p class="context-text">
                 This is your Vuero customer level. Reach out higher levels to unlock
                 achievements, special gifts, and more.
               </p>
               <div class="level is-mobile">
-                <div class="level-left"></div>
+                <div class="level-left" />
                 <div class="level-right">
                   <div class="level-item">
-                    <a class="action-link" tabindex="0">Details</a>
+                    <a
+                      class="action-link"
+                      tabindex="0"
+                    >Details</a>
                   </div>
                 </div>
               </div>
@@ -262,7 +336,9 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
           <div class="column is-6">
             <div class="dashboard-card is-contacts">
               <div class="title-wrap">
-                <h3 class="dark-inverted">Send money to</h3>
+                <h3 class="dark-inverted">
+                  Send money to
+                </h3>
               </div>
 
               <div class="people-wrap">
@@ -274,7 +350,11 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
                       :offset="[0, 10]"
                       placement="bottom-end"
                     >
-                      <VAvatar color="warning" initials="BT" size="small" />
+                      <VAvatar
+                        color="warning"
+                        initials="BT"
+                        size="small"
+                      />
                       <template #content>
                         <UserPopoverContent :user="popovers.user122" />
                       </template>
@@ -288,7 +368,10 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
                       :offset="[0, 10]"
                       placement="bottom-end"
                     >
-                      <VAvatar picture="/demo/avatars/18.jpg" size="small" />
+                      <VAvatar
+                        picture="/demo/avatars/18.jpg"
+                        size="small"
+                      />
                       <template #content>
                         <UserPopoverContent :user="popovers.user18" />
                       </template>
@@ -302,7 +385,11 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
                       :offset="[0, 10]"
                       placement="bottom-end"
                     >
-                      <VAvatar color="info" initials="JD" size="small" />
+                      <VAvatar
+                        color="info"
+                        initials="JD"
+                        size="small"
+                      />
                       <template #content>
                         <UserPopoverContent :user="popovers.user123" />
                       </template>
@@ -316,7 +403,10 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
                       :offset="[0, 10]"
                       placement="bottom-end"
                     >
-                      <VAvatar picture="/demo/avatars/7.jpg" size="small" />
+                      <VAvatar
+                        picture="/demo/avatars/7.jpg"
+                        size="small"
+                      />
                       <template #content>
                         <UserPopoverContent :user="popovers.user7" />
                       </template>
@@ -352,14 +442,22 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
                     >
                       <template #singlelabel="{ value }">
                         <div class="multiselect-single-label">
-                          <img class="select-label-icon" :src="value.icon" alt="" />
+                          <img
+                            class="select-label-icon"
+                            :src="value.icon"
+                            alt=""
+                          >
                           <span class="select-label-text">
                             {{ value.name }}
                           </span>
                         </div>
                       </template>
                       <template #option="{ option }">
-                        <img class="select-option-icon" :src="option.icon" alt="" />
+                        <img
+                          class="select-option-icon"
+                          :src="option.icon"
+                          alt=""
+                        >
                         <span class="select-label-text">
                           {{ option.name }}
                         </span>
@@ -382,16 +480,28 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
                         </span>
                       </div>
                       <div class="control is-expanded">
-                        <input class="input" type="text" placeholder="Amount of money" />
+                        <input
+                          class="input"
+                          type="text"
+                          placeholder="Amount of money"
+                        >
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <p class="context-text">Funds will reach destination tomorrow.</p>
+                <p class="context-text">
+                  Funds will reach destination tomorrow.
+                </p>
 
                 <div class="submit-wrap">
-                  <VButton color="primary" size="big" fullwidth raised bold>
+                  <VButton
+                    color="primary"
+                    size="big"
+                    fullwidth
+                    raised
+                    bold
+                  >
                     Send Money
                   </VButton>
                 </div>
@@ -418,8 +528,7 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
                 :type="incomeOptions.chart.type"
                 :series="incomeOptions.series"
                 :options="incomeOptions"
-              >
-              </ApexChart>
+              />
             </div>
           </div>
         </div>

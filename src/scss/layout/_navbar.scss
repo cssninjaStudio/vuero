@@ -175,8 +175,12 @@
 
           ul {
             li {
-              transition: color 0.3s, background-color 0.3s, border-color 0.3s,
-                height 0.3s, width 0.3s;
+              transition:
+                color 0.3s,
+                background-color 0.3s,
+                border-color 0.3s,
+                height 0.3s,
+                width 0.3s;
               margin-bottom: 6px;
 
               &:hover,
@@ -243,8 +247,12 @@
                   width: 6px;
                   stroke-width: 2px;
                   fill: var(--primary);
-                  transition: color 0.3s, background-color 0.3s, border-color 0.3s,
-                    height 0.3s, width 0.3s;
+                  transition:
+                    color 0.3s,
+                    background-color 0.3s,
+                    border-color 0.3s,
+                    height 0.3s,
+                    width 0.3s;
                 }
               }
             }

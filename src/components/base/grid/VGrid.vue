@@ -57,7 +57,7 @@ const display = computed(() => (props.inline ? 'inline-grid' : 'grid'))
 
 <template>
   <div class="v-grid">
-    <slot></slot>
+    <slot />
   </div>
 </template>
 

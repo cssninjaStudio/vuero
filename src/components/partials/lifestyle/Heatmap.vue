@@ -10,7 +10,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
           src="/demo/photos/faces/girl1.jpg"
           alt=""
           @error.once="onceImageErrored(150)"
-        />
+        >
       </div>
       <div class="title-meta">
         <p>
@@ -27,32 +27,35 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
           <span>Mon</span>
         </div>
         <div class="heatmap-row-content">
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item heat-1"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item heat-1"></div>
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item heat-1" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item heat-1" />
           <div class="heatmap-row-item heat-3">
-            <i aria-hidden="true" class="fas fa-fire"></i>
+            <i
+              aria-hidden="true"
+              class="fas fa-fire"
+            />
           </div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item heat-1"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item heat-1" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
         </div>
       </div>
       <div class="heatmap-row">
@@ -60,30 +63,30 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
           <span>Tue</span>
         </div>
         <div class="heatmap-row-content">
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item heat-1"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item heat-1"></div>
-          <div class="heatmap-row-item heat-1"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item heat-1"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item heat-1" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item heat-1" />
+          <div class="heatmap-row-item heat-1" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item heat-1" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
         </div>
       </div>
       <div class="heatmap-row">
@@ -91,30 +94,30 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
           <span>Wed</span>
         </div>
         <div class="heatmap-row-content">
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item heat-1"></div>
-          <div class="heatmap-row-item heat-1"></div>
-          <div class="heatmap-row-item heat-1"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item heat-1"></div>
-          <div class="heatmap-row-item heat-1"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item heat-1"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item heat-1" />
+          <div class="heatmap-row-item heat-1" />
+          <div class="heatmap-row-item heat-1" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item heat-1" />
+          <div class="heatmap-row-item heat-1" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item heat-1" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
         </div>
       </div>
       <div class="heatmap-row">
@@ -122,32 +125,35 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
           <span>Thu</span>
         </div>
         <div class="heatmap-row-content">
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item heat-1"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item heat-1"></div>
-          <div class="heatmap-row-item heat-1"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item heat-1"></div>
-          <div class="heatmap-row-item heat-2"></div>
-          <div class="heatmap-row-item"></div>
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item heat-1" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item heat-1" />
+          <div class="heatmap-row-item heat-1" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item heat-1" />
+          <div class="heatmap-row-item heat-2" />
+          <div class="heatmap-row-item" />
           <div class="heatmap-row-item heat-3">
-            <i aria-hidden="true" class="fas fa-fire"></i>
+            <i
+              aria-hidden="true"
+              class="fas fa-fire"
+            />
           </div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
         </div>
       </div>
       <div class="heatmap-row">
@@ -155,32 +161,35 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
           <span>Fri</span>
         </div>
         <div class="heatmap-row-content">
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item heat-1"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item heat-1" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
           <div class="heatmap-row-item heat-3">
-            <i aria-hidden="true" class="fas fa-fire"></i>
+            <i
+              aria-hidden="true"
+              class="fas fa-fire"
+            />
           </div>
-          <div class="heatmap-row-item heat-1"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item heat-2"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
+          <div class="heatmap-row-item heat-1" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item heat-2" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
         </div>
       </div>
       <div class="heatmap-row">
@@ -188,30 +197,30 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
           <span>Sat</span>
         </div>
         <div class="heatmap-row-content">
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item heat-1"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item heat-2"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item heat-2"></div>
-          <div class="heatmap-row-item heat-1"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item heat-1" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item heat-2" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item heat-2" />
+          <div class="heatmap-row-item heat-1" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
         </div>
       </div>
       <div class="heatmap-row">
@@ -219,35 +228,35 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
           <span>Sun</span>
         </div>
         <div class="heatmap-row-content">
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item heat-1"></div>
-          <div class="heatmap-row-item heat-1"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item heat-1"></div>
-          <div class="heatmap-row-item heat-2"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item heat-2"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
-          <div class="heatmap-row-item"></div>
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item heat-1" />
+          <div class="heatmap-row-item heat-1" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item heat-1" />
+          <div class="heatmap-row-item heat-2" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item heat-2" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
+          <div class="heatmap-row-item" />
         </div>
       </div>
       <div class="heatmap-row">
         <div class="heatmap-row-label">
-          <span></span>
+          <span />
         </div>
         <div class="heatmap-row-content">
           <div class="heatmap-row-item is-time">

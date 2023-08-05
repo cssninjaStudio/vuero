@@ -35,7 +35,11 @@ useHead({
 
 <template>
   <div class="page-content-inner">
-    <VBreadcrumb with-icons separator="bullet" :items="breadcrumb" />
+    <VBreadcrumb
+      with-icons
+      separator="bullet"
+      :items="breadcrumb"
+    />
 
     <div class="columns">
       <div
@@ -53,7 +57,10 @@ useHead({
         <VControlPropsDocumentation />
         <VControlSlotsDocumentation />
       </div>
-      <div v-if="toc.length" class="column is-3 toc-column">
+      <div
+        v-if="toc.length"
+        class="column is-3 toc-column"
+      >
         <DocumentationToc :toc="toc" />
       </div>
     </div>

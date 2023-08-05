@@ -51,9 +51,12 @@ const update = async () => {
         >
           {{ t('components.v-reload-prompt.reload-button') }}
         </VButton>
-        <VButton icon="feather:x" @click="close">{{
-          t('components.v-reload-prompt.close-button')
-        }}</VButton>
+        <VButton
+          icon="feather:x"
+          @click="close"
+        >
+          {{ t('components.v-reload-prompt.close-button') }}
+        </VButton>
       </VButtons>
     </VCard>
   </Transition>

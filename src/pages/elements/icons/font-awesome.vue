@@ -62,8 +62,14 @@ useHead({
         <IconsFaDocumentation />
 
         <DocumentationDemoCard>
-          <div class="card-inner" :class="{ 'is-scrolling': isScrolling }">
-            <VFlex justify-content="flex-end" class="demo-icon-search py-4 px-6">
+          <div
+            class="card-inner"
+            :class="{ 'is-scrolling': isScrolling }"
+          >
+            <VFlex
+              justify-content="flex-end"
+              class="demo-icon-search py-4 px-6"
+            >
               <VField>
                 <VControl icon="feather:search">
                   <input
@@ -71,7 +77,7 @@ useHead({
                     type="search"
                     class="input is-rounded"
                     placeholder="Search font awesome icons ..."
-                  />
+                  >
                 </VControl>
               </VField>
             </VFlex>
@@ -102,7 +108,10 @@ useHead({
                 </dl>
 
                 <Transition name="fade-fast">
-                  <span v-if="copied && text === getSnippet(icon)" class="is-copied">
+                  <span
+                    v-if="copied && text === getSnippet(icon)"
+                    class="is-copied"
+                  >
                     copied!
                   </span>
                 </Transition>

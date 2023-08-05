@@ -1,9 +1,20 @@
 <template>
-  <VDropdown icon="feather:more-vertical" spaced right>
+  <VDropdown
+    icon="feather:more-vertical"
+    spaced
+    right
+  >
     <template #content>
-      <a role="menuitem" href="#" class="dropdown-item is-media">
+      <a
+        role="menuitem"
+        href="#"
+        class="dropdown-item is-media"
+      >
         <div class="icon">
-          <i aria-hidden="true" class="lnil lnil-user-alt"></i>
+          <i
+            aria-hidden="true"
+            class="lnil lnil-user-alt"
+          />
         </div>
         <div class="meta">
           <span>Profile</span>
@@ -11,9 +22,16 @@
         </div>
       </a>
 
-      <a role="menuitem" href="#" class="dropdown-item is-media">
+      <a
+        role="menuitem"
+        href="#"
+        class="dropdown-item is-media"
+      >
         <div class="icon">
-          <i aria-hidden="true" class="lnil lnil-bubble"></i>
+          <i
+            aria-hidden="true"
+            class="lnil lnil-bubble"
+          />
         </div>
         <div class="meta">
           <span>Message</span>
@@ -21,9 +39,16 @@
         </div>
       </a>
 
-      <a role="menuitem" href="#" class="dropdown-item is-media">
+      <a
+        role="menuitem"
+        href="#"
+        class="dropdown-item is-media"
+      >
         <div class="icon">
-          <i aria-hidden="true" class="lnil lnil-travel"></i>
+          <i
+            aria-hidden="true"
+            class="lnil lnil-travel"
+          />
         </div>
         <div class="meta">
           <span>Transfer</span>
@@ -31,11 +56,18 @@
         </div>
       </a>
 
-      <hr class="dropdown-divider" />
+      <hr class="dropdown-divider">
 
-      <a role="menuitem" href="#" class="dropdown-item is-media">
+      <a
+        role="menuitem"
+        href="#"
+        class="dropdown-item is-media"
+      >
         <div class="icon">
-          <i aria-hidden="true" class="lnil lnil-trash"></i>
+          <i
+            aria-hidden="true"
+            class="lnil lnil-trash"
+          />
         </div>
         <div class="meta">
           <span>Remove</span>

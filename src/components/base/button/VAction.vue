@@ -28,7 +28,7 @@ const props = withDefaults(defineProps<VActionProps>(), {
       props.grey && 'is-grey',
     ]"
   >
-    <slot></slot>
+    <slot />
   </RouterLink>
   <button
     v-else
@@ -40,7 +40,7 @@ const props = withDefaults(defineProps<VActionProps>(), {
       props.grey && 'is-grey',
     ]"
   >
-    <slot></slot>
+    <slot />
   </button>
 </template>
 

@@ -21,21 +21,36 @@ const todoList4Selection = ref([
   <div class="columns is-multiline widget-demo-columns half-columns">
     <!--List Widget V1a-->
     <div class="column is-4">
-      <ListWidgetSingle title="User Progress" straight class="list-widget-v1">
+      <ListWidgetSingle
+        title="User Progress"
+        straight
+        class="list-widget-v1"
+      >
         <listWidgetUserList :users="userList" />
       </ListWidgetSingle>
     </div>
 
     <!--List Widget V1b-->
     <div class="column is-4">
-      <ListWidgetSingle title="User Progress" straight class="list-widget-v1">
-        <listWidgetUserList :users="userList" squared />
+      <ListWidgetSingle
+        title="User Progress"
+        straight
+        class="list-widget-v1"
+      >
+        <listWidgetUserList
+          :users="userList"
+          squared
+        />
       </ListWidgetSingle>
     </div>
 
     <!--List Widget V2-->
     <div class="column is-4">
-      <ListWidgetTabbed title="Files" straight class="list-widget-v2">
+      <ListWidgetTabbed
+        title="Files"
+        straight
+        class="list-widget-v2"
+      >
         <template #tab1>
           <listWidgetFileList :files="fileList1" />
         </template>
@@ -47,7 +62,11 @@ const todoList4Selection = ref([
 
     <!--List Widget V1a-->
     <div class="column is-4">
-      <ListWidgetSingle title="Todo" straight class="list-widget-v1">
+      <ListWidgetSingle
+        title="Todo"
+        straight
+        class="list-widget-v1"
+      >
         <ListWidgetTodoList
           v-model="todoList1Selection"
           :todos="todoList1"
@@ -58,7 +77,11 @@ const todoList4Selection = ref([
 
     <!--List Widget V1a-->
     <div class="column is-4">
-      <ListWidgetSingle title="Todo" straight class="list-widget-v1">
+      <ListWidgetSingle
+        title="Todo"
+        straight
+        class="list-widget-v1"
+      >
         <ListWidgetTodoList
           v-model="todoList2Selection"
           :todos="todoList2"
@@ -76,31 +99,52 @@ const todoList4Selection = ref([
         class="list-widget-v2"
       >
         <template #tab1>
-          <ListWidgetTodoList v-model="todoList3Selection" :todos="todoList3" />
+          <ListWidgetTodoList
+            v-model="todoList3Selection"
+            :todos="todoList3"
+          />
         </template>
         <template #tab2>
-          <ListWidgetTodoList v-model="todoList4Selection" :todos="todoList4" />
+          <ListWidgetTodoList
+            v-model="todoList4Selection"
+            :todos="todoList4"
+          />
         </template>
       </ListWidgetTabbed>
     </div>
 
     <!--List Widget V1a-->
     <div class="column is-4">
-      <ListWidgetSingle title="Topics" straight class="list-widget-v1">
-        <listWidgetTopicList :topics="topicList" rounded />
+      <ListWidgetSingle
+        title="Topics"
+        straight
+        class="list-widget-v1"
+      >
+        <listWidgetTopicList
+          :topics="topicList"
+          rounded
+        />
       </ListWidgetSingle>
     </div>
 
     <!--List Widget V1a-->
     <div class="column is-4">
-      <ListWidgetSingle title="Topics" straight class="list-widget-v1">
+      <ListWidgetSingle
+        title="Topics"
+        straight
+        class="list-widget-v1"
+      >
         <listWidgetTopicList :topics="topicList" />
       </ListWidgetSingle>
     </div>
 
     <!--List Widget V2-->
     <div class="column is-4">
-      <ListWidgetTabbed title="Topics" straight class="list-widget-v2">
+      <ListWidgetTabbed
+        title="Topics"
+        straight
+        class="list-widget-v2"
+      >
         <template #tab1>
           <listWidgetTopicList :topics="topicList" />
         </template>
@@ -112,22 +156,41 @@ const todoList4Selection = ref([
 
     <!--List Widget V1a-->
     <div class="column is-4">
-      <ListWidgetSingle title="Timeline" straight class="list-widget-v3">
+      <ListWidgetSingle
+        title="Timeline"
+        straight
+        class="list-widget-v3"
+      >
         <ListWidgetIconTimeline :items="timeline" />
       </ListWidgetSingle>
     </div>
 
     <!--List Widget V1a-->
     <div class="column is-4">
-      <ListWidgetSingle title="Timeline" straight class="list-widget-v3">
-        <ListWidgetIconTimeline :items="timeline" squared />
+      <ListWidgetSingle
+        title="Timeline"
+        straight
+        class="list-widget-v3"
+      >
+        <ListWidgetIconTimeline
+          :items="timeline"
+          squared
+        />
       </ListWidgetSingle>
     </div>
 
     <!--List Widget V1a-->
     <div class="column is-4">
-      <ListWidgetSingle title="Timeline" straight class="list-widget-v3">
-        <ListWidgetIconTimeline :items="timeline" squared colored />
+      <ListWidgetSingle
+        title="Timeline"
+        straight
+        class="list-widget-v3"
+      >
+        <ListWidgetIconTimeline
+          :items="timeline"
+          squared
+          colored
+        />
       </ListWidgetSingle>
     </div>
   </div>

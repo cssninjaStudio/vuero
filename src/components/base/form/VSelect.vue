@@ -56,7 +56,7 @@ const classes = computed(() => {
       @change="field?.handleChange"
       @blur="field?.handleBlur"
     >
-      <slot v-bind="{ selected: internal, id }"></slot>
+      <slot v-bind="{ selected: internal, id }" />
     </select>
   </div>
 </template>

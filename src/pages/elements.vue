@@ -11,7 +11,10 @@ const layoutSwitcher = useLayoutSwitcher()
   >
     <!-- Content Wrapper -->
     <RouterView v-slot="{ Component }">
-      <Transition name="translate-page-y" mode="out-in">
+      <Transition
+        name="translate-page-y"
+        mode="out-in"
+      >
         <component :is="Component" />
       </Transition>
     </RouterView>

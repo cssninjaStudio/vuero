@@ -36,12 +36,20 @@ const props = withDefaults(defineProps<VSwitchBlockProps>(), {
         :class="[props.color && `is-${props.color}`]"
         @keydown.space.prevent="() => (modelValue = !modelValue)"
       >
-        <VInput v-model="modelValue" type="checkbox" v-bind="$attrs" />
-        <div class="slider"></div>
+        <VInput
+          v-model="modelValue"
+          type="checkbox"
+          v-bind="$attrs"
+        />
+        <div class="slider" />
       </VLabel>
     </template>
     <template v-else>
-      <VLabel raw class="form-switch" :class="[props.color && `is-${props.color}`]">
+      <VLabel
+        raw
+        class="form-switch"
+        :class="[props.color && `is-${props.color}`]"
+      >
         <VInput
           raw
           :checked="modelValue"
@@ -50,11 +58,14 @@ const props = withDefaults(defineProps<VSwitchBlockProps>(), {
           v-bind="$attrs"
           @change="() => (modelValue = !modelValue)"
         />
-        <i aria-hidden="true"></i>
+        <i aria-hidden="true" />
       </VLabel>
     </template>
 
-    <div v-if="props.label" class="text">
+    <div
+      v-if="props.label"
+      class="text"
+    >
       <VLabel raw>
         <span>{{ props.label }}</span>
       </VLabel>

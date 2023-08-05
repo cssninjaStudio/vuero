@@ -26,7 +26,7 @@ const props = withDefaults(defineProps<VFlexItemProps>(), {
 
 <template>
   <div class="v-flex-item">
-    <slot></slot>
+    <slot />
   </div>
 </template>
 

@@ -24,7 +24,10 @@ const props = withDefaults(
         <h3>Messages</h3>
       </div>
 
-      <ul id="mobile-conversations-list" class="animated preFadeInUp fadeInUp">
+      <ul
+        id="mobile-conversations-list"
+        class="animated preFadeInUp fadeInUp"
+      >
         <li
           v-for="conversation in props.conversations"
           :key="conversation.id"
@@ -41,7 +44,7 @@ const props = withDefaults(
                 :src="conversation.avatar"
                 alt=""
                 @error.once="onceImageErrored(150)"
-              />
+              >
             </div>
             <div class="recipient-meta">
               <span>{{ conversation.name }}</span>

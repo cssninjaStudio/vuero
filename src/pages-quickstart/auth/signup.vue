@@ -95,12 +95,16 @@ useHead({
               type="checkbox"
               :checked="!darkmode.isDark"
               @change="darkmode.onChange"
-            />
-            <span></span>
+            >
+            <span />
           </label>
           <div class="auth-logo">
             <RouterLink to="/">
-              <AnimatedLogo class="top-logo" width="36px" height="36px" />
+              <AnimatedLogo
+                class="top-logo"
+                width="36px"
+                height="36px"
+              />
             </RouterLink>
           </div>
         </div>
@@ -117,58 +121,89 @@ useHead({
                 </div>
                 <div class="auth-form-wrapper">
                   <!-- Login Form -->
-                  <form method="post" novalidate @submit="onSignup">
-                    <div id="signin-form" class="login-form">
+                  <form
+                    method="post"
+                    novalidate
+                    @submit="onSignup"
+                  >
+                    <div
+                      id="signin-form"
+                      class="login-form"
+                    >
                       <!-- Input -->
-                      <VField id="name" v-slot="{ field }">
+                      <VField
+                        id="name"
+                        v-slot="{ field }"
+                      >
                         <VControl icon="feather:user">
                           <VInput
                             type="text"
                             :placeholder="t('auth.placeholder.name')"
                             autocomplete="name"
                           />
-                          <p v-if="field?.errorMessage" class="help is-danger">
+                          <p
+                            v-if="field?.errorMessage"
+                            class="help is-danger"
+                          >
                             {{ field.errorMessage }}
                           </p>
                         </VControl>
                       </VField>
 
                       <!-- Input -->
-                      <VField id="email" v-slot="{ field }">
+                      <VField
+                        id="email"
+                        v-slot="{ field }"
+                      >
                         <VControl icon="feather:mail">
                           <VInput
                             type="text"
                             :placeholder="t('auth.placeholder.email')"
                             autocomplete="email"
                           />
-                          <p v-if="field?.errorMessage" class="help is-danger">
+                          <p
+                            v-if="field?.errorMessage"
+                            class="help is-danger"
+                          >
                             {{ field.errorMessage }}
                           </p>
                         </VControl>
                       </VField>
 
                       <!-- Input -->
-                      <VField id="password" v-slot="{ field }">
+                      <VField
+                        id="password"
+                        v-slot="{ field }"
+                      >
                         <VControl icon="feather:lock">
                           <VInput
                             type="password"
                             :placeholder="t('auth.placeholder.password')"
                             autocomplete="new-password"
                           />
-                          <p v-if="field?.errorMessage" class="help is-danger">
+                          <p
+                            v-if="field?.errorMessage"
+                            class="help is-danger"
+                          >
                             {{ field.errorMessage }}
                           </p>
                         </VControl>
                       </VField>
 
                       <!-- Input -->
-                      <VField id="passwordCheck" v-slot="{ field }">
+                      <VField
+                        id="passwordCheck"
+                        v-slot="{ field }"
+                      >
                         <VControl icon="feather:lock">
                           <VInput
                             type="password"
                             :placeholder="t('auth.placeholder.passwordCheck')"
                           />
-                          <p v-if="field?.errorMessage" class="help is-danger">
+                          <p
+                            v-if="field?.errorMessage"
+                            class="help is-danger"
+                          >
                             {{ field.errorMessage }}
                           </p>
                         </VControl>
@@ -187,7 +222,13 @@ useHead({
                       <!-- Submit -->
 
                       <div class="login">
-                        <VButton type="submit" color="primary" bold fullwidth raised>
+                        <VButton
+                          type="submit"
+                          color="primary"
+                          bold
+                          fullwidth
+                          raised
+                        >
                           {{ t('auth.action.signup') }}
                         </VButton>
                       </div>
@@ -211,17 +252,17 @@ useHead({
                 class="light-image has-light-shadow has-light-border"
                 src="/@src/assets/illustrations/apps/vuero-banking-light.webp"
                 alt=""
-              />
+              >
               <img
                 class="dark-image has-light-shadow"
                 src="/@src/assets/illustrations/apps/vuero-banking-dark.webp"
                 alt=""
-              />
+              >
             </div>
           </div>
         </div>
         <div class="hero-footer">
-          <p class="has-text-centered"></p>
+          <p class="has-text-centered" />
         </div>
       </div>
     </div>

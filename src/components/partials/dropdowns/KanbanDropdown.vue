@@ -3,7 +3,11 @@ const emit = defineEmits(['rename', 'collapse'])
 </script>
 
 <template>
-  <VDropdown icon="feather:more-vertical" right :options="{ clickOutside: false }">
+  <VDropdown
+    icon="feather:more-vertical"
+    right
+    :options="{ clickOutside: false }"
+  >
     <template #content>
       <a
         class="dropdown-item kanban-rename kill-drop"
@@ -23,14 +27,14 @@ const emit = defineEmits(['rename', 'collapse'])
       >
         Collapse
       </a>
-      <hr class="dropdown-divider" />
+      <hr class="dropdown-divider">
       <div class="dropdown-item has-child">
         Settings
         <i
           aria-hidden="true"
           class="iconify rtl-reflect"
           data-icon="feather:chevron-right"
-        ></i>
+        />
 
         <div class="child-dropdown">
           <div class="inner">

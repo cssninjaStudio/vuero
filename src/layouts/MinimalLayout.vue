@@ -12,7 +12,10 @@ const props = withDefaults(
 </script>
 
 <template>
-  <div class="minimal-wrapper" :class="[props.theme]">
-    <slot></slot>
+  <div
+    class="minimal-wrapper"
+    :class="[props.theme]"
+  >
+    <slot />
   </div>
 </template>

@@ -25,7 +25,7 @@ if (mobileWidthValue.match(CssUnitRe) === null) {
 </script>
 
 <template>
-  <span class="text-ellipsis"><slot></slot></span>
+  <span class="text-ellipsis"><slot /></span>
 </template>
 
 <style lang="scss" scoped>

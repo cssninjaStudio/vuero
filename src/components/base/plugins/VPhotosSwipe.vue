@@ -80,7 +80,7 @@ onUnmounted(() => {
           :alt="item.alt"
           itemprop="thumbnail"
           @error.once="onceImageErrored(item.w, item.h)"
-        />
+        >
       </a>
     </figure>
   </div>

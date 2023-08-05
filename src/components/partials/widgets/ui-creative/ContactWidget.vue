@@ -31,7 +31,11 @@ const props = withDefaults(
   >
     <div class="widget-content">
       <div class="left">
-        <VAvatar size="medium" :picture="props.picture" :squared="props.squared" />
+        <VAvatar
+          size="medium"
+          :picture="props.picture"
+          :squared="props.squared"
+        />
       </div>
       <div class="right">
         <h3>{{ props.username }}</h3>
@@ -41,18 +45,28 @@ const props = withDefaults(
         </div>
         <div class="contact-info">
           <span>
-            <i aria-hidden="true" class="iconify" data-icon="feather:map-pin"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:map-pin"
+            />
             <span>{{ props.location }}</span>
           </span>
           <span>
-            <i aria-hidden="true" class="iconify" data-icon="feather:phone"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:phone"
+            />
             <span>{{ props.phone }}</span>
           </span>
         </div>
       </div>
     </div>
 
-    <p class="email">{{ props.email }}</p>
+    <p class="email">
+      {{ props.email }}
+    </p>
   </div>
 </template>
 

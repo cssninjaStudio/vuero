@@ -17,8 +17,7 @@ const activeTab = ref<TabId>('overview')
                 role="button"
                 @keydown.space.prevent="activeTab = 'overview'"
                 @click="activeTab = 'overview'"
-                >Overview</a
-              >
+              >Overview</a>
             </li>
             <li :class="[activeTab === 'content' && 'is-active']">
               <a
@@ -26,8 +25,7 @@ const activeTab = ref<TabId>('overview')
                 role="button"
                 @keydown.space.prevent="activeTab = 'content'"
                 @click="activeTab = 'content'"
-                >Content</a
-              >
+              >Content</a>
             </li>
             <li :class="[activeTab === 'brands' && 'is-active']">
               <a
@@ -35,8 +33,7 @@ const activeTab = ref<TabId>('overview')
                 role="button"
                 @keydown.space.prevent="activeTab = 'brands'"
                 @click="activeTab = 'brands'"
-                >Brands</a
-              >
+              >Brands</a>
             </li>
           </ul>
         </div>

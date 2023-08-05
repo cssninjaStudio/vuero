@@ -41,10 +41,16 @@ useHead({
   <div class="auth-wrapper-inner is-single">
     <!--Fake navigation-->
     <div class="auth-nav">
-      <div class="left"></div>
+      <div class="left" />
       <div class="center">
-        <RouterLink to="/" class="header-item">
-          <AnimatedLogo width="38px" height="38px" />
+        <RouterLink
+          to="/"
+          class="header-item"
+        >
+          <AnimatedLogo
+            width="38px"
+            height="38px"
+          />
         </RouterLink>
       </div>
       <div class="right">
@@ -59,8 +65,8 @@ useHead({
             type="checkbox"
             :checked="!darkmode.isDark"
             @change="darkmode.onChange"
-          />
-          <span></span>
+          >
+          <span />
         </label>
       </div>
     </div>
@@ -72,16 +78,26 @@ useHead({
         <div class="auth-head">
           <h2>Welcome Back.</h2>
           <p>Please sign in to your account</p>
-          <RouterLink to="/auth/signup-3"> I do not have an account yet </RouterLink>
+          <RouterLink to="/auth/signup-3">
+            I do not have an account yet
+          </RouterLink>
         </div>
 
         <!--Form-->
         <div class="form-card">
-          <form method="post" novalidate @submit.prevent="handleLogin">
+          <form
+            method="post"
+            novalidate
+            @submit.prevent="handleLogin"
+          >
             <div class="login-form">
               <VField>
                 <VControl icon="feather:user">
-                  <VInput type="text" placeholder="Username" autocomplete="username" />
+                  <VInput
+                    type="text"
+                    placeholder="Username"
+                    autocomplete="username"
+                  />
                 </VControl>
               </VField>
               <VField>
@@ -97,7 +113,11 @@ useHead({
               <!-- Switch -->
               <VField>
                 <VControl class="setting-item">
-                  <VCheckbox label="Remember me" color="primary" paddingless />
+                  <VCheckbox
+                    label="Remember me"
+                    color="primary"
+                    paddingless
+                  />
                 </VControl>
               </VField>
 

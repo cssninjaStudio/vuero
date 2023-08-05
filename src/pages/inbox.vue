@@ -44,12 +44,21 @@ useHead({
     <div class="inbox-wrapper">
       <div class="wrapper-inner">
         <!--Inbox sidebar-->
-        <div class="inbox-sidebar" :class="[mobileSidebarOpen && 'mobile-active']">
+        <div
+          class="inbox-sidebar"
+          :class="[mobileSidebarOpen && 'mobile-active']"
+        >
           <!-- Header -->
           <div class="header-area">
             <div class="inbox-title">
-              <RouterLink to="/" class="inbox-brand">
-                <AnimatedLogo width="36px" height="36px" />
+              <RouterLink
+                to="/"
+                class="inbox-brand"
+              >
+                <AnimatedLogo
+                  width="36px"
+                  height="36px"
+                />
               </RouterLink>
               <span>Inbox</span>
 
@@ -59,8 +68,8 @@ useHead({
                   type="checkbox"
                   :checked="!darkmode.isDark"
                   @change="darkmode.onChange"
-                />
-                <span></span>
+                >
+                <span />
               </label>
             </div>
             <div
@@ -68,13 +77,16 @@ useHead({
               class="dropdown inbox-dropdown dropdown-trigger is-right"
             >
               <div>
-                <button class="button" @click="dropdown1.toggle">
+                <button
+                  class="button"
+                  @click="dropdown1.toggle"
+                >
                   <span class="icon is-small">
                     <i
                       aria-hidden="true"
                       class="iconify"
                       data-icon="feather:more-vertical"
-                    ></i>
+                    />
                   </span>
                 </button>
               </div>
@@ -85,11 +97,15 @@ useHead({
                       aria-hidden="true"
                       class="iconify"
                       data-icon="feather:refresh-cw"
-                    ></i>
+                    />
                     <span>Refresh</span>
                   </a>
                   <a class="dropdown-item">
-                    <i aria-hidden="true" class="iconify" data-icon="feather:bell"></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:bell"
+                    />
                     <span>Notifications</span>
                   </a>
                   <a class="dropdown-item">
@@ -97,7 +113,7 @@ useHead({
                       aria-hidden="true"
                       class="iconify"
                       data-icon="feather:user-plus"
-                    ></i>
+                    />
                     <span>Invite People</span>
                   </a>
                   <a class="dropdown-item">
@@ -105,7 +121,7 @@ useHead({
                       aria-hidden="true"
                       class="iconify"
                       data-icon="feather:settings"
-                    ></i>
+                    />
                     <span>Settings</span>
                   </a>
                 </div>
@@ -119,7 +135,11 @@ useHead({
               @keydown.space.prevent="mobileSidebarOpen = false"
               @click="mobileSidebarOpen = false"
             >
-              <i aria-hidden="true" class="iconify" data-icon="feather:x"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:x"
+              />
             </a>
           </div>
           <!--Inner-->
@@ -137,7 +157,11 @@ useHead({
                       @keydown.space.prevent="activeTab = 'inbox'"
                       @click="activeTab = 'inbox'"
                     >
-                      <i aria-hidden="true" class="iconify" data-icon="feather:mail"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:mail"
+                      />
                       <span>Inbox</span>
                       <span class="tag">24</span>
                     </a>
@@ -154,7 +178,7 @@ useHead({
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:file-text"
-                      ></i>
+                      />
                       <span>Drafts</span>
                       <span class="tag">2</span>
                     </a>
@@ -167,7 +191,11 @@ useHead({
                       @keydown.space.prevent="activeTab = 'sent'"
                       @click="activeTab = 'sent'"
                     >
-                      <i aria-hidden="true" class="iconify" data-icon="feather:send"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:send"
+                      />
                       <span>Sent</span>
                       <span class="tag">7</span>
                     </a>
@@ -184,7 +212,7 @@ useHead({
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:trash-2"
-                      ></i>
+                      />
                       <span>Trash</span>
                       <span class="tag">18</span>
                     </a>
@@ -201,7 +229,7 @@ useHead({
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:alert-octagon"
-                      ></i>
+                      />
                       <span>Spam</span>
                       <span class="tag">29</span>
                     </a>
@@ -212,14 +240,24 @@ useHead({
             <!--Scroll menu-->
             <div class="scroll-menu">
               <div class="title-wrap">
-                <h3 :class="[contactSearchOpen && 'is-hidden']">Contacts</h3>
+                <h3 :class="[contactSearchOpen && 'is-hidden']">
+                  Contacts
+                </h3>
                 <div
                   :class="[!contactSearchOpen && 'is-hidden']"
                   class="control has-icon"
                 >
-                  <input type="text" class="input" placeholder="Search Contacts..." />
+                  <input
+                    type="text"
+                    class="input"
+                    placeholder="Search Contacts..."
+                  >
                   <div class="form-icon">
-                    <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:search"
+                    />
                   </div>
                 </div>
                 <a
@@ -234,7 +272,11 @@ useHead({
                     @keydown.space.prevent="contactSearchOpen = true"
                     @click="contactSearchOpen = true"
                   >
-                    <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:search"
+                    />
                   </span>
                 </a>
                 <a
@@ -249,7 +291,11 @@ useHead({
                     @keydown.space.prevent="contactSearchOpen = true"
                     @click="contactSearchOpen = false"
                   >
-                    <i aria-hidden="true" class="iconify" data-icon="feather:x"></i>
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:x"
+                    />
                   </span>
                 </a>
               </div>
@@ -260,7 +306,7 @@ useHead({
                     src="/demo/avatars/7.jpg"
                     alt=""
                     @error.once="onceImageErrored(150)"
-                  />
+                  >
                   <div class="contact-meta">
                     <span>Alice Carasca</span>
                     <span>alice@vuero.io</span>
@@ -272,7 +318,7 @@ useHead({
                     src="/demo/avatars/25.jpg"
                     alt=""
                     @error.once="onceImageErrored(150)"
-                  />
+                  >
                   <div class="contact-meta">
                     <span>Melany Wallace</span>
                     <span>melany@vuero.io</span>
@@ -284,7 +330,7 @@ useHead({
                     src="/demo/avatars/18.jpg"
                     alt=""
                     @error.once="onceImageErrored(150)"
-                  />
+                  >
                   <div class="contact-meta">
                     <span>Esteban Castellanos</span>
                     <span>esteban@vuero.io</span>
@@ -296,7 +342,7 @@ useHead({
                     src="/demo/avatars/32.jpg"
                     alt=""
                     @error.once="onceImageErrored(150)"
-                  />
+                  >
                   <div class="contact-meta">
                     <span>Jonathan Krugger</span>
                     <span>jonathan@vuero.io</span>
@@ -308,7 +354,7 @@ useHead({
                     src="/demo/avatars/38.jpg"
                     alt=""
                     @error.once="onceImageErrored(150)"
-                  />
+                  >
                   <div class="contact-meta">
                     <span>Christie Dallas</span>
                     <span>christie@vuero.io</span>
@@ -335,7 +381,7 @@ useHead({
                   aria-hidden="true"
                   class="iconify"
                   data-icon="feather:chevron-right"
-                ></i>
+                />
               </a>
               <a
                 class="inbox-action check-all-action"
@@ -346,7 +392,11 @@ useHead({
                 @keydown.space.prevent="toggleSelection"
                 @click="toggleSelection"
               >
-                <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:check"
+                />
               </a>
             </div>
             <div class="actions">
@@ -355,9 +405,13 @@ useHead({
                   type="text"
                   class="input is-rounded"
                   placeholder="Search Inbox..."
-                />
+                >
                 <div class="form-icon">
-                  <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:search"
+                  />
                 </div>
               </div>
 
@@ -366,20 +420,27 @@ useHead({
                 class="dropdown inbox-dropdown dropdown-trigger is-right"
               >
                 <div>
-                  <button class="button" @click="dropdown2.toggle">
+                  <button
+                    class="button"
+                    @click="dropdown2.toggle"
+                  >
                     <span class="icon is-small">
                       <i
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:more-vertical"
-                      ></i>
+                      />
                     </span>
                   </button>
                 </div>
                 <div class="dropdown-menu">
                   <div class="dropdown-content">
                     <a class="dropdown-item">
-                      <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:check"
+                      />
                       <span>Mark all as read</span>
                     </a>
                     <a class="dropdown-item">
@@ -387,20 +448,24 @@ useHead({
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:eye-off"
-                      ></i>
+                      />
                       <span>Hide read</span>
                     </a>
-                    <hr class="dropdown-divider" />
+                    <hr class="dropdown-divider">
                     <a class="dropdown-item">
                       <i
                         aria-hidden="true"
                         class="iconify"
                         data-icon="feather:calendar"
-                      ></i>
+                      />
                       <span>Sort by date</span>
                     </a>
                     <a class="dropdown-item">
-                      <i aria-hidden="true" class="iconify" data-icon="feather:user"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:user"
+                      />
                       <span>Sort by user</span>
                     </a>
                   </div>
@@ -420,7 +485,7 @@ useHead({
 
         <!--Loader-->
         <div class="inbox-message-overlay">
-          <div class="loader is-loading"></div>
+          <div class="loader is-loading" />
         </div>
 
         <!--Message details 1-->
@@ -730,8 +795,12 @@ useHead({
               padding: 6px 8px;
               border-radius: 100px;
               margin-bottom: 6px;
-              transition: color 0.3s, background-color 0.3s, border-color 0.3s,
-                height 0.3s, width 0.3s;
+              transition:
+                color 0.3s,
+                background-color 0.3s,
+                border-color 0.3s,
+                height 0.3s,
+                width 0.3s;
               cursor: pointer;
 
               &:hover,
@@ -1101,8 +1170,12 @@ useHead({
               font-size: 0.95rem;
               font-weight: 500;
               color: var(--dark-text);
-              transition: color 0.3s, background-color 0.3s, border-color 0.3s,
-                height 0.3s, width 0.3s;
+              transition:
+                color 0.3s,
+                background-color 0.3s,
+                border-color 0.3s,
+                height 0.3s,
+                width 0.3s;
             }
 
             .download-icon {
@@ -1113,8 +1186,12 @@ useHead({
               display: flex;
               justify-content: center;
               align-items: center;
-              transition: color 0.3s, background-color 0.3s, border-color 0.3s,
-                height 0.3s, width 0.3s;
+              transition:
+                color 0.3s,
+                background-color 0.3s,
+                border-color 0.3s,
+                height 0.3s,
+                width 0.3s;
 
               i {
                 font-size: 12px;
@@ -1874,7 +1951,7 @@ Dark mode
 }
 
 // Tablet portrait
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media only screen and (device-width >= 768px) and (device-width <= 1024px) and (orientation: portrait) {
   .inbox-hidden-mobile {
     display: none !important;
   }
@@ -2001,7 +2078,7 @@ Dark mode
 }
 
 // Tablet landscape
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (device-width >= 768px) and (device-width <= 1024px) and (orientation: landscape) {
   .inbox-hidden-mobile {
     display: none !important;
   }

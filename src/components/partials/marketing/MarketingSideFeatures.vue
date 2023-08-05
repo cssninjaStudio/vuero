@@ -3,7 +3,9 @@
     <div class="container">
       <!--Title-->
       <div class="section-title has-text-centered">
-        <h2 class="title is-2">Top Tier Product</h2>
+        <h2 class="title is-2">
+          Top Tier Product
+        </h2>
         <h4>Vuero has been carefully handcrafted.</h4>
       </div>
 
@@ -14,15 +16,17 @@
             class="light-image-l featured-image"
             src="/@src/assets/illustrations/landing/feature-1.webp"
             alt=""
-          />
+          >
           <img
             class="dark-image-l featured-image"
             src="/@src/assets/illustrations/landing/feature-1-dark.webp"
             alt=""
-          />
+          >
         </div>
         <div class="column is-5">
-          <h2 class="title m-b-10 is-centered-tablet-portrait">Incredible UI</h2>
+          <h2 class="title m-b-10 is-centered-tablet-portrait">
+            Incredible UI
+          </h2>
           <p class="section-feature-description is-centered-tablet-portrait">
             Vuero's UI has been carefully thought and designed, and is simply one of the
             best you'll find on the market. It's visual power and its modularity will let
@@ -39,15 +43,17 @@
             class="light-image-l featured-image"
             src="/@src/assets/illustrations/landing/feature-2.svg"
             alt=""
-          />
+          >
           <img
             class="dark-image-l featured-image"
             src="/@src/assets/illustrations/landing/feature-2-dark.svg"
             alt=""
-          />
+          >
         </div>
         <div class="column is-5 is-offset-1">
-          <h2 class="title m-b-10 is-centered-tablet-portrait">Playful Vectors</h2>
+          <h2 class="title m-b-10 is-centered-tablet-portrait">
+            Playful Vectors
+          </h2>
           <p class="section-feature-description is-centered-tablet-portrait">
             Vuero ships with a lot of svg illustrations representing various elements that
             can be used in a website, following very high quality standards.
@@ -58,12 +64,12 @@
             class="light-image-l featured-image"
             src="/@src/assets/illustrations/landing/feature-2.svg"
             alt=""
-          />
+          >
           <img
             class="dark-image-l featured-image"
             src="/@src/assets/illustrations/landing/feature-2-dark.svg"
             alt=""
-          />
+          >
         </div>
       </div>
       <!-- Feature -->
@@ -73,15 +79,17 @@
             class="light-image-l featured-image"
             src="/@src/assets/illustrations/landing/feature-3.svg"
             alt=""
-          />
+          >
           <img
             class="dark-image-l featured-image"
             src="/@src/assets/illustrations/landing/feature-3-dark.svg"
             alt=""
-          />
+          >
         </div>
         <div class="column is-5">
-          <h2 class="title m-b-10 is-centered-tablet-portrait">Handcrafted UI</h2>
+          <h2 class="title m-b-10 is-centered-tablet-portrait">
+            Handcrafted UI
+          </h2>
           <p class="section-feature-description is-centered-tablet-portrait">
             Vuero ships with it's own component library based on the Bulma.io CSS
             framework. Each component has been carefully handcrafted and natively supports

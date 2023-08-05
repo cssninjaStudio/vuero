@@ -55,5 +55,5 @@ const classes = computed(() => {
     :false-value="props.falseValue"
     @change="field?.handleChange"
     @blur="field?.handleBlur"
-  />
+  >
 </template>

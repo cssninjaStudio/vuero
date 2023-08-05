@@ -14,7 +14,11 @@ const currentTab = ref(props.activeTab)
 
 <template>
   <div class="icon-toolbar">
-    <div v-for="(tab, index) in props.tabs" :key="tab.id" class="toolbar-icon">
+    <div
+      v-for="(tab, index) in props.tabs"
+      :key="tab.id"
+      class="toolbar-icon"
+    >
       <a
         class="inner-icon"
         :class="{ 'is-active': currentTab === index }"
@@ -23,7 +27,11 @@ const currentTab = ref(props.activeTab)
         @keydown.space.prevent="currentTab = index"
         @click="currentTab = index"
       >
-        <i aria-hidden="true" class="iconify" :data-icon="tab.icon"></i>
+        <i
+          aria-hidden="true"
+          class="iconify"
+          :data-icon="tab.icon"
+        />
       </a>
     </div>
   </div>

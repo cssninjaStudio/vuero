@@ -66,5 +66,5 @@ const classes = computed(() => {
     @change="field?.handleChange"
     @blur="field?.handleBlur"
     @input="fitSize"
-  ></textarea>
+  />
 </template>

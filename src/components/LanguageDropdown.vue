@@ -44,42 +44,109 @@ onClickOutside(target, () => (open.value = false))
 </script>
 
 <template>
-  <div ref="target" class="dropdown lang-dropdown" :class="open ? 'is-active' : ''">
-    <a href="#" class="dropdown-trigger" @click.prevent="open = true">
-      <img :src="localFlagSrc" :alt="locale" />
+  <div
+    ref="target"
+    class="dropdown lang-dropdown"
+    :class="open ? 'is-active' : ''"
+  >
+    <a
+      href="#"
+      class="dropdown-trigger"
+      @click.prevent="open = true"
+    >
+      <img
+        :src="localFlagSrc"
+        :alt="locale"
+      >
     </a>
 
     <div class="dropdown-menu">
       <div class="dropdown-content">
-        <a href="#" role="button" class="dropdown-item" @click="locale = 'en'">
-          <img src="/images/icons/flags/united-states-of-america.svg" alt="" />
+        <a
+          href="#"
+          role="button"
+          class="dropdown-item"
+          @click="locale = 'en'"
+        >
+          <img
+            src="/images/icons/flags/united-states-of-america.svg"
+            alt=""
+          >
           <span>English</span>
         </a>
-        <a href="#" role="button" class="dropdown-item" @click="locale = 'fr'">
-          <img src="/images/icons/flags/france.svg" alt="" />
+        <a
+          href="#"
+          role="button"
+          class="dropdown-item"
+          @click="locale = 'fr'"
+        >
+          <img
+            src="/images/icons/flags/france.svg"
+            alt=""
+          >
           <span>Français</span>
         </a>
-        <a href="#" role="button" class="dropdown-item" @click="locale = 'es'">
-          <img src="/images/icons/flags/spain.svg" alt="" />
+        <a
+          href="#"
+          role="button"
+          class="dropdown-item"
+          @click="locale = 'es'"
+        >
+          <img
+            src="/images/icons/flags/spain.svg"
+            alt=""
+          >
           <span>Español</span>
         </a>
-        <a href="#" role="button" class="dropdown-item" @click="locale = 'de'">
-          <img src="/images/icons/flags/germany.svg" alt="" />
+        <a
+          href="#"
+          role="button"
+          class="dropdown-item"
+          @click="locale = 'de'"
+        >
+          <img
+            src="/images/icons/flags/germany.svg"
+            alt=""
+          >
           <span>Deutch</span>
         </a>
-        <a href="#" role="button" class="dropdown-item" @click="locale = 'es-MX'">
-          <img src="/images/icons/flags/mexico.svg" alt="" />
+        <a
+          href="#"
+          role="button"
+          class="dropdown-item"
+          @click="locale = 'es-MX'"
+        >
+          <img
+            src="/images/icons/flags/mexico.svg"
+            alt=""
+          >
           <span>Español mexicano</span>
         </a>
-        <a href="#" role="button" class="dropdown-item" @click="locale = 'zh-CN'">
-          <img src="/images/icons/flags/china.svg" alt="" />
+        <a
+          href="#"
+          role="button"
+          class="dropdown-item"
+          @click="locale = 'zh-CN'"
+        >
+          <img
+            src="/images/icons/flags/china.svg"
+            alt=""
+          >
           <span>中国人</span>
         </a>
-        <a href="#" role="button" class="dropdown-item" @click="locale = 'ar'">
-          <img src="/images/icons/flags/saudi-arabia.svg" alt="" />
+        <a
+          href="#"
+          role="button"
+          class="dropdown-item"
+          @click="locale = 'ar'"
+        >
+          <img
+            src="/images/icons/flags/saudi-arabia.svg"
+            alt=""
+          >
           <span>عربي</span>
         </a>
-        <hr class="dropdown-divider" />
+        <hr class="dropdown-divider">
         <a class="dropdown-item">
           <small>Suggest Others</small>
         </a>

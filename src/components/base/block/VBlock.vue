@@ -27,17 +27,20 @@ const props = withDefaults(defineProps<VBlockProps>(), {
       props.tResponsive && 'is-responsive-tablet-p',
     ]"
   >
-    <slot name="icon"></slot>
-    <div class="flex-meta" :class="[props.lighter && 'is-lighter']">
+    <slot name="icon" />
+    <div
+      class="flex-meta"
+      :class="[props.lighter && 'is-lighter']"
+    >
       <slot name="title">
         <span>{{ props.title }}</span>
         <span v-if="props.subtitle">{{ props.subtitle }}</span>
         <span v-if="props.infratitle">{{ props.infratitle }}</span>
       </slot>
-      <slot></slot>
+      <slot />
     </div>
     <div class="flex-end">
-      <slot name="action"></slot>
+      <slot name="action" />
     </div>
   </div>
 </template>

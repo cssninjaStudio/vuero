@@ -18,13 +18,32 @@ const props = withDefaults(
     class="tab-content has-text-left"
   >
     <div class="columns is-multiline">
-      <div v-for="item in elements" :key="item.id" class="column is-3">
-        <RouterLink :to="item.link" class="component-box">
+      <div
+        v-for="item in elements"
+        :key="item.id"
+        class="column is-3"
+      >
+        <RouterLink
+          :to="item.link"
+          class="component-box"
+        >
           <div class="component">
-            <img class="light-image-l" :src="item.media.light" alt="" loading="lazy" />
-            <img class="dark-image-l" :src="item.media.dark" alt="" loading="lazy" />
+            <img
+              class="light-image-l"
+              :src="item.media.light"
+              alt=""
+              loading="lazy"
+            >
+            <img
+              class="dark-image-l"
+              :src="item.media.dark"
+              alt=""
+              loading="lazy"
+            >
           </div>
-          <div class="component-title">{{ item.name }}</div>
+          <div class="component-title">
+            {{ item.name }}
+          </div>
         </RouterLink>
       </div>
     </div>
@@ -38,13 +57,32 @@ const props = withDefaults(
   >
     <div class="columns is-multiline">
       <!--Item-->
-      <div v-for="item in components" :key="item.id" class="column is-3">
-        <RouterLink :to="item.link" class="component-box">
+      <div
+        v-for="item in components"
+        :key="item.id"
+        class="column is-3"
+      >
+        <RouterLink
+          :to="item.link"
+          class="component-box"
+        >
           <div class="component">
-            <img class="light-image-l" :src="item.media.light" alt="" loading="lazy" />
-            <img class="dark-image-l" :src="item.media.dark" alt="" loading="lazy" />
+            <img
+              class="light-image-l"
+              :src="item.media.light"
+              alt=""
+              loading="lazy"
+            >
+            <img
+              class="dark-image-l"
+              :src="item.media.dark"
+              alt=""
+              loading="lazy"
+            >
           </div>
-          <div class="component-title">{{ item.name }}</div>
+          <div class="component-title">
+            {{ item.name }}
+          </div>
         </RouterLink>
       </div>
     </div>
@@ -57,13 +95,32 @@ const props = withDefaults(
     class="tab-content has-text-left"
   >
     <div class="columns is-multiline">
-      <div v-for="item in forms" :key="item.id" class="column is-3">
-        <RouterLink :to="item.link" class="component-box">
+      <div
+        v-for="item in forms"
+        :key="item.id"
+        class="column is-3"
+      >
+        <RouterLink
+          :to="item.link"
+          class="component-box"
+        >
           <div class="component">
-            <img class="light-image-l" :src="item.media.light" alt="" loading="lazy" />
-            <img class="dark-image-l" :src="item.media.dark" alt="" loading="lazy" />
+            <img
+              class="light-image-l"
+              :src="item.media.light"
+              alt=""
+              loading="lazy"
+            >
+            <img
+              class="dark-image-l"
+              :src="item.media.dark"
+              alt=""
+              loading="lazy"
+            >
           </div>
-          <div class="component-title">{{ item.name }}</div>
+          <div class="component-title">
+            {{ item.name }}
+          </div>
         </RouterLink>
       </div>
     </div>
@@ -76,13 +133,32 @@ const props = withDefaults(
     class="tab-content has-text-left"
   >
     <div class="columns is-multiline">
-      <div v-for="item in plugins" :key="item.id" class="column is-3">
-        <RouterLink :to="item.link" class="component-box">
+      <div
+        v-for="item in plugins"
+        :key="item.id"
+        class="column is-3"
+      >
+        <RouterLink
+          :to="item.link"
+          class="component-box"
+        >
           <div class="component">
-            <img class="light-image-l" :src="item.media.light" alt="" loading="lazy" />
-            <img class="dark-image-l" :src="item.media.dark" alt="" loading="lazy" />
+            <img
+              class="light-image-l"
+              :src="item.media.light"
+              alt=""
+              loading="lazy"
+            >
+            <img
+              class="dark-image-l"
+              :src="item.media.dark"
+              alt=""
+              loading="lazy"
+            >
           </div>
-          <div class="component-title">{{ item.name }}</div>
+          <div class="component-title">
+            {{ item.name }}
+          </div>
         </RouterLink>
       </div>
     </div>
@@ -99,7 +175,10 @@ const props = withDefaults(
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 0;
-    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    transition:
+      transform 0.3s,
+      box-shadow 0.3s,
+      border-color 0.3s;
     cursor: pointer;
 
     &:hover,

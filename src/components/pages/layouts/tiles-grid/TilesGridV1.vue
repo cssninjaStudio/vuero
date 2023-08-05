@@ -44,7 +44,7 @@ const optionsSingle = [
           v-model="filters"
           class="input custom-text-filter"
           placeholder="Search..."
-        />
+        >
       </VControl>
 
       <div class="buttons">
@@ -58,9 +58,15 @@ const optionsSingle = [
             />
           </VControl>
         </VField>
-        <VButton color="primary" raised>
+        <VButton
+          color="primary"
+          raised
+        >
           <span class="icon">
-            <i aria-hidden="true" class="fas fa-plus"></i>
+            <i
+              aria-hidden="true"
+              class="fas fa-plus"
+            />
           </span>
           <span>Add User</span>
         </VButton>
@@ -82,19 +88,27 @@ const optionsSingle = [
             class="light-image"
             src="/@src/assets/illustrations/placeholders/search-6.svg"
             alt=""
-          />
+          >
           <img
             class="dark-image"
             src="/@src/assets/illustrations/placeholders/search-6-dark.svg"
             alt=""
-          />
+          >
         </template>
       </VPlaceholderPage>
 
       <!--Tile Grid v1-->
-      <TransitionGroup name="list" tag="div" class="columns is-multiline">
+      <TransitionGroup
+        name="list"
+        tag="div"
+        class="columns is-multiline"
+      >
         <!--Grid item-->
-        <div v-for="(item, key) in filteredData" :key="key" class="column is-4">
+        <div
+          v-for="(item, key) in filteredData"
+          :key="key"
+          class="column is-4"
+        >
           <div class="tile-grid-item">
             <div class="tile-grid-item-inner">
               <VAvatar

@@ -44,7 +44,11 @@ useHead({
         <VLoaderDocumentation />
 
         <div class="mb-4">
-          <VButton color="primary" elevated @click="toggleLoaders">
+          <VButton
+            color="primary"
+            elevated
+            @click="toggleLoaders"
+          >
             <span v-if="!isLoaderActive">Show Loaders</span>
             <span v-else>Hide Loaders</span>
           </VButton>
@@ -52,7 +56,11 @@ useHead({
 
         <div class="columns is-multiline">
           <div class="column is-4">
-            <VLoader size="small" :active="isLoaderActive" grey>
+            <VLoader
+              size="small"
+              :active="isLoaderActive"
+              grey
+            >
               <VCardAction
                 avatar="/demo/avatars/19.jpg"
                 badge="/images/icons/flags/germany.svg"
@@ -68,7 +76,11 @@ useHead({
             </VLoader>
           </div>
           <div class="column is-4">
-            <VLoader card="regular" size="small" :active="isLoaderActive">
+            <VLoader
+              card="regular"
+              size="small"
+              :active="isLoaderActive"
+            >
               <VCardAction
                 avatar="/demo/avatars/19.jpg"
                 badge="/images/icons/flags/germany.svg"
@@ -84,7 +96,12 @@ useHead({
             </VLoader>
           </div>
           <div class="column is-4">
-            <VLoader card="regular" size="small" :active="isLoaderActive" translucent>
+            <VLoader
+              card="regular"
+              size="small"
+              :active="isLoaderActive"
+              translucent
+            >
               <VCardAction
                 avatar="/demo/avatars/19.jpg"
                 badge="/images/icons/flags/germany.svg"
@@ -100,7 +117,10 @@ useHead({
             </VLoader>
           </div>
           <div class="column is-4">
-            <VLoader card="smooth" :active="isLoaderActive">
+            <VLoader
+              card="smooth"
+              :active="isLoaderActive"
+            >
               <VCardAction
                 avatar="/demo/avatars/19.jpg"
                 badge="/images/icons/flags/germany.svg"
@@ -117,7 +137,11 @@ useHead({
             </VLoader>
           </div>
           <div class="column is-4">
-            <VLoader card="rounded" size="large" :active="isLoaderActive">
+            <VLoader
+              card="rounded"
+              size="large"
+              :active="isLoaderActive"
+            >
               <VCardAction
                 avatar="/demo/avatars/19.jpg"
                 badge="/images/icons/flags/germany.svg"
@@ -134,7 +158,11 @@ useHead({
             </VLoader>
           </div>
           <div class="column is-4">
-            <VLoader card="rounded" size="xl" :active="isLoaderActive">
+            <VLoader
+              card="rounded"
+              size="xl"
+              :active="isLoaderActive"
+            >
               <VCardAction
                 avatar="/demo/avatars/19.jpg"
                 badge="/images/icons/flags/germany.svg"

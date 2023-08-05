@@ -35,7 +35,7 @@ const props = withDefaults(defineProps<VIconProps>(), {
       props.bordered && 'is-bordered',
     ]"
   >
-    <slot></slot>
+    <slot />
   </div>
 </template>
 

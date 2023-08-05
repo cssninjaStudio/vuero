@@ -11,7 +11,12 @@ watch([() => route.fullPath, dropdownElement], () => {
 </script>
 
 <template>
-  <VDropdown ref="dropdownElement" class="has-mega-dropdown" modern spaced>
+  <VDropdown
+    ref="dropdownElement"
+    class="has-mega-dropdown"
+    modern
+    spaced
+  >
     <template #button="{ toggle }">
       <div
         class="dropdown-trigger is-trigger"
@@ -31,7 +36,10 @@ watch([() => route.fullPath, dropdownElement], () => {
     </template>
 
     <template #content>
-      <div class="category-selector" :class="[selectedCategory !== '' && 'is-hidden']">
+      <div
+        class="category-selector"
+        :class="[selectedCategory !== '' && 'is-hidden']"
+      >
         <div class="title-wrap">
           <h4>Select a category</h4>
         </div>
@@ -43,7 +51,10 @@ watch([() => route.fullPath, dropdownElement], () => {
             @keydown.space.prevent="selectedCategory = 'base'"
             @click="selectedCategory = 'base'"
           >
-            <i aria-hidden="true" class="lnil lnil-layout"></i>
+            <i
+              aria-hidden="true"
+              class="lnil lnil-layout"
+            />
             <span>Dashboards</span>
           </div>
           <div
@@ -53,7 +64,10 @@ watch([() => route.fullPath, dropdownElement], () => {
             @keydown.space.prevent="selectedCategory = 'extras'"
             @click="selectedCategory = 'extras'"
           >
-            <i aria-hidden="true" class="lnil lnil-grid-alt"></i>
+            <i
+              aria-hidden="true"
+              class="lnil lnil-grid-alt"
+            />
             <span>Templates</span>
           </div>
 
@@ -61,19 +75,29 @@ watch([() => route.fullPath, dropdownElement], () => {
             class="placeholder-image light-image"
             src="/@src/assets/illustrations/components/plugins.svg"
             alt=""
-          />
+          >
           <img
             class="placeholder-image dark-image"
             src="/@src/assets/illustrations/components/plugins-dark.svg"
             alt=""
-          />
+          >
         </div>
       </div>
 
-      <div class="content-wrap" :class="[selectedCategory === '' && 'is-hidden']">
-        <button class="button is-circle back-button" @click="selectedCategory = ''">
+      <div
+        class="content-wrap"
+        :class="[selectedCategory === '' && 'is-hidden']"
+      >
+        <button
+          class="button is-circle back-button"
+          @click="selectedCategory = ''"
+        >
           <span class="icon is-small">
-            <i aria-hidden="true" class="iconify" data-icon="feather:arrow-left"></i>
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:arrow-left"
+            />
           </span>
         </button>
 
@@ -86,14 +110,27 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div class="column is-4">
             <div class="dropdown-item-group">
               <h4 class="column-heading is-info">
-                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                />
                 <span>All Dashboards</span>
               </h4>
 
-              <div class="column-content" data-simplebar>
-                <RouterLink to="/navbar/dashboards" class="dropdown-item is-media">
+              <div
+                class="column-content"
+                data-simplebar
+              >
+                <RouterLink
+                  to="/navbar/dashboards"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-analytics-alt-1"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-analytics-alt-1"
+                    />
                   </div>
                   <div class="meta">
                     <span>Personal V1</span>
@@ -104,7 +141,10 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-pie-chart"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-pie-chart"
+                    />
                   </div>
                   <div class="meta">
                     <span>Personal V2</span>
@@ -115,7 +155,10 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-stats-up"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-stats-up"
+                    />
                   </div>
                   <div class="meta">
                     <span>Personal V3</span>
@@ -126,7 +169,10 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-cardiology"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-cardiology"
+                    />
                   </div>
                   <div class="meta">
                     <span>Influencer</span>
@@ -137,39 +183,66 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-apartment"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-apartment"
+                    />
                   </div>
                   <div class="meta">
                     <span>Hobbies</span>
                   </div>
                 </RouterLink>
-                <RouterLink to="/navbar/dashboards/health" class="dropdown-item is-media">
+                <RouterLink
+                  to="/navbar/dashboards/health"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-hospital-alt-3"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-hospital-alt-3"
+                    />
                   </div>
                   <div class="meta">
                     <span>Health</span>
                   </div>
                 </RouterLink>
-                <RouterLink to="/navbar/dashboards/writer" class="dropdown-item is-media">
+                <RouterLink
+                  to="/navbar/dashboards/writer"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-books"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-books"
+                    />
                   </div>
                   <div class="meta">
                     <span>Writer</span>
                   </div>
                 </RouterLink>
-                <RouterLink to="/navbar/dashboards/video" class="dropdown-item is-media">
+                <RouterLink
+                  to="/navbar/dashboards/video"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-video-alt-1"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-video-alt-1"
+                    />
                   </div>
                   <div class="meta">
                     <span>Video</span>
                   </div>
                 </RouterLink>
-                <RouterLink to="/navbar/dashboards/soccer" class="dropdown-item is-media">
+                <RouterLink
+                  to="/navbar/dashboards/soccer"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-tshirt"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-tshirt"
+                    />
                   </div>
                   <div class="meta">
                     <span>Soccer</span>
@@ -186,33 +259,51 @@ watch([() => route.fullPath, dropdownElement], () => {
                   aria-hidden="true"
                   class="iconify is-vhidden"
                   data-icon="feather:circle"
-                ></i>
+                />
                 <span class="is-vhidden">All Dashboards</span>
               </h4>
 
-              <div class="column-content" data-simplebar>
+              <div
+                class="column-content"
+                data-simplebar
+              >
                 <RouterLink
                   to="/navbar/dashboards/analytics"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-analytics-alt-1"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-analytics-alt-1"
+                    />
                   </div>
                   <div class="meta">
                     <span>Analytics</span>
                   </div>
                 </RouterLink>
-                <RouterLink to="/navbar/dashboards/stocks" class="dropdown-item is-media">
+                <RouterLink
+                  to="/navbar/dashboards/stocks"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-stats-up"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-stats-up"
+                    />
                   </div>
                   <div class="meta">
                     <span>Stocks</span>
                   </div>
                 </RouterLink>
-                <RouterLink to="/navbar/dashboards/sales" class="dropdown-item is-media">
+                <RouterLink
+                  to="/navbar/dashboards/sales"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-credit-card"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-credit-card"
+                    />
                   </div>
                   <div class="meta">
                     <span>Sales</span>
@@ -223,7 +314,10 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-bank"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-bank"
+                    />
                   </div>
                   <div class="meta">
                     <span>Banking V1</span>
@@ -234,7 +328,10 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-bank"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-bank"
+                    />
                   </div>
                   <div class="meta">
                     <span>Banking V2</span>
@@ -245,7 +342,10 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-bank"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-bank"
+                    />
                   </div>
                   <div class="meta">
                     <span>Banking V3</span>
@@ -256,7 +356,10 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-plane-alt"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-plane-alt"
+                    />
                   </div>
                   <div class="meta">
                     <span>Flights Booking</span>
@@ -267,7 +370,10 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-apartment"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-apartment"
+                    />
                   </div>
                   <div class="meta">
                     <span>Company Board</span>
@@ -278,23 +384,38 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-users-alt"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-users-alt"
+                    />
                   </div>
                   <div class="meta">
                     <span>HR Board</span>
                   </div>
                 </RouterLink>
-                <RouterLink to="/navbar/dashboards/course" class="dropdown-item is-media">
+                <RouterLink
+                  to="/navbar/dashboards/course"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-graduate"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-graduate"
+                    />
                   </div>
                   <div class="meta">
                     <span>Course Board</span>
                   </div>
                 </RouterLink>
-                <RouterLink to="/navbar/dashboards/jobs" class="dropdown-item is-media">
+                <RouterLink
+                  to="/navbar/dashboards/jobs"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-briefcase"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-briefcase"
+                    />
                   </div>
                   <div class="meta">
                     <span>Jobs Board</span>
@@ -311,17 +432,23 @@ watch([() => route.fullPath, dropdownElement], () => {
                   aria-hidden="true"
                   class="iconify is-vhidden"
                   data-icon="feather:circle"
-                ></i>
+                />
                 <span class="is-vhidden">All Dashboards</span>
               </h4>
 
-              <div class="column-content" data-simplebar>
+              <div
+                class="column-content"
+                data-simplebar
+              >
                 <RouterLink
                   to="/navbar/dashboards/ecommerce-1"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-cart"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-cart"
+                    />
                   </div>
                   <div class="meta">
                     <span>Ecommerce V1</span>
@@ -332,49 +459,94 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-pizza"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-pizza"
+                    />
                   </div>
                   <div class="meta">
                     <span>Food delivery</span>
                   </div>
                 </RouterLink>
-                <RouterLink to="navbar-maps-1" class="dropdown-item is-media">
+                <RouterLink
+                  to="navbar-maps-1"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-map"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-map"
+                    />
                   </div>
                   <div class="meta">
                     <span>Maps V1</span>
-                    <VTag label="v1.2" color="primary" outlined curved class="ml-3" />
+                    <VTag
+                      label="v1.2"
+                      color="primary"
+                      outlined
+                      curved
+                      class="ml-3"
+                    />
                   </div>
                 </RouterLink>
-                <RouterLink to="navbar-maps-2" class="dropdown-item is-media">
+                <RouterLink
+                  to="navbar-maps-2"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-map"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-map"
+                    />
                   </div>
                   <div class="meta">
                     <span>Maps V2</span>
-                    <VTag label="v1.2" color="primary" outlined curved class="ml-3" />
+                    <VTag
+                      label="v1.2"
+                      color="primary"
+                      outlined
+                      curved
+                      class="ml-3"
+                    />
                   </div>
                 </RouterLink>
-                <RouterLink to="/inbox" class="dropdown-item is-media">
+                <RouterLink
+                  to="/inbox"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-envelope"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-envelope"
+                    />
                   </div>
                   <div class="meta">
                     <span>Inbox</span>
                   </div>
                 </RouterLink>
-                <RouterLink to="/messaging-v1" class="dropdown-item is-media">
+                <RouterLink
+                  to="/messaging-v1"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-bubble"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-bubble"
+                    />
                   </div>
                   <div class="meta">
                     <span>Messaging V1</span>
                   </div>
                 </RouterLink>
-                <RouterLink to="/messaging-v2" class="dropdown-item is-media">
+                <RouterLink
+                  to="/messaging-v2"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-bubble"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-bubble"
+                    />
                   </div>
                   <div class="meta">
                     <span>Messaging V2</span>
@@ -394,17 +566,27 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div class="column is-4">
             <div class="dropdown-item-group">
               <h4 class="column-heading is-purple">
-                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                />
                 <span>Navigation</span>
               </h4>
 
-              <div class="column-content" data-simplebar="">
+              <div
+                class="column-content"
+                data-simplebar=""
+              >
                 <RouterLink
                   to="/starters/sidebar-blank-page-1"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-layout"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-layout"
+                    />
                   </div>
                   <div class="meta">
                     <span>Regular Sidebar</span>
@@ -415,7 +597,10 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-layout"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-layout"
+                    />
                   </div>
                   <div class="meta">
                     <span>Curved Sidebar</span>
@@ -426,7 +611,10 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-layout"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-layout"
+                    />
                   </div>
                   <div class="meta">
                     <span>Colored Sidebar</span>
@@ -437,7 +625,10 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-layout"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-layout"
+                    />
                   </div>
                   <div class="meta">
                     <span>Curved Colored</span>
@@ -448,7 +639,10 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-layout"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-layout"
+                    />
                   </div>
                   <div class="meta">
                     <span>Labels Sidebar</span>
@@ -459,7 +653,10 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-layout"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-layout"
+                    />
                   </div>
                   <div class="meta">
                     <span>Labels Hover</span>
@@ -470,19 +667,25 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-layout"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-layout"
+                    />
                   </div>
                   <div class="meta">
                     <span>Float Sidebar</span>
                   </div>
                 </RouterLink>
-                <hr class="dropdown-divider" />
+                <hr class="dropdown-divider">
                 <RouterLink
                   to="/starters/navbar-blank-page-1"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-layout-alt-1"
+                    />
                   </div>
                   <div class="meta">
                     <span>Regular Navbar</span>
@@ -493,7 +696,10 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-layout-alt-1"
+                    />
                   </div>
                   <div class="meta">
                     <span>Fading Navbar</span>
@@ -504,7 +710,10 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-layout-alt-1"
+                    />
                   </div>
                   <div class="meta">
                     <span>Colored Navbar</span>
@@ -515,7 +724,10 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-layout-alt-1"
+                    />
                   </div>
                   <div class="meta">
                     <span>Drop Navbar</span>
@@ -526,7 +738,10 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-layout-alt-1"
+                    />
                   </div>
                   <div class="meta">
                     <span>Colored Drop</span>
@@ -537,7 +752,10 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-layout-alt-1"
+                    />
                   </div>
                   <div class="meta">
                     <span>Clean Navbar</span>
@@ -548,7 +766,10 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-layout-alt-1"
+                    />
                   </div>
                   <div class="meta">
                     <span>Clean Center</span>
@@ -559,7 +780,10 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-layout-alt-1"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-layout-alt-1"
+                    />
                   </div>
                   <div class="meta">
                     <span>Clean Fade</span>
@@ -573,17 +797,27 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div class="column is-4">
             <div class="dropdown-item-group">
               <h4 class="column-heading is-secondary">
-                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                />
                 <span>Widgets</span>
               </h4>
 
-              <div class="column-content" data-simplebar="">
+              <div
+                class="column-content"
+                data-simplebar=""
+              >
                 <RouterLink
                   to="/navbar/dashboards/charts-apex"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-pie-chart-alt"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-pie-chart-alt"
+                    />
                   </div>
                   <div class="meta">
                     <span>Apex Charts</span>
@@ -594,7 +828,10 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-bar-chart"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-bar-chart"
+                    />
                   </div>
                   <div class="meta">
                     <span>Billboard JS</span>
@@ -605,7 +842,10 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-select"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-select"
+                    />
                   </div>
                   <div class="meta">
                     <span>UI Widgets</span>
@@ -616,7 +856,10 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-layers-alt-1"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-layers-alt-1"
+                    />
                   </div>
                   <div class="meta">
                     <span>Fancy Widgets</span>
@@ -627,7 +870,10 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-select"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-select"
+                    />
                   </div>
                   <div class="meta">
                     <span>List Widgets</span>
@@ -638,7 +884,10 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-select"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-select"
+                    />
                   </div>
                   <div class="meta">
                     <span>Stat Widgets</span>
@@ -652,14 +901,24 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div class="column is-4">
             <div class="dropdown-item-group">
               <h4 class="column-heading is-success">
-                <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:circle"
+                />
                 <span>Forms</span>
               </h4>
 
               <div class="column-content">
-                <RouterLink to="/wizard-v1" class="dropdown-item is-media">
+                <RouterLink
+                  to="/wizard-v1"
+                  class="dropdown-item is-media"
+                >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-timer"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-timer"
+                    />
                   </div>
                   <div class="meta">
                     <span>Wizard V1</span>
@@ -670,7 +929,10 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-licencse"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-licencse"
+                    />
                   </div>
                   <div class="meta">
                     <span>Layout V1</span>
@@ -681,7 +943,10 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-licencse"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-licencse"
+                    />
                   </div>
                   <div class="meta">
                     <span>Layout V2</span>
@@ -692,7 +957,10 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-licencse"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-licencse"
+                    />
                   </div>
                   <div class="meta">
                     <span>Layout V3</span>
@@ -703,7 +971,10 @@ watch([() => route.fullPath, dropdownElement], () => {
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
-                    <i aria-hidden="true" class="lnil lnil-licencse"></i>
+                    <i
+                      aria-hidden="true"
+                      class="lnil lnil-licencse"
+                    />
                   </div>
                   <div class="meta">
                     <span>Layout V4</span>

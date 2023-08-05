@@ -46,17 +46,29 @@ useHead({
         <!--Table-->
         <TableBaseDocumentation />
 
-        <VCard radius="smooth" class="demo-table mb-6">
+        <VCard
+          radius="smooth"
+          class="demo-table mb-6"
+        >
           <table
             class="table is-hoverable is-fullwidth"
             aria-label="Vuero basic table example"
           >
             <thead>
               <tr>
-                <th scope="col">First Name</th>
-                <th scope="col">Last Name</th>
-                <th scope="col">Position</th>
-                <th scope="col" class="is-end">
+                <th scope="col">
+                  First Name
+                </th>
+                <th scope="col">
+                  Last Name
+                </th>
+                <th scope="col">
+                  Position
+                </th>
+                <th
+                  scope="col"
+                  class="is-end"
+                >
                   <div class="dark-inverted is-flex is-justify-content-flex-end">
                     Actions
                   </div>
@@ -121,17 +133,29 @@ useHead({
         <!--Table striped-->
         <TableStripedDocumentation />
 
-        <VCard radius="smooth" class="demo-table">
+        <VCard
+          radius="smooth"
+          class="demo-table"
+        >
           <table
             class="table is-striped is-fullwidth"
             aria-label="Vuero striped table example"
           >
             <thead>
               <tr>
-                <th scope="col">First Name</th>
-                <th scope="col">Last Name</th>
-                <th scope="col">Position</th>
-                <th scope="col" class="is-end">
+                <th scope="col">
+                  First Name
+                </th>
+                <th scope="col">
+                  Last Name
+                </th>
+                <th scope="col">
+                  Position
+                </th>
+                <th
+                  scope="col"
+                  class="is-end"
+                >
                   <div class="dark-inverted is-flex is-justify-content-flex-end">
                     Actions
                   </div>
@@ -196,18 +220,33 @@ useHead({
         <!--Table media-->
         <TableMediaDocumentation />
 
-        <VCard radius="smooth" class="demo-table">
+        <VCard
+          radius="smooth"
+          class="demo-table"
+        >
           <table
             class="table is-hoverable is-fullwidth"
             aria-label="Vuero media table example"
           >
             <thead>
               <tr>
-                <th scope="col" class="is-media"></th>
-                <th scope="col">First Name</th>
-                <th scope="col">Last Name</th>
-                <th scope="col">Position</th>
-                <th scope="col" class="is-end">
+                <th
+                  scope="col"
+                  class="is-media"
+                />
+                <th scope="col">
+                  First Name
+                </th>
+                <th scope="col">
+                  Last Name
+                </th>
+                <th scope="col">
+                  Position
+                </th>
+                <th
+                  scope="col"
+                  class="is-end"
+                >
                   <div class="dark-inverted is-flex is-justify-content-flex-end">
                     Actions
                   </div>
@@ -256,7 +295,10 @@ useHead({
               </tr>
               <tr>
                 <td class="is-media">
-                  <VAvatar initials="JD" color="info" />
+                  <VAvatar
+                    initials="JD"
+                    color="info"
+                  />
                 </td>
                 <td>Jolaine</td>
                 <td>Joestar</td>
@@ -284,7 +326,10 @@ useHead({
           </table>
         </VCard>
       </div>
-      <div v-if="toc.length" class="column is-3 toc-column">
+      <div
+        v-if="toc.length"
+        class="column is-3 toc-column"
+      >
         <DocumentationToc :toc="toc" />
       </div>
     </div>

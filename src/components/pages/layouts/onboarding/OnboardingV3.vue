@@ -13,19 +13,24 @@
             class="light-image"
             src="/@src/assets/illustrations/onboarding/set4-1.svg"
             alt=""
-          />
+          >
           <img
             class="dark-image"
             src="/@src/assets/illustrations/onboarding/set4-1-dark.svg"
             alt=""
-          />
+          >
           <h3>Explore Workboard</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Recte dicis; Ita enim
             vivunt quidam, ut eorum vita refellatur oratio. Sed tament.
           </p>
           <div class="button-wrap">
-            <VButton color="primary" elevated> Explore </VButton>
+            <VButton
+              color="primary"
+              elevated
+            >
+              Explore
+            </VButton>
           </div>
         </div>
         <!--Card-->
@@ -34,19 +39,24 @@
             class="light-image"
             src="/@src/assets/illustrations/onboarding/set4-2.svg"
             alt=""
-          />
+          >
           <img
             class="dark-image"
             src="/@src/assets/illustrations/onboarding/set4-2-dark.svg"
             alt=""
-          />
+          >
           <h3>Add some Tasks</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Recte dicis; Ita enim
             vivunt quidam, ut eorum vita refellatur oratio. Sed tament.
           </p>
           <div class="button-wrap">
-            <VButton color="primary" elevated> Add Tasks </VButton>
+            <VButton
+              color="primary"
+              elevated
+            >
+              Add Tasks
+            </VButton>
           </div>
         </div>
         <!--Card-->
@@ -55,19 +65,24 @@
             class="light-image"
             src="/@src/assets/illustrations/onboarding/set4-3.svg"
             alt=""
-          />
+          >
           <img
             class="dark-image"
             src="/@src/assets/illustrations/onboarding/set4-3-dark.svg"
             alt=""
-          />
+          >
           <h3>Browse Wiki</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Recte dicis; Ita enim
             vivunt quidam, ut eorum vita refellatur oratio. Sed tament.
           </p>
           <div class="button-wrap">
-            <VButton color="primary" elevated> Browse </VButton>
+            <VButton
+              color="primary"
+              elevated
+            >
+              Browse
+            </VButton>
           </div>
         </div>
       </div>

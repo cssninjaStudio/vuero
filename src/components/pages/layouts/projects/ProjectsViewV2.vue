@@ -5,28 +5,40 @@
     <div class="all-projects-header">
       <div class="header-item">
         <div class="item-inner">
-          <i aria-hidden="true" class="lnil lnil-analytics-alt-1"></i>
+          <i
+            aria-hidden="true"
+            class="lnil lnil-analytics-alt-1"
+          />
           <span>147</span>
           <p>Published projects</p>
         </div>
       </div>
       <div class="header-item">
         <div class="item-inner">
-          <i aria-hidden="true" class="lnil lnil-target-alt-1"></i>
+          <i
+            aria-hidden="true"
+            class="lnil lnil-target-alt-1"
+          />
           <span>1638</span>
           <p>Completed Tasks</p>
         </div>
       </div>
       <div class="header-item">
         <div class="item-inner">
-          <i aria-hidden="true" class="lnil lnil-pie-chart-alt"></i>
+          <i
+            aria-hidden="true"
+            class="lnil lnil-pie-chart-alt"
+          />
           <span>88%</span>
           <p>Team Performance</p>
         </div>
       </div>
       <div class="header-item">
         <div class="item-inner">
-          <i aria-hidden="true" class="lnil lnil-leaf"></i>
+          <i
+            aria-hidden="true"
+            class="lnil lnil-leaf"
+          />
           <span>17</span>
           <p>Team Members</p>
         </div>
@@ -54,23 +66,43 @@
           </div>
           <div class="bottom-section">
             <div class="foot-block">
-              <h4 class="heading">Developers</h4>
+              <h4 class="heading">
+                Developers
+              </h4>
               <div class="developers">
-                <VAvatar size="small" color="primary" initials="FE" />
-                <VAvatar size="small" color="success" initials="SD" />
-                <VAvatar size="small" color="info" initials="NJ" />
+                <VAvatar
+                  size="small"
+                  color="primary"
+                  initials="FE"
+                />
+                <VAvatar
+                  size="small"
+                  color="success"
+                  initials="SD"
+                />
+                <VAvatar
+                  size="small"
+                  color="info"
+                  initials="NJ"
+                />
               </div>
             </div>
             <div class="foot-block">
-              <h4 class="heading">Deadline</h4>
+              <h4 class="heading">
+                Deadline
+              </h4>
               <p>Aug 7 2020</p>
             </div>
             <div class="foot-block">
-              <h4 class="heading">Budget</h4>
+              <h4 class="heading">
+                Budget
+              </h4>
               <p>$15,000</p>
             </div>
             <div class="foot-block">
-              <h4 class="heading">Status</h4>
+              <h4 class="heading">
+                Status
+              </h4>
               <p>In Progress</p>
             </div>
           </div>
@@ -95,23 +127,41 @@
           </div>
           <div class="bottom-section">
             <div class="foot-block">
-              <h4 class="heading">Developers</h4>
+              <h4 class="heading">
+                Developers
+              </h4>
               <div class="developers">
-                <VAvatar size="small" picture="/demo/avatars/7.jpg" />
-                <VAvatar size="small" picture="/images/avatars/svg/vuero-1.svg" />
-                <VAvatar size="small" color="danger" initials="DC" />
+                <VAvatar
+                  size="small"
+                  picture="/demo/avatars/7.jpg"
+                />
+                <VAvatar
+                  size="small"
+                  picture="/images/avatars/svg/vuero-1.svg"
+                />
+                <VAvatar
+                  size="small"
+                  color="danger"
+                  initials="DC"
+                />
               </div>
             </div>
             <div class="foot-block">
-              <h4 class="heading">Deadline</h4>
+              <h4 class="heading">
+                Deadline
+              </h4>
               <p>Aug 7 2020</p>
             </div>
             <div class="foot-block">
-              <h4 class="heading">Budget</h4>
+              <h4 class="heading">
+                Budget
+              </h4>
               <p>$15,000</p>
             </div>
             <div class="foot-block">
-              <h4 class="heading">Status</h4>
+              <h4 class="heading">
+                Status
+              </h4>
               <p>In Progress</p>
             </div>
           </div>
@@ -137,21 +187,32 @@
           </div>
           <div class="bottom-section">
             <div class="foot-block">
-              <h4 class="heading">Developers</h4>
+              <h4 class="heading">
+                Developers
+              </h4>
               <div class="developers">
-                <VAvatar size="small" picture="/demo/avatars/25.jpg" />
+                <VAvatar
+                  size="small"
+                  picture="/demo/avatars/25.jpg"
+                />
               </div>
             </div>
             <div class="foot-block">
-              <h4 class="heading">Deadline</h4>
+              <h4 class="heading">
+                Deadline
+              </h4>
               <p>Aug 7 2020</p>
             </div>
             <div class="foot-block">
-              <h4 class="heading">Budget</h4>
+              <h4 class="heading">
+                Budget
+              </h4>
               <p>$15,000</p>
             </div>
             <div class="foot-block">
-              <h4 class="heading">Status</h4>
+              <h4 class="heading">
+                Status
+              </h4>
               <p>In Progress</p>
             </div>
           </div>
@@ -176,22 +237,36 @@
           </div>
           <div class="bottom-section">
             <div class="foot-block">
-              <h4 class="heading">Developers</h4>
+              <h4 class="heading">
+                Developers
+              </h4>
               <div class="developers">
-                <VAvatar size="small" picture="/demo/avatars/7.jpg" />
-                <VAvatar size="small" picture="/demo/avatars/23.jpg" />
+                <VAvatar
+                  size="small"
+                  picture="/demo/avatars/7.jpg"
+                />
+                <VAvatar
+                  size="small"
+                  picture="/demo/avatars/23.jpg"
+                />
               </div>
             </div>
             <div class="foot-block">
-              <h4 class="heading">Deadline</h4>
+              <h4 class="heading">
+                Deadline
+              </h4>
               <p>Aug 7 2020</p>
             </div>
             <div class="foot-block">
-              <h4 class="heading">Budget</h4>
+              <h4 class="heading">
+                Budget
+              </h4>
               <p>$15,000</p>
             </div>
             <div class="foot-block">
-              <h4 class="heading">Status</h4>
+              <h4 class="heading">
+                Status
+              </h4>
               <p>In Progress</p>
             </div>
           </div>
@@ -218,22 +293,37 @@
           </div>
           <div class="bottom-section">
             <div class="foot-block">
-              <h4 class="heading">Developers</h4>
+              <h4 class="heading">
+                Developers
+              </h4>
               <div class="developers">
-                <VAvatar size="small" picture="/demo/avatars/11.jpg" />
-                <VAvatar size="small" color="h-orange" initials="AG" />
+                <VAvatar
+                  size="small"
+                  picture="/demo/avatars/11.jpg"
+                />
+                <VAvatar
+                  size="small"
+                  color="h-orange"
+                  initials="AG"
+                />
               </div>
             </div>
             <div class="foot-block">
-              <h4 class="heading">Deadline</h4>
+              <h4 class="heading">
+                Deadline
+              </h4>
               <p>Aug 7 2020</p>
             </div>
             <div class="foot-block">
-              <h4 class="heading">Budget</h4>
+              <h4 class="heading">
+                Budget
+              </h4>
               <p>$15,000</p>
             </div>
             <div class="foot-block">
-              <h4 class="heading">Status</h4>
+              <h4 class="heading">
+                Status
+              </h4>
               <p>In Progress</p>
             </div>
           </div>
@@ -259,21 +349,32 @@
           </div>
           <div class="bottom-section">
             <div class="foot-block">
-              <h4 class="heading">Developers</h4>
+              <h4 class="heading">
+                Developers
+              </h4>
               <div class="developers">
-                <VAvatar size="small" picture="/demo/avatars/12.jpg" />
+                <VAvatar
+                  size="small"
+                  picture="/demo/avatars/12.jpg"
+                />
               </div>
             </div>
             <div class="foot-block">
-              <h4 class="heading">Deadline</h4>
+              <h4 class="heading">
+                Deadline
+              </h4>
               <p>Aug 7 2020</p>
             </div>
             <div class="foot-block">
-              <h4 class="heading">Budget</h4>
+              <h4 class="heading">
+                Budget
+              </h4>
               <p>$15,000</p>
             </div>
             <div class="foot-block">
-              <h4 class="heading">Status</h4>
+              <h4 class="heading">
+                Status
+              </h4>
               <p>In Progress</p>
             </div>
           </div>
@@ -298,23 +399,40 @@
           </div>
           <div class="bottom-section">
             <div class="foot-block">
-              <h4 class="heading">Developers</h4>
+              <h4 class="heading">
+                Developers
+              </h4>
               <div class="developers">
-                <VAvatar size="small" picture="/demo/avatars/24.jpg" />
-                <VAvatar size="small" picture="/demo/avatars/18.jpg" />
-                <VAvatar size="small" picture="/demo/avatars/16.jpg" />
+                <VAvatar
+                  size="small"
+                  picture="/demo/avatars/24.jpg"
+                />
+                <VAvatar
+                  size="small"
+                  picture="/demo/avatars/18.jpg"
+                />
+                <VAvatar
+                  size="small"
+                  picture="/demo/avatars/16.jpg"
+                />
               </div>
             </div>
             <div class="foot-block">
-              <h4 class="heading">Deadline</h4>
+              <h4 class="heading">
+                Deadline
+              </h4>
               <p>Aug 7 2020</p>
             </div>
             <div class="foot-block">
-              <h4 class="heading">Budget</h4>
+              <h4 class="heading">
+                Budget
+              </h4>
               <p>$15,000</p>
             </div>
             <div class="foot-block">
-              <h4 class="heading">Status</h4>
+              <h4 class="heading">
+                Status
+              </h4>
               <p>In Progress</p>
             </div>
           </div>
@@ -341,22 +459,38 @@
           </div>
           <div class="bottom-section">
             <div class="foot-block">
-              <h4 class="heading">Developers</h4>
+              <h4 class="heading">
+                Developers
+              </h4>
               <div class="developers">
-                <VAvatar size="small" color="info" initials="ET" />
-                <VAvatar size="small" color="warning" initials="BH" />
+                <VAvatar
+                  size="small"
+                  color="info"
+                  initials="ET"
+                />
+                <VAvatar
+                  size="small"
+                  color="warning"
+                  initials="BH"
+                />
               </div>
             </div>
             <div class="foot-block">
-              <h4 class="heading">Deadline</h4>
+              <h4 class="heading">
+                Deadline
+              </h4>
               <p>Aug 7 2020</p>
             </div>
             <div class="foot-block">
-              <h4 class="heading">Budget</h4>
+              <h4 class="heading">
+                Budget
+              </h4>
               <p>$15,000</p>
             </div>
             <div class="foot-block">
-              <h4 class="heading">Status</h4>
+              <h4 class="heading">
+                Status
+              </h4>
               <p>In Progress</p>
             </div>
           </div>
@@ -382,22 +516,37 @@
           </div>
           <div class="bottom-section">
             <div class="foot-block">
-              <h4 class="heading">Developers</h4>
+              <h4 class="heading">
+                Developers
+              </h4>
               <div class="developers">
-                <VAvatar size="small" picture="/demo/avatars/25.jpg" />
-                <VAvatar size="small" color="info" initials="ET" />
+                <VAvatar
+                  size="small"
+                  picture="/demo/avatars/25.jpg"
+                />
+                <VAvatar
+                  size="small"
+                  color="info"
+                  initials="ET"
+                />
               </div>
             </div>
             <div class="foot-block">
-              <h4 class="heading">Deadline</h4>
+              <h4 class="heading">
+                Deadline
+              </h4>
               <p>Aug 7 2020</p>
             </div>
             <div class="foot-block">
-              <h4 class="heading">Budget</h4>
+              <h4 class="heading">
+                Budget
+              </h4>
               <p>$15,000</p>
             </div>
             <div class="foot-block">
-              <h4 class="heading">Status</h4>
+              <h4 class="heading">
+                Status
+              </h4>
               <p>In Progress</p>
             </div>
           </div>

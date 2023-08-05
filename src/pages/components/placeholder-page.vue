@@ -54,17 +54,19 @@ useHead({
               class="light-image"
               src="/@src/assets/illustrations/placeholders/search-1.svg"
               alt=""
-            />
+            >
             <img
               class="dark-image"
               src="/@src/assets/illustrations/placeholders/search-1-dark.svg"
               alt=""
-            />
+            >
           </template>
           <template #action>
             <VButtons align="centered">
               <VButton>Go to the catalog</VButton>
-              <VButton color="primary">Search everywhere</VButton>
+              <VButton color="primary">
+                Search everywhere
+              </VButton>
             </VButtons>
           </template>
         </VPlaceholderPage>
@@ -75,7 +77,10 @@ useHead({
           <VPlaceholderPageSlotsDocumentation />
         </div>
       </div>
-      <div v-if="toc.length" class="column is-3 toc-column">
+      <div
+        v-if="toc.length"
+        class="column is-3 toc-column"
+      >
         <DocumentationToc :toc="toc" />
       </div>
     </div>

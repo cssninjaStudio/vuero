@@ -29,13 +29,15 @@ const confirm = async () => {
               class="light-image"
               src="/@src/assets/illustrations/placeholders/launch.svg"
               alt=""
-            />
+            >
             <img
               class="dark-image"
               src="/@src/assets/illustrations/placeholders/launch-dark.svg"
               alt=""
-            />
-            <h3 class="dark-inverted">Please confirm your account</h3>
+            >
+            <h3 class="dark-inverted">
+              Please confirm your account
+            </h3>
             <p>
               Hey Erik, It would be really cool if you could give us a hand on this
               project. There are a lot of tasks popping out every day and I feel the team

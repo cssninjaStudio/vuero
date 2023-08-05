@@ -105,5 +105,5 @@ watchPostEffect(() => {
     class="peity"
     :height="svgHeight"
     :width="svgWidth"
-  ></svg>
+  />
 </template>

@@ -73,7 +73,7 @@ const filteredData = computed(() => {
           v-model="filters"
           class="input custom-text-filter"
           placeholder="Search..."
-        />
+        >
       </VControl>
 
       <div class="tabs-inner">
@@ -85,8 +85,7 @@ const filteredData = computed(() => {
                 role="button"
                 @keydown.space.prevent="tab = 'active'"
                 @click="tab = 'active'"
-                ><span>Active</span></a
-              >
+              ><span>Active</span></a>
             </li>
             <li :class="[tab === 'closed' && 'is-active']">
               <a
@@ -94,10 +93,9 @@ const filteredData = computed(() => {
                 role="button"
                 @keydown.space.prevent="tab = 'closed'"
                 @click="tab = 'closed'"
-                ><span>Closed</span></a
-              >
+              ><span>Closed</span></a>
             </li>
-            <li class="tab-naver"></li>
+            <li class="tab-naver" />
           </ul>
         </div>
       </div>
@@ -118,17 +116,20 @@ const filteredData = computed(() => {
             class="light-image"
             src="/@src/assets/illustrations/placeholders/search-4.svg"
             alt=""
-          />
+          >
           <img
             class="dark-image"
             src="/@src/assets/illustrations/placeholders/search-4-dark.svg"
             alt=""
-          />
+          >
         </template>
       </VPlaceholderPage>
 
       <!--Active Tab-->
-      <div v-if="tab === 'active'" class="tab-content is-active">
+      <div
+        v-if="tab === 'active'"
+        class="tab-content is-active"
+      >
         <VFlexTable
           v-if="filteredData.length"
           :data="filteredData"
@@ -136,19 +137,28 @@ const filteredData = computed(() => {
           rounded
         >
           <template #body>
-            <TransitionGroup name="list" tag="div" class="flex-list-inner">
+            <TransitionGroup
+              name="list"
+              tag="div"
+              class="flex-list-inner"
+            >
               <!--Table item-->
-              <div v-for="item in filteredData" :key="item.id" class="flex-table-item">
+              <div
+                v-for="item in filteredData"
+                :key="item.id"
+                class="flex-table-item"
+              >
                 <VFlexTableCell :column="{ media: true, grow: true }">
                   <VAvatar :picture="item.picture" />
                   <div>
                     <span class="item-name dark-inverted">{{ item.name }}</span>
                     <span class="item-meta">
                       <span>
-                        <i aria-hidden="true" class="iconify" data-icon="feather:clock">
-                        </i
-                        >{{ item.duration }}</span
-                      >
+                        <i
+                          aria-hidden="true"
+                          class="iconify"
+                          data-icon="feather:clock"
+                        />{{ item.duration }}</span>
                     </span>
                   </div>
                 </VFlexTableCell>
@@ -159,7 +169,9 @@ const filteredData = computed(() => {
                   <span class="light-text">{{ item.industry }}</span>
                 </VFlexTableCell>
                 <VFlexTableCell>
-                  <VTag rounded>{{ item.status }}</VTag>
+                  <VTag rounded>
+                    {{ item.status }}
+                  </VTag>
                 </VFlexTableCell>
                 <VFlexTableCell class="h-hidden-tablet-p">
                   <VAvatarStack
@@ -188,7 +200,10 @@ const filteredData = computed(() => {
       </div>
 
       <!--inactive Tab-->
-      <div v-else-if="tab === 'closed'" class="tab-content is-active">
+      <div
+        v-else-if="tab === 'closed'"
+        class="tab-content is-active"
+      >
         <!--Empty placeholder-->
         <VPlaceholderPage
           title="No closed projects."
@@ -200,12 +215,12 @@ const filteredData = computed(() => {
               class="light-image is-larger"
               src="/@src/assets/illustrations/placeholders/projects.svg"
               alt=""
-            />
+            >
             <img
               class="dark-image is-larger"
               src="/@src/assets/illustrations/placeholders/projects-dark.svg"
               alt=""
-            />
+            >
           </template>
         </VPlaceholderPage>
       </div>

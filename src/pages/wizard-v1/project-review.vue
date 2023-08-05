@@ -49,14 +49,25 @@ watchEffect(async () => {
 </script>
 
 <template>
-  <div id="wizard-step-6" class="inner-wrapper is-active" data-step-title="Preview">
+  <div
+    id="wizard-step-6"
+    class="inner-wrapper is-active"
+    data-step-title="Preview"
+  >
     <div class="step-content">
       <div class="step-title">
-        <h2 class="dark-inverted">Make sure everything is good</h2>
+        <h2 class="dark-inverted">
+          Make sure everything is good
+        </h2>
         <p>You can go back to previous steps if you need to edit anything.</p>
       </div>
 
-      <VLoader size="xl" class="project-preview-wrapper" :active="wizard.loading" grey>
+      <VLoader
+        size="xl"
+        class="project-preview-wrapper"
+        :active="wizard.loading"
+        grey
+      >
         <div class="project-preview-header">
           <VAvatar
             color="h-green"
@@ -69,8 +80,14 @@ watchEffect(async () => {
             <span v-if="wizard.data.name">{{ wizard.data.name }}</span>
             <span v-else>Project Title Goes Here</span>
 
-            <RouterLink class="edit-icon" to="/wizard-v1/project-info">
-              <i aria-hidden="true" class="lnil lnil-pencil"></i>
+            <RouterLink
+              class="edit-icon"
+              to="/wizard-v1/project-info"
+            >
+              <i
+                aria-hidden="true"
+                class="lnil lnil-pencil"
+              />
             </RouterLink>
           </h3>
         </div>
@@ -81,8 +98,14 @@ watchEffect(async () => {
               <div class="edit-box">
                 <h4>Description</h4>
 
-                <RouterLink class="edit-icon" to="/wizard-v1/project-info">
-                  <i aria-hidden="true" class="lnil lnil-pencil"></i>
+                <RouterLink
+                  class="edit-icon"
+                  to="/wizard-v1/project-info"
+                >
+                  <i
+                    aria-hidden="true"
+                    class="lnil lnil-pencil"
+                  />
                 </RouterLink>
 
                 <p v-if="wizard.data.description">
@@ -97,13 +120,30 @@ watchEffect(async () => {
             </div>
             <div class="column is-6 is-tablet-50">
               <div class="edit-box">
-                <RouterLink class="edit-icon" to="/wizard-v1">
-                  <i aria-hidden="true" class="lnil lnil-pencil"></i>
+                <RouterLink
+                  class="edit-icon"
+                  to="/wizard-v1"
+                >
+                  <i
+                    aria-hidden="true"
+                    class="lnil lnil-pencil"
+                  />
                 </RouterLink>
-                <VBlock :title="wizard.data.relatedTo" subtitle="Project Type" center>
+                <VBlock
+                  :title="wizard.data.relatedTo"
+                  subtitle="Project Type"
+                  center
+                >
                   <template #icon>
-                    <VIconBox size="medium" color="warning" rounded>
-                      <i aria-hidden="true" class="lnil lnil-vector-pen"></i>
+                    <VIconBox
+                      size="medium"
+                      color="warning"
+                      rounded
+                    >
+                      <i
+                        aria-hidden="true"
+                        class="lnil lnil-vector-pen"
+                      />
                     </VIconBox>
                   </template>
                 </VBlock>
@@ -112,8 +152,14 @@ watchEffect(async () => {
 
             <div class="column is-6 is-tablet-50">
               <div class="edit-box">
-                <RouterLink class="edit-icon" to="/wizard-v1/project-details">
-                  <i aria-hidden="true" class="lnil lnil-pencil"></i>
+                <RouterLink
+                  class="edit-icon"
+                  to="/wizard-v1/project-details"
+                >
+                  <i
+                    aria-hidden="true"
+                    class="lnil lnil-pencil"
+                  />
                 </RouterLink>
                 <VBlock
                   v-if="wizard.data.customer"
@@ -122,10 +168,16 @@ watchEffect(async () => {
                   center
                 >
                   <template #icon>
-                    <VAvatar size="medium" :picture="wizard.data.customer.logo" />
+                    <VAvatar
+                      size="medium"
+                      :picture="wizard.data.customer.logo"
+                    />
                   </template>
                 </VBlock>
-                <div v-else class="edit-box-placeholder is-media">
+                <div
+                  v-else
+                  class="edit-box-placeholder is-media"
+                >
                   <span>No selected customer</span>
                 </div>
               </div>
@@ -133,8 +185,14 @@ watchEffect(async () => {
 
             <div class="column is-4 is-tablet-33">
               <div class="edit-box">
-                <RouterLink class="edit-icon" to="/wizard-v1/project-details">
-                  <i aria-hidden="true" class="lnil lnil-pencil"></i>
+                <RouterLink
+                  class="edit-icon"
+                  to="/wizard-v1/project-details"
+                >
+                  <i
+                    aria-hidden="true"
+                    class="lnil lnil-pencil"
+                  />
                 </RouterLink>
                 <div class="estimated-budget">
                   <div class="inner-block">
@@ -149,8 +207,14 @@ watchEffect(async () => {
 
             <div class="column is-4 is-tablet-33">
               <div class="edit-box">
-                <RouterLink class="edit-icon" to="/wizard-v1/project-details">
-                  <i aria-hidden="true" class="lnil lnil-pencil"></i>
+                <RouterLink
+                  class="edit-icon"
+                  to="/wizard-v1/project-details"
+                >
+                  <i
+                    aria-hidden="true"
+                    class="lnil lnil-pencil"
+                  />
                 </RouterLink>
                 <div class="estimated-due-date">
                   <div class="inner-block">
@@ -165,8 +229,14 @@ watchEffect(async () => {
 
             <div class="column is-4 is-tablet-33">
               <div class="edit-box">
-                <RouterLink class="edit-icon" to="/wizard-v1/project-files">
-                  <i aria-hidden="true" class="lnil lnil-pencil"></i>
+                <RouterLink
+                  class="edit-icon"
+                  to="/wizard-v1/project-files"
+                >
+                  <i
+                    aria-hidden="true"
+                    class="lnil lnil-pencil"
+                  />
                 </RouterLink>
                 <div class="attachments-count">
                   <div class="inner-block">
@@ -186,8 +256,14 @@ watchEffect(async () => {
               <div class="edit-box">
                 <h4>Team</h4>
 
-                <RouterLink class="edit-icon" to="/wizard-v1/project-team">
-                  <i aria-hidden="true" class="lnil lnil-pencil"></i>
+                <RouterLink
+                  class="edit-icon"
+                  to="/wizard-v1/project-team"
+                >
+                  <i
+                    aria-hidden="true"
+                    class="lnil lnil-pencil"
+                  />
                 </RouterLink>
 
                 <div
@@ -197,7 +273,10 @@ watchEffect(async () => {
                   <span>No selected teammate</span>
                 </div>
 
-                <div v-else class="media-list">
+                <div
+                  v-else
+                  class="media-list"
+                >
                   <div
                     v-for="teammate in wizard.data.teammates"
                     :key="teammate.name"
@@ -221,8 +300,14 @@ watchEffect(async () => {
               <div class="edit-box">
                 <h4>Tools</h4>
 
-                <RouterLink class="edit-icon" to="/wizard-v1/project-tools">
-                  <i aria-hidden="true" class="lnil lnil-pencil"></i>
+                <RouterLink
+                  class="edit-icon"
+                  to="/wizard-v1/project-tools"
+                >
+                  <i
+                    aria-hidden="true"
+                    class="lnil lnil-pencil"
+                  />
                 </RouterLink>
 
                 <div
@@ -232,13 +317,20 @@ watchEffect(async () => {
                   <span>No selected tools</span>
                 </div>
 
-                <div v-else class="media-list">
+                <div
+                  v-else
+                  class="media-list"
+                >
                   <div
                     v-for="tool in wizard.data.tools"
                     :key="tool.name"
                     class="media-list-item"
                   >
-                    <VBlock :title="tool.name" :subtitle="tool.description" center>
+                    <VBlock
+                      :title="tool.name"
+                      :subtitle="tool.description"
+                      center
+                    >
                       <template #icon>
                         <VAvatar :picture="tool.logo" />
                       </template>

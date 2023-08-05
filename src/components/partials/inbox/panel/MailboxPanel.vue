@@ -8,39 +8,59 @@ const dropdown = useDropdown(dropdownElement)
   <div class="compose-panel">
     <!-- Header -->
     <div class="header-area">
-      <h2 class="panel-title">New Message</h2>
+      <h2 class="panel-title">
+        New Message
+      </h2>
       <div
         ref="dropdownElement"
         class="dropdown inbox-dropdown dropdown-trigger is-right"
       >
         <div>
-          <button class="button" @click="dropdown.toggle">
+          <button
+            class="button"
+            @click="dropdown.toggle"
+          >
             <span class="icon is-small">
-              <i aria-hidden="true" class="material-icons"> keyboard_arrow_down</i>
+              <i
+                aria-hidden="true"
+                class="material-icons"
+              > keyboard_arrow_down</i>
             </span>
           </button>
         </div>
         <div class="dropdown-menu">
           <div class="dropdown-content">
             <a class="dropdown-item">
-              <i aria-hidden="true" class="sl sl-icon-doc"></i>
+              <i
+                aria-hidden="true"
+                class="sl sl-icon-doc"
+              />
               <span>Load template</span>
             </a>
-            <hr class="dropdown-divider" />
+            <hr class="dropdown-divider">
             <a class="dropdown-item">
-              <i aria-hidden="true" class="sl sl-icon-eyeglass"></i>
+              <i
+                aria-hidden="true"
+                class="sl sl-icon-eyeglass"
+              />
               <span>Spelling</span>
             </a>
-            <hr class="dropdown-divider" />
+            <hr class="dropdown-divider">
             <a class="dropdown-item">
-              <i aria-hidden="true" class="sl sl-icon-pencil"></i>
+              <i
+                aria-hidden="true"
+                class="sl sl-icon-pencil"
+              />
               <span>Signature</span>
             </a>
           </div>
         </div>
       </div>
       <a class="inbox-action compose-panel-close">
-        <i aria-hidden="true" class="material-icons">close</i>
+        <i
+          aria-hidden="true"
+          class="material-icons"
+        >close</i>
       </a>
     </div>
     <!--Panel body-->
@@ -54,7 +74,7 @@ const dropdown = useDropdown(dropdownElement)
               type="text"
               class="input compose-input"
               placeholder="ex: jenny@gmail.com"
-            />
+            >
           </div>
         </div>
       </div>
@@ -63,7 +83,10 @@ const dropdown = useDropdown(dropdownElement)
         <div class="field">
           <label>Cc:</label>
           <div class="control">
-            <input type="text" class="input compose-input" />
+            <input
+              type="text"
+              class="input compose-input"
+            >
           </div>
         </div>
       </div>
@@ -76,7 +99,7 @@ const dropdown = useDropdown(dropdownElement)
               type="text"
               class="input compose-input"
               placeholder="ex: Business meeting"
-            />
+            >
           </div>
         </div>
       </div>
@@ -89,10 +112,18 @@ const dropdown = useDropdown(dropdownElement)
               class="textarea"
               rows="9"
               placeholder="Write your message..."
-            ></textarea>
-            <button type="button" class="button send-button">Send Message</button>
+            />
+            <button
+              type="button"
+              class="button send-button"
+            >
+              Send Message
+            </button>
             <a class="attacv-button">
-              <i aria-hidden="true" class="sl sl-icon-paper-clip"></i>
+              <i
+                aria-hidden="true"
+                class="sl sl-icon-paper-clip"
+              />
             </a>
           </div>
         </div>

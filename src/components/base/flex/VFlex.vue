@@ -62,7 +62,7 @@ const display = computed(() => (props.inline ? 'inline-flex' : 'flex'))
 
 <template>
   <div class="v-flex">
-    <slot></slot>
+    <slot />
   </div>
 </template>
 

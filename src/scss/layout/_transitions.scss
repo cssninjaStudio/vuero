@@ -47,7 +47,9 @@
 .translate-page-y-enter-active,
 .translate-page-y-leave-active {
   transform: translateY(0);
-  transition: transform 0.25s ease-out, opacity 0.25s ease-out;
+  transition:
+    transform 0.25s ease-out,
+    opacity 0.25s ease-out;
 }
 
 .translate-page-y-enter-from {
@@ -207,7 +209,9 @@
 .from-bottom-leave-active {
   opacity: 1;
   transform: translateY(0);
-  transition: opacity 0.2s ease, transform 0.3s ease;
+  transition:
+    opacity 0.2s ease,
+    transform 0.3s ease;
 }
 
 .from-bottom-enter-from,

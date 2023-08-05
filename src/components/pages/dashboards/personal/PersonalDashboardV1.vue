@@ -15,14 +15,24 @@ const { profitChartOptions } = useProfitChart()
     <!--Personal Dashboard V1-->
     <!--Header-->
     <div class="dashboard-header">
-      <VAvatar picture="/images/avatars/svg/vuero-1.svg" size="large" />
+      <VAvatar
+        picture="/images/avatars/svg/vuero-1.svg"
+        size="large"
+      />
       <div class="start">
         <h3>Welcome back, Erik Kovalsky</h3>
         <p>We're very happy to see you again on your personal dashboard.</p>
       </div>
       <div class="end">
-        <VButton dark="3">View Reports</VButton>
-        <VButton color="primary" elevated>Manage Store</VButton>
+        <VButton dark="3">
+          View Reports
+        </VButton>
+        <VButton
+          color="primary"
+          elevated
+        >
+          Manage Store
+        </VButton>
       </div>
     </div>
 
@@ -32,7 +42,9 @@ const { profitChartOptions } = useProfitChart()
         <!--Card-->
         <div class="column is-6">
           <div class="dashboard-card">
-            <h4 class="dark-inverted">Your Quick Stats</h4>
+            <h4 class="dark-inverted">
+              Your Quick Stats
+            </h4>
 
             <div class="quick-stats">
               <div class="quick-stats-inner">
@@ -46,8 +58,14 @@ const { profitChartOptions } = useProfitChart()
                     t-responsive
                   >
                     <template #icon>
-                      <VIconBox color="purple" rounded>
-                        <i aria-hidden="true" class="lnil lnil-analytics-alt-1"></i>
+                      <VIconBox
+                        color="purple"
+                        rounded
+                      >
+                        <i
+                          aria-hidden="true"
+                          class="lnil lnil-analytics-alt-1"
+                        />
                       </VIconBox>
                     </template>
                   </VBlock>
@@ -63,8 +81,14 @@ const { profitChartOptions } = useProfitChart()
                     t-responsive
                   >
                     <template #icon>
-                      <VIconBox color="orange" rounded>
-                        <i aria-hidden="true" class="lnil lnil-handshake"></i>
+                      <VIconBox
+                        color="orange"
+                        rounded
+                      >
+                        <i
+                          aria-hidden="true"
+                          class="lnil lnil-handshake"
+                        />
                       </VIconBox>
                     </template>
                   </VBlock>
@@ -80,8 +104,14 @@ const { profitChartOptions } = useProfitChart()
                     t-responsive
                   >
                     <template #icon>
-                      <VIconBox color="green" rounded>
-                        <i aria-hidden="true" class="lnil lnil-diamond-alt"></i>
+                      <VIconBox
+                        color="green"
+                        rounded
+                      >
+                        <i
+                          aria-hidden="true"
+                          class="lnil lnil-diamond-alt"
+                        />
                       </VIconBox>
                     </template>
                   </VBlock>
@@ -97,8 +127,14 @@ const { profitChartOptions } = useProfitChart()
                     t-responsive
                   >
                     <template #icon>
-                      <VIconBox color="info" rounded>
-                        <i aria-hidden="true" class="lnil lnil-bank"></i>
+                      <VIconBox
+                        color="info"
+                        rounded
+                      >
+                        <i
+                          aria-hidden="true"
+                          class="lnil lnil-bank"
+                        />
                       </VIconBox>
                     </template>
                   </VBlock>
@@ -116,18 +152,22 @@ const { profitChartOptions } = useProfitChart()
               :type="customersOptions.chart.type"
               :series="customersOptions.series"
               :options="customersOptions"
-            >
-            </ApexChart>
+            />
           </div>
         </div>
 
         <!--Card-->
         <div class="column is-4">
           <div class="dashboard-card is-upgrade">
-            <i aria-hidden="true" class="lnil lnil-crown-alt-1"></i>
+            <i
+              aria-hidden="true"
+              class="lnil lnil-crown-alt-1"
+            />
             <div class="cta-content">
               <h4>Hey Erik, you're doing great.</h4>
-              <p class="white-text">Start using our team and project management tools</p>
+              <p class="white-text">
+                Start using our team and project management tools
+              </p>
               <a class="link inverted-text">Learn More</a>
             </div>
           </div>
@@ -138,7 +178,10 @@ const { profitChartOptions } = useProfitChart()
           <div class="dashboard-card is-gauge">
             <div class="people">
               <VAvatar picture="/demo/avatars/21.jpg" />
-              <VAvatar initials="SC" color="h-purple" />
+              <VAvatar
+                initials="SC"
+                color="h-purple"
+              />
               <VAvatar picture="/demo/avatars/39.jpg" />
             </div>
             <ApexChart
@@ -146,8 +189,7 @@ const { profitChartOptions } = useProfitChart()
               :type="teamGaugeOptions.chart.type"
               :series="teamGaugeOptions.series"
               :options="teamGaugeOptions"
-            >
-            </ApexChart>
+            />
           </div>
         </div>
 
@@ -159,8 +201,7 @@ const { profitChartOptions } = useProfitChart()
               :type="profitChartOptions.chart.type"
               :series="profitChartOptions.series"
               :options="profitChartOptions"
-            >
-            </ApexChart>
+            />
           </div>
         </div>
       </div>

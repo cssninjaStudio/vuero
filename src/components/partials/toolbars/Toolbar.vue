@@ -43,8 +43,8 @@ const localFlagSrc = computed(() => {
           type="checkbox"
           :checked="!darkmode.isDark"
           @change="darkmode.onChange"
-        />
-        <span></span>
+        >
+        <span />
       </label>
     </div>
 
@@ -55,9 +55,12 @@ const localFlagSrc = computed(() => {
       @keydown.space.prevent="panels.setActive('languages')"
       @click="panels.setActive('languages')"
     >
-      <img :src="localFlagSrc" alt="" />
+      <img
+        :src="localFlagSrc"
+        alt=""
+      >
     </a>
 
-    <slot></slot>
+    <slot />
   </div>
 </template>

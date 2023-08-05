@@ -1,9 +1,21 @@
 <template>
-  <VDropdown class="is-pushed-mobile" icon="feather:more-vertical" spaced right>
+  <VDropdown
+    class="is-pushed-mobile"
+    icon="feather:more-vertical"
+    spaced
+    right
+  >
     <template #content>
-      <a role="menuitem" href="#" class="dropdown-item is-media">
+      <a
+        role="menuitem"
+        href="#"
+        class="dropdown-item is-media"
+      >
         <div class="icon">
-          <i aria-hidden="true" class="lnil lnil-briefcase"></i>
+          <i
+            aria-hidden="true"
+            class="lnil lnil-briefcase"
+          />
         </div>
         <div class="meta">
           <span>View</span>
@@ -11,9 +23,16 @@
         </div>
       </a>
 
-      <a role="menuitem" href="#" class="dropdown-item is-media">
+      <a
+        role="menuitem"
+        href="#"
+        class="dropdown-item is-media"
+      >
         <div class="icon">
-          <i aria-hidden="true" class="lnil lnil-pencil"></i>
+          <i
+            aria-hidden="true"
+            class="lnil lnil-pencil"
+          />
         </div>
         <div class="meta">
           <span>Edit</span>
@@ -21,9 +40,16 @@
         </div>
       </a>
 
-      <a role="menuitem" href="#" class="dropdown-item is-media">
+      <a
+        role="menuitem"
+        href="#"
+        class="dropdown-item is-media"
+      >
         <div class="icon">
-          <i aria-hidden="true" class="lnil lnil-add-files"></i>
+          <i
+            aria-hidden="true"
+            class="lnil lnil-add-files"
+          />
         </div>
         <div class="meta">
           <span>New Task</span>
@@ -31,11 +57,18 @@
         </div>
       </a>
 
-      <hr class="dropdown-divider" />
+      <hr class="dropdown-divider">
 
-      <a role="menuitem" href="#" class="dropdown-item is-media">
+      <a
+        role="menuitem"
+        href="#"
+        class="dropdown-item is-media"
+      >
         <div class="icon">
-          <i aria-hidden="true" class="lnil lnil-trash-can-alt"></i>
+          <i
+            aria-hidden="true"
+            class="lnil lnil-trash-can-alt"
+          />
         </div>
         <div class="meta">
           <span>Remove</span>

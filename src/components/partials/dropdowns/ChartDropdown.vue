@@ -1,9 +1,20 @@
 <template>
-  <VDropdown icon="feather:more-vertical" spaced right>
+  <VDropdown
+    icon="feather:more-vertical"
+    spaced
+    right
+  >
     <template #content>
-      <a role="menuitem" href="#" class="dropdown-item is-media">
+      <a
+        role="menuitem"
+        href="#"
+        class="dropdown-item is-media"
+      >
         <div class="icon">
-          <i aria-hidden="true" class="lnil lnil-reload"></i>
+          <i
+            aria-hidden="true"
+            class="lnil lnil-reload"
+          />
         </div>
         <div class="meta">
           <span>Reload</span>
@@ -11,9 +22,16 @@
         </div>
       </a>
 
-      <a role="menuitem" href="#" class="dropdown-item is-media">
+      <a
+        role="menuitem"
+        href="#"
+        class="dropdown-item is-media"
+      >
         <div class="icon">
-          <i aria-hidden="true" class="lnil lnil-users-alt"></i>
+          <i
+            aria-hidden="true"
+            class="lnil lnil-users-alt"
+          />
         </div>
         <div class="meta">
           <span>Customers</span>
@@ -21,9 +39,16 @@
         </div>
       </a>
 
-      <a role="menuitem" href="#" class="dropdown-item is-media">
+      <a
+        role="menuitem"
+        href="#"
+        class="dropdown-item is-media"
+      >
         <div class="icon">
-          <i aria-hidden="true" class="lnil lnil-gift-alt-1"></i>
+          <i
+            aria-hidden="true"
+            class="lnil lnil-gift-alt-1"
+          />
         </div>
         <div class="meta">
           <span>Products</span>
@@ -31,11 +56,18 @@
         </div>
       </a>
 
-      <hr class="dropdown-divider" />
+      <hr class="dropdown-divider">
 
-      <a role="menuitem" href="#" class="dropdown-item is-media">
+      <a
+        role="menuitem"
+        href="#"
+        class="dropdown-item is-media"
+      >
         <div class="icon">
-          <i aria-hidden="true" class="lnil lnil-bank"></i>
+          <i
+            aria-hidden="true"
+            class="lnil lnil-bank"
+          />
         </div>
         <div class="meta">
           <span>Finance</span>

@@ -73,7 +73,10 @@ watch(activeValue, (value) => {
 </script>
 
 <template>
-  <div class="tabs-wrapper" :class="[sliderClass]">
+  <div
+    class="tabs-wrapper"
+    :class="[sliderClass]"
+  >
     <div class="tabs-inner">
       <div
         class="tabs"
@@ -105,7 +108,10 @@ watch(activeValue, (value) => {
                 @keydown.prevent.enter="() => toggle(tab.value)"
                 @click.prevent="() => toggle(tab.value)"
               >
-                <VIcon v-if="tab.icon" :icon="tab.icon" />
+                <VIcon
+                  v-if="tab.icon"
+                  :icon="tab.icon"
+                />
                 <span>
                   <slot
                     name="tab-link-label"
@@ -122,19 +128,25 @@ watch(activeValue, (value) => {
               </a>
             </slot>
           </li>
-          <li v-if="sliderClass" class="tab-naver"></li>
+          <li
+            v-if="sliderClass"
+            class="tab-naver"
+          />
         </ul>
       </div>
     </div>
 
     <div class="tab-content is-active">
-      <Transition :name="props.slow ? 'fade-slow' : 'fade-fast'" mode="out-in">
+      <Transition
+        :name="props.slow ? 'fade-slow' : 'fade-fast'"
+        mode="out-in"
+      >
         <slot
           name="tab"
           v-bind="{
             activeValue,
           }"
-        ></slot>
+        />
       </Transition>
     </div>
   </div>

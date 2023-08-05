@@ -1,31 +1,156 @@
 <template>
   <div class="cloud-container">
     <ul>
-      <li><a class="size1" href="#">adobe</a></li>
-      <li><a class="size2" href="#">animation</a></li>
-      <li><a class="size3" href="#">arts</a></li>
-      <li><a class="size4" href="#">bizarre</a></li>
-      <li><a class="size5" href="#">blogs</a></li>
-      <li><a class="size6" href="#">books</a></li>
-      <li><a class="size1" href="#">comics</a></li>
-      <li><a class="size2" href="#">computer-graphics</a></li>
-      <li><a class="size3" href="#">cooking</a></li>
-      <li><a class="size4" href="#">cyberculture</a></li>
-      <li><a class="size5" href="#">design</a></li>
-      <li><a class="size6" href="#">drawing</a></li>
-      <li><a class="size1" href="#">fine-arts</a></li>
-      <li><a class="size2" href="#">graphic-design</a></li>
-      <li><a class="size3" href="#">humor</a></li>
-      <li><a class="size4" href="#">illustration</a></li>
-      <li><a class="size5" href="#">indesign</a></li>
-      <li><a class="size6" href="#">internet</a></li>
-      <li><a class="size1" href="#">movies</a></li>
-      <li><a class="size2" href="#">mac-os</a></li>
-      <li><a class="size3" href="#">multimedia</a></li>
-      <li><a class="size4" href="#">online-games</a></li>
-      <li><a class="size5" href="#">photography</a></li>
-      <li><a class="size6" href="#">web-design</a></li>
-      <li><a class="size1" href="#">css</a></li>
+      <li>
+        <a
+          class="size1"
+          href="#"
+        >adobe</a>
+      </li>
+      <li>
+        <a
+          class="size2"
+          href="#"
+        >animation</a>
+      </li>
+      <li>
+        <a
+          class="size3"
+          href="#"
+        >arts</a>
+      </li>
+      <li>
+        <a
+          class="size4"
+          href="#"
+        >bizarre</a>
+      </li>
+      <li>
+        <a
+          class="size5"
+          href="#"
+        >blogs</a>
+      </li>
+      <li>
+        <a
+          class="size6"
+          href="#"
+        >books</a>
+      </li>
+      <li>
+        <a
+          class="size1"
+          href="#"
+        >comics</a>
+      </li>
+      <li>
+        <a
+          class="size2"
+          href="#"
+        >computer-graphics</a>
+      </li>
+      <li>
+        <a
+          class="size3"
+          href="#"
+        >cooking</a>
+      </li>
+      <li>
+        <a
+          class="size4"
+          href="#"
+        >cyberculture</a>
+      </li>
+      <li>
+        <a
+          class="size5"
+          href="#"
+        >design</a>
+      </li>
+      <li>
+        <a
+          class="size6"
+          href="#"
+        >drawing</a>
+      </li>
+      <li>
+        <a
+          class="size1"
+          href="#"
+        >fine-arts</a>
+      </li>
+      <li>
+        <a
+          class="size2"
+          href="#"
+        >graphic-design</a>
+      </li>
+      <li>
+        <a
+          class="size3"
+          href="#"
+        >humor</a>
+      </li>
+      <li>
+        <a
+          class="size4"
+          href="#"
+        >illustration</a>
+      </li>
+      <li>
+        <a
+          class="size5"
+          href="#"
+        >indesign</a>
+      </li>
+      <li>
+        <a
+          class="size6"
+          href="#"
+        >internet</a>
+      </li>
+      <li>
+        <a
+          class="size1"
+          href="#"
+        >movies</a>
+      </li>
+      <li>
+        <a
+          class="size2"
+          href="#"
+        >mac-os</a>
+      </li>
+      <li>
+        <a
+          class="size3"
+          href="#"
+        >multimedia</a>
+      </li>
+      <li>
+        <a
+          class="size4"
+          href="#"
+        >online-games</a>
+      </li>
+      <li>
+        <a
+          class="size5"
+          href="#"
+        >photography</a>
+      </li>
+      <li>
+        <a
+          class="size6"
+          href="#"
+        >web-design</a>
+      </li>
+      <li>
+        <a
+          class="size1"
+          href="#"
+        >css</a>
+      </li>
     </ul>
   </div>
 </template>
@@ -48,7 +173,9 @@
         line-height: 1.8em;
         font-family: var(--font);
         color: var(--dark-text);
-        transition: background-color 0.3s, box-shadow 0.3s;
+        transition:
+          background-color 0.3s,
+          box-shadow 0.3s;
 
         &.size1 {
           color: var(--light-text);

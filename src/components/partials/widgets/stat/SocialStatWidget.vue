@@ -18,14 +18,24 @@ const props = defineProps<{
         class="follow-icon"
         :class="[props.squared && 'is-squared', props.colored && 'is-primary']"
       >
-        <i aria-hidden="true" :class="props.icon"></i>
+        <i
+          aria-hidden="true"
+          :class="props.icon"
+        />
       </div>
       <div class="follow-count">
         <span class="dark-inverted">{{ props.value }} Followers</span>
         <span>Based on your latest stats</span>
       </div>
-      <a href="#" class="go-icon">
-        <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right"></i>
+      <a
+        href="#"
+        class="go-icon"
+      >
+        <i
+          aria-hidden="true"
+          class="iconify"
+          data-icon="feather:chevron-right"
+        />
       </a>
     </div>
   </div>

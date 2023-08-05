@@ -40,10 +40,15 @@ const onRemoveFile = (error: any, fileInfo: any) => {
 </script>
 
 <template>
-  <div id="wizard-step-1" class="inner-wrapper is-active">
+  <div
+    id="wizard-step-1"
+    class="inner-wrapper is-active"
+  >
     <div class="step-content">
       <div class="step-title">
-        <h2 class="dark-inverted">What is this project about?</h2>
+        <h2 class="dark-inverted">
+          What is this project about?
+        </h2>
         <p>Manage better by adding all relevant project information</p>
       </div>
 
@@ -82,7 +87,10 @@ const onRemoveFile = (error: any, fileInfo: any) => {
             <div class="project-name">
               <VField>
                 <VControl>
-                  <VInput v-model="wizard.data.name" placeholder="Project Name" />
+                  <VInput
+                    v-model="wizard.data.name"
+                    placeholder="Project Name"
+                  />
                 </VControl>
               </VField>
             </div>
@@ -95,13 +103,22 @@ const onRemoveFile = (error: any, fileInfo: any) => {
                     rows="4"
                     placeholder="Describe your project..."
                   />
-                  <p v-if="wizard.data.description.length === 0" class="help">
+                  <p
+                    v-if="wizard.data.description.length === 0"
+                    class="help"
+                  >
                     Minimum of 50 characters
                   </p>
-                  <p v-else-if="wizard.data.description.length === 49" class="help">
+                  <p
+                    v-else-if="wizard.data.description.length === 49"
+                    class="help"
+                  >
                     {{ 50 - wizard.data.description.length }} character remaining
                   </p>
-                  <p v-else-if="wizard.data.description.length < 50" class="help">
+                  <p
+                    v-else-if="wizard.data.description.length < 50"
+                    class="help"
+                  >
                     {{ 50 - wizard.data.description.length }} characters remaining
                   </p>
                 </VControl>
@@ -125,8 +142,7 @@ const onRemoveFile = (error: any, fileInfo: any) => {
                         value: 'Marketing',
                       },
                     ]"
-                  >
-                  </Multiselect>
+                  />
                 </VControl>
               </VField>
             </div>

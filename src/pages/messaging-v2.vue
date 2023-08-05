@@ -162,7 +162,10 @@ useHead({
       <div class="chat-app-header">
         <!--Logo-->
         <div class="logo">
-          <AnimatedLogo width="38px" height="38px" />
+          <AnimatedLogo
+            width="38px"
+            height="38px"
+          />
         </div>
 
         <!--Search-->
@@ -174,11 +177,15 @@ useHead({
                 class="input search-input"
                 placeholder="Search..."
                 aria-label="Search"
-              />
+              >
               <div class="form-icon">
-                <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:search"
+                />
               </div>
-              <div class="search-results has-slimscroll"></div>
+              <div class="search-results has-slimscroll" />
             </div>
           </div>
         </div>
@@ -197,7 +204,11 @@ useHead({
               @keydown.space.prevent="panels.setActive('activity')"
               @click="panels.setActive('activity')"
             >
-              <i aria-hidden="true" class="iconify" data-icon="feather:grid"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:grid"
+              />
             </a>
           </Toolbar>
 
@@ -219,34 +230,69 @@ useHead({
                   src="/images/avatars/svg/vuero-1.svg"
                   alt=""
                   @error.once="onceImageErrored(150)"
-                />
+                >
               </div>
-              <i aria-hidden="true" class="iconify" data-icon="feather:chevron-down"></i>
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:chevron-down"
+              />
             </div>
-            <div class="dropdown-menu" role="menu">
+            <div
+              class="dropdown-menu"
+              role="menu"
+            >
               <div class="dropdown-content">
                 <div class="dropdown-item">
-                  <p class="is-size-7">Erik Kovalsky</p>
+                  <p class="is-size-7">
+                    Erik Kovalsky
+                  </p>
                 </div>
-                <a href="#" class="dropdown-item">
-                  <i aria-hidden="true" class="iconify" data-icon="feather:user"></i>
+                <a
+                  href="#"
+                  class="dropdown-item"
+                >
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:user"
+                  />
                   <span>Profile</span>
                 </a>
                 <a class="dropdown-item">
-                  <i aria-hidden="true" class="iconify" data-icon="feather:edit-2"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:edit-2"
+                  />
                   <span>Edit Profile</span>
                 </a>
                 <a class="dropdown-item">
-                  <i aria-hidden="true" class="iconify" data-icon="feather:box"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:box"
+                  />
                   <span>Projects</span>
                 </a>
                 <a class="dropdown-item">
-                  <i aria-hidden="true" class="iconify" data-icon="feather:settings"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:settings"
+                  />
                   <span>Settings</span>
                 </a>
-                <hr class="dropdown-divider" />
-                <a href="#" class="dropdown-item">
-                  <i aria-hidden="true" class="iconify" data-icon="feather:log-out"></i>
+                <hr class="dropdown-divider">
+                <a
+                  href="#"
+                  class="dropdown-item"
+                >
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:log-out"
+                  />
                   <span>Sign Out</span>
                 </a>
               </div>
@@ -268,7 +314,10 @@ useHead({
         />
 
         <!--Conversation messages-->
-        <div class="chat-area is-active" data-simplebar>
+        <div
+          class="chat-area is-active"
+          data-simplebar
+        >
           <!--Conversation 1-->
           <WebappConversation1
             :class="[selectedConversationId === 1 && 'is-active']"
@@ -359,38 +408,77 @@ useHead({
 
           <div class="chat-area-footer">
             <div class="add-content">
-              <div ref="dropdownElement2" class="dropdown dropdown-trigger is-up">
+              <div
+                ref="dropdownElement2"
+                class="dropdown dropdown-trigger is-up"
+              >
                 <div>
-                  <div class="button" aria-haspopup="true" @click="dropdown2.toggle">
-                    <i aria-hidden="true" class="iconify" data-icon="feather:plus"></i>
+                  <div
+                    class="button"
+                    aria-haspopup="true"
+                    @click="dropdown2.toggle"
+                  >
+                    <i
+                      aria-hidden="true"
+                      class="iconify"
+                      data-icon="feather:plus"
+                    />
                   </div>
                 </div>
-                <div class="dropdown-menu" role="menu">
+                <div
+                  class="dropdown-menu"
+                  role="menu"
+                >
                   <div class="dropdown-content">
                     <a class="dropdown-item">
-                      <i aria-hidden="true" class="iconify" data-icon="feather:video"></i>
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:video"
+                      />
                       <div class="meta">
                         <span>Video</span>
                         <span>Embed a video</span>
                       </div>
                     </a>
-                    <a href="#" class="dropdown-item kill-drop v-modal-trigger">
-                      <i aria-hidden="true" class="iconify" data-icon="feather:image"></i>
+                    <a
+                      href="#"
+                      class="dropdown-item kill-drop v-modal-trigger"
+                    >
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:image"
+                      />
                       <div class="meta">
                         <span>Images</span>
                         <span>Upload pictures</span>
                       </div>
                     </a>
-                    <a href="#" class="dropdown-item kill-drop v-modal-trigger">
-                      <i aria-hidden="true" class="iconify" data-icon="feather:link"></i>
+                    <a
+                      href="#"
+                      class="dropdown-item kill-drop v-modal-trigger"
+                    >
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:link"
+                      />
                       <div class="meta">
                         <span>Link</span>
                         <span>Post a link</span>
                       </div>
                     </a>
-                    <hr class="dropdown-divider" />
-                    <a href="#" class="dropdown-item kill-drop v-modal-trigger">
-                      <i aria-hidden="true" class="iconify" data-icon="feather:file"></i>
+                    <hr class="dropdown-divider">
+                    <a
+                      href="#"
+                      class="dropdown-item kill-drop v-modal-trigger"
+                    >
+                      <i
+                        aria-hidden="true"
+                        class="iconify"
+                        data-icon="feather:file"
+                      />
                       <div class="meta">
                         <span>File</span>
                         <span>Upload a file</span>
@@ -402,42 +490,61 @@ useHead({
             </div>
             <div class="add-emoji">
               <div class="button">
-                <i aria-hidden="true" class="iconify" data-icon="feather:smile"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:smile"
+                />
               </div>
             </div>
             <input
               type="text"
               placeholder="Type something here..."
               aria-label="Add new message"
-            />
+            >
           </div>
         </div>
 
         <!--Conversation Details-->
-        <div class="detail-area" data-simplebar>
+        <div
+          class="detail-area"
+          data-simplebar
+        >
           <div class="chat-side-content is-single">
             <VAvatar
               :picture="selectedConversation.avatar.picture"
               :color="selectedConversation.avatar.color"
               :initials="selectedConversation.avatar.initials"
             />
-            <h4 id="user-details-name" class="user-name">
+            <h4
+              id="user-details-name"
+              class="user-name"
+            >
               {{ selectedConversation.name }}
             </h4>
-            <p id="user-details-title" class="user-job-title">
+            <p
+              id="user-details-title"
+              class="user-job-title"
+            >
               {{ selectedConversation.role }}
             </p>
 
             <div class="side-actions">
               <a class="button v-button is-rounded">
                 <span class="icon is-small">
-                  <i aria-hidden="true" class="fas fa-phone"></i>
+                  <i
+                    aria-hidden="true"
+                    class="fas fa-phone"
+                  />
                 </span>
                 <span>Audio Call</span>
               </a>
               <a class="button v-button is-rounded">
                 <span class="icon is-small">
-                  <i aria-hidden="true" class="fas fa-video"></i>
+                  <i
+                    aria-hidden="true"
+                    class="fas fa-video"
+                  />
                 </span>
                 <span>Video Call</span>
               </a>
@@ -455,9 +562,20 @@ useHead({
                   stroke-linejoin="round"
                   class="feather feather-image"
                 >
-                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                  <circle cx="8.5" cy="8.5" r="1.5"></circle>
-                  <path d="M21 15l-5-5L5 21"></path>
+                  <rect
+                    x="3"
+                    y="3"
+                    width="18"
+                    height="18"
+                    rx="2"
+                    ry="2"
+                  />
+                  <circle
+                    cx="8.5"
+                    cy="8.5"
+                    r="1.5"
+                  />
+                  <path d="M21 15l-5-5L5 21" />
                 </svg>
                 Shared photos
               </div>
@@ -466,62 +584,62 @@ useHead({
                   src="/demo/photos/demo-apps/1.jpg"
                   alt=""
                   @error.once="onceImageErrored(1600, 900)"
-                />
+                >
                 <img
                   src="/demo/photos/demo-apps/2.jpg"
                   alt=""
                   @error.once="onceImageErrored(1600, 900)"
-                />
+                >
                 <img
                   src="/demo/photos/demo-apps/3.jpg"
                   alt=""
                   @error.once="onceImageErrored(1600, 900)"
-                />
+                >
                 <img
                   src="/demo/photos/demo-apps/4.jpg"
                   alt=""
                   @error.once="onceImageErrored(1600, 900)"
-                />
+                >
                 <img
                   src="/demo/photos/demo-apps/5.jpg"
                   alt=""
                   @error.once="onceImageErrored(1600, 900)"
-                />
+                >
                 <img
                   src="/demo/photos/demo-apps/6.jpg"
                   alt=""
                   @error.once="onceImageErrored(1600, 900)"
-                />
+                >
                 <img
                   src="/demo/photos/demo-apps/7.jpg"
                   alt=""
                   @error.once="onceImageErrored(1600, 900)"
-                />
+                >
                 <img
                   src="/demo/photos/demo-apps/8.jpg"
                   alt=""
                   @error.once="onceImageErrored(1600, 900)"
-                />
+                >
                 <img
                   src="/demo/photos/demo-apps/9.jpg"
                   alt=""
                   @error.once="onceImageErrored(1600, 900)"
-                />
+                >
                 <img
                   src="/demo/photos/demo-apps/10.jpg"
                   alt=""
                   @error.once="onceImageErrored(1600, 900)"
-                />
+                >
                 <img
                   src="/demo/photos/demo-apps/11.jpg"
                   alt=""
                   @error.once="onceImageErrored(1600, 900)"
-                />
+                >
                 <img
                   src="/demo/photos/demo-apps/12.jpg"
                   alt=""
                   @error.once="onceImageErrored(1600, 900)"
-                />
+                >
               </div>
               <a class="view-more">View More</a>
             </div>
@@ -1146,8 +1264,12 @@ $overlay-bg-dark: linear-gradient(
               stroke-width: 2px;
               height: 18px;
               width: 18px;
-              transition: color 0.3s, background-color 0.3s, border-color 0.3s,
-                height 0.3s, width 0.3s;
+              transition:
+                color 0.3s,
+                background-color 0.3s,
+                border-color 0.3s,
+                height 0.3s,
+                width 0.3s;
             }
           }
 
@@ -1218,8 +1340,12 @@ $overlay-bg-dark: linear-gradient(
               stroke-width: 2px;
               height: 18px;
               width: 18px;
-              transition: color 0.3s, background-color 0.3s, border-color 0.3s,
-                height 0.3s, width 0.3s;
+              transition:
+                color 0.3s,
+                background-color 0.3s,
+                border-color 0.3s,
+                height 0.3s,
+                width 0.3s;
             }
           }
         }
@@ -1524,7 +1650,7 @@ $overlay-bg-dark: linear-gradient(
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media only screen and (device-width >= 768px) and (device-width <= 1024px) and (orientation: portrait) {
   .chat-app-wrapper {
     .chat-app-header {
       .search-bar {
@@ -1562,7 +1688,7 @@ $overlay-bg-dark: linear-gradient(
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (device-width >= 768px) and (device-width <= 1024px) and (orientation: landscape) {
   .chat-app-wrapper {
     .wrapper {
       .detail-area {

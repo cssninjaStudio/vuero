@@ -18,13 +18,19 @@ const onSubmit = () => {
       <div class="form-body">
         <div class="form-section">
           <div class="form-section-inner has-padding-bottom">
-            <h3 class="has-text-centered">Personal Information</h3>
+            <h3 class="has-text-centered">
+              Personal Information
+            </h3>
             <div class="columns is-multiline">
               <div class="column is-6">
                 <VField>
                   <VLabel>First Name</VLabel>
                   <VControl icon="feather:user">
-                    <VInput type="text" placeholder="" autocomplete="given-name" />
+                    <VInput
+                      type="text"
+                      placeholder=""
+                      autocomplete="given-name"
+                    />
                   </VControl>
                 </VField>
               </div>
@@ -32,7 +38,11 @@ const onSubmit = () => {
                 <VField>
                   <VLabel>Last Name</VLabel>
                   <VControl icon="feather:user">
-                    <VInput type="text" placeholder="" autocomplete="family-name" />
+                    <VInput
+                      type="text"
+                      placeholder=""
+                      autocomplete="family-name"
+                    />
                   </VControl>
                 </VField>
               </div>
@@ -53,7 +63,11 @@ const onSubmit = () => {
                 <VField>
                   <VLabel>Street</VLabel>
                   <VControl icon="feather:map-pin">
-                    <VInput type="text" placeholder="" autocomplete="street-address" />
+                    <VInput
+                      type="text"
+                      placeholder=""
+                      autocomplete="street-address"
+                    />
                   </VControl>
                 </VField>
               </div>
@@ -61,12 +75,19 @@ const onSubmit = () => {
                 <VField>
                   <VLabel>City</VLabel>
                   <VControl icon="feather:map-pin">
-                    <VInput type="text" placeholder="" autocomplete="address-level2" />
+                    <VInput
+                      type="text"
+                      placeholder=""
+                      autocomplete="address-level2"
+                    />
                   </VControl>
                 </VField>
               </div>
               <div class="column is-6">
-                <VField v-slot="{ id }" class="is-image-select">
+                <VField
+                  v-slot="{ id }"
+                  class="is-image-select"
+                >
                   <VLabel>Country</VLabel>
                   <VControl>
                     <Multiselect
@@ -100,14 +121,22 @@ const onSubmit = () => {
                     >
                       <template #singlelabel="{ value }">
                         <div class="multiselect-single-label">
-                          <img class="select-label-icon" :src="value.icon" alt="" />
+                          <img
+                            class="select-label-icon"
+                            :src="value.icon"
+                            alt=""
+                          >
                           <span class="select-label-text">
                             {{ value.name }}
                           </span>
                         </div>
                       </template>
                       <template #option="{ option }">
-                        <img class="select-option-icon" :src="option.icon" alt="" />
+                        <img
+                          class="select-option-icon"
+                          :src="option.icon"
+                          alt=""
+                        >
                         <span class="select-label-text">
                           {{ option.name }}
                         </span>
@@ -134,15 +163,23 @@ const onSubmit = () => {
         </div>
         <div class="form-section">
           <div class="form-section-inner">
-            <h3 class="has-text-centered">Delivery</h3>
+            <h3 class="has-text-centered">
+              Delivery
+            </h3>
             <div class="columns is-multiline">
               <div class="column is-12">
                 <VField>
                   <VLabel>Delivery Fee</VLabel>
                   <VControl>
                     <div class="radio-boxes">
-                      <VControl class="radio-box" subcontrol>
-                        <VInput type="radio" name="delivery_type" />
+                      <VControl
+                        class="radio-box"
+                        subcontrol
+                      >
+                        <VInput
+                          type="radio"
+                          name="delivery_type"
+                        />
                         <div class="radio-box-inner">
                           <div class="fee">
                             <span>0</span>
@@ -151,7 +188,11 @@ const onSubmit = () => {
                         </div>
                       </VControl>
                       <VControl class="radio-box">
-                        <VInput type="radio" name="delivery_type" checked />
+                        <VInput
+                          type="radio"
+                          name="delivery_type"
+                          checked
+                        />
                         <div class="radio-box-inner">
                           <div class="fee">
                             <span>5</span>
@@ -195,7 +236,13 @@ const onSubmit = () => {
               </VField>
             </div>
             <div class="button-wrap">
-              <VButton type="submit" color="primary" bold raised fullwidth>
+              <VButton
+                type="submit"
+                color="primary"
+                bold
+                raised
+                fullwidth
+              >
                 Confirm My Order
               </VButton>
             </div>
@@ -309,8 +356,12 @@ const onSubmit = () => {
                   font-family: var(--font);
                   font-weight: 600;
                   font-size: 0.9rem;
-                  transition: color 0.3s, background-color 0.3s, border-color 0.3s,
-                    height 0.3s, width 0.3s;
+                  transition:
+                    color 0.3s,
+                    background-color 0.3s,
+                    border-color 0.3s,
+                    height 0.3s,
+                    width 0.3s;
                   padding: 30px 20px;
 
                   .fee {

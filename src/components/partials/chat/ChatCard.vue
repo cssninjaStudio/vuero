@@ -2,17 +2,17 @@
   <div class="is-chat animated preFadeInUp fadeInUp">
     <!-- Header -->
     <ChatHeader>
-      <slot name="header"></slot>
+      <slot name="header" />
     </ChatHeader>
 
     <ChatBodyWrap>
       <!-- Chat Body -->
       <ChatBody>
-        <slot name="body"></slot>
+        <slot name="body" />
       </ChatBody>
 
       <!-- Chat side -->
-      <slot name="side"></slot>
+      <slot name="side" />
     </ChatBodyWrap>
 
     <ChatMessageFieldWrapper />

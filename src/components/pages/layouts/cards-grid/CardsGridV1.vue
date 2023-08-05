@@ -35,7 +35,7 @@ const optionsSingle = [
           v-model="filters"
           class="input custom-text-filter"
           placeholder="Search..."
-        />
+        >
       </VControl>
 
       <div class="buttons">
@@ -49,9 +49,15 @@ const optionsSingle = [
             />
           </VControl>
         </VField>
-        <VButton color="primary" raised>
+        <VButton
+          color="primary"
+          raised
+        >
           <span class="icon">
-            <i aria-hidden="true" class="fas fa-plus"></i>
+            <i
+              aria-hidden="true"
+              class="fas fa-plus"
+            />
           </span>
           <span>Add User</span>
         </VButton>
@@ -73,19 +79,27 @@ const optionsSingle = [
             class="light-image"
             src="/@src/assets/illustrations/placeholders/search-4.svg"
             alt=""
-          />
+          >
           <img
             class="dark-image"
             src="/@src/assets/illustrations/placeholders/search-4-dark.svg"
             alt=""
-          />
+          >
         </template>
       </VPlaceholderPage>
 
       <!--Card Grid v1-->
-      <TransitionGroup name="list" tag="div" class="columns is-multiline">
+      <TransitionGroup
+        name="list"
+        tag="div"
+        class="columns is-multiline"
+      >
         <!--Grid item-->
-        <div v-for="(item, index) in filteredData" :key="index" class="column is-6">
+        <div
+          v-for="(item, index) in filteredData"
+          :key="index"
+          class="column is-6"
+        >
           <div class="card-grid-item">
             <div class="card-grid-item-body">
               <div class="left">
@@ -107,7 +121,10 @@ const optionsSingle = [
                     :href="channel.url"
                     class="social-link"
                   >
-                    <i aria-hidden="true" :class="channel.icon"></i>
+                    <i
+                      aria-hidden="true"
+                      :class="channel.icon"
+                    />
                   </a>
                 </div>
               </div>
@@ -120,12 +137,20 @@ const optionsSingle = [
                   <span>{{ item.progress }}%</span>
                 </div>
                 <div class="progress-bar">
-                  <VProgress size="tiny" :value="item.progress" />
+                  <VProgress
+                    size="tiny"
+                    :value="item.progress"
+                  />
                 </div>
               </div>
               <div class="right">
                 <div class="buttons">
-                  <VButton dark-outlined rounded>View Profile</VButton>
+                  <VButton
+                    dark-outlined
+                    rounded
+                  >
+                    View Profile
+                  </VButton>
                 </div>
               </div>
             </div>

@@ -64,9 +64,15 @@ const githubIssueUrl = computed(() => {
 
 <template>
   <DocumentationDemoCard>
-    <div class="demo-title" :class="[hasSlimscroll && 'has-slimscroll-x']">
-      <div v-if="hasDefault" class="content">
-        <slot></slot>
+    <div
+      class="demo-title"
+      :class="[hasSlimscroll && 'has-slimscroll-x']"
+    >
+      <div
+        v-if="hasDefault"
+        class="content"
+      >
+        <slot />
       </div>
 
       <div class="demo-actions">
@@ -76,7 +82,10 @@ const githubIssueUrl = computed(() => {
           class="code-edit"
           :href="`${props.sourceMeta.editProtocol}${props.sourceMeta.path}:1:1`"
         >
-          <VIcon style="height: 16px" icon="logos:visual-studio-code" />
+          <VIcon
+            style="height: 16px"
+            icon="logos:visual-studio-code"
+          />
         </a>
         <a
           v-if="githubIssueUrl"
@@ -86,34 +95,56 @@ const githubIssueUrl = computed(() => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <VIcon style="height: 16px" icon="carbon:logo-github" />
+          <VIcon
+            style="height: 16px"
+            icon="carbon:logo-github"
+          />
         </a>
         <span
           v-if="hasCodeSample"
           v-tooltip.rounded="displayCode ? 'Hide source code' : `View source code`"
-          ><a
-            class="code-trigger"
-            role="button"
-            tabindex="0"
-            :class="[displayCode && 'is-active']"
-            @keydown.space.prevent="displayCode = !displayCode"
-            @click="displayCode = !displayCode"
-          >
-            <VIcon v-show="!displayCode" style="height: 16px" icon="feather:code" />
-            <VIcon v-show="displayCode" style="height: 16px" icon="feather:x" /> </a
-        ></span>
+        ><a
+          class="code-trigger"
+          role="button"
+          tabindex="0"
+          :class="[displayCode && 'is-active']"
+          @keydown.space.prevent="displayCode = !displayCode"
+          @click="displayCode = !displayCode"
+        >
+          <VIcon
+            v-show="!displayCode"
+            style="height: 16px"
+            icon="feather:code"
+          />
+          <VIcon
+            v-show="displayCode"
+            style="height: 16px"
+            icon="feather:x"
+          /> </a></span>
       </div>
     </div>
-    <div v-if="(hasCodeSample && displayCode) || hasExample" class="card-inner">
-      <div v-if="hasExample" class="demo-example">
-        <slot name="example"></slot>
+    <div
+      v-if="(hasCodeSample && displayCode) || hasExample"
+      class="card-inner"
+    >
+      <div
+        v-if="hasExample"
+        class="demo-example"
+      >
+        <slot name="example" />
       </div>
 
-      <div v-if="hasCodeSample && displayCode" class="demo-code-wrapper">
+      <div
+        v-if="hasCodeSample && displayCode"
+        class="demo-code-wrapper"
+      >
         <div class="demo-code">
-          <slot name="code"></slot>
+          <slot name="code" />
         </div>
-        <div v-if="props.frontmatter.state" class="demo-state">
+        <div
+          v-if="props.frontmatter.state"
+          class="demo-state"
+        >
           <pre>{{ props.frontmatter.state }}</pre>
         </div>
       </div>

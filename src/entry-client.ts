@@ -24,7 +24,7 @@ createApp().then(async (vuero) => {
   const initialState = window.__vuero__
   // restore pinia state from SSR if any
   if (typeof initialState?.pinia === 'object') {
-    vuero.pinia.state.value = initialState.pinia
+    vuero.pinia.state.value = { ...initialState.pinia }
   }
 
   // wait for the app to be ready

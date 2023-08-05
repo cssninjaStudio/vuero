@@ -16,7 +16,10 @@ const props = withDefaults(defineProps<VLoaderProps>(), {
 </script>
 
 <template>
-  <div class="has-loader" :class="[props.active && 'has-loader-active']">
+  <div
+    class="has-loader"
+    :class="[props.active && 'has-loader-active']"
+  >
     <div
       v-if="props.active"
       class="v-loader-wrapper is-active"
@@ -28,10 +31,13 @@ const props = withDefaults(defineProps<VLoaderProps>(), {
         card === 'rounded' && 'l-card',
       ]"
     >
-      <div class="loader is-loading" :class="[props.size && `is-${props.size}`]"></div>
+      <div
+        class="loader is-loading"
+        :class="[props.size && `is-${props.size}`]"
+      />
     </div>
 
-    <slot></slot>
+    <slot />
   </div>
 </template>
 

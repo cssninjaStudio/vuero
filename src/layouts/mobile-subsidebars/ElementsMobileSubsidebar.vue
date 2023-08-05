@@ -7,13 +7,19 @@
 
       <ul class="submenu">
         <li>
-          <RouterLink to="/elements/">Elements Hub</RouterLink>
+          <RouterLink to="/elements/">
+            Elements Hub
+          </RouterLink>
         </li>
         <li>
-          <RouterLink to="/elements/colors">Colors</RouterLink>
+          <RouterLink to="/elements/colors">
+            Colors
+          </RouterLink>
         </li>
         <li>
-          <RouterLink to="/elements/helpers">Helpers</RouterLink>
+          <RouterLink to="/elements/helpers">
+            Helpers
+          </RouterLink>
         </li>
 
         <VCollapseLinks>
@@ -31,20 +37,48 @@
             />
           </template>
 
-          <RouterLink to="/elements/icons/iconify" class="is-submenu">
-            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+          <RouterLink
+            to="/elements/icons/iconify"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:circle"
+            />
             Iconify
           </RouterLink>
-          <RouterLink to="/elements/icons/line-icons-light" class="is-submenu">
-            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+          <RouterLink
+            to="/elements/icons/line-icons-light"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:circle"
+            />
             Line Icons Light
           </RouterLink>
-          <RouterLink to="/elements/icons/line-icons-regular" class="is-submenu">
-            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+          <RouterLink
+            to="/elements/icons/line-icons-regular"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:circle"
+            />
             Line Icons Regular
           </RouterLink>
-          <RouterLink to="/elements/icons/font-awesome" class="is-submenu">
-            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+          <RouterLink
+            to="/elements/icons/font-awesome"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:circle"
+            />
             Font Awesome 5
           </RouterLink>
         </VCollapseLinks>
@@ -53,31 +87,49 @@
           <span class="divider-label">Interaction</span>
         </li>
         <li>
-          <RouterLink to="/elements/dropdown"> VDropdown </RouterLink>
+          <RouterLink to="/elements/dropdown">
+            VDropdown
+          </RouterLink>
         </li>
         <li>
-          <RouterLink to="/elements/loader">VLoader</RouterLink>
+          <RouterLink to="/elements/loader">
+            VLoader
+          </RouterLink>
         </li>
         <li>
-          <RouterLink to="/elements/placeload/">VPlaceload</RouterLink>
+          <RouterLink to="/elements/placeload/">
+            VPlaceload
+          </RouterLink>
         </li>
         <li>
-          <RouterLink to="/elements/placeload/text"> VPlaceloadText </RouterLink>
+          <RouterLink to="/elements/placeload/text">
+            VPlaceloadText
+          </RouterLink>
         </li>
         <li>
-          <RouterLink to="/elements/placeload/avatar"> VPlaceloadAvatar </RouterLink>
+          <RouterLink to="/elements/placeload/avatar">
+            VPlaceloadAvatar
+          </RouterLink>
         </li>
         <li>
-          <RouterLink to="/elements/message"> VMessage </RouterLink>
+          <RouterLink to="/elements/message">
+            VMessage
+          </RouterLink>
         </li>
         <li>
-          <RouterLink to="/elements/modal">VModal</RouterLink>
+          <RouterLink to="/elements/modal">
+            VModal
+          </RouterLink>
         </li>
         <li>
-          <RouterLink to="/elements/progress"> VProgress </RouterLink>
+          <RouterLink to="/elements/progress">
+            VProgress
+          </RouterLink>
         </li>
         <li>
-          <RouterLink to="/elements/tooltip"> VTootlip </RouterLink>
+          <RouterLink to="/elements/tooltip">
+            VTootlip
+          </RouterLink>
         </li>
 
         <VCollapseLinks>
@@ -95,9 +147,22 @@
             />
           </template>
 
-          <RouterLink to="/elements/button" class="is-submenu"> VButton </RouterLink>
-          <RouterLink to="/elements/action" class="is-submenu"> VAction </RouterLink>
-          <RouterLink to="/elements/icon-button" class="is-submenu">
+          <RouterLink
+            to="/elements/button"
+            class="is-submenu"
+          >
+            VButton
+          </RouterLink>
+          <RouterLink
+            to="/elements/action"
+            class="is-submenu"
+          >
+            VAction
+          </RouterLink>
+          <RouterLink
+            to="/elements/icon-button"
+            class="is-submenu"
+          >
             VIconButton
           </RouterLink>
         </VCollapseLinks>
@@ -105,7 +170,14 @@
         <VCollapseLinks>
           <template #header>
             Forms
-            <VTag label="v2.3" size="tiny" class="ml-2" color="primary" outlined curved />
+            <VTag
+              label="v2.3"
+              size="tiny"
+              class="ml-2"
+              color="primary"
+              outlined
+              curved
+            />
             <i
               aria-hidden="true"
               class="iconify rtl-hidden"
@@ -118,44 +190,107 @@
             />
           </template>
 
-          <RouterLink to="/elements/forms/field" class="is-submenu">
-            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+          <RouterLink
+            to="/elements/forms/field"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:circle"
+            />
             VField
           </RouterLink>
-          <RouterLink to="/elements/forms/control" class="is-submenu">
-            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+          <RouterLink
+            to="/elements/forms/control"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:circle"
+            />
             VControl
           </RouterLink>
-          <RouterLink to="/elements/forms/inputs" class="is-submenu">
-            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+          <RouterLink
+            to="/elements/forms/inputs"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:circle"
+            />
             VInput
           </RouterLink>
-          <RouterLink to="/elements/forms/textarea" class="is-submenu">
-            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+          <RouterLink
+            to="/elements/forms/textarea"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:circle"
+            />
             VTextarea
           </RouterLink>
-          <RouterLink to="/elements/forms/selects" class="is-submenu">
-            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+          <RouterLink
+            to="/elements/forms/selects"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:circle"
+            />
             VSelect
           </RouterLink>
-          <RouterLink to="/elements/checkbox" class="is-submenu">
-            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+          <RouterLink
+            to="/elements/checkbox"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:circle"
+            />
             VCheckbox
           </RouterLink>
-          <RouterLink to="/elements/radio" class="is-submenu">
-            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+          <RouterLink
+            to="/elements/radio"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:circle"
+            />
             VRadio
           </RouterLink>
           <!-- <RouterLink to="/elements/forms/addons" class="is-submenu">
             <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
             Input Addons
           </RouterLink> -->
-          <RouterLink to="/elements/forms/range-rating" class="is-submenu">
-            <i aria-hidden="true" class="iconify" data-icon="feather:circle"> </i>
+          <RouterLink
+            to="/elements/forms/range-rating"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:circle"
+            />
             VRangeRating
           </RouterLink>
-          <RouterLink to="/elements/forms/file" class="is-submenu">
-            <i aria-hidden="true" class="iconify" data-icon="feather:circle"> </i>
+          <RouterLink
+            to="/elements/forms/file"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:circle"
+            />
             File Input
           </RouterLink>
         </VCollapseLinks>
@@ -163,24 +298,49 @@
         <VCollapseLinks>
           <template #header>
             Switches
-            <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right" />
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:chevron-right"
+            />
           </template>
 
-          <RouterLink to="/elements/animated-checkbox" class="is-submenu">
-            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+          <RouterLink
+            to="/elements/animated-checkbox"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:circle"
+            />
             VAnimatedCheckbox
           </RouterLink>
-          <RouterLink to="/elements/switch-block" class="is-submenu">
-            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+          <RouterLink
+            to="/elements/switch-block"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:circle"
+            />
             VSwitchBlock
           </RouterLink>
-          <RouterLink to="/elements/switch-segment" class="is-submenu">
-            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+          <RouterLink
+            to="/elements/switch-segment"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:circle"
+            />
             VSwitchSegment
           </RouterLink>
         </VCollapseLinks>
 
-        <li class="divider"></li>
+        <li class="divider" />
 
         <VCollapseLinks>
           <template #header>
@@ -197,37 +357,86 @@
             />
           </template>
 
-          <RouterLink to="/elements/addons/calendar" class="is-submenu">
-            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+          <RouterLink
+            to="/elements/addons/calendar"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:circle"
+            />
             VCalendar &amp; VDatePicker
           </RouterLink>
-          <RouterLink to="/elements/addons/imask-input" class="is-submenu">
-            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+          <RouterLink
+            to="/elements/addons/imask-input"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:circle"
+            />
             VIMaskInput
           </RouterLink>
-          <RouterLink to="/elements/addons/filepond" class="is-submenu">
-            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+          <RouterLink
+            to="/elements/addons/filepond"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:circle"
+            />
             VFilePond
           </RouterLink>
-          <RouterLink to="/elements/addons/credit-card" class="is-submenu">
-            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+          <RouterLink
+            to="/elements/addons/credit-card"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:circle"
+            />
             VCreditCard
           </RouterLink>
-          <RouterLink to="/elements/addons/vueform-multiselect" class="is-submenu">
-            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+          <RouterLink
+            to="/elements/addons/vueform-multiselect"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:circle"
+            />
             @vueform/multiselect
           </RouterLink>
-          <RouterLink to="/elements/addons/vueform-slider" class="is-submenu">
-            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+          <RouterLink
+            to="/elements/addons/vueform-slider"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:circle"
+            />
             @vueform/slider
           </RouterLink>
-          <RouterLink to="/elements/addons/ckeditor" class="is-submenu">
-            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+          <RouterLink
+            to="/elements/addons/ckeditor"
+            class="is-submenu"
+          >
+            <i
+              aria-hidden="true"
+              class="iconify"
+              data-icon="feather:circle"
+            />
             CKEditor 5
           </RouterLink>
         </VCollapseLinks>
       </ul>
-      <div class="bottom-action"></div>
+      <div class="bottom-action" />
     </div>
   </div>
 </template>

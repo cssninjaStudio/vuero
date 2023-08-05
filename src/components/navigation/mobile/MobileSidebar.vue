@@ -8,20 +8,30 @@ const props = defineProps<{
 </script>
 
 <template>
-  <div :class="[props.isOpen && 'is-active']" class="mobile-main-sidebar">
+  <div
+    :class="[props.isOpen && 'is-active']"
+    class="mobile-main-sidebar"
+  >
     <div class="inner">
       <ul class="icon-side-menu">
         <slot name="links">
           <li>
-            <a aria-label="Back to homepage" href="/">
-              <i aria-hidden="true" class="iconify" data-icon="feather:activity"></i>
+            <a
+              aria-label="Back to homepage"
+              href="/"
+            >
+              <i
+                aria-hidden="true"
+                class="iconify"
+                data-icon="feather:activity"
+              />
             </a>
           </li>
         </slot>
       </ul>
 
       <ul class="bottom-icon-side-menu">
-        <slot name="bottom-links"></slot>
+        <slot name="bottom-links" />
       </ul>
     </div>
   </div>
@@ -33,7 +43,7 @@ const props = defineProps<{
     role="button"
     @keydown.space.prevent="emit('toggle')"
     @click="emit('toggle')"
-  ></div>
+  />
 </template>
 
 <style lang="scss">
@@ -288,8 +298,12 @@ const props = defineProps<{
                 width: 18px;
                 margin-inline-start: auto;
                 transform: rotate(calc(var(--transform-direction) * 0));
-                transition: color 0.3s, background-color 0.3s, border-color 0.3s,
-                  height 0.3s, width 0.3s;
+                transition:
+                  color 0.3s,
+                  background-color 0.3s,
+                  border-color 0.3s,
+                  height 0.3s,
+                  width 0.3s;
               }
             }
           }

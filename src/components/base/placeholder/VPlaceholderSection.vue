@@ -12,10 +12,14 @@ const props = withDefaults(defineProps<VPlaceholderSectionProps>(), {
 <template>
   <div class="section-placeholder">
     <div class="placeholder-content">
-      <slot name="image"></slot>
-      <h3 class="dark-inverted">{{ props.title }}</h3>
-      <p v-if="props.subtitle">{{ props.subtitle }}</p>
-      <slot name="action"></slot>
+      <slot name="image" />
+      <h3 class="dark-inverted">
+        {{ props.title }}
+      </h3>
+      <p v-if="props.subtitle">
+        {{ props.subtitle }}
+      </p>
+      <slot name="action" />
     </div>
   </div>
 </template>

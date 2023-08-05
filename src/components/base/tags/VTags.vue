@@ -7,7 +7,10 @@ const props = defineProps<VTagsProps>()
 </script>
 
 <template>
-  <div class="tags" :class="[props.addons && 'has-addons']">
-    <slot></slot>
+  <div
+    class="tags"
+    :class="[props.addons && 'has-addons']"
+  >
+    <slot />
   </div>
 </template>

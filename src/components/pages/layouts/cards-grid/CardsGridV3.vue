@@ -43,7 +43,7 @@ function getAvatarData(user: any): VAvatarProps {
           v-model="filters"
           class="input custom-text-filter"
           placeholder="Search..."
-        />
+        >
       </VControl>
 
       <div class="buttons">
@@ -57,9 +57,15 @@ function getAvatarData(user: any): VAvatarProps {
             />
           </VControl>
         </VField>
-        <VButton color="primary" raised>
+        <VButton
+          color="primary"
+          raised
+        >
           <span class="icon">
-            <i aria-hidden="true" class="fas fa-plus"></i>
+            <i
+              aria-hidden="true"
+              class="fas fa-plus"
+            />
           </span>
           <span>New Project</span>
         </VButton>
@@ -81,12 +87,12 @@ function getAvatarData(user: any): VAvatarProps {
             class="light-image"
             src="/@src/assets/illustrations/placeholders/search-3.svg"
             alt=""
-          />
+          >
           <img
             class="dark-image"
             src="/@src/assets/illustrations/placeholders/search-3-dark.svg"
             alt=""
-          />
+          >
         </template>
       </VPlaceholderPage>
 
@@ -97,20 +103,43 @@ function getAvatarData(user: any): VAvatarProps {
         class="columns is-multiline is-flex-tablet-p is-half-tablet-p"
       >
         <!--Grid Item-->
-        <div v-for="item in filteredData" :key="item.id" class="column is-4">
+        <div
+          v-for="item in filteredData"
+          :key="item.id"
+          class="column is-4"
+        >
           <div class="card-grid-item">
-            <label v-if="item.lockable" class="h-toggle">
-              <input type="checkbox" :checked="item.locked" />
+            <label
+              v-if="item.lockable"
+              class="h-toggle"
+            >
+              <input
+                type="checkbox"
+                :checked="item.locked"
+              >
               <span class="toggler">
                 <span class="active">
-                  <i aria-hidden="true" class="iconify" data-icon="feather:lock"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:lock"
+                  />
                 </span>
                 <span class="inactive">
-                  <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:check"
+                  />
                 </span>
               </span>
             </label>
-            <VAvatar size="large" :picture="item.image" :badge="item.badge" squared />
+            <VAvatar
+              size="large"
+              :picture="item.image"
+              :badge="item.badge"
+              squared
+            />
             <h3 class="dark-inverted">
               {{ item.name }}
             </h3>
@@ -129,13 +158,21 @@ function getAvatarData(user: any): VAvatarProps {
             <div class="buttons">
               <button class="button v-button is-dark-outlined">
                 <span class="icon">
-                  <i aria-hidden="true" class="iconify" data-icon="feather:eye"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:eye"
+                  />
                 </span>
                 <span>View</span>
               </button>
               <button class="button v-button is-dark-outlined">
                 <span class="icon">
-                  <i aria-hidden="true" class="iconify" data-icon="feather:edit-2"></i>
+                  <i
+                    aria-hidden="true"
+                    class="iconify"
+                    data-icon="feather:edit-2"
+                  />
                 </span>
                 <span>Edit</span>
               </button>

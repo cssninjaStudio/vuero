@@ -65,17 +65,29 @@ onUnmounted(() => {
     <div class="left">
       <div class="left-header">
         <div class="header-image">
-          <img src="/@src/assets/illustrations/dashboards/food/header.svg" alt="" />
+          <img
+            src="/@src/assets/illustrations/dashboards/food/header.svg"
+            alt=""
+          >
         </div>
         <div class="header-meta">
           <h3>
             $0 delivery for 30 days!
-            <span role="img" aria-label="Party Popper">🎉</span>
+            <span
+              role="img"
+              aria-label="Party Popper"
+            >🎉</span>
           </h3>
           <p>$0 delivery fee for orders over $10 for 30 days</p>
-          <a class="action-link" tabindex="0">
+          <a
+            class="action-link"
+            tabindex="0"
+          >
             <span>Learn More</span>
-            <i aria-hidden="true" class="fas fa-arrow-right"></i>
+            <i
+              aria-hidden="true"
+              class="fas fa-arrow-right"
+            />
           </a>
         </div>
       </div>
@@ -87,19 +99,40 @@ onUnmounted(() => {
               <h3>Restaurants</h3>
             </div>
 
-            <div class="right"></div>
+            <div class="right" />
           </div>
 
           <div class="food-pills">
-            <div ref="prevButtonElement" class="slick-custom is-prev slick-arrow">
-              <i aria-hidden="true" class="fas fa-angle-left rtl-hidden"></i>
-              <i aria-hidden="true" class="fas fa-angle-right ltr-hidden"></i>
+            <div
+              ref="prevButtonElement"
+              class="slick-custom is-prev slick-arrow"
+            >
+              <i
+                aria-hidden="true"
+                class="fas fa-angle-left rtl-hidden"
+              />
+              <i
+                aria-hidden="true"
+                class="fas fa-angle-right ltr-hidden"
+              />
             </div>
-            <div ref="nextButtonElement" class="slick-custom is-next slick-arrow">
-              <i aria-hidden="true" class="fas fa-angle-right rtl-hidden"></i>
-              <i aria-hidden="true" class="fas fa-angle-left ltr-hidden"></i>
+            <div
+              ref="nextButtonElement"
+              class="slick-custom is-next slick-arrow"
+            >
+              <i
+                aria-hidden="true"
+                class="fas fa-angle-right rtl-hidden"
+              />
+              <i
+                aria-hidden="true"
+                class="fas fa-angle-left ltr-hidden"
+              />
             </div>
-            <div ref="sliderElement" class="food-pills-inner pill-carousel">
+            <div
+              ref="sliderElement"
+              class="food-pills-inner pill-carousel"
+            >
               <!--Pills Loop-->
               <div
                 v-for="(item, index) in foodDelivery.foodPills"
@@ -111,7 +144,10 @@ onUnmounted(() => {
                 @click="goTo(index)"
               >
                 <div class="food-pill-icon">
-                  <img :src="item.icon" alt="" />
+                  <img
+                    :src="item.icon"
+                    alt=""
+                  >
                 </div>
                 <span>{{ item.label }}</span>
               </div>
@@ -132,7 +168,7 @@ onUnmounted(() => {
                       :src="restaurant.picture"
                       alt=""
                       @error.once="onceImageErrored(800, 450)"
-                    />
+                    >
                     <div class="timer">
                       <div>
                         <span>{{ restaurant.deliveryTime }}</span>
@@ -146,15 +182,21 @@ onUnmounted(() => {
                         :src="restaurant.icon"
                         alt=""
                         @error.once="onceImageErrored(800, 450)"
-                      />
+                      >
                     </div>
                     <div class="meta-content">
                       <h4>{{ restaurant.name }}</h4>
                       <p>
                         <span>{{ restaurant.category }}</span>
-                        <i aria-hidden="true" class="fas fa-circle"></i>
+                        <i
+                          aria-hidden="true"
+                          class="fas fa-circle"
+                        />
                         <span class="rating">
-                          <i aria-hidden="true" class="fas fa-star"></i>
+                          <i
+                            aria-hidden="true"
+                            class="fas fa-star"
+                          />
                           <span class="ml-1">{{ restaurant.rating }}</span>
                         </span>
                       </p>
@@ -185,7 +227,7 @@ onUnmounted(() => {
                   aria-hidden="true"
                   class="iconify"
                   data-icon="feather:shopping-cart"
-                ></i>
+                />
               </a>
             </div>
             <div class="toolbar-icon">
@@ -197,7 +239,11 @@ onUnmounted(() => {
                 @keydown.space.prevent="activeSection = 'activity'"
                 @click="activeSection = 'activity'"
               >
-                <i aria-hidden="true" class="iconify" data-icon="feather:activity"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:activity"
+                />
               </a>
             </div>
             <div class="toolbar-icon">
@@ -209,7 +255,11 @@ onUnmounted(() => {
                 @keydown.space.prevent="activeSection = 'address'"
                 @click="activeSection = 'address'"
               >
-                <i aria-hidden="true" class="iconify" data-icon="feather:map-pin"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:map-pin"
+                />
               </a>
             </div>
             <div class="toolbar-icon">
@@ -221,7 +271,11 @@ onUnmounted(() => {
                 @keydown.space.prevent="activeSection = 'settings'"
                 @click="activeSection = 'settings'"
               >
-                <i aria-hidden="true" class="iconify" data-icon="feather:settings"></i>
+                <i
+                  aria-hidden="true"
+                  class="iconify"
+                  data-icon="feather:settings"
+                />
               </a>
             </div>
           </div>
@@ -233,7 +287,9 @@ onUnmounted(() => {
         >
           <div class="widget-toolbar">
             <div class="left">
-              <h3 class="is-bigger">My Order</h3>
+              <h3 class="is-bigger">
+                My Order
+              </h3>
             </div>
             <div class="right">
               <span class="tag is-curved">0 items</span>
@@ -248,31 +304,43 @@ onUnmounted(() => {
                 class="light-image"
                 src="/@src/assets/illustrations/dashboards/food/cart-placeholder.svg"
                 alt=""
-              />
+              >
               <img
                 class="dark-image"
                 src="/@src/assets/illustrations/dashboards/food/cart-placeholder.svg"
                 alt=""
-              />
+              >
             </template>
           </VPlaceholderSection>
           <div class="cart-items has-slimscroll is-hidden">
             <div class="cart-item">
-              <VAvatar picture="/demo/photos/food/1.jpg" size="medium" squared />
+              <VAvatar
+                picture="/demo/photos/food/1.jpg"
+                size="medium"
+                squared
+              />
               <div class="meta">
                 <span class="text"> Double XL Burger </span>
                 <span class="price">$15.50 x 1</span>
               </div>
             </div>
             <div class="cart-item">
-              <VAvatar picture="/demo/photos/food/2.jpg" size="medium" squared />
+              <VAvatar
+                picture="/demo/photos/food/2.jpg"
+                size="medium"
+                squared
+              />
               <div class="meta">
                 <span class="text"> Cherry Cupcakes </span>
                 <span class="price">$8.00 x 3</span>
               </div>
             </div>
             <div class="cart-item">
-              <VAvatar picture="/demo/photos/food/3.jpg" size="medium" squared />
+              <VAvatar
+                picture="/demo/photos/food/3.jpg"
+                size="medium"
+                squared
+              />
               <div class="meta">
                 <span class="text"> Extra Fries </span>
                 <span class="price">$7.90 x 2</span>
@@ -284,11 +352,21 @@ onUnmounted(() => {
               <span class="label">Total</span>
               <span>$0.00</span>
             </div>
-            <VButton color="primary" raised bold fullwidth> Start Checkout </VButton>
+            <VButton
+              color="primary"
+              raised
+              bold
+              fullwidth
+            >
+              Start Checkout
+            </VButton>
           </div>
         </div>
 
-        <div class="side-section" :class="[activeSection === 'activity' && 'is-active']">
+        <div
+          class="side-section"
+          :class="[activeSection === 'activity' && 'is-active']"
+        >
           <UIWidget class="followers-widget">
             <template #header>
               <UIWidgetToolbarDropdown title="Followers" />
@@ -306,10 +384,16 @@ onUnmounted(() => {
           />
         </div>
 
-        <div class="side-section" :class="[activeSection === 'address' && 'is-active']">
+        <div
+          class="side-section"
+          :class="[activeSection === 'address' && 'is-active']"
+        >
           <UIWidget class="text-widget">
             <template #header>
-              <UIWidgetToolbarIcon title="Deliver to" icon="feather:map-pin" />
+              <UIWidgetToolbarIcon
+                title="Deliver to"
+                icon="feather:map-pin"
+              />
             </template>
             <template #body>
               <div class="widget-content">
@@ -333,7 +417,10 @@ onUnmounted(() => {
           />
         </div>
 
-        <div class="side-section" :class="[activeSection === 'settings' && 'is-active']">
+        <div
+          class="side-section"
+          :class="[activeSection === 'settings' && 'is-active']"
+        >
           <UIWidget class="icon-list-widget">
             <template #body>
               <UIWidgetIconList :list="iconList" />

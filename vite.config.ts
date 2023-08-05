@@ -22,6 +22,8 @@ import { VitePluginVueroDoc } from './vite-plugin-vuero-doc'
 // options via env variables
 const MINIFY_IMAGES = process.env.MINIFY ? process.env.MINIFY === 'true' : false
 
+const isProd = process.env.NODE_ENV === 'production'
+
 /**
  * This is the main configuration file for vitejs
  *
@@ -312,6 +314,52 @@ export default defineConfig({
             sizes: '512x512',
             type: 'image/png',
             purpose: 'any maskable',
+          },
+        ],
+      },
+      mode: isProd ? 'production' : 'development',
+      // registerType: 'autoUpdate',
+      workbox: {
+        /**
+         * precache files that match the glob pattern
+         *
+         * @see https://vite-pwa-org.netlify.app/guide/service-worker-precache.html
+         */
+        globPatterns: ['**/*.{js,css,ico,png,svg,webp,jpg,jpeg}'],
+
+        /**
+         * add external cache of google fonts
+         *
+         * @see https://vite-pwa-org.netlify.app/workbox/generate-sw.html
+         */
+        runtimeCaching: [
+          {
+            urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'google-fonts-cache',
+              expiration: {
+                maxEntries: 10,
+                maxAgeSeconds: 60 * 60 * 24 * 365, // <== 365 days
+              },
+              cacheableResponse: {
+                statuses: [0, 200],
+              },
+            },
+          },
+          {
+            urlPattern: /^https:\/\/fonts\.gstatic\.com\/.*/i,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'gstatic-fonts-cache',
+              expiration: {
+                maxEntries: 10,
+                maxAgeSeconds: 60 * 60 * 24 * 365, // <== 365 days
+              },
+              cacheableResponse: {
+                statuses: [0, 200],
+              },
+            },
           },
         ],
       },

@@ -40,12 +40,18 @@ const filteredData = computed(() => {
             v-model="filters"
             class="input custom-text-filter"
             placeholder="Search..."
-          />
+          >
         </VControl>
       </VField>
 
       <VButtons>
-        <VButton color="primary" icon="fas fa-plus" elevated> New Offer </VButton>
+        <VButton
+          color="primary"
+          icon="fas fa-plus"
+          elevated
+        >
+          New Offer
+        </VButton>
       </VButtons>
     </div>
     <div class="datatable-wrapper">
@@ -60,11 +66,17 @@ const filteredData = computed(() => {
             <th>Actions</th>
           </thead>
           <tbody>
-            <tr v-for="offer in filteredData" :key="offer.id">
+            <tr
+              v-for="offer in filteredData"
+              :key="offer.id"
+            >
               <td>{{ offer.id }}</td>
               <td>
                 <div class="flex-media">
-                  <VAvatar :picture="offer.logo" alt="Avatar" />
+                  <VAvatar
+                    :picture="offer.logo"
+                    alt="Avatar"
+                  />
                   <div class="meta">
                     <h3>{{ offer.title }}</h3>
                   </div>
@@ -92,12 +104,12 @@ const filteredData = computed(() => {
             class="light-image"
             src="/@src/assets/illustrations/placeholders/search-7.svg"
             alt=""
-          />
+          >
           <img
             class="dark-image"
             src="/@src/assets/illustrations/placeholders/search-7-dark.svg"
             alt=""
-          />
+          >
         </template>
       </VPlaceholderPage>
     </div>

@@ -15,9 +15,17 @@ const onSubmit = () => {
 </script>
 
 <template>
-  <form method="post" novalidate class="form-layout" @submit.prevent="onSubmit">
+  <form
+    method="post"
+    novalidate
+    class="form-layout"
+    @submit.prevent="onSubmit"
+  >
     <div class="form-outer">
-      <div :class="[isStuck && 'is-stuck']" class="form-header stuck-header">
+      <div
+        :class="[isStuck && 'is-stuck']"
+        class="form-header stuck-header"
+      >
         <div class="form-header-inner">
           <div class="left">
             <h3>Request a Demo</h3>
@@ -32,7 +40,13 @@ const onSubmit = () => {
               >
                 Cancel
               </VButton>
-              <VButton type="submit" color="primary" raised> Schedule </VButton>
+              <VButton
+                type="submit"
+                color="primary"
+                raised
+              >
+                Schedule
+              </VButton>
             </div>
           </div>
         </div>
@@ -50,7 +64,11 @@ const onSubmit = () => {
               <VField>
                 <VLabel>First Name</VLabel>
                 <VControl icon="feather:user">
-                  <VInput type="text" placeholder="" autocomplete="given-name" />
+                  <VInput
+                    type="text"
+                    placeholder=""
+                    autocomplete="given-name"
+                  />
                 </VControl>
               </VField>
             </div>
@@ -58,7 +76,11 @@ const onSubmit = () => {
               <VField>
                 <VLabel>Last Name</VLabel>
                 <VControl icon="feather:user">
-                  <VInput type="text" placeholder="" autocomplete="family-name" />
+                  <VInput
+                    type="text"
+                    placeholder=""
+                    autocomplete="family-name"
+                  />
                 </VControl>
               </VField>
             </div>
@@ -89,7 +111,11 @@ const onSubmit = () => {
               <VField>
                 <VLabel>Company Name</VLabel>
                 <VControl icon="feather:briefcase">
-                  <VInput type="text" placeholder="" autocomplete="organization" />
+                  <VInput
+                    type="text"
+                    placeholder=""
+                    autocomplete="organization"
+                  />
                 </VControl>
               </VField>
             </div>
@@ -97,7 +123,12 @@ const onSubmit = () => {
               <VField>
                 <VLabel>Company Phone</VLabel>
                 <VControl icon="feather:phone">
-                  <VInput type="tel" placeholder="" autocomplete="tel" inputmode="tel" />
+                  <VInput
+                    type="tel"
+                    placeholder=""
+                    autocomplete="tel"
+                    inputmode="tel"
+                  />
                 </VControl>
               </VField>
             </div>
@@ -177,7 +208,11 @@ const onSubmit = () => {
             </div>
             <div class="column is-6">
               <ClientOnly>
-                <VDatePicker v-model="date" color="green" trim-weeks>
+                <VDatePicker
+                  v-model="date"
+                  color="green"
+                  trim-weeks
+                >
                   <template #default="{ inputValue, inputEvents }">
                     <VField>
                       <VLabel>Prefered Date</VLabel>
@@ -188,7 +223,7 @@ const onSubmit = () => {
                           placeholder="Select a date"
                           :value="inputValue"
                           v-on="inputEvents"
-                        />
+                        >
                       </VControl>
                     </VField>
                   </template>
@@ -206,7 +241,7 @@ const onSubmit = () => {
                     autocomplete="off"
                     autocapitalize="off"
                     spellcheck="true"
-                  ></VTextarea>
+                  />
                 </VControl>
               </VField>
             </div>

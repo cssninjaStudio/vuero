@@ -14,7 +14,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                 <img
                   src="/@src/assets/illustrations/dashboards/lifestyle/reading.svg"
                   alt=""
-                />
+                >
               </div>
               <div class="header-meta">
                 <h3>Hello, Erik.</h3>
@@ -22,7 +22,13 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                   Have any ideas for a new article? If not, you should definitely check
                   the feed for some inspiration.
                 </p>
-                <VButton light outlined icon="feather:plus"> New Article </VButton>
+                <VButton
+                  light
+                  outlined
+                  icon="feather:plus"
+                >
+                  New Article
+                </VButton>
               </div>
             </div>
           </div>
@@ -50,16 +56,28 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
             <div class="featured-authors">
               <!--Header-->
               <div class="featured-authors-header">
-                <h3 class="dark-inverted">Featured Authors</h3>
-                <a class="action-link" tabindex="0">View All</a>
+                <h3 class="dark-inverted">
+                  Featured Authors
+                </h3>
+                <a
+                  class="action-link"
+                  tabindex="0"
+                >View All</a>
               </div>
 
               <div class="featured-authors-list">
                 <!--Item-->
                 <div class="featured-authors-item">
-                  <VBlock title="Alice C." subtitle="Software Engineer" center>
+                  <VBlock
+                    title="Alice C."
+                    subtitle="Software Engineer"
+                    center
+                  >
                     <template #icon>
-                      <VAvatar picture="/demo/avatars/7.jpg" squared />
+                      <VAvatar
+                        picture="/demo/avatars/7.jpg"
+                        squared
+                      />
                     </template>
                     <template #action>
                       <span class="dark-inverted">112K</span>
@@ -68,9 +86,16 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                 </div>
                 <!--Item-->
                 <div class="featured-authors-item">
-                  <VBlock title="Elizabeth F." subtitle="Web Developer" center>
+                  <VBlock
+                    title="Elizabeth F."
+                    subtitle="Web Developer"
+                    center
+                  >
                     <template #icon>
-                      <VAvatar picture="/demo/avatars/21.jpg" squared />
+                      <VAvatar
+                        picture="/demo/avatars/21.jpg"
+                        squared
+                      />
                     </template>
                     <template #action>
                       <span class="dark-inverted">91K</span>
@@ -79,9 +104,16 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                 </div>
                 <!--Item-->
                 <div class="featured-authors-item">
-                  <VBlock title="Jonathan K." subtitle="UI/UX Designer" center>
+                  <VBlock
+                    title="Jonathan K."
+                    subtitle="UI/UX Designer"
+                    center
+                  >
                     <template #icon>
-                      <VAvatar picture="/demo/avatars/32.jpg" squared />
+                      <VAvatar
+                        picture="/demo/avatars/32.jpg"
+                        squared
+                      />
                     </template>
                     <template #action>
                       <span class="dark-inverted">72K</span>
@@ -90,9 +122,16 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                 </div>
                 <!--Item-->
                 <div class="featured-authors-item">
-                  <VBlock title="Christie D." subtitle="Software Engineer" center>
+                  <VBlock
+                    title="Christie D."
+                    subtitle="Software Engineer"
+                    center
+                  >
                     <template #icon>
-                      <VAvatar picture="/demo/avatars/38.jpg" squared />
+                      <VAvatar
+                        picture="/demo/avatars/38.jpg"
+                        squared
+                      />
                     </template>
                     <template #action>
                       <span class="dark-inverted">19K</span>
@@ -109,8 +148,13 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
             <div class="updates">
               <!--Header-->
               <div class="updates-header">
-                <h3 class="dark-inverted">Updates</h3>
-                <a class="action-link" tabindex="0">View All</a>
+                <h3 class="dark-inverted">
+                  Updates
+                </h3>
+                <a
+                  class="action-link"
+                  tabindex="0"
+                >View All</a>
               </div>
 
               <div class="updates-list">
@@ -150,14 +194,23 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
         <div class="articles-feed">
           <!--Header-->
           <div class="articles-feed-header">
-            <h3 class="dark-inverted">New Articles</h3>
-            <a class="action-link" tabindex="0">View All</a>
+            <h3 class="dark-inverted">
+              New Articles
+            </h3>
+            <a
+              class="action-link"
+              tabindex="0"
+            >View All</a>
           </div>
           <!--Subheader-->
           <div class="articles-feed-subheader">
             <div class="selector">
-              <button class="button is-selected">Recent</button>
-              <button class="button">Popular</button>
+              <button class="button is-selected">
+                Recent
+              </button>
+              <button class="button">
+                Popular
+              </button>
             </div>
           </div>
           <!--List-->
@@ -170,15 +223,21 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                     src="/demo/photos/38.jpg"
                     alt=""
                     @error.once="onceImageErrored(800, 600)"
-                  />
+                  >
                 </div>
                 <div class="featured-content">
                   <h4 class="dark-inverted">Learning the modern novel</h4>
                   <p>Some article content and lorem ipsum sit dolor amet</p>
 
-                  <VBlock title="Alice C." subtitle="Software Engineer">
+                  <VBlock
+                    title="Alice C."
+                    subtitle="Software Engineer"
+                  >
                     <template #icon>
-                      <VAvatar picture="/demo/avatars/7.jpg" squared />
+                      <VAvatar
+                        picture="/demo/avatars/7.jpg"
+                        squared
+                      />
                     </template>
                   </VBlock>
                 </div>
@@ -190,15 +249,21 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                     src="/demo/photos/37.jpg"
                     alt=""
                     @error.once="onceImageErrored(800, 600)"
-                  />
+                  >
                 </div>
                 <div class="featured-content">
                   <h4 class="dark-inverted">5 Writing tips for you</h4>
                   <p>Some article content and lorem ipsum sit dolor amet</p>
 
-                  <VBlock title="Mary L." subtitle="Project Manager">
+                  <VBlock
+                    title="Mary L."
+                    subtitle="Project Manager"
+                  >
                     <template #icon>
-                      <VAvatar picture="/demo/avatars/5.jpg" squared />
+                      <VAvatar
+                        picture="/demo/avatars/5.jpg"
+                        squared
+                      />
                     </template>
                   </VBlock>
                 </div>

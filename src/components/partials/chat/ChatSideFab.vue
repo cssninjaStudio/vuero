@@ -16,7 +16,11 @@ const chat = useChat()
     "
     @click="chat.setMobileConversationDetailsOpen(!chat.mobileConversationDetailsOpen)"
   >
-    <i aria-hidden="true" class="iconify" data-icon="feather:chevron-left"></i>
+    <i
+      aria-hidden="true"
+      class="iconify"
+      data-icon="feather:chevron-left"
+    />
   </a>
 </template>
 
@@ -78,7 +82,7 @@ const chat = useChat()
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media only screen and (device-width >= 768px) and (device-width <= 1024px) and (orientation: portrait) {
   .chat-side-fab {
     top: 75px;
     inset-inline-end: 16px;

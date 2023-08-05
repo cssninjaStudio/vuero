@@ -11,26 +11,43 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
         badge="/images/icons/flags/united-states-of-america.svg"
       />
 
-      <h3 class="title is-4 is-narrow is-thin">Erik Kovalsky</h3>
+      <h3 class="title is-4 is-narrow is-thin">
+        Erik Kovalsky
+      </h3>
       <p class="light-text">
         Hey everyone, Iam a product manager from New York and Iam looking for new
         opportunities in the software business.
       </p>
       <div class="profile-stats">
         <div class="profile-stat">
-          <i aria-hidden="true" class="lnil lnil-users-alt"></i>
+          <i
+            aria-hidden="true"
+            class="lnil lnil-users-alt"
+          />
           <span>500+ Relations</span>
         </div>
-        <div class="separator"></div>
+        <div class="separator" />
         <div class="profile-stat">
-          <i aria-hidden="true" class="lnil lnil-checkmark-circle"></i>
+          <i
+            aria-hidden="true"
+            class="lnil lnil-checkmark-circle"
+          />
           <span>78 Projects</span>
         </div>
-        <div class="separator"></div>
+        <div class="separator" />
         <div class="socials">
-          <a><i aria-hidden="true" class="fab fa-facebook-f"></i></a>
-          <a><i aria-hidden="true" class="fab fa-twitter"></i></a>
-          <a><i aria-hidden="true" class="fab fa-linkedin-in"></i></a>
+          <a><i
+            aria-hidden="true"
+            class="fab fa-facebook-f"
+          /></a>
+          <a><i
+            aria-hidden="true"
+            class="fab fa-twitter"
+          /></a>
+          <a><i
+            aria-hidden="true"
+            class="fab fa-linkedin-in"
+          /></a>
         </div>
       </div>
     </div>
@@ -43,7 +60,10 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
               <div class="section-title">
                 <h4>About Me</h4>
                 <RouterLink to="/sidebar/layouts/profile-edit">
-                  <i aria-hidden="true" class="lnil lnil-pencil"></i>
+                  <i
+                    aria-hidden="true"
+                    class="lnil lnil-pencil"
+                  />
                 </RouterLink>
               </div>
               <div class="section-content">
@@ -60,7 +80,10 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
               <div class="section-title">
                 <h4>Experience</h4>
                 <RouterLink to="/sidebar/layouts/profile-edit-experience">
-                  <i aria-hidden="true" class="lnil lnil-pencil"></i>
+                  <i
+                    aria-hidden="true"
+                    class="lnil lnil-pencil"
+                  />
                 </RouterLink>
               </div>
               <div class="section-content">
@@ -70,12 +93,15 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                       src="/demo/photos/brands/airbnb.svg"
                       alt=""
                       @error.once="onceImageErrored(150)"
-                    />
+                    >
                     <div class="meta">
                       <span class="dark-inverted">Airbnb HQ</span>
                       <span>
                         <span>January 2018</span>
-                        <i aria-hidden="true" class="fas fa-circle"></i>
+                        <i
+                          aria-hidden="true"
+                          class="fas fa-circle"
+                        />
                         <span>October 2020</span>
                       </span>
                       <span>Product Manager</span>
@@ -86,12 +112,15 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                       src="/demo/photos/brands/facebook.svg"
                       alt=""
                       @error.once="onceImageErrored(150)"
-                    />
+                    >
                     <div class="meta">
                       <span class="dark-inverted">Facebook</span>
                       <span>
                         <span>January 2018</span>
-                        <i aria-hidden="true" class="fas fa-circle"></i>
+                        <i
+                          aria-hidden="true"
+                          class="fas fa-circle"
+                        />
                         <span>October 2020</span>
                       </span>
                       <span>Product Manager</span>
@@ -102,12 +131,15 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                       src="/demo/photos/brands/atlassian.svg"
                       alt=""
                       @error.once="onceImageErrored(150)"
-                    />
+                    >
                     <div class="meta">
                       <span class="dark-inverted">Atlassian</span>
                       <span>
                         <span>January 2018</span>
-                        <i aria-hidden="true" class="fas fa-circle"></i>
+                        <i
+                          aria-hidden="true"
+                          class="fas fa-circle"
+                        />
                         <span>October 2020</span>
                       </span>
                       <span>Web Developer</span>
@@ -118,12 +150,15 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                       src="/demo/photos/brands/github.svg"
                       alt=""
                       @error.once="onceImageErrored(150)"
-                    />
+                    >
                     <div class="meta">
                       <span class="dark-inverted">Github</span>
                       <span>
                         <span>January 2018</span>
-                        <i aria-hidden="true" class="fas fa-circle"></i>
+                        <i
+                          aria-hidden="true"
+                          class="fas fa-circle"
+                        />
                         <span>October 2020</span>
                       </span>
                       <span>Web Developer</span>
@@ -131,7 +166,9 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                   </div>
                 </div>
                 <div class="more-button has-text-centered">
-                  <VButton light>View More</VButton>
+                  <VButton light>
+                    View More
+                  </VButton>
                 </div>
               </div>
             </div>
@@ -139,7 +176,10 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
               <div class="section-title">
                 <h4>Languages</h4>
                 <RouterLink to="/sidebar/layouts/profile-edit-skills">
-                  <i aria-hidden="true" class="lnil lnil-pencil"></i>
+                  <i
+                    aria-hidden="true"
+                    class="lnil lnil-pencil"
+                  />
                 </RouterLink>
               </div>
               <div class="section-content">
@@ -230,7 +270,10 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
               <div class="section-title">
                 <h4>Skills</h4>
                 <RouterLink to="/sidebar/layouts/profile-edit-skills">
-                  <i aria-hidden="true" class="lnil lnil-pencil"></i>
+                  <i
+                    aria-hidden="true"
+                    class="lnil lnil-pencil"
+                  />
                 </RouterLink>
               </div>
               <div class="section-content">
@@ -244,28 +287,64 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                       <span>7 years of experience</span>
                     </div>
                     <div class="people">
-                      <VAvatar size="small" initials="BT" color="warning" />
-                      <VAvatar size="small" picture="/demo/avatars/18.jpg" />
-                      <VAvatar size="small" initials="JD" color="info" />
-                      <VAvatar size="small" picture="/demo/avatars/7.jpg" />
-                      <VAvatar size="small" initials="38" />
+                      <VAvatar
+                        size="small"
+                        initials="BT"
+                        color="warning"
+                      />
+                      <VAvatar
+                        size="small"
+                        picture="/demo/avatars/18.jpg"
+                      />
+                      <VAvatar
+                        size="small"
+                        initials="JD"
+                        color="info"
+                      />
+                      <VAvatar
+                        size="small"
+                        picture="/demo/avatars/7.jpg"
+                      />
+                      <VAvatar
+                        size="small"
+                        initials="38"
+                      />
                     </div>
                   </div>
 
                   <!--Skill-->
                   <div class="skills-item">
-                    <VIconWrap icon="lnil lnil-burger-alt" placeholder />
+                    <VIconWrap
+                      icon="lnil lnil-burger-alt"
+                      placeholder
+                    />
 
                     <div class="skill-info">
                       <span class="dark-inverted">Product Management</span>
                       <span>4 years of experience</span>
                     </div>
                     <div class="people">
-                      <VAvatar size="small" picture="/demo/avatars/21.jpg" />
-                      <VAvatar size="small" initials="AT" color="success" />
-                      <VAvatar size="small" picture="/demo/avatars/39.jpg" />
-                      <VAvatar size="small" picture="/demo/avatars/23.jpg" />
-                      <VAvatar size="small" initials="27" />
+                      <VAvatar
+                        size="small"
+                        picture="/demo/avatars/21.jpg"
+                      />
+                      <VAvatar
+                        size="small"
+                        initials="AT"
+                        color="success"
+                      />
+                      <VAvatar
+                        size="small"
+                        picture="/demo/avatars/39.jpg"
+                      />
+                      <VAvatar
+                        size="small"
+                        picture="/demo/avatars/23.jpg"
+                      />
+                      <VAvatar
+                        size="small"
+                        initials="27"
+                      />
                     </div>
                   </div>
 
@@ -278,11 +357,27 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                       <span>10+ years of experience</span>
                     </div>
                     <div class="people">
-                      <VAvatar size="small" picture="/demo/avatars/38.jpg" />
-                      <VAvatar size="small" picture="/demo/avatars/11.jpg" />
-                      <VAvatar size="small" initials="SC" color="h-purple" />
-                      <VAvatar size="small" picture="/demo/avatars/13.jpg" />
-                      <VAvatar size="small" initials="19" />
+                      <VAvatar
+                        size="small"
+                        picture="/demo/avatars/38.jpg"
+                      />
+                      <VAvatar
+                        size="small"
+                        picture="/demo/avatars/11.jpg"
+                      />
+                      <VAvatar
+                        size="small"
+                        initials="SC"
+                        color="h-purple"
+                      />
+                      <VAvatar
+                        size="small"
+                        picture="/demo/avatars/13.jpg"
+                      />
+                      <VAvatar
+                        size="small"
+                        initials="19"
+                      />
                     </div>
                   </div>
 
@@ -295,17 +390,35 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                       <span>10+ years of experience</span>
                     </div>
                     <div class="people">
-                      <VAvatar size="small" picture="/demo/avatars/21.jpg" />
-                      <VAvatar size="small" initials="SC" color="h-purple" />
-                      <VAvatar size="small" picture="/demo/avatars/5.jpg" />
-                      <VAvatar size="small" picture="/demo/avatars/7.jpg" />
-                      <VAvatar size="small" initials="31" />
+                      <VAvatar
+                        size="small"
+                        picture="/demo/avatars/21.jpg"
+                      />
+                      <VAvatar
+                        size="small"
+                        initials="SC"
+                        color="h-purple"
+                      />
+                      <VAvatar
+                        size="small"
+                        picture="/demo/avatars/5.jpg"
+                      />
+                      <VAvatar
+                        size="small"
+                        picture="/demo/avatars/7.jpg"
+                      />
+                      <VAvatar
+                        size="small"
+                        initials="31"
+                      />
                     </div>
                   </div>
                 </div>
 
                 <div class="more-button has-text-centered">
-                  <VButton light>View More</VButton>
+                  <VButton light>
+                    View More
+                  </VButton>
                 </div>
               </div>
             </div>
@@ -316,8 +429,14 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
             <div class="profile-card-section no-padding">
               <div class="section-title">
                 <h4>Recommendations</h4>
-                <a><i aria-hidden="true" class="lnil lnil-pencil"></i></a>
-                <a class="action-link" tabindex="0">View All</a>
+                <a><i
+                  aria-hidden="true"
+                  class="lnil lnil-pencil"
+                /></a>
+                <a
+                  class="action-link"
+                  tabindex="0"
+                >View All</a>
               </div>
               <div class="section-content">
                 <div class="recommendations-wrapper">
@@ -328,7 +447,9 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                       picture="/demo/avatars/5.jpg"
                       badge="/images/icons/flags/united-states-of-america.svg"
                     />
-                    <h3 class="dark-inverted">Project Manager</h3>
+                    <h3 class="dark-inverted">
+                      Project Manager
+                    </h3>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. At multis
                       malis affectus. Certe, nisi voluptatem tanti aestimaretis.
@@ -347,7 +468,9 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                       badge="/images/icons/flags/united-states-of-america.svg"
                     />
 
-                    <h3 class="dark-inverted">UI/UX Designer</h3>
+                    <h3 class="dark-inverted">
+                      UI/UX Designer
+                    </h3>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. At multis
                       malis affectus. Certe, nisi voluptatem tanti aestimaretis.
@@ -369,12 +492,17 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
               <div class="section-title">
                 <h4>Notifications</h4>
                 <VControl>
-                  <VSwitchBlock color="success" checked />
+                  <VSwitchBlock
+                    color="success"
+                    checked
+                  />
                 </VControl>
               </div>
               <div class="section-content">
                 <div class="network-notifications">
-                  <h3 class="dark-inverted">Notify Your Network?</h3>
+                  <h3 class="dark-inverted">
+                    Notify Your Network?
+                  </h3>
                   <p>
                     Enable or disable this setting to manage if your network should be
                     notified when you make changes to your profile.
@@ -390,9 +518,15 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
               <div class="section-title">
                 <h4>Tools</h4>
                 <RouterLink to="/sidebar/layouts/profile-edit-skills">
-                  <i aria-hidden="true" class="lnil lnil-pencil"></i>
+                  <i
+                    aria-hidden="true"
+                    class="lnil lnil-pencil"
+                  />
                 </RouterLink>
-                <a class="action-link" tabindex="0">View All</a>
+                <a
+                  class="action-link"
+                  tabindex="0"
+                >View All</a>
               </div>
               <div class="section-content">
                 <div class="tools-wrapper">
@@ -468,12 +602,18 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
             <div class="profile-card-section no-padding">
               <div class="section-title">
                 <h4>Recent Views</h4>
-                <a class="action-link" tabindex="0">View All</a>
+                <a
+                  class="action-link"
+                  tabindex="0"
+                >View All</a>
               </div>
               <div class="section-content">
                 <div class="people-wrapper">
                   <!--People-->
-                  <a href="#" class="people-item">
+                  <a
+                    href="#"
+                    class="people-item"
+                  >
                     <VAvatar
                       picture="/demo/avatars/25.jpg"
                       badge="/images/icons/stacks/js.svg"
@@ -486,7 +626,10 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                   </a>
 
                   <!--People-->
-                  <a href="#" class="people-item">
+                  <a
+                    href="#"
+                    class="people-item"
+                  >
                     <VAvatar
                       picture="/demo/avatars/29.jpg"
                       badge="/images/icons/stacks/python.svg"
@@ -499,7 +642,10 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                   </a>
 
                   <!--People-->
-                  <a href="#" class="people-item">
+                  <a
+                    href="#"
+                    class="people-item"
+                  >
                     <VAvatar
                       picture="/demo/avatars/38.jpg"
                       badge="/images/icons/stacks/vuejs.svg"
@@ -512,7 +658,10 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                   </a>
 
                   <!--People-->
-                  <a href="#" class="people-item">
+                  <a
+                    href="#"
+                    class="people-item"
+                  >
                     <VAvatar
                       picture="/demo/avatars/28.jpg"
                       badge="/images/icons/stacks/angular.svg"
@@ -525,7 +674,10 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                   </a>
 
                   <!--People-->
-                  <a href="#" class="people-item">
+                  <a
+                    href="#"
+                    class="people-item"
+                  >
                     <VAvatar
                       picture="/demo/avatars/19.jpg"
                       badge="/images/icons/stacks/cplus.svg"

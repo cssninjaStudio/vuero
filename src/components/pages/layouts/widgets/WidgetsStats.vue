@@ -35,8 +35,7 @@ const {
           :type="spark1.chart.type"
           :series="spark1.series"
           :options="spark1"
-        >
-        </ApexChart>
+        />
       </SparkStatWidget>
     </div>
 
@@ -48,8 +47,7 @@ const {
           :type="spark2.chart.type"
           :series="spark2.series"
           :options="spark2"
-        >
-        </ApexChart>
+        />
       </SparkStatWidget>
     </div>
 
@@ -61,8 +59,7 @@ const {
           :type="spark3.chart.type"
           :series="spark3.series"
           :options="spark3"
-        >
-        </ApexChart>
+        />
       </SparkStatWidget>
     </div>
 
@@ -74,8 +71,7 @@ const {
           :type="spark4.chart.type"
           :series="spark4.series"
           :options="spark4"
-        >
-        </ApexChart>
+        />
       </SparkStatWidget>
     </div>
 
@@ -95,8 +91,7 @@ const {
           :type="lineStatsChartOptions.chart.type"
           :series="lineStatsChartOptions.series"
           :options="lineStatsChartOptions"
-        >
-        </ApexChart>
+        />
       </LineStatWidget>
     </div>
 
@@ -116,36 +111,39 @@ const {
           :type="revenueOptions.chart.type"
           :series="revenueOptions.series"
           :options="revenueOptions"
-        >
-        </ApexChart>
+        />
       </LineStatWidget>
     </div>
 
     <!--Flex Stat Widget-->
     <div class="column is-6">
-      <FlexStatWidget title="Sales Revenue" straight>
+      <FlexStatWidget
+        title="Sales Revenue"
+        straight
+      >
         <ApexChart
           id="flex-stat-circle"
           :height="flexRadialChartCircleOptions.chart.height"
           :type="flexRadialChartCircleOptions.chart.type"
           :series="flexRadialChartCircleOptions.series"
           :options="flexRadialChartCircleOptions"
-        >
-        </ApexChart>
+        />
       </FlexStatWidget>
     </div>
 
     <!--Flex Stat Widget-->
     <div class="column is-6">
-      <FlexStatWidget title="Sales Revenue" straight>
+      <FlexStatWidget
+        title="Sales Revenue"
+        straight
+      >
         <ApexChart
           id="flex-stat-radial"
           :height="flexRadialChartStripesOptions.chart.height"
           :type="flexRadialChartStripesOptions.chart.type"
           :series="flexRadialChartStripesOptions.series"
           :options="flexRadialChartStripesOptions"
-        >
-        </ApexChart>
+        />
       </FlexStatWidget>
     </div>
 
@@ -163,8 +161,7 @@ const {
             :type="widgetRadialGroup1Options.chart.type"
             :series="widgetRadialGroup1Options.series"
             :options="widgetRadialGroup1Options"
-          >
-          </ApexChart>
+          />
         </template>
         <template #chart2>
           <ApexChart
@@ -173,8 +170,7 @@ const {
             :type="widgetRadialGroup2Options.chart.type"
             :series="widgetRadialGroup2Options.series"
             :options="widgetRadialGroup2Options"
-          >
-          </ApexChart>
+          />
         </template>
         <template #chart3>
           <ApexChart
@@ -183,8 +179,7 @@ const {
             :type="widgetRadialGroup3Options.chart.type"
             :series="widgetRadialGroup3Options.series"
             :options="widgetRadialGroup3Options"
-          >
-          </ApexChart>
+          />
         </template>
       </GroupedStatWidget>
     </div>
@@ -204,8 +199,7 @@ const {
             :type="widgetGaugeGroup1Options.chart.type"
             :series="widgetGaugeGroup1Options.series"
             :options="widgetGaugeGroup1Options"
-          >
-          </ApexChart>
+          />
         </template>
         <template #chart2>
           <ApexChart
@@ -214,8 +208,7 @@ const {
             :type="widgetGaugeGroup2Options.chart.type"
             :series="widgetGaugeGroup2Options.series"
             :options="widgetGaugeGroup2Options"
-          >
-          </ApexChart>
+          />
         </template>
         <template #chart3>
           <ApexChart
@@ -224,25 +217,38 @@ const {
             :type="widgetGaugeGroup3Options.chart.type"
             :series="widgetGaugeGroup3Options.series"
             :options="widgetGaugeGroup3Options"
-          >
-          </ApexChart>
+          />
         </template>
       </GroupedStatWidget>
     </div>
 
     <!--Followers Stat Widget-->
     <div class="column is-4">
-      <SocialStatWidget icon="fab fa-twitter" value="138K" straight />
+      <SocialStatWidget
+        icon="fab fa-twitter"
+        value="138K"
+        straight
+      />
     </div>
 
     <!--Followers Stat Widget-->
     <div class="column is-4">
-      <SocialStatWidget icon="fab fa-twitter" value="138K" straight squared />
+      <SocialStatWidget
+        icon="fab fa-twitter"
+        value="138K"
+        straight
+        squared
+      />
     </div>
 
     <!--Followers Stat Widget-->
     <div class="column is-4">
-      <SocialStatWidget icon="fab fa-twitter" value="138K" straight colored />
+      <SocialStatWidget
+        icon="fab fa-twitter"
+        value="138K"
+        straight
+        colored
+      />
     </div>
 
     <!--Table Widget-->

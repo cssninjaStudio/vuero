@@ -19,21 +19,21 @@ const props = withDefaults(defineProps<VCardAdvancedProps>(), {
   >
     <div class="card-head">
       <div class="left">
-        <slot name="header-left"></slot>
+        <slot name="header-left" />
       </div>
       <div class="right">
-        <slot name="header-right"></slot>
+        <slot name="header-right" />
       </div>
     </div>
     <div class="card-body">
-      <slot name="content"></slot>
+      <slot name="content" />
     </div>
     <div class="card-foot">
       <div class="left">
-        <slot name="footer-left"></slot>
+        <slot name="footer-left" />
       </div>
       <div class="right">
-        <slot name="footer-right"></slot>
+        <slot name="footer-right" />
       </div>
     </div>
   </div>

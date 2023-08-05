@@ -36,7 +36,7 @@ const optionsSingle = [
           v-model="filters"
           class="input custom-text-filter"
           placeholder="Search..."
-        />
+        >
       </VControl>
 
       <div class="buttons">
@@ -50,9 +50,15 @@ const optionsSingle = [
             />
           </VControl>
         </VField>
-        <VButton color="primary" raised>
+        <VButton
+          color="primary"
+          raised
+        >
           <span class="icon">
-            <i aria-hidden="true" class="fas fa-plus"></i>
+            <i
+              aria-hidden="true"
+              class="fas fa-plus"
+            />
           </span>
           <span>Add User</span>
         </VButton>
@@ -74,12 +80,12 @@ const optionsSingle = [
             class="light-image"
             src="/@src/assets/illustrations/placeholders/search-5.svg"
             alt=""
-          />
+          >
           <img
             class="dark-image"
             src="/@src/assets/illustrations/placeholders/search-5-dark.svg"
             alt=""
-          />
+          >
         </template>
       </VPlaceholderPage>
 
@@ -89,15 +95,37 @@ const optionsSingle = [
         class="columns is-multiline is-flex-tablet-p is-half-tablet-p"
       >
         <!--Grid item-->
-        <div v-for="item in filteredData" :key="item.id" class="column is-3">
+        <div
+          v-for="item in filteredData"
+          :key="item.id"
+          class="column is-3"
+        >
           <div class="grid-item">
             <UserCardDropdown />
-            <VAvatar :picture="item.avatar" :badge="item.badge" size="big" />
-            <h3 class="dark-inverted">{{ item.fullName }}</h3>
+            <VAvatar
+              :picture="item.avatar"
+              :badge="item.badge"
+              size="big"
+            />
+            <h3 class="dark-inverted">
+              {{ item.fullName }}
+            </h3>
             <p>{{ item.position }}</p>
             <div class="button-wrap has-text-centered">
-              <VButton v-if="item.added" color="primary" raised> Add To Project </VButton>
-              <VButton v-else dark-outlined raised>Add To Team</VButton>
+              <VButton
+                v-if="item.added"
+                color="primary"
+                raised
+              >
+                Add To Project
+              </VButton>
+              <VButton
+                v-else
+                dark-outlined
+                raised
+              >
+                Add To Team
+              </VButton>
               <div>
                 <a class="dark-inverted-hover">View Profile</a>
               </div>
@@ -182,7 +210,9 @@ const optionsSingle = [
           color: var(--light-text);
           font-weight: 500;
           font-size: 0.9rem;
-          transition: opacity 0.3s, color 0.3s;
+          transition:
+            opacity 0.3s,
+            color 0.3s;
 
           &:hover,
           &:focus {
