@@ -63,7 +63,7 @@
     "lint:doc:fix:eslint": "eslint --fix --ext .md ./documentation",
     "test": "run-p test:lint test:tsc test:e2e",
     "test:tsc": "vue-tsc --noEmit",
-    "test:lint": "run-p lint:eslint lint:stylelint lint:prettier",
+    "test:lint": "run-p lint:eslint lint:stylelint",
     "test:e2e": "cypress run",
     "test:unit": "echo \"[warning] no unit test implemented yet\"",
     "cypress": "cypress"

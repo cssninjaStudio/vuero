@@ -10,9 +10,7 @@ import './styles'
 export type VueroAppContext = Awaited<ReturnType<typeof createApp>>
 export type VueroPlugin = (vuero: VueroAppContext) => void | Promise<void>
 
-const plugins = import.meta.glob<{ default: VueroPlugin }>('./plugins/*.ts', {
-  eager: true,
-})
+const plugins = import.meta.glob<{ default: VueroPlugin }>('./plugins/*.ts')
 
 // this is a helper function to define plugins with autocompletion
 export function definePlugin(plugin: VueroPlugin) {
@@ -42,7 +40,7 @@ export async function createApp() {
 
   for (const path in plugins) {
     try {
-      const { default: plugin } = plugins[path]
+      const { default: plugin } = await plugins[path]()
       await plugin(vuero)
     } catch (error) {
       console.error(`Error while loading plugin "${path}".`)
