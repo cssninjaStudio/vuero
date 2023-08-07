@@ -1,4 +1,4 @@
-export const format: 'cjs' | 'esm' = 'cjs'
+export const format: 'cjs' | 'esm' = 'esm'
 
 export function generateStaticParams(): Record<
   string,

@@ -48,7 +48,7 @@
     "ssr:dev": "jiti server.ts",
     "ssr:serve": "cross-env NODE_ENV=production jiti server.ts",
     "ssr:preview": "run-p ssr:serve preview:json-server",
-    "ssg:build": "pnpm build:update-bulma-colors && cross-env NODE_ENV=production esno build-ssg.ts",
+    "ssg:build": "pnpm build:update-bulma-colors && cross-env NODE_ENV=production jiti build-ssg.ts",
     "ssg:serve": "serve dist -p 3000",
     "preview": "run-p preview:vite preview:json-server",
     "preview:vite": "http-server dist -s --proxy http://localhost:5000? -p 5000",

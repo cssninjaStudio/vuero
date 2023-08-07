@@ -258,9 +258,8 @@ async function build() {
   await fsp.rm(path.join(outServer), { recursive: true, force: true })
 
   // when `vite-plugin-pwa` is presented, use it to regenerate SW after rendering
-  const pwaPlugin = config.plugins.find(
-    (plugin) => plugin.name === 'vite-plugin-pwa'
-  )?.api
+  const pwaPlugin = config.plugins.find((plugin) => plugin.name === 'vite-plugin-pwa')
+    ?.api
   if (pwaPlugin && !pwaPlugin.disabled && pwaPlugin.generateSW) {
     config.logger.info(colors.green('[SSG] Regenerate PWA...'))
     await pwaPlugin.generateSW()
@@ -341,9 +340,11 @@ async function renderPage({
   )
 }
 
-try {
-  await build()
-} catch (e) {
-  console.error(e)
-  process.exit(1)
-}
+;(async () => {
+  try {
+    await build()
+  } catch (e) {
+    console.error(e)
+    process.exit(1)
+  }
+})()
