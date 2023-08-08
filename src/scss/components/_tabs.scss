@@ -202,19 +202,19 @@
 .tabs-wrapper-alt {
   &.is-slider {
     &.is-inverted {
-      .tabs {
+      > .tabs-inner > .tabs {
         background: var(--white);
       }
     }
 
     &.is-squared {
-      .tabs,
+      > .tabs-inner > .tabs,
       .tab-naver {
         border-radius: 8px;
       }
     }
 
-    .tabs {
+    > .tabs-inner > .tabs {
       position: relative;
       background: var(--fade-grey-light-2);
       border: 1px solid var(--fade-grey);
@@ -311,19 +311,19 @@
 .tabs-wrapper-alt {
   &.is-triple-slider {
     &.is-inverted {
-      .tabs {
+      > .tabs-inner > .tabs {
         background: var(--white);
       }
     }
 
     &.is-squared {
-      .tabs,
+      > .tabs-inner > .tabs,
       .tab-naver {
         border-radius: 8px;
       }
     }
 
-    .tabs {
+    > .tabs-inner > .tabs {
       position: relative;
       background: var(--fade-grey-light-2);
       border: 1px solid var(--fade-grey);
@@ -424,13 +424,13 @@
     &.is-slider,
     &.is-triple-slider {
       &.is-inverted {
-        .tabs {
+        > .tabs-inner > .tabs {
           border: 1px solid var(--dark-sidebar-light-16) !important;
           background: var(--dark-sidebar-light-2) !important;
         }
       }
 
-      .tabs {
+      > .tabs-inner > .tabs {
         border: 1px solid var(--dark-sidebar-light-16) !important;
         background: var(--dark-sidebar-light-2) !important;
 
