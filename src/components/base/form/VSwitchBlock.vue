@@ -94,9 +94,11 @@ const internal = computed({
       class="text"
     >
       <VLabel raw>
-        <slot>
-          <span>{{ props.label }}</span>
-        </slot>
+        <span>
+          <slot>
+            {{ props.label }}
+          </slot>
+        </span>
       </VLabel>
     </div>
   </div>
