@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useVFieldContext } from '/@src/composable/useVFieldContext'
+
 export type VSwitchSegmentColor = 'primary' | 'info' | 'success' | 'warning' | 'danger'
 
 export interface VSwitchSegmentProps {
@@ -17,38 +19,64 @@ const props = withDefaults(defineProps<VSwitchSegmentProps>(), {
   labelFalse: undefined,
   color: undefined,
 })
+
+const { field, id } = useVFieldContext({
+  create: false,
+  help: 'VSwitchSegment',
+})
+
+const internal = computed({
+  get() {
+    if (field?.value) {
+      return field.value.value
+    } else {
+      return modelValue.value
+    }
+  },
+  set(value: any) {
+    if (field?.value) {
+      field.value.setValue(value)
+    }
+    modelValue.value = value
+  },
+})
 </script>
 
 <template>
   <div class="switch-segment">
     <VLabel
-      v-if="props.labelFalse"
+      v-if="props.labelFalse || 'label-false' in $slots"
       raw
       class="is-label"
     >
-      {{ props.labelFalse }}
+      <slot name="label-false">
+        {{ props.labelFalse }}
+      </slot>
     </VLabel>
     <VLabel
       raw
       class="form-switch"
       :class="[props.color && `is-${props.color}`]"
     >
-      <VInput
-        :checked="modelValue"
-        raw
+      <input
+        :id="id"
+        v-model="internal"
+        :true-value="true"
+        :false-value="false"
         v-bind="$attrs"
         type="checkbox"
         class="is-switch"
-        @change="() => (modelValue = !modelValue)"
-      />
+      >
       <i aria-hidden="true" />
     </VLabel>
     <VLabel
-      v-if="props.labelTrue"
+      v-if="props.labelTrue || 'label-true' in $slots"
       raw
       class="is-label"
     >
-      {{ props.labelTrue }}
+      <slot name="label-true">
+        {{ props.labelTrue }}
+      </slot>
     </VLabel>
   </div>
 </template>
