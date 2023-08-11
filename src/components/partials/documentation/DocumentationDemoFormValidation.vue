@@ -40,6 +40,9 @@ const zodSchema = z
     agreeTerms: z
       .boolean()
       .refine((value) => value, 'You must agree our terms of service'),
+    area: z.object({
+      timezone: z.string().min(1, 'Please select a timezone'),
+    }),
     interests: z
       .string()
       .array()
@@ -81,6 +84,9 @@ const initialValues = computed<FormInput>(() => ({
   interests: [],
   feedback: [],
   allergens: [],
+  area: {
+    timezone: '',
+  },
   agreeTerms: false,
   emailOptin: false,
 }))
@@ -260,6 +266,35 @@ const handleSignup = handleSubmit(async (values) => {
         <p class="help">
           Hold down the <kbd>Ctrl</kbd> (windows) / <kbd>Command</kbd> (Mac) button to
           select multiple options.
+        </p>
+      </VControl>
+    </VField>
+    <VField
+      id="area"
+      v-slot="{ field }"
+      class="pb-4"
+      label="Choose your timezone"
+    >
+      <VControl>
+        <VSelect>
+          <VOption :value="{ timezone: 'europe/paris', label: 'Paris' }">
+            europe
+          </VOption>
+          <VOption :value="{ timezone: 'asia/tokyo', label: 'Tokyo' }">
+            asia
+          </VOption>
+          <VOption :value="{ timezone: 'america/new_york', label: 'New York' }">
+            america
+          </VOption>
+          <VOption :value="{ timezone: 'australia/sydney', label: 'Sydney' }">
+            australia
+          </VOption>
+        </VSelect>
+        <p
+          v-if="field?.errorMessage"
+          class="help is-danger"
+        >
+          {{ field.errorMessage }}
         </p>
       </VControl>
     </VField>
