@@ -94,9 +94,9 @@ export default defineComponent({
   },
   setup(props, { attrs }) {
     const classes = computed(() => {
-      const defaultClasses = (attrs?.class || []) as any
+      const defaultClasses = (attrs?.class || []) as string[] | string
       return [
-        ...defaultClasses,
+        defaultClasses,
         props.disabled && 'is-disabled',
         props.circle && 'is-circle',
         props.bold && 'is-bold',

@@ -157,9 +157,9 @@ export default defineComponent({
   },
   setup(props, { slots, attrs }) {
     const classes = computed(() => {
-      const defaultClasses: string[] = []
+      const defaultClasses = (attrs?.class || []) as string[] | string
       return [
-        ...defaultClasses,
+        defaultClasses,
         'button',
         'v-button',
         props.disabled && 'is-disabled',
