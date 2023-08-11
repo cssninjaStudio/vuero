@@ -356,10 +356,16 @@ select {
     }
   }
 
+  &.has-addons {
+    display: block;
+  }
+
+  &.is-grouped {
+    display: flex;
+  }
+
   &.has-addons,
   &.is-grouped {
-    display: block;
-
     .field-addon-label {
       .label {
         font-family: var(--font);
