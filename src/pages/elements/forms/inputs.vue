@@ -57,6 +57,9 @@ useHead({
         <!--Focus Colors-->
         <InputFocusDocumentation />
 
+        <!--Datalist-->
+        <InputDatalistDocumentation />
+
         <!--Font Awesome-->
         <InputFaDocumentation />
 
