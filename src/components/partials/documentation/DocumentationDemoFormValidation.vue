@@ -422,9 +422,7 @@ const handleSignup = handleSubmit(async (values) => {
       v-slot="{ field }"
     >
       <VControl>
-        <VCheckbox paddingless>
-          I agree to the <a href="#">terms and conditions</a>
-        </VCheckbox>
+        <VSwitchBlock> I agree to the <a href="#">terms and conditions</a> </VSwitchBlock>
 
         <p
           v-if="field?.errorMessage"
@@ -436,12 +434,9 @@ const handleSignup = handleSubmit(async (values) => {
     </VField>
     <VField id="emailOptin">
       <VControl>
-        <VCheckbox
-          color="primary"
-          paddingless
-        >
+        <VSwitchBlock thin>
           I want to receive exclusive news and updates
-        </VCheckbox>
+        </VSwitchBlock>
       </VControl>
     </VField>
     <VButtons class="pt-4">

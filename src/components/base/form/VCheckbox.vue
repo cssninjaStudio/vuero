@@ -45,7 +45,6 @@ const internal = computed({
     }
   },
   set(value: any) {
-    console.log('checkbox set', value)
     if (context.field?.value) {
       context.field.value.setValue(value)
     }

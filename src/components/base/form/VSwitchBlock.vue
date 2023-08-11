@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useVFieldContext } from '/@src/composable/useVFieldContext'
+
 export type VSwitchBlockColor = 'primary' | 'info' | 'success' | 'warning' | 'danger'
 
 export interface VSwitchBlockProps {
@@ -19,13 +21,34 @@ const props = withDefaults(defineProps<VSwitchBlockProps>(), {
   label: undefined,
   color: undefined,
 })
+
+const { field, id } = useVFieldContext({
+  create: false,
+  help: 'VSwitchBlock',
+})
+
+const internal = computed({
+  get() {
+    if (field?.value) {
+      return field.value.value
+    } else {
+      return modelValue.value
+    }
+  },
+  set(value: any) {
+    if (field?.value) {
+      field.value.setValue(value)
+    }
+    modelValue.value = value
+  },
+})
 </script>
 
 <template>
   <div
     :class="[
-      props.label && 'switch-block',
-      props.thin && props.label && 'thin-switch-block',
+      (props.label || 'default' in $slots) && 'switch-block',
+      props.thin && (props.label || 'default' in $slots) && 'thin-switch-block',
     ]"
   >
     <template v-if="props.thin">
@@ -34,13 +57,16 @@ const props = withDefaults(defineProps<VSwitchBlockProps>(), {
         class="thin-switch"
         tabindex="0"
         :class="[props.color && `is-${props.color}`]"
-        @keydown.space.prevent="() => (modelValue = !modelValue)"
       >
-        <VInput
-          v-model="modelValue"
+        <input
+          :id="id"
+          v-model="internal"
+          :true-value="true"
+          :false-value="false"
+          class="input"
           type="checkbox"
           v-bind="$attrs"
-        />
+        >
         <div class="slider" />
       </VLabel>
     </template>
@@ -50,24 +76,27 @@ const props = withDefaults(defineProps<VSwitchBlockProps>(), {
         class="form-switch"
         :class="[props.color && `is-${props.color}`]"
       >
-        <VInput
-          raw
-          :checked="modelValue"
+        <input
+          :id="id"
+          v-model="internal"
+          :true-value="true"
+          :false-value="false"
           type="checkbox"
           class="is-switch"
           v-bind="$attrs"
-          @change="() => (modelValue = !modelValue)"
-        />
+        >
         <i aria-hidden="true" />
       </VLabel>
     </template>
 
     <div
-      v-if="props.label"
+      v-if="props.label || 'default' in $slots"
       class="text"
     >
       <VLabel raw>
-        <span>{{ props.label }}</span>
+        <slot>
+          <span>{{ props.label }}</span>
+        </slot>
       </VLabel>
     </div>
   </div>
