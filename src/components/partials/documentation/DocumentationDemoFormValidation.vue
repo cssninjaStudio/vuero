@@ -395,7 +395,6 @@ const handleSignup = handleSubmit(async (values) => {
           </VField>
           <VIconButton
             class="is-remove"
-            :style="{}"
             light
             raised
             circle

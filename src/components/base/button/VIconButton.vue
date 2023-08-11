@@ -45,7 +45,7 @@ export default defineComponent({
     },
     dark: {
       type: String as PropType<VIconButtonDark>,
-      default: undefined,
+      default: '1',
       validator: (value: VIconButtonDark) => {
         if (!value) return true
         // The value must match one of these strings
