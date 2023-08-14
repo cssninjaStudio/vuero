@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.7.1](https://github.com/cssninjaStudio/vuero/compare/v2.7.0...v2.7.1) (2023-08-14)
+
+
+### Bug Fixes
+
+* local purge-icons using pnpm patch ([edb1d78](https://github.com/cssninjaStudio/vuero/commit/edb1d784b0db4cb44e2503b41fe315ca34539435))
+
 ## [2.7.0](https://github.com/cssninjaStudio/vuero/compare/v2.6.1...v2.7.0) (2023-05-07)
 
 
