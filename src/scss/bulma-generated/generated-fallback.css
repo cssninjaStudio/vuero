@@ -3537,13 +3537,13 @@ code {
   color: rgb(42, 172, 142);
 }
 
-.tabs-wrapper.is-slider.is-inverted .tabs,
-.tabs-wrapper-alt.is-slider.is-inverted .tabs {
+.tabs-wrapper.is-slider.is-inverted > .tabs-inner > .tabs,
+.tabs-wrapper-alt.is-slider.is-inverted > .tabs-inner > .tabs {
   background: rgb(255, 255, 255);
 }
 
-.tabs-wrapper.is-slider .tabs li.is-active a,
-.tabs-wrapper-alt.is-slider .tabs li.is-active a {
+.tabs-wrapper.is-slider > .tabs-inner > .tabs li.is-active a,
+.tabs-wrapper-alt.is-slider > .tabs-inner > .tabs li.is-active a {
   color: rgb(255, 255, 255);
 }
 
@@ -3552,13 +3552,13 @@ code {
   background: rgb(42, 172, 142);
 }
 
-.tabs-wrapper.is-triple-slider.is-inverted .tabs,
-.tabs-wrapper-alt.is-triple-slider.is-inverted .tabs {
+.tabs-wrapper.is-triple-slider.is-inverted > .tabs-inner > .tabs,
+.tabs-wrapper-alt.is-triple-slider.is-inverted > .tabs-inner > .tabs {
   background: rgb(255, 255, 255);
 }
 
-.tabs-wrapper.is-triple-slider .tabs li.is-active a,
-.tabs-wrapper-alt.is-triple-slider .tabs li.is-active a {
+.tabs-wrapper.is-triple-slider > .tabs-inner > .tabs li.is-active a,
+.tabs-wrapper-alt.is-triple-slider > .tabs-inner > .tabs li.is-active a {
   color: rgb(255, 255, 255);
 }
 
@@ -3567,8 +3567,8 @@ code {
   background: rgb(42, 172, 142);
 }
 
-.is-dark .tabs-wrapper.is-slider .tabs li.is-active a,
-.is-dark .tabs-wrapper.is-triple-slider .tabs li.is-active a {
+.is-dark .tabs-wrapper.is-slider > .tabs-inner > .tabs li.is-active a,
+.is-dark .tabs-wrapper.is-triple-slider > .tabs-inner > .tabs li.is-active a {
   color: rgb(255, 255, 255);
 }
 
