@@ -2,6 +2,53 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.8.0](https://github.com/cssninjaStudio/vuero/compare/v2.7.1...v2.8.0) (2023-08-14)
+
+
+### Features
+
+* add input native datalist examples ([611bab2](https://github.com/cssninjaStudio/vuero/commit/611bab27b0c503854f94b682f98ee1f720b13c70)), closes [#226](https://github.com/cssninjaStudio/vuero/issues/226)
+* add repetable fields with vee-validate in demo ([50131f0](https://github.com/cssninjaStudio/vuero/commit/50131f0777470fb120c951411cb6814478f4e474))
+* add select with object validation examples ([a16bda7](https://github.com/cssninjaStudio/vuero/commit/a16bda721bebecea1d690cdc6d88acfef0c39d75))
+* add server side generation ([0c8e8e3](https://github.com/cssninjaStudio/vuero/commit/0c8e8e36d7d4e6d9a30dac406e60bfe58f32fe5f))
+* add simple logout example to user dropdown ([ba7be9d](https://github.com/cssninjaStudio/vuero/commit/ba7be9d259551b4386836252c9c48bf4842cfa20))
+* add toc-ignore class utils to markdown doc plugin ([f464c28](https://github.com/cssninjaStudio/vuero/commit/f464c2865cdf11945d1cfc9102536866bb83ca08))
+* add unhead/vite plugin ([e44d8fc](https://github.com/cssninjaStudio/vuero/commit/e44d8fc53550451357884462ae45be1840e0f90e))
+* add VRangeRating form input component ([c435ccf](https://github.com/cssninjaStudio/vuero/commit/c435ccf5fb07380bebd83ff738784046a61ec731))
+* improve forms components internal context ([b57b36d](https://github.com/cssninjaStudio/vuero/commit/b57b36dbf286cb9880bbc9e8e27d5b0c369d3ace))
+* improve SSR and PWA ([f6c13de](https://github.com/cssninjaStudio/vuero/commit/f6c13deb5ce361033e19a16f750ca16fad6437d0))
+* replace @vueuse/head with unhead ([7b39fd9](https://github.com/cssninjaStudio/vuero/commit/7b39fd953f1d2750633153c5720b7fa997f01acb))
+* replace axios useApi with ofetch and useFetch ([d770ef6](https://github.com/cssninjaStudio/vuero/commit/d770ef6b0c56b8c68b74c565ef49722fb24bc41c))
+* upgrade dependencies ([2cadc00](https://github.com/cssninjaStudio/vuero/commit/2cadc00cec903780fbc481b45420b34e9e6b97bc))
+* use new defineModel macro ([4644eea](https://github.com/cssninjaStudio/vuero/commit/4644eea2a78968a794075dd8346e2ad596876a5f))
+* **v-input:** add native dataset autocomplete examples ([d1e58d4](https://github.com/cssninjaStudio/vuero/commit/d1e58d474964c86498d23e0c999d3eda7cd42772))
+* **v-modal:** add  property to control base element used + add focus-trap ([970c36f](https://github.com/cssninjaStudio/vuero/commit/970c36fe2047c5c4a7298c3ffa6910c3b4064e0e)), closes [#216](https://github.com/cssninjaStudio/vuero/issues/216)
+* **VSwitchBlock:** allow usage with validation + create default slot for label ([6035f92](https://github.com/cssninjaStudio/vuero/commit/6035f92054fca4582c3f50e72170a498f783c060))
+* **VSwitchSegment:** allow usage with validation + add label-true and label-false slots ([752e3ae](https://github.com/cssninjaStudio/vuero/commit/752e3aee4d8b5a1b9b402911083d0eeab5bfeaed))
+* **vue:** enable defineModel and propsDestructure ([b514e07](https://github.com/cssninjaStudio/vuero/commit/b514e07e88ad376d2cb0dc3ea0a4eb7d392cdf97))
+
+
+### Bug Fixes
+
+* color picker slider not shown ([b590466](https://github.com/cssninjaStudio/vuero/commit/b590466ec3d385ff4b1195414dbb6ffe7bc48441)), closes [#223](https://github.com/cssninjaStudio/vuero/issues/223)
+* form layout stacked datepicker display ([f2d4e83](https://github.com/cssninjaStudio/vuero/commit/f2d4e83a68fc6e6bda080859554658df54764e14)), closes [#218](https://github.com/cssninjaStudio/vuero/issues/218)
+* **forms:** prevent watch loop in internal value ([300540e](https://github.com/cssninjaStudio/vuero/commit/300540e72bd12b799594722dd941f9cf15a57ccf))
+* ignore pnpm-debug and .DS_Store ([d8f310f](https://github.com/cssninjaStudio/vuero/commit/d8f310f0fa3826b7ea43f8a26b4dee6e7f7f7e7e)), closes [#224](https://github.com/cssninjaStudio/vuero/issues/224)
+* improve signup upload avatar demo ([c79338e](https://github.com/cssninjaStudio/vuero/commit/c79338e12e20ed35f00d05bafe13bc8b4d545316))
+* ltr language in selectors and dropdown ([312755a](https://github.com/cssninjaStudio/vuero/commit/312755aab626eeac58234e1bb7b8e628817294bd))
+* update prettier to v3 + run before eslint ([8211d7d](https://github.com/cssninjaStudio/vuero/commit/8211d7de4b849879d0d2e18c05fa83fbb93e0f06))
+* upgrade vite, vee-validate and dependencies ([06138ff](https://github.com/cssninjaStudio/vuero/commit/06138ff57c3e9d6b5592b6b90edb99d6dac29f9d))
+* use MaybeRefOrGetter on useViewWrapper.setPageTitle ([66f7b36](https://github.com/cssninjaStudio/vuero/commit/66f7b36c6b0d596fd4da1fab11f7545401247346))
+* **useVFieldContext:** use toRef and MaybeRefOrGetter from vue 3.3 ([d0e79fd](https://github.com/cssninjaStudio/vuero/commit/d0e79fdeecdf3437c8bebf89bd4a3d0c3c444d6f))
+* **v-checkbox:** allow to pass custom id + add validation example with array value ([109619d](https://github.com/cssninjaStudio/vuero/commit/109619dc9a6019de92d5e62422c936d9a77ed437))
+* **v-label:** improve a11y ([e02d387](https://github.com/cssninjaStudio/vuero/commit/e02d38787ab77021c31c8f86660077a92ae5d9b3))
+* **VButton:** inherit class props properly ([380ab9d](https://github.com/cssninjaStudio/vuero/commit/380ab9d7e7b59a082c4c31eb5dc18579a0b13dc4))
+* **VCollapseLinks:** allow use v-for on links in default template ([f88e30f](https://github.com/cssninjaStudio/vuero/commit/f88e30f4cfd687cd9d91a34abb8638e83fbcb010)), closes [#217](https://github.com/cssninjaStudio/vuero/issues/217)
+* **VField:** grouped regression ([bb86318](https://github.com/cssninjaStudio/vuero/commit/bb86318e26c0b29c55c5b07df3fc8479f9ef1b43)), closes [#219](https://github.com/cssninjaStudio/vuero/issues/219)
+* **VIconButton:** add default dark value ([2ef849d](https://github.com/cssninjaStudio/vuero/commit/2ef849d5c78926558e79fa95bcb2540a5bd3f032))
+* **VMarkdownPreview:** expose shiki assets to /public/shiki ([f2aee06](https://github.com/cssninjaStudio/vuero/commit/f2aee069a83823da092d43c252fb7562ce2efcdb))
+* **VTabs:** allow nested slider tabs ([11c40ea](https://github.com/cssninjaStudio/vuero/commit/11c40ea130e582102a6f0e9c1e7b727b6a59af7c)), closes [#225](https://github.com/cssninjaStudio/vuero/issues/225)
+
 ### [2.7.1](https://github.com/cssninjaStudio/vuero/compare/v2.7.0...v2.7.1) (2023-08-14)
 
 
