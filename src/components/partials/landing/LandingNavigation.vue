@@ -153,7 +153,7 @@ watchEffect(() => {
         </div>
         <div class="navbar-item">
           <VButton
-            to="https://go.cssninja.io/buy-vuero"
+            href="https://go.cssninja.io/buy-vuero"
             color="primary"
             rounded
             raised

@@ -32,7 +32,7 @@ useHead({
 
             <div class="buttons mb-2">
               <VButton
-                to="https://go.cssninja.io/buy-vuero"
+                href="https://go.cssninja.io/buy-vuero"
                 color="primary"
                 rounded
               >
