@@ -11,6 +11,7 @@ COPY package.json ./
 COPY pnpm-lock.yaml ./
 COPY .npmrc ./
 COPY patches ./patches
+COPY scripts ./scripts
 RUN CYPRESS_INSTALL_BINARY=0 pnpm install
 
 COPY . .
