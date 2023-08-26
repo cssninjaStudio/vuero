@@ -34,7 +34,7 @@
     ]
   },
   "scripts": {
-    "prepare": "esno ./scripts/prepare-shiki.ts",
+    "prepare": "jiti ./scripts/prepare-shiki.ts",
     "dev": "run-p dev:vite dev:json-server",
     "dev:ssr": "run-p ssr:dev dev:json-server",
     "dev:vite": "vite --open",
