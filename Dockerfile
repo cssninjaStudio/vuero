@@ -18,7 +18,7 @@ COPY . .
 RUN VITE_API_BASE_URL=$VITE_API_BASE_URL \
   VITE_MAPBOX_ACCESS_TOKEN=$VITE_MAPBOX_ACCESS_TOKEN \
   GTM_ID=$GTM_ID \
-  NODE_OPTIONS=--max-old-space-size=4096 \
+  NODE_OPTIONS=--max-old-space-size=6144 \
   pnpm ssr:build
 
 FROM bitnami/node:18 AS prod
@@ -26,7 +26,13 @@ WORKDIR /app
 
 RUN corepack enable && corepack prepare pnpm@latest --activate
 
-COPY --from=build /app .
+RUN groupadd --gid 10001 vuero && \
+   useradd --create-home --uid 10001 --gid vuero vuero \
+   && chown --recursive vuero:vuero /app
+
+USER vuero:vuero
+
+COPY --chown=vuero:vuero --from=build /app .
 
 EXPOSE 3000 8080
 
