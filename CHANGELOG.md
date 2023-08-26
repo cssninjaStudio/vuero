@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.8.1](https://github.com/cssninjaStudio/vuero/compare/v2.8.0...v2.8.1) (2023-08-26)
+
+
+### Bug Fixes
+
+* add vite purge comments plugin + minify SSR/SSG html output ([ba9dcf3](https://github.com/cssninjaStudio/vuero/commit/ba9dcf3d19d039ec6cf83cb42c1ff885859bcc23))
+* disable vite plugin doc in quickstarter ([53031d2](https://github.com/cssninjaStudio/vuero/commit/53031d229651b54b3d869cc3618d8a1a552366f4))
+* **quickstarter:** include missing preinstall script ([97d66a2](https://github.com/cssninjaStudio/vuero/commit/97d66a27589c33f268e0bffbd0223908ec1f8c21))
+* replace http-server with vercel serve ([0ae2c47](https://github.com/cssninjaStudio/vuero/commit/0ae2c479f4f1adf9cfe7afa0947d19424026cc90))
+* update dependencies and vite 5 ([b1643fb](https://github.com/cssninjaStudio/vuero/commit/b1643fb293d78bf5a6e759d44e36074bc3cf570d))
+* update tsconfig as vitejs recommendation ([65a33e6](https://github.com/cssninjaStudio/vuero/commit/65a33e6cd7526c31f8ae44e54b0c7bc6401bf17f))
+* use jiti instead of esno for prepare shiki script ([d68af54](https://github.com/cssninjaStudio/vuero/commit/d68af54a9c87d44bcf8681e5bfc6417acf2722eb))
+* use non root user in dockerfile ([b76e9f1](https://github.com/cssninjaStudio/vuero/commit/b76e9f1748dca6a34449b2430b772c5f9d398067))
+
 ## [2.8.0](https://github.com/cssninjaStudio/vuero/compare/v2.7.1...v2.8.0) (2023-08-14)
 
 
