@@ -424,15 +424,6 @@ export const plugins = [
   },
   {
     id: 3,
-    link: '/components/plugins/simple-datatables',
-    name: 'VDatatable',
-    media: {
-      light: '/images/icons/components/tables.svg',
-      dark: '/images/icons/components/tables-dark.svg',
-    },
-  },
-  {
-    id: 3,
     link: '/elements/addons/calendar',
     name: 'VCalendar',
     media: {

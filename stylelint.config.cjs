@@ -1,9 +1,5 @@
 module.exports = {
-  extends: [
-    'stylelint-config-standard',
-    'stylelint-config-recommended-vue',
-    'stylelint-config-prettier',
-  ],
+  extends: ['stylelint-config-standard', 'stylelint-config-recommended-vue'],
   customSyntax: 'postcss-scss',
   plugins: ['stylelint-scss'],
   overrides: [
@@ -30,7 +26,7 @@ module.exports = {
     /** Bulma **/
     'function-name-case': null,
     'scss/dollar-variable-pattern': null,
-    'no-duplicate-selectors': null, // TODO
+    'no-duplicate-selectors': null,
     'function-no-unknown': [
       true,
       {

@@ -102,7 +102,6 @@ export default defineConfig({
       'vue-router',
       'unplugin-vue-router/runtime',
       'simplebar',
-      'simple-datatables',
       'tiny-slider/src/tiny-slider',
       'vue-accessible-color-picker',
       'zod',
@@ -175,6 +174,7 @@ export default defineConfig({
      */
     VueRouter({
       routesFolder: 'src/pages',
+      dts: './types/router.d.ts',
 
       /**
        * Data Fetching is an experimental feature from vue & vue-router
@@ -198,7 +198,7 @@ export default defineConfig({
      * @see https://github.com/antfu/unplugin-auto-import
      */
     AutoImport({
-      dts: true,
+      dts: './types/imports.d.ts',
       imports: ['vue', '@vueuse/core', VueRouterAutoImports, unheadVueComposablesImports],
     }),
 
@@ -234,7 +234,7 @@ export default defineConfig({
     Components({
       dirs: ['documentation', 'src/components', 'src/layouts'],
       extensions: ['vue', 'md'],
-      dts: true,
+      dts: './types/components.d.ts',
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
     }),
 
