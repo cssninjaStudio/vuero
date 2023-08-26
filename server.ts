@@ -1,6 +1,8 @@
 import type { ViteDevServer } from 'vite'
 import path from 'node:path'
 import { readFileSync } from 'node:fs'
+import { Buffer } from 'node:buffer'
+import minifyHtml from '@minify-html/node'
 import {
   createApp,
   setResponseStatus,
@@ -157,13 +159,16 @@ async function createServer() {
 
         // send 404 header if no page was found
         if (!found) {
-          setHeader(event, 'Content-Type', 'text/html')
           setHeader(event, 'Cache-Control', 'no-cache, no-store, must-revalidate')
           setResponseStatus(event, 404)
         }
 
-        // send page
-        return html
+        // send minified page
+        setHeader(event, 'Content-Type', 'text/html')
+        return minifyHtml.minify(Buffer.from(html), {
+          keep_comments: true,
+          minify_js: true,
+        })
       } catch (error: any) {
         // handle error 500 page
         if (!isProd) {

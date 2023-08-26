@@ -18,6 +18,7 @@ import { unheadVueComposablesImports } from '@unhead/vue'
 
 // local vite plugin
 import { VitePluginVueroDoc } from './vite-plugin-vuero-doc'
+import { VitePluginPurgeComments } from './vite-plugin-purge-comments'
 
 // options via env variables
 const MINIFY_IMAGES = process.env.MINIFY ? process.env.MINIFY === 'true' : false
@@ -132,6 +133,7 @@ export default defineConfig({
     ],
   },
   build: {
+    target: 'esnext',
     minify: 'terser',
     // Do not warn about large chunks
     // chunkSizeWarningLimit: Infinity,
@@ -224,6 +226,13 @@ export default defineConfig({
         editProtocol: 'vscode://vscode-remote/wsl+Ubuntu', // or 'vscode://file'
       },
     }),
+
+    /**
+     * This is an internal vite plugin that remove html comments from code.
+     *
+     * @see /vite-plugin-purge-comments
+     */
+    VitePluginPurgeComments(),
 
     /**
      * unplugin-vue-components plugin is responsible of autoloading components
