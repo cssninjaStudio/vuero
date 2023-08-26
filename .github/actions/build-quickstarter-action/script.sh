@@ -24,8 +24,7 @@ echo "::group::building ${ARCHIVE}"
 echo "::debug::${ARCHIVE}"
 
 # disable VueroDocumentation
-sed -i "s#import VueroDocumentation from './vite-plugin-vuero-doc/index'#// import VueroDocumentation from './vite-plugin-vuero-doc/index'#g" vite.config.ts
-sed -i "s#VueroDocumentation()#// VueroDocumentation()#g" vite.config.ts
+sed -i "s#import { VitePluginVueroDoc } from './vite-plugin-vuero-doc'#// eslint-disable-next-line @typescript-eslint/no-unused-vars\nconst VitePluginVueroDoc = (options: any) => {}#g" vite.config.ts
 
 # remove build artifacts and pages/layouts
 rm -rf \
@@ -63,7 +62,7 @@ find public -type d -empty -delete
 
 # remove unncecessary composable for the quickstart
 find src/composable -type f -not \( \
-  -name 'useApi.ts' \
+  -name 'useFetch.ts' \
   -or -name 'useDropdown.ts' \
   -or -name 'useCreditcardMask.ts' \
   -or -name 'useNotyf.ts' \
