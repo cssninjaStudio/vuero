@@ -701,6 +701,7 @@ const columns = {
 
   .grid-item {
     position: relative;
+
     @include vuero-s-card;
 
     text-align: center;

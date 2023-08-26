@@ -33,6 +33,7 @@ $steps-thin-marker-size: 0.8em !default;
     @content;
   }
 }
+
 @mixin steps-vertical {
   @include mobile {
     &:not(.is-horizontal) {
@@ -44,16 +45,19 @@ $steps-thin-marker-size: 0.8em !default;
     @content;
   }
 }
+
 @mixin steps-all-segments {
   &.steps .steps-segment {
     @content;
   }
 }
+
 @mixin steps-active-segment {
   &.steps .steps-segment.is-active {
     @content;
   }
 }
+
 @mixin steps-inactive-segments {
   &.steps .steps-segment.is-active ~ .steps-segment {
     @content;
@@ -73,6 +77,7 @@ $steps-thin-marker-size: 0.8em !default;
       position: absolute;
     }
   }
+
   @include steps-vertical {
     .steps-segment {
       display: block;
@@ -111,6 +116,7 @@ $steps-thin-marker-size: 0.8em !default;
       }
     }
   }
+
   @include steps-horizontal {
     display: flex;
 
@@ -179,6 +185,7 @@ $steps-thin-marker-size: 0.8em !default;
 
   // Use a mixin to define all ratios in the same spot
 }
+
 @mixin steps-size($size) {
   font-size: $size;
 
@@ -187,6 +194,7 @@ $steps-thin-marker-size: 0.8em !default;
     width: $size * $steps-marker-size;
     overflow: hidden;
   }
+
   @include steps-vertical {
     // Draw a vertical divider
     display: flex;
@@ -231,6 +239,7 @@ $steps-thin-marker-size: 0.8em !default;
       }
     }
   }
+
   @include steps-horizontal {
     // Draw a horizontal divider
     .steps-segment:not(:last-child)::after {
@@ -452,6 +461,7 @@ $steps-thin-marker-size: 0.8em !default;
     // Divider dashed style
   }
 }
+
 @mixin steps-divider-background($angle, $color, $size) {
   background: repeating-linear-gradient(
     $angle,
@@ -480,6 +490,7 @@ $steps-thin-marker-size: 0.8em !default;
       }
     }
   }
+
   @include steps-horizontal {
     &.is-dashed .steps-segment,
     .steps-segment.is-dashed {
@@ -515,6 +526,7 @@ $steps-thin-marker-size: 0.8em !default;
     height: calc(#{$steps-thin-marker-size} + #{$steps-thin-divider-size});
     width: calc(#{$steps-thin-marker-size} + #{$steps-thin-divider-size});
   }
+
   @include steps-vertical {
     .steps-segment {
       &:not(:last-child)::after {
@@ -546,6 +558,7 @@ $steps-thin-marker-size: 0.8em !default;
       }
     }
   }
+
   @include steps-horizontal {
     .steps-segment {
       &:not(:last-child)::after {

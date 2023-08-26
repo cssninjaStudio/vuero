@@ -606,6 +606,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
       @media screen and (width <= 1212px) {
         grid-template-columns: repeat(2, 1fr);
       }
+
       @media screen and (width <= 930px) {
         grid-template-columns: repeat(1, 1fr);
       }

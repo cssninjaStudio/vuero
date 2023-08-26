@@ -339,6 +339,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
     }
   }
 }
+
 @media only screen and (width <= 767px) {
   .dashboard-header-wrapper {
     height: 418px;

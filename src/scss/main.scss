@@ -8,16 +8,13 @@ SCSS Imports
 
 @import './bulma-generated/generated-vars.sass';
 @import './css-variables/all';
-
 @import './abstracts/ltr';
 @import './abstracts/all';
 
 // Here we import bulma-css-vars instead of bulma
 // because we want to use the variables defined in the file
 @import '../../node_modules/@cssninja/bulma-css-vars/bulma-cv-lib.sass';
-
 @import './layout/all';
-
 @import './components/cards';
 @import './components/content';
 @import './components/forms-general';

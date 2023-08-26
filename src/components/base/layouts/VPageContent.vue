@@ -45,6 +45,7 @@
     }
   }
 }
+
 @media (width <= 767px) {
   .page-content {
     padding: 0 10px !important;

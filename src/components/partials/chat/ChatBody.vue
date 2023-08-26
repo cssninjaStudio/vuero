@@ -411,6 +411,7 @@
     }
   }
 }
+
 @media (width <= 767px) {
   .chat-body {
     width: 100% !important;
@@ -435,6 +436,7 @@
     }
   }
 }
+
 @media only screen and (device-width >= 768px) and (device-width <= 1024px) and (orientation: portrait) {
   .chat-body {
     width: 100% !important;

@@ -161,6 +161,7 @@ const props = defineProps<VViewWrapperProps>()
     }
   }
 }
+
 @media only screen and (width >= 768px) and (width <= 1024px) and (orientation: landscape) {
   .view-wrapper {
     width: calc(100% - 60px) !important;
@@ -172,6 +173,7 @@ const props = defineProps<VViewWrapperProps>()
     }
   }
 }
+
 @media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
   // Layout
   .view-wrapper {
@@ -192,6 +194,7 @@ const props = defineProps<VViewWrapperProps>()
     }
   }
 }
+
 @media (width <= 767px) {
   // Layout
   .view-wrapper {

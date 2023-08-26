@@ -262,6 +262,7 @@
   border: 1px solid var(--fade-grey-dark-3);
   transition: all 0.3s; // transition-all test
 }
+
 @mixin vuero-s-card() {
   @include vuero-card;
 
@@ -274,6 +275,7 @@
   border: 1px solid var(--fade-grey-dark-3);
   transition: all 0.3s; // transition-all test
 }
+
 @mixin vuero-l-card() {
   @include vuero-card;
 

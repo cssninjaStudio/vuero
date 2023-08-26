@@ -337,6 +337,7 @@ import {
       .group-content {
         .media-feed-item {
           position: relative;
+
           @include vuero-r-card;
 
           padding: 1.5rem;

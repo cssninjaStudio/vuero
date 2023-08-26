@@ -471,6 +471,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
     }
   }
 }
+
 @media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
   .heatmap-wrapper {
     .heatmap-inner {

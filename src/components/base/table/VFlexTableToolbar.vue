@@ -16,6 +16,7 @@
   justify-content: space-between;
   margin-bottom: 40px;
 }
+
 @media (width <= 767px) {
   .flex-table-toolbar {
     margin-bottom: 10px;

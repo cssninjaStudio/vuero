@@ -92,6 +92,7 @@
     opacity: 1;
   }
 }
+
 @keyframes translate-page-x-out {
   0% {
     transform: translateX(calc(var(--transform-direction) * 0));

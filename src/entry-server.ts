@@ -26,9 +26,8 @@ export async function render(url: string, manifest: any, initialState: any = {})
     found: true,
   }
   const appHtml = await renderToString(app, ctx)
-  const { headTags, htmlAttrs, bodyAttrs, bodyTags, bodyTagsOpen } = await renderSSRHead(
-    head
-  )
+  const { headTags, htmlAttrs, bodyAttrs, bodyTags, bodyTagsOpen } =
+    await renderSSRHead(head)
 
   initialState.pinia = pinia?.state.value
 

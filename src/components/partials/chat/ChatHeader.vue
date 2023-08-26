@@ -269,6 +269,7 @@
     border-radius: 16px 16px 0 0 !important;
   }
 }
+
 @media only screen and (device-width >= 768px) and (device-width <= 1024px) and (orientation: portrait) {
   .chat-header {
     border-radius: 16px 16px 0 0 !important;
