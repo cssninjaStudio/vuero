@@ -4,10 +4,11 @@ dist
 coverage
 node_modules
 public
-
 README.md
+
+# generated files
 CHANGELOG.md
-components.d.ts
-typed-router.d.ts
-auto-imports.d.ts
 bulma-colors.js
+types/components.d.ts
+types/router.d.ts
+types/imports.d.ts

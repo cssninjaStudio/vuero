@@ -5,9 +5,11 @@ coverage
 node_modules
 public
 
-components.d.ts
+# generated files
+CHANGELOG.md
 bulma-colors.js
 generated-vars.sass
 generated-fallback.css
-typed-router.d.ts
-auto-imports.d.ts
+types/components.d.ts
+types/router.d.ts
+types/imports.d.ts
