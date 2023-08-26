@@ -12,6 +12,8 @@
     "removeComments": true,
     "importHelpers": true,
     "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "useDefineForClassFields": true,
     "skipLibCheck": true,
     "lib": ["esnext", "dom"],
     "types": [
