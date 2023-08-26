@@ -46,6 +46,13 @@ mv \
 find documentation -type f -name "*md" -delete
 find documentation -type d -empty -delete
 
+# remove unncecessary scripts
+rm -rf \
+  scripts/convert-screenshot-webp.sh \
+  scripts/create-screenshot-data.ts \
+  scripts/generate-screenhots.sh \
+  scripts/optimize-images.sh
+
 # public/images/icons/flags/*
 # public/images/icons/stacks/*
 # public/images/icons/hexagons/*
@@ -170,7 +177,6 @@ zip -r $ARCHIVE . \
   -x ".git/*" \
   -x ".github/*" \
   -x "cypress/*" \
-  -x "scripts/*" \
   -x "cypress.json" \
   -x "docker-compose.e2e.yml"\
   -x "docker-compose.yml"
