@@ -1,3 +1,5 @@
+<script setup lang="ts"></script>
+
 <template>
   <div class="cloud-container">
     <ul>
@@ -155,7 +157,7 @@
   </div>
 </template>
 
-<styles lang="scss">
+<style lang="scss">
 .cloud-container {
   position: relative;
   height: 455px;
@@ -259,6 +261,7 @@
     }
   }
 }
+
 .is-dark {
   .cloud-container {
     ul li a {
@@ -278,7 +281,8 @@
     }
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: landscape) {
   .cloud-container {
     width: 400px !important;
     height: 495px !important;
@@ -300,4 +304,4 @@
     }
   }
 }
-</styles>
+</style>

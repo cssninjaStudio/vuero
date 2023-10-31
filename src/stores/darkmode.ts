@@ -11,7 +11,7 @@
 
 import { computed, watchEffect } from 'vue'
 import { usePreferredDark, useStorage } from '@vueuse/core'
-import { acceptHMRUpdate, defineStore } from 'pinia'
+import { acceptHMRUpdate, defineStore, skipHydrate } from 'pinia'
 
 export const DARK_MODE_BODY_CLASS = 'is-dark'
 export type DarkModeSchema = 'auto' | 'dark' | 'light'
@@ -57,7 +57,7 @@ export const useDarkmode = defineStore('darkmode', () => {
   }
 
   return {
-    isDark,
+    isDark: skipHydrate(isDark),
     onChange,
   }
 })

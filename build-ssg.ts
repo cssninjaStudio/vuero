@@ -90,7 +90,7 @@ async function build() {
   )
 
   const manifest = JSON.parse(
-    await fsp.readFile(path.join(outStatic, './ssr-manifest.json'), 'utf-8')
+    await fsp.readFile(path.join(outStatic, './.vite/ssr-manifest.json'), 'utf-8')
   )
   const template = await fsp.readFile(path.join(outStatic, './index.html'), 'utf-8')
 

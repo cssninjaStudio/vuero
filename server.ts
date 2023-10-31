@@ -37,7 +37,7 @@ async function createServer() {
     debug: !isProd,
   })
 
-  const manifest = isProd ? require('./dist/client/ssr-manifest.json') : {}
+  const manifest = isProd ? require('./dist/client/.vite/ssr-manifest.json') : {}
   const indexProd = isProd ? readFileSync(resolve('dist/client/index.html'), 'utf-8') : ''
 
   if (!isProd) {
