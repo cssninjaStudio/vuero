@@ -134,7 +134,7 @@
     "@commitlint/cli": "17.7.1",
     "@commitlint/config-conventional": "17.7.0",
     "@iconify/json": "2.2.106",
-    "@intlify/unplugin-vue-i18n": "0.12.3",
+    "@intlify/unplugin-vue-i18n": "1.4.0",
     "@nuxt/devalue": "2.0.2",
     "@stefanprobst/remark-shiki": "2.2.1",
     "@types/dragula": "3.7.1",
