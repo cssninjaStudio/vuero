@@ -154,7 +154,7 @@
     "commitlint": "17.7.1",
     "compression": "1.7.4",
     "cross-env": "7.0.3",
-    "cypress": "12.17.4",
+    "cypress": "13.4.0",
     "eslint": "8.48.0",
     "eslint-config-prettier": "9.0.0",
     "eslint-plugin-frontmatter": "0.0.8",
