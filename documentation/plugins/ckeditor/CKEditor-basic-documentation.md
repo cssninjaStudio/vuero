@@ -15,7 +15,7 @@ import CKE from '@ckeditor/ckeditor5-vue'
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
 
 const CKEditor = CKE.component
-const editorData = ref(`<h2>Your HTML Content</h2>`)
+const content = ref(`<h2>Your HTML Content</h2>`)
 const config = {
   fontFamily: {
     options: ['"Montserrat", sans-serif', '"Roboto", sans-serif'],
@@ -25,7 +25,11 @@ const config = {
 
 <template>
   <div class="content">
-    <CKEditor v-model="content" :editor="ClassicEditor" :config="config"></CKEditor>
+    <CKEditor
+      v-model="content"
+      :editor="ClassicEditor"
+      :config="config"
+    />
   </div>
 </template>
 ```

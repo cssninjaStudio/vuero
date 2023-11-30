@@ -1,5 +1,8 @@
 <script setup lang="ts">
+import type { EditorConfig } from '@ckeditor/ckeditor5-core'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
+// augment EditorConfig with fonts options
+import '@ckeditor/ckeditor5-font'
 
 const editor = shallowRef<any>()
 const CKEditor = defineAsyncComponent(() =>
@@ -10,7 +13,7 @@ const editorConfig = {
   fontFamily: {
     options: ['"Montserrat", sans-serif', '"Roboto", sans-serif'],
   },
-}
+} satisfies EditorConfig
 
 const editorData = ref(`
   <h2>The three greatest things you learn from travelling</h2>
