@@ -7,9 +7,11 @@ import fsp from 'node:fs/promises'
 import path from 'node:path'
 import url from 'node:url'
 import fg from 'fast-glob'
+import { minify as minifyHtml } from '@minify-html/node'
+import { minify as minifierTerser } from 'html-minifier-terser'
 import { mergeConfig, resolveConfig, build as viteBuild } from 'vite'
 import colors from 'picocolors'
-import { format, generateStaticParams } from './build-ssg.config'
+import { format, generateStaticParams, htmlMinifier } from './build-ssg.config'
 
 // prevent non-ready SSR dependencies from throwing errors
 
@@ -322,6 +324,17 @@ async function renderPage({
       `<div id="app" data-server-rendered="true"$1>${appHtml}</div><script>window.__vuero__=${initialState}</script>`
     )
 
+  let minified: Buffer | string = html
+
+  switch (htmlMinifier.minifier) {
+    case 'terser':
+      minified = await minifierTerser(html, htmlMinifier.terserOptions)
+      break
+    case 'minify-html':
+      minified = minifyHtml(Buffer.from(html), htmlMinifier.minifyHtmlOptions)
+      break
+  }
+
   const file = `${url.endsWith('/') ? `${url}` : `${url}/`}index.html`
   const filePath = path.join(outStatic, file)
 
@@ -330,7 +343,7 @@ async function renderPage({
     fs.mkdirSync(dirname, { recursive: true })
   }
 
-  fs.writeFileSync(resolve(filePath), html)
+  fs.writeFileSync(resolve(filePath), minified)
   config.logger.info(
     colors.dim(
       `pre-rendered  (${logCount}) ${colors.green(url)} - ${colors.cyan(
