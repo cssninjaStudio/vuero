@@ -1,5 +1,7 @@
 <script setup lang="ts">
+// @ts-ignore
 import { ColorPicker } from 'vue-accessible-color-picker'
+import 'vue-accessible-color-picker/styles'
 
 export type AvailableColors =
   // states
@@ -36,7 +38,6 @@ const colorHueVarName = computed(() => `--${props.color}-h`)
 const colorSaturationVarName = computed(() => `--${props.color}-s`)
 const colorLuminanceVarName = computed(() => `--${props.color}-l`)
 
-const colorVar = useCssVar(colorVarName.value)
 const colorHueVar = useCssVar(colorHueVarName.value)
 const colorSaturationVar = useCssVar(colorSaturationVarName.value)
 const colorLuminanceVar = useCssVar(colorLuminanceVarName.value)
@@ -57,9 +58,9 @@ const toggle = () => {
 }
 function updateColor({ colors }: any) {
   const { h, s, l } = colors.hsl
-  colorHueVar.value = `${Math.round(h * 360)}`
-  colorSaturationVar.value = `${Math.round(s * 100)}%`
-  colorLuminanceVar.value = `${Math.round(l * 100)}%`
+  colorHueVar.value = `${Math.round(h)}`
+  colorSaturationVar.value = `${Math.round(s * 100) / 100}%`
+  colorLuminanceVar.value = `${Math.round(l * 100) / 100}%`
 }
 </script>
 
@@ -69,7 +70,7 @@ function updateColor({ colors }: any) {
       <div class="color-dot is-primary" />
       <div class="meta">
         <span>var({{ colorVarName }})</span>
-        <span>{{ colorVar }}</span>
+        <span>{{ colorHslCss }}</span>
       </div>
       <div class="actions">
         <VAction
