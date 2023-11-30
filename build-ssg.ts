@@ -7,8 +7,7 @@ import fsp from 'node:fs/promises'
 import path from 'node:path'
 import url from 'node:url'
 import fg from 'fast-glob'
-import { minify as minifyHtml } from '@minify-html/node'
-import { minify as minifierTerser } from 'html-minifier-terser'
+import { lazyMinifier } from './build-ssg.minifier'
 import { mergeConfig, resolveConfig, build as viteBuild } from 'vite'
 import colors from 'picocolors'
 import { format, generateStaticParams, htmlMinifier } from './build-ssg.config'
@@ -25,11 +24,6 @@ globalThis.__VUE_I18N_LEGACY_API__ = false
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url))
 const resolve = (p: string) => path.resolve(__dirname, p)
 const ROUTE_PARAM_REGEX = /(\[.*?\])/g
-
-// const routesToPrerender = fs.readdirSync(resolve('src/pages')).map((file) => {
-//   const name = file.replace(/\.vue$/, '').toLowerCase()
-//   return name === 'index' ? `/` : `/${name}`
-// })
 
 async function build() {
   const staticParams = generateStaticParams()
@@ -327,12 +321,16 @@ async function renderPage({
   let minified: Buffer | string = html
 
   switch (htmlMinifier.minifier) {
-    case 'terser':
-      minified = await minifierTerser(html, htmlMinifier.terserOptions)
+    case 'terser': {
+      const minifier = await lazyMinifier(htmlMinifier.minifier)
+      minified = await minifier(html, htmlMinifier.terserOptions)
       break
-    case 'minify-html':
-      minified = minifyHtml(Buffer.from(html), htmlMinifier.minifyHtmlOptions)
+    }
+    case 'minify-html': {
+      const minifier = await lazyMinifier(htmlMinifier.minifier)
+      minified = minifier(Buffer.from(html), htmlMinifier.minifyHtmlOptions)
       break
+    }
   }
 
   const file = `${url.endsWith('/') ? `${url}` : `${url}/`}index.html`

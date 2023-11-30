@@ -2,8 +2,8 @@ import type { ViteDevServer } from 'vite'
 import path from 'node:path'
 import { readFileSync } from 'node:fs'
 import { Buffer } from 'node:buffer'
-import { minify as minifyHtml } from '@minify-html/node'
-import { minify as minifierTerser } from 'html-minifier-terser'
+import { lazyMinifier } from './build-ssg.minifier'
+import { htmlMinifier } from './server.config'
 import {
   createApp,
   setResponseStatus,
@@ -17,15 +17,6 @@ import {
 } from 'h3'
 import devalue from '@nuxt/devalue'
 import { listen } from 'listhen'
-import type { HTMLMinifierConfig } from './build-ssg.types'
-
-export const htmlMinifier: HTMLMinifierConfig = {
-  minifier: 'minify-html',
-  minifyHtmlOptions: {
-    keep_comments: true,
-    minify_js: true,
-  },
-}
 
 const root = process.cwd()
 const isTest = process.env.NODE_ENV === 'test' || !!process.env.VITE_TEST_BUILD
@@ -179,12 +170,16 @@ async function createServer() {
         let minified: Buffer | string = html
 
         switch (htmlMinifier.minifier) {
-          case 'terser':
-            minified = await minifierTerser(html, htmlMinifier.terserOptions)
+          case 'terser': {
+            const minifier = await lazyMinifier(htmlMinifier.minifier)
+            minified = await minifier(html, htmlMinifier.terserOptions)
             break
-          case 'minify-html':
-            minified = minifyHtml(Buffer.from(html), htmlMinifier.minifyHtmlOptions)
+          }
+          case 'minify-html': {
+            const minifier = await lazyMinifier(htmlMinifier.minifier)
+            minified = minifier(Buffer.from(html), htmlMinifier.minifyHtmlOptions)
             break
+          }
         }
 
         return Buffer.from(minified)

@@ -2,6 +2,7 @@ import type { Format, StaticParams, HTMLMinifierConfig } from './build-ssg.types
 
 export const format: Format = 'esm'
 
+// note: to work with bun, you need to use terser minifier
 export const htmlMinifier: HTMLMinifierConfig = {
   minifier: 'minify-html',
   minifyHtmlOptions: {
