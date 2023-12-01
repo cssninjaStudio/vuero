@@ -244,7 +244,7 @@ export default defineComponent({
           RouterLink,
           {
             ...attrs,
-            'aria-hidden': !!props.placeload && true,
+            'aria-hidden': !!props.placeload,
             'to': props.to,
             'class': ['button', ...classes.value],
           },
@@ -258,7 +258,7 @@ export default defineComponent({
           'a',
           {
             ...attrs,
-            'aria-hidden': !!props.placeload && true,
+            'aria-hidden': !!props.placeload,
             'href': props.href,
             'class': classes.value,
           },
@@ -273,7 +273,7 @@ export default defineComponent({
         {
           'type': 'button',
           ...attrs,
-          'aria-hidden': !!props.placeload && true,
+          'aria-hidden': !!props.placeload,
           'disabled': props.disabled,
           'class': ['button', ...classes.value],
         },

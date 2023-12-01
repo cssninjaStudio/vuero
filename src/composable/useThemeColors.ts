@@ -34,7 +34,7 @@ export const useThemeColors = () => {
     ? ref('transparent')
     : useCssVar('--orange', document.documentElement)
 
-  const themeColors = reactive({
+  return reactive({
     primary: computed(() => HSLToHex(primary.value)),
     primaryMedium: '#b4e4ce',
     primaryLight: '#f7fcfa',
@@ -54,6 +54,4 @@ export const useThemeColors = () => {
     lightText: '#a2a5b9',
     fadeGrey: '#ededed',
   } as const)
-
-  return themeColors
 }

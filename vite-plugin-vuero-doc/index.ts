@@ -110,7 +110,7 @@ export function VitePluginVueroDoc(options: PluginOptions) {
     }
 
     // inject frontmatter/darkmode and hmrId into the compiled render function
-    const output = [
+    return [
       `import { reactive } from 'vue'`,
       `import { useDarkmode } from '/@src/stores/darkmode'`,
 
@@ -127,8 +127,6 @@ export function VitePluginVueroDoc(options: PluginOptions) {
       config?.isProduction ? '' : `__script.__hmrId = ${JSON.stringify(path)};`,
       `export default __script;`,
     ].join('\n')
-
-    return output
   }
 
   return {

@@ -5,6 +5,7 @@ const customized = stylistic.configs.customize({
   quotes: 'single',
   semi: false,
 })
+
 module.exports = {
   root: true,
   env: {
@@ -20,12 +21,10 @@ module.exports = {
     },
     {
       files: ['*.js', '*.cjs', '*.mjs'],
-      plugins: ['@stylistic'],
+      plugins: ['sonarjs', '@stylistic'],
       extends: [
         'eslint:recommended',
-        // 'plugin:@typescript-eslint/eslint-recommended',
-        // 'plugin:prettier-vue/recommended',
-        // 'prettier',
+        'plugin:sonarjs/recommended',
       ],
       parserOptions: {
         ecmaVersion: 'latest',
@@ -36,16 +35,17 @@ module.exports = {
         'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
         'no-unused-vars': 'off',
         'no-undef': 'off', // auto-imports are not recognized
+
+        'sonarjs/no-duplicate-string': 'off',
       },
     },
     {
       files: ['*.ts'],
-      plugins: ['@typescript-eslint', '@stylistic'],
+      plugins: ['sonarjs', '@typescript-eslint', '@stylistic'],
       extends: [
         'eslint:recommended',
         'plugin:@typescript-eslint/recommended',
-        // 'plugin:prettier-vue/recommended',
-        // 'prettier',
+        'plugin:sonarjs/recommended',
       ],
       parserOptions: {
         ecmaVersion: 'latest',
@@ -66,18 +66,20 @@ module.exports = {
           { prefer: 'type-imports', fixStyle: 'inline-type-imports' },
         ],
         '@typescript-eslint/no-explicit-any': 'off',
+
+        'sonarjs/no-duplicate-string': 'off',
+        'sonarjs/cognitive-complexity': 'off',
       },
     },
     {
       files: ['*.vue'],
-      plugins: ['@typescript-eslint', '@stylistic'],
+      plugins: ['sonarjs', '@typescript-eslint', '@stylistic'],
       extends: [
         'eslint:recommended',
         'plugin:@typescript-eslint/eslint-recommended',
+        'plugin:sonarjs/recommended',
         'plugin:vue/vue3-recommended',
         'plugin:vuejs-accessibility/recommended',
-        // 'plugin:prettier-vue/recommended',
-        // 'prettier',
       ],
       parserOptions: {
         parser: '@typescript-eslint/parser',
@@ -116,6 +118,9 @@ module.exports = {
         'vuejs-accessibility/form-control-has-label': 'off',
         'vuejs-accessibility/label-has-for': 'off',
         'vuejs-accessibility/anchor-has-content': 'off',
+
+        'sonarjs/no-duplicate-string': 'off',
+        'sonarjs/cognitive-complexity': 'off',
       },
     },
     {
@@ -125,9 +130,6 @@ module.exports = {
         'eslint:recommended',
         'plugin:@typescript-eslint/eslint-recommended',
         'plugin:vue/vue3-recommended',
-        // 'plugin:vuejs-accessibility/recommended',
-        // 'plugin:prettier-vue/recommended',
-        // 'prettier',
       ],
       parserOptions: {
         parser: '@typescript-eslint/parser',
@@ -166,6 +168,8 @@ module.exports = {
         'vuejs-accessibility/form-control-has-label': 'off',
         'vuejs-accessibility/label-has-for': 'off',
         'vuejs-accessibility/anchor-has-content': 'off',
+
+        'sonarjs/no-duplicate-string': 'off',
       },
     },
   ],

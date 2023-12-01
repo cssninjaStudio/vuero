@@ -85,10 +85,6 @@ watchPostEffect(() => {
       drawLine(element, props.values, opts)
       break
     case 'pie':
-      opts.radius = props.radius
-      opts.innerRadius = props.innerRadius
-      drawPie(element, props.values, opts)
-      break
     case 'donut':
       opts.radius = props.radius
       opts.innerRadius = props.innerRadius

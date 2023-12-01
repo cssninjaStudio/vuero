@@ -31,12 +31,7 @@ const route = useRoute()
 const router = useRouter()
 
 const isActiveAnchor = computed(() => {
-  return (id: string) => {
-    if (`#${id}` === route.hash) {
-      return true
-    }
-    return false
-  }
+  return (id: string) => `#${id}` === route.hash
 })
 
 const onTocClick = (id?: string) => {

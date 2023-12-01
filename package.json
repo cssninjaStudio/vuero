@@ -150,6 +150,7 @@
     "eslint": "8.54.0",
     "eslint-plugin-frontmatter": "0.0.8",
     "eslint-plugin-md": "1.0.19",
+    "eslint-plugin-sonarjs": "^0.23.0",
     "eslint-plugin-vue": "9.19.2",
     "eslint-plugin-vuejs-accessibility": "2.2.0",
     "fs-extra": "11.2.0",

@@ -158,7 +158,6 @@ export const useLayoutSwitcher = defineStore('layoutSwitcher', () => {
 
       if (sidebarComponentsIds.includes(value)) {
         sidebarLayoutId.value = value as SidebarComponentsId
-        return
       }
     },
   })
