@@ -18,7 +18,7 @@ export function transformExampleMarkup(raw: string) {
       .replaceAll(CLOSE_TAG_REGEX, (substring) => {
         return `</${kebabCase(substring.substring(2).trim())}`
       })
-      .replaceAll('&#x27;', "'")
+      .replaceAll('&#x27;', '\'')
 
     output = output.replace(content[1], kebabContent)
   }
@@ -31,12 +31,12 @@ export function transformSlots(source: string, condition: string = '') {
     return `<template ${condition} #default>${source}`
       .replace(
         `<!--code-->`,
-        `</template><template ${condition} #code>\n<slot name="code"><div v-pre>`
+        `</template><template ${condition} #code>\n<slot name="code"><div v-pre>`,
       )
       .replace(`<!--/code-->`, `</div></slot>\n</template>`)
       .replace(
         `<!--example-->`,
-        `<template ${condition} #example>\n<slot name="example">`
+        `<template ${condition} #example>\n<slot name="example">`,
       )
       .replace(`<!--/example-->`, `</slot>\n</template>`)
   }
@@ -45,11 +45,11 @@ export function transformSlots(source: string, condition: string = '') {
     return `<template ${condition} #default>${source}`
       .replace(
         `<!--code-->`,
-        `</template><template ${condition} #code>\n<slot name="code"><div v-pre>`
+        `</template><template ${condition} #code>\n<slot name="code"><div v-pre>`,
       )
       .replace(
         `<!--/code-->`,
-        `</div></slot>\n</template>\n<template ${condition} #example><slot name="example"></slot></template>`
+        `</div></slot>\n</template>\n<template ${condition} #example><slot name="example"></slot></template>`,
       )
   }
 
@@ -57,17 +57,17 @@ export function transformSlots(source: string, condition: string = '') {
     return `<template ${condition} #default>${source}`
       .replace(
         `<!--example-->`,
-        `</template><template ${condition} #example>\n<slot name="example">`
+        `</template><template ${condition} #example>\n<slot name="example">`,
       )
       .replace(
         `<!--/example-->`,
-        `</slot>\n</template>\n<template ${condition} #code><slot name="code"></slot></template>`
+        `</slot>\n</template>\n<template ${condition} #code><slot name="code"></slot></template>`,
       )
   }
 
   return (
-    `<template ${condition} #default>${source}</template>` +
-    `<template ${condition} #example><slot name="example"></slot></template>` +
-    `<template ${condition} #code><slot name="code"></slot></template>`
+    `<template ${condition} #default>${source}</template>`
+    + `<template ${condition} #example><slot name="example"></slot></template>`
+    + `<template ${condition} #code><slot name="code"></slot></template>`
   )
 }

@@ -29,8 +29,7 @@
     }
   },
   "include": [
-    "vite-plugin-purge-comments/**/*.ts",
-    "vite-plugin-vuero-doc/**/*.ts",
+    "vite-plugin/**/*.ts",
     "server/**/*.ts",
     "types/**/*.d.ts",
     "src/**/*.js",

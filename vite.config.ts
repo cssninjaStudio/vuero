@@ -17,8 +17,8 @@ import UnheadVite from '@unhead/addons/vite'
 import { unheadVueComposablesImports } from '@unhead/vue'
 
 // local vite plugin
-import { VitePluginVueroDoc } from './vite-plugin-vuero-doc'
-import { VitePluginPurgeComments } from './vite-plugin-purge-comments'
+import { VitePluginVueroDoc } from './vite-plugin/vuero-doc'
+import { VitePluginPurgeComments } from './vite-plugin/purge-comments'
 
 // options via env variables
 const MINIFY_IMAGES = process.env.MINIFY ? process.env.MINIFY === 'true' : false
