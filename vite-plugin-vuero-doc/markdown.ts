@@ -1,5 +1,4 @@
 import yaml from 'js-yaml'
-import remarkShiki from '@stefanprobst/remark-shiki'
 import rehypeExternalLinks from 'rehype-external-links'
 import rehypeRaw from 'rehype-raw'
 import rehypeSlug from 'rehype-slug'
@@ -9,30 +8,53 @@ import remarkParse from 'remark-parse'
 import remarkGfm from 'remark-gfm'
 import remarkRehype from 'remark-rehype'
 import remarkFrontmatter from 'remark-frontmatter'
-import { getHighlighter, type IThemeRegistration, type Lang, type Theme } from 'shiki'
-import { unified, type Processor } from 'unified'
+import rehypeShikiji from 'rehype-shikiji'
+import type {
+  ThemeRegistration,
+  ThemeRegistrationRaw,
+  BuiltinLanguage,
+  BuiltinTheme,
+  StringLiteralUnion,
+} from 'shikiji'
+import { unified } from 'unified'
+import type { Literal, Parent } from 'unist'
 
-const langs = ['vue', 'vue-html', 'typescript', 'bash', 'scss'] satisfies Lang[]
+const langs = [
+  'vue',
+  'vue-html',
+  'typescript',
+  'bash',
+  'scss',
+] satisfies BuiltinLanguage[]
 
-export async function createProcessor(theme: IThemeRegistration): Promise<Processor> {
-  const highlighter = await getHighlighter({
-    theme,
-    langs,
-  })
-
+export async function createProcessor(
+  themes: Partial<
+    Record<
+      string,
+      ThemeRegistration | ThemeRegistrationRaw | StringLiteralUnion<BuiltinTheme>
+    >
+  >
+) {
   return unified()
     .use(remarkParse)
     .use(remarkFrontmatter)
     .use(() => (tree, file) => {
-      if (tree.children[0].type === 'yaml') {
-        // store frontmatter in vfile
-        file.data.frontmatter = yaml.load(tree.children[0].value)
+      if ('children' in tree) {
+        const parent = tree as Parent
+        if (parent.children[0].type === 'yaml') {
+          // store frontmatter in vfile
+          const value = (parent.children[0] as Literal).value
+          file.data.frontmatter = typeof value === 'string' ? yaml.load(value) : undefined
+        }
       }
     })
     .use(remarkGfm)
-    .use(remarkShiki, { highlighter })
     .use(remarkRehype, { allowDangerousHtml: true })
     .use(rehypeRaw)
+    .use(rehypeShikiji, {
+      themes,
+      langs,
+    })
     .use(rehypeExternalLinks, { rel: ['nofollow'], target: '_blank' })
     .use(rehypeSlug)
     .use(rehypeAutolinkHeadings, {
@@ -57,18 +79,4 @@ export async function createProcessor(theme: IThemeRegistration): Promise<Proces
       },
     })
     .use(rehypeStringify)
-}
-
-export async function createProcessors(
-  theme:
-    | Theme
-    | {
-        light: Theme
-        dark: Theme
-      }
-): Promise<{ light: Processor; dark: Processor }> {
-  return {
-    light: await createProcessor(typeof theme === 'string' ? theme : theme.light),
-    dark: await createProcessor(typeof theme === 'string' ? theme : theme.dark),
-  }
 }

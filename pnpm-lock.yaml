@@ -1,9 +1,5 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 overrides:
   sass: npm:sass-embedded@1.69.5
   bulma: npm:@cssninja/bulma@0.9.4
@@ -343,6 +339,9 @@ devDependencies:
   rehype-sanitize:
     specifier: 6.0.0
     version: 6.0.0
+  rehype-shikiji:
+    specifier: ^0.7.5
+    version: 0.7.5
   rehype-slug:
     specifier: 6.0.0
     version: 6.0.0
@@ -382,6 +381,9 @@ devDependencies:
   shiki:
     specifier: 0.14.5
     version: 0.14.5
+  shikiji:
+    specifier: ^0.7.5
+    version: 0.7.5
   stylelint:
     specifier: 15.11.0
     version: 15.11.0(typescript@5.3.2)
@@ -2068,7 +2070,7 @@ packages:
     engines: {node: '>= 10.0.0'}
     hasBin: true
     peerDependencies:
-      bulma: npm:@cssninja/bulma@0.9.4
+      bulma: ^0.9.3
     dependencies:
       bulma: /@cssninja/bulma@0.9.4
       color: 4.2.3
@@ -11132,6 +11134,16 @@ packages:
       hast-util-sanitize: 5.0.1
     dev: true
 
+  /rehype-shikiji@0.7.5:
+    resolution: {integrity: sha512-pTS6a1deTCel/JlgkKVJ+HzeqScbJzGayxKxjjGB9Jca2D9c4hsx4k+bkN75EQEy2ufMhXsNV2qjugpt5/l/1w==}
+    dependencies:
+      '@types/hast': 3.0.3
+      hast-util-to-string: 3.0.0
+      shikiji: 0.7.5
+      unified: 11.0.4
+      unist-util-visit: 5.0.0
+    dev: true
+
   /rehype-slug@6.0.0:
     resolution: {integrity: sha512-lWyvf/jwu+oS5+hL5eClVd3hNdmwM1kAC0BUvEGD19pajQMIzcNUd/k9GsfQ+FfECvX+JE+e9/btsKH0EjJT6A==}
     dependencies:
@@ -12269,6 +12281,12 @@ packages:
       jsonc-parser: 3.2.0
       vscode-oniguruma: 1.7.0
       vscode-textmate: 8.0.0
+    dev: true
+
+  /shikiji@0.7.5:
+    resolution: {integrity: sha512-He8lAcTZUVuUW+Z4VRPM+TP+HVZCe4R1qzrP7voUrmAKrFKE260YEUVgqcP7y/0ps0uVvKgVhu5vgIshGpGocQ==}
+    dependencies:
+      hast-util-to-html: 9.0.0
     dev: true
 
   /side-channel@1.0.4:
@@ -14078,7 +14096,7 @@ packages:
       '@types/node': ^18.0.0 || >=20.0.0
       less: '*'
       lightningcss: ^1.21.0
-      sass: npm:sass-embedded@1.69.5
+      sass: '*'
       stylus: '*'
       sugarss: '*'
       terser: ^5.4.0
@@ -14629,3 +14647,7 @@ packages:
   /zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: true
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false

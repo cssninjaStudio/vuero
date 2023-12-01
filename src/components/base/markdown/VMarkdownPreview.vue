@@ -1,15 +1,13 @@
 <script lang="ts">
-import type { Lang, Theme } from 'shiki'
-import type { Processor } from 'unified'
+import type { BuiltinLanguage, BuiltinTheme } from 'shikiji'
 import { h, type PropType } from 'vue'
-import { useDarkmode } from '/@src/stores/darkmode'
 import VPlaceload, {
   type VPlaceloadProps,
 } from '/@src/components/base/loader/VPlaceload.vue'
 
 async function loadModules() {
   const [
-    remarkShiki,
+    rehypeShiki,
     rehypeExternalLinks,
     rehypeRaw,
     [rehypeSanitize, defaultSchema],
@@ -19,10 +17,9 @@ async function loadModules() {
     remarkGfm,
     remarkParse,
     remarkRehype,
-    [getHighlighter, setCDN],
     unified,
   ] = await Promise.all([
-    import('@stefanprobst/remark-shiki').then((m) => m.default),
+    import('rehype-shikiji').then((m) => m.default),
     import('rehype-external-links').then((m) => m.default),
     import('rehype-raw').then((m) => m.default),
     import('rehype-sanitize').then((m) => [m.default, m.defaultSchema] as const),
@@ -32,17 +29,11 @@ async function loadModules() {
     import('remark-gfm').then((m) => m.default),
     import('remark-parse').then((m) => m.default),
     import('remark-rehype').then((m) => m.default),
-    import('shiki').then((m) => [m.getHighlighter, m.setCDN] as const),
     import('unified').then((m) => m.unified),
   ])
 
-  // this allow to load shiki from /public/shiki/ folder instead of cdn
-  // we need to first copy the shiki folder from node_modules to public
-  // this is done with prepare pnpm script (see /scripts/prepare-shiki.ts)
-  setCDN('/shiki/')
-
   return {
-    remarkShiki,
+    rehypeShiki,
     rehypeExternalLinks,
     rehypeRaw,
     rehypeSanitize,
@@ -53,7 +44,6 @@ async function loadModules() {
     remarkGfm,
     remarkParse,
     remarkRehype,
-    getHighlighter,
     unified,
   }
 }
@@ -75,18 +65,18 @@ export default defineComponent({
     },
     shiki: {
       type: Object as PropType<{
-        langs: Lang[]
+        langs: BuiltinLanguage[]
         theme:
-          | Theme
+          | BuiltinTheme
           | {
-              light: Theme
-              dark: Theme
+              light: BuiltinTheme
+              dark: BuiltinTheme
             }
       }>,
       default: () => ({
         theme: {
           light: 'min-light',
-          dark: 'github-dark-dimmed',
+          dark: 'github-dark',
         },
         langs: ['vue', 'vue-html', 'typescript', 'bash', 'scss'],
       }),
@@ -99,15 +89,13 @@ export default defineComponent({
     },
   },
   setup(props) {
-    const processor = ref<Processor>()
-    const darkmode = useDarkmode()
+    const processor = ref<any>()
     const rendered = ref(false)
     const html = ref('')
 
     watchEffect(async () => {
-      const isDark = darkmode.isDark
       const langs = props.shiki.langs
-      const theme = {
+      const themes = {
         light:
           typeof props.shiki.theme === 'string'
             ? props.shiki.theme
@@ -119,7 +107,7 @@ export default defineComponent({
       }
 
       const {
-        remarkShiki,
+        rehypeShiki,
         rehypeExternalLinks,
         rehypeRaw,
         rehypeSanitize,
@@ -130,19 +118,12 @@ export default defineComponent({
         remarkGfm,
         remarkParse,
         remarkRehype,
-        getHighlighter,
         unified,
       } = await loadModules()
-
-      const highlighter = await getHighlighter({
-        theme: isDark ? theme.dark : theme.light,
-        langs,
-      })
 
       processor.value = unified()
         .use(remarkParse)
         .use(remarkGfm)
-        .use(remarkShiki, { highlighter })
         .use(remarkRehype, { allowDangerousHtml: true })
         .use(rehypeRaw)
         .use(rehypeSanitize, {
@@ -159,6 +140,10 @@ export default defineComponent({
               ['dataHint'],
             ],
           },
+        })
+        .use(rehypeShiki, {
+          themes,
+          langs,
         })
         .use(rehypeExternalLinks, { rel: ['nofollow'], target: '_blank' })
         .use(rehypeSlug)
@@ -177,13 +162,13 @@ export default defineComponent({
         .use(rehypeStringify)
     })
 
-    watchEffect(() => {
+    watchEffect(async () => {
       const _source = unref(props.source)
       const _processor = unref(processor)
       if (!_processor) return
       if (!_source) return
 
-      const result = _processor.processSync(_source).toString()
+      const result = (await _processor.process(_source)).toString()
       rendered.value = true
 
       html.value = result

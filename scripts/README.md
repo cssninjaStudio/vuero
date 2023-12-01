@@ -2,10 +2,6 @@
 
 This folder hold utilities scripts for the project.
 
-The [./prepare-shiki.ts] is used to copy shiki assets (themes, and wasm)
-to public directory so they can be used by the app,
-it's run when `pnpm install` is run via the `prepare` script.
-
 We are using the [./generate-screenshots.sh](./generate-screenshots.sh) script
 to generate screenshot displayed on the homepage:
 

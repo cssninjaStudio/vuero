@@ -1,11 +1,16 @@
 import type { Plugin, ResolvedConfig } from 'vite'
-import type { Processor } from 'unified'
-import type { Theme } from 'shiki'
+// import type { Processor } from 'unified'
+import type {
+  ThemeRegistration,
+  ThemeRegistrationRaw,
+  BuiltinTheme,
+  StringLiteralUnion,
+} from 'shikiji'
 
 import { join, basename } from 'pathe'
 import { compileTemplate, parse } from '@vue/compiler-sfc'
 
-import { createProcessors } from './markdown'
+import { createProcessor } from './markdown'
 import { transformExampleMarkup, transformSlots } from './transform'
 
 function parseId(id: string) {
@@ -18,12 +23,12 @@ export interface PluginOptions {
   pathPrefix?: string
   wrapperComponent: string
   shiki: {
-    theme:
-      | Theme
-      | {
-          light: Theme
-          dark: Theme
-        }
+    themes: Partial<
+      Record<
+        string,
+        ThemeRegistration | ThemeRegistrationRaw | StringLiteralUnion<BuiltinTheme>
+      >
+    >
   }
   sourceMeta?: {
     enabled?: boolean
@@ -33,7 +38,7 @@ export interface PluginOptions {
 
 export function VitePluginVueroDoc(options: PluginOptions) {
   let config: ResolvedConfig | undefined
-  let processors: { light: Processor; dark: Processor } | undefined
+  let processor: Awaited<ReturnType<typeof createProcessor>> | undefined
 
   const cwd = process.cwd()
   const pathPrefix = options.pathPrefix ? join(cwd, options.pathPrefix) : cwd
@@ -46,27 +51,22 @@ export function VitePluginVueroDoc(options: PluginOptions) {
     const input = transformExampleMarkup(raw)
 
     // process markdown with remark
-    if (!processors) processors = await createProcessors(options.shiki.theme)
+    if (!processor) processor = await createProcessor(options.shiki.themes)
 
-    const [vFileLight, vFileDark] = await Promise.all([
-      processors.light.process(input),
-      processors.dark.process(input),
-    ])
+    const vFile = await processor?.process(input)
 
-    const contentLight = vFileLight.toString()
-    const contentDark = vFileDark.toString()
-    const frontmatter = vFileLight.data?.frontmatter ?? {}
+    const content = vFile.toString()
+    const frontmatter = vFile.data?.frontmatter ?? {}
 
     // replace code/example slots placeholders
-    const slotLight = transformSlots(contentLight, 'v-if="!darkmode.isDark"')
-    const slotDark = transformSlots(contentDark, 'v-if="darkmode.isDark"')
+    const slot = transformSlots(content)
+    // const slotDark = transformSlots(contentDark, 'v-if="darkmode.isDark"')
 
     // wrap content in wrapper component default slot
     const sfc = [
       `<template>`,
       `  <${options.wrapperComponent} :frontmatter="frontmatter" :source-meta="sourceMeta">`,
-      `    ${slotLight}`,
-      `    ${slotDark}`,
+      `    ${slot}`,
       `  </${options.wrapperComponent}>`,
       `</template>`,
     ].join('\n')

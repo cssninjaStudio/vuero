@@ -48,13 +48,6 @@ export default defineConfig({
     port: 3000,
   },
   /**
-   * Define allow to replace string in the code at build time.
-   */
-  define: {
-    // VSCODE_TEXTMATE_DEBUG is used in shiki, but it's not defined in the browser
-    'process.env.VSCODE_TEXTMATE_DEBUG': 'false',
-  },
-  /**
    * By default, Vite will crawl your index.html to detect dependencies that
    * need to be pre-bundled. If build.rollupOptions.input is specified,
    * Vite will crawl those entry points instead.
@@ -106,8 +99,8 @@ export default defineConfig({
       'tiny-slider/src/tiny-slider',
       'vue-accessible-color-picker',
       'zod',
-      '@stefanprobst/remark-shiki',
       'rehype-external-links',
+      'rehype-shikiji',
       'rehype-raw',
       'rehype-sanitize',
       'rehype-stringify',
@@ -116,7 +109,6 @@ export default defineConfig({
       'remark-gfm',
       'remark-parse',
       'remark-rehype',
-      'shiki',
       'unified',
       'workbox-window',
       'textarea-markdown-editor/dist/esm/bootstrap',
@@ -216,7 +208,7 @@ export default defineConfig({
       pathPrefix: 'documentation',
       wrapperComponent: 'DocumentationItem',
       shiki: {
-        theme: {
+        themes: {
           light: 'min-light',
           dark: 'github-dark',
         },
