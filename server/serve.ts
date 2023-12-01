@@ -2,8 +2,8 @@ import type { ViteDevServer } from 'vite'
 import path from 'node:path'
 import { readFileSync } from 'node:fs'
 import { Buffer } from 'node:buffer'
-import { lazyMinifier } from './build-ssg.minifier'
-import { htmlMinifier } from './server.config'
+import { lazyMinifier } from './internal/minifier'
+import { htmlMinifier } from './config'
 import {
   createApp,
   setResponseStatus,
@@ -17,12 +17,14 @@ import {
 } from 'h3'
 import devalue from '@nuxt/devalue'
 import { listen } from 'listhen'
+import { fileURLToPath } from 'node:url'
 
 const root = process.cwd()
 const isTest = process.env.NODE_ENV === 'test' || !!process.env.VITE_TEST_BUILD
 const isProd = process.env.NODE_ENV === 'production'
 
-const resolve = (p: string) => path.resolve(__dirname, p)
+const resolve = (p: string) =>
+  path.resolve(path.dirname(fileURLToPath(import.meta.url)), p)
 
 // prevent non-ready SSR dependencies from throwing errors
 //@ts-expect-error
@@ -34,12 +36,18 @@ globalThis.__VUE_I18N_LEGACY_API__ = false
 
 async function createServer() {
   let vite: ViteDevServer
+
   const app = createApp({
     debug: !isProd,
   })
 
-  const manifest = isProd ? require('./dist/client/.vite/ssr-manifest.json') : {}
-  const indexProd = isProd ? readFileSync(resolve('dist/client/index.html'), 'utf-8') : ''
+  const manifest = isProd
+    ? // @ts-ignore
+      await import('../dist/client/.vite/ssr-manifest.json', { assert: { type: 'json' } })
+    : {}
+  const indexProd = isProd
+    ? readFileSync(resolve('../dist/client/index.html'), 'utf-8')
+    : ''
 
   if (!isProd) {
     /**
@@ -48,6 +56,9 @@ async function createServer() {
      * @see https://vitejs.dev/guide/ssr.html#setting-up-the-dev-server
      * @see https://vitejs.dev/config/server-options.html#server-middlewaremode
      */
+
+    process.env.VITE_CJS_IGNORE_WARNING = 'true'
+
     vite = await import('vite').then((m) =>
       m.createServer({
         root,
@@ -64,6 +75,7 @@ async function createServer() {
         },
       })
     )
+
     // use vite's connect instance as middleware in h3 app
     app.use(fromNodeMiddleware(vite.middlewares))
   } else {
@@ -73,10 +85,16 @@ async function createServer() {
      * @see https://github.com/expressjs/compression
      * @see https://github.com/expressjs/serve-static
      */
-    app.use(fromNodeMiddleware(require('compression')()))
+
+    // @ts-ignore
+    const compression = await import('compression').then((m) => m.default || m)
+    // @ts-ignore
+    const serveStatic = await import('serve-static').then((m) => m.default || m)
+
+    app.use(fromNodeMiddleware(compression()))
     app.use(
       fromNodeMiddleware(
-        require('serve-static')(resolve('dist/client'), {
+        serveStatic(resolve('../dist/client'), {
           index: false,
           fallthrough: true,
           maxAge: '1w',
@@ -114,26 +132,20 @@ async function createServer() {
         }
 
         // load template and render function from vue app
-        let template, render, init
+        let template, render
         if (!isProd) {
           // always read fresh template in dev
-          template = readFileSync(resolve('index.html'), 'utf-8')
+          template = readFileSync(resolve('../index.html'), 'utf-8')
           template = await vite.transformIndexHtml(url.pathname, template)
           render = (await vite.ssrLoadModule('/src/entry-server.ts')).render
-          init = (await vite.ssrLoadModule('/src/entry-server.ts')).init
         } else {
           // use built template and render function in production
           template = indexProd
-          render = require('./dist/server/entry-server.js').render
-          init = require('./dist/server/entry-server.js').init
+          render = require('../dist/server/entry-server.js').render
         }
-
-        // run the SSR initialization function
-        init(event)
 
         // render the vue app to HTML
         const {
-          found,
           appHtml,
           headTags,
           htmlAttrs,
@@ -142,7 +154,7 @@ async function createServer() {
           bodyTagsOpen,
           preloadLinks,
           initialState,
-        } = await render(url.pathname, manifest)
+        } = await render(event, url.pathname, manifest)
 
         // inject the app-rendered HTML into the template
         const html = template
@@ -157,12 +169,6 @@ async function createServer() {
               initialState
             )}</script>`
           )
-
-        // send 404 header if no page was found
-        if (!found) {
-          setHeader(event, 'Cache-Control', 'no-cache, no-store, must-revalidate')
-          setResponseStatus(event, 404)
-        }
 
         // send minified page
         setHeader(event, 'Content-Type', 'text/html')

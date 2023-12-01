@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "license": "SEE LICENSE IN LICENSE.md",
-  "packageManager": "^pnpm@8.5.1",
+  "packageManager": "pnpm@8.5.1",
   "author": {
     "name": "cssninjaStudio <hello@cssninja.io> (https://cssninja.io)"
   },
@@ -46,10 +46,10 @@
     "ssr:build": "run-s build:update-bulma-colors ssr:build:*",
     "ssr:build:client": "cross-env NODE_ENV=production vite build --ssrManifest --outDir dist/client",
     "ssr:build:server": "cross-env NODE_ENV=production vite build --ssr src/entry-server.ts --outDir dist/server",
-    "ssr:dev": "jiti server.ts",
-    "ssr:serve": "cross-env NODE_ENV=production jiti server.ts",
+    "ssr:dev": "jiti server/serve.ts",
+    "ssr:serve": "cross-env NODE_ENV=production jiti server/serve.ts",
     "ssr:preview": "run-p ssr:serve preview:json-server",
-    "ssg:build": "pnpm build:update-bulma-colors && cross-env NODE_ENV=production jiti build-ssg.ts",
+    "ssg:build": "pnpm build:update-bulma-colors && cross-env NODE_ENV=production jiti server/generate.ts",
     "ssg:serve": "serve dist -p 3000",
     "preview": "run-p preview:vite preview:json-server",
     "preview:vite": "serve dist -s -p 5000",

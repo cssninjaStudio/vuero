@@ -12,13 +12,15 @@
 
 import { useI18n } from 'vue-i18n'
 import { useDarkmode } from '/@src/stores/darkmode'
+import { setHeader, setResponseStatus } from 'h3'
+import { useSSRContext } from 'vue'
 
 const darkmode = useDarkmode()
 
 const { t } = useI18n()
 
 useHead({
-  title: `${t('page-title')} - Vuero`,
+  title: `${t('pages.not-found.page-title')} - Vuero`,
   meta: [
     {
       name: 'robots',
@@ -26,6 +28,21 @@ useHead({
     },
   ],
 })
+
+/**
+ * When the route is not found, we want to send 404 error code
+ * We do this by using the `useSSRContext` composable, then we use this to set the 404 status code
+ * @see src/entry-server.ts
+ * @see server.ts
+ */
+if (import.meta.env.SSR) {
+  const context = useSSRContext()
+
+  if (context?.event) {
+    setHeader(context.event, 'Cache-Control', 'no-cache, no-store, must-revalidate')
+    setResponseStatus(context.event, 404)
+  }
+}
 </script>
 
 <template>
@@ -65,7 +82,7 @@ useHead({
               elevated
               to="/"
             >
-              {{ t('pages.not-found.back-button') }}
+              {{ t('pages.not-found.page-button') }}
             </VButton>
           </div>
         </div>

@@ -4,14 +4,12 @@ import { renderSSRHead } from '@unhead/ssr'
 
 import { createApp } from '/@src/app'
 
-// this function will run before the app is rendered on the server
-// on each request, so it is a good place to play with headers
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-export async function init(event: H3Event) {
-  //
-}
-
-export async function render(url: string, manifest: any, initialState: any = {}) {
+export async function render(
+  event: H3Event,
+  url: string,
+  manifest: any,
+  initialState: any = {}
+) {
   const { app, router, pinia, head } = await createApp()
 
   // set the router to the desired URL before rendering
@@ -23,7 +21,7 @@ export async function render(url: string, manifest: any, initialState: any = {})
   // itself on ctx.modules. After the render, ctx.modules would contain all the
   // components that have been instantiated during this render call.
   const ctx: any = {
-    found: true,
+    event,
   }
   const appHtml = await renderToString(app, ctx)
   const { headTags, htmlAttrs, bodyAttrs, bodyTags, bodyTagsOpen } =
@@ -36,7 +34,6 @@ export async function render(url: string, manifest: any, initialState: any = {})
   // request.
   const preloadLinks = renderPreloadLinks(ctx.modules, manifest)
   return {
-    found: ctx.found,
     appHtml,
     headTags,
     htmlAttrs,

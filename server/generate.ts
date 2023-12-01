@@ -7,10 +7,14 @@ import fsp from 'node:fs/promises'
 import path from 'node:path'
 import url from 'node:url'
 import fg from 'fast-glob'
-import { lazyMinifier } from './build-ssg.minifier'
+import { lazyMinifier } from './internal/minifier'
 import { mergeConfig, resolveConfig, build as viteBuild } from 'vite'
 import colors from 'picocolors'
-import { format, generateStaticParams, htmlMinifier } from './build-ssg.config'
+import { H3Event } from 'h3'
+import { IncomingMessage } from 'node:http'
+import { ServerResponse } from 'node:http'
+import { Socket } from 'node:net'
+import { format, generateStaticParams, htmlMinifier } from './config'
 
 // prevent non-ready SSR dependencies from throwing errors
 
@@ -21,8 +25,9 @@ globalThis.__VUE_I18N_FULL_INSTALL__ = false
 //@ts-expect-error
 globalThis.__VUE_I18N_LEGACY_API__ = false
 
-const __dirname = path.dirname(url.fileURLToPath(import.meta.url))
-const resolve = (p: string) => path.resolve(__dirname, p)
+const resolve = (p: string) =>
+  path.resolve(path.dirname(url.fileURLToPath(import.meta.url)), p)
+
 const ROUTE_PARAM_REGEX = /(\[.*?\])/g
 
 async function build() {
@@ -96,7 +101,7 @@ async function build() {
 
   const _require = createRequire(import.meta.url)
 
-  const { init, render }: any =
+  const { render }: any =
     format === 'esm' ? await import(serverEntry) : _require(serverEntry)
 
   // determine routes to pre-render from src/pages
@@ -223,7 +228,6 @@ async function build() {
 
         await renderPage({
           url: paramUrl,
-          init,
           render,
           template,
           manifest,
@@ -239,7 +243,6 @@ async function build() {
 
     await renderPage({
       url,
-      init,
       render,
       template,
       manifest,
@@ -281,7 +284,6 @@ async function build() {
 
 async function renderPage({
   url,
-  init,
   render,
   template,
   manifest,
@@ -290,9 +292,12 @@ async function renderPage({
   logCount,
   cwd,
 }: any) {
-  init()
+  const sock = new Socket()
+  const req = new IncomingMessage(sock)
+  const res = new ServerResponse(req)
+  const event = new H3Event(req, res)
+
   const {
-    found,
     appHtml,
     headTags,
     htmlAttrs,
@@ -301,9 +306,9 @@ async function renderPage({
     bodyTags,
     preloadLinks,
     initialState,
-  } = await render(url, manifest)
+  } = await render(event, url, manifest)
 
-  if (!found) {
+  if (event.node.res.statusCode === 404) {
     return
   }
 
