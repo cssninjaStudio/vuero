@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
+import { VPhotosSwipeMeta } from '/@src/data/documentation/components-meta'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
@@ -56,6 +57,11 @@ useHead({
 
         <!--Bigger Thumbnails-->
         <GalleryImagesLargerDocumentation />
+
+        <DocumentationMeta
+          name="VPhotosSwipe"
+          :meta="VPhotosSwipeMeta"
+        />
       </div>
       <div
         v-if="toc.length"

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { radar } from 'billboard.js'
+import { VBillboardJSMeta } from '/@src/data/documentation/components-meta'
 
 import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
 import { useSplineSimple } from '/@src/data/dashboards/billboardjs-demo/splineSimple'
@@ -116,7 +117,10 @@ useHead({
           </div>
         </div>
 
-        <VBillboardJsPropsDocumentation />
+        <DocumentationMeta
+          name="VBillboardJS"
+          :meta="VBillboardJSMeta"
+        />
       </div>
       <div
         v-if="toc.length"
