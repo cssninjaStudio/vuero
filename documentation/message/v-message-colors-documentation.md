@@ -9,11 +9,21 @@ color by using the `color` prop. Available colors are `primary`,
 
 ```vue
 <template>
-  <VMessage color="primary">Lorem ipsum dolor sit amet</VMessage>
-  <VMessage color="success">Lorem ipsum dolor sit amet</VMessage>
-  <VMessage color="info">Lorem ipsum dolor sit amet</VMessage>
-  <VMessage color="warning">Lorem ipsum dolor sit amet</VMessage>
-  <VMessage color="danger">Lorem ipsum dolor sit amet</VMessage>
+  <VMessage color="primary">
+    Lorem ipsum dolor sit amet
+  </VMessage>
+  <VMessage color="success">
+    Lorem ipsum dolor sit amet
+  </VMessage>
+  <VMessage color="info">
+    Lorem ipsum dolor sit amet
+  </VMessage>
+  <VMessage color="warning">
+    Lorem ipsum dolor sit amet
+  </VMessage>
+  <VMessage color="danger">
+    Lorem ipsum dolor sit amet
+  </VMessage>
 </template>
 ```
 

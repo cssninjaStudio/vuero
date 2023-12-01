@@ -24,7 +24,7 @@ const props = withDefaults(
   }>(),
   {
     activeTab: 'all',
-  }
+  },
 )
 
 const filters = ref('')
@@ -33,14 +33,15 @@ const tab = ref(props.activeTab)
 const filteredData = computed(() => {
   if (!filters.value) {
     return recipes
-  } else {
+  }
+  else {
     return recipes.filter((item) => {
       return (
-        item.icon.match(new RegExp(filters.value, 'i')) ||
-        item.name.match(new RegExp(filters.value, 'i')) ||
-        item.category.match(new RegExp(filters.value, 'i')) ||
-        item.duration.match(new RegExp(filters.value, 'i')) ||
-        item.author.name.match(new RegExp(filters.value, 'i'))
+        item.icon.match(new RegExp(filters.value, 'i'))
+        || item.name.match(new RegExp(filters.value, 'i'))
+        || item.category.match(new RegExp(filters.value, 'i'))
+        || item.duration.match(new RegExp(filters.value, 'i'))
+        || item.author.name.match(new RegExp(filters.value, 'i'))
       )
     })
   }

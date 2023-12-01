@@ -31,7 +31,7 @@ const props = withDefaults(
   defineProps<{
     color: AvailableColors
   }>(),
-  {}
+  {},
 )
 const colorVarName = computed(() => `--${props.color}`)
 const colorHueVarName = computed(() => `--${props.color}-h`)
@@ -43,11 +43,11 @@ const colorSaturationVar = useCssVar(colorSaturationVarName.value)
 const colorLuminanceVar = useCssVar(colorLuminanceVarName.value)
 const colorHslCss = computed(
   () =>
-    `hsl(${colorHueVar.value}, ${colorSaturationVar.value}, ${colorLuminanceVar.value})`
+    `hsl(${colorHueVar.value}, ${colorSaturationVar.value}, ${colorLuminanceVar.value})`,
 )
 const colorSnippet = computed(
   () =>
-    `@include colorHsl('${props.color}', ${colorHueVar.value}, ${colorSaturationVar.value}, ${colorLuminanceVar.value});`
+    `@include colorHsl('${props.color}', ${colorHueVar.value}, ${colorSaturationVar.value}, ${colorLuminanceVar.value});`,
 )
 
 const { text, copy, copied } = useClipboard()

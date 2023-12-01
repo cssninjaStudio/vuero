@@ -9,20 +9,48 @@ a solid icon. Check the markup for more details.
 
 ```vue
 <template>
-  <VSnack title="Shopping" color="primary" solid icon="fas fa-smile">
-    <i class="iconify" data-icon="feather:plus"></i>
+  <VSnack
+    title="Shopping"
+    color="primary"
+    solid
+    icon="fas fa-smile"
+  >
+    <i class="iconify" data-icon="feather:plus" />
   </VSnack>
-  <VSnack title="Support" color="success" white solid icon="fas fa-life-ring">
-    <i class="iconify" data-icon="feather:plus"></i>
+  <VSnack
+    title="Support"
+    color="success"
+    white
+    solid
+    icon="fas fa-life-ring"
+  >
+    <i class="iconify" data-icon="feather:plus" />
   </VSnack>
-  <VSnack title="Business" color="info" solid icon="fas fa-building">
-    <i class="iconify" data-icon="feather:plus"></i>
+  <VSnack
+    title="Business"
+    color="info"
+    solid
+    icon="fas fa-building"
+  >
+    <i class="iconify" data-icon="feather:plus" />
   </VSnack>
-  <VSnack title="Warning" color="warning" white solid icon="fas fa-radiation">
-    <i class="iconify" data-icon="feather:plus"></i>
+  <VSnack
+    title="Warning"
+    color="warning"
+    white
+    solid
+    icon="fas fa-radiation"
+  >
+    <i class="iconify" data-icon="feather:plus" />
   </VSnack>
-  <VSnack title="Health" color="danger" white solid icon="fas fa-thermometer-half">
-    <i class="iconify" data-icon="feather:plus"></i>
+  <VSnack
+    title="Health"
+    color="danger"
+    white
+    solid
+    icon="fas fa-thermometer-half"
+  >
+    <i class="iconify" data-icon="feather:plus" />
   </VSnack>
 </template>
 ```

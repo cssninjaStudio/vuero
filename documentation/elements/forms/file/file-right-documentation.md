@@ -13,10 +13,14 @@ for more details about usage.
     <VControl>
       <div class="file has-name is-right">
         <label class="file-label">
-          <input class="file-input" type="file" name="resume" />
+          <input
+            class="file-input"
+            type="file"
+            name="resume"
+          >
           <span class="file-cta">
             <span class="file-icon">
-              <i class="fas fa-cloud-upload-alt"></i>
+              <i class="fas fa-cloud-upload-alt" />
             </span>
             <span class="file-label"> Choose a file… </span>
           </span>

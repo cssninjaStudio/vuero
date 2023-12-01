@@ -29,7 +29,8 @@ for (let i = 0; i < 1000; i++) {
 const locationSorter: VFlexTableWrapperSortFunction<User> = ({ order, a, b }) => {
   if (order === 'asc') {
     return a.location.localeCompare(b.location)
-  } else if (order === 'desc') {
+  }
+  else if (order === 'desc') {
     return b.location.localeCompare(a.location)
   }
 
@@ -44,8 +45,8 @@ const userFilter: VFlexTableWrapperFilterFunction<User> = ({ searchTerm, row }) 
 
   // search either in the name or the bio
   return (
-    row.name.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase()) ||
-    row.bio.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase())
+    row.name.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase())
+    || row.bio.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase())
   )
 }
 
@@ -109,9 +110,9 @@ const columns = {
           :data="data"
           class="mt-4"
         >
-          <!-- 
-            Here we retrieve the internal wrapperState. 
-            Note that we can not destructure it 
+          <!--
+            Here we retrieve the internal wrapperState.
+            Note that we can not destructure it
           -->
           <template #default="wrapperState">
             <!-- We can place any content inside the default slot-->
@@ -158,9 +159,9 @@ const columns = {
               </template>
             </VFlexTableToolbar>
 
-            <!-- 
-              The VFlexTable "data" and "columns" props 
-              will be inherited from parent VFlexTableWrapper 
+            <!--
+              The VFlexTable "data" and "columns" props
+              will be inherited from parent VFlexTableWrapper
             -->
             <VFlexTable rounded>
               <!-- Custom "name" cell content -->

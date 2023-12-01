@@ -42,7 +42,8 @@ export async function createApp() {
     try {
       const { default: plugin } = await plugins[path]()
       await plugin(vuero)
-    } catch (error) {
+    }
+    catch (error) {
       console.error(`Error while loading plugin "${path}".`)
       console.error(error)
     }

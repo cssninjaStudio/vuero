@@ -14,7 +14,7 @@ positioned inside the `VFlex` parent.
 <template>
   <VFlex>
     <!-- use any components inside --->
-    <VCard></VCard>
+    <VCard />
 
     <!-- use VFlexItem to have more control --->
     <VFlexItem>

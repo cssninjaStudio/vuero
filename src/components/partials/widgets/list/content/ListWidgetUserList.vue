@@ -6,7 +6,7 @@ const props = withDefaults(
   }>(),
   {
     users: () => [],
-  }
+  },
 )
 </script>
 

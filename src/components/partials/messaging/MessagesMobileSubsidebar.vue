@@ -13,7 +13,7 @@ const props = withDefaults(
   {
     conversations: () => [],
     selectedConversationId: 0,
-  }
+  },
 )
 </script>
 

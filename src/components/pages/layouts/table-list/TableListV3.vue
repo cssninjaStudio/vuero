@@ -17,14 +17,15 @@ const offersList = offers as OfferData[]
 const filteredData = computed(() => {
   if (!filters.value) {
     return offersList
-  } else {
+  }
+  else {
     const filterRe = new RegExp(filters.value, 'i')
     return offersList.filter((item) => {
       return (
-        item.title.match(filterRe) ||
-        item.duration.match(filterRe) ||
-        item.location.match(filterRe) ||
-        item.requirements.match(filterRe)
+        item.title.match(filterRe)
+        || item.duration.match(filterRe)
+        || item.location.match(filterRe)
+        || item.requirements.match(filterRe)
       )
     })
   }

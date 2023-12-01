@@ -22,11 +22,11 @@ examples and layouts.
         <tr>
           <td>Superman</td>
           <td>
-            <i class="fas fa-star warning-text"></i>
-            <i class="fas fa-star warning-text"></i>
-            <i class="fas fa-star warning-text"></i>
-            <i class="fas fa-star warning-text"></i>
-            <i class="fas fa-star warning-text"></i>
+            <i class="fas fa-star warning-text" />
+            <i class="fas fa-star warning-text" />
+            <i class="fas fa-star warning-text" />
+            <i class="fas fa-star warning-text" />
+            <i class="fas fa-star warning-text" />
           </td>
           <td>
             <span class="tag is-rounded is-success">Available</span>
@@ -35,11 +35,11 @@ examples and layouts.
         <tr>
           <td>Batman</td>
           <td>
-            <i class="fas fa-star warning-text"></i>
-            <i class="fas fa-star warning-text"></i>
-            <i class="fas fa-star warning-text"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
+            <i class="fas fa-star warning-text" />
+            <i class="fas fa-star warning-text" />
+            <i class="fas fa-star warning-text" />
+            <i class="fas fa-star" />
+            <i class="fas fa-star" />
           </td>
           <td>
             <span class="tag is-rounded">Unavailable</span>
@@ -48,11 +48,11 @@ examples and layouts.
         <tr>
           <td>Deadpool</td>
           <td>
-            <i class="fas fa-star warning-text"></i>
-            <i class="fas fa-star warning-text"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
+            <i class="fas fa-star warning-text" />
+            <i class="fas fa-star warning-text" />
+            <i class="fas fa-star" />
+            <i class="fas fa-star" />
+            <i class="fas fa-star" />
           </td>
           <td>
             <span class="tag is-rounded">Unavailable</span>
@@ -61,11 +61,11 @@ examples and layouts.
         <tr>
           <td>Spawn</td>
           <td>
-            <i class="fas fa-star warning-text"></i>
-            <i class="fas fa-star warning-text"></i>
-            <i class="fas fa-star warning-text"></i>
-            <i class="fas fa-star warning-text"></i>
-            <i class="fas fa-star"></i>
+            <i class="fas fa-star warning-text" />
+            <i class="fas fa-star warning-text" />
+            <i class="fas fa-star warning-text" />
+            <i class="fas fa-star warning-text" />
+            <i class="fas fa-star" />
           </td>
           <td>
             <span class="tag is-rounded is-success">Available</span>
@@ -74,11 +74,11 @@ examples and layouts.
         <tr>
           <td>Galactus</td>
           <td>
-            <i class="fas fa-star warning-text"></i>
-            <i class="fas fa-star warning-text"></i>
-            <i class="fas fa-star warning-text"></i>
-            <i class="fas fa-star warning-text"></i>
-            <i class="fas fa-star warning-text"></i>
+            <i class="fas fa-star warning-text" />
+            <i class="fas fa-star warning-text" />
+            <i class="fas fa-star warning-text" />
+            <i class="fas fa-star warning-text" />
+            <i class="fas fa-star warning-text" />
           </td>
           <td>
             <span class="tag is-rounded">Unavailable</span>

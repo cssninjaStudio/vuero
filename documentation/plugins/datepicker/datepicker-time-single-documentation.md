@@ -20,7 +20,11 @@ const date = ref(null)
 
 <template>
   <ClientOnly>
-    <VDatePicker v-model="date" mode="dateTime" is24hr>
+    <VDatePicker
+      v-model="date"
+      mode="dateTime"
+      is24hr
+    >
       <template #default="{ inputValue, inputEvents }">
         <VField>
           <VControl icon="feather:clock">
@@ -29,7 +33,7 @@ const date = ref(null)
               type="text"
               :value="inputValue"
               v-on="inputEvents"
-            />
+            >
           </VControl>
         </VField>
       </template>

@@ -20,7 +20,7 @@ import { createApp } from './app'
  * @see /@src/app.ts for more detailed informations
  */
 createApp().then(async (vuero) => {
-  // @ts-ignore
+  // @ts-expect-error Not typed
   const initialState = window.__vuero__
   // restore pinia state from SSR if any
   if (typeof initialState?.pinia === 'object') {

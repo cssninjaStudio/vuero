@@ -14,7 +14,7 @@ const props = withDefaults(
     currentValue: '$75,648.43',
     previousLabel: 'Previous Label',
     previousValue: '$91,512.18',
-  }
+  },
 )
 </script>
 

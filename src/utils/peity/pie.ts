@@ -88,14 +88,16 @@ export function drawPie(el: HTMLElement, data: number[], opts: PeityOptions) {
             y2,
           ].join(' '),
         })
-      } else {
+      }
+      else {
         $node = createSvgElement('circle', {
           cx,
           cy,
           r: radius,
         })
       }
-    } else {
+    }
+    else {
       const cumulativePlusValue = cumulative + value
 
       let d = ['M'].concat(
@@ -107,7 +109,7 @@ export function drawPie(el: HTMLElement, data: number[], opts: PeityOptions) {
         portion > 0.5 ? '1' : '0',
         '1',
         scale(cumulativePlusValue, radius).map(String),
-        'L'
+        'L',
       )
 
       if (innerRadius) {
@@ -119,9 +121,10 @@ export function drawPie(el: HTMLElement, data: number[], opts: PeityOptions) {
           '0',
           portion > 0.5 ? '1' : '0',
           '0',
-          scale(cumulative, innerRadius).map(String)
+          scale(cumulative, innerRadius).map(String),
         )
-      } else {
+      }
+      else {
         d.push(`${cx}`, `${cy}`)
       }
 
@@ -135,9 +138,11 @@ export function drawPie(el: HTMLElement, data: number[], opts: PeityOptions) {
     let fill
     if (typeof opts.fill === 'string') {
       fill = opts.fill
-    } else if (Array.isArray(opts.fill)) {
+    }
+    else if (Array.isArray(opts.fill)) {
       fill = opts.fill?.[i] ?? opts.fill?.[0]
-    } else if (typeof opts.fill === 'function') {
+    }
+    else if (typeof opts.fill === 'function') {
       fill = opts.fill(i)
     }
 

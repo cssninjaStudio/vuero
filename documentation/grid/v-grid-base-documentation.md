@@ -14,11 +14,11 @@ positioned inside the `VGrid` parent.
 <template>
   <VGrid>
     <!-- use any components inside --->
-    <VCard></VCard>
+    <VCard />
 
     <!-- use VGridItem to have more control --->
     <VGridItem>
-      <VAvatar initials="J.">
+      <VAvatar initials="J." />
     </VGridItem>
   </VGrid>
 </template>

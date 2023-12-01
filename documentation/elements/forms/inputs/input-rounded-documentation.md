@@ -9,7 +9,11 @@ Simply add the `is-rounded` class to the Html `input` element.
 <template>
   <VField>
     <VControl>
-      <VInput type="text" class="is-rounded" placeholder="Username" />
+      <VInput
+        type="text"
+        class="is-rounded"
+        placeholder="Username"
+      />
     </VControl>
   </VField>
 </template>

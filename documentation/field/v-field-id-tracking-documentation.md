@@ -9,15 +9,21 @@ on `VControl` and `VField` components.
 
 ```vue
 <template>
-  <VField v-slot="{ id }" grouped>
-    <VLabel class="has-fullwidth">Focus {{ id }} field</VLabel>
+  <VField v-slot="{ id: fieldId }" grouped>
+    <VLabel class="has-fullwidth">
+      Focus {{ fieldId }} field
+    </VLabel>
     <VControl v-slot="{ id }" subcontrol>
       <VInput type="text" placeholder="will not receive focus" />
-      <p class="help">field id: {{ id }}</p>
+      <p class="help">
+        field id: {{ id }}
+      </p>
     </VControl>
     <VControl v-slot="{ id }" subcontrol>
       <VInput type="text" placeholder="will receive focus" />
-      <p class="help">field id: {{ id }}</p>
+      <p class="help">
+        field id: {{ id }}
+      </p>
     </VControl>
   </VField>
 </template>
@@ -27,8 +33,8 @@ on `VControl` and `VField` components.
 
 <!--example-->
 
-<VField grouped v-slot="{ id }">
-  <VLabel class="has-fullwidth">Focus {{ id }} field</VLabel>
+<VField grouped v-slot="{ id: fieldId }">
+  <VLabel class="has-fullwidth">Focus {{ fieldId }} field</VLabel>
   <VControl subcontrol v-slot="{ id }">
     <VInput type="text" placeholder="will not receive focus" />
     <p class="help">field id: {{ id }}</p>

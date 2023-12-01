@@ -33,7 +33,11 @@ const markdown = ref('## Hello Vuero\n\nThis is a **Markdown** preview content.'
       </VCard>
 
       <VCard radius="smooth">
-        <VMarkdownPreview :source="value" size="medium" max-width="small" />
+        <VMarkdownPreview
+          :source="value"
+          size="medium"
+          max-width="small"
+        />
       </VCard>
     </template>
   </VMarkdownEditor>

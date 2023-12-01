@@ -8,7 +8,11 @@ using the `center` prop. This will apply the `flex` property
 
 ```vue
 <template>
-  <VBlock title="Anna B." subtitle="UX Designer" center>
+  <VBlock
+    title="Anna B."
+    subtitle="UX Designer"
+    center
+  >
     <template #icon>
       <VAvatar
         size="medium"
@@ -17,7 +21,9 @@ using the `center` prop. This will apply the `flex` property
       />
     </template>
     <template #action>
-      <VButton color="primary" elevated>View</VButton>
+      <VButton color="primary" elevated>
+        View
+      </VButton>
     </template>
   </VBlock>
 </template>

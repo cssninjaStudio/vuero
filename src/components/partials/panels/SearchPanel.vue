@@ -13,8 +13,8 @@ const filteredData = computed(() => {
 
   return Object.values(popovers).filter((user) => {
     return (
-      user.fullName.match(new RegExp(filter.value, 'i')) ||
-      user.position.match(new RegExp(filter.value, 'i'))
+      user.fullName.match(new RegExp(filter.value, 'i'))
+      || user.position.match(new RegExp(filter.value, 'i'))
     )
   })
 })

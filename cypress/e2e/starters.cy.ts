@@ -24,7 +24,7 @@ describe(`Starters${screenshotsString}`, () => {
               animation: none !important;
             }
           </style>
-        `)
+        `),
       )
 
       // check that main content exist

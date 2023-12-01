@@ -60,7 +60,7 @@ const { field, id } = useVFieldContext({
 
 const isValid = computed(() => props.isValid)
 const hasError = computed(() =>
-  field?.value ? Boolean(field?.value?.errorMessage?.value) : props.hasError
+  field?.value ? Boolean(field?.value?.errorMessage?.value) : props.hasError,
 )
 
 const controlClasees = computed(() => {

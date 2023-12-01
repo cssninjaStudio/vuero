@@ -14,7 +14,11 @@ any other component slot.
     subtitle="Sales Manager"
   >
     <template #action>
-      <VTag color="green" label="trending" rounded />
+      <VTag
+        color="green"
+        label="trending"
+        rounded
+      />
     </template>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quibusnam praeteritis? At

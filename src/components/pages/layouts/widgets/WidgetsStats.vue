@@ -15,8 +15,8 @@ const { revenueOptions } = useRevenueAreaChart()
 const { lineStatsChartOptions } = useLineStatsWidgetCharts()
 const { flexRadialChartCircleOptions } = useFlexRadialChartCircle()
 const { flexRadialChartStripesOptions } = useFlexRadialChartStripes()
-const { widgetGaugeGroup1Options, widgetGaugeGroup2Options, widgetGaugeGroup3Options } =
-  useGroupedRadialCharts()
+const { widgetGaugeGroup1Options, widgetGaugeGroup2Options, widgetGaugeGroup3Options }
+  = useGroupedRadialCharts()
 const {
   widgetRadialGroup1Options,
   widgetRadialGroup2Options,

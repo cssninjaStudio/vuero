@@ -18,11 +18,11 @@ import { format, generateStaticParams, htmlMinifier } from './config'
 
 // prevent non-ready SSR dependencies from throwing errors
 
-//@ts-expect-error
+// @ts-expect-error ignore
 globalThis.__VUE_PROD_DEVTOOLS__ = false
-//@ts-expect-error
+// @ts-expect-error ignore
 globalThis.__VUE_I18N_FULL_INSTALL__ = false
-//@ts-expect-error
+// @ts-expect-error ignore
 globalThis.__VUE_I18N_LEGACY_API__ = false
 
 const resolve = (p: string) =>
@@ -61,7 +61,7 @@ async function build() {
         },
       },
       mode: config.mode,
-    })
+    }),
   )
 
   // server
@@ -87,11 +87,11 @@ async function build() {
         },
       },
       mode: config.mode,
-    })
+    }),
   )
 
   const manifest = JSON.parse(
-    await fsp.readFile(path.join(outStatic, './.vite/ssr-manifest.json'), 'utf-8')
+    await fsp.readFile(path.join(outStatic, './.vite/ssr-manifest.json'), 'utf-8'),
   )
   const template = await fsp.readFile(path.join(outStatic, './index.html'), 'utf-8')
 
@@ -101,14 +101,14 @@ async function build() {
 
   const _require = createRequire(import.meta.url)
 
-  const { render }: any =
-    format === 'esm' ? await import(serverEntry) : _require(serverEntry)
+  const { render }: any
+    = format === 'esm' ? await import(serverEntry) : _require(serverEntry)
 
   // determine routes to pre-render from src/pages
   const routesToPrerender = (
     await fg([path.resolve(cwd, 'src/pages/**/*.vue').replace(/\\/g, '/')])
   )
-    .filter((path) => !path.includes('src/pages/[...all].vue')) // ignore root catch-all route
+    .filter(path => !path.includes('src/pages/[...all].vue')) // ignore root catch-all route
     .map((file) => {
       const name = file
         .replace(/\.vue$/, '')
@@ -122,22 +122,22 @@ async function build() {
 
   // pre-render each route...
   for (const index in routesToPrerender) {
-    const url =
-      routesToPrerender[index] === '/' ? '/' : routesToPrerender[index].replace(/\/$/, '') // remove trailing slash
+    const url
+      = routesToPrerender[index] === '/' ? '/' : routesToPrerender[index].replace(/\/$/, '') // remove trailing slash
 
     const logCount = `${1 + parseInt(index, 10)}/${routesToPrerender.length}`
 
     if (url.includes('[')) {
-      const routeStaticParamsFn =
-        url in staticParams ? staticParams[url as keyof typeof staticParams] : undefined
+      const routeStaticParamsFn
+        = url in staticParams ? staticParams[url as keyof typeof staticParams] : undefined
 
       if (!routeStaticParamsFn) {
         config.logger.warn(
           `dynamic route (${logCount}) ${colors.yellow(
-            url
+            url,
           )} - missing static config - update ${colors.cyan(
-            './build-ssg.config.ts'
-          )} to generate static params for this route.`
+            './build-ssg.config.ts',
+          )} to generate static params for this route.`,
         )
         continue
       }
@@ -160,8 +160,8 @@ async function build() {
       if (!routeStaticParams || !Array.isArray(routeStaticParams)) {
         config.logger.warn(
           `dynamic route (${logCount}) ${colors.yellow(
-            url
-          )} - static params must be an array`
+            url,
+          )} - static params must be an array`,
         )
         continue
       }
@@ -172,8 +172,8 @@ async function build() {
           if (p.required && !(p.name in param)) {
             config.logger.warn(
               `dynamic route (${logCount}) ${colors.yellow(
-                url
-              )} - missing required param ${colors.cyan(p.name)}`
+                url,
+              )} - missing required param ${colors.cyan(p.name)}`,
             )
             return true
           }
@@ -184,19 +184,20 @@ async function build() {
             if (!valid) {
               config.logger.warn(
                 `dynamic route (${logCount}) ${colors.yellow(url)} - param ${colors.cyan(
-                  p.name
-                )} must be an array, got string "${colors.cyan(value)}"`
+                  p.name,
+                )} must be an array, got string "${colors.cyan(value)}"`,
               )
               return true
             }
-          } else if (!p.array && p.name in param) {
+          }
+          else if (!p.array && p.name in param) {
             const value = param[p.name as keyof typeof param]
             const valid = !Array.isArray(value)
             if (!valid) {
               config.logger.warn(
                 `dynamic route (${logCount}) ${colors.yellow(url)} - param ${colors.cyan(
-                  p.name
-                )} must be string, got array ${colors.cyan(`[${value.join(', ')}]`)}`
+                  p.name,
+                )} must be string, got array ${colors.cyan(`[${value.join(', ')}]`)}`,
               )
               return true
             }
@@ -218,10 +219,12 @@ async function build() {
             const value = param[p.name as keyof typeof param]
             if (Array.isArray(value)) {
               return url.replace(p.param, value.join('/'))
-            } else {
+            }
+            else {
               return url.replace(p.param, value)
             }
-          } else {
+          }
+          else {
             return url.replace(p.param, '')
           }
         }, url)
@@ -257,7 +260,7 @@ async function build() {
   await fsp.rm(path.join(outServer), { recursive: true, force: true })
 
   // when `vite-plugin-pwa` is presented, use it to regenerate SW after rendering
-  const pwaPlugin = config.plugins.find((plugin) => plugin.name === 'vite-plugin-pwa')
+  const pwaPlugin = config.plugins.find(plugin => plugin.name === 'vite-plugin-pwa')
     ?.api
   if (pwaPlugin && !pwaPlugin.disabled && pwaPlugin.generateSW) {
     config.logger.info(colors.green('[SSG] Regenerate PWA...'))
@@ -273,11 +276,11 @@ async function build() {
   config.logger.info(
     [
       `Pre-rendering done. You can now serve the ${colors.cyan(
-        out.replace(cwd, '.')
+        out.replace(cwd, '.'),
       )} directory with a static file server.`,
       `Example:`,
       `  ${colors.green('pnpm ssg:serve')}`,
-    ].join('\n')
+    ].join('\n'),
   )
   process.exit(0)
 }
@@ -320,7 +323,7 @@ async function renderPage({
     .replace(`</body>`, `${bodyTags}</body>`)
     .replace(
       /<div id="app"([\s\w\-"'=[\]]*)><\/div>/,
-      `<div id="app" data-server-rendered="true"$1>${appHtml}</div><script>window.__vuero__=${initialState}</script>`
+      `<div id="app" data-server-rendered="true"$1>${appHtml}</div><script>window.__vuero__=${initialState}</script>`,
     )
 
   let minified: Buffer | string = html
@@ -350,16 +353,17 @@ async function renderPage({
   config.logger.info(
     colors.dim(
       `pre-rendered  (${logCount}) ${colors.green(url)} - ${colors.cyan(
-        filePath.replace(cwd, '.')
-      )}`
-    )
+        filePath.replace(cwd, '.'),
+      )}`,
+    ),
   )
 }
 
-;(async () => {
+(async () => {
   try {
     await build()
-  } catch (e) {
+  }
+  catch (e) {
     console.error(e)
     process.exit(1)
   }

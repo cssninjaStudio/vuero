@@ -31,7 +31,7 @@ useHead({
       <!--
           Page content goes here
 
-          You can see pages content samples from 
+          You can see pages content samples from
           files in /src/components/pages directory
         -->
     </div>

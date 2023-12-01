@@ -9,7 +9,7 @@ const props = withDefaults(
     title: 'Widget Title',
     value: '8,641.26',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bonum integritas corporis: misera debilitas. Ita ne hoc quidem modo paria.',
-  }
+  },
 )
 </script>
 

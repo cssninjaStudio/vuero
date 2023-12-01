@@ -14,12 +14,12 @@ const mobileWidthValue = props.mobileWidth ?? props.width
 
 if (props.width.match(CssUnitRe) === null) {
   console.warn(
-    `VTextEllipsis: invalid "${props.width}" width. Should be a valid css unit value.`
+    `VTextEllipsis: invalid "${props.width}" width. Should be a valid css unit value.`,
   )
 }
 if (mobileWidthValue.match(CssUnitRe) === null) {
   console.warn(
-    `VTextEllipsis: invalid "${mobileWidthValue}" mobileWidth. Should be a valid css unit value.`
+    `VTextEllipsis: invalid "${mobileWidthValue}" mobileWidth. Should be a valid css unit value.`,
   )
 }
 </script>

@@ -30,7 +30,11 @@ const data = [
 </script>
 
 <template>
-  <VFlexTable :data="data" rounded print-objects />
+  <VFlexTable
+    :data="data"
+    rounded
+    print-objects
+  />
 </template>
 ```
 

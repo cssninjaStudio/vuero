@@ -12,27 +12,34 @@ const updateVTooltip: DirectiveHook = (el: HTMLElement, bindings) => {
 
   if (bindings.modifiers.left) {
     placement += '-left'
-  } else if (bindings.modifiers.right) {
+  }
+  else if (bindings.modifiers.right) {
     placement += '-right'
   }
 
   if (bindings.modifiers.light) {
     color = 'hint--light'
-  } else if (bindings.modifiers.primary) {
+  }
+  else if (bindings.modifiers.primary) {
     color = 'hint--primary'
-  } else if (bindings.modifiers.info) {
+  }
+  else if (bindings.modifiers.info) {
     color = 'hint--info'
-  } else if (bindings.modifiers.success) {
+  }
+  else if (bindings.modifiers.success) {
     color = 'hint--success'
-  } else if (bindings.modifiers.warning) {
+  }
+  else if (bindings.modifiers.warning) {
     color = 'hint--warning'
-  } else if (bindings.modifiers.error) {
+  }
+  else if (bindings.modifiers.error) {
     color = 'hint--error'
   }
 
   if (bindings.modifiers.rounded) {
     shape = 'hint--rounded'
-  } else if (bindings.modifiers.bubble) {
+  }
+  else if (bindings.modifiers.bubble) {
     shape = 'hint--bubble'
   }
 
@@ -58,7 +65,8 @@ const updateVTooltip: DirectiveHook = (el: HTMLElement, bindings) => {
     if (shape) {
       nextClasses.push(shape)
     }
-  } else {
+  }
+  else {
     el.dataset.hint = undefined
   }
 

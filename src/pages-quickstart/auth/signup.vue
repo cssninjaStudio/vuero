@@ -40,10 +40,10 @@ const validationSchema = toTypedSchema(
       }),
       promotional: zod.boolean(),
     })
-    .refine((data) => data.password === data.passwordCheck, {
+    .refine(data => data.password === data.passwordCheck, {
       message: t('auth.errors.passwordCheck.match'),
       path: ['passwordCheck'],
-    })
+    }),
 )
 
 const { handleSubmit } = useForm({

@@ -11,12 +11,16 @@ to be a click event using the `trigger="click"` prop.
   <div class="buttons">
     <Tippy>
       <VButton>Hover me!</VButton>
-      <template #content> Tooltip content </template>
+      <template #content>
+        Tooltip content
+      </template>
     </Tippy>
 
     <Tippy trigger="click">
       <VButton>Click me!</VButton>
-      <template #content> Tooltip content </template>
+      <template #content>
+        Tooltip content
+      </template>
     </Tippy>
   </div>
 </template>

@@ -6,7 +6,10 @@ const route = useRoute()
 const currentPage = computed(() => {
   try {
     return Number.parseInt(route.query.page as string) || 1
-  } catch {}
+  }
+  catch {
+    // discard
+  }
   return 1
 })
 

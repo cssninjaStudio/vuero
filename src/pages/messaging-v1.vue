@@ -29,17 +29,19 @@ onMounted(async () => {
 
     // When conversations are loaded, select last unread conversation to load its messages
     const lastReadConversation = chat.conversations.find(
-      (conversation) => !conversation.unreadMessages
+      conversation => !conversation.unreadMessages,
     )
 
     // Note that we do not await the messages to be loaded,
     // we have nothing to do with them here but it will continue to run in background
     if (lastReadConversation) {
       chat.selectConversastion(lastReadConversation.id)
-    } else {
+    }
+    else {
       chat.selectConversastion(chat.conversations[0].id)
     }
-  } catch (e: any) {
+  }
+  catch (e: any) {
     // We always catch errors in the components, so we can display messages to the user
     // Here we just display the error with notyf popins
     notyf.error(e.message)

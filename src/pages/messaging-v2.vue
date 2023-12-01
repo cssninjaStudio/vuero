@@ -135,7 +135,7 @@ const selectedConversationId = ref(3)
 const mobileConversationListOpen = ref(false)
 const selectedConversation = computed(() => {
   const conversation = conversations.find(
-    (item) => item.id === selectedConversationId.value
+    item => item.id === selectedConversationId.value,
   )
   if (conversation) {
     return conversation

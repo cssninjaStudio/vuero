@@ -14,7 +14,7 @@ const props = withDefaults(
     picture: undefined,
     badgeLeft: undefined,
     badgeRight: undefined,
-  }
+  },
 )
 </script>
 

@@ -9,13 +9,38 @@ See the code examples for more details about usage.
 
 ```vue
 <template>
-  <VFlex flex-wrap="wrap" align-items="flex-end" row-gap=".5rem" column-gap=".25rem">
-    <VAvatar initials="CT" size="small" squared />
+  <VFlex
+    flex-wrap="wrap"
+    align-items="flex-end"
+    row-gap=".5rem"
+    column-gap=".25rem"
+  >
+    <VAvatar
+      initials="CT"
+      size="small"
+      squared
+    />
     <VAvatar initials="CT" squared />
-    <VAvatar initials="CT" size="medium" squared />
-    <VAvatar initials="CT" size="large" squared />
-    <VAvatar initials="CT" size="big" squared />
-    <VAvatar initials="CT" size="xl" squared />
+    <VAvatar
+      initials="CT"
+      size="medium"
+      squared
+    />
+    <VAvatar
+      initials="CT"
+      size="large"
+      squared
+    />
+    <VAvatar
+      initials="CT"
+      size="big"
+      squared
+    />
+    <VAvatar
+      initials="CT"
+      size="xl"
+      squared
+    />
   </VFlex>
 </template>
 ```

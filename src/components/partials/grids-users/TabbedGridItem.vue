@@ -17,7 +17,7 @@ const props = withDefaults(
   {
     activeTab: 'posts',
     user: () => ({}),
-  }
+  },
 )
 
 const tab = ref(props.activeTab)

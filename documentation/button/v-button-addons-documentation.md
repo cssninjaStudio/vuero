@@ -10,13 +10,19 @@ You can mix any button styles.
 <template>
   <VField addons>
     <VControl>
-      <VButton icon="fas fa-align-left"> Left </VButton>
+      <VButton icon="fas fa-align-left">
+        Left
+      </VButton>
     </VControl>
     <VControl>
-      <VButton icon="fas fa-align-center"> Center </VButton>
+      <VButton icon="fas fa-align-center">
+        Center
+      </VButton>
     </VControl>
     <VControl>
-      <VButton icon="fas fa-align-right"> Right </VButton>
+      <VButton icon="fas fa-align-right">
+        Right
+      </VButton>
     </VControl>
   </VField>
 </template>

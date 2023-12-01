@@ -18,7 +18,9 @@ const successToast = () => {
 </script>
 
 <template>
-  <VButton bold @click="successToast">Success Toast</VButton>
+  <VButton bold @click="successToast">
+    Success Toast
+  </VButton>
 </template>
 ```
 

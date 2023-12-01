@@ -30,20 +30,22 @@ export default defineComponent({
     })
     const isOpen = ref(
       Boolean(
-        hasNestedLinkActive.value ||
-          (typeof props.collapseId === 'string' && props.open === props.collapseId) ||
-          (typeof props.collapseId === 'undefined' && props.open === true)
-      )
+        hasNestedLinkActive.value
+          || (typeof props.collapseId === 'string' && props.open === props.collapseId)
+          || (typeof props.collapseId === 'undefined' && props.open === true),
+      ),
     )
 
     function toggle() {
       if (typeof props.collapseId === 'string') {
         if (props.collapseId === props.open) {
           emit('update:open')
-        } else {
+        }
+        else {
           emit('update:open', props.collapseId)
         }
-      } else {
+      }
+      else {
         isOpen.value = !isOpen.value
       }
     }
@@ -52,10 +54,10 @@ export default defineComponent({
       () => props.open,
       (val) => {
         isOpen.value = Boolean(
-          (typeof props.collapseId === 'string' && unref(val) === props.collapseId) ||
-            (typeof props.collapseId === 'undefined' && unref(val) === true)
+          (typeof props.collapseId === 'string' && unref(val) === props.collapseId)
+            || (typeof props.collapseId === 'undefined' && unref(val) === true),
         )
-      }
+      },
     )
 
     return () => {
@@ -69,7 +71,8 @@ export default defineComponent({
           for (const child of children) {
             links.push(h('li', {}, child))
           }
-        } else {
+        }
+        else {
           links.push(h('li', {}, child))
         }
       }
@@ -93,7 +96,7 @@ export default defineComponent({
             }
           },
         },
-        header
+        header,
       )
       const collapseWrap = h('div', { class: 'collapse-wrap' }, parentLink)
       const content = isOpen.value ? h('ul', {}, links) : undefined
@@ -116,9 +119,9 @@ export default defineComponent({
               default() {
                 return content
               },
-            }
+            },
           ),
-        ]
+        ],
       )
     }
   },

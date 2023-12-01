@@ -5,7 +5,7 @@ const props = withDefaults(
   }>(),
   {
     title: 'UI Widget',
-  }
+  },
 )
 </script>
 

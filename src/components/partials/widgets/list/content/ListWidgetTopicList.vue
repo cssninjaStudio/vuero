@@ -6,7 +6,7 @@ const props = withDefaults(
   }>(),
   {
     topics: () => [],
-  }
+  },
 )
 </script>
 

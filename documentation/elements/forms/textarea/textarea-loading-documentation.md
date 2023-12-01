@@ -22,7 +22,7 @@ const loading = ref(true)
         v-model="textarea"
         rows="4"
         placeholder="A longer message..."
-      ></VTextarea>
+      />
     </VControl>
   </VField>
 </template>

@@ -16,32 +16,32 @@ const sortedData = computed(() => {
   switch (router.query.sort) {
     case 'username:asc': {
       return [...flexRowsAdvanced].sort((a, b) =>
-        collator.compare(a.username, b.username)
+        collator.compare(a.username, b.username),
       )
     }
     case 'username:desc': {
       return [...flexRowsAdvanced].sort((a, b) =>
-        collator.compare(b.username, a.username)
+        collator.compare(b.username, a.username),
       )
     }
     case 'annual-earnings:asc': {
       return [...flexRowsAdvanced].sort((a, b) =>
-        a.annualEarnings > b.annualEarnings ? 1 : -1
+        a.annualEarnings > b.annualEarnings ? 1 : -1,
       )
     }
     case 'annual-earnings:desc': {
       return [...flexRowsAdvanced].sort((a, b) =>
-        a.annualEarnings > b.annualEarnings ? -1 : 1
+        a.annualEarnings > b.annualEarnings ? -1 : 1,
       )
     }
     case 'position:asc': {
       return [...flexRowsAdvanced].sort((a, b) =>
-        collator.compare(a.position, b.position)
+        collator.compare(a.position, b.position),
       )
     }
     case 'position:desc': {
       return [...flexRowsAdvanced].sort((a, b) =>
-        collator.compare(b.position, a.position)
+        collator.compare(b.position, a.position),
       )
     }
     case 'status:asc': {
@@ -52,12 +52,12 @@ const sortedData = computed(() => {
     }
     case 'contacts:asc': {
       return [...flexRowsAdvanced].sort((a, b) =>
-        a.contacts.length > b.contacts.length ? 1 : -1
+        a.contacts.length > b.contacts.length ? 1 : -1,
       )
     }
     case 'contacts:desc': {
       return [...flexRowsAdvanced].sort((a, b) =>
-        a.contacts.length > b.contacts.length ? -1 : 1
+        a.contacts.length > b.contacts.length ? -1 : 1,
       )
     }
     default: {
@@ -90,8 +90,8 @@ const SortColumnComponent = defineComponent({
                 currentRoute.query.sort === `${props.id}:asc`
                   ? `${props.id}:desc`
                   : currentRoute.query.sort === `${props.id}:desc`
-                  ? undefined
-                  : `${props.id}:asc`,
+                    ? undefined
+                    : `${props.id}:asc`,
             },
           },
         },
@@ -101,19 +101,19 @@ const SortColumnComponent = defineComponent({
               'span',
               { key: `${currentRoute.query.sort}`, class: 'is-inline' },
               h('span', {
-                class: 'iconify is-inline',
+                'class': 'iconify is-inline',
                 'data-icon':
                   currentRoute.query.sort === `${props.id}:asc`
                     ? 'fa6-solid:sort-up'
                     : currentRoute.query.sort === `${props.id}:desc`
-                    ? 'fa6-solid:sort-down'
-                    : 'fa6-solid:sort',
-              })
+                      ? 'fa6-solid:sort-down'
+                      : 'fa6-solid:sort',
+              }),
             )
 
             return [props.label, icon]
           },
-        }
+        },
       )
   },
 })
@@ -130,7 +130,7 @@ const exampleColumns = {
         h(SortColumnComponent, {
           label: 'Name',
           id: 'username',
-        })
+        }),
       ),
   },
   position: {
@@ -141,7 +141,7 @@ const exampleColumns = {
         h(SortColumnComponent, {
           label: 'Position',
           id: 'position',
-        })
+        }),
       ),
   },
   annualEarnings: {
@@ -155,7 +155,7 @@ const exampleColumns = {
         h(SortColumnComponent, {
           label: 'Revenue',
           id: 'annual-earnings',
-        })
+        }),
       ),
   },
   status: {
@@ -170,17 +170,17 @@ const exampleColumns = {
             row.status === 'Active'
               ? 'success'
               : row.status === 'New'
-              ? 'info'
-              : row.status === 'Suspended'
-              ? 'orange'
-              : undefined,
+                ? 'info'
+                : row.status === 'Suspended'
+                  ? 'orange'
+                  : undefined,
         },
         // that notation is to render content in the default slot
         {
           default() {
             return `${row.status}`
           },
-        }
+        },
       ),
     // we can use custom render function for column heading
     renderHeader: () =>
@@ -190,7 +190,7 @@ const exampleColumns = {
         h(SortColumnComponent, {
           label: 'Status',
           id: 'status',
-        })
+        }),
       ),
   },
   contacts: {
@@ -201,7 +201,7 @@ const exampleColumns = {
         h(SortColumnComponent, {
           label: 'Contacts',
           id: 'contacts',
-        })
+        }),
       ),
     renderRow: (row: any) =>
       // We can render custom components and set props

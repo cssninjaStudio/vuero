@@ -134,7 +134,7 @@ const initDropzone = () => {
     for (let i = 0; i < files.length; i++) {
       const file = files[i]
       const totalSteps = Math.round(
-        Math.min(maxSteps, Math.max(minSteps, file.size / bytesPerStep))
+        Math.min(maxSteps, Math.max(minSteps, file.size / bytesPerStep)),
       )
 
       for (let step = 0; step < totalSteps; step++) {
@@ -151,7 +151,7 @@ const initDropzone = () => {
           'uploadprogress',
           file,
           file.upload.progress,
-          file.upload.bytesSent
+          file.upload.bytesSent,
         )
         if (file.upload.progress >= 100) {
           file.status = Dropzone.SUCCESS

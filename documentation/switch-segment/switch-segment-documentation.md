@@ -15,34 +15,19 @@ Please refer to the markup for more details about usage.
       <VSwitchSegment />
     </VControl>
     <VControl subcontrol>
-      <VSwitchSegment
-        color="primary"
-        :model-value="true"
-      />
+      <VSwitchSegment color="primary" :model-value="true" />
     </VControl>
     <VControl subcontrol>
-      <VSwitchSegment
-        color="success"
-        :model-value="true"
-      />
+      <VSwitchSegment color="success" :model-value="true" />
     </VControl>
     <VControl subcontrol>
-      <VSwitchSegment
-        color="info"
-        :model-value="true"
-      />
+      <VSwitchSegment color="info" :model-value="true" />
     </VControl>
     <VControl subcontrol>
-      <VSwitchSegment
-        color="warning"
-        :model-value="true"
-      />
+      <VSwitchSegment color="warning" :model-value="true" />
     </VControl>
     <VControl subcontrol>
-      <VSwitchSegment
-        color="danger"
-        :model-value="true"
-      />
+      <VSwitchSegment color="danger" :model-value="true" />
     </VControl>
   </VField>
 </template>

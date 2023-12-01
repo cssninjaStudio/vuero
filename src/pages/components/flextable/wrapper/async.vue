@@ -59,7 +59,8 @@ function useQueryParam() {
       // read "search" from the query params
       if (Array.isArray(route?.query?.search)) {
         searchTermQuery = route.query.search?.[0] ?? defaultSearch
-      } else {
+      }
+      else {
         searchTermQuery = route.query.search ?? defaultSearch
       }
 
@@ -87,7 +88,8 @@ function useQueryParam() {
       // read "sort" from the query params
       if (Array.isArray(route?.query?.sort)) {
         sortQuery = route.query.sort?.[0] ?? defaultSort
-      } else {
+      }
+      else {
         sortQuery = route.query.sort ?? defaultSort
       }
 
@@ -115,7 +117,8 @@ function useQueryParam() {
       // read "limit" from the query params
       if (Array.isArray(route?.query?.limit)) {
         limitQuery = parseInt(route.query.limit[0] ?? `${defaultLimit}`)
-      } else {
+      }
+      else {
         limitQuery = parseInt(route.query.limit ?? `${defaultLimit}`)
       }
 
@@ -146,7 +149,8 @@ function useQueryParam() {
 
       if (Array.isArray(route?.query?.page)) {
         pageQuery = parseInt(route.query.page[0] ?? `${defaultPage}`)
-      } else {
+      }
+      else {
         pageQuery = parseInt(route.query.page ?? `${defaultPage}`)
       }
 
@@ -191,8 +195,8 @@ const fetchData: VFlexTableWrapperDataResolver = async ({
   controller,
 }) => {
   // sort will be a string like "name:asc"
-  let [sortField, sortOrder] =
-    sort && sort.includes(':') ? sort.split(':') : [undefined, undefined]
+  let [sortField, sortOrder]
+    = sort && sort.includes(':') ? sort.split(':') : [undefined, undefined]
 
   // async fetch data to our server
   const { _data: users, headers } = await $fetch.raw(`/api/users`, {
@@ -229,7 +233,8 @@ const openedRowId = ref<number>()
 function onRowClick(row: any) {
   if (openedRowId.value === row.id) {
     openedRowId.value = undefined
-  } else {
+  }
+  else {
     openedRowId.value = row.id
   }
 }
@@ -238,7 +243,8 @@ const incomingCallerId = ref<number>()
 function onCallClick(row: any) {
   if (incomingCallerId.value === row.id) {
     incomingCallerId.value = undefined
-  } else {
+  }
+  else {
     incomingCallerId.value = row.id
   }
 }
@@ -280,7 +286,7 @@ function onCallClick(row: any) {
         <!--Flex Table Advanced-->
         <VFlexTableWrapperAdvancedDocumentation />
 
-        <!-- 
+        <!--
           We use v-model to let VFlexTableWrapper update queryParam
         -->
         <VFlexTableWrapper
@@ -293,9 +299,9 @@ function onCallClick(row: any) {
           :total="total"
           class="mt-4"
         >
-          <!-- 
-            Here we retrieve the internal wrapperState. 
-            Note that we can not destructure it 
+          <!--
+            Here we retrieve the internal wrapperState.
+            Note that we can not destructure it
           -->
           <template #default="wrapperState">
             <!--Table Pagination-->
@@ -370,8 +376,8 @@ function onCallClick(row: any) {
             >
               <template #body>
                 <!--
-                  The wrapperState.loading will be update 
-                  when the fetchData function is running 
+                  The wrapperState.loading will be update
+                  when the fetchData function is running
                 -->
                 <div
                   v-if="wrapperState.loading"

@@ -26,7 +26,11 @@ const merge = 10
 <template>
   <VField v-slot="{ id }">
     <VControl>
-      <Slider :id="id" v-model="value" :merge="merge" />
+      <Slider
+        :id="id"
+        v-model="value"
+        :merge="merge"
+      />
     </VControl>
   </VField>
 </template>

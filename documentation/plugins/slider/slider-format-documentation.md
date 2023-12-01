@@ -23,7 +23,11 @@ const format = (value) => {
 <template>
   <VField v-slot="{ id }" class="has-curved-tooltip">
     <VControl>
-      <Slider :id="id" v-model="value" :format="format" />
+      <Slider
+        :id="id"
+        v-model="value"
+        :format="format"
+      />
     </VControl>
   </VField>
 </template>

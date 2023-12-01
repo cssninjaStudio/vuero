@@ -7,7 +7,7 @@ const props = withDefaults(
   {
     title: 'UI Widget',
     icon: 'feather:bell',
-  }
+  },
 )
 </script>
 

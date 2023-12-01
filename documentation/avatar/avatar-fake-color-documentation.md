@@ -10,19 +10,68 @@ Supports dark mode.
 
 ```vue
 <template>
-  <VFlex flex-wrap="wrap" align-items="flex-end" row-gap=".5rem" column-gap=".25rem">
+  <VFlex
+    flex-wrap="wrap"
+    align-items="flex-end"
+    row-gap=".5rem"
+    column-gap=".25rem"
+  >
     <VAvatar initials="CT" size="medium" />
-    <VAvatar initials="CT" size="medium" color="primary" />
-    <VAvatar initials="CT" size="medium" color="success" />
-    <VAvatar initials="CT" size="medium" color="info" />
-    <VAvatar initials="CT" size="medium" color="warning" />
-    <VAvatar initials="CT" size="medium" color="danger" />
-    <VAvatar initials="CT" size="medium" color="h-purple" />
-    <VAvatar initials="CT" size="medium" color="h-orange" />
-    <VAvatar initials="CT" size="medium" color="h-blue" />
-    <VAvatar initials="CT" size="medium" color="h-green" />
-    <VAvatar initials="CT" size="medium" color="h-red" />
-    <VAvatar initials="CT" size="medium" color="h-yellow" />
+    <VAvatar
+      initials="CT"
+      size="medium"
+      color="primary"
+    />
+    <VAvatar
+      initials="CT"
+      size="medium"
+      color="success"
+    />
+    <VAvatar
+      initials="CT"
+      size="medium"
+      color="info"
+    />
+    <VAvatar
+      initials="CT"
+      size="medium"
+      color="warning"
+    />
+    <VAvatar
+      initials="CT"
+      size="medium"
+      color="danger"
+    />
+    <VAvatar
+      initials="CT"
+      size="medium"
+      color="h-purple"
+    />
+    <VAvatar
+      initials="CT"
+      size="medium"
+      color="h-orange"
+    />
+    <VAvatar
+      initials="CT"
+      size="medium"
+      color="h-blue"
+    />
+    <VAvatar
+      initials="CT"
+      size="medium"
+      color="h-green"
+    />
+    <VAvatar
+      initials="CT"
+      size="medium"
+      color="h-red"
+    />
+    <VAvatar
+      initials="CT"
+      size="medium"
+      color="h-yellow"
+    />
   </VFlex>
 </template>
 ```

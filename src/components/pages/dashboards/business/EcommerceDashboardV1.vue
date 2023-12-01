@@ -19,8 +19,8 @@ const { flexRadialChartStripesOptions } = useFlexRadialChartStripes()
 const { revenueOptions } = useRevenueAreaChart()
 const { lineStatsChartOptions } = useLineStatsWidgetCharts()
 const { spark1, spark2, spark3, spark4 } = useSparksCharts()
-const { widgetGaugeGroup1Options, widgetGaugeGroup2Options, widgetGaugeGroup3Options } =
-  useGroupedRadialCharts()
+const { widgetGaugeGroup1Options, widgetGaugeGroup2Options, widgetGaugeGroup3Options }
+  = useGroupedRadialCharts()
 const {
   widgetRadialGroup1Options,
   widgetRadialGroup2Options,

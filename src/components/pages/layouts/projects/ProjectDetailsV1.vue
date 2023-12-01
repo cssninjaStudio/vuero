@@ -8,7 +8,7 @@ const props = withDefaults(
   }>(),
   {
     activeTab: 'project',
-  }
+  },
 )
 
 const tab = ref(props.activeTab)

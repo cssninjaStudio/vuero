@@ -7,7 +7,7 @@ const props = withDefaults(
   }>(),
   {
     theme: 'default',
-  }
+  },
 )
 
 const { y } = useWindowScroll()
@@ -52,7 +52,7 @@ const isScrolling = computed(() => {
             </a>
           </div>
 
-          <!-- 
+          <!--
           Dropdown default links
           <div class="centered-drops">
             <div class="centered-drop">
@@ -74,7 +74,7 @@ const isScrolling = computed(() => {
                 </div>
               </div>
             </div>
-          </div> 
+          </div>
           -->
         </slot>
       </div>

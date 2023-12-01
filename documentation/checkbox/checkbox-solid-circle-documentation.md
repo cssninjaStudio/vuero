@@ -21,7 +21,13 @@ const options = ref('Option 2')
 <template>
   <VField class="is-flex">
     <VControl raw subcontrol>
-      <VCheckbox v-model="options" true-value="Option 1" label="Option 1" solid circle />
+      <VCheckbox
+        v-model="options"
+        true-value="Option 1"
+        label="Option 1"
+        solid
+        circle
+      />
     </VControl>
     <VControl raw subcontrol>
       <VCheckbox

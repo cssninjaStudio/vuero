@@ -125,7 +125,7 @@ const nameUppercase = computed(() => props.name?.toUpperCase() ?? '')
               </text>
               <polygon
                 class="st2"
-                points="554.5,421 540.4,414.2 540.4,427.9 		"
+                points="554.5,421 540.4,414.2 540.4,427.9"
               />
             </g>
             <g id="cchip">

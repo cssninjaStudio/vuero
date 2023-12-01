@@ -34,7 +34,7 @@ const columns = {
   id: {
     label: 'Identifier',
     inverted: true,
-    format: (value) => `N°${value}`,
+    format: value => `N°${value}`,
   },
   company: {
     label: 'Company',
@@ -55,7 +55,11 @@ const columns = {
 </script>
 
 <template>
-  <VFlexTable :data="data" :columns="columns" print-objects />
+  <VFlexTable
+    :data="data"
+    :columns="columns"
+    print-objects
+  />
 </template>
 ```
 

@@ -31,7 +31,8 @@ const internal = computed({
   get() {
     if (field?.value) {
       return field.value.value
-    } else {
+    }
+    else {
       return modelValue.value
     }
   },

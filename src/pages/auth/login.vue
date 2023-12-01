@@ -26,7 +26,8 @@ const handleLogin = async () => {
 
     if (redirect) {
       router.push(redirect)
-    } else {
+    }
+    else {
       router.push('/sidebar/dashboards')
     }
 

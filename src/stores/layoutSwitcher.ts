@@ -23,10 +23,10 @@ export const useLayoutSwitcher = defineStore('layoutSwitcher', () => {
   const isSidebarRoute = computed(() => route?.fullPath?.startsWith?.('/sidebar/'))
   const hasDynamicLayout = computed(() => isNavbarRoute.value || isSidebarRoute.value)
   const navbarLayoutLink = computed(
-    () => route?.fullPath?.replace?.('sidebar', 'navbar') ?? ''
+    () => route?.fullPath?.replace?.('sidebar', 'navbar') ?? '',
   )
   const sidebarLayoutLink = computed(
-    () => route?.fullPath?.replace?.('navbar', 'sidebar') ?? ''
+    () => route?.fullPath?.replace?.('navbar', 'sidebar') ?? '',
   )
 
   // navbar
@@ -145,7 +145,8 @@ export const useLayoutSwitcher = defineStore('layoutSwitcher', () => {
     get: () => {
       if (isNavbarRoute.value) {
         return navbarLayoutId.value
-      } else {
+      }
+      else {
         return sidebarLayoutId.value
       }
     },
@@ -165,7 +166,8 @@ export const useLayoutSwitcher = defineStore('layoutSwitcher', () => {
   const dynamicLayoutComponent = computed(() => {
     if (isNavbarRoute.value) {
       return navbarLayoutComponent.value
-    } else {
+    }
+    else {
       return sidebarLayoutComponent.value
     }
   })
@@ -176,7 +178,8 @@ export const useLayoutSwitcher = defineStore('layoutSwitcher', () => {
         theme: navbarLayoutTheme.value,
         key: navbarLayoutId.value,
       }
-    } else {
+    }
+    else {
       return {
         theme: sidebarLayoutTheme.value,
         key: sidebarLayoutId.value,

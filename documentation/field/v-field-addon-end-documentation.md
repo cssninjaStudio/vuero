@@ -10,10 +10,16 @@ See markup for more details about usage.
 <template>
   <VField label="Gmail account" addons>
     <VControl expanded>
-      <VInput type="text" class="input" placeholder="Username" />
+      <VInput
+        type="text"
+        class="input"
+        placeholder="Username"
+      />
     </VControl>
     <VControl>
-      <VButton static>@gmail.com</VButton>
+      <VButton static>
+        @gmail.com
+      </VButton>
     </VControl>
   </VField>
 </template>

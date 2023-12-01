@@ -11,27 +11,47 @@ Available classes are `is-primary-focus`, `is-success-focus`,
 <template>
   <VField>
     <VControl>
-      <VInput type="text" class="is-primary-focus" placeholder="Primary" />
+      <VInput
+        type="text"
+        class="is-primary-focus"
+        placeholder="Primary"
+      />
     </VControl>
   </VField>
   <VField>
     <VControl>
-      <VInput type="text" class="is-info-focus" placeholder="Info" />
+      <VInput
+        type="text"
+        class="is-info-focus"
+        placeholder="Info"
+      />
     </VControl>
   </VField>
   <VField>
     <VControl>
-      <VInput type="text" class="is-success-focus" placeholder="Success" />
+      <VInput
+        type="text"
+        class="is-success-focus"
+        placeholder="Success"
+      />
     </VControl>
   </VField>
   <VField>
     <VControl>
-      <VInput type="text" class="is-warning-focus" placeholder="Warning" />
+      <VInput
+        type="text"
+        class="is-warning-focus"
+        placeholder="Warning"
+      />
     </VControl>
   </VField>
   <VField>
     <VControl>
-      <VInput type="text" class="is-danger-focus" placeholder="Danger" />
+      <VInput
+        type="text"
+        class="is-danger-focus"
+        placeholder="Danger"
+      />
     </VControl>
   </VField>
 </template>

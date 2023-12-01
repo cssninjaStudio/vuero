@@ -44,16 +44,24 @@ const columns = {
   contacts: {
     label: 'Contacts',
     align: 'end',
-    format: (value) => value.map((r: any) => r.initials).join(', '),
+    format: value => value.map((r: any) => r.initials).join(', '),
   },
 }
 </script>
 
 <template>
-  <VFlexTable rounded :data="data" :columns="columns">
+  <VFlexTable
+    rounded
+    :data="data"
+    :columns="columns"
+  >
     <template #body-cell="{ row, column, value }">
       <template v-if="column.key === 'username'">
-        <VAvatar size="medium" :picture="row.picture" :badge="row.badge" />
+        <VAvatar
+          size="medium"
+          :picture="row.picture"
+          :badge="row.badge"
+        />
         <div>
           <span class="item-name">{{ row?.name }}</span>
           <span class="item-meta">

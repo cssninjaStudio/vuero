@@ -21,22 +21,22 @@ const mobileHeightValue = props.mobileHeight ?? props.height
 
 if (props.width.match(CssUnitRe) === null) {
   console.warn(
-    `VPlaceload: invalid "${props.width}" width. Should be a valid css unit value.`
+    `VPlaceload: invalid "${props.width}" width. Should be a valid css unit value.`,
   )
 }
 if (props.height.match(CssUnitRe) === null) {
   console.warn(
-    `VPlaceload: invalid "${props.height}" height. Should be a valid css unit value.`
+    `VPlaceload: invalid "${props.height}" height. Should be a valid css unit value.`,
   )
 }
 if (mobileWidthValue.match(CssUnitRe) === null) {
   console.warn(
-    `VPlaceload: invalid "${mobileWidthValue}" mobileWidth. Should be a valid css unit value.`
+    `VPlaceload: invalid "${mobileWidthValue}" mobileWidth. Should be a valid css unit value.`,
   )
 }
 if (mobileHeightValue.match(CssUnitRe) === null) {
   console.warn(
-    `VPlaceload: invalid "${mobileHeightValue}" mobileHeight. Should be a valid css unit value.`
+    `VPlaceload: invalid "${mobileHeightValue}" mobileHeight. Should be a valid css unit value.`,
   )
 }
 </script>

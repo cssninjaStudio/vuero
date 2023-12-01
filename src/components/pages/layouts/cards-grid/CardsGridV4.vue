@@ -7,11 +7,12 @@ const filters = ref('')
 const filteredData = computed(() => {
   if (!filters.value) {
     return posts
-  } else {
+  }
+  else {
     return posts.filter((item) => {
       return (
-        item.title.match(new RegExp(filters.value, 'i')) ||
-        item.author.name.match(new RegExp(filters.value, 'i'))
+        item.title.match(new RegExp(filters.value, 'i'))
+        || item.author.name.match(new RegExp(filters.value, 'i'))
       )
     })
   }

@@ -22,7 +22,7 @@ const props = withDefaults(
   {
     frontmatter: () => ({}),
     sourceMeta: undefined,
-  }
+  },
 )
 
 const displayCode = ref(false)
@@ -57,7 +57,7 @@ const githubIssueUrl = computed(() => {
   ].join('\n')
 
   return `${issuePath}?title=${encodeURIComponent(title)}&body=${encodeURIComponent(
-    body
+    body,
   )}&labels=${encodeURIComponent(labels.join(','))}`
 })
 </script>

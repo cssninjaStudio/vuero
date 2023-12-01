@@ -25,8 +25,8 @@ const filteredCustomers = computed<WizardCustomer[]>(() => {
   return customers
     .filter((item) => {
       return (
-        item.name.match(new RegExp(search.value, 'i')) ||
-        item.location.match(new RegExp(search.value, 'i'))
+        item.name.match(new RegExp(search.value, 'i'))
+        || item.location.match(new RegExp(search.value, 'i'))
       )
     })
     .splice(0, 4)

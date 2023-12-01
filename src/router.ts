@@ -88,7 +88,8 @@ export function createRouter() {
       // Scroll to top of window
       if (savedPosition) {
         return savedPosition
-      } else if (to.path !== from.path) {
+      }
+      else if (to.path !== from.path) {
         return { top: 0 }
       }
     },

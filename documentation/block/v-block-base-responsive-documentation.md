@@ -9,7 +9,12 @@ to fit in the available space. Resize your screen to see it in action.
 
 ```vue
 <template>
-  <VBlock title="Anna B." subtitle="UX Designer" center m-responsive>
+  <VBlock
+    title="Anna B."
+    subtitle="UX Designer"
+    center
+    m-responsive
+  >
     <template #icon>
       <VAvatar
         size="medium"
@@ -18,7 +23,9 @@ to fit in the available space. Resize your screen to see it in action.
       />
     </template>
     <template #action>
-      <VButton color="primary" elevated>View</VButton>
+      <VButton color="primary" elevated>
+        View
+      </VButton>
     </template>
   </VBlock>
 </template>

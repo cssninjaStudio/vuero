@@ -50,7 +50,7 @@ export function useVFieldContext(options = {} as VFieldContextOption) {
 
   if (!unref(_options.create)) {
     throw new Error(
-      `${_help}useVFieldContext (create = false) must be used inside a VField component`
+      `${_help}useVFieldContext (create = false) must be used inside a VField component`,
     )
   }
 

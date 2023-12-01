@@ -11,13 +11,13 @@ export type StaticParams = Record<
 
 export type HTMLMinifierConfig =
   | {
-      minifier: false
-    }
+    minifier: false
+  }
   | {
-      minifier: 'terser'
-      terserOptions: Options
-    }
+    minifier: 'terser'
+    terserOptions: Options
+  }
   | {
-      minifier: 'minify-html'
-      minifyHtmlOptions: ArgsType<typeof minify>[1]
-    }
+    minifier: 'minify-html'
+    minifyHtmlOptions: ArgsType<typeof minify>[1]
+  }

@@ -16,7 +16,7 @@ See the code example for more details about usage.
           Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero hendrerit
           ipsum, ut blandit est tellus sit amet turpis.
         </p>
-        <div class="is-divider" data-content="OR"></div>
+        <div class="is-divider" data-content="OR" />
         <p>
           Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero hendrerit
           ipsum, ut blandit est tellus sit amet turpis.
@@ -32,7 +32,7 @@ See the code example for more details about usage.
             ipsum, ut blandit est tellus sit amet turpis.
           </p>
         </div>
-        <div class="is-divider-vertical" data-content="OR"></div>
+        <div class="is-divider-vertical" data-content="OR" />
         <div class="column">
           <p>
             Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero hendrerit

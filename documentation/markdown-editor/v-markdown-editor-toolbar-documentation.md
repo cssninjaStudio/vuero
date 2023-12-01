@@ -32,12 +32,12 @@ const toolbar = ref({
   text: {
     label: 'Text',
     children: {
-      bold: {
+      'bold': {
         icon: 'ph:text-bolder',
         tooltip: 'Bold (Ctrl + B)',
         action: 'bold',
       },
-      italic: {
+      'italic': {
         icon: 'ph:text-italic',
         tooltip: 'Italic (Ctrl + I)',
         action: 'italic',
@@ -47,7 +47,7 @@ const toolbar = ref({
         tooltip: 'Strike Through (Ctrl + Shift + X)',
         action: 'strike-through',
       },
-      link: {
+      'link': {
         icon: 'ci:link',
         tooltip: 'Link',
         action: 'link',
@@ -123,7 +123,7 @@ const toolbar = ref({
         tooltip: 'Code Block',
         action: 'code-block',
       },
-      image: {
+      'image': {
         icon: 'ph:image',
         tooltip: 'Image',
         action: 'image',

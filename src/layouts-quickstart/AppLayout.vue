@@ -13,7 +13,7 @@ const props = withDefaults(
   {
     defaultSidebar: 'dashboard',
     theme: 'default',
-  }
+  },
 )
 
 const viewWrapper = useViewWrapper()
@@ -25,7 +25,8 @@ const activeMobileSubsidebar = ref(props.defaultSidebar)
 function switchSidebar(id: string) {
   if (id === activeMobileSubsidebar.value) {
     isDesktopSidebarOpen.value = !isDesktopSidebarOpen.value
-  } else {
+  }
+  else {
     isDesktopSidebarOpen.value = true
     activeMobileSubsidebar.value = id
   }
@@ -45,7 +46,7 @@ watch(
     if (props.closeOnChange && isDesktopSidebarOpen.value) {
       isDesktopSidebarOpen.value = false
     }
-  }
+  },
 )
 </script>
 

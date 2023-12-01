@@ -38,7 +38,11 @@ const kitty = ref(4)
               'has-text-danger': isSelected,
             }"
           />
-          <VIcon v-else icon="ic:baseline-favorite-border" class="is-size-3 mr-1" />
+          <VIcon
+            v-else
+            icon="ic:baseline-favorite-border"
+            class="is-size-3 mr-1"
+          />
         </VRangeRating>
       </VControl>
     </VField>

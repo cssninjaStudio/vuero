@@ -9,11 +9,21 @@ use the `elevated` prop to set a permanent box shadow.
 ```vue
 <template>
   <VButtons>
-    <VButton color="primary" raised> Button </VButton>
-    <VButton color="info" raised> Button </VButton>
-    <VButton color="success" raised> Button </VButton>
-    <VButton color="warning" raised> Button </VButton>
-    <VButton color="danger" elevated> Button </VButton>
+    <VButton color="primary" raised>
+      Button
+    </VButton>
+    <VButton color="info" raised>
+      Button
+    </VButton>
+    <VButton color="success" raised>
+      Button
+    </VButton>
+    <VButton color="warning" raised>
+      Button
+    </VButton>
+    <VButton color="danger" elevated>
+      Button
+    </VButton>
   </VButtons>
 </template>
 ```

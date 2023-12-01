@@ -21,7 +21,11 @@ const value = ref(true)
 <template>
   <VField>
     <VControl>
-      <VSwitchBlock v-model="value" label="Some option" thin />
+      <VSwitchBlock
+        v-model="value"
+        label="Some option"
+        thin
+      />
     </VControl>
   </VField>
 </template>

@@ -11,7 +11,7 @@ const props = withDefaults(
     user: 'Alice C.',
     picture: '/demo/avatars/7.jpg',
     time: '28 minutes ago',
-  }
+  },
 )
 </script>
 

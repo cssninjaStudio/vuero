@@ -9,12 +9,24 @@ use the `light` modifier prop to make a light colored button.
 ```vue
 <template>
   <VButtons>
-    <VButton color="primary" light> Button </VButton>
-    <VButton color="info" light> Button </VButton>
-    <VButton color="success" light> Button </VButton>
-    <VButton color="warning" light> Button </VButton>
-    <VButton color="danger" light> Button </VButton>
-    <VButton light> Button </VButton>
+    <VButton color="primary" light>
+      Button
+    </VButton>
+    <VButton color="info" light>
+      Button
+    </VButton>
+    <VButton color="success" light>
+      Button
+    </VButton>
+    <VButton color="warning" light>
+      Button
+    </VButton>
+    <VButton color="danger" light>
+      Button
+    </VButton>
+    <VButton light>
+      Button
+    </VButton>
   </VButtons>
 </template>
 ```

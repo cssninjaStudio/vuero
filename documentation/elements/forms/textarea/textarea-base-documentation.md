@@ -27,7 +27,7 @@ const textarea = ref('')
         v-model="textarea"
         rows="4"
         placeholder="A longer message..."
-      ></VTextarea>
+      />
     </VControl>
   </VField>
 </template>

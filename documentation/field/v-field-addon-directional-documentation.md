@@ -29,20 +29,32 @@ const currency = ref('$')
     <!-- currency selector with subcontrol -->
     <VControl subcontrol>
       <VSelect v-model="currency">
-        <VOption value="$">$</VOption>
-        <VOption value="£">£</VOption>
-        <VOption value="€">€</VOption>
+        <VOption value="$">
+          $
+        </VOption>
+        <VOption value="£">
+          £
+        </VOption>
+        <VOption value="€">
+          €
+        </VOption>
       </VSelect>
     </VControl>
 
     <!-- amount input -->
     <VControl expanded>
-      <VInput v-model="amount" type="text" placeholder="Amount of money" />
+      <VInput
+        v-model="amount"
+        type="text"
+        placeholder="Amount of money"
+      />
     </VControl>
 
     <!-- submit -->
     <VControl>
-      <VButton color="primary">Send Payment</VButton>
+      <VButton color="primary">
+        Send Payment
+      </VButton>
     </VControl>
   </VField>
 </template>

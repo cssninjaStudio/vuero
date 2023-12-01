@@ -48,9 +48,10 @@ export default defineComponent({
             if (!inputMask.value) return
             emit('complete', inputMask.value, inputEvent)
           })
-        } catch (error) {
+        }
+        catch (error) {
           console.error(
-            'VIMaskInput: bad imask options, see https://imask.js.org/ for available parameters'
+            'VIMaskInput: bad imask options, see https://imask.js.org/ for available parameters',
           )
           console.error(error)
         }

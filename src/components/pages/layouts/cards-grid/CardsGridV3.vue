@@ -7,11 +7,12 @@ const filters = ref('')
 const filteredData = computed(() => {
   if (!filters.value) {
     return projects
-  } else {
+  }
+  else {
     return projects.filter((item) => {
       return (
-        item.name.match(new RegExp(filters.value, 'i')) ||
-        item.remaining.match(new RegExp(filters.value, 'i'))
+        item.name.match(new RegExp(filters.value, 'i'))
+        || item.remaining.match(new RegExp(filters.value, 'i'))
       )
     })
   }

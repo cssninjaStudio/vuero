@@ -14,7 +14,9 @@ const centeredActionsOpen = ref(false)
 </script>
 
 <template>
-  <VButton bold @click="centeredActionsOpen = true"> Open Modal </VButton>
+  <VButton bold @click="centeredActionsOpen = true">
+    Open Modal
+  </VButton>
 
   <VModal
     :open="centeredActionsOpen"
@@ -28,7 +30,9 @@ const centeredActionsOpen = ref(false)
       />
     </template>
     <template #action>
-      <VButton color="primary" raised>Confirm</VButton>
+      <VButton color="primary" raised>
+        Confirm
+      </VButton>
     </template>
   </VModal>
 </template>

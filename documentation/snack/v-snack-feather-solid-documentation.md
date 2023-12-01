@@ -9,20 +9,48 @@ if you want to show a solid icon. Check the markup for more details.
 
 ```vue
 <template>
-  <VSnack title="Shopping" color="primary" solid icon="feather:smile">
-    <i class="iconify" data-icon="feather:plus"></i>
+  <VSnack
+    title="Shopping"
+    color="primary"
+    solid
+    icon="feather:smile"
+  >
+    <i class="iconify" data-icon="feather:plus" />
   </VSnack>
-  <VSnack title="Support" color="success" white solid icon="feather:life-buoy">
-    <i class="iconify" data-icon="feather:plus"></i>
+  <VSnack
+    title="Support"
+    color="success"
+    white
+    solid
+    icon="feather:life-buoy"
+  >
+    <i class="iconify" data-icon="feather:plus" />
   </VSnack>
-  <VSnack title="Business" color="info" solid icon="feather:briefcase">
-    <i class="iconify" data-icon="feather:plus"></i>
+  <VSnack
+    title="Business"
+    color="info"
+    solid
+    icon="feather:briefcase"
+  >
+    <i class="iconify" data-icon="feather:plus" />
   </VSnack>
-  <VSnack title="Warning" color="warning" white solid icon="feather:alert-octagon">
-    <i class="iconify" data-icon="feather:plus"></i>
+  <VSnack
+    title="Warning"
+    color="warning"
+    white
+    solid
+    icon="feather:alert-octagon"
+  >
+    <i class="iconify" data-icon="feather:plus" />
   </VSnack>
-  <VSnack title="Health" color="danger" white solid icon="feather:thermometer">
-    <i class="iconify" data-icon="feather:plus"></i>
+  <VSnack
+    title="Health"
+    color="danger"
+    white
+    solid
+    icon="feather:thermometer"
+  >
+    <i class="iconify" data-icon="feather:plus" />
   </VSnack>
 </template>
 ```

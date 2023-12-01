@@ -24,7 +24,7 @@ const props = withDefaults(
   }>(),
   {
     toc: () => [],
-  }
+  },
 )
 
 const route = useRoute()
@@ -50,7 +50,8 @@ const onTocClick = (id?: string) => {
 onMounted(() => {
   if (route.hash && !route.hash.startsWith('#&')) {
     VueScrollTo.scrollTo(route.hash, 0, { offset: -30 })
-  } else {
+  }
+  else {
     VueScrollTo.scrollTo('#app', 0, { offset: -30 })
   }
 })

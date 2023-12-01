@@ -11,7 +11,7 @@ const props = withDefaults(
     title: 'A nice and short little movie',
     picture: 'https://via.placeholder.com/400x300',
     views: '',
-  }
+  },
 )
 </script>
 

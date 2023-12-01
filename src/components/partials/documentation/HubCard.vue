@@ -7,7 +7,7 @@ const props = withDefaults(
   {
     title: 'Title',
     content: 'Get familiar with Vuero components. Code examples included.',
-  }
+  },
 )
 </script>
 

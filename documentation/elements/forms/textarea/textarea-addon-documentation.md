@@ -26,19 +26,25 @@ const textarea = ref('')
         v-model="textarea"
         rows="4"
         placeholder="A longer message..."
-      ></VTextarea>
+      />
     </VControl>
 
     <VControl textaddon>
       <div class="start">
         <div class="avatar-stack">
           <VAvatar picture="/demo/avatars/7.jpg" size="small" />
-          <VAvatar initials="JO" color="info" size="small" />
+          <VAvatar
+            initials="JO"
+            color="info"
+            size="small"
+          />
           <VAvatar picture="/images/avatars/svg/vuero-1.svg" size="small" />
         </div>
       </div>
       <div class="end">
-        <VButton color="primary" raised>Post Comment</VButton>
+        <VButton color="primary" raised>
+          Post Comment
+        </VButton>
       </div>
     </VControl>
   </VField>

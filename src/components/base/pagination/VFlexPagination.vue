@@ -30,13 +30,13 @@ const lastPage = computed(() => Math.ceil(props.totalItems / props.itemPerPage) 
 const totalPageDisplayed = computed(() =>
   lastPage.value > props.maxLinksDisplayed + 2
     ? props.maxLinksDisplayed + 2
-    : lastPage.value
+    : lastPage.value,
 )
 const pages = computed(() => {
   const _pages = []
   let firstButton = props.currentPage - Math.floor(totalPageDisplayed.value / 2)
-  let lastButton =
-    firstButton + (totalPageDisplayed.value - Math.ceil(totalPageDisplayed.value % 2))
+  let lastButton
+    = firstButton + (totalPageDisplayed.value - Math.ceil(totalPageDisplayed.value % 2))
 
   if (firstButton < 1) {
     firstButton = 1

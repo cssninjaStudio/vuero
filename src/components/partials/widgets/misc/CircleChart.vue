@@ -7,7 +7,7 @@ const props = withDefaults(
   {
     value: 50,
     size: 60,
-  }
+  },
 )
 </script>
 

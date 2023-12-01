@@ -38,7 +38,9 @@ const greenToast = () => {
 </script>
 
 <template>
-  <VButton bold @click="greenToast">Green Toast</VButton>
+  <VButton bold @click="greenToast">
+    Green Toast
+  </VButton>
 </template>
 ```
 

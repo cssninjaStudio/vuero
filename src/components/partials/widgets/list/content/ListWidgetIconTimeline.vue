@@ -9,7 +9,7 @@ const props = withDefaults(
   }>(),
   {
     items: () => [],
-  }
+  },
 )
 </script>
 

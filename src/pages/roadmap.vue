@@ -15,15 +15,15 @@ export const useRoadmapData = defineLoader(async (route) => {
 
   // this is a fake loader, you may want to load data with fetch
   const [roadmap, releases] = await Promise.all([
-    import('/@src/data/apps/roadmap').then((module) => module.roadmap),
-    import('/@src/data/apps/changelog').then((module) => module.changelog),
+    import('/@src/data/apps/roadmap').then(module => module.roadmap),
+    import('/@src/data/apps/changelog').then(module => module.changelog),
   ])
 
   // we use the query params to filters the data,
   // they are executed each time router path change
   const releaseWithBugFixes = releases.filter((release) => {
     if (route.query.type) {
-      const firstBugFix = release.changelog.find((item) => item.type === route.query.type)
+      const firstBugFix = release.changelog.find(item => item.type === route.query.type)
       return firstBugFix !== undefined
     }
 
@@ -38,7 +38,7 @@ export const useRoadmapData = defineLoader(async (route) => {
 
       return accumulator
     },
-    {} as Record<string, any>
+    {} as Record<string, any>,
   )
 
   // return anything you want to expose
@@ -66,7 +66,7 @@ const activeTab = useRouteQuery<string>('tab', 'roadmap')
 const selectedChangeType = useRouteQuery<string>('type', 'All')
 
 const activeYearProgress = computed(
-  () => data.value?.roadmap?.find((x) => x.year === selectedYear.value)?.progress
+  () => data.value?.roadmap?.find(x => x.year === selectedYear.value)?.progress,
 )
 
 useHead({

@@ -50,7 +50,7 @@ const zodSchema = z
       .nullable(),
     agreeTerms: z
       .boolean()
-      .refine((value) => value, 'You must agree our terms of service'),
+      .refine(value => value, 'You must agree our terms of service'),
     area: z.object({
       timezone: z.string().min(1, 'Please select a timezone'),
     }),
@@ -67,13 +67,13 @@ const zodSchema = z
             .string()
             .min(10, 'Your experience title should be at least 10 characters'),
           rating: z.number().gte(1, 'The rating should be at least 1'),
-        })
+        }),
       )
       .min(1, 'You must send at least 1 feedback')
       .max(3, 'You can send up to 3 feedbacks'),
     emailOptin: z.boolean(),
   })
-  .refine((data) => data.password === data.passwordCheck, {
+  .refine(data => data.password === data.passwordCheck, {
     message: 'The confirmation does not match the password',
     path: ['passwordCheck'],
   })
@@ -148,10 +148,7 @@ const handleSignup = handleSubmit(async (values) => {
           placeholder="john.doe@gmail.com"
           autocomplete="username"
         />
-        <p
-          v-if="field?.errorMessage"
-          class="help is-danger"
-        >
+        <p v-if="field?.errorMessage" class="help is-danger">
           {{ field.errorMessage }}
         </p>
       </VControl>
@@ -167,10 +164,7 @@ const handleSignup = handleSubmit(async (values) => {
           placeholder="Not$3cret"
           autocomplete="new-password"
         />
-        <p
-          v-if="field?.errorMessage"
-          class="help is-danger"
-        >
+        <p v-if="field?.errorMessage" class="help is-danger">
           {{ field.errorMessage }}
         </p>
       </VControl>
@@ -186,10 +180,7 @@ const handleSignup = handleSubmit(async (values) => {
           placeholder="Not$3cret"
           autocomplete="new-password"
         />
-        <p
-          v-if="field?.errorMessage"
-          class="help is-danger"
-        >
+        <p v-if="field?.errorMessage" class="help is-danger">
           {{ field.errorMessage }}
         </p>
       </VControl>
@@ -215,10 +206,7 @@ const handleSignup = handleSubmit(async (values) => {
                 placeholder="Select your birthdate"
                 v-on="inputEvents"
               >
-              <p
-                v-if="field?.errorMessage"
-                class="help is-danger"
-              >
+              <p v-if="field?.errorMessage" class="help is-danger">
                 {{ field.errorMessage }}
               </p>
             </template>
@@ -233,10 +221,7 @@ const handleSignup = handleSubmit(async (values) => {
       label="Choose 2 or 3 center of interests"
     >
       <VControl>
-        <VSelect
-          multiple
-          size="9"
-        >
+        <VSelect multiple size="9">
           <VOption value="Food">
             Food
           </VOption>
@@ -265,10 +250,7 @@ const handleSignup = handleSubmit(async (values) => {
             Lights & Lighting
           </VOption>
         </VSelect>
-        <p
-          v-if="field?.errorMessage"
-          class="help is-danger"
-        >
+        <p v-if="field?.errorMessage" class="help is-danger">
           {{ field.errorMessage }}
         </p>
         <p class="help">
@@ -298,10 +280,7 @@ const handleSignup = handleSubmit(async (values) => {
             australia
           </VOption>
         </VSelect>
-        <p
-          v-if="field?.errorMessage"
-          class="help is-danger"
-        >
+        <p v-if="field?.errorMessage" class="help is-danger">
           {{ field.errorMessage }}
         </p>
       </VControl>
@@ -348,19 +327,13 @@ const handleSignup = handleSubmit(async (values) => {
           Soybeans
         </VCheckbox>
       </VControl>
-      <p
-        v-if="field?.errorMessage"
-        class="help is-danger"
-      >
+      <p v-if="field?.errorMessage" class="help is-danger">
         {{ field.errorMessage }}
       </p>
     </VField>
     <div class="py-4">
       <!-- eslint-disable-next-line vue/require-v-for-key -->
-      <div
-        v-for="(element, index) in fields"
-        class="my-3"
-      >
+      <div v-for="(element, index) in fields" class="my-3">
         <div class="columns">
           <VField
             :id="`feedback[${index}].title`"
@@ -374,10 +347,7 @@ const handleSignup = handleSubmit(async (values) => {
                 placeholder="john.doe@gmail.com"
                 autocomplete="username"
               />
-              <p
-                v-if="field?.errorMessage"
-                class="help is-danger"
-              >
+              <p v-if="field?.errorMessage" class="help is-danger">
                 {{ field.errorMessage }}
               </p>
             </VControl>
@@ -389,14 +359,8 @@ const handleSignup = handleSubmit(async (values) => {
             label="Give a rating"
           >
             <VControl>
-              <VRangeRating
-                class="mt-5"
-                size="medium"
-              />
-              <p
-                v-if="field?.errorMessage"
-                class="help is-danger"
-              >
+              <VRangeRating class="mt-5" size="medium" />
+              <p v-if="field?.errorMessage" class="help is-danger">
                 {{ field.errorMessage }}
               </p>
             </VControl>
@@ -417,37 +381,25 @@ const handleSignup = handleSubmit(async (values) => {
         <VButton @click="() => push({ rating: 3, title: '' })">
           Add feedback
         </VButton>
-        <p
-          v-if="errorMessage"
-          class="help is-danger"
-        >
+        <p v-if="errorMessage" class="help is-danger">
           {{ errorMessage }}
         </p>
       </div>
     </div>
-    <VField
-      id="agreeTerms"
-      v-slot="{ field }"
-    >
+    <VField id="agreeTerms" v-slot="{ field }">
       <VControl>
         <VCheckbox paddingless>
           I agree to the <a href="#">terms and conditions</a>
         </VCheckbox>
 
-        <p
-          v-if="field?.errorMessage"
-          class="help is-danger"
-        >
+        <p v-if="field?.errorMessage" class="help is-danger">
           {{ field.errorMessage }}
         </p>
       </VControl>
     </VField>
     <VField id="emailOptin">
       <VControl>
-        <VCheckbox
-          color="primary"
-          paddingless
-        >
+        <VCheckbox color="primary" paddingless>
           I want to receive exclusive news and updates
         </VCheckbox>
       </VControl>
@@ -460,10 +412,7 @@ const handleSignup = handleSubmit(async (values) => {
       >
         Submit
       </VButton>
-      <VButton
-        type="reset"
-        @click="handleReset"
-      >
+      <VButton type="reset" @click="handleReset">
         Reset
       </VButton>
     </VButtons>

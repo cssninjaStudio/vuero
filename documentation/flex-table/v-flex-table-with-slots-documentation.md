@@ -22,7 +22,7 @@ const selectedRowsId = ref<number[]>([])
 const editCompanyIndex = ref<number>()
 
 const isAllSelected = computed(
-  () => flexRowsContacts.length === selectedRowsId.value.length
+  () => flexRowsContacts.length === selectedRowsId.value.length,
 )
 
 // this is our data
@@ -69,15 +69,17 @@ const columns = {
 function toggleSelection() {
   if (isAllSelected.value) {
     selectedRowsId.value = []
-  } else {
+  }
+  else {
     selectedRowsId.value = flexRowsContacts.map((_, index) => index)
   }
 }
 // this it the row click handler (enabled with clickable props)
 function clickOnRow(row: any) {
   if (selectedRowsId.value.includes(row.id)) {
-    selectedRowsId.value = selectedRowsId.value.filter((i) => i !== row.id)
-  } else {
+    selectedRowsId.value = selectedRowsId.value.filter(i => i !== row.id)
+  }
+  else {
     selectedRowsId.value = [...selectedRowsId.value, row.id]
   }
 }
@@ -140,13 +142,14 @@ const VFocus = {
               class="input is-primary-focus"
               @blur="editCompanyIndex = undefined"
               @keyup.enter="editCompanyIndex = undefined"
-            />
+            >
           </VField>
         </VControl>
 
         <a
           v-else
           class="is-overlay m-3 is-flex is-align-items-center is-clickable edit-icon-link"
+          role="button"
           tabindex="0"
           @click="editCompanyIndex = index"
           @keydown.enter="editCompanyIndex = index"
@@ -157,7 +160,7 @@ const VFocus = {
             data-icon="feather:edit"
             role="img"
             aria-label="edit-3"
-          ></i>
+          />
         </a>
       </template>
 
@@ -169,10 +172,10 @@ const VFocus = {
           value === 'Suspended'
             ? 'orange'
             : value === 'New'
-            ? 'info'
-            : value === 'Active'
-            ? 'primary'
-            : undefined
+              ? 'info'
+              : value === 'Active'
+                ? 'primary'
+                : undefined
         "
       >
         {{ value }}

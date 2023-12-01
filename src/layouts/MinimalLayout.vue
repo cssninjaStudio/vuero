@@ -7,7 +7,7 @@ const props = withDefaults(
   }>(),
   {
     theme: 'darker',
-  }
+  },
 )
 </script>
 

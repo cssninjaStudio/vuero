@@ -33,7 +33,7 @@ const addTeammate = (teammate: Omit<WizardTeammate, 'role'>) => {
 
 const setTeammateRole = (
   teammate: Omit<WizardTeammate, 'role'>,
-  role: WizardTeammateRole
+  role: WizardTeammateRole,
 ) => {
   const index = wizard.data.teammates.findIndex((item) => {
     return item.name === teammate.name
@@ -79,7 +79,7 @@ watchEffect(() => {
         return item.name === _item.name
       })
     })
-    .filter((item) => item.name.match(new RegExp(search.value, 'i')))
+    .filter(item => item.name.match(new RegExp(search.value, 'i')))
 })
 </script>
 

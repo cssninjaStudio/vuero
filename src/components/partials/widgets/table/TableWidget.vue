@@ -11,7 +11,7 @@ const props = withDefaults(
   {
     title: 'Widget Title',
     actionLabel: 'Add Item',
-  }
+  },
 )
 </script>
 

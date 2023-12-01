@@ -9,7 +9,7 @@ const props = withDefaults(
   {
     title: 'List Widget',
     labels: () => ['Recent', 'Popular'],
-  }
+  },
 )
 
 const state = ref(props.toggled)

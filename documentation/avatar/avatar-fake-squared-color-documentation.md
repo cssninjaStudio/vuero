@@ -10,19 +10,83 @@ Supports dark mode.
 
 ```vue
 <template>
-  <VFlex flex-wrap="wrap" align-items="flex-end" row-gap=".5rem" column-gap=".25rem">
-    <VAvatar initials="CT" size="medium" squared />
-    <VAvatar initials="CT" size="medium" color="primary" squared />
-    <VAvatar initials="CT" size="medium" color="success" squared />
-    <VAvatar initials="CT" size="medium" color="info" squared />
-    <VAvatar initials="CT" size="medium" color="warning" squared />
-    <VAvatar initials="CT" size="medium" color="danger" squared />
-    <VAvatar initials="CT" size="medium" color="h-purple" squared />
-    <VAvatar initials="CT" size="medium" color="h-orange" squared />
-    <VAvatar initials="CT" size="medium" color="h-blue" squared />
-    <VAvatar initials="CT" size="medium" color="h-green" squared />
-    <VAvatar initials="CT" size="medium" color="h-red" squared />
-    <VAvatar initials="CT" size="medium" color="h-yellow" squared />
+  <VFlex
+    flex-wrap="wrap"
+    align-items="flex-end"
+    row-gap=".5rem"
+    column-gap=".25rem"
+  >
+    <VAvatar
+      initials="CT"
+      size="medium"
+      squared
+    />
+    <VAvatar
+      initials="CT"
+      size="medium"
+      color="primary"
+      squared
+    />
+    <VAvatar
+      initials="CT"
+      size="medium"
+      color="success"
+      squared
+    />
+    <VAvatar
+      initials="CT"
+      size="medium"
+      color="info"
+      squared
+    />
+    <VAvatar
+      initials="CT"
+      size="medium"
+      color="warning"
+      squared
+    />
+    <VAvatar
+      initials="CT"
+      size="medium"
+      color="danger"
+      squared
+    />
+    <VAvatar
+      initials="CT"
+      size="medium"
+      color="h-purple"
+      squared
+    />
+    <VAvatar
+      initials="CT"
+      size="medium"
+      color="h-orange"
+      squared
+    />
+    <VAvatar
+      initials="CT"
+      size="medium"
+      color="h-blue"
+      squared
+    />
+    <VAvatar
+      initials="CT"
+      size="medium"
+      color="h-green"
+      squared
+    />
+    <VAvatar
+      initials="CT"
+      size="medium"
+      color="h-red"
+      squared
+    />
+    <VAvatar
+      initials="CT"
+      size="medium"
+      color="h-yellow"
+      squared
+    />
   </VFlex>
 </template>
 ```

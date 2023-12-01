@@ -20,7 +20,7 @@ const props = withDefaults(
     position: 'Developer',
     location: 'New York, NY',
     phone: '+1 555 5554',
-  }
+  },
 )
 </script>
 

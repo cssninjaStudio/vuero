@@ -22,9 +22,9 @@ export function VitePluginPurgeComments({ sourcemap = false }: PluginOptions = {
       const parsedId = parseId(id)
       if (
         !(
-          parsedId.endsWith('.vue') ||
-          parsedId.endsWith('.html') ||
-          parsedId.endsWith('.svg')
+          parsedId.endsWith('.vue')
+          || parsedId.endsWith('.html')
+          || parsedId.endsWith('.svg')
         )
       ) {
         return

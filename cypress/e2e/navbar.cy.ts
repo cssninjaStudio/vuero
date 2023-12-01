@@ -25,7 +25,7 @@ describe(`Navbar Layout${screenshotsString}`, () => {
               animation: none !important;
             }
           </style>
-        `)
+        `),
       )
 
       // check that main content is visible

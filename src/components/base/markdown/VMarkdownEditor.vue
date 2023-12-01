@@ -57,12 +57,12 @@ const props = withDefaults(
     }),
     commands: () => [],
     toolbar: () => ({
-      bold: {
+      'bold': {
         icon: 'ci:bold',
         tooltip: 'Bold (Ctrl + B)',
         action: 'bold',
       },
-      italic: {
+      'italic': {
         icon: 'ci:italic',
         tooltip: 'Italic (Ctrl + I)',
         action: 'italic',
@@ -72,7 +72,7 @@ const props = withDefaults(
         tooltip: 'Strike Through (Ctrl + Shift + X)',
         action: 'strike-through',
       },
-      headings: {
+      'headings': {
         icon: 'ci:heading',
         tooltip: 'Headings',
         children: {
@@ -132,12 +132,12 @@ const props = withDefaults(
       //   icon: 'ci:code',
       //   tooltip: 'Code',
       // },
-      link: {
+      'link': {
         icon: 'ci:link',
         tooltip: 'Link',
         action: 'link',
       },
-      image: {
+      'image': {
         icon: 'ci:image',
         tooltip: 'Image',
         action: 'image',
@@ -148,7 +148,7 @@ const props = withDefaults(
         action: 'block-quotes',
       },
     }),
-  }
+  },
 )
 
 const { field, id } = useVFieldContext({
@@ -164,7 +164,8 @@ const internal = computed({
   get() {
     if (field?.value) {
       return String(field.value.value)
-    } else {
+    }
+    else {
       return modelValue.value
     }
   },
@@ -188,7 +189,7 @@ function fitSize() {
 }
 
 function triggerAction(
-  action: VMarkdownEditorAction | ((ctx: VMarkdownEditorContext) => void | Promise<void>)
+  action: VMarkdownEditorAction | ((ctx: VMarkdownEditorContext) => void | Promise<void>),
 ) {
   if (typeof action === 'function') {
     action({
@@ -197,7 +198,8 @@ function triggerAction(
       trigger: trigger.value!,
       value: internal.value,
     })
-  } else {
+  }
+  else {
     trigger.value?.(action)
   }
 }

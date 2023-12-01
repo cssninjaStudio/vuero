@@ -9,10 +9,22 @@ a standard `<a>` tag. If none is used a `<button>` is rendered insted.
 ```vue
 <template>
   <VButtons>
-    <VButton to="/"> Home </VButton>
-    <VButton bold to="/"> Home </VButton>
-    <VButton rounded href="https://vuero.cssninja.io"> Home </VButton>
-    <VButton bold rounded href="https://vuero.cssninja.io"> Home </VButton>
+    <VButton to="/">
+      Home
+    </VButton>
+    <VButton bold to="/">
+      Home
+    </VButton>
+    <VButton rounded href="https://vuero.cssninja.io">
+      Home
+    </VButton>
+    <VButton
+      bold
+      rounded
+      href="https://vuero.cssninja.io"
+    >
+      Home
+    </VButton>
   </VButtons>
 </template>
 ```

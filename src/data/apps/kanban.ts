@@ -147,7 +147,8 @@ export function useKanban() {
   const filteredTasks = computed(() => {
     if (!search.value) {
       return tasks as KanbanTask[]
-    } else {
+    }
+    else {
       return tasks.filter((item) => {
         return item.title.match(new RegExp(search.value, 'i'))
       }) as KanbanTask[]
@@ -171,19 +172,19 @@ export function useKanban() {
   })
 
   const newTasks = computed(() => {
-    return filteredTasks.value.filter((task) => task.state === 'new')
+    return filteredTasks.value.filter(task => task.state === 'new')
   })
   const progressTasks = computed(() => {
-    return filteredTasks.value.filter((task) => task.state === 'progress')
+    return filteredTasks.value.filter(task => task.state === 'progress')
   })
   const readyTasks = computed(() => {
-    return filteredTasks.value.filter((task) => task.state === 'ready')
+    return filteredTasks.value.filter(task => task.state === 'ready')
   })
   const reviewTasks = computed(() => {
-    return filteredTasks.value.filter((task) => task.state === 'review')
+    return filteredTasks.value.filter(task => task.state === 'review')
   })
   const completedTasks = computed(() => {
-    return filteredTasks.value.filter((task) => task.state === 'completed')
+    return filteredTasks.value.filter(task => task.state === 'completed')
   })
 
   return {

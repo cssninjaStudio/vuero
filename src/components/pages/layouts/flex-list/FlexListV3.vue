@@ -8,7 +8,7 @@ const props = withDefaults(
   }>(),
   {
     activeTab: 'all',
-  }
+  },
 )
 
 const filters = ref('')
@@ -31,15 +31,16 @@ const columns = {
 const filteredData = computed(() => {
   if (!filters.value) {
     return classes
-  } else {
+  }
+  else {
     const filterRe = new RegExp(filters.value, 'i')
 
     return classes.filter((item) => {
       return (
-        item.name.match(filterRe) ||
-        item.category.match(filterRe) ||
-        item.skill.name.match(filterRe) ||
-        item.author.username.match(filterRe)
+        item.name.match(filterRe)
+        || item.category.match(filterRe)
+        || item.skill.name.match(filterRe)
+        || item.author.username.match(filterRe)
       )
     })
   }

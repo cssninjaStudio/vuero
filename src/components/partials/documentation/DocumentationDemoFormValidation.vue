@@ -39,7 +39,7 @@ const zodSchema = z
       .nullable(),
     agreeTerms: z
       .boolean()
-      .refine((value) => value, 'You must agree our terms of service'),
+      .refine(value => value, 'You must agree our terms of service'),
     area: z.object({
       timezone: z.string().min(1, 'Please select a timezone'),
     }),
@@ -56,13 +56,13 @@ const zodSchema = z
             .string()
             .min(10, 'Your experience title should be at least 10 characters'),
           rating: z.number().gte(1, 'The rating should be at least 1'),
-        })
+        }),
       )
       .min(1, 'You must send at least 1 feedback')
       .max(3, 'You can send up to 3 feedbacks'),
     emailOptin: z.boolean(),
   })
-  .refine((data) => data.password === data.passwordCheck, {
+  .refine(data => data.password === data.passwordCheck, {
     message: 'The confirmation does not match the password',
     path: ['passwordCheck'],
   })

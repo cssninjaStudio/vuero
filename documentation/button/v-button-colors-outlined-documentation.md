@@ -9,11 +9,21 @@ use the `outlined` modifier prop to make an outlined button.
 ```vue
 <template>
   <VButtons>
-    <VButton color="primary" outlined> Button </VButton>
-    <VButton color="info" outlined> Button </VButton>
-    <VButton color="success" outlined> Button </VButton>
-    <VButton color="warning" outlined> Button </VButton>
-    <VButton color="danger" outlined> Button </VButton>
+    <VButton color="primary" outlined>
+      Button
+    </VButton>
+    <VButton color="info" outlined>
+      Button
+    </VButton>
+    <VButton color="success" outlined>
+      Button
+    </VButton>
+    <VButton color="warning" outlined>
+      Button
+    </VButton>
+    <VButton color="danger" outlined>
+      Button
+    </VButton>
   </VButtons>
 </template>
 ```

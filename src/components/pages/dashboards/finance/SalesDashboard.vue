@@ -13,8 +13,8 @@ const { barData, barData2, salesBarOptions } = useSalesBarChart()
 const { spark1, spark2, spark3, spark4 } = useSalesSparksCharts()
 const { revenueOptions } = useRevenueAreaChart()
 const { salesRevenuesRadialOptions } = useSalesRevenueRadialChart()
-const { radialGroup1Options, radialGroup2Options, radialGroup3Options } =
-  useSalesRadialGroupChart()
+const { radialGroup1Options, radialGroup2Options, radialGroup3Options }
+  = useSalesRadialGroupChart()
 
 onMounted(() => {
   setTimeout(() => {

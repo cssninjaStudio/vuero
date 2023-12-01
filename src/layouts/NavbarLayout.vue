@@ -21,7 +21,7 @@ const props = withDefaults(
   }>(),
   {
     theme: 'default',
-  }
+  },
 )
 
 const viewWrapper = useViewWrapper()
@@ -39,8 +39,8 @@ const filteredUsers = computed(() => {
 
   return Object.values(popovers).filter((user) => {
     return (
-      user.fullName.match(new RegExp(filter.value, 'i')) ||
-      user.position.match(new RegExp(filter.value, 'i'))
+      user.fullName.match(new RegExp(filter.value, 'i'))
+      || user.position.match(new RegExp(filter.value, 'i'))
     )
   })
 })
@@ -48,7 +48,8 @@ const filteredUsers = computed(() => {
 function toggleSubnav(subnav: SubnavId) {
   if (activeSubnav.value === subnav) {
     activeSubnav.value = 'closed'
-  } else {
+  }
+  else {
     activeSubnav.value = subnav
   }
 }
@@ -66,7 +67,7 @@ watch(
   () => {
     activeSubnav.value = 'closed'
     isMobileSidebarOpen.value = false
-  }
+  },
 )
 </script>
 

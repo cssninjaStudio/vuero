@@ -10,10 +10,16 @@ element to create a rounded field with addons.
 <template>
   <VField addons>
     <VControl expanded>
-      <VInput type="text" class="input is-rounded" placeholder="Find a repository" />
+      <VInput
+        type="text"
+        class="input is-rounded"
+        placeholder="Find a repository"
+      />
     </VControl>
     <VControl>
-      <VButton color="primary" rounded>Search</VButton>
+      <VButton color="primary" rounded>
+        Search
+      </VButton>
     </VControl>
   </VField>
 </template>

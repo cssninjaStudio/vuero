@@ -41,7 +41,7 @@ export default defineComponent({
   setup(props, context) {
     const route = useRoute()
     const rawSort = computed(
-      () => props.modelValue ?? route.query[props.routerQueryKey] ?? ''
+      () => props.modelValue ?? route.query[props.routerQueryKey] ?? '',
     )
 
     const isAsc = computed(() => rawSort.value === `${props.id}:asc`)
@@ -116,18 +116,18 @@ export default defineComponent({
               'span',
               { key: `${rawSort.value}`, class: 'is-inline' },
               h('span', {
-                class: 'ml-3 iconify is-inline',
+                'class': 'ml-3 iconify is-inline',
                 'data-icon': isAsc.value
                   ? 'fa6-solid:sort-up'
                   : isDesc.value
                     ? 'fa6-solid:sort-down'
                     : 'fa6-solid:sort',
-              })
+              }),
             )
 
             return [slotContent ?? props.label, icon]
           },
-        }
+        },
       )
 
       return h('span', {}, link)

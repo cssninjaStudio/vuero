@@ -9,7 +9,7 @@ const props = withDefaults(
   {
     buttons: () => [],
     activeTab: 0,
-  }
+  },
 )
 const tab = ref(props.activeTab)
 </script>

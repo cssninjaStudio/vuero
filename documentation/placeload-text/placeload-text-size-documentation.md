@@ -7,7 +7,11 @@ You can set the `height` and the `width` properties according your needs
 
 ```vue
 <template>
-  <VPlaceloadText :lines="5" width="75%" last-line-width="25%" />
+  <VPlaceloadText
+    :lines="5"
+    width="75%"
+    last-line-width="25%"
+  />
 </template>
 ```
 

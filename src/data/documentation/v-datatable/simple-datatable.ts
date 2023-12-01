@@ -89,7 +89,7 @@ export const optionsBase = {
       ['Hermione Dickson', 2785, 'Woodstock', '2001/22/03', '2%'],
       ['Dalton Jennings', 5416, 'Dudzele', '2015/09/02', '74%'],
       ['Cathleen Kramer', 3380, 'Crowsnest Pass', '2012/27/07', '53%'],
-      ['Zachery Morgan', 6730, "Collines-de-l'Outaouais", '2006/04/09', '51%'],
+      ['Zachery Morgan', 6730, 'Collines-de-l\'Outaouais', '2006/04/09', '51%'],
       ['Yoko Freeman', 4077, 'Lidköping', '2002/27/12', '48%'],
       ['Chaim Waller', 4240, 'North Shore', '2010/25/07', '25%'],
       ['Berk Johnston', 4532, 'Vergnies', '2016/23/02', '93%'],

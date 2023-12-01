@@ -33,7 +33,7 @@ export async function createProcessor(
       string,
       ThemeRegistration | ThemeRegistrationRaw | StringLiteralUnion<BuiltinTheme>
     >
-  >
+  >,
 ) {
   return unified()
     .use(remarkParse)
@@ -70,8 +70,8 @@ export async function createProcessor(
       },
       test: (node) => {
         if (
-          Array.isArray(node.properties?.className) &&
-          node.properties?.className?.includes('toc-ignore')
+          Array.isArray(node.properties?.className)
+          && node.properties?.className?.includes('toc-ignore')
         ) {
           return false
         }

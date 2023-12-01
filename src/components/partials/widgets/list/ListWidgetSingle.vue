@@ -6,7 +6,7 @@ const props = withDefaults(
   }>(),
   {
     title: 'List Widget',
-  }
+  },
 )
 </script>
 

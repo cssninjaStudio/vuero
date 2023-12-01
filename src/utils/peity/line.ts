@@ -43,9 +43,11 @@ export function drawLine(el: HTMLElement, data: number[], opts: PeityOptions) {
   let fill
   if (typeof opts.fill === 'string') {
     fill = opts.fill
-  } else if (Array.isArray(opts.fill)) {
+  }
+  else if (Array.isArray(opts.fill)) {
     fill = opts.fill?.[0]
-  } else if (typeof opts.fill === 'function') {
+  }
+  else if (typeof opts.fill === 'function') {
     fill = opts.fill(0)
   }
 
@@ -54,19 +56,19 @@ export function drawLine(el: HTMLElement, data: number[], opts: PeityOptions) {
       createSvgElement('polygon', {
         fill,
         points: coords.join(' '),
-      })
+      }),
     )
   }
 
   if (strokeWidth) {
     el.appendChild(
       createSvgElement('polyline', {
-        fill: 'none',
-        points: coords.slice(2, coords.length - 2).join(' '),
-        stroke: opts.stroke,
+        'fill': 'none',
+        'points': coords.slice(2, coords.length - 2).join(' '),
+        'stroke': opts.stroke,
         'stroke-width': strokeWidth,
         'stroke-linecap': 'square',
-      })
+      }),
     )
   }
 }

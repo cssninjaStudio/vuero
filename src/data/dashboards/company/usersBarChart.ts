@@ -105,7 +105,7 @@ export function useUsersBarChart() {
     },
   ])
 
-  const usersBarOptions = reactive<any>({
+  const usersBarOptions = reactive < any > ({
     series: [],
     chart: {
       height: 235,

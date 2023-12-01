@@ -9,14 +9,26 @@ Resize your screen to see it in action.
 
 ```vue
 <template>
-  <VBlock title="Team Tasks" subtitle="View all tasks" center m-responsive t-responsive>
+  <VBlock
+    title="Team Tasks"
+    subtitle="View all tasks"
+    center
+    m-responsive
+    t-responsive
+  >
     <template #icon>
-      <VIconBox color="info" size="medium" rounded>
-        <i class="iconify" data-icon="feather:chrome"></i>
+      <VIconBox
+        color="info"
+        size="medium"
+        rounded
+      >
+        <i class="iconify" data-icon="feather:chrome" />
       </VIconBox>
     </template>
     <template #action>
-      <VButton color="primary" elevated>View</VButton>
+      <VButton color="primary" elevated>
+        View
+      </VButton>
     </template>
   </VBlock>
 </template>

@@ -35,19 +35,39 @@ const option6 = ref(false)
       <VCheckbox v-model="option1" label="Option 1" />
     </VControl>
     <VControl raw subcontrol>
-      <VCheckbox v-model="option2" label="Option 2" color="primary" />
+      <VCheckbox
+        v-model="option2"
+        label="Option 2"
+        color="primary"
+      />
     </VControl>
     <VControl raw subcontrol>
-      <VCheckbox v-model="option3" label="Option 3" color="info" />
+      <VCheckbox
+        v-model="option3"
+        label="Option 3"
+        color="info"
+      />
     </VControl>
     <VControl raw subcontrol>
-      <VCheckbox v-model="option4" label="Option 4" color="success" />
+      <VCheckbox
+        v-model="option4"
+        label="Option 4"
+        color="success"
+      />
     </VControl>
     <VControl raw subcontrol>
-      <VCheckbox v-model="option5" label="Option 5" color="warning" />
+      <VCheckbox
+        v-model="option5"
+        label="Option 5"
+        color="warning"
+      />
     </VControl>
     <VControl raw subcontrol>
-      <VCheckbox v-model="option6" label="Option 6" color="danger" />
+      <VCheckbox
+        v-model="option6"
+        label="Option 6"
+        color="danger"
+      />
     </VControl>
   </VField>
 </template>

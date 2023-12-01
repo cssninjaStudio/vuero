@@ -8,7 +8,7 @@ export async function render(
   event: H3Event,
   url: string,
   manifest: any,
-  initialState: any = {}
+  initialState: any = {},
 ) {
   const { app, router, pinia, head } = await createApp()
 
@@ -24,8 +24,8 @@ export async function render(
     event,
   }
   const appHtml = await renderToString(app, ctx)
-  const { headTags, htmlAttrs, bodyAttrs, bodyTags, bodyTagsOpen } =
-    await renderSSRHead(head)
+  const { headTags, htmlAttrs, bodyAttrs, bodyTags, bodyTagsOpen }
+    = await renderSSRHead(head)
 
   initialState.pinia = pinia?.state.value
 
@@ -65,23 +65,32 @@ function renderPreloadLinks(modules: any, manifest: any) {
 function renderPreloadLink(file: string) {
   if (file.endsWith('.js')) {
     return `<link rel="modulepreload" crossorigin href="${file}">`
-  } else if (file.endsWith('.css')) {
+  }
+  else if (file.endsWith('.css')) {
     return `<link rel="stylesheet" href="${file}">`
-  } else if (file.endsWith('.woff')) {
+  }
+  else if (file.endsWith('.woff')) {
     return ` <link rel="preload" href="${file}" as="font" type="font/woff" crossorigin>`
-  } else if (file.endsWith('.woff2')) {
+  }
+  else if (file.endsWith('.woff2')) {
     return ` <link rel="preload" href="${file}" as="font" type="font/woff2" crossorigin>`
-  } else if (file.endsWith('.gif')) {
+  }
+  else if (file.endsWith('.gif')) {
     return ` <link rel="preload" href="${file}" as="image" type="image/gif">`
-  } else if (file.endsWith('.jpg') || file.endsWith('.jpeg')) {
+  }
+  else if (file.endsWith('.jpg') || file.endsWith('.jpeg')) {
     return ` <link rel="preload" href="${file}" as="image" type="image/jpeg">`
-  } else if (file.endsWith('.png')) {
+  }
+  else if (file.endsWith('.png')) {
     return ` <link rel="preload" href="${file}" as="image" type="image/png">`
-  } else if (file.endsWith('.webp')) {
+  }
+  else if (file.endsWith('.webp')) {
     return ` <link rel="preload" href="${file}" as="image" type="image/webp">`
-  } else if (file.endsWith('.svg')) {
+  }
+  else if (file.endsWith('.svg')) {
     return ` <link rel="prefetch" href="${file}" as="image" type="image/svg+xml"/>`
-  } else {
+  }
+  else {
     console.log('missing preload link for', file)
     return ''
   }

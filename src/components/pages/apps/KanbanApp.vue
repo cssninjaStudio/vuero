@@ -67,15 +67,15 @@ function onDrop(el: Element, target: Element) {
 
 onMounted(() => {
   // this is a hack for dragula
-  ;(window as any).global = window
+  (window as any).global = window
 
   import('dragula').then((module) => {
     if (
-      newContainer.value &&
-      progressContainer.value &&
-      readyContainer.value &&
-      reviewContainer.value &&
-      completedContainer.value
+      newContainer.value
+      && progressContainer.value
+      && readyContainer.value
+      && reviewContainer.value
+      && completedContainer.value
     ) {
       const dragula = module.default
       const containers: Element[] = [

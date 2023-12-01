@@ -6,12 +6,13 @@ const filters = ref('')
 const filteredData = computed(() => {
   if (!filters.value) {
     return users
-  } else {
+  }
+  else {
     return users.filter((item) => {
       return (
-        item.name.match(new RegExp(filters.value, 'i')) ||
-        item.role.match(new RegExp(filters.value, 'i')) ||
-        item.medias.badge.match(new RegExp(filters.value, 'i'))
+        item.name.match(new RegExp(filters.value, 'i'))
+        || item.role.match(new RegExp(filters.value, 'i'))
+        || item.medias.badge.match(new RegExp(filters.value, 'i'))
       )
     })
   }

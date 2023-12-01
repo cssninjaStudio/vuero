@@ -10,7 +10,7 @@ Please refer to the code example for more details about usage.
 ```vue
 <template>
   <!--Font Awesome 5 usage -->
-  <i class="fas fa-user"></i>
+  <i class="fas fa-user" />
 </template>
 ```
 

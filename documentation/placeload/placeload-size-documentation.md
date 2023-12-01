@@ -8,8 +8,16 @@ You can set the `height` and the `width` properties according your needs
 ```vue
 <template>
   <VPlaceloadWrap>
-    <VPlaceload height="25px" width="20%" class="mx-2" />
-    <VPlaceload height="45px" width="80%" class="mx-2" />
+    <VPlaceload
+      height="25px"
+      width="20%"
+      class="mx-2"
+    />
+    <VPlaceload
+      height="45px"
+      width="80%"
+      class="mx-2"
+    />
   </VPlaceloadWrap>
 </template>
 ```

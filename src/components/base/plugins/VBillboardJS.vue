@@ -28,7 +28,8 @@ watchEffect(() => {
       nextTick(() => {
         billboard.resize()
       })
-    } catch (error) {
+    }
+    catch (error) {
       console.error(error)
     }
   }

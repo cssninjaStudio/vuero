@@ -40,7 +40,8 @@ const internal = computed({
   get() {
     if (context.field?.value) {
       return context.field.value.value
-    } else {
+    }
+    else {
       return modelValue.value
     }
   },

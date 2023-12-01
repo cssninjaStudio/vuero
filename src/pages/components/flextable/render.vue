@@ -22,32 +22,32 @@ const sortedData = computed(() => {
   switch (router.query.sort) {
     case 'username:asc': {
       return [...flexRowsAdvanced].sort((a, b) =>
-        collator.compare(a.username, b.username)
+        collator.compare(a.username, b.username),
       )
     }
     case 'username:desc': {
       return [...flexRowsAdvanced].sort((a, b) =>
-        collator.compare(b.username, a.username)
+        collator.compare(b.username, a.username),
       )
     }
     case 'annual-earnings:asc': {
       return [...flexRowsAdvanced].sort((a, b) =>
-        a.annualEarnings > b.annualEarnings ? 1 : -1
+        a.annualEarnings > b.annualEarnings ? 1 : -1,
       )
     }
     case 'annual-earnings:desc': {
       return [...flexRowsAdvanced].sort((a, b) =>
-        a.annualEarnings > b.annualEarnings ? -1 : 1
+        a.annualEarnings > b.annualEarnings ? -1 : 1,
       )
     }
     case 'position:asc': {
       return [...flexRowsAdvanced].sort((a, b) =>
-        collator.compare(a.position, b.position)
+        collator.compare(a.position, b.position),
       )
     }
     case 'position:desc': {
       return [...flexRowsAdvanced].sort((a, b) =>
-        collator.compare(b.position, a.position)
+        collator.compare(b.position, a.position),
       )
     }
     case 'status:asc': {
@@ -58,12 +58,12 @@ const sortedData = computed(() => {
     }
     case 'contacts:asc': {
       return [...flexRowsAdvanced].sort((a, b) =>
-        a.contacts.length > b.contacts.length ? 1 : -1
+        a.contacts.length > b.contacts.length ? 1 : -1,
       )
     }
     case 'contacts:desc': {
       return [...flexRowsAdvanced].sort((a, b) =>
-        a.contacts.length > b.contacts.length ? -1 : 1
+        a.contacts.length > b.contacts.length ? -1 : 1,
       )
     }
     default: {
@@ -112,17 +112,17 @@ const exampleColumns = {
             row.status === 'Active'
               ? 'success'
               : row.status === 'New'
-              ? 'info'
-              : row.status === 'Suspended'
-              ? 'orange'
-              : undefined,
+                ? 'info'
+                : row.status === 'Suspended'
+                  ? 'orange'
+                  : undefined,
         },
         // that notation is to render content in the default slot
         {
           default() {
             return `${row.status}`
           },
-        }
+        },
       ),
     // we can use custom render function for column heading
     renderHeader: () =>
@@ -139,7 +139,7 @@ const exampleColumns = {
         h(VFlexTableSortColumn, {
           label: 'Contacts',
           id: 'contacts',
-        })
+        }),
       ),
     renderRow: (row: any) =>
       // We can render custom components and set props

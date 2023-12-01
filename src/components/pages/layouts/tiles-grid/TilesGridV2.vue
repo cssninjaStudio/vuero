@@ -7,11 +7,12 @@ const filters = ref('')
 const filteredData = computed(() => {
   if (!filters.value) {
     return files
-  } else {
+  }
+  else {
     return files.filter((item) => {
       return (
-        item.name.match(new RegExp(filters.value, 'i')) ||
-        item.size.match(new RegExp(filters.value, 'i'))
+        item.name.match(new RegExp(filters.value, 'i'))
+        || item.size.match(new RegExp(filters.value, 'i'))
       )
     })
   }

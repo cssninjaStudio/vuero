@@ -34,12 +34,13 @@ export const useChat = defineStore('chat', () => {
 
   const selectedConversation = computed(() => {
     const conversation = conversations.value?.find(
-      (item) => item.id === selectedConversationId.value
+      item => item.id === selectedConversationId.value,
     )
 
     if (!conversation) {
       return defaultConversation
-    } else {
+    }
+    else {
       return conversation
     }
   })
@@ -52,7 +53,8 @@ export const useChat = defineStore('chat', () => {
     try {
       const response = await fetchConversations($fetch, start, limit)
       conversations.value = response.conversations ?? []
-    } finally {
+    }
+    finally {
       loading.value = false
     }
   }
@@ -66,7 +68,8 @@ export const useChat = defineStore('chat', () => {
       const response = await fetchMessages($fetch, conversationId)
       selectedConversationId.value = conversationId
       messages.value = response.messages
-    } finally {
+    }
+    finally {
       loading.value = false
     }
   }

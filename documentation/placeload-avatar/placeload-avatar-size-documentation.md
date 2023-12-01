@@ -7,7 +7,12 @@ You can set the `size` properties according your needs
 
 ```vue
 <template>
-  <VFlex flex-wrap="wrap" align-items="flex-end" row-gap=".5rem" column-gap=".25rem">
+  <VFlex
+    flex-wrap="wrap"
+    align-items="flex-end"
+    row-gap=".5rem"
+    column-gap=".25rem"
+  >
     <VPlaceloadAvatar class="mx-1" size="small" />
     <VPlaceloadAvatar class="mx-1" size="medium" />
     <VPlaceloadAvatar class="mx-1" size="large" />

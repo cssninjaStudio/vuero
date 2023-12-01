@@ -15,7 +15,7 @@ const props = withDefaults(
   }>(),
   {
     theme: 'default',
-  }
+  },
 )
 
 const themeClasses = computed(() => {

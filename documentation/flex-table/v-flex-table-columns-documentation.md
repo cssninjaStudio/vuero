@@ -38,7 +38,7 @@ const columns = {
     label: 'Identifier',
     inverted: true,
     // we can format the value using simple function
-    format: (value) => `N°${value}`,
+    format: value => `N°${value}`,
   },
   company: {
     label: 'Company',
@@ -56,7 +56,7 @@ const columns = {
     align: 'end',
     grow: true,
     // we can format the value using more complete function
-    format: (value) => value.map((r) => r.initials).join(', '),
+    format: value => value.map(r => r.initials).join(', '),
   },
 }
 </script>

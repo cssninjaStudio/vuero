@@ -15,7 +15,7 @@ export interface DropdownOptions {
  */
 export function useDropdown(
   container: Ref<HTMLElement | undefined>,
-  options: DropdownOptions = { clickOutside: true }
+  options: DropdownOptions = { clickOutside: true },
 ) {
   const isOpen = ref(false)
 
@@ -44,7 +44,8 @@ export function useDropdown(
 
     if (isOpen.value) {
       container.value.classList.add('is-active')
-    } else {
+    }
+    else {
       container.value.classList.remove('is-active')
     }
   })

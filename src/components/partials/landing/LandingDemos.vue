@@ -30,7 +30,7 @@ function useFilter(items: DemoItem[], filter: Ref<string>): ComputedRef<DemoItem
     }
 
     if (filter.value === 'new') {
-      return items.filter((demo) => demo.new)
+      return items.filter(demo => demo.new)
     }
 
     const searchValue = filter.value.replace(/[^A-Za-z0-9]/g, '')
@@ -38,10 +38,10 @@ function useFilter(items: DemoItem[], filter: Ref<string>): ComputedRef<DemoItem
 
     return items.filter((demo) => {
       return (
-        demo.name.match(filterRe) ||
-        demo.category.match(filterRe) ||
-        demo.keywords?.match(filterRe) ||
-        demo.route.name.replace(/-/g, ' ').match(filterRe)
+        demo.name.match(filterRe)
+        || demo.category.match(filterRe)
+        || demo.keywords?.match(filterRe)
+        || demo.route.name.replace(/-/g, ' ').match(filterRe)
       )
     })
   })
@@ -67,12 +67,12 @@ const minimalDemos = minimal.sort(displayOrder) as DemoItem[]
 const templatesDemos = starters.sort(displayOrder) as DemoItem[]
 const navbarDemos = navbar.sort(displayOrder) as DemoItem[]
 
-const totalDemos =
-  sidebarDemos.length +
-  authDemos.length +
-  minimalDemos.length +
-  templatesDemos.length +
-  navbarDemos.length
+const totalDemos
+  = sidebarDemos.length
+  + authDemos.length
+  + minimalDemos.length
+  + templatesDemos.length
+  + navbarDemos.length
 
 const filterInput = ref('')
 const sidebarDemosFiltered = useFilter(sidebarDemos, filterInput)
@@ -83,11 +83,11 @@ const navbarDemosFiltered = useFilter(navbarDemos, filterInput)
 
 const totalResults = computed(() => {
   return (
-    sidebarDemosFiltered.value.length +
-    authDemosFiltered.value.length +
-    minimalDemosFiltered.value.length +
-    templatesDemosFiltered.value.length +
-    navbarDemosFiltered.value.length
+    sidebarDemosFiltered.value.length
+    + authDemosFiltered.value.length
+    + minimalDemosFiltered.value.length
+    + templatesDemosFiltered.value.length
+    + navbarDemosFiltered.value.length
   )
 })
 
@@ -120,7 +120,7 @@ debouncedWatch(
       })
     }
   },
-  { debounce: 300 }
+  { debounce: 300 },
 )
 </script>
 

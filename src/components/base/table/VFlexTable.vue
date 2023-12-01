@@ -47,7 +47,8 @@ const data = computed(() => {
   if (props.reactive) {
     if (isReactive(props.data)) {
       return props.data
-    } else {
+    }
+    else {
       return reactive(props.data)
     }
   }
@@ -68,7 +69,8 @@ const columns = computed(() => {
           label,
           key,
         })
-      } else {
+      }
+      else {
         columns.push({
           format: defaultFormatter,
           label: key,
@@ -77,7 +79,8 @@ const columns = computed(() => {
         })
       }
     }
-  } else if (data.value.length > 0) {
+  }
+  else if (data.value.length > 0) {
     for (const [key] of Object.entries(data.value[0])) {
       columns.push({
         format: defaultFormatter,

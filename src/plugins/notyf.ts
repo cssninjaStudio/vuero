@@ -4,8 +4,8 @@ import type { InjectionKey } from 'vue'
 import { definePlugin } from '/@src/app'
 import { useThemeColors } from '/@src/composable/useThemeColors'
 
-export const notyfSymbol: InjectionKey<Awaited<ReturnType<typeof initNotyfService>>> =
-  Symbol('notyf')
+export const notyfSymbol: InjectionKey<Awaited<ReturnType<typeof initNotyfService>>>
+  = Symbol('notyf')
 
 async function initNotyfService() {
   const themeColors = useThemeColors()
@@ -116,7 +116,8 @@ async function initNotyfService() {
 
       if (typeof payload === 'string') {
         options.message = payload
-      } else {
+      }
+      else {
         Object.assign(options, payload)
       }
 
@@ -129,7 +130,8 @@ async function initNotyfService() {
 
       if (typeof payload === 'string') {
         options.message = payload
-      } else {
+      }
+      else {
         Object.assign(options, payload)
       }
 
@@ -142,7 +144,8 @@ async function initNotyfService() {
 
       if (typeof payload === 'string') {
         options.message = payload
-      } else {
+      }
+      else {
         Object.assign(options, payload)
       }
 
@@ -155,7 +158,8 @@ async function initNotyfService() {
 
       if (typeof payload === 'string') {
         options.message = payload
-      } else {
+      }
+      else {
         Object.assign(options, payload)
       }
 
@@ -168,7 +172,8 @@ async function initNotyfService() {
 
       if (typeof payload === 'string') {
         options.message = payload
-      } else {
+      }
+      else {
         Object.assign(options, payload)
       }
 
@@ -181,7 +186,8 @@ async function initNotyfService() {
 
       if (typeof payload === 'string') {
         options.message = payload
-      } else {
+      }
+      else {
         Object.assign(options, payload)
       }
 
@@ -194,7 +200,8 @@ async function initNotyfService() {
 
       if (typeof payload === 'string') {
         options.message = payload
-      } else {
+      }
+      else {
         Object.assign(options, payload)
       }
 

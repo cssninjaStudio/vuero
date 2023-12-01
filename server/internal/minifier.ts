@@ -11,10 +11,10 @@ export async function lazyMinifier<
 
   switch (minifier) {
     case 'terser':
-      _minifier = await import('html-minifier-terser').then((m) => m.minify)
+      _minifier = await import('html-minifier-terser').then(m => m.minify)
       return _minifier
     case 'minify-html':
-      _minifier = await import('@minify-html/node').then((m) => m.minify)
+      _minifier = await import('@minify-html/node').then(m => m.minify)
       return _minifier
   }
 

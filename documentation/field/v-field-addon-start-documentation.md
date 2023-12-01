@@ -10,10 +10,16 @@ prop. See markup for more details about usage.
 <template>
   <VField addons>
     <VControl>
-      <VButton static>+1</VButton>
+      <VButton static>
+        +1
+      </VButton>
     </VControl>
     <VControl expanded>
-      <VInput type="text" class="input" placeholder="Username" />
+      <VInput
+        type="text"
+        class="input"
+        placeholder="Username"
+      />
     </VControl>
   </VField>
 </template>

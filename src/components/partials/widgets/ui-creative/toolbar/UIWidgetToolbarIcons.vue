@@ -7,7 +7,7 @@ const props = withDefaults(
   {
     activeTab: 0,
     tabs: () => [],
-  }
+  },
 )
 const currentTab = ref(props.activeTab)
 </script>

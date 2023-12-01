@@ -42,7 +42,7 @@ export default defineComponent({
       validator: (value: string) => {
         if (value.match(CssUnitRe) === null) {
           console.warn(
-            `VButton: invalid "${value}" placeload. Should be a valid css unit value.`
+            `VButton: invalid "${value}" placeload. Should be a valid css unit value.`,
           )
         }
 
@@ -68,7 +68,7 @@ export default defineComponent({
           ].indexOf(value) === -1
         ) {
           console.warn(
-            `VButton: invalid "${value}" color. Should be primary, info, success, warning, danger, dark, light, white or undefined`
+            `VButton: invalid "${value}" color. Should be primary, info, success, warning, danger, dark, light, white or undefined`,
           )
           return false
         }
@@ -83,7 +83,7 @@ export default defineComponent({
         // The value must match one of these strings
         if ([undefined, 'medium', 'big', 'huge'].indexOf(value) === -1) {
           console.warn(
-            `VButton: invalid "${value}" size. Should be big, huge, medium or undefined`
+            `VButton: invalid "${value}" size. Should be big, huge, medium or undefined`,
           )
           return false
         }
@@ -98,7 +98,7 @@ export default defineComponent({
         // The value must match one of these strings
         if ([undefined, '1', '2', '3', '4', '5', '6'].indexOf(value) === -1) {
           console.warn(
-            `VButton: invalid "${value}" dark. Should be 1, 2, 3, 4, 5, 6 or undefined`
+            `VButton: invalid "${value}" dark. Should be 1, 2, 3, 4, 5, 6 or undefined`,
           )
           return false
         }
@@ -184,7 +184,7 @@ export default defineComponent({
     })
     const isIconify = computed(() => props.icon && props.icon.indexOf(':') !== -1)
     const isCaretIconify = computed(
-      () => props.iconCaret && props.iconCaret.indexOf(':') !== -1
+      () => props.iconCaret && props.iconCaret.indexOf(':') !== -1,
     )
 
     const getChildrens = () => {
@@ -194,12 +194,13 @@ export default defineComponent({
       if (isIconify.value) {
         const icon = h('i', {
           'aria-hidden': true,
-          class: 'iconify',
+          'class': 'iconify',
           'data-icon': props.icon,
         })
         iconWrapper = h('span', { class: 'icon' }, icon)
-      } else if (props.icon) {
-        const icon = h('i', { 'aria-hidden': true, class: props.icon })
+      }
+      else if (props.icon) {
+        const icon = h('i', { 'aria-hidden': true, 'class': props.icon })
         iconWrapper = h('span', { class: 'icon rtl-reflect' }, icon)
       }
 
@@ -207,12 +208,13 @@ export default defineComponent({
       if (isCaretIconify.value) {
         const caret = h('i', {
           'aria-hidden': true,
-          class: 'iconify',
+          'class': 'iconify',
           'data-icon': props.iconCaret,
         })
         caretWrapper = h('span', { class: 'caret' }, caret)
-      } else if (props.iconCaret) {
-        const caret = h('i', { 'aria-hidden': true, class: props.iconCaret })
+      }
+      else if (props.iconCaret) {
+        const caret = h('i', { 'aria-hidden': true, 'class': props.iconCaret })
         caretWrapper = h('span', { class: 'caret' }, caret)
       }
 
@@ -223,9 +225,10 @@ export default defineComponent({
         childrens.push(
           h(VPlaceload, {
             width: props.placeload,
-          })
+          }),
         )
-      } else {
+      }
+      else {
         childrens.push(h('span', slots.default?.()))
       }
       if (caretWrapper) {
@@ -242,40 +245,41 @@ export default defineComponent({
           {
             ...attrs,
             'aria-hidden': !!props.placeload && true,
-            to: props.to,
-            class: ['button', ...classes.value],
+            'to': props.to,
+            'class': ['button', ...classes.value],
           },
           {
             default: getChildrens,
-          }
+          },
         )
-      } else if (props.href) {
+      }
+      else if (props.href) {
         return h(
           'a',
           {
             ...attrs,
             'aria-hidden': !!props.placeload && true,
-            href: props.href,
-            class: classes.value,
+            'href': props.href,
+            'class': classes.value,
           },
           {
             default: getChildrens,
-          }
+          },
         )
       }
 
       return h(
         'button',
         {
-          type: 'button',
+          'type': 'button',
           ...attrs,
           'aria-hidden': !!props.placeload && true,
-          disabled: props.disabled,
-          class: ['button', ...classes.value],
+          'disabled': props.disabled,
+          'class': ['button', ...classes.value],
         },
         {
           default: getChildrens,
-        }
+        },
       )
     }
   },

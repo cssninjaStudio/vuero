@@ -10,7 +10,11 @@ You also have to provide an icon type using the `icon` or `iconify` props.
 <template>
   <VField>
     <VControl icon="fab fa-twitter">
-      <VInput type="text" class="is-rounded" placeholder="Username" />
+      <VInput
+        type="text"
+        class="is-rounded"
+        placeholder="Username"
+      />
     </VControl>
   </VField>
 </template>

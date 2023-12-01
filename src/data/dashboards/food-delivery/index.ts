@@ -134,7 +134,7 @@ export const foodPills = [
 export const restaurants = [
   {
     id: 0,
-    name: "Mario's place",
+    name: 'Mario\'s place',
     picture: '/demo/photos/food/1.jpg',
     deliveryTime: 45,
     category: 'Pizza',
@@ -143,7 +143,7 @@ export const restaurants = [
   },
   {
     id: 1,
-    name: "Jimmy's Downtown",
+    name: 'Jimmy\'s Downtown',
     picture: '/demo/photos/food/2.jpg',
     deliveryTime: 30,
     category: 'Fast',
@@ -197,7 +197,7 @@ export const restaurants = [
   },
   {
     id: 7,
-    name: "Jerry's Epic Burger",
+    name: 'Jerry\'s Epic Burger',
     picture: '/demo/photos/food/8.jpg',
     deliveryTime: 20,
     category: 'Fast',
@@ -260,7 +260,7 @@ export const restaurants = [
   },
   {
     id: 14,
-    name: "Sam' Dwich",
+    name: 'Sam\' Dwich',
     picture: '/demo/photos/food/15.jpg',
     deliveryTime: 30,
     category: 'Veggie',
@@ -278,7 +278,7 @@ export const restaurants = [
   },
   {
     id: 16,
-    name: "O' Fried Chicken",
+    name: 'O\' Fried Chicken',
     picture: '/demo/photos/food/17.jpg',
     deliveryTime: 45,
     category: 'Fast',

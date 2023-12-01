@@ -10,9 +10,15 @@ VActions can be `rounded`, `hoverable` or `grey` using the related props.
 <template>
   <VButtons>
     <VAction> Action </VAction>
-    <VAction rounded> Action </VAction>
-    <VAction hoverable> Action </VAction>
-    <VAction grey> Action </VAction>
+    <VAction rounded>
+      Action
+    </VAction>
+    <VAction hoverable>
+      Action
+    </VAction>
+    <VAction grey>
+      Action
+    </VAction>
   </VButtons>
 </template>
 ```

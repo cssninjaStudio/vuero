@@ -11,7 +11,7 @@ const props = withDefaults(
   {
     conversationId: 0,
     selectedConversationList: () => [],
-  }
+  },
 )
 
 const unread = ref(true)

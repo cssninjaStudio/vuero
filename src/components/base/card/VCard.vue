@@ -22,7 +22,8 @@ const props = withDefaults(defineProps<VCardProps>(), {
 const cardRadius = computed(() => {
   if (props.radius === 'smooth') {
     return 's-card'
-  } else if (props.radius === 'rounded') {
+  }
+  else if (props.radius === 'rounded') {
     return 'l-card'
   }
 

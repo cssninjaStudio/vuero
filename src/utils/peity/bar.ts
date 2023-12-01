@@ -33,9 +33,11 @@ export function drawBar(el: HTMLElement, data: number[], opts: PeityOptions) {
 
     if (!diff) {
       h = 1
-    } else if (value < 0) {
+    }
+    else if (value < 0) {
       y1 = yScale(Math.min(max, 0))
-    } else {
+    }
+    else {
       y2 = yScale(Math.max(min, 0))
     }
 
@@ -51,9 +53,11 @@ export function drawBar(el: HTMLElement, data: number[], opts: PeityOptions) {
     let fill
     if (typeof opts.fill === 'string') {
       fill = opts.fill
-    } else if (Array.isArray(opts.fill)) {
+    }
+    else if (Array.isArray(opts.fill)) {
       fill = opts.fill?.[i] ?? opts.fill[0]
-    } else if (typeof opts.fill === 'function') {
+    }
+    else if (typeof opts.fill === 'function') {
       fill = opts.fill(i)
     }
 
@@ -65,7 +69,7 @@ export function drawBar(el: HTMLElement, data: number[], opts: PeityOptions) {
           y: y1,
           width: w,
           height: h,
-        })
+        }),
       )
     }
   }

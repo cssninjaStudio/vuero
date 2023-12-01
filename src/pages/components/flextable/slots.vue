@@ -19,7 +19,7 @@ const VFocus = {
 const selectedRows = ref<number[]>([])
 const editCompanyIndex = ref<number>()
 const isAllSelected = computed(
-  () => flexRowsContacts.length === selectedRows.value.length
+  () => flexRowsContacts.length === selectedRows.value.length,
 )
 
 const columns = {
@@ -42,14 +42,16 @@ const columns = {
 function toggleSelection() {
   if (isAllSelected.value) {
     selectedRows.value = []
-  } else {
-    selectedRows.value = flexRowsContacts.map((item) => item.id)
+  }
+  else {
+    selectedRows.value = flexRowsContacts.map(item => item.id)
   }
 }
 function clickOnRow(row: any) {
   if (selectedRows.value.includes(row.id)) {
-    selectedRows.value = selectedRows.value.filter((i) => i !== row.id)
-  } else {
+    selectedRows.value = selectedRows.value.filter(i => i !== row.id)
+  }
+  else {
     selectedRows.value = [...selectedRows.value, row.id]
   }
 }

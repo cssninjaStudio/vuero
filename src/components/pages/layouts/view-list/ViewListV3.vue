@@ -9,14 +9,15 @@ const filters = ref('')
 const filteredData = computed(() => {
   if (!filters.value) {
     return offers
-  } else {
+  }
+  else {
     return offers.filter((item) => {
       return (
-        item.logo.match(new RegExp(filters.value, 'i')) ||
-        item.title.match(new RegExp(filters.value, 'i')) ||
-        item.location.match(new RegExp(filters.value, 'i')) ||
-        item.duration.match(new RegExp(filters.value, 'i')) ||
-        item.requirements.match(new RegExp(filters.value, 'i'))
+        item.logo.match(new RegExp(filters.value, 'i'))
+        || item.title.match(new RegExp(filters.value, 'i'))
+        || item.location.match(new RegExp(filters.value, 'i'))
+        || item.duration.match(new RegExp(filters.value, 'i'))
+        || item.requirements.match(new RegExp(filters.value, 'i'))
       )
     })
   }

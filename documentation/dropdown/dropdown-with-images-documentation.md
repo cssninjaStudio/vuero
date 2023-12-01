@@ -9,15 +9,9 @@ the `is-rounded` class to the image element.
 
 ```vue
 <template>
-  <VDropdown
-    title="Dropdown with image"
-    spaced
-  >
+  <VDropdown title="Dropdown with image" spaced>
     <template #content>
-      <a
-        href="#"
-        class="dropdown-item is-media"
-      >
+      <a href="#" class="dropdown-item is-media">
         <img
           class="item-img"
           src="/images/avatars/svg/vuero-1.svg"
@@ -28,10 +22,7 @@ the `is-rounded` class to the image element.
           <span>New York, NY</span>
         </div>
       </a>
-      <a
-        href="#"
-        class="dropdown-item is-media is-active"
-      >
+      <a href="#" class="dropdown-item is-media is-active">
         <img
           class="item-img"
           src="/demo/avatars/7.jpg"
@@ -42,10 +33,7 @@ the `is-rounded` class to the image element.
           <span>San Diego, CA</span>
         </div>
       </a>
-      <a
-        href="#"
-        class="dropdown-item is-media"
-      >
+      <a href="#" class="dropdown-item is-media">
         <img
           class="item-img"
           src="/demo/avatars/25.jpg"
@@ -57,10 +45,7 @@ the `is-rounded` class to the image element.
         </div>
       </a>
       <hr class="dropdown-divider">
-      <a
-        href="#"
-        class="dropdown-item is-media"
-      >
+      <a href="#" class="dropdown-item is-media">
         <img
           class="item-img"
           src="/demo/avatars/9.jpg"

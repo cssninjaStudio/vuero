@@ -22,13 +22,27 @@ const input = ref('')
   <VField>
     <VControl>
       <VSelect v-model="input" class="is-rounded">
-        <VOption value="">Select a Hero</VOption>
-        <VOption value="Superman">Superman</VOption>
-        <VOption value="Batman">Batman</VOption>
-        <VOption value="Spiderman">Spiderman</VOption>
-        <VOption value="Deadpool">Deadpool</VOption>
-        <VOption value="Spawn">Spawn</VOption>
-        <VOption value="Galactus">Galactus</VOption>
+        <VOption value="">
+          Select a Hero
+        </VOption>
+        <VOption value="Superman">
+          Superman
+        </VOption>
+        <VOption value="Batman">
+          Batman
+        </VOption>
+        <VOption value="Spiderman">
+          Spiderman
+        </VOption>
+        <VOption value="Deadpool">
+          Deadpool
+        </VOption>
+        <VOption value="Spawn">
+          Spawn
+        </VOption>
+        <VOption value="Galactus">
+          Galactus
+        </VOption>
       </VSelect>
     </VControl>
   </VField>

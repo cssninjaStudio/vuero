@@ -49,7 +49,7 @@ export function useSalesSparksCharts() {
         data: randomizeArray(sparklineData),
       },
     ],
-    labels: [...Array(24).keys()].map((n) => `2020-10-0${n + 1}`),
+    labels: [...Array(24).keys()].map(n => `2020-10-0${n + 1}`),
     yaxis: {
       min: 0,
       labels: {
@@ -103,7 +103,7 @@ export function useSalesSparksCharts() {
         data: randomizeArray(sparklineData),
       },
     ],
-    labels: [...Array(24).keys()].map((n) => `2020-10-0${n + 1}`),
+    labels: [...Array(24).keys()].map(n => `2020-10-0${n + 1}`),
     yaxis: {
       min: 0,
       labels: {
@@ -157,7 +157,7 @@ export function useSalesSparksCharts() {
         data: randomizeArray(sparklineData),
       },
     ],
-    labels: [...Array(24).keys()].map((n) => `2020-10-0${n + 1}`),
+    labels: [...Array(24).keys()].map(n => `2020-10-0${n + 1}`),
     xaxis: {
       type: 'datetime',
     },
@@ -211,7 +211,7 @@ export function useSalesSparksCharts() {
         data: randomizeArray(sparklineData),
       },
     ],
-    labels: [...Array(24).keys()].map((n) => `2020-10-0${n + 1}`),
+    labels: [...Array(24).keys()].map(n => `2020-10-0${n + 1}`),
     xaxis: {
       type: 'datetime',
     },

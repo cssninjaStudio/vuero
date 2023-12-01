@@ -21,15 +21,33 @@ const input = ref('')
 
 <template>
   <VField>
-    <VControl loading class="has-icons-left" icon="lnil lnil-basketball">
+    <VControl
+      loading
+      class="has-icons-left"
+      icon="lnil lnil-basketball"
+    >
       <VSelect v-model="input" disabled>
-        <VOption value="">Select a Hero</VOption>
-        <VOption value="Superman">Superman</VOption>
-        <VOption value="Batman">Batman</VOption>
-        <VOption value="Spiderman">Spiderman</VOption>
-        <VOption value="Deadpool">Deadpool</VOption>
-        <VOption value="Spawn">Spawn</VOption>
-        <VOption value="Galactus">Galactus</VOption>
+        <VOption value="">
+          Select a Hero
+        </VOption>
+        <VOption value="Superman">
+          Superman
+        </VOption>
+        <VOption value="Batman">
+          Batman
+        </VOption>
+        <VOption value="Spiderman">
+          Spiderman
+        </VOption>
+        <VOption value="Deadpool">
+          Deadpool
+        </VOption>
+        <VOption value="Spawn">
+          Spawn
+        </VOption>
+        <VOption value="Galactus">
+          Galactus
+        </VOption>
       </VSelect>
     </VControl>
   </VField>

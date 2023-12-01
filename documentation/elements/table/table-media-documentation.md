@@ -15,12 +15,20 @@ You can easily add media elements like the vuero avatars inside your table rows.
   <table class="table is-hoverable is-fullwidth">
     <thead>
       <tr>
-        <th scope="col" class="is-media"></th>
-        <th scope="col">First Name</th>
-        <th scope="col">Last Name</th>
-        <th scope="col">Position</th>
+        <th scope="col" class="is-media" />
+        <th scope="col">
+          First Name
+        </th>
+        <th scope="col">
+          Last Name
+        </th>
+        <th scope="col">
+          Position
+        </th>
         <th scope="col" class="is-end">
-          <div class="dark-inverted is-flex is-justify-content-flex-end">Actions</div>
+          <div class="dark-inverted is-flex is-justify-content-flex-end">
+            Actions
+          </div>
         </th>
       </tr>
     </thead>

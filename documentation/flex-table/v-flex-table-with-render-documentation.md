@@ -52,17 +52,17 @@ const columns = {
             row.status === 'Active'
               ? 'success'
               : row.status === 'New'
-              ? 'info'
-              : row.status === 'Suspended'
-              ? 'orange'
-              : undefined,
+                ? 'info'
+                : row.status === 'Suspended'
+                  ? 'orange'
+                  : undefined,
         },
         // this notation is to render content in the default slot
         {
           default() {
             return `${row.status}`
           },
-        }
+        },
       ),
   },
   contacts: {
@@ -75,13 +75,13 @@ const columns = {
           {
             default() {
               const icon = h('span', {
-                class: 'iconify is-inline ml-2',
+                'class': 'iconify is-inline ml-2',
                 'data-icon': 'prime:sort-alt',
               })
 
               return ['Contacts', icon]
             },
-          }
+          },
         ),
       ]),
     renderRow: (row: any) =>

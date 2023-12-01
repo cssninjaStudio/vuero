@@ -22,15 +22,16 @@ const users = userList as UserData[]
 const filteredData = computed(() => {
   if (!filters.value) {
     return users
-  } else {
+  }
+  else {
     const filterRe = new RegExp(filters.value, 'i')
     return users.filter((item) => {
       return (
-        item.username.match(filterRe) ||
-        item.position.match(filterRe) ||
-        item.industry.match(filterRe) ||
-        item.status.match(filterRe) ||
-        item.location.match(filterRe)
+        item.username.match(filterRe)
+        || item.position.match(filterRe)
+        || item.industry.match(filterRe)
+        || item.status.match(filterRe)
+        || item.location.match(filterRe)
       )
     })
   }

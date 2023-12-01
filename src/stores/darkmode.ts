@@ -28,7 +28,8 @@ export const initDarkmode = () => {
 
       if (darkmode.isDark) {
         body.classList.add(DARK_MODE_BODY_CLASS)
-      } else {
+      }
+      else {
         body.classList.remove(DARK_MODE_BODY_CLASS)
       }
     }

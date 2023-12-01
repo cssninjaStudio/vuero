@@ -19,17 +19,17 @@ async function loadModules() {
     remarkRehype,
     unified,
   ] = await Promise.all([
-    import('rehype-shikiji').then((m) => m.default),
-    import('rehype-external-links').then((m) => m.default),
-    import('rehype-raw').then((m) => m.default),
-    import('rehype-sanitize').then((m) => [m.default, m.defaultSchema] as const),
-    import('rehype-stringify').then((m) => m.default),
-    import('rehype-slug').then((m) => m.default),
-    import('rehype-autolink-headings').then((m) => m.default),
-    import('remark-gfm').then((m) => m.default),
-    import('remark-parse').then((m) => m.default),
-    import('remark-rehype').then((m) => m.default),
-    import('unified').then((m) => m.unified),
+    import('rehype-shikiji').then(m => m.default),
+    import('rehype-external-links').then(m => m.default),
+    import('rehype-raw').then(m => m.default),
+    import('rehype-sanitize').then(m => [m.default, m.defaultSchema] as const),
+    import('rehype-stringify').then(m => m.default),
+    import('rehype-slug').then(m => m.default),
+    import('rehype-autolink-headings').then(m => m.default),
+    import('remark-gfm').then(m => m.default),
+    import('remark-parse').then(m => m.default),
+    import('remark-rehype').then(m => m.default),
+    import('unified').then(m => m.unified),
   ])
 
   return {
@@ -69,9 +69,9 @@ export default defineComponent({
         theme:
           | BuiltinTheme
           | {
-              light: BuiltinTheme
-              dark: BuiltinTheme
-            }
+            light: BuiltinTheme
+            dark: BuiltinTheme
+          }
       }>,
       default: () => ({
         theme: {

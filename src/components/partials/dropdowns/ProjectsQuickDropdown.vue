@@ -17,13 +17,13 @@ const projects: {
     initials: 'H',
     color: 'h-green',
     name: 'Health and Fitness Dashboard',
-    subtitle: "Fit'n'Dance",
+    subtitle: 'Fit\'n\'Dance',
   },
   {
     initials: 'LT',
     color: 'info',
     name: 'Learning Tracker Dashboard',
-    subtitle: "Fit'n'Dance",
+    subtitle: 'Fit\'n\'Dance',
   },
   {
     initials: 'B',

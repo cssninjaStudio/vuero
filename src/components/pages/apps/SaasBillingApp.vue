@@ -25,7 +25,7 @@ const creditcardInput = reactive({
 })
 
 const selectedPlan = computed(() => {
-  return plans.find((plan) => plan.id === selectedPlanId.value)
+  return plans.find(plan => plan.id === selectedPlanId.value)
 })
 
 const testCards = [

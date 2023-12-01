@@ -3,7 +3,7 @@ import { useThemeColors } from '/@src/composable/useThemeColors'
 function generateDayWiseTimeSeries(
   baseval: number,
   count: number,
-  yrange: { min: number; max: number }
+  yrange: { min: number, max: number },
 ) {
   let i = 0
   const series = []

@@ -20,10 +20,22 @@ const clicked = ref(0)
 
 <template>
   <VButtons>
-    <VButton @click="clicked++"> clicked: {{ clicked }} </VButton>
-    <VButton bold @click="clicked++"> clicked: {{ clicked }} </VButton>
-    <VButton rounded @click="clicked++"> clicked: {{ clicked }} </VButton>
-    <VButton bold rounded @click="clicked++"> clicked: {{ clicked }} </VButton>
+    <VButton @click="clicked++">
+      clicked: {{ clicked }}
+    </VButton>
+    <VButton bold @click="clicked++">
+      clicked: {{ clicked }}
+    </VButton>
+    <VButton rounded @click="clicked++">
+      clicked: {{ clicked }}
+    </VButton>
+    <VButton
+      bold
+      rounded
+      @click="clicked++"
+    >
+      clicked: {{ clicked }}
+    </VButton>
   </VButtons>
 </template>
 ```

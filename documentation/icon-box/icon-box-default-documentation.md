@@ -10,22 +10,22 @@ the `size` prop. Available sizes are `small`, `medium`, `large`,
 ```vue
 <template>
   <VIconBox size="small">
-    <i class="lnil lnil-vector-pen"></i>
+    <i class="lnil lnil-vector-pen" />
   </VIconBox>
   <VIconBox>
-    <i class="lnil lnil-vector-pen"></i>
+    <i class="lnil lnil-vector-pen" />
   </VIconBox>
   <VIconBox size="medium">
-    <i class="lnil lnil-vector-pen"></i>
+    <i class="lnil lnil-vector-pen" />
   </VIconBox>
   <VIconBox size="large">
-    <i class="lnil lnil-vector-pen"></i>
+    <i class="lnil lnil-vector-pen" />
   </VIconBox>
   <VIconBox size="big">
-    <i class="lnil lnil-vector-pen"></i>
+    <i class="lnil lnil-vector-pen" />
   </VIconBox>
   <VIconBox size="xl">
-    <i class="lnil lnil-vector-pen"></i>
+    <i class="lnil lnil-vector-pen" />
   </VIconBox>
 </template>
 ```

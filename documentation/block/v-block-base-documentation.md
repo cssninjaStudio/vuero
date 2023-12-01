@@ -17,7 +17,9 @@ be whatever you want, and one for the `action`.
       />
     </template>
     <template #action>
-      <VButton color="primary" elevated>View</VButton>
+      <VButton color="primary" elevated>
+        View
+      </VButton>
     </template>
   </VBlock>
 </template>

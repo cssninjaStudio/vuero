@@ -7,7 +7,7 @@ const props = withDefaults(
   }>(),
   {
     activeTab: 'elements',
-  }
+  },
 )
 </script>
 

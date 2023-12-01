@@ -3,7 +3,7 @@ import { useThemeColors } from '/@src/composable/useThemeColors'
 function generateData(
   baseval: number,
   count: number,
-  yrange: { min: number; max: number }
+  yrange: { min: number, max: number },
 ) {
   let i = 0
   let date = baseval

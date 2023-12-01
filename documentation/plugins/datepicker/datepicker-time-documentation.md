@@ -28,7 +28,7 @@ const date = ref(new Date())
               type="text"
               :value="inputValue"
               v-on="inputEvents"
-            />
+            >
           </VControl>
         </VField>
       </template>

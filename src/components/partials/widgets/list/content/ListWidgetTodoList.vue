@@ -21,7 +21,7 @@ const props = withDefaults(
   {
     todos: () => [] as T[],
     color: undefined,
-  }
+  },
 )
 </script>
 

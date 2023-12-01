@@ -71,12 +71,20 @@ const selectSlotOptions = [
       >
         <template #singlelabel="{ value }">
           <div class="multiselect-single-label">
-            <img class="select-label-icon" :src="value.icon" alt="" />
+            <img
+              class="select-label-icon"
+              :src="value.icon"
+              alt=""
+            >
             {{ value.name }}
           </div>
         </template>
         <template #option="{ option }">
-          <img class="select-option-icon" :src="option.icon" alt="" />
+          <img
+            class="select-option-icon"
+            :src="option.icon"
+            alt=""
+          >
           {{ option.name }}
         </template>
       </Multiselect>

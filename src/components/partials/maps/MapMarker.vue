@@ -11,7 +11,7 @@ const props = withDefaults(
     name: undefined,
     description: undefined,
     openingCount: undefined,
-  }
+  },
 )
 </script>
 

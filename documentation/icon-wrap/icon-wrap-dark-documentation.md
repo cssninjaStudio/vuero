@@ -17,9 +17,17 @@ See code for more details about usage.
     <VIconWrap icon="feather:star" dark="6" />
   </VFlex>
   <VFlex class="mt-2" column-gap="3px">
-    <VIconWrap icon="feather:star" dark="1" dark-card-bordered />
+    <VIconWrap
+      icon="feather:star"
+      dark="1"
+      dark-card-bordered
+    />
     <VIconWrap icon="feather:star" dark="1" />
-    <VIconWrap icon="feather:star" dark="6" dark-card-bordered />
+    <VIconWrap
+      icon="feather:star"
+      dark="6"
+      dark-card-bordered
+    />
     <VIconWrap icon="feather:star" dark="6" />
   </VFlex>
 </template>

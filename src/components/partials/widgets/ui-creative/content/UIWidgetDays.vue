@@ -5,7 +5,7 @@ const props = withDefaults(
   }>(),
   {
     days: () => [],
-  }
+  },
 )
 </script>
 

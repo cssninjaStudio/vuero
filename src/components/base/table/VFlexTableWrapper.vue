@@ -59,7 +59,8 @@ const defaultSortFunction: VFlexTableWrapperSortFunction = ({ key, order, a, b }
   if (typeof aValue === 'string') {
     if (order === 'asc') {
       return aValue.localeCompare(bValue)
-    } else {
+    }
+    else {
       return bValue.localeCompare(aValue)
     }
   }
@@ -124,7 +125,8 @@ export default defineComponent({
       set(value) {
         if (props.sort === undefined) {
           defaultSort.value = value
-        } else {
+        }
+        else {
           context.emit('update:sort', value)
         }
       },
@@ -136,7 +138,8 @@ export default defineComponent({
       set(value) {
         if (props.searchTerm === undefined) {
           defaultSearchInput.value = value
-        } else {
+        }
+        else {
           context.emit('update:searchTerm', value)
         }
       },
@@ -148,7 +151,8 @@ export default defineComponent({
       set(value) {
         if (props.page === undefined) {
           defaultPage.value = value
-        } else {
+        }
+        else {
           context.emit('update:page', value)
         }
       },
@@ -160,7 +164,8 @@ export default defineComponent({
       set(value) {
         if (props.limit === undefined) {
           defaultLimit.value = value
-        } else {
+        }
+        else {
           context.emit('update:limit', value)
         }
       },
@@ -181,7 +186,8 @@ export default defineComponent({
             label: value,
             key,
           }
-        } else if (typeof value === 'object') {
+        }
+        else if (typeof value === 'object') {
           acc[key] = {
             format: defaultFormatter,
             label: key,
@@ -195,24 +201,25 @@ export default defineComponent({
                 return h(
                   VFlexTableSortColumn,
                   {
-                    id: key,
-                    noRouter: true,
-                    modelValue: sort.value,
-                    'onUpdate:modelValue': (value) => (sort.value = value),
+                    'id': key,
+                    'noRouter': true,
+                    'modelValue': sort.value,
+                    'onUpdate:modelValue': value => (sort.value = value),
                   },
                   {
                     default: value.renderHeader,
-                  }
+                  },
                 )
               }
-            } else {
+            }
+            else {
               acc[key].renderHeader = () => {
                 return h(VFlexTableSortColumn, {
-                  id: key,
-                  label: value.label ?? key,
-                  noRouter: true,
-                  modelValue: sort.value,
-                  'onUpdate:modelValue': (value) => (sort.value = value),
+                  'id': key,
+                  'label': value.label ?? key,
+                  'noRouter': true,
+                  'modelValue': sort.value,
+                  'onUpdate:modelValue': value => (sort.value = value),
                 })
               }
             }
@@ -323,7 +330,7 @@ export default defineComponent({
     const total = computed(() => props.total ?? sortedData.value?.length ?? 0)
     const start = computed(() => (page.value - 1) * limit.value)
     const totalPages = computed(() =>
-      total.value ? Math.ceil(total.value / limit.value) : 0
+      total.value ? Math.ceil(total.value / limit.value) : 0,
     )
 
     async function fetchData(controller?: AbortController) {
@@ -338,7 +345,8 @@ export default defineComponent({
             sort: sort.value,
             controller,
           })
-        } finally {
+        }
+        finally {
           loading.value = false
         }
       }
@@ -356,7 +364,8 @@ export default defineComponent({
       if (typeof props.data === 'function') {
         controller = new AbortController()
         await fetchData(controller)
-      } else {
+      }
+      else {
         rawData.value = props.data
       }
 

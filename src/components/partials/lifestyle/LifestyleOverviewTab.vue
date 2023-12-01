@@ -12,8 +12,8 @@ import { useGroupedCircleCharts } from '/@src/data/widgets/charts/groupedCircleC
 
 const { reputationChartOptions } = useReputationChart()
 const { influenceChartOptions } = useInfluenceChart()
-const { creativityRadialOptions, engagmentRadialOptions, popularityRadialOptions } =
-  useGroupedSocialChart()
+const { creativityRadialOptions, engagmentRadialOptions, popularityRadialOptions }
+  = useGroupedSocialChart()
 const {
   widgetRadialGroup1Options,
   widgetRadialGroup2Options,

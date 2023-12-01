@@ -31,11 +31,11 @@ export default defineComponent({
         // The value must match one of these strings
         if (
           [undefined, 'primary', 'info', 'success', 'warning', 'danger', 'white'].indexOf(
-            value
+            value,
           ) === -1
         ) {
           console.warn(
-            `VIconButton: invalid "${value}" color. Should be primary, info, success, warning, danger, white or undefined`
+            `VIconButton: invalid "${value}" color. Should be primary, info, success, warning, danger, white or undefined`,
           )
           return false
         }
@@ -51,7 +51,7 @@ export default defineComponent({
         // The value must match one of these strings
         if (['1', '2', '3', '4', '5', '6'].indexOf(value) === -1) {
           console.warn(
-            `VIconButton: invalid "${value}" dark. Should be 1, 2, 3, 4, 5, 6 or undefined`
+            `VIconButton: invalid "${value}" dark. Should be 1, 2, 3, 4, 5, 6 or undefined`,
           )
           return false
         }
@@ -116,11 +116,12 @@ export default defineComponent({
       if (isIconify.value) {
         icon = h('i', {
           'aria-hidden': true,
-          class: 'iconify',
+          'class': 'iconify',
           'data-icon': props.icon,
         })
-      } else {
-        icon = h('i', { 'aria-hidden': true, class: props.icon })
+      }
+      else {
+        icon = h('i', { 'aria-hidden': true, 'class': props.icon })
       }
 
       const iconWrapper = h('span', { class: 'icon' }, icon)
@@ -133,9 +134,10 @@ export default defineComponent({
             to: props.to,
             class: ['button', ...classes.value],
           },
-          iconWrapper
+          iconWrapper,
         )
-      } else if (props.href) {
+      }
+      else if (props.href) {
         return h(
           'a',
           {
@@ -143,7 +145,7 @@ export default defineComponent({
             href: props.href,
             class: classes.value,
           },
-          iconWrapper
+          iconWrapper,
         )
       }
 
@@ -155,7 +157,7 @@ export default defineComponent({
           disabled: props.disabled,
           class: ['button', ...classes.value],
         },
-        iconWrapper
+        iconWrapper,
       )
     }
   },

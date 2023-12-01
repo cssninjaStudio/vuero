@@ -7,15 +7,9 @@ Use the `spaced` prop with the provided markup in the code example.
 
 ```vue
 <template>
-  <VDropdown
-    title="Dropdown with icon"
-    spaced
-  >
+  <VDropdown title="Dropdown with icon" spaced>
     <template #content>
-      <a
-        href="#"
-        class="dropdown-item is-media"
-      >
+      <a href="#" class="dropdown-item is-media">
         <div class="icon">
           <i class="lnil lnil-coins" />
         </div>
@@ -24,10 +18,7 @@ Use the `spaced` prop with the provided markup in the code example.
           <span>Buy more stocks</span>
         </div>
       </a>
-      <a
-        href="#"
-        class="dropdown-item is-media is-active"
-      >
+      <a href="#" class="dropdown-item is-media is-active">
         <div class="icon">
           <i class="lnil lnil-dollar-up" />
         </div>
@@ -36,10 +27,7 @@ Use the `spaced` prop with the provided markup in the code example.
           <span>Compare with others</span>
         </div>
       </a>
-      <a
-        href="#"
-        class="dropdown-item is-media"
-      >
+      <a href="#" class="dropdown-item is-media">
         <div class="icon">
           <i class="lnil lnil-bank" />
         </div>
@@ -49,10 +37,7 @@ Use the `spaced` prop with the provided markup in the code example.
         </div>
       </a>
       <hr class="dropdown-divider">
-      <a
-        href="#"
-        class="dropdown-item is-media"
-      >
+      <a href="#" class="dropdown-item is-media">
         <div class="icon">
           <i class="lnil lnil-wallet-alt-1" />
         </div>

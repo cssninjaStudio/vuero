@@ -35,16 +35,16 @@ const date = ref('')
           placeholder="Pick a color"
         />
         <datalist id="colors-list">
-          <option value="#84cc16"></option>
-          <option value="#22c55e"></option>
-          <option value="#0ea5e9"></option>
-          <option value="#6366f1"></option>
-          <option value="#8b5cf6"></option>
-          <option value="#d946ef"></option>
-          <option value="#f43f5e"></option>
-          <option value="#facc15"></option>
-          <option value="#fb923c"></option>
-          <option value="#9ca3af"></option>
+          <option value="#84cc16" />
+          <option value="#22c55e" />
+          <option value="#0ea5e9" />
+          <option value="#6366f1" />
+          <option value="#8b5cf6" />
+          <option value="#d946ef" />
+          <option value="#f43f5e" />
+          <option value="#facc15" />
+          <option value="#fb923c" />
+          <option value="#9ca3af" />
         </datalist>
       </VControl>
     </VField>
@@ -57,36 +57,41 @@ const date = ref('')
           placeholder="Choose a recipe"
         />
         <datalist id="cake-list">
-          <option value="Chocolate cake"></option>
-          <option value="Vanilla cake"></option>
-          <option value="Red velvet cake"></option>
-          <option value="Carrot cake"></option>
-          <option value="Lemon cake"></option>
-          <option value="Strawberry cake"></option>
-          <option value="Coconut cake"></option>
-          <option value="Black forest cake"></option>
-          <option value="Pineapple upside-down cake"></option>
-          <option value="Marble cake"></option>
-          <option value="Funfetti cake"></option>
-          <option value="Coffee cake"></option>
-          <option value="Tiramisu cake"></option>
-          <option value="Banana cake"></option>
-          <option value="Raspberry cake"></option>
-          <option value="Oreo cake"></option>
-          <option value="German chocolate cake"></option>
-          <option value="Pumpkin cake"></option>
-          <option value="Blueberry cake"></option>
-          <option value="Almond cake"></option>
+          <option value="Chocolate cake" />
+          <option value="Vanilla cake" />
+          <option value="Red velvet cake" />
+          <option value="Carrot cake" />
+          <option value="Lemon cake" />
+          <option value="Strawberry cake" />
+          <option value="Coconut cake" />
+          <option value="Black forest cake" />
+          <option value="Pineapple upside-down cake" />
+          <option value="Marble cake" />
+          <option value="Funfetti cake" />
+          <option value="Coffee cake" />
+          <option value="Tiramisu cake" />
+          <option value="Banana cake" />
+          <option value="Raspberry cake" />
+          <option value="Oreo cake" />
+          <option value="German chocolate cake" />
+          <option value="Pumpkin cake" />
+          <option value="Blueberry cake" />
+          <option value="Almond cake" />
         </datalist>
       </VControl>
     </VField>
     <VField>
       <VControl class="is-flex-grow-1">
-        <VInput v-model="date" list="times-list" type="time" placeholder="Pick an hour" />
+        <VInput
+          v-model="date"
+          list="times-list"
+          type="time"
+          placeholder="Pick an hour"
+        />
         <datalist id="times-list">
-          <option value="12:00"></option>
-          <option value="13:00"></option>
-          <option value="14:00"></option>
+          <option value="12:00" />
+          <option value="13:00" />
+          <option value="14:00" />
         </datalist>
       </VControl>
     </VField>

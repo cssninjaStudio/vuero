@@ -9,9 +9,19 @@ You can mix any button styles.
 ```vue
 <template>
   <VButtons>
-    <VButton icon="feather:eye"> View </VButton>
-    <VButton icon="feather:edit-2"> View </VButton>
-    <VButton color="primary" icon="fas fa-check" elevated> Approve </VButton>
+    <VButton icon="feather:eye">
+      View
+    </VButton>
+    <VButton icon="feather:edit-2">
+      View
+    </VButton>
+    <VButton
+      color="primary"
+      icon="fas fa-check"
+      elevated
+    >
+      Approve
+    </VButton>
   </VButtons>
 </template>
 ```

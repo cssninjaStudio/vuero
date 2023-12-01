@@ -64,7 +64,7 @@ watch(
   () => props.selected,
   (value) => {
     activeValue.value = value ?? ''
-  }
+  },
 )
 
 watch(activeValue, (value) => {

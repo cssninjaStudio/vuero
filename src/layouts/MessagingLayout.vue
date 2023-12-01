@@ -8,7 +8,7 @@ const props = withDefaults(
   }>(),
   {
     theme: 'default',
-  }
+  },
 )
 
 const panels = usePanels()

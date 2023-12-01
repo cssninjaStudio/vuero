@@ -10,13 +10,25 @@ Available color values are `primary`, `info`, `success`, `warning`,
 ```vue
 <template>
   <VButtons>
-    <VButton color="primary"> Button </VButton>
-    <VButton color="info"> Button </VButton>
-    <VButton color="success"> Button </VButton>
-    <VButton color="warning"> Button </VButton>
-    <VButton color="danger"> Button </VButton>
-    <VButton color="white"> Button </VButton></VButtons
-  >
+    <VButton color="primary">
+      Button
+    </VButton>
+    <VButton color="info">
+      Button
+    </VButton>
+    <VButton color="success">
+      Button
+    </VButton>
+    <VButton color="warning">
+      Button
+    </VButton>
+    <VButton color="danger">
+      Button
+    </VButton>
+    <VButton color="white">
+      Button
+    </VButton>
+  </VButtons>
 </template>
 ```
 

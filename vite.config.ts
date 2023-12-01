@@ -279,10 +279,10 @@ export default defineConfig({
     !process.env.GTM_ID
       ? undefined
       : VitePluginRadar({
-          gtm: {
-            id: process.env.GTM_ID,
-          },
-        }),
+        gtm: {
+          id: process.env.GTM_ID,
+        },
+      }),
 
     /**
      * vite-plugin-pwa generate manifest.json and register services worker to enable PWA
@@ -399,32 +399,32 @@ export default defineConfig({
     !MINIFY_IMAGES
       ? undefined
       : ImageMin({
-          gifsicle: {
-            optimizationLevel: 7,
-            interlaced: false,
-          },
-          optipng: {
-            optimizationLevel: 7,
-          },
-          mozjpeg: {
-            quality: 60,
-          },
-          pngquant: {
-            quality: [0.8, 0.9],
-            speed: 4,
-          },
-          svgo: {
-            plugins: [
-              {
-                name: 'removeViewBox',
-                active: false,
-              },
-              {
-                name: 'removeEmptyAttrs',
-                active: false,
-              },
-            ],
-          },
-        }),
+        gifsicle: {
+          optimizationLevel: 7,
+          interlaced: false,
+        },
+        optipng: {
+          optimizationLevel: 7,
+        },
+        mozjpeg: {
+          quality: 60,
+        },
+        pngquant: {
+          quality: [0.8, 0.9],
+          speed: 4,
+        },
+        svgo: {
+          plugins: [
+            {
+              name: 'removeViewBox',
+              active: false,
+            },
+            {
+              name: 'removeEmptyAttrs',
+              active: false,
+            },
+          ],
+        },
+      }),
   ],
 })

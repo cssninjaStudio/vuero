@@ -21,12 +21,12 @@ export async function fetchMessages(
   $fetch: $Fetch,
   conversationId: number,
   start = 0,
-  limit = 20
-): Promise<{ messages: Message[]; count: number }> {
+  limit = 20,
+): Promise<{ messages: Message[], count: number }> {
   let count = 0
 
   const { _data: messages = [], headers } = await $fetch.raw<Message[]>(
-    `/api/conversations/${conversationId}/messages?_start=${start}&_limit=${limit}`
+    `/api/conversations/${conversationId}/messages?_start=${start}&_limit=${limit}`,
   )
 
   if (headers.has('X-Total-Count')) {

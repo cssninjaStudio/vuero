@@ -12,7 +12,11 @@ using the `radius` prop.
 <template>
   <VCardAdvanced>
     <template #header-left>
-      <VBlock title="Anna B." subtitle="UX Designer" center>
+      <VBlock
+        title="Anna B."
+        subtitle="UX Designer"
+        center
+      >
         <template #icon>
           <VAvatar
             picture="/demo/avatars/19.jpg"
@@ -62,12 +66,22 @@ using the `radius` prop.
     </template>
     <template #footer-left>
       <div class="tags">
-        <VTag label="Sales" color="solid" rounded />
-        <VTag label="Business" color="solid" rounded />
+        <VTag
+          label="Sales"
+          color="solid"
+          rounded
+        />
+        <VTag
+          label="Business"
+          color="solid"
+          rounded
+        />
       </div>
     </template>
     <template #footer-right>
-      <VButton color="primary" raised>Action</VButton>
+      <VButton color="primary" raised>
+        Action
+      </VButton>
     </template>
   </VCardAdvanced>
 </template>

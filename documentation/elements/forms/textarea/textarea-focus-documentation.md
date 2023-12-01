@@ -28,7 +28,7 @@ const textarea = ref('')
         class="is-primary-focus"
         rows="2"
         placeholder="Primary..."
-      ></VTextarea>
+      />
     </VControl>
   </VField>
 
@@ -40,7 +40,7 @@ const textarea = ref('')
         class="is-success-focus"
         rows="2"
         placeholder="Success..."
-      ></VTextarea>
+      />
     </VControl>
   </VField>
 
@@ -52,7 +52,7 @@ const textarea = ref('')
         class="textarea is-info-focus"
         rows="2"
         placeholder="Info..."
-      ></VTextarea>
+      />
     </VControl>
   </VField>
 
@@ -64,7 +64,7 @@ const textarea = ref('')
         class="textarea is-warning-focus"
         rows="2"
         placeholder="Warning..."
-      ></VTextarea>
+      />
     </VControl>
   </VField>
 
@@ -76,7 +76,7 @@ const textarea = ref('')
         class="textarea is-danger-focus"
         rows="2"
         placeholder="Danger..."
-      ></VTextarea>
+      />
     </VControl>
   </VField>
 </template>

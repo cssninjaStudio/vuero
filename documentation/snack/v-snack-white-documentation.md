@@ -9,20 +9,40 @@ the component background white.
 
 ```vue
 <template>
-  <VSnack title="Support" white image="/demo/photos/misc/buoy.jpg">
-    <i class="iconify" data-icon="feather:x"></i>
+  <VSnack
+    title="Support"
+    white
+    image="/demo/photos/misc/buoy.jpg"
+  >
+    <i class="iconify" data-icon="feather:x" />
   </VSnack>
-  <VSnack title="Metamovies" white image="/images/icons/logos/metamovies.svg">
-    <i class="iconify" data-icon="feather:x"></i>
+  <VSnack
+    title="Metamovies"
+    white
+    image="/images/icons/logos/metamovies.svg"
+  >
+    <i class="iconify" data-icon="feather:x" />
   </VSnack>
-  <VSnack title="Corporate" white image="/demo/avatars/7.jpg">
-    <i class="iconify" data-icon="feather:x"></i>
+  <VSnack
+    title="Corporate"
+    white
+    image="/demo/avatars/7.jpg"
+  >
+    <i class="iconify" data-icon="feather:x" />
   </VSnack>
-  <VSnack title="English" white image="/images/icons/flags/united-states-of-america.svg">
-    <i class="iconify" data-icon="feather:x"></i>
+  <VSnack
+    title="English"
+    white
+    image="/images/icons/flags/united-states-of-america.svg"
+  >
+    <i class="iconify" data-icon="feather:x" />
   </VSnack>
-  <VSnack title="Slicer" white image="/images/icons/logos/slicer.svg">
-    <i class="iconify" data-icon="feather:x"></i>
+  <VSnack
+    title="Slicer"
+    white
+    image="/images/icons/logos/slicer.svg"
+  >
+    <i class="iconify" data-icon="feather:x" />
   </VSnack>
 </template>
 ```

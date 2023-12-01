@@ -23,7 +23,8 @@ export const useViewWrapper = defineStore('viewWrapper', () => {
       pageTitleEffect = watchEffect(() => {
         pageTitle.value = toValue(value)
       })
-    } else {
+    }
+    else {
       pageTitle.value = value
     }
   }

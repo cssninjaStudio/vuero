@@ -242,9 +242,9 @@ function selectFeature(feature: any) {
 
 onMounted(() => {
   Promise.all([
-    import('mapbox-gl').then((m) => m.default),
+    import('mapbox-gl').then(m => m.default),
     import('@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.min.js').then(
-      (m) => m.default
+      m => m.default,
     ),
   ]).then(([mapboxgl, MapboxGeocoder]) => {
     if (!mapElement.value || !geocoderElement.value) {
@@ -340,10 +340,11 @@ watch(
 
     if (darkmode.isDark) {
       map.value.setStyle('mapbox://styles/mapbox/dark-v10')
-    } else {
+    }
+    else {
       map.value.setStyle('mapbox://styles/mapbox/light-v10')
     }
-  }
+  },
 )
 </script>
 

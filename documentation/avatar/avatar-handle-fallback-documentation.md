@@ -7,7 +7,12 @@ when no valid URL is provided for the `picture` prop.
 
 ```vue
 <template>
-  <VFlex flex-wrap="wrap" align-items="flex-end" row-gap=".5rem" column-gap=".25rem">
+  <VFlex
+    flex-wrap="wrap"
+    align-items="flex-end"
+    row-gap=".5rem"
+    column-gap=".25rem"
+  >
     <VAvatar
       placeholder="https://via.placeholder.com/64?text=32x32"
       picture="no-file.jpg"

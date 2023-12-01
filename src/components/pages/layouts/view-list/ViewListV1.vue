@@ -27,11 +27,12 @@ const filters = ref('')
 const filteredData = computed(() => {
   if (!filters.value) {
     return users
-  } else {
+  }
+  else {
     return users.filter((item) => {
       return (
-        item.name.match(new RegExp(filters.value, 'i')) ||
-        item.location.match(new RegExp(filters.value, 'i'))
+        item.name.match(new RegExp(filters.value, 'i'))
+        || item.location.match(new RegExp(filters.value, 'i'))
       )
     })
   }

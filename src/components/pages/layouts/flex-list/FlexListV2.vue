@@ -21,7 +21,7 @@ const props = withDefaults(
   }>(),
   {
     activeTab: 'active',
-  }
+  },
 )
 
 const filters = ref('')
@@ -49,16 +49,17 @@ const columns = {
 const filteredData = computed(() => {
   if (!filters.value) {
     return projects
-  } else {
+  }
+  else {
     const filterRe = new RegExp(filters.value, 'i')
 
     return projects.filter((item) => {
       return (
-        item.name.match(filterRe) ||
-        item.customer.match(filterRe) ||
-        item.industry.match(filterRe) ||
-        item.status.match(filterRe) ||
-        item.duration.match(filterRe)
+        item.name.match(filterRe)
+        || item.customer.match(filterRe)
+        || item.industry.match(filterRe)
+        || item.status.match(filterRe)
+        || item.duration.match(filterRe)
       )
     })
   }

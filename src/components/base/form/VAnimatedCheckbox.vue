@@ -27,14 +27,14 @@ const props = withDefaults(
   }>(),
   {
     color: undefined,
-  }
+  },
 )
 
 const animatedCheckboxId = `animated-checkbox-${++instances}`
 const element = ref<HTMLElement>()
 const innerElement = ref<HTMLElement>()
 const checked = computed(() =>
-  Boolean(modelValue.value.find((item) => item.id === props.value.id))
+  Boolean(modelValue.value.find(item => item.id === props.value.id)),
 )
 
 const updateCheckbox = () => {
@@ -45,7 +45,8 @@ const updateCheckbox = () => {
       setTimeout(() => {
         element.value?.classList.remove('is-unchecked')
       }, 150)
-    } else {
+    }
+    else {
       element.value.classList.add('is-unchecked')
       element.value.classList.remove('is-checked')
       setTimeout(() => {
@@ -57,11 +58,12 @@ const updateCheckbox = () => {
 
 function change() {
   const values = [...modelValue.value]
-  const index = values.findIndex((item) => item.id === props.value.id)
+  const index = values.findIndex(item => item.id === props.value.id)
 
   if (index > -1) {
     values.splice(index, 1)
-  } else {
+  }
+  else {
     values.push(unref(props.value))
   }
 

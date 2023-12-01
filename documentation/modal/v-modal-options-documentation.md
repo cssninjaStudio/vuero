@@ -14,7 +14,9 @@ const isOpen = ref(false)
 </script>
 
 <template>
-  <VButton bold @click="isOpen = true"> Open Modal </VButton>
+  <VButton bold @click="isOpen = true">
+    Open Modal
+  </VButton>
 
   <VModal
     :open="isOpen"
@@ -31,7 +33,9 @@ const isOpen = ref(false)
       />
     </template>
     <template #action>
-      <VButton color="primary" raised>Confirm</VButton>
+      <VButton color="primary" raised>
+        Confirm
+      </VButton>
     </template>
   </VModal>
 </template>

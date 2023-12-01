@@ -13,7 +13,9 @@ class to the target card element.
 ```vue
 <template>
   <VCard radius="small" elevated>
-    <h3 class="title is-5 mb-2">Iam an Card</h3>
+    <h3 class="title is-5 mb-2">
+      Iam an Card
+    </h3>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quibusnam praeteritis? At
       multis se probavit. Quoniam, si dis placet, ab Epicuro loqui discimus. Et ille
@@ -22,7 +24,9 @@ class to the target card element.
   </VCard>
 
   <VCard elevated>
-    <h3 class="title is-5 mb-2">Iam an Card</h3>
+    <h3 class="title is-5 mb-2">
+      Iam an Card
+    </h3>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quibusnam praeteritis? At
       multis se probavit. Quoniam, si dis placet, ab Epicuro loqui discimus. Et ille
@@ -31,7 +35,9 @@ class to the target card element.
   </VCard>
 
   <VCard radius="large" elevated>
-    <h3 class="title is-5 mb-2">Iam an Card</h3>
+    <h3 class="title is-5 mb-2">
+      Iam an Card
+    </h3>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quibusnam praeteritis? At
       multis se probavit. Quoniam, si dis placet, ab Epicuro loqui discimus. Et ille

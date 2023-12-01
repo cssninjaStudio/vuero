@@ -12,7 +12,9 @@ for more details about usage.
   <VField>
     <VControl>
       <VInput type="text" placeholder="Username" />
-      <p class="help">Choose a nice username</p>
+      <p class="help">
+        Choose a nice username
+      </p>
     </VControl>
   </VField>
 </template>

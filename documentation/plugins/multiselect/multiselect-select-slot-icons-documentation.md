@@ -89,7 +89,7 @@ const selectSlotIconOptions = [
         <template #singlelabel="{ value }">
           <div class="multiselect-single-label">
             <div class="select-label-icon-wrap">
-              <i :class="value.icon"></i>
+              <i :class="value.icon" />
             </div>
             <span class="select-label-text">
               {{ value.name }}
@@ -98,7 +98,7 @@ const selectSlotIconOptions = [
         </template>
         <template #option="{ option }">
           <div class="select-option-icon-wrap">
-            <i :class="option.icon"></i>
+            <i :class="option.icon" />
           </div>
           <span class="select-option-text">
             {{ option.name }}

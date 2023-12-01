@@ -9,16 +9,66 @@ Use the `elevated` prop to add elevation to the component.
 ```vue
 <template>
   <VTags>
-    <VTag color="solid" label="Tag Label" rounded elevated />
-    <VTag color="primary" label="Tag Label" rounded elevated />
-    <VTag color="info" label="Tag Label" rounded elevated />
-    <VTag color="success" label="Tag Label" rounded elevated />
-    <VTag color="warning" label="Tag Label" rounded elevated />
-    <VTag color="danger" label="Tag Label" rounded elevated />
-    <VTag color="orange" label="Tag Label" rounded elevated />
-    <VTag color="blue" label="Tag Label" rounded elevated />
-    <VTag color="green" label="Tag Label" rounded elevated />
-    <VTag color="purple" label="Tag Label" rounded elevated />
+    <VTag
+      color="solid"
+      label="Tag Label"
+      rounded
+      elevated
+    />
+    <VTag
+      color="primary"
+      label="Tag Label"
+      rounded
+      elevated
+    />
+    <VTag
+      color="info"
+      label="Tag Label"
+      rounded
+      elevated
+    />
+    <VTag
+      color="success"
+      label="Tag Label"
+      rounded
+      elevated
+    />
+    <VTag
+      color="warning"
+      label="Tag Label"
+      rounded
+      elevated
+    />
+    <VTag
+      color="danger"
+      label="Tag Label"
+      rounded
+      elevated
+    />
+    <VTag
+      color="orange"
+      label="Tag Label"
+      rounded
+      elevated
+    />
+    <VTag
+      color="blue"
+      label="Tag Label"
+      rounded
+      elevated
+    />
+    <VTag
+      color="green"
+      label="Tag Label"
+      rounded
+      elevated
+    />
+    <VTag
+      color="purple"
+      label="Tag Label"
+      rounded
+      elevated
+    />
   </VTags>
 </template>
 ```

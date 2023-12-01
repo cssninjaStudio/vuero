@@ -35,7 +35,9 @@ Check the markup for more details.
         diligentissime contra Aristonem dicuntur a Chryippo. Duo Reges: constructio
         interrete.
       </p>
-      <p v-else>Default content</p>
+      <p v-else>
+        Default content
+      </p>
     </template>
   </VTabs>
 </template>

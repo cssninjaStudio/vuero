@@ -60,7 +60,8 @@ function useQueryParam() {
       // read "search" from the query params
       if (Array.isArray(route?.query?.search)) {
         searchTermQuery = route.query.search?.[0] ?? defaultSearch
-      } else {
+      }
+      else {
         searchTermQuery = route.query.search ?? defaultSearch
       }
 
@@ -88,7 +89,8 @@ function useQueryParam() {
       // read "sort" from the query params
       if (Array.isArray(route?.query?.sort)) {
         sortQuery = route.query.sort?.[0] ?? defaultSort
-      } else {
+      }
+      else {
         sortQuery = route.query.sort ?? defaultSort
       }
 
@@ -116,7 +118,8 @@ function useQueryParam() {
       // read "limit" from the query params
       if (Array.isArray(route?.query?.limit)) {
         limitQuery = parseInt(route.query.limit[0] ?? `${defaultLimit}`)
-      } else {
+      }
+      else {
         limitQuery = parseInt(route.query.limit ?? `${defaultLimit}`)
       }
 
@@ -147,7 +150,8 @@ function useQueryParam() {
 
       if (Array.isArray(route?.query?.page)) {
         pageQuery = parseInt(route.query.page[0] ?? `${defaultPage}`)
-      } else {
+      }
+      else {
         pageQuery = parseInt(route.query.page ?? `${defaultPage}`)
       }
 
@@ -192,8 +196,8 @@ const fetchData: VFlexTableWrapperDataResolver = async ({
   controller,
 }) => {
   // sort will be a string like "name:asc"
-  let [sortField, sortOrder] =
-    sort && sort.includes(':') ? sort.split(':') : [undefined, undefined]
+  let [sortField, sortOrder]
+    = sort && sort.includes(':') ? sort.split(':') : [undefined, undefined]
 
   // async fetch data to our server
   const { _data: users, headers } = await $fetch.raw(`/api/users`, {
@@ -230,7 +234,8 @@ const openedRowId = ref<number>()
 function onRowClick(row: any) {
   if (openedRowId.value === row.id) {
     openedRowId.value = undefined
-  } else {
+  }
+  else {
     openedRowId.value = row.id
   }
 }
@@ -239,14 +244,15 @@ const incomingCallerId = ref<number>()
 function onCallClick(row: any) {
   if (incomingCallerId.value === row.id) {
     incomingCallerId.value = undefined
-  } else {
+  }
+  else {
     incomingCallerId.value = row.id
   }
 }
 </script>
 
 <template>
-  <!-- 
+  <!--
     We use v-model to let VFlexTableWrapper update queryParam
   -->
   <VFlexTableWrapper
@@ -259,9 +265,9 @@ function onCallClick(row: any) {
     :total="total"
     class="mt-4"
   >
-    <!-- 
-      Here we retrieve the internal wrapperState. 
-      Note that we can not destructure it 
+    <!--
+      Here we retrieve the internal wrapperState.
+      Note that we can not destructure it
     -->
     <template #default="wrapperState">
       <!--Table Pagination-->
@@ -282,7 +288,7 @@ function onCallClick(row: any) {
                   type="text"
                   class="input is-rounded"
                   placeholder="Filter..."
-                />
+                >
               </VControl>
             </VField>
           </VFlex>
@@ -294,11 +300,21 @@ function onCallClick(row: any) {
               <VControl>
                 <div class="select is-rounded">
                   <select v-model="wrapperState.limit">
-                    <option :value="1">1 results per page</option>
-                    <option :value="10">10 results per page</option>
-                    <option :value="15">15 results per page</option>
-                    <option :value="25">25 results per page</option>
-                    <option :value="50">50 results per page</option>
+                    <option :value="1">
+                      1 results per page
+                    </option>
+                    <option :value="10">
+                      10 results per page
+                    </option>
+                    <option :value="15">
+                      15 results per page
+                    </option>
+                    <option :value="25">
+                      25 results per page
+                    </option>
+                    <option :value="50">
+                      50 results per page
+                    </option>
                   </select>
                 </div>
               </VControl>
@@ -307,14 +323,22 @@ function onCallClick(row: any) {
         </template>
       </VFlexPagination>
 
-      <VFlexTable rounded clickable @row-click="onRowClick">
+      <VFlexTable
+        rounded
+        clickable
+        @row-click="onRowClick"
+      >
         <template #body>
           <!--
-            The wrapperState.loading will be update 
-            when the fetchData function is running 
+            The wrapperState.loading will be update
+            when the fetchData function is running
           -->
           <div v-if="wrapperState.loading" class="flex-list-inner">
-            <div v-for="key in wrapperState.limit" :key="key" class="flex-table-item">
+            <div
+              v-for="key in wrapperState.limit"
+              :key="key"
+              class="flex-table-item"
+            >
               <VFlexTableCell :column="{ grow: true, media: true }">
                 <VPlaceloadAvatar size="medium" />
 
@@ -349,12 +373,12 @@ function onCallClick(row: any) {
                   class="light-image"
                   src="/@src/assets/illustrations/placeholders/search-4.svg"
                   alt=""
-                />
+                >
                 <img
                   class="dark-image"
                   src="/@src/assets/illustrations/placeholders/search-4-dark.svg"
                   alt=""
-                />
+                >
               </template>
             </VPlaceholderSection>
           </div>
@@ -396,7 +420,7 @@ function onCallClick(row: any) {
           <template v-if="row?.id === incomingCallerId">
             <VTags class="mt-2 mb-0">
               <VTag color="primary" outlined>
-                <i class="iconify is-inline mr-2" data-icon="feather:send"></i>
+                <i class="iconify is-inline mr-2" data-icon="feather:send" />
                 Calling...
               </VTag>
             </VTags>
@@ -404,7 +428,9 @@ function onCallClick(row: any) {
 
           <template v-if="row?.id === openedRowId">
             <div class="is-block p-4 my-2 is-rounded">
-              <div class="dark-text mb-4 is-size-4">{{ row?.name }}'s details</div>
+              <div class="dark-text mb-4 is-size-4">
+                {{ row?.name }}'s details
+              </div>
               <VFlex justify-content="space-between">
                 <VFlexItem>
                   <VCard>
@@ -420,7 +446,7 @@ function onCallClick(row: any) {
                       color="danger"
                       @click="() => onCallClick(row)"
                     >
-                      <i class="iconify is-inline mr-2" data-icon="feather:phone-off"></i>
+                      <i class="iconify is-inline mr-2" data-icon="feather:phone-off" />
                       Cancel call
                     </VButton>
                     <VButton
@@ -430,7 +456,7 @@ function onCallClick(row: any) {
                       :loading="row.id === incomingCallerId"
                       @click="() => onCallClick(row)"
                     >
-                      <i class="iconify is-inline mr-2" data-icon="feather:phone"></i>
+                      <i class="iconify is-inline mr-2" data-icon="feather:phone" />
                       Call {{ row?.name }}
                     </VButton>
                   </VFlex>

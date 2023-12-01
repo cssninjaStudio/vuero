@@ -24,7 +24,8 @@ export const useSidebar = defineStore('sidebar', () => {
   function toggle(sidebarId: SidebarId) {
     if (active.value === sidebarId) {
       active.value = 'none'
-    } else {
+    }
+    else {
       active.value = sidebarId
     }
   }

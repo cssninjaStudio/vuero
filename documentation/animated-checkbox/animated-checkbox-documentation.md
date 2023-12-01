@@ -26,10 +26,7 @@ const options = ref(['Option 2', 'Option 7'])
   <VField grouped>
     <VFlex column-gap="1rem">
       <VControl>
-        <VAnimatedCheckbox
-          v-model="options"
-          value="Option 1"
-        />
+        <VAnimatedCheckbox v-model="options" value="Option 1" />
       </VControl>
       <VControl>
         <VAnimatedCheckbox

@@ -14,7 +14,9 @@ const smallFormOpen = ref(false)
 </script>
 
 <template>
-  <VButton bold @click="smallFormOpen = true"> Open Modal </VButton>
+  <VButton bold @click="smallFormOpen = true">
+    Open Modal
+  </VButton>
 
   <VModal
     is="form"
@@ -30,25 +32,43 @@ const smallFormOpen = ref(false)
         <div class="field">
           <label>Username *</label>
           <div class="control">
-            <input type="text" class="input" placeholder="Username" />
+            <input
+              type="text"
+              class="input"
+              placeholder="Username"
+            >
           </div>
         </div>
         <div class="field">
           <label>Email *</label>
           <div class="control">
-            <input type="text" class="input" placeholder="Email Address" />
+            <input
+              type="text"
+              class="input"
+              placeholder="Email Address"
+            >
           </div>
         </div>
         <div class="field">
           <label>Comment *</label>
           <div class="control">
-            <textarea class="textarea" rows="4" placeholder="Your message..."></textarea>
+            <textarea
+              class="textarea"
+              rows="4"
+              placeholder="Your message..."
+            />
           </div>
         </div>
       </div>
     </template>
     <template #action>
-      <VButton type="submit" color="primary" raised>Publish</VButton>
+      <VButton
+        type="submit"
+        color="primary"
+        raised
+      >
+        Publish
+      </VButton>
     </template>
   </VModal>
 </template>

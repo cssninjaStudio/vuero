@@ -37,12 +37,14 @@ watchEffect(async () => {
         const reader = new FileReader()
         reader.readAsDataURL(wizard.data.logo)
         reader.onload = () => resolve(reader.result?.toString() || '')
-        reader.onerror = (error) => reject(error)
-      } else {
+        reader.onerror = error => reject(error)
+      }
+      else {
         projectPicture.value = ''
       }
     })
-  } catch (error) {
+  }
+  catch (error) {
     projectPicture.value = ''
   }
 })

@@ -13,9 +13,11 @@ can easily add a `<VIconBox />` inside your popover.
       <div class="v-popover-content is-text">
         <div class="popover-head">
           <VIconBox size="small" color="primary">
-            <i class="lnil lnil-crown-alt-1"></i>
+            <i class="lnil lnil-crown-alt-1" />
           </VIconBox>
-          <h4 class="dark-inverted">Hover Popover</h4>
+          <h4 class="dark-inverted">
+            Hover Popover
+          </h4>
         </div>
         <div class="popover-body">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>

@@ -41,7 +41,7 @@ const zodSchema = z
     promotional: z.boolean(),
   })
   // Refine is used to add custom validation rules to the schema
-  .refine((data) => data.password === data.passwordCheck, {
+  .refine(data => data.password === data.passwordCheck, {
     message: t('auth.errors.passwordCheck.match'),
     path: ['passwordCheck'],
   })

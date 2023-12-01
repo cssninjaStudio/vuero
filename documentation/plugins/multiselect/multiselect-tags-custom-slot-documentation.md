@@ -92,9 +92,15 @@ const tagsSlotOptions = [
       >
         <template #tag="{ option, remove, disabled }">
           <div class="multiselect-tag is-user">
-            <img :src="option.image" alt="" />
+            <img :src="option.image" alt="">
             {{ option.name }}
-            <i v-if="!disabled" @click.prevent @mousedown.prevent.stop="remove(option)" />
+            <i
+              v-if="!disabled"
+              role="button"
+              tabindex="0"
+              @click.prevent
+              @mousedown.prevent.stop="remove(option)"
+            />
           </div>
         </template>
       </Multiselect>

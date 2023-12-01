@@ -8,15 +8,16 @@ const filters = ref('')
 const filteredData = computed(() => {
   if (!filters.value) {
     return retails
-  } else {
+  }
+  else {
     return retails.filter((item) => {
       return (
-        item.name.match(new RegExp(filters.value, 'i')) ||
-        item.location.match(new RegExp(filters.value, 'i')) ||
-        ('parking'.match(new RegExp(filters.value, 'i')) && item.comodities.parking) ||
-        ('wifi'.match(new RegExp(filters.value, 'i')) && item.comodities.wifi) ||
-        ('heater'.match(new RegExp(filters.value, 'i')) && item.comodities.heater) ||
-        ('cleaning'.match(new RegExp(filters.value, 'i')) && item.comodities.cleaning)
+        item.name.match(new RegExp(filters.value, 'i'))
+        || item.location.match(new RegExp(filters.value, 'i'))
+        || ('parking'.match(new RegExp(filters.value, 'i')) && item.comodities.parking)
+        || ('wifi'.match(new RegExp(filters.value, 'i')) && item.comodities.wifi)
+        || ('heater'.match(new RegExp(filters.value, 'i')) && item.comodities.heater)
+        || ('cleaning'.match(new RegExp(filters.value, 'i')) && item.comodities.cleaning)
       )
     })
   }

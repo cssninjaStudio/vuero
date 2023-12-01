@@ -8,11 +8,21 @@ Use the `disabled` prop to set a button in a disabled state.
 ```vue
 <template>
   <VButtons>
-    <VButton color="primary" disabled> Button </VButton>
-    <VButton color="info" disabled> Button </VButton>
-    <VButton color="success" disabled> Button </VButton>
-    <VButton color="warning" disabled> Button </VButton>
-    <VButton color="danger" disabled> Button </VButton>
+    <VButton color="primary" disabled>
+      Button
+    </VButton>
+    <VButton color="info" disabled>
+      Button
+    </VButton>
+    <VButton color="success" disabled>
+      Button
+    </VButton>
+    <VButton color="warning" disabled>
+      Button
+    </VButton>
+    <VButton color="danger" disabled>
+      Button
+    </VButton>
   </VButtons>
 </template>
 ```

@@ -23,7 +23,11 @@ const input = ref(2)
   >
     <VField>
       <VControl>
-        <VRangeRating v-model="input" label="Small" size="small" />
+        <VRangeRating
+          v-model="input"
+          label="Small"
+          size="small"
+        />
       </VControl>
     </VField>
     <VField>
@@ -33,17 +37,29 @@ const input = ref(2)
     </VField>
     <VField>
       <VControl>
-        <VRangeRating v-model="input" label="Medium" size="medium" />
+        <VRangeRating
+          v-model="input"
+          label="Medium"
+          size="medium"
+        />
       </VControl>
     </VField>
     <VField>
       <VControl>
-        <VRangeRating v-model="input" label="Large" size="large" />
+        <VRangeRating
+          v-model="input"
+          label="Large"
+          size="large"
+        />
       </VControl>
     </VField>
     <VField>
       <VControl>
-        <VRangeRating v-model="input" label="XLarge" size="xlarge" />
+        <VRangeRating
+          v-model="input"
+          label="XLarge"
+          size="xlarge"
+        />
       </VControl>
     </VField>
   </div>

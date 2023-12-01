@@ -13,7 +13,9 @@ set your popover placement. Available options are `top`, `top-end`, `bottom`,
     <template #content>
       <div class="v-popover-content is-text">
         <div class="popover-head">
-          <h4 class="dark-inverted">Top</h4>
+          <h4 class="dark-inverted">
+            Top
+          </h4>
         </div>
         <div class="popover-body">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>

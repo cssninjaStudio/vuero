@@ -34,7 +34,8 @@ export default definePlugin(async ({ router, pinia }) => {
       // Note that the api is provided with json-server
       const user = await $fetch('/api/users/me')
       userSession.setUser(user)
-    } catch (err) {
+    }
+    catch (err) {
       // delete stored token if it fails
       userSession.logoutUser()
     }

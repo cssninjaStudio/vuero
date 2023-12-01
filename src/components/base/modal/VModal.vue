@@ -44,7 +44,8 @@ const checkScroll = () => {
       document.documentElement.classList.add('no-scroll')
     }
     wasOpen.value = true
-  } else if (wasOpen.value && props.noscroll && !props.open) {
+  }
+  else if (wasOpen.value && props.noscroll && !props.open) {
     if (!import.meta.env.SSR) {
       document.documentElement.classList.remove('no-scroll')
     }

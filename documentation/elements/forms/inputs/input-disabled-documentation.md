@@ -9,7 +9,11 @@ simply add the `disabled` atribute to the target input element.
 <template>
   <VField>
     <VControl>
-      <VInput type="text" placeholder="Username" disabled />
+      <VInput
+        type="text"
+        placeholder="Username"
+        disabled
+      />
     </VControl>
   </VField>
 </template>

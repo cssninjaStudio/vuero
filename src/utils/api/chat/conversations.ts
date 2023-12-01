@@ -11,8 +11,8 @@ export interface Conversation {
 export async function fetchConversations(
   $fetch: $Fetch,
   start = 0,
-  limit = 20
-): Promise<{ conversations: Conversation[]; count: number }> {
+  limit = 20,
+): Promise<{ conversations: Conversation[], count: number }> {
   let count = 0
 
   const { _data: conversations = [], headers } = await $fetch.raw<Conversation[]>(
@@ -22,7 +22,7 @@ export async function fetchConversations(
         _start: start,
         _limit: limit,
       },
-    }
+    },
   )
 
   if (headers.has('X-Total-Count')) {

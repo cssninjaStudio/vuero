@@ -21,7 +21,8 @@ function renderYesNo(data: any /* , cell: any, row: any */) {
 function renderHighLow(data: any /* , cell: any, row: any */) {
   if (data > 0) {
     return `<span class="price dark-inverted">${data}</span>`
-  } else if (data == 0) {
+  }
+  else if (data == 0) {
     return `<span class="price price-free dark-inverted">${data}</span>`
   }
 }
@@ -35,7 +36,8 @@ function renderStock(data: any /* , cell: any, row: any */) {
 function renderStatus(data: any /* , cell: any, row: any */) {
   if (data === 'available') {
     return `<span class="tag is-primary is-elevated is-curved is-capitalize">${data}</span>`
-  } else if (data === 'new') {
+  }
+  else if (data === 'new') {
     return `<span class="tag is-info is-elevated is-curved is-capitalize">${data}</span>`
   }
   if (data === 'unavailable') {
@@ -47,7 +49,8 @@ function renderStatus(data: any /* , cell: any, row: any */) {
 function renderProfit(data: any /* , cell: any, row: any */) {
   if (data > 0) {
     return `<div class="has-text-centered"><span class="positive-icon light-text"><i aria-hidden="true" class="iconify" data-icon="feather:trending-up"></i> +${data}%</span></div>`
-  } else if (data < 0) {
+  }
+  else if (data < 0) {
     return `<div class="has-text-centered"><span class="negative-icon is-danger light-text"><i aria-hidden="true" class="iconify" data-icon="feather:trending-down"></i> -${data}%</span></div>`
   }
 }

@@ -8,38 +8,82 @@ prop to the component. See the code example for more details.
 
 ```vue
 <template>
-  <VIconBox size="medium" color="primary" rounded>
-    <i class="lnil lnil-vector-pen"></i>
+  <VIconBox
+    size="medium"
+    color="primary"
+    rounded
+  >
+    <i class="lnil lnil-vector-pen" />
   </VIconBox>
-  <VIconBox size="medium" color="info" rounded>
-    <i class="lnil lnil-vector-pen"></i>
+  <VIconBox
+    size="medium"
+    color="info"
+    rounded
+  >
+    <i class="lnil lnil-vector-pen" />
   </VIconBox>
-  <VIconBox size="medium" color="success" rounded>
-    <i class="lnil lnil-vector-pen"></i>
+  <VIconBox
+    size="medium"
+    color="success"
+    rounded
+  >
+    <i class="lnil lnil-vector-pen" />
   </VIconBox>
-  <VIconBox size="medium" color="warning" rounded>
-    <i class="lnil lnil-vector-pen"></i>
+  <VIconBox
+    size="medium"
+    color="warning"
+    rounded
+  >
+    <i class="lnil lnil-vector-pen" />
   </VIconBox>
-  <VIconBox size="medium" color="danger" rounded>
-    <i class="lnil lnil-vector-pen"></i>
+  <VIconBox
+    size="medium"
+    color="danger"
+    rounded
+  >
+    <i class="lnil lnil-vector-pen" />
   </VIconBox>
-  <VIconBox size="medium" color="purple" rounded>
-    <i class="lnil lnil-vector-pen"></i>
+  <VIconBox
+    size="medium"
+    color="purple"
+    rounded
+  >
+    <i class="lnil lnil-vector-pen" />
   </VIconBox>
-  <VIconBox size="medium" color="yellow" rounded>
-    <i class="lnil lnil-vector-pen"></i>
+  <VIconBox
+    size="medium"
+    color="yellow"
+    rounded
+  >
+    <i class="lnil lnil-vector-pen" />
   </VIconBox>
-  <VIconBox size="medium" color="orange" rounded>
-    <i class="lnil lnil-vector-pen"></i>
+  <VIconBox
+    size="medium"
+    color="orange"
+    rounded
+  >
+    <i class="lnil lnil-vector-pen" />
   </VIconBox>
-  <VIconBox size="medium" color="green" rounded>
-    <i class="lnil lnil-vector-pen"></i>
+  <VIconBox
+    size="medium"
+    color="green"
+    rounded
+  >
+    <i class="lnil lnil-vector-pen" />
   </VIconBox>
-  <VIconBox size="medium" color="red" rounded>
-    <i class="lnil lnil-vector-pen"></i>
+  <VIconBox
+    size="medium"
+    color="red"
+    rounded
+  >
+    <i class="lnil lnil-vector-pen" />
   </VIconBox>
-  <VIconBox size="medium" color="blue" rounded>
-    <i class="lnil lnil-vector-pen"></i>
+  <VIconBox
+    size="medium"
+    color="blue"
+    rounded
+  >
+    <i class="lnil lnil-vector-pen" />
   </VIconBox>
 </template>
 ```

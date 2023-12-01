@@ -20,7 +20,11 @@ const flipped = ref(null)
 <template>
   <VField>
     <VControl>
-      <VCreditCard color="grey" :flipped="flipped" @flip="flipped = !flipped" />
+      <VCreditCard
+        color="grey"
+        :flipped="flipped"
+        @flip="flipped = !flipped"
+      />
     </VControl>
   </VField>
 </template>

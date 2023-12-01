@@ -43,7 +43,11 @@ const breadcrumb = [
 
 <template>
   <VBreadcrumb :items="breadcrumb" separator="dot" />
-  <VBreadcrumb :items="breadcrumb" separator="dot" with-icons />
+  <VBreadcrumb
+    :items="breadcrumb"
+    separator="dot"
+    with-icons
+  />
 </template>
 ```
 

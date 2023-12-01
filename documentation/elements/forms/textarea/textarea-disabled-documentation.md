@@ -28,7 +28,7 @@ const disabled = ref(true)
         rows="4"
         placeholder="A longer message..."
         :disabled="disabled"
-      ></VTextarea>
+      />
     </VControl>
   </VField>
 </template>

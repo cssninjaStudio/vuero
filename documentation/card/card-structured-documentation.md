@@ -13,7 +13,12 @@ come content. Check the markup for more details about usage.
 <template>
   <VCard radius="small" elevated>
     <div class="card-head">
-      <VBlock title="Greta K." subtitle="Sales Manager" center class="no-margin">
+      <VBlock
+        title="Greta K."
+        subtitle="Sales Manager"
+        center
+        class="no-margin"
+      >
         <template #icon>
           <Tippy
             class="has-help-cursor"

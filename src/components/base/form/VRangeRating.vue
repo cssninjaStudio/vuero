@@ -19,7 +19,7 @@ const props = withDefaults(
     size: 'base',
     label: undefined,
     readonly: undefined,
-  }
+  },
 )
 
 const { field, id } = useVFieldContext({
@@ -28,7 +28,7 @@ const { field, id } = useVFieldContext({
 })
 
 const hasValue = computed(
-  () => field?.value !== undefined || modelValue.value !== undefined
+  () => field?.value !== undefined || modelValue.value !== undefined,
 )
 const active = computed(() => !props.readonly && hasValue.value)
 
@@ -36,7 +36,8 @@ const internal = computed({
   get() {
     if (field?.value) {
       return field.value.value ?? 0
-    } else {
+    }
+    else {
       return modelValue.value ?? 0
     }
   },

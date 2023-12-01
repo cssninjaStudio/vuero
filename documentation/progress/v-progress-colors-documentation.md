@@ -11,10 +11,26 @@ Use the `color` prop to change the progress bar color.
 ```vue
 <template>
   <VProgress size="tiny" :value="70" />
-  <VProgress size="tiny" color="success" :value="55" />
-  <VProgress size="tiny" color="info" :value="45" />
-  <VProgress size="tiny" color="warning" :value="60" />
-  <VProgress size="tiny" color="danger" :value="38" />
+  <VProgress
+    size="tiny"
+    color="success"
+    :value="55"
+  />
+  <VProgress
+    size="tiny"
+    color="info"
+    :value="45"
+  />
+  <VProgress
+    size="tiny"
+    color="warning"
+    :value="60"
+  />
+  <VProgress
+    size="tiny"
+    color="danger"
+    :value="38"
+  />
 </template>
 ```
 

@@ -18,7 +18,8 @@ const isAllChecked = computed(() => {
 const toggleSelection = () => {
   if (isAllChecked.value) {
     selectedConversationList.value.splice(0, selectedConversationList.value.length)
-  } else {
+  }
+  else {
     selectedConversationList.value.splice(0, selectedConversationList.value.length)
     selectedConversationList.value.push(...[1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
   }

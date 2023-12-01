@@ -20,21 +20,43 @@ const input = ref<string[]>([])
 <template>
   <VField>
     <VControl>
-      <VSelect v-model="input" multiple size="8">
+      <VSelect
+        v-model="input"
+        multiple
+        size="8"
+      >
         <VOptgroup label="Marvel">
-          <VOption value="Spider-Man">Spider-Man</VOption>
-          <VOption value="Professor X" disabled>Professor X</VOption>
-          <VOption value="Deadpool">Deadpool</VOption>
+          <VOption value="Spider-Man">
+            Spider-Man
+          </VOption>
+          <VOption value="Professor X" disabled>
+            Professor X
+          </VOption>
+          <VOption value="Deadpool">
+            Deadpool
+          </VOption>
         </VOptgroup>
         <VOptgroup label="DC">
-          <VOption value="Batman">Batman</VOption>
-          <VOption value="Superman">Superman</VOption>
-          <VOption value="Green Lantern">Green Lantern</VOption>
+          <VOption value="Batman">
+            Batman
+          </VOption>
+          <VOption value="Superman">
+            Superman
+          </VOption>
+          <VOption value="Green Lantern">
+            Green Lantern
+          </VOption>
         </VOptgroup>
         <VOptgroup label="Looney Tunes" disabled>
-          <VOption value="Bugs Bunny">Bugs Bunny</VOption>
-          <VOption value="Daffy Duck">Daffy Duck</VOption>
-          <VOption value="Marvin the Martian">Marvin the Martian</VOption>
+          <VOption value="Bugs Bunny">
+            Bugs Bunny
+          </VOption>
+          <VOption value="Daffy Duck">
+            Daffy Duck
+          </VOption>
+          <VOption value="Marvin the Martian">
+            Marvin the Martian
+          </VOption>
         </VOptgroup>
       </VSelect>
     </VControl>

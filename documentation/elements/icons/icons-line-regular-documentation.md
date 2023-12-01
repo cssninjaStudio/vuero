@@ -9,7 +9,7 @@ Please refer to the code example for more details about usage.
 ```vue
 <template>
   <!--Line Icons usage -->
-  <i class="lnir lnir-air-flow"></i>
+  <i class="lnir lnir-air-flow" />
 </template>
 ```
 

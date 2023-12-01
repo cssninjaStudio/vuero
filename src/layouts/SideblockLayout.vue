@@ -14,7 +14,7 @@ const props = withDefaults(
   {
     defaultSideblock: 'dashboard',
     theme: 'default',
-  }
+  },
 )
 
 const viewWrapper = useViewWrapper()
@@ -42,7 +42,7 @@ watch(
     if (props.closeOnChange && isDesktopSideblockOpen.value) {
       isDesktopSideblockOpen.value = false
     }
-  }
+  },
 )
 </script>
 

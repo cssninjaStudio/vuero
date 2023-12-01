@@ -2,19 +2,26 @@
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": false,
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
   "[markdown]": {
     "editor.rulers": [80]
   },
-  "[vue]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
-    }
-  },
   "eslint.alwaysShowStatus": true,
-  "eslint.validate": ["javascript", "javascriptreact", "markdown", "vue"],
+  "prettier.enable": false,
+  // "eslint.format.enable": true,
+  "eslint.lintTask.options": "-c .eslintrc.cjs .",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "json",
+    "markdown",
+    "typescript",
+    "vue"
+  ],
   "i18n-ally.localesPaths": "src/locales",
   "i18n-ally.enabledParsers": ["yaml", "json", "json5"],
   "i18n-ally.sortKeys": true,

@@ -88,7 +88,7 @@ export default defineComponent({
         // The value must match one of these strings
         if ([undefined, 'small', 'tiny'].indexOf(value) === -1) {
           console.warn(
-            `VFilePond: invalid "${value}" size. Should be small, tiny or undefined`
+            `VFilePond: invalid "${value}" size. Should be small, tiny or undefined`,
           )
           return false
         }
@@ -116,7 +116,7 @@ export default defineComponent({
             new Promise((resolve, reject) => {
               if (pondOptions.acceptedFileTypes) {
                 const index = pondOptions.acceptedFileTypes.findIndex(
-                  (allowedType) => allowedType === type
+                  allowedType => allowedType === type,
                 )
                 if (index > -1) {
                   resolve(type)
@@ -174,7 +174,7 @@ export default defineComponent({
         {
           class: ['filepond-profile-wrap', props.size && `is-${props.size}`],
         },
-        [wrapper]
+        [wrapper],
       )
     }
   },

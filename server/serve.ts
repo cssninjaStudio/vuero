@@ -27,11 +27,11 @@ const resolve = (p: string) =>
   path.resolve(path.dirname(fileURLToPath(import.meta.url)), p)
 
 // prevent non-ready SSR dependencies from throwing errors
-//@ts-expect-error
+// @ts-expect-error ignore
 globalThis.__VUE_PROD_DEVTOOLS__ = false
-//@ts-expect-error
+// @ts-expect-error ignore
 globalThis.__VUE_I18N_FULL_INSTALL__ = false
-//@ts-expect-error
+// @ts-expect-error ignore
 globalThis.__VUE_I18N_LEGACY_API__ = false
 
 async function createServer() {
@@ -42,8 +42,11 @@ async function createServer() {
   })
 
   const manifest = isProd
-    ? // @ts-ignore
-      await import('../dist/client/.vite/ssr-manifest.json', { assert: { type: 'json' } })
+    ? await import(
+      // @ts-expect-error ignore
+      '../dist/client/.vite/ssr-manifest.json',
+      { assert: { type: 'json' } }
+    )
     : {}
   const indexProd = isProd
     ? readFileSync(resolve('../dist/client/index.html'), 'utf-8')
@@ -59,7 +62,7 @@ async function createServer() {
 
     process.env.VITE_CJS_IGNORE_WARNING = 'true'
 
-    vite = await import('vite').then((m) =>
+    vite = await import('vite').then(m =>
       m.createServer({
         root,
         logLevel: isTest ? 'error' : 'info',
@@ -73,12 +76,13 @@ async function createServer() {
             interval: 100,
           },
         },
-      })
+      }),
     )
 
     // use vite's connect instance as middleware in h3 app
     app.use(fromNodeMiddleware(vite.middlewares))
-  } else {
+  }
+  else {
     /**
      * Otherwise, we register compression and serve-static express handlers in h3
      *
@@ -86,10 +90,10 @@ async function createServer() {
      * @see https://github.com/expressjs/serve-static
      */
 
-    // @ts-ignore
-    const compression = await import('compression').then((m) => m.default || m)
-    // @ts-ignore
-    const serveStatic = await import('serve-static').then((m) => m.default || m)
+    // @ts-expect-error ignore
+    const compression = await import('compression').then(m => m.default || m)
+    // @ts-expect-error ignore
+    const serveStatic = await import('serve-static').then(m => m.default || m)
 
     app.use(fromNodeMiddleware(compression()))
     app.use(
@@ -98,8 +102,8 @@ async function createServer() {
           index: false,
           fallthrough: true,
           maxAge: '1w',
-        })
-      )
+        }),
+      ),
     )
   }
 
@@ -138,9 +142,11 @@ async function createServer() {
           template = readFileSync(resolve('../index.html'), 'utf-8')
           template = await vite.transformIndexHtml(url.pathname, template)
           render = (await vite.ssrLoadModule('/src/entry-server.ts')).render
-        } else {
+        }
+        else {
           // use built template and render function in production
           template = indexProd
+          // eslint-disable-next-line @typescript-eslint/no-var-requires
           render = require('../dist/server/entry-server.js').render
         }
 
@@ -166,8 +172,8 @@ async function createServer() {
           .replace(
             /<div id="app"([\s\w\-"'=[\]]*)><\/div>/,
             `<div id="app" data-server-rendered="true"$1>${appHtml}</div><script>window.__vuero__=${devalue(
-              initialState
-            )}</script>`
+              initialState,
+            )}</script>`,
           )
 
         // send minified page
@@ -189,7 +195,8 @@ async function createServer() {
         }
 
         return Buffer.from(minified)
-      } catch (error: any) {
+      }
+      catch (error: any) {
         // handle error 500 page
         if (!isProd) {
           setHeader(event, 'Cache-Control', 'no-cache, no-store, must-revalidate')
@@ -199,7 +206,8 @@ async function createServer() {
           console.error('[dev] [pageError] ', error)
 
           return error.message
-        } else {
+        }
+        else {
           setHeader(event, 'Cache-Control', 'no-cache, no-store, must-revalidate')
           setResponseStatus(event, 500)
 
@@ -207,7 +215,7 @@ async function createServer() {
           return 'Internal Server Error'
         }
       }
-    })
+    }),
   )
 
   return { app }
@@ -220,25 +228,27 @@ if (!isTest) {
     .catch((error) => {
       if (!isProd) {
         console.error('[dev] [serverError] ', error)
-      } else {
+      }
+      else {
         console.error('[serverError] ' + error)
       }
       process.exit(1)
     })
 
   if (!isProd) {
-    process.on('unhandledRejection', (error) =>
-      console.error('[dev] [unhandledRejection]', error)
+    process.on('unhandledRejection', error =>
+      console.error('[dev] [unhandledRejection]', error),
     )
-    process.on('uncaughtException', (error) =>
-      console.error('[dev] [uncaughtException]', error)
+    process.on('uncaughtException', error =>
+      console.error('[dev] [uncaughtException]', error),
     )
-  } else {
-    process.on('unhandledRejection', (error) =>
-      console.error('[unhandledRejection] ' + error)
+  }
+  else {
+    process.on('unhandledRejection', error =>
+      console.error('[unhandledRejection] ' + error),
     )
-    process.on('uncaughtException', (error) =>
-      console.error('[uncaughtException] ' + error)
+    process.on('uncaughtException', error =>
+      console.error('[uncaughtException] ' + error),
     )
   }
 }

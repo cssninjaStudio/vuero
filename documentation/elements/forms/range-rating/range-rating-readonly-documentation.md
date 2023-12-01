@@ -26,12 +26,20 @@ const input = ref(2)
   >
     <VField>
       <VControl>
-        <VRangeRating v-model="input" label="Readonly" readonly />
+        <VRangeRating
+          v-model="input"
+          label="Readonly"
+          readonly
+        />
       </VControl>
     </VField>
     <VField>
       <VControl>
-        <VRangeRating v-model="input" label="Disabled" disabled />
+        <VRangeRating
+          v-model="input"
+          label="Disabled"
+          disabled
+        />
       </VControl>
     </VField>
   </div>

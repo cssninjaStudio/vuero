@@ -15,7 +15,7 @@ const props = withDefaults(
   {
     conversations: () => [],
     selectedConversationId: 0,
-  }
+  },
 )
 const sidebar = useSidebar()
 </script>

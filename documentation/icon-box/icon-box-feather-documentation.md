@@ -8,38 +8,82 @@ just replace the existing icons with some from Feather Icons.
 
 ```vue
 <template>
-  <VIconBox size="medium" color="primary" rounded>
-    <i class="iconify" data-icon="feather:award"></i>
+  <VIconBox
+    size="medium"
+    color="primary"
+    rounded
+  >
+    <i class="iconify" data-icon="feather:award" />
   </VIconBox>
-  <VIconBox size="medium" color="info" rounded>
-    <i class="iconify" data-icon="feather:chrome"></i>
+  <VIconBox
+    size="medium"
+    color="info"
+    rounded
+  >
+    <i class="iconify" data-icon="feather:chrome" />
   </VIconBox>
-  <VIconBox size="medium" color="success" rounded>
-    <i class="iconify" data-icon="feather:clock"></i>
+  <VIconBox
+    size="medium"
+    color="success"
+    rounded
+  >
+    <i class="iconify" data-icon="feather:clock" />
   </VIconBox>
-  <VIconBox size="medium" color="warning" rounded>
-    <i class="iconify" data-icon="feather:coffee"></i>
+  <VIconBox
+    size="medium"
+    color="warning"
+    rounded
+  >
+    <i class="iconify" data-icon="feather:coffee" />
   </VIconBox>
-  <VIconBox size="medium" color="danger" rounded>
-    <i class="iconify" data-icon="feather:home"></i>
+  <VIconBox
+    size="medium"
+    color="danger"
+    rounded
+  >
+    <i class="iconify" data-icon="feather:home" />
   </VIconBox>
-  <VIconBox size="medium" color="purple" rounded>
-    <i class="iconify" data-icon="feather:lock"></i>
+  <VIconBox
+    size="medium"
+    color="purple"
+    rounded
+  >
+    <i class="iconify" data-icon="feather:lock" />
   </VIconBox>
-  <VIconBox size="medium" color="yellow" rounded>
-    <i class="iconify" data-icon="feather:moon"></i>
+  <VIconBox
+    size="medium"
+    color="yellow"
+    rounded
+  >
+    <i class="iconify" data-icon="feather:moon" />
   </VIconBox>
-  <VIconBox size="medium" color="orange" rounded>
-    <i class="iconify" data-icon="feather:phone"></i>
+  <VIconBox
+    size="medium"
+    color="orange"
+    rounded
+  >
+    <i class="iconify" data-icon="feather:phone" />
   </VIconBox>
-  <VIconBox size="medium" color="green" rounded>
-    <i class="iconify" data-icon="feather:paperclip"></i>
+  <VIconBox
+    size="medium"
+    color="green"
+    rounded
+  >
+    <i class="iconify" data-icon="feather:paperclip" />
   </VIconBox>
-  <VIconBox size="medium" color="red" rounded>
-    <i class="iconify" data-icon="feather:smile"></i>
+  <VIconBox
+    size="medium"
+    color="red"
+    rounded
+  >
+    <i class="iconify" data-icon="feather:smile" />
   </VIconBox>
-  <VIconBox size="medium" color="blue" rounded>
-    <i class="iconify" data-icon="feather:shield"></i>
+  <VIconBox
+    size="medium"
+    color="blue"
+    rounded
+  >
+    <i class="iconify" data-icon="feather:shield" />
   </VIconBox>
 </template>
 ```

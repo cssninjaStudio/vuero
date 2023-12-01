@@ -22,7 +22,11 @@ const input = ref('')
 <template>
   <VField>
     <VControl>
-      <VInput v-model="input" type="text" placeholder="Your username" />
+      <VInput
+        v-model="input"
+        type="text"
+        placeholder="Your username"
+      />
     </VControl>
   </VField>
 </template>

@@ -1,5 +1,5 @@
-const hslRe =
-  /hsl\(\s*(\d+)((?:deg)|(?:turn)|(?:rad))?\s*,?\s*(\d+(?:\.\d+)?%)\s*,?\s*(\d+(?:\.\d+)?%)\s*\)/
+const hslRe
+  = /hsl\(\s*(\d+)((?:deg)|(?:turn)|(?:rad))?\s*,?\s*(\d+(?:\.\d+)?%)\s*,?\s*(\d+(?:\.\d+)?%)\s*\)/
 
 export function HSLToHex(hslCss?: string) {
   if (!hslCss) {
@@ -33,7 +33,7 @@ export function HSLToHex(hslCss?: string) {
       break
     case 'rad':
       h = Math.round(
-        parseFloat(hueString.substr(0, hueString.length - 3)) * (180 / Math.PI)
+        parseFloat(hueString.substr(0, hueString.length - 3)) * (180 / Math.PI),
       )
       break
     default:
@@ -57,23 +57,28 @@ export function HSLToHex(hslCss?: string) {
     r = c
     g = x
     b = 0
-  } else if (60 <= h && h < 120) {
+  }
+  else if (60 <= h && h < 120) {
     r = x
     g = c
     b = 0
-  } else if (120 <= h && h < 180) {
+  }
+  else if (120 <= h && h < 180) {
     r = 0
     g = c
     b = x
-  } else if (180 <= h && h < 240) {
+  }
+  else if (180 <= h && h < 240) {
     r = 0
     g = x
     b = c
-  } else if (240 <= h && h < 300) {
+  }
+  else if (240 <= h && h < 300) {
     r = x
     g = 0
     b = c
-  } else if (300 <= h && h < 360) {
+  }
+  else if (300 <= h && h < 360) {
     r = c
     g = 0
     b = x

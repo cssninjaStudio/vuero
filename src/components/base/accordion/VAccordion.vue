@@ -29,7 +29,8 @@ const toggle = (key: number) => {
 
   if (wasOpen) {
     internalOpenItems.value.splice(internalOpenItems.value.indexOf(key), 1)
-  } else {
+  }
+  else {
     internalOpenItems.value.push(key)
   }
 }

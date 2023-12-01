@@ -7,7 +7,7 @@ const props = withDefaults(
   }>(),
   {
     theme: 'default',
-  }
+  },
 )
 
 const { y } = useWindowScroll()

@@ -17,7 +17,7 @@ const fs = require('fs')
  * @type {Cypress.PluginConfig}
  */
 // eslint-disable-next-line no-unused-vars
-module.exports = (on /* , config*/) => {
+module.exports = (on /* , config */) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
 
@@ -33,7 +33,8 @@ module.exports = (on /* , config*/) => {
       // and renames the image to 'screenshot.png'
       try {
         fs.renameSync(details.path, cleanPath)
-      } catch (error) {
+      }
+      catch (error) {
         return reject(err)
       }
 

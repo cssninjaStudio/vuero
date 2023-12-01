@@ -11,7 +11,7 @@ const props = withDefaults(
     title: 'Grouped stats widget',
     values: () => [],
     labels: () => [],
-  }
+  },
 )
 </script>
 

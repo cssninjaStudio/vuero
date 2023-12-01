@@ -6,7 +6,7 @@ export const onBeforeLoad = (win: Cypress.AUTWindow) => {
   win.localStorage.setItem('token', 'logged-in')
 }
 
-export const buildUri = ({ path, query }: { path: string; query?: any }) => {
+export const buildUri = ({ path, query }: { path: string, query?: any }) => {
   let uri = path
 
   if (query) {
@@ -22,8 +22,8 @@ export const buildUri = ({ path, query }: { path: string; query?: any }) => {
 }
 
 export const buildScreenshotName = (
-  route: { prefix: string; name: string },
-  suffix?: string
+  route: { prefix: string, name: string },
+  suffix?: string,
 ) => {
   return `${route.prefix}/${route.name
     .toLowerCase()

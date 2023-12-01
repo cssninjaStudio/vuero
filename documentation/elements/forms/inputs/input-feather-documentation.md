@@ -10,7 +10,11 @@ component to show an icon.
 <template>
   <VField>
     <VControl icon="feather:github">
-      <VInput type="text" class="is-rounded" placeholder="GitHub URL" />
+      <VInput
+        type="text"
+        class="is-rounded"
+        placeholder="GitHub URL"
+      />
     </VControl>
   </VField>
 </template>
