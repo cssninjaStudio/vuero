@@ -95,6 +95,7 @@ export default defineConfig({
       'vue-i18n',
       'vue-router',
       'unplugin-vue-router/runtime',
+      'scule',
       'simplebar',
       'tiny-slider/src/tiny-slider',
       'vue-accessible-color-picker',

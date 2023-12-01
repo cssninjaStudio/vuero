@@ -13,7 +13,7 @@ const props = defineProps<{
       <div class="demo-title">
         <div class="content">
           <h3 :id="`${props.name}Props`">
-            {{ props.name }} Props
+            &lt;{{ props.name }}&gt; Props
             <a :href="`#${props.name}Props`">
               <i
                 class="iconify toc-link-anchor"
@@ -87,7 +87,7 @@ const props = defineProps<{
       <div class="demo-title">
         <div class="content">
           <h3 :id="`${props.name}Events`">
-            {{ props.name }} Events
+            &lt;{{ props.name }}&gt; Events
             <a :href="`#${props.name}Events`">
               <i
                 class="iconify toc-link-anchor"
@@ -131,7 +131,7 @@ const props = defineProps<{
       <div class="demo-title">
         <div class="content">
           <h3 :id="`${props.name}Exposed`">
-            {{ props.name }} Exposed
+            &lt;{{ props.name }}&gt; Exposed
             <a :href="`#${props.name}Exposed`">
               <i
                 class="iconify toc-link-anchor"
@@ -175,7 +175,7 @@ const props = defineProps<{
       <div class="demo-title">
         <div class="content">
           <h3 :id="`${props.name}Slots`">
-            {{ props.name }} Slots
+            &lt;{{ props.name }}&gt; Slots
             <a :href="`#${props.name}Slots`">
               <i
                 class="iconify toc-link-anchor"

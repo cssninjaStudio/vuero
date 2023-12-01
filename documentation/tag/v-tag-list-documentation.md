@@ -47,7 +47,7 @@ See markup for more details about usage.
 <!--/code-->
 
 <!--example-->
-<VField grouped multiline>
+<VField grouped multiline style="gap: 0.5rem">
   <VControl>
     <VTags addons>
       <VTag label="Bulma CSS" color="primary" />
