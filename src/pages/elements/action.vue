@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
+import { VActionMeta } from '/@src/data/documentation/components-meta'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
@@ -48,11 +49,10 @@ useHead({
         <!--VAction-->
         <VActionDocumentation />
 
-        <!--Props-->
-        <VActionPropsDocumentation />
-
-        <!--Slots-->
-        <VActionSlotsDocumentation />
+        <DocumentationMeta
+          name="VAction"
+          :meta="VActionMeta"
+        />
       </div>
       <div
         v-if="toc.length"

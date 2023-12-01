@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
+import { VAvatarMeta } from '/@src/data/documentation/components-meta'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
@@ -78,11 +79,10 @@ useHead({
         <!--Avatar Fake Squared Colors-->
         <AvatarFakeSquaredColorDocumentation />
 
-        <!--Props-->
-        <AvatarPropsDocumentation />
-
-        <!--Slots-->
-        <AvatarSlotsDocumentation />
+        <DocumentationMeta
+          name="VAvatar"
+          :meta="VAvatarMeta"
+        />
       </div>
       <div
         v-if="toc.length"

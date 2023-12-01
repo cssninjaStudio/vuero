@@ -1,6 +1,6 @@
 <script lang="ts">
 import type { RouteLocationAsString } from 'unplugin-vue-router'
-import type { PropType } from 'vue'
+import type { SlotsType, PropType } from 'vue'
 import { RouterLink } from 'vue-router/auto'
 import { CssUnitRe } from '/@src/utils/regex'
 
@@ -155,6 +155,9 @@ export default defineComponent({
       default: false,
     },
   },
+  slots: Object as SlotsType<{
+    default: void
+  }>,
   setup(props, { slots, attrs }) {
     const classes = computed(() => {
       const defaultClasses = (attrs?.class || []) as string[] | string

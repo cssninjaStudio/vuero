@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
+import { VIconBoxMeta } from '/@src/data/documentation/components-meta'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
@@ -63,11 +64,10 @@ useHead({
         <!--Font Awesome-->
         <IconBoxFaDocumentation />
 
-        <!--Props-->
-        <IconBoxPropsDocumentation />
-
-        <!--Slots-->
-        <IconBoxSlotsDocumentation />
+        <DocumentationMeta
+          name="VIconBox"
+          :meta="VIconBoxMeta"
+        />
       </div>
       <div
         v-if="toc.length"

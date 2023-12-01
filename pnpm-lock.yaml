@@ -429,6 +429,9 @@ devDependencies:
   vite-plugin-radar:
     specifier: 0.9.2
     version: 0.9.2(vite@5.0.4)
+  vue-component-meta:
+    specifier: ^1.8.24
+    version: 1.8.24(typescript@5.3.2)
   vue-tsc:
     specifier: 1.8.24
     version: 1.8.24(typescript@5.3.2)
@@ -14053,6 +14056,25 @@ packages:
     dependencies:
       vue: 3.4.0-alpha.3(typescript@5.3.2)
     dev: false
+
+  /vue-component-meta@1.8.24(typescript@5.3.2):
+    resolution: {integrity: sha512-sr1UgIlUwQ2WCdF59M2+XCmdXoPVL+GM+oAU6JxvlqBziJIMQfdySjJruffq0CSY1LI508EfBlaZ8ZL+hV422g==}
+    peerDependencies:
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      '@volar/typescript': 1.11.1
+      '@vue/language-core': 1.8.24(typescript@5.3.2)
+      path-browserify: 1.0.1
+      typescript: 5.3.2
+      vue-component-type-helpers: 1.8.24
+    dev: true
+
+  /vue-component-type-helpers@1.8.24:
+    resolution: {integrity: sha512-lqWs/7fdRXoSBAlbouHBX+LNuaY6gI9xWW34m/ZIz9zVPYHEyw0b2/zaCBwlKx0NtKTeF/6pOpvrxVkh7nhIYg==}
+    dev: true
 
   /vue-demi@0.14.6(vue@3.4.0-alpha.3):
     resolution: {integrity: sha512-8QA7wrYSHKaYgUxDA5ZC24w+eHm3sYCbp0EzcDwKqN3p6HqtTCGR/GVsPyZW92unff4UlcSh++lmqDWN3ZIq4w==}

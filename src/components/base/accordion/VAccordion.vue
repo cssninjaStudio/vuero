@@ -1,10 +1,9 @@
 <script setup lang="ts">
-export interface VAccordionItem {
-  title: string
-  content: string
-}
-export interface VAccordionProps {
-  items: VAccordionItem[]
+interface VAccordionProps {
+  items: {
+    title: string
+    content: string
+  }[]
   openItems?: number[]
   exclusive?: boolean
 }

@@ -22,13 +22,33 @@ Please refer to the markup for more details about usage.
     </template>
 
     <template #content="{ close }">
-      <div @mouseleave="close" @focusout="close">
-        <a href="#" class="dropdown-item"> Dropdown item </a>
-        <a href="#" class="dropdown-item"> Other dropdown item </a>
-        <a href="#" class="dropdown-item is-active"> Active dropdown item </a>
-        <a href="#" class="dropdown-item"> Other dropdown item </a>
-        <hr class="dropdown-divider" />
-        <a href="#" class="dropdown-item"> With a divider </a>
+      <div
+        role="button"
+        tabIndex="0"
+        @mouseleave="close"
+        @focusout="close"
+      >
+        <a
+          href="#"
+          class="dropdown-item"
+        > Dropdown item </a>
+        <a
+          href="#"
+          class="dropdown-item"
+        > Other dropdown item </a>
+        <a
+          href="#"
+          class="dropdown-item is-active"
+        > Active dropdown item </a>
+        <a
+          href="#"
+          class="dropdown-item"
+        > Other dropdown item </a>
+        <hr class="dropdown-divider">
+        <a
+          href="#"
+          class="dropdown-item"
+        > With a divider </a>
       </div>
     </template>
   </VDropdown>
@@ -39,8 +59,8 @@ Please refer to the markup for more details about usage.
 
 <!--example-->
 
-<div class="field is-grouped">
-  <div class="control">
+<VField horizontal style="gap: 0.5rem;">
+  <VControl>
     <VDropdown>
       <template #button="{ open, toggle }">
         <VButton
@@ -65,9 +85,9 @@ Please refer to the markup for more details about usage.
         </div>
       </template>
     </VDropdown>
-  </div>
+  </VControl>
 
-  <div class="control">
+  <VControl>
     <VDropdown title="Primary button" up>
       <template #button="{ open, toggle }">
         <VButton
@@ -91,7 +111,7 @@ Please refer to the markup for more details about usage.
         </div>
       </template>
     </VDropdown>
-  </div>
-</div>
+  </VControl>
+</VField>
 
 <!--/example-->

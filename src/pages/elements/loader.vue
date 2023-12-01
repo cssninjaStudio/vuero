@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useViewWrapper } from '/@src/stores/viewWrapper'
+import { VLoaderMeta } from '/@src/data/documentation/components-meta'
 
 const isLoaderActive = ref(false)
 
@@ -180,8 +181,10 @@ useHead({
           </div>
         </div>
 
-        <VLoaderPropsDocumentation />
-        <VLoaderSlotsDocumentation />
+        <DocumentationMeta
+          name="VLoader"
+          :meta="VLoaderMeta"
+        />
       </div>
     </div>
   </div>

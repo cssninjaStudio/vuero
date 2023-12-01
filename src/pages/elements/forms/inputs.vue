@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
+import { VInputMeta } from '/@src/data/documentation/components-meta'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
@@ -73,6 +74,11 @@ useHead({
         <InputDisabledDocumentation />
 
         <InputDatasetDocumentation />
+
+        <DocumentationMeta
+          name="VInput"
+          :meta="VInputMeta"
+        />
       </div>
 
       <div

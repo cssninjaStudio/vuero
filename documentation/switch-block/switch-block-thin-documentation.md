@@ -9,23 +9,61 @@ Please refer to the markup for more details about usage.
 ```vue
 <template>
   <VField horizontal>
-    <VControl subcontrol class="mr-2">
+    <VControl
+      subcontrol
+      class="mr-2"
+    >
       <VSwitchBlock thin />
     </VControl>
-    <VControl subcontrol class="mr-2">
-      <VSwitchBlock thin color="primary" checked />
+    <VControl
+      subcontrol
+      class="mr-2"
+    >
+      <VSwitchBlock
+        thin
+        color="primary"
+        :model-value="true"
+      />
     </VControl>
-    <VControl subcontrol class="mr-2">
-      <VSwitchBlock thin color="success" checked />
+    <VControl
+      subcontrol
+      class="mr-2"
+    >
+      <VSwitchBlock
+        thin
+        color="success"
+        :model-value="true"
+      />
     </VControl>
-    <VControl subcontrol class="mr-2">
-      <VSwitchBlock thin color="info" checked />
+    <VControl
+      subcontrol
+      class="mr-2"
+    >
+      <VSwitchBlock
+        thin
+        color="info"
+        :model-value="true"
+      />
     </VControl>
-    <VControl subcontrol class="mr-2">
-      <VSwitchBlock thin color="warning" checked />
+    <VControl
+      subcontrol
+      class="mr-2"
+    >
+      <VSwitchBlock
+        thin
+        color="warning"
+        :model-value="true"
+      />
     </VControl>
-    <VControl subcontrol class="mr-2">
-      <VSwitchBlock thin color="danger" checked />
+    <VControl
+      subcontrol
+      class="mr-2"
+    >
+      <VSwitchBlock
+        thin
+        color="danger"
+        :model-value="true"
+      />
     </VControl>
   </VField>
 </template>
@@ -40,19 +78,19 @@ Please refer to the markup for more details about usage.
     <VSwitchBlock thin />
   </VControl>
   <VControl subcontrol class="mr-2">
-    <VSwitchBlock thin color="primary" checked />
+    <VSwitchBlock thin color="primary" :model-value="true" />
   </VControl>
   <VControl subcontrol class="mr-2">
-    <VSwitchBlock thin color="success" checked />
+    <VSwitchBlock thin color="success" :model-value="true" />
   </VControl>
   <VControl subcontrol class="mr-2">
-    <VSwitchBlock thin color="info" checked />
+    <VSwitchBlock thin color="info" :model-value="true" />
   </VControl>
   <VControl subcontrol class="mr-2">
-    <VSwitchBlock thin color="warning" checked />
+    <VSwitchBlock thin color="warning" :model-value="true" />
   </VControl>
   <VControl subcontrol class="mr-2">
-    <VSwitchBlock thin color="danger" checked />
+    <VSwitchBlock thin color="danger" :model-value="true" />
   </VControl>
 </VField>
 

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useViewWrapper } from '/@src/stores/viewWrapper'
+import { VFlexPaginationMeta } from '/@src/data/documentation/components-meta'
 
 const route = useRoute()
 const currentPage = computed(() => {
@@ -62,10 +63,10 @@ useHead({
           />
         </div>
 
-        <!--Props-->
-        <VFlexPaginationPropsDocumentation />
-        <VFlexPaginationEventsDocumentation />
-        <VFlexPaginationSlotsDocumentation />
+        <DocumentationMeta
+          name="VFlexPagination"
+          :meta="VFlexPaginationMeta"
+        />
       </div>
     </div>
   </div>

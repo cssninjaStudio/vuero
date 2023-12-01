@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
+import { VControlMeta } from '/@src/data/documentation/components-meta'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
@@ -54,8 +55,11 @@ useHead({
             <DocumentationDemoFormValidation />
           </template>
         </VControlValidationVeeZodDocumentation>
-        <VControlPropsDocumentation />
-        <VControlSlotsDocumentation />
+
+        <DocumentationMeta
+          name="VControl"
+          :meta="VControlMeta"
+        />
       </div>
       <div
         v-if="toc.length"

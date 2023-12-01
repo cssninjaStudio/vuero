@@ -7,14 +7,32 @@ Refer to the dropdown prop documentation for full customization options.
 
 ```vue
 <template>
-  <VDropdown title="Primary" color="primary">
+  <VDropdown
+    title="Primary"
+    color="primary"
+  >
     <template #content>
-      <a href="#" class="dropdown-item"> Dropdown item </a>
-      <a href="#" class="dropdown-item"> Other dropdown item </a>
-      <a href="#" class="dropdown-item is-active"> Active dropdown item </a>
-      <a href="#" class="dropdown-item"> Other dropdown item </a>
-      <hr class="dropdown-divider" />
-      <a href="#" class="dropdown-item"> With a divider </a>
+      <a
+        href="#"
+        class="dropdown-item"
+      > Dropdown item </a>
+      <a
+        href="#"
+        class="dropdown-item"
+      > Other dropdown item </a>
+      <a
+        href="#"
+        class="dropdown-item is-active"
+      > Active dropdown item </a>
+      <a
+        href="#"
+        class="dropdown-item"
+      > Other dropdown item </a>
+      <hr class="dropdown-divider">
+      <a
+        href="#"
+        class="dropdown-item"
+      > With a divider </a>
     </template>
   </VDropdown>
 </template>
@@ -24,8 +42,8 @@ Refer to the dropdown prop documentation for full customization options.
 
 <!--example-->
 
-<div class="field is-grouped">
-  <div class="control">
+<VField horizontal style="gap: 0.5rem;">
+  <VControl>
     <VDropdown title="Primary" color="primary">
       <template #content>
         <a href="#" class="dropdown-item"> Dropdown item </a>
@@ -36,9 +54,9 @@ Refer to the dropdown prop documentation for full customization options.
         <a href="#" class="dropdown-item"> With a divider </a>
       </template>
     </VDropdown>
-  </div>
+  </VControl>
 
-  <div class="control">
+  <VControl>
     <VDropdown title="Danger" color="danger">
       <template #content>
         <a href="#" class="dropdown-item"> Dropdown item </a>
@@ -49,9 +67,9 @@ Refer to the dropdown prop documentation for full customization options.
         <a href="#" class="dropdown-item"> With a divider </a>
       </template>
     </VDropdown>
-  </div>
+  </VControl>
 
-  <div class="control">
+  <VControl>
     <VDropdown title="Warning" color="warning">
       <template #content>
         <a href="#" class="dropdown-item"> Dropdown item </a>
@@ -62,9 +80,9 @@ Refer to the dropdown prop documentation for full customization options.
         <a href="#" class="dropdown-item"> With a divider </a>
       </template>
     </VDropdown>
-  </div>
+  </VControl>
 
-  <div class="control">
+  <VControl>
     <VDropdown title="Info" color="info">
       <template #content>
         <a href="#" class="dropdown-item"> Dropdown item </a>
@@ -75,9 +93,9 @@ Refer to the dropdown prop documentation for full customization options.
         <a href="#" class="dropdown-item"> With a divider </a>
       </template>
     </VDropdown>
-  </div>
+  </VControl>
 
-  <div class="control">
+  <VControl>
     <VDropdown title="Success" color="success">
       <template #content>
         <a href="#" class="dropdown-item"> Dropdown item </a>
@@ -88,7 +106,7 @@ Refer to the dropdown prop documentation for full customization options.
         <a href="#" class="dropdown-item"> With a divider </a>
       </template>
     </VDropdown>
-  </div>
-</div>
+  </VControl>
+</VField>
 
 <!--/example-->

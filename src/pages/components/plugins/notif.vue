@@ -9,7 +9,7 @@ const toc = useMarkdownToc(markdownContainer)
 const notyf = useNotyf()
 
 onMounted(() => {
-  notyf.success('This toast is displayed when the page is mounted')
+  notyf?.success('This toast is displayed when the page is mounted')
 })
 
 const viewWrapper = useViewWrapper()

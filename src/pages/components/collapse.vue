@@ -1,5 +1,9 @@
 <script setup lang="ts">
 import { useViewWrapper } from '/@src/stores/viewWrapper'
+import {
+  VCollapseMeta,
+  VCollapseModelMeta,
+} from '/@src/data/documentation/components-meta'
 
 const data = [
   {
@@ -68,8 +72,14 @@ useHead({
       </div>
 
       <div class="column is-12">
-        <!--Props-->
-        <AccordionCollapsePropsDocumentation />
+        <DocumentationMeta
+          name="VCollapse"
+          :meta="VCollapseMeta"
+        />
+        <DocumentationMeta
+          name="VCollapseModel"
+          :meta="VCollapseModelMeta"
+        />
       </div>
     </div>
   </div>

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
+import { VMarkdownEditorMeta } from '/@src/data/documentation/components-meta'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
@@ -46,9 +47,10 @@ useHead({
         <VMarkdownEditorToolbarDocumentation />
         <VMarkdownEditorCustomPreviewDocumentation />
 
-        <VMarkdownEditorPropsDocumentation />
-        <VMarkdownEditorEventsDocumentation />
-        <VMarkdownEditorSlotsDocumentation />
+        <DocumentationMeta
+          name="VMarkdownEditor"
+          :meta="VMarkdownEditorMeta"
+        />
       </div>
       <div
         v-if="toc.length"

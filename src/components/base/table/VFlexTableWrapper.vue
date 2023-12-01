@@ -1,5 +1,5 @@
 <script lang="ts">
-import type { InjectionKey, PropType } from 'vue'
+import type { SlotsType, InjectionKey, PropType } from 'vue'
 import type { VFlexTableColumn } from './VFlexTable.vue'
 import VFlexTableSortColumn from './VFlexTableSortColumn.vue'
 
@@ -46,6 +46,7 @@ export interface VFlexTableWrapperInjection {
   page?: number
   total?: number
   totalPages?: number
+  fetchData: (controller?: AbortController) => Promise<void>
 }
 
 export const flewTableWrapperSymbol: InjectionKey<VFlexTableWrapperInjection> = Symbol()
@@ -109,6 +110,9 @@ export default defineComponent({
       default: 300,
     },
   },
+  slots: Object as SlotsType<{
+    default: VFlexTableWrapperInjection
+  }>,
   emits: ['update:sort', 'update:page', 'update:limit', 'update:searchTerm'],
   setup(props, context) {
     const rawData = ref<any[]>()

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
+import { VSnackMeta } from '/@src/data/documentation/components-meta'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
@@ -72,11 +73,10 @@ useHead({
         <!--VSnack small icon-->
         <VSnackSmallIconDocumentation />
 
-        <!--Props-->
-        <VSnackPropsDocumentation />
-
-        <!--Snack-->
-        <VSnackSlotsDocumentation />
+        <DocumentationMeta
+          name="VSnack"
+          :meta="VSnackMeta"
+        />
       </div>
       <div
         v-if="toc.length"

@@ -1,5 +1,10 @@
 <script lang="ts">
-import { type RouteLocationOptions, RouterLink } from 'vue-router/auto'
+import type { SlotsType } from 'vue'
+import {
+  type RouteLocationOptions,
+  type LocationQueryValue,
+  RouterLink,
+} from 'vue-router/auto'
 
 export default defineComponent({
   props: {
@@ -24,6 +29,14 @@ export default defineComponent({
       default: 'sort',
     },
   },
+  slots: Object as SlotsType<{
+    default: {
+      isDesc: boolean
+      isAsc: boolean
+      nextSort?: string
+      value: string | LocationQueryValue[]
+    }
+  }>,
   emits: ['update:modelValue'],
   setup(props, context) {
     const route = useRoute()
@@ -38,8 +51,8 @@ export default defineComponent({
       return isAsc.value
         ? `${props.id}:desc`
         : isDesc.value
-        ? undefined
-        : `${props.id}:asc`
+          ? undefined
+          : `${props.id}:asc`
     })
 
     const sortedLink = computed(() => {
@@ -107,8 +120,8 @@ export default defineComponent({
                 'data-icon': isAsc.value
                   ? 'fa6-solid:sort-up'
                   : isDesc.value
-                  ? 'fa6-solid:sort-down'
-                  : 'fa6-solid:sort',
+                    ? 'fa6-solid:sort-down'
+                    : 'fa6-solid:sort',
               })
             )
 

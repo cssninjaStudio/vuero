@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
-
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 
 const markdownContainer = ref<HTMLElement>()

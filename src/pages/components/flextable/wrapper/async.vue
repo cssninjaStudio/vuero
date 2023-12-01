@@ -3,6 +3,7 @@ import { useFetch } from '/@src/composable/useFetch'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 import type { VFlexTableWrapperDataResolver } from '/@src/components/base/table/VFlexTableWrapper.vue'
 import sleep from '/@src/utils/sleep'
+
 const isMobileScreen = useMediaQuery('(max-width: 767px)')
 
 const viewWrapper = useViewWrapper()
@@ -301,8 +302,8 @@ function onCallClick(row: any) {
             <VFlexPagination
               v-if="!isMobileScreen"
               v-model:current-page="wrapperState.page"
-              :item-per-page="wrapperState.limit"
-              :total-items="wrapperState.total"
+              :item-per-page="wrapperState.limit ?? 0"
+              :total-items="wrapperState.total ?? 0"
               :max-links-displayed="2"
               no-router
             >
@@ -364,7 +365,7 @@ function onCallClick(row: any) {
             <VFlexTable
               rounded
               clickable
-              :no-header="!wrapperState.loading && wrapperState.data.length === 0"
+              :no-header="!wrapperState.loading && wrapperState.data?.length === 0"
               @row-click="onRowClick"
             >
               <template #body>
@@ -414,7 +415,7 @@ function onCallClick(row: any) {
 
                 <!-- This is the empty state -->
                 <div
-                  v-else-if="wrapperState.data.length === 0"
+                  v-else-if="wrapperState.data?.length === 0"
                   class="flex-list-inner"
                 >
                   <VPlaceholderSection
@@ -541,8 +542,8 @@ function onCallClick(row: any) {
             <VFlexPagination
               v-model:current-page="wrapperState.page"
               class="mt-5"
-              :item-per-page="wrapperState.limit"
-              :total-items="wrapperState.total"
+              :item-per-page="wrapperState.limit ?? 0"
+              :total-items="wrapperState.total ?? 0"
               :max-links-displayed="2"
               no-router
             />

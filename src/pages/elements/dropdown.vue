@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
+import { VDropdownMeta } from '/@src/data/documentation/components-meta'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
@@ -63,14 +64,10 @@ useHead({
         <!--Dropdown-->
         <DropdownWithImagesDocumentation />
 
-        <!--Props-->
-        <DropdownPropsDocumentation />
-
-        <!--Slots-->
-        <DropdownSlotsDocumentation />
-
-        <!--Expose-->
-        <DropdownExposeDocumentation />
+        <DocumentationMeta
+          name="VDropdown"
+          :meta="VDropdownMeta"
+        />
 
         <!--Artificial Spacing-->
         <div class="demo-spacer" />

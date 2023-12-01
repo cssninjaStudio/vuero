@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
+import { VFlexMeta, VFlexItemMeta } from '/@src/data/documentation/components-meta'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
@@ -45,14 +46,15 @@ useHead({
         <!--VFlex-->
         <VFlexBaseDocumentation />
 
-        <!--VFlex Props -->
-        <VFlexPropsDocumentation />
-        <!--VFlexItem Props -->
-        <VFlexItemPropsDocumentation />
-        <!--VFlex Slots -->
-        <VFlexSlotsDocumentation />
-        <!--VFlexItem Slots -->
-        <VFlexItemSlotsDocumentation />
+        <DocumentationMeta
+          name="VFlex"
+          :meta="VFlexMeta"
+        />
+
+        <DocumentationMeta
+          name="VFlexItem"
+          :meta="VFlexItemMeta"
+        />
       </div>
       <div
         v-if="toc.length"

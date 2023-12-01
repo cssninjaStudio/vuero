@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
+import { VBlockMeta } from '/@src/data/documentation/components-meta'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
@@ -60,8 +61,10 @@ useHead({
         <!--VBlock center responsive-->
         <VBlockCenterResponsiveDocumentation />
 
-        <!--VBlock Props-->
-        <VBlockPropsDocumentation />
+        <DocumentationMeta
+          name="VBlock"
+          :meta="VBlockMeta"
+        />
       </div>
       <div
         v-if="toc.length"

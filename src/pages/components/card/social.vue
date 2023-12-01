@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useViewWrapper } from '/@src/stores/viewWrapper'
+import { VCardSocialMeta } from '/@src/data/documentation/components-meta'
 
 const viewWrapper = useViewWrapper()
 viewWrapper.setPageTitle('VCardSocial')
@@ -91,14 +92,10 @@ useHead({
       </div>
 
       <div class="column is-12 mt-5">
-        <!--Props-->
-        <VCardSocialPropsDocumentation />
-
-        <!--Slots-->
-        <VCardSocialSlotsDocumentation />
-
-        <!--Events-->
-        <VCardSocialEventsDocumentation />
+        <DocumentationMeta
+          name="VCardSocial"
+          :meta="VCardSocialMeta"
+        />
       </div>
     </div>
   </div>

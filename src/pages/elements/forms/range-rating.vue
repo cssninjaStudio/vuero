@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
+import { VRangeRatingMeta } from '/@src/data/documentation/components-meta'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
@@ -9,7 +10,7 @@ const viewWrapper = useViewWrapper()
 viewWrapper.setPageTitle('Rating')
 
 useHead({
-  title: 'Rating - Forms Elements - Vuero',
+  title: 'VRangeRating - Forms Elements - Vuero',
 })
 </script>
 
@@ -33,8 +34,8 @@ useHead({
           label: 'Forms',
         },
         {
-          label: 'Rating',
-          to: '/elements/forms/file',
+          label: 'VRangeRating',
+          to: '/elements/forms/range-rating',
         },
       ]"
     />
@@ -58,7 +59,10 @@ useHead({
 
         <RangeRatingCustomIconDocumentation />
 
-        <RangeRatingPropsDocumentation />
+        <DocumentationMeta
+          name="VRangeRating"
+          :meta="VRangeRatingMeta"
+        />
       </div>
       <div
         v-if="toc.length"

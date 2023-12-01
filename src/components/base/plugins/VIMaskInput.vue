@@ -1,5 +1,5 @@
 <script lang="ts">
-import type { InputMask, FactoryArg } from 'imask'
+import type { InputMask, FactoryArg, UpdateOpts } from 'imask'
 
 import IMask from 'imask'
 import { type PropType } from 'vue'
@@ -24,7 +24,7 @@ export default defineComponent({
       if (inputElement.value && props.options) {
         try {
           if (inputMask.value) {
-            inputMask.value.updateOptions(props.options)
+            inputMask.value.updateOptions(props.options as UpdateOpts<any>)
             inputMask.value.unmaskedValue = props.modelValue
 
             return

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
+import { VPlaceholderPageMeta } from '/@src/data/documentation/components-meta'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
@@ -72,9 +73,10 @@ useHead({
         </VPlaceholderPage>
 
         <div class="pt-6">
-          <VPlaceholderPagePropsDocumentation />
-
-          <VPlaceholderPageSlotsDocumentation />
+          <DocumentationMeta
+            name="VPlaceholderPage"
+            :meta="VPlaceholderPageMeta"
+          />
         </div>
       </div>
       <div

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
+import { VCardActionMeta } from '/@src/data/documentation/components-meta'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
@@ -151,10 +152,11 @@ useHead({
             </VCardAction>
           </div>
         </div>
-        <!--Props-->
-        <VCardActionPropsDocumentation />
-        <!--Slots-->
-        <VCardActionSlotsDocumentation />
+
+        <DocumentationMeta
+          name="VCardAction"
+          :meta="VCardActionMeta"
+        />
       </div>
       <div
         v-if="toc.length"

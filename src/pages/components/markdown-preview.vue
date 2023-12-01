@@ -2,6 +2,7 @@
 import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 import { demoMarkdown } from '/@src/data/documentation/markdown'
+import { VMarkdownPreviewMeta } from '/@src/data/documentation/components-meta'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
@@ -63,7 +64,10 @@ useHead({
           </div>
         </DocumentationDemoCard>
 
-        <VMarkdownPreviewPropsDocumentation />
+        <DocumentationMeta
+          name="VMarkdownPreview"
+          :meta="VMarkdownPreviewMeta"
+        />
       </div>
       <div
         v-if="toc.length"

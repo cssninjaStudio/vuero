@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
+import { VSwitchSegmentMeta } from '/@src/data/documentation/components-meta'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
@@ -51,11 +52,10 @@ useHead({
         <!--Label-->
         <SwitchSegmentLabelDocumentation />
 
-        <!--Props-->
-        <SwitchSegmentPropsDocumentation />
-
-        <!--Events-->
-        <SwitchSegmentEventsDocumentation />
+        <DocumentationMeta
+          name="VSwitchSegment"
+          :meta="VSwitchSegmentMeta"
+        />
       </div>
       <div
         v-if="toc.length"

@@ -1,6 +1,11 @@
 <script lang="ts">
+import type { SlotsType } from 'vue'
+
 export default defineComponent({
   name: 'ClientOnly',
+  slots: Object as SlotsType<{
+    default: void
+  }>,
   setup(_, { slots }) {
     const show = ref(false)
     onMounted(() => {

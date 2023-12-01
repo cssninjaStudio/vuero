@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
+import { VProgressMeta } from '/@src/data/documentation/components-meta'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
@@ -51,8 +52,10 @@ useHead({
         <!--VProgress undeterminate-->
         <VProgressUndeterminateDocumentation />
 
-        <!--Props-->
-        <VProgressPropsDocumentation />
+        <DocumentationMeta
+          name="VProgress"
+          :meta="VProgressMeta"
+        />
       </div>
       <div
         v-if="toc.length"

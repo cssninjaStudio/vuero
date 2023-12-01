@@ -9,32 +9,63 @@ the `is-rounded` class to the image element.
 
 ```vue
 <template>
-  <VDropdown title="Dropdown with image" spaced>
+  <VDropdown
+    title="Dropdown with image"
+    spaced
+  >
     <template #content>
-      <a href="#" class="dropdown-item is-media">
-        <img class="item-img" src="/images/avatars/svg/vuero-1.svg" alt="" />
+      <a
+        href="#"
+        class="dropdown-item is-media"
+      >
+        <img
+          class="item-img"
+          src="/images/avatars/svg/vuero-1.svg"
+          alt=""
+        >
         <div class="meta">
           <span>Erik K.</span>
           <span>New York, NY</span>
         </div>
       </a>
-      <a href="#" class="dropdown-item is-media is-active">
-        <img class="item-img" src="/demo/avatars/7.jpg" alt="" />
+      <a
+        href="#"
+        class="dropdown-item is-media is-active"
+      >
+        <img
+          class="item-img"
+          src="/demo/avatars/7.jpg"
+          alt=""
+        >
         <div class="meta">
           <span>Alice C.</span>
           <span>San Diego, CA</span>
         </div>
       </a>
-      <a href="#" class="dropdown-item is-media">
-        <img class="item-img" src="/demo/avatars/25.jpg" alt="" />
+      <a
+        href="#"
+        class="dropdown-item is-media"
+      >
+        <img
+          class="item-img"
+          src="/demo/avatars/25.jpg"
+          alt=""
+        >
         <div class="meta">
           <span>Melany W.</span>
           <span>San Jose, CA</span>
         </div>
       </a>
-      <hr class="dropdown-divider" />
-      <a href="#" class="dropdown-item is-media">
-        <img class="item-img" src="/demo/avatars/9.jpg" alt="" />
+      <hr class="dropdown-divider">
+      <a
+        href="#"
+        class="dropdown-item is-media"
+      >
+        <img
+          class="item-img"
+          src="/demo/avatars/9.jpg"
+          alt=""
+        >
         <div class="meta">
           <span>Anna B</span>
           <span>San Francisco, CA</span>
@@ -49,8 +80,8 @@ the `is-rounded` class to the image element.
 
 <!--example-->
 
-<div class="field is-grouped">
-  <div class="control">
+<VField horizontal style="gap: 0.5rem;">
+  <VControl>
     <VDropdown title="Dropdown with image" spaced>
       <template #content>
         <a href="#" class="dropdown-item is-media">
@@ -100,9 +131,9 @@ the `is-rounded` class to the image element.
         </a>
       </template>
     </VDropdown>
-  </div>
+  </VControl>
 
-  <div class="control">
+  <VControl>
     <VDropdown title="Dropdown with rounded image" spaced>
       <template #content>
         <a href="#" class="dropdown-item is-media">
@@ -152,7 +183,7 @@ the `is-rounded` class to the image element.
         </a>
       </template>
     </VDropdown>
-  </div>
-</div>
+  </VControl>
+</VField>
 
 <!--/example-->

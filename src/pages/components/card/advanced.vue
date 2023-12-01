@@ -2,6 +2,7 @@
 import type { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 import * as userStacks from '/@src/data/users/userStacks'
+import { VCardAdvancedMeta } from '/@src/data/documentation/components-meta'
 
 const userStack2 = userStacks.userStack2 as VAvatarProps[]
 const viewWrapper = useViewWrapper()
@@ -186,8 +187,10 @@ useHead({
       </div>
 
       <div class="column is-12 mt-5">
-        <VCardAdvancedPropsDocumentation />
-        <VCardAdvancedSlotsDocumentation />
+        <DocumentationMeta
+          name="VCardAdvanced"
+          :meta="VCardAdvancedMeta"
+        />
       </div>
     </div>
   </div>

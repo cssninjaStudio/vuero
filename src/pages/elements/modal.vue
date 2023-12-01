@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
+import { VModalMeta } from '/@src/data/documentation/components-meta'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
@@ -183,14 +184,10 @@ useHead({
             </VButton>
           </div>
 
-          <!--Props-->
-          <VModalPropsDocumentation />
-
-          <!--Slots-->
-          <VModalSlotsDocumentation />
-
-          <!--Events-->
-          <VModalEventsDocumentation />
+          <DocumentationMeta
+            name="VModal"
+            :meta="VModalMeta"
+          />
         </div>
         <div
           v-if="toc.length"

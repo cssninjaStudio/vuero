@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
+import { VCheckboxMeta } from '/@src/data/documentation/components-meta'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
@@ -54,11 +55,10 @@ useHead({
 
         <CheckboxSolidCircleDocumentation />
 
-        <!--Props-->
-        <CheckboxPropsDocumentation />
-
-        <!--Events-->
-        <CheckboxEventsDocumentation />
+        <DocumentationMeta
+          name="VCheckbox"
+          :meta="VCheckboxMeta"
+        />
       </div>
       <div
         v-if="toc.length"

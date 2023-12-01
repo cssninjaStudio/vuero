@@ -8,14 +8,32 @@ Use the `modern` prop on the component.
 
 ```vue
 <template>
-  <VDropdown title="Modern dropdown" modern>
+  <VDropdown
+    title="Modern dropdown"
+    modern
+  >
     <template #content>
-      <a href="#" class="dropdown-item"> Dropdown item </a>
-      <a href="#" class="dropdown-item"> Other dropdown item </a>
-      <a href="#" class="dropdown-item is-active"> Active dropdown item </a>
-      <a href="#" class="dropdown-item"> Other dropdown item </a>
-      <hr class="dropdown-divider" />
-      <a href="#" class="dropdown-item"> With a divider </a>
+      <a
+        href="#"
+        class="dropdown-item"
+      > Dropdown item </a>
+      <a
+        href="#"
+        class="dropdown-item"
+      > Other dropdown item </a>
+      <a
+        href="#"
+        class="dropdown-item is-active"
+      > Active dropdown item </a>
+      <a
+        href="#"
+        class="dropdown-item"
+      > Other dropdown item </a>
+      <hr class="dropdown-divider">
+      <a
+        href="#"
+        class="dropdown-item"
+      > With a divider </a>
     </template>
   </VDropdown>
 </template>
@@ -25,8 +43,8 @@ Use the `modern` prop on the component.
 
 <!--example-->
 
-<div class="field is-grouped">
-  <div class="control">
+<VField horizontal style="gap: 0.5rem;">
+  <VControl>
     <VDropdown title="Modern rounded" class="is-rounded" rounded modern>
       <template #content>
         <a href="#" class="dropdown-item"> Dropdown item </a>
@@ -37,9 +55,9 @@ Use the `modern` prop on the component.
         <a href="#" class="dropdown-item"> With a divider </a>
       </template>
     </VDropdown>
-  </div>
+  </VControl>
 
-  <div class="control">
+  <VControl>
     <VDropdown title="Modern dropdown" modern up right>
       <template #content>
         <a href="#" class="dropdown-item"> Dropdown item </a>
@@ -50,7 +68,7 @@ Use the `modern` prop on the component.
         <a href="#" class="dropdown-item"> With a divider </a>
       </template>
     </VDropdown>
-  </div>
-</div>
+  </VControl>
+</VField>
 
 <!--/example-->

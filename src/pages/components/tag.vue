@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
+import { VTagMeta, VTagsMeta } from '/@src/data/documentation/components-meta'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
@@ -63,11 +64,14 @@ useHead({
         <!--VTag list-->
         <VTagListDocumentation />
 
-        <!--Props-->
-        <VTagPropsDocumentation />
-
-        <!--Props-->
-        <VTagsPropsDocumentation />
+        <DocumentationMeta
+          name="VTag"
+          :meta="VTagMeta"
+        />
+        <DocumentationMeta
+          name="VTags"
+          :meta="VTagsMeta"
+        />
       </div>
       <div
         v-if="toc.length"

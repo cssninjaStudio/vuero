@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
+import { VTabsMeta } from '/@src/data/documentation/components-meta'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
@@ -75,11 +76,10 @@ useHead({
         <!--Squared Slider Tabs 3x-->
         <TabsSliderTsquareDocumentation />
 
-        <!--Props-->
-        <TabsPropsDocumentation />
-
-        <!--Slots-->
-        <TabsSlotsDocumentation />
+        <DocumentationMeta
+          name="VTabs"
+          :meta="VTabsMeta"
+        />
       </div>
       <div
         v-if="toc.length"

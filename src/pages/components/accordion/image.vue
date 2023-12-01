@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useViewWrapper } from '/@src/stores/viewWrapper'
+import { VAccordionImageMeta } from '/@src/data/documentation/components-meta'
 
 const data = [
   {
@@ -77,14 +78,10 @@ useHead({
         <VAccordionImage :items="data" />
       </div>
       <div class="column is-12">
-        <!--Props-->
-        <AccordionImagePropsDocumentation />
-
-        <!--Slots-->
-        <AccordionImageSlotsDocumentation />
-
-        <!--Events-->
-        <AccordionImageEventsDocumentation />
+        <DocumentationMeta
+          name="VAccordionImage"
+          :meta="VAccordionImageMeta"
+        />
       </div>
     </div>
   </div>

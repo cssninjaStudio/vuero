@@ -15,7 +15,6 @@ export default defineComponent({
     watchEffect(() => {
       if (element.value) {
         new Vivus(element.value, props.options, (vivus: any) => {
-          console.log(vivus)
           emit('ready', vivus)
         })
       }

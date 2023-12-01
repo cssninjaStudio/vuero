@@ -15,19 +15,34 @@ Please refer to the markup for more details about usage.
       <VSwitchSegment />
     </VControl>
     <VControl subcontrol>
-      <VSwitchSegment color="primary" checked />
+      <VSwitchSegment
+        color="primary"
+        :model-value="true"
+      />
     </VControl>
     <VControl subcontrol>
-      <VSwitchSegment color="success" checked />
+      <VSwitchSegment
+        color="success"
+        :model-value="true"
+      />
     </VControl>
     <VControl subcontrol>
-      <VSwitchSegment color="info" checked />
+      <VSwitchSegment
+        color="info"
+        :model-value="true"
+      />
     </VControl>
     <VControl subcontrol>
-      <VSwitchSegment color="warning" checked />
+      <VSwitchSegment
+        color="warning"
+        :model-value="true"
+      />
     </VControl>
     <VControl subcontrol>
-      <VSwitchSegment color="danger" checked />
+      <VSwitchSegment
+        color="danger"
+        :model-value="true"
+      />
     </VControl>
   </VField>
 </template>
@@ -42,19 +57,19 @@ Please refer to the markup for more details about usage.
     <VSwitchSegment />
   </VControl>
   <VControl subcontrol>
-    <VSwitchSegment color="primary" checked />
+    <VSwitchSegment color="primary" :model-value="true" />
   </VControl>
   <VControl subcontrol>
-    <VSwitchSegment color="success" checked />
+    <VSwitchSegment color="success" :model-value="true" />
   </VControl>
   <VControl subcontrol>
-    <VSwitchSegment color="info" checked />
+    <VSwitchSegment color="info" :model-value="true" />
   </VControl>
   <VControl subcontrol>
-    <VSwitchSegment color="warning" checked />
+    <VSwitchSegment color="warning" :model-value="true" />
   </VControl>
   <VControl subcontrol>
-    <VSwitchSegment color="danger" checked />
+    <VSwitchSegment color="danger" :model-value="true" />
   </VControl>
 </VField>
 

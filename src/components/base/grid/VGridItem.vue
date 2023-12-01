@@ -37,6 +37,7 @@ const props = withDefaults(defineProps<VGridItemProps>(), {
   grid-row-end: v-bind('props.gridRowEnd');
   justify-self: v-bind('props.justifySelf');
   align-self: v-bind('props.alignSelf');
+  /* stylelint-disable-next-line declaration-block-no-shorthand-property-overrides */
   place-self: v-bind('props.placeSelf');
 }
 </style>

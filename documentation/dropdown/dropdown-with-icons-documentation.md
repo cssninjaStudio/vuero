@@ -7,39 +7,54 @@ Use the `spaced` prop with the provided markup in the code example.
 
 ```vue
 <template>
-  <VDropdown title="Dropdown with icon" spaced>
+  <VDropdown
+    title="Dropdown with icon"
+    spaced
+  >
     <template #content>
-      <a href="#" class="dropdown-item is-media">
+      <a
+        href="#"
+        class="dropdown-item is-media"
+      >
         <div class="icon">
-          <i class="lnil lnil-coins"></i>
+          <i class="lnil lnil-coins" />
         </div>
         <div class="meta">
           <span>Invest</span>
           <span>Buy more stocks</span>
         </div>
       </a>
-      <a href="#" class="dropdown-item is-media is-active">
+      <a
+        href="#"
+        class="dropdown-item is-media is-active"
+      >
         <div class="icon">
-          <i class="lnil lnil-dollar-up"></i>
+          <i class="lnil lnil-dollar-up" />
         </div>
         <div class="meta">
           <span>Compare</span>
           <span>Compare with others</span>
         </div>
       </a>
-      <a href="#" class="dropdown-item is-media">
+      <a
+        href="#"
+        class="dropdown-item is-media"
+      >
         <div class="icon">
-          <i class="lnil lnil-bank"></i>
+          <i class="lnil lnil-bank" />
         </div>
         <div class="meta">
           <span>Trade</span>
           <span>View opportunities</span>
         </div>
       </a>
-      <hr class="dropdown-divider" />
-      <a href="#" class="dropdown-item is-media">
+      <hr class="dropdown-divider">
+      <a
+        href="#"
+        class="dropdown-item is-media"
+      >
         <div class="icon">
-          <i class="lnil lnil-wallet-alt-1"></i>
+          <i class="lnil lnil-wallet-alt-1" />
         </div>
         <div class="meta">
           <span>Wallet</span>
@@ -55,8 +70,8 @@ Use the `spaced` prop with the provided markup in the code example.
 
 <!--example-->
 
-<div class="field is-grouped">
-  <div class="control">
+<VField horizontal style="gap: 0.5rem;">
+  <VControl>
     <VDropdown title="Dropdown with icon" spaced>
       <template #content>
         <a href="#" class="dropdown-item is-media">
@@ -98,9 +113,9 @@ Use the `spaced` prop with the provided markup in the code example.
         </a>
       </template>
     </VDropdown>
-  </div>
+  </VControl>
 
-  <div class="control">
+  <VControl>
     <VDropdown title="With unicons" spaced>
       <template #content>
         <a href="#" class="dropdown-item is-media">
@@ -142,7 +157,7 @@ Use the `spaced` prop with the provided markup in the code example.
         </a>
       </template>
     </VDropdown>
-  </div>
-</div>
+  </VControl>
+</VField>
 
 <!--/example-->

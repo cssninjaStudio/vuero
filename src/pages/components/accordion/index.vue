@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useSidebar } from '/@src/stores/sidebar'
+import { VAccordionMeta } from '/@src/data/documentation/components-meta'
 
 const sidebar = useSidebar()
 
@@ -8,7 +9,7 @@ onMounted(() => {
 })
 
 useHead({
-  title: 'V-Accordion - Components - Vuero',
+  title: 'VAccordion - Components - Vuero',
 })
 </script>
 
@@ -116,11 +117,10 @@ useHead({
         </div>
 
         <div class="column is-12 mt-5">
-          <!--Props-->
-          <AccordionPropsDocumentation />
-
-          <!--Slots-->
-          <AccordionSlotsDocumentation />
+          <DocumentationMeta
+            name="VAccordion"
+            :meta="VAccordionMeta"
+          />
         </div>
       </div>
     </div>

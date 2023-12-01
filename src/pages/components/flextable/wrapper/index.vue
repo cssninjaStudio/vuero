@@ -6,6 +6,7 @@ import type {
 import { users } from '/@src/data/layouts/card-grid-v1'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
+import { VFlexTableWrapperMeta } from '/@src/data/documentation/components-meta'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
@@ -192,22 +193,18 @@ const columns = {
             <VFlexPagination
               v-model:current-page="wrapperState.page"
               class="mt-6"
-              :item-per-page="wrapperState.limit"
-              :total-items="wrapperState.total"
+              :item-per-page="wrapperState.limit ?? 0"
+              :total-items="wrapperState.total ?? 0"
               :max-links-displayed="5"
               no-router
             />
           </template>
         </VFlexTableWrapper>
 
-        <!--Flex Table Wrapper props documentation-->
-        <VFlexTableWrapperPropsDocumentation class="mt-6" />
-
-        <!--Flex Table Wrapper emits documentation-->
-        <VFlexTableWrapperEventsDocumentation class="mt-6" />
-
-        <!--Flex Table Wrapper slots documentation-->
-        <VFlexTableWrapperSlotsDocumentation class="mt-6" />
+        <DocumentationMeta
+          name="VFlexTableWrapper"
+          :meta="VFlexTableWrapperMeta"
+        />
       </div>
       <div
         v-if="toc.length"

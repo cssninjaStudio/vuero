@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
+import { VSelectMeta } from '/@src/data/documentation/components-meta'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
@@ -65,6 +66,11 @@ useHead({
 
         <!--Multiple-->
         <SelectMultipleDocumentation />
+
+        <DocumentationMeta
+          name="VSelect"
+          :meta="VSelectMeta"
+        />
       </div>
       <div
         v-if="toc.length"

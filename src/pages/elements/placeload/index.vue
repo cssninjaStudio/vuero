@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
+import { VPlaceloadMeta } from '/@src/data/documentation/components-meta'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
@@ -49,7 +50,10 @@ useHead({
 
         <PlaceloadSizeDocumentation />
 
-        <PlaceloadPropsDocumentation />
+        <DocumentationMeta
+          name="VPlaceload"
+          :meta="VPlaceloadMeta"
+        />
       </div>
       <div
         v-if="toc.length"

@@ -212,6 +212,7 @@
     "vite-plugin-purge-icons": "0.10.0",
     "vite-plugin-pwa": "0.17.2",
     "vite-plugin-radar": "0.9.2",
+    "vue-component-meta": "^1.8.24",
     "vue-tsc": "1.8.24",
     "yorkie": "2.0.0"
   },

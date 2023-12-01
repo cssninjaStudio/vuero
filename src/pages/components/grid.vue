@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
+import { VGridMeta, VGridItemMeta } from '/@src/data/documentation/components-meta'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
@@ -45,14 +46,15 @@ useHead({
         <!--VGrid-->
         <VGridBaseDocumentation />
 
-        <!--VGrid Props -->
-        <VGridPropsDocumentation />
-        <!--VGridItem Props -->
-        <VGridItemPropsDocumentation />
-        <!--VGrid Slots -->
-        <VGridSlotsDocumentation />
-        <!--VGridItem Slots -->
-        <VGridItemSlotsDocumentation />
+        <DocumentationMeta
+          name="VGrid"
+          :meta="VGridMeta"
+        />
+
+        <DocumentationMeta
+          name="VGridItem"
+          :meta="VGridItemMeta"
+        />
       </div>
       <div
         v-if="toc.length"

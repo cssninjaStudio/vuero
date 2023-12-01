@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
+import { VIconWrapMeta } from '/@src/data/documentation/components-meta'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
@@ -50,8 +51,10 @@ useHead({
         <IconWrapDarkDocumentation />
         <IconWrapTooltipsDocumentation />
 
-        <!--Props-->
-        <IconWrapPropsDocumentation />
+        <DocumentationMeta
+          name="VIconWrap"
+          :meta="VIconWrapMeta"
+        />
       </div>
       <div
         v-if="toc.length"

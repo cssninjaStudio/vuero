@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
+import { VBreadcrumbMeta } from '/@src/data/documentation/components-meta'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
@@ -57,11 +58,10 @@ useHead({
         <!--Succeeds Separator-->
         <BreadcrumbSucceedsDocumentation />
 
-        <!--Props-->
-        <BreadcrumbPropsDocumentation />
-
-        <!--Slots-->
-        <BreadcrumbSlotsDocumentation />
+        <DocumentationMeta
+          name="VBreadcrumb"
+          :meta="VBreadcrumbMeta"
+        />
       </div>
       <div
         v-if="toc.length"

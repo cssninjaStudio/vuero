@@ -73,6 +73,7 @@ const display = computed(() => (props.inline ? 'inline-grid' : 'grid'))
   align-items: v-bind('props.alignItems');
   justify-content: v-bind('props.justifyContent');
   align-content: v-bind('props.alignContent');
+  /* stylelint-disable-next-line declaration-block-no-shorthand-property-overrides */
   place-content: v-bind('props.placeContent');
   grid-auto-columns: v-bind('props.gridAutoColumns');
   grid-auto-rows: v-bind('props.gridAutoRows');

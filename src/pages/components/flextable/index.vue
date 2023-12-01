@@ -2,6 +2,7 @@
 import { flexRowsBasic, flexRowsContacts } from '/@src/data/documentation/table'
 import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
+import { VFlexTableMeta } from '/@src/data/documentation/components-meta'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
@@ -152,11 +153,10 @@ useHead({
           />
         </div>
 
-        <VFlexTablePropsDocumentation class="mt-6" />
-
-        <VFlexTableEventsDocumentation class="mt-6" />
-
-        <VFlexTableSlotsDocumentation class="mt-6" />
+        <DocumentationMeta
+          name="VFlexTable"
+          :meta="VFlexTableMeta"
+        />
       </div>
       <div
         v-if="toc.length"

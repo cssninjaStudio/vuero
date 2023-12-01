@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
+import { VButtonMeta, VButtonsMeta } from '/@src/data/documentation/components-meta'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
@@ -81,14 +82,15 @@ useHead({
         <!--VButton Addons-->
         <VButtonAddonsDocumentation />
 
-        <!--Props-->
-        <VButtonPropsDocumentation />
+        <DocumentationMeta
+          name="VButton"
+          :meta="VButtonMeta"
+        />
 
-        <!--Slots-->
-        <VButtonSlotsDocumentation />
-
-        <!--Buttons Props-->
-        <VButtonsPropsDocumentation />
+        <DocumentationMeta
+          name="VButtons"
+          :meta="VButtonsMeta"
+        />
       </div>
       <div
         v-if="toc.length"

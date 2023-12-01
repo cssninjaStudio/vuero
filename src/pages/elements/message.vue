@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
+import { VMessageMeta } from '/@src/data/documentation/components-meta'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
@@ -48,14 +49,10 @@ useHead({
         <!--Message Colors-->
         <VMessageColorsDocumentation />
 
-        <!--Props-->
-        <VMessagePropsDocumentation />
-
-        <!--Slots-->
-        <VMessageSlotsDocumentation />
-
-        <!--Events-->
-        <VMessageEventsDocumentation />
+        <DocumentationMeta
+          name="VMessage"
+          :meta="VMessageMeta"
+        />
       </div>
       <div
         v-if="toc.length"

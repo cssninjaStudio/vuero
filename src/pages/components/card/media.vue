@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useViewWrapper } from '/@src/stores/viewWrapper'
+import { VCardMediaMeta } from '/@src/data/documentation/components-meta'
 
 const viewWrapper = useViewWrapper()
 viewWrapper.setPageTitle('VCardMedia')
@@ -105,11 +106,10 @@ useHead({
       </div>
 
       <div class="column is-12 mt-5">
-        <!--Props-->
-        <VCardMediaPropsDocumentation />
-
-        <!--Slots-->
-        <VCardMediaSlotsDocumentation />
+        <DocumentationMeta
+          name="VCardMedia"
+          :meta="VCardMediaMeta"
+        />
       </div>
     </div>
   </div>

@@ -1,5 +1,5 @@
 <script lang="ts">
-import { type PropType, Transition, Fragment } from 'vue'
+import { type PropType, type SlotsType, Transition, Fragment } from 'vue'
 
 export default defineComponent({
   props: {
@@ -12,6 +12,10 @@ export default defineComponent({
       default: undefined,
     },
   },
+  slots: Object as SlotsType<{
+    header: void
+    default: void
+  }>,
   emits: ['update:open'],
   setup(props, { slots, emit }) {
     const route = useRoute()

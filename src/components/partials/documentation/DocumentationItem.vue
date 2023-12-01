@@ -166,20 +166,20 @@ const githubIssueUrl = computed(() => {
   :deep(.shiki) {
     border-radius: var(--radius-large);
 
-    code {
-      counter-reset: step;
-      counter-increment: step 0;
-    }
+    // code {
+    //   counter-reset: step;
+    //   counter-increment: step 0;
+    // }
 
-    code .line::before {
-      content: counter(step);
-      counter-increment: step;
-      width: 1rem;
-      margin-inline-end: 1.5rem;
-      display: inline-block;
-      text-align: inset-inline-end;
-      color: #898d98;
-    }
+    // code .line::before {
+    //   content: counter(step);
+    //   counter-increment: step;
+    //   width: 1rem;
+    //   margin-inline-end: 1.5rem;
+    //   display: inline-block;
+    //   text-align: inset-inline-end;
+    //   color: #898d98;
+    // }
   }
 
   .demo-state {
