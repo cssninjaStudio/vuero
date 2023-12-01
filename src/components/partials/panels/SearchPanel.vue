@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { VAvatarProps, VAvatarColor } from '/@src/components/base/avatar/VAvatar.vue'
+import type { VAvatarProps, VAvatarColor } from '/@src/components/base/VAvatar.vue'
 import { usePanels } from '/@src/stores/panels'
 import { popovers } from '/@src/data/users/userPopovers'
 import { type UserPopover } from '/@src/models/users'

@@ -4,7 +4,7 @@ import type { SlotsType, PropType } from 'vue'
 import { RouterLink } from 'vue-router/auto'
 import { CssUnitRe } from '/@src/utils/regex'
 
-import VPlaceload from '../loader/VPlaceload.vue'
+import VPlaceload from '/@src/components/base/VPlaceload.vue'
 
 export type VButtonSize = 'medium' | 'big' | 'huge'
 export type VButtonColor =

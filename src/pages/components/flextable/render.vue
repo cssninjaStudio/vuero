@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { flexRowsAdvanced } from '/@src/data/documentation/table'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
-import VTag from '/@src/components/base/tags/VTag.vue'
+import VTag from '/@src/components/base/VTag.vue'
 import FlexTableDropdown from '/@src/components/partials/dropdowns/FlexTableDropdown.vue'
-import VFlexTableSortColumn from '/@src/components/base/table/VFlexTableSortColumn.vue'
-import VAvatarStack from '/@src/components/base/avatar/VAvatarStack.vue'
+import VFlexTableSortColumn from '/@src/components/base/VFlexTableSortColumn.vue'
+import VAvatarStack from '/@src/components/base/VAvatarStack.vue'
 
 const viewWrapper = useViewWrapper()
 viewWrapper.setPageTitle('Render functions (advanced)')

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useFetch } from '/@src/composable/useFetch'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
-import type { VFlexTableWrapperDataResolver } from '/@src/components/base/table/VFlexTableWrapper.vue'
+import type { VFlexTableWrapperDataResolver } from '/@src/components/base/VFlexTableWrapper.vue'
 import sleep from '/@src/utils/sleep'
 
 const isMobileScreen = useMediaQuery('(max-width: 767px)')

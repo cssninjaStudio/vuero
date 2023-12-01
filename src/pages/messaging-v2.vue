@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { usePanels } from '/@src/stores/panels'
 
-import type { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
+import type { VAvatarProps } from '/@src/components/base/VAvatar.vue'
 import { useDropdown } from '/@src/composable/useDropdown'
 import { onceImageErrored } from '/@src/utils/via-placeholder'
 

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { userList } from '/@src/data/layouts/datatable-v1'
 
-import type { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
+import type { VAvatarProps } from '/@src/components/base/VAvatar.vue'
 
 export interface UserData extends VAvatarProps {
   id: number

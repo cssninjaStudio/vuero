@@ -3,7 +3,7 @@ import type { BuiltinLanguage, BuiltinTheme } from 'shikiji'
 import { h, type PropType } from 'vue'
 import VPlaceload, {
   type VPlaceloadProps,
-} from '/@src/components/base/loader/VPlaceload.vue'
+} from '/@src/components/base/VPlaceload.vue'
 
 async function loadModules() {
   const [

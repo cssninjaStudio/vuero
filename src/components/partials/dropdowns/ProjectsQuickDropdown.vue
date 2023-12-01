@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { VAvatarColor } from '/@src/components/base/avatar/VAvatar.vue'
+import type { VAvatarColor } from '/@src/components/base/VAvatar.vue'
 
 const projects: {
   initials: string

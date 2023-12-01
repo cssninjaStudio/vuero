@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
+import type { VAvatarProps } from '/@src/components/base/VAvatar.vue'
 import * as gridData from '/@src/data/layouts/user-grid-v2'
 
 export interface UserData extends VAvatarProps {

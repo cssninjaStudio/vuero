@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { VTagColor } from '/@src/components/base/tags/VTag.vue'
-import type { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
+import type { VTagColor } from '/@src/components/base/VTag.vue'
+import type { VAvatarProps } from '/@src/components/base/VAvatar.vue'
 import * as listData from '/@src/data/layouts/view-list-v1'
 
 export interface UserData extends VAvatarProps {

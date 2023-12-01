@@ -1,4 +1,4 @@
-import type { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
+import type { VAvatarProps } from '/@src/components/base/VAvatar.vue'
 export interface KanbanTask {
   id: string
   title: string

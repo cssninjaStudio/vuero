@@ -1,5 +1,5 @@
 <script setup lang="ts" generic="T extends ModelItem">
-import type { VAnimatedCheckboxColor } from '/@src/components/base/form/VAnimatedCheckbox.vue'
+import type { VAnimatedCheckboxColor } from '/@src/components/base/VAnimatedCheckbox.vue'
 
 export interface ModelItem {
   id: string | number

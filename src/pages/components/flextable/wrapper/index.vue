@@ -2,7 +2,7 @@
 import type {
   VFlexTableWrapperSortFunction,
   VFlexTableWrapperFilterFunction,
-} from '/@src/components/base/table/VFlexTableWrapper.vue'
+} from '/@src/components/base/VFlexTableWrapper.vue'
 import { users } from '/@src/data/layouts/card-grid-v1'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 import { useMarkdownToc } from '/@src/composable/useMarkdownToc'

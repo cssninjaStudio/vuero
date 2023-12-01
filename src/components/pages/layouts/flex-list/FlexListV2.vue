@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
+import type { VAvatarProps } from '/@src/components/base/VAvatar.vue'
 import * as listData from '/@src/data/layouts/flex-list-v2'
 
 export interface ProjectData {

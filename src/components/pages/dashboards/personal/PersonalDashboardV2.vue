@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import ApexChart from 'vue3-apexcharts'
 
-import type { VAvatarProps } from '/@src/components/base/avatar/VAvatar.vue'
+import type { VAvatarProps } from '/@src/components/base/VAvatar.vue'
 import { useTaskCompletionChart } from '/@src/data/dashboards/personal-v2/taskCompletionChart'
 import { useTeamEfficiencyChart } from '/@src/data/dashboards/personal-v2/teamEfficiencyChart'
 import { popovers } from '/@src/data/users/userPopovers'

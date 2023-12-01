@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import VTag from '/@src/components/base/tags/VTag.vue'
+import VTag from '/@src/components/base/VTag.vue'
 import FlexTableDropdown from '/@src/components/partials/dropdowns/FlexTableDropdown.vue'
-import VAvatarStack from '/@src/components/base/avatar/VAvatarStack.vue'
+import VAvatarStack from '/@src/components/base/VAvatarStack.vue'
 import { flexRowsAdvanced } from '/@src/data/documentation/table'
 import { onceImageErrored } from '/@src/utils/via-placeholder'
 import { RouterLink } from 'vue-router/auto'
