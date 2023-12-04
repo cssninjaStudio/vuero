@@ -75,7 +75,7 @@ type FormInput = z.infer<typeof zodSchema>
 const validationSchema = toTypedSchema(zodSchema)
 
 // Set initial values for the form
-const initialValues = computed<FormInput>(() => ({
+const initialValues = {
   email: '',
   password: '',
   rating: 1,
@@ -89,7 +89,7 @@ const initialValues = computed<FormInput>(() => ({
   },
   agreeTerms: false,
   emailOptin: false,
-}))
+} satisfies FormInput
 
 // here we create a vee-validate form context that
 // will be used in all vuero form components
