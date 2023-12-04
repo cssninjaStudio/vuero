@@ -1,4 +1,4 @@
-import type { InputMask } from 'imask'
+import type { InputMask, MaskedDateOptions } from 'imask'
 import { MaskedRange } from 'imask'
 import { ref } from 'vue'
 
@@ -24,12 +24,14 @@ export function useCreditcardMask() {
     min: new Date(2021, 0, 1),
     max: new Date(2099, 0, 1),
     blocks: {
+      // @ts-expect-error - custom pattern
       YY: {
         mask: MaskedRange,
         from: 21,
         to: 99,
         maxLength: 2,
       },
+      // @ts-expect-error - custom pattern
       MM: {
         mask: MaskedRange,
         from: 1,
@@ -38,21 +40,25 @@ export function useCreditcardMask() {
       },
     },
     // define date -> value convertion
-    format: (date: Date) => {
+    format: (date) => {
+      if (!date) {
+        return ''
+      }
+
       const month = date.getMonth() + 1
       const year = date.getFullYear()
 
       return [month < 10 ? `0${month}` : month, year.toString().substr(2, 2)].join('/')
     },
     // define value -> date convertion
-    parse: (value: string) => {
+    parse: (value) => {
       const monthYear = value.split('/')
       if (monthYear.length === 2) {
         return new Date(parseInt(monthYear[1]) + 2000, parseInt(monthYear[0]) - 1, 1)
       }
       return new Date()
     },
-  }
+  } satisfies MaskedDateOptions
 
   const creditcardMaskCVC = {
     mask: '000',

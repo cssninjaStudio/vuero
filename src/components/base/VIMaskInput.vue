@@ -1,75 +1,76 @@
-<script lang="ts">
+<script lang="ts" setup generic="Opts extends FactoryArg">
 import type { InputMask, FactoryArg, UpdateOpts } from 'imask'
 
 import IMask from 'imask'
-import { type PropType } from 'vue'
 
-export default defineComponent({
-  props: {
-    modelValue: {
-      type: String,
-      required: true,
-    },
-    options: {
-      type: Object as PropType<FactoryArg>,
-      required: true,
-    },
-  },
-  emits: ['update:modelValue', 'complete', 'accept'],
-  setup(props, { emit, expose }) {
-    const inputElement = ref<HTMLElement>()
-    const inputMask = shallowRef<InputMask<any>>()
+const props = defineProps<{
+  modelValue: string
+  options: Opts
+}>()
 
-    watch([inputElement, () => props.options, () => props.modelValue], () => {
-      if (inputElement.value && props.options) {
-        try {
-          if (inputMask.value) {
-            inputMask.value.updateOptions(props.options as UpdateOpts<any>)
-            inputMask.value.unmaskedValue = props.modelValue
+const emit = defineEmits<{
+  'update:modelValue': [value: string]
+  'accept': [value: InputMask<Opts>, event?: InputEvent]
+  'complete': [value: InputMask<Opts>, event?: InputEvent]
+}>()
 
-            return
-          }
+const inputElement = ref<HTMLElement>()
+const inputMask = shallowRef<InputMask<Opts>>()
 
-          inputMask.value = IMask(inputElement.value, props.options ?? {})
-
-          if (props.modelValue) {
-            inputMask.value.unmaskedValue = props.modelValue
-            inputMask.value.updateValue()
-            emit('accept', inputMask.value, undefined)
-          }
-
-          inputMask.value.on('accept', (inputEvent) => {
-            if (!inputMask.value) return
-            emit('update:modelValue', inputMask.value?.value || '')
-            emit('accept', inputMask.value, inputEvent)
-          })
-
-          inputMask.value.on('complete', (inputEvent) => {
-            if (!inputMask.value) return
-            emit('complete', inputMask.value, inputEvent)
-          })
-        }
-        catch (error) {
-          console.error(
-            'VIMaskInput: bad imask options, see https://imask.js.org/ for available parameters',
-          )
-          console.error(error)
-        }
-      }
-    })
-
-    onUnmounted(() => {
+watch([inputElement, () => props.options, () => props.modelValue], () => {
+  if (inputElement.value && props.options) {
+    try {
       if (inputMask.value) {
-        inputMask.value.destroy()
-        inputMask.value = undefined
+        inputMask.value.updateOptions(props.options as UpdateOpts<Opts>)
+        inputMask.value.unmaskedValue = props.modelValue
+
+        return
       }
-    })
 
-    expose({
-      inputMask,
-    })
+      inputMask.value = IMask(inputElement.value, props.options ?? {})
 
-    return () => h('input', { ref: inputElement, type: 'text', value: props.modelValue })
-  },
+      if (props.modelValue) {
+        inputMask.value.unmaskedValue = props.modelValue
+        inputMask.value.updateValue()
+        emit('accept', inputMask.value, undefined)
+      }
+
+      inputMask.value.on('accept', (inputEvent) => {
+        if (!inputMask.value) return
+        emit('update:modelValue', inputMask.value?.value || '')
+        emit('accept', inputMask.value, inputEvent)
+      })
+
+      inputMask.value.on('complete', (inputEvent) => {
+        if (!inputMask.value) return
+        emit('complete', inputMask.value, inputEvent)
+      })
+    }
+    catch (error) {
+      console.error(
+        'VIMaskInput: bad imask options, see https://imask.js.org/ for available parameters',
+      )
+      console.error(error)
+    }
+  }
+})
+
+onUnmounted(() => {
+  if (inputMask.value) {
+    inputMask.value.destroy()
+    inputMask.value = undefined
+  }
+})
+
+defineExpose({
+  inputMask,
 })
 </script>
+
+<template>
+  <input
+    ref="inputElement"
+    type="text"
+    :value="props.modelValue"
+  >
+</template>
