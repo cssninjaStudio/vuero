@@ -2,7 +2,7 @@
 let instances = 0
 </script>
 
-<script setup lang="ts" generic="T extends string | number">
+<script setup lang="ts" generic="T extends unknown">
 export type VAnimatedCheckboxColor =
   | 'primary'
   | 'info'
