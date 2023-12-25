@@ -1,9 +1,5 @@
-<script lang="ts">
-import 'plyr/dist/plyr.css'
-</script>
-
 <script setup lang="ts">
-import Plyr from 'plyr'
+import 'plyr/dist/plyr.css'
 
 export type VPlyrCaptions = {
   src: string
@@ -19,7 +15,7 @@ export interface VPlyrProps {
   reversed?: boolean
   embed?: boolean
   ratio?: VPlyrFormat
-  options?: Plyr.Options
+  options?: any
 }
 
 const props = withDefaults(defineProps<VPlyrProps>(), {
@@ -30,11 +26,13 @@ const props = withDefaults(defineProps<VPlyrProps>(), {
   captions: () => [],
 })
 
-const player = ref<Plyr>()
+const player = ref()
 const videoElement = ref<HTMLElement>()
 
-onMounted(() => {
+onMounted(async () => {
   if (videoElement.value) {
+    // @ts-expect-error - plyr package has no export field
+    const Plyr = await import('plyr').then(mod => mod.default || mod)
     player.value = new Plyr(videoElement.value, props.options)
   }
 })
