@@ -77,16 +77,16 @@ const toggle = (key: number) => {
         </div>
       </summary>
       <div class="collapse-content">
-        <p>
-          <slot
-            name="collapse-item-content"
-            :item="item"
-            :index="key"
-            :toggle="toggle"
-          >
+        <slot
+          name="collapse-item-content"
+          :item="item"
+          :index="key"
+          :toggle="toggle"
+        >
+          <p>
             {{ item.content }}
-          </slot>
-        </p>
+          </p>
+        </slot>
       </div>
     </slot>
   </details>
