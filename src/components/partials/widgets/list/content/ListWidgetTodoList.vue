@@ -10,7 +10,6 @@ export interface ModelItem {
 
 const modelValue = defineModel<T[]>({
   default: () => [],
-  local: true,
 })
 
 const props = withDefaults(

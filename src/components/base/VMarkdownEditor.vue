@@ -37,7 +37,6 @@ type VMarkdownEditorToolbar = Record<
 
 const modelValue = defineModel<string>({
   default: '',
-  local: true,
 })
 
 const props = withDefaults(

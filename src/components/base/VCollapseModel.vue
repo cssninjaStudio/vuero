@@ -10,7 +10,6 @@ interface VCollapseProps {
 
 const modelValue = defineModel<number | undefined>({
   default: undefined,
-  local: true,
 })
 const props = defineProps<VCollapseProps>()
 

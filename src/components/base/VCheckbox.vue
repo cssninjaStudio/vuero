@@ -19,7 +19,6 @@ export interface VCheckboxProps {
 
 const modelValue = defineModel<any>({
   default: false,
-  local: true,
 })
 const props = withDefaults(defineProps<VCheckboxProps>(), {
   id: undefined,

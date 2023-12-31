@@ -43,7 +43,8 @@ async function createServer() {
 
   const manifest = isProd
     ? await import(
-      // @ts-expect-error ignore
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore - this may be undefined in dev
       '../dist/client/.vite/ssr-manifest.json',
       { assert: { type: 'json' } }
     )

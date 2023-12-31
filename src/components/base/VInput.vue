@@ -9,7 +9,6 @@ export interface VInputProps {
 
 const modelValue = defineModel<any>({
   default: '',
-  local: true,
 })
 const props = withDefaults(defineProps<VInputProps>(), {
   modelValue: '',

@@ -8,7 +8,6 @@ export interface VTextareaProps {
 
 const modelValue = defineModel<string>({
   default: '',
-  local: true,
 })
 const props = defineProps<{
   raw?: boolean

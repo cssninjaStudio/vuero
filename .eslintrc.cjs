@@ -20,7 +20,7 @@ module.exports = {
       rules: {},
     },
     {
-      files: ['*.js', '*.cjs', '*.mjs'],
+      files: ['*.cjs'],
       plugins: ['sonarjs', '@stylistic'],
       extends: [
         'eslint:recommended',
@@ -28,6 +28,28 @@ module.exports = {
       ],
       parserOptions: {
         ecmaVersion: 'latest',
+        sourceType: 'script',
+      },
+      rules: {
+        ...customized.rules,
+        'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+        'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+        'no-unused-vars': 'off',
+        'no-undef': 'off', // auto-imports are not recognized
+
+        'sonarjs/no-duplicate-string': 'off',
+      },
+    },
+    {
+      files: ['*.js', '*.mjs'],
+      plugins: ['sonarjs', '@stylistic'],
+      extends: [
+        'eslint:recommended',
+        'plugin:sonarjs/recommended',
+      ],
+      parserOptions: {
+        ecmaVersion: 'latest',
+        sourceType: 'module',
       },
       rules: {
         ...customized.rules,
@@ -101,8 +123,6 @@ module.exports = {
 
         'vue/script-setup-uses-vars': 'error',
         'vue/multi-word-component-names': 'off',
-        // vue 3.3 allows setup props destructuring
-        'vue/no-setup-props-destructure': 'off',
         'vue/max-attributes-per-line': [
           'error',
           {
@@ -114,6 +134,10 @@ module.exports = {
             },
           },
         ],
+        // vue 3.3 allows setup props destructuring
+        'vue/no-setup-props-destructure': 'off',
+        // vue 3.4 allow v-bind shorthand
+        'vue/valid-v-bind': 'off',
 
         'vuejs-accessibility/form-control-has-label': 'off',
         'vuejs-accessibility/label-has-for': 'off',
@@ -151,8 +175,6 @@ module.exports = {
 
         'vue/script-setup-uses-vars': 'error',
         'vue/multi-word-component-names': 'off',
-        // vue 3.3 allows setup props destructuring
-        'vue/no-setup-props-destructure': 'off',
         'vue/max-attributes-per-line': [
           'error',
           {
@@ -164,6 +186,10 @@ module.exports = {
             },
           },
         ],
+        // vue 3.3 allows setup props destructuring
+        'vue/no-setup-props-destructure': 'off',
+        // vue 3.4 allow v-bind shorthand
+        'vue/valid-v-bind': 'off',
 
         'vuejs-accessibility/form-control-has-label': 'off',
         'vuejs-accessibility/label-has-for': 'off',

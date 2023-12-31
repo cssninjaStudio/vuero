@@ -11,7 +11,6 @@ export interface VSwitchSegmentProps {
 
 const modelValue = defineModel({
   default: false,
-  local: true,
 })
 
 const props = withDefaults(defineProps<VSwitchSegmentProps>(), {

@@ -16,7 +16,6 @@ export interface VRadioProps {
 
 const modelValue = defineModel<any>({
   default: undefined,
-  local: true,
 })
 
 const props = withDefaults(defineProps<VRadioProps>(), {

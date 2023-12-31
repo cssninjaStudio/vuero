@@ -15,7 +15,6 @@ defineOptions({
 
 const modelValue = defineModel({
   default: false,
-  local: true,
 })
 const props = withDefaults(defineProps<VSwitchBlockProps>(), {
   label: undefined,

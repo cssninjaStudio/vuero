@@ -24,14 +24,12 @@ export function useCreditcardMask() {
     min: new Date(2021, 0, 1),
     max: new Date(2099, 0, 1),
     blocks: {
-      // @ts-expect-error - custom pattern
       YY: {
         mask: MaskedRange,
         from: 21,
         to: 99,
         maxLength: 2,
       },
-      // @ts-expect-error - custom pattern
       MM: {
         mask: MaskedRange,
         from: 1,

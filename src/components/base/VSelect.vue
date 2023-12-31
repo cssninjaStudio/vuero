@@ -12,7 +12,6 @@ defineOptions({
 
 const modelValue = defineModel<any>({
   default: '',
-  local: true,
 })
 const props = defineProps<VSelectProps>()
 const attrs = useAttrs()
