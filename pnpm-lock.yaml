@@ -200,8 +200,8 @@ devDependencies:
     specifier: 2.2.135
     version: 2.2.135
   '@intlify/unplugin-vue-i18n':
-    specifier: 1.4.0
-    version: 1.4.0(rollup@2.79.1)(vue-i18n@9.6.2)
+    specifier: 2.0.0
+    version: 2.0.0(rollup@2.79.1)(vue-i18n@9.6.2)
   '@nuxt/devalue':
     specifier: 2.0.2
     version: 2.0.2
@@ -2469,8 +2469,8 @@ packages:
     resolution: {integrity: sha512-9KBcXmJNxElp7QMnU8V0/tScTOitDqyFi4HceEZqJyyDkMi8K5DBPMTIuXIAMmtMlXpe/nj5pke7tRw97VeQRA==}
     engines: {node: '>= 16'}
 
-  /@intlify/unplugin-vue-i18n@1.4.0(rollup@2.79.1)(vue-i18n@9.6.2):
-    resolution: {integrity: sha512-RGDchCRBlDTyVVFgPA1C1XC1uD4xYN81Ma+3EnU6GQ8pBEreraX/PWdPXXzOB6k9GWCQHuqii3atYXhcH3rpSg==}
+  /@intlify/unplugin-vue-i18n@2.0.0(rollup@2.79.1)(vue-i18n@9.6.2):
+    resolution: {integrity: sha512-1oKvm92L9l2od2H9wKx2ZvR4tzn7gUtd7bPLI7AWUmm7U9H1iEypndt5d985ypxGsEs0gToDaKTrytbBIJwwSg==}
     engines: {node: '>= 14.16'}
     peerDependencies:
       petite-vue-i18n: '*'
