@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import ApexChart from 'vue3-apexcharts'
-
 import { useEnergyChart } from '/@src/data/dashboards/lifestyle-v3/energyChart'
 import { useOverallChart } from '/@src/data/dashboards/lifestyle-v3/overallChart'
 import { useOxygenChart } from '/@src/data/dashboards/lifestyle-v3/oxygenChart'

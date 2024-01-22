@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import ApexChart from 'vue3-apexcharts'
-
 import { useCustomersCharts } from '/@src/data/dashboards/personal-v1/customersChart'
 import { useTeamGaugeChart } from '/@src/data/dashboards/personal-v1/teamGaugeChart'
 import { useProfitChart } from '/@src/data/dashboards/personal-v1/profitChart'

@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import ApexChart from 'vue3-apexcharts'
-
 import {
   valueSingle,
   optionsSingle,

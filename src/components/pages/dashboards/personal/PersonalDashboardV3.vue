@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import ApexChart from 'vue3-apexcharts'
-
 import type { VAvatarProps } from '/@src/components/base/VAvatar.vue'
 import { useInterviewsChart } from '/@src/data/dashboards/personal-v3/interviewsChart'
 import { useProgressChart } from '/@src/data/dashboards/personal-v3/progressChart'

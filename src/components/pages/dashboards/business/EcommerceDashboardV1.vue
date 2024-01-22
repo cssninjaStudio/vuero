@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import ApexChart from 'vue3-apexcharts'
-
 import { useFlexRadialChartCircle } from '/@src/data/widgets/charts/flexRadialChartCircleChart'
 import { useFlexRadialChartStripes } from '/@src/data/widgets/charts/flexRadialChartStripesChart'
 import { useRevenueAreaChart } from '/@src/data/widgets/charts/revenueAreaChart'

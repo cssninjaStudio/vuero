@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import ApexChart from 'vue3-apexcharts'
-
 import { useDemo1Line } from '/@src/data/dashboards/apex-demo/demo1-line'
 import { useDemo2Line } from '/@src/data/dashboards/apex-demo/demo2-line'
 import { useDemo3Line } from '/@src/data/dashboards/apex-demo/demo3-line'

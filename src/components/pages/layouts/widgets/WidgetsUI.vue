@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import ApexChart from 'vue3-apexcharts'
-
 import { followersList } from '/@src/data/widgets/ui/followers'
 import { tagList1, tagList2 } from '/@src/data/widgets/ui/tagList'
 import { tabs } from '/@src/data/widgets/ui/tabList'

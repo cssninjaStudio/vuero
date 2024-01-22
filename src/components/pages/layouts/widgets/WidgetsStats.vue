@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import ApexChart from 'vue3-apexcharts'
-
 import { useSalesSparksCharts } from '/@src/data/widgets/charts/salesSparksChart'
 import { useRevenueAreaChart } from '/@src/data/widgets/charts/revenueAreaChart'
 import { useLineStatsWidgetCharts } from '/@src/data/widgets/charts/lineStatsWidgetChart'

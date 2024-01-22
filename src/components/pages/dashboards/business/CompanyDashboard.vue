@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import ApexChart from 'vue3-apexcharts'
 import { useSharingChart } from '/@src/data/dashboards/company/sharingChart'
 import { useUsersChart } from '/@src/data/dashboards/company/usersChart'
 import { useUsersBarChart } from '/@src/data/dashboards/company/usersBarChart'

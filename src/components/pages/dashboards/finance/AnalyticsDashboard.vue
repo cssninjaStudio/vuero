@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import ApexChart from 'vue3-apexcharts'
-
 import { useRevenueChart } from '/@src/data/dashboards/analytics/revenueChart'
 import { useGoalCharts } from '/@src/data/dashboards/analytics/goalChart'
 import { useProfitBarChart } from '/@src/data/dashboards/analytics/profitBarChart'

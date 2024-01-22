@@ -2,8 +2,6 @@
 import type { TinySliderInstance } from 'tiny-slider/src/tiny-slider'
 import { tns } from 'tiny-slider/src/tiny-slider'
 
-import ApexChart from 'vue3-apexcharts'
-
 import { useExpensesAreaChart } from '/@src/data/dashboards/banking-v2/expensesAreaChart'
 import {
   valueSingle,

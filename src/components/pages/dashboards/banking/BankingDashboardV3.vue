@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import ApexChart from 'vue3-apexcharts'
 import { useBitcoinPriceChart } from '/@src/data/dashboards/banking-v3/bitcoinPriceChart'
 import { useEvolutionRadialChart } from '/@src/data/dashboards/banking-v3/evolutionRadialChart'
 import { usePopularityGaugeChart } from '/@src/data/dashboards/banking-v3/popularityGaugeChart'
