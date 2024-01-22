@@ -1,5 +1,6 @@
 # Ignore artifacts:
 build
+bulma-generated
 dist
 coverage
 node_modules

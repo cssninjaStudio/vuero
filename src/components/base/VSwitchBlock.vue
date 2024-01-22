@@ -13,7 +13,7 @@ defineOptions({
   inheritAttrs: false,
 })
 
-const modelValue = defineModel({
+const modelValue = defineModel<boolean>({
   default: false,
 })
 const props = withDefaults(defineProps<VSwitchBlockProps>(), {

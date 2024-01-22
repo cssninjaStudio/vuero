@@ -9,7 +9,7 @@ export interface VSwitchSegmentProps {
   color?: VSwitchSegmentColor
 }
 
-const modelValue = defineModel({
+const modelValue = defineModel<boolean>({
   default: false,
 })
 

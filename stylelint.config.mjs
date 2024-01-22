@@ -1,6 +1,6 @@
 /** @type {import('stylelint').Config} */
 export default {
-  extends: ['stylelint-config-standard', 'stylelint-config-recommended-vue'],
+  extends: ['stylelint-config-standard', 'stylelint-config-recommended-vue/scss'],
   customSyntax: 'postcss-scss',
   plugins: ['stylelint-scss'],
   overrides: [

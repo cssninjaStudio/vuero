@@ -31,8 +31,8 @@ export default defineComponent({
     const isOpen = ref(
       Boolean(
         hasNestedLinkActive.value
-          || (typeof props.collapseId === 'string' && props.open === props.collapseId)
-          || (typeof props.collapseId === 'undefined' && props.open === true),
+        || (typeof props.collapseId === 'string' && props.open === props.collapseId)
+        || (typeof props.collapseId === 'undefined' && props.open === true),
       ),
     )
 
@@ -55,7 +55,7 @@ export default defineComponent({
       (val) => {
         isOpen.value = Boolean(
           (typeof props.collapseId === 'string' && unref(val) === props.collapseId)
-            || (typeof props.collapseId === 'undefined' && unref(val) === true),
+          || (typeof props.collapseId === 'undefined' && unref(val) === true),
         )
       },
     )
