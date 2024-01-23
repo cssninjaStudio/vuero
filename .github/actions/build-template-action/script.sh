@@ -56,4 +56,5 @@ echo "::endgroup::"
 
 echo "- ${INPUT_PROJECT^} ${INPUT_TAG} template built :rocket:" >> $GITHUB_STEP_SUMMARY
 
-echo "::set-output name=filepath::${ARCHIVE}"
+# echo "::set-output name=filepath::${ARCHIVE}"
+echo "filepath=${ARCHIVE}" >> "$GITHUB_OUTPUT"

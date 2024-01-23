@@ -15,33 +15,33 @@ jobs:
 
       - uses: pnpm/action-setup@v2
         with:
-          version: 7
+          version: 8
       - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
           cache: 'pnpm'
 
       - id: meta
         name: release meta
         run: |
           project=${GITHUB_REPOSITORY#*/}
-          echo ::set-output name=project::${project}
-          echo ::set-output name=project-capitalized::${project^}
-          echo ::set-output name=tag::${GITHUB_REF#refs/tags/}
+          echo "PROJECT=${project}" >> "$GITHUB_OUTPUT"
+          echo "PROJECT_CAP=${project^}" >> "$GITHUB_OUTPUT"
+          echo "TAG=${GITHUB_REF#refs/tags/}" >> "$GITHUB_OUTPUT"
 
       - id: build_template
         name: build release template
         uses: ./.github/actions/build-template-action
         with:
-          tag: ${{ steps.meta.outputs.tag }}
-          project: ${{ steps.meta.outputs.project }}
+          tag: ${{ steps.meta.outputs.TAG }}
+          project: ${{ steps.meta.outputs.PROJECT }}
 
       - id: build_quickstarter
         name: build release quickstarter
         uses: ./.github/actions/build-quickstarter-action
         with:
-          tag: ${{ steps.meta.outputs.tag }}
-          project: ${{ steps.meta.outputs.project }}
+          tag: ${{ steps.meta.outputs.TAG }}
+          project: ${{ steps.meta.outputs.PROJECT }}
 
       - id: changelog
         name: release changelog
@@ -53,8 +53,8 @@ jobs:
         name: create github draft release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: ${{ steps.meta.outputs.tag }}
-          name: ${{ steps.meta.outputs.project-capitalized }} ${{ steps.meta.outputs.tag }}
+          tag_name: ${{ steps.meta.outputs.TAG }}
+          name: ${{ steps.meta.outputs.PROJECT_CAP }} ${{ steps.meta.outputs.TAG }}
           body_path: ${{ github.workspace }}/CHANGELOG_RELEASE.md
           draft: true
           prerelease: false
