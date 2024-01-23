@@ -2,6 +2,35 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.9.0](https://github.com/cssninjaStudio/vuero/compare/v2.8.1...v2.9.0) (2024-01-23)
+
+
+### Features
+
+* add eslint-plugin-sonarjs and fix linting issues ([99c0498](https://github.com/cssninjaStudio/vuero/commit/99c04988472893dccb2ce249d57dbbe8a53e2d92))
+* add html minifier option for ssg/ssr builds ([d89a529](https://github.com/cssninjaStudio/vuero/commit/d89a5299f2aa385937a6942f9d8e3576c634df88))
+* improve server for ssr/ssg + expose h3 event to ssr context ([b7dbb54](https://github.com/cssninjaStudio/vuero/commit/b7dbb54cc2d44bec915c9db6aaeb17585aab6e05))
+* migrate component documentation to vue-component-meta ([72c3432](https://github.com/cssninjaStudio/vuero/commit/72c34321dfaf91848f038355a9a3c596074fa950))
+* replace prettier with eslint stylistic ([9e8aaf5](https://github.com/cssninjaStudio/vuero/commit/9e8aaf5ab67a1f5e476d6b580bccd269053d5d81))
+* replace shiki with shikiji ([b09c492](https://github.com/cssninjaStudio/vuero/commit/b09c49295940025c3d394ba9d6cc341e8b85049d))
+* upgrade deps + stable vue 3.4 ([2095953](https://github.com/cssninjaStudio/vuero/commit/209595330c7b42c4e8738841cc0927b8703a819c))
+* upgrade to vite 5 ([3d6dee3](https://github.com/cssninjaStudio/vuero/commit/3d6dee38bd9b42f7b72ae2680d6a10fbc8af6e9a))
+* upgrade to vue 3.4 ([20bd8d1](https://github.com/cssninjaStudio/vuero/commit/20bd8d1906100f4681109411ef06cbb2453538d0))
+* use vuero plugin to register apexchart component ([138c783](https://github.com/cssninjaStudio/vuero/commit/138c783c3ad89d6bb248d4270f0a86c8553c7229))
+* **VIMaskInput:** use generic for option prop ([afbd146](https://github.com/cssninjaStudio/vuero/commit/afbd14607ea89a2276a430f43da5cdb10f5a6c82))
+
+
+### Bug Fixes
+
+* extract runtime dependencies from devDepencencies ([2d3aac5](https://github.com/cssninjaStudio/vuero/commit/2d3aac58ec8dea45b7606492e00ddd842abb711d))
+* improve external component typing ([0ab0699](https://github.com/cssninjaStudio/vuero/commit/0ab0699a14c241949e59d38395fdcf85abc9d567))
+* update HTML minifier configuration for bun support ([05c3ea1](https://github.com/cssninjaStudio/vuero/commit/05c3ea1cccdfa135aed909517253b020b93828ba))
+* **VAnimatedCheckbox:** use plain string or number in model value generic type ([7b9e1b8](https://github.com/cssninjaStudio/vuero/commit/7b9e1b867566640742feca3cfb786d08d03a4e6a))
+* **VAnimatedCheckbox:** use unknow in model value generic type ([4a1f7d7](https://github.com/cssninjaStudio/vuero/commit/4a1f7d7f5baffc147c4c316f611833207a828876))
+* **VCollapse:** move default p tag in collapse-item-content slot ([1ac0f0c](https://github.com/cssninjaStudio/vuero/commit/1ac0f0c10d30c438c878160adb4036eb5013434f))
+* **vee-validate:** update form initial values ([87b548a](https://github.com/cssninjaStudio/vuero/commit/87b548a32a4e80e165bb75317962e1d6923b4489))
+* **VPlyr:** load dependency only on client ([ff08502](https://github.com/cssninjaStudio/vuero/commit/ff08502f06b5faaae355716beb4a3b9109dab62f))
+
 ### [2.8.1](https://github.com/cssninjaStudio/vuero/compare/v2.8.0...v2.8.1) (2023-08-26)
 
 
