@@ -1,9 +1,9 @@
 FROM bitnami/node:20 AS build
 WORKDIR /app
 
-ARG VITE_API_BASE_URL
-ARG VITE_MAPBOX_ACCESS_TOKEN
-ARG GTM_ID
+ARG VITE_API_BASE_URL=""
+ARG VITE_MAPBOX_ACCESS_TOKEN=""
+ARG GTM_ID=""
 
 RUN corepack enable && corepack prepare pnpm@latest --activate
 
