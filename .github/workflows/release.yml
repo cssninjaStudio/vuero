@@ -13,6 +13,9 @@ jobs:
         with:
           fetch-depth: 0 # needed for git history
 
+      # Enable corepack, note that nodejs is already installed
+      - run: corepack enable
+      
       - uses: actions/setup-node@v4
         with:
           node-version: 20

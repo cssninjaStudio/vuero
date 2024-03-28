@@ -9,11 +9,14 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+      
+      # Enable corepack, note that nodejs is already installed
+      - run: corepack enable
+
       - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: "npm"
-
 
       # install dependencies if the cache did not hit
       - name: Install dependencies
