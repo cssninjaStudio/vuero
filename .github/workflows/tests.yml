@@ -29,7 +29,7 @@ jobs:
         run: |
           echo "PNPM_CACHE_DIR=$(pnpm store path)" >> "$GITHUB_OUTPUT"
 
-      - uses: actions/cache@v3
+      - uses: actions/cache@v4
         name: Setup pnpm cache
         with:
           path: ${{ steps.pnpm-cache.outputs.PNPM_CACHE_DIR }}
