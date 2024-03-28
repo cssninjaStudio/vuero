@@ -28,7 +28,7 @@ jobs:
           echo "dockertags=digisquad/cssninja.vuero-demo:latest" >> $GITHUB_ENV
 
       - name: Set up QEMU
-        uses: docker/setup-qemu-action@v2
+        uses: docker/setup-qemu-action@v3
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
@@ -46,6 +46,8 @@ jobs:
         with:
           push: true
           tags: ${{ env.dockertags }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
           build-args: |
             VITE_API_BASE_URL=https://vuero-api.cssninja.io
             GTM_ID=GTM-N9P6H6B
@@ -55,7 +57,7 @@ jobs:
     needs: [docker-build]
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Publish
         uses: appleboy/scp-action@master
         with:
@@ -74,6 +76,6 @@ jobs:
           script_stop: true
           script: |
             cd ${{ secrets.HOST_DIRECTORY }}
-            docker-compose pull
-            docker-compose up -d --force-recreate --remove-orphans
+            docker compose pull
+            docker compose up -d --force-recreate --remove-orphans
             docker image prune -f -a --filter "until=24h"

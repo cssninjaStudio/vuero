@@ -1,4 +1,6 @@
-version: '3.7'
+networks:
+  cssninja-services:
+    external: true
 
 services:
   vuero-demo:
@@ -42,6 +44,4 @@ services:
       traefik.http.routers.vuero-api-https.tls.certresolver: 'http'
       traefik.http.routers.vuero-api-https.service: 'vuero-api-https'
 
-networks:
-  cssninja-services:
-    external: true
+

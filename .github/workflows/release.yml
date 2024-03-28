@@ -13,9 +13,6 @@ jobs:
         with:
           fetch-depth: 0 # needed for git history
 
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 8
       - uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -51,7 +48,7 @@ jobs:
 
       - id: create_release
         name: create github draft release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.meta.outputs.TAG }}
           name: ${{ steps.meta.outputs.PROJECT_CAP }} ${{ steps.meta.outputs.TAG }}

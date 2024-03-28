@@ -13,7 +13,8 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 20
+          cache: 'pnpm'
 
       - uses: pnpm/action-setup@v2
         name: Install pnpm
@@ -31,7 +32,7 @@ jobs:
           start: pnpm ssr:preview
           command: pnpm test:e2e --headless --browser chrome
           wait-on: 'http://localhost:3000'
-          cache-key: ${{ matrix.node-version }}-${{ runner.os }}-cypress-cache-${{ hashFiles('**/pnpm-lock.yaml') }}
+          cache-key: cypress-cache-${{ hashFiles('**/pnpm-lock.yaml') }}
         env:
           NODE_OPTIONS: '--max-old-space-size=4096'
         #   CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
