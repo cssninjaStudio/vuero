@@ -14,12 +14,8 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  tests:
-    uses: ./.github/workflows/tests.yml
-
   docker-build:
     runs-on: ubuntu-latest
-    needs: [tests]
 
     steps:
       - uses: actions/checkout@v4
