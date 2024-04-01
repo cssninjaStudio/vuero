@@ -274,8 +274,8 @@ devDependencies:
     specifier: 4.0.9
     version: 4.0.9
   '@types/mapbox-gl':
-    specifier: 2.7.19
-    version: 2.7.19
+    specifier: 3.1.0
+    version: 3.1.0
   '@types/mapbox__mapbox-gl-geocoder':
     specifier: 4.7.7
     version: 4.7.7
@@ -3291,8 +3291,8 @@ packages:
     resolution: {integrity: sha512-OvlIYQK9tNneDlS0VN54LLd5uiPCBOp7gS5Z0f1mjoJYBrtStzgmJBxONW3U6OZqdtNzZPmn9BS/7WI7BFFcFQ==}
     dev: false
 
-  /@types/mapbox-gl@2.7.19:
-    resolution: {integrity: sha512-pkRdlhQJNbtwcKJSVC4uuOA6M3OlOObIMhNecqHB991oeaDF5XkjSIRaTE0lh5p4KClptSCxW6MBiREVRHrl2A==}
+  /@types/mapbox-gl@3.1.0:
+    resolution: {integrity: sha512-hI6cQDjw1bkJw7MC/eHMqq5TWUamLwsujnUUeiIX2KDRjxRNSYMjnHz07+LATz9I9XIsKumOtUz4gRYnZOJ/FA==}
     dependencies:
       '@types/geojson': 7946.0.13
     dev: true
@@ -3301,7 +3301,7 @@ packages:
     resolution: {integrity: sha512-RFUDSDnFoCBapQWfGdgNGkB76drJ2kVG9tH0ottQtDpTW3KPtdQobw0lvvJK4VIMDEKIt/ssEyyLvY1Tja7MSw==}
     dependencies:
       '@types/geojson': 7946.0.13
-      '@types/mapbox-gl': 2.7.19
+      '@types/mapbox-gl': 3.1.0
     dev: true
 
   /@types/mdast@4.0.3:
@@ -14147,6 +14147,7 @@ packages:
 
   /workbox-google-analytics@7.0.0:
     resolution: {integrity: sha512-MEYM1JTn/qiC3DbpvP2BVhyIH+dV/5BjHk756u9VbwuAhu0QHyKscTnisQuz21lfRpOwiS9z4XdqeVAKol0bzg==}
+    deprecated: It is not compatible with newer versions of GA starting with v4, as long as you are using GAv3 it should be ok, but the package is not longer being maintained
     dependencies:
       workbox-background-sync: 7.0.0
       workbox-core: 7.0.0

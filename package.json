@@ -152,7 +152,7 @@
     "@types/fs-extra": "11.0.4",
     "@types/html-minifier-terser": "^7.0.2",
     "@types/js-yaml": "4.0.9",
-    "@types/mapbox-gl": "2.7.19",
+    "@types/mapbox-gl": "3.1.0",
     "@types/mapbox__mapbox-gl-geocoder": "4.7.7",
     "@types/node": "20.11.5",
     "@types/nprogress": "0.2.3",
