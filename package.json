@@ -146,7 +146,7 @@
     "@commitlint/cli": "18.5.0",
     "@commitlint/config-conventional": "18.5.0",
     "@iconify/json": "2.2.172",
-    "@intlify/unplugin-vue-i18n": "2.0.0",
+    "@intlify/unplugin-vue-i18n": "4.0.0",
     "@stylistic/eslint-plugin": "^1.5.4",
     "@types/dragula": "3.7.4",
     "@types/fs-extra": "11.0.4",
