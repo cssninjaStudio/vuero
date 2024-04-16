@@ -132,8 +132,8 @@ find src/components/{svg,navigation,pages,partials} -type d -empty -delete
 
 # src/assets/illustrations/apps/vuero-banking-light.png
 # src/assets/illustrations/apps/vuero-banking-dark.png
-# src/assets/illustrations/landing/app-1.png
-# src/assets/illustrations/landing/app-1-dark.png
+# src/assets/illustrations/landing/app-1.webp
+# src/assets/illustrations/landing/app-1-dark.webp
 # src/assets/illustrations/landing/app-2.png
 # src/assets/illustrations/landing/app-2-dark.png
 # src/assets/illustrations/dashboards/flights/*
@@ -147,8 +147,8 @@ find src/assets -type f -not \( \
   -or -name 'company1.svg' \
   -or -name 'company2.svg' \
   -or -name 'company3.svg' \
-  -or -name 'app-1.png' \
-  -or -name 'app-1-dark.png' \
+  -or -name 'app-1.webp' \
+  -or -name 'app-1-dark.webp' \
   -or -name 'app-2.png' \
   -or -name 'app-2-dark.png' \
   -or -name 'feature-1.png' \

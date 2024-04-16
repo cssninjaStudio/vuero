@@ -70,12 +70,12 @@ useHead({
               <div class="hero-mockup">
                 <img
                   class="light-image-block-l"
-                  src="/@src/assets/illustrations/landing/app-1.png"
+                  src="/@src/assets/illustrations/landing/app-1.webp"
                   alt=""
                 >
                 <img
                   class="dark-image-block-l"
-                  src="/@src/assets/illustrations/landing/app-1-dark.png"
+                  src="/@src/assets/illustrations/landing/app-1-dark.webp"
                   alt=""
                 >
               </div>
