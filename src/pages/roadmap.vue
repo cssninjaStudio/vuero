@@ -1,6 +1,5 @@
 <script lang="ts">
-import { defineLoader } from 'vue-router/auto'
-
+import { defineBasicLoader } from 'unplugin-vue-router/data-loaders/basic'
 /**
  * This is an example of data loader (experimental feature)
  * Name the loader however you want **and export it**
@@ -8,10 +7,10 @@ import { defineLoader } from 'vue-router/auto'
  * Note that it should be defined outside of script setup
  *
  * @see https://github.com/vuejs/rfcs/discussions/460
- * @see https://github.com/posva/unplugin-vue-router/tree/main/src/data-fetching
+ * @see https://uvr.esm.is/rfcs/data-loaders/
  */
-export const useRoadmapData = defineLoader(async (route) => {
-  console.log('useRoadmapData defineLoader', route)
+export const useRoadmapData = defineBasicLoader(async (to) => {
+  console.log('useRoadmapData defineLoader', to)
 
   // this is a fake loader, you may want to load data with fetch
   const [roadmap, releases] = await Promise.all([
@@ -22,15 +21,15 @@ export const useRoadmapData = defineLoader(async (route) => {
   // we use the query params to filters the data,
   // they are executed each time router path change
   const releaseWithBugFixes = releases.filter((release) => {
-    if (route.query.type) {
-      const firstBugFix = release.changelog.find(item => item.type === route.query.type)
+    if (to.query.type) {
+      const firstBugFix = release.changelog.find(item => item.type === to.query.type)
       return firstBugFix !== undefined
     }
 
     return true
   })
 
-  const releasesByMonth = releaseWithBugFixes.reduce(
+  const changelog = releaseWithBugFixes.reduce(
     (accumulator, item) => {
       const month = item.date.split(' ')[0]
       accumulator[month] = accumulator[month] ?? { month: `${month} 2022`, releases: [] }
@@ -44,8 +43,11 @@ export const useRoadmapData = defineLoader(async (route) => {
   // return anything you want to expose
   return {
     roadmap,
-    changelog: releasesByMonth,
+    changelog,
   }
+}, {
+  // used for SSR only
+  key: 'roadmap-data',
 })
 </script>
 
@@ -56,7 +58,7 @@ import { useDarkmode } from '/@src/stores/darkmode'
 
 const darkmode = useDarkmode()
 
-const { data, pending } = useRoadmapData()
+const { data, isLoading } = useRoadmapData()
 const years = ['2022', '2021', '2020', '2019']
 const changeTypes = ['All', 'Enhancements', 'Features', 'Bug fixes']
 
@@ -163,7 +165,7 @@ useHead({
                           :options="years"
                           placeholder="Select a Year..."
                           :searchable="true"
-                          :loading="pending"
+                          :loading="isLoading"
                         />
                       </VControl>
                     </VField>

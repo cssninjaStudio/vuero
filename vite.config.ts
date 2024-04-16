@@ -8,6 +8,7 @@ import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Unfonts from 'unplugin-fonts/vite'
 import { VitePluginRadar } from 'vite-plugin-radar'
+// @ts-expect-error
 import PurgeIcons from 'vite-plugin-purge-icons'
 import ImageMin from 'vite-plugin-imagemin'
 import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
@@ -164,20 +165,11 @@ export default defineConfig({
      * unplugin-vue-router plugin generate routes based on file system
      * allow to use typed routes and usage of defineLoader
      *
-     * @see https://github.com/posva/unplugin-vue-router
-     * @see https://github.com/vuejs/rfcs/blob/ad69da2aee9242ef88f036713db68f3ef274bb1b/active-rfcs/0000-router-use-loader.md
+     * @see https://uvr.esm.is/rfcs/data-loaders/
      */
     VueRouter({
       routesFolder: 'src/pages',
       dts: './types/router.d.ts',
-
-      /**
-       * Data Fetching is an experimental feature from vue & vue-router
-       *
-       * @see https://github.com/vuejs/rfcs/discussions/460
-       * @see https://github.com/posva/unplugin-vue-router/tree/main/src/data-fetching
-       */
-      dataFetching: true,
     }),
 
     /**

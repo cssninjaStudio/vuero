@@ -2,7 +2,6 @@ import {
   createRouter as createClientRouter,
   createWebHistory,
   createMemoryHistory,
-  setupDataFetchingGuard,
 } from 'vue-router/auto'
 
 /*
@@ -95,13 +94,13 @@ export function createRouter() {
     },
   })
 
-  /**
-   * Data Fetching is an experimental feature from vue & vue-router
-   *
-   * @see https://github.com/vuejs/rfcs/discussions/460
-   * @see https://github.com/posva/unplugin-vue-router/tree/main/src/data-fetching
-   */
-  setupDataFetchingGuard(router)
+  // /**
+  //  * Data Fetching is an experimental feature from vue & vue-router
+  //  *
+  //  * @see https://github.com/vuejs/rfcs/discussions/460
+  //  * @see https://github.com/posva/unplugin-vue-router/tree/main/src/data-fetching
+  //  */
+  // setupDataFetchingGuard(router)
 
   return router
 }
