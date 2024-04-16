@@ -63,7 +63,7 @@ const onSubmit = () => {
             <div class="column is-6">
               <VField>
                 <VLabel>First Name</VLabel>
-                <VControl icon="feather:user">
+                <VControl icon="lucide:user">
                   <VInput
                     type="text"
                     placeholder=""
@@ -75,7 +75,7 @@ const onSubmit = () => {
             <div class="column is-6">
               <VField>
                 <VLabel>Last Name</VLabel>
-                <VControl icon="feather:user">
+                <VControl icon="lucide:user">
                   <VInput
                     type="text"
                     placeholder=""
@@ -87,7 +87,7 @@ const onSubmit = () => {
             <div class="column is-12">
               <VField>
                 <VLabel>Email Address</VLabel>
-                <VControl icon="feather:mail">
+                <VControl icon="lucide:mail">
                   <VInput
                     type="email"
                     placeholder=""
@@ -110,7 +110,7 @@ const onSubmit = () => {
             <div class="column is-6">
               <VField>
                 <VLabel>Company Name</VLabel>
-                <VControl icon="feather:briefcase">
+                <VControl icon="lucide:briefcase">
                   <VInput
                     type="text"
                     placeholder=""
@@ -122,7 +122,7 @@ const onSubmit = () => {
             <div class="column is-6">
               <VField>
                 <VLabel>Company Phone</VLabel>
-                <VControl icon="feather:phone">
+                <VControl icon="lucide:phone">
                   <VInput
                     type="tel"
                     placeholder=""
@@ -173,7 +173,7 @@ const onSubmit = () => {
             <div class="column is-12">
               <VField>
                 <VLabel>Company Email</VLabel>
-                <VControl icon="feather:mail">
+                <VControl icon="lucide:mail">
                   <VInput
                     type="email"
                     placeholder=""
@@ -216,7 +216,7 @@ const onSubmit = () => {
                   <template #default="{ inputValue, inputEvents }">
                     <VField>
                       <VLabel>Prefered Date</VLabel>
-                      <VControl icon="feather:calendar">
+                      <VControl icon="lucide:calendar">
                         <input
                           class="input v-input"
                           type="text"

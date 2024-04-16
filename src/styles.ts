@@ -3,8 +3,7 @@
  * How files are interpreted is defined by ther extension.
  */
 import 'simplebar'
-// import '@purge-icons/generated'
-import 'iconify-icon';
+import 'iconify-icon'
 import 'nprogress/nprogress.css'
 import '@vueform/multiselect/themes/default.scss'
 import '@vueform/slider/themes/default.scss'

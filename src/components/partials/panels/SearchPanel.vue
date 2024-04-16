@@ -55,21 +55,21 @@ function getAvatarData(user: UserPopover): VAvatarProps {
           @keydown.space.prevent="panels.close()"
           @click="panels.close()"
         >
-          <i
+          <iconify-icon
             aria-hidden="true"
             class="iconify ltr-hidden"
-            data-icon="feather:chevron-right"
-          />
-          <i
+            icon="lucide:chevron-right"
+          ></iconify-icon>
+          <iconify-icon
             aria-hidden="true"
             class="iconify rtl-hidden"
-            data-icon="feather:chevron-left"
-          />
+            icon="lucide:chevron-left"
+          ></iconify-icon>
         </a>
       </div>
       <div class="right-panel-body has-slimscroll">
         <VField>
-          <VControl icon="feather:search">
+          <VControl icon="lucide:search">
             <input
               v-model="filter"
               type="text"
@@ -111,11 +111,11 @@ function getAvatarData(user: UserPopover): VAvatarProps {
                   color="info"
                   rounded
                 >
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:chrome"
-                  />
+                    icon="lucide:chrome"
+                  ></iconify-icon>
                 </VIconBox>
               </template>
             </VBlock>
@@ -130,11 +130,11 @@ function getAvatarData(user: UserPopover): VAvatarProps {
                   color="orange"
                   rounded
                 >
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:tv"
-                  />
+                    icon="lucide:tv"
+                  ></iconify-icon>
                 </VIconBox>
               </template>
             </VBlock>
@@ -149,11 +149,11 @@ function getAvatarData(user: UserPopover): VAvatarProps {
                   color="green"
                   rounded
                 >
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:twitter"
-                  />
+                    icon="lucide:twitter"
+                  ></iconify-icon>
                 </VIconBox>
               </template>
             </VBlock>

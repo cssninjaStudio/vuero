@@ -6,7 +6,7 @@ const filters = ref('')
   <div>
     <div class="list-flex-toolbar flex-list-v1">
       <VField>
-        <VControl icon="feather:search">
+        <VControl icon="lucide:search">
           <input
             v-model="filters"
             class="input custom-text-filter"
@@ -125,7 +125,7 @@ const filters = ref('')
           font-size: 0.9rem;
           color: var(--light-text);
 
-          svg {
+          .iconify {
             height: 12px;
             width: 12px;
           }
@@ -176,12 +176,12 @@ const filters = ref('')
               }
             }
 
-            svg {
+            .iconify {
               height: 16px;
               width: 16px;
             }
 
-            i {
+            .iconify {
               font-size: 1.4rem;
             }
           }

@@ -1,18 +1,18 @@
 export const tabs = [
   {
     id: 0,
-    icon: 'feather:activity',
+    icon: 'lucide:activity',
   },
   {
     id: 1,
-    icon: 'feather:search',
+    icon: 'lucide:search',
   },
   {
     id: 2,
-    icon: 'feather:file-text',
+    icon: 'lucide:file-text',
   },
   {
     id: 3,
-    icon: 'feather:home',
+    icon: 'lucide:home',
   },
 ]

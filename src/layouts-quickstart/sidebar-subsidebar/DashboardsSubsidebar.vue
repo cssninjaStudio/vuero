@@ -15,11 +15,11 @@ const emit = defineEmits(['close'])
         @keydown.space.prevent="emit('close')"
         @click="emit('close')"
       >
-        <i
+        <iconify-icon
           aria-hidden="true"
           class="iconify"
-          data-icon="feather:x"
-        />
+          icon="lucide:x"
+        ></iconify-icon>
       </div>
     </div>
     <div

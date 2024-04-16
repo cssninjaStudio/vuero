@@ -43,11 +43,11 @@ const isScrolling = computed(() => {
               href="/"
               class="centered-link centered-link-toggle"
             >
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:activity"
-              />
+                icon="lucide:activity"
+              ></iconify-icon>
               <span>Homepage</span>
             </a>
           </div>
@@ -68,7 +68,7 @@ const isScrolling = computed(() => {
                   >
                     <span>Homepage</span>
                     <span class="caret">
-                      <i aria-hidden="true" class="iconify" data-icon="feather:chevron-down"></i>
+                      <iconify-icon aria-hidden="true" class="iconify" icon="lucide:chevron-down"></iconify-icon>
                     </span>
                   </a>
                 </div>
@@ -146,7 +146,7 @@ const isScrolling = computed(() => {
             &:hover {
               background: var(--landing-yyy-dark-6);
 
-              svg {
+              .iconify {
                 color: var(--smoke-white);
               }
 
@@ -164,7 +164,7 @@ const isScrolling = computed(() => {
                 background: var(--landing-yyy-dark-12);
               }
 
-              svg {
+              .iconify {
                 color: var(--smoke-white);
               }
 
@@ -173,7 +173,7 @@ const isScrolling = computed(() => {
               }
             }
 
-            svg {
+            .iconify {
               color: var(--light-text);
             }
 
@@ -243,12 +243,12 @@ const isScrolling = computed(() => {
                   color: var(--primary-light-2);
                 }
 
-                &:focus ~ .form-icon svg {
+                &:focus ~ .form-icon .iconify {
                   color: var(--smoke-white);
                 }
               }
 
-              .form-icon svg {
+              .form-icon .iconify {
                 color: var(--primary-light-6);
               }
             }
@@ -264,7 +264,7 @@ const isScrolling = computed(() => {
               border-color: var(--landing-yyy-dark-12);
             }
 
-            > svg {
+            > .iconify {
               color: var(--smoke-white);
             }
           }
@@ -286,7 +286,7 @@ const isScrolling = computed(() => {
               }
             }
 
-            .is-trigger svg {
+            .is-trigger .iconify {
               color: var(--smoke-white);
             }
           }
@@ -300,7 +300,7 @@ const isScrolling = computed(() => {
             background: var(--landing-yyy-dark-12);
           }
 
-          > svg {
+          > .iconify {
             color: var(--smoke-white);
           }
         }
@@ -443,7 +443,7 @@ const isScrolling = computed(() => {
               background: var(--white);
             }
 
-            svg {
+            .iconify {
               color: var(--primary);
             }
 
@@ -452,7 +452,7 @@ const isScrolling = computed(() => {
             }
           }
 
-          svg {
+          .iconify {
             height: 20px;
             width: 20px;
             color: var(--light-text-light-6);
@@ -507,7 +507,7 @@ const isScrolling = computed(() => {
               color: var(--primary);
             }
 
-            svg {
+            .iconify {
               height: 20px;
               width: 20px;
               stroke-width: 1.6px;
@@ -618,7 +618,7 @@ const isScrolling = computed(() => {
                         &:focus {
                           box-shadow: var(--light-box-shadow);
 
-                          i {
+                          .iconify {
                             color: var(--primary);
                           }
 
@@ -627,7 +627,7 @@ const isScrolling = computed(() => {
                           }
                         }
 
-                        i {
+                        .iconify {
                           color: var(--light-text);
                           font-size: 1.6rem;
                           margin-bottom: 10px;
@@ -679,66 +679,66 @@ const isScrolling = computed(() => {
                       border-bottom: 1px solid var(--fade-grey-dark-3);
 
                       &.is-primary {
-                        svg {
+                        .iconify {
                           color: var(--primary);
                         }
                       }
 
                       &.is-secondary {
-                        svg {
+                        .iconify {
                           color: var(--secondary);
                         }
                       }
 
                       &.is-info {
-                        svg {
+                        .iconify {
                           color: var(--info);
                         }
                       }
 
                       &.is-success {
-                        svg {
+                        .iconify {
                           color: var(--success);
                         }
                       }
 
                       &.is-warning {
-                        svg {
+                        .iconify {
                           color: var(--warning);
                         }
                       }
 
                       &.is-danger {
-                        svg {
+                        .iconify {
                           color: var(--danger);
                         }
                       }
 
                       &.is-green {
-                        svg {
+                        .iconify {
                           color: var(--green);
                         }
                       }
 
                       &.is-yellow {
-                        svg {
+                        .iconify {
                           color: var(--yellow);
                         }
                       }
 
                       &.is-purple {
-                        svg {
+                        .iconify {
                           color: var(--purple);
                         }
                       }
 
                       &.is-orange {
-                        svg {
+                        .iconify {
                           color: var(--orange);
                         }
                       }
 
-                      svg {
+                      .iconify {
                         stroke-width: 3px;
                         height: 12px;
                         width: 12px;
@@ -873,7 +873,7 @@ const isScrolling = computed(() => {
           box-shadow: var(--light-box-shadow);
         }
 
-        svg {
+        .iconify {
           height: 18px;
           width: 18px;
           stroke-width: 1.6px;
@@ -931,7 +931,7 @@ const isScrolling = computed(() => {
             }
 
             .logout-button {
-              svg {
+              .iconify {
                 color: var(--smoke-white) !important;
               }
             }
@@ -1013,7 +1013,7 @@ const isScrolling = computed(() => {
                 color: var(--primary);
               }
 
-              svg {
+              .iconify {
                 color: var(--primary);
               }
             }
@@ -1175,7 +1175,7 @@ const isScrolling = computed(() => {
               &:hover {
                 background: var(--primary-dark-5);
 
-                svg {
+                .iconify {
                   color: var(--smoke-white);
                 }
 
@@ -1185,7 +1185,7 @@ const isScrolling = computed(() => {
               }
 
               &.is-active {
-                svg {
+                .iconify {
                   color: var(--smoke-white);
                 }
 
@@ -1286,7 +1286,7 @@ const isScrolling = computed(() => {
                 .input {
                   color: var(--smoke-white);
 
-                  &:focus ~ .form-icon svg {
+                  &:focus ~ .form-icon .iconify {
                     color: var(--smoke-white) !important;
                   }
                 }
@@ -1303,7 +1303,7 @@ const isScrolling = computed(() => {
                 border-color: var(--landing-yyy-dark-12) !important;
               }
 
-              > svg {
+              > .iconify {
                 color: var(--smoke-white);
               }
             }
@@ -1315,7 +1315,7 @@ const isScrolling = computed(() => {
                   border-color: var(--landing-yyy-dark-12) !important;
                 }
 
-                svg {
+                .iconify {
                   color: var(--smoke-white);
                 }
               }

@@ -288,7 +288,7 @@ const isScrolling = computed(() => y.value > 30)
           box-shadow: var(--light-box-shadow);
         }
 
-        svg {
+        .iconify {
           height: 18px;
           width: 18px;
           stroke-width: 1.6px;
@@ -346,7 +346,7 @@ const isScrolling = computed(() => y.value > 30)
             }
 
             .logout-button {
-              svg {
+              .iconify {
                 stroke: var(--smoke-white) !important;
               }
             }
@@ -504,7 +504,7 @@ const isScrolling = computed(() => y.value > 30)
             background: var(--landing-yyy-dark-12);
           }
 
-          > svg {
+          > .iconify {
             color: var(--smoke-white);
             stroke: var(--smoke-white);
           }

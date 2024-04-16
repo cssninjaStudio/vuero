@@ -22,7 +22,7 @@ const date = ref(new Date())
     <VDatePicker v-model="date" mode="dateTime">
       <template #default="{ inputValue, inputEvents }">
         <VField>
-          <VControl icon="feather:calendar">
+          <VControl icon="lucide:calendar">
             <input
               class="input v-input"
               type="text"
@@ -45,7 +45,7 @@ const date = ref(new Date())
   <VDatePicker v-model="frontmatter.state.date" color="green" mode="dateTime">
     <template #default="{ inputValue, inputEvents }">
       <VField>
-        <VControl icon="feather:calendar">
+        <VControl icon="lucide:calendar">
           <input class="input v-input" type="text" :value="inputValue" v-on="inputEvents" />
         </VControl>
       </VField>

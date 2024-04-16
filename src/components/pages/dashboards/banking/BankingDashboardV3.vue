@@ -254,7 +254,7 @@ const { popularityGaugeOptions } = usePopularityGaugeChart()
             </template>
             <template #action>
               <VIconButton
-                icon="feather:plus"
+                icon="lucide:plus"
                 circle
                 dark-outlined
               />
@@ -274,7 +274,7 @@ const { popularityGaugeOptions } = usePopularityGaugeChart()
             </template>
             <template #action>
               <VIconButton
-                icon="feather:plus"
+                icon="lucide:plus"
                 circle
                 dark-outlined
               />
@@ -294,7 +294,7 @@ const { popularityGaugeOptions } = usePopularityGaugeChart()
             </template>
             <template #action>
               <VIconButton
-                icon="feather:plus"
+                icon="lucide:plus"
                 circle
                 dark-outlined
               />
@@ -314,7 +314,7 @@ const { popularityGaugeOptions } = usePopularityGaugeChart()
             </template>
             <template #action>
               <VIconButton
-                icon="feather:plus"
+                icon="lucide:plus"
                 circle
                 dark-outlined
               />

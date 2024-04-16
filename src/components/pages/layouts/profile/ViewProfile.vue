@@ -779,7 +779,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
             margin-inline-end: 6px;
           }
 
-          i {
+          .iconify {
             color: var(--primary);
           }
 
@@ -845,7 +845,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                     font-size: 0.85rem;
                     color: var(--light-text);
 
-                    i {
+                    .fas {
                       position: relative;
                       top: -2px;
                       font-size: 4px;
@@ -952,7 +952,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                   border: 1px solid var(--fade-grey-dark-3);
                   color: var(--light-text);
 
-                  i {
+                  .iconify {
                     font-size: 1.4rem;
                   }
                 }
@@ -1228,7 +1228,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
               color: var(--dark-dark-text);
             }
 
-            i {
+            .iconify {
               color: var(--primary);
             }
           }

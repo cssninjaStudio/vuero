@@ -40,11 +40,11 @@ const { optionsCircle } = useGrowthRadialChart()
               </div>
               <div class="tile-foot">
                 <span class="text-h-green">+6.4%
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:trending-up"
-                  />
+                    icon="lucide:trending-up"
+                  ></iconify-icon>
                 </span>
                 <span>since last month</span>
               </div>
@@ -73,11 +73,11 @@ const { optionsCircle } = useGrowthRadialChart()
               </div>
               <div class="tile-foot">
                 <span class="text-h-red">-2.1%
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:trending-down"
-                  />
+                    icon="lucide:trending-down"
+                  ></iconify-icon>
                 </span>
                 <span>going down</span>
               </div>
@@ -106,11 +106,11 @@ const { optionsCircle } = useGrowthRadialChart()
               </div>
               <div class="tile-foot">
                 <span class="text-h-green">+4.2%
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:trending-up"
-                  />
+                    icon="lucide:trending-up"
+                  ></iconify-icon>
                 </span>
                 <span>going up</span>
               </div>
@@ -192,11 +192,11 @@ const { optionsCircle } = useGrowthRadialChart()
                 />
                 <div class="progress-foot">
                   <span class="text-h-green">+6.4%
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify"
-                      data-icon="feather:trending-up"
-                    />
+                      icon="lucide:trending-up"
+                    ></iconify-icon>
                   </span>
                   <span>since last month</span>
                 </div>
@@ -256,16 +256,16 @@ const { optionsCircle } = useGrowthRadialChart()
             <div class="widget-toolbar">
               <div class="left">
                 <a class="action-icon">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify ltr-hidden"
-                    data-icon="feather:chevron-right"
-                  />
-                  <i
+                    icon="lucide:chevron-right"
+                  ></iconify-icon>
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify rtl-hidden"
-                    data-icon="feather:chevron-left"
-                  />
+                    icon="lucide:chevron-left"
+                  ></iconify-icon>
                 </a>
               </div>
               <div class="center">
@@ -273,16 +273,16 @@ const { optionsCircle } = useGrowthRadialChart()
               </div>
               <div class="right">
                 <a class="action-icon">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify rtl-hidden"
-                    data-icon="feather:chevron-right"
-                  />
-                  <i
+                    icon="lucide:chevron-right"
+                  ></iconify-icon>
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify ltr-hidden"
-                    data-icon="feather:chevron-left"
-                  />
+                    icon="lucide:chevron-left"
+                  ></iconify-icon>
                 </a>
               </div>
             </div>
@@ -467,11 +467,10 @@ const { optionsCircle } = useGrowthRadialChart()
         &:first-child {
           font-weight: 500;
 
-          svg {
-            height: 16px;
-            width: 16px;
+          .iconify {
+            font-size: 1.2em;
+            vertical-align: -0.2em;
             margin-inline-end: 6px;
-            stroke-width: 3px;
           }
         }
 
@@ -592,11 +591,10 @@ const { optionsCircle } = useGrowthRadialChart()
           &:first-child {
             font-weight: 500;
 
-            svg {
-              height: 16px;
-              width: 16px;
+            .iconify {
+              font-size: 1.2em;
+              vertical-align: -0.2em;
               margin-inline-end: 6px;
-              stroke-width: 3px;
             }
           }
 

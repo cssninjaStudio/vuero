@@ -26,7 +26,7 @@ watch([() => route.fullPath, dropdownElement], () => {
         <VButton
           aria-haspopup="true"
           aria-controls="dropdown-menu"
-          icon-caret="feather:chevron-down"
+          icon-caret="lucide:chevron-down"
           rounded
           @click="toggle"
         >
@@ -93,11 +93,11 @@ watch([() => route.fullPath, dropdownElement], () => {
           @click="selectedCategory = ''"
         >
           <span class="icon is-small">
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:arrow-left"
-            />
+              icon="lucide:arrow-left"
+            ></iconify-icon>
           </span>
         </button>
 
@@ -110,11 +110,11 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div class="column is-4">
             <div class="dropdown-item-group">
               <h4 class="column-heading is-info">
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:circle"
-                />
+                  icon="lucide:circle"
+                ></iconify-icon>
                 <span>All Dashboards</span>
               </h4>
 
@@ -255,11 +255,11 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div class="column is-4">
             <div class="dropdown-item-group">
               <h4 class="column-heading is-info">
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify is-vhidden"
-                  data-icon="feather:circle"
-                />
+                  icon="lucide:circle"
+                ></iconify-icon>
                 <span class="is-vhidden">All Dashboards</span>
               </h4>
 
@@ -428,11 +428,11 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div class="column is-4">
             <div class="dropdown-item-group">
               <h4 class="column-heading is-info">
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify is-vhidden"
-                  data-icon="feather:circle"
-                />
+                  icon="lucide:circle"
+                ></iconify-icon>
                 <span class="is-vhidden">All Dashboards</span>
               </h4>
 
@@ -566,11 +566,11 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div class="column is-4">
             <div class="dropdown-item-group">
               <h4 class="column-heading is-purple">
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:circle"
-                />
+                  icon="lucide:circle"
+                ></iconify-icon>
                 <span>Navigation</span>
               </h4>
 
@@ -797,11 +797,11 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div class="column is-4">
             <div class="dropdown-item-group">
               <h4 class="column-heading is-secondary">
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:circle"
-                />
+                  icon="lucide:circle"
+                ></iconify-icon>
                 <span>Widgets</span>
               </h4>
 
@@ -901,11 +901,11 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div class="column is-4">
             <div class="dropdown-item-group">
               <h4 class="column-heading is-success">
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:circle"
-                />
+                  icon="lucide:circle"
+                ></iconify-icon>
                 <span>Forms</span>
               </h4>
 

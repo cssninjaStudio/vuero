@@ -38,11 +38,11 @@ const dropdown2 = useDropdown(dropdownElement2)
         <span class="sender-email">&lt;elizabeth@vuero.io&gt;</span>
       </div>
       <div class="attachments is-vhidden inbox-hidden-mobile">
-        <i
+        <iconify-icon
           aria-hidden="true"
           class="iconify"
-          data-icon="feather:paperclip"
-        />
+          icon="lucide:paperclip"
+        ></iconify-icon>
         <span>0</span>
       </div>
       <div
@@ -55,39 +55,39 @@ const dropdown2 = useDropdown(dropdownElement2)
             @click="dropdown1.toggle"
           >
             <span class="icon is-small">
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:more-vertical"
-              />
+                icon="lucide:more-vertical"
+              ></iconify-icon>
             </span>
           </button>
         </div>
         <div class="dropdown-menu">
           <div class="dropdown-content">
             <a class="dropdown-item">
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:bookmark"
-              />
+                icon="lucide:bookmark"
+              ></iconify-icon>
               <span>Bookmark</span>
             </a>
             <a class="dropdown-item">
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:share-2"
-              />
+                icon="lucide:share-2"
+              ></iconify-icon>
               <span>Share message</span>
             </a>
             <hr class="dropdown-divider">
             <a class="dropdown-item">
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:thumbs-down"
-              />
+                icon="lucide:thumbs-down"
+              ></iconify-icon>
               <span>Mark as spam</span>
             </a>
           </div>
@@ -100,11 +100,11 @@ const dropdown2 = useDropdown(dropdownElement2)
         @keydown.space.prevent="emit('update:mobileMessageOpen', false)"
         @click="emit('update:mobileMessageOpen', false)"
       >
-        <i
+        <iconify-icon
           aria-hidden="true"
           class="iconify"
-          data-icon="feather:x"
-        />
+          icon="lucide:x"
+        ></iconify-icon>
       </a>
     </div>
     <!--Message-->
@@ -117,39 +117,39 @@ const dropdown2 = useDropdown(dropdownElement2)
           </div>
           <div class="message-actions">
             <a class="inbox-action">
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:corner-up-left"
-              />
+                icon="lucide:corner-up-left"
+              ></iconify-icon>
             </a>
             <a class="inbox-action">
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:file-text"
-              />
+                icon="lucide:file-text"
+              ></iconify-icon>
             </a>
             <a class="inbox-action">
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:tag"
-              />
+                icon="lucide:tag"
+              ></iconify-icon>
             </a>
             <a class="inbox-action">
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:message-circle"
-              />
+                icon="lucide:message-circle"
+              ></iconify-icon>
             </a>
             <a class="inbox-action">
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:lock"
-              />
+                icon="lucide:lock"
+              ></iconify-icon>
             </a>
           </div>
         </div>
@@ -207,27 +207,27 @@ const dropdown2 = useDropdown(dropdownElement2)
               <div class="dropdown-menu">
                 <div class="dropdown-content">
                   <a class="dropdown-item">
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify"
-                      data-icon="feather:refresh-cw"
-                    />
+                      icon="lucide:refresh-cw"
+                    ></iconify-icon>
                     <span>Reset</span>
                   </a>
                   <a class="dropdown-item">
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify"
-                      data-icon="feather:align-left"
-                    />
+                      icon="lucide:align-left"
+                    ></iconify-icon>
                     <span>Spelling</span>
                   </a>
                   <a class="dropdown-item">
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify"
-                      data-icon="feather:at-sign"
-                    />
+                      icon="lucide:at-sign"
+                    ></iconify-icon>
                     <span>Mention</span>
                   </a>
                 </div>

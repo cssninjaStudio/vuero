@@ -254,7 +254,7 @@ const chat = useChat()
         margin-bottom: 20px;
         color: var(--light-text);
 
-        svg {
+        .iconify {
           width: 16px;
           margin-inline-end: 8px;
         }

@@ -16,7 +16,7 @@
       font-size: 0.9rem;
     }
 
-    i {
+    .lnil {
       font-size: 1.2rem;
       margin-inline-end: 6px;
     }
@@ -49,12 +49,12 @@
       &:hover {
         border-color: var(--primary);
 
-        i {
+        .iconify {
           color: var(--primary);
         }
       }
 
-      i {
+      .fab {
         font-size: 0.9rem;
         color: var(--light-text);
         transition: color 0.3s;
@@ -78,7 +78,7 @@
         &:focus {
           border-color: var(--primary);
 
-          i {
+          .iconify {
             color: var(--primary);
           }
         }

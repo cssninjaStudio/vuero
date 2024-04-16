@@ -97,32 +97,32 @@ const totalColumns = {
       <div class="right">
         <div class="controls">
           <a class="action">
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:printer"
-            />
+              icon="lucide:printer"
+            ></iconify-icon>
           </a>
           <a class="action">
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:download-cloud"
-            />
+              icon="lucide:download-cloud"
+            ></iconify-icon>
           </a>
           <a class="action">
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:mail"
-            />
+              icon="lucide:mail"
+            ></iconify-icon>
           </a>
           <a class="action">
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:arrow-left"
-            />
+              icon="lucide:arrow-left"
+            ></iconify-icon>
           </a>
         </div>
       </div>
@@ -273,7 +273,7 @@ const totalColumns = {
             background: var(--fade-grey-dark-4);
           }
 
-          svg {
+          .iconify {
             height: 16px;
             width: 16px;
             stroke-width: 1.6px;

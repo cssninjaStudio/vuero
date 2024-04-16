@@ -1,7 +1,7 @@
 export const timeline = [
   {
     id: 0,
-    icon: 'feather:phone-call',
+    icon: 'lucide:phone-call',
     picture: undefined,
     title: 'Call Danny at Colby\'s',
     time: 'Today - 11:30am',
@@ -9,7 +9,7 @@ export const timeline = [
   },
   {
     id: 1,
-    icon: 'feather:phone-call',
+    icon: 'lucide:phone-call',
     picture: '/demo/avatars/7.jpg',
     title: 'Meeting with Alice',
     time: 'Today - 01:00pm',
@@ -17,7 +17,7 @@ export const timeline = [
   },
   {
     id: 2,
-    icon: 'feather:message-circle',
+    icon: 'lucide:message-circle',
     picture: undefined,
     title: 'Answer Annie\'s message',
     time: 'Today - 01:45pm',
@@ -25,7 +25,7 @@ export const timeline = [
   },
   {
     id: 3,
-    icon: 'feather:mail',
+    icon: 'lucide:mail',
     picture: undefined,
     title: 'Send new campaign',
     time: 'Today - 02:30pm',
@@ -33,7 +33,7 @@ export const timeline = [
   },
   {
     id: 4,
-    icon: 'feather:smile',
+    icon: 'lucide:smile',
     picture: undefined,
     title: 'Project review',
     time: 'Today - 03:30pm',
@@ -41,7 +41,7 @@ export const timeline = [
   },
   {
     id: 5,
-    icon: 'feather:phone-call',
+    icon: 'lucide:phone-call',
     picture: undefined,
     title: 'Call Trisha Jackson',
     time: 'Today - 05:00pm',
@@ -49,7 +49,7 @@ export const timeline = [
   },
   {
     id: 6,
-    icon: 'feather:feather',
+    icon: 'lucide:feather',
     picture: undefined,
     title: 'Write proposal for Don',
     time: 'Today - 06:00pm',

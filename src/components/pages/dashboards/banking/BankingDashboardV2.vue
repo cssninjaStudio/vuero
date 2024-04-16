@@ -61,11 +61,11 @@ const goto = (index: number) => {
               <div class="controls">
                 <button class="button is-large">
                   <span class="icon is-medium">
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify"
-                      data-icon="feather:plus"
-                    />
+                      icon="lucide:plus"
+                    ></iconify-icon>
                   </span>
                 </button>
               </div>
@@ -243,11 +243,11 @@ const goto = (index: number) => {
                   </div>
                   <div class="stat-block">
                     <div class="stat-icon is-up">
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify rtl-reflect"
-                        data-icon="feather:arrow-right"
-                      />
+                        icon="lucide:arrow-right"
+                      ></iconify-icon>
                     </div>
                     <div class="stat-text">
                       <span>+ 2,324.12</span>
@@ -260,11 +260,11 @@ const goto = (index: number) => {
                   </div>
                   <div class="stat-block">
                     <div class="stat-icon is-down">
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify rtl-reflect"
-                        data-icon="feather:arrow-right"
-                      />
+                        icon="lucide:arrow-right"
+                      ></iconify-icon>
                     </div>
                     <div class="stat-text">
                       <span>+ 518.41</span>
@@ -500,7 +500,7 @@ const goto = (index: number) => {
 
             .button {
               .icon {
-                svg {
+                .iconify {
                   height: 20px;
                   width: 20px;
                 }
@@ -697,7 +697,7 @@ const goto = (index: number) => {
                   &.is-up {
                     transform: rotate(calc(var(--transform-direction) * -45deg));
 
-                    svg {
+                    .iconify {
                       color: var(--green);
                     }
                   }
@@ -705,12 +705,12 @@ const goto = (index: number) => {
                   &.is-down {
                     transform: rotate(calc(var(--transform-direction) * 45deg));
 
-                    svg {
+                    .iconify {
                       color: var(--red);
                     }
                   }
 
-                  svg {
+                  .iconify {
                     height: 16px;
                     width: 16px;
                     stroke-width: 3px;

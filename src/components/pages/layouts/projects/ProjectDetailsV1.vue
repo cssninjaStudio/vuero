@@ -75,7 +75,7 @@ const participants = [
 
                 <VIconButton
                   size="small"
-                  icon="feather:edit-3"
+                  icon="lucide:edit-3"
                   tabindex="0"
                   @keydown.space.prevent="panels.setActive('task')"
                   @click="panels.setActive('task')"
@@ -916,7 +916,7 @@ const participants = [
           margin-inline-end: 20px;
           width: calc(25% - 20px);
 
-          i {
+          .lnil {
             font-size: 1.6rem;
             color: var(--primary);
             margin-bottom: 8px;
@@ -990,7 +990,7 @@ const participants = [
                 font-size: 0.9rem;
                 color: var(--light-text);
 
-                i {
+                .fas {
                   position: relative;
                   top: -3px;
                   font-size: 0.3rem;
@@ -1129,7 +1129,7 @@ const participants = [
               display: flex;
               align-items: center;
 
-              i {
+              .iconify {
                 font-size: 15px;
                 color: var(--light-text);
               }
@@ -1166,7 +1166,7 @@ const participants = [
           border-color: var(--dark-sidebar-light-12);
 
           .project-feature {
-            i {
+            .iconify {
               color: var(--primary);
             }
 

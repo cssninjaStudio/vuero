@@ -40,7 +40,7 @@ const range = reactive({
             >
           </VControl>
           <VControl>
-            <VButton static icon="feather:arrow-right" />
+            <VButton static icon="lucide:arrow-right" />
           </VControl>
           <VControl subcontrol>
             <input
@@ -65,13 +65,13 @@ const range = reactive({
   <VDatePicker v-model.range="frontmatter.state.range" color="green" trim-weeks>
     <template v-slot="{ inputValue, inputEvents }">
       <VField addons>
-        <VControl expanded icon="feather:corner-down-right">
+        <VControl expanded icon="lucide:corner-down-right">
           <input class="input v-input" type="text" :value="inputValue.start" v-on="inputEvents.start" />
         </VControl>
         <VControl>
           <VButton static>to</VButton>
         </VControl>
-        <VControl expanded icon="feather:corner-right-up" subcontrol>
+        <VControl expanded icon="lucide:corner-right-up" subcontrol>
           <input class="input v-input" type="text" :value="inputValue.end" v-on="inputEvents.end" />
         </VControl>
       </VField>

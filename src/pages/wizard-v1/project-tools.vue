@@ -62,11 +62,11 @@ wizard.setStep({
                   </template>
                   <template #action>
                     <div class="checkmark">
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:check"
-                      />
+                        icon="lucide:check"
+                      ></iconify-icon>
                     </div>
                   </template>
                 </VBlock>

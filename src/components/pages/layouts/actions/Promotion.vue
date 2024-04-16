@@ -51,7 +51,7 @@
 
               <template #icon>
                 <VIconWrap
-                  icon="feather:check"
+                  icon="lucide:check"
                   dark="3"
                   dark-primary
                   dark-card-bordered
@@ -64,7 +64,7 @@
 
               <template #icon>
                 <VIconWrap
-                  icon="feather:check"
+                  icon="lucide:check"
                   dark="3"
                   dark-primary
                   dark-card-bordered
@@ -79,7 +79,7 @@
 
               <template #icon>
                 <VIconWrap
-                  icon="feather:check"
+                  icon="lucide:check"
                   dark="3"
                   dark-primary
                   dark-card-bordered
@@ -189,7 +189,7 @@
               box-shadow: var(--light-box-shadow);
               color: var(--primary);
 
-              svg {
+              .iconify {
                 width: 16px;
                 height: 16px;
                 stroke-width: 3px;

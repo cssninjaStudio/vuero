@@ -123,7 +123,7 @@ defineExpose({
       .is-trigger {
         background: var(--fade-grey-light-2);
 
-        svg {
+        .iconify {
           color: var(--light-text-dark-4);
         }
       }
@@ -143,12 +143,9 @@ defineExpose({
         vertical-align: middle;
       }
 
-      svg {
-        height: 20px;
-        width: 20px;
+      .iconify {
+        font-size: 20px;
         color: var(--light-text);
-        stroke-width: 1.6px;
-        transition: stroke 0.3s;
       }
     }
 
@@ -182,7 +179,7 @@ defineExpose({
           vertical-align: middle;
         }
 
-        svg {
+        .iconify {
           height: 16px;
           width: 16px;
           color: var(--light-text);
@@ -239,7 +236,7 @@ defineExpose({
         &:focus,
         &.is-active {
           .icon {
-            svg {
+            .iconify {
               color: var(--primary);
             }
 
@@ -257,7 +254,7 @@ defineExpose({
           height: 28px;
           width: 28px;
 
-          svg {
+          .iconify {
             height: 18px;
             width: 18px;
             transition: stroke 0.3s;
@@ -358,7 +355,7 @@ defineExpose({
         align-items: center;
         padding-inline-end: 1rem;
 
-        svg {
+        .iconify {
           height: 16px;
           width: 16px;
           color: var(--muted-grey);
@@ -438,7 +435,7 @@ defineExpose({
       background: var(--dark-sidebar-light-2) !important;
     }
 
-    svg {
+    .iconify {
       color: var(--dark-dark-text);
     }
   }
@@ -451,7 +448,7 @@ defineExpose({
         .is-trigger {
           background: var(--dark-sidebar-light-2) !important;
 
-          svg {
+          .iconify {
             color: var(--dark-dark-text);
           }
         }
@@ -498,7 +495,7 @@ defineExpose({
           .is-media {
             &:hover {
               .icon {
-                svg {
+                .iconify {
                   color: var(--primary) !important;
                 }
 
@@ -511,7 +508,7 @@ defineExpose({
 
             &.is-active {
               .icon {
-                svg {
+                .iconify {
                   color: var(--white) !important;
                 }
 
@@ -527,7 +524,7 @@ defineExpose({
             }
 
             .icon {
-              svg {
+              .iconify {
                 color: var(--light-text);
               }
 

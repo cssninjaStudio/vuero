@@ -89,7 +89,7 @@
       background: var(--widget-grey-dark-4);
       color: var(--dark-text);
 
-      i {
+      .iconify {
         padding-inline-end: 4px;
 
         &::before {
@@ -175,7 +175,7 @@
     &:not(.is-stacked) {
       .multiselect {
         .multiselect-tag {
-          i {
+          .iconify {
             &:hover {
               &::before {
                 color: var(--white) !important;

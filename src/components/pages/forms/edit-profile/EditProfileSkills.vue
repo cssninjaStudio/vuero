@@ -210,7 +210,7 @@ const onSave = async () => {
                 </div>
                 <div class="column is-12">
                   <VField>
-                    <VControl icon="feather:message-circle">
+                    <VControl icon="lucide:message-circle">
                       <VInput
                         type="text"
                         placeholder="Write a quick comment..."

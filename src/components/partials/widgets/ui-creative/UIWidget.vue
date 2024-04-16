@@ -81,7 +81,7 @@ const props = defineProps<{
         }
       }
 
-      svg {
+      .iconify {
         height: 18px;
         width: 18px;
         transition: stroke 0.3s;
@@ -112,7 +112,7 @@ const props = defineProps<{
     color: var(--light-text-light-12);
     transition: all 0.3s; // transition-all test
 
-    svg {
+    .iconify {
       height: 18px;
       width: 18px;
       transition: stroke 0.3s;
@@ -211,7 +211,7 @@ const props = defineProps<{
         color: var(--white);
         cursor: pointer;
 
-        svg {
+        .iconify {
           height: 18px;
           width: 18px;
         }
@@ -278,6 +278,7 @@ const props = defineProps<{
         align-items: center;
         height: 32px;
         width: 32px;
+        font-size: 18px;
         min-width: 32px;
         border-radius: var(--radius-rounded);
         color: var(--light-text-light-12);
@@ -292,7 +293,7 @@ const props = defineProps<{
           color: var(--primary);
         }
 
-        svg {
+        .iconify {
           height: 18px;
           width: 18px;
           transition: stroke 0.3s;
@@ -439,7 +440,7 @@ const props = defineProps<{
         font-weight: 700;
         color: var(--dark-text);
 
-        svg {
+        .iconify {
           color: var(--success);
         }
       }
@@ -503,12 +504,12 @@ const props = defineProps<{
         color: var(--light-text-dark-6);
         transition: all 0.3s; // transition-all test
 
-        svg {
+        .iconify {
           transition: stroke 0.3s;
         }
 
         img,
-        svg {
+        .iconify {
           height: 18px;
           width: 18px;
         }
@@ -518,7 +519,7 @@ const props = defineProps<{
           border: 1px solid var(--fade-grey-dark-3);
           color: var(--light-text);
 
-          i {
+          .iconify {
             font-size: 1.4rem;
           }
         }
@@ -562,7 +563,7 @@ const props = defineProps<{
       flex-direction: column;
       font-family: var(--font);
 
-      > svg {
+      > .iconify {
         height: 20px;
         width: 20px;
         stroke-width: 1.6px;
@@ -584,7 +585,7 @@ const props = defineProps<{
         margin-top: auto;
         color: var(--light-text);
 
-        svg {
+        .iconify {
           height: 14px;
           width: 14px;
           stroke-width: 1.4px;
@@ -647,7 +648,7 @@ const props = defineProps<{
         color: var(--primary);
         margin-bottom: 6px;
 
-        i {
+        .iconify {
           font-size: 6px;
           margin-inline-end: 6px;
         }
@@ -902,7 +903,7 @@ const props = defineProps<{
           }
         }
 
-        svg {
+        .iconify {
           height: 18px;
           width: 18px;
           transition: stroke 0.3s;
@@ -983,7 +984,7 @@ const props = defineProps<{
         box-shadow: var(--primary-box-shadow);
       }
 
-      svg {
+      .iconify {
         height: 16px;
         width: 16px;
         transition: stroke 0.3s;
@@ -1033,7 +1034,7 @@ const props = defineProps<{
         color: var(--white);
         cursor: pointer;
 
-        svg {
+        .iconify {
           height: 18px;
           width: 18px;
         }
@@ -1094,7 +1095,7 @@ const props = defineProps<{
         background: var(--widget-grey);
         margin: 0 auto 4px;
 
-        i {
+        .iconify {
           font-size: 14px;
           color: var(--light-text);
         }
@@ -1227,7 +1228,7 @@ const props = defineProps<{
 
   .video-widget {
     .widget-meta {
-      > svg {
+      > .iconify {
         color: var(--primary);
       }
 

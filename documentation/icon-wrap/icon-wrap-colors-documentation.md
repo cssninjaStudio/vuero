@@ -13,15 +13,15 @@ See code for more details about usage.
     row-gap=".5rem"
     column-gap=".25rem"
   >
-    <VIconWrap icon="feather:star" color="primary" />
-    <VIconWrap icon="feather:star" color="secondary" />
-    <VIconWrap icon="feather:star" color="success" />
-    <VIconWrap icon="feather:star" color="link" />
-    <VIconWrap icon="feather:star" color="info" />
-    <VIconWrap icon="feather:star" color="warning" />
-    <VIconWrap icon="feather:star" color="danger" />
-    <VIconWrap icon="feather:star" color="black" />
-    <VIconWrap icon="feather:star" color="white" />
+    <VIconWrap icon="lucide:star" color="primary" />
+    <VIconWrap icon="lucide:star" color="secondary" />
+    <VIconWrap icon="lucide:star" color="success" />
+    <VIconWrap icon="lucide:star" color="link" />
+    <VIconWrap icon="lucide:star" color="info" />
+    <VIconWrap icon="lucide:star" color="warning" />
+    <VIconWrap icon="lucide:star" color="danger" />
+    <VIconWrap icon="lucide:star" color="black" />
+    <VIconWrap icon="lucide:star" color="white" />
   </VFlex>
   <VFlex
     class="mt-4"
@@ -29,47 +29,47 @@ See code for more details about usage.
     column-gap=".25rem"
   >
     <VIconWrap
-      icon="feather:star"
+      icon="lucide:star"
       has-background
       color="primary"
     />
     <VIconWrap
-      icon="feather:star"
+      icon="lucide:star"
       has-background
       color="secondary"
     />
     <VIconWrap
-      icon="feather:star"
+      icon="lucide:star"
       has-background
       color="success"
     />
     <VIconWrap
-      icon="feather:star"
+      icon="lucide:star"
       has-background
       color="link"
     />
     <VIconWrap
-      icon="feather:star"
+      icon="lucide:star"
       has-background
       color="info"
     />
     <VIconWrap
-      icon="feather:star"
+      icon="lucide:star"
       has-background
       color="warning"
     />
     <VIconWrap
-      icon="feather:star"
+      icon="lucide:star"
       has-background
       color="danger"
     />
     <VIconWrap
-      icon="feather:star"
+      icon="lucide:star"
       has-background
       color="black"
     />
     <VIconWrap
-      icon="feather:star"
+      icon="lucide:star"
       has-background
       color="white"
     />
@@ -88,26 +88,26 @@ See code for more details about usage.
   row-gap=".5rem"
   column-gap=".25rem"
 >
-    <VIconWrap icon="feather:star" color="primary" />
-    <VIconWrap icon="feather:star" color="secondary" />
-    <VIconWrap icon="feather:star" color="success" />
-    <VIconWrap icon="feather:star" color="link" />
-    <VIconWrap icon="feather:star" color="info" />
-    <VIconWrap icon="feather:star" color="warning" />
-    <VIconWrap icon="feather:star" color="danger" />
-    <VIconWrap icon="feather:star" color="black" />
-    <VIconWrap icon="feather:star" color="white" />
+    <VIconWrap icon="lucide:star" color="primary" />
+    <VIconWrap icon="lucide:star" color="secondary" />
+    <VIconWrap icon="lucide:star" color="success" />
+    <VIconWrap icon="lucide:star" color="link" />
+    <VIconWrap icon="lucide:star" color="info" />
+    <VIconWrap icon="lucide:star" color="warning" />
+    <VIconWrap icon="lucide:star" color="danger" />
+    <VIconWrap icon="lucide:star" color="black" />
+    <VIconWrap icon="lucide:star" color="white" />
   </VFlex>
   <VFlex class="mt-4" align-items="flex-end" column-gap=".25rem">
-    <VIconWrap icon="feather:star" has-background color="primary" />
-    <VIconWrap icon="feather:star" has-background color="secondary" />
-    <VIconWrap icon="feather:star" has-background color="success" />
-    <VIconWrap icon="feather:star" has-background color="link" />
-    <VIconWrap icon="feather:star" has-background color="info" />
-    <VIconWrap icon="feather:star" has-background color="warning" />
-    <VIconWrap icon="feather:star" has-background color="danger" />
-    <VIconWrap icon="feather:star" has-background color="black" />
-    <VIconWrap icon="feather:star" has-background color="white" />
+    <VIconWrap icon="lucide:star" has-background color="primary" />
+    <VIconWrap icon="lucide:star" has-background color="secondary" />
+    <VIconWrap icon="lucide:star" has-background color="success" />
+    <VIconWrap icon="lucide:star" has-background color="link" />
+    <VIconWrap icon="lucide:star" has-background color="info" />
+    <VIconWrap icon="lucide:star" has-background color="warning" />
+    <VIconWrap icon="lucide:star" has-background color="danger" />
+    <VIconWrap icon="lucide:star" has-background color="black" />
+    <VIconWrap icon="lucide:star" has-background color="white" />
   </VFlex>
 </div>
 

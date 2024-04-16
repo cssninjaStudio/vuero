@@ -229,7 +229,7 @@ useHead({
             z-index: 1;
             transition: all 0.3s; // transition-all test
 
-            i {
+            .iconify {
               color: var(--light-text);
               font-size: 0.9rem;
             }
@@ -314,7 +314,7 @@ useHead({
             cursor: pointer;
             transition: all 0.3s; // transition-all test
 
-            i {
+            .iconify {
               font-size: 0.8rem;
             }
           }
@@ -450,7 +450,7 @@ useHead({
                   height 0.3s,
                   width 0.3s;
 
-                svg {
+                .iconify {
                   height: 14px;
                   width: 14px;
                   stroke-width: 3px;
@@ -630,7 +630,7 @@ useHead({
                   height 0.3s,
                   width 0.3s;
 
-                i {
+                .iconify {
                   font-size: 12px;
                   color: var(--light-text);
                 }
@@ -756,7 +756,7 @@ useHead({
                   color: var(--light-text);
                 }
 
-                svg {
+                .iconify {
                   height: 18px;
                   width: 18px;
                   transition: stroke 0.3s;
@@ -884,7 +884,7 @@ useHead({
                 align-items: center;
                 margin: 0 auto;
 
-                svg {
+                .iconify {
                   width: 28px;
                   height: 28px;
                 }
@@ -946,7 +946,7 @@ useHead({
                   color: var(--light-text);
                 }
 
-                svg {
+                .iconify {
                   height: 18px;
                   width: 18px;
                   transition: stroke 0.3s;
@@ -1073,7 +1073,7 @@ useHead({
             width: 28px;
             color: var(--light-text);
 
-            svg {
+            .iconify {
               height: 18px;
               width: 18px;
             }
@@ -1356,7 +1356,7 @@ useHead({
               border-color: var(--dark-sidebar-light-12);
               background: var(--dark-sidebar-light-2);
 
-              i {
+              .iconify {
                 color: var(--light-text);
               }
             }
@@ -1450,7 +1450,7 @@ useHead({
                 border-color: var(--primary);
 
                 .uploader-label {
-                  i {
+                  .iconify {
                     color: var(--primary);
                   }
                 }

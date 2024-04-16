@@ -23,7 +23,7 @@ useHead({
         {
           label: 'Vuero',
           hideLabel: true,
-          icon: 'feather:home',
+          icon: 'lucide:home',
           to: '/',
         },
         {
@@ -71,7 +71,7 @@ useHead({
             >
               <template #action>
                 <VIconButton
-                  icon="feather:heart"
+                  icon="lucide:heart"
                   circle
                 />
               </template>

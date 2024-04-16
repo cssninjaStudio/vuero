@@ -142,7 +142,7 @@ const handleSignup = handleSubmit(async (values) => {
       v-slot="{ field }"
       label="Your email"
     >
-      <VControl icon="feather:user">
+      <VControl icon="lucide:user">
         <VInput
           type="email"
           placeholder="john.doe@gmail.com"
@@ -158,7 +158,7 @@ const handleSignup = handleSubmit(async (values) => {
       v-slot="{ field }"
       label="Choose a password"
     >
-      <VControl icon="feather:lock">
+      <VControl icon="lucide:lock">
         <VInput
           type="password"
           placeholder="Not$3cret"
@@ -174,7 +174,7 @@ const handleSignup = handleSubmit(async (values) => {
       v-slot="{ field }"
       label="Confirm your new password"
     >
-      <VControl icon="feather:check">
+      <VControl icon="lucide:check">
         <VInput
           type="password"
           placeholder="Not$3cret"
@@ -190,7 +190,7 @@ const handleSignup = handleSubmit(async (values) => {
       v-slot="{ field }"
       label="Birthdate"
     >
-      <VControl icon="feather:calendar">
+      <VControl icon="lucide:calendar">
         <ClientOnly>
           <VDatePicker
             :model-value="field?.value"
@@ -372,7 +372,7 @@ const handleSignup = handleSubmit(async (values) => {
             raised
             circle
             color="danger"
-            icon="feather:trash-2"
+            icon="lucide:trash-2"
             @click="() => remove(index)"
           />
         </div>

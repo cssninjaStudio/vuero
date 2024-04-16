@@ -89,7 +89,7 @@ const stayFocus = useLocalStorage('disable-stay-focus', '')
     transition: all 0.3s; // transition-all test
 
     &:hover {
-      svg {
+      .iconify {
         color: var(--dark-text);
       }
     }
@@ -98,7 +98,7 @@ const stayFocus = useLocalStorage('disable-stay-focus', '')
       border-color: var(--fade-grey-dark-6);
       transform: rotate(calc(var(--transform-direction) * 180deg));
 
-      svg {
+      .iconify {
         color: var(--primary);
 
         &.open {
@@ -111,7 +111,7 @@ const stayFocus = useLocalStorage('disable-stay-focus', '')
       }
     }
 
-    svg {
+    .iconify {
       height: 16px;
       width: 16px;
       color: var(--light-text);
@@ -195,7 +195,7 @@ const stayFocus = useLocalStorage('disable-stay-focus', '')
             color: var(--primary);
           }
 
-          svg {
+          .iconify {
             transform: scale(1.1);
             color: var(--primary);
           }
@@ -211,7 +211,7 @@ const stayFocus = useLocalStorage('disable-stay-focus', '')
         transition: all 0.35s;
       }
 
-      svg {
+      .iconify {
         height: 20px;
         width: 20px;
         stroke-width: 1.8px;
@@ -367,7 +367,7 @@ const stayFocus = useLocalStorage('disable-stay-focus', '')
 
         &:hover,
         &:focus {
-          svg {
+          .iconify {
             color: var(--light-text);
           }
         }
@@ -376,7 +376,7 @@ const stayFocus = useLocalStorage('disable-stay-focus', '')
           border-color: var(--dark-sidebar-light-16);
           background: var(--dark-sidebar-light-12);
 
-          svg {
+          .iconify {
             color: var(--primary);
           }
         }
@@ -394,7 +394,7 @@ const stayFocus = useLocalStorage('disable-stay-focus', '')
           color: var(--primary);
         }
 
-        svg {
+        .iconify {
           color: var(--primary);
         }
       }

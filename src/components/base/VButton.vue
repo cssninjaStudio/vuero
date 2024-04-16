@@ -192,10 +192,9 @@ export default defineComponent({
 
       let iconWrapper
       if (isIconify.value) {
-        const icon = h('i', {
-          'aria-hidden': true,
+        const icon = h('iconify-icon', {
           'class': 'iconify',
-          'data-icon': props.icon,
+          'icon': props.icon,
         })
         iconWrapper = h('span', { class: 'icon' }, icon)
       }
@@ -206,10 +205,9 @@ export default defineComponent({
 
       let caretWrapper
       if (isCaretIconify.value) {
-        const caret = h('i', {
-          'aria-hidden': true,
+        const caret = h('iconify-icon', {
           'class': 'iconify',
-          'data-icon': props.iconCaret,
+          'icon': props.iconCaret,
         })
         caretWrapper = h('span', { class: 'caret' }, caret)
       }
@@ -436,7 +434,7 @@ export default defineComponent({
     }
 
     &.has-icon {
-      svg {
+      .iconify {
         height: 16px;
         width: 16px;
       }
@@ -447,14 +445,14 @@ export default defineComponent({
       color: var(--primary);
     }
 
-    svg {
+    .iconify {
       height: 18px;
       width: 18px;
     }
   }
 
   .icon {
-    svg {
+    .iconify {
       height: 14px;
       width: 14px;
     }

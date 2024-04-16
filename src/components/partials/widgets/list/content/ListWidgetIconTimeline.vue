@@ -31,12 +31,12 @@ const props = withDefaults(
           alt=""
           @error.once="onceImageErrored(150)"
         >
-        <i
+        <iconify-icon
           v-else
           aria-hidden="true"
           class="iconify"
-          :data-icon="item.icon"
-        />
+          :icon="item.icon"
+        ></iconify-icon>
       </div>
       <div class="timeline-content">
         <p>{{ item.title }}</p>
@@ -100,7 +100,7 @@ const props = withDefaults(
           border-color: var(--primary);
           box-shadow: var(--primary-box-shadow);
 
-          svg {
+          .iconify {
             color: var(--smoke-white);
           }
         }
@@ -110,7 +110,7 @@ const props = withDefaults(
           border-color: var(--info);
           box-shadow: var(--info-box-shadow);
 
-          svg {
+          .iconify {
             color: var(--smoke-white);
           }
         }
@@ -120,7 +120,7 @@ const props = withDefaults(
           border-color: var(--success);
           box-shadow: var(--success-box-shadow);
 
-          svg {
+          .iconify {
             color: var(--smoke-white);
           }
         }
@@ -130,7 +130,7 @@ const props = withDefaults(
           border-color: var(--orange);
           box-shadow: var(--orange-box-shadow);
 
-          svg {
+          .iconify {
             color: var(--smoke-white);
           }
         }
@@ -139,7 +139,7 @@ const props = withDefaults(
           background: var(--yellow);
           border-color: var(--yellow);
 
-          svg {
+          .iconify {
             color: var(--smoke-white);
           }
         }
@@ -151,7 +151,7 @@ const props = withDefaults(
           border-radius: var(--radius-rounded);
         }
 
-        svg {
+        .iconify {
           height: 16px;
           width: 16px;
           stroke-width: 1.6px;
@@ -201,7 +201,7 @@ const props = withDefaults(
             border-color: var(--primary);
             box-shadow: var(--primary-box-shadow);
 
-            svg {
+            .iconify {
               color: var(--smoke-white);
             }
           }

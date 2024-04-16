@@ -90,11 +90,11 @@ const controlClasees = computed(() => {
         v-if="isIconify"
         class="form-icon"
       >
-        <i
+        <iconify-icon
           aria-hidden="true"
-          :data-icon="props.icon"
+          :icon="props.icon"
           class="iconify"
-        />
+        ></iconify-icon>
       </VLabel>
       <VLabel
         v-else
@@ -111,11 +111,11 @@ const controlClasees = computed(() => {
       v-if="isValid"
       class="validation-icon is-success"
     >
-      <i
+      <iconify-icon
         aria-hidden="true"
-        data-icon="feather:check"
+        icon="lucide:check"
         class="iconify"
-      />
+      ></iconify-icon>
     </VLabel>
     <a
       v-else-if="hasError"
@@ -125,11 +125,11 @@ const controlClasees = computed(() => {
       @click.prevent="() => field?.resetField?.()"
       @keyup.enter.prevent="() => field?.resetField?.()"
     >
-      <i
+      <iconify-icon
         aria-hidden="true"
-        data-icon="feather:x"
+        icon="lucide:x"
         class="iconify"
-      />
+      ></iconify-icon>
     </a>
 
     <slot

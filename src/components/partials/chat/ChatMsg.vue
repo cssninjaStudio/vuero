@@ -72,20 +72,20 @@ const props = defineProps<{
           <div class="image-actions">
             <div class="actions-inner">
               <div class="action download">
-                <span
+                <iconify-icon
                   class="iconify"
-                  data-icon="feather:download"
-                />
+                  icon="lucide:download"
+                ></iconify-icon>
               </div>
               <a
                 :href="props.message.content.image_url"
                 class="action messaging-popup"
                 aria-label="Maximize"
               >
-                <span
+                <iconify-icon
                   class="iconify"
-                  data-icon="feather:maximize"
-                />
+                  icon="lucide:maximize"
+                ></iconify-icon>
               </a>
             </div>
           </div>
@@ -134,7 +134,7 @@ const props = defineProps<{
         >
       </div>
       <div class="msg is-link">
-        <VIconWrap icon="feather:link" />
+        <VIconWrap icon="lucide:link" />
         <p class="link-meta">
           <span>{{ props.message.content.text }}</span>
           <a href="#">{{ props.message.content.subtext }}</a>
@@ -226,12 +226,12 @@ const props = defineProps<{
             &:hover {
               background: var(--success);
 
-              svg {
+              .iconify {
                 color: var(--smoke-white);
               }
             }
 
-            svg {
+            .iconify {
               height: 18px;
               width: 18px;
               color: var(--success);
@@ -323,7 +323,7 @@ const props = defineProps<{
       justify-content: center;
       align-items: center;
 
-      svg {
+      .iconify {
         width: 16px;
         height: 16px;
         color: var(--white);

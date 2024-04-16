@@ -99,7 +99,7 @@ onMounted(() => {
   <VPageContent class="kanban-content">
     <div class="kanban-toolbar">
       <VField raw>
-        <VControl icon="feather:search">
+        <VControl icon="lucide:search">
           <VInput
             v-model="search"
             placeholder="Search..."
@@ -147,11 +147,11 @@ onMounted(() => {
               @keydown.space.prevent="isColumnNewCollapsed = false"
               @click="isColumnNewCollapsed = false"
             >
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:plus"
-              />
+                icon="lucide:plus"
+              ></iconify-icon>
             </div>
             <div>
               <span class="task-count">{{ newTasks.length }}</span>
@@ -265,11 +265,11 @@ onMounted(() => {
               @keydown.space.prevent="isColumnProgressCollapsed = false"
               @click="isColumnProgressCollapsed = false"
             >
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:plus"
-              />
+                icon="lucide:plus"
+              ></iconify-icon>
             </div>
             <div>
               <span class="task-count">{{ progressTasks.length }}</span>
@@ -328,11 +328,11 @@ onMounted(() => {
                   </h4>
                   <div class="kanban-card-stats">
                     <span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:clock"
-                      />
+                        icon="lucide:clock"
+                      ></iconify-icon>
                       {{ task.dueDate }}
                     </span>
 
@@ -371,11 +371,11 @@ onMounted(() => {
               @keydown.space.prevent="isColumnReadyCollapsed = false"
               @click="isColumnReadyCollapsed = false"
             >
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:plus"
-              />
+                icon="lucide:plus"
+              ></iconify-icon>
             </div>
             <div>
               <span class="task-count">{{ readyTasks.length }}</span>
@@ -440,11 +440,11 @@ onMounted(() => {
                   </h4>
                   <div class="kanban-card-stats">
                     <span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:clock"
-                      />
+                        icon="lucide:clock"
+                      ></iconify-icon>
                       {{ task.dueDate }}
                     </span>
 
@@ -483,11 +483,11 @@ onMounted(() => {
               @keydown.space.prevent="isColumnReviewCollapsed = false"
               @click="isColumnReviewCollapsed = false"
             >
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:plus"
-              />
+                icon="lucide:plus"
+              ></iconify-icon>
             </div>
             <div>
               <span class="task-count"> {{ reviewTasks.length }}</span>
@@ -546,11 +546,11 @@ onMounted(() => {
                   </h4>
                   <div class="kanban-card-stats">
                     <span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:clock"
-                      />
+                        icon="lucide:clock"
+                      ></iconify-icon>
                       {{ task.dueDate }}
                     </span>
 
@@ -589,11 +589,11 @@ onMounted(() => {
               @keydown.space.prevent="isColumnCompletedCollapsed = false"
               @click="isColumnCompletedCollapsed = false"
             >
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:plus"
-              />
+                icon="lucide:plus"
+              ></iconify-icon>
             </div>
             <div>
               <span class="task-count">{{ completedTasks.length }}</span>
@@ -652,11 +652,11 @@ onMounted(() => {
                   </h4>
                   <div class="kanban-card-stats">
                     <span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:clock"
-                      />
+                        icon="lucide:clock"
+                      ></iconify-icon>
                       {{ task.dueDate }}
                     </span>
 
@@ -723,7 +723,7 @@ onMounted(() => {
         margin-inline-end: 20px;
       }
 
-      svg {
+      .iconify {
         height: 18px;
         width: 18px;
         color: var(--dark-text);
@@ -747,7 +747,7 @@ onMounted(() => {
           width: 18px;
           cursor: pointer;
 
-          svg {
+          .iconify {
             height: 18px;
             width: 18px;
             color: var(--light-text-dark-8);
@@ -824,7 +824,7 @@ onMounted(() => {
           transition: all 0.3s; // transition-all test
           cursor: pointer;
 
-          svg {
+          .iconify {
             height: 18px;
             width: 18px;
             transition: all 0.3s; // transition-all test
@@ -834,7 +834,7 @@ onMounted(() => {
           &:hover {
             border-color: var(--primary);
 
-            svg {
+            .iconify {
               color: var(--primary);
             }
           }
@@ -985,7 +985,7 @@ onMounted(() => {
         font-size: 0.9rem;
         color: var(--light-text);
 
-        svg {
+        .iconify {
           position: relative;
           top: 2px;
           height: 14px;
@@ -1045,7 +1045,7 @@ onMounted(() => {
 
         &:hover,
         &:focus {
-          svg {
+          .iconify {
             color: var(--primary) !important;
           }
         }
@@ -1055,7 +1055,7 @@ onMounted(() => {
         background: var(--primary) !important;
         border-color: var(--primary) !important;
 
-        svg {
+        .iconify {
           color: var(--white) !important;
         }
       }
@@ -1070,7 +1070,7 @@ onMounted(() => {
         color: var(--body-color);
       }
 
-      .is-trigger svg {
+      .is-trigger .iconify {
         color: var(--body-color) !important;
       }
     }
@@ -1186,7 +1186,7 @@ onMounted(() => {
         height: 18px;
         width: 18px;
 
-        svg {
+        .iconify {
           height: 12px;
           width: 12px;
         }

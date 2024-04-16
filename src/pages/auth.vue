@@ -47,7 +47,7 @@
         margin-inline-start: 0 !important;
       }
 
-      svg {
+      .iconify {
         height: 42px;
         width: 42px;
       }
@@ -330,7 +330,7 @@
 @media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
   .modern-login {
     .top-logo {
-      svg {
+      .iconify {
         height: 60px;
         width: 60px;
       }

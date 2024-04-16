@@ -20,7 +20,7 @@ const filteredIcons = computed(() => {
 })
 
 function getSnippet(icon: any) {
-  return `<i class="iconify" data-icon="feather:${icon.name}" aria-hidden="true"></i>`
+  return `<iconify-icon class="iconify" icon="lucide:${icon.name}" aria-hidden="true"></iconify-icon>`
 }
 
 const viewWrapper = useViewWrapper()
@@ -39,7 +39,7 @@ useHead({
         {
           label: 'Vuero',
           hideLabel: true,
-          icon: 'feather:home',
+          icon: 'lucide:home',
           to: '/',
         },
         {
@@ -71,7 +71,7 @@ useHead({
               class="demo-icon-search py-4 px-6"
             >
               <VField>
-                <VControl icon="feather:search">
+                <VControl icon="lucide:search">
                   <input
                     v-model="filter"
                     type="search"
@@ -92,11 +92,11 @@ useHead({
                 @keydown.space.prevent="copy(getSnippet(icon))"
                 @click="copy(getSnippet(icon))"
               >
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  :data-icon="icon.dataIcon"
-                />
+                  :icon="icon.dataicon"
+                ></iconify-icon>
                 <p class="textFilter-match">
                   {{ icon.name }}
                 </p>

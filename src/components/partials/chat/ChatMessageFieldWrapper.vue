@@ -19,11 +19,11 @@ const dropdown = useDropdown(dropdownElement)
               aria-haspopup="true"
               @click="dropdown.toggle"
             >
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:plus"
-              />
+                icon="lucide:plus"
+              ></iconify-icon>
             </div>
           </div>
           <div
@@ -32,11 +32,11 @@ const dropdown = useDropdown(dropdownElement)
           >
             <div class="dropdown-content">
               <a class="dropdown-item">
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:video"
-                />
+                  icon="lucide:video"
+                ></iconify-icon>
                 <div class="meta">
                   <span>Video</span>
                   <span>Embed a video</span>
@@ -46,11 +46,11 @@ const dropdown = useDropdown(dropdownElement)
                 href="#"
                 class="dropdown-item kill-drop v-modal-trigger"
               >
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:image"
-                />
+                  icon="lucide:image"
+                ></iconify-icon>
                 <div class="meta">
                   <span>Images</span>
                   <span>Upload pictures</span>
@@ -60,11 +60,11 @@ const dropdown = useDropdown(dropdownElement)
                 href="#"
                 class="dropdown-item kill-drop v-modal-trigger"
               >
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:link"
-                />
+                  icon="lucide:link"
+                ></iconify-icon>
                 <div class="meta">
                   <span>Link</span>
                   <span>Post a link</span>
@@ -75,11 +75,11 @@ const dropdown = useDropdown(dropdownElement)
                 href="#"
                 class="dropdown-item kill-drop v-modal-trigger"
               >
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:file"
-                />
+                  icon="lucide:file"
+                ></iconify-icon>
                 <div class="meta">
                   <span>File</span>
                   <span>Upload a file</span>
@@ -91,11 +91,11 @@ const dropdown = useDropdown(dropdownElement)
       </div>
       <div class="add-emoji">
         <div class="button">
-          <i
+          <iconify-icon
             aria-hidden="true"
             class="iconify"
-            data-icon="feather:smile"
-          />
+            icon="lucide:smile"
+          ></iconify-icon>
         </div>
       </div>
       <input
@@ -159,7 +159,7 @@ const dropdown = useDropdown(dropdownElement)
           .button {
             background: var(--fade-grey);
 
-            svg {
+            .iconify {
               color: var(--primary);
             }
           }
@@ -185,7 +185,7 @@ const dropdown = useDropdown(dropdownElement)
         align-items: center;
         transition: all 0.3s; // transition-all test
 
-        svg {
+        .iconify {
           color: var(--placeholder);
           stroke-width: 2px;
           height: 18px;
@@ -199,7 +199,7 @@ const dropdown = useDropdown(dropdownElement)
           display: flex;
           align-items: center;
 
-          svg {
+          .iconify {
             height: 18px;
             width: 18px;
             color: var(--muted-grey);
@@ -243,7 +243,7 @@ const dropdown = useDropdown(dropdownElement)
         .button {
           background: var(--fade-grey);
 
-          svg {
+          .iconify {
             color: var(--primary);
           }
         }
@@ -260,7 +260,7 @@ const dropdown = useDropdown(dropdownElement)
         align-items: center;
         transition: all 0.3s; // transition-all test
 
-        svg {
+        .iconify {
           color: var(--placeholder);
           stroke-width: 2px;
           height: 18px;

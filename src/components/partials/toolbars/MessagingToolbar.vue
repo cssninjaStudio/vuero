@@ -74,11 +74,11 @@ const localFlagSrc = computed(() => {
           aria-haspopup="true"
           @click="dropdown.toggle"
         >
-          <i
+          <iconify-icon
             aria-hidden="true"
             class="iconify"
-            data-icon="feather:bell"
-          />
+            icon="lucide:bell"
+          ></iconify-icon>
           <span class="new-indicator pulsate" />
         </div>
         <div
@@ -188,16 +188,16 @@ const localFlagSrc = computed(() => {
       @keydown.space.prevent="emit('close')"
       @click="emit('close')"
     >
-      <i
+      <iconify-icon
         aria-hidden="true"
         class="iconify rtl-hidden"
-        data-icon="feather:chevron-left"
-      />
-      <i
+        icon="lucide:chevron-left"
+      ></iconify-icon>
+      <iconify-icon
         aria-hidden="true"
         class="iconify ltr-hidden"
-        data-icon="feather:chevron-right"
-      />
+        icon="lucide:chevron-right"
+      ></iconify-icon>
     </a>
   </div>
 </template>

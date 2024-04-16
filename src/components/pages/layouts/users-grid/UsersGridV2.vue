@@ -49,7 +49,7 @@ const optionsSingle = [
 <template>
   <div>
     <div class="user-grid-toolbar">
-      <VControl icon="feather:search">
+      <VControl icon="lucide:search">
         <input
           v-model="filters"
           class="input custom-text-filter"
@@ -173,21 +173,21 @@ const optionsSingle = [
               <div class="buttons">
                 <button class="button v-button is-dark-outlined">
                   <span class="icon">
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify"
-                      data-icon="feather:check-circle"
-                    />
+                      icon="lucide:check-circle"
+                    ></iconify-icon>
                   </span>
                   <span>Tasks</span>
                 </button>
                 <button class="button v-button is-dark-outlined">
                   <span class="icon">
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify"
-                      data-icon="feather:file"
-                    />
+                      icon="lucide:file"
+                    ></iconify-icon>
                   </span>
                   <span>Files</span>
                 </button>
@@ -216,21 +216,21 @@ const optionsSingle = [
               <div class="buttons">
                 <button class="button v-button is-dark-outlined">
                   <span class="icon">
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify"
-                      data-icon="feather:user"
-                    />
+                      icon="lucide:user"
+                    ></iconify-icon>
                   </span>
                   <span>Profile</span>
                 </button>
                 <button class="button v-button is-dark-outlined">
                   <span class="icon">
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify"
-                      data-icon="feather:message-circle"
-                    />
+                      icon="lucide:message-circle"
+                    ></iconify-icon>
                   </span>
                   <span>Talk</span>
                 </button>
@@ -368,7 +368,7 @@ const optionsSingle = [
             color: var(--white);
           }
 
-          i {
+          .iconify {
             font-size: 8px;
           }
         }

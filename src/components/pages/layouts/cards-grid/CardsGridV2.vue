@@ -47,7 +47,7 @@ const optionsSingle = [
 <template>
   <div>
     <div class="card-grid-toolbar">
-      <VControl icon="feather:search">
+      <VControl icon="lucide:search">
         <input
           v-model="filters"
           class="input custom-text-filter"
@@ -150,11 +150,11 @@ const optionsSingle = [
                       {{ item.name }}
                     </h3>
                     <p>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:calendar"
-                      />{{ item.dueDate }}
+                        icon="lucide:calendar"
+                      ></iconify-icon>{{ item.dueDate }}
                     </p>
                   </div>
                   <VAvatarStack
@@ -260,7 +260,7 @@ const optionsSingle = [
             p {
               font-size: 0.9rem;
 
-              svg {
+              .iconify {
                 position: relative;
                 top: 0;
                 height: 14px;

@@ -146,7 +146,7 @@
             border-color: var(--fade-grey-dark-3);
 
             span,
-            i {
+            .lnil {
               color: var(--primary);
             }
 
@@ -161,7 +161,7 @@
             }
           }
 
-          i {
+          .lnil {
             margin-inline-end: 8px;
             font-size: 1.1rem;
             color: var(--light-text);
@@ -304,7 +304,7 @@
                   }
                 }
 
-                i {
+                .lnil {
                   font-size: 1.4rem;
                 }
               }
@@ -337,7 +337,7 @@
                     font-size: 0.85rem;
                     color: var(--light-text);
 
-                    i {
+                    .fas {
                       position: relative;
                       top: -2px;
                       font-size: 4px;

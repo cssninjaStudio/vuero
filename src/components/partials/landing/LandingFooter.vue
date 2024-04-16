@@ -20,10 +20,10 @@
               class="button chat-button"
             >
               <span>Join us on Discord</span>
-              <i
+              <iconify-icon
                 class="iconify ml-1"
-                data-icon="feather:external-link"
-              />
+                icon="lucide:external-link"
+              ></iconify-icon>
             </a>
           </div>
         </div>

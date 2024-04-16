@@ -15,7 +15,7 @@ Check the markup for more details.
     solid
     icon="lnil lnil-sleep"
   >
-    <i class="iconify" data-icon="feather:plus" />
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
   <VSnack
     title="Support"
@@ -24,7 +24,7 @@ Check the markup for more details.
     solid
     icon="lnil lnil-life-ring"
   >
-    <i class="iconify" data-icon="feather:plus" />
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
   <VSnack
     title="Business"
@@ -32,7 +32,7 @@ Check the markup for more details.
     solid
     icon="lnil lnil-apartment"
   >
-    <i class="iconify" data-icon="feather:plus" />
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
   <VSnack
     title="Warning"
@@ -41,7 +41,7 @@ Check the markup for more details.
     solid
     icon="lnil lnil-warning"
   >
-    <i class="iconify" data-icon="feather:plus" />
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
   <VSnack
     title="Health"
@@ -50,7 +50,7 @@ Check the markup for more details.
     solid
     icon="lnil lnil-thermometer"
   >
-    <i class="iconify" data-icon="feather:plus" />
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
 </template>
 ```
@@ -61,7 +61,7 @@ Check the markup for more details.
 
 <div class="snacks">
   <VSnack title="Shopping" color="primary" solid icon="lnil lnil-sleep">
-    <i class="iconify" data-icon="feather:plus"></i>
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
   <VSnack
     title="Support"
@@ -70,10 +70,10 @@ Check the markup for more details.
     solid
     icon="lnil lnil-life-ring"
   >
-    <i class="iconify" data-icon="feather:plus"></i>
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
   <VSnack title="Business" color="info" solid icon="lnil lnil-apartment">
-    <i class="iconify" data-icon="feather:plus"></i>
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
   <VSnack
     title="Warning"
@@ -82,7 +82,7 @@ Check the markup for more details.
     solid
     icon="lnil lnil-warning"
   >
-    <i class="iconify" data-icon="feather:plus"></i>
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
   <VSnack
     title="Health"
@@ -91,7 +91,7 @@ Check the markup for more details.
     solid
     icon="lnil lnil-thermometer"
   >
-    <i class="iconify" data-icon="feather:plus"></i>
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
 </div>
 

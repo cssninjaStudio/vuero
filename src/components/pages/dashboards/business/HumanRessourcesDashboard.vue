@@ -84,11 +84,11 @@ const columns = {
                     squared
                   />
                   <button>
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify"
-                      data-icon="feather:plus"
-                    />
+                      icon="lucide:plus"
+                    ></iconify-icon>
                   </button>
                 </div>
               </div>
@@ -319,11 +319,11 @@ const columns = {
                   placeholder="Search..."
                 >
                 <button class="searcv-button">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:search"
-                  />
+                    icon="lucide:search"
+                  ></iconify-icon>
                 </button>
               </div>
             </div>
@@ -355,16 +355,16 @@ const columns = {
             <div class="widget-toolbar">
               <div class="left">
                 <a class="action-icon">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify ltr-hidden"
-                    data-icon="feather:chevron-right"
-                  />
-                  <i
+                    icon="lucide:chevron-right"
+                  ></iconify-icon>
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify rtl-hidden"
-                    data-icon="feather:chevron-left"
-                  />
+                    icon="lucide:chevron-left"
+                  ></iconify-icon>
                 </a>
               </div>
               <div class="center">
@@ -372,16 +372,16 @@ const columns = {
               </div>
               <div class="right">
                 <a class="action-icon">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify rtl-hidden"
-                    data-icon="feather:chevron-right"
-                  />
-                  <i
+                    icon="lucide:chevron-right"
+                  ></iconify-icon>
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify ltr-hidden"
-                    data-icon="feather:chevron-left"
-                  />
+                    icon="lucide:chevron-left"
+                  ></iconify-icon>
                 </a>
               </div>
             </div>
@@ -532,9 +532,8 @@ const columns = {
           cursor: pointer;
           transition: all 0.3s; // transition-all test
 
-          svg {
-            height: 18px;
-            width: 18px;
+          .iconify {
+            font-size: 18px;
           }
         }
       }
@@ -610,7 +609,7 @@ const columns = {
           margin-inline-end: 6px;
         }
 
-        i {
+        .iconify {
           font-size: 12px;
         }
       }
@@ -797,7 +796,7 @@ const columns = {
             &:hover {
               border-color: var(--primary);
 
-              svg {
+              .iconify {
                 color: var(--primary);
               }
             }

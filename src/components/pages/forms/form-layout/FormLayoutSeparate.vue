@@ -25,7 +25,7 @@ const onSubmit = () => {
               <div class="column is-6">
                 <VField>
                   <VLabel>First Name</VLabel>
-                  <VControl icon="feather:user">
+                  <VControl icon="lucide:user">
                     <VInput
                       type="text"
                       placeholder=""
@@ -37,7 +37,7 @@ const onSubmit = () => {
               <div class="column is-6">
                 <VField>
                   <VLabel>Last Name</VLabel>
-                  <VControl icon="feather:user">
+                  <VControl icon="lucide:user">
                     <VInput
                       type="text"
                       placeholder=""
@@ -49,7 +49,7 @@ const onSubmit = () => {
               <div class="column is-12">
                 <VField>
                   <VLabel>Email Address</VLabel>
-                  <VControl icon="feather:mail">
+                  <VControl icon="lucide:mail">
                     <VInput
                       type="email"
                       placeholder=""
@@ -62,7 +62,7 @@ const onSubmit = () => {
               <div class="column is-12">
                 <VField>
                   <VLabel>Street</VLabel>
-                  <VControl icon="feather:map-pin">
+                  <VControl icon="lucide:map-pin">
                     <VInput
                       type="text"
                       placeholder=""
@@ -74,7 +74,7 @@ const onSubmit = () => {
               <div class="column is-6">
                 <VField>
                   <VLabel>City</VLabel>
-                  <VControl icon="feather:map-pin">
+                  <VControl icon="lucide:map-pin">
                     <VInput
                       type="text"
                       placeholder=""
@@ -148,7 +148,7 @@ const onSubmit = () => {
               <div class="column is-12">
                 <VField>
                   <VLabel>Phone</VLabel>
-                  <VControl icon="feather:phone">
+                  <VControl icon="lucide:phone">
                     <VInput
                       type="tel"
                       placeholder=""

@@ -154,11 +154,11 @@ const { progressChartOptions } = useProgressChart()
               </div>
               <div class="chart-meta">
                 <p>
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:help-circle"
-                  />
+                    icon="lucide:help-circle"
+                  ></iconify-icon>
                   Your overall condition is very good. Make it even better.
                   <a class="is-dark-primary">Read how</a>
                 </p>
@@ -184,11 +184,11 @@ const { progressChartOptions } = useProgressChart()
               </div>
               <div class="chart-meta">
                 <p>
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:help-circle"
-                  />
+                    icon="lucide:help-circle"
+                  ></iconify-icon>
                   Your energy seems a bit unstable. You can improve it.
                   <a class="is-dark-primary">Read how</a>
                 </p>
@@ -214,11 +214,11 @@ const { progressChartOptions } = useProgressChart()
               </div>
               <div class="chart-meta">
                 <p>
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:help-circle"
-                  />
+                    icon="lucide:help-circle"
+                  ></iconify-icon>
                   Your oxygen seems a bit unstable. You can improve it.
                   <a class="is-dark-primary">Read how</a>
                 </p>
@@ -244,11 +244,11 @@ const { progressChartOptions } = useProgressChart()
               </div>
               <div class="chart-meta">
                 <p>
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:help-circle"
-                  />
+                    icon="lucide:help-circle"
+                  ></iconify-icon>
                   Your overall condition is very good. Make it even better.
                   <a class="is-dark-primary">Read how</a>
                 </p>
@@ -277,11 +277,11 @@ const { progressChartOptions } = useProgressChart()
                   placeholder="Search..."
                 >
                 <button class="searcv-button">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:search"
-                  />
+                    icon="lucide:search"
+                  ></iconify-icon>
                 </button>
               </div>
 
@@ -300,16 +300,16 @@ const { progressChartOptions } = useProgressChart()
             <div class="widget-toolbar">
               <div class="left">
                 <a class="action-icon">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify ltr-hidden"
-                    data-icon="feather:chevron-right"
-                  />
-                  <i
+                    icon="lucide:chevron-right"
+                  ></iconify-icon>
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify rtl-hidden"
-                    data-icon="feather:chevron-left"
-                  />
+                    icon="lucide:chevron-left"
+                  ></iconify-icon>
                 </a>
               </div>
               <div class="center">
@@ -317,16 +317,16 @@ const { progressChartOptions } = useProgressChart()
               </div>
               <div class="right">
                 <a class="action-icon">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify rtl-hidden"
-                    data-icon="feather:chevron-right"
-                  />
-                  <i
+                    icon="lucide:chevron-right"
+                  ></iconify-icon>
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify ltr-hidden"
-                    data-icon="feather:chevron-left"
-                  />
+                    icon="lucide:chevron-left"
+                  ></iconify-icon>
                 </a>
               </div>
             </div>
@@ -540,7 +540,7 @@ const { progressChartOptions } = useProgressChart()
           margin-inline-end: 6px;
         }
 
-        i {
+        .iconify {
           font-size: 12px;
         }
       }
@@ -609,11 +609,9 @@ const { progressChartOptions } = useProgressChart()
         font-size: 0.95rem;
         max-width: 80%;
 
-        svg {
-          position: relative;
-          top: 2px;
-          height: 16px;
-          width: 16px;
+        .iconify {
+          font-size: 1.2em;
+          vertical-align: -0.25em;
           color: var(--light-text);
         }
 

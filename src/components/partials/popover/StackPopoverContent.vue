@@ -46,22 +46,22 @@ const props = defineProps<{
           class="popover-icon"
           :href="props.stack.homepage"
         >
-          <i
+          <iconify-icon
             aria-hidden="true"
             class="iconify"
-            data-icon="feather:link"
-          />
+            icon="lucide:link"
+          ></iconify-icon>
         </a>
         <a
           v-if="props.stack.github"
           class="popover-icon"
           :href="props.stack.github"
         >
-          <i
+          <iconify-icon
             aria-hidden="true"
             class="iconify"
-            data-icon="feather:github"
-          />
+            icon="lucide:github"
+          ></iconify-icon>
         </a>
       </div>
     </div>

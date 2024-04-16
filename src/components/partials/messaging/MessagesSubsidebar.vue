@@ -64,11 +64,11 @@ const sidebar = useSidebar()
           class="button v-button is-primary is-raised is-rounded is-fullwidth"
           @click="() => emit('addConversation')"
         >
-          <i
+          <iconify-icon
             aria-hidden="true"
             class="iconify"
-            data-icon="feather:plus"
-          />
+            icon="lucide:plus"
+          ></iconify-icon>
           <span>New Conversation</span>
         </button>
       </div>

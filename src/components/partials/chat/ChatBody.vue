@@ -174,7 +174,7 @@
         -webkit-touch-callout: none;
         user-select: none;
 
-        svg {
+        .iconify {
           position: relative;
           top: 1px;
           height: 10px;
@@ -228,7 +228,7 @@
         -webkit-touch-callout: none;
         user-select: none;
 
-        svg {
+        .iconify {
           position: relative;
           top: 1px;
           height: 10px;
@@ -358,7 +358,7 @@
           time {
             color: var(--primary-grey-dark-10) !important;
 
-            svg {
+            .iconify {
               color: var(--primary-grey-dark-10) !important;
             }
           }

@@ -174,11 +174,11 @@ watchPostEffect(() => {
                       @keydown.space.prevent="chat.setAddConversationOpen(false)"
                       @click="chat.setAddConversationOpen(false)"
                     >
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:x"
-                      />
+                        icon="lucide:x"
+                      ></iconify-icon>
                     </div>
                   </div>
                 </div>

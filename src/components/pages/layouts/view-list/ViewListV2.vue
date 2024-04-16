@@ -27,7 +27,7 @@ const filteredData = computed(() => {
 <template>
   <div class="list-view-toolbar">
     <VField>
-      <VControl icon="feather:search">
+      <VControl icon="lucide:search">
         <input
           v-model="filters"
           class="input custom-text-filter"
@@ -122,11 +122,11 @@ const filteredData = computed(() => {
                     </VRangeRating>
                   </h3>
                   <p>
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify"
-                      data-icon="feather:map-pin"
-                    />
+                      icon="lucide:map-pin"
+                    ></iconify-icon>
                     <span>{{ item.location }}</span>
                   </p>
                   <span>
@@ -336,7 +336,7 @@ const filteredData = computed(() => {
           .rating {
             margin-inline-start: 12px;
 
-            i {
+            .iconify {
               font-size: 12px;
             }
           }
@@ -346,7 +346,7 @@ const filteredData = computed(() => {
           font-size: 0.95rem;
           color: var(--light-text);
 
-          svg {
+          .iconify {
             height: 12px;
             width: 12px;
           }
@@ -382,7 +382,7 @@ const filteredData = computed(() => {
               color: var(--dark-text);
             }
 
-            i {
+            .iconify {
               font-size: 1.2rem;
               margin-inline-end: 6px;
               color: var(--light-text);
@@ -478,7 +478,7 @@ const filteredData = computed(() => {
               margin: 10px;
               width: calc(33.3% - 20px);
 
-              i {
+              .iconify {
                 margin: 0;
               }
             }
@@ -544,7 +544,7 @@ const filteredData = computed(() => {
                 margin: 10px;
                 width: calc(33.3% - 20px);
 
-                i {
+                .iconify {
                   margin: 0;
                 }
               }

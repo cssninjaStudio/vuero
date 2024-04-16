@@ -28,11 +28,11 @@ import {
             >
               <template #avatar>
                 <button class="avatar is-fake is-squared">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:plus"
-                  />
+                    icon="lucide:plus"
+                  ></iconify-icon>
                 </button>
               </template>
             </VAvatar>
@@ -86,11 +86,11 @@ import {
                     <span class="tag item-duration">{{ item.duration }}</span>
                     <!--Play button-->
                     <button class="play-button">
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:play"
-                      />
+                        icon="lucide:play"
+                      ></iconify-icon>
                     </button>
                     <!--Bottom Overlay-->
                     <div class="item-overlay" />
@@ -148,11 +148,11 @@ import {
                     <span class="tag item-duration">{{ item.duration }}</span>
                     <!--Play button-->
                     <button class="play-button">
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:play"
-                      />
+                        icon="lucide:play"
+                      ></iconify-icon>
                     </button>
                     <!--Bottom Overlay-->
                     <div class="item-overlay" />
@@ -217,11 +217,11 @@ import {
                 <span class="tag item-duration">{{ item.duration }}</span>
                 <!--Play button-->
                 <button class="play-button">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:play"
-                  />
+                    icon="lucide:play"
+                  ></iconify-icon>
                 </button>
                 <!--Bottom Overlay-->
                 <div class="item-overlay" />
@@ -308,10 +308,9 @@ import {
             color: var(--white);
             cursor: pointer;
 
-            svg {
+            .iconify {
               stroke: var(--white);
-              height: 16px;
-              width: 16px;
+              font-size: 16px;
             }
           }
         }
@@ -359,9 +358,8 @@ import {
               width: 60px;
               border-radius: 1rem;
 
-              svg {
-                height: 26px;
-                width: 26px;
+              .iconify {
+                font-size: 26px;
               }
             }
 
@@ -397,21 +395,16 @@ import {
 
             &:hover,
             &:focus {
-              svg,
-              svg * {
-                stroke: var(--primary);
-                fill: var(--primary);
+              .iconify {
+                color: var(--primary);
               }
             }
 
-            svg,
-            svg * {
+            .iconify {
               position: relative;
               inset-inline-start: 2px;
-              height: 15px;
-              width: 15px;
-              fill: var(--dark-text);
-              stroke: var(--dark-text);
+              font-size: 15px;
+              color: var(--dark-text);
               transition:
                 color 0.3s,
                 background-color 0.3s,

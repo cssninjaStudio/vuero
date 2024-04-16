@@ -1,6 +1,6 @@
 <template>
   <VDropdown
-    icon="feather:more-vertical"
+    icon="lucide:more-vertical"
     class="end-action"
     spaced
     right

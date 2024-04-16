@@ -1,7 +1,7 @@
 <template>
   <VDropdown
     class="end-action"
-    icon="feather:more-vertical"
+    icon="lucide:more-vertical"
     spaced
     right
   >

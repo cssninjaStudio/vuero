@@ -39,11 +39,11 @@ const wizard = useWizard()
           @click="toggle"
           @keydown.space.prevent="toggle"
         >
-          <i
+          <iconify-icon
             aria-hidden="true"
             class="iconify"
-            data-icon="feather:chevron-down"
-          />
+            icon="lucide:chevron-down"
+          ></iconify-icon>
         </div>
       </template>
       <template #content="{ close }">
@@ -146,11 +146,11 @@ const wizard = useWizard()
             @error.once="onceImageErrored(150)"
           >
         </div>
-        <i
+        <iconify-icon
           aria-hidden="true"
           class="iconify"
-          data-icon="feather:chevron-down"
-        />
+          icon="lucide:chevron-down"
+        ></iconify-icon>
       </div>
       <div
         class="dropdown-menu"
@@ -166,35 +166,35 @@ const wizard = useWizard()
             href="#"
             class="dropdown-item"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:user"
-            />
+              icon="lucide:user"
+            ></iconify-icon>
             <span>Profile</span>
           </a>
           <a class="dropdown-item">
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:edit-2"
-            />
+              icon="lucide:edit-2"
+            ></iconify-icon>
             <span>Edit Profile</span>
           </a>
           <a class="dropdown-item">
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:box"
-            />
+              icon="lucide:box"
+            ></iconify-icon>
             <span>Projects</span>
           </a>
           <a class="dropdown-item">
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:settings"
-            />
+              icon="lucide:settings"
+            ></iconify-icon>
             <span>Settings</span>
           </a>
           <hr class="dropdown-divider">
@@ -202,11 +202,11 @@ const wizard = useWizard()
             href="#"
             class="dropdown-item"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:log-out"
-            />
+              icon="lucide:log-out"
+            ></iconify-icon>
             <span>Sign Out</span>
           </a>
         </div>
@@ -268,7 +268,7 @@ const wizard = useWizard()
       width: 30px;
       height: 30px;
 
-      svg {
+      .iconify {
         height: 18px;
         width: 18px;
         color: var(--light-text);
@@ -341,7 +341,7 @@ const wizard = useWizard()
         }
       }
 
-      svg {
+      .iconify {
         margin-inline-start: 3px;
         width: 18px;
         height: 18px;
@@ -374,7 +374,7 @@ const wizard = useWizard()
           color: var(--dark-text);
         }
 
-        svg {
+        .iconify {
           margin-inline-end: 8px;
           height: 16px;
           width: 16px;

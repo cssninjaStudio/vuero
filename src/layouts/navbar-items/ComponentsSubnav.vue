@@ -48,11 +48,11 @@ const activeTab = ref<TabId>('display')
                         class="lnil lnil-home"
                       />
                       <span>Components Hub</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -62,11 +62,11 @@ const activeTab = ref<TabId>('display')
                         class="lnil lnil-text-format"
                       />
                       <span>Content</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -76,11 +76,11 @@ const activeTab = ref<TabId>('display')
                         class="lnil lnil-table"
                       />
                       <span>Table</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                 </ul>
@@ -94,41 +94,41 @@ const activeTab = ref<TabId>('display')
                   <li>
                     <RouterLink to="/components/avatar/">
                       <span>VAvatar</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink to="/components/avatar/stack">
                       <span>VAvatarStack</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink to="/components/block">
                       <span>VBlock</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink to="/components/icon-box">
                       <span>VIconBox</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -140,11 +140,11 @@ const activeTab = ref<TabId>('display')
                         outlined
                         curved
                       />
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -156,21 +156,21 @@ const activeTab = ref<TabId>('display')
                         outlined
                         curved
                       />
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink to="/components/tag">
                       <span>VTag</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                 </ul>
@@ -184,51 +184,51 @@ const activeTab = ref<TabId>('display')
                   <li>
                     <RouterLink to="/components/plugins/notif">
                       <span>Notif</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink to="/components/plugins/tippy">
                       <span>Tippy</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink to="/components/plugins/billboard-js">
                       <span>VBillboardJS</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink to="/components/plugins/photos-swipe">
                       <span>VPhotosSwipe</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink to="/components/plugins/plyr">
                       <span>VPlyr</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                 </ul>
@@ -294,11 +294,11 @@ const activeTab = ref<TabId>('display')
                         outlined
                         curved
                       />
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -310,21 +310,21 @@ const activeTab = ref<TabId>('display')
                         outlined
                         curved
                       />
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink to="/components/breadcrumb">
                       <span>VBreadcrumb</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -336,21 +336,21 @@ const activeTab = ref<TabId>('display')
                         outlined
                         curved
                       />
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink to="/components/pagination">
                       <span>VFlexPagination</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -362,21 +362,21 @@ const activeTab = ref<TabId>('display')
                         outlined
                         curved
                       />
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink to="/components/flextable/">
                       <span>VFlexTable</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                 </ul>
@@ -390,31 +390,31 @@ const activeTab = ref<TabId>('display')
                   <li>
                     <RouterLink to="/components/accordion/">
                       <span>VAccordion</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink to="/components/collapse">
                       <span>VCollapse</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink to="/components/accordion/image">
                       <span>VAccordionImage</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                 </ul>
@@ -434,11 +434,11 @@ const activeTab = ref<TabId>('display')
                         outlined
                         curved
                       />
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -450,21 +450,21 @@ const activeTab = ref<TabId>('display')
                         outlined
                         curved
                       />
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink to="/components/card/advanced">
                       <span>VCardAdvanced</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -476,21 +476,21 @@ const activeTab = ref<TabId>('display')
                         outlined
                         curved
                       />
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink to="/components/card/social">
                       <span>VCardSocial</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                 </ul>
@@ -504,21 +504,21 @@ const activeTab = ref<TabId>('display')
                   <li>
                     <RouterLink to="/components/placeholder-page">
                       <span>VPlaceholderPage</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink to="/components/placeholder-section">
                       <span>VPlaceholderSection</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                 </ul>

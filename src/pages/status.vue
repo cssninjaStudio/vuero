@@ -517,7 +517,7 @@ useHead({
     padding: 24px 40px;
     border-bottom: 1px solid var(--fade-grey-dark-3);
 
-    .icon i {
+    .icon .iconify {
       font-size: 1.6rem;
       color: var(--twitter);
     }

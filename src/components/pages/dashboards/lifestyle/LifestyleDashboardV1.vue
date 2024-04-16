@@ -139,7 +139,7 @@ const activeTab = ref<TabId>('overview')
       justify-content: center;
       line-height: 1.2;
 
-      i {
+      .iconify {
         font-size: 1.2rem;
         margin-inline-end: 6px;
       }

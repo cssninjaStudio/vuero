@@ -15,10 +15,10 @@ const props = defineProps<{
           <h3 :id="`${props.name}Props`">
             &lt;{{ props.name }}&gt; Props
             <a :href="`#${props.name}Props`">
-              <i
+              <iconify-icon
                 class="iconify toc-link-anchor"
-                data-icon="feather:link"
-              />
+                icon="lucide:link"
+              ></iconify-icon>
             </a>
           </h3>
         </div>
@@ -89,10 +89,10 @@ const props = defineProps<{
           <h3 :id="`${props.name}Events`">
             &lt;{{ props.name }}&gt; Events
             <a :href="`#${props.name}Events`">
-              <i
+              <iconify-icon
                 class="iconify toc-link-anchor"
-                data-icon="feather:link"
-              />
+                icon="lucide:link"
+              ></iconify-icon>
             </a>
           </h3>
         </div>
@@ -133,10 +133,10 @@ const props = defineProps<{
           <h3 :id="`${props.name}Exposed`">
             &lt;{{ props.name }}&gt; Exposed
             <a :href="`#${props.name}Exposed`">
-              <i
+              <iconify-icon
                 class="iconify toc-link-anchor"
-                data-icon="feather:link"
-              />
+                icon="lucide:link"
+              ></iconify-icon>
             </a>
           </h3>
         </div>
@@ -177,10 +177,10 @@ const props = defineProps<{
           <h3 :id="`${props.name}Slots`">
             &lt;{{ props.name }}&gt; Slots
             <a :href="`#${props.name}Slots`">
-              <i
+              <iconify-icon
                 class="iconify toc-link-anchor"
-                data-icon="feather:link"
-              />
+                icon="lucide:link"
+              ></iconify-icon>
             </a>
           </h3>
         </div>

@@ -43,7 +43,7 @@ const filteredData = computed(() => {
   <div>
     <div class="list-view-toolbar">
       <VField>
-        <VControl icon="feather:search">
+        <VControl icon="lucide:search">
           <input
             v-model="filters"
             class="input custom-text-filter"
@@ -114,11 +114,11 @@ const filteredData = computed(() => {
                 <div class="meta-left">
                   <h3>{{ item.name }}</h3>
                   <span>
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify"
-                      data-icon="feather:map-pin"
-                    />
+                      icon="lucide:map-pin"
+                    ></iconify-icon>
                     <span>{{ item.location }}</span>
                   </span>
                 </div>
@@ -207,7 +207,7 @@ const filteredData = computed(() => {
           font-size: 0.9rem;
           color: var(--light-text);
 
-          svg {
+          .iconify {
             height: 12px;
             width: 12px;
           }
@@ -258,12 +258,12 @@ const filteredData = computed(() => {
               }
             }
 
-            svg {
+            .iconify {
               height: 16px;
               width: 16px;
             }
 
-            i {
+            .iconify {
               font-size: 1.4rem;
             }
           }

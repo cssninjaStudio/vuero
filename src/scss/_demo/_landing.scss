@@ -397,7 +397,7 @@
         border-inline-end: none;
       }
 
-      i {
+      .lnil {
         font-size: 2.2rem;
         color: var(--primary);
         margin-bottom: 6px;
@@ -474,7 +474,7 @@
         .flex-cell {
           border-color: var(--landing-yyy-light-4);
 
-          i {
+          .lnil {
             color: var(--primary);
           }
 
@@ -657,7 +657,7 @@
     .left-icon {
       margin-inline-end: 10px;
 
-      i {
+      .lnil {
         color: var(--primary);
         font-size: 2.6rem;
       }
@@ -688,7 +688,7 @@
     .component-features {
       .media-flex {
         .left-icon {
-          i {
+          .lnil {
             color: var(--primary);
           }
         }

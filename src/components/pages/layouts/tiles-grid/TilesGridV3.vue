@@ -25,7 +25,7 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
 <template>
   <div>
     <div class="tile-grid-toolbar">
-      <VControl icon="feather:search">
+      <VControl icon="lucide:search">
         <input
           class="input custom-text-filter"
           placeholder="Search..."

@@ -39,7 +39,7 @@ function getAvatarData(user: any): VAvatarProps {
 <template>
   <div>
     <div class="card-grid-toolbar">
-      <VControl icon="feather:search">
+      <VControl icon="lucide:search">
         <input
           v-model="filters"
           class="input custom-text-filter"
@@ -120,18 +120,18 @@ function getAvatarData(user: any): VAvatarProps {
               >
               <span class="toggler">
                 <span class="active">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:lock"
-                  />
+                    icon="lucide:lock"
+                  ></iconify-icon>
                 </span>
                 <span class="inactive">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:check"
-                  />
+                    icon="lucide:check"
+                  ></iconify-icon>
                 </span>
               </span>
             </label>
@@ -159,21 +159,21 @@ function getAvatarData(user: any): VAvatarProps {
             <div class="buttons">
               <button class="button v-button is-dark-outlined">
                 <span class="icon">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:eye"
-                  />
+                    icon="lucide:eye"
+                  ></iconify-icon>
                 </span>
                 <span>View</span>
               </button>
               <button class="button v-button is-dark-outlined">
                 <span class="icon">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:edit-2"
-                  />
+                    icon="lucide:edit-2"
+                  ></iconify-icon>
                 </span>
                 <span>Edit</span>
               </button>

@@ -158,7 +158,7 @@ useHead({
                       class="is-autocomplete-select"
                     >
                       <VLabel>Year</VLabel>
-                      <VControl icon="feather:search">
+                      <VControl icon="lucide:search">
                         <Multiselect
                           v-model="selectedYear"
                           :attrs="{ id }"
@@ -306,7 +306,7 @@ useHead({
                       class="is-autocomplete-select"
                     >
                       <VLabel>Entry types</VLabel>
-                      <VControl icon="feather:search">
+                      <VControl icon="lucide:search">
                         <Multiselect
                           v-model="selectedChangeType"
                           :attrs="{ id }"

@@ -10,7 +10,7 @@ See code for more details about usage.
   <VFlex column-gap="3px">
     <VIconWrap
       v-tooltip.rounded="'Iam a rounded tooltip'"
-      icon="feather:help-circle"
+      icon="lucide:help-circle"
       color="info"
       has-background
       has-large-icon
@@ -27,7 +27,7 @@ See code for more details about usage.
   <VFlex column-gap="3px">
     <VIconWrap
       v-tooltip.rounded="'Iam a rounded tooltip'"
-      icon="feather:help-circle"
+      icon="lucide:help-circle"
       color="info"
       has-background
       has-large-icon

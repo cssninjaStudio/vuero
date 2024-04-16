@@ -21,7 +21,7 @@ const markdown = ref('## Hello Vuero\n\nThis is a **Markdown** preview content.'
     <!-- Display content after the textarea -->
     <template #after-textarea>
       <p class="help is-flex is-align-items-center">
-        <VIcon icon="feather:info" class="is-size-6" />
+        <VIcon icon="lucide:info" class="is-size-6" />
         <span class="ml-1">Markdown syntax supported</span>
       </p>
     </template>
@@ -51,7 +51,7 @@ const markdown = ref('## Hello Vuero\n\nThis is a **Markdown** preview content.'
 <VMarkdownEditor v-model="frontmatter.markdown" autogrow>
   <template #after-textarea>
     <p class="help is-flex is-align-items-center">
-      <VIcon icon="feather:info" class="is-size-6" />
+      <VIcon icon="lucide:info" class="is-size-6" />
       <span class="ml-1">Markdown syntax supported</span>
     </p>
   </template>

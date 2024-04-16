@@ -11,7 +11,7 @@ Please refer to the markup for more details about usage.
   <VDropdown>
     <template #button="{ open, toggle }">
       <VButton
-        icon="feather:help-circle"
+        icon="lucide:help-circle"
         class="is-trigger"
         @mouseenter="open"
         @focusin="open"
@@ -49,7 +49,7 @@ Please refer to the markup for more details about usage.
     <VDropdown>
       <template #button="{ open, toggle }">
         <VButton
-          icon="feather:alert-triangle"
+          icon="lucide:alert-triangle"
           class="is-trigger"
           color="warning"
           @mouseenter="open"
@@ -76,7 +76,7 @@ Please refer to the markup for more details about usage.
     <VDropdown title="Primary button" up>
       <template #button="{ open, toggle }">
         <VButton
-          icon="feather:help-circle"
+          icon="lucide:help-circle"
           class="is-trigger"
           @mouseenter="open"
           @focusin="open"

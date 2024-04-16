@@ -27,7 +27,7 @@ const date = ref(null)
     >
       <template #default="{ inputValue, inputEvents }">
         <VField>
-          <VControl icon="feather:clock">
+          <VControl icon="lucide:clock">
             <input
               class="input v-input"
               type="text"
@@ -50,7 +50,7 @@ const date = ref(null)
   <VDatePicker v-model="frontmatter.state.date" color="green" mode="time" is24hr>
     <template #default="{ inputValue, inputEvents }">
       <VField>
-        <VControl icon="feather:clock">
+        <VControl icon="lucide:clock">
           <input class="input v-input" type="text" :value="inputValue" v-on="inputEvents" />
         </VControl>
       </VField>

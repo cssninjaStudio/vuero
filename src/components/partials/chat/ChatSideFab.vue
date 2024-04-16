@@ -16,11 +16,11 @@ const chat = useChat()
     "
     @click="chat.setMobileConversationDetailsOpen(!chat.mobileConversationDetailsOpen)"
   >
-    <i
+    <iconify-icon
       aria-hidden="true"
       class="iconify"
-      data-icon="feather:chevron-left"
-    />
+      icon="lucide:chevron-left"
+    ></iconify-icon>
   </a>
 </template>
 
@@ -47,7 +47,7 @@ const chat = useChat()
       rotate(calc(var(--transform-direction) * 0));
   }
 
-  svg {
+  .iconify {
     position: relative;
     inset-inline-start: -1px;
     height: 20px;

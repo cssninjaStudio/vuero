@@ -39,11 +39,11 @@ useHead({
               @keydown.space.prevent="panels.setActive('activity')"
               @click="panels.setActive('activity')"
             >
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:grid"
-              />
+                icon="lucide:grid"
+              ></iconify-icon>
             </a>
           </Toolbar>
         </div>

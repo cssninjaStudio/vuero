@@ -75,7 +75,7 @@ const onSave = async () => {
           <!--Field-->
           <div class="column is-12">
             <VField>
-              <VControl icon="feather:unlock">
+              <VControl icon="lucide:unlock">
                 <VInput
                   type="password"
                   placeholder="Old Password"
@@ -87,7 +87,7 @@ const onSave = async () => {
           <!--Field-->
           <div class="column is-12">
             <VField>
-              <VControl icon="feather:lock">
+              <VControl icon="lucide:lock">
                 <VInput
                   type="password"
                   placeholder="New Password"
@@ -99,7 +99,7 @@ const onSave = async () => {
           <!--Field-->
           <div class="column is-12">
             <VField>
-              <VControl icon="feather:lock">
+              <VControl icon="lucide:lock">
                 <VInput
                   type="password"
                   placeholder="Repeat New Password"
@@ -137,7 +137,7 @@ const onSave = async () => {
             class="column is-12"
           >
             <VField>
-              <VControl icon="feather:smartphone">
+              <VControl icon="lucide:smartphone">
                 <VInput
                   type="text"
                   placeholder="Phone Number"

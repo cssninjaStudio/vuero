@@ -43,11 +43,11 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
             </h3>
             <button class="button is-circle is-dark-outlined">
               <span class="icon is-small">
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:plus"
-                />
+                  icon="lucide:plus"
+                ></iconify-icon>
               </span>
             </button>
           </div>
@@ -414,16 +414,16 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
                 <div class="actions">
                   <span>See all Contacts</span>
                   <a class="is-dark-primary-hover">
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify rtl-hidden"
-                      data-icon="feather:arrow-right"
-                    />
-                    <i
+                      icon="lucide:arrow-right"
+                    ></iconify-icon>
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify ltr-hidden"
-                      data-icon="feather:arrow-left"
-                    />
+                      icon="lucide:arrow-left"
+                    ></iconify-icon>
                   </a>
                 </div>
               </div>
@@ -711,7 +711,7 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
                 }
               }
 
-              i {
+              .fas {
                 position: relative;
                 top: 0;
                 font-size: 10px;
@@ -758,7 +758,7 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
               color: var(--primary);
             }
 
-            svg {
+            .iconify {
               height: 16px;
               width: 16px;
             }

@@ -11,8 +11,8 @@ Please refer to markup for detailed examples.
 ```vue
 <template>
   <VButtons>
-    <VIconButton icon="feather:mail" />
-    <VIconButton color="success" icon="feather:phone" />
+    <VIconButton icon="lucide:mail" />
+    <VIconButton color="success" icon="lucide:phone" />
     <VIconButton
       color="info"
       light
@@ -21,27 +21,27 @@ Please refer to markup for detailed examples.
     <VIconButton
       color="primary"
       circle
-      icon="feather:message-circle"
+      icon="lucide:message-circle"
     />
     <VIconButton
       color="warning"
       outlined
       circle
-      icon="feather:triangle"
+      icon="lucide:triangle"
     />
     <VIconButton
       color="danger"
       light
       raised
       circle
-      icon="feather:x"
+      icon="lucide:x"
     />
     <VIconButton
       color="primary"
       outlined
       loading
       circle
-      icon="feather:plus"
+      icon="lucide:plus"
     />
   </VButtons>
 </template>
@@ -52,13 +52,13 @@ Please refer to markup for detailed examples.
 <!--example-->
 
 <VButtons>
-  <VIconButton icon="feather:mail" />
-  <VIconButton color="success" icon="feather:phone" />
+  <VIconButton icon="lucide:mail" />
+  <VIconButton color="success" icon="lucide:phone" />
   <VIconButton color="info" light icon="fab fa-twitter" />
-  <VIconButton color="primary" circle icon="feather:message-circle" />
-  <VIconButton color="warning" outlined circle icon="feather:triangle" />
-  <VIconButton color="danger" light circle icon="feather:x"  />
-  <VIconButton color="primary" outlined loading circle icon="feather:plus"  />
+  <VIconButton color="primary" circle icon="lucide:message-circle" />
+  <VIconButton color="warning" outlined circle icon="lucide:triangle" />
+  <VIconButton color="danger" light circle icon="lucide:x"  />
+  <VIconButton color="primary" outlined loading circle icon="lucide:plus"  />
 </VButtons>
 
 <!--/example-->

@@ -2,10 +2,10 @@
 breadcrumb:
   - label: Vuero
     hideLabel: true
-    icon: feather:home
+    icon: lucide:home
     link: https://vuero.cssninja.io/
   - label: Components
-    icon: feather:cpu
+    icon: lucide:cpu
     to:
       name: /components/
   - label: VBreadcrumb
@@ -23,14 +23,14 @@ set the `separator` prop to `bullet`. See markup for more details.
 <script setup lang="ts">
 const breadcrumb = [
   {
-    icon: 'feather:home',
+    icon: 'lucide:home',
     hideLabel: true,
     // use external links
     link: 'https://vuero.cssninja.io/',
   },
   {
     label: 'Components',
-    icon: 'feather:cpu',
+    icon: 'lucide:cpu',
     // or generate a router link with 'to' props
     to: '/components/',
   },

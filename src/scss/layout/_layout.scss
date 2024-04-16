@@ -126,6 +126,10 @@ body {
         position: relative;
         height: 34px;
         width: 34px;
+        
+        .iconify {
+          font-size: 20px;
+        }
 
         .new-indicator {
           position: absolute;
@@ -198,7 +202,7 @@ body {
               }
 
               .user-content {
-                text-align: inset-inline-start;
+                text-align: start;
                 font-family: var(--font);
 
                 .user-info {
@@ -246,12 +250,9 @@ body {
       outline-color: var(--accessibility-focus-outline-color);
     }
 
-    svg {
-      height: 18px;
-      width: 18px;
-      stroke-width: 1.6px;
+    .iconify {
+      font-size: 20px;
       color: var(--light-text);
-      transition: stroke 0.3s;
     }
 
     img {

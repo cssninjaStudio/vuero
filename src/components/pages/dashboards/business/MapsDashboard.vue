@@ -428,11 +428,11 @@ watch(
                 </VRangeRating>
                 <div class="actions">
                   <div class="action">
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify"
-                      data-icon="feather:flag"
-                    />
+                      icon="lucide:flag"
+                    ></iconify-icon>
                     <span class="dark-inverted">
                       {{ feature.properties.distance }} mile
                     </span>
@@ -543,7 +543,7 @@ watch(
             justify-content: space-between;
 
             .rating {
-              i {
+              .iconify {
                 font-size: 0.9rem;
               }
             }
@@ -555,7 +555,7 @@ watch(
               font-size: 0.9rem;
               color: var(--dark-text);
 
-              svg {
+              .iconify {
                 height: 16px;
                 width: 16px;
                 margin-inline-end: 0.25rem;
@@ -742,7 +742,7 @@ watch(
   }
 
   .mapboxgl-marker {
-    svg {
+    .iconify {
       circle {
         fill: var(--dark-sidebar-light-3) !important;
       }

@@ -89,18 +89,18 @@ watchEffect(() => {
             >
             <span class="toggler">
               <span class="dark">
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:moon"
-                />
+                  icon="lucide:moon"
+                ></iconify-icon>
               </span>
               <span class="light">
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:sun"
-                />
+                  icon="lucide:sun"
+                ></iconify-icon>
               </span>
             </span>
           </label>
@@ -342,7 +342,7 @@ watchEffect(() => {
                   rotate(calc(var(--transform-direction) * 0));
                 transition: all 0.3s ease;
 
-                svg {
+                .iconify {
                   color: var(--white) !important;
                   height: 14px !important;
                   width: 14px !important;
@@ -363,7 +363,7 @@ watchEffect(() => {
                 opacity: 0;
                 z-index: 0;
 
-                svg {
+                .iconify {
                   color: var(--white) !important;
                 }
               }

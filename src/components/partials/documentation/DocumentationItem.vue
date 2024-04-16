@@ -114,12 +114,12 @@ const githubIssueUrl = computed(() => {
           <VIcon
             v-show="!displayCode"
             style="height: 16px"
-            icon="feather:code"
+            icon="lucide:code"
           />
           <VIcon
             v-show="displayCode"
             style="height: 16px"
-            icon="feather:x"
+            icon="lucide:x"
           /> </a></span>
       </div>
     </div>

@@ -25,7 +25,7 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
 <template>
   <div>
     <div class="card-grid-toolbar">
-      <VControl icon="feather:search">
+      <VControl icon="lucide:search">
         <input
           v-model="filters"
           class="input custom-text-filter"

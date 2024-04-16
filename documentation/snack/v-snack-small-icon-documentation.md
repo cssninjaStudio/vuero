@@ -11,52 +11,52 @@ Use the `size="small"` prop on the component to show a smaller version of it.
     title="Shopping"
     white
     size="small"
-    icon="feather:shopping-cart"
+    icon="lucide:shopping-cart"
   >
-    <i class="iconify" data-icon="feather:plus" />
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
   <VSnack
     title="Shopping"
     color="primary"
     size="small"
-    icon="feather:smile"
+    icon="lucide:smile"
   >
-    <i class="iconify" data-icon="feather:plus" />
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
   <VSnack
     title="Support"
     color="success"
     white
     size="small"
-    icon="feather:life-buoy"
+    icon="lucide:life-buoy"
   >
-    <i class="iconify" data-icon="feather:plus" />
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
   <VSnack
     title="Business"
     color="info"
     size="small"
-    icon="feather:briefcase"
+    icon="lucide:briefcase"
   >
-    <i class="iconify" data-icon="feather:plus" />
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
   <VSnack
     title="Warning"
     color="warning"
     white
     size="small"
-    icon="feather:alert-octagon"
+    icon="lucide:alert-octagon"
   >
-    <i class="iconify" data-icon="feather:plus" />
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
   <VSnack
     title="Health"
     color="danger"
     white
     size="small"
-    icon="feather:thermometer"
+    icon="lucide:thermometer"
   >
-    <i class="iconify" data-icon="feather:plus" />
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
 </template>
 ```
@@ -66,23 +66,23 @@ Use the `size="small"` prop on the component to show a smaller version of it.
 <!--example-->
 
 <div class="snacks">
-  <VSnack title="Shopping" white size="small" icon="feather:shopping-cart">
-    <i class="iconify" data-icon="feather:plus"></i>
+  <VSnack title="Shopping" white size="small" icon="lucide:shopping-cart">
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
-  <VSnack title="Shopping" color="primary" size="small" icon="feather:smile">
-    <i class="iconify" data-icon="feather:plus"></i>
+  <VSnack title="Shopping" color="primary" size="small" icon="lucide:smile">
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
-  <VSnack title="Support" color="success" white size="small" icon="feather:life-buoy">
-    <i class="iconify" data-icon="feather:plus"></i>
+  <VSnack title="Support" color="success" white size="small" icon="lucide:life-buoy">
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
-  <VSnack title="Business" color="info" size="small" icon="feather:briefcase">
-    <i class="iconify" data-icon="feather:plus"></i>
+  <VSnack title="Business" color="info" size="small" icon="lucide:briefcase">
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
-  <VSnack title="Warning" color="warning" white size="small" icon="feather:alert-octagon">
-    <i class="iconify" data-icon="feather:plus"></i>
+  <VSnack title="Warning" color="warning" white size="small" icon="lucide:alert-octagon">
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
-  <VSnack title="Health" color="danger" white size="small" icon="feather:thermometer">
-    <i class="iconify" data-icon="feather:plus"></i>
+  <VSnack title="Health" color="danger" white size="small" icon="lucide:thermometer">
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
 </div>
 

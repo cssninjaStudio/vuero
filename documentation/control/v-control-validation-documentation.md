@@ -9,7 +9,7 @@ Use the props shown in the code examples to handle validation.
 ```vue
 <template>
   <VField>
-    <VControl icon="feather:user" is-valid>
+    <VControl icon="lucide:user" is-valid>
       <VInput
         type="text"
         placeholder="Username"
@@ -21,7 +21,7 @@ Use the props shown in the code examples to handle validation.
     </VControl>
   </VField>
   <VField>
-    <VControl icon="feather:lock" has-error>
+    <VControl icon="lucide:lock" has-error>
       <VInput
         type="text"
         placeholder="Password"
@@ -41,7 +41,7 @@ Use the props shown in the code examples to handle validation.
 
 <form method="post" novalidate @submit.prevent>
   <VField>
-    <VControl icon="feather:user" is-valid>
+    <VControl icon="lucide:user" is-valid>
       <VInput
         type="text"
         placeholder="Username"
@@ -52,7 +52,7 @@ Use the props shown in the code examples to handle validation.
     </VControl>
   </VField>
   <VField>
-    <VControl icon="feather:lock" has-error>
+    <VControl icon="lucide:lock" has-error>
       <VInput
         type="text"
         placeholder="Password"

@@ -123,7 +123,7 @@ const onSave = async () => {
             />
             <VIconButton
               v-if="!isUploading"
-              icon="feather:edit-2"
+              icon="lucide:edit-2"
               class="edit-button is-edit"
               circle
               tabindex="0"
@@ -132,7 +132,7 @@ const onSave = async () => {
             />
             <VIconButton
               v-else
-              icon="feather:arrow-left"
+              icon="lucide:arrow-left"
               class="edit-button is-back"
               circle
               tabindex="0"
@@ -154,7 +154,7 @@ const onSave = async () => {
           <!--Field-->
           <div class="column is-6">
             <VField>
-              <VControl icon="feather:user">
+              <VControl icon="lucide:user">
                 <VInput
                   type="text"
                   placeholder="First Name"
@@ -166,7 +166,7 @@ const onSave = async () => {
           <!--Field-->
           <div class="column is-6">
             <VField>
-              <VControl icon="feather:user">
+              <VControl icon="lucide:user">
                 <VInput
                   type="text"
                   placeholder="Last Name"
@@ -178,7 +178,7 @@ const onSave = async () => {
           <!--Field-->
           <div class="column is-12">
             <VField>
-              <VControl icon="feather:briefcase">
+              <VControl icon="lucide:briefcase">
                 <VInput
                   type="text"
                   placeholder="Job Title"
@@ -190,7 +190,7 @@ const onSave = async () => {
           <!--Field-->
           <div class="column is-12">
             <VField>
-              <VControl icon="feather:map-pin">
+              <VControl icon="lucide:map-pin">
                 <VInput
                   type="text"
                   placeholder="Location"

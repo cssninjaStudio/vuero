@@ -12,16 +12,16 @@
         <VCollapseLinks>
           <template #header>
             Personal
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink
@@ -59,16 +59,16 @@
         <VCollapseLinks>
           <template #header>
             Finance
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink
@@ -106,16 +106,16 @@
         <VCollapseLinks>
           <template #header>
             Banking
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink
@@ -163,16 +163,16 @@
         <VCollapseLinks>
           <template #header>
             Business
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink
@@ -230,16 +230,16 @@
         <VCollapseLinks>
           <template #header>
             Lifestyle
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink
@@ -306,16 +306,16 @@
         <VCollapseLinks>
           <template #header>
             Ecommerce
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink
@@ -333,16 +333,16 @@
         <VCollapseLinks>
           <template #header>
             Apps
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink
@@ -420,16 +420,16 @@
         <VCollapseLinks>
           <template #header>
             Charts
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink
@@ -456,16 +456,16 @@
         <VCollapseLinks>
           <template #header>
             Widgets
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink
@@ -512,16 +512,16 @@
         <VCollapseLinks>
           <template #header>
             Starters
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink

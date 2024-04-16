@@ -149,7 +149,7 @@ useHead({
                         id="name"
                         v-slot="{ field }"
                       >
-                        <VControl icon="feather:user">
+                        <VControl icon="lucide:user">
                           <VInput
                             type="text"
                             :placeholder="t('auth.placeholder.name')"
@@ -169,7 +169,7 @@ useHead({
                         id="email"
                         v-slot="{ field }"
                       >
-                        <VControl icon="feather:mail">
+                        <VControl icon="lucide:mail">
                           <VInput
                             type="text"
                             :placeholder="t('auth.placeholder.email')"
@@ -189,7 +189,7 @@ useHead({
                         id="password"
                         v-slot="{ field }"
                       >
-                        <VControl icon="feather:lock">
+                        <VControl icon="lucide:lock">
                           <VInput
                             type="password"
                             :placeholder="t('auth.placeholder.password')"
@@ -209,7 +209,7 @@ useHead({
                         id="passwordCheck"
                         v-slot="{ field }"
                       >
-                        <VControl icon="feather:lock">
+                        <VControl icon="lucide:lock">
                           <VInput
                             type="password"
                             :placeholder="t('auth.placeholder.passwordCheck')"

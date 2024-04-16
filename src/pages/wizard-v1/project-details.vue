@@ -54,7 +54,7 @@ const selectCustomer = (customer: WizardCustomer | null) => {
         <h4>Customer</h4>
 
         <VField v-if="!wizard.data.customer">
-          <VControl icon="feather:search">
+          <VControl icon="lucide:search">
             <VInput
               v-model="search"
               placeholder="search..."
@@ -78,7 +78,7 @@ const selectCustomer = (customer: WizardCustomer | null) => {
           <template #action>
             <VIconButton
               size="small"
-              icon="feather:x"
+              icon="lucide:x"
               circle
               @click="selectCustomer(null)"
             />
@@ -107,7 +107,7 @@ const selectCustomer = (customer: WizardCustomer | null) => {
               <template #action>
                 <VIconButton
                   size="small"
-                  icon="feather:plus"
+                  icon="lucide:plus"
                   circle
                   @click="selectCustomer(customer)"
                 />
@@ -129,11 +129,11 @@ const selectCustomer = (customer: WizardCustomer | null) => {
               <div class="project-dates-inner">
                 <div class="project-date">
                   <div class="date-icon">
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify"
-                      data-icon="feather:map-pin"
-                    />
+                      icon="lucide:map-pin"
+                    ></iconify-icon>
                   </div>
                   <VControl>
                     <input
@@ -147,11 +147,11 @@ const selectCustomer = (customer: WizardCustomer | null) => {
                 <div class="separator" />
                 <div class="project-date">
                   <div class="date-icon">
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify"
-                      data-icon="feather:flag"
-                    />
+                      icon="lucide:flag"
+                    ></iconify-icon>
                   </div>
                   <VControl>
                     <input

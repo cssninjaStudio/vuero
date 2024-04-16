@@ -55,11 +55,11 @@ const props = withDefaults(defineProps<VBreadcrumbsProps>(), {
               class="icon is-small"
               :class="[item.hideLabel && props.withIcons && !!item.icon && 'is-solo']"
             >
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                :data-icon="item.icon"
-              />
+                :icon="item.icon"
+              ></iconify-icon>
             </span>
             <meta
               v-if="item.hideLabel && props.withIcons && !!item.icon"
@@ -95,11 +95,11 @@ const props = withDefaults(defineProps<VBreadcrumbsProps>(), {
               class="icon is-small"
               :class="[item.hideLabel && props.withIcons && !!item.icon && 'is-solo']"
             >
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                :data-icon="item.icon"
-              />
+                :icon="item.icon"
+              ></iconify-icon>
             </span>
             <meta
               v-if="item.hideLabel && props.withIcons && !!item.icon"
@@ -133,11 +133,11 @@ const props = withDefaults(defineProps<VBreadcrumbsProps>(), {
               class="icon is-small"
               :class="[item.hideLabel && props.withIcons && !!item.icon && 'is-solo']"
             >
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                :data-icon="item.icon"
-              />
+                :icon="item.icon"
+              ></iconify-icon>
             </span>
             <meta
               v-if="item.hideLabel && props.withIcons && item.icon"
@@ -189,12 +189,12 @@ const props = withDefaults(defineProps<VBreadcrumbsProps>(), {
 
         .icon {
           &.is-solo {
-            svg {
+            .iconify {
               top: 2px;
             }
           }
 
-          svg {
+          .iconify {
             position: relative;
             top: 0;
             height: 16px;

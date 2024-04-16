@@ -147,11 +147,11 @@ const validateStep = async () => {
               "
               @click="currentHelp === 0 ? (currentHelp = -1) : (currentHelp = 0)"
             >
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:help-circle"
-              />
+                icon="lucide:help-circle"
+              ></iconify-icon>
             </button>
           </h3>
 
@@ -171,11 +171,11 @@ const validateStep = async () => {
                   type="button"
                   class="input-button"
                 >
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:plus"
-                  />
+                    icon="lucide:plus"
+                  ></iconify-icon>
                   <span>Add shipment group</span>
                 </button>
               </VControl>
@@ -292,14 +292,14 @@ const validateStep = async () => {
           </div>
           <div class="form-section-output">
             <div class="output">
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:archive"
-              />
+                icon="lucide:archive"
+              ></iconify-icon>
               <span>15 i9 Laptops - b2</span>
               <div class="action">
-                <VIconButton icon="feather:trash-2" />
+                <VIconButton icon="lucide:trash-2" />
               </div>
             </div>
           </div>
@@ -321,11 +321,11 @@ const validateStep = async () => {
                 "
                 @click="currentHelp === 1 ? (currentHelp = -1) : (currentHelp = 1)"
               >
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:help-circle"
-                />
+                  icon="lucide:help-circle"
+                ></iconify-icon>
               </button>
             </h3>
 
@@ -345,11 +345,11 @@ const validateStep = async () => {
                     type="button"
                     class="input-button"
                   >
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify"
-                      data-icon="feather:plus"
-                    />
+                      icon="lucide:plus"
+                    ></iconify-icon>
                     <span>Add contact</span>
                   </button>
                 </VControl>
@@ -397,25 +397,25 @@ const validateStep = async () => {
 
             <div class="form-section-output">
               <div class="output">
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:user"
-                />
+                  icon="lucide:user"
+                ></iconify-icon>
                 <span>Erik Kovalsky</span>
                 <div class="action">
-                  <VIconButton icon="feather:trash-2" />
+                  <VIconButton icon="lucide:trash-2" />
                 </div>
               </div>
               <div class="output">
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:user"
-                />
+                  icon="lucide:user"
+                ></iconify-icon>
                 <span>Elsa Walker</span>
                 <div class="action">
-                  <VIconButton icon="feather:trash-2" />
+                  <VIconButton icon="lucide:trash-2" />
                 </div>
               </div>
             </div>
@@ -438,11 +438,11 @@ const validateStep = async () => {
                 "
                 @click="currentHelp === 2 ? (currentHelp = -1) : (currentHelp = 2)"
               >
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:help-circle"
-                />
+                  icon="lucide:help-circle"
+                ></iconify-icon>
               </button>
             </h3>
 
@@ -500,11 +500,11 @@ const validateStep = async () => {
                 "
                 @click="currentHelp === 3 ? (currentHelp = -1) : (currentHelp = 3)"
               >
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:help-circle"
-                />
+                  icon="lucide:help-circle"
+                ></iconify-icon>
               </button>
             </h3>
 
@@ -516,11 +516,11 @@ const validateStep = async () => {
                     type="checkbox"
                   />
                   <div class="indicator">
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify"
-                      data-icon="feather:check"
-                    />
+                      icon="lucide:check"
+                    ></iconify-icon>
                   </div>
                   <div class="option-inner">
                     <i
@@ -538,11 +538,11 @@ const validateStep = async () => {
                     type="checkbox"
                   />
                   <div class="indicator">
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify"
-                      data-icon="feather:check"
-                    />
+                      icon="lucide:check"
+                    ></iconify-icon>
                   </div>
                   <div class="option-inner">
                     <i
@@ -560,11 +560,11 @@ const validateStep = async () => {
                     type="checkbox"
                   />
                   <div class="indicator">
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify"
-                      data-icon="feather:check"
-                    />
+                      icon="lucide:check"
+                    ></iconify-icon>
                   </div>
                   <div class="option-inner">
                     <i
@@ -582,11 +582,11 @@ const validateStep = async () => {
                     type="checkbox"
                   />
                   <div class="indicator">
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify"
-                      data-icon="feather:check"
-                    />
+                      icon="lucide:check"
+                    ></iconify-icon>
                   </div>
                   <div class="option-inner">
                     <i
@@ -604,11 +604,11 @@ const validateStep = async () => {
                     type="checkbox"
                   />
                   <div class="indicator">
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify"
-                      data-icon="feather:check"
-                    />
+                      icon="lucide:check"
+                    ></iconify-icon>
                   </div>
                   <div class="option-inner">
                     <i
@@ -626,11 +626,11 @@ const validateStep = async () => {
                     type="checkbox"
                   />
                   <div class="indicator">
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify"
-                      data-icon="feather:check"
-                    />
+                      icon="lucide:check"
+                    ></iconify-icon>
                   </div>
                   <div class="option-inner">
                     <i
@@ -662,11 +662,11 @@ const validateStep = async () => {
                 "
                 @click="currentHelp === 4 ? (currentHelp = -1) : (currentHelp = 4)"
               >
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:help-circle"
-                />
+                  icon="lucide:help-circle"
+                ></iconify-icon>
               </button>
             </h3>
             <div class="form-section-inner">
@@ -856,11 +856,11 @@ const validateStep = async () => {
               @keydown.space.prevent="currentHelp = -1"
               @click="currentHelp = -1"
             >
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:x"
-              />
+                icon="lucide:x"
+              ></iconify-icon>
             </button>
             <h3>General Information</h3>
             <p>
@@ -871,27 +871,27 @@ const validateStep = async () => {
             <div class="list-wrap">
               <ul>
                 <li>
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:check"
-                  />
+                    icon="lucide:check"
+                  ></iconify-icon>
                   <span>Some nice list item</span>
                 </li>
                 <li>
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:check"
-                  />
+                    icon="lucide:check"
+                  ></iconify-icon>
                   <span>Some nice list item</span>
                 </li>
                 <li>
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:check"
-                  />
+                    icon="lucide:check"
+                  ></iconify-icon>
                   <span>Some nice list item</span>
                 </li>
               </ul>
@@ -908,11 +908,11 @@ const validateStep = async () => {
               @keydown.space.prevent="currentHelp = -1"
               @click="currentHelp = -1"
             >
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:x"
-              />
+                icon="lucide:x"
+              ></iconify-icon>
             </button>
             <h3>Shipment Owner</h3>
             <p>
@@ -923,19 +923,19 @@ const validateStep = async () => {
             <div class="list-wrap">
               <ul>
                 <li>
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:check"
-                  />
+                    icon="lucide:check"
+                  ></iconify-icon>
                   <span>Some nice list item</span>
                 </li>
                 <li>
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:check"
-                  />
+                    icon="lucide:check"
+                  ></iconify-icon>
                   <span>Some nice list item</span>
                 </li>
               </ul>
@@ -952,11 +952,11 @@ const validateStep = async () => {
               @keydown.space.prevent="currentHelp = -1"
               @click="currentHelp = -1"
             >
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:x"
-              />
+                icon="lucide:x"
+              ></iconify-icon>
             </button>
             <h3>Shipment Taxes</h3>
             <p>
@@ -967,27 +967,27 @@ const validateStep = async () => {
             <div class="list-wrap">
               <ul>
                 <li>
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:check"
-                  />
+                    icon="lucide:check"
+                  ></iconify-icon>
                   <span>Some nice list item</span>
                 </li>
                 <li>
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:check"
-                  />
+                    icon="lucide:check"
+                  ></iconify-icon>
                   <span>Some nice list item</span>
                 </li>
                 <li>
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:check"
-                  />
+                    icon="lucide:check"
+                  ></iconify-icon>
                   <span>Some nice list item</span>
                 </li>
               </ul>
@@ -1004,11 +1004,11 @@ const validateStep = async () => {
               @keydown.space.prevent="currentHelp = -1"
               @click="currentHelp = -1"
             >
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:x"
-              />
+                icon="lucide:x"
+              ></iconify-icon>
             </button>
             <h3>Options</h3>
             <p>
@@ -1019,19 +1019,19 @@ const validateStep = async () => {
             <div class="list-wrap">
               <ul>
                 <li>
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:check"
-                  />
+                    icon="lucide:check"
+                  ></iconify-icon>
                   <span>Some nice list item</span>
                 </li>
                 <li>
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:check"
-                  />
+                    icon="lucide:check"
+                  ></iconify-icon>
                   <span>Some nice list item</span>
                 </li>
               </ul>
@@ -1048,11 +1048,11 @@ const validateStep = async () => {
               @keydown.space.prevent="currentHelp = -1"
               @click="currentHelp = -1"
             >
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:x"
-              />
+                icon="lucide:x"
+              ></iconify-icon>
             </button>
             <h3>Validation</h3>
             <p>
@@ -1063,19 +1063,19 @@ const validateStep = async () => {
             <div class="list-wrap">
               <ul>
                 <li>
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:check"
-                  />
+                    icon="lucide:check"
+                  ></iconify-icon>
                   <span>Some nice list item</span>
                 </li>
                 <li>
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:check"
-                  />
+                    icon="lucide:check"
+                  ></iconify-icon>
                   <span>Some nice list item</span>
                 </li>
               </ul>
@@ -1135,7 +1135,7 @@ const validateStep = async () => {
           cursor: pointer;
           margin-inline-start: 0.25rem;
 
-          svg {
+          .iconify {
             height: 18px;
             width: 18px;
             pointer-events: none;
@@ -1224,7 +1224,7 @@ const validateStep = async () => {
           box-shadow: var(--light-box-shadow);
         }
 
-        svg {
+        .iconify {
           height: 18px;
           width: 16px;
         }
@@ -1273,7 +1273,7 @@ const validateStep = async () => {
                 border-color: var(--primary);
                 box-shadow: var(--light-box-shadow);
 
-                i {
+                .iconify {
                   color: var(--primary);
                 }
               }
@@ -1295,7 +1295,7 @@ const validateStep = async () => {
             transform: scale(0);
             transition: transform 0.3s;
 
-            svg {
+            .iconify {
               height: 14px;
               width: 14px;
               stroke-width: 3px;
@@ -1321,7 +1321,7 @@ const validateStep = async () => {
               font-size: 0.9rem;
             }
 
-            i {
+            .iconify {
               font-size: 2.25rem;
               color: var(--light-text);
               margin-bottom: 0.25rem;
@@ -1394,7 +1394,7 @@ const validateStep = async () => {
             margin-bottom: 1rem;
           }
 
-          > svg {
+          > .iconify {
             height: 18px;
             width: 18px;
             margin-inline-end: 0.75rem;
@@ -1429,7 +1429,7 @@ const validateStep = async () => {
                 background: var(--widget-grey-dark-1);
               }
 
-              svg {
+              .iconify {
                 height: 18px;
                 width: 18px;
                 stroke-width: 1.5px;
@@ -1490,7 +1490,7 @@ const validateStep = async () => {
         cursor: pointer;
         margin-inline-start: 0.25rem;
 
-        svg {
+        .iconify {
           height: 18px;
           width: 18px;
           pointer-events: none;
@@ -1511,7 +1511,7 @@ const validateStep = async () => {
             font-weight: 300;
           }
 
-          svg {
+          .iconify {
             height: 14px;
             width: 14px;
             stroke-width: 3px;
@@ -1594,7 +1594,7 @@ const validateStep = async () => {
             color: var(--dark-dark-text);
           }
 
-          svg {
+          .iconify {
             color: var(--dark-dark-text);
           }
         }
@@ -1639,7 +1639,7 @@ const validateStep = async () => {
                 ~ .option-inner {
                   border-color: var(--primary) !important;
 
-                  i {
+                  .iconify {
                     color: var(--primary);
                   }
                 }
@@ -1682,7 +1682,7 @@ const validateStep = async () => {
                   background: var(--dark-sidebar-light-5);
                 }
 
-                svg {
+                .iconify {
                   color: var(--light-text);
                 }
               }

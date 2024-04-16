@@ -154,11 +154,11 @@ const onSave = async () => {
                           </VControl>
                           <VControl nogrow>
                             <div class="button">
-                              <i
+                              <iconify-icon
                                 aria-hidden="true"
                                 class="iconify"
-                                data-icon="feather:arrow-right"
-                              />
+                                icon="lucide:arrow-right"
+                              ></iconify-icon>
                             </div>
                           </VControl>
                           <VControl subcontrol>
@@ -176,7 +176,7 @@ const onSave = async () => {
                 </div>
                 <div class="column is-6">
                   <VField>
-                    <VControl icon="feather:box">
+                    <VControl icon="lucide:box">
                       <VInput
                         type="text"
                         placeholder="Company Name"
@@ -187,7 +187,7 @@ const onSave = async () => {
                 </div>
                 <div class="column is-6">
                   <VField>
-                    <VControl icon="feather:briefcase">
+                    <VControl icon="lucide:briefcase">
                       <VInput
                         type="text"
                         placeholder="Job Title"

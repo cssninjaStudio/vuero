@@ -15,11 +15,11 @@ const emit = defineEmits(['close'])
         @keydown.space.prevent="emit('close')"
         @click="emit('close')"
       >
-        <i
+        <iconify-icon
           aria-hidden="true"
           class="iconify"
-          data-icon="feather:x"
-        />
+          icon="lucide:x"
+        ></iconify-icon>
       </div>
     </div>
     <div
@@ -46,60 +46,60 @@ const emit = defineEmits(['close'])
         <VCollapseLinks>
           <template #header>
             Icons
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink
             to="/elements/icons/iconify"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             Iconify
           </RouterLink>
           <RouterLink
             to="/elements/icons/line-icons-light"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             Line Icons Light
           </RouterLink>
           <RouterLink
             to="/elements/icons/line-icons-regular"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             Line Icons Regular
           </RouterLink>
           <RouterLink
             to="/elements/icons/font-awesome"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             Font Awesome 5
           </RouterLink>
         </VCollapseLinks>
@@ -186,16 +186,16 @@ const emit = defineEmits(['close'])
         <VCollapseLinks>
           <template #header>
             Buttons
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink
@@ -228,119 +228,119 @@ const emit = defineEmits(['close'])
               outlined
               curved
             />
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink
             to="/elements/forms/field"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             VField
           </RouterLink>
           <RouterLink
             to="/elements/forms/control"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             VControl
           </RouterLink>
           <RouterLink
             to="/elements/forms/inputs"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             VInput
           </RouterLink>
           <RouterLink
             to="/elements/forms/textarea"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             VTextarea
           </RouterLink>
           <RouterLink
             to="/elements/forms/selects"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             VSelect
           </RouterLink>
           <RouterLink
             to="/elements/checkbox"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             VCheckbox
           </RouterLink>
           <RouterLink
             to="/elements/radio"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             VRadio
           </RouterLink>
           <!-- <RouterLink to="/elements/forms/addons" class="is-submenu">
-            <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
+            <iconify-icon aria-hidden="true" class="iconify" icon="lucide:circle"></iconify-icon>
             Input Addons
           </RouterLink> -->
           <RouterLink
             to="/elements/forms/range-rating"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             VRangeRating
           </RouterLink>
           <RouterLink
             to="/elements/forms/file"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             File Input
           </RouterLink>
         </VCollapseLinks>
@@ -348,49 +348,49 @@ const emit = defineEmits(['close'])
         <VCollapseLinks>
           <template #header>
             Switches
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink
             to="/elements/animated-checkbox"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             VAnimatedCheckbox
           </RouterLink>
           <RouterLink
             to="/elements/switch-block"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             VSwitchBlock
           </RouterLink>
           <RouterLink
             to="/elements/switch-segment"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             VSwitchSegment
             <VTag
               label="v1.1"
@@ -406,93 +406,93 @@ const emit = defineEmits(['close'])
         <VCollapseLinks>
           <template #header>
             Addons
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink
             to="/elements/addons/calendar"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             VCalendar &amp; VDatePicker
           </RouterLink>
           <RouterLink
             to="/elements/addons/imask-input"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             VIMaskInput
           </RouterLink>
           <RouterLink
             to="/elements/addons/filepond"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             VFilePond
           </RouterLink>
           <RouterLink
             to="/elements/addons/credit-card"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             VCreditCard
           </RouterLink>
           <RouterLink
             to="/elements/addons/vueform-multiselect"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             @vueform/multiselect
           </RouterLink>
           <RouterLink
             to="/elements/addons/vueform-slider"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             @vueform/slider
           </RouterLink>
           <RouterLink
             to="/elements/addons/ckeditor"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             CKEditor 5
           </RouterLink>
         </VCollapseLinks>

@@ -22,7 +22,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
       <div class="search-menu">
         <div class="search-bar">
           <VField class="is-autocomplete-select is-curved-select">
-            <VControl icon="feather:search">
+            <VControl icon="lucide:search">
               <Multiselect
                 v-model="tagsValue"
                 mode="tags"
@@ -35,27 +35,27 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
           </VField>
         </div>
         <div class="search-location">
-          <i
+          <iconify-icon
             class="iconify"
-            data-icon="feather:map-pin"
-          />
+            icon="lucide:map-pin"
+          ></iconify-icon>
           Los Angeles, CA
         </div>
         <div class="search-job">
-          <i
+          <iconify-icon
             class="iconify"
-            data-icon="feather:briefcase"
-          />
+            icon="lucide:briefcase"
+          ></iconify-icon>
           <input
             type="text"
             placeholder="Job Type"
           >
         </div>
         <div class="search-salary">
-          <i
+          <iconify-icon
             class="iconify"
-            data-icon="feather:dollar-sign"
-          />
+            icon="lucide:dollar-sign"
+          ></iconify-icon>
           <input
             type="text"
             placeholder="Salary Range"
@@ -78,7 +78,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
               Create a job alert now and never miss a job
             </div>
             <VField>
-              <VControl icon="feather:briefcase">
+              <VControl icon="lucide:briefcase">
                 <VInput
                   type="text"
                   placeholder="Keywords"
@@ -465,7 +465,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
         border: none;
       }
 
-      svg {
+      .iconify {
         margin-inline-end: 0.5rem;
         width: 18px;
         color: var(--primary);

@@ -127,11 +127,11 @@ import {
                 <div class="metric-foot is-up">
                   <span>
                     <span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:arrow-right"
-                      />
+                        icon="lucide:arrow-right"
+                      ></iconify-icon>
                       +0.8%</span>
                     more than usual.
                   </span>
@@ -150,11 +150,11 @@ import {
                 <div class="metric-foot is-down">
                   <span>
                     <span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:arrow-right"
-                      />
+                        icon="lucide:arrow-right"
+                      ></iconify-icon>
                       -0.2%</span>
                     less than ususal.
                   </span>
@@ -173,11 +173,11 @@ import {
                 <div class="metric-foot is-up">
                   <span>
                     <span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:arrow-right"
-                      />
+                        icon="lucide:arrow-right"
+                      ></iconify-icon>
                       +1.2%</span>
                     more than ususal.
                   </span>
@@ -196,11 +196,11 @@ import {
                 <div class="metric-foot is-up">
                   <span>
                     <span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:arrow-right"
-                      />
+                        icon="lucide:arrow-right"
+                      ></iconify-icon>
                       +4.2%</span>
                     more than ususal.
                   </span>

@@ -233,7 +233,7 @@ watchEffect((cleanup) => {
             :active="mode === 'write'"
             @click="mode = 'write'"
           >
-            <VIcon icon="feather:edit-3" />
+            <VIcon icon="lucide:edit-3" />
             <span>Write</span>
           </VAction>
           <VAction
@@ -242,7 +242,7 @@ watchEffect((cleanup) => {
             :active="mode === 'preview'"
             @click="mode = 'preview'"
           >
-            <VIcon icon="feather:eye" />
+            <VIcon icon="lucide:eye" />
             <span>Preview</span>
           </VAction>
         </VButtons>

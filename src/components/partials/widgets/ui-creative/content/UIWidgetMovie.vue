@@ -23,18 +23,18 @@ const props = withDefaults(
       @error.once="onceImageErrored(400, 300)"
     >
     <div class="widget-meta">
-      <i
+      <iconify-icon
         aria-hidden="true"
         class="iconify"
-        data-icon="feather:play-circle"
-      />
+        icon="lucide:play-circle"
+      ></iconify-icon>
       <h4>{{ props.title }}</h4>
       <span class="views">
-        <i
+        <iconify-icon
           aria-hidden="true"
           class="iconify"
-          data-icon="feather:eye"
-        />
+          icon="lucide:eye"
+        ></iconify-icon>
         <span>{{ props.views }}</span>
       </span>
     </div>

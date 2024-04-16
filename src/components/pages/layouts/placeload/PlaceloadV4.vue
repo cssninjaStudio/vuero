@@ -14,7 +14,7 @@ const optionsSingle = [
   <div>
     <div class="user-grid-toolbar">
       <VField raw>
-        <VControl icon="feather:search">
+        <VControl icon="lucide:search">
           <VInput
             v-model="filters"
             placeholder="Search..."

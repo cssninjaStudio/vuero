@@ -102,11 +102,11 @@ function updateColor({ colors }: any) {
           <template #format-switch-button>
             <span class="sr-only">Switch format</span>
 
-            <i
+            <iconify-icon
               class="iconify rem-120 is-clickable"
               aria-hidden="true"
-              data-icon="fluent:chevron-up-down-20-filled"
-            />
+              icon="fluent:chevron-up-down-20-filled"
+            ></iconify-icon>
           </template>
         </ColorPicker>
       </div>

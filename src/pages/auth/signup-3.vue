@@ -82,7 +82,7 @@ useHead({
             <div class="login-form">
               <!-- Input -->
               <VField>
-                <VControl icon="feather:user">
+                <VControl icon="lucide:user">
                   <VInput
                     type="text"
                     placeholder="Name"
@@ -92,7 +92,7 @@ useHead({
               </VField>
               <!-- Input -->
               <VField>
-                <VControl icon="feather:mail">
+                <VControl icon="lucide:mail">
                   <VInput
                     type="text"
                     placeholder="Email Address"
@@ -102,7 +102,7 @@ useHead({
               </VField>
               <!-- Input -->
               <VField>
-                <VControl icon="feather:lock">
+                <VControl icon="lucide:lock">
                   <VInput
                     type="password"
                     placeholder="Password"
@@ -112,7 +112,7 @@ useHead({
               </VField>
               <!-- Input -->
               <VField>
-                <VControl icon="feather:lock">
+                <VControl icon="lucide:lock">
                   <VInput
                     type="password"
                     placeholder="Repeat Password"

@@ -408,7 +408,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
           &.heat-3 {
             background: var(--primary);
 
-            i {
+            .fas {
               color: var(--smoke-white);
               font-size: 12px;
             }
@@ -461,7 +461,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
             &.heat-3 {
               background: var(--primary);
 
-              i {
+              .iconify {
                 color: var(--smoke-white);
               }
             }

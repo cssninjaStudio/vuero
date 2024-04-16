@@ -15,11 +15,11 @@ const emit = defineEmits(['close'])
         @keydown.space.prevent="emit('close')"
         @click="emit('close')"
       >
-        <i
+        <iconify-icon
           aria-hidden="true"
           class="iconify"
-          data-icon="feather:x"
-        />
+          icon="lucide:x"
+        ></iconify-icon>
       </div>
     </div>
     <div
@@ -171,82 +171,82 @@ const emit = defineEmits(['close'])
               outlined
               curved
             />
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink
             to="/components/flextable/"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             Basic usage
           </RouterLink>
           <RouterLink
             to="/components/flextable/columns"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             Customize columns
           </RouterLink>
           <RouterLink
             to="/components/flextable/slots"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             Slots usage
           </RouterLink>
           <RouterLink
             to="/components/flextable/render"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             Render functions (advanced)
           </RouterLink>
           <RouterLink
             to="/components/flextable/wrapper/"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             VFlexTableWrapper
           </RouterLink>
           <RouterLink
             to="/components/flextable/wrapper/async"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             Async data (advanced)
           </RouterLink>
         </VCollapseLinks>
@@ -254,49 +254,49 @@ const emit = defineEmits(['close'])
         <VCollapseLinks>
           <template #header>
             Accordions
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink
             to="/components/accordion/"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             VAccordion
           </RouterLink>
           <RouterLink
             to="/components/collapse"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             VCollapse
           </RouterLink>
           <RouterLink
             to="/components/accordion/image"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             VAccordionImage
           </RouterLink>
         </VCollapseLinks>
@@ -304,27 +304,27 @@ const emit = defineEmits(['close'])
         <VCollapseLinks>
           <template #header>
             Cards
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink
             to="/components/card/"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             VCard
             <VTag
               label="v1.1"
@@ -337,11 +337,11 @@ const emit = defineEmits(['close'])
             to="/components/card/action"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             VCardAction
             <VTag
               label="v1.1"
@@ -354,22 +354,22 @@ const emit = defineEmits(['close'])
             to="/components/card/advanced"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             VCardAdvanced
           </RouterLink>
           <RouterLink
             to="/components/card/media"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             VCardMedia
             <VTag
               label="v1.1"
@@ -382,11 +382,11 @@ const emit = defineEmits(['close'])
             to="/components/card/social"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             VCardSocial
           </RouterLink>
         </VCollapseLinks>
@@ -394,37 +394,37 @@ const emit = defineEmits(['close'])
         <VCollapseLinks>
           <template #header>
             Placeholders
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
           <RouterLink
             to="/components/placeholder-page"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             VPlaceholderPage
           </RouterLink>
           <RouterLink
             to="/components/placeholder-section"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             VPlaceholderSection
           </RouterLink>
         </VCollapseLinks>
@@ -434,70 +434,70 @@ const emit = defineEmits(['close'])
         <VCollapseLinks>
           <template #header>
             Plugins
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
           <RouterLink
             to="/components/plugins/notif"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             Notyf
           </RouterLink>
           <RouterLink
             to="/components/plugins/tippy"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             Tippy
           </RouterLink>
           <RouterLink
             to="/components/plugins/billboard-js"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             VBillboardJS
           </RouterLink>
           <RouterLink
             to="/components/plugins/photos-swipe"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             VPhotosSwipe
           </RouterLink>
           <RouterLink
             to="/components/plugins/plyr"
             class="is-submenu"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:circle"
-            />
+              icon="lucide:circle"
+            ></iconify-icon>
             VPlyr
           </RouterLink>
         </VCollapseLinks>

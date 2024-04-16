@@ -65,11 +65,11 @@ onUnmounted(() => {
             @keydown.space.prevent="tab = 'posts'"
             @click="tab = 'posts'"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:activity"
-            />
+              icon="lucide:activity"
+            ></iconify-icon>
           </a>
           <a
             data-target-section="subsection-2"
@@ -80,11 +80,11 @@ onUnmounted(() => {
             @keydown.space.prevent="tab = 'projects'"
             @click="tab = 'projects'"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:briefcase"
-            />
+              icon="lucide:briefcase"
+            ></iconify-icon>
           </a>
           <a
             data-target-section="subsection-3"
@@ -95,11 +95,11 @@ onUnmounted(() => {
             @keydown.space.prevent="tab = 'tasks'"
             @click="tab = 'tasks'"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:check-circle"
-            />
+              icon="lucide:check-circle"
+            ></iconify-icon>
           </a>
           <div class="icon-tabs-naver" />
         </div>
@@ -164,21 +164,21 @@ onUnmounted(() => {
     <div class="buttons">
       <button class="button v-button is-dark-outlined">
         <span class="icon">
-          <i
+          <iconify-icon
             aria-hidden="true"
             class="iconify"
-            data-icon="feather:check"
-          />
+            icon="lucide:check"
+          ></iconify-icon>
         </span>
         <span>Hire</span>
       </button>
       <button class="button v-button is-dark-outlined">
         <span class="icon">
-          <i
+          <iconify-icon
             aria-hidden="true"
             class="iconify"
-            data-icon="feather:message-circle"
-          />
+            icon="lucide:message-circle"
+          ></iconify-icon>
         </span>
         <span>Talk</span>
       </button>

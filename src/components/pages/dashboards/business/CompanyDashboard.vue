@@ -85,11 +85,11 @@ onMounted(async () => {
             <template #badge>
               <button class="button icon-button is-circle is-dark-outlined">
                 <span class="icon is-small">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:plus"
-                  />
+                    icon="lucide:plus"
+                  ></iconify-icon>
                 </span>
               </button>
             </template>
@@ -240,16 +240,16 @@ onMounted(async () => {
             <div class="widget-toolbar">
               <div class="left">
                 <a class="action-icon">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify ltr-hidden"
-                    data-icon="feather:chevron-right"
-                  />
-                  <i
+                    icon="lucide:chevron-right"
+                  ></iconify-icon>
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify rtl-hidden"
-                    data-icon="feather:chevron-left"
-                  />
+                    icon="lucide:chevron-left"
+                  ></iconify-icon>
                 </a>
               </div>
               <div class="center">
@@ -257,16 +257,16 @@ onMounted(async () => {
               </div>
               <div class="right">
                 <a class="action-icon">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify rtl-hidden"
-                    data-icon="feather:chevron-right"
-                  />
-                  <i
+                    icon="lucide:chevron-right"
+                  ></iconify-icon>
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify ltr-hidden"
-                    data-icon="feather:chevron-left"
-                  />
+                    icon="lucide:chevron-left"
+                  ></iconify-icon>
                 </a>
               </div>
             </div>

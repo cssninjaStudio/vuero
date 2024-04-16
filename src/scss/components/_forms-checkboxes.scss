@@ -113,14 +113,9 @@
         rotate(calc(var(--transform-direction) * 0));
       transition: all 0.3s ease;
 
-      i {
-        color: var(--white);
+      .iconify {
+        // color: var(--white);
         font-size: 18px;
-      }
-
-      svg {
-        height: 16px;
-        width: 16px;
       }
     }
 

@@ -66,7 +66,7 @@
         rotate(calc(var(--transform-direction) * 0));
       transition: all 0.3s ease;
 
-      svg {
+      .iconify {
         color: var(--white) !important;
         height: 14px !important;
         width: 14px !important;
@@ -87,7 +87,7 @@
       opacity: 0;
       z-index: 0;
 
-      svg {
+      .iconify {
         color: var(--white) !important;
       }
     }

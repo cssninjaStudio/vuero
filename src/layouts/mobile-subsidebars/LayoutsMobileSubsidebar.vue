@@ -9,16 +9,16 @@
         <VCollapseLinks>
           <template #header>
             Lists
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink
@@ -66,16 +66,16 @@
         <VCollapseLinks>
           <template #header>
             Flex Lists
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
           <RouterLink
             to="/sidebar/layouts/list-flex-1"
@@ -112,16 +112,16 @@
         <VCollapseLinks>
           <template #header>
             Datatable
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink
@@ -159,16 +159,16 @@
         <VCollapseLinks>
           <template #header>
             Form Layouts
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
           <RouterLink
             to="/sidebar/layouts/form-layouts-1"
@@ -225,16 +225,16 @@
         <VCollapseLinks>
           <template #header>
             Placeload
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
           <RouterLink
             to="/sidebar/layouts/placeload-1"
@@ -283,16 +283,16 @@
         <VCollapseLinks>
           <template #header>
             Card Grid
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
           <RouterLink
             to="/sidebar/layouts/grid-cards-1"
@@ -339,16 +339,16 @@
         <VCollapseLinks>
           <template #header>
             Tile Grid
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink
@@ -386,16 +386,16 @@
         <VCollapseLinks>
           <template #header>
             User Grid
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink
@@ -444,16 +444,16 @@
         <VCollapseLinks>
           <template #header>
             Personal
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink
@@ -501,32 +501,32 @@
         <VCollapseLinks>
           <template #header>
             Pages
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
         </VCollapseLinks>
 
         <VCollapseLinks>
           <template #header>
             Pages
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
           <RouterLink
             to="/auth/login"
@@ -613,16 +613,16 @@
         <VCollapseLinks>
           <template #header>
             Subpages
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink
@@ -660,16 +660,16 @@
         <VCollapseLinks>
           <template #header>
             Projects
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink
@@ -681,11 +681,11 @@
               class="lnil lnil-grid-alt"
             />
             <span>Projects V1</span>
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify is-auto"
-              data-icon="feather:map-pin"
-            />
+              icon="lucide:map-pin"
+            ></iconify-icon>
           </RouterLink>
           <RouterLink
             to="/sidebar/layouts/projects-projects-2"
@@ -696,11 +696,11 @@
               class="lnil lnil-grid-alt"
             />
             <span>Projects V2</span>
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify is-auto"
-              data-icon="feather:map-pin"
-            />
+              icon="lucide:map-pin"
+            ></iconify-icon>
           </RouterLink>
           <RouterLink
             to="/sidebar/layouts/projects-projects-3"
@@ -711,11 +711,11 @@
               class="lnil lnil-grid-alt"
             />
             <span>Projects V3</span>
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify is-auto"
-              data-icon="feather:map-pin"
-            />
+              icon="lucide:map-pin"
+            ></iconify-icon>
           </RouterLink>
           <RouterLink
             to="/sidebar/layouts/projects-details"
@@ -726,11 +726,11 @@
               class="lnil lnil-layout"
             />
             <span>Project Details</span>
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify is-auto"
-              data-icon="feather:map-pin"
-            />
+              icon="lucide:map-pin"
+            ></iconify-icon>
           </RouterLink>
           <RouterLink
             to="/sidebar/layouts/kanban-board"
@@ -741,11 +741,11 @@
               class="lnil lnil-layout-alt-1"
             />
             <span>Kanban Board</span>
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify is-auto"
-              data-icon="feather:map-pin"
-            />
+              icon="lucide:map-pin"
+            ></iconify-icon>
           </RouterLink>
         </VCollapseLinks>
 
@@ -753,16 +753,16 @@
         <VCollapseLinks>
           <template #header>
             Utility
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink
@@ -819,16 +819,16 @@
         <VCollapseLinks>
           <template #header>
             Onboarding
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink
@@ -896,16 +896,16 @@
         <VCollapseLinks>
           <template #header>
             Error Pages
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink

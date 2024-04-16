@@ -88,7 +88,7 @@ const columns = {
         <template #left>
           <!-- We can bind wrapperState.searchInput to any input -->
           <VField>
-            <VControl icon="feather:search">
+            <VControl icon="lucide:search">
               <input
                 v-model="wrapperState.searchInput"
                 type="text"

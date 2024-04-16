@@ -13,14 +13,14 @@ your content. Check the markup for more details.
     white
     icon="fas fa-shopping-cart"
   >
-    <i class="iconify" data-icon="feather:plus" />
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
   <VSnack
     title="Shopping"
     color="primary"
     icon="fas fa-smile"
   >
-    <i class="iconify" data-icon="feather:plus" />
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
   <VSnack
     title="Support"
@@ -28,14 +28,14 @@ your content. Check the markup for more details.
     white
     icon="fas fa-life-ring"
   >
-    <i class="iconify" data-icon="feather:plus" />
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
   <VSnack
     title="Business"
     color="info"
     icon="fas fa-building"
   >
-    <i class="iconify" data-icon="feather:plus" />
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
   <VSnack
     title="Warning"
@@ -43,7 +43,7 @@ your content. Check the markup for more details.
     white
     icon="fas fa-radiation"
   >
-    <i class="iconify" data-icon="feather:plus" />
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
   <VSnack
     title="Health"
@@ -51,7 +51,7 @@ your content. Check the markup for more details.
     white
     icon="fas fa-thermometer-half"
   >
-    <i class="iconify" data-icon="feather:plus" />
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
 </template>
 ```
@@ -62,19 +62,19 @@ your content. Check the markup for more details.
 
 <div class="snacks">
   <VSnack title="Shopping" white icon="fas fa-shopping-cart">
-    <i class="iconify" data-icon="feather:plus"></i>
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
   <VSnack title="Shopping" color="primary" icon="fas fa-smile">
-    <i class="iconify" data-icon="feather:plus"></i>
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
   <VSnack title="Support" color="success" white icon="fas fa-life-ring">
-    <i class="iconify" data-icon="feather:plus"></i>
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
   <VSnack title="Business" color="info" icon="fas fa-building">
-    <i class="iconify" data-icon="feather:plus"></i>
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
   <VSnack title="Warning" color="warning" white icon="fas fa-radiation">
-    <i class="iconify" data-icon="feather:plus"></i>
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
   <VSnack
     title="Health"
@@ -82,7 +82,7 @@ your content. Check the markup for more details.
     white
     icon="fas fa-thermometer-half"
   >
-    <i class="iconify" data-icon="feather:plus"></i>
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
 </div>
 

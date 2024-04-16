@@ -19,7 +19,7 @@ the `center` prop. This will apply the `flex` property
         size="medium"
         rounded
       >
-        <i class="iconify" data-icon="feather:chrome" />
+        <iconify-icon class="iconify" icon="lucide:chrome"></iconify-icon>
       </VIconBox>
     </template>
     <template #action>
@@ -41,7 +41,7 @@ the `center` prop. This will apply the `flex` property
       <VBlock title="Team Tasks" subtitle="View all tasks" center>
         <template #icon>
           <VIconBox color="info" size="medium" rounded>
-            <i class="iconify" data-icon="feather:chrome"></i>
+            <iconify-icon class="iconify" icon="lucide:chrome"></iconify-icon>
           </VIconBox>
         </template>
         <template #action>

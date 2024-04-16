@@ -18,11 +18,11 @@ const emit = defineEmits(['close'])
         @keydown.space.prevent="emit('close')"
         @click="emit('close')"
       >
-        <i
+        <iconify-icon
           aria-hidden="true"
           class="iconify"
-          data-icon="feather:x"
-        />
+          icon="lucide:x"
+        ></iconify-icon>
       </div>
     </div>
     <div
@@ -36,16 +36,16 @@ const emit = defineEmits(['close'])
         >
           <template #header>
             Lists
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
           <RouterLink
             to="/sidebar/layouts"
@@ -95,16 +95,16 @@ const emit = defineEmits(['close'])
         >
           <template #header>
             Flex Lists
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink
@@ -145,16 +145,16 @@ const emit = defineEmits(['close'])
         >
           <template #header>
             Datatable
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink
@@ -195,16 +195,16 @@ const emit = defineEmits(['close'])
         >
           <template #header>
             Form Layouts
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink
@@ -265,16 +265,16 @@ const emit = defineEmits(['close'])
         >
           <template #header>
             Placeload
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink
@@ -351,16 +351,16 @@ const emit = defineEmits(['close'])
         >
           <template #header>
             Card Grid
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink
@@ -411,16 +411,16 @@ const emit = defineEmits(['close'])
         >
           <template #header>
             Tile Grid
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink
@@ -461,16 +461,16 @@ const emit = defineEmits(['close'])
         >
           <template #header>
             User Grid
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink
@@ -523,16 +523,16 @@ const emit = defineEmits(['close'])
         >
           <template #header>
             Personal
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
           <RouterLink
             to="/sidebar/layouts/profile-view"
@@ -582,16 +582,16 @@ const emit = defineEmits(['close'])
         >
           <template #header>
             Pages
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink
@@ -682,16 +682,16 @@ const emit = defineEmits(['close'])
         >
           <template #header>
             Subpages
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink
@@ -732,16 +732,16 @@ const emit = defineEmits(['close'])
         >
           <template #header>
             Projects
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink
@@ -804,16 +804,16 @@ const emit = defineEmits(['close'])
         >
           <template #header>
             Utility
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink
@@ -880,16 +880,16 @@ const emit = defineEmits(['close'])
         >
           <template #header>
             Onboarding
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink
@@ -960,16 +960,16 @@ const emit = defineEmits(['close'])
         >
           <template #header>
             Error Pages
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify rtl-hidden"
-              data-icon="feather:chevron-right"
-            />
-            <i
+              icon="lucide:chevron-right"
+            ></iconify-icon>
+            <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
-              data-icon="feather:chevron-left"
-            />
+              icon="lucide:chevron-left"
+            ></iconify-icon>
           </template>
 
           <RouterLink

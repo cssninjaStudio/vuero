@@ -159,13 +159,13 @@ onBeforeUnmount(() => {
         border-color: var(--primary) !important;
         color: var(--white) !important;
 
-        svg {
+        .iconify {
           fill: var(--white) !important;
           stroke: var(--white) !important;
         }
       }
 
-      svg {
+      .iconify {
         fill: none;
         stroke: var(--primary);
         stroke-width: 1.6px;

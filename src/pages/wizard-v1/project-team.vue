@@ -148,7 +148,7 @@ watchEffect(() => {
           </p>
 
           <VField class="mt-4">
-            <VControl icon="feather:search">
+            <VControl icon="lucide:search">
               <VInput
                 v-model="search"
                 type="search"

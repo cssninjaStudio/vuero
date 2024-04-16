@@ -2930,7 +2930,7 @@ a.navbar-item.is-active,
   color: rgb(230, 41, 100);
 }
 
-.is-dark .menu-toggle i {
+.is-dark .menu-toggle .iconify {
   background: rgb(42, 172, 142);
   color: rgb(255, 255, 255);
 }
@@ -3001,15 +3001,15 @@ body.opened {
   color: rgb(42, 172, 142);
 }
 
-.navbar-subnavbar .navbar-subnavbar-inner .tab-content .tab-content-inner .center ul li.is-active a svg {
+.navbar-subnavbar .navbar-subnavbar-inner .tab-content .tab-content-inner .center ul li.is-active a .iconify {
   fill: rgb(42, 172, 142);
 }
 
-.navbar-subnavbar .navbar-subnavbar-inner .tab-content .tab-content-inner .center ul li .router-link-exact-active svg {
+.navbar-subnavbar .navbar-subnavbar-inner .tab-content .tab-content-inner .center ul li .router-link-exact-active .iconify {
   fill: rgb(42, 172, 142);
 }
 
-.navbar-subnavbar .navbar-subnavbar-inner .tab-content .tab-content-inner .center ul li a svg {
+.navbar-subnavbar .navbar-subnavbar-inner .tab-content .tab-content-inner .center ul li a .iconify {
   fill: rgb(42, 172, 142);
 }
 
@@ -3029,11 +3029,11 @@ body.opened {
   background: rgb(255, 255, 255);
 }
 
-.right-panel-wrapper .right-panel .right-panel-head .close-panel:hover svg {
+.right-panel-wrapper .right-panel .right-panel-head .close-panel:hover .iconify {
   color: rgb(42, 172, 142);
 }
 
-.is-dark .right-panel-wrapper .right-panel .right-panel-head .close-panel:hover svg {
+.is-dark .right-panel-wrapper .right-panel .right-panel-head .close-panel:hover .iconify {
   color: rgb(42, 172, 142);
 }
 
@@ -3202,7 +3202,7 @@ code {
   background: rgb(255, 255, 255);
 }
 
-.control.has-icon .input:focus + .form-icon svg {
+.control.has-icon .input:focus + .form-icon .iconify {
   color: rgb(42, 172, 142);
 }
 
@@ -3226,7 +3226,7 @@ code {
   background: rgb(255, 255, 255);
 }
 
-.is-dark .control.has-icon .input:focus ~ .form-icon svg {
+.is-dark .control.has-icon .input:focus ~ .form-icon .iconify {
   color: rgb(42, 172, 142);
 }
 
@@ -3260,7 +3260,7 @@ code {
 }
 
 .h-toggle .toggler .active i,
-.h-toggle .toggler .inactive i {
+.h-toggle .toggler .inactive .iconify {
   color: rgb(255, 255, 255);
 }
 
@@ -3387,7 +3387,7 @@ code {
   color: rgb(255, 255, 255);
 }
 
-.vc-popover-content-wrapper .vc-nav-popover-container .vc-nav-container .vc-nav-header .vc-nav-arrow svg {
+.vc-popover-content-wrapper .vc-nav-popover-container .vc-nav-container .vc-nav-header .vc-nav-arrow .iconify {
   stroke: rgb(255, 255, 255);
 }
 
@@ -3501,7 +3501,7 @@ code {
   color: rgb(42, 172, 142);
 }
 
-.is-dark .v-popover-profile .profile-popover-block .popover-actions .popover-icon:hover svg {
+.is-dark .v-popover-profile .profile-popover-block .popover-actions .popover-icon:hover .iconify {
   color: rgb(42, 172, 142);
 }
 
@@ -3592,7 +3592,7 @@ code {
 }
 
 .flex-pagination .pagination-next.has-chevron svg,
-.flex-pagination .pagination-previous.has-chevron svg {
+.flex-pagination .pagination-previous.has-chevron .iconify {
   color: rgb(42, 172, 142);
 }
 
@@ -3606,7 +3606,7 @@ code {
 }
 
 .is-dark .flex-pagination .pagination-next svg,
-.is-dark .flex-pagination .pagination-previous svg {
+.is-dark .flex-pagination .pagination-previous .iconify {
   color: rgb(42, 172, 142);
 }
 

@@ -51,7 +51,7 @@ const filteredData = computed(() => {
 <template>
   <div>
     <div class="list-view-toolbar is-reversed">
-      <VControl icon="feather:search">
+      <VControl icon="lucide:search">
         <input
           v-model="filters"
           class="input custom-text-filter"
@@ -147,31 +147,31 @@ const filteredData = computed(() => {
                     <span>{{ item.author.name }}</span>
                   </h3>
                   <span>
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify"
-                      data-icon="feather:archive"
-                    />
+                      icon="lucide:archive"
+                    ></iconify-icon>
                     <span>{{ item.category }}</span>
                     <i
                       aria-hidden="true"
                       class="fas fa-circle icon-separator"
                     />
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify"
-                      data-icon="feather:clock"
-                    />
+                      icon="lucide:clock"
+                    ></iconify-icon>
                     <span>{{ item.duration }}</span>
                     <i
                       aria-hidden="true"
                       class="fas fa-circle icon-separator"
                     />
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify"
-                      data-icon="feather:paperclip"
-                    />
+                      icon="lucide:paperclip"
+                    ></iconify-icon>
                     <span>{{ item.attachments }} files</span>
                   </span>
                 </div>
@@ -193,11 +193,11 @@ const filteredData = computed(() => {
                       data-hint="Save"
                     >
                       <span class="icon is-small">
-                        <i
+                        <iconify-icon
                           aria-hidden="true"
                           class="iconify"
-                          data-icon="feather:heart"
-                        />
+                          icon="lucide:heart"
+                        ></iconify-icon>
                       </span>
                     </button>
                   </div>
@@ -315,7 +315,7 @@ const filteredData = computed(() => {
           font-size: 0.9rem;
           color: var(--light-text);
 
-          svg {
+          .iconify {
             position: relative;
             top: 1px;
             height: 12px;
@@ -480,7 +480,7 @@ const filteredData = computed(() => {
               margin: 10px;
               width: calc(33.3% - 20px);
 
-              i {
+              .iconify {
                 margin: 0;
               }
             }
@@ -579,7 +579,7 @@ const filteredData = computed(() => {
               margin: 10px;
               width: calc(33.3% - 20px);
 
-              i {
+              .iconify {
                 margin: 0;
               }
             }

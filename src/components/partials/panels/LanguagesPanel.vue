@@ -44,16 +44,16 @@ watch(locale, () => {
           @keydown.space.prevent="panels.close()"
           @click="panels.close()"
         >
-          <i
+          <iconify-icon
             aria-hidden="true"
             class="iconify rtl-hidden"
-            data-icon="feather:chevron-right"
-          />
-          <i
+            icon="lucide:chevron-right"
+          ></iconify-icon>
+          <iconify-icon
             aria-hidden="true"
             class="iconify ltr-hidden"
-            data-icon="feather:chevron-left"
-          />
+            icon="lucide:chevron-left"
+          ></iconify-icon>
         </a>
       </div>
       <div class="right-panel-body has-slimscroll">
@@ -73,11 +73,11 @@ watch(locale, () => {
                   alt=""
                 >
                 <div class="indicator">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:check"
-                  />
+                    icon="lucide:check"
+                  ></iconify-icon>
                 </div>
               </div>
             </div>
@@ -97,11 +97,11 @@ watch(locale, () => {
                   alt=""
                 >
                 <div class="indicator">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:check"
-                  />
+                    icon="lucide:check"
+                  ></iconify-icon>
                 </div>
               </div>
             </div>
@@ -121,11 +121,11 @@ watch(locale, () => {
                   alt=""
                 >
                 <div class="indicator">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:check"
-                  />
+                    icon="lucide:check"
+                  ></iconify-icon>
                 </div>
               </div>
             </div>
@@ -145,11 +145,11 @@ watch(locale, () => {
                   alt=""
                 >
                 <div class="indicator">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:check"
-                  />
+                    icon="lucide:check"
+                  ></iconify-icon>
                 </div>
               </div>
             </div>
@@ -169,11 +169,11 @@ watch(locale, () => {
                   alt=""
                 >
                 <div class="indicator">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:check"
-                  />
+                    icon="lucide:check"
+                  ></iconify-icon>
                 </div>
               </div>
             </div>
@@ -193,11 +193,11 @@ watch(locale, () => {
                   alt=""
                 >
                 <div class="indicator">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:check"
-                  />
+                    icon="lucide:check"
+                  ></iconify-icon>
                 </div>
               </div>
             </div>
@@ -304,7 +304,7 @@ watch(locale, () => {
                 background: var(--primary);
                 border: 3px solid var(--white);
 
-                svg {
+                .iconify {
                   height: 10px;
                   width: 10px;
                   stroke-width: 3px;

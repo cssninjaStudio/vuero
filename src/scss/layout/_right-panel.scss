@@ -92,16 +92,14 @@
         &:hover {
           background: var(--fade-grey);
 
-          svg {
+          .iconify {
             color: var(--primary);
           }
         }
 
-        svg {
+        .iconify {
           color: var(--light-text);
-          height: 22px;
-          width: 22px;
-          transition: stroke 0.3s;
+          font-size: 22px;
         }
       }
     }
@@ -132,7 +130,7 @@
           &:hover {
             background: var(--dark-sidebar-light-6);
 
-            svg {
+            .iconify {
               color: var(--primary);
             }
           }

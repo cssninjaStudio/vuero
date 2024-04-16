@@ -83,46 +83,46 @@ useHead({
                   @click="dropdown1.toggle"
                 >
                   <span class="icon is-small">
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify"
-                      data-icon="feather:more-vertical"
-                    />
+                      icon="lucide:more-vertical"
+                    ></iconify-icon>
                   </span>
                 </button>
               </div>
               <div class="dropdown-menu">
                 <div class="dropdown-content">
                   <a class="dropdown-item">
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify"
-                      data-icon="feather:refresh-cw"
-                    />
+                      icon="lucide:refresh-cw"
+                    ></iconify-icon>
                     <span>Refresh</span>
                   </a>
                   <a class="dropdown-item">
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify"
-                      data-icon="feather:bell"
-                    />
+                      icon="lucide:bell"
+                    ></iconify-icon>
                     <span>Notifications</span>
                   </a>
                   <a class="dropdown-item">
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify"
-                      data-icon="feather:user-plus"
-                    />
+                      icon="lucide:user-plus"
+                    ></iconify-icon>
                     <span>Invite People</span>
                   </a>
                   <a class="dropdown-item">
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify"
-                      data-icon="feather:settings"
-                    />
+                      icon="lucide:settings"
+                    ></iconify-icon>
                     <span>Settings</span>
                   </a>
                 </div>
@@ -136,11 +136,11 @@ useHead({
               @keydown.space.prevent="mobileSidebarOpen = false"
               @click="mobileSidebarOpen = false"
             >
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:x"
-              />
+                icon="lucide:x"
+              ></iconify-icon>
             </a>
           </div>
           <!--Inner-->
@@ -158,11 +158,11 @@ useHead({
                       @keydown.space.prevent="activeTab = 'inbox'"
                       @click="activeTab = 'inbox'"
                     >
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:mail"
-                      />
+                        icon="lucide:mail"
+                      ></iconify-icon>
                       <span>Inbox</span>
                       <span class="tag">24</span>
                     </a>
@@ -175,11 +175,11 @@ useHead({
                       @keydown.space.prevent="activeTab = 'drafts'"
                       @click="activeTab = 'drafts'"
                     >
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:file-text"
-                      />
+                        icon="lucide:file-text"
+                      ></iconify-icon>
                       <span>Drafts</span>
                       <span class="tag">2</span>
                     </a>
@@ -192,11 +192,11 @@ useHead({
                       @keydown.space.prevent="activeTab = 'sent'"
                       @click="activeTab = 'sent'"
                     >
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:send"
-                      />
+                        icon="lucide:send"
+                      ></iconify-icon>
                       <span>Sent</span>
                       <span class="tag">7</span>
                     </a>
@@ -209,11 +209,11 @@ useHead({
                       @keydown.space.prevent="activeTab = 'trash'"
                       @click="activeTab = 'trash'"
                     >
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:trash-2"
-                      />
+                        icon="lucide:trash-2"
+                      ></iconify-icon>
                       <span>Trash</span>
                       <span class="tag">18</span>
                     </a>
@@ -226,11 +226,11 @@ useHead({
                       @keydown.space.prevent="activeTab = 'span'"
                       @click="activeTab = 'span'"
                     >
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:alert-octagon"
-                      />
+                        icon="lucide:alert-octagon"
+                      ></iconify-icon>
                       <span>Spam</span>
                       <span class="tag">29</span>
                     </a>
@@ -254,11 +254,11 @@ useHead({
                     placeholder="Search Contacts..."
                   >
                   <div class="form-icon">
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify"
-                      data-icon="feather:search"
-                    />
+                      icon="lucide:search"
+                    ></iconify-icon>
                   </div>
                 </div>
                 <a
@@ -273,11 +273,11 @@ useHead({
                     @keydown.space.prevent="contactSearchOpen = true"
                     @click="contactSearchOpen = true"
                   >
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify"
-                      data-icon="feather:search"
-                    />
+                      icon="lucide:search"
+                    ></iconify-icon>
                   </span>
                 </a>
                 <a
@@ -292,11 +292,11 @@ useHead({
                     @keydown.space.prevent="contactSearchOpen = true"
                     @click="contactSearchOpen = false"
                   >
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify"
-                      data-icon="feather:x"
-                    />
+                      icon="lucide:x"
+                    ></iconify-icon>
                   </span>
                 </a>
               </div>
@@ -378,11 +378,11 @@ useHead({
                 @keydown.space.prevent="mobileSidebarOpen = true"
                 @click="mobileSidebarOpen = true"
               >
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:chevron-right"
-                />
+                  icon="lucide:chevron-right"
+                ></iconify-icon>
               </a>
               <a
                 class="inbox-action check-all-action"
@@ -393,11 +393,11 @@ useHead({
                 @keydown.space.prevent="toggleSelection"
                 @click="toggleSelection"
               >
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:check"
-                />
+                  icon="lucide:check"
+                ></iconify-icon>
               </a>
             </div>
             <div class="actions">
@@ -408,11 +408,11 @@ useHead({
                   placeholder="Search Inbox..."
                 >
                 <div class="form-icon">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:search"
-                  />
+                    icon="lucide:search"
+                  ></iconify-icon>
                 </div>
               </div>
 
@@ -426,47 +426,47 @@ useHead({
                     @click="dropdown2.toggle"
                   >
                     <span class="icon is-small">
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:more-vertical"
-                      />
+                        icon="lucide:more-vertical"
+                      ></iconify-icon>
                     </span>
                   </button>
                 </div>
                 <div class="dropdown-menu">
                   <div class="dropdown-content">
                     <a class="dropdown-item">
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:check"
-                      />
+                        icon="lucide:check"
+                      ></iconify-icon>
                       <span>Mark all as read</span>
                     </a>
                     <a class="dropdown-item">
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:eye-off"
-                      />
+                        icon="lucide:eye-off"
+                      ></iconify-icon>
                       <span>Hide read</span>
                     </a>
                     <hr class="dropdown-divider">
                     <a class="dropdown-item">
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:calendar"
-                      />
+                        icon="lucide:calendar"
+                      ></iconify-icon>
                       <span>Sort by date</span>
                     </a>
                     <a class="dropdown-item">
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:user"
-                      />
+                        icon="lucide:user"
+                      ></iconify-icon>
                       <span>Sort by user</span>
                     </a>
                   </div>
@@ -660,12 +660,12 @@ useHead({
                     background: var(--fade-grey-light-3);
 
                     span,
-                    i {
+                    .iconify {
                       color: var(--dark-text);
                       font-weight: 500;
                     }
 
-                    svg {
+                    .iconify {
                       color: var(--primary);
                     }
 
@@ -674,11 +674,11 @@ useHead({
                     }
                   }
 
-                  i {
+                  .iconify {
                     color: var(--muted-grey);
                   }
 
-                  svg {
+                  .iconify {
                     height: 16px;
                     width: 16px;
                     color: var(--light-text);
@@ -749,7 +749,7 @@ useHead({
                 justify-content: center;
                 align-items: center;
 
-                i {
+                .iconify {
                   color: var(--placeholder);
                   transition: color 0.3s;
                 }
@@ -766,12 +766,12 @@ useHead({
 
               &:hover,
               &:focus {
-                i {
+                .iconify {
                   color: var(--dark-text);
                 }
               }
 
-              i {
+              .iconify {
                 color: var(--placeholder);
                 transition: color 0.3s;
 
@@ -873,7 +873,7 @@ useHead({
               min-width: 220px;
               padding-inline-start: 42px;
 
-              &:focus + .form-icon i {
+              &:focus + .form-icon .iconify {
                 color: var(--dark-text);
               }
             }
@@ -888,7 +888,7 @@ useHead({
               justify-content: center;
               align-items: center;
 
-              i {
+              .iconify {
                 color: var(--placeholder);
                 transition: color 0.3s;
               }
@@ -1054,11 +1054,11 @@ useHead({
           margin-inline-end: 12px;
           font-size: 1.2rem;
 
-          i {
+          .iconify {
             color: var(--light-text);
           }
 
-          svg {
+          .iconify {
             color: var(--light-text);
             height: 16px;
             width: 16px;
@@ -1155,11 +1155,11 @@ useHead({
                 border-color: var(--secondary);
                 box-shadow: var(--secondary-box-shadow);
 
-                i {
+                .iconify {
                   color: var(--white);
                 }
 
-                svg {
+                .iconify {
                   color: var(--white);
                 }
               }
@@ -1194,12 +1194,12 @@ useHead({
                 height 0.3s,
                 width 0.3s;
 
-              i {
+              .iconify {
                 font-size: 12px;
                 transition: color 0.3s;
               }
 
-              svg {
+              .iconify {
                 height: 16px;
                 width: 16px;
               }
@@ -1332,7 +1332,7 @@ useHead({
     border-color: var(--fade-grey-dark-4);
     box-shadow: var(--light-box-shadow);
 
-    svg {
+    .iconify {
       color: var(--primary);
     }
   }
@@ -1342,14 +1342,12 @@ useHead({
     box-shadow: var(--light-box-shadow);
   }
 
-  svg {
-    height: 16px;
-    width: 16px;
-    stroke-width: 1.6px;
+  .iconify {
+    font-size: 16px;
     color: var(--light-text);
   }
 
-  i {
+  .iconify {
     padding: 0;
     transition: color 0.3s;
   }
@@ -1378,11 +1376,11 @@ useHead({
       box-shadow: var(--light-box-shadow) !important;
     }
 
-    i {
+    .iconify {
       padding: 0;
     }
 
-    svg {
+    .iconify {
       height: 16px;
       width: 16px;
       color: var(--light-text);
@@ -1401,11 +1399,11 @@ useHead({
       padding-top: 8px;
       padding-bottom: 8px;
 
-      i {
+      .iconify {
         color: var(--light-text);
       }
 
-      svg {
+      .iconify {
         height: 16px;
         width: 16px;
         color: var(--light-text);
@@ -1537,7 +1535,7 @@ useHead({
               border-color: var(--dark-text);
             }
 
-            i {
+            .iconify {
               font-size: 16px;
               color: var(--dark-text);
             }
@@ -1594,7 +1592,7 @@ Dark mode
                     color: var(--smoke-white);
                   }
 
-                  svg {
+                  .iconify {
                     color: var(--primary);
                   }
 
@@ -1723,7 +1721,7 @@ Dark mode
                 .download-icon {
                   border-color: var(--dark-sidebar-light-8);
 
-                  svg {
+                  .iconify {
                     color: var(--smoke-white);
                   }
                 }
@@ -1770,7 +1768,7 @@ Dark mode
       background: var(--dark-sidebar-light-2);
       border-color: var(--dark-sidebar-light-12);
 
-      svg {
+      .iconify {
         color: var(--primary);
       }
     }
@@ -1836,7 +1834,7 @@ Dark mode
     .mobile-menu-action {
       display: flex !important;
 
-      svg {
+      .iconify {
         height: 22px;
         width: 22px;
       }

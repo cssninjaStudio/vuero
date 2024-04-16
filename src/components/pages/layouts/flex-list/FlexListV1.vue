@@ -58,7 +58,7 @@ const filteredData = computed(() => {
   <div>
     <div class="list-flex-toolbar flex-list-v1">
       <VField>
-        <VControl icon="feather:search">
+        <VControl icon="lucide:search">
           <input
             v-model="filters"
             class="input custom-text-filter"

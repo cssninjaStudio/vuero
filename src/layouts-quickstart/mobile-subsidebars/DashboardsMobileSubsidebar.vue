@@ -12,11 +12,11 @@
         <VCollapseLinks>
           <template #header>
             Personal
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:chevron-right"
-            />
+              icon="lucide:chevron-right"
+            ></iconify-icon>
           </template>
 
           <RouterLink

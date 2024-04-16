@@ -53,14 +53,16 @@ const localFlagSrc = computed(() => {
       @keydown.space.prevent="isOpen = !isOpen"
       @click="isOpen = !isOpen"
     >
-      <i
+      <iconify-icon
         aria-hidden="true"
-        class="fas fa-bars"
-      />
-      <i
+        class="iconify"
+        icon="lucide:menu"
+      ></iconify-icon>
+      <iconify-icon
         aria-hidden="true"
-        class="fas fa-times"
-      />
+        class="iconify"
+        icon="lucide:x"
+      ></iconify-icon>
     </a>
 
     <div class="items-wrapper">
@@ -91,11 +93,11 @@ const localFlagSrc = computed(() => {
         to="/sidebar/layouts/profile-notifications"
         class="menu-item is-flex"
       >
-        <i
+        <iconify-icon
           aria-hidden="true"
           class="iconify"
-          data-icon="feather:bell"
-        />
+          icon="lucide:bell"
+        ></iconify-icon>
       </RouterLink>
       <a
         class="menu-item is-flex"
@@ -104,11 +106,11 @@ const localFlagSrc = computed(() => {
         @keydown.space.prevent="panels.setActive('activity')"
         @click="panels.setActive('activity')"
       >
-        <i
+        <iconify-icon
           aria-hidden="true"
           class="iconify"
-          data-icon="feather:grid"
-        />
+          icon="lucide:grid"
+        ></iconify-icon>
       </a>
     </div>
   </div>
@@ -138,7 +140,7 @@ const localFlagSrc = computed(() => {
     .floating-btn {
       box-shadow: 0 4px 8px 0 hsl(0deg 0% 0% / 30%);
 
-      i {
+      .iconify {
         &:first-child {
           display: none;
         }
@@ -197,8 +199,8 @@ const localFlagSrc = computed(() => {
     justify-content: center;
     cursor: pointer;
 
-    i {
-      font-size: 0.9rem;
+    .iconify {
+      font-size: 1.2rem;
       transition: transform 0.2s;
 
       &:first-child {
@@ -257,11 +259,9 @@ const localFlagSrc = computed(() => {
         border-radius: var(--radius-rounded);
       }
 
-      svg {
-        height: 18px;
-        width: 18px;
+      .iconify {
+        font-size: 18px;
         color: var(--smoke-white);
-        stroke-width: 1.6px;
       }
     }
   }

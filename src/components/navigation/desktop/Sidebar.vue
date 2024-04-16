@@ -198,7 +198,7 @@ const themeClasses = computed(() => {
               transition: opacity 0.3s;
             }
 
-            svg {
+            .iconify {
               position: relative;
               top: -4px;
             }
@@ -318,7 +318,7 @@ const themeClasses = computed(() => {
 
         &.is-active,
         &.router-link-active {
-          svg {
+          .iconify {
             color: var(--primary);
           }
         }
@@ -354,16 +354,15 @@ const themeClasses = computed(() => {
           }
 
           .sidebar-svg {
-            height: 20px;
-            width: 20px;
+            font-size: 20px;
             color: var(--title-grey);
             stroke-width: 1.6px;
             transition: all 0.3s; // transition-all test
           }
 
-          &:hover svg,
-          &.is-active svg,
-          &.router-link-exact-active svg {
+          &:hover .iconify,
+          &.is-active .iconify,
+          &.router-link-exact-active .iconify {
             color: var(--primary);
           }
 
@@ -472,7 +471,7 @@ const themeClasses = computed(() => {
             }
 
             .logout-button {
-              svg {
+              .iconify {
                 color: var(--smoke-white) !important;
               }
             }
@@ -540,7 +539,7 @@ const themeClasses = computed(() => {
         a {
           &.is-selected,
           &.router-link-active {
-            svg {
+            .iconify {
               color: var(--primary) !important;
             }
 
@@ -550,7 +549,7 @@ const themeClasses = computed(() => {
           }
 
           &:hover {
-            svg {
+            .iconify {
               color: var(--primary) !important;
             }
 
@@ -564,7 +563,7 @@ const themeClasses = computed(() => {
           }
         }
 
-        svg {
+        .iconify {
           color: var(--primary-grey-light-3);
         }
 
@@ -627,7 +626,7 @@ const themeClasses = computed(() => {
         li {
           a {
             &.is-active {
-              svg {
+              .iconify {
                 color: var(--primary) !important;
               }
             }

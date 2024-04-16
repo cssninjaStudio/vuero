@@ -4,7 +4,7 @@ const emit = defineEmits(['rename', 'collapse'])
 
 <template>
   <VDropdown
-    icon="feather:more-vertical"
+    icon="lucide:more-vertical"
     right
     :options="{ clickOutside: false }"
   >
@@ -30,11 +30,11 @@ const emit = defineEmits(['rename', 'collapse'])
       <hr class="dropdown-divider">
       <div class="dropdown-item has-child">
         Settings
-        <i
+        <iconify-icon
           aria-hidden="true"
           class="iconify rtl-reflect"
-          data-icon="feather:chevron-right"
-        />
+          icon="lucide:chevron-right"
+        ></iconify-icon>
 
         <div class="child-dropdown">
           <div class="inner">

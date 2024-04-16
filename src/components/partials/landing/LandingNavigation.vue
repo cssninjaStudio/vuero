@@ -127,18 +127,18 @@ watchEffect(() => {
             >
             <span class="toggler">
               <span class="dark">
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:moon"
-                />
+                  icon="lucide:moon"
+                ></iconify-icon>
               </span>
               <span class="light">
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:sun"
-                />
+                  icon="lucide:sun"
+                ></iconify-icon>
               </span>
             </span>
           </label>
@@ -212,7 +212,7 @@ watchEffect(() => {
 
       .navbar-brand {
         img,
-        svg {
+        .iconify {
           position: relative;
           display: block;
           width: 100%;
@@ -232,7 +232,7 @@ watchEffect(() => {
           transition: all 0.3s; // transition-all test
 
           img,
-          svg {
+          .iconify {
             position: relative;
             top: -2px;
             margin-inline-start: 0;
@@ -297,11 +297,10 @@ watchEffect(() => {
           }
 
           .theme-toggle {
-            width: 54px;
             display: block;
             position: relative;
             cursor: pointer;
-            font-size: 22px;
+            font-size: 14px;
             user-select: none;
             transform: scale(0.9);
 
@@ -367,7 +366,7 @@ watchEffect(() => {
                   rotate(calc(var(--transform-direction) * 0));
                 transition: all 0.3s ease;
 
-                svg {
+                .iconify {
                   color: var(--white) !important;
                   height: 14px !important;
                   width: 14px !important;
@@ -388,7 +387,7 @@ watchEffect(() => {
                 opacity: 0;
                 z-index: 0;
 
-                svg {
+                .iconify {
                   color: var(--white) !important;
                 }
               }

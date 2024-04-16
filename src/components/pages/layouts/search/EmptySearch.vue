@@ -7,7 +7,7 @@ const activeTab = ref<TabId>('all')
   <div class="search-results-wrapper">
     <div class="search-results-header">
       <VField raw>
-        <VControl icon="feather:search">
+        <VControl icon="lucide:search">
           <VInput placeholder="Search again..." />
         </VControl>
       </VField>
@@ -43,7 +43,6 @@ const activeTab = ref<TabId>('all')
                 @click="activeTab = 'records'"
               ><span>Records</span></a>
             </li>
-            <li class="tab-naver" />
           </ul>
         </div>
       </div>
@@ -165,7 +164,7 @@ const activeTab = ref<TabId>('all')
           border: 1px solid var(--primary);
           color: var(--primary);
 
-          svg {
+          .iconify {
             height: 14px;
             width: 14px;
           }

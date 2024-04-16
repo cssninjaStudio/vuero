@@ -98,7 +98,7 @@ const themeClasses = computed(() => {
       width: 18px;
       height: 18px;
 
-      svg {
+      .iconify {
         width: 18px;
         height: 18px;
       }
@@ -182,7 +182,7 @@ const themeClasses = computed(() => {
                 color: var(--primary);
               }
 
-              > svg {
+              > .iconify {
                 transform: rotate(calc(var(--transform-direction) * 90deg));
               }
             }
@@ -236,16 +236,16 @@ const themeClasses = computed(() => {
               font-size: 1.25rem;
               margin-inline-end: 1rem;
 
-              i {
+              .iconify {
                 font-size: 1.25rem;
               }
 
-              svg {
+              .iconify {
                 stroke-width: 1.5px;
               }
             }
 
-            > svg {
+            > .iconify {
               position: relative;
               top: 1px;
               height: 18px;
@@ -267,7 +267,7 @@ const themeClasses = computed(() => {
               .is-submenu {
                 font-weight: 500;
 
-                svg {
+                .iconify {
                   display: block;
                 }
               }
@@ -297,7 +297,7 @@ const themeClasses = computed(() => {
                 font-family: var(--font);
               }
 
-              svg {
+              .iconify {
                 display: none;
                 height: 8px;
                 width: 8px;
@@ -363,11 +363,11 @@ const themeClasses = computed(() => {
         color: var(--dark-text);
 
         .icon {
-          i {
+          .iconify {
             color: var(--primary);
           }
 
-          svg {
+          .iconify {
             stroke: var(--primary);
           }
         }
@@ -377,11 +377,11 @@ const themeClasses = computed(() => {
         font-size: 1.25rem;
         margin-inline-end: 1rem;
 
-        i {
+        .iconify {
           font-size: 1.25rem;
         }
 
-        svg {
+        .iconify {
           stroke-width: 1.5px;
         }
       }
@@ -422,7 +422,7 @@ const themeClasses = computed(() => {
       border-radius: 50%;
       transition: background-color 0.3s;
 
-      svg {
+      .iconify {
         height: 20px;
         width: 20px;
         transition: stroke 0.3s;
@@ -503,7 +503,7 @@ const themeClasses = computed(() => {
         }
 
         .logout-button {
-          svg {
+          .iconify {
             stroke: var(--smoke-white) !important;
           }
         }
@@ -555,7 +555,7 @@ const themeClasses = computed(() => {
     border-color: var(--dark-sidebar-light-5) !important;
 
     .panel-close {
-      svg {
+      .iconify {
         stroke: var(--muted-grey) !important;
       }
     }
@@ -607,11 +607,11 @@ const themeClasses = computed(() => {
           color: var(--smoke-white);
 
           .icon {
-            i {
+            .iconify {
               color: var(--accent);
             }
 
-            svg {
+            .iconify {
               stroke: var(--accent);
             }
           }
@@ -674,7 +674,7 @@ html:not(.is-dark) {
       border-color: var(--sidebar-light-5) !important;
 
       .panel-close {
-        svg {
+        .iconify {
           stroke: var(--muted-grey) !important;
         }
       }
@@ -726,11 +726,11 @@ html:not(.is-dark) {
             color: var(--smoke-white) !important;
 
             .icon {
-              i {
+              .iconify {
                 color: var(--primary) !important;
               }
 
-              svg {
+              .iconify {
                 stroke: var(--primary) !important;
               }
             }

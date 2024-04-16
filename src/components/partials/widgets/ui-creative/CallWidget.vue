@@ -30,25 +30,25 @@ const props = defineProps<{
     <h3>Call {{ props.username }}?</h3>
     <div class="actions">
       <a class="action">
-        <i
+        <iconify-icon
           aria-hidden="true"
           class="iconify"
-          data-icon="feather:message-square"
-        />
+          icon="lucide:message-square"
+        ></iconify-icon>
       </a>
       <a class="action">
-        <i
+        <iconify-icon
           aria-hidden="true"
           class="iconify"
-          data-icon="feather:phone"
-        />
+          icon="lucide:phone"
+        ></iconify-icon>
       </a>
       <a class="action">
-        <i
+        <iconify-icon
           aria-hidden="true"
           class="iconify"
-          data-icon="feather:video"
-        />
+          icon="lucide:video"
+        ></iconify-icon>
       </a>
     </div>
   </div>

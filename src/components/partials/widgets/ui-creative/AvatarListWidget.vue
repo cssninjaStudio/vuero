@@ -12,7 +12,7 @@ const props = defineProps<{
     :class="[props.straight && 'is-straight']"
   >
     <VField raw>
-      <VControl icon="feather:search">
+      <VControl icon="lucide:search">
         <VInput placeholder="Search again..." />
       </VControl>
     </VField>

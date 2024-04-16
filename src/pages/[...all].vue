@@ -139,7 +139,7 @@ if (import.meta.env.SSR) {
       }
 
       img,
-      svg {
+      .iconify {
         display: block;
         max-width: 100%;
         margin: 0 auto;
@@ -197,7 +197,7 @@ if (import.meta.env.SSR) {
         }
 
         img,
-        svg {
+        .iconify {
           max-width: 345px;
         }
       }

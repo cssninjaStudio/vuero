@@ -64,12 +64,12 @@ const isIconify = computed(() => {
       alt=""
       @error.once="onceImageErrored(32)"
     >
-    <i
+    <iconify-icon
       v-else-if="isIconify"
       aria-hidden="true"
       class="iconify"
-      :data-icon="props.icon"
-    />
+      :icon="props.icon"
+    ></iconify-icon>
     <i
       v-else-if="props.icon"
       aria-hidden="true"
@@ -140,7 +140,7 @@ const isIconify = computed(() => {
     border-color: var(--fade-grey-dark-3) !important;
     color: var(--light-text);
 
-    i {
+    .iconify {
       font-size: 1.4rem;
     }
   }

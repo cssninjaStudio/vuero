@@ -9,7 +9,7 @@ Please refer to the markup for more details about usage.
 
 ```vue
 <template>
-  <VDropdown icon="feather:more-vertical">
+  <VDropdown icon="lucide:more-vertical">
     <template #content>
       <a href="#" class="dropdown-item"> Dropdown item </a>
       <a href="#" class="dropdown-item"> Other dropdown item </a>
@@ -28,7 +28,7 @@ Please refer to the markup for more details about usage.
 
 <VField horizontal style="gap: 0.5rem;">
   <VControl>
-    <VDropdown icon="feather:more-horizontal">
+    <VDropdown icon="lucide:more-horizontal">
       <template #content>
         <a href="#" class="dropdown-item"> Dropdown item </a>
         <a href="#" class="dropdown-item"> Other dropdown item </a>
@@ -41,7 +41,7 @@ Please refer to the markup for more details about usage.
   </VControl>
 
   <VControl>
-    <VDropdown icon="feather:more-vertical">
+    <VDropdown icon="lucide:more-vertical">
       <template #content>
         <a href="#" class="dropdown-item"> Dropdown item </a>
         <a href="#" class="dropdown-item"> Other dropdown item </a>
@@ -54,7 +54,7 @@ Please refer to the markup for more details about usage.
   </VControl>
 
   <VControl>
-    <VDropdown icon="feather:help-circle" up>
+    <VDropdown icon="lucide:help-circle" up>
       <template #content>
         <a href="#" class="dropdown-item"> Dropdown item </a>
         <a href="#" class="dropdown-item"> Other dropdown item </a>

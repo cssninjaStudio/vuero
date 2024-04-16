@@ -67,7 +67,7 @@
     border-color: var(--dark-sidebar-light-5) !important;
 
     .panel-close {
-      svg {
+      .iconify {
         color: var(--muted-grey) !important;
       }
     }
@@ -165,7 +165,7 @@
         width: 18px;
         height: 18px;
 
-        svg {
+        .iconify {
           width: 18px;
           height: 18px;
         }
@@ -241,7 +241,7 @@
               color: var(--dark-text);
               font-weight: 600;
 
-              svg {
+              .iconify {
                 transform: rotate(calc(var(--transform-direction) * 90deg)) !important;
               }
             }
@@ -283,11 +283,10 @@
               font-weight: 500;
               color: var(--light-text);
 
-              svg {
+              .iconify {
                 position: relative;
                 top: 1px;
-                height: 18px;
-                width: 18px;
+                font-size: 18px;
                 margin-inline-start: auto;
                 transform: rotate(0);
                 color: var(--light-text);
@@ -315,7 +314,7 @@
                 .is-submenu {
                   font-weight: 500;
 
-                  svg {
+                  .iconify {
                     display: block;
                   }
                 }
@@ -345,7 +344,7 @@
                   font-family: var(--font);
                 }
 
-                svg {
+                .iconify {
                   display: none;
                   height: 8px;
                   width: 8px;
@@ -419,7 +418,7 @@
           .button {
             height: 36px !important;
 
-            svg {
+            .iconify {
               height: 16px;
               width: 16px;
               margin-inline-end: 2px;
@@ -584,7 +583,7 @@
           height: 36px !important;
           margin: 0 20px;
 
-          svg {
+          .iconify {
             height: 16px;
             width: 16px;
             margin-inline-end: 10px;
@@ -618,9 +617,8 @@
               inset-inline-start: 7px;
               color: var(--placeholder);
 
-              svg {
-                width: 20px;
-                height: 20px;
+              .iconify {
+                font-size: 20px;
                 transition:
                   color 0.3s,
                   background-color 0.3s,
@@ -1027,7 +1025,7 @@
           box-shadow: var(--primary-box-shadow);
         }
 
-        svg {
+        .iconify {
           height: 18px;
           width: 18px;
         }

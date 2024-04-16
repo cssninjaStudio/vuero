@@ -43,7 +43,7 @@
           font-weight: 500;
         }
 
-        svg {
+        .iconify {
           width: 20px;
           height: 20px;
           transition: all 0.3s; // transition-all test
@@ -61,7 +61,7 @@
         width: 36px;
         cursor: pointer;
 
-        svg {
+        .iconify {
           height: 18px;
           width: 18px;
           color: var(--muted-grey);
@@ -228,7 +228,7 @@
         }
       }
 
-      svg {
+      .iconify {
         color: var(--primary-grey-dark-30) !important;
       }
 

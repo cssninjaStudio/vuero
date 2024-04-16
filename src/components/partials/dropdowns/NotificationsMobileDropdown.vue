@@ -17,11 +17,11 @@ const dropdown = useDropdown(dropdownElement)
       @keydown.space.prevent="dropdown.toggle"
       @click="dropdown.toggle"
     >
-      <i
+      <iconify-icon
         aria-hidden="true"
         class="iconify"
-        data-icon="feather:bell"
-      />
+        icon="lucide:bell"
+      ></iconify-icon>
       <span class="new-indicator pulsate" />
     </a>
     <div class="navbar-dropdown is-boxed is-right">

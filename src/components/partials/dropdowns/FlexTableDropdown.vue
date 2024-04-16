@@ -9,7 +9,7 @@ const emits = defineEmits<{
 
 <template>
   <VDropdown
-    icon="feather:more-vertical"
+    icon="lucide:more-vertical"
     class="is-pushed-mobile"
     spaced
     right

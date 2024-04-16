@@ -6,7 +6,7 @@ const props = withDefaults(
   }>(),
   {
     title: 'UI Widget',
-    icon: 'feather:bell',
+    icon: 'lucide:bell',
   },
 )
 </script>
@@ -18,11 +18,11 @@ const props = withDefaults(
     </div>
     <div class="right">
       <a class="right-icon has-indicator">
-        <i
+        <iconify-icon
           aria-hidden="true"
           class="iconify"
-          :data-icon="props.icon"
-        />
+          :icon="props.icon"
+        ></iconify-icon>
       </a>
     </div>
   </div>
@@ -81,7 +81,7 @@ const props = withDefaults(
         }
       }
 
-      svg {
+      .iconify {
         height: 18px;
         width: 18px;
         transition: stroke 0.3s;
@@ -112,7 +112,7 @@ const props = withDefaults(
     color: var(--light-text-light-12);
     transition: all 0.3s; // transition-all test
 
-    svg {
+    .iconify {
       height: 18px;
       width: 18px;
       transition: stroke 0.3s;

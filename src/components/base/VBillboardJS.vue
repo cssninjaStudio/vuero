@@ -141,7 +141,7 @@ watchEffect(() => {
       color: var(--light-text) !important;
 
       > span,
-      > svg {
+      > .iconify {
         border-color: var(--dark-sidebar-light-10) !important;
         fill: var(--white) !important;
         color: var(--white) !important;

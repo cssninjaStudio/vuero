@@ -189,15 +189,10 @@ const topicList = dashboardData.topicList as any[]
                     <VRangeRating
                       :model-value="5"
                       readonly
-                    >
-                      <i
-                        class="fas fa-star"
-                        aria-hidden="true"
-                      />
-                    </VRangeRating>
+                    ></VRangeRating>
 
                     <VIconButton
-                      icon="feather:arrow-right"
+                      icon="lucide:arrow-right"
                       circle
                       dark-outlined
                       class="rtl-reflect"
@@ -220,14 +215,9 @@ const topicList = dashboardData.topicList as any[]
                     <VRangeRating
                       :model-value="4"
                       readonly
-                    >
-                      <i
-                        class="fas fa-star"
-                        aria-hidden="true"
-                      />
-                    </VRangeRating>
+                    ></VRangeRating>
                     <VIconButton
-                      icon="feather:arrow-right"
+                      icon="lucide:arrow-right"
                       circle
                       dark-outlined
                       class="rtl-reflect"
@@ -250,14 +240,9 @@ const topicList = dashboardData.topicList as any[]
                     <VRangeRating
                       :model-value="5"
                       readonly
-                    >
-                      <i
-                        class="fas fa-star"
-                        aria-hidden="true"
-                      />
-                    </VRangeRating>
+                    ></VRangeRating>
                     <VIconButton
-                      icon="feather:arrow-right"
+                      icon="lucide:arrow-right"
                       circle
                       dark-outlined
                       class="rtl-reflect"
@@ -280,14 +265,9 @@ const topicList = dashboardData.topicList as any[]
                     <VRangeRating
                       :model-value="5"
                       readonly
-                    >
-                      <i
-                        class="fas fa-star"
-                        aria-hidden="true"
-                      />
-                    </VRangeRating>
+                    ></VRangeRating>
                     <VIconButton
-                      icon="feather:arrow-right"
+                      icon="lucide:arrow-right"
                       circle
                       dark-outlined
                       class="rtl-reflect"
@@ -333,14 +313,9 @@ const topicList = dashboardData.topicList as any[]
                     <VRangeRating
                       :model-value="5"
                       readonly
-                    >
-                      <i
-                        class="fas fa-star"
-                        aria-hidden="true"
-                      />
-                    </VRangeRating>
+                    ></VRangeRating>
                     <VIconButton
-                      icon="feather:arrow-right"
+                      icon="lucide:arrow-right"
                       circle
                       dark-outlined
                       class="rtl-reflect"
@@ -363,14 +338,9 @@ const topicList = dashboardData.topicList as any[]
                     <VRangeRating
                       :model-value="4"
                       readonly
-                    >
-                      <i
-                        class="fas fa-star"
-                        aria-hidden="true"
-                      />
-                    </VRangeRating>
+                    ></VRangeRating>
                     <VIconButton
-                      icon="feather:arrow-right"
+                      icon="lucide:arrow-right"
                       circle
                       dark-outlined
                       class="rtl-reflect"
@@ -393,14 +363,9 @@ const topicList = dashboardData.topicList as any[]
                     <VRangeRating
                       :model-value="5"
                       readonly
-                    >
-                      <i
-                        class="fas fa-star"
-                        aria-hidden="true"
-                      />
-                    </VRangeRating>
+                    ></VRangeRating>
                     <VIconButton
-                      icon="feather:arrow-right"
+                      icon="lucide:arrow-right"
                       circle
                       dark-outlined
                       class="rtl-reflect"
@@ -423,14 +388,9 @@ const topicList = dashboardData.topicList as any[]
                     <VRangeRating
                       :model-value="5"
                       readonly
-                    >
-                      <i
-                        class="fas fa-star"
-                        aria-hidden="true"
-                      />
-                    </VRangeRating>
+                    ></VRangeRating>
                     <VIconButton
-                      icon="feather:arrow-right"
+                      icon="lucide:arrow-right"
                       circle
                       dark-outlined
                       class="rtl-reflect"
@@ -455,11 +415,11 @@ const topicList = dashboardData.topicList as any[]
                   placeholder="Search..."
                 >
                 <button class="searcv-button">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:search"
-                  />
+                    icon="lucide:search"
+                  ></iconify-icon>
                 </button>
               </div>
 
@@ -477,7 +437,7 @@ const topicList = dashboardData.topicList as any[]
           <template #header>
             <UIWidgetToolbarIcon
               title="Messages"
-              icon="feather:message-square"
+              icon="lucide:message-square"
             />
           </template>
           <template #body>
@@ -642,7 +602,7 @@ const topicList = dashboardData.topicList as any[]
             opacity: 0;
             transition: all 0.3s; // transition-all test
 
-            i {
+            .iconify {
               font-size: 12px;
             }
           }
@@ -717,7 +677,7 @@ const topicList = dashboardData.topicList as any[]
               }
 
               .top {
-                i {
+                .iconify {
                   display: none !important;
                 }
               }
@@ -754,7 +714,7 @@ const topicList = dashboardData.topicList as any[]
         }
 
         .top {
-          i {
+          .iconify {
             display: none !important;
           }
         }

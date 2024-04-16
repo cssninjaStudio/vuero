@@ -100,7 +100,7 @@ const props = withDefaults(
           //   }
 
           //   .rating {
-          //     i {
+          //     .iconify {
           //       color: var(--widget-grey-dark-8);
 
           //       &.selected {

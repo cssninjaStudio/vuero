@@ -32,11 +32,11 @@ const props = withDefaults(
           class="go-icon is-down"
           :data-content="user.progress + '%'"
         >
-          <i
+          <iconify-icon
             aria-hidden="true"
             class="iconify"
-            data-icon="feather:chevron-right"
-          />
+            icon="lucide:chevron-right"
+          ></iconify-icon>
         </a>
         <a
           v-else
@@ -44,11 +44,11 @@ const props = withDefaults(
           class="go-icon is-up"
           :data-content="'+' + user.progress + '%'"
         >
-          <i
+          <iconify-icon
             aria-hidden="true"
             class="iconify"
-            data-icon="feather:chevron-right"
-          />
+            icon="lucide:chevron-right"
+          ></iconify-icon>
         </a>
       </template>
 
@@ -96,7 +96,7 @@ const props = withDefaults(
       }
     }
 
-    svg {
+    .iconify {
       height: 16px;
       width: 16px;
       stroke-width: 3px;

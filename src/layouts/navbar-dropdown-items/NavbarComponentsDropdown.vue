@@ -27,7 +27,7 @@ watch([() => route.fullPath, dropdownElement], () => {
         <VButton
           aria-haspopup="true"
           aria-controls="dropdown-menu"
-          icon-caret="feather:chevron-down"
+          icon-caret="lucide:chevron-down"
           rounded
           @click="toggle"
         >
@@ -111,11 +111,11 @@ watch([() => route.fullPath, dropdownElement], () => {
           @click="selectedCategory = ''"
         >
           <span class="icon is-small">
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:arrow-left"
-            />
+              icon="lucide:arrow-left"
+            ></iconify-icon>
           </span>
         </button>
 
@@ -128,11 +128,11 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div class="column is-6">
             <div class="dropdown-item-group">
               <h4 class="column-heading is-info">
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:circle"
-                />
+                  icon="lucide:circle"
+                ></iconify-icon>
                 <span>General</span>
               </h4>
 
@@ -192,11 +192,11 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div class="column is-6">
             <div class="dropdown-item-group">
               <h4 class="column-heading is-orange">
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:circle"
-                />
+                  icon="lucide:circle"
+                ></iconify-icon>
                 <span>Display</span>
               </h4>
 
@@ -328,11 +328,11 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div class="column is-6">
             <div class="dropdown-item-group">
               <h4 class="column-heading is-info">
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:circle"
-                />
+                  icon="lucide:circle"
+                ></iconify-icon>
                 <span>Layout</span>
               </h4>
 
@@ -579,11 +579,11 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div class="column is-6">
             <div class="dropdown-item-group">
               <h4 class="column-heading is-green">
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:circle"
-                />
+                  icon="lucide:circle"
+                ></iconify-icon>
                 <span>Cards</span>
               </h4>
 
@@ -699,11 +699,11 @@ watch([() => route.fullPath, dropdownElement], () => {
           <div class="column is-12">
             <div class="dropdown-item-group">
               <h4 class="column-heading is-green">
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:circle"
-                />
+                  icon="lucide:circle"
+                ></iconify-icon>
                 <span>Plugins</span>
               </h4>
 

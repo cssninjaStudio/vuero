@@ -33,7 +33,7 @@ const filteredData = computed(() => {
 <template>
   <div>
     <div class="user-grid-toolbar is-reversed tabs-wrapper is-slider">
-      <VControl icon="feather:search">
+      <VControl icon="lucide:search">
         <input
           v-model="filters"
           class="input custom-text-filter"
@@ -230,7 +230,7 @@ const filteredData = computed(() => {
               }
             }
 
-            svg {
+            .iconify {
               pointer-events: none;
               height: 16px;
               width: 16px;

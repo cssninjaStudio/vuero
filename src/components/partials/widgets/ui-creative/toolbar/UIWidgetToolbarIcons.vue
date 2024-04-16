@@ -27,11 +27,11 @@ const currentTab = ref(props.activeTab)
         @keydown.space.prevent="currentTab = index"
         @click="currentTab = index"
       >
-        <i
+        <iconify-icon
           aria-hidden="true"
           class="iconify"
-          :data-icon="tab.icon"
-        />
+          :icon="tab.icon"
+        ></iconify-icon>
       </a>
     </div>
   </div>
@@ -90,7 +90,7 @@ const currentTab = ref(props.activeTab)
         }
       }
 
-      svg {
+      .iconify {
         height: 18px;
         width: 18px;
         transition: stroke 0.3s;
@@ -121,7 +121,7 @@ const currentTab = ref(props.activeTab)
     color: var(--light-text-light-12);
     transition: all 0.3s; // transition-all test
 
-    svg {
+    .iconify {
       height: 18px;
       width: 18px;
       transition: stroke 0.3s;

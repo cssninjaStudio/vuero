@@ -137,7 +137,7 @@ export default defineConfig({
     /**
      * plugin-vue plugin inject vue library and allow sfc files to work (*.vue)
      *
-     * @see https://github.com/vitejs/vite/tree/main/packages/plugin-vue
+     * @see https://github.com/vitejs/vite-plugin-vue/blob/main/packages/plugin-vue/README.md
      */
     Vue({
       include: [/\.vue$/],
@@ -145,7 +145,11 @@ export default defineConfig({
         defineModel: true,
         propsDestructure: true,
       },
-      customElement: ['iconify-icon'],
+      template: {
+        compilerOptions: {
+          isCustomElement: (tag) => ['iconify-icon'].includes(tag),
+        }
+      }
     }),
 
     /**

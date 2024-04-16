@@ -13,11 +13,11 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
         >
         <button class="button is-circle">
           <span class="icon is-small">
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:plus"
-            />
+              icon="lucide:plus"
+            ></iconify-icon>
           </span>
         </button>
       </div>
@@ -222,7 +222,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
             font-size: 1.2rem;
             font-weight: 700;
 
-            i {
+            .fas {
               font-size: 1.2rem;
               margin-inline-start: 5px;
               color: var(--yellow);

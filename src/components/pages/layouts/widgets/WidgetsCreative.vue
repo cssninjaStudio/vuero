@@ -90,7 +90,7 @@ import Widget8 from '/@src/assets/illustrations/widgets/8.svg'
         <template #header>
           <UIWidgetToolbarIcon
             title="@cssninjaStudio"
-            icon="feather:twitter"
+            icon="lucide:twitter"
           />
         </template>
         <template #body>

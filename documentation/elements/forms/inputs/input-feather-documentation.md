@@ -9,7 +9,7 @@ component to show an icon.
 ```vue
 <template>
   <VField>
-    <VControl icon="feather:github">
+    <VControl icon="lucide:github">
       <VInput
         type="text"
         class="is-rounded"
@@ -25,7 +25,7 @@ component to show an icon.
 <!--example-->
 
 <VField>
-  <VControl icon="feather:github">
+  <VControl icon="lucide:github">
     <VInput
       type="text"
       class="is-rounded"

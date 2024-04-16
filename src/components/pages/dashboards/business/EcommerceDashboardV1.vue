@@ -63,11 +63,11 @@ const {
               color="info"
               rounded
             >
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:gift"
-              />
+                icon="lucide:gift"
+              ></iconify-icon>
             </VIconBox>
           </div>
           <div class="dashboard-tile-inner">
@@ -96,11 +96,11 @@ const {
               color="purple"
               rounded
             >
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:dollar-sign"
-              />
+                icon="lucide:dollar-sign"
+              ></iconify-icon>
             </VIconBox>
           </div>
           <div class="dashboard-tile-inner">
@@ -129,11 +129,11 @@ const {
               color="green"
               rounded
             >
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:box"
-              />
+                icon="lucide:box"
+              ></iconify-icon>
             </VIconBox>
           </div>
           <div class="dashboard-tile-inner">
@@ -162,11 +162,11 @@ const {
               color="orange"
               rounded
             >
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:shopping-cart"
-              />
+                icon="lucide:shopping-cart"
+              ></iconify-icon>
             </VIconBox>
           </div>
           <div class="dashboard-tile-inner">

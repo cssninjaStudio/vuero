@@ -76,7 +76,7 @@ const props = defineProps<{
       height: 32px;
 
       &.is-active {
-        svg {
+        .iconify {
           color: var(--muted-grey);
         }
       }
@@ -115,7 +115,7 @@ const props = defineProps<{
           }
         }
 
-        svg {
+        .iconify {
           margin-inline-start: 3px;
           width: 22px;
           height: 22px;
@@ -163,7 +163,7 @@ const props = defineProps<{
           }
 
           .logout-button {
-            svg {
+            .iconify {
               color: var(--smoke-white) !important;
             }
           }
@@ -180,7 +180,7 @@ const props = defineProps<{
         align-items: center;
         margin: 0 15px;
 
-        .toggler svg {
+        .toggler .iconify {
           color: var(--smoke-white) !important;
         }
 
@@ -210,7 +210,7 @@ const props = defineProps<{
         border-bottom: none !important;
       }
 
-      svg {
+      .iconify {
         color: var(--primary);
       }
 
@@ -222,7 +222,7 @@ const props = defineProps<{
     }
 
     &.is-sidebar-toggler {
-      svg {
+      .iconify {
         color: var(--muted-grey) !important;
       }
     }
@@ -268,7 +268,7 @@ const props = defineProps<{
         height: 18px;
       }
 
-      svg {
+      .iconify {
         height: 18px;
         width: 18px;
         color: var(--muted-grey);
@@ -290,7 +290,7 @@ const props = defineProps<{
       &.is-active {
         box-shadow: 0 3px 10px 4px rgb(0 0 0 / 7%);
 
-        svg {
+        .iconify {
           color: var(--primary);
         }
       }
@@ -436,7 +436,7 @@ const props = defineProps<{
         border-radius: var(--radius-rounded);
       }
 
-      svg {
+      .iconify {
         height: 16px;
         width: 16px;
         color: var(--primary);
@@ -475,7 +475,7 @@ const props = defineProps<{
           transition: all 0.3s; // transition-all test
           transform: rotate(calc(var(--transform-direction) * 0));
 
-          svg {
+          .iconify {
             height: 18px;
             width: 18px;
             color: var(--muted-grey);
@@ -518,7 +518,7 @@ const props = defineProps<{
           color: var(--primary-grey-light-10);
         }
 
-        svg {
+        .iconify {
           color: var(--primary);
         }
       }
@@ -538,7 +538,7 @@ const props = defineProps<{
           color: var(--primary-grey);
 
           &:focus {
-            ~ span svg {
+            ~ span .iconify {
               color: var(--primary);
             }
           }
@@ -562,7 +562,7 @@ const props = defineProps<{
   .is-notification {
     &.is-active {
       .navbar-link {
-        svg {
+        .iconify {
           color: var(--primary) !important;
         }
       }

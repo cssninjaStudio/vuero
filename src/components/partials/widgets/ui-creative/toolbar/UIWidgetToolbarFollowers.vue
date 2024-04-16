@@ -79,7 +79,7 @@ const props = withDefaults(
         }
       }
 
-      svg {
+      .iconify {
         height: 18px;
         width: 18px;
         transition: stroke 0.3s;
@@ -110,7 +110,7 @@ const props = withDefaults(
     color: var(--light-text-light-12);
     transition: all 0.3s; // transition-all test
 
-    svg {
+    .iconify {
       height: 18px;
       width: 18px;
       transition: stroke 0.3s;

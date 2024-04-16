@@ -69,7 +69,7 @@ const filteredData = computed(() => {
 <template>
   <div>
     <div class="list-flex-toolbar is-reversed">
-      <VControl icon="feather:search">
+      <VControl icon="lucide:search">
         <input
           v-model="filters"
           class="input custom-text-filter"
@@ -155,11 +155,11 @@ const filteredData = computed(() => {
                     <span class="item-name dark-inverted">{{ item.name }}</span>
                     <span class="item-meta">
                       <span>
-                        <i
+                        <iconify-icon
                           aria-hidden="true"
                           class="iconify"
-                          data-icon="feather:clock"
-                        />{{ item.duration }}</span>
+                          icon="lucide:clock"
+                        ></iconify-icon>{{ item.duration }}</span>
                     </span>
                   </div>
                 </VFlexTableCell>

@@ -32,16 +32,16 @@ const activeTab = ref<TabId>('team')
           @keydown.space.prevent="panels.close()"
           @click="panels.close()"
         >
-          <i
+          <iconify-icon
             aria-hidden="true"
             class="iconify rtl-hidden"
-            data-icon="feather:chevron-right"
-          />
-          <i
+            icon="lucide:chevron-right"
+          ></iconify-icon>
+          <iconify-icon
             aria-hidden="true"
             class="iconify ltr-hidden"
-            data-icon="feather:chevron-left"
-          />
+            icon="lucide:chevron-left"
+          ></iconify-icon>
         </a>
       </div>
       <div class="tabs-wrapper is-triple-slider is-squared">
@@ -93,25 +93,25 @@ const activeTab = ref<TabId>('team')
               <div class="meta">
                 <span>Joshua S.</span>
                 <span>
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:map-pin"
-                  />
+                    icon="lucide:map-pin"
+                  ></iconify-icon>
                   Las Vegas, NV
                 </span>
               </div>
               <a class="link">
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify rtl-hidden"
-                  data-icon="feather:arrow-right"
-                />
-                <i
+                  icon="lucide:arrow-right"
+                ></iconify-icon>
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify ltr-hidden"
-                  data-icon="feather:arrow-left"
-                />
+                  icon="lucide:arrow-left"
+                ></iconify-icon>
               </a>
             </div>
 
@@ -125,25 +125,25 @@ const activeTab = ref<TabId>('team')
               <div class="meta">
                 <span>Melany W.</span>
                 <span>
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:map-pin"
-                  />
+                    icon="lucide:map-pin"
+                  ></iconify-icon>
                   San Jose, CA
                 </span>
               </div>
               <a class="link">
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify rtl-hidden"
-                  data-icon="feather:arrow-right"
-                />
-                <i
+                  icon="lucide:arrow-right"
+                ></iconify-icon>
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify ltr-hidden"
-                  data-icon="feather:arrow-left"
-                />
+                  icon="lucide:arrow-left"
+                ></iconify-icon>
               </a>
             </div>
 
@@ -157,25 +157,25 @@ const activeTab = ref<TabId>('team')
               <div class="meta">
                 <span>Esteban C.</span>
                 <span>
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:map-pin"
-                  />
+                    icon="lucide:map-pin"
+                  ></iconify-icon>
                   Miami, FL
                 </span>
               </div>
               <a class="link">
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify rtl-hidden"
-                  data-icon="feather:arrow-right"
-                />
-                <i
+                  icon="lucide:arrow-right"
+                ></iconify-icon>
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify ltr-hidden"
-                  data-icon="feather:arrow-left"
-                />
+                  icon="lucide:arrow-left"
+                ></iconify-icon>
               </a>
             </div>
 
@@ -189,25 +189,25 @@ const activeTab = ref<TabId>('team')
               <div class="meta">
                 <span>Tara S.</span>
                 <span>
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:map-pin"
-                  />
+                    icon="lucide:map-pin"
+                  ></iconify-icon>
                   New York, NY
                 </span>
               </div>
               <a class="link">
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify rtl-hidden"
-                  data-icon="feather:arrow-right"
-                />
-                <i
+                  icon="lucide:arrow-right"
+                ></iconify-icon>
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify ltr-hidden"
-                  data-icon="feather:arrow-left"
-                />
+                  icon="lucide:arrow-left"
+                ></iconify-icon>
               </a>
             </div>
           </div>
@@ -231,16 +231,16 @@ const activeTab = ref<TabId>('team')
                   <span>getslicer.io</span>
                 </div>
                 <a class="link">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify rtl-hidden"
-                    data-icon="feather:arrow-right"
-                  />
-                  <i
+                    icon="lucide:arrow-right"
+                  ></iconify-icon>
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify ltr-hidden"
-                    data-icon="feather:arrow-left"
-                  />
+                    icon="lucide:arrow-left"
+                  ></iconify-icon>
                 </a>
               </div>
               <div class="project-foot">
@@ -283,16 +283,16 @@ const activeTab = ref<TabId>('team')
                   <span>metamovies.co</span>
                 </div>
                 <a class="link">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify rtl-hidden"
-                    data-icon="feather:arrow-right"
-                  />
-                  <i
+                    icon="lucide:arrow-right"
+                  ></iconify-icon>
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify ltr-hidden"
-                    data-icon="feather:arrow-left"
-                  />
+                    icon="lucide:arrow-left"
+                  ></iconify-icon>
                 </a>
               </div>
               <div class="project-foot">
@@ -331,16 +331,16 @@ const activeTab = ref<TabId>('team')
                   <span>fastpizza.com</span>
                 </div>
                 <a class="link">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify rtl-hidden"
-                    data-icon="feather:arrow-right"
-                  />
-                  <i
+                    icon="lucide:arrow-right"
+                  ></iconify-icon>
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify ltr-hidden"
-                    data-icon="feather:arrow-left"
-                  />
+                    icon="lucide:arrow-left"
+                  ></iconify-icon>
                 </a>
               </div>
               <div class="project-foot">
@@ -376,11 +376,11 @@ const activeTab = ref<TabId>('team')
               <!--Timeline item-->
               <div class="timeline-item">
                 <div class="timeline-icon">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:phone-call"
-                  />
+                    icon="lucide:phone-call"
+                  ></iconify-icon>
                 </div>
                 <div class="timeline-content">
                   <p>Call Danny at Colby's</p>
@@ -405,11 +405,11 @@ const activeTab = ref<TabId>('team')
               <!--Timeline item-->
               <div class="timeline-item">
                 <div class="timeline-icon">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:message-circle"
-                  />
+                    icon="lucide:message-circle"
+                  ></iconify-icon>
                 </div>
                 <div class="timeline-content">
                   <p>Answer Annie's message</p>
@@ -419,11 +419,11 @@ const activeTab = ref<TabId>('team')
               <!--Timeline item-->
               <div class="timeline-item">
                 <div class="timeline-icon">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:mail"
-                  />
+                    icon="lucide:mail"
+                  ></iconify-icon>
                 </div>
                 <div class="timeline-content">
                   <p>Send new campaign</p>
@@ -433,11 +433,11 @@ const activeTab = ref<TabId>('team')
               <!--Timeline item-->
               <div class="timeline-item">
                 <div class="timeline-icon">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:smile"
-                  />
+                    icon="lucide:smile"
+                  ></iconify-icon>
                 </div>
                 <div class="timeline-content">
                   <p>Project review</p>
@@ -447,11 +447,11 @@ const activeTab = ref<TabId>('team')
               <!--Timeline item-->
               <div class="timeline-item">
                 <div class="timeline-icon">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:phone-call"
-                  />
+                    icon="lucide:phone-call"
+                  ></iconify-icon>
                 </div>
                 <div class="timeline-content">
                   <p>Call Trisha Jackson</p>
@@ -461,11 +461,11 @@ const activeTab = ref<TabId>('team')
               <!--Timeline item-->
               <div class="timeline-item">
                 <div class="timeline-icon">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:feather"
-                  />
+                    icon="lucide:feather"
+                  ></iconify-icon>
                 </div>
                 <div class="timeline-content">
                   <p>Write proposal for Don</p>
@@ -517,7 +517,7 @@ const activeTab = ref<TabId>('team')
                 color: var(--light-text);
                 font-size: 0.9rem;
 
-                svg {
+                .iconify {
                   height: 12px;
                   width: 12px;
                   stroke-width: 1.4px;
@@ -542,12 +542,12 @@ const activeTab = ref<TabId>('team')
               border-color: var(--primary);
               box-shadow: var(--light-box-shadow);
 
-              svg {
+              .iconify {
                 color: var(--primary);
               }
             }
 
-            svg {
+            .iconify {
               height: 16px;
               width: 16px;
               color: var(--light-text);
@@ -615,12 +615,12 @@ const activeTab = ref<TabId>('team')
                 border-color: var(--primary);
                 box-shadow: var(--light-box-shadow);
 
-                svg {
+                .iconify {
                   color: var(--primary);
                 }
               }
 
-              svg {
+              .iconify {
                 height: 16px;
                 width: 16px;
                 color: var(--light-text);
@@ -697,7 +697,7 @@ const activeTab = ref<TabId>('team')
                 border-radius: var(--radius-rounded);
               }
 
-              svg {
+              .iconify {
                 height: 16px;
                 width: 16px;
                 stroke-width: 1.6px;
@@ -766,7 +766,7 @@ const activeTab = ref<TabId>('team')
             &:focus {
               border-color: var(--primary) !important;
 
-              svg {
+              .iconify {
                 color: var(--primary) !important;
               }
             }

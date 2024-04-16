@@ -42,7 +42,7 @@ const filteredData = computed(() => {
   <div>
     <div class="datatable-toolbar">
       <VField>
-        <VControl icon="feather:search">
+        <VControl icon="lucide:search">
           <input
             v-model="filters"
             class="input custom-text-filter"
@@ -320,7 +320,7 @@ const filteredData = computed(() => {
 
   .negative-icon,
   .positive-icon {
-    svg {
+    .iconify {
       height: 16px;
       width: 16px;
     }
@@ -370,24 +370,24 @@ const filteredData = computed(() => {
     align-items: center;
 
     &.is-available {
-      i {
+      .iconify {
         color: var(--success);
       }
     }
 
     &.is-busy {
-      i {
+      .iconify {
         color: var(--danger);
       }
     }
 
     &.is-offline {
-      i {
+      .iconify {
         color: var(--light-text);
       }
     }
 
-    i {
+    .iconify {
       margin-right: 8px;
       font-size: 8px;
     }

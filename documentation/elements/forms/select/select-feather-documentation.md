@@ -20,7 +20,7 @@ const input = ref('')
 
 <template>
   <VField>
-    <VControl class="has-icons-left" icon="feather:globe">
+    <VControl class="has-icons-left" icon="lucide:globe">
       <VSelect v-model="input">
         <VOption value="">
           Select a Hero
@@ -54,7 +54,7 @@ const input = ref('')
 <!--example-->
 
 <VField>
-  <VControl class="has-icons-left" icon="feather:globe">
+  <VControl class="has-icons-left" icon="lucide:globe">
     <VSelect v-model="frontmatter.state.input">
       <VOption value="">Select a Hero</VOption>
       <VOption value="Superman">Superman</VOption>

@@ -434,13 +434,13 @@ useHead({
           &:focus {
             background: var(--primary) !important;
 
-            svg {
+            .iconify {
               stroke: var(--white) !important;
               fill: var(--white) !important;
             }
           }
 
-          svg {
+          .iconify {
             stroke: var(--primary) !important;
           }
         }

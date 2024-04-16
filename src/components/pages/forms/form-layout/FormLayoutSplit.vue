@@ -110,7 +110,7 @@ const onSubmit = () => {
               Enter your own
             </h3>
             <VField>
-              <VControl icon="feather:dollar-sign">
+              <VControl icon="lucide:dollar-sign">
                 <VInput
                   type="number"
                   min="0"
@@ -125,7 +125,7 @@ const onSubmit = () => {
           <div class="left">
             <h3>Personal Info</h3>
             <VField>
-              <VControl icon="feather:user">
+              <VControl icon="lucide:user">
                 <VInput
                   type="text"
                   placeholder="First Name *"
@@ -134,7 +134,7 @@ const onSubmit = () => {
               </VControl>
             </VField>
             <VField>
-              <VControl icon="feather:user">
+              <VControl icon="lucide:user">
                 <VInput
                   type="text"
                   placeholder="Last Name *"
@@ -143,7 +143,7 @@ const onSubmit = () => {
               </VControl>
             </VField>
             <VField>
-              <VControl icon="feather:mail">
+              <VControl icon="lucide:mail">
                 <VInput
                   type="email"
                   placeholder="Email Address *"
@@ -153,7 +153,7 @@ const onSubmit = () => {
               </VControl>
             </VField>
             <VField>
-              <VControl icon="feather:phone">
+              <VControl icon="lucide:phone">
                 <VInput
                   type="tel"
                   placeholder="Phone Number *"

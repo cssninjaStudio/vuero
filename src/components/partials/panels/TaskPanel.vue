@@ -27,11 +27,11 @@ const panels = usePanels()
           @keydown.space.prevent="panels.close()"
           @click="panels.close()"
         >
-          <i
+          <iconify-icon
             aria-hidden="true"
             class="iconify"
-            data-icon="feather:chevron-right"
-          />
+            icon="lucide:chevron-right"
+          ></iconify-icon>
         </a>
       </div>
       <div
@@ -61,11 +61,11 @@ const panels = usePanels()
               </div>
 
               <button>
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:plus"
-                />
+                  icon="lucide:plus"
+                ></iconify-icon>
               </button>
             </div>
           </div>
@@ -75,35 +75,35 @@ const panels = usePanels()
           <h3>Statistics</h3>
           <div class="task-stats">
             <div class="task-stat">
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:clock"
-              />
+                icon="lucide:clock"
+              ></iconify-icon>
               <span>5 days</span>
             </div>
             <div class="task-stat">
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:file"
-              />
+                icon="lucide:file"
+              ></iconify-icon>
               <span>3 files</span>
             </div>
             <div class="task-stat">
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:message-circle"
-              />
+                icon="lucide:message-circle"
+              ></iconify-icon>
               <span>54</span>
             </div>
             <a>
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:plus"
-              />
+                icon="lucide:plus"
+              ></iconify-icon>
               <span>Add Checklist</span>
             </a>
           </div>
@@ -178,25 +178,25 @@ const panels = usePanels()
               </div>
               <div class="end">
                 <a class="message-action">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:smile"
-                  />
+                    icon="lucide:smile"
+                  ></iconify-icon>
                 </a>
                 <a class="message-action">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:at-sign"
-                  />
+                    icon="lucide:at-sign"
+                  ></iconify-icon>
                 </a>
                 <a class="message-action">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:paperclip"
-                  />
+                    icon="lucide:paperclip"
+                  ></iconify-icon>
                 </a>
                 <a class="button v-button is-primary is-bold is-raised">Send</a>
               </div>
@@ -297,7 +297,7 @@ const panels = usePanels()
                   color: var(--primary);
                 }
 
-                svg {
+                .iconify {
                   height: 18px;
                   width: 18px;
                 }
@@ -322,7 +322,7 @@ const panels = usePanels()
                 margin-inline-start: 3px;
               }
 
-              svg {
+              .iconify {
                 height: 18px;
                 width: 18px;
               }
@@ -343,7 +343,7 @@ const panels = usePanels()
                 margin-inline-start: 5px;
               }
 
-              svg {
+              .iconify {
                 height: 14px;
                 width: 14px;
                 stroke-width: 3px;
@@ -398,7 +398,7 @@ const panels = usePanels()
                     font-size: 0.9rem;
                     color: var(--light-text);
 
-                    i {
+                    .iconify {
                       position: relative;
                       top: -3px;
                       font-size: 0.3rem;
@@ -444,7 +444,7 @@ const panels = usePanels()
                     color: var(--primary);
                   }
 
-                  svg {
+                  .iconify {
                     height: 16px;
                     width: 16px;
                   }

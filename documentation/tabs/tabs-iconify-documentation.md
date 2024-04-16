@@ -16,7 +16,7 @@ Check the markup for more details.
     selected="team"
     :tabs="[
       { label: 'Team', value: 'team', icon: 'fas fa-users' },
-      { label: 'Projects', value: 'projects', icon: 'feather:box' },
+      { label: 'Projects', value: 'projects', icon: 'lucide:box' },
       { label: 'Tasks', value: 'tasks', icon: 'lnil lnil-licencse' },
     ]"
   >
@@ -48,7 +48,7 @@ Check the markup for more details.
 
 <!--example-->
 
-<VTabs selected="team" :tabs="[{ label: 'Team', value: 'team', icon: 'fas fa-users' },{ label: 'Projects', value: 'projects', icon: 'feather:box' },{ label: 'Tasks', value: 'tasks', icon: 'lnil lnil-licencse' }]">
+<VTabs selected="team" :tabs="[{ label: 'Team', value: 'team', icon: 'fas fa-users' },{ label: 'Projects', value: 'projects', icon: 'lucide:box' },{ label: 'Tasks', value: 'tasks', icon: 'lnil lnil-licencse' }]">
   <template #tab="{ activeValue }">
     <p v-if="activeValue === 'team'">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.

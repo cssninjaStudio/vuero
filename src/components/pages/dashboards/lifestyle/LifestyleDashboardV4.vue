@@ -25,7 +25,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                 <VButton
                   light
                   outlined
-                  icon="feather:plus"
+                  icon="lucide:plus"
                 >
                   New Article
                 </VButton>
@@ -329,7 +329,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
           margin-inline-end: 6px;
         }
 
-        i {
+        .iconify {
           font-size: 12px;
         }
       }

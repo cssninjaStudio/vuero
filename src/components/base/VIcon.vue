@@ -12,12 +12,12 @@ const isIconify = computed(() => {
 
 <template>
   <span :key="props.icon">
-    <i
+    <iconify-icon
       v-if="isIconify"
       aria-hidden="true"
       class="iconify"
-      :data-icon="props.icon"
-    />
+      :icon="props.icon"
+    ></iconify-icon>
     <i
       v-else
       aria-hidden="true"

@@ -27,7 +27,7 @@ const filteredData = computed(() => {
 <template>
   <div>
     <div class="list-view-toolbar is-reversed">
-      <VControl icon="feather:search">
+      <VControl icon="lucide:search">
         <input
           v-model="filters"
           class="input custom-text-filter"
@@ -35,11 +35,11 @@ const filteredData = computed(() => {
           data-filter-target=".list-view-item"
         >
         <div class="form-icon">
-          <i
+          <iconify-icon
             aria-hidden="true"
             class="iconify"
-            data-icon="feather:search"
-          />
+            icon="lucide:search"
+          ></iconify-icon>
         </div>
       </VControl>
 
@@ -123,31 +123,31 @@ const filteredData = computed(() => {
                       {{ item.title }}
                     </h3>
                     <span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:map-pin"
-                      />
+                        icon="lucide:map-pin"
+                      ></iconify-icon>
                       <span>{{ item.location }}</span>
                       <i
                         aria-hidden="true"
                         class="fas fa-circle icon-separator"
                       />
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:clock"
-                      />
+                        icon="lucide:clock"
+                      ></iconify-icon>
                       <span>{{ item.duration }}</span>
                       <i
                         aria-hidden="true"
                         class="fas fa-circle icon-separator"
                       />
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:check-circle"
-                      />
+                        icon="lucide:check-circle"
+                      ></iconify-icon>
                       <span>{{ item.requirements }}</span>
                     </span>
                   </div>
@@ -162,7 +162,7 @@ const filteredData = computed(() => {
                       </VButton>
 
                       <VIconButton
-                        icon="feather:bookmark"
+                        icon="lucide:bookmark"
                         class="hint--bubble hint--primary hint--top"
                         data-hint="Save"
                         light
@@ -256,7 +256,7 @@ const filteredData = computed(() => {
           font-size: 0.9rem;
           color: var(--light-text);
 
-          svg {
+          .iconify {
             position: relative;
             top: 1px;
             height: 12px;
@@ -370,7 +370,7 @@ const filteredData = computed(() => {
               margin: 10px;
               width: calc(33.3% - 20px);
 
-              i {
+              .iconify {
                 margin: 0;
               }
             }

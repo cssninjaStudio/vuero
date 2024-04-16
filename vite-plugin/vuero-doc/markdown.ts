@@ -61,10 +61,10 @@ export async function createProcessor(
       behavior: 'append',
       content: {
         type: 'element',
-        tagName: 'i',
+        tagName: 'iconify-icon',
         properties: {
           className: ['iconify toc-link-anchor'],
-          dataIcon: 'feather:link',
+          icon: 'lucide:link',
         },
         children: [],
       },

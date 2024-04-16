@@ -88,11 +88,11 @@ watch(
             @keydown.space.prevent="activeMobileSubsidebar = 'dashboard'"
             @click="activeMobileSubsidebar = 'dashboard'"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:activity"
-            />
+              icon="lucide:activity"
+            ></iconify-icon>
           </a>
         </li>
         <li>
@@ -104,11 +104,11 @@ watch(
             @keydown.space.prevent="activeMobileSubsidebar = 'layout'"
             @click="activeMobileSubsidebar = 'layout'"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:grid"
-            />
+              icon="lucide:grid"
+            ></iconify-icon>
           </a>
         </li>
         <li>
@@ -120,11 +120,11 @@ watch(
             @keydown.space.prevent="activeMobileSubsidebar = 'elements'"
             @click="activeMobileSubsidebar = 'elements'"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:box"
-            />
+              icon="lucide:box"
+            ></iconify-icon>
           </a>
         </li>
         <li>
@@ -136,20 +136,20 @@ watch(
             @keydown.space.prevent="activeMobileSubsidebar = 'components'"
             @click="activeMobileSubsidebar = 'components'"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:cpu"
-            />
+              icon="lucide:cpu"
+            ></iconify-icon>
           </a>
         </li>
         <li>
           <RouterLink to="/messaging-v1">
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:message-circle"
-            />
+              icon="lucide:message-circle"
+            ></iconify-icon>
           </RouterLink>
         </li>
       </template>
@@ -163,11 +163,11 @@ watch(
             @keydown.space.prevent="panels.setActive('search')"
             @click="panels.setActive('search')"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:search"
-            />
+              icon="lucide:search"
+            ></iconify-icon>
           </a>
         </li>
         <li>
@@ -175,11 +175,11 @@ watch(
             aria-label="View settings"
             href="#"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:settings"
-            />
+              icon="lucide:settings"
+            ></iconify-icon>
           </a>
         </li>
       </template>
@@ -225,10 +225,10 @@ watch(
               class="single-link"
             >
               <span class="icon">
-                <i
+                <iconify-icon
                   class="iconify"
-                  data-icon="feather:grid"
-                />
+                  icon="lucide:grid"
+                ></iconify-icon>
               </span>
               Dashboard
             </RouterLink>
@@ -239,10 +239,10 @@ watch(
               class="single-link"
             >
               <span class="icon">
-                <i
+                <iconify-icon
                   class="iconify"
-                  data-icon="feather:briefcase"
-                />
+                  icon="lucide:briefcase"
+                ></iconify-icon>
               </span>
               Projects
             </RouterLink>
@@ -253,10 +253,10 @@ watch(
               class="single-link"
             >
               <span class="icon">
-                <i
+                <iconify-icon
                   class="iconify"
-                  data-icon="feather:message-circle"
-                />
+                  icon="lucide:message-circle"
+                ></iconify-icon>
               </span>
               Messages
               <span class="badge">3</span>
@@ -268,10 +268,10 @@ watch(
               class="single-link"
             >
               <span class="icon">
-                <i
+                <iconify-icon
                   class="iconify"
-                  data-icon="feather:book"
-                />
+                  icon="lucide:book"
+                ></iconify-icon>
               </span>
               Collections
             </RouterLink>
@@ -282,10 +282,10 @@ watch(
               class="single-link"
             >
               <span class="icon">
-                <i
+                <iconify-icon
                   class="iconify"
-                  data-icon="feather:users"
-                />
+                  icon="lucide:users"
+                ></iconify-icon>
               </span>
               Users
             </RouterLink>
@@ -297,22 +297,22 @@ watch(
           >
             <template #header>
               <div class="icon">
-                <i
+                <iconify-icon
                   class="iconify"
-                  data-icon="feather:briefcase"
-                />
+                  icon="lucide:briefcase"
+                ></iconify-icon>
               </div>
               Reports
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify rtl-hidden"
-                data-icon="feather:chevron-right"
-              />
-              <i
+                icon="lucide:chevron-right"
+              ></iconify-icon>
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify ltr-hidden"
-                data-icon="feather:chevron-left"
-              />
+                icon="lucide:chevron-left"
+              ></iconify-icon>
             </template>
             <RouterLink
               to="/sidebar/dashboards/analytics"
@@ -342,10 +342,10 @@ watch(
               class="single-link"
             >
               <span class="icon">
-                <i
+                <iconify-icon
                   class="iconify"
-                  data-icon="feather:mail"
-                />
+                  icon="lucide:mail"
+                ></iconify-icon>
               </span>
               Inbox
             </RouterLink>
@@ -358,23 +358,23 @@ watch(
           >
             <template #header>
               <div class="icon">
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:settings"
-                />
+                  icon="lucide:settings"
+                ></iconify-icon>
               </div>
               Settings
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify rtl-hidden"
-                data-icon="feather:chevron-right"
-              />
-              <i
+                icon="lucide:chevron-right"
+              ></iconify-icon>
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify ltr-hidden"
-                data-icon="feather:chevron-left"
-              />
+                icon="lucide:chevron-left"
+              ></iconify-icon>
             </template>
             <RouterLink
               to="/sidebar/layouts"
@@ -405,23 +405,23 @@ watch(
           >
             <template #header>
               <div class="icon">
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:zap"
-                />
+                  icon="lucide:zap"
+                ></iconify-icon>
               </div>
               Starters
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify rtl-hidden"
-                data-icon="feather:chevron-right"
-              />
-              <i
+                icon="lucide:chevron-right"
+              ></iconify-icon>
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify ltr-hidden"
-                data-icon="feather:chevron-left"
-              />
+                icon="lucide:chevron-left"
+              ></iconify-icon>
             </template>
 
             <RouterLink
@@ -678,11 +678,11 @@ watch(
             @keydown.space.prevent="panels.setActive('search')"
             @click="panels.setActive('search')"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify sidebar-svg"
-              data-icon="feather-search"
-            />
+              icon="lucide:search"
+            ></iconify-icon>
           </a>
         </template>
       </Sideblock>
@@ -751,11 +751,11 @@ watch(
                 @keydown.space.prevent="panels.setActive('activity')"
                 @click="panels.setActive('activity')"
               >
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:grid"
-                />
+                  icon="lucide:grid"
+                ></iconify-icon>
               </a>
             </Toolbar>
           </div>

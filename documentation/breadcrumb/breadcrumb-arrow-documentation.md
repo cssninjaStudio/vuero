@@ -2,10 +2,10 @@
 breadcrumb:
   - label: Vuero
     hideLabel: true
-    icon: feather:home
+    icon: lucide:home
     link: https://vuero.cssninja.io/
   - label: Components
-    icon: feather:cpu
+    icon: lucide:cpu
     to:
       name: /components/
   - label: VBreadcrumb
@@ -25,13 +25,13 @@ const breadcrumb = [
   {
     label: 'Vuero',
     hideLabel: true,
-    icon: 'feather:home',
+    icon: 'lucide:home',
     // use external links
     link: 'https://vuero.cssninja.io/',
   },
   {
     label: 'Components',
-    icon: 'feather:cpu',
+    icon: 'lucide:cpu',
     // or generate a router link with 'to' props
     to: '/components/',
   },

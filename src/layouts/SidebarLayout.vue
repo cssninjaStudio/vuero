@@ -94,11 +94,11 @@ watch(
             @keydown.space.prevent="activeMobileSubsidebar = 'dashboard'"
             @click="activeMobileSubsidebar = 'dashboard'"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:activity"
-            />
+              icon="lucide:activity"
+            ></iconify-icon>
           </a>
         </li>
         <li>
@@ -110,11 +110,11 @@ watch(
             @keydown.space.prevent="activeMobileSubsidebar = 'layout'"
             @click="activeMobileSubsidebar = 'layout'"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:grid"
-            />
+              icon="lucide:grid"
+            ></iconify-icon>
           </a>
         </li>
         <li>
@@ -126,11 +126,11 @@ watch(
             @keydown.space.prevent="activeMobileSubsidebar = 'elements'"
             @click="activeMobileSubsidebar = 'elements'"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:box"
-            />
+              icon="lucide:box"
+            ></iconify-icon>
           </a>
         </li>
         <li>
@@ -142,20 +142,20 @@ watch(
             @keydown.space.prevent="activeMobileSubsidebar = 'components'"
             @click="activeMobileSubsidebar = 'components'"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:cpu"
-            />
+              icon="lucide:cpu"
+            ></iconify-icon>
           </a>
         </li>
         <li>
           <RouterLink to="/messaging-v1">
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:message-circle"
-            />
+              icon="lucide:message-circle"
+            ></iconify-icon>
           </RouterLink>
         </li>
       </template>
@@ -169,11 +169,11 @@ watch(
             @keydown.space.prevent="panels.setActive('search')"
             @click="panels.setActive('search')"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:search"
-            />
+              icon="lucide:search"
+            ></iconify-icon>
           </a>
         </li>
         <li>
@@ -181,11 +181,11 @@ watch(
             aria-label="View settings"
             href="#"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:settings"
-            />
+              icon="lucide:settings"
+            ></iconify-icon>
           </a>
         </li>
       </template>
@@ -228,11 +228,11 @@ watch(
             @keydown.space.prevent="switchSidebar('dashboard')"
             @click="switchSidebar('dashboard')"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify sidebar-svg"
-              data-icon="feather:activity"
-            />
+              icon="lucide:activity"
+            ></iconify-icon>
           </a>
         </li>
 
@@ -247,11 +247,11 @@ watch(
             @keydown.space.prevent="switchSidebar('layout')"
             @click="switchSidebar('layout')"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify sidebar-svg"
-              data-icon="feather:grid"
-            />
+              icon="lucide:grid"
+            ></iconify-icon>
           </a>
         </li>
 
@@ -266,11 +266,11 @@ watch(
             @keydown.space.prevent="switchSidebar('elements')"
             @click="switchSidebar('elements')"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify sidebar-svg"
-              data-icon="feather:box"
-            />
+              icon="lucide:box"
+            ></iconify-icon>
           </a>
         </li>
 
@@ -285,11 +285,11 @@ watch(
             @keydown.space.prevent="switchSidebar('components')"
             @click="switchSidebar('components')"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify sidebar-svg"
-              data-icon="feather:cpu"
-            />
+              icon="lucide:cpu"
+            ></iconify-icon>
           </a>
         </li>
 
@@ -300,11 +300,11 @@ watch(
             to="/messaging-v1"
             data-content="Messaging"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify sidebar-svg"
-              data-icon="feather:message-circle"
-            />
+              icon="lucide:message-circle"
+            ></iconify-icon>
           </RouterLink>
         </li>
       </template>
@@ -325,11 +325,11 @@ watch(
             @keydown.space.prevent="panels.setActive('search')"
             @click="panels.setActive('search')"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify sidebar-svg"
-              data-icon="feather-search"
-            />
+              icon="lucide:search"
+            ></iconify-icon>
           </a>
           <a
             aria-label="Close all panels"
@@ -339,11 +339,11 @@ watch(
             @keydown.space.prevent="panels.close()"
             @click="panels.close()"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify sidebar-svg"
-              data-icon="feather-x"
-            />
+              icon="lucide:x"
+            ></iconify-icon>
           </a>
         </li>
 
@@ -354,11 +354,11 @@ watch(
             to="/sidebar/layouts/profile-settings"
             data-content="Settings"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify sidebar-svg"
-              data-icon="feather:settings"
-            />
+              icon="lucide:settings"
+            ></iconify-icon>
           </RouterLink>
         </li>
 
@@ -453,11 +453,11 @@ watch(
                 @keydown.space.prevent="panels.setActive('activity')"
                 @click="panels.setActive('activity')"
               >
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:grid"
-                />
+                  icon="lucide:grid"
+                ></iconify-icon>
               </a>
             </Toolbar>
           </div>

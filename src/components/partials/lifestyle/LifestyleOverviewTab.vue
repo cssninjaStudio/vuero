@@ -61,11 +61,11 @@ const {
           <div class="card-foot is-down">
             <span>
               <span>
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:arrow-right"
-                />
+                  icon="lucide:arrow-right"
+                ></iconify-icon>
                 -0.4%</span>
               less than usual.
             </span>
@@ -94,11 +94,11 @@ const {
           <div class="card-foot is-up">
             <span>
               <span>
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:arrow-right"
-                />
+                  icon="lucide:arrow-right"
+                ></iconify-icon>
                 22.7%</span>
               follower growth.
             </span>
@@ -127,11 +127,11 @@ const {
           <div class="card-foot is-up">
             <span>
               <span>
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:arrow-right"
-                />
+                  icon="lucide:arrow-right"
+                ></iconify-icon>
                 1.4%</span>
               following growth.
             </span>
@@ -160,11 +160,11 @@ const {
           <div class="card-foot is-up">
             <span>
               <span>
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:arrow-right"
-                />
+                  icon="lucide:arrow-right"
+                ></iconify-icon>
                 3.6%</span>
               likes growth.
             </span>
@@ -193,11 +193,11 @@ const {
           <div class="card-foot is-down">
             <span>
               <span>
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:arrow-right"
-                />
+                  icon="lucide:arrow-right"
+                ></iconify-icon>
                 -1.1%</span>
               less than usual.
             </span>
@@ -226,11 +226,11 @@ const {
           <div class="card-foot is-up">
             <span>
               <span>
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:arrow-right"
-                />
+                  icon="lucide:arrow-right"
+                ></iconify-icon>
                 22.7%</span>
               more profile views.
             </span>

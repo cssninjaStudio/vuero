@@ -50,7 +50,7 @@ const filteredData = computed(() => {
 <template>
   <div>
     <div class="list-flex-toolbar is-reversed">
-      <VControl icon="feather:search">
+      <VControl icon="lucide:search">
         <input
           v-model="filters"
           class="input custom-text-filter"

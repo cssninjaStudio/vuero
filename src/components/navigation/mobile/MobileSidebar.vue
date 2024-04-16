@@ -20,11 +20,11 @@ const props = defineProps<{
               aria-label="Back to homepage"
               href="/"
             >
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:activity"
-              />
+                icon="lucide:activity"
+              ></iconify-icon>
             </a>
           </li>
         </slot>
@@ -98,12 +98,12 @@ const props = defineProps<{
 
           &:hover,
           &.is-active {
-            > svg {
+            > .iconify {
               color: var(--primary);
             }
           }
 
-          > svg {
+          > .iconify {
             color: var(--title-grey);
             height: 20px;
             width: 20px;
@@ -119,8 +119,8 @@ const props = defineProps<{
             transition: all 0.3s; // transition-all test
           }
 
-          &:hover svg,
-          &.is-active svg {
+          &:hover .iconify,
+          &.is-active .iconify {
             color: var(--primary);
           }
 
@@ -136,27 +136,27 @@ const props = defineProps<{
 
           &.is-selected,
           &.router-link-exact-active {
-            svg {
+            .iconify {
               color: var(--primary);
             }
           }
         }
 
         #open-filters {
-          svg {
+          .iconify {
             transform: rotate(calc(var(--transform-direction) * 0));
             transition: all 0.3s; // transition-all test
           }
 
           &:hover {
-            svg {
+            .iconify {
               transform: rotate(calc(var(--transform-direction) * 145deg));
             }
           }
         }
 
         &.is-active {
-          a svg {
+          a .iconify {
             color: var(--primary);
           }
         }
@@ -181,7 +181,7 @@ const props = defineProps<{
         li {
           a {
             &.is-active {
-              svg {
+              .iconify {
                 color: var(--primary);
               }
             }
@@ -254,7 +254,7 @@ const props = defineProps<{
                 color: var(--dark-text);
                 font-weight: 600;
 
-                svg {
+                .iconify {
                   transform: rotate(90deg) !important;
                 }
               }
@@ -291,7 +291,7 @@ const props = defineProps<{
               font-weight: 500;
               color: var(--light-text);
 
-              svg {
+              .iconify {
                 position: relative;
                 top: 1px;
                 height: 18px;
@@ -330,11 +330,11 @@ const props = defineProps<{
                   color: var(--primary);
                 }
 
-                i {
+                .iconify {
                   margin-inline-end: 8px;
                 }
 
-                svg {
+                .iconify {
                   height: 8px;
                   width: 8px;
                   max-width: 8px;
@@ -372,7 +372,7 @@ const props = defineProps<{
       padding: 10px;
 
       .button {
-        svg {
+        .iconify {
           height: 18px;
           width: 18px;
         }
@@ -650,12 +650,12 @@ const props = defineProps<{
 
         &:hover,
         &:focus {
-          svg {
+          .iconify {
             fill: var(--white);
           }
         }
 
-        svg {
+        .iconify {
           height: 24px;
           width: 24px;
           fill: var(--primary);

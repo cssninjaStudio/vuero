@@ -81,11 +81,11 @@ const props = defineProps<{
           :class="[props.circled && 'is-circle']"
         >
           <span class="icon is-small">
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:edit-2"
-            />
+              icon="lucide:edit-2"
+            ></iconify-icon>
           </span>
         </button>
         <button
@@ -93,11 +93,11 @@ const props = defineProps<{
           :class="[props.circled && 'is-circle']"
         >
           <span class="icon is-small">
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:eye"
-            />
+              icon="lucide:eye"
+            ></iconify-icon>
           </span>
         </button>
         <button
@@ -105,11 +105,11 @@ const props = defineProps<{
           :class="[props.circled && 'is-circle']"
         >
           <span class="icon is-small">
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:trash-2"
-            />
+              icon="lucide:trash-2"
+            ></iconify-icon>
           </span>
         </button>
       </div>

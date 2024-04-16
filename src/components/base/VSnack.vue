@@ -40,12 +40,12 @@ const isIconify = computed(() => {
       class="snack-media is-icon"
       :class="[props.color && `is-${props.color}`, props.solid && `is-solid`]"
     >
-      <i
+      <iconify-icon
         v-if="isIconify"
         aria-hidden="true"
         class="iconify snack-icon"
-        :data-icon="icon"
-      />
+        :icon="icon"
+      ></iconify-icon>
       <i
         v-else
         aria-hidden="true"
@@ -112,7 +112,7 @@ const isIconify = computed(() => {
         height: 30px;
         width: 30px;
 
-        svg {
+        .iconify {
           height: 15px;
           width: 15px;
         }
@@ -183,12 +183,12 @@ const isIconify = computed(() => {
         &.is-solid {
           background: var(--primary);
 
-          svg {
+          .iconify {
             color: var(--white);
           }
         }
 
-        svg {
+        .iconify {
           color: var(--primary);
         }
 
@@ -209,12 +209,12 @@ const isIconify = computed(() => {
         &.is-solid {
           background: var(--success);
 
-          svg {
+          .iconify {
             color: var(--white);
           }
         }
 
-        svg {
+        .iconify {
           color: var(--success);
         }
 
@@ -235,12 +235,12 @@ const isIconify = computed(() => {
         &.is-solid {
           background: var(--info);
 
-          svg {
+          .iconify {
             color: var(--white);
           }
         }
 
-        svg {
+        .iconify {
           color: var(--info);
         }
 
@@ -261,12 +261,12 @@ const isIconify = computed(() => {
         &.is-solid {
           background: var(--warning);
 
-          svg {
+          .iconify {
             color: var(--white);
           }
         }
 
-        svg {
+        .iconify {
           color: var(--warning);
         }
 
@@ -287,12 +287,12 @@ const isIconify = computed(() => {
         &.is-solid {
           background: var(--danger);
 
-          svg {
+          .iconify {
             color: var(--white);
           }
         }
 
-        svg {
+        .iconify {
           color: var(--danger);
         }
 
@@ -314,7 +314,7 @@ const isIconify = computed(() => {
         transform: translate(-50%, -50%);
       }
 
-      svg {
+      .iconify {
         height: 18px;
         width: 18px;
         stroke-width: 1.6px;
@@ -361,7 +361,7 @@ const isIconify = computed(() => {
     margin: 0 16px 0 10px;
     cursor: pointer;
 
-    svg {
+    .iconify {
       height: 14px;
       width: 14px;
       color: var(--light-text);
@@ -383,7 +383,7 @@ const isIconify = computed(() => {
         &.is-primary:not(.is-solid) {
           border-color: var(--primary);
 
-          svg {
+          .iconify {
             color: var(--primary);
           }
 

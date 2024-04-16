@@ -93,7 +93,7 @@ useHead({
           >
             <div class="login-form">
               <VField>
-                <VControl icon="feather:user">
+                <VControl icon="lucide:user">
                   <VInput
                     type="text"
                     placeholder="Username"
@@ -102,7 +102,7 @@ useHead({
                 </VControl>
               </VField>
               <VField>
-                <VControl icon="feather:lock">
+                <VControl icon="lucide:lock">
                   <VInput
                     type="password"
                     placeholder="Password"

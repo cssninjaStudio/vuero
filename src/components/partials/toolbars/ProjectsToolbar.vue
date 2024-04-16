@@ -1,7 +1,7 @@
 <template>
   <div class="projects-toolbar">
     <VField raw>
-      <VControl icon="feather:search">
+      <VControl icon="lucide:search">
         <VInput placeholder="Search again..." />
       </VControl>
     </VField>

@@ -95,11 +95,11 @@ watch(
             @keydown.space.prevent="activeMobileSubsidebar = 'dashboard'"
             @click="activeMobileSubsidebar = 'dashboard'"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:activity"
-            />
+              icon="lucide:activity"
+            ></iconify-icon>
           </a>
         </li>
         <li>
@@ -110,11 +110,11 @@ watch(
             @keydown.space.prevent="activeMobileSubsidebar = 'layout'"
             @click="activeMobileSubsidebar = 'layout'"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:grid"
-            />
+              icon="lucide:grid"
+            ></iconify-icon>
           </a>
         </li>
         <li
@@ -125,11 +125,11 @@ watch(
           @click="activeMobileSubsidebar = 'elements'"
         >
           <a>
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:box"
-            />
+              icon="lucide:box"
+            ></iconify-icon>
           </a>
         </li>
         <li
@@ -140,20 +140,20 @@ watch(
           @click="activeMobileSubsidebar = 'components'"
         >
           <a>
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:cpu"
-            />
+              icon="lucide:cpu"
+            ></iconify-icon>
           </a>
         </li>
         <li>
           <RouterLink to="/messaging-v1">
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:message-circle"
-            />
+              icon="lucide:message-circle"
+            ></iconify-icon>
           </RouterLink>
         </li>
       </template>
@@ -166,20 +166,20 @@ watch(
             @keydown.space.prevent="panels.setActive('search')"
             @click="panels.setActive('search')"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:search"
-            />
+              icon="lucide:search"
+            ></iconify-icon>
           </a>
         </li>
         <li>
           <a href="#">
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:settings"
-            />
+              icon="lucide:settings"
+            ></iconify-icon>
           </a>
         </li>
       </template>
@@ -234,11 +234,11 @@ watch(
             @keydown.space.prevent="panels.setActive('activity')"
             @click="panels.setActive('activity')"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:grid"
-            />
+              icon="lucide:grid"
+            ></iconify-icon>
           </a>
         </Toolbar>
         <LayoutSwitcher />
@@ -270,11 +270,11 @@ watch(
               @click="displaySearch = true"
             >
               <span class="icon is-small">
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:search"
-                />
+                  icon="lucide:search"
+                ></iconify-icon>
               </span>
             </button>
           </div>
@@ -292,11 +292,11 @@ watch(
                 placeholder="Search records..."
               >
               <div class="form-icon">
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:search"
-                />
+                  icon="lucide:search"
+                ></iconify-icon>
               </div>
               <div
                 id="navbar-navbar-search-close"
@@ -306,11 +306,11 @@ watch(
                 @keydown.space.prevent="displaySearch = false"
                 @click="displaySearch = false"
               >
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:x"
-                />
+                  icon="lucide:x"
+                ></iconify-icon>
               </div>
               <div
                 v-if="filteredUsers.length > 0"
@@ -366,11 +366,11 @@ watch(
                   @keydown.space.prevent="panels.setActive('activity')"
                   @click="panels.setActive('activity')"
                 >
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:grid"
-                  />
+                    icon="lucide:grid"
+                  ></iconify-icon>
                 </a>
               </Toolbar>
             </div>

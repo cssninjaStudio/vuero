@@ -152,7 +152,7 @@
       justify-content: center;
       align-items: center;
 
-      svg {
+      .iconify {
         height: 18px;
         width: 18px;
         color: var(--dark-text);
@@ -495,12 +495,12 @@
         &:focus {
           background: var(--fade-grey-light-3);
 
-          svg {
+          .iconify {
             color: var(--light-text);
           }
         }
 
-        svg {
+        .iconify {
           width: 16px;
           height: 16px;
           color: var(--light-text);
@@ -599,7 +599,7 @@
       .popover-actions .popover-icon:hover {
         background: var(--dark-sidebar-light-6) !important;
 
-        svg {
+        .iconify {
           color: var(--primary);
         }
       }

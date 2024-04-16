@@ -67,11 +67,11 @@ const toggle = (key: number) => {
           <div class="collapse-icon">
             <VIcon
               v-if="withChevron"
-              icon="feather:chevron-down"
+              icon="lucide:chevron-down"
             />
             <VIcon
               v-else-if="!withChevron"
-              icon="feather:plus"
+              icon="lucide:plus"
             />
           </div>
         </div>
@@ -175,7 +175,7 @@ const toggle = (key: number) => {
         width: 16px;
       }
 
-      svg {
+      .iconify {
         height: 16px;
         width: 16px;
         color: var(--light-text);

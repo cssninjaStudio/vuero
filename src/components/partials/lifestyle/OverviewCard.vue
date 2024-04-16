@@ -67,7 +67,7 @@ const props = defineProps<{
       span span {
         color: var(--green);
 
-        svg {
+        .iconify {
           transform: rotate(calc(var(--transform-direction) * -45deg));
         }
       }
@@ -77,7 +77,7 @@ const props = defineProps<{
       span span {
         color: var(--red);
 
-        svg {
+        .iconify {
           transform: rotate(calc(var(--transform-direction) * 45deg));
         }
       }
@@ -91,7 +91,7 @@ const props = defineProps<{
         margin-inline-end: 8px;
         font-weight: 500;
 
-        svg {
+        .iconify {
           height: 18px;
           width: 18px;
           stroke-width: 3px;
@@ -130,7 +130,7 @@ const props = defineProps<{
         span span {
           color: var(--green);
 
-          svg {
+          .iconify {
             transform: rotate(calc(var(--transform-direction) * -45deg));
           }
         }
@@ -140,7 +140,7 @@ const props = defineProps<{
         span span {
           color: var(--red);
 
-          svg {
+          .iconify {
             transform: rotate(calc(var(--transform-direction) * 45deg));
           }
         }
@@ -154,7 +154,7 @@ const props = defineProps<{
           margin-inline-end: 8px;
           font-weight: 500;
 
-          svg {
+          .iconify {
             height: 18px;
             width: 18px;
             stroke-width: 3px;

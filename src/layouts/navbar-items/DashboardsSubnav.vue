@@ -48,11 +48,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-analytics-alt-1"
                       />
                       <span>Personal V1</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -62,11 +62,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-pie-chart"
                       />
                       <span>Personal V2</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -76,11 +76,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-stats-up"
                       />
                       <span>Personal V3</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -90,11 +90,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-cloud-sun"
                       />
                       <span>Hobbies</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -104,11 +104,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-hospital-alt-3"
                       />
                       <span>Health</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -118,11 +118,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-books"
                       />
                       <span>Writer</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -132,11 +132,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-tshirt"
                       />
                       <span>Soccer</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                 </ul>
@@ -153,11 +153,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-analytics-alt-1"
                       />
                       <span>Analytics</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -167,11 +167,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-stats-up"
                       />
                       <span>Stocks</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -181,11 +181,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-credit-card"
                       />
                       <span>Sales</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -195,11 +195,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-bank"
                       />
                       <span>Banking V1</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -209,11 +209,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-bank"
                       />
                       <span>Banking V2</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -223,11 +223,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-bank"
                       />
                       <span>Banking V3</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                 </ul>
@@ -244,11 +244,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-cardiology"
                       />
                       <span>Influencer</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -258,11 +258,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-plane-alt"
                       />
                       <span>Flights Booking</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -272,11 +272,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-apartment"
                       />
                       <span>Company Board</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -286,11 +286,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-users-alt"
                       />
                       <span>HR Board</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -300,11 +300,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-graduate"
                       />
                       <span>Course Board</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -314,11 +314,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-cart"
                       />
                       <span>Ecommerce V1</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -328,11 +328,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-briefcase"
                       />
                       <span>Jobs</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                 </ul>
@@ -349,11 +349,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-pizza"
                       />
                       <span>Food Delivery</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -369,11 +369,11 @@ const activeTab = ref<TabId>('dashboards')
                         outlined
                         curved
                       />
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -389,11 +389,11 @@ const activeTab = ref<TabId>('dashboards')
                         outlined
                         curved
                       />
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -403,11 +403,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-envelope"
                       />
                       <span>Inbox</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -417,11 +417,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-bubble"
                       />
                       <span>Messaging V1</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -431,11 +431,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-bubble"
                       />
                       <span>Messaging V2</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                 </ul>
@@ -464,11 +464,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-layout"
                       />
                       <span>Regular Sidebar</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -478,11 +478,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-layout"
                       />
                       <span>Curved Sidebar</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -492,11 +492,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-layout"
                       />
                       <span>Colored Sidebar</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -506,11 +506,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-layout"
                       />
                       <span>Curved Colored</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -520,11 +520,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-layout"
                       />
                       <span>Labels Sidebar</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -534,11 +534,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-layout"
                       />
                       <span>Labels Hover Sidebar</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -548,11 +548,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-layout"
                       />
                       <span>Float Sidebar</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                 </ul>
@@ -572,11 +572,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-layout-alt-1"
                       />
                       <span>Regular Navbar</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -586,11 +586,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-layout-alt-1"
                       />
                       <span>Fading Navbar</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -600,11 +600,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-layout-alt-1"
                       />
                       <span>Colored Navbar</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -614,11 +614,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-layout-alt-1"
                       />
                       <span>Drop Navbar</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -628,11 +628,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-layout-alt-1"
                       />
                       <span>Colored Drop</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -642,11 +642,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-layout-alt-1"
                       />
                       <span>Clean Navbar</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -656,11 +656,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-layout-alt-1"
                       />
                       <span>Clean Center</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -670,11 +670,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-layout-alt-1"
                       />
                       <span>Clean Fade</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                 </ul>
@@ -691,11 +691,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-pie-chart-alt"
                       />
                       <span>Apex Charts</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -705,11 +705,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-bar-chart"
                       />
                       <span>Billboard JS</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -719,11 +719,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-layout-alt-1"
                       />
                       <span>UI Widgets</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -733,11 +733,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-layout-alt-2"
                       />
                       <span>Creative Widgets</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -747,11 +747,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-layout-alt-1"
                       />
                       <span>List Widgets</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
@@ -761,11 +761,11 @@ const activeTab = ref<TabId>('dashboards')
                         class="lnil lnil-layout-alt-1"
                       />
                       <span>Stat Widgets</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                 </ul>
@@ -778,51 +778,51 @@ const activeTab = ref<TabId>('dashboards')
                   <li>
                     <RouterLink to="/wizard-v1">
                       <span>Wizard V1</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink to="/navbar/layouts/form-layouts-1">
                       <span>Form V1</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink to="/navbar/layouts/form-layouts-2">
                       <span>Form V2</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink to="/navbar/layouts/form-layouts-3">
                       <span>Form V3</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink to="/navbar/layouts/form-layouts-4">
                       <span>Form V4</span>
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:circle"
-                      />
+                        icon="lucide:circle"
+                      ></iconify-icon>
                     </RouterLink>
                   </li>
                 </ul>

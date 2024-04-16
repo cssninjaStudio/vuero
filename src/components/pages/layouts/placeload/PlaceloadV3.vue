@@ -13,7 +13,7 @@ const optionsSingle = [
 <template>
   <div>
     <div class="user-grid-toolbar">
-      <VControl icon="feather:search">
+      <VControl icon="lucide:search">
         <input
           v-model="filters"
           class="input custom-text-filter"

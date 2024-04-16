@@ -45,19 +45,19 @@ const props = withDefaults(
         </div>
         <div class="contact-info">
           <span>
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:map-pin"
-            />
+              icon="lucide:map-pin"
+            ></iconify-icon>
             <span>{{ props.location }}</span>
           </span>
           <span>
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:phone"
-            />
+              icon="lucide:phone"
+            ></iconify-icon>
             <span>{{ props.phone }}</span>
           </span>
         </div>
@@ -134,7 +134,7 @@ const props = withDefaults(
           display: flex;
           align-items: center;
 
-          svg {
+          .iconify {
             height: 14px;
             width: 14px;
             margin-inline-end: 4px;

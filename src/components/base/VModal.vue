@@ -94,11 +94,11 @@ onUnmounted(() => {
                 @keydown.space.prevent="emit('close')"
                 @click="emit('close')"
               >
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:x"
-                />
+                  icon="lucide:x"
+                ></iconify-icon>
               </button>
             </header>
             <div
@@ -268,7 +268,7 @@ onUnmounted(() => {
 
           &:hover,
           &:focus {
-            svg {
+            .iconify {
               color: var(--primary);
             }
           }
@@ -280,7 +280,7 @@ onUnmounted(() => {
             outline-color: var(--accessibility-focus-outline-color);
           }
 
-          svg {
+          .iconify {
             width: 22px;
             height: 22px;
             color: var(--muted-grey);
@@ -363,7 +363,7 @@ onUnmounted(() => {
 
           .v-modal-close {
             &:hover {
-              svg {
+              .iconify {
                 color: var(--primary);
               }
             }

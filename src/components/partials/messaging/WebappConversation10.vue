@@ -14,11 +14,11 @@ const emit = defineEmits(['toggleMobileConversation'])
         class="trigger conversations-mobile-trigger h-only-mobile h-only-tablet-p h-only-tablet-l"
         @click="emit('toggleMobileConversation')"
       >
-        <i
+        <iconify-icon
           aria-hidden="true"
           class="iconify"
-          data-icon="feather:menu"
-        />
+          icon="lucide:menu"
+        ></iconify-icon>
       </button>
       <div class="chat-area-title">
         Greta K.

@@ -1,7 +1,7 @@
 export const topicList = [
   {
     id: 0,
-    icon: 'feather:chrome',
+    icon: 'lucide:chrome',
     color: 'info',
     name: 'Browsers',
     category: 'Technology',
@@ -42,7 +42,7 @@ export const topicList = [
   },
   {
     id: 1,
-    icon: 'feather:wind',
+    icon: 'lucide:wind',
     color: 'green',
     name: 'Natural Ecosystems',
     category: 'Environment',
@@ -59,7 +59,7 @@ export const topicList = [
   },
   {
     id: 2,
-    icon: 'feather:cpu',
+    icon: 'lucide:cpu',
     color: 'orange',
     name: 'Computer Chips',
     category: 'Technology',
@@ -76,7 +76,7 @@ export const topicList = [
   },
   {
     id: 3,
-    icon: 'feather:music',
+    icon: 'lucide:music',
     color: 'purple',
     name: 'Modal Improvisation',
     category: 'Music',
@@ -117,7 +117,7 @@ export const topicList = [
   },
   {
     id: 4,
-    icon: 'feather:monitor',
+    icon: 'lucide:monitor',
     color: 'yellow',
     name: 'Old Movies',
     category: 'Entertainment',
@@ -134,7 +134,7 @@ export const topicList = [
   },
   {
     id: 5,
-    icon: 'feather:github',
+    icon: 'lucide:github',
     color: 'purple',
     name: 'Git Management',
     category: 'Technology',

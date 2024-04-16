@@ -14,35 +14,35 @@ the component background white.
     white
     image="/demo/photos/misc/buoy.jpg"
   >
-    <i class="iconify" data-icon="feather:x" />
+    <iconify-icon class="iconify" icon="lucide:x"></iconify-icon>
   </VSnack>
   <VSnack
     title="Metamovies"
     white
     image="/images/icons/logos/metamovies.svg"
   >
-    <i class="iconify" data-icon="feather:x" />
+    <iconify-icon class="iconify" icon="lucide:x"></iconify-icon>
   </VSnack>
   <VSnack
     title="Corporate"
     white
     image="/demo/avatars/7.jpg"
   >
-    <i class="iconify" data-icon="feather:x" />
+    <iconify-icon class="iconify" icon="lucide:x"></iconify-icon>
   </VSnack>
   <VSnack
     title="English"
     white
     image="/images/icons/flags/united-states-of-america.svg"
   >
-    <i class="iconify" data-icon="feather:x" />
+    <iconify-icon class="iconify" icon="lucide:x"></iconify-icon>
   </VSnack>
   <VSnack
     title="Slicer"
     white
     image="/images/icons/logos/slicer.svg"
   >
-    <i class="iconify" data-icon="feather:x" />
+    <iconify-icon class="iconify" icon="lucide:x"></iconify-icon>
   </VSnack>
 </template>
 ```
@@ -53,19 +53,19 @@ the component background white.
 
 <div class="snacks">
     <VSnack title="Support" white  image="/demo/photos/misc/buoy.jpg">
-        <i class="iconify" data-icon="feather:x"></i>
+        <iconify-icon class="iconify" icon="lucide:x"></iconify-icon>
     </VSnack>
     <VSnack title="Metamovies" white  image="/images/icons/logos/metamovies.svg">
-        <i class="iconify" data-icon="feather:x"></i>
+        <iconify-icon class="iconify" icon="lucide:x"></iconify-icon>
     </VSnack>
     <VSnack title="Corporate" white  image="/demo/avatars/7.jpg">
-        <i class="iconify" data-icon="feather:x"></i>
+        <iconify-icon class="iconify" icon="lucide:x"></iconify-icon>
     </VSnack>
     <VSnack title="English" white  image="/images/icons/flags/united-states-of-america.svg">
-        <i class="iconify" data-icon="feather:x"></i>
+        <iconify-icon class="iconify" icon="lucide:x"></iconify-icon>
     </VSnack>
     <VSnack title="Slicer" white  image="/images/icons/logos/slicer.svg">
-        <i class="iconify" data-icon="feather:x"></i>
+        <iconify-icon class="iconify" icon="lucide:x"></iconify-icon>
     </VSnack>
 </div>
 

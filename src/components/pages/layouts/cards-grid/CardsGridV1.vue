@@ -31,7 +31,7 @@ const optionsSingle = [
 <template>
   <div>
     <div class="card-grid-toolbar">
-      <VControl icon="feather:search">
+      <VControl icon="lucide:search">
         <input
           v-model="filters"
           class="input custom-text-filter"
@@ -246,7 +246,7 @@ const optionsSingle = [
               box-shadow: var(--primary-box-shadow);
             }
 
-            i {
+            .iconify {
               font-size: 12px;
             }
           }

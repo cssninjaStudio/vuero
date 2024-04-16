@@ -13,77 +13,77 @@ just replace the existing icons with some from Feather Icons.
     color="primary"
     rounded
   >
-    <i class="iconify" data-icon="feather:award" />
+    <iconify-icon class="iconify" icon="lucide:award"></iconify-icon>
   </VIconBox>
   <VIconBox
     size="medium"
     color="info"
     rounded
   >
-    <i class="iconify" data-icon="feather:chrome" />
+    <iconify-icon class="iconify" icon="lucide:chrome"></iconify-icon>
   </VIconBox>
   <VIconBox
     size="medium"
     color="success"
     rounded
   >
-    <i class="iconify" data-icon="feather:clock" />
+    <iconify-icon class="iconify" icon="lucide:clock"></iconify-icon>
   </VIconBox>
   <VIconBox
     size="medium"
     color="warning"
     rounded
   >
-    <i class="iconify" data-icon="feather:coffee" />
+    <iconify-icon class="iconify" icon="lucide:coffee"></iconify-icon>
   </VIconBox>
   <VIconBox
     size="medium"
     color="danger"
     rounded
   >
-    <i class="iconify" data-icon="feather:home" />
+    <iconify-icon class="iconify" icon="lucide:home"></iconify-icon>
   </VIconBox>
   <VIconBox
     size="medium"
     color="purple"
     rounded
   >
-    <i class="iconify" data-icon="feather:lock" />
+    <iconify-icon class="iconify" icon="lucide:lock"></iconify-icon>
   </VIconBox>
   <VIconBox
     size="medium"
     color="yellow"
     rounded
   >
-    <i class="iconify" data-icon="feather:moon" />
+    <iconify-icon class="iconify" icon="lucide:moon"></iconify-icon>
   </VIconBox>
   <VIconBox
     size="medium"
     color="orange"
     rounded
   >
-    <i class="iconify" data-icon="feather:phone" />
+    <iconify-icon class="iconify" icon="lucide:phone"></iconify-icon>
   </VIconBox>
   <VIconBox
     size="medium"
     color="green"
     rounded
   >
-    <i class="iconify" data-icon="feather:paperclip" />
+    <iconify-icon class="iconify" icon="lucide:paperclip"></iconify-icon>
   </VIconBox>
   <VIconBox
     size="medium"
     color="red"
     rounded
   >
-    <i class="iconify" data-icon="feather:smile" />
+    <iconify-icon class="iconify" icon="lucide:smile"></iconify-icon>
   </VIconBox>
   <VIconBox
     size="medium"
     color="blue"
     rounded
   >
-    <i class="iconify" data-icon="feather:shield" />
+    <iconify-icon class="iconify" icon="lucide:shield"></iconify-icon>
   </VIconBox>
 </template>
 ```
@@ -94,37 +94,37 @@ just replace the existing icons with some from Feather Icons.
 
 <div class="icon-boxes">
     <VIconBox size="medium" color="primary" rounded>
-        <i class="iconify" data-icon="feather:award"></i>
+        <iconify-icon class="iconify" icon="lucide:award"></iconify-icon>
     </VIconBox>
     <VIconBox size="medium" color="info" rounded>
-        <i class="iconify" data-icon="feather:chrome"></i>
+        <iconify-icon class="iconify" icon="lucide:chrome"></iconify-icon>
     </VIconBox>
     <VIconBox size="medium" color="success" rounded>
-        <i class="iconify" data-icon="feather:clock"></i>
+        <iconify-icon class="iconify" icon="lucide:clock"></iconify-icon>
     </VIconBox>
     <VIconBox size="medium" color="warning" rounded>
-        <i class="iconify" data-icon="feather:coffee"></i>
+        <iconify-icon class="iconify" icon="lucide:coffee"></iconify-icon>
     </VIconBox>
     <VIconBox size="medium" color="danger" rounded>
-        <i class="iconify" data-icon="feather:home"></i>
+        <iconify-icon class="iconify" icon="lucide:home"></iconify-icon>
     </VIconBox>
     <VIconBox size="medium" color="purple" rounded>
-        <i class="iconify" data-icon="feather:lock"></i>
+        <iconify-icon class="iconify" icon="lucide:lock"></iconify-icon>
     </VIconBox>
     <VIconBox size="medium" color="yellow" rounded>
-        <i class="iconify" data-icon="feather:moon"></i>
+        <iconify-icon class="iconify" icon="lucide:moon"></iconify-icon>
     </VIconBox>
     <VIconBox size="medium" color="orange" rounded>
-        <i class="iconify" data-icon="feather:phone"></i>
+        <iconify-icon class="iconify" icon="lucide:phone"></iconify-icon>
     </VIconBox>
     <VIconBox size="medium" color="green" rounded>
-        <i class="iconify" data-icon="feather:paperclip"></i>
+        <iconify-icon class="iconify" icon="lucide:paperclip"></iconify-icon>
     </VIconBox>
     <VIconBox size="medium" color="red" rounded>
-        <i class="iconify" data-icon="feather:smile"></i>
+        <iconify-icon class="iconify" icon="lucide:smile"></iconify-icon>
     </VIconBox>
     <VIconBox size="medium" color="blue" rounded>
-        <i class="iconify" data-icon="feather:shield"></i>
+        <iconify-icon class="iconify" icon="lucide:shield"></iconify-icon>
     </VIconBox>
 </div>
 

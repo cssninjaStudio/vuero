@@ -69,7 +69,7 @@ function contactUser(row: any) {
         {
           label: 'Vuero',
           hideLabel: true,
-          icon: 'feather:home',
+          icon: 'lucide:home',
           to: '/',
         },
         {
@@ -145,12 +145,12 @@ function contactUser(row: any) {
                   @click="editCompanyIndex = index"
                 >
                   {{ value }}
-                  <i
+                  <iconify-icon
                     class="iconify is-inline ml-1"
-                    data-icon="feather:edit-3"
+                    icon="lucide:edit-3"
                     role="img"
                     aria-label="edit"
-                  />
+                  ></iconify-icon>
                 </a>
               </template>
 

@@ -81,11 +81,11 @@ const selected = ref('value_2')
                   <span>{{ plan.slogan }}</span>
                 </div>
                 <div class="checkmark">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:check"
-                  />
+                    icon="lucide:check"
+                  ></iconify-icon>
                 </div>
               </VLabel>
             </VControl>
@@ -236,11 +236,11 @@ const selected = ref('value_2')
             </div>
 
             <button class="add-seat">
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:plus"
-              />
+                icon="lucide:plus"
+              ></iconify-icon>
             </button>
           </div>
         </div>
@@ -557,7 +557,7 @@ const selected = ref('value_2')
               box-shadow: var(--light-box-shadow);
               color: var(--success);
 
-              svg {
+              .iconify {
                 width: 16px;
                 height: 16px;
                 stroke-width: 3px;
@@ -724,9 +724,8 @@ const selected = ref('value_2')
                 color: var(--primary);
               }
 
-              svg {
-                height: 16px;
-                width: 16px;
+              .iconify {
+                font-size: 16px;
               }
             }
           }
@@ -781,9 +780,9 @@ const selected = ref('value_2')
 
               .creditcardIcon {
                 svg {
-                  height: 30px;
+                  height: 28px;
                   position: absolute;
-                  inset-inline-end: -2px;
+                  inset-inline-end: -5px;
                   top: 4px;
                   width: 60px;
                 }

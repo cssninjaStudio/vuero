@@ -50,7 +50,7 @@
     align-items: center;
     transition: background-color 0.2s ease;
 
-    svg {
+    .iconify {
       position: relative;
       height: 20px;
       width: 20px;
@@ -99,7 +99,7 @@
           align-items: center;
           color: var(--white);
 
-          svg {
+          .iconify {
             position: relative;
             top: -1px;
             height: 20px;

@@ -61,19 +61,19 @@ import { courses, files, students } from '/@src/data/dashboards/course'
               <a class="is-dark-primary">Week 6 lecture recording</a>
               <div class="block-stats">
                 <span>
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:clock"
-                  />
+                    icon="lucide:clock"
+                  ></iconify-icon>
                   <small>{{ course.duration }}</small>
                 </span>
                 <span>
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:message-circle"
-                  />
+                    icon="lucide:message-circle"
+                  ></iconify-icon>
                   <small>{{ course.comments }}</small>
                 </span>
               </div>
@@ -82,11 +82,11 @@ import { courses, files, students } from '/@src/data/dashboards/course'
               <a class="is-dark-primary">{{ course.actionLabel }}</a>
               <div class="block-stats">
                 <span>
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:calendar"
-                  />
+                    icon="lucide:calendar"
+                  ></iconify-icon>
                   <small>{{ course.actionText }}</small>
                 </span>
               </div>
@@ -162,11 +162,11 @@ import { courses, files, students } from '/@src/data/dashboards/course'
                   placeholder="Search students..."
                 >
                 <div class="form-icon">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:search"
-                  />
+                    icon="lucide:search"
+                  ></iconify-icon>
                 </div>
               </div>
             </div>
@@ -341,7 +341,7 @@ import { courses, files, students } from '/@src/data/dashboards/course'
             align-items: center;
             margin-inline-end: 0.75rem;
 
-            svg {
+            .iconify {
               height: 15px;
               width: 15px;
               stroke-width: 1px;

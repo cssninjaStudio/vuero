@@ -13,10 +13,10 @@ See code for more details about usage.
     row-gap=".5rem"
     column-gap=".25rem"
   >
-    <VIconWrap icon="feather:star" size="small" />
-    <VIconWrap icon="feather:star" />
-    <VIconWrap icon="feather:star" size="medium" />
-    <VIconWrap icon="feather:star" size="large" />
+    <VIconWrap icon="lucide:star" size="small" />
+    <VIconWrap icon="lucide:star" />
+    <VIconWrap icon="lucide:star" size="medium" />
+    <VIconWrap icon="lucide:star" size="large" />
   </VFlex>
   <VFlex
     flex-wrap="wrap"
@@ -25,18 +25,18 @@ See code for more details about usage.
     column-gap=".25rem"
   >
     <VIconWrap
-      icon="feather:star"
+      icon="lucide:star"
       has-large-icon
       size="small"
     />
-    <VIconWrap icon="feather:star" has-large-icon />
+    <VIconWrap icon="lucide:star" has-large-icon />
     <VIconWrap
-      icon="feather:star"
+      icon="lucide:star"
       has-large-icon
       size="medium"
     />
     <VIconWrap
-      icon="feather:star"
+      icon="lucide:star"
       has-large-icon
       size="large"
     />
@@ -55,10 +55,10 @@ See code for more details about usage.
   row-gap=".5rem"
   column-gap=".25rem"
 >
-    <VIconWrap icon="feather:star" size="small" />
-    <VIconWrap icon="feather:star" />
-    <VIconWrap icon="feather:star" size="medium" />
-    <VIconWrap icon="feather:star" size="large" />
+    <VIconWrap icon="lucide:star" size="small" />
+    <VIconWrap icon="lucide:star" />
+    <VIconWrap icon="lucide:star" size="medium" />
+    <VIconWrap icon="lucide:star" size="large" />
   </VFlex>
   <VFlex
   flex-wrap="wrap"
@@ -66,10 +66,10 @@ See code for more details about usage.
   row-gap=".5rem"
   column-gap=".25rem"
 >
-    <VIconWrap icon="feather:star" has-large-icon size="small" />
-    <VIconWrap icon="feather:star" has-large-icon />
-    <VIconWrap icon="feather:star" has-large-icon size="medium" />
-    <VIconWrap icon="feather:star" has-large-icon size="large" />
+    <VIconWrap icon="lucide:star" has-large-icon size="small" />
+    <VIconWrap icon="lucide:star" has-large-icon />
+    <VIconWrap icon="lucide:star" has-large-icon size="medium" />
+    <VIconWrap icon="lucide:star" has-large-icon size="large" />
   </VFlex>
 </div>
 

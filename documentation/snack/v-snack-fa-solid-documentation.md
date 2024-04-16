@@ -15,7 +15,7 @@ a solid icon. Check the markup for more details.
     solid
     icon="fas fa-smile"
   >
-    <i class="iconify" data-icon="feather:plus" />
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
   <VSnack
     title="Support"
@@ -24,7 +24,7 @@ a solid icon. Check the markup for more details.
     solid
     icon="fas fa-life-ring"
   >
-    <i class="iconify" data-icon="feather:plus" />
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
   <VSnack
     title="Business"
@@ -32,7 +32,7 @@ a solid icon. Check the markup for more details.
     solid
     icon="fas fa-building"
   >
-    <i class="iconify" data-icon="feather:plus" />
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
   <VSnack
     title="Warning"
@@ -41,7 +41,7 @@ a solid icon. Check the markup for more details.
     solid
     icon="fas fa-radiation"
   >
-    <i class="iconify" data-icon="feather:plus" />
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
   <VSnack
     title="Health"
@@ -50,7 +50,7 @@ a solid icon. Check the markup for more details.
     solid
     icon="fas fa-thermometer-half"
   >
-    <i class="iconify" data-icon="feather:plus" />
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
 </template>
 ```
@@ -61,19 +61,19 @@ a solid icon. Check the markup for more details.
 
 <div class="snacks">
   <VSnack title="Shopping" color="primary" solid icon="fas fa-smile">
-    <i class="iconify" data-icon="feather:plus"></i>
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
   <VSnack title="Support" color="success" white solid icon="fas fa-life-ring">
-    <i class="iconify" data-icon="feather:plus"></i>
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
   <VSnack title="Business" color="info" solid icon="fas fa-building">
-    <i class="iconify" data-icon="feather:plus"></i>
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
   <VSnack title="Warning" color="warning" white solid icon="fas fa-radiation">
-    <i class="iconify" data-icon="feather:plus"></i>
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
   <VSnack title="Health" color="danger" white solid icon="fas fa-thermometer-half">
-    <i class="iconify" data-icon="feather:plus"></i>
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
 </div>
 

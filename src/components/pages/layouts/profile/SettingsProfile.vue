@@ -250,7 +250,7 @@
           }
 
           .icon-wrap {
-            i {
+            .iconify {
               color: var(--primary);
             }
           }
@@ -262,7 +262,7 @@
 
         &.is-active {
           .icon-wrap {
-            i {
+            .iconify {
               color: var(--primary);
             }
           }
@@ -287,7 +287,7 @@
           pointer-events: none;
           transition: all 0.3s; // transition-all test
 
-          i {
+          .iconify {
             font-size: 0.8rem;
           }
         }
@@ -302,7 +302,7 @@
           height: 52px;
           width: 100%;
 
-          i {
+          .iconify {
             font-size: 2.7rem;
             color: var(--light-text-light-12);
             margin-bottom: 4px;
@@ -353,7 +353,7 @@
               color: var(--primary);
             }
 
-            .icon-wrap i {
+            .icon-wrap .iconify {
               color: var(--primary);
             }
           }
@@ -363,7 +363,7 @@
               color: var(--primary);
             }
 
-            .icon-wrap i {
+            .icon-wrap .iconify {
               color: var(--primary);
             }
           }
@@ -371,7 +371,7 @@
           .edit-icon {
             background: var(--dark-sidebar-light-2);
 
-            i {
+            .iconify {
               color: var(--primary);
             }
           }
@@ -379,7 +379,7 @@
           .icon-wrap {
             background: none !important;
 
-            i {
+            .iconify {
               color: var(--light-text-dark-20);
 
               &.is-solid {

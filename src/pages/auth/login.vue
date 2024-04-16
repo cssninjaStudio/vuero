@@ -162,18 +162,18 @@ useHead({
 
                     <span class="toggler">
                       <span class="active">
-                        <i
+                        <iconify-icon
                           aria-hidden="true"
                           class="iconify"
-                          data-icon="feather:check"
-                        />
+                          icon="lucide:check"
+                        ></iconify-icon>
                       </span>
                       <span class="inactive">
-                        <i
+                        <iconify-icon
                           aria-hidden="true"
                           class="iconify"
-                          data-icon="feather:circle"
-                        />
+                          icon="lucide:circle"
+                        ></iconify-icon>
                       </span>
                     </span>
                   </VLabel>
@@ -334,7 +334,7 @@ useHead({
         margin: 0 auto;
       }
 
-      svg {
+      .iconify {
         height: 50px;
         width: 50px;
       }
@@ -406,7 +406,7 @@ useHead({
             border-color: var(--placeholder);
 
             ~ .auth-label,
-            ~ .autv-icon i {
+            ~ .autv-icon .iconify {
               color: var(--muted-grey);
             }
           }
@@ -464,7 +464,7 @@ useHead({
               align-items: center;
               border-radius: var(--radius-rounded);
 
-              svg {
+              .iconify {
                 height: 10px;
                 width: 10px;
                 stroke-width: 3px;
@@ -636,11 +636,9 @@ useHead({
         rotate(calc(var(--transform-direction) * 0));
       transition: all 0.3s ease;
 
-      svg {
+      .iconify {
         color: var(--white);
-        height: 14px;
-        width: 14px;
-        stroke-width: 3px;
+        font-size: 14px;
       }
     }
 
@@ -680,7 +678,7 @@ useHead({
 @media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
   .modern-login {
     .top-logo {
-      svg {
+      .iconify {
         height: 60px;
         width: 60px;
       }
@@ -736,7 +734,7 @@ Dark mode
               border-color: var(--primary);
 
               ~ .autv-icon {
-                i {
+                .iconify {
                   color: var(--primary);
                 }
               }

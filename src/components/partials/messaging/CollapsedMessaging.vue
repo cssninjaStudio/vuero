@@ -65,11 +65,11 @@ const sidebar = useSidebar()
           @keydown.space.prevent="emit('addConversation')"
           @click="() => emit('addConversation')"
         >
-          <i
+          <iconify-icon
             aria-hidden="true"
             class="iconify"
-            data-icon="feather:plus"
-          />
+            icon="lucide:plus"
+          ></iconify-icon>
         </a>
       </div>
       <ul class="collapsed-conversations">

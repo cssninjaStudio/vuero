@@ -149,7 +149,7 @@ label[for] {
     &:focus {
       border-color: var(--dark-sidebar-light-8);
 
-      + .form-icon svg {
+      + .form-icon .iconify {
         color: var(--primary) !important;
       }
     }
@@ -297,9 +297,8 @@ label[for] {
   }
 
   + .icon {
-    svg {
-      height: 18px;
-      width: 18px;
+    .iconify {
+      font-size: 18px;
     }
 
     .lnil,
@@ -461,9 +460,8 @@ select {
       justify-content: center;
       align-items: center;
 
-      svg {
-        height: 18px;
-        width: 18px;
+      .iconify {
+        font-size: 18px;
         color: var(--placeholder);
         transition: all 0.3s; // transition-all test
       }
@@ -491,7 +489,7 @@ select {
 
       &:focus {
         + .form-icon {
-          svg {
+          .iconify {
             color: var(--primary);
           }
 
@@ -523,8 +521,8 @@ select {
       .form-icon {
         opacity: 1 !important;
 
-        svg,
-        .form-icon svg {
+        .iconify,
+        .form-icon .iconify {
           color: var(--success) !important;
         }
       }
@@ -541,8 +539,8 @@ select {
       .form-icon {
         opacity: 1 !important;
 
-        svg,
-        .form-icon svg {
+        .iconify,
+        .form-icon .iconify {
           color: var(--danger) !important;
         }
       }
@@ -574,7 +572,7 @@ select {
       opacity: 0;
       transition: all 0.3s; // transition-all test
 
-      svg {
+      .iconify {
         height: 18px;
         width: 18px;
         color: var(--placeholder);
@@ -729,7 +727,7 @@ select {
       .input {
         &:focus {
           ~ .form-icon {
-            svg {
+            .iconify {
               color: var(--primary);
             }
 
@@ -746,7 +744,7 @@ select {
       }
 
       .form-icon {
-        svg {
+        .iconify {
           color: var(--light-text-dark-5);
         }
 

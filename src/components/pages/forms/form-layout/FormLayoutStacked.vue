@@ -64,7 +64,7 @@ const onSubmit = () => {
           <div class="columns is-multiline">
             <div class="column is-12">
               <VField>
-                <VControl icon="feather:slack">
+                <VControl icon="lucide:slack">
                   <VInput
                     type="text"
                     placeholder="What is this meeting about?"
@@ -86,7 +86,7 @@ const onSubmit = () => {
                         <VField>
                           <VLabel>Meeting start date</VLabel>
 
-                          <VControl icon="feather:calendar">
+                          <VControl icon="lucide:calendar">
                             <input
                               type="text"
                               placeholder="Start Date"
@@ -103,7 +103,7 @@ const onSubmit = () => {
                             Meeting end date
                           </VLabel>
 
-                          <VControl icon="feather:calendar">
+                          <VControl icon="lucide:calendar">
                             <VInput
                               placeholder="End Date"
                               :value="inputValue.end"
@@ -284,11 +284,11 @@ const onSubmit = () => {
                     type="button"
                     class="add-participant"
                   >
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify"
-                      data-icon="feather:plus"
-                    />
+                      icon="lucide:plus"
+                    ></iconify-icon>
                   </button>
                 </div>
               </VControl>
@@ -299,7 +299,7 @@ const onSubmit = () => {
               label="Where"
             >
               <VControl
-                icon="feather:map-pin"
+                icon="lucide:map-pin"
                 fullwidth
               >
                 <VInput
@@ -313,7 +313,7 @@ const onSubmit = () => {
               label="Meeting URL"
             >
               <VControl
-                icon="feather:map-pin"
+                icon="lucide:map-pin"
                 fullwidth
               >
                 <VInput
@@ -618,7 +618,7 @@ const onSubmit = () => {
                 outline-color: var(--accessibility-focus-outline-color);
               }
 
-              svg {
+              .iconify {
                 height: 16px;
                 width: 16px;
               }

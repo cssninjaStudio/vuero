@@ -107,6 +107,12 @@ $sides: top, bottom, left, right;
   max-height: 280px;
 }
 
+iconify-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+}
+
 .iconify {
   &.is-inline {
     vertical-align: -1px;

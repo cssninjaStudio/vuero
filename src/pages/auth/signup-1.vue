@@ -81,11 +81,11 @@ useHead({
             :class="[step >= 1 && 'is-active', step < 1 && 'is-inactive']"
           >
             <div class="inner">
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:user"
-              />
+                icon="lucide:user"
+              ></iconify-icon>
             </div>
             <span class="step-label">Profile Pic</span>
           </div>
@@ -94,11 +94,11 @@ useHead({
             :class="[step >= 2 && 'is-active', step < 2 && 'is-inactive']"
           >
             <div class="inner">
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:shield"
-              />
+                icon="lucide:shield"
+              ></iconify-icon>
             </div>
             <span class="step-label">Account</span>
           </div>
@@ -107,11 +107,11 @@ useHead({
             :class="[step >= 3 && 'is-active', step < 3 && 'is-inactive']"
           >
             <div class="inner">
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:check"
-              />
+                icon="lucide:check"
+              ></iconify-icon>
             </div>
             <span class="step-label">Done</span>
           </div>
@@ -308,11 +308,11 @@ useHead({
                         @keydown.space.prevent="uploadModalOpen = true"
                         @click="uploadModalOpen = true"
                       >
-                        <i
+                        <iconify-icon
                           aria-hidden="true"
                           class="iconify"
-                          data-icon="feather:plus"
-                        />
+                          icon="lucide:plus"
+                        ></iconify-icon>
                       </div>
                     </div>
                   </div>
@@ -663,7 +663,7 @@ useHead({
           background: var(--white);
           border-color: var(--primary);
 
-          svg {
+          .iconify {
             color: var(--primary);
           }
         }
@@ -674,7 +674,7 @@ useHead({
           background: var(--primary);
           border-color: var(--primary);
 
-          svg {
+          .iconify {
             color: var(--smoke-white);
           }
         }
@@ -710,7 +710,7 @@ useHead({
         color: var(--dark-text);
       }
 
-      svg {
+      .iconify {
         height: 16px;
         width: 16px;
         color: var(--muted-grey);
@@ -811,7 +811,7 @@ useHead({
             border-color: var(--placeholder);
 
             ~ .auth-label,
-            ~ .autv-icon i {
+            ~ .autv-icon .iconify {
               color: var(--muted-grey);
             }
           }
@@ -845,7 +845,7 @@ useHead({
           justify-content: center;
           align-items: center;
 
-          i {
+          .iconify {
             font-size: 24px;
             color: var(--placeholder);
             transition: all 0.3s; // transition-all test
@@ -871,7 +871,7 @@ useHead({
               align-items: center;
               border-radius: var(--radius-rounded);
 
-              svg {
+              .iconify {
                 height: 10px;
                 width: 10px;
                 stroke-width: 3px;
@@ -1022,7 +1022,7 @@ useHead({
           &:checked + .signup-box {
             border-color: var(--primary);
 
-            i {
+            .iconify {
               color: var(--primary);
             }
 
@@ -1043,7 +1043,7 @@ useHead({
           border-radius: var(--radius-large);
           transition: all 0.3s; // transition-all test
 
-          i {
+          .iconify {
             font-size: 2rem;
             color: var(--muted-grey);
           }
@@ -1140,7 +1140,7 @@ useHead({
           box-shadow: var(--light-box-shadow);
         }
 
-        svg {
+        .iconify {
           height: 16px;
           width: 16px;
           color: var(--dark-text);
@@ -1249,7 +1249,7 @@ useHead({
     z-index: 25;
     opacity: 0;
 
-    svg {
+    .iconify {
       height: 16px;
       width: 16px;
       color: var(--primary);
@@ -1311,7 +1311,7 @@ useHead({
           .inner {
             background: var(--primary);
 
-            svg {
+            .iconify {
               color: var(--white);
               stroke: var(--white);
             }
@@ -1349,7 +1349,7 @@ useHead({
             border-color: var(--dark-sidebar-light-12);
 
             ~ .auth-label,
-            ~ .auth-icon i {
+            ~ .auth-icon .iconify {
               color: var(--primary);
             }
           }
@@ -1362,7 +1362,7 @@ useHead({
             &:checked + .signup-box {
               border-color: var(--primary);
 
-              i {
+              .iconify {
                 color: var(--primary);
               }
 
@@ -1412,7 +1412,7 @@ useHead({
           background-color: var(--dark-sidebar-light-2);
           border-color: var(--dark-sidebar-light-10);
 
-          svg {
+          .iconify {
             color: var(--light-text);
             stroke: var(--light-text);
           }

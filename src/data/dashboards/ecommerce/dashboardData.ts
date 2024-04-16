@@ -5,8 +5,8 @@ export const optionsSingle = ['Last week', 'Last 30 days', 'Last 60 days', 'Last
 export const flexRowsOrders = [
   {
     id: 0,
-    picture: '/images/avatars/svg/vuero-1.svg',
-    username: 'Erik K.',
+    picture: '/demo/avatars/18.jpg',
+    username: 'Mary L.',
     orderId: '#158456',
     date: 'Oct 31, 2020',
     amount: 863.42,

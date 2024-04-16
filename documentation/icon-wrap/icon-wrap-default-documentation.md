@@ -9,15 +9,15 @@ See code for more details about usage.
 ```vue
 <template>
   <VFlex column-gap="3px">
-    <VIconWrap icon="feather:star" />
+    <VIconWrap icon="lucide:star" />
     <VIconWrap
-      icon="feather:help-circle"
+      icon="lucide:help-circle"
       color="info"
       has-background
       has-large-icon
     />
-    <VIconWrap icon="feather:x" color="danger" />
-    <VIconWrap icon="feather:code" />
+    <VIconWrap icon="lucide:x" color="danger" />
+    <VIconWrap icon="lucide:code" />
     <VIconWrap picture="/images/avatars/svg/vuero-1.svg" />
     <VIconWrap picture="/demo/avatars/13.jpg" />
   </VFlex>
@@ -30,11 +30,11 @@ See code for more details about usage.
 
 <div>
   <VFlex column-gap="3px">
-    <VIconWrap icon="feather:star" color="warning" />
-    <VIconWrap icon="feather:code" />
-    <VIconWrap icon="feather:x" color="danger" has-large-icon />
+    <VIconWrap icon="lucide:star" color="warning" />
+    <VIconWrap icon="lucide:code" />
+    <VIconWrap icon="lucide:x" color="danger" has-large-icon />
     <VIconWrap
-      icon="feather:help-circle"
+      icon="lucide:help-circle"
       color="info"
       has-background
       has-large-icon

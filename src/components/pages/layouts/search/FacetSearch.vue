@@ -98,7 +98,7 @@ const options = ref(['Newest'])
   <div class="search-results-wrapper">
     <div class="search-results-header">
       <VField raw>
-        <VControl icon="feather:search">
+        <VControl icon="lucide:search">
           <VInput placeholder="Search again..." />
         </VControl>
       </VField>
@@ -134,7 +134,6 @@ const options = ref(['Newest'])
                 @click="activeTab = 'records'"
               ><span>Records</span></a>
             </li>
-            <li class="tab-naver" />
           </ul>
         </div>
       </div>
@@ -409,7 +408,7 @@ const options = ref(['Newest'])
             <!--Search Results Group-->
             <div class="search-results-group">
               <div class="group-header">
-                <VIconWrap icon="feather:user" />
+                <VIconWrap icon="lucide:user" />
                 <h4>People</h4>
               </div>
 
@@ -444,7 +443,7 @@ const options = ref(['Newest'])
             <!--Search Results Group-->
             <div class="search-results-group">
               <div class="group-header">
-                <VIconWrap icon="feather:file-text" />
+                <VIconWrap icon="lucide:file-text" />
 
                 <h4>Records</h4>
               </div>
@@ -645,7 +644,7 @@ const options = ref(['Newest'])
           border: 1px solid var(--primary);
           color: var(--primary);
 
-          svg {
+          .iconify {
             height: 14px;
             width: 14px;
           }

@@ -179,11 +179,11 @@ useHead({
                 aria-label="Search"
               >
               <div class="form-icon">
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:search"
-                />
+                  icon="lucide:search"
+                ></iconify-icon>
               </div>
               <div class="search-results has-slimscroll" />
             </div>
@@ -204,11 +204,11 @@ useHead({
               @keydown.space.prevent="panels.setActive('activity')"
               @click="panels.setActive('activity')"
             >
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:grid"
-              />
+                icon="lucide:grid"
+              ></iconify-icon>
             </a>
           </Toolbar>
 
@@ -232,11 +232,11 @@ useHead({
                   @error.once="onceImageErrored(150)"
                 >
               </div>
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify"
-                data-icon="feather:chevron-down"
-              />
+                icon="lucide:chevron-down"
+              ></iconify-icon>
             </div>
             <div
               class="dropdown-menu"
@@ -252,35 +252,35 @@ useHead({
                   href="#"
                   class="dropdown-item"
                 >
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:user"
-                  />
+                    icon="lucide:user"
+                  ></iconify-icon>
                   <span>Profile</span>
                 </a>
                 <a class="dropdown-item">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:edit-2"
-                  />
+                    icon="lucide:edit-2"
+                  ></iconify-icon>
                   <span>Edit Profile</span>
                 </a>
                 <a class="dropdown-item">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:box"
-                  />
+                    icon="lucide:box"
+                  ></iconify-icon>
                   <span>Projects</span>
                 </a>
                 <a class="dropdown-item">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:settings"
-                  />
+                    icon="lucide:settings"
+                  ></iconify-icon>
                   <span>Settings</span>
                 </a>
                 <hr class="dropdown-divider">
@@ -288,11 +288,11 @@ useHead({
                   href="#"
                   class="dropdown-item"
                 >
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:log-out"
-                  />
+                    icon="lucide:log-out"
+                  ></iconify-icon>
                   <span>Sign Out</span>
                 </a>
               </div>
@@ -418,11 +418,11 @@ useHead({
                     aria-haspopup="true"
                     @click="dropdown2.toggle"
                   >
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify"
-                      data-icon="feather:plus"
-                    />
+                      icon="lucide:plus"
+                    ></iconify-icon>
                   </div>
                 </div>
                 <div
@@ -431,11 +431,11 @@ useHead({
                 >
                   <div class="dropdown-content">
                     <a class="dropdown-item">
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:video"
-                      />
+                        icon="lucide:video"
+                      ></iconify-icon>
                       <div class="meta">
                         <span>Video</span>
                         <span>Embed a video</span>
@@ -445,11 +445,11 @@ useHead({
                       href="#"
                       class="dropdown-item kill-drop v-modal-trigger"
                     >
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:image"
-                      />
+                        icon="lucide:image"
+                      ></iconify-icon>
                       <div class="meta">
                         <span>Images</span>
                         <span>Upload pictures</span>
@@ -459,11 +459,11 @@ useHead({
                       href="#"
                       class="dropdown-item kill-drop v-modal-trigger"
                     >
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:link"
-                      />
+                        icon="lucide:link"
+                      ></iconify-icon>
                       <div class="meta">
                         <span>Link</span>
                         <span>Post a link</span>
@@ -474,11 +474,11 @@ useHead({
                       href="#"
                       class="dropdown-item kill-drop v-modal-trigger"
                     >
-                      <i
+                      <iconify-icon
                         aria-hidden="true"
                         class="iconify"
-                        data-icon="feather:file"
-                      />
+                        icon="lucide:file"
+                      ></iconify-icon>
                       <div class="meta">
                         <span>File</span>
                         <span>Upload a file</span>
@@ -490,11 +490,11 @@ useHead({
             </div>
             <div class="add-emoji">
               <div class="button">
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:smile"
-                />
+                  icon="lucide:smile"
+                ></iconify-icon>
               </div>
             </div>
             <input
@@ -719,7 +719,7 @@ $overlay-bg-dark: linear-gradient(
             height: 80px;
             width: 80px;
 
-            svg {
+            .iconify {
               height: 20px;
               width: 20px;
             }
@@ -785,7 +785,7 @@ $overlay-bg-dark: linear-gradient(
             }
           }
 
-          svg {
+          .iconify {
             margin-inline-start: 3px;
             width: 18px;
             height: 18px;
@@ -811,7 +811,7 @@ $overlay-bg-dark: linear-gradient(
             padding: 8px 12px;
             color: var(--light-text);
 
-            svg {
+            .iconify {
               margin-inline-end: 8px;
               height: 16px;
               width: 16px;
@@ -1044,7 +1044,7 @@ $overlay-bg-dark: linear-gradient(
           border: none;
           background: none;
 
-          svg {
+          .iconify {
             height: 20px;
             width: 20px;
           }
@@ -1233,7 +1233,7 @@ $overlay-bg-dark: linear-gradient(
               .button {
                 background: var(--fade-grey);
 
-                svg {
+                .iconify {
                   color: var(--primary);
                 }
               }
@@ -1259,7 +1259,7 @@ $overlay-bg-dark: linear-gradient(
             align-items: center;
             transition: all 0.3s; // transition-all test
 
-            svg {
+            .iconify {
               color: var(--placeholder);
               stroke-width: 2px;
               height: 18px;
@@ -1278,7 +1278,7 @@ $overlay-bg-dark: linear-gradient(
               display: flex;
               align-items: center;
 
-              svg {
+              .iconify {
                 height: 18px;
                 width: 18px;
                 color: var(--muted-grey);
@@ -1318,7 +1318,7 @@ $overlay-bg-dark: linear-gradient(
             .button {
               background: var(--fade-grey);
 
-              svg {
+              .iconify {
                 color: var(--primary);
               }
             }
@@ -1335,7 +1335,7 @@ $overlay-bg-dark: linear-gradient(
             align-items: center;
             transition: all 0.3s; // transition-all test
 
-            svg {
+            .iconify {
               color: var(--placeholder);
               stroke-width: 2px;
               height: 18px;
@@ -1369,7 +1369,7 @@ $overlay-bg-dark: linear-gradient(
           background: var(--dark-sidebar-light-10);
 
           .trigger {
-            svg {
+            .iconify {
               color: var(--dark-dark-text);
             }
           }
@@ -1420,7 +1420,7 @@ $overlay-bg-dark: linear-gradient(
               > div > .button {
                 background: var(--dark-sidebar-light-6) !important;
 
-                svg {
+                .iconify {
                   color: var(--primary);
                 }
               }
@@ -1444,7 +1444,7 @@ $overlay-bg-dark: linear-gradient(
               .button {
                 background: var(--dark-sidebar-light-6) !important;
 
-                svg {
+                .iconify {
                   color: var(--primary);
                 }
               }
@@ -1538,7 +1538,7 @@ $overlay-bg-dark: linear-gradient(
             margin-bottom: 20px;
             color: var(--light-text);
 
-            svg {
+            .iconify {
               width: 16px;
               margin-inline-end: 8px;
             }

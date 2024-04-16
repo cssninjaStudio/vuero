@@ -66,11 +66,11 @@ const { trendWidgetChartOptions } = useTrendWidgetChart()
                 placeholder="Search..."
               >
               <button class="searcv-button">
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:search"
-                />
+                  icon="lucide:search"
+                ></iconify-icon>
               </button>
             </div>
 
@@ -123,11 +123,11 @@ const { trendWidgetChartOptions } = useTrendWidgetChart()
           <div class="widget-toolbar">
             <div class="left">
               <a class="action-icon">
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify rtl-reflect"
-                  data-icon="feather:chevron-left"
-                />
+                  icon="lucide:chevron-left"
+                ></iconify-icon>
               </a>
             </div>
             <div class="center">
@@ -135,11 +135,11 @@ const { trendWidgetChartOptions } = useTrendWidgetChart()
             </div>
             <div class="right">
               <a class="action-icon">
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify rtl-reflect"
-                  data-icon="feather:chevron-right"
-                />
+                  icon="lucide:chevron-right"
+                ></iconify-icon>
               </a>
             </div>
           </div>
@@ -324,11 +324,11 @@ const { trendWidgetChartOptions } = useTrendWidgetChart()
             <div class="has-text-centered">
               <div class="stat-number">
                 <span>$1638,42
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:trending-up"
-                  />
+                    icon="lucide:trending-up"
+                  ></iconify-icon>
                 </span>
                 <span>Earned from Sales</span>
               </div>
@@ -350,7 +350,7 @@ const { trendWidgetChartOptions } = useTrendWidgetChart()
         <template #header>
           <UIWidgetToolbarIcon
             title="Messages"
-            icon="feather:message-square"
+            icon="lucide:message-square"
           />
         </template>
         <template #body>

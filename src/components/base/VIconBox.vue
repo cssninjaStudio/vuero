@@ -91,10 +91,8 @@ const props = withDefaults(defineProps<VIconProps>(), {
       font-size: 1.2rem;
     }
 
-    svg {
-      height: 16px;
-      width: 16px;
-      stroke-width: 1.4px;
+    .iconify {
+      font-size: 16px;
     }
   }
 
@@ -121,10 +119,8 @@ const props = withDefaults(defineProps<VIconProps>(), {
       font-size: 1.7rem;
     }
 
-    svg {
-      height: 25px;
-      width: 25px;
-      stroke-width: 1.4px;
+    .iconify {
+      font-size: 25px;
     }
   }
 
@@ -151,10 +147,8 @@ const props = withDefaults(defineProps<VIconProps>(), {
       font-size: 2.2rem;
     }
 
-    svg {
-      height: 34px;
-      width: 34px;
-      stroke-width: 2px;
+    .iconify {
+      font-size: 34px;
     }
   }
 
@@ -181,7 +175,7 @@ const props = withDefaults(defineProps<VIconProps>(), {
       font-size: 2.6rem;
     }
 
-    svg {
+    .iconify, .fas, .lnil, .lnir, .fab {
       height: 40px;
       width: 40px;
       stroke-width: 3px;
@@ -211,7 +205,7 @@ const props = withDefaults(defineProps<VIconProps>(), {
       font-size: 3.4rem;
     }
 
-    svg {
+    .iconify, .fas, .lnil, .lnir, .fab {
       height: 50px;
       width: 50px;
       stroke-width: 3px;
@@ -229,11 +223,11 @@ const props = withDefaults(defineProps<VIconProps>(), {
       border-color: var(--primary);
     }
 
-    i {
+    .iconify, .fas, .lnil, .lnir, .fab {
       color: var(--primary);
     }
 
-    svg {
+    .iconify, .fas, .lnil, .lnir, .fab {
       color: var(--primary);
     }
   }
@@ -245,11 +239,11 @@ const props = withDefaults(defineProps<VIconProps>(), {
       border-color: var(--secondary);
     }
 
-    i {
+    .iconify, .fas, .lnil, .lnir, .fab {
       color: var(--secondary);
     }
 
-    svg {
+    .iconify, .fas, .lnil, .lnir, .fab {
       color: var(--secondary);
     }
   }
@@ -261,11 +255,11 @@ const props = withDefaults(defineProps<VIconProps>(), {
       border-color: var(--primary);
     }
 
-    i {
+    .iconify, .fas, .lnil, .lnir, .fab {
       color: var(--primary);
     }
 
-    svg {
+    .iconify, .fas, .lnil, .lnir, .fab {
       color: var(--primary);
     }
   }
@@ -277,11 +271,11 @@ const props = withDefaults(defineProps<VIconProps>(), {
       border-color: var(--success);
     }
 
-    i {
+    .iconify, .fas, .lnil, .lnir, .fab {
       color: var(--success);
     }
 
-    svg {
+    .iconify, .fas, .lnil, .lnir, .fab {
       color: var(--success);
     }
   }
@@ -293,11 +287,11 @@ const props = withDefaults(defineProps<VIconProps>(), {
       border-color: var(--info);
     }
 
-    i {
+    .iconify, .fas, .lnil, .lnir, .fab {
       color: var(--info);
     }
 
-    svg {
+    .iconify, .fas, .lnil, .lnir, .fab {
       color: var(--info);
     }
   }
@@ -309,11 +303,11 @@ const props = withDefaults(defineProps<VIconProps>(), {
       border-color: var(--warning);
     }
 
-    i {
+    .iconify, .fas, .lnil, .lnir, .fab {
       color: var(--warning);
     }
 
-    svg {
+    .iconify, .fas, .lnil, .lnir, .fab {
       color: var(--warning);
     }
   }
@@ -325,11 +319,11 @@ const props = withDefaults(defineProps<VIconProps>(), {
       border-color: var(--danger);
     }
 
-    i {
+    .iconify, .fas, .lnil, .lnir, .fab {
       color: var(--danger);
     }
 
-    svg {
+    .iconify, .fas, .lnil, .lnir, .fab {
       color: var(--danger);
     }
   }
@@ -341,11 +335,11 @@ const props = withDefaults(defineProps<VIconProps>(), {
       border-color: var(--purple);
     }
 
-    i {
+    .iconify, .fas, .lnil, .lnir, .fab {
       color: var(--purple);
     }
 
-    svg {
+    .iconify, .fas, .lnil, .lnir, .fab {
       color: var(--purple);
     }
   }
@@ -357,11 +351,11 @@ const props = withDefaults(defineProps<VIconProps>(), {
       border-color: var(--blue);
     }
 
-    i {
+    .iconify, .fas, .lnil, .lnir, .fab {
       color: var(--blue);
     }
 
-    svg {
+    .iconify, .fas, .lnil, .lnir, .fab {
       color: var(--blue);
     }
   }
@@ -373,11 +367,11 @@ const props = withDefaults(defineProps<VIconProps>(), {
       border-color: var(--yellow);
     }
 
-    i {
+    .iconify, .fas, .lnil, .lnir, .fab {
       color: var(--yellow);
     }
 
-    svg {
+    .iconify, .fas, .lnil, .lnir, .fab {
       color: var(--yellow);
     }
   }
@@ -389,11 +383,11 @@ const props = withDefaults(defineProps<VIconProps>(), {
       border-color: var(--orange);
     }
 
-    i {
+    .iconify, .fas, .lnil, .lnir, .fab {
       color: var(--orange);
     }
 
-    svg {
+    .iconify, .fas, .lnil, .lnir, .fab {
       color: var(--orange);
     }
   }
@@ -405,11 +399,11 @@ const props = withDefaults(defineProps<VIconProps>(), {
       border-color: var(--green);
     }
 
-    i {
+    .iconify, .fas, .lnil, .lnir, .fab {
       color: var(--green);
     }
 
-    svg {
+    .iconify, .fas, .lnil, .lnir, .fab {
       color: var(--green);
     }
   }
@@ -421,11 +415,11 @@ const props = withDefaults(defineProps<VIconProps>(), {
       border-color: var(--red);
     }
 
-    i {
+    .iconify, .fas, .lnil, .lnir, .fab {
       color: var(--red);
     }
 
-    svg {
+    .iconify, .fas, .lnil, .lnir, .fab {
       color: var(--red);
     }
   }
@@ -452,10 +446,8 @@ const props = withDefaults(defineProps<VIconProps>(), {
     transition: color 0.3s;
   }
 
-  svg {
-    height: 20px;
-    width: 20px;
-    stroke-width: 1.4px;
+  .iconify {
+    font-size: 20px;
   }
 }
 
@@ -477,7 +469,7 @@ const props = withDefaults(defineProps<VIconProps>(), {
         color: var(--white);
       }
 
-      svg {
+      .iconify, .fas, .lnil, .lnir, .fab {
         color: var(--smoke-white);
       }
     }
@@ -496,7 +488,7 @@ const props = withDefaults(defineProps<VIconProps>(), {
         color: var(--white);
       }
 
-      svg {
+      .iconify, .fas, .lnil, .lnir, .fab {
         color: var(--smoke-white);
       }
     }
@@ -515,7 +507,7 @@ const props = withDefaults(defineProps<VIconProps>(), {
         color: var(--white);
       }
 
-      svg {
+      .iconify, .fas, .lnil, .lnir, .fab {
         color: var(--smoke-white);
       }
     }
@@ -534,7 +526,7 @@ const props = withDefaults(defineProps<VIconProps>(), {
         color: var(--white);
       }
 
-      svg {
+      .iconify, .fas, .lnil, .lnir, .fab {
         color: var(--smoke-white);
       }
     }
@@ -553,7 +545,7 @@ const props = withDefaults(defineProps<VIconProps>(), {
         color: var(--white);
       }
 
-      svg {
+      .iconify, .fas, .lnil, .lnir, .fab {
         color: var(--smoke-white);
       }
     }
@@ -572,7 +564,7 @@ const props = withDefaults(defineProps<VIconProps>(), {
         color: var(--white);
       }
 
-      svg {
+      .iconify, .fas, .lnil, .lnir, .fab {
         color: var(--smoke-white);
       }
     }
@@ -591,7 +583,7 @@ const props = withDefaults(defineProps<VIconProps>(), {
         color: var(--white);
       }
 
-      svg {
+      .iconify, .fas, .lnil, .lnir, .fab {
         color: var(--smoke-white);
       }
     }
@@ -610,7 +602,7 @@ const props = withDefaults(defineProps<VIconProps>(), {
         color: var(--white);
       }
 
-      svg {
+      .iconify, .fas, .lnil, .lnir, .fab {
         color: var(--smoke-white);
       }
     }
@@ -629,7 +621,7 @@ const props = withDefaults(defineProps<VIconProps>(), {
         color: var(--white);
       }
 
-      svg {
+      .iconify, .fas, .lnil, .lnir, .fab {
         color: var(--smoke-white);
       }
     }
@@ -648,7 +640,7 @@ const props = withDefaults(defineProps<VIconProps>(), {
         color: var(--white);
       }
 
-      svg {
+      .iconify {
         color: var(--smoke-white);
       }
     }
@@ -667,7 +659,7 @@ const props = withDefaults(defineProps<VIconProps>(), {
         color: var(--white);
       }
 
-      svg {
+      .iconify {
         color: var(--smoke-white);
       }
     }
@@ -686,7 +678,7 @@ const props = withDefaults(defineProps<VIconProps>(), {
         color: var(--white);
       }
 
-      svg {
+      .iconify {
         color: var(--smoke-white);
       }
     }

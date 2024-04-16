@@ -134,7 +134,7 @@ debouncedWatch(
     <div class="demo-search-section">
       <VFlex justify-content="center">
         <VField :label="searchLabel">
-          <VControl icon="feather:search">
+          <VControl icon="lucide:search">
             <VInput
               v-model.trim="filterInput"
               type="search"
@@ -170,7 +170,7 @@ debouncedWatch(
           <VButton
             :href="generateFeatureRequestLink(filterInput)"
             target="_blank"
-            icon="feather:github"
+            icon="lucide:github"
           >
             Fill a request feature on github
           </VButton>
@@ -247,16 +247,16 @@ debouncedWatch(
                     tabindex="-1"
                   >
                     Go to demo
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify rtl-hidden"
-                      data-icon="lucide:arrow-right"
-                    />
-                    <i
+                      icon="lucide:arrow-right"
+                    ></iconify-icon>
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify ltr-hidden"
-                      data-icon="lucide:arrow-left"
-                    />
+                      icon="lucide:arrow-left"
+                    ></iconify-icon>
                   </RouterLink>
                 </div>
               </div>
@@ -328,16 +328,16 @@ debouncedWatch(
                     tabindex="-1"
                   >
                     Go to demo
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify rtl-hidden"
-                      data-icon="lucide:arrow-right"
-                    />
-                    <i
+                      icon="lucide:arrow-right"
+                    ></iconify-icon>
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify ltr-hidden"
-                      data-icon="lucide:arrow-left"
-                    />
+                      icon="lucide:arrow-left"
+                    ></iconify-icon>
                   </RouterLink>
                 </div>
               </div>
@@ -409,16 +409,16 @@ debouncedWatch(
                     tabindex="-1"
                   >
                     Go to demo
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify rtl-hidden"
-                      data-icon="lucide:arrow-right"
-                    />
-                    <i
+                      icon="lucide:arrow-right"
+                    ></iconify-icon>
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify ltr-hidden"
-                      data-icon="lucide:arrow-left"
-                    />
+                      icon="lucide:arrow-left"
+                    ></iconify-icon>
                   </RouterLink>
                 </div>
               </div>
@@ -490,16 +490,16 @@ debouncedWatch(
                     tabindex="-1"
                   >
                     Go to demo
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify rtl-hidden"
-                      data-icon="lucide:arrow-right"
-                    />
-                    <i
+                      icon="lucide:arrow-right"
+                    ></iconify-icon>
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify ltr-hidden"
-                      data-icon="lucide:arrow-left"
-                    />
+                      icon="lucide:arrow-left"
+                    ></iconify-icon>
                   </RouterLink>
                 </div>
               </div>
@@ -571,16 +571,16 @@ debouncedWatch(
                     tabindex="-1"
                   >
                     Go to demo
-                    <i
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify rtl-hidden"
-                      data-icon="lucide:arrow-right"
-                    />
-                    <i
+                      icon="lucide:arrow-right"
+                    ></iconify-icon>
+                    <iconify-icon
                       aria-hidden="true"
                       class="iconify ltr-hidden"
-                      data-icon="lucide:arrow-left"
-                    />
+                      icon="lucide:arrow-left"
+                    ></iconify-icon>
                   </RouterLink>
                 </div>
               </div>

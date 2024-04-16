@@ -119,7 +119,7 @@ function logout() {
       <div class="dropdown-item is-button">
         <VButton
           class="logout-button"
-          icon="feather:log-out"
+          icon="lucide:log-out"
           color="primary"
           role="menuitem"
           raised

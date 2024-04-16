@@ -599,7 +599,7 @@
         box-shadow: var(--primary-box-shadow);
       }
 
-      i {
+      .fab {
         position: absolute;
         top: 50%;
         inset-inline-start: 50%;
@@ -686,7 +686,7 @@
               box-shadow: var(--light-box-shadow);
             }
 
-            i {
+            .fab, .lnil {
               color: var(--primary);
             }
           }
@@ -721,7 +721,7 @@
             transition: all 0.3s; // transition-all test
           }
 
-          i {
+          .fab, .lnil {
             position: absolute;
             top: 50%;
             inset-inline-start: 50%;
@@ -764,7 +764,7 @@
       margin: 8px 0;
 
       .stock-logo {
-        i {
+        .fab, .lnil {
           font-size: 14px;
         }
       }
@@ -796,7 +796,7 @@
                 border-color: var(--primary) !important;
               }
 
-              i {
+              .fab, .lnil {
                 color: var(--primary);
               }
             }

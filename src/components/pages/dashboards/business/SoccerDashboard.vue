@@ -16,10 +16,10 @@
                 </div>
                 <div class="right">
                   <div class="live-block">
-                    <i
+                    <iconify-icon
                       class="iconify"
-                      data-icon="feather:video"
-                    />
+                      icon="lucide:video"
+                    ></iconify-icon>
                     <span>Live Now</span>
                   </div>
                 </div>
@@ -245,10 +245,10 @@
                     </td>
                     <td>
                       <a class="table-action">
-                        <i
+                        <iconify-icon
                           class="iconify"
-                          data-icon="feather:align-right"
-                        />
+                          icon="lucide:align-right"
+                        ></iconify-icon>
                       </a>
                     </td>
                   </tr>
@@ -297,10 +297,10 @@
                     </td>
                     <td>
                       <a class="table-action">
-                        <i
+                        <iconify-icon
                           class="iconify"
-                          data-icon="feather:align-right"
-                        />
+                          icon="lucide:align-right"
+                        ></iconify-icon>
                       </a>
                     </td>
                   </tr>
@@ -351,10 +351,10 @@
                     </td>
                     <td>
                       <a class="table-action">
-                        <i
+                        <iconify-icon
                           class="iconify"
-                          data-icon="feather:align-right"
-                        />
+                          icon="lucide:align-right"
+                        ></iconify-icon>
                       </a>
                     </td>
                   </tr>
@@ -405,10 +405,10 @@
                     </td>
                     <td>
                       <a class="table-action">
-                        <i
+                        <iconify-icon
                           class="iconify"
-                          data-icon="feather:align-right"
-                        />
+                          icon="lucide:align-right"
+                        ></iconify-icon>
                       </a>
                     </td>
                   </tr>
@@ -459,10 +459,10 @@
                     </td>
                     <td>
                       <a class="table-action">
-                        <i
+                        <iconify-icon
                           class="iconify"
-                          data-icon="feather:align-right"
-                        />
+                          icon="lucide:align-right"
+                        ></iconify-icon>
                       </a>
                     </td>
                   </tr>
@@ -513,10 +513,10 @@
                     </td>
                     <td>
                       <a class="table-action">
-                        <i
+                        <iconify-icon
                           class="iconify"
-                          data-icon="feather:align-right"
-                        />
+                          icon="lucide:align-right"
+                        ></iconify-icon>
                       </a>
                     </td>
                   </tr>

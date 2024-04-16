@@ -196,7 +196,7 @@
                 a {
                   color: var(--primary-dark-14);
 
-                  svg {
+                  .iconify {
                     opacity: 1;
                     fill: var(--primary);
                   }
@@ -206,7 +206,7 @@
               .router-link-exact-active {
                 color: var(--primary-dark-14);
 
-                svg {
+                .iconify {
                   opacity: 1;
                   fill: var(--primary);
                 }
@@ -238,7 +238,7 @@
                   margin-inline-start: 0.25rem;
                 }
 
-                svg {
+                .iconify {
                   opacity: 0;
                   position: relative;
                   top: 0;

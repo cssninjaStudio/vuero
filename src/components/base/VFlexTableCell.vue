@@ -133,7 +133,7 @@ const props = withDefaults(defineProps<VFlexTableCellProps>(), {
       .item-meta {
         color: var(--light-text);
 
-        svg {
+        .iconify {
           position: relative;
           top: 2px;
           height: 14px;

@@ -43,26 +43,26 @@ useHead({
             <div class="trusted-by mb-4">
               <span>Trusted by <span>2000+ customers</span></span>
               <div class="rating">
-                <i
+                <iconify-icon
                   class="iconify"
-                  data-icon="uiw:star-on"
-                />
-                <i
+                  icon="uiw:star-on"
+                ></iconify-icon>
+                <iconify-icon
                   class="iconify"
-                  data-icon="uiw:star-on"
-                />
-                <i
+                  icon="uiw:star-on"
+                ></iconify-icon>
+                <iconify-icon
                   class="iconify"
-                  data-icon="uiw:star-on"
-                />
-                <i
+                  icon="uiw:star-on"
+                ></iconify-icon>
+                <iconify-icon
                   class="iconify"
-                  data-icon="uiw:star-on"
-                />
-                <i
+                  icon="uiw:star-on"
+                ></iconify-icon>
+                <iconify-icon
                   class="iconify"
-                  data-icon="uiw:star-on"
-                />
+                  icon="uiw:star-on"
+                ></iconify-icon>
               </div>
             </div>
 
@@ -352,10 +352,10 @@ useHead({
             <div class="flex-card light-bordered hover-inset">
               <div class="flex-cell is-bordered">
                 <div class="icon-holder">
-                  <i
+                  <iconify-icon
                     class="iconify"
-                    data-icon="mdi:vuejs"
-                  />
+                    icon="mdi:vuejs"
+                  ></iconify-icon>
                 </div>
                 <h3>Vue 3</h3>
                 <p>
@@ -364,20 +364,20 @@ useHead({
               </div>
               <div class="flex-cell">
                 <div class="icon-holder">
-                  <i
+                  <iconify-icon
                     class="iconify"
-                    data-icon="bxl:typescript"
-                  />
+                    icon="bxl:typescript"
+                  ></iconify-icon>
                 </div>
                 <h3>Typescript</h3>
                 <p>Typescript makes things much more simpler but remains optional.</p>
               </div>
               <div class="flex-cell is-bordered">
                 <div class="icon-holder">
-                  <i
+                  <iconify-icon
                     class="iconify smaller"
-                    data-icon="simple-icons:vite"
-                  />
+                    icon="simple-icons:vite"
+                  ></iconify-icon>
                 </div>
                 <h3>Vite JS</h3>
                 <p>
@@ -387,10 +387,10 @@ useHead({
               </div>
               <div class="flex-cell">
                 <div class="icon-holder">
-                  <i
+                  <iconify-icon
                     class="iconify smaller"
-                    data-icon="akar-icons:vscode-fill"
-                  />
+                    icon="akar-icons:vscode-fill"
+                  ></iconify-icon>
                 </div>
                 <h3>VS Code Integration</h3>
                 <p>
@@ -400,10 +400,10 @@ useHead({
               </div>
               <div class="flex-cell is-bordered">
                 <div class="icon-holder">
-                  <i
+                  <iconify-icon
                     class="iconify smaller"
-                    data-icon="file-icons:eslint"
-                  />
+                    icon="file-icons:eslint"
+                  ></iconify-icon>
                 </div>
                 <h3>ES Lint</h3>
                 <p>
@@ -413,10 +413,10 @@ useHead({
               </div>
               <div class="flex-cell is-bordered">
                 <div class="icon-holder">
-                  <i
+                  <iconify-icon
                     class="iconify smaller"
-                    data-icon="file-icons:prettier"
-                  />
+                    icon="file-icons:prettier"
+                  ></iconify-icon>
                 </div>
                 <h3>Prettier</h3>
                 <p>
@@ -426,10 +426,10 @@ useHead({
               </div>
               <div class="flex-cell">
                 <div class="icon-holder">
-                  <i
+                  <iconify-icon
                     class="iconify smaller"
-                    data-icon="file-icons:stylelint"
-                  />
+                    icon="file-icons:stylelint"
+                  ></iconify-icon>
                 </div>
                 <h3>Stylelint</h3>
                 <p>
@@ -439,10 +439,10 @@ useHead({
               </div>
               <div class="flex-cell">
                 <div class="icon-holder">
-                  <i
+                  <iconify-icon
                     class="iconify smaller"
-                    data-icon="simple-icons:iconify"
-                  />
+                    icon="simple-icons:iconify"
+                  ></iconify-icon>
                 </div>
                 <h3>Iconify</h3>
                 <p>
@@ -452,10 +452,10 @@ useHead({
               </div>
               <div class="flex-cell">
                 <div class="icon-holder">
-                  <i
+                  <iconify-icon
                     class="iconify smaller"
-                    data-icon="simple-icons:cypress"
-                  />
+                    icon="simple-icons:cypress"
+                  ></iconify-icon>
                 </div>
                 <h3>Cypress</h3>
                 <p>
@@ -465,10 +465,10 @@ useHead({
               </div>
               <div class="flex-cell">
                 <div class="icon-holder">
-                  <i
+                  <iconify-icon
                     class="iconify smaller"
-                    data-icon="file-icons:pnpm"
-                  />
+                    icon="file-icons:pnpm"
+                  ></iconify-icon>
                 </div>
                 <h3>Pnpm + Yarn</h3>
                 <p>
@@ -478,10 +478,10 @@ useHead({
               </div>
               <div class="flex-cell">
                 <div class="icon-holder">
-                  <i
+                  <iconify-icon
                     class="iconify smaller"
-                    data-icon="simple-icons:docker"
-                  />
+                    icon="simple-icons:docker"
+                  ></iconify-icon>
                 </div>
                 <h3>Docker</h3>
                 <p>
@@ -491,10 +491,10 @@ useHead({
               </div>
               <div class="flex-cell">
                 <div class="icon-holder">
-                  <i
+                  <iconify-icon
                     class="iconify smaller"
-                    data-icon="mdi:robot"
-                  />
+                    icon="mdi:robot"
+                  ></iconify-icon>
                 </div>
                 <h3>Robot Friendly</h3>
                 <p>
@@ -504,10 +504,10 @@ useHead({
               </div>
               <div class="flex-cell">
                 <div class="icon-holder">
-                  <i
+                  <iconify-icon
                     class="iconify smaller"
-                    data-icon="ic:twotone-check-circle"
-                  />
+                    icon="ic:twotone-check-circle"
+                  ></iconify-icon>
                 </div>
                 <h3>Props Validation</h3>
                 <p>
@@ -517,10 +517,10 @@ useHead({
               </div>
               <div class="flex-cell">
                 <div class="icon-holder">
-                  <i
+                  <iconify-icon
                     class="iconify smaller"
-                    data-icon="solar:folder-error-bold"
-                  />
+                    icon="solar:folder-error-bold"
+                  ></iconify-icon>
                 </div>
                 <h3>Error Handling</h3>
                 <p>
@@ -530,10 +530,10 @@ useHead({
               </div>
               <div class="flex-cell">
                 <div class="icon-holder">
-                  <i
+                  <iconify-icon
                     class="iconify smaller"
-                    data-icon="solar:sidebar-minimalistic-bold"
-                  />
+                    icon="solar:sidebar-minimalistic-bold"
+                  ></iconify-icon>
                 </div>
                 <h3>Project Structure</h3>
                 <p>
@@ -543,10 +543,10 @@ useHead({
               </div>
               <div class="flex-cell">
                 <div class="icon-holder">
-                  <i
+                  <iconify-icon
                     class="iconify smaller"
-                    data-icon="ic:round-menu-book"
-                  />
+                    icon="ic:round-menu-book"
+                  ></iconify-icon>
                 </div>
                 <h3>Component Guide</h3>
                 <p>
@@ -695,10 +695,10 @@ useHead({
                   class="button chat-button is-secondary"
                 >
                   <span>Join us on Discord</span>
-                  <i
+                  <iconify-icon
                     class="iconify ml-1"
-                    data-icon="feather:external-link"
-                  />
+                    icon="lucide:external-link"
+                  ></iconify-icon>
                 </a>
               </div>
             </div>

@@ -41,7 +41,7 @@ useHead({
         {
           label: 'Vuero',
           hideLabel: true,
-          icon: 'feather:home',
+          icon: 'lucide:home',
           to: '/',
         },
         {
@@ -73,7 +73,7 @@ useHead({
               class="demo-icon-search py-4 px-6"
             >
               <VField>
-                <VControl icon="feather:search">
+                <VControl icon="lucide:search">
                   <input
                     v-model="filter"
                     type="search"

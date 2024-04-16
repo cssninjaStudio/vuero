@@ -85,11 +85,11 @@ watch(
       <template #links>
         <li>
           <RouterLink to="app">
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:home"
-            />
+              icon="lucide:home"
+            ></iconify-icon>
           </RouterLink>
         </li>
       </template>
@@ -97,11 +97,11 @@ watch(
       <template #bottom-links>
         <li>
           <a href="#">
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify"
-              data-icon="feather:settings"
-            />
+              icon="lucide:settings"
+            ></iconify-icon>
           </a>
         </li>
       </template>
@@ -129,11 +129,11 @@ watch(
             @keydown.space.prevent="switchSidebar('dashboard')"
             @click="switchSidebar('dashboard')"
           >
-            <i
+            <iconify-icon
               aria-hidden="true"
               class="iconify sidebar-svg"
-              data-icon="feather:home"
-            />
+              icon="lucide:home"
+            ></iconify-icon>
           </a>
         </li>
       </template>

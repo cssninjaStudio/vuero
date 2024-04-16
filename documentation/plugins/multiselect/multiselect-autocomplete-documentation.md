@@ -25,7 +25,7 @@ const optionsSingle = ['Batman', 'Robin', 'Joker']
 
 <template>
   <VField v-slot="{ id }" class="is-autocomplete-select">
-    <VControl icon="feather:search">
+    <VControl icon="lucide:search">
       <Multiselect
         v-model="valueSingle"
         :attrs="{ id }"
@@ -45,7 +45,7 @@ const optionsSingle = ['Batman', 'Robin', 'Joker']
 <div class="columns">
   <div class="column is-4">
     <VField v-slot="{ id }" class="is-autocomplete-select">
-      <VControl icon="feather:search">
+      <VControl icon="lucide:search">
         <Multiselect
           :attrs="{ id }"
           v-model="frontmatter.state.valueSingle"
@@ -58,7 +58,7 @@ const optionsSingle = ['Batman', 'Robin', 'Joker']
   </div>
   <div class="column is-4">
     <VField v-slot="{ id }" class="is-curved-select is-autocomplete-select">
-      <VControl icon="feather:search">
+      <VControl icon="lucide:search">
         <Multiselect
           :attrs="{ id }"
           v-model="frontmatter.state.valueSingle"
@@ -71,7 +71,7 @@ const optionsSingle = ['Batman', 'Robin', 'Joker']
   </div>
   <div class="column is-4">
     <VField v-slot="{ id }" class="is-rounded-select is-autocomplete-select">
-      <VControl icon="feather:search">
+      <VControl icon="lucide:search">
         <Multiselect
           :attrs="{ id }"
           v-model="frontmatter.state.valueSingle"

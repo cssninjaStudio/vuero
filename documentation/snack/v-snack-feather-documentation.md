@@ -11,47 +11,47 @@ to insert your content. Check the markup for more details.
   <VSnack
     title="Shopping"
     white
-    icon="feather:shopping-cart"
+    icon="lucide:shopping-cart"
   >
-    <i class="iconify" data-icon="feather:plus" />
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
   <VSnack
     title="Shopping"
     color="primary"
-    icon="feather:smile"
+    icon="lucide:smile"
   >
-    <i class="iconify" data-icon="feather:plus" />
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
   <VSnack
     title="Support"
     color="success"
     white
-    icon="feather:life-buoy"
+    icon="lucide:life-buoy"
   >
-    <i class="iconify" data-icon="feather:plus" />
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
   <VSnack
     title="Business"
     color="info"
-    icon="feather:briefcase"
+    icon="lucide:briefcase"
   >
-    <i class="iconify" data-icon="feather:plus" />
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
   <VSnack
     title="Warning"
     color="warning"
     white
-    icon="feather:alert-octagon"
+    icon="lucide:alert-octagon"
   >
-    <i class="iconify" data-icon="feather:plus" />
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
   <VSnack
     title="Health"
     color="danger"
     white
-    icon="feather:thermometer"
+    icon="lucide:thermometer"
   >
-    <i class="iconify" data-icon="feather:plus" />
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
 </template>
 ```
@@ -61,28 +61,28 @@ to insert your content. Check the markup for more details.
 <!--example-->
 
 <div class="snacks">
-  <VSnack title="Shopping" white icon="feather:shopping-cart">
-    <i class="iconify" data-icon="feather:plus"></i>
+  <VSnack title="Shopping" white icon="lucide:shopping-cart">
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
-  <VSnack title="Shopping" color="primary" icon="feather:smile">
-    <i class="iconify" data-icon="feather:plus"></i>
+  <VSnack title="Shopping" color="primary" icon="lucide:smile">
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
-  <VSnack title="Support" color="success" white icon="feather:life-buoy">
-    <i class="iconify" data-icon="feather:plus"></i>
+  <VSnack title="Support" color="success" white icon="lucide:life-buoy">
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
-  <VSnack title="Business" color="info" icon="feather:briefcase">
-    <i class="iconify" data-icon="feather:plus"></i>
+  <VSnack title="Business" color="info" icon="lucide:briefcase">
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
   <VSnack
     title="Warning"
     color="warning"
     white
-    icon="feather:alert-octagon"
+    icon="lucide:alert-octagon"
   >
-    <i class="iconify" data-icon="feather:plus"></i>
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
-  <VSnack title="Health" color="danger" white icon="feather:thermometer">
-    <i class="iconify" data-icon="feather:plus"></i>
+  <VSnack title="Health" color="danger" white icon="lucide:thermometer">
+    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
   </VSnack>
 </div>
 

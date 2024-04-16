@@ -112,7 +112,7 @@ useHead({
       }
 
       img,
-      svg {
+      .iconify {
         display: block;
         max-width: 100%;
         margin: 0 auto;
@@ -170,7 +170,7 @@ useHead({
         }
 
         img,
-        svg {
+        .iconify {
           max-width: 345px;
         }
       }

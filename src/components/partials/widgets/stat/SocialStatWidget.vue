@@ -31,11 +31,11 @@ const props = defineProps<{
         href="#"
         class="go-icon"
       >
-        <i
+        <iconify-icon
           aria-hidden="true"
           class="iconify"
-          data-icon="feather:chevron-right"
-        />
+          icon="lucide:chevron-right"
+        ></iconify-icon>
       </a>
     </div>
   </div>
@@ -74,12 +74,12 @@ const props = defineProps<{
           color: var(--smoke-white);
         }
 
-        svg {
+        .iconify {
           height: 18px;
           width: 18px;
         }
 
-        i {
+        .iconify {
           font-size: 18px;
         }
       }
@@ -120,7 +120,7 @@ const props = defineProps<{
           border-radius: 10px;
         }
 
-        svg {
+        .iconify {
           height: 16px;
           width: 16px;
           stroke-width: 3px;

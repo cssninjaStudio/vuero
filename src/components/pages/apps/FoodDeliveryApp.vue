@@ -223,11 +223,11 @@ onUnmounted(() => {
                 @keydown.space.prevent="activeSection = 'cart'"
                 @click="activeSection = 'cart'"
               >
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:shopping-cart"
-                />
+                  icon="lucide:shopping-cart"
+                ></iconify-icon>
               </a>
             </div>
             <div class="toolbar-icon">
@@ -239,11 +239,11 @@ onUnmounted(() => {
                 @keydown.space.prevent="activeSection = 'activity'"
                 @click="activeSection = 'activity'"
               >
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:activity"
-                />
+                  icon="lucide:activity"
+                ></iconify-icon>
               </a>
             </div>
             <div class="toolbar-icon">
@@ -255,11 +255,11 @@ onUnmounted(() => {
                 @keydown.space.prevent="activeSection = 'address'"
                 @click="activeSection = 'address'"
               >
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:map-pin"
-                />
+                  icon="lucide:map-pin"
+                ></iconify-icon>
               </a>
             </div>
             <div class="toolbar-icon">
@@ -271,11 +271,11 @@ onUnmounted(() => {
                 @keydown.space.prevent="activeSection = 'settings'"
                 @click="activeSection = 'settings'"
               >
-                <i
+                <iconify-icon
                   aria-hidden="true"
                   class="iconify"
-                  data-icon="feather:settings"
-                />
+                  icon="lucide:settings"
+                ></iconify-icon>
               </a>
             </div>
           </div>
@@ -392,7 +392,7 @@ onUnmounted(() => {
             <template #header>
               <UIWidgetToolbarIcon
                 title="Deliver to"
-                icon="feather:map-pin"
+                icon="lucide:map-pin"
               />
             </template>
             <template #body>
@@ -500,7 +500,7 @@ onUnmounted(() => {
             margin-inline-end: 6px;
           }
 
-          i {
+          .iconify {
             font-size: 12px;
           }
         }
@@ -628,7 +628,7 @@ onUnmounted(() => {
           &.is-prev {
             inset-inline-end: 30px;
 
-            i {
+            .iconify {
               position: relative;
               inset-inline-start: -1px;
             }
@@ -637,7 +637,7 @@ onUnmounted(() => {
           &.is-next {
             inset-inline-end: 0;
 
-            i {
+            .iconify {
               position: relative;
               inset-inline-end: -1px;
             }
@@ -649,9 +649,8 @@ onUnmounted(() => {
             box-shadow: var(--light-box-shadow);
           }
 
-          svg {
-            height: 16px;
-            width: 16px;
+          .iconify {
+            font-size: 16px;
             color: var(--primary);
             transition: all 0.3s; // transition-all test
           }

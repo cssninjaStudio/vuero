@@ -24,11 +24,11 @@ const props = withDefaults(
           :rounded="props.rounded"
           :color="topic.color"
         >
-          <i
+          <iconify-icon
             aria-hidden="true"
             class="iconify"
-            :data-icon="topic.icon"
-          />
+            :icon="topic.icon"
+          ></iconify-icon>
         </VIconBox>
       </template>
       <template #action>

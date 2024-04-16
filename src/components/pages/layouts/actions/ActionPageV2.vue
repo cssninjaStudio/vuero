@@ -136,7 +136,7 @@ const accept = async () => {
 
               <template #icon>
                 <VIconWrap
-                  icon="feather:check"
+                  icon="lucide:check"
                   dark="3"
                   dark-primary
                   dark-card-bordered
@@ -149,7 +149,7 @@ const accept = async () => {
 
               <template #icon>
                 <VIconWrap
-                  icon="feather:check"
+                  icon="lucide:check"
                   dark="3"
                   dark-primary
                   dark-card-bordered
@@ -162,7 +162,7 @@ const accept = async () => {
 
               <template #icon>
                 <VIconWrap
-                  icon="feather:check"
+                  icon="lucide:check"
                   dark="3"
                   dark-primary
                   dark-card-bordered
@@ -239,10 +239,8 @@ const accept = async () => {
                 box-shadow: var(--light-box-shadow);
                 color: var(--primary);
 
-                svg {
-                  width: 16px;
-                  height: 16px;
-                  stroke-width: 3px;
+                .iconify {
+                  font-size: 16px;
                 }
               }
 

@@ -19,11 +19,11 @@ const dropdown = useDropdown(dropdownElement)
         @click="dropdown.toggle"
         @keydown.space.prevent="dropdown.toggle"
       >
-        <i
+        <iconify-icon
           aria-hidden="true"
           class="iconify"
-          data-icon="feather:bell"
-        />
+          icon="lucide:bell"
+        ></iconify-icon>
         <span class="new-indicator pulsate" />
       </div>
       <div

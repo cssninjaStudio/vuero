@@ -47,7 +47,7 @@ const options = ref(['All Flights', 'All Options'])
               >
                 <template #default="{ inputValue, inputEvents }">
                   <div class="booking-bar-inputs">
-                    <VControl icon="feather:calendar">
+                    <VControl icon="lucide:calendar">
                       <input
                         type="text"
                         class="input flight-datepicker"
@@ -56,7 +56,7 @@ const options = ref(['All Flights', 'All Options'])
                         v-on="inputEvents.start"
                       >
                     </VControl>
-                    <VControl icon="feather:calendar">
+                    <VControl icon="lucide:calendar">
                       <input
                         type="text"
                         class="input flight-datepicker"
@@ -290,11 +290,11 @@ const options = ref(['All Flights', 'All Options'])
                   placeholder="Search..."
                 >
                 <button class="searcv-button">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify"
-                    data-icon="feather:search"
-                  />
+                    icon="lucide:search"
+                  ></iconify-icon>
                 </button>
               </div>
 
@@ -313,16 +313,16 @@ const options = ref(['All Flights', 'All Options'])
             <div class="widget-toolbar">
               <div class="left">
                 <a class="action-icon">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify ltr-hidden"
-                    data-icon="feather:chevron-right"
-                  />
-                  <i
+                    icon="lucide:chevron-right"
+                  ></iconify-icon>
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify rtl-hidden"
-                    data-icon="feather:chevron-left"
-                  />
+                    icon="lucide:chevron-left"
+                  ></iconify-icon>
                 </a>
               </div>
               <div class="center">
@@ -330,16 +330,16 @@ const options = ref(['All Flights', 'All Options'])
               </div>
               <div class="right">
                 <a class="action-icon">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify rtl-hidden"
-                    data-icon="feather:chevron-right"
-                  />
-                  <i
+                    icon="lucide:chevron-right"
+                  ></iconify-icon>
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify ltr-hidden"
-                    data-icon="feather:chevron-left"
-                  />
+                    icon="lucide:chevron-left"
+                  ></iconify-icon>
                 </a>
               </div>
             </div>

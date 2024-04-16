@@ -68,11 +68,11 @@ const userStack = userData.userStack as VAvatarProps[]
                           color="info"
                           rounded
                         >
-                          <i
+                          <iconify-icon
                             aria-hidden="true"
                             class="iconify"
-                            data-icon="feather:clock"
-                          />
+                            icon="lucide:clock"
+                          ></iconify-icon>
                         </VIconBox>
                       </template>
                     </VBlock>
@@ -90,11 +90,11 @@ const userStack = userData.userStack as VAvatarProps[]
                           color="purple"
                           rounded
                         >
-                          <i
+                          <iconify-icon
                             aria-hidden="true"
                             class="iconify"
-                            data-icon="feather:radio"
-                          />
+                            icon="lucide:radio"
+                          ></iconify-icon>
                         </VIconBox>
                       </template>
                     </VBlock>
@@ -112,11 +112,11 @@ const userStack = userData.userStack as VAvatarProps[]
                           color="green"
                           rounded
                         >
-                          <i
+                          <iconify-icon
                             aria-hidden="true"
                             class="iconify"
-                            data-icon="feather:user-check"
-                          />
+                            icon="lucide:user-check"
+                          ></iconify-icon>
                         </VIconBox>
                       </template>
                     </VBlock>
@@ -134,11 +134,11 @@ const userStack = userData.userStack as VAvatarProps[]
                           color="orange"
                           rounded
                         >
-                          <i
+                          <iconify-icon
                             aria-hidden="true"
                             class="iconify"
-                            data-icon="feather:frown"
-                          />
+                            icon="lucide:frown"
+                          ></iconify-icon>
                         </VIconBox>
                       </template>
                     </VBlock>
@@ -188,16 +188,16 @@ const userStack = userData.userStack as VAvatarProps[]
             <div class="widget-toolbar">
               <div class="left">
                 <a class="action-icon">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify ltr-hidden"
-                    data-icon="feather:chevron-right"
-                  />
-                  <i
+                    icon="lucide:chevron-right"
+                  ></iconify-icon>
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify rtl-hidden"
-                    data-icon="feather:chevron-left"
-                  />
+                    icon="lucide:chevron-left"
+                  ></iconify-icon>
                 </a>
               </div>
               <div class="center">
@@ -205,16 +205,16 @@ const userStack = userData.userStack as VAvatarProps[]
               </div>
               <div class="right">
                 <a class="action-icon">
-                  <i
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify rtl-hidden"
-                    data-icon="feather:chevron-right"
-                  />
-                  <i
+                    icon="lucide:chevron-right"
+                  ></iconify-icon>
+                  <iconify-icon
                     aria-hidden="true"
                     class="iconify ltr-hidden"
-                    data-icon="feather:chevron-left"
-                  />
+                    icon="lucide:chevron-left"
+                  ></iconify-icon>
                 </a>
               </div>
             </div>
@@ -325,16 +325,16 @@ const userStack = userData.userStack as VAvatarProps[]
               <VAvatar picture="/demo/avatars/32.jpg" />
             </template>
             <template #action>
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify rtl-hidden"
-                data-icon="feather:chevron-right"
-              />
-              <i
+                icon="lucide:chevron-right"
+              ></iconify-icon>
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify ltr-hidden"
-                data-icon="feather:chevron-left"
-              />
+                icon="lucide:chevron-left"
+              ></iconify-icon>
             </template>
           </VBlock>
         </a>
@@ -351,16 +351,16 @@ const userStack = userData.userStack as VAvatarProps[]
               <VAvatar picture="/demo/avatars/19.jpg" />
             </template>
             <template #action>
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify rtl-hidden"
-                data-icon="feather:chevron-right"
-              />
-              <i
+                icon="lucide:chevron-right"
+              ></iconify-icon>
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify ltr-hidden"
-                data-icon="feather:chevron-left"
-              />
+                icon="lucide:chevron-left"
+              ></iconify-icon>
             </template>
           </VBlock>
         </a>
@@ -377,16 +377,16 @@ const userStack = userData.userStack as VAvatarProps[]
               <VAvatar picture="/demo/avatars/12.jpg" />
             </template>
             <template #action>
-              <i
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify rtl-hidden"
-                data-icon="feather:chevron-right"
-              />
-              <i
+                icon="lucide:chevron-right"
+              ></iconify-icon>
+              <iconify-icon
                 aria-hidden="true"
                 class="iconify ltr-hidden"
-                data-icon="feather:chevron-left"
-              />
+                icon="lucide:chevron-left"
+              ></iconify-icon>
             </template>
           </VBlock>
         </a>
@@ -478,7 +478,7 @@ const userStack = userData.userStack as VAvatarProps[]
       }
 
       .flex-end {
-        svg {
+        .iconify {
           height: 18px;
           width: 18px;
           color: var(--light-text);

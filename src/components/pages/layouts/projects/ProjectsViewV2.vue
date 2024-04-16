@@ -675,7 +675,7 @@
           color: var(--dark-dark-text);
         }
 
-        i {
+        .iconify {
           color: var(--primary) !important;
         }
       }
