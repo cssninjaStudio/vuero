@@ -135,7 +135,7 @@ function getAvatarData(user: any): VAvatarProps {
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:user"
-                  ></iconify-icon>
+                  />
                 </span>
                 <span>Profile</span>
               </button>
@@ -145,7 +145,7 @@ function getAvatarData(user: any): VAvatarProps {
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:message-circle"
-                  ></iconify-icon>
+                  />
                 </span>
                 <span>Talk</span>
               </button>

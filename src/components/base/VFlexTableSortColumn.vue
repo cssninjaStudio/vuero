@@ -116,8 +116,8 @@ export default defineComponent({
               'span',
               { key: `${rawSort.value}`, class: 'is-inline' },
               h('iconify-icon', {
-                'class': 'ml-3 iconify is-inline',
-                'icon': isAsc.value
+                class: 'ml-3 iconify is-inline',
+                icon: isAsc.value
                   ? 'fa6-solid:sort-up'
                   : isDesc.value
                     ? 'fa6-solid:sort-down'

@@ -151,7 +151,7 @@ const validateStep = async () => {
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:help-circle"
-              ></iconify-icon>
+              />
             </button>
           </h3>
 
@@ -175,7 +175,7 @@ const validateStep = async () => {
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:plus"
-                  ></iconify-icon>
+                  />
                   <span>Add shipment group</span>
                 </button>
               </VControl>
@@ -296,7 +296,7 @@ const validateStep = async () => {
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:archive"
-              ></iconify-icon>
+              />
               <span>15 i9 Laptops - b2</span>
               <div class="action">
                 <VIconButton icon="lucide:trash-2" />
@@ -325,7 +325,7 @@ const validateStep = async () => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:help-circle"
-                ></iconify-icon>
+                />
               </button>
             </h3>
 
@@ -349,7 +349,7 @@ const validateStep = async () => {
                       aria-hidden="true"
                       class="iconify"
                       icon="lucide:plus"
-                    ></iconify-icon>
+                    />
                     <span>Add contact</span>
                   </button>
                 </VControl>
@@ -401,7 +401,7 @@ const validateStep = async () => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:user"
-                ></iconify-icon>
+                />
                 <span>Erik Kovalsky</span>
                 <div class="action">
                   <VIconButton icon="lucide:trash-2" />
@@ -412,7 +412,7 @@ const validateStep = async () => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:user"
-                ></iconify-icon>
+                />
                 <span>Elsa Walker</span>
                 <div class="action">
                   <VIconButton icon="lucide:trash-2" />
@@ -442,7 +442,7 @@ const validateStep = async () => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:help-circle"
-                ></iconify-icon>
+                />
               </button>
             </h3>
 
@@ -504,7 +504,7 @@ const validateStep = async () => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:help-circle"
-                ></iconify-icon>
+                />
               </button>
             </h3>
 
@@ -520,7 +520,7 @@ const validateStep = async () => {
                       aria-hidden="true"
                       class="iconify"
                       icon="lucide:check"
-                    ></iconify-icon>
+                    />
                   </div>
                   <div class="option-inner">
                     <i
@@ -542,7 +542,7 @@ const validateStep = async () => {
                       aria-hidden="true"
                       class="iconify"
                       icon="lucide:check"
-                    ></iconify-icon>
+                    />
                   </div>
                   <div class="option-inner">
                     <i
@@ -564,7 +564,7 @@ const validateStep = async () => {
                       aria-hidden="true"
                       class="iconify"
                       icon="lucide:check"
-                    ></iconify-icon>
+                    />
                   </div>
                   <div class="option-inner">
                     <i
@@ -586,7 +586,7 @@ const validateStep = async () => {
                       aria-hidden="true"
                       class="iconify"
                       icon="lucide:check"
-                    ></iconify-icon>
+                    />
                   </div>
                   <div class="option-inner">
                     <i
@@ -608,7 +608,7 @@ const validateStep = async () => {
                       aria-hidden="true"
                       class="iconify"
                       icon="lucide:check"
-                    ></iconify-icon>
+                    />
                   </div>
                   <div class="option-inner">
                     <i
@@ -630,7 +630,7 @@ const validateStep = async () => {
                       aria-hidden="true"
                       class="iconify"
                       icon="lucide:check"
-                    ></iconify-icon>
+                    />
                   </div>
                   <div class="option-inner">
                     <i
@@ -666,7 +666,7 @@ const validateStep = async () => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:help-circle"
-                ></iconify-icon>
+                />
               </button>
             </h3>
             <div class="form-section-inner">
@@ -860,7 +860,7 @@ const validateStep = async () => {
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:x"
-              ></iconify-icon>
+              />
             </button>
             <h3>General Information</h3>
             <p>
@@ -875,7 +875,7 @@ const validateStep = async () => {
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:check"
-                  ></iconify-icon>
+                  />
                   <span>Some nice list item</span>
                 </li>
                 <li>
@@ -883,7 +883,7 @@ const validateStep = async () => {
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:check"
-                  ></iconify-icon>
+                  />
                   <span>Some nice list item</span>
                 </li>
                 <li>
@@ -891,7 +891,7 @@ const validateStep = async () => {
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:check"
-                  ></iconify-icon>
+                  />
                   <span>Some nice list item</span>
                 </li>
               </ul>
@@ -912,7 +912,7 @@ const validateStep = async () => {
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:x"
-              ></iconify-icon>
+              />
             </button>
             <h3>Shipment Owner</h3>
             <p>
@@ -927,7 +927,7 @@ const validateStep = async () => {
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:check"
-                  ></iconify-icon>
+                  />
                   <span>Some nice list item</span>
                 </li>
                 <li>
@@ -935,7 +935,7 @@ const validateStep = async () => {
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:check"
-                  ></iconify-icon>
+                  />
                   <span>Some nice list item</span>
                 </li>
               </ul>
@@ -956,7 +956,7 @@ const validateStep = async () => {
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:x"
-              ></iconify-icon>
+              />
             </button>
             <h3>Shipment Taxes</h3>
             <p>
@@ -971,7 +971,7 @@ const validateStep = async () => {
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:check"
-                  ></iconify-icon>
+                  />
                   <span>Some nice list item</span>
                 </li>
                 <li>
@@ -979,7 +979,7 @@ const validateStep = async () => {
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:check"
-                  ></iconify-icon>
+                  />
                   <span>Some nice list item</span>
                 </li>
                 <li>
@@ -987,7 +987,7 @@ const validateStep = async () => {
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:check"
-                  ></iconify-icon>
+                  />
                   <span>Some nice list item</span>
                 </li>
               </ul>
@@ -1008,7 +1008,7 @@ const validateStep = async () => {
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:x"
-              ></iconify-icon>
+              />
             </button>
             <h3>Options</h3>
             <p>
@@ -1023,7 +1023,7 @@ const validateStep = async () => {
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:check"
-                  ></iconify-icon>
+                  />
                   <span>Some nice list item</span>
                 </li>
                 <li>
@@ -1031,7 +1031,7 @@ const validateStep = async () => {
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:check"
-                  ></iconify-icon>
+                  />
                   <span>Some nice list item</span>
                 </li>
               </ul>
@@ -1052,7 +1052,7 @@ const validateStep = async () => {
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:x"
-              ></iconify-icon>
+              />
             </button>
             <h3>Validation</h3>
             <p>
@@ -1067,7 +1067,7 @@ const validateStep = async () => {
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:check"
-                  ></iconify-icon>
+                  />
                   <span>Some nice list item</span>
                 </li>
                 <li>
@@ -1075,7 +1075,7 @@ const validateStep = async () => {
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:check"
-                  ></iconify-icon>
+                  />
                   <span>Some nice list item</span>
                 </li>
               </ul>

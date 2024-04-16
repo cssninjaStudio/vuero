@@ -78,7 +78,7 @@ const localFlagSrc = computed(() => {
             aria-hidden="true"
             class="iconify"
             icon="lucide:bell"
-          ></iconify-icon>
+          />
           <span class="new-indicator pulsate" />
         </div>
         <div
@@ -192,12 +192,12 @@ const localFlagSrc = computed(() => {
         aria-hidden="true"
         class="iconify rtl-hidden"
         icon="lucide:chevron-left"
-      ></iconify-icon>
+      />
       <iconify-icon
         aria-hidden="true"
         class="iconify ltr-hidden"
         icon="lucide:chevron-right"
-      ></iconify-icon>
+      />
     </a>
   </div>
 </template>

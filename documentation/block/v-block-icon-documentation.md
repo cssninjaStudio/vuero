@@ -11,7 +11,7 @@ which can be whatever you want, and one for the `action`.
   <VBlock title="Team Tasks" subtitle="View all tasks">
     <template #icon>
       <VIconBox color="success" rounded>
-        <iconify-icon class="iconify" icon="lucide:clock"></iconify-icon>
+        <iconify-icon class="iconify" icon="lucide:clock" />
       </VIconBox>
     </template>
     <template #action>
@@ -33,7 +33,7 @@ which can be whatever you want, and one for the `action`.
       <VBlock title="Team Tasks" subtitle="View all tasks">
         <template #icon>
           <VIconBox color="success" rounded>
-            <iconify-icon class="iconify" icon="lucide:clock"></iconify-icon>
+            <iconify-icon class="iconify" icon="lucide:clock"/>
           </VIconBox>
         </template>
         <template #action>

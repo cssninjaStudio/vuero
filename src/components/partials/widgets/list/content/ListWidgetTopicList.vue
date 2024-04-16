@@ -28,7 +28,7 @@ const props = withDefaults(
             aria-hidden="true"
             class="iconify"
             :icon="topic.icon"
-          ></iconify-icon>
+          />
         </VIconBox>
       </template>
       <template #action>

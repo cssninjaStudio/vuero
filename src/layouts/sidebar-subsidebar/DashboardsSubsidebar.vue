@@ -22,7 +22,7 @@ const emit = defineEmits(['close'])
           aria-hidden="true"
           class="iconify"
           icon="lucide:x"
-        ></iconify-icon>
+        />
       </div>
     </div>
     <div
@@ -40,12 +40,12 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
 
           <RouterLink
@@ -90,12 +90,12 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
 
           <RouterLink
@@ -140,12 +140,12 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
 
           <RouterLink
@@ -190,12 +190,12 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
 
           <RouterLink
@@ -260,12 +260,12 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
 
           <RouterLink
@@ -340,12 +340,12 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
 
           <RouterLink
@@ -370,12 +370,12 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
 
           <RouterLink
@@ -472,12 +472,12 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
 
           <RouterLink
@@ -512,12 +512,12 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
 
           <RouterLink
@@ -572,12 +572,12 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
 
           <RouterLink

@@ -68,7 +68,7 @@ const sidebar = useSidebar()
             aria-hidden="true"
             class="iconify"
             icon="lucide:plus"
-          ></iconify-icon>
+          />
           <span>New Conversation</span>
         </button>
       </div>

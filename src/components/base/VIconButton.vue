@@ -115,8 +115,8 @@ export default defineComponent({
       let icon
       if (isIconify.value) {
         icon = h('iconify-icon', {
-          'class': 'iconify',
-          'icon': props.icon,
+          class: 'iconify',
+          icon: props.icon,
         })
       }
       else {

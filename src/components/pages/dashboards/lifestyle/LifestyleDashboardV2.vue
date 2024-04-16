@@ -189,7 +189,7 @@ const topicList = dashboardData.topicList as any[]
                     <VRangeRating
                       :model-value="5"
                       readonly
-                    ></VRangeRating>
+                    />
 
                     <VIconButton
                       icon="lucide:arrow-right"
@@ -215,7 +215,7 @@ const topicList = dashboardData.topicList as any[]
                     <VRangeRating
                       :model-value="4"
                       readonly
-                    ></VRangeRating>
+                    />
                     <VIconButton
                       icon="lucide:arrow-right"
                       circle
@@ -240,7 +240,7 @@ const topicList = dashboardData.topicList as any[]
                     <VRangeRating
                       :model-value="5"
                       readonly
-                    ></VRangeRating>
+                    />
                     <VIconButton
                       icon="lucide:arrow-right"
                       circle
@@ -265,7 +265,7 @@ const topicList = dashboardData.topicList as any[]
                     <VRangeRating
                       :model-value="5"
                       readonly
-                    ></VRangeRating>
+                    />
                     <VIconButton
                       icon="lucide:arrow-right"
                       circle
@@ -313,7 +313,7 @@ const topicList = dashboardData.topicList as any[]
                     <VRangeRating
                       :model-value="5"
                       readonly
-                    ></VRangeRating>
+                    />
                     <VIconButton
                       icon="lucide:arrow-right"
                       circle
@@ -338,7 +338,7 @@ const topicList = dashboardData.topicList as any[]
                     <VRangeRating
                       :model-value="4"
                       readonly
-                    ></VRangeRating>
+                    />
                     <VIconButton
                       icon="lucide:arrow-right"
                       circle
@@ -363,7 +363,7 @@ const topicList = dashboardData.topicList as any[]
                     <VRangeRating
                       :model-value="5"
                       readonly
-                    ></VRangeRating>
+                    />
                     <VIconButton
                       icon="lucide:arrow-right"
                       circle
@@ -388,7 +388,7 @@ const topicList = dashboardData.topicList as any[]
                     <VRangeRating
                       :model-value="5"
                       readonly
-                    ></VRangeRating>
+                    />
                     <VIconButton
                       icon="lucide:arrow-right"
                       circle
@@ -419,7 +419,7 @@ const topicList = dashboardData.topicList as any[]
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:search"
-                  ></iconify-icon>
+                  />
                 </button>
               </div>
 

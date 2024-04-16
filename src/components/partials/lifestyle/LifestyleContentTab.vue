@@ -131,7 +131,7 @@ import {
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:arrow-right"
-                      ></iconify-icon>
+                      />
                       +0.8%</span>
                     more than usual.
                   </span>
@@ -154,7 +154,7 @@ import {
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:arrow-right"
-                      ></iconify-icon>
+                      />
                       -0.2%</span>
                     less than ususal.
                   </span>
@@ -177,7 +177,7 @@ import {
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:arrow-right"
-                      ></iconify-icon>
+                      />
                       +1.2%</span>
                     more than ususal.
                   </span>
@@ -200,7 +200,7 @@ import {
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:arrow-right"
-                      ></iconify-icon>
+                      />
                       +4.2%</span>
                     more than ususal.
                   </span>

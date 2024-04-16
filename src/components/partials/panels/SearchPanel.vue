@@ -59,12 +59,12 @@ function getAvatarData(user: UserPopover): VAvatarProps {
             aria-hidden="true"
             class="iconify ltr-hidden"
             icon="lucide:chevron-right"
-          ></iconify-icon>
+          />
           <iconify-icon
             aria-hidden="true"
             class="iconify rtl-hidden"
             icon="lucide:chevron-left"
-          ></iconify-icon>
+          />
         </a>
       </div>
       <div class="right-panel-body has-slimscroll">
@@ -115,7 +115,7 @@ function getAvatarData(user: UserPopover): VAvatarProps {
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:chrome"
-                  ></iconify-icon>
+                  />
                 </VIconBox>
               </template>
             </VBlock>
@@ -134,7 +134,7 @@ function getAvatarData(user: UserPopover): VAvatarProps {
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:tv"
-                  ></iconify-icon>
+                  />
                 </VIconBox>
               </template>
             </VBlock>
@@ -153,7 +153,7 @@ function getAvatarData(user: UserPopover): VAvatarProps {
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:twitter"
-                  ></iconify-icon>
+                  />
                 </VIconBox>
               </template>
             </VBlock>

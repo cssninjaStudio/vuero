@@ -288,7 +288,7 @@ const onSubmit = () => {
                       aria-hidden="true"
                       class="iconify"
                       icon="lucide:plus"
-                    ></iconify-icon>
+                    />
                   </button>
                 </div>
               </VControl>

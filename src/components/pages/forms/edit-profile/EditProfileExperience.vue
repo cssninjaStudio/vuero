@@ -158,7 +158,7 @@ const onSave = async () => {
                                 aria-hidden="true"
                                 class="iconify"
                                 icon="lucide:arrow-right"
-                              ></iconify-icon>
+                              />
                             </div>
                           </VControl>
                           <VControl subcontrol>

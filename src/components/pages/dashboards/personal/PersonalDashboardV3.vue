@@ -72,7 +72,7 @@ const userStack = userData.userStack as VAvatarProps[]
                             aria-hidden="true"
                             class="iconify"
                             icon="lucide:clock"
-                          ></iconify-icon>
+                          />
                         </VIconBox>
                       </template>
                     </VBlock>
@@ -94,7 +94,7 @@ const userStack = userData.userStack as VAvatarProps[]
                             aria-hidden="true"
                             class="iconify"
                             icon="lucide:radio"
-                          ></iconify-icon>
+                          />
                         </VIconBox>
                       </template>
                     </VBlock>
@@ -116,7 +116,7 @@ const userStack = userData.userStack as VAvatarProps[]
                             aria-hidden="true"
                             class="iconify"
                             icon="lucide:user-check"
-                          ></iconify-icon>
+                          />
                         </VIconBox>
                       </template>
                     </VBlock>
@@ -138,7 +138,7 @@ const userStack = userData.userStack as VAvatarProps[]
                             aria-hidden="true"
                             class="iconify"
                             icon="lucide:frown"
-                          ></iconify-icon>
+                          />
                         </VIconBox>
                       </template>
                     </VBlock>
@@ -192,12 +192,12 @@ const userStack = userData.userStack as VAvatarProps[]
                     aria-hidden="true"
                     class="iconify ltr-hidden"
                     icon="lucide:chevron-right"
-                  ></iconify-icon>
+                  />
                   <iconify-icon
                     aria-hidden="true"
                     class="iconify rtl-hidden"
                     icon="lucide:chevron-left"
-                  ></iconify-icon>
+                  />
                 </a>
               </div>
               <div class="center">
@@ -209,12 +209,12 @@ const userStack = userData.userStack as VAvatarProps[]
                     aria-hidden="true"
                     class="iconify rtl-hidden"
                     icon="lucide:chevron-right"
-                  ></iconify-icon>
+                  />
                   <iconify-icon
                     aria-hidden="true"
                     class="iconify ltr-hidden"
                     icon="lucide:chevron-left"
-                  ></iconify-icon>
+                  />
                 </a>
               </div>
             </div>
@@ -329,12 +329,12 @@ const userStack = userData.userStack as VAvatarProps[]
                 aria-hidden="true"
                 class="iconify rtl-hidden"
                 icon="lucide:chevron-right"
-              ></iconify-icon>
+              />
               <iconify-icon
                 aria-hidden="true"
                 class="iconify ltr-hidden"
                 icon="lucide:chevron-left"
-              ></iconify-icon>
+              />
             </template>
           </VBlock>
         </a>
@@ -355,12 +355,12 @@ const userStack = userData.userStack as VAvatarProps[]
                 aria-hidden="true"
                 class="iconify rtl-hidden"
                 icon="lucide:chevron-right"
-              ></iconify-icon>
+              />
               <iconify-icon
                 aria-hidden="true"
                 class="iconify ltr-hidden"
                 icon="lucide:chevron-left"
-              ></iconify-icon>
+              />
             </template>
           </VBlock>
         </a>
@@ -381,12 +381,12 @@ const userStack = userData.userStack as VAvatarProps[]
                 aria-hidden="true"
                 class="iconify rtl-hidden"
                 icon="lucide:chevron-right"
-              ></iconify-icon>
+              />
               <iconify-icon
                 aria-hidden="true"
                 class="iconify ltr-hidden"
                 icon="lucide:chevron-left"
-              ></iconify-icon>
+              />
             </template>
           </VBlock>
         </a>

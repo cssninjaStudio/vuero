@@ -87,7 +87,7 @@ useHead({
                       aria-hidden="true"
                       class="iconify"
                       icon="lucide:more-vertical"
-                    ></iconify-icon>
+                    />
                   </span>
                 </button>
               </div>
@@ -98,7 +98,7 @@ useHead({
                       aria-hidden="true"
                       class="iconify"
                       icon="lucide:refresh-cw"
-                    ></iconify-icon>
+                    />
                     <span>Refresh</span>
                   </a>
                   <a class="dropdown-item">
@@ -106,7 +106,7 @@ useHead({
                       aria-hidden="true"
                       class="iconify"
                       icon="lucide:bell"
-                    ></iconify-icon>
+                    />
                     <span>Notifications</span>
                   </a>
                   <a class="dropdown-item">
@@ -114,7 +114,7 @@ useHead({
                       aria-hidden="true"
                       class="iconify"
                       icon="lucide:user-plus"
-                    ></iconify-icon>
+                    />
                     <span>Invite People</span>
                   </a>
                   <a class="dropdown-item">
@@ -122,7 +122,7 @@ useHead({
                       aria-hidden="true"
                       class="iconify"
                       icon="lucide:settings"
-                    ></iconify-icon>
+                    />
                     <span>Settings</span>
                   </a>
                 </div>
@@ -140,7 +140,7 @@ useHead({
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:x"
-              ></iconify-icon>
+              />
             </a>
           </div>
           <!--Inner-->
@@ -162,7 +162,7 @@ useHead({
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:mail"
-                      ></iconify-icon>
+                      />
                       <span>Inbox</span>
                       <span class="tag">24</span>
                     </a>
@@ -179,7 +179,7 @@ useHead({
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:file-text"
-                      ></iconify-icon>
+                      />
                       <span>Drafts</span>
                       <span class="tag">2</span>
                     </a>
@@ -196,7 +196,7 @@ useHead({
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:send"
-                      ></iconify-icon>
+                      />
                       <span>Sent</span>
                       <span class="tag">7</span>
                     </a>
@@ -213,7 +213,7 @@ useHead({
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:trash-2"
-                      ></iconify-icon>
+                      />
                       <span>Trash</span>
                       <span class="tag">18</span>
                     </a>
@@ -230,7 +230,7 @@ useHead({
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:alert-octagon"
-                      ></iconify-icon>
+                      />
                       <span>Spam</span>
                       <span class="tag">29</span>
                     </a>
@@ -258,7 +258,7 @@ useHead({
                       aria-hidden="true"
                       class="iconify"
                       icon="lucide:search"
-                    ></iconify-icon>
+                    />
                   </div>
                 </div>
                 <a
@@ -277,7 +277,7 @@ useHead({
                       aria-hidden="true"
                       class="iconify"
                       icon="lucide:search"
-                    ></iconify-icon>
+                    />
                   </span>
                 </a>
                 <a
@@ -296,7 +296,7 @@ useHead({
                       aria-hidden="true"
                       class="iconify"
                       icon="lucide:x"
-                    ></iconify-icon>
+                    />
                   </span>
                 </a>
               </div>
@@ -382,7 +382,7 @@ useHead({
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:chevron-right"
-                ></iconify-icon>
+                />
               </a>
               <a
                 class="inbox-action check-all-action"
@@ -397,7 +397,7 @@ useHead({
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:check"
-                ></iconify-icon>
+                />
               </a>
             </div>
             <div class="actions">
@@ -412,7 +412,7 @@ useHead({
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:search"
-                  ></iconify-icon>
+                  />
                 </div>
               </div>
 
@@ -430,7 +430,7 @@ useHead({
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:more-vertical"
-                      ></iconify-icon>
+                      />
                     </span>
                   </button>
                 </div>
@@ -441,7 +441,7 @@ useHead({
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:check"
-                      ></iconify-icon>
+                      />
                       <span>Mark all as read</span>
                     </a>
                     <a class="dropdown-item">
@@ -449,7 +449,7 @@ useHead({
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:eye-off"
-                      ></iconify-icon>
+                      />
                       <span>Hide read</span>
                     </a>
                     <hr class="dropdown-divider">
@@ -458,7 +458,7 @@ useHead({
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:calendar"
-                      ></iconify-icon>
+                      />
                       <span>Sort by date</span>
                     </a>
                     <a class="dropdown-item">
@@ -466,7 +466,7 @@ useHead({
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:user"
-                      ></iconify-icon>
+                      />
                       <span>Sort by user</span>
                     </a>
                   </div>

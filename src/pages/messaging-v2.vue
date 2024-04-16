@@ -183,7 +183,7 @@ useHead({
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:search"
-                ></iconify-icon>
+                />
               </div>
               <div class="search-results has-slimscroll" />
             </div>
@@ -208,7 +208,7 @@ useHead({
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:grid"
-              ></iconify-icon>
+              />
             </a>
           </Toolbar>
 
@@ -236,7 +236,7 @@ useHead({
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:chevron-down"
-              ></iconify-icon>
+              />
             </div>
             <div
               class="dropdown-menu"
@@ -256,7 +256,7 @@ useHead({
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:user"
-                  ></iconify-icon>
+                  />
                   <span>Profile</span>
                 </a>
                 <a class="dropdown-item">
@@ -264,7 +264,7 @@ useHead({
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:edit-2"
-                  ></iconify-icon>
+                  />
                   <span>Edit Profile</span>
                 </a>
                 <a class="dropdown-item">
@@ -272,7 +272,7 @@ useHead({
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:box"
-                  ></iconify-icon>
+                  />
                   <span>Projects</span>
                 </a>
                 <a class="dropdown-item">
@@ -280,7 +280,7 @@ useHead({
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:settings"
-                  ></iconify-icon>
+                  />
                   <span>Settings</span>
                 </a>
                 <hr class="dropdown-divider">
@@ -292,7 +292,7 @@ useHead({
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:log-out"
-                  ></iconify-icon>
+                  />
                   <span>Sign Out</span>
                 </a>
               </div>
@@ -422,7 +422,7 @@ useHead({
                       aria-hidden="true"
                       class="iconify"
                       icon="lucide:plus"
-                    ></iconify-icon>
+                    />
                   </div>
                 </div>
                 <div
@@ -435,7 +435,7 @@ useHead({
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:video"
-                      ></iconify-icon>
+                      />
                       <div class="meta">
                         <span>Video</span>
                         <span>Embed a video</span>
@@ -449,7 +449,7 @@ useHead({
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:image"
-                      ></iconify-icon>
+                      />
                       <div class="meta">
                         <span>Images</span>
                         <span>Upload pictures</span>
@@ -463,7 +463,7 @@ useHead({
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:link"
-                      ></iconify-icon>
+                      />
                       <div class="meta">
                         <span>Link</span>
                         <span>Post a link</span>
@@ -478,7 +478,7 @@ useHead({
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:file"
-                      ></iconify-icon>
+                      />
                       <div class="meta">
                         <span>File</span>
                         <span>Upload a file</span>
@@ -494,7 +494,7 @@ useHead({
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:smile"
-                ></iconify-icon>
+                />
               </div>
             </div>
             <input

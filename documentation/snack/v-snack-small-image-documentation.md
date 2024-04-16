@@ -12,35 +12,35 @@ Use the `size="small"` prop on the component to show a smaller version of it.
     image="/demo/photos/misc/buoy.jpg"
     size="small"
   >
-    <iconify-icon class="iconify" icon="lucide:x"></iconify-icon>
+    <iconify-icon class="iconify" icon="lucide:x" />
   </VSnack>
   <VSnack
     title="Metamovies"
     image="/images/icons/logos/metamovies.svg"
     size="small"
   >
-    <iconify-icon class="iconify" icon="lucide:x"></iconify-icon>
+    <iconify-icon class="iconify" icon="lucide:x" />
   </VSnack>
   <VSnack
     title="Corporate"
     image="/demo/avatars/7.jpg"
     size="small"
   >
-    <iconify-icon class="iconify" icon="lucide:x"></iconify-icon>
+    <iconify-icon class="iconify" icon="lucide:x" />
   </VSnack>
   <VSnack
     title="English"
     image="/images/icons/flags/united-states-of-america.svg"
     size="small"
   >
-    <iconify-icon class="iconify" icon="lucide:x"></iconify-icon>
+    <iconify-icon class="iconify" icon="lucide:x" />
   </VSnack>
   <VSnack
     title="Slicer"
     image="/images/icons/logos/slicer.svg"
     size="small"
   >
-    <iconify-icon class="iconify" icon="lucide:x"></iconify-icon>
+    <iconify-icon class="iconify" icon="lucide:x" />
   </VSnack>
 </template>
 ```
@@ -51,19 +51,19 @@ Use the `size="small"` prop on the component to show a smaller version of it.
 
 <div class="snacks">
     <VSnack title="Support" image="/demo/photos/misc/buoy.jpg" size="small">
-        <iconify-icon class="iconify" icon="lucide:x"></iconify-icon>
+        <iconify-icon class="iconify" icon="lucide:x"/>
     </VSnack>
     <VSnack title="Metamovies" image="/images/icons/logos/metamovies.svg" size="small">
-        <iconify-icon class="iconify" icon="lucide:x"></iconify-icon>
+        <iconify-icon class="iconify" icon="lucide:x"/>
     </VSnack>
     <VSnack title="Corporate" image="/demo/avatars/7.jpg" size="small">
-        <iconify-icon class="iconify" icon="lucide:x"></iconify-icon>
+        <iconify-icon class="iconify" icon="lucide:x"/>
     </VSnack>
     <VSnack title="English" image="/images/icons/flags/united-states-of-america.svg" size="small">
-        <iconify-icon class="iconify" icon="lucide:x"></iconify-icon>
+        <iconify-icon class="iconify" icon="lucide:x"/>
     </VSnack>
     <VSnack title="Slicer" image="/images/icons/logos/slicer.svg" size="small">
-        <iconify-icon class="iconify" icon="lucide:x"></iconify-icon>
+        <iconify-icon class="iconify" icon="lucide:x"/>
     </VSnack>
 </div>
 

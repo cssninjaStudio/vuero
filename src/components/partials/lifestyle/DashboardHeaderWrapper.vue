@@ -17,7 +17,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
               aria-hidden="true"
               class="iconify"
               icon="lucide:plus"
-            ></iconify-icon>
+            />
           </span>
         </button>
       </div>

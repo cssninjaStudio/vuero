@@ -98,7 +98,7 @@ watch(
               aria-hidden="true"
               class="iconify"
               icon="lucide:activity"
-            ></iconify-icon>
+            />
           </a>
         </li>
         <li>
@@ -114,7 +114,7 @@ watch(
               aria-hidden="true"
               class="iconify"
               icon="lucide:grid"
-            ></iconify-icon>
+            />
           </a>
         </li>
         <li>
@@ -130,7 +130,7 @@ watch(
               aria-hidden="true"
               class="iconify"
               icon="lucide:box"
-            ></iconify-icon>
+            />
           </a>
         </li>
         <li>
@@ -146,7 +146,7 @@ watch(
               aria-hidden="true"
               class="iconify"
               icon="lucide:cpu"
-            ></iconify-icon>
+            />
           </a>
         </li>
         <li>
@@ -155,7 +155,7 @@ watch(
               aria-hidden="true"
               class="iconify"
               icon="lucide:message-circle"
-            ></iconify-icon>
+            />
           </RouterLink>
         </li>
       </template>
@@ -173,7 +173,7 @@ watch(
               aria-hidden="true"
               class="iconify"
               icon="lucide:search"
-            ></iconify-icon>
+            />
           </a>
         </li>
         <li>
@@ -185,7 +185,7 @@ watch(
               aria-hidden="true"
               class="iconify"
               icon="lucide:settings"
-            ></iconify-icon>
+            />
           </a>
         </li>
       </template>
@@ -232,7 +232,7 @@ watch(
               aria-hidden="true"
               class="iconify sidebar-svg"
               icon="lucide:activity"
-            ></iconify-icon>
+            />
           </a>
         </li>
 
@@ -251,7 +251,7 @@ watch(
               aria-hidden="true"
               class="iconify sidebar-svg"
               icon="lucide:grid"
-            ></iconify-icon>
+            />
           </a>
         </li>
 
@@ -270,7 +270,7 @@ watch(
               aria-hidden="true"
               class="iconify sidebar-svg"
               icon="lucide:box"
-            ></iconify-icon>
+            />
           </a>
         </li>
 
@@ -289,7 +289,7 @@ watch(
               aria-hidden="true"
               class="iconify sidebar-svg"
               icon="lucide:cpu"
-            ></iconify-icon>
+            />
           </a>
         </li>
 
@@ -304,7 +304,7 @@ watch(
               aria-hidden="true"
               class="iconify sidebar-svg"
               icon="lucide:message-circle"
-            ></iconify-icon>
+            />
           </RouterLink>
         </li>
       </template>
@@ -329,7 +329,7 @@ watch(
               aria-hidden="true"
               class="iconify sidebar-svg"
               icon="lucide:search"
-            ></iconify-icon>
+            />
           </a>
           <a
             aria-label="Close all panels"
@@ -343,7 +343,7 @@ watch(
               aria-hidden="true"
               class="iconify sidebar-svg"
               icon="lucide:x"
-            ></iconify-icon>
+            />
           </a>
         </li>
 
@@ -358,7 +358,7 @@ watch(
               aria-hidden="true"
               class="iconify sidebar-svg"
               icon="lucide:settings"
-            ></iconify-icon>
+            />
           </RouterLink>
         </li>
 
@@ -457,7 +457,7 @@ watch(
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:grid"
-                ></iconify-icon>
+                />
               </a>
             </Toolbar>
           </div>

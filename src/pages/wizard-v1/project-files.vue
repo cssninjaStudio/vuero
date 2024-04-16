@@ -256,7 +256,7 @@ watch(previewTemplate, () => {
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:plus"
-                  ></iconify-icon>
+                  />
                 </span>
               </div>
               <div class="uploader-action">
@@ -270,7 +270,7 @@ watch(previewTemplate, () => {
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:upload"
-                  ></iconify-icon>
+                  />
                 </button>
               </div>
               <div class="uploader-action">
@@ -284,7 +284,7 @@ watch(previewTemplate, () => {
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:x"
-                  ></iconify-icon>
+                  />
                 </button>
               </div>
             </div>
@@ -378,7 +378,7 @@ watch(previewTemplate, () => {
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:play"
-                  ></iconify-icon>
+                  />
                 </button>
                 <button
                   data-dz-remove
@@ -390,7 +390,7 @@ watch(previewTemplate, () => {
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:arrow-left"
-                  ></iconify-icon>
+                  />
                 </button>
                 <button
                   data-dz-remove
@@ -401,7 +401,7 @@ watch(previewTemplate, () => {
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:trash-2"
-                  ></iconify-icon>
+                  />
                 </button>
               </div>
             </div>

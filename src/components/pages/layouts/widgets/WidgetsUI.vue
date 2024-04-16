@@ -70,7 +70,7 @@ const { trendWidgetChartOptions } = useTrendWidgetChart()
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:search"
-                ></iconify-icon>
+                />
               </button>
             </div>
 
@@ -127,7 +127,7 @@ const { trendWidgetChartOptions } = useTrendWidgetChart()
                   aria-hidden="true"
                   class="iconify rtl-reflect"
                   icon="lucide:chevron-left"
-                ></iconify-icon>
+                />
               </a>
             </div>
             <div class="center">
@@ -139,7 +139,7 @@ const { trendWidgetChartOptions } = useTrendWidgetChart()
                   aria-hidden="true"
                   class="iconify rtl-reflect"
                   icon="lucide:chevron-right"
-                ></iconify-icon>
+                />
               </a>
             </div>
           </div>
@@ -328,7 +328,7 @@ const { trendWidgetChartOptions } = useTrendWidgetChart()
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:trending-up"
-                  ></iconify-icon>
+                  />
                 </span>
                 <span>Earned from Sales</span>
               </div>

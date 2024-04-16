@@ -124,14 +124,14 @@ function getAvatarData(user: any): VAvatarProps {
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:lock"
-                  ></iconify-icon>
+                  />
                 </span>
                 <span class="inactive">
                   <iconify-icon
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:check"
-                  ></iconify-icon>
+                  />
                 </span>
               </span>
             </label>
@@ -163,7 +163,7 @@ function getAvatarData(user: any): VAvatarProps {
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:eye"
-                  ></iconify-icon>
+                  />
                 </span>
                 <span>View</span>
               </button>
@@ -173,7 +173,7 @@ function getAvatarData(user: any): VAvatarProps {
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:edit-2"
-                  ></iconify-icon>
+                  />
                 </span>
                 <span>Edit</span>
               </button>

@@ -58,7 +58,7 @@ const layoutComponent = (slug?: string) => {
         aria-hidden="true"
         class="iconify sidebar-svg"
         icon="lucide:sidebar"
-      ></iconify-icon>
+      />
     </a>
     <VModal
       :open="isModalOpen"
@@ -135,7 +135,7 @@ const layoutComponent = (slug?: string) => {
                             aria-hidden="true"
                             class="iconify"
                             icon="lucide:check"
-                          ></iconify-icon>
+                          />
                         </div>
                       </RouterLink>
                     </div>
@@ -176,7 +176,7 @@ const layoutComponent = (slug?: string) => {
                             aria-hidden="true"
                             class="iconify"
                             icon="lucide:check"
-                          ></iconify-icon>
+                          />
                         </div>
                       </RouterLink>
                     </div>
@@ -218,7 +218,7 @@ const layoutComponent = (slug?: string) => {
                             aria-hidden="true"
                             class="iconify"
                             icon="lucide:check"
-                          ></iconify-icon>
+                          />
                         </div>
                       </RouterLink>
                     </div>
@@ -265,7 +265,7 @@ const layoutComponent = (slug?: string) => {
                             aria-hidden="true"
                             class="iconify"
                             icon="lucide:check"
-                          ></iconify-icon>
+                          />
                         </div>
                       </RouterLink>
                     </div>
@@ -307,7 +307,7 @@ const layoutComponent = (slug?: string) => {
                             aria-hidden="true"
                             class="iconify"
                             icon="lucide:check"
-                          ></iconify-icon>
+                          />
                         </div>
                       </RouterLink>
                     </div>
@@ -354,7 +354,7 @@ const layoutComponent = (slug?: string) => {
                             aria-hidden="true"
                             class="iconify"
                             icon="lucide:check"
-                          ></iconify-icon>
+                          />
                         </div>
                       </RouterLink>
                     </div>
@@ -396,7 +396,7 @@ const layoutComponent = (slug?: string) => {
                             aria-hidden="true"
                             class="iconify"
                             icon="lucide:check"
-                          ></iconify-icon>
+                          />
                         </div>
                       </RouterLink>
                     </div>
@@ -438,7 +438,7 @@ const layoutComponent = (slug?: string) => {
                             aria-hidden="true"
                             class="iconify"
                             icon="lucide:check"
-                          ></iconify-icon>
+                          />
                         </div>
                       </RouterLink>
                     </div>
@@ -485,7 +485,7 @@ const layoutComponent = (slug?: string) => {
                             aria-hidden="true"
                             class="iconify"
                             icon="lucide:check"
-                          ></iconify-icon>
+                          />
                         </div>
                       </RouterLink>
                     </div>
@@ -527,7 +527,7 @@ const layoutComponent = (slug?: string) => {
                             aria-hidden="true"
                             class="iconify"
                             icon="lucide:check"
-                          ></iconify-icon>
+                          />
                         </div>
                       </RouterLink>
                     </div>
@@ -569,7 +569,7 @@ const layoutComponent = (slug?: string) => {
                             aria-hidden="true"
                             class="iconify"
                             icon="lucide:check"
-                          ></iconify-icon>
+                          />
                         </div>
                       </RouterLink>
                     </div>
@@ -611,7 +611,7 @@ const layoutComponent = (slug?: string) => {
                             aria-hidden="true"
                             class="iconify"
                             icon="lucide:check"
-                          ></iconify-icon>
+                          />
                         </div>
                       </RouterLink>
                     </div>
@@ -653,7 +653,7 @@ const layoutComponent = (slug?: string) => {
                             aria-hidden="true"
                             class="iconify"
                             icon="lucide:check"
-                          ></iconify-icon>
+                          />
                         </div>
                       </RouterLink>
                     </div>
@@ -695,7 +695,7 @@ const layoutComponent = (slug?: string) => {
                             aria-hidden="true"
                             class="iconify"
                             icon="lucide:check"
-                          ></iconify-icon>
+                          />
                         </div>
                       </RouterLink>
                     </div>
@@ -737,7 +737,7 @@ const layoutComponent = (slug?: string) => {
                             aria-hidden="true"
                             class="iconify"
                             icon="lucide:check"
-                          ></iconify-icon>
+                          />
                         </div>
                       </RouterLink>
                     </div>
@@ -785,7 +785,7 @@ const layoutComponent = (slug?: string) => {
                             aria-hidden="true"
                             class="iconify"
                             icon="lucide:check"
-                          ></iconify-icon>
+                          />
                         </div>
                       </RouterLink>
                     </div>
@@ -828,7 +828,7 @@ const layoutComponent = (slug?: string) => {
                             aria-hidden="true"
                             class="iconify"
                             icon="lucide:check"
-                          ></iconify-icon>
+                          />
                         </div>
                       </RouterLink>
                     </div>
@@ -871,7 +871,7 @@ const layoutComponent = (slug?: string) => {
                             aria-hidden="true"
                             class="iconify"
                             icon="lucide:check"
-                          ></iconify-icon>
+                          />
                         </div>
                       </RouterLink>
                     </div>
@@ -914,7 +914,7 @@ const layoutComponent = (slug?: string) => {
                             aria-hidden="true"
                             class="iconify"
                             icon="lucide:check"
-                          ></iconify-icon>
+                          />
                         </div>
                       </RouterLink>
                     </div>

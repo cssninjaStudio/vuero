@@ -22,7 +22,7 @@ Resize your screen to see it in action.
         size="medium"
         rounded
       >
-        <iconify-icon class="iconify" icon="lucide:chrome"></iconify-icon>
+        <iconify-icon class="iconify" icon="lucide:chrome" />
       </VIconBox>
     </template>
     <template #action>
@@ -50,7 +50,7 @@ Resize your screen to see it in action.
       >
         <template #icon>
           <VIconBox color="info" size="medium" rounded>
-            <iconify-icon class="iconify" icon="lucide:chrome"></iconify-icon>
+            <iconify-icon class="iconify" icon="lucide:chrome"/>
           </VIconBox>
         </template>
         <template #action>

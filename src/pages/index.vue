@@ -46,23 +46,23 @@ useHead({
                 <iconify-icon
                   class="iconify"
                   icon="uiw:star-on"
-                ></iconify-icon>
+                />
                 <iconify-icon
                   class="iconify"
                   icon="uiw:star-on"
-                ></iconify-icon>
+                />
                 <iconify-icon
                   class="iconify"
                   icon="uiw:star-on"
-                ></iconify-icon>
+                />
                 <iconify-icon
                   class="iconify"
                   icon="uiw:star-on"
-                ></iconify-icon>
+                />
                 <iconify-icon
                   class="iconify"
                   icon="uiw:star-on"
-                ></iconify-icon>
+                />
               </div>
             </div>
 
@@ -355,7 +355,7 @@ useHead({
                   <iconify-icon
                     class="iconify"
                     icon="mdi:vuejs"
-                  ></iconify-icon>
+                  />
                 </div>
                 <h3>Vue 3</h3>
                 <p>
@@ -367,7 +367,7 @@ useHead({
                   <iconify-icon
                     class="iconify"
                     icon="bxl:typescript"
-                  ></iconify-icon>
+                  />
                 </div>
                 <h3>Typescript</h3>
                 <p>Typescript makes things much more simpler but remains optional.</p>
@@ -377,7 +377,7 @@ useHead({
                   <iconify-icon
                     class="iconify smaller"
                     icon="simple-icons:vite"
-                  ></iconify-icon>
+                  />
                 </div>
                 <h3>Vite JS</h3>
                 <p>
@@ -390,7 +390,7 @@ useHead({
                   <iconify-icon
                     class="iconify smaller"
                     icon="akar-icons:vscode-fill"
-                  ></iconify-icon>
+                  />
                 </div>
                 <h3>VS Code Integration</h3>
                 <p>
@@ -403,7 +403,7 @@ useHead({
                   <iconify-icon
                     class="iconify smaller"
                     icon="file-icons:eslint"
-                  ></iconify-icon>
+                  />
                 </div>
                 <h3>ES Lint</h3>
                 <p>
@@ -416,7 +416,7 @@ useHead({
                   <iconify-icon
                     class="iconify smaller"
                     icon="file-icons:prettier"
-                  ></iconify-icon>
+                  />
                 </div>
                 <h3>Prettier</h3>
                 <p>
@@ -429,7 +429,7 @@ useHead({
                   <iconify-icon
                     class="iconify smaller"
                     icon="file-icons:stylelint"
-                  ></iconify-icon>
+                  />
                 </div>
                 <h3>Stylelint</h3>
                 <p>
@@ -442,7 +442,7 @@ useHead({
                   <iconify-icon
                     class="iconify smaller"
                     icon="simple-icons:iconify"
-                  ></iconify-icon>
+                  />
                 </div>
                 <h3>Iconify</h3>
                 <p>
@@ -455,7 +455,7 @@ useHead({
                   <iconify-icon
                     class="iconify smaller"
                     icon="simple-icons:cypress"
-                  ></iconify-icon>
+                  />
                 </div>
                 <h3>Cypress</h3>
                 <p>
@@ -468,7 +468,7 @@ useHead({
                   <iconify-icon
                     class="iconify smaller"
                     icon="file-icons:pnpm"
-                  ></iconify-icon>
+                  />
                 </div>
                 <h3>Pnpm + Yarn</h3>
                 <p>
@@ -481,7 +481,7 @@ useHead({
                   <iconify-icon
                     class="iconify smaller"
                     icon="simple-icons:docker"
-                  ></iconify-icon>
+                  />
                 </div>
                 <h3>Docker</h3>
                 <p>
@@ -494,7 +494,7 @@ useHead({
                   <iconify-icon
                     class="iconify smaller"
                     icon="mdi:robot"
-                  ></iconify-icon>
+                  />
                 </div>
                 <h3>Robot Friendly</h3>
                 <p>
@@ -507,7 +507,7 @@ useHead({
                   <iconify-icon
                     class="iconify smaller"
                     icon="ic:twotone-check-circle"
-                  ></iconify-icon>
+                  />
                 </div>
                 <h3>Props Validation</h3>
                 <p>
@@ -520,7 +520,7 @@ useHead({
                   <iconify-icon
                     class="iconify smaller"
                     icon="solar:folder-error-bold"
-                  ></iconify-icon>
+                  />
                 </div>
                 <h3>Error Handling</h3>
                 <p>
@@ -533,7 +533,7 @@ useHead({
                   <iconify-icon
                     class="iconify smaller"
                     icon="solar:sidebar-minimalistic-bold"
-                  ></iconify-icon>
+                  />
                 </div>
                 <h3>Project Structure</h3>
                 <p>
@@ -546,7 +546,7 @@ useHead({
                   <iconify-icon
                     class="iconify smaller"
                     icon="ic:round-menu-book"
-                  ></iconify-icon>
+                  />
                 </div>
                 <h3>Component Guide</h3>
                 <p>
@@ -698,7 +698,7 @@ useHead({
                   <iconify-icon
                     class="iconify ml-1"
                     icon="lucide:external-link"
-                  ></iconify-icon>
+                  />
                 </a>
               </div>
             </div>

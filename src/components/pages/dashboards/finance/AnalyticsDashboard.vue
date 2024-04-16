@@ -44,7 +44,7 @@ const { optionsCircle } = useGrowthRadialChart()
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:trending-up"
-                  ></iconify-icon>
+                  />
                 </span>
                 <span>since last month</span>
               </div>
@@ -77,7 +77,7 @@ const { optionsCircle } = useGrowthRadialChart()
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:trending-down"
-                  ></iconify-icon>
+                  />
                 </span>
                 <span>going down</span>
               </div>
@@ -110,7 +110,7 @@ const { optionsCircle } = useGrowthRadialChart()
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:trending-up"
-                  ></iconify-icon>
+                  />
                 </span>
                 <span>going up</span>
               </div>
@@ -196,7 +196,7 @@ const { optionsCircle } = useGrowthRadialChart()
                       aria-hidden="true"
                       class="iconify"
                       icon="lucide:trending-up"
-                    ></iconify-icon>
+                    />
                   </span>
                   <span>since last month</span>
                 </div>
@@ -260,12 +260,12 @@ const { optionsCircle } = useGrowthRadialChart()
                     aria-hidden="true"
                     class="iconify ltr-hidden"
                     icon="lucide:chevron-right"
-                  ></iconify-icon>
+                  />
                   <iconify-icon
                     aria-hidden="true"
                     class="iconify rtl-hidden"
                     icon="lucide:chevron-left"
-                  ></iconify-icon>
+                  />
                 </a>
               </div>
               <div class="center">
@@ -277,12 +277,12 @@ const { optionsCircle } = useGrowthRadialChart()
                     aria-hidden="true"
                     class="iconify rtl-hidden"
                     icon="lucide:chevron-right"
-                  ></iconify-icon>
+                  />
                   <iconify-icon
                     aria-hidden="true"
                     class="iconify ltr-hidden"
                     icon="lucide:chevron-left"
-                  ></iconify-icon>
+                  />
                 </a>
               </div>
             </div>

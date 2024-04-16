@@ -21,7 +21,7 @@ const dropdown = useDropdown(dropdownElement)
         aria-hidden="true"
         class="iconify"
         icon="lucide:bell"
-      ></iconify-icon>
+      />
       <span class="new-indicator pulsate" />
     </a>
     <div class="navbar-dropdown is-boxed is-right">

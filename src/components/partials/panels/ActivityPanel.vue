@@ -36,12 +36,12 @@ const activeTab = ref<TabId>('team')
             aria-hidden="true"
             class="iconify rtl-hidden"
             icon="lucide:chevron-right"
-          ></iconify-icon>
+          />
           <iconify-icon
             aria-hidden="true"
             class="iconify ltr-hidden"
             icon="lucide:chevron-left"
-          ></iconify-icon>
+          />
         </a>
       </div>
       <div class="tabs-wrapper is-triple-slider is-squared">
@@ -97,7 +97,7 @@ const activeTab = ref<TabId>('team')
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:map-pin"
-                  ></iconify-icon>
+                  />
                   Las Vegas, NV
                 </span>
               </div>
@@ -106,12 +106,12 @@ const activeTab = ref<TabId>('team')
                   aria-hidden="true"
                   class="iconify rtl-hidden"
                   icon="lucide:arrow-right"
-                ></iconify-icon>
+                />
                 <iconify-icon
                   aria-hidden="true"
                   class="iconify ltr-hidden"
                   icon="lucide:arrow-left"
-                ></iconify-icon>
+                />
               </a>
             </div>
 
@@ -129,7 +129,7 @@ const activeTab = ref<TabId>('team')
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:map-pin"
-                  ></iconify-icon>
+                  />
                   San Jose, CA
                 </span>
               </div>
@@ -138,12 +138,12 @@ const activeTab = ref<TabId>('team')
                   aria-hidden="true"
                   class="iconify rtl-hidden"
                   icon="lucide:arrow-right"
-                ></iconify-icon>
+                />
                 <iconify-icon
                   aria-hidden="true"
                   class="iconify ltr-hidden"
                   icon="lucide:arrow-left"
-                ></iconify-icon>
+                />
               </a>
             </div>
 
@@ -161,7 +161,7 @@ const activeTab = ref<TabId>('team')
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:map-pin"
-                  ></iconify-icon>
+                  />
                   Miami, FL
                 </span>
               </div>
@@ -170,12 +170,12 @@ const activeTab = ref<TabId>('team')
                   aria-hidden="true"
                   class="iconify rtl-hidden"
                   icon="lucide:arrow-right"
-                ></iconify-icon>
+                />
                 <iconify-icon
                   aria-hidden="true"
                   class="iconify ltr-hidden"
                   icon="lucide:arrow-left"
-                ></iconify-icon>
+                />
               </a>
             </div>
 
@@ -193,7 +193,7 @@ const activeTab = ref<TabId>('team')
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:map-pin"
-                  ></iconify-icon>
+                  />
                   New York, NY
                 </span>
               </div>
@@ -202,12 +202,12 @@ const activeTab = ref<TabId>('team')
                   aria-hidden="true"
                   class="iconify rtl-hidden"
                   icon="lucide:arrow-right"
-                ></iconify-icon>
+                />
                 <iconify-icon
                   aria-hidden="true"
                   class="iconify ltr-hidden"
                   icon="lucide:arrow-left"
-                ></iconify-icon>
+                />
               </a>
             </div>
           </div>
@@ -235,12 +235,12 @@ const activeTab = ref<TabId>('team')
                     aria-hidden="true"
                     class="iconify rtl-hidden"
                     icon="lucide:arrow-right"
-                  ></iconify-icon>
+                  />
                   <iconify-icon
                     aria-hidden="true"
                     class="iconify ltr-hidden"
                     icon="lucide:arrow-left"
-                  ></iconify-icon>
+                  />
                 </a>
               </div>
               <div class="project-foot">
@@ -287,12 +287,12 @@ const activeTab = ref<TabId>('team')
                     aria-hidden="true"
                     class="iconify rtl-hidden"
                     icon="lucide:arrow-right"
-                  ></iconify-icon>
+                  />
                   <iconify-icon
                     aria-hidden="true"
                     class="iconify ltr-hidden"
                     icon="lucide:arrow-left"
-                  ></iconify-icon>
+                  />
                 </a>
               </div>
               <div class="project-foot">
@@ -335,12 +335,12 @@ const activeTab = ref<TabId>('team')
                     aria-hidden="true"
                     class="iconify rtl-hidden"
                     icon="lucide:arrow-right"
-                  ></iconify-icon>
+                  />
                   <iconify-icon
                     aria-hidden="true"
                     class="iconify ltr-hidden"
                     icon="lucide:arrow-left"
-                  ></iconify-icon>
+                  />
                 </a>
               </div>
               <div class="project-foot">
@@ -380,7 +380,7 @@ const activeTab = ref<TabId>('team')
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:phone-call"
-                  ></iconify-icon>
+                  />
                 </div>
                 <div class="timeline-content">
                   <p>Call Danny at Colby's</p>
@@ -409,7 +409,7 @@ const activeTab = ref<TabId>('team')
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:message-circle"
-                  ></iconify-icon>
+                  />
                 </div>
                 <div class="timeline-content">
                   <p>Answer Annie's message</p>
@@ -423,7 +423,7 @@ const activeTab = ref<TabId>('team')
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:mail"
-                  ></iconify-icon>
+                  />
                 </div>
                 <div class="timeline-content">
                   <p>Send new campaign</p>
@@ -437,7 +437,7 @@ const activeTab = ref<TabId>('team')
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:smile"
-                  ></iconify-icon>
+                  />
                 </div>
                 <div class="timeline-content">
                   <p>Project review</p>
@@ -451,7 +451,7 @@ const activeTab = ref<TabId>('team')
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:phone-call"
-                  ></iconify-icon>
+                  />
                 </div>
                 <div class="timeline-content">
                   <p>Call Trisha Jackson</p>
@@ -465,7 +465,7 @@ const activeTab = ref<TabId>('team')
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:feather"
-                  ></iconify-icon>
+                  />
                 </div>
                 <div class="timeline-content">
                   <p>Write proposal for Don</p>

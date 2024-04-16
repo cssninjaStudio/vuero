@@ -24,7 +24,7 @@ const props = defineProps<{
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:activity"
-              ></iconify-icon>
+              />
             </a>
           </li>
         </slot>

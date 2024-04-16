@@ -193,8 +193,8 @@ export default defineComponent({
       let iconWrapper
       if (isIconify.value) {
         const icon = h('iconify-icon', {
-          'class': 'iconify',
-          'icon': props.icon,
+          class: 'iconify',
+          icon: props.icon,
         })
         iconWrapper = h('span', { class: 'icon' }, icon)
       }
@@ -206,8 +206,8 @@ export default defineComponent({
       let caretWrapper
       if (isCaretIconify.value) {
         const caret = h('iconify-icon', {
-          'class': 'iconify',
-          'icon': props.iconCaret,
+          class: 'iconify',
+          icon: props.iconCaret,
         })
         caretWrapper = h('span', { class: 'caret' }, caret)
       }

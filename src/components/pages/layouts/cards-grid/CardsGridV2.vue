@@ -154,7 +154,7 @@ const optionsSingle = [
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:calendar"
-                      ></iconify-icon>{{ item.dueDate }}
+                      />{{ item.dueDate }}
                     </p>
                   </div>
                   <VAvatarStack

@@ -35,7 +35,7 @@ const props = defineProps<{
           aria-hidden="true"
           class="iconify"
           icon="lucide:chevron-right"
-        ></iconify-icon>
+        />
       </a>
     </div>
   </div>

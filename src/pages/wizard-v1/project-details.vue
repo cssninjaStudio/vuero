@@ -133,7 +133,7 @@ const selectCustomer = (customer: WizardCustomer | null) => {
                       aria-hidden="true"
                       class="iconify"
                       icon="lucide:map-pin"
-                    ></iconify-icon>
+                    />
                   </div>
                   <VControl>
                     <input
@@ -151,7 +151,7 @@ const selectCustomer = (customer: WizardCustomer | null) => {
                       aria-hidden="true"
                       class="iconify"
                       icon="lucide:flag"
-                    ></iconify-icon>
+                    />
                   </div>
                   <VControl>
                     <input

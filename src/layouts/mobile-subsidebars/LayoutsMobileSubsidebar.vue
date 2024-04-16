@@ -13,12 +13,12 @@
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
 
           <RouterLink
@@ -70,12 +70,12 @@
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
           <RouterLink
             to="/sidebar/layouts/list-flex-1"
@@ -116,12 +116,12 @@
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
 
           <RouterLink
@@ -163,12 +163,12 @@
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
           <RouterLink
             to="/sidebar/layouts/form-layouts-1"
@@ -229,12 +229,12 @@
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
           <RouterLink
             to="/sidebar/layouts/placeload-1"
@@ -287,12 +287,12 @@
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
           <RouterLink
             to="/sidebar/layouts/grid-cards-1"
@@ -343,12 +343,12 @@
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
 
           <RouterLink
@@ -390,12 +390,12 @@
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
 
           <RouterLink
@@ -448,12 +448,12 @@
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
 
           <RouterLink
@@ -505,12 +505,12 @@
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
         </VCollapseLinks>
 
@@ -521,12 +521,12 @@
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
           <RouterLink
             to="/auth/login"
@@ -617,12 +617,12 @@
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
 
           <RouterLink
@@ -664,12 +664,12 @@
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
 
           <RouterLink
@@ -685,7 +685,7 @@
               aria-hidden="true"
               class="iconify is-auto"
               icon="lucide:map-pin"
-            ></iconify-icon>
+            />
           </RouterLink>
           <RouterLink
             to="/sidebar/layouts/projects-projects-2"
@@ -700,7 +700,7 @@
               aria-hidden="true"
               class="iconify is-auto"
               icon="lucide:map-pin"
-            ></iconify-icon>
+            />
           </RouterLink>
           <RouterLink
             to="/sidebar/layouts/projects-projects-3"
@@ -715,7 +715,7 @@
               aria-hidden="true"
               class="iconify is-auto"
               icon="lucide:map-pin"
-            ></iconify-icon>
+            />
           </RouterLink>
           <RouterLink
             to="/sidebar/layouts/projects-details"
@@ -730,7 +730,7 @@
               aria-hidden="true"
               class="iconify is-auto"
               icon="lucide:map-pin"
-            ></iconify-icon>
+            />
           </RouterLink>
           <RouterLink
             to="/sidebar/layouts/kanban-board"
@@ -745,7 +745,7 @@
               aria-hidden="true"
               class="iconify is-auto"
               icon="lucide:map-pin"
-            ></iconify-icon>
+            />
           </RouterLink>
         </VCollapseLinks>
 
@@ -757,12 +757,12 @@
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
 
           <RouterLink
@@ -823,12 +823,12 @@
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
 
           <RouterLink
@@ -900,12 +900,12 @@
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
 
           <RouterLink

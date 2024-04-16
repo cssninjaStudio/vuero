@@ -432,7 +432,7 @@ watch(
                       aria-hidden="true"
                       class="iconify"
                       icon="lucide:flag"
-                    ></iconify-icon>
+                    />
                     <span class="dark-inverted">
                       {{ feature.properties.distance }} mile
                     </span>

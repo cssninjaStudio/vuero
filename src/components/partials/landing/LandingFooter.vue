@@ -23,7 +23,7 @@
               <iconify-icon
                 class="iconify ml-1"
                 icon="lucide:external-link"
-              ></iconify-icon>
+              />
             </a>
           </div>
         </div>

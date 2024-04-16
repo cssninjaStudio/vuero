@@ -47,7 +47,7 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:plus"
-                ></iconify-icon>
+                />
               </span>
             </button>
           </div>
@@ -418,12 +418,12 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
                       aria-hidden="true"
                       class="iconify rtl-hidden"
                       icon="lucide:arrow-right"
-                    ></iconify-icon>
+                    />
                     <iconify-icon
                       aria-hidden="true"
                       class="iconify ltr-hidden"
                       icon="lucide:arrow-left"
-                    ></iconify-icon>
+                    />
                   </a>
                 </div>
               </div>

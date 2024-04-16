@@ -294,7 +294,7 @@ const options = ref(['All Flights', 'All Options'])
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:search"
-                  ></iconify-icon>
+                  />
                 </button>
               </div>
 
@@ -317,12 +317,12 @@ const options = ref(['All Flights', 'All Options'])
                     aria-hidden="true"
                     class="iconify ltr-hidden"
                     icon="lucide:chevron-right"
-                  ></iconify-icon>
+                  />
                   <iconify-icon
                     aria-hidden="true"
                     class="iconify rtl-hidden"
                     icon="lucide:chevron-left"
-                  ></iconify-icon>
+                  />
                 </a>
               </div>
               <div class="center">
@@ -334,12 +334,12 @@ const options = ref(['All Flights', 'All Options'])
                     aria-hidden="true"
                     class="iconify rtl-hidden"
                     icon="lucide:chevron-right"
-                  ></iconify-icon>
+                  />
                   <iconify-icon
                     aria-hidden="true"
                     class="iconify ltr-hidden"
                     icon="lucide:chevron-left"
-                  ></iconify-icon>
+                  />
                 </a>
               </div>
             </div>

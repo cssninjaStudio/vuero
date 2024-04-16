@@ -178,7 +178,7 @@ watchPostEffect(() => {
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:x"
-                      ></iconify-icon>
+                      />
                     </div>
                   </div>
                 </div>

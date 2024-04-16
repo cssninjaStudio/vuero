@@ -151,7 +151,7 @@ onMounted(() => {
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:plus"
-              ></iconify-icon>
+              />
             </div>
             <div>
               <span class="task-count">{{ newTasks.length }}</span>
@@ -269,7 +269,7 @@ onMounted(() => {
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:plus"
-              ></iconify-icon>
+              />
             </div>
             <div>
               <span class="task-count">{{ progressTasks.length }}</span>
@@ -332,7 +332,7 @@ onMounted(() => {
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:clock"
-                      ></iconify-icon>
+                      />
                       {{ task.dueDate }}
                     </span>
 
@@ -375,7 +375,7 @@ onMounted(() => {
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:plus"
-              ></iconify-icon>
+              />
             </div>
             <div>
               <span class="task-count">{{ readyTasks.length }}</span>
@@ -444,7 +444,7 @@ onMounted(() => {
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:clock"
-                      ></iconify-icon>
+                      />
                       {{ task.dueDate }}
                     </span>
 
@@ -487,7 +487,7 @@ onMounted(() => {
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:plus"
-              ></iconify-icon>
+              />
             </div>
             <div>
               <span class="task-count"> {{ reviewTasks.length }}</span>
@@ -550,7 +550,7 @@ onMounted(() => {
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:clock"
-                      ></iconify-icon>
+                      />
                       {{ task.dueDate }}
                     </span>
 
@@ -593,7 +593,7 @@ onMounted(() => {
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:plus"
-              ></iconify-icon>
+              />
             </div>
             <div>
               <span class="task-count">{{ completedTasks.length }}</span>
@@ -656,7 +656,7 @@ onMounted(() => {
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:clock"
-                      ></iconify-icon>
+                      />
                       {{ task.dueDate }}
                     </span>
 

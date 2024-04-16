@@ -27,14 +27,14 @@ const props = withDefaults(
         aria-hidden="true"
         class="iconify"
         icon="lucide:play-circle"
-      ></iconify-icon>
+      />
       <h4>{{ props.title }}</h4>
       <span class="views">
         <iconify-icon
           aria-hidden="true"
           class="iconify"
           icon="lucide:eye"
-        ></iconify-icon>
+        />
         <span>{{ props.views }}</span>
       </span>
     </div>

@@ -158,7 +158,7 @@ const { progressChartOptions } = useProgressChart()
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:help-circle"
-                  ></iconify-icon>
+                  />
                   Your overall condition is very good. Make it even better.
                   <a class="is-dark-primary">Read how</a>
                 </p>
@@ -188,7 +188,7 @@ const { progressChartOptions } = useProgressChart()
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:help-circle"
-                  ></iconify-icon>
+                  />
                   Your energy seems a bit unstable. You can improve it.
                   <a class="is-dark-primary">Read how</a>
                 </p>
@@ -218,7 +218,7 @@ const { progressChartOptions } = useProgressChart()
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:help-circle"
-                  ></iconify-icon>
+                  />
                   Your oxygen seems a bit unstable. You can improve it.
                   <a class="is-dark-primary">Read how</a>
                 </p>
@@ -248,7 +248,7 @@ const { progressChartOptions } = useProgressChart()
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:help-circle"
-                  ></iconify-icon>
+                  />
                   Your overall condition is very good. Make it even better.
                   <a class="is-dark-primary">Read how</a>
                 </p>
@@ -281,7 +281,7 @@ const { progressChartOptions } = useProgressChart()
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:search"
-                  ></iconify-icon>
+                  />
                 </button>
               </div>
 
@@ -304,12 +304,12 @@ const { progressChartOptions } = useProgressChart()
                     aria-hidden="true"
                     class="iconify ltr-hidden"
                     icon="lucide:chevron-right"
-                  ></iconify-icon>
+                  />
                   <iconify-icon
                     aria-hidden="true"
                     class="iconify rtl-hidden"
                     icon="lucide:chevron-left"
-                  ></iconify-icon>
+                  />
                 </a>
               </div>
               <div class="center">
@@ -321,12 +321,12 @@ const { progressChartOptions } = useProgressChart()
                     aria-hidden="true"
                     class="iconify rtl-hidden"
                     icon="lucide:chevron-right"
-                  ></iconify-icon>
+                  />
                   <iconify-icon
                     aria-hidden="true"
                     class="iconify ltr-hidden"
                     icon="lucide:chevron-left"
-                  ></iconify-icon>
+                  />
                 </a>
               </div>
             </div>

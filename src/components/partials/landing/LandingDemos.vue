@@ -251,12 +251,12 @@ debouncedWatch(
                       aria-hidden="true"
                       class="iconify rtl-hidden"
                       icon="lucide:arrow-right"
-                    ></iconify-icon>
+                    />
                     <iconify-icon
                       aria-hidden="true"
                       class="iconify ltr-hidden"
                       icon="lucide:arrow-left"
-                    ></iconify-icon>
+                    />
                   </RouterLink>
                 </div>
               </div>
@@ -332,12 +332,12 @@ debouncedWatch(
                       aria-hidden="true"
                       class="iconify rtl-hidden"
                       icon="lucide:arrow-right"
-                    ></iconify-icon>
+                    />
                     <iconify-icon
                       aria-hidden="true"
                       class="iconify ltr-hidden"
                       icon="lucide:arrow-left"
-                    ></iconify-icon>
+                    />
                   </RouterLink>
                 </div>
               </div>
@@ -413,12 +413,12 @@ debouncedWatch(
                       aria-hidden="true"
                       class="iconify rtl-hidden"
                       icon="lucide:arrow-right"
-                    ></iconify-icon>
+                    />
                     <iconify-icon
                       aria-hidden="true"
                       class="iconify ltr-hidden"
                       icon="lucide:arrow-left"
-                    ></iconify-icon>
+                    />
                   </RouterLink>
                 </div>
               </div>
@@ -494,12 +494,12 @@ debouncedWatch(
                       aria-hidden="true"
                       class="iconify rtl-hidden"
                       icon="lucide:arrow-right"
-                    ></iconify-icon>
+                    />
                     <iconify-icon
                       aria-hidden="true"
                       class="iconify ltr-hidden"
                       icon="lucide:arrow-left"
-                    ></iconify-icon>
+                    />
                   </RouterLink>
                 </div>
               </div>
@@ -575,12 +575,12 @@ debouncedWatch(
                       aria-hidden="true"
                       class="iconify rtl-hidden"
                       icon="lucide:arrow-right"
-                    ></iconify-icon>
+                    />
                     <iconify-icon
                       aria-hidden="true"
                       class="iconify ltr-hidden"
                       icon="lucide:arrow-left"
-                    ></iconify-icon>
+                    />
                   </RouterLink>
                 </div>
               </div>

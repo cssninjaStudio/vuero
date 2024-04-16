@@ -29,7 +29,7 @@ import {
  * @see https://github.com/posva/unplugin-vue-router#routes-folder-structure
  */
 export function createRouter() {
-  const router = createClientRouter({
+  return createClientRouter({
     /**
      * If you need to serve vuero under a subdirectory,
      * you have to set the name of the directory in createWebHistory here
@@ -93,14 +93,4 @@ export function createRouter() {
       }
     },
   })
-
-  // /**
-  //  * Data Fetching is an experimental feature from vue & vue-router
-  //  *
-  //  * @see https://github.com/vuejs/rfcs/discussions/460
-  //  * @see https://github.com/posva/unplugin-vue-router/tree/main/src/data-fetching
-  //  */
-  // setupDataFetchingGuard(router)
-
-  return router
 }

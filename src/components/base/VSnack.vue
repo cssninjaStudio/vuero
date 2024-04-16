@@ -45,7 +45,7 @@ const isIconify = computed(() => {
         aria-hidden="true"
         class="iconify snack-icon"
         :icon="icon"
-      ></iconify-icon>
+      />
       <i
         v-else
         aria-hidden="true"

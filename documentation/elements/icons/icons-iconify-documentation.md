@@ -10,7 +10,7 @@ Please refer to the code example for more details about usage.
 ```vue
 <template>
   <!--Feather icon usage -->
-  <iconify-icon class="iconify" icon="lucide:activity"></iconify-icon>
+  <iconify-icon class="iconify" icon="lucide:activity" />
 </template>
 ```
 

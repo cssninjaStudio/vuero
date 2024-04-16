@@ -227,7 +227,7 @@ onUnmounted(() => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:shopping-cart"
-                ></iconify-icon>
+                />
               </a>
             </div>
             <div class="toolbar-icon">
@@ -243,7 +243,7 @@ onUnmounted(() => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:activity"
-                ></iconify-icon>
+                />
               </a>
             </div>
             <div class="toolbar-icon">
@@ -259,7 +259,7 @@ onUnmounted(() => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:map-pin"
-                ></iconify-icon>
+                />
               </a>
             </div>
             <div class="toolbar-icon">
@@ -275,7 +275,7 @@ onUnmounted(() => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:settings"
-                ></iconify-icon>
+                />
               </a>
             </div>
           </div>

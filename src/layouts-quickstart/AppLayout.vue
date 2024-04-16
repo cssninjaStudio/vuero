@@ -89,7 +89,7 @@ watch(
               aria-hidden="true"
               class="iconify"
               icon="lucide:home"
-            ></iconify-icon>
+            />
           </RouterLink>
         </li>
       </template>
@@ -101,7 +101,7 @@ watch(
               aria-hidden="true"
               class="iconify"
               icon="lucide:settings"
-            ></iconify-icon>
+            />
           </a>
         </li>
       </template>
@@ -133,7 +133,7 @@ watch(
               aria-hidden="true"
               class="iconify sidebar-svg"
               icon="lucide:home"
-            ></iconify-icon>
+            />
           </a>
         </li>
       </template>

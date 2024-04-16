@@ -48,12 +48,12 @@ watch(locale, () => {
             aria-hidden="true"
             class="iconify rtl-hidden"
             icon="lucide:chevron-right"
-          ></iconify-icon>
+          />
           <iconify-icon
             aria-hidden="true"
             class="iconify ltr-hidden"
             icon="lucide:chevron-left"
-          ></iconify-icon>
+          />
         </a>
       </div>
       <div class="right-panel-body has-slimscroll">
@@ -77,7 +77,7 @@ watch(locale, () => {
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:check"
-                  ></iconify-icon>
+                  />
                 </div>
               </div>
             </div>
@@ -101,7 +101,7 @@ watch(locale, () => {
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:check"
-                  ></iconify-icon>
+                  />
                 </div>
               </div>
             </div>
@@ -125,7 +125,7 @@ watch(locale, () => {
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:check"
-                  ></iconify-icon>
+                  />
                 </div>
               </div>
             </div>
@@ -149,7 +149,7 @@ watch(locale, () => {
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:check"
-                  ></iconify-icon>
+                  />
                 </div>
               </div>
             </div>
@@ -173,7 +173,7 @@ watch(locale, () => {
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:check"
-                  ></iconify-icon>
+                  />
                 </div>
               </div>
             </div>
@@ -197,7 +197,7 @@ watch(locale, () => {
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:check"
-                  ></iconify-icon>
+                  />
                 </div>
               </div>
             </div>

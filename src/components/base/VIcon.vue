@@ -17,7 +17,7 @@ const isIconify = computed(() => {
       aria-hidden="true"
       class="iconify"
       :icon="props.icon"
-    ></iconify-icon>
+    />
     <i
       v-else
       aria-hidden="true"

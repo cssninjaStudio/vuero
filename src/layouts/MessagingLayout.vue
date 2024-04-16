@@ -40,7 +40,7 @@ const isMobileSidebarOpen = ref(false)
               aria-hidden="true"
               class="iconify"
               icon="lucide:activity"
-            ></iconify-icon>
+            />
           </RouterLink>
         </li>
         <li>
@@ -49,7 +49,7 @@ const isMobileSidebarOpen = ref(false)
               aria-hidden="true"
               class="iconify"
               icon="lucide:grid"
-            ></iconify-icon>
+            />
           </RouterLink>
         </li>
         <li>
@@ -58,7 +58,7 @@ const isMobileSidebarOpen = ref(false)
               aria-hidden="true"
               class="iconify"
               icon="lucide:box"
-            ></iconify-icon>
+            />
           </RouterLink>
         </li>
         <li>
@@ -67,7 +67,7 @@ const isMobileSidebarOpen = ref(false)
               aria-hidden="true"
               class="iconify"
               icon="lucide:cpu"
-            ></iconify-icon>
+            />
           </RouterLink>
         </li>
         <li>
@@ -76,7 +76,7 @@ const isMobileSidebarOpen = ref(false)
               aria-hidden="true"
               class="iconify"
               icon="lucide:message-circle"
-            ></iconify-icon>
+            />
           </RouterLink>
         </li>
       </template>
@@ -93,7 +93,7 @@ const isMobileSidebarOpen = ref(false)
               aria-hidden="true"
               class="iconify"
               icon="lucide:search"
-            ></iconify-icon>
+            />
           </a>
         </li>
         <li>
@@ -102,7 +102,7 @@ const isMobileSidebarOpen = ref(false)
               aria-hidden="true"
               class="iconify"
               icon="lucide:settings"
-            ></iconify-icon>
+            />
           </a>
         </li>
       </template>
@@ -117,7 +117,7 @@ const isMobileSidebarOpen = ref(false)
               aria-hidden="true"
               class="iconify sidebar-svg"
               icon="lucide:activity"
-            ></iconify-icon>
+            />
           </RouterLink>
         </li>
 
@@ -128,7 +128,7 @@ const isMobileSidebarOpen = ref(false)
               aria-hidden="true"
               class="iconify sidebar-svg"
               icon="lucide:grid"
-            ></iconify-icon>
+            />
           </RouterLink>
         </li>
 
@@ -139,7 +139,7 @@ const isMobileSidebarOpen = ref(false)
               aria-hidden="true"
               class="iconify sidebar-svg"
               icon="lucide:box"
-            ></iconify-icon>
+            />
           </RouterLink>
         </li>
 
@@ -150,7 +150,7 @@ const isMobileSidebarOpen = ref(false)
               aria-hidden="true"
               class="iconify sidebar-svg"
               icon="lucide:cpu"
-            ></iconify-icon>
+            />
           </RouterLink>
         </li>
 
@@ -161,7 +161,7 @@ const isMobileSidebarOpen = ref(false)
               aria-hidden="true"
               class="iconify sidebar-svg"
               icon="lucide:message-circle"
-            ></iconify-icon>
+            />
           </RouterLink>
         </li>
       </template>
@@ -180,7 +180,7 @@ const isMobileSidebarOpen = ref(false)
               aria-hidden="true"
               class="iconify sidebar-svg"
               icon="lucide:search"
-            ></iconify-icon>
+            />
           </a>
           <a
             class="is-hidden is-inactive"
@@ -193,7 +193,7 @@ const isMobileSidebarOpen = ref(false)
               aria-hidden="true"
               class="iconify sidebar-svg"
               icon="lucide:x"
-            ></iconify-icon>
+            />
           </a>
         </li>
 
@@ -208,7 +208,7 @@ const isMobileSidebarOpen = ref(false)
               aria-hidden="true"
               class="iconify sidebar-svg"
               icon="lucide:settings"
-            ></iconify-icon>
+            />
           </RouterLink>
         </li>
 

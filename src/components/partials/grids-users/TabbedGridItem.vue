@@ -69,7 +69,7 @@ onUnmounted(() => {
               aria-hidden="true"
               class="iconify"
               icon="lucide:activity"
-            ></iconify-icon>
+            />
           </a>
           <a
             data-target-section="subsection-2"
@@ -84,7 +84,7 @@ onUnmounted(() => {
               aria-hidden="true"
               class="iconify"
               icon="lucide:briefcase"
-            ></iconify-icon>
+            />
           </a>
           <a
             data-target-section="subsection-3"
@@ -99,7 +99,7 @@ onUnmounted(() => {
               aria-hidden="true"
               class="iconify"
               icon="lucide:check-circle"
-            ></iconify-icon>
+            />
           </a>
           <div class="icon-tabs-naver" />
         </div>
@@ -168,7 +168,7 @@ onUnmounted(() => {
             aria-hidden="true"
             class="iconify"
             icon="lucide:check"
-          ></iconify-icon>
+          />
         </span>
         <span>Hire</span>
       </button>
@@ -178,7 +178,7 @@ onUnmounted(() => {
             aria-hidden="true"
             class="iconify"
             icon="lucide:message-circle"
-          ></iconify-icon>
+          />
         </span>
         <span>Talk</span>
       </button>

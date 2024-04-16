@@ -31,7 +31,7 @@ const panels = usePanels()
             aria-hidden="true"
             class="iconify"
             icon="lucide:chevron-right"
-          ></iconify-icon>
+          />
         </a>
       </div>
       <div
@@ -65,7 +65,7 @@ const panels = usePanels()
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:plus"
-                ></iconify-icon>
+                />
               </button>
             </div>
           </div>
@@ -79,7 +79,7 @@ const panels = usePanels()
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:clock"
-              ></iconify-icon>
+              />
               <span>5 days</span>
             </div>
             <div class="task-stat">
@@ -87,7 +87,7 @@ const panels = usePanels()
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:file"
-              ></iconify-icon>
+              />
               <span>3 files</span>
             </div>
             <div class="task-stat">
@@ -95,7 +95,7 @@ const panels = usePanels()
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:message-circle"
-              ></iconify-icon>
+              />
               <span>54</span>
             </div>
             <a>
@@ -103,7 +103,7 @@ const panels = usePanels()
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:plus"
-              ></iconify-icon>
+              />
               <span>Add Checklist</span>
             </a>
           </div>
@@ -182,21 +182,21 @@ const panels = usePanels()
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:smile"
-                  ></iconify-icon>
+                  />
                 </a>
                 <a class="message-action">
                   <iconify-icon
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:at-sign"
-                  ></iconify-icon>
+                  />
                 </a>
                 <a class="message-action">
                   <iconify-icon
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:paperclip"
-                  ></iconify-icon>
+                  />
                 </a>
                 <a class="button v-button is-primary is-bold is-raised">Send</a>
               </div>

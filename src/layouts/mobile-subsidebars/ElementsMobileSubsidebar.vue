@@ -29,12 +29,12 @@
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
 
           <RouterLink
@@ -45,7 +45,7 @@
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             Iconify
           </RouterLink>
           <RouterLink
@@ -56,7 +56,7 @@
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             Line Icons Light
           </RouterLink>
           <RouterLink
@@ -67,7 +67,7 @@
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             Line Icons Regular
           </RouterLink>
           <RouterLink
@@ -78,7 +78,7 @@
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             Font Awesome 5
           </RouterLink>
         </VCollapseLinks>
@@ -139,12 +139,12 @@
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
 
           <RouterLink
@@ -182,12 +182,12 @@
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
 
           <RouterLink
@@ -198,7 +198,7 @@
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VField
           </RouterLink>
           <RouterLink
@@ -209,7 +209,7 @@
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VControl
           </RouterLink>
           <RouterLink
@@ -220,7 +220,7 @@
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VInput
           </RouterLink>
           <RouterLink
@@ -231,7 +231,7 @@
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VTextarea
           </RouterLink>
           <RouterLink
@@ -242,7 +242,7 @@
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VSelect
           </RouterLink>
           <RouterLink
@@ -253,7 +253,7 @@
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VCheckbox
           </RouterLink>
           <RouterLink
@@ -264,11 +264,11 @@
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VRadio
           </RouterLink>
           <!-- <RouterLink to="/elements/forms/addons" class="is-submenu">
-            <iconify-icon aria-hidden="true" class="iconify" icon="lucide:circle"></iconify-icon>
+            <iconify-icon aria-hidden="true" class="iconify" icon="lucide:circle"/>
             Input Addons
           </RouterLink> -->
           <RouterLink
@@ -279,7 +279,7 @@
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VRangeRating
           </RouterLink>
           <RouterLink
@@ -290,7 +290,7 @@
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             File Input
           </RouterLink>
         </VCollapseLinks>
@@ -302,7 +302,7 @@
               aria-hidden="true"
               class="iconify"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
           </template>
 
           <RouterLink
@@ -313,7 +313,7 @@
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VAnimatedCheckbox
           </RouterLink>
           <RouterLink
@@ -324,7 +324,7 @@
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VSwitchBlock
           </RouterLink>
           <RouterLink
@@ -335,7 +335,7 @@
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VSwitchSegment
           </RouterLink>
         </VCollapseLinks>
@@ -349,12 +349,12 @@
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
 
           <RouterLink
@@ -365,7 +365,7 @@
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VCalendar &amp; VDatePicker
           </RouterLink>
           <RouterLink
@@ -376,7 +376,7 @@
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VIMaskInput
           </RouterLink>
           <RouterLink
@@ -387,7 +387,7 @@
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VFilePond
           </RouterLink>
           <RouterLink
@@ -398,7 +398,7 @@
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VCreditCard
           </RouterLink>
           <RouterLink
@@ -409,7 +409,7 @@
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             @vueform/multiselect
           </RouterLink>
           <RouterLink
@@ -420,7 +420,7 @@
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             @vueform/slider
           </RouterLink>
           <RouterLink
@@ -431,7 +431,7 @@
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             CKEditor 5
           </RouterLink>
         </VCollapseLinks>

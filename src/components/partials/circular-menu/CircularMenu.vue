@@ -57,12 +57,12 @@ const localFlagSrc = computed(() => {
         aria-hidden="true"
         class="iconify"
         icon="lucide:menu"
-      ></iconify-icon>
+      />
       <iconify-icon
         aria-hidden="true"
         class="iconify"
         icon="lucide:x"
-      ></iconify-icon>
+      />
     </a>
 
     <div class="items-wrapper">
@@ -97,7 +97,7 @@ const localFlagSrc = computed(() => {
           aria-hidden="true"
           class="iconify"
           icon="lucide:bell"
-        ></iconify-icon>
+        />
       </RouterLink>
       <a
         class="menu-item is-flex"
@@ -110,7 +110,7 @@ const localFlagSrc = computed(() => {
           aria-hidden="true"
           class="iconify"
           icon="lucide:grid"
-        ></iconify-icon>
+        />
       </a>
     </div>
   </div>

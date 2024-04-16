@@ -85,7 +85,7 @@ const selected = ref('value_2')
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:check"
-                  ></iconify-icon>
+                  />
                 </div>
               </VLabel>
             </VControl>
@@ -240,7 +240,7 @@ const selected = ref('value_2')
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:plus"
-              ></iconify-icon>
+              />
             </button>
           </div>
         </div>

@@ -98,7 +98,7 @@ onUnmounted(() => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:x"
-                ></iconify-icon>
+                />
               </button>
             </header>
             <div

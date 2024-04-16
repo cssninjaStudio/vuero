@@ -19,7 +19,7 @@ const emit = defineEmits(['close'])
           aria-hidden="true"
           class="iconify"
           icon="lucide:x"
-        ></iconify-icon>
+        />
       </div>
     </div>
     <div
@@ -175,12 +175,12 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
 
           <RouterLink
@@ -191,7 +191,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             Basic usage
           </RouterLink>
           <RouterLink
@@ -202,7 +202,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             Customize columns
           </RouterLink>
           <RouterLink
@@ -213,7 +213,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             Slots usage
           </RouterLink>
           <RouterLink
@@ -224,7 +224,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             Render functions (advanced)
           </RouterLink>
           <RouterLink
@@ -235,7 +235,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VFlexTableWrapper
           </RouterLink>
           <RouterLink
@@ -246,7 +246,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             Async data (advanced)
           </RouterLink>
         </VCollapseLinks>
@@ -258,12 +258,12 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
 
           <RouterLink
@@ -274,7 +274,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VAccordion
           </RouterLink>
           <RouterLink
@@ -285,7 +285,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VCollapse
           </RouterLink>
           <RouterLink
@@ -296,7 +296,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VAccordionImage
           </RouterLink>
         </VCollapseLinks>
@@ -308,12 +308,12 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
 
           <RouterLink
@@ -324,7 +324,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VCard
             <VTag
               label="v1.1"
@@ -341,7 +341,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VCardAction
             <VTag
               label="v1.1"
@@ -358,7 +358,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VCardAdvanced
           </RouterLink>
           <RouterLink
@@ -369,7 +369,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VCardMedia
             <VTag
               label="v1.1"
@@ -386,7 +386,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VCardSocial
           </RouterLink>
         </VCollapseLinks>
@@ -398,12 +398,12 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
           <RouterLink
             to="/components/placeholder-page"
@@ -413,7 +413,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VPlaceholderPage
           </RouterLink>
           <RouterLink
@@ -424,7 +424,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VPlaceholderSection
           </RouterLink>
         </VCollapseLinks>
@@ -438,12 +438,12 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
           <RouterLink
             to="/components/plugins/notif"
@@ -453,7 +453,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             Notyf
           </RouterLink>
           <RouterLink
@@ -464,7 +464,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             Tippy
           </RouterLink>
           <RouterLink
@@ -475,7 +475,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VBillboardJS
           </RouterLink>
           <RouterLink
@@ -486,7 +486,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VPhotosSwipe
           </RouterLink>
           <RouterLink
@@ -497,7 +497,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VPlyr
           </RouterLink>
         </VCollapseLinks>

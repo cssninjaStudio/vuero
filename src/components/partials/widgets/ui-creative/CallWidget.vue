@@ -34,21 +34,21 @@ const props = defineProps<{
           aria-hidden="true"
           class="iconify"
           icon="lucide:message-square"
-        ></iconify-icon>
+        />
       </a>
       <a class="action">
         <iconify-icon
           aria-hidden="true"
           class="iconify"
           icon="lucide:phone"
-        ></iconify-icon>
+        />
       </a>
       <a class="action">
         <iconify-icon
           aria-hidden="true"
           class="iconify"
           icon="lucide:video"
-        ></iconify-icon>
+        />
       </a>
     </div>
   </div>

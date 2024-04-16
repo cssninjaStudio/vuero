@@ -118,7 +118,7 @@ const filteredData = computed(() => {
                       aria-hidden="true"
                       class="iconify"
                       icon="lucide:map-pin"
-                    ></iconify-icon>
+                    />
                     <span>{{ item.location }}</span>
                   </span>
                 </div>

@@ -19,7 +19,7 @@
                     <iconify-icon
                       class="iconify"
                       icon="lucide:video"
-                    ></iconify-icon>
+                    />
                     <span>Live Now</span>
                   </div>
                 </div>
@@ -248,7 +248,7 @@
                         <iconify-icon
                           class="iconify"
                           icon="lucide:align-right"
-                        ></iconify-icon>
+                        />
                       </a>
                     </td>
                   </tr>
@@ -300,7 +300,7 @@
                         <iconify-icon
                           class="iconify"
                           icon="lucide:align-right"
-                        ></iconify-icon>
+                        />
                       </a>
                     </td>
                   </tr>
@@ -354,7 +354,7 @@
                         <iconify-icon
                           class="iconify"
                           icon="lucide:align-right"
-                        ></iconify-icon>
+                        />
                       </a>
                     </td>
                   </tr>
@@ -408,7 +408,7 @@
                         <iconify-icon
                           class="iconify"
                           icon="lucide:align-right"
-                        ></iconify-icon>
+                        />
                       </a>
                     </td>
                   </tr>
@@ -462,7 +462,7 @@
                         <iconify-icon
                           class="iconify"
                           icon="lucide:align-right"
-                        ></iconify-icon>
+                        />
                       </a>
                     </td>
                   </tr>
@@ -516,7 +516,7 @@
                         <iconify-icon
                           class="iconify"
                           icon="lucide:align-right"
-                        ></iconify-icon>
+                        />
                       </a>
                     </td>
                   </tr>

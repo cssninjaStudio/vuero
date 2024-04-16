@@ -114,7 +114,7 @@ watch([() => route.fullPath, dropdownElement], () => {
               aria-hidden="true"
               class="iconify"
               icon="lucide:arrow-left"
-            ></iconify-icon>
+            />
           </span>
         </button>
 
@@ -131,7 +131,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:circle"
-                ></iconify-icon>
+                />
                 <span>General</span>
               </h4>
 
@@ -255,7 +255,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:circle"
-                ></iconify-icon>
+                />
                 <span>Interaction</span>
               </h4>
 
@@ -488,7 +488,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:circle"
-                ></iconify-icon>
+                />
                 <span>Forms</span>
               </h4>
 
@@ -708,7 +708,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:circle"
-                ></iconify-icon>
+                />
                 <span>Switches</span>
               </h4>
 
@@ -784,7 +784,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:circle"
-                ></iconify-icon>
+                />
                 <span>Addons</span>
               </h4>
 

@@ -151,7 +151,7 @@ const filteredData = computed(() => {
                       aria-hidden="true"
                       class="iconify"
                       icon="lucide:archive"
-                    ></iconify-icon>
+                    />
                     <span>{{ item.category }}</span>
                     <i
                       aria-hidden="true"
@@ -161,7 +161,7 @@ const filteredData = computed(() => {
                       aria-hidden="true"
                       class="iconify"
                       icon="lucide:clock"
-                    ></iconify-icon>
+                    />
                     <span>{{ item.duration }}</span>
                     <i
                       aria-hidden="true"
@@ -171,7 +171,7 @@ const filteredData = computed(() => {
                       aria-hidden="true"
                       class="iconify"
                       icon="lucide:paperclip"
-                    ></iconify-icon>
+                    />
                     <span>{{ item.attachments }} files</span>
                   </span>
                 </div>
@@ -197,7 +197,7 @@ const filteredData = computed(() => {
                           aria-hidden="true"
                           class="iconify"
                           icon="lucide:heart"
-                        ></iconify-icon>
+                        />
                       </span>
                     </button>
                   </div>

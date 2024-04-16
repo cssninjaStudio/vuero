@@ -65,7 +65,7 @@ const goto = (index: number) => {
                       aria-hidden="true"
                       class="iconify"
                       icon="lucide:plus"
-                    ></iconify-icon>
+                    />
                   </span>
                 </button>
               </div>
@@ -247,7 +247,7 @@ const goto = (index: number) => {
                         aria-hidden="true"
                         class="iconify rtl-reflect"
                         icon="lucide:arrow-right"
-                      ></iconify-icon>
+                      />
                     </div>
                     <div class="stat-text">
                       <span>+ 2,324.12</span>
@@ -264,7 +264,7 @@ const goto = (index: number) => {
                         aria-hidden="true"
                         class="iconify rtl-reflect"
                         icon="lucide:arrow-right"
-                      ></iconify-icon>
+                      />
                     </div>
                     <div class="stat-text">
                       <span>+ 518.41</span>

@@ -18,7 +18,7 @@ const emit = defineEmits(['toggleMobileConversation'])
           aria-hidden="true"
           class="iconify"
           icon="lucide:menu"
-        ></iconify-icon>
+        />
       </button>
       <div class="chat-area-title">
         Melany W.

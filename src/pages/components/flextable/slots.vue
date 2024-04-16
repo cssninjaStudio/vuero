@@ -150,7 +150,7 @@ function contactUser(row: any) {
                     icon="lucide:edit-3"
                     role="img"
                     aria-label="edit"
-                  ></iconify-icon>
+                  />
                 </a>
               </template>
 

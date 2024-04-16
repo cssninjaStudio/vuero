@@ -125,7 +125,7 @@ watch([() => route.fullPath, dropdownElement], () => {
               aria-hidden="true"
               class="iconify"
               icon="lucide:arrow-left"
-            ></iconify-icon>
+            />
           </span>
         </button>
 
@@ -142,7 +142,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:circle"
-                ></iconify-icon>
+                />
                 <span>List Views</span>
               </h4>
 
@@ -217,7 +217,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:circle"
-                ></iconify-icon>
+                />
                 <span>Flex Lists</span>
               </h4>
 
@@ -278,7 +278,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:circle"
-                ></iconify-icon>
+                />
                 <span>Datatables</span>
               </h4>
 
@@ -346,7 +346,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:circle"
-                ></iconify-icon>
+                />
                 <span>Cards</span>
               </h4>
 
@@ -419,7 +419,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:circle"
-                ></iconify-icon>
+                />
                 <span>Tiles</span>
               </h4>
 
@@ -478,7 +478,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:circle"
-                ></iconify-icon>
+                />
                 <span>Users</span>
               </h4>
 
@@ -557,7 +557,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:circle"
-                ></iconify-icon>
+                />
                 <span>Personal</span>
               </h4>
 
@@ -633,7 +633,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:circle"
-                ></iconify-icon>
+                />
                 <span>Pages</span>
               </h4>
 
@@ -765,7 +765,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:circle"
-                ></iconify-icon>
+                />
                 <span>Projects</span>
               </h4>
 
@@ -861,7 +861,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:circle"
-                ></iconify-icon>
+                />
                 <span>Subpages</span>
               </h4>
 
@@ -936,7 +936,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:circle"
-                ></iconify-icon>
+                />
                 <span>Utility</span>
               </h4>
 
@@ -1032,7 +1032,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:circle"
-                ></iconify-icon>
+                />
                 <span>Onboarding</span>
               </h4>
 
@@ -1125,7 +1125,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:circle"
-                ></iconify-icon>
+                />
                 <span>utility</span>
               </h4>
 
@@ -1214,7 +1214,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:circle"
-                ></iconify-icon>
+                />
                 <span>Placeload</span>
               </h4>
 

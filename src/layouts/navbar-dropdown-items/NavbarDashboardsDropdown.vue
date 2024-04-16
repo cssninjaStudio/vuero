@@ -97,7 +97,7 @@ watch([() => route.fullPath, dropdownElement], () => {
               aria-hidden="true"
               class="iconify"
               icon="lucide:arrow-left"
-            ></iconify-icon>
+            />
           </span>
         </button>
 
@@ -114,7 +114,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:circle"
-                ></iconify-icon>
+                />
                 <span>All Dashboards</span>
               </h4>
 
@@ -259,7 +259,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   aria-hidden="true"
                   class="iconify is-vhidden"
                   icon="lucide:circle"
-                ></iconify-icon>
+                />
                 <span class="is-vhidden">All Dashboards</span>
               </h4>
 
@@ -432,7 +432,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   aria-hidden="true"
                   class="iconify is-vhidden"
                   icon="lucide:circle"
-                ></iconify-icon>
+                />
                 <span class="is-vhidden">All Dashboards</span>
               </h4>
 
@@ -570,7 +570,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:circle"
-                ></iconify-icon>
+                />
                 <span>Navigation</span>
               </h4>
 
@@ -801,7 +801,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:circle"
-                ></iconify-icon>
+                />
                 <span>Widgets</span>
               </h4>
 
@@ -905,7 +905,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:circle"
-                ></iconify-icon>
+                />
                 <span>Forms</span>
               </h4>
 

@@ -19,7 +19,7 @@ const emit = defineEmits(['close'])
           aria-hidden="true"
           class="iconify"
           icon="lucide:x"
-        ></iconify-icon>
+        />
       </div>
     </div>
     <div
@@ -50,12 +50,12 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
 
           <RouterLink
@@ -66,7 +66,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             Iconify
           </RouterLink>
           <RouterLink
@@ -77,7 +77,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             Line Icons Light
           </RouterLink>
           <RouterLink
@@ -88,7 +88,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             Line Icons Regular
           </RouterLink>
           <RouterLink
@@ -99,7 +99,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             Font Awesome 5
           </RouterLink>
         </VCollapseLinks>
@@ -190,12 +190,12 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
 
           <RouterLink
@@ -232,12 +232,12 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
 
           <RouterLink
@@ -248,7 +248,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VField
           </RouterLink>
           <RouterLink
@@ -259,7 +259,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VControl
           </RouterLink>
           <RouterLink
@@ -270,7 +270,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VInput
           </RouterLink>
           <RouterLink
@@ -281,7 +281,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VTextarea
           </RouterLink>
           <RouterLink
@@ -292,7 +292,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VSelect
           </RouterLink>
           <RouterLink
@@ -303,7 +303,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VCheckbox
           </RouterLink>
           <RouterLink
@@ -314,11 +314,11 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VRadio
           </RouterLink>
           <!-- <RouterLink to="/elements/forms/addons" class="is-submenu">
-            <iconify-icon aria-hidden="true" class="iconify" icon="lucide:circle"></iconify-icon>
+            <iconify-icon aria-hidden="true" class="iconify" icon="lucide:circle"/>
             Input Addons
           </RouterLink> -->
           <RouterLink
@@ -329,7 +329,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VRangeRating
           </RouterLink>
           <RouterLink
@@ -340,7 +340,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             File Input
           </RouterLink>
         </VCollapseLinks>
@@ -352,12 +352,12 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
 
           <RouterLink
@@ -368,7 +368,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VAnimatedCheckbox
           </RouterLink>
           <RouterLink
@@ -379,7 +379,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VSwitchBlock
           </RouterLink>
           <RouterLink
@@ -390,7 +390,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VSwitchSegment
             <VTag
               label="v1.1"
@@ -410,12 +410,12 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify rtl-hidden"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
             <iconify-icon
               aria-hidden="true"
               class="iconify ltr-hidden"
               icon="lucide:chevron-left"
-            ></iconify-icon>
+            />
           </template>
 
           <RouterLink
@@ -426,7 +426,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VCalendar &amp; VDatePicker
           </RouterLink>
           <RouterLink
@@ -437,7 +437,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VIMaskInput
           </RouterLink>
           <RouterLink
@@ -448,7 +448,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VFilePond
           </RouterLink>
           <RouterLink
@@ -459,7 +459,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             VCreditCard
           </RouterLink>
           <RouterLink
@@ -470,7 +470,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             @vueform/multiselect
           </RouterLink>
           <RouterLink
@@ -481,7 +481,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             @vueform/slider
           </RouterLink>
           <RouterLink
@@ -492,7 +492,7 @@ const emit = defineEmits(['close'])
               aria-hidden="true"
               class="iconify"
               icon="lucide:circle"
-            ></iconify-icon>
+            />
             CKEditor 5
           </RouterLink>
         </VCollapseLinks>

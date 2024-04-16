@@ -66,7 +66,7 @@ wizard.setStep({
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:check"
-                      ></iconify-icon>
+                      />
                     </div>
                   </template>
                 </VBlock>

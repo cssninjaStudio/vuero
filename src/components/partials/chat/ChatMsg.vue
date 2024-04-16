@@ -75,7 +75,7 @@ const props = defineProps<{
                 <iconify-icon
                   class="iconify"
                   icon="lucide:download"
-                ></iconify-icon>
+                />
               </div>
               <a
                 :href="props.message.content.image_url"
@@ -85,7 +85,7 @@ const props = defineProps<{
                 <iconify-icon
                   class="iconify"
                   icon="lucide:maximize"
-                ></iconify-icon>
+                />
               </a>
             </div>
           </div>

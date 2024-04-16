@@ -85,7 +85,7 @@ const props = defineProps<{
               aria-hidden="true"
               class="iconify"
               icon="lucide:edit-2"
-            ></iconify-icon>
+            />
           </span>
         </button>
         <button
@@ -97,7 +97,7 @@ const props = defineProps<{
               aria-hidden="true"
               class="iconify"
               icon="lucide:eye"
-            ></iconify-icon>
+            />
           </span>
         </button>
         <button
@@ -109,7 +109,7 @@ const props = defineProps<{
               aria-hidden="true"
               class="iconify"
               icon="lucide:trash-2"
-            ></iconify-icon>
+            />
           </span>
         </button>
       </div>

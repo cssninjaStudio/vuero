@@ -101,8 +101,8 @@ const SortColumnComponent = defineComponent({
               'span',
               { key: `${currentRoute.query.sort}`, class: 'is-inline' },
               h('iconify-icon', {
-                'class': 'iconify ml-2',
-                'icon':
+                class: 'iconify ml-2',
+                icon:
                   currentRoute.query.sort === `${props.id}:asc`
                     ? 'fa6-solid:sort-up'
                     : currentRoute.query.sort === `${props.id}:desc`

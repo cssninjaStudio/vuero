@@ -44,7 +44,7 @@ const dropdown2 = useDropdown(dropdownElement2)
           aria-hidden="true"
           class="iconify"
           icon="lucide:paperclip"
-        ></iconify-icon>
+        />
         <span>2</span>
       </div>
       <div
@@ -61,7 +61,7 @@ const dropdown2 = useDropdown(dropdownElement2)
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:more-vertical"
-              ></iconify-icon>
+              />
             </span>
           </button>
         </div>
@@ -72,7 +72,7 @@ const dropdown2 = useDropdown(dropdownElement2)
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:bookmark"
-              ></iconify-icon>
+              />
               <span>Bookmark</span>
             </a>
             <a class="dropdown-item">
@@ -80,7 +80,7 @@ const dropdown2 = useDropdown(dropdownElement2)
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:share-2"
-              ></iconify-icon>
+              />
               <span>Share message</span>
             </a>
             <hr class="dropdown-divider">
@@ -89,7 +89,7 @@ const dropdown2 = useDropdown(dropdownElement2)
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:thumbs-down"
-              ></iconify-icon>
+              />
               <span>Mark as spam</span>
             </a>
           </div>
@@ -106,7 +106,7 @@ const dropdown2 = useDropdown(dropdownElement2)
           aria-hidden="true"
           class="iconify"
           icon="lucide:x"
-        ></iconify-icon>
+        />
       </a>
     </div>
     <!--Message-->
@@ -123,35 +123,35 @@ const dropdown2 = useDropdown(dropdownElement2)
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:corner-up-left"
-              ></iconify-icon>
+              />
             </a>
             <a class="inbox-action">
               <iconify-icon
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:file-text"
-              ></iconify-icon>
+              />
             </a>
             <a class="inbox-action">
               <iconify-icon
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:tag"
-              ></iconify-icon>
+              />
             </a>
             <a class="inbox-action">
               <iconify-icon
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:message-circle"
-              ></iconify-icon>
+              />
             </a>
             <a class="inbox-action">
               <iconify-icon
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:lock"
-              ></iconify-icon>
+              />
             </a>
           </div>
         </div>
@@ -185,7 +185,7 @@ const dropdown2 = useDropdown(dropdownElement2)
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:arrow-down"
-              ></iconify-icon>
+              />
             </div>
           </div>
           <div class="attachment">
@@ -195,7 +195,7 @@ const dropdown2 = useDropdown(dropdownElement2)
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:arrow-down"
-              ></iconify-icon>
+              />
             </div>
           </div>
         </div>
@@ -228,7 +228,7 @@ const dropdown2 = useDropdown(dropdownElement2)
                       aria-hidden="true"
                       class="iconify"
                       icon="lucide:more-vertical"
-                    ></iconify-icon>
+                    />
                   </span>
                 </button>
               </div>
@@ -239,7 +239,7 @@ const dropdown2 = useDropdown(dropdownElement2)
                       aria-hidden="true"
                       class="iconify"
                       icon="lucide:refresh-cw"
-                    ></iconify-icon>
+                    />
                     <span>Reset</span>
                   </a>
                   <a class="dropdown-item">
@@ -247,7 +247,7 @@ const dropdown2 = useDropdown(dropdownElement2)
                       aria-hidden="true"
                       class="iconify"
                       icon="lucide:align-left"
-                    ></iconify-icon>
+                    />
                     <span>Spelling</span>
                   </a>
                   <a class="dropdown-item">
@@ -255,7 +255,7 @@ const dropdown2 = useDropdown(dropdownElement2)
                       aria-hidden="true"
                       class="iconify"
                       icon="lucide:at-sign"
-                    ></iconify-icon>
+                    />
                     <span>Mention</span>
                   </a>
                 </div>

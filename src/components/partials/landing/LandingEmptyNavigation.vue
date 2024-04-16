@@ -93,14 +93,14 @@ watchEffect(() => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:moon"
-                ></iconify-icon>
+                />
               </span>
               <span class="light">
                 <iconify-icon
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:sun"
-                ></iconify-icon>
+                />
               </span>
             </span>
           </label>

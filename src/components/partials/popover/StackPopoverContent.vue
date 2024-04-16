@@ -50,7 +50,7 @@ const props = defineProps<{
             aria-hidden="true"
             class="iconify"
             icon="lucide:link"
-          ></iconify-icon>
+          />
         </a>
         <a
           v-if="props.stack.github"
@@ -61,7 +61,7 @@ const props = defineProps<{
             aria-hidden="true"
             class="iconify"
             icon="lucide:github"
-          ></iconify-icon>
+          />
         </a>
       </div>
     </div>

@@ -43,7 +43,7 @@ useHead({
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:grid"
-              ></iconify-icon>
+              />
             </a>
           </Toolbar>
         </div>

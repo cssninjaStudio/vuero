@@ -159,7 +159,7 @@ const filteredData = computed(() => {
                           aria-hidden="true"
                           class="iconify"
                           icon="lucide:clock"
-                        ></iconify-icon>{{ item.duration }}</span>
+                        />{{ item.duration }}</span>
                     </span>
                   </div>
                 </VFlexTableCell>

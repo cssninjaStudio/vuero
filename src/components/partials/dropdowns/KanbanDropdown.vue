@@ -34,7 +34,7 @@ const emit = defineEmits(['rename', 'collapse'])
           aria-hidden="true"
           class="iconify rtl-reflect"
           icon="lucide:chevron-right"
-        ></iconify-icon>
+        />
 
         <div class="child-dropdown">
           <div class="inner">

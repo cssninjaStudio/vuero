@@ -36,7 +36,7 @@ const props = withDefaults(
           aria-hidden="true"
           class="iconify"
           :icon="item.icon"
-        ></iconify-icon>
+        />
       </div>
       <div class="timeline-content">
         <p>{{ item.title }}</p>

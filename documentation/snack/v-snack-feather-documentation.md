@@ -13,14 +13,14 @@ to insert your content. Check the markup for more details.
     white
     icon="lucide:shopping-cart"
   >
-    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
+    <iconify-icon class="iconify" icon="lucide:plus" />
   </VSnack>
   <VSnack
     title="Shopping"
     color="primary"
     icon="lucide:smile"
   >
-    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
+    <iconify-icon class="iconify" icon="lucide:plus" />
   </VSnack>
   <VSnack
     title="Support"
@@ -28,14 +28,14 @@ to insert your content. Check the markup for more details.
     white
     icon="lucide:life-buoy"
   >
-    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
+    <iconify-icon class="iconify" icon="lucide:plus" />
   </VSnack>
   <VSnack
     title="Business"
     color="info"
     icon="lucide:briefcase"
   >
-    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
+    <iconify-icon class="iconify" icon="lucide:plus" />
   </VSnack>
   <VSnack
     title="Warning"
@@ -43,7 +43,7 @@ to insert your content. Check the markup for more details.
     white
     icon="lucide:alert-octagon"
   >
-    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
+    <iconify-icon class="iconify" icon="lucide:plus" />
   </VSnack>
   <VSnack
     title="Health"
@@ -51,7 +51,7 @@ to insert your content. Check the markup for more details.
     white
     icon="lucide:thermometer"
   >
-    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
+    <iconify-icon class="iconify" icon="lucide:plus" />
   </VSnack>
 </template>
 ```
@@ -62,16 +62,16 @@ to insert your content. Check the markup for more details.
 
 <div class="snacks">
   <VSnack title="Shopping" white icon="lucide:shopping-cart">
-    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
+    <iconify-icon class="iconify" icon="lucide:plus"/>
   </VSnack>
   <VSnack title="Shopping" color="primary" icon="lucide:smile">
-    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
+    <iconify-icon class="iconify" icon="lucide:plus"/>
   </VSnack>
   <VSnack title="Support" color="success" white icon="lucide:life-buoy">
-    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
+    <iconify-icon class="iconify" icon="lucide:plus"/>
   </VSnack>
   <VSnack title="Business" color="info" icon="lucide:briefcase">
-    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
+    <iconify-icon class="iconify" icon="lucide:plus"/>
   </VSnack>
   <VSnack
     title="Warning"
@@ -79,10 +79,10 @@ to insert your content. Check the markup for more details.
     white
     icon="lucide:alert-octagon"
   >
-    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
+    <iconify-icon class="iconify" icon="lucide:plus"/>
   </VSnack>
   <VSnack title="Health" color="danger" white icon="lucide:thermometer">
-    <iconify-icon class="iconify" icon="lucide:plus"></iconify-icon>
+    <iconify-icon class="iconify" icon="lucide:plus"/>
   </VSnack>
 </div>
 

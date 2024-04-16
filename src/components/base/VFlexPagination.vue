@@ -179,12 +179,12 @@ const handleLinkClick = (e: MouseEvent, page = 1) => {
         aria-hidden="true"
         class="iconify rtl-hidden"
         icon="lucide:chevron-left"
-      ></iconify-icon>
+      />
       <iconify-icon
         aria-hidden="true"
         class="iconify ltr-hidden"
         icon="lucide:chevron-right"
-      ></iconify-icon>
+      />
     </RouterLink>
     <RouterLink
       :to="paginatedLink(currentPage + 1)"
@@ -197,12 +197,12 @@ const handleLinkClick = (e: MouseEvent, page = 1) => {
         aria-hidden="true"
         class="iconify rtl-hidden"
         icon="lucide:chevron-right"
-      ></iconify-icon>
+      />
       <iconify-icon
         aria-hidden="true"
         class="iconify ltr-hidden"
         icon="lucide:chevron-left"
-      ></iconify-icon>
+      />
     </RouterLink>
     <slot name="after-navigation" />
   </VFlex>

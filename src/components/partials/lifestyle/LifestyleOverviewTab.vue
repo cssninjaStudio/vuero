@@ -65,7 +65,7 @@ const {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:arrow-right"
-                ></iconify-icon>
+                />
                 -0.4%</span>
               less than usual.
             </span>
@@ -98,7 +98,7 @@ const {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:arrow-right"
-                ></iconify-icon>
+                />
                 22.7%</span>
               follower growth.
             </span>
@@ -131,7 +131,7 @@ const {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:arrow-right"
-                ></iconify-icon>
+                />
                 1.4%</span>
               following growth.
             </span>
@@ -164,7 +164,7 @@ const {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:arrow-right"
-                ></iconify-icon>
+                />
                 3.6%</span>
               likes growth.
             </span>
@@ -197,7 +197,7 @@ const {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:arrow-right"
-                ></iconify-icon>
+                />
                 -1.1%</span>
               less than usual.
             </span>
@@ -230,7 +230,7 @@ const {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:arrow-right"
-                ></iconify-icon>
+                />
                 22.7%</span>
               more profile views.
             </span>

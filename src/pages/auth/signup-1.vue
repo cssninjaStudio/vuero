@@ -85,7 +85,7 @@ useHead({
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:user"
-              ></iconify-icon>
+              />
             </div>
             <span class="step-label">Profile Pic</span>
           </div>
@@ -98,7 +98,7 @@ useHead({
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:shield"
-              ></iconify-icon>
+              />
             </div>
             <span class="step-label">Account</span>
           </div>
@@ -111,7 +111,7 @@ useHead({
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:check"
-              ></iconify-icon>
+              />
             </div>
             <span class="step-label">Done</span>
           </div>
@@ -312,7 +312,7 @@ useHead({
                           aria-hidden="true"
                           class="iconify"
                           icon="lucide:plus"
-                        ></iconify-icon>
+                        />
                       </div>
                     </div>
                   </div>

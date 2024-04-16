@@ -56,21 +56,21 @@ const props = defineProps<{
             aria-hidden="true"
             class="iconify"
             icon="lucide:phone"
-          ></iconify-icon>
+          />
         </a>
         <a class="popover-icon">
           <iconify-icon
             aria-hidden="true"
             class="iconify"
             icon="lucide:mail"
-          ></iconify-icon>
+          />
         </a>
         <a class="popover-icon">
           <iconify-icon
             aria-hidden="true"
             class="iconify"
             icon="lucide:user"
-          ></iconify-icon>
+          />
         </a>
       </div>
     </div>

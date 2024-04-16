@@ -49,7 +49,7 @@ const props = withDefaults(
               aria-hidden="true"
               class="iconify"
               icon="lucide:map-pin"
-            ></iconify-icon>
+            />
             <span>{{ props.location }}</span>
           </span>
           <span>
@@ -57,7 +57,7 @@ const props = withDefaults(
               aria-hidden="true"
               class="iconify"
               icon="lucide:phone"
-            ></iconify-icon>
+            />
             <span>{{ props.phone }}</span>
           </span>
         </div>

@@ -59,7 +59,7 @@ const props = withDefaults(defineProps<VBreadcrumbsProps>(), {
                 aria-hidden="true"
                 class="iconify"
                 :icon="item.icon"
-              ></iconify-icon>
+              />
             </span>
             <meta
               v-if="item.hideLabel && props.withIcons && !!item.icon"
@@ -99,7 +99,7 @@ const props = withDefaults(defineProps<VBreadcrumbsProps>(), {
                 aria-hidden="true"
                 class="iconify"
                 :icon="item.icon"
-              ></iconify-icon>
+              />
             </span>
             <meta
               v-if="item.hideLabel && props.withIcons && !!item.icon"
@@ -137,7 +137,7 @@ const props = withDefaults(defineProps<VBreadcrumbsProps>(), {
                 aria-hidden="true"
                 class="iconify"
                 :icon="item.icon"
-              ></iconify-icon>
+              />
             </span>
             <meta
               v-if="item.hideLabel && props.withIcons && item.icon"

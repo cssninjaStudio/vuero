@@ -39,7 +39,7 @@ const filteredData = computed(() => {
             aria-hidden="true"
             class="iconify"
             icon="lucide:search"
-          ></iconify-icon>
+          />
         </div>
       </VControl>
 
@@ -127,7 +127,7 @@ const filteredData = computed(() => {
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:map-pin"
-                      ></iconify-icon>
+                      />
                       <span>{{ item.location }}</span>
                       <i
                         aria-hidden="true"
@@ -137,7 +137,7 @@ const filteredData = computed(() => {
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:clock"
-                      ></iconify-icon>
+                      />
                       <span>{{ item.duration }}</span>
                       <i
                         aria-hidden="true"
@@ -147,7 +147,7 @@ const filteredData = computed(() => {
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:check-circle"
-                      ></iconify-icon>
+                      />
                       <span>{{ item.requirements }}</span>
                     </span>
                   </div>

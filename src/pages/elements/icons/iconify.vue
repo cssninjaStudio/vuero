@@ -20,7 +20,7 @@ const filteredIcons = computed(() => {
 })
 
 function getSnippet(icon: any) {
-  return `<iconify-icon class="iconify" icon="lucide:${icon.name}" aria-hidden="true"></iconify-icon>`
+  return `<iconify-icon class="iconify" icon="lucide:${icon.name}" aria-hidden="true"/>`
 }
 
 const viewWrapper = useViewWrapper()
@@ -96,7 +96,7 @@ useHead({
                   aria-hidden="true"
                   class="iconify"
                   :icon="icon.dataicon"
-                ></iconify-icon>
+                />
                 <p class="textFilter-match">
                   {{ icon.name }}
                 </p>

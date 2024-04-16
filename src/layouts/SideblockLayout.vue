@@ -92,7 +92,7 @@ watch(
               aria-hidden="true"
               class="iconify"
               icon="lucide:activity"
-            ></iconify-icon>
+            />
           </a>
         </li>
         <li>
@@ -108,7 +108,7 @@ watch(
               aria-hidden="true"
               class="iconify"
               icon="lucide:grid"
-            ></iconify-icon>
+            />
           </a>
         </li>
         <li>
@@ -124,7 +124,7 @@ watch(
               aria-hidden="true"
               class="iconify"
               icon="lucide:box"
-            ></iconify-icon>
+            />
           </a>
         </li>
         <li>
@@ -140,7 +140,7 @@ watch(
               aria-hidden="true"
               class="iconify"
               icon="lucide:cpu"
-            ></iconify-icon>
+            />
           </a>
         </li>
         <li>
@@ -149,7 +149,7 @@ watch(
               aria-hidden="true"
               class="iconify"
               icon="lucide:message-circle"
-            ></iconify-icon>
+            />
           </RouterLink>
         </li>
       </template>
@@ -167,7 +167,7 @@ watch(
               aria-hidden="true"
               class="iconify"
               icon="lucide:search"
-            ></iconify-icon>
+            />
           </a>
         </li>
         <li>
@@ -179,7 +179,7 @@ watch(
               aria-hidden="true"
               class="iconify"
               icon="lucide:settings"
-            ></iconify-icon>
+            />
           </a>
         </li>
       </template>
@@ -228,7 +228,7 @@ watch(
                 <iconify-icon
                   class="iconify"
                   icon="lucide:grid"
-                ></iconify-icon>
+                />
               </span>
               Dashboard
             </RouterLink>
@@ -242,7 +242,7 @@ watch(
                 <iconify-icon
                   class="iconify"
                   icon="lucide:briefcase"
-                ></iconify-icon>
+                />
               </span>
               Projects
             </RouterLink>
@@ -256,7 +256,7 @@ watch(
                 <iconify-icon
                   class="iconify"
                   icon="lucide:message-circle"
-                ></iconify-icon>
+                />
               </span>
               Messages
               <span class="badge">3</span>
@@ -271,7 +271,7 @@ watch(
                 <iconify-icon
                   class="iconify"
                   icon="lucide:book"
-                ></iconify-icon>
+                />
               </span>
               Collections
             </RouterLink>
@@ -285,7 +285,7 @@ watch(
                 <iconify-icon
                   class="iconify"
                   icon="lucide:users"
-                ></iconify-icon>
+                />
               </span>
               Users
             </RouterLink>
@@ -300,19 +300,19 @@ watch(
                 <iconify-icon
                   class="iconify"
                   icon="lucide:briefcase"
-                ></iconify-icon>
+                />
               </div>
               Reports
               <iconify-icon
                 aria-hidden="true"
                 class="iconify rtl-hidden"
                 icon="lucide:chevron-right"
-              ></iconify-icon>
+              />
               <iconify-icon
                 aria-hidden="true"
                 class="iconify ltr-hidden"
                 icon="lucide:chevron-left"
-              ></iconify-icon>
+              />
             </template>
             <RouterLink
               to="/sidebar/dashboards/analytics"
@@ -345,7 +345,7 @@ watch(
                 <iconify-icon
                   class="iconify"
                   icon="lucide:mail"
-                ></iconify-icon>
+                />
               </span>
               Inbox
             </RouterLink>
@@ -362,19 +362,19 @@ watch(
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:settings"
-                ></iconify-icon>
+                />
               </div>
               Settings
               <iconify-icon
                 aria-hidden="true"
                 class="iconify rtl-hidden"
                 icon="lucide:chevron-right"
-              ></iconify-icon>
+              />
               <iconify-icon
                 aria-hidden="true"
                 class="iconify ltr-hidden"
                 icon="lucide:chevron-left"
-              ></iconify-icon>
+              />
             </template>
             <RouterLink
               to="/sidebar/layouts"
@@ -409,19 +409,19 @@ watch(
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:zap"
-                ></iconify-icon>
+                />
               </div>
               Starters
               <iconify-icon
                 aria-hidden="true"
                 class="iconify rtl-hidden"
                 icon="lucide:chevron-right"
-              ></iconify-icon>
+              />
               <iconify-icon
                 aria-hidden="true"
                 class="iconify ltr-hidden"
                 icon="lucide:chevron-left"
-              ></iconify-icon>
+              />
             </template>
 
             <RouterLink
@@ -682,7 +682,7 @@ watch(
               aria-hidden="true"
               class="iconify sidebar-svg"
               icon="lucide:search"
-            ></iconify-icon>
+            />
           </a>
         </template>
       </Sideblock>
@@ -755,7 +755,7 @@ watch(
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:grid"
-                ></iconify-icon>
+                />
               </a>
             </Toolbar>
           </div>

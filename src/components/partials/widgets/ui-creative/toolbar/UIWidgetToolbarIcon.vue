@@ -22,7 +22,7 @@ const props = withDefaults(
           aria-hidden="true"
           class="iconify"
           :icon="props.icon"
-        ></iconify-icon>
+        />
       </a>
     </div>
   </div>

@@ -69,7 +69,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -83,7 +83,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -97,7 +97,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -111,7 +111,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                 </ul>
@@ -132,7 +132,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -146,7 +146,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -160,7 +160,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                 </ul>
@@ -181,7 +181,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -195,7 +195,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -209,7 +209,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                 </ul>
@@ -277,7 +277,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -291,7 +291,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -305,7 +305,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -319,7 +319,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                 </ul>
@@ -340,7 +340,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -354,7 +354,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -368,7 +368,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                 </ul>
@@ -389,7 +389,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -403,7 +403,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -417,7 +417,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -431,7 +431,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                 </ul>
@@ -499,7 +499,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -513,7 +513,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -527,7 +527,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -541,7 +541,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                 </ul>
@@ -562,7 +562,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -576,7 +576,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -590,7 +590,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -604,7 +604,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -618,7 +618,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -632,7 +632,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                 </ul>
@@ -653,7 +653,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -667,7 +667,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -681,7 +681,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -695,7 +695,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -709,7 +709,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -723,7 +723,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                 </ul>
@@ -744,7 +744,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -758,7 +758,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -772,7 +772,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -786,7 +786,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -800,7 +800,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                 </ul>
@@ -834,7 +834,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -848,7 +848,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -862,7 +862,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -876,7 +876,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -896,7 +896,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                 </ul>
@@ -917,7 +917,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -931,7 +931,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -945,7 +945,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -959,7 +959,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -973,7 +973,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                 </ul>
@@ -994,7 +994,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -1008,7 +1008,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -1022,7 +1022,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -1036,7 +1036,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -1050,7 +1050,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                 </ul>
@@ -1077,7 +1077,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -1097,7 +1097,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -1117,7 +1117,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                   <li>
@@ -1137,7 +1137,7 @@ const activeTab = ref<TabId>('list')
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:circle"
-                      ></iconify-icon>
+                      />
                     </RouterLink>
                   </li>
                 </ul>

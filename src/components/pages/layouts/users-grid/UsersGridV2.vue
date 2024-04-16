@@ -177,7 +177,7 @@ const optionsSingle = [
                       aria-hidden="true"
                       class="iconify"
                       icon="lucide:check-circle"
-                    ></iconify-icon>
+                    />
                   </span>
                   <span>Tasks</span>
                 </button>
@@ -187,7 +187,7 @@ const optionsSingle = [
                       aria-hidden="true"
                       class="iconify"
                       icon="lucide:file"
-                    ></iconify-icon>
+                    />
                   </span>
                   <span>Files</span>
                 </button>
@@ -220,7 +220,7 @@ const optionsSingle = [
                       aria-hidden="true"
                       class="iconify"
                       icon="lucide:user"
-                    ></iconify-icon>
+                    />
                   </span>
                   <span>Profile</span>
                 </button>
@@ -230,7 +230,7 @@ const optionsSingle = [
                       aria-hidden="true"
                       class="iconify"
                       icon="lucide:message-circle"
-                    ></iconify-icon>
+                    />
                   </span>
                   <span>Talk</span>
                 </button>

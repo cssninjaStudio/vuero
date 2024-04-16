@@ -43,7 +43,7 @@ const wizard = useWizard()
             aria-hidden="true"
             class="iconify"
             icon="lucide:chevron-down"
-          ></iconify-icon>
+          />
         </div>
       </template>
       <template #content="{ close }">
@@ -150,7 +150,7 @@ const wizard = useWizard()
           aria-hidden="true"
           class="iconify"
           icon="lucide:chevron-down"
-        ></iconify-icon>
+        />
       </div>
       <div
         class="dropdown-menu"
@@ -170,7 +170,7 @@ const wizard = useWizard()
               aria-hidden="true"
               class="iconify"
               icon="lucide:user"
-            ></iconify-icon>
+            />
             <span>Profile</span>
           </a>
           <a class="dropdown-item">
@@ -178,7 +178,7 @@ const wizard = useWizard()
               aria-hidden="true"
               class="iconify"
               icon="lucide:edit-2"
-            ></iconify-icon>
+            />
             <span>Edit Profile</span>
           </a>
           <a class="dropdown-item">
@@ -186,7 +186,7 @@ const wizard = useWizard()
               aria-hidden="true"
               class="iconify"
               icon="lucide:box"
-            ></iconify-icon>
+            />
             <span>Projects</span>
           </a>
           <a class="dropdown-item">
@@ -194,7 +194,7 @@ const wizard = useWizard()
               aria-hidden="true"
               class="iconify"
               icon="lucide:settings"
-            ></iconify-icon>
+            />
             <span>Settings</span>
           </a>
           <hr class="dropdown-divider">
@@ -206,7 +206,7 @@ const wizard = useWizard()
               aria-hidden="true"
               class="iconify"
               icon="lucide:log-out"
-            ></iconify-icon>
+            />
             <span>Sign Out</span>
           </a>
         </div>

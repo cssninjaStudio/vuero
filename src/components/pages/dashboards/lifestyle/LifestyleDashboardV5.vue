@@ -32,7 +32,7 @@ import {
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:plus"
-                  ></iconify-icon>
+                  />
                 </button>
               </template>
             </VAvatar>
@@ -90,7 +90,7 @@ import {
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:play"
-                      ></iconify-icon>
+                      />
                     </button>
                     <!--Bottom Overlay-->
                     <div class="item-overlay" />
@@ -152,7 +152,7 @@ import {
                         aria-hidden="true"
                         class="iconify"
                         icon="lucide:play"
-                      ></iconify-icon>
+                      />
                     </button>
                     <!--Bottom Overlay-->
                     <div class="item-overlay" />
@@ -221,7 +221,7 @@ import {
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:play"
-                  ></iconify-icon>
+                  />
                 </button>
                 <!--Bottom Overlay-->
                 <div class="item-overlay" />

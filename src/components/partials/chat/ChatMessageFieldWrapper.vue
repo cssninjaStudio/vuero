@@ -23,7 +23,7 @@ const dropdown = useDropdown(dropdownElement)
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:plus"
-              ></iconify-icon>
+              />
             </div>
           </div>
           <div
@@ -36,7 +36,7 @@ const dropdown = useDropdown(dropdownElement)
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:video"
-                ></iconify-icon>
+                />
                 <div class="meta">
                   <span>Video</span>
                   <span>Embed a video</span>
@@ -50,7 +50,7 @@ const dropdown = useDropdown(dropdownElement)
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:image"
-                ></iconify-icon>
+                />
                 <div class="meta">
                   <span>Images</span>
                   <span>Upload pictures</span>
@@ -64,7 +64,7 @@ const dropdown = useDropdown(dropdownElement)
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:link"
-                ></iconify-icon>
+                />
                 <div class="meta">
                   <span>Link</span>
                   <span>Post a link</span>
@@ -79,7 +79,7 @@ const dropdown = useDropdown(dropdownElement)
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:file"
-                ></iconify-icon>
+                />
                 <div class="meta">
                   <span>File</span>
                   <span>Upload a file</span>
@@ -95,7 +95,7 @@ const dropdown = useDropdown(dropdownElement)
             aria-hidden="true"
             class="iconify"
             icon="lucide:smile"
-          ></iconify-icon>
+          />
         </div>
       </div>
       <input

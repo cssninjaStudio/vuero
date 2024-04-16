@@ -88,7 +88,7 @@ const columns = {
                       aria-hidden="true"
                       class="iconify"
                       icon="lucide:plus"
-                    ></iconify-icon>
+                    />
                   </button>
                 </div>
               </div>
@@ -323,7 +323,7 @@ const columns = {
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:search"
-                  ></iconify-icon>
+                  />
                 </button>
               </div>
             </div>
@@ -359,12 +359,12 @@ const columns = {
                     aria-hidden="true"
                     class="iconify ltr-hidden"
                     icon="lucide:chevron-right"
-                  ></iconify-icon>
+                  />
                   <iconify-icon
                     aria-hidden="true"
                     class="iconify rtl-hidden"
                     icon="lucide:chevron-left"
-                  ></iconify-icon>
+                  />
                 </a>
               </div>
               <div class="center">
@@ -376,12 +376,12 @@ const columns = {
                     aria-hidden="true"
                     class="iconify rtl-hidden"
                     icon="lucide:chevron-right"
-                  ></iconify-icon>
+                  />
                   <iconify-icon
                     aria-hidden="true"
                     class="iconify ltr-hidden"
                     icon="lucide:chevron-left"
-                  ></iconify-icon>
+                  />
                 </a>
               </div>
             </div>

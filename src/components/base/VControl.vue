@@ -94,7 +94,7 @@ const controlClasees = computed(() => {
           aria-hidden="true"
           :icon="props.icon"
           class="iconify"
-        ></iconify-icon>
+        />
       </VLabel>
       <VLabel
         v-else
@@ -115,7 +115,7 @@ const controlClasees = computed(() => {
         aria-hidden="true"
         icon="lucide:check"
         class="iconify"
-      ></iconify-icon>
+      />
     </VLabel>
     <a
       v-else-if="hasError"
@@ -129,7 +129,7 @@ const controlClasees = computed(() => {
         aria-hidden="true"
         icon="lucide:x"
         class="iconify"
-      ></iconify-icon>
+      />
     </a>
 
     <slot

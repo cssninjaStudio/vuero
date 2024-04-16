@@ -31,7 +31,7 @@ const currentTab = ref(props.activeTab)
           aria-hidden="true"
           class="iconify"
           :icon="tab.icon"
-        ></iconify-icon>
+        />
       </a>
     </div>
   </div>

@@ -69,7 +69,7 @@ const sidebar = useSidebar()
             aria-hidden="true"
             class="iconify"
             icon="lucide:plus"
-          ></iconify-icon>
+          />
         </a>
       </div>
       <ul class="collapsed-conversations">

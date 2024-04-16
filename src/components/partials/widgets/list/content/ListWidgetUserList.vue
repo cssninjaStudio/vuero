@@ -36,7 +36,7 @@ const props = withDefaults(
             aria-hidden="true"
             class="iconify"
             icon="lucide:chevron-right"
-          ></iconify-icon>
+          />
         </a>
         <a
           v-else
@@ -48,7 +48,7 @@ const props = withDefaults(
             aria-hidden="true"
             class="iconify"
             icon="lucide:chevron-right"
-          ></iconify-icon>
+          />
         </a>
       </template>
 

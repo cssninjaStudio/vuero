@@ -115,7 +115,7 @@ watch([() => route.fullPath, dropdownElement], () => {
               aria-hidden="true"
               class="iconify"
               icon="lucide:arrow-left"
-            ></iconify-icon>
+            />
           </span>
         </button>
 
@@ -132,7 +132,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:circle"
-                ></iconify-icon>
+                />
                 <span>General</span>
               </h4>
 
@@ -196,7 +196,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:circle"
-                ></iconify-icon>
+                />
                 <span>Display</span>
               </h4>
 
@@ -332,7 +332,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:circle"
-                ></iconify-icon>
+                />
                 <span>Layout</span>
               </h4>
 
@@ -583,7 +583,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:circle"
-                ></iconify-icon>
+                />
                 <span>Cards</span>
               </h4>
 
@@ -703,7 +703,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   aria-hidden="true"
                   class="iconify"
                   icon="lucide:circle"
-                ></iconify-icon>
+                />
                 <span>Plugins</span>
               </h4>
 

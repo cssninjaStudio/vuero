@@ -23,7 +23,7 @@ const dropdown = useDropdown(dropdownElement)
           aria-hidden="true"
           class="iconify"
           icon="lucide:bell"
-        ></iconify-icon>
+        />
         <span class="new-indicator pulsate" />
       </div>
       <div

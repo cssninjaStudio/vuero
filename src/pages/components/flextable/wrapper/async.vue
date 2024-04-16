@@ -493,7 +493,7 @@ function onCallClick(row: any) {
                       <iconify-icon
                         class="iconify is-inline mr-2"
                         icon="lucide:send"
-                      ></iconify-icon>
+                      />
                       Calling...
                     </VTag>
                   </VTags>
@@ -520,7 +520,7 @@ function onCallClick(row: any) {
                             <iconify-icon
                               class="iconify is-inline mr-2"
                               icon="lucide:phone-off"
-                            ></iconify-icon>
+                            />
                             Cancel call
                           </VButton>
                           <VButton
@@ -533,7 +533,7 @@ function onCallClick(row: any) {
                             <iconify-icon
                               class="iconify is-inline mr-2"
                               icon="lucide:phone"
-                            ></iconify-icon>
+                            />
                             Call {{ row.name }}
                           </VButton>
                         </VFlex>

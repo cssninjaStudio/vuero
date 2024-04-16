@@ -47,7 +47,7 @@ const isScrolling = computed(() => {
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:activity"
-              ></iconify-icon>
+              />
               <span>Homepage</span>
             </a>
           </div>
@@ -68,7 +68,7 @@ const isScrolling = computed(() => {
                   >
                     <span>Homepage</span>
                     <span class="caret">
-                      <iconify-icon aria-hidden="true" class="iconify" icon="lucide:chevron-down"></iconify-icon>
+                      <iconify-icon aria-hidden="true" class="iconify" icon="lucide:chevron-down"/>
                     </span>
                   </a>
                 </div>

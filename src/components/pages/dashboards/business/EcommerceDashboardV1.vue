@@ -67,7 +67,7 @@ const {
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:gift"
-              ></iconify-icon>
+              />
             </VIconBox>
           </div>
           <div class="dashboard-tile-inner">
@@ -100,7 +100,7 @@ const {
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:dollar-sign"
-              ></iconify-icon>
+              />
             </VIconBox>
           </div>
           <div class="dashboard-tile-inner">
@@ -133,7 +133,7 @@ const {
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:box"
-              ></iconify-icon>
+              />
             </VIconBox>
           </div>
           <div class="dashboard-tile-inner">
@@ -166,7 +166,7 @@ const {
                 aria-hidden="true"
                 class="iconify"
                 icon="lucide:shopping-cart"
-              ></iconify-icon>
+              />
             </VIconBox>
           </div>
           <div class="dashboard-tile-inner">

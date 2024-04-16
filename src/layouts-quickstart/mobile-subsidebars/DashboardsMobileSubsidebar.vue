@@ -16,7 +16,7 @@
               aria-hidden="true"
               class="iconify"
               icon="lucide:chevron-right"
-            ></iconify-icon>
+            />
           </template>
 
           <RouterLink

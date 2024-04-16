@@ -20,7 +20,7 @@ const chat = useChat()
       aria-hidden="true"
       class="iconify"
       icon="lucide:chevron-left"
-    ></iconify-icon>
+    />
   </a>
 </template>
 

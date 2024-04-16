@@ -106,7 +106,7 @@ function updateColor({ colors }: any) {
               class="iconify rem-120 is-clickable"
               aria-hidden="true"
               icon="fluent:chevron-up-down-20-filled"
-            ></iconify-icon>
+            />
           </template>
         </ColorPicker>
       </div>

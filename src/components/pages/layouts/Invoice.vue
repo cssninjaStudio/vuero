@@ -101,28 +101,28 @@ const totalColumns = {
               aria-hidden="true"
               class="iconify"
               icon="lucide:printer"
-            ></iconify-icon>
+            />
           </a>
           <a class="action">
             <iconify-icon
               aria-hidden="true"
               class="iconify"
               icon="lucide:download-cloud"
-            ></iconify-icon>
+            />
           </a>
           <a class="action">
             <iconify-icon
               aria-hidden="true"
               class="iconify"
               icon="lucide:mail"
-            ></iconify-icon>
+            />
           </a>
           <a class="action">
             <iconify-icon
               aria-hidden="true"
               class="iconify"
               icon="lucide:arrow-left"
-            ></iconify-icon>
+            />
           </a>
         </div>
       </div>

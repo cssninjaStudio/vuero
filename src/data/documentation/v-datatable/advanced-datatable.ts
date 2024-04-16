@@ -13,8 +13,8 @@ function renderIcon(data: any /* , cell: any, row: any */) {
 // Caffeinated column cell manipulation
 function renderYesNo(data: any /* , cell: any, row: any */) {
   return data == 'true'
-    ? '<div class="has-text-centered"><span class="positive-icon"><iconify-icon aria-hidden="true" class="iconify" icon="lucide:check"></iconify-icon></span></div>'
-    : '<div class="has-text-centered"><span class="negative-icon"><iconify-icon aria-hidden="true" class="iconify" icon="lucide:x"></iconify-icon></span></div>'
+    ? '<div class="has-text-centered"><span class="positive-icon"><iconify-icon aria-hidden="true" class="iconify" icon="lucide:check"/></span></div>'
+    : '<div class="has-text-centered"><span class="negative-icon"><iconify-icon aria-hidden="true" class="iconify" icon="lucide:x"/></span></div>'
 }
 
 // Price
@@ -48,10 +48,10 @@ function renderStatus(data: any /* , cell: any, row: any */) {
 // profit
 function renderProfit(data: any /* , cell: any, row: any */) {
   if (data > 0) {
-    return `<div class="has-text-centered"><span class="positive-icon light-text"><iconify-icon aria-hidden="true" class="iconify" icon="lucide:trending-up"></iconify-icon> +${data}%</span></div>`
+    return `<div class="has-text-centered"><span class="positive-icon light-text"><iconify-icon aria-hidden="true" class="iconify" icon="lucide:trending-up"/> +${data}%</span></div>`
   }
   else if (data < 0) {
-    return `<div class="has-text-centered"><span class="negative-icon is-danger light-text"><iconify-icon aria-hidden="true" class="iconify" icon="lucide:trending-down"></iconify-icon> -${data}%</span></div>`
+    return `<div class="has-text-centered"><span class="negative-icon is-danger light-text"><iconify-icon aria-hidden="true" class="iconify" icon="lucide:trending-down"/> -${data}%</span></div>`
   }
 }
 

@@ -18,7 +18,7 @@ const props = defineProps<{
               <iconify-icon
                 class="iconify toc-link-anchor"
                 icon="lucide:link"
-              ></iconify-icon>
+              />
             </a>
           </h3>
         </div>
@@ -92,7 +92,7 @@ const props = defineProps<{
               <iconify-icon
                 class="iconify toc-link-anchor"
                 icon="lucide:link"
-              ></iconify-icon>
+              />
             </a>
           </h3>
         </div>
@@ -136,7 +136,7 @@ const props = defineProps<{
               <iconify-icon
                 class="iconify toc-link-anchor"
                 icon="lucide:link"
-              ></iconify-icon>
+              />
             </a>
           </h3>
         </div>
@@ -180,7 +180,7 @@ const props = defineProps<{
               <iconify-icon
                 class="iconify toc-link-anchor"
                 icon="lucide:link"
-              ></iconify-icon>
+              />
             </a>
           </h3>
         </div>

@@ -65,7 +65,7 @@ import { courses, files, students } from '/@src/data/dashboards/course'
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:clock"
-                  ></iconify-icon>
+                  />
                   <small>{{ course.duration }}</small>
                 </span>
                 <span>
@@ -73,7 +73,7 @@ import { courses, files, students } from '/@src/data/dashboards/course'
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:message-circle"
-                  ></iconify-icon>
+                  />
                   <small>{{ course.comments }}</small>
                 </span>
               </div>
@@ -86,7 +86,7 @@ import { courses, files, students } from '/@src/data/dashboards/course'
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:calendar"
-                  ></iconify-icon>
+                  />
                   <small>{{ course.actionText }}</small>
                 </span>
               </div>
@@ -166,7 +166,7 @@ import { courses, files, students } from '/@src/data/dashboards/course'
                     aria-hidden="true"
                     class="iconify"
                     icon="lucide:search"
-                  ></iconify-icon>
+                  />
                 </div>
               </div>
             </div>

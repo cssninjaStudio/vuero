@@ -166,14 +166,14 @@ useHead({
                           aria-hidden="true"
                           class="iconify"
                           icon="lucide:check"
-                        ></iconify-icon>
+                        />
                       </span>
                       <span class="inactive">
                         <iconify-icon
                           aria-hidden="true"
                           class="iconify"
                           icon="lucide:circle"
-                        ></iconify-icon>
+                        />
                       </span>
                     </span>
                   </VLabel>

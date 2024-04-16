@@ -38,14 +38,14 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
           <iconify-icon
             class="iconify"
             icon="lucide:map-pin"
-          ></iconify-icon>
+          />
           Los Angeles, CA
         </div>
         <div class="search-job">
           <iconify-icon
             class="iconify"
             icon="lucide:briefcase"
-          ></iconify-icon>
+          />
           <input
             type="text"
             placeholder="Job Type"
@@ -55,7 +55,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
           <iconify-icon
             class="iconify"
             icon="lucide:dollar-sign"
-          ></iconify-icon>
+          />
           <input
             type="text"
             placeholder="Salary Range"
