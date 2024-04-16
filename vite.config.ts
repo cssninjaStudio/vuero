@@ -8,8 +8,6 @@ import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Unfonts from 'unplugin-fonts/vite'
 import { VitePluginRadar } from 'vite-plugin-radar'
-// @ts-expect-error
-import PurgeIcons from 'vite-plugin-purge-icons'
 import ImageMin from 'vite-plugin-imagemin'
 import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
 import { VitePWA } from 'vite-plugin-pwa'
@@ -59,7 +57,6 @@ export default defineConfig({
     include: [
       '@ckeditor/ckeditor5-vue',
       '@ckeditor/ckeditor5-build-classic',
-      '@iconify/iconify',
       '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.min.js',
       '@vee-validate/zod',
       '@vueuse/core',
@@ -148,6 +145,7 @@ export default defineConfig({
         defineModel: true,
         propsDestructure: true,
       },
+      customElement: ['iconify-icon'],
     }),
 
     /**
@@ -231,14 +229,6 @@ export default defineConfig({
       dts: './types/components.d.ts',
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
     }),
-
-    /**
-     * vite-plugin-purge-icons plugin is responsible of autoloading icones from multiples providers
-     *
-     * @see https://icones.netlify.app/
-     * @see https://github.com/antfu/purge-icons/tree/main/packages/vite-plugin-purge-icons
-     */
-    PurgeIcons(),
 
     /**
      * vite-plugin-fonts plugin inject webfonts from differents providers

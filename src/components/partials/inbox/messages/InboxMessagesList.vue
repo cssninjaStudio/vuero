@@ -42,14 +42,11 @@ watchEffect(() => {
     "
   >
     <div class="message-checkbox">
-      <label class="checkbox is-outlined is-primary">
-        <input
-          v-model="internalSelection"
-          type="checkbox"
-          :value="2"
-        >
-        <span />
-      </label>
+      <VCheckbox
+        v-model="internalSelection"
+        :value="2"
+        color="primary"
+      />
     </div>
     <div class="message-meta">
       <span class="name">Jonathan Krugger</span>
@@ -72,14 +69,11 @@ watchEffect(() => {
     @click="() => emit('update:conversationId', 1)"
   >
     <div class="message-checkbox">
-      <label class="checkbox is-outlined is-primary">
-        <input
-          v-model="internalSelection"
-          type="checkbox"
-          :value="1"
-        >
-        <span />
-      </label>
+      <VCheckbox
+        v-model="internalSelection"
+        :value="1"
+        color="primary"
+      />
     </div>
     <div class="message-meta">
       <span class="name">Melany Wallace</span>
@@ -100,14 +94,11 @@ watchEffect(() => {
     @click="() => emit('update:conversationId', 3)"
   >
     <div class="message-checkbox">
-      <label class="checkbox is-outlined is-primary">
-        <input
-          v-model="internalSelection"
-          type="checkbox"
-          :value="3"
-        >
-        <span />
-      </label>
+      <VCheckbox
+        v-model="internalSelection"
+        :value="3"
+        color="primary"
+      />
     </div>
     <div class="message-meta">
       <span class="name">Greta Kroppfer</span>
@@ -128,14 +119,11 @@ watchEffect(() => {
     @click="() => emit('update:conversationId', 4)"
   >
     <div class="message-checkbox">
-      <label class="checkbox is-outlined is-primary">
-        <input
-          v-model="internalSelection"
-          type="checkbox"
-          :value="4"
-        >
-        <span />
-      </label>
+      <VCheckbox
+        v-model="internalSelection"
+        :value="4"
+        color="primary"
+      />
     </div>
     <div class="message-meta">
       <span class="name">Elizabeth Fisher</span>
@@ -156,14 +144,11 @@ watchEffect(() => {
     @click="() => emit('update:conversationId', 5)"
   >
     <div class="message-checkbox">
-      <label class="checkbox is-outlined is-primary">
-        <input
-          v-model="internalSelection"
-          type="checkbox"
-          :value="5"
-        >
-        <span />
-      </label>
+      <VCheckbox
+        v-model="internalSelection"
+        :value="5"
+        color="primary"
+      />
     </div>
     <div class="message-meta">
       <span class="name">Carmen Escudero</span>
@@ -186,14 +171,11 @@ watchEffect(() => {
     @click="() => emit('update:conversationId', 6)"
   >
     <div class="message-checkbox">
-      <label class="checkbox is-outlined is-primary">
-        <input
-          v-model="internalSelection"
-          type="checkbox"
-          :value="6"
-        >
-        <span />
-      </label>
+      <VCheckbox
+        v-model="internalSelection"
+        :value="6"
+        color="primary"
+      />
     </div>
     <div class="message-meta">
       <span class="name">Irina Vierbovsky</span>
@@ -214,14 +196,11 @@ watchEffect(() => {
     @click="() => emit('update:conversationId', 7)"
   >
     <div class="message-checkbox">
-      <label class="checkbox is-outlined is-primary">
-        <input
-          v-model="internalSelection"
-          type="checkbox"
-          :value="7"
-        >
-        <span />
-      </label>
+      <VCheckbox
+        v-model="internalSelection"
+        :value="7"
+        color="primary"
+      />
     </div>
     <div class="message-meta">
       <span class="name">Alejandro Badajoz</span>
@@ -242,14 +221,11 @@ watchEffect(() => {
     @click="() => emit('update:conversationId', 8)"
   >
     <div class="message-checkbox">
-      <label class="checkbox is-outlined is-primary">
-        <input
-          v-model="internalSelection"
-          type="checkbox"
-          :value="8"
-        >
-        <span />
-      </label>
+      <VCheckbox
+        v-model="internalSelection"
+        :value="8"
+        color="primary"
+      />
     </div>
     <div class="message-meta">
       <span class="name">Edouard Falant</span>
@@ -270,14 +246,11 @@ watchEffect(() => {
     @click="() => emit('update:conversationId', 9)"
   >
     <div class="message-checkbox">
-      <label class="checkbox is-outlined is-primary">
-        <input
-          v-model="internalSelection"
-          type="checkbox"
-          :value="9"
-        >
-        <span />
-      </label>
+      <VCheckbox
+        v-model="internalSelection"
+        :value="9"
+        color="primary"
+      />
     </div>
     <div class="message-meta">
       <span class="name">Sandrine Coulart</span>
@@ -298,14 +271,11 @@ watchEffect(() => {
     @click="() => emit('update:conversationId', 10)"
   >
     <div class="message-checkbox">
-      <label class="checkbox is-outlined is-primary">
-        <input
-          v-model="internalSelection"
-          type="checkbox"
-          :value="10"
-        >
-        <span />
-      </label>
+      <VCheckbox
+        v-model="internalSelection"
+        :value="10"
+        color="primary"
+      />
     </div>
     <div class="message-meta">
       <span class="name">Kelly Marston</span>

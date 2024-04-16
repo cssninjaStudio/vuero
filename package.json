@@ -66,7 +66,6 @@
     "@ckeditor/ckeditor5-build-classic": "41.3.1",
     "@ckeditor/ckeditor5-vue": "5.1.0",
     "@cssninja/bulma-css-vars": "0.9.2",
-    "@iconify/iconify": "3.1.1",
     "@mapbox/mapbox-gl-geocoder": "5.0.2",
     "@minify-html/node": "^0.15.0",
     "@nuxt/devalue": "2.0.2",
@@ -99,6 +98,7 @@
     "focus-trap": "7.5.4",
     "focus-trap-vue": "4.0.3",
     "h3": "1.11.1",
+    "iconify-icon": "^2.1.0",
     "imask": "7.6.0",
     "jiti": "1.21.0",
     "listhen": "1.7.2",
@@ -145,7 +145,6 @@
     "@ckeditor/ckeditor5-font": "^41.3.1",
     "@commitlint/cli": "19.2.2",
     "@commitlint/config-conventional": "19.2.2",
-    "@iconify/json": "2.2.172",
     "@intlify/unplugin-vue-i18n": "4.0.0",
     "@stylistic/eslint-plugin": "^1.7.2",
     "@types/dragula": "3.7.4",
@@ -197,7 +196,6 @@
     "unplugin-vue-components": "0.26.0",
     "vite": "5.2.9",
     "vite-plugin-imagemin": "0.6.1",
-    "vite-plugin-purge-icons": "0.10.0",
     "vite-plugin-pwa": "0.19.8",
     "vite-plugin-radar": "0.9.4",
     "vue-component-meta": "^2.0.13",
@@ -214,9 +212,6 @@
       "allowedVersions": {
         "mapbox-gl": "3.0.0"
       }
-    },
-    "patchedDependencies": {
-      "@purge-icons/core@0.10.0": "patches/@purge-icons__core@0.10.0.patch"
     }
   }
 }
