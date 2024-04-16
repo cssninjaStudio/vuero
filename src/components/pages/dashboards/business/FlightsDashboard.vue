@@ -41,8 +41,7 @@ const options = ref(['All Flights', 'All Options'])
           <div class="booking-bar">
             <ClientOnly>
               <VDatePicker
-                v-model="date"
-                is-range
+                v-model.range="date"
                 color="green"
                 trim-weeks
               >

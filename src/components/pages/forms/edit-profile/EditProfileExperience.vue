@@ -135,8 +135,7 @@ const onSave = async () => {
                 <div class="column is-12">
                   <ClientOnly>
                     <VDatePicker
-                      v-model="range"
-                      is-range
+                      v-model.range="range"
                       color="green"
                       trim-weeks
                     >

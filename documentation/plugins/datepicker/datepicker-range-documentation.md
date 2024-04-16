@@ -25,8 +25,7 @@ const range = reactive({
 <template>
   <ClientOnly>
     <VDatePicker
-      v-model="range"
-      is-range
+      v-model.range="range"
       color="green"
       trim-weeks
     >
@@ -63,7 +62,7 @@ const range = reactive({
 <!--example-->
 
 <ClientOnly>
-  <VDatePicker v-model="frontmatter.state.range" is-range color="green" trim-weeks>
+  <VDatePicker v-model.range="frontmatter.state.range" color="green" trim-weeks>
     <template v-slot="{ inputValue, inputEvents }">
       <VField addons>
         <VControl expanded icon="feather:corner-down-right">

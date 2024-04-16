@@ -76,8 +76,7 @@ const onSubmit = () => {
             <ClientOnly>
               <div class="column is-6">
                 <VDatePicker
-                  v-model="date"
-                  is-range
+                  v-model.range="date"
                   color="green"
                   trim-weeks
                 >

@@ -121,8 +121,7 @@ const selectCustomer = (customer: WizardCustomer | null) => {
         <h4>Project Time Frame</h4>
         <ClientOnly>
           <VDatePicker
-            v-model="wizard.data.timeFrame"
-            is-range
+            v-model.range="wizard.data.timeFrame"
             color="green"
             trim-weeks
           >
