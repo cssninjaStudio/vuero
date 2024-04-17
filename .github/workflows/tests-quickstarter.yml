@@ -1,0 +1,35 @@
+name: tests-quickstarter
+
+on:
+  workflow_call:
+  workflow_dispatch:
+
+jobs:
+  build-quickstarter:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      
+      - run: corepack enable
+      
+      - id: build_quickstarter
+        name: build test quickstarter
+        uses: ./.github/actions/build-quickstarter-action
+        with:
+          tag: test
+          project: vuero
+
+      - name: extract quickstarter
+        run: |
+          unzip ${{ github.workspace }}/${{ steps.build_quickstarter.outputs.filepath }} -d ${{ github.workspace }}/quickstarter
+
+      - name: install quickstarter
+        working-directory: ./quickstarter
+        run: |
+          pnpm install
+      
+      - name: build quickstarter
+        working-directory: ./quickstarter
+        run: |
+          pnpm build
