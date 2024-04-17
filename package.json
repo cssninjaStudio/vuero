@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "license": "SEE LICENSE IN LICENSE.md",
-  "packageManager": "pnpm@8.14.0",
+  "packageManager": "pnpm@9.0.1",
   "author": {
     "name": "cssninjaStudio <hello@cssninja.io> (https://cssninja.io)"
   },
@@ -198,6 +198,7 @@
     "vite-plugin-imagemin": "0.6.1",
     "vite-plugin-pwa": "0.19.8",
     "vite-plugin-radar": "0.9.4",
+    "vite-plugin-vue-devtools": "^7.0.27",
     "vue-component-meta": "^2.0.13",
     "vue-tsc": "2.0.13",
     "yorkie": "2.0.0"

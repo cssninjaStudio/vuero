@@ -13,6 +13,7 @@ import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 import purgecss from 'rollup-plugin-purgecss'
 import UnheadVite from '@unhead/addons/vite'
+import VueDevTools from 'vite-plugin-vue-devtools'
 import { unheadVueComposablesImports } from '@unhead/vue'
 
 // local vite plugin
@@ -135,6 +136,13 @@ export default defineConfig({
   },
   plugins: [
     /**
+     * Shows a quick overview of your app, including the Vue version, pages and components.
+     *
+     * @see https://devtools-next.vuejs.org/
+     */
+    VueDevTools(),
+
+    /**
      * plugin-vue plugin inject vue library and allow sfc files to work (*.vue)
      *
      * @see https://github.com/vitejs/vite-plugin-vue/blob/main/packages/plugin-vue/README.md
@@ -147,9 +155,9 @@ export default defineConfig({
       },
       template: {
         compilerOptions: {
-          isCustomElement: (tag) => ['iconify-icon'].includes(tag),
-        }
-      }
+          isCustomElement: tag => ['iconify-icon'].includes(tag),
+        },
+      },
     }),
 
     /**
