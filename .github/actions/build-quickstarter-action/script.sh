@@ -130,12 +130,14 @@ find src/components/{svg,navigation,pages,partials} -type f -not \( \
 
 find src/components/{svg,navigation,pages,partials} -type d -empty -delete
 
-# src/assets/illustrations/apps/vuero-banking-light.png
-# src/assets/illustrations/apps/vuero-banking-dark.png
+# src/assets/illustrations/apps/vuero-banking-light.webp
+# src/assets/illustrations/apps/vuero-banking-dark.webp
 # src/assets/illustrations/landing/app-1.webp
 # src/assets/illustrations/landing/app-1-dark.webp
 # src/assets/illustrations/landing/app-2.png
 # src/assets/illustrations/landing/app-2-dark.png
+# src/assets/illustrations/landing/feature-1.webp
+# src/assets/illustrations/landing/feature-1-dark.webp
 # src/assets/illustrations/dashboards/flights/*
 # src/assets/illustrations/right-panel/languages.svg
 # src/assets/illustrations/right-panel/languages-dark.svg
@@ -151,16 +153,16 @@ find src/assets -type f -not \( \
   -or -name 'app-1-dark.webp' \
   -or -name 'app-2.png' \
   -or -name 'app-2-dark.png' \
-  -or -name 'feature-1.png' \
-  -or -name 'feature-1-dark.png' \
+  -or -name 'feature-1.webp' \
+  -or -name 'feature-1-dark.webp' \
   -or -name 'feature-2.svg' \
   -or -name 'feature-2-dark.svg' \
   -or -name 'feature-3.svg' \
   -or -name 'feature-3-dark.svg' \
   -or -name 'languages.svg' \
   -or -name 'languages-dark.svg' \
-  -or -name 'vuero-banking-light.png' \
-  -or -name 'vuero-banking-dark.png' \
+  -or -name 'vuero-banking-light.webp' \
+  -or -name 'vuero-banking-dark.webp' \
   \) -delete
 
 find src/assets -type d -empty -delete
