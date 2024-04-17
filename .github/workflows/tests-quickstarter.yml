@@ -1,11 +1,11 @@
-name: tests-npm
+name: tests-quickstarter
 
 on:
   workflow_call:
   workflow_dispatch:
 
 jobs:
-  build-npm:
+  build-quickstarter:
     runs-on: ubuntu-latest
 
     steps:
