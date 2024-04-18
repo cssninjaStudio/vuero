@@ -10,7 +10,7 @@ const props = defineProps<{
 <template>
   <div class="mobile-subsidebar">
     <div class="inner">
-      <div class="sidebar-title">
+      <div v-if="props.label" class="sidebar-title">
         <slot>
           <h3>{{ props.label }}</h3>
         </slot>
@@ -78,6 +78,13 @@ const props = defineProps<{
     </div>
   </div>
 </template>
+
+<style scoped lang="scss">
+.mobile-subsidebar .inner {
+  margin-inline-start: 0;
+  width: 100%;
+}
+</style>
 
 <style lang="scss">
 .mobile-subsidebar {

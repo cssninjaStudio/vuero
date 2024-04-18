@@ -1333,7 +1333,7 @@ const bottomLinks = ref<SidebarItem[]>([
     id: 'user-profile-dropdown',
     type: 'component',
     hideMobile: true,
-    component: () => h(UserProfileDropdown, { up: true }),
+    component: () => h(UserProfileDropdown, { end: true }),
   },
 ])
 </script>
@@ -1343,6 +1343,7 @@ const bottomLinks = ref<SidebarItem[]>([
     :links
     :bottom-links="bottomLinks"
   >
+    <!-- Propagating the context to the default slot -->
     <template #default="context">
       <slot v-bind="context" />
     </template>
@@ -1368,7 +1369,7 @@ const bottomLinks = ref<SidebarItem[]>([
 
     <template #toolbar-mobile>
       <NotificationsMobileDropdown />
-      <UserProfileDropdown />
+      <UserProfileDropdown right />
     </template>
 
     <template #extra>

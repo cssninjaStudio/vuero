@@ -1,21 +1,14 @@
 <script setup lang="ts">
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 
-import type { SidebarLayoutContext, SidebarItem, SidebarItemSubsidebar } from './sidebar.types'
+import type { SidebarLayoutContext, SidebarItem, SidebarItemSubsidebar, SidebarTheme } from './sidebar.types'
 import { injectionKey } from './sidebar.context'
 
 const props = withDefaults(
   defineProps<{
     links?: SidebarItem[]
     bottomLinks?: SidebarItem[]
-    theme?:
-      | 'default'
-      | 'color'
-      | 'color-curved'
-      | 'curved'
-      | 'float'
-      | 'labels'
-      | 'labels-hover'
+    theme?: SidebarTheme
     defaultSidebar?: string
     closeOnChange?: boolean
     openOnMounted?: boolean

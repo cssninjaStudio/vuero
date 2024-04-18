@@ -55,14 +55,14 @@ export interface SubsidebarItemCollapse {
     label: string
     to: string
     icon?: string
-    tag?: string
+    tag?: string | number
   }[]
 }
 export interface SubsidebarItemLink {
   type: 'link'
   label: string
   to: string
-  tag?: string
+  tag?: string | number
 }
 export interface SubsidebarItemDivider {
   type: 'divider'
@@ -75,17 +75,19 @@ export type SubsidebarItem =
   | SubsidebarItemDivider
 
 // -- Context
+export type SidebarTheme =
+  | 'default'
+  | 'color'
+  | 'color-curved'
+  | 'curved'
+  | 'float'
+  | 'labels'
+  | 'labels-hover'
+
 export interface SidebarLayoutContext {
   links: ComputedRef<SidebarItem[]>
   bottomLinks: ComputedRef<SidebarItem[]>
-  theme: ComputedRef<
-    | 'default'
-    | 'color'
-    | 'color-curved'
-    | 'curved'
-    | 'float'
-    | 'labels'
-    | 'labels-hover'>
+  theme: ComputedRef<SidebarTheme>
 
   defaultSidebar: ComputedRef<string>
   closeOnChange: ComputedRef<boolean>

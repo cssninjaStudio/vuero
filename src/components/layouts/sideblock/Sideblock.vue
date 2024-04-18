@@ -1,18 +1,10 @@
 <script setup lang="ts">
-export type SideblockTheme = 'default' | 'curved' | 'color' | 'color-curved'
+import { useSideblockLayoutContext } from './sideblock.context'
 
-const props = withDefaults(
-  defineProps<{
-    theme?: SideblockTheme
-    isOpen?: boolean
-  }>(),
-  {
-    theme: 'default',
-  },
-)
+const { theme } = useSideblockLayoutContext()
 
 const themeClasses = computed(() => {
-  switch (props.theme) {
+  switch (theme.value) {
     case 'color':
       return 'is-colored'
     case 'curved':
@@ -423,6 +415,7 @@ const themeClasses = computed(() => {
       transition: background-color 0.3s;
 
       .iconify {
+        font-size: 18px;
         height: 20px;
         width: 20px;
         transition: stroke 0.3s;

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import Layout from '/@src/layouts/sideblock.vue'
+
 /**
  * This is a Vue Component that will be
  * automatically mapped to a entry on vue-router.
@@ -22,7 +24,7 @@ useHead({
 </script>
 
 <template>
-  <SideblockLayout
+  <Layout
     theme="curved"
     open-on-mounted
   >
@@ -35,5 +37,5 @@ useHead({
           files in /src/components/pages directory
         -->
     </div>
-  </SideblockLayout>
+  </Layout>
 </template>

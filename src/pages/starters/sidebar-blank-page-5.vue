@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import Layout from '/@src/layouts/sidebar.vue'
+
 /**
  * This is a Vue Component that will be
  * automatically mapped to a entry on vue-router.
@@ -22,7 +24,7 @@ useHead({
 </script>
 
 <template>
-  <SidebarLayout theme="labels">
+  <Layout theme="labels">
     <!-- Content Wrapper -->
     <div class="page-content-inner">
       <!--
@@ -32,5 +34,5 @@ useHead({
           files in /src/components/pages directory
         -->
     </div>
-  </SidebarLayout>
+  </Layout>
 </template>

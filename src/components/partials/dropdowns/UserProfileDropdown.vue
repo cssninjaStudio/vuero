@@ -12,7 +12,6 @@ function logout() {
 
 <template>
   <VDropdown
-    right
     spaced
     class="user-dropdown profile-dropdown"
   >

@@ -85,7 +85,7 @@ export const useLayoutSwitcher = defineStore('layoutSwitcher', () => {
     suspensible: false,
   })
   const SideblockLayout = defineAsyncComponent({
-    loader: () => import('/@src/layouts/SideblockLayout.vue'),
+    loader: () => import('/@src/layouts/sideblock.vue'),
     delay: 0,
     suspensible: false,
   })

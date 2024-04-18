@@ -419,9 +419,6 @@ const themeClasses = computed(() => {
 
       .profile-dropdown {
         .dropdown-menu {
-          bottom: 0;
-          inset-inline-start: 145%;
-
           .dropdown-content {
             padding-top: 0;
             overflow: hidden;
