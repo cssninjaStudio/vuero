@@ -357,7 +357,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink to="navbar-maps-1">
+                    <RouterLink to="/navbar/maps-1">
                       <i
                         aria-hidden="true"
                         class="lnil lnil-map"
@@ -377,7 +377,7 @@ const activeTab = ref<TabId>('dashboards')
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink to="navbar-maps-2">
+                    <RouterLink to="/navbar/maps-2">
                       <i
                         aria-hidden="true"
                         class="lnil lnil-map"

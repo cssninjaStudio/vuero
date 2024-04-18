@@ -1,10 +1,11 @@
 <script setup lang="ts">
+import Layout from '/@src/layouts/sidebar.vue'
 import { useLayoutSwitcher } from '/@src/stores/layoutSwitcher'
 const layoutSwitcher = useLayoutSwitcher()
 </script>
 
 <template>
-  <SidebarLayout
+  <Layout
     :theme="layoutSwitcher.sidebarLayoutTheme"
     open-on-mounted
     default-sidebar="elements"
@@ -18,7 +19,7 @@ const layoutSwitcher = useLayoutSwitcher()
         <component :is="Component" />
       </Transition>
     </RouterView>
-  </SidebarLayout>
+  </Layout>
 </template>
 
 <style lang="scss">

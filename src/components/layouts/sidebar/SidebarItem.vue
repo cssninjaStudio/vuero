@@ -1,0 +1,61 @@
+<script setup lang="ts">
+import type { SidebarItem, SidebarItemAction } from './sidebar.types'
+import { useSidebarLayoutContext } from './sidebar.context'
+
+const props = defineProps<{
+  link: SidebarItem
+}>()
+
+const {
+  activeSubsidebarId,
+  toggleSubsidebar,
+} = useSidebarLayoutContext()
+</script>
+
+<template>
+  <a
+    v-if="props.link.type === 'subsidebar'"
+    :class="[activeSubsidebarId === props.link.id && 'is-active']"
+    :title="props.link.label"
+    tabindex="0"
+    role="button"
+    @keydown.enter.prevent="() => toggleSubsidebar(props.link.id)"
+    @click.prevent="() => toggleSubsidebar(props.link.id)"
+  >
+    <iconify-icon
+      aria-hidden="true"
+      class="iconify sidebar-svg"
+      :icon="props.link.icon"
+    />
+  </a>
+  <component
+    :is="props.link.component"
+    v-else-if="props.link.type === 'component'"
+    :title="props.link.label"
+  />
+  <RouterLink
+    v-else-if="props.link.type === 'link'"
+    :title="props.link.label"
+    :to="props.link.to"
+  >
+    <iconify-icon
+      aria-hidden="true"
+      class="iconify sidebar-svg"
+      :icon="props.link.icon"
+    />
+  </RouterLink>
+  <a
+    v-else-if="props.link.type === 'action'"
+    role="button"
+    tabindex="0"
+    :title="props.link.label"
+    @click="(props.link as SidebarItemAction).onClick"
+    @keydown.enter="(props.link as SidebarItemAction).onClick"
+  >
+    <iconify-icon
+      aria-hidden="true"
+      class="iconify sidebar-svg"
+      :icon="props.link.icon"
+    />
+  </a>
+</template>

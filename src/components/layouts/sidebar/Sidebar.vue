@@ -1,25 +1,13 @@
 <script setup lang="ts">
-export type SidebarTheme =
-  | 'default'
-  | 'color'
-  | 'color-curved'
-  | 'curved'
-  | 'float'
-  | 'labels'
-  | 'labels-hover'
+import { useSidebarLayoutContext } from './sidebar.context'
 
-const props = withDefaults(
-  defineProps<{
-    theme?: SidebarTheme
-    isOpen?: boolean
-  }>(),
-  {
-    theme: 'default',
-  },
-)
+const {
+  theme,
+  isOpen,
+} = useSidebarLayoutContext()
 
 const themeClasses = computed(() => {
-  switch (props.theme) {
+  switch (theme.value) {
     case 'color':
       return 'is-colored'
     case 'labels':
@@ -27,11 +15,11 @@ const themeClasses = computed(() => {
     case 'labels-hover':
       return 'has-labels has-hover-labels'
     case 'float':
-      return !props.isOpen ? 'is-float' : 'is-float is-bordered'
+      return !isOpen.value ? 'is-float' : 'is-float is-bordered'
     case 'curved':
-      return !props.isOpen ? 'is-curved' : ''
+      return !isOpen.value ? 'is-curved' : ''
     case 'color-curved':
-      return !props.isOpen ? 'is-colored is-curved' : 'is-colored'
+      return !isOpen.value ? 'is-colored is-curved' : 'is-colored'
     default:
       return ''
   }
@@ -43,10 +31,8 @@ const themeClasses = computed(() => {
     class="main-sidebar"
     :class="[themeClasses]"
   >
-    <div class="sidebar-brand">
-      <RouterLink to="/">
-        <AnimatedLogo width="36px" />
-      </RouterLink>
+    <div v-if="'logo' in $slots" class="sidebar-brand">
+      <slot name="logo" />
     </div>
     <div class="sidebar-inner">
       <div class="naver" />
@@ -339,7 +325,7 @@ const themeClasses = computed(() => {
         }
 
         a {
-          display: block;
+          display: flex;
           position: relative;
           transform: rotate(calc(var(--transform-direction) * 0));
           opacity: 1;

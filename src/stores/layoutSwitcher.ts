@@ -11,9 +11,6 @@
 
 import { acceptHMRUpdate, defineStore } from 'pinia'
 
-import type { SidebarTheme } from '/@src/components/navigation/desktop/Sidebar.vue'
-import type { SideblockTheme } from '/@src/components/navigation/desktop/Sideblock.vue'
-
 export const useLayoutSwitcher = defineStore('layoutSwitcher', () => {
   const route = useRoute()
 
@@ -83,7 +80,7 @@ export const useLayoutSwitcher = defineStore('layoutSwitcher', () => {
 
   // sidebar
   const SidebarLayout = defineAsyncComponent({
-    loader: () => import('/@src/layouts/SidebarLayout.vue'),
+    loader: () => import('/@src/layouts/sidebar.vue'),
     delay: 0,
     suspensible: false,
   })
@@ -116,7 +113,7 @@ export const useLayoutSwitcher = defineStore('layoutSwitcher', () => {
     return sidebarComponents[sidebarLayoutId.value] || SidebarLayout
   })
 
-  const sidebarLayoutTheme = computed<SidebarTheme | SideblockTheme>(() => {
+  const sidebarLayoutTheme = computed(() => {
     switch (sidebarLayoutId.value) {
       case 'sidebar-float':
         return 'float'

@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import { useLayoutSwitcher } from '/@src/stores/layoutSwitcher'
 
+defineOptions({
+  inheritAttrs: false,
+})
+
 const layoutSwitcher = useLayoutSwitcher()
 const isModalOpen = ref(false)
 
@@ -50,6 +54,7 @@ const layoutComponent = (slug?: string) => {
       aria-label="Open layout switcher"
       class="icon-link"
       tabindex="0"
+      v-bind="$attrs"
       role="button"
       @keydown.space.prevent="isModalOpen = true"
       @click.passive="isModalOpen = true"

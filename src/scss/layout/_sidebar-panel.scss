@@ -55,6 +55,8 @@
     margin: 0 auto;
     background-color: var(--border);
   }
+
+
 }
 
 /* ==========================================================================
@@ -514,6 +516,8 @@
 
 .sidebar-panel {
   &.is-messages {
+    z-index: 21;
+
     .messages-header {
       height: 60px;
       display: flex;
@@ -985,7 +989,7 @@
   width: 80px;
   background-color: var(--body-color);
   box-shadow: none;
-  z-index: 34;
+  z-index: 24;
   border-inline-start: 1px solid var(--fade-grey);
   transform: translateX(calc(var(--transform-direction) * -100%));
   transition: all 0.3s; // transition-all test

@@ -269,8 +269,7 @@ const props = defineProps<{
       }
 
       .iconify {
-        height: 18px;
-        width: 18px;
+        font-size: 18px;
         color: var(--muted-grey);
         transition: all 0.3s; // transition-all test
       }

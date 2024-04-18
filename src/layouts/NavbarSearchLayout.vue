@@ -415,9 +415,9 @@ watch(
       </template>
     </NavbarSearch>
 
-    <LanguagesPanel />
-    <ActivityPanel />
-    <TaskPanel />
+    <PanelLanguages />
+    <PanelActivity />
+    <PanelTask />
 
     <VViewWrapper top-nav>
       <VPageContentWrapper>

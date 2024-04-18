@@ -14,20 +14,7 @@ const props = defineProps<{
   >
     <div class="inner">
       <ul class="icon-side-menu">
-        <slot name="links">
-          <li>
-            <a
-              aria-label="Back to homepage"
-              href="/"
-            >
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
-                icon="lucide:activity"
-              />
-            </a>
-          </li>
-        </slot>
+        <slot name="links" />
       </ul>
 
       <ul class="bottom-icon-side-menu">
@@ -105,9 +92,7 @@ const props = defineProps<{
 
           > .iconify {
             color: var(--title-grey);
-            height: 20px;
-            width: 20px;
-            stroke-width: 1.6px;
+            font-size: 18px;
           }
 
           .sidebar-icon {
@@ -294,8 +279,7 @@ const props = defineProps<{
               .iconify {
                 position: relative;
                 top: 1px;
-                height: 18px;
-                width: 18px;
+                font-size: 18px;
                 margin-inline-start: auto;
                 transform: rotate(calc(var(--transform-direction) * 0));
                 transition:
@@ -330,17 +314,12 @@ const props = defineProps<{
                   color: var(--primary);
                 }
 
-                .iconify {
+                .iconify, .lnil {
                   margin-inline-end: 8px;
                 }
 
                 .iconify {
-                  height: 8px;
-                  width: 8px;
-                  max-width: 8px;
-                  min-width: 8px;
-                  stroke-width: 2px;
-                  margin-inline-end: 8px;
+                  font-size: 8px;
                 }
               }
             }
@@ -353,6 +332,20 @@ const props = defineProps<{
           height: 10px;
           margin: 5px 0 10px;
           border-bottom: 1px solid rgb(0 0 0 / 15%);
+
+          &.with-label {
+            border-bottom: 0;
+            margin-top: 25px;
+
+            &::after,
+            &::before {
+              flex: 0;
+            }
+
+            .divider-label {
+              font-size: 0.7rem;
+            }
+          }
         }
 
         a {
@@ -373,8 +366,7 @@ const props = defineProps<{
 
       .button {
         .iconify {
-          height: 18px;
-          width: 18px;
+          font-size: 18px;
         }
       }
     }
@@ -656,8 +648,7 @@ const props = defineProps<{
         }
 
         .iconify {
-          height: 24px;
-          width: 24px;
+          font-size: 24px;
           fill: var(--primary);
           margin-inline-end: 5px;
           margin-inline-start: -12px;

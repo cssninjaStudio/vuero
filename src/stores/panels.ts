@@ -5,8 +5,8 @@
  * Using useStorage from @vueuse/core allow persistance storage accross tabs/sessions
  *
  * We can import and set activePanel anywhere in our project
- * @see /src/components/partials/toolbars/Toolbar.vue
- * @see /src/components/partials/panels/ActivityPanel.vue
+ * @see /src/components/panels/PanelSearch.vue
+ * @see /src/components/panels/PanelActivity.vue
  */
 
 import { acceptHMRUpdate, defineStore } from 'pinia'

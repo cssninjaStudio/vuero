@@ -469,7 +469,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  to="navbar-maps-1"
+                  to="/navbar/maps-1"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">
@@ -490,7 +490,7 @@ watch([() => route.fullPath, dropdownElement], () => {
                   </div>
                 </RouterLink>
                 <RouterLink
-                  to="navbar-maps-2"
+                  to="/navbar/maps-2"
                   class="dropdown-item is-media"
                 >
                   <div class="icon">

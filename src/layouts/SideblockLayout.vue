@@ -688,10 +688,10 @@ watch(
       </Sideblock>
     </Transition>
 
-    <LanguagesPanel />
-    <ActivityPanel />
-    <SearchPanel />
-    <TaskPanel />
+    <PanelLanguages />
+    <PanelActivity />
+    <PanelSearch />
+    <PanelTask />
 
     <VViewWrapper full>
       <VPageContentWrapper>

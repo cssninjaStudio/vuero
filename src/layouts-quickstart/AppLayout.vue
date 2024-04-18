@@ -1,10 +1,16 @@
 <script setup lang="ts">
-import type { SidebarTheme } from '/@src/components/navigation/desktop/Sidebar.vue'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 
 const props = withDefaults(
   defineProps<{
-    theme?: SidebarTheme
+    theme?:
+      | 'default'
+      | 'color'
+      | 'color-curved'
+      | 'curved'
+      | 'float'
+      | 'labels'
+      | 'labels-hover'
     defaultSidebar?: string
     closeOnChange?: boolean
     openOnMounted?: boolean
@@ -146,7 +152,7 @@ watch(
       />
     </Transition>
 
-    <LanguagesPanel />
+    <PanelLanguages />
 
     <VViewWrapper>
       <VPageContentWrapper>

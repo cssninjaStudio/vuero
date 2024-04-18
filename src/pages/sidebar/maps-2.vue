@@ -15,11 +15,11 @@ useHead({
 
 <template>
   <component
-    :is="layoutSwitcher.dynamicLayoutComponent as any"
+    :is="(layoutSwitcher.dynamicLayoutComponent as any)"
     v-bind="layoutSwitcher.dynamicLayoutProps"
     close-on-change
     default-sidebar="dashboard"
-    nowrap
+    no-view-wrapper
   >
     <MapsDashboard reversed>
       <template #header>
