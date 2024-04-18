@@ -46,7 +46,7 @@ jobs:
       - id: changelog
         name: release changelog
         run: |
-          pnpm dlx conventional-changelog-cli -p conventionalcommits -r 2 -o ${{ github.workspace }}/CHANGELOG_RELEASE.md
+          pnpm dlx conventional-changelog-cli -p conventionalcommits -r 2 -n ./.github/.versionrc.js -o ${{ github.workspace }}/CHANGELOG_RELEASE.md
           cat ${{ github.workspace }}/CHANGELOG_RELEASE.md
 
       - id: create_release
