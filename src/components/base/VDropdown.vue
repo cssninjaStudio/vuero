@@ -7,6 +7,7 @@ export interface VDropdownProps {
   color?: VDropdownColor
   icon?: string
   up?: boolean
+  end?: boolean
   right?: boolean
   modern?: boolean
   spaced?: boolean
@@ -39,6 +40,7 @@ defineExpose({
     :class="[
       props.right && 'is-right',
       props.up && 'is-up',
+      props.end && 'is-end',
       props.icon && 'is-dots',
       props.modern && 'is-modern',
       props.spaced && 'is-spaced',
@@ -114,6 +116,14 @@ defineExpose({
     .dropdown-menu {
       inset-inline-start: initial;
       inset-inline-end: 0;
+    }
+  }
+  &.is-end {
+    .dropdown-menu {
+      bottom: 0;
+      inset-inline-start: 145%;
+      transform: translateY(-100%);
+      height: fit-content;
     }
   }
 
