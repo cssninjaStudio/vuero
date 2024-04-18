@@ -3259,11 +3259,6 @@ code {
   background: rgb(255, 255, 255);
 }
 
-.h-toggle .toggler .active i,
-.h-toggle .toggler .inactive .iconify {
-  color: rgb(255, 255, 255);
-}
-
 .h-toggle .toggler .inactive {
   background: rgb(255, 255, 255);
   border-color: rgb(6, 214, 158);
@@ -3591,7 +3586,7 @@ code {
   background: rgb(255, 255, 255);
 }
 
-.flex-pagination .pagination-next.has-chevron svg,
+.flex-pagination .pagination-next.has-chevron .iconify,
 .flex-pagination .pagination-previous.has-chevron .iconify {
   color: rgb(42, 172, 142);
 }
@@ -3605,7 +3600,7 @@ code {
   border-color: rgb(42, 172, 142);
 }
 
-.is-dark .flex-pagination .pagination-next svg,
+.is-dark .flex-pagination .pagination-next .iconify,
 .is-dark .flex-pagination .pagination-previous .iconify {
   color: rgb(42, 172, 142);
 }
@@ -3910,7 +3905,6 @@ code {
   color: rgb(255, 255, 255);
 }
 
-.layout-selector .layout-item .indicator svg,
 .layout-selector .layout-item .indicator .iconify {
   color: rgb(255, 255, 255);
 }

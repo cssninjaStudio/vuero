@@ -1,4 +1,4 @@
-s### VDropdown
+### VDropdown
 
 You can use a `<VDropdown />` component to display a menu that
 will hold your options. pass the `right` prop to the component to align

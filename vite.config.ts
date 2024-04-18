@@ -149,10 +149,6 @@ export default defineConfig({
      */
     Vue({
       include: [/\.vue$/],
-      script: {
-        defineModel: true,
-        propsDestructure: true,
-      },
       template: {
         compilerOptions: {
           isCustomElement: tag => ['iconify-icon'].includes(tag),
