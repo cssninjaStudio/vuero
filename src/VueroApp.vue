@@ -139,8 +139,5 @@ initDarkmode()
         </Transition>
       </RouterView>
     </Suspense>
-    <ClientOnly>
-      <VReloadPrompt app-name="Vuero" />
-    </ClientOnly>
   </div>
 </template>

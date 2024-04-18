@@ -2,7 +2,7 @@
 import type { SidebarItem } from '/@src/components/layouts/sidebar/sidebar.types'
 
 import LayoutSwitcher from '/@src/components/layouts/shared/LayoutSwitcher.vue'
-import UserProfileDropdown from '/@src/components/partials/dropdowns/UserProfileDropdown.vue'
+import ToolbarUserProfile from '/@src/components/layouts/shared/toolbar/ToolbarUserProfile.vue'
 
 import { usePanels } from '/@src/stores/panels'
 
@@ -1333,7 +1333,7 @@ const bottomLinks = ref<SidebarItem[]>([
     id: 'user-profile-dropdown',
     type: 'component',
     hideMobile: true,
-    component: () => h(UserProfileDropdown, { end: true }),
+    component: () => h(ToolbarUserProfile, { end: true }),
   },
 ])
 </script>
@@ -1368,8 +1368,8 @@ const bottomLinks = ref<SidebarItem[]>([
     </template>
 
     <template #toolbar-mobile>
-      <NotificationsMobileDropdown />
-      <UserProfileDropdown right />
+      <ToolbarNotificationMobile />
+      <ToolbarUserProfile right />
     </template>
 
     <template #extra>
@@ -1379,6 +1379,10 @@ const bottomLinks = ref<SidebarItem[]>([
       <PanelActivity />
       <PanelSearch />
       <PanelTask />
+
+      <ClientOnly>
+        <VReloadPrompt app-name="Vuero" />
+      </ClientOnly>
     </template>
   </SidebarLayout>
 </template>

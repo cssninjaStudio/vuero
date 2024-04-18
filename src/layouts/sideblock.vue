@@ -1,8 +1,5 @@
 <script setup lang="ts">
 import type { SideblockItem } from '/@src/components/layouts/sideblock/sideblock.types'
-import { usePanels } from '/@src/stores/panels'
-
-const panels = usePanels()
 
 const links = ref<SideblockItem[]>([
   {
@@ -221,28 +218,14 @@ const links = ref<SideblockItem[]>([
     </template>
 
     <template #toolbar-mobile>
-      <NotificationsMobileDropdown />
-      <UserProfileDropdown />
+      <ToolbarNotificationMobile />
+      <ToolbarUserProfile />
     </template>
 
     <template #bottom-links>
-      <UserProfileDropdown end />
+      <ToolbarUserProfile end />
       <LayoutSwitcher class="search-link" />
-      <a
-        class="search-link"
-        aria-label="Display search panel"
-        data-content="Search"
-        tabindex="0"
-        role="button"
-        @keydown.space.prevent="panels.setActive('search')"
-        @click="panels.setActive('search')"
-      >
-        <iconify-icon
-          aria-hidden="true"
-          class="iconify sidebar-svg"
-          icon="lucide:search"
-        />
-      </a>
+      <ToolbarSearch />
     </template>
 
     <template #extra>
@@ -252,6 +235,10 @@ const links = ref<SideblockItem[]>([
       <PanelActivity />
       <PanelSearch />
       <PanelTask />
+
+      <ClientOnly>
+        <VReloadPrompt app-name="Vuero" />
+      </ClientOnly>
     </template>
   </SideblockLayout>
 </template>

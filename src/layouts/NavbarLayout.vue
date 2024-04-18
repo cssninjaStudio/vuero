@@ -92,8 +92,8 @@ watch(
         </RouterLink>
 
         <div class="brand-end">
-          <NotificationsMobileDropdown />
-          <UserProfileDropdown />
+          <ToolbarNotificationMobile />
+          <ToolbarUserProfile />
         </div>
       </template>
     </MobileNavbar>
@@ -261,7 +261,7 @@ watch(
         </Toolbar>
 
         <LayoutSwitcher />
-        <UserProfileDropdown right />
+        <ToolbarUserProfile right />
       </template>
 
       <!-- Custom navbar links -->
