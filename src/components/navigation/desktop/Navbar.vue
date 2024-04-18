@@ -453,8 +453,7 @@ const isScrolling = computed(() => {
           }
 
           .iconify {
-            height: 20px;
-            width: 20px;
+            font-size: 20px;
             color: var(--light-text-light-6);
             stroke-width: 1.6px;
             transition: stroke 0.3s;
