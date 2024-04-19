@@ -37,8 +37,8 @@ export const useLayoutSwitcher = defineStore('layoutSwitcher', () => {
     delay: 0,
     suspensible: false,
   })
-  const NavbarSearchLayout = defineAsyncComponent({
-    loader: () => import('/@src/layouts/NavbarSearchLayout.vue'),
+  const NavsearchLayout = defineAsyncComponent({
+    loader: () => import('/@src/layouts/navsearch.vue'),
     delay: 0,
     suspensible: false,
   })
@@ -50,9 +50,11 @@ export const useLayoutSwitcher = defineStore('layoutSwitcher', () => {
 
     'navbar-dropdown': NavbarDropdownLayout,
     'navbar-dropdown-colored': NavbarDropdownLayout,
-    'navbar-clean': NavbarSearchLayout,
-    'navbar-clean-center': NavbarSearchLayout,
-    'navbar-clean-fade': NavbarSearchLayout,
+
+    'navsearch-fixed': NavsearchLayout,
+    'navsearch-fixed-fade': NavsearchLayout,
+    'navsearch-shrink': NavsearchLayout,
+    'navsearch-reveal': NavsearchLayout,
   } as const
 
   type NavbarComponentsId = keyof typeof navbarComponents
@@ -66,13 +68,14 @@ export const useLayoutSwitcher = defineStore('layoutSwitcher', () => {
   const navbarLayoutTheme = computed(() => {
     switch (navbarLayoutId.value) {
       case 'navbar-fade':
-      case 'navbar-clean-fade':
+      case 'navsearch-fixed-fade':
         return 'fade'
       case 'navbar-colored':
       case 'navbar-dropdown-colored':
         return 'colored'
-      case 'navbar-clean-center':
-        return 'center'
+      case 'navsearch-fixed':
+      case 'navsearch-shrink':
+      case 'navsearch-reveal':
       default:
         return 'default'
     }
@@ -173,6 +176,12 @@ export const useLayoutSwitcher = defineStore('layoutSwitcher', () => {
       return {
         theme: navbarLayoutTheme.value,
         key: navbarLayoutId.value,
+        scrollBehavior:
+          navbarLayoutId.value === 'navsearch-shrink'
+            ? 'shrink'
+            : navbarLayoutId.value === 'navsearch-reveal'
+              ? 'reveal'
+              : undefined,
       }
     }
     else {

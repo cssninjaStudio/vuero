@@ -13,9 +13,10 @@ const selectedSlug = computed(() => {
     case 'navbar-dropdown':
     case 'navbar-dropdown-colored':
       return 'dropdown'
-    case 'navbar-clean':
-    case 'navbar-clean-center':
-    case 'navbar-clean-fade':
+    case 'navsearch-fixed':
+    case 'navsearch-fixed-fade':
+    case 'navsearch-reveal':
+    case 'navsearch-shrink':
       return 'search'
     case 'navbar-default':
     case 'navbar-fade':
@@ -326,18 +327,18 @@ const layoutComponent = (slug?: string) => {
                         :to="layoutSwitcher.navbarLayoutLink"
                         class="layout-item"
                         :class="[
-                          layoutSwitcher.dynamicLayoutId === 'navbar-clean' &&
+                          layoutSwitcher.dynamicLayoutId === 'navsearch-fixed' &&
                             'is-active',
                         ]"
                         @keydown.space.prevent="
                           () => {
-                            layoutSwitcher.setDynamicLayoutId('navbar-clean')
+                            layoutSwitcher.setDynamicLayoutId('navsearch-fixed')
                             isModalOpen = false
                           }
                         "
                         @click.passive="
                           () => {
-                            layoutSwitcher.setDynamicLayoutId('navbar-clean')
+                            layoutSwitcher.setDynamicLayoutId('navsearch-fixed')
                             isModalOpen = false
                           }
                         "
@@ -368,18 +369,18 @@ const layoutComponent = (slug?: string) => {
                         :to="layoutSwitcher.navbarLayoutLink"
                         class="layout-item"
                         :class="[
-                          layoutSwitcher.dynamicLayoutId === 'navbar-clean-center' &&
+                          layoutSwitcher.dynamicLayoutId === 'navsearch-fixed-fade' &&
                             'is-active',
                         ]"
                         @keydown.space.prevent="
                           () => {
-                            layoutSwitcher.setDynamicLayoutId('navbar-clean-center')
+                            layoutSwitcher.setDynamicLayoutId('navsearch-fixed-fade')
                             isModalOpen = false
                           }
                         "
                         @click.passive="
                           () => {
-                            layoutSwitcher.setDynamicLayoutId('navbar-clean-center')
+                            layoutSwitcher.setDynamicLayoutId('navsearch-fixed-fade')
                             isModalOpen = false
                           }
                         "
@@ -394,8 +395,8 @@ const layoutComponent = (slug?: string) => {
                           src="/images/icons/layouts/layout-11-dark.svg"
                           alt=""
                         >
-                        <h3>Center theme</h3>
-                        <p>Centered variation</p>
+                        <h3>Fade theme</h3>
+                        <p>Transparent variation</p>
                         <div class="indicator">
                           <iconify-icon
                             aria-hidden="true"
@@ -410,18 +411,18 @@ const layoutComponent = (slug?: string) => {
                         :to="layoutSwitcher.navbarLayoutLink"
                         class="layout-item"
                         :class="[
-                          layoutSwitcher.dynamicLayoutId === 'navbar-clean-fade' &&
+                          layoutSwitcher.dynamicLayoutId === 'navsearch-shrink' &&
                             'is-active',
                         ]"
                         @keydown.space.prevent="
                           () => {
-                            layoutSwitcher.setDynamicLayoutId('navbar-clean-fade')
+                            layoutSwitcher.setDynamicLayoutId('navsearch-shrink')
                             isModalOpen = false
                           }
                         "
                         @click.passive="
                           () => {
-                            layoutSwitcher.setDynamicLayoutId('navbar-clean-fade')
+                            layoutSwitcher.setDynamicLayoutId('navsearch-shrink')
                             isModalOpen = false
                           }
                         "
@@ -436,8 +437,51 @@ const layoutComponent = (slug?: string) => {
                           src="/images/icons/layouts/layout-12-dark.svg"
                           alt=""
                         >
-                        <h3>Fade theme</h3>
-                        <p>Transparent variation</p>
+                        <h3>Shrink behavior</h3>
+                        <p>Only display search when on top</p>
+                        <div class="indicator">
+                          <iconify-icon
+                            aria-hidden="true"
+                            class="iconify"
+                            icon="lucide:check"
+                          />
+                        </div>
+                      </RouterLink>
+                    </div>
+
+                    <div class="column is-6">
+                      <RouterLink
+                        :to="layoutSwitcher.navbarLayoutLink"
+                        class="layout-item"
+                        :class="[
+                          layoutSwitcher.dynamicLayoutId === 'navsearch-reveal' &&
+                            'is-active',
+                        ]"
+                        @keydown.space.prevent="
+                          () => {
+                            layoutSwitcher.setDynamicLayoutId('navsearch-reveal')
+                            isModalOpen = false
+                          }
+                        "
+                        @click.passive="
+                          () => {
+                            layoutSwitcher.setDynamicLayoutId('navsearch-reveal')
+                            isModalOpen = false
+                          }
+                        "
+                      >
+                        <img
+                          class="light-image-block"
+                          src="/images/icons/layouts/layout-12.svg"
+                          alt=""
+                        >
+                        <img
+                          class="dark-image-block"
+                          src="/images/icons/layouts/layout-12-dark.svg"
+                          alt=""
+                        >
+                        <h3>Reveal behavior</h3>
+                        <p>Only display search scrolling up</p>
                         <div class="indicator">
                           <iconify-icon
                             aria-hidden="true"

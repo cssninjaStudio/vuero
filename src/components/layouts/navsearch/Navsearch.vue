@@ -1,23 +1,6 @@
-<script setup lang="ts">
-export type NavbarSearchTheme = 'default' | 'center' | 'fade'
-
-const props = withDefaults(
-  defineProps<{
-    theme?: NavbarSearchTheme
-  }>(),
-  {
-    theme: 'default',
-  },
-)
-
-const { y } = useWindowScroll()
-const isScrolling = computed(() => y.value > 30)
-</script>
-
 <template>
   <div
     class="navbar-navbar-clean"
-    :class="[isScrolling && 'is-scrolled', props.theme === 'fade' && 'is-transparent']"
   >
     <div class="navbar-navbar-inner">
       <!-- Title slot -->
@@ -39,24 +22,20 @@ const isScrolling = computed(() => y.value > 30)
     <div
       class="navbar-navbar-lower"
       :class="[
-        props.theme === 'default' && 'is-between',
-        props.theme === 'center' && 'is-centered',
-        props.theme === 'fade' && 'is-centered',
+        'subtitle' in $slots && 'is-between',
+        !('subtitle' in $slots) && 'is-centered',
       ]"
     >
       <div
-        v-if="props.theme !== 'default'"
+        v-if="'subtitle' in $slots"
         class="left"
       >
-        <div class="welcome-text">
-          <slot name="subtitle" />
-        </div>
+        <slot name="subtitle" />
       </div>
       <div
         :class="[
-          props.theme === 'default' && 'left',
-          props.theme === 'center' && 'center',
-          props.theme === 'fade' && 'center',
+          !('subtitle' in $slots) && 'left',
+          'subtitle' in $slots && 'center',
         ]"
       >
         <slot name="links">
@@ -68,7 +47,10 @@ const isScrolling = computed(() => y.value > 30)
           </div>
         </slot>
       </div>
-      <div class="right">
+      <div
+        v-if="'toolbar-bottom' in $slots"
+        class="right"
+      >
         <slot name="toolbar-bottom" />
       </div>
     </div>
@@ -165,96 +147,12 @@ const isScrolling = computed(() => y.value > 30)
         border-inline-end: 1px solid var(--fade-grey-dark-4);
         margin: 0 20px 0 16px;
       }
-
-      .project-dropdown {
-        margin-inline-end: 12px;
-        cursor: pointer !important;
-
-        > img {
-          height: 32px;
-          width: 32px;
-          border-radius: 50%;
-        }
-
-        .dropdown-menu {
-          margin-top: 28px;
-
-          .dropdown-content {
-            padding-top: 0;
-            padding-bottom: 0;
-            overflow: hidden;
-
-            .dropdown-block {
-              display: flex;
-              align-items: center;
-              padding: 16px;
-
-              &:hover,
-              &:focus {
-                background: var(--fade-grey-light-4);
-              }
-
-              .meta {
-                margin-inline-start: 12px;
-                font-family: var(--font);
-
-                span {
-                  display: block;
-
-                  &:first-child {
-                    font-size: 0.95rem;
-                    font-weight: 500;
-                    color: var(--dark-text);
-                    line-height: 1.2;
-                    max-width: 140px;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                    overflow: hidden;
-                  }
-
-                  &:nth-child(2) {
-                    // text-transform: uppercase;
-                    color: var(--light-text);
-                    font-size: 0.85rem;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
     }
 
     .center {
       display: flex;
       align-items: center;
       flex-grow: 2;
-
-      .centered-search {
-        width: 100%;
-
-        .field {
-          margin-bottom: 0;
-
-          .control {
-            .input {
-              border-radius: 0.5rem;
-            }
-
-            .form-icon {
-              &.is-right {
-                inset-inline-start: unset !important;
-                inset-inline-end: 6px;
-                cursor: pointer;
-              }
-            }
-
-            .search-results {
-              top: 48px;
-            }
-          }
-        }
-      }
     }
 
     .right {
@@ -291,6 +189,7 @@ const isScrolling = computed(() => y.value > 30)
         .iconify {
           height: 18px;
           width: 18px;
+          font-size: 18px;
           stroke-width: 1.6px;
           color: var(--light-text);
           transition: stroke 0.3s;
@@ -367,10 +266,19 @@ const isScrolling = computed(() => y.value > 30)
       justify-content: space-between;
 
       .left,
+      .right, {
+        display: flex;
+        align-items: center;
+        font-size: 0.9rem;
+        font-weight: 500;
+        font-family: var(--font);
+        color: var(--light-text);
+      }
+
+      .left,
       .center {
         display: flex;
         align-items: center;
-
         .button {
           font-size: 0.9rem;
           font-weight: 500;
@@ -379,17 +287,12 @@ const isScrolling = computed(() => y.value > 30)
           color: var(--light-text);
 
           &:hover,
-          &:focus {
+          &:focus,
+          &.router-link-exact-active {
             background: var(--widget-grey-dark-2);
             color: var(--dark-text);
+            box-shadow: none;
           }
-        }
-
-        .welcome-text {
-          font-size: 0.9rem;
-          font-weight: 500;
-          font-family: var(--font);
-          color: var(--light-text);
         }
       }
 
@@ -469,29 +372,6 @@ const isScrolling = computed(() => y.value > 30)
       .left {
         .separator {
           border-color: var(--dark-sidebar-light-12);
-        }
-
-        .project-dropdown {
-          .dropdown-menu {
-            .dropdown-content {
-              .dropdown-block {
-                background: var(--dark-sidebar-light-2) !important;
-
-                &:hover,
-                &:focus {
-                  background: var(--dark-sidebar-light-5) !important;
-                }
-
-                .meta {
-                  span {
-                    &:first-child {
-                      color: var(--dark-dark-text) !important;
-                    }
-                  }
-                }
-              }
-            }
-          }
         }
       }
 
