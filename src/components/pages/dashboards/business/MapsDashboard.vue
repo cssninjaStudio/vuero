@@ -454,6 +454,14 @@ watch(
     height: calc(100% - 80px);
   }
 }
+.navbar-layout-search {
+  .has-top-nav {
+    .dashboard-map-wrapper {
+      top: 100px;
+      height: calc(100% - 100px);
+    }
+  }
+}
 
 .dashboard-map-wrapper {
   position: absolute;
