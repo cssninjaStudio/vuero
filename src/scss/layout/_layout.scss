@@ -46,8 +46,8 @@ body {
   transition: opacity 0.3s;
 
   &.is-active {
-    opacity: 0.8;
-    z-index: 9999;
+    opacity: 0.4;
+    z-index: 20;
   }
 }
 

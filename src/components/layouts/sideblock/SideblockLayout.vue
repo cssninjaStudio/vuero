@@ -137,5 +137,14 @@ watch(
     </VViewWrapper>
 
     <slot name="extra" />
+
+    <div
+      class="app-overlay"
+      role="button"
+      tabindex="0"
+      :class="[isMobileSideblockOpen && 'is-active']"
+      @click="isMobileSideblockOpen = false"
+      @keydown.enter.prevent="isMobileSideblockOpen = false"
+    />
   </div>
 </template>

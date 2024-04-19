@@ -106,8 +106,6 @@ watch(
 
 <template>
   <div class="sidebar-layout">
-    <!-- <div class="app-overlay is-active" /> -->
-
     <!-- Mobile navigation -->
     <MobileNavbar
       :is-open="activeSubsidebar && isMobileSidebarOpen"
@@ -253,6 +251,15 @@ watch(
     <slot
       name="extra"
       v-bind="contextRx"
+    />
+
+    <div
+      class="app-overlay"
+      role="button"
+      tabindex="0"
+      :class="[isMobileSidebarOpen && 'is-active']"
+      @click="isMobileSidebarOpen = false"
+      @keydown.enter.prevent="isMobileSidebarOpen = false"
     />
   </div>
 </template>
