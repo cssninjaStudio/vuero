@@ -1,5 +1,13 @@
+<script setup lang="ts">
+const props = withDefaults(defineProps<{
+  size?: 'default' | 'large' | 'full'
+}>(), {
+  size: 'default',
+})
+</script>
+
 <template>
-  <div class="page-content-wrapper">
+  <div class="page-content-wrapper" :class="[`is-size-${props.size}`]">
     <slot />
   </div>
 </template>
@@ -46,7 +54,12 @@
 // Enable this setting if you want the dashboard to be larger
 @media only screen and (width >= 1408px) {
   .page-content-wrapper {
-    // max-width: 1380px;
+    &.is-size-large {
+      max-width: 1380px;
+    }
+    &.is-size-full {
+      max-width: none;
+    }
   }
 }
 
