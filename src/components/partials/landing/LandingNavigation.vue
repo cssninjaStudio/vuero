@@ -2,7 +2,7 @@
 import VueScrollTo from 'vue-scrollto'
 
 const isMobileNavOpen = ref(false)
-const darkmode = useDarkmode()
+const { isDark, onChange } = useDarkmode()
 const scrollTo = VueScrollTo.scrollTo
 
 const { y } = useWindowScroll()
@@ -119,9 +119,10 @@ watchEffect(() => {
           <label class="theme-toggle">
             <input
               id="navbar-night-toggle--daynight"
-              v-model="darkmode.isDark"
+              :model-value="isDark"
               data-cy="dark-mode-toggle"
               type="checkbox"
+              @click="onChange"
             >
             <span class="toggler">
               <span class="dark">

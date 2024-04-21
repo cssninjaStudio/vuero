@@ -54,8 +54,6 @@ export const useRoadmapData = defineBasicLoader(async (to) => {
 <script setup lang="ts">
 import { useRouteQuery } from '@vueuse/router'
 
-const darkmode = useDarkmode()
-
 const { data, isLoading } = useRoadmapData()
 const years = ['2022', '2021', '2020', '2019']
 const changeTypes = ['All', 'Enhancements', 'Features', 'Bug fixes']
@@ -397,20 +395,7 @@ useHead({
       </VTabs>
 
       <div class="roadmap-footer">
-        <label
-          class="dark-mode"
-          tabindex="0"
-          role="button"
-          @keydown.space.prevent="(e) => (e.target as HTMLLabelElement).click()"
-        >
-          <input
-            data-cy="dark-mode-toggle"
-            type="checkbox"
-            :checked="!darkmode.isDark"
-            @change="darkmode.onChange"
-          >
-          <span />
-        </label>
+        <VDarkmodeToggle />
         <div>
           <a href="#">Legal</a>
           <a href="#">About</a>

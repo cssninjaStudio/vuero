@@ -2,7 +2,6 @@
 type StepId = 'login' | 'forgot-password'
 const step = ref<StepId>('login')
 const isLoading = ref(false)
-const darkmode = useDarkmode()
 const router = useRouter()
 const route = useRoute()
 const notyf = useNotyf()
@@ -69,20 +68,7 @@ useHead({
             />
           </RouterLink>
 
-          <label
-            class="dark-mode"
-            tabindex="0"
-            role="button"
-            @keydown.space.prevent="(e) => (e.target as HTMLLabelElement).click()"
-          >
-            <input
-              data-cy="dark-mode-toggle"
-              type="checkbox"
-              :checked="!darkmode.isDark"
-              @change="darkmode.onChange"
-            >
-            <span />
-          </label>
+          <VDarkmodeToggle />
         </div>
         <div class="is-form">
           <div class="is-form-inner">

@@ -10,7 +10,7 @@ const props = defineProps<{
   reversed?: boolean
 }>()
 
-const darkmode = useDarkmode()
+const { isDark } = useDarkmode()
 const selectedFeature = ref()
 const selectedFeatureLatLng = ref()
 const selectedFeatureName = ref('')
@@ -201,10 +201,10 @@ function loadLayers() {
     type: 'circle',
     source: 'places',
     paint: {
-      'circle-color': darkmode.isDark ? themeColors.accent : themeColors.primary,
+      'circle-color': isDark ? themeColors.accent : themeColors.primary,
       'circle-radius': 6,
       'circle-stroke-width': 2,
-      'circle-stroke-color': darkmode.isDark
+      'circle-stroke-color': isDark
         ? themeColors.accentLight
         : themeColors.primaryMedium,
     },
@@ -254,7 +254,7 @@ onMounted(() => {
 
     map.value = new mapboxgl.Map({
       container: mapElement.value,
-      style: darkmode.isDark
+      style: isDark.value
         ? 'mapbox://styles/mapbox/dark-v10'
         : 'mapbox://styles/mapbox/light-v10',
       center: [-77.04, 38.907],
@@ -331,13 +331,13 @@ watchPostEffect(() => {
 })
 
 watch(
-  () => darkmode.isDark,
-  () => {
+  isDark,
+  (value) => {
     if (!map.value) {
       return
     }
 
-    if (darkmode.isDark) {
+    if (value) {
       map.value.setStyle('mapbox://styles/mapbox/dark-v10')
     }
     else {

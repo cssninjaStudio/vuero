@@ -1,6 +1,4 @@
 <script setup lang="ts">
-const darkmode = useDarkmode()
-
 useHead({
   title: 'Error Page 3 - Vuero',
 })
@@ -9,20 +7,7 @@ useHead({
 <template>
   <div class="error-container">
     <div class="error-nav">
-      <label
-        class="dark-mode"
-        tabindex="0"
-        role="button"
-        @keydown.space.prevent="(e) => (e.target as HTMLLabelElement).click()"
-      >
-        <input
-          data-cy="dark-mode-toggle"
-          type="checkbox"
-          :checked="!darkmode.isDark"
-          @change="darkmode.onChange"
-        >
-        <span />
-      </label>
+      <VDarkmodeToggle />
     </div>
 
     <div class="error-wrapper">

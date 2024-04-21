@@ -1,5 +1,4 @@
 <script setup lang="ts">
-const darkmode = useDarkmode()
 const router = useRouter()
 const notyf = useNotyf()
 const isLoading = ref(false)
@@ -38,20 +37,7 @@ useHead({
         </RouterLink>
       </div>
       <div class="right">
-        <label
-          class="dark-mode ml-auto"
-          tabindex="0"
-          role="button"
-          @keydown.space.prevent="(e) => (e.target as HTMLLabelElement).click()"
-        >
-          <input
-            data-cy="dark-mode-toggle"
-            type="checkbox"
-            :checked="!darkmode.isDark"
-            @change="darkmode.onChange"
-          >
-          <span />
-        </label>
+        <VDarkmodeToggle class="ml-auto" />
       </div>
     </div>
 

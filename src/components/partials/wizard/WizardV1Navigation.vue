@@ -1,5 +1,4 @@
 <script setup lang="ts">
-const darkmode = useDarkmode()
 const { onceError } = useImageError()
 
 const dropdownElement = ref<HTMLElement>()
@@ -109,15 +108,7 @@ const wizard = useWizard()
 
     <div class="navbar-item is-dark-mode">
       <div class="navbar-icon">
-        <label class="dark-mode">
-          <input
-            data-cy="dark-mode-toggle"
-            type="checkbox"
-            :checked="!darkmode.isDark"
-            @change="darkmode.onChange"
-          >
-          <span />
-        </label>
+        <VDarkmodeToggle />
       </div>
     </div>
 

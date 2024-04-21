@@ -1,6 +1,5 @@
 <script setup lang="ts">
 const { onceError } = useImageError()
-const darkmode = useDarkmode()
 
 const contactSearchOpen = ref(false)
 const activeTab = ref('inbox')
@@ -61,15 +60,7 @@ useHead({
               </RouterLink>
               <span>Inbox</span>
 
-              <label class="dark-mode">
-                <input
-                  data-cy="dark-mode-toggle"
-                  type="checkbox"
-                  :checked="!darkmode.isDark"
-                  @change="darkmode.onChange"
-                >
-                <span />
-              </label>
+              <VDarkmodeToggle />
             </div>
             <div
               ref="dropdownElement1"

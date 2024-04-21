@@ -117,26 +117,17 @@ useHead(() => ({
     dir: rtlCodes.includes(locale.value) ? 'rtl' : 'ltr',
   },
 }))
-
-/**
- * Initialize the darkmode watcher
- *
- * @see /@src/stores/darkmode
- */
-initDarkmode()
 </script>
 
 <template>
-  <div>
-    <Suspense>
-      <RouterView v-slot="{ Component }">
-        <Transition
-          name="fade-slow"
-          mode="out-in"
-        >
-          <component :is="Component" />
-        </Transition>
-      </RouterView>
-    </Suspense>
-  </div>
+  <Suspense>
+    <RouterView v-slot="{ Component }">
+      <Transition
+        name="fade-slow"
+        mode="out-in"
+      >
+        <component :is="Component" />
+      </Transition>
+    </RouterView>
+  </Suspense>
 </template>

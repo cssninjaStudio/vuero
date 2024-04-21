@@ -5,7 +5,6 @@ import { toTypedSchema } from '@vee-validate/zod'
 import { useForm } from 'vee-validate'
 import { z as zod } from 'zod'
 
-const darkmode = useDarkmode()
 const router = useRouter()
 const notyf = useNotyf()
 
@@ -81,19 +80,7 @@ useHead({
     <div class="column is-5">
       <div class="hero is-fullheight is-white">
         <div class="hero-heading">
-          <label
-            class="dark-mode ml-auto"
-            tabindex="0"
-            role="button"
-            @keydown.space.prevent="(e) => (e.target as HTMLLabelElement).click()"
-          >
-            <input
-              type="checkbox"
-              :checked="!darkmode.isDark"
-              @change="darkmode.onChange"
-            >
-            <span />
-          </label>
+          <VDarkmodeToggle class="ml-auto" />
           <div class="auth-logo">
             <RouterLink to="/">
               <AnimatedLogo

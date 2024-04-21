@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 
-const darkmode = useDarkmode()
 const panels = usePanels()
 const { locale } = useI18n()
 const { y } = useWindowScroll()
@@ -60,15 +59,7 @@ const localFlagSrc = computed(() => {
 
     <div class="items-wrapper">
       <div class="menu-item is-flex">
-        <label class="dark-mode">
-          <input
-            data-cy="dark-mode-toggle"
-            type="checkbox"
-            :checked="!darkmode.isDark"
-            @change="darkmode.onChange"
-          >
-          <span />
-        </label>
+        <VDarkmodeToggle />
       </div>
       <a
         class="menu-item is-flex right-panel-trigger"

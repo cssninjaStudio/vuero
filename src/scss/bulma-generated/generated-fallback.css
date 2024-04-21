@@ -2959,10 +2959,6 @@ body.opened {
   background: rgb(255, 255, 255);
 }
 
-.minimal-wrapper.light {
-  background: rgb(255, 255, 255);
-}
-
 .navbar-subnavbar {
   background: rgb(255, 255, 255);
 }
@@ -3897,14 +3893,5 @@ code {
 .stat-widget.is-straight.is-primary {
   background: rgb(42, 172, 142);
   border-color: rgb(42, 172, 142);
-  color: rgb(255, 255, 255);
-}
-
-.layout-selector .layout-item .indicator {
-  background: rgb(42, 172, 142);
-  color: rgb(255, 255, 255);
-}
-
-.layout-selector .layout-item .indicator .iconify {
   color: rgb(255, 255, 255);
 }

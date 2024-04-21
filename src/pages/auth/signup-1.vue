@@ -6,7 +6,6 @@
 const { onceError } = useImageError()
 const router = useRouter()
 const notyf = useNotyf()
-const darkmode = useDarkmode()
 const step = ref(0)
 // const selectedAvatar = ref(2)
 const isLoading = ref(false)
@@ -450,20 +449,7 @@ useHead({
     <div class="signup-footer">
       <div class="container">
         <div class="footer-inner">
-          <label
-            class="dark-mode"
-            tabindex="0"
-            role="button"
-            @keydown.space.prevent="(e) => (e.target as HTMLLabelElement).click()"
-          >
-            <input
-              data-cy="dark-mode-toggle"
-              type="checkbox"
-              :checked="!darkmode.isDark"
-              @change="darkmode.onChange"
-            >
-            <span />
-          </label>
+          <VDarkmodeToggle />
         </div>
       </div>
     </div>

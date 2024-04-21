@@ -1,5 +1,4 @@
 <script setup lang="ts">
-const darkmode = useDarkmode()
 const { onceError } = useImageError()
 
 useHead({
@@ -326,20 +325,7 @@ useHead({
         </div>
       </div>
       <div class="status-footer">
-        <label
-          class="dark-mode"
-          tabindex="0"
-          role="button"
-          @keydown.space.prevent="(e) => (e.target as HTMLLabelElement).click()"
-        >
-          <input
-            data-cy="dark-mode-toggle"
-            type="checkbox"
-            :checked="!darkmode.isDark"
-            @change="darkmode.onChange"
-          >
-          <span />
-        </label>
+        <VDarkmodeToggle />
         <div>
           <a href="#">Legal</a>
           <a href="#">About</a>
