@@ -23,14 +23,13 @@ export interface DemoItem {
 }
 
 // This is a helper function that generate a computed items filtered with the input
-function useFilter(items: DemoItem[], filter: Ref<string>): ComputedRef<DemoItem[]> {
+function computedFilter(items: DemoItem[], filter: Ref<string>, showAll: Ref<boolean>): ComputedRef<DemoItem[]> {
   return computed(() => {
-    if (!filter.value) {
+    if (!filter.value && showAll.value) {
       return items
     }
-
-    if (filter.value === 'new') {
-      return items.filter(demo => demo.new)
+    else if (!filter.value) {
+      return items.slice(0, 6)
     }
 
     const searchValue = filter.value.replace(/[^A-Za-z0-9]/g, '')
@@ -75,11 +74,18 @@ const totalDemos
   + navbarDemos.length
 
 const filterInput = ref('')
-const sidebarDemosFiltered = useFilter(sidebarDemos, filterInput)
-const authDemosFiltered = useFilter(authDemos, filterInput)
-const minimalDemosFiltered = useFilter(minimalDemos, filterInput)
-const templatesDemosFiltered = useFilter(templatesDemos, filterInput)
-const navbarDemosFiltered = useFilter(navbarDemos, filterInput)
+
+const showMoreSidebar = ref(false)
+const showMoreNavbar = ref(false)
+const showMoreMinimal = ref(false)
+const showMoreTemplates = ref(false)
+const showMoreAuth = ref(false)
+
+const sidebarDemosFiltered = computedFilter(sidebarDemos, filterInput, showMoreSidebar)
+const authDemosFiltered = computedFilter(authDemos, filterInput, showMoreAuth)
+const minimalDemosFiltered = computedFilter(minimalDemos, filterInput, showMoreMinimal)
+const templatesDemosFiltered = computedFilter(templatesDemos, filterInput, showMoreTemplates)
+const navbarDemosFiltered = computedFilter(navbarDemos, filterInput, showMoreNavbar)
 
 const totalResults = computed(() => {
   return (
@@ -264,6 +270,20 @@ debouncedWatch(
           </figure>
         </div>
       </div>
+
+      <div class="has-text-centered my-6">
+        <VButton
+          v-if="!filterInput && sidebarDemos.length > 6 && sidebarDemosFiltered.length > 0"
+          :icon="showMoreSidebar ? 'lucide:minus': 'lucide:plus'"
+          size="huge"
+          bold
+          raised
+          :color="showMoreSidebar ? 'light' : 'primary'"
+          @click="showMoreSidebar = !showMoreSidebar"
+        >
+          {{ showMoreSidebar ? 'Show less' : `Show ${sidebarDemos.length - 6} more` }}
+        </VButton>
+      </div>
     </div>
 
     <!--WEBAPP-->
@@ -344,6 +364,20 @@ debouncedWatch(
             </div>
           </figure>
         </div>
+      </div>
+
+      <div class="has-text-centered my-6">
+        <VButton
+          v-if="!filterInput && navbarDemos.length > 6 && navbarDemosFiltered.length > 0"
+          :icon="showMoreNavbar ? 'lucide:minus': 'lucide:plus'"
+          size="huge"
+          bold
+          raised
+          :color="showMoreNavbar ? 'light' : 'primary'"
+          @click="showMoreNavbar = !showMoreNavbar"
+        >
+          {{ showMoreNavbar ? 'Show less' : `Show ${navbarDemos.length - 6} more` }}
+        </VButton>
       </div>
     </div>
 
@@ -426,86 +460,19 @@ debouncedWatch(
           </figure>
         </div>
       </div>
-    </div>
 
-    <!--AUTH-->
-    <div
-      v-if="authDemosFiltered.length > 0"
-      class="demo-section"
-    >
-      <div class="demo-section-title">
-        <img
-          class="light-image-block-l"
-          src="/images/icons/components/layout-3.svg"
-          alt=""
+      <div class="has-text-centered my-6">
+        <VButton
+          v-if="!filterInput && minimalDemos.length > 6 && minimalDemosFiltered.length > 0"
+          :icon="showMoreMinimal ? 'lucide:minus': 'lucide:plus'"
+          size="huge"
+          bold
+          raised
+          :color="showMoreMinimal ? 'light' : 'primary'"
+          @click="showMoreMinimal = !showMoreMinimal"
         >
-        <img
-          class="dark-image-block-l"
-          src="/images/icons/components/layout-3-dark.svg"
-          alt=""
-        >
-        <div class="title-meta">
-          <h3>Auth</h3>
-          <p>Sign-In &amp; Sign-Up starters</p>
-        </div>
-      </div>
-
-      <div class="columns is-multiline">
-        <!-- Demo item -->
-        <div
-          v-for="(item, index) in authDemosFiltered"
-          :key="index"
-          class="column is-4 has-text-centered"
-        >
-          <figure
-            class="vuero-demo-wrapper loaded"
-            tabindex="0"
-          >
-            <span
-              v-if="item.new"
-              class="new-tag"
-            >New</span>
-            <img
-              class="light-image-block-l"
-              :src="item.screenshot.light"
-              alt=""
-              loading="lazy"
-            >
-            <img
-              class="dark-image-block-l"
-              :src="item.screenshot.dark"
-              alt=""
-              loading="lazy"
-            >
-            <div class="circle-overlay" />
-            <div class="demo-info has-text-centered">
-              <div class="wrapper">
-                <div class="demo-title">
-                  <span>{{ item.category }}</span>
-                  <span>{{ item.name }}</span>
-                </div>
-                <div class="demo-link">
-                  <RouterLink
-                    :to="item.route.path"
-                    tabindex="-1"
-                  >
-                    Go to demo
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify rtl-hidden"
-                      icon="lucide:arrow-right"
-                    />
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify ltr-hidden"
-                      icon="lucide:arrow-left"
-                    />
-                  </RouterLink>
-                </div>
-              </div>
-            </div>
-          </figure>
-        </div>
+          {{ showMoreMinimal ? 'Show less' : `Show ${minimalDemos.length - 6} more` }}
+        </VButton>
       </div>
     </div>
 
@@ -587,6 +554,115 @@ debouncedWatch(
             </div>
           </figure>
         </div>
+      </div>
+
+      <div class="has-text-centered my-6">
+        <VButton
+          v-if="!filterInput && templatesDemos.length > 6 && templatesDemosFiltered.length > 0"
+          :icon="showMoreTemplates ? 'lucide:minus': 'lucide:plus'"
+          size="huge"
+          bold
+          raised
+          :color="showMoreTemplates ? 'light' : 'primary'"
+          @click="showMoreTemplates = !showMoreTemplates"
+        >
+          {{ showMoreTemplates ? 'Show less' : `Show ${templatesDemos.length - 6} more` }}
+        </VButton>
+      </div>
+    </div>
+
+    <!--AUTH-->
+    <div
+      v-if="authDemosFiltered.length > 0"
+      class="demo-section"
+    >
+      <div class="demo-section-title">
+        <img
+          class="light-image-block-l"
+          src="/images/icons/components/layout-3.svg"
+          alt=""
+        >
+        <img
+          class="dark-image-block-l"
+          src="/images/icons/components/layout-3-dark.svg"
+          alt=""
+        >
+        <div class="title-meta">
+          <h3>Auth</h3>
+          <p>Sign-In &amp; Sign-Up starters</p>
+        </div>
+      </div>
+
+      <div class="columns is-multiline">
+        <!-- Demo item -->
+        <div
+          v-for="(item, index) in authDemosFiltered"
+          :key="index"
+          class="column is-4 has-text-centered"
+        >
+          <figure
+            class="vuero-demo-wrapper loaded"
+            tabindex="0"
+          >
+            <span
+              v-if="item.new"
+              class="new-tag"
+            >New</span>
+            <img
+              class="light-image-block-l"
+              :src="item.screenshot.light"
+              alt=""
+              loading="lazy"
+            >
+            <img
+              class="dark-image-block-l"
+              :src="item.screenshot.dark"
+              alt=""
+              loading="lazy"
+            >
+            <div class="circle-overlay" />
+            <div class="demo-info has-text-centered">
+              <div class="wrapper">
+                <div class="demo-title">
+                  <span>{{ item.category }}</span>
+                  <span>{{ item.name }}</span>
+                </div>
+                <div class="demo-link">
+                  <RouterLink
+                    :to="item.route.path"
+                    tabindex="-1"
+                  >
+                    Go to demo
+                    <iconify-icon
+                      aria-hidden="true"
+                      class="iconify rtl-hidden"
+                      icon="lucide:arrow-right"
+                    />
+                    <iconify-icon
+                      aria-hidden="true"
+                      class="iconify ltr-hidden"
+                      icon="lucide:arrow-left"
+                    />
+                  </RouterLink>
+                </div>
+              </div>
+            </div>
+          </figure>
+        </div>
+      </div>
+
+      <div class="has-text-centered my-6">
+        <VButton
+          v-if="!filterInput && authDemos.length > 6 && authDemosFiltered.length > 0"
+          :icon="showMoreAuth ? 'lucide:minus': 'lucide:plus'"
+          size="huge"
+          bold
+          raised
+          :color="showMoreAuth ? 'light' : 'primary'"
+          @click="showMoreAuth = !showMoreAuth"
+        >
+          {{ showMoreAuth ? 'Show less' : `Show ${authDemos.length - 6} more` }}
+        </VButton>
       </div>
     </div>
   </form>
