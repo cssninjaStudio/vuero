@@ -29,8 +29,8 @@ const context: SideblockLayoutContext = {
   closeOnChange: computed(() => props.closeOnChange),
   openOnMounted: computed(() => props.openOnMounted),
 
-  isMobileSideblockOpen: readonly(isMobileSideblockOpen),
-  isDesktopSideblockOpen: readonly(isDesktopSideblockOpen),
+  isMobileSideblockOpen,
+  isDesktopSideblockOpen,
 }
 provide(injectionKey, context)
 

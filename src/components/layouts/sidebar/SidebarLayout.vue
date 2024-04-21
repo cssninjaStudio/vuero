@@ -62,9 +62,9 @@ const context: SidebarLayoutContext = {
   openOnMounted: computed(() => props.openOnMounted),
   noViewWrapper: computed(() => props.noViewWrapper),
 
-  isMobileSidebarOpen: readonly(isMobileSidebarOpen),
-  isDesktopSidebarOpen: readonly(isDesktopSidebarOpen),
-  activeSubsidebarId: readonly(activeSubsidebarId),
+  isMobileSidebarOpen,
+  isDesktopSidebarOpen,
+  activeSubsidebarId,
 
   subsidebars,
   activeSubsidebar,

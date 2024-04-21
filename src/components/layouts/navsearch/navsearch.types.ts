@@ -13,5 +13,5 @@ export interface NavsearchLayoutContext {
   scrollBehavior: ComputedRef<NavsearchScrollBehavior>
   links: ComputedRef<NavsearchItem[]>
 
-  isMobileSidebarOpen: Readonly<Ref<boolean>>
+  isMobileSidebarOpen: Ref<boolean>
 }

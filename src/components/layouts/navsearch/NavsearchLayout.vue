@@ -41,7 +41,7 @@ const context: NavsearchLayoutContext = {
   theme: computed(() => props.theme),
   scrollBehavior: computed(() => props.scrollBehavior),
 
-  isMobileSidebarOpen: readonly(isMobileSidebarOpen),
+  isMobileSidebarOpen,
 }
 provide(injectionKey, context)
 

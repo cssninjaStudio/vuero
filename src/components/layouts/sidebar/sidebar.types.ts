@@ -94,9 +94,9 @@ export interface SidebarLayoutContext {
   openOnMounted: ComputedRef<boolean>
   noViewWrapper?: ComputedRef<boolean>
 
-  isMobileSidebarOpen: Readonly<Ref<boolean>>
-  isDesktopSidebarOpen: Readonly<Ref<boolean>>
-  activeSubsidebarId: Readonly<Ref<string>>
+  isMobileSidebarOpen: Ref<boolean>
+  isDesktopSidebarOpen: Ref<boolean>
+  activeSubsidebarId: Ref<string>
 
   isOpen: ComputedRef<boolean>
   subsidebars: ComputedRef<SidebarItemSubsidebar[]>
