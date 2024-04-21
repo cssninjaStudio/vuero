@@ -45,17 +45,13 @@ const props = withDefaults(
         </div>
         <div class="contact-info">
           <span>
-            <iconify-icon
-              aria-hidden="true"
-              class="iconify"
+            <VIcon
               icon="lucide:map-pin"
             />
             <span>{{ props.location }}</span>
           </span>
           <span>
-            <iconify-icon
-              aria-hidden="true"
-              class="iconify"
+            <VIcon
               icon="lucide:phone"
             />
             <span>{{ props.phone }}</span>

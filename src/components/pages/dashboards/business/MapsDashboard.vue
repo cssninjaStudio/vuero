@@ -427,9 +427,7 @@ watch(
                 </VRangeRating>
                 <div class="actions">
                   <div class="action">
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify"
+                    <VIcon
                       icon="lucide:flag"
                     />
                     <span class="dark-inverted">

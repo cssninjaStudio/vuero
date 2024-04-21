@@ -128,9 +128,7 @@ const selectCustomer = (customer: WizardCustomer | null) => {
               <div class="project-dates-inner">
                 <div class="project-date">
                   <div class="date-icon">
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify"
+                    <VIcon
                       icon="lucide:map-pin"
                     />
                   </div>
@@ -146,9 +144,7 @@ const selectCustomer = (customer: WizardCustomer | null) => {
                 <div class="separator" />
                 <div class="project-date">
                   <div class="date-icon">
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify"
+                    <VIcon
                       icon="lucide:flag"
                     />
                   </div>

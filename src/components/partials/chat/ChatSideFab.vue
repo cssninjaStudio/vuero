@@ -14,9 +14,7 @@ const chat = useChat()
     "
     @click="chat.setMobileConversationDetailsOpen(!chat.mobileConversationDetailsOpen)"
   >
-    <iconify-icon
-      aria-hidden="true"
-      class="iconify"
+    <VIcon
       icon="lucide:chevron-left"
     />
   </a>

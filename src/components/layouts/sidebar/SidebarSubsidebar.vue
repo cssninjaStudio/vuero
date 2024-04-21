@@ -23,9 +23,7 @@ const emits = defineEmits<{
         @keydown.space.prevent="emits('close')"
         @click="emits('close')"
       >
-        <iconify-icon
-          aria-hidden="true"
-          class="iconify"
+        <VIcon
           icon="lucide:x"
         />
       </div>
@@ -55,14 +53,12 @@ const emits = defineEmits<{
           >
             <template #header>
               {{ item.label }}
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify rtl-hidden"
+              <VIcon
+                class="rtl-hidden"
                 icon="lucide:chevron-right"
               />
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify ltr-hidden"
+              <VIcon
+                class="ltr-hidden"
                 icon="lucide:chevron-left"
               />
             </template>

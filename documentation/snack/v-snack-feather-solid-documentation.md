@@ -15,7 +15,7 @@ if you want to show a solid icon. Check the markup for more details.
     solid
     icon="lucide:smile"
   >
-    <iconify-icon class="iconify" icon="lucide:plus" />
+    <VIcon icon="lucide:plus" />
   </VSnack>
   <VSnack
     title="Support"
@@ -24,7 +24,7 @@ if you want to show a solid icon. Check the markup for more details.
     solid
     icon="lucide:life-buoy"
   >
-    <iconify-icon class="iconify" icon="lucide:plus" />
+    <VIcon icon="lucide:plus" />
   </VSnack>
   <VSnack
     title="Business"
@@ -32,7 +32,7 @@ if you want to show a solid icon. Check the markup for more details.
     solid
     icon="lucide:briefcase"
   >
-    <iconify-icon class="iconify" icon="lucide:plus" />
+    <VIcon icon="lucide:plus" />
   </VSnack>
   <VSnack
     title="Warning"
@@ -41,7 +41,7 @@ if you want to show a solid icon. Check the markup for more details.
     solid
     icon="lucide:alert-octagon"
   >
-    <iconify-icon class="iconify" icon="lucide:plus" />
+    <VIcon icon="lucide:plus" />
   </VSnack>
   <VSnack
     title="Health"
@@ -50,7 +50,7 @@ if you want to show a solid icon. Check the markup for more details.
     solid
     icon="lucide:thermometer"
   >
-    <iconify-icon class="iconify" icon="lucide:plus" />
+    <VIcon icon="lucide:plus" />
   </VSnack>
 </template>
 ```
@@ -61,7 +61,7 @@ if you want to show a solid icon. Check the markup for more details.
 
 <div class="snacks">
   <VSnack title="Shopping" color="primary" solid icon="lucide:smile">
-    <iconify-icon class="iconify" icon="lucide:plus"/>
+    <VIcon icon="lucide:plus"/>
   </VSnack>
   <VSnack
     title="Support"
@@ -70,10 +70,10 @@ if you want to show a solid icon. Check the markup for more details.
     solid
     icon="lucide:life-buoy"
   >
-    <iconify-icon class="iconify" icon="lucide:plus"/>
+    <VIcon icon="lucide:plus"/>
   </VSnack>
   <VSnack title="Business" color="info" solid icon="lucide:briefcase">
-    <iconify-icon class="iconify" icon="lucide:plus"/>
+    <VIcon icon="lucide:plus"/>
   </VSnack>
   <VSnack
     title="Warning"
@@ -82,7 +82,7 @@ if you want to show a solid icon. Check the markup for more details.
     solid
     icon="lucide:alert-octagon"
   >
-    <iconify-icon class="iconify" icon="lucide:plus"/>
+    <VIcon icon="lucide:plus"/>
   </VSnack>
   <VSnack
     title="Health"
@@ -91,7 +91,7 @@ if you want to show a solid icon. Check the markup for more details.
     solid
     icon="lucide:thermometer"
   >
-    <iconify-icon class="iconify" icon="lucide:plus"/>
+    <VIcon icon="lucide:plus"/>
   </VSnack>
 </div>
 

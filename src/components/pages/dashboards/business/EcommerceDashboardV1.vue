@@ -63,9 +63,7 @@ const {
               color="info"
               rounded
             >
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
+              <VIcon
                 icon="lucide:gift"
               />
             </VIconBox>
@@ -96,9 +94,7 @@ const {
               color="purple"
               rounded
             >
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
+              <VIcon
                 icon="lucide:dollar-sign"
               />
             </VIconBox>
@@ -129,9 +125,7 @@ const {
               color="green"
               rounded
             >
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
+              <VIcon
                 icon="lucide:box"
               />
             </VIconBox>
@@ -162,9 +156,7 @@ const {
               color="orange"
               rounded
             >
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
+              <VIcon
                 icon="lucide:shopping-cart"
               />
             </VIconBox>

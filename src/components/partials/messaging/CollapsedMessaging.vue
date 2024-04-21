@@ -71,9 +71,7 @@ const {
           @keydown.space.prevent="emit('addConversation')"
           @click="() => emit('addConversation')"
         >
-          <iconify-icon
-            aria-hidden="true"
-            class="iconify"
+          <VIcon
             icon="lucide:plus"
           />
         </a>

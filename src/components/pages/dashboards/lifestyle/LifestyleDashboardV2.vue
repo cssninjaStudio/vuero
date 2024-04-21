@@ -415,9 +415,7 @@ const topicList = dashboardData.topicList as any[]
                   placeholder="Search..."
                 >
                 <button class="searcv-button">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:search"
                   />
                 </button>

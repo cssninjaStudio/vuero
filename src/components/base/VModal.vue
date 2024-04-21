@@ -94,11 +94,7 @@ onUnmounted(() => {
                 @keydown.space.prevent="emit('close')"
                 @click="emit('close')"
               >
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify"
-                  icon="lucide:x"
-                />
+                <VIcon icon="lucide:x" />
               </button>
             </header>
             <div

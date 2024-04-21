@@ -81,9 +81,7 @@ useHead({
                   @click="dropdown1.toggle"
                 >
                   <span class="icon is-small">
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify"
+                    <VIcon
                       icon="lucide:more-vertical"
                     />
                   </span>
@@ -92,33 +90,25 @@ useHead({
               <div class="dropdown-menu">
                 <div class="dropdown-content">
                   <a class="dropdown-item">
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify"
+                    <VIcon
                       icon="lucide:refresh-cw"
                     />
                     <span>Refresh</span>
                   </a>
                   <a class="dropdown-item">
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify"
+                    <VIcon
                       icon="lucide:bell"
                     />
                     <span>Notifications</span>
                   </a>
                   <a class="dropdown-item">
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify"
+                    <VIcon
                       icon="lucide:user-plus"
                     />
                     <span>Invite People</span>
                   </a>
                   <a class="dropdown-item">
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify"
+                    <VIcon
                       icon="lucide:settings"
                     />
                     <span>Settings</span>
@@ -134,9 +124,7 @@ useHead({
               @keydown.space.prevent="mobileSidebarOpen = false"
               @click="mobileSidebarOpen = false"
             >
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
+              <VIcon
                 icon="lucide:x"
               />
             </a>
@@ -156,9 +144,7 @@ useHead({
                       @keydown.space.prevent="activeTab = 'inbox'"
                       @click="activeTab = 'inbox'"
                     >
-                      <iconify-icon
-                        aria-hidden="true"
-                        class="iconify"
+                      <VIcon
                         icon="lucide:mail"
                       />
                       <span>Inbox</span>
@@ -173,9 +159,7 @@ useHead({
                       @keydown.space.prevent="activeTab = 'drafts'"
                       @click="activeTab = 'drafts'"
                     >
-                      <iconify-icon
-                        aria-hidden="true"
-                        class="iconify"
+                      <VIcon
                         icon="lucide:file-text"
                       />
                       <span>Drafts</span>
@@ -190,9 +174,7 @@ useHead({
                       @keydown.space.prevent="activeTab = 'sent'"
                       @click="activeTab = 'sent'"
                     >
-                      <iconify-icon
-                        aria-hidden="true"
-                        class="iconify"
+                      <VIcon
                         icon="lucide:send"
                       />
                       <span>Sent</span>
@@ -207,9 +189,7 @@ useHead({
                       @keydown.space.prevent="activeTab = 'trash'"
                       @click="activeTab = 'trash'"
                     >
-                      <iconify-icon
-                        aria-hidden="true"
-                        class="iconify"
+                      <VIcon
                         icon="lucide:trash-2"
                       />
                       <span>Trash</span>
@@ -224,9 +204,7 @@ useHead({
                       @keydown.space.prevent="activeTab = 'span'"
                       @click="activeTab = 'span'"
                     >
-                      <iconify-icon
-                        aria-hidden="true"
-                        class="iconify"
+                      <VIcon
                         icon="lucide:alert-octagon"
                       />
                       <span>Spam</span>
@@ -252,9 +230,7 @@ useHead({
                     placeholder="Search Contacts..."
                   >
                   <div class="form-icon">
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify"
+                    <VIcon
                       icon="lucide:search"
                     />
                   </div>
@@ -271,9 +247,7 @@ useHead({
                     @keydown.space.prevent="contactSearchOpen = true"
                     @click="contactSearchOpen = true"
                   >
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify"
+                    <VIcon
                       icon="lucide:search"
                     />
                   </span>
@@ -290,9 +264,7 @@ useHead({
                     @keydown.space.prevent="contactSearchOpen = true"
                     @click="contactSearchOpen = false"
                   >
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify"
+                    <VIcon
                       icon="lucide:x"
                     />
                   </span>
@@ -376,9 +348,7 @@ useHead({
                 @keydown.space.prevent="mobileSidebarOpen = true"
                 @click="mobileSidebarOpen = true"
               >
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify"
+                <VIcon
                   icon="lucide:chevron-right"
                 />
               </a>
@@ -391,9 +361,7 @@ useHead({
                 @keydown.space.prevent="toggleSelection"
                 @click="toggleSelection"
               >
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify"
+                <VIcon
                   icon="lucide:check"
                 />
               </a>
@@ -406,9 +374,7 @@ useHead({
                   placeholder="Search Inbox..."
                 >
                 <div class="form-icon">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:search"
                   />
                 </div>
@@ -424,9 +390,7 @@ useHead({
                     @click="dropdown2.toggle"
                   >
                     <span class="icon is-small">
-                      <iconify-icon
-                        aria-hidden="true"
-                        class="iconify"
+                      <VIcon
                         icon="lucide:more-vertical"
                       />
                     </span>
@@ -435,34 +399,26 @@ useHead({
                 <div class="dropdown-menu">
                   <div class="dropdown-content">
                     <a class="dropdown-item">
-                      <iconify-icon
-                        aria-hidden="true"
-                        class="iconify"
+                      <VIcon
                         icon="lucide:check"
                       />
                       <span>Mark all as read</span>
                     </a>
                     <a class="dropdown-item">
-                      <iconify-icon
-                        aria-hidden="true"
-                        class="iconify"
+                      <VIcon
                         icon="lucide:eye-off"
                       />
                       <span>Hide read</span>
                     </a>
                     <hr class="dropdown-divider">
                     <a class="dropdown-item">
-                      <iconify-icon
-                        aria-hidden="true"
-                        class="iconify"
+                      <VIcon
                         icon="lucide:calendar"
                       />
                       <span>Sort by date</span>
                     </a>
                     <a class="dropdown-item">
-                      <iconify-icon
-                        aria-hidden="true"
-                        class="iconify"
+                      <VIcon
                         icon="lucide:user"
                       />
                       <span>Sort by user</span>

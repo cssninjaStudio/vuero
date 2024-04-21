@@ -274,14 +274,12 @@ onMounted(() => {
               <div class="widget-toolbar">
                 <div class="left">
                   <a class="action-icon">
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify ltr-hidden"
+                    <VIcon
+                      class="ltr-hidden"
                       icon="lucide:chevron-right"
                     />
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify rtl-hidden"
+                    <VIcon
+                      class="rtl-hidden"
                       icon="lucide:chevron-left"
                     />
                   </a>
@@ -291,14 +289,12 @@ onMounted(() => {
                 </div>
                 <div class="right">
                   <a class="action-icon">
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify rtl-hidden"
+                    <VIcon
+                      class="rtl-hidden"
                       icon="lucide:chevron-right"
                     />
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify ltr-hidden"
+                    <VIcon
+                      class="ltr-hidden"
                       icon="lucide:chevron-left"
                     />
                   </a>

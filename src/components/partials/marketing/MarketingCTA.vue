@@ -1,7 +1,7 @@
 <template>
   <div class="section">
     <div class="container">
-      <div class="">
+      <div>
         <div class="boxed-cta">
           <VAvatar
             class="v-avatar-1"

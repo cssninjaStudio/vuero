@@ -13,8 +13,7 @@ const props = defineProps<{
       class="single-link"
     >
       <span class="icon">
-        <iconify-icon
-          class="iconify"
+        <VIcon
           :icon="props.link.icon"
         />
       </span>
@@ -36,8 +35,7 @@ const props = defineProps<{
       @keydown.enter.prevent="(props.link as SideblockItemAction).onClick"
     >
       <span class="icon">
-        <iconify-icon
-          class="iconify"
+        <VIcon
           :icon="props.link.icon"
         />
       </span>
@@ -48,20 +46,17 @@ const props = defineProps<{
   <VCollapseLinks v-else-if="props.link.type === 'collapse'">
     <template #header>
       <div class="icon">
-        <iconify-icon
-          class="iconify"
+        <VIcon
           :icon="props.link.icon"
         />
       </div>
       {{ props.link.label }}
-      <iconify-icon
-        aria-hidden="true"
-        class="iconify rtl-hidden"
+      <VIcon
+        class="rtl-hidden"
         icon="lucide:chevron-right"
       />
-      <iconify-icon
-        aria-hidden="true"
-        class="iconify ltr-hidden"
+      <VIcon
+        class="ltr-hidden"
         icon="lucide:chevron-left"
       />
     </template>

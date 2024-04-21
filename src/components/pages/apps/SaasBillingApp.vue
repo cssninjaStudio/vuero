@@ -81,9 +81,7 @@ const selected = ref('value_2')
                   <span>{{ plan.slogan }}</span>
                 </div>
                 <div class="checkmark">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:check"
                   />
                 </div>
@@ -236,9 +234,7 @@ const selected = ref('value_2')
             </div>
 
             <button class="add-seat">
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
+              <VIcon
                 icon="lucide:plus"
               />
             </button>

@@ -31,9 +31,7 @@ const props = defineProps<{
         href="#"
         class="go-icon"
       >
-        <iconify-icon
-          aria-hidden="true"
-          class="iconify"
+        <VIcon
           icon="lucide:chevron-right"
         />
       </a>

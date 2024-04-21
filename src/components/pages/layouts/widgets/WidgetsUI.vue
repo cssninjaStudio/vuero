@@ -68,9 +68,7 @@ const { trendWidgetChartOptions } = useTrendWidgetChart()
                 placeholder="Search..."
               >
               <button class="searcv-button">
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify"
+                <VIcon
                   icon="lucide:search"
                 />
               </button>
@@ -125,9 +123,8 @@ const { trendWidgetChartOptions } = useTrendWidgetChart()
           <div class="widget-toolbar">
             <div class="left">
               <a class="action-icon">
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify rtl-reflect"
+                <VIcon
+                  class="rtl-reflect"
                   icon="lucide:chevron-left"
                 />
               </a>
@@ -137,9 +134,8 @@ const { trendWidgetChartOptions } = useTrendWidgetChart()
             </div>
             <div class="right">
               <a class="action-icon">
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify rtl-reflect"
+                <VIcon
+                  class="rtl-reflect"
                   icon="lucide:chevron-right"
                 />
               </a>
@@ -326,9 +322,7 @@ const { trendWidgetChartOptions } = useTrendWidgetChart()
             <div class="has-text-centered">
               <div class="stat-number">
                 <span>$1638,42
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:trending-up"
                   />
                 </span>

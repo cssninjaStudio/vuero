@@ -15,9 +15,7 @@ const emit = defineEmits(['close'])
         @keydown.space.prevent="emit('close')"
         @click="emit('close')"
       >
-        <iconify-icon
-          aria-hidden="true"
-          class="iconify"
+        <VIcon
           icon="lucide:x"
         />
       </div>

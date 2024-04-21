@@ -16,8 +16,7 @@
                 </div>
                 <div class="right">
                   <div class="live-block">
-                    <iconify-icon
-                      class="iconify"
+                    <VIcon
                       icon="lucide:video"
                     />
                     <span>Live Now</span>
@@ -245,8 +244,7 @@
                     </td>
                     <td>
                       <a class="table-action">
-                        <iconify-icon
-                          class="iconify"
+                        <VIcon
                           icon="lucide:align-right"
                         />
                       </a>
@@ -297,8 +295,7 @@
                     </td>
                     <td>
                       <a class="table-action">
-                        <iconify-icon
-                          class="iconify"
+                        <VIcon
                           icon="lucide:align-right"
                         />
                       </a>
@@ -351,8 +348,7 @@
                     </td>
                     <td>
                       <a class="table-action">
-                        <iconify-icon
-                          class="iconify"
+                        <VIcon
                           icon="lucide:align-right"
                         />
                       </a>
@@ -405,8 +401,7 @@
                     </td>
                     <td>
                       <a class="table-action">
-                        <iconify-icon
-                          class="iconify"
+                        <VIcon
                           icon="lucide:align-right"
                         />
                       </a>
@@ -459,8 +454,7 @@
                     </td>
                     <td>
                       <a class="table-action">
-                        <iconify-icon
-                          class="iconify"
+                        <VIcon
                           icon="lucide:align-right"
                         />
                       </a>
@@ -513,8 +507,7 @@
                     </td>
                     <td>
                       <a class="table-action">
-                        <iconify-icon
-                          class="iconify"
+                        <VIcon
                           icon="lucide:align-right"
                         />
                       </a>

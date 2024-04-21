@@ -23,16 +23,12 @@ const { onceImageErrored } = useImageError()
       @error.once="onceImageErrored(400, 300)"
     >
     <div class="widget-meta">
-      <iconify-icon
-        aria-hidden="true"
-        class="iconify"
+      <VIcon
         icon="lucide:play-circle"
       />
       <h4>{{ props.title }}</h4>
       <span class="views">
-        <iconify-icon
-          aria-hidden="true"
-          class="iconify"
+        <VIcon
           icon="lucide:eye"
         />
         <span>{{ props.views }}</span>

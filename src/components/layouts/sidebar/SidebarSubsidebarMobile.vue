@@ -40,14 +40,12 @@ const props = defineProps<{
           >
             <template #header>
               {{ item.label }}
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify rtl-hidden"
+              <VIcon
+                class="rtl-hidden"
                 icon="lucide:chevron-right"
               />
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify ltr-hidden"
+              <VIcon
+                class="ltr-hidden"
                 icon="lucide:chevron-left"
               />
             </template>

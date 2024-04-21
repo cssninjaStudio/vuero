@@ -128,9 +128,7 @@ const { onceImageErrored } = useImageError()
                 <div class="metric-foot is-up">
                   <span>
                     <span>
-                      <iconify-icon
-                        aria-hidden="true"
-                        class="iconify"
+                      <VIcon
                         icon="lucide:arrow-right"
                       />
                       +0.8%</span>
@@ -151,9 +149,7 @@ const { onceImageErrored } = useImageError()
                 <div class="metric-foot is-down">
                   <span>
                     <span>
-                      <iconify-icon
-                        aria-hidden="true"
-                        class="iconify"
+                      <VIcon
                         icon="lucide:arrow-right"
                       />
                       -0.2%</span>
@@ -174,9 +170,7 @@ const { onceImageErrored } = useImageError()
                 <div class="metric-foot is-up">
                   <span>
                     <span>
-                      <iconify-icon
-                        aria-hidden="true"
-                        class="iconify"
+                      <VIcon
                         icon="lucide:arrow-right"
                       />
                       +1.2%</span>
@@ -197,9 +191,7 @@ const { onceImageErrored } = useImageError()
                 <div class="metric-foot is-up">
                   <span>
                     <span>
-                      <iconify-icon
-                        aria-hidden="true"
-                        class="iconify"
+                      <VIcon
                         icon="lucide:arrow-right"
                       />
                       +4.2%</span>

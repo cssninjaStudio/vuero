@@ -114,9 +114,7 @@ const filteredData = computed(() => {
                 <div class="meta-left">
                   <h3>{{ item.name }}</h3>
                   <span>
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify"
+                    <VIcon
                       icon="lucide:map-pin"
                     />
                     <span>{{ item.location }}</span>

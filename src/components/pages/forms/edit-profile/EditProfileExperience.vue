@@ -151,9 +151,7 @@ const onSave = async () => {
                           </VControl>
                           <VControl nogrow>
                             <div class="button">
-                              <iconify-icon
-                                aria-hidden="true"
-                                class="iconify"
+                              <VIcon
                                 icon="lucide:arrow-right"
                               />
                             </div>

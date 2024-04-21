@@ -13,77 +13,77 @@ just replace the existing icons with some from Feather Icons.
     color="primary"
     rounded
   >
-    <iconify-icon class="iconify" icon="lucide:award" />
+    <VIcon icon="lucide:award" />
   </VIconBox>
   <VIconBox
     size="medium"
     color="info"
     rounded
   >
-    <iconify-icon class="iconify" icon="lucide:chrome" />
+    <VIcon icon="lucide:chrome" />
   </VIconBox>
   <VIconBox
     size="medium"
     color="success"
     rounded
   >
-    <iconify-icon class="iconify" icon="lucide:clock" />
+    <VIcon icon="lucide:clock" />
   </VIconBox>
   <VIconBox
     size="medium"
     color="warning"
     rounded
   >
-    <iconify-icon class="iconify" icon="lucide:coffee" />
+    <VIcon icon="lucide:coffee" />
   </VIconBox>
   <VIconBox
     size="medium"
     color="danger"
     rounded
   >
-    <iconify-icon class="iconify" icon="lucide:home" />
+    <VIcon icon="lucide:home" />
   </VIconBox>
   <VIconBox
     size="medium"
     color="purple"
     rounded
   >
-    <iconify-icon class="iconify" icon="lucide:lock" />
+    <VIcon icon="lucide:lock" />
   </VIconBox>
   <VIconBox
     size="medium"
     color="yellow"
     rounded
   >
-    <iconify-icon class="iconify" icon="lucide:moon" />
+    <VIcon icon="lucide:moon" />
   </VIconBox>
   <VIconBox
     size="medium"
     color="orange"
     rounded
   >
-    <iconify-icon class="iconify" icon="lucide:phone" />
+    <VIcon icon="lucide:phone" />
   </VIconBox>
   <VIconBox
     size="medium"
     color="green"
     rounded
   >
-    <iconify-icon class="iconify" icon="lucide:paperclip" />
+    <VIcon icon="lucide:paperclip" />
   </VIconBox>
   <VIconBox
     size="medium"
     color="red"
     rounded
   >
-    <iconify-icon class="iconify" icon="lucide:smile" />
+    <VIcon icon="lucide:smile" />
   </VIconBox>
   <VIconBox
     size="medium"
     color="blue"
     rounded
   >
-    <iconify-icon class="iconify" icon="lucide:shield" />
+    <VIcon icon="lucide:shield" />
   </VIconBox>
 </template>
 ```
@@ -94,37 +94,37 @@ just replace the existing icons with some from Feather Icons.
 
 <div class="icon-boxes">
     <VIconBox size="medium" color="primary" rounded>
-        <iconify-icon class="iconify" icon="lucide:award"/>
+        <VIcon icon="lucide:award"/>
     </VIconBox>
     <VIconBox size="medium" color="info" rounded>
-        <iconify-icon class="iconify" icon="lucide:chrome"/>
+        <VIcon icon="lucide:chrome"/>
     </VIconBox>
     <VIconBox size="medium" color="success" rounded>
-        <iconify-icon class="iconify" icon="lucide:clock"/>
+        <VIcon icon="lucide:clock"/>
     </VIconBox>
     <VIconBox size="medium" color="warning" rounded>
-        <iconify-icon class="iconify" icon="lucide:coffee"/>
+        <VIcon icon="lucide:coffee"/>
     </VIconBox>
     <VIconBox size="medium" color="danger" rounded>
-        <iconify-icon class="iconify" icon="lucide:home"/>
+        <VIcon icon="lucide:home"/>
     </VIconBox>
     <VIconBox size="medium" color="purple" rounded>
-        <iconify-icon class="iconify" icon="lucide:lock"/>
+        <VIcon icon="lucide:lock"/>
     </VIconBox>
     <VIconBox size="medium" color="yellow" rounded>
-        <iconify-icon class="iconify" icon="lucide:moon"/>
+        <VIcon icon="lucide:moon"/>
     </VIconBox>
     <VIconBox size="medium" color="orange" rounded>
-        <iconify-icon class="iconify" icon="lucide:phone"/>
+        <VIcon icon="lucide:phone"/>
     </VIconBox>
     <VIconBox size="medium" color="green" rounded>
-        <iconify-icon class="iconify" icon="lucide:paperclip"/>
+        <VIcon icon="lucide:paperclip"/>
     </VIconBox>
     <VIconBox size="medium" color="red" rounded>
-        <iconify-icon class="iconify" icon="lucide:smile"/>
+        <VIcon icon="lucide:smile"/>
     </VIconBox>
     <VIconBox size="medium" color="blue" rounded>
-        <iconify-icon class="iconify" icon="lucide:shield"/>
+        <VIcon icon="lucide:shield"/>
     </VIconBox>
 </div>
 

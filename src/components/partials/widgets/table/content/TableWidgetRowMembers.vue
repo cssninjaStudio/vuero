@@ -81,9 +81,7 @@ const props = defineProps<{
           :class="[props.circled && 'is-circle']"
         >
           <span class="icon is-small">
-            <iconify-icon
-              aria-hidden="true"
-              class="iconify"
+            <VIcon
               icon="lucide:edit-2"
             />
           </span>
@@ -93,9 +91,7 @@ const props = defineProps<{
           :class="[props.circled && 'is-circle']"
         >
           <span class="icon is-small">
-            <iconify-icon
-              aria-hidden="true"
-              class="iconify"
+            <VIcon
               icon="lucide:eye"
             />
           </span>
@@ -105,9 +101,7 @@ const props = defineProps<{
           :class="[props.circled && 'is-circle']"
         >
           <span class="icon is-small">
-            <iconify-icon
-              aria-hidden="true"
-              class="iconify"
+            <VIcon
               icon="lucide:trash-2"
             />
           </span>

@@ -40,9 +40,7 @@ const { optionsCircle } = useGrowthRadialChart()
               </div>
               <div class="tile-foot">
                 <span class="text-h-green">+6.4%
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:trending-up"
                   />
                 </span>
@@ -73,9 +71,7 @@ const { optionsCircle } = useGrowthRadialChart()
               </div>
               <div class="tile-foot">
                 <span class="text-h-red">-2.1%
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:trending-down"
                   />
                 </span>
@@ -106,9 +102,7 @@ const { optionsCircle } = useGrowthRadialChart()
               </div>
               <div class="tile-foot">
                 <span class="text-h-green">+4.2%
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:trending-up"
                   />
                 </span>
@@ -192,9 +186,7 @@ const { optionsCircle } = useGrowthRadialChart()
                 />
                 <div class="progress-foot">
                   <span class="text-h-green">+6.4%
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify"
+                    <VIcon
                       icon="lucide:trending-up"
                     />
                   </span>
@@ -256,14 +248,12 @@ const { optionsCircle } = useGrowthRadialChart()
             <div class="widget-toolbar">
               <div class="left">
                 <a class="action-icon">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify ltr-hidden"
+                  <VIcon
+                    class="ltr-hidden"
                     icon="lucide:chevron-right"
                   />
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify rtl-hidden"
+                  <VIcon
+                    class="rtl-hidden"
                     icon="lucide:chevron-left"
                   />
                 </a>
@@ -273,14 +263,12 @@ const { optionsCircle } = useGrowthRadialChart()
               </div>
               <div class="right">
                 <a class="action-icon">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify rtl-hidden"
+                  <VIcon
+                    class="rtl-hidden"
                     icon="lucide:chevron-right"
                   />
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify ltr-hidden"
+                  <VIcon
+                    class="ltr-hidden"
                     icon="lucide:chevron-left"
                   />
                 </a>

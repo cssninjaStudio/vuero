@@ -19,9 +19,7 @@ const { activeMobileSubsidebarId, toggleMobileSubnav } = useNavbarLayoutContext(
       @keydown.enter.prevent="toggleMobileSubnav((props.link as NavbarItemDropdown).id)"
       @click="toggleMobileSubnav((props.link as NavbarItemDropdown).id)"
     >
-      <iconify-icon
-        aria-hidden="true"
-        class="iconify"
+      <VIcon
         :icon="props.link.icon"
       />
     </a>
@@ -33,9 +31,7 @@ const { activeMobileSubsidebarId, toggleMobileSubnav } = useNavbarLayoutContext(
       @keydown.enter.prevent="toggleMobileSubnav((props.link as NavbarItemMegamenu).id)"
       @click="toggleMobileSubnav((props.link as NavbarItemMegamenu).id)"
     >
-      <iconify-icon
-        aria-hidden="true"
-        class="iconify"
+      <VIcon
         :icon="props.link.icon"
       />
     </a>
@@ -46,9 +42,7 @@ const { activeMobileSubsidebarId, toggleMobileSubnav } = useNavbarLayoutContext(
       @keydown.enter.prevent="(props.link as NavbarItemAction).onClick"
       @click="(props.link as NavbarItemAction).onClick"
     >
-      <iconify-icon
-        aria-hidden="true"
-        class="iconify"
+      <VIcon
         :icon="props.link.icon"
       />
     </a>
@@ -56,9 +50,7 @@ const { activeMobileSubsidebarId, toggleMobileSubnav } = useNavbarLayoutContext(
       v-else-if="props.link.type === 'link'"
       :to="props.link.to"
     >
-      <iconify-icon
-        aria-hidden="true"
-        class="iconify"
+      <VIcon
         :icon="props.link.icon"
       />
     </VLink>

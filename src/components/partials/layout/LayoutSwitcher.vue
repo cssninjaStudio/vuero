@@ -53,9 +53,8 @@ const layoutComponent = (slug?: string) => {
       @keydown.space.prevent="isModalOpen = true"
       @click.passive="isModalOpen = true"
     >
-      <iconify-icon
-        aria-hidden="true"
-        class="iconify sidebar-svg"
+      <VIcon
+        class="sidebar-svg"
         icon="lucide:sidebar"
       />
     </a>
@@ -148,9 +147,7 @@ const layoutComponent = (slug?: string) => {
                         <h3>Default theme</h3>
                         <p>Top nav with categories</p>
                         <div class="indicator">
-                          <iconify-icon
-                            aria-hidden="true"
-                            class="iconify"
+                          <VIcon
                             icon="lucide:check"
                           />
                         </div>
@@ -189,9 +186,7 @@ const layoutComponent = (slug?: string) => {
                         <h3>Fade theme</h3>
                         <p>Transparent top nav</p>
                         <div class="indicator">
-                          <iconify-icon
-                            aria-hidden="true"
-                            class="iconify"
+                          <VIcon
                             icon="lucide:check"
                           />
                         </div>
@@ -231,9 +226,7 @@ const layoutComponent = (slug?: string) => {
                         <h3>Colored theme</h3>
                         <p>Colored top nav</p>
                         <div class="indicator">
-                          <iconify-icon
-                            aria-hidden="true"
-                            class="iconify"
+                          <VIcon
                             icon="lucide:check"
                           />
                         </div>
@@ -278,9 +271,7 @@ const layoutComponent = (slug?: string) => {
                         <h3>Default theme</h3>
                         <p>Clean top nav variation</p>
                         <div class="indicator">
-                          <iconify-icon
-                            aria-hidden="true"
-                            class="iconify"
+                          <VIcon
                             icon="lucide:check"
                           />
                         </div>
@@ -320,9 +311,7 @@ const layoutComponent = (slug?: string) => {
                         <h3>Fade theme</h3>
                         <p>Transparent variation</p>
                         <div class="indicator">
-                          <iconify-icon
-                            aria-hidden="true"
-                            class="iconify"
+                          <VIcon
                             icon="lucide:check"
                           />
                         </div>
@@ -362,9 +351,7 @@ const layoutComponent = (slug?: string) => {
                         <h3>Shrink behavior</h3>
                         <p>Only display search when on top</p>
                         <div class="indicator">
-                          <iconify-icon
-                            aria-hidden="true"
-                            class="iconify"
+                          <VIcon
                             icon="lucide:check"
                           />
                         </div>
@@ -405,9 +392,7 @@ const layoutComponent = (slug?: string) => {
                         <h3>Reveal behavior</h3>
                         <p>Only display search scrolling up</p>
                         <div class="indicator">
-                          <iconify-icon
-                            aria-hidden="true"
-                            class="iconify"
+                          <VIcon
                             icon="lucide:check"
                           />
                         </div>
@@ -452,9 +437,7 @@ const layoutComponent = (slug?: string) => {
                         <h3>Default theme</h3>
                         <p>The good old default sidebar</p>
                         <div class="indicator">
-                          <iconify-icon
-                            aria-hidden="true"
-                            class="iconify"
+                          <VIcon
                             icon="lucide:check"
                           />
                         </div>
@@ -494,9 +477,7 @@ const layoutComponent = (slug?: string) => {
                         <h3>Colored theme</h3>
                         <p>Colored variation of sidebar</p>
                         <div class="indicator">
-                          <iconify-icon
-                            aria-hidden="true"
-                            class="iconify"
+                          <VIcon
                             icon="lucide:check"
                           />
                         </div>
@@ -536,9 +517,7 @@ const layoutComponent = (slug?: string) => {
                         <h3>Curved theme</h3>
                         <p>Sidebar with curved edges</p>
                         <div class="indicator">
-                          <iconify-icon
-                            aria-hidden="true"
-                            class="iconify"
+                          <VIcon
                             icon="lucide:check"
                           />
                         </div>
@@ -578,9 +557,7 @@ const layoutComponent = (slug?: string) => {
                         <h3>Curved theme</h3>
                         <p>Curved edges with color</p>
                         <div class="indicator">
-                          <iconify-icon
-                            aria-hidden="true"
-                            class="iconify"
+                          <VIcon
                             icon="lucide:check"
                           />
                         </div>
@@ -620,9 +597,7 @@ const layoutComponent = (slug?: string) => {
                         <h3>Sidebar Labels</h3>
                         <p>Default labels displayed</p>
                         <div class="indicator">
-                          <iconify-icon
-                            aria-hidden="true"
-                            class="iconify"
+                          <VIcon
                             icon="lucide:check"
                           />
                         </div>
@@ -662,9 +637,7 @@ const layoutComponent = (slug?: string) => {
                         <h3>Hover Labels</h3>
                         <p>Labels displayed on hover</p>
                         <div class="indicator">
-                          <iconify-icon
-                            aria-hidden="true"
-                            class="iconify"
+                          <VIcon
                             icon="lucide:check"
                           />
                         </div>
@@ -704,9 +677,7 @@ const layoutComponent = (slug?: string) => {
                         <h3>Floating Sidebar</h3>
                         <p>Floating rounded variation</p>
                         <div class="indicator">
-                          <iconify-icon
-                            aria-hidden="true"
-                            class="iconify"
+                          <VIcon
                             icon="lucide:check"
                           />
                         </div>
@@ -752,9 +723,7 @@ const layoutComponent = (slug?: string) => {
                         <h3>Default Sideblock</h3>
                         <p>The good old default sideblock</p>
                         <div class="indicator">
-                          <iconify-icon
-                            aria-hidden="true"
-                            class="iconify"
+                          <VIcon
                             icon="lucide:check"
                           />
                         </div>
@@ -795,9 +764,7 @@ const layoutComponent = (slug?: string) => {
                         <h3>Colored Sideblock</h3>
                         <p>Colored variation of sideblock</p>
                         <div class="indicator">
-                          <iconify-icon
-                            aria-hidden="true"
-                            class="iconify"
+                          <VIcon
                             icon="lucide:check"
                           />
                         </div>
@@ -838,9 +805,7 @@ const layoutComponent = (slug?: string) => {
                         <h3>Curved Sideblock</h3>
                         <p>Sideblock with curved edges</p>
                         <div class="indicator">
-                          <iconify-icon
-                            aria-hidden="true"
-                            class="iconify"
+                          <VIcon
                             icon="lucide:check"
                           />
                         </div>
@@ -881,9 +846,7 @@ const layoutComponent = (slug?: string) => {
                         <h3>Curved Colored</h3>
                         <p>Curved edges with color</p>
                         <div class="indicator">
-                          <iconify-icon
-                            aria-hidden="true"
-                            class="iconify"
+                          <VIcon
                             icon="lucide:check"
                           />
                         </div>

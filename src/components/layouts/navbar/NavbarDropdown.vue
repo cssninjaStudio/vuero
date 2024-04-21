@@ -52,10 +52,9 @@ function onHidden() {
         @keydown.enter.prevent="toggleSubnav(props.link.id)"
         @click="toggleSubnav(props.link.id)"
       >
-        <iconify-icon
+        <VIcon
           v-if="props.link.icon"
-          aria-hidden="true"
-          class="iconify"
+
           :icon="props.link.icon"
         />
         <span>{{ props.link.label }}</span>
@@ -65,10 +64,9 @@ function onHidden() {
         <ul class="centered-link-dropdown has-slimscroll">
           <li v-for="item of props.link.children" :key="item.to">
             <VLink :to="item.to">
-              <iconify-icon
+              <VIcon
                 v-if="item.icon"
-                aria-hidden="true"
-                class="iconify"
+
                 :icon="item.icon"
               />
               <span>{{ item.label }}</span>

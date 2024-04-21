@@ -71,9 +71,7 @@ const localFlagSrc = computed(() => {
           aria-haspopup="true"
           @click="dropdown.toggle"
         >
-          <iconify-icon
-            aria-hidden="true"
-            class="iconify"
+          <VIcon
             icon="lucide:bell"
           />
           <span class="new-indicator pulsate" />
@@ -185,14 +183,12 @@ const localFlagSrc = computed(() => {
       @keydown.space.prevent="emit('close')"
       @click="emit('close')"
     >
-      <iconify-icon
-        aria-hidden="true"
-        class="iconify rtl-hidden"
+      <VIcon
+        class="rtl-hidden"
         icon="lucide:chevron-left"
       />
-      <iconify-icon
-        aria-hidden="true"
-        class="iconify ltr-hidden"
+      <VIcon
+        class="ltr-hidden"
         icon="lucide:chevron-right"
       />
     </a>

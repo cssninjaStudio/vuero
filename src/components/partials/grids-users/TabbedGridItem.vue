@@ -65,9 +65,7 @@ onUnmounted(() => {
             @keydown.space.prevent="tab = 'posts'"
             @click="tab = 'posts'"
           >
-            <iconify-icon
-              aria-hidden="true"
-              class="iconify"
+            <VIcon
               icon="lucide:activity"
             />
           </a>
@@ -80,9 +78,7 @@ onUnmounted(() => {
             @keydown.space.prevent="tab = 'projects'"
             @click="tab = 'projects'"
           >
-            <iconify-icon
-              aria-hidden="true"
-              class="iconify"
+            <VIcon
               icon="lucide:briefcase"
             />
           </a>
@@ -95,9 +91,7 @@ onUnmounted(() => {
             @keydown.space.prevent="tab = 'tasks'"
             @click="tab = 'tasks'"
           >
-            <iconify-icon
-              aria-hidden="true"
-              class="iconify"
+            <VIcon
               icon="lucide:check-circle"
             />
           </a>
@@ -164,9 +158,7 @@ onUnmounted(() => {
     <div class="buttons">
       <button class="button v-button is-dark-outlined">
         <span class="icon">
-          <iconify-icon
-            aria-hidden="true"
-            class="iconify"
+          <VIcon
             icon="lucide:check"
           />
         </span>
@@ -174,9 +166,7 @@ onUnmounted(() => {
       </button>
       <button class="button v-button is-dark-outlined">
         <span class="icon">
-          <iconify-icon
-            aria-hidden="true"
-            class="iconify"
+          <VIcon
             icon="lucide:message-circle"
           />
         </span>

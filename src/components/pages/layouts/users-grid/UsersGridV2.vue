@@ -173,9 +173,7 @@ const optionsSingle = [
               <div class="buttons">
                 <button class="button v-button is-dark-outlined">
                   <span class="icon">
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify"
+                    <VIcon
                       icon="lucide:check-circle"
                     />
                   </span>
@@ -183,9 +181,7 @@ const optionsSingle = [
                 </button>
                 <button class="button v-button is-dark-outlined">
                   <span class="icon">
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify"
+                    <VIcon
                       icon="lucide:file"
                     />
                   </span>
@@ -216,9 +212,7 @@ const optionsSingle = [
               <div class="buttons">
                 <button class="button v-button is-dark-outlined">
                   <span class="icon">
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify"
+                    <VIcon
                       icon="lucide:user"
                     />
                   </span>
@@ -226,9 +220,7 @@ const optionsSingle = [
                 </button>
                 <button class="button v-button is-dark-outlined">
                   <span class="icon">
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify"
+                    <VIcon
                       icon="lucide:message-circle"
                     />
                   </span>

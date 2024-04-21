@@ -31,14 +31,12 @@ const activeTab = ref<TabId>('team')
           @keydown.space.prevent="panels.close()"
           @click="panels.close()"
         >
-          <iconify-icon
-            aria-hidden="true"
-            class="iconify rtl-hidden"
+          <VIcon
+            class="rtl-hidden"
             icon="lucide:chevron-right"
           />
-          <iconify-icon
-            aria-hidden="true"
-            class="iconify ltr-hidden"
+          <VIcon
+            class="ltr-hidden"
             icon="lucide:chevron-left"
           />
         </a>
@@ -92,23 +90,19 @@ const activeTab = ref<TabId>('team')
               <div class="meta">
                 <span>Joshua S.</span>
                 <span>
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:map-pin"
                   />
                   Las Vegas, NV
                 </span>
               </div>
               <a class="link">
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify rtl-hidden"
+                <VIcon
+                  class="rtl-hidden"
                   icon="lucide:arrow-right"
                 />
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify ltr-hidden"
+                <VIcon
+                  class="ltr-hidden"
                   icon="lucide:arrow-left"
                 />
               </a>
@@ -124,23 +118,19 @@ const activeTab = ref<TabId>('team')
               <div class="meta">
                 <span>Melany W.</span>
                 <span>
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:map-pin"
                   />
                   San Jose, CA
                 </span>
               </div>
               <a class="link">
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify rtl-hidden"
+                <VIcon
+                  class="rtl-hidden"
                   icon="lucide:arrow-right"
                 />
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify ltr-hidden"
+                <VIcon
+                  class="ltr-hidden"
                   icon="lucide:arrow-left"
                 />
               </a>
@@ -156,23 +146,19 @@ const activeTab = ref<TabId>('team')
               <div class="meta">
                 <span>Esteban C.</span>
                 <span>
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:map-pin"
                   />
                   Miami, FL
                 </span>
               </div>
               <a class="link">
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify rtl-hidden"
+                <VIcon
+                  class="rtl-hidden"
                   icon="lucide:arrow-right"
                 />
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify ltr-hidden"
+                <VIcon
+                  class="ltr-hidden"
                   icon="lucide:arrow-left"
                 />
               </a>
@@ -188,23 +174,19 @@ const activeTab = ref<TabId>('team')
               <div class="meta">
                 <span>Tara S.</span>
                 <span>
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:map-pin"
                   />
                   New York, NY
                 </span>
               </div>
               <a class="link">
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify rtl-hidden"
+                <VIcon
+                  class="rtl-hidden"
                   icon="lucide:arrow-right"
                 />
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify ltr-hidden"
+                <VIcon
+                  class="ltr-hidden"
                   icon="lucide:arrow-left"
                 />
               </a>
@@ -230,14 +212,12 @@ const activeTab = ref<TabId>('team')
                   <span>getslicer.io</span>
                 </div>
                 <a class="link">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify rtl-hidden"
+                  <VIcon
+                    class="rtl-hidden"
                     icon="lucide:arrow-right"
                   />
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify ltr-hidden"
+                  <VIcon
+                    class="ltr-hidden"
                     icon="lucide:arrow-left"
                   />
                 </a>
@@ -282,14 +262,12 @@ const activeTab = ref<TabId>('team')
                   <span>metamovies.co</span>
                 </div>
                 <a class="link">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify rtl-hidden"
+                  <VIcon
+                    class="rtl-hidden"
                     icon="lucide:arrow-right"
                   />
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify ltr-hidden"
+                  <VIcon
+                    class="ltr-hidden"
                     icon="lucide:arrow-left"
                   />
                 </a>
@@ -330,14 +308,12 @@ const activeTab = ref<TabId>('team')
                   <span>fastpizza.com</span>
                 </div>
                 <a class="link">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify rtl-hidden"
+                  <VIcon
+                    class="rtl-hidden"
                     icon="lucide:arrow-right"
                   />
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify ltr-hidden"
+                  <VIcon
+                    class="ltr-hidden"
                     icon="lucide:arrow-left"
                   />
                 </a>
@@ -375,9 +351,7 @@ const activeTab = ref<TabId>('team')
               <!--Timeline item-->
               <div class="timeline-item">
                 <div class="timeline-icon">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:phone-call"
                   />
                 </div>
@@ -404,9 +378,7 @@ const activeTab = ref<TabId>('team')
               <!--Timeline item-->
               <div class="timeline-item">
                 <div class="timeline-icon">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:message-circle"
                   />
                 </div>
@@ -418,9 +390,7 @@ const activeTab = ref<TabId>('team')
               <!--Timeline item-->
               <div class="timeline-item">
                 <div class="timeline-icon">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:mail"
                   />
                 </div>
@@ -432,9 +402,7 @@ const activeTab = ref<TabId>('team')
               <!--Timeline item-->
               <div class="timeline-item">
                 <div class="timeline-icon">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:smile"
                   />
                 </div>
@@ -446,9 +414,7 @@ const activeTab = ref<TabId>('team')
               <!--Timeline item-->
               <div class="timeline-item">
                 <div class="timeline-icon">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:phone-call"
                   />
                 </div>
@@ -460,9 +426,7 @@ const activeTab = ref<TabId>('team')
               <!--Timeline item-->
               <div class="timeline-item">
                 <div class="timeline-icon">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:feather"
                   />
                 </div>

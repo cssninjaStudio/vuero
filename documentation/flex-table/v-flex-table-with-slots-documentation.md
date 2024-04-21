@@ -155,8 +155,8 @@ const VFocus = {
           @keydown.enter="editCompanyIndex = index"
         >
           {{ value }}
-          <iconify-icon
-            class="iconify is-inline ml-1"
+          <VIcon
+            class="is-inline ml-1"
             icon="lucide:edit"
             role="img"
             aria-label="edit-3"

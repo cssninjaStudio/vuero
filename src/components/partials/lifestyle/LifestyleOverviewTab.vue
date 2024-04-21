@@ -61,9 +61,7 @@ const {
           <div class="card-foot is-down">
             <span>
               <span>
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify"
+                <VIcon
                   icon="lucide:arrow-right"
                 />
                 -0.4%</span>
@@ -94,9 +92,7 @@ const {
           <div class="card-foot is-up">
             <span>
               <span>
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify"
+                <VIcon
                   icon="lucide:arrow-right"
                 />
                 22.7%</span>
@@ -127,9 +123,7 @@ const {
           <div class="card-foot is-up">
             <span>
               <span>
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify"
+                <VIcon
                   icon="lucide:arrow-right"
                 />
                 1.4%</span>
@@ -160,9 +154,7 @@ const {
           <div class="card-foot is-up">
             <span>
               <span>
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify"
+                <VIcon
                   icon="lucide:arrow-right"
                 />
                 3.6%</span>
@@ -193,9 +185,7 @@ const {
           <div class="card-foot is-down">
             <span>
               <span>
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify"
+                <VIcon
                   icon="lucide:arrow-right"
                 />
                 -1.1%</span>
@@ -226,9 +216,7 @@ const {
           <div class="card-foot is-up">
             <span>
               <span>
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify"
+                <VIcon
                   icon="lucide:arrow-right"
                 />
                 22.7%</span>

@@ -15,7 +15,7 @@ Check the markup for more details.
     solid
     icon="lnil lnil-sleep"
   >
-    <iconify-icon class="iconify" icon="lucide:plus" />
+    <VIcon icon="lucide:plus" />
   </VSnack>
   <VSnack
     title="Support"
@@ -24,7 +24,7 @@ Check the markup for more details.
     solid
     icon="lnil lnil-life-ring"
   >
-    <iconify-icon class="iconify" icon="lucide:plus" />
+    <VIcon icon="lucide:plus" />
   </VSnack>
   <VSnack
     title="Business"
@@ -32,7 +32,7 @@ Check the markup for more details.
     solid
     icon="lnil lnil-apartment"
   >
-    <iconify-icon class="iconify" icon="lucide:plus" />
+    <VIcon icon="lucide:plus" />
   </VSnack>
   <VSnack
     title="Warning"
@@ -41,7 +41,7 @@ Check the markup for more details.
     solid
     icon="lnil lnil-warning"
   >
-    <iconify-icon class="iconify" icon="lucide:plus" />
+    <VIcon icon="lucide:plus" />
   </VSnack>
   <VSnack
     title="Health"
@@ -50,7 +50,7 @@ Check the markup for more details.
     solid
     icon="lnil lnil-thermometer"
   >
-    <iconify-icon class="iconify" icon="lucide:plus" />
+    <VIcon icon="lucide:plus" />
   </VSnack>
 </template>
 ```
@@ -61,7 +61,7 @@ Check the markup for more details.
 
 <div class="snacks">
   <VSnack title="Shopping" color="primary" solid icon="lnil lnil-sleep">
-    <iconify-icon class="iconify" icon="lucide:plus"/>
+    <VIcon icon="lucide:plus"/>
   </VSnack>
   <VSnack
     title="Support"
@@ -70,10 +70,10 @@ Check the markup for more details.
     solid
     icon="lnil lnil-life-ring"
   >
-    <iconify-icon class="iconify" icon="lucide:plus"/>
+    <VIcon icon="lucide:plus"/>
   </VSnack>
   <VSnack title="Business" color="info" solid icon="lnil lnil-apartment">
-    <iconify-icon class="iconify" icon="lucide:plus"/>
+    <VIcon icon="lucide:plus"/>
   </VSnack>
   <VSnack
     title="Warning"
@@ -82,7 +82,7 @@ Check the markup for more details.
     solid
     icon="lnil lnil-warning"
   >
-    <iconify-icon class="iconify" icon="lucide:plus"/>
+    <VIcon icon="lucide:plus"/>
   </VSnack>
   <VSnack
     title="Health"
@@ -91,7 +91,7 @@ Check the markup for more details.
     solid
     icon="lnil lnil-thermometer"
   >
-    <iconify-icon class="iconify" icon="lucide:plus"/>
+    <VIcon icon="lucide:plus"/>
   </VSnack>
 </div>
 

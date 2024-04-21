@@ -250,9 +250,7 @@ watch(previewTemplate, () => {
                   class="inner-action fileinput-button hint--bubble hint--primary hint--top"
                   data-hint="Add Files"
                 >
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:plus"
                   />
                 </span>
@@ -264,9 +262,7 @@ watch(previewTemplate, () => {
                   class="inner-action start hint--bubble hint--primary hint--top"
                   data-hint="Upload All"
                 >
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:upload"
                   />
                 </button>
@@ -278,9 +274,7 @@ watch(previewTemplate, () => {
                   class="inner-action cancel hint--bubble hint--primary hint--top"
                   data-hint="Remove All"
                 >
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:x"
                   />
                 </button>
@@ -372,9 +366,7 @@ watch(previewTemplate, () => {
                   data-hint="Upload File"
                   type="button"
                 >
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:play"
                   />
                 </button>
@@ -384,9 +376,7 @@ watch(previewTemplate, () => {
                   data-hint="Cancel"
                   type="button"
                 >
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:arrow-left"
                   />
                 </button>
@@ -395,9 +385,7 @@ watch(previewTemplate, () => {
                   type="button"
                   class="list-item-action delete"
                 >
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:trash-2"
                   />
                 </button>

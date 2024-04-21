@@ -22,9 +22,8 @@ const {
     @keydown.enter.prevent="() => toggleSubsidebar(props.link.id)"
     @click.prevent="() => toggleSubsidebar(props.link.id)"
   >
-    <iconify-icon
-      aria-hidden="true"
-      class="iconify sidebar-svg"
+    <VIcon
+      class="sidebar-svg"
       :icon="props.link.icon"
     />
   </a>
@@ -39,9 +38,8 @@ const {
     :to="props.link.to"
     :data-content="props.link.label"
   >
-    <iconify-icon
-      aria-hidden="true"
-      class="iconify sidebar-svg"
+    <VIcon
+      class="sidebar-svg"
       :icon="props.link.icon"
     />
   </VLink>
@@ -54,9 +52,8 @@ const {
     @click="(props.link as SidebarItemAction).onClick"
     @keydown.enter="(props.link as SidebarItemAction).onClick"
   >
-    <iconify-icon
-      aria-hidden="true"
-      class="iconify sidebar-svg"
+    <VIcon
+      class="sidebar-svg"
       :icon="props.link.icon"
     />
   </a>

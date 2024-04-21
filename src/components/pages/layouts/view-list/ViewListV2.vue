@@ -122,9 +122,7 @@ const filteredData = computed(() => {
                     </VRangeRating>
                   </h3>
                   <p>
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify"
+                    <VIcon
                       icon="lucide:map-pin"
                     />
                     <span>{{ item.location }}</span>

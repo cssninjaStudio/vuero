@@ -27,10 +27,9 @@ const { activeSubnavId, toggleSubnav } = useNavbarLayoutContext()
     @keydown.enter.prevent="toggleSubnav((props.link as NavbarItemMegamenu).id)"
     @click="toggleSubnav((props.link as NavbarItemMegamenu).id)"
   >
-    <iconify-icon
+    <VIcon
       v-if="props.link.icon"
-      aria-hidden="true"
-      class="iconify"
+
       :icon="props.link.icon"
     />
     <span v-if="props.link.label">{{ props.link.label }}</span>
@@ -44,10 +43,9 @@ const { activeSubnavId, toggleSubnav } = useNavbarLayoutContext()
     @keydown.enter.prevent="(props.link as NavbarItemAction).onClick"
     @click="(props.link as NavbarItemAction).onClick"
   >
-    <iconify-icon
+    <VIcon
       v-if="props.link.icon"
-      aria-hidden="true"
-      class="iconify"
+
       :icon="props.link.icon"
     />
     <span v-if="props.link.label">{{ props.link.label }}</span>
@@ -58,10 +56,9 @@ const { activeSubnavId, toggleSubnav } = useNavbarLayoutContext()
     class="centered-link centered-link-search"
     :to="props.link.to"
   >
-    <iconify-icon
+    <VIcon
       v-if="props.link.icon"
-      aria-hidden="true"
-      class="iconify"
+
       :icon="props.link.icon"
     />
     <span v-if="props.link.label">{{ props.link.label }}</span>

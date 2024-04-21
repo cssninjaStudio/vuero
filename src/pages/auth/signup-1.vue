@@ -76,9 +76,7 @@ useHead({
             :class="[step >= 1 && 'is-active', step < 1 && 'is-inactive']"
           >
             <div class="inner">
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
+              <VIcon
                 icon="lucide:user"
               />
             </div>
@@ -89,9 +87,7 @@ useHead({
             :class="[step >= 2 && 'is-active', step < 2 && 'is-inactive']"
           >
             <div class="inner">
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
+              <VIcon
                 icon="lucide:shield"
               />
             </div>
@@ -102,9 +98,7 @@ useHead({
             :class="[step >= 3 && 'is-active', step < 3 && 'is-inactive']"
           >
             <div class="inner">
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
+              <VIcon
                 icon="lucide:check"
               />
             </div>
@@ -303,9 +297,7 @@ useHead({
                         @keydown.space.prevent="uploadModalOpen = true"
                         @click="uploadModalOpen = true"
                       >
-                        <iconify-icon
-                          aria-hidden="true"
-                          class="iconify"
+                        <VIcon
                           icon="lucide:plus"
                         />
                       </div>

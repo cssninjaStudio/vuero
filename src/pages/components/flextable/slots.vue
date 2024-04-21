@@ -144,8 +144,8 @@ function contactUser(row: any) {
                   @click="editCompanyIndex = index"
                 >
                   {{ value }}
-                  <iconify-icon
-                    class="iconify is-inline ml-1"
+                  <VIcon
+                    class="is-inline ml-1"
                     icon="lucide:edit-3"
                     role="img"
                     aria-label="edit"

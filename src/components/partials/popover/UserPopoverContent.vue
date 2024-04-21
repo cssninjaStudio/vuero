@@ -52,23 +52,17 @@ const props = defineProps<{
       </div>
       <div class="popover-actions">
         <a class="popover-icon">
-          <iconify-icon
-            aria-hidden="true"
-            class="iconify"
+          <VIcon
             icon="lucide:phone"
           />
         </a>
         <a class="popover-icon">
-          <iconify-icon
-            aria-hidden="true"
-            class="iconify"
+          <VIcon
             icon="lucide:mail"
           />
         </a>
         <a class="popover-icon">
-          <iconify-icon
-            aria-hidden="true"
-            class="iconify"
+          <VIcon
             icon="lucide:user"
           />
         </a>

@@ -284,9 +284,7 @@ const onSubmit = () => {
                     type="button"
                     class="add-participant"
                   >
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify"
+                    <VIcon
                       icon="lucide:plus"
                     />
                   </button>

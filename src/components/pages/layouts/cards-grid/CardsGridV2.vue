@@ -151,9 +151,7 @@ const optionsSingle = [
                       {{ item.name }}
                     </h3>
                     <p>
-                      <iconify-icon
-                        aria-hidden="true"
-                        class="iconify"
+                      <VIcon
                         icon="lucide:calendar"
                       />{{ item.dueDate }}
                     </p>

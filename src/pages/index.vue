@@ -43,24 +43,19 @@ useHead({
             <div class="trusted-by mb-4">
               <span>Trusted by <span>2000+ customers</span></span>
               <div class="rating">
-                <iconify-icon
-                  class="iconify"
+                <VIcon
                   icon="uiw:star-on"
                 />
-                <iconify-icon
-                  class="iconify"
+                <VIcon
                   icon="uiw:star-on"
                 />
-                <iconify-icon
-                  class="iconify"
+                <VIcon
                   icon="uiw:star-on"
                 />
-                <iconify-icon
-                  class="iconify"
+                <VIcon
                   icon="uiw:star-on"
                 />
-                <iconify-icon
-                  class="iconify"
+                <VIcon
                   icon="uiw:star-on"
                 />
               </div>
@@ -352,8 +347,7 @@ useHead({
             <div class="flex-card light-bordered hover-inset">
               <div class="flex-cell is-bordered">
                 <div class="icon-holder">
-                  <iconify-icon
-                    class="iconify"
+                  <VIcon
                     icon="mdi:vuejs"
                   />
                 </div>
@@ -364,8 +358,7 @@ useHead({
               </div>
               <div class="flex-cell">
                 <div class="icon-holder">
-                  <iconify-icon
-                    class="iconify"
+                  <VIcon
                     icon="bxl:typescript"
                   />
                 </div>
@@ -374,8 +367,8 @@ useHead({
               </div>
               <div class="flex-cell is-bordered">
                 <div class="icon-holder">
-                  <iconify-icon
-                    class="iconify smaller"
+                  <VIcon
+                    class="smaller"
                     icon="simple-icons:vite"
                   />
                 </div>
@@ -387,8 +380,8 @@ useHead({
               </div>
               <div class="flex-cell">
                 <div class="icon-holder">
-                  <iconify-icon
-                    class="iconify smaller"
+                  <VIcon
+                    class="smaller"
                     icon="akar-icons:vscode-fill"
                   />
                 </div>
@@ -400,8 +393,8 @@ useHead({
               </div>
               <div class="flex-cell is-bordered">
                 <div class="icon-holder">
-                  <iconify-icon
-                    class="iconify smaller"
+                  <VIcon
+                    class="smaller"
                     icon="file-icons:eslint"
                   />
                 </div>
@@ -413,8 +406,8 @@ useHead({
               </div>
               <div class="flex-cell is-bordered">
                 <div class="icon-holder">
-                  <iconify-icon
-                    class="iconify smaller"
+                  <VIcon
+                    class="smaller"
                     icon="file-icons:prettier"
                   />
                 </div>
@@ -426,8 +419,8 @@ useHead({
               </div>
               <div class="flex-cell">
                 <div class="icon-holder">
-                  <iconify-icon
-                    class="iconify smaller"
+                  <VIcon
+                    class="smaller"
                     icon="file-icons:stylelint"
                   />
                 </div>
@@ -439,8 +432,8 @@ useHead({
               </div>
               <div class="flex-cell">
                 <div class="icon-holder">
-                  <iconify-icon
-                    class="iconify smaller"
+                  <VIcon
+                    class="smaller"
                     icon="simple-icons:iconify"
                   />
                 </div>
@@ -452,8 +445,8 @@ useHead({
               </div>
               <div class="flex-cell">
                 <div class="icon-holder">
-                  <iconify-icon
-                    class="iconify smaller"
+                  <VIcon
+                    class="smaller"
                     icon="simple-icons:cypress"
                   />
                 </div>
@@ -465,8 +458,8 @@ useHead({
               </div>
               <div class="flex-cell">
                 <div class="icon-holder">
-                  <iconify-icon
-                    class="iconify smaller"
+                  <VIcon
+                    class="smaller"
                     icon="file-icons:pnpm"
                   />
                 </div>
@@ -478,8 +471,8 @@ useHead({
               </div>
               <div class="flex-cell">
                 <div class="icon-holder">
-                  <iconify-icon
-                    class="iconify smaller"
+                  <VIcon
+                    class="smaller"
                     icon="simple-icons:docker"
                   />
                 </div>
@@ -491,8 +484,8 @@ useHead({
               </div>
               <div class="flex-cell">
                 <div class="icon-holder">
-                  <iconify-icon
-                    class="iconify smaller"
+                  <VIcon
+                    class="smaller"
                     icon="mdi:robot"
                   />
                 </div>
@@ -504,8 +497,8 @@ useHead({
               </div>
               <div class="flex-cell">
                 <div class="icon-holder">
-                  <iconify-icon
-                    class="iconify smaller"
+                  <VIcon
+                    class="smaller"
                     icon="ic:twotone-check-circle"
                   />
                 </div>
@@ -517,8 +510,8 @@ useHead({
               </div>
               <div class="flex-cell">
                 <div class="icon-holder">
-                  <iconify-icon
-                    class="iconify smaller"
+                  <VIcon
+                    class="smaller"
                     icon="solar:folder-error-bold"
                   />
                 </div>
@@ -530,8 +523,8 @@ useHead({
               </div>
               <div class="flex-cell">
                 <div class="icon-holder">
-                  <iconify-icon
-                    class="iconify smaller"
+                  <VIcon
+                    class="smaller"
                     icon="solar:sidebar-minimalistic-bold"
                   />
                 </div>
@@ -543,8 +536,8 @@ useHead({
               </div>
               <div class="flex-cell">
                 <div class="icon-holder">
-                  <iconify-icon
-                    class="iconify smaller"
+                  <VIcon
+                    class="smaller"
                     icon="ic:round-menu-book"
                   />
                 </div>
@@ -695,8 +688,8 @@ useHead({
                   class="button chat-button is-secondary"
                 >
                   <span>Join us on Discord</span>
-                  <iconify-icon
-                    class="iconify ml-1"
+                  <VIcon
+                    class="ml-1"
                     icon="lucide:external-link"
                   />
                 </a>

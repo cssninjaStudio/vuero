@@ -148,9 +148,7 @@ const filteredData = computed(() => {
                     <span>{{ item.author.name }}</span>
                   </h3>
                   <span>
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify"
+                    <VIcon
                       icon="lucide:archive"
                     />
                     <span>{{ item.category }}</span>
@@ -158,9 +156,7 @@ const filteredData = computed(() => {
                       aria-hidden="true"
                       class="fas fa-circle icon-separator"
                     />
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify"
+                    <VIcon
                       icon="lucide:clock"
                     />
                     <span>{{ item.duration }}</span>
@@ -168,9 +164,7 @@ const filteredData = computed(() => {
                       aria-hidden="true"
                       class="fas fa-circle icon-separator"
                     />
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify"
+                    <VIcon
                       icon="lucide:paperclip"
                     />
                     <span>{{ item.attachments }} files</span>
@@ -194,9 +188,7 @@ const filteredData = computed(() => {
                       data-hint="Save"
                     >
                       <span class="icon is-small">
-                        <iconify-icon
-                          aria-hidden="true"
-                          class="iconify"
+                        <VIcon
                           icon="lucide:heart"
                         />
                       </span>

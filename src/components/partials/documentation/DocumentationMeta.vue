@@ -15,8 +15,8 @@ const props = defineProps<{
           <h3 :id="`${props.name}Props`">
             &lt;{{ props.name }}&gt; Props
             <a :href="`#${props.name}Props`">
-              <iconify-icon
-                class="iconify toc-link-anchor"
+              <VIcon
+                class="toc-link-anchor"
                 icon="lucide:link"
               />
             </a>
@@ -89,8 +89,8 @@ const props = defineProps<{
           <h3 :id="`${props.name}Events`">
             &lt;{{ props.name }}&gt; Events
             <a :href="`#${props.name}Events`">
-              <iconify-icon
-                class="iconify toc-link-anchor"
+              <VIcon
+                class="toc-link-anchor"
                 icon="lucide:link"
               />
             </a>
@@ -133,8 +133,8 @@ const props = defineProps<{
           <h3 :id="`${props.name}Exposed`">
             &lt;{{ props.name }}&gt; Exposed
             <a :href="`#${props.name}Exposed`">
-              <iconify-icon
-                class="iconify toc-link-anchor"
+              <VIcon
+                class="toc-link-anchor"
                 icon="lucide:link"
               />
             </a>
@@ -177,8 +177,8 @@ const props = defineProps<{
           <h3 :id="`${props.name}Slots`">
             &lt;{{ props.name }}&gt; Slots
             <a :href="`#${props.name}Slots`">
-              <iconify-icon
-                class="iconify toc-link-anchor"
+              <VIcon
+                class="toc-link-anchor"
                 icon="lucide:link"
               />
             </a>

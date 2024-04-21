@@ -19,7 +19,7 @@ const filteredIcons = computed(() => {
 })
 
 function getSnippet(icon: any) {
-  return `<iconify-icon class="iconify" icon="lucide:${icon.name}" aria-hidden="true"/>`
+  return `<VIcon icon="lucide:${icon.name}" />`
 }
 
 const viewWrapper = useViewWrapper()
@@ -91,9 +91,7 @@ useHead({
                 @keydown.space.prevent="copy(getSnippet(icon))"
                 @click="copy(getSnippet(icon))"
               >
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify"
+                <VIcon
                   :icon="icon.dataicon"
                 />
                 <p class="textFilter-match">

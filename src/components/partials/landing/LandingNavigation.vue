@@ -125,16 +125,12 @@ watchEffect(() => {
             >
             <span class="toggler">
               <span class="dark">
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify"
+                <VIcon
                   icon="lucide:moon"
                 />
               </span>
               <span class="light">
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify"
+                <VIcon
                   icon="lucide:sun"
                 />
               </span>

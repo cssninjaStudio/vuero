@@ -154,9 +154,7 @@ const { progressChartOptions } = useProgressChart()
               </div>
               <div class="chart-meta">
                 <p>
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:help-circle"
                   />
                   Your overall condition is very good. Make it even better.
@@ -184,9 +182,7 @@ const { progressChartOptions } = useProgressChart()
               </div>
               <div class="chart-meta">
                 <p>
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:help-circle"
                   />
                   Your energy seems a bit unstable. You can improve it.
@@ -214,9 +210,7 @@ const { progressChartOptions } = useProgressChart()
               </div>
               <div class="chart-meta">
                 <p>
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:help-circle"
                   />
                   Your oxygen seems a bit unstable. You can improve it.
@@ -244,9 +238,7 @@ const { progressChartOptions } = useProgressChart()
               </div>
               <div class="chart-meta">
                 <p>
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:help-circle"
                   />
                   Your overall condition is very good. Make it even better.
@@ -277,9 +269,7 @@ const { progressChartOptions } = useProgressChart()
                   placeholder="Search..."
                 >
                 <button class="searcv-button">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:search"
                   />
                 </button>
@@ -300,14 +290,12 @@ const { progressChartOptions } = useProgressChart()
             <div class="widget-toolbar">
               <div class="left">
                 <a class="action-icon">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify ltr-hidden"
+                  <VIcon
+                    class="ltr-hidden"
                     icon="lucide:chevron-right"
                   />
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify rtl-hidden"
+                  <VIcon
+                    class="rtl-hidden"
                     icon="lucide:chevron-left"
                   />
                 </a>
@@ -317,14 +305,12 @@ const { progressChartOptions } = useProgressChart()
               </div>
               <div class="right">
                 <a class="action-icon">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify rtl-hidden"
+                  <VIcon
+                    class="rtl-hidden"
                     icon="lucide:chevron-right"
                   />
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify ltr-hidden"
+                  <VIcon
+                    class="ltr-hidden"
                     icon="lucide:chevron-left"
                   />
                 </a>

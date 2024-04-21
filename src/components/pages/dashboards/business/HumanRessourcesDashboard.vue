@@ -84,9 +84,7 @@ const columns = {
                     squared
                   />
                   <button>
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify"
+                    <VIcon
                       icon="lucide:plus"
                     />
                   </button>
@@ -319,9 +317,7 @@ const columns = {
                   placeholder="Search..."
                 >
                 <button class="searcv-button">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:search"
                   />
                 </button>
@@ -355,14 +351,12 @@ const columns = {
             <div class="widget-toolbar">
               <div class="left">
                 <a class="action-icon">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify ltr-hidden"
+                  <VIcon
+                    class="ltr-hidden"
                     icon="lucide:chevron-right"
                   />
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify rtl-hidden"
+                  <VIcon
+                    class="rtl-hidden"
                     icon="lucide:chevron-left"
                   />
                 </a>
@@ -372,14 +366,12 @@ const columns = {
               </div>
               <div class="right">
                 <a class="action-icon">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify rtl-hidden"
+                  <VIcon
+                    class="rtl-hidden"
                     icon="lucide:chevron-right"
                   />
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify ltr-hidden"
+                  <VIcon
+                    class="ltr-hidden"
                     icon="lucide:chevron-left"
                   />
                 </a>

@@ -36,9 +36,7 @@ const filteredData = computed(() => {
           data-filter-target=".list-view-item"
         >
         <div class="form-icon">
-          <iconify-icon
-            aria-hidden="true"
-            class="iconify"
+          <VIcon
             icon="lucide:search"
           />
         </div>
@@ -124,9 +122,7 @@ const filteredData = computed(() => {
                       {{ item.title }}
                     </h3>
                     <span>
-                      <iconify-icon
-                        aria-hidden="true"
-                        class="iconify"
+                      <VIcon
                         icon="lucide:map-pin"
                       />
                       <span>{{ item.location }}</span>
@@ -134,9 +130,7 @@ const filteredData = computed(() => {
                         aria-hidden="true"
                         class="fas fa-circle icon-separator"
                       />
-                      <iconify-icon
-                        aria-hidden="true"
-                        class="iconify"
+                      <VIcon
                         icon="lucide:clock"
                       />
                       <span>{{ item.duration }}</span>
@@ -144,9 +138,7 @@ const filteredData = computed(() => {
                         aria-hidden="true"
                         class="fas fa-circle icon-separator"
                       />
-                      <iconify-icon
-                        aria-hidden="true"
-                        class="iconify"
+                      <VIcon
                         icon="lucide:check-circle"
                       />
                       <span>{{ item.requirements }}</span>

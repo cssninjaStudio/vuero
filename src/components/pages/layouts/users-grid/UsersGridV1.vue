@@ -131,9 +131,7 @@ function getAvatarData(user: any): VAvatarProps {
             <div class="buttons">
               <button class="button v-button is-dark-outlined">
                 <span class="icon">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:user"
                   />
                 </span>
@@ -141,9 +139,7 @@ function getAvatarData(user: any): VAvatarProps {
               </button>
               <button class="button v-button is-dark-outlined">
                 <span class="icon">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:message-circle"
                   />
                 </span>

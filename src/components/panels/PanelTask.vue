@@ -26,9 +26,7 @@ const panels = usePanels()
           @keydown.space.prevent="panels.close()"
           @click="panels.close()"
         >
-          <iconify-icon
-            aria-hidden="true"
-            class="iconify"
+          <VIcon
             icon="lucide:chevron-right"
           />
         </a>
@@ -60,9 +58,7 @@ const panels = usePanels()
               </div>
 
               <button>
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify"
+                <VIcon
                   icon="lucide:plus"
                 />
               </button>
@@ -74,33 +70,25 @@ const panels = usePanels()
           <h3>Statistics</h3>
           <div class="task-stats">
             <div class="task-stat">
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
+              <VIcon
                 icon="lucide:clock"
               />
               <span>5 days</span>
             </div>
             <div class="task-stat">
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
+              <VIcon
                 icon="lucide:file"
               />
               <span>3 files</span>
             </div>
             <div class="task-stat">
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
+              <VIcon
                 icon="lucide:message-circle"
               />
               <span>54</span>
             </div>
             <a>
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
+              <VIcon
                 icon="lucide:plus"
               />
               <span>Add Checklist</span>
@@ -177,23 +165,17 @@ const panels = usePanels()
               </div>
               <div class="end">
                 <a class="message-action">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:smile"
                   />
                 </a>
                 <a class="message-action">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:at-sign"
                   />
                 </a>
                 <a class="message-action">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:paperclip"
                   />
                 </a>

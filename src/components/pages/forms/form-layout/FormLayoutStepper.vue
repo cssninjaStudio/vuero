@@ -145,9 +145,7 @@ const validateStep = async () => {
               "
               @click="currentHelp === 0 ? (currentHelp = -1) : (currentHelp = 0)"
             >
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
+              <VIcon
                 icon="lucide:help-circle"
               />
             </button>
@@ -169,9 +167,7 @@ const validateStep = async () => {
                   type="button"
                   class="input-button"
                 >
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:plus"
                   />
                   <span>Add shipment group</span>
@@ -290,9 +286,7 @@ const validateStep = async () => {
           </div>
           <div class="form-section-output">
             <div class="output">
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
+              <VIcon
                 icon="lucide:archive"
               />
               <span>15 i9 Laptops - b2</span>
@@ -319,9 +313,7 @@ const validateStep = async () => {
                 "
                 @click="currentHelp === 1 ? (currentHelp = -1) : (currentHelp = 1)"
               >
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify"
+                <VIcon
                   icon="lucide:help-circle"
                 />
               </button>
@@ -343,9 +335,7 @@ const validateStep = async () => {
                     type="button"
                     class="input-button"
                   >
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify"
+                    <VIcon
                       icon="lucide:plus"
                     />
                     <span>Add contact</span>
@@ -395,9 +385,7 @@ const validateStep = async () => {
 
             <div class="form-section-output">
               <div class="output">
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify"
+                <VIcon
                   icon="lucide:user"
                 />
                 <span>Erik Kovalsky</span>
@@ -406,9 +394,7 @@ const validateStep = async () => {
                 </div>
               </div>
               <div class="output">
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify"
+                <VIcon
                   icon="lucide:user"
                 />
                 <span>Elsa Walker</span>
@@ -436,9 +422,7 @@ const validateStep = async () => {
                 "
                 @click="currentHelp === 2 ? (currentHelp = -1) : (currentHelp = 2)"
               >
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify"
+                <VIcon
                   icon="lucide:help-circle"
                 />
               </button>
@@ -498,9 +482,7 @@ const validateStep = async () => {
                 "
                 @click="currentHelp === 3 ? (currentHelp = -1) : (currentHelp = 3)"
               >
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify"
+                <VIcon
                   icon="lucide:help-circle"
                 />
               </button>
@@ -514,9 +496,7 @@ const validateStep = async () => {
                     type="checkbox"
                   />
                   <div class="indicator">
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify"
+                    <VIcon
                       icon="lucide:check"
                     />
                   </div>
@@ -536,9 +516,7 @@ const validateStep = async () => {
                     type="checkbox"
                   />
                   <div class="indicator">
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify"
+                    <VIcon
                       icon="lucide:check"
                     />
                   </div>
@@ -558,9 +536,7 @@ const validateStep = async () => {
                     type="checkbox"
                   />
                   <div class="indicator">
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify"
+                    <VIcon
                       icon="lucide:check"
                     />
                   </div>
@@ -580,9 +556,7 @@ const validateStep = async () => {
                     type="checkbox"
                   />
                   <div class="indicator">
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify"
+                    <VIcon
                       icon="lucide:check"
                     />
                   </div>
@@ -602,9 +576,7 @@ const validateStep = async () => {
                     type="checkbox"
                   />
                   <div class="indicator">
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify"
+                    <VIcon
                       icon="lucide:check"
                     />
                   </div>
@@ -624,9 +596,7 @@ const validateStep = async () => {
                     type="checkbox"
                   />
                   <div class="indicator">
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify"
+                    <VIcon
                       icon="lucide:check"
                     />
                   </div>
@@ -660,9 +630,7 @@ const validateStep = async () => {
                 "
                 @click="currentHelp === 4 ? (currentHelp = -1) : (currentHelp = 4)"
               >
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify"
+                <VIcon
                   icon="lucide:help-circle"
                 />
               </button>
@@ -854,9 +822,7 @@ const validateStep = async () => {
               @keydown.space.prevent="currentHelp = -1"
               @click="currentHelp = -1"
             >
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
+              <VIcon
                 icon="lucide:x"
               />
             </button>
@@ -869,25 +835,19 @@ const validateStep = async () => {
             <div class="list-wrap">
               <ul>
                 <li>
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:check"
                   />
                   <span>Some nice list item</span>
                 </li>
                 <li>
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:check"
                   />
                   <span>Some nice list item</span>
                 </li>
                 <li>
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:check"
                   />
                   <span>Some nice list item</span>
@@ -906,9 +866,7 @@ const validateStep = async () => {
               @keydown.space.prevent="currentHelp = -1"
               @click="currentHelp = -1"
             >
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
+              <VIcon
                 icon="lucide:x"
               />
             </button>
@@ -921,17 +879,13 @@ const validateStep = async () => {
             <div class="list-wrap">
               <ul>
                 <li>
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:check"
                   />
                   <span>Some nice list item</span>
                 </li>
                 <li>
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:check"
                   />
                   <span>Some nice list item</span>
@@ -950,9 +904,7 @@ const validateStep = async () => {
               @keydown.space.prevent="currentHelp = -1"
               @click="currentHelp = -1"
             >
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
+              <VIcon
                 icon="lucide:x"
               />
             </button>
@@ -965,25 +917,19 @@ const validateStep = async () => {
             <div class="list-wrap">
               <ul>
                 <li>
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:check"
                   />
                   <span>Some nice list item</span>
                 </li>
                 <li>
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:check"
                   />
                   <span>Some nice list item</span>
                 </li>
                 <li>
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:check"
                   />
                   <span>Some nice list item</span>
@@ -1002,9 +948,7 @@ const validateStep = async () => {
               @keydown.space.prevent="currentHelp = -1"
               @click="currentHelp = -1"
             >
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
+              <VIcon
                 icon="lucide:x"
               />
             </button>
@@ -1017,17 +961,13 @@ const validateStep = async () => {
             <div class="list-wrap">
               <ul>
                 <li>
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:check"
                   />
                   <span>Some nice list item</span>
                 </li>
                 <li>
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:check"
                   />
                   <span>Some nice list item</span>
@@ -1046,9 +986,7 @@ const validateStep = async () => {
               @keydown.space.prevent="currentHelp = -1"
               @click="currentHelp = -1"
             >
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
+              <VIcon
                 icon="lucide:x"
               />
             </button>
@@ -1061,17 +999,13 @@ const validateStep = async () => {
             <div class="list-wrap">
               <ul>
                 <li>
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:check"
                   />
                   <span>Some nice list item</span>
                 </li>
                 <li>
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:check"
                   />
                   <span>Some nice list item</span>

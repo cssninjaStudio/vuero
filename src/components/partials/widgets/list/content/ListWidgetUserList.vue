@@ -32,9 +32,7 @@ const props = withDefaults(
           class="go-icon is-down"
           :data-content="user.progress + '%'"
         >
-          <iconify-icon
-            aria-hidden="true"
-            class="iconify"
+          <VIcon
             icon="lucide:chevron-right"
           />
         </a>
@@ -44,9 +42,7 @@ const props = withDefaults(
           class="go-icon is-up"
           :data-content="'+' + user.progress + '%'"
         >
-          <iconify-icon
-            aria-hidden="true"
-            class="iconify"
+          <VIcon
             icon="lucide:chevron-right"
           />
         </a>

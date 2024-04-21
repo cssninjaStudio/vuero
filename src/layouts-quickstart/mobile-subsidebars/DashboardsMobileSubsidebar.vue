@@ -12,9 +12,7 @@
         <VCollapseLinks>
           <template #header>
             Personal
-            <iconify-icon
-              aria-hidden="true"
-              class="iconify"
+            <VIcon
               icon="lucide:chevron-right"
             />
           </template>

@@ -50,14 +50,10 @@ const localFlagSrc = computed(() => {
       @keydown.space.prevent="isOpen = !isOpen"
       @click="isOpen = !isOpen"
     >
-      <iconify-icon
-        aria-hidden="true"
-        class="iconify"
+      <VIcon
         icon="lucide:menu"
       />
-      <iconify-icon
-        aria-hidden="true"
-        class="iconify"
+      <VIcon
         icon="lucide:x"
       />
     </a>
@@ -90,9 +86,7 @@ const localFlagSrc = computed(() => {
         to="/sidebar/layouts/profile-notifications"
         class="menu-item is-flex"
       >
-        <iconify-icon
-          aria-hidden="true"
-          class="iconify"
+        <VIcon
           icon="lucide:bell"
         />
       </VLink>
@@ -103,9 +97,7 @@ const localFlagSrc = computed(() => {
         @keydown.space.prevent="panels.setActive('activity')"
         @click="panels.setActive('activity')"
       >
-        <iconify-icon
-          aria-hidden="true"
-          class="iconify"
+        <VIcon
           icon="lucide:grid"
         />
       </a>

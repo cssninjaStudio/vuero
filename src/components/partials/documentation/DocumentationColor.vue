@@ -102,9 +102,9 @@ function updateColor({ colors }: any) {
           <template #format-switch-button>
             <span class="sr-only">Switch format</span>
 
-            <iconify-icon
-              class="iconify rem-120 is-clickable"
-              aria-hidden="true"
+            <VIcon
+              class="rem-120 is-clickable"
+
               icon="fluent:chevron-up-down-20-filled"
             />
           </template>

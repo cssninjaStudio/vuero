@@ -24,9 +24,7 @@ const props = withDefaults(
           :rounded="props.rounded"
           :color="topic.color"
         >
-          <iconify-icon
-            aria-hidden="true"
-            class="iconify"
+          <VIcon
             :icon="topic.icon"
           />
         </VIconBox>

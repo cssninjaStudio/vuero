@@ -18,9 +18,7 @@ const { onceImageErrored } = useImageError()
         @click="dropdown.toggle"
         @keydown.space.prevent="dropdown.toggle"
       >
-        <iconify-icon
-          aria-hidden="true"
-          class="iconify"
+        <VIcon
           icon="lucide:bell"
         />
         <span class="new-indicator pulsate" />

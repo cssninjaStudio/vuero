@@ -419,7 +419,7 @@ function onCallClick(row: any) {
           <template v-if="row?.id === incomingCallerId">
             <VTags class="mt-2 mb-0">
               <VTag color="primary" outlined>
-                <iconify-icon class="iconify is-inline mr-2" icon="lucide:send" />
+                <VIcon class="is-inline mr-2" icon="lucide:send" />
                 Calling...
               </VTag>
             </VTags>
@@ -445,7 +445,7 @@ function onCallClick(row: any) {
                       color="danger"
                       @click="() => onCallClick(row)"
                     >
-                      <iconify-icon class="iconify is-inline mr-2" icon="lucide:phone-off" />
+                      <VIcon class="is-inline mr-2" icon="lucide:phone-off" />
                       Cancel call
                     </VButton>
                     <VButton
@@ -455,7 +455,7 @@ function onCallClick(row: any) {
                       :loading="row.id === incomingCallerId"
                       @click="() => onCallClick(row)"
                     >
-                      <iconify-icon class="iconify is-inline mr-2" icon="lucide:phone" />
+                      <VIcon class="is-inline mr-2" icon="lucide:phone" />
                       Call {{ row?.name }}
                     </VButton>
                   </VFlex>

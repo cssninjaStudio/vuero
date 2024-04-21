@@ -71,9 +71,7 @@ const {
           class="button v-button is-primary is-raised is-rounded is-fullwidth"
           @click="() => emit('addConversation')"
         >
-          <iconify-icon
-            aria-hidden="true"
-            class="iconify"
+          <VIcon
             icon="lucide:plus"
           />
           <span>New Conversation</span>

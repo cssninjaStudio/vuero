@@ -290,9 +290,7 @@ const options = ref(['All Flights', 'All Options'])
                   placeholder="Search..."
                 >
                 <button class="searcv-button">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:search"
                   />
                 </button>
@@ -313,14 +311,12 @@ const options = ref(['All Flights', 'All Options'])
             <div class="widget-toolbar">
               <div class="left">
                 <a class="action-icon">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify ltr-hidden"
+                  <VIcon
+                    class="ltr-hidden"
                     icon="lucide:chevron-right"
                   />
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify rtl-hidden"
+                  <VIcon
+                    class="rtl-hidden"
                     icon="lucide:chevron-left"
                   />
                 </a>
@@ -330,14 +326,12 @@ const options = ref(['All Flights', 'All Options'])
               </div>
               <div class="right">
                 <a class="action-icon">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify rtl-hidden"
+                  <VIcon
+                    class="rtl-hidden"
                     icon="lucide:chevron-right"
                   />
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify ltr-hidden"
+                  <VIcon
+                    class="ltr-hidden"
                     icon="lucide:chevron-left"
                   />
                 </a>

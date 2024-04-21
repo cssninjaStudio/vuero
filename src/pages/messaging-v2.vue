@@ -176,9 +176,7 @@ useHead({
                 aria-label="Search"
               >
               <div class="form-icon">
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify"
+                <VIcon
                   icon="lucide:search"
                 />
               </div>
@@ -201,9 +199,7 @@ useHead({
               @keydown.space.prevent="panels.setActive('activity')"
               @click="panels.setActive('activity')"
             >
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
+              <VIcon
                 icon="lucide:grid"
               />
             </a>
@@ -229,9 +225,7 @@ useHead({
                   @error.once="onceImageErrored(150)"
                 >
               </div>
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
+              <VIcon
                 icon="lucide:chevron-down"
               />
             </div>
@@ -249,33 +243,25 @@ useHead({
                   href="#"
                   class="dropdown-item"
                 >
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:user"
                   />
                   <span>Profile</span>
                 </a>
                 <a class="dropdown-item">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:edit-2"
                   />
                   <span>Edit Profile</span>
                 </a>
                 <a class="dropdown-item">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:box"
                   />
                   <span>Projects</span>
                 </a>
                 <a class="dropdown-item">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:settings"
                   />
                   <span>Settings</span>
@@ -285,9 +271,7 @@ useHead({
                   href="#"
                   class="dropdown-item"
                 >
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:log-out"
                   />
                   <span>Sign Out</span>
@@ -415,9 +399,7 @@ useHead({
                     aria-haspopup="true"
                     @click="dropdown2.toggle"
                   >
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify"
+                    <VIcon
                       icon="lucide:plus"
                     />
                   </div>
@@ -428,9 +410,7 @@ useHead({
                 >
                   <div class="dropdown-content">
                     <a class="dropdown-item">
-                      <iconify-icon
-                        aria-hidden="true"
-                        class="iconify"
+                      <VIcon
                         icon="lucide:video"
                       />
                       <div class="meta">
@@ -442,9 +422,7 @@ useHead({
                       href="#"
                       class="dropdown-item kill-drop v-modal-trigger"
                     >
-                      <iconify-icon
-                        aria-hidden="true"
-                        class="iconify"
+                      <VIcon
                         icon="lucide:image"
                       />
                       <div class="meta">
@@ -456,9 +434,7 @@ useHead({
                       href="#"
                       class="dropdown-item kill-drop v-modal-trigger"
                     >
-                      <iconify-icon
-                        aria-hidden="true"
-                        class="iconify"
+                      <VIcon
                         icon="lucide:link"
                       />
                       <div class="meta">
@@ -471,9 +447,7 @@ useHead({
                       href="#"
                       class="dropdown-item kill-drop v-modal-trigger"
                     >
-                      <iconify-icon
-                        aria-hidden="true"
-                        class="iconify"
+                      <VIcon
                         icon="lucide:file"
                       />
                       <div class="meta">
@@ -487,9 +461,7 @@ useHead({
             </div>
             <div class="add-emoji">
               <div class="button">
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify"
+                <VIcon
                   icon="lucide:smile"
                 />
               </div>

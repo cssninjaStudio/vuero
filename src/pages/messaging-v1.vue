@@ -170,9 +170,7 @@ useHead({
                       @keydown.space.prevent="chat.setAddConversationOpen(false)"
                       @click="chat.setAddConversationOpen(false)"
                     >
-                      <iconify-icon
-                        aria-hidden="true"
-                        class="iconify"
+                      <VIcon
                         icon="lucide:x"
                       />
                     </div>

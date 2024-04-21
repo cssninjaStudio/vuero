@@ -9,19 +9,19 @@ an image inside the component.
 ```vue
 <template>
   <VSnack title="Support" image="/demo/photos/misc/buoy.jpg">
-    <iconify-icon class="iconify" icon="lucide:x" />
+    <VIcon icon="lucide:x" />
   </VSnack>
   <VSnack title="Metamovies" image="/images/icons/logos/metamovies.svg">
-    <iconify-icon class="iconify" icon="lucide:x" />
+    <VIcon icon="lucide:x" />
   </VSnack>
   <VSnack title="Corporate" image="/demo/avatars/7.jpg">
-    <iconify-icon class="iconify" icon="lucide:x" />
+    <VIcon icon="lucide:x" />
   </VSnack>
   <VSnack title="English" image="/images/icons/flags/united-states-of-america.svg">
-    <iconify-icon class="iconify" icon="lucide:x" />
+    <VIcon icon="lucide:x" />
   </VSnack>
   <VSnack title="Slicer" image="/images/icons/logos/slicer.svg">
-    <iconify-icon class="iconify" icon="lucide:x" />
+    <VIcon icon="lucide:x" />
   </VSnack>
 </template>
 ```
@@ -32,19 +32,19 @@ an image inside the component.
 
 <div class="snacks">
   <VSnack title="Support" image="/demo/photos/misc/buoy.jpg">
-    <iconify-icon class="iconify" icon="lucide:x"/>
+    <VIcon icon="lucide:x"/>
   </VSnack>
   <VSnack title="Metamovies" image="/images/icons/logos/metamovies.svg">
-    <iconify-icon class="iconify" icon="lucide:x"/>
+    <VIcon icon="lucide:x"/>
   </VSnack>
   <VSnack title="Corporate" image="/demo/avatars/7.jpg">
-    <iconify-icon class="iconify" icon="lucide:x"/>
+    <VIcon icon="lucide:x"/>
   </VSnack>
   <VSnack title="English" image="/images/icons/flags/united-states-of-america.svg">
-    <iconify-icon class="iconify" icon="lucide:x"/>
+    <VIcon icon="lucide:x"/>
   </VSnack>
   <VSnack title="Slicer" image="/images/icons/logos/slicer.svg">
-    <iconify-icon class="iconify" icon="lucide:x"/>
+    <VIcon icon="lucide:x"/>
   </VSnack>
 </div>
 

@@ -22,9 +22,7 @@ const modelValue = defineModel<string>()
           placeholder="Search records..."
         >
         <div class="form-icon">
-          <iconify-icon
-            aria-hidden="true"
-            class="iconify"
+          <VIcon
             icon="lucide:search"
           />
         </div>
@@ -36,9 +34,7 @@ const modelValue = defineModel<string>()
           @keydown.space.prevent="modelValue = ''"
           @click="modelValue = ''"
         >
-          <iconify-icon
-            aria-hidden="true"
-            class="iconify"
+          <VIcon
             icon="lucide:x"
           />
         </div>

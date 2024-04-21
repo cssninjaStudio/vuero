@@ -14,35 +14,35 @@ the component background white.
     white
     image="/demo/photos/misc/buoy.jpg"
   >
-    <iconify-icon class="iconify" icon="lucide:x" />
+    <VIcon icon="lucide:x" />
   </VSnack>
   <VSnack
     title="Metamovies"
     white
     image="/images/icons/logos/metamovies.svg"
   >
-    <iconify-icon class="iconify" icon="lucide:x" />
+    <VIcon icon="lucide:x" />
   </VSnack>
   <VSnack
     title="Corporate"
     white
     image="/demo/avatars/7.jpg"
   >
-    <iconify-icon class="iconify" icon="lucide:x" />
+    <VIcon icon="lucide:x" />
   </VSnack>
   <VSnack
     title="English"
     white
     image="/images/icons/flags/united-states-of-america.svg"
   >
-    <iconify-icon class="iconify" icon="lucide:x" />
+    <VIcon icon="lucide:x" />
   </VSnack>
   <VSnack
     title="Slicer"
     white
     image="/images/icons/logos/slicer.svg"
   >
-    <iconify-icon class="iconify" icon="lucide:x" />
+    <VIcon icon="lucide:x" />
   </VSnack>
 </template>
 ```
@@ -53,19 +53,19 @@ the component background white.
 
 <div class="snacks">
     <VSnack title="Support" white  image="/demo/photos/misc/buoy.jpg">
-        <iconify-icon class="iconify" icon="lucide:x"/>
+        <VIcon icon="lucide:x"/>
     </VSnack>
     <VSnack title="Metamovies" white  image="/images/icons/logos/metamovies.svg">
-        <iconify-icon class="iconify" icon="lucide:x"/>
+        <VIcon icon="lucide:x"/>
     </VSnack>
     <VSnack title="Corporate" white  image="/demo/avatars/7.jpg">
-        <iconify-icon class="iconify" icon="lucide:x"/>
+        <VIcon icon="lucide:x"/>
     </VSnack>
     <VSnack title="English" white  image="/images/icons/flags/united-states-of-america.svg">
-        <iconify-icon class="iconify" icon="lucide:x"/>
+        <VIcon icon="lucide:x"/>
     </VSnack>
     <VSnack title="Slicer" white  image="/images/icons/logos/slicer.svg">
-        <iconify-icon class="iconify" icon="lucide:x"/>
+        <VIcon icon="lucide:x"/>
     </VSnack>
 </div>
 

@@ -72,8 +72,7 @@ const props = defineProps<{
           <div class="image-actions">
             <div class="actions-inner">
               <div class="action download">
-                <iconify-icon
-                  class="iconify"
+                <VIcon
                   icon="lucide:download"
                 />
               </div>
@@ -82,8 +81,7 @@ const props = defineProps<{
                 class="action messaging-popup"
                 aria-label="Maximize"
               >
-                <iconify-icon
-                  class="iconify"
+                <VIcon
                   icon="lucide:maximize"
                 />
               </a>

@@ -46,9 +46,7 @@ const props = defineProps<{
           class="popover-icon"
           :href="props.stack.homepage"
         >
-          <iconify-icon
-            aria-hidden="true"
-            class="iconify"
+          <VIcon
             icon="lucide:link"
           />
         </a>
@@ -57,9 +55,7 @@ const props = defineProps<{
           class="popover-icon"
           :href="props.stack.github"
         >
-          <iconify-icon
-            aria-hidden="true"
-            class="iconify"
+          <VIcon
             icon="lucide:github"
           />
         </a>

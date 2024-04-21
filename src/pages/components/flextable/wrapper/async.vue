@@ -487,8 +487,8 @@ function onCallClick(row: any) {
                       color="primary"
                       outlined
                     >
-                      <iconify-icon
-                        class="iconify is-inline mr-2"
+                      <VIcon
+                        class="is-inline mr-2"
                         icon="lucide:send"
                       />
                       Calling...
@@ -514,8 +514,8 @@ function onCallClick(row: any) {
                             color="danger"
                             @click="() => onCallClick(row)"
                           >
-                            <iconify-icon
-                              class="iconify is-inline mr-2"
+                            <VIcon
+                              class="is-inline mr-2"
                               icon="lucide:phone-off"
                             />
                             Cancel call
@@ -527,8 +527,8 @@ function onCallClick(row: any) {
                             :loading="row.id === incomingCallerId"
                             @click="() => onCallClick(row)"
                           >
-                            <iconify-icon
-                              class="iconify is-inline mr-2"
+                            <VIcon
+                              class="is-inline mr-2"
                               icon="lucide:phone"
                             />
                             Call {{ row.name }}

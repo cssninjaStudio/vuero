@@ -42,14 +42,12 @@ watch(locale, () => {
           @keydown.space.prevent="panels.close()"
           @click="panels.close()"
         >
-          <iconify-icon
-            aria-hidden="true"
-            class="iconify rtl-hidden"
+          <VIcon
+            class="rtl-hidden"
             icon="lucide:chevron-right"
           />
-          <iconify-icon
-            aria-hidden="true"
-            class="iconify ltr-hidden"
+          <VIcon
+            class="ltr-hidden"
             icon="lucide:chevron-left"
           />
         </a>
@@ -71,9 +69,7 @@ watch(locale, () => {
                   alt=""
                 >
                 <div class="indicator">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:check"
                   />
                 </div>
@@ -95,9 +91,7 @@ watch(locale, () => {
                   alt=""
                 >
                 <div class="indicator">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:check"
                   />
                 </div>
@@ -119,9 +113,7 @@ watch(locale, () => {
                   alt=""
                 >
                 <div class="indicator">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:check"
                   />
                 </div>
@@ -143,9 +135,7 @@ watch(locale, () => {
                   alt=""
                 >
                 <div class="indicator">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:check"
                   />
                 </div>
@@ -167,9 +157,7 @@ watch(locale, () => {
                   alt=""
                 >
                 <div class="indicator">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:check"
                   />
                 </div>
@@ -191,9 +179,7 @@ watch(locale, () => {
                   alt=""
                 >
                 <div class="indicator">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:check"
                   />
                 </div>

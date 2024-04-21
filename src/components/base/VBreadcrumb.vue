@@ -55,11 +55,7 @@ const props = withDefaults(defineProps<VBreadcrumbsProps>(), {
               class="icon is-small"
               :class="[item.hideLabel && props.withIcons && !!item.icon && 'is-solo']"
             >
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
-                :icon="item.icon"
-              />
+              <VIcon :icon="item.icon" />
             </span>
             <meta
               v-if="item.hideLabel && props.withIcons && !!item.icon"
@@ -95,11 +91,7 @@ const props = withDefaults(defineProps<VBreadcrumbsProps>(), {
               class="icon is-small"
               :class="[item.hideLabel && props.withIcons && !!item.icon && 'is-solo']"
             >
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
-                :icon="item.icon"
-              />
+              <VIcon :icon="item.icon" />
             </span>
             <meta
               v-if="item.hideLabel && props.withIcons && !!item.icon"
@@ -133,11 +125,7 @@ const props = withDefaults(defineProps<VBreadcrumbsProps>(), {
               class="icon is-small"
               :class="[item.hideLabel && props.withIcons && !!item.icon && 'is-solo']"
             >
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
-                :icon="item.icon"
-              />
+              <VIcon :icon="item.icon" />
             </span>
             <meta
               v-if="item.hideLabel && props.withIcons && item.icon"

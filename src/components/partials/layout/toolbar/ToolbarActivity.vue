@@ -11,9 +11,7 @@ const panels = usePanels()
     @keydown.space.prevent="panels.setActive('activity')"
     @click="panels.setActive('activity')"
   >
-    <iconify-icon
-      aria-hidden="true"
-      class="iconify"
+    <VIcon
       icon="lucide:grid"
     />
   </a>

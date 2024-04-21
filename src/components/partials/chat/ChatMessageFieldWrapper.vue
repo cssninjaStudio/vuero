@@ -17,9 +17,7 @@ const dropdown = useDropdown(dropdownElement)
               aria-haspopup="true"
               @click="dropdown.toggle"
             >
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
+              <VIcon
                 icon="lucide:plus"
               />
             </div>
@@ -30,9 +28,7 @@ const dropdown = useDropdown(dropdownElement)
           >
             <div class="dropdown-content">
               <a class="dropdown-item">
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify"
+                <VIcon
                   icon="lucide:video"
                 />
                 <div class="meta">
@@ -44,9 +40,7 @@ const dropdown = useDropdown(dropdownElement)
                 href="#"
                 class="dropdown-item kill-drop v-modal-trigger"
               >
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify"
+                <VIcon
                   icon="lucide:image"
                 />
                 <div class="meta">
@@ -58,9 +52,7 @@ const dropdown = useDropdown(dropdownElement)
                 href="#"
                 class="dropdown-item kill-drop v-modal-trigger"
               >
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify"
+                <VIcon
                   icon="lucide:link"
                 />
                 <div class="meta">
@@ -73,9 +65,7 @@ const dropdown = useDropdown(dropdownElement)
                 href="#"
                 class="dropdown-item kill-drop v-modal-trigger"
               >
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify"
+                <VIcon
                   icon="lucide:file"
                 />
                 <div class="meta">
@@ -89,9 +79,7 @@ const dropdown = useDropdown(dropdownElement)
       </div>
       <div class="add-emoji">
         <div class="button">
-          <iconify-icon
-            aria-hidden="true"
-            class="iconify"
+          <VIcon
             icon="lucide:smile"
           />
         </div>

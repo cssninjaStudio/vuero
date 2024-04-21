@@ -61,17 +61,13 @@ import { courses, files, students } from '/@src/data/dashboards/course'
               <a class="is-dark-primary">Week 6 lecture recording</a>
               <div class="block-stats">
                 <span>
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:clock"
                   />
                   <small>{{ course.duration }}</small>
                 </span>
                 <span>
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:message-circle"
                   />
                   <small>{{ course.comments }}</small>
@@ -82,9 +78,7 @@ import { courses, files, students } from '/@src/data/dashboards/course'
               <a class="is-dark-primary">{{ course.actionLabel }}</a>
               <div class="block-stats">
                 <span>
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:calendar"
                   />
                   <small>{{ course.actionText }}</small>
@@ -162,9 +156,7 @@ import { courses, files, students } from '/@src/data/dashboards/course'
                   placeholder="Search students..."
                 >
                 <div class="form-icon">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:search"
                   />
                 </div>

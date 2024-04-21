@@ -14,9 +14,7 @@ const { onceImageErrored } = useImageError()
         class="trigger conversations-mobile-trigger h-only-mobile h-only-tablet-p h-only-tablet-l"
         @click="emit('toggleMobileConversation')"
       >
-        <iconify-icon
-          aria-hidden="true"
-          class="iconify"
+        <VIcon
           icon="lucide:menu"
         />
       </button>

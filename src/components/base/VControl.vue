@@ -48,10 +48,6 @@ const props = defineProps({
   },
 })
 
-const isIconify = computed(() => {
-  return props.icon && props.icon.indexOf(':') !== -1
-})
-
 const { field, id } = useVFieldContext({
   id: props.id,
   inherit: !props.subcontrol,
@@ -84,37 +80,17 @@ const controlClasees = computed(() => {
   <div :class="controlClasees">
     <slot v-bind="{ field, id }" />
 
-    <template v-if="props.icon">
-      <VLabel
-        v-if="isIconify"
-        class="form-icon"
-      >
-        <iconify-icon
-          aria-hidden="true"
-          :icon="props.icon"
-          class="iconify"
-        />
-      </VLabel>
-      <VLabel
-        v-else
-        class="form-icon"
-      >
-        <i
-          aria-hidden="true"
-          :class="props.icon"
-        />
-      </VLabel>
-    </template>
+    <VIcon
+      v-if="props.icon"
+      :icon="props.icon"
+      class="form-icon"
+    />
 
     <VLabel
       v-if="isValid"
       class="validation-icon is-success"
     >
-      <iconify-icon
-        aria-hidden="true"
-        icon="lucide:check"
-        class="iconify"
-      />
+      <VIcon icon="lucide:check" />
     </VLabel>
     <a
       v-else-if="hasError"
@@ -124,11 +100,7 @@ const controlClasees = computed(() => {
       @click.prevent="() => field?.resetField?.()"
       @keyup.enter.prevent="() => field?.resetField?.()"
     >
-      <iconify-icon
-        aria-hidden="true"
-        icon="lucide:x"
-        class="iconify"
-      />
+      <VIcon icon="lucide:x" />
     </a>
 
     <slot

@@ -224,9 +224,7 @@ onUnmounted(() => {
                 @keydown.space.prevent="activeSection = 'cart'"
                 @click="activeSection = 'cart'"
               >
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify"
+                <VIcon
                   icon="lucide:shopping-cart"
                 />
               </a>
@@ -240,9 +238,7 @@ onUnmounted(() => {
                 @keydown.space.prevent="activeSection = 'activity'"
                 @click="activeSection = 'activity'"
               >
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify"
+                <VIcon
                   icon="lucide:activity"
                 />
               </a>
@@ -256,9 +252,7 @@ onUnmounted(() => {
                 @keydown.space.prevent="activeSection = 'address'"
                 @click="activeSection = 'address'"
               >
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify"
+                <VIcon
                   icon="lucide:map-pin"
                 />
               </a>
@@ -272,9 +266,7 @@ onUnmounted(() => {
                 @keydown.space.prevent="activeSection = 'settings'"
                 @click="activeSection = 'settings'"
               >
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify"
+                <VIcon
                   icon="lucide:settings"
                 />
               </a>

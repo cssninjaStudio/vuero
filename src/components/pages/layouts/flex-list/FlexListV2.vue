@@ -155,9 +155,7 @@ const filteredData = computed(() => {
                     <span class="item-name dark-inverted">{{ item.name }}</span>
                     <span class="item-meta">
                       <span>
-                        <iconify-icon
-                          aria-hidden="true"
-                          class="iconify"
+                        <VIcon
                           icon="lucide:clock"
                         />{{ item.duration }}</span>
                     </span>

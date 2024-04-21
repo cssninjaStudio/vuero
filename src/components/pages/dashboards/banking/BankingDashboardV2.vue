@@ -61,9 +61,7 @@ const goto = (index: number) => {
               <div class="controls">
                 <button class="button is-large">
                   <span class="icon is-medium">
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify"
+                    <VIcon
                       icon="lucide:plus"
                     />
                   </span>
@@ -243,9 +241,8 @@ const goto = (index: number) => {
                   </div>
                   <div class="stat-block">
                     <div class="stat-icon is-up">
-                      <iconify-icon
-                        aria-hidden="true"
-                        class="iconify rtl-reflect"
+                      <VIcon
+                        class="rtl-reflect"
                         icon="lucide:arrow-right"
                       />
                     </div>
@@ -260,9 +257,8 @@ const goto = (index: number) => {
                   </div>
                   <div class="stat-block">
                     <div class="stat-icon is-down">
-                      <iconify-icon
-                        aria-hidden="true"
-                        class="iconify rtl-reflect"
+                      <VIcon
+                        class="rtl-reflect"
                         icon="lucide:arrow-right"
                       />
                     </div>

@@ -12,9 +12,8 @@ const panels = usePanels()
     @keydown.space.prevent="panels.setActive('search')"
     @click="panels.setActive('search')"
   >
-    <iconify-icon
-      aria-hidden="true"
-      class="iconify sidebar-svg"
+    <VIcon
+      class="sidebar-svg"
       icon="lucide:search"
     />
   </a>

@@ -30,9 +30,8 @@ const emit = defineEmits(['rename', 'collapse'])
       <hr class="dropdown-divider">
       <div class="dropdown-item has-child">
         Settings
-        <iconify-icon
-          aria-hidden="true"
-          class="iconify rtl-reflect"
+        <VIcon
+          class="rtl-reflect"
           icon="lucide:chevron-right"
         />
 

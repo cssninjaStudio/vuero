@@ -61,9 +61,7 @@ wizard.setStep({
                   </template>
                   <template #action>
                     <div class="checkmark">
-                      <iconify-icon
-                        aria-hidden="true"
-                        class="iconify"
+                      <VIcon
                         icon="lucide:check"
                       />
                     </div>

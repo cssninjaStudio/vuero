@@ -35,9 +35,7 @@ const wizard = useWizard()
           @click="toggle"
           @keydown.space.prevent="toggle"
         >
-          <iconify-icon
-            aria-hidden="true"
-            class="iconify"
+          <VIcon
             icon="lucide:chevron-down"
           />
         </div>
@@ -142,9 +140,7 @@ const wizard = useWizard()
             @error.once="onceImageErrored(150)"
           >
         </div>
-        <iconify-icon
-          aria-hidden="true"
-          class="iconify"
+        <VIcon
           icon="lucide:chevron-down"
         />
       </div>
@@ -162,33 +158,25 @@ const wizard = useWizard()
             href="#"
             class="dropdown-item"
           >
-            <iconify-icon
-              aria-hidden="true"
-              class="iconify"
+            <VIcon
               icon="lucide:user"
             />
             <span>Profile</span>
           </a>
           <a class="dropdown-item">
-            <iconify-icon
-              aria-hidden="true"
-              class="iconify"
+            <VIcon
               icon="lucide:edit-2"
             />
             <span>Edit Profile</span>
           </a>
           <a class="dropdown-item">
-            <iconify-icon
-              aria-hidden="true"
-              class="iconify"
+            <VIcon
               icon="lucide:box"
             />
             <span>Projects</span>
           </a>
           <a class="dropdown-item">
-            <iconify-icon
-              aria-hidden="true"
-              class="iconify"
+            <VIcon
               icon="lucide:settings"
             />
             <span>Settings</span>
@@ -198,9 +186,7 @@ const wizard = useWizard()
             href="#"
             class="dropdown-item"
           >
-            <iconify-icon
-              aria-hidden="true"
-              class="iconify"
+            <VIcon
               icon="lucide:log-out"
             />
             <span>Sign Out</span>

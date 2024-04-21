@@ -13,9 +13,7 @@ const { onceImageErrored } = useImageError()
         >
         <button class="button is-circle">
           <span class="icon is-small">
-            <iconify-icon
-              aria-hidden="true"
-              class="iconify"
+            <VIcon
               icon="lucide:plus"
             />
           </span>

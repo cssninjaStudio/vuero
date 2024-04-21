@@ -148,9 +148,7 @@ onMounted(() => {
               @keydown.space.prevent="isColumnNewCollapsed = false"
               @click="isColumnNewCollapsed = false"
             >
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
+              <VIcon
                 icon="lucide:plus"
               />
             </div>
@@ -266,9 +264,7 @@ onMounted(() => {
               @keydown.space.prevent="isColumnProgressCollapsed = false"
               @click="isColumnProgressCollapsed = false"
             >
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
+              <VIcon
                 icon="lucide:plus"
               />
             </div>
@@ -329,9 +325,7 @@ onMounted(() => {
                   </h4>
                   <div class="kanban-card-stats">
                     <span>
-                      <iconify-icon
-                        aria-hidden="true"
-                        class="iconify"
+                      <VIcon
                         icon="lucide:clock"
                       />
                       {{ task.dueDate }}
@@ -372,9 +366,7 @@ onMounted(() => {
               @keydown.space.prevent="isColumnReadyCollapsed = false"
               @click="isColumnReadyCollapsed = false"
             >
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
+              <VIcon
                 icon="lucide:plus"
               />
             </div>
@@ -441,9 +433,7 @@ onMounted(() => {
                   </h4>
                   <div class="kanban-card-stats">
                     <span>
-                      <iconify-icon
-                        aria-hidden="true"
-                        class="iconify"
+                      <VIcon
                         icon="lucide:clock"
                       />
                       {{ task.dueDate }}
@@ -484,9 +474,7 @@ onMounted(() => {
               @keydown.space.prevent="isColumnReviewCollapsed = false"
               @click="isColumnReviewCollapsed = false"
             >
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
+              <VIcon
                 icon="lucide:plus"
               />
             </div>
@@ -547,9 +535,7 @@ onMounted(() => {
                   </h4>
                   <div class="kanban-card-stats">
                     <span>
-                      <iconify-icon
-                        aria-hidden="true"
-                        class="iconify"
+                      <VIcon
                         icon="lucide:clock"
                       />
                       {{ task.dueDate }}
@@ -590,9 +576,7 @@ onMounted(() => {
               @keydown.space.prevent="isColumnCompletedCollapsed = false"
               @click="isColumnCompletedCollapsed = false"
             >
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
+              <VIcon
                 icon="lucide:plus"
               />
             </div>
@@ -653,9 +637,7 @@ onMounted(() => {
                   </h4>
                   <div class="kanban-card-stats">
                     <span>
-                      <iconify-icon
-                        aria-hidden="true"
-                        class="iconify"
+                      <VIcon
                         icon="lucide:clock"
                       />
                       {{ task.dueDate }}

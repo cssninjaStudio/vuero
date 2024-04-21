@@ -55,14 +55,12 @@ function getAvatarData(user: UserPopover): VAvatarProps {
           @keydown.space.prevent="panels.close()"
           @click="panels.close()"
         >
-          <iconify-icon
-            aria-hidden="true"
-            class="iconify ltr-hidden"
+          <VIcon
+            class="ltr-hidden"
             icon="lucide:chevron-right"
           />
-          <iconify-icon
-            aria-hidden="true"
-            class="iconify rtl-hidden"
+          <VIcon
+            class="rtl-hidden"
             icon="lucide:chevron-left"
           />
         </a>
@@ -111,9 +109,7 @@ function getAvatarData(user: UserPopover): VAvatarProps {
                   color="info"
                   rounded
                 >
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:chrome"
                   />
                 </VIconBox>
@@ -130,9 +126,7 @@ function getAvatarData(user: UserPopover): VAvatarProps {
                   color="orange"
                   rounded
                 >
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:tv"
                   />
                 </VIconBox>
@@ -149,9 +143,7 @@ function getAvatarData(user: UserPopover): VAvatarProps {
                   color="green"
                   rounded
                 >
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:twitter"
                   />
                 </VIconBox>

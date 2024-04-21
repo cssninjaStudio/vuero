@@ -35,10 +35,6 @@ const props = withDefaults(defineProps<VIconWrapProps>(), {
 })
 
 const { onceImageErrored } = useImageError()
-
-const isIconify = computed(() => {
-  return props.icon && props.icon.indexOf(':') !== -1
-})
 </script>
 
 <template>
@@ -64,17 +60,7 @@ const isIconify = computed(() => {
       alt=""
       @error.once="onceImageErrored(32)"
     >
-    <iconify-icon
-      v-else-if="isIconify"
-      aria-hidden="true"
-      class="iconify"
-      :icon="props.icon"
-    />
-    <i
-      v-else-if="props.icon"
-      aria-hidden="true"
-      :class="props.icon"
-    />
+    <VIcon :icon="props.icon" />
     <slot name="after" />
   </div>
 </template>

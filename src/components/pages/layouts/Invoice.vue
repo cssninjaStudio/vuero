@@ -97,30 +97,22 @@ const totalColumns = {
       <div class="right">
         <div class="controls">
           <a class="action">
-            <iconify-icon
-              aria-hidden="true"
-              class="iconify"
+            <VIcon
               icon="lucide:printer"
             />
           </a>
           <a class="action">
-            <iconify-icon
-              aria-hidden="true"
-              class="iconify"
+            <VIcon
               icon="lucide:download-cloud"
             />
           </a>
           <a class="action">
-            <iconify-icon
-              aria-hidden="true"
-              class="iconify"
+            <VIcon
               icon="lucide:mail"
             />
           </a>
           <a class="action">
-            <iconify-icon
-              aria-hidden="true"
-              class="iconify"
+            <VIcon
               icon="lucide:arrow-left"
             />
           </a>

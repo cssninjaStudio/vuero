@@ -24,10 +24,6 @@ function placeholderHandler(event: Event) {
   const target = event.target as HTMLImageElement
   target.src = props.placeholder
 }
-
-const isIconify = computed(() => {
-  return props.icon && props.icon.indexOf(':') !== -1
-})
 </script>
 
 <template>
@@ -40,18 +36,7 @@ const isIconify = computed(() => {
       class="snack-media is-icon"
       :class="[props.color && `is-${props.color}`, props.solid && `is-solid`]"
     >
-      <iconify-icon
-        v-if="isIconify"
-        aria-hidden="true"
-        class="iconify snack-icon"
-        :icon="icon"
-      />
-      <i
-        v-else
-        aria-hidden="true"
-        class="snack-icon"
-        :class="props.icon"
-      />
+      <VIcon :icon="props.icon" class="snack-icon" />
     </div>
     <div
       v-else-if="props.image"

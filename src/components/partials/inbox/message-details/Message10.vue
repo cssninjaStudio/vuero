@@ -37,9 +37,7 @@ const dropdown2 = useDropdown(dropdownElement2)
         <span class="sender-email">&lt;kelly@vuero.io&gt;</span>
       </div>
       <div class="attachments inbox-hidden-mobile">
-        <iconify-icon
-          aria-hidden="true"
-          class="iconify"
+        <VIcon
           icon="lucide:paperclip"
         />
         <span>1</span>
@@ -54,9 +52,7 @@ const dropdown2 = useDropdown(dropdownElement2)
             @click="dropdown1.toggle"
           >
             <span class="icon is-small">
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
+              <VIcon
                 icon="lucide:more-vertical"
               />
             </span>
@@ -65,26 +61,20 @@ const dropdown2 = useDropdown(dropdownElement2)
         <div class="dropdown-menu">
           <div class="dropdown-content">
             <a class="dropdown-item">
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
+              <VIcon
                 icon="lucide:bookmark"
               />
               <span>Bookmark</span>
             </a>
             <a class="dropdown-item">
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
+              <VIcon
                 icon="lucide:share-2"
               />
               <span>Share message</span>
             </a>
             <hr class="dropdown-divider">
             <a class="dropdown-item">
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
+              <VIcon
                 icon="lucide:thumbs-down"
               />
               <span>Mark as spam</span>
@@ -99,9 +89,7 @@ const dropdown2 = useDropdown(dropdownElement2)
         @keydown.space.prevent="emit('update:mobileMessageOpen', false)"
         @click="emit('update:mobileMessageOpen', false)"
       >
-        <iconify-icon
-          aria-hidden="true"
-          class="iconify"
+        <VIcon
           icon="lucide:x"
         />
       </a>
@@ -116,37 +104,27 @@ const dropdown2 = useDropdown(dropdownElement2)
           </div>
           <div class="message-actions">
             <a class="inbox-action">
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
+              <VIcon
                 icon="lucide:corner-up-left"
               />
             </a>
             <a class="inbox-action">
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
+              <VIcon
                 icon="lucide:file-text"
               />
             </a>
             <a class="inbox-action">
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
+              <VIcon
                 icon="lucide:tag"
               />
             </a>
             <a class="inbox-action">
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
+              <VIcon
                 icon="lucide:message-circle"
               />
             </a>
             <a class="inbox-action">
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
+              <VIcon
                 icon="lucide:lock"
               />
             </a>
@@ -187,9 +165,7 @@ const dropdown2 = useDropdown(dropdownElement2)
           <div class="attachment">
             <span>iteration-4.pdf</span>
             <div class="download-icon">
-              <iconify-icon
-                aria-hidden="true"
-                class="iconify"
+              <VIcon
                 icon="lucide:arrow-down"
               />
             </div>
@@ -220,9 +196,7 @@ const dropdown2 = useDropdown(dropdownElement2)
                   @click="dropdown2.toggle"
                 >
                   <span class="icon is-small">
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify"
+                    <VIcon
                       icon="lucide:more-vertical"
                     />
                   </span>
@@ -231,25 +205,19 @@ const dropdown2 = useDropdown(dropdownElement2)
               <div class="dropdown-menu">
                 <div class="dropdown-content">
                   <a class="dropdown-item">
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify"
+                    <VIcon
                       icon="lucide:refresh-cw"
                     />
                     <span>Reset</span>
                   </a>
                   <a class="dropdown-item">
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify"
+                    <VIcon
                       icon="lucide:align-left"
                     />
                     <span>Spelling</span>
                   </a>
                   <a class="dropdown-item">
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify"
+                    <VIcon
                       icon="lucide:at-sign"
                     />
                     <span>Mention</span>

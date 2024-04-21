@@ -35,15 +35,13 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
           </VField>
         </div>
         <div class="search-location">
-          <iconify-icon
-            class="iconify"
+          <VIcon
             icon="lucide:map-pin"
           />
           Los Angeles, CA
         </div>
         <div class="search-job">
-          <iconify-icon
-            class="iconify"
+          <VIcon
             icon="lucide:briefcase"
           />
           <input
@@ -52,8 +50,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
           >
         </div>
         <div class="search-salary">
-          <iconify-icon
-            class="iconify"
+          <VIcon
             icon="lucide:dollar-sign"
           />
           <input

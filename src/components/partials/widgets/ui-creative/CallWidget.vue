@@ -30,23 +30,17 @@ const { onceImageErrored } = useImageError()
     <h3>Call {{ props.username }}?</h3>
     <div class="actions">
       <a class="action">
-        <iconify-icon
-          aria-hidden="true"
-          class="iconify"
+        <VIcon
           icon="lucide:message-square"
         />
       </a>
       <a class="action">
-        <iconify-icon
-          aria-hidden="true"
-          class="iconify"
+        <VIcon
           icon="lucide:phone"
         />
       </a>
       <a class="action">
-        <iconify-icon
-          aria-hidden="true"
-          class="iconify"
+        <VIcon
           icon="lucide:video"
         />
       </a>

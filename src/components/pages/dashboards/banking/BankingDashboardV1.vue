@@ -43,9 +43,7 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
             </h3>
             <button class="button is-circle is-dark-outlined">
               <span class="icon is-small">
-                <iconify-icon
-                  aria-hidden="true"
-                  class="iconify"
+                <VIcon
                   icon="lucide:plus"
                 />
               </span>
@@ -414,14 +412,12 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
                 <div class="actions">
                   <span>See all Contacts</span>
                   <a class="is-dark-primary-hover">
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify rtl-hidden"
+                    <VIcon
+                      class="rtl-hidden"
                       icon="lucide:arrow-right"
                     />
-                    <iconify-icon
-                      aria-hidden="true"
-                      class="iconify ltr-hidden"
+                    <VIcon
+                      class="ltr-hidden"
                       icon="lucide:arrow-left"
                     />
                   </a>

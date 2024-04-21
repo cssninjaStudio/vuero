@@ -31,10 +31,9 @@ const { onceImageErrored } = useImageError()
           alt=""
           @error.once="onceImageErrored(150)"
         >
-        <iconify-icon
+        <VIcon
           v-else
-          aria-hidden="true"
-          class="iconify"
+
           :icon="item.icon"
         />
       </div>

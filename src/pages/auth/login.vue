@@ -157,16 +157,12 @@ useHead({
 
                     <span class="toggler">
                       <span class="active">
-                        <iconify-icon
-                          aria-hidden="true"
-                          class="iconify"
+                        <VIcon
                           icon="lucide:check"
                         />
                       </span>
                       <span class="inactive">
-                        <iconify-icon
-                          aria-hidden="true"
-                          class="iconify"
+                        <VIcon
                           icon="lucide:circle"
                         />
                       </span>

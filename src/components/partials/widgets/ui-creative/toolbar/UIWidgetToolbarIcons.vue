@@ -27,9 +27,7 @@ const currentTab = ref(props.activeTab)
         @keydown.space.prevent="currentTab = index"
         @click="currentTab = index"
       >
-        <iconify-icon
-          aria-hidden="true"
-          class="iconify"
+        <VIcon
           :icon="tab.icon"
         />
       </a>

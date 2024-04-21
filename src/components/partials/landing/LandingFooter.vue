@@ -20,8 +20,8 @@
               class="button chat-button"
             >
               <span>Join us on Discord</span>
-              <iconify-icon
-                class="iconify ml-1"
+              <VIcon
+                class="ml-1"
                 icon="lucide:external-link"
               />
             </a>

@@ -26,8 +26,7 @@ const props = withDefaults(defineProps<{
             class="menu-block"
           >
             <h4 class="block-heading">
-              <iconify-icon
-                class="iconify"
+              <VIcon
                 :icon="group.icon"
               />
               <span>{{ group.label }}</span>

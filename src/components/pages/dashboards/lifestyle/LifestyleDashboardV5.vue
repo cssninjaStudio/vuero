@@ -28,9 +28,7 @@ import {
             >
               <template #avatar>
                 <button class="avatar is-fake is-squared">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:plus"
                   />
                 </button>
@@ -86,9 +84,7 @@ import {
                     <span class="tag item-duration">{{ item.duration }}</span>
                     <!--Play button-->
                     <button class="play-button">
-                      <iconify-icon
-                        aria-hidden="true"
-                        class="iconify"
+                      <VIcon
                         icon="lucide:play"
                       />
                     </button>
@@ -148,9 +144,7 @@ import {
                     <span class="tag item-duration">{{ item.duration }}</span>
                     <!--Play button-->
                     <button class="play-button">
-                      <iconify-icon
-                        aria-hidden="true"
-                        class="iconify"
+                      <VIcon
                         icon="lucide:play"
                       />
                     </button>
@@ -217,9 +211,7 @@ import {
                 <span class="tag item-duration">{{ item.duration }}</span>
                 <!--Play button-->
                 <button class="play-button">
-                  <iconify-icon
-                    aria-hidden="true"
-                    class="iconify"
+                  <VIcon
                     icon="lucide:play"
                   />
                 </button>

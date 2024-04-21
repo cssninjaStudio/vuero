@@ -89,9 +89,7 @@ watch(
       <template #links>
         <li>
           <RouterLink to="app">
-            <iconify-icon
-              aria-hidden="true"
-              class="iconify"
+            <VIcon
               icon="lucide:home"
             />
           </RouterLink>
@@ -101,9 +99,7 @@ watch(
       <template #bottom-links>
         <li>
           <a href="#">
-            <iconify-icon
-              aria-hidden="true"
-              class="iconify"
+            <VIcon
               icon="lucide:settings"
             />
           </a>
@@ -133,9 +129,8 @@ watch(
             @keydown.space.prevent="switchSidebar('dashboard')"
             @click="switchSidebar('dashboard')"
           >
-            <iconify-icon
-              aria-hidden="true"
-              class="iconify sidebar-svg"
+            <VIcon
+              class="sidebar-svg"
               icon="lucide:home"
             />
           </a>
