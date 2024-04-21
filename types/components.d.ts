@@ -16,7 +16,7 @@ declare module 'vue' {
     AnimatedCheckboxDocumentation: typeof import('./../documentation/animated-checkbox/animated-checkbox-documentation.md')['default']
     AnimatedLogo: typeof import('./../src/components/svg/AnimatedLogo.vue')['default']
     ApexDashboard: typeof import('./../src/components/pages/charts/ApexDashboard.vue')['default']
-    AuthLayout: typeof import('./../src/layouts/AuthLayout.vue')['default']
+    AuthLayout: typeof import('./../src/components/layouts/auth/AuthLayout.vue')['default']
     AvatarBadgeDocumentation: typeof import('./../documentation/avatar/avatar-badge-documentation.md')['default']
     AvatarDefaultDocumentation: typeof import('./../documentation/avatar/avatar-default-documentation.md')['default']
     AvatarDotColorsDocumentation: typeof import('./../documentation/avatar/avatar-dot-colors-documentation.md')['default']
