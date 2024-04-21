@@ -2,8 +2,6 @@
 import type { WizardTeammate, WizardTeammateRole } from '/@src/models/wizard'
 import { users } from '/@src/data/wizard'
 
-import { useWizard } from '/@src/composable/useWizard'
-
 const search = ref('')
 const isAddingMembers = ref(false)
 const filteredUsers = ref<Omit<WizardTeammate, 'role'>[]>([])

@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { useViewWrapper } from '/@src/stores/viewWrapper'
 import { VFlexPaginationMeta } from '/@src/data/documentation/components-meta'
 
 const route = useRoute()

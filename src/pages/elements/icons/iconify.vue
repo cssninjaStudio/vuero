@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { useViewWrapper } from '/@src/stores/viewWrapper'
 import { iconifyFeather } from '/@src/data/icons/iconifyFeather'
 
 const { text, copy, copied } = useClipboard()

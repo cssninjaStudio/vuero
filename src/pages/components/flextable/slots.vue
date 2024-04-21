@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { flexRowsContacts } from '/@src/data/documentation/table'
-import { useViewWrapper } from '/@src/stores/viewWrapper'
 
 const viewWrapper = useViewWrapper()
 viewWrapper.setPageTitle('Slots usage')

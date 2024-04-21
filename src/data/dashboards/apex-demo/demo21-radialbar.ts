@@ -1,5 +1,3 @@
-import { useThemeColors } from '/@src/composable/useThemeColors'
-
 export function useDemo21RadialBar() {
   const themeColors = useThemeColors()
   const series = shallowRef<any[]>([])

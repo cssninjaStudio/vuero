@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import { useWizard } from '/@src/composable/useWizard'
-import { useNotyf } from '/@src/composable/useNotyf'
-
 const notyf = useNotyf()
 const wizard = useWizard()
 const router = useRouter()

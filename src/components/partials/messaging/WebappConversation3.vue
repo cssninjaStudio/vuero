@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { onceImageErrored } from '/@src/utils/via-placeholder'
-
 const emit = defineEmits(['toggleMobileConversation'])
+
+const { onceImageErrored } = useImageError()
 </script>
 
 <template>

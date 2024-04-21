@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { VAvatarProps } from '/@src/components/base/VAvatar.vue'
-import { onceImageErrored } from '/@src/utils/via-placeholder'
+
 import * as gridData from '/@src/data/layouts/card-grid-v2'
 
 export interface ProjectData {
@@ -14,6 +14,7 @@ export interface ProjectData {
     avatar: string
   }
 }
+const { onceImageErrored } = useImageError()
 
 const projects = gridData.projects as ProjectData[]
 

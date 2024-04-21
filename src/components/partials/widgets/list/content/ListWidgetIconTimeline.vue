@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { onceImageErrored } from '/@src/utils/via-placeholder'
-
 const props = withDefaults(
   defineProps<{
     items?: any[]
@@ -11,6 +9,8 @@ const props = withDefaults(
     items: () => [],
   },
 )
+
+const { onceImageErrored } = useImageError()
 </script>
 
 <template>

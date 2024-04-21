@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import { flexRowsContacts, flexRowsAdvanced } from '/@src/data/documentation/table'
-import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
-import { useViewWrapper } from '/@src/stores/viewWrapper'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)

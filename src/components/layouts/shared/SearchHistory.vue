@@ -41,11 +41,13 @@
   height: 100%;
   padding: 2rem;
 }
+
 .search-history-title {
   font-family: var(--font-alt);
   margin-bottom: 1rem;
   font-size: 16px;
 }
+
 .search-history-links {
   a {
     color: var(--light-text);

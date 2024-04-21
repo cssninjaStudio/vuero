@@ -1,6 +1,3 @@
-import { useThemeColors } from '/@src/composable/useThemeColors'
-import * as formatters from '/@src/utils/apex-formatters'
-
 export function useCustomerEngagementChart() {
   const themeColors = useThemeColors()
   const customerEngagementChartOptions = shallowRef({
@@ -32,7 +29,7 @@ export function useCustomerEngagementChart() {
             fontFamily: 'Roboto, sans-serif',
             fontWeight: '500',
             color: undefined,
-            formatter: formatters.asPercent,
+            formatter: asPercent,
           },
         },
       },

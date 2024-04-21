@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { EditorConfig } from '@ckeditor/ckeditor5-core'
-import { useViewWrapper } from '/@src/stores/viewWrapper'
+
 // augment EditorConfig with fonts options
 import type {} from '@ckeditor/ckeditor5-font'
 

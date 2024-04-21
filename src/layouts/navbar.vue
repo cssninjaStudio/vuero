@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { NavbarItem } from '/@src/components/layouts/navbar/navbar.types'
-import { useViewWrapper } from '/@src/stores/viewWrapper'
 
 const viewWrapper = useViewWrapper()
 

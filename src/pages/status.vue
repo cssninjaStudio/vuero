@@ -1,8 +1,6 @@
 <script setup lang="ts">
-import { onceImageErrored } from '/@src/utils/via-placeholder'
-import { useDarkmode } from '/@src/stores/darkmode'
-
 const darkmode = useDarkmode()
+const { onceImageErrored } = useImageError()
 
 useHead({
   title: 'Utility Status - Sidebar - Vuero',

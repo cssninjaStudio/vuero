@@ -4,8 +4,7 @@ import type {
   VFlexTableWrapperFilterFunction,
 } from '/@src/components/base/VFlexTableWrapper.vue'
 import { users } from '/@src/data/layouts/card-grid-v1'
-import { useViewWrapper } from '/@src/stores/viewWrapper'
-import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
+
 import { VFlexTableWrapperMeta } from '/@src/data/documentation/components-meta'
 
 const markdownContainer = ref<HTMLElement>()

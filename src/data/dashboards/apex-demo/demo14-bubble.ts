@@ -1,5 +1,3 @@
-import { useThemeColors } from '/@src/composable/useThemeColors'
-
 function generateData(
   baseval: number,
   count: number,

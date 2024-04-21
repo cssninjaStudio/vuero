@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
-import { useViewWrapper } from '/@src/stores/viewWrapper'
 import { VInputMeta } from '/@src/data/documentation/components-meta'
 
 const markdownContainer = ref<HTMLElement>()

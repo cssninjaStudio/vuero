@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { useViewWrapper } from '/@src/stores/viewWrapper'
 import { fontAwesome } from '/@src/data/icons/fontAwesome'
 
 const { text, copy, copied } = useClipboard()

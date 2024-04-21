@@ -1,10 +1,21 @@
 <script setup lang="ts">
-import type { PeityOptions, PeityType } from '/@src/utils/peity'
-import { drawBar, drawLine, drawPie } from '/@src/utils/peity'
-
+export interface PeityOptions {
+  type: 'line' | 'bar' | 'pie' | 'donut'
+  min?: number
+  max?: number
+  radius?: number
+  innerRadius?: number
+  height?: number
+  width?: number
+  padding?: number
+  stroke?: string
+  strokeWidth?: number
+  fill: (idx: number) => string
+}
+export type PeityType = 'line' | 'bar' | 'pie' | 'donut'
 export interface VPeityProps {
   values: number[]
-  type: PeityType
+  type: 'line' | 'bar' | 'pie' | 'donut'
   min?: number
   max?: number
   radius?: number

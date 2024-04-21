@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { VAvatarProps } from '/@src/components/base/VAvatar.vue'
-import { useViewWrapper } from '/@src/stores/viewWrapper'
+
 import * as userStacks from '/@src/data/users/userStacks'
 import { VCardAdvancedMeta } from '/@src/data/documentation/components-meta'
 

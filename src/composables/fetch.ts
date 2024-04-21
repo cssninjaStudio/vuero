@@ -1,8 +1,6 @@
 import { ofetch } from 'ofetch'
 
-import { useUserSession } from '/@src/stores/userSession'
-
-export function useFetch() {
+export function useApiFetch() {
   return ofetch.create({
     baseURL: import.meta.env.VITE_API_BASE_URL ?? 'http://localhost:8080',
     // We set an interceptor for each request to

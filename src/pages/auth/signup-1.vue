@@ -1,14 +1,9 @@
 <script setup lang="ts">
 // import type { TinySliderInstance } from 'tiny-slider/src/tiny-slider'
 
-import { onceImageErrored } from '/@src/utils/via-placeholder'
-
-import sleep from '/@src/utils/sleep'
-import { useNotyf } from '/@src/composable/useNotyf'
-import { useDarkmode } from '/@src/stores/darkmode'
-
 // let slider: TinySliderInstance
 // const sliderElement = ref<HTMLElement>()
+const { onceImageErrored } = useImageError()
 const router = useRouter()
 const notyf = useNotyf()
 const darkmode = useDarkmode()

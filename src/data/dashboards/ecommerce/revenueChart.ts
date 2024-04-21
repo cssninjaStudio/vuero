@@ -1,6 +1,3 @@
-import { useThemeColors } from '/@src/composable/useThemeColors'
-import * as formatters from '/@src/utils/apex-formatters'
-
 export function useRevenueChart() {
   const themeColors = useThemeColors()
   const revenueChartsOptions = shallowRef({
@@ -39,7 +36,7 @@ export function useRevenueChart() {
     },
     tooltip: {
       y: {
-        formatter: formatters.asDollar,
+        formatter: asDollar,
       },
     },
   })

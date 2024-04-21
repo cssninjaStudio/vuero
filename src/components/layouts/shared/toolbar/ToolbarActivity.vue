@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { usePanels } from '/@src/stores/panels'
-
 const panels = usePanels()
 </script>
 

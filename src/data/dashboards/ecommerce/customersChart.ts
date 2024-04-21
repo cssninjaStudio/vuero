@@ -1,6 +1,3 @@
-import { useThemeColors } from '/@src/composable/useThemeColors'
-import * as formatters from '/@src/utils/apex-formatters'
-
 export function useCustomersChart() {
   const themeColors = useThemeColors()
   const customersChartOptions = shallowRef({
@@ -56,7 +53,7 @@ export function useCustomersChart() {
         format: 'dd/MM/yy HH:mm',
       },
       y: {
-        formatter: formatters.asDollar,
+        formatter: asDollar,
       },
     },
   })

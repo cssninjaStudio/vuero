@@ -1,10 +1,9 @@
 <script setup lang="ts">
-import { usePanels } from '/@src/stores/panels'
-import { onceImageErrored } from '/@src/utils/via-placeholder'
-
 type TabId = 'team' | 'projects' | 'schedule'
 
+const { onceImageErrored } = useImageError()
 const panels = usePanels()
+
 const activeTab = ref<TabId>('team')
 </script>
 

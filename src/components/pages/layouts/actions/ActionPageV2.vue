@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import sleep from '/@src/utils/sleep'
-import { useNotyf } from '/@src/composable/useNotyf'
 import { popovers } from '/@src/data/users/userPopovers'
 
 const notyf = useNotyf()

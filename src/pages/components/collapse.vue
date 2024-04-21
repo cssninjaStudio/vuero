@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { useViewWrapper } from '/@src/stores/viewWrapper'
 import {
   VCollapseMeta,
   VCollapseModelMeta,

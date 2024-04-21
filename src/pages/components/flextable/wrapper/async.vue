@@ -1,10 +1,7 @@
 <script setup lang="ts">
-import { useFetch } from '/@src/composable/useFetch'
-import { useViewWrapper } from '/@src/stores/viewWrapper'
 import type { VFlexTableWrapperDataResolver } from '/@src/components/base/VFlexTableWrapper.vue'
-import sleep from '/@src/utils/sleep'
 
-const isMobileScreen = useMediaQuery('(max-width: 767px)')
+const { isMobileScreen } = useScreenSize()
 
 const viewWrapper = useViewWrapper()
 viewWrapper.setPageTitle('Async data (advanced)')
@@ -186,7 +183,7 @@ function useQueryParam() {
 const queryParam = useQueryParam()
 
 // the fetchData function will be called each time one of the parameter changes
-const $fetch = useFetch()
+const $fetch = useApiFetch()
 const fetchData: VFlexTableWrapperDataResolver = async ({
   searchTerm,
   start,

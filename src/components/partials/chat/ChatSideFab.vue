@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useChat } from '/@src/stores/chat'
-
 const chat = useChat()
 </script>
 

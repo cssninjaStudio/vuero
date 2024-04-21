@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { classes } from '/@src/data/layouts/flex-list-v3'
-import { onceImageErrored } from '/@src/utils/via-placeholder'
 
 const props = withDefaults(
   defineProps<{
@@ -10,6 +9,8 @@ const props = withDefaults(
     activeTab: 'all',
   },
 )
+
+const { onceImageErrored } = useImageError()
 
 const filters = ref('')
 const tab = ref(props.activeTab)

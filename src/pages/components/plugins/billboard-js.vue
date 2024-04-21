@@ -2,10 +2,7 @@
 import { radar } from 'billboard.js'
 import { VBillboardJSMeta } from '/@src/data/documentation/components-meta'
 
-import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
 import { useSplineSimple } from '/@src/data/dashboards/billboardjs-demo/splineSimple'
-import { useThemeColors } from '/@src/composable/useThemeColors'
-import { useViewWrapper } from '/@src/stores/viewWrapper'
 
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)

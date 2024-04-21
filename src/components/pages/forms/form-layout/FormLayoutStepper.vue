@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import VueScrollTo from 'vue-scrollto'
-import { useNotyf } from '/@src/composable/useNotyf'
-import sleep from '/@src/utils/sleep'
 
 const router = useRouter()
 const notyf = useNotyf()

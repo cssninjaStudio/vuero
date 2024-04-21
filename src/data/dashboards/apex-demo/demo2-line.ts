@@ -1,6 +1,3 @@
-import { useThemeColors } from '/@src/composable/useThemeColors'
-import { asMinutes, perSession, toString } from '/@src/utils/apex-formatters'
-
 export function useDemo2Line() {
   const themeColors = useThemeColors()
   const series = shallowRef<any[]>([])

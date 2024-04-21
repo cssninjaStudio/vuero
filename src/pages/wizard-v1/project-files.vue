@@ -2,9 +2,6 @@
 import Dropzone from 'dropzone'
 import 'dropzone/dist/dropzone.css'
 
-import { useWizard } from '/@src/composable/useWizard'
-import { onceImageErrored } from '/@src/utils/via-placeholder'
-import sleep from '/@src/utils/sleep'
 Dropzone.autoDiscover = false
 
 let isInit = false
@@ -18,6 +15,7 @@ const cancelUploadElement = ref<HTMLElement>()
 const dropzone = ref<typeof Dropzone>()
 const previewTemplate = ref('')
 
+const { onceImageErrored } = useImageError()
 const wizard = useWizard()
 const router = useRouter()
 wizard.setStep({

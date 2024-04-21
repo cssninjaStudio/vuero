@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { useViewWrapper } from '/@src/stores/viewWrapper'
 import { lineIconsRegular } from '/@src/data/icons/lineIconsRegular'
 
 const { text, copy, copied } = useClipboard()

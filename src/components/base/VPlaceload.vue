@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { CssUnitRe } from '/@src/utils/regex'
-
 export type VPlaceloadProps = {
   width?: string
   height?: string

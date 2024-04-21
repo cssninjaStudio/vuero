@@ -1,5 +1,5 @@
 import type { Chart, ChartOptions, DataItem } from 'billboard.js'
-import { useThemeColors } from '/@src/composable/useThemeColors'
+
 import { gauge } from 'billboard.js'
 
 export function useGaugeSimple() {

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { offers } from '/@src/data/layouts/view-list-v3'
-import { onceImageErrored } from '/@src/utils/via-placeholder'
+
+const { onceImageErrored } = useImageError()
 
 type TabId = 'all' | 'saved'
 const activeTab = ref<TabId>('all')

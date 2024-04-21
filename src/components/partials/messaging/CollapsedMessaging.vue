@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import { useSidebar } from '/@src/stores/sidebar'
-import { onceImageErrored } from '/@src/utils/via-placeholder'
-
 const emit = defineEmits<{
   (e: 'addConversation'): void
   (e: 'selectConversation', id: number): void
@@ -17,6 +14,8 @@ const props = withDefaults(
     selectedConversationId: 0,
   },
 )
+
+const { onceImageErrored } = useImageError()
 const sidebar = useSidebar()
 </script>
 

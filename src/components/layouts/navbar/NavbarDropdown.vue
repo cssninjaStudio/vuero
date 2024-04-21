@@ -95,7 +95,6 @@ function onHidden() {
     gap: 1rem;
     border-radius: 0.5rem;
     transition: background-color 0.2s;
-
     font-family: var(--font);
     font-size: 0.9rem;
     color: var(--light-text-dark-5);

@@ -75,8 +75,8 @@ const columns = {
           {
             default() {
               const icon = h('iconify-icon', {
-                'class': 'iconify is-inline ml-2',
-                'icon': 'prime:sort-alt',
+                class: 'iconify is-inline ml-2',
+                icon: 'prime:sort-alt',
               })
 
               return ['Contacts', icon]

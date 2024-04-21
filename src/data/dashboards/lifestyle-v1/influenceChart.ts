@@ -1,6 +1,3 @@
-import { useThemeColors } from '/@src/composable/useThemeColors'
-import * as formatters from '/@src/utils/apex-formatters'
-
 export function useInfluenceChart() {
   const themeColors = useThemeColors()
   const influenceChartOptions = shallowRef({
@@ -32,7 +29,7 @@ export function useInfluenceChart() {
             fontFamily: 'Roboto, sans-serif',
             fontWeight: '500',
             color: undefined,
-            formatter: formatters.asPercent,
+            formatter: asPercent,
           },
         },
       },

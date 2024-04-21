@@ -1,6 +1,3 @@
-import { useThemeColors } from '/@src/composable/useThemeColors'
-import * as formatters from '/@src/utils/apex-formatters'
-
 export function useOxygenChart() {
   const themeColors = useThemeColors()
   const oxygenChartOptions = shallowRef({
@@ -26,7 +23,7 @@ export function useOxygenChart() {
     },
     dataLabels: {
       enabled: true,
-      formatter: formatters.asPercent,
+      formatter: asPercent,
       offsetY: -20,
       style: {
         fontSize: '12px',
@@ -70,7 +67,7 @@ export function useOxygenChart() {
       },
       labels: {
         show: false,
-        formatter: formatters.asPercent,
+        formatter: asPercent,
       },
     },
     colors: [themeColors.purple],

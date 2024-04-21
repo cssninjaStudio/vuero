@@ -1,14 +1,12 @@
 <script setup lang="ts">
-import { isLargeScreen } from '/@src/utils/responsive'
 import VueScrollTo from 'vue-scrollto'
-
-import { useDarkmode } from '/@src/stores/darkmode'
 
 const isMobileNavOpen = ref(false)
 const darkmode = useDarkmode()
 const scrollTo = VueScrollTo.scrollTo
 
 const { y } = useWindowScroll()
+const { isLargeScreen } = useScreenSize()
 
 const isScrolling = computed(() => {
   return y.value > 30

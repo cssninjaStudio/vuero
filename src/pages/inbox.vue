@@ -1,9 +1,7 @@
 <script setup lang="ts">
-import { useDarkmode } from '/@src/stores/darkmode'
-import { useDropdown } from '/@src/composable/useDropdown'
-import { onceImageErrored } from '/@src/utils/via-placeholder'
-
+const { onceImageErrored } = useImageError()
 const darkmode = useDarkmode()
+
 const contactSearchOpen = ref(false)
 const activeTab = ref('inbox')
 const selectedConversationId = ref(1)

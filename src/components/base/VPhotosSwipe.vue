@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import PhotoSwipeLightbox, { type PhotoSwipeOptions } from 'photoswipe/lightbox'
-import { onceImageErrored } from '/@src/utils/via-placeholder'
+
 import 'photoswipe/style.css'
 
 export interface VPhotoSwipeItem {
@@ -25,6 +25,8 @@ const props = withDefaults(defineProps<VPhotoSwipeProps>(), {
   options: () => ({}),
   thumbnailRadius: undefined,
 })
+
+const { onceImageErrored } = useImageError()
 
 let lightbox: PhotoSwipeLightbox | null = null
 const galleryElement = ref<HTMLElement>()

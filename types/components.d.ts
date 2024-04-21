@@ -230,7 +230,7 @@ declare module 'vue' {
     MessagesMobileSubsidebar: typeof import('./../src/components/partials/messaging/MessagesMobileSubsidebar.vue')['default']
     MessagesSubsidebar: typeof import('./../src/components/partials/messaging/MessagesSubsidebar.vue')['default']
     MessagingToolbar: typeof import('./../src/components/partials/toolbars/MessagingToolbar.vue')['default']
-    MinimalLayout: typeof import('./../src/layouts/MinimalLayout.vue')['default']
+    MinimalLayout: typeof import('./../src/components/layouts/minimal/MinimalLayout.vue')['default']
     MobileNavbar: typeof import('./../src/components/navigation/mobile/MobileNavbar.vue')['default']
     MobileSidebar: typeof import('./../src/components/navigation/mobile/MobileSidebar.vue')['default']
     MultiselectAutocompleteDocumentation: typeof import('./../documentation/plugins/multiselect/multiselect-autocomplete-documentation.md')['default']

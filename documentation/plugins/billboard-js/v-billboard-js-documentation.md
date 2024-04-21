@@ -15,7 +15,6 @@ for the [billboard.js](https://naver.github.io/billboard.js/) library.
 <script setup lang="ts">
 import { radar } from 'billboard.js'
 
-import { useThemeColors } from '/@src/composable/useThemeColors'
 const themeColors = useThemeColors()
 
 const billboardJsOptions = {

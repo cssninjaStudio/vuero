@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useVFieldContext } from '/@src/composable/useVFieldContext'
-
 export interface VTextareaProps {
   raw?: boolean
   autogrow?: boolean

@@ -5,7 +5,6 @@ import type { InjectionKey } from 'vue'
  * with autocompletion and compiler error prechecking
  */
 import type { WizardData } from '/@src/models/wizard'
-import sleep from '/@src/utils/sleep'
 
 interface WizardStepOptions {
   number: number

@@ -1,16 +1,18 @@
 <script setup lang="ts">
+import { RouterLink } from 'vue-router/auto'
+
 import VTag from '/@src/components/base/VTag.vue'
 import FlexTableDropdown from '/@src/components/partials/dropdowns/FlexTableDropdown.vue'
 import VAvatarStack from '/@src/components/base/VAvatarStack.vue'
 import { flexRowsAdvanced } from '/@src/data/documentation/table'
-import { onceImageErrored } from '/@src/utils/via-placeholder'
-import { RouterLink } from 'vue-router/auto'
 
 const collator = new Intl.Collator('en')
 const numberFormat = new Intl.NumberFormat('en-US', {
   style: 'currency',
   currency: 'USD',
 })
+
+const { onceImageErrored } = useImageError()
 const router = useRoute()
 const sortedData = computed(() => {
   switch (router.query.sort) {

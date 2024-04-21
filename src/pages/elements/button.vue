@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
-import { useViewWrapper } from '/@src/stores/viewWrapper'
 import { VButtonMeta, VButtonsMeta } from '/@src/data/documentation/components-meta'
 
 const markdownContainer = ref<HTMLElement>()

@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useDarkmode } from '/@src/stores/darkmode'
-
 const darkmode = useDarkmode()
 
 useHead({

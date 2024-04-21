@@ -1,8 +1,4 @@
 <script setup lang="ts">
-import { useLayoutSwitcher } from '/@src/stores/layoutSwitcher'
-import { useViewWrapper } from '/@src/stores/viewWrapper'
-import { usePanels } from '/@src/stores/panels'
-
 const panels = usePanels()
 const layoutSwitcher = useLayoutSwitcher()
 const viewWrapper = useViewWrapper()

@@ -1,5 +1,5 @@
 import type { ChartOptions } from 'billboard.js'
-import { useThemeColors } from '/@src/composable/useThemeColors'
+
 import { area } from 'billboard.js'
 
 export function useAreaSimpleChart() {

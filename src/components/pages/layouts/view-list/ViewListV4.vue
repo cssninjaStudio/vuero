@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import type { VAvatarProps } from '/@src/components/base/VAvatar.vue'
 import * as listData from '/@src/data/layouts/view-list-v4'
-import { onceImageErrored } from '/@src/utils/via-placeholder'
+
+const { onceImageErrored } = useImageError()
 
 export interface RecipeData {
   icon: string

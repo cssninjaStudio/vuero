@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { onceImageErrored } from '/@src/utils/via-placeholder'
-
 const props = defineProps<{
   picture: string
   badge: string
   username: string
   straight?: boolean
 }>()
+
+const { onceImageErrored } = useImageError()
 </script>
 
 <template>

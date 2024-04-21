@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useLayoutSwitcher } from '/@src/stores/layoutSwitcher'
-
 defineOptions({
   inheritAttrs: false,
 })

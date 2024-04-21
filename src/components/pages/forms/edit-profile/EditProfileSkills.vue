@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import { useNotyf } from '/@src/composable/useNotyf'
-import sleep from '/@src/utils/sleep'
-
 const notyf = useNotyf()
 const { y } = useWindowScroll()
 

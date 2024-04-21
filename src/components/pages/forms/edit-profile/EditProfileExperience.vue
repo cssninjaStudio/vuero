@@ -1,13 +1,10 @@
 <script setup lang="ts">
-import { useNotyf } from '/@src/composable/useNotyf'
-import sleep from '/@src/utils/sleep'
-import { onceImageErrored } from '/@src/utils/via-placeholder'
-
 const isUploading = ref(false)
 const isLoading = ref(false)
 const range = ref()
 
 const notyf = useNotyf()
+const { onceImageErrored } = useImageError()
 const { y } = useWindowScroll()
 
 const isScrolling = computed(() => {

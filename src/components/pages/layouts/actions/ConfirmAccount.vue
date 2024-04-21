@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import sleep from '/@src/utils/sleep'
-import { useNotyf } from '/@src/composable/useNotyf'
-
 const notyf = useNotyf()
 const router = useRouter()
 

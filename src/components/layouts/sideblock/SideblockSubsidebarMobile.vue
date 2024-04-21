@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import type { SubsidebarItem } from './sidebar.types'
+import type { SideblockItem } from './sideblock.types'
 
 const props = defineProps<{
   label?: string
-  items: SubsidebarItem[]
+  items: SideblockItem[]
 }>()
 </script>
 

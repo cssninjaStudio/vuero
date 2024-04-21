@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useVFieldContext } from '/@src/composable/useVFieldContext'
-
 const { field, id } = useVFieldContext({
   create: false,
   help: 'VOptgroup',

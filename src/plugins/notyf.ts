@@ -2,7 +2,6 @@ import type { INotyfNotificationOptions, Notyf, NotyfNotification } from 'notyf'
 import type { InjectionKey } from 'vue'
 
 import { definePlugin } from '/@src/app'
-import { useThemeColors } from '/@src/composable/useThemeColors'
 
 export const notyfSymbol: InjectionKey<Awaited<ReturnType<typeof initNotyfService>>>
   = Symbol('notyf')

@@ -1,14 +1,11 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 
-import { useDarkmode } from '/@src/stores/darkmode'
-import { usePanels } from '/@src/stores/panels'
-import { useDropdown } from '/@src/composable/useDropdown'
-import { onceImageErrored } from '/@src/utils/via-placeholder'
+const emit = defineEmits(['close'])
 
 const panels = usePanels()
 const darkmode = useDarkmode()
-const emit = defineEmits(['close'])
+const { onceImageErrored } = useImageError()
 
 const { locale } = useI18n()
 const dropdownElement = ref<HTMLElement>()

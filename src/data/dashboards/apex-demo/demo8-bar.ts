@@ -1,6 +1,3 @@
-import { useThemeColors } from '/@src/composable/useThemeColors'
-import { asKDollar } from '/@src/utils/apex-formatters'
-
 export function useDemo8Bar() {
   const themeColors = useThemeColors()
   const series = shallowRef<any[]>([])

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { version } from '../../../../package.json'
-import { useDarkmode } from '/@src/stores/darkmode'
+
 const slots = useSlots()
 const route = useRoute()
 

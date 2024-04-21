@@ -54,8 +54,6 @@ export const useRoadmapData = defineBasicLoader(async (to) => {
 <script setup lang="ts">
 import { useRouteQuery } from '@vueuse/router'
 
-import { useDarkmode } from '/@src/stores/darkmode'
-
 const darkmode = useDarkmode()
 
 const { data, isLoading } = useRoadmapData()

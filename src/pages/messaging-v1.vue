@@ -1,11 +1,6 @@
 <script setup lang="ts">
 import Layout from '/@src/layouts/sidebar.vue'
 
-import { useChat } from '/@src/stores/chat'
-import { useSidebar } from '/@src/stores/sidebar'
-import { useViewWrapper } from '/@src/stores/viewWrapper'
-import { useNotyf } from '/@src/composable/useNotyf'
-
 /**
  * The chat store keep the chat data across the app
  * It internaly uses the useFetch composable to fetch the data (to the json-server)

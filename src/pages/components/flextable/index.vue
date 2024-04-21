@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { flexRowsBasic, flexRowsContacts } from '/@src/data/documentation/table'
-import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
-import { useViewWrapper } from '/@src/stores/viewWrapper'
+
 import { VFlexTableMeta } from '/@src/data/documentation/components-meta'
 
 const markdownContainer = ref<HTMLElement>()

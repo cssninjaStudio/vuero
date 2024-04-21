@@ -11,7 +11,7 @@
  */
 
 import { useI18n } from 'vue-i18n'
-import { useDarkmode } from '/@src/stores/darkmode'
+
 import { setHeader, setResponseStatus } from 'h3'
 import { useSSRContext } from 'vue'
 

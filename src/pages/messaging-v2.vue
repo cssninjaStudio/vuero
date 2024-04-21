@@ -1,9 +1,5 @@
 <script setup lang="ts">
-import { usePanels } from '/@src/stores/panels'
-
 import type { VAvatarProps } from '/@src/components/base/VAvatar.vue'
-import { useDropdown } from '/@src/composable/useDropdown'
-import { onceImageErrored } from '/@src/utils/via-placeholder'
 
 export interface conversationData {
   id: number
@@ -130,6 +126,7 @@ const conversations: conversationData[] = [
   },
 ]
 
+const { onceImageErrored } = useImageError()
 const panels = usePanels()
 const selectedConversationId = ref(3)
 const mobileConversationListOpen = ref(false)

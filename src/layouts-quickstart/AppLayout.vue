@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useViewWrapper } from '/@src/stores/viewWrapper'
-
 const props = withDefaults(
   defineProps<{
     theme?:

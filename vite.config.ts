@@ -193,6 +193,7 @@ export default defineConfig({
     AutoImport({
       dts: './types/imports.d.ts',
       imports: ['vue', '@vueuse/core', VueRouterAutoImports, unheadVueComposablesImports],
+      dirs: ['src/composables', 'src/stores', 'src/utils'],
     }),
 
     /**

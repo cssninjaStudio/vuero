@@ -1,5 +1,3 @@
-import { useThemeColors } from '/@src/composable/useThemeColors'
-
 export function useShippingCharts() {
   const themeColors = useThemeColors()
   const freeShippingChartOptions = shallowRef({

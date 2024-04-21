@@ -4,8 +4,6 @@ import type { SidebarItem } from '/@src/components/layouts/sidebar/sidebar.types
 import LayoutSwitcher from '/@src/components/layouts/shared/LayoutSwitcher.vue'
 import ToolbarUserProfile from '/@src/components/layouts/shared/toolbar/ToolbarUserProfile.vue'
 
-import { usePanels } from '/@src/stores/panels'
-
 const panels = usePanels()
 
 const links = ref<SidebarItem[]>([

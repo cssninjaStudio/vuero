@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { posts } from '/@src/data/layouts/card-grid-v4'
-import { onceImageErrored } from '/@src/utils/via-placeholder'
+
+const { onceImageErrored } = useImageError()
 
 const filters = ref('')
 

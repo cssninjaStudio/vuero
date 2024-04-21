@@ -37,10 +37,8 @@ const props = withDefaults(defineProps<VAvatarProps>(), {
   color: undefined,
   dotColor: undefined,
 })
-const onceImageErroredHandler = (event: Event) => {
-  const target = event.target as HTMLImageElement
-  target.src = props.placeholder
-}
+
+const { onceImageErrored } = useImageError()
 </script>
 
 <template>
@@ -60,7 +58,7 @@ const onceImageErroredHandler = (event: Event) => {
         :class="[props.squared && 'is-squared', props.pictureDark && 'light-image']"
         :src="props.picture"
         alt=""
-        @error.once="onceImageErroredHandler"
+        @error.once="onceImageErrored(props.placeholder)"
       >
       <span
         v-else
@@ -75,7 +73,7 @@ const onceImageErroredHandler = (event: Event) => {
         :class="[props.squared && 'is-squared']"
         :src="props.pictureDark"
         alt=""
-        @error.once="onceImageErroredHandler"
+        @error.once="onceImageErrored(props.placeholder)"
       >
     </slot>
 
@@ -85,7 +83,7 @@ const onceImageErroredHandler = (event: Event) => {
         class="badge"
         :src="props.badge"
         alt=""
-        @error.once="onceImageErroredHandler"
+        @error.once="onceImageErrored(props.placeholder)"
       >
     </slot>
   </div>

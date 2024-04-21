@@ -7,7 +7,8 @@ import FoodWidget from '/@src/assets/illustrations/dashboards/food/widget.svg'
 import * as foodDelivery from '/@src/data/dashboards/food-delivery'
 import { followersStats } from '/@src/data/widgets/ui/followers'
 import { iconList } from '/@src/data/widgets/ui/menuList'
-import { onceImageErrored } from '/@src/utils/via-placeholder'
+
+const { onceImageErrored } = useImageError()
 
 const activeSection = ref('cart')
 

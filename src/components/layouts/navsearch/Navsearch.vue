@@ -279,6 +279,7 @@
       .center {
         display: flex;
         align-items: center;
+
         .button {
           font-size: 0.9rem;
           font-weight: 500;

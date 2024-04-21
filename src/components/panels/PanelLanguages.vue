@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 
-import { usePanels } from '/@src/stores/panels'
-
 const panels = usePanels()
 const { locale, t } = useI18n()
 

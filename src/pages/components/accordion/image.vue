@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { useViewWrapper } from '/@src/stores/viewWrapper'
 import { VAccordionImageMeta } from '/@src/data/documentation/components-meta'
 
 const data = [

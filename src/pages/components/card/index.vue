@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useMarkdownToc } from '/@src/composable/useMarkdownToc'
-import { useViewWrapper } from '/@src/stores/viewWrapper'
 import { popovers } from '/@src/data/users/userPopovers'
 import { VCardMeta } from '/@src/data/documentation/components-meta'
 

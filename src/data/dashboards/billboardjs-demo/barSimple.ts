@@ -1,5 +1,5 @@
 import type { Chart, ChartOptions } from 'billboard.js'
-import { useThemeColors } from '/@src/composable/useThemeColors'
+
 import { bar } from 'billboard.js'
 
 export function useBarSimple() {

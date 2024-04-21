@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useViewWrapper } from '/@src/stores/viewWrapper'
-
 import type { SideblockLayoutContext, SideblockItem, SideblockTheme } from './sideblock.types'
 import { injectionKey } from './sideblock.context'
 

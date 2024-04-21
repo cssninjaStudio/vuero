@@ -12,6 +12,7 @@ export interface SideblockItemCollapse {
     label: string
     to: string
     icon?: string
+    tag?: string
   }[]
 }
 export interface SideblockItemLink {
@@ -43,6 +44,7 @@ export interface SideblockItemComponent {
 }
 export interface SideblockItemDivider {
   type: 'divider'
+  label?: string
 }
 
 export type SideblockItem =

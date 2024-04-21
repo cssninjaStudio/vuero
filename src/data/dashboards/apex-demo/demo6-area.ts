@@ -1,6 +1,3 @@
-import { useThemeColors } from '/@src/composable/useThemeColors'
-import { toDate, toFixed } from '/@src/utils/apex-formatters'
-
 export function useDemo6Area() {
   const themeColors = useThemeColors()
   const series = shallowRef<any[]>([])

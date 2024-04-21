@@ -57,6 +57,7 @@ const props = withDefaults(defineProps<{
     &.is-size-large {
       max-width: 1380px;
     }
+
     &.is-size-full {
       max-width: none;
     }

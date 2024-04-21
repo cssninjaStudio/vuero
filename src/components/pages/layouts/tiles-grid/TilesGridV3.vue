@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { posts } from '/@src/data/layouts/tile-grid-v3'
-import { onceImageErrored } from '/@src/utils/via-placeholder'
+
+const { onceImageErrored } = useImageError()
 
 const filters = ref('')
 

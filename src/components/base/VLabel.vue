@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useVFieldContext } from '/@src/composable/useVFieldContext'
-
 export interface VLabelProps {
   id?: string
   raw?: boolean

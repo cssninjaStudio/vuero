@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useViewWrapper } from '/@src/stores/viewWrapper'
-
 type TabId = 'active' | 'closed'
 const activeTab = ref<TabId>('active')
 

@@ -2,7 +2,8 @@
 import 'dragula/dist/dragula.css'
 
 import { useKanban } from '/@src/data/apps/kanban'
-import { onceImageErrored } from '/@src/utils/via-placeholder'
+
+const { onceImageErrored } = useImageError()
 
 const {
   tasks,

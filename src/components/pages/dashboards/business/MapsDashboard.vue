@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { type Map, Popup } from 'mapbox-gl'
-import { useThemeColors } from '/@src/composable/useThemeColors'
-import { useDarkmode } from '/@src/stores/darkmode'
+
 import 'mapbox-gl/src/css/mapbox-gl.css'
 import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css'
 
@@ -454,6 +453,7 @@ watch(
     height: calc(100% - 65px);
   }
 }
+
 .navbar-layout-search {
   .has-top-nav {
     .dashboard-map-wrapper {

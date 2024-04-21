@@ -1,9 +1,4 @@
 <script setup lang="ts">
-import { useNotyf } from '/@src/composable/useNotyf'
-
-import { useDarkmode } from '/@src/stores/darkmode'
-import sleep from '/@src/utils/sleep'
-
 const darkmode = useDarkmode()
 const router = useRouter()
 const notyf = useNotyf()

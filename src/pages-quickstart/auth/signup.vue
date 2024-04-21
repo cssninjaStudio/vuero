@@ -5,10 +5,6 @@ import { toTypedSchema } from '@vee-validate/zod'
 import { useForm } from 'vee-validate'
 import { z as zod } from 'zod'
 
-import { useDarkmode } from '/@src/stores/darkmode'
-import { useNotyf } from '/@src/composable/useNotyf'
-import sleep from '/@src/utils/sleep'
-
 const darkmode = useDarkmode()
 const router = useRouter()
 const notyf = useNotyf()

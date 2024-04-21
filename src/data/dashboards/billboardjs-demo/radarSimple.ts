@@ -1,5 +1,5 @@
 import type { ChartOptions } from 'billboard.js'
-import { useThemeColors } from '/@src/composable/useThemeColors'
+
 import { radar } from 'billboard.js'
 
 export function useRadarSimple() {

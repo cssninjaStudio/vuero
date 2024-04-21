@@ -4,8 +4,6 @@ meta:
 </route>
 
 <script setup lang="ts">
-import { useLayoutSwitcher } from '/@src/stores/layoutSwitcher'
-
 const layoutSwitcher = useLayoutSwitcher()
 </script>
 

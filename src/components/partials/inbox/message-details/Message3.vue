@@ -1,8 +1,4 @@
 <script setup lang="ts">
-import { useDropdown } from '/@src/composable/useDropdown'
-import { onceImageErrored } from '/@src/utils/via-placeholder'
-import { isMediumScreen } from '/@src/utils/responsive'
-
 const emit = defineEmits<{
   (e: 'update:mobileMessageOpen', value: boolean): void
 }>()
@@ -10,6 +6,9 @@ const props = defineProps<{
   selected?: boolean
   mobileMessageOpen?: boolean
 }>()
+
+const { onceImageErrored } = useImageError()
+const { isMediumScreen } = useScreenSize()
 
 const dropdownElement1 = ref<HTMLElement>()
 const dropdown1 = useDropdown(dropdownElement1)

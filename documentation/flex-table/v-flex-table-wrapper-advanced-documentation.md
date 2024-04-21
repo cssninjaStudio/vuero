@@ -11,7 +11,6 @@ Check the markup for more details about usage.
 ```vue
 <script setup lang="ts">
 import type { VFlexTableWrapperDataResolver } from '/@src/components/base/table/VFlexTableWrapper.vue'
-import { useFetch } from '/@src/composable/useFetch'
 
 // the total data will be set by the fetchData function
 const total = ref(0)
@@ -187,7 +186,7 @@ function useQueryParam() {
 const queryParam = useQueryParam()
 
 // the fetchData function will be called each time one of the parameter changes
-const $fetch = useFetch()
+const $fetch = useApiFetch()
 const fetchData: VFlexTableWrapperDataResolver = async ({
   searchTerm,
   start,

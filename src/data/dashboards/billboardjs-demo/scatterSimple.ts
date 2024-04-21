@@ -1,5 +1,5 @@
 import type { Chart, ChartOptions } from 'billboard.js'
-import { useThemeColors } from '/@src/composable/useThemeColors'
+
 import { scatter } from 'billboard.js'
 
 export function useScatterSimple() {

@@ -1,6 +1,3 @@
-import { useThemeColors } from '/@src/composable/useThemeColors'
-import * as formatters from '/@src/utils/apex-formatters'
-
 export function useSparksCharts() {
   const themeColors = useThemeColors()
   const spark1 = shallowRef({
@@ -82,7 +79,7 @@ export function useSparksCharts() {
         show: false,
       },
       y: {
-        formatter: formatters.asKDollar,
+        formatter: asKDollar,
       },
     },
     colors: [themeColors.purple],

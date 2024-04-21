@@ -1,5 +1,3 @@
-import { useThemeColors } from '/@src/composable/useThemeColors'
-
 const randomizeArray = function (arg: number[]) {
   const array = arg.slice()
   let currentIndex = array.length,

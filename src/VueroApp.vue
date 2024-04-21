@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import { initDarkmode } from '/@src/stores/darkmode'
 
 // This is the global app setup function
 const { locale } = useI18n()

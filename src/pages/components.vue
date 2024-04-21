@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Layout from '/@src/layouts/sidebar.vue'
-import { useLayoutSwitcher } from '/@src/stores/layoutSwitcher'
+
 const layoutSwitcher = useLayoutSwitcher()
 </script>
 

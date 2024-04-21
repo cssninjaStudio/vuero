@@ -6,8 +6,10 @@ import { days } from '/@src/data/widgets/ui/dayList'
 import { iconList } from '/@src/data/widgets/ui/menuList'
 import { notifications } from '/@src/data/widgets/ui/notificationList'
 import { useTrendWidgetChart } from '/@src/data/widgets/charts/trendWidgetChart'
-import { onceImageErrored } from '/@src/utils/via-placeholder'
+
 import { usePersonalScoreGauge } from '/@src/data/widgets/charts/personalScoreGauge'
+
+const { onceImageErrored } = useImageError()
 
 const { personalScoreGaugeOptions, onPersonalScoreGaugeReady } = usePersonalScoreGauge()
 const { trendWidgetChartOptions } = useTrendWidgetChart()

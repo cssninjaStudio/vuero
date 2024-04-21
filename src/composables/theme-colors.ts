@@ -1,6 +1,5 @@
 import { computed, reactive } from 'vue'
 import { useCssVar } from '@vueuse/core'
-import { HSLToHex } from '/@src/utils/color-converter'
 
 export const useThemeColors = () => {
   const primary = import.meta.env.SSR

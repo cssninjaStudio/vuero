@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { useSidebar } from '/@src/stores/sidebar'
 import { VAccordionMeta } from '/@src/data/documentation/components-meta'
 
 const sidebar = useSidebar()

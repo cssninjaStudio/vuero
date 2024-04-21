@@ -8,8 +8,6 @@ import type {
 } from './navbar.types'
 import { injectionKey } from './navbar.context'
 
-import { useViewWrapper } from '/@src/stores/viewWrapper'
-
 const props = withDefaults(
   defineProps<{
     links?: NavbarItem[]

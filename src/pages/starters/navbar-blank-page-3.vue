@@ -13,8 +13,6 @@ import Layout from '/@src/layouts/navbar.vue'
  * @see /src/router.ts
  */
 
-import { useViewWrapper } from '/@src/stores/viewWrapper'
-
 const viewWrapper = useViewWrapper()
 viewWrapper.setPageTitle('Blank Page 3')
 

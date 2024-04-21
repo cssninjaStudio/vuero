@@ -10,10 +10,31 @@
 
 import { ref, computed } from 'vue'
 import { acceptHMRUpdate, defineStore } from 'pinia'
+import type { $Fetch } from 'ofetch'
 
-import type { Conversation, Message } from '/@src/utils/api/chat'
-import { fetchConversations, fetchMessages } from '/@src/utils/api/chat'
-import { useFetch } from '/@src/composable/useFetch'
+export interface Conversation {
+  id: number
+  name: string
+  lastMessage: string
+  unreadMessages: boolean
+  avatar: string
+}
+export interface Message {
+  id: number
+  conversationId: number
+  messageId: number
+  type: 'msg' | 'image' | 'imagelink' | 'system'
+  sender: string | null
+  avatar: string | null
+  content: {
+    time: string | null
+    text?: string
+    subtext?: string
+    image_url?: string
+    link_image?: string
+    link_badge?: string
+  }
+}
 
 const defaultConversation: Conversation = {
   id: 0,
@@ -24,7 +45,7 @@ const defaultConversation: Conversation = {
 }
 
 export const useChat = defineStore('chat', () => {
-  const $fetch = useFetch()
+  const $fetch = useApiFetch()
   const conversations = ref<Conversation[]>([])
   const messages = ref<Message[]>([])
   const selectedConversationId = ref(0)
@@ -102,6 +123,49 @@ export const useChat = defineStore('chat', () => {
     unselectConversation,
   } as const
 })
+
+async function fetchConversations(
+  $fetch: $Fetch,
+  start = 0,
+  limit = 20,
+): Promise<{ conversations: Conversation[], count: number }> {
+  let count = 0
+
+  const { _data: conversations = [], headers } = await $fetch.raw<Conversation[]>(
+    `/api/conversations`,
+    {
+      query: {
+        _start: start,
+        _limit: limit,
+      },
+    },
+  )
+
+  if (headers.has('X-Total-Count')) {
+    count = parseInt(headers.get('X-Total-Count') ?? '0')
+  }
+
+  return { conversations, count }
+}
+
+async function fetchMessages(
+  $fetch: $Fetch,
+  conversationId: number,
+  start = 0,
+  limit = 20,
+): Promise<{ messages: Message[], count: number }> {
+  let count = 0
+
+  const { _data: messages = [], headers } = await $fetch.raw<Message[]>(
+    `/api/conversations/${conversationId}/messages?_start=${start}&_limit=${limit}`,
+  )
+
+  if (headers.has('X-Total-Count')) {
+    count = parseInt(headers.get('X-Total-Count') ?? '0')
+  }
+
+  return { messages, count }
+}
 
 /**
  * Pinia supports Hot Module replacement so you can edit your stores and

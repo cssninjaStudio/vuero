@@ -4,7 +4,6 @@ import type { NavsearchItem } from '/@src/components/layouts/navsearch/navsearch
 import type { VAvatarProps } from '/@src/components/base/VAvatar.vue'
 import type { UserPopover } from '/@src/models/users'
 import { popovers } from '/@src/data/users/userPopovers'
-import { useViewWrapper } from '/@src/stores/viewWrapper'
 
 function getAvatarData(user: UserPopover): any {
   return {

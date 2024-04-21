@@ -1,5 +1,3 @@
-import { useThemeColors } from '/@src/composable/useThemeColors'
-
 export function useProductReturnsChart() {
   const themeColors = useThemeColors()
   const productReturnsChartOptions = shallowRef({

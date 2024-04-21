@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { onceImageErrored } from '/@src/utils/via-placeholder'
-
 export type VIconWrapDark = '1' | '2' | '3' | '4' | '5' | '6'
 export type VIconWrapSize = 'small' | 'medium' | 'large'
 export type VIconWrapColor =
@@ -35,6 +33,8 @@ const props = withDefaults(defineProps<VIconWrapProps>(), {
   size: undefined,
   dark: '3',
 })
+
+const { onceImageErrored } = useImageError()
 
 const isIconify = computed(() => {
   return props.icon && props.icon.indexOf(':') !== -1

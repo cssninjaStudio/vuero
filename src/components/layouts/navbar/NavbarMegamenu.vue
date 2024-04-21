@@ -90,6 +90,7 @@ const props = withDefaults(defineProps<{
 .menu-grid-bottom {
   width: 100%;
 }
+
 .menu-grid-wrapper {
   display: flex;
   flex-direction: column;
@@ -98,16 +99,18 @@ const props = withDefaults(defineProps<{
   height: 100%;
   padding: 0 1.5rem;
 }
+
 .menu-grid-container {
   height: 100%;
 }
+
 .menu-grid {
   width: 100%;
   max-height: 100%;
   display: flex;
   // flex-direction: column;
   flex-wrap: wrap;
-  gap: 0rem 4rem;
+  gap: 0 4rem;
   padding: 1.5rem 0;
 
   // display: grid;
@@ -225,6 +228,7 @@ const props = withDefaults(defineProps<{
             width 0.3s;
         }
       }
+
       &:hover {
         a {
           opacity: 1;
@@ -235,6 +239,7 @@ const props = withDefaults(defineProps<{
     }
   }
 }
+
 .is-dark .navbar-subnavbar-inner {
   background: var(--dark-sidebar-dark-2);
 }

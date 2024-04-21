@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useWizard } from '/@src/composable/useWizard'
-
 const wizard = useWizard()
 
 useHead({

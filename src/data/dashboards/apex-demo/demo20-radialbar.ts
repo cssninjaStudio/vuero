@@ -1,6 +1,3 @@
-import { useThemeColors } from '/@src/composable/useThemeColors'
-import { asPercent } from '/@src/utils/apex-formatters'
-
 export function useDemo20RadialBar() {
   const themeColors = useThemeColors()
   const series = shallowRef<any[]>([])

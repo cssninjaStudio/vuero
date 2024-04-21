@@ -3,6 +3,7 @@ import { definePlugin } from '/@src/app'
 export default definePlugin(({ app }) => {
   // register vue3-apexcharts with async component
   const ApexChart = defineAsyncComponent({
+    // @ts-expect-error - modules does not have exports field (required by moduleResolution = bundler)
     loader: () => import('vue3-apexcharts'),
     suspensible: false,
   })

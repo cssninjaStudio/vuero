@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useUserSession } from '/@src/stores/userSession'
-
 const userSession = useUserSession()
 const router = useRouter()
 

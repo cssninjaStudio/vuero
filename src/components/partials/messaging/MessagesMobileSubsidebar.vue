@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { onceImageErrored } from '/@src/utils/via-placeholder'
-
 const emit = defineEmits<{
   (e: 'selectConversation', id: number): void
 }>()
@@ -15,6 +13,8 @@ const props = withDefaults(
     selectedConversationId: 0,
   },
 )
+
+const { onceImageErrored } = useImageError()
 </script>
 
 <template>

@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import { useNotyf } from '/@src/composable/useNotyf'
-import sleep from '/@src/utils/sleep'
-import { onceImageErrored } from '/@src/utils/via-placeholder'
+const { onceImageErrored } = useImageError()
 
 const isUploading = ref(false)
 const isLoading = ref(false)

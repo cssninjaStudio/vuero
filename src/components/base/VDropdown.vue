@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useDropdown, type DropdownOptions } from '/@src/composable/useDropdown'
+import type { DropdownOptions } from '/@src/composables/dropdown'
 
 export type VDropdownColor = 'primary' | 'info' | 'success' | 'warning' | 'danger'
 export interface VDropdownProps {
@@ -118,6 +118,7 @@ defineExpose({
       inset-inline-end: 0;
     }
   }
+
   &.is-end {
     .dropdown-menu {
       bottom: 0;

@@ -1,6 +1,4 @@
-import { useFetch } from '/@src/composable/useFetch'
 import { definePlugin } from '/@src/app'
-import { useUserSession } from '/@src/stores/userSession'
 
 /**
  * Here we are setting up two router navigation guards
@@ -25,7 +23,7 @@ import { useUserSession } from '/@src/stores/userSession'
  */
 export default definePlugin(async ({ router, pinia }) => {
   const userSession = useUserSession(pinia)
-  const $fetch = useFetch()
+  const $fetch = useApiFetch()
 
   // 1. Check token validity at app startup
   if (userSession.isLoggedIn) {

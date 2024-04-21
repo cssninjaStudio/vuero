@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useDropdown } from '/@src/composable/useDropdown'
-
 const dropdownElement = ref<HTMLElement>()
 const dropdown = useDropdown(dropdownElement)
 </script>
