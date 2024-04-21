@@ -32,11 +32,6 @@ export const useLayoutSwitcher = defineStore('layoutSwitcher', () => {
     delay: 0,
     suspensible: false,
   })
-  const NavbarDropdownLayout = defineAsyncComponent({
-    loader: () => import('/@src/layouts/NavbarDropdownLayout.vue'),
-    delay: 0,
-    suspensible: false,
-  })
   const NavsearchLayout = defineAsyncComponent({
     loader: () => import('/@src/layouts/navsearch.vue'),
     delay: 0,
@@ -47,9 +42,6 @@ export const useLayoutSwitcher = defineStore('layoutSwitcher', () => {
     'navbar-default': NavbarLayout,
     'navbar-fade': NavbarLayout,
     'navbar-colored': NavbarLayout,
-
-    'navbar-dropdown': NavbarDropdownLayout,
-    'navbar-dropdown-colored': NavbarDropdownLayout,
 
     'navsearch-fixed': NavsearchLayout,
     'navsearch-fixed-fade': NavsearchLayout,
@@ -71,7 +63,6 @@ export const useLayoutSwitcher = defineStore('layoutSwitcher', () => {
       case 'navsearch-fixed-fade':
         return 'fade'
       case 'navbar-colored':
-      case 'navbar-dropdown-colored':
         return 'colored'
       case 'navsearch-fixed':
       case 'navsearch-shrink':

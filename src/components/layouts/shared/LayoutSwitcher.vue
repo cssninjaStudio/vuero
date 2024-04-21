@@ -10,9 +10,6 @@ const isModalOpen = ref(false)
 
 const selectedSlug = computed(() => {
   switch (layoutSwitcher.dynamicLayoutId) {
-    case 'navbar-dropdown':
-    case 'navbar-dropdown-colored':
-      return 'dropdown'
     case 'navsearch-fixed':
     case 'navsearch-fixed-fade':
     case 'navsearch-reveal':
@@ -34,8 +31,6 @@ const selectedSlug = computed(() => {
 
 const layoutComponent = (slug?: string) => {
   switch (slug) {
-    case 'dropdown':
-      return 'NavbarDropdownLayout'
     case 'search':
       return 'NavsearchLayout'
     case 'sidebar':
@@ -80,10 +75,10 @@ const layoutComponent = (slug?: string) => {
           :selected="selectedSlug"
           :tabs="[
             { label: 'Navbar', value: 'navbar' },
-            {
-              label: 'Navdrop',
-              value: 'dropdown',
-            },
+            // {
+            //   label: 'Navdrop',
+            //   value: 'dropdown',
+            // },
             {
               label: 'Navsearch',
               value: 'search',
@@ -219,95 +214,6 @@ const layoutComponent = (slug?: string) => {
                         >
                         <h3>Colored theme</h3>
                         <p>Colored top nav</p>
-                        <div class="indicator">
-                          <iconify-icon
-                            aria-hidden="true"
-                            class="iconify"
-                            icon="lucide:check"
-                          />
-                        </div>
-                      </RouterLink>
-                    </div>
-                  </div>
-                  <div
-                    v-else-if="activeValue === 'dropdown'"
-                    class="columns is-multiline is-half-mobile-p"
-                  >
-                    <div class="column is-6">
-                      <RouterLink
-                        :to="layoutSwitcher.navbarLayoutLink"
-                        class="layout-item"
-                        :class="[
-                          layoutSwitcher.dynamicLayoutId === 'navbar-dropdown' &&
-                            'is-active',
-                        ]"
-                        @keydown.space.prevent="
-                          () => {
-                            layoutSwitcher.setDynamicLayoutId('navbar-dropdown')
-                            isModalOpen = false
-                          }
-                        "
-                        @click.passive="
-                          () => {
-                            layoutSwitcher.setDynamicLayoutId('navbar-dropdown')
-                            isModalOpen = false
-                          }
-                        "
-                      >
-                        <img
-                          class="light-image-block"
-                          src="/images/icons/layouts/layout-7.svg"
-                          alt=""
-                        >
-                        <img
-                          class="dark-image-block"
-                          src="/images/icons/layouts/layout-7-dark.svg"
-                          alt=""
-                        >
-                        <h3>Default theme</h3>
-                        <p>Top nav dropdown variation</p>
-                        <div class="indicator">
-                          <iconify-icon
-                            aria-hidden="true"
-                            class="iconify"
-                            icon="lucide:check"
-                          />
-                        </div>
-                      </RouterLink>
-                    </div>
-                    <div class="column is-6">
-                      <RouterLink
-                        :to="layoutSwitcher.navbarLayoutLink"
-                        class="layout-item"
-                        :class="[
-                          layoutSwitcher.dynamicLayoutId === 'navbar-dropdown-colored' &&
-                            'is-active',
-                        ]"
-                        @keydown.space.prevent="
-                          () => {
-                            layoutSwitcher.setDynamicLayoutId('navbar-dropdown-colored')
-                            isModalOpen = false
-                          }
-                        "
-                        @click.passive="
-                          () => {
-                            layoutSwitcher.setDynamicLayoutId('navbar-dropdown-colored')
-                            isModalOpen = false
-                          }
-                        "
-                      >
-                        <img
-                          class="light-image-block"
-                          src="/images/icons/layouts/layout-9.svg"
-                          alt=""
-                        >
-                        <img
-                          class="dark-image-block"
-                          src="/images/icons/layouts/layout-9-dark.svg"
-                          alt=""
-                        >
-                        <h3>Colored theme</h3>
-                        <p>Colored with dropdowns</p>
                         <div class="indicator">
                           <iconify-icon
                             aria-hidden="true"
