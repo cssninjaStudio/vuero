@@ -266,34 +266,6 @@ body {
 }
 
 /* ==========================================================================
-5. Minimal Wrapper
-========================================================================== */
-
-.minimal-wrapper {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  background: var(--lighter-grey);
-  transition: all 0.3s; // transition-all test
-
-  &.light {
-    background: var(--white);
-  }
-
-  &.lighter {
-    background: var(--smoke-white);
-  }
-
-  &.darker {
-    background: var(--background-grey);
-  }
-
-  .minimal-wrap {
-    min-height: calc(100vh - 60px);
-  }
-}
-
-/* ==========================================================================
 6. Media Queries
 ========================================================================== */
 
