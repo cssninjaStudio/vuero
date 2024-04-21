@@ -7,15 +7,17 @@ import Layout from '/@src/layouts/sidebar.vue'
  */
 const chat = useChat()
 
+const messageSubsidebarOpen = ref(false)
+
+provide('chat-page', {
+  messageSubsidebarOpen,
+})
+
 // Those utilities are used to manage the layout
-const viewWrapper = useViewWrapper()
-const sidebar = useSidebar()
 const notyf = useNotyf()
 
 // onMounted is a composition hook that is called when the component is mounted
 onMounted(async () => {
-  sidebar.setActive('messages')
-
   try {
     // Ask to the store to load conversations,
     // - chat.loading will be set to true while loading
@@ -56,14 +58,8 @@ function selectConversation(id: number) {
   chat.selectConversastion(id)
 }
 
-// We set the page headers
 useHead({
   title: 'Messaging chat - Sidebar - Vuero',
-})
-
-// Here we set the viewWrapper push state to match the active sidebar
-watchPostEffect(() => {
-  viewWrapper.setPushed(sidebar.active === 'messages')
 })
 </script>
 
@@ -71,7 +67,7 @@ watchPostEffect(() => {
   <Layout v-slot="{ isMobileSidebarOpen }" no-view-wrapper>
     <Transition name="slide-x">
       <MessagesSubsidebar
-        v-if="sidebar.active === 'messages'"
+        v-if="messageSubsidebarOpen"
         :conversations="chat.conversations"
         :selected-conversation-id="chat.selectedConversationId"
         @add-conversation="addConversation"
@@ -100,7 +96,7 @@ watchPostEffect(() => {
     />
     <VViewWrapper
       id="vuero-messaging"
-      :class="[sidebar.active === 'none' && 'is-pushed-messages']"
+      :class="[!messageSubsidebarOpen && 'is-pushed-messages']"
     >
       <VPageContentWrapper>
         <VPageContent class="chat-content">
@@ -109,12 +105,12 @@ watchPostEffect(() => {
               class="vuero-hamburger nav-trigger push-resize"
               tabindex="0"
               role="button"
-              @keydown.space.prevent="sidebar.toggle('messages')"
-              @click="sidebar.toggle('messages')"
+              @keydown.space.prevent="messageSubsidebarOpen = !messageSubsidebarOpen"
+              @click="messageSubsidebarOpen = !messageSubsidebarOpen"
             >
               <span class="menu-toggle has-chevron">
                 <span
-                  :class="[sidebar.active !== 'none' && 'active']"
+                  :class="[messageSubsidebarOpen && 'active']"
                   class="icon-box-toggle"
                 >
                   <span class="rotate">

@@ -1,11 +1,8 @@
 <script setup lang="ts">
 import { VAccordionMeta } from '/@src/data/documentation/components-meta'
 
-const sidebar = useSidebar()
-
-onMounted(() => {
-  sidebar.setActive('components')
-})
+const viewWrapper = useViewWrapper()
+viewWrapper.setPageTitle('VAccordion')
 
 useHead({
   title: 'VAccordion - Components - Vuero',
@@ -13,114 +10,81 @@ useHead({
 </script>
 
 <template>
-  <div>
-    <div class="page-title has-text-centered">
-      <!-- Sidebar Trigger -->
-      <div
-        class="vuero-hamburger nav-trigger push-resize"
-        tabindex="0"
-        role="button"
-        @keydown.space.prevent="sidebar.toggle('components')"
-        @click="sidebar.toggle('components')"
-      >
-        <span class="menu-toggle has-chevron">
-          <span
-            :class="[sidebar.active !== 'none' && 'active']"
-            class="icon-box-toggle"
-          >
-            <span class="rotate">
-              <i class="icon-line-top" />
-              <i class="icon-line-center" />
-              <i class="icon-line-bottom" />
-            </span>
-          </span>
-        </span>
+  <div class="page-content-inner">
+    <VBreadcrumb
+      with-icons
+      separator="bullet"
+      :items="[
+        {
+          label: 'Vuero',
+          hideLabel: true,
+          icon: 'lucide:home',
+          to: '/',
+        },
+        {
+          label: 'Components',
+          to: '/components/',
+        },
+        {
+          label: 'Accordions',
+        },
+        {
+          label: 'V-Accordion',
+          to: '/components/accordion/',
+        },
+      ]"
+    />
+
+    <div class="columns is-multiline">
+      <div class="column is-12">
+        <!--Accordion-->
+        <AccordionDefaultDocumentation />
       </div>
 
-      <div class="title-wrap">
-        <h1 class="title is-4">
-          VAccordion
-        </h1>
+      <div class="column is-6 is-full-tablet">
+        <VAccordion
+          :items="[
+            {
+              title: 'Accordion Item 1',
+              content: 'Sed ut perspiciatis unde omnis iste ...',
+            },
+            {
+              title: 'Accordion Item 2',
+              content: 'Sed ut perspiciatis unde omnis iste ...',
+            },
+            {
+              title: 'Accordion Item 3',
+              content: 'Sed ut perspiciatis unde omnis iste ...',
+            },
+          ]"
+        />
       </div>
 
-      <Toolbar />
-    </div>
-    <div class="page-content-inner">
-      <VBreadcrumb
-        with-icons
-        separator="bullet"
-        :items="[
-          {
-            label: 'Vuero',
-            hideLabel: true,
-            icon: 'lucide:home',
-            to: '/',
-          },
-          {
-            label: 'Components',
-            to: '/components/',
-          },
-          {
-            label: 'Accordions',
-          },
-          {
-            label: 'V-Accordion',
-            to: '/components/accordion/',
-          },
-        ]"
-      />
+      <div class="column is-6 is-full-tablet">
+        <VAccordion
+          :items="[
+            {
+              title: 'Accordion Item 1',
+              content: 'Sed ut perspiciatis unde omnis iste ...',
+            },
+            {
+              title: 'Accordion Item 2',
+              content: 'Sed ut perspiciatis unde omnis iste ...',
+            },
+            {
+              title: 'Accordion Item 3',
+              content: 'Sed ut perspiciatis unde omnis iste ...',
+            },
+          ]"
+          exclusive
+        />
+      </div>
 
-      <div class="columns is-multiline">
-        <div class="column is-12">
-          <!--Accordion-->
-          <AccordionDefaultDocumentation />
-        </div>
-
-        <div class="column is-6 is-full-tablet">
-          <VAccordion
-            :items="[
-              {
-                title: 'Accordion Item 1',
-                content: 'Sed ut perspiciatis unde omnis iste ...',
-              },
-              {
-                title: 'Accordion Item 2',
-                content: 'Sed ut perspiciatis unde omnis iste ...',
-              },
-              {
-                title: 'Accordion Item 3',
-                content: 'Sed ut perspiciatis unde omnis iste ...',
-              },
-            ]"
-          />
-        </div>
-
-        <div class="column is-6 is-full-tablet">
-          <VAccordion
-            :items="[
-              {
-                title: 'Accordion Item 1',
-                content: 'Sed ut perspiciatis unde omnis iste ...',
-              },
-              {
-                title: 'Accordion Item 2',
-                content: 'Sed ut perspiciatis unde omnis iste ...',
-              },
-              {
-                title: 'Accordion Item 3',
-                content: 'Sed ut perspiciatis unde omnis iste ...',
-              },
-            ]"
-            exclusive
-          />
-        </div>
-
-        <div class="column is-12 mt-5">
-          <DocumentationMeta
-            name="VAccordion"
-            :meta="VAccordionMeta"
-          />
-        </div>
+      <div class="column is-12 mt-5">
+        <DocumentationMeta
+          name="VAccordion"
+          :meta="VAccordionMeta"
+        />
       </div>
     </div>
   </div>

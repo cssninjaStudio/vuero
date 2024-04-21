@@ -16,7 +16,15 @@ const props = withDefaults(
 )
 
 const { onceImageErrored } = useImageError()
-const sidebar = useSidebar()
+// const sidebar = useSidebar()
+
+const {
+  messageSubsidebarOpen,
+} = inject<{
+  messageSubsidebarOpen: Ref<boolean>
+}>('chat-page', {
+  messageSubsidebarOpen: ref(false),
+})
 </script>
 
 <template>
@@ -30,12 +38,12 @@ const sidebar = useSidebar()
         class="vuero-hamburger nav-trigger push-resize messages-push"
         tabindex="0"
         role="button"
-        @keydown.space.prevent="sidebar.toggle('messages')"
-        @click="sidebar.toggle('messages')"
+        @keydown.space.prevent="messageSubsidebarOpen = !messageSubsidebarOpen"
+        @click="messageSubsidebarOpen = !messageSubsidebarOpen"
       >
         <span class="menu-toggle has-chevron">
           <span
-            :class="[sidebar.active !== 'none' && 'active']"
+            :class="[messageSubsidebarOpen && 'active']"
             class="icon-box-toggle"
           >
             <span class="rotate">
