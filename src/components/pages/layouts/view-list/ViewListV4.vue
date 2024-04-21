@@ -2,7 +2,7 @@
 import type { VAvatarProps } from '/@src/components/base/VAvatar.vue'
 import * as listData from '/@src/data/layouts/view-list-v4'
 
-const { onceImageErrored } = useImageError()
+const { onceError } = useImageError()
 
 export interface RecipeData {
   icon: string
@@ -135,7 +135,7 @@ const filteredData = computed(() => {
                   class="avatar"
                   :src="item.icon"
                   alt=""
-                  @error.once="onceImageErrored(150)"
+                  @error.once="onceError($event, 150)"
                 >
                 <div class="meta-left">
                   <h3>
@@ -143,7 +143,7 @@ const filteredData = computed(() => {
                       class="avatar"
                       :src="item.author.avatar"
                       alt=""
-                      @error.once="onceImageErrored(150)"
+                      @error.once="onceError($event, 150)"
                     >
                     <span>{{ item.author.name }}</span>
                   </h3>

@@ -83,7 +83,7 @@ declare global {
   const onStartTyping: typeof import('@vueuse/core')['onStartTyping']
   const onUnmounted: typeof import('vue')['onUnmounted']
   const onUpdated: typeof import('vue')['onUpdated']
-  const onceImageErrored: typeof import('../src/utils/via-placeholder')['onceImageErrored']
+  const onceError: typeof import('../src/utils/via-placeholder')['onceError']
   const pausableWatch: typeof import('@vueuse/core')['pausableWatch']
   const perSession: typeof import('../src/utils/apex-formatters')['perSession']
   const provide: typeof import('vue')['provide']

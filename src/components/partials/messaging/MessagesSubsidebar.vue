@@ -15,7 +15,7 @@ const props = withDefaults(
   },
 )
 
-const { onceImageErrored } = useImageError()
+const { onceError } = useImageError()
 // const sidebar = useSidebar()
 
 const {
@@ -96,7 +96,7 @@ const {
                 class="is-user"
                 :src="conversation.avatar"
                 alt=""
-                @error.once="onceImageErrored(150)"
+                @error.once="onceError($event, 150)"
               >
             </div>
             <div class="recipient-meta">

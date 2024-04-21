@@ -5,7 +5,7 @@ const emit = defineEmits(['close'])
 
 const panels = usePanels()
 const darkmode = useDarkmode()
-const { onceImageErrored } = useImageError()
+const { onceError } = useImageError()
 
 const { locale } = useI18n()
 const dropdownElement = ref<HTMLElement>()
@@ -104,7 +104,7 @@ const localFlagSrc = computed(() => {
                       class="user-photo"
                       alt=""
                       src="/demo/avatars/7.jpg"
-                      @error.once="onceImageErrored(150)"
+                      @error.once="onceError($event, 150)"
                     >
                   </div>
                   <div class="user-content">
@@ -122,7 +122,7 @@ const localFlagSrc = computed(() => {
                       class="user-photo"
                       alt=""
                       src="/demo/avatars/12.jpg"
-                      @error.once="onceImageErrored(150)"
+                      @error.once="onceError($event, 150)"
                     >
                   </div>
                   <div class="user-content">
@@ -140,7 +140,7 @@ const localFlagSrc = computed(() => {
                       class="user-photo"
                       alt=""
                       src="/demo/avatars/13.jpg"
-                      @error.once="onceImageErrored(150)"
+                      @error.once="onceError($event, 150)"
                     >
                   </div>
                   <div class="user-content">
@@ -158,7 +158,7 @@ const localFlagSrc = computed(() => {
                       class="user-photo"
                       alt=""
                       src="/demo/avatars/25.jpg"
-                      @error.once="onceImageErrored(150)"
+                      @error.once="onceError($event, 150)"
                     >
                   </div>
                   <div class="user-content">

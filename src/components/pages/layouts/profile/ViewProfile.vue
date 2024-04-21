@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { onceImageErrored } = useImageError()
+const { onceError } = useImageError()
 </script>
 
 <template>
@@ -92,7 +92,7 @@ const { onceImageErrored } = useImageError()
                     <img
                       src="/demo/photos/brands/airbnb.svg"
                       alt=""
-                      @error.once="onceImageErrored(150)"
+                      @error.once="onceError($event, 150)"
                     >
                     <div class="meta">
                       <span class="dark-inverted">Airbnb HQ</span>
@@ -111,7 +111,7 @@ const { onceImageErrored } = useImageError()
                     <img
                       src="/demo/photos/brands/facebook.svg"
                       alt=""
-                      @error.once="onceImageErrored(150)"
+                      @error.once="onceError($event, 150)"
                     >
                     <div class="meta">
                       <span class="dark-inverted">Facebook</span>
@@ -130,7 +130,7 @@ const { onceImageErrored } = useImageError()
                     <img
                       src="/demo/photos/brands/atlassian.svg"
                       alt=""
-                      @error.once="onceImageErrored(150)"
+                      @error.once="onceError($event, 150)"
                     >
                     <div class="meta">
                       <span class="dark-inverted">Atlassian</span>
@@ -149,7 +149,7 @@ const { onceImageErrored } = useImageError()
                     <img
                       src="/demo/photos/brands/github.svg"
                       alt=""
-                      @error.once="onceImageErrored(150)"
+                      @error.once="onceError($event, 150)"
                     >
                     <div class="meta">
                       <span class="dark-inverted">Github</span>

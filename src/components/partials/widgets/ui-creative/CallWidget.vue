@@ -6,7 +6,7 @@ const props = defineProps<{
   straight?: boolean
 }>()
 
-const { onceImageErrored } = useImageError()
+const { onceError } = useImageError()
 </script>
 
 <template>
@@ -24,7 +24,7 @@ const { onceImageErrored } = useImageError()
         class="badge"
         :src="props.badge"
         alt=""
-        @error.once="onceImageErrored(150)"
+        @error.once="onceError($event, 150)"
       >
     </div>
     <h3>Call {{ props.username }}?</h3>

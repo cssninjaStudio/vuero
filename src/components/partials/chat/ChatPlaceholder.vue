@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { onceImageErrored } = useImageError()
+const { onceError } = useImageError()
 </script>
 
 <template>
@@ -8,7 +8,7 @@ const { onceImageErrored } = useImageError()
       <img
         src="/@src/assets/illustrations/placeholders/having-coffee.svg"
         alt=""
-        @error.once="onceImageErrored(150)"
+        @error.once="onceError($event, 150)"
       >
       <div class="text">
         <h3>Nothing to show</h3>

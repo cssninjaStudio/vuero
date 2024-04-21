@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { posts } from '/@src/data/layouts/card-grid-v4'
 
-const { onceImageErrored } = useImageError()
+const { onceError } = useImageError()
 
 const filters = ref('')
 
@@ -102,7 +102,7 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
             <img
               :src="item.image"
               alt=""
-              @error.once="onceImageErrored(400, 300)"
+              @error.once="onceError($event, 400, 300)"
             >
             <div class="card-grid-item-content">
               <h3 class="dark-inverted">

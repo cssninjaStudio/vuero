@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const darkmode = useDarkmode()
-const { onceImageErrored } = useImageError()
+const { onceError } = useImageError()
 
 const dropdownElement = ref<HTMLElement>()
 const dropdown = useDropdown(dropdownElement)
@@ -137,7 +137,7 @@ const wizard = useWizard()
             class="avatar"
             src="/images/avatars/svg/vuero-1.svg"
             alt=""
-            @error.once="onceImageErrored(150)"
+            @error.once="onceError($event, 150)"
           >
         </div>
         <VIcon

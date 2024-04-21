@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const emit = defineEmits(['toggleMobileConversation'])
 
-const { onceImageErrored } = useImageError()
+const { onceError } = useImageError()
 </script>
 
 <template>
@@ -27,7 +27,7 @@ const { onceImageErrored } = useImageError()
           src="/demo/avatars/11.jpg"
           alt=""
           data-user-popover="13"
-          @error.once="onceImageErrored(150)"
+          @error.once="onceError($event, 150)"
         >
       </div>
     </div>
@@ -39,7 +39,7 @@ const { onceImageErrored } = useImageError()
             src="/demo/avatars/11.jpg"
             alt=""
             data-user-popover="13"
-            @error.once="onceImageErrored(150)"
+            @error.once="onceError($event, 150)"
           >
           <div class="chat-msg-date">
             Sent at 1:03pm
@@ -53,7 +53,7 @@ const { onceImageErrored } = useImageError()
             <img
               src="/demo/photos/apps/7.png"
               alt=""
-              @error.once="onceImageErrored(400, 300)"
+              @error.once="onceError($event, 400, 300)"
             >
           </div>
           <div class="chat-msg-text">
@@ -68,7 +68,7 @@ const { onceImageErrored } = useImageError()
             src="/images/avatars/svg/vuero-1.svg"
             alt=""
             data-user-popover="3"
-            @error.once="onceImageErrored(150)"
+            @error.once="onceError($event, 150)"
           >
           <div class="chat-msg-date">
             Sent at 1:22pm
@@ -94,7 +94,7 @@ const { onceImageErrored } = useImageError()
             src="/demo/avatars/11.jpg"
             alt=""
             data-user-popover="13"
-            @error.once="onceImageErrored(150)"
+            @error.once="onceError($event, 150)"
           >
           <div class="chat-msg-date">
             Sent at 1:22pm
@@ -119,7 +119,7 @@ const { onceImageErrored } = useImageError()
             src="/images/avatars/svg/vuero-1.svg"
             alt=""
             data-user-popover="3"
-            @error.once="onceImageErrored(150)"
+            @error.once="onceError($event, 150)"
           >
           <div class="chat-msg-date">
             Sent at 1:23pm

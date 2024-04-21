@@ -9,7 +9,7 @@ import { useTrendWidgetChart } from '/@src/data/widgets/charts/trendWidgetChart'
 
 import { usePersonalScoreGauge } from '/@src/data/widgets/charts/personalScoreGauge'
 
-const { onceImageErrored } = useImageError()
+const { onceError } = useImageError()
 
 const { personalScoreGaugeOptions, onPersonalScoreGaugeReady } = usePersonalScoreGauge()
 const { trendWidgetChartOptions } = useTrendWidgetChart()
@@ -266,7 +266,7 @@ const { trendWidgetChartOptions } = useTrendWidgetChart()
           <img
             src="/demo/photos/widgets/2.jpg"
             alt=""
-            @error.once="onceImageErrored(400, 300)"
+            @error.once="onceError($event, 400, 300)"
           >
           <div class="progress-wrap">
             <progress

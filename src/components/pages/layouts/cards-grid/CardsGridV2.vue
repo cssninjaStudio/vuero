@@ -14,7 +14,7 @@ export interface ProjectData {
     avatar: string
   }
 }
-const { onceImageErrored } = useImageError()
+const { onceError } = useImageError()
 
 const projects = gridData.projects as ProjectData[]
 
@@ -140,7 +140,7 @@ const optionsSingle = [
                   <img
                     :src="item.image"
                     alt=""
-                    @error.once="onceImageErrored(1280, 960)"
+                    @error.once="onceError($event, 1280, 960)"
                   >
                 </figure>
               </div>

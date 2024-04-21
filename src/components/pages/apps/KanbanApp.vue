@@ -3,7 +3,7 @@ import 'dragula/dist/dragula.css'
 
 import { useKanban } from '/@src/data/apps/kanban'
 
-const { onceImageErrored } = useImageError()
+const { onceError } = useImageError()
 
 const {
   tasks,
@@ -218,7 +218,7 @@ onMounted(() => {
                         class="task-owner"
                         :src="task.participants[0].picture"
                         alt=""
-                        @error.once="onceImageErrored(62)"
+                        @error.once="onceError($event, 62)"
                       >
                     </div>
                   </div>

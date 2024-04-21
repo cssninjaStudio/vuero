@@ -3,7 +3,7 @@
 
 // let slider: TinySliderInstance
 // const sliderElement = ref<HTMLElement>()
-const { onceImageErrored } = useImageError()
+const { onceError } = useImageError()
 const router = useRouter()
 const notyf = useNotyf()
 const darkmode = useDarkmode()
@@ -326,7 +326,7 @@ useHead({
                       <img
                         :src="avatar"
                         alt=""
-                        @error.once="onceImageErrored(150)"
+                        @error.once="onceError($event, 150)"
                       >
                     </div>
                   </div>

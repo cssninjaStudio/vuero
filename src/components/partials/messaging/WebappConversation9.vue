@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const emit = defineEmits(['toggleMobileConversation'])
 
-const { onceImageErrored } = useImageError()
+const { onceError } = useImageError()
 </script>
 
 <template>
@@ -27,7 +27,7 @@ const { onceImageErrored } = useImageError()
           src="/demo/avatars/22.jpg"
           alt=""
           data-user-popover="5"
-          @error.once="onceImageErrored(150)"
+          @error.once="onceError($event, 150)"
         >
       </div>
     </div>
@@ -39,7 +39,7 @@ const { onceImageErrored } = useImageError()
             src="/demo/avatars/22.jpg"
             alt=""
             data-user-popover="5"
-            @error.once="onceImageErrored(150)"
+            @error.once="onceError($event, 150)"
           >
           <div class="chat-msg-date">
             Sent at 9:12am
@@ -61,7 +61,7 @@ const { onceImageErrored } = useImageError()
             src="/images/avatars/svg/vuero-1.svg"
             alt=""
             data-user-popover="3"
-            @error.once="onceImageErrored(150)"
+            @error.once="onceError($event, 150)"
           >
           <div class="chat-msg-date">
             Sent at 9:13am

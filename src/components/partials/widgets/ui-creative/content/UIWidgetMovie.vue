@@ -12,7 +12,7 @@ const props = withDefaults(
   },
 )
 
-const { onceImageErrored } = useImageError()
+const { onceError } = useImageError()
 </script>
 
 <template>
@@ -20,7 +20,7 @@ const { onceImageErrored } = useImageError()
     <img
       :src="props.picture"
       alt=""
-      @error.once="onceImageErrored(400, 300)"
+      @error.once="onceError($event, 400, 300)"
     >
     <div class="widget-meta">
       <VIcon

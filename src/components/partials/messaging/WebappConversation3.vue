@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const emit = defineEmits(['toggleMobileConversation'])
 
-const { onceImageErrored } = useImageError()
+const { onceError } = useImageError()
 </script>
 
 <template>
@@ -27,21 +27,21 @@ const { onceImageErrored } = useImageError()
           src="/images/avatars/svg/vuero-1.svg"
           alt=""
           data-user-popover="3"
-          @error.once="onceImageErrored(150)"
+          @error.once="onceError($event, 150)"
         >
         <img
           class="chat-area-profile"
           src="/demo/avatars/13.jpg"
           alt=""
           data-user-popover="6"
-          @error.once="onceImageErrored(150)"
+          @error.once="onceError($event, 150)"
         >
         <img
           class="chat-area-profile"
           src="/demo/avatars/19.jpg"
           alt=""
           data-user-popover="17"
-          @error.once="onceImageErrored(150)"
+          @error.once="onceError($event, 150)"
         >
         <span>
           <span>4</span>
@@ -56,7 +56,7 @@ const { onceImageErrored } = useImageError()
             src="/demo/avatars/13.jpg"
             alt=""
             data-user-popover="6"
-            @error.once="onceImageErrored(150)"
+            @error.once="onceError($event, 150)"
           >
           <div class="chat-msg-date">
             Sent at 4:15pm
@@ -70,7 +70,7 @@ const { onceImageErrored } = useImageError()
             <img
               src="/demo/photos/demo-apps/1.jpg"
               alt=""
-              @error.once="onceImageErrored(400, 300)"
+              @error.once="onceError($event, 400, 300)"
             >
           </div>
           <div class="chat-msg-text">
@@ -85,7 +85,7 @@ const { onceImageErrored } = useImageError()
             src="/images/avatars/svg/vuero-1.svg"
             alt=""
             data-user-popover="3"
-            @error.once="onceImageErrored(150)"
+            @error.once="onceError($event, 150)"
           >
           <div class="chat-msg-date">
             Sent at 4:15pm
@@ -107,7 +107,7 @@ const { onceImageErrored } = useImageError()
             src="/demo/avatars/19.jpg"
             alt=""
             data-user-popover="17"
-            @error.once="onceImageErrored(150)"
+            @error.once="onceError($event, 150)"
           >
           <div class="chat-msg-date">
             Sent at 4:27pm
@@ -134,7 +134,7 @@ const { onceImageErrored } = useImageError()
             src="/images/avatars/svg/vuero-1.svg"
             alt=""
             data-user-popover="3"
-            @error.once="onceImageErrored(150)"
+            @error.once="onceError($event, 150)"
           >
           <div class="chat-msg-date">
             Sent at 4:31pm
@@ -156,7 +156,7 @@ const { onceImageErrored } = useImageError()
             src="/demo/avatars/12.jpg"
             alt=""
             data-user-popover="2"
-            @error.once="onceImageErrored(150)"
+            @error.once="onceError($event, 150)"
           >
           <div class="chat-msg-date">
             Sent at 4:32pm
@@ -175,7 +175,7 @@ const { onceImageErrored } = useImageError()
             src="/demo/avatars/7.jpg"
             alt=""
             data-user-popover="0"
-            @error.once="onceImageErrored(150)"
+            @error.once="onceError($event, 150)"
           >
           <div class="chat-msg-date">
             Sent at 4:32pm
@@ -198,7 +198,7 @@ const { onceImageErrored } = useImageError()
             src="/images/avatars/svg/vuero-1.svg"
             alt=""
             data-user-popover="3"
-            @error.once="onceImageErrored(150)"
+            @error.once="onceError($event, 150)"
           >
           <div class="chat-msg-date">
             Sent at 4:33pm
@@ -221,7 +221,7 @@ const { onceImageErrored } = useImageError()
             src="/demo/avatars/32.jpg"
             alt=""
             data-user-popover="28"
-            @error.once="onceImageErrored(150)"
+            @error.once="onceError($event, 150)"
           >
           <div class="chat-msg-date">
             Sent at 4:39pm

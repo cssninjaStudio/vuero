@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { onceImageErrored } = useImageError()
+const { onceError } = useImageError()
 </script>
 
 <template>
@@ -222,7 +222,7 @@ const { onceImageErrored } = useImageError()
                   <img
                     src="/demo/photos/38.jpg"
                     alt=""
-                    @error.once="onceImageErrored(800, 600)"
+                    @error.once="onceError($event, 800, 600)"
                   >
                 </div>
                 <div class="featured-content">
@@ -248,7 +248,7 @@ const { onceImageErrored } = useImageError()
                   <img
                     src="/demo/photos/37.jpg"
                     alt=""
-                    @error.once="onceImageErrored(800, 600)"
+                    @error.once="onceError($event, 800, 600)"
                   >
                 </div>
                 <div class="featured-content">

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { files } from '/@src/data/layouts/tile-grid-v2'
 
-const { onceImageErrored } = useImageError()
+const { onceError } = useImageError()
 
 const filters = ref('')
 
@@ -107,7 +107,7 @@ const optionsSingle = [
               <img
                 :src="item.icon"
                 alt=""
-                @error.once="onceImageErrored(150)"
+                @error.once="onceError($event, 150)"
               >
               <div class="meta">
                 <span class="dark-inverted">{{ item.name }}</span>

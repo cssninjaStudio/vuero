@@ -12,7 +12,7 @@ const numberFormat = new Intl.NumberFormat('en-US', {
   currency: 'USD',
 })
 
-const { onceImageErrored } = useImageError()
+const { onceError } = useImageError()
 const router = useRoute()
 const sortedData = computed(() => {
   switch (router.query.sort) {
@@ -252,7 +252,7 @@ const exampleColumns = {
             class="project-avatar"
             src="/images/icons/logos/slicer.svg"
             alt=""
-            @error.once="onceImageErrored(150)"
+            @error.once="onceError($event, 150)"
           >
           <h3>The Slicer project</h3>
           <p>Design project</p>
@@ -269,7 +269,7 @@ const exampleColumns = {
             class="project-avatar"
             src="/images/icons/logos/metamovies.svg"
             alt=""
-            @error.once="onceImageErrored(150)"
+            @error.once="onceError($event, 150)"
           >
           <h3>Metamovies reworked</h3>
           <p>Design project</p>
@@ -286,7 +286,7 @@ const exampleColumns = {
             class="project-avatar"
             src="/@src/assets/illustrations/dashboards/flights/company1.svg"
             alt=""
-            @error.once="onceImageErrored(150)"
+            @error.once="onceError($event, 150)"
           >
           <h3>Supreme Flights app</h3>
           <p>Software project</p>
@@ -303,7 +303,7 @@ const exampleColumns = {
             class="project-avatar"
             src="/images/icons/logos/fastpizza.svg"
             alt=""
-            @error.once="onceImageErrored(150)"
+            @error.once="onceError($event, 150)"
           >
           <h3>Fastpizza delivery app</h3>
           <p>Software project</p>
@@ -320,7 +320,7 @@ const exampleColumns = {
             class="project-avatar"
             src="/images/icons/logos/drop.svg"
             alt=""
-            @error.once="onceImageErrored(150)"
+            @error.once="onceError($event, 150)"
           >
           <h3>Drop website redesign</h3>
           <p>Design project</p>

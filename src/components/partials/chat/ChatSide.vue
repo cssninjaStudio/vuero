@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const chat = useChat()
-const { onceImageErrored } = useImageError()
+const { onceError } = useImageError()
 </script>
 
 <template>
@@ -18,14 +18,14 @@ const { onceImageErrored } = useImageError()
           id="user-details-image"
           :src="chat.selectedConversation.avatar"
           alt=""
-          @error="onceImageErrored(150)"
+          @error="onceError($event, 150)"
         >
         <img
           id="user-details-badge"
           class="is-badge"
           src="/images/icons/flags/united-states-of-america.svg"
           alt=""
-          @error.once="onceImageErrored(150)"
+          @error.once="onceError($event, 150)"
         >
       </div>
       <h4
@@ -95,62 +95,62 @@ const { onceImageErrored } = useImageError()
           <img
             src="/demo/photos/demo-apps/1.jpg"
             alt=""
-            @error.once="onceImageErrored(1600, 900)"
+            @error.once="onceError($event, 1600, 900)"
           >
           <img
             src="/demo/photos/demo-apps/2.jpg"
             alt=""
-            @error.once="onceImageErrored(1600, 900)"
+            @error.once="onceError($event, 1600, 900)"
           >
           <img
             src="/demo/photos/demo-apps/3.jpg"
             alt=""
-            @error.once="onceImageErrored(1600, 900)"
+            @error.once="onceError($event, 1600, 900)"
           >
           <img
             src="/demo/photos/demo-apps/4.jpg"
             alt=""
-            @error.once="onceImageErrored(1600, 900)"
+            @error.once="onceError($event, 1600, 900)"
           >
           <img
             src="/demo/photos/demo-apps/5.jpg"
             alt=""
-            @error.once="onceImageErrored(1600, 900)"
+            @error.once="onceError($event, 1600, 900)"
           >
           <img
             src="/demo/photos/demo-apps/6.jpg"
             alt=""
-            @error.once="onceImageErrored(1600, 900)"
+            @error.once="onceError($event, 1600, 900)"
           >
           <img
             src="/demo/photos/demo-apps/7.jpg"
             alt=""
-            @error.once="onceImageErrored(1600, 900)"
+            @error.once="onceError($event, 1600, 900)"
           >
           <img
             src="/demo/photos/demo-apps/8.jpg"
             alt=""
-            @error.once="onceImageErrored(1600, 900)"
+            @error.once="onceError($event, 1600, 900)"
           >
           <img
             src="/demo/photos/demo-apps/9.jpg"
             alt=""
-            @error.once="onceImageErrored(1600, 900)"
+            @error.once="onceError($event, 1600, 900)"
           >
           <img
             src="/demo/photos/demo-apps/10.jpg"
             alt=""
-            @error.once="onceImageErrored(1600, 900)"
+            @error.once="onceError($event, 1600, 900)"
           >
           <img
             src="/demo/photos/demo-apps/11.jpg"
             alt=""
-            @error.once="onceImageErrored(1600, 900)"
+            @error.once="onceError($event, 1600, 900)"
           >
           <img
             src="/demo/photos/demo-apps/12.jpg"
             alt=""
-            @error.once="onceImageErrored(1600, 900)"
+            @error.once="onceError($event, 1600, 900)"
           >
         </div>
         <a class="view-more">View More</a>

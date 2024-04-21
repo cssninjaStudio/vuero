@@ -7,7 +7,7 @@ const props = defineProps<{
   mobileMessageOpen?: boolean
 }>()
 
-const { onceImageErrored } = useImageError()
+const { onceError } = useImageError()
 const { isMediumScreen } = useScreenSize()
 
 const dropdownElement1 = ref<HTMLElement>()
@@ -30,7 +30,7 @@ const dropdown2 = useDropdown(dropdownElement2)
         class="sender-pic"
         src="/demo/avatars/25.jpg"
         alt=""
-        @error.once="onceImageErrored(150)"
+        @error.once="onceError($event, 150)"
       >
       <div class="message-meta">
         <span class="message-title"> Important project review next thursday </span>
@@ -189,7 +189,7 @@ const dropdown2 = useDropdown(dropdownElement2)
             <img
               src="/images/avatars/svg/vuero-1.svg"
               alt=""
-              @error.once="onceImageErrored(150)"
+              @error.once="onceError($event, 150)"
             >
             <div class="reply-details">
               <span>Reply as</span>

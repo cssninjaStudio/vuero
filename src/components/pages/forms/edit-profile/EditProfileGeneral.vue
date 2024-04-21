@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { onceImageErrored } = useImageError()
+const { onceError } = useImageError()
 
 const isUploading = ref(false)
 const isLoading = ref(false)
@@ -98,7 +98,7 @@ const onSave = async () => {
               class="avatar"
               src="/images/avatars/svg/vuero-1.svg"
               alt=""
-              @error.once="onceImageErrored(150)"
+              @error.once="onceError($event, 150)"
             >
             <VFilePond
               v-else

@@ -15,7 +15,7 @@ const cancelUploadElement = ref<HTMLElement>()
 const dropzone = ref<typeof Dropzone>()
 const previewTemplate = ref('')
 
-const { onceImageErrored } = useImageError()
+const { onceError } = useImageError()
 const wizard = useWizard()
 const router = useRouter()
 wizard.setStep({
@@ -329,7 +329,7 @@ watch(previewTemplate, () => {
                 <img
                   data-dz-thumbnail
                   alt=""
-                  @error.once="onceImageErrored(150)"
+                  @error.once="onceError($event, 150)"
                 >
               </div>
               <div class="list-item-meta">

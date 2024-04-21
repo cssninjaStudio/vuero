@@ -10,7 +10,7 @@ const props = withDefaults(
   },
 )
 
-const { onceImageErrored } = useImageError()
+const { onceError } = useImageError()
 
 const filters = ref('')
 const tab = ref(props.activeTab)
@@ -135,7 +135,7 @@ const filteredData = computed(() => {
                     class="media"
                     :src="item.picture"
                     alt=""
-                    @error.once="onceImageErrored(150, 110)"
+                    @error.once="onceError($event, 150, 110)"
                   >
                   <div>
                     <span class="item-name dark-inverted">{{ item.name }}</span>

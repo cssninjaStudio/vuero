@@ -26,7 +26,7 @@ const props = withDefaults(defineProps<VPhotoSwipeProps>(), {
   thumbnailRadius: undefined,
 })
 
-const { onceImageErrored } = useImageError()
+const { onceError } = useImageError()
 
 let lightbox: PhotoSwipeLightbox | null = null
 const galleryElement = ref<HTMLElement>()
@@ -81,7 +81,7 @@ onUnmounted(() => {
           :src="item.thumbnail"
           :alt="item.alt"
           itemprop="thumbnail"
-          @error.once="onceImageErrored(item.w, item.h)"
+          @error.once="onceError($event, item.w, item.h)"
         >
       </a>
     </figure>

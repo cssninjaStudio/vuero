@@ -4,7 +4,7 @@ const isLoading = ref(false)
 const range = ref()
 
 const notyf = useNotyf()
-const { onceImageErrored } = useImageError()
+const { onceError } = useImageError()
 const { y } = useWindowScroll()
 
 const isScrolling = computed(() => {
@@ -211,7 +211,7 @@ const onSave = async () => {
               <img
                 src="/demo/photos/brands/airbnb.svg"
                 alt=""
-                @error.once="onceImageErrored(50)"
+                @error.once="onceError($event, 50)"
               >
               <div class="meta">
                 <span class="dark-inverted">Airbnb HQ</span>
@@ -235,7 +235,7 @@ const onSave = async () => {
               <img
                 src="/demo/photos/brands/facebook.svg"
                 alt=""
-                @error.once="onceImageErrored(50)"
+                @error.once="onceError($event, 50)"
               >
               <div class="meta">
                 <span class="dark-inverted">Facebook</span>
@@ -259,7 +259,7 @@ const onSave = async () => {
               <img
                 src="/demo/photos/brands/atlassian.svg"
                 alt=""
-                @error.once="onceImageErrored(50)"
+                @error.once="onceError($event, 50)"
               >
               <div class="meta">
                 <span class="dark-inverted">Atlassian</span>
@@ -283,7 +283,7 @@ const onSave = async () => {
               <img
                 src="/demo/photos/brands/github.svg"
                 alt=""
-                @error.once="onceImageErrored(50)"
+                @error.once="onceError($event, 50)"
               >
               <div class="meta">
                 <span class="dark-inverted">Github</span>
@@ -307,7 +307,7 @@ const onSave = async () => {
               <img
                 src="/demo/photos/brands/slack.svg"
                 alt=""
-                @error.once="onceImageErrored(50)"
+                @error.once="onceError($event, 50)"
               >
               <div class="meta">
                 <span class="dark-inverted">Slack</span>
@@ -331,7 +331,7 @@ const onSave = async () => {
               <img
                 src="/demo/photos/brands/gitlab.svg"
                 alt=""
-                @error.once="onceImageErrored(50)"
+                @error.once="onceError($event, 50)"
               >
               <div class="meta">
                 <span class="dark-inverted">Gitlab</span>

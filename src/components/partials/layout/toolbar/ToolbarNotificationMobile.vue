@@ -2,7 +2,7 @@
 const dropdownElement = ref<HTMLElement>()
 const dropdown = useDropdown(dropdownElement)
 
-const { onceImageErrored } = useImageError()
+const { onceError } = useImageError()
 </script>
 
 <template>
@@ -44,7 +44,7 @@ const { onceImageErrored } = useImageError()
                   class="user-photo"
                   alt=""
                   src="/images/avatars/svg/vuero-4.svg"
-                  @error.once="onceImageErrored(150)"
+                  @error.once="onceError($event, 150)"
                 >
               </div>
               <div class="user-content">
@@ -62,7 +62,7 @@ const { onceImageErrored } = useImageError()
                   class="user-photo"
                   alt=""
                   src="/images/avatars/svg/vuero-2.svg"
-                  @error.once="onceImageErrored(150)"
+                  @error.once="onceError($event, 150)"
                 >
               </div>
               <div class="user-content">
@@ -80,7 +80,7 @@ const { onceImageErrored } = useImageError()
                   class="user-photo"
                   alt=""
                   src="/images/avatars/svg/vuero-5.svg"
-                  @error.once="onceImageErrored(150)"
+                  @error.once="onceError($event, 150)"
                 >
               </div>
               <div class="user-content">
@@ -98,7 +98,7 @@ const { onceImageErrored } = useImageError()
                   class="user-photo"
                   alt=""
                   src="/images/avatars/svg/vuero-9.svg"
-                  @error.once="onceImageErrored(150)"
+                  @error.once="onceError($event, 150)"
                 >
               </div>
               <div class="user-content">

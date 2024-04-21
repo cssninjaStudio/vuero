@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { offers } from '/@src/data/layouts/view-list-v3'
 
-const { onceImageErrored } = useImageError()
+const { onceError } = useImageError()
 
 type TabId = 'all' | 'saved'
 const activeTab = ref<TabId>('all')
@@ -115,7 +115,7 @@ const filteredData = computed(() => {
                     class="avatar"
                     :src="item.logo"
                     alt=""
-                    @error.once="onceImageErrored(150)"
+                    @error.once="onceError($event, 150)"
                   >
                   <div class="meta-left">
                     <h3>

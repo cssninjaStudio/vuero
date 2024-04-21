@@ -8,7 +8,7 @@ import * as foodDelivery from '/@src/data/dashboards/food-delivery'
 import { followersStats } from '/@src/data/widgets/ui/followers'
 import { iconList } from '/@src/data/widgets/ui/menuList'
 
-const { onceImageErrored } = useImageError()
+const { onceError } = useImageError()
 
 const activeSection = ref('cart')
 
@@ -168,7 +168,7 @@ onUnmounted(() => {
                     <img
                       :src="restaurant.picture"
                       alt=""
-                      @error.once="onceImageErrored(800, 450)"
+                      @error.once="onceError($event, 800, 450)"
                     >
                     <div class="timer">
                       <div>
@@ -182,7 +182,7 @@ onUnmounted(() => {
                       <img
                         :src="restaurant.icon"
                         alt=""
-                        @error.once="onceImageErrored(800, 450)"
+                        @error.once="onceError($event, 800, 450)"
                       >
                     </div>
                     <div class="meta-content">

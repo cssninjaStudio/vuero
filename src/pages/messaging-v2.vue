@@ -126,7 +126,7 @@ const conversations: conversationData[] = [
   },
 ]
 
-const { onceImageErrored } = useImageError()
+const { onceError } = useImageError()
 const panels = usePanels()
 const selectedConversationId = ref(3)
 const mobileConversationListOpen = ref(false)
@@ -222,7 +222,7 @@ useHead({
                   class="avatar"
                   src="/images/avatars/svg/vuero-1.svg"
                   alt=""
-                  @error.once="onceImageErrored(150)"
+                  @error.once="onceError($event, 150)"
                 >
               </div>
               <VIcon
@@ -552,62 +552,62 @@ useHead({
                 <img
                   src="/demo/photos/demo-apps/1.jpg"
                   alt=""
-                  @error.once="onceImageErrored(1600, 900)"
+                  @error.once="onceError($event, 1600, 900)"
                 >
                 <img
                   src="/demo/photos/demo-apps/2.jpg"
                   alt=""
-                  @error.once="onceImageErrored(1600, 900)"
+                  @error.once="onceError($event, 1600, 900)"
                 >
                 <img
                   src="/demo/photos/demo-apps/3.jpg"
                   alt=""
-                  @error.once="onceImageErrored(1600, 900)"
+                  @error.once="onceError($event, 1600, 900)"
                 >
                 <img
                   src="/demo/photos/demo-apps/4.jpg"
                   alt=""
-                  @error.once="onceImageErrored(1600, 900)"
+                  @error.once="onceError($event, 1600, 900)"
                 >
                 <img
                   src="/demo/photos/demo-apps/5.jpg"
                   alt=""
-                  @error.once="onceImageErrored(1600, 900)"
+                  @error.once="onceError($event, 1600, 900)"
                 >
                 <img
                   src="/demo/photos/demo-apps/6.jpg"
                   alt=""
-                  @error.once="onceImageErrored(1600, 900)"
+                  @error.once="onceError($event, 1600, 900)"
                 >
                 <img
                   src="/demo/photos/demo-apps/7.jpg"
                   alt=""
-                  @error.once="onceImageErrored(1600, 900)"
+                  @error.once="onceError($event, 1600, 900)"
                 >
                 <img
                   src="/demo/photos/demo-apps/8.jpg"
                   alt=""
-                  @error.once="onceImageErrored(1600, 900)"
+                  @error.once="onceError($event, 1600, 900)"
                 >
                 <img
                   src="/demo/photos/demo-apps/9.jpg"
                   alt=""
-                  @error.once="onceImageErrored(1600, 900)"
+                  @error.once="onceError($event, 1600, 900)"
                 >
                 <img
                   src="/demo/photos/demo-apps/10.jpg"
                   alt=""
-                  @error.once="onceImageErrored(1600, 900)"
+                  @error.once="onceError($event, 1600, 900)"
                 >
                 <img
                   src="/demo/photos/demo-apps/11.jpg"
                   alt=""
-                  @error.once="onceImageErrored(1600, 900)"
+                  @error.once="onceError($event, 1600, 900)"
                 >
                 <img
                   src="/demo/photos/demo-apps/12.jpg"
                   alt=""
-                  @error.once="onceImageErrored(1600, 900)"
+                  @error.once="onceError($event, 1600, 900)"
                 >
               </div>
               <a class="view-more">View More</a>

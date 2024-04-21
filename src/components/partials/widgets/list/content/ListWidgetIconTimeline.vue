@@ -10,7 +10,7 @@ const props = withDefaults(
   },
 )
 
-const { onceImageErrored } = useImageError()
+const { onceError } = useImageError()
 </script>
 
 <template>
@@ -29,7 +29,7 @@ const { onceImageErrored } = useImageError()
           class="avatar"
           :src="item.picture"
           alt=""
-          @error.once="onceImageErrored(150)"
+          @error.once="onceError($event, 150)"
         >
         <VIcon
           v-else

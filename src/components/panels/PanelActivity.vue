@@ -1,7 +1,7 @@
 <script setup lang="ts">
 type TabId = 'team' | 'projects' | 'schedule'
 
-const { onceImageErrored } = useImageError()
+const { onceError } = useImageError()
 const panels = usePanels()
 
 const activeTab = ref<TabId>('team')
@@ -205,7 +205,7 @@ const activeTab = ref<TabId>('team')
                   class="project-avatar"
                   src="/images/icons/logos/slicer.svg"
                   alt=""
-                  @error.once="onceImageErrored(150)"
+                  @error.once="onceError($event, 150)"
                 >
                 <div class="meta">
                   <span>The slicer project</span>
@@ -255,7 +255,7 @@ const activeTab = ref<TabId>('team')
                   class="project-avatar"
                   src="/images/icons/logos/metamovies.svg"
                   alt=""
-                  @error.once="onceImageErrored(150)"
+                  @error.once="onceError($event, 150)"
                 >
                 <div class="meta">
                   <span>Metamovies reworked</span>
@@ -301,7 +301,7 @@ const activeTab = ref<TabId>('team')
                   class="project-avatar"
                   src="/images/icons/logos/fastpizza.svg"
                   alt=""
-                  @error.once="onceImageErrored(150)"
+                  @error.once="onceError($event, 150)"
                 >
                 <div class="meta">
                   <span>Fast Pizza redesign</span>
@@ -367,7 +367,7 @@ const activeTab = ref<TabId>('team')
                     class="avatar"
                     src="/demo/avatars/7.jpg"
                     alt=""
-                    @error.once="onceImageErrored(150)"
+                    @error.once="onceError($event, 150)"
                   >
                 </div>
                 <div class="timeline-content">

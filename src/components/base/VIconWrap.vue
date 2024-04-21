@@ -34,7 +34,7 @@ const props = withDefaults(defineProps<VIconWrapProps>(), {
   dark: '3',
 })
 
-const { onceImageErrored } = useImageError()
+const { onceError } = useImageError()
 </script>
 
 <template>
@@ -58,7 +58,7 @@ const { onceImageErrored } = useImageError()
       v-if="props.picture"
       :src="props.picture"
       alt=""
-      @error.once="onceImageErrored(32)"
+      @error.once="onceError($event, 32)"
     >
     <VIcon :icon="props.icon" />
     <slot name="after" />
