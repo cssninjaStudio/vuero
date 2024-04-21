@@ -97,64 +97,6 @@
       align-items: center;
       padding: 0 20px;
 
-      .project-dropdown {
-        margin-inline-end: 12px;
-        cursor: pointer !important;
-
-        > img {
-          height: 32px;
-          width: 32px;
-          border-radius: var(--radius-rounded);
-        }
-
-        .dropdown-menu {
-          margin-top: 12px;
-
-          .dropdown-content {
-            padding-top: 0;
-            padding-bottom: 0;
-            overflow: hidden;
-
-            .dropdown-block {
-              display: flex;
-              align-items: center;
-              padding: 16px;
-
-              &:hover,
-              &:focus {
-                background: var(--fade-grey-light-4);
-              }
-
-              .meta {
-                margin-inline-start: 12px;
-                font-family: var(--font);
-
-                span {
-                  display: block;
-
-                  &:first-child {
-                    font-size: 0.95rem;
-                    font-weight: 500;
-                    color: var(--dark-text);
-                    line-height: 1.2;
-                    max-width: 140px;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                    overflow: hidden;
-                  }
-
-                  &:nth-child(2) {
-                    // text-transform: uppercase;
-                    color: var(--light-text);
-                    font-size: 0.85rem;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-
       h3 {
         font-family: var(--font-alt);
         color: var(--light-text);
@@ -440,31 +382,6 @@
 .is-dark {
   .sidebar-panel {
     &.is-generic {
-      .subpanel-header {
-        .project-dropdown {
-          .dropdown-menu {
-            .dropdown-content {
-              .dropdown-block {
-                background: var(--dark-sidebar-light-2);
-
-                &:hover,
-                &:focus {
-                  background: var(--dark-sidebar-light-5) !important;
-                }
-
-                .meta {
-                  span {
-                    &:first-child {
-                      color: var(--dark-dark-text) !important;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-
       .inner {
         ul {
           li {

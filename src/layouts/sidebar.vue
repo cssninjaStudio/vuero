@@ -182,7 +182,7 @@ const links = ref<SidebarItem[]>([
               tag: 'v1.2',
             },
             {
-              label: 'Mapp V2',
+              label: 'Maps V2',
               to: '/sidebar/maps-2',
               icon: 'lnil lnil-map',
               tag: 'v1.2',

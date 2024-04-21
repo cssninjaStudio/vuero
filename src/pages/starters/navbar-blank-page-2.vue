@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import Layout from '/@src/layouts/navbar.vue'
+
 /**
  * This is a Vue Component that will be
  * automatically mapped to a entry on vue-router.
@@ -22,7 +24,7 @@ useHead({
 </script>
 
 <template>
-  <NavbarLayout theme="fade">
+  <Layout theme="fade">
     <!-- Content Wrapper -->
     <div class="page-content-inner">
       <!--
@@ -32,5 +34,5 @@ useHead({
         files in /src/components/pages directory
       -->
     </div>
-  </NavbarLayout>
+  </Layout>
 </template>

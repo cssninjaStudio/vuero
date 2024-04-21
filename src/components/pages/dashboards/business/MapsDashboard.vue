@@ -450,8 +450,8 @@ watch(
 <style lang="scss">
 .has-top-nav {
   .dashboard-map-wrapper {
-    top: 80px;
-    height: calc(100% - 80px);
+    top: 65px;
+    height: calc(100% - 65px);
   }
 }
 .navbar-layout-search {

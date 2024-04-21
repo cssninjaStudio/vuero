@@ -210,7 +210,7 @@ const githubIssueUrl = computed(() => {
   }
 
   .content {
-    &::v-deep(code) {
+    &:deep(code) {
       background: var(--background-gray);
     }
   }

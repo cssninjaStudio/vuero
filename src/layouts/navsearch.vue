@@ -79,7 +79,10 @@ const links = ref<NavsearchItem[]>([
 
 <template>
   <NavsearchLayout :links>
-    <slot />
+    <!-- Propagating the context to the default slot -->
+    <template #default="context">
+      <slot v-bind="context" />
+    </template>
 
     <template #logo>
       <RouterLink
@@ -94,7 +97,7 @@ const links = ref<NavsearchItem[]>([
 
     <template #title>
       <ProjectsQuickDropdown />
-      <h1 class="title is-6">
+      <h1 class="title is-5">
         {{ viewWrapper.pageTitle }}
       </h1>
     </template>

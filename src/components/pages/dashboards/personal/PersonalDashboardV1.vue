@@ -275,7 +275,7 @@ const { profitChartOptions } = useProfitChart()
             border-radius: var(--radius-large);
             transition: all 0.3s; // transition-all test
 
-            ::v-deep(.media-flex-center) {
+            :deep(.media-flex-center) {
               .flex-meta {
                 span {
                   &:first-child {

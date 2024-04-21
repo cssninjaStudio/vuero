@@ -86,3 +86,62 @@ const selectedProject = ref(projects[1])
     </template>
   </VDropdown>
 </template>
+<style lang="scss">
+.project-dropdown {
+  margin-inline-end: 12px;
+  cursor: pointer !important;
+
+  > img {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+  }
+
+  .dropdown-menu {
+    margin-top: 8px;
+
+    .dropdown-content {
+      padding-top: 0;
+      padding-bottom: 0;
+      overflow: hidden;
+
+      .dropdown-block {
+        display: flex;
+        align-items: center;
+        padding: 16px;
+
+        &:hover,
+        &:focus {
+          background: var(--fade-grey-light-4);
+        }
+
+        .meta {
+          margin-inline-start: 12px;
+          font-family: var(--font);
+
+          span {
+            display: block;
+
+            &:first-child {
+              font-size: 0.95rem;
+              font-weight: 500;
+              color: var(--dark-text);
+              line-height: 1.2;
+              max-width: 140px;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
+            }
+
+            &:nth-child(2) {
+              // text-transform: uppercase;
+              color: var(--light-text);
+              font-size: 0.85rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+</style>
