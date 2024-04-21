@@ -20,9 +20,9 @@ const props = defineProps<{
         data-simplebar
       >
         <li v-for="item of props.items" :key="item.to">
-          <RouterLink :to="item.to">
+          <VLink :to="item.to">
             {{ item.label }}
-          </RouterLink>
+          </VLink>
         </li>
       </ul>
     </div>

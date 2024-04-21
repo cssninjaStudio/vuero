@@ -45,9 +45,9 @@ const emits = defineEmits<{
             <span v-if="item.label" class="divider-label">{{ item.label }}</span>
           </li>
           <li v-else-if="item.type === 'link'" :key="`link-${idx}`">
-            <RouterLink :to="item.to">
+            <VLink :to="item.to">
               {{ item.label }}
-            </RouterLink>
+            </VLink>
           </li>
           <VCollapseLinks
             v-else-if="item.type === 'collapse'"
@@ -67,7 +67,7 @@ const emits = defineEmits<{
               />
             </template>
 
-            <RouterLink
+            <VLink
               v-for="child of item.children"
               :key="child.to"
               :to="child.to"
@@ -86,7 +86,7 @@ const emits = defineEmits<{
                 outlined
                 curved
               />
-            </RouterLink>
+            </VLink>
           </VCollapseLinks>
         </template>
       </ul>

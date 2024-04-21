@@ -97,7 +97,7 @@ const layoutComponent = (slug?: string) => {
                     class="columns is-multiline is-half-mobile-p"
                   >
                     <div class="column is-6">
-                      <RouterLink
+                      <VLink
                         :to="layoutSwitcher.navbarLayoutLink"
                         class="layout-item"
                         :class="[
@@ -136,10 +136,10 @@ const layoutComponent = (slug?: string) => {
                             icon="lucide:check"
                           />
                         </div>
-                      </RouterLink>
+                      </VLink>
                     </div>
                     <div class="column is-6">
-                      <RouterLink
+                      <VLink
                         :to="layoutSwitcher.navbarLayoutLink"
                         class="layout-item"
                         :class="[
@@ -177,10 +177,10 @@ const layoutComponent = (slug?: string) => {
                             icon="lucide:check"
                           />
                         </div>
-                      </RouterLink>
+                      </VLink>
                     </div>
                     <div class="column is-6">
-                      <RouterLink
+                      <VLink
                         :to="layoutSwitcher.navbarLayoutLink"
                         class="layout-item"
                         :class="[
@@ -219,7 +219,7 @@ const layoutComponent = (slug?: string) => {
                             icon="lucide:check"
                           />
                         </div>
-                      </RouterLink>
+                      </VLink>
                     </div>
                   </div>
                   <div
@@ -227,7 +227,7 @@ const layoutComponent = (slug?: string) => {
                     class="columns is-multiline is-half-mobile-p"
                   >
                     <div class="column is-6">
-                      <RouterLink
+                      <VLink
                         :to="layoutSwitcher.navbarLayoutLink"
                         class="layout-item"
                         :class="[
@@ -266,10 +266,10 @@ const layoutComponent = (slug?: string) => {
                             icon="lucide:check"
                           />
                         </div>
-                      </RouterLink>
+                      </VLink>
                     </div>
                     <div class="column is-6">
-                      <RouterLink
+                      <VLink
                         :to="layoutSwitcher.navbarLayoutLink"
                         class="layout-item"
                         :class="[
@@ -308,10 +308,10 @@ const layoutComponent = (slug?: string) => {
                             icon="lucide:check"
                           />
                         </div>
-                      </RouterLink>
+                      </VLink>
                     </div>
                     <div class="column is-6">
-                      <RouterLink
+                      <VLink
                         :to="layoutSwitcher.navbarLayoutLink"
                         class="layout-item"
                         :class="[
@@ -350,11 +350,11 @@ const layoutComponent = (slug?: string) => {
                             icon="lucide:check"
                           />
                         </div>
-                      </RouterLink>
+                      </VLink>
                     </div>
 
                     <div class="column is-6">
-                      <RouterLink
+                      <VLink
                         :to="layoutSwitcher.navbarLayoutLink"
                         class="layout-item"
                         :class="[
@@ -393,7 +393,7 @@ const layoutComponent = (slug?: string) => {
                             icon="lucide:check"
                           />
                         </div>
-                      </RouterLink>
+                      </VLink>
                     </div>
                   </div>
                   <div
@@ -401,7 +401,7 @@ const layoutComponent = (slug?: string) => {
                     class="columns is-multiline is-half-mobile-p"
                   >
                     <div class="column is-6">
-                      <RouterLink
+                      <VLink
                         :to="layoutSwitcher.sidebarLayoutLink"
                         class="layout-item"
                         :class="[
@@ -440,10 +440,10 @@ const layoutComponent = (slug?: string) => {
                             icon="lucide:check"
                           />
                         </div>
-                      </RouterLink>
+                      </VLink>
                     </div>
                     <div class="column is-6">
-                      <RouterLink
+                      <VLink
                         :to="layoutSwitcher.sidebarLayoutLink"
                         class="layout-item"
                         :class="[
@@ -482,10 +482,10 @@ const layoutComponent = (slug?: string) => {
                             icon="lucide:check"
                           />
                         </div>
-                      </RouterLink>
+                      </VLink>
                     </div>
                     <div class="column is-6">
-                      <RouterLink
+                      <VLink
                         :to="layoutSwitcher.sidebarLayoutLink"
                         class="layout-item"
                         :class="[
@@ -524,10 +524,10 @@ const layoutComponent = (slug?: string) => {
                             icon="lucide:check"
                           />
                         </div>
-                      </RouterLink>
+                      </VLink>
                     </div>
                     <div class="column is-6">
-                      <RouterLink
+                      <VLink
                         :to="layoutSwitcher.sidebarLayoutLink"
                         class="layout-item"
                         :class="[
@@ -566,10 +566,10 @@ const layoutComponent = (slug?: string) => {
                             icon="lucide:check"
                           />
                         </div>
-                      </RouterLink>
+                      </VLink>
                     </div>
                     <div class="column is-6">
-                      <RouterLink
+                      <VLink
                         :to="layoutSwitcher.sidebarLayoutLink"
                         class="layout-item"
                         :class="[
@@ -608,10 +608,10 @@ const layoutComponent = (slug?: string) => {
                             icon="lucide:check"
                           />
                         </div>
-                      </RouterLink>
+                      </VLink>
                     </div>
                     <div class="column is-6">
-                      <RouterLink
+                      <VLink
                         :to="layoutSwitcher.sidebarLayoutLink"
                         class="layout-item"
                         :class="[
@@ -650,10 +650,10 @@ const layoutComponent = (slug?: string) => {
                             icon="lucide:check"
                           />
                         </div>
-                      </RouterLink>
+                      </VLink>
                     </div>
                     <div class="column is-6">
-                      <RouterLink
+                      <VLink
                         :to="layoutSwitcher.sidebarLayoutLink"
                         class="layout-item"
                         :class="[
@@ -692,7 +692,7 @@ const layoutComponent = (slug?: string) => {
                             icon="lucide:check"
                           />
                         </div>
-                      </RouterLink>
+                      </VLink>
                     </div>
                   </div>
                   <div
@@ -700,7 +700,7 @@ const layoutComponent = (slug?: string) => {
                     class="columns is-multiline is-half-mobile-p"
                   >
                     <div class="column is-6">
-                      <RouterLink
+                      <VLink
                         :to="layoutSwitcher.sidebarLayoutLink"
                         class="layout-item"
                         :class="[
@@ -740,10 +740,10 @@ const layoutComponent = (slug?: string) => {
                             icon="lucide:check"
                           />
                         </div>
-                      </RouterLink>
+                      </VLink>
                     </div>
                     <div class="column is-6">
-                      <RouterLink
+                      <VLink
                         :to="layoutSwitcher.sidebarLayoutLink"
                         class="layout-item"
                         :class="[
@@ -783,10 +783,10 @@ const layoutComponent = (slug?: string) => {
                             icon="lucide:check"
                           />
                         </div>
-                      </RouterLink>
+                      </VLink>
                     </div>
                     <div class="column is-6">
-                      <RouterLink
+                      <VLink
                         :to="layoutSwitcher.sidebarLayoutLink"
                         class="layout-item"
                         :class="[
@@ -826,10 +826,10 @@ const layoutComponent = (slug?: string) => {
                             icon="lucide:check"
                           />
                         </div>
-                      </RouterLink>
+                      </VLink>
                     </div>
                     <div class="column is-6">
-                      <RouterLink
+                      <VLink
                         :to="layoutSwitcher.sidebarLayoutLink"
                         class="layout-item"
                         :class="[
@@ -869,7 +869,7 @@ const layoutComponent = (slug?: string) => {
                             icon="lucide:check"
                           />
                         </div>
-                      </RouterLink>
+                      </VLink>
                     </div>
                   </div>
                 </Transition>

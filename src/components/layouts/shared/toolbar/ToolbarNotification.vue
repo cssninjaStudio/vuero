@@ -37,12 +37,12 @@ const { onceImageErrored } = useImageError()
               </h6>
             </div>
             <div class="heading-right">
-              <RouterLink
+              <VLink
                 class="notification-link"
                 to="/sidebar/layouts/profile-notifications"
               >
                 See all
-              </RouterLink>
+              </VLink>
             </div>
           </div>
           <ul class="notification-list">

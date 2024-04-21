@@ -6,29 +6,29 @@
     <div class="search-history-links">
       <ul>
         <li>
-          <RouterLink to="#">
+          <VLink to="#">
             Personal V1
-          </RouterLink>
+          </VLink>
         </li>
         <li>
-          <RouterLink to="#">
+          <VLink to="#">
             UI Widgets
-          </RouterLink>
+          </VLink>
         </li>
         <li>
-          <RouterLink to="#">
+          <VLink to="#">
             Clean Navbar
-          </RouterLink>
+          </VLink>
         </li>
         <li>
-          <RouterLink to="#">
+          <VLink to="#">
             Map V2
-          </RouterLink>
+          </VLink>
         </li>
         <li>
-          <RouterLink to="#">
+          <VLink to="#">
             Writer
-          </RouterLink>
+          </VLink>
         </li>
       </ul>
     </div>

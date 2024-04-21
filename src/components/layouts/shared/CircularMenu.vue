@@ -86,7 +86,7 @@ const localFlagSrc = computed(() => {
           alt=""
         >
       </a>
-      <RouterLink
+      <VLink
         to="/sidebar/layouts/profile-notifications"
         class="menu-item is-flex"
       >
@@ -95,7 +95,7 @@ const localFlagSrc = computed(() => {
           class="iconify"
           icon="lucide:bell"
         />
-      </RouterLink>
+      </VLink>
       <a
         class="menu-item is-flex"
         role="button"

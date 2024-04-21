@@ -139,14 +139,14 @@ watch(
 
       <template #links>
         <div class="buttons">
-          <RouterLink
+          <VLink
             v-for="link in props.links"
             :key="link.to"
             :to="link.to"
             class="button"
           >
             {{ link.label }}
-          </RouterLink>
+          </VLink>
         </div>
       </template>
 

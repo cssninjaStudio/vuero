@@ -33,7 +33,7 @@ const {
     v-else-if="props.link.type === 'component'"
     :title="props.link.label"
   />
-  <RouterLink
+  <VLink
     v-else-if="props.link.type === 'link'"
     :title="props.link.label"
     :to="props.link.to"
@@ -43,7 +43,7 @@ const {
       class="iconify sidebar-svg"
       :icon="props.link.icon"
     />
-  </RouterLink>
+  </VLink>
   <a
     v-else-if="props.link.type === 'action'"
     role="button"

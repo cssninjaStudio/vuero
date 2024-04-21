@@ -8,7 +8,7 @@ const props = defineProps<{
 
 <template>
   <li v-if="props.link.type === 'link'">
-    <RouterLink
+    <VLink
       :to="props.link.to"
       class="single-link"
     >
@@ -20,7 +20,7 @@ const props = defineProps<{
       </span>
       {{ props.link.label }}
       <span v-if="props.link.badge !== undefined" class="badge">{{ props.link.badge }}</span>
-    </RouterLink>
+    </VLink>
   </li>
   <component
     :is="props.link.component"
@@ -65,7 +65,7 @@ const props = defineProps<{
         icon="lucide:chevron-left"
       />
     </template>
-    <RouterLink
+    <VLink
       v-for="child in props.link.children"
       :key="child.to"
       :to="child.to"
@@ -73,7 +73,7 @@ const props = defineProps<{
     >
       <i :class="child.icon" />
       <span>{{ child.label }}</span>
-    </RouterLink>
+    </VLink>
   </VCollapseLinks>
   <li
     v-else-if="props.link.type === 'divider'"
