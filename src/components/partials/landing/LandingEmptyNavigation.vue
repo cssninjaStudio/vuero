@@ -81,10 +81,10 @@ watchEffect(() => {
           <label class="theme-toggle">
             <input
               id="navbar-night-toggle--daynight"
-              :model-value="isDark"
+              :checked="isDark"
               data-cy="dark-mode-toggle"
               type="checkbox"
-              @click="onChange"
+              @click.prevent="onChange"
             >
             <span class="toggler">
               <span class="dark">

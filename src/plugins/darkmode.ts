@@ -5,7 +5,7 @@ interface DarkmodeContext {
   isDark: Ref<boolean>
   onChange: (event: MouseEvent) => Promise<void>
 }
-export const injectionKey = Symbol('navbar-layout') as InjectionKey<DarkmodeContext>
+export const injectionKey = Symbol('darkmode') as InjectionKey<DarkmodeContext>
 
 const darkmodeClass = 'is-dark'
 type DarkModeSchema = 'auto' | 'dark' | 'light'
