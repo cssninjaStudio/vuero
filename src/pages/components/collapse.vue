@@ -19,8 +19,9 @@ const data = [
   },
 ]
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('VCollapse')
+useVueroContext({
+  pageTitle: 'VCollapse',
+})
 
 useHead({
   title: 'VCollapse - Components - Vuero',

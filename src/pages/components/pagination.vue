@@ -12,8 +12,9 @@ const currentPage = computed(() => {
   return 1
 })
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('VFlexPagination')
+useVueroContext({
+  pageTitle: 'VFlexPagination',
+})
 
 useHead({
   title: 'VFlexPagination - Components - Vuero',

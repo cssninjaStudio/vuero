@@ -34,8 +34,9 @@ const data = [
   },
 ]
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('VAccordionImage')
+useVueroContext({
+  pageTitle: 'VAccordionImage',
+})
 
 useHead({
   title: 'VAccordionImage - Components - Vuero',

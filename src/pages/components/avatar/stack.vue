@@ -4,8 +4,9 @@ import { VAvatarStackMeta } from '/@src/data/documentation/components-meta'
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('VAvatarStack')
+useVueroContext({
+  pageTitle: 'VAvatarStack',
+})
 
 useHead({
   title: 'VAvatarStack - Components - Vuero',

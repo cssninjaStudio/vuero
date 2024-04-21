@@ -1,6 +1,7 @@
 <script setup lang="ts">
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('Colors')
+useVueroContext({
+  pageTitle: 'Colors',
+})
 
 useHead({
   title: 'Colors - Elements - Vuero',

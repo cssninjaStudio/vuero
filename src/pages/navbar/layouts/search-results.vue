@@ -1,6 +1,7 @@
 <script setup lang="ts">
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('Search Results')
+useVueroContext({
+  pageTitle: 'Search Results',
+})
 
 useHead({
   title: 'Search Results - Navbar - Vuero',

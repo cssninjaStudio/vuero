@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import { flexRowsContacts } from '/@src/data/documentation/table'
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('Slots usage')
+useVueroContext({
+  pageTitle: 'Slots usage',
+})
 useHead({
   title: 'Slots usage - VFlexTable - Components - Vuero',
 })

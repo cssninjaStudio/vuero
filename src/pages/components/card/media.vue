@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import { VCardMediaMeta } from '/@src/data/documentation/components-meta'
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('VCardMedia')
+useVueroContext({
+  pageTitle: 'VCardMedia',
+})
 
 useHead({
   title: 'VCardMedia - Components - Vuero',

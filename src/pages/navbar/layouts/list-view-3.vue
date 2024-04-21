@@ -2,8 +2,9 @@
 type TabId = 'active' | 'inactive'
 const activeTab = ref<TabId>('active')
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('List View 3')
+useVueroContext({
+  pageTitle: 'List View 3',
+})
 
 useHead({
   title: 'List View 3 - Navbar - Vuero',

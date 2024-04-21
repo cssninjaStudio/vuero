@@ -4,8 +4,9 @@ import { VTextareaMeta } from '/@src/data/documentation/components-meta'
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('VTextarea')
+useVueroContext({
+  pageTitle: 'VTextarea',
+})
 
 useHead({
   title: 'VTextarea - Forms Elements - Vuero',

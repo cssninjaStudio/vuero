@@ -24,8 +24,9 @@ const bigFormOpen = ref(false)
 const noscrollOpen = ref(false)
 const nocloseOpen = ref(false)
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('VModal')
+useVueroContext({
+  pageTitle: 'VModal',
+})
 
 useHead({
   title: 'VModal - Elements - Vuero',

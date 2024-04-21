@@ -22,7 +22,7 @@ const props = withDefaults(
   },
 )
 
-const viewWrapper = useViewWrapper()
+const { pageTitle } = useVueroContext()
 const route = useRoute()
 const isMobileSidebarOpen = ref(false)
 
@@ -122,7 +122,7 @@ watch(
         <div v-if="'logo' in $slots" class="separator" />
         <slot name="title" v-bind="contextRx">
           <h1 class="title is-6">
-            {{ viewWrapper.pageTitle }}
+            {{ pageTitle }}
           </h1>
         </slot>
       </template>
@@ -167,7 +167,7 @@ watch(
             <NavsearchPageTitleMobile>
               <slot v-bind="contextRx" name="title-mobile">
                 <h1 class="title is-4">
-                  {{ viewWrapper.pageTitle }}
+                  {{ pageTitle }}
                 </h1>
               </slot>
 
@@ -189,7 +189,7 @@ watch(
               <NavsearchPageTitleMobile>
                 <slot v-bind="contextRx" name="title-mobile">
                   <h1 class="title is-4">
-                    {{ viewWrapper.pageTitle }}
+                    {{ pageTitle }}
                   </h1>
                 </slot>
 

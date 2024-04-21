@@ -24,8 +24,9 @@ function getSnippet(icon: any) {
   return ` <i class="lnir ${icon.className}" aria-hidden="true"></i>`
 }
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('Line Icons Regular Icons')
+useVueroContext({
+  pageTitle: 'Line Icons Regular Icons',
+})
 useHead({
   title: 'Line Icons Regular Icons - Elements - Vuero',
 })

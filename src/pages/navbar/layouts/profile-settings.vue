@@ -1,6 +1,7 @@
 <script setup lang="ts">
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('Profile Settings')
+useVueroContext({
+  pageTitle: 'Profile Settings',
+})
 
 useHead({
   title: 'Profile Settings - Navbar - Vuero',

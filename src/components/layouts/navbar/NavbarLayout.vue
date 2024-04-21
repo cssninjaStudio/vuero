@@ -21,7 +21,7 @@ const props = withDefaults(
   },
 )
 
-const viewWrapper = useViewWrapper()
+const { pageTitle } = useVueroContext()
 const route = useRoute()
 
 const linksWithChildren = computed(() => {
@@ -148,7 +148,7 @@ watch(() => Boolean(activeSubnav.value?.type === 'megamenu' || isMobileSidebarOp
         <div v-if="'logo' in $slots" class="separator" />
         <slot name="title" v-bind="contextRx">
           <h1 class="title is-5">
-            {{ viewWrapper.pageTitle }}
+            {{ pageTitle }}
           </h1>
         </slot>
       </template>
@@ -203,7 +203,7 @@ watch(() => Boolean(activeSubnav.value?.type === 'megamenu' || isMobileSidebarOp
             <NavbarPageTitleMobile>
               <slot name="title-mobile" v-bind="contextRx">
                 <h1 class="title is-4">
-                  {{ viewWrapper.pageTitle }}
+                  {{ pageTitle }}
                 </h1>
               </slot>
 
@@ -223,7 +223,7 @@ watch(() => Boolean(activeSubnav.value?.type === 'megamenu' || isMobileSidebarOp
               <NavbarPageTitleMobile>
                 <slot name="title-mobile" v-bind="contextRx">
                   <h1 class="title is-4">
-                    {{ viewWrapper.pageTitle }}
+                    {{ pageTitle }}
                   </h1>
                 </slot>
 

@@ -2,8 +2,9 @@
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('VTooltip')
+useVueroContext({
+  pageTitle: 'VTooltip',
+})
 
 useHead({
   title: 'VTooltip - Elements - Vuero',

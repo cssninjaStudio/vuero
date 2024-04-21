@@ -4,8 +4,9 @@ import { VPlaceholderPageMeta } from '/@src/data/documentation/components-meta'
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('VPlaceholderPage')
+useVueroContext({
+  pageTitle: 'VPlaceholderPage',
+})
 
 useHead({
   title: 'VPlaceholderPage - Components - Vuero',

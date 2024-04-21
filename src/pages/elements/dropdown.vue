@@ -4,8 +4,9 @@ import { VDropdownMeta } from '/@src/data/documentation/components-meta'
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('VDropdown')
+useVueroContext({
+  pageTitle: 'VDropdown',
+})
 
 useHead({
   title: 'VDropdown - Elements - Vuero',

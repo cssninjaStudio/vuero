@@ -2,8 +2,10 @@
 import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle(() => t('pages.dashboard-personnal-1.page-title'))
+
+useVueroContext({
+  pageTitle: () => t('pages.dashboard-personnal-1.page-title'),
+})
 
 useHead(() => ({
   title: `${t('pages.dashboard-personnal-1.page-title')} - Sidebar - Vuero`,

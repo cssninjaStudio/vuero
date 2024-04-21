@@ -2,8 +2,9 @@
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('vueform/multiselect')
+useVueroContext({
+  pageTitle: 'vueform/multiselect',
+})
 
 useHead({
   title: 'vueform/multiselect - Addons - Vuero',

@@ -1,8 +1,9 @@
 <script setup lang="ts">
 const panels = usePanels()
 const layoutSwitcher = useLayoutSwitcher()
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('Maps 1')
+useVueroContext({
+  pageTitle: 'Maps 1',
+})
 
 useHead({
   title: 'Maps 1 - Sidebar - Vuero',

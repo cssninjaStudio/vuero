@@ -1,6 +1,7 @@
 <script setup lang="ts">
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('Main Dashboard')
+useVueroContext({
+  pageTitle: 'Main Dashboard',
+})
 
 useHead({
   title: 'Main Dashboard - My app',

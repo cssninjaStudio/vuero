@@ -4,8 +4,9 @@ import { VProgressMeta } from '/@src/data/documentation/components-meta'
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('VProgress')
+useVueroContext({
+  pageTitle: 'VProgress',
+})
 
 useHead({
   title: 'VProgress - Elements - Vuero',

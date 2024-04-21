@@ -9,8 +9,9 @@ const toc = useMarkdownToc(markdownContainer)
 const themeColors = useThemeColors()
 const { options } = useSplineSimple()
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('VBillboardJS')
+useVueroContext({
+  pageTitle: 'VBillboardJS',
+})
 
 useHead({
   title: 'VBillboardJS - Plugins - Vuero',

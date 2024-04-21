@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { NavbarItem } from '/@src/components/layouts/navbar/navbar.types'
 
-const viewWrapper = useViewWrapper()
+const { pageTitle } = useVueroContext()
 
 const links = ref<NavbarItem[]>([
   {
@@ -1120,7 +1120,7 @@ const links = ref<NavbarItem[]>([
     <template #title>
       <ProjectsQuickDropdown />
       <h1 class="title is-6">
-        {{ viewWrapper.pageTitle }}
+        {{ pageTitle }}
       </h1>
     </template>
 
@@ -1129,7 +1129,7 @@ const links = ref<NavbarItem[]>([
         <ProjectsQuickDropdown />
 
         <h1 class="title is-4">
-          {{ viewWrapper.pageTitle }}
+          {{ pageTitle }}
         </h1>
       </div>
     </template>

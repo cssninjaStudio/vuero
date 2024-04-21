@@ -13,7 +13,7 @@ function getAvatarData(user: UserPopover): any {
   }
 }
 
-const viewWrapper = useViewWrapper()
+const { pageTitle } = useVueroContext()
 
 const search = ref('')
 const suggestions = computed(() => {
@@ -97,7 +97,7 @@ const links = ref<NavsearchItem[]>([
     <template #title>
       <ProjectsQuickDropdown />
       <h1 class="title is-5">
-        {{ viewWrapper.pageTitle }}
+        {{ pageTitle }}
       </h1>
     </template>
 
@@ -106,7 +106,7 @@ const links = ref<NavsearchItem[]>([
         <ProjectsQuickDropdown />
 
         <h1 class="title is-4">
-          {{ viewWrapper.pageTitle }}
+          {{ pageTitle }}
         </h1>
       </div>
     </template>

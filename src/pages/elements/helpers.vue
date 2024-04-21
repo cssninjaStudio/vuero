@@ -1,6 +1,7 @@
 <script setup lang="ts">
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('Helpers')
+useVueroContext({
+  pageTitle: 'Helpers',
+})
 
 useHead({
   title: 'Helpers - Elements - Vuero',

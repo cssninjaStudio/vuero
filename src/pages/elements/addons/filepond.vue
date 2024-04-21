@@ -4,8 +4,9 @@ import { VFilePondMeta } from '/@src/data/documentation/components-meta'
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('VFilePond')
+useVueroContext({
+  pageTitle: 'VFilePond',
+})
 
 useHead({
   title: 'VFilePond - Addons - Vuero',

@@ -4,8 +4,9 @@ import { VIMaskInputMeta } from '/@src/data/documentation/components-meta'
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('VIMaskInput')
+useVueroContext({
+  pageTitle: 'VIMaskInput',
+})
 
 useHead({
   title: 'VIMaskInput - Addons - Vuero',

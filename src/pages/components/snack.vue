@@ -4,8 +4,9 @@ import { VSnackMeta } from '/@src/data/documentation/components-meta'
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('VSnack')
+useVueroContext({
+  pageTitle: 'VSnack',
+})
 
 useHead({
   title: 'VSnack - Components - Vuero',

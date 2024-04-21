@@ -13,8 +13,9 @@ import Layout from '/@src/layouts/sidebar.vue'
  * @see /src/router.ts
  */
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('Blank Page 5')
+useVueroContext({
+  pageTitle: 'Blank Page 5',
+})
 
 useHead({
   title: 'Blank Page 5 - Sidebar - Vuero',

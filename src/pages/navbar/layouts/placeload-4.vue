@@ -1,6 +1,7 @@
 <script setup lang="ts">
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('Placeload Tiles')
+useVueroContext({
+  pageTitle: 'Placeload Tiles',
+})
 
 useHead({
   title: 'Placeload Tiles - Navbar - Vuero',

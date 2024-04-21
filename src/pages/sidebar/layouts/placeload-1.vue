@@ -1,6 +1,7 @@
 <script setup lang="ts">
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('Placeload List')
+useVueroContext({
+  pageTitle: 'Placeload List',
+})
 
 useHead({
   title: 'Placeload List - Sidebar - Vuero',

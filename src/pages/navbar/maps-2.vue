@@ -1,7 +1,8 @@
 <script setup lang="ts">
 const layoutSwitcher = useLayoutSwitcher()
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('Maps 2')
+useVueroContext({
+  pageTitle: 'Maps 2',
+})
 
 useHead({
   title: 'Maps 2 - Navbar - Vuero',

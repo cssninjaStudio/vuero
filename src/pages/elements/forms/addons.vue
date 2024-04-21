@@ -2,8 +2,9 @@
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('Input Addons')
+useVueroContext({
+  pageTitle: 'Input Addons',
+})
 
 useHead({
   title: 'Input Addons - Forms Elements - Vuero',

@@ -10,10 +10,6 @@ export const injectionKey = Symbol('darkmode') as InjectionKey<DarkmodeContext>
 const darkmodeClass = 'is-dark'
 type DarkModeSchema = 'auto' | 'dark' | 'light'
 
-// export function useDarkmode() {
-
-// }
-
 /**
  * Enable Vue Data Loader plugin from unplugin-vue-router
  *
@@ -82,15 +78,13 @@ export default definePlugin(({ app }) => {
   }
 
   watch(isDark, (value) => {
-    if (!import.meta.env.SSR) {
-      const body = document.documentElement
+    const body = document.documentElement
 
-      if (value) {
-        body.classList.add(darkmodeClass)
-      }
-      else {
-        body.classList.remove(darkmodeClass)
-      }
+    if (value) {
+      body.classList.add(darkmodeClass)
+    }
+    else {
+      body.classList.remove(darkmodeClass)
     }
   }, { immediate: true })
 

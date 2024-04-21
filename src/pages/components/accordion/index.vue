@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import { VAccordionMeta } from '/@src/data/documentation/components-meta'
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('VAccordion')
+useVueroContext({
+  pageTitle: 'VAccordion',
+})
 
 useHead({
   title: 'VAccordion - Components - Vuero',

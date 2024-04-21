@@ -305,6 +305,7 @@ declare global {
   const useVibrate: typeof import('@vueuse/core')['useVibrate']
   const useViewWrapper: typeof import('../src/stores/view-wrapper')['useViewWrapper']
   const useVirtualList: typeof import('@vueuse/core')['useVirtualList']
+  const useVueroContext: typeof import('../src/composables/vuero-context')['useVueroContext']
   const useWakeLock: typeof import('@vueuse/core')['useWakeLock']
   const useWebNotification: typeof import('@vueuse/core')['useWebNotification']
   const useWebSocket: typeof import('@vueuse/core')['useWebSocket']

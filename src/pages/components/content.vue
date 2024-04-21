@@ -2,8 +2,9 @@
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('Content')
+useVueroContext({
+  pageTitle: 'Content',
+})
 
 useHead({
   title: 'Content - Components - Vuero',

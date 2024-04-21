@@ -4,8 +4,9 @@ import { VBlockMeta } from '/@src/data/documentation/components-meta'
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('VBlock')
+useVueroContext({
+  pageTitle: 'VBlock',
+})
 
 useHead({
   title: 'VBlock - Components - Vuero',

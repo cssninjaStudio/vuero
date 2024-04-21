@@ -8,8 +8,9 @@ onMounted(() => {
   notyf?.success('This toast is displayed when the page is mounted')
 })
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('notyf')
+useVueroContext({
+  pageTitle: 'notyf',
+})
 
 useHead({
   title: 'Notyf - Plugins - Vuero',

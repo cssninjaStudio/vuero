@@ -4,8 +4,9 @@ import { VPhotosSwipeMeta } from '/@src/data/documentation/components-meta'
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('VPhotosSwipe')
+useVueroContext({
+  pageTitle: 'VPhotosSwipe',
+})
 
 useHead({
   title: 'VPhotosSwipe - Plugins - Vuero',

@@ -2,8 +2,9 @@
 type TabId = 'all' | 'team'
 const activeTab = ref<TabId>('all')
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('Grid Users 3')
+useVueroContext({
+  pageTitle: 'Grid Users 3',
+})
 
 useHead({
   title: 'Grid Users 3 - Navbar - Vuero',

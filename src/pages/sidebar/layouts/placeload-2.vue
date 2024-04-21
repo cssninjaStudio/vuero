@@ -1,6 +1,7 @@
 <script setup lang="ts">
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('Placeload Table')
+useVueroContext({
+  pageTitle: 'Placeload Table',
+})
 
 useHead({
   title: 'Placeload Table - Sidebar - Vuero',

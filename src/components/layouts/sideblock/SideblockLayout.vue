@@ -17,7 +17,7 @@ const props = withDefaults(
   },
 )
 
-const viewWrapper = useViewWrapper()
+const { pageTitle } = useVueroContext()
 const route = useRoute()
 
 const isMobileSideblockOpen = ref(false)
@@ -113,7 +113,7 @@ watch(
             :open="isDesktopSideblockOpen"
             @toggle="isDesktopSideblockOpen = !isDesktopSideblockOpen"
           >
-            {{ viewWrapper.pageTitle }}
+            {{ pageTitle }}
 
             <template #toolbar>
               <slot
@@ -135,7 +135,7 @@ watch(
               :open="isDesktopSideblockOpen"
               @toggle="isDesktopSideblockOpen = !isDesktopSideblockOpen"
             >
-              {{ viewWrapper.pageTitle }}
+              {{ pageTitle }}
 
               <template #toolbar>
                 <slot

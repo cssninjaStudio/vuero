@@ -1,6 +1,7 @@
 <script setup lang="ts">
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('Form Layouts 1')
+useVueroContext({
+  pageTitle: 'Form Layouts 1',
+})
 
 useHead({
   title: 'Form Layouts 1 - Sidebar - Vuero',

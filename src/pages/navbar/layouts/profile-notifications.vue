@@ -1,6 +1,7 @@
 <script setup lang="ts">
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('Profile Notification')
+useVueroContext({
+  pageTitle: 'Profile Notification',
+})
 
 useHead({
   title: 'Profile Notification - Navbar - Vuero',

@@ -2,8 +2,9 @@
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('File Input')
+useVueroContext({
+  pageTitle: 'File Input',
+})
 
 useHead({
   title: 'File Input - Forms Elements - Vuero',

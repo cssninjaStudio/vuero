@@ -2,8 +2,9 @@
 type TabId = 'all' | 'saved'
 const activeTab = ref<TabId>('all')
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('List View 4')
+useVueroContext({
+  pageTitle: 'List View 4',
+})
 
 useHead({
   title: 'List View 4 - Sidebar - Vuero',

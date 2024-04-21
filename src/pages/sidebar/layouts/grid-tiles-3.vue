@@ -1,6 +1,7 @@
 <script setup lang="ts">
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('Grid Tiles 3')
+useVueroContext({
+  pageTitle: 'Grid Tiles 3',
+})
 
 useHead({
   title: 'Grid Tiles 3 - Sidebar - Vuero',

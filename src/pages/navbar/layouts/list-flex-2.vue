@@ -2,8 +2,9 @@
 type TabId = 'active' | 'closed'
 const activeTab = ref<TabId>('active')
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('List Flex 2')
+useVueroContext({
+  pageTitle: 'List Flex 2',
+})
 
 useHead({
   title: 'List Flex 2 - Navbar - Vuero',

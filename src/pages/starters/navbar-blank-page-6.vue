@@ -13,8 +13,9 @@ import Layout from '/@src/layouts/navsearch.vue'
  * @see /src/router.ts
  */
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('Blank Page 6')
+useVueroContext({
+  pageTitle: 'Blank Page 6',
+})
 
 useHead({
   title: 'Blank Page 6 - Navbar - Vuero',

@@ -1,6 +1,7 @@
 <script setup lang="ts">
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('Table List 2')
+useVueroContext({
+  pageTitle: 'Table List 2',
+})
 
 useHead({
   title: 'Table List 2 - Navbar - Vuero',

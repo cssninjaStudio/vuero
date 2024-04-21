@@ -22,8 +22,9 @@ function getSnippet(icon: any) {
   return `<i class="fas fa-${icon.name}" aria-hidden="true"></i>`
 }
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('Font Awesome Icons')
+useVueroContext({
+  pageTitle: 'Font Awesome Icons',
+})
 useHead({
   title: 'Font Awesome Icons - Elements - Vuero',
 })

@@ -4,8 +4,9 @@ import { VGridMeta, VGridItemMeta } from '/@src/data/documentation/components-me
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('VGrid')
+useVueroContext({
+  pageTitle: 'VGrid',
+})
 
 useHead({
   title: 'VGrid - Components - Vuero',

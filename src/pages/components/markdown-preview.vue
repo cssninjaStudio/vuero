@@ -10,8 +10,9 @@ const isScrolling = computed(() => {
   return y.value > 30
 })
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('VMarkdownPreview')
+useVueroContext({
+  pageTitle: 'VMarkdownPreview',
+})
 
 useHead({
   title: 'VMarkdownPreview - Components - Vuero',

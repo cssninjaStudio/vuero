@@ -56,8 +56,9 @@ onMounted(async () => {
   editor.value = await import('@ckeditor/ckeditor5-build-classic').then(m => m.default)
 })
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('CKEditor')
+useVueroContext({
+  pageTitle: 'CKEditor',
+})
 
 useHead({
   title: 'CKEditor - Addons - Vuero',

@@ -4,8 +4,9 @@ import { VFlexMeta, VFlexItemMeta } from '/@src/data/documentation/components-me
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('VFlex')
+useVueroContext({
+  pageTitle: 'VFlex',
+})
 
 useHead({
   title: 'VFlex - Components - Vuero',

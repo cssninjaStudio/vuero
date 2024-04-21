@@ -4,8 +4,9 @@ import { VPlaceholderSectionMeta } from '/@src/data/documentation/components-met
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('VPlaceholderSection')
+useVueroContext({
+  pageTitle: 'VPlaceholderSection',
+})
 
 useHead({
   title: 'VPlaceholderSection - Components - Vuero',

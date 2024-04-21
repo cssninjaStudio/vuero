@@ -1,6 +1,7 @@
 <script setup lang="ts">
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('List View 2')
+useVueroContext({
+  pageTitle: 'List View 2',
+})
 
 useHead({
   title: 'List View 2 - Sidebar - Vuero',

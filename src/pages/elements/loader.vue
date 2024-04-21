@@ -7,8 +7,9 @@ const toggleLoaders = () => {
   isLoaderActive.value = !isLoaderActive.value
 }
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('VLoader')
+useVueroContext({
+  pageTitle: 'VLoader',
+})
 
 useHead({
   title: 'VLoader - Elements - Vuero',

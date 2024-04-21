@@ -4,8 +4,9 @@ import { VCardActionMeta } from '/@src/data/documentation/components-meta'
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('VCardAction')
+useVueroContext({
+  pageTitle: 'VCardAction',
+})
 
 useHead({
   title: 'VCardAction - Components - Vuero',

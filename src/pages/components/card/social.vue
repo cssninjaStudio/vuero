@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import { VCardSocialMeta } from '/@src/data/documentation/components-meta'
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('VCardSocial')
+useVueroContext({
+  pageTitle: 'VCardSocial',
+})
 
 useHead({
   title: 'VCardSocial - Components - Vuero',

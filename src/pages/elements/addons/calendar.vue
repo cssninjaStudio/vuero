@@ -2,8 +2,9 @@
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('VCalendar')
+useVueroContext({
+  pageTitle: 'VCalendar',
+})
 
 useHead({
   title: 'VCalendar - Addons - Vuero',

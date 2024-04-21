@@ -4,8 +4,9 @@ import { VIconButtonMeta } from '/@src/data/documentation/components-meta'
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('VIconButton')
+useVueroContext({
+  pageTitle: 'VIconButton',
+})
 
 useHead({
   title: 'VIconButton - Elements - Vuero',

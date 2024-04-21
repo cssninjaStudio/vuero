@@ -20,7 +20,7 @@ const props = withDefaults(
   },
 )
 
-const viewWrapper = useViewWrapper()
+const { pageTitle } = useVueroContext()
 const route = useRoute()
 const isMobileSidebarOpen = ref(false)
 const isDesktopSidebarOpen = ref(props.openOnMounted)
@@ -39,9 +39,6 @@ function switchSidebar(id: string) {
 /**
  * watchPostEffect callback will be executed each time dependent reactive values has changed
  */
-watchPostEffect(() => {
-  viewWrapper.setPushed(isDesktopSidebarOpen.value ?? false)
-})
 watch(
   () => route.fullPath,
   () => {
@@ -190,7 +187,7 @@ watch(
 
             <div class="title-wrap">
               <h1 class="title is-4">
-                {{ viewWrapper.pageTitle }}
+                {{ pageTitle }}
               </h1>
             </div>
 

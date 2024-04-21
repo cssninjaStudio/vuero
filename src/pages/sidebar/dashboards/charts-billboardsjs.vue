@@ -1,6 +1,7 @@
 <script setup lang="ts">
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('Charts BillboardJS')
+useVueroContext({
+  pageTitle: 'Charts BillboardJS',
+})
 
 useHead({
   title: 'Charts BillboardJS - Sidebar - Vuero',

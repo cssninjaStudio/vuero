@@ -1,6 +1,7 @@
 <script setup lang="ts">
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('List Flex 3')
+useVueroContext({
+  pageTitle: 'List Flex 3',
+})
 
 useHead({
   title: 'List Flex 3 - Navbar - Vuero',

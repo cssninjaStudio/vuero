@@ -10,8 +10,9 @@ const rowClick = (row: any) => {
   console.log(row)
 }
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('VFlexTable')
+useVueroContext({
+  pageTitle: 'VFlexTable',
+})
 
 useHead({
   title: 'VFlexTable - Components - Vuero',

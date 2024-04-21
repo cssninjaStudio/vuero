@@ -1,6 +1,7 @@
 <script setup lang="ts">
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('Components Hub')
+useVueroContext({
+  pageTitle: 'Components Hub',
+})
 
 useHead({
   title: 'Components - Vuero',

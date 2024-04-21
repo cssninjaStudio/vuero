@@ -4,8 +4,9 @@ import { VFieldMeta } from '/@src/data/documentation/components-meta'
 const markdownContainer = ref<HTMLElement>()
 const toc = useMarkdownToc(markdownContainer)
 
-const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('VField')
+useVueroContext({
+  pageTitle: 'VField',
+})
 
 useHead({
   title: 'VField - Elements - Vuero',
