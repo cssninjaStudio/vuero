@@ -17,22 +17,30 @@
   opacity: 0;
   pointer-events: none;
   z-index: 99;
-  transform: translateY(10px);
   border: 1px solid var(--fade-grey-dark-3);
   box-shadow: var(--light-box-shadow);
-  transition: all 0.3s; // transition-all test
-  max-width: 800px;
-  top: 85px;
+  transition-property: height, opacity;
+  transition-duration: 0.1s, 0.2s;
+  top: 64px;
   inset-inline-start: 0;
   inset-inline-end: 0;
   margin: 0 auto;
-  border-radius: var(--radius-large);
 
   &.is-active {
-    height: 320px;
+    height: calc(100% - 64px);
     opacity: 1;
     pointer-events: all;
-    transform: translateY(0);
+  }
+
+  &.is-dropdown {
+    position: absolute;
+    top: 100%;
+    min-width: 400px;
+    max-width: 800px;
+    width: max-content;
+    padding: 1rem;
+    height: auto;
+    border-radius: var(--radius-large);
   }
 
   .navbar-subnavbar-inner {
@@ -269,6 +277,9 @@
 
 .is-dark {
   .navbar-subnavbar {
+    background: var(--dark-sidebar-light-2);
+    border-color: var(--dark-sidebar-light-4);
+
     .navbar-subnavbar-inner {
       .tab-content {
         .tab-content-inner {

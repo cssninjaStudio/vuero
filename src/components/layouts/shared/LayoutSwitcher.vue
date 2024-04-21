@@ -37,7 +37,7 @@ const layoutComponent = (slug?: string) => {
     case 'dropdown':
       return 'NavbarDropdownLayout'
     case 'search':
-      return 'NavbarSearchLayout'
+      return 'NavsearchLayout'
     case 'sidebar':
       return 'SidebarLayout'
     case 'sideblock':
@@ -85,7 +85,7 @@ const layoutComponent = (slug?: string) => {
               value: 'dropdown',
             },
             {
-              label: 'Search',
+              label: 'Navsearch',
               value: 'search',
             },
             { label: 'Sidebar', value: 'sidebar' },
@@ -527,7 +527,7 @@ const layoutComponent = (slug?: string) => {
                           src="/images/icons/layouts/layout-1-dark.svg"
                           alt=""
                         >
-                        <h3>Default Sidebar</h3>
+                        <h3>Default theme</h3>
                         <p>The good old default sidebar</p>
                         <div class="indicator">
                           <iconify-icon
@@ -569,7 +569,7 @@ const layoutComponent = (slug?: string) => {
                           src="/images/icons/layouts/layout-2-dark.svg"
                           alt=""
                         >
-                        <h3>Colored Sidebar</h3>
+                        <h3>Colored theme</h3>
                         <p>Colored variation of sidebar</p>
                         <div class="indicator">
                           <iconify-icon
@@ -611,7 +611,7 @@ const layoutComponent = (slug?: string) => {
                           src="/images/icons/layouts/layout-3-dark.svg"
                           alt=""
                         >
-                        <h3>Curved Sidebar</h3>
+                        <h3>Curved theme</h3>
                         <p>Sidebar with curved edges</p>
                         <div class="indicator">
                           <iconify-icon
@@ -653,7 +653,7 @@ const layoutComponent = (slug?: string) => {
                           src="/images/icons/layouts/layout-4-dark.svg"
                           alt=""
                         >
-                        <h3>Curved Colored</h3>
+                        <h3>Curved theme</h3>
                         <p>Curved edges with color</p>
                         <div class="indicator">
                           <iconify-icon

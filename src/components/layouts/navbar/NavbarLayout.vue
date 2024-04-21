@@ -1,0 +1,230 @@
+<script setup lang="ts">
+import type {
+  NavbarTheme,
+  NavbarItem,
+  NavbarItemMegamenu,
+  NavbarItemDropdown,
+  NavbarLayoutContext,
+} from './navbar.types'
+import { injectionKey } from './navbar.context'
+
+import { useViewWrapper } from '/@src/stores/viewWrapper'
+
+const props = withDefaults(
+  defineProps<{
+    links?: NavbarItem[]
+    theme?: NavbarTheme
+    size?: 'default' | 'large' | 'full'
+    nowrap?: boolean
+  }>(),
+  {
+    links: () => [],
+    theme: 'default',
+    size: 'default',
+  },
+)
+
+const viewWrapper = useViewWrapper()
+const route = useRoute()
+
+const linksWithChildren = computed(() => {
+  return props.links.filter(link => link.type === 'megamenu' || link.type === 'dropdown') as (NavbarItemMegamenu | NavbarItemDropdown)[]
+})
+
+const isMobileSidebarOpen = ref(false)
+const activeMobileSubsidebarId = ref<string>(linksWithChildren.value?.[0]?.id)
+const activeSubnavId = ref<string | undefined>()
+
+const activeSubnav = computed(() => {
+  return linksWithChildren.value.find(link => link.id === activeSubnavId.value)
+})
+const activeMobileSubsidebar = computed(() => {
+  return linksWithChildren.value.find(link => link.id === activeMobileSubsidebarId.value)
+})
+
+function toggleSubnav(id: string) {
+  if (activeSubnavId.value === id) {
+    activeSubnavId.value = undefined
+  }
+  else {
+    activeSubnavId.value = id
+  }
+}
+function toggleMobileSubnav(id: string) {
+  if (activeMobileSubsidebarId.value === id) {
+    isMobileSidebarOpen.value = false
+  }
+  else {
+    activeMobileSubsidebarId.value = id
+    isMobileSidebarOpen.value = true
+  }
+}
+
+// provide context to children
+const context: NavbarLayoutContext = {
+  links: computed(() => props.links),
+  theme: computed(() => props.theme),
+
+  isMobileSidebarOpen,
+  activeMobileSubsidebarId,
+  activeSubnavId,
+
+  activeSubnav,
+  activeMobileSubsidebar,
+
+  toggleSubnav,
+  toggleMobileSubnav,
+}
+provide(injectionKey, context)
+
+// using reactive context for slots, has better dev experience
+const contextRx = reactive(context)
+
+watch(
+  () => route.fullPath,
+  () => {
+    activeSubnavId.value = undefined
+    isMobileSidebarOpen.value = false
+  },
+)
+
+watch(() => Boolean(activeSubnav.value?.type === 'megamenu' || isMobileSidebarOpen.value), (value) => {
+  if (value) {
+    document.documentElement.classList.add('no-scroll')
+  }
+  else {
+    document.documentElement.classList.remove('no-scroll')
+  }
+})
+</script>
+
+<template>
+  <div class="navbar-layout">
+    <div class="app-overlay" />
+
+    <!-- Mobile navigation -->
+    <MobileNavbar
+      :is-open="isMobileSidebarOpen"
+      @toggle="isMobileSidebarOpen = !isMobileSidebarOpen"
+    >
+      <template #brand>
+        <slot name="logo" v-bind="contextRx" />
+
+        <div class="brand-end">
+          <slot name="toolbar-mobile" v-bind="contextRx" />
+        </div>
+      </template>
+    </MobileNavbar>
+
+    <MobileSidebar
+      :is-open="isMobileSidebarOpen"
+      @toggle="isMobileSidebarOpen = !isMobileSidebarOpen"
+    >
+      <template #links>
+        <NavbarItemMobile
+          v-for="link in props.links"
+          :key="link.label"
+          :link
+        />
+      </template>
+    </MobileSidebar>
+
+    <Transition name="slide-x">
+      <KeepAlive>
+        <NavbarSubsidebarMobile
+          v-if="isMobileSidebarOpen && activeMobileSubsidebar?.children"
+          :key="activeMobileSubsidebarId"
+          :label="activeMobileSubsidebar.label"
+          :items="activeMobileSubsidebar.children"
+        />
+      </KeepAlive>
+    </Transition>
+    <!-- /Mobile navigation -->
+
+    <!-- Desktop navigation -->
+    <Navbar :theme="props.theme">
+      <template #title>
+        <slot name="logo" v-bind="contextRx" />
+
+        <div v-if="'logo' in $slots" class="separator" />
+        <slot name="title" v-bind="contextRx">
+          <h1 class="title is-5">
+            {{ viewWrapper.pageTitle }}
+          </h1>
+        </slot>
+      </template>
+
+      <template #toolbar>
+        <div class="toolbar desktop-toolbar">
+          <slot name="toolbar" v-bind="contextRx" />
+        </div>
+      </template>
+
+      <template #links>
+        <div class="centered-links">
+          <NavbarItem
+            v-for="link in props.links"
+            :key="link.label"
+            :link="link"
+          />
+        </div>
+      </template>
+    </Navbar>
+
+    <div
+      class="navbar-subnavbar is-hidden-mobile"
+      :class="[activeSubnav?.type === 'megamenu' && 'is-active']"
+    >
+      <NavbarMegamenu
+        v-if="activeSubnav?.type === 'megamenu'"
+        :key="activeSubnavId"
+        :children="activeSubnav.children"
+        class="is-active"
+      >
+        <template v-if="'megamenu-start' in $slots" #start>
+          <slot name="megamenu-start" v-bind="contextRx" />
+        </template>
+        <template v-if="'megamenu-end' in $slots" #end>
+          <slot name="megamenu-end" v-bind="contextRx" />
+        </template>
+        <template v-if="'megamenu-top' in $slots" #top>
+          <slot name="megamenu-top" v-bind="contextRx" />
+        </template>
+        <template v-if="'megamenu-bottom' in $slots" #bottom>
+          <slot name="megamenu-bottom" v-bind="contextRx" />
+        </template>
+      </NavbarMegamenu>
+    </div>
+    <!-- /Desktop navigation -->
+
+    <VViewWrapper full top-nav>
+      <VPageContentWrapper :size="props.size">
+        <template v-if="props.nowrap">
+          <slot v-bind="contextRx" />
+        </template>
+        <VPageContent
+          v-else
+          class="is-relative"
+        >
+          <div class="is-navbar-lg">
+            <NavbarPageTitleMobile>
+              <slot name="title-mobile" v-bind="contextRx">
+                <h1 class="title is-4">
+                  {{ viewWrapper.pageTitle }}
+                </h1>
+              </slot>
+
+              <template #toolbar>
+                <slot name="toolbar" v-bind="contextRx" />
+              </template>
+            </NavbarPageTitleMobile>
+
+            <slot v-bind="contextRx" />
+          </div>
+        </VPageContent>
+      </VPageContentWrapper>
+    </VViewWrapper>
+
+    <slot name="extra" v-bind="contextRx" />
+  </div>
+</template>

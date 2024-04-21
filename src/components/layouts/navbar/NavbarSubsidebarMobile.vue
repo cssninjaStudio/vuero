@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import type { SubsidebarItem } from './sidebar.types'
+import type { NavbarDropdown, NavbarMegamenu } from './navbar.types'
 
 const props = defineProps<{
   label?: string
-  items: SubsidebarItem[]
+  items: (NavbarDropdown | NavbarMegamenu)[]
 }>()
 </script>
 
@@ -20,24 +20,8 @@ const props = defineProps<{
         class="submenu"
         data-simplebar
       >
-        <template v-for="(item, idx) of props.items">
-          <li
-            v-if="item.type === 'divider'"
-            :key="`divider-${idx}`"
-            class="divider"
-            :class="[item.label ? 'with-label' : '']"
-          >
-            <span v-if="item.label" class="divider-label">{{ item.label }}</span>
-          </li>
-          <li v-else-if="item.type === 'link'" :key="`link-${idx}`">
-            <RouterLink :to="item.to">
-              {{ item.label }}
-            </RouterLink>
-          </li>
-          <VCollapseLinks
-            v-else-if="item.type === 'collapse'"
-            :key="`collapse-${item.id}`"
-          >
+        <template v-for="item of props.items">
+          <VCollapseLinks v-if="'children' in item" :key="item.id">
             <template #header>
               {{ item.label }}
               <iconify-icon
@@ -52,27 +36,27 @@ const props = defineProps<{
               />
             </template>
 
-            <RouterLink
+            <VLink
               v-for="child of item.children"
               :key="child.to"
               :to="child.to"
               class="is-submenu"
             >
-              <i
-                v-if="child.icon"
-                aria-hidden="true"
-                :class="child.icon"
-              />
               <span>{{ child.label }}</span>
               <VTag
                 v-if="child.tag"
                 :label="child.tag"
                 color="primary"
+                size="tiny"
                 outlined
-                curved
               />
-            </RouterLink>
+            </VLink>
           </VCollapseLinks>
+          <li v-else-if="'to' in item" :key="item.to">
+            <VLink :to="item.to">
+              {{ item.label }}
+            </VLink>
+          </li>
         </template>
       </ul>
     </div>
