@@ -162,11 +162,14 @@ export const useLayoutSwitcher = defineStore('layoutSwitcher', () => {
     }
   })
 
+  const contentSize = ref<'default' | 'large' | 'wide' | 'full'>('default')
+
   const dynamicLayoutProps = computed(() => {
     if (isNavbarRoute.value) {
       return {
         theme: navbarLayoutTheme.value,
         key: navbarLayoutId.value,
+        size: contentSize.value,
         scrollBehavior:
           navbarLayoutId.value === 'navsearch-shrink'
             ? 'shrink'
@@ -178,6 +181,7 @@ export const useLayoutSwitcher = defineStore('layoutSwitcher', () => {
     else {
       return {
         theme: sidebarLayoutTheme.value,
+        size: contentSize.value,
         key: sidebarLayoutId.value,
       }
     }
@@ -188,6 +192,7 @@ export const useLayoutSwitcher = defineStore('layoutSwitcher', () => {
   }
 
   return {
+    contentSize,
     dynamicLayoutComponent,
     dynamicLayoutProps,
     dynamicLayoutId,

@@ -170,12 +170,12 @@ const themeClasses = computed(() => {
             &::after {
               content: attr(data-content);
               position: absolute;
-              bottom: -8px;
+              bottom: -14px;
               inset-inline-start: -29px;
               inset-inline-end: 0;
               margin: 0 auto;
               font-family: var(--font);
-              font-size: 0.5rem;
+              font-size: 0.65rem;
               font-weight: 500;
               color: var(--light-text);
               text-transform: uppercase;

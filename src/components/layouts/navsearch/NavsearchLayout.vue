@@ -11,13 +11,14 @@ const props = withDefaults(
   defineProps<{
     links?: NavsearchItem[]
     theme?: NavsearchTheme
+    size?: 'default' | 'large' | 'wide' | 'full'
     scrollBehavior?: NavsearchScrollBehavior
-    nowrap?: boolean
   }>(),
   {
     links: () => [],
     scrollBehavior: 'fixed',
     theme: 'default',
+    size: 'default',
   },
 )
 
@@ -83,11 +84,8 @@ watch(
     ]"
   >
     <!-- Mobile navigation -->
-    <MobileNavbar
-      :is-open="isMobileSidebarOpen"
-      @toggle="isMobileSidebarOpen = !isMobileSidebarOpen"
-    >
-      <template #brand>
+    <MobileNavbar v-model="isMobileSidebarOpen">
+      <template #logo>
         <slot name="logo" v-bind="contextRx" />
 
         <div class="brand-end">
@@ -103,6 +101,12 @@ watch(
       >
         <slot name="search" v-bind="contextRx" />
       </NavsearchSubsidebarMobile>
+    </Transition>
+    <Transition name="fade">
+      <MobileOverlay
+        v-if="isMobileSidebarOpen"
+        @click="isMobileSidebarOpen = false"
+      />
     </Transition>
     <!-- /Mobile navigation -->
 
@@ -157,15 +161,9 @@ watch(
     <!-- /Desktop navigation -->
 
     <VViewWrapper top-nav>
-      <VPageContentWrapper>
-        <template v-if="props.nowrap">
-          <slot v-bind="contextRx" />
-        </template>
-        <VPageContent
-          v-else
-          class="is-relative"
-        >
-          <div class="is-navbar-lg">
+      <template v-if="props.size === 'full'">
+        <div class="is-navbar-lg">
+          <slot name="page-heading">
             <NavsearchPageTitleMobile>
               <slot v-bind="contextRx" name="title-mobile">
                 <h1 class="title is-4">
@@ -177,6 +175,29 @@ watch(
                 <slot v-bind="contextRx" name="toolbar" />
               </template>
             </NavsearchPageTitleMobile>
+          </slot>
+
+          <slot v-bind="contextRx" />
+        </div>
+      </template>
+      <VPageContentWrapper v-else :size="props.size">
+        <VPageContent
+          class="is-relative"
+        >
+          <div class="is-navbar-lg">
+            <slot name="page-heading">
+              <NavsearchPageTitleMobile>
+                <slot v-bind="contextRx" name="title-mobile">
+                  <h1 class="title is-4">
+                    {{ viewWrapper.pageTitle }}
+                  </h1>
+                </slot>
+
+                <template #toolbar>
+                  <slot v-bind="contextRx" name="toolbar" />
+                </template>
+              </NavsearchPageTitleMobile>
+            </slot>
 
             <slot v-bind="contextRx" />
           </div>
@@ -185,23 +206,11 @@ watch(
     </VViewWrapper>
 
     <slot v-bind="contextRx" name="extra" />
-
-    <div
-      class="app-overlay"
-      role="button"
-      tabindex="0"
-      :class="[isMobileSidebarOpen && 'is-active']"
-      @click="isMobileSidebarOpen = false"
-      @keydown.enter.prevent="isMobileSidebarOpen = false"
-    />
   </div>
 </template>
 
 <style lang="scss" scoped>
 :deep(.view-wrapper.has-top-nav) {
-  padding-top: 20px;
-  min-height: calc(100vh - 20px);
-
   .is-stuck {
     top: 100px;
   }

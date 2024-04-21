@@ -69,14 +69,32 @@ const layoutComponent = (slug?: string) => {
       @close="isModalOpen = false"
     >
       <template #content>
+        <div class="layout-size">
+          <VField
+            label="Content size"
+          >
+            <VControl class="has-icons-left" icon="lucide:globe">
+              <VSelect v-model="layoutSwitcher.contentSize" @update:model-value="isModalOpen = false">
+                <VOption value="default">
+                  Default
+                </VOption>
+                <VOption value="large">
+                  Large
+                </VOption>
+                <VOption value="wide">
+                  Wide
+                </VOption>
+                <VOption value="full">
+                  Full
+                </VOption>
+              </VSelect>
+            </VControl>
+          </VField>
+        </div>
         <VTabs
           :selected="selectedSlug"
           :tabs="[
             { label: 'Navbar', value: 'navbar' },
-            // {
-            //   label: 'Navdrop',
-            //   value: 'dropdown',
-            // },
             {
               label: 'Navsearch',
               value: 'search',
@@ -886,3 +904,118 @@ const layoutComponent = (slug?: string) => {
     </VModal>
   </div>
 </template>
+
+<style lang="scss">
+
+/* ==========================================================================
+1. Layout Selector
+========================================================================== */
+
+.layout-selector {
+  min-height: 340px;
+  max-height: 340px;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  .layout-item {
+    position: relative;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      img {
+        filter: grayscale(0);
+        opacity: 1;
+      }
+    }
+
+    &.is-active {
+      pointer-events: none;
+
+      img {
+        filter: grayscale(0);
+        opacity: 1;
+      }
+
+      .indicator {
+        opacity: 1;
+      }
+    }
+
+    .indicator {
+      position: absolute;
+      top: 0;
+      inset-inline-end: 36px;
+      background: var(--primary);
+      border: 4px solid var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 32px;
+      width: 32px;
+      border-radius: var(--radius-rounded);
+      opacity: 0;
+      transition: opacity 0.3s;
+      pointer-events: none;
+      color: var(--white);
+
+      .iconify {
+        color: var(--white);
+        height: 13px;
+        width: 13px;
+
+        * {
+          stroke-width: 3px;
+        }
+      }
+    }
+
+    img {
+      max-width: 150px;
+      margin: 0 auto;
+      filter: grayscale(1);
+      opacity: 0.6;
+      transition: all 0.3s; // transition-all test
+    }
+
+    h3 {
+      font-family: var(--font-alt);
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--dark-text);
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.layout-size {
+  padding: 1rem;
+  max-width: 280px;
+}
+
+/* ==========================================================================
+1. Layout Selector Dark Mode
+========================================================================== */
+
+.is-dark {
+  .layout-selector {
+    .layout-item {
+      &.is-active {
+        .indicator {
+          border-color: var(--dark-sidebar-light-6) !important;
+        }
+      }
+
+      h3 {
+        color: var(--dark-dark-text);
+      }
+    }
+  }
+}
+
+</style>

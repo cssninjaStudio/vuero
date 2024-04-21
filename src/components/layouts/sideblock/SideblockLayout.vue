@@ -6,13 +6,14 @@ const props = withDefaults(
   defineProps<{
     links?: SideblockItem[]
     theme?: SideblockTheme
+    size?: 'default' | 'large' | 'wide' | 'full'
     closeOnChange?: boolean
     openOnMounted?: boolean
-    nowrap?: boolean
   }>(),
   {
     links: () => [],
     theme: 'default',
+    size: 'default',
   },
 )
 
@@ -37,15 +38,6 @@ provide(injectionKey, context)
 // using reactive context for slots, has better dev experience
 const contextRx = reactive(context)
 
-/**
- * watchPostEffect callback will be executed each time dependent reactive values has changed
- */
-watchPostEffect(() => {
-  viewWrapper.setPushedBlock(isDesktopSideblockOpen.value ?? false)
-})
-onMounted(() => {
-  viewWrapper.setPushed(false)
-})
 watch(
   () => route.fullPath,
   () => {
@@ -61,11 +53,8 @@ watch(
 <template>
   <div class="sidebar-layout">
     <!-- Mobile navigation -->
-    <MobileNavbar
-      :is-open="isMobileSideblockOpen"
-      @toggle="isMobileSideblockOpen = !isMobileSideblockOpen"
-    >
-      <template #brand>
+    <MobileNavbar v-model="isMobileSideblockOpen">
+      <template #logo>
         <slot name="logo" v-bind="contextRx" />
 
         <div class="brand-end">
@@ -78,6 +67,12 @@ watch(
       <SideblockSubsidebarMobile
         v-if="isMobileSideblockOpen"
         :items="props.links"
+      />
+    </Transition>
+    <Transition name="fade">
+      <MobileOverlay
+        v-if="isMobileSideblockOpen"
+        @click="isMobileSideblockOpen = false"
       />
     </Transition>
     <!-- /Mobile navigation -->
@@ -106,15 +101,14 @@ watch(
     </Transition>
     <!-- /Desktop navigation -->
 
-    <VViewWrapper full>
-      <VPageContentWrapper>
-        <template v-if="props.nowrap">
-          <slot v-bind="contextRx" />
-        </template>
-        <VPageContent
-          v-else
-          class="is-relative"
-        >
+    <VViewWrapper
+      full
+      :class="[
+        isDesktopSideblockOpen && 'is-pushed-block',
+      ]"
+    >
+      <template v-if="props.size === 'full'">
+        <slot name="page-heading">
           <SidebarPageHeading
             :open="isDesktopSideblockOpen"
             @toggle="isDesktopSideblockOpen = !isDesktopSideblockOpen"
@@ -128,6 +122,29 @@ watch(
               />
             </template>
           </SidebarPageHeading>
+        </slot>
+
+        <slot v-bind="contextRx" />
+      </template>
+      <VPageContentWrapper v-else :size="props.size">
+        <VPageContent
+          class="is-relative"
+        >
+          <slot name="page-heading">
+            <SidebarPageHeading
+              :open="isDesktopSideblockOpen"
+              @toggle="isDesktopSideblockOpen = !isDesktopSideblockOpen"
+            >
+              {{ viewWrapper.pageTitle }}
+
+              <template #toolbar>
+                <slot
+                  name="toolbar"
+                  v-bind="contextRx"
+                />
+              </template>
+            </SidebarPageHeading>
+          </slot>
 
           <slot v-bind="contextRx" />
         </VPageContent>
@@ -135,14 +152,5 @@ watch(
     </VViewWrapper>
 
     <slot name="extra" />
-
-    <div
-      class="app-overlay"
-      role="button"
-      tabindex="0"
-      :class="[isMobileSideblockOpen && 'is-active']"
-      @click="isMobileSideblockOpen = false"
-      @keydown.enter.prevent="isMobileSideblockOpen = false"
-    />
   </div>
 </template>

@@ -1,15 +1,15 @@
 <script setup lang="ts">
 import type { SidebarItem } from '/@src/components/layouts/sidebar/sidebar.types'
 
-import LayoutSwitcher from '/@src/components/layouts/shared/LayoutSwitcher.vue'
-import ToolbarUserProfile from '/@src/components/layouts/shared/toolbar/ToolbarUserProfile.vue'
+import LayoutSwitcher from '/@src/components/partials/layout/LayoutSwitcher.vue'
+import ToolbarUserProfile from '/@src/components/partials/layout/toolbar/ToolbarUserProfile.vue'
 
 const panels = usePanels()
 
 const links = ref<SidebarItem[]>([
   {
     id: 'dashboard',
-    label: 'View dashboards',
+    label: 'Dashboards',
     icon: 'lucide:activity',
 
     type: 'subsidebar',
@@ -368,7 +368,7 @@ const links = ref<SidebarItem[]>([
   },
   {
     id: 'layout',
-    label: 'View layouts',
+    label: 'Layouts',
     icon: 'lucide:grid',
 
     type: 'subsidebar',
@@ -825,7 +825,7 @@ const links = ref<SidebarItem[]>([
   },
   {
     id: 'elements',
-    label: 'View elements',
+    label: 'Elements',
     icon: 'lucide:box',
 
     type: 'subsidebar',
@@ -1047,7 +1047,7 @@ const links = ref<SidebarItem[]>([
   },
   {
     id: 'components',
-    label: 'View components',
+    label: 'Components',
     icon: 'lucide:cpu',
 
     type: 'subsidebar',
@@ -1295,7 +1295,7 @@ const links = ref<SidebarItem[]>([
   },
   {
     id: 'open-messages',
-    label: 'View inbox',
+    label: 'Inbox',
     icon: 'lucide:message-circle',
 
     type: 'link',
@@ -1344,6 +1344,11 @@ const bottomLinks = ref<SidebarItem[]>([
     <!-- Propagating the context to the default slot -->
     <template #default="context">
       <slot v-bind="context" />
+    </template>
+
+    <!-- Expose the page-heading slot -->
+    <template #page-heading="context">
+      <slot name="page-heading" v-bind="context" />
     </template>
 
     <template #logo>

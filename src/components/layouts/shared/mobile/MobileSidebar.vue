@@ -1,17 +1,8 @@
 <script setup lang="ts">
-const emit = defineEmits<{
-  (e: 'toggle'): void
-}>()
-const props = defineProps<{
-  isOpen?: boolean
-}>()
 </script>
 
 <template>
-  <div
-    :class="[props.isOpen && 'is-active']"
-    class="mobile-main-sidebar"
-  >
+  <div class="mobile-main-sidebar">
     <div class="inner">
       <ul class="icon-side-menu">
         <slot name="links" />
@@ -22,29 +13,9 @@ const props = defineProps<{
       </ul>
     </div>
   </div>
-
-  <div
-    v-if="props.isOpen"
-    class="mobile-overlay"
-    tabindex="0"
-    role="button"
-    @keydown.space.prevent="emit('toggle')"
-    @click="emit('toggle')"
-  />
 </template>
 
 <style lang="scss">
-.mobile-overlay {
-  background: rgb(0 0 0 / 30%);
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  inset-inline-start: 0;
-  inset-inline-end: 0;
-  z-index: 20;
-  backdrop-filter: blur(1px);
-}
-
 .mobile-main-sidebar {
   position: fixed;
   top: 60px;

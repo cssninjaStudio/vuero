@@ -639,6 +639,20 @@ watch(
   margin: 0 auto;
 }
 
+.sidebar-layout {
+  .geocoder {
+    width: calc(100% - 380px);
+    max-width: 100%;
+    margin: 0;
+
+    .mapboxgl-ctrl-geocoder.mapboxgl-ctrl {
+      margin: 0 auto;
+      max-width: 380px;
+      min-width: auto !important;
+    }
+  }
+}
+
 .mapboxgl-ctrl-geocoder {
   min-width: 100% !important;
   border-radius: 0.65rem !important;

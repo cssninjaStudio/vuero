@@ -190,7 +190,7 @@ useHead({
         <!--User Settings-->
         <div class="user-settings">
           <!--Toolbar-->
-          <Toolbar class="desktop-toolbar">
+          <div class="toolbar desktop-toolbar">
             <ToolbarNotification />
 
             <a
@@ -207,7 +207,7 @@ useHead({
                 icon="lucide:grid"
               />
             </a>
-          </Toolbar>
+          </div>
 
           <!--User Menu-->
           <div

@@ -12,8 +12,7 @@ const props = withDefaults(
   defineProps<{
     links?: NavbarItem[]
     theme?: NavbarTheme
-    size?: 'default' | 'large' | 'full'
-    nowrap?: boolean
+    size?: 'default' | 'large' | 'wide' | 'full'
   }>(),
   {
     links: () => [],
@@ -101,11 +100,8 @@ watch(() => Boolean(activeSubnav.value?.type === 'megamenu' || isMobileSidebarOp
     <div class="app-overlay" />
 
     <!-- Mobile navigation -->
-    <MobileNavbar
-      :is-open="isMobileSidebarOpen"
-      @toggle="isMobileSidebarOpen = !isMobileSidebarOpen"
-    >
-      <template #brand>
+    <MobileNavbar v-model="isMobileSidebarOpen">
+      <template #logo>
         <slot name="logo" v-bind="contextRx" />
 
         <div class="brand-end">
@@ -115,8 +111,7 @@ watch(() => Boolean(activeSubnav.value?.type === 'megamenu' || isMobileSidebarOp
     </MobileNavbar>
 
     <MobileSidebar
-      :is-open="isMobileSidebarOpen"
-      @toggle="isMobileSidebarOpen = !isMobileSidebarOpen"
+      :class="[isMobileSidebarOpen && 'is-active']"
     >
       <template #links>
         <NavbarItemMobile
@@ -126,6 +121,12 @@ watch(() => Boolean(activeSubnav.value?.type === 'megamenu' || isMobileSidebarOp
         />
       </template>
     </MobileSidebar>
+    <Transition name="fade">
+      <MobileOverlay
+        v-if="isMobileSidebarOpen"
+        @click="isMobileSidebarOpen = false"
+      />
+    </Transition>
 
     <Transition name="slide-x">
       <KeepAlive>
@@ -196,15 +197,9 @@ watch(() => Boolean(activeSubnav.value?.type === 'megamenu' || isMobileSidebarOp
     <!-- /Desktop navigation -->
 
     <VViewWrapper full top-nav>
-      <VPageContentWrapper :size="props.size">
-        <template v-if="props.nowrap">
-          <slot v-bind="contextRx" />
-        </template>
-        <VPageContent
-          v-else
-          class="is-relative"
-        >
-          <div class="is-navbar-lg">
+      <template v-if="props.size === 'full'">
+        <div class="is-navbar-md">
+          <slot name="page-heading">
             <NavbarPageTitleMobile>
               <slot name="title-mobile" v-bind="contextRx">
                 <h1 class="title is-4">
@@ -216,7 +211,27 @@ watch(() => Boolean(activeSubnav.value?.type === 'megamenu' || isMobileSidebarOp
                 <slot name="toolbar" v-bind="contextRx" />
               </template>
             </NavbarPageTitleMobile>
+          </slot>
 
+          <slot v-bind="contextRx" />
+        </div>
+      </template>
+      <VPageContentWrapper v-else :size="props.size">
+        <VPageContent class="is-relative">
+          <div class="is-navbar-md">
+            <slot name="page-heading">
+              <NavbarPageTitleMobile>
+                <slot name="title-mobile" v-bind="contextRx">
+                  <h1 class="title is-4">
+                    {{ viewWrapper.pageTitle }}
+                  </h1>
+                </slot>
+
+                <template #toolbar>
+                  <slot name="toolbar" v-bind="contextRx" />
+                </template>
+              </NavbarPageTitleMobile>
+            </slot>
             <slot v-bind="contextRx" />
           </div>
         </VPageContent>

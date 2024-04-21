@@ -13,10 +13,14 @@ useHead({
   <component
     :is="(layoutSwitcher.dynamicLayoutComponent as any)"
     v-bind="layoutSwitcher.dynamicLayoutProps"
-    close-on-change
+    open-on-mounted
     default-sidebar="dashboard"
-    no-view-wrapper
+    size="full"
   >
+    <template #page-heading>
+      <span />
+    </template>
+
     <MapsDashboard reversed>
       <template #header>
         <div class="content-section-header">
@@ -24,7 +28,7 @@ useHead({
             Maps 2
           </h2>
 
-          <Toolbar class="desktop-toolbar">
+          <div class="toolbar desktop-toolbar">
             <ToolbarNotification />
 
             <a
@@ -41,7 +45,7 @@ useHead({
                 icon="lucide:grid"
               />
             </a>
-          </Toolbar>
+          </div>
         </div>
       </template>
     </MapsDashboard>

@@ -16,9 +16,9 @@ const {
   <a
     v-if="props.link.type === 'subsidebar'"
     :class="[activeSubsidebarId === props.link.id && 'is-active']"
-    :title="props.link.label"
     tabindex="0"
     role="button"
+    :data-content="props.link.label"
     @keydown.enter.prevent="() => toggleSubsidebar(props.link.id)"
     @click.prevent="() => toggleSubsidebar(props.link.id)"
   >
@@ -37,6 +37,7 @@ const {
     v-else-if="props.link.type === 'link'"
     :title="props.link.label"
     :to="props.link.to"
+    :data-content="props.link.label"
   >
     <iconify-icon
       aria-hidden="true"
@@ -49,6 +50,7 @@ const {
     role="button"
     tabindex="0"
     :title="props.link.label"
+    :data-content="props.link.label"
     @click="(props.link as SidebarItemAction).onClick"
     @keydown.enter="(props.link as SidebarItemAction).onClick"
   >

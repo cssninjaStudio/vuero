@@ -92,7 +92,6 @@ export interface SidebarLayoutContext {
   defaultSidebar: ComputedRef<string>
   closeOnChange: ComputedRef<boolean>
   openOnMounted: ComputedRef<boolean>
-  noViewWrapper?: ComputedRef<boolean>
 
   isMobileSidebarOpen: Ref<boolean>
   isDesktopSidebarOpen: Ref<boolean>

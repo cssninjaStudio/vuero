@@ -67,7 +67,6 @@ export interface SideblockLayoutContext {
 
   closeOnChange: ComputedRef<boolean>
   openOnMounted: ComputedRef<boolean>
-  noViewWrapper?: ComputedRef<boolean>
 
   isMobileSideblockOpen: Ref<boolean>
   isDesktopSideblockOpen: Ref<boolean>

@@ -12,8 +12,11 @@ useHead({
   <component
     :is="(layoutSwitcher.dynamicLayoutComponent as any)"
     v-bind="layoutSwitcher.dynamicLayoutProps"
-    nowrap
+    size="full"
   >
+    <template #page-heading>
+      <span />
+    </template>
     <MapsDashboard />
   </component>
 </template>

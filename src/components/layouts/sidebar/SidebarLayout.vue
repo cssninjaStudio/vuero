@@ -7,17 +7,17 @@ const props = withDefaults(
     links?: SidebarItem[]
     bottomLinks?: SidebarItem[]
     theme?: SidebarTheme
+    size?: 'default' | 'large' | 'wide' | 'full'
     defaultSidebar?: string
     closeOnChange?: boolean
     openOnMounted?: boolean
-    nowrap?: boolean
-    noViewWrapper?: boolean
   }>(),
   {
     links: () => [],
     bottomLinks: () => [],
     defaultSidebar: 'dashboard',
     theme: 'default',
+    size: 'default',
   },
 )
 
@@ -60,7 +60,6 @@ const context: SidebarLayoutContext = {
   defaultSidebar: computed(() => props.defaultSidebar),
   closeOnChange: computed(() => props.closeOnChange),
   openOnMounted: computed(() => props.openOnMounted),
-  noViewWrapper: computed(() => props.noViewWrapper),
 
   isMobileSidebarOpen,
   isDesktopSidebarOpen,
@@ -76,18 +75,6 @@ provide(injectionKey, context)
 
 // using reactive context for slots, has better dev experience
 const contextRx = reactive(context)
-
-// push viewWrapper when subsidebar is open
-watch(
-  [
-    () => Boolean(activeSubsidebar.value && isDesktopSidebarOpen.value),
-    () => props.noViewWrapper,
-  ],
-  ([value, noViewWrapper]) => {
-    if (noViewWrapper) return
-
-    viewWrapper.setPushed(value)
-  })
 
 // close subsidebar when route changes
 watch(
@@ -105,11 +92,8 @@ watch(
 <template>
   <div class="sidebar-layout">
     <!-- Mobile navigation -->
-    <MobileNavbar
-      :is-open="activeSubsidebar && isMobileSidebarOpen"
-      @toggle="isMobileSidebarOpen = !isMobileSidebarOpen"
-    >
-      <template #brand>
+    <MobileNavbar v-model="isMobileSidebarOpen">
+      <template #logo>
         <slot name="logo" v-bind="contextRx" />
 
         <div class="brand-end">
@@ -119,8 +103,7 @@ watch(
     </MobileNavbar>
 
     <MobileSidebar
-      :is-open="activeSubsidebar && isMobileSidebarOpen"
-      @toggle="isMobileSidebarOpen = !isMobileSidebarOpen"
+      :class="[activeSubsidebar && isMobileSidebarOpen && 'is-active']"
     >
       <template v-if="props.links.length" #links>
         <li
@@ -142,6 +125,12 @@ watch(
         </li>
       </template>
     </MobileSidebar>
+    <Transition name="fade">
+      <MobileOverlay
+        v-if="isMobileSidebarOpen"
+        @click="isMobileSidebarOpen = false"
+      />
+    </Transition>
 
     <Transition name="slide-x">
       <KeepAlive>
@@ -202,29 +191,13 @@ watch(
     </Transition>
     <!-- /Desktop navigation -->
 
-    <slot
-      v-if="props.noViewWrapper"
-      v-bind="contextRx"
-    />
-    <VViewWrapper v-else>
-      <VPageContentWrapper>
-        <template v-if="props.nowrap">
-          <slot
-            v-bind="{
-              isMobileSidebarOpen,
-              isDesktopSidebarOpen,
-              subsidebars,
-              activeSubsidebarId,
-              activeSubsidebar,
-              toggleSubsidebar,
-            }"
-          />
-        </template>
-
-        <VPageContent
-          v-else
-          class="is-relative"
-        >
+    <VViewWrapper
+      :class="[
+        activeSubsidebar && isDesktopSidebarOpen && 'is-pushed-full',
+      ]"
+    >
+      <template v-if="props.size === 'full'">
+        <slot name="page-heading">
           <SidebarPageHeading
             :open="activeSubsidebar && isDesktopSidebarOpen"
             @toggle="isDesktopSidebarOpen = !isDesktopSidebarOpen"
@@ -238,10 +211,31 @@ watch(
               />
             </template>
           </SidebarPageHeading>
+        </slot>
 
-          <slot
-            v-bind="contextRx"
-          />
+        <slot v-bind="contextRx" />
+      </template>
+      <VPageContentWrapper v-else :size="props.size">
+        <VPageContent
+          class="is-relative"
+        >
+          <slot name="page-heading">
+            <SidebarPageHeading
+              :open="activeSubsidebar && isDesktopSidebarOpen"
+              @toggle="isDesktopSidebarOpen = !isDesktopSidebarOpen"
+            >
+              {{ viewWrapper.pageTitle }}
+
+              <template #toolbar>
+                <slot
+                  name="toolbar"
+                  v-bind="contextRx"
+                />
+              </template>
+            </SidebarPageHeading>
+          </slot>
+
+          <slot v-bind="contextRx" />
         </VPageContent>
       </VPageContentWrapper>
     </VViewWrapper>
@@ -249,15 +243,6 @@ watch(
     <slot
       name="extra"
       v-bind="contextRx"
-    />
-
-    <div
-      class="app-overlay"
-      role="button"
-      tabindex="0"
-      :class="[isMobileSidebarOpen && 'is-active']"
-      @click="isMobileSidebarOpen = false"
-      @keydown.enter.prevent="isMobileSidebarOpen = false"
     />
   </div>
 </template>

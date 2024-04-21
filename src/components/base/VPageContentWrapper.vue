@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const props = withDefaults(defineProps<{
-  size?: 'default' | 'large' | 'full'
+  size?: 'default' | 'large' | 'wide'
 }>(), {
   size: 'default',
 })
@@ -58,7 +58,7 @@ const props = withDefaults(defineProps<{
       max-width: 1380px;
     }
 
-    &.is-size-full {
+    &.is-size-wide {
       max-width: none;
     }
   }

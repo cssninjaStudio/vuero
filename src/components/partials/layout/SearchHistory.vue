@@ -49,8 +49,8 @@
 }
 
 .search-history-links {
-  a {
-    color: var(--light-text);
+  :deep(a) {
+    color: var(--light-text-dark-10);
     display: block;
     transition: color 0.3s;
 

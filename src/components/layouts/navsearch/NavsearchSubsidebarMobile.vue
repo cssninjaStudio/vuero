@@ -29,6 +29,13 @@ const props = defineProps<{
   </div>
 </template>
 
+<style scoped lang="scss">
+.mobile-subsidebar .inner {
+  margin-inline-start: 0;
+  width: 100%;
+}
+</style>
+
 <style lang="scss">
 @import '/@src/scss/layout/mobile-subsidebar';
 </style>

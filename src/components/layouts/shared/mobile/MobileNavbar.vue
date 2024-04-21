@@ -1,37 +1,20 @@
 <script setup lang="ts">
-const emit = defineEmits<{
-  (e: 'toggle'): void
-}>()
-const props = defineProps<{
-  isOpen?: boolean
-}>()
+const modelValue = defineModel<boolean>({
+  default: false,
+})
 </script>
 
 <template>
-  <nav
-    class="navbar mobile-navbar is-hidden-desktop is-hidden-tablet"
-    aria-label="main navigation"
-  >
+  <nav class="navbar mobile-navbar is-hidden-desktop is-hidden-tablet">
     <div class="container">
       <!-- Brand -->
       <div class="navbar-brand">
         <!-- Mobile menu toggler icon -->
         <div class="brand-start">
-          <div
-            class="navbar-burger"
-            :class="[props.isOpen && 'is-active']"
-            tabindex="0"
-            role="button"
-            @keydown.space.prevent="emit('toggle')"
-            @click="emit('toggle')"
-          >
-            <span />
-            <span />
-            <span />
-          </div>
+          <MobileBurger v-model="modelValue" />
         </div>
 
-        <slot name="brand" />
+        <slot name="logo" />
       </div>
     </div>
   </nav>
@@ -58,15 +41,6 @@ const props = defineProps<{
         position: relative;
         height: 32px !important;
         max-height: 32px !important;
-      }
-    }
-
-    .navbar-burger {
-      background: transparent !important;
-
-      &.is-active,
-      &:hover {
-        background: transparent !important;
       }
     }
 
@@ -392,19 +366,6 @@ const props = defineProps<{
           }
         }
       }
-    }
-  }
-
-  .navbar-burger {
-    margin-inline-start: 0 !important;
-
-    &:hover,
-    &:focus {
-      background-color: rgb(0 0 0 / 2%);
-    }
-
-    span {
-      background-color: var(--muted-grey);
     }
   }
 

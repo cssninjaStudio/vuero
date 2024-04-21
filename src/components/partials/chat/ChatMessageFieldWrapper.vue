@@ -188,6 +188,7 @@ const dropdown = useDropdown(dropdownElement)
           stroke-width: 2px;
           height: 18px;
           width: 18px;
+          font-size: 18px;
           transition: all 0.3s; // transition-all test
         }
       }
@@ -200,6 +201,7 @@ const dropdown = useDropdown(dropdownElement)
           .iconify {
             height: 18px;
             width: 18px;
+            font-size: 18px;
             color: var(--muted-grey);
           }
 
@@ -263,6 +265,7 @@ const dropdown = useDropdown(dropdownElement)
           stroke-width: 2px;
           height: 18px;
           width: 18px;
+          font-size: 18px;
           transition: all 0.3s; // transition-all test
         }
       }
