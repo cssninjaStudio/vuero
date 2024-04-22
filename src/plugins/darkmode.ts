@@ -20,7 +20,7 @@ export default definePlugin(({ app }) => {
   const colorSchema = useStorage<DarkModeSchema>('color-schema', 'auto')
 
   const enableTransitions = () =>
-    document !== undefined
+    !import.meta.env.SSR
     && 'startViewTransition' in document
     && window.matchMedia('(prefers-reduced-motion: no-preference)').matches
 
@@ -32,14 +32,14 @@ export default definePlugin(({ app }) => {
     },
     set(v: boolean) {
       // disable transitions
-      if (document !== undefined && document.documentElement) {
+      if (!import.meta.env.SSR && document.documentElement) {
         document.documentElement.classList.add('no-transition')
       }
 
       if (v === preferredDark.value) colorSchema.value = 'auto'
       else colorSchema.value = v ? 'dark' : 'light'
 
-      if (document !== undefined && document.documentElement) {
+      if (!import.meta.env.SSR && document.documentElement) {
         setTimeout(() => {
           document.documentElement.classList.remove('no-transition')
         }, 0)
@@ -77,16 +77,18 @@ export default definePlugin(({ app }) => {
     )
   }
 
-  watch(isDark, (value) => {
-    const body = document.documentElement
+  if (!import.meta.env.SSR) {
+    watch(isDark, (value) => {
+      const body = document.documentElement
 
-    if (value) {
-      body.classList.add(darkmodeClass)
-    }
-    else {
-      body.classList.remove(darkmodeClass)
-    }
-  }, { immediate: true })
+      if (value) {
+        body.classList.add(darkmodeClass)
+      }
+      else {
+        body.classList.remove(darkmodeClass)
+      }
+    }, { immediate: true })
+  }
 
   app.provide(injectionKey, {
     isDark,

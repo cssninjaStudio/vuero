@@ -3,7 +3,7 @@ import {
   createWebHistory,
   createMemoryHistory,
 } from 'vue-router/auto'
-
+import { routes } from 'vue-router/auto-routes'
 /*
  * By default, this plugins checks the folder at src/pages for any .vue files
  * and generates the corresponding routing structure basing itself in the file name.
@@ -37,6 +37,9 @@ export function createRouter() {
      */
     // history: createWebHistory('my-subdirectory'),
     history: import.meta.env.SSR ? createMemoryHistory() : createWebHistory(),
+
+    // @ts-expect-error - ssr error
+    routes: routes ?? [],
 
     /**
      * You can extend existing routes:

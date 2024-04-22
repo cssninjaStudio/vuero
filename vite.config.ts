@@ -143,6 +143,17 @@ export default defineConfig({
     VueDevTools(),
 
     /**
+     * unplugin-vue-router plugin generate routes based on file system
+     * allow to use typed routes and usage of defineLoader
+     *
+     * @see https://uvr.esm.is/rfcs/data-loaders/
+     */
+    VueRouter({
+      routesFolder: 'src/pages',
+      dts: './types/router.d.ts',
+    }),
+
+    /**
      * plugin-vue plugin inject vue library and allow sfc files to work (*.vue)
      *
      * @see https://github.com/vitejs/vite-plugin-vue/blob/main/packages/plugin-vue/README.md
@@ -165,17 +176,6 @@ export default defineConfig({
       include: resolve(dirname(fileURLToPath(import.meta.url)), './src/locales/**'),
       fullInstall: false,
       compositionOnly: true,
-    }),
-
-    /**
-     * unplugin-vue-router plugin generate routes based on file system
-     * allow to use typed routes and usage of defineLoader
-     *
-     * @see https://uvr.esm.is/rfcs/data-loaders/
-     */
-    VueRouter({
-      routesFolder: 'src/pages',
-      dts: './types/router.d.ts',
     }),
 
     /**
