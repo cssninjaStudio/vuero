@@ -22,6 +22,18 @@ const props = withDefaults(defineProps<{
   max-width: 1200px;
   margin: 0 auto;
 
+  &.is-size-default {
+    padding-bottom: 100px;
+  }
+
+  &.is-size-large {
+    padding-bottom: 100px;
+  }
+
+  &.is-size-wide {
+    padding-bottom: 32px;
+  }
+
   .page-content {
     padding: 0 40px;
 
