@@ -1,4 +1,4 @@
-import { definePlugin } from '/@src/app'
+import { definePlugin } from '/@src/utils/plugins'
 import 'v-calendar/dist/style.css'
 
 export default definePlugin(({ app }) => {

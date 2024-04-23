@@ -3,19 +3,15 @@ import { createApp as createClientApp, createSSRApp } from 'vue'
 import { createHead } from '@unhead/vue'
 import { InferSeoMetaPlugin } from '@unhead/addons'
 import { createPinia } from 'pinia'
-import { createRouter } from './router'
-import VueroApp from './VueroApp.vue'
-import './styles'
 
-export type VueroAppContext = Awaited<ReturnType<typeof createApp>>
-export type VueroPlugin = (vuero: VueroAppContext) => void | Promise<void>
+import type { VueroPlugin, VueroAppContext } from '/@src/utils/plugins'
+import { createRouter } from '/@src/router'
+import VueroApp from '/@src/VueroApp.vue'
+import '/@src/styles'
 
-const plugins = import.meta.glob<{ default: VueroPlugin }>('./plugins/*.ts')
-
-// this is a helper function to define plugins with autocompletion
-export function definePlugin(plugin: VueroPlugin) {
-  return plugin
-}
+const plugins = import.meta.glob<{ default?: VueroPlugin }>('./plugins/*.ts', {
+  eager: true,
+})
 
 export async function createApp() {
   const app = __VUERO_SSR_BUILD__
@@ -32,23 +28,21 @@ export async function createApp() {
   const pinia = createPinia()
   app.use(pinia)
 
-  const vuero = {
+  const vuero: VueroAppContext = {
     app,
     router,
     head,
     pinia,
   }
 
-  app.provide('vuero', vuero)
-
   for (const path in plugins) {
     try {
-      const { default: plugin } = await plugins[path]()
+      const plugin = plugins[path]?.default
+      if (!plugin) throw new Error(`Plugin does not have a default export.`)
       await plugin(vuero)
     }
     catch (error) {
-      console.error(`Error while loading plugin "${path}".`)
-      console.error(error)
+      console.log(`Error while loading plugin "${path}": ${error}`)
     }
   }
 

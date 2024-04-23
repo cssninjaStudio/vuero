@@ -1,4 +1,4 @@
-import { definePlugin } from '/@src/app'
+import { definePlugin } from '/@src/utils/plugins'
 import { vPreloadLink } from '/@src/directives/preload-link'
 import { vTooltip } from '/@src/directives/tooltip'
 import { vBackground } from '/@src/directives/background'

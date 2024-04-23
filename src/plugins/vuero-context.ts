@@ -1,4 +1,4 @@
-import { definePlugin } from '/@src/app'
+import { definePlugin } from '/@src/utils/plugins'
 
 interface VueroContext {
   pageTitle: Ref<string>

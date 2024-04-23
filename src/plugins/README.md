@@ -7,7 +7,7 @@ All plugins will be registered automatically before the app runs.
 Here is a plugin boilerplate:
 
 ```ts
-import { definePlugin } from '/@src/app'
+import { definePlugin } from '/@src/utils/plugins'
 
 export default definePlugin(async ({ app, router, head, pinia }) => {
   // run your plugin code here

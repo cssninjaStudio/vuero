@@ -1,5 +1,6 @@
-import { definePlugin } from '/@src/app'
 import { defineAsyncComponent } from 'vue'
+
+import { definePlugin } from '/@src/utils/plugins'
 
 export default definePlugin(({ app }) => {
   // here we are defining a lazy loaded component

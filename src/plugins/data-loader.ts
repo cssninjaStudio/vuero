@@ -1,4 +1,4 @@
-import { definePlugin } from '/@src/app'
+import { definePlugin } from '/@src/utils/plugins'
 import { DataLoaderPlugin } from 'vue-router/auto'
 
 /**

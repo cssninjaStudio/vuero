@@ -1,5 +1,5 @@
 import type { InjectionKey } from 'vue'
-import { definePlugin } from '/@src/app'
+import { definePlugin } from '/@src/utils/plugins'
 
 interface DarkmodeContext {
   isDark: Ref<boolean>

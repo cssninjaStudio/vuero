@@ -9,7 +9,7 @@ import { isProd, resolve } from './utils'
 import { createRenderer, loadAssets } from './serve/renderer'
 import { createEventHandler } from './serve/event'
 import { extendH3App } from './config'
-import './serve/process-handlers'
+import { registerProcessHandlers } from './serve/process-handlers'
 
 async function createServer() {
   const app = createApp({
@@ -62,7 +62,9 @@ async function createServer() {
 
 // start h3 server
 createServer()
-  .then(({ app }) => listen(toNodeListener(app), { port: process.env.PORT || 3000 }))
+  .then(({ app }) => {
+    return listen(toNodeListener(app), { port: process.env.PORT || 3000 })
+  })
   .catch((error) => {
     if (!isProd) {
       console.error('[dev] [serverError] ', error)
@@ -72,3 +74,5 @@ createServer()
     }
     process.exit(1)
   })
+
+registerProcessHandlers()

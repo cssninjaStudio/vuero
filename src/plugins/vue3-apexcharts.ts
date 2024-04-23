@@ -1,4 +1,4 @@
-import { definePlugin } from '/@src/app'
+import { definePlugin } from '/@src/utils/plugins'
 
 export default definePlugin(({ app }) => {
   // register vue3-apexcharts with async component
