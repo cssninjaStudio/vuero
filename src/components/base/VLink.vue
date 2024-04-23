@@ -26,7 +26,7 @@ const isExternalLink = computed(() => {
   </a>
   <RouterLink
     v-else
-    v-slot="{ href, navigate }"
+    v-slot="{ href, navigate, isActive, isExactActive }"
     v-bind="({
       ...$props,
       custom: true,
@@ -35,6 +35,10 @@ const isExternalLink = computed(() => {
     <a
       v-bind="$attrs"
       :href="href"
+      :class="[
+        isActive && 'router-link-active',
+        isExactActive && 'router-link-exact-active',
+      ]"
       @click="navigate"
     >
       <slot />
