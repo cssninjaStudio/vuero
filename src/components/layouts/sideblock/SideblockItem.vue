@@ -43,32 +43,16 @@ const props = defineProps<{
       <span v-if="props.link.badge !== undefined" class="badge">{{ props.link.badge }}</span>
     </a>
   </li>
-  <VCollapseLinks v-else-if="props.link.type === 'collapse'">
-    <template #header>
-      <div class="icon">
-        <VIcon
-          :icon="props.link.icon"
-        />
-      </div>
-      {{ props.link.label }}
+  <VCollapseLinks
+    v-else-if="props.link.type === 'collapse'"
+    :links="props.link.children"
+  >
+    <div class="icon">
       <VIcon
-        class="rtl-hidden"
-        icon="lucide:chevron-right"
+        :icon="props.link.icon"
       />
-      <VIcon
-        class="ltr-hidden"
-        icon="lucide:chevron-left"
-      />
-    </template>
-    <VLink
-      v-for="child in props.link.children"
-      :key="child.to"
-      :to="child.to"
-      class="is-submenu"
-    >
-      <i :class="child.icon" />
-      <span>{{ child.label }}</span>
-    </VLink>
+    </div>
+    {{ props.link.label }}
   </VCollapseLinks>
   <li
     v-else-if="props.link.type === 'divider'"

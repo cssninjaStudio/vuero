@@ -1,132 +1,82 @@
-<script lang="ts">
-import { type PropType, type SlotsType, Transition, Fragment } from 'vue'
+<script setup lang="ts">
+import { withoutTrailingSlash } from 'ufo'
 
-export default defineComponent({
-  props: {
-    open: {
-      type: [Boolean, String] as PropType<boolean | string>,
-      default: undefined,
-    },
-    collapseId: {
-      type: String,
-      default: undefined,
-    },
-  },
-  slots: Object as SlotsType<{
-    header: void
-    default: void
-  }>,
-  emits: ['update:open'],
-  setup(props, { slots, emit }) {
-    const route = useRoute()
-    const hasNestedLinkActive = ref(false)
+const props = defineProps<{
+  links: {
+    label: string
+    to: string
+    icon?: string
+    tag?: string | number
+  }[]
+}>()
 
-    const slotContent = slots.default?.() ?? []
-    const currentRoute = route.name
-    slotContent.forEach((child) => {
-      if (child.props?.to?.name && currentRoute === child.props.to.name) {
-        hasNestedLinkActive.value = true
-      }
-    })
-    const isOpen = ref(
-      Boolean(
-        hasNestedLinkActive.value
-        || (typeof props.collapseId === 'string' && props.open === props.collapseId)
-        || (typeof props.collapseId === 'undefined' && props.open === true),
-      ),
-    )
+const route = useRoute()
+const isOpen = ref(false)
 
-    function toggle() {
-      if (typeof props.collapseId === 'string') {
-        if (props.collapseId === props.open) {
-          emit('update:open')
-        }
-        else {
-          emit('update:open', props.collapseId)
-        }
-      }
-      else {
-        isOpen.value = !isOpen.value
-      }
-    }
-
-    watch(
-      () => props.open,
-      (val) => {
-        isOpen.value = Boolean(
-          (typeof props.collapseId === 'string' && unref(val) === props.collapseId)
-          || (typeof props.collapseId === 'undefined' && unref(val) === true),
-        )
-      },
-    )
-
-    return () => {
-      const header = slots.header?.()
-      const slotContent = slots.default?.() ?? []
-      const links = [] as VNode[]
-
-      for (const child of slotContent) {
-        if (child.type === Fragment) {
-          const children = child.children as VNode[]
-          for (const child of children) {
-            links.push(h('li', {}, child))
-          }
-        }
-        else {
-          links.push(h('li', {}, child))
-        }
-      }
-
-      const parentLink = h(
-        'a',
-        {
-          tabindex: 0,
-          class: 'parent-link',
-          onClick: (e: MouseEvent) => {
-            e.preventDefault()
-
-            toggle()
-          },
-          onKeydown(e: KeyboardEvent) {
-            if (e.code === 'Space') {
-              e.preventDefault()
-              e.stopPropagation()
-
-              toggle()
-            }
-          },
-        },
-        header,
-      )
-      const collapseWrap = h('div', { class: 'collapse-wrap' }, parentLink)
-      const content = isOpen.value ? h('ul', {}, links) : undefined
-
-      return h(
-        'li',
-        {
-          class: ['collapse-links has-children', isOpen.value && 'active'],
-        },
-        [
-          collapseWrap,
-          h(
-            Transition,
-            {
-              name: 'collapse-links-transition',
-              mode: 'out-in',
-              class: 'collapse-content',
-            },
-            {
-              default() {
-                return content
-              },
-            },
-          ),
-        ],
-      )
-    }
-  },
+onMounted(() => {
+  console.log('route?', route.path)
+  if (props.links.some(link => withoutTrailingSlash(link.to) === withoutTrailingSlash(route.path))) {
+    isOpen.value = true
+  }
 })
+
+function toggle() {
+  isOpen.value = !isOpen.value
+}
 </script>
+
+<template>
+  <li class="collapse-links has-children" :class="[isOpen && 'active']">
+    <div class="collapse-wrap">
+      <a
+        role="button"
+        tabindex="0"
+        class="parent-link"
+        @click.prevent="() => toggle()"
+        @keydown.enter.prevent="() => toggle()"
+      >
+        <slot />
+        <VIcon
+          class="rtl-hidden"
+          icon="lucide:chevron-right"
+        />
+        <VIcon
+          class="ltr-hidden"
+          icon="lucide:chevron-left"
+        />
+      </a>
+    </div>
+    <Transition
+      name="collapse-links-transition"
+      mode="out-in"
+    >
+      <ul v-if="isOpen" class="collapse-content">
+        <li
+          v-for="child of props.links"
+          :key="child.to"
+        >
+          <VLink
+            class="is-submenu"
+            :to="child.to"
+          >
+            <VIcon
+              v-if="child.icon"
+              :icon="child.icon"
+            />
+            <span>{{ child.label }}</span>
+            <VTag
+              v-if="child.tag"
+              :label="child.tag"
+              color="primary"
+              outlined
+              curved
+            />
+          </VLink>
+        </li>
+      </ul>
+    </Transition>
+  </li>
+</template>
 
 <style lang="scss" scoped>
 .collapse-links {

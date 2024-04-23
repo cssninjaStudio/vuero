@@ -36,39 +36,9 @@ const props = defineProps<{
           <VCollapseLinks
             v-else-if="item.type === 'collapse'"
             :key="`collapse-${item.id}`"
+            :links="item.children"
           >
-            <template #header>
-              {{ item.label }}
-              <VIcon
-                class="rtl-hidden"
-                icon="lucide:chevron-right"
-              />
-              <VIcon
-                class="ltr-hidden"
-                icon="lucide:chevron-left"
-              />
-            </template>
-
-            <VLink
-              v-for="child of item.children"
-              :key="child.to"
-              :to="child.to"
-              class="is-submenu"
-            >
-              <i
-                v-if="child.icon"
-                aria-hidden="true"
-                :class="child.icon"
-              />
-              <span>{{ child.label }}</span>
-              <VTag
-                v-if="child.tag"
-                :label="child.tag"
-                color="primary"
-                outlined
-                curved
-              />
-            </VLink>
+            {{ item.label }}
           </VCollapseLinks>
         </template>
       </ul>
