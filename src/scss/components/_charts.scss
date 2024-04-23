@@ -79,6 +79,11 @@
   }
 
   .apexcharts-svg {
+    line {
+      color: var(--dark-sidebar-light-12) !important;
+      stroke: var(--dark-sidebar-light-12) !important;
+    }
+
     .apexcharts-inner,
     .apexcharts-graphical {
       .apexcharts-xaxis {
