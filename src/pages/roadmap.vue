@@ -406,7 +406,7 @@ useHead({
             role="img"
             aria-label="copyright"
           >&copy;</span>
-          <span>2020-2023 cssninjaStudio</span>
+          <span>2020-{{ new Date().getFullYear() }} cssninjaStudio</span>
         </div>
       </div>
     </div>

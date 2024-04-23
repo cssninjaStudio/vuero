@@ -216,7 +216,7 @@
           <span
             role="img"
             aria-label="copyright"
-          >&copy;</span> 2020-2023 |
+          >&copy;</span> 2020-{{ new Date().getFullYear() }} |
           <a href="https://cssninja.io">cssninjaStudio</a> | All Rights Reserved.
         </p>
       </div>
