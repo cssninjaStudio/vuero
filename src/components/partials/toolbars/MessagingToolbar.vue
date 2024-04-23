@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useI18n } from 'vue-i18n'
-
 const emit = defineEmits(['close'])
 
 const panels = usePanels()

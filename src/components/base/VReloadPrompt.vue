@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import { useRegisterSW } from 'virtual:pwa-register/vue'
 
-import { useI18n } from 'vue-i18n'
-
 export interface VReloadPromptProps {
   appName: string
 }

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { RouterLink } from 'vue-router/auto'
+import { RouterLink } from 'vue-router'
 
 import VTag from '/@src/components/base/VTag.vue'
 import FlexTableDropdown from '/@src/components/partials/dropdowns/FlexTableDropdown.vue'

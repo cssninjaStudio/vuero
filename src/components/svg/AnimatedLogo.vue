@@ -3,17 +3,19 @@ const props = defineProps<{
   light?: boolean
 }>()
 
-const router = useRouter()
 const isLoading = ref(false)
 
-router.beforeEach(() => {
-  isLoading.value = true
-})
-router.afterEach(() => {
-  setTimeout(() => {
-    isLoading.value = false
-  }, 200)
-})
+if (!import.meta.env.SSR) {
+  const router = useRouter()
+  router.beforeEach(() => {
+    isLoading.value = true
+  })
+  router.afterEach(() => {
+    setTimeout(() => {
+      isLoading.value = false
+    }, 200)
+  })
+}
 </script>
 
 <template>

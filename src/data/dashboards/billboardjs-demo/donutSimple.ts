@@ -1,7 +1,5 @@
 import type { Chart, ChartOptions, DataItem } from 'billboard.js'
 
-import { donut } from 'billboard.js'
-
 export function useDonutSimple() {
   const themeColors = useThemeColors()
   const options = ref<ChartOptions>({
@@ -19,7 +17,7 @@ export function useDonutSimple() {
         versicolor: themeColors.purple,
         virginica: themeColors.success,
       },
-      type: donut(),
+      type: 'donut',
       onclick(this: Chart, d: DataItem, element: SVGAElement) {
         console.log('[donutSimple] onclick', d, element)
       },

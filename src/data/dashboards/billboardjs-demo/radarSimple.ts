@@ -1,7 +1,5 @@
 import type { ChartOptions } from 'billboard.js'
 
-import { radar } from 'billboard.js'
-
 export function useRadarSimple() {
   const themeColors = useThemeColors()
   const options = ref<ChartOptions>({
@@ -19,7 +17,7 @@ export function useRadarSimple() {
         data3: themeColors.info,
         data4: themeColors.purple,
       },
-      type: radar(),
+      type: 'radar',
       labels: true,
     },
     radar: {

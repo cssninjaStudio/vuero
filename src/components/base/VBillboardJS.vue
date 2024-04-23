@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import type { ChartOptions, Chart } from 'billboard.js'
 
-import bb from 'billboard.js'
 import 'billboard.js/dist/billboard.min.css'
 
 export interface VBillboardJSEmits {
@@ -16,22 +15,23 @@ const props = defineProps<VBillboardJSProps>()
 
 const element = ref<HTMLElement>()
 
-watchEffect(() => {
-  if (element.value) {
-    try {
-      const billboard = bb.generate({
-        ...props.options,
-        bindto: element.value,
-      })
-      emit('ready', billboard)
+onMounted(async () => {
+  if (!element.value) return
 
-      nextTick(() => {
-        billboard.resize()
-      })
-    }
-    catch (error) {
-      console.error(error)
-    }
+  try {
+    const bb = await import('billboard.js').then(m => m.default || m)
+    const billboard = bb.generate({
+      ...props.options,
+      bindto: element.value,
+    })
+    emit('ready', billboard)
+
+    nextTick(() => {
+      billboard.resize()
+    })
+  }
+  catch (error) {
+    console.error(error)
   }
 })
 </script>

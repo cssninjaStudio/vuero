@@ -1,5 +1,5 @@
 <script lang="ts">
-import type { BuiltinLanguage, BuiltinTheme } from 'shikiji'
+import type { BuiltinLanguage, BuiltinTheme } from 'shiki'
 import { h, type PropType } from 'vue'
 import VPlaceload, {
   type VPlaceloadProps,
@@ -19,7 +19,7 @@ async function loadModules() {
     remarkRehype,
     unified,
   ] = await Promise.all([
-    import('rehype-shikiji').then(m => m.default),
+    import('@shikijs/rehype').then(m => m.default),
     import('rehype-external-links').then(m => m.default),
     import('rehype-raw').then(m => m.default),
     import('rehype-sanitize').then(m => [m.default, m.defaultSchema] as const),

@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useI18n } from 'vue-i18n'
-
 // This is the global app setup function
 const { locale } = useI18n()
 

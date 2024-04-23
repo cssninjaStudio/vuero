@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useI18n } from 'vue-i18n'
-
 const panels = usePanels()
 const { locale } = useI18n()
 const { y } = useWindowScroll()

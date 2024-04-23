@@ -1,7 +1,5 @@
 import type { Chart, ChartOptions, DataItem } from 'billboard.js'
 
-import { pie } from 'billboard.js'
-
 export function usePieSimple() {
   const themeColors = useThemeColors()
   const options = ref<ChartOptions>({
@@ -19,7 +17,7 @@ export function usePieSimple() {
         versicolor: themeColors.purple,
         virginica: themeColors.success,
       },
-      type: pie(),
+      type: 'pie',
       onclick(this: Chart, d: DataItem, element: SVGAElement) {
         console.log('[pieSimple] onclick', d, element)
       },

@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { Component } from 'vue'
-import { useI18n } from 'vue-i18n'
 import { FocusTrap } from 'focus-trap-vue'
 
 export type VModalSize = 'small' | 'medium' | 'large' | 'big'

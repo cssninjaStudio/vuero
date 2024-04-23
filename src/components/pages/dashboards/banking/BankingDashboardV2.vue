@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { TinySliderInstance } from 'tiny-slider/src/tiny-slider'
-import { tns } from 'tiny-slider/src/tiny-slider'
 
 import { useExpensesAreaChart } from '/@src/data/dashboards/banking-v2/expensesAreaChart'
 import {
@@ -13,8 +12,10 @@ let slider: TinySliderInstance
 const { expensesOptions } = useExpensesAreaChart()
 
 const sliderElement = ref<HTMLElement>()
-onMounted(() => {
+onMounted(async () => {
   if (sliderElement.value) {
+    const tns = await import('tiny-slider/src/tiny-slider').then(m => m.tns)
+
     slider = tns({
       container: sliderElement.value,
       controls: false,

@@ -1,8 +1,4 @@
 <script setup lang="ts">
-// import type { TinySliderInstance } from 'tiny-slider/src/tiny-slider'
-
-// let slider: TinySliderInstance
-// const sliderElement = ref<HTMLElement>()
 const { onceError } = useImageError()
 const router = useRouter()
 const notyf = useNotyf()

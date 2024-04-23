@@ -1,12 +1,10 @@
 import type { ChartOptions } from 'billboard.js'
 
-import { area } from 'billboard.js'
-
 export function useAreaSimpleChart() {
   const themeColors = useThemeColors()
   const options = ref<ChartOptions>({
     data: {
-      type: area(),
+      type: 'area',
       columns: [
         ['data1', 300, 350, 300, 0, 0, 0],
         ['data2', 130, 100, 140, 200, 150, 50],

@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { TinySliderInstance } from 'tiny-slider/src/tiny-slider'
-import { tns } from 'tiny-slider/src/tiny-slider'
 
 import FoodWidget from '/@src/assets/illustrations/dashboards/food/widget.svg'
 
@@ -26,8 +25,10 @@ const onIndexChanged = (info: any) => {
   info.slideItems[indexPrev].classList.remove('active')
   info.slideItems[indexCurrent].classList.add('active')
 }
-onMounted(() => {
+onMounted(async () => {
   if (sliderElement.value && nextButtonElement.value && prevButtonElement.value) {
+    const tns = await import('tiny-slider/src/tiny-slider').then(m => m.tns)
+
     slider = tns({
       container: sliderElement.value,
       controls: true,

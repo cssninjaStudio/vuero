@@ -1,13 +1,11 @@
 import type { Chart, ChartOptions, DataItem } from 'billboard.js'
 
-import { gauge } from 'billboard.js'
-
 export function useGaugeSimple() {
   const themeColors = useThemeColors()
   const options = ref<ChartOptions>({
     data: {
       columns: [['data', 91.4]],
-      type: gauge(),
+      type: 'gauge',
       onclick(this: Chart, d: DataItem, element: SVGAElement) {
         console.log('[gaugeSimple] onclick', d, element)
       },

@@ -13,8 +13,6 @@ for the [billboard.js](https://naver.github.io/billboard.js/) library.
 
 ```vue
 <script setup lang="ts">
-import { radar } from 'billboard.js'
-
 const themeColors = useThemeColors()
 
 const billboardJsOptions = {
@@ -32,7 +30,7 @@ const billboardJsOptions = {
       data3: themeColors.info,
       data4: themeColors.purple,
     },
-    type: radar(),
+    type: 'radar',
     labels: true,
   },
   radar: {

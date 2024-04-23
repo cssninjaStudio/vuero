@@ -1,7 +1,5 @@
 import type { Chart, ChartOptions } from 'billboard.js'
 
-import { bubble } from 'billboard.js'
-
 export function useBubbleSimple() {
   const themeColors = useThemeColors()
   const options = ref<ChartOptions>({
@@ -17,7 +15,7 @@ export function useBubbleSimple() {
         data3: themeColors.info,
         data4: themeColors.purple,
       },
-      type: bubble(),
+      type: 'bubble',
       labels: true,
     },
     bubble: {

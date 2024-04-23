@@ -1,10 +1,10 @@
 <script lang="ts">
 import type { SlotsType } from 'vue'
-import {
-  type RouteLocationOptions,
-  type LocationQueryValue,
-  RouterLink,
+import type {
+  RouteLocationOptions,
+  LocationQueryValue,
 } from 'vue-router/auto'
+import { RouterLink } from 'vue-router'
 
 export default defineComponent({
   props: {

@@ -1,14 +1,12 @@
 import type { Chart } from 'billboard.js'
 
-import { gauge } from 'billboard.js'
-
 export function useProgressChart() {
   const themeColors = useThemeColors()
 
   const progressGaugeOptions = shallowRef({
     data: {
       columns: [['data', 91.4]],
-      type: gauge(),
+      type: 'gauge',
     },
     gauge: {
       label: {

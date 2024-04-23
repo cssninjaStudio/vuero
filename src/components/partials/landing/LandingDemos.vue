@@ -108,26 +108,6 @@ const searchLabel = computed(() => {
 
   return `${totalResults.value} demos over ${totalDemos} match your request!`
 })
-
-// We use debouncedWatch to debounce the filter input
-debouncedWatch(
-  filterInput,
-  () => {
-    if (filterInput.value.length < 3) {
-      return
-    }
-
-    // dataLayer and is injected via vite-plugin-radar
-    if (window) {
-      window.dataLayer = window.dataLayer || []
-      window.dataLayer.push({
-        event: 'search',
-        search_term: filterInput.value,
-      })
-    }
-  },
-  { debounce: 300 },
-)
 </script>
 
 <template>
