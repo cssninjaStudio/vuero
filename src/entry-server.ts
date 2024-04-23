@@ -1,31 +1,41 @@
-import type { H3Event } from 'h3'
+import devalue from '@nuxt/devalue'
+import { getRequestURL } from 'h3'
 import { renderToString } from 'vue/server-renderer'
 import { renderSSRHead } from '@unhead/ssr'
 
+import type { VueroServerRender, VueroSSRContext } from '/@server/types'
 import { createApp } from '/@src/app'
 
-export async function render(
-  event: H3Event,
-  url: string,
-  manifest: any,
-  initialState: any = {},
-) {
+const placeholderAppRe = /<div id="app"([\s\w\-"'=[\]]*)><\/div>/
+
+export const render: VueroServerRender = async ({
+  event,
+  manifest,
+  initialState = {},
+  template,
+}) => {
+  const url = getRequestURL(event)
   const { app, router, pinia, head } = await createApp()
 
   // set the router to the desired URL before rendering
-  router.push(url)
+  router.push(url.pathname)
   await router.isReady()
 
   // passing SSR context object which will be available via useSSRContext()
   // @vitejs/plugin-vue injects code into a component's setup() that registers
   // itself on ctx.modules. After the render, ctx.modules would contain all the
   // components that have been instantiated during this render call.
-  const ctx: any = {
+  const ctx: VueroSSRContext = {
     event,
   }
   const appHtml = await renderToString(app, ctx)
-  const { headTags, htmlAttrs, bodyAttrs, bodyTags, bodyTagsOpen }
-    = await renderSSRHead(head)
+  const {
+    headTags,
+    htmlAttrs,
+    bodyAttrs,
+    bodyTags,
+    bodyTagsOpen,
+  } = await renderSSRHead(head)
 
   initialState.pinia = pinia?.state.value
 
@@ -33,16 +43,19 @@ export async function render(
   // which we can then use to determine what files need to be preloaded for this
   // request.
   const preloadLinks = renderPreloadLinks(ctx.modules, manifest)
-  return {
-    appHtml,
-    headTags,
-    htmlAttrs,
-    bodyAttrs,
-    bodyTags,
-    bodyTagsOpen,
-    preloadLinks,
-    initialState,
-  }
+
+  return template
+    .replace(`<html>`, `<html${htmlAttrs}>`)
+    .replace(`<head>`, `<head>${headTags}`)
+    .replace(`</head>`, `${preloadLinks}</head>`)
+    .replace(`<body>`, `<body${bodyAttrs}>${bodyTagsOpen}`)
+    .replace(`</body>`, `${bodyTags}</body>`)
+    .replace(
+      placeholderAppRe,
+      `<div id="app" data-server-rendered="true"$1>${appHtml}</div><script>window.__vuero__=${devalue(
+        initialState,
+      )}</script>`,
+    )
 }
 
 function renderPreloadLinks(modules: any, manifest: any) {
@@ -63,7 +76,7 @@ function renderPreloadLinks(modules: any, manifest: any) {
 }
 
 function renderPreloadLink(file: string) {
-  if (file.endsWith('.js')) {
+  if (file.endsWith('.js') || file.endsWith('.mjs')) {
     return `<link rel="modulepreload" crossorigin href="${file}">`
   }
   else if (file.endsWith('.css')) {

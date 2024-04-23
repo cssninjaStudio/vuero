@@ -5,25 +5,20 @@ import Vue from '@vitejs/plugin-vue'
 import VueRouter from 'unplugin-vue-router/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
 import Components from 'unplugin-vue-components/vite'
-import AutoImport from 'unplugin-auto-import/vite'
+import Imports from 'unplugin-auto-import/vite'
 import Unfonts from 'unplugin-fonts/vite'
-import { VitePluginRadar } from 'vite-plugin-radar'
-import ImageMin from 'vite-plugin-imagemin'
-import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
+import I18n from '@intlify/unplugin-vue-i18n/vite'
 import { VitePWA } from 'vite-plugin-pwa'
-import purgecss from 'rollup-plugin-purgecss'
-import UnheadVite from '@unhead/addons/vite'
-import VueDevTools from 'vite-plugin-vue-devtools'
+import PurgeCSS from 'rollup-plugin-purgecss'
+import Unhead from '@unhead/addons/vite'
+import DevTools from 'vite-plugin-vue-devtools'
 import { unheadVueComposablesImports } from '@unhead/vue'
 
 // local vite plugin
-import { VitePluginVueroDoc } from './vite-plugin/vuero-doc'
-import { VitePluginPurgeComments } from './vite-plugin/purge-comments'
+import { VueroMarkdownDoc } from './vite-plugin/vuero-doc'
+import { PurgeComments } from './vite-plugin/purge-comments'
 
-// options via env variables
-const MINIFY_IMAGES = process.env.MINIFY ? process.env.MINIFY === 'true' : false
-
-const isProd = process.env.NODE_ENV === 'production'
+import { isProd } from '/@server/utils'
 
 /**
  * This is the main configuration file for vitejs
@@ -38,27 +33,45 @@ export default defineConfig({
   // in ./src/router.ts
   // base: '/my-subdirectory/',
   base: '/',
-  // Directory to serve as plain static assets.
   publicDir: 'public',
-  // Adjust console output verbosity.
   logLevel: 'info',
+  resolve: {
+    alias: [
+      {
+        find: '/@src/',
+        replacement: `/src/`,
+      },
+      {
+        find: '/@server/',
+        replacement: `/server/`,
+      },
+    ],
+  },
   // development server configuration
   server: {
-    // Vite 4 defaults to 5173, but you can override it with the port option.
     port: 3000,
   },
-  /**
-   * By default, Vite will crawl your index.html to detect dependencies that
-   * need to be pre-bundled. If build.rollupOptions.input is specified,
-   * Vite will crawl those entry points instead.
-   *
-   * @see https://vitejs.dev/config/#optimizedeps-entries
-   */
+  ssr: {
+    noExternal: isProd ? [] : ['vue-router'],
+  },
+  define: {
+    // compile time flags - allow to tree shake code
+    __VUERO_SSR_BUILD__: `${process.env.SSR_BUILD}`,
+    // https://vuejs.org/api/compile-time-flags.html
+    __VUE_OPTIONS_API__: 'true',
+    __VUE_PROD_DEVTOOLS__: 'false',
+    __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: 'false',
+    // https://vue-i18n.intlify.dev/guide/advanced/optimization#feature-build-flags
+    __VUE_I18N_FULL_INSTALL__: 'false',
+    __VUE_I18N_LEGACY_API__: 'false',
+  },
+  // Predefine dependencies in order to prevent reloading them in the browser during development.
   optimizeDeps: {
     include: [
       '@ckeditor/ckeditor5-vue',
       '@ckeditor/ckeditor5-build-classic',
       '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.min.js',
+      '@shikijs/rehype',
       '@vee-validate/zod',
       '@vueuse/core',
       '@vueform/multiselect',
@@ -82,6 +95,7 @@ export default defineConfig({
       'nprogress',
       'notyf',
       'mapbox-gl',
+      'ofetch',
       'photoswipe/lightbox',
       'photoswipe',
       'plyr',
@@ -100,7 +114,6 @@ export default defineConfig({
       'vue-accessible-color-picker',
       'zod',
       'rehype-external-links',
-      'rehype-shikiji',
       'rehype-raw',
       'rehype-sanitize',
       'rehype-stringify',
@@ -113,26 +126,19 @@ export default defineConfig({
       'workbox-window',
       'textarea-markdown-editor/dist/esm/bootstrap',
     ],
-    // disabled: false,
-  },
-  // Will be passed to @rollup/plugin-alias as its entries option.
-  resolve: {
-    alias: [
-      {
-        find: '/@src/',
-        replacement: `/src/`,
-      },
-    ],
   },
   build: {
     target: 'esnext',
     minify: 'terser',
-    // Do not warn about large chunks
-    // chunkSizeWarningLimit: Infinity,
-    // Double the default size threshold for inlined assets
-    // https://vitejs.dev/config/build-options.html#build-assetsinlinelimit
-    assetsInlineLimit: 4096 * 2,
-    // commonjsOptions: { include: [] },
+    rollupOptions: {
+      output: {
+        entryFileNames: '[name].mjs',
+        // Using only hash to prevent adblockers from blocking assets that match their patterns.
+        // Replace with [name] to use the original name for debug purposes.
+        chunkFileNames: 'assets/[hash].mjs',
+        assetFileNames: 'assets/[hash][extname]',
+      },
+    },
   },
   plugins: [
     /**
@@ -140,7 +146,7 @@ export default defineConfig({
      *
      * @see https://devtools-next.vuejs.org/
      */
-    VueDevTools(),
+    DevTools(),
 
     /**
      * unplugin-vue-router plugin generate routes based on file system
@@ -172,7 +178,7 @@ export default defineConfig({
      *
      * @see https://github.com/intlify/bundle-tools/blob/main/packages/unplugin-vue-i18n/README.md
      */
-    VueI18nPlugin({
+    I18n({
       include: resolve(dirname(fileURLToPath(import.meta.url)), './src/locales/**'),
       fullInstall: false,
       compositionOnly: true,
@@ -183,16 +189,22 @@ export default defineConfig({
      *
      * @see https://unhead.harlanzw.com/guide/getting-started/vite-plugin
      */
-    UnheadVite(),
+    Unhead(),
 
     /**
      * unplugin-auto-import allow to automaticaly import modules/components
      *
      * @see https://github.com/antfu/unplugin-auto-import
      */
-    AutoImport({
+    Imports({
       dts: './types/imports.d.ts',
-      imports: ['vue', '@vueuse/core', VueRouterAutoImports, unheadVueComposablesImports],
+      imports: [
+        'vue',
+        '@vueuse/core',
+        'vue-i18n',
+        VueRouterAutoImports,
+        unheadVueComposablesImports,
+      ],
       dirs: ['src/composables', 'src/stores', 'src/utils'],
     }),
 
@@ -200,11 +212,11 @@ export default defineConfig({
      * This is an internal vite plugin that load markdown files as vue components.
      *
      * @see /documentation
-     * @see /vite-plugin-vuero-doc
+     * @see /vite-plugin/vuero-doc
      * @see /src/components/partials/documentation/DocumentationItem.vue
      * @see /src/composable/useMarkdownToc.ts
      */
-    VitePluginVueroDoc({
+    VueroMarkdownDoc({
       pathPrefix: 'documentation',
       wrapperComponent: 'DocumentationItem',
       shiki: {
@@ -222,9 +234,9 @@ export default defineConfig({
     /**
      * This is an internal vite plugin that remove html comments from code.
      *
-     * @see /vite-plugin-purge-comments
+     * @see /vite-plugin/purge-comments
      */
-    VitePluginPurgeComments(),
+    PurgeComments(),
 
     /**
      * unplugin-vue-components plugin is responsible of autoloading components
@@ -240,9 +252,9 @@ export default defineConfig({
     }),
 
     /**
-     * vite-plugin-fonts plugin inject webfonts from differents providers
+     * unplugin-fonts plugin inject webfonts from differents providers
      *
-     * @see https://github.com/stafyniaksacha/vite-plugin-fonts
+     * @see https://github.com/cssninjaStudio/unplugin-fonts
      */
     Unfonts({
       google: {
@@ -262,19 +274,6 @@ export default defineConfig({
         ],
       },
     }),
-
-    /**
-     * vite-plugin-radar plugin inject snippets from analytics providers
-     *
-     * @see https://github.com/stafyniaksacha/vite-plugin-radar
-     */
-    !process.env.GTM_ID
-      ? undefined
-      : VitePluginRadar({
-        gtm: {
-          id: process.env.GTM_ID,
-        },
-      }),
 
     /**
      * vite-plugin-pwa generate manifest.json and register services worker to enable PWA
@@ -364,7 +363,7 @@ export default defineConfig({
      *
      * @see https://github.com/FullHuman/purgecss/tree/main/packages/rollup-plugin-purgecss
      */
-    purgecss({
+    PurgeCSS({
       output: false,
       content: [`./src/**/*.vue`],
       variables: false,
@@ -382,41 +381,5 @@ export default defineConfig({
         return contentWithoutStyleBlocks.match(/[A-Za-z0-9-_/:]*[A-Za-z0-9-_/]+/g) || []
       },
     }),
-
-    /**
-     * vite-plugin-imagemin optimize all images sizes from public or asset folder
-     *
-     * @see https://github.com/anncwb/vite-plugin-imagemin
-     */
-    !MINIFY_IMAGES
-      ? undefined
-      : ImageMin({
-        gifsicle: {
-          optimizationLevel: 7,
-          interlaced: false,
-        },
-        optipng: {
-          optimizationLevel: 7,
-        },
-        mozjpeg: {
-          quality: 60,
-        },
-        pngquant: {
-          quality: [0.8, 0.9],
-          speed: 4,
-        },
-        svgo: {
-          plugins: [
-            {
-              name: 'removeViewBox',
-              active: false,
-            },
-            {
-              name: 'removeEmptyAttrs',
-              active: false,
-            },
-          ],
-        },
-      }),
   ],
 })

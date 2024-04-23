@@ -1,4 +1,6 @@
+/* eslint-disable @typescript-eslint/consistent-type-imports */
+
 declare interface Window {
-  // dataLayer is injected via vite-plugin-radar
-  dataLayer?: any[]
+  // initial state for the client when hydrating
+  __vuero__: import('/@server/types').VueroInitialState
 }

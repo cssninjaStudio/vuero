@@ -6,7 +6,7 @@
     "moduleResolution": "bundler",
     "strict": true,
     "jsx": "preserve",
-    "sourceMap": true,
+    "jsxImportSource": "vue",
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "removeComments": true,
@@ -14,6 +14,12 @@
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "useDefineForClassFields": true,
+    "noEmit": true,
+    "allowJs": true,
+    "allowImportingTsExtensions": true,
+    "noImplicitThis": true,
+    // "verbatimModuleSyntax": true,
+    "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
     "lib": ["esnext", "dom"],
     "types": [
@@ -26,7 +32,14 @@
       "photoswipe/lightbox": [
         "./node_modules/photoswipe/dist/types/lightbox/lightbox.d.ts"
       ],
-      "/@src/*": ["./src/*"]
+      "v-calendar": [
+        "./node_modules/v-calendar/dist/types/src/index.d.ts"
+      ],
+      "vue3-apexcharts": [
+        "./node_modules/vue3-apexcharts/typings/vue3-apexcharts.d.ts"
+      ],
+      "/@src/*": ["./src/*"],
+      "/@server/*": ["./server/*"]
     }
   },
   "include": [

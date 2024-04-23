@@ -7,17 +7,17 @@ function parseId(id: string) {
   else return id.slice(0, index)
 }
 
-export interface PluginOptions {
-  sourcemap?: boolean
-}
-
 /**
  * This plugin removes HTML comments from your code.
  */
-export function VitePluginPurgeComments({ sourcemap = false }: PluginOptions = {}) {
+export function PurgeComments() {
+  let sourcemap: boolean | 'inline' | 'hidden' | undefined
   return {
     name: 'purge-comments',
     enforce: 'pre',
+    configResolved(config) {
+      sourcemap = config.build.sourcemap
+    },
     transform: (code, id) => {
       const parsedId = parseId(id)
       if (

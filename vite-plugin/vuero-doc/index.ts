@@ -1,11 +1,10 @@
 import type { Plugin, ResolvedConfig } from 'vite'
-// import type { Processor } from 'unified'
 import type {
   ThemeRegistration,
   ThemeRegistrationRaw,
   BuiltinTheme,
   StringLiteralUnion,
-} from 'shikiji'
+} from 'shiki'
 
 import { join, basename } from 'pathe'
 import { compileTemplate, parse } from '@vue/compiler-sfc'
@@ -36,7 +35,7 @@ export interface PluginOptions {
   }
 }
 
-export function VitePluginVueroDoc(options: PluginOptions) {
+export function VueroMarkdownDoc(options: PluginOptions) {
   let config: ResolvedConfig | undefined
   let processor: Awaited<ReturnType<typeof createProcessor>> | undefined
 
@@ -60,7 +59,6 @@ export function VitePluginVueroDoc(options: PluginOptions) {
 
     // replace code/example slots placeholders
     const slot = transformSlots(content)
-    // const slotDark = transformSlots(contentDark, 'v-if="darkmode.isDark"')
 
     // wrap content in wrapper component default slot
     const sfc = [
@@ -143,4 +141,4 @@ export function VitePluginVueroDoc(options: PluginOptions) {
   } satisfies Plugin
 }
 
-export default VitePluginVueroDoc
+export default VueroMarkdownDoc

@@ -1,16 +1,27 @@
-import type { Format, HTMLMinifierConfig, StaticParams } from './internal/types'
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 
-export const format: Format = 'esm'
+import type { App } from 'h3'
+import type { StaticParams } from './types'
+import type { Options } from 'html-minifier-terser'
+
+export const options: Options = {
+  collapseWhitespace: true,
+  collapseInlineTagWhitespace: true,
+}
 
 /**
- * note: to work with bun, you need to use terser minifier
+ * Extend h3 app with eventHandler
+ *
+ * @see https://h3.unjs.io/
  */
-export const htmlMinifier: HTMLMinifierConfig = {
-  minifier: 'minify-html',
-  minifyHtmlOptions: {
-    keep_comments: true,
-    minify_js: true,
-  },
+export function extendH3App(app: App) {
+  // app.use('/api/hello/:name', eventHandler(async (event) => {
+  //   const query = getQuery(event)
+  //   const params = getRouterParams(event)
+
+  //   return `Hello ${params.name}!`
+  // }))
 }
 
 export function generateStaticParams(): StaticParams {
@@ -20,3 +31,17 @@ export function generateStaticParams(): StaticParams {
     // },
   }
 }
+
+// https://vuejs.org/api/compile-time-flags.html
+// @ts-ignore - vue feature flags
+globalThis.__VUE_OPTIONS_API__ = false
+// @ts-ignore - vue feature flags
+globalThis.__VUE_PROD_DEVTOOLS__ = false
+// @ts-ignore - vue feature flags
+globalThis.__VUE_PROD_HYDRATION_MISMATCH_DETAILS__ = false
+
+// https://vue-i18n.intlify.dev/guide/advanced/optimization#feature-build-flags
+// @ts-ignore - vue i18n feature flags
+globalThis.__VUE_I18N_FULL_INSTALL__ = false
+// @ts-ignore - vue i18n feature flags
+globalThis.__VUE_I18N_LEGACY_API__ = false

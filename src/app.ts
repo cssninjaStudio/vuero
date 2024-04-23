@@ -1,4 +1,4 @@
-import { createApp as createClientApp } from 'vue'
+import { createApp as createClientApp, createSSRApp } from 'vue'
 
 import { createHead } from '@unhead/vue'
 import { InferSeoMetaPlugin } from '@unhead/addons'
@@ -18,7 +18,10 @@ export function definePlugin(plugin: VueroPlugin) {
 }
 
 export async function createApp() {
-  const app = createClientApp(VueroApp)
+  const app = __VUERO_SSR_BUILD__
+    ? createSSRApp(VueroApp)
+    : createClientApp(VueroApp)
+
   const router = createRouter()
 
   const head = createHead({

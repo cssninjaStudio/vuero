@@ -8,14 +8,14 @@ import remarkParse from 'remark-parse'
 import remarkGfm from 'remark-gfm'
 import remarkRehype from 'remark-rehype'
 import remarkFrontmatter from 'remark-frontmatter'
-import rehypeShikiji from 'rehype-shikiji'
+import rehypeShiki from '@shikijs/rehype'
 import type {
   ThemeRegistration,
   ThemeRegistrationRaw,
   BuiltinLanguage,
   BuiltinTheme,
   StringLiteralUnion,
-} from 'shikiji'
+} from 'shiki'
 import { unified } from 'unified'
 import type { Literal, Parent } from 'unist'
 
@@ -51,7 +51,7 @@ export async function createProcessor(
     .use(remarkGfm)
     .use(remarkRehype, { allowDangerousHtml: true })
     .use(rehypeRaw)
-    .use(rehypeShikiji, {
+    .use(rehypeShiki, {
       themes,
       langs,
     })
