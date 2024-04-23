@@ -141,7 +141,7 @@ const VFocus = {
               type="text"
               class="input is-primary-focus"
               @blur="editCompanyIndex = undefined"
-              @keyup.enter="editCompanyIndex = undefined"
+              @keydown.enter="editCompanyIndex = undefined"
             >
           </VField>
         </VControl>
