@@ -1,191 +1,197 @@
 <script setup lang="ts">
+import { FocusTrap } from 'focus-trap-vue'
+
 const panels = usePanels()
 </script>
 
 <template>
-  <div
-    id="task-panel"
-    :class="[panels.active === 'task' && 'is-active']"
-    class="right-panel-wrapper is-task"
-  >
-    <div
-      class="panel-overlay"
-      tabindex="0"
-      role="button"
-      @keydown.space.prevent="panels.close()"
-      @click="panels.close()"
-    />
-
-    <div class="right-panel">
-      <div class="right-panel-head">
-        <h3>Task Details</h3>
-        <a
-          class="close-panel"
-          tabindex="0"
+  <Teleport to="body">
+    <FocusTrap
+      v-if="panels.active === 'task'"
+      :initial-focus="() => ($refs.closeButton as any)"
+    >
+      <div class="right-panel-wrapper is-task is-active">
+        <div
+          class="panel-overlay"
+          tabindex="-1"
           role="button"
           @keydown.space.prevent="panels.close()"
           @click="panels.close()"
-        >
-          <VIcon
-            icon="lucide:chevron-right"
-          />
-        </a>
-      </div>
-      <div
-        class="right-panel-body has-slimscroll"
-      >
-        <div class="task-group task-overview">
-          <h3>Overview</h3>
+        />
 
-          <div class="task-description">
-            <h4>Build a desktop and mobile landing page wireframe</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Videmus igitur ut
-              conquiescere ne infantes quidem possint. Duo Reges: constructio interrete...
-              <a>See More</a>
-            </p>
-          </div>
-
-          <div class="task-participants">
-            <h5>Participants</h5>
-
-            <div class="participants-inner">
-              <div class="avatar-stack">
-                <VAvatar picture="/demo/avatars/7.jpg" />
-                <VAvatar picture="/images/avatars/svg/vuero-1.svg" />
-                <VAvatar picture="/demo/avatars/5.jpg" />
-              </div>
-
-              <button>
-                <VIcon
-                  icon="lucide:plus"
-                />
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="task-group">
-          <h3>Statistics</h3>
-          <div class="task-stats">
-            <div class="task-stat">
+        <div class="right-panel">
+          <div class="right-panel-head">
+            <h3>Task Details</h3>
+            <a
+              ref="closeButton"
+              class="close-panel"
+              tabindex="0"
+              role="button"
+              @keydown.space.prevent="panels.close()"
+              @click="panels.close()"
+            >
               <VIcon
-                icon="lucide:clock"
+                icon="lucide:chevron-right"
               />
-              <span>5 days</span>
-            </div>
-            <div class="task-stat">
-              <VIcon
-                icon="lucide:file"
-              />
-              <span>3 files</span>
-            </div>
-            <div class="task-stat">
-              <VIcon
-                icon="lucide:message-circle"
-              />
-              <span>54</span>
-            </div>
-            <a>
-              <VIcon
-                icon="lucide:plus"
-              />
-              <span>Add Checklist</span>
             </a>
           </div>
-        </div>
+          <div
+            class="right-panel-body has-slimscroll"
+          >
+            <div class="task-group task-overview">
+              <h3>Overview</h3>
 
-        <div class="task-group">
-          <h3>Files</h3>
-          <div class="task-files">
-            <div class="file-box">
-              <img
-                src="/images/icons/files/zip-format.svg"
-                alt=""
-              >
-              <div class="meta">
-                <span>Preliminary Sketches</span>
-                <span>3MB <i
-                  aria-hidden="true"
-                  class="fas fa-circle"
-                /> 5 days ago</span>
+              <div class="task-description">
+                <h4>Build a desktop and mobile landing page wireframe</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Videmus igitur ut
+                  conquiescere ne infantes quidem possint. Duo Reges: constructio interrete...
+                  <a>See More</a>
+                </p>
               </div>
-              <FileCardDropdown />
-            </div>
-            <div class="file-box">
-              <img
-                src="/images/icons/files/sheet.svg"
-                alt=""
-              >
-              <div class="meta">
-                <span>Project Budget</span>
-                <span>0.6MB <i
-                  aria-hidden="true"
-                  class="fas fa-circle"
-                /> 8 days ago</span>
-              </div>
-              <FileCardDropdown />
-            </div>
-            <div class="file-box">
-              <img
-                src="/images/icons/files/video.svg"
-                alt=""
-              >
-              <div class="meta">
-                <span>POC Demo</span>
-                <span>8.75MB <i
-                  aria-hidden="true"
-                  class="fas fa-circle"
-                /> 8 days ago</span>
-              </div>
-              <FileCardDropdown />
-            </div>
-          </div>
-        </div>
 
-        <div class="task-group">
-          <h3>Messages</h3>
-          <div class="field has-textarea-addon">
-            <div class="control">
-              <textarea
-                class="textarea"
-                rows="3"
-                placeholder="Send a quick message..."
-              />
-            </div>
-            <div class="control is-textarea-addon">
-              <div class="start">
-                <div class="avatar-stack">
-                  <VAvatar
-                    size="small"
-                    picture="/images/avatars/svg/vuero-1.svg"
-                  />
+              <div class="task-participants">
+                <h5>Participants</h5>
+
+                <div class="participants-inner">
+                  <div class="avatar-stack">
+                    <VAvatar picture="/demo/avatars/7.jpg" />
+                    <VAvatar picture="/images/avatars/svg/vuero-1.svg" />
+                    <VAvatar picture="/demo/avatars/5.jpg" />
+                  </div>
+
+                  <button>
+                    <VIcon
+                      icon="lucide:plus"
+                    />
+                  </button>
                 </div>
               </div>
-              <div class="end">
-                <a class="message-action">
+            </div>
+
+            <div class="task-group">
+              <h3>Statistics</h3>
+              <div class="task-stats">
+                <div class="task-stat">
                   <VIcon
-                    icon="lucide:smile"
+                    icon="lucide:clock"
                   />
-                </a>
-                <a class="message-action">
+                  <span>5 days</span>
+                </div>
+                <div class="task-stat">
                   <VIcon
-                    icon="lucide:at-sign"
+                    icon="lucide:file"
                   />
-                </a>
-                <a class="message-action">
+                  <span>3 files</span>
+                </div>
+                <div class="task-stat">
                   <VIcon
-                    icon="lucide:paperclip"
+                    icon="lucide:message-circle"
                   />
+                  <span>54</span>
+                </div>
+                <a>
+                  <VIcon
+                    icon="lucide:plus"
+                  />
+                  <span>Add Checklist</span>
                 </a>
-                <a class="button v-button is-primary is-bold is-raised">Send</a>
+              </div>
+            </div>
+
+            <div class="task-group">
+              <h3>Files</h3>
+              <div class="task-files">
+                <div class="file-box">
+                  <img
+                    src="/images/icons/files/zip-format.svg"
+                    alt=""
+                  >
+                  <div class="meta">
+                    <span>Preliminary Sketches</span>
+                    <span>3MB <i
+                      aria-hidden="true"
+                      class="fas fa-circle"
+                    /> 5 days ago</span>
+                  </div>
+                  <FileCardDropdown />
+                </div>
+                <div class="file-box">
+                  <img
+                    src="/images/icons/files/sheet.svg"
+                    alt=""
+                  >
+                  <div class="meta">
+                    <span>Project Budget</span>
+                    <span>0.6MB <i
+                      aria-hidden="true"
+                      class="fas fa-circle"
+                    /> 8 days ago</span>
+                  </div>
+                  <FileCardDropdown />
+                </div>
+                <div class="file-box">
+                  <img
+                    src="/images/icons/files/video.svg"
+                    alt=""
+                  >
+                  <div class="meta">
+                    <span>POC Demo</span>
+                    <span>8.75MB <i
+                      aria-hidden="true"
+                      class="fas fa-circle"
+                    /> 8 days ago</span>
+                  </div>
+                  <FileCardDropdown />
+                </div>
+              </div>
+            </div>
+
+            <div class="task-group">
+              <h3>Messages</h3>
+              <div class="field has-textarea-addon">
+                <div class="control">
+                  <textarea
+                    class="textarea"
+                    rows="3"
+                    placeholder="Send a quick message..."
+                  />
+                </div>
+                <div class="control is-textarea-addon">
+                  <div class="start">
+                    <div class="avatar-stack">
+                      <VAvatar
+                        size="small"
+                        picture="/images/avatars/svg/vuero-1.svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="end">
+                    <a class="message-action">
+                      <VIcon
+                        icon="lucide:smile"
+                      />
+                    </a>
+                    <a class="message-action">
+                      <VIcon
+                        icon="lucide:at-sign"
+                      />
+                    </a>
+                    <a class="message-action">
+                      <VIcon
+                        icon="lucide:paperclip"
+                      />
+                    </a>
+                    <a class="button v-button is-primary is-bold is-raised">Send</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
+    </FocusTrap>
+  </Teleport>
 </template>
 
 <style lang="scss">

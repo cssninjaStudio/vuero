@@ -6,11 +6,10 @@ export const useVueroContext = ({
 }: {
   pageTitle?: MaybeRefOrGetter<string>
 } = {}) => {
-  const context = inject(injectionKey)!
-
-  const initialValue = context.pageTitle.value
+  const context = inject(injectionKey)
 
   if (pageTitle && context) {
+    const initialValue = context.pageTitle.value
     watchEffect((cleanup) => {
       context.pageTitle.value = toValue(pageTitle)
 
