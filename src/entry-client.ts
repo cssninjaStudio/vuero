@@ -13,6 +13,7 @@
  * @see /plugins/*.ts
  */
 import { createApp } from './app'
+import 'iconify-icon'
 
 /**
  * We create our app and mount it when it is ready

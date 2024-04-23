@@ -2,12 +2,9 @@
  * Importing external libraries allow to compile them in our bundle
  * How files are interpreted is defined by ther extension.
  */
-import 'simplebar'
-import 'iconify-icon'
 import 'nprogress/nprogress.css'
 import '@vueform/multiselect/themes/default.scss'
 import '@vueform/slider/themes/default.scss'
-import 'simplebar/dist/simplebar.css'
 import 'tiny-slider/dist/tiny-slider.css'
 import 'notyf/notyf.min.css'
 import 'tippy.js/dist/tippy.css'

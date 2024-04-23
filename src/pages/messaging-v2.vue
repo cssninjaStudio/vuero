@@ -296,8 +296,7 @@ useHead({
 
         <!--Conversation messages-->
         <div
-          class="chat-area is-active"
-          data-simplebar
+          class="chat-area is-active has-slimscroll"
         >
           <!--Conversation 1-->
           <WebappConversation1
@@ -476,8 +475,7 @@ useHead({
 
         <!--Conversation Details-->
         <div
-          class="detail-area"
-          data-simplebar
+          class="detail-area has-slimscroll"
         >
           <div class="chat-side-content is-single">
             <VAvatar

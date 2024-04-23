@@ -20,8 +20,7 @@ const props = withDefaults(
 <template>
   <div
     :class="[props.mobileConversationListOpen && 'is-active']"
-    class="conversation-area"
-    data-simplebar
+    class="conversation-area has-slimscroll"
   >
     <!--Conversation-->
     <div

@@ -376,8 +376,7 @@ watch(
       <div class="content-section">
         <slot name="header" />
         <div
-          class="content-section-body"
-          data-simplebar
+          class="content-section-body has-slimscroll"
         >
           <!--Title-->
           <h4 class="content-section-title">

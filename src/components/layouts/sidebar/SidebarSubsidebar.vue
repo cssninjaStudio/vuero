@@ -29,8 +29,7 @@ const emits = defineEmits<{
       </div>
     </div>
     <div
-      class="inner"
-      data-simplebar
+      class="inner has-slimscroll"
     >
       <ul>
         <template v-for="(item, idx) of props.items">

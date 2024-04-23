@@ -33,7 +33,6 @@ const panels = usePanels()
       </div>
       <div
         class="right-panel-body has-slimscroll"
-        data-simplebar
       >
         <div class="task-group task-overview">
           <h3>Overview</h3>

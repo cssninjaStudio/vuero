@@ -109,7 +109,7 @@ export default defineConfig({
       'vue-router',
       'unplugin-vue-router/runtime',
       'scule',
-      'simplebar',
+      // 'simplebar',
       'tiny-slider/src/tiny-slider',
       'vue-accessible-color-picker',
       'zod',

@@ -17,8 +17,7 @@ const props = defineProps<{
       </div>
 
       <ul
-        class="submenu"
-        data-simplebar
+        class="submenu has-slimscroll"
       >
         <template v-for="item of props.items">
           <VCollapseLinks v-if="'children' in item" :key="item.id">

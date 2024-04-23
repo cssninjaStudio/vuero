@@ -16,8 +16,7 @@ const props = defineProps<{
       <div v-if="'default' in $slots" class="navbar-divider" />
 
       <ul
-        class="submenu"
-        data-simplebar
+        class="submenu has-slimscroll"
       >
         <li v-for="item of props.items" :key="item.to">
           <VLink :to="item.to">

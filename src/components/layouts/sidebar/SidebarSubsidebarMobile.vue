@@ -17,8 +17,7 @@ const props = defineProps<{
       </div>
 
       <ul
-        class="submenu"
-        data-simplebar
+        class="submenu has-slimscroll"
       >
         <template v-for="(item, idx) of props.items">
           <li
