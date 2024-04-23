@@ -1,5 +1,7 @@
 import type { ChartOptions } from 'billboard.js'
 
+import { spline } from 'billboard.js'
+
 export function useSplineSimple() {
   const themeColors = useThemeColors()
   const options = ref<ChartOptions>({
@@ -14,7 +16,7 @@ export function useSplineSimple() {
         data3: themeColors.orange,
         data4: themeColors.purple,
       },
-      type: 'spline',
+      type: spline(),
     },
     size: {
       height: 280,

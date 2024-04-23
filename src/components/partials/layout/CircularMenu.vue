@@ -36,7 +36,6 @@ const localFlagSrc = computed(() => {
 
 <template>
   <div
-    id="circular-menu"
     :class="[isScrolling && 'is-active', isOpen && 'active']"
     class="circular-menu"
   >

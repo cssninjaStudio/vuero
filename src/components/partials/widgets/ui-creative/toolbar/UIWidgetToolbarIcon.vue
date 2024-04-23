@@ -82,6 +82,7 @@ const props = withDefaults(
       .iconify {
         height: 18px;
         width: 18px;
+        font-size: 18px;
         transition: stroke 0.3s;
       }
     }
@@ -113,6 +114,7 @@ const props = withDefaults(
     .iconify {
       height: 18px;
       width: 18px;
+      font-size: 18px;
       transition: stroke 0.3s;
     }
   }

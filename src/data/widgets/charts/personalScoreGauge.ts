@@ -1,12 +1,14 @@
 import type { Chart } from 'billboard.js'
 
+import { gauge } from 'billboard.js'
+
 export function usePersonalScoreGauge() {
   const themeColors = useThemeColors()
 
   const personalScoreGaugeOptions = shallowRef({
     data: {
       columns: [['data', 91.4]],
-      type: 'gauge',
+      type: gauge(),
       /*
       onclick: function (data: any, event: any) {
         console.log("onclick", d, i);

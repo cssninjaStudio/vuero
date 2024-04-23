@@ -1,5 +1,7 @@
 import type { Chart, ChartOptions } from 'billboard.js'
 
+import { scatter } from 'billboard.js'
+
 export function useScatterSimple() {
   const themeColors = useThemeColors()
   const options = ref<ChartOptions>({
@@ -230,7 +232,7 @@ export function useScatterSimple() {
         virginica_x: themeColors.info,
         virginica: themeColors.success,
       },
-      type: 'scatter',
+      type: scatter(),
     },
     axis: {
       x: {

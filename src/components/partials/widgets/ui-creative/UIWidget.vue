@@ -84,6 +84,7 @@ const props = defineProps<{
       .iconify {
         height: 18px;
         width: 18px;
+        font-size: 18px;
         transition: stroke 0.3s;
       }
     }
@@ -115,6 +116,7 @@ const props = defineProps<{
     .iconify {
       height: 18px;
       width: 18px;
+      font-size: 18px;
       transition: stroke 0.3s;
     }
   }
@@ -214,6 +216,7 @@ const props = defineProps<{
         .iconify {
           height: 18px;
           width: 18px;
+          font-size: 18px;
         }
       }
     }
@@ -442,6 +445,8 @@ const props = defineProps<{
 
         .iconify {
           color: var(--success);
+          font-size: 1.5rem;
+          margin-inline-start: 0.2em;
         }
       }
 
@@ -510,6 +515,7 @@ const props = defineProps<{
 
         img,
         .iconify {
+          font-size: 18px;
           height: 18px;
           width: 18px;
         }
@@ -566,6 +572,7 @@ const props = defineProps<{
       > .iconify {
         height: 20px;
         width: 20px;
+        font-size: 20px;
         stroke-width: 1.6px;
         color: var(--primary);
         margin-bottom: 6px;
@@ -648,7 +655,7 @@ const props = defineProps<{
         color: var(--primary);
         margin-bottom: 6px;
 
-        .iconify {
+        .iconify, .fas {
           font-size: 6px;
           margin-inline-end: 6px;
         }

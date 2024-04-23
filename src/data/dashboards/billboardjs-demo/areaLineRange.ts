@@ -1,12 +1,14 @@
 import type { Chart, ChartOptions } from 'billboard.js'
 
+import { areaLineRange, areaSplineRange } from 'billboard.js'
+
 export function useAreaLineRangeChart() {
   const themeColors = useThemeColors()
 
   const options = ref<ChartOptions>({
     data: {
       x: 'x',
-      type: 'area-line-range',
+      type: areaLineRange(),
       columns: [
         [
           'x',
@@ -17,7 +19,7 @@ export function useAreaLineRangeChart() {
           '2013-01-05',
           '2013-01-06',
         ],
-        <any>[
+        [
           'data1',
           [150, 140, 110],
           [155, 130, 115],
@@ -26,7 +28,7 @@ export function useAreaLineRangeChart() {
           [180, 150, 130],
           [199, 160, 125],
         ],
-        ['data2', 130, 340, 200, 500, 250, 350],
+        ['data2', [130, 130, 130], [340, 340, 340], [200, 200, 200], [500, 500, 500], [250, 250, 250], [350, 350, 350]],
       ],
       colors: {
         data1: themeColors.accent,
@@ -82,7 +84,7 @@ export function useAreaLineRangeChart() {
           ],
         ],
         types: {
-          data3: 'area-spline-range',
+          data3: areaSplineRange(),
         },
       })
     }, 1000)
@@ -101,7 +103,7 @@ export function useAreaLineRangeChart() {
           ],
         ],
         types: {
-          data4: 'area-spline-range',
+          data4: areaSplineRange(),
         },
       })
     }, 1500)

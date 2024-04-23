@@ -1,10 +1,12 @@
 import type { Chart, ChartOptions } from 'billboard.js'
 
+import { bar } from 'billboard.js'
+
 export function useBarStacked() {
   const themeColors = useThemeColors()
   const options = ref<ChartOptions>({
     data: {
-      type: 'bar',
+      type: bar(),
       columns: [
         ['data1', -30, 200, 200, 400, -150, 250],
         ['data2', 130, 100, -100, 200, -150, 50],
