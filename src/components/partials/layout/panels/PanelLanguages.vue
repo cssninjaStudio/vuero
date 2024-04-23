@@ -19,11 +19,8 @@ watch(locale, () => {
 </script>
 
 <template>
-  <Teleport to="body">
-    <FocusTrap
-      v-if="panels.active === 'languages'"
-      :initial-focus="() => ($refs.closeButton as any)?.el"
-    >
+  <Teleport v-if="panels.active === 'languages'" to="body">
+    <FocusTrap :initial-focus="() => ($refs.closeButton as any)?.el">
       <div class="right-panel-wrapper is-languages is-active">
         <div
           class="panel-overlay"

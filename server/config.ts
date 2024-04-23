@@ -8,6 +8,7 @@ import type { Options } from 'html-minifier-terser'
 export const options: Options = {
   collapseWhitespace: true,
   collapseInlineTagWhitespace: true,
+  conservativeCollapse: true,
 }
 
 /**

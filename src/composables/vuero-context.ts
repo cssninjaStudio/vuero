@@ -8,7 +8,11 @@ export const useVueroContext = ({
 } = {}) => {
   const context = inject(injectionKey)
 
-  if (pageTitle && context) {
+  if (!context) {
+    throw new Error('useVueroContext() is called without provider.')
+  }
+
+  if (pageTitle) {
     const initialValue = context.pageTitle.value
     watchEffect((cleanup) => {
       context.pageTitle.value = toValue(pageTitle)

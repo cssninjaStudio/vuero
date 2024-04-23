@@ -31,11 +31,8 @@ function getAvatarData(user: UserPopover): VAvatarProps {
 </script>
 
 <template>
-  <Teleport to="body">
-    <FocusTrap
-      v-if="panels.active === 'search'"
-      :initial-focus="() => ($refs.searchRef as any)"
-    >
+  <Teleport v-if="panels.active === 'search'" to="body">
+    <FocusTrap :initial-focus="() => ($refs.searchRef as any)">
       <div class="right-panel-wrapper is-search is-left is-active">
         <div
           class="panel-overlay"

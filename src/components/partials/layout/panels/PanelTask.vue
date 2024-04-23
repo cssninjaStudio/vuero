@@ -5,11 +5,8 @@ const panels = usePanels()
 </script>
 
 <template>
-  <Teleport to="body">
-    <FocusTrap
-      v-if="panels.active === 'task'"
-      :initial-focus="() => ($refs.closeButton as any)"
-    >
+  <Teleport v-if="panels.active === 'task'" to="body">
+    <FocusTrap :initial-focus="() => ($refs.closeButton as any)">
       <div class="right-panel-wrapper is-task is-active">
         <div
           class="panel-overlay"

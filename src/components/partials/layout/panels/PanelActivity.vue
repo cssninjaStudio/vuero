@@ -10,11 +10,8 @@ const activeTab = ref<TabId>('team')
 </script>
 
 <template>
-  <Teleport to="body">
-    <FocusTrap
-      v-if="panels.active === 'activity'"
-      :initial-focus="() => ($refs.closeButton as any)?.el"
-    >
+  <Teleport v-if="panels.active === 'activity'" to="body">
+    <FocusTrap :initial-focus="() => ($refs.closeButton as any)?.el">
       <div class="right-panel-wrapper is-activity is-active">
         <div
           class="panel-overlay"

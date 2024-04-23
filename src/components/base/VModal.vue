@@ -61,9 +61,11 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <Teleport to="body">
+  <Teleport
+    v-if="open"
+    to="body"
+  >
     <FocusTrap
-      v-if="open"
       :initial-focus="() => ($refs.closeButton as any)?.el"
     >
       <component

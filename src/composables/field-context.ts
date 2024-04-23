@@ -6,18 +6,23 @@ import { defu } from 'defu'
 export type VFieldContext = ReturnType<typeof createVFieldContext>
 export const useVFieldSymbolContext = Symbol() as InjectionKey<VFieldContext>
 
-let fieldId = 0
-
 function createVFieldContext<TValue = unknown>(id?: MaybeRefOrGetter<string>) {
-  const $id = toRef(id ?? `v-field-${++fieldId}`)
+  const internal = ref(toValue(id))
   const field = ref<FieldContext<TValue>>()
+
+  watch(
+    () => toValue(id),
+    (value) => {
+      internal.value = value || `v-field-${crypto.randomUUID()}`
+    },
+  )
 
   if (id) {
     field.value = useField(id)
   }
 
   const vFieldContext = {
-    id: $id,
+    id: internal,
     field,
   }
 

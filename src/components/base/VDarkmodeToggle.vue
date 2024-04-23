@@ -10,12 +10,14 @@ const { isDark, onChange } = useDarkmode()
     role="button"
     @keydown.enter.prevent="(e) => (e.target as HTMLLabelElement).click()"
   >
-    <input
-      data-cy="dark-mode-toggle"
-      type="checkbox"
-      :checked="!isDark"
-      @click="onChange"
-    >
-    <span />
+    <ClientOnly>
+      <input
+        data-cy="dark-mode-toggle"
+        type="checkbox"
+        :checked="!isDark"
+        @click="onChange"
+      >
+      <span />
+    </ClientOnly>
   </label>
 </template>

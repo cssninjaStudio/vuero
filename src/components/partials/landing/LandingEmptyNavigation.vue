@@ -79,25 +79,26 @@ watchEffect(() => {
       <div class="navbar-end">
         <div class="navbar-item is-theme-toggle">
           <label class="theme-toggle">
-            <input
-              id="navbar-night-toggle--daynight"
-              :checked="isDark"
-              data-cy="dark-mode-toggle"
-              type="checkbox"
-              @click.prevent="onChange"
-            >
-            <span class="toggler">
-              <span class="dark">
-                <VIcon
-                  icon="lucide:moon"
-                />
+            <ClientOnly>
+              <input
+                :checked="isDark"
+                data-cy="dark-mode-toggle"
+                type="checkbox"
+                @click.prevent="onChange"
+              >
+              <span class="toggler">
+                <span class="dark">
+                  <VIcon
+                    icon="lucide:moon"
+                  />
+                </span>
+                <span class="light">
+                  <VIcon
+                    icon="lucide:sun"
+                  />
+                </span>
               </span>
-              <span class="light">
-                <VIcon
-                  icon="lucide:sun"
-                />
-              </span>
-            </span>
+            </ClientOnly>
           </label>
         </div>
         <div class="navbar-item">
