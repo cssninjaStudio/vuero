@@ -90,7 +90,7 @@ useHead({
                 role="button"
                 class="textFilter-target is-copy-trigger"
                 tabindex="0"
-                @keydown.space.prevent="copy(getSnippet(icon))"
+                @keydown.enter.prevent="copy(getSnippet(icon))"
                 @click="copy(getSnippet(icon))"
               >
                 <i

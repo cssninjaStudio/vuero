@@ -10,7 +10,7 @@ const modelValue = defineModel<boolean>({
     :class="[modelValue && 'is-active']"
     tabindex="0"
     role="button"
-    @keydown.space.prevent="modelValue = !modelValue"
+    @keydown.enter.prevent="modelValue = !modelValue"
     @click="modelValue = !modelValue"
   >
     <span />

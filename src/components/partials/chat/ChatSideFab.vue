@@ -9,7 +9,7 @@ const chat = useChat()
     aria-label="Close convesation details"
     tabindex="0"
     role="button"
-    @keydown.space.prevent="
+    @keydown.enter.prevent="
       chat.setMobileConversationDetailsOpen(!chat.mobileConversationDetailsOpen)
     "
     @click="chat.setMobileConversationDetailsOpen(!chat.mobileConversationDetailsOpen)"

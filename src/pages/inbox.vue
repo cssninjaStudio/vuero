@@ -112,7 +112,7 @@ useHead({
               aria-label="Close"
               role="button"
               tabindex="0"
-              @keydown.space.prevent="mobileSidebarOpen = false"
+              @keydown.enter.prevent="mobileSidebarOpen = false"
               @click="mobileSidebarOpen = false"
             >
               <VIcon
@@ -132,7 +132,7 @@ useHead({
                       :class="[activeTab === 'inbox' && 'is-active']"
                       tabindex="0"
                       role="button"
-                      @keydown.space.prevent="activeTab = 'inbox'"
+                      @keydown.enter.prevent="activeTab = 'inbox'"
                       @click="activeTab = 'inbox'"
                     >
                       <VIcon
@@ -147,7 +147,7 @@ useHead({
                       :class="[activeTab === 'drafts' && 'is-active']"
                       tabindex="0"
                       role="button"
-                      @keydown.space.prevent="activeTab = 'drafts'"
+                      @keydown.enter.prevent="activeTab = 'drafts'"
                       @click="activeTab = 'drafts'"
                     >
                       <VIcon
@@ -162,7 +162,7 @@ useHead({
                       :class="[activeTab === 'sent' && 'is-active']"
                       tabindex="0"
                       role="button"
-                      @keydown.space.prevent="activeTab = 'sent'"
+                      @keydown.enter.prevent="activeTab = 'sent'"
                       @click="activeTab = 'sent'"
                     >
                       <VIcon
@@ -177,7 +177,7 @@ useHead({
                       :class="[activeTab === 'trash' && 'is-active']"
                       tabindex="0"
                       role="button"
-                      @keydown.space.prevent="activeTab = 'trash'"
+                      @keydown.enter.prevent="activeTab = 'trash'"
                       @click="activeTab = 'trash'"
                     >
                       <VIcon
@@ -192,7 +192,7 @@ useHead({
                       :class="[activeTab === 'span' && 'is-active']"
                       tabindex="0"
                       role="button"
-                      @keydown.space.prevent="activeTab = 'span'"
+                      @keydown.enter.prevent="activeTab = 'span'"
                       @click="activeTab = 'span'"
                     >
                       <VIcon
@@ -235,7 +235,7 @@ useHead({
                     class="icon is-small"
                     tabindex="0"
                     role="button"
-                    @keydown.space.prevent="contactSearchOpen = true"
+                    @keydown.enter.prevent="contactSearchOpen = true"
                     @click="contactSearchOpen = true"
                   >
                     <VIcon
@@ -252,7 +252,7 @@ useHead({
                     class="icon is-small"
                     tabindex="0"
                     role="button"
-                    @keydown.space.prevent="contactSearchOpen = true"
+                    @keydown.enter.prevent="contactSearchOpen = true"
                     @click="contactSearchOpen = false"
                   >
                     <VIcon
@@ -336,7 +336,7 @@ useHead({
                 aria-label="Open messages list"
                 tabindex="0"
                 role="button"
-                @keydown.space.prevent="mobileSidebarOpen = true"
+                @keydown.enter.prevent="mobileSidebarOpen = true"
                 @click="mobileSidebarOpen = true"
               >
                 <VIcon
@@ -349,7 +349,7 @@ useHead({
                 aria-label="Toggle selection"
                 tabindex="0"
                 role="button"
-                @keydown.space.prevent="toggleSelection"
+                @keydown.enter.prevent="toggleSelection"
                 @click="toggleSelection"
               >
                 <VIcon

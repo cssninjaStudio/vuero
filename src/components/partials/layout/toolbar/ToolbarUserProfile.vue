@@ -19,7 +19,7 @@ function logout() {
         tabindex="0"
         class="is-trigger dropdown-trigger"
         aria-haspopup="true"
-        @keydown.space.prevent="toggle"
+        @keydown.enter.prevent="toggle"
         @click="toggle"
       >
         <VAvatar picture="/images/avatars/svg/vuero-1.svg" />

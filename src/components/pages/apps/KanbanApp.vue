@@ -145,7 +145,7 @@ onMounted(() => {
               class="expand-button"
               tabindex="0"
               role="button"
-              @keydown.space.prevent="isColumnNewCollapsed = false"
+              @keydown.enter.prevent="isColumnNewCollapsed = false"
               @click="isColumnNewCollapsed = false"
             >
               <VIcon
@@ -229,7 +229,7 @@ onMounted(() => {
                     class="card-footer-item"
                     tabindex="0"
                     role="button"
-                    @keydown.space.prevent="task.state = 'progress'"
+                    @keydown.enter.prevent="task.state = 'progress'"
                     @click="task.state = 'progress'"
                   >
                     Approve
@@ -261,7 +261,7 @@ onMounted(() => {
               class="expand-button"
               tabindex="0"
               role="button"
-              @keydown.space.prevent="isColumnProgressCollapsed = false"
+              @keydown.enter.prevent="isColumnProgressCollapsed = false"
               @click="isColumnProgressCollapsed = false"
             >
               <VIcon
@@ -363,7 +363,7 @@ onMounted(() => {
               class="expand-button"
               tabindex="0"
               role="button"
-              @keydown.space.prevent="isColumnReadyCollapsed = false"
+              @keydown.enter.prevent="isColumnReadyCollapsed = false"
               @click="isColumnReadyCollapsed = false"
             >
               <VIcon
@@ -471,7 +471,7 @@ onMounted(() => {
               class="expand-button"
               tabindex="0"
               role="button"
-              @keydown.space.prevent="isColumnReviewCollapsed = false"
+              @keydown.enter.prevent="isColumnReviewCollapsed = false"
               @click="isColumnReviewCollapsed = false"
             >
               <VIcon
@@ -573,7 +573,7 @@ onMounted(() => {
               class="expand-button"
               tabindex="0"
               role="button"
-              @keydown.space.prevent="isColumnCompletedCollapsed = false"
+              @keydown.enter.prevent="isColumnCompletedCollapsed = false"
               @click="isColumnCompletedCollapsed = false"
             >
               <VIcon

@@ -39,7 +39,7 @@ const localFlagSrc = computed(() => {
       class="toolbar-link right-panel-trigger"
       tabindex="0"
       role="button"
-      @keydown.space.prevent="panels.setActive('languages')"
+      @keydown.enter.prevent="panels.setActive('languages')"
       @click="panels.setActive('languages')"
     >
       <img
@@ -167,7 +167,7 @@ const localFlagSrc = computed(() => {
       class="toolbar-link"
       tabindex="0"
       role="button"
-      @keydown.space.prevent="emit('close')"
+      @keydown.enter.prevent="emit('close')"
       @click="emit('close')"
     >
       <VIcon

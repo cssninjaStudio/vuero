@@ -31,7 +31,7 @@ const props = withDefaults(defineProps<VMessageProps>(), {
       class="delete"
       tabindex="0"
       role="button"
-      @keydown.space.prevent="emit('close')"
+      @keydown.enter.prevent="emit('close')"
       @click.prevent="emit('close')"
     />
     <div class="message-body">

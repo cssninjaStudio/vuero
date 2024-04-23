@@ -792,7 +792,7 @@ useHead({
                     <a
                       tabindex="0"
                       role="button"
-                      @keydown.space.prevent="activeTab = 'elements'"
+                      @keydown.enter.prevent="activeTab = 'elements'"
                       @click="activeTab = 'elements'"
                     >
                       Elements
@@ -802,7 +802,7 @@ useHead({
                     <a
                       tabindex="0"
                       role="button"
-                      @keydown.space.prevent="activeTab = 'components'"
+                      @keydown.enter.prevent="activeTab = 'components'"
                       @click="activeTab = 'components'"
                     >
                       Components
@@ -812,7 +812,7 @@ useHead({
                     <a
                       tabindex="0"
                       role="button"
-                      @keydown.space.prevent="activeTab = 'forms'"
+                      @keydown.enter.prevent="activeTab = 'forms'"
                       @click="activeTab = 'forms'"
                     >
                       Forms
@@ -822,7 +822,7 @@ useHead({
                     <a
                       tabindex="0"
                       role="button"
-                      @keydown.space.prevent="activeTab = 'plugins'"
+                      @keydown.enter.prevent="activeTab = 'plugins'"
                       @click="activeTab = 'plugins'"
                     >
                       Plugins

@@ -33,7 +33,7 @@ const participants = [
               <a
                 tabindex="0"
                 role="button"
-                @keydown.space.prevent="tab = 'project'"
+                @keydown.enter.prevent="tab = 'project'"
                 @click="tab = 'project'"
               ><span>Project</span></a>
             </li>
@@ -41,7 +41,7 @@ const participants = [
               <a
                 tabindex="0"
                 role="button"
-                @keydown.space.prevent="tab = 'team'"
+                @keydown.enter.prevent="tab = 'team'"
                 @click="tab = 'team'"
               ><span>Team</span></a>
             </li>
@@ -49,7 +49,7 @@ const participants = [
               <a
                 tabindex="0"
                 role="button"
-                @keydown.space.prevent="tab = 'tasks'"
+                @keydown.enter.prevent="tab = 'tasks'"
                 @click="tab = 'tasks'"
               ><span>Tasks</span></a>
             </li>
@@ -75,7 +75,7 @@ const participants = [
                   size="small"
                   icon="lucide:edit-3"
                   tabindex="0"
-                  @keydown.space.prevent="panels.setActive('task')"
+                  @keydown.enter.prevent="panels.setActive('task')"
                   @click="panels.setActive('task')"
                 />
               </div>

@@ -172,7 +172,7 @@ const selectCustomer = (customer: WizardCustomer | null) => {
               :class="[wizard.data.budget === '< 5K' && 'is-active']"
               tabindex="0"
               role="button"
-              @keydown.space.prevent="wizard.data.budget = '< 5K'"
+              @keydown.enter.prevent="wizard.data.budget = '< 5K'"
               @click="wizard.data.budget = '< 5K'"
             >
               <span>&lt; 5K</span>
@@ -182,7 +182,7 @@ const selectCustomer = (customer: WizardCustomer | null) => {
               :class="[wizard.data.budget === '< 30K' && 'is-active']"
               tabindex="0"
               role="button"
-              @keydown.space.prevent="wizard.data.budget = '< 30K'"
+              @keydown.enter.prevent="wizard.data.budget = '< 30K'"
               @click="wizard.data.budget = '< 30K'"
             >
               <span>&lt; 30K</span>
@@ -192,7 +192,7 @@ const selectCustomer = (customer: WizardCustomer | null) => {
               :class="[wizard.data.budget === '< 100K' && 'is-active']"
               tabindex="0"
               role="button"
-              @keydown.space.prevent="wizard.data.budget = '< 100K'"
+              @keydown.enter.prevent="wizard.data.budget = '< 100K'"
               @click="wizard.data.budget = '< 100K'"
             >
               <span>&lt; 100K</span>
@@ -203,7 +203,7 @@ const selectCustomer = (customer: WizardCustomer | null) => {
               tabindex="0"
               role="button"
               @click="wizard.data.budget = '100K+'"
-              @keydown.space.prevent="wizard.data.budget = '100K+'"
+              @keydown.enter.prevent="wizard.data.budget = '100K+'"
             >
               <span>100K+</span>
             </a>

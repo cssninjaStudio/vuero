@@ -45,7 +45,7 @@ const confirm = async () => {
                 color="primary"
                 raised
                 tabindex="0"
-                @keydown.space.prevent="confirm"
+                @keydown.enter.prevent="confirm"
                 @click="confirm"
               >
                 Confirm Account

@@ -34,7 +34,7 @@ const { onceError } = useImageError()
           role="button"
           :class="[props.selectedConversationId === conversation.id && 'is-active']"
           tabindex="0"
-          @keydown.space.prevent="() => emit('selectConversation', conversation.id)"
+          @keydown.enter.prevent="() => emit('selectConversation', conversation.id)"
           @click="() => emit('selectConversation', conversation.id)"
         >
           <div class="recent-user">

@@ -16,7 +16,7 @@ const { onceError } = useImageError()
         class="is-trigger"
         aria-haspopup="true"
         @click="dropdown.toggle"
-        @keydown.space.prevent="dropdown.toggle"
+        @keydown.enter.prevent="dropdown.toggle"
       >
         <VIcon
           icon="lucide:bell"

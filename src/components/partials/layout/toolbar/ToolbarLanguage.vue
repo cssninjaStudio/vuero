@@ -28,7 +28,7 @@ const localFlagSrc = computed(() => {
     tabindex="0"
     role="button"
     class="toolbar-link right-panel-trigger"
-    @keydown.space.prevent="panels.setActive('languages')"
+    @keydown.enter.prevent="panels.setActive('languages')"
     @click="panels.setActive('languages')"
   >
     <img

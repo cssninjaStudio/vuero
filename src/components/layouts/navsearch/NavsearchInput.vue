@@ -31,7 +31,7 @@ const modelValue = defineModel<string>()
           class="form-icon is-right"
           tabindex="0"
           role="button"
-          @keydown.space.prevent="modelValue = ''"
+          @keydown.enter.prevent="modelValue = ''"
           @click="modelValue = ''"
         >
           <VIcon

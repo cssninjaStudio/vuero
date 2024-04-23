@@ -20,7 +20,7 @@ const activeTab = ref<TabId>('team')
           class="panel-overlay"
           tabindex="-1"
           role="button"
-          @keydown.space.prevent="panels.close()"
+          @keydown.enter.prevent="panels.close()"
           @click="panels.close()"
         />
 
@@ -32,7 +32,7 @@ const activeTab = ref<TabId>('team')
               class="close-panel"
               tabindex="0"
               role="button"
-              @keydown.space.prevent="panels.close()"
+              @keydown.enter.prevent="panels.close()"
               @click="panels.close()"
             >
               <VIcon
@@ -53,7 +53,7 @@ const activeTab = ref<TabId>('team')
                     <a
                       tabindex="0"
                       role="button"
-                      @keydown.space.prevent="activeTab = 'team'"
+                      @keydown.enter.prevent="activeTab = 'team'"
                       @click="activeTab = 'team'"
                     ><span>Team</span></a>
                   </li>
@@ -61,7 +61,7 @@ const activeTab = ref<TabId>('team')
                     <a
                       tabindex="0"
                       role="button"
-                      @keydown.space.prevent="activeTab = 'projects'"
+                      @keydown.enter.prevent="activeTab = 'projects'"
                       @click="activeTab = 'projects'"
                     ><span>Projects</span></a>
                   </li>
@@ -69,7 +69,7 @@ const activeTab = ref<TabId>('team')
                     <a
                       tabindex="0"
                       role="button"
-                      @keydown.space.prevent="activeTab = 'schedule'"
+                      @keydown.enter.prevent="activeTab = 'schedule'"
                       @click="activeTab = 'schedule'"
                     ><span>Schedule</span></a>
                   </li>

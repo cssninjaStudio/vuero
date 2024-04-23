@@ -32,7 +32,7 @@ const wizard = useWizard()
           role="button"
           class="is-trigger"
           @click="toggle"
-          @keydown.space.prevent="toggle"
+          @keydown.enter.prevent="toggle"
         >
           <VIcon
             icon="lucide:chevron-down"
@@ -121,7 +121,7 @@ const wizard = useWizard()
         class="is-trigger"
         aria-haspopup="true"
         @click="dropdown.toggle"
-        @keydown.space.prevent="dropdown.toggle"
+        @keydown.enter.prevent="dropdown.toggle"
       >
         <div class="profile-avatar">
           <img

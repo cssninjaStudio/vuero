@@ -49,7 +49,7 @@ const filteredData = computed(() => {
               <a
                 tabindex="0"
                 role="button"
-                @keydown.space.prevent="activeTab = 'all'"
+                @keydown.enter.prevent="activeTab = 'all'"
                 @click="activeTab = 'all'"
               ><span>All</span></a>
             </li>
@@ -57,7 +57,7 @@ const filteredData = computed(() => {
               <a
                 tabindex="0"
                 role="button"
-                @keydown.space.prevent="activeTab = 'saved'"
+                @keydown.enter.prevent="activeTab = 'saved'"
                 @click="activeTab = 'saved'"
               ><span>Saved</span></a>
             </li>

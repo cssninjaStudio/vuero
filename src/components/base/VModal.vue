@@ -78,7 +78,7 @@ onUnmounted(() => {
           class="modal-background v-modal-close"
           tabindex="-1"
           role="button"
-          @keydown.space.prevent="() => noclose === false && emit('close')"
+          @keydown.enter.prevent="() => noclose === false && emit('close')"
           @click="() => noclose === false && emit('close')"
         />
         <div class="modal-content">
@@ -90,7 +90,7 @@ onUnmounted(() => {
                 class="v-modal-close ml-auto"
                 aria-label="close"
                 tabindex="0"
-                @keydown.space.prevent="emit('close')"
+                @keydown.enter.prevent="emit('close')"
                 @click="emit('close')"
               >
                 <VIcon icon="lucide:x" />
@@ -120,7 +120,7 @@ onUnmounted(() => {
                   role="button"
                   class="button v-button v-modal-close"
                   :class="[rounded && 'is-rounded']"
-                  @keydown.space.prevent="emit('close')"
+                  @keydown.enter.prevent="emit('close')"
                   @click="emit('close')"
                 >
                   {{ cancelLabel }}

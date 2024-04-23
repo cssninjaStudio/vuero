@@ -65,7 +65,7 @@ onMounted(() => {
           :href="`#${item.id}`"
           :class="[isActiveAnchor(item.id) && 'is-active']"
           @click.prevent="() => onTocClick(item.id)"
-          @keydown.space.prevent="() => onTocClick(item.id)"
+          @keydown.enter.prevent="() => onTocClick(item.id)"
         >
           {{ item.title }}
         </a>
@@ -75,7 +75,7 @@ onMounted(() => {
           class="back-to-top"
           href="#"
           @click.prevent="() => onTocClick()"
-          @keydown.space.prevent="() => onTocClick()"
+          @keydown.enter.prevent="() => onTocClick()"
         >
           <span>Back To Top</span>
         </a>

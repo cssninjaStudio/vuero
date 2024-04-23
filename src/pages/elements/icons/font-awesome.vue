@@ -90,7 +90,7 @@ useHead({
                 role="button"
                 class="icon w-grid-2 textFilter-target w-grid-4-l w-grid-6-xl w-grid-8-2x pr4 pb2 pt2 bb bw1 b--gray1 hover-black bw0-pr db fl-pr is-copy-trigger"
                 tabindex="0"
-                @keydown.space.prevent="copy(getSnippet(icon))"
+                @keydown.enter.prevent="copy(getSnippet(icon))"
                 @click="copy(getSnippet(icon))"
               >
                 <dl class="dt clpse w-100 ma0 pa0">

@@ -34,7 +34,7 @@ const toggleTabs = () => {
           role="button"
           :class="[!state && 'is-active']"
           tabindex="0"
-          @keydown.space.prevent="toggleTabs"
+          @keydown.enter.prevent="toggleTabs"
           @click="toggleTabs"
         >
           <span>{{ labels[0] }}</span>
@@ -44,7 +44,7 @@ const toggleTabs = () => {
           role="button"
           :class="[state && 'is-active']"
           tabindex="0"
-          @keydown.space.prevent="toggleTabs"
+          @keydown.enter.prevent="toggleTabs"
           @click="toggleTabs"
         >
           <span>{{ labels[1] }}</span>

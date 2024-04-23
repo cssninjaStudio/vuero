@@ -131,7 +131,7 @@ function contactUser(row: any) {
                       type="text"
                       class="input is-primary-focus"
                       @blur="editCompanyIndex = undefined"
-                      @keydown.space.prevent="editCompanyIndex = undefined"
+                      @keydown.enter.prevent="editCompanyIndex = undefined"
                     >
                   </VField>
                 </VControl>
@@ -141,7 +141,7 @@ function contactUser(row: any) {
                   class="is-overlay-desktop is-flex is-pushed-mobile is-align-items-center mx-3-desktop edit-icon-link is-clickable"
                   tabindex="0"
                   role="button"
-                  @keydown.space.prevent="editCompanyIndex = index"
+                  @keydown.enter.prevent="editCompanyIndex = index"
                   @click="editCompanyIndex = index"
                 >
                   {{ value }}

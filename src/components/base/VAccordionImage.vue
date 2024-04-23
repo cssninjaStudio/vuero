@@ -41,7 +41,7 @@ const toggle = (key: number) => {
             <a
               tabindex="0"
               role="button"
-              @keydown.space.prevent="toggle(key)"
+              @keydown.enter.prevent="toggle(key)"
               @click="toggle(key)"
             >
               <h2>

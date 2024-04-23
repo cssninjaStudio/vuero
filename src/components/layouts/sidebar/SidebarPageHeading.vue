@@ -13,7 +13,7 @@ const emits = defineEmits<{
       class="vuero-hamburger nav-trigger push-resize"
       tabindex="0"
       role="button"
-      @keydown.space.prevent="() => emits('toggle')"
+      @keydown.enter.prevent="() => emits('toggle')"
       @click="() => emits('toggle')"
     >
       <span class="menu-toggle has-chevron">

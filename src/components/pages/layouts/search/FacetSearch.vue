@@ -114,7 +114,7 @@ const options = ref(['Newest'])
               <a
                 tabindex="0"
                 role="button"
-                @keydown.space.prevent="activeTab = 'all'"
+                @keydown.enter.prevent="activeTab = 'all'"
                 @click="activeTab = 'all'"
               ><span>All</span></a>
             </li>
@@ -122,7 +122,7 @@ const options = ref(['Newest'])
               <a
                 tabindex="0"
                 role="button"
-                @keydown.space.prevent="activeTab = 'people'"
+                @keydown.enter.prevent="activeTab = 'people'"
                 @click="activeTab = 'people'"
               ><span>People</span></a>
             </li>
@@ -130,7 +130,7 @@ const options = ref(['Newest'])
               <a
                 tabindex="0"
                 role="button"
-                @keydown.space.prevent="activeTab = 'records'"
+                @keydown.enter.prevent="activeTab = 'records'"
                 @click="activeTab = 'records'"
               ><span>Records</span></a>
             </li>

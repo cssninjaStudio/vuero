@@ -8,7 +8,7 @@ const panels = usePanels()
     aria-label="View activity panel"
     tabindex="0"
     role="button"
-    @keydown.space.prevent="panels.setActive('activity')"
+    @keydown.enter.prevent="panels.setActive('activity')"
     @click="panels.setActive('activity')"
   >
     <VIcon

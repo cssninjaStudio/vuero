@@ -109,7 +109,7 @@ const accept = async () => {
                 :loading="isLoading"
                 raised
                 tabindex="0"
-                @keydown.space.prevent="accept"
+                @keydown.enter.prevent="accept"
                 @click="accept"
               >
                 Accept

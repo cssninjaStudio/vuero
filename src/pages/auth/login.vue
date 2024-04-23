@@ -163,7 +163,7 @@ useHead({
                   <a
                     tabindex="0"
                     role="button"
-                    @keydown.space.prevent="step = 'forgot-password'"
+                    @keydown.enter.prevent="step = 'forgot-password'"
                     @click="step = 'forgot-password'"
                   >
                     Forgot Password?

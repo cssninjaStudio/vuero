@@ -62,7 +62,7 @@ onUnmounted(() => {
             :class="[tab === 'posts' && 'is-active']"
             role="button"
             tabindex="0"
-            @keydown.space.prevent="tab = 'posts'"
+            @keydown.enter.prevent="tab = 'posts'"
             @click="tab = 'posts'"
           >
             <VIcon
@@ -75,7 +75,7 @@ onUnmounted(() => {
             :class="[tab === 'projects' && 'is-active']"
             role="button"
             tabindex="0"
-            @keydown.space.prevent="tab = 'projects'"
+            @keydown.enter.prevent="tab = 'projects'"
             @click="tab = 'projects'"
           >
             <VIcon
@@ -88,7 +88,7 @@ onUnmounted(() => {
             :class="[tab === 'tasks' && 'is-active']"
             role="button"
             tabindex="0"
-            @keydown.space.prevent="tab = 'tasks'"
+            @keydown.enter.prevent="tab = 'tasks'"
             @click="tab = 'tasks'"
           >
             <VIcon

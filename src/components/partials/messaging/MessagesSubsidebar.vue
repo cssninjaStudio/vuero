@@ -38,7 +38,7 @@ const {
         class="vuero-hamburger nav-trigger push-resize messages-push"
         tabindex="0"
         role="button"
-        @keydown.space.prevent="messageSubsidebarOpen = !messageSubsidebarOpen"
+        @keydown.enter.prevent="messageSubsidebarOpen = !messageSubsidebarOpen"
         @click="messageSubsidebarOpen = !messageSubsidebarOpen"
       >
         <span class="menu-toggle has-chevron">
@@ -87,7 +87,7 @@ const {
           :class="[props.selectedConversationId === conversation.id && 'is-active']"
           tabindex="0"
           role="button"
-          @keydown.space.prevent="() => emit('selectConversation', conversation.id)"
+          @keydown.enter.prevent="() => emit('selectConversation', conversation.id)"
           @click="() => emit('selectConversation', conversation.id)"
         >
           <div class="recent-user">

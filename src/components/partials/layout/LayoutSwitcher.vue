@@ -50,7 +50,7 @@ const layoutComponent = (slug?: string) => {
       tabindex="0"
       v-bind="$attrs"
       role="button"
-      @keydown.space.prevent="isModalOpen = true"
+      @keydown.enter.prevent="isModalOpen = true"
       @click.passive="isModalOpen = true"
     >
       <VIcon
@@ -121,7 +121,7 @@ const layoutComponent = (slug?: string) => {
                           layoutSwitcher.dynamicLayoutId === 'navbar-default' &&
                             'is-active',
                         ]"
-                        @keydown.space.prevent="
+                        @keydown.enter.prevent="
                           () => {
                             layoutSwitcher.setDynamicLayoutId('navbar-default')
                             isModalOpen = false
@@ -160,7 +160,7 @@ const layoutComponent = (slug?: string) => {
                         :class="[
                           layoutSwitcher.dynamicLayoutId === 'navbar-fade' && 'is-active',
                         ]"
-                        @keydown.space.prevent="
+                        @keydown.enter.prevent="
                           () => {
                             layoutSwitcher.setDynamicLayoutId('navbar-fade')
                             isModalOpen = false
@@ -200,7 +200,7 @@ const layoutComponent = (slug?: string) => {
                           layoutSwitcher.dynamicLayoutId === 'navbar-colored' &&
                             'is-active',
                         ]"
-                        @keydown.space.prevent="
+                        @keydown.enter.prevent="
                           () => {
                             layoutSwitcher.setDynamicLayoutId('navbar-colored')
                             isModalOpen = false
@@ -245,7 +245,7 @@ const layoutComponent = (slug?: string) => {
                           layoutSwitcher.dynamicLayoutId === 'navsearch-fixed' &&
                             'is-active',
                         ]"
-                        @keydown.space.prevent="
+                        @keydown.enter.prevent="
                           () => {
                             layoutSwitcher.setDynamicLayoutId('navsearch-fixed')
                             isModalOpen = false
@@ -285,7 +285,7 @@ const layoutComponent = (slug?: string) => {
                           layoutSwitcher.dynamicLayoutId === 'navsearch-fixed-fade' &&
                             'is-active',
                         ]"
-                        @keydown.space.prevent="
+                        @keydown.enter.prevent="
                           () => {
                             layoutSwitcher.setDynamicLayoutId('navsearch-fixed-fade')
                             isModalOpen = false
@@ -325,7 +325,7 @@ const layoutComponent = (slug?: string) => {
                           layoutSwitcher.dynamicLayoutId === 'navsearch-shrink' &&
                             'is-active',
                         ]"
-                        @keydown.space.prevent="
+                        @keydown.enter.prevent="
                           () => {
                             layoutSwitcher.setDynamicLayoutId('navsearch-shrink')
                             isModalOpen = false
@@ -366,7 +366,7 @@ const layoutComponent = (slug?: string) => {
                           layoutSwitcher.dynamicLayoutId === 'navsearch-reveal' &&
                             'is-active',
                         ]"
-                        @keydown.space.prevent="
+                        @keydown.enter.prevent="
                           () => {
                             layoutSwitcher.setDynamicLayoutId('navsearch-reveal')
                             isModalOpen = false
@@ -411,7 +411,7 @@ const layoutComponent = (slug?: string) => {
                           layoutSwitcher.dynamicLayoutId === 'sidebar-default' &&
                             'is-active',
                         ]"
-                        @keydown.space.prevent="
+                        @keydown.enter.prevent="
                           () => {
                             layoutSwitcher.setDynamicLayoutId('sidebar-default')
                             isModalOpen = false
@@ -451,7 +451,7 @@ const layoutComponent = (slug?: string) => {
                           layoutSwitcher.dynamicLayoutId === 'sidebar-color' &&
                             'is-active',
                         ]"
-                        @keydown.space.prevent="
+                        @keydown.enter.prevent="
                           () => {
                             layoutSwitcher.setDynamicLayoutId('sidebar-color')
                             isModalOpen = false
@@ -491,7 +491,7 @@ const layoutComponent = (slug?: string) => {
                           layoutSwitcher.dynamicLayoutId === 'sidebar-curved' &&
                             'is-active',
                         ]"
-                        @keydown.space.prevent="
+                        @keydown.enter.prevent="
                           () => {
                             layoutSwitcher.setDynamicLayoutId('sidebar-curved')
                             isModalOpen = false
@@ -531,7 +531,7 @@ const layoutComponent = (slug?: string) => {
                           layoutSwitcher.dynamicLayoutId === 'sidebar-color-curved' &&
                             'is-active',
                         ]"
-                        @keydown.space.prevent="
+                        @keydown.enter.prevent="
                           () => {
                             layoutSwitcher.setDynamicLayoutId('sidebar-color-curved')
                             isModalOpen = false
@@ -571,7 +571,7 @@ const layoutComponent = (slug?: string) => {
                           layoutSwitcher.dynamicLayoutId === 'sidebar-labels' &&
                             'is-active',
                         ]"
-                        @keydown.space.prevent="
+                        @keydown.enter.prevent="
                           () => {
                             layoutSwitcher.setDynamicLayoutId('sidebar-labels')
                             isModalOpen = false
@@ -611,7 +611,7 @@ const layoutComponent = (slug?: string) => {
                           layoutSwitcher.dynamicLayoutId === 'sidebar-labels-hover' &&
                             'is-active',
                         ]"
-                        @keydown.space.prevent="
+                        @keydown.enter.prevent="
                           () => {
                             layoutSwitcher.setDynamicLayoutId('sidebar-labels-hover')
                             isModalOpen = false
@@ -651,7 +651,7 @@ const layoutComponent = (slug?: string) => {
                           layoutSwitcher.dynamicLayoutId === 'sidebar-float' &&
                             'is-active',
                         ]"
-                        @keydown.space.prevent="
+                        @keydown.enter.prevent="
                           () => {
                             layoutSwitcher.setDynamicLayoutId('sidebar-float')
                             isModalOpen = false
@@ -697,7 +697,7 @@ const layoutComponent = (slug?: string) => {
                             layoutSwitcher.dynamicLayoutId === 'sideblock-default' &&
                             'is-active',
                         ]"
-                        @keydown.space.prevent="
+                        @keydown.enter.prevent="
                           () => {
                             layoutSwitcher.setDynamicLayoutId('sideblock-default')
                             isModalOpen = false
@@ -738,7 +738,7 @@ const layoutComponent = (slug?: string) => {
                             layoutSwitcher.dynamicLayoutId === 'sideblock-color' &&
                             'is-active',
                         ]"
-                        @keydown.space.prevent="
+                        @keydown.enter.prevent="
                           () => {
                             layoutSwitcher.setDynamicLayoutId('sideblock-color')
                             isModalOpen = false
@@ -779,7 +779,7 @@ const layoutComponent = (slug?: string) => {
                             layoutSwitcher.dynamicLayoutId === 'sideblock-curved' &&
                             'is-active',
                         ]"
-                        @keydown.space.prevent="
+                        @keydown.enter.prevent="
                           () => {
                             layoutSwitcher.setDynamicLayoutId('sideblock-curved')
                             isModalOpen = false
@@ -820,7 +820,7 @@ const layoutComponent = (slug?: string) => {
                             layoutSwitcher.dynamicLayoutId === 'sideblock-color-curved' &&
                             'is-active',
                         ]"
-                        @keydown.space.prevent="
+                        @keydown.enter.prevent="
                           () => {
                             layoutSwitcher.setDynamicLayoutId('sideblock-color-curved')
                             isModalOpen = false

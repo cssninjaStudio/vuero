@@ -13,7 +13,7 @@ const { onceError } = useImageError()
     <a
       class="navbar-link is-arrowless"
       tabindex="0"
-      @keydown.space.prevent="dropdown.toggle"
+      @keydown.enter.prevent="dropdown.toggle"
       @click="dropdown.toggle"
     >
       <VIcon

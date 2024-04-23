@@ -161,7 +161,7 @@ const columns = computed(() => {
           :class="[props.clickable && 'is-clickable']"
           :tabindex="props.clickable ? 0 : undefined"
           :role="props.clickable ? 'button' : undefined"
-          @keydown.space.prevent="
+          @keydown.enter.prevent="
             () => {
               props.clickable && emits('rowClick', row, index)
             }

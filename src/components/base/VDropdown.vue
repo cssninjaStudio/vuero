@@ -59,7 +59,7 @@ defineExpose({
         tabindex="0"
         class="is-trigger dropdown-trigger"
         aria-label="View more actions"
-        @keydown.space.prevent="dropdown.toggle"
+        @keydown.enter.prevent="dropdown.toggle"
         @click="dropdown.toggle"
       >
         <VIcon :icon="props.icon" />
@@ -70,7 +70,7 @@ defineExpose({
         tabindex="0"
         class="is-trigger button dropdown-trigger"
         :class="[props.color && `is-${props.color}`]"
-        @keydown.space.prevent="dropdown.toggle"
+        @keydown.enter.prevent="dropdown.toggle"
         @click="dropdown.toggle"
       >
         <span v-if="props.title">{{ props.title }}</span>

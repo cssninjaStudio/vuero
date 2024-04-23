@@ -41,7 +41,7 @@ function getAvatarData(user: UserPopover): VAvatarProps {
           class="panel-overlay"
           tabindex="-1"
           role="button"
-          @keydown.space.prevent="panels.close()"
+          @keydown.enter.prevent="panels.close()"
           @click="panels.close()"
         />
 
@@ -55,7 +55,7 @@ function getAvatarData(user: UserPopover): VAvatarProps {
               class="close-panel"
               tabindex="0"
               role="button"
-              @keydown.space.prevent="panels.close()"
+              @keydown.enter.prevent="panels.close()"
               @click="panels.close()"
             >
               <VIcon

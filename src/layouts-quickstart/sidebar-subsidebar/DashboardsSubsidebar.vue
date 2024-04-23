@@ -12,7 +12,7 @@ const emit = defineEmits(['close'])
         class="panel-close"
         tabindex="0"
         role="button"
-        @keydown.space.prevent="emit('close')"
+        @keydown.enter.prevent="emit('close')"
         @click="emit('close')"
       >
         <VIcon

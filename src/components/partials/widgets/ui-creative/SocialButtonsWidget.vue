@@ -34,7 +34,7 @@ const tab = ref(props.activeTab)
           ]"
           tabindex="0"
           role="button"
-          @keydown.space.prevent="tab = index"
+          @keydown.enter.prevent="tab = index"
           @click="tab = index"
         >
           <i

@@ -197,7 +197,7 @@ const searchLabel = computed(() => {
             class="vuero-demo-wrapper loaded"
             tabindex="0"
             role="button"
-            @keydown.space.prevent="
+            @keydown.enter.prevent="
               (e) =>
                 (
                   (e.target as HTMLElement).querySelector('a[href]') as HTMLAnchorElement

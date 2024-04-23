@@ -83,7 +83,7 @@ const icon = computed(() => {
         :aria-label="`View on ${props.network}`"
         tabindex="0"
         role="button"
-        @keydown.space.prevent="emit('iconClick')"
+        @keydown.enter.prevent="emit('iconClick')"
         @click="emit('iconClick')"
       >
         <VIcon :icon="icon" />
@@ -111,7 +111,7 @@ const icon = computed(() => {
             :class="[network && `text-${network}`]"
             tabindex="0"
             role="button"
-            @keydown.space.prevent="emit('hashtagClick', hashtag)"
+            @keydown.enter.prevent="emit('hashtagClick', hashtag)"
             @click="emit('hashtagClick', hashtag)"
           >
             {{ hashtag }}
@@ -127,7 +127,7 @@ const icon = computed(() => {
         class="card-footer-item"
         tabindex="0"
         role="button"
-        @keydown.space.prevent="emit('share')"
+        @keydown.enter.prevent="emit('share')"
         @click="emit('share')"
       >
         {{ props.shareLabel }}
@@ -138,7 +138,7 @@ const icon = computed(() => {
         class="card-footer-item"
         tabindex="0"
         role="button"
-        @keydown.space.prevent="emit('like')"
+        @keydown.enter.prevent="emit('like')"
         @click="emit('like')"
       >
         {{ props.likeLabel }}

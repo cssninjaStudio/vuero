@@ -369,7 +369,7 @@ const onSubmit = () => {
                     role="button"
                     class="color-code is-primary"
                     @click="selectedColor = 'primary'"
-                    @keydown.space.prevent="selectedColor = 'primary'"
+                    @keydown.enter.prevent="selectedColor = 'primary'"
                   />
                   <div
                     :class="[selectedColor === 'secondary' && 'is-active']"
@@ -377,7 +377,7 @@ const onSubmit = () => {
                     role="button"
                     class="color-code is-secondary"
                     @click="selectedColor = 'secondary'"
-                    @keydown.space.prevent="selectedColor = 'secondary'"
+                    @keydown.enter.prevent="selectedColor = 'secondary'"
                   />
                   <div
                     :class="[selectedColor === 'info' && 'is-active']"
@@ -385,7 +385,7 @@ const onSubmit = () => {
                     role="button"
                     class="color-code is-info"
                     @click="selectedColor = 'info'"
-                    @keydown.space.prevent="selectedColor = 'info'"
+                    @keydown.enter.prevent="selectedColor = 'info'"
                   />
                   <div
                     :class="[selectedColor === 'success' && 'is-active']"
@@ -393,7 +393,7 @@ const onSubmit = () => {
                     role="button"
                     class="color-code is-success"
                     @click="selectedColor = 'success'"
-                    @keydown.space.prevent="selectedColor = 'success'"
+                    @keydown.enter.prevent="selectedColor = 'success'"
                   />
                   <div
                     :class="[selectedColor === 'purple' && 'is-active']"
@@ -401,7 +401,7 @@ const onSubmit = () => {
                     role="button"
                     class="color-code is-purple"
                     @click="selectedColor = 'purple'"
-                    @keydown.space.prevent="selectedColor = 'purple'"
+                    @keydown.enter.prevent="selectedColor = 'purple'"
                   />
                 </div>
               </VControl>

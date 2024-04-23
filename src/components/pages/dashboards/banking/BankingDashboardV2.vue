@@ -80,7 +80,7 @@ const goto = (index: number) => {
                     class="cards-carousel-item"
                     tabindex="0"
                     role="button"
-                    @keydown.space.prevent="goto(0)"
+                    @keydown.enter.prevent="goto(0)"
                     @click="goto(0)"
                   >
                     <div class="ccard">
@@ -113,7 +113,7 @@ const goto = (index: number) => {
                     class="cards-carousel-item"
                     tabindex="0"
                     role="button"
-                    @keydown.space.prevent="goto(1)"
+                    @keydown.enter.prevent="goto(1)"
                     @click="goto(1)"
                   >
                     <div class="ccard">
@@ -146,7 +146,7 @@ const goto = (index: number) => {
                     class="cards-carousel-item"
                     tabindex="0"
                     role="button"
-                    @keydown.space.prevent="goto(2)"
+                    @keydown.enter.prevent="goto(2)"
                     @click="goto(2)"
                   >
                     <div class="ccard">
@@ -179,7 +179,7 @@ const goto = (index: number) => {
                     class="cards-carousel-item"
                     tabindex="0"
                     role="button"
-                    @keydown.space.prevent="goto(3)"
+                    @keydown.enter.prevent="goto(3)"
                     @click="goto(3)"
                   >
                     <div class="ccard">

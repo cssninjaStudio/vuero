@@ -196,7 +196,7 @@ useHead({
               aria-label="View activity"
               tabindex="0"
               role="button"
-              @keydown.space.prevent="panels.setActive('activity')"
+              @keydown.enter.prevent="panels.setActive('activity')"
               @click="panels.setActive('activity')"
             >
               <VIcon
@@ -214,7 +214,7 @@ useHead({
               tabindex="0"
               class="is-trigger"
               aria-haspopup="true"
-              @keydown.space.prevent="dropdown1.toggle"
+              @keydown.enter.prevent="dropdown1.toggle"
               @click="dropdown1.toggle"
             >
               <div class="profile-avatar">

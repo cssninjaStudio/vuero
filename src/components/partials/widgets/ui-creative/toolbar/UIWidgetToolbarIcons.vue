@@ -24,7 +24,7 @@ const currentTab = ref(props.activeTab)
         :class="{ 'is-active': currentTab === index }"
         tabindex="0"
         role="button"
-        @keydown.space.prevent="currentTab = index"
+        @keydown.enter.prevent="currentTab = index"
         @click="currentTab = index"
       >
         <VIcon

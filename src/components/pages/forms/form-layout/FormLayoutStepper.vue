@@ -140,7 +140,7 @@ const validateStep = async () => {
               type="button"
               class="help-button"
               tabindex="0"
-              @keydown.space.prevent="
+              @keydown.enter.prevent="
                 currentHelp === 0 ? (currentHelp = -1) : (currentHelp = 0)
               "
               @click="currentHelp === 0 ? (currentHelp = -1) : (currentHelp = 0)"
@@ -308,7 +308,7 @@ const validateStep = async () => {
               <button
                 type="button"
                 class="help-button"
-                @keydown.space.prevent="
+                @keydown.enter.prevent="
                   currentHelp === 1 ? (currentHelp = -1) : (currentHelp = 1)
                 "
                 @click="currentHelp === 1 ? (currentHelp = -1) : (currentHelp = 1)"
@@ -417,7 +417,7 @@ const validateStep = async () => {
               <button
                 type="button"
                 class="help-button"
-                @keydown.space.prevent="
+                @keydown.enter.prevent="
                   currentHelp === 2 ? (currentHelp = -1) : (currentHelp = 2)
                 "
                 @click="currentHelp === 2 ? (currentHelp = -1) : (currentHelp = 2)"
@@ -477,7 +477,7 @@ const validateStep = async () => {
               <button
                 type="button"
                 class="help-button"
-                @keydown.space.prevent="
+                @keydown.enter.prevent="
                   currentHelp === 3 ? (currentHelp = -1) : (currentHelp = 3)
                 "
                 @click="currentHelp === 3 ? (currentHelp = -1) : (currentHelp = 3)"
@@ -625,7 +625,7 @@ const validateStep = async () => {
               <button
                 type="button"
                 class="help-button"
-                @keydown.space.prevent="
+                @keydown.enter.prevent="
                   currentHelp === 4 ? (currentHelp = -1) : (currentHelp = 4)
                 "
                 @click="currentHelp === 4 ? (currentHelp = -1) : (currentHelp = 4)"
@@ -682,7 +682,7 @@ const validateStep = async () => {
             :class="[currentStep === 0 && 'is-active']"
             class="steps-segment"
             tabindex="0"
-            @keydown.space.prevent="
+            @keydown.enter.prevent="
               currentStep >= 0 && scrollTo('#form-step-0', 800, { offset: -20 })
             "
             @click.prevent="
@@ -708,7 +708,7 @@ const validateStep = async () => {
             class="steps-segment"
             tabindex="0"
             role="button"
-            @keydown.space.prevent="
+            @keydown.enter.prevent="
               currentStep >= 1 && scrollTo('#form-step-1', 800, { offset: -20 })
             "
             @click.prevent="
@@ -734,7 +734,7 @@ const validateStep = async () => {
             class="steps-segment"
             tabindex="0"
             role="button"
-            @keydown.space.prevent="
+            @keydown.enter.prevent="
               currentStep >= 2 && scrollTo('#form-step-2', 800, { offset: -20 })
             "
             @click.prevent="
@@ -760,7 +760,7 @@ const validateStep = async () => {
             class="steps-segment"
             tabindex="0"
             role="button"
-            @keydown.space.prevent="
+            @keydown.enter.prevent="
               currentStep >= 3 && scrollTo('#form-step-3', 800, { offset: -20 })
             "
             @click.prevent="
@@ -786,7 +786,7 @@ const validateStep = async () => {
             class="steps-segment"
             tabindex="0"
             role="button"
-            @keydown.space.prevent="
+            @keydown.enter.prevent="
               currentStep >= 4 && scrollTo('#form-step-4', 800, { offset: -20 })
             "
             @click.prevent="
@@ -819,7 +819,7 @@ const validateStep = async () => {
             <button
               class="close-help-button"
               tabindex="0"
-              @keydown.space.prevent="currentHelp = -1"
+              @keydown.enter.prevent="currentHelp = -1"
               @click="currentHelp = -1"
             >
               <VIcon
@@ -863,7 +863,7 @@ const validateStep = async () => {
             <button
               class="close-help-button"
               tabindex="0"
-              @keydown.space.prevent="currentHelp = -1"
+              @keydown.enter.prevent="currentHelp = -1"
               @click="currentHelp = -1"
             >
               <VIcon
@@ -901,7 +901,7 @@ const validateStep = async () => {
             <button
               class="close-help-button"
               tabindex="0"
-              @keydown.space.prevent="currentHelp = -1"
+              @keydown.enter.prevent="currentHelp = -1"
               @click="currentHelp = -1"
             >
               <VIcon
@@ -945,7 +945,7 @@ const validateStep = async () => {
             <button
               class="close-help-button"
               tabindex="0"
-              @keydown.space.prevent="currentHelp = -1"
+              @keydown.enter.prevent="currentHelp = -1"
               @click="currentHelp = -1"
             >
               <VIcon
@@ -983,7 +983,7 @@ const validateStep = async () => {
             <button
               class="close-help-button"
               tabindex="0"
-              @keydown.space.prevent="currentHelp = -1"
+              @keydown.enter.prevent="currentHelp = -1"
               @click="currentHelp = -1"
             >
               <VIcon

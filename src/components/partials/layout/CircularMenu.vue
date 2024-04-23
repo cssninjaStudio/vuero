@@ -44,7 +44,7 @@ const localFlagSrc = computed(() => {
       class="floating-btn"
       role="button"
       tabindex="0"
-      @keydown.space.prevent="isOpen = !isOpen"
+      @keydown.enter.prevent="isOpen = !isOpen"
       @click="isOpen = !isOpen"
     >
       <VIcon
@@ -63,7 +63,7 @@ const localFlagSrc = computed(() => {
         class="menu-item is-flex right-panel-trigger"
         role="button"
         tabindex="0"
-        @keydown.space.prevent="panels.setActive('languages')"
+        @keydown.enter.prevent="panels.setActive('languages')"
         @click="panels.setActive('languages')"
       >
         <img
@@ -83,7 +83,7 @@ const localFlagSrc = computed(() => {
         class="menu-item is-flex"
         role="button"
         tabindex="0"
-        @keydown.space.prevent="panels.setActive('activity')"
+        @keydown.enter.prevent="panels.setActive('activity')"
         @click="panels.setActive('activity')"
       >
         <VIcon

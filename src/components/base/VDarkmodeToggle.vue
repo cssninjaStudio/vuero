@@ -8,7 +8,7 @@ const { isDark, onChange } = useDarkmode()
     class="dark-mode"
     tabindex="0"
     role="button"
-    @keydown.space.prevent="(e) => (e.target as HTMLLabelElement).click()"
+    @keydown.enter.prevent="(e) => (e.target as HTMLLabelElement).click()"
   >
     <input
       data-cy="dark-mode-toggle"

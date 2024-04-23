@@ -46,7 +46,7 @@ const onSave = async () => {
               raised
               :loading="isLoading"
               tabindex="0"
-              @keydown.space.prevent="onSave"
+              @keydown.enter.prevent="onSave"
               @click="onSave"
             >
               Save Changes

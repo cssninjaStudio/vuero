@@ -120,7 +120,7 @@ watchEffect(() => {
             role="button"
             class="action-link toggle-members-link"
             tabindex="0"
-            @keydown.space.prevent="isAddingMembers = true"
+            @keydown.enter.prevent="isAddingMembers = true"
             @click="isAddingMembers = true"
           >
             Add Members
@@ -217,7 +217,7 @@ watchEffect(() => {
                             aria-label="Reader"
                             role="button"
                             tabindex="0"
-                            @keydown.space.prevent="setTeammateRole(teammate, 'reader')"
+                            @keydown.enter.prevent="setTeammateRole(teammate, 'reader')"
                             @click="setTeammateRole(teammate, 'reader')"
                           >
                             <div
@@ -230,7 +230,7 @@ watchEffect(() => {
                             aria-label="Collaborator"
                             role="button"
                             tabindex="0"
-                            @keydown.space.prevent="
+                            @keydown.enter.prevent="
                               setTeammateRole(teammate, 'collaborator')
                             "
                             @click="setTeammateRole(teammate, 'collaborator')"
@@ -245,7 +245,7 @@ watchEffect(() => {
                             aria-label="Manager"
                             role="button"
                             tabindex="0"
-                            @keydown.space.prevent="setTeammateRole(teammate, 'manager')"
+                            @keydown.enter.prevent="setTeammateRole(teammate, 'manager')"
                             @click="setTeammateRole(teammate, 'manager')"
                           >
                             <div
@@ -258,7 +258,7 @@ watchEffect(() => {
                             aria-label="Owner"
                             role="button"
                             tabindex="0"
-                            @keydown.space.prevent="setTeammateRole(teammate, 'owner')"
+                            @keydown.enter.prevent="setTeammateRole(teammate, 'owner')"
                             @click="setTeammateRole(teammate, 'owner')"
                           >
                             <div

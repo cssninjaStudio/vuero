@@ -281,7 +281,7 @@ watchEffect((cleanup) => {
                   dark="2"
                   :active="dropdown.isOpen"
                   class="toolbar-dropdown-trigger"
-                  @keydown.space.prevent="dropdown.toggle"
+                  @keydown.enter.prevent="dropdown.toggle"
                   @click="dropdown.toggle"
                 >
                   <VIcon

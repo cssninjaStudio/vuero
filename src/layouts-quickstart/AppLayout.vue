@@ -123,7 +123,7 @@ watch(
             data-content="Dashboards"
             tabindex="0"
             role="button"
-            @keydown.space.prevent="switchSidebar('dashboard')"
+            @keydown.enter.prevent="switchSidebar('dashboard')"
             @click="switchSidebar('dashboard')"
           >
             <VIcon
@@ -159,7 +159,7 @@ watch(
               class="vuero-hamburger nav-trigger push-resize"
               tabindex="0"
               role="button"
-              @keydown.space.prevent="isDesktopSidebarOpen = !isDesktopSidebarOpen"
+              @keydown.enter.prevent="isDesktopSidebarOpen = !isDesktopSidebarOpen"
               @click="isDesktopSidebarOpen = !isDesktopSidebarOpen"
             >
               <span class="menu-toggle has-chevron">

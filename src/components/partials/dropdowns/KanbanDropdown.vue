@@ -13,7 +13,7 @@ const emit = defineEmits(['rename', 'collapse'])
         class="dropdown-item kanban-rename kill-drop"
         role="button"
         tabindex="0"
-        @keydown.space.prevent="emit('rename')"
+        @keydown.enter.prevent="emit('rename')"
         @click="emit('rename')"
       >
         Rename
@@ -22,7 +22,7 @@ const emit = defineEmits(['rename', 'collapse'])
         class="dropdown-item kanban-collapse kill-drop"
         role="button"
         tabindex="0"
-        @keydown.space.prevent="emit('collapse')"
+        @keydown.enter.prevent="emit('collapse')"
         @click="emit('collapse')"
       >
         Collapse

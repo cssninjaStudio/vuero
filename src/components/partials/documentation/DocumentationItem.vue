@@ -108,7 +108,7 @@ const githubIssueUrl = computed(() => {
           role="button"
           tabindex="0"
           :class="[displayCode && 'is-active']"
-          @keydown.space.prevent="displayCode = !displayCode"
+          @keydown.enter.prevent="displayCode = !displayCode"
           @click="displayCode = !displayCode"
         >
           <VIcon

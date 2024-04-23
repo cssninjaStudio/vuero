@@ -58,7 +58,7 @@ const toggle = (key: number) => {
           class="accordion-header"
           tabindex="0"
           role="button"
-          @keydown.space.prevent="() => toggle(key)"
+          @keydown.enter.prevent="() => toggle(key)"
           @click.prevent="() => toggle(key)"
         >
           <slot

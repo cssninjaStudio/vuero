@@ -46,7 +46,7 @@ const selectedProject = ref(projects[1])
         :color="selectedProject.color"
         :initials="selectedProject.initials"
         tabindex="0"
-        @keydown.space.prevent="toggle"
+        @keydown.enter.prevent="toggle"
         @click="toggle"
       />
     </template>
@@ -59,7 +59,7 @@ const selectedProject = ref(projects[1])
         :class="[project.initials === selectedProject.initials && 'is-active']"
         role="button"
         tabindex="0"
-        @keydown.space.prevent="
+        @keydown.enter.prevent="
           () => {
             selectedProject = project
             close()

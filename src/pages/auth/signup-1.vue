@@ -289,7 +289,7 @@ useHead({
                         class="upload-button"
                         role="button"
                         tabindex="0"
-                        @keydown.space.prevent="uploadModalOpen = true"
+                        @keydown.enter.prevent="uploadModalOpen = true"
                         @click="uploadModalOpen = true"
                       >
                         <VIcon
@@ -315,7 +315,7 @@ useHead({
                     role="button"
                     tabindex="0"
                     @click="currentAvatar = avatar"
-                    @keydown.space.prevent="currentAvatar = avatar"
+                    @keydown.enter.prevent="currentAvatar = avatar"
                   >
                     <div class="image-wrapper">
                       <img

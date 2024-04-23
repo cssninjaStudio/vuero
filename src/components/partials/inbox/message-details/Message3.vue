@@ -50,7 +50,7 @@ const dropdown2 = useDropdown(dropdownElement2)
           <button
             class="button"
             tabindex="0"
-            @keydown.space.prevent="dropdown1.toggle"
+            @keydown.enter.prevent="dropdown1.toggle"
             @click="dropdown1.toggle"
           >
             <span class="icon is-small">
@@ -88,7 +88,7 @@ const dropdown2 = useDropdown(dropdownElement2)
         class="inbox-action inbox-close-details-mobile"
         role="button"
         tabindex="0"
-        @keydown.space.prevent="emit('update:mobileMessageOpen', false)"
+        @keydown.enter.prevent="emit('update:mobileMessageOpen', false)"
         @click="emit('update:mobileMessageOpen', false)"
       >
         <VIcon
@@ -197,7 +197,7 @@ const dropdown2 = useDropdown(dropdownElement2)
                 <button
                   class="button"
                   tabindex="0"
-                  @keydown.space.prevent="dropdown2.toggle"
+                  @keydown.enter.prevent="dropdown2.toggle"
                   @click="dropdown2.toggle"
                 >
                   <span class="icon is-small">

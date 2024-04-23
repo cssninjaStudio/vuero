@@ -65,7 +65,7 @@ const onSave = async () => {
               raised
               :loading="isLoading"
               tabindex="0"
-              @keydown.space.prevent="onSave"
+              @keydown.enter.prevent="onSave"
               @click="onSave"
             >
               Save Changes
@@ -92,7 +92,7 @@ const onSave = async () => {
             class="action-link"
             role="button"
             tabindex="0"
-            @keydown.space.prevent="isUploading = false"
+            @keydown.enter.prevent="isUploading = false"
             @click="isUploading = false"
           >
             Cancel
@@ -365,7 +365,7 @@ const onSave = async () => {
                   icon="fas fa-plus"
                   class="add-setting-item"
                   tabindex="0"
-                  @keydown.space.prevent="isUploading = true"
+                  @keydown.enter.prevent="isUploading = true"
                   @click="isUploading = true"
                 >
                   Add

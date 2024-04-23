@@ -98,7 +98,7 @@ const controlClasees = computed(() => {
       role="button"
       tabindex="0"
       @click.prevent="() => field?.resetField?.()"
-      @keyup.enter.prevent="() => field?.resetField?.()"
+      @keydown.enter.prevent="() => field?.resetField?.()"
     >
       <VIcon icon="lucide:x" />
     </a>

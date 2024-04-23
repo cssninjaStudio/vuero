@@ -65,7 +65,7 @@ const selected = ref('value_2')
                 name="plan_selection"
                 :checked="selectedPlanId === plan.id"
                 tabindex="0"
-                @keydown.space.prevent="selectedPlanId = plan.id"
+                @keydown.enter.prevent="selectedPlanId = plan.id"
                 @click="selectedPlanId = plan.id"
               />
               <VLabel
@@ -299,7 +299,7 @@ const selected = ref('value_2')
             <span
               tabindex="0"
               role="button"
-              @keydown.space.prevent="randomCard"
+              @keydown.enter.prevent="randomCard"
               @click="randomCard"
             >
               Randomize

@@ -71,7 +71,7 @@ const onSave = async () => {
               raised
               :loading="isLoading"
               tabindex="0"
-              @keydown.space.prevent="onSave"
+              @keydown.enter.prevent="onSave"
               @click="onSave"
             >
               Save Changes
@@ -98,7 +98,7 @@ const onSave = async () => {
             class="action-link"
             tabindex="0"
             role="button"
-            @keydown.space.prevent="isEditingLanguages = false"
+            @keydown.enter.prevent="isEditingLanguages = false"
             @click="isEditingLanguages = false"
           >
             Cancel
@@ -299,7 +299,7 @@ const onSave = async () => {
                   icon="fas fa-plus"
                   class="add-setting-item"
                   tabindex="0"
-                  @keydown.space.prevent="isEditingLanguages = true"
+                  @keydown.enter.prevent="isEditingLanguages = true"
                   @click="isEditingLanguages = true"
                 >
                   Add
@@ -327,7 +327,7 @@ const onSave = async () => {
             class="action-link"
             tabindex="0"
             role="button"
-            @keydown.space.prevent="isEditingSkills = false"
+            @keydown.enter.prevent="isEditingSkills = false"
             @click="isEditingSkills = false"
           >
             Cancel
@@ -547,7 +547,7 @@ const onSave = async () => {
                   icon="fas fa-plus"
                   class="add-setting-item"
                   tabindex="0"
-                  @keydown.space.prevent="isEditingSkills = true"
+                  @keydown.enter.prevent="isEditingSkills = true"
                   @click="isEditingSkills = true"
                 >
                   Add
@@ -575,7 +575,7 @@ const onSave = async () => {
             class="action-link"
             tabindex="0"
             role="button"
-            @keydown.space.prevent="isEditingTools = false"
+            @keydown.enter.prevent="isEditingTools = false"
             @click="isEditingTools = false"
           >
             Cancel
@@ -755,7 +755,7 @@ const onSave = async () => {
                   icon="fas fa-plus"
                   class="add-setting-item"
                   tabindex="0"
-                  @keydown.space.prevent="isEditingTools = true"
+                  @keydown.enter.prevent="isEditingTools = true"
                   @click="isEditingTools = true"
                 >
                   Add

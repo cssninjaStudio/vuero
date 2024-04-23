@@ -9,7 +9,7 @@ const panels = usePanels()
     data-content="Search"
     tabindex="0"
     role="button"
-    @keydown.space.prevent="panels.setActive('search')"
+    @keydown.enter.prevent="panels.setActive('search')"
     @click="panels.setActive('search')"
   >
     <VIcon

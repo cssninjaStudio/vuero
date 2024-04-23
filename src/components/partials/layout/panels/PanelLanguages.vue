@@ -29,7 +29,7 @@ watch(locale, () => {
           class="panel-overlay"
           tabindex="-1"
           role="button"
-          @keydown.space.prevent="panels.close()"
+          @keydown.enter.prevent="panels.close()"
           @click="panels.close()"
         />
 
@@ -41,7 +41,7 @@ watch(locale, () => {
               class="close-panel"
               tabindex="0"
               role="button"
-              @keydown.space.prevent="panels.close()"
+              @keydown.enter.prevent="panels.close()"
               @click="panels.close()"
             >
               <VIcon

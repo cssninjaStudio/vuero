@@ -75,7 +75,7 @@ function updateColor({ colors }: any) {
       <div class="actions">
         <VAction
           tabindex="0"
-          @keydown.space.prevent="toggle"
+          @keydown.enter.prevent="toggle"
           @click="toggle"
         >
           <span v-if="isOpen">Close</span>
@@ -136,7 +136,7 @@ function updateColor({ colors }: any) {
         <VButton
           fullwidth
           tabindex="0"
-          @keydown.space.prevent="copy(colorSnippet)"
+          @keydown.enter.prevent="copy(colorSnippet)"
           @click="copy(colorSnippet)"
         >
           <Transition

@@ -142,7 +142,7 @@ onUnmounted(() => {
                 class="food-pill"
                 tabindex="0"
                 role="button"
-                @keydown.space.prevent="goTo(index)"
+                @keydown.enter.prevent="goTo(index)"
                 @click="goTo(index)"
               >
                 <div class="food-pill-icon">
@@ -222,7 +222,7 @@ onUnmounted(() => {
                 :class="[activeSection === 'cart' && 'is-active']"
                 tabindex="0"
                 role="button"
-                @keydown.space.prevent="activeSection = 'cart'"
+                @keydown.enter.prevent="activeSection = 'cart'"
                 @click="activeSection = 'cart'"
               >
                 <VIcon
@@ -236,7 +236,7 @@ onUnmounted(() => {
                 :class="[activeSection === 'activity' && 'is-active']"
                 tabindex="0"
                 role="button"
-                @keydown.space.prevent="activeSection = 'activity'"
+                @keydown.enter.prevent="activeSection = 'activity'"
                 @click="activeSection = 'activity'"
               >
                 <VIcon
@@ -250,7 +250,7 @@ onUnmounted(() => {
                 :class="[activeSection === 'address' && 'is-active']"
                 tabindex="0"
                 role="button"
-                @keydown.space.prevent="activeSection = 'address'"
+                @keydown.enter.prevent="activeSection = 'address'"
                 @click="activeSection = 'address'"
               >
                 <VIcon
@@ -264,7 +264,7 @@ onUnmounted(() => {
                 :class="[activeSection === 'settings' && 'is-active']"
                 tabindex="0"
                 role="button"
-                @keydown.space.prevent="activeSection = 'settings'"
+                @keydown.enter.prevent="activeSection = 'settings'"
                 @click="activeSection = 'settings'"
               >
                 <VIcon

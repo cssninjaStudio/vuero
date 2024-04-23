@@ -112,7 +112,7 @@ useHead({
                 class="vuero-hamburger nav-trigger push-resize"
                 tabindex="0"
                 role="button"
-                @keydown.space.prevent="messageSubsidebarOpen = !messageSubsidebarOpen"
+                @keydown.enter.prevent="messageSubsidebarOpen = !messageSubsidebarOpen"
                 @click="messageSubsidebarOpen = !messageSubsidebarOpen"
               >
                 <span class="menu-toggle has-chevron">
@@ -167,7 +167,7 @@ useHead({
                       class="hide"
                       tabindex="0"
                       role="button"
-                      @keydown.space.prevent="chat.setAddConversationOpen(false)"
+                      @keydown.enter.prevent="chat.setAddConversationOpen(false)"
                       @click="chat.setAddConversationOpen(false)"
                     >
                       <VIcon

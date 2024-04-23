@@ -108,7 +108,7 @@ const handleLinkClick = (e: MouseEvent, page = 1) => {
           class="pagination-link"
           :aria-label="t('components.v-flex-pagination.goto-page-title', { page: 1 })"
           :class="[currentPage === 1 && 'is-current']"
-          @keydown.space.prevent="
+          @keydown.enter.prevent="
             (e: MouseEvent) => (e.target as HTMLAnchorElement).click()
           "
           @click="(e: MouseEvent) => handleLinkClick(e, 1)"
@@ -132,7 +132,7 @@ const handleLinkClick = (e: MouseEvent, page = 1) => {
           :aria-label="t('components.v-flex-pagination.goto-page-title', { page: page })"
           :aria-current="currentPage === page ? 'page' : undefined"
           :class="[currentPage === page && 'is-current']"
-          @keydown.space.prevent="
+          @keydown.enter.prevent="
             (e: MouseEvent) => (e.target as HTMLAnchorElement).click()
           "
           @click="(e: MouseEvent) => handleLinkClick(e, page)"
@@ -154,7 +154,7 @@ const handleLinkClick = (e: MouseEvent, page = 1) => {
             t('components.v-flex-pagination.goto-page-title', { page: lastPage })
           "
           :class="[currentPage === lastPage && 'is-current']"
-          @keydown.space.prevent="
+          @keydown.enter.prevent="
             (e: MouseEvent) => (e.target as HTMLAnchorElement).click()
           "
           @click="(e: MouseEvent) => handleLinkClick(e, lastPage)"
@@ -170,7 +170,7 @@ const handleLinkClick = (e: MouseEvent, page = 1) => {
       :to="paginatedLink(currentPage - 1)"
       tabindex="0"
       class="pagination-previous has-chevron"
-      @keydown.space.prevent="(e: MouseEvent) => (e.target as HTMLAnchorElement).click()"
+      @keydown.enter.prevent="(e: MouseEvent) => (e.target as HTMLAnchorElement).click()"
       @click="(e: MouseEvent) => handleLinkClick(e, currentPage - 1)"
     >
       <VIcon icon="lucide:chevron-left" class="rtl-hidden" />
@@ -180,7 +180,7 @@ const handleLinkClick = (e: MouseEvent, page = 1) => {
       :to="paginatedLink(currentPage + 1)"
       tabindex="0"
       class="pagination-next has-chevron"
-      @keydown.space.prevent="(e: MouseEvent) => (e.target as HTMLAnchorElement).click()"
+      @keydown.enter.prevent="(e: MouseEvent) => (e.target as HTMLAnchorElement).click()"
       @click="(e: MouseEvent) => handleLinkClick(e, currentPage + 1)"
     >
       <VIcon icon="lucide:chevron-left" class="rtl-hidden" />

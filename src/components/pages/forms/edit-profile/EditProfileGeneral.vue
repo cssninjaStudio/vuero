@@ -71,7 +71,7 @@ const onSave = async () => {
               raised
               :loading="isLoading"
               tabindex="0"
-              @keydown.space.prevent="onSave"
+              @keydown.enter.prevent="onSave"
               @click="onSave"
             >
               Save Changes
@@ -125,7 +125,7 @@ const onSave = async () => {
               class="edit-button is-edit"
               circle
               tabindex="0"
-              @keydown.space.prevent="isUploading = true"
+              @keydown.enter.prevent="isUploading = true"
               @click="isUploading = true"
             />
             <VIconButton
@@ -134,7 +134,7 @@ const onSave = async () => {
               class="edit-button is-back"
               circle
               tabindex="0"
-              @keydown.space.prevent="isUploading = false"
+              @keydown.enter.prevent="isUploading = false"
               @click="isUploading = false"
             />
           </template>

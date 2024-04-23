@@ -30,7 +30,7 @@ const props = withDefaults(
       role="button"
       :class="[props.conversationId === conversation.id && 'active']"
       tabindex="0"
-      @keydown.space.prevent="
+      @keydown.enter.prevent="
         () => {
           emit('update:conversationId', conversation.id)
           emit('toggleMobileConversation')
