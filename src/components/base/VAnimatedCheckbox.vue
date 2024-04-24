@@ -1,7 +1,3 @@
-<script lang="ts">
-let instances = 0
-</script>
-
 <script setup lang="ts" generic="T extends unknown">
 export type VAnimatedCheckboxColor =
   | 'primary'
@@ -29,12 +25,16 @@ const props = withDefaults(
   },
 )
 
-const animatedCheckboxId = `animated-checkbox-${++instances}`
+const animatedCheckboxId = ref<string | undefined>()
 const element = ref<HTMLElement>()
 const innerElement = ref<HTMLElement>()
 const checked = computed(() =>
-  Boolean(modelValue.value.find(item => item === props.value)),
+  Boolean(modelValue.value.find(item => toRaw(item) === toRaw(props.value))),
 )
+
+onMounted(() => {
+  animatedCheckboxId.value = `v-animated-checkbox-${crypto.randomUUID()}`
+})
 
 const updateCheckbox = () => {
   if (element.value && innerElement.value) {
@@ -57,13 +57,13 @@ const updateCheckbox = () => {
 
 function change() {
   const values = [...modelValue.value]
-  const index = values.findIndex(item => item === props.value)
+  const index = values.findIndex(item => toRaw(item) === toRaw(props.value))
 
   if (index > -1) {
     values.splice(index, 1)
   }
   else {
-    values.push(unref(props.value))
+    values.push(toRaw(props.value))
   }
 
   modelValue.value = values
