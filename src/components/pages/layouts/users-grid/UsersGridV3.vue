@@ -42,27 +42,21 @@ const filteredData = computed(() => {
       </VControl>
 
       <div class="tabs-inner">
-        <div class="tabs">
-          <ul>
-            <li :class="[tab === 'all' && 'is-active']">
-              <a
-                tabindex="0"
-                role="button"
-                @keydown.enter.prevent="tab = 'all'"
-                @click="tab = 'all'"
-              ><span>All</span></a>
-            </li>
-            <li :class="[tab === 'team' && 'is-active']">
-              <a
-                tabindex="0"
-                role="button"
-                @keydown.enter.prevent="tab = 'team'"
-                @click="tab = 'team'"
-              ><span>Team</span></a>
-            </li>
-            <li class="tab-naver" />
-          </ul>
-        </div>
+        <VTabs
+          v-model:selected="tab"
+          slider
+          align="centered"
+          :tabs="[
+            {
+              label: 'All',
+              value: 'all',
+            },
+            {
+              label: 'Team',
+              value: 'team',
+            },
+          ]"
+        />
       </div>
     </div>
 
@@ -91,11 +85,7 @@ const filteredData = computed(() => {
       </VPlaceholderPage>
 
       <!--Active Tab-->
-      <div
-        id="active-items-tab"
-        class="tab-content"
-        :class="[tab === 'all' && 'is-active']"
-      >
+      <div v-if="tab === 'all'">
         <TransitionGroup
           name="list"
           tag="div"
@@ -113,11 +103,7 @@ const filteredData = computed(() => {
       </div>
 
       <!--inactive Tab-->
-      <div
-        id="inactive-items-tab"
-        class="tab-content"
-        :class="[tab === 'team' && 'is-active']"
-      >
+      <div v-else-if="tab === 'team'">
         <!--Empty placeholder-->
         <VPlaceholderPage
           title="No team members."

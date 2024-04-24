@@ -61,27 +61,21 @@ const filteredData = computed(() => {
       </VControl>
 
       <div class="tabs-inner">
-        <div class="tabs">
-          <ul>
-            <li :class="[tab === 'all' && 'is-active']">
-              <a
-                tabindex="0"
-                role="button"
-                @keydown.enter.prevent="tab = 'all'"
-                @click="tab = 'all'"
-              ><span>All</span></a>
-            </li>
-            <li :class="[tab === 'saved' && 'is-active']">
-              <a
-                tabindex="0"
-                role="button"
-                @keydown.enter.prevent="tab = 'saved'"
-                @click="tab = 'saved'"
-              ><span>Saved</span></a>
-            </li>
-            <li class="tab-naver" />
-          </ul>
-        </div>
+        <VTabs
+          v-model:selected="tab"
+          slider
+          align="centered"
+          :tabs="[
+            {
+              label: 'All',
+              value: 'all',
+            },
+            {
+              label: 'Saved',
+              value: 'saved',
+            },
+          ]"
+        />
       </div>
     </div>
 
@@ -89,7 +83,7 @@ const filteredData = computed(() => {
     <div class="list-view list-view-v4">
       <!--List Empty Search Placeholder -->
       <VPlaceholderPage
-        :class="[filteredData.length !== 0 && 'is-hidden']"
+        v-if="!filteredData.length"
         title="We couldn't find any matching results."
         subtitle="Too bad. Looks like we couldn't find any matching results for the
           search terms you've entered. Please try different search terms or
@@ -111,11 +105,7 @@ const filteredData = computed(() => {
       </VPlaceholderPage>
 
       <!--Active Tab-->
-      <div
-        id="active-items-tab"
-        class="tab-content"
-        :class="[tab === 'all' && 'is-active']"
-      >
+      <div v-else-if="tab === 'all'">
         <div class="list-view-inner">
           <TransitionGroup
             name="list-complete"
@@ -210,11 +200,7 @@ const filteredData = computed(() => {
       </div>
 
       <!--Inactive Tab-->
-      <div
-        id="inactive-items-tab"
-        class="tab-content"
-        :class="[tab === 'saved' && 'is-active']"
-      >
+      <div v-else-if="tab === 'saved'">
         <div class="list-view-inner">
           <!--Empty placeholder-->
           <VPlaceholderPage

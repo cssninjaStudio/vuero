@@ -17,34 +17,26 @@ const activeTab = ref<TabId>('all')
       </div>
 
       <div class="tabs-inner">
-        <div class="tabs is-disabled">
-          <ul>
-            <li :class="[activeTab === 'all' && 'is-active']">
-              <a
-                tabindex="0"
-                role="button"
-                @keydown.enter.prevent="activeTab = 'all'"
-                @click="activeTab = 'all'"
-              ><span>All</span></a>
-            </li>
-            <li :class="[activeTab === 'people' && 'is-active']">
-              <a
-                tabindex="0"
-                role="button"
-                @keydown.enter.prevent="activeTab = 'people'"
-                @click="activeTab = 'people'"
-              ><span>People</span></a>
-            </li>
-            <li :class="[activeTab === 'records' && 'is-active']">
-              <a
-                tabindex="0"
-                role="button"
-                @keydown.enter.prevent="activeTab = 'records'"
-                @click="activeTab = 'records'"
-              ><span>Records</span></a>
-            </li>
-          </ul>
-        </div>
+        <VTabs
+          :selected="activeTab"
+          disabled
+          slider
+          align="centered"
+          :tabs="[
+            {
+              label: 'All',
+              value: 'all',
+            },
+            {
+              label: 'People',
+              value: 'people',
+            },
+            {
+              label: 'Records',
+              value: 'records',
+            },
+          ]"
+        />
       </div>
     </div>
 

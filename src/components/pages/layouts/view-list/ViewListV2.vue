@@ -37,27 +37,21 @@ const filteredData = computed(() => {
     </VField>
 
     <div class="tabs-inner">
-      <div class="tabs">
-        <ul>
-          <li :class="[activeTab === 'active' && 'is-active']">
-            <a
-              tabindex="0"
-              role="button"
-              @keydown.enter.prevent="activeTab = 'active'"
-              @click="activeTab = 'active'"
-            ><span>Active</span></a>
-          </li>
-          <li :class="[activeTab === 'inactive' && 'is-active']">
-            <a
-              tabindex="0"
-              role="button"
-              @keydown.enter.prevent="activeTab = 'inactive'"
-              @click="activeTab = 'inactive'"
-            ><span>Inactive</span></a>
-          </li>
-          <li class="tab-naver" />
-        </ul>
-      </div>
+      <VTabs
+        v-model:selected="activeTab"
+        slider
+        align="centered"
+        :tabs="[
+          {
+            label: 'Active',
+            value: 'active',
+          },
+          {
+            label: 'Inactive',
+            value: 'inactive',
+          },
+        ]"
+      />
     </div>
   </div>
 
@@ -88,205 +82,197 @@ const filteredData = computed(() => {
       </VPlaceholderPage>
 
       <!--Active Tab-->
-      <div
-        id="active-items-tab"
-        class="tab-content"
-        :class="[activeTab === 'active' && 'is-active']"
-      >
-        <div class="list-view-inner">
-          <TransitionGroup
-            name="list-complete"
-            tag="div"
-          >
-            <div
-              v-for="item in filteredData"
-              :key="item.id"
-              class="list-view-item"
+      <Transition v-if="filteredData.length" name="fade-fast">
+        <div v-if="activeTab === 'active'">
+          <div class="list-view-inner">
+            <TransitionGroup
+              name="list-complete"
+              tag="div"
             >
-              <div class="list-view-item-inner">
-                <img
-                  :src="item.picture"
-                  alt=""
-                >
-                <div class="meta-left">
-                  <h3>
-                    <span>{{ item.name }}</span>
-                    <VRangeRating
-                      v-model="item.rating"
-                      class="is-inline"
-                    >
-                      <i
-                        class="fas fa-star"
-                        aria-hidden="true"
+              <div
+                v-for="item in filteredData"
+                :key="item.id"
+                class="list-view-item"
+              >
+                <div class="list-view-item-inner">
+                  <img
+                    :src="item.picture"
+                    alt=""
+                  >
+                  <div class="meta-left">
+                    <h3>
+                      <span>{{ item.name }}</span>
+                      <VRangeRating
+                        v-model="item.rating"
+                        class="is-inline"
+                      >
+                        <i
+                          class="fas fa-star"
+                          aria-hidden="true"
+                        />
+                      </VRangeRating>
+                    </h3>
+                    <p>
+                      <VIcon
+                        icon="lucide:map-pin"
                       />
-                    </VRangeRating>
-                  </h3>
-                  <p>
-                    <VIcon
-                      icon="lucide:map-pin"
-                    />
-                    <span>{{ item.location }}</span>
-                  </p>
-                  <span>
+                      <span>{{ item.location }}</span>
+                    </p>
                     <span>
-                      {{
-                        item.details.rooms > 1
-                          ? `${item.details.rooms} rooms`
-                          : `${item.details.rooms} room`
-                      }}
+                      <span>
+                        {{
+                          item.details.rooms > 1
+                            ? `${item.details.rooms} rooms`
+                            : `${item.details.rooms} room`
+                        }}
+                      </span>
+                      <i
+                        aria-hidden="true"
+                        class="fas fa-circle icon-separator"
+                      />
+                      <span>
+                        {{
+                          item.details.beds > 1
+                            ? `${item.details.beds} beds`
+                            : `${item.details.beds} bed`
+                        }}
+                      </span>
+                      <i
+                        aria-hidden="true"
+                        class="fas fa-circle icon-separator"
+                      />
+                      <span>
+                        {{
+                          item.details.bathrooms > 1
+                            ? `${item.details.bathrooms} bathrooms`
+                            : `${item.details.bathrooms} bathroom`
+                        }}
+                      </span>
                     </span>
-                    <i
-                      aria-hidden="true"
-                      class="fas fa-circle icon-separator"
-                    />
-                    <span>
-                      {{
-                        item.details.beds > 1
-                          ? `${item.details.beds} beds`
-                          : `${item.details.beds} bed`
-                      }}
-                    </span>
-                    <i
-                      aria-hidden="true"
-                      class="fas fa-circle icon-separator"
-                    />
-                    <span>
-                      {{
-                        item.details.bathrooms > 1
-                          ? `${item.details.bathrooms} bathrooms`
-                          : `${item.details.bathrooms} bathroom`
-                      }}
-                    </span>
-                  </span>
 
-                  <div class="icon-list">
-                    <span v-if="item.comodities.parking">
-                      <i
-                        aria-hidden="true"
-                        class="lnil lnil-car"
-                      />
-                      <span>Parking</span>
-                    </span>
-                    <span v-if="item.comodities.wifi">
-                      <i
-                        aria-hidden="true"
-                        class="lnil lnil-signal"
-                      />
-                      <span>Wifi</span>
-                    </span>
-                    <span v-if="item.comodities.heater">
-                      <i
-                        aria-hidden="true"
-                        class="lnil lnil-air-flow"
-                      />
-                      <span>Heater</span>
-                    </span>
-                    <span v-if="item.comodities.cleaning">
-                      <i
-                        aria-hidden="true"
-                        class="lnil lnil-sun"
-                      />
-                      <span>Cleaning</span>
-                    </span>
-                    <span
-                      v-if="
-                        item.comodities.other &&
-                          item.comodities.otherThing &&
-                          item.comodities.otherCoolThing &&
-                          item.comodities.otherGreatCoolThing
-                      "
-                    >
-                      <i
-                        aria-hidden="true"
-                        class="lnil lnil-more"
-                      />
-                      <span>4 more</span>
-                    </span>
-                    <span
-                      v-else-if="
-                        item.comodities.other &&
-                          item.comodities.otherThing &&
-                          item.comodities.otherCoolThing
-                      "
-                    >
-                      <i
-                        aria-hidden="true"
-                        class="lnil lnil-more"
-                      />
-                      <span>3 more</span>
-                    </span>
-                    <span v-else-if="item.comodities.other && item.comodities.otherThing">
-                      <i
-                        aria-hidden="true"
-                        class="lnil lnil-more"
-                      />
-                      <span>2 more</span>
-                    </span>
-                    <span v-else-if="item.comodities.other">
-                      <i
-                        aria-hidden="true"
-                        class="lnil lnil-more"
-                      />
-                      <span>1 more</span>
-                    </span>
+                    <div class="icon-list">
+                      <span v-if="item.comodities.parking">
+                        <i
+                          aria-hidden="true"
+                          class="lnil lnil-car"
+                        />
+                        <span>Parking</span>
+                      </span>
+                      <span v-if="item.comodities.wifi">
+                        <i
+                          aria-hidden="true"
+                          class="lnil lnil-signal"
+                        />
+                        <span>Wifi</span>
+                      </span>
+                      <span v-if="item.comodities.heater">
+                        <i
+                          aria-hidden="true"
+                          class="lnil lnil-air-flow"
+                        />
+                        <span>Heater</span>
+                      </span>
+                      <span v-if="item.comodities.cleaning">
+                        <i
+                          aria-hidden="true"
+                          class="lnil lnil-sun"
+                        />
+                        <span>Cleaning</span>
+                      </span>
+                      <span
+                        v-if="
+                          item.comodities.other &&
+                            item.comodities.otherThing &&
+                            item.comodities.otherCoolThing &&
+                            item.comodities.otherGreatCoolThing
+                        "
+                      >
+                        <i
+                          aria-hidden="true"
+                          class="lnil lnil-more"
+                        />
+                        <span>4 more</span>
+                      </span>
+                      <span
+                        v-else-if="
+                          item.comodities.other &&
+                            item.comodities.otherThing &&
+                            item.comodities.otherCoolThing
+                        "
+                      >
+                        <i
+                          aria-hidden="true"
+                          class="lnil lnil-more"
+                        />
+                        <span>3 more</span>
+                      </span>
+                      <span v-else-if="item.comodities.other && item.comodities.otherThing">
+                        <i
+                          aria-hidden="true"
+                          class="lnil lnil-more"
+                        />
+                        <span>2 more</span>
+                      </span>
+                      <span v-else-if="item.comodities.other">
+                        <i
+                          aria-hidden="true"
+                          class="lnil lnil-more"
+                        />
+                        <span>1 more</span>
+                      </span>
+                    </div>
                   </div>
-                </div>
-                <div class="meta-right">
-                  <div class="buttons">
-                    <VButton light>
-                      More Info
-                    </VButton>
-                    <VButton
-                      color="primary"
-                      raised
-                    >
-                      Book Now
-                    </VButton>
+                  <div class="meta-right">
+                    <div class="buttons">
+                      <VButton light>
+                        More Info
+                      </VButton>
+                      <VButton
+                        color="primary"
+                        raised
+                      >
+                        Book Now
+                      </VButton>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </TransitionGroup>
+            </TransitionGroup>
+          </div>
+
+          <VFlexPagination
+            v-if="filteredData.length > 5"
+            :item-per-page="10"
+            :total-items="873"
+            :current-page="42"
+            :max-links-displayed="7"
+          />
         </div>
-
-        <VFlexPagination
-          v-if="filteredData.length > 5"
-          :item-per-page="10"
-          :total-items="873"
-          :current-page="42"
-          :max-links-displayed="7"
-        />
-      </div>
-
-      <!--Inactive Tab-->
-      <div
-        id="inactive-items-tab"
-        class="tab-content"
-        :class="[activeTab === 'inactive' && 'is-active']"
-      >
-        <div class="list-view-inner">
-          <!--Empty placeholder-->
-          <VPlaceholderPage
-            title="There are no inactive properties."
-            subtitle="Looks like there are no inactive properties to display. You can
+        <div v-else-if="activeTab === 'inactive'">
+          <div class="list-view-inner">
+            <!--Empty placeholder-->
+            <VPlaceholderPage
+              title="There are no inactive properties."
+              subtitle="Looks like there are no inactive properties to display. You can
                 disable and also enable a property from the property settings."
-            larger
-          >
-            <template #image>
-              <img
-                class="light-image"
-                src="/@src/assets/illustrations/placeholders/having-coffee.svg"
-                alt=""
-              >
-              <img
-                class="dark-image"
-                src="/@src/assets/illustrations/placeholders/having-coffee-dark.svg"
-                alt=""
-              >
-            </template>
-          </VPlaceholderPage>
+              larger
+            >
+              <template #image>
+                <img
+                  class="light-image"
+                  src="/@src/assets/illustrations/placeholders/having-coffee.svg"
+                  alt=""
+                >
+                <img
+                  class="dark-image"
+                  src="/@src/assets/illustrations/placeholders/having-coffee-dark.svg"
+                  alt=""
+                >
+              </template>
+            </VPlaceholderPage>
+          </div>
         </div>
-      </div>
+      </Transition>
     </div>
   </div>
 </template>

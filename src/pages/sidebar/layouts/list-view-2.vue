@@ -9,9 +9,7 @@ useHead({
 </script>
 
 <template>
-  <div class="tabs-wrapper is-slider is-squared is-inverted">
-    <div class="page-content-inner">
-      <ViewListV2 />
-    </div>
+  <div class="page-content-inner">
+    <ViewListV2 />
   </div>
 </template>

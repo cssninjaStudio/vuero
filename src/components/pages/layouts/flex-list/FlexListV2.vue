@@ -78,27 +78,21 @@ const filteredData = computed(() => {
       </VControl>
 
       <div class="tabs-inner">
-        <div class="tabs">
-          <ul>
-            <li :class="[tab === 'active' && 'is-active']">
-              <a
-                tabindex="0"
-                role="button"
-                @keydown.enter.prevent="tab = 'active'"
-                @click="tab = 'active'"
-              ><span>Active</span></a>
-            </li>
-            <li :class="[tab === 'closed' && 'is-active']">
-              <a
-                tabindex="0"
-                role="button"
-                @keydown.enter.prevent="tab = 'closed'"
-                @click="tab = 'closed'"
-              ><span>Closed</span></a>
-            </li>
-            <li class="tab-naver" />
-          </ul>
-        </div>
+        <VTabs
+          v-model:selected="tab"
+          slider
+          align="centered"
+          :tabs="[
+            {
+              label: 'Active',
+              value: 'active',
+            },
+            {
+              label: 'Closed',
+              value: 'closed',
+            },
+          ]"
+        />
       </div>
     </div>
 
@@ -126,7 +120,6 @@ const filteredData = computed(() => {
         </template>
       </VPlaceholderPage>
 
-      <!--Active Tab-->
       <div
         v-if="tab === 'active'"
         class="tab-content is-active"
@@ -198,7 +191,6 @@ const filteredData = computed(() => {
         />
       </div>
 
-      <!--inactive Tab-->
       <div
         v-else-if="tab === 'closed'"
         class="tab-content is-active"

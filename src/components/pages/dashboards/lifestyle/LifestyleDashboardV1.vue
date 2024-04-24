@@ -9,34 +9,23 @@ const activeTab = ref<TabId>('overview')
 
     <div class="tabs-wrapper">
       <div class="tabs-inner">
-        <div class="tabs">
-          <ul>
-            <li :class="[activeTab === 'overview' && 'is-active']">
-              <a
-                tabindex="0"
-                role="button"
-                @keydown.enter.prevent="activeTab = 'overview'"
-                @click="activeTab = 'overview'"
-              >Overview</a>
-            </li>
-            <li :class="[activeTab === 'content' && 'is-active']">
-              <a
-                tabindex="0"
-                role="button"
-                @keydown.enter.prevent="activeTab = 'content'"
-                @click="activeTab = 'content'"
-              >Content</a>
-            </li>
-            <li :class="[activeTab === 'brands' && 'is-active']">
-              <a
-                tabindex="0"
-                role="button"
-                @keydown.enter.prevent="activeTab = 'brands'"
-                @click="activeTab = 'brands'"
-              >Brands</a>
-            </li>
-          </ul>
-        </div>
+        <VTabs
+          v-model:selected="activeTab"
+          :tabs="[
+            {
+              label: 'Overview',
+              value: 'overview',
+            },
+            {
+              label: 'Content',
+              value: 'content',
+            },
+            {
+              label: 'Brands',
+              value: 'brands',
+            },
+          ]"
+        />
       </div>
 
       <LifestyleOverviewTab v-if="activeTab === 'overview'" />

@@ -49,6 +49,21 @@
   .dark-image-block-l {
     display: none !important;
   }
+  
+
+  .vuero-components {
+    .tabs-wrapper {
+      display: flex;
+    }
+
+    .tabs-inner {
+      width: 25% !important;
+    }
+
+    .tab-content.is-active {
+      width: 75% !important;
+    }
+  }
 }
 
 .is-dark {
@@ -1062,6 +1077,25 @@
 
       .head-text {
         padding-bottom: 20px;
+      }
+    }
+
+    .vuero-components {
+      .tabs-wrapper {
+        flex-direction: column;
+      }
+
+      .columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .tabs-inner {
+        width: 100% !important;
+      }
+
+      .tab-content.is-active {
+        width: 100% !important;
       }
     }
   }

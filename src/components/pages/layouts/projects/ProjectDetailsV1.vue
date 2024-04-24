@@ -27,35 +27,26 @@ const participants = [
   <div class="project-details">
     <div class="tabs-wrapper is-triple-slider">
       <div class="tabs-inner">
-        <div class="tabs">
-          <ul>
-            <li :class="[tab === 'project' && 'is-active']">
-              <a
-                tabindex="0"
-                role="button"
-                @keydown.enter.prevent="tab = 'project'"
-                @click="tab = 'project'"
-              ><span>Project</span></a>
-            </li>
-            <li :class="[tab === 'team' && 'is-active']">
-              <a
-                tabindex="0"
-                role="button"
-                @keydown.enter.prevent="tab = 'team'"
-                @click="tab = 'team'"
-              ><span>Team</span></a>
-            </li>
-            <li :class="[tab === 'tasks' && 'is-active']">
-              <a
-                tabindex="0"
-                role="button"
-                @keydown.enter.prevent="tab = 'tasks'"
-                @click="tab = 'tasks'"
-              ><span>Tasks</span></a>
-            </li>
-            <li class="tab-naver" />
-          </ul>
-        </div>
+        <VTabs
+          v-model:selected="tab"
+          align="centered"
+          type="rounded"
+          slider
+          :tabs="[
+            {
+              label: 'Project',
+              value: 'project',
+            },
+            {
+              label: 'Team',
+              value: 'team',
+            },
+            {
+              label: 'Tasks',
+              value: 'tasks',
+            },
+          ]"
+        />
       </div>
 
       <div

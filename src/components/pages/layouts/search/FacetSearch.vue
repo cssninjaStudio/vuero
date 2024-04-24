@@ -108,34 +108,25 @@ const options = ref(['Newest'])
       </div>
 
       <div class="tabs-inner">
-        <div class="tabs">
-          <ul>
-            <li :class="[activeTab === 'all' && 'is-active']">
-              <a
-                tabindex="0"
-                role="button"
-                @keydown.enter.prevent="activeTab = 'all'"
-                @click="activeTab = 'all'"
-              ><span>All</span></a>
-            </li>
-            <li :class="[activeTab === 'people' && 'is-active']">
-              <a
-                tabindex="0"
-                role="button"
-                @keydown.enter.prevent="activeTab = 'people'"
-                @click="activeTab = 'people'"
-              ><span>People</span></a>
-            </li>
-            <li :class="[activeTab === 'records' && 'is-active']">
-              <a
-                tabindex="0"
-                role="button"
-                @keydown.enter.prevent="activeTab = 'records'"
-                @click="activeTab = 'records'"
-              ><span>Records</span></a>
-            </li>
-          </ul>
-        </div>
+        <VTabs
+          v-model:selected="activeTab"
+          slider
+          align="centered"
+          :tabs="[
+            {
+              label: 'All',
+              value: 'all',
+            },
+            {
+              label: 'People',
+              value: 'people',
+            },
+            {
+              label: 'Records',
+              value: 'records',
+            },
+          ]"
+        />
       </div>
     </div>
 
@@ -401,10 +392,7 @@ const options = ref(['Newest'])
 
         <!--Results-->
         <div class="column is-8">
-          <div
-            class="tab-content"
-            :class="[activeTab === 'all' && 'is-active']"
-          >
+          <div v-if="activeTab === 'all'">
             <!--Search Results Group-->
             <div class="search-results-group">
               <div class="group-header">
@@ -478,10 +466,7 @@ const options = ref(['Newest'])
             </div>
           </div>
 
-          <div
-            class="tab-content"
-            :class="[activeTab === 'people' && 'is-active']"
-          >
+          <div v-else-if="activeTab === 'people'">
             <!--Search Results Group-->
             <div class="search-results-group">
               <div class="search-results-list">
@@ -512,10 +497,7 @@ const options = ref(['Newest'])
             </div>
           </div>
 
-          <div
-            class="tab-content"
-            :class="[activeTab === 'records' && 'is-active']"
-          >
+          <div v-else-if="activeTab === 'records'">
             <!--Search Results Group-->
             <div class="search-results-group">
               <div class="search-results-list">

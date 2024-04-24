@@ -786,53 +786,35 @@ useHead({
           <!--Components-->
           <div class="vuero-components p-t-40 p-b-60">
             <div class="vertical-tabs-wrapper">
-              <div class="tabs">
-                <ul>
-                  <li :class="[activeTab === 'elements' && 'is-active']">
-                    <a
-                      tabindex="0"
-                      role="button"
-                      @keydown.enter.prevent="activeTab = 'elements'"
-                      @click="activeTab = 'elements'"
-                    >
-                      Elements
-                    </a>
-                  </li>
-                  <li :class="[activeTab === 'components' && 'is-active']">
-                    <a
-                      tabindex="0"
-                      role="button"
-                      @keydown.enter.prevent="activeTab = 'components'"
-                      @click="activeTab = 'components'"
-                    >
-                      Components
-                    </a>
-                  </li>
-                  <li :class="[activeTab === 'forms' && 'is-active']">
-                    <a
-                      tabindex="0"
-                      role="button"
-                      @keydown.enter.prevent="activeTab = 'forms'"
-                      @click="activeTab = 'forms'"
-                    >
-                      Forms
-                    </a>
-                  </li>
-                  <li :class="[activeTab === 'plugins' && 'is-active']">
-                    <a
-                      tabindex="0"
-                      role="button"
-                      @keydown.enter.prevent="activeTab = 'plugins'"
-                      @click="activeTab = 'plugins'"
-                    >
-                      Plugins
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="content-wrap">
-                <LandingComponents :active-tab="activeTab" />
-              </div>
+              <VTabs
+                v-model:selected="activeTab"
+                type="rounded"
+                slider
+                :tabs="[
+                  {
+                    label: 'Elements',
+                    value: 'elements',
+                  },
+                  {
+                    label: 'Components',
+                    value: 'components',
+                  },
+                  {
+                    label: 'Forms',
+                    value: 'forms',
+                  },
+                  {
+                    label: 'Plugins',
+                    value: 'plugins',
+                  },
+                ]"
+              >
+                <template #tab>
+                  <div class="content-wrap">
+                    <LandingComponents :active-tab="activeTab" />
+                  </div>
+                </template>
+              </VTabs>
             </div>
           </div>
         </div>

@@ -13,8 +13,7 @@ const props = withDefaults(
 
 <template>
   <div
-    id="demo-elements"
-    :class="[props.activeTab === 'elements' && 'is-active']"
+    v-if="props.activeTab === 'elements'"
     class="tab-content has-text-left"
   >
     <div class="columns is-multiline">
@@ -49,10 +48,8 @@ const props = withDefaults(
     </div>
   </div>
 
-  <!--Components-->
   <div
-    id="demo-components"
-    :class="[props.activeTab === 'components' && 'is-active']"
+    v-else-if="props.activeTab === 'components'"
     class="tab-content has-text-left"
   >
     <div class="columns is-multiline">
@@ -88,10 +85,8 @@ const props = withDefaults(
     </div>
   </div>
 
-  <!--Forms-->
   <div
-    id="demo-forms"
-    :class="[props.activeTab === 'forms' && 'is-active']"
+    v-else-if="props.activeTab === 'forms'"
     class="tab-content has-text-left"
   >
     <div class="columns is-multiline">
@@ -126,10 +121,8 @@ const props = withDefaults(
     </div>
   </div>
 
-  <!--Sections-->
   <div
-    id="plugins-sections"
-    :class="[props.activeTab === 'plugins' && 'is-active']"
+    v-else-if="props.activeTab === 'plugins'"
     class="tab-content has-text-left"
   >
     <div class="columns is-multiline">
