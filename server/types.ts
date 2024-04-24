@@ -13,7 +13,7 @@ export type VueroServerRender = (ctx: {
   manifest: Record<string, any>
   initialState?: VueroInitialState
   template: string
-}) => Promise<string>
+}) => Promise<string | ReadableStream>
 
 type PageParam = Record<string, string | string[]>
 export type StaticParams = Record<

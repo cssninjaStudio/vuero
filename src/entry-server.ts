@@ -1,12 +1,14 @@
 import devalue from '@nuxt/devalue'
-import { getRequestURL } from 'h3'
-import { renderToString } from 'vue/server-renderer'
+import { getRequestURL, setResponseHeader } from 'h3'
+import { renderToWebStream } from 'vue/server-renderer'
 import { renderSSRHead } from '@unhead/ssr'
+import { minify } from 'html-minifier-terser'
 
 import type { VueroServerRender, VueroSSRContext } from '/@server/types'
 import { createApp } from '/@src/app'
 
 const placeholderAppRe = /<div id="app"([\s\w\-"'=[\]]*)><\/div>/
+const placeholderStream = '<!--vueroplaceholder-->'
 
 export const render: VueroServerRender = async ({
   event,
@@ -15,7 +17,7 @@ export const render: VueroServerRender = async ({
   template,
 }) => {
   const url = getRequestURL(event)
-  const { app, router, pinia, head } = await createApp()
+  const { app, router, pinia, head } = await createApp(event)
 
   // set the router to the desired URL before rendering
   router.push(url.pathname)
@@ -28,7 +30,8 @@ export const render: VueroServerRender = async ({
   const ctx: VueroSSRContext = {
     event,
   }
-  const appHtml = await renderToString(app, ctx)
+
+  const stream = renderToWebStream(app, ctx)
   const {
     headTags,
     htmlAttrs,
@@ -44,24 +47,53 @@ export const render: VueroServerRender = async ({
   // request.
   const preloadLinks = renderPreloadLinks(ctx.modules, manifest)
 
-  return template
+  let wrapper = template
     .replace(`<html>`, `<html${htmlAttrs}>`)
     .replace(`<head>`, `<head>${headTags}`)
     .replace(`</head>`, `${preloadLinks}</head>`)
     .replace(`<body>`, `<body${bodyAttrs}>${bodyTagsOpen}`)
     .replace(`</body>`, `${bodyTags}</body>`)
-    .replace(
-      placeholderAppRe,
-      `<div id="app" data-server-rendered="true"$1>${appHtml}</div><script>window.__vuero__=${devalue(
-        initialState,
-      )}</script>`,
-    )
+
+  // minify app wrapper
+  wrapper = await minify(wrapper, {
+    collapseWhitespace: true,
+    collapseInlineTagWhitespace: true,
+    removeComments: true,
+    minifyJS: true,
+  })
+
+  wrapper = wrapper.replace(
+    placeholderAppRe,
+    `<div id="app" data-server-rendered="true"$1>${placeholderStream}</div><script>window.__vuero__=${devalue(
+      initialState,
+    )}</script>`,
+  )
+
+  setResponseHeader(event, 'Content-Type', 'text/html')
+
+  return stream.pipeThrough(wrapTemplate(wrapper))
 }
 
-function renderPreloadLinks(modules: any, manifest: any) {
+function wrapTemplate(html: string) {
+  const [pre, post] = html.split(placeholderStream) as [string, string]
+
+  return new TransformStream<Uint8Array, Uint8Array>({
+    start(controller) {
+      controller.enqueue(new TextEncoder().encode(pre))
+    },
+    flush(controller) {
+      controller.enqueue(new TextEncoder().encode(post))
+    },
+  })
+}
+
+function renderPreloadLinks(modules?: any, manifest?: any) {
   let links = ''
+  if (!modules) return links
+  if (!manifest) return links
+
   const seen = new Set()
-  modules.forEach((id: string) => {
+  modules?.forEach((id: string) => {
     const files = manifest[id]
     if (files) {
       files.forEach((file: any) => {
@@ -83,25 +115,25 @@ function renderPreloadLink(file: string) {
     return `<link rel="stylesheet" href="${file}">`
   }
   else if (file.endsWith('.woff')) {
-    return ` <link rel="preload" href="${file}" as="font" type="font/woff" crossorigin>`
+    return `<link rel="preload" href="${file}" as="font" type="font/woff" crossorigin>`
   }
   else if (file.endsWith('.woff2')) {
-    return ` <link rel="preload" href="${file}" as="font" type="font/woff2" crossorigin>`
+    return `<link rel="preload" href="${file}" as="font" type="font/woff2" crossorigin>`
   }
   else if (file.endsWith('.gif')) {
-    return ` <link rel="preload" href="${file}" as="image" type="image/gif">`
+    return `<link rel="preload" href="${file}" as="image" type="image/gif">`
   }
   else if (file.endsWith('.jpg') || file.endsWith('.jpeg')) {
-    return ` <link rel="preload" href="${file}" as="image" type="image/jpeg">`
+    return `<link rel="preload" href="${file}" as="image" type="image/jpeg">`
   }
   else if (file.endsWith('.png')) {
-    return ` <link rel="preload" href="${file}" as="image" type="image/png">`
+    return `<link rel="preload" href="${file}" as="image" type="image/png">`
   }
   else if (file.endsWith('.webp')) {
-    return ` <link rel="preload" href="${file}" as="image" type="image/webp">`
+    return `<link rel="preload" href="${file}" as="image" type="image/webp">`
   }
   else if (file.endsWith('.svg')) {
-    return ` <link rel="prefetch" href="${file}" as="image" type="image/svg+xml"/>`
+    return `<link rel="prefetch" href="${file}" as="image" type="image/svg+xml"/>`
   }
   else {
     console.log('missing preload link for', file)

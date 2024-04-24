@@ -10,7 +10,7 @@
  * @see /src/router.ts
  */
 import type { VueroSSRContext } from '/@server/types'
-import { setHeader, setResponseStatus } from 'h3'
+import { setResponseHeader, setResponseStatus } from 'h3'
 import { useSSRContext } from 'vue'
 
 const { t } = useI18n()
@@ -32,11 +32,10 @@ useHead({
  * @see server.ts
  */
 if (import.meta.env.SSR) {
-  const context = useSSRContext<VueroSSRContext>()
-
-  if (context?.event) {
-    setHeader(context.event, 'Cache-Control', 'no-cache, no-store, must-revalidate')
-    setResponseStatus(context.event, 404)
+  const event = useSSRContext<VueroSSRContext>()?.event
+  if (event) {
+    setResponseHeader(event, 'Cache-Control', 'no-cache, no-store, must-revalidate')
+    setResponseStatus(event, 404)
   }
 }
 </script>

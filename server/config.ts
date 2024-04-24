@@ -3,13 +3,6 @@
 
 import type { App } from 'h3'
 import type { StaticParams } from './types'
-import type { Options } from 'html-minifier-terser'
-
-export const options: Options = {
-  collapseWhitespace: true,
-  collapseInlineTagWhitespace: true,
-  conservativeCollapse: true,
-}
 
 /**
  * Extend h3 app with eventHandler

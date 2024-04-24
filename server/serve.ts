@@ -25,6 +25,8 @@ async function createServer() {
     manifest,
   })
 
+  // During dev, we use vite's connect instance as middleware
+  // @see https://vitejs.dev/guide/ssr.html
   if (!isProd && vite) {
     app.use(fromNodeMiddleware(vite.middlewares))
   }
@@ -55,7 +57,7 @@ async function createServer() {
   extendH3App(app)
 
   // Register the catch-all handler which will render our app
-  app.use('*', handler)
+  app.use(handler)
 
   return { app }
 }

@@ -1,5 +1,6 @@
 import { createApp as createClientApp, createSSRApp } from 'vue'
 
+import type { H3Event } from 'h3'
 import { createHead } from '@unhead/vue'
 import { InferSeoMetaPlugin } from '@unhead/addons'
 import { createPinia } from 'pinia'
@@ -13,7 +14,7 @@ const plugins = import.meta.glob<{ default?: VueroPlugin }>('./plugins/*.ts', {
   eager: true,
 })
 
-export async function createApp() {
+export async function createApp(event?: H3Event) {
   const app = __VUERO_SSR_BUILD__
     ? createSSRApp(VueroApp)
     : createClientApp(VueroApp)
@@ -26,6 +27,15 @@ export async function createApp() {
   app.use(head)
 
   const pinia = createPinia()
+
+  // restore pinia state from SSR if any, before loading plugins
+  if (__VUERO_SSR_BUILD__ && !import.meta.env.SSR) {
+    const initialState = window.__vuero__
+    if (typeof initialState?.pinia === 'object') {
+      pinia.state.value = { ...initialState.pinia }
+    }
+  }
+
   app.use(pinia)
 
   const vuero: VueroAppContext = {
@@ -33,6 +43,7 @@ export async function createApp() {
     router,
     head,
     pinia,
+    event,
   }
 
   for (const path in plugins) {
@@ -42,11 +53,12 @@ export async function createApp() {
       await plugin(vuero)
     }
     catch (error) {
-      console.log(`Error while loading plugin "${path}": ${error}`)
+      console.log(`Error while loading plugin "${path}"`)
+      console.error(error)
     }
   }
 
-  // use router after plugin registration, so we can register navigation guards
+  // use router after plugin registration, so we can register navigation guards in plugins
   app.use(vuero.router)
 
   return vuero

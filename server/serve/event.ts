@@ -2,16 +2,14 @@ import { readFileSync } from 'node:fs'
 
 import {
   setResponseStatus,
-  setHeader,
+  setResponseHeader,
   getRequestURL,
   eventHandler,
 } from 'h3'
 import type { ViteDevServer } from 'vite'
-import { minify } from 'html-minifier-terser'
 
 import type { VueroServerRender } from '../types'
 import { isProd, resolve } from '../utils'
-import { options } from '../config'
 
 export function createEventHandler({
   vite,
@@ -33,24 +31,22 @@ export function createEventHandler({
         // always read fresh template in dev
         template = readFileSync(resolve('../index.html'), 'utf-8')
         template = await vite.transformIndexHtml(url.pathname, template)
+
+        // reload the server entrypoint on every request in dev
+        render = (await vite.ssrLoadModule('/src/entry-server.ts')).render
       }
 
       // render the vue app to HTML
-      const html = await render({
+      return await render({
         event,
         manifest,
         template,
       })
-
-      if (typeof html === 'string') {
-        // return html
-        return minify(html, options)
-      }
     }
     catch (error: any) {
       // handle error 500 page
       if (!isProd) {
-        setHeader(event, 'Cache-Control', 'no-cache, no-store, must-revalidate')
+        setResponseHeader(event, 'Cache-Control', 'no-cache, no-store, must-revalidate')
         setResponseStatus(event, 500)
 
         vite?.ssrFixStacktrace(error)
@@ -59,7 +55,7 @@ export function createEventHandler({
         return error.message
       }
       else {
-        setHeader(event, 'Cache-Control', 'no-cache, no-store, must-revalidate')
+        setResponseHeader(event, 'Cache-Control', 'no-cache, no-store, must-revalidate')
         setResponseStatus(event, 500)
 
         console.error('[pageError] ' + error)

@@ -4,11 +4,8 @@ import path from 'node:path'
 import { Socket } from 'node:net'
 import { H3Event } from 'h3'
 
-import { minify } from 'html-minifier-terser'
-
 import type { VueroServerRender } from '../types'
 import { resolve } from '../utils'
-import { options } from '../config'
 
 export async function renderToFile(render: VueroServerRender, {
   url,
@@ -32,11 +29,6 @@ export async function renderToFile(render: VueroServerRender, {
     template,
   })
 
-  if (typeof html !== 'string') {
-    return ''
-  }
-
-  const minified = await minify(html, options)
   const base = url.endsWith('/') ? `${url}` : `${url}/`
   const file = `${base}index.html`
   const filePath = path.join(outStatic, file)
@@ -46,7 +38,24 @@ export async function renderToFile(render: VueroServerRender, {
     fs.mkdirSync(dirname, { recursive: true })
   }
 
-  fs.writeFileSync(resolve(filePath), minified)
+  if (typeof html === 'string') {
+    fs.writeFileSync(resolve(filePath), html)
+  }
+  else {
+    const stream = fs.createWriteStream(resolve(filePath))
+
+    await html.pipeTo(new WritableStream({
+      write(chunk) {
+        stream.write(chunk)
+      },
+      close() {
+        stream.end()
+      },
+      abort() {
+        stream.end()
+      },
+    }))
+  }
 
   return filePath
 }
