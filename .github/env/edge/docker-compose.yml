@@ -1,0 +1,45 @@
+networks:
+  cssninja-services:
+    external: true
+
+services:
+  vuero-edge-demo:
+    image: digisquad/cssninja.vuero-demo:edge
+    networks:
+      - cssninja-services
+    restart: 'unless-stopped'
+    labels:
+      traefik.enable: true
+      traefik.docker.network: 'cssninja-services'
+      traefik.http.routers.vuero-edge-demo.entrypoints: 'http'
+      traefik.http.routers.vuero-edge-demo.rule: 'Host(`vuero-edge.${HOST:-127.0.0.1.nip.io}`)'
+      traefik.http.routers.vuero-edge-demo.middlewares: 'https-redirect@docker'
+      traefik.http.routers.vuero-edge-demo.service: 'vuero-edge-demo-https'
+      traefik.http.middlewares.vuero-edge-demo-middleware.compress: true
+      traefik.http.services.vuero-edge-demo-https.loadbalancer.server.port: 3000
+      traefik.http.routers.vuero-edge-demo-https.rule: 'Host(`vuero-edge.${HOST:-127.0.0.1.nip.io}`)'
+      traefik.http.routers.vuero-edge-demo-https.tls: true
+      traefik.http.routers.vuero-edge-demo-https.entrypoints: 'https'
+      traefik.http.routers.vuero-edge-demo-https.tls.certresolver: 'http'
+      traefik.http.routers.vuero-edge-demo-https.service: 'vuero-edge-demo-https'
+      traefik.http.routers.vuero-edge-demo-https.middlewares: vuero-edge-demo-middleware@docker
+
+  vuero-edge-api-demo:
+    image: digisquad/cssninja.vuero-demo:edge
+    command: 'pnpm preview:json-server'
+    networks:
+      - cssninja-services
+    restart: 'unless-stopped'
+    labels:
+      traefik.enable: true
+      traefik.docker.network: 'cssninja-services'
+      traefik.http.routers.vuero-edge-api.entrypoints: 'http'
+      traefik.http.routers.vuero-edge-api.rule: 'Host(`vuero-edge-api.${HOST:-127.0.0.1.nip.io}`)'
+      traefik.http.routers.vuero-edge-api.middlewares: 'https-redirect@docker'
+      traefik.http.routers.vuero-edge-api.service: 'vuero-edge-api-https'
+      traefik.http.services.vuero-edge-api-https.loadbalancer.server.port: 8080
+      traefik.http.routers.vuero-edge-api-https.rule: 'Host(`vuero-edge-api.${HOST:-127.0.0.1.nip.io}`)'
+      traefik.http.routers.vuero-edge-api-https.tls: true
+      traefik.http.routers.vuero-edge-api-https.entrypoints: 'https'
+      traefik.http.routers.vuero-edge-api-https.tls.certresolver: 'http'
+      traefik.http.routers.vuero-edge-api-https.service: 'vuero-edge-api-https'

@@ -1,4 +1,4 @@
-name: deploy
+name: deploy-edge
 on:
   workflow_dispatch:
   push:
@@ -7,7 +7,7 @@ on:
       - 'cypress/**'
       - 'scripts/**'
     branches:
-      - main
+      - edge
 
 concurrency:
   group: ${{ github.workflow }}
@@ -21,7 +21,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Set up dockertags
         run: |
-          echo "dockertags=digisquad/cssninja.vuero-demo:latest" >> $GITHUB_ENV
+          echo "dockertags=digisquad/cssninja.vuero-demo:edge" >> $GITHUB_ENV
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
@@ -45,8 +45,7 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
           build-args: |
-            VITE_API_BASE_URL=https://vuero-api.cssninja.io
-            GTM_ID=GTM-N9P6H6B
+            VITE_API_BASE_URL=https://vuero-edge-api.cssninja.io
 
   deploy:
     runs-on: ubuntu-latest
@@ -60,7 +59,7 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          target: ${{ secrets.HOST_DIRECTORY }}
+          target: ${{ secrets.HOST_DIRECTORY_EDGE }}
           source: .github/env/main/docker-compose.yml
           strip_components: 3
 
@@ -72,7 +71,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script_stop: true
           script: |
-            cd ${{ secrets.HOST_DIRECTORY }}
+            cd ${{ secrets.HOST_DIRECTORY_EDGE }}
             docker compose pull
             docker compose up -d --force-recreate --remove-orphans
             docker image prune -f -a --filter "until=24h"
