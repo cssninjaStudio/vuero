@@ -73,6 +73,7 @@ export default defineConfig({
       '@shikijs/rehype',
       '@vee-validate/zod',
       '@vueuse/core',
+      '@vueuse/router',
       '@vueform/multiselect',
       '@vueform/slider',
       'billboard.js',

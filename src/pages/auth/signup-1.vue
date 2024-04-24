@@ -57,10 +57,7 @@ useHead({
       </div>
     </div>
 
-    <div
-      id="vuero-signup"
-      class="signup-wrapper"
-    >
+    <div class="signup-wrapper">
       <div
         class="signup-steps"
         :class="[step === 0 && 'is-hidden']"
@@ -125,16 +122,10 @@ useHead({
               :class="[step !== 0 && 'is-hidden']"
             >
               <div class="column is-4 is-offset-1">
-                <h1
-                  id="main-signup-title"
-                  class="title is-3 signup-title"
-                >
+                <h1 class="title is-3 signup-title">
                   Become a Vuero
                 </h1>
-                <h2
-                  id="main-signup-subtitle"
-                  class="subtitle signup-subtitle"
-                >
+                <h2 class="subtitle signup-subtitle">
                   And simply join an unmatched design experience.
                 </h2>
                 <div class="signup-card">
@@ -567,8 +558,8 @@ useHead({
     padding: 0 1rem;
   }
 
-  .dark-mode input + span {
-    transform: scale(0.4);
+  .dark-mode {
+    transform: scale(0.6);
   }
 }
 
@@ -1012,7 +1003,7 @@ useHead({
           border-radius: var(--radius-large);
           transition: all 0.3s; // transition-all test
 
-          .iconify {
+          .iconify, .lnil {
             font-size: 2rem;
             color: var(--muted-grey);
           }

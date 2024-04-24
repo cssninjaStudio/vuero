@@ -74,8 +74,9 @@ useHead({
 
 <template>
   <MinimalLayout>
+    <LandingGrids class="is-contrasted" />
     <!-- Roadmap -->
-    <div class="roadmap-wrapper">
+    <div class="roadmap-wrapper is-relative">
       <!--Top header-->
       <div class="roadmap-top">
         <RouterLink

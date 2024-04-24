@@ -7,11 +7,7 @@ wizard.setStep({
 </script>
 
 <template>
-  <div
-    id="wizard-step-7"
-    class="inner-wrapper is-active"
-    data-step-title="Finish"
-  >
+  <div class="inner-wrapper is-active" data-step-title="Finish">
     <div class="step-content">
       <div class="step-title">
         <h2 class="dark-inverted">

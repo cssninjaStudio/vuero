@@ -49,11 +49,7 @@ watchEffect(async () => {
 </script>
 
 <template>
-  <div
-    id="wizard-step-6"
-    class="inner-wrapper is-active"
-    data-step-title="Preview"
-  >
+  <div class="inner-wrapper is-active" data-step-title="Preview">
     <div class="step-content">
       <div class="step-title">
         <h2 class="dark-inverted">

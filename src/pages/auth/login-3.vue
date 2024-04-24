@@ -34,6 +34,7 @@ useHead({
 
 <template>
   <div class="auth-wrapper-inner is-single">
+    <LandingGrids />
     <!--Fake navigation-->
     <div class="auth-nav">
       <div class="left" />
@@ -54,7 +55,7 @@ useHead({
     </div>
 
     <!--Single Centered Form-->
-    <div class="single-form-wrap">
+    <div class="single-form-wrap is-relative">
       <div class="inner-wrap">
         <!--Form Title-->
         <div class="auth-head">

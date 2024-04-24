@@ -15,10 +15,7 @@ const validateStep = (relatedTo: WizardRelatedTo) => {
 </script>
 
 <template>
-  <div
-    id="wizard-step-0"
-    class="inner-wrapper is-active"
-  >
+  <div class="inner-wrapper is-active">
     <div class="step-content">
       <div class="step-title">
         <h2 class="dark-inverted">

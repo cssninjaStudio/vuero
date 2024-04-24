@@ -120,10 +120,7 @@ useHead({
                     novalidate
                     @submit="onSignup"
                   >
-                    <div
-                      id="signin-form"
-                      class="login-form"
-                    >
+                    <div class="login-form">
                       <!-- Input -->
                       <VField
                         id="name"

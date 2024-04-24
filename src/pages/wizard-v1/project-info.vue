@@ -37,10 +37,7 @@ const onRemoveFile = (error: any, fileInfo: any) => {
 </script>
 
 <template>
-  <div
-    id="wizard-step-1"
-    class="inner-wrapper is-active"
-  >
+  <div class="inner-wrapper is-active">
     <div class="step-content">
       <div class="step-title">
         <h2 class="dark-inverted">

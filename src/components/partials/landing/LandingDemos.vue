@@ -193,59 +193,51 @@ const searchLabel = computed(() => {
           :key="index"
           class="column is-4 has-text-centered"
         >
-          <figure
-            class="vuero-demo-wrapper loaded"
-            tabindex="0"
-            role="button"
-            @keydown.enter.prevent="
-              (e) =>
-                (
-                  (e.target as HTMLElement).querySelector('a[href]') as HTMLAnchorElement
-                )?.click()
-            "
+          <RouterLink
+            :to="item.route.path"
+            class="demo-link"
           >
-            <span
-              v-if="item.new"
-              class="new-tag"
-            >New</span>
-            <img
-              class="light-image-block-l"
-              :src="item.screenshot.light"
-              alt=""
-              loading="lazy"
-            >
-            <img
-              class="dark-image-block-l"
-              :src="item.screenshot.dark"
-              alt=""
-              loading="lazy"
-            >
-            <div class="circle-overlay" />
-            <div class="demo-info has-text-centered">
-              <div class="wrapper">
-                <div class="demo-title">
-                  <span>{{ item.category }}</span>
-                  <span>{{ item.name }}</span>
-                </div>
-                <div class="demo-link">
-                  <RouterLink
-                    :to="item.route.path"
-                    tabindex="-1"
-                  >
-                    Go to demo
-                    <VIcon
-                      class="rtl-hidden"
-                      icon="lucide:arrow-right"
-                    />
-                    <VIcon
-                      class="ltr-hidden"
-                      icon="lucide:arrow-left"
-                    />
-                  </RouterLink>
+            <figure class="vuero-demo-wrapper loaded">
+              <span
+                v-if="item.new"
+                class="new-tag"
+              >New</span>
+              <img
+                class="light-image-block-l"
+                :src="item.screenshot.light"
+                alt=""
+                loading="lazy"
+              >
+              <img
+                class="dark-image-block-l"
+                :src="item.screenshot.dark"
+                alt=""
+                loading="lazy"
+              >
+              <div class="circle-overlay" />
+              <div class="demo-info has-text-centered">
+                <div class="wrapper">
+                  <div class="demo-title">
+                    <span>{{ item.category }}</span>
+                    <span>{{ item.name }}</span>
+                  </div>
+                  <div class="demo-link">
+                    <a role="button">
+                      Go to demo
+                      <VIcon
+                        class="rtl-hidden"
+                        icon="lucide:arrow-right"
+                      />
+                      <VIcon
+                        class="ltr-hidden"
+                        icon="lucide:arrow-left"
+                      />
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          </figure>
+            </figure>
+          </RouterLink>
         </div>
       </div>
 
@@ -293,52 +285,51 @@ const searchLabel = computed(() => {
           :key="index"
           class="column is-4 has-text-centered"
         >
-          <figure
-            class="vuero-demo-wrapper loaded"
-            tabindex="0"
+          <RouterLink
+            :to="item.route.path"
+            class="demo-link"
           >
-            <span
-              v-if="item.new"
-              class="new-tag"
-            >New</span>
-            <img
-              class="light-image-block-l"
-              :src="item.screenshot.light"
-              alt=""
-              loading="lazy"
-            >
-            <img
-              class="dark-image-block-l"
-              :src="item.screenshot.dark"
-              alt=""
-              loading="lazy"
-            >
-            <div class="circle-overlay" />
-            <div class="demo-info has-text-centered">
-              <div class="wrapper">
-                <div class="demo-title">
-                  <span>{{ item.category }}</span>
-                  <span>{{ item.name }}</span>
-                </div>
-                <div class="demo-link">
-                  <RouterLink
-                    :to="item.route.path"
-                    tabindex="-1"
-                  >
-                    Go to demo
-                    <VIcon
-                      class="rtl-hidden"
-                      icon="lucide:arrow-right"
-                    />
-                    <VIcon
-                      class="ltr-hidden"
-                      icon="lucide:arrow-left"
-                    />
-                  </RouterLink>
+            <figure class="vuero-demo-wrapper loaded">
+              <span
+                v-if="item.new"
+                class="new-tag"
+              >New</span>
+              <img
+                class="light-image-block-l"
+                :src="item.screenshot.light"
+                alt=""
+                loading="lazy"
+              >
+              <img
+                class="dark-image-block-l"
+                :src="item.screenshot.dark"
+                alt=""
+                loading="lazy"
+              >
+              <div class="circle-overlay" />
+              <div class="demo-info has-text-centered">
+                <div class="wrapper">
+                  <div class="demo-title">
+                    <span>{{ item.category }}</span>
+                    <span>{{ item.name }}</span>
+                  </div>
+                  <div class="demo-link">
+                    <a role="button">
+                      Go to demo
+                      <VIcon
+                        class="rtl-hidden"
+                        icon="lucide:arrow-right"
+                      />
+                      <VIcon
+                        class="ltr-hidden"
+                        icon="lucide:arrow-left"
+                      />
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          </figure>
+            </figure>
+          </RouterLink>
         </div>
       </div>
 
@@ -386,52 +377,51 @@ const searchLabel = computed(() => {
           :key="index"
           class="column is-4 has-text-centered"
         >
-          <figure
-            class="vuero-demo-wrapper loaded"
-            tabindex="0"
+          <RouterLink
+            :to="item.route.path"
+            class="demo-link"
           >
-            <span
-              v-if="item.new"
-              class="new-tag"
-            >New</span>
-            <img
-              class="light-image-block-l"
-              :src="item.screenshot.light"
-              alt=""
-              loading="lazy"
-            >
-            <img
-              class="dark-image-block-l"
-              :src="item.screenshot.dark"
-              alt=""
-              loading="lazy"
-            >
-            <div class="circle-overlay" />
-            <div class="demo-info has-text-centered">
-              <div class="wrapper">
-                <div class="demo-title">
-                  <span>{{ item.category }}</span>
-                  <span>{{ item.name }}</span>
-                </div>
-                <div class="demo-link">
-                  <RouterLink
-                    :to="item.route.path"
-                    tabindex="-1"
-                  >
-                    Go to demo
-                    <VIcon
-                      class="rtl-hidden"
-                      icon="lucide:arrow-right"
-                    />
-                    <VIcon
-                      class="ltr-hidden"
-                      icon="lucide:arrow-left"
-                    />
-                  </RouterLink>
+            <figure class="vuero-demo-wrapper loaded">
+              <span
+                v-if="item.new"
+                class="new-tag"
+              >New</span>
+              <img
+                class="light-image-block-l"
+                :src="item.screenshot.light"
+                alt=""
+                loading="lazy"
+              >
+              <img
+                class="dark-image-block-l"
+                :src="item.screenshot.dark"
+                alt=""
+                loading="lazy"
+              >
+              <div class="circle-overlay" />
+              <div class="demo-info has-text-centered">
+                <div class="wrapper">
+                  <div class="demo-title">
+                    <span>{{ item.category }}</span>
+                    <span>{{ item.name }}</span>
+                  </div>
+                  <div class="demo-link">
+                    <a role="button">
+                      Go to demo
+                      <VIcon
+                        class="rtl-hidden"
+                        icon="lucide:arrow-right"
+                      />
+                      <VIcon
+                        class="ltr-hidden"
+                        icon="lucide:arrow-left"
+                      />
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          </figure>
+            </figure>
+          </RouterLink>
         </div>
       </div>
 
@@ -479,52 +469,51 @@ const searchLabel = computed(() => {
           :key="index"
           class="column is-4 has-text-centered"
         >
-          <figure
-            class="vuero-demo-wrapper loaded"
-            tabindex="0"
+          <RouterLink
+            :to="item.route.path"
+            class="demo-link"
           >
-            <span
-              v-if="item.new"
-              class="new-tag"
-            >New</span>
-            <img
-              class="light-image-block-l"
-              :src="item.screenshot.light"
-              alt=""
-              loading="lazy"
-            >
-            <img
-              class="dark-image-block-l"
-              :src="item.screenshot.dark"
-              alt=""
-              loading="lazy"
-            >
-            <div class="circle-overlay" />
-            <div class="demo-info has-text-centered">
-              <div class="wrapper">
-                <div class="demo-title">
-                  <span>{{ item.category }}</span>
-                  <span>{{ item.name }}</span>
-                </div>
-                <div class="demo-link">
-                  <RouterLink
-                    :to="item.route.path"
-                    tabindex="-1"
-                  >
-                    Go to demo
-                    <VIcon
-                      class="rtl-hidden"
-                      icon="lucide:arrow-right"
-                    />
-                    <VIcon
-                      class="ltr-hidden"
-                      icon="lucide:arrow-left"
-                    />
-                  </RouterLink>
+            <figure class="vuero-demo-wrapper loaded">
+              <span
+                v-if="item.new"
+                class="new-tag"
+              >New</span>
+              <img
+                class="light-image-block-l"
+                :src="item.screenshot.light"
+                alt=""
+                loading="lazy"
+              >
+              <img
+                class="dark-image-block-l"
+                :src="item.screenshot.dark"
+                alt=""
+                loading="lazy"
+              >
+              <div class="circle-overlay" />
+              <div class="demo-info has-text-centered">
+                <div class="wrapper">
+                  <div class="demo-title">
+                    <span>{{ item.category }}</span>
+                    <span>{{ item.name }}</span>
+                  </div>
+                  <div class="demo-link">
+                    <a role="button">
+                      Go to demo
+                      <VIcon
+                        class="rtl-hidden"
+                        icon="lucide:arrow-right"
+                      />
+                      <VIcon
+                        class="ltr-hidden"
+                        icon="lucide:arrow-left"
+                      />
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          </figure>
+            </figure>
+          </RouterLink>
         </div>
       </div>
 
@@ -572,52 +561,51 @@ const searchLabel = computed(() => {
           :key="index"
           class="column is-4 has-text-centered"
         >
-          <figure
-            class="vuero-demo-wrapper loaded"
-            tabindex="0"
+          <RouterLink
+            :to="item.route.path"
+            class="demo-link"
           >
-            <span
-              v-if="item.new"
-              class="new-tag"
-            >New</span>
-            <img
-              class="light-image-block-l"
-              :src="item.screenshot.light"
-              alt=""
-              loading="lazy"
-            >
-            <img
-              class="dark-image-block-l"
-              :src="item.screenshot.dark"
-              alt=""
-              loading="lazy"
-            >
-            <div class="circle-overlay" />
-            <div class="demo-info has-text-centered">
-              <div class="wrapper">
-                <div class="demo-title">
-                  <span>{{ item.category }}</span>
-                  <span>{{ item.name }}</span>
-                </div>
-                <div class="demo-link">
-                  <RouterLink
-                    :to="item.route.path"
-                    tabindex="-1"
-                  >
-                    Go to demo
-                    <VIcon
-                      class="rtl-hidden"
-                      icon="lucide:arrow-right"
-                    />
-                    <VIcon
-                      class="ltr-hidden"
-                      icon="lucide:arrow-left"
-                    />
-                  </RouterLink>
+            <figure class="vuero-demo-wrapper loaded">
+              <span
+                v-if="item.new"
+                class="new-tag"
+              >New</span>
+              <img
+                class="light-image-block-l"
+                :src="item.screenshot.light"
+                alt=""
+                loading="lazy"
+              >
+              <img
+                class="dark-image-block-l"
+                :src="item.screenshot.dark"
+                alt=""
+                loading="lazy"
+              >
+              <div class="circle-overlay" />
+              <div class="demo-info has-text-centered">
+                <div class="wrapper">
+                  <div class="demo-title">
+                    <span>{{ item.category }}</span>
+                    <span>{{ item.name }}</span>
+                  </div>
+                  <div class="demo-link">
+                    <a role="button">
+                      Go to demo
+                      <VIcon
+                        class="rtl-hidden"
+                        icon="lucide:arrow-right"
+                      />
+                      <VIcon
+                        class="ltr-hidden"
+                        icon="lucide:arrow-left"
+                      />
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          </figure>
+            </figure>
+          </RouterLink>
         </div>
       </div>
 
@@ -693,32 +681,6 @@ const searchLabel = computed(() => {
   border-radius: 10px;
   border: 1px solid var(--fade-grey-dark-5);
   min-height: 205px;
-
-  &:focus-visible {
-    outline-offset: var(--accessibility-focus-outline-offset);
-    outline-width: var(--accessibility-focus-outline-width);
-    outline-color: var(--accessibility-focus-outline-color);
-    outline-style: var(--accessibility-focus-outline-style);
-  }
-
-  &:hover {
-    .circle-overlay {
-      transform: scale(35);
-    }
-
-    .demo-title {
-      opacity: 1;
-      transform: translateY(0);
-      transition-delay: 0 !important;
-    }
-
-    .demo-link {
-      color: var(--white);
-      opacity: 1;
-      transform: translateY(0);
-      transition-delay: 0 !important;
-    }
-  }
 
   &::after {
     // @extend %loader;
@@ -839,6 +801,38 @@ const searchLabel = computed(() => {
       &:hover .iconify {
         opacity: 1;
         transform: translateX(calc(var(--transform-direction) * 5px));
+      }
+    }
+  }
+}
+
+.demo-link {
+  &:focus-visible {
+    .vuero-demo-wrapper {
+      outline-offset: var(--accessibility-focus-outline-offset);
+      outline-width: var(--accessibility-focus-outline-width);
+      outline-color: var(--accessibility-focus-outline-color);
+      outline-style: var(--accessibility-focus-outline-style);
+    }
+  }
+
+  &:hover, &:focus {
+    .vuero-demo-wrapper {
+      .circle-overlay {
+        transform: scale(35);
+      }
+
+      .demo-title {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: 0 !important;
+      }
+
+      .demo-link {
+        color: var(--white);
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: 0 !important;
       }
     }
   }

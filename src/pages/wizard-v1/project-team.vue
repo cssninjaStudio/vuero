@@ -82,10 +82,7 @@ watchEffect(() => {
 </script>
 
 <template>
-  <div
-    id="wizard-step-4"
-    class="inner-wrapper is-active"
-  >
+  <div class="inner-wrapper is-active">
     <div class="step-content">
       <div class="step-title">
         <h2 class="dark-inverted">
