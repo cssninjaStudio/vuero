@@ -5,7 +5,7 @@ const isLoading = ref(false)
 const router = useRouter()
 const route = useRoute()
 const notyf = useNotyf()
-const userSession = useUserSession()
+const token = useUserToken()
 const redirect = route.query.redirect as string
 
 const handleLogin = async () => {
@@ -13,7 +13,8 @@ const handleLogin = async () => {
     isLoading.value = true
 
     await sleep(2000)
-    userSession.setToken('logged-in')
+    console.log('set token logged-in')
+    token.value = 'logged-in'
 
     notyf.dismissAll()
     notyf.success('Welcome back, Erik Kovalsky')

@@ -1,4 +1,4 @@
-import { definePlugin } from '/@src/app'
+import { definePlugin } from '/@src/utils/plugins'
 
 /**
  * Here we are setting up two router navigation guards
@@ -21,12 +21,14 @@ import { definePlugin } from '/@src/app'
  *  // HTML content
  * </template>
  */
-export default definePlugin(async ({ router, pinia }) => {
+export default definePlugin(async ({ router, pinia, event }) => {
   const userSession = useUserSession(pinia)
-  const $fetch = useApiFetch()
+  const token = useUserToken(event)
+  const $fetch = useApiFetch(event)
 
-  // 1. Check token validity at app startup
-  if (userSession.isLoggedIn) {
+  // 1. Load user profile if token is present.
+  // When using SSR, it should be hydrated from the server
+  if (token.value && !userSession.user) {
     try {
       // Do api request call to retreive user profile.
       // Note that the api is provided with json-server
@@ -34,15 +36,15 @@ export default definePlugin(async ({ router, pinia }) => {
       userSession.setUser(user)
     }
     catch (err) {
-      // delete stored token if it fails
-      userSession.logoutUser()
+      // Delete stored token if it fails
+      token.value = undefined
     }
   }
 
+  // 2. If the page requires auth, check if user is logged in
+  // if not, redirect to login page.
   router.beforeEach((to) => {
-    if (to.meta.requiresAuth && !userSession.isLoggedIn) {
-      // 2. If the page requires auth, check if user is logged in
-      // if not, redirect to login page.
+    if (to.meta.requiresAuth && !token.value) {
       return {
         name: '/auth/login',
         // save the location we were at to come back later

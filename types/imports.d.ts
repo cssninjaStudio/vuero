@@ -291,6 +291,7 @@ declare global {
   const useUrlSearchParams: typeof import('@vueuse/core')['useUrlSearchParams']
   const useUserMedia: typeof import('@vueuse/core')['useUserMedia']
   const useUserSession: typeof import('../src/stores/user-session')['useUserSession']
+  const useUserToken: typeof import('../src/composables/user-token')['useUserToken']
   const useVFieldContext: typeof import('../src/composables/field-context')['useVFieldContext']
   const useVFieldSymbolContext: typeof import('../src/composables/field-context')['useVFieldSymbolContext']
   const useVModel: typeof import('@vueuse/core')['useVModel']
