@@ -75,6 +75,7 @@ const props = defineProps<{
         .iconify {
           height: 18px;
           width: 18px;
+          font-size: 18px;
         }
 
         .iconify {
@@ -121,6 +122,7 @@ const props = defineProps<{
         .iconify {
           height: 16px;
           width: 16px;
+          font-size: 16px;
           stroke-width: 3px;
         }
       }

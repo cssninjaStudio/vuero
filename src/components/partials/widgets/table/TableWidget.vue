@@ -92,24 +92,6 @@ const props = withDefaults(
             }
           }
 
-          // .rating-wrap {
-          //   text-align: inset-inline-end;
-
-          //   span {
-          //     color: var(--light-text);
-          //   }
-
-          //   .rating {
-          //     .iconify {
-          //       color: var(--widget-grey-dark-8);
-
-          //       &.selected {
-          //         color: var(--yellow) !important;
-          //       }
-          //     }
-          //   }
-          // }
-
           .tag-wrap {
             text-align: inset-inline-end;
           }

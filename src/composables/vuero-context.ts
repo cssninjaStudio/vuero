@@ -9,17 +9,12 @@ export const useVueroContext = ({
   const context = inject(injectionKey)
 
   if (!context) {
-    throw new Error('useVueroContext() is called without provider.')
+    throw new Error('useVueroContext() was called without having vuero-context plugin installed.')
   }
 
   if (pageTitle) {
-    const initialValue = context.pageTitle.value
-    watchEffect((cleanup) => {
+    watchEffect(() => {
       context.pageTitle.value = toValue(pageTitle)
-
-      cleanup(() => {
-        context.pageTitle.value = initialValue
-      })
     })
   }
 

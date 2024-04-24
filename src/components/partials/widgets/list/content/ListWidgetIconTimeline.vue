@@ -153,6 +153,7 @@ const { onceError } = useImageError()
         .iconify {
           height: 16px;
           width: 16px;
+          font-size: 16px;
           stroke-width: 1.6px;
         }
       }

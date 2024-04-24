@@ -95,6 +95,7 @@ const props = withDefaults(
     .iconify {
       height: 16px;
       width: 16px;
+      font-size: 16px;
       stroke-width: 3px;
     }
   }

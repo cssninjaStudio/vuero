@@ -460,22 +460,22 @@ select {
       justify-content: center;
       align-items: center;
 
-      .iconify {
+      &.iconify {
         font-size: 18px;
         color: var(--placeholder);
         transition: all 0.3s; // transition-all test
       }
 
-      .fas,
-      .far,
-      .fal,
-      .fab {
+      &.fas,
+      &.far,
+      &.fal,
+      &.fab {
         color: var(--placeholder);
         transition: all 0.3s; // transition-all test
       }
 
-      .lnil,
-      .lnir {
+      &.lnil,
+      &.lnir {
         font-size: 1.2rem;
         color: var(--placeholder);
         transition: all 0.3s; // transition-all test
@@ -489,19 +489,19 @@ select {
 
       &:focus {
         + .form-icon {
-          .iconify {
+          &.iconify {
             color: var(--primary);
           }
 
-          .fas,
-          .far,
-          .fal,
-          .fab {
+          &.fas,
+          &.far,
+          &.fal,
+          &.fab {
             color: var(--primary);
           }
 
-          .lnil,
-          .lnir {
+          &.lnil,
+          &.lnir {
             color: var(--primary);
           }
         }
@@ -521,8 +521,8 @@ select {
       .form-icon {
         opacity: 1 !important;
 
-        .iconify,
-        .form-icon .iconify {
+        &.iconify,
+        .form-icon.iconify {
           color: var(--success) !important;
         }
       }
@@ -539,8 +539,8 @@ select {
       .form-icon {
         opacity: 1 !important;
 
-        .iconify,
-        .form-icon .iconify {
+        &.iconify,
+        .form-icon.iconify {
           color: var(--danger) !important;
         }
       }
@@ -727,16 +727,16 @@ select {
       .input {
         &:focus {
           ~ .form-icon {
-            .iconify {
+            &.iconify {
               color: var(--primary);
             }
 
-            .fas,
-            .fal,
-            .far,
-            .fab,
-            .lnir,
-            .lnil {
+            &.fas,
+            &.fal,
+            &.far,
+            &.fab,
+            &.lnir,
+            &.lnil {
               color: var(--primary);
             }
           }
@@ -744,16 +744,16 @@ select {
       }
 
       .form-icon {
-        .iconify {
+        &.iconify {
           color: var(--light-text-dark-5);
         }
 
-        .fas,
-        .fal,
-        .far,
-        .fab,
-        .lnir,
-        .lnil {
+        &.fas,
+        &.fal,
+        &.far,
+        &.fab,
+        &.lnir,
+        &.lnil {
           color: var(--light-text-dark-5);
         }
       }

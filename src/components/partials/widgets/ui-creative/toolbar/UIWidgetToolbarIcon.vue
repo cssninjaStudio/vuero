@@ -74,7 +74,7 @@ const props = withDefaults(
           height: 10px;
           width: 10px;
           border-radius: var(--radius-rounded);
-          background: var(--secondary);
+          background: var(--primary);
           border: 1.8px solid var(--white);
         }
       }

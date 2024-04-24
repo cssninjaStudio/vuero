@@ -16,7 +16,7 @@ export function useTrendWidgetChart() {
         show: false,
       },
     },
-    colors: [themeColors.accent, themeColors.purple, themeColors.orange],
+    colors: [themeColors.primary, themeColors.purple, themeColors.orange],
     grid: {
       show: false,
       padding: {

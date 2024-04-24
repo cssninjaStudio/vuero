@@ -189,12 +189,12 @@ const isScrolling = computed(() => {
                   color: var(--primary-light-2);
                 }
 
-                &:focus ~ .form-icon .iconify {
+                &:focus ~ .form-icon.iconify {
                   color: var(--smoke-white);
                 }
               }
 
-              .form-icon .iconify {
+              .form-icon.iconify {
                 color: var(--primary-light-6);
               }
             }
