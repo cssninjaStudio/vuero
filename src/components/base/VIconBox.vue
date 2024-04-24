@@ -39,7 +39,7 @@ const props = withDefaults(defineProps<VIconProps>(), {
   </div>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 .icons {
   display: flex;
   align-items: flex-end;
@@ -91,7 +91,7 @@ const props = withDefaults(defineProps<VIconProps>(), {
       font-size: 1.2rem;
     }
 
-    .iconify {
+    :deep(.iconify) {
       font-size: 16px;
     }
   }
@@ -105,21 +105,21 @@ const props = withDefaults(defineProps<VIconProps>(), {
       border-width: 1.6px;
     }
 
-    .fas,
-    .fab,
-    .far,
-    .fal {
+    :deep(.fas),
+    :deep(.fab),
+    :deep(.far),
+    :deep(.fal) {
       font-size: 1.5rem;
     }
 
-    .lnil,
-    .lnir,
-    .fas,
-    .fab {
+    :deep(.lnil),
+    :deep(.lnir),
+    :deep(.fas),
+    :deep(.fab) {
       font-size: 1.7rem;
     }
 
-    .iconify {
+    :deep(.iconify) {
       font-size: 25px;
     }
   }
@@ -133,21 +133,21 @@ const props = withDefaults(defineProps<VIconProps>(), {
       border-width: 2px;
     }
 
-    .fas,
-    .fab,
-    .far,
-    .fal {
+    :deep(.fas),
+    :deep(.fab),
+    :deep(.far),
+    :deep(.fal) {
       font-size: 2rem;
     }
 
-    .lnil,
-    .lnir,
-    .fas,
-    .fab {
+    :deep(.lnil),
+    :deep(.lnir),
+    :deep(.fas),
+    :deep(.fab) {
       font-size: 2.2rem;
     }
 
-    .iconify {
+    :deep(.iconify) {
       font-size: 34px;
     }
   }
@@ -161,23 +161,24 @@ const props = withDefaults(defineProps<VIconProps>(), {
       border-width: 2px;
     }
 
-    .fas,
-    .fab,
-    .far,
-    .fal {
+    :deep(.fas),
+    :deep(.fab),
+    :deep(.far),
+    :deep(.fal) {
       font-size: 2.4rem;
     }
 
-    .lnil,
-    .lnir,
-    .fas,
-    .fab {
+    :deep(.lnil),
+    :deep(.lnir),
+    :deep(.fas),
+    :deep(.fab) {
       font-size: 2.6rem;
     }
 
-    .iconify, .fas, .lnil, .lnir, .fab {
+    :deep(.iconify) {
       height: 40px;
       width: 40px;
+      font-size: 40px;
       stroke-width: 3px;
     }
   }
@@ -191,23 +192,24 @@ const props = withDefaults(defineProps<VIconProps>(), {
       border-width: 2px;
     }
 
-    .fas,
-    .fab,
-    .far,
-    .fal {
+    :deep(.fas),
+    :deep(.fab),
+    :deep(.far),
+    :deep(.fal) {
       font-size: 3rem;
     }
 
-    .lnil,
-    .lnir,
-    .fas,
-    .fab {
+    :deep(.lnil),
+    :deep(.lnir),
+    :deep(.fas),
+    :deep(.fab) {
       font-size: 3.4rem;
     }
 
-    .iconify, .fas, .lnil, .lnir, .fab {
+    :deep(.iconify) {
       height: 50px;
       width: 50px;
+      font-size: 50px;
       stroke-width: 3px;
     }
   }
@@ -223,11 +225,11 @@ const props = withDefaults(defineProps<VIconProps>(), {
       border-color: var(--primary);
     }
 
-    .iconify, .fas, .lnil, .lnir, .fab {
+    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
       color: var(--primary);
     }
 
-    .iconify, .fas, .lnil, .lnir, .fab {
+    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
       color: var(--primary);
     }
   }
@@ -239,11 +241,11 @@ const props = withDefaults(defineProps<VIconProps>(), {
       border-color: var(--secondary);
     }
 
-    .iconify, .fas, .lnil, .lnir, .fab {
+    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
       color: var(--secondary);
     }
 
-    .iconify, .fas, .lnil, .lnir, .fab {
+    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
       color: var(--secondary);
     }
   }
@@ -255,11 +257,11 @@ const props = withDefaults(defineProps<VIconProps>(), {
       border-color: var(--primary);
     }
 
-    .iconify, .fas, .lnil, .lnir, .fab {
+    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
       color: var(--primary);
     }
 
-    .iconify, .fas, .lnil, .lnir, .fab {
+    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
       color: var(--primary);
     }
   }
@@ -271,11 +273,11 @@ const props = withDefaults(defineProps<VIconProps>(), {
       border-color: var(--success);
     }
 
-    .iconify, .fas, .lnil, .lnir, .fab {
+    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
       color: var(--success);
     }
 
-    .iconify, .fas, .lnil, .lnir, .fab {
+    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
       color: var(--success);
     }
   }
@@ -287,11 +289,11 @@ const props = withDefaults(defineProps<VIconProps>(), {
       border-color: var(--info);
     }
 
-    .iconify, .fas, .lnil, .lnir, .fab {
+    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
       color: var(--info);
     }
 
-    .iconify, .fas, .lnil, .lnir, .fab {
+    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
       color: var(--info);
     }
   }
@@ -303,11 +305,11 @@ const props = withDefaults(defineProps<VIconProps>(), {
       border-color: var(--warning);
     }
 
-    .iconify, .fas, .lnil, .lnir, .fab {
+    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
       color: var(--warning);
     }
 
-    .iconify, .fas, .lnil, .lnir, .fab {
+    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
       color: var(--warning);
     }
   }
@@ -319,11 +321,11 @@ const props = withDefaults(defineProps<VIconProps>(), {
       border-color: var(--danger);
     }
 
-    .iconify, .fas, .lnil, .lnir, .fab {
+    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
       color: var(--danger);
     }
 
-    .iconify, .fas, .lnil, .lnir, .fab {
+    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
       color: var(--danger);
     }
   }
@@ -335,11 +337,11 @@ const props = withDefaults(defineProps<VIconProps>(), {
       border-color: var(--purple);
     }
 
-    .iconify, .fas, .lnil, .lnir, .fab {
+    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
       color: var(--purple);
     }
 
-    .iconify, .fas, .lnil, .lnir, .fab {
+    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
       color: var(--purple);
     }
   }
@@ -351,11 +353,11 @@ const props = withDefaults(defineProps<VIconProps>(), {
       border-color: var(--blue);
     }
 
-    .iconify, .fas, .lnil, .lnir, .fab {
+    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
       color: var(--blue);
     }
 
-    .iconify, .fas, .lnil, .lnir, .fab {
+    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
       color: var(--blue);
     }
   }
@@ -367,11 +369,11 @@ const props = withDefaults(defineProps<VIconProps>(), {
       border-color: var(--yellow);
     }
 
-    .iconify, .fas, .lnil, .lnir, .fab {
+    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
       color: var(--yellow);
     }
 
-    .iconify, .fas, .lnil, .lnir, .fab {
+    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
       color: var(--yellow);
     }
   }
@@ -383,11 +385,11 @@ const props = withDefaults(defineProps<VIconProps>(), {
       border-color: var(--orange);
     }
 
-    .iconify, .fas, .lnil, .lnir, .fab {
+    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
       color: var(--orange);
     }
 
-    .iconify, .fas, .lnil, .lnir, .fab {
+    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
       color: var(--orange);
     }
   }
@@ -399,11 +401,11 @@ const props = withDefaults(defineProps<VIconProps>(), {
       border-color: var(--green);
     }
 
-    .iconify, .fas, .lnil, .lnir, .fab {
+    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
       color: var(--green);
     }
 
-    .iconify, .fas, .lnil, .lnir, .fab {
+    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
       color: var(--green);
     }
   }
@@ -415,11 +417,11 @@ const props = withDefaults(defineProps<VIconProps>(), {
       border-color: var(--red);
     }
 
-    .iconify, .fas, .lnil, .lnir, .fab {
+    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
       color: var(--red);
     }
 
-    .iconify, .fas, .lnil, .lnir, .fab {
+    :deep(.iconify, .fas, .lnil, .lnir, .fab) {
       color: var(--red);
     }
   }
@@ -428,25 +430,25 @@ const props = withDefaults(defineProps<VIconProps>(), {
     border: 1px solid var(--muted-grey);
   }
 
-  .fas,
-  .fab,
-  .far,
-  .fal {
+  :deep(.fas),
+  :deep(.fab),
+  :deep(.far),
+  :deep(.fal) {
     font-size: 1.2rem;
     color: var(--muted-grey);
     transition: color 0.3s;
   }
 
-  .lnil,
-  .lnir,
-  .fas,
-  .fab {
+  :deep(.lnil),
+  :deep(.lnir),
+  :deep(.fas),
+  :deep(.fab) {
     font-size: 1.4rem;
     color: var(--muted-grey);
     transition: color 0.3s;
   }
 
-  .iconify {
+  :deep(.iconify) {
     font-size: 20px;
   }
 }
@@ -462,14 +464,14 @@ const props = withDefaults(defineProps<VIconProps>(), {
         border-color: var(--primary);
       }
 
-      .lnil,
-      .lnir,
-      .fas,
-      .fab {
+      :deep(.lnil),
+      :deep(.lnir),
+      :deep(.fas),
+      :deep(.fab) {
         color: var(--white);
       }
 
-      .iconify, .fas, .lnil, .lnir, .fab {
+      :deep(.iconify, .fas, .lnil, .lnir, .fab) {
         color: var(--smoke-white);
       }
     }
@@ -481,14 +483,14 @@ const props = withDefaults(defineProps<VIconProps>(), {
         border-color: var(--primary);
       }
 
-      .lnil,
-      .lnir,
-      .fas,
-      .fab {
+      :deep(.lnil),
+      :deep(.lnir),
+      :deep(.fas),
+      :deep(.fab) {
         color: var(--white);
       }
 
-      .iconify, .fas, .lnil, .lnir, .fab {
+      :deep(.iconify, .fas, .lnil, .lnir, .fab) {
         color: var(--smoke-white);
       }
     }
@@ -500,14 +502,14 @@ const props = withDefaults(defineProps<VIconProps>(), {
         border-color: var(--success);
       }
 
-      .lnil,
-      .lnir,
-      .fas,
-      .fab {
+      :deep(.lnil),
+      :deep(.lnir),
+      :deep(.fas),
+      :deep(.fab) {
         color: var(--white);
       }
 
-      .iconify, .fas, .lnil, .lnir, .fab {
+      :deep(.iconify, .fas, .lnil, .lnir, .fab) {
         color: var(--smoke-white);
       }
     }
@@ -519,14 +521,14 @@ const props = withDefaults(defineProps<VIconProps>(), {
         border-color: var(--info);
       }
 
-      .lnil,
-      .lnir,
-      .fas,
-      .fab {
+      :deep(.lnil),
+      :deep(.lnir),
+      :deep(.fas),
+      :deep(.fab) {
         color: var(--white);
       }
 
-      .iconify, .fas, .lnil, .lnir, .fab {
+      :deep(.iconify, .fas, .lnil, .lnir, .fab) {
         color: var(--smoke-white);
       }
     }
@@ -538,14 +540,14 @@ const props = withDefaults(defineProps<VIconProps>(), {
         border-color: var(--warning);
       }
 
-      .lnil,
-      .lnir,
-      .fas,
-      .fab {
+      :deep(.lnil),
+      :deep(.lnir),
+      :deep(.fas),
+      :deep(.fab) {
         color: var(--white);
       }
 
-      .iconify, .fas, .lnil, .lnir, .fab {
+      :deep(.iconify, .fas, .lnil, .lnir, .fab) {
         color: var(--smoke-white);
       }
     }
@@ -557,14 +559,14 @@ const props = withDefaults(defineProps<VIconProps>(), {
         border-color: var(--danger);
       }
 
-      .lnil,
-      .lnir,
-      .fas,
-      .fab {
+      :deep(.lnil),
+      :deep(.lnir),
+      :deep(.fas),
+      :deep(.fab) {
         color: var(--white);
       }
 
-      .iconify, .fas, .lnil, .lnir, .fab {
+      :deep(.iconify, .fas, .lnil, .lnir, .fab) {
         color: var(--smoke-white);
       }
     }
@@ -576,14 +578,14 @@ const props = withDefaults(defineProps<VIconProps>(), {
         border-color: var(--purple);
       }
 
-      .lnil,
-      .lnir,
-      .fas,
-      .fab {
+      :deep(.lnil),
+      :deep(.lnir),
+      :deep(.fas),
+      :deep(.fab) {
         color: var(--white);
       }
 
-      .iconify, .fas, .lnil, .lnir, .fab {
+      :deep(.iconify, .fas, .lnil, .lnir, .fab) {
         color: var(--smoke-white);
       }
     }
@@ -595,14 +597,14 @@ const props = withDefaults(defineProps<VIconProps>(), {
         border-color: var(--blue);
       }
 
-      .lnil,
-      .lnir,
-      .fas,
-      .fab {
+      :deep(.lnil),
+      :deep(.lnir),
+      :deep(.fas),
+      :deep(.fab) {
         color: var(--white);
       }
 
-      .iconify, .fas, .lnil, .lnir, .fab {
+      :deep(.iconify, .fas, .lnil, .lnir, .fab) {
         color: var(--smoke-white);
       }
     }
@@ -614,14 +616,14 @@ const props = withDefaults(defineProps<VIconProps>(), {
         border-color: var(--yellow);
       }
 
-      .lnil,
-      .lnir,
-      .fas,
-      .fab {
+      :deep(.lnil),
+      :deep(.lnir),
+      :deep(.fas),
+      :deep(.fab) {
         color: var(--white);
       }
 
-      .iconify, .fas, .lnil, .lnir, .fab {
+      :deep(.iconify, .fas, .lnil, .lnir, .fab) {
         color: var(--smoke-white);
       }
     }
@@ -633,10 +635,10 @@ const props = withDefaults(defineProps<VIconProps>(), {
         border-color: var(--orange);
       }
 
-      .lnil,
-      .lnir,
-      .fas,
-      .fab {
+      :deep(.lnil),
+      :deep(.lnir),
+      :deep(.fas),
+      :deep(.fab) {
         color: var(--white);
       }
 
@@ -652,10 +654,10 @@ const props = withDefaults(defineProps<VIconProps>(), {
         border-color: var(--green);
       }
 
-      .lnil,
-      .lnir,
-      .fas,
-      .fab {
+      :deep(.lnil),
+      :deep(.lnir),
+      :deep(.fas),
+      :deep(.fab) {
         color: var(--white);
       }
 
@@ -671,10 +673,10 @@ const props = withDefaults(defineProps<VIconProps>(), {
         border-color: var(--red);
       }
 
-      .lnil,
-      .lnir,
-      .fas,
-      .fab {
+      :deep(.lnil),
+      :deep(.lnir),
+      :deep(.fas),
+      :deep(.fab) {
         color: var(--white);
       }
 
