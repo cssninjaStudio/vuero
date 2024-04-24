@@ -18,7 +18,7 @@ const CKEditor = CKE.component
 const content = ref(`<h2>Your HTML Content</h2>`)
 const config = {
   fontFamily: {
-    options: ['"Montserrat", sans-serif', '"Roboto", sans-serif'],
+    options: ['"Montserrat Variable", sans-serif', '"Roboto Flex Variable", sans-serif'],
   },
 }
 </script>

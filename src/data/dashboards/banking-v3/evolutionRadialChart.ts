@@ -18,7 +18,7 @@ export function useEvolutionRadialChart() {
           name: {
             offsetY: 15,
             fontSize: '13px',
-            fontFamily: 'Roboto, sans-serif',
+            fontFamily: '"Roboto Flex Variable", sans-serif',
             color: themeColors.lightText,
             formatter: function () {
               return ['(30 days)']
@@ -28,7 +28,7 @@ export function useEvolutionRadialChart() {
             color: themeColors.accent,
             offsetY: -20,
             fontSize: '16px',
-            fontFamily: 'Roboto, sans-serif',
+            fontFamily: '"Roboto Flex Variable", sans-serif',
             fontWeight: '500',
           },
         },

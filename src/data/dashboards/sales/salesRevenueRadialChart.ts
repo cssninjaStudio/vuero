@@ -28,7 +28,7 @@ export function useSalesRevenueRadialChart() {
           value: {
             show: true,
             fontWeight: 600,
-            fontFamily: 'Roboto, sans-serif',
+            fontFamily: '"Roboto Flex Variable", sans-serif',
             color: themeColors.info,
             fontSize: '16px',
             offsetY: 5,

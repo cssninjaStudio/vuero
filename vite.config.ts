@@ -6,7 +6,6 @@ import VueRouter from 'unplugin-vue-router/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
 import Components from 'unplugin-vue-components/vite'
 import Imports from 'unplugin-auto-import/vite'
-import Unfonts from 'unplugin-fonts/vite'
 import I18n from '@intlify/unplugin-vue-i18n/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 import PurgeCSS from 'rollup-plugin-purgecss'
@@ -99,6 +98,7 @@ export default defineConfig({
       'photoswipe/lightbox',
       'photoswipe',
       'plyr',
+      'ufo',
       'v-calendar',
       'vee-validate',
       'vue',
@@ -249,30 +249,6 @@ export default defineConfig({
       extensions: ['vue', 'md'],
       dts: './types/components.d.ts',
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
-    }),
-
-    /**
-     * unplugin-fonts plugin inject webfonts from differents providers
-     *
-     * @see https://github.com/cssninjaStudio/unplugin-fonts
-     */
-    Unfonts({
-      google: {
-        families: [
-          {
-            name: 'Fira Code',
-            styles: 'wght@400;600',
-          },
-          {
-            name: 'Montserrat',
-            styles: 'wght@500;600;700;800;900',
-          },
-          {
-            name: 'Roboto',
-            styles: 'wght@300;400;500;600;700',
-          },
-        ],
-      },
     }),
 
     /**

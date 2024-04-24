@@ -29,7 +29,7 @@ export function useFlexRadialChartCircle() {
           value: {
             show: true,
             fontWeight: 600,
-            fontFamily: 'Roboto, sans-serif',
+            fontFamily: '"Roboto Flex Variable", sans-serif',
             color: themeColors.purple,
             fontSize: '16px',
             offsetY: 5,

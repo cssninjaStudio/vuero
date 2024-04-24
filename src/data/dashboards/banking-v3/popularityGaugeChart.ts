@@ -28,7 +28,7 @@ export function usePopularityGaugeChart() {
           value: {
             offsetY: 40,
             fontSize: '18px',
-            fontFamily: 'Roboto, sans-serif',
+            fontFamily: '"Roboto Flex Variable", sans-serif',
             fontWeight: '500',
             color: undefined,
             formatter: function (val: number) {

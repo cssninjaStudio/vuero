@@ -26,7 +26,7 @@ export function useCustomerEngagementChart() {
           value: {
             offsetY: 5,
             fontSize: '16px',
-            fontFamily: 'Roboto, sans-serif',
+            fontFamily: '"Roboto Flex Variable", sans-serif',
             fontWeight: '500',
             color: undefined,
             formatter: asPercent,

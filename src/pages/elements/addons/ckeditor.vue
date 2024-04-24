@@ -11,7 +11,7 @@ const CKEditor = defineAsyncComponent(() =>
 
 const editorConfig = {
   fontFamily: {
-    options: ['"Montserrat", sans-serif', '"Roboto", sans-serif'],
+    options: ['"Montserrat Variable", sans-serif', '"Roboto Flex Variable", sans-serif'],
   },
 } satisfies EditorConfig
 
