@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { type Map, Popup } from 'mapbox-gl'
+import type { Map, Popup } from 'mapbox-gl'
 
 import 'mapbox-gl/src/css/mapbox-gl.css'
 import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css'
@@ -20,6 +20,10 @@ const popupElement = shallowRef<HTMLElement>()
 const map = shallowRef<Map>()
 const popup = shallowRef<Popup>()
 const geocoder = shallowRef<any>()
+
+let popupCtr: {
+  new (): Popup
+}
 
 const locations = {
   type: 'FeatureCollection',
@@ -241,14 +245,15 @@ function selectFeature(feature: any) {
 
 onMounted(() => {
   Promise.all([
-    import('mapbox-gl').then(m => m.default),
+    import('mapbox-gl').then(m => [m.default, m.Popup] as const),
     import('@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.min.js').then(
       m => m.default,
     ),
-  ]).then(([mapboxgl, MapboxGeocoder]) => {
+  ]).then(([[mapboxgl, _popupCtr], MapboxGeocoder]) => {
     if (!mapElement.value || !geocoderElement.value) {
       return
     }
+    popupCtr = _popupCtr
     // You can set the VITE_MAPBOX_ACCESS_TOKEN inside .env file
     mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN as string
 
@@ -296,8 +301,6 @@ watchPostEffect(() => {
   // const openingCount = selectedFeature.value.properties.openingCount
   // const description = selectedFeature.value.properties.description
 
-  console.log('zooming at: ', properties, coordinates)
-
   // Ensure that if the map is zoomed out such that multiple
   // copies of the feature are visible, the popup appears
   // over the copy being pointed to.
@@ -314,11 +317,13 @@ watchPostEffect(() => {
     essential: true, // this animation is considered essential with respect to prefers-reduced-motion
   })
 
+  if (!popupCtr) return
+
   if (popup.value) {
     popup.value.remove()
   }
 
-  popup.value = new Popup()
+  popup.value = new popupCtr()
     .on('open', () => {
       selectedFeatureName.value = name
     })

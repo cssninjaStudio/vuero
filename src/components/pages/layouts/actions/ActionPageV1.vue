@@ -8,7 +8,7 @@ const isLoading = ref(false)
 
 const accept = async () => {
   isLoading.value = true
-  notyf.success('Invitation for Banking Solution Website accepted')
+  notyf.primary('Invitation for Banking Solution Website accepted')
 
   await sleep()
   router.push('/sidebar/dashboards/banking-1')

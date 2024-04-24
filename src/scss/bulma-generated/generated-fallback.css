@@ -3198,19 +3198,19 @@ code {
   background: rgb(255, 255, 255);
 }
 
-.control.has-icon .input:focus + .form-icon .iconify {
+.control.has-icon .input:focus + .form-icon.iconify {
   color: rgb(42, 172, 142);
 }
 
-.control.has-icon .input:focus + .form-icon .fas,
-.control.has-icon .input:focus + .form-icon .far,
-.control.has-icon .input:focus + .form-icon .fal,
-.control.has-icon .input:focus + .form-icon .fab {
+.control.has-icon .input:focus + .form-icon.fas,
+.control.has-icon .input:focus + .form-icon.far,
+.control.has-icon .input:focus + .form-icon.fal,
+.control.has-icon .input:focus + .form-icon.fab {
   color: rgb(42, 172, 142);
 }
 
-.control.has-icon .input:focus + .form-icon .lnil,
-.control.has-icon .input:focus + .form-icon .lnir {
+.control.has-icon .input:focus + .form-icon.lnil,
+.control.has-icon .input:focus + .form-icon.lnir {
   color: rgb(42, 172, 142);
 }
 
@@ -3222,16 +3222,16 @@ code {
   background: rgb(255, 255, 255);
 }
 
-.is-dark .control.has-icon .input:focus ~ .form-icon .iconify {
+.is-dark .control.has-icon .input:focus ~ .form-icon.iconify {
   color: rgb(42, 172, 142);
 }
 
-.is-dark .control.has-icon .input:focus ~ .form-icon .fas,
-.is-dark .control.has-icon .input:focus ~ .form-icon .fal,
-.is-dark .control.has-icon .input:focus ~ .form-icon .far,
-.is-dark .control.has-icon .input:focus ~ .form-icon .fab,
-.is-dark .control.has-icon .input:focus ~ .form-icon .lnir,
-.is-dark .control.has-icon .input:focus ~ .form-icon .lnil {
+.is-dark .control.has-icon .input:focus ~ .form-icon.fas,
+.is-dark .control.has-icon .input:focus ~ .form-icon.fal,
+.is-dark .control.has-icon .input:focus ~ .form-icon.far,
+.is-dark .control.has-icon .input:focus ~ .form-icon.fab,
+.is-dark .control.has-icon .input:focus ~ .form-icon.lnir,
+.is-dark .control.has-icon .input:focus ~ .form-icon.lnil {
   color: rgb(42, 172, 142);
 }
 
@@ -3494,87 +3494,6 @@ code {
 
 .is-dark .v-popover-profile .profile-popover-block .popover-actions .popover-icon:hover .iconify {
   color: rgb(42, 172, 142);
-}
-
-.tabs.is-toggle li.is-active a {
-  background: rgb(42, 172, 142);
-  border-color: rgb(42, 172, 142);
-}
-
-.tabs.is-toggle li.is-active a:hover,
-.tabs.is-toggle li.is-active a:focus {
-  color: rgb(255, 255, 255);
-}
-
-.tabs li.is-active a {
-  border-bottom-color: rgb(42, 172, 142);
-  color: rgb(42, 172, 142);
-}
-
-.tabs li.is-active a:hover,
-.tabs li.is-active a:focus {
-  border-bottom-color: rgb(42, 172, 142);
-  color: rgb(42, 172, 142);
-}
-
-.is-dark .tabs.is-toggle li.is-active a,
-.is-dark .tabs.is-toggle li.is-active a:hover {
-  border-color: rgb(42, 172, 142);
-  color: rgb(255, 255, 255);
-}
-
-.is-dark .tabs li.is-active a {
-  border-bottom-color: rgb(42, 172, 142);
-  color: rgb(42, 172, 142);
-}
-
-.tabs-wrapper.is-slider.is-inverted > .tabs-inner > .tabs,
-.tabs-wrapper-alt.is-slider.is-inverted > .tabs-inner > .tabs {
-  background: rgb(255, 255, 255);
-}
-
-.tabs-wrapper.is-slider > .tabs-inner > .tabs li.is-active a,
-.tabs-wrapper-alt.is-slider > .tabs-inner > .tabs li.is-active a {
-  color: rgb(255, 255, 255);
-}
-
-.tabs-wrapper.is-slider .tab-naver,
-.tabs-wrapper-alt.is-slider .tab-naver {
-  background: rgb(42, 172, 142);
-}
-
-.tabs-wrapper.is-triple-slider.is-inverted > .tabs-inner > .tabs,
-.tabs-wrapper-alt.is-triple-slider.is-inverted > .tabs-inner > .tabs {
-  background: rgb(255, 255, 255);
-}
-
-.tabs-wrapper.is-triple-slider > .tabs-inner > .tabs li.is-active a,
-.tabs-wrapper-alt.is-triple-slider > .tabs-inner > .tabs li.is-active a {
-  color: rgb(255, 255, 255);
-}
-
-.tabs-wrapper.is-triple-slider .tab-naver,
-.tabs-wrapper-alt.is-triple-slider .tab-naver {
-  background: rgb(42, 172, 142);
-}
-
-.is-dark .tabs-wrapper.is-slider > .tabs-inner > .tabs li.is-active a,
-.is-dark .tabs-wrapper.is-triple-slider > .tabs-inner > .tabs li.is-active a {
-  color: rgb(255, 255, 255);
-}
-
-@media only screen and (width <= 767px) {
-  .vertical-tabs-wrapper .tabs ul li.is-active a {
-    color: rgb(42, 172, 142);
-    border-bottom-color: rgb(42, 172, 142);
-  }
-}
-
-@media only screen and (width >= 768px) {
-  .vertical-tabs-wrapper .tabs ul li.is-active a {
-    color: rgb(42, 172, 142);
-    border-inline-end-color: rgb(42, 172, 142);
-  }
 }
 
 .flex-pagination .pagination-next,

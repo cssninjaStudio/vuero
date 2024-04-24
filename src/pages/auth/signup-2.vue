@@ -72,7 +72,7 @@ const onSignup = handleSubmit(async (values) => {
     await sleep(800)
 
     notyf.dismissAll()
-    notyf.success('Welcome, Erik Kovalsky')
+    notyf.primary('Welcome, Erik Kovalsky')
 
     router.push('/sidebar/dashboards')
     isLoading.value = false

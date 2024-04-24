@@ -1068,8 +1068,7 @@ useHead({
 
           .mail-content {
             padding: 40px 60px 30px;
-            /* stylelint-disable-next-line font-family-name-quotes */
-            font-family: 'Roboto', sans-serif;
+            font-family: var(--font);
           }
         }
 

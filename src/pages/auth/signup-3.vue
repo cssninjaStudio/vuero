@@ -9,7 +9,7 @@ const handleSignup = async () => {
     sleep(2000)
 
     notyf.dismissAll()
-    notyf.success('Welcome, Erik Kovalsky')
+    notyf.primary('Welcome, Erik Kovalsky')
     router.push('/sidebar/dashboards')
     isLoading.value = false
   }

@@ -13,7 +13,7 @@ import { Notyf } from 'notyf'
 
 const notyf = new Notyf()
 const successToast = () => {
-  notyf.success('Your changes have been successfully saved!')
+  notyf.primary('Your changes have been successfully saved!')
 }
 </script>
 

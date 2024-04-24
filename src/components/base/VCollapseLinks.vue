@@ -14,7 +14,6 @@ const route = useRoute()
 const isOpen = ref(false)
 
 onMounted(() => {
-  console.log('route?', route.path)
   if (props.links.some(link => withoutTrailingSlash(link.to) === withoutTrailingSlash(route.path))) {
     isOpen.value = true
   }

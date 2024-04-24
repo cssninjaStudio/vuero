@@ -6,7 +6,7 @@ const isLoading = ref(false)
 
 const confirm = async () => {
   isLoading.value = true
-  notyf.success('Your account is confirmed Erik !')
+  notyf.primary('Your account is confirmed Erik !')
 
   await sleep()
   router.push('/sidebar/dashboards')

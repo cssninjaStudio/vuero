@@ -20,7 +20,7 @@ const validateStep = async () => {
     }
 
     isLoading.value = true
-    notyf.success('Your shipment is successfully stored!')
+    notyf.primary('Your shipment is successfully stored!')
     await sleep(1000)
 
     router.push('/sidebar/dashboards')

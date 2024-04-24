@@ -139,6 +139,12 @@ async function initNotyfService() {
     primary: (payload: string | Partial<INotyfNotificationOptions>) => {
       const options: Partial<INotyfNotificationOptions> = {
         type: 'primary',
+        icon: {
+          className: 'lnir lnir-checkmark-circle',
+          tagName: 'i',
+          color: '#fff',
+          text: '',
+        },
       }
 
       if (typeof payload === 'string') {

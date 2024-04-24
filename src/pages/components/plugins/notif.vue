@@ -55,7 +55,7 @@ useHead({
         <div class="buttons mb-6">
           <VButton
             bold
-            @click="notyf.success('Success Toast')"
+            @click="notyf.primary('Success Toast')"
           >
             Success Toast
           </VButton>

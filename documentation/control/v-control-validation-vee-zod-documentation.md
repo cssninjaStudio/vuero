@@ -123,7 +123,7 @@ const handleSignup = handleSubmit(async (values) => {
     return
   }
 
-  notyf.success('You have successfully signed up!')
+  notyf.primary('You have successfully signed up!')
   loading.value = false
 })
 </script>

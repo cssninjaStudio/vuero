@@ -40,7 +40,7 @@ const onRemoveFile = (error: any, file: any) => {
 const onSave = async () => {
   isLoading.value = true
   await sleep()
-  notyf.success('Your changes have been successfully saved!')
+  notyf.primary('Your changes have been successfully saved!')
   isLoading.value = false
 }
 </script>

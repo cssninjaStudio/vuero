@@ -60,7 +60,7 @@ const onSignup = handleSubmit(async (values) => {
     await sleep(800)
 
     notyf.dismissAll()
-    notyf.success('Welcome, Erik Kovalsky')
+    notyf.primary('Welcome, Erik Kovalsky')
 
     router.push('/app')
     isLoading.value = false

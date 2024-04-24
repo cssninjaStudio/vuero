@@ -14,7 +14,7 @@ const handleLogin = async () => {
     userSession.setToken('logged-in')
 
     notyf.dismissAll()
-    notyf.success('Welcome back, Erik Kovalsky')
+    notyf.primary('Welcome back, Erik Kovalsky')
 
     if (redirect) {
       router.push(redirect)
