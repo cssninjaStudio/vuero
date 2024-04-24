@@ -51,9 +51,12 @@ export default definePlugin(({ app }) => {
     const target = event.target as HTMLInputElement
 
     if (!enableTransitions()) {
-      isDark.value = !target.checked
+      isDark.value = !isDark.value
       return
     }
+
+    event.preventDefault()
+
     const clipPath = [
       `circle(0px at ${event.clientX}px ${event.clientY}px)`,
       `circle(${Math.hypot(
@@ -63,7 +66,7 @@ export default definePlugin(({ app }) => {
     ]
 
     await (document as any).startViewTransition(async () => {
-      isDark.value = !target.checked
+      isDark.value = !isDark.value
       await nextTick()
     }).ready
 

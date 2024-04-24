@@ -122,7 +122,7 @@ watchEffect(() => {
                 :checked="isDark"
                 data-cy="dark-mode-toggle"
                 type="checkbox"
-                @click.prevent="onChange"
+                @click="onChange"
               >
               <span class="toggler">
                 <span class="dark">
@@ -228,7 +228,7 @@ watchEffect(() => {
           transition: all 0.3s; // transition-all test
 
           img,
-          .iconify {
+          svg {
             position: relative;
             top: -2px;
             margin-inline-start: 0;
