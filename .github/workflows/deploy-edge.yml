@@ -60,7 +60,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           target: ${{ secrets.HOST_DIRECTORY_EDGE }}
-          source: .github/env/main/docker-compose.yml
+          source: .github/env/edge/docker-compose.yml
           strip_components: 3
 
       - name: Deploy

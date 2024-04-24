@@ -3,21 +3,16 @@ WORKDIR /app
 
 ARG VITE_API_BASE_URL=""
 ARG VITE_MAPBOX_ACCESS_TOKEN=""
-ARG GTM_ID=""
 
 RUN corepack enable && corepack prepare pnpm@latest --activate
 
 COPY package.json ./
 COPY pnpm-lock.yaml ./
-COPY .npmrc ./
-COPY patches ./patches
-COPY scripts ./scripts
 RUN CYPRESS_INSTALL_BINARY=0 pnpm install
 
 COPY . .
 RUN VITE_API_BASE_URL=$VITE_API_BASE_URL \
   VITE_MAPBOX_ACCESS_TOKEN=$VITE_MAPBOX_ACCESS_TOKEN \
-  GTM_ID=$GTM_ID \
   NODE_OPTIONS=--max-old-space-size=6144 \
   pnpm ssr:build
 
@@ -26,13 +21,11 @@ WORKDIR /app
 
 RUN corepack enable && corepack prepare pnpm@latest --activate
 
-RUN groupadd --gid 10001 vuero && \
-   useradd --create-home --uid 10001 --gid vuero vuero \
-   && chown --recursive vuero:vuero /app
-
-USER vuero:vuero
-
-COPY --chown=vuero:vuero --from=build /app .
+COPY --from=build /app/dist ./dist
+COPY --from=build /app/json-server ./json-server
+COPY --from=build /app/server ./server
+COPY --from=build /app/node_modules ./node_modules
+COPY --from=build /app/package.json ./package.json
 
 EXPOSE 3000 8080
 

@@ -206,6 +206,9 @@ importers:
       tslib:
         specifier: 2.6.2
         version: 2.6.2
+      ufo:
+        specifier: ^1.5.3
+        version: 1.5.3
       unhead:
         specifier: 1.9.7
         version: 1.9.7
@@ -245,6 +248,9 @@ importers:
       vue3-apexcharts:
         specifier: 1.5.2
         version: 1.5.2(apexcharts@3.49.0)(vue@3.4.25(typescript@5.4.5))
+      workbox-window:
+        specifier: ^7.1.0
+        version: 7.1.0
       zod:
         specifier: 3.23.4
         version: 3.23.4
@@ -305,7 +311,10 @@ importers:
         version: 7.7.1(eslint@8.57.0)(typescript@5.4.5)
       '@vitejs/plugin-vue':
         specifier: 5.0.4
-        version: 5.0.4(vite@5.2.10(@types/node@20.12.7)(lightningcss@1.24.1)(sass-embedded@1.75.0)(terser@5.30.4))(vue@3.4.25(typescript@5.4.5))
+        version: 5.0.4(vite@5.2.10(@types/node@20.12.7)(sass-embedded@1.75.0)(terser@5.30.4))(vue@3.4.25(typescript@5.4.5))
+      '@vue/compiler-sfc':
+        specifier: ^3.4.25
+        version: 3.4.25
       '@vueuse/integrations':
         specifier: 10.9.0
         version: 10.9.0(focus-trap@7.5.4)(nprogress@0.2.0)(universal-cookie@7.1.4)(vue@3.4.25(typescript@5.4.5))
@@ -363,6 +372,9 @@ importers:
       npm-run-all:
         specifier: 4.1.5
         version: 4.1.5
+      pathe:
+        specifier: ^1.1.2
+        version: 1.1.2
       postcss-html:
         specifier: 1.6.0
         version: 1.6.0
@@ -413,13 +425,13 @@ importers:
         version: 0.26.0(@babel/parser@7.24.4)(rollup@4.16.4)(vue@3.4.25(typescript@5.4.5))
       vite:
         specifier: 5.2.10
-        version: 5.2.10(@types/node@20.12.7)(lightningcss@1.24.1)(sass-embedded@1.75.0)(terser@5.30.4)
+        version: 5.2.10(@types/node@20.12.7)(sass-embedded@1.75.0)(terser@5.30.4)
       vite-plugin-pwa:
         specifier: 0.19.8
-        version: 0.19.8(vite@5.2.10(@types/node@20.12.7)(lightningcss@1.24.1)(sass-embedded@1.75.0)(terser@5.30.4))(workbox-build@7.1.0)(workbox-window@7.1.0)
+        version: 0.19.8(vite@5.2.10(@types/node@20.12.7)(sass-embedded@1.75.0)(terser@5.30.4))(workbox-build@7.1.0)(workbox-window@7.1.0)
       vite-plugin-vue-devtools:
         specifier: 7.1.2
-        version: 7.1.2(rollup@4.16.4)(vite@5.2.10(@types/node@20.12.7)(lightningcss@1.24.1)(sass-embedded@1.75.0)(terser@5.30.4))(vue@3.4.25(typescript@5.4.5))
+        version: 7.1.2(rollup@4.16.4)(vite@5.2.10(@types/node@20.12.7)(sass-embedded@1.75.0)(terser@5.30.4))(vue@3.4.25(typescript@5.4.5))
       vue-component-meta:
         specifier: 2.0.14
         version: 2.0.14(typescript@5.4.5)
@@ -3400,8 +3412,8 @@ packages:
     engines: {node: '>=0.10.0'}
     hasBin: true
 
-  electron-to-chromium@1.4.747:
-    resolution: {integrity: sha512-+FnSWZIAvFHbsNVmUxhEqWiaOiPMcfum1GQzlWCg/wLigVtshOsjXHyEFfmt6cFK6+HkS3QOJBv6/3OPumbBfw==}
+  electron-to-chromium@1.4.748:
+    resolution: {integrity: sha512-VWqjOlPZn70UZ8FTKUOkUvBLeTQ0xpty66qV0yJcAGY2/CthI4xyW9aEozRVtuwv3Kpf5xTesmJUcPwuJmgP4A==}
 
   emoji-regex@10.3.0:
     resolution: {integrity: sha512-QpLs9D9v9kArv4lfDEgg1X/gN5XLnf/A6l9cs8SPZLRZR3ZkY9+kwIQTxm+fsSej5UMYGE8fdoaZVIBlqG0XTw==}
@@ -4626,64 +4638,6 @@ packages:
   levn@0.4.1:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
     engines: {node: '>= 0.8.0'}
-
-  lightningcss-darwin-arm64@1.24.1:
-    resolution: {integrity: sha512-1jQ12jBy+AE/73uGQWGSafK5GoWgmSiIQOGhSEXiFJSZxzV+OXIx+a9h2EYHxdJfX864M+2TAxWPWb0Vv+8y4w==}
-    engines: {node: '>= 12.0.0'}
-    cpu: [arm64]
-    os: [darwin]
-
-  lightningcss-darwin-x64@1.24.1:
-    resolution: {integrity: sha512-R4R1d7VVdq2mG4igMU+Di8GPf0b64ZLnYVkubYnGG0Qxq1KaXQtAzcLI43EkpnoWvB/kUg8JKCWH4S13NfiLcQ==}
-    engines: {node: '>= 12.0.0'}
-    cpu: [x64]
-    os: [darwin]
-
-  lightningcss-freebsd-x64@1.24.1:
-    resolution: {integrity: sha512-z6NberUUw5ALES6Ixn2shmjRRrM1cmEn1ZQPiM5IrZ6xHHL5a1lPin9pRv+w6eWfcrEo+qGG6R9XfJrpuY3e4g==}
-    engines: {node: '>= 12.0.0'}
-    cpu: [x64]
-    os: [freebsd]
-
-  lightningcss-linux-arm-gnueabihf@1.24.1:
-    resolution: {integrity: sha512-NLQLnBQW/0sSg74qLNI8F8QKQXkNg4/ukSTa+XhtkO7v3BnK19TS1MfCbDHt+TTdSgNEBv0tubRuapcKho2EWw==}
-    engines: {node: '>= 12.0.0'}
-    cpu: [arm]
-    os: [linux]
-
-  lightningcss-linux-arm64-gnu@1.24.1:
-    resolution: {integrity: sha512-AQxWU8c9E9JAjAi4Qw9CvX2tDIPjgzCTrZCSXKELfs4mCwzxRkHh2RCxX8sFK19RyJoJAjA/Kw8+LMNRHS5qEg==}
-    engines: {node: '>= 12.0.0'}
-    cpu: [arm64]
-    os: [linux]
-
-  lightningcss-linux-arm64-musl@1.24.1:
-    resolution: {integrity: sha512-JCgH/SrNrhqsguUA0uJUM1PvN5+dVuzPIlXcoWDHSv2OU/BWlj2dUYr3XNzEw748SmNZPfl2NjQrAdzaPOn1lA==}
-    engines: {node: '>= 12.0.0'}
-    cpu: [arm64]
-    os: [linux]
-
-  lightningcss-linux-x64-gnu@1.24.1:
-    resolution: {integrity: sha512-TYdEsC63bHV0h47aNRGN3RiK7aIeco3/keN4NkoSQ5T8xk09KHuBdySltWAvKLgT8JvR+ayzq8ZHnL1wKWY0rw==}
-    engines: {node: '>= 12.0.0'}
-    cpu: [x64]
-    os: [linux]
-
-  lightningcss-linux-x64-musl@1.24.1:
-    resolution: {integrity: sha512-HLfzVik3RToot6pQ2Rgc3JhfZkGi01hFetHt40HrUMoeKitLoqUUT5owM6yTZPTytTUW9ukLBJ1pc3XNMSvlLw==}
-    engines: {node: '>= 12.0.0'}
-    cpu: [x64]
-    os: [linux]
-
-  lightningcss-win32-x64-msvc@1.24.1:
-    resolution: {integrity: sha512-joEupPjYJ7PjZtDsS5lzALtlAudAbgIBMGJPNeFe5HfdmJXFd13ECmEM+5rXNxYVMRHua2w8132R6ab5Z6K9Ow==}
-    engines: {node: '>= 12.0.0'}
-    cpu: [x64]
-    os: [win32]
-
-  lightningcss@1.24.1:
-    resolution: {integrity: sha512-kUpHOLiH5GB0ERSv4pxqlL0RYKnOXtgGtVe7shDGfhS0AZ4D1ouKFYAcLcZhql8aMspDNzaUCumGHZ78tb2fTg==}
-    engines: {node: '>= 12.0.0'}
 
   lilconfig@3.0.0:
     resolution: {integrity: sha512-K2U4W2Ff5ibV7j7ydLr+zLAkIg5JJ4lPn1Ltsdt+Tz/IjQ8buJ55pZAxoP34lqIiwtF9iAvtLv3JGv7CAyAg+g==}
@@ -9437,9 +9391,9 @@ snapshots:
     transitivePeerDependencies:
       - vue
 
-  '@vitejs/plugin-vue@5.0.4(vite@5.2.10(@types/node@20.12.7)(lightningcss@1.24.1)(sass-embedded@1.75.0)(terser@5.30.4))(vue@3.4.25(typescript@5.4.5))':
+  '@vitejs/plugin-vue@5.0.4(vite@5.2.10(@types/node@20.12.7)(sass-embedded@1.75.0)(terser@5.30.4))(vue@3.4.25(typescript@5.4.5))':
     dependencies:
-      vite: 5.2.10(@types/node@20.12.7)(lightningcss@1.24.1)(sass-embedded@1.75.0)(terser@5.30.4)
+      vite: 5.2.10(@types/node@20.12.7)(sass-embedded@1.75.0)(terser@5.30.4)
       vue: 3.4.25(typescript@5.4.5)
 
   '@volar/language-core@2.2.0-alpha.10':
@@ -9529,14 +9483,14 @@ snapshots:
 
   '@vue/devtools-api@6.6.1': {}
 
-  '@vue/devtools-core@7.1.2(vite@5.2.10(@types/node@20.12.7)(lightningcss@1.24.1)(sass-embedded@1.75.0)(terser@5.30.4))(vue@3.4.25(typescript@5.4.5))':
+  '@vue/devtools-core@7.1.2(vite@5.2.10(@types/node@20.12.7)(sass-embedded@1.75.0)(terser@5.30.4))(vue@3.4.25(typescript@5.4.5))':
     dependencies:
       '@vue/devtools-kit': 7.1.2(vue@3.4.25(typescript@5.4.5))
       '@vue/devtools-shared': 7.1.2
       mitt: 3.0.1
       nanoid: 3.3.7
       pathe: 1.1.2
-      vite-hot-client: 0.2.3(vite@5.2.10(@types/node@20.12.7)(lightningcss@1.24.1)(sass-embedded@1.75.0)(terser@5.30.4))
+      vite-hot-client: 0.2.3(vite@5.2.10(@types/node@20.12.7)(sass-embedded@1.75.0)(terser@5.30.4))
     transitivePeerDependencies:
       - vite
       - vue
@@ -9916,7 +9870,7 @@ snapshots:
   browserslist@4.23.0:
     dependencies:
       caniuse-lite: 1.0.30001612
-      electron-to-chromium: 1.4.747
+      electron-to-chromium: 1.4.748
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.23.0)
 
@@ -10643,7 +10597,7 @@ snapshots:
     dependencies:
       jake: 10.8.7
 
-  electron-to-chromium@1.4.747: {}
+  electron-to-chromium@1.4.748: {}
 
   emoji-regex@10.3.0: {}
 
@@ -12108,48 +12062,6 @@ snapshots:
     dependencies:
       prelude-ls: 1.2.1
       type-check: 0.4.0
-
-  lightningcss-darwin-arm64@1.24.1:
-    optional: true
-
-  lightningcss-darwin-x64@1.24.1:
-    optional: true
-
-  lightningcss-freebsd-x64@1.24.1:
-    optional: true
-
-  lightningcss-linux-arm-gnueabihf@1.24.1:
-    optional: true
-
-  lightningcss-linux-arm64-gnu@1.24.1:
-    optional: true
-
-  lightningcss-linux-arm64-musl@1.24.1:
-    optional: true
-
-  lightningcss-linux-x64-gnu@1.24.1:
-    optional: true
-
-  lightningcss-linux-x64-musl@1.24.1:
-    optional: true
-
-  lightningcss-win32-x64-msvc@1.24.1:
-    optional: true
-
-  lightningcss@1.24.1:
-    dependencies:
-      detect-libc: 1.0.3
-    optionalDependencies:
-      lightningcss-darwin-arm64: 1.24.1
-      lightningcss-darwin-x64: 1.24.1
-      lightningcss-freebsd-x64: 1.24.1
-      lightningcss-linux-arm-gnueabihf: 1.24.1
-      lightningcss-linux-arm64-gnu: 1.24.1
-      lightningcss-linux-arm64-musl: 1.24.1
-      lightningcss-linux-x64-gnu: 1.24.1
-      lightningcss-linux-x64-musl: 1.24.1
-      lightningcss-win32-x64-msvc: 1.24.1
-    optional: true
 
   lilconfig@3.0.0: {}
 
@@ -15135,11 +15047,11 @@ snapshots:
       unist-util-stringify-position: 4.0.0
       vfile-message: 4.0.2
 
-  vite-hot-client@0.2.3(vite@5.2.10(@types/node@20.12.7)(lightningcss@1.24.1)(sass-embedded@1.75.0)(terser@5.30.4)):
+  vite-hot-client@0.2.3(vite@5.2.10(@types/node@20.12.7)(sass-embedded@1.75.0)(terser@5.30.4)):
     dependencies:
-      vite: 5.2.10(@types/node@20.12.7)(lightningcss@1.24.1)(sass-embedded@1.75.0)(terser@5.30.4)
+      vite: 5.2.10(@types/node@20.12.7)(sass-embedded@1.75.0)(terser@5.30.4)
 
-  vite-plugin-inspect@0.8.4(rollup@4.16.4)(vite@5.2.10(@types/node@20.12.7)(lightningcss@1.24.1)(sass-embedded@1.75.0)(terser@5.30.4)):
+  vite-plugin-inspect@0.8.4(rollup@4.16.4)(vite@5.2.10(@types/node@20.12.7)(sass-embedded@1.75.0)(terser@5.30.4)):
     dependencies:
       '@antfu/utils': 0.7.7
       '@rollup/pluginutils': 5.1.0(rollup@4.16.4)
@@ -15150,39 +15062,39 @@ snapshots:
       perfect-debounce: 1.0.0
       picocolors: 1.0.0
       sirv: 2.0.4
-      vite: 5.2.10(@types/node@20.12.7)(lightningcss@1.24.1)(sass-embedded@1.75.0)(terser@5.30.4)
+      vite: 5.2.10(@types/node@20.12.7)(sass-embedded@1.75.0)(terser@5.30.4)
     transitivePeerDependencies:
       - rollup
       - supports-color
 
-  vite-plugin-pwa@0.19.8(vite@5.2.10(@types/node@20.12.7)(lightningcss@1.24.1)(sass-embedded@1.75.0)(terser@5.30.4))(workbox-build@7.1.0)(workbox-window@7.1.0):
+  vite-plugin-pwa@0.19.8(vite@5.2.10(@types/node@20.12.7)(sass-embedded@1.75.0)(terser@5.30.4))(workbox-build@7.1.0)(workbox-window@7.1.0):
     dependencies:
       debug: 4.3.4(supports-color@8.1.1)
       fast-glob: 3.3.2
       pretty-bytes: 6.1.1
-      vite: 5.2.10(@types/node@20.12.7)(lightningcss@1.24.1)(sass-embedded@1.75.0)(terser@5.30.4)
+      vite: 5.2.10(@types/node@20.12.7)(sass-embedded@1.75.0)(terser@5.30.4)
       workbox-build: 7.1.0
       workbox-window: 7.1.0
     transitivePeerDependencies:
       - supports-color
 
-  vite-plugin-vue-devtools@7.1.2(rollup@4.16.4)(vite@5.2.10(@types/node@20.12.7)(lightningcss@1.24.1)(sass-embedded@1.75.0)(terser@5.30.4))(vue@3.4.25(typescript@5.4.5)):
+  vite-plugin-vue-devtools@7.1.2(rollup@4.16.4)(vite@5.2.10(@types/node@20.12.7)(sass-embedded@1.75.0)(terser@5.30.4))(vue@3.4.25(typescript@5.4.5)):
     dependencies:
-      '@vue/devtools-core': 7.1.2(vite@5.2.10(@types/node@20.12.7)(lightningcss@1.24.1)(sass-embedded@1.75.0)(terser@5.30.4))(vue@3.4.25(typescript@5.4.5))
+      '@vue/devtools-core': 7.1.2(vite@5.2.10(@types/node@20.12.7)(sass-embedded@1.75.0)(terser@5.30.4))(vue@3.4.25(typescript@5.4.5))
       '@vue/devtools-kit': 7.1.2(vue@3.4.25(typescript@5.4.5))
       '@vue/devtools-shared': 7.1.2
       execa: 8.0.1
       sirv: 2.0.4
-      vite: 5.2.10(@types/node@20.12.7)(lightningcss@1.24.1)(sass-embedded@1.75.0)(terser@5.30.4)
-      vite-plugin-inspect: 0.8.4(rollup@4.16.4)(vite@5.2.10(@types/node@20.12.7)(lightningcss@1.24.1)(sass-embedded@1.75.0)(terser@5.30.4))
-      vite-plugin-vue-inspector: 5.0.1(vite@5.2.10(@types/node@20.12.7)(lightningcss@1.24.1)(sass-embedded@1.75.0)(terser@5.30.4))
+      vite: 5.2.10(@types/node@20.12.7)(sass-embedded@1.75.0)(terser@5.30.4)
+      vite-plugin-inspect: 0.8.4(rollup@4.16.4)(vite@5.2.10(@types/node@20.12.7)(sass-embedded@1.75.0)(terser@5.30.4))
+      vite-plugin-vue-inspector: 5.0.1(vite@5.2.10(@types/node@20.12.7)(sass-embedded@1.75.0)(terser@5.30.4))
     transitivePeerDependencies:
       - '@nuxt/kit'
       - rollup
       - supports-color
       - vue
 
-  vite-plugin-vue-inspector@5.0.1(vite@5.2.10(@types/node@20.12.7)(lightningcss@1.24.1)(sass-embedded@1.75.0)(terser@5.30.4)):
+  vite-plugin-vue-inspector@5.0.1(vite@5.2.10(@types/node@20.12.7)(sass-embedded@1.75.0)(terser@5.30.4)):
     dependencies:
       '@babel/core': 7.24.4
       '@babel/plugin-proposal-decorators': 7.24.1(@babel/core@7.24.4)
@@ -15193,11 +15105,11 @@ snapshots:
       '@vue/compiler-dom': 3.4.25
       kolorist: 1.8.0
       magic-string: 0.30.10
-      vite: 5.2.10(@types/node@20.12.7)(lightningcss@1.24.1)(sass-embedded@1.75.0)(terser@5.30.4)
+      vite: 5.2.10(@types/node@20.12.7)(sass-embedded@1.75.0)(terser@5.30.4)
     transitivePeerDependencies:
       - supports-color
 
-  vite@5.2.10(@types/node@20.12.7)(lightningcss@1.24.1)(sass-embedded@1.75.0)(terser@5.30.4):
+  vite@5.2.10(@types/node@20.12.7)(sass-embedded@1.75.0)(terser@5.30.4):
     dependencies:
       esbuild: 0.20.2
       postcss: 8.4.38
@@ -15205,7 +15117,6 @@ snapshots:
     optionalDependencies:
       '@types/node': 20.12.7
       fsevents: 2.3.3
-      lightningcss: 1.24.1
       sass: sass-embedded@1.75.0
       terser: 5.30.4
 

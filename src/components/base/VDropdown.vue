@@ -331,10 +331,8 @@ defineExpose({
         width: 16px;
 
         .iconify {
-          position: relative;
-          top: -2px;
-          vertical-align: middle;
-          margin-inline-start: 0.25rem;
+          font-size: 14px;
+          margin-inline-start: 0.65rem;
         }
       }
     }

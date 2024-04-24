@@ -129,6 +129,7 @@
     "tiny-slider": "2.9.4",
     "tippy.js": "6.3.7",
     "tslib": "2.6.2",
+    "ufo": "^1.5.3",
     "unhead": "1.9.7",
     "universal-cookie": "7.1.4",
     "unplugin-vue-router": "0.8.6",
@@ -142,6 +143,7 @@
     "vue-scrollto": "2.20.0",
     "vue-tippy": "6.4.1",
     "vue3-apexcharts": "1.5.2",
+    "workbox-window": "^7.1.0",
     "zod": "3.23.4"
   },
   "devDependencies": {
@@ -164,6 +166,7 @@
     "@typescript-eslint/eslint-plugin": "7.7.1",
     "@typescript-eslint/parser": "7.7.1",
     "@vitejs/plugin-vue": "5.0.4",
+    "@vue/compiler-sfc": "^3.4.25",
     "@vueuse/integrations": "10.9.0",
     "commitlint": "19.3.0",
     "cross-env": "7.0.3",
@@ -183,6 +186,7 @@
     "lint-staged": "15.2.2",
     "magic-string": "0.30.10",
     "npm-run-all": "4.1.5",
+    "pathe": "^1.1.2",
     "postcss-html": "1.6.0",
     "postcss-scss": "4.0.9",
     "rimraf": "5.0.5",
