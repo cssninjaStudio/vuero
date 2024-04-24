@@ -7,11 +7,9 @@ useHead({
 <template>
   <MinimalLayout theme="light">
     <div class="landing-page-wrapper">
+      <LandingGrids />
       <!-- Hero and Navbar -->
-      <div
-        id="Vuero-marketing"
-        class="hero marketing-hero is-left is-fullheight"
-      >
+      <div class="hero marketing-hero is-left is-fullheight">
         <!-- Navbar partial -->
         <LandingNavigation />
 
@@ -149,8 +147,6 @@ useHead({
 @import '/@src/scss/_demo/landing';
 
 .marketing-hero {
-  position: relative;
-
   &.is-left {
     .hero-body {
       .buttons {

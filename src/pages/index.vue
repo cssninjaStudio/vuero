@@ -12,14 +12,13 @@ useHead({
 <template>
   <MinimalLayout theme="light">
     <div class="landing-page-wrapper">
+      <LandingGrids />
       <!-- Hero and Navbar -->
       <div
-        id="vuero-landing"
         class="hero is-fullheight is-active"
       >
         <!-- Navbar partial -->
         <LandingNavigation />
-        <div class="grids gridlines" />
         <div class="hero-body has-text-centered">
           <div class="container">
             <h1 class="title is-1 is-bold dark-white is-leading">
@@ -583,7 +582,8 @@ useHead({
 
           <!-- Feature -->
           <div class="columns is-vcentered side-feature">
-            <div class="column is-6 has-text-centered gridlines">
+            <!-- <LandingGrids /> -->
+            <div class="column is-6 has-text-centered">
               <img
                 class="light-image-l featured-image"
                 src="/@src/assets/illustrations/landing/feature-1.webp"
@@ -644,7 +644,8 @@ useHead({
           </div>
           <!-- Feature -->
           <div class="columns is-vcentered side-feature">
-            <div class="column is-6 has-text-centered gridlines">
+            <!-- <LandingGrids /> -->
+            <div class="column is-6 has-text-centered">
               <img
                 class="light-image-l featured-image"
                 src="/@src/assets/illustrations/landing/feature-3.svg"
@@ -946,19 +947,6 @@ useHead({
 
       <!-- Footer -->
       <LandingFooter />
-
-      <!-- Back To Top Button -->
-      <div id="backtotop">
-        <a
-          href="#"
-          aria-label="back to top"
-        >
-          <i
-            aria-hidden="true"
-            class="fas fa-angle-up"
-          />
-        </a>
-      </div>
     </div>
   </MinimalLayout>
 </template>

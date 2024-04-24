@@ -7,11 +7,9 @@ useHead({
 <template>
   <MinimalLayout theme="light">
     <div class="landing-page-wrapper">
+      <LandingGrids />
       <!-- Hero and Navbar -->
-      <div
-        id="Vuero-marketing"
-        class="hero marketing-hero is-right is-fullheight"
-      >
+      <div class="hero marketing-hero is-right is-fullheight">
         <!-- Navbar partial -->
         <LandingNavigation />
 
