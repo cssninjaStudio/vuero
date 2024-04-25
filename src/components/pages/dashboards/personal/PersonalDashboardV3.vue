@@ -310,7 +310,7 @@ const userStack = userData.userStack as VAvatarProps[]
             center
           >
             <template #icon>
-              <VAvatar picture="/demo/avatars/32.jpg" />
+              <VAvatar picture="https://media.cssninja.io/content/avatars/32.jpg" />
             </template>
             <template #action>
               <VIcon
@@ -334,7 +334,7 @@ const userStack = userData.userStack as VAvatarProps[]
             center
           >
             <template #icon>
-              <VAvatar picture="/demo/avatars/19.jpg" />
+              <VAvatar picture="https://media.cssninja.io/content/avatars/19.jpg" />
             </template>
             <template #action>
               <VIcon
@@ -358,7 +358,7 @@ const userStack = userData.userStack as VAvatarProps[]
             center
           >
             <template #icon>
-              <VAvatar picture="/demo/avatars/12.jpg" />
+              <VAvatar picture="https://media.cssninja.io/content/avatars/12.jpg" />
             </template>
             <template #action>
               <VIcon

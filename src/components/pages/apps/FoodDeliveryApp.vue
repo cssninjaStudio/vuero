@@ -309,7 +309,7 @@ onUnmounted(() => {
           <div class="cart-items has-slimscroll is-hidden">
             <div class="cart-item">
               <VAvatar
-                picture="/demo/photos/food/1.jpg"
+                picture="https://media.cssninja.io/content/photos/food/1.jpg"
                 size="medium"
                 squared
               />
@@ -320,7 +320,7 @@ onUnmounted(() => {
             </div>
             <div class="cart-item">
               <VAvatar
-                picture="/demo/photos/food/2.jpg"
+                picture="https://media.cssninja.io/content/photos/food/2.jpg"
                 size="medium"
                 squared
               />
@@ -331,7 +331,7 @@ onUnmounted(() => {
             </div>
             <div class="cart-item">
               <VAvatar
-                picture="/demo/photos/food/3.jpg"
+                picture="https://media.cssninja.io/content/photos/food/3.jpg"
                 size="medium"
                 squared
               />

@@ -10,7 +10,7 @@ export const timeline = [
   {
     id: 1,
     icon: 'lucide:phone-call',
-    picture: '/demo/avatars/7.jpg',
+    picture: 'https://media.cssninja.io/content/avatars/7.jpg',
     title: 'Meeting with Alice',
     time: 'Today - 01:00pm',
     color: '',

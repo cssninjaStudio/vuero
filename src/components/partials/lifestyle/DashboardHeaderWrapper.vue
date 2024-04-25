@@ -7,7 +7,7 @@ const { onceError } = useImageError()
     <div class="dashboard-header">
       <div class="avatar-container">
         <img
-          src="/demo/photos/faces/girl1.jpg"
+          src="https://media.cssninja.io/content/photos/faces/girl1.jpg"
           alt=""
           @error.once="onceError($event, 150)"
         >

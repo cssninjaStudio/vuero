@@ -170,7 +170,7 @@ function getAvatarData(user: UserPopover): VAvatarProps {
                     >
                       <VAvatar
                         size="small"
-                        picture="/demo/avatars/7.jpg"
+                        picture="https://media.cssninja.io/content/avatars/7.jpg"
                       />
                       <template #content>
                         <UserPopoverContent :user="popovers.user7" />
@@ -193,7 +193,7 @@ function getAvatarData(user: UserPopover): VAvatarProps {
                     >
                       <VAvatar
                         size="small"
-                        picture="/demo/avatars/13.jpg"
+                        picture="https://media.cssninja.io/content/avatars/13.jpg"
                       />
                       <template #content>
                         <UserPopoverContent :user="popovers.user13" />
@@ -216,7 +216,7 @@ function getAvatarData(user: UserPopover): VAvatarProps {
                     >
                       <VAvatar
                         size="small"
-                        picture="/demo/avatars/22.jpg"
+                        picture="https://media.cssninja.io/content/avatars/22.jpg"
                       />
                       <template #content>
                         <UserPopoverContent :user="popovers.user22" />

@@ -32,7 +32,7 @@ const textarea = ref('')
     <VControl textaddon>
       <div class="start">
         <div class="avatar-stack">
-          <VAvatar picture="/demo/avatars/7.jpg" size="small" />
+          <VAvatar picture="https://media.cssninja.io/content/avatars/7.jpg" size="small" />
           <VAvatar
             initials="JO"
             color="info"
@@ -66,7 +66,7 @@ const textarea = ref('')
   <VControl textaddon>
     <div class="start">
       <div class="avatar-stack">
-        <VAvatar picture="/demo/avatars/7.jpg" size="small" />
+        <VAvatar picture="https://media.cssninja.io/content/avatars/7.jpg" size="small" />
         <VAvatar initials="JO" color="info" size="small" />
         <VAvatar picture="/images/avatars/svg/vuero-1.svg" size="small" />
       </div>

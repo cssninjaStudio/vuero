@@ -3,37 +3,37 @@ const people = [
   {
     name: 'Alice Carasca',
     role: 'Software Engineer',
-    avatar: '/demo/avatars/5.jpg',
+    avatar: 'https://media.cssninja.io/content/avatars/5.jpg',
   },
   {
     name: 'Mary Lebowski',
     role: 'Project Manager',
-    avatar: '/demo/avatars/5.jpg',
+    avatar: 'https://media.cssninja.io/content/avatars/5.jpg',
   },
   {
     name: 'Ryan Brentman',
     role: 'Web Developer',
-    avatar: '/demo/avatars/14.jpg',
+    avatar: 'https://media.cssninja.io/content/avatars/14.jpg',
   },
   {
     name: 'Irina Vierbovsky',
     role: 'Project Manager',
-    avatar: '/demo/avatars/23.jpg',
+    avatar: 'https://media.cssninja.io/content/avatars/23.jpg',
   },
   {
     name: 'Jonathan Krugger',
     role: 'Product Manager',
-    avatar: '/demo/avatars/32.jpg',
+    avatar: 'https://media.cssninja.io/content/avatars/32.jpg',
   },
   {
     name: 'Alejandro Badajoz',
     role: 'Business Analyst',
-    avatar: '/demo/avatars/39.jpg',
+    avatar: 'https://media.cssninja.io/content/avatars/39.jpg',
   },
   {
     name: 'Greta Kroppfer',
     role: 'Sales Manager',
-    avatar: '/demo/avatars/19.jpg',
+    avatar: 'https://media.cssninja.io/content/avatars/19.jpg',
   },
 ]
 
@@ -41,12 +41,12 @@ const records = [
   {
     name: 'Delivery App Project',
     date: 'August 2020',
-    preview: '/demo/photos/apps/1.jpg',
+    preview: 'https://media.cssninja.io/content/photos/apps/1.jpg',
   },
   {
     name: 'Health and Fitness Dashboard',
     date: 'October 2020',
-    preview: '/demo/photos/apps/2.png',
+    preview: 'https://media.cssninja.io/content/photos/apps/2.png',
   },
   {
     name: 'Tech Summit Expenses',
@@ -57,12 +57,12 @@ const records = [
   {
     name: 'Learning Tracker Dashboard',
     date: 'September 2020',
-    preview: '/demo/photos/apps/3.png',
+    preview: 'https://media.cssninja.io/content/photos/apps/3.png',
   },
   {
     name: 'Learning Tracker Dashboard',
     date: 'September 2020',
-    preview: '/demo/photos/apps/4.png',
+    preview: 'https://media.cssninja.io/content/photos/apps/4.png',
   },
   {
     name: 'Project Outline',
@@ -79,7 +79,7 @@ const records = [
   {
     name: 'Resume Management Mobile App',
     date: 'October 2020',
-    preview: '/demo/photos/apps/5.png',
+    preview: 'https://media.cssninja.io/content/photos/apps/5.png',
   },
   {
     name: 'Website Homepage Redesign',

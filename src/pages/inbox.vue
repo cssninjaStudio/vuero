@@ -265,7 +265,7 @@ useHead({
                 <!--Contact-->
                 <div class="contact-block">
                   <img
-                    src="/demo/avatars/7.jpg"
+                    src="https://media.cssninja.io/content/avatars/7.jpg"
                     alt=""
                     @error.once="onceError($event, 150)"
                   >
@@ -277,7 +277,7 @@ useHead({
                 <!--Contact-->
                 <div class="contact-block">
                   <img
-                    src="/demo/avatars/25.jpg"
+                    src="https://media.cssninja.io/content/avatars/25.jpg"
                     alt=""
                     @error.once="onceError($event, 150)"
                   >
@@ -289,7 +289,7 @@ useHead({
                 <!--Contact-->
                 <div class="contact-block">
                   <img
-                    src="/demo/avatars/18.jpg"
+                    src="https://media.cssninja.io/content/avatars/18.jpg"
                     alt=""
                     @error.once="onceError($event, 150)"
                   >
@@ -301,7 +301,7 @@ useHead({
                 <!--Contact-->
                 <div class="contact-block">
                   <img
-                    src="/demo/avatars/32.jpg"
+                    src="https://media.cssninja.io/content/avatars/32.jpg"
                     alt=""
                     @error.once="onceError($event, 150)"
                   >
@@ -313,7 +313,7 @@ useHead({
                 <!--Contact-->
                 <div class="contact-block">
                   <img
-                    src="/demo/avatars/38.jpg"
+                    src="https://media.cssninja.io/content/avatars/38.jpg"
                     alt=""
                     @error.once="onceError($event, 150)"
                   >

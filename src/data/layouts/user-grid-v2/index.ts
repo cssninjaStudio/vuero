@@ -1,7 +1,7 @@
 export const users = [
   {
     id: 13,
-    picture: '/demo/avatars/13.jpg',
+    picture: 'https://media.cssninja.io/content/avatars/13.jpg',
     badge: '/images/icons/stacks/illustrator.svg',
     username: 'Tara S.',
     fullName: 'Tara Svenson',
@@ -24,7 +24,7 @@ export const users = [
       },
       {
         id: 18,
-        picture: '/demo/avatars/18.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/18.jpg',
         name: 'Esteban C.',
         initials: 'EC',
         color: 'h-purple',
@@ -38,7 +38,7 @@ export const users = [
       },
       {
         id: 7,
-        picture: '/demo/avatars/7.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/7.jpg',
         name: 'Alice C.',
         initials: 'AC',
         color: 'success',
@@ -47,7 +47,7 @@ export const users = [
   },
   {
     id: 37,
-    picture: '/demo/avatars/37.jpg',
+    picture: 'https://media.cssninja.io/content/avatars/37.jpg',
     badge: '/images/icons/flags/france.svg',
     username: 'Helmut F.',
     fullName: 'Helmut Fritz',
@@ -63,7 +63,7 @@ export const users = [
     team: [
       {
         id: 21,
-        picture: '/demo/avatars/21.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/21.jpg',
         name: 'Elizabet F.',
         initials: 'EF',
         color: 'warning',
@@ -77,7 +77,7 @@ export const users = [
       },
       {
         id: 39,
-        picture: '/demo/avatars/39.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/39.jpg',
         name: 'Alejandro B.',
         initials: 'AB',
         color: 'danger',
@@ -86,7 +86,7 @@ export const users = [
   },
   {
     id: 25,
-    picture: '/demo/avatars/25.jpg',
+    picture: 'https://media.cssninja.io/content/avatars/25.jpg',
     badge: '/images/icons/stacks/js.svg',
     username: 'Melany W.',
     fullName: 'Melany Wallace',
@@ -102,7 +102,7 @@ export const users = [
     team: [
       {
         id: 21,
-        picture: '/demo/avatars/21.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/21.jpg',
         name: 'Elizabet F.',
         initials: 'EF',
         color: 'warning',
@@ -116,7 +116,7 @@ export const users = [
       },
       {
         id: 39,
-        picture: '/demo/avatars/39.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/39.jpg',
         name: 'Alejandro B.',
         initials: 'AB',
         color: 'danger',
@@ -125,7 +125,7 @@ export const users = [
   },
   {
     id: 29,
-    picture: '/demo/avatars/29.jpg',
+    picture: 'https://media.cssninja.io/content/avatars/29.jpg',
     badge: '/images/icons/stacks/python.svg',
     username: 'Hakeem C.',
     fullName: 'Hakeem Calami',
@@ -141,14 +141,14 @@ export const users = [
     team: [
       {
         id: 28,
-        picture: '/demo/avatars/28.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/28.jpg',
         name: 'Edouard F.',
         initials: 'EF',
         color: 'info',
       },
       {
         id: 33,
-        picture: '/demo/avatars/33.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/33.jpg',
         name: 'Harvey M.',
         initials: 'HM',
         color: 'warning',
@@ -157,7 +157,7 @@ export const users = [
   },
   {
     id: 39,
-    picture: '/demo/avatars/39.jpg',
+    picture: 'https://media.cssninja.io/content/avatars/39.jpg',
     badge: '/images/icons/stacks/python.svg',
     username: 'Alejandro B.',
     fullName: 'Alejandro Badajoz',
@@ -180,7 +180,7 @@ export const users = [
       },
       {
         id: 23,
-        picture: '/demo/avatars/23.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/23.jpg',
         name: 'Irina V.',
         initials: 'IV',
         color: 'danger',
@@ -189,7 +189,7 @@ export const users = [
   },
   {
     id: 40,
-    picture: '/demo/avatars/40.jpg',
+    picture: 'https://media.cssninja.io/content/avatars/40.jpg',
     badge: '/images/icons/stacks/android.svg',
     username: 'Jeanne M.',
     fullName: 'Jeanne Marchand',
@@ -212,7 +212,7 @@ export const users = [
       },
       {
         id: 18,
-        picture: '/demo/avatars/18.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/18.jpg',
         name: 'Esteban C.',
         initials: 'EC',
         color: 'h-purple',
@@ -228,7 +228,7 @@ export const users = [
   },
   {
     id: 19,
-    picture: '/demo/avatars/19.jpg',
+    picture: 'https://media.cssninja.io/content/avatars/19.jpg',
     badge: '/images/icons/flags/germany.svg',
     username: 'Greta K.',
     fullName: 'Greta Kroppfer',
@@ -251,7 +251,7 @@ export const users = [
       },
       {
         id: 27,
-        picture: '/demo/avatars/27.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/27.jpg',
         name: 'Carmen E.',
         initials: 'CE',
         color: 'info',
@@ -260,7 +260,7 @@ export const users = [
   },
   {
     id: 9,
-    picture: '/demo/avatars/9.jpg',
+    picture: 'https://media.cssninja.io/content/avatars/9.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Anna B.',
     fullName: 'Anna Baker',
@@ -283,7 +283,7 @@ export const users = [
       },
       {
         id: 23,
-        picture: '/demo/avatars/23.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/23.jpg',
         name: 'Irina V.',
         initials: 'IV',
         color: 'danger',
@@ -292,7 +292,7 @@ export const users = [
   },
   {
     id: 5,
-    picture: '/demo/avatars/5.jpg',
+    picture: 'https://media.cssninja.io/content/avatars/5.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Mary L.',
     fullName: 'Mary Lebowski',
@@ -315,7 +315,7 @@ export const users = [
       },
       {
         id: 18,
-        picture: '/demo/avatars/18.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/18.jpg',
         name: 'Esteban C.',
         initials: 'EC',
         color: 'h-purple',
@@ -329,7 +329,7 @@ export const users = [
       },
       {
         id: 7,
-        picture: '/demo/avatars/7.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/7.jpg',
         name: 'Alice C.',
         initials: 'AC',
         color: 'success',
@@ -338,7 +338,7 @@ export const users = [
   },
   {
     id: 32,
-    picture: '/demo/avatars/32.jpg',
+    picture: 'https://media.cssninja.io/content/avatars/32.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Jonathan K.',
     fullName: 'Jonathan Krugger',
@@ -354,7 +354,7 @@ export const users = [
     team: [
       {
         id: 21,
-        picture: '/demo/avatars/21.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/21.jpg',
         name: 'Elizabet F.',
         initials: 'EF',
         color: 'warning',
@@ -368,7 +368,7 @@ export const users = [
       },
       {
         id: 39,
-        picture: '/demo/avatars/39.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/39.jpg',
         name: 'Alejandro B.',
         initials: 'AB',
         color: 'danger',
@@ -377,7 +377,7 @@ export const users = [
   },
   {
     id: 36,
-    picture: '/demo/avatars/36.jpg',
+    picture: 'https://media.cssninja.io/content/avatars/36.jpg',
     badge: '/images/icons/flags/france.svg',
     username: 'Benoit L.',
     fullName: 'Benoit Leblanc',
@@ -400,7 +400,7 @@ export const users = [
       },
       {
         id: 31,
-        picture: '/demo/avatars/31.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/31.jpg',
         name: 'Yasseen A.',
         initials: 'YA',
         color: 'h-purple',
@@ -409,7 +409,7 @@ export const users = [
   },
   {
     id: 38,
-    picture: '/demo/avatars/38.jpg',
+    picture: 'https://media.cssninja.io/content/avatars/38.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Christie D.',
     fullName: 'Christie Dallas',
@@ -425,14 +425,14 @@ export const users = [
     team: [
       {
         id: 33,
-        picture: '/demo/avatars/33.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/33.jpg',
         name: 'Harvey M.',
         initials: 'HM',
         color: 'warning',
       },
       {
         id: 26,
-        picture: '/demo/avatars/26.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/26.jpg',
         name: 'Courtney W.',
         initials: 'CW',
         color: 'info',
@@ -441,7 +441,7 @@ export const users = [
   },
   {
     id: 26,
-    picture: '/demo/avatars/26.jpg',
+    picture: 'https://media.cssninja.io/content/avatars/26.jpg',
     badge: '/images/icons/flags/australia.svg',
     username: 'Courtney W.',
     fullName: 'Courtney Wilson',
@@ -457,7 +457,7 @@ export const users = [
     team: [
       {
         id: 21,
-        picture: '/demo/avatars/21.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/21.jpg',
         name: 'Elizabet F.',
         initials: 'EF',
         color: 'warning',
@@ -471,7 +471,7 @@ export const users = [
       },
       {
         id: 39,
-        picture: '/demo/avatars/39.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/39.jpg',
         name: 'Alejandro B.',
         initials: 'AB',
         color: 'danger',
@@ -480,7 +480,7 @@ export const users = [
   },
   {
     id: 16,
-    picture: '/demo/avatars/16.jpg',
+    picture: 'https://media.cssninja.io/content/avatars/16.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Jason G.',
     fullName: 'Jason Guarank',
@@ -496,7 +496,7 @@ export const users = [
     team: [
       {
         id: 14,
-        picture: '/demo/avatars/14.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/14.jpg',
         name: 'Ryan B.',
         initials: 'RB',
         color: 'warning',
@@ -512,7 +512,7 @@ export const users = [
   },
   {
     id: 23,
-    picture: '/demo/avatars/23.jpg',
+    picture: 'https://media.cssninja.io/content/avatars/23.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Irina V.',
     fullName: 'Irina Vierbovsky',
@@ -535,7 +535,7 @@ export const users = [
       },
       {
         id: 34,
-        picture: '/demo/avatars/34.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/34.jpg',
         name: 'Daniel R.',
         initials: 'DR',
         color: 'h-yellow',
@@ -544,7 +544,7 @@ export const users = [
   },
   {
     id: 28,
-    picture: '/demo/avatars/28.jpg',
+    picture: 'https://media.cssninja.io/content/avatars/28.jpg',
     badge: '/images/icons/flags/france.svg',
     username: 'Edouard F.',
     fullName: 'Edouard Falant',
@@ -567,7 +567,7 @@ export const users = [
       },
       {
         id: 18,
-        picture: '/demo/avatars/18.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/18.jpg',
         name: 'Esteban C.',
         initials: 'EC',
         color: 'h-purple',
@@ -583,7 +583,7 @@ export const users = [
   },
   {
     id: 7,
-    picture: '/demo/avatars/7.jpg',
+    picture: 'https://media.cssninja.io/content/avatars/7.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Alice C.',
     fullName: 'Alice Carasca',
@@ -599,7 +599,7 @@ export const users = [
     team: [
       {
         id: 25,
-        picture: '/demo/avatars/25.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/25.jpg',
         name: 'Melany W.',
         initials: 'MW',
         color: 'success',
@@ -613,7 +613,7 @@ export const users = [
       },
       {
         id: 12,
-        picture: '/demo/avatars/12.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/12.jpg',
         name: 'Joshua S.',
         initials: 'JS',
         color: 'warning',
@@ -622,7 +622,7 @@ export const users = [
   },
   {
     id: 22,
-    picture: '/demo/avatars/22.jpg',
+    picture: 'https://media.cssninja.io/content/avatars/22.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Dwayne H.',
     fullName: 'Dwayne Hicks',

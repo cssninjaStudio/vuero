@@ -87,7 +87,7 @@ const { trendWidgetChartOptions } = useTrendWidgetChart()
       <UIWidget class="video-widget">
         <template #body>
           <UIWidgetMovie
-            picture="/demo/photos/widgets/1.jpg"
+            picture="https://media.cssninja.io/content/photos/widgets/1.jpg"
             views="38,274"
           />
         </template>
@@ -264,7 +264,7 @@ const { trendWidgetChartOptions } = useTrendWidgetChart()
       <UIWidget class="image-widget">
         <template #body>
           <img
-            src="/demo/photos/widgets/2.jpg"
+            src="https://media.cssninja.io/content/photos/widgets/2.jpg"
             alt=""
             @error.once="onceError($event, 400, 300)"
           >

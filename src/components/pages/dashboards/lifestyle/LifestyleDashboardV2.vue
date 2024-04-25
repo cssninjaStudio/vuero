@@ -35,7 +35,7 @@ const topicList = dashboardData.topicList as any[]
           <div class="column is-3">
             <div
               v-background="{
-                src: '/demo/photos/dashboards/lifestyle/1.jpg',
+                src: 'https://media.cssninja.io/content/photos/dashboards/lifestyle/1.jpg',
                 placeholder: 'https://via.placeholder.com/800x600',
               }"
               class="long-card has-background-image"
@@ -67,7 +67,7 @@ const topicList = dashboardData.topicList as any[]
           <div class="column is-3">
             <div
               v-background="{
-                src: '/demo/photos/dashboards/lifestyle/2.jpg',
+                src: 'https://media.cssninja.io/content/photos/dashboards/lifestyle/2.jpg',
                 placeholder: 'https://via.placeholder.com/800x600',
               }"
               class="long-card has-background-image"
@@ -99,7 +99,7 @@ const topicList = dashboardData.topicList as any[]
           <div class="column is-3">
             <div
               v-background="{
-                src: '/demo/photos/dashboards/lifestyle/3.jpg',
+                src: 'https://media.cssninja.io/content/photos/dashboards/lifestyle/3.jpg',
                 placeholder: 'https://via.placeholder.com/800x600',
               }"
               class="long-card has-background-image"
@@ -131,7 +131,7 @@ const topicList = dashboardData.topicList as any[]
           <div class="column is-3">
             <div
               v-background="{
-                src: '/demo/photos/dashboards/lifestyle/4.jpg',
+                src: 'https://media.cssninja.io/content/photos/dashboards/lifestyle/4.jpg',
                 placeholder: 'https://via.placeholder.com/800x600',
               }"
               class="long-card has-background-image"
@@ -181,7 +181,7 @@ const topicList = dashboardData.topicList as any[]
                 >
                   <template #icon>
                     <VAvatar
-                      picture="/demo/photos/dashboards/lifestyle/1.jpg"
+                      picture="https://media.cssninja.io/content/photos/dashboards/lifestyle/1.jpg"
                       squared
                     />
                   </template>
@@ -207,7 +207,7 @@ const topicList = dashboardData.topicList as any[]
                 >
                   <template #icon>
                     <VAvatar
-                      picture="/demo/photos/dashboards/lifestyle/2.jpg"
+                      picture="https://media.cssninja.io/content/photos/dashboards/lifestyle/2.jpg"
                       squared
                     />
                   </template>
@@ -232,7 +232,7 @@ const topicList = dashboardData.topicList as any[]
                 >
                   <template #icon>
                     <VAvatar
-                      picture="/demo/photos/dashboards/lifestyle/3.jpg"
+                      picture="https://media.cssninja.io/content/photos/dashboards/lifestyle/3.jpg"
                       squared
                     />
                   </template>
@@ -257,7 +257,7 @@ const topicList = dashboardData.topicList as any[]
                 >
                   <template #icon>
                     <VAvatar
-                      picture="/demo/photos/dashboards/lifestyle/4.jpg"
+                      picture="https://media.cssninja.io/content/photos/dashboards/lifestyle/4.jpg"
                       squared
                     />
                   </template>
@@ -305,7 +305,7 @@ const topicList = dashboardData.topicList as any[]
                 >
                   <template #icon>
                     <VAvatar
-                      picture="/demo/photos/dashboards/lifestyle/5.jpg"
+                      picture="https://media.cssninja.io/content/photos/dashboards/lifestyle/5.jpg"
                       squared
                     />
                   </template>
@@ -330,7 +330,7 @@ const topicList = dashboardData.topicList as any[]
                 >
                   <template #icon>
                     <VAvatar
-                      picture="/demo/photos/dashboards/lifestyle/6.jpg"
+                      picture="https://media.cssninja.io/content/photos/dashboards/lifestyle/6.jpg"
                       squared
                     />
                   </template>
@@ -355,7 +355,7 @@ const topicList = dashboardData.topicList as any[]
                 >
                   <template #icon>
                     <VAvatar
-                      picture="/demo/photos/dashboards/lifestyle/7.jpg"
+                      picture="https://media.cssninja.io/content/photos/dashboards/lifestyle/7.jpg"
                       squared
                     />
                   </template>
@@ -380,7 +380,7 @@ const topicList = dashboardData.topicList as any[]
                 >
                   <template #icon>
                     <VAvatar
-                      picture="/demo/photos/dashboards/lifestyle/7.jpg"
+                      picture="https://media.cssninja.io/content/photos/dashboards/lifestyle/7.jpg"
                       squared
                     />
                   </template>

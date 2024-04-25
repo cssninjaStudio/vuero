@@ -253,7 +253,7 @@ useHead({
             <tbody>
               <tr>
                 <td class="is-media">
-                  <VAvatar picture="/demo/avatars/8.gif" />
+                  <VAvatar picture="https://media.cssninja.io/content/avatars/8.gif" />
                 </td>
                 <td>Tina</td>
                 <td>Bergmann</td>
@@ -266,7 +266,7 @@ useHead({
               </tr>
               <tr>
                 <td class="is-media">
-                  <VAvatar picture="/demo/avatars/1.gif" />
+                  <VAvatar picture="https://media.cssninja.io/content/avatars/1.gif" />
                 </td>
                 <td>John</td>
                 <td>Wistmus</td>
@@ -279,7 +279,7 @@ useHead({
               </tr>
               <tr>
                 <td class="is-media">
-                  <VAvatar picture="/demo/avatars/4.gif" />
+                  <VAvatar picture="https://media.cssninja.io/content/avatars/4.gif" />
                 </td>
                 <td>Sam</td>
                 <td>Watson</td>
@@ -308,7 +308,7 @@ useHead({
               </tr>
               <tr>
                 <td class="is-media">
-                  <VAvatar picture="/demo/avatars/3.gif" />
+                  <VAvatar picture="https://media.cssninja.io/content/avatars/3.gif" />
                 </td>
                 <td>Anders</td>
                 <td>Jensen</td>

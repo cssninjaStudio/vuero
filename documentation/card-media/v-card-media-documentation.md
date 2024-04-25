@@ -11,8 +11,8 @@ Check the code example for more details.
 ```vue
 <template>
   <VCardMedia
-    image="/demo/photos/apps/1.jpg"
-    avatar="/demo/avatars/19.jpg"
+    image="https://media.cssninja.io/content/photos/apps/1.jpg"
+    avatar="https://media.cssninja.io/content/avatars/19.jpg"
     badge="/images/icons/flags/germany.svg"
     title="Greta K."
     subtitle="Sales Manager"

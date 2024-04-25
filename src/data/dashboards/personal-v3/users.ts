@@ -1,19 +1,19 @@
 export const userStack = [
   {
     id: 5,
-    picture: '/demo/avatars/5.jpg',
+    picture: 'https://media.cssninja.io/content/avatars/5.jpg',
     initials: 'ML',
     color: 'info',
   },
   {
     id: 18,
-    picture: '/demo/avatars/18.jpg',
+    picture: 'https://media.cssninja.io/content/avatars/18.jpg',
     initials: 'EC',
     color: 'warning',
   },
   {
     id: 26,
-    // picture: '/demo/avatars/26.jpg',
+    // picture: 'https://media.cssninja.io/content/avatars/26.jpg',
     initials: 'CW',
     color: 'h-purple',
   },

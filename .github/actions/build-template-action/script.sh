@@ -26,7 +26,6 @@ echo "::debug::${ARCHIVE}"
 
 # top level zip release-${INPUT_PROJECT}-${INPUT_TAG}.zip 
 zip -r $ARCHIVE . \
-  -x "public/demo/*" \
   -x "*.zip" \
   -x "node_modules/*" \
   -x ".git/*" \

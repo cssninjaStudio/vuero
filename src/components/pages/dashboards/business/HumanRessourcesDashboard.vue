@@ -72,15 +72,15 @@ const columns = {
                 </p>
                 <div class="candidates">
                   <VAvatar
-                    picture="/demo/avatars/13.jpg"
+                    picture="https://media.cssninja.io/content/avatars/13.jpg"
                     squared
                   />
                   <VAvatar
-                    picture="/demo/avatars/32.jpg"
+                    picture="https://media.cssninja.io/content/avatars/32.jpg"
                     squared
                   />
                   <VAvatar
-                    picture="/demo/avatars/9.jpg"
+                    picture="https://media.cssninja.io/content/avatars/9.jpg"
                     squared
                   />
                   <button>
@@ -235,7 +235,7 @@ const columns = {
                   <div class="grid-item">
                     <UserCardDropdown />
                     <VAvatar
-                      picture="/demo/avatars/13.jpg"
+                      picture="https://media.cssninja.io/content/avatars/13.jpg"
                       badge="/images/icons/stacks/illustrator.svg"
                       size="large"
                     />
@@ -258,7 +258,7 @@ const columns = {
                   <div class="grid-item">
                     <UserCardDropdown />
                     <VAvatar
-                      picture="/demo/avatars/37.jpg"
+                      picture="https://media.cssninja.io/content/avatars/37.jpg"
                       badge="/images/icons/flags/france.svg"
                       size="large"
                     />
@@ -281,7 +281,7 @@ const columns = {
                   <div class="grid-item">
                     <UserCardDropdown />
                     <VAvatar
-                      picture="/demo/avatars/25.jpg"
+                      picture="https://media.cssninja.io/content/avatars/25.jpg"
                       badge="/images/icons/stacks/js.svg"
                       size="large"
                     />

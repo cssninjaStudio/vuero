@@ -222,7 +222,7 @@ const { onceError } = useImageError()
           <div class="card-image">
             <figure class="image is-4by3">
               <img
-                src="/demo/photos/30.jpg"
+                src="https://media.cssninja.io/content/photos/30.jpg"
                 alt=""
                 @error.once="onceError($event, 1280, 960)"
               >
@@ -232,28 +232,28 @@ const { onceError } = useImageError()
             <div class="post-group">
               <a>
                 <img
-                  src="/demo/photos/33.jpg"
+                  src="https://media.cssninja.io/content/photos/33.jpg"
                   alt=""
                   @error.once="onceError($event, 1280, 960)"
                 >
               </a>
               <a>
                 <img
-                  src="/demo/photos/34.jpg"
+                  src="https://media.cssninja.io/content/photos/34.jpg"
                   alt=""
                   @error.once="onceError($event, 1280, 960)"
                 >
               </a>
               <a>
                 <img
-                  src="/demo/photos/35.jpeg"
+                  src="https://media.cssninja.io/content/photos/35.jpeg"
                   alt=""
                   @error.once="onceError($event, 1280, 960)"
                 >
               </a>
               <a>
                 <img
-                  src="/demo/photos/36.jpg"
+                  src="https://media.cssninja.io/content/photos/36.jpg"
                   alt=""
                   @error.once="onceError($event, 1280, 960)"
                 >
@@ -281,7 +281,7 @@ const { onceError } = useImageError()
           <div class="card-image">
             <figure class="image is-4by3">
               <img
-                src="/demo/photos/31.png"
+                src="https://media.cssninja.io/content/photos/31.png"
                 alt=""
                 @error.once="onceError($event, 1280, 960)"
               >
@@ -291,28 +291,28 @@ const { onceError } = useImageError()
             <div class="post-group">
               <a>
                 <img
-                  src="/demo/photos/33.jpg"
+                  src="https://media.cssninja.io/content/photos/33.jpg"
                   alt=""
                   @error.once="onceError($event, 1280, 960)"
                 >
               </a>
               <a>
                 <img
-                  src="/demo/photos/34.jpg"
+                  src="https://media.cssninja.io/content/photos/34.jpg"
                   alt=""
                   @error.once="onceError($event, 1280, 960)"
                 >
               </a>
               <a>
                 <img
-                  src="/demo/photos/35.jpeg"
+                  src="https://media.cssninja.io/content/photos/35.jpeg"
                   alt=""
                   @error.once="onceError($event, 1280, 960)"
                 >
               </a>
               <a>
                 <img
-                  src="/demo/photos/36.jpg"
+                  src="https://media.cssninja.io/content/photos/36.jpg"
                   alt=""
                   @error.once="onceError($event, 1280, 960)"
                 >
@@ -340,7 +340,7 @@ const { onceError } = useImageError()
           <div class="card-image">
             <figure class="image is-4by3">
               <img
-                src="/demo/photos/32.jpg"
+                src="https://media.cssninja.io/content/photos/32.jpg"
                 alt=""
                 @error.once="onceError($event, 1280, 960)"
               >
@@ -350,28 +350,28 @@ const { onceError } = useImageError()
             <div class="post-group">
               <a>
                 <img
-                  src="/demo/photos/33.jpg"
+                  src="https://media.cssninja.io/content/photos/33.jpg"
                   alt=""
                   @error.once="onceError($event, 1280, 960)"
                 >
               </a>
               <a>
                 <img
-                  src="/demo/photos/34.jpg"
+                  src="https://media.cssninja.io/content/photos/34.jpg"
                   alt=""
                   @error.once="onceError($event, 1280, 960)"
                 >
               </a>
               <a>
                 <img
-                  src="/demo/photos/35.jpeg"
+                  src="https://media.cssninja.io/content/photos/35.jpeg"
                   alt=""
                   @error.once="onceError($event, 1280, 960)"
                 >
               </a>
               <a>
                 <img
-                  src="/demo/photos/36.jpg"
+                  src="https://media.cssninja.io/content/photos/36.jpg"
                   alt=""
                   @error.once="onceError($event, 1280, 960)"
                 >

@@ -3,7 +3,7 @@ export const members = {
   list: [
     {
       id: 33,
-      avatar: '/demo/avatars/33.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/33.jpg',
       badge: '/images/icons/flags/united-states-of-america.svg',
       username: 'Harvey M.',
       fullName: 'Harvey Miller',
@@ -15,7 +15,7 @@ export const members = {
     },
     {
       id: 12,
-      avatar: '/demo/avatars/12.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/12.jpg',
       badge: '/images/icons/flags/united-states-of-america.svg',
       username: 'Joshua S.',
       fullName: 'Joshua Stevens',
@@ -27,7 +27,7 @@ export const members = {
     },
     {
       id: 5,
-      avatar: '/demo/avatars/5.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/5.jpg',
       badge: '/images/icons/flags/united-states-of-america.svg',
       username: 'Mary L.',
       fullName: 'Mary Lebowski',
@@ -39,7 +39,7 @@ export const members = {
     },
     {
       id: 7,
-      avatar: '/demo/avatars/7.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/7.jpg',
       badge: '/images/icons/flags/united-states-of-america.svg',
       username: 'Alice C.',
       fullName: 'Alice Carasca',
@@ -77,7 +77,7 @@ export const featuredLeft = {
       duration: '05:17',
       author: {
         name: 'Alice C.',
-        avatar: '/demo/avatars/7.jpg',
+        avatar: 'https://media.cssninja.io/content/avatars/7.jpg',
       },
       comments: 3,
     },
@@ -90,7 +90,7 @@ export const featuredLeft = {
       duration: '03:12',
       author: {
         name: 'Tara S.',
-        avatar: '/demo/avatars/13.jpg',
+        avatar: 'https://media.cssninja.io/content/avatars/13.jpg',
       },
       comments: 0,
     },
@@ -109,7 +109,7 @@ export const featuredRight = {
       duration: '04:24',
       author: {
         name: 'Joshua S.',
-        avatar: '/demo/avatars/12.jpg',
+        avatar: 'https://media.cssninja.io/content/avatars/12.jpg',
       },
       comments: 5,
     },
@@ -122,7 +122,7 @@ export const featuredRight = {
       duration: '04:24',
       author: {
         name: 'Greta K.',
-        avatar: '/demo/avatars/19.jpg',
+        avatar: 'https://media.cssninja.io/content/avatars/19.jpg',
       },
       comments: 3,
     },
@@ -135,7 +135,7 @@ export const featuredRight = {
       duration: '07:11',
       author: {
         name: 'Mary L.',
-        avatar: '/demo/avatars/5.jpg',
+        avatar: 'https://media.cssninja.io/content/avatars/5.jpg',
       },
       comments: 3,
     },
@@ -148,7 +148,7 @@ export const featuredRight = {
       duration: '12:37',
       author: {
         name: 'Esteban C.',
-        avatar: '/demo/avatars/18.jpg',
+        avatar: 'https://media.cssninja.io/content/avatars/18.jpg',
       },
       comments: 9,
     },
@@ -165,7 +165,7 @@ export const feed = [
     duration: '04:24',
     author: {
       name: 'Joshua S.',
-      avatar: '/demo/avatars/12.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/12.jpg',
     },
     comments: 5,
   },
@@ -178,7 +178,7 @@ export const feed = [
     duration: '12:18',
     author: {
       name: 'Mary L.',
-      avatar: '/demo/avatars/5.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/5.jpg',
     },
     comments: 4,
   },
@@ -191,7 +191,7 @@ export const feed = [
     duration: '06:19',
     author: {
       name: 'Carmen E.',
-      avatar: '/demo/avatars/27.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/27.jpg',
     },
     comments: 8,
   },
@@ -204,7 +204,7 @@ export const feed = [
     duration: '03:49',
     author: {
       name: 'Elizabeth F.',
-      avatar: '/demo/avatars/21.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/21.jpg',
     },
     comments: 11,
   },
@@ -217,7 +217,7 @@ export const feed = [
     duration: '07:21',
     author: {
       name: 'Irina V.',
-      avatar: '/demo/avatars/23.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/23.jpg',
     },
     comments: 9,
   },
@@ -230,7 +230,7 @@ export const feed = [
     duration: '15:39',
     author: {
       name: 'Jeanne M.',
-      avatar: '/demo/avatars/40.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/40.jpg',
     },
     comments: 2,
   },
@@ -243,7 +243,7 @@ export const feed = [
     duration: '11:16',
     author: {
       name: 'Dwayne H.',
-      avatar: '/demo/avatars/22.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/22.jpg',
     },
     comments: 0,
   },
@@ -256,7 +256,7 @@ export const feed = [
     duration: '.8:43',
     author: {
       name: 'Jason G.',
-      avatar: '/demo/avatars/16.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/16.jpg',
     },
     comments: 6,
   },
@@ -269,7 +269,7 @@ export const feed = [
     duration: '07:16',
     author: {
       name: 'Joshua S.',
-      avatar: '/demo/avatars/12.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/12.jpg',
     },
     comments: 5,
   },
@@ -282,7 +282,7 @@ export const feed = [
     duration: '11:17',
     author: {
       name: 'Melany W.',
-      avatar: '/demo/avatars/25.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/25.jpg',
     },
     comments: 12,
   },
@@ -295,7 +295,7 @@ export const feed = [
     duration: '11:17',
     author: {
       name: 'Clément D.',
-      avatar: '/demo/avatars/30.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/30.jpg',
     },
     comments: 3,
   },
@@ -308,7 +308,7 @@ export const feed = [
     duration: '08:49',
     author: {
       name: 'Harvey M.',
-      avatar: '/demo/avatars/33.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/33.jpg',
     },
     comments: 5,
   },

@@ -172,7 +172,6 @@ find src/assets -type d -empty -delete
 
 # top level zip release-${INPUT_PROJECT}-${INPUT_TAG}.zip 
 zip -r $ARCHIVE . \
-  -x "public/demo/*" \
   -x "*.zip" \
   -x "node_modules/*" \
   -x "vite-plugin-vuero-doc/*" \

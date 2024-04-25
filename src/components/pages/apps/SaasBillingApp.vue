@@ -199,7 +199,7 @@ const selected = ref('value_2')
                 interactive
                 placement="bottom"
               >
-                <VAvatar picture="/demo/avatars/18.jpg" />
+                <VAvatar picture="https://media.cssninja.io/content/avatars/18.jpg" />
                 <template #content>
                   <UserPopoverContent :user="popovers.user18" />
                 </template>
@@ -226,7 +226,7 @@ const selected = ref('value_2')
                 interactive
                 placement="bottom"
               >
-                <VAvatar picture="/demo/avatars/7.jpg" />
+                <VAvatar picture="https://media.cssninja.io/content/avatars/7.jpg" />
                 <template #content>
                   <UserPopoverContent :user="popovers.user7" />
                 </template>

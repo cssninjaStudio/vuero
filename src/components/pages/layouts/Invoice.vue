@@ -129,7 +129,7 @@ const totalColumns = {
           >
             <VAvatar
               size="large"
-              picture="/demo/avatars/13.jpg"
+              picture="https://media.cssninja.io/content/avatars/13.jpg"
             />
             <template #content>
               <UserPopoverContent :user="popovers.user13" />
@@ -152,7 +152,7 @@ const totalColumns = {
           <VAvatar
             size="large"
             class="is-customer"
-            picture="/demo/photos/brands/airbnb.svg"
+            picture="https://media.cssninja.io/content/photos/brands/airbnb.svg"
           />
 
           <div class="meta">

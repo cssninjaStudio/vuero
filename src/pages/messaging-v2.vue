@@ -18,7 +18,7 @@ const conversations: conversationData[] = [
     name: 'Kelly Marston',
     role: 'Product Manager',
     avatar: {
-      picture: '/demo/avatars/11.jpg',
+      picture: 'https://media.cssninja.io/content/avatars/11.jpg',
     },
     lastMessage: '20m',
     lastMessagePreview: 'What time was our meeting scheduled for?',
@@ -28,7 +28,7 @@ const conversations: conversationData[] = [
     name: 'Alejandro Badajoz',
     role: 'Business Analyst',
     avatar: {
-      picture: '/demo/avatars/39.jpg',
+      picture: 'https://media.cssninja.io/content/avatars/39.jpg',
     },
     lastMessage: '24m',
     lastMessagePreview: 'Nah, I have a meeting that starts in 5.',
@@ -49,7 +49,7 @@ const conversations: conversationData[] = [
     name: 'Alice Carasca',
     role: 'Software Engineer',
     avatar: {
-      picture: '/demo/avatars/7.jpg',
+      picture: 'https://media.cssninja.io/content/avatars/7.jpg',
     },
     lastMessage: '47m',
     lastMessagePreview: 'I like the curves in this one.',
@@ -59,7 +59,7 @@ const conversations: conversationData[] = [
     name: 'Irina Vierbovsky',
     role: 'Project Manager',
     avatar: {
-      picture: '/demo/avatars/23.jpg',
+      picture: 'https://media.cssninja.io/content/avatars/23.jpg',
     },
     lastMessage: '56m',
     lastMessagePreview: 'I need some help on something Iam working on.',
@@ -69,7 +69,7 @@ const conversations: conversationData[] = [
     name: 'Mary Lebowski',
     role: 'Project Manager',
     avatar: {
-      picture: '/demo/avatars/5.jpg',
+      picture: 'https://media.cssninja.io/content/avatars/5.jpg',
     },
     lastMessage: '1h',
     lastMessagePreview: 'Still down for that movie?',
@@ -79,7 +79,7 @@ const conversations: conversationData[] = [
     name: 'Esteban Castellanos',
     role: 'UI/UX Designer',
     avatar: {
-      picture: '/demo/avatars/18.jpg',
+      picture: 'https://media.cssninja.io/content/avatars/18.jpg',
     },
     lastMessage: '1h',
     lastMessagePreview: 'I can send you the files.',
@@ -89,7 +89,7 @@ const conversations: conversationData[] = [
     name: 'Melany Wallace',
     role: 'Web Developer',
     avatar: {
-      picture: '/demo/avatars/25.jpg',
+      picture: 'https://media.cssninja.io/content/avatars/25.jpg',
     },
     lastMessage: '2h',
     lastMessagePreview: 'I has some issues with the headers tough.',
@@ -99,7 +99,7 @@ const conversations: conversationData[] = [
     name: 'Jimmy Hector',
     role: 'Project Manager',
     avatar: {
-      picture: '/demo/avatars/22.jpg',
+      picture: 'https://media.cssninja.io/content/avatars/22.jpg',
     },
     lastMessage: '3h',
     lastMessagePreview: 'When are you available?',
@@ -109,7 +109,7 @@ const conversations: conversationData[] = [
     name: 'Greta Kroppfer',
     role: 'Sales Manager',
     avatar: {
-      picture: '/demo/avatars/19.jpg',
+      picture: 'https://media.cssninja.io/content/avatars/19.jpg',
     },
     lastMessage: '3h',
     lastMessagePreview: 'Thank you for you clean presentation, it was stunning.',
@@ -119,7 +119,7 @@ const conversations: conversationData[] = [
     name: 'Tara Svenson',
     role: 'UI/UX Designer',
     avatar: {
-      picture: '/demo/avatars/13.jpg',
+      picture: 'https://media.cssninja.io/content/avatars/13.jpg',
     },
     lastMessage: '9h',
     lastMessagePreview: 'Hope you like them.',
@@ -548,62 +548,62 @@ useHead({
               </div>
               <div class="detail-photo-grid">
                 <img
-                  src="/demo/photos/demo-apps/1.jpg"
+                  src="https://media.cssninja.io/content/photos/demo-apps/1.jpg"
                   alt=""
                   @error.once="onceError($event, 1600, 900)"
                 >
                 <img
-                  src="/demo/photos/demo-apps/2.jpg"
+                  src="https://media.cssninja.io/content/photos/demo-apps/2.jpg"
                   alt=""
                   @error.once="onceError($event, 1600, 900)"
                 >
                 <img
-                  src="/demo/photos/demo-apps/3.jpg"
+                  src="https://media.cssninja.io/content/photos/demo-apps/3.jpg"
                   alt=""
                   @error.once="onceError($event, 1600, 900)"
                 >
                 <img
-                  src="/demo/photos/demo-apps/4.jpg"
+                  src="https://media.cssninja.io/content/photos/demo-apps/4.jpg"
                   alt=""
                   @error.once="onceError($event, 1600, 900)"
                 >
                 <img
-                  src="/demo/photos/demo-apps/5.jpg"
+                  src="https://media.cssninja.io/content/photos/demo-apps/5.jpg"
                   alt=""
                   @error.once="onceError($event, 1600, 900)"
                 >
                 <img
-                  src="/demo/photos/demo-apps/6.jpg"
+                  src="https://media.cssninja.io/content/photos/demo-apps/6.jpg"
                   alt=""
                   @error.once="onceError($event, 1600, 900)"
                 >
                 <img
-                  src="/demo/photos/demo-apps/7.jpg"
+                  src="https://media.cssninja.io/content/photos/demo-apps/7.jpg"
                   alt=""
                   @error.once="onceError($event, 1600, 900)"
                 >
                 <img
-                  src="/demo/photos/demo-apps/8.jpg"
+                  src="https://media.cssninja.io/content/photos/demo-apps/8.jpg"
                   alt=""
                   @error.once="onceError($event, 1600, 900)"
                 >
                 <img
-                  src="/demo/photos/demo-apps/9.jpg"
+                  src="https://media.cssninja.io/content/photos/demo-apps/9.jpg"
                   alt=""
                   @error.once="onceError($event, 1600, 900)"
                 >
                 <img
-                  src="/demo/photos/demo-apps/10.jpg"
+                  src="https://media.cssninja.io/content/photos/demo-apps/10.jpg"
                   alt=""
                   @error.once="onceError($event, 1600, 900)"
                 >
                 <img
-                  src="/demo/photos/demo-apps/11.jpg"
+                  src="https://media.cssninja.io/content/photos/demo-apps/11.jpg"
                   alt=""
                   @error.once="onceError($event, 1600, 900)"
                 >
                 <img
-                  src="/demo/photos/demo-apps/12.jpg"
+                  src="https://media.cssninja.io/content/photos/demo-apps/12.jpg"
                   alt=""
                   @error.once="onceError($event, 1600, 900)"
                 >

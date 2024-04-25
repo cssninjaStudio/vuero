@@ -9,7 +9,7 @@ Use the `size="small"` prop on the component to show a smaller version of it.
 <template>
   <VSnack
     title="Support"
-    image="/demo/photos/misc/buoy.jpg"
+    image="https://media.cssninja.io/content/photos/misc/buoy.jpg"
     size="small"
   >
     <VIcon icon="lucide:x" />
@@ -23,7 +23,7 @@ Use the `size="small"` prop on the component to show a smaller version of it.
   </VSnack>
   <VSnack
     title="Corporate"
-    image="/demo/avatars/7.jpg"
+    image="https://media.cssninja.io/content/avatars/7.jpg"
     size="small"
   >
     <VIcon icon="lucide:x" />
@@ -50,13 +50,13 @@ Use the `size="small"` prop on the component to show a smaller version of it.
 <!--example-->
 
 <div class="snacks">
-    <VSnack title="Support" image="/demo/photos/misc/buoy.jpg" size="small">
+    <VSnack title="Support" image="https://media.cssninja.io/content/photos/misc/buoy.jpg" size="small">
         <VIcon icon="lucide:x"/>
     </VSnack>
     <VSnack title="Metamovies" image="/images/icons/logos/metamovies.svg" size="small">
         <VIcon icon="lucide:x"/>
     </VSnack>
-    <VSnack title="Corporate" image="/demo/avatars/7.jpg" size="small">
+    <VSnack title="Corporate" image="https://media.cssninja.io/content/avatars/7.jpg" size="small">
         <VIcon icon="lucide:x"/>
     </VSnack>
     <VSnack title="English" image="/images/icons/flags/united-states-of-america.svg" size="small">

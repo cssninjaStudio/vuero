@@ -64,7 +64,7 @@ useHead({
           <div class="list-block">
             <div class="icon-wrap">
               <img
-                src="/demo/photos/animaticons/lightbulb.gif"
+                src="https://media.cssninja.io/content/photos/animaticons/lightbulb.gif"
                 alt=""
                 @error.once="onceError($event, 150)"
               >
@@ -94,7 +94,7 @@ useHead({
           <div class="list-block api">
             <div class="icon-wrap">
               <img
-                src="/demo/photos/animaticons/image.gif"
+                src="https://media.cssninja.io/content/photos/animaticons/image.gif"
                 alt=""
                 @error.once="onceError($event, 150)"
               >
@@ -124,7 +124,7 @@ useHead({
           <div class="list-block">
             <div class="icon-wrap">
               <img
-                src="/demo/photos/animaticons/search.gif"
+                src="https://media.cssninja.io/content/photos/animaticons/search.gif"
                 alt=""
                 @error.once="onceError($event, 150)"
               >
@@ -154,7 +154,7 @@ useHead({
           <div class="list-block">
             <div class="icon-wrap">
               <img
-                src="/demo/photos/animaticons/diamond.gif"
+                src="https://media.cssninja.io/content/photos/animaticons/diamond.gif"
                 alt=""
                 @error.once="onceError($event, 150)"
               >
@@ -184,7 +184,7 @@ useHead({
           <div class="list-block api">
             <div class="icon-wrap">
               <img
-                src="/demo/photos/animaticons/chart.gif"
+                src="https://media.cssninja.io/content/photos/animaticons/chart.gif"
                 alt=""
                 @error.once="onceError($event, 150)"
               >
@@ -214,7 +214,7 @@ useHead({
           <div class="list-block api">
             <div class="icon-wrap">
               <img
-                src="/demo/photos/animaticons/rocket.gif"
+                src="https://media.cssninja.io/content/photos/animaticons/rocket.gif"
                 alt=""
                 @error.once="onceError($event, 150)"
               >
@@ -244,7 +244,7 @@ useHead({
           <div class="list-block">
             <div class="icon-wrap">
               <img
-                src="/demo/photos/animaticons/check.gif"
+                src="https://media.cssninja.io/content/photos/animaticons/check.gif"
                 alt=""
                 @error.once="onceError($event, 150)"
               >

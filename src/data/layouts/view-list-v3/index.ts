@@ -1,7 +1,7 @@
 export const offers = [
   {
     id: '1',
-    logo: '/demo/photos/brands/airbnb.svg',
+    logo: 'https://media.cssninja.io/content/photos/brands/airbnb.svg',
     title: 'Node JS Fullstack Developer wanted 👌',
     location: 'San Diego',
     duration: 'Full Time',
@@ -9,7 +9,7 @@ export const offers = [
   },
   {
     id: '2',
-    logo: '/demo/photos/brands/hubspot.svg',
+    logo: 'https://media.cssninja.io/content/photos/brands/hubspot.svg',
     title: 'Project Manager for React Native Project',
     location: 'Los Angeles',
     duration: 'Part Time',
@@ -17,7 +17,7 @@ export const offers = [
   },
   {
     id: '3',
-    logo: '/demo/photos/brands/slack.svg',
+    logo: 'https://media.cssninja.io/content/photos/brands/slack.svg',
     title: 'UI/UX Designer to Consolidate the UX Team 💪💪',
     location: 'Los Angeles',
     duration: 'Full Time',
@@ -25,7 +25,7 @@ export const offers = [
   },
   {
     id: '4',
-    logo: '/demo/photos/brands/gitlab.svg',
+    logo: 'https://media.cssninja.io/content/photos/brands/gitlab.svg',
     title: 'IT Team Senior DevOps Manager',
     location: 'Los Angeles',
     duration: 'Full Time',
@@ -33,7 +33,7 @@ export const offers = [
   },
   {
     id: '5',
-    logo: '/demo/photos/brands/google.svg',
+    logo: 'https://media.cssninja.io/content/photos/brands/google.svg',
     title: 'Fullstack Developer With Solid MongoDB Skills',
     location: 'San Francisco',
     duration: 'Full Time',
@@ -41,7 +41,7 @@ export const offers = [
   },
   {
     id: '6',
-    logo: '/demo/photos/brands/facebook.svg',
+    logo: 'https://media.cssninja.io/content/photos/brands/facebook.svg',
     title: 'Fullstack Javascript and Node JS Developer',
     location: 'Pasadena',
     duration: 'Full Time',
@@ -49,7 +49,7 @@ export const offers = [
   },
   {
     id: '7',
-    logo: '/demo/photos/brands/tnw.svg',
+    logo: 'https://media.cssninja.io/content/photos/brands/tnw.svg',
     title: 'Product Owner for React Native Project',
     location: 'Los Angeles',
     duration: 'Full Time',
@@ -57,7 +57,7 @@ export const offers = [
   },
   {
     id: '8',
-    logo: '/demo/photos/brands/dribbble.svg',
+    logo: 'https://media.cssninja.io/content/photos/brands/dribbble.svg',
     title: 'UI/UX Designer With Html5 and Sass Skills 👍',
     location: 'San Diego',
     duration: 'Full Time',
@@ -65,7 +65,7 @@ export const offers = [
   },
   {
     id: '9',
-    logo: '/demo/photos/brands/atlassian.svg',
+    logo: 'https://media.cssninja.io/content/photos/brands/atlassian.svg',
     title: 'Experienced Senior UX Team Manager',
     location: 'Melbourne',
     duration: 'Full Time',
@@ -73,7 +73,7 @@ export const offers = [
   },
   {
     id: '10',
-    logo: '/demo/photos/brands/github.svg',
+    logo: 'https://media.cssninja.io/content/photos/brands/github.svg',
     title: 'Fullstack Javascript and Node JS Developer',
     location: 'Los Angeles',
     duration: 'Part Time',
@@ -81,7 +81,7 @@ export const offers = [
   },
   {
     id: '11',
-    logo: '/demo/photos/brands/airbnb.svg',
+    logo: 'https://media.cssninja.io/content/photos/brands/airbnb.svg',
     title: 'Node JS Fullstack Developer wanted 👌',
     location: 'San Diego',
     duration: 'Full Time',
@@ -89,7 +89,7 @@ export const offers = [
   },
   {
     id: '12',
-    logo: '/demo/photos/brands/airbnb.svg',
+    logo: 'https://media.cssninja.io/content/photos/brands/airbnb.svg',
     title: 'Node JS Fullstack Developer wanted 👌',
     location: 'San Diego',
     duration: 'Full Time',

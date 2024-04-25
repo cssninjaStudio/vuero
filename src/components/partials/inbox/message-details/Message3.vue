@@ -28,7 +28,7 @@ const dropdown2 = useDropdown(dropdownElement2)
     <div class="header-area">
       <img
         class="sender-pic"
-        src="/demo/avatars/19.jpg"
+        src="https://media.cssninja.io/content/avatars/19.jpg"
         alt=""
         @error.once="onceError($event, 150)"
       >

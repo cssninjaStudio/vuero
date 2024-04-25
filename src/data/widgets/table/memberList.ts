@@ -1,7 +1,7 @@
 export const memberList = [
   {
     id: 0,
-    picture: '/demo/avatars/8.gif',
+    picture: 'https://media.cssninja.io/content/avatars/8.gif',
     name: 'Tina Dasilva',
     initials: 'td',
     color: 'info',
@@ -26,7 +26,7 @@ export const memberList = [
   },
   {
     id: 1,
-    picture: '/demo/avatars/1.gif',
+    picture: 'https://media.cssninja.io/content/avatars/1.gif',
     name: 'John Wistmus',
     initials: 'jw',
     color: 'info',
@@ -47,7 +47,7 @@ export const memberList = [
   },
   {
     id: 2,
-    picture: '/demo/avatars/4.gif',
+    picture: 'https://media.cssninja.io/content/avatars/4.gif',
     name: 'Sam Watson',
     initials: 'sw',
     color: 'info',
@@ -89,7 +89,7 @@ export const memberList = [
   },
   {
     id: 4,
-    picture: '/demo/avatars/3.gif',
+    picture: 'https://media.cssninja.io/content/avatars/3.gif',
     name: 'Anders Jensen',
     initials: 'aj',
     color: 'info',

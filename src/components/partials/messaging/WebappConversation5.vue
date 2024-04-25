@@ -24,7 +24,7 @@ const { onceError } = useImageError()
       <div class="chat-area-group">
         <img
           class="chat-area-profile"
-          src="/demo/avatars/23.jpg"
+          src="https://media.cssninja.io/content/avatars/23.jpg"
           alt=""
           data-user-popover="21"
           @error.once="onceError($event, 150)"
@@ -36,7 +36,7 @@ const { onceError } = useImageError()
         <div class="chat-msg-profile">
           <img
             class="chat-msg-img"
-            src="/demo/avatars/23.jpg"
+            src="https://media.cssninja.io/content/avatars/23.jpg"
             alt=""
             data-user-popover="0"
             @error.once="onceError($event, 150)"

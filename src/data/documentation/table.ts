@@ -41,7 +41,7 @@ export const flexRowsContacts = [
     contacts: [
       {
         id: 0,
-        picture: '/demo/avatars/25.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/25.jpg',
         initials: 'AC',
         color: 'info',
       },
@@ -59,7 +59,7 @@ export const flexRowsContacts = [
       },
       {
         id: 3,
-        picture: '/demo/avatars/5.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/5.jpg',
         initials: 'ML',
         color: 'danger',
       },
@@ -101,7 +101,7 @@ export const flexRowsContacts = [
       },
       {
         id: 9,
-        picture: '/demo/avatars/7.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/7.jpg',
         initials: 'AC',
         color: 'h-purple',
       },
@@ -116,7 +116,7 @@ export const flexRowsContacts = [
     contacts: [
       {
         id: 7,
-        picture: '/demo/avatars/13.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/13.jpg',
         initials: 'TS',
         color: 'info',
       },
@@ -131,19 +131,19 @@ export const flexRowsContacts = [
     contacts: [
       {
         id: 0,
-        picture: '/demo/avatars/25.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/25.jpg',
         initials: 'AC',
         color: 'info',
       },
       {
         id: 14,
-        picture: '/demo/avatars/11.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/11.jpg',
         initials: 'KL',
         color: 'danger',
       },
       {
         id: 17,
-        picture: '/demo/avatars/5.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/5.jpg',
         initials: 'ML',
         color: 'warning',
       },
@@ -165,7 +165,7 @@ export const flexRowsAdvanced = [
     contacts: [
       {
         id: 0,
-        picture: '/demo/avatars/25.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/25.jpg',
         initials: 'AC',
         color: 'info',
       },
@@ -183,7 +183,7 @@ export const flexRowsAdvanced = [
       },
       {
         id: 3,
-        picture: '/demo/avatars/5.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/5.jpg',
         initials: 'ML',
         color: 'danger',
       },
@@ -199,7 +199,7 @@ export const flexRowsAdvanced = [
     id: 1,
     username: 'Jimmy H.',
     position: 'Project Manager',
-    picture: '/demo/avatars/22.jpg',
+    picture: 'https://media.cssninja.io/content/avatars/22.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     location: 'Los Angeles, CA',
     industry: 'Business',
@@ -218,7 +218,7 @@ export const flexRowsAdvanced = [
     id: 2,
     username: 'Melany W.',
     position: 'Web Developer',
-    picture: '/demo/avatars/25.jpg',
+    picture: 'https://media.cssninja.io/content/avatars/25.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     location: 'San Jose, CA',
     industry: 'Design',
@@ -233,7 +233,7 @@ export const flexRowsAdvanced = [
       },
       {
         id: 9,
-        picture: '/demo/avatars/7.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/7.jpg',
         initials: 'AC',
         color: 'h-purple',
       },
@@ -243,7 +243,7 @@ export const flexRowsAdvanced = [
     id: 3,
     username: 'Joshua S.',
     position: 'Backend Developer',
-    picture: '/demo/avatars/12.jpg',
+    picture: 'https://media.cssninja.io/content/avatars/12.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     location: 'Las Vegas, NV',
     industry: 'Accounting',
@@ -252,7 +252,7 @@ export const flexRowsAdvanced = [
     contacts: [
       {
         id: 7,
-        picture: '/demo/avatars/13.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/13.jpg',
         initials: 'TS',
         color: 'info',
       },
@@ -262,7 +262,7 @@ export const flexRowsAdvanced = [
     id: 4,
     username: 'Tina C.',
     position: 'Business Analyst',
-    picture: '/demo/avatars/13.jpg',
+    picture: 'https://media.cssninja.io/content/avatars/13.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     location: 'Los Angeles, CA',
     industry: 'Finance',
@@ -271,19 +271,19 @@ export const flexRowsAdvanced = [
     contacts: [
       {
         id: 0,
-        picture: '/demo/avatars/25.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/25.jpg',
         initials: 'AC',
         color: 'info',
       },
       {
         id: 14,
-        picture: '/demo/avatars/11.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/11.jpg',
         initials: 'KL',
         color: 'danger',
       },
       {
         id: 17,
-        picture: '/demo/avatars/5.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/5.jpg',
         initials: 'ML',
         color: 'warning',
       },

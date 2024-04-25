@@ -15,12 +15,12 @@ See code for more details about usage.
     row-gap=".5rem"
     column-gap=".25rem"
   >
-    <VAvatar picture="/demo/avatars/7.jpg" size="small" />
+    <VAvatar picture="https://media.cssninja.io/content/avatars/7.jpg" size="small" />
     <VAvatar picture="/images/avatars/svg/vuero-1.svg" />
-    <VAvatar picture="/demo/avatars/11.jpg" size="medium" />
-    <VAvatar picture="/demo/avatars/21.jpg" size="large" />
-    <VAvatar picture="/demo/avatars/13.jpg" size="big" />
-    <VAvatar picture="/demo/avatars/5.jpg" size="xl" />
+    <VAvatar picture="https://media.cssninja.io/content/avatars/11.jpg" size="medium" />
+    <VAvatar picture="https://media.cssninja.io/content/avatars/21.jpg" size="large" />
+    <VAvatar picture="https://media.cssninja.io/content/avatars/13.jpg" size="big" />
+    <VAvatar picture="https://media.cssninja.io/content/avatars/5.jpg" size="xl" />
   </VFlex>
 </template>
 ```
@@ -30,12 +30,12 @@ See code for more details about usage.
 <!--example-->
 
 <VFlex flex-wrap="wrap" align-items="flex-end" row-gap=".5rem" column-gap=".25rem">
-  <VAvatar picture="/demo/avatars/7.jpg" size="small" />
+  <VAvatar picture="https://media.cssninja.io/content/avatars/7.jpg" size="small" />
   <VAvatar picture="/images/avatars/svg/vuero-1.svg" />
-  <VAvatar picture="/demo/avatars/11.jpg" size="medium" />
-  <VAvatar picture="/demo/avatars/21.jpg" size="large" />
-  <VAvatar picture="/demo/avatars/13.jpg" size="big" />
-  <VAvatar picture="/demo/avatars/5.jpg" size="xl" />
+  <VAvatar picture="https://media.cssninja.io/content/avatars/11.jpg" size="medium" />
+  <VAvatar picture="https://media.cssninja.io/content/avatars/21.jpg" size="large" />
+  <VAvatar picture="https://media.cssninja.io/content/avatars/13.jpg" size="big" />
+  <VAvatar picture="https://media.cssninja.io/content/avatars/5.jpg" size="xl" />
 </VFlex>
 
 <!--/example-->

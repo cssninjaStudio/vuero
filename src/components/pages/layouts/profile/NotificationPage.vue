@@ -12,7 +12,7 @@
           <div class="content-wrap">
             <div class="content-box">
               <div class="status" />
-              <VAvatar picture="/demo/avatars/13.jpg" />
+              <VAvatar picture="https://media.cssninja.io/content/avatars/13.jpg" />
 
               <div class="box-text">
                 <div class="meta-text">
@@ -42,7 +42,7 @@
           <div class="content-wrap">
             <div class="content-box">
               <div class="status" />
-              <VAvatar picture="/demo/avatars/23.jpg" />
+              <VAvatar picture="https://media.cssninja.io/content/avatars/23.jpg" />
 
               <div class="box-text">
                 <div class="meta-text">
@@ -66,7 +66,7 @@
           <div class="content-wrap">
             <div class="content-box">
               <div class="status" />
-              <VAvatar picture="/demo/avatars/5.jpg" />
+              <VAvatar picture="https://media.cssninja.io/content/avatars/5.jpg" />
 
               <div class="box-text">
                 <div class="meta-text">
@@ -85,7 +85,7 @@
                 />
                 <VAvatar
                   size="small"
-                  picture="/demo/avatars/18.jpg"
+                  picture="https://media.cssninja.io/content/avatars/18.jpg"
                 />
                 <VAvatar
                   size="small"
@@ -106,7 +106,7 @@
           <div class="content-wrap">
             <div class="content-box">
               <div class="status" />
-              <VAvatar picture="/demo/avatars/12.jpg" />
+              <VAvatar picture="https://media.cssninja.io/content/avatars/12.jpg" />
 
               <div class="box-text">
                 <div class="meta-text">
@@ -140,7 +140,7 @@
           <div class="content-wrap">
             <div class="content-box">
               <div class="status" />
-              <VAvatar picture="/demo/avatars/26.jpg" />
+              <VAvatar picture="https://media.cssninja.io/content/avatars/26.jpg" />
 
               <div class="box-text">
                 <div class="meta-text">
@@ -155,12 +155,12 @@
                 <VAvatar
                   size="small"
                   squared
-                  picture="/demo/photos/apps/5.png"
+                  picture="https://media.cssninja.io/content/photos/apps/5.png"
                 />
                 <VAvatar
                   size="small"
                   squared
-                  picture="/demo/photos/apps/8.png"
+                  picture="https://media.cssninja.io/content/photos/apps/8.png"
                 />
               </div>
             </div>
@@ -176,7 +176,7 @@
           <div class="content-wrap">
             <div class="content-box">
               <div class="status" />
-              <VAvatar picture="/demo/avatars/31.jpg" />
+              <VAvatar picture="https://media.cssninja.io/content/avatars/31.jpg" />
 
               <div class="box-text">
                 <div class="meta-text">
@@ -206,7 +206,7 @@
           <div class="content-wrap">
             <div class="content-box">
               <div class="status" />
-              <VAvatar picture="/demo/avatars/13.jpg" />
+              <VAvatar picture="https://media.cssninja.io/content/avatars/13.jpg" />
 
               <div class="box-text">
                 <div class="meta-text">
@@ -230,7 +230,7 @@
           <div class="content-wrap">
             <div class="content-box">
               <div class="status" />
-              <VAvatar picture="/demo/avatars/25.jpg" />
+              <VAvatar picture="https://media.cssninja.io/content/avatars/25.jpg" />
 
               <div class="box-text">
                 <div class="meta-text">

@@ -79,8 +79,8 @@ onMounted(async () => {
         <div class="dashboard-card is-company">
           <VAvatar
             size="big"
-            picture="/demo/photos/brands/udemy.svg"
-            picture-dark="/demo/photos/brands/udemy-dark.svg"
+            picture="https://media.cssninja.io/content/photos/brands/udemy.svg"
+            picture-dark="https://media.cssninja.io/content/photos/brands/udemy-dark.svg"
           >
             <template #badge>
               <button class="button icon-button is-circle is-dark-outlined">
@@ -390,7 +390,7 @@ onMounted(async () => {
                 >
                   <VAvatar
                     size="medium"
-                    picture="/demo/avatars/31.jpg"
+                    picture="https://media.cssninja.io/content/avatars/31.jpg"
                   />
                   <template #content>
                     <UserPopoverContent :user="popovers.user31" />
@@ -425,7 +425,7 @@ onMounted(async () => {
                 >
                   <VAvatar
                     size="medium"
-                    picture="/demo/avatars/23.jpg"
+                    picture="https://media.cssninja.io/content/avatars/23.jpg"
                   />
                   <template #content>
                     <UserPopoverContent :user="popovers.user23" />
@@ -460,7 +460,7 @@ onMounted(async () => {
                 >
                   <VAvatar
                     size="medium"
-                    picture="/demo/avatars/32.jpg"
+                    picture="https://media.cssninja.io/content/avatars/32.jpg"
                   />
                   <template #content>
                     <UserPopoverContent :user="popovers.user32" />
@@ -495,7 +495,7 @@ onMounted(async () => {
                 >
                   <VAvatar
                     size="medium"
-                    picture="/demo/avatars/13.jpg"
+                    picture="https://media.cssninja.io/content/avatars/13.jpg"
                   />
                   <template #content>
                     <UserPopoverContent :user="popovers.user13" />

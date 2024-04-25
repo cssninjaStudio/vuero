@@ -17,7 +17,7 @@ useHead({
             <VAvatar
               size="xl"
               picture="/images/avatars/svg/vuero-2.svg"
-              badge="/demo/photos/misc/buoy.jpg"
+              badge="https://media.cssninja.io/content/photos/misc/buoy.jpg"
             />
 
             <h3 class="title is-4 is-narrow is-thin">

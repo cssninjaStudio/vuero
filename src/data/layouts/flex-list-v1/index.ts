@@ -11,7 +11,7 @@ export const users = [
     contacts: [
       {
         id: 0,
-        picture: '/demo/avatars/25.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/25.jpg',
         initials: 'AC',
         color: 'info',
       },
@@ -29,7 +29,7 @@ export const users = [
       },
       {
         id: 3,
-        picture: '/demo/avatars/5.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/5.jpg',
         initials: 'ML',
         color: 'danger',
       },
@@ -45,7 +45,7 @@ export const users = [
     id: 1,
     username: 'Jimmy H.',
     position: 'Project Manager',
-    picture: '/demo/avatars/22.jpg',
+    picture: 'https://media.cssninja.io/content/avatars/22.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     location: 'Los Angeles, CA',
     industry: 'Business',
@@ -63,7 +63,7 @@ export const users = [
     id: 2,
     username: 'Melany W.',
     position: 'Web Developer',
-    picture: '/demo/avatars/25.jpg',
+    picture: 'https://media.cssninja.io/content/avatars/25.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     location: 'San Jose, CA',
     industry: 'Design',
@@ -77,13 +77,13 @@ export const users = [
       },
       {
         id: 7,
-        picture: '/demo/avatars/7.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/7.jpg',
         initials: 'AC',
         color: 'h-purple',
       },
       {
         id: 19,
-        picture: '/demo/avatars/19.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/19.jpg',
         initials: 'GK',
         color: 'h-yellow',
       },
@@ -111,7 +111,7 @@ export const users = [
     id: 3,
     username: 'Joshua S.',
     position: 'Backend Developer',
-    picture: '/demo/avatars/12.jpg',
+    picture: 'https://media.cssninja.io/content/avatars/12.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     location: 'Las Vegas, NV',
     industry: 'Accounting',
@@ -119,7 +119,7 @@ export const users = [
     contacts: [
       {
         id: 7,
-        picture: '/demo/avatars/13.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/13.jpg',
         initials: 'TS',
         color: 'info',
       },
@@ -129,7 +129,7 @@ export const users = [
     id: 4,
     username: 'Tara S.',
     position: 'UI/UX Designer',
-    picture: '/demo/avatars/13.jpg',
+    picture: 'https://media.cssninja.io/content/avatars/13.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     location: 'Los Angeles, CA',
     industry: 'Finance',
@@ -137,19 +137,19 @@ export const users = [
     contacts: [
       {
         id: 0,
-        picture: '/demo/avatars/25.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/25.jpg',
         initials: 'AC',
         color: 'info',
       },
       {
         id: 14,
-        picture: '/demo/avatars/11.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/11.jpg',
         initials: 'KL',
         color: 'danger',
       },
       {
         id: 17,
-        picture: '/demo/avatars/5.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/5.jpg',
         initials: 'ML',
         color: 'warning',
       },
@@ -183,7 +183,7 @@ export const users = [
     id: 5,
     username: 'Greta K.',
     position: 'Sales Manager',
-    picture: '/demo/avatars/19.jpg',
+    picture: 'https://media.cssninja.io/content/avatars/19.jpg',
     badge: '/images/icons/flags/germany.svg',
     location: 'Berlin, Germany',
     industry: 'Business',
@@ -191,7 +191,7 @@ export const users = [
     contacts: [
       {
         id: 0,
-        picture: '/demo/avatars/25.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/25.jpg',
         initials: 'AC',
         color: 'info',
       },
@@ -203,7 +203,7 @@ export const users = [
       },
       {
         id: 17,
-        picture: '/demo/avatars/5.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/5.jpg',
         initials: 'ML',
         color: 'warning',
       },
@@ -231,7 +231,7 @@ export const users = [
     id: 6,
     username: 'Clément D.',
     position: 'Software Engineer',
-    picture: '/demo/avatars/30.jpg',
+    picture: 'https://media.cssninja.io/content/avatars/30.jpg',
     badge: '/images/icons/flags/france.svg',
     location: 'Toulouse, France',
     industry: 'Software',
@@ -239,7 +239,7 @@ export const users = [
     contacts: [
       {
         id: 0,
-        picture: '/demo/avatars/25.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/25.jpg',
         initials: 'AC',
         color: 'info',
       },
@@ -273,7 +273,7 @@ export const users = [
     id: 7,
     username: 'Kelly M.',
     position: 'Product Manager',
-    picture: '/demo/avatars/11.jpg',
+    picture: 'https://media.cssninja.io/content/avatars/11.jpg',
     badge: '/images/icons/flags/england.svg',
     location: 'London, UK',
     industry: 'Software',
@@ -281,19 +281,19 @@ export const users = [
     contacts: [
       {
         id: 25,
-        picture: '/demo/avatars/25.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/25.jpg',
         initials: 'AC',
         color: 'info',
       },
       {
         id: 13,
-        picture: '/demo/avatars/13.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/13.jpg',
         initials: 'TS',
         color: 'info',
       },
       {
         id: 17,
-        picture: '/demo/avatars/5.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/5.jpg',
         initials: 'ML',
         color: 'warning',
       },
@@ -313,7 +313,7 @@ export const users = [
     contacts: [
       {
         id: 25,
-        picture: '/demo/avatars/25.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/25.jpg',
         initials: 'MW',
         color: 'info',
       },
@@ -323,7 +323,7 @@ export const users = [
     id: 9,
     username: 'Courtney W.',
     position: 'Web Developer',
-    picture: '/demo/avatars/26.jpg',
+    picture: 'https://media.cssninja.io/content/avatars/26.jpg',
     badge: '/images/icons/flags/australia.svg',
     location: 'Melbourne, Australia',
     industry: 'Software',
@@ -331,7 +331,7 @@ export const users = [
     contacts: [
       {
         id: 7,
-        picture: '/demo/avatars/7.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/7.jpg',
         initials: 'AC',
         color: 'info',
       },
@@ -343,7 +343,7 @@ export const users = [
       },
       {
         id: 27,
-        picture: '/demo/avatars/27.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/27.jpg',
         initials: 'CE',
         color: 'warning',
       },

@@ -126,8 +126,8 @@ const filterProjects = ref(0)
                 <VAvatarStack
                   size="small"
                   :avatars="[
-                    { picture: '/demo/avatars/13.jpg' },
-                    { picture: '/demo/avatars/11.jpg' },
+                    { picture: 'https://media.cssninja.io/content/avatars/13.jpg' },
+                    { picture: 'https://media.cssninja.io/content/avatars/11.jpg' },
                   ]"
                 />
 
@@ -170,15 +170,15 @@ const filterProjects = ref(0)
                 <VAvatarStack
                   size="small"
                   :avatars="[
-                    { picture: '/demo/avatars/7.jpg' },
-                    { picture: '/demo/avatars/9.jpg' },
+                    { picture: 'https://media.cssninja.io/content/avatars/7.jpg' },
+                    { picture: 'https://media.cssninja.io/content/avatars/9.jpg' },
                     { color: 'info', initials: 'JD' },
-                    { picture: '/demo/avatars/12.jpg' },
+                    { picture: 'https://media.cssninja.io/content/avatars/12.jpg' },
                     { picture: '/images/avatars/svg/vuero-1.svg' },
-                    { picture: '/demo/avatars/25.jpg' },
-                    { picture: '/demo/avatars/25.jpg' },
-                    { picture: '/demo/avatars/25.jpg' },
-                    { picture: '/demo/avatars/25.jpg' },
+                    { picture: 'https://media.cssninja.io/content/avatars/25.jpg' },
+                    { picture: 'https://media.cssninja.io/content/avatars/25.jpg' },
+                    { picture: 'https://media.cssninja.io/content/avatars/25.jpg' },
+                    { picture: 'https://media.cssninja.io/content/avatars/25.jpg' },
                   ]"
                 />
 
@@ -225,7 +225,7 @@ const filterProjects = ref(0)
               <div class="item-people">
                 <VAvatarStack
                   size="small"
-                  :avatars="[{ picture: '/demo/avatars/14.jpg' }]"
+                  :avatars="[{ picture: 'https://media.cssninja.io/content/avatars/14.jpg' }]"
                 />
 
                 <span class="label">1 week left</span>
@@ -268,10 +268,10 @@ const filterProjects = ref(0)
                   size="small"
                   :avatars="[
                     { picture: '/images/avatars/svg/vuero-1.svg' },
-                    { picture: '/demo/avatars/22.jpg' },
-                    { picture: '/demo/avatars/12.jpg' },
-                    { picture: '/demo/avatars/10.jpg' },
-                    { picture: '/demo/avatars/26.jpg' },
+                    { picture: 'https://media.cssninja.io/content/avatars/22.jpg' },
+                    { picture: 'https://media.cssninja.io/content/avatars/12.jpg' },
+                    { picture: 'https://media.cssninja.io/content/avatars/10.jpg' },
+                    { picture: 'https://media.cssninja.io/content/avatars/26.jpg' },
                   ]"
                 />
 
@@ -314,10 +314,10 @@ const filterProjects = ref(0)
                 <VAvatarStack
                   size="small"
                   :avatars="[
-                    { picture: '/demo/avatars/13.jpg' },
-                    { picture: '/demo/avatars/11.jpg' },
+                    { picture: 'https://media.cssninja.io/content/avatars/13.jpg' },
+                    { picture: 'https://media.cssninja.io/content/avatars/11.jpg' },
                     { picture: '/images/avatars/svg/vuero-1.svg' },
-                    { picture: '/demo/avatars/22.jpg' },
+                    { picture: 'https://media.cssninja.io/content/avatars/22.jpg' },
                   ]"
                 />
 
@@ -365,8 +365,8 @@ const filterProjects = ref(0)
                 <VAvatarStack
                   size="small"
                   :avatars="[
-                    { picture: '/demo/avatars/13.jpg' },
-                    { picture: '/demo/avatars/11.jpg' },
+                    { picture: 'https://media.cssninja.io/content/avatars/13.jpg' },
+                    { picture: 'https://media.cssninja.io/content/avatars/11.jpg' },
                   ]"
                 />
 
@@ -409,10 +409,10 @@ const filterProjects = ref(0)
                 <VAvatarStack
                   size="small"
                   :avatars="[
-                    { picture: '/demo/avatars/13.jpg' },
-                    { picture: '/demo/avatars/16.jpg' },
-                    { picture: '/demo/avatars/10.jpg' },
-                    { picture: '/demo/avatars/9.jpg' },
+                    { picture: 'https://media.cssninja.io/content/avatars/13.jpg' },
+                    { picture: 'https://media.cssninja.io/content/avatars/16.jpg' },
+                    { picture: 'https://media.cssninja.io/content/avatars/10.jpg' },
+                    { picture: 'https://media.cssninja.io/content/avatars/9.jpg' },
                   ]"
                 />
 
@@ -455,9 +455,9 @@ const filterProjects = ref(0)
                 <VAvatarStack
                   size="small"
                   :avatars="[
-                    { picture: '/demo/avatars/22.jpg' },
-                    { picture: '/demo/avatars/10.jpg' },
-                    { picture: '/demo/avatars/26.jpg' },
+                    { picture: 'https://media.cssninja.io/content/avatars/22.jpg' },
+                    { picture: 'https://media.cssninja.io/content/avatars/10.jpg' },
+                    { picture: 'https://media.cssninja.io/content/avatars/26.jpg' },
                   ]"
                 />
 
@@ -500,9 +500,9 @@ const filterProjects = ref(0)
                 <VAvatarStack
                   size="small"
                   :avatars="[
-                    { picture: '/demo/avatars/14.jpg' },
-                    { picture: '/demo/avatars/16.jpg' },
-                    { picture: '/demo/avatars/10.jpg' },
+                    { picture: 'https://media.cssninja.io/content/avatars/14.jpg' },
+                    { picture: 'https://media.cssninja.io/content/avatars/16.jpg' },
+                    { picture: 'https://media.cssninja.io/content/avatars/10.jpg' },
                   ]"
                 />
 

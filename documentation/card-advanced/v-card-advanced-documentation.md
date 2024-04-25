@@ -19,7 +19,7 @@ using the `radius` prop.
       >
         <template #icon>
           <VAvatar
-            picture="/demo/avatars/19.jpg"
+            picture="https://media.cssninja.io/content/avatars/19.jpg"
             badge="/images/icons/flags/germany.svg"
           />
         </template>
@@ -30,25 +30,25 @@ using the `radius` prop.
         :avatars="[
           {
             id: 5,
-            picture: '/demo/avatars/12.jpg',
+            picture: 'https://media.cssninja.io/content/avatars/12.jpg',
             initials: 'JS',
             color: 'info',
           },
           {
             id: 22,
-            picture: '/demo/avatars/22.jpg',
+            picture: 'https://media.cssninja.io/content/avatars/22.jpg',
             initials: 'JH',
             color: 'info',
           },
           {
             id: 40,
-            picture: '/demo/avatars/40.jpg',
+            picture: 'https://media.cssninja.io/content/avatars/40.jpg',
             initials: 'SM',
             color: 'h-purple',
           },
           {
             id: 3,
-            picture: '/demo/avatars/5.jpg',
+            picture: 'https://media.cssninja.io/content/avatars/5.jpg',
             initials: 'ML',
             color: 'danger',
           },

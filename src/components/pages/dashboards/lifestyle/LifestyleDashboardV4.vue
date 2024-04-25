@@ -75,7 +75,7 @@ const { onceError } = useImageError()
                   >
                     <template #icon>
                       <VAvatar
-                        picture="/demo/avatars/7.jpg"
+                        picture="https://media.cssninja.io/content/avatars/7.jpg"
                         squared
                       />
                     </template>
@@ -93,7 +93,7 @@ const { onceError } = useImageError()
                   >
                     <template #icon>
                       <VAvatar
-                        picture="/demo/avatars/21.jpg"
+                        picture="https://media.cssninja.io/content/avatars/21.jpg"
                         squared
                       />
                     </template>
@@ -111,7 +111,7 @@ const { onceError } = useImageError()
                   >
                     <template #icon>
                       <VAvatar
-                        picture="/demo/avatars/32.jpg"
+                        picture="https://media.cssninja.io/content/avatars/32.jpg"
                         squared
                       />
                     </template>
@@ -129,7 +129,7 @@ const { onceError } = useImageError()
                   >
                     <template #icon>
                       <VAvatar
-                        picture="/demo/avatars/38.jpg"
+                        picture="https://media.cssninja.io/content/avatars/38.jpg"
                         squared
                       />
                     </template>
@@ -220,7 +220,7 @@ const { onceError } = useImageError()
               <a class="articles-feed-item">
                 <div class="featured-image">
                   <img
-                    src="/demo/photos/38.jpg"
+                    src="https://media.cssninja.io/content/photos/38.jpg"
                     alt=""
                     @error.once="onceError($event, 800, 600)"
                   >
@@ -235,7 +235,7 @@ const { onceError } = useImageError()
                   >
                     <template #icon>
                       <VAvatar
-                        picture="/demo/avatars/7.jpg"
+                        picture="https://media.cssninja.io/content/avatars/7.jpg"
                         squared
                       />
                     </template>
@@ -246,7 +246,7 @@ const { onceError } = useImageError()
               <a class="articles-feed-item">
                 <div class="featured-image">
                   <img
-                    src="/demo/photos/37.jpg"
+                    src="https://media.cssninja.io/content/photos/37.jpg"
                     alt=""
                     @error.once="onceError($event, 800, 600)"
                   >
@@ -261,7 +261,7 @@ const { onceError } = useImageError()
                   >
                     <template #icon>
                       <VAvatar
-                        picture="/demo/avatars/5.jpg"
+                        picture="https://media.cssninja.io/content/avatars/5.jpg"
                         squared
                       />
                     </template>

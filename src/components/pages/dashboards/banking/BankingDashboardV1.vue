@@ -365,7 +365,7 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
                       placement="bottom-end"
                     >
                       <VAvatar
-                        picture="/demo/avatars/18.jpg"
+                        picture="https://media.cssninja.io/content/avatars/18.jpg"
                         size="small"
                       />
                       <template #content>
@@ -400,7 +400,7 @@ const optionsSingle = ['Last 10 days', 'Last month', 'Last 3 months', 'Last 6 mo
                       placement="bottom-end"
                     >
                       <VAvatar
-                        picture="/demo/avatars/7.jpg"
+                        picture="https://media.cssninja.io/content/avatars/7.jpg"
                         size="small"
                       />
                       <template #content>

@@ -8,12 +8,12 @@ export const recipes = [
     attachments: 3,
     author: {
       name: 'Alice C.',
-      avatar: '/demo/avatars/7.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/7.jpg',
     },
     followers: [
       {
         id: 1,
-        picture: '/demo/avatars/9.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/9.jpg',
       },
       {
         id: 2,
@@ -30,20 +30,20 @@ export const recipes = [
     attachments: 2,
     author: {
       name: 'Jimmy H.',
-      avatar: '/demo/avatars/22.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/22.jpg',
     },
     followers: [
       {
         id: 1,
-        picture: '/demo/avatars/12.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/12.jpg',
       },
       {
         id: 2,
-        picture: '/demo/avatars/27.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/27.jpg',
       },
       {
         id: 3,
-        picture: '/demo/avatars/40.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/40.jpg',
       },
       {
         id: 4,
@@ -80,20 +80,20 @@ export const recipes = [
     attachments: 2,
     author: {
       name: 'Hilde V.',
-      avatar: '/demo/avatars/15.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/15.jpg',
     },
     followers: [
       {
         id: 1,
-        picture: '/demo/avatars/19.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/19.jpg',
       },
       {
         id: 2,
-        picture: '/demo/avatars/24.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/24.jpg',
       },
       {
         id: 3,
-        picture: '/demo/avatars/34.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/34.jpg',
       },
       {
         id: 4,
@@ -130,20 +130,20 @@ export const recipes = [
     attachments: 7,
     author: {
       name: 'Courtney W.',
-      avatar: '/demo/avatars/26.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/26.jpg',
     },
     followers: [
       {
         id: 1,
-        picture: '/demo/avatars/19.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/19.jpg',
       },
       {
         id: 2,
-        picture: '/demo/avatars/24.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/24.jpg',
       },
       {
         id: 3,
-        picture: '/demo/avatars/34.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/34.jpg',
       },
       {
         id: 4,
@@ -180,7 +180,7 @@ export const recipes = [
     attachments: 2,
     author: {
       name: 'Ryan B.',
-      avatar: '/demo/avatars/14.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/14.jpg',
     },
     followers: [
       {
@@ -189,11 +189,11 @@ export const recipes = [
       },
       {
         id: 2,
-        picture: '/demo/avatars/9.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/9.jpg',
       },
       {
         id: 3,
-        picture: '/demo/avatars/13.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/13.jpg',
       },
       {
         id: 4,
@@ -230,7 +230,7 @@ export const recipes = [
     attachments: 2,
     author: {
       name: 'Alice C.',
-      avatar: '/demo/avatars/7.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/7.jpg',
     },
     followers: [
       {
@@ -239,11 +239,11 @@ export const recipes = [
       },
       {
         id: 2,
-        picture: '/demo/avatars/9.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/9.jpg',
       },
       {
         id: 3,
-        picture: '/demo/avatars/13.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/13.jpg',
       },
       {
         id: 4,
@@ -280,20 +280,20 @@ export const recipes = [
     attachments: 2,
     author: {
       name: 'Elizabeth F.',
-      avatar: '/demo/avatars/21.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/21.jpg',
     },
     followers: [
       {
         id: 1,
-        picture: '/demo/avatars/5.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/5.jpg',
       },
       {
         id: 2,
-        picture: '/demo/avatars/18.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/18.jpg',
       },
       {
         id: 3,
-        picture: '/demo/avatars/25.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/25.jpg',
       },
       {
         id: 4,
@@ -330,20 +330,20 @@ export const recipes = [
     attachments: 1,
     author: {
       name: 'Joshua S.',
-      avatar: '/demo/avatars/12.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/12.jpg',
     },
     followers: [
       {
         id: 1,
-        picture: '/demo/avatars/9.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/9.jpg',
       },
       {
         id: 2,
-        picture: '/demo/avatars/28.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/28.jpg',
       },
       {
         id: 3,
-        picture: '/demo/avatars/36.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/36.jpg',
       },
       {
         id: 4,
@@ -380,20 +380,20 @@ export const recipes = [
     attachments: 1,
     author: {
       name: 'Joshua S.',
-      avatar: '/demo/avatars/12.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/12.jpg',
     },
     followers: [
       {
         id: 1,
-        picture: '/demo/avatars/5.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/5.jpg',
       },
       {
         id: 2,
-        picture: '/demo/avatars/31.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/31.jpg',
       },
       {
         id: 3,
-        picture: '/demo/avatars/16.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/16.jpg',
       },
       {
         id: 4,
@@ -430,20 +430,20 @@ export const recipes = [
     attachments: 1,
     author: {
       name: 'Kelly M.',
-      avatar: '/demo/avatars/11.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/11.jpg',
     },
     followers: [
       {
         id: 1,
-        picture: '/demo/avatars/24.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/24.jpg',
       },
       {
         id: 2,
-        picture: '/demo/avatars/23.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/23.jpg',
       },
       {
         id: 3,
-        picture: '/demo/avatars/13.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/13.jpg',
       },
       {
         id: 4,

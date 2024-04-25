@@ -25,8 +25,8 @@ const accept = async () => {
           <div class="box-content">
             <VAvatar
               size="big"
-              picture="/demo/avatars/16.jpg"
-              badge="/demo/photos/apps/9.png"
+              picture="https://media.cssninja.io/content/avatars/16.jpg"
+              badge="https://media.cssninja.io/content/photos/apps/9.png"
             />
 
             <h3 class="dark-inverted">
@@ -55,7 +55,7 @@ const accept = async () => {
                   >
                     <VAvatar
                       size="small"
-                      picture="/demo/avatars/21.jpg"
+                      picture="https://media.cssninja.io/content/avatars/21.jpg"
                     />
                     <template #content>
                       <UserPopoverContent :user="popovers.user21" />
@@ -88,7 +88,7 @@ const accept = async () => {
                   >
                     <VAvatar
                       size="small"
-                      picture="/demo/avatars/39.jpg"
+                      picture="https://media.cssninja.io/content/avatars/39.jpg"
                     />
                     <template #content>
                       <UserPopoverContent :user="popovers.user39" />

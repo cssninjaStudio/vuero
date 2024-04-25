@@ -1,7 +1,7 @@
 export const followersList = [
   {
     id: 0,
-    picture: '/demo/avatars/7.jpg',
+    picture: 'https://media.cssninja.io/content/avatars/7.jpg',
     name: 'Alice',
   },
   {
@@ -11,7 +11,7 @@ export const followersList = [
   },
   {
     id: 2,
-    picture: '/demo/avatars/5.jpg',
+    picture: 'https://media.cssninja.io/content/avatars/5.jpg',
     name: 'Mary',
   },
 ]

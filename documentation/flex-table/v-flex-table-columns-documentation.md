@@ -22,7 +22,7 @@ const data = [
     contacts: [
       {
         id: 0,
-        picture: '/demo/avatars/25.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/25.jpg',
         initials: 'AC',
         color: 'info',
       },

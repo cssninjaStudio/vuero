@@ -51,7 +51,7 @@ useHead({
               >
                 <template #image>
                   <VAvatar
-                    picture="/demo/avatars/22.jpg"
+                    picture="https://media.cssninja.io/content/avatars/22.jpg"
                     badge="/images/icons/flags/united-states-of-america.svg"
                   />
                 </template>

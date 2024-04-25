@@ -15,7 +15,7 @@ See code for more details about usage.
     column-gap=".25rem"
   >
     <VAvatar
-      picture="/demo/avatars/7.jpg"
+      picture="https://media.cssninja.io/content/avatars/7.jpg"
       size="medium"
       dot
     />
@@ -26,25 +26,25 @@ See code for more details about usage.
       dot-color="primary"
     />
     <VAvatar
-      picture="/demo/avatars/11.jpg"
+      picture="https://media.cssninja.io/content/avatars/11.jpg"
       size="medium"
       dot
       dot-color="info"
     />
     <VAvatar
-      picture="/demo/avatars/21.jpg"
+      picture="https://media.cssninja.io/content/avatars/21.jpg"
       size="medium"
       dot
       dot-color="warning"
     />
     <VAvatar
-      picture="/demo/avatars/13.jpg"
+      picture="https://media.cssninja.io/content/avatars/13.jpg"
       size="medium"
       dot
       dot-color="danger"
     />
     <VAvatar
-      picture="/demo/avatars/5.jpg"
+      picture="https://media.cssninja.io/content/avatars/5.jpg"
       size="medium"
       dot
       dot-color="grey"
@@ -58,12 +58,12 @@ See code for more details about usage.
 <!--example-->
 
 <VFlex flex-wrap="wrap" align-items="flex-end" row-gap=".5rem" column-gap=".25rem">
-  <VAvatar picture="/demo/avatars/7.jpg" size="medium" dot />
+  <VAvatar picture="https://media.cssninja.io/content/avatars/7.jpg" size="medium" dot />
   <VAvatar picture="/images/avatars/svg/vuero-1.svg" size="medium" dot dotColor="primary" />
-  <VAvatar picture="/demo/avatars/11.jpg" size="medium" dot dotColor="info" />
-  <VAvatar picture="/demo/avatars/21.jpg" size="medium" dot dotColor="warning" />
-  <VAvatar picture="/demo/avatars/13.jpg" size="medium" dot dotColor="danger" />
-  <VAvatar picture="/demo/avatars/5.jpg" size="medium" dot dotColor="grey" />
+  <VAvatar picture="https://media.cssninja.io/content/avatars/11.jpg" size="medium" dot dotColor="info" />
+  <VAvatar picture="https://media.cssninja.io/content/avatars/21.jpg" size="medium" dot dotColor="warning" />
+  <VAvatar picture="https://media.cssninja.io/content/avatars/13.jpg" size="medium" dot dotColor="danger" />
+  <VAvatar picture="https://media.cssninja.io/content/avatars/5.jpg" size="medium" dot dotColor="grey" />
 </VFlex>
 
 <!--/example-->

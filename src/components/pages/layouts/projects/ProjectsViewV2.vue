@@ -133,7 +133,7 @@
               <div class="developers">
                 <VAvatar
                   size="small"
-                  picture="/demo/avatars/7.jpg"
+                  picture="https://media.cssninja.io/content/avatars/7.jpg"
                 />
                 <VAvatar
                   size="small"
@@ -193,7 +193,7 @@
               <div class="developers">
                 <VAvatar
                   size="small"
-                  picture="/demo/avatars/25.jpg"
+                  picture="https://media.cssninja.io/content/avatars/25.jpg"
                 />
               </div>
             </div>
@@ -243,11 +243,11 @@
               <div class="developers">
                 <VAvatar
                   size="small"
-                  picture="/demo/avatars/7.jpg"
+                  picture="https://media.cssninja.io/content/avatars/7.jpg"
                 />
                 <VAvatar
                   size="small"
-                  picture="/demo/avatars/23.jpg"
+                  picture="https://media.cssninja.io/content/avatars/23.jpg"
                 />
               </div>
             </div>
@@ -299,7 +299,7 @@
               <div class="developers">
                 <VAvatar
                   size="small"
-                  picture="/demo/avatars/11.jpg"
+                  picture="https://media.cssninja.io/content/avatars/11.jpg"
                 />
                 <VAvatar
                   size="small"
@@ -355,7 +355,7 @@
               <div class="developers">
                 <VAvatar
                   size="small"
-                  picture="/demo/avatars/12.jpg"
+                  picture="https://media.cssninja.io/content/avatars/12.jpg"
                 />
               </div>
             </div>
@@ -405,15 +405,15 @@
               <div class="developers">
                 <VAvatar
                   size="small"
-                  picture="/demo/avatars/24.jpg"
+                  picture="https://media.cssninja.io/content/avatars/24.jpg"
                 />
                 <VAvatar
                   size="small"
-                  picture="/demo/avatars/18.jpg"
+                  picture="https://media.cssninja.io/content/avatars/18.jpg"
                 />
                 <VAvatar
                   size="small"
-                  picture="/demo/avatars/16.jpg"
+                  picture="https://media.cssninja.io/content/avatars/16.jpg"
                 />
               </div>
             </div>
@@ -522,7 +522,7 @@
               <div class="developers">
                 <VAvatar
                   size="small"
-                  picture="/demo/avatars/25.jpg"
+                  picture="https://media.cssninja.io/content/avatars/25.jpg"
                 />
                 <VAvatar
                   size="small"

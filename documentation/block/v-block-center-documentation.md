@@ -16,7 +16,7 @@ using the `center` prop. This will apply the `flex` property
     <template #icon>
       <VAvatar
         size="medium"
-        picture="/demo/avatars/19.jpg"
+        picture="https://media.cssninja.io/content/avatars/19.jpg"
         badge="/images/icons/flags/germany.svg"
       />
     </template>
@@ -40,7 +40,7 @@ using the `center` prop. This will apply the `flex` property
         <template #icon>
           <VAvatar
             size="medium"
-            picture="/demo/avatars/19.jpg"
+            picture="https://media.cssninja.io/content/avatars/19.jpg"
             badge="/images/icons/flags/germany.svg"
           />
         </template>

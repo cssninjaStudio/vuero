@@ -63,7 +63,7 @@ useHead({
               grey
             >
               <VCardAction
-                avatar="/demo/avatars/19.jpg"
+                avatar="https://media.cssninja.io/content/avatars/19.jpg"
                 badge="/images/icons/flags/germany.svg"
                 title="Greta K."
                 subtitle="Sales Manager"
@@ -83,7 +83,7 @@ useHead({
               :active="isLoaderActive"
             >
               <VCardAction
-                avatar="/demo/avatars/19.jpg"
+                avatar="https://media.cssninja.io/content/avatars/19.jpg"
                 badge="/images/icons/flags/germany.svg"
                 title="Greta K."
                 subtitle="Sales Manager"
@@ -104,7 +104,7 @@ useHead({
               translucent
             >
               <VCardAction
-                avatar="/demo/avatars/19.jpg"
+                avatar="https://media.cssninja.io/content/avatars/19.jpg"
                 badge="/images/icons/flags/germany.svg"
                 title="Greta K."
                 subtitle="Sales Manager"
@@ -123,7 +123,7 @@ useHead({
               :active="isLoaderActive"
             >
               <VCardAction
-                avatar="/demo/avatars/19.jpg"
+                avatar="https://media.cssninja.io/content/avatars/19.jpg"
                 badge="/images/icons/flags/germany.svg"
                 title="Greta K."
                 subtitle="Sales Manager"
@@ -144,7 +144,7 @@ useHead({
               :active="isLoaderActive"
             >
               <VCardAction
-                avatar="/demo/avatars/19.jpg"
+                avatar="https://media.cssninja.io/content/avatars/19.jpg"
                 badge="/images/icons/flags/germany.svg"
                 title="Greta K."
                 subtitle="Sales Manager"
@@ -165,7 +165,7 @@ useHead({
               :active="isLoaderActive"
             >
               <VCardAction
-                avatar="/demo/avatars/19.jpg"
+                avatar="https://media.cssninja.io/content/avatars/19.jpg"
                 badge="/images/icons/flags/germany.svg"
                 title="Greta K."
                 subtitle="Sales Manager"

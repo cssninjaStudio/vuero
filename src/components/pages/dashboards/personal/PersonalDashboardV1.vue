@@ -175,12 +175,12 @@ const { profitChartOptions } = useProfitChart()
         <div class="column is-4">
           <div class="dashboard-card is-gauge">
             <div class="people">
-              <VAvatar picture="/demo/avatars/21.jpg" />
+              <VAvatar picture="https://media.cssninja.io/content/avatars/21.jpg" />
               <VAvatar
                 initials="SC"
                 color="h-purple"
               />
-              <VAvatar picture="/demo/avatars/39.jpg" />
+              <VAvatar picture="https://media.cssninja.io/content/avatars/39.jpg" />
             </div>
             <ApexChart
               :height="teamGaugeOptions.chart.height"

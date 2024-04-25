@@ -7,7 +7,7 @@ const { onceError } = useImageError()
     <div class="heatmap-title">
       <div class="title-avatar">
         <img
-          src="/demo/photos/faces/girl1.jpg"
+          src="https://media.cssninja.io/content/photos/faces/girl1.jpg"
           alt=""
           @error.once="onceError($event, 150)"
         >

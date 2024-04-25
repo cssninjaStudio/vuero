@@ -1,6 +1,6 @@
 ---
 user1:
-  avatar: /demo/avatars/19.jpg
+  avatar: https://media.cssninja.io/content/avatars/19.jpg
   badge: /images/icons/flags/germany.svg
   username: Greta K.
   location: Los Angeles, CA
@@ -14,7 +14,7 @@ user2:
   position: Product Manager
   bio: This is a nice user description that we can use as demo content.
 user3:
-  avatar: /demo/avatars/7.jpg
+  avatar: https://media.cssninja.io/content/avatars/7.jpg
   badge: /images/icons/flags/united-states-of-america.svg
   username: Alice C.
   location: Los Angeles, CA
@@ -34,7 +34,7 @@ prop.
 ```vue
 <script setup lang="ts">
 const user = {
-  avatar: '/demo/avatars/19.jpg',
+  avatar: 'https://media.cssninja.io/content/avatars/19.jpg',
   badge: '/images/icons/flags/germany.svg',
   username: 'Greta K.',
   location: 'Los Angeles, CA',

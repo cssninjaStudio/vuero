@@ -158,7 +158,7 @@ const { popularityGaugeOptions } = usePopularityGaugeChart()
                 :offset="[0, 40]"
                 placement="top-end"
               >
-                <VAvatar picture="/demo/avatars/21.jpg" />
+                <VAvatar picture="https://media.cssninja.io/content/avatars/21.jpg" />
                 <template #content>
                   <UserPopoverContent :user="popovers.user21" />
                 </template>
@@ -187,7 +187,7 @@ const { popularityGaugeOptions } = usePopularityGaugeChart()
                 :offset="[0, 40]"
                 placement="top-end"
               >
-                <VAvatar picture="/demo/avatars/7.jpg" />
+                <VAvatar picture="https://media.cssninja.io/content/avatars/7.jpg" />
                 <template #content>
                   <UserPopoverContent :user="popovers.user7" />
                 </template>
@@ -217,7 +217,7 @@ const { popularityGaugeOptions } = usePopularityGaugeChart()
                 :offset="[0, 40]"
                 placement="top-end"
               >
-                <VAvatar picture="/demo/avatars/31.jpg" />
+                <VAvatar picture="https://media.cssninja.io/content/avatars/31.jpg" />
                 <template #content>
                   <UserPopoverContent :user="popovers.user31" />
                 </template>

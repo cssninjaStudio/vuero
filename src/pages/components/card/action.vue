@@ -47,7 +47,7 @@ useHead({
         <div class="columns is-multiline mb-6">
           <div class="column is-4">
             <VCardAction
-              avatar="/demo/avatars/19.jpg"
+              avatar="https://media.cssninja.io/content/avatars/19.jpg"
               badge="/images/icons/flags/germany.svg"
               title="Greta K."
               subtitle="Sales Manager"
@@ -63,7 +63,7 @@ useHead({
           </div>
           <div class="column is-4">
             <VCardAction
-              avatar="/demo/avatars/18.jpg"
+              avatar="https://media.cssninja.io/content/avatars/18.jpg"
               badge="/images/icons/flags/united-states-of-america.svg"
               title="George W."
               subtitle="Software Engineer"
@@ -78,7 +78,7 @@ useHead({
           </div>
           <div class="column is-4">
             <VCardAction
-              avatar="/demo/avatars/22.jpg"
+              avatar="https://media.cssninja.io/content/avatars/22.jpg"
               badge="/images/icons/flags/france.svg"
               title="Sandrine C."
               subtitle="HR Manager"
@@ -96,7 +96,7 @@ useHead({
         <div class="columns is-multiline mb-6">
           <div class="column is-4">
             <VCardAction
-              avatar="/demo/avatars/19.jpg"
+              avatar="https://media.cssninja.io/content/avatars/19.jpg"
               badge="/images/icons/flags/germany.svg"
               title="Greta K."
               subtitle="Sales Manager"
@@ -117,7 +117,7 @@ useHead({
           </div>
           <div class="column is-4">
             <VCardAction
-              avatar="/demo/avatars/18.jpg"
+              avatar="https://media.cssninja.io/content/avatars/18.jpg"
               badge="/images/icons/flags/united-states-of-america.svg"
               title="George W."
               subtitle="Software Engineer"
@@ -134,7 +134,7 @@ useHead({
           </div>
           <div class="column is-4">
             <VCardAction
-              avatar="/demo/avatars/22.jpg"
+              avatar="https://media.cssninja.io/content/avatars/22.jpg"
               badge="/images/icons/flags/france.svg"
               title="Sandrine C."
               subtitle="HR Manager"

@@ -13,13 +13,13 @@ const tab = ref(props.activeTab)
 const filterTasks = ref(0)
 
 const participants = [
-  { picture: '/demo/avatars/7.jpg' },
-  { picture: '/demo/avatars/9.jpg' },
-  { picture: '/demo/avatars/12.jpg' },
+  { picture: 'https://media.cssninja.io/content/avatars/7.jpg' },
+  { picture: 'https://media.cssninja.io/content/avatars/9.jpg' },
+  { picture: 'https://media.cssninja.io/content/avatars/12.jpg' },
   { picture: '/images/avatars/svg/vuero-1.svg' },
-  { picture: '/demo/avatars/25.jpg' },
-  { picture: '/demo/avatars/25.jpg' },
-  { picture: '/demo/avatars/25.jpg' },
+  { picture: 'https://media.cssninja.io/content/avatars/25.jpg' },
+  { picture: 'https://media.cssninja.io/content/avatars/25.jpg' },
+  { picture: 'https://media.cssninja.io/content/avatars/25.jpg' },
 ]
 </script>
 
@@ -367,7 +367,7 @@ const participants = [
                   <template #icon>
                     <VAvatar
                       size="medium"
-                      picture="/demo/avatars/7.jpg"
+                      picture="https://media.cssninja.io/content/avatars/7.jpg"
                     />
                   </template>
 
@@ -392,7 +392,7 @@ const participants = [
                   <template #icon>
                     <VAvatar
                       size="medium"
-                      picture="/demo/avatars/9.jpg"
+                      picture="https://media.cssninja.io/content/avatars/9.jpg"
                     />
                   </template>
 
@@ -417,7 +417,7 @@ const participants = [
                   <template #icon>
                     <VAvatar
                       size="medium"
-                      picture="/demo/avatars/12.jpg"
+                      picture="https://media.cssninja.io/content/avatars/12.jpg"
                     />
                   </template>
 
@@ -467,7 +467,7 @@ const participants = [
                   <template #icon>
                     <VAvatar
                       size="medium"
-                      picture="/demo/avatars/25.jpg"
+                      picture="https://media.cssninja.io/content/avatars/25.jpg"
                     />
                   </template>
 
@@ -492,7 +492,7 @@ const participants = [
                   <template #icon>
                     <VAvatar
                       size="medium"
-                      picture="/demo/avatars/13.jpg"
+                      picture="https://media.cssninja.io/content/avatars/13.jpg"
                     />
                   </template>
 
@@ -517,7 +517,7 @@ const participants = [
                   <template #icon>
                     <VAvatar
                       size="medium"
-                      picture="/demo/avatars/18.jpg"
+                      picture="https://media.cssninja.io/content/avatars/18.jpg"
                     />
                   </template>
 
@@ -542,7 +542,7 @@ const participants = [
                   <template #icon>
                     <VAvatar
                       size="medium"
-                      picture="/demo/avatars/5.jpg"
+                      picture="https://media.cssninja.io/content/avatars/5.jpg"
                     />
                   </template>
 
@@ -595,9 +595,9 @@ const participants = [
                       <VAvatarStack
                         size="small"
                         :avatars="[
-                          { picture: '/demo/avatars/7.jpg' },
+                          { picture: 'https://media.cssninja.io/content/avatars/7.jpg' },
                           { picture: '/images/avatars/svg/vuero-1.svg' },
-                          { picture: '/demo/avatars/5.jpg' },
+                          { picture: 'https://media.cssninja.io/content/avatars/5.jpg' },
                         ]"
                       />
                       <div class="attachments">
@@ -627,7 +627,7 @@ const participants = [
                     <div class="left">
                       <VAvatarStack
                         size="small"
-                        :avatars="[{ picture: '/demo/avatars/12.jpg' }]"
+                        :avatars="[{ picture: 'https://media.cssninja.io/content/avatars/12.jpg' }]"
                       />
                       <div class="attachments">
                         <i
@@ -656,7 +656,7 @@ const participants = [
                     <div class="left">
                       <VAvatarStack
                         size="small"
-                        :avatars="[{ picture: '/demo/avatars/12.jpg' }]"
+                        :avatars="[{ picture: 'https://media.cssninja.io/content/avatars/12.jpg' }]"
                       />
                       <div class="attachments">
                         <i
@@ -686,8 +686,8 @@ const participants = [
                       <VAvatarStack
                         size="small"
                         :avatars="[
-                          { picture: '/demo/avatars/5.jpg' },
-                          { picture: '/demo/avatars/7.jpg' },
+                          { picture: 'https://media.cssninja.io/content/avatars/5.jpg' },
+                          { picture: 'https://media.cssninja.io/content/avatars/7.jpg' },
                         ]"
                       />
                       <div class="attachments">
@@ -717,7 +717,7 @@ const participants = [
                     <div class="left">
                       <VAvatarStack
                         size="small"
-                        :avatars="[{ picture: '/demo/avatars/25.jpg' }]"
+                        :avatars="[{ picture: 'https://media.cssninja.io/content/avatars/25.jpg' }]"
                       />
                       <div class="attachments">
                         <i
@@ -747,8 +747,8 @@ const participants = [
                       <VAvatarStack
                         size="small"
                         :avatars="[
-                          { picture: '/demo/avatars/25.jpg' },
-                          { picture: '/demo/avatars/12.jpg' },
+                          { picture: 'https://media.cssninja.io/content/avatars/25.jpg' },
+                          { picture: 'https://media.cssninja.io/content/avatars/12.jpg' },
                         ]"
                       />
                       <div class="attachments">
@@ -779,8 +779,8 @@ const participants = [
                       <VAvatarStack
                         size="small"
                         :avatars="[
-                          { picture: '/demo/avatars/25.jpg' },
-                          { picture: '/demo/avatars/12.jpg' },
+                          { picture: 'https://media.cssninja.io/content/avatars/25.jpg' },
+                          { picture: 'https://media.cssninja.io/content/avatars/12.jpg' },
                         ]"
                       />
                       <div class="attachments">
@@ -811,8 +811,8 @@ const participants = [
                       <VAvatarStack
                         size="small"
                         :avatars="[
-                          { picture: '/demo/avatars/25.jpg' },
-                          { picture: '/demo/avatars/12.jpg' },
+                          { picture: 'https://media.cssninja.io/content/avatars/25.jpg' },
+                          { picture: 'https://media.cssninja.io/content/avatars/12.jpg' },
                         ]"
                       />
                       <div class="attachments">

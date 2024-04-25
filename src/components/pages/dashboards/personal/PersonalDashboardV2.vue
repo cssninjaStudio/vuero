@@ -81,7 +81,7 @@ const democheck = ref(['value_2'])
             >
               <template #icon>
                 <VAvatar
-                  picture="/demo/photos/apps/1.jpg"
+                  picture="https://media.cssninja.io/content/photos/apps/1.jpg"
                   badge="/images/icons/stacks/illustrator.svg"
                   size="medium"
                   squared
@@ -104,7 +104,7 @@ const democheck = ref(['value_2'])
             >
               <template #icon>
                 <VAvatar
-                  picture="/demo/photos/apps/2.png"
+                  picture="https://media.cssninja.io/content/photos/apps/2.png"
                   badge="/images/icons/stacks/reactjs.svg"
                   size="medium"
                   squared
@@ -127,7 +127,7 @@ const democheck = ref(['value_2'])
             >
               <template #icon>
                 <VAvatar
-                  picture="/demo/photos/apps/3.png"
+                  picture="https://media.cssninja.io/content/photos/apps/3.png"
                   badge="/images/icons/stacks/angular.svg"
                   size="medium"
                   squared
@@ -150,7 +150,7 @@ const democheck = ref(['value_2'])
             >
               <template #icon>
                 <VAvatar
-                  picture="/demo/photos/apps/4.png"
+                  picture="https://media.cssninja.io/content/photos/apps/4.png"
                   badge="/images/icons/stacks/js.svg"
                   size="medium"
                   squared
@@ -226,7 +226,7 @@ const democheck = ref(['value_2'])
                     interactive
                     :offset="[0, 10]"
                   >
-                    <VAvatar picture="/demo/avatars/18.jpg" />
+                    <VAvatar picture="https://media.cssninja.io/content/avatars/18.jpg" />
                     <template #content>
                       <UserPopoverContent :user="popovers.user18" />
                     </template>
@@ -293,7 +293,7 @@ const democheck = ref(['value_2'])
                     interactive
                     :offset="[0, 10]"
                   >
-                    <VAvatar picture="/demo/avatars/13.jpg" />
+                    <VAvatar picture="https://media.cssninja.io/content/avatars/13.jpg" />
                     <template #content>
                       <UserPopoverContent :user="popovers.user13" />
                     </template>

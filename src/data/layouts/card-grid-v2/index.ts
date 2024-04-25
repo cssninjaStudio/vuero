@@ -4,10 +4,10 @@ export const projects = [
     name: 'Delivery App Project',
     dueDate: 'August 2020',
     updated: '3m ago',
-    image: '/demo/photos/apps/1.jpg',
+    image: 'https://media.cssninja.io/content/photos/apps/1.jpg',
     owner: {
       id: 7,
-      avatar: '/demo/avatars/7.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/7.jpg',
       name: 'Alice C.',
       initials: 'AC',
       color: 'info',
@@ -15,21 +15,21 @@ export const projects = [
     team: [
       {
         id: 27,
-        picture: '/demo/avatars/27.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/27.jpg',
         name: 'Carmen E.',
         initials: 'CE',
         color: 'h-yellow',
       },
       {
         id: 15,
-        picture: '/demo/avatars/15.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/15.jpg',
         name: 'Hilde V.',
         initials: 'HV',
         color: 'h-purple',
       },
       {
         id: 12,
-        picture: '/demo/avatars/12.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/12.jpg',
         name: 'Joshua S.',
         initials: 'JS',
         color: 'success',
@@ -41,7 +41,7 @@ export const projects = [
     name: 'Health and Fitness Dashboard',
     dueDate: 'October 2020',
     updated: '5h ago',
-    image: '/demo/photos/apps/2.png',
+    image: 'https://media.cssninja.io/content/photos/apps/2.png',
     owner: {
       id: 8,
       avatar: '/images/avatars/svg/vuero-1.svg',
@@ -52,14 +52,14 @@ export const projects = [
     team: [
       {
         id: 13,
-        picture: '/demo/avatars/13.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/13.jpg',
         name: 'Tara S.',
         initials: 'TS',
         color: 'danger',
       },
       {
         id: 21,
-        picture: '/demo/avatars/21.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/21.jpg',
         name: 'Elizabet F.',
         initials: 'EF',
         color: 'warning',
@@ -71,10 +71,10 @@ export const projects = [
     name: 'Learning Tracker Dashboard',
     dueDate: 'September 2020',
     updated: '5h ago',
-    image: '/demo/photos/apps/3.png',
+    image: 'https://media.cssninja.io/content/photos/apps/3.png',
     owner: {
       id: 25,
-      avatar: '/demo/avatars/25.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/25.jpg',
       name: 'Melany W.',
       initials: 'MW',
       color: 'info',
@@ -82,7 +82,7 @@ export const projects = [
     team: [
       {
         id: 14,
-        picture: '/demo/avatars/14.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/14.jpg',
         name: 'Ryan B.',
         initials: 'RB',
         color: 'info',
@@ -94,10 +94,10 @@ export const projects = [
     name: 'Banking and Finance Dashboard',
     dueDate: 'October 2020',
     updated: '5h ago',
-    image: '/demo/photos/apps/4.png',
+    image: 'https://media.cssninja.io/content/photos/apps/4.png',
     owner: {
       id: 23,
-      avatar: '/demo/avatars/23.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/23.jpg',
       name: 'Irina V.',
       initials: 'IV',
       color: 'success',
@@ -105,14 +105,14 @@ export const projects = [
     team: [
       {
         id: 13,
-        picture: '/demo/avatars/13.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/13.jpg',
         name: 'Tara S.',
         initials: 'TS',
         color: 'danger',
       },
       {
         id: 21,
-        picture: '/demo/avatars/21.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/21.jpg',
         name: 'Elizabet F.',
         initials: 'EF',
         color: 'warning',
@@ -124,10 +124,10 @@ export const projects = [
     name: 'Resume Management Mobile App',
     dueDate: 'October 2020',
     updated: '2h ago',
-    image: '/demo/photos/apps/5.png',
+    image: 'https://media.cssninja.io/content/photos/apps/5.png',
     owner: {
       id: 11,
-      avatar: '/demo/avatars/11.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/11.jpg',
       name: 'Kelly M.',
       initials: 'KM',
       color: 'h-orange',
@@ -135,14 +135,14 @@ export const projects = [
     team: [
       {
         id: 30,
-        picture: '/demo/avatars/30.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/30.jpg',
         name: 'Clément D.',
         initials: 'CD',
         color: 'info',
       },
       {
         id: 39,
-        picture: '/demo/avatars/39.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/39.jpg',
         name: 'Alejandro B.',
         initials: 'AB',
         color: 'h-purple',
@@ -154,10 +154,10 @@ export const projects = [
     name: 'Banking Landing Page',
     dueDate: 'December 2020',
     updated: '3d ago',
-    image: '/demo/photos/apps/6.png',
+    image: 'https://media.cssninja.io/content/photos/apps/6.png',
     owner: {
       id: 9,
-      avatar: '/demo/avatars/9.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/9.jpg',
       name: 'Ana B.',
       initials: 'AB',
       color: 'success',
@@ -165,14 +165,14 @@ export const projects = [
     team: [
       {
         id: 15,
-        picture: '/demo/avatars/15.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/15.jpg',
         name: 'Hilde V.',
         initials: 'HV',
         color: 'info',
       },
       {
         id: 40,
-        picture: '/demo/avatars/40.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/40.jpg',
         name: 'Jeanne M.',
         initials: 'JM',
         color: 'success',
@@ -191,10 +191,10 @@ export const projects = [
     name: 'Learning App Design',
     dueDate: 'November 2020',
     updated: '1h ago',
-    image: '/demo/photos/apps/7.png',
+    image: 'https://media.cssninja.io/content/photos/apps/7.png',
     owner: {
       id: 25,
-      avatar: '/demo/avatars/25.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/25.jpg',
       name: 'Melany W.',
       initials: 'MW',
       color: 'info',
@@ -202,7 +202,7 @@ export const projects = [
     team: [
       {
         id: 11,
-        picture: '/demo/avatars/11.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/11.jpg',
         name: 'Kelly M.',
         initials: 'KM',
         color: 'success',
@@ -214,10 +214,10 @@ export const projects = [
     name: 'Educational App Design',
     dueDate: 'November 2020',
     updated: '4d ago',
-    image: '/demo/photos/apps/8.png',
+    image: 'https://media.cssninja.io/content/photos/apps/8.png',
     owner: {
       id: 5,
-      avatar: '/demo/avatars/5.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/5.jpg',
       name: 'Mary L.',
       initials: 'ML',
       color: 'info',
@@ -225,21 +225,21 @@ export const projects = [
     team: [
       {
         id: 21,
-        picture: '/demo/avatars/21.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/21.jpg',
         name: 'Elizabeth F.',
         initials: 'EF',
         color: 'warning',
       },
       {
         id: 29,
-        picture: '/demo/avatars/29.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/29.jpg',
         name: 'Hakeem C.',
         initials: 'HC',
         color: 'danger',
       },
       {
         id: 33,
-        picture: '/demo/avatars/33.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/33.jpg',
         name: 'Harvey M.',
         initials: 'HM',
         color: 'success',
@@ -251,10 +251,10 @@ export const projects = [
     name: 'Banking Solution Website',
     dueDate: 'October 2020',
     updated: '2h ago',
-    image: '/demo/photos/apps/9.png',
+    image: 'https://media.cssninja.io/content/photos/apps/9.png',
     owner: {
       id: 27,
-      avatar: '/demo/avatars/27.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/27.jpg',
       name: 'Carmen E.',
       initials: 'CE',
       color: 'info',
@@ -262,14 +262,14 @@ export const projects = [
     team: [
       {
         id: 30,
-        picture: '/demo/avatars/30.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/30.jpg',
         name: 'Clément D.',
         initials: 'CD',
         color: 'h-purple',
       },
       {
         id: 19,
-        picture: '/demo/avatars/19.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/19.jpg',
         name: 'Greta K.',
         initials: 'GK',
         color: 'info',
@@ -281,10 +281,10 @@ export const projects = [
     name: 'HR Webapp Design',
     dueDate: 'August 2020',
     updated: '2h ago',
-    image: '/demo/photos/apps/10.png',
+    image: 'https://media.cssninja.io/content/photos/apps/10.png',
     owner: {
       id: 27,
-      avatar: '/demo/avatars/27.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/27.jpg',
       name: 'Carmen E.',
       initials: 'CE',
       color: 'info',
@@ -292,14 +292,14 @@ export const projects = [
     team: [
       {
         id: 24,
-        picture: '/demo/avatars/24.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/24.jpg',
         name: 'Sandrine C.',
         initials: 'SC',
         color: 'success',
       },
       {
         id: 22,
-        picture: '/demo/avatars/22.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/22.jpg',
         name: 'Jimmy H.',
         initials: 'JH',
         color: 'info',
@@ -311,10 +311,10 @@ export const projects = [
     name: 'Ice Cream Delivery Dashboard',
     dueDate: 'January 2021',
     updated: '2h ago',
-    image: '/demo/photos/apps/11.png',
+    image: 'https://media.cssninja.io/content/photos/apps/11.png',
     owner: {
       id: 13,
-      avatar: '/demo/avatars/13.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/13.jpg',
       name: 'Tara S.',
       initials: 'TS',
       color: 'danger',
@@ -322,7 +322,7 @@ export const projects = [
     team: [
       {
         id: 28,
-        picture: '/demo/avatars/28.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/28.jpg',
         name: 'Edouard F.',
         initials: 'EF',
         color: 'info',
@@ -334,10 +334,10 @@ export const projects = [
     name: 'Mobile App Landing Page',
     dueDate: 'November 2020',
     updated: '4d ago',
-    image: '/demo/photos/apps/12.jpg',
+    image: 'https://media.cssninja.io/content/photos/apps/12.jpg',
     owner: {
       id: 12,
-      avatar: '/demo/avatars/12.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/12.jpg',
       name: 'Joshua S.',
       initials: 'JS',
       color: 'info',
@@ -357,10 +357,10 @@ export const projects = [
     name: 'Web Marketing Landing Page',
     dueDate: 'November 2020',
     updated: '3m ago',
-    image: '/demo/photos/apps/13.png',
+    image: 'https://media.cssninja.io/content/photos/apps/13.png',
     owner: {
       id: 12,
-      avatar: '/demo/avatars/12.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/12.jpg',
       name: 'Joshua S.',
       initials: 'JS',
       color: 'info',
@@ -375,14 +375,14 @@ export const projects = [
       },
       {
         id: 15,
-        picture: '/demo/avatars/15.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/15.jpg',
         name: 'Hilde V.',
         initials: 'HV',
         color: 'h-orange',
       },
       {
         id: 12,
-        picture: '/demo/avatars/40.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/40.jpg',
         name: 'Jeanne M.',
         initials: 'JM',
         color: 'success',
@@ -394,10 +394,10 @@ export const projects = [
     name: 'Startup Landing Page',
     dueDate: 'November 2020',
     updated: '3m ago',
-    image: '/demo/photos/apps/14.jpg',
+    image: 'https://media.cssninja.io/content/photos/apps/14.jpg',
     owner: {
       id: 15,
-      avatar: '/demo/avatars/15.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/15.jpg',
       name: 'Hilde V.',
       initials: 'HV',
       color: 'danger',
@@ -405,7 +405,7 @@ export const projects = [
     team: [
       {
         id: 31,
-        picture: '/demo/avatars/31.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/31.jpg',
         name: 'Yasseen A.',
         initials: 'YA',
         color: 'info',
@@ -417,10 +417,10 @@ export const projects = [
     name: 'Expense Management System',
     dueDate: 'January 2021',
     updated: '2d ago',
-    image: '/demo/photos/apps/15.png',
+    image: 'https://media.cssninja.io/content/photos/apps/15.png',
     owner: {
       id: 39,
-      avatar: '/demo/avatars/39.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/39.jpg',
       name: 'Alejandro B.',
       initials: 'AB',
       color: 'info',
@@ -428,14 +428,14 @@ export const projects = [
     team: [
       {
         id: 5,
-        picture: '/demo/avatars/5.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/5.jpg',
         name: 'Mary L.',
         initials: 'ML',
         color: 'info',
       },
       {
         id: 24,
-        picture: '/demo/avatars/24.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/24.jpg',
         name: 'Sandrine C.',
         initials: 'SC',
         color: 'success',

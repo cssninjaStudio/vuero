@@ -90,7 +90,7 @@ const localFlagSrc = computed(() => {
                     <img
                       class="user-photo"
                       alt=""
-                      src="/demo/avatars/7.jpg"
+                      src="https://media.cssninja.io/content/avatars/7.jpg"
                       @error.once="onceError($event, 150)"
                     >
                   </div>
@@ -108,7 +108,7 @@ const localFlagSrc = computed(() => {
                     <img
                       class="user-photo"
                       alt=""
-                      src="/demo/avatars/12.jpg"
+                      src="https://media.cssninja.io/content/avatars/12.jpg"
                       @error.once="onceError($event, 150)"
                     >
                   </div>
@@ -126,7 +126,7 @@ const localFlagSrc = computed(() => {
                     <img
                       class="user-photo"
                       alt=""
-                      src="/demo/avatars/13.jpg"
+                      src="https://media.cssninja.io/content/avatars/13.jpg"
                       @error.once="onceError($event, 150)"
                     >
                   </div>
@@ -144,7 +144,7 @@ const localFlagSrc = computed(() => {
                     <img
                       class="user-photo"
                       alt=""
-                      src="/demo/avatars/25.jpg"
+                      src="https://media.cssninja.io/content/avatars/25.jpg"
                       @error.once="onceError($event, 150)"
                     >
                   </div>

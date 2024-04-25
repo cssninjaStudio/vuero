@@ -145,7 +145,7 @@
             <div class="dashboard-cta-img">
               <img
                 alt=""
-                src="/demo/photos/soccer/player.png"
+                src="https://media.cssninja.io/content/photos/soccer/player.png"
               >
             </div>
             <h2 class="dashboard-cta-title">

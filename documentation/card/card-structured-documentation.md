@@ -27,14 +27,14 @@ come content. Check the markup for more details about usage.
             placement="top-start"
           >
             <VAvatar
-              picture="/demo/avatars/19.jpg"
+              picture="https://media.cssninja.io/content/avatars/19.jpg"
               badge="/images/icons/flags/germany.svg"
             />
             <template #content>
               <UserPopoverContent
                 :user="{
                   id: 19,
-                  avatar: '/demo/avatars/19.jpg',
+                  avatar: 'https://media.cssninja.io/content/avatars/19.jpg',
                   badge: '/images/icons/flags/germany.svg',
                   username: 'Greta K.',
                   fullName: 'Greta Kroppfer',

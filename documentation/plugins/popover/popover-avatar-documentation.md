@@ -12,7 +12,7 @@ can easily add a `<VAvatar />` inside your popover.
     <template #content>
       <div class="v-popover-content is-text">
         <div class="popover-head">
-          <VAvatar picture="/demo/avatars/7.jpg" size="small" />
+          <VAvatar picture="https://media.cssninja.io/content/avatars/7.jpg" size="small" />
           <h4 class="dark-inverted">
             Alice C.
           </h4>
@@ -36,7 +36,7 @@ can easily add a `<VAvatar />` inside your popover.
     <template #content>
       <div class="v-popover-content is-text">
           <div class="popover-head">
-              <VAvatar picture="/demo/avatars/7.jpg" size="small"/>
+              <VAvatar picture="https://media.cssninja.io/content/avatars/7.jpg" size="small"/>
               <h4 class="dark-inverted">Alice C.</h4>
           </div>
           <div class="popover-body">

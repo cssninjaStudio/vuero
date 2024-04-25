@@ -5,7 +5,7 @@ export const projects = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quo tandem modo? At certe gravius.',
     remaining: '3 months',
-    image: '/demo/photos/apps/1.jpg',
+    image: 'https://media.cssninja.io/content/photos/apps/1.jpg',
     badge: '/images/icons/stacks/illustrator.svg',
     lockable: true,
     locked: false,
@@ -19,7 +19,7 @@ export const projects = [
       },
       {
         id: 18,
-        picture: '/demo/avatars/18.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/18.jpg',
         name: 'Esteban C.',
         initials: 'EC',
         color: 'h-purple',
@@ -33,7 +33,7 @@ export const projects = [
       },
       {
         id: 7,
-        picture: '/demo/avatars/7.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/7.jpg',
         name: 'Alice C.',
         initials: 'AC',
         color: 'success',
@@ -46,14 +46,14 @@ export const projects = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quo tandem modo? At certe gravius.',
     remaining: '2 months',
-    image: '/demo/photos/apps/2.png',
+    image: 'https://media.cssninja.io/content/photos/apps/2.png',
     badge: '/images/icons/stacks/reactjs.svg',
     lockable: false,
     locked: false,
     team: [
       {
         id: 21,
-        picture: '/demo/avatars/21.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/21.jpg',
         name: 'Elizabet F.',
         initials: 'EF',
         color: 'warning',
@@ -67,7 +67,7 @@ export const projects = [
       },
       {
         id: 39,
-        picture: '/demo/avatars/39.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/39.jpg',
         name: 'Alejandro B.',
         initials: 'AB',
         color: 'danger',
@@ -80,14 +80,14 @@ export const projects = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quo tandem modo? At certe gravius.',
     remaining: '4 months',
-    image: '/demo/photos/apps/3.png',
+    image: 'https://media.cssninja.io/content/photos/apps/3.png',
     badge: '/images/icons/stacks/angular.svg',
     lockable: true,
     locked: true,
     team: [
       {
         id: 21,
-        picture: '/demo/avatars/21.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/21.jpg',
         name: 'Elizabet F.',
         initials: 'EF',
         color: 'warning',
@@ -101,7 +101,7 @@ export const projects = [
       },
       {
         id: 39,
-        picture: '/demo/avatars/39.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/39.jpg',
         name: 'Alejandro B.',
         initials: 'AB',
         color: 'danger',
@@ -114,21 +114,21 @@ export const projects = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quo tandem modo? At certe gravius.',
     remaining: '2 weeks',
-    image: '/demo/photos/apps/4.png',
+    image: 'https://media.cssninja.io/content/photos/apps/4.png',
     badge: '/images/icons/stacks/js.svg',
     lockable: false,
     locked: false,
     team: [
       {
         id: 28,
-        picture: '/demo/avatars/28.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/28.jpg',
         name: 'Edouard F.',
         initials: 'EF',
         color: 'info',
       },
       {
         id: 33,
-        picture: '/demo/avatars/33.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/33.jpg',
         name: 'Harvey M.',
         initials: 'HM',
         color: 'warning',
@@ -141,7 +141,7 @@ export const projects = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quo tandem modo? At certe gravius.',
     remaining: '1 month',
-    image: '/demo/photos/apps/5.png',
+    image: 'https://media.cssninja.io/content/photos/apps/5.png',
     badge: '/images/icons/stacks/csharp.svg',
     lockable: true,
     locked: false,
@@ -155,7 +155,7 @@ export const projects = [
       },
       {
         id: 23,
-        picture: '/demo/avatars/23.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/23.jpg',
         name: 'Irina V.',
         initials: 'IV',
         color: 'danger',
@@ -168,7 +168,7 @@ export const projects = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quo tandem modo? At certe gravius.',
     remaining: '3 weeks',
-    image: '/demo/photos/apps/6.png',
+    image: 'https://media.cssninja.io/content/photos/apps/6.png',
     badge: '/images/icons/stacks/vuejs.svg',
     lockable: false,
     locked: false,
@@ -182,7 +182,7 @@ export const projects = [
       },
       {
         id: 18,
-        picture: '/demo/avatars/18.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/18.jpg',
         name: 'Esteban C.',
         initials: 'EC',
         color: 'h-purple',
@@ -202,7 +202,7 @@ export const projects = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quo tandem modo? At certe gravius.',
     remaining: '5 months',
-    image: '/demo/photos/apps/7.png',
+    image: 'https://media.cssninja.io/content/photos/apps/7.png',
     badge: '/images/icons/stacks/swift.svg',
     lockable: false,
     locked: false,
@@ -216,7 +216,7 @@ export const projects = [
       },
       {
         id: 27,
-        picture: '/demo/avatars/27.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/27.jpg',
         name: 'Carmen E.',
         initials: 'CE',
         color: 'info',
@@ -229,7 +229,7 @@ export const projects = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quo tandem modo? At certe gravius.',
     remaining: '2 months',
-    image: '/demo/photos/apps/8.png',
+    image: 'https://media.cssninja.io/content/photos/apps/8.png',
     badge: '/images/icons/stacks/android.svg',
     lockable: false,
     locked: false,
@@ -243,7 +243,7 @@ export const projects = [
       },
       {
         id: 27,
-        picture: '/demo/avatars/27.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/27.jpg',
         name: 'Carmen E.',
         initials: 'CE',
         color: 'info',
@@ -256,7 +256,7 @@ export const projects = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quo tandem modo? At certe gravius.',
     remaining: '2 months',
-    image: '/demo/photos/apps/9.png',
+    image: 'https://media.cssninja.io/content/photos/apps/9.png',
     badge: '/images/icons/stacks/html5.svg',
     lockable: false,
     locked: false,
@@ -270,7 +270,7 @@ export const projects = [
       },
       {
         id: 23,
-        picture: '/demo/avatars/23.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/23.jpg',
         name: 'Irina V.',
         initials: 'IV',
         color: 'danger',
@@ -283,7 +283,7 @@ export const projects = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quo tandem modo? At certe gravius.',
     remaining: '2 months',
-    image: '/demo/photos/apps/10.png',
+    image: 'https://media.cssninja.io/content/photos/apps/10.png',
     badge: '/images/icons/stacks/photoshop.svg',
     lockable: false,
     locked: false,
@@ -297,7 +297,7 @@ export const projects = [
       },
       {
         id: 23,
-        picture: '/demo/avatars/23.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/23.jpg',
         name: 'Irina V.',
         initials: 'IV',
         color: 'danger',
@@ -310,7 +310,7 @@ export const projects = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quo tandem modo? At certe gravius.',
     remaining: '1 week',
-    image: '/demo/photos/apps/11.png',
+    image: 'https://media.cssninja.io/content/photos/apps/11.png',
     badge: '/images/icons/stacks/js.svg',
     lockable: false,
     locked: false,
@@ -324,7 +324,7 @@ export const projects = [
       },
       {
         id: 18,
-        picture: '/demo/avatars/18.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/18.jpg',
         name: 'Esteban C.',
         initials: 'EC',
         color: 'h-purple',
@@ -338,7 +338,7 @@ export const projects = [
       },
       {
         id: 7,
-        picture: '/demo/avatars/7.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/7.jpg',
         name: 'Alice C.',
         initials: 'AC',
         color: 'success',
@@ -351,14 +351,14 @@ export const projects = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quo tandem modo? At certe gravius.',
     remaining: '3 months',
-    image: '/demo/photos/apps/12.jpg',
+    image: 'https://media.cssninja.io/content/photos/apps/12.jpg',
     badge: '/images/icons/stacks/css3.svg',
     lockable: false,
     locked: false,
     team: [
       {
         id: 21,
-        picture: '/demo/avatars/21.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/21.jpg',
         name: 'Elizabet F.',
         initials: 'EF',
         color: 'warning',
@@ -372,7 +372,7 @@ export const projects = [
       },
       {
         id: 39,
-        picture: '/demo/avatars/39.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/39.jpg',
         name: 'Alejandro B.',
         initials: 'AB',
         color: 'danger',
@@ -385,7 +385,7 @@ export const projects = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quo tandem modo? At certe gravius.',
     remaining: '4 months',
-    image: '/demo/photos/apps/13.png',
+    image: 'https://media.cssninja.io/content/photos/apps/13.png',
     badge: '/images/icons/stacks/reactjs.svg',
     lockable: false,
     locked: false,
@@ -399,7 +399,7 @@ export const projects = [
       },
       {
         id: 31,
-        picture: '/demo/avatars/31.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/31.jpg',
         name: 'Yasseen A.',
         initials: 'YA',
         color: 'h-purple',
@@ -412,21 +412,21 @@ export const projects = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quo tandem modo? At certe gravius.',
     remaining: '1 month',
-    image: '/demo/photos/apps/14.jpg',
+    image: 'https://media.cssninja.io/content/photos/apps/14.jpg',
     badge: '/images/icons/stacks/reactjs.svg',
     lockable: false,
     locked: false,
     team: [
       {
         id: 33,
-        picture: '/demo/avatars/33.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/33.jpg',
         name: 'Harvey M.',
         initials: 'HM',
         color: 'warning',
       },
       {
         id: 26,
-        picture: '/demo/avatars/26.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/26.jpg',
         name: 'Courtney W.',
         initials: 'CW',
         color: 'info',
@@ -439,14 +439,14 @@ export const projects = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quo tandem modo? At certe gravius.',
     remaining: '1 month',
-    image: '/demo/photos/apps/15.png',
+    image: 'https://media.cssninja.io/content/photos/apps/15.png',
     badge: '/images/icons/stacks/reactjs.svg',
     lockable: false,
     locked: false,
     team: [
       {
         id: 21,
-        picture: '/demo/avatars/21.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/21.jpg',
         name: 'Elizabet F.',
         initials: 'EF',
         color: 'warning',
@@ -460,7 +460,7 @@ export const projects = [
       },
       {
         id: 39,
-        picture: '/demo/avatars/39.jpg',
+        picture: 'https://media.cssninja.io/content/avatars/39.jpg',
         name: 'Alejandro B.',
         initials: 'AB',
         color: 'danger',

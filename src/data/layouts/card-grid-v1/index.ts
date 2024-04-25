@@ -7,7 +7,7 @@ export const users = [
     role: 'UI/UX Designer',
     bio: 'This is a nice user description that we can use as demo content.',
     medias: {
-      avatar: '/demo/avatars/13.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/13.jpg',
       badge: '/images/icons/flags/united-states-of-america.svg',
     },
     progress: 65,
@@ -42,7 +42,7 @@ export const users = [
     role: 'Product Manager',
     bio: 'This is a nice user description that we can use as demo content.',
     medias: {
-      avatar: '/demo/avatars/37.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/37.jpg',
       badge: '/images/icons/flags/france.svg',
     },
     progress: 38,
@@ -77,7 +77,7 @@ export const users = [
     role: 'Web Developer',
     bio: 'This is a nice user description that we can use as demo content.',
     medias: {
-      avatar: '/demo/avatars/25.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/25.jpg',
       badge: '/images/icons/stacks/js.svg',
     },
     progress: 58,
@@ -112,7 +112,7 @@ export const users = [
     role: 'Software Engineer',
     bio: 'This is a nice user description that we can use as demo content.',
     medias: {
-      avatar: '/demo/avatars/29.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/29.jpg',
       badge: '/images/icons/stacks/python.svg',
     },
     progress: 85,
@@ -147,7 +147,7 @@ export const users = [
     role: 'Business Analyst',
     bio: 'This is a nice user description that we can use as demo content.',
     medias: {
-      avatar: '/demo/avatars/39.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/39.jpg',
       badge: '/images/icons/flags/united-states-of-america.svg',
     },
     progress: 28,
@@ -182,7 +182,7 @@ export const users = [
     role: 'Mobile Developer',
     bio: 'This is a nice user description that we can use as demo content.',
     medias: {
-      avatar: '/demo/avatars/40.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/40.jpg',
       badge: '/images/icons/stacks/android.svg',
     },
     progress: 67,
@@ -217,7 +217,7 @@ export const users = [
     role: 'Sales Manager',
     bio: 'This is a nice user description that we can use as demo content.',
     medias: {
-      avatar: '/demo/avatars/19.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/19.jpg',
       badge: '/images/icons/flags/germany.svg',
     },
     progress: 56,
@@ -252,7 +252,7 @@ export const users = [
     role: 'UI/UX Designer',
     bio: 'This is a nice user description that we can use as demo content.',
     medias: {
-      avatar: '/demo/avatars/9.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/9.jpg',
       badge: '/images/icons/stacks/photoshop.svg',
     },
     progress: 12,
@@ -287,7 +287,7 @@ export const users = [
     role: 'Project Manager',
     bio: 'This is a nice user description that we can use as demo content.',
     medias: {
-      avatar: '/demo/avatars/5.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/5.jpg',
       badge: '/images/icons/flags/united-states-of-america.svg',
     },
     progress: 29,
@@ -322,7 +322,7 @@ export const users = [
     role: 'Product Manager',
     bio: 'This is a nice user description that we can use as demo content.',
     medias: {
-      avatar: '/demo/avatars/32.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/32.jpg',
       badge: '/images/icons/flags/united-states-of-america.svg',
     },
     progress: 91,
@@ -357,7 +357,7 @@ export const users = [
     role: 'Software Engineer',
     bio: 'This is a nice user description that we can use as demo content.',
     medias: {
-      avatar: '/demo/avatars/36.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/36.jpg',
       badge: '/images/icons/stacks/reactjs.svg',
     },
     progress: 44,
@@ -392,7 +392,7 @@ export const users = [
     role: 'Web Developer',
     bio: 'This is a nice user description that we can use as demo content.',
     medias: {
-      avatar: '/demo/avatars/38.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/38.jpg',
       badge: '/images/icons/stacks/vuejs.svg',
     },
     progress: 61,
@@ -427,7 +427,7 @@ export const users = [
     role: 'Web Developer',
     bio: 'This is a nice user description that we can use as demo content.',
     medias: {
-      avatar: '/demo/avatars/26.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/26.jpg',
       badge: '/images/icons/stacks/html5.svg',
     },
     progress: 53,
@@ -462,7 +462,7 @@ export const users = [
     role: 'Business Analyst',
     bio: 'This is a nice user description that we can use as demo content.',
     medias: {
-      avatar: '/demo/avatars/16.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/16.jpg',
       badge: '/images/icons/flags/united-states-of-america.svg',
     },
     progress: 78,
@@ -497,7 +497,7 @@ export const users = [
     role: 'Project Manager',
     bio: 'This is a nice user description that we can use as demo content.',
     medias: {
-      avatar: '/demo/avatars/23.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/23.jpg',
       badge: '/images/icons/flags/united-states-of-america.svg',
     },
     progress: 36,
@@ -532,7 +532,7 @@ export const users = [
     role: 'Web Developer',
     bio: 'This is a nice user description that we can use as demo content.',
     medias: {
-      avatar: '/demo/avatars/28.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/28.jpg',
       badge: '/images/icons/stacks/angular.svg',
     },
     progress: 49,
@@ -567,7 +567,7 @@ export const users = [
     role: 'Software Engineer',
     bio: 'This is a nice user description that we can use as demo content.',
     medias: {
-      avatar: '/demo/avatars/7.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/7.jpg',
       badge: '/images/icons/stacks/csharp.svg',
     },
     progress: 78,
@@ -602,7 +602,7 @@ export const users = [
     role: 'Product Manager',
     bio: 'This is a nice user description that we can use as demo content.',
     medias: {
-      avatar: '/demo/avatars/22.jpg',
+      avatar: 'https://media.cssninja.io/content/avatars/22.jpg',
       badge: '/images/icons/flags/united-states-of-america.svg',
     },
     progress: 17,

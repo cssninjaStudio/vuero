@@ -12,7 +12,7 @@ the component background white.
   <VSnack
     title="Support"
     white
-    image="/demo/photos/misc/buoy.jpg"
+    image="https://media.cssninja.io/content/photos/misc/buoy.jpg"
   >
     <VIcon icon="lucide:x" />
   </VSnack>
@@ -26,7 +26,7 @@ the component background white.
   <VSnack
     title="Corporate"
     white
-    image="/demo/avatars/7.jpg"
+    image="https://media.cssninja.io/content/avatars/7.jpg"
   >
     <VIcon icon="lucide:x" />
   </VSnack>
@@ -52,13 +52,13 @@ the component background white.
 <!--example-->
 
 <div class="snacks">
-    <VSnack title="Support" white  image="/demo/photos/misc/buoy.jpg">
+    <VSnack title="Support" white  image="https://media.cssninja.io/content/photos/misc/buoy.jpg">
         <VIcon icon="lucide:x"/>
     </VSnack>
     <VSnack title="Metamovies" white  image="/images/icons/logos/metamovies.svg">
         <VIcon icon="lucide:x"/>
     </VSnack>
-    <VSnack title="Corporate" white  image="/demo/avatars/7.jpg">
+    <VSnack title="Corporate" white  image="https://media.cssninja.io/content/avatars/7.jpg">
         <VIcon icon="lucide:x"/>
     </VSnack>
     <VSnack title="English" white  image="/images/icons/flags/united-states-of-america.svg">

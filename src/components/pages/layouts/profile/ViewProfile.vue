@@ -90,7 +90,7 @@ const { onceError } = useImageError()
                 <div class="experience-wrapper">
                   <div class="experience-item">
                     <img
-                      src="/demo/photos/brands/airbnb.svg"
+                      src="https://media.cssninja.io/content/photos/brands/airbnb.svg"
                       alt=""
                       @error.once="onceError($event, 150)"
                     >
@@ -109,7 +109,7 @@ const { onceError } = useImageError()
                   </div>
                   <div class="experience-item">
                     <img
-                      src="/demo/photos/brands/facebook.svg"
+                      src="https://media.cssninja.io/content/photos/brands/facebook.svg"
                       alt=""
                       @error.once="onceError($event, 150)"
                     >
@@ -128,7 +128,7 @@ const { onceError } = useImageError()
                   </div>
                   <div class="experience-item">
                     <img
-                      src="/demo/photos/brands/atlassian.svg"
+                      src="https://media.cssninja.io/content/photos/brands/atlassian.svg"
                       alt=""
                       @error.once="onceError($event, 150)"
                     >
@@ -147,7 +147,7 @@ const { onceError } = useImageError()
                   </div>
                   <div class="experience-item">
                     <img
-                      src="/demo/photos/brands/github.svg"
+                      src="https://media.cssninja.io/content/photos/brands/github.svg"
                       alt=""
                       @error.once="onceError($event, 150)"
                     >
@@ -294,7 +294,7 @@ const { onceError } = useImageError()
                       />
                       <VAvatar
                         size="small"
-                        picture="/demo/avatars/18.jpg"
+                        picture="https://media.cssninja.io/content/avatars/18.jpg"
                       />
                       <VAvatar
                         size="small"
@@ -303,7 +303,7 @@ const { onceError } = useImageError()
                       />
                       <VAvatar
                         size="small"
-                        picture="/demo/avatars/7.jpg"
+                        picture="https://media.cssninja.io/content/avatars/7.jpg"
                       />
                       <VAvatar
                         size="small"
@@ -326,7 +326,7 @@ const { onceError } = useImageError()
                     <div class="people">
                       <VAvatar
                         size="small"
-                        picture="/demo/avatars/21.jpg"
+                        picture="https://media.cssninja.io/content/avatars/21.jpg"
                       />
                       <VAvatar
                         size="small"
@@ -335,11 +335,11 @@ const { onceError } = useImageError()
                       />
                       <VAvatar
                         size="small"
-                        picture="/demo/avatars/39.jpg"
+                        picture="https://media.cssninja.io/content/avatars/39.jpg"
                       />
                       <VAvatar
                         size="small"
-                        picture="/demo/avatars/23.jpg"
+                        picture="https://media.cssninja.io/content/avatars/23.jpg"
                       />
                       <VAvatar
                         size="small"
@@ -359,11 +359,11 @@ const { onceError } = useImageError()
                     <div class="people">
                       <VAvatar
                         size="small"
-                        picture="/demo/avatars/38.jpg"
+                        picture="https://media.cssninja.io/content/avatars/38.jpg"
                       />
                       <VAvatar
                         size="small"
-                        picture="/demo/avatars/11.jpg"
+                        picture="https://media.cssninja.io/content/avatars/11.jpg"
                       />
                       <VAvatar
                         size="small"
@@ -372,7 +372,7 @@ const { onceError } = useImageError()
                       />
                       <VAvatar
                         size="small"
-                        picture="/demo/avatars/13.jpg"
+                        picture="https://media.cssninja.io/content/avatars/13.jpg"
                       />
                       <VAvatar
                         size="small"
@@ -392,7 +392,7 @@ const { onceError } = useImageError()
                     <div class="people">
                       <VAvatar
                         size="small"
-                        picture="/demo/avatars/21.jpg"
+                        picture="https://media.cssninja.io/content/avatars/21.jpg"
                       />
                       <VAvatar
                         size="small"
@@ -401,11 +401,11 @@ const { onceError } = useImageError()
                       />
                       <VAvatar
                         size="small"
-                        picture="/demo/avatars/5.jpg"
+                        picture="https://media.cssninja.io/content/avatars/5.jpg"
                       />
                       <VAvatar
                         size="small"
-                        picture="/demo/avatars/7.jpg"
+                        picture="https://media.cssninja.io/content/avatars/7.jpg"
                       />
                       <VAvatar
                         size="small"
@@ -444,7 +444,7 @@ const { onceError } = useImageError()
                   <div class="recommendations-item">
                     <VAvatar
                       size="large"
-                      picture="/demo/avatars/5.jpg"
+                      picture="https://media.cssninja.io/content/avatars/5.jpg"
                       badge="/images/icons/flags/united-states-of-america.svg"
                     />
                     <h3 class="dark-inverted">
@@ -464,7 +464,7 @@ const { onceError } = useImageError()
                   <div class="recommendations-item">
                     <VAvatar
                       size="large"
-                      picture="/demo/avatars/18.jpg"
+                      picture="https://media.cssninja.io/content/avatars/18.jpg"
                       badge="/images/icons/flags/united-states-of-america.svg"
                     />
 
@@ -553,7 +553,7 @@ const { onceError } = useImageError()
 
                   <!--Tool-->
                   <div class="tools-item">
-                    <VIconWrap picture="/demo/photos/brands/jira.svg">
+                    <VIconWrap picture="https://media.cssninja.io/content/photos/brands/jira.svg">
                       <template #after>
                         <VPeity
                           type="pie"
@@ -574,7 +574,7 @@ const { onceError } = useImageError()
 
                   <!--Tool-->
                   <div class="tools-item">
-                    <VIconWrap picture="/demo/photos/brands/office.svg">
+                    <VIconWrap picture="https://media.cssninja.io/content/photos/brands/office.svg">
                       <template #after>
                         <VPeity
                           type="pie"
@@ -615,7 +615,7 @@ const { onceError } = useImageError()
                     class="people-item"
                   >
                     <VAvatar
-                      picture="/demo/avatars/25.jpg"
+                      picture="https://media.cssninja.io/content/avatars/25.jpg"
                       badge="/images/icons/stacks/js.svg"
                     />
 
@@ -631,7 +631,7 @@ const { onceError } = useImageError()
                     class="people-item"
                   >
                     <VAvatar
-                      picture="/demo/avatars/29.jpg"
+                      picture="https://media.cssninja.io/content/avatars/29.jpg"
                       badge="/images/icons/stacks/python.svg"
                     />
 
@@ -647,7 +647,7 @@ const { onceError } = useImageError()
                     class="people-item"
                   >
                     <VAvatar
-                      picture="/demo/avatars/38.jpg"
+                      picture="https://media.cssninja.io/content/avatars/38.jpg"
                       badge="/images/icons/stacks/vuejs.svg"
                     />
 
@@ -663,7 +663,7 @@ const { onceError } = useImageError()
                     class="people-item"
                   >
                     <VAvatar
-                      picture="/demo/avatars/28.jpg"
+                      picture="https://media.cssninja.io/content/avatars/28.jpg"
                       badge="/images/icons/stacks/angular.svg"
                     />
 
@@ -679,7 +679,7 @@ const { onceError } = useImageError()
                     class="people-item"
                   >
                     <VAvatar
-                      picture="/demo/avatars/19.jpg"
+                      picture="https://media.cssninja.io/content/avatars/19.jpg"
                       badge="/images/icons/stacks/cplus.svg"
                     />
 
