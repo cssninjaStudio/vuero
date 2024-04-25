@@ -590,6 +590,9 @@ useHead({
       background-color: var(--white);
       z-index: 0;
 
+      &::-webkit-progress-bar {
+        background-color: var(--white);
+      }
       &::-webkit-progress-value {
         background-color: var(--primary);
         transition: width 0.5s ease;
@@ -1249,6 +1252,10 @@ useHead({
   .signup-steps {
     .steps-container {
       .progress {
+        &::-webkit-progress-bar {
+          background-color: var(--dark-sidebar-light-2);
+        }
+
         &::-webkit-progress-value {
           background: var(--primary);
         }

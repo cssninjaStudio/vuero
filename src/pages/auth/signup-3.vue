@@ -22,7 +22,7 @@ useHead({
 
 <template>
   <div class="auth-wrapper-inner is-single">
-    <LandingGrids />
+    <LandingGrids class="is-contrasted" />
     <!--Fake navigation-->
     <div class="auth-nav">
       <div class="left" />
@@ -38,7 +38,7 @@ useHead({
         </RouterLink>
       </div>
       <div class="right">
-        <VDarkmodeToggle class="ml-auto" />
+        <VDarkmodeToggle />
       </div>
     </div>
 
